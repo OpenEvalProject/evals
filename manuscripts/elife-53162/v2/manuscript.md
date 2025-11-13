@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Humans form social coalitions in every society, yet we know little about how we learn and represent social group boundaries. Here we derive predictions from a computational model of latent structure learning to move beyond explicit category labels and interpersonal, or dyadic , similarity as the sole inputs to social group representations. Using a model-based analysis of functional neuroimaging data, we find that separate areas correlate with dyadic similarity and latent structure learning. Trial-by-trial estimates of ‘allyship’ based on dyadic similarity between participants and each agent recruited medial prefrontal cortex/pregenual anterior cingulate (pgACC). Latent social group structure-based allyship estimates, in contrast, recruited right anterior insula (rAI). Variability in the brain signal from rAI improved prediction of variability in ally-choice behavior, whereas variability from the pgACC did not. These results provide novel insights into the psychological and neural mechanisms by which people learn to distinguish ‘us’ from ‘them.’
+Humans form social coalitions in every society, yet we know little about how we learn and represent social group boundaries. Here we derive predictions from a computational model of latent structure learning to move beyond explicit category labels and interpersonal, or dyadic, similarity as the sole inputs to social group representations. Using a model-based analysis of functional neuroimaging data, we find that separate areas correlate with dyadic similarity and latent structure learning. Trial-by-trial estimates of ‘allyship’ based on dyadic similarity between participants and each agent recruited medial prefrontal cortex/pregenual anterior cingulate (pgACC). Latent social group structure-based allyship estimates, in contrast, recruited right anterior insula (rAI). Variability in the brain signal from rAI improved prediction of variability in ally-choice behavior, whereas variability from the pgACC did not. These results provide novel insights into the psychological and neural mechanisms by which people learn to distinguish ‘us’ from ‘them.’
 
 ## Introduction
 
@@ -45,7 +45,7 @@ This design allowed us to i) investigate participants’ trial-by-trial alignmen
 
 We scanned 42 participants using functional magnetic resonance imaging (fMRI) as they completed our structure-learning task. Each participant completed six runs; each run comprised learning about three novel agents across eight political issues and then choosing to ally with one of two agents on an unknown, ‘mystery’ issue. Each participant saw 48 political issues and learned about 18 novel agents in total.
 
-## Learning about other agents’ policy preferences and ally-choice trials
+### Learning about other agents’ policy preferences and ally-choice trials
 
 To model the probability of choosing Agent B’s choice in the ally-choice trial as a function of social latent structure, we used a logistic regression predicting whether our participants in the scanner (N = 42) chose Agent B’s choice during the ally-choice trial as a function of Agent B’s agreement and Agent C’s agreement with the participant. (See Materials and methods for analysis of the full N = 333 sample.) Because Agent A’s preferences were always the inverse of Agent B’s, including Agent A’s agreement would have created a multicollinearity problem (recall also that participants could only choose either Agent B or Agent A). Including random slopes to account for subject-level effects resulted in a singular fit of the model (i.e., overfitting), so we removed them. We compared the full model including both main effects and the interaction with simpler models (including only main effects or including only Agent B’s agreement with the participant). Likelihood-ratio tests indicated that the fully saturated model with both main effects and the interaction term fit the data better than without the interaction term (χ2(1) = 7.246, p=0.007).
 
@@ -57,7 +57,7 @@ Replicating previous behavioral results (Lau et al., 2018), we found that increa
 
 In other words, even when adjusting for Agent B’s agreement with the participant, increasing Agent C’s alignment with the participant made respondents more likely to choose Agent B on the ally-choice trial. However, this result was expectably qualified by a weak interaction: when Agent B agreed with the participant a majority of the time, the additional variance explained by Agent C's agreement decreased. While a dyadic similarity model would not predict that the level of agreement with Agent C should matter for choosing on the ally-choice trial, the latent structure learning model does predict that Agent C’s level of agreement with the participant should matter in whether or not participants choose Agent B on the ally-choice trial. Indeed, any difference in choice behavior as a result of Agent C’s level of agreement is already inconsistent with the dyadic similarity account. Disambiguation between these two accounts of ally-choice have been demonstrated previously with model simulations and behavioral studies (Gershman et al., 2017; Lau et al., 2018).
 
-## Computational models and neuroimaging data
+### Computational models and neuroimaging data
 
 We developed three models to capture participants’ trial-by-trial estimates of i) dyadic similarity with each agent, ii) similarity-over-agents, and iii) social latent structure.
 
@@ -71,15 +71,96 @@ In contrast, the latent structure learning model (Gershman et al., 2017) assumes
 
 We examined which voxels’ signal correlated with the dyadic similarity, feature similarity-over-agents, and latent structure learning parametric modulator contrasts (Table 1; no other regions other than the ones reported here exceeded our corrected threshold.). As predicted, trial-by-trial dyadic similarity correlated with activity in the ventral medial prefrontal cortex/pregenual anterior cingulate (pgACC; Figure 4, green). The similarity-over-agents modulator identified clusters in the pgACC, bilateral temporoparietal junction, right superior temporal sulcus, and left supplementary motor area (Figure 4, yellow). Perhaps unsurprisingly, the pgACC cluster from this parametric modulator encompassed the pgACC cluster found by the dyadic similarity modulator.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53162/elife-53162-fig4-v2.jpg)
+
+**Figure 4.:** Dyadic similarity model (green), feature similarity model (yellow), and latent structure model (red). Note the overlap between the dyadic similarity and feature similarity models in the pgACC (e.g., at x = 10).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53162/elife-53162-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Overlap (yellow) between our latent structure model result (red) and a separately derived ROI of cluster structure updating (blue; Tomov et al., 2018).
+
+**Table 1.**
+ Results from parametric modulator contrasts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Region</th>
+      <th>Cluster size</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dyadic Similarity</td>
+      <td>Pregenual Anterior Cingulate</td>
+      <td>327</td>
+      <td>18</td>
+      <td>48</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Feature Similarity</td>
+      <td>Pregenual Anterior Cingulate</td>
+      <td>1079</td>
+      <td>16</td>
+      <td>44</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Left Supplementary Motor Area</td>
+      <td>762</td>
+      <td>−28</td>
+      <td>8</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Right Superior Temporal Sulcus</td>
+      <td>558</td>
+      <td>58</td>
+      <td>−44</td>
+      <td>−6</td>
+    </tr>
+    <tr>
+      <td>Left Temporoparietal Junction</td>
+      <td>465</td>
+      <td>−58</td>
+      <td>−52</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Right Temporoparietal Junction</td>
+      <td>298</td>
+      <td>54</td>
+      <td>−48</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Latent Structure</td>
+      <td>Right Anterior Insula/Inferior Frontal Gyrus</td>
+      <td>696</td>
+      <td>34</td>
+      <td>16</td>
+      <td>−10</td>
+    </tr>
+  </tbody>
+</table>
+
+_Cluster size reported in voxels (2 mm3). Coordinates refer to peak voxel in Montreal Neurological Institute space._
+
 In contrast, the latent structure learning model parametric modulator identified only a cluster in right anterior insula (rAI) that extended into the inferior frontal gyrus (IFG pars orbitalis; Figure 4, red). This rAI cluster did not overlap with any of the clusters identified by the previous two models. Of note, this rAI cluster overlapped with a separately identified rAI cluster associated with non-social cluster assignment updating (Tomov et al., 2018). To provide a description of the similarity: our rAI overlapped with 44.7% of that rAI result (i.e., number of common voxels across both ROIs divided by total number of rAI voxels in Tomov et al., 2018; Figure 4—figure supplement 1). Activity in this independently defined ROI correlated significantly with our latent group model, cluster-level FDR-corrected q = 0.014.
 
-## Testing the specificity of the rAI result
+### Testing the specificity of the rAI result
 
 We conducted a k-fold cross validation (leave one out procedure) and tested whether the latent structure learning model (compared to the other models) explained more variance in the rAI. To do this, we iteratively generated rAI and pgACC clusters by conducting second-level analyses using all participants but one and tested the fit of the models in each cluster on the left-out participant. For each iteration, we computed a Bayesian information criterion for each model as that particular model score and multiplied it by −0.5 to convert it into log model evidence. We used this calculated log model evidence (one for each model for each fold) for Bayesian model selection and calculated protected exceedance probabilities (PXP) and Bayesian omnibus risk (BOR; Rigoux et al., 2014). A PXP reflects the probability that a particular model is more frequent in the population compared to the other models considered (beyond what would be expected by chance), while BORs reflect the probability that all model frequencies are equal to one another. To put these results into context, a previous ROC analysis found the disambiguation threshold, or the point at which we can best discriminate between H0 (that both models are equally represented) and H1 (that one model is represented more so than another), to exist somewhere around 50% for PXPs and around 0.25 for BORs (Rigoux et al., 2014). The PXP in the rAI was 82.34% for the latent structure model, but only 6.44% for the dyadic similarity model and 11.23% for the similarity-over-agents model. The BOR was 0.190. In sum, the latent structure model explained significant variance in the rAI.
 
 On the other hand, when using the same method to test the specificity of the dyadic similarity model in the pgACC, we found that the PXPs were 51.58% for the latent structure model, 23.31% for the dyadic similarity model, and 25.11% for the similarity-over-agents model. The BOR was 0.675. In other words, for the pgACC, no single model was especially frequent over the other two.
 
-## Predicting ally-choice behavior from neural activity
+### Predicting ally-choice behavior from neural activity
 
 We also tested whether variability in the brain signal from our resulting ROIs would help predict variability in participants’ behavior during the ally-choice trial. In other words, we asked whether the neural ‘noise’ from our clusters improved prediction of participant choice above and beyond mere model predictions.
 
@@ -107,13 +188,13 @@ Accurately distinguishing ‘us’ from ‘them’ is crucial to navigating our 
 
 ## Materials and methods
 
-## Participant selection
+### Participant selection
 
 We first recruited participants (N = 333) under the pretense of playing a game in lab in which they would tell us about their political issue preferences and learn about others’ preferences. All participants first completed this behavioral version of the task to familiarize themselves with the task and the political issues prior to scanning. Participants completed all six runs of the task as described in the scanner procedure in the following section. The main differences between the behavioral version and the scanner version were that (i) the behavioral version allowed participants to spend as much time as needed to read the prompt before proceeding, while the scanner version limited the reading time to 6 s, (ii) the behavioral version did not allow for participants to acquaint themselves with the political issues before beginning the main task, and (iii) the response buttons differed (i.e., the behavioral version involved pushing ‘E’ and ‘I’ on a keyboard rather than ‘1’ and ‘2’ on a button box). We could then ensure that we were only recruiting participants who could successfully make responses within the time limit. Analysis of behavioral data from this phase can be found below.
 
 Upon completion of the behavioral task, participants were asked if they were interested in completing a similar fMRI study for pay and asked to confirm or disconfirm a series of statements relating to qualifications for participating in an fMRI study (e.g., whether they had metal in their body, being able to lie still for over an hour, etc.). Interested participants who reported no contra-indicators were invited to participate in the scanner task.
 
-## Behavioral data analyses for sample N = 333
+### Behavioral data analyses for sample N = 333
 
 In the task for the participant selection phase, we fixed Agent A’s and Agent B’s agreement with the participant such that each agent agreed with the participant on only four of the eight trials. Additionally, Agent C always agreed with Agent B and Agent A on five trials and three trials, respectively. To create our conditions, we varied Agent C’s agreement with the participant such that Agent C agreed with the participant on either seven trials (high-C) or only one trial (low-C). Given that participants had to respond within 6 s, some participants missed ally-choice trials, and only trials where data was recorded were analyzed (high-C: 906 trials, low-C: 918 trials). We used a logistic regression to model the probability of choosing Agent B’s choice in the ally-choice trial as a function of condition (high-C or low-C). Including random slopes to account for subject-level effects resulted in a singular fit of the model (i.e., overfitting), so we removed them. We did not find a significant difference between our two conditions in predicting the probability for choosing Agent B, b = 0.023, Wald’s z = 0.246, 95% CI = [−0.161, 0.207], p>0.250.
 
@@ -121,17 +202,17 @@ Nonetheless, we have stated before this is a small behavioral effect when previo
 
 Finally, our two conditions, which drastically varied Agent C’s level of agreement (i.e., Agent C either mostly agreed or mostly disagreed with the participant), may have been too obvious for a version of the task that was not self-paced. One participant reported as much in the debriefing. In the actual scanner version of the study, we varied the degree to which Agents A, B, and C agreed with the participant while maintaining the same agreement relationships between the agents as found in the behavioral portion to avoid this limitation.
 
-## fMRI participants and exclusions
+### fMRI participants and exclusions
 
 From our 333 participants, we recruited 61 right-handed participants (48 female, Mage = 21.74 years, SD = 4.17) in order to achieve a sample size of at least 40 participants after exclusions. This sample size was determined based on sample sizes used in other fMRI experiments (e.g., Tomov et al., 2018; Cheung et al., 2018). Two participants requested to be removed from the scanner prior to the end of the study, and two participants were excluded due to a computer crash, resulting in unrecorded responses. Prior to any data analysis, we excluded five participants who fell asleep in the scanner, eight participants for excessive head movements of 4 mm or more, one participant who correctly deduced the hypothesis of the study, and one participant for missing at least one self-response per run. This left us with a sample size of 42 participants (32 female, Mage = 22.07 years, SD = 4.82). Participants provided informed consent to participate and consent to publish; all procedures complied with Harvard University’s Committee on the Use of Human Subjects’ guidelines (Protocol #IRB15-2048).
 
-## Materials
+### Materials
 
 To develop stimuli, we used ISideWith.com, a website that helps people determine the political party and/or candidate with which their positions best align based on yes and no responses to nationally relevant, political issues (e.g., 'Do you support the death penalty?'). The website also aggregates survey responses and makes this data publicly available (https://isidewith.com/polls). We selected issues that had accumulated at least 500,000 votes and had the greatest agreement/disagreement discrepancies, as described in Experiment 2 in Lau et al. (2018). We included the 48 issues with the lowest yes-no differences as of May 2017 in the main task (see OSF for complete materials).
 
 On each trial, we displayed the issue as text at the top of the screen. Underneath, we signified a ‘yes’ or ‘no’ response to the issue by superimposing a green check mark or a red ‘X,’ respectively, atop an image representing the issue. To avoid confusion, we also displayed the words, ‘YES’ and ‘NO’, underneath the corresponding images. The order of presentation of the 48 issues as well as the sides on which the agreement positions appeared on the screen were randomized for each participant.
 
-## Face selection
+### Face selection
 
 For agent pictures, we selected a total of 36 photos from the Chicago Face Database (CFD; Ma et al., 2015) and gender-matched agents to the participant. We extracted the pool of ‘White’ faces (based on CFD designations) and eliminated faces based on the norming data provided by the CFD until 18 female and 18 male faces were left.
 
@@ -139,11 +220,11 @@ Given that the pool of faces varies for male and female faces, face selection pr
 
 For male faces, we followed the same initial five steps, except we eliminated any face that scored one standard deviation above the mean in femininity ratings in order to retain the more masculine-looking faces. Of the remaining 43 faces, we then eliminated anyone who was one and a half standard deviations above or below the mean age, which left us with 38 faces. For the final step, we removed the two youngest faces in the set of faces to generate a set of 36 male faces with an average age of 28.58 years (SD = 5.23).
 
-## Pre-task instructions
+### Pre-task instructions
 
 After being consented, participants first completed a round of instructions guiding them through a trial. They expressed their own opinion on a topic (‘Should cartoons include plotlines involving duck-hunting?’) by selecting ‘Yes’ or ‘No’ and then guessed and received feedback on the opinions of Bugs and Daffy. Participants were then guided through an ally-choice trial. We told participants that for these trials, gray boxes with question marks on them would represent two different positions on a political issue. The only information participants had about the boxes was the choices of other agents—the same ones whose preferences they had just learned. We told participants to select the box they would prefer based on the other agents’ choices. Participants were then introduced to the timing of the task (see below) and completed four practice trials (‘Should cartoon characters conquer Mars?', ‘Should cartoon characters be allowed to pilot planes?', ‘Should cartoon plotlines feature day jobs?', ‘Should cartoon characters be allowed to do yoga?') with these timings in place with Bugs and Daffy again. An ally-choice trial followed these four practice trials in which participants were asked to choose between Bugs' and Daffy’s mystery positions. After this, the computer displayed how many responses they successfully made within the time limits, and participants were prompted to notify the experimenter. The experimenter checked that all participants made at least 11 of the 13 responses within the time limits and probed for any remaining questions about the task. Given that participants had limited time to think about the political issue at hand and because their responses were important for generating the feedback they received from the other agents, we then gave participants a list of all of the political issues they would be seeing in the scanner prior to being scanned and asked them to review all the issues.
 
-## Task
+### Task
 
 Each run consisted of two phases: (i) eight learning trials during which participants expressed their own preferences on a political issue and learned about three others’ preferences; (ii) an ally-choice trial. Each learning trial began with the participant seeing a political issue for 6 s. They then had 4.5 s to choose whether they would support that issue; a gray rectangle appeared around their selection when they had made their choice. A gray arrow pointing to their choice appeared for 3 s to confirm their choice. Each participant then learned about the preferences of other three individuals (Agents A, B, and C) via feedback.
 
@@ -153,38 +234,76 @@ Following the eight learning trials, participants saw one ‘mystery’ ally-cho
 
 Participants completed six runs in total. For each run, Agents B and C agreed on five issues; Agents A and C agreed on three issues, and Agents A and B never agreed with each other. This agreement structure made it more likely that participants would cluster Agents B and C together and that Agent C’s agreement with the participant would increase the selection of Agent B on the ally-choice trial. However, agreement counts between the participant and each agent varied across blocks and participants. All agent positions were entirely randomly assigned (within the constraints of the agreement/disagreement structure). Thus, across all runs and participants, some agents expressed a mixture of highly partisan left and right beliefs. In our previous behavioral studies (Lau et al., 2018), Experiment 2), we found that participants still exhibited the behavior predicted by the latent structure learning model despite learning about agents with less ideologically coherent profiles (i.e., agents with preference profiles constructed from a mix of left and right partisan topics).
 
-## fMRI data acquisition and analyses
+### fMRI data acquisition and analyses
 
 We collected data using a 32-channel head coil in a 3.0-tesla Prisma MRI scanner (Siemens) located at the University. At the beginning of each scan session, we acquired a high-resolution T-1 weighted anatomical image (T1-MPRAGE, 1 × 1 × 1 mm, parallel to the anterior commissure-posterior commissure plane) for use in registering activity to each participant’s anatomy and spatially normalizing data across participants. Functional images were then acquired through six echo-planar imaging (EPI) sessions each lasting 12 min. For whole brain coverage, we acquired 69 interleaved 2.0 mm slices (repetition time = 1.5 s; echo time = 30 ms; flip angle = 75 degrees; field of view = 208 mm; matrix = 104 × 104; in-plane acceleration (GRAPPA) = 2; multi-band acceleration factor = 3). The multi-band EPI sequence was provided by the University of Minnesota Center for Magnetic Resonance Research (Moeller et al., 2010; Feinberg et al., 2010; Setsompop et al., 2012; Xu et al., 2013).
 
 We conducted preprocessing and statistical analyses using SPM12 (Wellcome Trust Centre for Neuroimaging, London, UK, http://www.fil.ion.ucl.ac.uk/spm). We realigned functional images to the first volume, unwarped the functional images, segmented the structural image into its respective tissue types, and normalized the gray matter of the structural to the gray matter of a standard Montreal Neurological Institute (MNI) reference brain. The mean functional images were co-registered to the structural image, and functional images were normalized to the MNI template, resliced to 2 mm × 2 mm × 2 mm voxels, and smoothed using an 8 mm FWHM Gaussian kernel.
 
-## fMRI analyses
+### fMRI analyses
 
 We modeled data with an event-related design using a general linear model. For each of the six runs, one regressor modeling the onset of self-choice (eight onsets), a second regressor modeling the onset of guesses for each of the three agents across the eight issues (24 onsets) and a parametric modulator for the second regressor, were convolved with the canonical hemodynamic response function. The parametric modulator values indexed the specific model output (the dyadic similarity, feature similarity-over-agents, or the latent structure learning model; see Computational models below) of either the similarity between the participant and the target or the prior probability of the participant belonging to the same group as the target of the guess (i.e., Agents A, B, or C). For example, when the participant was making a guess for Agent A on the seventh trial in a block, the latent structure parametric modulator took on the value of the probability that Agent A was in the same group as the participant given previous feedback. No clusters survived correction when all three models were included as parametric modulators.
 
 We did not orthogonalize parametric modulators with respect to the second regressor (the onsets of guesses) given that we were interested in which voxels tracked our parametric modulator values rather than the mean-centered values (Mumford et al., 2015). In addition, we included six nuisance regressors containing the temporal and spatial derivatives for the main regressor and six run regressors. Alignment values from the latent structure learning model and the dyadic similarity model were modeled in separate models given that each represented a different hypothesis about processes in the brain. To determine which areas of the brain tracked each these models, we then entered the images resulting from contrasting the parametric modulator against baseline into a second-level analysis treating participants as a random effect. We used a voxelwise threshold of p<0.001 and corrected for multiple comparisons using whole-brain cluster-wise family-wise error (FWE) correction from bspmview (http://www.bobspunt.com/bspmview) at the α = 0.05 level.
 
-## Parametric modulator correlations
+### Parametric modulator correlations
 
 Given that all three model outputs were derived from similar inputs, the correlations among the different parametric modulators were moderate to large. The average correlation between dyadic similarity and latent structure modulators was 0.8627, with values ranging from 0.5592 to 0.9704. The average correlation between the latent structure and feature similarity-over-agents parametric modulators was 0.7889 (ranging from 0.3778 to 0.9496). Finally, the average correlation between the dyadic similarity and feature similarity-over-agents parametric modulators was 0.9614 (ranging from 0.9023 to 0.9874).
 
 To measure collinearity between the dyadic similarity, feature similarity-over-agents and latent structure modulators, we calculated the VIF (1/(1-R2), where R2 is the r-squared from regressing one parametric modulator on the other). The VIF between dyadic similarity and latent structure modulators was 5.063 (generally regarded as low collinearity), while the VIF between dyadic similarity and feature similarity-over-agents parametric modulators was 13.786.
 
-## Computational models
+### Computational models
 
-Dyadic similarity, Sd, is calculated as a function of the number of previous agreement instances between the agent and the participant divided by the number of trials elapsed, where priors for the first trial are 0.50 for each agent:(1)Sd(agent,participant)=∑i=0n−1Agreementagent+1n+1
+Dyadic similarity, Sd, is calculated as a function of the number of previous agreement instances between the agent and the participant divided by the number of trials elapsed, where priors for the first trial are 0.50 for each agent:
 
-Feature similarity-over-agents, Sf, uses output from the dyadic similarity model to construct a similarity matrix whose values are Sd between the participant and each agent as well as Sd between agents. Feature similarity between a participant and a particular agent is computed as the correlation between the row of the similarity matrix representing the dyadic similarity between the participant and each agent and the row of the similarity matrix representing the dyadic similarity between that particular agent and everyone else (i.e., the participant and the other two agents; Equation 2). To transform these correlations to interpretable probabilities, output values were rescaled to a 0 to 1 range, and a log odds transformation (i.e., log(Sf) – log(1- Sf)) was applied.Sdsim=[1Sd(A,p)Sd(B,p)Sd(C,p)Sd(A,p)1Sd(A,B)Sd(A,C)Sd(B,p)Sd(B,A)1Sd(B,C)Sd(C,p)Sd(C,A)Sd(C,B)1](2)Sf(agent, participant)=corr(Sdsim)agent,participant
+$$
+S_{d}(agent,participant)=\frac{\sumi=0n−1Agreement_{agent}+1}{n+1}
+$$
 
-The latent structure learning model assumes that participants infer latent group assignments (a partition of agents) based on agents’ choice data. The prior distribution over group assignments is a Chinese restaurant process (Aldous, 1985), where the probability of partition z = [z1, …, zM] given M individuals is our prior:(3)P(z|α)=αKΓ(α)Πk(Tk)Γ(M+α)where α ≥ 0 serves as the dispersion parameter (as α approaches infinity, each individual is assigned to a unique group), Tk is the number of individuals assigned to group k and Γ(∙) is the gamma function. In our modeling, we used α = 2, though the results are relatively robust to variation in this parameter. An infinite number of groups can be generated, but a ‘rich get richer’ dynamic favoring more popular clusters will produce more parsimonious groupings (see Gershman and Blei, 2012). We can derive the posterior using Bayes’ rule with observed choices C = [c1, …,cM]:(4)P(z|C)=P(C|z)P(z)∑z′P(C|z′)P(z′)
+Feature similarity-over-agents, Sf, uses output from the dyadic similarity model to construct a similarity matrix whose values are Sd between the participant and each agent as well as Sd between agents. Feature similarity between a participant and a particular agent is computed as the correlation between the row of the similarity matrix representing the dyadic similarity between the participant and each agent and the row of the similarity matrix representing the dyadic similarity between that particular agent and everyone else (i.e., the participant and the other two agents; Equation 2). To transform these correlations to interpretable probabilities, output values were rescaled to a 0 to 1 range, and a log odds transformation (i.e., log(Sf) – log(1- Sf)) was applied.
 
-The likelihood is obtained by analytically marginalizing the latent parameters under a Dirichlet-Multinomial model:(5)P(C|z)=∫θP(C|θ,z)P(θ)dθ=∏n∏kΓ(|χn|γ)Γ(Tk+|χn|γ)∏cΓ(Lknc+γ)Γ(γ)
+$$
+S_{d_{sim}}=[1S_{d}(A,p)S_{d}(B,p)S_{d}(C,p)S_{d}(A,p)1S_{d}(A,B)S_{d}(A,C)S_{d}(B,p)S_{d}(B,A)1S_{d}(B,C)S_{d}(C,p)S_{d}(C,A)S_{d}(C,B)1]
+$$
 
-Where θ is a set of multinomial parameters, |χn| is the number of options on problem n and Lknc is the number of individuals assigned to group k who choose stance c on issue n. The likelihood favors group assignments for which choice patterns are similar between individuals assigned to the same group.
 
-Parametric modulator values use the probability that the agent under consideration is in the same group as the participant and are derived as the marginal posterior probability of the relevant partitions:(6)P(za=zp|C)=∑kP(za=k|C)P(zp=k|C)
 
-## Neural signal decoding
+$$
+S_{f}(agent, participant)=corr(S_{d_{sim}})_{agent,participant}
+$$
 
-The neural signal of interest can be algebraically derived from the standard GLM with L2-norm regularization:(7)Signal^interest=(Y−∑i≠interestβ^iXi)β^interestβ^interest2+λIwhere Y is the overall signal from the voxel and X is the corresponding vector from the original design matrix. For these analyses, we set our regularization parameter, λ, to a value of 1 following Tomov et al. (2018).
+The latent structure learning model assumes that participants infer latent group assignments (a partition of agents) based on agents’ choice data. The prior distribution over group assignments is a Chinese restaurant process (Aldous, 1985), where the probability of partition z = [z1, …, zM] given M individuals is our prior:
+
+$$
+P(z|\alpha)=\frac{\alpha^{K}Γ(\alpha)Π_{k}(T_{k})}{Γ(M+\alpha)}
+$$
+
+where α ≥ 0 serves as the dispersion parameter (as α approaches infinity, each individual is assigned to a unique group), Tk is the number of individuals assigned to group k and Γ(∙) is the gamma function. In our modeling, we used α = 2, though the results are relatively robust to variation in this parameter. An infinite number of groups can be generated, but a ‘rich get richer’ dynamic favoring more popular clusters will produce more parsimonious groupings (see Gershman and Blei, 2012). We can derive the posterior using Bayes’ rule with observed choices C = [c1, …,cM]:
+
+$$
+P(z|C)=\frac{P(C|z)P(z)}{\sumz^{′}P(C|z^{′})P(z^{′})}
+$$
+
+The likelihood is obtained by analytically marginalizing the latent parameters under a Dirichlet-Multinomial model:
+
+$$
+P(C|z)=\int_{\theta}P(C|\theta,z)P(\theta)d\theta=\prodn\prodk\frac{Γ(|χ_{n}|\gamma)}{Γ(T_{k}+|χ_{n}|\gamma)}\prodc\frac{Γ(L_{kn}^{c}+\gamma)}{Γ(\gamma)}
+$$
+
+Where θ is a set of multinomial parameters, $|χ_{n}|$ is the number of options on problem n and $L_{kn}^{c}$ is the number of individuals assigned to group k who choose stance c on issue n. The likelihood favors group assignments for which choice patterns are similar between individuals assigned to the same group.
+
+Parametric modulator values use the probability that the agent under consideration is in the same group as the participant and are derived as the marginal posterior probability of the relevant partitions:
+
+$$
+P(z_{a}=z_{p}|C)=\sumkP(z_{a}=k|C)P(z_{p}=k|C)
+$$
+
+### Neural signal decoding
+
+The neural signal of interest can be algebraically derived from the standard GLM with L2-norm regularization:
+
+$$
+Signal^_{interest}=(Y−\sumi\neqinterest\beta^_{i}X_{i})\frac{\beta^_{interest}}{\beta^_{interest}^{2}+\lambdaI}
+$$
+
+where Y is the overall signal from the voxel and X is the corresponding vector from the original design matrix. For these analyses, we set our regularization parameter, λ, to a value of 1 following Tomov et al. (2018).

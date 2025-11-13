@@ -20,7 +20,7 @@
 
 ## Abstract
 
-There are multiple known associations between the ABO and RhD blood groups and disease. No systematic population-based studies elucidating associations between a large number of disease categories and blood group have been conducted. Using SCANDAT3-S, a comprehensive nationwide blood donation-transfusion database, we modeled outcomes for 1217 disease categories including 70 million person-years of follow-up, accruing from 5.1 million individuals. We discovered 49 and 1 associations between a disease and ABO and RhD blood groups, respectively, after adjustment for multiple testing. We identified new associations such as a decreased risk of kidney stones and blood group B as compared to blood group O. We also expanded previous knowledge on other associations such as pregnancy-induced hypertension and blood groups A and AB as compared to blood group O and RhD positive as compared to negative. Our findings generate strong further support for previously known associations, but also indicate new interesting relations. Swedish Research Council.
+Background:There are multiple known associations between the ABO and RhD blood groups and disease. No systematic population-based studies elucidating associations between a large number of disease categories and blood group have been conducted.Methods:Using SCANDAT3-S, a comprehensive nationwide blood donation-transfusion database, we modeled outcomes for 1217 disease categories including 70 million person-years of follow-up, accruing from 5.1 million individuals.Results:We discovered 49 and 1 associations between a disease and ABO and RhD blood groups, respectively, after adjustment for multiple testing. We identified new associations such as a decreased risk of kidney stones and blood group B as compared to blood group O. We also expanded previous knowledge on other associations such as pregnancy-induced hypertension and blood groups A and AB as compared to blood group O and RhD positive as compared to negative.Conclusions:Our findings generate strong further support for previously known associations, but also indicate new interesting relations.Funding:Swedish Research Council.
 
 ## Introduction
 
@@ -32,11 +32,11 @@ Using the Scandinavian Donation and Transfusion (SCANDAT) database, we have prev
 
 ## Materials and methods
 
-## Study population and study design
+### Study population and study design
 
 Individuals in the study were identified using an updated version of the Scandinavian donations and transfusion database (SCANDAT3-S). This database includes close to 8 million individuals who have donated blood, received a blood transfusion, or have had blood group testing done for other reasons. Other reasons for blood group testing would typically be pre-emptive testing for example, before surgery or in antenatal care. The database contains detailed information on blood donations, transfusions, as well as blood group antigen and antibody testing results and is thoroughly described elsewhere (Zhao et al., 2020). It is nationally complete since 1995, but information dates back to 1968 with various levels of completeness, mainly depending on the geographical region. Using unique national registration numbers assigned to all inhabitants of Sweden, the SCANDAT3-S database has been linked to a range of national health outcomes registers, for hospital care, cancer, cause of death, and drug prescriptions . From SCANDAT3-S, we extracted information on ABO and RhD blood group and created a main cohort and a validation cohort. The main cohort consisted of all individuals who were born in Sweden where at least one parent was born in Sweden and who, for any reason, had undergone ABO and RhD blood group typing with a conclusive result, but who did not donate blood within 90 days of the test. Person-time for blood donors were excluded from the main cohort to maximize the representativeness of the study population. In the validation cohort, we included all individuals in the SCANDAT3-S database who had ever donated blood. As such, an individual could contribute person-time in both cohorts, such as in the case a person started to donate blood more than 90 days later from a blood grouping test that was initially performed for other reasons. The person-time before blood donation would contribute to the main cohort censoring at entry in the validation cohort starting at the time of blood grouping before the blood donation.
 
-## Outcomes
+### Outcomes
 
 We defined and studied a large number of disease categories. Non-cancer disease categories were based on discharge diagnoses from the national patient register, which covers all hospital inpatient care in Sweden since 1987 and all specialist outpatient care since 1997, and from the Cause of Death register, which records underlying causes of death for all persons in Sweden since 1964 (Brooke et al., 2017; Ludvigsson et al., 2011). Because the 10th revision of the International Classification of Disease (ICD) was implemented in 1997, we limited outcomes ascertainment to events from 1997 or later to avoid inconsistencies between ICD revisions. Cancer outcomes were based on the Cancer Register, which records all incident cancer cases in Sweden since 1958 (Barlow et al., 2009). All of these registries are held and maintained by the Swedish National Board of Health and Welfare and have a high level of completeness and accuracy. Dates of death and emigration were obtained from population registers kept by Statistics Sweden.
 
@@ -44,7 +44,7 @@ Details of non-cancerous disease categories are presented in Supplementary file 
 
 In total, we considered 1217 distinct disease categories. After database construction, we excluded disease categories with fewer than 50 events before analysis as we would be unlikely to detect sufficient events in the validation cohort in categories with fewer than 50 events in the main cohort.
 
-## Statistical methods
+### Statistical methods
 
 All persons were followed from the date of the first blood grouping test, from their 18th birthday, or from January 1, 1997, whichever occurred last. Follow-up was extended until the first incident event in each disease category, emigration, death or December 31, 2017, whichever occurred first. A person could thus be included in follow-up for all disease categories investigated.
 
@@ -55,6 +55,87 @@ Multiple testing was handled using a two-stage approach. First, in the explorato
 ## Results
 
 Characteristics of the main and validation cohorts are presented in Table 1. When combining the main and validation cohort, there were a total of 5.1 million unique individuals. The main cohort consisted of 4.2 million individuals who at any point had undertaken an ABO and RhD blood antigen test. The distribution of A, AB, B, and O were 47%, 5%, 10%, and 38%, respectively, and 84% of individuals were RhD positive. Women constituted 60% of the cohort. The median age at cohort entry was 52 years (interquartile range [IQR], 30–71) and the median year of birth was 1949 (IQR, 1931–1971).
+
+**Table 1.**
+ Baseline characteristics of main and validation cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Main cohort</th>
+      <th colspan="2">Validation cohort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number</td>
+      <td colspan="2">4,204,234</td>
+      <td colspan="2">1,197,522</td>
+    </tr>
+    <tr>
+      <td>Age, median (IQR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, median (IQR)</td>
+      <td>52</td>
+      <td>(30-71)</td>
+      <td>30</td>
+      <td>(23-41)</td>
+    </tr>
+    <tr>
+      <td>Year of birth, median (IQR)</td>
+      <td>1949</td>
+      <td>(1931–1971)</td>
+      <td>1966</td>
+      <td>(1953–1978)</td>
+    </tr>
+    <tr>
+      <td>Sex, %</td>
+      <td colspan="2">60</td>
+      <td colspan="2">49</td>
+    </tr>
+    <tr>
+      <td>Blood group, %</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td colspan="2">47</td>
+      <td colspan="2">45</td>
+    </tr>
+    <tr>
+      <td>AB</td>
+      <td colspan="2">5</td>
+      <td colspan="2">5</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td colspan="2">10</td>
+      <td colspan="2">11</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td colspan="2">38</td>
+      <td colspan="2">39</td>
+    </tr>
+    <tr>
+      <td>RhD positive, %</td>
+      <td colspan="2">84</td>
+      <td colspan="2">82</td>
+    </tr>
+  </tbody>
+</table>
+
+_IQR, interquartile range._
 
 Not accounting for censoring due to disease events, the main cohort accrued a total of 49.9 million person-years of follow-up, 23.7 million in blood group A, 2.3 million in blood group AB, 4.9 million in blood group B, and 18.9 million in blood group O.
 
@@ -67,6 +148,169 @@ Of the original 1217 disease categories, 1090 remained available for analyses af
 ![Figure 2.](https://cdn.elifesciences.org/articles/65658/elife-65658-fig2-v2.jpg)
 
 **Figure 2.:** Manhattan plot depicting distribution of p-values for significant and non-significant associations between ABO and RhD blood groups and available outcomes for main cohort and validated results mapped by disease chapter in ICD (live version available as online Supplementary file 2).
+
+**Table 2.**
+ Meta-summary of results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Main cohort</th>
+      <th></th>
+      <th colspan="5">Validation cohort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individuals</td>
+      <td colspan="5">4,204,234</td>
+      <td></td>
+      <td colspan="5">1,197,522</td>
+    </tr>
+    <tr>
+      <td>Person-years, sum</td>
+      <td colspan="5">50 M</td>
+      <td></td>
+      <td colspan="5">22 M</td>
+    </tr>
+    <tr>
+      <td>Events, median (IQR)</td>
+      <td colspan="5">4748 (869–23,166)</td>
+      <td></td>
+      <td colspan="5">7129 (2464–19,973)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A</td>
+      <td>AB</td>
+      <td>B</td>
+      <td>ABO total</td>
+      <td>RhD positive</td>
+      <td></td>
+      <td>A</td>
+      <td>AB</td>
+      <td>B</td>
+      <td>ABO total</td>
+      <td>RhD positive</td>
+    </tr>
+    <tr>
+      <td>Before adjustment</td>
+      <td>229</td>
+      <td>129</td>
+      <td>179</td>
+      <td>537</td>
+      <td>106</td>
+      <td></td>
+      <td>64</td>
+      <td>37</td>
+      <td>42</td>
+      <td>143</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Positive effects, N</td>
+      <td>150</td>
+      <td>79</td>
+      <td>107</td>
+      <td>336</td>
+      <td>61</td>
+      <td></td>
+      <td>47</td>
+      <td>23</td>
+      <td>22</td>
+      <td>92</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Negative effects, N</td>
+      <td>79</td>
+      <td>50</td>
+      <td>72</td>
+      <td>201</td>
+      <td>45</td>
+      <td></td>
+      <td>17</td>
+      <td>14</td>
+      <td>20</td>
+      <td>51</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>After adjustment*</td>
+      <td>108</td>
+      <td>56</td>
+      <td>70</td>
+      <td>234</td>
+      <td>13</td>
+      <td></td>
+      <td>26</td>
+      <td>13</td>
+      <td>10</td>
+      <td>49</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Positive effects, N</td>
+      <td>66</td>
+      <td>38</td>
+      <td>36</td>
+      <td>140</td>
+      <td>10</td>
+      <td></td>
+      <td>19</td>
+      <td>10</td>
+      <td>6</td>
+      <td>35</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Negative effects, N</td>
+      <td>42</td>
+      <td>18</td>
+      <td>34</td>
+      <td>94</td>
+      <td>3</td>
+      <td></td>
+      <td>7</td>
+      <td>3</td>
+      <td>4</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Positive IRR, median (range)</td>
+      <td>1.05 (1.01–1.72)</td>
+      <td>1.09 (1.03–1.52)</td>
+      <td>1.09 (1.02–1.39)</td>
+      <td></td>
+      <td>1.05 (1.02–1.08)</td>
+      <td></td>
+      <td>1.1 (1.03–1.57)</td>
+      <td>1.32 (1.07–1.89)</td>
+      <td>1.5 (1.07–1.64)</td>
+      <td></td>
+      <td>1.12 (1.12–1.12)</td>
+    </tr>
+    <tr>
+      <td>Negative IRR, median (range)</td>
+      <td>0.95 (0.77–0.99)</td>
+      <td>0.92 (0.74–0.97)</td>
+      <td>0.92 (0.57–0.98)</td>
+      <td></td>
+      <td>0.97 (0.9–0.97)</td>
+      <td></td>
+      <td>0.92 (0.86–0.95)</td>
+      <td>0.84 (0.81–0.87)</td>
+      <td>0.88 (0.83–0.93)</td>
+      <td></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_*In the main and validation cohort FDR and Bonferroni adjustment was conducted, respectively._
 
 In our validation cohort, consisting of almost 1.2 million blood donors accruing 22 million person-years of follow-up, we validated the findings from the significant disease categories from the first analysis. Among the 143 and 5 significant disease categories for ABO and RhD, respectively, the median number of events was 7129 (IQR 2464–19,973). Before multiple testing adjustment, we identified 160 associations between a blood group in 143 and 5 disease categories, for the ABO and RhD blood group, respectively. After Bonferroni adjustment, there were 49 and 1 associations remaining between ABO and RhD blood group, respectively (Table 2 and Figure 3).
 

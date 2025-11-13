@@ -68,11 +68,31 @@ Organ-on-Chip models aim to overcome these limitations by combining micro-engine
 
 As a starting point for our method development and validation, we used molecules under current preclinical development. We focused on a T-cell bispecific antibody generated to bring Folate Receptor 1 (FOLR1) expressing tumor cells in close proximity to CD3 expressing cytotoxic T-cells (Figure 1—figure supplement 1A; Geiger et al., 2020). FOLR1 is overexpressed in many solid, epithelial-derived tumors including ovarian, lung, and breast cancer (Scaranti et al., 2020), but is also expressed to a lower degree on normal epithelial cells as found in the lung and kidneys (Parker et al., 2005). While a high-affinity FOLR1-TCB (FOLR1(Hi) TCB) was efficacious in human breast cancer patient-derived xenograft models (Figure 1—figure supplement 1B), severe on-target toxicity in the lung of cynomolgus monkey was observed (AMea, 2016). Clinical signs of severe respiratory inflammation appeared as early as 24 hr post-dosing, and pro-inflammatory cytokines IL-6, IL-2, and IL-8 were elevated in the blood of affected animals, and importantly coincided with an increase of inflammation markers. Histopathology assessment revealed leukocytic infiltrates in lung tissue indicative of immune-mediated toxicity (Figure 1A). Further immunohistochemistry (IHC) studies (Figure 1B–D) indicated low relative expression (compared to high FOLR1 expression in the ovarian carcinoma cell line, HeLa) of the FOLR1 target antigen in lung alveolar epithelial cells of cynomolgus lung tissue suggesting an adverse event largely driven by on-target toxicity. Importantly, IHC analysis of FOLR1 expression in the human lung revealed similar levels and patterns of the antigen as in the cynomolgus (Figure 1E,F), extending the threat of safety liabilities to patients in the clinical setting. Bearing in mind the toxicological profile of FOLR1(Hi) TCB in cynomolgus and the expression of FOLR1 in both species lung tissue, we identified the lung as an at-risk organ in patients and accordingly set out to evaluate a human Alveolus Lung-Chip model as a platform for FOLR1(Hi) TCB toxicology assessment.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig1-v2.jpg)
+
+**Figure 1.:** (A) IHC of pre-clinical, cynomolgus lung tissue 24 hr after intravenous single-dose administration of high-affinity FOLR1-TCB (FOLR1(Hi), 10 µg/kg), demonstrating leukocytic infiltration (dark purple cells) and inflammation. (B) Expression of FOLR1 protein in healthy cynomolgus lung tissue stained with antibody targeting FOLR1. (C, F) Isotype controls of FOLR1 staining in healthy cynomolgus and human lung tissues, respectively. (D) High FOLR1 expression displayed in human ovarian carcinoma HeLa cell line for comparison to (E) histopathological staining of primary healthy human lung tissue for FOLR1. (G) Schematic of Alveolus Lung-Chip to model human FOLR1 on-target toxicities. Alveolus Lung-Chip design is composed of a top microfluidic channel (Waldman et al., 2020) seeded with primary adult human alveolar cells (Yang, 2015) cultured to maturity with air–liquid interface (ALI). The top, epithelial channel is separated with a flexible, porous membrane (Hodi et al., 2010) from a bottom, vascular channel seeded with primary lung microvascular cells (Schadendorf et al., 2015; Wolchok et al., 2017). Mechanical stretching is applied via pneumatic actuation of parallel vacuum channels (Gong et al., 2018). (H) RNAseq expression levels of FOLR1 gene in cultured alveolar epithelial cells on day 0 (before seeding), 5, or 10 after seeding and differentiation on the Alveolus Lung-Chip (n=3, ± SEM). (I) Representative immunofluorescent staining of chip epithelium (Nuclei, blue) at day 10 of culture expressing the tight junction marker E-cadherin (green) and FOLR1 target antigen (red). Images taken at 40× magnification. (J) Estimation of surface FOLR1 binding site expression via flow cytometry of harvested chip epithelial cells at days 0 (before seeding), 5, and 10 (n=2–4, ± SEM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ‘Knobs-into-holes’ technology was used for the generation of heterodimeric molecules and PG LALA mutations were inserted to prevent FcγR binding. The resulting FOLR1-specific asymmetric 2:1 T-cell bispecific antibody with a molecular format that incorporates bivalent binding to FOLR1 and monovalent binding to CD3e is described thereafter as FOLR1-TCB. (B) Tumor growth inhibition curves of breast PDX BC004 model in CD34+ HSC humanized NSG mice (HSC-NSG). Humanized mice (n = nine per group) were weekly intravenously injected with FOLR1-TCBs (0.5 mg/kg) or vehicle once the tumor size reached 150 mm3 (day 26). Each dot represents the mean tumor volume ± SEM. Efficacy was evaluated by measuring the reduction of the mean tumor volume at day 62 relative to vehicle control. Statistical analysis was done using an unpaired t-test. (C) Bivalent binding (avidity with apparent KD) of FOLR1-TCBs on human and cynomolgus FOLR1 as determined by SPR. (D) Monovalent binding (affinity) of FOLR1-TCBs on human and cynomolgus FOLR1 as determined by SPR. (E) Binding of FOLR1-TCBs to human FOLR1 expressed on HeLa cells revealed the higher binding of FOLR1(Hi) TCB compared to FOLR1(Lo) TCB, consistent with the observed higher affinity for FOLR1. (F) Treatment of HeLa cells with both TCBs in presence of PBMC led to a concentration-dependent HeLa cell killing. Statistical analysis was done using an unpaired t-test. (G) FOLR1(Hi) TCB and FOLR1(Lo) TCB were administered once per week to HeLa cell injected human PBMC engrafted NOG mice starting from day 32 post-HeLa injection and day 2 post-PBMC injection. Mice were terminated at day 53 and tumors weighted. Animals with low T-cell engraftment (<5%) were excluded from analysis. Each dot represents the mean tumor volume ± SEM. Statistical analysis was done using a one-way ANOVA test.
+
 Alveolus Lung-Chips were seeded with human adult lung primary alveolar epithelial cells on top of an extra-cellular matrix-coated porous membrane that separates two parallel, fluidic microchannels (Figure 1G, Figure 2—figure supplement 1). On the opposite side of the membrane, human primary lung microvascular cells were seeded to form a lower tubular vascular channel as described previously (Jain et al., 2018). A mature Alveolus Lung-Chip model was obtained after 5 days of liquid–liquid culture (LLI) followed by establishment of an air–liquid–culture (ALI) for a further 5 days. To evaluate FOLR1 expression in chips, we combined RNA sequencing, immunofluorescence and flow cytometry analyses. FOLR1 gene expression was even over time as shown by quantification of RNA transcripts (Figure 1H). We also confirmed FOLR1 protein expression in mature chips (Figure 1I). Flow cytometry-mediated quantification allowed us to estimate the cell surface expression of FOLR1 within the Alveolus Lung-Chip at an average of ~10,000 molecules expressed per cell (Figure 1J). For comparison, the high FOLR1 expressing ovarian carcinoma HeLa cell line displayed an average of ~450,000 molecules per cell when cultured on chip (Figure 2—figure supplement 1B), confirming the difference observed in IHC between healthy and tumor cells.
 
 To render the device immunocompetent and capable of simulating on-target TCB-mediated immunomodulation, we added peripheral mononuclear blood cells (PBMC) isolated from human whole blood to the epithelial channel in direct contact with the mature alveolar epithelium (Figure 2—figure supplement 1). Introduction of T cells is required to engage the CD3 arm of FOLR1(Hi) TCB thereby allowing its mode of action. The sequence of events we aimed to reproduce in chips are the crosslinking of T cells to the FOLR1 expressing target cells mediated by the TCB, subsequent T-cell activation and cytolytic synapse formation resulting in cytotoxic granules release (granzymes and perforin) and consequent target cell apoptosis. Early T-cell cytokine release (TNFα, IFNγ) should be followed by later cytokine release from epithelial cells and monocytes (IL-6, IL1β, IL-8) combined with strong physical attachment of immune cells to the FOLR1-expressing lung epithelium via the TCB. Thus, we selected and optimized experimental readouts that would enable us to monitor these steps in the Alveolar Lung-Chip.
 
 Figure 2A shows representative brightfield and fluorescent images of the Alveolus Lung-Chip at 48 hr after the administration of immune cells. Compared to the chips treated with a non-targeting (NT) TCB control antibody, FOLR1(Hi) TCB treated chips presented an increased apoptosis of the alveolar epithelium (Figure 2B). Consistently, FOLR1(Hi) TCB treatment led to increased T-cell activation (as evidenced by CD69 upregulation in CD8+ T cells) in the presence of target-expressing cells (Figure 2C), but not in PBMC only (Figure 2C, right panel). Supernatants collected from the outlet reservoir of the epithelial channels at 24 and 48 hr post-treatment were measured for multiplex cytokines (Figure 2D), revealing a significantly increased secretion of IFNγ at 24 hr and 48 hr that correlated with increased granzyme B and IL-6 at 48 hr in response to FOLR1(Hi) TCB.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig2-v2.jpg)
+
+**Figure 2.:** Isolated PBMCs were pre-incubated for 1 hr with high-affinity FOLR1 TCB (FOLR1(Hi)) or non-targeting TCB control (NT) and introduced to the epithelial channel of differentiated Alveolus Lung-Chips and rested for 3 hr prior to initiation of media perfusion. The established co-culture with immune cells was then maintained for 48 hr under flow with fresh media. (A) Representative brightfield (top) and immunofluorescent images (bottom) of Alveolar Lung-Chip epithelium (nuclei, blue) 48 hr after addition of PBMC (cyan). The control group did not have PBMC administered. The FOLR1(Hi) group showed higher levels of PBMC attachment and caspase-3/7-positive, apoptotic cells (magenta) (B) Quantification of apoptotic caspase-3/7-positive cells collected on live chips (n=4). (C) Flow cytometry analysis of PBMC harvested from chips or plates for percentage of live, CD69+ activated CD8+ T cells (n=4 approx. 10,000 cells per chip) after 48 hr (n=4). PBMC cultured on plates after 48 hr incubation showed overall low activation levels without attachment to epithelium. (D) Multiplex cytokine analysis of epithelial channel supernatants at 24 and 48 hr after PBMC introduction (n=4). (E) Immunofluorescent staining of FOLR1 target expression (blue) in epithelium of chips administered with NT control (left) and FOLR1(Hi)-treated (right) PBMC (green). Increased accumulation of PBMC and co-localization with FOLR1 signal was observed in FOLR1(Hi) group. (F) Quantification of immunofluorescent images confirmed increased PBMC attachment (including T cells) in the FOLR1(Hi) group (n=4). Statistical analysis was conducted by one-way ANOVA (B, C, D, F) and was defined as *p<0.05, **p<0.01, and ***p<0.001. Errors bars represent ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Alveolus Lung-Chips were cultured following the organ-chip protocol till day 7 of culture. On day 8, frozen PBMCs were thawed and rested overnight at 37°C prior to introduction on chip. The same day, hydrocortisone-free medium was introduced in chips 24 hr before TCB-PBMC introduction. After 4 days of culture under ALI (air–liquid interface), culture medium was re-introduced in the epithelial channel after which PBMC-TCB was introduced to the epithelial channel. Apical and basal outflow collection, PBMC (Cell Tracker) and Epithelial Apoptosis (Caspase3/7+) live imaging was performed at 24 hr and 48 hr post-PBMC-TCB dosing. At the 48 hr terminal time point, PBMCs were collected from chips for T-Cell CD69 analysis using flow cytometry. Chips were later fixed with 4% PFA and stored for further immunofluorescence imaging.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Ovarian carcinoma HeLa cells were seeded into epithelial channels of chips, with lung microvascular cells in vascular channels, and cultured under liquid–liquid interface (LLI) to confluency. (A) Representative microscopy picture of immunostaining of FOLR1 (red) in mature HeLa chips and Dapi nuclear counterstain in blue (B) Flow cytometry quantification of FOLR1 target sites on alveolar epithelial cells or HeLa cells after culture on chips for 5 days (n=2, ± SEM). (C) Chips were administered with PBMC with high-affinity FOLR1(Hi) TCB at 20 pg/mL–20 µg/mL concentration or non-targeting (NT) TCB (20 µg/mL) (also included PBMC-deficient control). T-cell activation (CD69+/CD8+) was measured on harvested PBMC from epithelial channels through flow cytometry on live cells (n=4). (D) Analysis of apoptotic, caspase-3/7+ epithelial cell signal from live imaging at 24 (left) and 48 hr (right) post PBMC administration (n=4). (E) Multiplex cytokine analysis from supernatants collected from epithelial channels at 24- and 48 hr (n=4). Statistical analysis was conducted by one-way ANOVA (B, C) and was defined as ****p<0.0001. Errors bars represent ± SEM.
 
 Interestingly, we noticed a higher number of immune cells in the FOLR1(Hi) TCB condition compared to the NT control, possibly due to a combination of T-cell proliferation and increased attachment of T cells (Figure 2A). Quantification of the immune cell presence in fixed chips confirmed increased attachment of both T cells and non CD3+ cells to the target epithelium in the FOLR1(Hi) TCB condition (Figure 2E,F), which is consistent with the TCB mode of action, whereby immune cells are crosslinked to target cells. Together, these data suggest that the Alveolus Lung-Chip successfully replicates aspects of the FOLR1 (Hi) TCB-mediated toxicity observed in cynomolgus, and suggests that the human lung would be subject to similar safety liabilities.
 
@@ -80,11 +100,39 @@ In light of the toxicity risk predicted above, and hoping to define a potential 
 
 Although the data described above suggested that a therapeutic window for FOLR1(Hi) TCB could be determined, we leveraged the chip to instead identify a safer molecule. In particular, we utilized an antibody with lower monovalent affinity for the FOLR1 target, referred to as FOLR1(Lo) TCB making use of avidity mediated selectivity gain (Figure 1—figure supplement 1C,D). As a result of that design, FOLR1(Lo) TCB presented a lower binding to FOLR1-expressing HeLa cells while retaining a potent killing activity in coculture assays and an in vivo tumor control efficacy (Figure 1—figure supplement 1E–G). We profiled the two TCBs, FOLR1(Hi) and FOLR1 (Lo), in the immunocompetent Alveolus Lung-Chip following the workflow and readouts described above, and found that FOLR1(Hi) TCB induced a significant increase in all the readouts starting at the 0.2 μg/mL concentration whereas FOLR1(Lo) TCB showed a response only at the highest concentration of 20 μg/mL and to a much lower magnitude than the high-affinity molecule (Figure 3A–D, Figure 3—figure supplement 1). These results demonstrated that the cellular responses on the platform are sensitive to differences in antibody affinity and recapitulates the biology associated with the mode of action of TCBs. Following these in vitro observations, the lower affinity FOLR1 TCB was tested in a cynomolgus toxicology study and none of the animals experienced the lung inflammation observed with FOLR1(Hi) TCB (Figure 3E), confirming the safer profile predicted by the Alveolus Lung-Chip.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig3-v2.jpg)
+
+**Figure 3.:** (A) Flow cytometry analysis of PBMC harvested from epithelial channel and assessed for CD69+ activated CD8+ T cells (n=4 approx. 10,000 cells per chip). (B) Quantification of immunofluorescent images of prelabelled (PBMC that remained attached after harvest from chip epithelium) (n=4). (C) Immunofluorescent image quantification of caspase-3/7+ apoptotic epithelial cells at 48 hr time point. The NT control group displayed no increase in T-cell activation, PBMC attachment, or apoptotic cells with increasing dose, while the FOLR1(Lo) group showed a significant increase at 20 µg/mL and the FOLR1(Hi) group displayed an increase from 0.2 µg/mL in a dose-dependent manner (n=4). (D) Heat map displaying multiplex cytokine analysis of chip epithelial channel supernatant at 24 and 48 hr post-treatment. (E) Histological lung tissue section from pre-clinical cynomolgus study of intravenous FOLR1(Lo) (10 µg/kg), 24 hr after administration. Statistical analysis was conducted by one-way ANOVA (A, B, C) and was defined as **p<0.01, ***p<0.001, and ****p<0.0001. Errors bars represent ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mature chips were administered with PBMC and treated with FOLR1(Hi) TCB and FOLR1(Lo) TCB in a dose-response fashion over the course of two days as described in Figure 2. Total/CD4+/CD8+ T cells percentages and T-cell activation (CD69+CD4+ or CD8+ T cells) were calculated on PBMC harvested from epithelial channels through flow cytometry on live cells at 48 hr time point (n=4).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Transwells were cultured in parallel to Alveolus Lung-Chips and both were introduced to PBMC with/without low-affinity (FOLR1(Lo)) and high-affinity (FOLR1(Hi)) TCB or Non-targeting (NT) control. (A–C) Comparison of chips (top graphs) and transwells (bottom graphs): (A) live imaging analysis of PBMC attachment to epithelium, (B) live imaging analysis of apoptotic caspase-3/7+ epithelial cells, and (C) flow cytometry analysis of live harvested PBMC for T cell activation CD69+ and killer CD8+ surface markers. Data from 48 hr after PBMC administration (n=4). (D, E) Multiplex cytokine analysis of (D) Granzyme (B, E) IFN-ɣ from supernatant collected from epithelial channels 24 and 48 hr after PBMC administration (TW, transwells). Statistical analysis was conducted by one-way ANOVA (A–C) and was defined as **p<0.01 and ****p<0.0001. Errors bars represent ± SEM.
+
 To compare the chip format to its 2D equivalent, we benchmarked the Alveolus Lung-Chip against transwell inserts coated with alveolar epithelial cells and endothelial cells on opposing sides (Figure 3—figure supplement 2). In the transwell environment, quantification of TCB-dependent immune cell attachment and apoptosis did not show differences between the control and FOLR1 TCB treatment conditions. T-cell activation and T-cell-specific cytokines were elevated, possibly due to prolonged interactions of the immune cells with the epithelium and static media supply. Also, the transwell version did not capture differences between FOLR1 antibodies: FOLR1(Lo) TCB led to a higher amount of granzyme B and IFNγ release than the chips, which is inconsistent with the absence of toxicity observed in vivo. Given the higher concordance of the results produced by the Alveolar Lung-Chip compared with the transwell counterpart, we propose that the novel immunocompetent Alveolus Lung-Chip platform can faithfully evaluate TCB on-target, off-tumor risks and presents a superior value to the existing alternatives.
 
 To demonstrate the broad applicability of the model for testing target-mediated TCB safety risks, we extended the methodology to a second target and a second Organ-Chip model. In this example, we focused on TCBs targeting carcinoembryonic antigen (CEA), which is overexpressed in a range of solid tumors, including colorectal cancer (Hammarström, 1999). We have created TCBs binding to CEA with high or low affinity – CEA(Hi) and CEA(Lo) TCB, respectively (Figure 4—figure supplement 1), and are currently evaluating them as therapies for a range of solid tumors. Indeed, we have found that CEA(Hi) and CEA(Lo) TCB are potent mediators of tumor cell lysis and T-cell activation in vitro (Figure 4—figure supplement 1B,C), and exhibit robust anti-tumor activity in humanized mice engrafted with CEA-expressing tumors (Figure 4—figure supplement 1C).
 
 Aside from solid tumors, however, CEA is expressed in the gastrointestinal tract (Benchimol et al., 1989; Thomas et al., 1995; Zhou et al., 1993). Immunohistochemistry analysis of primary human intestinal samples confirmed high expression of CEA in the colon, whereas small intestinal expression was lower. In both tissues, CEA was enriched on the apical surface of the barrier (Figure 4A). The substantial target presence in the gastrointestinal tract implicates this system as an at-risk organ, motivating us to assess potential intestinal toxicities triggered by CEA-engaging TCBs. Our antibodies recognize a human-specific epitope within the CEA protein,, making mice and cynomolgus preclinical toxicology models unsuitable for the assessment of toxicities caused by CEA-targeting TCBs. Indeed, our antibodies showed lack of cross-reactivity to cynomolgus monkey CEA, which underscores the need for human-relevant models in addressing this question (Figure 4—figure supplement 1E). Therefore, we leveraged the recently developed and characterized Colon and Duodenum Intestine-Chips, which combine the two most advanced approaches in the field of intestinal modeling – primary human organoids and Organs-on-Chips (Kasendra et al., 2020; Kasendra et al., 2018). Briefly, primary human colon intestinal organoids are dissociated and seeded within an Organ-Chip (Figure 4—figure supplements 2 and 3A), where they form a tight, polarized barrier, containing the full range of mature intestinal cell types. We have previously shown that the inclusion of luminal flow, peristaltic motion, and an endothelial layer enhances the maturation and physiological fidelity of the barrier, compared with organoids in conventional 3D culture (Apostolou et al., 2020).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig4-v2.jpg)
+
+**Figure 4.:** (A) IHC of human colon and duodenum tissue stained with anti-CEA (brown coloration) demonstrating difference in regional expression. (B) Representative immunofluorescent micrograph depicting CEA expression in the epithelial compartment of the Colon Intestine-Chip and Duodenum Intestine-Chip. (C) Average cell surface expression of CEA within 3D organoids and chips at day 8 of culture (n=3). (D) Colon-Chip epithelial channels were administered with PBMC treated with/without low and high-affinity (CEA(Lo) and CEA(Hi)) TCB (0.1–10 µg/mL), or Non-targeting (NT) TCB (10 µg/mL). Co-culture was maintained under flow for 72 hr. Quantification of immunofluorescent images collected live indicate multiple clusters of PBMC settled throughout epithelial structures. Statistical analysis was conducted by one-way ANOVA and was defined as *p<0.05 and ***p<0.001. Errors bars represent ± SEM. (E) CD69+ Activation of CD8+ T cells of harvested PBMC measured by flow-cytometry (n=3± SEM). (F) Heat map of multiplex cytokine panel from epithelial channel supernatants. Data (D–F) from terminal endpoint 72 hr after administration (n=3). (G) Colon- and Duodenum-Chips were administered with PBMC with low and high-affinity (CEA(Lo) and CEA(Hi)) TCB treatment from 0 to 10 µg/mL, along with Non-targeting (NT) control. Flow cytometry analysis of harvested PBMC from chips 72 hr post-treatment to measure levels of activated CD69+CD8+ T cells (n=3± SEM). (H) Multiplex cytokine analysis of supernatant collected from epithelial channels of Colon and Duodenum-Chips after 72 hr of treatment (n=3± SEM).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Both TCB molecules displayed concentration-dependent binding to human CEA-expressing gastric cancer cell line MKN45. CEA(Hi) TCB showed stronger binding, consistently with its higher affinity for CEA. Treatment with both TCBs led to concentration-dependent (B) MKN45 cancer cell killing and (C) T-cell activation, with the higher affinity molecule producing a stronger effect. (D) Effect of CEA-targeted TCBs on tumor progression in CD34+ HSC humanized NSG mice (HSC-NSG mice), engrafted with tumor-forming MKN45 cells. (E) Assessment of binding of CEA(Lo) TCB to CEA derived from humans or cynomolgus monkeys. Data are represented as mean values, with SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Colon Intestine-Chips were cultured following the organ-chip protocol until day 4. On day 4, frozen PBMCs were thawed and rested overnight at 37°C prior to introduction to the chip. On day 5, PBMC-TCB dosing solutions were prepared and administered to the epithelial channel of the chips. For days 6–8, the epithelial channel was administered with media containing TCB but without additional PBMC. Apical and basal outflow collection and PBMC (Cell Tracker) live imaging was performed at 24 hr, 48 hr, and 72 hr post PBMC-TCB dosing. At the 72 hr terminal time point PBMCs were collected from chips for T-Cell analysis using flow cytometry. Chips were later fixed with 4% PFA and stored for further immunofluorescence imaging.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67106/elife-67106-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Diagram of Colon and Duodenum-Intestine chip seeding, beginning with fragmented primary human organoids seeded into the epithelial channel of the chip. Primary intestinal endothelial cells, either colon or small-intestinal depending on corresponding epithelial tissue, are seeded into the vascular channel and the chip is cultured to maturity under flow and mechanical deformations. (B) Immunofluorescence staining of CEA and nuclei in colon or dudodenum chips versus matched colon or duodenum organoids. (C) Immunohistochemistry analysis of CEA (brown coloration) in a conventional, static model of the intestinal barrier: organoid-derived intestinal cell seeded on ECM-coated transwell membranes. (D) Flow cytometry-based quantification of CEA binding sites expressed by intestinal barriers cultured in transwells. High CEA-expressing cancer cell lines MKN5 and A549 serve as positive controls. (E) Treatment of PBMC with CEA-targeted TCBs in the absence of target does not induce activation, confirming target-dependent mode of toxicity observed in the Intestine-Chips.
 
 To qualify the Intestine Chip as a platform for TCB safety assessment, we set out to determine whether it (1) supports physiologically relevant target expression and (2) can successfully capture target-mediated TCB toxicity. Immunofluorescence analysis revealed robust expression of CEA in the Colon Intestine-Chip epithelium, whereas expression in the Duodenum Intestine-Chip appeared weaker and localized to the apical surface (Figure 4B).
 
@@ -108,7 +156,115 @@ In conclusion, we describe novel human immunocompetent models of the lung and in
 
 ## Materials and methods
 
-## Construction of FOLR1- and CEA-targeted molecules
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human Primary Alveolar Epithelial Cells</td>
+      <td>CellBiologics</td>
+      <td>Cat# H-6053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human Pulmonary Alveolar Epithelial Cells</td>
+      <td>Accegen</td>
+      <td>Cat# ABC-TC3770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human Lung Microvascular Endothelial Cells</td>
+      <td>Lonza</td>
+      <td>Cat# CC-2527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human Large Intestine Microvascular Endothelial Cells</td>
+      <td>Cell Systems</td>
+      <td>Cat# ACBRI 666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-2, RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MKN45</td>
+      <td>DSMZ</td>
+      <td>Cat# ACC-409, RRID:CVCL_0434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-11268, RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIFIKIT</td>
+      <td>Agilent</td>
+      <td>Cat# K007811-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Tracker green</td>
+      <td>ThermoFisher</td>
+      <td>Cat# C7025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucView405 Caspase-3 Enzyme</td>
+      <td>Biotium</td>
+      <td>Cat# 10407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProcartaPlex multiplex immunoassays</td>
+      <td>Invitrogen</td>
+      <td>Cat# PPX-12-MXNKRV6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of FOLR1- and CEA-targeted molecules
 
 FOLR1 and CEA-targeted TCB molecules were generated in the 2+1 format (two target binding Fabs and one CD3 binding Fab). Heterodimerization of these bispecific antibodies is achieved by using the ‘knob-into-hole’ technology (Ridgway et al., 1996) in which the FOLR1 Fab is N-terminally fused to the CD3-Fc knob chain (head-to-tail configuration) and a second FOLR1 Fab is fused to the Fc hole chain. These antibodies lack Fc effector functions due to the insertion of the PG LALA mutations (P329G; L234A, L235A; Schlothauer et al., 2016). In the FOLR1 TCB molecule, a common light chain was used for both, the FOLR1 and CD3 Fab. Two versions of the FOLR1 TCB were generated which differ in affinity. Clone 16D5 reveals high affinity (nM), whereas a variant of this clone, carrying two amino acid changes (D52dE and W96Y according to Kabat numbering), exhibits an affinity in the μM range.
 
@@ -118,11 +274,11 @@ The genes for all chains of the TCB molecules were inserted into separate mammal
 
 For both molecules, non-tumor targeted TCBs were generated based on the same construct but without the FOLR1 or CEA targeting sequence. Their characterization was done as described previously in Jurkat NFAT reporter assay (for quantification of CD3 downstream signaling) and in various cell lines cytotoxic assays (for non-tumor targeting assessment) (Geiger et al., 2020; Seckinger et al., 2017).
 
-## Cell lines
+### Cell lines
 
 The cell lines used were as follows: HeLa (ATCC CCL-2), MKN45 (DSMZ ACC 409), HEK293T (ATCC CRL-11268). Cell lines were maintained by the supplier. No additional authentication was performed by the authors of this study. Cell lines were tested for mycoplasma contamination and shown to be free from mycoplasma. No commonly misidentified cell lines were used.
 
-## Patient-derived xenograft (PDX) model
+### Patient-derived xenograft (PDX) model
 
 All mice were maintained under specific pathogen-free condition with daily cycles of 12 hr light/12 hr darkness. The animal facility has been accredited by the Association for Assessment and Accreditation of Laboratory Animal Care (AAALAC). All animal studies were performed in accordance with the Federation for Laboratory Animal Science Associations (FELASA). The animal studies were approved by and done under license from the Government of Upper Bavaria (Regierung von Oberbayern; Approval number: Az 55.2.1.54–2532.0-10-16). We have complied with all relevant ethical guidelines and regulations. Animals were maintained for 1 week after arrival to get accustomed to the new environment and for observation. Daily continuous health monitoring and weekly body weight measurement was conducted.
 
@@ -130,13 +286,13 @@ Female NSG mice were injected intraperitoneal with 15 mg/kg of Busulfan followed
 
 Alternatively for CEA TCB assessment, mice were injected with 1 × 106 MKN45 cells in the subcutaneous right flank and treated once weekly (CEA(Hi) TCB) or twice weekly (CEA(Lo) TCB) at a dose of 0.5 or 2.5 mg/kg respectively when tumor size reached approximately 150 mm3 (day 7). Control group received a histidine buffer (Vehicle). All mice were injected intravenously with 200 µL of the appropriate solution.
 
-## Alveolus Lung-Chip
+### Alveolus Lung-Chip
 
-## Immunohistochemistry cynomolgus monkey and human tissues
+#### Immunohistochemistry cynomolgus monkey and human tissues
 
 Immunohistochemical staining for FOLR1 distribution in cynomolgus monkey or human formalin-fixed, paraffin-embedded tissues was carried out on a Discovery XT automated slide stainer using a mouse anti-human monoclonal antibody for FOLR1 (Novocastra Clone BN3.2; Leica Biosystems, Wetzlar, Germany) at 15 µg/mL after antigen retrieval with Cell Conditioning 1 (CC1; Ventana Medical Systems Inc). As secondary Antibody was used a donkey anti-mouse biotinylated polyclonal IgG (Jackson Immunoresearch Lab, cat: 715-065-151) at 6 µg/mL. DAB Map Kit (Ventana 760–124) was used as a detection system. Xenograft tumors from FOLR1-expressing HeLa cells were used as a positive control.
 
-## Cell culture
+### Cell culture
 
 Human alveolar epithelial cells (Cell Biologics, Accegen) were cultured using SABM medium (Lonza) supplemented with growth factor kit and 5% v/v fetal bovine serum (FBS) in a T-25 flask coated with Gelatin (ATCC) until they reach 90% confluency.
 
@@ -144,17 +300,17 @@ Human microvascular lung endothelial cells (HMVEC-L) (Lonza) were cultured in EB
 
 Peripheral blood mononuclear cells (PBMC) were isolated from fresh human buffy coat (Research Blood Components) using immunomagnetic negative selection (Stem Cell Technologies) and cultured in RPMI-1640 (Gibco) supplemented with 10% v/v FBS (ThermoFisher) and 1% v/v Pen-Strep (ThermoFisher) or cryo-preserved in FBS containing 10% dimethyl sulfoxide (DMSO) before use.
 
-## Alveolus Lung-Chip
+### Alveolus Lung-Chip
 
 The design and fabrication of Organ-Chips has been previously described (Huh et al., 2012). Briefly, the S-1 Chips are composed of transparent polydimethylsiloxane (PDMS) containing two parallel microchannels: an epithelial channel (1 × 1 mm) and vascular channel (200 µm × 1 mm) separated by a porous membrane. The chip protocol was performed according to the manufacturer’s instructions (Alveolus Lung-Chip Culture Protocol, Emulate Inc). S-1 chip microchannels were functionalized to covalently attach extracellular matrix proteins (ECM) before seeding using ER solutions (Emulate Inc). Chip channels were then coated with a mixture of ECM in Dulbecco’s phosphate-buffered saline (DPBS): 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 30 μg/mL fibronectin (Gibco) for the vascular channel, and 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 30 μg/mL human plasma fibronectin (Corning) and 5 μg/mL human placenta laminin (Sigma-Aldrich) for the epithelial channel. Chips were then incubated overnight at 37°C for coating and channels were washed next day with their respective growth medium before seeding. Human Alveolar Epithelial Cells (HPAECs) were seeded at a density of 0.5 × 106 cells/mL following protocols (Alveolus Lung-Chip Culture Protocol, Emulate Inc). Human Microvascular Lung Endothelial Cells (HMVEC-L) were seeded at a density of 5 × 106 cells/mL following the Alveolus Lung-Chip protocol (Emulate Inc). Air-Liquid Interface is introduced on day 5 of culture following the protocol and maintained for 4 days. On the day before dosing, hydrocortisone was removed from the bottom channel growth medium.
 
-## PBMC administration
+### PBMC administration
 
 After 4 days of culture under air-liquid interface, culture medium was re-introduced in the epithelial channel before dosing with PBMC-TCB. 500 µL of dosing media (M199 +2% v/v FBS) was added to the epithelial inlet reservoir. Liquid–Liquid interface was re-introduced at 1000 µL/hr for 5 min on the epithelial channel, keeping the vascular channel at 0 after which the flow was switched to 30 µL/hr in both channels.
 
 Frozen PBMC after thawing were suspended overnight at 4 × 106 cells/mL in complete RPMI-1640 medium with 10% v/v FBS. The viability of PBMC was determined by using trypan blue exclusion assay. PBMC were allowed to rest overnight at 37°C. The following day, PBMC were stained using cell tracker green (ThermoFisher) according to the manufacturer’s instructions. PBMC dosing solutions (Dosing media: M199 (ThermoFisher) + 2% v/v FBS) were prepared by incubating cell suspensions at 2 × 106 cells/mL in media containing TCBs at different concentrations for an hour at 37°C prior to administration. After the incubation period, the epithelial channel inlets were aspirated and 500 μL of dosing solution was added to the inlet. PBMC were administered to the chips at 1000 µL/hr for 5 min. After PBMC administration, the system was left static for 3 hr before starting flow at 30 µL/hr with fresh dosing media (M199 + 2% v/v FBS) without TCBs in the epithelial channel and custom ALI media without hydrocortisone (Alveolus Lung-Chip Protocol, Emulate Inc) in the vascular channel.
 
-## Transwells
+### Transwells
 
 Twenty-four-well sterile transwell (Corning) inserts with polyester membrane 0.4 µM pore size was used. Similar to the chips, transwell inserts were coated with a mixture of ECM in Dulbecco’s phosphate-buffered saline (DPBS): 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 30 μg/mL fibronectin (Gibco) for the vascular or bottom compartment, and 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 30 μg/mL human plasma fibronectin (Corning), and 5 μg/mL human placenta laminin (Sigma-Aldrich) for the epithelial or top compartment. Transwells were then incubated overnight at 37°C for coating and channels were washed next day with their respective growth medium before seeding. Human alveolar epithelial cells (HPAECs) were seeded at a density of 0.1 × 106 cells/well following protocols (Alveolus Lung-Chip Culture Protocol, Emulate Inc). Human microvascular lung endothelial cells (HMVEC-L) were seeded at a density of 0.1 × 106 cells/well following the Alveolus Lung-Chip protocol (Emulate Inc). Air–liquid interface is introduced on day 5 of culture following the same protocol as the Alveolus Lung-Chip. After 4 days of culture under air–liquid interface, epithelial cells were dosed with PBMC-TCB. 100 μL of PBMCs-TCB mixture stained with cell tracker green were added to the epithelial compartment at 2 × 106 cells/mL and 500 μL of custom ALI media without hydrocortisone (Alveolus Lung-Chip Protocol, Emulate Inc) in the vascular compartment.
 
@@ -162,85 +318,85 @@ For timepoints, T = 24 and 48 hr after PBMC administration, 50 μL of supernata
 
 PBMC were harvested from the Alveolus Lung Transwells epithelial compartment at T=48 hr (terminal timepoint) after dosing with PBMC-TCB, by repeated washing using 200 µL tips. The PBMC suspension was then transferred to a V bottom 96-well plate. The staining protocol followed for flow cytometry analysis was the same as in the Alveolus Lung-Chips. Sample data was acquired using BD FACSCelestaTM flow cytometer (BD BioSciences), and data was analyzed using FlowJo V10 software (FlowJo).
 
-## Target expression
+### Target expression
 
 For quantification of target expression, HPAECs (day 0, day 5, day 10 of chip culture) were recovered using TrypLE Express Enzyme (Gibco) at 37°C for 10 min. Epithelium from Alveolus Lung-Chips cultured to day 5 and day 10 was obtained by filling both channels with TrypLE solution incubating at 37°C until complete dissociation was achieved using gentle pipetting. The dissociated epithelium was collected from the epithelial channel and digestion was quenched using SAGM culture medium with 2% v/v FBS. All single-cell samples were distributed at 0.5x106 cells/mL for live staining with monoclonal mouse anti-human FOLR1 IgG1 (LS Bio) in DPBS with 2% v/v FBS (Sigma). Secondary staining for target was performed using QIFIKIT (BIOCYTEX) anti-mouse IgG, along with mouse IgG1 Isotype FOLR1 (L.S Bio) for secondary control and provided calibration and standard beads. Samples were run with BD FACSCelesta flow cytometer (BD Biosciences), and data analyzed using FlowJo V10 software (FlowJo).
 
-## RNA isolation
+### RNA isolation
 
 Total RNA was isolated from the Alveolus Lung-Chip using TRIzol reagent (Sigma) following manufacturer’s instructions and flash frozen in liquid nitrogen. Samples were sent to GENEWIZ for sequencing.
 
-## RNA sequencing bioinformatics
+### RNA sequencing bioinformatics
 
 The RNA sequencing was performed using the Illumina TruSeq paired-end sequencing platform with read length 2× 150 bp and sequencing depth ~28M paired end reads/sample. To remove poor quality adapter sequences and nucleotides, we trimmed the sequence reads using the Trimmomatic v.0.36. The STAR (Spliced Transcripts Alignment to a Reference) aligner v.2.5.2b was used to map the trimmed reads to the Homo sapiens reference genome GRCh38 (available on ENSEMBL) and generate the BAM files. Using the featureCounts from the Subread package v.1.5.2 we calculated the unique gene hit counts. Only unique reads that fell within exon regions were counted. Note that since a strand-specific library preparation was performed, the reads were strand-specifically counted. Using the gene hit counts and the corresponding gene lengths we calculated the FPKM (Fragments Per Kilobase of exon per Million reads mapped) gene expression levels.
 
-## Live staining and imaging
+### Live staining and imaging
 
 For timepoints T = 24 and 48 hr after PBMC-TCB administration, effluents were collected for further analysis and pod inlets were aspirated. NucView405 Caspase-3 Enzyme, fluorescent caspase 3/7 substrate for detecting apoptosis by live staining (Biotium) at 2 µM was prepared with dosing medium (M199 +2% v/v FBS). 500 µL of the live stain was added to the epithelial channel inlet reservoirs. Epithelial channel of the chips was flowed at 1000 µL/hr for 5 min while setting the vascular channel to 0. Flow was then reset to 30 µL/hr for both the channels for 30 min, fresh media was then flushed through after incubation. Chips were then transferred to fluorescent microscope (Olympus IX83 Inverted Microscope) one at a time for live imaging. Additional brightfield images were captured using the Echo Revolve microscope.
 
-## Flow cytometry
+### Flow cytometry
 
 PBMC were harvested from the Alveolus Lung-Chip epithelial channel at T=48 hr (terminal timepoint) after dosing with PBMC-TCB, by repeated washing using 200 µL tips by blocking the chip inlet. PBMC from each chip was transferred to a V bottom 96-well plate and washed with DPBS + 1% v/v FBS solution before staining with surface markers. Master mix of surface markers was prepared in Brilliant Buffer solution (BD BioSciences) which consisted of anti-human Alexa Fluor 700 anti-human CD3 (BioLegend, cat. 300324), Brilliant Violet 785 anti-human CD4 (BioLegend, cat. 317442) and Brilliant Violet 650 anti-human CD69 (BioLegend, cat. 310934). Harvested PBMC was stained with the prepared master mix for 20 min at 4°C and fixed using 1% v/v paraformaldehyde in DPBS for 15 min at room temperature. Samples collected were then washed with DPBS + 1% v/v FBS solution and stored in 4°C and read within 3 days.
 
 Sample data was acquired using BD FACSCelestaTM flow cytometer (BD BioSciences) and data was analyzed using FlowJo V10 software (FlowJo).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 For alveolar epithelial cell staining, samples were fixed with 4% paraformaldehyde (Electron Microscopy Sciences) for 20 min at room temperature. Samples were then washed twice with DPBS and perfused with 100 mM glycine to quench autofluorescence for 30 min at room temperature, then rinsed with DPBS and permeabilized with 0.1% v/v Triton-X for 10 min and blocked with 1% v/v BSA and 5% v/v Normal Donkey serum in DPBS for 30 min. Samples were then stained with primary antibodies overnight at 4°C, with the following primary antibodies diluted 1:100 in 2% v/v BSA in DPBS and then rinsed twice with DPBS before staining with secondary antibodies diluted 1:200 in 2% v/v BSA in DPBS for 2 hr in the dark at room temperature, and counterstained with NucBlu (ThermoFisher) following the manufacturer’s instructions. The primary antibodies used were rabbit polyclonal anti-E-Cadherin (abcam), mouse monoclonal anti-human FOLR1 IgG1 (LS Bio). Secondary antibodies used were donkey anti mouse or rabbit Alexa Fluor 488, Alexa Fluor 568, Alexa Fluor 647-conjugated antibodies (Abcam), goat anti-mouse IgM (Heavy chain) Alexa Fluor 488 (ThermoFisher, A-21042). Immunofluorescence microscopy was performed using an Inverted Olympus IX83 microscope and Echo Revolve (Echo). At least 5 fields of view were taken per chip along the co-culture channel.
 
-## Image analysis
+### Image analysis
 
 Image analysis was performed using ICY software (BioImage Analysis Lab, Institut Pasteur) to quantify PBMC attachment (CellTracker Green) to the alveolus epithelium and apoptotic (NucView405 Caspase-3) alveolar epithelial cells.
 
 Using co-localization tools, the number of apoptotic epithelial-positive cells (Caspase-3+ NucView405+) that are also PBMC cell tracker negative (GFP−) was quantified and setting different object sizes for alveolar epithelial cells (~900–3000 pixels) and PBMCs (~200–600 pixels) in the ICY image analysis software. This image analysis tool could give us a better estimate of epithelium death by apoptosis under PBMC exposure to the Alveolus Lung-Chip.
 
-## Cytokine analysis
+### Cytokine analysis
 
 At T = 24 and 48 hr after PBMC-TCB administration, effluents were collected from Alveolus Lung-Chip Pod outlets. Effluents were then immediately frozen at −80°C until measurement. Measurement of cytokines for Alveolus Lung-Chip (GranzymeB, IFNγ, IL-2, IL-6, IL-8, IL-10, IL-13, IL1RA, TNFα, MIP-1β, G-CSF, GM-CSF) was performed using customized Invitrogen ProcartaPlex multiplex immunoassays (reference PPX-12-MXNKRV6). Each kit contained a black 96-well plate (flat bottom plate), antibody-coated beads, detection antibody, streptavidin-R-phycoerythrin (SAPE), reading buffer and universal assay buffer. In addition, standards with known concentration were provided to prepare a standard curve. According to the Invitrogen Publication Number MAN0017081 (Revision B.0 (33)), the assay workflow was the following. After adding the beads into the flat bottom plate, the beads were washed using a flat magnet and an automated plate washer (405TS microplate washer from Bioteck). Then standards and samples diluted with a universal buffer were added into the plate and a first incubation started for 2 hr. After a second wash, detection antibodies were added. After 30 min incubation and a wash, SAPE was added. Finally, after 30 min incubation and a last wash, the beads were resuspended in the reading buffer and the plates were ready for analysis.
 
 The data was acquired with a Luminex instrument, BioPlex-200 system from Bio-Rad. Using the Certificate of Analysis provided with the kit, bead region and standard concentration value S1 for each analyte of the current lot were entered in the software, BioPlex Manager. Plotting the expected concentration of the standards against the mean fluorescent intensity (MFI) generated by each standard, the software generated the best curve fit and calculated the concentrations of the unknown samples (in pg/mL). The data were then exported in Excel and plotted in Graphpad Prism.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 The avidity of the interaction between the anti-FOLR1 T-cell bispecifics and the recombinant folate receptors was determined as described below. Recombinant biotinylated monomeric Fc fusions of human and cynomolgus Folate Receptor 1 (FOLR1-Fc, produced in house) were directly coupled on a SA chip using the standard coupling instruction (Biacore, Cytiva). The immobilization level was about 200–300 RU. The anti-FOLR1 T-cell bispecifics were passed at a concentration range from 11.1 to 900 nM with a flow of 30 μL/min through the flow cells over 180 s. The dissociation was monitored for 240 or 600 s. The chip surface was regenerated after every cycle using a double injection of 30 s 10 mM glycine–HCl pH 1.5. Bulk refractive index differences were corrected for by subtracting the response obtained on reference flow cell immobilized with recombinant biotinylated murine IL2R Fc fusion (unrelated Fc fused receptor). The binding curves resulting from the bivalent binding of the T-cell bispecifics were approximated to a 1:1 Langmuir binding (even though it is a 1:2 binding) and fitted with that model to get an apparent KD representing the avidity of the bivalent binding. The apparent avidity constants for the interactions were derived from the rate constants of the fitting using the Bia Evaluation software (Cytiva).
 
 The affinity of the interaction between the anti-FOLR1 T-cell bispecifics and the recombinant folate receptors was determined as described below. For affinity measurement, direct coupling of around 12,000 resonance units (RU) of the anti-human Fab specific antibody (Fab capture kit, Cytiva) was performed on a CM5 chip at pH 5.0 using the standard amine coupling kit (Cytiva). Anti-FOLR1 T-cell bispecifics were captured at 20 nM with a flow rate of 10 μL/min for 40 s, the reference flow cell was left without capture. Dilution series (12.3–3000 nM) of human and cyno Folate Receptor 1 Fc fusion were passed on all flow cells at 30 μL/min for 240 s to record the association phase. The dissociation phase was monitored for 300 s and triggered by switching from the sample solution to HBS-EP. The chip surface was regenerated after every cycle using a double injection of 60 s 10 mM glycine–HCl pH 2.1. Bulk refractive index differences were corrected for by subtracting the response obtained on the reference flow cell 1. The affinity constants for the interactions were derived from the rate constants by fitting to a 1:1 Langmuir binding using the Bia Evaluation software (Cytiva).
 
-## Binding of FOLR1-targeted TCBs to human FOLR1-expressing tumor cells
+### Binding of FOLR1-targeted TCBs to human FOLR1-expressing tumor cells
 
 Experiments were performed with n=4 chips per condition and 8 to 10 fields of view per chip. All graphs are plotted as group means (individual points displayed if n<5 samples per group) ± SEM. Statistical significance (p<0.05) was determined by one-way or two-way ANOVA using Tukey’s multiple comparison test.
 
-## Assessment of FOLR1 TCBs binding to human FOLR1 expressed on HeLa cells
+### Assessment of FOLR1 TCBs binding to human FOLR1 expressed on HeLa cells
 
 The binding of FOLR1 TCBs to human FOLR1 was assessed on HeLa cells. Briefly, cells were harvested, counted, checked for viability and resuspended at 2 × 106 cells/mL in FACS buffer (100 µL PBS 0.1% BSA). 100 µL of cell suspension (containing 0.2 × 106 cells) was incubated in round-bottom 96-well plates for 30 min at 4°C with different concentrations of the bispecific antibodies (30 pM–500 nM). After two washing steps with cold PBS 0.1% BSA, samples were re-incubated for further 30 min at 4°C with FITC-conjugated AffiniPure F(ab’)2 Fragment goat anti-human IgG Fcg Fragment Specific secondary antibody (Jackson Immuno Research Lab PE # 109-096-098). After washing the samples twice with cold PBS, samples were resuspended in PBS 0.1% BSA and analyzed on a FACS Canto II (Software FACS Diva). Binding curves were obtained using GraphPadPrism6.
 
-## TCB-mediated lysis of tumor cells in vitro
+### TCB-mediated lysis of tumor cells in vitro
 
 T-cell killing mediated by FOLR1 TCBs was assessed on HeLa (high FOLR1) cells. Human PBMC were used as effectors and the killing was detected at 24 hr of incubation with the bispecific antibodies. Briefly, target cells were harvested with Trypsin/EDTA, washed, and plated at a density of 25,000 cells/well using flat-bottom 96-well plates. Cells were left to adhere overnight. Peripheral blood mononuclear cells (PBMC) were prepared by Histopaque density centrifugation of enriched lymphocyte preparations (buffy coats) obtained from healthy human donors. Fresh blood was diluted with sterile PBS and layered over Histopaque gradient (Sigma, #H8889). After centrifugation (450 × g, 30 min, room temperature), the plasma above the PBMC-containing interphase was discarded and PBMC transferred in a new falcon tube subsequently filled with 50 mL of PBS. The mixture was centrifuged (400 × g, 10 min, room temperature), the supernatant discarded and the PBMC pellet washed twice with sterile PBS (centrifugation steps 350 × g, 10 min). The resulting PBMC population was counted (ViCell) and stored in RPMI1640 medium containing 10% FCS and 1% l-alanyl-L-glutamine (Biochrom, K0302) at 37°C, 5% CO2 in cell incubator until further use. For the killing assay, the antibody was added at the indicated concentrations (range of 0.01 pM–10 nM in triplicates). PBMC were added to target cells at final E:T ratio of 10:1. Target cell killing was assessed after 24 hr of incubation at 37°C, 5% CO2 by quantification of LDH released into cell supernatants by apoptotic/necrotic cells (LDH detection kit, Roche Applied Science, #11644793001). Maximal lysis of the target cells ( = 100%) was achieved by incubation of target cells with 1% Triton X-100. Minimal lysis ( = 0%) refers to target cells co-incubated with effector cells without bispecific construct.
 
-## Statistics
+### Statistics
 
 Experiments were performed with n=4 chips per condition and 8–10 fields of view per chip. All graphs are plotted as group means (individual points displayed if n<5 samples per group) ± SEM. Statistical significance (p<0.05) was determined by one-way or two-way ANOVA using Tukey’s multiple comparison test unless specified otherwise.
 
-## Intestine-Chip
+### Intestine-Chip
 
-## Binding of CEA-targeted TCBs to human CEA-expressing tumor cells
+#### Binding of CEA-targeted TCBs to human CEA-expressing tumor cells
 
 MKN45 (DSMZ ACC 409) cells were harvested using Cell Dissociation Buffer, washed once with PBS, and resuspended in FACS buffer (PBS + 0.1% BSA). 200,000 cells were seeded into a 96-well round bottom plate, the assay plate was centrifuged at 400 × g for 4 min, and the supernatant was removed. Antibody dilutions were prepared in FACS-buffer to cover a final concentration range of 0.03 nM – 500 nM (1:4 dilution steps). Cells were incubated with CEA(Hi) TCB and CEA(Lo) TCB for 30 min at 4°C. FACS plates were washed twice with 150 µL FACS buffer and incubated with 25 µL of the FITC-labeled AffiniPure F(ab')2 Fragment Goat Anti-Human IgG secondary antibody (Jackson Immuno Research, 109-096-008; pre-diluted 1:40 with FACS buffer) for another 30 min at 4°C. After two washing steps with FACS buffer, cells were fixed in FACS buffer, containing 2% paraformaldehyde for 30 min at 4°C. Finally, fluorescence was measured using BD FACS Canto II. EC50 values were calculated using GraphPadPrism.
 
-## TCB-mediated lysis of tumor cells in vitro
+### TCB-mediated lysis of tumor cells in vitro
 
 TCB-induced lysis of CEA-positive target cells was assessed using MKN45 (DSMZ ACC 409) cells. Human PBMCs were used as effectors and the killing was detected at 24 hr and 48 hr of incubation with the bispecific antibodies. Briefly, target cells were harvested with Trypsin/EDTA, washed, and plated at a density of 30,000 cells/well using flat-bottom 96-well plates. Cells were left to adhere overnight. For the killing assay, the antibody was added at the indicated concentrations (range of 6 pM–100 nM for CEA(Lo) TCB and 1.3 pM–20 nM for CEA(Hi) TCB in triplicates). PBMCs were added to target cells at final ratio to tumor cells of 10:1. Target cell killing was assessed after 48 hr of incubation at 37°C, 5% CO2 by quantification of LDH released into cell supernatants by apoptotic/necrotic cells (LDH detection kit, Roche Applied Science, #11 644 793 001). Maximal lysis of the target cells ( = 100%) was achieved by incubation of target cells with 1% Triton X-100. Minimal lysis ( = 0%) refers to target cells co-incubated with effector cells without bispecific construct.
 
-## Quantification of T-cell activation in response to TCB treatment
+### Quantification of T-cell activation in response to TCB treatment
 
 Tumor cell lysis assay plates were centrifuged (400 × g for 4 min), cells were resuspended, washed with FACS buffer, and incubated with 25 µL of the diluted CD4/CD8/CD69 antibody mix for 30 min at 4°C (e.g. PE/Cy7 anti-human CD4 #557852, FITC anti-human CD8 #555634, APC anti-human CD25 #555434, as indicated). Cells were washed twice to remove unbound antibody and finally resuspended in 200 µL FACS buffer containing PI (propidium iodide) to exclude dead cells for the FACS measurement. Fluorescence was measured using BD FACS CantoII.
 
-## Assessment of TCB binding to human- or cynomolgus monkey-derived CEA
+### Assessment of TCB binding to human- or cynomolgus monkey-derived CEA
 
 HEK293T cells were transiently transfected to overexpress either human or cynomolgus monkey CEACAM5 were harvested using Cell Dissociation Buffer, washed once with PBS and resuspended in FACS buffer (PBS + 0.1% BSA). 100,000 cells were seeded into a 96-well round bottom plate, the assay plate was centrifuged at 400xg for 4 min, and the supernatant was removed. Antibody dilutions were prepared in FACS-buffer to cover a final concentration range of 7.6 pM–500 nM (1:4 dilution steps), respective 125 nM and 500 nM of the positive control antibody binding to cynomolgus monkey CEACAM5 (clone 28A9, internal production, ID AB03195). Cells were incubated with CEA(Lo) TCB or positive reference molecule for 30 min at 4°C. FACS plates were washed twice with 150 µL FACS buffer and incubated with 25 µL of the FITC-labeled AffiniPure F(ab')2 Fragment Goat Anti-Human IgG secondary antibody (Jackson Immuno Research, 109-096-008; pre-diluted 1:40 with FACS buffer) for another 30 min at 4°C. After two washing steps with FACS buffer, cells were stained with a live/dead dye (DAPI, diluted in PBS) for 30 min at 4°C. After a final washing step with FACS buffer, fluorescence was measured using a BD FACS CantoII.
 
-## Cell culture
+### Cell culture
 
 Human colon organoid cultures (colonoids) were established from biopsies obtained during surgical procedures utilizing methods developed by the laboratory of Dr. Hans Clevers (Sato et al., 2011). De-identified biopsy tissue was obtained from healthy adult subjects who provided informed consent at Johns Hopkins University, and all methods were carried out in accordance with approved guidelines and regulations. All experimental protocols were approved by the Johns Hopkins University Institutional Review Board (IRB). Routine expansion of colonoids was performed by embedding isolated intestinal crypts in droplets of growth factor–reduced Matrigel (Corning) and cultured in Human IntestiCult Organoid Growth Medium (StemCell) supplemented with 10 mmol/L Y-27632 (Sigma), 5 mmol/L CHIR99021 (ReproCell), and 50 mg/mL primocin (InvivoGen). After 3 days, colonoids Y-27632 and CHIR99021 supplements were removed. Colonoids were passaged every 7 days.
 
@@ -248,50 +404,50 @@ Human Large Intestine Microvascular Endothelial Cells (cHIMEC) (Cell Systems) we
 
 Peripheral blood mononuclear cells (PBMC) were isolated from fresh human buffy coats using immunomagnetic negative selection (Stem Cell Technologies) and cultured in RPMI-1640 (Gibco) supplemented with 10% v/v FBS and 1% v/v Pen-Strep or cryo-preserved in FBS containing 10% dimethyl sulfoxide (DMSO) before use.
 
-## Colon Intestine-Chip culture
+### Colon Intestine-Chip culture
 
 The design and fabrication of Organ-Chips has been previously described (Huh et al., 2012). Briefly, the S-1 Chips are composed of transparent polydimethylsiloxane (PDMS) containing two parallel microchannels: an epithelial channel (1 × 1 mm) and vascular channel (200 µm × 1 mm) separated by a porous membrane. S-1 chip microchannels were functionalized to covalently attach extracellular matrix proteins (ECM) before seeding using ER solutions (Emulate Inc) following provided protocols (Basic Organ-Chip Culture Protocol, Emulate Inc). Chip channels were then coated with a mixture of ECM in Dulbecco’s phosphate-buffered saline (DPBS): 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 30 μg/mL fibronectin (Gibco) for the vascular channel; and 200 μg/mL human placenta collagen type IV (Sigma-Aldrich) and 100 μg/mL Matrigel (Corning) for the epithelial channel. Chips were then incubated overnight at 37°C for coating and channels were washed the next day with their respective growth medium. Human colonic microvascular endothelial cells (cHIMECs) were then seeded into the vascular channel at a density of 8 × 106 million cells/mL. After 1.5 hr, the chips were inverted and cHIMECs at a density of 8 × 106 million cells/mL were seeded again creating a contiguous vascular tube. Colonoids were recovered from Matrigel and fragmented as reported previously (Kasendra et al., 2018). Fragmented colonoids were suspended in organoid expansion medium at a density of 2–3 culture wells per chip and seeded onto the membrane of the epithelial channel.
 
 The following day, vascular and epithelial channels were washed with EGM-2MV and organoid expansion medium, respectively, and connected in Pod portable modules (Basic Research Kit; Emulate, Inc). The Human Emulation System (Emulate Inc) was continuously perfused at 30 μL/hr for both channels with 2% cyclic stretching (0.15 Hz) from days 2 to 5, then with 10% cyclic stretching (0.15 Hz) until day 8 of culture. Supplements were removed from the epithelial channel media after day 2 of culture.
 
-## PBMC administration
+### PBMC administration
 
 Twenty-four hours prior to PBMC-TCB administration, freshly isolated or thawed PBMC were suspended at 4 × 106 cells/mL in complete RPMI-1640 medium. The viability of PBMC was determined by using trypan blue exclusion assay. The acceptance criteria for PBMC viability was >85% to proceed to the next experimental step. PBMC were allowed to rest overnight at 37°C. The following day, PBMC dosing solutions were prepared by incubating cell suspensions in media containing TCBs at different concentrations for 4 hr at 37°C prior to administration. Epithelial channel TCB dosing media was also prepared by adding TCBs to organoid growth media. After the incubation period, the Pod epithelial channel inlets were aspirated and 500 μL of dosing solution (approx. 2 × 106 PBMC cells) was added to the inlet. PBMC were administered to the chips at 1000 μL/hr for 10 min. After PBMC administration, dosing media with and without TCBs was then added to the epithelial channel inlet and perfused through the chip. The vascular channels were perfused with EGM2-MV complete growth media.
 
-## Target expression
+### Target expression
 
 For quantification of target expression, colonic and duodenum organoids (day 0 of chip culture) were recovered from Matrigel following standard procedure, then digesting in TrypLE Express Enzyme (Gibco) in DPBS at 37°C for 10 min to single cells. Epithelium from Colon and Duodenum Intestine-Chips cultured to day 5 and day 8 from the same organoid culture was obtained by filling both channels with TrypLE solution in PBS and incubating at 37°C for 20 min or until complete dissociation was achieved using gentle pipetting. The dissociated epithelium was collected from the epithelial channel and digestion was quenched using Advanced DMEM/F-12 (Gibco). All single-cell samples were distributed at 5 × 105 cells/mL for live staining with mouse anti-human CEA IgG (Santa Cruz) in DPBS with 2% FBS (Sigma). Secondary staining for target was performed using QIFIKIT (BIOCYTEX) anti-mouse IgG, along with mouse IgG1 Isotype CEA (BioLegend) for secondary control and provided calibration and standard beads. Samples were run with BD FACSCelesta flow cytometer (BD Biosciences), and data analyzed using FlowJo V10 software (FlowJo).
 
-## Live staining and imaging
+### Live staining and imaging
 
 For timepoints T = 0, 12, 48, and 72 hr after PBMC-TCB administration, effluents were collected for further analysis and Pod inlets were aspirated. CellEvent Caspase-3/7 Green live staining detection reagent (Thermofisher Scientific) at 2 μM was prepared and added to the epithelial and vascular channels in order to visualize an apoptotic T-cell killing response. Pod inlets were aspirated and 300 μL of live staining solution was added to each respective inlet. Chips were flowed at 1000 μL/hr for 10 min to flush, then flow was paused to incubate the stain at 37°C for 30 min. Fresh media was flushed through after incubation and chips were transferred to a confocal laser-scanning microscope (Inverted Zeiss LSM 880, Zeiss) in small groups for live imaging.
 
-## Flow cytometry
+### Flow cytometry
 
 PBMC were harvested from Colon Intestine-Chip epithelial channels at the final timepoint after administration. PBMC were washed with DPBS and stained with 2 μM live/dead Fixable Yellow Dead Cell Stain (ThermoFisher) and washed in DPBS. PBMC were then fixed with BD Cytofix (BD Biosciences) fixation solution, washed in DPBS, and either resuspended in 90% FBS (Sigma) + 10% DMSO solution and frozen at −20°C until use or stained immediately. Samples to be stained for surface markers were washed in DPBS and resuspended in Cell Staining Buffer (Biolegend). Surface marker stains were prepared in BD /Cytoperm solution (BD Biosciences) and consisted of anti-human CD3 APC-Cy7 (BioLegend), anti-human CD4 Brilliant Violet 786 (BioLegend), anti-human-CD8-PE/Dazzle-594 (BioLegend), and anti-human CD69 APC (BioLegend).
 
 Sample data was acquired using the BD FACSCelesta flow cytometer (BD Biosciences), and data was analyzed using FlowJo V10 software (FlowJo).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Colon and Duodenum Intestine-Chip, Organoid, and Transwell samples were fixed with 4% paraformaldehyde (PFA) (Electron Microscopy Sciences). Samples were then washed twice using DPBS and perfused with a 0.3 M glycine in DPBS (Sigma) solution to remove residual PFA. Chips were cut in half and stored in DPBS and 0.05% sodium azide. Samples were stained overnight at 4°C with the following primary antibodies diluted in CytoPerm/Wash buffer (BD Biosciences): recombinant rabbit anti-CEA (Abcam) for samples without TCB treatment and monoclonal rat anti-CD45 (Invitrogen). After overnight incubation, the chips were washed three times in DPBS, and nuclei were counter-stained with DRAQ5 (Thermofisher Scientific) and secondary antibody DyLight 405 AffiniPure Donkey Anti-Rat IgG (H+L) (Jackson ImmunoResearch) diluted in Perm/wash buffer. For samples without TCB treatment, the rabbit anti-CEA was stained with the secondary antibody, donkey anti-rabbit Alexa Fluor-555 (Invitrogen). For samples with TCB treatment, a secondary goat anti-human Alexa Fluor-555 (Invitrogen) was used as the target sites were bound with anti-human TCB after administration. Remaining live imaging signal from CellEvent Detection Reagent was also imaged for all samples.
 
 Confocal laser-scanning microscopy was performed using an Inverted Zeiss LSM 880 (Zeiss). At least three fields of view were taken per chip, from separate random locations along the co-culture channel. Widefield tile images were also acquired on Axio Observer.Z1 (Zeiss) (n=5, per chip co-culture channel).
 
-## Image analysis
+### Image analysis
 
 Image analysis was performed using the image analysis suite Fiji (National Institute of Health) to quantify PBMC attachment to the Colon Intestine-Chip epithelium. Cell Event Green-positive signal was visualized using confocal laser-scanning microscopy and quantified in Fiji. PBMC attached to epithelium were stained with monoclonal rat anti-CD45 primary antibody, then DyLight 405 AffiniPure Donkey Anti-Rat IgG (H+L) secondary antibody. Tile images acquired at 40x magnification to cover the full microfluidic co-culture channel. Tile images were stitched together through Zen Blue software (Zeiss). Raw images in ‘.czi’ format were converted to ‘.tiff’ format in Fiji software (NIH). Images were processed using a macro script in Fiji which detects PBMC signal that fits a preset size criterion as object ‘counts’. Since the PBMC were clustered in-between the epithelial structures this count is described as ‘PBMC Clusters’ and not individual cells. All image brightness and contrast thresholds were set to the same values for processing, which were determined by using the automatic contrast settings for sample with the highest overall PBMC signal. The size criterion for a PBMC cluster was from 15.9 to 106 μm2, which was determined visually.
 
-## Analysis of cytokines
+### Analysis of cytokines
 
 At T=0, 24, 48, and 72 hr after PBMC-TCB administration, effluents were collected from Colon Intestine-Chip Pod inlets and outlets. Effluents were centrifuged to remove debris and then frozen at −20°C until measurement. Measurement of cytokines for Colon Intestine-Chip (IFNɣ, TNFα, Granzyme-B, IL-2, IL-4, and IL-8) was performed using customized Invitrogen ProcartaPlex multiplex immunoassays (reference PPX-12-MXNKRV6). Each kit contained a black 96-well plate (flat bottom plate), antibody-coated beads, detection antibody, streptavidin-R-phycoerythrin (SAPE), reading buffer, and universal assay buffer. In addition, standards with known concentration were provided to prepare a standard curve. According to the Invitrogen Publication Number MAN0017081 (Revision B.0 (33)), the assay workflow was the following. After adding the beads into the flat bottom plate, the beads were washed using a flat magnet and an automated plate washer (405TS microplate washer from Bioteck). Then standards and samples diluted with a universal buffer were added into the plate and a first incubation started for 2 hr. After a second wash, detection antibodies were added. After 30 min incubation and a wash, SAPE was added. Finally, after 30 min incubation and a last wash, the beads were resuspended in the reading buffer and the plates were ready for analysis.
 
 The data was acquired with a Luminex instrument, BioPlex-200 system from Bio-Rad. Using the Certificate of Analysis provided with the kit, bead region and standard concentration value S1 for each analyte of the current lot were entered in the software, BioPlex Manager. Plotting the expected concentration of the standards against the mean fluorescent intensity (MFI) generated by each standard, the software generated the best curve fit and calculated the concentrations of the unknown samples (in pg/mL). The data were then exported in Excel and plotted in Graphpad Prism.
 
-## Statistics
+### Statistics
 
 Experiments were performed with at least triplicates for each chip sample per group. Brightfield images of chips were collected including at least three fields of view per chip at various points throughout the co-culture area of the Intestine-Chips. All graphs are plotted as group means (individual points displayed if n < 10 samples per group) ± SEM. Statistical significance (p<0.05) was determined via one-way or two-way ANOVA using Tukey’s multiple comparisons unless specified otherwise.
 
-## Immunohistochemistry human tissues
+### Immunohistochemistry human tissues
 
 Immunohistochemical staining for CEA expression in formalin-fixed, paraffin-embedded human intestinal tissues was carried out on a Discovery Ultra automated slide stainer using a rabbit anti-human monoclonal antibody for CEA (Clone T84.66, Roche Glycart AG, Switzerland) at 2.23 µg/mL after antigen retrieval with CC1 (Ventana Medical Systems Inc) on tissues. A secondary antibody was used a donkey anti-rabbit biotinylated polyclonal IgG (Jackson Immunoresearch Lab, cat: 711-065-152) at 5 µg/mL, and DAB Map Kit (Ventana 760–124) was used as detection system.

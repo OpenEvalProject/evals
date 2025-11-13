@@ -24,23 +24,23 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Institute of Reproductive and Developmental Biology, Imperial College London London United Kingdom
-2. https://ror.org/056ffv270 Wolfson Fertility Unit, Department of Gynaecology, St. Mary’s Hospital, Imperial College NHS Trust London United Kingdom
-3. https://ror.org/041kmwe10 Section of Endocrinology & Investigative Medicine, Imperial College London London United Kingdom
-4. https://ror.org/02gcp3110 Department of Urology, Charing Cross Hospital, Imperial College NHS Trus London United Kingdom
-5. https://ror.org/041kmwe10 March of Dimes European Prematurity Research Centre, Imperial College London London United Kingdom
-6. https://ror.org/019my5047 Department of Gynaecology, University College London Hospital London United Kingdom
-7. https://ror.org/041kmwe10 Tommy's National Centre for Miscarriage Research, Imperial College London London United Kingdom
-8. https://ror.org/056ffv270 Department of Andrology, Hammersmith Hospital, Imperial College NHS Trust London United Kingdom
+1. Institute of Reproductive and Developmental Biology, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Wolfson Fertility Unit, Department of Gynaecology, St. Mary’s Hospital, Imperial College NHS Trust London United Kingdom ([ROR:056ffv270](https://ror.org/056ffv270))
+3. Section of Endocrinology & Investigative Medicine, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+4. Department of Urology, Charing Cross Hospital, Imperial College NHS Trus London United Kingdom ([ROR:02gcp3110](https://ror.org/02gcp3110))
+5. March of Dimes European Prematurity Research Centre, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+6. Department of Gynaecology, University College London Hospital London United Kingdom ([ROR:019my5047](https://ror.org/019my5047))
+7. Tommy's National Centre for Miscarriage Research, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+8. Department of Andrology, Hammersmith Hospital, Imperial College NHS Trust London United Kingdom ([ROR:056ffv270](https://ror.org/056ffv270))
 9. LogixX Pharma, Theale Berkshire United Kingdom
-10. https://ror.org/00h2vm590 Department of Medical Bioscience, University of the Western Cape Bellville South Africa
-11. https://ror.org/05yqeks58 Centre for Reproductive and Genetic Health (CRGH) London United Kingdom
+10. Department of Medical Bioscience, University of the Western Cape Bellville South Africa ([ROR:00h2vm590](https://ror.org/00h2vm590))
+11. Centre for Reproductive and Genetic Health (CRGH) London United Kingdom ([ROR:05yqeks58](https://ror.org/05yqeks58))
 
 † Corresponding author
 
 ## Abstract
 
-Several studies have associated seminal microbiota abnormalities with male infertility but have yielded differing results owing to their limited sizes or depths of analyses. The semen microbiota during recurrent pregnancy loss (RPL) has not been investigated. Comprehensively assessing the seminal microbiota in men with reproductive disorders could elucidate its potential role in clinical management. We used semen analysis, terminal-deoxynucleotidyl-transferase-mediated-deoxyuridine-triphosphate-nick-end-labelling, Comet DNA fragmentation, luminol reactive oxidative species (ROS) chemiluminescence, and metataxonomic profiling of semen microbiota by 16S rRNA amplicon sequencing in this prospective, cross-sectional study to investigate composition and bacterial load of seminal bacterial genera and species, semen parameters, ROS, and sperm DNA fragmentation in men with reproductive disorders and proven fathers. 223 men were enrolled, including healthy men with proven paternity (n=63), the male partners in a couple encountering RPL (n=46), men with male factor infertility (n=58), and the male partners of couples with unexplained infertility (n=56). Rates of high sperm DNA fragmentation, elevated ROS, and oligospermia were more prevalent in the study group compared with control. In all groups, semen microbiota clustered into three major genera -dominant groups (1, Streptococcus ; 2, Prevotella ; 3, Lactobacillus and Gardnerella ); no species clusters were identified. Group 2 had the highest microbial richness (p<0.001), alpha-diversity (p<0.001), and bacterial load (p<0.0001). Overall bacterial composition or load has not been found to associate with semen analysis, ROS, or DNA fragmentation. Whilst global perturbation of the seminal microbiota is not associated with male reproductive disorders, men with unidentified seminal Flavobacterium are more likely to have abnormal seminal analysis. Future studies may elucidate if Flavobacterium reduction has therapeutic potential.
+Several studies have associated seminal microbiota abnormalities with male infertility but have yielded differing results owing to their limited sizes or depths of analyses. The semen microbiota during recurrent pregnancy loss (RPL) has not been investigated. Comprehensively assessing the seminal microbiota in men with reproductive disorders could elucidate its potential role in clinical management. We used semen analysis, terminal-deoxynucleotidyl-transferase-mediated-deoxyuridine-triphosphate-nick-end-labelling, Comet DNA fragmentation, luminol reactive oxidative species (ROS) chemiluminescence, and metataxonomic profiling of semen microbiota by 16S rRNA amplicon sequencing in this prospective, cross-sectional study to investigate composition and bacterial load of seminal bacterial genera and species, semen parameters, ROS, and sperm DNA fragmentation in men with reproductive disorders and proven fathers. 223 men were enrolled, including healthy men with proven paternity (n=63), the male partners in a couple encountering RPL (n=46), men with male factor infertility (n=58), and the male partners of couples with unexplained infertility (n=56). Rates of high sperm DNA fragmentation, elevated ROS, and oligospermia were more prevalent in the study group compared with control. In all groups, semen microbiota clustered into three major genera-dominant groups (1, Streptococcus; 2, Prevotella; 3, Lactobacillus and Gardnerella); no species clusters were identified. Group 2 had the highest microbial richness (p<0.001), alpha-diversity (p<0.001), and bacterial load (p<0.0001). Overall bacterial composition or load has not been found to associate with semen analysis, ROS, or DNA fragmentation. Whilst global perturbation of the seminal microbiota is not associated with male reproductive disorders, men with unidentified seminal Flavobacterium are more likely to have abnormal seminal analysis. Future studies may elucidate if Flavobacterium reduction has therapeutic potential.
 
 ## Introduction
 
@@ -52,25 +52,545 @@ We hypothesised that semen microbiota composition associates with functional sem
 
 ## Results
 
-## Study population
+### Study population
 
 Semen samples were collected from a total of 223 men; this included control (n=63) and a study group (n=160) comprised of men diagnosed with MFI (n=58), male partners of women with RPL (n=46), and male partners of couples diagnosed with UI (n=26). The overall mean age of the total cohort was 38.1±6 (mean ± SD). The mean age for controls was 40.1±8, and the mean age for patients undergoing various fertility investigations was 37±4.8. Ethnicity representation amongst recruited cohorts were not significantly different (p=0.38, chi-squared; Appendix 1—table 1).
 
-## Semen quality assessment
+### Semen quality assessment
 
 Rates of high sperm DNA fragmentation, elevated ROS, and oligospermia were more prevalent in the study group compared with control (Table 1). The study group represented 85% of samples with high sperm DNA fragmentation, 85% of samples with elevated ROS, and 79% of samples with oligospermia. Rates of abnormal seminal parameters including low sperm concentration, reduced progressive motility, and ROS concentrations were found to be highest in the MFI group (Appendix 2—figure 1). Baseline characteristics between the RPL, unexplained subfertility, and controls groups were similar (Appendix 2—figure 1).
 
-## Seminal microbiota
+**Table 1.**
+ Patient demographics and notable parameters of seminal quality and function for controls and study subjects.Fisher’s exact tests for all except age. Chi-squared test for age (n=223).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Categories</th>
+      <th>Controls</th>
+      <th>Study cases</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">DNA fragmentation index</td>
+      <td>Low</td>
+      <td>45/114 (40%)</td>
+      <td>69/114 (60%)</td>
+      <td rowspan="2">0.0002***</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>12/82 (15%)</td>
+      <td>70/82 (85%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ROS</td>
+      <td>&lt;3.77 RLU/s</td>
+      <td>53/143 (37%)</td>
+      <td>90/143 (63%)</td>
+      <td rowspan="2">0.02*</td>
+    </tr>
+    <tr>
+      <td>&gt;3.77 RLU/s</td>
+      <td>5/33 (15%)</td>
+      <td>28/33 (85%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Semen volume</td>
+      <td>Optimal</td>
+      <td>55/208 (26%)</td>
+      <td>153/208 (84%)</td>
+      <td rowspan="2">0.03*</td>
+    </tr>
+    <tr>
+      <td>Suboptimal</td>
+      <td>8/15 (53%)</td>
+      <td>7/15 (47%)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Age</td>
+      <td>&lt;34</td>
+      <td>11/49 (22%)</td>
+      <td>38/49 (88%)</td>
+      <td rowspan="3">0.04*</td>
+    </tr>
+    <tr>
+      <td>34–41</td>
+      <td>31/124 (25%)</td>
+      <td>93/124 (85%)</td>
+    </tr>
+    <tr>
+      <td>&gt;41</td>
+      <td>21/50 (42%)</td>
+      <td>29/50 (58%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ethnicity</td>
+      <td>Caucasian</td>
+      <td>39/156 (25%)</td>
+      <td>117/156 (75%)</td>
+      <td rowspan="2">0.10</td>
+    </tr>
+    <tr>
+      <td>Non-Caucasian</td>
+      <td>24/67 (36%)</td>
+      <td>43/67 (64%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Concentration</td>
+      <td>&gt;15 M/ml</td>
+      <td>58/182 (32%)</td>
+      <td>124/182 (68%)</td>
+      <td rowspan="2">0.01*</td>
+    </tr>
+    <tr>
+      <td>&lt;15 M/ml</td>
+      <td>5/41 (21%)</td>
+      <td>36/41 (79%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Progressive motility</td>
+      <td>&gt;32%</td>
+      <td>60/207 (29%)</td>
+      <td>147/207 (71%)</td>
+      <td rowspan="2">0.56</td>
+    </tr>
+    <tr>
+      <td>&lt;32%</td>
+      <td>3/16 (19%)</td>
+      <td>13/16 (81%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sperm morphology</td>
+      <td>&gt;4%</td>
+      <td>22/74 (30%)</td>
+      <td>52/74 (70%)</td>
+      <td rowspan="2">0.87</td>
+    </tr>
+    <tr>
+      <td>&lt;4%</td>
+      <td>41/144 (28%)</td>
+      <td>103/144 (72%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Semen quality</td>
+      <td>Optimal</td>
+      <td>24/78 (31%)</td>
+      <td>54/78 (69%)</td>
+      <td rowspan="2">0.53</td>
+    </tr>
+    <tr>
+      <td>Suboptimal</td>
+      <td>39/145 (27%)</td>
+      <td>106/145 (73%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Seminal microbiota
 
 Following decontamination, a total of 7,998,565 high-quality sequencing reads were identified and analysed. Hierarchical clustering (Ward’s linkage) of relative abundance data resolved to genera level identified three major clusters, as determined by average silhouette score, amongst all samples (Figure 1, Figure 1—figure supplement 1). These were compositionally characterised by highest mean relative abundances of (1) Streptococcus (23.8%), (2) Prevotella (24.4%), or (3) Lactobacillus and Gardnerella (35.9% and 35.6%, respectively, Figure 1C). Assessment of bacterial load using qPCR showed Clusters 2 and 3 had significantly higher bacterial loads compared to Cluster 1. Similar analyses were performed using sequencing data mapped to species level; however, examination of individual sample silhouette scores within resulting clusters highlighted poor fitting, indicating a lack of robust species-specific clusters (Figure 2—figure supplement 1). To further investigate potential pairwise ecological interactions between taxa, a co-occurrence analysis was performed on the sequencing data, mapped to species level, with the SparCC algorithm (Figure 2). Five major graph communities were detected. Community 1 highlighted a co-occurrence pattern between Gardnerella vaginalis and Lactobacillus iners, in agreement with the composition of Cluster 3 from the hierarchical clustering analysis at genera level. Taxa belonging to communities 3 and 4 had a high number of connections (higher node degree), both within and between the two communities, including some anti-co-occurrence patterns (SparCC ρ<0). These communities included species from genera Staphylococcus, Peptoniphilus, Corynebacterium, Prevotella, among others.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96090/elife-96090-fig1-v1.jpg)
+
+**Figure 1.:** (A) Heatmap of Log10 transformed read counts of top 10 most abundant genera identified in semen samples. Samples clustered into three major microbiota groups based mainly on dominance by Streptococcus (Cluster 1), Prevotella (Cluster 2), or Lactobacillus and Gardnerella (Cluster 3) (n=223, Ward’s linkage). (B) Relative abundance of the top 6 most abundant genera within each cluster. (C) Silhouette scores of individual samples within each cluster. (D) Species richness (p<0.0001; Kruskal-Wallis test) and (E) alpha-diversity (p<0.0001; Kruskal-Wallis test) significantly differed across clusters. (F) Assessment of bacterial load using qPCR showed Clusters 2 and 3 have significantly higher bacterial loads compared to Cluster 1. Dunn’s multiple comparison test was used as a post hoc test for between-group comparisons (*p<0.05, ****p<0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96090/elife-96090-fig1-figsupp1-v1.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96090/elife-96090-fig2-v1.jpg)
+
+**Figure 2.:** Network representing co-occurrence patterns (edges), between various taxonomic units, assigned at species level (nodes). Edges are coloured by their estimated SparCC correlation coefficient (ρ). Edges with a SparCC bootstrapped p-value<0.05, ρ<0.25, and singleton nodes are not shown. Node colour represents network community membership. Node sizes are proportional to the mean relative abundance of their respective taxon.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96090/elife-96090-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of Log10 transformed read counts of top 25 most abundant species identified in semen samples. Samples clustered into 15 microbiota groups. (B) Silhouette scores of individual samples in microbial groups. (C) Average silhouette scores for 15 clusters at species level.
 
 Bacterial richness, diversity, and load were similar between all patient groups examined in the study (Appendix 2—figure 2). Similarly, no significant associations between bacterial clusters, richness, diversity, or load with seminal parameters, sperm DNA fragmentation, or semen ROS were observed (Appendix 1—tables 1 and 2). No significant differences in relative abundance of bacterial taxa between patient groups were detected, at genus or species level. Several organisms at the genus level, identified variably in the literature as responsible for genitourinary infection, were observed in our dataset, but their prevalence did not reach our criteria (present in at least 25% of the samples) to be carried forward to regression modelling (Núñez-Calonge et al., 1998; Satta et al., 2006; Sergerie et al., 2005). This included Chlamydia, Ureaplasma, Neisseria, Mycoplasma, and Escherichia. However, several associations (p<0.05) between relative abundance of specific bacterial genera and key sperm parameters were observed (Table 2). These included increased sperm DNA fragmentation, which was positively associated with increased relative abundance of Porphyromonas and Varibaculum and inversely correlated with Cutibacterium and Finegoldia. ROS was positively associated with Lactobacillus species relative abundance, with analyses performed at species-level taxonomy, indicating that this relationship was largely driven by L. iners (p=0.04; Table 3). In contrast, Corynebacterium was inversely associated with ROS and positively associated with semen volume. Of note, Flavobacterium genus was positively associated with both abnormal semen quality and sperm morphology and, in both cases, withstood FDR correction for multiple testing (q=0.02 and q=0.01, respectively) (Table 2; Figure 3). Consistent with this, a positive association between an unidentified species of Flavobacterium and semen quality was also observed (q=0.01, Table 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96090/elife-96090-fig3-v1.jpg)
 
-**Figure 3.:** Flavobacterium in relation to semen quality and morphology.(A) Relative abundance of Flavobacterium was significantly higher in samples with abnormal semen (p=0.0002, q=0.02). (B) Detection of Flavobacterium was significantly more prevalent in abnormal semen quality samples (p=0.0003). (C) Flavobacterium relative abundance was significantly higher in samples with <4% morphologically normal forms (p=0.0002, q=0.01). (D) Flavobacterium was also significantly more prevalent in samples with low percentage of morphologically normal sperm (p=0.0009).
+**Figure 3.:** (A) Relative abundance of Flavobacterium was significantly higher in samples with abnormal semen (p=0.0002, q=0.02). (B) Detection of Flavobacterium was significantly more prevalent in abnormal semen quality samples (p=0.0003). (C) Flavobacterium relative abundance was significantly higher in samples with <4% morphologically normal forms (p=0.0002, q=0.01). (D) Flavobacterium was also significantly more prevalent in samples with low percentage of morphologically normal sperm (p=0.0009).
+
+**Table 2.**
+ Differential abundance analysis for bacterial genera with seminal quality and functional parameters.Positive t-values indicate a positive relationship, and a negative t-value describes a negative relationship between relative abundance of taxa and seminal quality and function parameters. Significant relationships are indicated using p-values. q-Values represent Benjamini-Hochberg false discovery rate corrected p-values for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sperm quality and function parameters</th>
+      <th>Genera</th>
+      <th>Welch’s t-statistic</th>
+      <th>p-Value</th>
+      <th>q-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Sperm DNA fragmentation</td>
+      <td>Finegoldia</td>
+      <td>–2.36</td>
+      <td>0.01*</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Cutibacterium</td>
+      <td>–2.20</td>
+      <td>0.02*</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Porphyromonas</td>
+      <td>2.16</td>
+      <td>0.03*</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Varibaculum</td>
+      <td>2.11</td>
+      <td>0.03*</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ROS</td>
+      <td>Lactobacillus</td>
+      <td>2.18</td>
+      <td>0.02*</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Corynebacterium</td>
+      <td>–2.04</td>
+      <td>0.04*</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Semen quality</td>
+      <td>Flavobacterium</td>
+      <td>3.39</td>
+      <td>0.0008***</td>
+      <td>0.02*</td>
+    </tr>
+    <tr>
+      <td>Prevotella</td>
+      <td>2.26</td>
+      <td>0.02*</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Sperm concentration</td>
+      <td>Porphyromonas</td>
+      <td>–2.08</td>
+      <td>0.03*</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sperm morphology</td>
+      <td>Flavobacterium</td>
+      <td>3.64</td>
+      <td>0.0003***</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>Prevotella</td>
+      <td>2.03</td>
+      <td>0.04*</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Semen volume</td>
+      <td>Corynebacterium</td>
+      <td>2.27</td>
+      <td>0.02*</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Actinotigum</td>
+      <td>–2.20</td>
+      <td>0.02*</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Varibaculum</td>
+      <td>–2.16</td>
+      <td>0.03*</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Differential abundance analysis for bacterial species with seminal quality and functional parameters.Positive t-values indicate a positive relationship, and a negative t-value describes a negative relationship between relative abundance of taxa and seminal quality and function parameters. Significant relationships are indicated using p-values. q-Values represent Benjamini-Hochberg false discovery rate corrected p-values for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical factor</th>
+      <th>Species</th>
+      <th>Welch’s t-statistic</th>
+      <th>p-Value</th>
+      <th>q-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sperm DNA fragmentation</td>
+      <td>Peptostreptococcaceae bacterium</td>
+      <td>2.18</td>
+      <td>0.03*</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ROS</td>
+      <td>Lactobacillus iners</td>
+      <td>2.24</td>
+      <td>0.02*</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Unidentified Anaerococcus</td>
+      <td>–2.03</td>
+      <td>0.04*</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Semen quality</td>
+      <td>Unidentified Flavobacterium</td>
+      <td>3.76</td>
+      <td>0.0002***</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>Corynebacterium tuberculostearicum</td>
+      <td>–2.06</td>
+      <td>0.04*</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Semen volume</td>
+      <td>Corynebacterium tuberculostearicum</td>
+      <td>2.64</td>
+      <td>0.008</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Unidentified Varibaculum</td>
+      <td>–2.48</td>
+      <td>0.01</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus epidermidis</td>
+      <td>2.35</td>
+      <td>0.01</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Unidentified Peptoniphilus</td>
+      <td>–2.32</td>
+      <td>0.02</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Dialister propionicifaciens</td>
+      <td>–2.24</td>
+      <td>0.02</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Prevotella colorans</td>
+      <td>–2.14</td>
+      <td>0.03</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Cohorts</td>
+      <td>Staphylococcus haemolyticus</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>0.97</td>
+    </tr>
+  </tbody>
+</table>
 
 To focus analyses towards the most extreme phenotype of poor semen quality, a sub-analysis of controls compared with MFI was performed (Table 4). Non-parametric differential abundance analysis again identified a robust relationship between Flavobacterium and abnormal sperm morphology (q=0.01, Table 4). At species level, this was mapped to an unidentified species of Flavobacterium (q=0.01, Table 5). Similar to findings observed for all samples, sperm DNA fragmentation was inversely associated with relative abundance of Cutibacterium and positively associated with Porphyromonas, and Varibaculum was also observed.
+
+**Table 4.**
+ Differential abundance analysis for specific taxa at genera level for controls and cases with male factor infertility.Positive t-values indicate a relationship, and a negative t-value describes a negative relationship between relative abundance of taxa and seminal quality and function parameters. Significant relationships are indicated using p-values. q-Values represent Benjamini-Hochberg false discovery rate corrected p-values for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical factor</th>
+      <th>Genera</th>
+      <th>Welch’s t-statistic</th>
+      <th>p-Value</th>
+      <th>q-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Sperm DNA fragmentation</td>
+      <td>Cutibacterium</td>
+      <td>–2.56</td>
+      <td>0.01*</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Porphyromonas</td>
+      <td>2.34</td>
+      <td>0.02*</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Varibaculum</td>
+      <td>1.96</td>
+      <td>0.051</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>ROS</td>
+      <td>Finegoldia</td>
+      <td>–1.99</td>
+      <td>0.04*</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Sperm concentration</td>
+      <td>Finegoldia</td>
+      <td>2.04</td>
+      <td>0.04*</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sperm morphology</td>
+      <td>Flavobacterium</td>
+      <td>3.64</td>
+      <td>0.0003***</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>Prevotella</td>
+      <td>2.03</td>
+      <td>0.04*</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Semen volume</td>
+      <td>Facklamia</td>
+      <td>2.99</td>
+      <td>0.003**</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Actinotignum</td>
+      <td>–2.20</td>
+      <td>0.02*</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>Dialister</td>
+      <td>–1.99</td>
+      <td>0.04*</td>
+      <td>0.36</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Differential abundance analysis for specific taxa at species for controls and male factor infertility.Positive t-values indicate a positive relationship, and a negative t-value describes a negative relationship between relative abundance of taxa and seminal quality and function parameters. Significant relationships are indicated using p-values. q-Values represent Benjamini-Hochberg false discovery rate corrected p-values for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical factor</th>
+      <th>Species</th>
+      <th>Welch’s t-statistic</th>
+      <th>p-Value</th>
+      <th>q-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sperm DNA fragmentation</td>
+      <td>Staphylococcus hominis</td>
+      <td>–2.32</td>
+      <td>0.02*</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ROS</td>
+      <td>Unidentified Flavobacterium</td>
+      <td>2.42</td>
+      <td>0.01</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Unidentified Anaerococcus</td>
+      <td>–2.12</td>
+      <td>0.03</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Schaalia radingae</td>
+      <td>–2.12</td>
+      <td>0.03*</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Haemophilus parainfluenza</td>
+      <td>2.02</td>
+      <td>0.04*</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Semen quality</td>
+      <td>Unidentified Flavobacterium</td>
+      <td>2.36</td>
+      <td>0.01*</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Semen volume</td>
+      <td>Dialister micraerophilus</td>
+      <td>–2.66</td>
+      <td>0.008**</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>Corynebacterium tuberculostearicum</td>
+      <td>2.27</td>
+      <td>0.02*</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus epidermidis</td>
+      <td>2.22</td>
+      <td>0.02*</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Actinotignum schaalii</td>
+      <td>–2.00</td>
+      <td>0.04*</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Cohorts</td>
+      <td>Staphylococcus haemolyticus</td>
+      <td>0.04</td>
+      <td>0.01*</td>
+      <td>0.68</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -108,10 +628,10 @@ Metataxonomic profiling of semen microbiota was performed using MiSeq sequencing
 
 Further methodological details can be found in Appendix 3.
 
-## Controls and contamination
+### Controls and contamination
 
 Three negative kit/environmental control swabs were included to identify and eliminate potential sources of contamination and false positives in the 16S metataxonomic profiles. These swabs were removed from the manufacturer’s packaging, waved in air, and then subjected to the same entire DNA extraction protocol. Decontamination of data was done using the decontam package (v1.9.0) in R, at ASV level, using both ‘frequency’ and ‘prevalence’ contaminant identification methods with threshold set to 0.1 (Davis et al., 2018). The ‘frequency’ filter was applied using the total 16S rRNA gene copies measured as the conc parameter. For the ‘prevalence’ filter, all three blank swabs were used as negative controls and compared against all semen samples. ASVs classified as a contaminant by either method (n=94) were excluded.
 
-## Statistical analysis
+### Statistical analysis
 
 Hierarchical clustering with Ward’s linkage and Jensen-Shannon distance was used to assign samples to putative community state types, with the number of clusters chosen to maximise the mean silhouette score. Linear regression models used to regress microbiota features against semen quality parameters and other clinical and demographic variables were fitted with the base R lm function (v4.2.0). The Benjamini-Hochberg false discovery rate (FDR) correction was used to control the FDR of each covariate signature independently (e.g. ROS, DNA fragmentation, or semen quality), with a q<0.05, or 5%, cut-off, in both regression and chi-squared analyses. Detailed information for statistical modelling is presented in Appendix 3.

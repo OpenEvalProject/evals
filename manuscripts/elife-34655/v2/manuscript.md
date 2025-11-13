@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.34655.001 Human immunodeficiency virus (HIV) infection is currently incurable, due to the persistence of latently infected cells. The ‘shock and kill’ approach to a cure proposes to eliminate this reservoir via transcriptional activation of latent proviruses, enabling direct or indirect killing of infected cells. Currently available latency-reversing agents (LRAs) have however proven ineffective. To understand why, we used a novel HIV reporter strain in primary CD4 + T cells and determined which latently infected cells are reactivatable by current candidate LRAs. Remarkably, none of these agents reactivated more than 5% of cells carrying a latent provirus. Sequencing analysis of reactivatable vs. non-reactivatable populations revealed that the integration sites were distinguishable in terms of chromatin functional states. Our findings challenge the feasibility of ‘shock and kill’, and suggest the need to explore other strategies to control the latent HIV reservoir.
+Human immunodeficiency virus (HIV) infection is currently incurable, due to the persistence of latently infected cells. The ‘shock and kill’ approach to a cure proposes to eliminate this reservoir via transcriptional activation of latent proviruses, enabling direct or indirect killing of infected cells. Currently available latency-reversing agents (LRAs) have however proven ineffective. To understand why, we used a novel HIV reporter strain in primary CD4+ T cells and determined which latently infected cells are reactivatable by current candidate LRAs. Remarkably, none of these agents reactivated more than 5% of cells carrying a latent provirus. Sequencing analysis of reactivatable vs. non-reactivatable populations revealed that the integration sites were distinguishable in terms of chromatin functional states. Our findings challenge the feasibility of ‘shock and kill’, and suggest the need to explore other strategies to control the latent HIV reservoir.
 
 ## Introduction
 
@@ -53,15 +53,23 @@ In this study, we have used a new dual color reporter virus, HIVGKO, to investig
 
 ## Results
 
-## A second-generation dual-fluorescence HIV-1 reporter (HIVGKO) to study latency
+### A second-generation dual-fluorescence HIV-1 reporter (HIVGKO) to study latency
 
 Our laboratory reported the development of a dual-labeled virus (DuoFluoI) in which eGFP is under the control of the HIV-1 promoter in the 5′ LTR and mCherry is under the control of the cellular elongation factor one alpha promoter (EF1α) (Calvanese et al., 2013). However, we noted that the model was limited by a modest number of latently infected cells (<1%) generated regardless of viral input (Figure 1—figure supplement 1A–1C), as well as a high proportion of productively infected cells in which the constitutive promoter EF1α was not active (GFP+, mCherry-).
 
 To address these issues, which we suspected were due to recombination between the 20–30 bp regions of homology at the N- and C-termini of the adjacent fluorescent proteins (eGFP and mCherry) (Salamango et al., 2013), we generated a new version of dual-labeled virus (HIVGKO), containing a codon-switched eGFP (csGFP) and a distinct, unrelated fluorescent protein mKO2 under the control of EF1α (Figure 1A). First, titration of HIVGKO input revealed that productively and latently infected cells increased proportionately as the input virus increased (Figure 1B and Figure 1—figure supplement 1), unlike the original DuoFluoI (Figure 1—figure supplement 1). Second, comparison of primary CD4+ T cells infected with HIVGKO or the original DuoFluoI revealed an increase in double-positive (csGFP+ mKO2+) infected cells in HIVGKO infected cells (Figure 1C). A small proportion of csGFP+ mKO2- cells were still visible in HIVGKO infected cells. We generated a HIVGKO virus lacking the U3 promoter region of the 3′LTR (ΔU3-GKO), resulting in an integrated virus devoid of the 5’ HIV U3 region. This was associated with a suppression of HIV transcription and an inversion of the latency ratio (ratios latent/productive = 0.34 for HIVGKO-WT-LTR and 8.8 for HIVGKO-ΔU3-3’LTR - Figure 1D). Finally, to further characterize the constituent populations of infected cells, double-negative cells, latently and productively infected cells were sorted using FACS and analyzed for viral mRNA and protein content. (Figures 1E and F, Figure 1—source data 1). As expected, productively infected cells (csGFP+) expressed higher amounts of viral mRNA and viral proteins, but latently infected cells (csGFP- mKO2+) had very small amounts of viral mRNA and no detectable viral proteins.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of first (top: HIVDuoFluoI) and second generation (bottom: HIVGKO) of dual-labeled HIV-1 reporters. (B) Representative experiment of HIVGKO virus titration in activated primary CD4+ T cells (4 days post-infection). Primary CD4+ T cells were activated with αCD3/CD28 beads + 20 U/mL IL-2 for 3 days before infection with different amounts of HIVGKO (input, ng/p24) and analyzed by flow cytometry 4 days post-infection. (C) Comparison of HIVDuoFluoI and HIVGKO infection profiles by flow cytometry in activated primary CD4+ T-cells (4 days post-infection). Cells were treated as in (B). (D) Comparison of GKO-WT-LTR and GKO-ΔU3 3'LTR infection profiles by flow cytometry in cells treated as in (B). (E, F) Primary CD4+ T cells were treated as in (B). At 4 days post-infection, double-negative, productively infected, and latently infected cells were sorted out, and (E) the total RNA isolated from each population was subjected to Taqman RT-qPCR analysis (Source Data - Figure 1). Unspliced (US), singly spliced (SS), and multiply spliced (MS) HIV-1 mRNAs were quantified relative to cellular GAPDH. (F) Western blot analysis of each population.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Titration of HIVGKO input revealed that latently and productively infected cells increased proportionately as viral input increased (Figure 1—figure supplement 1A and B), as reflected by steady ratios of latent/productive (Figure 1—figure supplement 1C). On the contrary, increasing HIVDuoFluoI input does not lead to a proportional increase of latent and productive populations (Figure 1—figure supplement 1A and B), as reflected on the ratios latent/productive (Figure 1—figure supplement 1C). Briefly, CD4+ T-cells were purified from blood of one representative healthy donor and activated for 72 hr with αCD3/CD28 beads and 100 U/ml IL-2 before infection with serial dilutions of either HIVGKO or HIVDuoFluoI. Four days post-infection, the percentage of latent cells (csGFP- mKO2+, Figure 1—figure supplement 1A) and productive cells (csGFP+, Figure 1—figure supplement 1AB) were quantified by FACS for both dual-fluorescence viruses, and ratios of latent versus productive populations were calculated (Figure 1—figure supplement 1C).
+
 Based on all these findings, the second-generation of dual-fluorescence reporter, HIVGKO, is able to more accurately quantify latent infections in primary CD4+ T cells than HIVDuoFluoI, and thus allows for the identification and purification of a larger number of latently infected cells. Using flow cytometry, we can determine infection and HIV productivity of individual cells and simultaneously control for cell viability.
 
-## Correlation between LRA efficacy in HIV-infected patient samples and activity in HIVGKO latently infected cells
+### Correlation between LRA efficacy in HIV-infected patient samples and activity in HIVGKO latently infected cells
 
 Next, we evaluated the reactivation of latent HIVGKO in primary CD4+ T cells by LRAs, and compared it with the ability of the same LRAs to reverse latency in CD4+ T cells isolated from HIV-infected individuals. We tested the following LRAs: (a) the histone deacetylase inhibitor (HDACi) panobinostat (Rasmussen et al., 2013), (b) the bromodomain-containing protein 4 (BRD4) inhibitor JQ1, which acts through positive transcription elongation factor (P-TEFb) (Banerjee et al., 2012; Boehm et al., 2013; Filippakopoulos et al., 2010; Li et al., 2013; Zhu et al., 2012), and (c) the PKC activator, bryostatin-1 (del Real et al., 2004; Mehla et al., 2010). Viral reactivation mediated by these LRAs was compared to treatment of CD4+ T cells with αCD3/CD28 (Spina et al., 2013). Several studies have shown synergetic effects when combining different LRAs (Darcis et al., 2015; Jiang et al., 2015; Laird et al., 2015; Martínez-Bonet et al., 2015), therefore we also tested bryostatin-1 in combination with either panobinostat or JQ1. Drugs were used at concentrations previously shown to be effective at reversing latency in other model systems (Archin et al., 2012a; Bullen et al., 2014; Laird et al., 2015; Spina et al., 2013).
 
@@ -69,27 +77,101 @@ To measure reactivation by LRAs in patient samples, we treated 5 million purifie
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig2-v2.jpg)
 
-**Figure 2.:** GKO latently infected cells.(A) Intracellular HIV-1 mRNA levels in rCD4s, obtained from infected individuals and treated ex vivo with a single LRA or a combination of two LRAs for 24 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n = 4, mean +SEM) (Figure 2—source data 1). (B) Intracellular HIV-1 mRNA levels in HIVGKO latently infected CD4+ T-cells, and treated with a single LRA or a combination of two LRAs for 6 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n = 3 (different donors), mean +SEM, paired t-test) (Figure 2—source data 1). (C) Correlation between intracellular HIV-1 mRNA levels quantified in either 6 hr stimulated HIVGKO latently infected CD4+ T-cells from different donors, or 24 hr stimulated rCD4s from HIV infected patients, with a single LRA or a combination of two LRAs in presence of raltegravir.10.7554/eLife.34655.006Figure 2—source data 1.GKO latently infected CD4+ T-cells.The experiment is detailed in the main text and Figure 2 legend.
+**Figure 2.:** (A) Intracellular HIV-1 mRNA levels in rCD4s, obtained from infected individuals and treated ex vivo with a single LRA or a combination of two LRAs for 24 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n = 4, mean +SEM) (Figure 2—source data 1). (B) Intracellular HIV-1 mRNA levels in HIVGKO latently infected CD4+ T-cells, and treated with a single LRA or a combination of two LRAs for 6 hr in presence of raltegravir, presented as fold induction relative to DMSO control. (n = 3 (different donors), mean +SEM, paired t-test) (Figure 2—source data 1). (C) Correlation between intracellular HIV-1 mRNA levels quantified in either 6 hr stimulated HIVGKO latently infected CD4+ T-cells from different donors, or 24 hr stimulated rCD4s from HIV infected patients, with a single LRA or a combination of two LRAs in presence of raltegravir.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig3-v2.jpg)
 
-**Figure 3.:** GKO latently infected primary CD4+ T cells are reactivated.(A) Schematic of experimental procedure with primary CD4+ T cells. Briefly, CD4+ T cells were purified from blood of healthy donors and activated for 72 hr with αCD3/CD28 beads and 100 U/ml IL-2 before infection with HIVGKO. Five days post-infection, latently infected cells (csGFP- mKO2+) cells were sorted, put back in culture overnight and stimulated with different LRAs in presence of raltegravir for 24 hr before performing FACS analysis. (B) Percentage of GFP+ cells is shown after stimulation of latently infected CD4+ T-cells with LRAs (n = 4 (different donors), mean +SEM, paired t-test) (Figure 3—source data 1). (C) Histogram plot of percent live cells for each drug treatment (n = 3 (different donors), mean + SEM, paired t-test) (Figure 3—source data 1). p-value: *p<0.05, **p<0.01 relative to DMSO.10.7554/eLife.34655.008Figure 3—source data 1.+ T-cells with LRAs as well as percent live cells for each drug treatment.The experiment is detailed in the main text and Figure 3 legend.
+**Figure 3.:** (A) Schematic of experimental procedure with primary CD4+ T cells. Briefly, CD4+ T cells were purified from blood of healthy donors and activated for 72 hr with αCD3/CD28 beads and 100 U/ml IL-2 before infection with HIVGKO. Five days post-infection, latently infected cells (csGFP- mKO2+) cells were sorted, put back in culture overnight and stimulated with different LRAs in presence of raltegravir for 24 hr before performing FACS analysis. (B) Percentage of GFP+ cells is shown after stimulation of latently infected CD4+ T-cells with LRAs (n = 4 (different donors), mean +SEM, paired t-test) (Figure 3—source data 1). (C) Histogram plot of percent live cells for each drug treatment (n = 3 (different donors), mean + SEM, paired t-test) (Figure 3—source data 1). p-value: *p<0.05, **p<0.01 relative to DMSO.
+
+**Table 1.**
+ Characteristics of HIV-1-infected study participantsABC, abacavir; DRV, darunavir; FTC, emtricitabine; RPV, rilpivirine; RTV, ritonavir; TCV, tivicay; TDF, tenofovir; 3TC, lamivudine; VL, viral load.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scope ID</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Ethnicity</th>
+      <th>CD4 Count</th>
+      <th>Duration of infection (years)</th>
+      <th>ART regimen</th>
+      <th>Duration of ART (years)</th>
+      <th>Peak reporter VL (copies/ml−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1597</td>
+      <td>56</td>
+      <td>M</td>
+      <td>Mixed</td>
+      <td>469</td>
+      <td>19</td>
+      <td>RPV/TDF/FTC</td>
+      <td>5</td>
+      <td>45734</td>
+    </tr>
+    <tr>
+      <td>2147</td>
+      <td>59</td>
+      <td>M</td>
+      <td>Asian</td>
+      <td>597</td>
+      <td>28</td>
+      <td>RPV/TDF/FTC</td>
+      <td>23</td>
+      <td>374000</td>
+    </tr>
+    <tr>
+      <td>2461</td>
+      <td>62</td>
+      <td>M</td>
+      <td>White</td>
+      <td>664</td>
+      <td>32</td>
+      <td>RPV/TCV</td>
+      <td>19</td>
+      <td>20000</td>
+    </tr>
+    <tr>
+      <td>3162</td>
+      <td>54</td>
+      <td>M</td>
+      <td>White</td>
+      <td>734</td>
+      <td>29</td>
+      <td>RTV, DRV, ABC/TCV/3TC</td>
+      <td>20</td>
+      <td>171000</td>
+    </tr>
+  </tbody>
+</table>
 
 The same LRAs and combinations were next tested after infection of human CD4+T cells in vitro with HIVGKO. Measurement of intracellular HIV-1 mRNA in HIVGKO latently infected cells showed an expected fold induction of latency in response to αCD3/CD28 (11.3-fold, Figure 2B, Figure 2—source data 1). Second, JQ1, panobinostat, and bryostatin-1 alone all caused limited reactivation of latent HIV (fold-increases of 1.1-, 5.6- and 6.2-fold, respectively, Figure 2B), as observed in patients’ samples. Finally, we observed low synergy when combining bryostatin and JQ1 (8-fold increase), but high synergy between bryostatin and panobinostat (67.3-fold increase). These data together demonstrate that HIVGKO closely mimics in vitro what is observed in ex vivo patients’ samples (correlation rate r2 = 0.88, p=0.0056 - Figure 2C), and validate the robustness and reliability of the dual-florescence HIV reporter as a model to study HIV-1 latency.
 
-## HIV-1 LRAs target a minority of latently infected primary CD4+ T cells
+### HIV-1 LRAs target a minority of latently infected primary CD4+ T cells
 
 Current assays have relied on PCR-based assays to measure HIV RNA, and to evaluate the efficacy of different LRAs (Figure 2A). The use of dual-fluorescent HIV reporters, however, provides a tool to quantify directly the fraction of cells that become reactivated.
 
 To quantify the absolute number of latently infected cells reactivated following LRA treatment, primary CD4+ T cells were infected with HIVGKO, and cultured for 5 days (in the presence of IL-2) before sorting the pure latent population (GFP-, mKO2+). Cells were allowed to rest overnight and were treated for 24 hr with the various LRAs (same drug concentrations as in Figure 2) (Figure 3A, Figure 3—source data 1). Culture of DMSO-treated latently infected primary CD4+ T cells produced little spontaneous reactivation (average of four experiments: 1.4% of GFP+ cells). Unexpectedly, we found that none of the individual LRAs or their combinations reactivated more than 5.5% of the latently infected cells: JQ1 (1.7%) panobinostat (3.7%), bryostatin-1 (3%) αCD3/CD28 (4.5%), bryostatin-1 and JQ1 (3.3%.). bryostatin-1 and panobinostat (5.5%) (Figure 3B).
 
-## Small fractional rate of latency reactivation is not explained by low cellular response to activation signals
+### Small fractional rate of latency reactivation is not explained by low cellular response to activation signals
 
 These data highlight two important facts: a) cell-associated HIV RNA quantification does not reflect the absolute number of cells undergoing viral reactivation, and b) induced cell-associated HIV RNA, in response to all reversing agents, comes from a small fraction of reactivated latent cells. This was particularly surprising with αCD3/CD28 stimulation, as a currently accepted model for HIV latency is that the state of T cell activation dictates the transcriptional state of the provirus. Treatment of latently infected primary CD4+ T cells with αCD3/CD28 stimulated HIV production in less than 5% of the cells, while the other 95% remained latent, even though after 24 hr of treatment nearly all of the cells had upregulated the early T cell activation marker CD69 (Figure 4—figure supplement 1).
 
 To further rule out the possibility that non-reactivated latently infected cells (NRLIC) simply represented a lack of efficient response to T-cell activation signals, we analyzed T-cell activation markers within the different populations (i.e., within uninfected, non reactivated (NRLIC) and reactivated latently infected cells (RLIC); Figure 4, Figure 4—source data 1). Briefly, 72h-stimulated CD4+ T cells were infected with HIVGKO, and 4 days later, GFP- cells were sorted, and allowed to rest overnight before restimulation with αCD3/CD28. After another 24 hr, cells were stained for the early, intermediate, and late markers of T cell activation CD69, CD25 and HLA-DR respectively. The three different populations, double negative, RLIC and NRLIC, had similar profiles of activated T-cell subsets, as shown in Figure 4, and were mainly composed of strongly activated cells (CD69+/CD25+/HLA-DR+/-). We only observed a statistically significant increase of NRLIC compared with RLIC in the CD69+/CD25-/HLA-DR+ population, however this small increase in a relatively minor population is insufficient to explain the low reactivation rate of latently infected cells. Overall, comparison of both reactivated and non reactivated latent populations showed little difference in their activation state.
 
-## Integration sites, gene expression, transcription units and the fate of HIV infection
+![Figure 4.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig4-v2.jpg)
+
+**Figure 4.:** T-cell activation patterns between double negative, reactivated (RLIC) and non-reactivated (NRLIC) latently infected cells. Briefly, CD4+ T-cells were purified from blood of four healthy donors and activated for 72 hr with αCD3/CD28 beads and 20 U/ml IL-2 before infection with HIVGKO. At 4 days post-infection, csGFP- were sorted, cultured overnight and stimulated with αCD3/CD28 in presence of raltegravir. At 24 hr post-treatment, cells were stained for CD25, CD69, and HLA-DR activation markers before performing FACS analysis. (n = 4, mean +SEM, paired t-test; *p<0.05; **p<0.01) (Figure 4—source data 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Quantification of T-cell activation-associated surface markers after 24 hr stimulation. Briefly, CD4+ T-cells were purified from blood of two healthy donors and activated for 72 hr with αCD3/CD28 beads and 100 U/ml IL-2 before infection with HIVGKO. Five-days post-infection, latently infected cells (csGFP- mKO2+) were sorted, cultured overnight and stimulated with either αCD3/CD28 or bryostatin + panobinostat in presence of raltegravir. 24 hr post-treatment, cells were stained for CD25 and CD69 activation markers before performing FACS analysis.
+
+### Integration sites, gene expression, transcription units and the fate of HIV infection
 
 The role of the site of HIV integration into the genome in latency remains a subject of debate (Chen et al., 2017; Dahabieh et al., 2014; Jordan et al., 2003; Jordan et al., 2001; Sherrill-Mix et al., 2013). To identify possible differences in integration sites between reactivated and non-reactivated HIV genomes, primary CD4+ T-cells were infected with HIVGKO. At 5 days post-infection, productively infected cells (GFP+, PIC) were sorted and frozen. The GFP negative population (consisting of a mixture of latent and uninfected) was isolated and treated with αCD3/CD28. 48 hr post-induction, both non reactivated (NRLIC) and reactivated (RLIC) populations were isolated. Nine libraries (three donors, three samples/donor: PIC, RLIC, NRLIC) were constructed from genomic DNA as described (Cohn et al., 2015) and analyzed by high-throughput sequencing to locate HIV proviruses within the human genome. A total of 1803 virus integration sites were determined: 960 integrations in PIC, 681 in NRLIC, and 162 in RLIC (Integration Sites Source data).
 
@@ -97,21 +179,21 @@ To determine whether integration within genes differentially expressed during T-
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig5-v2.jpg)
 
-**Figure 5.:** (A) Scatter chart showing primary CD4+ T-cell gene expression changes after 48 hr of stimulation with αCD3/CD28 beads. Integration sites displayed outside of the two solid gray lines were targeted genes whose expression is at least ± twofold differentially expressed after 48 hr stimulation. Plot points size can be different, the bigger the plot point is, the more integration events happened within the same gene. (B) Fraction of integration sites from the different populations PIC, RLIC or NRLIC, integrated within genes whose expression is at least ± twofold differentially expressed after 48 hr of αCD3/CD28 stimulation (**p<0.01; ***p<0.001; two-proportion z test) (Figure 5—source data 1). (C) Relative expression of genes targeted by HIV-1 integration in PIC, RLIC or NRLIC before TCR stimulation and after αCD3/CD28 stimulation (n = 3, mean +SEM, paired t-test). ***p<0.001; ****p<0.0001. (Figure 5—source data 2).10.7554/eLife.34655.014Figure 5—source data 1.The experiment is detailed in the main text and Figure 5 legend.10.7554/eLife.34655.015Figure 5—source data 2.The experiment is detailed in the main text and Figure 6 legend.
+**Figure 5.:** (A) Scatter chart showing primary CD4+ T-cell gene expression changes after 48 hr of stimulation with αCD3/CD28 beads. Integration sites displayed outside of the two solid gray lines were targeted genes whose expression is at least ± twofold differentially expressed after 48 hr stimulation. Plot points size can be different, the bigger the plot point is, the more integration events happened within the same gene. (B) Fraction of integration sites from the different populations PIC, RLIC or NRLIC, integrated within genes whose expression is at least ± twofold differentially expressed after 48 hr of αCD3/CD28 stimulation (**p<0.01; ***p<0.001; two-proportion z test) (Figure 5—source data 1). (C) Relative expression of genes targeted by HIV-1 integration in PIC, RLIC or NRLIC before TCR stimulation and after αCD3/CD28 stimulation (n = 3, mean +SEM, paired t-test). ***p<0.001; ****p<0.0001. (Figure 5—source data 2).
 
 Next, we investigated whether different genomic regions were associated with productive, inducible or non-inducible latent HIV-1 infections. In agreement with previous studies (Cohn et al., 2015; Dahabieh et al., 2014; Maldarelli et al., 2014; Wagner et al., 2014), the majority of integration sites were found within genes in each population (Figure 6A, Figure 6—source data 1), although the proportion of genic integrations in NRLIC was significantly lower than in PIC and RLIC samples. Moreover, integration events in the PIC and RLIC populations were more frequent in transcribed regions (64% and 58%, respectively, [sum of low + medium + high transcribed regions] (Figure 6B), Figure 6—source data 1), while these regions were significantly less represented in the NRLIC (31%) (Figure 6B). As expected since introns represent a much larger proportion of genes, genic integration events were more frequent in the introns for each population (>65%, Figure 6C, Figure 6—source data 1). Finally, viral orientation of proviruses with respect to the transcriptional unit did not correlate with the fate of HIV infection (latent vs productive) or the reactivation or absence thereof of HIV latency (Figure 6D, Figure 6—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig6-v2.jpg)
 
-**Figure 6.:** (A) Proportion of mapped insertions that are in genic or intergenic regions. (Figure 6—source data 1). (B) Proportion of integration sites in transcribed regions with high (top 1/8), medium (top 1/4–1/8), low expression (top 1/2–1/4), trace (bottom 1/2) or silent (0) expression. (Figure 6—source data 1). (C) Proportion of unique genic integration sites located in introns, exons, UTR or promoters. (Figure 6—source data 1). (D) Transcriptional orientation of integrated HIV-1 relative to host gene. (Figure 6—source data 1). p-value: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 using two-proportion z test.10.7554/eLife.34655.017Figure 6—source data 1.The experiment is detailed in the main text and Figure 6 legend.
+**Figure 6.:** (A) Proportion of mapped insertions that are in genic or intergenic regions. (Figure 6—source data 1). (B) Proportion of integration sites in transcribed regions with high (top 1/8), medium (top 1/4–1/8), low expression (top 1/2–1/4), trace (bottom 1/2) or silent (0) expression. (Figure 6—source data 1). (C) Proportion of unique genic integration sites located in introns, exons, UTR or promoters. (Figure 6—source data 1). (D) Transcriptional orientation of integrated HIV-1 relative to host gene. (Figure 6—source data 1). p-value: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 using two-proportion z test.
 
-## Chromatin modifications at the site of HIV integration and latency
+### Chromatin modifications at the site of HIV integration and latency
 
 Chromatin marks, such as histone post-translational modifications (e.g., methylation and acetylation) and DNA methylation, are involved in establishing and maintaining HIV-1 latency (De Crignis and Mahmoudi, 2017). We examined 500 bp regions centered on all integration sites in each population for several chromatin marks by comparing our data with several histone modifications and DNaseI ENCODE datasets. We first looked at distinct and predictive chromatin signatures, such as H3K4me1 (active enhancers), H3K36m3 (active transcribed regions), H3K9m3 and H3K27m3 (repressive marks of transcription) (reviewed in [Kumar et al., 2015; Shlyueva et al., 2014]). All three populations exhibited distinct profiles, although productive and inducible latent infections profiles appeared most similar (Figure 7A, Figure 7—source data 1). The analysis showed that PIC integration events were associated with active chromatin (i.e., transcribed genes - H3K36me3 or enhancers - H3K4me1), while NRLIC integration events appeared biased toward heterochromatin (H3K27me3 and H3K9me3) and non-accessible regions (DNase hyposensitivity).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34655/elife-34655-fig7-v2.jpg)
 
-**Figure 7.:** (A) 500 bp centered on HIV-1 integration sites for each population were analyzed for the presence of H3K4me1 (active enhancers), H3K36m3 (active transcribed regions), H3K9m3 and H3K27m3 (repressive marks of transcription), and DNA accessibility (DNAseI). (Figure 7—source data 1). (B) Nuclear localization of HIV-1 integration sites. Quantification was based on inside a LAD (=1) or outside (=0), which means the Y axis represents the fraction of integrations within a LAD. (Figure 7—source data 1). (n = 3–4 ENCODE donors, mean +SEM, paired t-test). *p<0.05; **p<0.01; ***p<0.001).10.7554/eLife.34655.019Figure 7—source data 1.The experiment is detailed in the main text and Figure 7 legend.
+**Figure 7.:** (A) 500 bp centered on HIV-1 integration sites for each population were analyzed for the presence of H3K4me1 (active enhancers), H3K36m3 (active transcribed regions), H3K9m3 and H3K27m3 (repressive marks of transcription), and DNA accessibility (DNAseI). (Figure 7—source data 1). (B) Nuclear localization of HIV-1 integration sites. Quantification was based on inside a LAD (=1) or outside (=0), which means the Y axis represents the fraction of integrations within a LAD. (Figure 7—source data 1). (n = 3–4 ENCODE donors, mean +SEM, paired t-test). *p<0.05; **p<0.01; ***p<0.001).
 
 Marini et al. recently reported that HIV-1 mainly integrates at the nuclear periphery (Marini et al., 2015). We therefore examined the topological distribution of integration sites from each population inside the nucleus by comparing our integration site data with a previously published dataset of lamin-associated domains (LADs) (Guelen et al., 2008). LADs consist of H3K9me2 heterochromatin and are present at the nuclear periphery. This analysis showed that latent integration sites from both RLIC and NRLIC were in LADs to a significantly higher degree (32% and 30.4%) than productive integrations (23.6%) (p<0.05, Figure 7B, Figure 7—source data 1). Overall, these data show similar features between productively infected cells and inducible latently infected cells, while non-reactivated latently infected cells appear distinct from the other populations. These findings support a prominent role for the site of integration and the chromatin context for the fate of the infection itself, as well as for latency reversal.
 
@@ -133,11 +215,11 @@ In conclusion, the heterogeneity of the latent reservoir calls for therapies add
 
 ## Materials and methods
 
-## Patients’ samples
+### Patients’ samples
 
 Four HIV-1-infected individuals, who met the criteria of suppressive ART, undetectable plasma HIV-1 RNA levels (<50 copies/ml) for a minimum of six months, and with CD4+ T cell count of at least 350 cells/mm3, were enrolled. The participants were recruited from the SCOPE cohort at the University of California, San Francisco. Table 1 details the characteristics of the study participants.
 
-## Plasmids construction
+### Plasmids construction
 
 To construct HIVGKO, the csGFP sequence was designed and ordered from Life Technologies. The sequence was cut out from Life Technologies’ plasmid with BamHI and XhoI and cloned into DuoFluoI, previously cut with the same enzymes (DuoFluoI-csGFP). HIVGKO was creating by PCR overlapping: csGFP-EF1α (Product 1) was PCR amplified from DuoFluoI using primers P1: 5' for-GATTAGTGAACGGATCCTTGGCAC-3' and P2: 5’ rev-GGCTTGATCACAGAAACCATGGTGGCGACCGGTAGCGC-3'. mKO2 (Product 2) was PCR amplified from Brian Webster’s plasmid (kind gift from Warner Greene) using primers P3: 5' for-GCGCTACCGGTCGCCACCATGGTTTCTGTGATCAA
 
@@ -147,11 +229,11 @@ Of note, the Envelope open reading frame was disrupted by the introduction of a 
 
 To construct GKO-∆U3 3’LTR, we cloned a ∆U3 linker from pTY-EFeGFP (Chang et al., 1999; Cui et al., 1999; Iwakuma et al., 1999; Zolotukhin et al., 1996) into the KpnI/SacI sites of the 3’ LTR in HIVGKO.
 
-## Virus production
+### Virus production
 
 Pseudotyped HIVDuoFluoI and HIVGKO viral stocks were generated by co-transfecting (standard calcium phosphate transfection method) HEK293T cells with a plasmid encoding HIVDuoFluoI or HIVGKO, and a plasmid encoding HIV-1 dual-tropic envelope (pSVIII-92HT593.1). Medium was changed 6–8 hr post-transfection, and supernatants were collected after 48 hr, centrifuged (20 min, 2000 rpm, RT), filtered through a 0.45 μM membrane to clear cell debris, and then concentrated by ultracentrifugation (22,000 g, 2 hr, 4°C). Concentrated virions were resuspended in complete media and stored at −80°C. Virus concentration was estimated by p24 titration using the FLAQ assay (Gesner et al., 2014).
 
-## Primary cell isolation and cell culture
+### Primary cell isolation and cell culture
 
 CD4+ T cells were extracted from peripheral blood mononuclear cells (PBMCs) from continuous-flow centrifugation leukophoresis product using density centrifugation on a Ficoll-Paque gradient (GE Healthcare Life Sciences, Chicago, IL). Resting CD4+ lymphocytes were enriched by negative depletion with an EasySepHuman CD4+ T Cell Isolation Kit (Stemcell Technologies, Canada). Cells were cultured in RPMI medium supplemented with 10% fetal bovine serum, penicillin/streptomycin and 5 µM saquinavir.
 
@@ -159,17 +241,17 @@ Primary CD4+ T cells were purified from healthy donor blood (Blood Centers of th
 
 HEK293T cells were obtained from ATCC (mycoplasma free). Feeder cells H80 was a kind gift from Jonathan Karn. H80 cells were cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum (FBS), L-glutamine (2 mM), penicillin (50 U/ml), and streptomycin (50 mg/ml) (37°C, 5% CO2). HEK293T cells were cultured in DMEM medium supplemented with 10% FBS, 50 U/ml penicillin, and 50 mg/ml streptomycin.
 
-## Cell infection
+### Cell infection
 
 Purified CD4+ T cells isolated from healthy peripheral blood were stimulated with αCD3/CD28 activating beads (Thermofisher, Waltham, MA) at a concentration of 0.5 bead/cell in the presence of 20–100 U/ml IL-2 (PeproTech, Rocky Hill, NJ) for three days. All cells were spinoculated with either HIVDuoFluoI, HIVGKO or HIV Δ3U-GKO at a concentration of 300 ng of p24 per 1.106 cells for 2 hr at 2000 rpm at 32°C without activation beads.
 
 Infected cells were either analyzed by flow cytometry or sorted 4–5 days post-infection.
 
-## Latency-reversing agent treatment conditions
+### Latency-reversing agent treatment conditions
 
 CD4+ T cells were stimulated for 24 hr unless stipulated differently, with latency-reversing agents at the following concentrations for all single and combination treatments: 10 nM bryostatin-1, 1 μM JQ1, 30 nM panobinostat, αCD3/CD28 activating beads (1 bead/cell), or media alone plus 0.1% (v/v) DMSO. For all single and combination treatments, 30 μM Raltregravir (National AIDS Reagent Program) was added to media. Concentrations were chosen based on Laird et al. paper (Laird et al., 2015).
 
-## Staining, flow cytometry and cell sorting
+### Staining, flow cytometry and cell sorting
 
 Cells from Figure 4 were stained with α-CD69-PE-Cy7 (561928), α-CD25-APC (560987), and α-HLA-DR-PerCP-Cy5.5 (562007) (BD Bioscience, Franklin Lakes, NJ).
 
@@ -179,17 +261,17 @@ Sorting of infected CD4+ T cells was performed with a FACS AriaII (BD Bioscience
 
 In the experiment shown in Figure 3, we isolated pure latent cells (GFP-, mKO2+) five days post-infection, before treating this pure population with LRAs.
 
-## DNA, RNA and protein extraction, qPCR and western blot
+### DNA, RNA and protein extraction, qPCR and western blot
 
 RNA and proteins (Figure 1B and C) were extracted with PARISTM kit (Ambion, Thermofisher, Waltham, MA) according to manufacturer’s protocol from same samples. RNA was retro-transcribed using random primers with the SuperScript II Reverse Transcriptase (Thermofisher, Waltham, MA) and qPCR was performed in the AB7900HT Fast Real-Time PCR System, using 2X HoTaq Real Time PCR kit (McLab, South San Francisco, CA) and the appropriate primer-probe combinations described in (Calvanese et al., 2013). Quantification for each qPCR reaction was assessed by the ddCt algorithm, relative to Taq Man assay GAPDH Hs99999905_m1. Protein content was determined using the Bradford assay (Bio-Rad, Hercules, CA) and 20 μg were separated by electrophoresis into 12% SDS-PAGE gels. Bands were detected by chemiluminescence (ECL Hyperfilm Amersham, GE Healthcare Life Sciences, Chicago, I) with anti-Vif, HIV-p24 and α-actin (Sigma, Saint-Louis, MO) primary antibodies.
 
 Total RNA (Figure 2A and B) wasextracted using the Allprep DNA/RNA/miRNA Universal Kit (Qiagen, Germany) with on-column DNAase treatment (Qiagen RNase-Free DNase Set, Germany). cDNA synthesis was performed using SuperScript IV Reverse Transcriptase with a combination of random hexamers and oligo-dT primers (ThermoFisher, Waltham, MA). Relative cellular HIV mRNA levels were quantified using a qPCR TaqMan assay using primers and probes described in (Bullen et al., 2014) on a QuantStudio 6 Flex Real-Time PCR System (Thermofisher, Waltham, MA). Relative cell-associated HIV mRNA copy numbers were determined in a reaction volume of 20 μL with 10 μL of 2x TaqMan Universal Master Mix II with UNG ( Thermofisher, Waltham, MA), 4 pmol of each primer, 4 pmol of probe, 0.5 μL reverse transcriptase, and 2.5 μL of cDNA. Cycling conditions were 50°C or 2 min, 95°C for 10 min, then 60 cycles of 95°C for 15 s and 60°C for 1 min. Real-time PCR was performed in triplicate reaction wells, and relative cell-associated HIV mRNA copy number was normalized to cell equivalents using human genomic GAPDH expression by qPCR and applying the comparative Ct method (Livak and Schmittgen, 2001).
 
-## HIV integration site libraries and computational analysis
+### HIV integration site libraries and computational analysis
 
 HIV integration site libraries and computational analysis were executed in collaboration with Lilian B. Cohn and Israel Tojal Da Silva as described in their published paper (Cohn et al., 2015), with a few small changes added to the computational analysis pipeline. First, we included integration sites with only a precise junction to the host genome. Second, to eliminate any possibility of PCR mispriming, we have excluded integration sites identified within 100 bp (50 bp upstream and 50 bp downstream) of a 9 bp motif identified in our LTR1 primer: TGCCTTGAG. Thirdly we have merged integration sites within 250 bp and have counted each integration site as a unique event. The list of integration sites for each donor and each population can be found as a source data file linked to this manuscript (Integration Sites Source data 1).
 
-## Datasets
+### Datasets
 
 Chromatin data (ChIP-seq) from CD4+ T cells was downloaded from ENCODE: H3K4me1 (ENCFF112QDR, ENCFF499NFE, ENCFF989BNS), H3K9me3 (ENCFF044NLN, ENCFF736KRZ, ENCFF844IWD, ENCFF929BPC), H3K27ac (ENCFF618IUD, ENCFF862SKP), H3K27me3 (ENCFF124QDD, ENCFF298JKA, ENCFF717ODY), H3K36me3 (ENCFF006VTQ, ENCFF169QYM, ENCFF284PKI, ENCFF504OUW), DNAse (GSM665812, GSM665839, GSM701489, GSM701491). Data were analyzed using Seqmonk (v0.33, http://www.bioinformatics.bbsrc.ac.uk/projects/ seqmonk/).
 
@@ -197,6 +279,6 @@ We calculated expression (GSM669617) and chromatin mark abundance (the remaining
 
 CD4+ T cells activation data in Figure 5A weredownloaded from GEO (GSE60235).
 
-## Statistical analysis
+### Statistical analysis
 
 Significance was analyzed by either paired t-test (GraphPad Prism) or proportion test (standard test for the difference between proportions), also known as a two-proportion z test (https://www.medcalc.org/calc/comparison_of_proportions.php), and specified in the manuscript.

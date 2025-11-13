@@ -42,37 +42,53 @@ Here, we investigate other mutants of H3G34. H3-G34V mutation is less frequent t
 
 Fission yeast have three genes that code for a single histone H3 protein (Figure 1A; Matsumoto and Yanagida, 1985). Strains were derived that express only one H3 and one H4 gene (hht2+ and hhf2+) (Mellone et al., 2003), which maintain histone protein levels similar to those in wild-type strains (Yadav et al., 2017). Previously, we introduced a mutation into hht2+ (Figure 1A) to generate strains that express only the G34R mutant form of histone H3 (Yadav et al., 2017). In the current study, we derived a panel of strains that express only H3-G34 mutants, and compared them with H3-G34R strains. ‘Single copy’ histone H3 and H4 strains were used throughout and are named H3-WT and H3-G34X in the text, and ‘WT’ and ‘G34X’ in the figures. Additional mutations were also generated in the single H3 background unless denoted (3xH3) representing strains with three copies of H3/H4 (Supplementary file 1).
 
-## H3K36me3 is reduced in H3-G34V mutants
+![Figure 1.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme of the histone H3 (hht) and histone H4 (hhf) genes in Schizosaccharomyces pombe (S. pombe) highlighting the H3 gene (hht2) in which mutations were engineered (blue). (B) Dot blot analysis to quantitatively assess recognition of WT, G34R, and G34V peptides bearing K36 di- or tri-methyl modifications by anti-K36 methyl antibodies. Ponceau-stained blots were used as the loading control (left). (C) Western blot analysis of K36me2, K36me3, and total H3 in H3-WT, H3-G34V, H3-G34R, and set2Δ chromatin extracts. Star marks non-specific band. (Right) quantification of K36 methylation relative to total H3 (K36me3: three replicates for H3-WT, set2Δ, and H3-G34R and eight replicates for H3-G34V; K36me2: two replicates for H3-WT, H3-G34R, and set2Δ and five replicates for H3-G34V). For K36me3 blot, **** represents significant difference p<0.0001 from H3-WT strain. (D) Mass spectrometry-based quantification of acetylation of specific lysines in histone H4 and H3 tails in histones purified from H3-WT, H3-G34R, H3-G34V, and set2Δ strains (nine biological replicates for H3-WT, H3-G34R, and set2Δ data and six biological replicates for H3-G34V). H3K27ac analysis was excluded as highly variable. (E) Western blot analysis of H3K36ac in lysates of (3xH3) WT, and acetyltransferase mutants mst2Δ, gcn5Δ, hat1Δ, and rtt109Δ with sole copy H3-K36A negative control (anti-H3K36ac Abnova PAB31320), and total H3 as loading control. (F) In vitro histone acetylation assay using recombinant Gcn5 and recombinant WT, G34R, or G34V H3 and monitoring H3K14ac and H3K36ac. Data from each time point represents the mean ± SEM from three biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ChIP analysis of Set2-3xFLAG expressed from its endogenous locus in H3-WT, H3-G34V, and H3-G34R cells. Set2-FLAG association with act1+ and clr4+ loci is represented as % of input DNA. Data represent mean ± SEM from six biological replicates. No significant difference was found between WT and mutant H3 strains. (B) Western blot analysis of H3K36me3, H3K36me2, and total H3 in WT and epe1Δ cells using chromatin extracts. (lower) Quantification of K36 methylation levels relative to total H3. (C) Western blot analysis of specificity of H3K36ac antibodies using WT and H3-K36A chromatin extracts (Abcam ab177179, Abnova PAB31320, Rockland Immunochemicals 600–401-I89, and Thermo Fischer MA5-24672). Total H4 and H3 were used as loading controls. (D) In vitro histone acetylation assay using recombinant Gcn5 and recombinant WT, G34R, or G34V H3, monitoring H3K9, H3K18, H3K23, and H3K37 acetylation. Data for each time point represents the mean ± SEM from three biological replicates. K27ac was highly variable and was dropped from analysis. (E) Sequence flanking fission yeast H3K36 aligned with known and structurally analyzed GCN5 substrates H3K14 and H4K8. The sites of Gcn5 acetylation are shown in red, while regions making protein contacts with GCN5 in previously characterized structures are denoted in purple. Aqua denotes residues conserved among known substrates. Alignment modified from Poux and Marmorstein, 2003.
+
+### H3K36me3 is reduced in H3-G34V mutants
 
 In fission yeast, all stages of H3 K36 methylation (mono, di, and tri) are carried out by a single enzyme, Set2 (Morris et al., 2005). Experiments monitoring H3K36 methylation by mass spectrometry in human cells have shown that expression of G34R or V mutant H3.3 reduces H3K36me2 and me3 on the same histone tail (Lewis et al., 2013). Since H3-G34R mutant fission yeast exhibit a pronounced reduction in H3K36me3 (Yadav et al., 2017), we asked whether H3K36me was similarly affected by H3-G34V. We first characterized antibodies for recognition of H3K36 methylation in peptides containing a H3G34V mutant tail (Figure 1B, Supplementary file 2). Using an anti-K36me3 antibody that bound efficiently to G34V mutant tails, western analyses showed a marked reduction in H3K36me3 in chromatin extracts from H3-G34V compared with H3-WT cells (Figure 1C). In contrast, H3K36me2 appeared unchanged on western analysis of H3-G34V compared with H3-WT strains, but is upregulated in H3-G34V cells since antibody recognition of K36me2 is notably reduced on the G34V mutant H3 tail. A similar effect on K36me2 was seen in G34R cells (Yadav et al., 2017). Thus H3K36me3 is reduced and H3K36me2 accumulates in both H3-G34V and H3-G34R cells. Since Set2 is the sole K36 methyltransferase in fission yeast, this result suggests that there may be a defect in Set2-mediated trimethylation of K36me2 G34V/R templates, or that there is heightened activity of a K36me3 demethylase. To probe these possibilities, we performed ChIP analysis of Set2 in G34V/R cells, but saw no change in Set2 association with chromatin at the sites tested (Figure 1—figure supplement 1A). Second, we asked whether loss of Epe1, a proposed H3 demethylase (Trewick et al., 2007), influences levels of H3K36 methylation, but we saw no consistent change in K36me2 or me3 in epe1Δ strains (Figure 1—figure supplement 1B).
 
-## H3-G34R but not H3-G34V cells exhibit differences in H3 acetylation
+### H3-G34R but not H3-G34V cells exhibit differences in H3 acetylation
 
 Since H3-G34R mutation results in a marked reduction in H3K36ac (Yadav et al., 2017), we asked whether K36ac was also affected by G34V mutation. Targeted quantitative mass spectrometry of histone H3 and H4 acetylation was performed on histones extracted from H3-WT, H3-G34V, H3-G34R, and set2Δ cells (Figure 1D, Supplementary file 3; Kuo and Andrews, 2013). We found that H3K36ac was greatly reduced in H3-G34R, but was unaffected in H3-G34V cells. In conclusion, H3-G34R, but not G34V, appears to inhibit efficient acetylation of H3 K36, whereas both mutants show loss of H3K36me3.
 
-## Gcn5 acetylates H3K36, but cannot acetylate K36 on H3-G34R tail in vitro
+### Gcn5 acetylates H3K36, but cannot acetylate K36 on H3-G34R tail in vitro
 
 To determine which histone acetyltransferase mediates H3K36ac, we assessed H3K36ac levels in cells lacking various histone acetyltransferases. Gcn5 has previously been implicated in H3K36ac (Pai et al., 2014) and consistent with this, using antibody that was largely specific to K36ac (Figure 1—figure supplement 1C), we found that gcn5Δ cells have low H3K36ac levels, similar to H3-K36A cells which lack H3K36ac (Figure 1E). To extend this analysis, since GCN5 has many targets, including H3K14, H3K18, and H3K23, we asked if the specific loss of K36ac on H3-G34R mutant H3 could be recapitulated in vitro. Using recombinant fission yeast Gcn5 with recombinant WT or G34 mutant histone H3s, we used mass spectroscopy to monitor acetylation at individual sites in the H3 tail over time (Kuo and Andrews, 2013; Kuo et al., 2014). Whereas Gcn5 acetylated most sites on WT, G34R, and G34V mutant H3 templates equivalently, acetylation of K36 on G34R H3 was strongly reduced and was slowed down on G34V H3 (Figure 1F and Figure 1—figure supplement 1D). Together, the in vivo and in vitro data suggest that the G34R mutation specifically reduces acetylation on H3 K36, while acetylation at other sites remains largely unaffected. These data are consistent with structural studies of Gcn5—substrate complexes, which predicted that residues just N-terminal to the reactive lysine would modulate substrate affinity, and that replacement of the small residue (glycine or alanine) at position −2 (in this case H3G34 relative to H3K36 target) with a larger residue would likely impact Gcn5 activity (Figure 1—figure supplement 1E; Poux and Marmorstein, 2003).
 
-## H3-G34V mutants are not sensitive to replication stress
+### H3-G34V mutants are not sensitive to replication stress
 
 Altered H3K36 post-translational modification is associated with defective repair of DNA damage (Jha and Strahl, 2014; Li et al., 2013; Pai et al., 2014; Pfister et al., 2014). Consistent with this, H3-G34R cells with reduced H3K36ac and H3K36me3 are sensitive to replicative stress (Yadav et al., 2017). To query the role of H3K36ac in replicative stress, we plated fivefold serial dilutions of G34V and G34R cells onto media containing drugs, and assessed cell growth after several days (Figure 2A). H3-G34R and set2Δ cells were sensitive to chronic exposure to hydroxyurea (HU, a ribonucleotide reductase inhibitor that depletes dNTPs), whereas H3-G34V cells were not. G34V cells were also not sensitive to DNA alkylation (methyl methanesulfonate, MMS), whereas both G34R and set2Δ cells were sensitive. Finally, H3-G34V cells were unaffected by exposure to the DNA topoisomerase I ligase inhibitor CPT, whereas H3-G34R and set2Δ showed slight or pronounced sensitivity, respectively. At the concentrations used, these genotoxins predominantly affect DNA replication or require DNA replication to inflict damage. Thus while H3-G34R and set2Δ are sensitive to several forms of replicative stress, H3-G34V cells are not. Since both H3-G34V and H3-G34R have reduced K36me3, the sensitivity of H3-G34R cells to replicative stress cannot be attributed to a reduction in H3K36me3 but may be due to loss of H3K36ac.
 
-## H3-G34V, but not H3-G34R mutants are sensitive to γ-IR and IR mimetics
+![Figure 2.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fivefold serial dilutions showing the effect of hydroxyurea (HU; a ribonucleotide reductase inhibitor that depletes dNTPs), methyl methanesulfonate (MMS; a DNA-alkylating agent), and camptothecin (CPT; blocks topoisomerase one ligase activity) on growth of the indicated strains. (B) Effect of γ−irradiation (IR) exposure on viability of H3-WT, H3-G34R, H3-G34V, set2Δ, and H3-G34V set2Δ cells. Data represent mean ± SEM from two independent experiments using four biological replicates. (C) Serial dilution assay showing the effect of bleomycin and zeocin, two IR mimetics, on the indicated strains. (D) Serial dilution assay assessing epistasis of mutants with HR pathway. Bleomycin sensitivity of H3-WT, H3-G34V, rad51Δ, and H3-G34V rad51Δ cells (top) and MMS sensitivity of H3-WT, H3-G34R, rad51Δ, and H3-G34R rad51Δ cells (bottom). (E) Frequency of cells that lose the non-essential minichromosome Ch16 in H3-WT, H3-G34V, H3-G34R, set2Δ, and swi6Δ cells. Mean ± SEM from four to eight biological replicates is shown. ** denotes a significant difference of p<0.01 and ****p<0.0001 compared with the H3-WT strain. (F) Example of a normal anaphase and one with a lagging chromosome (red arrow) (top). Frequency of late anaphase cells with a lagging chromosome in H3-WT, G34R, G34V, set2Δ, and clr4Δ (bottom). Mean ± SEM from four to eight biological replicates. * represents significant difference of p<0.05 with the H3-WT strain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Diagram of the homologous recombination (HR) assay based on correction of leu1-32 mutation by HR (Yadav et al., 2017). Cells of indicated genotypes were transformed with a leu1 gene fragment to measure HR, or plasmid to measure transformation efficiency (top schematic). (B) Relative HR efficiency is shown as 100% for H3-WT, and results are averaged from three independent experiments with error bars representing ± SEM. ** reflects significant differences with H3-WT cells. ** p<0.05, *** p<0.001, and **** p<0.0001.
+
+### H3-G34V, but not H3-G34R mutants are sensitive to γ-IR and IR mimetics
 
 Cells lacking set2+ are sensitive to γ-IR and IR mimetics (Pai et al., 2014) but H3-G34R cells are not (Yadav et al., 2017). We tested H3-G34V cells for sensitivity to γ-IR by transiently irradiating H3-WT, H3-G34R, H3-G34V, and set2Δ cells, and comparing viability by plating single cells and scoring colony formation after several days of growth (Figure 2B). Notably, H3-G34V cells were sensitive to γ-IR, whereas as seen before, H3-G34R were not. H3-G34V and set2Δ cells were also sensitive to chronic exposure to the IR mimetics, bleomycin and zeocin, whereas H3-G34R were not (Figure 2C). Thus the H3-G34V but not H3-G34R mutation renders cells sensitive to both γ-IR and chronic exposure to IR mimetics.
 
-## H3-G34V mutants are not defective for DNA break repair by homologous recombination
+### H3-G34V mutants are not defective for DNA break repair by homologous recombination
 
 We next tested HR-mediated double-strand (ds) break repair efficiency in H3-G34V cells, since H3-G34R and set2Δ mutants are defective in HR-mediated DNA repair (Yadav et al., 2017). leu1-32 mutant cells were transformed with a fragment of wild-type leu1+ and leu1+ transformants that arose by HR were scored (see Figure 2—figure supplement 1A). In comparison to set2Δ and H3-G34R cells, which showed significant reduction in HR activity, the H3-G34V mutant showed no defect in HR (Figure 2—figure supplement 1B). However, this assay probes HR efficiency at a single site, so we next performed a genetic epistasis analysis to ask more generally whether H3-G34V cells were competent for HR. To this end, we asked whether the DNA damage sensitivity of H3-G34V cells is enhanced on deletion of the major HR repair protein Rad51, which would suggest that HR is proficient in H3-G34V cells. Indeed we found that combination of rad51Δ and H3-G34V mutation enhanced DNA damage sensitivity, whereas combination of rad51Δ with H3-G34R rendered cells no more sensitive than rad51Δ (Figure 2D). Together these assays indicate that H3-G34V cells rely on HR for efficient resolution of DNA damage, whereas H3-G34R cells are defective for HR. Note that we could not use epistasis analyses to probe other types of DNA damage repair in H3-G34V mutants since H3-G34V cells are only sensitive to IR or IR mimetics, and mutants defective in non-homologous end joining (NHEJ), such as ku70Δ and lig4Δ, are not sensitive to these insults (Manolis et al., 2001).
 
-## H3-G34R but not H3-G34V cells exhibit genomic instability
+### H3-G34R but not H3-G34V cells exhibit genomic instability
 
 H3-G34R cells exhibit genomic instability (Yadav et al., 2017). Since H3-G34V cells exhibit sensitivity to γ-IR, we asked if genomic stability was also compromised in H3-G34V cells. We initially monitored the loss of a non-essential minichromosome Ch16 (Niwa et al., 1989) from H3-G34V cells. As expected, cells lacking the heterochromatin protein Swi6HP1 displayed high frequencies of Ch16 loss (8.5%, Figure 2E; Allshire et al., 1995). H3-G34R cells also lose the minichromosome at a significantly elevated frequency (4.3%) (Yadav et al., 2017), whereas H3-G34V and set2Δ cells display low levels of chromosome loss (2.2% and 1.8%), similar to H3-WT cells (1.2%).
 
 As an alternate assay to measure chromosome segregation defects, we quantified chromosomal DNA segregation in late anaphase cells (with a spindle length >10 microns) (Figure 2F; Ekwall et al., 1995). Since fission yeast have just three chromosomes, defects in chromosome segregation (lagging chromosomes) can be scored by monitoring the presence of DAPI-stained material at sites other than the ends of the spindle in late anaphase cells. We found that 7.4% of H3-G34R cells exhibited chromosome mis-segregation. In contrast, G34V and set2Δ cells showed no or little chromosome mis-segregation, respectively (0.5%, 1%), compared to wild-type cells (0.5%) and clr4Δ cells that lack heterochromatin (17.5%). We conclude from these assays that the genome of H3-G34V cells is relatively stable when compared with H3-G34R cells.
 
-## Generation of a panel of H3-G34 mutant strains and analysis of H3K36me state
+### Generation of a panel of H3-G34 mutant strains and analysis of H3K36me state
 
 The surprising differences in the behavior of H3-G34V and H3-G34R mutants prompted us to ask whether H3-G34R phenotypes are caused by the large size or the basic charge of the arginine substitution, since valine is, like glycine, small and uncharged. To address this question, we generated a panel of sole copy H3-G34 mutant strains, with G34 replaced by the bulky uncharged residue tryptophan (W), the negatively charged glutamine (Q), the positively charged lysine (K), and methionine (M) (Figure 3A). Using the approaches outlined previously to determine whether antibodies against H3K36 methylation can still bind mutant H3 tails (Figure 3B), we then assessed levels of H3K36me2 and me3 by western analysis on chromatin extracted from the H3-G34 mutant strains, and plotted quantification from western blots relative to H3-WT (Figure 3C). This analysis showed that H3K36me3 is specifically reduced in H3-G34K (as well as H3-G34R and H3-G34V), but is not reduced in H3-G34W, M, or Q mutants. Furthermore, H3K36me2 is elevated in all H3-G34 mutant strains compared with H3-WT, when the reduced binding of anti-H3K36me2 antibodies to G34 mutant tails is taken into account.
 
@@ -80,11 +96,11 @@ The surprising differences in the behavior of H3-G34V and H3-G34R mutants prompt
 
 **Figure 3.:** (A) Structure of glycine and amino acid substitutions used in experiments. (B) Dot blot analysis to quantitatively assess recognition of WT, H3-G34R, V, K, M, W, or Q peptides bearing K36me2 or K36me3 modifications by anti-K36 methyl antibodies. Peptides were loaded in twofold serial dilutions and Ponceau staining was used as the loading control (left). (C) Western blot analysis of H3K36me3, K36me2, and total H3 in set2Δ, H3-WT, H3-G34R, V, K, M, W, and Q chromatin-fractionated cellular extracts (left). The * symbol represents a non-specific band in the H3K36me2 western. Quantification of K36 methylation levels relative to total H3 were calculated from two biological replicates (right). (D) Serial dilution yeast growth assay showing the effect of hydroxyurea (HU), methyl methanesulfonate (MMS), and camptothecin (CPT) on the indicated strains. (E) Serial dilution growth assay showing the effect of bleomycin and zeocin, two irradiation (IR) mimetics, on the indicated strains. (F) Effect of γ-IR exposure on viability of H3-WT, H3-G34R, H3-G34V, H3-G34K, set2Δ, and rad51Δ cells. Data represent mean ± SEM from eight biological replicates. (G) IF analysis of lagging chromosomes in the indicated strains from three independent experiments. % lagging chromosomes represents the percentage of lagging chromosomes in anaphase cells counted. Over 200 anaphase cells were counted for each strain. ** represents significant difference of p<0.001 and **** a significant difference of p<0.0001 with H3-WT strain. (H) Serial dilution growth assay testing epistasis of H3G34R and H3G34K with HR pathway mutant rad51Δ cells. (I) Serial dilution growth assay testing epistasis of H3-G34V with rad51Δ HR-deficient cells. (J) Serial dilution growth assay testing epistasis of H3-G34R and H3-G34K with ku70Δ NHEJ-deficient cells.
 
-## H3-G34 mutants show a range of DNA damage sensitivities and genomic stability
+### H3-G34 mutants show a range of DNA damage sensitivities and genomic stability
 
 H3-G34K, V, and R mutants showed loss of K36me3 and gain of K36me2, whereas H3-G34M, W, and Q mutants retained H3K36me3 and gained K36me2. To ask the functional consequence of these changes, we assessed the sensitivity of the different mutant strains to DNA damage. We found that of all the H3-G34 mutants, only H3-G34R was sensitive to hydroxyurea. In contrast, both strains that bear the basic substitutions (H3-G34R and H3-G34K) were sensitive to the alkylating agent MMS and to topoisomerase inhibition CPT. We found that MMS sensitivity was not altered in strains bearing the bulky H3-G34W, G34M, or the negatively charged G34Q substitutions (Figure 3D). This would suggest that alkylation sensitivity is not linked to the size of the substitution at H3G34. On testing the γ-IR mimetics zeocin and bleomycin, we found that H3-G34K cells, like H3-G34V mutants showed sensitivity, whereas H3-G34M, G34W, G34Q, and G34R cells did not (Figure 3E). We also monitored cell viability following γ-IR and found that H3-G34K and H3-G34V but not H3-G34R strains were sensitive to γ-IR, and that H3-G34K was more sensitive than either set2Δ or H3-G34V mutant cells (Figure 3F). These experiments demonstrate the surprising complexity of DNA damage sensitivities of the different H3-G34 mutants, with some mutants (H3-G34V and H3-G34R) showing completely non-overlapping sensitivities, and others (H3-G34K and H3-G34R, and H3-G34K and H3-G34V) showing overlap for sensitivity to alkylating agents and IR, respectively. Since all three mutants H3-G34R, H3-G34V, and H3-G34K have reduced K36me3 and enhanced DNA damage sensitivity, K36me3 levels likely serve a critical role in safeguarding the genome, but the sensitivity of the different mutants to specific DNA-damaging insults must be influenced by additional factors.
 
-## H3-G34R and G34K exhibit chromosome loss but only H3-G34R appears defective for HR-mediated DNA repair
+### H3-G34R and G34K exhibit chromosome loss but only H3-G34R appears defective for HR-mediated DNA repair
 
 Since H3-G34K mutants were sensitive to DNA damage, we tested whether they showed genomic instability in the absence of exogenous DNA damage. Monitoring chromosome missegregation during anaphase, we found that H3-G34K cells had elevated levels of chromosome missegregation (7.4%), which were reproducibly higher than seen in H3-G34R cells (5.9%) (Figure 3G). In contrast, none of the other H3-G34 mutants (V, M, W, or Q) showed a significant chromosome loss compared with H3-WT (0.7%).
 
@@ -92,7 +108,7 @@ H3-G34R cells are defective for HR-mediated DNA repair, and we previously propos
 
 We also tested whether H3-G34K and H3-G34R mutants were deficient in NHEJ. H3-G34R or H3-G34K double mutants with ku70Δ showed elevated sensitivity to MMS compared with the single mutants alone (Figure 3J), suggestive that NHEJ is intact in both the H3-G34R and H3-G34K strains. Unfortunately we could not perform this test for H3-G34V strains as they do not share genotoxin sensitivity with mutants defective for NHEJ. Together, these results suggest that HR is deficient only in H3-G34R mutants, and that NHEJ is intact in both H3-G34R and H3-G34K cells. However, we note that in the absence of NHEJ repair assays, our conclusions about NHEJ proficiency based solely on drug sensitivity are indirect.
 
-## H3-G34V, H3-G34R, and H3G34K mutants show distinct transcriptional profiles
+### H3-G34V, H3-G34R, and H3G34K mutants show distinct transcriptional profiles
 
 To try to rationalize the distinct phenotypes of H3-G34R, H3-G34V, and H3-G34K mutants, we hypothesized that the mutations result in distinct transcriptional regulation. We performed RNA-seq in triplicate to compare transcriptional profiles of H3-G34R, H3-G34K, H3-G34V, set2Δ, and H3-WT cells within the same experiment (Supplementary file 4). Quantification of spike-in controls demonstrated that there was no global deregulation of transcripts in the mutant backgrounds, consistent with our previous data for H3-G34R and set2Δ mutants (Yadav et al., 2017). In total, 325 genes are upregulated, and 153 downregulated in set2Δ (employing cutoff ± 1.5-fold, FDR 5%), similar to the results we obtained previously (Yadav et al., 2017) and as initially reported in (3xH3) set2Δ strains (Matsuda et al., 2015; Suzuki et al., 2016). H3-G34R, H3-G34K, and H3-G34V exhibited fewer changes in gene expression, with 78, 128, and 94 genes increased in expression, and 82, 95, and 89 reduced, respectively (Supplementary file 4). Comparison of genes that were differentially regulated between H3-G34R, H3-G34K, and H3-G34V showed little overlap, with only 44 genes misregulated in all three strains (Supplementary file 4).
 
@@ -100,23 +116,39 @@ Previously, our chromosome-wide analysis of transcripts had revealed that genes 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig4-v2.jpg)
 
-**Figure 4.:** (A) RNA-seq profiles for chromosomes I, II, and III comparing Logfold change ratios for H3-G34K/H3-WT, H3-G34V/H3-WT, H3-G34R/H3-WT, or set2Δ/H3-WT plotted against chromosome coordinates. (B) Zoomed-in regions of Chr I (first 300 Kb and last 300 Kb, top) and Chr II (first 300 Kb and last 300 Kb, bottom) showing Z scores of log2 CPM for individual biological replicates. (C) qRT-PCR validation of ST genes fah1 and +grt1 expression relative to +adh1 expression from two independent biological replicates. Samples were normalized to the WT-H3 strain. Subtelomeric transcripts in H3-G34R and H3-G34K are repressed compared with H3-WT and upregulated in +set2Δ. (D) Chromosome-wide plots of transcriptional regulation in gcn5Δmst2Δ cells (3xH3) compared with wild type for Chr I and Chr II. Data reanalyzed from Nugent et al., 2010. (E) qRT-PCR validation of fah1 and +grt1 expression relative to +adh1 expression from two independent biological replicates. Samples were normalized to the WT-H3 strain. Subtelomeric transcripts in +gcn5Δmst2Δ cells (3xH3) are reduced compared with wild type.
+**Figure 4.:** (A) RNA-seq profiles for chromosomes I, II, and III comparing Logfold change ratios for H3-G34K/H3-WT, H3-G34V/H3-WT, H3-G34R/H3-WT, or set2Δ/H3-WT plotted against chromosome coordinates. (B) Zoomed-in regions of Chr I (first 300 Kb and last 300 Kb, top) and Chr II (first 300 Kb and last 300 Kb, bottom) showing Z scores of log2 CPM for individual biological replicates. (C) qRT-PCR validation of ST genes fah1+ and grt1+ expression relative to adh1+ expression from two independent biological replicates. Samples were normalized to the WT-H3 strain. Subtelomeric transcripts in H3-G34R and H3-G34K are repressed compared with H3-WT and upregulated in set2Δ. (D) Chromosome-wide plots of transcriptional regulation in gcn5Δmst2Δ cells (3xH3) compared with wild type for Chr I and Chr II. Data reanalyzed from Nugent et al., 2010. (E) qRT-PCR validation of fah1+ and grt1+ expression relative to adh1+ expression from two independent biological replicates. Samples were normalized to the WT-H3 strain. Subtelomeric transcripts in gcn5Δmst2Δ cells (3xH3) are reduced compared with wild type.
 
 Intriguingly, the histone acetyltranferases Gcn5 and Mst2 also negatively regulate silencing of the ST domains at the termini of chromosomes I and II (Gómez et al., 2005; Nugent et al., 2010; Figure 4D, data re-analyzed from Nugent et al., 2010), and by RT-PCR analysis of fah1+ and grt1+ expression, we confirmed downregulation of ST gene expression in gcn5Δmst2Δ cells (Figure 4E). Thus the downregulation of subtelomeric regions in G34R cells in which K36 acetylation is reduced is mirrored in cells lacking H3 K36 acetyltransferase function.
 
-## H3-G34R cells and cells lacking H3K36ac accumulate Sgo2 at subtelomeres and have increased cytological ‘knobs’
+### H3-G34R cells and cells lacking H3K36ac accumulate Sgo2 at subtelomeres and have increased cytological ‘knobs’
 
 Subtelomeric domains are surprisingly the most highly condensed regions of fission yeast chromatin and are microscopically visible as DAPI (4’,6-diamidino-2-phenylindole)-stained ‘knobs’ (Matsuda et al., 2015). Knob formation correlates with transcriptional silencing within subtelomeric domains, and requires Set2 H3K36 methyltransferase and the Shugoshin protein (Sgo2; Matsuda et al., 2015; Tashiro et al., 2016). Sgo2 is an important component of the tension-sensing machinery that assembles at centromeres during mitosis and relays turn-off of the mitotic checkpoint once kinetochores have properly attached to spindle microtubules (Watanabe, 2005). Recently however Sgo2 has been found at subtelomeres in interphase cells, where it promotes silencing, and regulates timing of replication of ST domains (Tashiro et al., 2016). Since H3-G34R but not H3-G34V shows extensive subtelomeric gene silencing, we examined ‘knob’ formation in H3-WT, H3-G34R, H3-G34V, and set2Δ cells. The levels of visibly condensed chromatin were similar in both single copy and (3xH3) wild-type cells. Notably, the proportion of cells with visible knobs and their number per cell was significantly elevated in H3-G34R but not in H3-G34V cells (Figure 5A), and as expected, knobs were reduced in cells lacking Set2 (Matsuda et al., 2015). A previous study showed that H3-K36Q mutant cells that mimic H3K36 acetylation and block K36 methylation dramatically loose knobs (Matsuda et al., 2015). Since Gcn5 acetylates H3K36, and subtelomeric domains are silenced in cells lacking Mst2 and Gcn5, we predicted that knobs would be increased in this mutant background. Indeed knob formation in gcn5Δmst2Δ mutants is elevated, similar to levels in the K36ac-deficient H3-G34R cells (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig5-v2.jpg)
+
+**Figure 5.:** (A) Frequency of subtelomeric knob formation observed in H3-WT, H3-G34R, and H3-G34V cells. The number of knobs in a nucleus is shown. Data plots represent mean ± SEM from three independent biological replicates, counting ~200 total nuclei per strain (upper). Example of nuclear knobs observed in WT and H3-G34; scale bar indicates 0.5 µm (bottom). (B) Frequency of subtelomeric knob formation observed in WT, set2Δ, and gcn5Δmst2Δ cells (all 3xH3) with the number of knobs in a nucleus shown. Data plots represent mean ± SEM from three independent biological replicates, counting ~200 total nuclei per strain. (C–F) ChIP analysis of Sgo2-FLAG association with the subtelomeric fah1+ and grt1+ loci in (C) H3-WT, H3-G34R, and H3-G34V cells normalized to act1+. Data were collected and plotted as the mean of six biological replicates ± SEM. * represents a significance of p<0.05 compared with the H3-WT strain. (D) Sgo2-FLAG ChIP in (3xH3) WT, set2Δ, and gcn5Δmst2Δ cells normalized to act1+. Data are the mean of four biological replicates ± SEM. **** represents a significance of p<0.0001 compared with the WT strain. (E–F) Sgo2-FLAG ChIP at the centromeric dh sequences (E) or subtelomeric fah1+ gene (F) in asynchronous or mitotically arrested nda3 mutant cells with sole copy H3-WT or H3-G34R (six replicates), and (G) Sgo2-FLAG ChIP in H3-G34K cells normalized to act1+. Data represents the mean of six biological replicates ± SEM. * represents a significance of p<0.05 compared with the H3-WT strain.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Slot blot analysis to quantitatively assess whether anti-K36 acetyl antibodies equivalently recognize WT, H3-G34R, or H3-G34K peptides bearing H3K36ac modification. Peptides were loaded in twofold serial dilution. Antibodies tested: Abnova PAB31320, Rockland Immunochemicals 600–401-I89, and Thermo Fischer MA5-24672. Ponceau-stained blots were used as the loading control (left).
 
 Since knob formation is dependent on Sgo2 (Tashiro et al., 2016), we hypothesized that Sgo2 may accumulate at ST domains in H3-G34R but not H3-G34V cells, and may also be enriched at ST in cells with reduced H3K36ac. Indeed ChIP revealed Sgo2-FLAG to be significantly enriched at ST domains in H3-G34R cells compared with H3-G34V or H3-WT (Figure 5C), and that Sgo2 is highly enriched at ST domains in mst2Δgcn5Δ relative to WT controls (Figure 5D). Since Sgo2 normally accumulates at centromeres in mitosis and is recruited to ST in interphase (Kawashima et al., 2010; Matsuda et al., 2015; Tashiro et al., 2016), we asked whether H3-G34R influences the cell cycle dependence of its localization. Importantly, Sgo2 accumulation at centromeres in mitosis was unaffected by H3-G34R mutation (Figure 5E), but even in mitotically arrested cells, Sgo2 was preferentially enriched at ST domains in H3-G34R cells compared with H3-WT (Figure 5F), suggestive that in H3-G34R cells, cell cycle regulation of Sgo2 accumulation at ST is perturbed. In summary, our data suggest that Sgo2 accumulates at subtelomeres in H3-G34R or H3K36ac-deficient cells, correlating with enhanced silencing of ST domains and knob formation in these cells. Furthermore, Sgo2 accumulates at ST domains in mitotic H3-G34R as well as interphase cells, although levels of Sgo2 at centromeres in mitotic H3-G34R cells are similar to H3-WT.
 
 We also performed Sgo2 ChIP in H3-G34K cells. Consistent with enhanced Sgo2 recruitment to silenced ST domains seen in H3K36ac acetyltransferase defective and H3-G34R strains, H3-G34K cells also had elevated Sgo2 at ST sites (Figure 5G). However, whether Sgo2 accumulation at ST correlates with reduced H3K36ac is unclear. Mass spectroscopic studies of K36 acetylation are not feasible on H3G34K because of the added complexity in data analysis from introduction of an additional lysine residue in the H3 tail, and western blot analysis is non-informative since antibodies against H3K36ac cannot effectively detect K36ac on G34 mutant H3 tails (Figure 5—figure supplement 1).
 
-## Select phenotypes of G34R and G34K mutants show dominant effects
+### Select phenotypes of G34R and G34K mutants show dominant effects
 
 An intriguing feature of mutant histone oncoproteins is how they exert their effects when expressed in cells alongside higher levels of wild-type H3 proteins. To determine which, if any, of the H3-G34 mutant phenotypes identified in our studies act dominantly, we generated ‘mixed H3’ strains that express an H3-G34 mutant gene (hht3.2) and two wild-type genes (hht3.1+, hht3.3+) from their endogenous loci (Figure 1A), and performed comparative analyses with 3xH3 wild-type strains.
 
 We first asked if H3K36me3 was reduced in mixed H3 strains and found no change in H3K36me3 in mixed copy H3-G34R, H3-G34V, or H3-G34K strains compared with 3xH3 WT (Figure 6A). Similarly, we found no dominant increase in levels of H3K36me2 when the mutants were expressed in mixed H3 backgrounds (Figure 6A). These results are consistent with the lack of dominant effect of G34R or G34V mutations on K36 methylation in mammalian cells (Lewis et al., 2013). Next we assessed H3 K36 acetylation. Due to the sequence difference at G34, we could distinguish K36ac peptides from both G34R and WT H3 proteins extracted from the mixed copy H3-G34R strain. We found that loss of H3K36ac was restricted to the G34R mutant H3 protein, whereas K36ac was present at comparable levels on wild-type H3 purified from the mixed copy G34R and wild-type 3xH3 strains (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot quantification of H3K36me2 and H3K36me3 normalized to total H3 in H3-WT, H3-G34R, H3-G34V, and H3-G34K chromatin extracts in both mixed H3 backgrounds (H3.1/H3.3 WT and H3.2 mutant) and sole copy H3 backgrounds. H3K36me2 and H3K36me3 methylation levels relative to total H3 were calculated from two biological replicates. (B) Mass spectrometry-based quantification of acetylation of H3K36 on histones purified from H3-WT (3xH3) and H3-G34R (mixed 3xH3 background) from four biological replicates. (C) Fivefold serial dilution growth assays showing the effect of HU, methyl methanesulfonate, and camptothecin on the indicated 3xH3 strains. (D) Serial dilution growth assay showing the bleomycin and zeocin sensitivity of H3-WT, rad51Δ, H3-G34V, and H3G34K 3xH3 cells. (E) Frequency of late anaphase cells that show a lagging chromosome in 3xH3 strains: WT, clr4Δ, H3-G34R, and H3-G34K. Mean ± SEM from four to eight replicates. **** represents a significance of p<0.0001 with the H3-WT strain. (F) HR assay based on correction of leu1-32 mutation by HR as shown in Figure 2—figure supplement 1. Relative HR efficiency is shown as 100% for H3-WT (3xH3), and results are averaged from three independent experiments with error bars representing SEM. ** p<0.005 and **** p<0.0001 reflect significant differences with H3-WT cells. (G) RNA-seq profiles for chromosomes I, II, and III comparing Logfold change ratios for H3-G34R/H3-WT and H3-G34K/H3-WT plotted against chromosome coordinates. Three biological replicates used for each strain, and all strains contain three copies of H3. (H) qRT-PCR validation of fah1+ and grt1+ expression relative to adh1+ expression from two independent biological replicates. Samples were normalized to the WT-H3 strain and shown as the mean ± SEM. Subtelomeric transcripts in H3-G34R and H3G34K cells (3xH3) are reduced when compared with WT.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65369/elife-65369-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Replicate serial dilution growth assays to demonstrate HU sensitivity of G34R (3xH3) mixed background strain. (B) Overlap in gene expression profiles between H3-G34R sole copy and H3-G34R (3xH3) mixed copy strains relative to appropriate WT strains (left) and H3-G34K sole copy and H3-G34K (3xH3) mixed copy strains relative to WT strains (right) with cutoffs of p<0.05 applied. The majority of gene expression changes seen in triple copy strains are in common with those in single copy strains. .
 
 To ask whether DNA damage phenotypes were dominant, we assessed growth of 3xH3 strains on chronic exposure to the genotoxins MMS, CPT, and HU. Mixed copy strains grew as well as 3xH3 WT strains, with the notable exception of H3-G34R (3xH3), which like the sole copy H3-G34R mutant, grew less well in the presence of HU (Figure 6C, Figure 6—figure supplement 1A). We also tested sensitivity to IR mimetics, and found that H3-G34K and H3-G34V mixed copy strains grew as well as WT (3xH3) strains on bleomycin and zeocin (Figure 6D).
 
@@ -150,15 +182,340 @@ Although fission yeast provides an exquisite system for analysis of histone muta
 
 ## Materials and methods
 
-## Strain generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Schizosaccharomyces pombe)</td>
+      <td>hht2+; H3.2</td>
+      <td>Pombase</td>
+      <td>Pombase: SPBC8D2.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma—Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-histone H3 (rabbit polyclonal)</td>
+      <td>Active motif</td>
+      <td>39163</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-histone H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab1791</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Antihistone H4 (rabbit monoclonal)</td>
+      <td>Millipore</td>
+      <td>05–858, lot 2020541</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (mouse monoclonal)</td>
+      <td>Gift from Keith Gull, Woods et al., 1989</td>
+      <td>TAT1</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36me2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab9049</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36me3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab9050</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36me3 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>4909</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36ac (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab177179</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36ac (rabbit polyclonal)</td>
+      <td>Abnova</td>
+      <td>PAB31320</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36ac (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>600–401-I89</td>
+      <td>WB. (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K36ac (rabbit monoclonal)</td>
+      <td>Thermo Fischer</td>
+      <td>MA5-24672</td>
+      <td>WB. (1:400)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>leu1+ plasmid</td>
+      <td>Yadav et al., 2017.</td>
+      <td>JP1050</td>
+      <td>Integration plasmid for leu1+</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6xHis-Gcn5-FLAG in pET28a</td>
+      <td>This paper. Synth by GenScript.</td>
+      <td>E. coli expression vector JP-2587. Codon optimized</td>
+      <td>For recombinant expression of fission yeast Gcn5. See plasmid DNA in Mat. and Meth.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6xHIS-H3 in pCDF duet</td>
+      <td>This paper. Synth by GenScript</td>
+      <td>E. coli expression vector JP-2395</td>
+      <td>For recombinant expression of fission yeast H3. See plasmid DNA in Mat. And Meth.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6xHIS-H3-G34R in pCDF duet</td>
+      <td>This paper</td>
+      <td>E. coli expression vector JP-2489</td>
+      <td>For recombinant expression of fission yeast H3-G34R. See Mat. and Meth.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6xHIS-H3-G34V in pCDF duet</td>
+      <td>This paper</td>
+      <td>E. coli expression vector JP-2490</td>
+      <td>For recombinant expression of fission yeast H3-G34V. See Mat. And Meth.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6xHIS-H3-G34K in pCDF duet</td>
+      <td>This paper</td>
+      <td>E. coli expression vector JP-2902</td>
+      <td>For recombinant expression of fission yeast H3-G34K. see Mat. And Meth.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JPO-183</td>
+      <td>Yadav et al., 2017</td>
+      <td>PCR primers for leu1 fragment</td>
+      <td>GATTTCTGGTCATTTACGTTACTGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JPO-3480</td>
+      <td>Yadav et al., 2017</td>
+      <td>PCR primers for leu1 fragment</td>
+      <td>ATCGACACCTTCAACGATTTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded Total RNA library Prep kit</td>
+      <td>Illumina</td>
+      <td>20020599</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ribo-zero Gold rRNA removal kit (yeast)</td>
+      <td>Illumina</td>
+      <td>MRZY1324</td>
+      <td>Discontinued</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ERCC RNA spike in control</td>
+      <td>Invitrogen</td>
+      <td>4456740</td>
+      <td>For normalization of RNAseq</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma</td>
+      <td>H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl methanesulfonate</td>
+      <td>Acros Organics</td>
+      <td>66-27-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Camptothecin</td>
+      <td>Sigma</td>
+      <td>C9911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bleomycin sulfate</td>
+      <td>Research Products International</td>
+      <td>B40060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zeocin</td>
+      <td>Invitrogen</td>
+      <td>R25001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Promega</td>
+      <td>V5111</td>
+      <td>For trypsin digestion of histones</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propionic anhydride</td>
+      <td>Sigma</td>
+      <td>8006080100</td>
+      <td>For propionylation of histones</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur</td>
+      <td>Thermo</td>
+      <td>Version 2.1</td>
+      <td>MS peak integration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Prism</td>
+      <td>Version 7.03, version 8</td>
+      <td>Used at St. Jude, Fox Chase respectively</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D-SIM reconstruction software</td>
+      <td>Global Life Sciences Solutions Operations</td>
+      <td>softWoRx 7.0.0</td>
+      <td>Using a homemade optical transfer function</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>Version 2.5.3a</td>
+      <td>RNAseq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Subread R package</td>
+      <td>Liao et al., 2019</td>
+      <td></td>
+      <td>RNAseq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Limma/ Voom</td>
+      <td>Law et al., 2014; Ritchie et al., 2015</td>
+      <td></td>
+      <td>RNAseq analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Formaldehyde</td>
+      <td>Polysciences Inc</td>
+      <td>18814–20</td>
+      <td>For 3D-SIM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zymolyase 100T</td>
+      <td>Nacalai tesque, Japan</td>
+      <td>07665–55</td>
+      <td>For 3D-SIM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glycerol</td>
+      <td>Fuji Film Wako, Japan</td>
+      <td>076–00641</td>
+      <td>For 3D-SIM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cover glass</td>
+      <td>Matsunami, Japan</td>
+      <td>No. 1S</td>
+      <td>For 3D-SIM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D-SIM microscope</td>
+      <td>Global Life Sciences Solutions Operations</td>
+      <td>DeltaVision|OMX Version 3</td>
+      <td>With a custom 100x UPlanSApo NA1.35 silicone immersion objective lens and a tube lens with a focal length of 75 mm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain generation
 
 Histone mutant strains were generated as described by Mellone et al., 2003. Gene mutagenesis used standard PCR-based procedures, and strains are listed in Supplementary file 1. All crosses used random spore analysis with nutritional/drug/temperature selection and PCR verification (including verification of loss of additional H3/H4 genes) and sequencing of H3.2 allele. Two independent clones for each genotype were used in nearly all experiments, and all experiments were performed at least twice.
 
-## Yeast growth media
+### Yeast growth media
 
 Fission yeast were maintained on rich (YES), or pombe minimal with glutamate (PMG) media with appropriate supplements (Moreno et al., 1991). PMG is Edinburgh minimal medium with glutamate.
 
-## Plasmid DNA and recombinant proteins
+### Plasmid DNA and recombinant proteins
 
 Codon optimized Gcn5 (S. pombe) with 1x FLAG was cloned into pET28a in frame with N-terminal 6x HIS tag by GenScript to generate JP-2587.
 
@@ -168,35 +525,41 @@ Recombinant pombe histones were purified from E. coli by ‘The Histone Source�
 
 Recombinant S. pombe Gcn5 was purified by the St. Jude protein production core using BL21 (DE3) transformed with JP2587. Four 1 L cultures were grown in LB medium with Kanamycin to an OD600 of about 0.6, then expression was induced with 0.1 mM IPTG and incubation continued for 16 hr at 16°C. Cell pellets were collected by centrifugation. Cells were suspended in 50 mM Tris.Cl pH 7.9; 500 mM NaCl, 10% glycerol with complete EDTA-free protease inhibitors (Roche) and lysed by two passages through a microfluidizer (Microfluidics Inc). After clarification by centrifugation, the protein was applied to a 1 mL HisTrap column (GE Healthcare) and Gcn5 eluted with a gradient of imidazole. Proteins were visualized by SDS-PAGE and fractions containing Gcn5 were pooled and dialyzed against 20 mM Tris.Cl, pH 8.0; 200 mM NaCl; 10% glycerol, and 1 mM TCEP.
 
-## Histone purification for mass spectrometric studies
+### Histone purification for mass spectrometric studies
 
 Histones were purified from fission yeast following a previously described purification protocol with some modification (Sinha et al., 2010). A 150 mL culture was inoculated to a density of 1.4 × 106 cells/mL in 4× YES media and grown at 25°C to a density of 3.6 × 107 cells/mL and harvested by spinning at 3000 rpm for 5 min. Cells were washed with H2O containing 10 mM sodium butyrate, followed by NIB buffer (250 mM sucrose, 20 mM HEPES pH 7.5, 60 mM KCl, 15 mM NaCl, 5 mM MgCl2, 1 mM CaCl2, 0.8% Triton X-100, 0.5 mM spermine, 2.5 mM spermidine, 10 mM sodium butyrate, 1 mM PMSF, and Sigma yeast protease inhibitor). The pellet was frozen on dry ice and stored at −80°C. For lysis, the pellet was resuspended in 3 mL of NIB and transferred to two 7-mL bead beater tubes along with chilled acid-washed glass beads. Samples were cooled on ice and bead beaten twice for 2 ½ min at max power with 5 min on ice in between. The sample was collected by ‘piggy backing’ into a 50-mL Oak Ridge tube at 3000 rpm at 4°C in a benchtop centrifuge. The sample was then pelleted by centrifuging at 13,000 rpm for 10 min at 4°C in a Beckman Avanti centrifuge J-30I centrifuge using a JA25.50 rotor. The pellet was washed in 15 mL of NIB before resuspension in 10 mL of 0.4N H2SO4, sonication for 45 s at max power and incubation for 2 hr on a rotating wheel at 4°C. The sample was pelleted by centrifuging at 13,000 rpm at 4°C for 10 min and the supernatant was transferred to a new tube along with 5 mL of 5% buffer G (5% guanidine HCl and 100 mM potassium phosphate buffer pH 6.8) where the pH was adjusted to 6.8 using 5N KOH. 0.5 mL of Bio-Rex pre-equilibrated in 5% buffer G was added to the sample and incubated at room temperature with rotation overnight. The resin was then washed twice with 20 mL of 5% buffer G and incubated with 3 mL of 40% buffer G (40% guanidine HCl and 100 mM potassium phosphate buffer pH 6.8) for 1 hr at room temperature to elute the bound protein. Buffer exchange and concentration was performed against 5% acetonitrile with 0.1% TFA to a final volume of 150 µL and the sample was stored at −80°C. Protein concentration was measured and 10 µg of sample was electrophoresed and stained with coomassie blue for quality control.
 
-## Acetylation mass spectrometric analyses: UPLC-MS/MS analysis
+### Acetylation mass spectrometric analyses: UPLC-MS/MS analysis
 
 Acid-extracted histone samples were TCA-precipitated, acetone-washed, and prepared for mass spectrometry analysis as previously described (Kuo et al., 2014). A Waters (Milford, MA) Acquity H-class UPLC system coupled to a Thermo (Waltham, MA) TSQ Quantum Access triple-quadrupole (QqQ) mass spectrometer was used to quantify modified histones. Selected reaction monitoring was used to monitor the elution of the acetylated and propionylated tryptic peptides. Transitions were created to study acetylation of pombe H3 wild type and mutants as well as the H4 tails. The detailed transitions for peptides of H3 that vary in sequence from Xenopus are reported in Supplementary file 3, the transitions for the Xenopus peptides and pombe H3G34R have been previously reported (Kuo et al., 2014; Yadav et al., 2017).
 
-## QqQ MS data analysis
+### QqQ MS data analysis
 
-Each acetylated and/or propionylated peak was identified by retention time and specific transitions. The resulting peak integration was conducted using Xcalibur software (version 2.1, Thermo). The fraction of a specific peptide (Fp) is calculated as:Fp=Is/(ΣIp)where Is is the intensity of a specific peptide state and Ip is the intensity of any state of that peptide.
+Each acetylated and/or propionylated peak was identified by retention time and specific transitions. The resulting peak integration was conducted using Xcalibur software (version 2.1, Thermo). The fraction of a specific peptide (Fp) is calculated as:
+
+$$
+F_{p}=I_{s}/(ΣI_{p})
+$$
+
+where Is is the intensity of a specific peptide state and Ip is the intensity of any state of that peptide.
 
 Data for acetylation analyses of H3-WT, H3-G34R, and set2Δ came from nine biological replicates, and six biological replicates for H3-G34V. 1–2 One to two technical replicates from each prep were used, thus data for G34V was obtained from 9 to 12 samples, and for H3-WT, H3-G34R, and set2Δ from 15 to 18 samples. Data to examine dominance using histones prepared from 3x H3 strains used six biological replicates for 3xH3: WT, G34R, and set2Δ.
 
-## In vitro Gcn5 enzymatic assay
+### In vitro Gcn5 enzymatic assay
 
 To determine the activity of S. pombe Gcn5 on the histone variants (G34V and G34R), recombinant S. pombe H3 and mutants were mixed with recombinant Gcn5 in a reaction buffer containing 100 mM ammonium bicarbonate and 50 mM HEPES buffer (pH 7.8) at 37°C. Experiments were performed utilizing excess S. pombe histone H3 (15 µM, either wild-type, G34V, or G34R mutant), excess acetyl-CoA (200 µM), in the presence of S. pombe Gcn5 (1 µM). Reactions were quenched at time intervals (1, 2.5, 5, 15, and 30 min) with 3x volume TCA and boiled at 95°C for 5 min. Samples were analyzed via UPLC-MS/MS analysis, as described in the section 'Acetylation mass spectrometric analyses: UPLC-MS/MS analysis'. The complete experiment was performed three times.
 
-## Chromosome stability assays
+### Chromosome stability assays
 
-## Western and dot blots
+### Western and dot blots
 
 Denatured extracts in 2× SB. Whole cell extracts (WCE) were made as published previously (Alper et al., 2013).
 
-## Chromatin fractionation
+#### Chromatin fractionation
 
 Fifty milliliters of cells were grown to a density of 6 × 106 cells/mL at 30°C in YES. Cells were collected by spinning at 3000 rpm for 3 min and washed 3× with 1 mL of ice-cold NIB (described above). After washing, the supernatant was discarded, and the final chromatin pellet was resuspended in 1 mL of NIB. Five hundred microliters of this material was mixed with 500 µL of 4× SDS sample buffer and heated at 98°C for 10 min; 10–20 µL was loaded onto a 12% SDS-PAGE gel for analysis.
 
-## Antibodies used
+#### Antibodies used
 
 Anti-H3 (active motif 39163 lot no. 26311003, Abcam ab1791). Anti-H4 (millipore 05–858 lot no. 2020541). Anti-FLAG M2 monoclonal (Sigma F1804), anti-tubulin (TAT1 kind gift from Keith Gull) (Woods et al., 1989). Anti-H3K36me2: Abcam ab9049, Anti-H3K36me3: Abcam ab9050, Cell signaling technology 4909. Anti-H3K36Ac (Abcam ab177179, rabbit monoclonal), Abnova (PAB31320), Rockland (600–401-I89), and Thermo Fischer (MA5-24672).
 
@@ -204,42 +567,42 @@ Peptide sequences used for assessment of K36 methyl Abs are listed in Supplement
 
 Slot blots used a twofold serial dilution series with 150 µL of 50, 25, 12.5, 6.25, 3.125, and 1.6 µM peptides spotted on activated PVDF 0.2-micron membrane using a 48-well BioRad Bio-Dot SF apparatus. Spots were air dried for 5 min before staining with Ponceau S stain to verify equal peptide loading. The membrane was blocked in 5% BSA in TBST at RT for 1 hr, incubated with primary Ab for 1 hr at room temperature, washed with TBST, incubated with HRP-conjugated anti-rabbit secondary Ab for 30 min, washed with TBST and then developed with enhanced chemiluminescence and images captured by LI-COR imaging. Anti-H3 K36 methylation Abs used are listed above in "Antibodies used".
 
-## Western blot quantification
+#### Western blot quantification
 
 All western blot quantification was done using LI-COR Image Studio software.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP assays were performed similarly to Alper et al., 2013, substituting Dynabeads Protein G (Invitrogen 1004D) for the protein G sepharose resin. Set2-FLAG ChIP used Anti-FLAG M2 (Sigma F1804) and monitored Set2 association with act1+ or clr4+ loci as a ratio of signal from input DNA; or Sgo2-FLAG association with subtelomeric regions, or centromeric regions relative to act1+. Primer sequences used for q-PCR are listed in Yadav et al., 2017. Sgo2 ChIP in the nda3-KM311 background used asynchronous cells grown at 32°C or cells blocked in prometaphase by 8 hr incubation at 18°C.
 
-## Transcript analysis
+### Transcript analysis
 
-## RNA-seq studies
+#### RNA-seq studies
 
 Hot phenol extraction was used to prepare the RNA (Leeds et al., 1991); 25 mL cultures were grown overnight in PMG complete media at 25°C to a density of 2.5 × 106 cells/mL. The cells were pelleted by centrifugation and washed in DEPC H2O. The pellet was resuspended in 750 µL TES Buffer (50 mM Tris-HCl pH 7.5, 10 mM EDTA, 100 mM NaCl, 0.5% SDS made in DEPC H2O) along with an equal volume of 5:1 phenol:chloroform pH 4.7 and incubated at 65°C for 1 hr with vortexing for 10 s every 10 min. The samples were then cooled on ice and centrifuged for 5 min at 13,000 rpm. The aqueous phase was transferred to a 2-mL phase lock tube and an additional phenol:chloroform extraction was performed. After centrifugation, the aqueous phase was transferred to a new tube and re-extracted using an equal volume of chloroform. To precipitate the RNA, the aqueous phase was transferred to a 2-mL microcentrifuge tube and three volumes of ice cold ethanol and 1/10th volume 3M NaOAc pH 5.2 were added and the samples were kept at −20°C overnight. The next day, samples were centrifuged at 14,000 rpm and 4°C for 15 min to pellet the RNA. The pellet was washed with ice cold 70% ethanol and air dried for 30 min. A Turbo DNAse (Ambion) reaction was set up with 100 µg of RNA in a 150 uL reaction containing 5 uL of Turbo DNAse. The reaction was incubated at 37°C for 30 min and another 5 µL of Turbo DNAse was added and incubated for an additional 30 min prior to the removal of the DNAse using 50 uL of inactivation beads. An RNeasy Mini kit (Qiagen) was used to further clean up and concentrate the RNA, which was eluted in a final volume of 30 µL of DEPC H2O. Five micrograms of total RNA was diluted to 10 µL, and 2 µL of a 1:20 dilution of ERCC RNA Spike-in mix (Invitrogen) was added to each sample.
 
 RNA-seq was performed by the St. Jude Hartwell Center. Ribosomal RNA was removed from the samples using Ribo-Zero Gold rRNA Removal Kit (Yeast) following manufacturer instructions (Illumina). RNA was quantified using a Quant-iT assay (Life Technology). The quality was checked by 2100 Bioanalyzer RNA 6000 Nano assay (Agilent) or LabChip RNA Pico Sensitivity assay (Perkin Elmer) before library generation. Libraries were prepared from 2 µg of RNA. Libraries were prepared using the TruSeq Strand Total RNA Library Prep Kit, beginning at Elution 2 – Fragment – Prime step immediately preceding cDNA synthesis according to the manufacturer's instructions (Illumina) with the following modifications the 94°C Elution 2 – Fragment – Prime incubation was reduced to 5 min and the PCR was reduced to 11 cycles. Libraries were quantified using the Quant-iT PicoGreen dsDNA assay (Life Technologies) or Kapa Library Quantification kit (Kapa Biosystems). One hundred cycle paired end sequencing was performed on an Illumina HiSeq 4000 (single copy strains) or on an Illumina Novaseq 6000 (triple copy strains). Three biological replicates were used for each strain analyzed. The total RNA was sequenced using stranded protocol with 2 × 100 bp setting. The paired end reads were mapped to S. pombe (v2.29) genome using STAR (v2.5.3a) (Dobin et al., 2013). Reads counts for each gene were counted using the subread R package (Liao et al., 2019). Raw counts were TMM normalized, and differentially expressed genes were analyzed using linear model of the mean-variance trend using the limma and voom packages in R. LogFC values were produced using the limma/voom packages (Law et al., 2014; Ritchie et al., 2015). External RNA spike-ins were analyzed to confirm that there were no changes in global RNA expression between the strain sets under analysis. Processed data are included in Supplemental Table S4. RNA-seq data has been submitted to GEO. Accession no. GSE # GSE162572.
 
-## Real-time q-PCR
+#### Real-time q-PCR
 
 Real-time q-PCR was performed on random primed cDNA generated from two independent RNA preps for each strain as previously described (Debeauchamp et al., 2008; Partridge et al., 2007) using primers that had been tested for linear amplification parameters, and working within the Ct range of linear amplification, and using an Eppendorf Mastercycler RealPlex2 machine. Transcript levels were normalized to adh1+ or act1+ transcripts.
 
-## Observation of knobs
+#### Observation of knobs
 
 Knobs were observed as described previously (Matsuda et al., 2015). The S. pombe cells were cultured in liquid minimum medium with supplements (EMM2 5S) at 26°C with shaking to the early logarithmic phase. Cells were pelleted by gentle centrifugation, and chemically fixed by re-suspending in a buffer containing 4% formaldehyde (Polysciences, Inc, Warrington, PA), 80 mM HEPES-K, 35 mM HEPES-Na, 2 mM EDTA, 0.5 mM EGTA, 0.5 mM spermidine, 0.2 mM spermine, and 15 mM 2-mercaptoethanol, pH 7.0. After fixation for 10 min at room temperature, cells were washed with PEMS (100 mM PIPES, 1 mM EGTA, 1 mM MgSO4, 1.2 M sorbitol pH 6.9) three times, then digested with 0.6 mg/mL zymolyase 100T (Seikagaku Biobusiness, Tokyo, Japan) in PEMS at 36°C for 5 min. Next, cells were treated with 0.1% Triton X-100 in PEMS for 5 min and washed three times thereafter with PEMS. Cells were incubated with 0.2 µg/mL DAPI in PEMS for 10 min, and then cells were resuspended with nPG-Glycerol (100% glycerol for absorption metric-analysis [Wako, Osaka, Japan] with 4% n-propyl gallate, pH 7.0) diluted with 1:1 with PEM (PEMS without sorbitol) and mounted on a clean 18 × 18 mm coverslip (No. 1S, Matsunami, Osaka, Japan). The slides were observed with 3D-SIM using a DeltaVision|OMX microscope version two or SR (Global Life Sciences Solutions Operations) equipped with a 100x UPlanSApo NA1.35 silicone immersion objective or 60X UPlanApo NA1.42 oil immersion objective lens (Olympus, Tokyo, Japan). Reconstruction of 3D-SIM was performed by softWoRx (Global Life Sciences Solutions Operations) with Wiener filter constants of 0.003 using a homemade optical transfer function. Conspicuously condensed, DAPI-stained bodies were counted as knobs by visually inspecting each optical section of 3D-SIM images. Experiments were performed with three biological replicates for each strain, and a cumulative total of 189–293 nuclei were examined for each strain. Error bars represent the SEM.
 
-## Serial dilution analyses
+#### Serial dilution analyses
 
 Fivefold serial dilution assays were performed using exponentially growing cells and were spotted on agar plates using a plate replicator with 2 × 104 cells in spot 1. Plates were incubated at indicated temperatures. For chronic exposure assay, a fivefold serial dilution was spotted onto PMG complete agar plates ± HU, on YES agar plates with DMSO or DMSO and CPT, and on YES agar plates ± MMS. Plates were photographed after 4–5 days incubation at 30°C (CPT and MMS), or 6–7 days at 25°C (HU). All experiments were repeated at least twice.
 
-## γ-IR treatment
+#### γ-IR treatment
 
 Cells at a density of 5 × 106 cells/mL were irradiated using a Cobalt source, and 100 µL samples were taken following increments of 200 Gy exposure (Pai et al., 2014). Cells were plated on six YES plates for each assay condition, and colonies scored following incubation at 32°C for 4 days. The experiment was performed twice (four biological replicates) to obtain average viability of treated versus untreated cells, and error bars represent the SEM. Strain identities were masked.
 
-## HR assay
+#### HR assay
 
 We transformed leu1-32 mutant cells (that bear a single nucleotide mutation in leu1 that renders cells auxotrophic for leucine) with a fragment of wild type leu1+ (amplified using JPO 183/JPO 3480) and scored leu1+ transformants that can only arise by HR of the wild-type leu1 fragment into the mutant allele (Yadav et al., 2017). The rates of HR were normalized by calculating transformation efficiencies of the different strains using leu1+ plasmid DNA (JP1050). The experiment was performed 3–4 times, with error bars representing SEM. Strain identities were masked.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed in GraphPad Prism version 7.03, using ordinary one-way ANOVA or repeated measures ANOVA and Dunnett’s multiple comparisons test.

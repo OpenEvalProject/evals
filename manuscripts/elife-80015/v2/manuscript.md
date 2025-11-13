@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04g3dn724 Eaton-Peabody Laboratories, Massachusetts Eye and Ear Infirmary Boston United States
-2. https://ror.org/03vek6s52 Division of Medical Sciences, Harvard Medical School Boston United States
-3. https://ror.org/03vek6s52 Department of Otolaryngology - Head and Neck Surgery, Harvard Medical School Boston United States
+1. Eaton-Peabody Laboratories, Massachusetts Eye and Ear Infirmary Boston United States ([ROR:04g3dn724](https://ror.org/04g3dn724))
+2. Division of Medical Sciences, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Department of Otolaryngology - Head and Neck Surgery, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Here, we developed an approach to make more direct operant behavioral measuremen
 
 ## Results
 
-## Perceptual hypersensitivity following noise-induced high-frequency SNHL
+### Perceptual hypersensitivity following noise-induced high-frequency SNHL
 
 In humans, a steeply sloping high-frequency hearing loss is a telltale signature of SNHL (Allen and Eddins, 2010; Hannula et al., 2011). We reviewed 132,504 case records from visitors to the audiology clinic at our institution and determined that 23% of pure tone audiograms fit the description of high-frequency SNHL (Figure 1A), underscoring that it is a common clinical condition commonly related to tinnitus, abnormal loudness growth, and poor speech intelligibility in noise (Horwitz et al., 2002; Lewis et al., 2020; Moore et al., 1999; Oxenham and Bacon, 2003; Strelcyk and Dau, 2009). To model this hearing loss profile in genetically tractable laboratory mice, we induced SNHL through exposure to narrow-band high-frequency noise (16–32 kHz) at 103 dB SPL for 2 hr. Repeated cochlear function testing before and after noise exposure revealed a sustained elevation of high-frequency thresholds for wave 1 of the auditory brainstem response (ABR) and cochlear distortion product otoacoustic emissions (DPOAEs) with mild or no threshold elevation below 16 kHz (Figure 1B, C).
 
@@ -51,7 +51,7 @@ Post-mortem cochlear histopathology performed 21 days after noise exposure sugge
 
 To make a more direct comparison to clinical determinations of hearing loss in humans via pure tone behavioral thresholds, we also performed behavioral tone detection in head-fixed mice (Figure 1H). Mice were trained to report their detection of mid- or high-frequency tones (8 and 32 kHz, respectively) by licking a water reward spout shortly after tone delivery. Behavioral thresholds were determined with a modified 2-up, 1-down method-of-limits that presented a combination of liminal tone intensities along with no-tone catch trials (Figure 1I). Behavioral detection thresholds were measured every 1–3 days before and after noise-induced SNHL (trauma, N = 7) and in control mice exposed to an innocuous noise level (sham, N = 6), revealing a stable 45 dB increase in high-frequency tone threshold after traumatic noise exposure without commensurate changes in false alarm rates or mid-frequency detection thresholds (Figure 1J, K, statistical analyses are provided in figure legends).
 
-## Behavioral hypersensitivity to cochlear lesion edge frequencies or direct auditory thalamocortical activation after SNHL
+### Behavioral hypersensitivity to cochlear lesion edge frequencies or direct auditory thalamocortical activation after SNHL
 
 High-frequency OHC damage was the likely source of elevated ABR (Figure 1B), DPOAE (Figure 1C), and behavioral detection (Figure 1K) thresholds. The additional loss of auditory nerve afferent synapses onto IHCs (Figure 1D) would not be expected to affect hearing thresholds, but could have other influences on sound perception (Chambers et al., 2016a; Henry and Abrams, 2021; Lobarinas et al., 2013; Resnik and Polley, 2021). For example, we recently reported that human subjects with normal hearing thresholds but asymmetric degeneration of the left and right auditory nerve perceive tones of fixed physical intensity as louder in the ear with poor auditory nerve integrity, particularly for low intensities near sensation level (Jahn et al., 2022). To determine whether mice may be showing evidence of auditory hypersensitivity, we performed a closer inspection of the mouse psychometric detection functions for the spared 8 kHz tone. This analysis confirmed that, following acoustic trauma, the behavioral sensitivity index (d-prime, or d′) grew more steeply for sound intensities near threshold compared both to pre-exposure baseline detection functions and sham-exposed controls (Figure 2A, B). These effects were consistent at the level of individual mice, where we noted an increase in psychometric growth slopes by at least 30% from baseline in 7/7 acoustic trauma mice but changes of this magnitude were not observed in any sham-exposed control mice (Figure 2B, right).
 
@@ -63,7 +63,7 @@ Persons with SNHL commonly report loudness recruitment, a disproportionately ste
 
 To investigate the possibility that increased neural gain in the central pathway could contribute to auditory hypersensitivity, we built upon pioneering work that directly stimulated deafferented central auditory nuclei to demonstrate a direct association between neural and behavioral hypersensitivity (Gerken, 1979). Here, we interleaved acoustic and optogenetic stimulation (Guo et al., 2015) to test the hypothesis that mice with high-frequency SNHL would be hypersensitive to stimulation that bypassed the peripheral damage and directly stimulated feedforward excitatory projection neurons in the central auditory pathway. We used an intersectional virus strategy to express channelrhodopsin in auditory thalamocortical neurons, an exclusively glutamatergic feedforward projection system (Hackett et al., 2016; Figure 2C). Using a Go/NoGo operant task, detection probability was tested in alternating blocks for high-frequency bandpass noise (centered at 32 kHz) or optogenetic thalamocortical stimulation. Following acoustic trauma, high-frequency detection thresholds were elevated by approximately 50 dB (N = 6), whereas sham exposure had no comparable effect (N = 3; Figure 2D). Importantly, testing in interleaved trials revealed behavioral hypersensitivity to direct stimulation of auditory thalamocortical neurons after acoustic trauma (Figure 2E), as evidenced by significantly increased d′ at a fixed set of optogenetic stimulation intensities compared to sham controls (Figure 2F). Although acoustic trauma can introduce changes in sound processing throughout all stages of the central pathway, the observation that behavioral hypersensitivity was observed to stimulation of thalamocortical projection neurons suggests that compensatory plasticity within the ACtx would be a reasonable place to investigate the neural underpinnings of auditory hypersensitivity following acoustic trauma.
 
-## Chronic imaging in A1 reveals tonotopic remapping and dynamic spatiotemporal adjustments in neural response gain after acoustic trauma
+### Chronic imaging in A1 reveals tonotopic remapping and dynamic spatiotemporal adjustments in neural response gain after acoustic trauma
 
 Following topographically restricted cochlear lesions, neurons in deafferented ACtx map regions reorganize to preferentially encode spared cochlear frequencies bordering the damaged region without accompanying elevations in response threshold (Engineer et al., 2011; Noreña et al., 2003; Robertson and Irvine, 1989; Seki and Eggermont, 2003; Yang et al., 2011). Because the degree and form of cortical plasticity following cochlear deafferentation can differ between excitatory neurons and various types of inhibitory neurons (Masri et al., 2021; Resnik and Polley, 2021; Wang et al., 2022), we restricted ACtx activity measurements to excitatory neurons via chronic calcium imaging in Thy1-GCaMP6s × CBA mice, where expression of a high-sensitivity genetically encoded calcium indicator is limited to cortical PyrNs (Chen et al., 2013; Romero et al., 2019). In initial experiments, we performed widefield epifluorescence calcium imaging in awake mice, which offers simultaneous visualization of all fields within the ACtx at mesoscale resolution (Figure 3A). These experiments confirmed that tonotopic maps were relatively stable over ~4 weeks in mice with normal hearing experience (Issa et al., 2014; Romero et al., 2019) but underwent large-scale reorganization throughout the week following acoustic trauma before stabilizing in a state that over-represented 8–16 kHz tones that bordered the high-frequency cochlear lesion (Figure 3B).
 
@@ -79,15 +79,31 @@ A marked increase in PyrNs tuned to lesion edge frequencies could contribute to 
 
 **Figure 4.:** (A) Response amplitudes to 8 kHz tones presented at varying levels (columns) and days (rows) relative to noise exposure for 185 PyrNs in an example mouse. (B) Intensity-response functions for 66 randomly selected PyrNs recorded on days −4, 1, and 18 relative to the day of noise exposure. (C) Mean tone-evoked responses for all PyrNs relative to the support vector machine (SVM) deafferentation boundary at 50–80 dB SPL plotted separately for each of the 3 days.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig5-v2.jpg)
+
+**Figure 5.:** (A) Neural gain is measured as the average rate of response growth in the sound level-response function. A detailed description of how neural gain is measured for different types of level-response functions is provided in Figure 5—figure supplement 1. (B) Mean change in response gain to an 8 kHz tone relative to the baseline support vector machine (SVM) demarcation of the low-frequency (LF) intact and high-frequency (HF) deafferented regions of the A1 map from all sham-exposed (top) and all noise-exposed (bottom) mice. (C) Fold change in 8 kHz response gain relative to the pre-exposure period in sham (n = 23,007 PyrNs from four mice) and trauma (n = 23,319 PyrNs from four mice). After acoustic trauma, the response gain for low- and mid-frequency tones is temporarily increased in the intact region. A sustained increase in response gain is observed in the deafferented region, particularly for tone frequencies bordering the cochlear lesion. Four-way analysis of variance (ANOVA) with Group, Region, Time, and Frequency as factors main effects, respectively: F = 111.03, p = 6 × 10–26; F = 0.03, p = 0.87; F = 23.21, p = 4 × 10–19; F = 9.87, p = 2 × 10–6; Group × Region × Time × Frequency interaction term: F = 2.23; p = 0.008. Asterisks denote significant pairwise post hoc differences between groups (p < 0.05). (D) Neural ensemble responses to single trials of sound or silence were decomposed into principal components (PC) and classified with an SVM decoder. The first two PCs are presented from an example mouse 1 day before or after acoustic trauma for an 8 kHz tone. Single trial classification accuracy is provided for each sound intensity. (E) Mean decoding accuracy for 8 and 32 kHz tones across all noise-exposed mice as a function of sound intensity at varying times following acoustic trauma. (F) Mean change in decoding accuracy across all intensities for 8 and 32 kHz tones for L2/3 PyrNs in the intact and deafferented regions of the A1 map. For 8 kHz tones, PyrN ensemble decoding shows sustained improvement in the deafferented region but a temporary improvement in the intact region. Ensemble decoding of 32 kHz tones is reduced for all time points and measurement regions. Dots represent single imaging sessions. Bars denote mean ± standard error of the mean (SEM). Asterisks represent significant differences with unpaired t-tests (p < 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tone-responsive neurons were assigned to one of three categories depending on the location of the intensity-response function peak (i.e., the best level). The gain was calculated as the absolute change in response over the intensity range(s) indicated by the arrows. (B) The prevalence of the different function shapes for both noise- and sham-exposed mice at baseline and post-exposure D1–3. (C) Rather than collapsing gain changes across response function types (as per Figure 5C), analyzing each response type individually reveals that excess central gain is not observed in Peak Early types and is expressed most strongly in the Peak Mid intensity-response growth functions.
+
 We noted that neural gain was broadly enhanced across the tonotopic map for the first several days following trauma but then receded to the high-frequency deafferented region in measurements made 1 week or more following noise exposure (Figure 5B). Next, we expanded the neural gain analysis in sham and trauma mice to four stimulus frequencies: a high-frequency tone aligned to the damaged cochlear region (32 kHz), a spared low-frequency tone far from the cochlear lesion (5.7 kHz), and two spared mid-frequency tones near the edge of the cochlear lesion (8 and 11.3 kHz). Neural gain at each of the four test frequencies was measured separately for intact and deafferented cortical zones and expressed in units of fold change relative to baseline gain measured from the corresponding population response prior to noise exposure. This analysis identified several clear results: (1) a strong initial uptick in neural gain measured in both topographic regions following trauma; (2) persistent (lasting greater than 1 week) increases in neural gain were observed only for spared mid-frequency tones in deafferented cortical regions; (3) no significant changes in neural gain were observed in sham-exposed mice (Figure 5C). Thus, excess central gain reflected the interaction of four factors: (1) whether the initial sound exposure induced SNHL, (2) where within the cortical frequency map the cell is located, (3) when relative to exposure the measurement is made, and (4) the proximity of the stimulus test frequency to the cochlear lesion.
 
-## Cortical hyperresponsivity and increased gain mirrors behavioral hypersensitivity to spared mid-frequency inputs
+### Cortical hyperresponsivity and increased gain mirrors behavioral hypersensitivity to spared mid-frequency inputs
 
 In the Go/NoGo tone detection behavior, mice exhibited steepened 8 kHz detection functions after trauma (Figure 2B). Excess gain in A1 L2/3 PyrNs mirrored this result in that steepened neural growth functions were observed for 8 kHz tones over the same timescale. To more directly relate ACtx hyperactivity to perceptual hypersensitivity, we used a decoder to categorize the presence or absence of sound based on single-trial responses from hundreds of simultaneously recorded neurons located either in the intact or deafferented zone of the A1 map. This was accomplished by training an SVM classifier on PCA-decomposed population activity during short periods of tone presentation or silence (Figure 5D). Classification of single trial A1 ensemble responses supported the hypothesis that cortical discrimination of sound versus silence would be enhanced for low- and mid-intensity 8 kHz tones but reduced for 32 kHz tones after trauma (Figure 5E). Enhanced neural detection of 8 kHz tones was largely driven by PyrNs in deafferented map regions, whereas the loss of cortical sensitivity to high-frequency tones was observed in both topographic zones (Figure 5F).
 
-## Tracking changes in activity and local synchrony in individual PyrNs over several weeks
+### Tracking changes in activity and local synchrony in individual PyrNs over several weeks
 
 A principal advantage of chronic two-photon calcium imaging lies in the ability to perform longitudinal assessments of activity changes in individual cells over relatively long time periods, essentially enabling individual cells to serve as their own control when evaluating changes after noise exposure. To track individual PyrNs over a several week period, imaging fields were first registered to a pre-exposure imaging session, and cell tracking was performed using probabilistic modeling (Sheintuch et al., 2017; Figure 6A, B, see Materials and methods). Some PyrNs could be tracked throughout all 15 imaging sessions and others just for a single session, where the overall number of neurons depended on how liberal or conservative the threshold was set for chronic tracking confidence (Figure 6—figure supplement 1B). We set the criterion for identifying chronically tracked cells by creating a control scenario in which a single imaging field from eight different mice were concatenated, allowing us to quantify the occurrence of falsely identified tracked cells across sessions. We observed a clear separation in the occurrence of veridically and falsely identified cells across sessions, where falsely tracked PyrNs over eight or more sessions with a confidence threshold of 0.8 were never observed, prompting us to use this criterion for the remainder of our analyses.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig6-v2.jpg)
+
+**Figure 6.:** (A) Example fields-of-view from a single mouse showing the same imaging field over a several week period. Insets show data acquired at ×4 digital zoom. Scale bar is 200 μm, inset scale bar is 20 μm. (B) Single L2/3 PyrN ROI masks. Green masks indicate cells found on the current day and all previous days using a cell score threshold of 0.8 (see Figure 6—figure supplement 1). (C) Normalized 8 kHz intensity-response functions for the four PyrNs highlighted in B. Neurons in the intact region show temporary increases in their responses while neurons in the deafferented region show permanent hyperresponsiveness. (D) Mean fold change in response to 8 kHz tones of varying intensities for individual neurons relative to their own response function measured prior to noise exposure (n = 303/552, trauma/sham). Gain is strongly elevated in both regions hours after trauma. Sustained gain increases are observed in the deafferented zone for at least 1 week following trauma but not in the intact zone. Four-way analysis of variance (ANOVA) with Group and Region as factors, and Time and Intensity as repeated measures (main effects, respectively: F = 6.87, p = 0.01; F = 2.9, p = 0.09; F = 8.69, p = 4 × 10–5; F = 116.61, p = 8 × 10–13; Group × Region × Time × Intensity interaction term: F = 6.65; p = 0.0004).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representation of all neurons found across noise- and sham-exposed mice. Cells are initially sorted by the number of sessions they were tracked (descending order) and then by the first session they were identified (ascending order). (B) To set criteria for identifying chronically tracked cells, we performed the same tracking algorithm on shuffled fields-of-view taken from the eight different mice. We have plotted the number cells tracked across eight sessions in real and shuffled datasets for different confidence thresholds. Falsely tracked PyrNs were not observed at a confidence threshold of 0.8 at eight sessions. (C) Cells reliably tracked for four baseline sessions that disappeared for all subsequent imaging sessions after noise exposure were labeled ‘lost’, while cells not present at baseline that were subsequently identified and tracked after noise exposure were labeled ‘appeared’. (D) After trauma, the location of the ‘lost’ and ‘appeared’ cells in the cortical map relative to the total number of cells found at each location and expressed as a percentage. Lost cells were largely found in the deafferented (high frequency) region, while appeared cells were concentrated around the deafferentation boundary. (E) The approach for identifying stable PyrNs that permanently disappeared on the day of noise exposure (C) was extended to all post-exposure days. Cells that were identified for every session up to a given point and then not identified for all subsequent sessions were identified as ‘lost’. Approximately 75% of lost PryNs disappeared within 48 hr after acoustic trauma. By contrast, the smaller set of lost PyrNs in sham-exposed mice mostly disappeared toward the end of the chronic imaging period.
 
 Interestingly, we noted that new active PyrNs appeared immediately following noise exposure, while PyrNs tracked throughout the baseline imaging sessions disappeared (Figure 6—figure supplement 1C). Because the degree of turnover was far less after sham exposure, because the appearance or disappearance of PyrNs after acoustic trauma was concentrated near the deafferentation boundary (Figure 6—figure supplement 1D), and because approximately 75% of PyrN disappearance occurred within the 48 hr after acoustic trauma (Figure 6—figure supplement 1E), we concluded that increased PyrN turnover in the imaging field must be related to cortical changes arising indirectly from the cochlear SNHL. Possibilities include large and heterogenous state shifts in activity (from virtually quiescent to active or vice versa) as well as changes in the physical topology of the cortex due to degradation of extracellular matrix proteins and increased neurite motility after sudden hearing loss (Nguyen et al., 2017; Tschida and Mooney, 2012).
 
@@ -101,9 +117,17 @@ Prior studies have noted increased spontaneous activity in acute single unit or 
 
 Tinnitus and auditory hypersensitivity are thought to arise from a combination of spontaneous hyperactivity as well as increased synchrony between cells (Auerbach et al., 2019, Auerbach et al., 2014; Resnik and Polley, 2021; Seki and Eggermont, 2003; Shore and Wu, 2019). To determine how increased synchrony developed over topographic space and post-trauma time, we cross-correlated periods of spontaneous activity between pairs of A1 PyrNs and removed the influence of gross changes in activity rates through shuffle correction (Figure 7D, see Materials and methods). Using the area under the shuffle-corrected cross-correlogram as our index of pairwise synchrony (Figure 7D), we noted that synchronized activity normally decayed to asymptote once PyrNs were separated by more than 0.25 mm (Figure 7E, top). In the first 72 hr following acoustic trauma, pairwise synchrony was significantly enhanced for PyrNs separated by as much as 0.7 mm (Figure 7E, bottom). Three days after trauma and beyond, local synchrony remained strongly elevated for PyrNs relative both to baseline and to sham-exposed controls. Increased synchrony following trauma was primarily observed in PyrN’s located close to – or straddling – the deafferentation boundary, where the peak of elevated synchrony was positioned within a tonotopic region corresponding to lesion edge sound frequencies (Figure 7F).
 
-## Predicting the degree of excess central gain after trauma in individual PyrNs based on their pre-exposure response features
+### Predicting the degree of excess central gain after trauma in individual PyrNs based on their pre-exposure response features
 
 Taken together, these observations also suggest that plasticity following acoustic trauma is organized into two phases: a dynamic phase during the first 48–72 hr after noise exposure involving topographically widespread hyper-correlation, hyper-responsivity to mid-frequency sounds in the intact map regions, and large-scale turnover in PyrN stability around the deafferentation map boundary, followed by a stable phase beginning 3 days after exposure where gain is increased for spared tone frequencies in deafferented map regions. However, even when tracking the same neuron over time during the stable phase of reorganization, we still noted considerable heterogeneity in the expression of central gain changes between individual PyrNs. For example, for two PyrNs located within the deafferented map region, one could show stable 8 kHz growth functions after trauma (Figure 8A) and the other excess gain (Figure 8B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig8-v2.jpg)
+
+**Figure 8.:** (A) Two exemplar tracked neurons illustrating stable (left) and excess (right) response growth to an 8 kHz tone following acoustic trauma. (B) Both neurons are located in the deafferented map region but had different best frequencies (BFs) and frequency tuning properties measured during the baseline imaging session. (C) Spontaneous activity for the same two PyrNs also differed at baseline. (D) For tracked neurons, gain is measured as the fold change in the area under the intensity-response growth function relative to the pre-exposure baseline (see Figure 8—figure supplement 1A). In eight representative neurons, a higher spontaneous activity rate at baseline was associated with excess central gain after trauma. Arrows denote PyrNs 1 and 2 shown in A–C. (E) A linear model used various pre-exposure properties of chronically tracked neurons to predict their change in gain (see Materials and methods). Models were fit separately for PyrNs recorded from trauma (n = 510 cells) and sham (n = 749 cells) mice. The response variable is defined as the area under the 8 kHz response curve after noise/sham exposure relative to this same area measurement in baseline. (F) For each model, individual predictor variables were shuffled and the models were refit. The resulting decrease in the adjusted R-squared is shown for variables in both models, and bars are color coded by the sign of the relationship of each predictor variable with the response variable. Errors are bootstrapped. For the full model see Figure 8—figure supplement 1B. Predictor variables in order: area under the baseline 8 kHz intensity-response growth function, monotonicity index for the 8 kHz intensity-response function defined as the response at the maximum intensity divided by the response at the best intensity, mean spontaneous activity, BF, an indicator variable for whether the cell is in the deafferented or intact region, and the strength of correlated activity between the PyrN and its neighbors. (G) A graphical summary of the linear model results schematize the baseline factors most strongly associated with stable (left) or excess (right) gain after trauma.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/80015/elife-80015-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) For tracked neurons, gain for an 8 kHz tone was measured as the area under the intensity-response function relative to the baseline area. Neurons in the intact region show a temporary increase in gain after trauma, while neurons in the deafferented region show permanent changes in gain. The fold change in area is the response variable for the linear model. (B) For each model, individual predictor variables were shuffled and the models were refit. The resulting decrease in the adjusted R-squared is shown for variables in both models, and bars are color coded by the sign of the relationship of each predictor variable with the response variable. Errors are bootstrapped.
 
 To account for unexplained variability in central gain changes, we asked whether response features measured in the pre-exposure baseline period could predict whether neurons would express homeostatic or non-homeostatic regulation of sound-evoked activity. Returning to the same two example neurons, we noted that the PyrN that maintained stable gain had a relatively low spontaneous activity rate and sharp frequency tuning prior to acoustic trauma, whereas the PyrN that would express excess gain had higher spontaneous activity and a relatively broad pure tone receptive field (Figure 8B, C). Expanding this analysis to additional example neurons over post-exposure time further suggests that PyrNs that would go on to express non-homeostatic auditory growth functions tended to feature higher spontaneous activity levels at baseline (Figure 8D).
 
@@ -115,7 +139,7 @@ We found that regressing the post-exposure change in neural gain on baseline Pyr
 
 Here, we introduced a noise exposure protocol that damages OHCs and neural afferents in the high-frequency base of the cochlea, providing a mouse model for the common steeply sloping high-frequency hearing loss profile in humans that is often associated with tinnitus, loudness hypersensitivity, and poor multitalker speech intelligibility (Figure 1). We demonstrated that behavioral hypersensitivity to spared, mid-frequency tones was also observed for direct stimulation of thalamocortical projection neurons, identifying the ACtx as a potential locus of plasticity underlying auditory hypersensitivity (Figure 2). We tracked ensembles of excitatory PyrNs over several weeks and confirmed large-scale reorganization of ACtx tonotopic maps (Figure 3) and sound intensity coding (Figure 4) that recapitulated the auditory hypersensitivity documented behaviorally (Figure 5). Neural hyperresponsivity to spared mid-frequency sounds was accompanied by hyperactive and hyper-correlated spontaneous activity (Figure 7), where the degree of excess neural gain following acoustic trauma in individual neurons could be predicted from many of these response features measured during the pre-exposure baseline period (Figure 8). Collectively, these findings underscore the close association between excess cortical gain and disordered sound perception after cochlear sensorineural damage and identify activity signatures that predispose neurons to non-homeostatic hyperactivity following noise-induced hearing loss.
 
-## Underlying mechanisms
+### Underlying mechanisms
 
 Auditory hypersensitivity is a common auditory perceptual complaint associated with SNHL. Excess central gain – an abnormally steep growth of neural response with sound intensity – is the hypothesized neural substrate of auditory hypersensitivity (Auerbach et al., 2019, Auerbach et al., 2014; Zeng, 2020; Zeng, 2013). Excess central gain is prominently expressed in the ACtx of animals with sensorineural cochlear damage (Asokan et al., 2018; Chambers et al., 2016a; Noreña et al., 2003; Parameshwarappa et al., 2022; Popelár et al., 1987; Qiu et al., 2000; Resnik and Polley, 2017, Resnik and Polley, 2021; Seki and Eggermont, 2003; Syka et al., 1994) by contrast to the auditory nerve, where sound-evoked neural responses are strongly reduced (Heinz et al., 2005; Heinz and Young, 2004; Wake et al., 1993). Reorganization is also observed in subcortical stations of sound processing in animals with sensorineural cochlear damage (Chambers et al., 2016b; Kamke et al., 2003; Niu et al., 2013; Schrode et al., 2018; Shaheen and Liberman, 2018), but only particular cell types (Cai et al., 2009) and – in studies that have made direct inter-regional comparisons – is less robust overall than neural gain changes at the level of ACtx (Chambers et al., 2016a; Qiu et al., 2000).
 
@@ -125,13 +149,13 @@ One challenge to this purely bottom-up model for compensatory plasticity underly
 
 Several recent findings support the idea that variations in the strength of intracortical inhibition can function as a watershed for subsequent functional outcomes. In an earlier study, we applied ouabain to the cochlear round window to produce bilateral lesions of approximately 95% of cochlear afferent neurons. Near-complete elimination of cochlear afferent input was associated with functional deafness at the level of the ACtx in approximately half the animals but a remarkable recovery of sound responsiveness in the other half. Single unit recordings from the cohort of mice that recovered sound processing weeks after cochlear neural loss all featured a rapid decline in PV-mediated feedforward inhibition onto PyrNs during the first hours and days following the peripheral injury, while the mice that showed no functional recovery expressed a far slower decay in PV-mediated inhibition (Resnik and Polley, 2017). Another piece of evidence comes from ACtx single unit recordings in marmosets outfitted with unilateral cochlear implants. Single units with narrowly tuned non-monotonic acoustic frequency-response areas – presumably reflecting stronger local inhibition – were suppressed by spatially diffuse electrical stimulation of the auditory nerve. Conversely, units with broad, V-shaped acoustic selectivity encoded cochlear implant stimulation with high fidelity (Johnson et al., 2016). Collectively, these findings underscore that the effects of peripheral afferent perturbations on central circuits are not exclusively determined by bottom-up drive but instead are also brokered by variations in the balance of excitation and inhibition within the local circuit or by gene expression differences between individual cells. At a global level, these mitigating influences are shaped by developmental stage (Dorrn et al., 2010; Harris et al., 2005; Sun et al., 2010) and circadian programs (Basinou et al., 2017), but – at the level of individual neurons – may reflect latent differences in genetic subtypes of L2/3 PyrNs or purely stochastic variations in inhibitory tone between different microcircuit milieus.
 
-## Behavioral hypersensitivity: interpretations and technical limitations
+### Behavioral hypersensitivity: interpretations and technical limitations
 
 We found evidence of behavioral hypersensitivity to sound following acoustic trauma as measured by a steeper relationship between increasing tone intensity and detection ability in a Go/NoGo task (Figure 2). Although previous indicators of behavioral hypersensitivity in animals have relied on more reflexive measures, such as the acoustic startle response (Hickox and Liberman, 2014; Rybalko et al., 2015; Rybalko et al., 2011; Sun et al., 2012), more recent work has utilized operant detection tasks including reaction times as an approximation of sound hypersensitivity (Auerbach et al., 2019). Here, we used an adaptive tracking approach to characterize the perceptual salience of liminal sound intensities spanning an approximate 30 dB range around threshold. To control for changes in global behavioral state due to acoustic trauma, our slope measurements are taken from functions using a sensitivity index (d′), which normalizes lick probability according to the false alarm rate determined from the delivery of catch (silent) trials. Thus, overall changes in stress, arousal, or other global behavioral states following acoustic trauma that impacted overall responsivity in catch and stimulus trials would be controlled for by the d′ measurement. However, as with reaction time, the d′ growth function is not a direct measure of loudness, per se, but instead is probably best likened to the change in stimulus salience for tones of varying intensity. Further, while the perceptual salience (Figure 2) and neural decoding of spared, 8 kHz tones (Figure 5) were both enhanced after high-frequency SNHL, these measurements were not performed in the same animals (and therefore not at the same time). Definitive proof that increased cortical gain is the neural substrate for auditory hypersensitivity after hearing loss would require concurrent monitoring and manipulations of cortical activity, which would be an important goal for future experiments.
 
 While the findings presented here support an association between sensorineural peripheral injury, excess cortical gain, and behavioral hypersensitivity, they should not be interpreted as providing strong evidence for these factors in clinical conditions such as tinnitus or hyperacusis. Our data have nothing to say about tinnitus one way or the other, simply because we never studied a behavior that would indicate phantom sound perception. If anything, one might expect that mice experiencing a chronic phantom sound corresponding in frequency to the region of steeply sloping hearing loss would instead exhibit an increase in false alarms on high-frequency detection blocks after acoustic trauma, but this was not something we observed. Hyperacusis describes a spectrum of aversive auditory qualities including increased perceived loudness of moderate intensity sounds, a decrease in loudness tolerance, discomfort, pain, and even fear of sounds (Pienkowski et al., 2014a). The affective components of hyperacusis are more challenging to index in animals, particularly using head-fixed behaviors, though progress is being made with active avoidance paradigms in freely moving animals (Manohar et al., 2017). Our noise-induced high-frequency SNHL and Go-NoGo operant detection behavior were not designed to model hyperacusis. Hearing loss is not strongly associated with hyperacusis, where many individuals have normal hearing or have a pattern of mild hearing loss that does not correspond to the frequency dependence of their auditory sensitivity (Sheldrake et al., 2015). While the excess central gain and behavioral hypersensitivity we describe here may be related to the sensory component of hyperacusis, this connection is tentative because it was elicited by acoustic trauma and because the detection behavior provides a measure of stimulus salience, but not the perceptual quality of loudness, per se.
 
-## Cortical hyperreactivity: interpretations and technical limitations
+### Cortical hyperreactivity: interpretations and technical limitations
 
 Two-photon calcium imaging offers several key advantages for cortical plasticity studies including the ability to track single neurons over weeks (Figure 6) and genetic access to multiple cell types (Resnik and Polley, 2021). On the other hand, it can provide less insight into the mechanisms underlying destabilized excitatory-inhibitory balance than electrophysiological approaches (Resnik and Polley, 2017; Yang et al., 2011; Yang et al., 2012). Further, calcium indicators provide only an approximation of neural activity and can be limited in their kinetics and reliability to report precise cellular events (Grienberger and Konnerth, 2012), although correct deconvolution and post hoc analysis techniques can help to minimize issues introduced from calcium imaging (Sabatini, 2019).
 
@@ -141,23 +165,264 @@ Although we did not measure Homeostatic Plasticity per se, via direct demonstrat
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J-Tg(Thy1-GCaMP6s)GP4.12Dkim/J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #025776</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>CBA/CaJ</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #000654</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #000664</td>
+      <td>Male/female</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVrg-pgk-Cre</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_24593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-Ef1a-DIO hChR2(E123T/T159C)-EYFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_35509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ms(1gG1) α CtBP2 (mouse monoclonal)</td>
+      <td>BD Transduction Labs</td>
+      <td>BDB612044</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rb α MyosinVIIa (rabbit polyclonal)</td>
+      <td>Proteus Biosciences</td>
+      <td>25–6790</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ms(1gG2a) α GluA2 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB397</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rb α Epsin (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA028674</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gt α ms (IgG2a) AF 488 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A-21131</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gt α ms (IgG1) AF 568 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A-21124</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>dk α rb AF 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A-31573</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gt α rb PacBlue (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>P10994</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine hydrochloride</td>
+      <td>Hospira Inc</td>
+      <td>Cat #71-157-DK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphine hydrochloride</td>
+      <td>Buprenex</td>
+      <td>Cat #NDC 12496-0757-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Piramal</td>
+      <td>Cat #NDC 66794-013-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Silicon adhesive</td>
+      <td>WPI</td>
+      <td>Cat #KWIK-SIL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C&amp;B Metabond Quick Adhesive Cement System</td>
+      <td>Parkwell</td>
+      <td>Cat #S380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Labview</td>
+      <td>National Instruments</td>
+      <td>https://www.ni.com/en-us/shop/labview.html</td>
+      <td>Version 2015</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ThorImage 3.0</td>
+      <td>Thorlabs</td>
+      <td>https://www.thorlabs.com/ newgrouppage9.cfm?objectgroup</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Suite2P</td>
+      <td>Github</td>
+      <td>https://github.com/cortex-lab/Suite2P; The Cortical Processing Laboratory at UCL, 2019</td>
+      <td>Pachitariu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellReg</td>
+      <td>Github</td>
+      <td>https://github.com/zivlab/CellReg; zivlab, 2022</td>
+      <td>Sheintuch et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com/ products/matlab.html</td>
+      <td>Version 2017b</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Solenoid driver</td>
+      <td>Eaton-Peabody Labs</td>
+      <td>https://github.com/EPL-Engineering/epl_valve; EPL-Engineering, 2019b</td>
+      <td>See Methods, ‘Go/NoGo tone detection task’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lickometer</td>
+      <td>Eaton-Peabody Labs</td>
+      <td>https://github.com/EPL-Engineering/epl_lickometer; EPL-Engineering, 2019a</td>
+      <td>See Methods, ‘Go/NoGo tone detection task’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PXI Controller</td>
+      <td>National Instruments</td>
+      <td>PXIe-8840</td>
+      <td>See Methods, ‘Go/NoGo tone detection task’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Free-field speaker</td>
+      <td>Parts Express</td>
+      <td>275-010</td>
+      <td>See Methods, ‘Go/NoGo tone detection task’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ti-Sapphire Laser</td>
+      <td>Spectra Physics</td>
+      <td>Mai Tai HP DeepSee</td>
+      <td>See Methods, ‘Widefield and two-photon calcium imaging’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>×16/0.8 NA Objective</td>
+      <td>Nikon</td>
+      <td>CFI75 LWD 16X W</td>
+      <td>See Methods, ‘Widefield and two-photon calcium imaging’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Two-photon microscope</td>
+      <td>Thorlabs</td>
+      <td>Bergamo II</td>
+      <td>See Methods, ‘Widefield and two-photon calcium imaging’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Titanium headplate</td>
+      <td>iMaterialise</td>
+      <td>Custom</td>
+      <td>See Methods, ‘Survival surgeries for awake, head-fixed experiments’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Diode laser (488 nm)</td>
+      <td>Omnicron</td>
+      <td>LuxX 488-100</td>
+      <td>See Methods ‘Go/NoGo optogenetic detection task’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All procedures were approved by the Massachusetts Eye and Ear Animal Care and Use Committee and followed the guidelines established by the National Institutes of Health for the care and use of laboratory animals. Imaging and tone Go/NoGo behavior were performed on Thy1-GCaMP6s × CBA mice. Combined acoustic and optogenetic Go/NoGo behavioral studies were performed in C57BL/6J mice. Mice of both sexes were used for this study. Noise exposure occurred at 9 weeks postnatal and was timed to occur in the morning, when the temporary component of the threshold shift is less extreme and variable (Meltser et al., 2014). Mice were maintained on a 12 hr light/12 hr dark cycle. Mice were provided with ad libitum access to food and water unless they were on-study for behavioral testing, in which case they had restricted access to water in the home cage.
 
 Data were collected from 44 mice. A total of 22 mice contributed data to behavioral tasks: 13 (N = 7/6, trauma/sham) to the tone Go/NoGo behavior and 9 (N = 6/3, trauma/sham) to the combined acoustic and optogenetic Go/NoGo behavior. A total of 10 mice contributed to the chronic imaging experiments: two mice were used for widefield imaging (N = 1/1, trauma/sham) and 8 (N = 4/4, trauma/sham) for the two-photon imaging. Twelve mice were only used for regular ABR testing after acoustic trauma to determine the progression of threshold shift. Cochlear histology was performed on 11 of the mice used for Go/NoGo behavioral testing (N = 7/4, trauma/sham). The timing of all procedures performed on each mouse is provided in Supplementary file 1.
 
-## Method details
+### Method details
 
-## Survival surgeries for awake, head-fixed experiments
+#### Survival surgeries for awake, head-fixed experiments
 
 Mice were anesthetized with isoflourane in oxygen (5% induction, 1.5–2% maintenance). A homeothermic blanket system was used to maintain body temperature at 36.6 (FHC). Lidocaine hydrochloride was administered subcutaneously to numb the scalp. The dorsal surface of the scalp was retracted and the periosteum was removed. The skull surface was prepped with etchant and 70% ethanol before affixing a titanium headplate to the dorsal surface with dental cement. At the conclusion of the headplate attachment and any additional procedures listed below, Buprenex (0.05 mg/kg) and meloxicam (0.1 mg/kg) were administered, and the animal was transferred to a warmed recovery chamber.
 
-## High-frequency noise exposure
+#### High-frequency noise exposure
 
 To induce acoustic trauma, octave-band noise at 16–32 kHz was presented at 103 dB SPL for 2 hr. Exposure stimulus was delivered via a tweeter fixated inside a custom-made exposure chamber (51 × 51 × 51 cm). The interior walls of the acoustic enclosure joined at irregular, non-right angles to minimize standing waves. Additionally, to further diffuse the high-frequency sound field, irregular surface depths were achieved on three of the interior walls by attaching stackable ABS plastic blocks (LEGO). Prior to exposure, mice were placed, unrestrained, in an independent wire-mesh chamber (15 × 15 × 10 cm). This chamber was placed at the center of a continuously rotating plate, ensuring mice were exposed to a relatively uniform sound field. Sham-exposed mice underwent the same procedure except that the exposure noise was presented at an innocuous level (40 dB SPL). All sham and noise exposures were performed at the same time of day.
 
-## Go/NoGo tone detection task
+#### Go/NoGo tone detection task
 
 Three days after headplate surgery, animals were weighed and placed on a water restriction schedule (1 ml/day). During behavioral training, animals were weighed daily to ensure they remained between 80% and 85% of their initial weight and regularly examined for signs of excess dehydration. Mice were given supplemental water if they received less than 1 ml during a training session or appeared excessively dehydrated. During testing, mice were head-fixed in a dimly lit, single-walled sound attenuating booth (ETS-Lindgren), with their bodies resting in an electrically conductive cradle. Tongue contact on the lickspout closed an electrical circuit that was digitized (at 40 Hz) and encoded to calculate lick timing. Digital and analog signals controlling sound delivery and water reward were controlled by a PXI system with custom software programmed in LabVIEW. Free-field stimuli were delivered via an inverted dome tweeter positioned 10 cm from the left ear and calibrated with a wide-band ultrasonic acoustic sensor (Knowles Acoustics).
 
@@ -165,13 +430,13 @@ Most mice required 2 weeks of behavioral shaping before they could perform the c
 
 Hits were defined as post-target licks that occurred >0.1 and <1.5 s following the onset of the target tone. False alarms (Go responses on a catch trial) triggered a 5-s time out. Entire runs were excluded from analysis if the false alarm rate was greater than 30%. This exclusion criterion resulted in the elimination of <5% of test runs across all conditions (before, after, noise- or sham-exposure), underscoring that mice were under stimulus control even if their hearing thresholds were elevated. Psychometric functions were fit using binary logistic regression. Threshold was defined as the average intensity at reversals across an entire session.
 
-## Go/NoGo optogenetic detection task
+#### Go/NoGo optogenetic detection task
 
 Headplate attachment, anesthesia and analgesia followed the procedure described above. Three burr holes were made in the skull over auditory cortex (1.75–2.25 mm rostral to the lambdoid suture). We first expressed Cre-recombinase in neurons that project to the ACtx by injecting 150 nl of AAVrg-pgk-Cre 0.5 mm below the pial surface at three locations within the ACtx with a precision injection system (Nanoject III) coupled to a stereotaxic positioner (Kopf). A fourth injection was then performed to selectively express channelrhodopsin in auditory thalamocortical projection neurons by injecting 100 nl of AAV5-Ef1a-DIO hChR2(E123T/T159C)-EYFP in the MGBv (−2.95 mm caudal to bregma, 2.16 mm lateral to midline, 3.05 mm below the pial surface). An optic fiber (flat tip, 0.2 mm diameter, Thorlabs) was inserted at the MGB injection coordinates to a depth of 2.9 mm below the pial surface. The fiber assembly was cemented in place and painted with black nail polish to prevent light leakage. Animals recovered for at least 3 days before water restriction and behavioral testing began.
 
 After mice were habituated to head-fixation, they were conditioned to lick the spout within 2 s following the onset of 70 dB SPL high-frequency bandpass noise (centered at 32 kHz, width 1 octave). Once consistent, mice were trained to detect optogenetic activation of thalamocortical neurons. The laser was pulsed at 10 Hz, 10 ms pulse width for 500 ms, and the bandpass noise was pulsed at 10 Hz, 20 ms pulse width (5 ms raised cosine onset–offset ramps) for 500 ms. For testing, randomized interleaved blocks of either noise or laser stimulation were presented at a fixed range of levels. The range of sound levels and laser powers was individually tailored prior to noise/sham exposure to ensure equivalent sampling of sound and laser perceptual growth functions, and then these fixed values were used for all post-exposure testing sessions. Tailoring was accomplished by first identifying the lowest laser power and 32 kHz sound level that produced at least 95% hit rates (operationally defined as ‘max’). These sound levels and laser powers were then presented alongside four attenuated levels relative to the maximum as well as no-stimulus catch trials in each mouse on every session. Psychometric functions were fit using binary logistic regression, and threshold was defined as the point where detection crossed 71% correct, which is the closest approximation to the threshold point identified with the 2-up, 1-down staircasing procedure described above. Runs were rejected for further analysis if the false alarm rate of the mouse was above 30%, and again this resulted in the exclusion of <5% of sessions.
 
-## Widefield and two-photon calcium imaging
+#### Widefield and two-photon calcium imaging
 
 Three round glass coverslips (two 3 mm and one 4 mm diameter, #1 thickness, Warner Instruments) were etched with piranha solution and bonded into a vertical stack using transparent, UV-cured adhesive (Norland Products, Warner Instruments). Headplate attachment, anesthesia and analgesia follow the procedure listed above. A circular craniotomy (3 mm diameter) was made over the right ACtx using a scalpel and the coverslip stack was cemented into the craniotomy. Animals recovered for at least 5 days before beginning imaging recordings. All imaging was performed in awake, passively listening animals.
 
@@ -183,11 +448,11 @@ Raw calcium movies were processed using Suite2P, a publicly available two-photon
 
 During widefield imaging sessions, 20–70 dB SPL tones (in 10 dB steps) were presented from 4 to 64 kHz in 0.5 octave steps. On the first and last two-photon imaging sessions and on the day of noise exposure, 20–80 dB SPL tones (15 dB steps) were presented from 4 to 45.3 kHz (0.5 octave steps). For all other two-photon imaging sessions, 20–80 dB SPL tones (in 10 dB steps) were presented at 5.7, 8, 11.3, and 32 kHz. Each day, all stimuli were repeated 20 times. One block consisted of all frequency–intensity combinations, and stimuli were randomized within blocks. Tones were 50 ms with 5 ms raised cosine onset–offset ramps with 3 s inter-trial intervals.
 
-## Cochlear function tests
+#### Cochlear function tests
 
 Animals were anesthetized with ketamine (120 mg/kg) and xylazine (12 mg/kg), were placed on a homeothermic heating blanket during testing, with half the initial ketamine dose given as a booster when required. Acoustic stimuli were presented via in-ear acoustic assemblies consisting of two miniature dynamic earphones (CUI CDMG15008-03A) and an electret condenser microphone (Knowles FG-23339-PO7) coupled to a probe tube. To highlight the peripheral neural contribution to the ABR, subdermal electrodes were positioned in a horizontal (pinna-to-pinna) montage (Galbraith et al., 2006; Melcher et al., 1996). Stimuli were calibrated in the ear canal in each mouse before recording. ABR stimuli were 5 ms tone pips at 8, 12, 16, or 32 kHz with a 0.5 ms rise-fall time delivered at 30 Hz. Intensity was incremented in 5 dB steps, from 20 to 100 dB SPL. ABR threshold was defined as the lowest stimulus level at which a repeatable waveform could be identified. DPOAEs were measured in the ear canal using primary tones with a frequency ratio of 1.2, with the level of the f2 primary set to be 10 dB less than f1 level, incremented together in 5 dB steps. The 2f1–f2 DPOAE amplitude and surrounding noise floor were extracted. DPOAE threshold was defined as the lowest of at least two continuous f2 levels, for which the DPOAE amplitude was at least two standard deviations greater than the noise floor. DPOAE and ABR testing was performed 1 week before noise- or sham-exposure, and again immediately following the conclusion of behavioral testing or imaging.
 
-## Cochlear histology
+#### Cochlear histology
 
 To visualize cochlear afferent synapses and IHCs and OHCs, cochleae were dissected and perfused through the round window and oval window with 4% paraformaldehyde in phosphate-buffered saline (PBS), then post-fixed in the same solution for 1 hr. Cochleae were then decalcified in 0.12 M ethylenediaminetetracetic acid (EDTA) for 2 days and dissected into half-turns for whole-mount processing. Immunostaining began with a blocking buffer (PBS with 5% normal goat or donkey serum and 0.2–1% Triton X-100) for 1 hr at room temperature. Whole mounts were then immunostained by incubating with a combination of the following primary antibodies: (1) rabbit anti-CtBP2 at 1:100, (2) rabbit anti-myosin VIIa at 1:200, and (3) mouse anti-GluR2 at 1:2000 and secondary antibodies coupled to the red, blue, and green channels. Immunostained cochlear pieces were measured, and a cochlear frequency map was computed (Müller et al., 2005) to associate structures to relevant frequency regions using a plug-in to ImageJ (Parthasarathy and Kujawa, 2018).
 
@@ -195,21 +460,21 @@ Images were collected at 2400 × 900 raster using a using a high-resolution, oil
 
 For visualizing OHC stereocilia damage, following similar whole-mount dissection and blocking procedures, the other ear was immunostained with a combination of the following primary antibodies (1) rabbit anti-CtBP2 at 1:100, (2) mouse anti-GluR2 at 1:2000, and (3) rabbit anti-Espin at 1:100, followed by secondary antibodies in the red, green, and gray channels. Confocal z-stacks of the stereocilia were collected at 5.6, 11.3, 22, 32, 45, and 64 kHz cochlear frequencies with a Leica TCS SP8 microscope.
 
-## Brain histology
+#### Brain histology
 
 For mice performing the Go/NoGo optogenetic detection task, mice were deeply anesthetized and prepared for transcardial perfusion with a 4% formalin solution in 0.1 M phosphate buffer 21 days after noise exposure. The brains were extracted and post-fixed at room temperature for an additional 12 hr before transfer to 30% sucrose solution. Coronal sections (50 µm) were mounted onto glass slides using Vectashield with DAPI, and then coverslipped. Regions of interest were then imaged at ×10 using a Leica DM5500B fluorescent microscope.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Clinical database analysis
+#### Clinical database analysis
 
 First-visit patient records from the Massachusetts Eye and Ear audiology database over a 24-year period from 1993 to 2016 were analyzed. Our analysis selected for adult patients aged 18 and 80, whose primary language was English, and who underwent pure tone audiogram tests in the left and right ears with octave spaced frequencies between 250 Hz and 8 kHz using headphones or inserts. To eliminate patients with conductive components in their hearing loss, the MEE dataset was further curated to remove all audiograms where the air-bone gap was ≥20  dB at any one frequency or ≥15  dB at two consecutive frequencies. Audiograms with thresholds ≥85  dB HL at frequencies ≤2000 Hz were also removed to maintain a conservative inclusion criterion, as the difference in limits of the air and bone conducting transducers limit our ability to determine the presence of conductive components in that threshold range. After this exclusionary step, we were left with 132,504 audiograms in the dataset for analysis. Of these audiograms, HFHL was defined as audiograms with thresholds lower than 20 dB HL for frequencies <1 kHz, between 10 and 80 dB HL for 2 kHz, between 20 and 120 dB HL for 4 kHz, and between 40 and 120 dB HL for 8 kHz, following the same criteria used to identify a steeply sloping high-frequency hearing loss in prior clinical database studies (Dubno et al., 2013; Parthasarathy et al., 2020b; Vaden et al., 2017). HFHL audiometric phenotypes consisted of 23% of the audiograms assessed based on these criteria. These patients were 65% male and had a median age of 65 years. The study was approved by the human subjects Institutional Review Board at Mass General Brigham and Massachusetts Eye and Ear. Data analysis was performed on deidentified data, in accordance with the relevant guidelines and regulations.
 
-## Behavioral analysis
+#### Behavioral analysis
 
 To estimate perceptual gain in the Go/NoGo tone detection task, hit rates were taken at intensities ranging from the lowest intensity with sufficient trials (>5 trials) to the first intensity at which the hit rate was above 90% to account for saturation of the detection function. The perceptual gain was calculated as the average first derivative of the d′ function evaluated over the specified intensity range. The gain calculation was performed for each animal based on aggregated daily test sessions for a given post-exposure epoch (e.g., baseline, 0–2 days post-exposure).
 
-## Two-photon image analysis
+#### Two-photon image analysis
 
 All analysis was performed on the deconvolved calcium activity traces. For analysis of tone-evoked responses, averaged deconvolved calcium traces were expressed as Z-score units relative to activity levels measured during the pre-stimulus period (833 ms). PyrNs were operationally defined as being responsive to a particular tone frequency/level combination with a Z > 2. For the three imaging sessions that calculated the full frequency-response area, the minimum response threshold was defined for each PyrN as the lowest level at which there were responses to two adjacent frequencies (frequencies 0.5 octaves apart). Best frequency (BF) was defined as the frequency for which the overall response was maximal over the intensity range of threshold + 30 dB. Analysis of BF changes was limited to PyrNs with pure tone receptive fields (neural d′ > 1, as defined in Romero et al., 2019).
 
@@ -223,6 +488,6 @@ To determine how ensemble activity decoded tone presence, we used an SVM classif
 
 To model how pre-exposure properties can predict the change in a neuron’s responsiveness, the outcome variable was the post/pre-exposure ratio of the areas under the intensity-response growth function, where post was drawn from days 3 to 5 after exposure. All predictor variables were computed as average values from the pre-exposure period. The best linear model was fit using stepwise multiple linear regression and using the Akaike information criterion. For the purposes of comparison, the predictor variables from the trauma model were applied to the sham model. The stepwise regression was fit using ‘stepwiselm’ and subsequent model fits used ‘fitlm’ in MATLAB.
 
-## Statistical analysis
+#### Statistical analysis
 
 All statistical analyses were performed in MATLAB 2017b (Mathworks). Data are reported as mean ± standard error of the mean unless otherwise indicated. Post hoc pairwise comparisons were adjusted for multiple comparisons using the Bonferroni correction.

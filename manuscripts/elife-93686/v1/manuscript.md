@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01a77tt86 School of Life Sciences, University of Warwick Coventry United Kingdom
-2. https://ror.org/04h699437 Leicester Institute of Structural and Chemical Biology, Department of Molecular and Cell Biology, University of Leicester Leicester United Kingdom
+1. School of Life Sciences, University of Warwick Coventry United Kingdom ([ROR:01a77tt86](https://ror.org/01a77tt86))
+2. Leicester Institute of Structural and Chemical Biology, Department of Molecular and Cell Biology, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
 
 † Corresponding author
 
 ## Abstract
 
-Connexins allow intercellular communication by forming gap junction channels (GJCs) between juxtaposed cells. Connexin26 (Cx26) can be regulated directly by CO 2 . This is proposed to be mediated through carbamylation of K125. We show that mutating K125 to glutamate, mimicking the negative charge of carbamylation, causes Cx26 GJCs to be constitutively closed. Through cryo-EM we observe that the K125E mutation pushes a conformational equilibrium towards the channel having a constricted pore entrance, similar to effects seen on raising the partial pressure of CO 2 . In previous structures of connexins, the cytoplasmic loop, important in regulation and where K125 is located, is disordered. Through further cryo-EM studies we trap distinct states of Cx26 and observe density for the cytoplasmic loop. The interplay between the position of this loop, the conformations of the transmembrane helices and the position of the N-terminal helix, which controls the aperture to the pore, provides a mechanism for regulation.
+Connexins allow intercellular communication by forming gap junction channels (GJCs) between juxtaposed cells. Connexin26 (Cx26) can be regulated directly by CO2. This is proposed to be mediated through carbamylation of K125. We show that mutating K125 to glutamate, mimicking the negative charge of carbamylation, causes Cx26 GJCs to be constitutively closed. Through cryo-EM we observe that the K125E mutation pushes a conformational equilibrium towards the channel having a constricted pore entrance, similar to effects seen on raising the partial pressure of CO2. In previous structures of connexins, the cytoplasmic loop, important in regulation and where K125 is located, is disordered. Through further cryo-EM studies we trap distinct states of Cx26 and observe density for the cytoplasmic loop. The interplay between the position of this loop, the conformations of the transmembrane helices and the position of the N-terminal helix, which controls the aperture to the pore, provides a mechanism for regulation.
 
 ## Introduction
 
@@ -31,13 +31,506 @@ While our previous structures (Brotherton et al., 2022) demonstrated an effect o
 
 ## Results
 
-## Conformations of TMs 1, 2 and the KVRIEG motif correlate with position of the N-terminus
+### Conformations of TMs 1, 2 and the KVRIEG motif correlate with position of the N-terminus
 
 In an attempt to improve the resolution of the cytoplasmic region of the protein, we changed the method of solubilisation and purification by substituting DDM with LMNG and swapping from phosphate buffers to CO2/HCO3- buffers throughout the process. The switch from DDM to LMNG was intended to provide clarity on the provenance of density within the pore of the protein that was observed in our previous structures (Brotherton et al., 2022) and which was considered to be either DDM, as an artefact of solubilisation, or lipid. Lipids have been observed in the pore of other connexins and related large-pored channels and have been suggested to be part of the mechanism (Burendei et al., 2020; Lee et al., 2023a; Lee et al., 2020; Lee et al., 2023b). Our use of high CO2/HCO3- buffers throughout purification was intended to keep the gap junction in the closed state throughout, and hence reduce the chance of extraneous lipid or detergent entering the channel pore.
 
 Data were collected from Cx26 vitrified at a PCO2 corresponding to 90 mmHg. Refinement with D6 symmetry imposed resulted in a map with a nominal resolution of 2.0 Å as defined by gold standard Fourier shell correlations (FSC) (Rosenthal and Henderson, 2003; Scheres, 2012; Figure 1—figure supplement 1, Table 1). This was further classified using the procedure that we previously developed, involving particle expansion and signal subtraction, to focus on just the cytoplasmic region of one of the two docked hemichannels (Figure 1—figure supplements 1 and 2; Brotherton et al., 2022).
 
+**Table 1.**
+ Cryo-EM data collection and processing statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>K125E90</th>
+      <th>K125R90</th>
+      <th>LMNG90</th>
+      <th>K125EHEPES</th>
+      <th>WTHEPES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Magnification (×1000)</td>
+      <td>105</td>
+      <td>105</td>
+      <td>105</td>
+      <td>75</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>K3</td>
+      <td>K3</td>
+      <td>K3</td>
+      <td>Falcon 3</td>
+      <td>Falcon 3</td>
+    </tr>
+    <tr>
+      <td>Frame alignment on Falcon 3</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Camera mode</td>
+      <td>Super-resolution</td>
+      <td>Counting bin 1</td>
+      <td>Super-resolution bin 2</td>
+      <td>Counting</td>
+      <td>Counting</td>
+    </tr>
+    <tr>
+      <td>Energy filter (eV)</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–0.8 to –2.0</td>
+      <td>–0.8 to –2.0</td>
+      <td>–0.8 to –2.3</td>
+      <td>–0.3 to –1.7</td>
+      <td>–0.5 with Volta phase-plate</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å/pix)</td>
+      <td>0.85</td>
+      <td>0.835</td>
+      <td>0.835</td>
+      <td>1.08</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td>Dose on detector (e–/pix/s)</td>
+      <td>10</td>
+      <td>15</td>
+      <td>18.77</td>
+      <td></td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Dose on sample (e–/pix/s)</td>
+      <td>11.4</td>
+      <td>18</td>
+      <td></td>
+      <td>1.06</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>44.01</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>No. of images</td>
+      <td>4731</td>
+      <td>10,044</td>
+      <td>11,362</td>
+      <td>2573</td>
+      <td>2436</td>
+    </tr>
+    <tr>
+      <td>Frames per image</td>
+      <td>45</td>
+      <td>50</td>
+      <td>50</td>
+      <td>40</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>189,887</td>
+      <td>222,622</td>
+      <td>204,438</td>
+      <td>147,546</td>
+      <td>60,995</td>
+    </tr>
+    <tr>
+      <td>Resolution*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Masked D6 (Å)</td>
+      <td>2.2</td>
+      <td>2.1</td>
+      <td>2.0</td>
+      <td>4.3</td>
+      <td>4.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*From Relion_postprocess (Scheres, 2012)._
+
 The results from this classification were broadly in line with our previous results. However, improved definition of the density in the cytoplasmic region enabled us to model this region more accurately. As before, the position of the cytoplasmic region of TM2 in these maps correlated with the presence or absence of the N-terminus. Maps from two classifications based on the most extreme positions of TM2 and corresponding clarity of the N-terminus were taken forward for further analysis (Figure 1—figure supplement 1, Table 2). These maps, both of which have a similar resolution of 2.3 Å, have been respectively denoted by LMNG-NConst (N-terminus defined and constricting the pore) and LMNG-NFlex (N-terminus not visible) following the nomenclature above (Figure 1). As observed in previous maps, density associated with a hydrophobic molecule was present in the pore of both maps (Figure 1—figure supplement 3a).
+
+**Table 2.**
+ Cryo-EM refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>K125E90</th>
+      <th colspan="4">LMNG90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>NFlex</td>
+      <td>NConst</td>
+      <td>NConst-mon</td>
+      <td>NFlex-mon</td>
+    </tr>
+    <tr>
+      <td>Deposited structure PDB ID</td>
+      <td>8Q9Z</td>
+      <td>8QA1</td>
+      <td>8QA0</td>
+      <td>8QA2</td>
+      <td>8QA3</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>161,625</td>
+      <td>59,005</td>
+      <td>35,007</td>
+      <td>357,859</td>
+      <td>240,137</td>
+    </tr>
+    <tr>
+      <td>Map resolution</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C6</td>
+      <td>C6</td>
+      <td>C6</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Unmasked (Å)</td>
+      <td>2.3</td>
+      <td>2.2</td>
+      <td>2.4</td>
+      <td>2.6</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Masked (Å) (masked)</td>
+      <td>2.4</td>
+      <td>2.0</td>
+      <td>2.1</td>
+      <td>2.3</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model (PDB code)</td>
+      <td>7QEQ</td>
+      <td>7QEQ</td>
+      <td>K125E90</td>
+      <td>AlphaFold2</td>
+      <td>NConst-mon</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å; FSC = 0.5) model</td>
+      <td>2.6</td>
+      <td>2.4</td>
+      <td>2.6</td>
+      <td>2.6</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>Sharpening B factor (Å2)</td>
+      <td>Local</td>
+      <td>Local</td>
+      <td>Local</td>
+      <td>Local</td>
+      <td>Local</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td>12 chains</td>
+      <td>12 chains</td>
+      <td>12 chains</td>
+      <td>12 chains</td>
+      <td>12 chains</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>19,704</td>
+      <td>18,720</td>
+      <td>19,878</td>
+      <td>18,945</td>
+      <td>18,580</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2316</td>
+      <td>2190</td>
+      <td>2340</td>
+      <td>2260</td>
+      <td>2226</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>348</td>
+      <td>318</td>
+      <td>342</td>
+      <td>322</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>Ligand: lipid/detergent</td>
+      <td>48</td>
+      <td>24</td>
+      <td>24</td>
+      <td>13</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>B factor (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>66</td>
+      <td>54</td>
+      <td>77</td>
+      <td>68</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>42</td>
+      <td>33</td>
+      <td>56</td>
+      <td>45</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Lipid/detergent</td>
+      <td>56</td>
+      <td>60</td>
+      <td>85</td>
+      <td>69</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+      <td>0.002</td>
+      <td>0.004</td>
+      <td>0.002</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.516</td>
+      <td>0.484</td>
+      <td>0.593</td>
+      <td>0.450</td>
+      <td>0.544</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.54</td>
+      <td>1.25</td>
+      <td>1.55</td>
+      <td>1.53</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>5.66</td>
+      <td>3.46</td>
+      <td>6.50</td>
+      <td>4.90</td>
+      <td>5.20</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>1.83</td>
+      <td>1.42</td>
+      <td>1.05</td>
+      <td>2.32</td>
+      <td>3.71</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured (%)</td>
+      <td>97.84</td>
+      <td>98.97</td>
+      <td>96.99</td>
+      <td>98.5</td>
+      <td>97.89</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.16</td>
+      <td>1.03</td>
+      <td>3.01</td>
+      <td>1.49</td>
+      <td>2.11</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CaBlam outliers (%)</td>
+      <td>1.53</td>
+      <td>1.24</td>
+      <td>1.6</td>
+      <td>0.83</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td>Correlation coefficients</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CC (mask)</td>
+      <td>0.86</td>
+      <td>0.87</td>
+      <td>0.85</td>
+      <td>0.86</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>CC (box)</td>
+      <td>0.7</td>
+      <td>0.71</td>
+      <td>0.66</td>
+      <td>0.68</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>CC (peaks)</td>
+      <td>0.68</td>
+      <td>0.70</td>
+      <td>0.63</td>
+      <td>0.66</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>CC (volume)</td>
+      <td>0.84</td>
+      <td>0.85</td>
+      <td>0.84</td>
+      <td>0.85</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>Mean CC for ligands</td>
+      <td>0.71</td>
+      <td>0.73</td>
+      <td>0.61</td>
+      <td>0.68</td>
+      <td>0.70</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig1-v1.jpg)
+
+**Figure 1.:** (a) Overall density associated with LMNG-NConst (left) and LMNG-NFlex (right) viewed from the cytoplasmic face (top) and from the side (bottom; for clarity only two subunits are shown). To orientate the reader a schematic of the full connexin gap junction channel (GJC) is shown in the centre. The cartoon showing the N-terminal helix and the transmembrane helices (TMs) has been coloured through the colours of the rainbow with blue at the N-terminus to red at the C-terminus. (b) As (a) focussed on the KVRIEG motif and the link between the N-terminus and TM1. Left: The cartoon has been coloured as in (a) except for the KVRIEG motif, which is shown in magenta. Right: Stick representation with the same colouring showing the interactions between the residues on the link between the N-terminus and TM1 (blue), residues on TM2 (green) and the KVRIEG motif (magenta). (c) Cartoon representation of the cytoplasmic region of the LMNG-NConst structure. The two neighbouring subunits to the central subunit in the figure have been made semi-transparent. The dotted lines show the proximity of K125 of one subunit to R104 of the neighbouring subunit. Trp24 on TM1 is in the region of TM1 that adopts an altered conformation with respect to the previously solved structures of Cx26.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The star denotes the classifications with the appearance of the NConst conformation that refine to a resolution greater than 4 Å. The maps in the lower panel are coloured according to resolution as estimated in Relion 4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The residues with white carbon atoms are not included in the final structure.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Density for lipid-like molecule. Left: Lipid-like density (red surface) in the pore of the protein seen in wil-type (WT) connexin26 (Cx26) solubilised in DDM (PDB 7QEQ, EMD-13937). Right: Maps associated with the LMNG solubilised protein superposed on that of the DDM solubilised protein (LMNG-NConst (cyan) and LMNG-NFlex (yellow)), EMD-13937 (white) showing that the density remains irrespective of which of the two detergents is used to solubilise the protein. (b) Superposition of the LMNG-NConst structure on the similar conformation of the protein derived from DDM solubilised protein (7QEW). The conformation of TM1 differs between the two structures, as shown by the position of W24. We attribute the difference to incomplete particle separation of the DDM-derived protein during the classification procedure.
 
 For the LMNG-NConst conformation, the density for the side-chains of the residues of the N-terminus and the following link to TM1 is much clearer than seen in the other maps (Figure 1c), however it remains difficult to place the first three residues of the N-terminus unambiguously. This new structure is an advance on the previous structure of the equivalent conformation obtained in DDM (PDB 7QEW) (Figure 1—figure supplement 3c). In addition to being able to assign more residues to the density in LMNG-NConst, there are two main regions which have been modelled differently. The first area that differs is in TM1 (Figure 1c, Figure 1—figure supplement 3b). Previously we noted variation between the Cx26 crystal structures and our cryo-EM structures in the position of the residues between Val37 and Glu42 (Brotherton et al., 2022). In the LMNG-NConst structure, the N-terminal region of TM1, preceding this area and comprising residues Gly21 to Phe31, is rotated with respect to that modelled previously, changing the position of the π-helix in TM1 from residues Ile20-Leu25 to residues Phe29-Val38 (Figure 1—figure supplement 3b). Thus, the conformation of TM1 in the LMNG-NConst structure differs from the crystal structures at both the N-terminal and C-terminal ends through variations in the twist of the helical repeats.
 
@@ -45,21 +538,59 @@ The second difference is at the cytoplasmic side of TM3. In all structures of co
 
 By contrast, in the LMNG-NFlex map neither the N-terminus nor the KVRIEG motif are well defined (Figure 1a). The LMNG-NFlex map is reminiscent of the map derived from Cx26 particles vitrified under low PCO2 conditions (Brotherton et al., 2022). In the associated structure the conformation of TM1 is the same as was modelled for the previous structures in DDM. A comparison between the two conformations derived from the new data is shown in Figure 2a and b and Figure 2—videos 1 and 2. The conformational change in TM1 results in the side-chain of Trp24 rotating by ~90° between the two extreme positions (Figure 2b, Figure 2—video 2). At one of these extremes, it faces the exterior of the protein, and nestles a detergent or lipid tail. At the other extreme, it is within the core of the protein next to Arg143 and Ala88 (Figure 2b). The conformation in the NFlex structure would not be compatible with the position adopted by TM2 in the LMNG-NConst structure because Thr86 and Leu89 would clash with Phe31 and Ile30 on TM1 of the neighbouring subunit (Figure 2b, Figure 2—videos 1 and 2). The rotation of TM1 changes not only how TM1 interacts with the N-terminus, but also the conformation of the linker between the N-terminal helix and TM1 (Figure 2a). This in turn would not be compatible with the conformation of the KVRIEG motif in LMNG-NConst (Figure 2b). Overall, therefore the constriction of the channel by the N-terminal helix is associated with changes in the positions of TMs 1, 2 and the KVRIEG motif of the cytoplasmic loop.
 
-## Density for cytoplasmic loop compatible with models from AlphaFold2
+![Figure 2.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig2-v1.jpg)
+
+**Figure 2.:** (a) Overall superposition showing the movement of TM2 and the link between the N-terminus and TM1. LMNG-NConst in cyan and LMNG-NFlex in yellow (alternate subunits have been coloured in lighter shades). The KVRIEG motif has been coloured magenta with a sphere indicating the position of K125. The residues between the N-terminus and TM1 for the LMNG-NConst structure have been coloured blue. (b) As (a) but focussed on TM1. The conformation of TM1 differs between the two structures as seen by the change in position of Trp24. TM2’ is from the neighbouring subunit. HC denotes the hydrocarbon chain from a lipid. The positions of T86’ and L89’ of TM2 in the NFlex conformation are not compatible with F31 and I30 TM1 in the NConst conformation.
+
+### Density for cytoplasmic loop compatible with models from AlphaFold2
 
 Despite the LMNG-NConst map being much clearer for the cytoplasmic region of the protein, residues from 107 to 123 were still missing. We, therefore, carried out another classification of the particles focussed on the cytoplasmic region of a single subunit (see Methods). As above, this resulted in a range of maps showing varying positions of the TMs and clarity of the N-terminal helix (Figure 3—figure supplement 1). Importantly, in one case and where the N-terminus was clearly defined, extra density was also seen for the cytoplasmic loop, albeit at low resolution. The structure was tentatively built into the density with the cytoplasmic loop of the classified subunit in a conformation resembling models from AlphaFold2 (Jumper et al., 2021; Figure 3) and with a complete N-terminus (Table 2, Figure 3—figure supplement 2). Only residues 109–114 were omitted in the final structure as the placement of these residues was ambiguous. In the maps associated with this structure there is density that we cannot assign, near to Lys125, between Ser19 in the TM1-N-term linker, Tyr212 of TM4, and Tyr97 on TM3 of the neighbouring subunit, which may be a small molecule that has bound. Overall, the conformation of the subunit is very similar to the LMNG-NConst structure from the classification based on the masked hemichannels, with an RMSD of 0.38 Å for 198 Cα atoms. A second structure was also refined that had a conformation much more similar to the LMNG-NFlex structure (LMNG-NFlex-mon) (RMSD 0.45 for 176 Cα atoms) (Figure 3—figure supplements 1 and 2, Table 2). Rather surprisingly, given the success of the hemichannel mask-based classification, only the subunit upon which the focussed classification had been carried out had this conformation, with the density from the other subunits appearing more like the map before focussed classification. When hexameric symmetry was applied to the subunit, though the conformation of the N-terminus caused the aperture of the pore to appear closed, steric clashes involving the N-terminal residues suggested a symmetric arrangement of this conformation would not be possible (Figure 3d). This analysis suggested a picture of a flexible molecule that can be captured in different conformations ranging from closed to open but with limited cooperativity between the subunits of the hexamer.
 
-## Mutation of K125 to glutamic acid results in constitutively closed GJCs
+![Figure 3.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig3-v1.jpg)
+
+**Figure 3.:** (a) Models generated by AlphaFold2 for a single subunit (left; coloured according to confidence level) and for the hexamer (right; in wheat with the position of K125 depicted by red sticks and the position of R104 in blue). (b) Focussed classification of a single subunit (highlighted by an oval and coloured as in Figure 1c with the cytoplasmic loop in magenta) resulted in clear density for part of the cytoplasmic loop in a conformation consistent with the models from AlphaFold2. This does not extend to the neighbouring subunits (the conformation of the subunit is replicated in grey for the neighbouring subunits). (c) Superposition of the single subunit built into the density (cyan) on the AlphaFold2 model (wheat). Showing the change in position of the helix in the cytoplasmic loop (highlighted by an arrow in the relevant colour). (d) Reconstituting a hexamer by replicating the conformation of the subunit seen in (b) to all six subunits of the hexamer results in an apparently more closed conformation of the hemichannel, though there are also residue clashes, especially at the N-terminus. Lys 125 and Arg 104 are depicted with red and blue sticks, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The maps in the lower panel are coloured according to resolution as estimated in Relion 4.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The residues with white carbon atoms are not included in the final structure.
+
+### Mutation of K125 to glutamic acid results in constitutively closed GJCs
 
 The above data clearly showed two conformations, from which we could infer a mechanism for closure of the pore. We had previously shown that in GJCs, the K125R mutation remains in the open state even under conditions of high PCO2 (Nijjar et al., 2021). Based on our experience with mutations of Cx26 we hypothesised that, if K125E results in constitutively open hemichannels, the same mutation would result in constitutively closed GJCs. Thus, if it were to be true, we could investigate the structure of the proteins under identical buffer conditions where the channel was biased towards open or closed conformations. To verify the effect of mutating Lys125 to a glutamic acid, we used an established dye transfer assay between coupled cells to assess gap junction function (Nijjar et al., 2021). For wild-type (WT) Cx26, gap junctions readily form between cells and allow rapid transfer of dye from a donor (filled via a patch pipette) to a coupled acceptor cell at a PCO2 of 35 mmHg (Figure 4a). Cx26K125E forms structures that resemble WT gap junctions (Figure 4b). However, these gap junctions appeared to be shut and did not permit dye transfer at a PCO2 of 35 mmHg (Figure 4b and d). As the action of an increase in PCO2 is to close the WT Cx26 gap junction, unsurprisingly Cx26K125E gap junctions remained closed at a PCO2 of 55 mmHg (Figure 4c and d).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig4-v1.jpg)
 
-**Figure 4.:** K125E gap junctions are constitutively closed at a partial pressure of CO2 (PCO2) of 35 mmHg.(a–c) Montages each showing bright-field DIC image of HeLa cells with mCherry fluorescence corresponding to the Cx26K125E-mCherry fusion superimposed (leftmost image) and the permeation of 2-Deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-D-glucose (NBDG) from the recorded cell to coupled cells. Yellow arrow indicates the presence of a gap junction between the cells; scale bars, 20 µm. The numbers are the time in minutes following the establishment of the whole-cell recording. In Cx26WT expressing cells (a), dye rapidly permeates into the coupled cell. For Cx26K125E expressing cells, no dye permeates into the neighbouring cell even after 10 min of recording at either 35 (b) or 55 mmHg (c) PCO2 despite the presence of morphological gap junctions. (d) Quantification of fluorescence intensity in the recorded cell (donor) and the potentially coupled cell (recipient) for both Cx26WT and Cx26K125E (seven pairs of cells recorded for WT and K125E at 35 mmHg and six pairs of cells for K125E at 55 mmHg, data presented as mean ± SEM). While dye permeation to the recipient cell follows the entry of dye into the donor for Cx26WT, no dye permeates to the acceptor cell for Cx26K125E. Note that the fluorescence intensity in the donor cell for Cx26K125E at both levels of PCO2 is higher than for Cx26WT at 35 mmHg, presumably because the dye remains trapped in the donor cell rather than diffusing to the recipient cell.Figure 4—source data 1.WT and Cx26K125E.
+**Figure 4.:** (a–c) Montages each showing bright-field DIC image of HeLa cells with mCherry fluorescence corresponding to the Cx26K125E-mCherry fusion superimposed (leftmost image) and the permeation of 2-Deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-D-glucose (NBDG) from the recorded cell to coupled cells. Yellow arrow indicates the presence of a gap junction between the cells; scale bars, 20 µm. The numbers are the time in minutes following the establishment of the whole-cell recording. In Cx26WT expressing cells (a), dye rapidly permeates into the coupled cell. For Cx26K125E expressing cells, no dye permeates into the neighbouring cell even after 10 min of recording at either 35 (b) or 55 mmHg (c) PCO2 despite the presence of morphological gap junctions. (d) Quantification of fluorescence intensity in the recorded cell (donor) and the potentially coupled cell (recipient) for both Cx26WT and Cx26K125E (seven pairs of cells recorded for WT and K125E at 35 mmHg and six pairs of cells for K125E at 55 mmHg, data presented as mean ± SEM). While dye permeation to the recipient cell follows the entry of dye into the donor for Cx26WT, no dye permeates to the acceptor cell for Cx26K125E. Note that the fluorescence intensity in the donor cell for Cx26K125E at both levels of PCO2 is higher than for Cx26WT at 35 mmHg, presumably because the dye remains trapped in the donor cell rather than diffusing to the recipient cell.
 
-## The K125E mutation biases the conformational equilibrium to the NConst structure
+### The K125E mutation biases the conformational equilibrium to the NConst structure
 
 Given that the K125E mutant resulted in constitutively closed channels and the K125R mutant in channels that do not close in response to CO2, we set out to solve the respective structures. With respect to the WT and K125R constructs, purification of the K125E protein resulted in higher yields, consistent with a more stable protein. For both proteins cryo-EM data were collected from protein solubilised in DDM and vitrified in CO2/HCO3- buffers corresponding to a PCO2 of 90 mmHg with the pH maintained at pH 7.4 as was done previously (Brotherton et al., 2022). Refinement with D6 symmetry imposed resulted in maps with nominal resolutions of 2.2 and 2.1 Å respectively as defined by gold standard FSC (Rosenthal and Henderson, 2003; Scheres, 2012; Table 1, Figure 5—figure supplements 1 and 2). Superposition of the two maps showed there was a small but distinct change in the position of the cytoplasmic portion of TM2 between the two D6 averaged maps (Figure 5a and b, Figure 5—video 1). Of the two, the K125R map looked much more similar to the equivalent map from the WT protein purified in the same way in DDM (PDB ID 7QEQ) and vitrified at the same PCO2 (Figure 5c). Further classification focussed on the cytoplasmic region of one hemichannel of the GJCs provided further evidence of a distinct difference in the conformations of the proteins. For the K125E data set the most populated class (43% of the particles) had a conformation similar to the LMNG-NConst (Figure 5—figure supplement 1). In contrast only 10% of the data for the K125R belonged to this class (Figure 5—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-v1.jpg)
+
+**Figure 5.:** (a) Superposition of density for K125E90 D6 averaged map (blue) on the density for the K125R90 D6 averaged maps (orange). The ovals show the position of TM2 from each subunit and the arrows show the direction of the difference between TM2 in the two structures. (b) As (a) but focussed on TM2 in a view approximately perpendicular to the membrane. (c) Superposition of density for WT90 connexin26 (Cx26) (PDB ID 7QEQ; pink) D6 averaged maps on the density for R125E90 (orange). (d) Density associated with one subunit of the K125E90 structure (unsharpened map). The structure has been coloured as in Figure 1c. (e) Superposition of K125E90 structure (light blue) on the structure of lauryl maltose neopentyl glycol (LMNG)-NConst (cyan) showing the similarity between the two structures.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The star denotes the classifications with the appearance of the NConst conformation that refine to a resolution greater than 4 Å. The maps in the lower panel are coloured according to resolution as estimated in Relion 4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-figsupp2-v1.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The star denotes the classifications with the appearance of the NConst conformation that refine to a resolution greater than 4 Å.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (a) K125EHEPES (b) WTHEPES.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/93686/elife-93686-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (a) WT Cx26 at 4.9 Å resolution sharpened with a B-factor of –100. (b) K125E sharpened with B-factor of –273 and low pass filtered to 5 Å. (c) Superposition of the two maps.
 
 Reconstructions from the most predominant class from the K125E data set (K125E90) have a nominal resolution of 2.5 Å (Table 2, Figure 5—figure supplement 1). The KVRIEG motif and the N-terminus are reasonably well defined in the density as seen for the LMNG-NConst structure (Figure 5d) though again, the first three residues are difficult to position. Overall, the conformation is very similar to LMNG-NConst with an RMSD of 0.35 Å for 195 out of 199 matched Cα pairs (Figure 5e). In contrast the RMSD compared to the LMNG-NFlex conformation is 2 Å across 180 Cα pairs.
 
@@ -91,64 +622,326 @@ Mutations in Cx26 lead to both syndromic and non-syndromic deafness (Xu and Nich
 
 ## Methods
 
-## Mutant preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>GBJ2</td>
+      <td>Uniprot</td>
+      <td>P29033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastbac-human connexin 26</td>
+      <td>Gift from Prof. Tomitake Tsukihara and Prof. A Atsunori</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Fisher Scientific</td>
+      <td>CAT# 10500343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cx26WT</td>
+      <td>Meigh et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cx26K125E</td>
+      <td>Meigh et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa DH (ECACC)</td>
+      <td>ECACC</td>
+      <td>CAT# 96112022RRID:CVCL_2483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insect Xpress</td>
+      <td>Scientific Laboratory Supplies/Lonza</td>
+      <td>CAT# LZBELN12-730Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Merck Life Sciences UK Ltd</td>
+      <td>CAT# D6046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Labtech.com</td>
+      <td>CAT# FCS-SA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GeneJuice Transfection Reagent</td>
+      <td>Merck Life Sciences UK Ltd</td>
+      <td>CAT# 70967-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-D-glucose</td>
+      <td>AAT Bioquest</td>
+      <td>CAT# 36702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K-gluconate</td>
+      <td>Merck Life Sciences UK Ltd</td>
+      <td>CAT# G4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histidine</td>
+      <td>Merck/Sigma</td>
+      <td>CAT# H6034-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl β-maltoside (DDM-C)</td>
+      <td>Glycon Biochemicals GMBH</td>
+      <td>CAT# D97002-C-50g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Merck/Roche</td>
+      <td>CAT# 4693132001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AEBSF hydrochloride</td>
+      <td>Fisher Scientific/Acros</td>
+      <td>CAT# 10742885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dithiothreitol</td>
+      <td>Fisher Scientific</td>
+      <td>CAT# 10592945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNAse I</td>
+      <td>Merck/Roche</td>
+      <td>CAT# 10104159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HisPur Ni-NTA Resin</td>
+      <td>Thermo Scientific/ Pierce</td>
+      <td>CAT# 88221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5/150 Superose 6 column</td>
+      <td>GE Healthcare Lifescience</td>
+      <td>CAT# 15383224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil 0.6/1 300 mesh Au holey carbon</td>
+      <td>Quantifoil Micro Tools GMBH</td>
+      <td>CAT# N1-C11nAu30-01</td>
+      <td>Grid onto which sample is vitrified: See Methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltrAuFoil 1.2/1.3 300 mesh Holey gold</td>
+      <td>Quantifoil Micro Tools GMBH</td>
+      <td>CAT# N1-A14nAu30-50</td>
+      <td>Grid onto which sample is vitrified: See Methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltrAuFoil 0.6/1 300 mesh Holey gold</td>
+      <td>Quantifoil Micro Tools GMBH</td>
+      <td>CAT# N1-A11nAu30-01</td>
+      <td>Grid onto which sample is vitrified: See Methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II mutagenesis kit</td>
+      <td>Agilent</td>
+      <td>CAT# 200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K125R-forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-tcgaggagatcaaaacccagagggtccgcatcg-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K125R-reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-cgatgcggaccctctgggttttgatctcctcga-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K125E forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-gagatcaaaacccaggaggtccgcatcgaa-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>K125E reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’-ttcgatgcggacctcctgggttttgatctc-3’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>Scheres, 2012</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Goddard et al., 2007</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ModelAngelo</td>
+      <td>Jamali et al., 2024; 3dem, 2023</td>
+      <td>https://github.com/3dem/model-angelo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>Delano, 2002</td>
+      <td>https://pymol.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Colabfold v 1.5.</td>
+      <td>Mirdita et al., 2022</td>
+      <td>https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>https://grigoriefflab.umassmed.edu/ctffind4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutant preparation
 
 K125R and K125E mutations of human connexin 26 were prepared using the QuikChange II mutagenesis kit (Agilent) and the following primers: K125R forward: 5'-tcgaggagatcaaaacccagagggtccgcatcg-3', K125R reverse: 5'-cgatgcggaccctctgggttttgatctcctcga-3', K125E forward: 5’-gagatcaaaacccaggaggtccgcatcgaa-3’, K125E reverse: 5’-ttcgatgcggacctcctgggttttgatctc-3’ (Sigma) with the WT human connexin 26 pFast construct used for previous studies as the template for mutagenesis (Brotherton et al., 2022). Viruses harbouring the connexin constructs were prepared and protein expressed in Sf9 cells.
 
-## HeLa cell culture and transfection
+### HeLa cell culture and transfection
 
 HeLa DH (ECACC) cells were grown in DMEM supplemented with 10% fetal bovine serum, 50 μg/ml penicillin/streptomycin, and 3 mM CaCl2. For intercellular dye transfer experiments, cells were seeded onto coverslips in six-well plates at a density of 2×104 cells per well. After 24 hr, the cells were transiently transfected with Cx26 constructs (Meigh et al., 2013) tagged at the C-terminus with a fluorescent marker (mCherry) according to the GeneJuice Transfection Reagent protocol (Merck Millipore).
 
-## Patch clamp recording and gap junction assay
+### Patch clamp recording and gap junction assay
 
 2-Deoxy-2-[(7-nitro-2,1,3-benzoxadiazol-4-yl)amino]-D-glucose, NBDG, was included at 200 µM in the patch recording fluid, which contained: K-gluconate 130 mM; KCl 10 mM; EGTA 5 mM; CaCl2 2 mM, HEPES 10 mM, pH was adjusted to 7.3 with KOH and a resulting final osmolarity of 295 mOsm. A coverslip of cells was placed in the recording chamber and superfused with a control saline (124 mM NaCl, 3 mM KCl, 2 mM CaCl2, 26 mM NaHCO3, 1.25 mM NaH2PO4, 1 mM MgSO4, and 10 mM D-glucose saturated with 95% O2/5% CO2, pH 7.4, PCO2 35 mmHg). Cells were imaged on a Cleverscope (MCI Neuroscience) with a Photometrics Prime camera under the control of Micromanager 1.4 software. LED illumination (Cairn Research) and an image splitter (Optosplit, Cairn Research) allowed simultaneous imaging of the mCherry-tagged Cx26 subunits and the diffusion of the NBDG into and between cells. Coupled cells for intercellular dye transfer experiments were selected based on tagged Cx26 protein expression and the presence of a gap junctional plaque, easily visible as a band of mCherry fluorescence. After establishing a gigaseal and the whole-cell mode of recording, images were collected every 10 s.
 
-## Protein production, purification, and grid preparation
+### Protein production, purification, and grid preparation
 
 Purification of all proteins were performed as previously described (Brotherton et al., 2022), and briefly described here for each protein sample.
 
-## K125E in HEPES buffer
+#### K125E in HEPES buffer
 
-## Protein production and purification
+##### Protein production and purification
 
 Sf9 cells harbouring the Cx26 virus were harvested at 72 hr post infection at 2500 × g in a Beckmann JLA 8.1000 rotor, cell pellets were snap-frozen in liquid nitrogen, and stored at –80°C until purification. All purification steps were performed on ice, or at 4°C. Cells were thawed in hypotonic lysis buffer (10 mM sodium phosphate, 10 mM NaCl, 5 mM MgCl2, 1 mM DTT, pH 8.0- DNAse I, cOmplete EDTA-free Protease Inhibitor Cocktail [Roche] and AEBSF) for 30 min before breakage using a dounce homogeniser. Membranes were separated by ultracentrifugation for 1 hr at 4°C, 158,000 × g. After resuspending the membranes in membrane resuspension buffer (25 mM sodium phosphate, 150 mM NaCl, 5% glycerol, 1 mM DTT, pH 8.0- DNAse I, cOmplete EDTA-free Protease Inhibitor Cocktail and AEBSF) solubilisation was carried out in membrane solubilisation buffer (10 mM sodium phosphate, 300 mM NaCl, 5% glycerol, 1 mM DTT, 1% DDM [Glycon Biochemicals GMBH], pH 8.0) for 3–4 hr, and insoluble material removed by a further 1 hr ultracentrifugation at 4°C, 158,000 × g. Soluble protein was batch-bound to pre-equilibrated HisPur Ni-NTA resin (Thermo Scientific) overnight and then poured into an Econo-Column for subsequent manual washing and elution steps. Resin was washed with 5× CV wash buffer (10 mM sodium phosphate, 500 mM NaCl, 10 mM histidine, 5% glycerol, 1 mM DTT, 0.1% DDM, pH 8.0) before eluting hCx26 with elution buffer (10 mM sodium phosphate, 500 mM NaCl, 200 mM histidine, 5% glycerol, 1 mM DTT, 0.1% DDM, pH 8.0). hCx26-containing fractions were dialysed (20 mM HEPES, 500 mM NaCl, 5% glycerol, 1 mM DTT, 0.03% DDM, pH 8.0) overnight with thrombin at (a 1:1 wt/wt ratio). The hCx26 was then passed through a 0.2 μm filter, concentrated using a Vivaspin concentration with 100,000 MWCO and loaded onto a Superose 6 Increase 10/300 size exclusion chromatography column (GE Healthcare Lifescience) equilibrated with the same HEPES-dialysis buffer to remove thrombin. The protein was subsequently concentrated to ~3 mg/ml. The concentrated protein was then dialysed for a minimum of 3 hr prior to grid preparation against 20 mM HEPES, 250 mM NaCl, 2.5% glycerol, 5 mM DTT, 0.03% DDM, 1 mM CaCl2, pH 8.0.
 
-## Grid preparation
+### Grid preparation
 
 Protein (3.5 mg/ml) was centrifuged at 17,200 × g for 5 min at 4°C. Grids (0.6/1 quantifoil AU 300) were glow discharged for 30 s at 30 mA. Vitrification of the protein in liquid ethane at –180°C was carried out with a Vitrobot MKIV with 3 μl protein per grid at 4°C, 100% humidity, blot force 10, 3 s blotting.
 
-## Data collection and processing
+### Data collection and processing
 
 Data were collected using a Titan Krios G3 on a Falcon 3 detector. Data processing was performed in Relion 3 (Zivanov et al., 2018). Movies were motion corrected with MotionCor2 (Zheng et al., 2017) and the CTF parameters estimated with CTFfind-4.1 (Rohou and Grigorieff, 2015), both implemented in Relion 3. Particles were picked from selected images using the Laplacian-of-Gaussian picker, and serial rounds of 2D classifications on binned particles were used to filter out junk and poor particles. An initial model was generated using stochastic gradient descent, and this was used for further cleaning of particles via 3D classifications. Exhaustive rounds of 3D refinement, CTF refinement, and polishing were performed on unbinned particles until no further improvement of the resolution for the Coulomb shell was gained. The resolution was estimated based on the gold standard FSC criterion (Rosenthal and Henderson, 2003; Scheres, 2012) with a soft solvent mask. All masks for processing were prepared in Chimera (Goddard et al., 2007; Pettersen et al., 2004). All processing was carried out without imposed symmetry until the final stage, where tests with C2, C3, C6, and D6 for refinement were carried out to look for improvements in resolution.
 
-## WT in HEPES buffer
+#### WT in HEPES buffer
 
 All methods are as above, with the following changes: the final dialysis prior to freezing was against 20 mM HEPES, 200 mM NaCl, 1% glycerol, 1 mM DTT, 1 mM CaCl2, 0.03% DDM, pH 8.0. Freezing concentration was 3 mg/ml WT, and data collection was carried out using a Volta phase-plate.
 
-## K125E in αCSF90 buffer
+#### K125E in αCSF90 buffer
 
 All methods are as for K125E in HEPES buffer, except for the following changes: Fractions eluted from the NiNTA containing hCx26 were dialysed overnight at 4°C against 10 mM sodium phosphate, 500 mM NaCl, 5% glycerol, 1 mM DTT, 0.03% DDM, pH 8.0. A Superose 6 Increase 5/150 size exclusion chromatography column (GE Healthcare Lifescience) was used to remove thrombin and exchange the buffer to αCSF90 buffer (70 mM NaCl, 5% glycerol, 1 mM DTT, 0.03% DDM, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2). K125E (3.4 mg/ml) was gassed with 15% CO2 (3×12 s) followed by centrifugation at 17,200 × g for 5 min at 4°C. Grids (0.6/1 quantifoil AU 300) were glow discharged for 1 min at 30 mA. Vitrification of the protein in liquid ethane/propane at –180°C was carried out with a Leica GP2 automated plunge freezer with 3 μl protein per grid at 4°C, 100% humidity, 7 s blotting without sensor-blot in a 15% CO2 atmosphere. Data were collected using a GATAN K3 detector in super-resolution mode and were processed using Relion 4.
 
-## K125R in αCSF90 buffer
+#### K125R in αCSF90 buffer
 
 All methods are as for K125E in αCSF90 buffer, except for the following changes: Grids (1.2/1.3 UltrAuFoil Au300) were glow discharged at 30 mA for 30 s. Vitrification of the protein in liquid ethane at –160°C was carried out with a Vitrobot with 3 μl protein per grid at 4°C, 100% humidity, 3 s blotting (force 10, 1 blot, skip transfer) in a 15% CO2 atmosphere. Data were collected using a K3 detector in counting bin 1 mode. Data processing was carried out in Relion 4.
 
-## LMNG90 hCx26 WT
+#### LMNG90 hCx26 WT
 
 Preparation of LMNG90 hCx26 WT protein was carried out as for K125E in αCSF90 buffer, with the following changes: Sf9 cells were lysed in αCSF90 buffer (70 mM NaCl, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2) and membranes were resuspended in (110 mM NaCl, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2) and solubilised in (500 mM NaCl, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2). Samples were taken periodically to check the pH, and re-adjusted by further addition of CO2 when necessary to keep the pH constant. Wash buffer for NiNTA resin (500 mM NaCl, 10 mM histidine, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2) and elution buffer (500 mM NaCl, 200 mM histidine, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2) were prepared and the pH checked just prior to use, to ensure no drifting of pH before interaction with the connexin. Selected fractions eluted from NiNTA were dialysed against (500 mM NaCl, 5% glycerol, 1 mM DTT, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2, pH corrected to 7.4 by addition of CO2). The final size exclusion step was performed in αCSF90 buffer (70 mM NaCl, 5% glycerol, 1 mM DTT, 0.03% DDM, 80 mM NaHCO3, 1.25 mM NaH2PO4, 3 mM KCl, 1 mM MgSO4, 4 mM MgCl2) without additional CO2. The concentrated, pooled samples were gassed to pH to 7.4 both prior to freezing as described previously (Brotherton et al., 2022). Vitrification was carried out at 3.7 mg/ml on 0.6/1 UltrAuFoil grids using the method described for K125R in αCSF90 buffer. Data were collected using the K3 detector in super-resolution bin 2 mode.
 
-## Particle subtraction and masked classification focussed on the hemichannel
+### Particle subtraction and masked classification focussed on the hemichannel
 
 Hemichannel classifications with C6 imposed symmetry was carried out as described previously (Brotherton et al., 2022). The particles from the top class were unsubtracted, and the particles were refined with C6 symmetry, using a hemichannel mask and limited angular sampling. Local resolution estimation was carried out in Relion.
 
-## Particle subtraction and masked classification focussed on a single subunit
+### Particle subtraction and masked classification focussed on a single subunit
 
 Following particle expansion with D6 symmetry and particle subtraction with a mask encompassing a single subunit, masked, fixed angle classification was carried out in Relion 4. Following unsubtraction of particles, refinement of the particle positions was carried out as above, with a hemichannel mask.
 
-## Model building and refinement
+### Model building and refinement
 
 Model building was carried out in Coot (Emsley and Cowtan, 2004) with real space refinement in Phenix (Liebschner et al., 2019) using maps that had been sharpened using model-free local sharpening in Phenix. For the LMNG90 hemichannel-based classification two maps were selected for refinement. The first of these (LMNG-NConst) was chosen because the density of the cytoplasmic region was the most defined. The second (LMNG-NFlex) was chosen as the highest resolution map with TM2 in the most diverse position. A similar selection was made for the single subunit-based classification. In building the cytoplasmic region of the protein reference was made to both ModelAngelo (Jamali et al., 2024) and AlphaFold2 (Jumper and Hassabis, 2022). AlphaFold2 structures were created with Colabfold (Mirdita et al., 2022) or downloaded from the EBI (Varadi et al., 2022).
 
-## Structural analysis
+### Structural analysis
 
 All structural images shown in this paper were generated in PyMol (Delano, 2002) or Chimera (Goddard et al., 2007; Pettersen et al., 2004). Superpositions were carried out in Chimera such that only matching Cα pairs within 2 Å after superposition were included in the matrix calculation.

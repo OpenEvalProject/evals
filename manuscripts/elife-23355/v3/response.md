@@ -113,11 +113,9 @@ General
 
 Although we adjusted for age and gender in our analyses, neither factor was a major determinant of fALOD4 binding (Table 2 and Table 5). Nonetheless, to ensure that disparities in these factors did not bias our main findings, we have performed sensitivity analyses stratified by ethnicity. Similar to our main analysis, age and gender were not major predictors of fALOD4 binding within ethnic groups, as shown in Author response table 1. Age was not significantly associated with fALOD4 binding, and male gender was weakly associated with higher fALOD4 binding, but only in Whites (p=0.038). Thus, it is unlikely that our main conclusions are confounded by differences in age and gender between ethnic groups.
 
-Similarly, we have repeated the correlation analysis with RBC lipids stratified by ethnicity. In this analysis, LPE and SM were the only lipid classes consistently and significantly associated with fALOD4 binding in both Blacks and Hispanics, after adjustment for demographic factors, and the association for PA approached significance in both groups (Author response table 2). Therefore, it is perhaps not surprising that LPE, SM, and PA, remained significant predictors of fALOD4 binding in multivariate analysis.10.7554/eLife.23355.019Author response table 1.Factors associated with fALOD4 binding in 364 healthy subjects, stratified by ethnicity.DOI: http://dx.doi.org/10.7554/eLife.23355.019EthnicityFactorΒSEP-valueWhite (n=182)Age0.0410.0300.1766Male gender0.0970.0650.1351Black (n=98)Age-0.0980.0570.0863Male gender0.0200.1040.8503Hispanic (n=84)Age0.0310.0430.4716Male gender0.0370.0910.688610.7554/eLife.23355.020Author response table 2.Correlation of RBC lipids with fALOD4 binding in 123 subjects in whom RBC membrane lipids were measured.DOI: http://dx.doi.org/10.7554/eLife.23355.020LipidAA (n=41)HA (n=82)classPartial rP-valuePartial rP-valueCer0.280.07620.020.8615ePC-0.150.3414-0.030.7717ePE-0.170.28170.170.1331ePS0.240.13510.130.2465HexCer-0.140.3796-0.090.4333LPC0.350.02500.160.1613LPE-0.460.0023-0.320.0029PA0.330.03610.210.0599PC-0.130.4199-0.190.0882PE-0.180.2542-0.150.1726PG-0.410.00780.070.5341PI-0.350.0264-0.070.5052PS-0.170.2983-0.120.2704SM0.400.00940.330.0024Partial correlation coefficients (r) were calculated using linear regression adjusted for age and gender. Bold font indicates correlations significant at p<0.05.
+Similarly, we have repeated the correlation analysis with RBC lipids stratified by ethnicity. In this analysis, LPE and SM were the only lipid classes consistently and significantly associated with fALOD4 binding in both Blacks and Hispanics, after adjustment for demographic factors, and the association for PA approached significance in both groups (Author response table 2). Therefore, it is perhaps not surprising that LPE, SM, and PA, remained significant predictors of fALOD4 binding in multivariate analysis.10.7554/eLife.23355.019Author response table 1.Factors associated with fALOD4 binding in 364 healthy subjects, stratified by ethnicity.EthnicityFactorΒSEP-valueWhite (n=182)Age0.0410.0300.1766Male gender0.0970.0650.1351Black (n=98)Age-0.0980.0570.0863Male gender0.0200.1040.8503Hispanic (n=84)Age0.0310.0430.4716Male gender0.0370.0910.688610.7554/eLife.23355.020Author response table 2.Correlation of RBC lipids with fALOD4 binding in 123 subjects in whom RBC membrane lipids were measured.LipidAA (n=41)HA (n=82)classPartial rP-valuePartial rP-valueCer0.280.07620.020.8615ePC-0.150.3414-0.030.7717ePE-0.170.28170.170.1331ePS0.240.13510.130.2465HexCer-0.140.3796-0.090.4333LPC0.350.02500.160.1613LPE-0.460.0023-0.320.0029PA0.330.03610.210.0599PC-0.130.4199-0.190.0882PE-0.180.2542-0.150.1726PG-0.410.00780.070.5341PI-0.350.0264-0.070.5052PS-0.170.2983-0.120.2704SM0.400.00940.330.0024Partial correlation coefficients (r) were calculated using linear regression adjusted for age and gender. Bold font indicates correlations significant at p<0.05.
 
 Factors associated with fALOD4 binding in 364 healthy subjects, stratified by ethnicity.
-
-DOI: http://dx.doi.org/10.7554/eLife.23355.019
 
 Ethnicity
 
@@ -184,8 +182,6 @@ Male gender
 0.6886
 
 Correlation of RBC lipids with fALOD4 binding in 123 subjects in whom RBC membrane lipids were measured.
-
-DOI: http://dx.doi.org/10.7554/eLife.23355.020
 
 Lipid
 

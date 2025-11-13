@@ -37,6 +37,104 @@ We will discuss (i) paleontological and embryological evidence pertaining to the
 
 The mouse and zebrafish models belong to lineages that split from the human lineage circa 62 and 420 million years ago, respectively (Benton et al., 2015). During these long time-intervals, the pattern of the skull vault has diverged substantially from the common ancestors of rodents and primates on one side, and from the two major lineages of bony fishes, the sarcopterygians (lobe-finned fish) and the actinopterygians (ray-finned fish). Taxonomic identification and phylogenetic reconstructions based on the vertebrate fossil record rest in large part on deciphering the transformation of the skull roof pattern, which is often well preserved in fossils. Consequently, there is a great deal of morphological information about the bones of the skull roof in extant and fossil vertebrates (see Table 1 for major clades discussed). Recognition of homologies is, however, based solely on the topological arrangement of the bones; developmental and genetic data can rarely be used as evidence (Wagner, 2007).
 
+**Table 1.**
+ Systematic classification of the taxa quoted in the text.Dialipina* is also resolved as a stem osteichthyan in recent phylogenetic studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Systematics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Osteichthyes (bony fish and four-limbed animals)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stem Osteichthyes</td>
+      <td colspan="2"></td>
+      <td>Guiyu</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Actinopterygii (ray-finned fish)</td>
+      <td rowspan="5" colspan="2">Stem</td>
+      <td>Dialipina*</td>
+    </tr>
+    <tr>
+      <td>Meemannia</td>
+    </tr>
+    <tr>
+      <td>Raynerius</td>
+    </tr>
+    <tr>
+      <td>Lingulalepis</td>
+    </tr>
+    <tr>
+      <td>Cheirolepis</td>
+    </tr>
+    <tr>
+      <td colspan="2">Holostei (gars and bowfin)</td>
+      <td>Amia (bowfin)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Teleostei (teleosts)</td>
+      <td>Danio (zebrafish)</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sarcopterygii (lobe-finned fish and four-limbed animals)</td>
+      <td colspan="2">Actinistia (coelacanth)</td>
+      <td>Latimeria (coelacanth)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dipnoi (lungfish)</td>
+      <td>Powichthys</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Tetrapodomorpha (four-limbed animals)</td>
+      <td rowspan="4">Stem</td>
+      <td>Eusthenopteron</td>
+    </tr>
+    <tr>
+      <td>Panderichthys</td>
+    </tr>
+    <tr>
+      <td>Tiktaalik</td>
+    </tr>
+    <tr>
+      <td>Ichthyostega</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Amphibia (amphibians)</td>
+      <td>Urodela (salamanders, newts)</td>
+      <td>Ambystoma (mole salamander)</td>
+    </tr>
+    <tr>
+      <td>Anura (frogs)</td>
+      <td>Xenopus (clawed frog)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Synapsida</td>
+      <td>Stem</td>
+      <td>Dimetrodon</td>
+    </tr>
+    <tr>
+      <td>Mammalia (mammals)</td>
+      <td>Mus (mouse)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Diapsida</td>
+      <td>Stem</td>
+      <td>Orovenator</td>
+    </tr>
+    <tr>
+      <td>Aves (birds)</td>
+      <td>Gallus (chicken)</td>
+    </tr>
+  </tbody>
+</table>
+
 Names of the ‘fish’ bones were originally based on mammalian terminology, itself derived from human terminology (Hanken and Hall, 1993). The orbit (eye socket) was regarded as a landmark, and the paired bones between the orbits named ‘frontal bones.’ It is widely accepted that in order to reflect historical identity, the recognition of homologous bones should be based on evolutionary continuity, the principle that features of an organism exist in continuity with those of related organisms (Wagner, 2007; Borgen, 1983). Based on this criterion, Schultze (2008a), summing up almost a century of discussion, argued that frontal bones are a newly appearing feature of tetrapodomorphs (Schultze, 2008a), a lineage of sarcopterygians including modern tetrapods and their ancestral relatives but distinct from the lungfishes. What was originally called the ‘frontal’ in actinopterygians, based on the location of that bone between the orbits, is actually the parietal by evolutionary continuity with sarcopterygians (Figure 1B.
 
 What does the fossil record teach us about homology of the coronal suture and its associated calvarial bones across vertebrates? The coronal suture is defined in mammals as occurring between the parietal and frontal bones. Proper analysis therefore requires examination of the arrangement of the parietal with its adjacent anterior bones, and conversely the arrangement of the frontal with its adjacent posterior bones in the two groups of jawed vertebrates (sarcopterygians and actinopterygians). Here the search for independent topographical landmarks is paramount. The pineal foramen is one such landmark based on its position in the roof of the diencephalon, thus allowing placement of particular bones relative to the brain. It has been used to establish bone homologies between piscine sarcopterygians and basal tetrapods (for instance Borgen, 1983; Jarvick, 1966; Westoll, 1938). The pineal foramen was ancestrally present in osteichthyans, but was lost independently along the actinopterygian lineage, and several times within the sarcopterygian clade (e.g. along coelacanth, lungfish, bird, and mammalian lineages; see Figure 2). Developmentally, the pineal organ arises from an evagination of the third ventricle of the diencephalon, just posterior to the telencephalon. As the telencephalon-diencephalon boundary appears to coincide with the boundary of neural crest and mesoderm germ layer contribution to the skull bones in rodents (Papp et al., 2015) and zebrafish (Blümel et al., 2019), the pineal foramen, being posterior to this boundary, would be a landmark for the mesoderm-derived bone (i.e. the parietal in mammals). The location of the pineal foramen could thus serve to potentially identify the parietal homolog in fossil and extant osteichthyans, although more experimental data in extant animals are required to further substantiate this anatomical correlation.

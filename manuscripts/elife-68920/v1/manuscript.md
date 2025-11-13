@@ -42,27 +42,167 @@ Here, we present a novel application of ionic silver staining for a micro-CT-bas
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Wild-type Tu</td>
+      <td>Zebrafish International Resource Center (ZIRC)</td>
+      <td>RRID:ZIRC_ZL57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Wild-type WIK</td>
+      <td>Zebrafish International Resource Center (ZIRC)</td>
+      <td>RRID:ZIRC_ZL84</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>golden (slc24a5b1/b1)</td>
+      <td>Lamason et al., 2005</td>
+      <td>RRID:ZFIN_ZDB-GENO-071214-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>nacre (mitfaw2/w2)</td>
+      <td>Lister et al., 1999</td>
+      <td>RRID:ZFIN_ZDB-GENO-990423-18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>casper (mitfaw2/w2; mpv17a9/a9)</td>
+      <td>D’Agati et al., 2017; White et al., 2008</td>
+      <td>RRID:ZFIN_ZDB-GENO-160210-11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>crystal (mitfaw2/w2; mpv17a9/a9; slc45a2b4/b4)</td>
+      <td>Antinucci and Hindges, 2016</td>
+      <td>RRID:ZFIN_ZDB-GENO-160927-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fontana-Masson Staining Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:HT200</td>
+      <td>Included gold chloride not used</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine-S</td>
+      <td>Syndel USA</td>
+      <td>Cat#:MS-222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10% Neutral buffered formalin</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#:SF100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LR White resin, catalyzed</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#:14,383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TomoPy</td>
+      <td>Gürsoy et al., 2014</td>
+      <td>RRID:SCR_021359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gridrec</td>
+      <td>Dowd et al., 1999; Rivers, 2012</td>
+      <td>RRID:SCR_021358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ2</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Avizo 3D Software</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_014431</td>
+      <td>Versions 2020.1, 2020.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IBM SPSS Statistics</td>
+      <td>IBM</td>
+      <td>RRID:SCR_019096</td>
+      <td>Version 27.0.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Three.js</td>
+      <td>https://threejs.org/</td>
+      <td>RRID:SCR_021357</td>
+      <td>For online viewer at http://3d.fish/stains/silver/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Polyimide tubing</td>
+      <td>Small Parts, Inc</td>
+      <td></td>
+      <td>Inner diameter 0.0403″</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Zebrafish were housed in a recirculating system at an average temperature of 28°C on a 14 hr:10 hr light:dark cycle. Fish were fed three times a day a diet consisting of brine shrimp and flake food. Embryos and larvae were raised in darkness and staged according to a standard developmental staging series (Kimmel et al., 1995). Wild-type (a mixed Tu/WIK background) and golden (slc24a5b1/b1) zebrafish (Lamason et al., 2005) were bred and maintained as homozygotes. Other pigmentation variants were produced as follows: Compound mitfaw2/w2; mpv17a9/+; slc45a2b4/+ mutants (phenotypically nacre) were in-crossed to produce offspring that were separated by eye melanin phenotype prior to fixation/staining. Mitfaw2/w2 (nacre) and mitfaw2/w2; mpv17a9/a9 (casper) offspring possessed pigmented eyes while mitfaw2/w2; slc45a2b4/b4 and mitfaw2/w2; mpv17a9/a9; slc45a2b4/b4 (crystal) offspring lacked eye pigment; representatives from the pigmented eye population (mixed nacre and casper larvae) were analyzed for this study and are referred to by the mitfaw2/w2 background.
 
-## Sample preparation and silver staining
+### Sample preparation and silver staining
 
 Wild-type and mutant zebrafish were each subjected to the same fixation protocol, as described previously (Lin et al., 2018). Briefly, 5 days post-fertilization (dpf) larvae were euthanized in pre-chilled Tricaine-S (MS-222, 200 mg/L) solution (Syndel USA, Ferndale, WA) buffered with 1% phosphate buffered saline (PBS) for at least 60 s and fixed overnight (>20 hr) in chilled 10% neutral buffered formalin (Fisher Scientific, Allentown, PA) in a flat-bottom glass container at room temperature with gentle agitation. Fixed specimens were washed three times in cold 1× PBS for 5 min each and stored in 1× PBS at 4°C until proceeding with staining.
 
 All samples were stained at the same time under the same conditions using a modified Fontana-Masson Kit staining protocol (Sigma-Aldrich Procedure #HT200). Prior to staining, ammoniacal silver solution was produced in a chemical fume hood by adding concentrated ammonium hydroxide solution dropwise to a 2.5% silver nitrate solution until the resulting tan-brown precipitate dissolved, then left undisturbed overnight until the solution stayed clear. Also prior to staining, each individual fixed larva was mounted in 3% methylcellulose on a glass slide for photography of the top (35× and 100× zoom) and side (35×) of each sample on a ZEISS Axio Zoom.V16 microscope (Carl Zeiss Microscopy, LLC, White Plains, NY) for comparison with X-ray images. Individual larvae were washed three times for 5 min each in ddH2O and then stained for 18 hr in ammoniacal silver solution in flat-bottom glass containers with gentle agitation at room temperature. As a control, some larvae were incubated instead with ddH2O alone. Although the histological Fontana-Masson staining procedure typically includes a gold toning step (whereby a gold chloride wash replaces silver with gold), pilot experiments indicated that this step did not increase X-ray contrast and it was thus eliminated in subsequent procedures (data not shown). Following staining, larvae were washed three times with ddH2O and post-fixed in 5% sodium thiosulfate solution for 10 min, followed by a final three washes with ddH2O to prepare samples for embedding.
 
-## Micro-CT imaging
+### Micro-CT imaging
 
 Samples were embedded for micro-CT imaging in a manner described previously (Lin et al., 2018). Briefly, stained samples were dehydrated through an alcohol series of 35% (20 min), 50% (20 min), 70% (30 min), 90% (30 min), 95% (30 min), and 100% (30 min, two times) ethanol solutions, and submerged overnight in a 1:1 solution of ethanol and LR White acrylic resin (Electron Microscopy Sciences, Hatfield, PA) with gentle agitation at room temperature. Samples were submerged in 100% LR White resin for 2 hr followed by fresh resin for 1 hr with gentle agitation at room temperature, and then embedded in polyimide tubing (Small Parts, Inc, Miami Lakes, FL; inner diameter 0.0403″) for 24 hr at 65°C.
 
 Micro-CT imaging was performed on Beamline 8.3.2, Tomography (micro-CT), at the Advanced Light Source (ALS) at the Lawrence Berkeley National Laboratory (LBNL, Berkeley, CA). A double-multilayer monochromator was used to select an X-ray energy of 26 keV to optimize silver-based contrast (elemental silver K edge = 25.5 keV) (Hubbell and Seltzer, 2004). Acquisition was performed using a custom detector system based on a 6× objective lens with 0.6 numerical aperture and a 101 megapixel thermo-electrically cooled CMOS camera outputting a 11,648-pixel × 8742-pixel image (Vision Systems Technology, Vista, CA). Horizontal FOV was approximately 5 mm, but projections were cropped to cover the width of the sample tube as they were acquired. Whole 5 dpf larval zebrafish were imaged over two scans, covering head and tail regions, respectively. Each constant motion scan resulted in 1017 projections over 180° with an exposure time of 175 ms per projection. A sample to scintillator distance of 33 mm was chosen to optimize phase effect. Two flat field images were acquired per sample, one before the head segment and one after the tail segment, to be used for image normalization.
 
-## Reconstruction, post-processing, and analysis
+### Reconstruction, post-processing, and analysis
 
 Flat field correction, ring artifact reduction, and image reconstruction were performed using the open source TomoPy toolkit (Gürsoy et al., 2014). Flat field correction was performed using the flat field image taken either before or after sample scanning, depending on which produced the best contrast on test projections. Images were reconstructed using Gridrec (Dowd et al., 1999; Rivers, 2012) with ring artifact reduction (Miqueles et al., 2014; Münch et al., 2009) and a second-order Butterworth filter with a cutoff of 0.2 to reduce noise, resulting in a nominal isotropic voxel size of 0.52 µm, as estimated by the number of reconstructed voxels spanning the 1.03 mm outer diameter of the reconstructed polyimide sample tube.
 
-Thirty-two-bit reconstructed images were further processed using Fiji (Schindelin et al., 2012). Reconstructions were cropped and rotated, and regions containing the zebrafish sample were segmented on a per slice basis to remove the plastic tube and any bubbles which had formed near the sample. This ‘cleaned up’ data was normalized to the LR White resin present in every sample to allow direct comparisons between scans as follows: An average attenuation coefficient for the resin in each reconstruction (µresin) was determined as the mean intensity value over all slices of a 100-pixel × 100-pixel square of empty resin, distant from the sample or sides of the tube. Subsequently, each reconstruction was processed using the formulaμnormalized= μ− μresinμresin
+Thirty-two-bit reconstructed images were further processed using Fiji (Schindelin et al., 2012). Reconstructions were cropped and rotated, and regions containing the zebrafish sample were segmented on a per slice basis to remove the plastic tube and any bubbles which had formed near the sample. This ‘cleaned up’ data was normalized to the LR White resin present in every sample to allow direct comparisons between scans as follows: An average attenuation coefficient for the resin in each reconstruction (µresin) was determined as the mean intensity value over all slices of a 100-pixel × 100-pixel square of empty resin, distant from the sample or sides of the tube. Subsequently, each reconstruction was processed using the formula
+
+$$
+\mu_{normalized}= \frac{\mu− \mu_{resin}}{\mu_{resin}}
+$$
 
 where µ is the attenuation value at any given pixel in a reconstruction and µnormalized is the normalized intensity. Normalized reconstructions were converted to 16-bit for visualization and analysis using the same minimum (–11) and maximum (155) µnormalized for all reconstructions.
 
@@ -70,19 +210,39 @@ where µ is the attenuation value at any given pixel in a reconstruction and µn
 
 ## Results and discussion
 
-## Ionic silver stains reproduce 3D pigmentation patterns in micro-CT images
+### Ionic silver stains reproduce 3D pigmentation patterns in micro-CT images
 
 To explore a 3D, quantitative assay for melanin, we developed a sample preparation and imaging strategy for micro-CT, an X-ray-based imaging technique, using silver. Activated silver ion solutions, such as Fontana-Masson, have been used for staining melanin in histology slides because the anionic melanin reduces the silver cations to solid silver, which appears dark on light microscopy (Bancroft, 2008) and attenuates X-rays. Because a silver deposition strategy has also been used for molecular imaging in micro-CT of chick embryos (Metscher and Müller, 2011), we reasoned that ionic silver staining could be adapted for in situ imaging of zebrafish pigmentation.
 
 A general overview of our staining strategy is shown in Figure 1A. Silver nitrate was activated with ammonium hydroxide and the resulting ammoniacal silver solution was reacted with endogenous melanin to deposit solid silver; silver deposition was assumed to be proportional to the local concentration of melanin in a given sample. Staining times were increased from 30 min to 18 hr for whole-mount samples, as opposed to histology slides, to account for the diffusion time necessary to perfuse thick tissue; longer incubation times produced greater CT contrast with minimal background staining. Some non-specific silver deposition blackened the outside of stained samples, but this concentration of silver was not sufficient to be visible on micro-CT images. After sodium thiosulfate post-fixation to remove unreacted silver, samples were embedded in resin and imaged at the Tomography beamline 8.3.2 of the ALS synchrotron at LBNL with a beam energy optimized for silver at 26 keV. Elemental silver (K edge = 25.5 keV) (Hubbell and Seltzer, 2004) in the stained samples attenuated X-rays to provide contrast on the resulting micro-CT reconstructions. Under the same conditions, an unstained wild-type zebrafish exhibited negligible X-ray attenuation and no pigment pattern upon reconstruction (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic overview of staining procedure. Ammoniacal silver solution reacts with endogenous melanin to deposit solid silver, which attenuates X-rays in micro-CT imaging. (B) A representative cropped and rotated slice of a micro-CT reconstruction of a 5 days post-fertilization (dpf) wild-type zebrafish stained with silver. RPE = retinal pigment epithelium, P = body pigment, L = lens, r = resin, it = inner wall of sample tube, ot = outer wall of sample tube, b = air bubble. (C) 3D rendering of a 5 dpf wild-type zebrafish stained with silver with a heatmap to illustrate pigment density throughout the fish. (D) Corresponding light microscopy (left) and micro-CT (right) images exhibit the same pigmentation patterns. In the micro-CT image, a top-down 3D rendering of stained melanin is shown in grayscale with the dorsal-most melanin digitally colored red to aid comparison with the light micrograph. Some distinguishing shared features are highlighted with colored arrowheads. White arrows indicate deeper melanin obscured by soft tissue in the light micrograph that can be visualized by targeted 3D re-rendering. Scale bars = 200 µm. Unstained samples do not exhibit melanin-related attenuation (Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A pigmented 5 days post-fertilization (dpf) wild-type larva (A) was prepared for micro-CT imaging without silver staining. (B) The sample (black arrowhead), embedded in resin within a polyimide tube, was surrounded by electrical tape to ensure proper positioning in the X-ray beam. (C) A 200-slice average intensity projection of the normalized micro-CT reconstruction from this unstained sample shows faint attenuation in the lenses (L) and at the edges of the eyes (white arrowheads), indicating that the sample was scanned. A 900-pixel × 25-pixel selection (yellow box) transecting the eyes was used to calculate an intensity profile for a single reconstructed slice of the unstained fish (D) showing virtually no intensity peaks above background. A similar selection (blue box) through a single reconstructed slice of a silver-stained 5 dpf wild-type larva (E) demonstrates intense melanin staining in the intensity profile (black arrows).
+
 We chose to scan 5 dpf larvae because, at this stage, the majority of wild-type larval pigment has developed, including the RPE and body melanophores (Hultman and Johnson, 2010). A single slice from a representative reconstruction of a 5 dpf wild-type larva that was rotated and cropped to the region of interest is presented in Figure 1B. Several key features of the reconstruction have been highlighted, including the high intensity regions of stained sample (RPE and body pigment), the resin embedding medium, and the inner and outer walls of the polyimide tubing used for embedding. By dividing the number of voxels spanning the polyimide tube by its outer diameter (1.03 mm), we estimated our reconstructed isotropic voxel resolution at 0.52 µm; isotropic resolution enabled rotation and re-slicing of the volume without distortion. We also noted that microscopic air bubbles formed in all samples at the tube-resin interface, sometimes close to the zebrafish sample, due to resin shrinkage during polymerization. We manually segmented and removed bubbles and the sample tube from reconstructions to eliminate their interference with visualization and analysis.
 
 To cover the body length of the larval zebrafish within the synchrotron X-ray beam, we imaged each fish over two overlapping FOVs by vertically translating the sample between acquisitions. Each of the two resulting reconstructions were later registered and combined for subsequent visualization and analysis. A 3D rendering of a representative volume (Figure 1C) with a color heatmap suggests that ionic silver staining produces a 3D pigmentation map throughout the whole larvae with minimal background. To confirm the ability of the micro-CT images to faithfully reproduce larval pigmentation patterns, we compared 3D renderings of reconstructed volumes with light micrographs of the same fish taken prior to silver staining (Figure 1D, Video 1). The top of the head represents a unique ‘fingerprint’ pattern for each larva, and all the surface melanin features evident in the light micrograph were also observed in the micro-CT image. Pigment units lying deep in the fish that are obscured by soft tissue in light microscopy were readily discernable in micro-CT reconstructions, demonstrating the sensitivity of this new assay.
 
-## Characterizing wild-type larval zebrafish melanin pigmentation in 3D
+![Video 1.](https://cdn.elifesciences.org/articles/68920/elife-68920-video1.mp4.jpg)
+
+**Video 1.:** This video shows an overview of melanin staining with silver by X-ray microtomography (micro-CT) imaging in a representative wild-type 5 days post-fertilization (dpf) zebrafish larva. The three-dimensional (3D) volume is generated from a series of 0.52 µm slices and reproduces pigmentation patterns seen by light microscopy (colored arrowheads). In a view of the top layer of the dorsal melanin stripe (false colored for clarity), ovoid transparencies are observed representing large organelles lacking melanin (circles). An isolated volume of the retinal pigment epithelia (RPE) exhibits the fused choroidal fissure and the optic nerve egress. Finally, a 360° view of the larval melanin, colored by anatomic region, is shown. Background music by DJ Vanselow.
+
+### Characterizing wild-type larval zebrafish melanin pigmentation in 3D
 
 The wild-type larval zebrafish forms a stereotypical ontogenetic pigmentation pattern with pigment cell precursors starting from the neural crest at the dorsum and spreading ventrally, eventually forming four longitudinal ‘stripes’ of melanin by approximately 3 dpf: dorsal, lateral, ventral (above the air bladder), and yolk sac (below the yolk) (Kelsh, 2004; Kelsh et al., 1996). After this pattern is formed from direct-developing melanophores, pigment stem cells fill in gaps in the patterns or are responsible for pigment cell regeneration such that the majority of the larval pigment pattern has matured by 5 dpf (Hultman and Johnson, 2010). The longitudinal stripes of larval pigment were readily identifiable in our wild-type larvae (Figure 2A). To better examine the distribution of pigment throughout the fish, we used a combination of thresholding and segmentation on our micro-CT reconstructions to assign pigment to anatomical regions in our larvae. In 3D, we observed the dorsal, ventral, and yolk sac stripes as flattened sheets of pigment cells that often met in the midline of the fish and followed the curves of body structures (Figure 2B–C, Video 1). In contrast, the two lateral stripes were made up of intermittent thin, flat accumulations of melanin, one stripe on each side of the larva (Figure 2B–C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig2-v1.jpg)
+
+**Figure 2.:** (A) A light micrograph of the side of a 5 days post-fertilization (dpf) wild-type larva indicating the major regions of melanin pigment: dorsal, lateral, ventral, and yolk sac stripes and the retinal pigment epithelium (RPE). (B) A 3D rendering with orthoslice (C) of micro-CT volumes segmented into anatomical regions shows the organization of larval pigment into layers. Red = dorsal stripe, yellow = ventral stripe, green = yolk sac stripe, cyan = lateral stripes, white = RPE, gray = other body melanin, purple = lens. (C) Single slice of micro-CT data with color overlay corresponding to the indicated region in B. (D) 200-slice maximum intensity projection of dorsal stripe melanin exhibits transparencies in the staining indicating the position of large organelles (arrows) including potentially binucleated cells (circles). A sample of these transparencies was measured to estimate average size (Figure 2—figure supplement 1, Figure 2—source data 1). (E) View from the top-down of a volume rendering showing rostral melanin in the nose forming globular, dendritic cells (arrowheads). RPE-L = left RPE, RPE-R = right RPE. (F) Isolated volume rendering of the right eye with a clipping plane showing the villous inner surface and smooth outer surface of the RPE. The rendering has been falsely colored by intensity to highlight certain anatomical features, including local pigment thickness variability throughout the RPE, the egress of the optic nerve (arrowhead), and the fused choroidal fissure (arrows). L = lens.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Volume renderings of the top of the head for three 5 days post-fertilization (dpf) wild-type zebrafish were examined for ovoid transparencies in the staining. For each fish, 25 random opacities were selected and manually measured on the long axis using the three-dimensional (3D) line measurement tool in Avizo (pink lines). Average length (n = 75) was 9.29 µm (SD = ±1.23 µm). Full list of measurements is provided in Figure 2—source data 1.
 
 Zebrafish can adapt their pigmentation to their environment for camouflage; larval zebrafish raised on white backgrounds aggregate melanin within melanophores while those raised on black backgrounds disperse melanin throughout the melanophores (Logan et al., 2006). Our larvae, reared in a closed, dark incubator, exhibited a dispersed staining phenotype on micro-CT with sheets of pigment and indistinct cell boundaries. Notably, the dorsal, ventral, and yolk sac stripes exhibited ovoid transparencies in the melanin staining that are approximately 9.29 µm in length (SD = ±1.23 µm, Figure 2D, Figure 2—figure supplement 1, and Video 1). We suspect that these transparencies represent large organelles, likely nuclei, which are devoid of melanin. This observation is consistent with high-resolution photographs of black background-adapted dorsal melanophores reported previously (Logan et al., 2006). Several of these transparencies were in close proximity (Figure 2D); zebrafish melanophores have been frequently shown to be multinucleated (Usui et al., 2018). In contrast to the flattened, diffuse melanin in the stripes, pigment units not associated with the four larval stripes tended to have a globular, condensed morphology. These cells, deeper in the soft tissue of the fish, were individually separated and dendritic, particularly in the anterior portion of the head (Figure 2E).
 
@@ -96,25 +256,671 @@ We first compared the volumes of the pigmented regions of the wild-type fish, in
 
 **Figure 3.:** Wild-type (wt) 5 days post-fertilization (dpf) larvae (n = 3) were stained with silver and micro-CT imaged under the same conditions then segmented into major pigment regions as described in Figure 2: retinal pigment epithelium (RPE, right and left), dorsal stripe (DS), ventral stripe (VS), yolk sac stripe (YSS), lateral stripes (LS, right and left), and other melanin (other). (A) Volumes of the total pigmented regions and each segmented region are shown for the three fish. (B) Reconstructed stain intensity values are assumed to be proportional to melanin density; integrated intensity values for the segmented regions represents the melanin content of these regions. As proportions of total melanin content (summed across all segmented regions) the wt fish show high concordance between individual samples. Error bars = standard deviation from average.
 
+**Table 1.**
+ Quantification of volume and cumulative sum of intensity for wild-type samples for segmented pigment regions.Table 1—source data 1.Source data for quantification of volume and cumulative sum of intensity for wild-type samples for segmented pigment regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Wild-type specimen</th>
+      <th>#1</th>
+      <th>#2</th>
+      <th>#3</th>
+      <th>Average</th>
+      <th>SD</th>
+    </tr>
+    <tr>
+      <th>Pigment region</th>
+      <th colspan="5">Segmented volume (µm3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>4.81 × 106</td>
+      <td>4.52 × 106</td>
+      <td>5.27 × 106</td>
+      <td>4.87 × 106</td>
+      <td>±3.78 × 105</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>1.20 × 106</td>
+      <td>1.02 × 106</td>
+      <td>1.28 × 106</td>
+      <td>1.17 × 106</td>
+      <td>±1.31 × 105</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>1.25 × 106</td>
+      <td>9.65 × 105</td>
+      <td>1.46 × 106</td>
+      <td>1.23 × 106</td>
+      <td>±2.49 × 105</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>5.45 × 105</td>
+      <td>4.87 × 105</td>
+      <td>5.11 × 105</td>
+      <td>5.15 × 105</td>
+      <td>±2.93 × 104</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>1.41 × 106</td>
+      <td>1.56 × 106</td>
+      <td>1.62 × 106</td>
+      <td>1.53 × 106</td>
+      <td>±1.10 × 105</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>2.29 × 105</td>
+      <td>3.63 × 105</td>
+      <td>2.06 × 105</td>
+      <td>2.66 × 105</td>
+      <td>±8.52 × 104</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>5.24 × 104</td>
+      <td>4.10 × 104</td>
+      <td>6.73 × 104</td>
+      <td>5.36 × 104</td>
+      <td>±1.32 × 104</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>5.91 × 104</td>
+      <td>2.96 × 104</td>
+      <td>6.16 × 104</td>
+      <td>5.01 × 104</td>
+      <td>±1.78 × 104</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6.72 × 104</td>
+      <td>5.89 × 104</td>
+      <td>6.79 × 104</td>
+      <td>6.47 × 104</td>
+      <td>±5.02 × 103</td>
+    </tr>
+    <tr>
+      <td>Pigment region</td>
+      <td colspan="5">Cumulative sum of intensity (normalized units)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>5.05 × 1011</td>
+      <td>4.71 × 1011</td>
+      <td>4.73 × 1011</td>
+      <td>4.83 × 1011</td>
+      <td>±1.94 × 1010</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>1.48 × 1011</td>
+      <td>1.43 × 1011</td>
+      <td>1.40 × 1011</td>
+      <td>1.44 × 1011</td>
+      <td>±4.45 × 109</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>1.74 × 1011</td>
+      <td>1.47 × 1011</td>
+      <td>1.57 × 1011</td>
+      <td>1.59 × 1011</td>
+      <td>±1.39 × 1010</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>4.88 × 1010</td>
+      <td>4.02 × 1010</td>
+      <td>4.01 × 1010</td>
+      <td>4.30 × 1010</td>
+      <td>±5.00 × 109</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>1.01 × 1011</td>
+      <td>1.06 × 1011</td>
+      <td>1.06 × 1011</td>
+      <td>1.05 × 1011</td>
+      <td>±3.20 × 109</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>1.67 × 1010</td>
+      <td>2.33 × 1010</td>
+      <td>1.42 × 1010</td>
+      <td>1.81 × 1010</td>
+      <td>±4.66 × 109</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>5.30 × 109</td>
+      <td>3.64 × 109</td>
+      <td>5.52 × 109</td>
+      <td>4.82 × 109</td>
+      <td>±1.03 × 109</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>5.14 × 109</td>
+      <td>2.33 × 109</td>
+      <td>4.58 × 109</td>
+      <td>4.02 × 109</td>
+      <td>±1.49 × 109</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5.73 × 109</td>
+      <td>4.91 × 109</td>
+      <td>5.21 × 109</td>
+      <td>5.28 × 109</td>
+      <td>±4.17 × 108</td>
+    </tr>
+  </tbody>
+</table>
+
+_Raw data provided in Table 1—source data 1._
+
 Although volume segmentation involves thresholding and intensity-based selection of stained regions of the micro-CT reconstruction, melanin volume measurements are independent of intensity and as such do not inform about the actual melanin content of the samples, which is not distributed evenly throughout the fish. To characterize melanin content for the wild-type larvae, we calculated intensity statistics for our segmented regions. Reported in normalized units, the cumulative sum of the intensity of each voxel in a volume is proportional to the total concentration of melanin in the volume and can be used to compare melanin content between normalized samples and within anatomical regions (Table 1). In Figure 3B we report the melanin content of the wild-type larvae as percentages of total melanin; 62.8% (SD = ±1.1%) of the melanin in the average 5 dpf wild-type larva was contained in the RPE. Of the remaining body melanin, most of this pigment was contained within the ventral stripe, followed by the dorsal, yolk sac, and lateral stripes. Approximately 1.1% (SD = ±0.05%) of stained material was not associated with the eyes or four main stripes, mostly in the nose (Figure 2E). Distribution of melanin was highly concordant between the three scanned larvae.
 
-## Comparing wild-type and mutant pigmentation variants by silver staining micro-CT
+### Comparing wild-type and mutant pigmentation variants by silver staining micro-CT
 
 Dozens of zebrafish lines with mutations affecting larval and adult pigmentation patterns have been identified. To test the utility of our silver staining procedure with micro-CT imaging to compare aberrant melanin pigmentation to wild-type patterns, we stained representative fish from several mutant lines exhibiting larval pigmentation phenotypes that are commonly used in zebrafish genetic screens and imaging studies. Because all samples were normalized to the same background material, the mutant fish were compared directly to wild-type fish using the same visualization settings and computational analyses.
 
 The golden zebrafish line is a prototypical model of human skin color, with a mutation in the potassium-dependent sodium/calcium exchanger gene slc24a5 (slc24a5b1/b1). A mutation in the human homolog of this gene, SLC24A5, is a major contributor to the skin color differences between people of African and European ancestry. The slc24a5b1/b1 zebrafish line has a delay in larval pigmentation and a dramatic reduction in larval and adult melanin content throughout the body and eyes. At the electron microscope level, golden melanophores contain fewer melanosomes that are less densely pigmented and irregularly shaped (Lamason et al., 2005). This early pigment phenotype also makes the golden mutant popular for studies such as screens or genetic engineering (Doyon et al., 2008; Hoshijima et al., 2016; Moore et al., 2006). As opposed to wild-type reconstructions, which exhibited intense whole-body staining on micro-CT imaging (Figure 4A), the most striking characteristic of the silver-stained slc24a5b1/b1 larvae was a globally diminished intensity corresponding to the decreased melanin content in these mutants (Figure 4D, Video 2). In addition, while wild-type pigment reconstructions formed essentially contiguous sheets down the length of the larval body (Figure 4A–B), melanin staining in the golden mutant was discontinuous and fragmented throughout (Figure 4D–E). To compare the overall pigmentation patterns of the larvae, we segmented our mutant fish into the same anatomical regions as we did for the wild-type fish (Figures 2B and 4B). Although melanin was diminished throughout the body, the dorsal, lateral, ventral, and yolk sac stripes, as well as other melanin deposits in the nose and eyes, were all identified in the golden mutant in an organization similar to the pigmentation in wild-type larvae (Figure 4E, Video 2). Single slices of the micro-CT reconstructions through the middle of the eyes of wild-type (Figure 4C) and golden (Figure 4F) larvae indicated that in addition to less intense staining, the golden fish had thinner stained areas in the RPE.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig4-v1.jpg)
+
+**Figure 4.:** Volume renderings (A, D, G), segmented volumes (B, E, H), and representative single slices of micro-CT reconstructions through the retinal pigment epithelium (RPE; C, F, I) of representative 5 days post-fertilization (dpf) wild-type (A–C), slc24a5b1/b1 (golden; D–E), and mitfaw2/w2 (nacre or casper; G–I) larvae. In the segmented volumes, red = dorsal stripe, yellow = ventral stripe, green = yolk sac stripe, cyan = lateral stripes, white = RPE, gray = other body melanin, purple = lens. As compared to wild-type larvae, slc24a5b1/b1 mutant larvae exhibit a reduction in staining throughout the body and eyes (D) but retain the overall organization of pigment layers (E). The RPE in slc24a5b1/b1 larvae (F) is thinner than the wild-type RPE (C) with less intense staining. The mitfaw2/w2 mutant lacks all body pigment; staining is observed only in the RPE and some argentaffin material posterior to the eyes (G–H, arrow). The RPE of the mitfaw2/w2 mutant (I) is of similar thickness and staining intensity as the wild-type RPE (C). For each comparison, visualization settings were kept constant for the wild-type and mutant fish. § = head segment only shown. All stained samples analyzed in this study are shown in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Light micrographs (before silver staining), X-ray microtomography (micro-CT) volume renderings, and segmented volumes of the wild-type, slc24a5b1/b1, and mitfaw2/w2 5 days post-fertilization (dpf) larvae (n=3 each) analyzed for this study. In the segmented volumes, red = dorsal stripe, yellow = ventral stripe, green = yolk sac stripe, cyan = lateral stripes, white = RPE, gray = other body melanin, purple = lens. Scale bars = 500 µm. § = head segment only analyzed by micro-CT and shown.
+
+![Video 2.](https://cdn.elifesciences.org/articles/68920/elife-68920-video2.mp4.jpg)
+
+**Video 2.:** This video shows a comparison between a representative wild-type 5 days post-fertilization (dpf) zebrafish larva and two representative pigmentation mutant 5 dpf larvae which have been stained with silver and X-ray microtomography (micro-CT) imaged. Visualization settings have been kept constant to facilitate direct comparisons between normalized samples. In volume renderings, the golden mutant (slc24a5b1/b1) shows markedly reduced melanin content throughout the body and eyes. The nacre mutant (mitfaw2/w2, head scan rendering only) shows essentially no body pigment but near-normal retinal pigment epithelia (RPE). Finally, stained volumes segmented by anatomic regions show the golden mutant exhibiting wild-type overall pigment organization while the nacre mutant (head scan rendering only) lacks the body stripes. Background music by DJ Vanselow.
+
 We also sought to examine a zebrafish mutant that lacks body pigment since these lines are commonly used in imaging studies when a transparent sample is desired. The mitfaw2/w2 mutation results in the nacre zebrafish line, which lacks all body melanin but retains the optic neuroepithelium-derived RPE melanophores (Lister et al., 1999). An additional mutation in iridophore development gene mpv17 (mpv17a9/a9) produces the compound mutant line casper, notable for its transparent adult body useful for fluorescence imaging (D’Agati et al., 2017; White et al., 2008). To examine these mutants, we bred mitfaw2/w2; mpv17a9/+ larvae to produce a mix of both nacre and casper offspring, which are indistinguishable from each other in terms of melanin pigmentation at 5 dpf. Although it is possible to distinguish them using iridophore presence (nacre) or absence (casper) (White et al., 2008), larvae used in this study were only screened based on melanin and thus are referred to as mitfaw2/w2 background or nacre/casper fish throughout. As expected, larvae with the mitfaw2/w2 mutant background exhibited staining almost entirely in the RPE in our micro-CT scans, and as such we only used the head segment for visualization and analysis (Figure 4G, Video 2). Staining intensity, size, and shape of the eyes were similar to those of wild-type larvae, but body-stripe pigment or melanin deposits in the nose were completely absent. We segmented the mitfaw2/w2 larvae into component volumes consisting of the left and right RPE and any other stained material over a certain background intensity. A rendering of these segmented volumes (Figure 4H, Video 2) confirmed the absence of the dorsal, lateral, ventral, and yolk sac stripes, and also highlighted disorganized argentaffin material posterior to the eyes. Such material was also present in the wild-type and golden samples (included in the ‘other’ staining category), but was generally overshadowed by the intensely staining melanin. Single micro-CT slices through the eyes of the mitfaw2/w2 mutant revealed an RPE layer of similar thickness and intensity to the wild type (Figure 4I). All wild-type and mutant larvae analyzed for this study are shown in Figure 4—figure supplement 1.
 
 To quantify the differences observed between the wild-type and mutant larvae, we prepared and micro-CT imaged slc24a5b1/b1 (n = 3) and mitfaw2/w2 (n = 3) 5 dpf larvae and segmented them into pigment regions as described above for computational analysis of both melanin volume and content. Because the mitfaw2/w2 fish did not exhibit body pigment, only the head segments were used for the statistical analysis. For each pigment region, a statistically significant difference between the groups was found using a series of one-way ANOVAs (Table 2). While the melanin stripes were compared only between the wild-type and golden samples, total melanin, RPE melanin, and other melanin were compared between all three genotypes. For these regions, Tukey post hoc tests were used to determine which groups differed significantly from wild type (Tables 3 and 4).
+
+**Table 2.**
+ Statistical analysis of wild-type, slc24a5b1/b1, and mitfaw2/w2 samples for segmented pigment regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Pigment region</th>
+      <th colspan="2">Segmented volume statistics</th>
+    </tr>
+    <tr>
+      <th>One-way ANOVA F-statistic</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>F(2,6) = 178.43</td>
+      <td>0.000005</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>F(2,6) = 36.37</td>
+      <td>0.000442</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>F(2,6) = 21.77</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RPE (total)</td>
+      <td>F(2,6) = 29.64</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>F(1,4) = 145.98</td>
+      <td>0.000269</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>F(1,4) = 376.02</td>
+      <td>0.000042</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>F(1,4) = 22.04</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>F(1,4) = 39.01</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>F(1,4) = 17.48</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>F(2,6) = 52.86</td>
+      <td>0.000155</td>
+    </tr>
+    <tr>
+      <td>Body (total)</td>
+      <td>F(2,6) = 939.89</td>
+      <td>0.000000032209</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pigment region</td>
+      <td colspan="2">Cumulative sum of intensity statistics</td>
+    </tr>
+    <tr>
+      <td>One-way ANOVA F-statistic</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>F(2,6) = 185.76</td>
+      <td>0.000004</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>F(2,6) = 54.69</td>
+      <td>0.000141</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>F(2,6) = 70.40</td>
+      <td>0.000068</td>
+    </tr>
+    <tr>
+      <td>RPE (total)</td>
+      <td>F(2,6) = 70.50</td>
+      <td>0.000068</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>F(1,4) = 138.02</td>
+      <td>0.000300</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>F(1,4) = 1770.94</td>
+      <td>0.000002</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>F(1,4) = 35.30</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>F(1,4) = 56.79</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>F(1,4) = 17.62</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>F(2,6) = 166.28</td>
+      <td>0.000006</td>
+    </tr>
+    <tr>
+      <td>Body (total)</td>
+      <td>F(2,6) = 3690.79</td>
+      <td>0.00000000049447</td>
+    </tr>
+  </tbody>
+</table>
+
+_F-statistics for each comparison are reported as F(degrees of freedom between groups, degrees of freedom within groups)= F-statistic. p < 0.05 indicates a significant difference between groups. While the melanin stripes were compared between the wild-type and golden samples, total melanin, RPE melanin, and other melanin were compared between all three genotypes. For these regions, Tukey post hoc tests were used to determine which groups differed significantly from wild type._
+
+**Table 3.**
+ Quantification of volume and cumulative sum of intensity for slc24a5b1/b1 samples for segmented pigment regions.Table 3—source data 1.Source data for quantification of volume and cumulative sum of intensity for slc24a5b1/b1 samples for segmented pigment regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>slc24a5b1/b1 specimen</th>
+      <th>#1</th>
+      <th>#2</th>
+      <th>#3</th>
+      <th>Average</th>
+      <th>SD</th>
+      <th>% Change from wt</th>
+      <th>p-Value</th>
+    </tr>
+    <tr>
+      <th>Pigment region</th>
+      <th colspan="7">Segmented volume (µm3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>1.14 × 106</td>
+      <td>1.32 × 106</td>
+      <td>1.14 × 106</td>
+      <td>1.20 × 106</td>
+      <td>± 1.06 x 105</td>
+      <td>–75.3</td>
+      <td>0.000005*</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>3.45 × 105</td>
+      <td>4.60 × 105</td>
+      <td>4.49 × 105</td>
+      <td>4.18 × 105</td>
+      <td>± 6.38 x 104</td>
+      <td>–64.2</td>
+      <td>0.000362*</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>4.08 × 105</td>
+      <td>4.16 × 105</td>
+      <td>4.05 × 105</td>
+      <td>4.10 × 105</td>
+      <td>± 5.45 x 103</td>
+      <td>–66.6</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>9.70 × 104</td>
+      <td>1.74 × 105</td>
+      <td>8.36 × 104</td>
+      <td>1.18 × 105</td>
+      <td>± 4.87 x 104</td>
+      <td>–77.0</td>
+      <td>0.000269**</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>2.33 × 105</td>
+      <td>2.06 × 105</td>
+      <td>1.44 × 105</td>
+      <td>1.94 × 105</td>
+      <td>± 4.56 x 104</td>
+      <td>–87.3</td>
+      <td>0.000042**</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>3.97 × 104</td>
+      <td>3.93 × 104</td>
+      <td>2.07 × 104</td>
+      <td>3.32 × 104</td>
+      <td>± 1.09 x 104</td>
+      <td>–87.5</td>
+      <td>0.009**</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>4.80 × 103</td>
+      <td>7.58 × 103</td>
+      <td>4.53 × 103</td>
+      <td>5.63 × 103</td>
+      <td>± 1.69 x 103</td>
+      <td>–89.5</td>
+      <td>0.003**</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>7.16 × 103</td>
+      <td>9.09 × 103</td>
+      <td>3.99 × 103</td>
+      <td>6.75 × 103</td>
+      <td>± 2.58 x 103</td>
+      <td>–86.5</td>
+      <td>0.014**</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6.83 × 103</td>
+      <td>1.32 × 104</td>
+      <td>3.01 × 104</td>
+      <td>1.67 × 104</td>
+      <td>± 1.20 x 104</td>
+      <td>–74.2</td>
+      <td>0.001*</td>
+    </tr>
+    <tr>
+      <td>Pigment region</td>
+      <td colspan="7">Cumulative sum of intensity (normalized units)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>7.54 × 1010</td>
+      <td>8.51 × 1010</td>
+      <td>7.50 × 1010</td>
+      <td>7.85 × 1010</td>
+      <td>± 5.74 x 109</td>
+      <td>–83.7</td>
+      <td>0.000004*</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>2.43 × 1010</td>
+      <td>3.17 × 1010</td>
+      <td>3.11 × 1010</td>
+      <td>2.90 × 1010</td>
+      <td>± 4.07 x 109</td>
+      <td>–79.8</td>
+      <td>0.000125*</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>2.98 × 1010</td>
+      <td>3.17 × 1010</td>
+      <td>2.84 × 1010</td>
+      <td>3.00 × 1010</td>
+      <td>± 1.69 x 109</td>
+      <td>–81.2</td>
+      <td>0.000056*</td>
+    </tr>
+    <tr>
+      <td>Dorsal stripe</td>
+      <td>5.89 × 109</td>
+      <td>8.87 × 109</td>
+      <td>5.28 × 109</td>
+      <td>6.68 × 109</td>
+      <td>± 1.92 x 109</td>
+      <td>–84.5</td>
+      <td>0.000300**</td>
+    </tr>
+    <tr>
+      <td>Ventral stripe</td>
+      <td>1.16 × 1010</td>
+      <td>9.44 × 109</td>
+      <td>7.10 × 109</td>
+      <td>9.39 × 109</td>
+      <td>± 2.26 x 109</td>
+      <td>–91.0</td>
+      <td>0.000002**</td>
+    </tr>
+    <tr>
+      <td>Yolk sac stripe</td>
+      <td>2.59 × 109</td>
+      <td>1.84 × 109</td>
+      <td>1.26 × 109</td>
+      <td>1.90 × 109</td>
+      <td>± 6.66 x 108</td>
+      <td>–89.5</td>
+      <td>0.004**</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (right)</td>
+      <td>3.11 × 108</td>
+      <td>4.07 × 108</td>
+      <td>2.75 × 108</td>
+      <td>3.31 × 108</td>
+      <td>± 6.85 x 107</td>
+      <td>–93.1</td>
+      <td>0.002**</td>
+    </tr>
+    <tr>
+      <td>Lateral stripe (left)</td>
+      <td>4.81 × 108</td>
+      <td>4.52 × 108</td>
+      <td>2.44 × 108</td>
+      <td>3.92 × 108</td>
+      <td>± 1.30 x 108</td>
+      <td>–90.2</td>
+      <td>0.014**</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4.21 × 108</td>
+      <td>7.36 × 108</td>
+      <td>1.37 × 109</td>
+      <td>8.43 × 108</td>
+      <td>± 4.84 x 108</td>
+      <td>–84.0</td>
+      <td>0.000015*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-Values determined by Tukey post hoc test following one-way ANOVA. **p-Values determined directly by one-way ANOVA. p-Values were considered significant <0.05. Raw data provided in Table 3—source data 1._
+
+**Table 4.**
+ Quantification of volume and cumulative sum of intensity for mitfaw2/w2 samples for segmented pigment regions.Table 4—source data 1.Source data for quantification of volume and cumulative sum of intensity for mitfaw2/w2 samples for segmented pigment regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mitfaw2/w2 specimen</th>
+      <th>#1§</th>
+      <th>#2§</th>
+      <th>#3§</th>
+      <th>Average</th>
+      <th>SD</th>
+      <th>% Change from wt</th>
+      <th>p-Value</th>
+    </tr>
+    <tr>
+      <th>Pigment region</th>
+      <th colspan="7">Segmented volume (µm3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>1.64 × 106</td>
+      <td>2.03 × 106</td>
+      <td>1.72 × 106</td>
+      <td>1.80 × 106</td>
+      <td>± 2.04 x 105</td>
+      <td>–63.1</td>
+      <td>0.000015*</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>7.99 × 105</td>
+      <td>1.00 × 106</td>
+      <td>7.93 × 105</td>
+      <td>8.64 × 105</td>
+      <td>± 1.18 x 105</td>
+      <td>–26.0</td>
+      <td>0.032*</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>8.41 × 105</td>
+      <td>1.02 × 106</td>
+      <td>9.21 × 105</td>
+      <td>9.28 × 105</td>
+      <td>± 9.09 x 104</td>
+      <td>–24.2</td>
+      <td>0.120*</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4.22 × 103</td>
+      <td>5.02 × 103</td>
+      <td>5.29 × 103</td>
+      <td>4.84 × 103</td>
+      <td>± 5.57 x 102</td>
+      <td>–92.5</td>
+      <td>0.000169*</td>
+    </tr>
+    <tr>
+      <td>Pigment region</td>
+      <td colspan="7">Cumulative sum of intensity (normalized units)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>1.97 × 1011</td>
+      <td>2.64 × 1011</td>
+      <td>1.91 × 1011</td>
+      <td>2.17 × 1011</td>
+      <td>± 4.05 x 1010</td>
+      <td>–55.0</td>
+      <td>0.000040*</td>
+    </tr>
+    <tr>
+      <td>RPE (right)</td>
+      <td>1.01 × 1011</td>
+      <td>1.33 × 1011</td>
+      <td>8.80 × 1010</td>
+      <td>1.07 × 1011</td>
+      <td>± 2.30 x 1010</td>
+      <td>–25.4</td>
+      <td>0.040*</td>
+    </tr>
+    <tr>
+      <td>RPE (left)</td>
+      <td>9.54 × 1010</td>
+      <td>1.31 × 1011</td>
+      <td>1.03 × 1011</td>
+      <td>1.10 × 1011</td>
+      <td>± 1.86 x 1010</td>
+      <td>–31.2</td>
+      <td>0.010*</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.40 × 108</td>
+      <td>2.70 × 108</td>
+      <td>2.77 × 108</td>
+      <td>2.62 × 108</td>
+      <td>± 1.98 x 107</td>
+      <td>–95.0</td>
+      <td>0.000007*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-Values determined by Tukey post hoc test following one-way ANOVA. § = head segment only analyzed. p-Values were considered significant <0.05. Raw data provided in Table 4—source data 1._
 
 Overall, the slc24a5b1/b1 larvae exhibited a 75.3% decrease in mean segmented melanin volume (p = 0.000005) from wild-type while the mitfaw2/w2 fish exhibited a 63.1% decrease (p = 0.000015, Figure 5A). Total melanin content (the cumulative sum of intensity in the segmented regions) followed a similar trend with an 83.8% decrease in slc24a5b1/b1 larvae (p = 0.000004) and a 55.0% decrease in mitfaw2/w2 larvae (p = 0.000040, Figure 5B). We also compared the melanin volume and content for the combined right and left RPE (Figure 5C–D), which contained the majority of the pigment for all samples, and the non-eye body melanin (Figure 5E–F). The slc24a5b1/b1 RPE exhibited a 65.4% decrease in melanin volume (p = 0.001) and an 80.5% decrease in melanin content from wild-type RPE (p = 0.000058). Although the mitfaw2/w2 mutant is generally considered to have normal eye pigmentation, we found that it exhibited a 28.5% decrease in melanin content from the wild-type RPE (p = 0.014), potentially linked to an observed 25.1% decrease in RPE volume, which was not statistically significant (p = 0.06). Interestingly, because RPE melanin made up 99.9% (SD = ± 0.02%) of the observed staining in the mitfaw2/w2 larvae, this smaller decrease in eye melanin content still left the mitfaw2/w2 fish with more total melanin than the golden fish, which had consistently and dramatically diminished melanin throughout the body and eyes (Figure 5B, D, F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68920/elife-68920-fig5-v1.jpg)
 
-**Figure 5.:** Wild-type (wt, n = 3), slc24a5 (n = 3), and b1/b1mitfa (n = 3) 5 days post-fertilization (dpf) larvae were stained with silver and micro-CT imaged under the same conditions. Normalized reconstructed intensity values (norm. values) are assumed proportional to melanin density; integrated intensity values for the segmented regions represent the melanin content of these regions. Volume and melanin content from total pigmented regions (w2/w2A–B), combined right and left retinal pigment epithelia (RPE) (C–D), and pigmented regions outside the eye (E–F) are shown for all samples with percent change of mean from wt indicated. p-Values were determined by Tukey post hoc test following one-way ANOVA and considered significant at p < 0.05 (shown in red). § = head segments only analyzed. Error bars = standard deviation from average.
+**Figure 5.:** Wild-type (wt, n = 3), slc24a5b1/b1 (n = 3), and mitfaw2/w2 (n = 3) 5 days post-fertilization (dpf) larvae were stained with silver and micro-CT imaged under the same conditions. Normalized reconstructed intensity values (norm. values) are assumed proportional to melanin density; integrated intensity values for the segmented regions represent the melanin content of these regions. Volume and melanin content from total pigmented regions (A–B), combined right and left retinal pigment epithelia (RPE) (C–D), and pigmented regions outside the eye (E–F) are shown for all samples with percent change of mean from wt indicated. p-Values were determined by Tukey post hoc test following one-way ANOVA and considered significant at p < 0.05 (shown in red). § = head segments only analyzed. Error bars = standard deviation from average.
 
-## Conclusions and future work
+### Conclusions and future work
 
 Vertebrate models such as zebrafish play a key role in understanding human health and disease by elucidating relationships between mutations or environmental exposures and observable phenotypic changes, including pigmentation-related disorders such as albinism and melanoma. Ideally, the quantitative study of individual cell types in the 3D context of the whole organism would inform such relationships. In this study, we investigated whole-animal melanin pigmentation in wild-type and mutant zebrafish through the novel application of ionic silver staining for micro-CT imaging. Using this method, we were able to not only faithfully reconstruct pigmentation patterns of the larval zebrafish but moreover segment these patterns into anatomical regions and calculate relative pigmentation statistics within and between samples. Silver staining for melanin micro-CT has applications for other model organisms, as well as human biopsies for diseases like melanoma, and represents a model for the 3D quantitative analysis of specific biological features using micro-CT.
 

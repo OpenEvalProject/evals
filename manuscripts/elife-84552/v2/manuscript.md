@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04v2twj65 Department of Biological and Medical Sciences, Oxford Brookes University Oxford United Kingdom
-2. https://ror.org/024d6js02 Department of Parasitology, Charles University Prague Czech Republic
-3. https://ror.org/02e16g702 Research Center of Mathematics for Social Creativity, Research Institute for Electronic Science, Hokkaido University Sapporo Japan
-4. https://ror.org/05q8wtt20 Laboratory for Spatiotemporal Regulations, National Institute for Basic Biology Okazaki Japan
+1. Department of Biological and Medical Sciences, Oxford Brookes University Oxford United Kingdom ([ROR:04v2twj65](https://ror.org/04v2twj65))
+2. Department of Parasitology, Charles University Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+3. Research Center of Mathematics for Social Creativity, Research Institute for Electronic Science, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
+4. Laboratory for Spatiotemporal Regulations, National Institute for Basic Biology Okazaki Japan ([ROR:05q8wtt20](https://ror.org/05q8wtt20))
 5. Spatiotemporal Regulations Group, Exploratory Research Center for Life and Living Systems Okazaki Japan
 6. Department of Basic Biology, School of Life Science Okazaki Japan
 
@@ -27,13 +27,29 @@
 
 ## Abstract
 
-Attachment to a substrate to maintain position in a specific ecological niche is a common strategy across biology, especially for eukaryotic parasites. During development in the sand fly vector, the eukaryotic parasite Leishmania adheres to the stomodeal valve, as the specialised haptomonad form. Dissection of haptomonad adhesion is a critical step for understanding the complete life cycle of Leishmania . Nevertheless, haptomonad studies are limited, as this is a technically challenging life cycle form to investigate. Here, we have combined three-dimensional electron microscopy approaches, including serial block face scanning electron microscopy (SBFSEM) and serial tomography to dissect the organisation and architecture of haptomonads in the sand fly. We showed that the attachment plaque contains distinct structural elements. Using time-lapse light microscopy of in vitro haptomonad-like cells, we identified five stages of haptomonad-like cell differentiation, and showed that calcium is necessary for Leishmania adhesion to the surface in vitro. This study provides the structural and regulatory foundations of Leishmania adhesion , which are critical for a holistic understanding of the Leishmania life cycle.
+Attachment to a substrate to maintain position in a specific ecological niche is a common strategy across biology, especially for eukaryotic parasites. During development in the sand fly vector, the eukaryotic parasite Leishmania adheres to the stomodeal valve, as the specialised haptomonad form. Dissection of haptomonad adhesion is a critical step for understanding the complete life cycle of Leishmania. Nevertheless, haptomonad studies are limited, as this is a technically challenging life cycle form to investigate. Here, we have combined three-dimensional electron microscopy approaches, including serial block face scanning electron microscopy (SBFSEM) and serial tomography to dissect the organisation and architecture of haptomonads in the sand fly. We showed that the attachment plaque contains distinct structural elements. Using time-lapse light microscopy of in vitro haptomonad-like cells, we identified five stages of haptomonad-like cell differentiation, and showed that calcium is necessary for Leishmania adhesion to the surface in vitro. This study provides the structural and regulatory foundations of Leishmania adhesion, which are critical for a holistic understanding of the Leishmania life cycle.
 
 ## Introduction
 
 Attachment to a substrate to maintain position in a specific permissive ecological niche is a commonly exploited strategy across biology. It has especially been employed as a strategy for escape from host defences and for vector transmission to the host by pathogens including many eukaryotic unicellular parasites such as Plasmodium, Giardia and the kinetoplastids, including Leishmania spp., Trypanosoma cruzi, and Trypanosoma congolense (Beattie and Gull, 1997; Dvorak et al., 1975; Evans et al., 1979; Friend, 1966; Killick-Kendrick et al., 1974; Tetley and Vickerman, 1985; Bloodgood, 1990). For example, Plasmodium falciparum constructs knobs for attachment to host tissues to avoid clearance. Knobs are organised multi-protein structural complexes with specificity defined by the PfEMP1 variant expressed (Jensen et al., 2020).
 
 Leishmania spp. are flagellated eukaryotic parasites that cause leishmaniasis, a neglected tropical disease with a range of different pathologies (Burza et al., 2018). Leishmania has a complex life cycle with multiple developmental forms as it cycles between a sand fly vector and a mammalian host (Sunter and Gull, 2017). During parasite development in the sand fly, the parasite adheres to and colonises the stomodeal valve at the anterior end of the midgut (Figure 1A; Dostálová and Volf, 2012). The attached form is called the haptomonad and is characterised by a reduced flagellum with an enlarged flagellar tip that contains a complex and poorly characterised set of cytoskeletal structures (Killick-Kendrick et al., 1974; Killick-Kendrick et al., 1977; Molyneux et al., 1975). These structures including the attachment plaque at the membrane-substrate interface form a strong connection between the parasite and the underlying cuticle of the stomodeal valve. The role of the haptomonad form is not fully understood but it is likely required to maintain a persistent infection in the sand fly vector, and contributes to the destruction and obstruction of the stomodeal valve by the secretion of chitinase and the formation of the gel-like plug and the haptomonad parasite sphere. These facilitate reflux and the transmission of parasites during the feeding on the vertebrate host (Bates, 2007; Hall et al., 2021; Rogers et al., 2008; Rogers et al., 2002; Serafim et al., 2018; Volf et al., 2004).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon of the sand fly digestive tract highlighting the position of the stomodeal valve, the site of differentiation of free-swimming Leishmania promastigotes into haptomonads, which attach to the stomodeal valve surface via a shortened and expanded flagellum (Right black box). SBFSEM slice (bottom left) showing a cross section of the stomodeal valve at the position indicated by the dotted line in the cartoon (Figure 1—video 1). (B) SBFSEM slice and 3D reconstruction showing attached haptomonads in close proximity to each other and attached to the stomodeal valve (grey) by flagella (peach) of different lengths (Figure 1—videos 2–3). (C) Sequential SBFSEM images (every 900 nm) showing details of the attached flagella from cells 1 and 2 in C. Top: lower magnification view showing entire cells. Bottom: higher magnification view of the attachment region indicated by the yellow dotted box in the top image. Both cells were attached to the stomodeal valve by a flagellum containing an attachment plaque (yellow and red arrowheads), but no attachment plaque was formed between neighbouring flagella (asterisk). (D) 3D reconstruction of the inner flagellum structures from cells 1 and 2 in C, showing the attachment plaques and the lack of attachment between flagella (asterisk, as indicated in D). (E) Scatter plots of cell body length against cell body width (Top), and flagellum length against axoneme length (Bottom) of attached cells with the distal flagellar tip attachment (Blue circles; n=50), attached cells with the laterally attached flagellum (Green triangles; n=17), and unattached cells (Orange squares; n=39) in the sand fly. (F) 3D reconstruction (left and top right) showing a slender and wider cell (cell 3 and 4 respectively in C) attached to the stomodeal valve via an attachment plaque formed on the lateral part or the distal tip of the flagellum, respectively. Note: the axoneme extended along the length of the flagellum in cell 3 with the laterally attached flagellum, whereas in the cell 4 with the distal flagellar tip attachment, the axoneme only just extended beyond the end of the cell body. SBFSEM image (bottom right) showing a cross section of an attachment plaque (red arrowheads) formed on the lateral part of the flagellum of cell 3. (G) SBFSEM slices (top left and right) and 3D reconstruction (bottom left) showing a dividing haptomonad with two nuclei (blue arrowheads) and two attached flagella. Top and bottom right: higher magnification views of the attachment plaques in each flagellum (yellow and red arrowheads, corresponding to the colours of the attachment plaques in the 3D reconstruction).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Mapping of an infected stomodeal valve showing the position of the nuclei of different attached cells, colour code according to the cell’s division status (Figure 1—video 4). Whole view (left) and magnified views of the outside (middle; black dotted box 1) and the inside (right; black dotted box 2) of the stomodeal valve. Different coloured spheres indicate nuclei of cells which have one nucleus and one flagellum (1N1F; blue), nuclei of cells which have one or two nucleus and two flagella (1N2F or 2N2F; magenta), and nuclei of cells which have two or more nuclei but in which new flagellum assembly has not occurred (≥2N1 F; yellow). Two or more nuclei in a single cell body are linked by cyan bars. The stomodeal valve is shown in brown. The yellow line indicates the boundary box of the imaged volume. (B) Counts of the nuclei of attached cells present in the volume obtained from two SBFSEM runs. The percentages and number of nuclei counted are shown above the bars.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sequential SBFSEM images (every 100 nm; left) and 3D reconstruction (right) showing a haptomonad flagellum with part of the attachment plaque detached from the stomodeal valve. (B) Sequential SBFSEM images (every 100 nm; left) and 3D reconstruction showing a haptomonad flagellum completely detached from the stomodeal valve with the attachment plaque left at the tip.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Top left: lower magnification view showing a SBFSEM cross-section of the stomodeal valve. Bottom left: magnified view of the stomodeal valve surface at the area where no haptomonads were attached and no damage to the stomodeal valve was seen (yellow dotted Box 1 in the top left image). Top and bottom right: magnified views of the stomodeal valve surface at areas where a large number of haptomonads attached (yellow dotted box 2 and 3 in the top left image). Note: compared to the area where there was no haptomonad adhesion, the areas with a large number of haptomonads showed detachment of the cuticle lining indicating potential damage to the stomodeal valve surface. Black arrowheads: areas where the flagellum of a haptomonad is attached on the stomodeal valve.
 
 In transmission electron microscopy (TEM) images, the haptomonad form attachment plaque is strikingly reminiscent of the hemidesmosomes that attach epithelial cells to the underlying extracellular matrix. Hemidesmosomes are formed by a set of transmembrane proteins (integrins and BP180), which connect the extracellular basal lamina to intracellular adaptor proteins (Plectin and BP230) that bind to intermediate filaments (Borradori and Sonnenberg, 1999). The assembly mechanism of the related desmosome, which connects two adjacent cells, requires calcium; the removal of calcium results in the detachment of connected cells (Garrod and Chidgey, 2008). However, desmosomes are able to reversibly switch to a hyper-adhesive state, which is more stable and remains assembled even when calcium is removed (Garrod et al., 2005). Previous studies suggest that trypanosomatid attachment in vitro is resistant to divalent cation depletion and it is strengthened, rather than weakened, by the removal of divalent cations (Hendry, 1987; Molyneux et al., 1987; Bloodgood, 1990). However, no studies have examined in detail the involvement of calcium for adhesion in Leishmania.
 
@@ -43,7 +59,7 @@ Here, we have combined powerful 3D electron microscopy (volume EM - vEM) approac
 
 ## Results
 
-## Dense and complex organisation of haptomonads on the sand fly stomodeal valve
+### Dense and complex organisation of haptomonads on the sand fly stomodeal valve
 
 To understand the spatial organisation and architecture of L. mexicana haptomonads colonising the stomodeal valve, we used serial block face scanning electron microscopy (SBFSEM) to examine fixed and dissected midguts from sand flies that had been infected with L. mexicana for 10 days (Figure 1—video 1; Figure 1). At this stage, there was a dense infection around the stomodeal valve, with many haptomonads attached to the cuticle surface (Figure 1—video 2; Figure 1A–B). Around the stomodeal valve, the haptomonads were present on both sides, in a series of layers relative to the cuticle surface, with some cells very close to the surface and others further away; the flagellum length varied according to the distance to the surface (Figure 1—video 3; Figure 1B). In SBFSEM images, the attachment plaque within the flagellum appeared as an electron-dense layer overlaying the flagellar membrane and the flagellum of haptomonads attached exclusively to the cuticle surface, and no connections were observed between adjacent cells or flagella (Figure 1C–D). Attached cells had a shorter and wider cell body (Average length = 8.7 ± 1.6 μm (s.d.); average width = 2.2 ± 0.6 μm (s.d.), n=50) compared to unattached cells (Average length = 10.5 ± 2.6 μm (s.d.); average width = 1.2 ± 0.4 μm (s.d.), n=39; Figure 1E). The majority (83/100) of cells were attached via a connection at the distal tip of the flagellum, with the rest (17/100) connected laterally through the side of the flagellum (Figure 1F). In unattached cells, the microtubule axoneme extended to the tip of the flagellum (Average axoneme length = 14.2 ± 4.6 μm (s.d.), n=39), whereas in attached cells with a flagellar tip attachment, the axoneme only just extended beyond the end of the cell body (Average axoneme length = 3.3 ± 1.0 μm (s.d.), n=50), regardless of the length of the flagellum (Figure 1D–F). Those attached cells with a relatively long flagellum and shortened axoneme may have completed differentiation into the haptomonad form, but due to the high cell density at the stomodeal valve, there may be insufficient space to allow them to fully disassemble their flagellum (Figure 1B and F). In the cells with the laterally attached flagellum, the axoneme extended further along the flagellum (Average axoneme length = 10.0 ± 6.2 μm (s.d.), n=17) and their cell body length and width were intermediate between attached cells with a flagellar tip attachment and unattached cells (Average length = 9.1 ± 1.9 μm (s.d.); average width = 1.6 ± 0.4 μm (s.d.), n=17), suggesting that these parasites may be in the process of differentiating to or away from the haptomonad form (Figure 1E–F). Most of unattached cells and cells with a laterally attached flagella had a metacyclic/leptomonad morphology, which is consistent with previous reports of the cell type in the sand fly cardia at late stages of infection (Figure 1E; Rogers et al., 2002).
 
@@ -51,9 +67,17 @@ We took advantage of the large numbers of cells visualised by our SBFSEM approac
 
 In addition, as has been observed in previous studies (Rogers et al., 2008; Schlein et al., 1992; Volf et al., 2004), we observed a detachment of the cuticular lining from the epithelial cells at the areas of the stomodeal valve where a large number of haptomonads were adhered (Figure 1—figure supplement 3).
 
-## The haptomonad flagellum is a highly modified and specialised organelle
+### The haptomonad flagellum is a highly modified and specialised organelle
 
 To obtain more detailed 3D information on the attachment structure of individual haptomonads, we stopped SBFSEM imaging half-way through the stomodeal valve area where haptomonad cells of comparable density to those observed in the heavily infected stomodeal valve of a previous study were seen (Rogers et al., 2008), and then semi-thin (~150 nm) serial sections were cut from the SBFSEM sample block face, for use in serial electron tomography (Figure 2—video 1). A 3D model was created from the reconstructed serial tomogram, and the detailed 3D configuration of the attached flagellum and the region around the flagellar pocket of the haptomonad cell was examined (Figure 2—video 2; Figure 2A). As observed in the SBFSEM data, the haptomonad was attached to the stomodeal valve through the distal tip of the shortened flagellum, and the attachment interface was covered with an electron-dense attachment plaque (Figure 2A–B). The anterior tip of the cell body in promastigotes is asymmetrical with the cell body extending along the side of the flagellum in which the flagellum attachment zone (FAZ) is found, with its typical electron-dense junctional complexes (Sunter et al., 2019; Wheeler et al., 2016). In the haptomonad cell, this asymmetric cell body extension is much shorter, with a wider anterior cell tip (Figure 2A–C). The haptomonad flagellar pocket consisted of a bulbous region at its base and a neck region more closely apposed to the flagellum, with the microtubule quartet running over the bulbous region and into the neck region. In comparison with the promastigote, the neck region was shorter, and as the flagellum exited the neck region there was an expansion of the flagellum, with a large number of junctional complexes connecting the flagellar membrane to the cell body membrane (Figure 2A and C). A 9+2 microtubule axoneme was present within the flagellum; however, the axoneme extended only just beyond the cell body and the central pair microtubules were not present in the final few hundred micrometres (Figure 2D–F). Markham rotational averaging (Gadelha et al., 2006; Skalický et al., 2017) showed that the 9+2 axoneme was associated with accessory structures required for motility including radial spokes and inner and outer dynein arms (Figure 2E). In addition, the tip of the shortened outer doublet microtubules and central pair microtubules were capped with amorphous material and a ring-like capping structure (Figure 2—figure supplement 1). Finally, in the haptomonad flagellum, we did not observe the paraflagellar rod (PFR), an extra-axonemal structure (Figure 2D–F; Portman and Gull, 2010).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig2-v2.jpg)
+
+**Figure 2.:** Different serial tomograms of haptomonads in the sand fly, focusing on the attachment region (Figure 2—video 1). (A–C) 3D reconstruction (Figure 2—video 2; A) and slices (B, C) from the serial tomogram shown in Figure 2—video 1. (B) Low- (left) and high- (right) magnification tomogram slices showing the attachment plaque region (green arrowheads), the expanded flagellum attachment zone (FAZ; yellow arrows) found in attached cells, as well as filament bundles (asterisks) and vesicles (black arrowheads) found inside the attached flagellum. (D, E) Slices from a different tomogram showing the shortened haptomonad 9+2 axoneme, in longitudinal section (D) and cross-section (E). The nine-fold Markham rotational averaging of the same axoneme (inset in E) highlights the presence of inner and outer dynein arms (white and black arrowheads, respectively) and radial spokes (white arrow). (F) 3D reconstruction of the shortened 9+2 axoneme shown in D. (G–I) Slices from a higher magnification tomogram of the attachment region. The image on the right in G shows a high-magnification view of the boxed area on the left image, with the distinct ultrastructural elements of the attachment region indicated. The black arrowheads indicate the gap between the flagellum and the stomodeal valve. (H) Magnified view of the gap between the flagellum and the stomodeal valve in a different area of the tomogram. Electron-dense structures (magenta arrowheads) appear to connect the flagellar membrane to the stomodeal valve surface in the narrower (~10 nm wide) regions of the gap, but were absent in the wider (~20 nm wide) region of the gap. (I) Different area of the tomogram showing vesicles (cyan arrowheads) budding from (or fusing with) the flagellar membrane at the attachment interface.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sequential tomographic slices (every 10 nm) showing the tip structure of the haptomonad axoneme. The order of the slices is indicated at top left of each image. White arrowheads: ring-shaped capping structure. White brackets: amorphous material. (B) Whole mount cytoskeleton of an in vitro haptomonad-like cell attached to a formvar membrane, image by negative staining transmission electron microscopy (left). Top right: higher magnification view of the anterior tip of the cell (yellow dotted box 1) showing filament bundles (yellow arrowheads), likely remnants of filamentous structures seen in the attached flagellum. Bottom right: magnified view of the axoneme tip (yellow dotted box 2), showing the ring-shaped capping structure (white arrowhead).
 
 Filaments and filament bundles were present throughout the attached flagellum extending from the FAZ to the attachment interface over a distance of ~3 μm (Figure 2B–C and G). These filamentous structures appeared to connect the attachment interface to the cell body via the junctional complexes (Figure 2C). A complex of attachment plaque structures was present at the attachment interface of the flagellar membrane connected to the surface of the stomodeal valve (Figure 2G). The attachment plaque complex consisted of several structural layers, with outer and inner dense plaques, each approximately 10 nm thick, just inside the flagellar membrane, with a dense filamentous layer (~100 nm thick) emerging from the inner dense plaque and extending into the filamentous structures that ran towards the FAZ (Figure 2G). We also found that the stomodeal valve had a layered structure (Figure 2G). A thin layer similar in appearance to the flagellar membrane, approximately 10 nm thick, was observed overlaying the cuticular layer. This is likely the wax layer that is composed of lipidic components and is analogous to insect epicuticle (Figure 2G; Schmidt et al., 1998; Vincent, 2001). No readily observable differences in the superficial and inner structure of the stomodeal valve were found between regions where haptomonads were attached, compared with the region lacking attached parasites.
 
@@ -61,17 +85,45 @@ Across the majority of the attachment interface the flagellar membrane was posit
 
 The haptomonad flagellar membrane did not encase the flagellum smoothly, and there were numerous projections and indentations within the membrane (Figure 2B–C). Furthermore, large vesicular structures were observed throughout the flagellum (Figure 2C). Intriguingly, several smaller vesicles were seen near the attachment interface, and in one instance, a vesicle appeared to be fusing with or budding from the flagellar membrane (Figure 2I).
 
-## In vitro generated haptomonad-like cells morphologically resemble sand fly haptomonads
+### In vitro generated haptomonad-like cells morphologically resemble sand fly haptomonads
 
 In vitro haptomonad-like cells have previously been generated by allowing promastigote cells to adhere to scratched plastic (Maraghi et al., 1987; Wakid and Bates, 2004). We used this approach here to generate in vitro haptomonad-like cells, which allowed us to analyse aspects of the adhesion process that are difficult to study in vivo, such as initial adhesion formation and dynamics. In scanning electron microscopy (SEM) imaging of cultures 72 hr after seeding promastigote cells onto the scratched plastic coverslips, we observed large clumps of cells that contained a mixture of haptomonad-like cells with a short flagellum attached to the substrate via an attachment plaque and promastigote cells with an unattached long flagellum, in addition to individual haptomonad-like cells with a short attached flagellum (Figure 3A). We examined the organisation and architecture of the in vitro generated haptomonad-like cells by SBFSEM (Figure 3—video 1; Figure 3B). In a reassembled and modelled volume through an attached cell clump, we observed haptomonad-like cells clearly attached to the substrate with an organisation that resembled the haptomonads in the sand fly. The cell body was short and wide with a short flagellum that was attached through its tip to the substrate, with an electron-dense region at the attachment interface (Figure 3B). In addition to unattached cells within the clump, many more dividing (1N2F or 2N2F) cells were seen than in the sand fly (Figure 3—video 2; Figure 3—figure supplement 1). The unattached cells appeared to be trapped by a filamentous extracellular matrix, which was also found between haptomonad cells in the sand fly (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scanning electron microscopy images of in vitro haptomonad-like cells on a plastic coverslip. Left: Low-magnification image showing groups of cells (yellow arrowheads) attached to the substrate. Middle: a magnified view of the clump of attached haptomonad-like cells indicated by the white dotted box in the left image. Right: an individual haptomonad-like cell from the attached clump indicated by the white dotted box in the middle image. (B) Low-magnification SBFSEM image of haptomonad-like cells attached to a plastic coverslip in vitro (left; Figure 3—video 1). Magnified SBFSEM image (middle) and 3D reconstruction (right) of an in vitro haptomonad-like cell. SBFSEM slices show the haptomonad-like cell attached to the substrate with an electron-dense attachment plaque (yellow arrowheads). (C) Slices of a serial tomogram and 3D reconstruction (top right) of an in vitro haptomonad-like cell. Top left: tomographic slice through the region of the flagellum attachment to the cell, highlighting the FAZ and the flagellar pocket. Yellow arrows: junctional complexes. Bottom left: high-magnification view of the attachment region and the FAZ. Bottom right: magnified views of the tomogram showing that the attachment plaque observed in vitro has the same distinct ultrastructural elements identified in attachment plaques in vivo (in the sand fly; Figure 2G). Black arrowheads show the gap between the flagellum and the substrate. (D) Box-whisker plots of flagellum (top left), axoneme (top right) and cell body (bottom left) length and cell body width (bottom right) of haptomonads in sand flies and in vitro haptomonad-like cells. Boxes and whiskers indicate the median, upper and lower quartiles and 5th/95th percentiles. Blue crosses and grey dots indicate mean values and outliers, respectively. No significant (ns) morphological differences were found between haptomonads in sand flies and in vitro haptomonad-like cells, except for cell body length. p-Values calculated using two-tailed Welch’s t-test. N=50 (in sand flies) and 30 (in vitro).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mapping of nuclei of in vitro haptomonad-like cells (Figure 3—video 2). Left: whole view. Right: magnified view. Different coloured spheres indicate nuclei of cells which have one nucleus and one flagellum (1N1F; blue), nuclei of cells which have one or two nucleus and two flagella (1N2F or 2N2F; magenta), and nuclei of cells which have two or more nuclei but in which flagellar division was not occurring (≥2N1 F; yellow). Two or more nuclei in a single cell body are linked by cyan bars. The substrate is shown in brown. The yellow line indicates the boundary box of the imaged volume. (B) Counts of the nuclei of cells present in the volume obtained from two SBFSEM runs. The percentages and number of nuclei counted are shown above the bars.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** SBFSEM slices of sand fly (top) and in vitro (bottom) cells showing attached cells and unattached promastigotes (asterisk) surrounded by a filamentous matrix (arrowheads).
 
 We used serial section electron tomography to examine the 3D ultrastructure of the in vitro haptomonad-like cells. The overall organisation of the attachment structure of the in vitro haptomonad-like cell was highly similar to that of the sand fly haptomonads. The in vitro cells had a shortened attached flagellum with a 9+2 microtubule axoneme, without the PFR, a shorter and a wider anterior cell tip, with an expanded FAZ area containing typical junctional complexes (Figure 3—videos 3–4, Figure 3C). Filamentous structures were present across the flagellum extending from the FAZ to the attachment plaque complex. The attachment plaque complex had a layered structure similar to that of the haptomonads in the sand fly, although the dense filament layer that is proximal to the dense plaque (towards the cell body) appeared slightly sparser in the in vitro haptomonad-like cell (Figure 3C).
 
 In addition, we compared the morphology of in vitro haptomonad-like cells with the sand fly haptomonads by measuring flagellum and axoneme length, and cell body length and width using the SBFSEM data (Figure 3D). The in vitro haptomonad-like cells had a slightly longer cell body, but were similar in terms of flagellum and axoneme length and cell body width. Overall, the in vitro haptomonad-like cells appeared similar in cellular organisation and ultrastructure to the sand fly haptomonads, confirming that the in vitro forms are a good foundation on which to study the molecular cell biology of haptomonads.
 
-## Adhesion of the in vitro haptomonad-like cell occurs through a series of defined steps
+### Adhesion of the in vitro haptomonad-like cell occurs through a series of defined steps
 
 The plastic surface used for generation of in vitro haptomonad-like cell was suitable for electron microscopy analyses, but was not suitable for light microscopy. However, we discovered that specific glass substrates whose surfaces have hydrophobic properties supported the differentiation of promastigotes to in vitro haptomonad-like cells. We took advantage of this and followed the in vitro adhesion process using time-lapse microscopy (Figure 4—video 1; Figure 4A). The adhesion process in our system took between 2 and 9 hr to complete and did not appear synchronous in the population. After examining 8 videos of cells adhering (showing a total of 10 adhering cells), we identified five distinct stages in the adhesion process (Figure 4—video 1; Figure 4A). In the first stage of adhesion (stage 1), the cells appeared to explore the surface with their flagellum, making contact as shown by the distortion of the flagellar membrane and the release of membrane ‘streamers’ (Figure 4—videos 1–2; Figure 4B; Figure 4—figure supplement 1; Ellis et al., 1976; Bloodgood, 1990). In stage 2, a segment of the flagellum initiated adhesion to the substrate. The initial point of adhesion was not restricted to the tip of the flagellum, but could be any point along the flagellum length. Stage 3 was characterised by cells remaining more stably fixed to a specific point on the surface, with the cell being able to move relative to this point, while the attachment region appeared to slide along the length of the flagellum. In cells where the initial point of adhesion was away from the base of the flagellum, a flagellum loop often formed, ensuring that the cell body was in close proximity to the point of adhesion (in the videos examined, 7 out of 10 cells attempting to attach formed a flagellum loop). In stage 4, the flagellum began to shorten, and expansion of the flagellar membrane was observed, with fusion of the membrane in the looped area of the flagellum if present. Finally, in the last stage of adhesion (stage 5), there was maturation of the attachment region, with the presence of a clear attachment plaque and the cell body rotating from lying parallel to the surface to being upright. Throughout these steps, the cell body gradually became shorter and wider.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sequential frames (at 60 min intervals) from a time-lapse video (Figure 4—video 1) of adhesion of a haptomonad-like cell, as viewed by bright field microscopy. The numbers and arrows above the images indicate the 5 different stages of adhesion observed by time-lapse. Yellow arrowheads show the adhesion point. In stage 1, a promastigote cell first probes the substrate surface using the flagellum, and then a small section of the flagellum starts to adhere to the surface (stage 2). In stage 3, the flagellum is more clearly (and widely) adhered to the surface, and then the flagellum disassembles (stage 4). Finally, a clear attachment plaque is observed, representing mature attachment (stage 5). (B) Scanning electron microscopy images of cells in different stages of adhesion, showing that initial adhesion and disassembly of the flagellum can occur with (3 and 4) or without (3’ and 4’) the formation of a loop in the flagellum. The dotted boxes show magnified views of the attachment region in cells at early (1 and 2) and late (5) stages of adhesion. The yellow arrowheads indicate deformation of the flagellar membrane in initial adhesion regions. (C) Sequential frames (at 10 min intervals) from a time-lapse video (Figure 4—video 3) showing that adhesion is reversible at its early stages (stage 1–3). (D) Fluorescent images of promastigotes and haptomonad-like cells expressing an axoneme marker (mCherry::RSP4/6; red) and a PFR marker (mNeonGreen::PFR2; green) showing the disassembly of the PFR and partial disassembly of the axoneme. The stages of adhesion are indicated on the left-hand side of each image row.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequential frames from a time-lapse video (Figure 4—video 2) of the adhesion of an in vitro haptomonad-like cell (at 2 min intervals), showing membrane streamers from the flagellum (white arrowheads). White arrows indicate membrane streamers emerging from the posterior end of the cell. (B) Scanning electron microscopy images of a cell releasing membrane streamers from the flagellum (left) and magnified view of the flagellar tip (right), showing details of the flagellum membrane streamers (white arrowheads).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Scatter plot of mCh::RSP4/6 signal length against mNG::PFR2 signal length. The length of the mNG::PFR2 signal of cells whose mNG signal is not visible is indicated as zero, and these points are indicated by blue circles (n=9). Plots for cells with visible mNG::PFR2 signal are indicated by orange squares (n=38).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84552/elife-84552-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Example images of log phase promastigotes and in vitro purified metacyclics. Note: the metacyclics have a flagellum that is longer than the cell body and a short slender cell body. (B) Comparison of the adhesion ability between log phase promastigotes and in vitro purified metacyclics. Log phase promastigotes and in vitro purified metacyclics (1×106 cells/ml, respectively) were cultured on gridded glass coverslips in a 24-well plate with 1 ml of complete M199 medium for 24 hr at 28 °C with 5% CO2, and the number of attached cells per grid area was quantified in the same method as in the Figure 5C. Data represent mean ± SEM (n=3 independent experiments). For the metacyclics, the quantification was carried out twice using in vitro purified metacyclics from different cultures (metacyclics 1 and 2). The blue dots represent individual measurement from three-independent experiments. p-Values calculated using two-tailed Welch’s t-test.
 
 When examining cells that had been allowed to adhere to glass for 24 hr, we identified each of these stages described above by SEM (Figure 4B). This suggests that the adhesion process of in vitro haptomonad-like cells occurs through a defined series of steps. In addition, we noted that some attempts to attach to the surface were unsuccessful. In the videos examined, 3 out of 10 cells observed attempting to attach to the surface formed an initial adhesion but then detached and swam away before flagellum disassembly (Figure 4—video 3; Figure 4C). This suggests that in vitro at least the initial stages (1-3) of adhesion are reversible.
 
@@ -79,7 +131,7 @@ Our electron microscopy showed that, despite being much reduced, the haptomonad 
 
 The cells with lateral attachment and unattached cells around the stomodeal valve (Figure 1E–F) had a cell morphology similar to that of metacyclics or leptomonads. To address whether metacyclics are able to attach, in vitro purified metacyclics were allowed to attach to glass for 24 hr (Figure 4—figure supplement 3). After 24 hr very few metacyclics had attached in comparison to promastigotes, suggesting that in vitro metacyclics have little adhesive capacity.
 
-## Adehsion of in vitro haptomonad-like cells is dependent on Ca2+
+### Adehsion of in vitro haptomonad-like cells is dependent on Ca2+
 
 The formation of hemidesmosomes and desmosomes in multicellular organisms is regulated by Ca2+ (Trinkaus-Randall and Gipson, 1984). In contrast, earlier studies reported that trypanosomatid adhesion to surfaces in vitro was resistant to divalent cation depletion (Hendry, 1987; Molyneux et al., 1987; Bloodgood, 1990). To investigate the role of Ca2+ in the process of adhesion formation and maintenance, we examined adhesion in the presence of EGTA in M199 medium, which includes ~2 mM Ca2+. The addition of 1 or 2 mM EGTA to the medium had no effect on the growth of promastigotes in suspension culture (Figure 5A). However, the presence of EGTA during adhesion resulted in a dramatic reduction in the number of attached cells after 24 hr (Figure 5B–C), with an increased effect at the higher concentration of EGTA (Figure 5C). These results contrast with those reported by Hendry, 1987, who found that T. congolense adheres to substrates in vitro even in Ca2+/Mg2+-free medium (medium containing 1 or 10 mM EDTA, or Ca2+/Mg2+-free PBS). Thus, our data indicate that there are different regulatory mechanisms for adhesion in different trypanosomatids. To examine whether the removal of Ca2+ from cells that have already attached to the substrate disrupted their attachment, we incubated attached in vitro haptomonad-like cells (formed by differentiation for 24 hr in vitro) in the medium containing 2 mM EGTA for 30 min, and then counted the number of cells that remained attached to the glass (Figure 5D). The removal of Ca2+ from the medium did not cause cells to detach (Figure 5D), which was consistent with the previous studies showing that Ca2+ is not required for attachment maintenance in other trypanosomatids (Molyneux et al., 1987). Overall, our results suggest that Ca2+ is critical for adhesion formation but not maintenance in Leishmania in vitro.
 
@@ -115,56 +167,178 @@ The detailed 3D organisation and architecture of the haptomonad attachment and i
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Leishmania mexicana)</td>
+      <td>RSP4/6</td>
+      <td>TriTrypDB (http://tritrypdb.org/tritrypdb/)</td>
+      <td>LmxM.13.0430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Leishmania mexicana)</td>
+      <td>PFR2</td>
+      <td>TriTrypDB (http://tritrypdb.org/tritrypdb/)</td>
+      <td>LmxM.16.1430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Leishmania mexicana)</td>
+      <td>L. mexicana</td>
+      <td>Sunter lab stocks</td>
+      <td>WHO strain MNYC/BZ/1962 /M379</td>
+      <td>The identity has been authenticated by genome and mRNA sequencing.The strain was monitored for contamination, including mycoplasma contamination, through DNA staining and microscopy during data capture.</td>
+    </tr>
+    <tr>
+      <td>Cell line (L. mexicana)</td>
+      <td>mCherry::RSP4/6, mNeonGreen::PFR2</td>
+      <td>Wang et al., 2021L. mexicana cell line provided by Dr Richard Wheeler (University of Oxford)</td>
+      <td>NA</td>
+      <td>The identity has been authenticated by genome sequencing.The cell line was monitored for contamination, including mycoplasma contamination, through DNA staining and microscopy during data capture.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lutzomyia longipalpis)</td>
+      <td>L. longipalpis</td>
+      <td>Volf and Volfova, 2011</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3dmod</td>
+      <td>Kremer et al., 1996</td>
+      <td>PMID:8742726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>http://bio3d.colorado.edu/imod</td>
+      <td>RRID:SCR_003297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>PMID:16182563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>https://microsoft.com/mac/excel</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>python</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>matplotlib</td>
+      <td>Hunter, 2007</td>
+      <td>RRID:SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gridded glass coverslips grid-500</td>
+      <td>iBidi</td>
+      <td>Cat. #: 10816</td>
+      <td>In vitro haptomonad-like cell preparation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Thermanox plastic coverslips</td>
+      <td>Nalgene Nunc International</td>
+      <td>Cat. #: 174950</td>
+      <td>In vitro haptomonad-like cell preparation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>µ-dish 35 mm, high grid-500 glass bottom</td>
+      <td>iBidi</td>
+      <td>Cat. #: 81168</td>
+      <td>In vitro haptomonad-like cell preparation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 L. mexicana (WHO strain MNYC/BZ/1962 /M379) promastigotes were grown at 28 °C in M199 medium with 10% foetal calf serum (FCS), 40 mM HEPES-HCl (pH 7.4), 26 mM NaHCO3 and 5 µg/ml haemin. Cells were maintained in logarithmic growth by regular subculturing.
 
-## Infection of L. mexicana in the sand fly
+### Infection of L. mexicana in the sand fly
 
 Sand fly infection was carried out as described in Sádlová et al., 2021. Briefly, females of Lutzomyia longipalpis were fed through a chick-skin membrane on heat-inactivated sheep blood containing Leishmania mexicana promastigotes from log-phase cultures at a concentration 2×106 cells/ml. Blood-engorged females were separated and maintained at 26 °C and high humidity with free access to a 50% sugar solution, with a 14 hr light/10 hr dark photoperiod. They were dissected on day 10 after a bloodmeal, and the dissected guts were fixed for 24 hr at 4 °C in Karnovsky fixative (2.5% glutaraldehyde and 2% paraformaldehyde in 0.1 M cacodylate buffer (pH 6.9)), transferred to the washing solution (0.1 M cacodylate buffer with 2.7% glucose) and kept at 4 °C.
 
-## Serial block face scanning electron microscopy (SBFSEM)
+### Serial block face scanning electron microscopy (SBFSEM)
 
 All steps of sample processing for SBFSEM were performed at room temperature, unless stated otherwise, and all washing steps consisted of 3 washes, with 5 min incubations/wash. The fixed Leishmania infected guts were washed in 0.1 M cacodylate buffer (pH 6.9) and then incubated in 1% osmium tetroxide in 0.1 M cacodylate buffer containing 1.5% potassium ferricyanide, for 1 hr in the dark. The guts were then washed with ddH2O, incubated in freshly prepared 1% thiocarbohydrazide (TCH) for 20 min in the dark, washed in ddH2O, and incubated in 2% osmium tetroxide in ddH2O for 30 min in the dark. The guts were washed again with ddH2O and incubated in 1% uranyl acetate in ddH2O overnight, at 4 °C and in the dark. Then, the guts were washed with ddH2O and dehydrated in an ethanol series (30, 50, 70, 90, 100% (v/v), and 2×absolute ethanol; 10 min / step). The guts were embedded in TAAB 812 hard resin (TAAB Laboratories Equipment Ltd, Aldermaston, UK). Resin pieces containing the stomodeal valve region of the gut were mounted onto aluminium pins using conductive epoxy resin, sputter coated with a thin (12–14 nm) layer of gold, and then imaged in a Zeiss Merlin VP Compact fitted with a 3view2XP system (Gatan/Ametek, Pleasanton, CA). Serial images of the block face were recorded at an accelerating voltage of 1.8 kV and an aperture size of 20 μm. The pixel size and the dwell time for image capture were 5 nm and 3 μs, respectively, and the slice thickness was 100 nm. Images were recorded using an OnPoint backscattered electron detector (Gatan/Ametek, Pleasanton, CA). Data were segmented manually to 3D models, using 3dmod (IMOD software package; Kremer et al., 1996; see below for more detailed method). For the SBFSEM observation of in vitro haptomonad-like cells, plastic coverslips containing adherent cells were fixed in 0.1 M phosphate buffer (pH 6.9) with 2.5% glutaraldehyde and 2% paraformaldehyde for 2 hr, and then embedded as described above. After resin hardening, the plastic coverslip was removed and samples were remounted so that the attached surface was surrounded by resin on both sides. Resin pieces containing the attachment region were mounted onto pins with the attachment surface perpendicular to the block face, and then imaged as described above.
 
-## Serial section electron microscopy tomography
+### Serial section electron microscopy tomography
 
 Ribbons of serial sections of ~150 nm were produced from sample blocks prepared for SBFSEM observations (as described above), and collected on formvar-coated slot grids. Sections were stained with Reynolds lead citrate before imaging at 120 kV, on a Jeol JEM-1400Flash (JEOL, Akishima, Japan) with a OneView (Gatan/Ametek, Pleasanton, CA) camera. Each individual tomogram was produced from a total of 240 4K x 4K pixel images (120 tilted images each of 0 and 90° axes, with 1° tilting between images) acquired automatically using SerialEM (Mastronarde, 2005; Mastronarde, 2003). Individual tomograms were produced using ETomo (IMOD software package), and consecutive tomograms were then joined to produce serial tomogram volumes, using ETomo. Data were segmented manually to produce 3D models, using 3dmod (see below for more detailed method).
 
-## Three-dimensional modelling and data deposition of the SBFSEM and electron tomography data
+### Three-dimensional modelling and data deposition of the SBFSEM and electron tomography data
 
 Three-dimensional models of the SBFSEM and electron tomography data were created by manually tracing structures in each slice, and surface meshes were computed from the traced contours in each slice using 3dmod (see the following link for more detailed manual; https://bio3d.colorado.edu/imod/doc/3dmodguide.html). The 3D models of the stomodeal valve or plastic substrate with high electron density outlines were generated using the isosurface function of 3dmod. Also, we deposited the original SBFSEM (EMPIAR-11463 and EMPIAR-11464) and electron tomography (EMPIAR-11467 and EMPIAR-11468) data as an MRC image file, which can be opened and analysed using 3dmod, on EMPIAR (Iudin et al., 2023; https://www.ebi.ac.uk/empiar/).
 
-## In vitro haptomonad-like cell adhesion
+### In vitro haptomonad-like cell adhesion
 
 Axenic haptomonad-like cells were generated by culturing 1×106 cells/ml promastigotes on gridded glass coverslips grid-500 (iBidi, Gräfelfing, Germany) which were cut into small pieces of ~5 × 5 mm and sterilised with 100% ethanol (for light microscopy and SEM) or 13 mm round Thermanox plastic coverslips (Nalgene Nunc International, Rochester, NY) scratched with sandpaper and sterilised with 100% ethanol (for SBFSEM) in a 24-well plate with 1 ml of M199 medium at 28 °C with 5% CO2 for 24 hr (for light microscopy and SEM) or 72 hr with M199 medium being replaced every 24 hr (for SBFSEM).
 
-## Light microscopy
+### Light microscopy
 
 For light microscopy of living cells, in vitro haptomonad-like cells attached to a piece of a gridded glass coverslip were washed twice in DMEM, incubated in DMEM with Hoechst 33342 (1 µg/ml) for 5 min and then washed twice in DMEM. Coverslip pieces were mounted onto another glass coverslip and then onto a glass slide, with the cell attachment side facing up. Attached cells were imaged using a Zeiss ImagerZ2 microscope with 63×objective and a Hamamatsu Flash 4 camera.
 
-## Time-lapse observation of in vitro haptomonad-like cell adhesion
+### Time-lapse observation of in vitro haptomonad-like cell adhesion
 
 For time-lapse observation, log phase promastigotes (1×106 cells/ml) were cultured in a µ-dish 35 mm, high grid-500 glass bottom (iBidi, Gräfelfing, Germany) for 12 hr, and the dish was washed five times with fresh M199 medium before the start of imaging. Cells about to adhere to the glass were recorded using Zeiss LSM 880 confocal microscopy with 63×objective for 24 hr at 28 °C with 5% CO2 in a chamber with controlled temperature and CO2 concentration.
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 In vitro haptomonad-like cells on a piece of a gridded glass coverslip were fixed with 2.5% glutaraldehyde in PEME (0.1 M PIPES, pH 6.9, 2 mM EGTA, 1 mM MgSO4, 0.1 mM EDTA). After an hour, coverslips were washed once in PEME and once in ddH2O. The coverslips were then dehydrated using increasing concentrations of ethanol (30%, 50%, 70%, 90%, 100% (v/v), and 2×absolute ethanol; 10 min / step). The coverslips were then critical point dried, mounted onto SEM stubs using carbon stickers, and sputter coated with a layer of 12–14 nm of gold. Images were taken on a Hitachi S-3400N scanning electron microscope at 5 kV, at a 5.5 mm working distance.
 
-## Quantitative analysis of the effect of calcium on in vitro haptomonad-like adhesion
+### Quantitative analysis of the effect of calcium on in vitro haptomonad-like adhesion
 
 Log phase promastigotes (1×106 cells/ml) were cultured on ~5 × 5 mm pieces of gridded glass coverslips in a 24-well plate with 1 ml of control M199 medium (complete M199 medium including 10% ddH2O) or M199 media including 10% ddH2O and 1 or 2 mM EGTA (all media were adjusted to pH 7.4 with NaOH) for 24 hr at 28 °C with 5% CO2. The coverslips were washed twice with 1 ml of DMEM, incubated in 1 ml of DMEM with Hoechst 33342 (1 µg/ml) for 5 min, and washed twice with 1 ml of DMEM. The glass pieces were mounted with another glass coverslip on a glass slide. The cells were imaged using a Zeiss ImagerZ2 microscope with 20×objective and Hamamatsu Flash 4 camera.
 
 Log phase promastigotes (1×106 cells/ml) were cultured on ~5 × 5 mm pieces of gridded glass coverslips in a 24 well plate with 1 ml of M199 medium for 24 hr at 28 °C (in a 5% CO2 atmosphere). The coverslips were transferred into 1 ml of control M199 medium or M199 medium with 2 mM EGTA, respectively and incubated for 30 min. The coverslips were washed twice with 1 ml of DMEM, incubated in 1 ml of DMEM with Hoechst 33342 (1 µg/ml) for 5 min, and washed twice with 1 ml of DMEM. The glass pieces were mounted with another glass coverslip on a glass slide. The cells were imaged using a Zeiss ImagerZ2 microscope with 20×objective and Hamamatsu Flash 4 camera. To quantify cell adhesion under different conditions, the number of cells attached to a single grid lattice area was counted manually using Fiji (Schindelin et al., 2012).
 
-## Negative staining of in vitro haptomonad-like cells
+### Negative staining of in vitro haptomonad-like cells
 
 Promastigotes (1×106 cells/ml) were cultured on formvar-coated 200 mesh nickel grids in a 6 well plate with 5 ml of M199 medium, for 24 hr at 28 °C (with 5% CO2). In vitro haptomonad-like cells attached on the formvar membrane were treated with 1% IGEPAL in PEME (0.1 M PIPES, pH 6.9, 2 mM EGTA, 1 mM MgSO4, 0.1 mM EGTA) for 5 min, fixed with 2.5% glutaraldehyde in PEME for 10 min and stained with 1% aurothioglucose in ddH2O. The samples were observed using a Jeol JEM-1400 Flash transmission electron microscope operating at 120 kV and equipped with a OneView 16-megapixel camera (Gatan/Ametek, Pleasanton, CA).
 
-## Metacyclic purification by Ficoll density gradient
+### Metacyclic purification by Ficoll density gradient
 
 In vitro L. mexicana metacyclics were purified as described in Späth and Beverley, 2001. Briefly, stationary phase parasites (~5 × 107 cells/ml) were centrifuged at 800 g for 10 min and the cells were resuspended in DMEM. In a 15 ml of Falcon tube containing 2 ml of 40% Ficoll 400 (Melford, Ipswich, Suffolk, UK) in ddH2O at the bottom, 2 ml of 10% Ficoll 400 in M199 medium without FCS and then 2 ml of the concentrated parasites in DMEM were overlaid. The tube was centrifuged at 1300 g for 10 min and parasites located at the upper 10% Ficoll boundary were collected, centrifuged at 800 g for 5 min and resuspended in complete M199 at a cell concentration of 1×106 cells/ml. Log phase promastigotes and in vitro purified metacyclics (1×106 cells/ml, respectively) were cultured on gridded glass coverslips in a 24 well plate with 1 ml of complete M199 medium for 24 hr at 28 °C with 5% CO2, and the number of attached cells per grid area was quantified in the same method as described above.
 
-## Statistical analysis
+### Statistical analysis
 
 Means, SDs and SEMs were calculated using Microsoft Excel. Statistical significance was determined using two-tailed Welch’s t-test carried out with Microsoft Excel. Differences were considered significant at the level of p<0.05. Data were plotted with Microsoft Excel or the Matplotlib package in Python (Hunter, 2007).

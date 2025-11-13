@@ -18,7 +18,7 @@
 
 ## Abstract
 
-ZnT8 is a Zn 2+ /H + antiporter that belongs to SLC30 family and plays an essential role in regulating Zn 2+ accumulation in the insulin secretory granules of pancreatic β cells. However, the Zn 2+ /H + exchange mechanism of ZnT8 remains unclear due to the lack of high-resolution structures. Here, we report the cryo-EM structures of human ZnT8 (HsZnT8) in both outward- and inward-facing conformations. HsZnT8 forms a dimeric structure with four Zn 2+ binding sites within each subunit: a highly conserved primary site in transmembrane domain (TMD) housing the Zn 2+ substrate; an interfacial site between TMD and C-terminal domain (CTD) that modulates the Zn 2+ transport activity of HsZnT8; and two adjacent sites buried in the cytosolic domain and chelated by conserved residues from CTD and the His-Cys-His (HCH) motif from the N-terminal segment of the neighboring subunit. A comparison of the outward- and inward-facing structures reveals that the TMD of each HsZnT8 subunit undergoes a large structural rearrangement, allowing for alternating access to the primary Zn 2+ site during the transport cycle. Collectively, our studies provide the structural insights into the Zn 2+ /H + exchange mechanism of HsZnT8.
+ZnT8 is a Zn2+/H+ antiporter that belongs to SLC30 family and plays an essential role in regulating Zn2+ accumulation in the insulin secretory granules of pancreatic β cells. However, the Zn2+/H+ exchange mechanism of ZnT8 remains unclear due to the lack of high-resolution structures. Here, we report the cryo-EM structures of human ZnT8 (HsZnT8) in both outward- and inward-facing conformations. HsZnT8 forms a dimeric structure with four Zn2+ binding sites within each subunit: a highly conserved primary site in transmembrane domain (TMD) housing the Zn2+ substrate; an interfacial site between TMD and C-terminal domain (CTD) that modulates the Zn2+ transport activity of HsZnT8; and two adjacent sites buried in the cytosolic domain and chelated by conserved residues from CTD and the His-Cys-His (HCH) motif from the N-terminal segment of the neighboring subunit. A comparison of the outward- and inward-facing structures reveals that the TMD of each HsZnT8 subunit undergoes a large structural rearrangement, allowing for alternating access to the primary Zn2+ site during the transport cycle. Collectively, our studies provide the structural insights into the Zn2+/H+ exchange mechanism of HsZnT8.
 
 ## Introduction
 
@@ -28,15 +28,43 @@ ZnT8 functions as a Zn2+/H+ exchanger (Ohana et al., 2009; Shusterman et al., 2
 
 ## Results
 
-## Structure determination of HsZnT8
+### Structure determination of HsZnT8
 
 HsZnT8 isoform B lacking the N-terminal 49 residues gave higher protein expression than the full-length isoform A and was used for structure determination in this study (Figure 1—figure supplement 2a). To be consistent with the amino acid numbering used for isoform A in other studies, the starting residue of isoform B is numbered as 50 in the subsequent description of our structural and functional analyses. The purified HsZnT8 in digitonin detergent formed a dimer in solution and eluted as a monodisperse peak on size exclusion chromatography (Figure 1—figure supplement 2b). The small size of HsZnT8 (about 70 kDa as a dimer) imposed a high technical challenge for its structure determination using cryo-EM. Volta phase plate was employed in data collection to enhance the contrast for better image alignment (Danev and Baumeister, 2016), and the initial data was collected using the wild-type HsZnT8 (HsZnT8-WT) sample prepared in the presence of Zn2+ (1 mM). The single particle reconstruction yielded a map of the transporter in an outward-facing conformation, but the overall resolution of 4.1 Å is insufficient for accurate model building (Figure 2—figure supplement 1). Subsequently, we introduced two mutations, D110N and D224N, at the predicted primary Zn2+ binding site within the TMD of HsZnT8 (HsZnT8-DM) (Hoch et al., 2012). As the primary site functions as the transfer center for Zn2+ transport, we reasoned that by abolishing its Zn2+-binding capability, the HsZnT8-DM mutant could potentially stabilize the transporter in a specific state. Indeed, the double mutations appeared to further stabilize the transporter in outward-facing conformation and data collected using HsZnT8-DM sample prepared in the absence of Zn2+ yielded a map of the outward-facing transporter with an improved resolution (~3.8 Å) as compared to HsZnT8-WT, allowing us to build a near complete model containing 302 out of 320 residues for each subunit, with the help of the crystal structure of EcYiiP (Lu et al., 2009; Figure 1—figure supplements 3, 4a).
 
 Interestingly, the EM data collected with HsZnT8-WT in the absence of Zn2+ yielded a structure of the dimeric transporter with heterogeneous conformations- one subunit in an inward-facing and the other in an outward-facing conformation (Figure 3—figure supplement 1). Similar heterogeneous conformations have been observed in other multimeric transporters, such as nucleoside (Hirschi et al., 2017) and glutamate transporters (Arkhipova et al., 2020). Albeit the cryo-EM structure of HsZnT8-WT in the absence of Zn2+ was determined at a low overall resolution (5.9 Å), the secondary structure features were well resolved for both TMD and CTD, enabling us to build a relatively accurate model for the inward-facing subunit by rigid-body fitting of the individual transmembrane helix and CTD from the outward-facing structure into the map (Figure 3—figure supplement 1g). Furthermore, the density for most of the linkers between adjacent transmembrane helices were well defined in the cryo-EM map, further facilitating the model building of the inward-facing structure (Figure 3—figure supplement 1g).
 
-## Overall structure of HsZnT8 in the outward-facing conformation
+### Overall structure of HsZnT8 in the outward-facing conformation
 
 The structure of HsZnT8 in the outward-facing state shows a ‘V’-shaped dimeric architecture similar to the crystal structure of EcYiiP, with the two TMDs forming the branches, whereas the two tightly packed CTDs located at the base of the ‘V’ and mediating the majority of the dimerization interactions (Figure 1a–c, Figure 1—figure supplement 5a). The gap between the two TMDs in the HsZnT8 dimer is narrower than that of EcYiiP (Figure 1—figure supplement 5b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-v2.jpg)
+
+**Figure 1.:** (a) Cryo-EM reconstruction of HsZnT8-DM in the outward-facing conformation (contour level: 0.018, 4.8 σ). The two subunits are colored in blue and green, respectively. (b) The ribbon representation of the HsZnT8-DM dimer in the side view. (c) The cylinder representation of the HsZnT8-DM dimer in the top view with TMs from one subunit labeled. (d) The ribbon representation of a single HsZnT8-DM subunit with secondary structural elements labeled. (e) Zoomed-in views of the interface between the two adjacent CTDs in two orthogonal orientations. (f) Zoomed-in view of the interface between the two adjacent TMDs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The protein accession codes for HsZnT8 and its bacterial orthologs are indicated.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Topology and domain organization of the HsZnT8 subunit. The starting points of isoform A and B are labeled. (b) A representative size-exclusion chromatography of HsZnT8-DM (left) and the SDS–PAGE of the peak fractions (right, coomassie staining). Arrow indicates the peak fraction collected for structural determination.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Representative electron micrograph and 2D class averages of the HsZnT8-DM. (Scale bar: 200 Å) (b) Cryo-EM map colored by local resolution. (c) Euler angle distribution of particles used in the final 3D reconstructions. (d) The gold-standard Fourier shell correlation curve for the cryo-EM map shown in Figure 1a. (e) FSC curve for the refined model versus the cryo-EM map. (f) Flowchart of cryo-EM data processing.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Representative density maps of CTD domain and each TM of HsZnT8-DM. (b) The cryo-EM map of HsZnT8-DM low-pass filtered to 5 Å showing the clear density (indicated by a dash box) for the linker between HCH motif and the N-terminus of TM1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Overall structures of HsZnT8 (blue) and EcYiiP (pink, PDB: 3H90) in outward-facing conformation. (b) Superposition of the dimeric HsZnT8 (blue) and EcYiiP (pink). (c) Superposition of the TMDs of HsZnT8 (blue) and EcYiiP (pink). (d) Superposition of the CTDs of HsZnT8 (blue) and EcYiiP (pink), showing the different locations of the Zn2+ binding sites in CTD. (e) Superposition of the TM2-3 loops of HsZnT8 (blue) and EcYiiP (pink), showing the different locations of the Zn2+ binding sites at the CTD/TMD interface. (f) RMSD value of TMD and CTD between HsZnT8 and EcYiiP in outward-facing conformation. RMSD was calculated based on only the position of C-α atom.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The starting residues of isoform A and B are labeled. The Zn2+ binding sites residues are marked with boxes. The protein accession codes for different ZnT8 orthologs are indicated.
 
 The CTD of HsZnT8 adopts a αββαβ fold, a conserved feature of SLC30 family (Figure 1d, Figure 1—figure supplements 2a, 6). While one face of the three-stranded β sheet is covered by the two α helices, the other face of the β sheet provides the major contact surface for the dimerization interactions with its counterpart from the neighboring CTD (Figure 1e). The protein contacts at the core of this dimer interface are mainly hydrophobic, consisting of multiple aromatic residues including Trp306s, His304s and Phe134s (Figure 1e). Notably, Phe134 comes from the extended loop between TM2 and TM3 of TMD, which protrudes into the CTD of the neighboring subunit and tucks into the pocket between β1 and the C-terminal tail. The CTD dimerization also involves multiple hydrogen bonding interactions, for example the H-bonds between Arg331s and Gln350s (Figure 1e).
 
@@ -44,29 +72,63 @@ Arg325, whose mutation (R325W) is associated with higher risk of type 2 diabetes
 
 Among the six transmembrane helices (TM1-TM6) in the TMD of each HsZnT8 subunit, TMs 3 and 6 also participate in the dimerization through hydrophobic interactions with their counter parts from the neighboring subunit at the cytosolic leaflet of the membrane (Figure 1f). In addition, Arg138s at the N-terminal ends of TM3s and Glu276s at the C-terminal ends of TM6s from both subunits converge at the cytosolic surface of the membrane and form a cluster of salt bridges (Figure 1e). The extensive dimerization interactions at CTDs as well as TMs 3 and 6 imply that these parts of the protein likely remain static during Zn2+ transport cycle, leaving other part of the TMD (TMs 1, 2, 4 and 5) undergo conformational changes as will be further discussed later.
 
-## Zn2+ binding sites in CTD
+### Zn2+ binding sites in CTD
 
 The structure of HsZnT8-DM reveals two adjacent Zn2+ binding sites (designated as SCD1 and SCD2) within each CTD, in a pocket encircled by the U-shaped loop near the C-terminus of the protein right after β3 (Figure 2a–c). The EM map shows strong density peaks at both SCD1 and SCD2 that can be assigned to Zn2+ ions (Figure 2b,c). Although Zn2+ binding was also observed in the CTD of EcYiiP, the exact locations and the surrounding chemical environments of SCD1 and SCD2 in HsZnT8 are distinct from those in EcYiiP (Figure 1—figure supplement 5d). In HsZnT8, Zn2+ ions in both SCD1 and SCD2 are coordinated in a classical tetrahedral geometry with the SCD1 Zn2+ chelated by His52, His54, Cys361, and Cys364, and the SCD2 Zn2+ chelated by Cys53, His301, His318 and Glu352 (Figure 2b,c). Consistent with our model, Cys361 and Cys364 at the C-terminus of ZnT8 have been predicted, based on sequence alignment, to be important for zinc binding (Parsons et al., 2018). Notably, His52, Cys53 and His54 come from the HCH (His52-Cys53-His54) motif at the N-terminus of the neighboring HsZnT8 subunit. The HCH motif seals off SCD1 and SCD2, making the two bound Zn2+ ions buried in the protein. As the HsZnT8-DM sample was prepared in the absence of Zn2+, the bound Zn2+ ions likely come from the host cells for protein expression and appear to be integral part of the protein with high-affinity binding. The HCH motif is highly conserved in ZnT8s (Figure 1—figure supplement 6) as well as some subfamilies of ZnT, but is not present in YiiP transporter whose N-terminus does not participate in Zn2+ binding (Figure 1—figure supplement 1). As a result, the two CTD Zn2+ ions in YiiP are partially solvent-exposed with water molecules participating in the ion coordination (Lu et al., 2009).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig2-v2.jpg)
+
+**Figure 2.:** (a) Overall view of Zn2+ binding sites in HsZnT8-WT. The location of each site is indicated by a dash box. (b) and (c) Detailed views of SCD1 and SCD2 in the structure of HsZnT8-DM in the absence of Zn2+. The cryo-EM densities are displayed as blue mesh (6 σ). (d) , (e) and (f) Detailed views of SIF and STM in the structures of HsZnT8-DM in the absence of Zn2+ and HsZnT8-WT in the presence of Zn2+. The cryo-EM densities are displayed as blue mesh (6 σ). The density differences between the cryo-EM maps of HsZnT8-DM in the absence of Zn2+ and HsZnT8-WT in the presence of Zn2+ are shown as orange blobs (8 σ). (g) Representative fluorescence traces of vesicular Zn2+ uptake for the cells expressing wild-type HsZnT8 or its mutants. Non-induced HEK293F cells (empty) was used as the negative control. Expression levels of HsZnT8 wild type and mutants were monitored by western blot using anti-flag antibody. Mouse anti-β-actin was used as a loading control. (h) Relative Zn2+ uptake rate between HsZnT8 and its mutants (Mean ± SD). The uptake rates were normalized to the expression levels of HsZnT8. Each experiment was repeated four times. Significance calculated using two-tailed students t-test; between wild-type and mutants; ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) 3D reconstruction of HsZnT8-WT in the presence of Zn2+ (left) and the corresponding ribbon representation of this complex (right). The 4 Zn2+ binding sites in one subunit are labeled. The bound Zn2+ ions are shown as pink spheres. (b) The gold-standard Fourier shell correlation curve for the cryo-EM map shown in (a). (c) FSC curve for the refined model versus the cryo-EM map. (d) Representative density maps of CTD domain and each TM of HsZnt8-WT in the presence of Zn2+. (e) Superposition between the models of HsZnT8-DM in the absence of Zn2+ (blue) and HsZnT8-WT in the presence of Zn2+ (pink). Inset: zoomed-in view of the superposition at STM site.
 
 The HCH motif is connected to the N-terminus of TM1 by a short 7-residue linker whose density is clearly visible in the low-pass filtered cryo-EM map (Figure 1—figure supplement 4b), but cannot be modeled due to the lack of side-chain densities. The Zn2+-mediated tight tethering between HCH motif and the neighboring CTD likely imposes constrain to the position and movement of TM1 (Figures 1b and 2a). It is, therefore, appealing to speculate that the Zn2+-mediated stretching and tethering of the N-terminal segment of HsZnT8 that immediately precedes TM1 may play a critical role in the stability and transport function of the TMD in HsZnT8. To test this hypothesis, we generated an N-terminal deletion mutation lacking the HCH motif (ΔHCH) and tested the mutant function using a cell-based Zn2+ uptake assay. With comparable protein expression level, cells expressing ΔHCH mutant showed marked reduction in Zn2+ uptake activity as compared to cells expressing wild-type transporter (Figure 2g,h), confirming the functional importance of the HCH motif.
 
 From the structure of HsZnT8-WT determined in the presence of Zn2+, we also observed cryo-EM density from a third Zn2+ ion coordinated by His137 and His345 at the interface between CTD and TMD, which is designated as SIF (Figure 2a,d). This Zn2+ density was not present in the HsZnT8-DM structure which was determined in the absence Zn2+ (Figure 2d), suggesting a lower affinity Zn2+ binding at SIF as compared to the other two CTD sites (SCD1 and SCD2). Interestingly, SIF is positioned right at the cytosolic entrance to the Zn2+ transport pathway (Figure 2a) and mutation of the two SIF histidines resulted in marked reduction in Zn2+ transport rate (Figure 2g,h). As the physiological function of ZnT8 is to transport Zn2+ ions from low concentration cytosol (free Zn2+ concentration:~1 nM) to high concentration granule (free Zn2+ concentration:~120 nM) (Krezel and Maret, 2006; Hessels et al., 2015), we suspect SIF can help trap Zn2+ ions and effectively increase the local Zn2+ concentration, which in turn facilitate the ion transport against over 100-fold concentration gradient.
 
-## Zn2+ binding sites in TMD
+### Zn2+ binding sites in TMD
 
 The primary Zn2+ binding site in HsZnT8 TMD (designated as STM) is highly conserved in SLC30 family (Figure 1—figure supplement 6). STM is surrounded by His106, Asp110, His220 and Asp224 at the middle of the membrane and exposed to the luminal solution in the outward-facing structure (Figure 2e). The density of a bound Zn2+ can be defined in the EM map of HsZnT8-WT (Figure 2f, Figure 2—figure supplement 1). Although the side-chains of those ligand residues are not well defined in the map due to the resolution limit, their locations and conservation likely point to a classical tetrahedral coordination as observed in EcYiiP structure. As expected, STM is vacant in HsZnT8-DM structure because the two Zn2+-coordinating acidic residues (Asp110 and Asp224) were replaced with asparagines in the mutant and the sample was also prepared in the absence of Zn2+ (Figure 2e). Although the structure of HsZnT8-DM is virtually identical to that of HsZnT8-WT (Figure 2—figure supplement 1e), the mutant has almost no Zn2+ transport activity (Figure 2g,h), confirming the central role of STM to HsZnT8 function.
 
-## Structural changes from outward- to inward-facing states
+### Structural changes from outward- to inward-facing states
 
 Intriguingly, the two subunits in the cryo-EM structure of HsZnT8-WT obtained in the absence of Zn2+ adopt different conformations, with one subunit in inward-facing but the other in outward-facing conformation (Figure 3a). Although at lower resolution, the secondary structure features from almost all part of the inward-facing subunit can be well defined, allowing us to visualize the structural changes between inward and outward-facing conformations (Figure 3a,b, Figure 3—figure supplement 1). In the outward-facing conformation, TMs 1–5 are tightly bundled at the cytosolic half of TMD, occluding the space between STM and the cytosol; at the luminal half of TMD, TMs 2–6 enclose a deep cavity, penetrating into the central STM where Zn2+ binds and providing a solvent accessible passageway from luminal side (Figure 2a, Figure 3c, Figure 3—figure supplement 2d). In the inward-facing conformation, TMs 2–6 are tightly bundled at the luminal half of TMD and occlude the solvent accessible passageway from luminal side; TMs 1–6 enclose a wide open cavity at the cytosolic half of TMD, making STM readily accessible from cytosol (Figure 3a–c, Figure 3—figure supplement 2d).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig3-v2.jpg)
+
+**Figure 3.:** (a) 3D reconstruction of HsZnT8-WT in the absence of Zn2+ and the ribbon representation of the model fitted into cryo-EM map. (b) Top view of the TMD (TMs 1–6) from the inward-facing subunit in ribbon representation fitted into cryo-EM map. (c) The surface-rendered models of an outward-facing subunit from the HsZnT8-DM structure (left) and an inward-facing subunit from the HsZnT8-WT structure obtained in the absence of Zn2+ (right). The brown dashed lines indicate the opening of STM to either the luminal or the cytosolic side. (d) Superposition between the structures of HsZnT8-DM dimer (grey) and HsZnT8-WT dimer (orange) both obtained in the absence of Zn2+ (e) Superposition of the TMD structures between the outward-facing subunit from HsZnT8-DM (with TMs colored in grey) and the inward-facing subunit from HsZnT8-WT (with TMs 1–2 colored in brown, TMs 4–5 in green and TMs 3 and six in blue), revealing two different types of rocking motions (indicated by the arrows).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Representative electron micrograph and 2D class averages of the HsZnT8-WT in the absence of Zn2+. (Scale bar: 200 Å) (b) Cryo-EM map colored by local resolution. (c) Euler angle distribution of particles used in the final 3D reconstructions. (d) The gold-standard Fourier shell correlation curve for the cryo-EM map shown in Figure 3a. (e) FSC curve for the refined model versus the cryo-EM map. (f) Flowchart of cryo-EM data processing. (g) Representative density maps of each TM of HsZnT8-WT in the absence of Zn2+.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Structures of HsZnT8 TMD in outward- (blue) and inward-facing (green) conformation. The loops connecting TMs are omitted for clarity. (b) Superposition of the HsZnT8 TMD in outward- (blue) and inward-facing (green) conformations. (c) The angular change of each TM between outward- and inward-facing confirmations. (d) Solvent accessible cavities (grey) in outward- and inward-facing conformations.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Overall structures of HsZnT8 (blue) in heterogeneous conformation. (b) Overall structure of SoYiiP (yellow, PDB: 5VRF) in inward-facing conformation. (c) Superposition of the dimeric HsZnT8 (blue) and SoYiiP (yellow). (d) Superposition of the TMDs of HsZnT8 (blue) and SoYiiP (yellow). (e) RMSD value of TMD and CTD between HsZnT8 and SoYiiP in inward-facing conformation. RMSD was calculated based on only the position of C-α atom.
+
 Significant scissors-like rotation between two TMDs of bacterial YiiP dimer was observed between outward- and inward-facing conformations (Lopez-Redondo et al., 2018). Consequently, the relative position between the two TM3 helices changes significantly between the two conformations (Figure 1—figure supplement 5a, Figure 3—figure supplement 3b). In sharp contrast, the regions that participate in dimerization of HsZnT8, including CTD, TM3 and TM6, can all be well superimposed between the structures of inward and outward-facing conformations, indicating that these regions remain static during Zn2+ transport cycle (Figure 3d,e). However, large structural rearrangements occur among TMs 1, 2, 4 and 5 of HsZnT8, resulting from two different types of rocking motions (Figure 3e, Figure 3—figure supplement 2a–c, Video 1). From outward to inward-facing conformation, TMs 4 and 5, as a bundle, swing away from TMs 3 and 6, using their luminal ends as the pivot point; TM5 tilts approximately 35° from the center of TMD to the peripheral, resulting in the opening of cytosolic ion pathway (Figure 3e, Figure 3—figure supplement 2a–c, Video 1). TMs 1 and 2, as another bundle, undergo large inward rotation hinged at the cytosolic end of TM2, occluding the luminal ion pathway (Figure 3e, Figure 3—figure supplement 2a–c, Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-video1.mp4.jpg)
 
 In addition, we superimposed the TMD regions between the inward-facing structures of HsZnT8 and SoYiiP. This comparison revealed no major structural differences for most of TMs between HsZnT8 and SoYiiP, with the exception of TM1 (Figure 3—figure supplement 3d,e). In the inward-facing conformation of HsZnT8, TM1 packs tightly against TM2 in a manner similar to that in the outward-facing conformation. TM1 of SoYiiP, however, rotates away from TM2 during the transition from outward- to inward-facing states (Figure 3—figure supplement 3d). As mentioned above, the tethering of the N-terminal segment of HsZnT8 to CTD may restrain the flexibility of TM1 and limit its rocking rotation upon conformational change. This explains why the TM1s of HsZnT8 and SoYiiP undergo different types of structural changes during the transport cycle. We also noticed that, HsZnT8 adopts a more open inward-facing conformation as compared to SoYiiP, due to the altered position of TM1 (Figure 3—figure supplements 2d, 3d). It is tempting to speculate that, the wide open cytosolic cavity in the inward-facing conformation of HsZnT8 could facilitate the fast diffusion of Zn2+ from the cytosol to the primary Zn2+ site in TMD and thereby may increase the efficiency of Zn2+ uptake into insulin granule.
 
-## The mechanism for Zn2+/H+ antiport in HsZnT8
+### The mechanism for Zn2+/H+ antiport in HsZnT8
 
 The conformational heterogeneity of HsZnT8-WT in the absence of Zn2+ along with small size of the protein likely causes difficulty in obtaining a high-resolution cryo-EM structure. However, the observation of different conformations between the two subunits within each HsZnT8-WT dimer implies that the Zn2+ transport activity of HsZnT8 is unlikely to be coupled between the two subunits within a dimer, allowing each subunit to carry out Zn2+ transport activity independently (Figure 4a). No occluded state has been observed in all of our structural analysis, leading us to suggest a simple two-state model for Zn2+ transport function of HsZnT8 (Figure 4b). Each transporter subunit may simply shuttle between inward- and outward-facing states with STM housing the Zn2+ ion in a pH-dependent manner. At inward-facing state, higher cytosolic pH environment allows for high-affinity Zn2+ binding at STM. The presence of a secondary Zn2+ site at the cytosolic entrance of the ion pathway may help increase the local Zn2+ concentration and facilitate the Zn2+ occupancy at STM even at low concentration. Upon moving to the outward-facing state, STM becomes exposed to the low pH environment of the insulin secretory granule and the subsequent protonation of STM, likely through the two histidines, effectively reduce the Zn2+ affinity and promote its release (Figure 4b). The transporter would then move back to inward-facing states where the apo STM gets deprotonated at higher pH and ready for the next transport cycle (Figure 4b). Thus, the direction and efficiency of Zn2+ transport are simply determined by the pH and Zn2+ concentrations on both sides of the transporter.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig4-v2.jpg)
+
+**Figure 4.:** (a) A cartoon representation illustrates that each ZnT8 subunit may shuttle between inward- and outward-facing conformations independently during the Zn2+ transport cycle. (b) Schematic representation of a simplified model for the transport cycle of ZnT8. For simplicity, both subunits in a ZnT8 dimer are drawn in homogeneous conformations, but they likely carry out Zn2+/H+ exchange function independent from each other, as shown in a.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58823/elife-58823-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Several of these mutations are found in other ZnTs, but conserved in ZnT8.
 
 ## Discussion
 
@@ -80,17 +142,251 @@ In conclusion, our structural and functional analyses provide a wealth of inform
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18258012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10bac</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11496015; RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>FreeStyle 293 F cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R79007; RRID:CVCL_D603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEZT-BM</td>
+      <td>DOI:10.1016/j.str.2016.03.004</td>
+      <td>Addgene:74099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>pEZT-BM-ZNT8-NFlagand mutations</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG tag</td>
+      <td>Sigma</td>
+      <td>Cat# F1804</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-b-actin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-69879; RRID:AB_1119529</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG HRP linked whole Ab</td>
+      <td>GE healthcare</td>
+      <td>Cat# NA931V; RRID:AB_772210</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 303410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-b-Maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>Cat# D310, D310s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C6512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl Maltose Neopentyl Glycol</td>
+      <td>Anatrace</td>
+      <td>Cat# NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma</td>
+      <td>Cat# D141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,10-Phenanthroline</td>
+      <td>Sigma</td>
+      <td>Cat# 131377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FluoZin−3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# F24194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3X FLAG Peptide</td>
+      <td>Sigma</td>
+      <td>Cat# F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>https://emcore.ucsf.edu/ucsf-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/#gctf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Scheres, 2012</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera; RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>Schrödinger</td>
+      <td>https://pymol.org/2; RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/ personal/pemsley/coot; RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>https://www.phenix-online.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 8</td>
+      <td>OriginLab Corp.</td>
+      <td>https://www.originlab.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superose 6 Increase10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 29091596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-DYKDDDDK G1 Affinity Resin</td>
+      <td>GeneScript</td>
+      <td>Cat# 10362101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra-15 Centrifugal Filter Units</td>
+      <td>Milliporesigma</td>
+      <td>Cat# UFC9100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil R 1.2/1.3 grid Au300</td>
+      <td>quantifoil</td>
+      <td>Cat# Q37572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cellfectin</td>
+      <td>Invitrogen</td>
+      <td>Cat# 10362100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Human ZnT8 cDNA (residues 50–369) was cloned into pEZT vector with an N-terminal Flag tag and heterologously expressed in HEK293F cells (R79007, Thermo Fisher Scientific) using the BacMam system. The baculovirus generated in Sf9 cells (11496015, Thermo Fisher Scientific) was used to infect HEK293F cells at a ratio of 40:1 (cells:virus, v/v) and 10 mM sodium butyrate were added to the cell culture to boost protein expression. 48 hr after infection at 37°C, cells were collected by centrifugation at 4000 g. All purification procedures were carried out at 4°C unless specified otherwise. The cell pellet was re-suspended in Buffer A (25 mM Hepes pH 7.4, 150 mM NaCl) supplemented with protease inhibitors (1 mg/ml each of DNase, pepstatin, leupeptin, and aprotinin and 1 mM PMSF) and homogenized by sonication on ice. HsZnT8 protein was extracted with 1.5% (w/v) n-dodecyl-β-d-maltopyranoside (DDM; Anatrace) and 0.02% (w/v) cholesteryl hemisuccinate (CHS; Sigma-Aldrich) by gentle agitation for 2 hr. After extraction, the supernatant was collected after centrifugation at 40,000 g and incubated with anti-Flag M2 affinity resin by gentle agitation for 1 hr. Then the resin was collected on a disposable gravity column and washed with 20 column volume of Buffer A supplemented with 0.05% (w/v) lauryl maltose neopentyl glycol (MNG, Anatrace). HsZnT8 was eluted in Buffer A with 0.05% (w/v) MNG and 0.1 mg/ml Flag peptide. The protein eluate was concentrated and further purified by size-exclusion chromatography on a Superose6 10/300 GL column (GE Healthcare) in Buffer A with 0.06% (w/v) Digitonin. The peak fractions were collected and concentrated to 4 mg/ml for grid preparation.
 
 The HsZnT8 D110N/D224N double mutant construct were generated using QuikChange (Agilent). The same procedure was used to express and purify HsZnT8-DM for cryo-EM analysis.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Purified HsZnT8-DM and HsZnT8-WT either in the presence or absence of Zn2+ (1 mM) at 4 mg/ml was applied to a glow-discharged Quantifoil R1.2/1.3 300-mesh gold holey carbon grid (Quantifoil, Micro Tools GmbH, Germany), blotted under 100% humidity at 4°C and plunged into liquid ethane using a Mark IV Vitrobot (FEI). Micrographs were acquired on a Titan Krios microscope (FEI) with a K3 Summit direct electron detector (Gatan) in the super-resolution counting mode, operated at 300 kV using the SerialEM software (Mastronarde, 2005). The slit width of the GIF-Quantum energy filter was set to 20 eV. A Volta phase plate was used to enhance low-resolution features (Danev and Baumeister, 2016). Micrographs were dose-fractioned into 32 frames at the dose rate of ~2 e−/Å2/frame.
 
-## Image processing and 3D reconstruction
+### Image processing and 3D reconstruction
 
 Movie frames of HsZnT8-DM micrographs were motion-corrected and binned two-fold, resulting in the pixel size of 0.83 Å, and dose-weighted using the Motioncorr2 program (Figure 1—figure supplement 3; Zheng et al., 2017). CTF correction were performed using the GCTF programs (Zhang, 2016). The rest of the image processing steps was carried out using RELION 3 (Zivanov et al., 2018). A few micrographs from the HsZnT8-DM dataset were used for manual picking of ~1000 particles. These particles were subjected to 2D classification. Class averages representing projections of the HsZnT8 dimer in different orientations were used as templates for automated particle picking from the full datasets. A total of 1,287,890 particles were picked from 3384 micrographs. Particles were extracted and binned by four times (leading to 3.32 Å/pixel) and subjected to 2D classification. Particles in good 2D classes were chosen (569,565 in total) for 3D classification using an initial model generated from a subset of the particles in RELION. Particles from the 3D classes showing good secondary structural features were selected and re-extracted into the original pixel size of 0.83 Å. 3D refinements with C2 symmetry imposed resulted in 3D reconstructions to 4 Å resolution. To improve the resolution, we performed another round of 3D classification by using local search in combination with small angular sampling, resulting a new class showing improved density for the entire protein. The final reconstruction was resolved at overall 3.8 Å resolution.
 
@@ -100,7 +396,7 @@ The same image processing procedure was used to obtain the 3D reconstruction of 
 
 To calculate the difference map, the cryo-EM map of HsZnT8-DM in the absence of Zn2+ at 3.8 Å resolution was firstly normalized to the same grey scale as the cryo-EM map of HsZnT8-WT in the presence of Zn2+, by using the command ‘vop scale’ in UCSF Chimera (Pettersen et al., 2004). After aligning the two maps together in UCSF Chimera, the difference map was calculated by using the command ‘vop subtract’.
 
-## Model building, refinement and validation
+### Model building, refinement and validation
 
 Density maps of the HsZnT8-DM in the outward-facing conformation was of sufficient quality for de novo model building in Coot (Figure 1—figure supplement 4; Emsley et al., 2010), facilitated by previous crystal structure of EcYiiP (PDB:3H90) (Lu et al., 2009). The model was manually adjusted in Coot and refined against the map by using the real space refinement module with secondary structure and non-crystallographic symmetry restraints in the Phenix package (Adams et al., 2010). The same procedure was used to build the model of HsZnT8-WT in the presence of Zn2+.
 
@@ -108,7 +404,7 @@ The density of the HsZnT8-WT in the absence of Zn2+ in the inward-facing conform
 
 The multiple sequence alignments were performed using the program Clustal Omega (Sievers et al., 2011).
 
-## Vesicular zinc uptake assay
+### Vesicular zinc uptake assay
 
 In a previous study, it has been shown that HsZnT8 expressed in HEK293 cells facilitated vesicular Zn2+ uptake when Zn2+ was introduced into cytosol by permeabilizing surface membrane using a Zn2+ ionophore (Merriman et al., 2016). In that study, the vesicular Zn2+ accumulation was monitored by Zinpyr-1, a membrane-permeable Zn2+-selective fluorescent indicator that can be localized in vesicles. We adopted similar cell-based vesicular Zn2+ uptake assay in our study, except that we permeabilized the cells with digitonin and directly monitored the cytosolic Zn2+ concentration decrease caused by vesicular Zn2+ uptake using Zn2+ indicator FluoZin-3 as described below. HEK293F cells expressing HsZnT8 were harvested 36 hr after virus infection. To remove residual media and Zn2+, the cell pellet from 30 mL suspension culture was washed with 30 mL of uptake buffer (20 mM Hepes pH7.4 125 mM KCl, 5 mM NaCl, 10 mM Glucose, 10 μM Phenanthroline) three times, and then re-suspended in uptake buffer to a final concentration of 15 × 106 cells/mL. The cells were maintained on ice throughout. To measure Zn2+ uptake, 100 μL of cell suspension was added into each well of a 96-well plate (Corning) and the following reagents were added sequentially: 1 μM FluoZin-3, 0.01% digitonin, and 9 μM ZnCl2. Zinc uptake was monitored by measuring FluoZin-3 fluorescence change for 5 min using a Molecular Devices SpectraMax M3 plate reader (excitation/emission: 490 nm/525 nm).
 
@@ -116,6 +412,6 @@ Western blot analysis was performed on each sample used for uptake assay to ensu
 
 The identities of all the cell lines have been authenticated. The mycoplasma contamination testing was performed and shown to be negative.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The number of independent experiment, the method used in statistical test, and the statistical significance are indicated in each figure legend and source manuscript files.

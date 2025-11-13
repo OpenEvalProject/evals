@@ -37,37 +37,1471 @@ We have studied Adcyap1 and Adcyap1r1 co-expression with Slc17a7, Slc17a6, and S
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig1-v2.jpg)
 
-**Figure 1.:** (A and C) Adcyap1 (RNA coding for PACAP) co-expression with Slc17a6 (RNA coding for VGLUT2) in MEPO and BAC respectively. (B) High magnification of the MEPO region of (A). Double arrows indicate cells that co-express both mRNAs. This feature is better appreciated on the cells in which Adcyap1 is weakly expressed (weak staining), so the Slc17a6 staining can be clearly seen as independent dots. (D) Brain stem Koelliker Fuse (KF) nucleus of the parabrachial complex is another main PACAP-expressing nucleus. Adcyap1 was co-expressed intensely with Slc17a7 (RNA coding for VGLUT1). Double arrows indicate cells co-expressing both mRNAs. Panels E-H show two cerebellar regions, paraflocculus (E and F) and central (G and H) lobules, under low and high magnification, respectively, where the Adcyap1 expression was higher than rest of regions. Purkinje cells are the main GABAergic (expressing Slc32a1, RNA encoding VGAT) PACAP containing neurons, distributed in all regions of cerebellar cortex. Some GABAergic cells in granule cell layer of paraflocculus and central regions also co-expressed Adcyap1 and Slc32a1 (indicated with double pink arrowheads, see also SI-Fig.O1). In these two cerebellar regions, some granule cells also expressed Adcyap1 (indicated with single blue arrows). Nissl staining was used for counterstaining. Note: this figure contains excerpts from the more comprehensive figure supplement.Figure 1—source data 1.Adcyap1, PACAP-mRNA mapping within glutamatergic and GABAergic subpopulations of mouse brain. Slc17a7, Slc17a6, and Slc32a1: mRNAs encoding the VGLUT1, VGLUT2, and VGAT with respective color coding for the chromogens labeling the corresponding mRNAs. Double arrows indicate examples of colocalization of two probe mRNAs and single arrows indicate no-co-expression in given cells. Panels A–O: coronal and sagittal sections taken from the indicated Bregma or medio-lateral coordinates. The combination of mRNA probes is indicated with respective colors corresponding to the DISH method end products. The high-magnification panels are examples with relevant molecular features, of the regions labeled within low-magnification photomicrographs (see the abbreviations vide infra). Note that the high-magnifications photos are not from the same experiment of the low magnification. 3 v: third ventricle; ACA: anterior cingulate area; ac: anterior commissure; AHN: anterior hypothalamic nucleus; AI: agranular insular area; AONpv: anterior olfactory nucleus, postero-ventral; AUD: auditory areas; AVPV: antero-ventral periventricular nucleus; BAC: bed nucleus of anterior commissure; BSTpl: Bed nucleus of the stria terminalis, posterolateral; CA3v: ventral hippocampal formation, CA3; CBpj: purkinje layer of the cerebellum; CENT: central lobule of the cerebellum; COA: cortical amygdala; CSm: superior central nucleus raphe, medial part; CSl: superior central nucleus raphe, lateral part; DCO: dorsal cochlear nucleus; DR: Dorsal raphe nucleus; DMHa: dorsomedial nucleus of the hypothalamus, anterior part; ECT: ectorrinal area; ENT: entorrinal area; FL: flocculus; NLOT: nucleus of the lateral olfactory tract; gcl: granule cell layer; GU: gustatory area; IC: inferior colliculus; ICe: inferior colliculus external nucleus; IF: interfascicular nucleus of the raphe; IL: infralimbic area; IPN: interpeduncular nucleus; ISN: inferior salivatory nucleus; KF: Koelliker-Fuse subnucleus; LH: lateral habenula; ISN: inferior salivatory nucleus; LPO: lateral preoptic area; MD: mediodorsal nucleus of the thalamus; MEA: medial amygdala; MEPO: median preoptic nucleus; MGm: medial geniculate complex, medial part; MH: medial habenula; MM: medial mammillary nucleus; MOB: main olfactory bulb; MOp: primary motor area; MOs: supplemental motor area; MPO: medial preoptic area; MRN: midbrain reticular nucleus; NTS: nucleus of the tractus solitarius; opt: optic tract; ORB: orbital area; OV: vascular organ of lamina terminalis; PA: posterior amygdalar nucleus; PAG: periaqueductal gray; PB: parabrachial nucleus; PCG: contine central gray; PG: pontine gray; PH: posterior hypothalamic nucleus; PIR: piriform area; PL: prelimbic area; POL: posterior limiting nucleus of the thalamus; PP: peripeduncular nucleus; PPN: pedunculo pontine nucleus; PRN: pontine reticular nucleus; PSTN: parasubthalamic nucleus; PSV: principal sensory nucleus of the trigeminal nerve; RR: midbrain reticular nucleus, retrorubral area; RSPd: retrosplenial area dorsal; RSPv: retrosplenial area dorsal; PVH: periventricular hypothalamic nucleus; PVi: periventricular hypothalamic nucleus, intermediate part; RM: raphe magnus; SC: superior colliculus; SCm: superior colliculus, motor related; SFO: subfornical organ; SPF: subparafascicular nucleus; STN: subthalamic nucleus; SUBd: subiculum dorsal part; SGN: suprageniculate nucleus; SOC: superior olivary complex; SUM: supramammillary nucleus; TEa: Temporal association area; TM: tuberomammillary nucleus; VCO: ventral coclear nucleus; VISam: anteromedial visual área; VISp: primary visual area; VISal: anterolateral visual area; VISl: lateral visual area; VISC: visceral area; vHi: ventral hippocampus; VMH: ventromedial hypothalamic nucleus; VMHc: ventromedial hypothalamic nucleus, central part; VMHdm: ventromedial hypothalamic nucleus, dorsomedial part; VMHvl: ventromedial hypothalamic nucleus, ventrolateral part; VTA: ventral tegmental area; ZI: zona incerta.
+**Figure 1.:** (A and C) Adcyap1 (RNA coding for PACAP) co-expression with Slc17a6 (RNA coding for VGLUT2) in MEPO and BAC respectively. (B) High magnification of the MEPO region of (A). Double arrows indicate cells that co-express both mRNAs. This feature is better appreciated on the cells in which Adcyap1 is weakly expressed (weak staining), so the Slc17a6 staining can be clearly seen as independent dots. (D) Brain stem Koelliker Fuse (KF) nucleus of the parabrachial complex is another main PACAP-expressing nucleus. Adcyap1 was co-expressed intensely with Slc17a7 (RNA coding for VGLUT1). Double arrows indicate cells co-expressing both mRNAs. Panels E-H show two cerebellar regions, paraflocculus (E and F) and central (G and H) lobules, under low and high magnification, respectively, where the Adcyap1 expression was higher than rest of regions. Purkinje cells are the main GABAergic (expressing Slc32a1, RNA encoding VGAT) PACAP containing neurons, distributed in all regions of cerebellar cortex. Some GABAergic cells in granule cell layer of paraflocculus and central regions also co-expressed Adcyap1 and Slc32a1 (indicated with double pink arrowheads, see also SI-Fig.O1). In these two cerebellar regions, some granule cells also expressed Adcyap1 (indicated with single blue arrows). Nissl staining was used for counterstaining. Note: this figure contains excerpts from the more comprehensive figure supplement.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig2-v2.jpg)
 
-**Figure 2.:** Slc17a7-VGLUT1 and Slc17a6-VGLUT2 expressing) and GABAergic (Slc32a1-expressing) neurons in cortical and subcortical regions.(A and A') Temporal hippocampal formation where the Adcyap1r1 was strongly expressed in the principal neurons (pyr: pyramidal layer and DGgcl: dentate gyrus granule cell layer) as well as the VGLUT1+ mossy cells in the hilar region. Double arrows show single cells co-expressing Adcyap1r1 and Slc17a7. (B) Single-cell Adcyap1r1 co-expression with Slc17a6 (double arrowheads) was observed in ACA and (C) in the BAC. Regarding the GABAergic neurons expressing Adcyap1r1, the structures in the striatum and pallidum hosted very intensely expressing structures. Panel (D) shows the LS and BST in its three anterior divisions, anteromedial (BSTam), antero-lateral (BSTal) and oval (BSToval), as well as caudate-putamen (CP) with strong Adcyap1r1 expression. Panel (E) shows high-magnification photomicrograph where green dots (Adcyap1r1, PAC1 labeling), are mostly overlapped with red staining (Slc32a1, VGAT expression). Double pink arrowheads indicate co-expression within a single cell and single green arrows indicate cells only expressing Adcyap1r1. Panel (F) shows the amygdaloid complex and neighboring regions where Adcyap1r1 was strongly expressed in the GABAergic cell populations; (G) High-magnification photomicrograph showing that the Adcyap1r1 is exclusively expressed in Slc32a1 (VGAT) expressing neurons in the CEAc, while in the BLA it was expressed in the sparsely distributed GABAergic neurons as in most of the non-VGAT expressing neurons. 1. zona incerta of hypothalamus; 2. lateral hypothalamic area; 3: reticular nucleus of the thalamus; 4. globus pallidus; 5. caudate-putamen; 6: central amygdalar nucleus, medial part (CEAm); 7: lateral part (CEAl); 8: capsular part (CEAc); 9: basolateral amygdalar nucleus (BLA) 10: medial amigdalar nucleus; 11: intercalated nucleus of the amygdala; 12: basomedial nucleus of the amygdala; 13: cortical amygdalar area; 14: dorsal endopiriform; 15: ventral endopiriform; 16: piriform area. Fiber tracts: sm: stria medullaris; ac: anterior commissure; ic: internal capsule; opt: optic tract. lv: lateral ventricle.
+**Figure 2.:** (A and A') Temporal hippocampal formation where the Adcyap1r1 was strongly expressed in the principal neurons (pyr: pyramidal layer and DGgcl: dentate gyrus granule cell layer) as well as the VGLUT1+ mossy cells in the hilar region. Double arrows show single cells co-expressing Adcyap1r1 and Slc17a7. (B) Single-cell Adcyap1r1 co-expression with Slc17a6 (double arrowheads) was observed in ACA and (C) in the BAC. Regarding the GABAergic neurons expressing Adcyap1r1, the structures in the striatum and pallidum hosted very intensely expressing structures. Panel (D) shows the LS and BST in its three anterior divisions, anteromedial (BSTam), antero-lateral (BSTal) and oval (BSToval), as well as caudate-putamen (CP) with strong Adcyap1r1 expression. Panel (E) shows high-magnification photomicrograph where green dots (Adcyap1r1, PAC1 labeling), are mostly overlapped with red staining (Slc32a1, VGAT expression). Double pink arrowheads indicate co-expression within a single cell and single green arrows indicate cells only expressing Adcyap1r1. Panel (F) shows the amygdaloid complex and neighboring regions where Adcyap1r1 was strongly expressed in the GABAergic cell populations; (G) High-magnification photomicrograph showing that the Adcyap1r1 is exclusively expressed in Slc32a1 (VGAT) expressing neurons in the CEAc, while in the BLA it was expressed in the sparsely distributed GABAergic neurons as in most of the non-VGAT expressing neurons. 1. zona incerta of hypothalamus; 2. lateral hypothalamic area; 3: reticular nucleus of the thalamus; 4. globus pallidus; 5. caudate-putamen; 6: central amygdalar nucleus, medial part (CEAm); 7: lateral part (CEAl); 8: capsular part (CEAc); 9: basolateral amygdalar nucleus (BLA) 10: medial amigdalar nucleus; 11: intercalated nucleus of the amygdala; 12: basomedial nucleus of the amygdala; 13: cortical amygdalar area; 14: dorsal endopiriform; 15: ventral endopiriform; 16: piriform area. Fiber tracts: sm: stria medullaris; ac: anterior commissure; ic: internal capsule; opt: optic tract. lv: lateral ventricle.
 
-## Comprehensive DISH mapping of Adcyap1 co-expression with Slc17a7, Slc17a6, and Slc32a1 throughout mouse brain reveals an extensive distribution and diversity of cell types
+### Comprehensive DISH mapping of Adcyap1 co-expression with Slc17a7, Slc17a6, and Slc32a1 throughout mouse brain reveals an extensive distribution and diversity of cell types
 
 Table 1 describes the distribution, cell types and relative expression strength, within 180 identified Adcyap1 positive cell groups/subfields co-expressing vesicular transporters, organized hierarchically by grouping the regions according to their embryonic origins. These include 58 regions derived from cortical plate, 6 regions derived from cortical subplate, 9 regions within cerebral nuclei, 20 regions in thalamus, 2 regions in epithalamus, 26 regions in hypothalamus, 18 regions in midbrain, 16 regions in pons, 20 regions in medulla, and 5 regions in cerebellum. We semiquantitative scoring is specified in the Materials and method section. Briefly, our annotation criteria were the percentage of expressing cell/total Nissl-stained nuclei: '-', not observed; '+', weak (<20%); '++', low (20%–40%); '+++', moderate (40%–60%); '++++', intense (60–80%); '+++++', very intense (>80%). Functional neuroanatomy order and annotations are based on Allen Institute Mouse Reference Atlas (http://atlas.brain-map.org/). To compare with the previous comprehensive report for PACAP distribution in rat brain published in 2002 (Hannibal, 2002), a column containing the data published previously in rat is displayed. Most of the regions described as Adcyap1-expressing in the rat were also found positive in our study in mouse, albeit strength of expression in several regions differs substantially between the two rodent species. Eleven regions that were reported negative, labeled as ‘-’ from original publication, were found positive with this sensitive DISH method (indicated in the table). An additional 122 regions, which were not reported in detail in the previous paper (labeled in the table as ‘n/r’), were found to co-express Adcyap1 and either a glutamate or GABA vesicular transporter mRNA.
 
+**Table 1.**
+ Distribution, cell types, and strength of main PACAPergic cell groups in mouse brain with comparison of rat brain reported by Hannibal, 2002*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell group / sub-field†</th>
+      <th>Hannibal, 2002</th>
+      <th>Slc17a7 (VGLUT1)</th>
+      <th>Slc17a6 (VGLUT2)</th>
+      <th>Slc32a1 (VGAT)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Retina</td>
+    </tr>
+    <tr>
+      <td>Ganglion cell layer‡</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cerebrum: Cortical plate</td>
+    </tr>
+    <tr>
+      <td colspan="5">Olfactory area</td>
+    </tr>
+    <tr>
+      <td colspan="5">Main olfactory bulb</td>
+    </tr>
+    <tr>
+      <td>Granular cell layer</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Inner plexiform layer</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mitral cell layer</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Outer plexiform layer</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Glomerular layer</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Periglomerular cells</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="5">Accessory olfactory bulb</td>
+    </tr>
+    <tr>
+      <td>Mitral cell layer</td>
+      <td>+</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Glomerular layer</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Granular layer</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Other olfactory areas</td>
+    </tr>
+    <tr>
+      <td>Ant olfactory n. lateral</td>
+      <td>++</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ant olfactory n. medial</td>
+      <td>++</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal peduncular area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Taenia Tecta</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Piriform area: Pir2</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Piriform area: Pir3</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. lat. olfactory tract (NLOT)</td>
+      <td>++++</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Cortical amygdalar area (CoA)</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hippocampal formation</td>
+    </tr>
+    <tr>
+      <td>Hippocampal region</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dorsal dentate gyrus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal hippocampus CA1</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal hippocampus CA2</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal hippocampus CA3</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal hilus</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ventral dentate gyrus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ventral CA3vv</td>
+      <td>n.r.</td>
+      <td>+++++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ventral hilus</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Retrohippocampal regions</td>
+    </tr>
+    <tr>
+      <td>Entorhinal area</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parasubiculum</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Postsubiculum</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Presubiculum</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Subiculum</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Isocortex§</td>
+    </tr>
+    <tr>
+      <td>Layer I</td>
+      <td>+</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>Layer II-II</td>
+      <td>++</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>Layer IV</td>
+      <td>-</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>Layer V</td>
+      <td>++</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>Layer VI</td>
+      <td>+</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>Agranular insular cortex</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Somatomotor areas</td>
+    </tr>
+    <tr>
+      <td>2ry motor area, layer 2–3</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2ry motor area layer 5</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>1ry motor area, layer 2–3</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1ry motor area, layer 5</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="5">Orbital frontal cortex (OFC)</td>
+    </tr>
+    <tr>
+      <td>OFC 1</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>OFC 2/3</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>OFC 5</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Prefrontal cortex (PFC)</td>
+    </tr>
+    <tr>
+      <td>Ant cingulate cortex (ACC): ACC 2/3: ACC 5:</td>
+      <td>n.r. n.r.</td>
+      <td>++++ +++</td>
+      <td>+ +</td>
+      <td>- -</td>
+    </tr>
+    <tr>
+      <td>Prelimbic (PL) PL 2/3 PL 5</td>
+      <td>n.r. n.r.</td>
+      <td>++++ +++</td>
+      <td>+ +</td>
+      <td>- -</td>
+    </tr>
+    <tr>
+      <td>Infralimbic (IL) IL 2/3 IL 5</td>
+      <td>n.r. n.r.</td>
+      <td>++++ +++</td>
+      <td>+ +</td>
+      <td>- -</td>
+    </tr>
+    <tr>
+      <td>Cell group / sub-field†</td>
+      <td>Rat Hannibal JCN, 2002</td>
+      <td>Slc17a7 (VGLUT1)</td>
+      <td>Slc17a6 (VGLUT2)</td>
+      <td>Slc32a1 (VGAT)</td>
+    </tr>
+    <tr>
+      <td>Prim somatosensory a. SSp, SSp 1 SSp 2/3 SSp 4 (mouth) SSp 5 SSp 6a</td>
+      <td>- - n.r. - -</td>
+      <td>+ +++ ++ ++ ++</td>
+      <td>- - - - -</td>
+      <td>- - - - -</td>
+    </tr>
+    <tr>
+      <td>Gustatory areas</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Auditory area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Visual area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Visceral area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Temporal association area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ectorhinal area</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Perirhinal area</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Retrosplenial area</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Post parietal association area</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cortical subplate</td>
+    </tr>
+    <tr>
+      <td>Claustrum</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Endopiriform nucleus</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lateral amygdalar nucleus</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Post amygdalar nucleus (PA)</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Basomedial amygdala</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Basolateral amygdala</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cerebral nuclei</td>
+    </tr>
+    <tr>
+      <td colspan="5">Striatum</td>
+    </tr>
+    <tr>
+      <td>Lateral septal nucleus</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anterior amygdala area</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Central amygdalar nucleus</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Medial amygdalar nucleus</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td colspan="5">Pallidum</td>
+    </tr>
+    <tr>
+      <td>Bed nucleus of Stria Terminalis (BST)</td>
+      <td>+</td>
+      <td>n.a</td>
+      <td>n.a</td>
+      <td>n.a</td>
+    </tr>
+    <tr>
+      <td>BST oval</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>BST am</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>BST dm</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>BST pr</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Bed nucleus of anterior commissure</td>
+      <td>n.r.</td>
+      <td>+++++</td>
+      <td>+++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Brain stem, inter-brain</td>
+    </tr>
+    <tr>
+      <td colspan="5">Thalamus</td>
+    </tr>
+    <tr>
+      <td colspan="5">Somato-motor related</td>
+    </tr>
+    <tr>
+      <td>Subparafacicular nucleus, magnocellular part</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Subparafacicular area</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peripeduncular nucleus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Medial geniculate complex</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Polymodal association cortex related</td>
+    </tr>
+    <tr>
+      <td>Lat. Posterior n. thal</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Post. Limiting nucleus</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Suprageniculate n.</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anterodorsal n.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anteromedial n.</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parataenial n.</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Intermedial n.</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Laterodorsal n.</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Centrolateral n</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Intermediodorsal n.</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mediodorsal n.</td>
+      <td>n.r.</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pariventricular n.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parateanial n.</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. of reuniens</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Posterior pretectal n.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Precommissural n.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cell group / sub-field†</td>
+      <td>Rat Hannibal JCN, 2002</td>
+      <td>Slc17a7 (VGLUT1)</td>
+      <td>Slc17a6 (VGLUT2)</td>
+      <td>Slc32a1 (VGAT)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Epithalamus</td>
+    </tr>
+    <tr>
+      <td>Medial habenula¶</td>
+      <td>++++</td>
+      <td>++++</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lateral habenula</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hypothalamus</td>
+    </tr>
+    <tr>
+      <td>Paraventricular n</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Periventricular n</td>
+      <td>+</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anterodorsal preoptic n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anteroventral</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsomedial n.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Median preoptic n.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Medial preoptic area</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Vascular organ of lamina terminalis</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Posterodorsal preoptic n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Subfornical organ</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lateral preoptic area</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Anterior hyp. area</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Premammillary n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Lateral mammillary n.</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Medial mammillary n.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Supramammillary n.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Median preoptic n.</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lateral hyp. area</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Preparasubthalamic n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parasubthalamic n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Subthalamic nucleus</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Retrochiasmatic area</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Tuberomammillary nucleus</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Zona incerta</td>
+      <td>+</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ventromedial hyp. n</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>+++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Post. hypothalamic n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Midbrain</td>
+    </tr>
+    <tr>
+      <td colspan="5">Sensorial related</td>
+    </tr>
+    <tr>
+      <td>Inf. colliculus (IC), central and external n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. of the brachium of IC</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. saculum</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parabigeminal n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Midbrain trigeminal n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Motor related</td>
+    </tr>
+    <tr>
+      <td>Ventral tegmental area</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Midbrain reticular n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Superior colliculus, motor related</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Periaqueductal gray</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cuneiform n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Edinger-Westphal n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Interfascicular n. Raphe</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Behavior state related</td>
+    </tr>
+    <tr>
+      <td>Midbrain raphe nuclei</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pedunculopontine n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal n. raphe</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Central linear n. raphe</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Rostral linear n. raphe</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Olivary pretectal nucleus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cell group/sub-field†</td>
+      <td>Rat Hannibal JCN, 2002</td>
+      <td>Slc17a7 (VGLUT1)</td>
+      <td>Slc17a6 (VGLUT2)</td>
+      <td>Slc32a1 (VGAT)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hindbrain</td>
+    </tr>
+    <tr>
+      <td colspan="5">Pons</td>
+    </tr>
+    <tr>
+      <td colspan="5">Sensory related</td>
+    </tr>
+    <tr>
+      <td>N. lateral lemniscus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Principal sensorial nucleus of trigeminal nerve</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Koelliker-Fuse subnucleus</td>
+      <td>n.r.</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parabrachial n. lateral div.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parabrachial n, rest subfields</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Superior olivary comp (lat)</td>
+      <td>n.r.</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Motor related</td>
+    </tr>
+    <tr>
+      <td>Tegmental reticular n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Barrington’s nucleus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal tegmental n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pontine gray</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pontine central gray</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Supratrigeminal nucleus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Behavior state related</td>
+    </tr>
+    <tr>
+      <td>Locus Coerulus (state)</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Laterodorsal tegmental n.</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pontine reticular n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Superior central n. raphe</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Medulla</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N. tractus solitarii medial</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. tractus solitarii lateral</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Hypoglossal (XII) n.</td>
+      <td>-</td>
+      <td></td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal motor n. of the vagus nerve (X)</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dorsal cochlear n.</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ventral cochlear n.</td>
+      <td>n.r.</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Spinal n. trigeminal</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. prepositus</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Inferior salivatory complex</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Facial motor n. (VII)</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. ambiguus</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Magnocellular reticular n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Parapyramidal n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Spinal vestibular n.</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. X</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. raphe magnus (state related)</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. raphe pallidus (state related)</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>N. raphe obscurus (state rel.)</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cuneate n.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Inferior olivary</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cerebellar cortex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Purkinje’s cells</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++++</td>
+    </tr>
+    <tr>
+      <td>Golgi’s cells</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Granule cells¶</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cerebellar nuclei</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interposed n.</td>
+      <td>++</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dentate n.</td>
+      <td>n.r.</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.a.: not applicable.n.r.: not reported (blue color text refers to Hannibal, 2002) rat PACAPergic cell group and expression strength analysis.*Similar semiquantitative annotations are used here the percentage of expressing cell/total Nissl stained nuclei: '-', not detectable; '+', weak (<20%); '++', low (40–20%); '+++', moderate (60–40%); '++++', intense (80–60%); '+++++', very intense (>80%).† Functional neuroanatomy order and annotations are based on Allen Institute Mouse Reference Atlas.‡ Circadian oscillating expression (Lindberg et al., 2019).§ Isocortex expression was regionally evaluated.¶ Dorsal half of the MHb which co-express Calb2 (RNA encoding calretinin).** Prominent in lobules paraflocculus, central and uvula. Coincide with calretinin (Calb2) expression._
+
 A whole brain mapping of Adcyap1expression with relevant brain regions/subfields co-expression features is presented in the Figure 1—source data1.
 
-## Mapping of Adcyap1r1 co-expression with Adcyap1, Slc17a7, Slc17a6, and Slc32a1 suggests the PACAP-PAC1 system can function in autocrine and paracrine modes
+### Mapping of Adcyap1r1 co-expression with Adcyap1, Slc17a7, Slc17a6, and Slc32a1 suggests the PACAP-PAC1 system can function in autocrine and paracrine modes
 
 Adcyap1r1 expression was studied in 152 mouse brain regions. In Figure 3, panels A–F, we show the semi-quantitative expression levels of Adcyap1r1, based on microscopic observation as different intensities of blue shading. Adcyap1 expression was also symbolized with either red or green dots (VGAT vs VGLUT mRNA co-expression) in corresponding regions. Contrasting with the discrete expression of Adcyap1, Adcyap1r1 expression was diffuse and widespread. Adcyap1r1-positive cells co-expressed Slc17a7 in the temporal hippocampus (Figure 2 panels A and A'), anterior cingulate area (ACA, panel B) and bed nucleus of anterior commissure (BAC, panel C) and Scl32a1 in pallidum and striatum structures (Figure 2D–G and Table 2). Almost all the Adcyap1-expressing neurons we studied co-expressed Adcyap1r1 (Figure 3G, from ACA and H from medial preoptic nucleus, MEPO). Besides, most neurons neighboring Adcyap1-positive cells also expressed Adcyap1r1 (single arrows). These observations suggest that the PACAP/PAC1 pathway may use autocrine and paracrine mechanisms in addition to classical neurotransmission through axon innervation and transmitter co-release.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig3-v2.jpg)
+
+**Figure 3.:** (A–F) Mapping of Adcyap1r1 (RNA encoding Pac1) expression (symbolized by the intensity of blue shading) in six septo-temporal planes in relation to main PACAP containing brain nuclei and subfields, based on microscopic observations. Green and red dots represent Adcyap1 expressing neurons of glutamatergic (VGLUTs mRNA expressing) or GABAergic (VGAT mRNA expression) nature, respectively. Shaded regions with different blue intensity symbolize the strength of Adcyap1r1. For abbreviations see the corresponding table for abbreviations in Appendix 1. 1. MOB; 2. SFO; 3. MEPO; 4. OV; 5. PVT; 6. MD; 7. RE; 8. MBO; 9. SUM; 10. PH; 11. IF; 12. EW; 13. RL; 14. PAG; 15. DR.; 16 SCm; 17. IC; 18. AP; 19. NTS; 20. XII; 21. IO; 22. RPA; 23. RM; 24. GRN; 25. PRNr; 26. tegmental reticular n.; 27. PG; 28. IPN; 29. CLI 30. UVU; 31. ORB; 32. ACAd1; 32b. ACAd6; 33. RSP; 34 DP; 35. TTv; 36. LSr; 37. MS; 38. NDB; 39. LSc; 40. ACB; 41. OT; 42. ILA; 43. PL; 44. MOs; 45. MH; 46. BST.; 47. BAC; 48. MPO; 49. PVH; 50. SCH; 51. SO; 52a. DMH; 52b. VMH; 53. PVp; 54. VTA; 55. AM; 56. PT; 57. SCs; 58. PCG; 59. MV; 60. FN.; 61. CU; 62. SPIV.; 63. PB; 64. IRN; 65. LC; 66. SOC; 67. MARN; 68. MDRN; 69. MRN; 70. SN; 71. LM; 72. VLH; 73. LPO; 74. PHA; 75. AV; 76. AD; 77. RT; 78. PRC; 79. PF; 80. CP; 81. SI; 82. AON.; 83. AOB; 84. MOBgr; 85. MOBgl; 86: MOBml; 87.DG-gcl; 88. BSTov; 89. CBpj; 90. CBgcl; 91. CA3vv; 92. CA3v, 93. vhil; 94. MoV; 95. sV; 96. spV; 97. NLL; 98. PBG; 99. MG; 100. SPF; 101. PP; 102: ZI; 103. STN; 104. SUB; 105. MEApv; 106. PA; 107a. COAa; 107b. COAp; 108. NLOT; 109. AAA; 110. CEAm; 111. MEAad; 112. MEpd; 113. SI; 114. GPe; 115. GPi (entopeduncular nucleus); 116. FS; 117. EP; 118. CLA; 119. AI; 120. SS; 121. PTLp; 122. VIS; 123. DH; 124. POST; 125. PRE; 126. DCO; 127. VCO; 128. PAR; 129. PIR; 130. TT; 131. CEAc; 132. IA, 133. BMA; 134. CA2v; 135. LGv; 136. GU; 137. VISC; 138. ECT; 139. ENTl; 140. ENTm; 141. PAA; 142. TR; 143. BLA; 144. LA 145. CEAl 146. AMB; 147. OP; 148: PM.; 149. LGd; 150. IGL; 151. FL; 152. AN. Aq: aqueduct; och: optic chiasm; v4: forth ventricle; mlf: medial longitutinal fasciculus; cc: corpus callosum; vhc: ventral hippocampus commissure; fi/fx: fimbria/fornix; pyr: pyramidal layer; lot: lateral olfactory tract, mcp: middle cerebellar penducle; st: stria terminalis; opt: optic tract; ic: internal capsule; tb: trapezoid body; arb: arbor vidae. (G and H) Examples illustrating autocrine and paracrine features of PACAP-PAC1 signaling that Adcyap1r1 was expressed in PACAP containing (Adcyap1 expressing) neurons. (G) ACA in prefrontal cortex and (H) MEPO. Double arrowheads indicate co-expression and blue arrows indicate the Adcyap1r1 expressing neurons which are not Adcyap1 expressing but were adjacent to them.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Low magnification showing epithalamic habenula and hippocampus with Slc32a1 (VGAT mRNA) expressing cells (red) sparsely distributed. B and C: in hippocampus CA1 (B), both stratum oriens (so) and stratum pyramidale (sp), and dentate gyrus (C), hilus of dentate gyrus (DG) and granule cell layer (gcl), PAC1 mRNA (Adcyap1r1, light blue) was co-expressed with all VGAT mRNA (Slc32a1, red) expressing neurons (double arrowheads). Some principal cells in sp also expressed PAC1 (single blue arrowheads) while in gcl, all principal cells co-expressed Adcyap1r1. (D) In lateral habenula, all the Slc32a1 cells co-expressed PAC1 mRNA (Adcyap1r1) as well as some no-VGAT expressing cells. (E) in primary visual cortex, layer 5, both Slc32a1 expressing and no-expressing cells express Adcyap1r1. F, G and H show the co-expression of Adcyap1r1 (PAC1) with main types of cortical GABAergic interneurons containing somatostatin, parvalbumin, and corticotropin releasing hormone (Sst, Pvalb and Crh respectively), in the primary somatosensory cortex (S1). I-VI indicate cortical layers. I, J, and K, the same mRNAs co-expression (of F, G, H) in the bed nucleus of stria terminalis, the oval subnucleus (BNSTov). I', J' and K' are amplifications of the corresponding black-squared fields. Double arrow heads indicate some co-expressed cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** PACAP containing cell distribution within the subcortical regions such as habenula and hypothalamus are relatively well conserved between the two rodent species. However, we observed more abundant Adcyap1 expression, in phylogenetically new regions in rats. Here are two limbic regions examined with RNAscope in situ hybridization using Adcyap1 probe (see the Materials and methods in the next section) as examples. A and A’: coronal sections from young adult male rat and mouse showing the conserved patterns of expression in subcortical regions of hypothalamus and habenula, but enhanced expression in rat in hippocampal formation and amygdala complex. Top inset of A shows hippocampus CA1 has high expression of Adcyap1, while in mouse this feature is not seen. Lower inset of A shows abundant expression of CA4/hilus region in rat while few of Adcyap1 expressed cells were observed in dorsal hilus region in mouse. B and B’, sagittal sections from rat and mouse showing the increased expression of Adcyap1 in rat subiculum. C and C’, comparison in amygdala complex while in rat, six regions with abundant expression of Adcypa1 were observed: 1. corticomedial amygdala CoM; 2. basal amygdala; 3. central amygdala, capsular; 4. central amygdala, lateral; 5. intercalated cells complex; 6. bed nucelus of stria terminalis, intra-amygdalar division. In the same regions, in mouse, some scattered Adcyap1-expressed cells can also be seen.
 
 PACAP also binds to two other G protein–coupled receptors highly related to PAC1, called VPAC1 (Vipr1), and VPAC2 (Vipr2) (Harmar, 2001). In all the regions where Adcyap1r1 was expressed, the expression of mRNA for either or both VIP receptors (Vipr1 and Vipr2) was also found. To simplify this already extensive report, we present the data for these two receptors in Figure 3—source data 1–4 .
 
 Distribution and glutamatergic/GABAergic vesicular transporter mRNA co-expression with Adcyap1 and Adcyap1r1 suggests a broad function for PACAP signaling in sensorimotor processing system(s)
 
-## Retina
+#### Retina
 
 Retinal ganglion cells (RGC) have been reported to express PACAP at various levels of abundance previously in the literature. In rat, Adcyap1 was reported at a low level (‘+') (Hannibal, 2002) within the RGC population. CD1 mice were reported to express PACAP in retina (Kawaguchi et al., 2010), and in Adcyap1 promoter-EGFP reporter mice, EGFP expression was reported to be low (‘+') (Condro et al., 2016). With the DISH method employed here, we found a higher percentage of RGCs co-expressing Adcyap1 and Slc17a6 than previously reported (Figure 1—source data 1A1). Expression levels of Adcyap1 oscillate daily from 50% to 80% with highest levels during subjective night (see Lindberg et al., 2019 for details).
 
-## Cerebral cortex: structures derived from cortical plate
+#### Cerebral cortex: structures derived from cortical plate
 
-## Olfactory area
+##### Olfactory area
 
 High levels of PACAP expression in the olfactory area have been previously reported (Hansel et al., 2001). Here, we report the subfields of olfactory area Adcyap1-expressing neurons in detail. In the main olfactory bulb (MOB, Figure 3B, area 1), Adcyap1 was intensely expressed in outer plexiform (OPL) and mitral layers. In OPL we observed the co-expression with Slc17a7, Slc17a6 and Slc32a1. (Table 1 and Figure 1—source data 1A2 and insets). Other cell types in the internal plexiform cell layers expressed Adcyap1 at low levels with mixed glutamate/GABA molecular signatures (see Table 1). In contrast, in the accessory olfactory bulb (AOB, Figure 3C, area 83), Adcyap1 was mainly expressed in the mitral cell layer with co-expression of Slc17a7, Slc17a6 (intense), and Slc32a1 (weak) mRNAs (Table 1). Other olfactory areas intensely expressing Adcyap1 and Slc17a7 were AON (layer 1, Figure 3C, area 82), TT (Figure 3C, area 34b), DPA (Figure 3C, area 34a), Pir (layer 3, Figure 3D and E, area 129), NLOT (layer, Figure 3D, area 108; SI Figure 1F). The COA (layer, Figure 3D, areas 107a and 107b) co-expressed Adcyap1 and Slc17a6 (Figure 1—source data 1F and F5).
 
-## Isocortex
+##### Isocortex
 
 PACAP’s role in isocortex has in general been little studied (Zhang and Eiden, 2019). Moderate expression of Adcyap1 was initially reported in the cingulate and frontal cortices, with lower concentrations found in other neocortical areas using radiolabeled riboprobe ISH (Mikkelsen et al., 1994). Hannibal subsequently reported that Adcyap1-expressing cells were observed mainly in layers 1–3 and layers 5–6, and PACAP‐IR nerve fibers in all layers of the cerebral cortex; however, no detailed information about the differential expression levels across cortical regions was presented (Hannibal, 2002).
 
@@ -77,7 +1511,7 @@ In the primary and secondary motor cortices (MOp and MOs, Figure 3B, area 44), A
 
 Adcyap1r1 expression in neocortex was widespread with more homogenous aspects concerning the different cortical areas, except that in the ACA and the entorhinal cortex layers 2–3 and layers 5–6 showed very intense expression levels (Figure 3, panels B and F, areas 32 and 32a, 139 and 140) and https://gerfenc.biolucida.net/images?selectionType=collection&selectionId=98. We sampled eight neocortex regions at two coronal levels, Bregma 0.14 mm and Bregma 1.7 mm, where we observed that more than 80% of neurons in layers 2–3 and layer 5 expressed Adcyap1r1 (Figure 3—source data 5). As approximately 20% of cortical neurons are GABAergic (Ascoli et al., 2008), we tested three of the main GABAergic cell types in these cortical regions, finding that in the selected cortical areas we sampled, all of somatostatin (Sst), parvalbumin (PV) and corticotropin releasing hormone (CRH) neurons co-expressed Adcyap1r1 (Figure 3—figure supplement 1 F,G,H).
 
-## Hippocampal formation
+##### Hippocampal formation
 
 In the mouse dorsal (septal pole) hippocampal formation, in contrast to data obtained in rat (Figure 3—figure supplement 2) and from the PACAP-EGFP transgenic reporter mouse (Condro et al., 2016), we did not find Adcyap1-expressing cells in cell body layers of CA1, CA3, and DG, as previously reported (Hannibal, 2002; Condro et al., 2016). However, we report here the marked and selective expression of Adcyap1 in pyramidal neurons of the CA2 region (Table 1 and Figure 4C, left inset). Adcyap1r1 expression was observed to be low in CA subfields and Adcyap1r1 was selectively expressed in Slc32a1-expressing cells (Figure 3—figure supplement 1, A and B). In contrast, the DG-GCL had very intense expression level of Adcyap1r1, among all brain regions, in both Slc17a7- and Slc32a1-expressing cells (Figure 2A and Figure 3—figure supplement 1, A and C). In DG hilar region (polymorphic layer), we observed few cells co-expressed Adcyap1 and Slc17a7 (Figure 4A and D). These were mossy cells co-expressing calretinin mRNA (Calb2) (Figure 4B). The Adcyap1-expressing mossy cell quantity increased in the caudo-temporal direction. This population was also described in the previous reports (Hannibal, 2002; Condro et al., 2016), however, without identification of cell type, as reported here.
 
@@ -91,19 +1525,19 @@ A second population of Adcyap1-expressing neurons in ventral hippocampus was a s
 
 Retrohippocampal regions expressing Adcyap1 and either Slc17a7 or Slc17a6 were entorhinal area, prominently in the layer 5, parasubiculum, postsubiculum, presubiculum, and subiculum (Figure 3E and F, areas 139 and 140, 128, 124, 104). This latter region, subiculum, together with the pyramidal layer of dorsal CA1, CA2 and CA3, exhibited large differences in Adcyap1 expression strength between rat and mouse (Figure 3—figure supplement 2). Developmental studies of these regions, as well as extended amygdala, may indicate a recapitulation of phylogeny by development that is relevant to the evolution of PACAP neurotransmission across mammalian species (Zhang and Eiden, 2019).
 
-## Cerebral cortex: structures derived from cortical subplate
+#### Cerebral cortex: structures derived from cortical subplate
 
 The subplate is a largely transient cortical structure that contains some of the earliest generated neurons of the cerebral cortex and has important developmental functions to establish intra- and extra-cortical connections (Bruguier et al., 2020). The concept of the subplate zone as a transient, dynamically changing and functional compartment arose from the combined application of functional and structural criteria and approaches (for a historical review see Judaš et al., 2010). Here, we adapt our classification from that of the Allen Brain Map (https://portal.brain-map.org/). Two noteworthy structures derived from the cortical subplate that expressed Adcyap1 and Adcyap1r1 are the claustrum (CLA) and the lateral amygdalar nucleus (LA).
 
-## The claustrum (CLA)
+##### The claustrum (CLA)
 
 Owing to its elongated shape and proximity to white matter structures, the claustrum (CLA, Figure 3, panels D, E, F, area 118) is an anatomically well-defined yet functionally poorly described structure, once speculated to be the ‘seat of consciousness’ due to its extensive interconnections (Crick and Koch, 2005). CLA is located between the insular cortex and the striatum: it is a thin sheet of gray matter considered as a major hub of widespread neocortical connections (Bruguier et al., 2020). The CLA is recently reported to be required for optimal behavioral performance under high cognitive demand in the mouse (White et al., 2020). Consistent with recent work (White et al., 2018), rat CLA receives a dense innervation from the anterior cingulate cortex (ACA), one of the most prominent PACAP mRNA-expressing regions in frontal cortex, co-expressing Slc17a7 and Slc17a6 (Table 1 and Figure 3A, areas 32a and 32b, and G) and is implicated in top-down attention (Zhang et al., 2016b). The CLA interconnects the motor cortical areas in both hemispheres through corpus callosum (Smith and Alloway, 2010), where EGFP+ projections were reported in PACAP promoter-EGFP reporter mice (Condro et al., 2016). Expression of the neuropeptides somatostatin (SOM), cholecystokinin (CCK), and vasoactive intestinal polypeptide (VIP) has been reported in the rat CLA (Eiden et al., 1990). In mouse CLA, more than 80% of the neurons were Slc17a7- and Slc17a6-coexpressing and less that 20% of the neurons expressed Slc32a1. PACAP content in rodent CLA has not been reported. In our study, we observed 10–15% of glutamatergic cells of the CLA co-expressed Adcyap1 and almost 100% of cells expressed Adcyap1r1 (Figure 3D, area 118).
 
-## Endopiriform nucleus and amygdalar complex
+##### Endopiriform nucleus and amygdalar complex
 
 The endopiriform nucleus (Figure 3E and F, area 117) and divisions of lateral (Figure 3F, area 144), basolateral (Figure 3F, area 143), basal medial (Figure 3E, area 133), and posterior amygdalar (Figure 3F, area 106, Figure 4C) nuclei are, from a phylogenetic point of view, olfactory structures (Groor, 1976) derived from cortical subplate which the main cell population is glutamatergic, co-expressing Slc17a7 and Slc17a6 (see Table 1). Adcyap1 was intensely expressed in the lateral (dorsal) amygdala (Figure 3F, area 144), anterior basomedial amygdala (Figure 3E, area 133), posterior amygdalar nucleus (area 106), and with low expression in the endopiriform nucleus (area 117) and basomedial amygdala posterior subnucleus (Figure 1—source data 1G) and weak expression in the basolateral amygdala (Figure 3F, area 143).
 
-## Structures derived from cerebral nuclei
+#### Structures derived from cerebral nuclei
 
 The main structures expressing Adcyap1 in striatum were the lateral septum (LS, Figure 3B, areas 36 and 39) and medial amygdala (MEA, Figure 3D, areas 111 and 112) (SI Figure 1G). Most of these neurons coexpressed both Slc17a7 and Slc17a6 (see Table 1). In contrast to rat brain, where expression of Adcyap1 is prominent in central amygdala and intercalated cells (Figure 3—figure supplement 2, C), in the mouse Adcyap1-expressing cells were quite sparse in these structures (Figure 3—figure supplements 2C'). Adcyap1r1 was intensely expressed in these mainly Slc32a1-expressing structures (Figure 2D,E,F and G, Table 2).
 
@@ -111,61 +1545,263 @@ In structures within pallidum, Adcyap1 was expressed, in order of abundance, in 
 
 The very intense expression of Adcyap1r1 was observed on mainly GABAergic structures derived from cerebral nuclei. Figure 2D and G show examples illustrating Adcyap1r1- and Slc32a1-coexpressing neurons in some subcortical regions. Most of cells in the BST complex co-expressed Adcyap1r1 (Figure 2D and E). In BSTov, we tested the three main GABAergic cell types that co-express somatostatin (Sst), parvalbumin (Pvalb), and corticotropin releasing hormone (Crh) and found all the three types of neurons co-expressed Adcyap1r1 (Figure 3—figure supplement 1, I,J and K). Table 2 summarizes the distribution, cell types, and strength of expression of the main Adcyap1r1-expressing group in mouse cerebral nuclei.
 
+**Table 2.**
+ Distribution, cell types, and strength of main PAC1 expressing group in mouse cerebral nuclei (striatum and pallidum).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell group / sub-field</th>
+      <th>Slc17a7 (VGLUT1)</th>
+      <th>Slc17a6 (VGLUT2)</th>
+      <th>Slc17a8 (VGLUT3)</th>
+      <th>Slc32a1 (VGAT)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Striatum</td>
+    </tr>
+    <tr>
+      <td colspan="5">Caudoputamen</td>
+    </tr>
+    <tr>
+      <td>Nucleus accumbens</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Fundus of striadum</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Olfactory tubercle</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Lateral septum complex</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td colspan="5">Medial amygdala (MeA)</td>
+    </tr>
+    <tr>
+      <td>MeAav</td>
+      <td>-</td>
+      <td>++++</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>MeApd</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td colspan="5">Central amygdala (CeA)</td>
+    </tr>
+    <tr>
+      <td>CeA medial</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>CeA lateral</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>CeA capsular</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td>Anterior amygdala area</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Intercalated nucleus</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td>Cell group / sub-field</td>
+      <td>Slc17a7 (VGLUT1)</td>
+      <td>Slc17a6 (VGLUT2)</td>
+      <td>Slc17a8 (VGLUT3)</td>
+      <td>Slc32a1 (VGAT)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Pallidum</td>
+    </tr>
+    <tr>
+      <td>Globus pallidum internal</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Globus pallidum external</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td colspan="5">Globus pallidum ventral (VP)</td>
+    </tr>
+    <tr>
+      <td>Substantia innominata</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Magnocellular nucleus</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Medial septal complex</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td colspan="5">Bed nuclei stria terminalis (BNST)</td>
+    </tr>
+    <tr>
+      <td>BNSToval</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td>BNSTam</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>BNSTdm</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>BNSTpr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Nucleus of Diagonal Band</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++++</td>
+    </tr>
+    <tr>
+      <td>Bed nucleus of anterior commissure</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Semiquantitative annotations are used here the percentage of expressing cell/total Nissl stained nuclei: ‘-”, not detectable; '+”' weak (<20%); '++', low (40–20%); '+++', moderate (60–40%); '++++', intense (80–60%); '+++++', very intense (>80)._
+
 The bed nucleus of anterior commissure (BAC) is defined here, for the first time, as a major Adcyap1-expressing nucleus (Figure 1C, Figure 3B, area 47, Figure 5A, F, Si Figure 1E). BACs are bilateral triangular cell groups located on the dorsal corners of the chiasm of anterior commissure (ac) between the anterior part and posterior part (Papp et al., 2014). Most BAC neurons (90–95%) express Slc17a6 intensely (Figure 5B) and Slc17a7 weakly (Figure 5C) and around 5% express Slc32a1 (Figure 5D and inset). Calb2 is intensely expressed in BAC (Figure 5E), as in the case of the subset of CA3vv pyramidal neurons mentioned earlier (Figure 4A, C). The Adcyap1-expressing neurons were densely packed (Figure 1, C and Figure 5A). Almost all the Adcyap1-positive neurons co-expressed Slc17a6 mRNA (Figure 5F) and Slc17a7. Co-expression of Adcyap1 within the Slc32a1-positive neurons was not found in BAC (Figure 5G).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig5-v2.jpg)
 
 **Figure 5.:** (A) Two coronal sections at Bregma 0.02 mm and −0.10 mm of mouse brain showing Adcyap1 ISH (RNAscope 2.5 High Definition (HD) Red Assay) expressing BAC (ac: anterior commissure). Panels B–E are low-magnification photomicrographs taken from Allen Brain Atlas (Ng et al., 2009) showing the Slc17a6 (VGLUT2, (B)) Slc17a7 (VGLUT1, (C)) Slc32a1 (VGAT, (D) and inset), Calb2 (calretinin, (E)) expressed in BAC. The Adcyap1 expressing neurons were densely packed and co-expressed Slc17a6 (F) and we did not observe co-expression within the Slc32a1-expressing cells (G).
 
-## Brain stem
+### Brain stem
 
-## Interbrain
+#### Interbrain
 
-## Thalamus
+##### Thalamus
 
 Adcyap is extensively expressed in thalamic nuclei (see Table 1), most prominently in suprafasicular nucleus (SPF, SI Figure 1I and I3), paraventricular nucleus of the thalamus (PVT, Figure 3A, area 5), medial geniculate complex (Figure 3D, area 99), the nucleus reuniens (Figure 3A, area 7), and the mediodorsal thalamic nucleus (MD) (Figure 3A, area 76) neurons co-expressing Slc17a6. The medial geniculate nucleus or medial geniculate body is part of the auditory thalamus and represents the thalamic relay between the inferior colliculus and the auditory cortex. The nucleus reuniens receives afferent input mainly from limbic and limbic-associated structures, mediating interactions between the hippocampus and medial prefrontal cortex important for spatial working memory (Griffin, 2015). It sends projections to the medial prefrontal cortex, the hippocampus, and the entorhinal cortex (Wouterlood et al., 1990; McKenna and Vertes, 2004), although there are sparse connections to many of the afferent structures as well. The prefrontal cortical-hippocampal connection allows regulation of neural traffic between these two regions with changes in attentiveness (Vertes et al., 2007) as well as in resilience to stress (Kafetzopoulos et al., 2018). All the thalamic nuclei that express Adcyap1 also express Adcyap1r1 (Table 1 and Figure 3A–E). The PVT and MD participate in many sensory information relays. In a recent study, their role in a key neural circuit for psychological threat-induced hyperthermia was reported (Kataoka et al., 2020). This circuit involves brain regions in the prefrontal pole, called the dorsal peduncular area (DP, Figure 3A and B, 34a, also called dorsal taenia tecta, TTd, a main Adcyap1-containing region mentioned in section The claustrum) that senses social stress and mediates increased body temperature in response to it (Lin, 2020). Neurons from the DP/TTd then project to and excite neurons in the dorsomedial hypothalamus (DMH, another Adcyap1-containing nucleus in hypothalamus, Table 1, Figure 3B, area 52a, and vide infra), which in turn sends neuronal projections to the rostral medullary raphé (rMR, also a Adcyap1-expressing nucleus, Table 1, Figure 3A, area 23, and description vide infra).
 
-## Epithalamus: habenula
+##### Epithalamus: habenula
 
 Habenulae are bilateral triangular eminences of the stalk of the pineal gland, situated at the dorso-caudal end of the thalamus. Their medial divisions border the third ventricle. The habenula is considered as the relay hub where incoming signals from basal forebrain, including, diagonal band of Broca, lateral preoptic area, lateral hypothalamus, paraventricular nucleus, and entopeduncular nucleus, travel through the stria medullaris to habenula to be processed. The habenula then conveys the processed information to midbrain and hindbrain monoaminergic structures, such as ventral tegmental area, medial and dorsal raphe nuclei, and periaqueductal grey, through the fasciculus retroflexus. The habenula thus connects the cognitive-emotional basal forebrain to the modulatory monoaminergic area (Sutherland, 1982). Medial habenula (MHb, Figure 3B, area 45), was observed to express strongly Adcyap1 in the dorsal half, in cells which co-express Slc17a7 or Slc17a6 (Figure 1—source data 1G). In the lateral habenula (Figure 3B, area 78), the Adcyap1-positive neurons co-expressed Slc17a6, and were mainly located in the central nuclei of the lateral habenula (Figure 1—source data 1G), a region with rich input from hypothalamic peptidergic afferents including arginine vasopressin and orexin (Zhang et al., 2018). All those cells, both in lateral and medial habenula, co-expressed Calb2 (see Allen Brain Atlas for reference https://mouse.brain-map.org/experiment/show?id=79556662).
 
-## Hypothalamus
+##### Hypothalamus
 
 Using the sensitive DISH method, a total of 26 hypothalamic nuclei were found to express Adcyap1 (Table 1). Among the highest density Adcyap1-expressing cell clusters/nuclei (>80% of cells Adcyap1-positive) of hypothalamus are (numbers refer to Figure 3A, B, C): SFO (2, Figure 1—source data 1F), MEPO (3, Figure 1—source data 1C, D), OVLT (4, Figure 1—source data 1C), DMH (52a) and VMH (52b, Figure 1—source data 1G), STN (Figure 3D, 103, Figure 1—source data 1H), and lateral mammillary nucleus (71, Figure 1—source data 1I). All these Adcyap1-positive expressing cells co-expressed Slc17a6. Other hypothalamic regions listed in Table 1 had lower density of expression and were also Slc17a6-positive co-expressing, such as paraventricular hypothalamic nucleus (PVH, area 49, Figure 1—source data 1F). Slc32a1/Adcyap1-coexpressing cells were sparsely distributed mainly in the anterior hypothalamic area (AHA Figure 1—source data 1O3), supramammillary (Figure 1—source data 1O4), and tuberomammillary nuclei (Figure 1—source data 1O2).
 
 Adcyap1r1 expression in hypothalamus was extensive (Figure 3A–C) and in fact ubiquitous. The nuclei with intense Adcyap1 expression mentioned above also had intense expression of Adcyap1r1. In addition, the PVH (49), SO (51), SCH (50), DMH (52a), arcuate hypothalamic, anterior hypothalamic nucleus, zona incerta (102, Figure 1—source data 1H), postero-lateral hypothalamic area (LH, area 74), periventricular hypothalamic nucleus posterior, dorsal premammillary nucleus and supramammillary nucleus medial (Figure 1—source data 1I and I10) exhibited strong Adcyap1r1 expression. Both Slc32a1- and Slc17a6-positive cells co-expressed Adcyap1r1.
 
-## Midbrain
+#### Midbrain
 
 We found moderate expression of Adcyap1 with Slc17a6 in the mainly sensory-related structures: inferior colliculus (IC, Figure 3A, B, C, area 17), nucleus of the brachium of IC, midbrain trigeminal nucleus, and sparse expression (between 20–40%) in parabigeminal nucleus (Table 1, Figure 3D, area 98). We found intense co-expression of Adcyap1 and Slc17a6 in motor related structures: superior colliculus, motor related subfield (SCm, Figure 3A–C, area 16, Figure 1—source data 1I, J, K) and periaqueductal gray (PAG, Figure 3A, area 14, Figure 1—source data 1I-K); moderate expression in ventral tegmental area (VTA, Figure 3B, area 54, Figure 1—source data 1I and I9) and Edinger-Westphal nucleus (Figure 3A, area 12). Adcyap1r1 was strongly expressed in the PAG and SC, although a moderate expression of this transcript was observed to be widespread in Slc17a6- and Slc32a1-expressing cells (Figure 3A–D).
 
-## Hindbrain
+#### Hindbrain
 
-## Pons
+##### Pons
 
 In sensory-related structures, we found intense Adcyap1 expression in the parabrachial complex (PBC, Figure 3C, area 63), in all its subfields, although it was more intense toward its lateral divisions, external to the superior cerebellar peduncles (scp, Figure 1D and Figure 1—source data 1K, L). The cells in those divisions, except the Koelliker-Fuse subnucleus (KF), were small cells mainly co-expressing Slc17a6. In contrast, the Adcyap1-positive cells in KF were bigger than the cells in the rest of the PBC divisions and strongly co-expressed Slc17a7 (Figure 1D). Other structures with moderate expression of Adcyap1 and Slc17a7 were the lateral division of SOC (Figure 3C, area 66 and Figure 1—source data 1L) and DCO and VCO (Figure 3E, area 126 and 127, Figure 1—source data 1K, M, M6). Lateral leminiscus nucleus and the principal sensorial nucleus of the trigeminal (Figure 3D, area 95, Figure 1—source data 1L) expressed Adcyap1 moderately in Slc17a6-expressing cells. In motor-related structures, we found moderate Adcyap1 co-expressed with Slc17a6 in the following structures: tegmental reticular nucleus, Barrington’s nucleus, dorsal tegmental nucleus, pontine grey (PG, Figure 3A, area 27, Figure 1—source data 1J), pontine reticular nucleus (Figure 3A, area 25, Figure 1—source data 1K, L), supratrigeminal nucleus (SUT, Figure 1—source data 1L), and superior central nucleus raphe (Table 1 and Figure 3A–C). In behavioral-state-related structures, we found intense Adcyap1 expression in locus coerulus (LC) neurons co-expressing Slc17a7 or Slc17a6. The laterodorsal tegmental nucleus also expressed intensely Adcyap1, co-expressed with Slc17a6. Pontine reticular nucleus and superior central nucleus of raphe expressed Adcyap1 with Slc17a6 in a moderate manner (Table 1).
 
 Adcyap1r1 was strongly expressed in pons structures, which also intensely expressed Adcyap1, such as PG, LC, PBC, DTN regions. Otherwise, the expression was observed to be widespread in both glutamatergic and GABAergic cell types (Figure 3A–D).
 
-## Medulla
+##### Medulla
 
 In the medulla oblongata, Adcyap1 was extensively expressed and generally in a sparse pattern. However, some of the nuclei showed strong-intense expression: the nucleus of tractus solitarius (NTS, Figure 3A, area 19), medial division (co-expressing mainly Slc17a6), the NTS lateral division (co-expressing mainly Slc17a6 and occasionally Slc17a7), and the dorsal and ventral cochlear nuclei (co-expressing Slc17a7 or Slc17a6). Details of other Adcyap1-positive neurons co-expressing Slc17a6 nuclei can be found in Table 1.
 
 The Adcyap1r1 expression in medulla is similar to pons, a widespread pattern with intense expression in NTS divisions, and other nuclei, which expressed Adcyap1 (Figure 3A–D).
 
-## Cerebellum
+#### Cerebellum
 
 In the cerebellum, Adcyap1 was expressed in all Purkinje cells, which co-expressed Slc32a1 (Figure 1, Figure 3A–F and Figure 1—source data 1M, M1-M4, O and O1). Figure 1, panels E-H show two cerebellar regions, paraflocculus (E and F) and central (G and H), in low and high magnification, respectively, where Adcyap1 expression was higher than other cerebellar lobules. Purkinje cells, distributed in all regions of cerebellar cortex, are the most prominent population of GABA/PACAP co-expressing neurons of the brain. Some GABAergic cells in the granule cell layer of paraflocculus and central regions also co-expressed Adcyap1 (indicated with double pink arrowheads in Figure 1E–H), although we could not identify whether these were, Golgi, Lugaro or globular cells (Simat et al., 2007).
 
 In these two cerebellar regions, some granule cells also expressed Adcyap1 (indicated with single blue arrows, Figure 1E–H). In deep cerebellar nuclei, few Adcyap1-expressing cells were found in fastigial, interposed and dentate nuclei, with the former two co-expressing Slc17a7 and the latter co-expressing Slc17a6 (Table 1). Adcyap1r1 expression here was more limited than in other brain regions analyzed above. Adcyap1 was mainly expressed in the Slc32a1-expressing Purkinje cells and sparsely expressed in Slc17a7- and Slc17a6-expressing neurons in the deep cerebellar nuclei (Figure 3A–F).
 
-## PACAP→PAC1 signaling within sensory and behavioral circuits
+### PACAP→PAC1 signaling within sensory and behavioral circuits
 
 Here, we analyze the chemo-anatomical aspects of PACAP/PAC1 mRNA expression using the results described above, but putting them into basic sensory circuit wiring maps, as well as in behavioral state and survival instinctive brain longitudinal structures, especially the hypothalamic hubs, based on existing classification schema (Swanson, 2012; Sternson, 2013; Swanson et al., 2016; Zimmerman et al., 2017; Swanson, 2018). Based on PACAP mRNA expression in these proposed sensory/behavioral circuits, we have addressed consequences of PACAP deficiency on neuronal activation and behavioral output in a mouse model of predator odor exposure and defensive behavior.
 
-## PACAP-PAC1 co-expression in forebrain sensory system
+#### PACAP-PAC1 co-expression in forebrain sensory system
 
-## Thirst circuit for osmotic regulation
+##### Thirst circuit for osmotic regulation
 
 As shown above, Adcyap1 was intensely expressed in all peri/para ventricular structures directly related to thirst and osmotic regulation (Figure 7). These structures include SFO, OVLT, MEPO, and PVH (vide supra). Other hypothalamic nuclei intrinsically related to osmotic control and anticipatory drinking are SO and SCH, which were intensely Adcyap1r1-expressing.
 
@@ -179,13 +1815,13 @@ Information about plasma sodium concentration enters the circuit through special
 
 **Figure 6.:** For abbreviations also see the corresponding table in Appendix 1. (A) Thirst and salt appetite-related pathways with PACAP-PAC1 glutamatergic / GABAergic signaling noted. The main figure is the enlargement of color-shaded areas of the box in the inset at the upper right, projected against a midsagittal section of mouse brain. Blue shaded area symbolizes the hypothalamus and pink shaded area the hindbrain. (B) Olfactory pathway. The projection neurons from the OB send their axons to the different structures of the olfactory cortex, among them AON, TT, OT, PIR, the amygdaline complex (LA, BLA, CEA, BST), ENT, and nLOT). (C) Visual pathway and circadian circuit for brain states. II: optic nerve; PVN: paraventricular nucleus; LHA: lateral hypothalamic area; LG: lateral geniculate nuclei; IGL: intergeniculate leaflet; M/LHb: medial and lateral habenula; OP: olivary pretectal nucleus, SC: superior colliculus; Vis: visual area; PTL: parietal association area; RSP: retrosplenial area; MBSR: midbrain behavioral state related (pedunculopontine nucleus, substantia nigra, midbrain raphe nuclei; PBSR: pons behavioral state related (locus coeruleus, superior central nucleus of raphe, pontine reticular nucleus). (D) Auditory pathway. VIII: cochlear nerve; DCO/VCO: dorsal and ventral cochlear nuclei; MNTB: medial nucleus of the trapezoid body; SO: superior olivary complex; NLL: Nucleus of the lateral lemniscus; IC: Inferior colliculus; MG: medial geniculate complex; AC: Auditory cortex; AAC: associate auditory cortex; TE: temporal association area; Hipp: hippocampus; LHA: lateral hypothalamic area; PVN: hypothalamic paraventricular nucleus; IL: infralimbic cortex; PL: prelimbic cortex. (E) Gustative pathway. V, VII, IX, X: represent trigeminal, facial, glossopharyngeal and vagus nerves respectively. NTS: Nucleus of the solitary tract (nucleus of tractus solitarius); NA: nucleus ambiguus; PBN: Parabrachial nucleus; VPM: ventropostero medial nucleus of the thalamus; BLA: Basolateral amygdala; CeA: central Amygdala; BST: bed nucleus of the stria terminalis; LHA: lateral hypothalamic area; RF: reticular formation.
 
-## Olfactory pathway
+##### Olfactory pathway
 
 In the main olfactory system, input from olfactory sensory neurons reaches the main olfactory bulb (MOB), and the axons of the projection neurons in MOB travel to the anterior olfactory nucleus (AON), piriform cortex (Pir), and amygdala for additional processing (Wacker et al., 2011). This multi-step pathway brings olfactory information to be processed in multiple areas of the cerebral cortex, including the anterior AON and Pir. The AON, a cortical area adjacent to the olfactory bulb, is part of the main olfactory pathway. A parallel system, the accessory olfactory system, brings information, for instance that conveyed by pheromones, from the vomeronasal organ into the accessory olfactory bulb, which innervates the MEA, BST, and cortical amygdala (Figure 10). Although it was originally assumed that only the accessory olfactory system processed pheromonal and other socially relevant odors, more recent evidence suggests that social information is processed by both pathways (Wacker and Ludwig, 2012).
 
 The olfactory system appears specially to use PACAP/PAC1 as one of its main modes of co-transmission (see section The claustrum), especially within the cell population in the outer plexiform layer of the MOB and in the mitral cell layer of the AOB, in which some cells were observed to co-express Adcyap1 and Slc17a7, Slc17a6, or Slc32a1 (Figure 1—source data 1A2) and Figure 1A–F.
 
-## Visual pathway and the circadian circuits for brain states
+##### Visual pathway and the circadian circuits for brain states
 
 There is a vast literature on the visual system and we only touch on selected hubs here to emphasize the PACAP-PAC1 signaling role for visual information processing (Figure 6C). PACAP-PAC1 in the visual system was first discovered via identification of the PACAP immunopositive RGCs, soon after the discovery of PACAP itself (Hannibal et al., 1997), which project to the SCH. Here, using DISH method, we report Adcyap1 co-expressed with Slc17a6 in retina ganglion cells. Adcyap1 expression intensity followed a circadian oscillation mode (see section Retina). The RGC sends visual information through its axons forming the optic nerve, chiasm and optical tract and accessory optical tract, with its first offshoot to SCH for brain state modulation. The SCH was found intensely expressing Adcyap1r1 in both Slc32a1- and Slc17a6-expressing neurons widely and homogenously distributed, at variance with the observation in rat that PAC1 is expressed mainly in the ventral part of the SCH (Hannibal et al., 1997). Leaving the optic chiasm, the optic tract courses latero-caudally and emits a second offshoot, the accessory optical tract, splits off and courses to the midbrain, where it ends in three terminal nuclei, that is medial, lateral and dorsal terminal nuclei. They play an important role in controlling eye movements and are thus parts of the motor system and were all Adcyap1-expressing. The main optic tract continues on to end in the lateral geniculate complex (LG) of the thalamus, after giving off collaterals to the superior colliculus (SC) of the midbrain and to the olivary pretectal nucleus (OP). The dorsal part of the LG then projects to primary visual cortex (Vis), whereas the OP is involved in visual reflex, and the superior colliculus has two main roles: projecting to the motor system, and projecting to secondary visual cortical area via thalamus (Swanson, 2012). All above optic nerve/tract/accessory tract targeted structures were observed to have intense expression of Adcyap1r1. The visual cortex, parietal associated area, and retrosplenial area intensely expressed Adcyap1 (Table 1 and Figure 1—source data 1I, J, K and Figure 1A–F).
 
@@ -195,23 +1831,23 @@ Adcyap1r1 was strongly expressed in SCH (Figure 6C and Figure 7), which projects
 
 **Figure 7.:** Left column: critical nodes for behavioral state symbolized by dark gray shaded objects, modified from Swanson, 2012. In the longitudinal cell group-column of brain stem the key neurotransmitters are annotated. ACH, acetylcholine; CRH, corticotropin-releasing hormone; DA, dopamine; ENK, encephalin: GABA, gamma-amino butyric acid; GAL, galanin; GLUT, glutamate; H/O, hypocretin/orexin; HIST, histamine; MCH, melanin-concentrating hormone; NE, norepinephrine; 5HT, serotonin. Right column: hypothalamic survival circuit that consisted of discrete hypothalamic regions contain interoceptors for a variety of substances and have neuronal afferences from primary sensory systems to control the secretory and instinctive motor outputs. The rectangle in the midline represents the neuroendocrine motor zone for secretion of hypophysiotropic hormones, which include thyrotropin-releasing hormone, corticotropin-releasing hormone, growth hormone-releasing hormone, somatostatin, gonadotropin-releasing hormone, dopamine, neurotensin. SFO, subfornical organ; OVLT, organum vasculosum of lamina terminalis; MnPO, preoptic nucleus; AHN, anterior hypothalamic area; PVH, paraventricular hypothalamic nucleus; VMH, ventromedial hypothalamic nucleus; LH, lateral hypothalamic area; MBO, mammillary body (for general reference see Swanson, 2012).
 
-## PACAP-PAC1 co-expression in the central processing of ganglion cell sensory systems
+#### PACAP-PAC1 co-expression in the central processing of ganglion cell sensory systems
 
 The sensory ganglion cells were observed to express PACAP shortly after its discovery (Sundler et al., 1996). PACAP mRNA and peptide levels are increased in sensory ganglion cells within 1 day following axotomy, suggesting possible roles in neuronal protection, differentiation, nerve fiber outgrowth, and/or restoration of perineuronal tissue upon neuronal damage. The sensory ganglion cells send their axons to primary sensory nuclei in the dorsal medulla, which include: (a) auditory system, which ends in the cochlear nuclei (Figure 6D); (b) vestibular system, which ends in the vestibular nuclei (not included in this analysis); (c) gustatory system which ends in the rostral nucleus of tractus solitarius (NTS, Figure 6E); and (d) vagal/glossopharyngeal visceroceptive system, which ends in the caudal nucleus of the NTS (not included in this analysis). The special sensory nuclei in the medulla are all derived in the embryo from a highly differentiated, dorsal region of the primary hindbrain vesicle, the rombic lip (Figure 5.14 of Swanson, 2012) – they were all observed to co-express Adcyap1 and Slc17a6 from very intense (NTS) to moderate levels (DCN and VCN) (see Table 1, Figure 1A–F, Figure 1—source data 1M5-M6 and website).
 
 Here, we analyze the PACAP/PAC1 participation in the auditory and gustatory central processing circuits.
 
-## Auditory pathway
+##### Auditory pathway
 
 Auditory information, for example the spectrum, timing, and location of sound, is analyzed in parallel in the lower brainstem nuclei, that is, dorsal and ventral cochlear nuclei (DCN and VCN), medial nucleus of trapezoid body (MNTB), superior olivary complex (SO), and nuclei of the lateral lemniscus (NLL). These hindbrain structures (NLL and SO) project to the inferior colliculus (IC, in midbrain) through both the excitatory and inhibitory inputs to IC. From IC, the information travels toward thalamus via relay in medial geniculate complex (MG), to reach the auditory cortex, associate auditory cortex, temporal association area; hippocampus, which subsequently projects to prefrontal cortices (Ono and Ito, 2015). Main neuronal structures that are relevant to the auditory pathway are shown in the schematic diagram of Figure 6D. The glutamatergic population of these structures were all found to co-express Adcyap1, Slc17a6 and/or Slc176a7, as well as Adcyap1r1 (Figure 3A–F).
 
 The mainly Sc321a1-expressing structures located in subcortical regions which strongly co-expressed Adcyap1r1 (Figure 2D–G and Table 2), include, for instance, BST and the CeA with its three subdivisions (Figure 6D, structures symbolized in pink-GABAergic, and blue outline–PAC expressing) participate in cognitive and emotional auditory information, obtaining auditory sensory input from brain stem>midbrain>thalamic MG, which project to lateral amygdala (LA, a main PACAP-containing nucleus derived from cortical plate) which send input to the cognitive centers through basal lateral amygdala (BLA, Figure 2F and G).
 
-## Gustatory pathway
+##### Gustatory pathway
 
 Chemicals (taste substances) in foods detected by sensory cells in taste buds distributed in the oropharyngeal epithelia are recognized as tastes in the gustatory cortex (GC), including granular insular cortex (GI) and agranular insular cortex (AI), also called dysgranular insular cortex (DIC), which is the primary gustatory cortex (Figure 6E). Between the peripheral sensory tissue and the GC, many neuronal hubs participate in the gustatory information processing, beginning with the geniculate ganglion (GG) of the facial nerve, cranial nerve CN-VII which receive taste stimuli from the anterior 2/3 of the tongue; the petrosal ganglion (PG) of the glossopharyngeal nerve, CN-XI, which receives the taste stimuli from the posterior third of the tongue; and nodose ganglion (NG), also called the inferior ganglion of the vagus nerve (CN-X, which innervates the taste buds of the epiglottis). The lingual nerve, a branch of mandibular nerve, from trigeminal nerve (CN-V), also innervates the anterior 2/3 portion of tongue. All these ganglia express PACAP as their co-transmitter and this expression is potentiated during injury (Sundler et al., 1996). Taste information from sensory ganglia of CN V, VII, IX, and X project to the rostral NTS of the medulla, which intensely expressed Adcyap1 and Adcyap1r1. NTS neurons send taste information to parabrachial nucleus (PB, which also intensely expressed Adcyap1 and Adcyap1r1) and then to the parvocellular division of the ventral posteromedial nucleus VPM of the thalamus, which projects to GC, as well as to the cognitive centers, central amygdala (CEA), bed nucleus of stria terminalis (BNST) and lateral hypothalamus (LH) which also reciprocally innervate the PB (Halsell, 1992). In Figure 6 panel E, the basic wiring of taste circuit was based on the literature (Halsell, 1992; Carleton et al., 2010), and modified with PACAP-PAC1 signaling annotated (Figure 1A–F).
 
-## PACAP-PAC1 signaling in major cell groups associated with behavioral state control system and hypothalamic instinctive survival system
+#### PACAP-PAC1 signaling in major cell groups associated with behavioral state control system and hypothalamic instinctive survival system
 
 In the course of a day, brain states fluctuate, from conscious awake information-acquiring states to sleep states, during which previously acquired information is further processed and stored as memories (Tukker et al., 2020). Anatomically and chemically distinct neuronal cell groups stretching from medulla, pons, midbrain, through the hypothalamus to the cerebral nuclei all participate in modulation of behavioral state (Swanson, 2012). We have briefly referred to sleep and waking behavioral states in analysis of the hypothalamic SCH in the visual/photoceptive pathways that project to midbrain and hindbrain behavioral state structures broadly defined. In Figure 7, left column we complemented the model of behavioral state cell groups and chemical signatures previously presented (Swanson, 2012), adding PACAP-PAC1 as informed by the current study (Figure 1A–F). Three behavioral state-related glutamatergic structures in medulla, that is raphé magnus, raphé pallidus, and raphé obscurus are not represented in the left column in recognition of the original figure design of the author (Figure 9. 5, Swanson, 2012).
 
@@ -221,13 +1857,13 @@ Other relevant structures more caudal in this longitudinal brain stem column are
 
 After analyzing the above presence of PACAP and its receptor PAC1 in sensory-cognitive to motor output, a question emerged: what would be the behavioral and neuronal activation consequences if PACAP signaling were deficient?
 
-## PACAP knockout impairs predator odor salience processing via reducing neuronal activation and vesicular transporter expression in key PACAP-PAC1 nuclei
+#### PACAP knockout impairs predator odor salience processing via reducing neuronal activation and vesicular transporter expression in key PACAP-PAC1 nuclei
 
 To assess the behavioral implications of PACAP action within one of these circuits, we examined the effect of knockout of PACAP expression in brain on defensive behavior initiated via olfaction, using a predator odor paradigm (Figure 8A and B). Using a modified open-field box with a lidded container with cat urine litter, and wild type (WT) and PACAP-deficient (KO) C57Bl/6N mice (Hamelink et al., 2002), we assessed the defensive locomotion patterns during cat odor exposure, which include displacement pattern in the four quadrants of the box; approach to the stimulus (urine-containing cat litter) with complete retreats and incomplete retreats; and periods of immobility (freezing behavior). DISH for fos, Slc17a7, Slc17a6, and Slc32a1 expression in the two experimental groups was performed and analyzed post hoc.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig8-v2.jpg)
 
-**Figure 8.:** (A and B) Schematics of behavioral procedure using a modified open field test (OFT) to study defensive behavior during predator odor exposure, with typical behaviors of wild type (A: freezing) and PACAP KO (B, wandering, hyperactive and jumping) symbolized. (Ai and Bi) representative 2D movement tracking in the OFT of WT (Ai) and OK (Bi) mice, with dashed lines symbolizing complete (green lines) /incomplete (red lines) approach/sniff > retreat cycles. (Aii and Bii) 2D movement heat-map, WT, n = 9 mice; KO, n = 9 mice. (C) Pixel analysis reflecting total distance traveled in each of the four quadrants, being the Q1 the container located quadrant (clockwise numbering). The pixel numbers of per quadrant (Q) per mouse were compared that revealed a significant increase only in Q1 (WT vs KO, 26500 ± 3288 vs. 43640 ± 3921, *p<0.05. (D) Numbers of freezing, complete sniff>retreat or partial sniff>retreat episodes were assessed using Student t-test. For freezing (n = 8) and complete sniff>retreat (n = 9) behaviors, KO mice showed significant reduction WT:14.29 ± 2.18 vs KO: 3.18 ± 0.64; and WT: 5.89 ± 0.84 vs KO: 1.33 ± 0.17; for partial sniff>retreat behavior (n = 9) KO mice showed significant increase (WT: 0 vs KO: 2 ± 0.41). (E) Number of cells expressing fos mRNA 45 min after the predator odor test were quantified in a 0.0314 mm2 area and statistic significant differences between KO and WT were determined using a multiple t-test and the Bonferroni-Dunn method. There was a significant decrease in the expression of fos in the following regions of KO mice: olfactory bulb mitral layer ‘OB ml’ (WT: 44.4 ± 2.60 vs KO: 19.43 ± 1.25); olfactory bulb granule layer ‘OB gl’(WT: 21.43 ± 0.84 vs KO: 7.29 ± 0.52); medial amygdala ‘MeA’ (WT: 12 ± 0.44 vs KO: 5 ± 0.76); central amygdala ‘CeA’ (WT: 6.71 ± 0.57 vs KO: 2.71 ± 0.47); medial septum ‘MS’ (WT: 5.71 ± 0.42 vs KO: 3.71 ± 0.29); lateral septum ‘LS’ (WT: 14 ± 0.62 vs KO: 5.14 ± 0.56); bed nucleus of stria terminalis ‘BST’ (WT: 11.43 ± 0.57 vs KO: 3.57 ± 0.37); ventromedial hypothalamus ‘VMH’ (WT: 11.86 ± 0.91 vs KO: 4.86 ± 0.50); infralimbic cortex ‘IL’ (WT: 15.71 ± 0.714 vs KO: 9.86 ± 0.74); prelimbic cortex ‘PL’ (WT: 19.71 ± 0.97 vs KO: 11.43 ± 1.23); cingulate cortex ‘CG’ (WT: 24.28 ± 0.92 vs KO: 11.57 ± 1.15) and parabrachial nucleus ‘PB’ (WT: 30.71 ± 2.82 vs KO: 7.29 ± 1.02) and granule cell layer of cerebellum ‘CBgcl’ (WT: 13.14 ± 0.96 vs KO: 8 ± 0.76). In contrast, the number of fos nuclei was augmented in two motor related areas in KO animals related to WT: motor cortex, layer IV ‘MC IV’ (WT: 4.43 ± 0.65 vs KO: 26.71 ± 1.54) and motor cortex, layer V (WT: 5.28 ± 0.57 vs KO: 33.57 ± 1.43). (F and G) example of reduced fos expression pattern in central amygdala in KO mice and (H and I) augmented fos expression in primary motor cortex of KO mice. Scale bars: 200 µm for low-magnification and 20 µm for high-magnification insets. Statistic significant differences are depicted as ***p<0.001, **p<0.01, *p<0.05. Note that during the freezing analysis, two outliers, one in each experimental group were discarded because being 45 and 24 (counts), with 5 times and 11 times higher than the standard deviations for the corresponding groups, that is WT:14.29 ± 6.17 (mean ± SD) vs KO: 3.18 ± 1.80 (mean ± SD). This exclusion was based on criteria explained in NIH Rigor and Reproducibility Training course, https://www.nigms.nih.gov/training/documents/module4-sample-size-outliers-exclusion-criteria.pdf and http://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm.Figure 8—source data 1.Figure 8—source data 2.
+**Figure 8.:** (A and B) Schematics of behavioral procedure using a modified open field test (OFT) to study defensive behavior during predator odor exposure, with typical behaviors of wild type (A: freezing) and PACAP KO (B, wandering, hyperactive and jumping) symbolized. (Ai and Bi) representative 2D movement tracking in the OFT of WT (Ai) and OK (Bi) mice, with dashed lines symbolizing complete (green lines) /incomplete (red lines) approach/sniff > retreat cycles. (Aii and Bii) 2D movement heat-map, WT, n = 9 mice; KO, n = 9 mice. (C) Pixel analysis reflecting total distance traveled in each of the four quadrants, being the Q1 the container located quadrant (clockwise numbering). The pixel numbers of per quadrant (Q) per mouse were compared that revealed a significant increase only in Q1 (WT vs KO, 26500 ± 3288 vs. 43640 ± 3921, *p<0.05. (D) Numbers of freezing, complete sniff>retreat or partial sniff>retreat episodes were assessed using Student t-test. For freezing (n = 8) and complete sniff>retreat (n = 9) behaviors, KO mice showed significant reduction WT:14.29 ± 2.18 vs KO: 3.18 ± 0.64; and WT: 5.89 ± 0.84 vs KO: 1.33 ± 0.17; for partial sniff>retreat behavior (n = 9) KO mice showed significant increase (WT: 0 vs KO: 2 ± 0.41). (E) Number of cells expressing fos mRNA 45 min after the predator odor test were quantified in a 0.0314 mm2 area and statistic significant differences between KO and WT were determined using a multiple t-test and the Bonferroni-Dunn method. There was a significant decrease in the expression of fos in the following regions of KO mice: olfactory bulb mitral layer ‘OB ml’ (WT: 44.4 ± 2.60 vs KO: 19.43 ± 1.25); olfactory bulb granule layer ‘OB gl’(WT: 21.43 ± 0.84 vs KO: 7.29 ± 0.52); medial amygdala ‘MeA’ (WT: 12 ± 0.44 vs KO: 5 ± 0.76); central amygdala ‘CeA’ (WT: 6.71 ± 0.57 vs KO: 2.71 ± 0.47); medial septum ‘MS’ (WT: 5.71 ± 0.42 vs KO: 3.71 ± 0.29); lateral septum ‘LS’ (WT: 14 ± 0.62 vs KO: 5.14 ± 0.56); bed nucleus of stria terminalis ‘BST’ (WT: 11.43 ± 0.57 vs KO: 3.57 ± 0.37); ventromedial hypothalamus ‘VMH’ (WT: 11.86 ± 0.91 vs KO: 4.86 ± 0.50); infralimbic cortex ‘IL’ (WT: 15.71 ± 0.714 vs KO: 9.86 ± 0.74); prelimbic cortex ‘PL’ (WT: 19.71 ± 0.97 vs KO: 11.43 ± 1.23); cingulate cortex ‘CG’ (WT: 24.28 ± 0.92 vs KO: 11.57 ± 1.15) and parabrachial nucleus ‘PB’ (WT: 30.71 ± 2.82 vs KO: 7.29 ± 1.02) and granule cell layer of cerebellum ‘CBgcl’ (WT: 13.14 ± 0.96 vs KO: 8 ± 0.76). In contrast, the number of fos nuclei was augmented in two motor related areas in KO animals related to WT: motor cortex, layer IV ‘MC IV’ (WT: 4.43 ± 0.65 vs KO: 26.71 ± 1.54) and motor cortex, layer V (WT: 5.28 ± 0.57 vs KO: 33.57 ± 1.43). (F and G) example of reduced fos expression pattern in central amygdala in KO mice and (H and I) augmented fos expression in primary motor cortex of KO mice. Scale bars: 200 µm for low-magnification and 20 µm for high-magnification insets. Statistic significant differences are depicted as ***p<0.001, **p<0.01, *p<0.05. Note that during the freezing analysis, two outliers, one in each experimental group were discarded because being 45 and 24 (counts), with 5 times and 11 times higher than the standard deviations for the corresponding groups, that is WT:14.29 ± 6.17 (mean ± SD) vs KO: 3.18 ± 1.80 (mean ± SD). This exclusion was based on criteria explained in NIH Rigor and Reproducibility Training course, https://www.nigms.nih.gov/training/documents/module4-sample-size-outliers-exclusion-criteria.pdf and http://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm.
 
 Cat urine triggered purposeful movement such as sniff>retreat in WT subjects (Figure 8Ai, green dashed lines indicate complete sniff>retreat cycles). In contrast, the movement patterns exhibited by KO subjects consisted in sniff>retreat cycles of short distances and the mice often returned to the container location area (Figure 8Bi, red dashed lines indicate incomplete/short sniff>retreat cycles). PACAP-deficient mice had significant reduction of complete retreats (p<0.001) and significant augmentation of incomplete retreats (p<0.001) (Figure 8D). Figure 8Aii and Bii show the X-Y dimension movement heat-maps for each group. Movement analysis by quadrants showed a significant increase in pixel values of the KO group in the quadrant where the odorant container was located (Figure 8C, p<0.05, C1). It is worth mentioning that movement in Z dimension (repetitive jumping), characteristic of PACAP-deficient mice (Hashimoto et al., 2001) was not represented in the X-Y dimension heat maps, and investigating the phenomenon is beyond the scope of the study. KO mice also exhibited significant reduction in freezing behavior (Figure 8D, p<0.001). To test whether or not the behavior of PACAP-deficient mice could be explained in whole or part by hypo- or anosmia, a standard test for olfaction was carried out. Wild-type and PACAPko mice were tested for the ability to retrieve a buried cookie as described in Materials and methods. Retrieval times for wild-type and PACAP-deficient mice were not significantly different (wild-type retrieval latency 38.0 ± 10.4 s; PACAPko retrieval latency 44.5 ± 12 s, p=0.7058, t-test, n = 6/group, each group comprising three male and three female mice approximately 8 weeks of age). We conclude that PACAP-deficient and wild-type C57Bl6/N mice were equally able to locate a food source using olfaction.
 
@@ -237,7 +1873,7 @@ We assessed fos expression in the PACAP/PAC1 system including both glutamatergic
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/61718/elife-61718-fig9-v2.jpg)
 
-**Figure 9.:** Adcyap1 or Adcyap1r1 were strongly expressed in WT mice.(A–D) Examples of in situ hybridization using RNAscope method showing down-regulation in KO mice (A’, B’, C’, D’) of Slc17a7 (VGLUT1 mRNA) in anterior cingulate area (ACA) (panels As), Slc17a6 (VGLUT2 mRNA) in hypothalamic subtalamic nucleus (STN) (Panels B) and of Slc32a1 (VGAT mRNA) in lateral septum (LS) and bed nucleus of stria terminalis, oval subnucleus (BSTov) (panels Cs), and cerebellar cortex, the ansiform lobule's, Purkinje’s cells (panels Ds). Note that the feature of reduced expression of Slc32a1 at both single-cell and cell density levels, can be clearly observed (arrows) in the Purkinje cells. (E) Number of cells expressing Slc32a1 (orange shading), Slc17a7 (blue shading) and Slc17a6 (green shading) were quantified in a 0.0314 mm2 area and statistically significant reductions of KO compared to WT were detected septum (WT: 39.67 ± 1.23 vs KO: 8.67 ± 0.49); BST (WT = 23.83 ± 1.35 vs KO = 5.17 ± 0.48); ansiform lobule of cerebellum (WT: 21.83 ± 1.19 vs KO: 1.83 ± 0.4); anterior cingulate area (WT: 39.67 ± 1.23 vs KO: 15.67 ± 1.05) and subthalamic nucleus (WT: 26.17 ± 1.78 vs KO: 4.67 ± 0.76), while in the reticular thalamic nucleus, a region that did not contain Adcyap1 expressing cells, no significant difference was detected (negative control). Statistic differences are depicted as ***p<0.001 and ns: not significant. Scale bars: A and A’: 300 µm; Ai and Ai’: 100 µm; Bs and Cs: 20 µm; D and D’: 500 µm; D1 and D1’: 100 µm.Figure 9—source data 1.
+**Figure 9.:** (A–D) Examples of in situ hybridization using RNAscope method showing down-regulation in KO mice (A’, B’, C’, D’) of Slc17a7 (VGLUT1 mRNA) in anterior cingulate area (ACA) (panels As), Slc17a6 (VGLUT2 mRNA) in hypothalamic subtalamic nucleus (STN) (Panels B) and of Slc32a1 (VGAT mRNA) in lateral septum (LS) and bed nucleus of stria terminalis, oval subnucleus (BSTov) (panels Cs), and cerebellar cortex, the ansiform lobule's, Purkinje’s cells (panels Ds). Note that the feature of reduced expression of Slc32a1 at both single-cell and cell density levels, can be clearly observed (arrows) in the Purkinje cells. (E) Number of cells expressing Slc32a1 (orange shading), Slc17a7 (blue shading) and Slc17a6 (green shading) were quantified in a 0.0314 mm2 area and statistically significant reductions of KO compared to WT were detected septum (WT: 39.67 ± 1.23 vs KO: 8.67 ± 0.49); BST (WT = 23.83 ± 1.35 vs KO = 5.17 ± 0.48); ansiform lobule of cerebellum (WT: 21.83 ± 1.19 vs KO: 1.83 ± 0.4); anterior cingulate area (WT: 39.67 ± 1.23 vs KO: 15.67 ± 1.05) and subthalamic nucleus (WT: 26.17 ± 1.78 vs KO: 4.67 ± 0.76), while in the reticular thalamic nucleus, a region that did not contain Adcyap1 expressing cells, no significant difference was detected (negative control). Statistic differences are depicted as ***p<0.001 and ns: not significant. Scale bars: A and A’: 300 µm; Ai and Ai’: 100 µm; Bs and Cs: 20 µm; D and D’: 500 µm; D1 and D1’: 100 µm.
 
 ## Discussion
 
@@ -245,21 +1881,21 @@ Here, we describe in detail the overall topographical organization of expression
 
 With the information obtained by PACAP/PAC1 expression and co-localization with small-molecule transmitters, we explored the hypothesis that the broad brain distribution of PACAP may reflect a more specific physiological function at a systems level. We examined the distribution of PACAP/PAC1 expression within specific sensory input-to-motor output pathways passing through the cognitive centers mentioned in these studies, in which most of the hubs analyzed used PACAP>PAC1 signaling within the context of glutamate/GABA neurotransmission. This systematic analysis has revealed several possible PACAP-dependent networks involved in the highest levels of motor control,that is the hypothalamic pattern initiator and controller system, intermediate (or intervening) levels of somatosensory information processing, and the complex cognitive and behavioral state control for behavior.
 
-## Newly identified PACAP-expressing cell groups in mouse brain suggesting circuit-level function
+### Newly identified PACAP-expressing cell groups in mouse brain suggesting circuit-level function
 
 The high-resolution DISH experiment and analysis showed that although the hypothalamus has the highest group-density of Adcyap1-expressing subpopulations in the brain, PACAP should not be considered as mainly a hypothalamic neuropeptide. Our data revealed newly identified Adcyap1-expressing neuronal populations with mainly Slc17a7 co-expression, derived from both cortical plate and brain stem. Interestingly, most of these neurons co-expressed Calb2, the mRNA transcript encoding the calcium binding protein calretinin. The prominent regions/nuclei of this group include: (1) regions derived from the cortical plate, that is MOB, AOB, AON, TT, PIR, NLOT, COAa, related directly to olfactory processing, (2) regions derived from cortical subplate, that is hippocampus CA3vv subset of pyramidal neurons in the ventral pole, dentate gyrus mossy cells, and posterior amygdalar nucleus and bed nucleus of anterior commissure; (3) brain stem structures that is pontine grey, Koelliker-Fuse of parabrachial complex, nucleus of lateral lemniscus within pons; nucleus of tractus solitarius, dorsal and ventral vestibular nucleus, and superior olivary complex lateral part.
 
-## Bed nucleus of anterior commissure (BAC): a prominent yet chemoanatomically ill-defined PACAP-expressing nucleus
+### Bed nucleus of anterior commissure (BAC): a prominent yet chemoanatomically ill-defined PACAP-expressing nucleus
 
 We described this nucleus as a newly identified major Adcyap1-expressing nucleus (section Structures derived from cerebral nuclei; Figure 5). Regarding the phylogenetic classification of the BAC, some authors have argued that “the septum (within striatum) is divided into the lateral, medial, and posterior septum (LS, MS and PS, respectively); and the PS is further subdivided into the triangular septum (TS) and the bed nucleus of the anterior commissure (BAC)" (Risold, 2004). However, the Allen Brain Map classifies the BAC as a pallidum structure (https://portal.brain-map.org/). Although literature on BAC connectivity is sparse, LS is identified as one of the inputs to the BAC (Swanson et al., 2016) and the medial habenula is one of the reported target region, with implication in the control of anxiety and fear responses (Yamaguchi et al., 2013), the connectivity and function of this glutamatergic-PACAP nucleus is largely elusive. Hence, the chemical identification of this nucleus opens new opportunities for generation of animal models using optogenetic/chemogenetic tools to discern the role of this structure within behavioral circuit(s).
 
-## A novel transcriptomically distinct pyramidal subpopulation in ventral hippocampal CA3c is well-placed for modulation of the predator threat response
+### A novel transcriptomically distinct pyramidal subpopulation in ventral hippocampal CA3c is well-placed for modulation of the predator threat response
 
 The hippocampus is typically described in the context of the tri-synaptic circuit. The tri-synaptic circuit is composed of three sequential glutamatergic synapses: perforant path axons of layer II neurons in entorhinal cortex project to the outer two-thirds of the dentate gyrus molecular layer, the location of the distal granule cell dendrites; mossy fiber axons of granule cells project to proximal dendrites of area CA3 pyramidal cells; and the Schaffer collateral axons of CA3 pyramidal cells project to stratum radiatum of CA1, where the apical dendrites of area CA1 pyramidal cells are located (Amaral and Witter, 1989; Figure 4E). However, this trisynaptic circuit seems insufficient to explain the ventral hippocampus observations about the CA3c pyramidal Slc17a7/Adcyap1 co-expressing neurons. Hence, this is a surprising finding since, as discussed by Scharfman, 2007, ventral CA3 may be a point of entry that receives information, which needs to be ‘broadcast,’ such as for stress responding, whereas the dentate gyrus may be a point of entry that receives information with more selective needs for hippocampal processing (Scharfman, 2007). It has been reported that the CA3c pyramidal cells possess collaterals that project in the opposite direction to the tri-synaptic circuit, ‘back’ to the dentate gyrus, by either direct innervation of the mossy cells and GABAergic interneurons in the hilus, or to the granule cell layer glutamatergic and GABAergic neurons (Scharfman, 2007). Those targeted cell types strongly expressed Adcyap1r1 (Figure 2A and A'). A hypothetical circuit modified from the literature (Scharfman, 2007), including this newly identified subset of CA3c PACAP-expressing cells, is presented here (Figure 4F). The hippocampal formation has been suggested to act not as a unitary structure, but with the dorsal (septal pole, DH) and ventral (temporal pole, VH) portions performing different functions (Moser and Moser, 1998). Their argument is based on three data sets. First, prior anatomical studies indicated that the input and output connections of the dorsal hippocampus (DH) and ventral hippocampus (VH) are distinct (Swanson and Cowan, 1977). Second, spatial memory appears to depend on DH not VH (Moser et al., 1995). Third, VH lesions, but not DH lesions, alter stress responses and emotional behavior (Henke, 1990). Here, we contribute with a fourth element, which is the subset of CA3 pyramidal neurons, located in the temporo-ventral pole of the hippocampal formation, transcriptomically distinct from the rest of CA3 pyramidal neurons, based on Slc17a7, Adcyap1 and Calb2 expression, which latter two elements are absent in the septo-dorsal pole.
 
 The VH has attracted attention in odor studies due to dense reciprocal connections to the MeA and to other amygdalar nuclei such as cortical nucleus that receives input directly from the main olfactory system (Scalia and Winans, 1975; Figure 6). The VH also project to AOB and the piriform cortex, a major target of the MOB (Shipley and Adamek, 1984). It was reported that rats with VH lesions exhibited deficits in freezing and crouching when exposed to cat odor (Pentkowski et al., 2006). Another study in mice exposed to coyote urine showed that VH lesions impaired avoidance and risk assessment behaviors (Wang et al., 2013b). In the experiments reported here, PACAP-deficient mice, with no neurons expressing Adcyap1 in CA3vv of VH, yielded similar behaviors, suggesting this cell subpopulation may contribute to optimal predator odor processing using PACAP as co-transmitter to coordinate the predator threat response.
 
-## The autocrine/paracrine and neuroendocrine nature of PACAP>PAC1 signaling and glutamate and GABA vesicular transporter expression
+### The autocrine/paracrine and neuroendocrine nature of PACAP>PAC1 signaling and glutamate and GABA vesicular transporter expression
 
 The analysis of our data showed an impressive amount of Adcyap1 and Adcyap1r1 coexpression at both single-cell and regional levels (Figure 3), suggesting that the PACAP/PAC1 pathway uses autocrine and paracrine mechanisms in addition to classical neurotransmission through axon innervation and transmitter co-release (Hökfelt et al., 1984; Zhang and Eiden, 2019). That is, besides sending PACAP-containing axons to innervate regions where PAC1 is strongly expressed, PACAP may be released through soma and dendrites, to bind PAC1 expressed on the same and neighboring cells, to prime the neuron for optimum function (Leng, 2018). We still know relatively little about the possible functional interactions and control of release of PACAP>PAC1 signaling in this aspect. However, the observation reported in this study about down-regulation of vesicular transporter mRNAs in PACAP knockout mice, in regions/cell populations which were normally Adcyap1-expressing in wild-type mice, provides one possible example of such a function for PACAP. Activity-dependent regulation of both glutamate and GABA vesicular transporter synthesis and membrane insertion has been reported (De Gois et al., 2005; Erickson et al., 2006; Doyle et al., 2010). PACAP signaling most commonly leads to a net increase in neuronal excitability through modulation of intrinsic membrane currents and transiently increasing intracellular calcium concentration (Johnson et al., 2019). Decreased vesicular transporter mRNA expression would be expected at the cellular level to decrease transmitter quantal size, thus decreasing excitatory/inhibitory postsynaptic currents (EPSCs and IPSCs, respectively) (Billups, 2005), and is consistent with our behavior data. PACAP absence in KO mice resulted in a behavioral hypoarousal response to moderate predator-odor stimulus. The vesicular transporter mRNA loss observed at RNA level upon complete PACAP deficiency, revealed in predator odor-exposed mice, may reflect a modulatory role for PACAP, in wild-type animals, on vesicular transporter mRNA (and protein) abundance within a more restricted, but functionally relevant, range depending on the level of PACAP release and autocrine signaling.
 
@@ -271,44 +1907,96 @@ PACAP-deficient mice show hyperlocomotion and abnormal gait, as well as bouts of
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus), both sexes</td>
+      <td>Wildtype C57Bl/6N</td>
+      <td>In-house breeding program in accordance with NIH guidelines and standards and housed in cages containing3–5 male siblings.</td>
+      <td>C57Bl/6N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus), both sexes</td>
+      <td>PACAP KO mice C57Bl/6N</td>
+      <td>Hamelink et al Proc Natl Acad Sci, 2002, 99(1):461–6, PMID:11756684 NIH in-house breeding program</td>
+      <td>C57Bl/6N Adcyap1-/-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope detection assay probes</td>
+      <td>2020 Advanced Cell Diagnostics, Inc</td>
+      <td>405911 409561 319171 416331 319191 316921 502231 465391 404631 421931 316091</td>
+      <td>Adcyap1 Adcyap1r1 Slc17a6 Slc17a7 Slc32a1 Fos Vipr1 Vipr2 Sst Pvalb Crh</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 2.5 HD Duplex detection kit Detection reagent-red</td>
+      <td>2020 Advanced Cell Diagnostics, Inc</td>
+      <td>---------- 322500 322360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB scripts</td>
+      <td>This paper</td>
+      <td>Script</td>
+      <td>For motion heatmaps</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The following male mouse strain/line were used in this study: C57BL/6N and C57BL/6N PACAP deficient, age 8–10 weeks, generated through an in-house breeding program in accordance with NIH guidelines and standards. Generation of PACAP knock-out mice have been described previously (Hamelink et al., 2002). All experiments were approved by the NIMH Institutional Animal Care and Use Committee (ACUC) and conducted in accordance with the NIH guidelines.
 
-## In situ hybridization (ISH): RNAscope single and duplex (DISH) procedure for PACAP mRNA co-distribution mapping
+### In situ hybridization (ISH): RNAscope single and duplex (DISH) procedure for PACAP mRNA co-distribution mapping
 
 Mice (n = 5) were deeply anesthetized with isoflurane, decapitated and whole brains were removed, embedded in OCT medium and rapidly frozen on dry ice. Serial brain sections (12 μm thick) were cut on a cryostat (Leica CM 1520), adhered to SuperFrost Plus slides (ThermoScientific). RNA probes were designed and provided by Advanced Cell Diagnostics (Hayward, CA): Mn-Adcyap1 (gene encoding PACAP), Mn-Adcyapr1r (gene encoding PAC1), Mn-Slc17a7 (gene encoding VGLUT1), Mn-Slc17a6 (gene encoding VGLUT2), Mn-Slc32a1 (gene encoding VIAAT, also called VGAT), Mn-Vipr1 (gene encoding VPAC1), Mn-Vipr2 (gene encoding VPAC2), Mn-Sst (gene encoding somatostatin), Mn-Pvalb (gene encoding palvalbumin), Mn-Crh (gene encoding corticotropin releasing hormone), and Mn-Fos (gene encoding cFos). All staining steps were performed following the protocols provided by the manufacturer for chromogenic detection of mRNA in fresh frozen tissue samples. Stained slides were examined with both light microscope with digital camera and were image-captured with 20X objective with ZEISS Axio Scan (Carl Zeiss Microscopy, Thornwood, NY from Systems Neuroscience Imaging Resource, NIMH-IRP, NIH) and images for sections from each animal were organized and converted to TIF files with BrainMaker (MBF Bioscience, Williston, VT).
 
-## Chemo-anatomical analysis and circuit identification
+### Chemo-anatomical analysis and circuit identification
 
 Anatomical nomenclature and regional delineation were done according to Allen Mouse Brain Atlas (http://www.allenbrainatlas.org) corroborated with Paxinos and Franklin's the Mouse Brain in Stereotaxic Coordinates. The Adcyap1/Adcyap1r1 distribution mapping and semi-quantification and co-expression with glutamate/GABA transporter mRNAs were corroborated with the Allen brain atlas https://mouse.brain-map.org/. For semiquantitative scoring we used criteria similar to previous literature reports (Hannibal, 2002). Our annotation criteria were: the number of expressing cells as a percentage of total Nissl stained nuclei: '-', not observed; '+', weak (<20%); '++', low (20–40%); '+++', moderate (40–60%); '++++', intense (80–60%); '+++++', very intense (>80%). Functional neuroanatomy order and annotations are based on Allen Institute Mouse Reference Atlas (http://atlas.brain-map.org/). For schematic circuit chartings of Figures 6, 7 and 10 we used Swanson’s rodent flat maps downloaded from http://larrywswanson.com/?page_id=164. Sensorimotor circuit hubs and connectivity of Figures 6 and 10 are based on literature cited in the results section as well as consulting the website https://sites.google.com/view/the-neurome-project/connections/cerebral-nuclei?authuser=0.
 
-## Behavioral experiments: predator odor
+### Behavioral experiments: predator odor
 
-## Subjects
+#### Subjects
 
 C57BL/6N wild-type and PACAP-deficient male mice, age 8–10 weeks, n = 9 (N = 18) were used. They were group-housed (4/cage) in a room kept on a controlled light-dark cycle (light on 7:00 am and off 7:00 pm) under constant humidity and temperature conditions.
 
-## Odor stimuli
+#### Odor stimuli
 
 Cat urine material was collected from domestic cat litter, where multiple male and female cats used the same box to urinate.
 
-## Modified open-field box for odor exposure and fos expression assessment
+#### Modified open-field box for odor exposure and fos expression assessment
 
 A custom‐made wooden box (28 x 28 x 28 cm, with a sliding glass lid) was used (see Figure 8A). The box was positioned inside a low-noise suction hood, then in a lidded container, cat urine containing litter material was introduced into the box (Figure 8A). After introducing the subject, the lid of container was opened through a string and the box was closed to avoid the odor to escape. Video recording of the animal behavior was made during a 10-min period, after which animals were returned to its home cage for 30 min and then euthanized by cervical dislocation and brains rapidly removed and processed for dual in situ hybridization (DISH) using the RNAscope 2.5 HD Duplex Assay to assess the expression of fos mRNA within Adcyap1-, Adcyap1r1-, Slc17a7-, Slc17a6-, and Slc32a1‐positive cells.
 
-## Behavior assessment
+#### Behavior assessment
 
 Mouse behavior during the 10 min of cat urine exposure was recorded by an overhead camera. Behavioral scoring was performed off-line with blind analysis (performed by ECG, medical student in laboratory rotation, see acknowledgement). Freezing behavior was assessed in the first 5 min lapse, giving a score every 5 s when the subject exhibited immobility with piloerection. Complete cycle of sniff>retreat was defined as the movement of approach the containing and immediately retreat beyond the quadrant I (QI, Figure 8) while incomplete sniff > retreat cycles were defined when the subject approached the container and stayed in the proximity or retreat only a short distance within the same quadrant (Q1). Mice spatial displacement maps were produced on-screen by the analyst with aid of the software PowerPoint > shape format > curve tool (Microsoft Office). The experimental arena was represented in a slide with a square containing 16 small squares. The flask containing the cat litter is symbolized with a filled circle. The computer aided manual drawing was visually guided by the video recording under the strict criterion that the analyst makes a click in the corresponding position of the map for each end of a lineal movement of the mouse. The jumping behavior is only symbolized with ‘zig-zags’. Four of mice exhibited this behavior and due to the aim of this study – the place preference assessment – these subjects were discarded for the Heat map. PowerPoint traces where skeletonized with ImageJ and movement traces from n = 5 animals were used. The 2D movement heat-map was produced with MATLAB R2016b, for each time the mouse passed through a point in space, the value of 1 was assigned. Using the MATLAB ‘color dispersion function’ (PSF) and ‘color map’ functions, a heat map was constructed. The trajectories of the five mice in each group were superimposed, then using the 'bwarea' function, a count of the pixel quantity per quadrant was performed, being Q1 the container located quadrant (clockwise numbering). Thereby, each pixel in the image had a different value and color according to the number of times the mouse was at that point. The number of pixels per quadrant for mice in the KO group was compared with mice in the WT group following one-way ANOVA.
 
-## Behavioral experiments: olfaction
+### Behavioral experiments: olfaction
 
 A standard test for olfaction as described by Yang and Crawley, Current Protocols in Neuroscience 8.24.1–8.24-12, July 2009 was carried out in wild-type and PACAP-deficient mice. Briefly, mice were individually housed under standard light-dark conditions for a period of four days. Subsequently, a cookie (Chocolate Teddy Grahams—Nabisco) was placed in each cage at mid-day on two successive days, consumption was confirmed, and all food was removed on the afternoon of the second day. The following day, mice were acclimated to the testing room for 1 hr, and testing initiated by placing mice in a fresh cage (test cage) with bedding 3 cm deep, allowing exploration for 5 min; removal to a fresh cage while a cookie was buried 1 cm deep at one end of the test cage, and placement at the opposite end to the buried cookie in the test cage. Time for mouse to retrieve the buried cookie and hold the cookie in its forepaws and begin to eat was recorded.
 
-## Assessment for Fos and vesicular transporter expression
+### Assessment for Fos and vesicular transporter expression
 
 The counting for Fos and vesicular transporters expressed in cells was done on a computer screen connected to a digital camera mounted over a light microscope. The region of interest (ROI) was centered through observation using the microscope oculars and 20x objective and projected to a large computer screen through a digital camera. A fixed square equivalent to 0.0314 mm2 for the magnification/computer enlargement was pre-fixed and moved to the ROI choosing a region with more or less homogenous cell population. Positive cells within the square were counted. We chose two sections of the same region from each mouse (n = 3) for each region's assessment. The means were obtained averaging the six numbers and statistics were performed as described (vide infra). The counting was done by an experimenter blind to genotype.
 
-## Data analysis
+### Data analysis
 
 GraphPad Prism 7.0 was used to perform Student t-tests and one-way ANOVA for evaluation of statistical differences between groups, levels are indicated as follows: *p<0.05, **p<0.01, ***p<0.001 Unless otherwise indicated, values are reported as mean ± SEM.

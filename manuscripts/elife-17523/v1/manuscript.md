@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.17523.001 There is growing evidence for a coupling of actin assembly and myosin motor activity in cells. However, mechanisms for recruitment of actin nucleators and motors on specific membrane compartments remain unclear. Here we report how Spir actin nucleators and myosin V motors coordinate their specific membrane recruitment. The myosin V globular tail domain (MyoV-GTD) interacts directly with an evolutionarily conserved Spir sequence motif. We determined crystal structures of MyoVa-GTD bound either to the Spir-2 motif or to Rab11 and show that a Spir-2:MyoVa:Rab11 complex can form. The ternary complex architecture explains how Rab11 vesicles support coordinated F-actin nucleation and myosin force generation for vesicle transport and tethering. New insights are also provided into how myosin activation can be coupled with the generation of actin tracks. Since MyoV binds several Rab GTPases, synchronized nucleator and motor targeting could provide a common mechanism to control force generation and motility in different cellular processes. DOI: http://dx.doi.org/10.7554/eLife.17523.001
+There is growing evidence for a coupling of actin assembly and myosin motor activity in cells. However, mechanisms for recruitment of actin nucleators and motors on specific membrane compartments remain unclear. Here we report how Spir actin nucleators and myosin V motors coordinate their specific membrane recruitment. The myosin V globular tail domain (MyoV-GTD) interacts directly with an evolutionarily conserved Spir sequence motif. We determined crystal structures of MyoVa-GTD bound either to the Spir-2 motif or to Rab11 and show that a Spir-2:MyoVa:Rab11 complex can form. The ternary complex architecture explains how Rab11 vesicles support coordinated F-actin nucleation and myosin force generation for vesicle transport and tethering. New insights are also provided into how myosin activation can be coupled with the generation of actin tracks. Since MyoV binds several Rab GTPases, synchronized nucleator and motor targeting could provide a common mechanism to control force generation and motility in different cellular processes.
 
 ## Introduction
 
@@ -49,89 +49,190 @@ A search for the mechanism that controls the targeting of the Spir:FMN complex t
 
 ## Results
 
-## Spir directly interacts with myosin V
+### Spir directly interacts with myosin V
 
-To gain insights into whether the actin nucleator Spir and the motor MyoV could be both activated in coordination on vesicle membranes, we first performed protein interaction studies to determine if Spir and MyoV (
+To gain insights into whether the actin nucleator Spir and the motor MyoV could be both activated in coordination on vesicle membranes, we first performed protein interaction studies to determine if Spir and MyoV (Figure 1) coexist in a protein complex. Our initial GST-pulldown experiments showed that GST-MyoVb-GTD is able to pull endogenous Spir-1 from mouse brain lysates, as does the GST-FMN2-eFSI protein that binds directly to the Spir KIND domain (Pechlivanis et al., 2009) as a positive control (Figure 2—figure supplement 1A). In co-immunoprecipitation (co-IP) experiments employing human embryonic kidney cells transiently over-expressing recombinant Spir and MyoV, the full-length Spir-1 and Spir-2 proteins did interact with the GFP-MyoVb-GTD (Figure 2A). We mapped the Spir sequences necessary for the interaction with MyoVb by successive N-terminal deletions of Spir-2. The deletion of KIND and WH2 domains did not affect complex formation; however, further deletion of the linker region between the WH2 domains and the Spir-box (Figure 1) completely impaired the interaction (Figure 2A), demonstrating that the Spir central linker region is important for MyoVb-GTD binding. The GTDs of MyoVb and MyoVa are highly conserved (Pylypenko et al., 2013) and both directly interact with Rab11 (Lindsay et al., 2013; Roland et al., 2009). Interestingly, GFP-MyoVa-GTD also interacts with Spir-2 (Figure 2—figure supplement 1B). This is consistent with the fact that MyoVa and MyoVb have overlapping cellular functions (such as mobilization of Rab11 recycling endosomes for the AMPA receptor transport into dendritic spines [Correia et al., 2008; Hammer and Wagner, 2013; Wang et al., 2008]), share interacting partners and utilize similar mechanisms for Rab11-vesicle transport.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig1-v1.jpg)
 
-**Figure 1.:** The myosin V motor domain and its 6 IQ lever arm is followed by a coiled-coil dimerization region and the C-terminal globular tail domain. The central linker region of Spir connects the N-terminal KIND and four actin binding WH2 domains on one side, with the C-terminal Spir-box (SB) and a membrane binding FYVE-type zinc finger on the other. The newly identified Spir myosin V binding motif (GTBM) is located in the middle of the linker region. The domain boundaries are indicated in the full-length MyoVa (containing exon D (D) or exon F (F)), MyoVb, Spir-1 and Spir-2 proteins. Numbers indicate amino acids. Stars indicate amino acid substitutions. FL, full-length; GTD, globular tail domain; CC, coiled-coil; KIND, kinase non-catalytic C-lobe domain; GTBM, globular tail domain binding motif; SB, Spir-box; LALA, L408,409A substitution. Species abbreviations are Hs, Homo sapiens; Mm, Mus musculus.DOI: http://dx.doi.org/10.7554/eLife.17523.002
+**Figure 1.:** The myosin V motor domain and its 6 IQ lever arm is followed by a coiled-coil dimerization region and the C-terminal globular tail domain. The central linker region of Spir connects the N-terminal KIND and four actin binding WH2 domains on one side, with the C-terminal Spir-box (SB) and a membrane binding FYVE-type zinc finger on the other. The newly identified Spir myosin V binding motif (GTBM) is located in the middle of the linker region. The domain boundaries are indicated in the full-length MyoVa (containing exon D (D) or exon F (F)), MyoVb, Spir-1 and Spir-2 proteins. Numbers indicate amino acids. Stars indicate amino acid substitutions. FL, full-length; GTD, globular tail domain; CC, coiled-coil; KIND, kinase non-catalytic C-lobe domain; GTBM, globular tail domain binding motif; SB, Spir-box; LALA, L408,409A substitution. Species abbreviations are Hs, Homo sapiens; Mm, Mus musculus.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig2-v1.jpg)
 
-**Figure 2.:** (A) Co-immunoprecipitation assay of HEK293 cells transfected with plasmids expressing AcGFP (GFP), AcGFP-tagged MyoVb deletion mutants and indicated Myc-epitope tagged Spir-1 and Spir-2 proteins. Cell lysates were immunoprecipitated with anti-Myc antibodies. The cell lysates (input) and immunoprecipitates (co-IP) were analyzed by immunoblotting with antibodies as indicated. The Spir-2-GTBM and the MyoVb globular tail domain (GTD) were identified as being essential for the Spir/MyoV interaction. N = 4 experimental repeats. WB, Western blotting. (B) GST-pulldown studies employing purified bacterially expressed recombinant proteins to analyze a direct interaction of Spir-2-linker and MyoVa/Vb-GTD. The mutation of two highly conserved leucines within the Spir-2-GTBM to alanines (human Spir-2-L408A, L409A; Spir-2-linker-LALA, see also Figure 4A) largely impairs binding of this mutant to GST-MyoVa/Vb-GTD. N = 4 experimental repeats. (C) Fluorescence spectroscopy was used to determine the dissociation constants (Kd) for MyoVa and MyoVb GTD binding to His6-mCherry-Spir-2-linker. Error bars represent SEM (n = 4 experimental repeats).DOI: http://dx.doi.org/10.7554/eLife.17523.003
+**Figure 2.:** (A) Co-immunoprecipitation assay of HEK293 cells transfected with plasmids expressing AcGFP (GFP), AcGFP-tagged MyoVb deletion mutants and indicated Myc-epitope tagged Spir-1 and Spir-2 proteins. Cell lysates were immunoprecipitated with anti-Myc antibodies. The cell lysates (input) and immunoprecipitates (co-IP) were analyzed by immunoblotting with antibodies as indicated. The Spir-2-GTBM and the MyoVb globular tail domain (GTD) were identified as being essential for the Spir/MyoV interaction. N = 4 experimental repeats. WB, Western blotting. (B) GST-pulldown studies employing purified bacterially expressed recombinant proteins to analyze a direct interaction of Spir-2-linker and MyoVa/Vb-GTD. The mutation of two highly conserved leucines within the Spir-2-GTBM to alanines (human Spir-2-L408A, L409A; Spir-2-linker-LALA, see also Figure 4A) largely impairs binding of this mutant to GST-MyoVa/Vb-GTD. N = 4 experimental repeats. (C) Fluorescence spectroscopy was used to determine the dissociation constants (Kd) for MyoVa and MyoVb GTD binding to His6-mCherry-Spir-2-linker. Error bars represent SEM (n = 4 experimental repeats).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) GST-pulldown of Spir-1 proteins from mouse brain lysates. Both, GST-MyoVb-GTD and GST-FMN2-eFSI were able to pull Spir-1 from brain lysates as detected by immunoblotting (anti-Spir-1). Ponceau S staining showed equal loading of GST-fusion proteins. N = 3 experimental repeats. (B) The MyoVa and MyoVb globular tail domains interact with Spir-2. Co-immunoprecipitation experiments showing a co-precipitation of AcGFP-tagged MyoVa/Vb-GTD (GFP-MyoVa/Vb-GTD) with full-length Myc-epitope-tagged Spir-2 (Myc-Spir-2), which was not observed with GFP and Myc-epitope (Myc6) controls. The proteins were transiently expressed in HEK293 cells. N = 2 experimental repeats.DOI: http://dx.doi.org/10.7554/eLife.17523.004
+**Figure 2—figure supplement 1.:** (A) GST-pulldown of Spir-1 proteins from mouse brain lysates. Both, GST-MyoVb-GTD and GST-FMN2-eFSI were able to pull Spir-1 from brain lysates as detected by immunoblotting (anti-Spir-1). Ponceau S staining showed equal loading of GST-fusion proteins. N = 3 experimental repeats. (B) The MyoVa and MyoVb globular tail domains interact with Spir-2. Co-immunoprecipitation experiments showing a co-precipitation of AcGFP-tagged MyoVa/Vb-GTD (GFP-MyoVa/Vb-GTD) with full-length Myc-epitope-tagged Spir-2 (Myc-Spir-2), which was not observed with GFP and Myc-epitope (Myc6) controls. The proteins were transiently expressed in HEK293 cells. N = 2 experimental repeats.
 
 We confirmed a direct interaction of the two MyoV isoforms (MyoVa, MyoVb) and Spir by GST-pulldown assays using purified recombinant proteins (Figure 2B). Further experiments showed that both MyoVa and MyoVb bind the Spir-2-linker (aa 361–519) with similar affinities in the sub-micromolar range (Kd ~ 728 nM and 377 nM for MyoVa and MyoVb, respectively) (Figure 2C).
 
-## Evidence for Spir:MyoV complex formation at vesicle membranes
+### Evidence for Spir:MyoV complex formation at vesicle membranes
 
-The detected tight binding of MyoV and Spir suggested that they would interact in cells. Transgenic co-expression of tagged full-length MyoVa (eGFP-MyoVa-FL) and Spir-2 (Myc-Spir-2-FL) proteins in HeLa cells showed a perfect colocalization of the two proteins on vesicular structures in the central cytoplasm, consistent with formation of a Spir:MyoV complex at vesicle membranes (
+The detected tight binding of MyoV and Spir suggested that they would interact in cells. Transgenic co-expression of tagged full-length MyoVa (eGFP-MyoVa-FL) and Spir-2 (Myc-Spir-2-FL) proteins in HeLa cells showed a perfect colocalization of the two proteins on vesicular structures in the central cytoplasm, consistent with formation of a Spir:MyoV complex at vesicle membranes (Figure 3A). This was also the case for MyoVb and Spir-2 (Figure 3B). In order to confirm a complex formation of Spir-2 and MyoVa on vesicle membranes we performed FLIM-FRET (fluorescence life time imaging, fluorescence resonance energy transfer) microscopy experiments (Sun et al., 2013) with co-expressed AcGFP-MyoVa-GTD as a donor fluorophore and mStrawberry-Spir-2 deletion mutants as acceptor fluorophores. A mStrawberry-tagged C-terminal Spir-2 protein (mStrawberry-Spir-2-GTBM-SB-FYVE), including the Spir-GTBM (necessary for MyoV interaction), the Spir-box and the FYVE-type zinc finger (Spir membrane interaction) is able to reduce the fluorescence lifetime of the AcGFP-MyoVa-GTD donor at vesicle membrane surfaces (Figure 3C–E). In contrast, a mStrawberry-fusion protein encoding only the Spir-box and the FYVE-type zinc finger (mStrawberry-Spir-2-SB-FYVE) or a mutant Spir-2-GTBM-SB-FYVE-LALA protein, in which two essential leucines for MyoV interaction were replaced by alanines, did not alter the lifetime of the AcGFP-MyoVa-GTD donor (Figure 3E). As the lifetime reduction indicates that MyoVa and Spir-2 proteins are in close proximity (within 10 nm of distance between the fluorophores), these results provide a strong support for a direct interaction of the two proteins at vesicle membranes. The MyoVa-GTD is monomeric in solution (Figure 5—figure supplement 2). To exclude a FLIM-FRET signal by a dense packing of proteins at vesicle membranes, we co-expressed green and red-fluorescent protein tagged MyoVa-GTDs as a donor/acceptor pair (AcGFP-MyoVa-GTD, mStrawberry-MyoVa-GTD) which revealed a similar FRET efficiency as the donor alone (Figure 3E), indicating that a direct interaction of MyoVa-GTD and the Spir-2-GTBM is required for the observed FLIM-FRET signal.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig3-v1.jpg)
 
-**Figure 3.:** (A and B) GFP-tagged full-length MyoVa (eGFP-MyoVa-FL; green; A) and MyoVb (AcGFP-MyoVb-FL; green; B) colocalize with Myc-epitope-tagged full-length Spir-2 (Myc-Spir-2; red) at vesicle membranes when transiently co-expressed in HeLa cells as indicated by overlapping punctae (merge; yellow; higher magnification in insets). 5 cells were recorded and one representative cell is presented here. Scale bars represent 10 µm. (C–E) FLIM-FRET analysis of transiently expressed AcGFP-tagged MyoVa-GTD (AcGFP-MyoVa-GTD, donor) and mStrawberry-tagged C-terminal Spir proteins (acceptors) at vesicle membranes in HeLa cells. (C, D) Examples demonstrating the lifetime shift due to FRET. Confocal fluorescence images (green channel, AcGFP; red channel, mStrawberry; and fluorescence lifetime images of AcGFP) of AcGFP-MyoVa-GTD expressed alone (C) and in the presence of the interacting acceptor protein mStrawberry-Spir-2-GTBM-SB-FYVE (D) are shown. (E) The average FRET efficiencies per cell measured at vesicle membranes for the indicated transiently expressed donor-acceptor combinations are presented in a box-and-whisker plot. Every dot represents a single cell. The region of interest was manually confined to the cytoplasm (average FRET efficiencies for AcGFP alone and the tandem AcGFP-linker-mStrawberry). For all other experiments, the ROI was further reduced by a threshold algorithm that identifies vesicles in the AcGFP channel. Box-and-whisker plots indicate 2nd and 3rd quartile (box), median (red horizontal line, value noted above each box), and 1.5x interquartile range (whiskers). 10–15 cells have been analyzed for each transfection.DOI: http://dx.doi.org/10.7554/eLife.17523.00510.7554/eLife.17523.006Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.17523.006
+**Figure 3.:** (A and B) GFP-tagged full-length MyoVa (eGFP-MyoVa-FL; green; A) and MyoVb (AcGFP-MyoVb-FL; green; B) colocalize with Myc-epitope-tagged full-length Spir-2 (Myc-Spir-2; red) at vesicle membranes when transiently co-expressed in HeLa cells as indicated by overlapping punctae (merge; yellow; higher magnification in insets). 5 cells were recorded and one representative cell is presented here. Scale bars represent 10 µm. (C–E) FLIM-FRET analysis of transiently expressed AcGFP-tagged MyoVa-GTD (AcGFP-MyoVa-GTD, donor) and mStrawberry-tagged C-terminal Spir proteins (acceptors) at vesicle membranes in HeLa cells. (C, D) Examples demonstrating the lifetime shift due to FRET. Confocal fluorescence images (green channel, AcGFP; red channel, mStrawberry; and fluorescence lifetime images of AcGFP) of AcGFP-MyoVa-GTD expressed alone (C) and in the presence of the interacting acceptor protein mStrawberry-Spir-2-GTBM-SB-FYVE (D) are shown. (E) The average FRET efficiencies per cell measured at vesicle membranes for the indicated transiently expressed donor-acceptor combinations are presented in a box-and-whisker plot. Every dot represents a single cell. The region of interest was manually confined to the cytoplasm (average FRET efficiencies for AcGFP alone and the tandem AcGFP-linker-mStrawberry). For all other experiments, the ROI was further reduced by a threshold algorithm that identifies vesicles in the AcGFP channel. Box-and-whisker plots indicate 2nd and 3rd quartile (box), median (red horizontal line, value noted above each box), and 1.5x interquartile range (whiskers). 10–15 cells have been analyzed for each transfection.
 
-## Identification of a conserved MyoV binding motif in Spir
+### Identification of a conserved MyoV binding motif in Spir
 
-The linker regions of vertebrate Spir-1 and Spir-2 proteins show low overall sequence homology (for example similarity 21%, identity 11% between human Spir-1 and Spir-2 linker regions) (
+The linker regions of vertebrate Spir-1 and Spir-2 proteins show low overall sequence homology (for example similarity 21%, identity 11% between human Spir-1 and Spir-2 linker regions) (Figure 4—figure supplement 1) but a short sequence of 27 amino acids (Figure 4A) in the middle part of the linker is more conserved (similarity 56%, identity 37%) suggesting that the fragment could possibly have an important role in the recruitment of MyoV. Interestingly, Spir-2 fragments containing the fully conserved regions interact with MyoVb-GTD, whereas no interactions were observed with fragments lacking half of this region (Figure 4—figure supplement 2). Mutation of two highly conserved Spir-2 residues within this newly identified Spir linker homology region, Leu408Ala and Leu409Ala, is sufficient to abolish direct binding to MyoV-GTD (Figure 2B). The identified minimal MyoV globular tail domain binding motif of Spir (Spir-GTBM), corresponding to the human Spir-2 short peptide (aa 401–427) binds MyoVa and MyoVb GTDs with low micromolar affinity (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-v1.jpg)
 
-**Figure 4.:** (A) A short highly conserved sequence motif within the central Spir linker region is responsible for myosin V binding. Alignment of vertebrate Spir-1 and Spir-2 sequence fragments. The short sequence motif of about 27 amino acids in the middle part of the Spir linker region shows high sequence homology (see also Figure 4—figure supplement 1). Species abbreviations: Homo sapiens (Hs), Mus musculus (Mm), Gallus gallus (Gg), Xenopus tropicalis (Xt), Brachydanio rerio (Br). All sequence-related data are available through CyMoBase (http://www.cymobase.org). Hs-Spir-2 residues contacting MyoVa within 4 Å distance are labeled with '*'; the Spir-2 conformation is stabilized by two conserved residues (see panel D) indicated with '+'. (B) Fluorescence anisotropy measurements of the binding of the Fluorescein-Spir-2-GTBM peptide (human, amino acid residues 401–427) to the MyoVa and MyoVb GTDs. The equilibrium dissociation constants (Kd) for MyoVa and MyoVb GTDs were determined by fitting the titration curves as detailed in the Materials and Methods section. The experiments were repeated twice with two different protein preparations. (C) Crystal structure of the MyoVa-GTD:Spir-2-GTBM complex. Spir-2-GTBM (purple) binds to subdomain-1 (SD-1) of MyoVa-GTD (orange). (D) Close-up view of the Spir-2-GTBM bound to MyoVa-GTD. Residues forming the interaction sites are shown as sticks and are labeled. Spir-2 E416 and T413 form intramolecular hydrogen bonds (dashed lines). Spir-2 V407, L409 and MyoVa N1590 and D1592 backbone atoms form an intermolecular β-structure like hydrogen bond network. (E) MLPH-GTBM bound to MyoVa-GTD (PDB ID 4LX2). The N-terminal part of MLPH-GTBM (residues from K186 to L189) interacts with MyoVa in a similar manner to Spir-2 (residues 406–409). A similar hydrogen bond between MyoVa E1595 and the main chain nitrogen of MLPH F191 is also observed in the Spir-2:MyoVa interface. (F) Structure based sequence alignment of the Spir-2-GTBM and MLPH-GTBM fragments. Residues making similar contacts with MyoVa are highlighted with a black line. (G) Hydrophobic residues anchoring Spir-2-GTBM on the MyoVa-GTD surface. Spir-2 A411 is packed on the top of MyoVa Y1596 (green) side chain (see also panel D). (H) Spir-2 (purple) and MLPH (gray) GTBMs docked on the surface of apo-MyoVa-GTD (PDB ID 4LX1). The apo-MyoVa-GTD hydrophobic cleft between the H5 and H3 is compatible with Spir-2 binding, but not with MLPH, where the side chain of F191 clashes with MyoVa Y1596 (green). In Spir, the conserved L414 side chain anchors the C-terminal Spir-2 fragment extending the interacting hydrophobic surface compared to what is found for MLPH-GTBM binding. (I) Hydrophobic residues anchoring MLPH-GTBM in the MyoVa-GTD pocket (PDB ID 4LX2). The MyoVa Y1596 (green) side chain is rotated to bury the side chain within the protein core (see also panel E) to accommodate MLPH F191 in the binding pocket.DOI: http://dx.doi.org/10.7554/eLife.17523.007
+**Figure 4.:** (A) A short highly conserved sequence motif within the central Spir linker region is responsible for myosin V binding. Alignment of vertebrate Spir-1 and Spir-2 sequence fragments. The short sequence motif of about 27 amino acids in the middle part of the Spir linker region shows high sequence homology (see also Figure 4—figure supplement 1). Species abbreviations: Homo sapiens (Hs), Mus musculus (Mm), Gallus gallus (Gg), Xenopus tropicalis (Xt), Brachydanio rerio (Br). All sequence-related data are available through CyMoBase (http://www.cymobase.org). Hs-Spir-2 residues contacting MyoVa within 4 Å distance are labeled with '*'; the Spir-2 conformation is stabilized by two conserved residues (see panel D) indicated with '+'. (B) Fluorescence anisotropy measurements of the binding of the Fluorescein-Spir-2-GTBM peptide (human, amino acid residues 401–427) to the MyoVa and MyoVb GTDs. The equilibrium dissociation constants (Kd) for MyoVa and MyoVb GTDs were determined by fitting the titration curves as detailed in the Materials and Methods section. The experiments were repeated twice with two different protein preparations. (C) Crystal structure of the MyoVa-GTD:Spir-2-GTBM complex. Spir-2-GTBM (purple) binds to subdomain-1 (SD-1) of MyoVa-GTD (orange). (D) Close-up view of the Spir-2-GTBM bound to MyoVa-GTD. Residues forming the interaction sites are shown as sticks and are labeled. Spir-2 E416 and T413 form intramolecular hydrogen bonds (dashed lines). Spir-2 V407, L409 and MyoVa N1590 and D1592 backbone atoms form an intermolecular β-structure like hydrogen bond network. (E) MLPH-GTBM bound to MyoVa-GTD (PDB ID 4LX2). The N-terminal part of MLPH-GTBM (residues from K186 to L189) interacts with MyoVa in a similar manner to Spir-2 (residues 406–409). A similar hydrogen bond between MyoVa E1595 and the main chain nitrogen of MLPH F191 is also observed in the Spir-2:MyoVa interface. (F) Structure based sequence alignment of the Spir-2-GTBM and MLPH-GTBM fragments. Residues making similar contacts with MyoVa are highlighted with a black line. (G) Hydrophobic residues anchoring Spir-2-GTBM on the MyoVa-GTD surface. Spir-2 A411 is packed on the top of MyoVa Y1596 (green) side chain (see also panel D). (H) Spir-2 (purple) and MLPH (gray) GTBMs docked on the surface of apo-MyoVa-GTD (PDB ID 4LX1). The apo-MyoVa-GTD hydrophobic cleft between the H5 and H3 is compatible with Spir-2 binding, but not with MLPH, where the side chain of F191 clashes with MyoVa Y1596 (green). In Spir, the conserved L414 side chain anchors the C-terminal Spir-2 fragment extending the interacting hydrophobic surface compared to what is found for MLPH-GTBM binding. (I) Hydrophobic residues anchoring MLPH-GTBM in the MyoVa-GTD pocket (PDB ID 4LX2). The MyoVa Y1596 (green) side chain is rotated to bury the side chain within the protein core (see also panel E) to accommodate MLPH F191 in the binding pocket.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Exon/intron structure of human Spir-1 and Spir-2. The location of the fourth WH2 domain, MyoV binding motif (GTBM), Spir-box (SB) and FYVE-type zinc-finger is indicated. (B) Alignment of vertebrate Spir-1 and Spir-2 sequences starting from the last WH2 domain to the FYVE-type zinc finger. High sequence homology between all sequences was only observed for the WH2 domain, the Spir-box, the FYVE-type zinc finger and the GTBM, but not for the rest of the linker region. Species abbreviations are: Homo sapiens (Hs), Mus musculus (Mm), Gallus gallus (Gg), Xenopus tropicalis (Xt), Brachydanio rerio (Br). All sequence_related data are available through CyMoBase (http://www.cymobase.org).DOI: http://dx.doi.org/10.7554/eLife.17523.008
+**Figure 4—figure supplement 1.:** (A) Exon/intron structure of human Spir-1 and Spir-2. The location of the fourth WH2 domain, MyoV binding motif (GTBM), Spir-box (SB) and FYVE-type zinc-finger is indicated. (B) Alignment of vertebrate Spir-1 and Spir-2 sequences starting from the last WH2 domain to the FYVE-type zinc finger. High sequence homology between all sequences was only observed for the WH2 domain, the Spir-box, the FYVE-type zinc finger and the GTBM, but not for the rest of the linker region. Species abbreviations are: Homo sapiens (Hs), Mus musculus (Mm), Gallus gallus (Gg), Xenopus tropicalis (Xt), Brachydanio rerio (Br). All sequence_related data are available through CyMoBase (http://www.cymobase.org).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Co-immunoprecipitation experiments employing AcGFP-tagged MyoVb-GTD (GFP-MyoVb-GTD) as well as N-terminal and C-terminal Spir-2 deletion mutants show myosin V co-precipitation with the C-terminal Myc-Spir-2-398-714 protein and the N-terminal Myc-Spir-2-2-423 protein, but not with C-terminal Myc-Spir-2-411-714 protein and the N-terminal Myc-Spir-2-2-410 protein. Numbers indicate amino acids. N = 2–4 experimental repeats. (B) Overview of the Spir-2 deletion mutants used in (A) compared to full-length Spir-2 and their capacity to bind (+) or not bind (−) to MyoVb-GTD. (C) The minimal mapped Spir-MyoV interaction sequence of human Spir-2 contains amino acids 398 to 423.DOI: http://dx.doi.org/10.7554/eLife.17523.009
+**Figure 4—figure supplement 2.:** (A) Co-immunoprecipitation experiments employing AcGFP-tagged MyoVb-GTD (GFP-MyoVb-GTD) as well as N-terminal and C-terminal Spir-2 deletion mutants show myosin V co-precipitation with the C-terminal Myc-Spir-2-398-714 protein and the N-terminal Myc-Spir-2-2-423 protein, but not with C-terminal Myc-Spir-2-411-714 protein and the N-terminal Myc-Spir-2-2-410 protein. Numbers indicate amino acids. N = 2–4 experimental repeats. (B) Overview of the Spir-2 deletion mutants used in (A) compared to full-length Spir-2 and their capacity to bind (+) or not bind (−) to MyoVb-GTD. (C) The minimal mapped Spir-MyoV interaction sequence of human Spir-2 contains amino acids 398 to 423.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** (A) Spir-2-GTBM (purple), represented in sticks, bound to MyoVa-GTD (orange). Shown in orange sticks and labeled are the side chains of the MyoVa-GTD residues whose solvent accessible area is reduced upon complex formation. Hydrogen bonds are represented as dashed lines. (B) MyoVa-GTD undergoes minor conformational change upon Spir-2-GTBM binding. MyoVa bound to Spir-2-GTBM is shown in orange while apo-MyoVa (PDB ID 4LX1) is white. Upon Spir-2 binding MyoVa, H3 is shifted along the helix axis by 0.9Å and the side chains of Y1596, F1591, K1539, R1528 change slightly their orientations to accommodate the partner. (C) The MyoVb structure is compatible with Spir-GTBM binding. The Spir-2-GTBM binding site is almost identical in MyoVa-GTD (orange) and MyoVb-GTD (PDB ID 4J5M) (white) (Nascimento et al., 2013). Residue labeling corresponds to the MyoVb sequence. Residues that are not identical in the MyoVb and MyoVa sequences are labeled in red. (D) MyoVc binds Spir-GTBM. The Spir-2-GTBM binding site is similar in MyoVa-GTD (orange) and MyoVc-GTD (PDB ID 4L8T) (white) (Nascimento et al., 2013). Residue labeling corresponds to the MyoVc sequence, the labels for identical residues are in black and for homologous residues in red. (E) Fluorescin-Spir-2-GTBM peptide (human, amino acids 401–427) binding to MyoVc-GTD measured by microscale thermophoresis. N = 3 experimental repeats.DOI: http://dx.doi.org/10.7554/eLife.17523.010
+**Figure 4—figure supplement 3.:** (A) Spir-2-GTBM (purple), represented in sticks, bound to MyoVa-GTD (orange). Shown in orange sticks and labeled are the side chains of the MyoVa-GTD residues whose solvent accessible area is reduced upon complex formation. Hydrogen bonds are represented as dashed lines. (B) MyoVa-GTD undergoes minor conformational change upon Spir-2-GTBM binding. MyoVa bound to Spir-2-GTBM is shown in orange while apo-MyoVa (PDB ID 4LX1) is white. Upon Spir-2 binding MyoVa, H3 is shifted along the helix axis by 0.9Å and the side chains of Y1596, F1591, K1539, R1528 change slightly their orientations to accommodate the partner. (C) The MyoVb structure is compatible with Spir-GTBM binding. The Spir-2-GTBM binding site is almost identical in MyoVa-GTD (orange) and MyoVb-GTD (PDB ID 4J5M) (white) (Nascimento et al., 2013). Residue labeling corresponds to the MyoVb sequence. Residues that are not identical in the MyoVb and MyoVa sequences are labeled in red. (D) MyoVc binds Spir-GTBM. The Spir-2-GTBM binding site is similar in MyoVa-GTD (orange) and MyoVc-GTD (PDB ID 4L8T) (white) (Nascimento et al., 2013). Residue labeling corresponds to the MyoVc sequence, the labels for identical residues are in black and for homologous residues in red. (E) Fluorescin-Spir-2-GTBM peptide (human, amino acids 401–427) binding to MyoVc-GTD measured by microscale thermophoresis. N = 3 experimental repeats.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** (A) MLPH-GTBM (white), represented in sticks, bound to MyoVa-GTD (orange). Shown in orange sticks and labeled are the side chains of MyoVa-GTD residues whose solvent accessible area is reduced upon complex formation. Hydrogen bonds are represented as dashed lines. (B) MyoVa-GTD conformational change upon MLPH-GTBM binding. MLPH-GTBM bound MyoVa is orange, apo-MyoVa-GTD (PDB ID 4LX1) is white. MLPH-GTBM binding requires a small (0.5 Å) shift of MyoVa H3 along the helix axis; and conformational changes of Y1596, I1535 and R1528 side chains.DOI: http://dx.doi.org/10.7554/eLife.17523.011
+**Figure 4—figure supplement 4.:** (A) MLPH-GTBM (white), represented in sticks, bound to MyoVa-GTD (orange). Shown in orange sticks and labeled are the side chains of MyoVa-GTD residues whose solvent accessible area is reduced upon complex formation. Hydrogen bonds are represented as dashed lines. (B) MyoVa-GTD conformational change upon MLPH-GTBM binding. MLPH-GTBM bound MyoVa is orange, apo-MyoVa-GTD (PDB ID 4LX1) is white. MLPH-GTBM binding requires a small (0.5 Å) shift of MyoVa H3 along the helix axis; and conformational changes of Y1596, I1535 and R1528 side chains.
 
 ![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig4-figsupp5-v1.jpg)
 
-**Figure 4—figure supplement 5.:** (A) Spir-GTBM sequence logo indicates the sequence conservation in Spir-1 and Spir-2 proteins; MLPH-GTBM sequence logo demonstrates the sequence conservation in MLPH proteins. WebLogos (Crooks et al., 2004 ) were generated from respective parts of the alignment of 223 Spir sequences and 44 MLPH sequences after reducing redundancy with CDhit (Li and Godzik, 2006) applying a 90% sequence similarity cut-off. The Spir and MLPH motifs involved in binding the MyoV globular tail domain have a similar charge distribution (the N-terminal sequence is positively charged and the C-terminal sequence is negatively charged). Both fragments have two conserved leucine residues in the N-terminal part of the binding motif. (B) Comparison of the Spir-2 and MLPH domain composition. Both MyoV interacting proteins share a GTBM which is linked to a putative small GTPase interacting Spir-Box (SB) in Spir-2 or synaptotagmin-like protein homology domains (H1 and H2) in MLPH and FYVE-type membrane binding units. The MLPH N-terminal region encompassing the H1 FYVE-type H2 region interacts with the Rab27 GTPase (Kukimoto-Niino et al., 2008). Despite its structural similarity to membrane binding domains, a direct interaction of the MLPH FYVE-type domain has not yet been addressed. MLPH also contains a second MyoVa exon-F binding domain (EFBD), and an F-actin binding domain (ABD) at the C-terminus.DOI: http://dx.doi.org/10.7554/eLife.17523.012
+**Figure 4—figure supplement 5.:** (A) Spir-GTBM sequence logo indicates the sequence conservation in Spir-1 and Spir-2 proteins; MLPH-GTBM sequence logo demonstrates the sequence conservation in MLPH proteins. WebLogos (Crooks et al., 2004 ) were generated from respective parts of the alignment of 223 Spir sequences and 44 MLPH sequences after reducing redundancy with CDhit (Li and Godzik, 2006) applying a 90% sequence similarity cut-off. The Spir and MLPH motifs involved in binding the MyoV globular tail domain have a similar charge distribution (the N-terminal sequence is positively charged and the C-terminal sequence is negatively charged). Both fragments have two conserved leucine residues in the N-terminal part of the binding motif. (B) Comparison of the Spir-2 and MLPH domain composition. Both MyoV interacting proteins share a GTBM which is linked to a putative small GTPase interacting Spir-Box (SB) in Spir-2 or synaptotagmin-like protein homology domains (H1 and H2) in MLPH and FYVE-type membrane binding units. The MLPH N-terminal region encompassing the H1 FYVE-type H2 region interacts with the Rab27 GTPase (Kukimoto-Niino et al., 2008). Despite its structural similarity to membrane binding domains, a direct interaction of the MLPH FYVE-type domain has not yet been addressed. MLPH also contains a second MyoVa exon-F binding domain (EFBD), and an F-actin binding domain (ABD) at the C-terminus.
 
-## Spir binding site is conserved in all three MyoV isoforms
+### Spir binding site is conserved in all three MyoV isoforms
 
-We further characterized the Spir:MyoVa binding by solving a crystal structure of the complex, which allowed us to identify the protein interaction sites and depict the stabilizing interactions within the complex at atomic detail (Figure 4C, Table 1). Importantly, the Spir residues important for the interaction with MyoV-GTD are conserved among Spir proteins (Figure 4A). The MyoV-GTD is composed of two closely apposed subdomains (SD-1 and SD-2) (Figure 4C). The Spir-2-GTBM peptide binds to the SD-1 of the MyoVa-GTD in an extended conformation, forming a two-turn alpha helix at the end, in the cleft between helices H3 and H5 (Figure 4C,D). Spir-2-GTBM can be accommodated on the surface of MyoVa without conformational changes in the GTD (Figure 4—figure supplement 3A,B), and the Spir-GTBM binding pocket is structurally conserved in MyoVb and MyoVc (Figure 4—figure supplement 3C,D). Consistently, a direct binding assay also showed that MyoVc-GTD binds Spir-2-GTBM with micromolar range affinity (Figure 4—figure supplement 3E). We thus conclude that the Spir-binding site structural conservation of the three myosin V isoforms explains Spir promiscuity in binding to MyoVa, Vb and Vc.10.7554/eLife.17523.013Table 1.X-ray diffraction data collection and structure refinement statistics.DOI: http://dx.doi.org/10.7554/eLife.17523.013MyoVa-GTD:Rab11MyoVa-GTD:Spir2Data collectionX-ray sourceSOLEIL PX1SOLEIL PX1Space groupC 1 2 1C 1 2 1Cell dimensions a, b, c [Å] α, β, γ [°]215.79, 128.42, 89.02 90, 98.27, 9099.61, 41.22, 108.22 90, 115.89, 90Resolution [Å]48.88–2.056 (2.18–2.056)44.81–1.76 (1.86–1.76)Rsym5.3 (55.5)7.4 (60.0)I / σI20.6 (3.38)15.7 (2.5)Completeness [%]98.59 (97.0)99.77 (99.75)Redundancy7.7 (7.6)6.4 (6.2)RefinementResolution [Å]48.88–2.056 (2.129–2.056)44.81–1.8 (1.864–1.8)No. of reflections146774 (14323)36967 (3659)Rwork / Rfree17.97 / 20.83 (23.00 / 26.6)15.13 / 19.13 (27.49 / 36.49)Number of atoms in AU Protein/ligand/solvent12516 / 172 / 11543191 / / 432Average B-factor60.531.9r.m.s.d bond lengths [Å] angles [°]0.002 0.590.01 1.092PDB ID5JCZ5JCY
+We further characterized the Spir:MyoVa binding by solving a crystal structure of the complex, which allowed us to identify the protein interaction sites and depict the stabilizing interactions within the complex at atomic detail (Figure 4C, Table 1). Importantly, the Spir residues important for the interaction with MyoV-GTD are conserved among Spir proteins (Figure 4A). The MyoV-GTD is composed of two closely apposed subdomains (SD-1 and SD-2) (Figure 4C). The Spir-2-GTBM peptide binds to the SD-1 of the MyoVa-GTD in an extended conformation, forming a two-turn alpha helix at the end, in the cleft between helices H3 and H5 (Figure 4C,D). Spir-2-GTBM can be accommodated on the surface of MyoVa without conformational changes in the GTD (Figure 4—figure supplement 3A,B), and the Spir-GTBM binding pocket is structurally conserved in MyoVb and MyoVc (Figure 4—figure supplement 3C,D). Consistently, a direct binding assay also showed that MyoVc-GTD binds Spir-2-GTBM with micromolar range affinity (Figure 4—figure supplement 3E). We thus conclude that the Spir-binding site structural conservation of the three myosin V isoforms explains Spir promiscuity in binding to MyoVa, Vb and Vc.
 
-## Spir and melanophilin bind to the same MyoVa pocket, but use different interaction modes
+**Table 1.**
+ X-ray diffraction data collection and structure refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MyoVa-GTD:Rab11</th>
+      <th>MyoVa-GTD:Spir2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>X-ray source</td>
+      <td>SOLEIL PX1</td>
+      <td>SOLEIL PX1</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C 1 2 1</td>
+      <td>C 1 2 1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions a, b, c [Å] α, β, γ [°]</td>
+      <td>215.79, 128.42, 89.02 90, 98.27, 90</td>
+      <td>99.61, 41.22, 108.22 90, 115.89, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution [Å]</td>
+      <td>48.88–2.056 (2.18–2.056)</td>
+      <td>44.81–1.76 (1.86–1.76)</td>
+    </tr>
+    <tr>
+      <td>Rsym</td>
+      <td>5.3 (55.5)</td>
+      <td>7.4 (60.0)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>20.6 (3.38)</td>
+      <td>15.7 (2.5)</td>
+    </tr>
+    <tr>
+      <td>Completeness [%]</td>
+      <td>98.59 (97.0)</td>
+      <td>99.77 (99.75)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>7.7 (7.6)</td>
+      <td>6.4 (6.2)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution [Å]</td>
+      <td>48.88–2.056 (2.129–2.056)</td>
+      <td>44.81–1.8 (1.864–1.8)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>146774 (14323)</td>
+      <td>36967 (3659)</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree</td>
+      <td>17.97 / 20.83 (23.00 / 26.6)</td>
+      <td>15.13 / 19.13 (27.49 / 36.49)</td>
+    </tr>
+    <tr>
+      <td>Number of atoms in AU Protein/ligand/solvent</td>
+      <td>12516 / 172 / 1154</td>
+      <td>3191 / / 432</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>60.5</td>
+      <td>31.9</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d bond lengths [Å] angles [°]</td>
+      <td>0.002 0.59</td>
+      <td>0.01 1.092</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>5JCZ</td>
+      <td>5JCY</td>
+    </tr>
+  </tbody>
+</table>
+
+### Spir and melanophilin bind to the same MyoVa pocket, but use different interaction modes
 
 Interestingly, the MyoV-GTD Spir-2 binding site partially overlaps with that of melanophilin (MLPH) (Pylypenko et al., 2013; Wei et al., 2013) (Figure 4D,E). Both Spir-2-GTBM and MLPH-GTBM bind the MyoVa-GTD with similar micromolar range affinities (Figure 4B) (Pylypenko et al., 2013). However, in contrast to the Spir-GTBM, which interacts with all three MyoV isoforms, the MLPH-GTBM binding is MyoVa specific (Wei et al., 2013; Pylypenko et al., 2013). The Spir-2 and MLPH GTBMs exhibit some sequence similarity (Figure 4F) and comparison of the complex structures shows that their N-terminal regions interact with MyoVa in a very similar way, forming a network of hydrogen bonds with the H4’’-H5-loop and similarly positioning two conserved leucine residues of the motif (L408 and L409 in Spir-2; L188 and L189 in MLPH) within cavities of the MyoVa-GTD surface (Figure 4D,E,H). As mentioned above, mutation of the two highly conserved Spir leucine residues to alanines significantly impairs Spir-2 binding to MyoV (Figure 2B). The Spir-GTBM C-terminal part anchors itself in the MyoVa hydrophobic cleft between helices H3 and H5 using L414 and M417 side chains; and the small side chain of the strictly conserved Ala411 binds in proximity to the MyoVa Tyr1596 side chain (Figure 4D,G). The apo-MyoV-GTD surface is preformed to bind Spir-GTBM (Figure 4G,H). In contrast to Spir-GTBM, the MLPH-GTBM cannot be accommodated on the surface of apo-MyoVa-GTD without conformational changes (Figure 4H). MLPH-GTBM has a conserved hydrophobic residue (Phe, Ile or Val) Phe191 at the position equivalent to the Spir-2-A411 (Figure 4E,F,H) and its binding to MyoVa requires rotation of the Tyr1596 side chain in towards the protein core to harbor the big Phe side chain in the binding pocket (Figure 4H,I; Figure 4—figure supplement 4). As proposed previously (Pylypenko et al., 2013), the conformational change required for MLPH binding is likely more difficult to achieve in other MyoV isoforms due to the sequence differences in the protein core surrounding the Tyr1596. Moreover, the MyoVa Arg1528 that stabilizes the MLPH-GTBM by two hydrogen bonds (Figure 4E) is not conserved in the myosin V isoforms and contributes to the MyoVa binding specificity (Wei et al., 2013). The observed differences in how Spir-2-GTBM and MLPH-GTBM bind to MyoV-GTD thus account for their discrepancy in binding specificity.
 
-## Common features of GTBM
+### Common features of GTBM
 
 The globular tail domain of MyoV thus binds different partners using the same binding site. Interestingly, Spir-GTBM and MLPH-GTBM have a similar distribution of charged residues along the sequence: their N-terminal part is positively charged, and their C-terminal sequence, after the specific binding motif, contains a cluster of negatively charged residues (Figure 4—figure supplement 5). Thus, Spir-2-GTBM binding to MyoV also likely use the charge complementarity described for MLPH-GTBM binding to MyoVa (Pylypenko et al., 2013). The low amino acid complexity within the GTBM makes it very difficult to generate a reasonable binding motif profile that can be used for a search of other GTBM containing proteins against protein sequence databases. Unfortunately, our attempts to find other proteins potentially capable of MyoV binding failed. However, the polypeptide chain recognized by the GTD has three characteristic properties as follows: (1) the clusters of charged residues may help to orient the peptide relative to the GTD surface, (2) the extended N-terminal region is able to form hydrogen bonds with backbone atoms of the GTD, and (3) the hydrophobic residues of the motif provide the peptide anchoring in small surface pockets of the GTD.
 
 In summary, we identified a new functional region in Spir and provide an atomic description of how Spir proteins interact with the GTD of MyoV motors, which brings critical insights into the compatibility or competition of Spir binding with different MyoV cargos and their ability to regulate MyoV activity.
 
-## A tripartite Spir:MyoV:Rab11 complex determines Spir membrane specificity
+### A tripartite Spir:MyoV:Rab11 complex determines Spir membrane specificity
 
-To gain insights into the relationship between Spir, MyoV and Rab11, we solved the crystal structure of Rab11a bound to the MyoVa-GTD. This structure confirms that Rab11a binds to the MyoVa-GTD SD-2, as previously reported for the MyoVb:Rab11a complex structure (
+To gain insights into the relationship between Spir, MyoV and Rab11, we solved the crystal structure of Rab11a bound to the MyoVa-GTD. This structure confirms that Rab11a binds to the MyoVa-GTD SD-2, as previously reported for the MyoVb:Rab11a complex structure (Pylypenko et al., 2013) and indicates that some structural variability in Rab11a occurs upon its binding to the MyoV isoforms (Figure 5—figure supplement 1, Table 1). The structures of MyoVa:Spir-GTBM and MyoVa:Rab11a demonstrate that the Rab11 and Spir binding sites are on opposite ends of the elongated MyoV-GTD while the GTD adopts a similar conformation in the two binary complexes. This implies that the two MyoV partners can bind to the GTD at the same time, as shown in a model of the tripartite complex (Figure 5A). The organization of the tripartite complex, where MyoV links Spir to Rab11, provides an explanation of how Spir proteins can be specifically targeted to Rab11 vesicles.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig5-v1.jpg)
 
-**Figure 5.:** (A) A model of the Rab11a:MyoVa-GTD:Spir-2-GTBM complex was generated by superimposition of the MyoVa-GTD from the two crystal structures Rab11a:MyoVa-GTD and MyoVa-GTD:Spir-2-GTBM. The Spir-2-GTBM (purple) binds to the SD-1 of the MyoVa-GTD (orange) and Rab11a (green, Switch-1 blue, Switch-2 red) binds to its SD-2. (B) GST-pulldown assay with purified GTP-locked GST-Rab11a-Q70L mutant and HEK293 cell lysates transiently over-expressing full-length Myc-epitope-tagged Spir-2 (Myc-Spir-2), mStrawberry-tagged C-terminal formin-2 (Straw-FMN2-FH2-FSI), eGFP-tagged full-length MyoVa (GFP-MyoVa-FL) or eGFP-tagged full-length MyoVa with the Q1753R mutation, which disrupts interaction with Rab11, (GFP-MyoVa-Q1753R). GST-Rab11a-Q70L is able to pull GFP-MyoVa-FL from cell lysates, but not the GFP-MyoVa-Q1753R mutant. In the presence of GFP-MyoVa-FL, GST-Rab11a-Q70L is also able to pull down Myc-Spir-2, as well as Straw-FMN2-FH2-FSI. Only faint Myc-Spir-2 and Straw-FMN2-FH2-FSI bands were detected with the GFP-MyoVa-Q1753R mutant. N = 2 experimental repeats. (C) The localization of transiently co-expressed tagged Rab11 (mStrawberry, mStraw-Rab11; red), MyoVa-CC-GTD (eGFP, eGFP-MyoVa-CC-GTD; green) and the Myc-epitope tagged (Myc, cyan) C-terminal Spir-2 proteins encoding (Myc-Spir-2-GTBM-SB-FYVE) or lacking (Myc-Spir-2-SB-FYVE) the MyoV binding motif was analyzed by fluorescence microscopy. Deconvoluted pictures indicate the localization of the proteins on vesicular structures. Scale bars represent 5 µm. 5 cells were recorded for each condition and the cytoplasmic region of one representative cell is presented here. (D) The colocalization of tagged proteins as described in (C) was quantified for the indicated co-expressions by determining its Pearson’s correlation coefficient (PCC) as shown in a bar diagram. Each bar represents the mean PCC value for at least 4 cells analyzed. Error bars represent SEM. Statistical analysis was done using Student's t-test to compare two co-expression conditions with a confidence interval of 95%. *p<0.05. Figure 5D. (E) GST-pulldown assay engaging purified GST-tagged Spir-2-GTBM-SB-FYVE protein, purified MyoVa-GTD and the purified GTP-locked Rab11a-Q70L mutant. GST-Spir-2-GTBM-SB-FYVE alone does not interact with Rab11a-Q70L. In contrast, the presence of the MyoVa-GTD allows GST-Spir-2-GTBM-SB-FYVE to pull Rab11a-Q70L, as indicated by immunoblotting with antibodies recognizing MyoVa and Rab11a. N = 3 experimental repeats.DOI: http://dx.doi.org/10.7554/eLife.17523.01410.7554/eLife.17523.015Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.17523.015
+**Figure 5.:** (A) A model of the Rab11a:MyoVa-GTD:Spir-2-GTBM complex was generated by superimposition of the MyoVa-GTD from the two crystal structures Rab11a:MyoVa-GTD and MyoVa-GTD:Spir-2-GTBM. The Spir-2-GTBM (purple) binds to the SD-1 of the MyoVa-GTD (orange) and Rab11a (green, Switch-1 blue, Switch-2 red) binds to its SD-2. (B) GST-pulldown assay with purified GTP-locked GST-Rab11a-Q70L mutant and HEK293 cell lysates transiently over-expressing full-length Myc-epitope-tagged Spir-2 (Myc-Spir-2), mStrawberry-tagged C-terminal formin-2 (Straw-FMN2-FH2-FSI), eGFP-tagged full-length MyoVa (GFP-MyoVa-FL) or eGFP-tagged full-length MyoVa with the Q1753R mutation, which disrupts interaction with Rab11, (GFP-MyoVa-Q1753R). GST-Rab11a-Q70L is able to pull GFP-MyoVa-FL from cell lysates, but not the GFP-MyoVa-Q1753R mutant. In the presence of GFP-MyoVa-FL, GST-Rab11a-Q70L is also able to pull down Myc-Spir-2, as well as Straw-FMN2-FH2-FSI. Only faint Myc-Spir-2 and Straw-FMN2-FH2-FSI bands were detected with the GFP-MyoVa-Q1753R mutant. N = 2 experimental repeats. (C) The localization of transiently co-expressed tagged Rab11 (mStrawberry, mStraw-Rab11; red), MyoVa-CC-GTD (eGFP, eGFP-MyoVa-CC-GTD; green) and the Myc-epitope tagged (Myc, cyan) C-terminal Spir-2 proteins encoding (Myc-Spir-2-GTBM-SB-FYVE) or lacking (Myc-Spir-2-SB-FYVE) the MyoV binding motif was analyzed by fluorescence microscopy. Deconvoluted pictures indicate the localization of the proteins on vesicular structures. Scale bars represent 5 µm. 5 cells were recorded for each condition and the cytoplasmic region of one representative cell is presented here. (D) The colocalization of tagged proteins as described in (C) was quantified for the indicated co-expressions by determining its Pearson’s correlation coefficient (PCC) as shown in a bar diagram. Each bar represents the mean PCC value for at least 4 cells analyzed. Error bars represent SEM. Statistical analysis was done using Student's t-test to compare two co-expression conditions with a confidence interval of 95%. *p<0.05. Figure 5D. (E) GST-pulldown assay engaging purified GST-tagged Spir-2-GTBM-SB-FYVE protein, purified MyoVa-GTD and the purified GTP-locked Rab11a-Q70L mutant. GST-Spir-2-GTBM-SB-FYVE alone does not interact with Rab11a-Q70L. In contrast, the presence of the MyoVa-GTD allows GST-Spir-2-GTBM-SB-FYVE to pull Rab11a-Q70L, as indicated by immunoblotting with antibodies recognizing MyoVa and Rab11a. N = 3 experimental repeats.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Structure of Rab11-GTP bound to the MyoVa-GTD SD-2 (SD-1 is not shown for simplicity), the nucleotide is shown in sticks. The MyoVa interaction epitope of Rab11 (left) and the Rab11 binding site of MyoVa (right) are shown in sticks and labeled. Rab11 switch 1 and switch 2 are shown in blue and red. (B) Conformational differences in the switches of different active (top) Rab11-GTP and inactive (low) Rab11-GDP. The switch 2 conformation changes in MyoVa-bound Rab11 (red) compared to unbound Rab11:GPPNHP (PDB ID 1YZK) (green) or compared to Rab11 when bound to MyoVb (PDB ID 4LX0) (blue). Note that Rab11-GTP switch 1 also differs when it is bound to MyoVa or to MyoVb, while it is similar in the apo and MyoVa bound complex. The Rab11-GTP switch 2 conformation is similar to that of Rab11-GDP (PDB ID1OIV) (yellow) when bound to MyoVa. This is consistent with the relatively high affinity of Rab11-GDP for MyoVa (panel D). (C) Rab11-GTP binds with different orientations to the MyoVa and MyoVb surfaces. Rab11-MyoVb complex (black) is superimposed on Rab11-MyoVa (colored), using the SD-2 of the MyoV GTD. The shift of the Rab11 molecule is shown with an arrow. (D) Representative SPR binding curves recorded for Rab11-GDP and Rab11-GTP at 450 nM MyoVa-GTD and MyoVb-GTD concentrations. N = 3 experimental repeats.DOI: http://dx.doi.org/10.7554/eLife.17523.016
+**Figure 5—figure supplement 1.:** (A) Structure of Rab11-GTP bound to the MyoVa-GTD SD-2 (SD-1 is not shown for simplicity), the nucleotide is shown in sticks. The MyoVa interaction epitope of Rab11 (left) and the Rab11 binding site of MyoVa (right) are shown in sticks and labeled. Rab11 switch 1 and switch 2 are shown in blue and red. (B) Conformational differences in the switches of different active (top) Rab11-GTP and inactive (low) Rab11-GDP. The switch 2 conformation changes in MyoVa-bound Rab11 (red) compared to unbound Rab11:GPPNHP (PDB ID 1YZK) (green) or compared to Rab11 when bound to MyoVb (PDB ID 4LX0) (blue). Note that Rab11-GTP switch 1 also differs when it is bound to MyoVa or to MyoVb, while it is similar in the apo and MyoVa bound complex. The Rab11-GTP switch 2 conformation is similar to that of Rab11-GDP (PDB ID1OIV) (yellow) when bound to MyoVa. This is consistent with the relatively high affinity of Rab11-GDP for MyoVa (panel D). (C) Rab11-GTP binds with different orientations to the MyoVa and MyoVb surfaces. Rab11-MyoVb complex (black) is superimposed on Rab11-MyoVa (colored), using the SD-2 of the MyoV GTD. The shift of the Rab11 molecule is shown with an arrow. (D) Representative SPR binding curves recorded for Rab11-GDP and Rab11-GTP at 450 nM MyoVa-GTD and MyoVb-GTD concentrations. N = 3 experimental repeats.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Analytical gel-filtration experiments of His6-mCherry-Spir-2-linker: MyoVa-GTD: His6-Rab11a-Q70L-1-173 demonstrate co-elution of the three proteins in the first peak. Individual proteins His6-Rab11a-Q70L-1-173, MyoVa-GTD, His6-mCherry-Spir-2-linker; two component protein complexes MyoVa-GTD:Spir-2, MyoVa-GTD:Rab11a were also analyzed. The mix of Spir-2 and Rab11 proteins eluted as individual protein components. Gel-filtration elution profiles (left) monitored by light absorbance at 280 nm, 260 nm and 587 nm; and SDS-PAGE analysis (right) of the eluted fractions.DOI: http://dx.doi.org/10.7554/eLife.17523.017
+**Figure 5—figure supplement 2.:** Analytical gel-filtration experiments of His6-mCherry-Spir-2-linker: MyoVa-GTD: His6-Rab11a-Q70L-1-173 demonstrate co-elution of the three proteins in the first peak. Individual proteins His6-Rab11a-Q70L-1-173, MyoVa-GTD, His6-mCherry-Spir-2-linker; two component protein complexes MyoVa-GTD:Spir-2, MyoVa-GTD:Rab11a were also analyzed. The mix of Spir-2 and Rab11 proteins eluted as individual protein components. Gel-filtration elution profiles (left) monitored by light absorbance at 280 nm, 260 nm and 587 nm; and SDS-PAGE analysis (right) of the eluted fractions.
 
 To reveal the existence of the tripartite complex in vitro and in vivo, several experiments were designed. First, we showed that bacterially expressed constitutively active GST-Rab11a-Q70L pulls down transiently over-expressed full-length MyoVa, Spir-2 and a C-terminal FMN2 protein (mStrawberry-FMN2-FH2-FSI) from HEK293 lysates (Figure 5B); over-expressed MyoVa-Q1753R mutant impaired in Rab11 binding (Lindsay et al., 2013) affects all three proteins co-precipitation with the GST-Rab11a-Q70L-beads consistent with the role of MyoV for linking the MyoV:Spir:FMN2 complex to Rab11.
 
@@ -139,27 +240,27 @@ GST-pulldown experiments with recombinant proteins using GST-Spir-2-GTBM-SB-FYVE
 
 Fluorescence microscopy of immunostained (Myc-Spir-2-GTBM-SB-FYVE) and fluorescent proteins (eGFP-MyoVa-CC-GTD, mStrawberry-Rab11a) revealed that the three proteins have a nearly perfect colocalization when transiently co-expressed in HeLa cells (Figure 5C,D). The strong colocalization of Spir and Rab11 was dependent on the Spir MyoV binding motif. The Spir-2-SB-FYVE fragment, that lacks the MyoV binding motif, showed membrane localization driven by the FYVE domain (Tittel et al., 2015). When co-expressed with Rab11a and the MyoVa-CC-GTD, a significant reduction in Spir-2-SB-FYVE colocalization with Rab11 was observed, while colocalization of Rab11 with MyoVa-CC-GTD remained high (Figure 5C,D). These data strongly support that MyoV acts as an adapter to target Spir actin nucleators specifically towards Rab11 vesicle membranes.
 
-## Spir activates Rab11 dependent MyoV membrane targeting
+### Spir activates Rab11 dependent MyoV membrane targeting
 
-MLPH-GTBM binding to the MyoVa-GTD promotes a structural rearrangement in myosin Va
+MLPH-GTBM binding to the MyoVa-GTD promotes a structural rearrangement in myosin Va in vitro whereby it switches from an inhibited 'OFF' conformation (Figure 6A,B) in which the GTD folds back and binds to the motor domain, to an extended active 'ON' conformation (Yao et al., 2015). Interestingly, the Spir and MLPH binding site also overlaps with the MyoVb-GTD N-terminal linker interaction site that has been proposed to contribute to the MyoV OFF state stabilization (Pylypenko et al., 2013) (Figure 6A). The obvious structural similarity between Spir-GTBM and MLPH-GTBM binding to the MyoVa-GTD suggests that Spir could similarly play a role in MyoV activation by disrupting the head-tail interaction and opening of the motor.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig6-v1.jpg)
 
-**Figure 6.:** (A) A putative interaction mode of the GTDs within the MyoV off state was derived from the MyoVb-GTD structure (PDB ID 4LX0). Two GTDs interact with each other via N-terminal linkers occupying the Spir/MLPH binding pockets on the neighboring GTD, Spir and MLPH GTBMs are shown in ribbon. (B) Schematic representation of myosin V activation by GTBM binding. (C and D) N-terminal Spir fragments target MyoVa to vesicle membranes. (C) N-terminal Spir fragments (Myc-Spir-2-KIND-WH2, Myc-Spir-2-KW; Myc-Spir-2-KIND-WH2-GTBM, Myc-Spir-2-KWM) and full-length MyoVa motor proteins (eGFP-MyoVa-FL, eGFP-MyoVa-FL-Q1753R) have an even cytoplasmic and nuclear localization when transiently expressed in HeLa cells (single expression). At least 5 cells were recorded for each condition and one representative cell is presented here. Scale bars represent 10 µm. (D) Expression of full-length GFP-tagged MyoVa (eGFP-MyoVa-FL; green (middle) and as heat map (left)) shows an even cytoplasmic distribution that is not changed by co-expression of the Spir-2 fragment (Myc-Spir-2-KIND-WH2), which is not able to bind to MyoV and lipid membranes (upper panel). In contrast, co-expression of a myosin V binding Spir-2 fragment (Myc-Spir-2-KIND-WH2-GTBM; red, middle panel) leads to targeting of MyoVa to vesicle membranes and to overlapping Spir-2 and MyoVa localization (higher magnification insets). Heat maps represent grey values for MyoVa fluorescence intensities rising from '0' (black) to '4096' (red) to document equal expression levels of MyoVa proteins in the depicted cells. To address Rab11 dependence on motor protein targeting, the GFP-tagged melanocyte specific F isoform of the Q1753R mutant MyoVa (eGFP-MyoVa-QR) that does not bind Rab11 was expressed. The expressed MyoVa mutant has an even cytoplasmic distribution that was not changed upon co-expression of the myosin V binding Spir-2 fragment (Myc-Spir-2-KIND-WH2-GTBM; red, lower panel). Representative cells are shown. All cells observed under single and co-expression conditions had a vesicular or cytoplasmic localization as shown by the representative cells presented here. 5 cells were recorded for each condition and one representative cell is presented here. Scale bars represent 10 µm.DOI: http://dx.doi.org/10.7554/eLife.17523.018
+**Figure 6.:** (A) A putative interaction mode of the GTDs within the MyoV off state was derived from the MyoVb-GTD structure (PDB ID 4LX0). Two GTDs interact with each other via N-terminal linkers occupying the Spir/MLPH binding pockets on the neighboring GTD, Spir and MLPH GTBMs are shown in ribbon. (B) Schematic representation of myosin V activation by GTBM binding. (C and D) N-terminal Spir fragments target MyoVa to vesicle membranes. (C) N-terminal Spir fragments (Myc-Spir-2-KIND-WH2, Myc-Spir-2-KW; Myc-Spir-2-KIND-WH2-GTBM, Myc-Spir-2-KWM) and full-length MyoVa motor proteins (eGFP-MyoVa-FL, eGFP-MyoVa-FL-Q1753R) have an even cytoplasmic and nuclear localization when transiently expressed in HeLa cells (single expression). At least 5 cells were recorded for each condition and one representative cell is presented here. Scale bars represent 10 µm. (D) Expression of full-length GFP-tagged MyoVa (eGFP-MyoVa-FL; green (middle) and as heat map (left)) shows an even cytoplasmic distribution that is not changed by co-expression of the Spir-2 fragment (Myc-Spir-2-KIND-WH2), which is not able to bind to MyoV and lipid membranes (upper panel). In contrast, co-expression of a myosin V binding Spir-2 fragment (Myc-Spir-2-KIND-WH2-GTBM; red, middle panel) leads to targeting of MyoVa to vesicle membranes and to overlapping Spir-2 and MyoVa localization (higher magnification insets). Heat maps represent grey values for MyoVa fluorescence intensities rising from '0' (black) to '4096' (red) to document equal expression levels of MyoVa proteins in the depicted cells. To address Rab11 dependence on motor protein targeting, the GFP-tagged melanocyte specific F isoform of the Q1753R mutant MyoVa (eGFP-MyoVa-QR) that does not bind Rab11 was expressed. The expressed MyoVa mutant has an even cytoplasmic distribution that was not changed upon co-expression of the myosin V binding Spir-2 fragment (Myc-Spir-2-KIND-WH2-GTBM; red, lower panel). Representative cells are shown. All cells observed under single and co-expression conditions had a vesicular or cytoplasmic localization as shown by the representative cells presented here. 5 cells were recorded for each condition and one representative cell is presented here. Scale bars represent 10 µm.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Motor domain and Rab11 binding sites are located on the opposite sides of MyoV-GTD SD-2. Conserved MyoVa-GTD residues participating in motor domain binding in the inhibited folded conformation of MyoVa (Yao et al., 2015) are shown as spheres and labeled in blue. E1789 and E1791 belongs to a loop connecting MyoV H11 and H12. (B) Comparison of apo-MyoVa and Rab11 bound MyoVa H11-H12 loop. Close-up view of the Rab11 bound H11-H12 MyoV loop region (orange) superimposed on the apo-MyoVa structure (white). The H11-H12 loop also participates in Rab11 binding and adopts a different conformation in the Rab11:MyoVa complex. When it is not engaged in interactions, this MyoV-GTD loop might swap between different conformations. In the MyoVa:Rab11 complex, MyoVa E1791 makes a hydrogen bond (dashed line) with the conserved W1711 side chain stabilizing the residue in the conformation compatible with Rab11 binding. Thus, Rab11 binding to the folded MyoV full-length motor may retract the H11-H12 loop from the motor domain-binding interface and destabilize the full length GTD-motor domain intramolecular interactions, favoring activation of the motor.DOI: http://dx.doi.org/10.7554/eLife.17523.019
+**Figure 6—figure supplement 1.:** (A) Motor domain and Rab11 binding sites are located on the opposite sides of MyoV-GTD SD-2. Conserved MyoVa-GTD residues participating in motor domain binding in the inhibited folded conformation of MyoVa (Yao et al., 2015) are shown as spheres and labeled in blue. E1789 and E1791 belongs to a loop connecting MyoV H11 and H12. (B) Comparison of apo-MyoVa and Rab11 bound MyoVa H11-H12 loop. Close-up view of the Rab11 bound H11-H12 MyoV loop region (orange) superimposed on the apo-MyoVa structure (white). The H11-H12 loop also participates in Rab11 binding and adopts a different conformation in the Rab11:MyoVa complex. When it is not engaged in interactions, this MyoV-GTD loop might swap between different conformations. In the MyoVa:Rab11 complex, MyoVa E1791 makes a hydrogen bond (dashed line) with the conserved W1711 side chain stabilizing the residue in the conformation compatible with Rab11 binding. Thus, Rab11 binding to the folded MyoV full-length motor may retract the H11-H12 loop from the motor domain-binding interface and destabilize the full length GTD-motor domain intramolecular interactions, favoring activation of the motor.
 
 Full-length MyoVa transiently expressed in cells has an even cytoplasmic distribution (Figure 6C) (Lindsay et al., 2013), indicating that the endogenous Rab11 binding activity by itself is not sufficient to target the inhibited motor protein to vesicle membranes. To investigate if the interaction of full-length MyoVa with the Spir-GTBM contributes to the activation of the motor protein we co-expressed full-length MyoVa (eGFP-MyoVa-FL) and the N-terminal Spir-2 proteins in HeLa cells (Figure 6D). When expressed alone, the N-terminal Spir-2 proteins (Spir-2-KIND-WH2; Spir-2-KIND-WH2-GTBM) have an even cytoplasmic and nuclear localization (Figure 6C). Co-expressed MyoVa and the N-terminal Spir-2 lacking the GTBM (Myc-Spir-2-KIND-WH2) are also both cytosolic (Figure 6D). This is consistent with MyoV being in the inhibited state and not interacting with Spir-KIND-WH2. In contrast, when full-length MyoVa is co-expressed with a Spir-2 fragment containing the Spir-GTBM (Myc-Spir-2-KIND-WH2-GTBM), both proteins localize to vesicle membranes. This is consistent with a model in which Spir-GTBM binding to cytosolic MyoV activates the motor and promotes its membrane recruitment.
 
-The vesicular localization of the full-length MyoVa triggered by Spir-2-GTBM binding was Rab11 dependent, since a MyoVa point mutant that cannot interact with Rab11 (MyoVa-Q1753R) (
+The vesicular localization of the full-length MyoVa triggered by Spir-2-GTBM binding was Rab11 dependent, since a MyoVa point mutant that cannot interact with Rab11 (MyoVa-Q1753R) (Lindsay et al., 2013) fails to be targeted to vesicle membranes and shows an even cytoplasmic distribution, when co-expressed with the Spir-2-KIND-WH2-GTBM protein (Figure 6D). The experiments demonstrate a Rab11-dependent coordinated membrane targeting mechanism of Spir and MyoV (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/17523/elife-17523-fig7-v1.jpg)
 
-**Figure 7.:** Spir and MyoV proteins adopt a backfolded autoinhibited conformation in the cytoplasm (Li et al., 2008; Liu et al., 2006; Thirumurugan et al., 2006; Tittel et al., 2015). A non-specific transient interaction of the Spir FYVE-type domain with membranes opens up Spir (Tittel et al., 2015). Spir-GTBM binding to the inhibited MyoV contributes to the release of MyoV autoinhibition and facilitates MyoV-GTD interaction with Rab11 at vesicle membranes, further stabilizing the MyoV activated extended conformation. The Spir-FYVE membrane interaction releases the cis-regulatory KIND/FYVE domain interaction and subsequently allows formin (FMN) dimer recruitment at the membranes (Tittel et al., 2015). Interaction with the formin dimer promotes Spir dimerization and allows efficient F-actin nucleation (Dietrich et al., 2013; Namgoong et al., 2011; Quinlan et al., 2007). Note that the order of events is not known and will require further studies. The domain structures of the Spir and MyoV proteins are indicated by the same color code as in Figure 1 (Spir: FYVE, red; Spir-box, yellow; GTBM, purple; WH2, light blue; KIND, dark blue; MyoV: GTD, orange; coiled coil, calmodulin bound IQ motifs and motor domain, gray).DOI: http://dx.doi.org/10.7554/eLife.17523.020
+**Figure 7.:** Spir and MyoV proteins adopt a backfolded autoinhibited conformation in the cytoplasm (Li et al., 2008; Liu et al., 2006; Thirumurugan et al., 2006; Tittel et al., 2015). A non-specific transient interaction of the Spir FYVE-type domain with membranes opens up Spir (Tittel et al., 2015). Spir-GTBM binding to the inhibited MyoV contributes to the release of MyoV autoinhibition and facilitates MyoV-GTD interaction with Rab11 at vesicle membranes, further stabilizing the MyoV activated extended conformation. The Spir-FYVE membrane interaction releases the cis-regulatory KIND/FYVE domain interaction and subsequently allows formin (FMN) dimer recruitment at the membranes (Tittel et al., 2015). Interaction with the formin dimer promotes Spir dimerization and allows efficient F-actin nucleation (Dietrich et al., 2013; Namgoong et al., 2011; Quinlan et al., 2007). Note that the order of events is not known and will require further studies. The domain structures of the Spir and MyoV proteins are indicated by the same color code as in Figure 1 (Spir: FYVE, red; Spir-box, yellow; GTBM, purple; WH2, light blue; KIND, dark blue; MyoV: GTD, orange; coiled coil, calmodulin bound IQ motifs and motor domain, gray).
 
-## Discussion
+### Discussion
 
 The timing and mechanism of motor recruitment to specific vesicles is vital for cellular function and its intracellular organization. Targeted recruitment of either dynein, kinesins or myosins to vesicles is the essential first step in sorting intracellular cargo within cells yet the logistics of motor activation and vesicle localization are poorly understood. Rab11 GTPases recruit several different molecular motors to vesicles, regulating trafficking of exocytic and recycling vesicles along microtubule and actin tracks (Welz et al., 2014). The actin nucleator Spir is also present on the surface of Rab11-vesicles, enabling them to generate their own tracks for transport by MyoV (Schuh, 2011). Here it is revealed how the activation of Spir actin nucleators and MyoV actin-based motors on Rab11 vesicles are coordinated.
 
@@ -175,15 +276,346 @@ The mechanism for cooperative membrane recruitment of Spir and MyoV via interact
 
 ## Materials and methods
 
-## Identification and assembly of Spir sequences
+### Identification and assembly of Spir sequences
 
 The Spir genes were identified by TBLASTN (RRID: SCR_011822) searches against the respective sequenced eukaryotic genomes. The published sequences of Drosophila Spir and human Spir were taken as seeds. All hits were manually analyzed at the genomic DNA level by comparing the three reading frame translations to the multiple sequence alignments of all Spir proteins to reveal homologous regions missing in gene predictions. If available for a certain species, EST data from the NCBI EST database has been analyzed to help in the annotation process. All sequence-related data and references to genome sequencing centers are available through CyMoBase (http://www.cymobase.org).
 
-## Cloning of bacterial and mammalian protein expression vectors
+### Cloning of bacterial and mammalian protein expression vectors
 
-Prokaryotic and eukaryotic expression vectors were generated by standard cloning techniques using Pfx DNA polymerase (AccuPrime; ThermoFisher, Waltham, MA, USA), restriction endonucleases (New England Biolabs (NEB), Frankfurt am Main, Germany) and T4 DNA ligase (NEB). Point mutants were generated using the QuikChange site-directed mutagenesis kit (Agilent Technologies (former Stratagene), Santa Clara, CA, USA) and Pfu DNA polymerase (Promega, Mannheim, Germany). Sequence correctness was verified by sequencing (LGC Genomics, Berlin, Germany). A detailed overview of all expression vectors employed in this study is presented in Table 2.10.7554/eLife.17523.021Table 2.Expression vectors employed in this study.DOI: http://dx.doi.org/10.7554/eLife.17523.021ConstructPlasmidDescriptionFragment boundaries (restriction sites)PurificationPurposeMyc-Spir1-FLpcDNA3-Myc-hs-Spir1Myc-hs-Spir1aa 2 - 757 (BamHI / SacI)Co-IPMyc-Spir2-FLpcDNA3-Myc-hs-Spir2Myc-hs-Spir2aa 2 - 714 (BamHI / HindIII)Co-IPMyc-Spir2-KWMpcDNA3-Myc-hs-Spir2- KIND-WH2-GTBMMyc-hs-Spir2-KIND- WH2-GTBMaa 2 - 437 (BamHI / XhoI)Co-IP, Transient expressionMyc-Spir2-2-423pcDNA3-Myc-hs- Spir2-2-423Myc-hs-Spir2-aa2-423aa 2 - 423 (BamHI / XhoI)Co-IPMyc-Spir2-KWpcDNA3-Myc-hs- Spir2-KIND-WH2Myc-hs-Spir2- KIND-WH2aa 2 - 410 (BamHI / XhoI)Co-IP, Transient expressionMyc-Spir2-MSFpcDNA3-Myc-hs- Spir2-GTBM-SB-FYVEMyc-hs-Spir2-GTBM- SB-FYVEaa 361/398 - 728 (BamHI / XhoI)Co-IP, Transient expressionMyc-Spir2-411-714pcDNA3-Myc-hs- Spir2-411-714Myc-hs-Spir2- aa411-714aa 411 - 714 (BamHI / XhoI)Co-IPMyc-Spir2-SFpcDNA3-Myc-hs- Spir2-SB-FYVEMyc-hs-Spir2- SB-FYVEaa 438 - 714 (BamHI / XhoI)Co-IP, Transient expressionStrawberry- Spir2-MSFpmStrawberry-C1-hs- Spir2-GTBM-SB-FYVEmStrawberry-hs- Spir2-GTBM-SB-FYVEaa 361 - 714 (EcoRI / KpnI)Transient expression, FLIM-FRETStrawberry- Spir2-SFpmStrawberry-C2- hs-Spir2-SB-FYVEmStrawberry- hs-Spir2-SB-FYVEaa 438 - 714 (XhoI / BamHI)Transient expression, FLIM-FRETStrawberry- Spir2-MSF-LALApmStrawberry-C1- hs-Spir2-GTBM- SB-FYVE-LALAmStrawberry-hs- Spir2-GTBM-SB- FYVE-L408A,L409Aaa 361 - 714 (EcoRI / XbaI)Transient expression, FLIM-FRETGST-Spir2-MSFpGex-4T3-hs-Spir2- GTBM-SB-FYVEGST-hs-Spir2- GTBM-SB-FYVEaa 361 - 714 (BamHI / XhoI)GSH-Sepharose 4B, Superdex 200GST-PulldownHis-mCherry- Spir2-linkerpProEx-HTb-mCherry- hs-Spir2-linkerHis6-mCherry- hs-Spir2-linkeraa 361 - 519 (XhoI / HindIII)Ni-NTA, Superdex 200GST-Pulldown, Binding assaysHis-mCherry- Spir2-linker-LALApProEx-HTb-mCherry- hs-Spir2-linker-LALAHis6-mCherry-hs-Spir2- linker-L408A,L409Aaa 361-519 (mutagenesis)Ni-NTA, Superdex 200GST-PulldownSpir2 / Fluorescein- Spir2 peptideaa 401-427purchased from GenScriptCrystallization, Fluoresc. anisotropyGFP-MyoVa-D-FLprovided by Bruno GoudLindsay et al., 2013GST-Pulldown, Transient expressionGFP-MyoVa-D-QRprovided by Bruno GoudLindsay et al., 2013GST-Pulldown, Transient expressionGFP-MyoVa-F-QRprovided by Bruno GoudLindsay et al., 2013Transient expressionGFP-MyoVa- CC-GTDpeGFP-C2- mm-MyoVa-CC-GTDeGFP-mm-MyoVa- CC-GTDaa 1260 - 1880 (EcoRI / SalI)Transient expressionGFP-MyoVa-GTDpAcGFP-C1- mm-MyoVa-GTDAcGFP-mm- MyoVa-GTDaa 1467 - 1880 (HindIII / SalI)Co-IP, FLIM-FRETStrawberry- MyoVa-GTDpmStrawberry-C1- mm-MyoVa-GTDmStrawberry-mm- MyoVa-GTDaa 1467 - 1880 (HindIII / SalI)Transient expression, FLIM-FRETGST-MyoVa-GTDpGex-4T1-NTEV- mm-MyoVa-GTDGST-mm-MyoVa-GTDaa 1467 - 1880 (HindIII / SalI)GSH-Sepharose 4B, Superdex 200GST-Pulldown, Binding assaysMyoVa-GTDpProEx-HTb-hs- MyoVa-GTDhs-MyoVa-GTDaa 1461 - 1853 (BamHI / XhoI)HisTrap, TEV, Superdex 200Crystallization, GST- Pulldown, AnisotropyGFP-MyoVb- CC-GTDpAcGFP-C1- hs-MyoVb-CC-GTDAcGFP-hs- MyoVb-CC-GTDaa 904 - 1848 (HindIII / SalI)Co-IPGFP-MyoVb-GTDpAcGFP-C1- hs-MyoVb-GTDAcGFP-hs- MyoVb-GTDaa 1467 - 1848 (HindIII / SalI)Co-IP, FLIM-FRET, Transient expressionGFP-MyoVb-GTD- Q1748RpAcGFP-C1-hs- MyoVb-GTD-Q1748RAcGFP-hs-MyoVb- GTD-Q1748Raa 1467 - 1848 (mutagenesis)Transient expressionGST-MyoVb-GTDpGex-4T1-NTEV- hs-MyoVb-GTDGST-hs-MyoVb-GTDaa 1467 - 1848 (BamHI / XhoI)GSH-Sepharose 4B, Superdex 200GST-Pulldown, Binding assaysMyoVb-GTDpProEx-HTb-hs- MyoVb-GTDhs-MyoVb-GTDaa 1456 - 1848 (BamHI / XhoI)HisTrap, TEV, Superdex G200Crystallization, GST- Pulldown, AnisotropyMyoVc-GTDpProEx-HTb-hs- MyoVc-GTDhs-MyoVc-GTDaa 1350 - 1742 (BamHI / XhoI)HisTrap, TEV, Superdex 200Microscale thermophoresisStrawberry- Rab11apmStrawberry-C1- mm-Rab11amStrawberry- mm-Rab11aaa 2 - 216 (EcoRI / BamHI)Transient expressionGST-Rab11a-Q70LpGex-4T1-NTEV- cl-Rab11a-Q70LGST-cl-Rab11a-Q70Laa 1 - 216 (EcoRI / EcoRI)GSH-Sepharose 4B, Superdex 200GST-PulldownRab11apET28-rTEV- hs-Rab11ahs-Rab11aaa 1 - 177 (NcoI / EcoRI)HisTrap, TEV, Superdex 200Crystallization, SPRRab11a-Q70LpET28-rTEV- hs-Rab11a-Q70Lhs-Rab11a-Q70Laa 1 - 173 (NcoI / EcoRI)HisTrap, TEV, Superdex 200GST-PulldownStrawberry-FMN2- FH2-FSIpmStrawberry-C2- mm-FMN2-FH2-FSImStrawberry-mm- FMN2-FH2-FSIaa 1135 - 1578 (BamHI / XhoI)GST-PulldownGST-FMN2-eFSIpGex-4T1-NTEV- mm-FMN2-eFSIGST-mm-FMN2-eFSIaa 1523 - 1578 (BamHI / XhoI)GSH-Sepharose FF, Superdex 200GST-Pulldown from brain lysatesGFPpAcGFP-C1AcGFPCo-IP, FLIM-FRETGFP-linker- StrawberrypAcGFP-C1-linker- mStrawberryAcGFP-linker(A-S- G-A-G)-mStrawberryaa 1 - 236 (BspEI / BglII)FLIM-FRETmCherrypProEx-HTb-mCherryHis6-mCherryaa 1 - 236 (BamHI / XhoI)Ni-NTA, Superdex 200GST-PulldownGSTpGex-4T1-NTEVGSTGSH-Sepharose 4B, Superdex 200GST-Pulldown
+Prokaryotic and eukaryotic expression vectors were generated by standard cloning techniques using Pfx DNA polymerase (AccuPrime; ThermoFisher, Waltham, MA, USA), restriction endonucleases (New England Biolabs (NEB), Frankfurt am Main, Germany) and T4 DNA ligase (NEB). Point mutants were generated using the QuikChange site-directed mutagenesis kit (Agilent Technologies (former Stratagene), Santa Clara, CA, USA) and Pfu DNA polymerase (Promega, Mannheim, Germany). Sequence correctness was verified by sequencing (LGC Genomics, Berlin, Germany). A detailed overview of all expression vectors employed in this study is presented in Table 2.
 
-## Recombinant protein production for structural studies and interaction measurements
+**Table 2.**
+ Expression vectors employed in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Plasmid</th>
+      <th>Description</th>
+      <th>Fragment boundaries (restriction sites)</th>
+      <th>Purification</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Myc-Spir1-FL</td>
+      <td>pcDNA3-Myc-hs-Spir1</td>
+      <td>Myc-hs-Spir1</td>
+      <td>aa 2 - 757 (BamHI / SacI)</td>
+      <td></td>
+      <td>Co-IP</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-FL</td>
+      <td>pcDNA3-Myc-hs-Spir2</td>
+      <td>Myc-hs-Spir2</td>
+      <td>aa 2 - 714 (BamHI / HindIII)</td>
+      <td></td>
+      <td>Co-IP</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-KWM</td>
+      <td>pcDNA3-Myc-hs-Spir2- KIND-WH2-GTBM</td>
+      <td>Myc-hs-Spir2-KIND- WH2-GTBM</td>
+      <td>aa 2 - 437 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP, Transient expression</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-2-423</td>
+      <td>pcDNA3-Myc-hs- Spir2-2-423</td>
+      <td>Myc-hs-Spir2-aa2-423</td>
+      <td>aa 2 - 423 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-KW</td>
+      <td>pcDNA3-Myc-hs- Spir2-KIND-WH2</td>
+      <td>Myc-hs-Spir2- KIND-WH2</td>
+      <td>aa 2 - 410 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP, Transient expression</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-MSF</td>
+      <td>pcDNA3-Myc-hs- Spir2-GTBM-SB-FYVE</td>
+      <td>Myc-hs-Spir2-GTBM- SB-FYVE</td>
+      <td>aa 361/398 - 728 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP, Transient expression</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-411-714</td>
+      <td>pcDNA3-Myc-hs- Spir2-411-714</td>
+      <td>Myc-hs-Spir2- aa411-714</td>
+      <td>aa 411 - 714 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP</td>
+    </tr>
+    <tr>
+      <td>Myc-Spir2-SF</td>
+      <td>pcDNA3-Myc-hs- Spir2-SB-FYVE</td>
+      <td>Myc-hs-Spir2- SB-FYVE</td>
+      <td>aa 438 - 714 (BamHI / XhoI)</td>
+      <td></td>
+      <td>Co-IP, Transient expression</td>
+    </tr>
+    <tr>
+      <td>Strawberry- Spir2-MSF</td>
+      <td>pmStrawberry-C1-hs- Spir2-GTBM-SB-FYVE</td>
+      <td>mStrawberry-hs- Spir2-GTBM-SB-FYVE</td>
+      <td>aa 361 - 714 (EcoRI / KpnI)</td>
+      <td></td>
+      <td>Transient expression, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>Strawberry- Spir2-SF</td>
+      <td>pmStrawberry-C2- hs-Spir2-SB-FYVE</td>
+      <td>mStrawberry- hs-Spir2-SB-FYVE</td>
+      <td>aa 438 - 714 (XhoI / BamHI)</td>
+      <td></td>
+      <td>Transient expression, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>Strawberry- Spir2-MSF-LALA</td>
+      <td>pmStrawberry-C1- hs-Spir2-GTBM- SB-FYVE-LALA</td>
+      <td>mStrawberry-hs- Spir2-GTBM-SB- FYVE-L408A,L409A</td>
+      <td>aa 361 - 714 (EcoRI / XbaI)</td>
+      <td></td>
+      <td>Transient expression, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>GST-Spir2-MSF</td>
+      <td>pGex-4T3-hs-Spir2- GTBM-SB-FYVE</td>
+      <td>GST-hs-Spir2- GTBM-SB-FYVE</td>
+      <td>aa 361 - 714 (BamHI / XhoI)</td>
+      <td>GSH-Sepharose 4B, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>His-mCherry- Spir2-linker</td>
+      <td>pProEx-HTb-mCherry- hs-Spir2-linker</td>
+      <td>His6-mCherry- hs-Spir2-linker</td>
+      <td>aa 361 - 519 (XhoI / HindIII)</td>
+      <td>Ni-NTA, Superdex 200</td>
+      <td>GST-Pulldown, Binding assays</td>
+    </tr>
+    <tr>
+      <td>His-mCherry- Spir2-linker-LALA</td>
+      <td>pProEx-HTb-mCherry- hs-Spir2-linker-LALA</td>
+      <td>His6-mCherry-hs-Spir2- linker-L408A,L409A</td>
+      <td>aa 361-519 (mutagenesis)</td>
+      <td>Ni-NTA, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>Spir2 / Fluorescein- Spir2 peptide</td>
+      <td></td>
+      <td></td>
+      <td>aa 401-427</td>
+      <td>purchased from GenScript</td>
+      <td>Crystallization, Fluoresc. anisotropy</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVa-D-FL</td>
+      <td>provided by Bruno Goud</td>
+      <td>Lindsay et al., 2013</td>
+      <td></td>
+      <td></td>
+      <td>GST-Pulldown, Transient expression</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVa-D-QR</td>
+      <td>provided by Bruno Goud</td>
+      <td>Lindsay et al., 2013</td>
+      <td></td>
+      <td></td>
+      <td>GST-Pulldown, Transient expression</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVa-F-QR</td>
+      <td>provided by Bruno Goud</td>
+      <td>Lindsay et al., 2013</td>
+      <td></td>
+      <td></td>
+      <td>Transient expression</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVa- CC-GTD</td>
+      <td>peGFP-C2- mm-MyoVa-CC-GTD</td>
+      <td>eGFP-mm-MyoVa- CC-GTD</td>
+      <td>aa 1260 - 1880 (EcoRI / SalI)</td>
+      <td></td>
+      <td>Transient expression</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVa-GTD</td>
+      <td>pAcGFP-C1- mm-MyoVa-GTD</td>
+      <td>AcGFP-mm- MyoVa-GTD</td>
+      <td>aa 1467 - 1880 (HindIII / SalI)</td>
+      <td></td>
+      <td>Co-IP, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>Strawberry- MyoVa-GTD</td>
+      <td>pmStrawberry-C1- mm-MyoVa-GTD</td>
+      <td>mStrawberry-mm- MyoVa-GTD</td>
+      <td>aa 1467 - 1880 (HindIII / SalI)</td>
+      <td></td>
+      <td>Transient expression, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>GST-MyoVa-GTD</td>
+      <td>pGex-4T1-NTEV- mm-MyoVa-GTD</td>
+      <td>GST-mm-MyoVa-GTD</td>
+      <td>aa 1467 - 1880 (HindIII / SalI)</td>
+      <td>GSH-Sepharose 4B, Superdex 200</td>
+      <td>GST-Pulldown, Binding assays</td>
+    </tr>
+    <tr>
+      <td>MyoVa-GTD</td>
+      <td>pProEx-HTb-hs- MyoVa-GTD</td>
+      <td>hs-MyoVa-GTD</td>
+      <td>aa 1461 - 1853 (BamHI / XhoI)</td>
+      <td>HisTrap, TEV, Superdex 200</td>
+      <td>Crystallization, GST- Pulldown, Anisotropy</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVb- CC-GTD</td>
+      <td>pAcGFP-C1- hs-MyoVb-CC-GTD</td>
+      <td>AcGFP-hs- MyoVb-CC-GTD</td>
+      <td>aa 904 - 1848 (HindIII / SalI)</td>
+      <td></td>
+      <td>Co-IP</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVb-GTD</td>
+      <td>pAcGFP-C1- hs-MyoVb-GTD</td>
+      <td>AcGFP-hs- MyoVb-GTD</td>
+      <td>aa 1467 - 1848 (HindIII / SalI)</td>
+      <td></td>
+      <td>Co-IP, FLIM-FRET, Transient expression</td>
+    </tr>
+    <tr>
+      <td>GFP-MyoVb-GTD- Q1748R</td>
+      <td>pAcGFP-C1-hs- MyoVb-GTD-Q1748R</td>
+      <td>AcGFP-hs-MyoVb- GTD-Q1748R</td>
+      <td>aa 1467 - 1848 (mutagenesis)</td>
+      <td></td>
+      <td>Transient expression</td>
+    </tr>
+    <tr>
+      <td>GST-MyoVb-GTD</td>
+      <td>pGex-4T1-NTEV- hs-MyoVb-GTD</td>
+      <td>GST-hs-MyoVb-GTD</td>
+      <td>aa 1467 - 1848 (BamHI / XhoI)</td>
+      <td>GSH-Sepharose 4B, Superdex 200</td>
+      <td>GST-Pulldown, Binding assays</td>
+    </tr>
+    <tr>
+      <td>MyoVb-GTD</td>
+      <td>pProEx-HTb-hs- MyoVb-GTD</td>
+      <td>hs-MyoVb-GTD</td>
+      <td>aa 1456 - 1848 (BamHI / XhoI)</td>
+      <td>HisTrap, TEV, Superdex G200</td>
+      <td>Crystallization, GST- Pulldown, Anisotropy</td>
+    </tr>
+    <tr>
+      <td>MyoVc-GTD</td>
+      <td>pProEx-HTb-hs- MyoVc-GTD</td>
+      <td>hs-MyoVc-GTD</td>
+      <td>aa 1350 - 1742 (BamHI / XhoI)</td>
+      <td>HisTrap, TEV, Superdex 200</td>
+      <td>Microscale thermophoresis</td>
+    </tr>
+    <tr>
+      <td>Strawberry- Rab11a</td>
+      <td>pmStrawberry-C1- mm-Rab11a</td>
+      <td>mStrawberry- mm-Rab11a</td>
+      <td>aa 2 - 216 (EcoRI / BamHI)</td>
+      <td></td>
+      <td>Transient expression</td>
+    </tr>
+    <tr>
+      <td>GST-Rab11a-Q70L</td>
+      <td>pGex-4T1-NTEV- cl-Rab11a-Q70L</td>
+      <td>GST-cl-Rab11a-Q70L</td>
+      <td>aa 1 - 216 (EcoRI / EcoRI)</td>
+      <td>GSH-Sepharose 4B, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>Rab11a</td>
+      <td>pET28-rTEV- hs-Rab11a</td>
+      <td>hs-Rab11a</td>
+      <td>aa 1 - 177 (NcoI / EcoRI)</td>
+      <td>HisTrap, TEV, Superdex 200</td>
+      <td>Crystallization, SPR</td>
+    </tr>
+    <tr>
+      <td>Rab11a-Q70L</td>
+      <td>pET28-rTEV- hs-Rab11a-Q70L</td>
+      <td>hs-Rab11a-Q70L</td>
+      <td>aa 1 - 173 (NcoI / EcoRI)</td>
+      <td>HisTrap, TEV, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>Strawberry-FMN2- FH2-FSI</td>
+      <td>pmStrawberry-C2- mm-FMN2-FH2-FSI</td>
+      <td>mStrawberry-mm- FMN2-FH2-FSI</td>
+      <td>aa 1135 - 1578 (BamHI / XhoI)</td>
+      <td></td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>GST-FMN2-eFSI</td>
+      <td>pGex-4T1-NTEV- mm-FMN2-eFSI</td>
+      <td>GST-mm-FMN2-eFSI</td>
+      <td>aa 1523 - 1578 (BamHI / XhoI)</td>
+      <td>GSH-Sepharose FF, Superdex 200</td>
+      <td>GST-Pulldown from brain lysates</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>pAcGFP-C1</td>
+      <td>AcGFP</td>
+      <td></td>
+      <td></td>
+      <td>Co-IP, FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>GFP-linker- Strawberry</td>
+      <td>pAcGFP-C1-linker- mStrawberry</td>
+      <td>AcGFP-linker(A-S- G-A-G)-mStrawberry</td>
+      <td>aa 1 - 236 (BspEI / BglII)</td>
+      <td></td>
+      <td>FLIM-FRET</td>
+    </tr>
+    <tr>
+      <td>mCherry</td>
+      <td>pProEx-HTb-mCherry</td>
+      <td>His6-mCherry</td>
+      <td>aa 1 - 236 (BamHI / XhoI)</td>
+      <td>Ni-NTA, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+    <tr>
+      <td>GST</td>
+      <td>pGex-4T1-NTEV</td>
+      <td>GST</td>
+      <td></td>
+      <td>GSH-Sepharose 4B, Superdex 200</td>
+      <td>GST-Pulldown</td>
+    </tr>
+  </tbody>
+</table>
+
+### Recombinant protein production for structural studies and interaction measurements
 
 Recombinant GST-MyoVa-GTD, GST-MyoVb-GTD, GST-Spir-2-GTBM-SB-FYVE, GST-Rab11a-Q70L, GST-FMN2-eFSI and His6-mCherry-tagged Spir-2-linker proteins were expressed in Escherichia coli Rosetta or Rosetta (DE3) pLysS (Merck Millipore, Novagen, Darmstadt, Germany). Bacteria were cultured in LB medium (100 mg/l ampicillin, 30 mg/l chloramphenicol) at 37°C until an A600 nm of OD 0.6–0.8. Protein expression was induced by 0.1 mM Isopropyl-β-D-thiogalactopyranoside (IPTG; Sigma-Aldrich, Taufkirchen, Germany) and continued at 16–20°C for 18–20 hr. Bacteria were harvested and lysed by ultra-sonication. Soluble proteins were purified by an ÄKTApurifier system (GE Healthcare Life Sciences, Freiburg, Germany) using GSH-Sepharose 4B (GE Healthcare Life Sciences) or Ni-NTA beads (Qiagen, Hilden, Germany) and size exclusion chromatography (High Load 16/60 Superdex 200; GE Healthcare Life Sciences). Proteins were concentrated by ultrafiltration using Amicon Ultra centrifugal filters (Merck Millipore, Darmstadt, Germany) with respective molecular weight cut offs. The final protein purity was estimated by SDS-PAGE and Coomassie staining.
 
@@ -193,13 +625,13 @@ Bacterial cells were grown at 37°C in 2YT medium induced at an A600 nm of OD 0.
 
 The synthetic Spir-2-401-427 fragment (QRPRPRVLLKAPTLAEMEEMNTSEEEE) and its N-terminally fluorescein labeled analog: (5-FAM-Ahx-QRPRPRVLLKAPTLAEMEEMNTSEEEE) were purchased from GenScript (Piscataway, NJ, USA).
 
-## Crystallization, data collection, structure determination
+### Crystallization, data collection, structure determination
 
 The crystallization experiments were performed at 17°C by vapor diffusion in hanging drops. The MyoVa-GTD:Rab11a complex was obtained by mixing the purified MyoVa-GTD and Rab11a in a 1:1 molar ratio to a 12 mg/ml final concentration supplemented with 2 mM beryllium fluoride. Crystals of the MyoVa-GTD:Rab11a complex were grown in 7% (w/v) PEG-8000, 50 mM Bicine, 50 mM Tris, 30 mM NaCl, 20% (v/v) ethylene glycol. The MyoVa-GTD:Spir-2 complex, obtained by mixing MyoVa-GTD with Spir-2-401-427 peptide in 1:3 molar ratio at final protein concentration 20 mg/ml, was crystallized in 50 mM Hepes, 50 mM MOPS, 10% (w/v) PEG 1000, 10% (w/v) PEG 3350, 10% (v/v) MPD. Native data sets were collected to 1.8 Å and 2 Å resolution for MyoVa-GTD:Spir2 complex and MyoVa-GTD:Rab11a complex crystals respectively at Soleil synchrotron PX1 beamline.
 
 The crystals were flash frozen in liquid nitrogen. The X-ray diffraction data were indexed, integrated, and scaled with the XDS program suite (Kabsch, 2010). The structures were solved by molecular replacement with Molrep (Vagin and Teplyakov, 2010) using MyoVa-GTD structure (PDB ID 4LX1) as a search model. The models were iteratively manually rebuilt with COOT (RRID: SCR_014222) (Emsley and Cowtan, 2004), and refined with BUSTER (Bricogne et al., 2011) and PHENIX (RRID: SCR_014224) (Adams et al., 2010). The data collection and refinement statistics are summarized in Table 1.
 
-## Analytical gel filtration
+### Analytical gel filtration
 
 Complex formations were analyzed by analytical gel-filtration using Superdex 200 10/30 Increase column (GE Healthcare Life Sciences) and UV light absorbance at 280 nm and 260 nm and Visible light absorbance at 587 nm at flow rate of 0.75 ml/min in 50 mM Tris pH 8.0, 150 mM NaCl, 2 mM MgCl2, 2 mM TCEP buffer. Fractions of 500 µl were collected and analyzed by SDS-PAGE.
 
@@ -207,74 +639,94 @@ A 100 µl sample of His6-Rab11a-1-173-Q70L at 6 mg/ml, or of MyoVa-GTD at 5 mg/m
 
 His6-mCherry-Spir-2-linker protein was eluted from the gel-filtration column in a single peak but it migrated on SDS-PAGE as three bands with the major band size corresponding to a higher molecular weight than expected (theoretical molecular weight 47 kDa, apparent molecular weight 55 kDa). The purified His6-mCherry-Spir-2-linker protein was analyzed by peptide mass fingerprinting using LC-MS/MS identification approach at Curie Institute Protein Mass Spectrometry Platform. All three bands were identified as His6-mCherry-Spir-2-linker protein or its fragments. The 55 kDa SDS-PAGE His6-mCherry-Spir-2-linker band corresponded to a full-length construct with 65% peptide coverage evenly distributed over the protein sequence, the minor 45 kDa and 12 kDa band species corresponded to His6-mCherry-Spir-2-linker degradation products.
 
-## Cell culture
+### Cell culture
 
 HEK293 (ATCC Cat# CRL-1573, RRID: CVCL_0045) and HeLa cells (ATCC Cat# CCL-2, RRID: CVCL_0030) were cultured in Dulbecco’s Modified Eagle’s Medium (DMEM; ThermoFisher) supplemented with 10% (v/v) fetal calf serum (FCSIII; GE Healthcare Life Sciences, HyClone), 2 mM L-glutamine, penicillin (100 units/ml) and streptomycin (100 µg/ml) at 37°C, 5% CO2, 95% humidity and were passaged regularly at 80% confluency. Transfections with plasmid DNA were performed using Lipofectamine reagent (ThermoFisher) according to manufacturer’s recommendation.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 HEK293 cells were transfected with expression vectors encoding Myc-tagged Spir proteins and GFP-tagged myosin Va and myosin Vb fragments. 48 hr post transfection, cells were lysed in lysis buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM MgCl2, 10% (v/v) glycerol, 0.1% (v/v) Nonidet P-40, 1 mM Phenylmethylsulfonylfluorid (PMSF; Sigma-Aldrich), protease inhibitor cocktail (complete mini, EDTA-free; Roche, Penzberg, Germany)) and centrifuged at 20,000 x g, 4°C, 20 min to remove insoluble debris. The clarified supernatant was incubated with 4 µg anti-c-Myc antibody (9E10, mouse monoclonal; Santa Cruz Biotechnology; RRID: AB_627268) for 1 hr on ice. Subsequently, 40 µl Protein G-Agarose beads (1:1 suspension; Roche) were added and incubated for 2 hr at 4°C on a rotating wheel. Beads were washed with pulldown buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM MgCl2, 10% (v/v) glycerol, 0.1% (v/v) Nonidet P-40). Bound proteins were eluted with 1x Laemmli buffer and denatured for 10 min at 95°C, then analyzed by immunoblotting.
 
-## GST-pulldown from HEK293 lysates
+### GST-pulldown from HEK293 lysates
 
 HEK293 cells were co-transfected with expression vectors encoding Myc-Spir-2-FL, mStrawberry-FMN2-FH2-FSI, eGFP-MyoVa-D-FL and eGFP-MyoVa-D-Q1753R, respectively. 24 hr post transfection, cells were lysed in lysis buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM MgCl2, 10% (v/v) glycerol, 0.1% (v/v) Nonidet P-40, 1 mM PMSF, protease inhibitor cocktail) and centrifuged at 20,000 x g, 4°C, 20 min to remove insoluble debris. For GST-pulldown assays 65 µg GST-Rab11a-Q70L protein (25 µg GST control) was coupled to GSH-Sepharose 4B beads (1:1 suspension) for 1 hr, 4°C on a rotating wheel. Beads were washed twice with pulldown buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM MgCl2, 10% (v/v) glycerol, 0.1% (v/v) Nonidet P-40) and subsequently incubated with the cell lysates for 2 hr at 4°C on a rotating wheel. Beads were washed four times with pulldown buffer and bound proteins were eluted with 1x Laemmli buffer and denatured at 95°C for 10 min, then were analyzed by immunoblotting.
 
-## GST-pulldown from mouse brain
+### GST-pulldown from mouse brain
 
 Wild-type C57BL/6 (Jackson Laboratory, Bar Harbor, ME, USA) mice were killed by cervical dislocation. The brain was isolated immediately, washed in cold PBS and lysed in lysis buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM MgCl2, 10% (v/v) glycerol, 0.1% (v/v) Nonidet P-40, 0.1 M NaF, 1 mM Na3VO4, 1 mM PMSF, protease inhibitor cocktail) using a TissueRuptor (Qiagen). Following incubation on ice for 45 min, the lysate was centrifuged at 20,000 x g, 4°C until the supernatant was clear. Brain lysates were incubated with GSH-Sepharose 4B beads, loaded with 50 µg GST-fusion proteins as indicated, for 2.5 hr at 4°C on a rotating wheel. Beads were washed five times with pulldown buffer and bound proteins were eluted by 1x Laemmli buffer and denatured at 95°C for 10 min. Pulled proteins were analyzed by immunoblotting.
 
-## GST-pulldown experiments with purified proteins
+### GST-pulldown experiments with purified proteins
 
 For GST-pulldown assays, 50 µg of GST-fusion protein was coupled to GSH-Sepharose 4B beads (1:1 suspension) for 1 hr at 4°C on a rotating wheel. Beads were washed twice with pulldown buffer and subsequently incubated with 20 µg His6-mCherry-fusion peptides for 2 hr, 4°C on a rotating wheel. In order to identify the tripartite Spir-2:MyoVa:Rab11a complex, 65 µg GST-Spir-2-GTBM-SB-FYVE was coupled to beads. Subsequently, beads were incubated with 40 µg MyoVa-GTD and 35 µg Rab11a-Q70L simultaneously for 2 hr. Beads were washed four times with pulldown buffer and bound proteins were eluted by 1x Laemmli buffer and denatured at 95°C for 10 min. Pulled proteins were analyzed by immunoblotting.
 
-## Quantitative GST-pulldown assays
+### Quantitative GST-pulldown assays
 
-GST-pulldown assays were performed as described above with increasing concentrations of GST-MyoVa/b-GTD fusion proteins and 100 nM His6-mCherry-Spir-2-linker peptide in SPECS buffer (1x PBS, 50 mM NaCl). Beads were pelleted and the supernatant was centrifuged for 10 min at 20,000 x g to remove potential debris that could disturb the fluorescence measurement. Each protein sample was allowed to adapt to 20°C for 15 min in a water bath. The concentration-dependent binding of MyoVa/b-GTD to the Spir-2-linker was determined by fluorospectrometric analysis using FluoroMax-4 Spectrofluorometer (Horiba Jobin Yvon, Bensheim, Germany). The mCherry red fluorescent protein was excited at 548 nm and the emission at 610 nm was recorded (emission maximum). The data were calculated as 'fraction bound' (y) compared to the initial fluorescence signal without any GST-MyoV-GTD proteiny=1−y0−ycy0
+GST-pulldown assays were performed as described above with increasing concentrations of GST-MyoVa/b-GTD fusion proteins and 100 nM His6-mCherry-Spir-2-linker peptide in SPECS buffer (1x PBS, 50 mM NaCl). Beads were pelleted and the supernatant was centrifuged for 10 min at 20,000 x g to remove potential debris that could disturb the fluorescence measurement. Each protein sample was allowed to adapt to 20°C for 15 min in a water bath. The concentration-dependent binding of MyoVa/b-GTD to the Spir-2-linker was determined by fluorospectrometric analysis using FluoroMax-4 Spectrofluorometer (Horiba Jobin Yvon, Bensheim, Germany). The mCherry red fluorescent protein was excited at 548 nm and the emission at 610 nm was recorded (emission maximum). The data were calculated as 'fraction bound' (y) compared to the initial fluorescence signal without any GST-MyoV-GTD protein
 
-With y0 is fluorescence signal without GST-MyoV-GTD and yc is signal at corresponding GST-MyoV-GTD concentration.
+$$
+y=1−\frac{y_{0}−y_{c}}{y_{0}}
+$$
 
-Furthermore, data were analyzed in SigmaPlot 12.3 software (Systat Software, Erkrath, Germany). Equilibrium binding data were fitted according to the equationy=Bmax⋅xKd+x
+With $y_{0}$ is fluorescence signal without GST-MyoV-GTD and $y_{c}$ is signal at corresponding GST-MyoV-GTD concentration.
 
-assuming a single binding site and with Bmax representing the maximal amplitude, Kd representing the equilibrium constant and x representing the concentration of GST-MyoV-GTD.
+Furthermore, data were analyzed in SigmaPlot 12.3 software (Systat Software, Erkrath, Germany). Equilibrium binding data were fitted according to the equation
+
+$$
+y=\frac{B_{max}⋅x}{K_{d}+x}
+$$
+
+assuming a single binding site and with $B_{max}$ representing the maximal amplitude, $K_{d}$ representing the equilibrium constant and $x$ representing the concentration of GST-MyoV-GTD.
 
 The binding curves saturated at 40% since the His6-mCherry-Spir-2-linker protein preparation contained C-terminal incomplete protein products, which are still fluorescent but cannot interact with MyoV-GTD. The Spir-2-linker region is predicted to be highly unstructured, which may be the reason for the relative instability of the recombinant His6-mCherry-Spir-2-linker fusion protein.
 
-## Surface plasmon resonance binding assay
+### Surface plasmon resonance binding assay
 
 The assays were carried out at 25°C in buffer (50 mM Hepes pH 7.5, 100 mM NaCl, 2 mM MgCl2, 1 mM TCEP). 200–250 resonance units (RU; 1RU ≈ 1 pg × mm−2) of Rab11a-Q70L(GTP) or Rab11-wt(GDP) were captured through their His6-tag on the surface of a NTA sensorchip using a Biacore 2000 instrument (GE Healthcare Life Sciences). MyoVa-GTD or MyoVb-GTD (10 nM–5 µM) were then injected over the tethered Rabs for one minute at a flow rate of 50 ml/min. The surface was regenerated with a 2-min 0.3 M EDTA incubation and a 1-min 0.1% SDS wash. The real-time interaction profiles were double referenced using the Scrubber 2.0 software (BioLogic Software, Campbell, Australia), both the signals from a reference surface (with a non-relevant protein captured on NTA) and from blank experiments using buffer instead of MyoV-GTD were subtracted. The MyoV-GTD concentration-dependence of the steady-state SPR signals was then analyzed to determine the dissociation equilibrium constants (Kd) of the different complexes using the numerical integration algorithm software Biaevaluation 4.1. Each experiment (10 point 2-fold dilution concentration series each) was repeated in triplicate, yielding mean Kd values and standard errors (SEM).
 
-## Fluorescence anisotropy measurements
+### Fluorescence anisotropy measurements
 
-Fluorescence anisotropy measurements were performed on a PTI Quanta-Master QM4CW spectrofluorometer (PTI, Lawrenceville, NJ, USA) at 25°C using a 10 mm wide quartz cell. Bandwidths of excitation and emission monochromators were set respectively at 5 and 15 nm. Fluorescence anisotropy, expressed in millianisotropy units, was calculated according to the equationA=IVV−GIVHIVV+2GIVH
+Fluorescence anisotropy measurements were performed on a PTI Quanta-Master QM4CW spectrofluorometer (PTI, Lawrenceville, NJ, USA) at 25°C using a 10 mm wide quartz cell. Bandwidths of excitation and emission monochromators were set respectively at 5 and 15 nm. Fluorescence anisotropy, expressed in millianisotropy units, was calculated according to the equation
 
-with A is anisotropy, G = IHV/IHH is a correction factor for wavelength-dependent distortion, and I is the fluorescence intensity component. Anisotropy values were averaged from 30 different acquisitions. The cell was charged with 1 µM of fluorescein labeled Spir-2-401-427 peptide in a final volume of 1 ml in buffer (100 mM Tris-HCl pH 8.0, 150 mM NaCl, 2 mM MgCl2, 2 mM TCEP, 5% (v/v) glycerol) and titrated with MyoVa-GTD or MyoVb-GTD (50 nM–5 µM). The binding isotherms were fitted to obtain the equilibrium dissociation constants Kd and standard errors, by using the Origin 2015 software that implements Levenberg Marquardt iterative minimization algorithms, using the equationy=F0+Fm−F02P(P+x+Kd−(P+x+Kd)2−4Px)
+$$
+A=\frac{IVV−GIVH}{IVV+2GIVH}
+$$
 
-with y represents the fluorescence anisotropy, x the concentration of MyoV-GTD, F0 the initial anisotropy, Fm the maximum anisotropy, and P the peptide concentration. Experiments were repeated twice with two different protein preparations.
+with $A$ is anisotropy, $G = IHV/IHH$ is a correction factor for wavelength-dependent distortion, and $I$ is the fluorescence intensity component. Anisotropy values were averaged from 30 different acquisitions. The cell was charged with 1 µM of fluorescein labeled Spir-2-401-427 peptide in a final volume of 1 ml in buffer (100 mM Tris-HCl pH 8.0, 150 mM NaCl, 2 mM MgCl2, 2 mM TCEP, 5% (v/v) glycerol) and titrated with MyoVa-GTD or MyoVb-GTD (50 nM–5 µM). The binding isotherms were fitted to obtain the equilibrium dissociation constants Kd and standard errors, by using the Origin 2015 software that implements Levenberg Marquardt iterative minimization algorithms, using the equation
 
-## Microscale thermophoresis measurements (MST)
+$$
+y=F_{0}+\frac{F_{m}−F_{0}}{2P}(P+x+K_{d}−\sqrt{(P+x+K_{d})^{2}−4Px})
+$$
+
+with $y$ represents the fluorescence anisotropy, $x$ the concentration of MyoV-GTD, $F_{0}$ the initial anisotropy, $F_{m}$ the maximum anisotropy, and $P$ the peptide concentration. Experiments were repeated twice with two different protein preparations.
+
+### Microscale thermophoresis measurements (MST)
 
 MST experiments were performed on a Monolith NT.115 system (NanoTemper Technologies, München, Germany) using 5% LED and 30% IR-laser power at 21.5°C. Laser on and off times were set at 30 s and 5 s, respectively. Fluorescein labeled Spir-2 peptide was synthesized by Genscript, the peptide was dissolved in PBS with 0.005% Tween-20 and diluted to 1 μM concentration. A two-fold dilution series was prepared for the MyoVc-GTD in the interaction buffer (50 mM Tris pH 8.0, 250 mM NaCl, 2 mM MgCl2, 2 mM TCEP, 5% (v/v) glycerol) and each dilution point was transferred to the Fluorescein-Spir-2 solution. The final concentrations of MyoVc-GTD ranged from 97 μM to 2.96 nM, the final concentration of the labeled peptide was 500 nM. Samples were filled into premium capillaries (NanoTemper Technologies) for measurements. The experiments were performed with three independent replicates. The affinity was quantified by analyzing the change in normalized fluorescence as a function of the concentration of the titrated peptide using the NTAnalysis software provided by the manufacturer.
 
-## Immunoblotting
+### Immunoblotting
 
 Proteins were separated by SDS-PAGE and analyzed by Western blotting using anti-GFP (Living Colors A.v. peptide antibody, rabbit polyclonal, 1 µg/ml; Clontech; RRID: AB_2313653), anti-RFP (Living Colors DsRed rabbit polyclonal antibody, 0.5 µg/ml; Clontech; RRID: AB_10015246), anti-c-Myc (9E10, mouse monoclonal, 0.4 µg/ml; Santa Cruz Biotechnology; RRID: AB_627268), anti-Spir-1 (SA2133, rabbit polyclonal, 0.5 µg/mL (Schumacher et al., 2004); RRID: AB_2619680), anti Rab11 (D4F5 XP, rabbit monoclonal, 1:1000; Cell Signaling Technology, #5589; RRID: AB_10693925) and anti-myosin Va (rabbit polyclonal, 1:750; Cell Signaling Techology, #3402; RRID: AB_2148475) antibodies, horseradish peroxidase linked anti-rabbit IgG (from donkey; RRID: AB_772206) and anti-mouse IgG (from sheep; RRID: AB_772210) secondary antibodies (1:5000, GE Healthcare). Proteins were visualized by chemiluminescence (Luminata Forte Western HRP substrate; Merck Millipore). The signal was recorded with an Image Quant LAS4000 system (GE Healthcare Life Sciences). Recorded images were processed in Adobe Photoshop and assembled in Adobe Illustrator.
 
-## Immunostaining
+### Immunostaining
 
 HeLa cells were seeded on microscope cover glasses and transfected with Myc-epitope-tagged Spir-2 proteins and fluorescently-tagged MyoV and Rab11 proteins as described above. Cells were fixed with paraformaldehyde (3.7% in 1x PBS) for 20 min at 4°C and subsequently permeabilized using 0.2% Triton X-100 (in 1x PBS) for 3.5 min, room temperature. Cells were incubated with anti-c-Myc antibody (9E10, mouse monoclonal, 2 µg/ml, Santa Cruz Biotechnology; RRID: AB_627268) for 1 hr at room temperature and conjugated anti-mouse secondary antibodies (Cy5; from donkey, 3.25 µg/ml, Dianova (RRID: AB_2340820) and TRITC; from donkey, 3.125 µg/ml, Dianova (RRID: AB_2340767)) for 1 hr at room temperature avoiding exposure to light. Finally, cells were mounted on microscope slides with Mowiol and analyzed with a Leica AF6000LX fluorescence microscope, equipped with a Leica HCX PL APO 63x/1.3 GLYC objective and a Leica DFC350 FX digital camera (1392 × 1040 pixels, 6.45 × 6.45 µm pixel size). 3D stacks were recorded and processed with the Leica deconvolution software module. In case of the MyoVa autoregulation/activation experiments, we quantified the MyoVa expression levels. High expression of GFP-MyoVa-D-FL induced vesicular localization, whereas an even cytoplasmic distribution was observed at low expression levels. In order to clearly distinguish between vesicular and cytoplasmic MyoVa localization, we imaged either high or low expressing cells and determined the sum of pixel gray values per cell as a measure for the MyoVa expression levels. Based on that, we only used cells for the autoregulation analysis having a sum of pixel gray values less than 20 × 106 for the expression of GFP-MyoVa-D-FL. Images were recorded using the Leica LASX software and further processed with Adobe Photoshop and subsequently assembled with Adobe Illustrator.
 
-## Time-correlated single-photon counting fluorescence lifetime microscopy (TCSPC-FLIM)
+### Time-correlated single-photon counting fluorescence lifetime microscopy (TCSPC-FLIM)
 
 Fluorescence lifetimes were imaged with a commercial FLIM upgrade kit (PicoQuant, Berlin, Germany) attached to a confocal microscope LSM 880 (Zeiss, Jena, Germany) using a 440 nm pulsed laser diode at 20 MHz repetition rate. The fluorescence was detected using the Big.2-unit (Zeiss) fed into the TimeHarp 260 photon counting board (PicoQuant). Time series of FLIM images were recorded until bright pixels accumulated at least 1000 photon events. Before pixel wise fitting (Symphotime, 64-bit, version 2, PicoQuant), a region of interest was defined manually by setting a threshold for selecting pixels of high intensity (100–300 photon events per pixel). Fitting employed an exponential two-component model to 20 ns of the decay without binning. Lifetime images contained the color coded, intensity weighted average in each pixel.
 
-For an improved automated selection of vesicular structures in cells, we followed a previously established semi-automated approach (Austen et al., 2015). Briefly, confocal imaging was done using a Leica TCS SP5 X confocal microscope equipped with a pulsed white light laser (WLL, 80 MHz repetition rate; NKT Photonics, Birkerod, Denmark), a FLIM X16 TCSPC detector (LaVision Biotec, Bielefeld, Germany) and a 63x water objective (HCX PL APO CS, NA = 1.2). A band-pass filter 514/30 (AHF Analysentechnik, Tübingen, Germany) was used to block acceptor emitted photons. Data analysis includes manual selection of the cytoplasmic regions followed by a threshold algorithm, segmenting high intensity regions based on spatial signal changes at varying levels. The custom-written MATLAB program (Austen et al., 2015) calculates the average FRET efficiency E according toE = 1−τDAτD
+For an improved automated selection of vesicular structures in cells, we followed a previously established semi-automated approach (Austen et al., 2015). Briefly, confocal imaging was done using a Leica TCS SP5 X confocal microscope equipped with a pulsed white light laser (WLL, 80 MHz repetition rate; NKT Photonics, Birkerod, Denmark), a FLIM X16 TCSPC detector (LaVision Biotec, Bielefeld, Germany) and a 63x water objective (HCX PL APO CS, NA = 1.2). A band-pass filter 514/30 (AHF Analysentechnik, Tübingen, Germany) was used to block acceptor emitted photons. Data analysis includes manual selection of the cytoplasmic regions followed by a threshold algorithm, segmenting high intensity regions based on spatial signal changes at varying levels. The custom-written MATLAB program (Austen et al., 2015) calculates the average FRET efficiency E according to
 
-with τD as the mean donor lifetime τDA as mean donor lifetime in presence of an acceptor fluorophore. E represents the entire ROI of a single cell. Here, fitting employed an exponential one-component fit to 10 ns of decay; the first 0.5 ns were omitted due to the instrumental response. Measurements on both instruments, as well as the use of different ROI settings (e.g. cytoplasm with or without threshold excluded regions) reproduced consistent results for three independent experiments.
+$$
+E = 1−\frac{\tau_{DA}}{\tau_{D}}
+$$
 
-## Colocalization analysis
+with τD as the mean donor lifetime τDA as mean donor lifetime in presence of an acceptor fluorophore. $E$ represents the entire ROI of a single cell. Here, fitting employed an exponential one-component fit to 10 ns of decay; the first 0.5 ns were omitted due to the instrumental response. Measurements on both instruments, as well as the use of different ROI settings (e.g. cytoplasm with or without threshold excluded regions) reproduced consistent results for three independent experiments.
+
+### Colocalization analysis
 
 The extent of colocalization of Rab11, Spir-2 and MyoVa was analyzed using the ImageJ (V2.0.0) plug-in Coloc 2. Here, the colocalization rate is indicated by the Pearson’s Correlation Coefficient (PCC) as a statistical measure to unravel a linear correlation between the intensity of different fluorescent signals. A PCC value of 1 indicates a perfect colocalization, 0 indicates a random colocalization and a PCC value of -1 indicates a mutually exclusive localization of the analyzed signals. To take the noise of each image into account and to gain an objective evaluation of PCC significance, a Costes significance test was performed. Therefore, the pixels in one image were scrambled randomly and the correlation with the other (unscrambled) image was measured. Significance regarding correlation was observed when at least 95% of randomized images show a PCC less than that of the original image, meaning that the probability for the measured correlation of two colors is significantly greater than the correlation of random overlap (Costes et al., 2004; Pompey et al., 2013). Statistical data analysis was performed using SPSS 22 (IBM, Armonk, NY, USA).
 
-## Accession numbers
+### Accession numbers
 
 The atomic coordinates and structure factors have been deposited in the Protein Data Bank, www.pdb.org, with accession numbers 5JCY (MyoVa-GTD:Spir-2-GTBM), 5JCZ (MyoVa-GTD:Rab11), see Table 1.

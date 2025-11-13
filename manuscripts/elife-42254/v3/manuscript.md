@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.42254.001 Much of the work done by faculty at both public and private universities has significant public dimensions: it is often paid for by public funds; it is often aimed at serving the public good; and it is often subject to public evaluation. To understand how the public dimensions of faculty work are valued, we analyzed review, promotion, and tenure documents from a representative sample of 129 universities in the US and Canada. Terms and concepts related to public and community are mentioned in a large portion of documents, but mostly in ways that relate to service, which is an undervalued aspect of academic careers. Moreover, the documents make significant mention of traditional research outputs and citation-based metrics: however, such outputs and metrics reward faculty work targeted to academics, and often disregard the public dimensions. Institutions that seek to embody their public mission could therefore work towards changing how faculty work is assessed and incentivized.
+Much of the work done by faculty at both public and private universities has significant public dimensions: it is often paid for by public funds; it is often aimed at serving the public good; and it is often subject to public evaluation. To understand how the public dimensions of faculty work are valued, we analyzed review, promotion, and tenure documents from a representative sample of 129 universities in the US and Canada. Terms and concepts related to public and community are mentioned in a large portion of documents, but mostly in ways that relate to service, which is an undervalued aspect of academic careers. Moreover, the documents make significant mention of traditional research outputs and citation-based metrics: however, such outputs and metrics reward faculty work targeted to academics, and often disregard the public dimensions. Institutions that seek to embody their public mission could therefore work towards changing how faculty work is assessed and incentivized.
 
 ## Introduction
 
@@ -43,13 +43,112 @@ Although previous work provides a sense of how the dimensions of publicness outl
 
 ## Materials and methods
 
-## Selection of sample
+### Selection of sample
 
 We began by creating a stratified random sample based on the 2015 edition of the Carnegie Classification of Institutions of Higher Education for US-based institutions, with an eye to have representation of institutions identified as: 1) doctoral universities (i.e., research-focused), which we refer to as R-type institutions; 2) master's colleges and universities, which we refer to as M-type institutions; and 3) baccalaureate colleges, which we refer to as B-type. Each of these categories is made up of multiple subcategories. R-type institutions are subdivided into those with highest research activity, higher research activity and moderate research activity (R1, R2 and R3); the M-type institutions are subdivided into larger programs, medium programs and small programs (M1, M2 and M3); and the B-type institutions are subdivided into those that are arts and science focused and those from diverse fields (Bas and Bd). For Canadian-based institutions, we used the 2016 edition of the Maclean’s Rankings, which similarly classifies institutions into: 1) doctoral (R-type); 2) comprehensive (M-type); and 3) undergraduate (B-type). We aimed to have enough institutions in each of the three broad categories to have statistical power of .8, assuming a small effect size (.25 of a standard deviation), when broken down by discipline. A summary of the number of institutions in each category, the number that we included in our random stratified sample, and the number for which we were able to obtain documents can be found in Table 1.
 
+**Table 1.**
+ Sampling summary of universities from Canada and the United States.Overview of population of universities from the United States and Canada by type and sub-type, the number and percent randomly chosen for the stratified sample, and the number of institutions for which at least one relevant document was obtained.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Number in category</th>
+      <th>Number sampled</th>
+      <th>Percent sampled</th>
+      <th>Number with documents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">R-type</td>
+      <td>R1</td>
+      <td>115</td>
+      <td>17</td>
+      <td>15%</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>107</td>
+      <td>16</td>
+      <td>15%</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>113</td>
+      <td>17</td>
+      <td>15%</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>RCan</td>
+      <td>15</td>
+      <td>15</td>
+      <td>100%</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="4">M-type</td>
+      <td>M1</td>
+      <td>393</td>
+      <td>17</td>
+      <td>4%</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>298</td>
+      <td>12</td>
+      <td>4%</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>141</td>
+      <td>6</td>
+      <td>4%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>MCan</td>
+      <td>15</td>
+      <td>15</td>
+      <td>100%</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td rowspan="3">B-type</td>
+      <td>Bas</td>
+      <td>259</td>
+      <td>14</td>
+      <td>5%</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bd</td>
+      <td>324</td>
+      <td>17</td>
+      <td>5%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>BCan</td>
+      <td>19</td>
+      <td>19</td>
+      <td>100%</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+
 We collected documents that applied to the institution as a whole, and also those that applied to specific departments, schools or faculties, which we collectively refer to as academic units. We made a concerted effort to collect documents from academic units from a wide range of disciplines. While there is no single accepted classification system for fields of study, we opted to use the structure of fields and their subfields provided by the National Academies Taxonomy to group disciplines into three main areas: Life Sciences (LS); Physical Sciences and Mathematics (PSM); and Social Sciences and Humanities (SSH; National Academy of Sciences, 2006).
 
-## Collection of documents
+### Collection of documents
 
 We set out to collect documents from the institutions identified. In November 2016 we put out calls on social media and on several mailing lists related to issues of scholarly communications and librarianship, but when that method failed to yield many documents, we turned to a more proactive approach. Equipped with the randomly selected list of institutions, we searched the web for the documents. This method was especially fruitful for identifying documents about RPT that are set out by the institution, but not by individual academic units. For the latter, we searched for email addresses of faculty members of units at each of our target institutions by navigating from their university webpages to those of different faculties and their departments, making sure to look at departments from across the three fields. Given the variety of units, organization structures and naming conventions, our selection of which units to target was not perfectly systematic. It was impossible, for example, to target a specific unit by name across different institutions, since each university makes different decisions of whether to put a discipline within its own department, school or faculty (if it even has a unit to correspond with the discipline at all). Instead, we focused on the concept of an "academic unit" as any administrative unit within the university structure, and from those units listed on websites, our research assistant attempted to pick contacts across the three main field categories.
 
@@ -57,7 +156,7 @@ In the end, we sent at least 915 emails to faculty from a dedicated project acco
 
 As a result of this process over an almost year-long period, we obtained 864 documents from 129 universities and 381 units, of which 98 (25.7%) are from LS; 69 (18.1%) are from PSM; 187 (49.1%) are from SSH; and 27 (7.1%) are from multidisciplinary units that could not be classified under a single category. A large proportion of the documents collected are undated, but some have dates that go back as far as 2000 and as recent as the year of collection. To the best of our knowledge, these are the documents that the sender believed to be the most recent or applicable. While these documents correspond to the different types of universities and fields, the units are not spread out across all the universities evenly. We have at least one unit-level document from 60 of the 129 universities. We were told that documents did not exist at the academic unit-level by at least one faculty member at the remaining 69. In the majority of cases, we have four or fewer unit-level documents from each institution, but there are 10 instances in which we have more than 10 unit-level documents per institution (with a maximum of 45).
 
-## Identification of terms
+### Identification of terms
 
 We proceeded to load these documents into QSR International’s NVivo 12 qualitative data analysis software as two separate sets: the documents corresponding to university-level policies and those corresponding to different academic units. First, we created an NVivo "case" for each institution and academic unit, and we included in these "cases" the content of their respective documents. We then searched the documents for terms of interest, sometimes grouping several terms under a single concept, using various strategies as described in the research methodology notes found in the public dataset (Alperin et al., 2018). The mentions of each term or concept were included in an NVivo "node."
 
@@ -83,7 +182,7 @@ The data that support the findings of this study are available in the Harvard Da
 
 We began our analysis with the terms "public" and "community" to understand the degree to which the public is talked about, and to gain a sense of the context surrounding their inclusion in RPT documents. We then focused on several terms and groups of terms (i.e., concepts) that intersect with the notions of publicness identified above, starting with the concept of "public and community engagement," the presence of which would be indicative of incentives to work alongside the public in ways that more closely align research to the public’s needs. Given the importance assigned to research in the RPT process (Schimanski and Alperin, 2018), we then turned our attention to terms and concepts related to research publications and their assessment, such as "open access," "publication formats" and "metrics," all of which speak to the different aspects of publicness outlined above.
 
-## Context surrounding public and community
+### Context surrounding public and community
 
 In analyzing RPT documents for their inclusion of concepts related to the public and community, we found that 87% of institutions mention the term "community" in either the university level or academic unit guidelines, while 75% mention the term "public."
 
@@ -107,7 +206,7 @@ In the case of "community," it becomes apparent by looking at its frequent proxi
 
 Although these terms are also found within the context of research, as in some of the quotes above, we noted that the word "research" can appear near the words "public" and "community" without being directly relevant to the notion of public and/or community engaged research. This motivated a more refined coding strategy for this concept.
 
-## Public and/or community engagement in research and scholarship
+### Public and/or community engagement in research and scholarship
 
 To better understand how engaging the public and the community in the research process is valued, we collected mentions of the concept of public and community engagement, using the variants identified by Barreno et al. as a foundation (Barreno et al., 2013). We collected references containing the following keywords: "community engagement," "scholarship of application," "scholarship of engagement," "community(-)engaged" [scholarship and research], "engaged scholarship," "engaged research," "community(-)based" [research, teaching and service], "community outreach," "applied scholarship," "public engagement," "public outreach," "public scholars," "public scholarship," "community scholarship" and "knowledge mobilization." We also conducted snowball searches based on derivations of the keywords – for example, after searching for "public engagement," we searched for variants such as "publicly engaged [scholarship, research]," "engaging the public," "engaging the community" and "engaging communities." In order to ensure that we were covering as many variants springing from the above keywords as possible, we also searched for instances in which the words "public" and "community" were found in proximity (three words distance) to "scholarship," "engagement," "research," "application" and stemmed words ("engaged," "engaging," "researching," "applied," "applying") and conducted manual revision and coding of relevant references. Furthermore, we also revised and manually coded every mention of "public" and "community" to identify more general instances in which the idea of engaging the public and/or the community was present.
 
@@ -127,7 +226,7 @@ We start to see in such texts an explicit elaboration of the differences between
 
 While the context surrounding the concepts of public and/or community engaged scholarship allows us to see some of the ways in which faculty are asked to align their activities with the public good, the demarcation between this form of scholarship and "traditional research" suggests that we need to look at how the latter is discussed in the RPT guidelines separately. We therefore searched for mentions of traditional research outputs (which, as indicated above, are not typically geared towards being accessed and engaged by diverse audiences without specialized training), and whether these outputs are expected to be made publicly available (through open access), what type of impact this work is expected to have (public or otherwise), and how it is evaluated. To do this, we conducted a similar analysis to that above, but with terms related to traditional research outputs, open access, impact and citation metrics, and considered their prevalence in relation to public and community terms.
 
-## Traditional research outputs
+### Traditional research outputs
 
 We found that guidelines for faculty often provide specifics when it comes to the types of research outputs that can be considered for tenure and promotion. This frequently takes the form of a list of outputs that are considered valuable, although these lists sometimes also explicitly mention that other forms of scholarship are welcome. For instance, guidelines of the College of Business and Economics at Boise State University manifest that “Examples of the types of evidence which demonstrate research and scholarly activity include (but are not limited to): (1) Articles in refereed journals (2) Books or research monographs (3) Chapters in books or monographs (4) Other published articles (5) Papers presented at academic conferences and/or published in proceedings (6) Published book reviews (7) Participation as a paper discussant or panel discussant at academic conferences (8) Grants and contracts for research and scholarly activities” (Boise State University, 2008). Similarly, guidelines of Memorial University of Newfoundland establish that “Factors that may be considered [as a demonstrated record of research, scholarship, or creative and professional activities] include but are not limited to: the publication of books, monographs, and contributions to edited books; papers in both refereed and non-refereed journals; scholarly presentations delivered at professional meetings; success in grant competitions; participation in panels; unpublished research including current work in progress both supported and non-supported; editorial and refereeing duties; creative works and performances; and scholarship evidenced by the candidate's depth and breadth of knowledge and general contributions to the research life and creative milieu of the University” (Memorial University of Newfoundland, 2014).
 
@@ -147,7 +246,7 @@ When looking for traditional outputs (i.e., books, conference proceedings, grant
 
 Meanwhile, other outputs resulting from faculty work that relate to the public and/or the community are sometimes considered as a service activity. For example, traditional outputs and metrics are mentioned in the "Scholarship and Research" section of the Institute of Environmental Sustainability at Loyola University’s Tenure and Promotion Guidelines, while “publishing articles for the general public” is included within the section "Professional Contributions" (which are deemed as “all service and accomplishments not defined as research … and can contribute to the general development of the broader profession”; Loyola University, 2015). Similarly, guidelines of the Department of Psychology of the University of Guelph establish that “Normally, publication of scholarly works relevant to some aspect of the discipline of psychology will be considered. Other publications (e.g., trade books, articles in popular magazines) will be evaluated under service to the community. Where appropriate, however, these products may be referenced as knowledge mobilization activities in the dossiers related to scholarship, service or community engagement” (University of Guelph, 2012b). Like these, we found many instances where faculty are offered lists of valued outputs beyond those used for communicating within the academic community, but more often than not, these are not regarded as research activities.
 
-## Open access
+### Open access
 
 Since traditional outputs are the ones most valued, and since these outputs are not typically geared towards the public, we searched for evidence that universities sought to at least grant the public access to these scholarly works. Although the number of articles freely available to the public has been growing from year to year (Archambault, 2018; Archambault et al., 2014; Piwowar et al., 2018), we found only a handful of mentions of "open access" across the hundreds of documents we studied.
 
@@ -159,7 +258,7 @@ Other universities and academic units use less negative language, while still ca
 
 It is also notable that none of the mentions of OA actively encourage or explicitly value open access. The closest that a document comes to encouraging open access is the Report of the UNC Task Force on Future Promotion and Tenure Policies and Practices from the University of North Carolina at Chapel Hill, which includes a link to a website from the UNC‐CH Health Sciences Library that promotes OA (University of North Carolina at Chapel Hill, 2009). Beyond that, the most positive message faculty are receiving about OA – in the very few places where they are receiving any message at all – is that open access publications “may be meritorious and impactful” (San Diego State University, 2016), and that “Open-access, peer-reviewed publications are valued like all other peer-reviewed publications” (University of Central Florida, 2014).
 
-## Impact
+### Impact
 
 We went on to examine the kind of impact that is expected of faculty in the RPT process to see if, despite the encouragement of traditional research outputs and the cautionary tone around open access, faculty are asked to have impact that goes beyond the academic community. We found that "impact" is a term of interest, with 57% of institutional documents mentioning it explicitly. Use of this term is most common in RPT documents of R-type institutions (79%; Figure 6) and, similar to "public" and "community," appears most frequently within higher-ranking R-type institutions (94% at R1, 93% at R2, and 50% of R3; RCan institutions fall in the middle at 75%; Figure 7). Related, we find similar results to "public" and "community" in that "impact" is mentioned most frequently within the documents of Life Sciences academic units of R-type institutions (85%; Figure 8).
 
@@ -173,7 +272,7 @@ We find a higher presence of "impact" in proximity to research related terms as 
 
 Meanwhile, the public dimension of impact, in any form, is minimally addressed. Specific mentions of this concept are rare (appearing in only 9% of the R-type institutions and 11% of the M-type), and are often non-specific about how that public impact will be determined. For example, guidelines of Carleton University establish that “Evidence appropriate to the discipline or field used to demonstrate the originality and quality of research/scholarly activity or creative work in support of an application for tenure or promotion may include, but is not limited to … other publications demonstrating a high quality of scholarship with significant public impact” (Carleton University, 2014). Similarly, guidelines of the Faculty Division of Physical Sciences at the University of Wisconsin-Madison require faculty to “List the implications of the program; its relevance to the problems of agriculture, industry, and other segments of society in the state and nation; and its potential or demonstrated impact on the public” (University of Wisconsin-Madison, 2014).
 
-## Metrics
+### Metrics
 
 Since metrics are often cited as a common way to measure impact (Reinstein et al., 2011), we further analyzed the frequency of mentions of terms related to metrics, such as "citations,’" "impact factor," "acceptance/rejection rates" and the word "metrics" itself (see methodology note on Alperin et al., 2019a; Alperin, 2019b for the list of terms included). We found that 50% of institutions mention the concept of metrics at either the university level or the academic unit level. The mention of metrics within RPT documents is most common at R-type institutions (75%) as compared to M-type (41%) and B-type (15%; Figure 6). Within R-type institutions, mentions of metrics are more common at the higher-ranking institutions, with 94% of the documents of R1 institutions containing the concept, while only 73% and 57% of the R2 and R3 institutions contained the term (Figure 7). Again, Canadian R-type institutions fall in the middle of the range with 75% of those institutions mentioning the concept in their documents. Within academic units of the R-types, we found greater mention of the concept in the documents of PSM units (85%) and the LS (70%) than in those of the SSH (66%; Figure 8).
 

@@ -38,7 +38,51 @@ Here, we use a genome-wide association study to pinpoint a new resistance region
 
 In pooled whole-genome sequencing of 600 infected and 600 uninfected 13–16-R1 snails (298x and 333x coverage, respectively), a single genomic region showed by far the greatest difference in allele frequencies between pools (Figure 1A; Supplementary file 1A). The highest outliers occurred in a 450 kb section of LG XII, here called PTC2. Genetic divergence between pools (FST) at numerous PTC2 variants exceeds 0.1, a value unobserved among one billion simulated neutral variants, which is therefore significant even if corrected for the nearly 7 million empirical variants examined (p<0.01). Many variants even show FST over 0.2, more than twice the FST at sod1 and RADres. By subsequently genotyping indel polymorphisms at PTC2 in individual snails, we observed three alleles at intermediate frequency (R: 44%, S1: 24%, and S2: 32%). Infection was rare for RR homozygotes (12.9%), and much more common for S1S1 (75.3%) and S2S2 (29.6%) homozygotes, a difference in infection odds of over 15-fold (i.e. infection odds of 0.15 vs. 3.0; Figure 1B). Heterozygotes showed intermediate phenotypes. There was weak partial dominance of S1 over R (observed Clopper-Pearson 95% confidence interval of infection probability for S1R = 51.0–61.8%; expected intermediate phenotype = 44.1%), such that relative to RR, carrying an S1 allele increases the odds of infection 5.9-fold (p=6 × 10−42) while a second S1 allele further increases the odds of infection 2.7-fold for a 15.9-fold difference (p=1 × 10−4). The S2 allele acts additively, such that each S2 allele increases the odds of infection 1.5-fold (p=6 × 10−5). We confirmed the PTC2 signal using an independent set of 392 snails from 13-16-R1 that had previously been phenotyped (Tennessen et al., 2015a) (p=7 × 10−12 for R vs. S1; p=4 × 10−5 for R vs. S2; Figure 1—figure supplement 1). These snails had also been genotyped at sod1 and RADres, revealing that all three loci had significant independent associations when included together in the same model (p≤10−4 for each), with no evidence for epistasis (p>0.05 for interaction terms). Segregating variation at PTC2 has a stronger association with odds of infection than that of any other known B. glabrata locus (Tennessen et al., 2015a; Tennessen et al., 2015b). The BS-90 RAPD marker (Knight et al., 1999) is only 5 Mb and 23 cM from PTC2 (Figure 1—figure supplement 2; Tennessen et al., 2017). This marker is predicted to be 17 cM (range 6–33 cM) from a causal locus, which could therefore plausibly be PTC2 (Supplementary file 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genetic divergence (FST) between infected and uninfected snail pools in 10 kb windows, for variants on contigs arranged by linkage map position (Tennessen et al., 2017). The strongest signal is from PTC2 on Linkage Group XII, far exceeding the signal of known regions RADres and sod1 which reflect wide haplotype blocks (Tennessen et al., 2015a). (B) PTC2 genotypes are associated with infection outcome (Source code 1). Genotypes are displayed for all three pairs of alleles, revealing a substantial difference between R and S1 (center panel), and an intermediate signal of S2 relative to the others (left and right panels).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Among 392 snails that had previously been parasite-challenged and phenotyped, we see a significant association with PTC2, independently confirming the signal in our main dataset (Figure 1B).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** These contigs bridge the span between PTC2 and the BS-90 RAPD marker (blue circle), suggesting a physical distance of 5 Mb between them. While there is no overlapping sequence between S1-193/R-605 and S1-15/R-35, aligned linkage map markers which all share the same linkage map position as PTC2 (red circles) suggest these blocks are very proximate and occur within a region of relatively low recombination. homR contig R-127 overlaps homS1 contigs S1-193 and S1-117, confirming that they are adjacent and harbor a region of relatively high recombination between PTC2 and the BS-90 RAPD marker 23 cM away.
+
 Using PacBio whole-genome assemblies from snails homozygous for each of the three PTC2 alleles (Supplementary file 1C), we find striking sequence and structural divergence among the haplotypes (Figure 2). Alignable regions show 3.3% nucleotide divergence on average (SD = 2.1%). A majority of PTC2 sequence shows no similarity among alleles; the percentage of sequence that could even be aligned ranged from 12.9% (R onto S2) to 40.0% (S1 onto R). All three PTC2 haplotypes harbor unique insertions tens of thousands of bp in size, some of which contain complete coding genes, such that each genotype carries a distinct combination of genes (Figure 2). Shared orthologous genes at PTC2 show many nonsynonymous differences and in some cases homology can only be identified at the protein, not DNA, level (Figure 2—figure supplement 1; Figure 3). This degree of polymorphism is unusually high for conspecific haplotypes in most genomic regions in any taxon (Leffler et al., 2012). In contrast to PTC2, 89.5% of sequence on other contigs can be aligned between assemblies, with a mean of 0.4% nucleotide divergence. It is not obvious how a chromosomal rearrangement (e.g. inversion) could maintain more than two distinct haplotypes, and in any case we see no evidence for one in our assemblies.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-v2.jpg)
+
+**Figure 2.:** As in Figure 1A, genetic divergence (FST) between infected and uninfected snail pools is shown, here both for individual variants (grey circles, only FST ≥0.01 shown) and as mean values for sliding windows of 10 kb (red line). FST is undefined for regions present on only one haplotype. PTC2 (peach) is defined as the 450 kb region containing all windows for which mean FST exceeds 0.1. Within PTC2, the three haplotypes (R, S1, and S2) are aligned with multi-kilobase indels and genes indicated. Assemblies are comprehensive and alignment gaps represent annotated indels, not missing data. PTC2 is characterized by extensive sequence divergence, including large indels containing entire genes (numbered), and is enriched for single-pass transmembrane (TM1) loci (dark blue).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot represents a 600 bp segment, and color indicates sequence similarity (light blue = 50–90% similarity; medium blue = 90–97.5% similarity; dark blue = 97.5–100% similarity). Of the five TM1 genes that are shared across all three haplotypes (red circles, numbered) within PTC2 (peach), several appear to exist in regions of no homology (no dots), because the alleles share such low DNA sequence similarity.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** PTC2 is narrower in S1 and S2 relative to R due to different sets of indels (Figure 2). The FST signal varies by genome assembly because the high sequence divergence only allows a subset of reads to align, which differs for each assembly. The signal is weakest for S2, possibly because the greatest phenotypic contrast can be inferred when (highest-susceptibility) S1 and (lowest-susceptibility) R reads align to the same location, which is least likely to occur with this assembly. We focus on the region of strongest association, defined here as PTC2 encompassing all windows over FST = 0.1 on any homR contig and all windows over FST = 0.15 on any contig across all three assemblies. Other peaks also occur on either side of PTC2, reflecting either decaying linkage disequilibrium with this locus or possibly additional minor causal loci. (A) homR (B) homS1 (C) homS2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The final 22 kb of both contigs show 99.9% similarity in reverse orientation (red circle). These two contigs align to different portions of reference genome BglaB1 contig 13, and both share the association with phenotype (Figure 2), All of this evidence indicates that they are adjacent and partially overlapping. Thus, R-35 and R-304 have been combined into a single haplotype throughout our analysis (e.g. Figure 2).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Raw reads span the 12.6 kb gap between contigs, which is further confirmed by the high similarity between homS2 and BglaB1. Thus, S2-78 and S2-773 have been combined into a single haplotype throughout our analysis (e.g. Figure 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-v2.jpg)
+
+**Figure 3.:** For each of eight TM1 genes (numbered as in Figure 2; Supplementary file 1D), the protein product is shown, including the transmembrane domain (peach). Orthologous alleles are aligned. Amino acid residues that differ from the R allele are shown in blue. Uncorrected protein sequence divergence between orthologous alleles ranges from 3% to 85%. Three genes (7, 8, and 10) are present only on a single haplotype.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** All protein lengths have been normalized to 100. We assessed the distribution of PTC2 genes relative to all TM1 genes with 10,000 replicate trials sampling eight random TM1 proteins each time. The TM1 domains of PTC2 genes are more likely to occur closer to the C-terminus than for other TM1 genes (p<0.05) and tend to be closer to the middle of the protein but not significantly so (p>0.05). This feature is shared with the GRC proteins (Tennessen et al., 2015b) and also Toll-like receptors, suggesting a similar cellular role.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59395/elife-59395-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Numbers on branches indicate bootstrap support. All three populations (13–16-R1, GUA, and BB02) harbor both R-like (red branches) and S-like (blue branches) sequences, which presumably are also allelic in GUA and BB02. Thus, this polymorphism segregates within natural populations throughout the range of B. glabrata and is not an artifact of the admixed history of 13–16-R1, consistent with long-term balancing selection predating the diaspora of B.glabrata across the neotropics.
 
 Using RNA-Seq data from homozygotes of each genotype to identify expressed genes, we fully annotated PTC2 (Supplementary file 1D,E). Of the eleven PTC2 genes, eight are predicted to be TM1 genes, including all five genes that are shared among the three haplotypes (genes 1, 2, 4, 5, and 9; Figure 2; Figure 3). Of the three non-TM1 genes, gene 3 and gene 11 show homology to TM1 genes 2 and 8, respectively, but without the TM1 domains. Gene 6 contains a conserved protein domain of unknown function (DUF2732). Only 11% of B. glabrata genes are TM1 genes, so they would be unlikely to constitute eight of eleven genes by chance alone (p<10−5). PTC2 TM1 genes are all between 166 and 530 codons, have TM1 domains that are displaced from the N-terminus (Figure 3—figure supplement 1), and like the rest of PTC2 they are highly polymorphic (Figure 3), with amino acid level divergence exceeding 50% in several cases. Sequences similar to both R and S haplotypes are present in other B. glabrata populations without admixed histories (genomic and transcriptomic sequence from Brazilian strain BB02, Adema et al., 2017; transcriptomic sequence from Guadeloupe, Tennessen et al., 2015b; Figure 3—figure supplement 2), suggesting that they co-occur throughout the species range and the polymorphism is old. Synonymous divergence among alleles is higher than nonsynonymous, and a phylogeny of concatenated genes shows 24% synonymous divergence from the midpoint root. Thus, haplotypes are more consistent with an ancient origin (24 million years assuming a neutral mutation rate of 10−8 per year) rather than recent divergence via selection for protein diversity. Other than the transmembrane segment, these genes contain no known protein domains or homology to sequences outside of gastropods, nor are they homologous to GRC genes. Some show homology to each other and/or to other genes near PTC2 or elsewhere in the genome, but amino acid level sequence similarity among paralogs is low (<50%). The phenotypic effects of individual genes and polymorphisms will be an exciting subject for future work involving knockdowns or knockouts (Allan et al., 2017; Abe and Kuroda, 2019) and/or additional RNA-Seq from multiple individuals allowing quantification of expression differences.
 
@@ -52,13 +96,121 @@ As with mosquitoes (Marshall et al., 2019), a promising strategy for disease con
 
 ## Materials and methods
 
-## Animals and Ethics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Biomphalaria glabrata)</td>
+      <td>13–16-R1</td>
+      <td>PMID:5050093; PMID:7299581</td>
+      <td>5050093:NIH-MH-cc-13-16-1; 7299581:13–16-R1</td>
+      <td>Oregon State University population established by C. Bayne</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Schistosoma mansoni)</td>
+      <td>PR-1</td>
+      <td>PMID:5050093; PMID:7299581</td>
+      <td>5050093:NIH-Sm-PR1; 7299581:PR-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PB35_1696 k_F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGTTCTCGCTTTTTATTGGCTTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>PB35_1696 k_R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTAGACGCACCCAAGGATCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VB13_859 k_Fb</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ACAAATGGGGCAGTTACACTGTTTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VB13_859 k_Rb</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>AGCGAAATGTGAGATTGGTTATGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VB13_868 k_Fb</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TCTTTTCACTAAAGCCGCACAAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VB13_868 k_Rb</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CCTACGTTCTCAATATCAACGGGAA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SimulatePools.pl</td>
+      <td>https://github.com/jacobtennessen/GOPOPS/</td>
+      <td>Perl script</td>
+      <td>power analysis for pooled sequencing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MakeFreqTableFromPooledPileup.pl</td>
+      <td>https://github.com/jacobtennessen/GOPOPS/</td>
+      <td>Perl script</td>
+      <td>estimates allele frequencies</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FstFromJoinedFreqTablesWindow.pl</td>
+      <td>https://github.com/jacobtennessen/GOPOPS/</td>
+      <td>Perl script</td>
+      <td>calculates mean FST per window</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChopFastaStaggered.pl</td>
+      <td>https://github.com/jacobtennessen/MiSCVARS/</td>
+      <td>Perl script</td>
+      <td>subdivides sequence data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AssessBlatChopped.pl</td>
+      <td>https://github.com/jacobtennessen/MiSCVARS/</td>
+      <td>Perl script</td>
+      <td>summarizes sequence matches</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and Ethics
 
 We used the Oregon State University population of 13–16-R1 that has been maintained as a large population (hundreds) since the mid-1970s (Bonner et al., 2012). 13–16-R1 is descended from snails collected in Brazil and Puerto Rico (Richards and Merritt, 1972; Sullivan and Richards, 1981) but its exact history is not entirely clear. Our population has been maintained in the absence of parasite exposure, and therefore under relaxed selective pressure in regard to parasite resistance.
 
 We used mice to maintain the schistosome parasites and to produce miracidia for challenge experiments. Infection is through contact with inoculated water and involves minimal discomfort. Infected rodents are euthanized with CO2 prior to showing clinical signs of disease and are dissected to recover parasitic eggs. Animal numbers were held to the minimum required for the research. Institutional approval: Oregon State University Animal Care and Use Protocols 4749 and 5115.
 
-## Genome-wide scan of 13–16-R1
+### Genome-wide scan of 13–16-R1
 
 We challenged snails of the 13–16-R1 population with PR-1 miracidia, following previous methods (Bonner et al., 2012). In brief, we arbitrarily chose 1700 outbred juvenile snails (4–6 mm diameter), challenged them each with five miracidia, and classified them as infected or uninfected. About 40% of snails became infected. From these, we randomly selected 600 infected and 600 uninfected snails for sequencing. These sample sizes were chosen based on a simulation of variants with minor allele frequencies ≥ 0.2, with copies randomly assigned to 600 infected and 600 uninfected individuals at the expected sequencing coverage depth (script SimulatePools.pl at https://github.com/jacobtennessen/GOPOPS/), which revealed that FST between simulated sequencing pools was unlikely to exceed 0.05 (p<10−5) and very unlikely to exceed 0.1 (p<10−9) and therefore we had substantial power to detect larger FST differences. We divided the empirical pools into two technical replicates, and four pools (each combination of infected/uninfected and technical replicate) were sequenced across six lanes of the Illumina HiSeq 3000 (paired-end reads of 151 bp) at the Center for Genome Research and Biocomputing (CGRB) at Oregon State University (Illumina data at NCBI SRA, BioProject Accession PRJNA638474).
 
@@ -66,13 +218,13 @@ Infected snails contain DNA from S. mansoni, which could potentially generate fa
 
 To more precisely estimate genotype-phenotype associations at the LG XII candidate region, we genotyped candidate loci from the region in individual snails. We designed primers for genotyping using Primer-BLAST (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) on the consensus of our assemblies and used them for PCR amplification (Supplementary file 1F). These surrounded indels, such that after initial confirmatory sequencing in test samples, samples could be genotyped with PCR and gel electrophoresis alone. We genotyped the candidate locus in 1570 of the original 1700 phenotyped snails, including 1165 of the 1200 samples used in the genome-wide association study. Furthermore, in order to independently validate the candidate region, we also genotyped it in 392 snails (also 13–16-R1) from a set of 439 that had been phenotyped several years previously (Tennessen et al., 2015a). We tested for effects between genotype and phenotype using logistic regression, following our standard approach (Tennessen et al., 2015a; R Development Core Team, 2020; Source code 1). Specifically, we first coded infection as binary (1 or 0) and each allele as either additive (‘add’: 0, 1, or 2 copies of the allele), dominant (‘dom’: 1 or 0 for presence/absence of allele), or recessive (‘rec’: 1 if homozygous, 0 otherwise). We first confirmed an independent effect of both S alleles relative to the R allele with model glm(infection~S1add+S2add, family = binomial), and then we found the best-fitting parameter combination (minimum Akaike information criterion) which was model glm(infection~S1dom+S1rec+S2add, family = binomial). The positive effect of both S1dom and S1rec on infection odds was interpreted as partial dominance (i.e. increased susceptibility if the allele is present plus additional increased susceptibility for homozygotes). We tested for epistasis by first adding terms for RADres and sod1 (known to act additively; Tennessen et al., 2015a) to the model and then testing if interaction terms among loci were significant.
 
-## PacBio sequencing and assembly
+### PacBio sequencing and assembly
 
 We generated three PacBio assemblies from inbred snail lines homozygous for the three PTC2 alleles. (Supplementary file 1C; assemblies NCBI Genome, BioProject Accession PRJNA639204). The first assembly (homR) used snail line R68, which is derived from 13-16-R1 and is highly resistant to S. mansoni strain PR-1, as described previously (Tennessen et al., 2015a). We pooled and sequenced these snails in 15 SMRT cells (78x coverage) on the Pacific Biosciences Sequel I at the CGRB. We assembled the resulting raw sequences using the HGAP4/FALCON assembler (Chin et al., 2016; options: Genome Length 1 Gb, Seed coverage 30, Min Map Concordance 70). Similarly, the other two assemblies (homS1 and homS2) were generated using the same methodology from snail lines i90 (6 SMRT cells, 58x coverage) and i171 (5 SMRT cells, 46x coverage), respectively. By default, we treat homR as the reference genome unless stated otherwise. To assign PacBio contigs to the existing linkage map (Tennessen et al., 2017), we aligned 46,023 fragments of 100 bp each from BglaB1 (the published genome) that had previously been screened for uniqueness and used for targeted capture (Tennessen et al., 2017) using BLASTN (version 2.6.0) with default parameters. PacBio contigs were then assigned to linkage groups if at least one unique fragment from a mapped BglaB1 contig aligned to it, and if at least 75% of these matching unique fragments pertained to the same linkage group. We thus assigned 1489 homR contigs to linkage groups, representing 635 Mb; these assignments were supported by a median of seven mapped fragments per homR contig, with an average of 96% of fragments per homR contig mapping to the same linkage group.
 
 In the vicinity of PTC2, we assessed sequence similarity with dot plots. Each assembly was broken into overlapping 600 bp segments (script ChopFastaStaggered.pl at https://github.com/jacobtennessen/MiSCVARS/), which were tested for sequence similarity in pairwise comparison using BLAT (Kent, 2002; options: stepSize = 1 -minScore = 300) followed by script AssessBlatChopped.pl (at https://github.com/jacobtennessen/MiSCVARS/). To estimate average genomic sequence similarity outside of PTC2, we used BLASTN (version 2.6.0) to identify pairs of orthologous contigs between homR and homS1 (our two best assemblies, which should represent random samples of 13–16-R1 in regions unlinked to PTC2), and performed a similar BLAT comparison for all such pairs in which both contigs were over 2 Mb. For assemblies homR and homS2, PTC2 is split between two contigs each (Supplementary file 1C). We manually combined these contigs into continuous haplotypes. For homR, the ends of contigs R-35 and R-304 both align to each other with 99.9% similarity for 22 kb, indicating that they are in fact directly adjacent and the assembly algorithm was overly conservative in failing to join them (Figure 2—figure supplement 3). For the homS2 contigs, raw reads aligning to contig S2-78 overlapped with raw reads aligning to contig S2-773, indicating a gap of only 12.6 kb which was confirmed by alignment to BglaB1 (Figure 2—figure supplement 4).
 
-## RNA-Seq and annotation
+### RNA-Seq and annotation
 
 Although BglaB1 is annotated, many genes were likely missed, especially those spanning multiple contigs. Furthermore, some PTC2 haplotypes may contain genes missing from the reference genome. Therefore, we performed RNA-Seq on snail lines homozygous for each of the three PTC2 haplotypes in order to identify all expressed proteins on each haplotype. Samples were prepared as described previously (Tennessen et al., 2015b). A single sample from each homozygous genotype was included in the same lane of the Illumina HiSeq 3000 at the CGRB (single-end reads of 151 bp; Illumina data at NCBI SRA, Bioproject Accession PRJNA639026). This single-sample approach precludes quantifying expression in a rigorous way (Supplementary file 1E), but not our goal of assembling transcriptomes for the purpose of annotation. We performed a de-novo annotation of each PTC2 haplotype. Each haplotype-specific RNA-Seq dataset was adapter and quality trimmed using Cutadapt (version 1.15, Marcel, 2011; options: -q 15,10) and de-novo assembled into a transcriptome assembly using Trinity (Grabherr et al., 2011; default assembly parameters). Transcriptome assemblies were reduced to longest open reading frames using TransDecoder (Haas et al., 2013) by first identifying the longest open reading frames (TransDecoder.LongOrfs), then using BLAST (Altschul et al., 1990) to map the longest open reading frames to the UNIPROT (UniProt Consortium, 2019) gastropod protein database (options: -max_target_seqs 1 -outfmt 6 -evalue 1e-5), and finally by predicting protein sequences from the assembled transcripts (TransDecoder.Predict). AUGUSTUS (Stanke et al., 2004) gene prediction training model was built from the UNIPROT Biomphalaria dataset. BUSCO (Seppey et al., 2019) was run on the homS1 genome assembly for use across all assemblies. Single copy orthologs found by BUSCO were used to make the SNAP (Korf, 2004) gene prediction training set. A snail-specific repeat library was constructed using data from BglaB1 (Giraldo-Calderón et al., 2015; Adema et al., 2017; https://www.vectorbase.org), and mollusca-specific repeats from Repbase (Bao et al., 2015), and these repeats were then masked using RepeatMasker (Smit et al., 2013). De-novo gene prediction was run with MAKER (Cantarel et al., 2008) on the repeat-masked genome assembly using the TransDecoder reduced transcriptome assembly as EST evidence, the UNIPROT Biomphalaria proteins as protein evidence, and de-novo gene prediction was conducted using SNAP and AUGUSTUS using the constructed prediction models. We used these automated annotations, along with predictions from genomic sequence from GENSCAN (Burge and Karlin, 1997), and putative orthologous transcripts in the reference genome project (Giraldo-Calderón et al., 2015; Adema et al., 2017) identified with BLASTN (version 2.6.0), to guide manual alignment of RNA-Seq reads. Putative coding genes were rejected and subsequently ignored if they showed homology to transposable elements (e.g. RNA transcriptase or transposase) which are very abundant in the snail genome, if the open reading frame was less than 100 codons, or if the sequence could not be confirmed via manual alignment of RNA-Seq reads (sequences in NCBI GenBank, Accessions MT787302-MT787323). Secondary structure was predicted using TMHMM v. 2.0 (Sonnhammer et al., 1998).
 

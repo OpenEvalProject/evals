@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.45181.001 Thyroid hormone (TH) regulates diverse developmental events and can drive disparate cellular outcomes. In zebrafish, TH has opposite effects on neural crest derived pigment cells of the adult stripe pattern, limiting melanophore population expansion, yet increasing yellow/orange xanthophore numbers. To learn how TH elicits seemingly opposite responses in cells having a common embryological origin, we analyzed individual transcriptomes from thousands of neural crest-derived cells, reconstructed developmental trajectories, identified pigment cell-lineage specific responses to TH, and assessed roles for TH receptors. We show that TH promotes maturation of both cell types but in distinct ways. In melanophores, TH drives terminal differentiation, limiting final cell numbers. In xanthophores, TH promotes accumulation of orange carotenoids, making the cells visible. TH receptors act primarily to repress these programs when TH is limiting. Our findings show how a single endocrine factor integrates very different cellular activities during the generation of adult form.
+Thyroid hormone (TH) regulates diverse developmental events and can drive disparate cellular outcomes. In zebrafish, TH has opposite effects on neural crest derived pigment cells of the adult stripe pattern, limiting melanophore population expansion, yet increasing yellow/orange xanthophore numbers. To learn how TH elicits seemingly opposite responses in cells having a common embryological origin, we analyzed individual transcriptomes from thousands of neural crest-derived cells, reconstructed developmental trajectories, identified pigment cell-lineage specific responses to TH, and assessed roles for TH receptors. We show that TH promotes maturation of both cell types but in distinct ways. In melanophores, TH drives terminal differentiation, limiting final cell numbers. In xanthophores, TH promotes accumulation of orange carotenoids, making the cells visible. TH receptors act primarily to repress these programs when TH is limiting. Our findings show how a single endocrine factor integrates very different cellular activities during the generation of adult form.
 
 ## Introduction
 
@@ -41,11 +41,35 @@ We asked how a single endocrine factor can have such different effects on cells 
 
 ## Results
 
-## Post-embryonic NC-derived subpopulations revealed by single-cell RNA sequencing
+### Post-embryonic NC-derived subpopulations revealed by single-cell RNA sequencing
 
 To explain the pigment cell imbalance of hypothyroid fish, we envisaged two models for TH activity during normal development (Figure 1B). In the first model, TH influences states of specification, directing multipotent cells away from one fate and toward the other, or preventing the transdifferentiation of cells already committed to a particular fate. In the second model, TH influences cells that are already committed and remain committed, to their fates. In this scenario, discordant effects across lineages might be observed if TH promotes a cellular process in one lineage that amplifies its population, while simultaneously inhibiting the same process in the other lineage to restrain its population.
 
 To evaluate the applicability of these models to TH-dependent regulation of pigment cell populations, we sought to capture the range of intermediate states through which these cells transit during normal and hypothyroid development. Accordingly, we sequenced transcriptomes of thousands of individual NC-derived cells isolated from trunks of euthyroid and hypothyroid fish (Figure 2—figure supplements 1 and 2). Dimensionality reduction (Becht et al., 2018; Cao et al., 2019) followed by unsupervised clustering identified melanophores, xanthophores and a third class of NC-derived pigment cells, iridescent iridophores (Figure 2A and B; Supplementary file 1). A cluster likely corresponding to multipotent pigment cell progenitors (Budi et al., 2011; Singh et al., 2016) was marked by genes encoding pigment cell transcription factors, general markers of mesenchymal NC and factors associated with proliferation and migration but not pigment synthesis (Figure 2—figure supplement 3; Supplementary file 2—Table 1). Some cells within this cluster also expressed the zebrafish-specific embryonic NC marker crestin, which is generally down-regulated at later developmental stages but is still expressed in a subset of presumptive progenitor cells (Budi et al., 2011).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cell-type assignments for clusters of cells (n = 16,150) from euthyroid and hypothyroid fish. Cell types known to be of non-NC derivation are not shown (Figure 2—figure supplement 2D and E). (B) Known cell-type marker genes and new candidate markers (for cluster-specific genes, see Supplementary file 2—Table 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fish transgenic for sox10:cre and ubi:loxP-EGFP-loxP-mCherry permanently and robustly expressed mCherry in NC-derived cells of both euthyroid and hypothyroid fish (Kague et al., 2012; Mosimann et al., 2011). At superficial layers, mCherry+ xanthophores (yellow arrowheads), melanophores (red arrowheads), and iridophores (blue dotted line) were apparent. At deeper layers, mCherry+ cells were found in dorsal root ganglia (magenta arrowheads) and other locations (e.g. mint arrowheads), potentially representing glia, neurons, progenitors and other cell types. mCherry+ cells of non-NC origin were evident as well (see Figure 2—figure supplement 2). Stage shown is 9.8 SSL (Parichy et al., 2009). (B) Single-cell RNA-Seq (scRNA-Seq) experimental design. To ensure that progenitors, cells at intermediate states of specification and commitment, and fully differentiated cells were captured, euthyroid and hypothyroid fish were collected at a range of stages encompassing adult pattern formation (7.2–9.8 SSL) and from juvenile fish (11 SSL) in which the first two adult stripes had fully formed. To compare transcriptomic signatures of NC-derived cells from embryonic–early larval and middle larval–juvenile stages, cells were additionally collected from euthyroid larvae at 5 dpf (3.5 SSL). (C) Representative FAC sort for NC-derived cells from post-embryonic skins and trunks. Single cells were isolated by sequentially gating cells according to their SSC-A vs. FSC-A, FSC-H vs. FSC-W, and SSC-H vs. SSC-W profiles according to standard flow cytometry practices. Cells with high levels of DAPI staining were excluded as dead or damaged. NC-derived cells were isolated by identifying cells with high fluorescence in the mCherry-A channel which describes expression of the ubi:loxP-EGFP-loxP-mCherry transgene after permanent conversion to ubi:mCherry upon exposure to sox10:Cre (see Figure 2—figure supplement 1A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Percentages of cell types across samples (for details, see Supplementary file 2—Table 3). All cell types are represented in each sample in similar overall proportions. Colors correspond to cell types in (B–E). (B) Counts of cells by type captured from euthyroid and hypothyroid fish at post-embryonic stages (≥7.2 SSL). (C) Counts of unique molecular identifiers (UMI) and unique genes expressed, as well as fractions of mitochondrial reads by cell-type (shown are medians with boxes spanning interquartile ranges; vertical lines indicate farthest observations of data with outlier samples shown individually). Increased fractions of mitochondrially encoded genes may indicate broken cells (Ilicic et al., 2016). Consistent with this idea, Schwann cells—many of which are expected to be damaged owing to their concentrically layered morphology—exhibited one of the largest overall proportions of UMIs derived from mitochondrial genes. (D) Two-dimensional UMAP representation of all post-embryonic cells (≥7.2 SSL) captured in scRNA-Seq that passed quality thresholds (22,613 cells, 13 combined samples). (E) Same cells as in D, with presumptive NC-derivatives shown in gray and presumptive non-NC derived cells highlighted by type.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Genes enriched in the pigment progenitor cluster compared to differentiated pigment cells included loci expressed in embryonic, migratory NC cells of zebrafish and other species (crestin, snai2, foxd3, pax3a, vim, zeb2a) (Kaufman et al., 2016; Kelsh et al., 2000a; Luo et al., 2001; Minchin and Hughes, 2008; Thisse et al., 1995; Van de Putte et al., 2003; Ziller et al., 1983). Color indicates relative expression of each gene within individual cells (xan, xanthophores; mel, melanophores; irid, iridophores; prog, pigment progenitors).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) UMAP representation of major NC derivatives (left) with coordinate expression of two exemplar ligand–receptor gene pairs (middle and right). Xanthophores are known to express and require type III receptor tyrosine kinase (RTK) gene colony stimulating factor one receptor a (csf1ra) and to depend for their development on csf1a expressed by nearby iridophores (Parichy et al., 2000b; Patterson and Parichy, 2013). Melanophores require the type III RTK gene kita (Parichy et al., 1999) and ligand encoded by kitlga, expressed by skin (Hultman et al., 2007; Patterson and Parichy, 2013), but also pigment cells and progenitors revealed here by scRNA-Seq. (B) Pairs of cell adhesion molecules with distinct expression domains suggest differing morphogenetic requirements between pigment cell and other lineages (cdh1 vs. cdh2), and for specific cell types [e.g. cdh11 of iridophores, which form epithelium-like mats within adult interstripes (Singh et al., 2014; (Budi et al., 2011; Darzynkiewicz et al., 1980; McMenamin et al., 2014; Spiewak et al., 2018)]. (C) In teleosts, an ancient clade-specific genome duplication resulted in extra genes, allowing for subfunctionalization and retention of some paralogs (Braasch et al., 2015; Braasch et al., 2009). scRNA-Seq revealed different degrees to which paralog expression has been partitioned across NC-derived cell types. For example, proliferating progenitors and unknown (unk) cells were more likely to express receptor tyrosine kinase gene erbb3b, required for development of glia and adult melanophores (Budi et al., 2008), whereas Schwann cells and Schwann cell progenitors (SCP) were more likely to express erbb3a. Likewise, xanthophores express and require transcription factor genes pax7a and pax7b (Nord et al., 2016), but iridophores were also marked by pax7a expression, suggesting the possibility of functional significance to this cell type exclusive of pax7b activities (A–C, expression thresholds = 1).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) UMAP representation of EL NC-derived cells (n = 1,466) isolated from euthyroid 5 dpf fish (3.5 SSL; prog, progenitor; SCP, Schwann cell precursors; PNS, non-enteric peripheral nervous system). (B) Mid-larval and juvenile NC-derived cells from euthyroid fish (n = 7,611; from ≥7.2 SSL fish; sat, satellite). (C) Combined EL and euthyroid mid-larval/juvenile. (D) Comparison of EL (orange) and mid-larval/juvenile (blue) cell distributions revealed broadly overlapping domains of xanthophores in UMAP space, consistent with known derivation of most early adult xanthophores from EL xanthophores (McMenamin et al., 2014) [and see Main text].
 
 Beyond pigment cells and their presumptive precursors, other clusters were identifiable as neurons, Schwann cells, other glia, and chromaffin cells. An additional cluster expressed markers suggestive of proliferative, non-pigmentary progenitors, and one large cluster (‘unknown’) was not readily assignable to NC-derived populations described previously. Bioinformatic comparisons across all clusters revealed distinct expression profiles of genes encoding ligands and receptors, cell adhesion molecules, and products likely to have diverged in function after the teleost-specific whole-genome duplication (Figure 2—figure supplement 4).
 
@@ -53,15 +77,39 @@ The larva-to-adult transformation of zebrafish entails changes in a variety of t
 
 Overall, our survey captured numerous NC-derived cell types, including abundant pigment cells and progenitors, and revealed substantial variation in gene expression programs among them.
 
-## Pigment cell sub-classes and gene expression dynamics across differentiation
+### Pigment cell sub-classes and gene expression dynamics across differentiation
 
 To understand the gene expression context in which TH impacts each pigment cell type, we compared pigment cells and progenitors, the lineages of which have been described (Budi et al., 2011; Mahalwar et al., 2014; McMenamin et al., 2014; Patterson and Parichy, 2019; Singh et al., 2016) (Figure 3A). These analyses revealed subsets of melanophores and xanthophores (Figure 3B), consistent with differences in states of differentiation and morphogenetic behaviors (Eom et al., 2015; Parichy et al., 2000b; Parichy and Spiewak, 2015). For example, cells of subcluster melanophore 2 exhibited low levels of transcriptional activity and expressed fewer genes, suggesting a more advanced state of differentiation, as compared to cells of melanophore 1 (Figure 3—figure supplement 1). Likewise cells of xanthophore 1 had fewer transcripts and expressed fewer genes than cells of xanthophore 2, suggesting they may represent undifferentiated, cryptic xanthophores and actively differentiating populations, respectively (McMenamin et al., 2014).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-v2.jpg)
+
+**Figure 3.:** (A) Established lineage relationships of embryonic (e) and post-embryonic pigment cells. Multipotent pigment cell progenitors (P) in the peripheral nervous system generate adult iridophores (I), melanophores (M) and some xanthophores (X). A few embryonic melanophores (Me) persist, whereas embryonic xanthophores (Xe) proliferate and lose their pigment to enter a cryptic phase (Xc), and then reacquire pigment late in pattern formation to form most adult xanthophores (McMenamin et al., 2014). (B) Sub-clusters of melanophores and xanthophores with distinct gene expression signatures. (C) Pigment cell clusters defined by markers for each cell-type. (D–E) Pseudotemporal ordering (D) and BEAM (E) revealed dynamics of gene expression over pseudotime for each pigment cell branch [q < 6.0E-11 for all genes except pax3a, starred, q = 0.03), expressed as anticipated during early pseudotime in each branch].
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Median transcript numbers (unique molecular identifiers, UMIs; upper plot) differed across pigment cell subpopulations. Reduced total RNA content is associated with a G0 cell state (i.e. quiescence, replicative senescence, and/or terminal differentiation) (Coller et al., 2006; Darzynkiewicz et al., 1980); low median UMI counts in sub-clusters of melanophores and xanthophores (mel 2, xan 1) suggest alternative states within these differentiated cell populations. Mitochondrial read fraction (lower plot) was low and consistent across sub-clusters, suggesting that low median UMI counts (upper plot) were unlikely to reflect damage specifically incurred by particular cell types (Ilicic et al., 2016). (B) Both melanophore subclusters highly express genes associated with melanin synthesis, indicating that they are both represent true melanophores. However, cell clusters with lower median UMIs (mel 2, xan 1) exhibited gene expression trends indicative of curtailed transcriptional and translational activity, including reduced expression of AP-1 transcriptional complex members (AP1 TF signature score), and genes involved in unfolded protein response (UPR signature score), and proliferation (cell-cycle signature score) (Chinenov and Kerppola, 2001; Maurus et al., 2017; Patil and Walter, 2001; Riabowol et al., 1992) (for details of genes in signature scores, see Supplementary file 2—Table 4). (C) Melanophores and xanthophores in subclusters with lower total UMI counts (mel 2, xan 1) expressed fewer unique genes compared to cells in the other subcluster regardless of equivalent UMI counts, consistent with a more restricted gene expression profile of these populations (shaded areas indicate standard error bounds). (D) Differential expression of genes between pigment cell sub-clusters (xan1 vs. xan2; mel2 vs. mel1). These analyses revealed more genes, expressed at higher levels in xanthophore 2 compared to xanthophore 1, and in melanophore 1 compared to melanophore 2. These biases were consistent with xanthophore 2 and melanophore 1 representing more active cells, and xanthophore 1 and melanophore 2 representing less active cells. Genes compared were expressed by at least five cells in either cluster (log2 fold-change cutoff = 0.8, p<1e-3; xanthophores = 160, 36; melanophores = 125, 39. (E) Melanophore and xanthophore subclusters were differentially distributed along trajectory branches in Figure 3D, consistent with xanthophore 2 and melanophore 2 representing cells at later steps of maturation as compared to xanthophore 1 and melanophore 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) UMAP plots of pigment cells colored by expression of xanthophore cluster-enriched genes (bco1, bco2b, bscl2l, slc2a11b, slc22a7a, wu:fc46h12). (B) Expression in xanthophores of genes shown in A, as revealed by whole-mount in situ hybridization patterns corresponding to those of known xanthophore lineage markers and localization of differentiated and cryptic xanthophores (Hamada et al., 2014; Lang et al., 2009; McMenamin et al., 2014; Parichy et al., 2000b). Insets show at higher magnification blue-stained cells of xanthophore lineage. Bars at right indicate cell positions relative to anatomy of final pattern: solid black, melanophores in prospective stripe regions; dashed black, melanophores transiently located in prospective interstripe region; light yellow, xanthophores likely to remain cryptically (unpigmented) within stripes; orange, xanthophores likely to develop pigmentation in the interstripe.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) UMAP plots of pigment cells colored by expression of iridophore cluster-specific genes (alx4a, alx4b, crip2, defbl1). (B) Whole-mount in situ hybridization of genes in A reveals patterns corresponding to previously described iridophore markers and locations (Lang et al., 2009; Patterson and Parichy, 2013; Spiewak et al., 2018). Insets, higher magnification views of blue-stained iridophores in the prospective interstripe (upper) and within or near prospective stripe (lower). Bars at right indicate cell positions relative to final pattern features: solid black, melanophores in prospective stripe regions; dashed black, melanophores in prospective interstripe; solid blue, dense iridophores of interstripe; dashed blue, sparse iridophores of stripe.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Mutations affecting a variety of pigmentary traits have been recovered or induced and affect pigment deposition, specification or morphogenesis of one or more pigment cell classes, and pattern at EL, adult or both stages (Arduini et al., 2009; Barrallo-Gimeno et al., 2004; Beirl et al., 2014; Budi et al., 2008; D'Agati et al., 2017; Dooley et al., 2013b; Dutton et al., 2001; Eskova et al., 2017; Fadeev et al., 2015; Inoue et al., 2014; Irion et al., 2014; Iwashita et al., 2006; Knight et al., 2003; Krauss et al., 2013; Larson et al., 2010; Nagao et al., 2018; Parichy et al., 2000a; Sheets et al., 2007; Watanabe et al., 2006; Williams et al., 2018; Zhang et al., 2018). Shown are expression domains observed for affected genes in scRNA-Seq analyses of adult NC-derived cells (euthyroid and hypothyroid). Gene names are listed at upper right of each box, with corresponding mutant names indicated below for those loci identified in forward genetic screens (for mutants isolated independently in different screens more than one name is indicated). Logos at lower right of each panel are cell types reported to be affected. In some instances, only EL phenotypes have been reported (e.g. pcdh10a). Red outlines around cell type logos indicates neomorphic alleles (aqp3a, tuba8l3a); dashed lines indicate effects that are known to be non-autonomous to the affected pigment cell types (e.g. erbb3b). In many instances scRNA-Seq expression domains identified a more diverse array of cell types than would be expected from gross mutant phenotypes alone. For example, slc45a2 is required for melanization of melanophores but detected at lower levels in xanthophores and iridophores, whereas mlpha is required for melanosome dispersion but also expressed in xanthophores. Such instances raise the possibility of cell-type specific expression that is not functionally significant (e.g. if other pathway members are not themselves expressed), unanticipated functions that result in only subtle loss-of-function phenotypes not yet identified, or amelioration of functional deficiencies by cell-type-specific mechanisms of genetic compensation. Conversely, genes not expressed in affected cell types are consistent with non-autonomous functions or requirements in a common progenitor [e.g., erbb3b (Budi et al., 2008), oca2 (Beirl et al., 2014)]. Genes for some well-studied mutants [e.g. kita/sparse (Johnson et al., 1995; Parichy et al., 1999 were expressed at levels too low to be detected by scRNA-Seq.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Expression of genes over pseudotime reflect predicted kinetics for melanophores and iridophores. Solid lines indicate smoothed expression curves for all cells in the branch. mitfa expression declined only marginally with melanophore differentiation yet decreased markedly with a transition from progenitor to iridophore as expected (Curran et al., 2010). pax3a was expressed in pigment progenitors (magenta) and decreased across pseudotime in melanophores, whereas expression of tfec, a transcription factor expressed in iridophores (Lister et al., 2011), increased over pseudotime. Melanin synthesis enzyme genes, dct and tyrp1b, as well as pmel, encoding a melanosome-associated transmembrane protein, all increased over pseudotime in melanophores. In iridophores, gpnmb and pnp4a showed elevated expression late in pseudotime, as expected (Curran et al., 2010; Higdon et al., 2013). (B) Trends of total transcript UMI counts, scores of expressed cell-cycle (e.g. ccnd1, pcna), pigment cell transcription factors (e.g. mitfa, tfec, pax7b, tfap2a), and pigment synthesis-related genes (e.g. impdh1b, gart, and atic for purine processing in iridophores; tyrp1b, pmela, and tyr for melanin synthesis in melanophores) in bins across pseudotime for melanophore and iridophore trajectory branches (for all score-associated genes, see Supplementary file 2—Table 4). Histograms indicate cell-type specific densities across pseudotime for each branch. For melanophores, total transcript number per cell decreased over pseudotime and expression levels of melanin synthesis genes increased. In iridophores, mRNA levels stayed relatively constant whereas expression of purine synthesis genes increased. The expression score for cell-cycle genes was greater for iridophores than melanophores at the terminal step of pseudotime (p<0.0002; Wilcoxon; pseudotime bin 8; n = 91 iridophores, 319 melanophores), consistent with iridophores continuing to proliferate even after differentiation, and melanophores normally failing to do so (Budi et al., 2011; Darzynkiewicz et al., 1980; McMenamin et al., 2014; Spiewak et al., 2018).
 
 Additional surveys of these data revealed new markers of xanthophore and iridophore lineages (Figure 3—figure supplements 2 and 3), and cell-type-specific expression of some previously identified markers [e.g. tyrp1b, aox5, tfec (Lister et al., 2011; McMenamin et al., 2014) (Figure 3C). Expression of other genes was broader than might be expected from mutational or other analyses (Figure 3—figure supplement 4); for example mitfa, encoding a transcription factor required for melanophore fate specification (Lister et al., 1999) was expressed in melanophores and progenitors, but also xanthophores (Figure 3C), consistent with prior reports (Eom et al., 2012; Parichy et al., 2000b).
 
 To characterize transcriptional dynamics through lineage maturation, we pseudotemporally ordered cells (Qiu et al., 2017a; Qiu et al., 2017b; Trapnell et al., 2014), yielding a differentiation trajectory with each pigment cell type arising from a common progenitor (Figure 3D). This topology differed from known lineage relationships (Figure 3A) but was consistent with similarity of EL and mid-larval/juvenile gene expression programs (Figure 2—figure supplement 5D). Branch expression analysis modeling (BEAM) (Qiu et al., 2017a) confirmed that genes with functions in specification (e.g. mitfa in melanophores) were expressed early in pseudotime whereas genes associated with differentiation [e.g. dct, encoding a melanin synthesis enzyme (Kelsh et al., 2000b)] were expressed late (Figure 3E; Figure 3—figure supplement 5A). These analyses revealed dynamics of dozens of genes potentially identifying discrete processes in lineage-specific maturation (Supplementary file 2—Table 2) as well as broader trends. For example, transcripts per cell declined in melanophores but not iridophores, consistent with an expectation of reduced RNA abundance as melanophores—but not iridophores—exit the cell cycle with maturation (Figure 3—figure supplement 5B) (Budi et al., 2011; Darzynkiewicz et al., 1980; McMenamin et al., 2014; Spiewak et al., 2018).
 
-## TH-independence of pigment cell fate specification and absence of lineage-specific restraints on developmental progress
+### TH-independence of pigment cell fate specification and absence of lineage-specific restraints on developmental progress
 
 Resolution of pigment cell states through their development allowed us to test if TH functions in fate specification (Figure 1B–i). If so, the excess melanophores and missing xanthophores of hypothyroid fish should reflect biases on specification of multipotent progenitors, or the transdifferentiation (Lewis et al., 2019; Niu, 1954) of initially specified cells. Such alterations should be evident in reduced-dimension transcriptomic space as strong skew in the apportionment of cells between branches or abnormal paths in the cellular trajectory, respectively. Yet, euthyroid and hypothyroid trajectories were topologically equivalent. Moreover, pigment cell progenitors were not depleted in hypothyroid fish as might occur were these cells being allocated inappropriately as melanophores (Figure 4A–D).
 
@@ -71,9 +119,17 @@ Resolution of pigment cell states through their development allowed us to test i
 
 Through a second model—lineage discordance—TH could have opposite effects on cells already committed to particular fates, selectively amplifying one cell type while simultaneously repressing amplification of the other (Figure 1B–ii). For example, TH could promote differentiation of xanthoblasts to xanthophores, but prevent differentiation of melanoblasts to melanophores. Alternatively, TH could be a survival factor in the xanthophore lineage but a pruning factor in the melanophore lineage. Terminal phenotypes of both hypothyroid and hyperthyroid mutant fish are consistent with such a mechanism (McMenamin et al., 2014). If TH has discordant effects between lineages, we predicted that hypothyroid fish should exhibit a strong depletion of xanthophores from the end of their branch of the trajectory, whereas melanophores should be strongly over-represented near the tip of their branch. Yet, empirical distributions of pigment cell states in hypothyroid fish were all biased towards earlier steps in pseudotime, sometimes severely (Figure 4E). Indeed, prior analyses showed that addition of exogenous TH to hypothyroid cells ex vivo can promote differentiation of unpigmented melanoblasts to melanophores (McMenamin et al., 2014), contrary to the idea that TH specifically blocks melanophore development. Together these findings allow us to reject a model in which TH regulation of pigment cell abundance in the adult fish occurs through discordant effects on specific cellular processes across lineages.
 
-## TH promotes a melanophore maturation program
+### TH promotes a melanophore maturation program
 
 Having rejected both of our initial models (Figure 1B), we considered a third possibility, that TH promotes the maturation of both lineages, but in distinct ways. For melanophores, inspection of transcriptomic states and cellular phenotypes supported a role for TH in promoting maturation of this lineage. Genes expressed during terminal differentiation of melanophores from euthyroid fish (e.g. tfap2a, tyrp1b) were expressed at lower levels in melanophores of hypothyroid fish, suggesting an impediment to maturation in the absence of TH (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig5-v2.jpg)
+
+**Figure 5.:** (A) Gene expression differences between melanophores over pseudotime by TH-status (q < 1E-7, genes expressed in >10% of melanophores). Heatmap is hierarchically clustered by row (method, Ward D2). The largest cluster (#3) contains 41% of the genes and represents loci expressed late in pseudotime of euthyroid melanophores but downregulated in hypothyroid melanophores (e.g. tfap2a and tyrp1b), identifying novel candidate genes for roles in melanophore maturation (see Supplementary file 2—Table 6, in which published melanophore-related genes are highlighted) (Baxter et al., 2019). (B) Euthyroid melanophores tended to be highly melanized and stellate, whereas hypothyroid melanophores were variably melanized and often dendritic. (C) Quantification of melanin contents per cell, as estimated by area of pixels (px) having melanin following contraction of melanin granules in response to epinephrine (e.g. Figure 1A). Melanophores of euthyroid fish contained more melanin than those of hypothyroid fish (F1,2710=271.2, p<0.0001), after controlling for individual variation among fish within TH conditions (F10,2710=8.5, p<0.0001; sample sizes: n = 1180 cells from five euthyroid fish, n = 1542 cells from five hypothyroid fish). If planar areas of concentrated melanin granules are assumed spherical, then euthyroid melanophores had on average ~1.7 x the total melanin content of hypothyroid melanophores. (Data in supplementary file Figure 5—source data 1) (D) Fully differentiated melanophores of zebrafish are often binucleate (Usui et al., 2018). Left panel shows a binucleate stripe melanophore in a euthyroid fish (12 SSL). Right panel shows a mononucleate melanophore in a hypothyroid fish at the same stage. Magenta, membrane labeling of melanophores by tyrp1b:palm-mCherry. Blue, nuclei revealed by tuba8l3:nEosFP. (E) Euthyroid fish had proportionally more binucleate melanophores than hypothyroid fish (χ2=230.3, d.f. = 1, p<0.0001) after controlling for a higher incidence of binucleation in developmentally more advanced fish overall (11.5–13 SSL; χ2 = 5.5, d.f. = 1, p<0.05). Individual points indicate proportions of binucleate melanophores observed in dorsal stripes (circles) and ventral stripes (diamonds), which did not differ significantly (p=0.8; sample sizes: n = 383 melanophores in four euthyroid fish, n = 706 melanophores in three hypothyroid fish). (Data in supplementary file Figure 5—source data 2).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Melanophores plated ex vivo from fish at terminal stages of stripe development had diverse morphologies and some exhibited senescence-associated β-galactosidase staining (SA-β-gal; blue precipitate, upper panel), though relative intensities of staining were difficult to score, precluding a quantitative assessment. Xanthophores plated ex vivo did not exhibit SA-β-gal staining. (B) Lysosomes were revealed in tyrp1b:palm-mCherry+ (magenta) melanophores by Lysotracker dye (cyan), which did not stain melanosomes (yellow) despite some similarities between these organelles (Raposo et al., 2007). Melanosomes were visualized in bright field and an inverted and pseudocolored overlay is shown here. (C) Lysosomal content revealed significantly greater normalized mean fluorescence intensity (MFI) of Lysotracker dye in melanophores from euthyroid fish as compared to hypothyroid fish (euthyroid, 20,423 melanophores from 10 fish; hypothyroid, 87,252 melanophores from 10 fish; p<0.01, Wilcoxon). (D) FSC-A values were higher for euthyroid compared to hypothyroid cells overall [p<0.001; cells are the same as in (C) ], consistent with an overall difference in cell size. (C and D data in supplementary file Figure 5—figure supplement 1—source data 1). (E) Euthyroid fish at a later stage of pattern formation exhibited a higher proportion of binucleate melanophores compared to those at earlier stages (early, 7.2 SSL: n = 153 in five fish; late, 11 SSL: n = 477 melanophores in five fish; p<0.001). (Data in supplementary file Figure 5—figure supplement 1—source data 2). (F) Sequential FACS gating strategy (left to right) used in determining Lysotracker normalized MFI. For details, see Materials and methods. (SSC, side scatter; FSC, forward scatter; W, width; H, height; A, area).
 
 To test further test the idea that TH promotes the maturation of melanophores, we examined additional cellular phenotypes. Melanophores of juvenile euthyroid fish tended to be uniformly well-melanized and stellate, whereas melanophores of juvenile hypothyroid fish were variably melanized and dendritic (Figure 5B), reminiscent of earlier stages of melanophore development in wild-type (Eom et al., 2012; Parichy and Turner, 2003). Quantification of melanin content within individual cells confirmed that melanophores of euthyroid fish are more heavily melanized than those of hypothyroid fish (Figure 5C).
 
@@ -85,17 +141,45 @@ Finally we examined multinucleation, a condition linked to increased cell surviv
 
 Collectively, our observations and those of McMenamin et al. (2014) suggest a model in which TH drives melanophores into a terminally differentiated state of increased melanization, larger size and lysosomal content, binucleation, and proliferative cessation.
 
-## TH promotes carotenoid-dependent xanthophore re-pigmentation during adult development
+### TH promotes carotenoid-dependent xanthophore re-pigmentation during adult development
 
 We next examined TH functions specific to the xanthophore lineage. Most adult xanthophores develop directly from EL xanthophores that lose their pigment and then reacquire it late in adult pattern formation (Figure 3A) (McMenamin et al., 2014). Because xanthophores of hypothyroid fish persist, albeit in a cryptic state, we predicted that TH effects should be less pervasive in these cells than in melanophores that develop de novo from transit amplifying cells originating from multipotent progenitors. Indeed, fewer genes were expressed differentially between TH backgrounds in xanthophore than melanophore lineages (3.6% vs. 9%; Figure 6A). Prominent among these were several loci implicated in, or plausibly associated with, the processing of yellow/orange carotenoids (Figure 6B and C; Figure 6—figure supplement 1), dietarily derived pigments that contribute to xanthophore coloration (Schartl et al., 2016; Toews et al., 2017).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig6-v2.jpg)
+
+**Figure 6.:** (A) Proportions of differentially expressed genes in euthyroid and hypothyroid cells across pseudotime bins. Xanthophores expressed fewer TH-dependent genes than melanophores (expressed gene cutoff = 2% of bin expressing, DEGs are genes with q < 0.05 and fold change >1.5X). Of 160 xanthophore DEGs and 519 melanophore DEGs, only 58 were found to be overlapping. (B) TH-dependent expression of genes related to carotenoid pigmentation in xanthophores. Red bars: q < 0.05, log2 fold-change ≥2.0. (C) Carotenoid pathway gene expression score was higher in xanthophore lineage cells of euthyroid fish compared to hypothyroid fish (p=1.5E-15, Wilcoxon). By contrast, pteridine pathway gene expression was marginally lower in cells from euthyroid fish (p=0.01). Box-and-whisker plots represent scores across groups (center line, median; box limits, upper and lower quartiles; whiskers, 1.5x interquartile range; points, outliers). (D) Carotenoids were detected by HPLC in skin containing xanthophores of euthyroid but not hypothyroid fish (11 SSL). (E)  scarb1 expression in euthyroid and hypothyroid zebrafish (10 SSL). (F) scarb1 mutants lacked mature, yellow xanthophores (12 SSL).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** UMAP plots of pigment cell clusters colored by expression of TH-dependent genes in xanthophores: gstm.3 (q = 6.9E-99, log2fold-change = 4.3), plin6 (q = 1.9E-13, log2fold-change = 1.3), scarb1 (q = 3.5E-11, log2fold-change = 1.2).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Carotenoid pigments are normally localized to lipid droplets, the presence of which can be revealed by Oil-red-O staining. Here, a proportion of aox5:palmEGFP+ xanthophores stained ex vivo from euthyroid fish (n = 112 cells) contained lipid (red), whereas xanthophores from hypothyroid fish (n = 48 cells) were never observed to have such lipid contents. (Incidence data in supplementary file Figure 6—figure supplement 1—source data 1.) (B) Ultrastructurally, carotenoids and lipids are detectable as electron-dense carotenoid vesicles (red circles) (Djurdjevič et al., 2015; Granneman et al., 2017; Obika, 1993), which were observed in xanthophores from euthyroid but not hypothyroid fish. N, nucleus. P, pterinosome—the pteridine-containing organelle of xanthophores (Bagnara et al., 1968; Hirata et al., 2003; Matsumoto, 1965; Obika, 1993).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Scarb1 protein alignment. Zebrafish scarb1 mutants had a 105 bp, in-frame deletion in a conserved region of the protein. (B) scarb1 mutants lacked mature, interstripe xanthophores but had normal stripes and aox5:palmEGFP expression, suggesting that patterning and unpigmented xanthophores were normal. (C) In hypothyroid fish treated with exogenous TH (T4), scarb1 expression was rescued within ~1 d (upper) and carotenoid autofluorescence of xanthophores was recovered within ~2 d (lower).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) At 5 dpf, scarb1 mutants had yellow larval xanthophores with wild-type levels of pteridines. (B) Carotenoids were not detectable in EL zebrafish (5 dpf, wild-type; compare to Figure 3D); csf1ra mutants, which lack xanthophores, had HPLC profiles indistinguishable from wild-type. (C) Carotenoid and pteridine pathway signature scores for xanthophores in euthyroid EL and euthyroid and hypothyroid adult scRNA-Seq data sets. Box plots as in Figure 3 with different letters above data indicating significant differences in post hoc comparisons (carotenoid, p<2e-16; pteridine, p=0.01; Tukey HSD). Pteridine signatures between EL, hypothyroid, and euthyroid xanthophores were more similar than carotenoid signatures. (D) Ammonia-induced pteridine fluorescence was present in adult xanthophores of both euthyroid and hypothyroid fish (red arrowheads).
 
 Differences in carotenoid gene expression suggested a corresponding pigmentation deficiency in xanthophores of hypothyroid fish that we confirmed by HPLC, histology, and transmission electron microscopy (Figure 6D; Figure 6—figure supplement 2). Among carotenoid genes, scavenger receptor B1 (scarb1) encodes a high-density lipoprotein receptor essential for carotenoid accumulation in birds and invertebrates (Kiefer et al., 2002; Toomey et al., 2017) and we found it to be required in zebrafish for carotenoid deposition, although not cell persistence (Figure 6—figure supplement 3A and B). scarb1 was expressed more highly in xanthophores of euthyroid than hypothyroid fish (q = 1.1E-10) (Figure 6B and E; Figure 6—figure supplement 1) and exogenous TH was sufficient to rescue both expression and carotenoid deposition (Figure 6F; Figure 6—figure supplement 3C). Together these findings demonstrate an essential role for TH in carotenoid pigmentation and suggest that TH modulation of a suite of carotenoid pathway genes is required for cryptic xanthophores to re-pigment during adult pattern formation.
 
 The distinct phases of xanthophore EL and adult pigmentation (McMenamin et al., 2014), and the TH-dependence of the latter, led us to ask whether mechanisms underlying coloration might be stage-specific. In contrast to the defect of adult xanthophore pigmentation in scarb1 mutants, we found that 5 dpf larval xanthophores were indistinguishable from wild-type (Figure 6—figure supplement 4A). Conversely, mutants lacking xanthophore pigmentation at 5 dpf have normal adult xanthophores (Lister, 2019; Odenthal et al., 1996). Because two pigment classes—carotenoids and pteridines—can contribute to xanthophore coloration, we hypothesized that visible colors at different stages depend on different pathways. Carotenoids were undetectable in euthyroid 5 dpf larvae, and carotenoid-related genes were expressed at lower levels in EL xanthophores than adult xanthophores (Figure 6—figure supplement 4B and C). By contrast, pteridine pathway genes tended to be expressed similarly across stages regardless of TH status and were even moderately upregulated in hypothyroid xanthophores (Figure 6C, Figure 6—figure supplement 4C). Pteridine autofluorescence and pterinosomes were also indistinguishable between euthyroid and hypothyroid fish (Figure 6—figure supplement 4D; Figure 6—figure supplement 2B) despite the overt difference in xanthophore color with TH status (Figure 1A; McMenamin et al., 2014). Together, these observations imply that TH induces new, carotenoid-based pigmentation, allowing transiently cryptic xanthophores to reacquire coloration during adult pattern development. TH therefore drives maturation of both xanthophores and melanophores yet has markedly different roles in each lineage.
 
-## Adult pigment cell maturation programs are gated by TH receptors
+### Adult pigment cell maturation programs are gated by TH receptors
 
 Finally, to understand how TH effects are transduced in pigment cell lineages, we evaluated roles for TH nuclear receptors (TRs) that classically activate target genes when ligand (T3) is present but repress gene expression when ligand is absent (Brent, 2012; Buchholz et al., 2003; Hörlein et al., 1995). Genes encoding each of the three zebrafish TRs (thraa, thrab, thrb) were expressed by melanophores and xanthophores, yet presumptive null alleles for each unexpectedly had pigment cell complements and patterns that resembled the wild type (Figure 7A; Figure 7—figure supplement 1A–D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig7-v2.jpg)
+
+**Figure 7.:** (A) In euthyroid fish, homozygous TR mutants singly and in combination resembled wild-type; shown is thrab. (B) Euthyroid fish wild-type for TRs exhibited numerous autofluorescing, carotenoid-containing xanthophores (upper left), whereas hypothyroid fish wild-type for TRs lacked nearly all these cells (upper right). By contrast, hypothyroid fish mutant for TRs developed substantial complements of these cells. Shown here are representative individuals homozygous for thrab mutation (lower left) and homozygous thrab individuals with somatically induced mutations for thraa (*) as well as doubly thraa and thrab individuals with somatically induced mutations for thrb (thrb*; lower right). Fish are 11.5 SSL. (C, D) Homozygous thrab mutation partially rescued numbers of pigmented xanthophores and more fully rescued numbers of melanophores in hypothyroid fish. Somatic mutagenesis of thraa in fish homozygous mutant for thrab mutants (thrab thraa*) did not significantly enhance the rescue of xanthophore maturation or melanophore numbers. By contrast somatic mutagenesis of thrb in fish doubly homozygous mutant for thraa and thrab (thrab thraa thrb*) rescued xanthophore maturation to wild-type levels in the absence of TH. Numbers of visible xanthophores and melanophores were not distinguishable between euthyroid fish wild-type or homozygous mutant for TR mutations either singly or in combination (p>0.1) and are shown combined here. Box plots as in Figure 6C with different letters above data indicating significant differences in post hoc comparisons (Tukey HSD, p<0.05). (Cell counts in supplementary file Figure 7—source data 1.).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45181/elife-45181-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) RT-PCR for thraa, thrab, and thrb in xanthophores and melanophores sorted by FACS for aox5:palmEGFP and tyrp1b:palm-mCherry, respectively. (B) Sanger sequencing of CRISPR/Cas9-induced mutant allele of thrab revealed a 13 bp deletion. (C) Schematic of Thrab wild-type and mutant proteins illustrating introduction of a novel amino acid followed by a premature stop codon at position 73. DBD, DNA-binding domain; LBD, ligand binding domain. (D) Additional CRISPR/Cas9 mutant alleles for thraa and thrb had phenotypes indistinguishable from wild-type or thrab (Figure 7A). (E) Xanthophore color phenotypes of euthyroid and hypothyroid wild-type fish, and rescue of xanthophore color in hypothyroid fish upon TR mutation (thrab thraa thrb*). (F) HPLC revealed persisting carotenoids in hypothyroid fish mutant for thrab (boxed region), in contrast to the absence of detectable carotenoids in hypothyroid fish that were wild-type for thrab (Figure 6D). (G) Stage of first xanthophore appearance did not differ significantly (p=0.7) between euthyroid fish that were heterozygous or homozygous wild-type for thrab mutation.
 
 Given the absence of grossly apparent phenotypes for TR mutants, we hypothesized that instead of acting to promote maturation when T3 is present, TRs may function primarily to repress maturation when T3 is limiting. If so, we predicted that xanthophore development in hypothyroid fish should be rescued by mutation of TR. We therefore generated fish lacking TH and TRs. Loss of thrab, on its own or in conjunction with loss of thraa, partially restored the deposition of carotenoids in interstripe xanthophoes; mutation of all three receptors fully rescued the number of carotenoid-containing xanthophores (Figure 7B and C; Figure 7—figure supplement 1E and F). TR receptor mutations likewise reduced the total numbers of melanophores in hypothyroid fish to levels indistinguishable from euthyroid fish (Figure 7D).
 
@@ -119,15 +203,249 @@ Finally, our study provides clues to likely roles for TRs during adult pigment p
 
 ## Materials and methods
 
-## Staging, rearing and stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>bco1</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001328495.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>bco2b</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001040312.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>bscl2l</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001013553.2</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>slc2a11b</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001114430.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>slc22a7a</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:M_001083861.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>wu:fc46h12</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001291347.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>alx4a</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:XM_001340930</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>alx4b</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001310078.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>crip2</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001005968.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>defbl1</td>
+      <td>this paper</td>
+      <td>NCBI_Reference_Sequence:NM_001081553.1</td>
+      <td>Amplified from cDNA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(tg:nVenus-v2a-nfnB)</td>
+      <td>PMID:25170046</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>WT(ABb)</td>
+      <td>PMID:23737760</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(aox5:palmEGFP)wp.rt22</td>
+      <td>PMID:25170046</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(tyrp1b:palm-mCherry)wp.rt11</td>
+      <td>PMID:25170046</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(−28.5Sox10:Cre)zf384</td>
+      <td>Gift. PMID:23155370</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(−3.5ubi:loxP-eGFP-loxP-mCherry)cz1701</td>
+      <td>Gift. PMID:21138979</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(tuba8l3:nEosFP)vp.rt17</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>thraavp33rc1</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>thrabvp31rc1</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>thrbvp34rc1</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>scarb1vp32rc1</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>tyrvp35rc1</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dig-AP, sheep polyclonal Fab fragments</td>
+      <td>Millipore-Sigma</td>
+      <td>SKU_millipore-sigma:11093274910</td>
+      <td>1:5000 overnight at 4°C</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP rabbit polyclonal antibody</td>
+      <td>Thermo Fisher</td>
+      <td>CatalogNo_A-11122</td>
+      <td>1:1000 overnight at 4°C</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lysotracker Far Red</td>
+      <td>Thermo Fisher</td>
+      <td>CatalogNo_L12492</td>
+      <td>75 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant DyeCycle Violet stain</td>
+      <td>Thermo Fisher</td>
+      <td>CatalogNo_V35003</td>
+      <td>5 μM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Senescence associated β-Galactosidase Staining Kit</td>
+      <td>Cell Signaling Technologies</td>
+      <td>CatalogNo_9860</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Acros Organics</td>
+      <td>CatalogNo_210341000</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oil Red O</td>
+      <td>Millipore-Sigma</td>
+      <td>CatalogNo_3125–12</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger</td>
+      <td>10X Genomics</td>
+      <td>v2.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle</td>
+      <td>NA</td>
+      <td>v2.9.0 and v2.99.1</td>
+      <td>https://github.com/cole-trapnell-lab/monocle-release.git</td>
+    </tr>
+  </tbody>
+</table>
+
+### Staging, rearing and stocks
 
 Staging followed (Parichy et al., 2009) and fish were maintained at ~28.5°C under 14:10 light:dark cycles. All thyroid-ablated (Mtz-treated) and control (DMSO-treated) Tg(tg:nVenus-v2a-nfnB) fish were kept under TH-free conditions and were fed only Artemia, rotifers enriched with TH-free Algamac (Aquafauna), and bloodworms. Fish stocks used were: wild-type ABwp or its derivative WT(ABb) (Eom et al., 2015); Tg(tg:nVenus-v2a-nfnB)wp.rt8, Tg(aox5:palmEGFP)wp.rt22, Tg(tyrp1b:palm-mCherry)wp.rt11 (McMenamin et al., 2014); csf1raj4blue (Parichy et al., 1999); Tg(−28.5Sox10:Cre)zf384 (Kague et al., 2012); Tg(−3.5ubi:loxP-EGFP-loxP-mCherry)cz1701 (Mosimann et al., 2011); tuba8l3:nEosFPvp.rt17, thrabvp31rc1, thraavp33rc1, thrbvp34rc1, scarb1vp32rc1 and tyrvp35rc1 (this study). Mutants and transgenic lines were maintained in the WT(ABb) genetic background. Fish were anesthetized prior to imaging with MS222 and euthanized by overdose of MS222. All procedures involving live animals followed federal, state and local guidelines for humane treatment and protocols approved by Institutional Animal Care and Use Committees of University of Virginia and University of Washington.
 
-## Nitroreductase-mediated cell ablation
+### Nitroreductase-mediated cell ablation
 
 To ablate thyroid follicles of Tg(tg:nVenus-2a-nfnB), we incubated 4-day post-fertilization (dpf) larvae for 8 hr in 10 mM Mtz with 1% DMSO in E3 media, with control larvae incubated in 1% DMSO in E3 media. For all thyroid ablations, treated individuals were assessed for loss of nuclear-localizing Venus (nVenus) the following day. Ablated thyroid glands fail to regenerate (McMenamin et al., 2014) and absence of regeneration in this study was confirmed by continued absence of nVenus expression.
 
-## Mutant and transgenic line production
+### Mutant and transgenic line production
 
 For CRISPR/Cas9 mutagenesis, one-cell stage embryos were injected with 200 ng/μl sgRNAs and 500 ng/μl Cas9 protein (PNA Bio) using standard procedures (Shah et al., 2015). Guides were tested for mutagenicity by Sanger sequencing and injected fish were reared through adult stages at which time they were crossed to Tg(tg:nVenus-v2a-nfnB) to generate heterozygous F1s from which single allele strains were recovered. CRISPR gRNA targets (excluding protospacer adjacent motif) are included in Supplementary file 2—Table 7. Mutant alleles of scarb1 and TR loci are provided in Figure 6—figure supplement 3 and Figure 7—figure supplement 1, respectively. The melanin free tyrvp.r34c1 allele generated for analyses of melanophore lysosomal content exhibits a four nucleotide deletion beginning at position 212 that leads to novel amino acids and a premature stop codon (H71QEWTIESDGL*).
 
@@ -135,29 +453,29 @@ For F0 thrb mutagenesis analysis in the thraa; thrab mutant background, chemical
 
 To label nuclei of adult melanophores, BAC CH73-199E17 containing the puma gene tuba8l3 (Larson et al., 2010) was recombineered to contain nuclear-localizing photoconvertible fluorophore EosFP using standard methods (Sharan et al., 2009; Suster et al., 2011).
 
-## Imaging
+### Imaging
 
 Images were acquired on: Zeiss AxioObserver inverted microscopes equipped with Axiocam HR or Axiocam 506 color cameras; a Zeiss AxioObserver inverted microscope equipped with CSU-X1 laser spinning disk (Yokogawa) and Orca Flash 4.0 camera (Hamamatsu Photonics); or a Zeiss LSM 880 scanning laser confocal microscope with Fast Airyscan and GaAsP detectors. Images were corrected for color balance and adjusted for display levels as necessary with conditions within analyses treated identically.
 
-## Cell counts
+### Cell counts
 
 Melanophores and xanthophores were counted within regions defined dorsally and ventrally by the margins of the primary stripes, anteriorly by the anterior margin of the dorsal fin, and posteriorly by five myotomes from the start. Only hypodermal melanophores were included in analysis; dorsal melanophores and those in scales were excluded. Mature xanthophores were counted by the presence of autofluorescent carotenoid with associated yellow pigment. Cell counts were made using ImageJ. Individual genotypes of fish assessed were confirmed using PCR or Sanger sequencing.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization (ISH) probes and tissue were prepared as described (Quigley et al., 2004). Probes were hybridized for 24 hr at 66°C. Post-hybridization washes were performed using a BioLane HTI 16Vx (Intavis Bioanalytical Instruments), with the following parameters: 2x SSCT 3 × 5 min, 11 × 10 min at 66°C; 0.2x SSCT 10 × 10 min; blocking solution [5% normal goat serum (Invitrogen), 2 mg/mL BSA (RPI) in PBST] for 24 hr at 4°C; anti-Dig-AP, Fab fragments (1:5000 in blocking solution, Millipore-Sigma) for 24 hr at 4°C; PBST 59 × 20 min. AP staining was performed as described (Quigley et al., 2004).
 
-## Pigment analyses
+### Pigment analyses
 
 Xanthophore pigments were examined by imaging autofluorescence in eGFP and DAPI spectral ranges for carotenoids and pteridines, respectively. For imaging pteridines, fish were euthanized and treated with dilute ammonia to induce autofluorescence (Odenthal et al., 1996).
 
 For analyses of carotenoid contents by HPLC we pooled three skin samples from each genotype and condition (Mtz-treated or control) into two separate samples. We homogenized the tissue in a glass dounce homogenizer with 1 ml of 0.9% sodium chloride and quantified the protein content of each sample with a bicinchoninic acid (BCA) assay (23250, Thermo). We then extracted carotenoids by combining the homogenates with 1 ml methanol, 2 ml distilled water, and 2 ml of hexane:tert-methyl butyl ether (1:1 vol:vol), separated the fractions by centrifuging, collected the upper solvent fraction, and dried it under a stream of nitrogen. We saponified these extracts with 0.2 M NaOH in methanol at room temperature for 4 hr following the protocol described in Toomey and McGraw (2007). We extracted the saponified carotenoids from this solution with 2 ml of hexane:tert-methyl butyl ether (1:1 vol:vol) and dried the solvent fraction under a stream of nitrogen. We resuspended the saponified extracts in 120 μl of methanol:acetonitrile 1:1 (vol:vol) and injected 100 µl of this suspension into an Agilent 1100 series HPLC fitted with a YMC carotenoid 5.0 µm column (4.6 mm ×250 mm, YMC). We separated the pigments with a gradient mobile phase of acetonitrile:methanol:dichloromethane (44:44:12) (vol:vol:vol) through 11 min, a ramp up to acetonitrile:methanol:dichloromethane (35:35:30) for 11–21 min and isocratic conditions through 35 min. The column was warmed to 30°C, and mobile phase was pumped at a rate of 1.2 ml min−1 throughout the run. We monitored the samples with a photodiode array detector at 400, 445, and 480 nm, and carotenoids were identified and quantified by comparison to authentic standards (a gift of DSM Nutritional Products, Heerlen, The Netherlands). Analyses of 5 dpf wild-type and csf1ra mutants used only larval heads where xanthophores are abundant in the wild type; other procedures were the same as for later stages.
 
-## Immunohistochemistry and Oil-red-O staining
+### Immunohistochemistry and Oil-red-O staining
 
 Skins of Tg(aox5:palmEGFP) euthyroid and hypothyroid zebrafish (8.6–10.4 SSL) were dissociated and plated at low density in L-15 medium (serum free) on collagen-coated, glass bottom dishes (Mattek) for 5 hr. Cells were then fixed with freshly prepared 4% PFA for 15 m, rinsed with PBST (0.1%), blocked (5% goat serum, 1% BSA, 1X PBS), then incubated at 4°C overnight with rabbit anti-GFP primary antibody (ThermoFisher). Stained cells were rinsed 3X with 1X PBS and fixed again with 4% PFA for 30 min. Cells were then rinsed twice with ddH2O, washed with 60% isopropanol for 5 min, and then dried completely. Cells were incubated with filtered, Oil Red O solution (5 mM in 60% isopropanol) for 10 min, and rinsed 4X with ddH20 before imaging (Koopman et al., 2001). All GFP+ cells were imaged across two plates per condition and were scored for presence or absence of red staining.
 
-## Melanophore maturation assays
+### Melanophore maturation assays
 
 For assaying senescence of melanophores ex vivo, skins from euthyroid and hypothyroid fish (n = 3 each, 11 SSL) were cleared of scales, dissociated and plated on glass-bottom, collagen coated dishes (MatTek) in L-15 medium (Gibco) and incubated overnight at 28°C. Cells were then rinsed with dPBS, fixed with 4% PFA and stained using a Senescence β-Galactosidase Staining Kit (Cell Signaling Technologies, cat. #9860) according to manufacturer's instructions (Ceol et al., 2011; Dimri et al., 1995). Staining was carried out for 48 hr at pH six prior to imaging.
 
@@ -165,60 +483,60 @@ To assay cell state as measured by lysosomal content (Kurz et al., 2000; Lee et 
 
 Melanin content was measured from brightfield images in Fiji. All image quantifications were performed using the base processing and analysis functions in ImageJ. Images were aligned and centered on the horizontal myoseptum and cropped to 2500 × 1500 pixels around dorsal and ventral stripes. Images were segmented based on red channel intensity using ‘Auto Local Threshold’ with parameters ‘method = Sauvola radius = 50’. To account for close or overlapping melanophores, particles were further segmented using watershed segmentation. Particles larger than 25 pixels and not touching an edge were used for subsequent analyses.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Fish were euthanized then fixed in sodium cacodylate buffered 4% glutaraldehyde overnight at 4°C. Trunk regions were dissected then tissue stained in 2% osmium tetroxide for 30 min, washed, and then stained in 1% uranyl acetate overnight at 4°C. Samples were dehydrated with a graded ethanol series then infiltrated with a 1:1 propylene oxide:Durcupan resin for 2 hr followed by fresh Durcupan resin overnight and flat embedded prior to polymerization. Blocks were thin sectioned on a Leica EM UC7 and sections imaged on a JEOL 1230 transmission electron microscope.
 
-## Tissue dissociations and FACS
+### Tissue dissociations and FACS
 
 Trunks or skins of staged, post-embryonic zebrafish (7.2–11.0 SSL) were dissected (n = 8 per replicate) and enzymatically dissociated with Liberase (Sigma-Aldrich cat. 5401119001, 0.25 mg/mL in dPBS) at 25°C for 15 min followed by manual trituration with a flame polished glass pipette for 5 min. Cell suspensions were then filtered through a 70 μm Nylon cell strainer to obtain a single cell suspension. Liberated cells were re-suspended in 1% BSA/5% FBS in dPBS and DAPI (0.1 μg/mL, 15 min) before FACS purification. All plastic and glass surfaces of cell contact were coated with 1% BSA in dPBS before to use. Prior to sorting for fluorescence levels, single cells were isolated by sequentially gating cells according to their SSC-A vs. FSC-A, FSC-H vs FSC-W and SSC-H vs SSC-W profiles according to standard flow cytometry practices. Cells with high levels of DAPI staining were excluded as dead or damaged. Cells from wild-type and Tg(ubi:switch) zebrafish without Cre were used as negative control to determine gates for detection of mCherry and GFP fluorescence, then cells from Tg(sox10:Cre; ubi:switch) zebrafish were purified according to these gates. NC-derived cells cells were isolated by identifying cells with high fluorescence in the mCherry-A channel which describes expression of the ubi:loxP-EGFP-loxP-mCherry transgene after permanent conversion to ubi:mCherry after exposure to Sox10:Cre (see Figure 2—figure supplement 1C). All samples were kept on ice except during Liberase incubation, and sorted chilled.
 
-## RT-PCR
+### RT-PCR
 
 Skin tissue from stage-matched fish was dissociated as above and melanophores and xanthophores were FAC sorted for the presence aox5:palmeGFP or tyrp1b:palm-mCherry, respectively. RNA was extracted from pools of 1000 cells using the RNAqueous-Micro kit (Thermo Fisher, cat. AM1912). Full length cDNA was synthesized with Superscript III reverse transcriptase (Thermo Fisher, cat. #18080093). Amplifications were 40 cycles with Q5 DNA polymerase (NEB, M0492), 38 cycles at 94°C, 30 s; 67°C, 20 s; 72°C, 20 s. For primer sequences (actb1, thraa, thrab, thrb), see Supplementary file 2—Table 7.
 
-## Single-cell collection, library construction and sequencing
+### Single-cell collection, library construction and sequencing
 
 Whole-trunks or skins were collected from stage-matched Tg(tg:nVenus-2a-nfnB) euthyroid and hypothyroid siblings, dissociated, and sox10:Cre:mCherry+ cells isolated by FACS.
 
 We replicated the experiment three times. For each replicate, we collected cells from euthyroid and hypothyroid fish at 7.2 SSL, 8.6 SSL, and 9.6 SSL (mid-larval, 6–10 fish per stage, per replicate) and sorted equal numbers of mCherry+ cells from each group into a single sample. Cells were pelleted and resuspended in 0.04% ultrapure BSA (ThermoFisher Scientific). Representing a terminal stage of pigment pattern development, we also collected mCherry+ cells from one sample within each replicate of 11 SSL (juvenile, five fish per condition) euthyroid and hypothyroid fish. To capture cells representing the EL pigment pattern, we collected mCherry+ cells from five dpf larvae (50 fish). In each experiment, we ran parallel euthyroid and hypothyroid samples (fish were siblings). For each sample, we targeted 2000–4000 cells for capture using the Chromium platform (10X Genomics) with one lane per sample. Single-cell mRNA libraries were prepared using the single-cell 3’ solution V2 kit (10X Genomics). Quality control and quantification assays were performed using a Qubit fluorometer (Thermo Fisher) and a D1000 Screentape Assay (Agilent). Libraries were sequenced on an Illumina NextSeq 500 using 75-cycle, high output kits (read 1: 26 cycles, i7 Index: eight cycles, read 2: 57 cycles). Each sample was sequenced to an average depth of 150 million total reads. This resulted in an average read depth of ~40,000 reads/cell after read-depth normalization.
 
-## scRNA-Seq data processing
+### scRNA-Seq data processing
 
 We found that for many genes, annotated 3' UTRs in the Ensembl 93 zebrafish reference transcriptome were shorter than true UTR lengths observed empirically in pileups of reads mapped to the genome. This led to genic reads being counted as intergenic. To correct for this bias in aligning reads to the transcriptome, we extended all 3' UTR annotations by 500 bp. In rare cases, UTR extension resulted in overlap with a neighboring gene and in these instances we manually truncated the extension to avoid such overlap. We built a custom zebrafish STAR genome index using gene annotations from Ensembl GRCz11 with extended 3’ UTRs plus manually annotated entries for mCherry transcript, filtered for protein-coding genes (with Cell Ranger mkgtf and mkref options). Final cellular barcodes and UMIs were determined using Cell Ranger 2.0.2 (10X Genomics) and cells were filtered to include only high-quality cells. Cell Ranger defaults for selecting cell-associated barcodes versus barcodes associated with empty partitions were used. All samples were aggregated (using 10X Cell Ranger pipeline ‘cellranger aggr’ option), with intermediary depth normalization to generate a gene-barcode matrix containing ~25,000 barcoded cells and gene expression counts.
 
-## UMAP visualization and clustering
+### UMAP visualization and clustering
 
 We used Uniform Manifold Approximation and Projection (UMAP) (McInnes et al., 2018) to project cells in two or three dimensions and performed louvain clustering (Blondel et al., 2008) using the reduceDimension and clusterCells functions in Monocle (v.2.99.1) using default parameters (except for, reduceDimension: reduction_method = UMAP, metric = cosine, n_neighbors = 30, mid_dist = 0.5; clusterCells: res = 1e-3, k = 15). We assigned clusters to cell types based on the detection of published marker genes. Cells isolated from euthyroid and hypothyroid fish were combined to maintain consistency of analysis and for comparisons between groups. Batch correction methods were not used between the two groups or across samples because we did not observe sample-specific separation or clustering in UMAP space. Cells with more than 15,000 UMIs were discarded as possible doublets. All genes were given as input to Principal Components Analysis (PCA). The top 30 principal components (high-loading, based on the associated scree plot) were then used as input to UMAP for generating either 2D or 3D projections of the data. For, subclustering of pigment cell clusters (melanophores, iridophores, xanthophores, and pigment progenitors), we subsetted the data set and again applied UMAP dimensionality reduction and louvain clustering.
 
-## Differential expression analysis to determine cell-type markers
+### Differential expression analysis to determine cell-type markers
 
 To identify genes expressed cell-type specifically, we used the principalGraphTest function in Monocle3 (v.2.99.1) with default parameters (Cao et al., 2019). This function uses a spatial correlation analysis, the Moran’s I test, to assess spatially restricted gene expression patterns in low dimensional space. We selected markers by optimizing for high specificity, expression levels and effect sizes within clusters (For extended list of cell-type-specific genes, see Supplementary file 2—Table 1).
 
-## Trajectory analysis
+### Trajectory analysis
 
 The top 800 highly dispersed genes (Supplementary file 2—Table 5) within euthyroid pigment cells (melanophores, xanthophores, iridophores, and pigment progenitors) were chosen as feature genes to resolve pseudotemporal trajectories using the setOrderingFilter, reduceDimension, and orderCells functions in Monocle (v2.9.0) using default parameters with the exception of setting max_components = 3 and num_dim = 10 to generate the trajectory in 3D with the top 10 PCs (high-loading based on scree plot) during dimensionality reduction.
 
-## Branched Expression Analysis Modeling (BEAM)
+### Branched Expression Analysis Modeling (BEAM)
 
 After running trajectory analysis on pigment cells, we used the BEAM function in Monocle (v.2.9.0) with default settings (except, branch_point = 3) to determine differentially expressed genes between trajectory branches. To generate the BEAM heatmap for the three pigment cell trajectory branches, we used the plot_multiple_branches_heatmap function with default settings (except assigning branch 1, 5, and six to iridophores, melanophores, and xanthophores, respectively; and num_clusters = 6). Genes were selected by significance levels for the three-branch BEAM analysis with additional significant genes added from the melanophore and iridophore two-branch analysis for more even distribution of genes across lineages (q < 6.0E-11 for all genes, except for pax3a (starred, q = 0.03) which is a positive indicator of early pseudotime for all lineages).
 
-## Differential expression analysis across pseudotime
+### Differential expression analysis across pseudotime
 
 To determine differentially expressed genes over pseudotime that were TH-dependent, we filtered the data set for genes expressed in at least five cells and performed differential expression analysis using a full model of sm.ns(Pseudotime, df = 3)*condition and a reduced model of sm.ns(Pseudotime, df = 3).
 
-## Development and analysis of pathway signature scores
+### Development and analysis of pathway signature scores
 
 Gene sets for signature scores were selected using gene ontology (terms and gene sets from zfin.org; cell-cycle, unfolded protein response, AP-1 transcription factor complex members) or manual curation based on literature when required (carotenoid, pteridine, melanin) (see Supplementary file 2—Table 4). Signature scores were calculated by generating z-scores (using scale()) of the mean of expression values (log transformed, size factor normalized) from genes in a given set.
 
-## Statistics
+### Statistics
 
 Parametric, non-parametric and multiple logistic regression analyses were performed using JMP 14.0 (SAS Institute, Cary, NC) or R [version 3.5.0] (R Development Core Team, 2017). For parametric analyses, residuals were assessed for normality and homoscedasticity to meet model assumptions and no transformations were found to be warranted.
 
-## Data availability
+### Data availability
 
 Data is available on GEO via accession GSE131136.
 
-## Code availability
+### Code availability
 
 Monocle is available through GitHub (https://github.com/cole-trapnell-lab/monocle-release.git; Trapnell, 2019).

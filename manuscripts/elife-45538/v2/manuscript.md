@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.45538.001 Licensing of eukaryotic origins of replication requires DNA loading of two copies of the Mcm2-7 replicative helicase to form a head-to-head double-hexamer, ensuring activated helicases depart the origin bidirectionally. To understand the formation and importance of this double-hexamer, we identified mutations in a conserved and essential Mcm4 motif that permit loading of two Mcm2-7 complexes but are defective for double-hexamer formation. Single-molecule studies show mutant Mcm2-7 forms initial hexamer-hexamer interactions; however, the resulting complex is unstable. Kinetic analyses of wild-type and mutant Mcm2-7 reveal a limited time window for double-hexamer formation following second Mcm2-7 association, suggesting that this process is facilitated. Double-hexamer formation is required for extensive origin DNA unwinding but not initial DNA melting or recruitment of helicase-activation proteins (Cdc45, GINS, Mcm10). Our findings elucidate dynamic mechanisms of origin licensing, and identify the transition between initial DNA melting and extensive unwinding as the first initiation event requiring double-hexamer formation.
+Licensing of eukaryotic origins of replication requires DNA loading of two copies of the Mcm2-7 replicative helicase to form a head-to-head double-hexamer, ensuring activated helicases depart the origin bidirectionally. To understand the formation and importance of this double-hexamer, we identified mutations in a conserved and essential Mcm4 motif that permit loading of two Mcm2-7 complexes but are defective for double-hexamer formation. Single-molecule studies show mutant Mcm2-7 forms initial hexamer-hexamer interactions; however, the resulting complex is unstable. Kinetic analyses of wild-type and mutant Mcm2-7 reveal a limited time window for double-hexamer formation following second Mcm2-7 association, suggesting that this process is facilitated. Double-hexamer formation is required for extensive origin DNA unwinding but not initial DNA melting or recruitment of helicase-activation proteins (Cdc45, GINS, Mcm10). Our findings elucidate dynamic mechanisms of origin licensing, and identify the transition between initial DNA melting and extensive unwinding as the first initiation event requiring double-hexamer formation.
 
 ## Introduction
 
@@ -34,13 +34,25 @@ To investigate the formation and function of the Mcm2-7 double hexamer, we initi
 
 ## Results
 
-## N-terminal deletions of Mcm2 and Mcm4 inhibit Mcm2-7 loading
+### N-terminal deletions of Mcm2 and Mcm4 inhibit Mcm2-7 loading
 
 To study the role of Mcm2, Mcm4 and Mcm6 N-terminal extensions (NTEs) in helicase loading, we created deletion mutations lacking these elements (Figure 1A). We used Quick2D (Dosztányi et al., 2005; Jones, 1999; Zimmermann et al., 2018) and the location of phosphorylation sites (Randell et al., 2010) to identify the N-terminal unstructured regions for each subunit (Figure 1—figure supplement 1). Based on these criteria, we purified Mcm2-7 complexes containing Mcm2Δ2-177, Mcm4Δ2-181, or Mcm6Δ2-105. Subsequent structural studies (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017) suggested that the first structured amino acids of Mcm2, Mcm4, and Mcm6 are amino acids 201, 177, and 103, respectively. Thus, we deleted the unstructured regions of Mcm2 and Mcm6, but included a small structured region in the Mcm4 NTE deletion. In addition, we purified Mcm2-7 containing Mcm4Δ2-174, which bypasses the requirement of DDK in vivo (Sheu and Stillman, 2010) but had not been characterized biochemically. Importantly, upon expression with the other five wild-type subunits and Cdt1, each mutant Mcm subunit assembled into a stable Mcm2-7 heterohexamer that bound to Cdt1 (Figure 1—figure supplement 2). We will refer to the mutant Mcm2-7 complexes by the mutated subunit and the site of the mutation (e.g. Mcm2-7 that contains Mcm4Δ2-181 is Mcm2-74Δ181).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram of Mcm2, Mcm4, and Mcm6 deletions. (B) Mcm2-72Δ177 and Mcm2-74Δ181 are defective in helicase loading onto origin-containing DNA. Helicase loading of the indicated Mcm2-7 N-terminal-deletions was monitored by incubating with purified helicase-loading proteins and bead-attached origin DNA followed by a high-salt wash (0.5M NaCl). All loading was dependent on Cdc6. (C) Mcm2Δ177 and Mcm4Δ181 deletions are lethal. The indicated genes were tested for complementation of a deletion of the corresponding wild-type gene before (YPD) and after (FOA) selecting against a plasmid with the corresponding wild-type gene. Endogenous MCM2, MCM4 or MCM6 gene is deleted, and a copy of the corresponding wild-type MCM is present on a URA3-containing plasmid. Indicated MCM mutants were integrated into the genome at the corresponding TRP1 locus. Five-fold serial dilutions of cells were spotted on the indicated media.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The resulting secondary structure predictions are labeled as following; H, alpha-helix; E, beta-strand; D, Disorder. Red arrows indicate the last amino acid of the NTE deletion regions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** After protein purification and gel filtration column (see Materials and Methods), Mcm2-7 complexes were separated on 8% acrylamide gel and stained with Coomassie Blue.
+
 To determine the impact of each deletion on Mcm2-7 loading, we tested the mutant Mcm2-7 complexes in an in vitro helicase-loading assay (Remus et al., 2009). After incubating the Mcm2-7 complex with purified ORC, Cdc6, Cdt1 and DNA, we used a high-salt wash to release helicase-loading proteins and Mcm2-7 complexes that had not completed loading (Donovan et al., 1997; Randell et al., 2006). Comparison with wild-type Mcm2-7 shows that Mcm2-72Δ177 and Mcm2-74Δ181 have loading defects (Figure 1B). In contrast, Mcm2-74Δ174 and Mcm2-76Δ105 are loaded at similar levels as the wild-type protein. Thus, the Mcm2 and Mcm4 deletions interfere with stable helicase loading. To determine whether these deletions impact MCM function in vivo, we assessed the ability of each of the mutant MCM genes to complement a deletion of the corresponding wild-type gene. Although Mcm2-72Δ177 and Mcm2-74Δ181 show incomplete helicase-loading defects in vitro, each of these mutants is lethal in vivo (Figure 1C). In contrast, Mcm2-76Δ105 supports normal cell growth, and Mcm2-74Δ174 cells are viable but grow at a much slower rate. Thus, the Mcm2 and Mcm4 deletion mutants impact both helicase loading and cell viability.
 
-## A conserved Mcm4 N-terminal motif is required for stable double-hexamer formation
+### A conserved Mcm4 N-terminal motif is required for stable double-hexamer formation
 
 Because the NTEs are located at the double-hexamer interface, we asked if the NTE-deletion mutations impacted the formation of this complex. Previous studies have shown that double-hexamer formation is not required for salt-stable helicase loading detected in the previous assays (Ticau et al., 2015). Thus, we tested the ability of each of the mutant complexes to form Mcm2-7 double hexamers using a previously described gel-filtration assay (Figure 2A; Evrin et al., 2009). For wild-type Mcm2-7, Mcm2-72Δ177, Mcm2-74Δ174 and Mcm2-76Δ105, the majority of salt-resistant DNA associated Mcm2-7 complexes eluted as double hexamers (Figure 2B). In contrast, loaded Mcm2-74Δ181 is entirely in the form of single hexamers (Figure 2B), suggesting that this mutation inhibits double-hexamer formation or stability.
 
@@ -50,21 +62,57 @@ Because the NTEs are located at the double-hexamer interface, we asked if the NT
 
 The different functionality of the two Mcm4 mutants (Mcm2-74Δ174, no loading defect, viable; Mcm2-74Δ181, loading defect and lethal) focused our attention on the region of Mcm4 only present in Mcm2-74Δ174 (amino acids 175–181). To test the importance of this region in the context of otherwise full-length Mcm4, we constructed both substitution and deletion mutations (Figure 3A). Mcm2-7 complexes containing these mutations assembled normally and interacted with Cdt1 (Figure 1-figure supplement 2). Deletion or alanine substitution of these amino acids causes a two-fold loading defect compared to wild type Mcm2-7 (Figure 3A). In the double-hexamer assay, loaded Mcm2-74Δ175-181 and Mcm2-74-7A eluted almost exclusively in the form of single hexamers (Figure 3B), implicating this region of Mcm4 in double-hexamer formation or stability. Importantly, both mcm4Δ175–181 and mcm4-7A are unable to complement a MCM4 deletion (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig3-v2.jpg)
+
+**Figure 3.:** (A) Top, diagram of Mcm4 amino acids 175–181 deletion and alanine-substitution mutations. Bottom, Mcm2-74 Δ175-181 and Mcm2-74-7A are defective for helicase loading. Helicase loading of wild-type or Mcm2-7 complexes including the indicated Mcm4 mutant was monitored as described in Figure 1. The associated graph shows the relative loading of the Mcm4 mutants compared to wild-type Mcm2–7 based on three independent experiments. Error bars indicate the SD. (B) Mcm2-74Δ175-181 and Mcm2-74-7A are defective in double-hexamer formation. Double-hexamer formation by Mcm2–7 complexes containing the indicated Mcm4 mutation was tested as described in Figure 2. Mutant viability data (right) are from Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Deletion (Mcm4Δ175–181) or alanine substitution (Mcm4-7A) of Mcm4 amino acids 175–181 are lethal. In all strains, endogenous MCM4 gene is deleted, and a copy of wild-type MCM4 is present on a URA3-containing plasmid. The indicated MCM4 mutants were integrated into the TRP1 locus. Five-fold serial dilutions of cells were spotted on the indicated media.
+
 Sequence analysis of the 175–181 region of Mcm4 identified a highly-conserved nine-amino-acid motif that overlapped with this region (Figure 4A). To test whether this motif is required for double-hexamer formation, we constructed a series of substitution mutations overlapping this motif (Figure 4B), incorporated them into otherwise wild-type Mcm2-7 complexes (Figure 1—figure supplement 2) and tested them for helicase loading and double-hexamer formation. Mcm2-7 complexes with mutations that disrupt the conserved motif (Mcm2-74-178A, Mcm2-74-181FA, Mcm2-74-182A and Mcm2-74-185A) show two-fold loading defects compared to wild-type, whereas mutant complexes that do not alter the conserved regions (Mcm2-74-175A and Mcm2-74-188A) show near-wild-type levels of helicase loading (Figure 4C). Testing these mutants for the formation of stable double hexamers shows that Mcm2-74-178A, Mcm2-74-181FA, Mcm2-74-182A were primarily in single-hexamer form and Mcm2-74-185A is split between single- and double-hexamer forms (Figure 4D). In contrast, the mutants that are outside of the conserved motif are primarily in the double-hexamer form (Figure 4D). These results demonstrate that this conserved Mcm4 motif is important for the formation or stability of the Mcm2-7 double hexamer. Therefore, we named this region the Double-Hexamer Motif (DoHM). Consistent with double-hexamer formation being essential, we observed a close correlation between the ability of a mutant Mcm4 to form stable double hexamers and the ability of the corresponding mutant gene to complement a MCM4 deletion (Figure 4D, Figure 4—figure supplement 1).
 
-## The DoHM is required for Mcm2-7 double-hexamer stability
+![Figure 4.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig4-v2.jpg)
+
+**Figure 4.:** (A) Protein-sequence comparison of amino acids (175 to 194) surrounding the of S. cerevisiae DoHM (boxed) with Mcm4 of the indicated species (sp, S. pombe; dm. D. melanogaster; dr, D. rerio; ce, C. elegans; xl, X. laevis; hs, H. Sapien; at, A. thaliana). Identical amino acids are shaded dark green, and conserved amino acids are shaded light green. (B) Diagram of alanine mutations spanning the DoHM and the flanking amino acids. (C) Mcm4 mutations within the DoHM show helicase-loading defects. Helicase loading of Mcm2–7 complexes containing indicated Mcm4 mutants was monitored as described in Figure 1. The associated graph shows the relative loading of the Mcm4 mutants compared to wild-type Mcm2-7, based on three independent loading experiments. Error bars indicate the SD. (D) Mcm4 mutations within the DoHM are defective for double-hexamer formation. Double-hexamer formation by Mcm2-7 complexes containing indicated Mcm4 mutant was tested as described in Figure 2. Mutant viability data are indicated to the right and are from Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mcm4 alanine mutations that disrupted the DoHM (Mcm2-74-178A, Mcm2-74-181FA, Mcm2-74-182A and Mcm2-74-185A) or that did not (Mcm2-74-175A and Mcm2-74-188A) were tested for complementation of a MCM4 deletion. Mcm2-74-178A, Mcm2-74-181FA, Mcm2-74-182A are fully defective for double-hexamer formation and are lethal. Mcm2-74-185A, which has partial defect in double-hexamer formation, is viable but shows a growth defect in this test. In all strains, endogenous MCM4 gene is deleted, and a copy of wild-type MCM4 is present on a URA3-containing plasmid. The indicated MCM4 mutants were integrated into the TRP1 locus. Five-fold serial dilutions of cells were spotted on the indicated media.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The double-hexamer interface is located at the horizontal midpoint of the image. The DoHM of Mcm4 from the top Mcm2-7 hexamer (green), the region of Mcm7 from the top hexamer that interacts with the DoHM (light blue), and the region of Mcm5 from the bottom hexamer that interacts with the DoHM (yellow) are all shown in space filling representation. The remainder of the structure is shown as a ribbon structure with Mcm6 in orange, Mcm2 in magenta, and Mcm3 in dark blue.
+
+### The DoHM is required for Mcm2-7 double-hexamer stability
 
 The DoHM mutants could result in reduced double-hexamer detection for two possible reasons. The first possibility is that these Mcm4 mutants allow double-hexamer formation, but the resulting assemblies fall apart due to a weakened interface. Alternatively, the DoHM could be required to initiate double-hexamer formation. In the experiments described thus far, we used an ensemble assay to monitor double-hexamer formation. This assay requires the two Mcm2-7 complexes to remain associated during size-exclusion chromatography to be detected. Thus, defects either in the rate of stable double-hexamer formation or in the lifetime of the double-hexamer complex would not be distinguished by this assay.
 
 To monitor double-hexamer interactions in real time, we used a single-molecule FRET assay for double-hexamer formation (Ticau et al., 2015). In this experiment, the N-terminus of the Mcm7 subunit in two separate Mcm2-7/Cdt1 preparations was labeled with either a donor or an acceptor fluorophore. We incubated surface-tethered fluorescent origin DNA with an equimolar mixture of the two differentially-labeled Mcm2-7 complexes together with the three helicase-loading proteins (ORC, Cdc6 and Cdt1, Figure 5A). We alternately excited the acceptor and donor fluorophores to detect the colocalization of donor- or acceptor-labeled Mcm2-7 with the fluorescently labeled DNA, a proxy for DNA binding. Importantly, when the donor fluorophore is excited, we are also able to detect hexamer-hexamer interactions through an increase in apparent FRET efficiency (EFRET, Ticau et al., 2015). To eliminate helicase-loading events during which we cannot monitor these interactions, we only analyzed events in which we observed DNA association of one donor-fluorophore-labeled and one acceptor-fluorophore-labeled Mcm2-7 complex, and measured EFRET only after arrival of the second Mcm2-7.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of the single-molecule helicase-loading assay. Alexa-Fluor-488-labeled (blue circle) 1.3 kb origin DNAs were coupled to a passivated microscope slide. Mcm2-7 was fluorescently labeled with donor (Dyomic-549, green circle) or acceptor (Dyomic-649, red circle) fluorophores. Purified ORC, Cdc6, and Cdt1/Mcm2–7 were incubated with slide-coupled DNA. Colocalization of fluorescently-labeled proteins with the DNA and any associated FRET signal were monitored. (B) Wild-type Mcm2-7 forms long-lasting FRET signals. Representative fluorescence records for an experiment using a 1:1 mixture of wild-type donor- and acceptor-labeled Mcm2-7 showed FRET after arrival of the second Mcm2–7. Records of fluorescence intensity for (i) acceptor excitation; acceptor emission (Dyomic-649-labeled Mcm2-7, red arrow marks arrival of acceptor-labeled Mcm2-7), (ii) donor excitation; donor emission (Dyomic-549-labeled Mcm2-7, green arrow marks arrival of donor-labeled Mcm2-7) and FRET (donor excitation; acceptor emission, blue arrow marks initiation of FRET), (iii) total emission (donor excitation; donor emission + acceptor emission), and (iv) calculated EFRET are shown. Black arrows indicate both donor and acceptor release due to the double hexamer sliding off the end of the DNA. (C) Representative fluorescence records for experiments using Mcm2-74-178A (labels and arrows as in B) show a short-lived FRET signal. (D) (i) Time evolution of the EFRET distribution for 89 wild-type Mcm2-7 complexes. Only complexes with one donor-labeled and one acceptor-labeled Mcm2-7 were selected. EFRET values were measured only after arrival of the second Mcm2-7, which was taken to be time zero in each record. The plot is a two-dimensional histogram (see Materials and Methods) with Nt = 2688 measurements within the time and EFRET range shown. (ii-iv) Histograms (probability density ± S.E.) of EFRET values recorded during the indicated time intervals after association of the second Mcm2–7 with origin DNA (black bar indicates possible intermediate EFRET state). EFRET values were globally fit to the sum (dashed cyan curves) of two Gaussians (red curves) constrained to have the same peak positions and widths at all times. (E) Analyses analogous to (D) for the DoHM mutant (114 complexes; Nt = 2584 in range shown in (i). For (ii) - (iv) in (D, E), fit parameters and numbers of observations are reported in Supplementary file 1 - table 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data represented in panels i-iv are as described in Figure 5B and C.
+
 Single-molecule analyses of double-hexamer formation supported a role for the DoHM in double-hexamer formation. Both wild-type Mcm2-7 and a DoHM mutant (Mcm2-74-178A, referred to as the DoHM mutant hereafter) exhibited an increase in EFRET shortly (<10 s) after the arrival of the second Mcm2-7 (Figure 5B,C; Figure 5—figure supplement 1). Analysis of wild-type helicase-loading events (N = 89) revealed that immediately after arrival of the second Mcm2-7, the two-Mcm2-7 complexes were primarily in state that exhibited zero or very low FRET (EFRET = 0.029 ± 0.003, Figure 5D–i and D-ii, Supplementary file 1 - table 1). However, shortly after the second Mcm2-7 arrived, many (~70%; Supplementary file 1 - table 1) of the DNAs associated with wild-type Mcm2-7 transitioned to a state exhibiting increased FRET (EFRET = 0.606 ± 0.002; Figure 5D–iii and D-iv, Supplementary file 1 - table 1). Importantly, all the complexes that transitioned to high EFRET remained in that state (Figure 5D–i and D-iv) until the observation was terminated by the end of the recording or by the disappearance of donor and/or acceptor fluorescence (either due to photobleaching or sliding of the double hexamer off the DNA; Figure 5B, black arrow). These observations are consistent with our previous studies showing that wild-type Mcm2-7 rapidly forms stable double hexamers upon recruitment of the second Mcm2-7 (Ticau et al., 2015). In the data collected shortly (~0–10 s) after arrival of the second Mcm2-7, there is some evidence for the presence of a transient state with EFRET intermediate between zero and the high value (Figure 5D–ii, black bar) but the additional state, if present, was not clearly resolved in the current experiments.
 
 After arrival of the second Mcm2-7, the DoHM mutant also exhibited an initial state with similarly low FRET followed by a rapid transition on many of the DNA molecules to a state with high FRET (Figure 5C). Thus, like wild-type Mcm2-7, the DoHM mutant can form a structure in which the two hexamers are so closely apposed that the donor and acceptor fluorophores are separated by only a few nanometers. However, there are two noticeable differences in the EFRET time courses with the DoHM mutant helicase (Figure 5E). First, the elevated EFRET value observed for the DoHM mutant was distinct (0.468 ± 0.010) and significantly lower than that observed for wild-type Mcm2-7 (0.606 ± 0.002, Supplementary file 1 - table 1). This difference suggests that the high EFRET state of the DoHM mutant has a three-dimensional structure and/or dynamics that differ from those of the wild-type double hexamers. Second, the DoHM mutant complexes that transition to the elevated EFRET state do not remain there. Instead, the helicases quickly (in ~20 s) transition back to a state in which both hexamers are still bound to the DNA but which display low FRET (Figure 5E–i and E–iv). Together, these data indicate that the double-hexamer interactions formed by the DoHM mutant are incomplete and unstable.
 
-## Mcm2-7-Mcm2-7 interactions occur rapidly or not at all
+### Mcm2-7-Mcm2-7 interactions occur rapidly or not at all
 
 To examine the formation and stability of the double-hexamer complexes, we analyzed all DNA molecules associated with one donor- and one acceptor-labeled Mcm2-7 to determine the timing of transitions between the low-EFRET and the high-EFRET states observed in the wild-type and the DoHM mutant FRET records. Both of these data sets contained significant subpopulations of DNA molecules that have bound both donor- and acceptor-labeled Mcm2-7 but which do not exhibit FRET at any point in the recording. This suggests that some complexes exist in a configuration that is refractory to double-hexamer formation, a configuration that we will refer to as non-double hexamer (non-DH). Therefore, a minimal kinetic scheme to explain the wild-type Mcm2-7 data contains at least three molecular states: the high EFRET = ~0.45–0.6 state that we interpret as double-hexamer (DH) and two states with indistinguishable EFRET = ~0 values, but that can be distinguished by their lifetimes: the long-lived non-DH state and the transient pre-double-hexamer (pre-DH) state that exists in the short time interval between binding of the second Mcm2-7 and the formation of a DH (see Figure 5D). We globally fit our set of wild-type Mcm2-7 FRET data to a kinetic model containing these three states (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig6-v2.jpg)
+
+**Figure 6.:** To focus on double-hexamer formation, analysis was restricted to the time interval from second Mcm2-7 binding to the time of one or both Mcm2-7 departure. (A–B) Kinetic models of transition among the three indicated EFRET states. Pooled single-molecule fluorescence records from helicase loading experiments using (A) Mcm2-7 or (B) Mcm2-74-178A were globally fit (see Materials and methods) to generalized three-state kinetic models (i.e. all possible inter-state transitions were allowed). Black arrows indicate kinetically significant reaction steps; gray arrows indicate steps with rate constants that are not significantly greater than zero (see Figure 6—figure supplement 1). Fits also yielded the fraction (IF) of molecules in each state at the time of second hexamer binding. In the wild-type Mcm2-7 model (A), the transition from pre-DH to DH is the only process that occurs at an appreciable rate, while in the DoHM-mutant model (B) both pre-DH to pseudo-DH and pseudo-DH to post-DH steps are significant. (C–D) State rastergrams from the kinetic models. Each trajectory (horizontal line) indicates the state assigned by the model to a single-molecule record with wild-type Mcm2-7 (C) or the DOHM mutant (D), starting from the time of second hexamer binding. Pre-DH (red lines), DH or pseudo-DH (yellow lines) and post-DH or non-DH (blue lines) states are indicated. Trajectories are sorted by the onset time of the DH or pseudo-DH state, then by record length. Each record ends either due to the end of the experiment or loss of signal of one or both Mcm2-7 molecules. The blank region at the bottom of each rastergram represents low signal-to-noise records excluded from analysis (see Materials and Methods). Rare transitions (e.g. occasional transitions into or out of non-DH in wild-type Mcm2-7) which do not occur at statistically significant rates may reflect ambiguities in assigning time segments, particularly when the transitions are between two states with the same (zero) EFRET.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Asterisks indicate significantly non-zero rate constants.
 
 The fitting algorithm (see Materials and methods) yielded estimates for all six possible first-order rate constants connecting the three states (Figure 6A; Figure 6—figure supplement 1) and also assigns one of the three states to each molecule at every time point in the record (Figure 6C) based on state duration and EFRET.
 
@@ -76,9 +124,17 @@ There were two significant differences in the kinetics of double-hexamer interac
 
 We also noted that the lifetime of two single hexamers associated with the DNA is noticeably shorter than that of a double hexamer (Figure 6C and D, non-DH and post-DH states, blue lines, note that release of either of the two Mcm2-7 present results in the end of the record as we are looking for double-hexamer formation). Two wild-type Mcm2-7 complexes in the context of a double-hexamer can remain on the DNA for over 600 s, with many lasting to the end of observation (Figure 6D, yellow lines). In contrast, the retention of both of two single hexamers with the DNA whether they are wild-type or DoHM mutants is much shorter (~300 s, Figure 6C and D, blue lines). The average duration of DNA association for two wild-type Mcm2-7 complexes is 288 ± 23 s compared to 140 ± 9 s for the DoHM mutant. This observation suggests that the single Mcm2-7 complexes are less stably associated with the DNA relative to Mcm2-7 complexes in the form of double-hexamers. This difference is consistent with the reduced loading observed in the bulk experiments with the DoHM mutant.
 
-## Double-hexamer formation is required for later steps of replication initiation
+### Double-hexamer formation is required for later steps of replication initiation
 
 Our analysis of the Mcm2-74-178A mutant indicates that the DoHM is important for double-hexamer formation and stability. Despite these defects, many of the mutant single hexamers remain stably bound to DNA. This allowed us to ask which, if any, of the subsequent steps in helicase activation and replication initiation can occur with only single-hexamers loaded onto DNA. To this end, we assessed the ability of the DoHM mutant to associate with helicase-activating proteins, unwind origin DNA and replicate DNA. Consistent with the lethality of this mutant, the DoHM mutant did not support DNA synthesis in an in vitro replication assay using purified replication proteins (Figure 7A; Yeeles et al., 2015).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig7-v2.jpg)
+
+**Figure 7.:** (A) The DoHM mutant is defective in DNA replication. The Mcm2-7 complexes were tested in a reconstituted replication assay. The helicase was loaded onto DNA templates and subsequently phosphorylated by DDK. Replication proteins, dNTPs and [α-32P]-dCTP were added to initiate DNA replication, and the replication products were detected by phosphor imaging. Minus-DDK controls show initiation of DNA replication is dependent on DDK phosphorylation. (B) The DoHM mutant can recruit Cdc45, GINS, and Mcm10. Mcm2-7 complexes were tested for CMG formation. The helicase was loaded onto bead-coupled DNA template and subsequently phosphorylated by DDK. The previous reaction mix was removed prior to addition of helicase-activation proteins. Bead-associated proteins were washed with high-salt buffer and detected by immunoblot. Omission of DDK was used as a control for non-specific DNA binding. (Mcm2-7 loading is DDK-independent). (C) The DoHM mutant defect for Cdc45 and GINS recruitment is correlated with the reduced helicase loading observed for this form of Mcm2-7. Data from three independent CMG-formation experiments (including that shown in B) were quantified using ImageJ. Error bars indicate the SD. For each Cdc45 and GINS measurement, the -DDK signal was subtracted from the corresponding +DDK signal. (D) The DoHM mutant is defective for extensive DNA unwinding. Mcm2-7 was loaded onto Topo I-relaxed 3.8 kb plasmids followed by addition of S-CDK, DDK, and helicase-activation proteins to stimulate CMG formation and activation. The reaction was quenched by SDS, separated on an agarose gel, and DNA was detected by ethidium bromide staining. DNA unwinding is detected by the formation of supercoiled DNA and is dependent on DDK phosphorylation. (E) The DoHM mutant allows initial topological changes that occur after CMG formation. Reactions were performed as in (D) except Mcm2-7 complexes were loaded onto a 616 bp circle and unwinding products were detected by SYBR Gold staining. Control reactions lacking DDK or Mcm10 are indicated. Identity of topoisomers is indicated on the right (see Figure 7—figure supplement 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Nicked, 616 bp DNA circles were ligated in the presence of the indicated concentrations of ethidium bromide (EtBr). DNA circles are increasingly negatively supercoiled as the concentration of EtBr increases. SCC = supercoiled closed-circle before nickase treatment. This state captures the ∝ ground state and +one supercoiling state. NC = nicked circle.
 
 To identify the step during replication initiation that was defective, we first assayed association of helicase-activation proteins with wild-type and the DoHM mutant proteins. We used bead-attached templates to monitor association of Cdc45, GINS, and Mcm10 with origin DNA associated with the indicated Mcm2-7 (Lõoke et al., 2017). Although there is less association of these proteins with the DoHM mutant, the reduction corresponds with the reduced loading of this version of Mcm2-7 (Figures 4C and 7C). Thus, DDK-dependent association of Cdc45, GINS and Mcm10 with Mcm2-7-associated DNA was not compromised in the context of DoHM Mcm2-7 single hexamers (Figure 7B,C).
 
@@ -88,7 +144,7 @@ We also addressed the impact of the DoHM mutant on origin DNA unwinding using an
 
 Our findings identified an essential and highly-conserved motif in Mcm4 that is required for stable double-hexamer formation but not initial loading of Mcm2-7. Using single-molecule studies, we show that this mutant does not prevent initial interactions between the two Mcm2-7 hexamers but that the resulting interactions are incomplete and unstable. Interestingly, these analyses reveal evidence consistent with a limited window of opportunity for double-hexamer formation after recruitment of the second Mcm2-7. Finally, using a DoHM mutant that prevents stable double-hexamer formation, we demonstrate that the Mcm2-7 double hexamer is required for extensive origin DNA unwinding but not initial recruitment of helicase-activating proteins or origin melting.
 
-## Double-hexamer formation is a facilitated event
+### Double-hexamer formation is a facilitated event
 
 There are two general models to explain how two Mcm2-7 complexes form a double hexamer. The first model proposes that the two Mcm2-7 helicases are loaded independently, then slide along DNA, and form a double hexamer through interactions between their N-terminal domains independent of other proteins (Coster and Diffley, 2017). An alternative model is that helicase-loading proteins are required to facilitate both loading of the Mcm2-7 complexes and double-hexamer formation. Consistent with the latter model, kinetic analyses of the single-molecule studies presented here provide evidence that double-hexamer formation is facilitated. For both wild-type and the DoHM mutant, the formation of FRET between Mcm7 subunits after arrival of the second Mcm2-7 is rapid (kDHex = 0.13–0.15 s−1; Figures 5D–i, E–i, 6A and B). Indeed, all double-hexamer formation observed occurs within 30 s after arrival of the second Mcm2-7. In addition, double hexamer interaction is detected significantly sooner (1/0.15 s−1 = ~7 s) after second Mcm2-7 arrival than second Mcm2-7 ring closure (~57 s, Ticau et al., 2017), indicating that interactions between the hexamers anticipates completion of loading of the second Mcm2-7. These comparisons argue against a model in which helicase loading for both hexamers is complete at the time hexamer-hexamer interactions first occur. Instead, our findings strongly suggest that loading of the second hexamer and double-hexamer formation are coordinated.
 
@@ -102,11 +158,15 @@ Although there is no difference in the number of second Mcm2-7 association for t
 
 We note that in both the wild-type and DoHM mutant experiments there are frequent instances when two Mcm2-7 complexes associate with the DNA for long periods of time but show no transitions to high FRET (Figure 6C and D, non-DH traces). As discussed above, one possibility is that these molecules have lost a helicase-loading protein(s) required for double-hexamer formation before establishing this complex. Alternatively, the lack of double-hexamer formation in these cases could be because the two Mcm2-7 complexes are loaded on the DNA in an incorrect orientation. For example, two sequential ‘first’ loading events on the same DNA would result in two Mcm2-7 complexes in the same orientation. We note that there are many instances (primarily for the DoHM mutant) in which initial hexamer-hexamer interactions are unstable, but the separated hexamers do not make a second attempt to form a stable double hexamer. In these cases, the second hypothesis cannot explain the lack of a second attempt to form the double hexamer as the two Mcm2-7 complexes must have been in the appropriate orientation to form the initial high-FRET (pseudo-DH) interaction.
 
-## Structure of double-hexamer and the DoHM interactions
+### Structure of double-hexamer and the DoHM interactions
 
 The lower EFRET value of the mutant pseudo-DH state suggests that the DoHM mutation interferes with proper interactions at the double-hexamer interface. This hypothesis is consistent with the cryo-EM structures of the Mcm2-7 double hexamer (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017). In each of the structures, the DoHM is part of a key double-hexamer interface. The DoHM forms a loop that interacts with Mcm5 N-terminal domain from the opposite hexamer. In addition, the DoHM interacts with one end of an extended Mcm7 alpha helix from the same hexamer. Importantly, the other end of this Mcm7 helix interacts with Mcm5 of the opposite hexamer (Figure 4—figure supplement 2), raising the possibility that the DoHM positions this helix to appropriately interact with the other hexamer. These interactions are present in the Mcm2-7 double-hexamer structures both with and without DNA (Abid Ali et al., 2017; Li et al., 2015; Noguchi et al., 2017). There are two sets of these three-subunit interactions (Mcm4-Mcm5-Mcm7) located on opposite sides of the double-hexamer interface (Video 1). Thus, although the DoHM is a small region compared to the large double-hexamer interface, disrupting this motif has the potential to interrupt the interactions involving 6 of the 12 subunits participating in the double-hexamer interface.
 
-## The double hexamer is required for extensive DNA unwinding
+![Video 1.](https://cdn.elifesciences.org/articles/45538/elife-45538-video1.mp4.jpg)
+
+**Video 1.:** The DoHM of Mcm4 (green), the region of Mcm7 that interacts with the DoHM (light blue), and the region of Mcm5 from the opposite hexamer that interacts with the DoHM (yellow) are all shown in space filling representation. The remainder of the structure is shown as a ribbon structure with Mcm6 in orange, Mcm2 in magenta, and Mcm3 in dark blue. Note that there are two DoHM-involved interfaces that are located on opposite sides of the Mcm2-7 double hexamer.
+
+### The double hexamer is required for extensive DNA unwinding
 
 In this study, we show that a double hexamer is not required to recruit helicase-activation proteins or perform initial DNA unwinding. Although it was assumed that double hexamers are an essential part of DNA replication initiation, the replication initiation step that required the double hexamer was unknown. The DoHM mutant allowed us to evaluate the role of the double-hexamer complex. We found that the DoHM mutant can assemble CMG complexes that perform limited initial DNA unwinding (Figure 7). This degree of topological change corresponds to the modest unwinding of less than one turn of DNA per helicase previously observed as a consequence of CMG formation (Douglas et al., 2018). The detection of this initial DNA unwinding indicates that the interactions of Cdc45 and GINS with the DoHM mutant are productive. Since the DoHM mutant does not form stable double hexamers, this initial unwinding is likely to arise from independent helicases. We note that based on the measured lifetimes of the DoHM mutant pseudo-double-hexamers, helicase-activation proteins are not in a position to stabilize the pseudo-double hexamers before they dissociate. In these experiments, DDK phosphorylation is performed for 20 min prior to addition of the helicase-activation proteins, which is much longer than the ~20 s (1/0.052 s−1; Figure 6B) on average that the DoHM mutant is in the pseudo-DH state. We also note that once separated, we observe no evidence of subsequent hexamer-hexamer interactions. Thus, our findings strongly suggest that this initial unwinding occurs by manipulation of the DNA within a single CMG complex rather than through the coordinated action of two opposing helicases.
 
@@ -118,44 +178,243 @@ The identification of mutations that prevent double-hexamer formation provides a
 
 ## Materials and methods
 
-## Protein purifications
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mcm2-7</td>
+      <td>Bell Lab</td>
+      <td>UM174</td>
+      <td>1:10,000 (rabbit polyclonal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cdc45</td>
+      <td>Lõoke et al., 2017</td>
+      <td>HM7135</td>
+      <td>1:2000 (rabbit polyclonal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GINS</td>
+      <td>Lõoke et al., 2017</td>
+      <td>HM7128</td>
+      <td>1:2000 (rabbit polyclonal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mcm10</td>
+      <td>Lõoke et al., 2017</td>
+      <td>HM7602</td>
+      <td>1:2000 (rabbit polyclonal)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cMyc agarose</td>
+      <td>Sigma</td>
+      <td>Sigma: A7470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 agarose</td>
+      <td>Sigma</td>
+      <td>Sigma: A7345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DY549-P1-maleimide</td>
+      <td>Dyomics</td>
+      <td>Dyomics: 549P1-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DY649-P1-maleimide</td>
+      <td>Dyomics</td>
+      <td>Dyomics: 649P1-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR Gold nucleic acid stain</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: S11494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>illustra MicroSpin G-50 columns</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 27533001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM2</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000000119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM3</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000000758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM4</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000006223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM5</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000004264</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM6</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000003169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MCM7</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD: S000000406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TransFluoSpheres Streptavidin-Labeled Microspheres</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher: T10711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham Hybond-XL</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: RPN303S</td>
+      <td>Membrane for imaging replication assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase I</td>
+      <td>Worthington</td>
+      <td>Worthington: LS006333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher: AM2548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Nb.BsrDI</td>
+      <td>New England Biolabs</td>
+      <td>New England Biolabs: R0648S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide for coupling to dyes for Sortase labeling</td>
+      <td>Ticau et al., 2015</td>
+      <td></td>
+      <td>NH2-CHHHHHHHHHHLPETG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligo for 1.3 kb template</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5'-Biotin-GATCGGTGCGGGCCTCTTCGC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligo for 1.3 kb unlabeled template</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5'-GGAAAGCGGGCAGTGAGCGC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligo for 1.3 kb fluorescently-labeled template</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5'-Alexa488-GGAAAGCGGGCAGTGAGCGC-3'</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purifications
 
 Wild-type Mcm2–7/Cdt1 and ORC complexes were purified as described previously (Kang et al., 2014). Wild-type Cdc6 was purified as described in Frigola et al. (2013). DDK, S-CDK, Sld3/7, Cdc45, Sld2, Dpb11, GINS, Mcm10, Polymerase epsilon, Polymerase alpha/primase, Polymerase delta, RPA, Ctf4, RFC, PCNA, Mrc1, Csm3-Tof1, and Topo II were purified as described in Lõoke et al. (2017). Mutant Mcm2-7/Cdt1 complexes were purified as described in Kang et al. (2014) with the following modifications. For each Mcm2-7 mutant complex, the corresponding wild-type proteins were epitope-tagged with either c-Myc or V5. In the strains expressing the Mcm2 Δ2–177 and Mcm6 Δ2–105, the wild-type MCM2 and MCM6 genes were tagged with c-Myc, to allow the endogenous 13Myc-tagged Mcm2 or Mcm6 subunits to be depleted by incubating with anti-c-Myc agarose (Sigma) before applying the Mcm2-7 mutant complex to a Superdex 200 gel filtration column. In strains expressing mutant Mcm4 protein, the wild-type MCM4 gene was tagged with V5. Mcm2-7 complexes containing the endogenous V5-tagged Mcm4 subunits were depleted by incubating with anti-V5 agarose (Sigma) before application to a Superdex 200 gel filtration column. Yeast strains and plasmids used are listed in Supplementary file 1 - tables 2 and 3, respectively.
 
-## Helicase-loading and double-hexamer formation assays
+### Helicase-loading and double-hexamer formation assays
 
 Helicase-loading and double-hexamer formation assays were performed as described in Kang et al. (2014).
 
-## Fluorescent labeling of wild-type Mcm2-7/Cdt1 and Mcm2-74-178A/Cdt1
+### Fluorescent labeling of wild-type Mcm2-7/Cdt1 and Mcm2-74-178A/Cdt1
 
 SORT-tagged wild-type Mcm2-7/Cdt1 was purified and labeled with either DY549-P1 or DY649-P1 (Dyomics) as described in Ticau et al. (2015). SORT-tagged Mcm2-74-178A/Cdt1 was purified and labeled using the same protocol with the following modifications. In the strain expressing the Mcm4-178A, the wild-type MCM4 gene was tagged with V5 to allow the endogenous V5-tagged Mcm4 subunits to be depleted by incubating with anti-V5 agarose (Sigma) before dye coupling as described above.
 
-## Determining fractional labeling of Mcm2-7
+### Determining fractional labeling of Mcm2-7
 
 To determine what fraction of Mcm2-7 molecules were fluorescently labeled, 20 ml of DY549-SORT labeled Mcm2-7 was mixed with maleimide-DY-649P1 dissolved in anhydrous DMSO, in a 1:1 molar ratio at 4°C for 10 min. The reaction was terminated with 2 mM DTT. The double-labeled Mcm2-7 (10 nM) was added to a slide coupled to origin DNA, 0.5 nM of purified ORC, 2 nM of purified Cdc6 and monitored Mcm2-7-DNA colocalization (to ensure that we were monitoring fully assembled complexes). The fraction of maleimide-DY-649P1-labeled Mcm2-7 molecules that also contained DY-549P1 was determined and reported as the percent labeling by the DY-549P1 (we assume that coupling of maleimide-DY-649P1 to Mcm2-7 is not influenced by the presence or absence of the 549 label). The same protocol was used for DY649-SORT labeled Mcm2-7, but this complex was double-labeled with maleimide-DY-549P1.
 
-## Single-molecule microscopy and FRET data analysis procedure
+### Single-molecule microscopy and FRET data analysis procedure
 
 Single molecule experiments were performed as described in Ticau et al. (2015) for monitoring FRET with the following modifications. TransFluoSpheres Streptavidin-Labeled Microspheres (ThermoFisher) were added to the slide prior to DNA attachment to facilitate tracking of stage drift during the course of the experiment. Helicase-loading reactions contained 0.5 nM ORC, 2 nM Cdc6, 5 nM DY549-SORT labeled Cdt1/Mcm2–7, and 5 nM DY649-SORT labeled Cdt1/Mcm2–7. During image acquisition, a computer-controlled focus adjustment (using a 785 nm laser) was applied continuously over the course of the experiment (~20 min). FRET data analysis was performed as described in Ticau et al. (2015) except that the fluorescent microspheres were used for drift correction. Spots with DNA colocalization of one donor-fluorophore and one acceptor-fluorophore labeled were manually selected for EFRET calculation. To calculate apparent FRET efficiencies, each fluorescence intensity trace was background subtracted using custom Matlab (MATHWORKS) image processing software that has been previously described (Friedman and Gelles, 2012). For each trace, baseline segments (trace intervals lacking any spot) were joined after smoothing with a low-pass filter, and that smoothed baseline was subtracted from the initial fluorescence trace. FRET efficiency was calculated using EFRET = IAcceptor/(IAcceptor + IDonor) where IAcceptor and IDonor are the acceptor and donor emission intensities observed during donor excitation, respectively. The two-dimensional Gaussian kernel histograms and the one-dimensional histogram fits in Figure 5 were generated using code from Gelles (2019) (copy archived at https://github.com/elifesciences-publications/jganalyze). Two-dimensional histograms used bandwidths 5 s and 0.05 on the time and EFRET axes, respectively and were normalized so that the probability density in each 2.67 s time slice integrated to one.
 
-## Kinetic analysis
+### Kinetic analysis
 
 Pooled single-molecule fluorescence records from helicase loading experiments from Mcm2-7 or Mcm2-74-178A were globally fit to generalized three-state kinetic models (i.e. all possible inter-state transitions were allowed). Fitting was performed using coupled hidden Markov models using an empirical Bayesian approach to estimate priors (van de Meent et al., 2014) as implemented in program ebfret-gui (https://github.com/ebfret/ebfret-gui/commit/28e548ace84190c91c4ca354f41efa5952a7895f). Outlier points with EFRET outside the range [−0.25, 0.85] (3.5% of Mcm2-7 data and 7% of Mcm2-74-178A data) were excluded from the analysis as were individual DNA molecule records (7 Mcm2-7 and 11 Mcm2-74-178A) with anomalously low signal-to-noise as judged by their containing more than 10 outliers each. Default priors were used except that the state EFRET values were strongly constrained to those from independent fits (in Figure 5 and Supplementary file 1 - table 1) by setting the (hyper)parameters μ and β (van de Meent et al., 2014) to (0.06, 0.06, 0.57) and (1,000, 1,000, 1,000) for Mcm2-7 and (0.08, 0.08, 0.47) and (10,000, 10,000, 10,000) for Mcm4-178A.
 
-## CMG formation assay
+### CMG formation assay
 
 The DNA plasmid template pUC19-ARS1 was randomly biotinylated and coupled to streptavidin-coated magnetic beads as described previously (Heller et al., 2011). Each incubation step was performed in a thermomixer (Eppendorf) with shaking at 1250 rpm at 25°C. Mcm2-7 loading was performed by incubating 0.48 pmol of ORC, 0.52 pmol of Cdc6, and 1.14 pmol of Mcm2–7/Cdt1 with 0.125 pmol template DNA in 25 mM HEPES-KOH (pH 7.6), 10 mM magnesium acetate, 225 mM potassium glutamate, 2 mM DTT, 0.02% NP-40, 5% glycerol, 5 mM ATP, 20 mM phosphocreatine, and 0.2 μg of creatine kinase for a total volume of 10 μL. Reactions were incubated for 20 min, at which point 1.3 pmol of DDK was added and incubation was continued for a further 20 min. The supernatant was then removed by applying the reaction to a DynaMag-2 magnet (ThermoFisher Scientific) to isolate the DNA coupled to magnetic streptavidin beads from the supernatant. CMG formation was then initiated by adding 20 μL of 0.6 pmol CDK, 1 pmol Sld3/7, 1 pmol Cdc45, 1.24 pmol Sld2, 0.8 pmol Dpb11, 5 pmol GINS, 0.06 pmol Mcm10, 1.05 pmol RPA, and 0.6 pmol Pol ε in 25 mM HEPES-KOH (pH 7.6), 10 mM magnesium acetate, 250 mM potassium glutamate, 1 mM DTT, 0.02% NP-40, 8% glycerol, 5 mM ATP, and 0.4 mg/ml BSA and incubated for 30 min. Reactions were washed with 300 mM potassium chloride, 25 mM HEPES-KOH (pH 7.6), 5 mM magnesium acetate, 10% glycerol, and 0.01% NP-40 three times. Proteins were released from the DNA by incubating with 5 U of DNase I (Worthington) in 10 µL of 25 mM HEPES-KOH (pH 7.6), 5 mM magnesium acetate, 200 mM sodium chloride, 5% glycerol, 0.02% NP-40, and 2 mM calcium chloride for 20 min at 25°C before immunoblotting.
 
-## Solution replication assay
+### Solution replication assay
 
 Each incubation step was performed in a thermomixer (Eppendorf) with shaking at 1250 rpm at 25°C. Mcm2-7 loading and DDK phosphorylation was performed in the same conditions as the CMG formation assay except with a soluble 11.9 kb pUC19-ARS1 plasmid template. After DDK phosphorylation, replication was initiated by adding 20 μL of 0.6 pmol CDK, 1 pmol Sld3/7, 2.6 pmol Cdc45, 1.24 pmol Sld2, 0.8 pmol Dpb11, 5 pmol GINS, 0.02 pmol Mcm10, 0.6 pmol Pol ε, 1.5 pmol Pol α, 0.5 pmol Topo II, 0.6 pmol Ctf4, 2.32 pmol RPA, 0.5 pmol RFC, 0.4 pmol PCNA, 0.5 pmol Mrc1, 0.6 pmol Csm3/Tof1, 0.6 pmol Pol δ in 12.5 mM HEPES-KOH (pH 7.6), 5 mM magnesium acetate, 125 mM potassium glutamate, 1 mM DTT, 0.01% NP-40, 4% glycerol, 1.5 mM ATP, 10 mM phosphocreatine, 3 μg of creatine kinase, 0.2 mg/ml BSA, 100 μM rNTP, 10 μM dNTP, and 10 μCi [α-P32]dCTP directly to the reaction. Following 60 min of incubation, reactions were quenched with 30 μL of 50 mM EDTA. Unincorporated nucleotides were removed with Illustra MicroSpin G-50 columns (GE Healthcare), and samples were separated on a 0.6% alkaline agarose gel in 30 mM sodium hydroxide, 2 mM EDTA. Gels were dried onto Amersham Hybond-XL (GE Healthcare) and imaged using a phosphor screen. Gels were scanned using a Typhoon phosphorimager (GE Healthcare).
 
-## DNA unwinding assays
+### DNA unwinding assays
 
 For DNA unwinding assays using the 3.8 kb template, 25 fmol soluble 3.8 kb pUC19-ARS1 plasmid template was relaxed with 0.4 pmol Topo I for 30 min. Each incubation step was performed in a thermomixer (Eppendorf) with shaking at 1250 rpm at 25°C unless otherwise indicated. Twenty-five minutes of Mcm2-7 loading and 30 min of DDK phosphorylation were performed in the same conditions as the CMG formation assay. DNA unwinding was then initiated using the same protein concentrations and final buffer concentrations as the CMG formation assay with the addition of 0.4 pmol of Topo I. This mix was added directly to the reaction. After 40 min, the reaction was quenched with 13 mM EDTA, 0.3% SDS, and 0.1 mg/ml Proteinase K and incubated for 20 min at 42°C with shaking at 1250 rpm. Samples were extracted with phenol:chloroform:isoamylalcohol (25:24:1), ethanol precipitated, and the DNA pellet was resuspended in 1x Tris-EDTA. Samples were run on native 1.5% agarose TAE gels at 1.5 V/cm for 17 hr. Gels were stained with ethidium bromide for 30 min and destained with milliQ-purified water (Millipore Sigma) for 1 hr before imaging.
 
 DNA unwinding of 616 bp template was performed similarly to DNA unwinding with the 3.8 kb template but with the following modifications. 616 bp pUC19-ARS1 closed-circular template was made following the protocol in Douglas et al. (2018) except the DNA was not radiolabeled. At the end of the reaction, samples were run on native 3.5% 29:1 acrylamide:bis-acrylamide 1x TBE gels at 3 V/cm at 4°C for 20 hr. Gels were stained with SYBR Gold (Invitrogen) for 30 min before imaging.
 
-## Assigning relative supercoiling states
+### Assigning relative supercoiling states
 
 Experiment was performed similar to Douglas et al. (2018). Briefly, 6 fmol/µl 616 bp DNA was nicked with 0.25 U/µl Nb.BsrDI enzyme (NEB) for 1 hr at 65°C. DNA was then extracted with phenol:chloroform:isoamylalcohol (25:24:1), ethanol precipitated, and the DNA pellet was resuspended in water. 25 fmol of the nicked DNA was incubated in the indicated ethidium bromide concentrations for 1 hr at room temperature then ligated at 18°C overnight with 10 u/µl T4 DNA ligase (NEB). DNA was phenol:chloroform extracted, ethanol precipitated, and resuspended in 1 × Tris EDTA before analysis by electrophoresis, as described above. See Figure 7—figure supplement 1.

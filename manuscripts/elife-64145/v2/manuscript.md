@@ -41,57 +41,101 @@ Here, we created Green Fluorescent Protein (GFP)-labeled libraries of CRISPRi es
 
 ## Results
 
-## Construction of a knockdown library for probing gene essentiality in B. subtilis 3610
+### Construction of a knockdown library for probing gene essentiality in B. subtilis 3610
 
 To study genetic interactions involving critical cellular processes within a biofilm colony, we constructed a CRISPRi knockdown library in the biofilm-forming B. subtilis strain 3610 ('Materials and methods'). The library contains 302 strains: the 252 known essential genes in B. subtilis strain 168, 47 genes that were initially classified as essential in 168 (Kobayashi et al., 2003) but later revealed to be non-essential or conditionally essential (Koo et al., 2017), and three internal controls expressing dCas9 without any guide RNAs (Supplementary file 1; Peters et al., 2016). Each strain in the library contains a xylose-inducible copy of dcas9 and an sgRNA targeting the gene of interest (Figure 1A). In addition, gfp is incorporated at the sacA locus to allow visualization and quantification of the knockdown strain (Figure 1A). The sacA::gfp strain exhibited similar colony growth and biofilm wrinkling as a parental unlabeled control on both non-biofilm LB agar and biofilm-promoting MSgg (Branda et al., 2001) agar (Figure 1B). We refer to colonies on LB and MSgg as ‘non-biofilm’ colonies and ‘biofilm’ colonies, respectively. However, it is important to note that the biofilm definition is nuanced; colonies on LB may have some biofilm characteristics (Shemesh and Chai, 2013), and biofilm pellicles formed at air–liquid interfaces may have distinct properties from MSgg colonies.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-v2.jpg)
+
+**Figure 1.:** (A) We constructed a GFP-labeled library of CRISPR interference (CRISPRi) knockdowns of all known essential and conditionally essential genes (top left). In the library, the nuclease-deactivated Cas9 gene (dcas9) is inducible with xylose and the single-guide RNA (sgRNA) is constitutively expressed. dCas9 binds the sgRNA and blocks transcription by physically impeding RNA polymerase (right). Every strain is labeled with gfp expressed from the sacA locus. A parent strain (parent-RFP, bottom left) that expresses rfp as well as dCas9 without an sgRNA was used in competition assays. (B) The parent-GFP (sacA::gfp, lacA::dCas9) and parent-RFP strains have similar phenotypes to wild type on both biofilm-promoting MSgg agar and non-biofilm-promoting LB agar. Cultures were grown in liquid LB to an optical density (OD600) ~1, and then 1 µL was spotted in the middle of wells of a six-well plate containing LB agar or MSgg agar. Image intensities were adjusted identically; the yellow and red colors of the parent strains are due to GFP and RFP expression, respectively. Scale bar: 5 mm. (C) Schematic of screening strategy to measure the monoculture colony size and competitive fitness of each knockdown against the parent-RFP strain. GFP-labeled knockdown libraries were grown in liquid culture in 96-well microtiter plates. Monocultures were spotted onto LB and MSgg agar plates (top right) without or with xylose to achieve basal or full knockdown, respectively, of the targeted gene. The monoculture plates contained parent controls in wells along an outer column and row (solid box). Co-cultures of a 1:1 volumetric mixture of the parent-RFP and GFP-labeled library strains were spotted onto agar plates of LB and MSgg, without or with xylose. Controls in which parent-GFP was mixed with parent-RFP are bounded by horizontal red box. Bottom right: merged image of RFP and GFP signals from co-cultures. The co-cultures include a titration row from 100% GFP cultures to 100% RFP cultures in 10% increments (dashed box), and several controls of 1:1 mixtures of the parent GFP and parent-RFP strains (purple box). Scale bar: 5 mm. (D) Schematic of image analysis to quantify competitive fitnesses from the co-culture screen. Data from plate 1 spotted on MSgg is presented as an example. Plates were segmented and individual colony intensities were extracted from the GFP and RFP images. GFP intensities were divided by RFP intensities to obtain ratios I. The titration row (dashed box) was fit to a curve using the equation I=αG/(1−βG), where G is the fraction of the parent-GFP strain, to extract fit parameters α and β for each plate individually. These parameters were used to map the GFP fractions of each colony and values were normalized so that the parent-GFP:parent-RFP control co-cultures on each plate (solid box) had an average value of 1. Scale bar 5 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Varying CRISPRi induction generates titrated gene expression in colonies on LB and on the biofilm-promoting medium MSgg. We spotted a strain with CRISPRi targeting rfp onto LB or MSgg agar plates with various amounts of xylose. Left: images were acquired after 24 hr of growth. Right: RFP levels varied inversely with xylose concentration, with basal repression minimally decreasing expression of RFP and higher levels of xylose repressing expression by 10- to 1000-fold in LB and ~10,000-fold in MSgg. Data were normalized to RFP levels in a strain without a CRISPRi sgRNA (100% RFP). Scale bar 5 mm. (B) Colony counts and fluorescence measurements of co-cultures both map well to the predicted ratio function. Top: parent-RFP and parent-GFP cultures were mixed in various fractions and spotted onto LB (left) or MSgg (right) agar plates. Colony count ratios were normalized to the value for GFP fraction of 0.8 to account for differences in parent-RFP and parent-GFP culture densities. Fluorescence and colony count ratios are shown as circles, and the predicted fitting function is shown as a gray line. (C) Competition data for the entire sacA::gfp library after 16 hr of growth at each step of the analysis pipeline. The titration row is denoted by white dashed boxes. The few gray boxes represent empty wells or wells that involved division by zero during processing and hence were ignored. (D) Competition data for the sacA::GFP library after 24 and 48 hr of growth. The titration row is denoted by white dashed boxes. The few gray boxes represent empty wells or wells that involved division by zero during processing and hence were ignored. (E) Data from the titration row of parent-GFP and parent-RFP co-cultures were well fit by the predicted equation I=αG/(1–βG) (red lines, Figure 1D). Circles show the ratio of GFP:RFP intensities of the 0–90% GFP (100–10% RFP) colonies plotted against the fraction of GFP for each plate of each library at each time point in B, C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Merged images from the competition screen on LB and MSgg agar under basal and full knockdown, at 16, 24, and 48 hr. The CRISPRi strains and parent-GFP controls are false-colored in green, and the parent-RFP is false-colored in magenta. The dashed boxes show the titration row of each plate, and the solid boxes show the parent-GFP + parent-RFP controls. The distance between the centers of neighboring colonies is 9 mm.
+
 To determine whether CRISPRi can be used to knock down gene expression in non-biofilm and biofilm colonies, we engineered a parent strain containing the Red Fluorescent Protein gene (rfp) under a constitutive promoter and used CRISPRi to target rfp. In this strain, RFP levels in non-biofilm colonies on LB agar plates ranged from 40% (basal knockdown) to ~0% (full knockdown) (Figure 1—figure supplement 1A), a comparable range to knockdown of the domesticated strain 168 in liquid LB (Peters et al., 2016). RFP levels in biofilm colonies on MSgg agar ranged from ~90% (basal knockdown) to ~0% (full knockdown) (Figure 1—figure supplement 1A). Thus, CRISPRi is an effective tool to knock down gene expression in non-biofilm and biofilm colonies.
 
-## High-throughput screening of competitive fitness in a colony
+### High-throughput screening of competitive fitness in a colony
 
 We compared the colony growth phenotypes of GFP-labeled knockdown strains grown either alone or mixed with a control strain modified with xylose-inducible dCas9 (without an sgRNA) and constitutive expression of RFP (henceforth referred to as parent-RFP) that exhibits wild-type-like biofilm colony formation (Figure 1A, B). After growing each strain individually in liquid LB, GFP-labeled knockdown strains were spotted either alone or mixed with parent-RFP onto agar plates (Figure 1C, Figure 1—figure supplement 2). Each plate included a titration row of colonies grown from mixtures of a parent-GFP strain with the parent-RFP strain at known concentrations from 0% to 100% parent-GFP (Figure 1D, Figure 1—figure supplement 2). Quantification of the titration row closely agreed with the predicted ratio of GFP:RFP at each time point (16, 24, and 48 hr) (Figure 1D, S1B, E), indicating that the relative fraction of GFP-labeled mutants in co-culture with the parent-RFP strain can be accurately quantified through comparison of the GFP:RFP ratio with the titration row ('Materials and methods'). The titration row also led to good agreement with the predicted ratio of GFP:RFP when LB and MSgg colonies were disrupted by sonication and plated to determine relative colony-forming units (Figure 1—figure supplement 1B), further validating our fluorescence-based assay. Colony phenotypes were quantified using a custom image-analysis pipeline that segmented plates into colonies and computed the ratio of GFP:RFP for each colony; colony size was measured manually (Figure 1D, S1C, D; 'Materials and methods'). Thus, our screen allows us to quantitatively compare growth as a monoculture to growth in co-culture through this competitive fitness value (Figure 1C).
 
-## Gene knockdown results in a broad range of colony sizes and competitive fitnesses
+### Gene knockdown results in a broad range of colony sizes and competitive fitnesses
 
 To measure growth in monocultures or co-cultures across conditions, we spotted knockdowns on their own or mixed with parent-RFP on LB and MSgg agar without and with xylose. After 16 hr of growth, colony sizes of basal knockdown monocultures exhibited a narrow distribution on LB agar, but were more widely distributed on MSgg agar (Figure 2A, Figure 2—figure supplement 1A, Supplementary file 2), indicating increased sensitivity to knockdown on MSgg. By contrast to growth as monocultures on LB, basal knockdowns co-cultured with the parent for 16 hr exhibited a broad distribution of competitive fitness on LB agar: only 92 of the strains had a fitness within two standard deviations of the mean of controls, while the remaining 210 strains were significantly defective in competition (below two standard deviations of the mean of the controls) (Figure 2B, Supplementary file 2). A competitive fitness of 1 signifies equal amounts of GFP-labeled knockdown and parent-RFP, and 0 means that the GFP-labeled knockdown was completely outcompeted by the parent-RFP strain. On MSgg agar, competitive fitness displayed a similar trend, with 198 basal knockdowns exhibiting a significant fitness defect after 16 hr (Figure 2A, B, Supplementary file 2). As expected, when transcription was fully knocked down, fitness was even more compromised: 168 and 143 strains had fitness <0.08 after 16 hr of growth on LB xylose and MSgg xylose agar, respectively (Figure 2B, Supplementary file 2). Together, these data demonstrate that even though phenotypes were generally subtle for monocultures grown on non-biofilm-promoting LB agar, screening the library on biofilm-promoting MSgg agar or in competition with a parent strain uncovered phenotypes even under basal knockdown.
 
-## Basal knockdown results in low competitive fitness for some depletions
+![Figure 2.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig2-v2.jpg)
+
+**Figure 2.:** (A) Basal knockdown (light blue) of essential genes on LB agar (which does not promote biofilms) resulted in similar colony sizes as parent-GFP controls (gray); only 13 of 302 colonies had a colony size two standard deviations below the mean of the controls. By contrast, on biofilm-promoting MSgg agar the distribution of colony sizes spread to smaller values, with 80 colonies more than two standard deviations below the mean of the controls. Full knockdown (dark blue) inhibited growth of most strains. Data are from measurements at 16 hr using the sacA::gfp library. Vertical solid lines are means of the control distributions, and dashed lines show two standard deviations below the mean. (B) 17 (LB) and 11 (MSgg) knockdown strains in the library competed poorly against the parent-RFP strain at basal knockdown (light blue), while 41 (LB) and 46 (MSgg) had competitive fitness similar to parent-GFP+parent-RFP controls (gray) even at full knockdown (dark blue). Data are from competition ratios at 16 hr using the sacA::gfp library. Low-fitness strains were defined as having fitness at least two standard deviations below the mean of the data, and neutral-fitness strains were defined as having fitness at least one standard deviation above the mean. Vertical solid lines are means of the distribution from basal knockdown, and dashed lines show two standard deviations below and one standard deviation above the mean. (C) Strains with low competitive fitness for basal knockdown generally had lower growth rates in liquid monoculture than parent control strains. Colonies were inoculated into liquid LB, and OD600 was monitored over time. Ribosome-related genes are shown in shades of purple, and a cell envelope-related gene (tagG) is shown in yellow. Curves are means, and shaded regions represent one standard deviation (n = 3). Inset: maximum growth rates. *: p<0.03, Student’s unpaired t-test with a Benjamini–Hochberg multiple-hypothesis correction. (D) On both LB and MSgg agar, basal knockdown of ygsA, which is involved in gene regulation, exhibited high competitive fitness (left) and tagG and ribosomal-gene knockdowns exhibited low competitive fitness (right). GFP (knockdown strain) is false-colored green, and RFP (parent) is false-colored magenta. Images are from 16 hr using the sacA::gfp library. Scale bar: 5 mm. (E) Competitive fitness of the strains with the highest and lowest values was approximately constant after 16 hr. Curves are means, and shaded regions represent one standard error of the mean (n = 3 independent measurements). Inset and dashed black line: a reaction-diffusion model of co-culture colony growth with physically realistic parameters indicates that knockdowns (magenta) with maximum growth rate 20% lower than the parent (green) reproduce the colony size (bottom, inset) and competitive fitness (bottom, dashed black line) of ribosomal protein knockdowns after 16 hr ('Materials and methods', Figure 2—figure supplement 1C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Monoculture colonies on MSgg agar (basal knockdown) exhibited more variation in size than monoculture colonies on LB agar after 16 hr of growth. With full knockdown, there were many monoculture colonies with small size relative to controls on LB and on MSgg after 16 hr. The CRISPRi library is within the white boxes, and colonies outside of the boxes are parent-GFP controls. The distance between the centers of neighboring colonies is 9 mm. Data for colony areas is in Supplementary file 2. (B) A few knockdowns exhibited high competitive fitness in co-culture despite having reduced colony sizes in monoculture in basal knockdown conditions (orange), and one non-essential gene knockdown in the library had reduced competitive fitness (blue). The rest of the strains are in gray, and the controls are in black. (C) A reaction-diffusion model of colony growth ('Materials and methods') recapitulates competitive fitness when DC = 0.003 mm2 hr−1; competitive fitness is not strongly perturbed by 10-fold changes in K/n0 and Dn/DC. Parameters M1 = 0.0175 min−1, M1/M2 = 0.8, r0 = 1 mm, and C0/(n0/b)=0.001 are estimates from experimental data. The black line shows the simulated competitive fitness corresponding to the colony in the inset of Figure 2E in which both competitive fitness and colony size data were recapitulated with K/n0 = 0.05 and Dn/DC = 100. Competitive fitness was largely unchanged if Dn/DC = 1000 (dark pink, partly beneath black line) or Dn/DC = 10 (light pink, partly beneath black line), or if K/n0 = 1.0 (dark blue) or K/n0 = 0.005 (light blue, partly beneath dark pink line). (D) Strains that competed well at full knockdown included genes related to metabolism, gene regulation, prophage, and cell envelope (divIB), along with yloU, a gene of unknown function. Merged images show the parent-RFP false-colored in magenta and the knockdown strain false-colored in green. The 100% parent-RFP, 50% parent-RFP+50% parent-GFP, and 100% parent-GFP controls are shown to the right of the knockdowns. Scale bar: 5 mm. (E) Competitive fitnesses of the knockdowns with the highest fitness values at 16 hr were mostly stable over time with full CRISPRi induction. Curves are means, and shaded regions represent one standard error of the mean (n = 3 biological replicates).
+
+### Basal knockdown results in low competitive fitness for some depletions
 
 Several strains competed poorly with the parent-RFP strain even under basal knockdown in both non-biofilm and biofilm colonies (Figure 2B). Interestingly, some non-essential genes had low competitive fitness. For instance, mapA, which encodes a methionine aminopeptidase, competed poorly in both LB and MSgg colonies, and CRISPRi induction further reduced fitness (Supplementary file 2, Figure 2—figure supplement 1B). Analysis of DAVID functional annotations of strains with competitive fitness >2 standard deviations below the mean of controls revealed significant enrichment of structural constituents of ribosomes (p=9.8 × 10−4 and p=2.1 × 10−2 on LB and MSgg agar, respectively). Some of the ribosomal protein knockdown strains that competed most poorly exhibited ~20% lower maximum growth rate than wild type in liquid cultures (Figure 2C), suggesting that the reduced competitive fitness of these strains is due to their reduced growth rate. Indeed, a reaction-diffusion model of colony growth of a co-culture indicated that a strain’s maximum growth rate is a major determinant of competitive fitness, and that the 20% decrease of maximum growth rate in certain ribosomal protein knockdowns is consistent with our experimental measurements of their competitive fitness (Figure 2E, Figure 2—figure supplement 1C, 'Materials and methods').
 
-## Some strains with reduced monoculture colony size do not have a fitness defect in co-culture
+### Some strains with reduced monoculture colony size do not have a fitness defect in co-culture
 
 Several strains had fitness in co-culture with the parent-RFP strain similar to controls for basal and/or full knockdown (Figure 2B), suggesting that the targeted gene was rendered less essential by co-culture with parent-RFP. DAVID functional enrichment analysis of basal knockdowns with fitness values within one standard deviation of the mean across controls (n = 41 and 46 strains for LB and MSgg, respectively) highlighted integral membrane components on both solid media (p=2.1 × 10−3 for both LB and MSgg). Under basal knockdown conditions, there were four strains (menH and cytC on LB and aroF and rny on MSgg) in which monoculture growth was clearly compromised by gene knockdown but competitive fitness remained high (Figure 2—figure supplement 1B). As menH and aroF are involved in the synthesis of menaquinone (vitamin K2) and aromatic amino acids, respectively, the high competitive fitness may result from nutrient sharing within the colony. In addition, aromatic amino acid biosynthesis genes were enriched in basal knockdowns with high competitive fitness on LB agar (p=1.6 × 10−2), potentially due to the presence of aromatic amino acids in rich LB medium but not in MSgg. These data underscore the medium dependence of gene essentiality in co-culture colonies.
 
-## Competitive fitness is a reproducible and stable metric
+### Competitive fitness is a reproducible and stable metric
 
 To validate our findings, we replicated fitness measurements over time on a subset of strains with the highest or lowest competitive fitness values during basal knockdown on LB or MSgg agar. We found that the competitive fitness phenotype was highly reproducible and relatively stable over 2 days of colony growth (Figure 2D, E, Figure 2—figure supplement 1D, E), highlighting the utility of our CRISPRi library for probing the fitness of essential gene knockdown in co-cultures.
 
-## Several biosynthesis-related genes have different phenotypes in rich versus minimal media
+### Several biosynthesis-related genes have different phenotypes in rich versus minimal media
 
 The distinct nutrient compositions of LB and MSgg, along with the much broader distribution of monoculture colony sizes in MSgg compared with LB (Figure 2A), motivated a comparison of competitive fitness across media. Somewhat surprisingly given the likelihood of different metabolic profiles due to media compositional differences, 93% of the strains exhibited similar competitive fitness (defined here as within 0.24 or 0.3 of the y=x line for basal or full knockdown, respectively) on MSgg and LB agar, whether the targeted gene was basally or fully knocked down (Figure 3A, Supplementary file 2). Nonetheless, we identified 36 strains that competed with the parent-RFP strain better on MSgg than on LB, or vice versa, under basal or full knockdown (Figure 3A, B, Supplementary file 3). Strains that competed better in one medium compared to the other were statistically enriched for genes involved in amino acid biosynthesis (p=4.7×10−6 and p=8.3×10−5 for basal and full knockdown, respectively), suggesting that some strains benefit from nutritional components specific to one medium (Figure 3A, Supplementary file 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig3-v2.jpg)
+
+**Figure 3.:** (A) Although most knockdowns had similar fitness on LB and MSgg agar, a subset of knockdowns had higher competitive fitness on LB agar than on MSgg agar, or vice versa. Genes with fitness difference >0.24 at 24 hr or >0.3 at 48 hr are annotated and colored in orange shades, while those below the cutoff are in grayscale and parent-RFP+parent-GFP co-culture controls are in shades of purple. Genes labeled in bold were selected for follow-up studies. Data are from the sacA::gfp library at 16, 24, and 48 hr. The solid line is y=x, and the dotted lines represent the chosen cutoff. (B) Images of colonies of the bolded genes in A after 48 hr that illustrate the differential competitive fitness between LB and MSgg. Green and magenta represent fluorescence from the gene knockdown and parent, respectively. Scale bar: 5 mm. (C) Addition of specific nutrients to the medium with lower competitive fitness rescued fitness for the mntA, glyA, and mgtE knockdowns. Means (circles) of triplicates (shown at the end of lines extending from the circle) are displayed. Filled black circles represent gene knockdowns that had substantially different competitive fitness in LB and MSgg. Open gray circles represent other genes tested that were not identified as different in that condition. Parent-RFP+parent-GFP controls are shown as gray filled circles. Data from addition experiments (LB+manganese, LB+magnesium, and MSgg+glycine for mntA, mgtE, and glyA, respectively) are shown as colored circles and lines at the ends of arrows. All changes marked with arrows are significant after correcting for multiple hypotheses with the Benjamini–Hochberg method (p<0.01, Student’s unpaired t-test). Genes without a colored circle and arrow indicate that the fitness of that knockdown did not change upon addition of any of the nutrients tested (Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The competitive fitness of glyA, mgtE, and mntA knockdowns improved when glycine was added to MSgg agar, Mg2+ was added to LB agar, or Mn2+ was added to MSgg agar, respectively. Images are merges of fluorescence from the knockdown (false-colored in green) and the parent-RFP (false-colored in magenta) after 48 hr. Scale bar: 5 mm. (B) Many nutrients did not alter competitive fitness. Baseline competitive fitness values (top row) versus when a nutrient was added to MSgg agar (yellow) or LB agar (blue). Means are displayed as black circles, with each replicate at the end of lines extending from the circle. Data are from the 48 hr time point.
+
 Despite the undefined nature of LB, it was still possible in the case of many strains to identify candidate components whose addition to the medium with lower competitive fitness might rescue the deficit. We selected 20 knockdowns with medium-dependent fitness to pursue further, many of which displayed fitness differences for both basal and full knockdown (Supplementary file 3). The glyA knockdown had higher competitive fitness on LB agar than on MSgg agar, and as hypothesized, addition of glycine to MSgg significantly improved fitness in basal and induced conditions, to levels close to fitness on LB (Figure 3C). Similarly, adding Mg2+ or Mn2+ to LB agar at the same levels as in MSgg restored the competitive fitness of mgtE and mntA full knockdowns, respectively, to levels on MSgg (Figure 3C, Figure 3—figure supplement 1A, Supplementary file 4). While adding Mn2+ to LB agar promotes biofilm phenotypes (Shemesh and Chai, 2013), in this case the additional Mn2+ likely compensates for mntA knockdown as mntA is a component of the Mn2+ ABC transporter (MntABCD) (Que and Helmann, 2000). Somewhat surprisingly, even though many of the remaining 17 knockdowns with medium-dependent fitness naturally suggested candidates for a missing nutrient, they did not exhibit increased fitness when the hypothesized nutrient was added to the medium with reduced fitness (Figure 3—figure supplement 1B, Supplementary file 3,), showing that at least exogenous provision of those nutrients is insufficient to complement the medium-specific fitness defect. Together, these results indicate that medium-dependent competition ratios can arise due to both nutrient compositional differences between media and other mechanisms that remain unindentified but highlight potentially important factors in selection during colony growth.
 
-## Wild-type cells rescue alrA knockdown in a biofilm colony by sharing D-alanine
+### Wild-type cells rescue alrA knockdown in a biofilm colony by sharing D-alanine
 
 Since growth in a structured community provides opportunities for nutrient sharing and cellular differentiation, we hypothesized that some essential gene knockdowns would be unable to grow as a colony in monoculture but would fare better in co-culture with wild-type-like parent-RFP cells. Across our sacA::gfp essential gene knockdown library, we did not identify any knockdowns that exhibited robust growth in a colony co-culture but died as a monoculture (Figure 1—figure supplement 2, Figure 2—figure supplement 1, Supplementary file 2). (To conform to our inoculation protocol for biofilm colony cultures in which we used 1 µL of a liquid culture of OD ~1.0 ['Materials and methods'], our high-throughput screen involved inoculation of each ~2-mm-diameter spot with ~2 × 105 cells, likely facilitating the partial growth of some knockdowns that would be hampered in growth from a single cell on plates with xylose.) We found that disruption of the thrC locus prevents wrinkling formation on MSgg agar, presumably reflecting a growth defect, so we hypothesized that insertion of gfp at the thrC locus might exacerbate growth inhibition due to knockdown of certain essential genes. Thus, we constructed a second thrC::gfp library of knockdowns of all 302 strains and screened it on MSgg with xylose.
 
 In the thrC::gfp library, alrA was the only knockdown that failed to form a colony as a monoculture but survived with the parent-RFP strain in biofilm colonies on MSgg agar with xylose (Figure 4A, Figure 4—figure supplement 1A, B). AlrA is a racemase that converts L-alanine to D-alanine and is required for cross-linking of the peptidoglycan cell wall (Figure 4B). Full knockdown of alrA expression during liquid growth in a strain without gfp disruption of thrC led to bulging indicative of cell wall defects (Figure 4C, Figure 4—figure supplement 1C). On LB-xylose agar, the alrA strain from the thrC::gfp library managed to grow as a monoculture into a colony similar in size to the inoculation spot with petal-like outward projections (Figure 4—figure supplement 1D), as did the alrA strain from the sacA::gfp library on LB-xylose and MSgg-xylose plates (Figure 2—figure supplement 1A). As discussed above, the absence of complete lysis is likely due to the high initial density driving growth of a visible colony (Figure 2—figure supplement 1A); streaking all alrA strains to reduce initial cell density resulted in a substantial reduction in the number of colonies on plates with xylose compared to without for both LB and MSgg (Figure 4—figure supplement 1E), indicating that the full-knockdown phenotype across all media and genotypes is severe for alrA at lower initial cell densities.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: the sacA::gfp alrA knockdown under full knockdown was rescued by growth with the parent-RFP strain under biofilm-promoting conditions (MSgg-xylose agar). The alrA knockdown expanded beyond the boundaries of the original inoculum (dashed circle) when grown in co-culture with the parent-RFP strain. Right: the control co-culture of parent-RFP with parent-GFP preserved both strains at approximately equal proportions. Images were acquired at 24 hr. In merged images, GFP from the alrA knockdown is false-colored green and RFP from the parent-RFP strain is false-colored magenta. Scale bar: 5 mm. (B) AlrA is a racemase that converts L-alanine to D-alanine. D-alanine is critical for cell wall cross-linking. (C) Full knockdown of alrA caused cells to bulge, signifying cell wall defects. Cells were cultured for 6 hr in liquid MSgg with xylose to fully inhibit alrA expression. Arrowheads indicate bulging cells. Scale bar: 5 μm. (D) Full knockdown of alrA was rescued by exogenous D-alanine. Cultures were grown in liquid LB to an OD600 ~1 and then 1 μL was spotted on MSgg xylose agar alone or supplemented with 0.04 mg/mL D-alanine or D-methionine. Cells from alrA monocultures mostly died (left); the small colonies represent suppressors present in the initial inoculum. By contrast, addition of D-alanine (middle) or D-methionine (right) resulted in comparable growth to wild type. Images are of an unlabeled alrA knockdown (HA420) and were acquired after 24 hr of growth. Scale bar: 5 mm. (E) Full knockdown of alrA was not rescued when co-cultured with the parent-RFP strain in liquid. For the co-culture, parent and alrA knockdown cultures were mixed 1:1 and back-diluted 1:100 into liquid MSgg with xylose to fully deplete alrA. For the alrA knockdown monoculture, the culture was diluted 1:200 into liquid MSgg with xylose so that the starting inoculum of the alrA strain was equivalent to that of the co-culture. CFU/mL of the alrA knockdown were not significantly different between the monoculture (dark red) and co-culture (gray) throughout the course of the experiment (p-values from each time point range from 0.21 to 0.66, student’s unpaired t-test). The black line is the total CFU/mL of the parent/alrA knockdown co-culture. n = 3, error bars represent one standard error of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A screen under full CRISPRi knockdown for strains that die as monoculture colonies (left) but survive in co-culture (right) highlighted alrA (white box). Left: monoculture colonies of the thrC::gfp library on MSgg-xylose; outer colonies are thrC::gfp parent controls. Right: merged images of co-cultures of the thrC::gfp CRISPRi library (false-colored in green) with the parent-RFP strain (false-colored in magenta). The titration row is indicated by the box. The distance between the centers of two neighboring colonies is 9 mm. (B) The thrC::gfp parent strain did not form wrinkles. One microliter of an LB liquid culture (OD600 ~1) was spotted onto an MSgg-threonine plate and incubated at 30°C for 48 hr. Scale bar: 5 mm. (C) Cells with basal knockdown of alrA are rod-shaped, similar to wild type. Images were taken directly before adding xylose to fully deplete cells of alrA for 6 hr, as shown in Figure 4C. Scale bar: 5 μm. (D) Full knockdown of alrA in the thrC::gfp background resulted in petal-like outward projections from the initial spot on LB-xylose agar. The parent-GFP is shown for comparison. Scale bar: 2 mm. (E) Full knockdown of alrA resulted in a growth defect. Cultures were grown and struck onto LB and MSgg plates with and without xylose to qualitatively observe growth under basal and full knockdown. A standard (100 mm) cell culture dish is shown. (F) D-serine inhibited the growth of wild-type colonies and did not rescue growth of the alrA knockdown. The colony was imaged through agar (to avoid having the objective contact the colony) after 24 hr. D-serine was supplemented at 0.04 mg/mL. Scale bar: 5 mm. (G) Most D-amino acids did not restore the growth of alrA-depleted cells. D-leucine inhibited the growth of wild-type colonies (top). Only D-alanine and D-methionine restored growth of full alrA knockdown (bottom). D-amino acids were supplemented at 0.04 mg/mL. We did not test D-isoleucine, D-phenylalanine, D-threonine, or D-tyrosine. Scale bar: 5 mm.
+
 We hypothesized that cells with full knockdown of alrA transcription were able to maintain their growth in biofilm colony co-culture because the parent-RFP cells were providing the necessary D-alanine. To test this hypothesis, we grew monocultures of an alrA strain without gfp in the genome on MSgg-xylose with exogenous D-alanine and found that D-alanine rescued biofilm colony growth (Figure 4D). D-methionine, an amino acid that can substitute for D-alanine in cell wall cross-linking (Cava et al., 2011), also rescued alrA growth on MSgg-xylose plates (Figure 4D), while other D-amino acids that are not incorporated into the cell wall did not rescue colony growth (Figure 4—figure supplement 1F, G), suggesting that D-alanine’s specific role in peptidoglycan synthesis is rescued. Thus, sharing of D-alanine within a biofilm colony rescues alrA-depleted cells, likely by stabilizing mutant cell walls.
 
 To test whether alrA cells are rescued by the parent-RFP strain in liquid MSgg-xylose, we grew liquid co-cultures and plated dilutions at hourly time points to quantify survival (separating the two strains based on fluorescence). The vast majority of alrA cells died within hours in both liquid monocultures and co-cultures with the parent-RFP strain (Figure 4E). Thus, the rescue of alrA knockdown cells by D-alanine sharing in co-cultures is specific to growth in a colony, presumably due to the close proximity of cells that facilitates D-alanine sharing.
 
-## alrA knockdown cells stably co-exist with extracellular matrix-deficient wild-type cells in a biofilm colony
+### alrA knockdown cells stably co-exist with extracellular matrix-deficient wild-type cells in a biofilm colony
 
 Secretion of extracellular matrix provides structural integrity to biofilm colonies (Flemming and Wingender, 2010), including for B. subtilis strain 3610 on MSgg agar (Srinivasan et al., 2018). Thus, we wondered if matrix plays a role in the rescue of alrA, either by providing structural support to alrA knockdown cells with weaker walls (Figure 4C) or by facilitating the diffusion of D-alanine. To test this idea, we deleted the genes encoding both of the main extracellular matrix components (EpsH, TasA) from the parent-RFP strain and the alrA knockdown in the sacA::gfp wrinkling-proficient library. We mixed the two matrix-deficient strains and quantified colony size and competitive fitness in full knockdown conditions on MSgg-xylose plates. As expected, matrix-deficient co-culture colonies were smaller than matrix-proficient co-cultures as matrix is necessary for robust biofilm colony growth (Seminara et al., 2012; Figure 5A). Nonetheless, matrix-deficient co-cultures exhibited approximately the same fraction of alrA cells as matrix-proficient co-cultures (Figure 5A, B, Figure 5—figure supplement 1A). Thus, matrix is not required for the growth rescue of alrA-knockdown cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig5-v2.jpg)
+
+**Figure 5.:** (A) Extracellular matrix is not required for alrA rescue (third column), and rescue is enhanced when the alrA full knockdown is combined with a matrix-deficient parent strain (fourth column). In the left column, the parent-GFP strain is false-colored in green, and in the other columns the alrA knockdown strain is green. The parent-RFP strain is false-colored in magenta. In the first two columns, both strains express matrix proteins. In the third column, both strains lack epsH and tasA, which encode key matrix components. In the fourth column, epsH and tasA are deleted from the parent-RFP strain while the alrA knockdown produces matrix. Images were acquired after 48 hr of growth. Scale bar: 5 mm. (B) Competitive fitness of the alrA full knockdown decreased over time when both strains or neither produced matrix, while fitness remained 1 (equal proportions of the two strains) and stable over time in co-cultures when the parent was matrix-deficient. The matrix-deficient parent-RFP+alrA knockdown (purple) and the parent-RFP+parent-GFP control (blue) data were not significantly different (p>0.2 at all time points); nor were the parent-RFP+alrA knockdown (orange) and the matrix-deficient parent-RFP+matrix-deficient alrA knockdown (yellow) data (p>0.07, Student’s t-test). The matrix-deficient parent-RFP+alrA knockdown (purple) fitness data were significantly higher than the parent-RFP+alrA knockdown (orange) at all time points after 0.5 days (p<0.014). Data were normalized to fitness at 0.5 days. Curves are means, and error bars represent one standard deviation (n = 2–3 biological replicates). Statistical analysis: Student’s unpaired t-test with a Benjamini–Hochberg multiple-hypothesis correction. (C) Cells with full knockdown of alrA were outcompeted by the parent-RFP strain during two-dimensional growth. Co-cultures were spotted on a MSgg-xylose agar pad and limited to growth in a layer with thickness one cell by applying a cover slip over the cells. Images were acquired after 24 hr of growth. Scale bar: 0.4 mm. (D) Design of screen to identify mutants that exhibit an increase in fitness when co-cultured with a matrix-deficient parent on MSgg-xylose agar. The sacA::gfp library was used in this screen; plate 3 from the 16 hr time point is shown. The distance between the centers of each colony is 9 mm. White box, controls; white dashed box, titration row. (E) Full knockdowns that exhibited mutualism generally involve genes related to nutrient sharing, translation, and DNA binding. Top: competitive fitness of co-cultures with the wild-type parent-RFP (purple) and matrix production-deficient parent (red) at 16, 24, and 48 hr. Numbers in the top right indicate the mutualism score. Bottom: merged images of biofilm colony co-cultures on MSgg-xylose agar at 48 hr. Scale bar: 5 mm. (F) Full knockdowns that exhibited mutualism in three-dimensional biofilm colonies were outcompeted by the matrix-deficient parent-RFP strain when growth was limited to two dimensions as in C. Images were acquired after 24 hr of growth. Scale bar: 0.4 mm. For (A, C–F), GFP is false-colored in green and RFP is false-colored in magenta.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The matrix-deficient parent-RFP+matrix-proficient parent-GFP co-culture did not form sectors in a three-dimensional colony (left), but did at the edge of a two-dimensional colony (right). Merges show the parent-GFP and parent-RFP strains false-colored in green and magenta, respectively. Left scale bar: 5 mm; right scale bar: 0.4 mm. (B) The leading edge of a co-culture grown between agar and a coverslip is one cell thick. One microliter of cell culture was spotted onto an MSgg agar pad, and a coverslip was applied to limit growth to two dimensions. The culture was incubated for 24 hr, and the colony edge was imaged. Scale bar: 50 μm. (C) Results from a mutualism screen comparing the competitive fitness of knockdown strains co-cultured with a matrix-proficient (left) or matrix-deficient (right) parent. Control parent-RFP+parent-GFP co-cultures are located on the right and left edges of the library, and the titration row is shown on the top and bottom rows. The distance between the centers of neighboring colonies is 9 mm. GFP (from parent-GFP or knockdown strains) and RFP (from parent-RFP) fluorescence signals are false-colored in green and magenta, respectively. (D) The library exhibited a wide range of mutualism scores, with 11 full knockdowns exhibiting a mutualism score >2 standard deviations higher than the mean across all strains (>0.22). The library is shown in blue, and controls are shown in gray. (E) Representative controls of the parent-RFP strain grown with the parent-GFP strain showing the final composition of RFP and GFP in the colonies. In merged images, the parent-RFP and parent-GFP are false-colored in magenta and green, respectively. These controls are from the mutualism screen at 48 hr (and are the same as the controls shown in Figure 5E). (F) Five non-essential gene knockdowns exhibited mutualism. Top: competitive fitness of co-cultures with the wild-type-like parent-RFP (magenta) and the matrix production-deficient parent (red) at 16, 24, and 48 hr. Numbers in top right indicate the mutualism score. Bottom: merged images of biofilm colony co-cultures on MSgg-xylose agar at 48 hr. Scale bar: 5 mm.
 
 Surprisingly, combining the matrix-proficient and wrinkling-proficient alrA strain under full knockdown with the matrix-deficient (∆epsH ∆tasA) parent-RFP strain resulted in an increased fraction of alrA-depleted cells relative to co-cultures with the matrix-proficient parent-RFP strain. By contrast to when both strains were matrix-proficient and the parent-RFP strain outcompeted alrA-depleted cells at the colony edge, alrA-depleted cells were distributed throughout the entire colony (Figure 5A). In addition to improved growth of the alrA knockdown, the RFP fluorescence of the matrix-deficient parent-RFP was also higher and occupied a larger area than in the co-culture of matrix-deficient alrA and parent-RFP strains, suggesting that the matrix-capable mutant promotes growth of the matrix-deficient parent strain (Figure 5A). Moreover, rather than a steady decrease in competitive fitness over time (Figure 5A,B), the competitive fitness of alrA against the matrix-deficient parent was stable at ~1 for 48 hr. The increased and stable fitness of this strain combination as a biofilm colony suggests a synthetic mutualistic interaction, defined here as the fitness of both strains in co-culture being stable and higher than either strain on its own. The matrix-deficient parent-RFP cells restore viability to alrA knockdown cells by providing D-alanine, and in turn alrA knockdown cells enhance growth of the parent-RFP strain by providing extracellular matrix.
 
 Our finding that the competitive fitness of alrA decreased over time in a co-culture with parent-RFP in which both strains were matrix-deficient (and hence did not form a canonical biofim colony) (Figure 5A) suggests that the mutualism between alrA and the parent-RFP strain requires growth in a matrix-capable biofilm colony. A recent study showed that biofilm colony expansion in three dimensions depends heavily on extracellular matrix, while two-dimensional growth relies more on cell growth and division (Srinivasan et al., 2019). To test whether the mutualism between alrA and the matrix-deficient parent was dependent on three-dimensional biofilm colony growth, we grew co-cultures between an agar pad and a coverslip. In this configuration, the growing edge of the colony has a thickness of only one cell, essentially constraining growth to two dimensions (Figure 5—figure supplement 1B). Now, in all matrix-production combinations of the sacA::gfp alrA strain under full knockdown and parent-RFP, including matrix-proficient alrA with the matrix-deficient parent, the parent-RFP strain had a growth advantage at the edge of the two-dimensional colony and outcompeted the alrA knockdown (Figure 5C, F). Thus, the mutualism we discovered between alrA under full knockdown and the matrix-deficient parent can be eliminated by removing the ability of the colony to grow in three dimensions.
 
-## Many metabolism-related mutants exhibit enhanced rescue in three-dimensional biofilm colonies with matrix-deficient parent cells
+### Many metabolism-related mutants exhibit enhanced rescue in three-dimensional biofilm colonies with matrix-deficient parent cells
 
 Our discovery that alrA knockdown cells grew in a mutualism with an extracellular matrix-deficient parent (Figure 5A, B) led us to hypothesize that other essential gene knockdowns might display enhanced growth when cultured with the matrix-deficient parent. To test this hypothesis, we performed co-culture screens of each strain in the sacA::gfp library with either the matrix-proficient or matrix-deficient parent-RFP strain on MSgg-xylose (Figure 5D, Figure 5—figure supplement 1C, Supplementary file 2). We measured competitive fitness at 16, 24, and 48 hr to identify strains that had increased and relatively stable fitness when they were the sole provider of extracellular matrix relative to competition with the wild-type-like parent-RFP. For each strain, we calculated a mutualism score defined as the fitness increase due to deletion of matrix components from the parent at 48 hr compared with the fitness increase at 16 hr; a positive score reflects a growing benefit of being the sole matrix provider, and hence implies relatively stable fitness (Figure 5D, Figure 5—figure supplement 1D). We focused on all strains with a mutualism score two standard deviations above the mean across controls (>0.22, Figure 5—figure supplement 1D).
 
@@ -113,13 +157,177 @@ Together, our results demonstrate that growth in a biofilm colony can drive gene
 
 ## Materials and methods
 
-## Media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>Bacillus subtilis strain NCIB 3610</td>
+      <td>Daniel B. Kearns laboratory</td>
+      <td>NCIB 3610 or 3610</td>
+      <td>trpC+, rapP+, sfp+, epsC+,swrA+, degQ+, pBS32</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>Parent-RFP</td>
+      <td>This work</td>
+      <td>HA12</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>Parent-GFP (sacA)</td>
+      <td>This work</td>
+      <td>HA773</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>sacA::gfp CRISPRi library</td>
+      <td>This work</td>
+      <td>See table S1</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>Parent-GFP (thrC)</td>
+      <td>This work</td>
+      <td>HA49</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>thrC::gfp CRISPRi library</td>
+      <td>This work</td>
+      <td>See table S1</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>rfp CRISPRi knockdown</td>
+      <td>This work</td>
+      <td>HA13</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>alrA CRISPRi knockdown</td>
+      <td>This work</td>
+      <td>HA420</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>alrA CRISPRi knockdown Δmatrix</td>
+      <td>This work</td>
+      <td>HA827</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>Parent-RFP Δmatrix</td>
+      <td>This work</td>
+      <td>HA825</td>
+      <td>Genotypes listed in table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (SPP1 phage)</td>
+      <td>SPP1 phage</td>
+      <td>Daniel B. Kearns laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDG1731-gfp</td>
+      <td>This work</td>
+      <td></td>
+      <td>Pveg-sfGFP in a thrC integration construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDG1731</td>
+      <td>Bacillus genetic stock center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sfGFP fw</td>
+      <td>This work</td>
+      <td></td>
+      <td>tcctagaagcttatcgaattcCTTATTAACGTTGATATAATTTAAATTTTATTTGACAAAAATGGGCTCGTGTTGTACAATAAATGTAACTACTAGTACATAAGGAGGAACTACTATGAGCAAAGGAGAAGAACTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sfGFP rev</td>
+      <td>This work</td>
+      <td></td>
+      <td>ttaagcaccggtttattaTTTGTAGAGCTCATCCATGCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB lennox medium</td>
+      <td>RPI</td>
+      <td>L24066-1000.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td>R2018a</td>
+      <td>Some scripts were written in earlier versions of Matlab, but all are compatible with R2018a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe, Inc</td>
+      <td>CS6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>ImageJ</td>
+      <td>2.0.0-rc-44/1.50e</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID functional annotation tool</td>
+      <td>https://david.ncifcrf.gov</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom scripts for growth and image analysis</td>
+      <td>This work</td>
+      <td></td>
+      <td>Data Dryad: doi:10.5061/dryad.79cnp5htm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media
 
 Strains were grown in LB (Lennox lysogeny broth with 10 g/L tryptone, 5 g/L NaCl, and 5 g/L yeast extract) or a defined MSgg medium (5 mM potassium phosphate buffer, diluted from 0.5 M stock with 2.72 g K2HPO4 and 1.275 g KH2PO4, pH 7.0 in 50 mL; 100 mM MOPS buffer, pH 7.0, adjusted with NaOH [note that some laboratories adjust the pH of MOPS buffer with KOH]; 2 mM MgCl2•6H2O; 700 μM CaCl2•2H2O; 100 μM FeCl3•6H2O; 50 μM MnCl2•4H2O; 1 μM ZnCl2; 2 μM thiamine HCl; 0.5% [v/v] glycerol; and 0.5% [w/v] monosodium glutamate). MSgg medium was made fresh from stocks the day of each experiment for liquid cultures or a day before the experiment for agar plates. Glutamate and FeCl3 stocks were made fresh weekly. Colonies were grown on 1.5% agar plates. For nutrient addition assays (Figure 3, Figure 3—figure supplement 1), we supplemented LB with one of the following: 0.5% (w/v) monosodium glutamate, 2 mM MgCl2•6H2O, 50 μM MnCl2•4H2O, 2 mM MgCl2•6H2O, 0.5% (w/v) L-asparagine, 0.5% (w/v) L-aspartic acid, 0.5% (w/v) L-lysine, or 0.5% (w/v) D-glutamic acid, and we supplemented MSgg with one of the following: 0.5% (w/v) L-cysteine, 0.5% (w/v) L-glutamine, 0.5% (w/v) L-glycine, 0.5% (w/v) L-serine, or 0.5% (w/v) L-tryptophan. Where indicated, L-threonine was added to MSgg at a concentration of 0.1 mg/mL. D-amino acids (D-alanine, D-methionine, D-glutamate, D-leucine, D-serine, D-valine) were each used at a concentration of 0.04 mg/mL. We made TY medium for phage transduction using the LB recipe above supplemented with 10 mM MgSO4 and 0.1 mM MnSO4.
 
 Antibiotics for selection of mutant strains were used as follows: kanamycin (kan, 5 μg/mL), MLS (a combination of erythromycin at 0.5 μg/mL and lincomycin at 12.5 μg/mL), chloramphenicol (cm, 5 μg/mL), tetracycline (tet, 12.5 μg/mL), and spectinomycin (spc, 100 μg/mL).
 
-## Strain construction
+### Strain construction
 
 All strains and their genotypes are listed in Supplementary file 1. For library construction, we used SPP1 phage transduction (Yasbin and Young, 1974). We used a 168 -strain containing Pxyl-dCas9 at the lacA locus (CAG74399) as a donor and wild-type strain 3610 (a gift from Dan Kearns) as the recipient to create the 3610-dCas9 parent strain (CAG74331) using MLS for selection. We then used this 3610-dCas9 parent as the recipient and a strain with Phyper-spank-gfp at the sacA locus (NRS1473, a gift from Nicola Stanley Wall) or a strain with Pveg-gfp at the thrC locus as the donor strain to create the parent-GFP strain expressing dCas9 and gfp (HA773 is the sacA::gfp parent and HA47 is the thrC::gfp parent; phage transduction described below), using kanamycin and tetracycline for selection, respectively.
 
@@ -129,7 +337,7 @@ The GFP-labeled ∆epsH ∆tasA alrA knockdown strain (HA823) and the parent-RFP
 
 To construct plasmid pDG1731-gfp (Pveg-sfGFP in a thrC integration construct), the following primers were used to clone superfolder GFP (sfGFP) and add the Pveg promoter: forward, tcctagaagcttatcgaattcCTTATTAACGTTGATATAATTTAAATTTTATTTGACAAAAATGGGCTCGTGTTGTACAATAAATGTAACTACTAGTACATAAGGAGGAACTACTATGAGCAAAGGAGAAGAACTTTTC; reverse, ttaagcaccggtttattaTTTGTAGAGCTCATCCATGCC. The amplicon and pDG1731 were both digested with HindIII and AgeI and ligated together. The ligation was used to transform chemically competent Escherichia coli. We transformed B. subtilis 168 with pDG1731-gfp to create HA45 and confirmed double crossover (spcR, MLSS), then used HA45 as the donor and HA2 as the recipient in phage transduction to create the thrC parent-GFP strain (Pxyl-dCas9 thrC::Pveg-gfp, HA47).
 
-## Growth conditions for library screens of growth on agar plates
+### Growth conditions for library screens of growth on agar plates
 
 To grow the library for monocultures and co-cultures, we inserted a sterile 96-well Singer pin (Singer Instruments, Somerset, UK) into frozen glycerol stocks and applied pressure and agitation so that each pin picked up some of the frozen glycerol stock from the appropriate well. The Singer pin was used to spot onto LB agar in a rectangular Singer plus plate, and the plate was incubated overnight at 37°C. A sterile 96-well Singer pin was used to pick up cells from each colony and inoculate 200 μL of LB in a 96-well plate. The parent-GFP strain was inoculated in some of the empty wells on the edge of each plate as controls. The plate was covered with an AeraSeal breathable film (Sigma-Aldrich) and grown on a plate shaker at 37°C for 4–5 hr until all wells were cloudy (OD600 ~1.0).
 
@@ -137,68 +345,90 @@ One hundred microliters of each culture were pipetted into a separate 96-well pl
 
 When screen outliers (Figures 2D and 3C) were replicated, strains were streaked for single colonies, which were inoculated into 200 μL of medium in the interior wells of a 96-well microtiter plate. The exterior wells were inoculated with the parent-GFP control strain, leaving the top for the parent-GFP+parent-RFP titration. To replicate findings regarding alrA, fresh colonies of the alrA knockdown strain and the parent-RFP strain were inoculated into 5 mL LB in test tubes and cultured on a roller drum at 37°C to an OD600 ~1.0. Equal-volume mixtures of the cultures were spotted along with a parent-GFP+parent-RFP titration in 12- or 6-well plates.
 
-## Imaging and image analysis of monoculture colonies in the library
+### Imaging and image analysis of monoculture colonies in the library
 
 Monoculture colonies were imaged using a Canon EOS Rebel T5i EF-S with a Canon Ef-S 60 mm f/2.8 Macro USM fixed lens. The DSLR camera was set up at a fixed height in a light box with diffuse lighting from three sides. The lighting and camera settings were maintained for the duration of the experiment using the ‘manual’ mode on the camera. The EOS Utility software was used to run the camera. Plates were imaged colony side up to avoid imaging through the agar. Images were analyzed using FIJI and scored as ‘grew outside original spot,’ ‘did not grow outside original spot,’ or ‘died and/or threw off suppressors.’ The ones classified as ‘died and/or threw off suppressors’ were assigned a colony size of 0. Suppressors were identified based on off-center colonies, often in flower petal-like arrangements in which one or a few cells within the original spot eventually grew but the majority of the cells did not. Colony size was measured manually in FIJI by drawing a diagonal line across the diameter of the colony.
 
-## Imaging and image analysis of biofilm colony co-cultures
+### Imaging and image analysis of biofilm colony co-cultures
 
 A Typhoon FLA 9500 scanner was used to image colonies using the multi-plate drawer. We used ~35 mL of medium with agar on a Singer rectangular plate to be near the plane of focus when imaging through agar. GFP (473 nm laser, Long Pass Blue filter) and RFP (532 nm laser, Long Pass Green filter) signals were acquired.
 
 For image analysis, Typhoon RFP and GFP images were cropped to contain only one plate and the image was rotated so that A1 was in the top left corner. Custom Matlab code was used to read in the image of each plate, divide it into a grid in which each grid cell contained one colony, and extract the fluorescence level across the grid. The ratio of the extracted GFP and RFP values was computed for every colony, and the ratio values for the titration row against the fraction GFP were fitted using the function I=αG/(1–βG), where I is the GFP/RFP ratio, G is the fraction GFP, and α and β are fit parameters (Figure 1D). The fit parameters from the titration row were used to map the library data and assign GFP fractions; the data were normalized so that the average of the internal parent-RFP and parent-GFP co-culture controls was 1. The image analysis and GFP/RFP scripts are available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021).
 
-## Harvesting cells to measure colony-forming units
+### Harvesting cells to measure colony-forming units
 
 Parent-RFP and parent-GFP were cultured and mixed in ratios from 0% to 100% in 20% increments as described above. One microliter of these mixtures was spotted onto LB or MSgg agar. Plates were incubated at 30°C in an unsealed ziplock bag with a wet paper towel. After 24 hr, colonies were imaged to quantify RFP and GFP fluorescence as described above. Individual colonies were scraped into 1 mL of 1× phosphate buffered saline using a sterile stick. Colonies were then sonicated using a Vibra-Cell sonicator (Sonics and Materials, Inc, Newtown, CT, USA) using cycles consisting of 12 1-s pulses with 20% amplitude. LB colonies were sonicated with 1–2 cycles, and MSgg colonies were sonicated with 5–7 cycles to disrupt the matrix and liberate individual cells. Cultures were visualized under a microscope to ensure that all cell clumps had been disrupted. Cell suspensions were serially diluted 10-fold and plated on LB. After overnight incubation at 37°C, plates were imaged to identify RFP- and GFP-expressing colonies and colony-forming units per mL were calculated.
 
-## CRISPRi rfp knockdown
+### CRISPRi rfp knockdown
 
 Wild-type 3610, parent-RFP, and CRISPRi-RFP strains were cultured in 5 mL test tubes at 37°C to an OD600 ~1 in liquid LB. The parent-RFP strain was spotted onto LB and MSgg agar plates without xylose, while the CRISPRi-RFP strain was spotted onto LB and MSgg agar in 12-well plates containing 0.0005–1% xylose. RFP fluorescence of the colonies was imaged as described above, and FIJI was used to quantify the fluorescence intensity of each colony, using wild-type 3610 as a blank.
 
-## Wild-type 3610, parent-GFP, and parent-RFP biofilm and non-biofilm colony growth
+### Wild-type 3610, parent-GFP, and parent-RFP biofilm and non-biofilm colony growth
 
 Wild-type 3610, parent-GFP, and parent-RFP strains were cultured in liquid LB to an OD600 ~1 at 37°C. One microliter of each culture was spotted onto LB or MSgg agar in a six-well plate. Colonies were cultured for 48 hr at 30°C in an unsealed ziplock plastic bag with a wet paper towel to increase humidity. Colonies were imaged using the DSLR setup described above.
 
-## Liquid culturing for growth rate analysis
+### Liquid culturing for growth rate analysis
 
 A single colony was used to inoculate 200 μL LB in a 96-well microtiter plate. OD600 was measured every 7.5 min using a Biotek Epoch plate reader at 37°C. OD600 curves were blanked and smoothed. The maximum growth rate of each culture was defined as the maximum derivative of ln(OD600). The script used for analyzing the growth curves and calculating growth rates is available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021).
 
-## Model of nutrient-dependent colony growth
+### Model of nutrient-dependent colony growth
 
-To determine how competitive fitness in a co-culture colony is affected by differences in growth rate, we simulated a reaction-diffusion model in which two cell types with densities (Ci, i=1,2) are inoculated in a circular spot from which they spread randomly in two dimensions to compete for fresh nutrients (n) and grow with distinct maximal growth rates (Mi), according to the following equations:∂Ci∂t=Minn+KCi+DC∇2Cidndt=-b∑iMinn+KCi+Dn∇2n,where DC  is the cell diffusivity, Dn is the diffusivity of nutrients, b is a conversion factor dictating how nutrients lead to cell growth, and cell growth is limited by nutrients when n~K or less. Initially n=n0 everywhere and, to represent the initial pinning of cells to the agar surface, Ci=C0 within a disc of radius r0 and outside of this disc Ci=0. The transformations  n¯=nn0,  Ci¯= Cin0/b express the nutrient level normalized by its initial value (so n0¯=1) and Ci normalized by its value if cells of type i consume all initially available nutrients, respectively, and eliminate the parameter b from the equations:∂C1¯∂t=M1n¯n¯+K/n0C1¯+Dc∇2C1¯,∂C2¯∂t=M2n¯n¯+K/n0C2¯+Dc∇2C2¯dn¯dt=−M1n¯n¯+K/n0C1¯−M2n¯n¯+K/n0C2¯+Dn∇2n−.
+To determine how competitive fitness in a co-culture colony is affected by differences in growth rate, we simulated a reaction-diffusion model in which two cell types with densities ($C_{i},i=1,2$) are inoculated in a circular spot from which they spread randomly in two dimensions to compete for fresh nutrients ($n$) and grow with distinct maximal growth rates ($M_{i}$), according to the following equations:
 
-Four of the seven parameters were approximated from data. The maximal growth rate M1= 0.0175 min−1 set the timescale and corresponds to a 40-min doubling time, similar to B. subtilis 3610 at 30°C. The radius of the initial spot (r0=1 mm) set the spatial scale. The ratio of maximal growth rates M2M1=0.8 was set to match the ratio in LB for ribosomal knockdowns compared with wild type (Figure 2C). We estimated the initial areal density of cells compared with their saturation density to be C0n0/b≈10-3 within the initial spot. To obtain this estimate, we assumed 1 μL of stationary phase culture spotted 106 cells over π mm2, and that the spotted cells saturate at a density of 109 cells/mm2 (assuming 1 mL of stationary phase culture contains 109 cells [Moran et al., 2010] and concentrates into 1 mm3 when pelleted, the latter indicating a maximal density of 109 cells/mm3 within a colony with height 1 mm).
+$$
+\frac{\partialC_{i}}{\partialt}=M_{i}\frac{n}{n+K}C_{i}+D_{C}\nabla^{2}C_{i}
+$$
 
-The remaining three parameters (DC, Kn0, DnDC) were fitted to data. The model approximately recapitulates the competitive fitness data (defined in the model as the ratio of integrated cell densities ∫C2dA/∫C1dA) and colony radius at 16 hr when DC≈0.003 mm2 hr−1 (Figure 2E, inset), while results were fairly robust over 100-fold ranges to variations in Kn0≈0.05 and DnDC≈100 (Figure 2—figure supplement 1C).
 
-## DAVID functional enrichment
+
+$$
+\frac{dn}{dt}=-b\sumiM_{i}\frac{n}{n+K}C_{i}+D_{n}\nabla^{2}n,
+$$
+
+where $D_{C}$ is the cell diffusivity, $D_{n}$ is the diffusivity of nutrients, $b$ is a conversion factor dictating how nutrients lead to cell growth, and cell growth is limited by nutrients when $n~K$ or less. Initially $n=n_{0}$ everywhere and, to represent the initial pinning of cells to the agar surface, $C_{i}=C_{0}$ within a disc of radius $r_{0}$ and outside of this disc $C_{i}=0$. The transformations $n¯=\frac{n}{n_{0}},C_{i}¯=\frac{C_{i}}{n_{0}/b}$ express the nutrient level normalized by its initial value (so $n_{0}¯=1$) and $C_{i}$ normalized by its value if cells of type i consume all initially available nutrients, respectively, and eliminate the parameter $b$ from the equations:
+
+$$
+\frac{∂C_{1}¯}{∂t}=M_{1}\frac{n¯}{n¯+K/n_{0}}C_{1}¯+D_{c}∇^{2}C_{1}¯,\frac{∂C_{2}¯}{∂t}=M_{2}\frac{n¯}{n¯+K/n_{0}}C_{2}¯+D_{c}∇^{2}C_{2}¯
+$$
+
+
+
+$$
+\frac{dn¯}{dt}=−M_{1}\frac{n¯}{n¯+K/n_{0}}C_{1}¯−M_{2}\frac{n¯}{n¯+K/n_{0}}C_{2}¯+D_{n}∇^{2}n−.
+$$
+
+Four of the seven parameters were approximated from data. The maximal growth rate $M_{1}=$ 0.0175 min−1 set the timescale and corresponds to a 40-min doubling time, similar to B. subtilis 3610 at 30°C. The radius of the initial spot ($r_{0}=1$ mm) set the spatial scale. The ratio of maximal growth rates $\frac{M_{2}}{M_{1}}=0.8$ was set to match the ratio in LB for ribosomal knockdowns compared with wild type (Figure 2C). We estimated the initial areal density of cells compared with their saturation density to be $\frac{C_{0}}{n_{0}/b}≈10^{-3}$ within the initial spot. To obtain this estimate, we assumed 1 μL of stationary phase culture spotted 106 cells over $\pi$ mm2, and that the spotted cells saturate at a density of 109 cells/mm2 (assuming 1 mL of stationary phase culture contains 109 cells [Moran et al., 2010] and concentrates into 1 mm3 when pelleted, the latter indicating a maximal density of 109 cells/mm3 within a colony with height 1 mm).
+
+The remaining three parameters ($D_{C},\frac{K}{n_{0}},\frac{D_{n}}{D_{C}}$) were fitted to data. The model approximately recapitulates the competitive fitness data (defined in the model as the ratio of integrated cell densities $\intC_{2}dA/\intC_{1}dA$) and colony radius at 16 hr when $D_{C}≈0.003$ mm2 hr−1 (Figure 2E, inset), while results were fairly robust over 100-fold ranges to variations in $\frac{K}{n_{0}}≈0.05$ and $\frac{D_{n}}{D_{C}}≈100$ (Figure 2—figure supplement 1C).
+
+### DAVID functional enrichment
 
 We used the DAVID functional annotation tool (https://david.ncifcrf.gov) to determine whether particular gene classes were enriched for each phenotype. The BSU identification numbers of the strains identified by our analysis and of the entire CRISPRi library were used as the ‘list’ and the ‘background,’ respectively, using the ‘locus tag’ option on the website.
 
-## D-amino acid rescue experiments
+### D-amino acid rescue experiments
 
 The unlabeled alrA knockdown (HA420) and wild-type 3610 were grown to an OD600 ~1 in liquid LB. One microliter of each culture was spotted onto MSgg or MSgg-xylose agar plates with 0.04 mg/mL of one of the D-amino acids. Cultures were incubated for 48 hr, and imaged at 24 and 48 hr using the DSLR setup described above.
 
-## Liquid growth of alrA monocultures and co-cultures for plating efficiency
+### Liquid growth of alrA monocultures and co-cultures for plating efficiency
 
 Cultures of the alrA knockdown strain (HA420) and the parent strain (HA2) were separately cultured from a colony in liquid LB at 37°C until both strains reached OD600 ~1.0. HA420 and HA2 cultures were mixed 1:1, and the mixture along with the HA420 monoculture was back-diluted 1:200 into 3 mL MSgg medium with 1% xylose and incubated at 30°C, shaking at an angle. At 0, 1, 2, 3, 4, and 5 hr, cultures were sampled, 10-fold serially diluted, and spotted onto MLS or chloramphenicol selection plates to determine CFU/mL of each strain (HA2 and HA420 are MLSR, HA420 is cmR, HA2 is cmS). We incubated dilutions overnight and counted colonies to calculate CFU/mL.
 
-## Liquid growth of wild-type 3610 and alrA knockdowns for microscopy
+### Liquid growth of wild-type 3610 and alrA knockdowns for microscopy
 
 The 3610 wild-type strain and an unlabeled alrA knockdown strain (HA420) were grown to an OD600 ~1 in LB. Each strain was diluted 1:200 into 3 mL MSgg+1% xylose to fully knock down alrA transcription during incubation at 30°C, shaking at an angle. At 0 and 6 hr, 1 μL of each culture were spotted onto 1× PBS pads made with 1.5% agar. When dry, we added a coverslip and imaged the cells in phase contrast on a Nikon Ti-E inverted microscope using a ×100 objective (NA: 1.4).
 
-## Two-dimensional culturing
+### Two-dimensional culturing
 
 Strains were grown in LB to OD600~1. While strains grew, we prepared a large agar pad at least 1 hr before imaging using the bottom of a rectangular Singer PlusPlate culture plate and 30 mL of MSgg+1% xylose. After the agar solidified, we added a second Singer PlusPlate on top to prevent contamination and drying. We mixed the strains 1:1 volumetrically and spotted 0.5 μL of this mixture onto the agar pad. After the spot dried, we added a large 113 × 77 mm custom no. 1.5 glass coverslip (Nexterion, Jena, Germany). Pads were incubated in a plastic bag with a wet paper towel to maintain humidity at 30°C for 24 hr. The entire spot was captured in a grid of images using a Nikon Ti-E inverted microscope with a 40 air objective (NA: 0.95) integrated with µManager (Edelstein et al., 2014). Images were stitched together using custom Matlab (MathWorks, Santa Clara, CA, USA) code available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021). GFP and RFP stitched images were merged using Adobe Photoshop, adjusting each channel identically across all images.
 
-## Mutualism screen
+### Mutualism screen
 
 The mutualism screen (Figure 5D) was performed as described above, except two screens were performed side by side: one in which each strain in the sacA::gfp library was co-cultured with the parent-RFP strain (HA12), and one in which each strain was co-cultured with the ∆epsH ∆tasA parent-RFP strain (HA825). These screens were carried out on MSgg+1% xylose plates with a titration row of HA773 (parent-GFP) in combination with either HA12 or HA825, as described above.
 
-## Qualitative fitness determination via dilution streaking
+### Qualitative fitness determination via dilution streaking
 
 Strains were inoculated from a fresh colony into 5 mL LB and incubated at 37°C for ~5 hr on a roller drum. Cultures were streaked onto agar plates using sterile wooden sticks. A new sterile stick was used for each streak. Plates were incubated overnight (~18 hr) at 37°C and imaged using the DSLR camera setup described above.
 
-## Statistical methods
+### Statistical methods
 
 All statistical tests are stated in the figure legends. To determine whether data were significantly different, Student’s unpaired t-tests were applied. The Benjamini–Hochberg multiple-hypothesis correction was applied to data in Figures 2C, 3C, and 5B.

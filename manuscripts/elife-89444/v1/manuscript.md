@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03njmea73 Department of Ophthalmology, Duke University Medical Center Durham United States
-2. https://ror.org/048sx0r50 Department of Biomedical Engineering, University of Houston Houston United States
-3. https://ror.org/048sx0r50 College of Optometry, University of Houston Houston United States
-4. https://ror.org/0457zbj98 Department of Cell Biology, University of Oklahoma Health Sciences Center Oklahoma City United States
-5. https://ror.org/03njmea73 Department of Pharmacology and Cancer Biology, Duke University Medical Center Durham United States
+1. Department of Ophthalmology, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
+2. Department of Biomedical Engineering, University of Houston Houston United States ([ROR:048sx0r50](https://ror.org/048sx0r50))
+3. College of Optometry, University of Houston Houston United States ([ROR:048sx0r50](https://ror.org/048sx0r50))
+4. Department of Cell Biology, University of Oklahoma Health Sciences Center Oklahoma City United States ([ROR:0457zbj98](https://ror.org/0457zbj98))
+5. Department of Pharmacology and Cancer Biology, Duke University Medical Center Durham United States ([ROR:03njmea73](https://ror.org/03njmea73))
 
 † Corresponding author
 
@@ -36,25 +36,71 @@ In this study, we investigated the role of ROM1 in the formation of photorecepto
 
 ## Results
 
-## Loss of ROM1 causes a compensatory increase in the relative outer segment content of PRPH2
+### Loss of ROM1 causes a compensatory increase in the relative outer segment content of PRPH2
 
 Three proteins, rhodopsin, PRPH2 and ROM1, comprise ~98% of the total transmembrane protein material in normal discs (Skiba et al., 2023). Recently, it has been proposed that the overall dimensions of a disc are determined by the molar ratio between the total tetraspanin content (PRPH2 and ROM1) forming the disc rim and rhodopsin forming the disc surface (Lewis et al., 2023). Therefore, interpreting the phenotype of the Rom1-/- mouse requires an understanding of how the loss of ROM1 affects the outer segment content of PRPH2. This is particularly important because discs deficient in PRPH2 display a compensatory increase in the relative amount of ROM1 (Lewis et al., 2023), suggesting that the opposite (i.e. a compensatory increase in the amount of PRPH2 when there is a deficiency in ROM1) may also be true. The latter is consistent with the report that the combined amount of PRPH2 and a knockin chimera between the transmembrane portion of ROM1 and C-terminus of PRPH2 is increased in the absence of ROM1 (Conley et al., 2019).
 
 To address this possibility, we employed a quantitative mass spectrometry approach (Skiba et al., 2023) recently used to determine the molar ratio among PRPH2, ROM1 and rhodopsin in other mutant photoreceptors (Lewis et al., 2023). In these experiments, the outer segment content of PRPH2 was determined as a molar fraction of rhodopsin. Because the packing density of rhodopsin in discs is unaffected by any changes in disc dimensions (Liang et al., 2004), this parameter reflects the relative content of PRPH2 in each disc, independent of any changes in outer segment length or volume. We found that the relative content of PRPH2 in Rom1-/- outer segments increased to an ~1:12 molar ratio to rhodopsin from an ~1:18 ratio in WT outer segments (Table 1; see raw data in Table 1—source data 1). Strikingly, this 1:12 ratio is equal to the ratio between total tetraspanin (PRPH2 +ROM1) and rhodopsin in WT outer segments. Therefore, the knockout of ROM1 leads to a compensatory increase in the relative disc content of PRPH2.
 
-## Loss of ROM1 delays disc enclosure causing increased outer segment diameter and occasional disc overgrowth
+**Table 1.**
+ Quantification of molar ratios between PRPH2, ROM1 and rhodopsin in WT and Rom1-/- outer segments.Table 1—source data 1.Quantification of molar ratios between tetraspanins and rhodopsin in WT and Rom1-/- mice – raw data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein molar ratios*</th>
+      <th>WT</th>
+      <th>Rom1-/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PRPH2:rhodopsin</td>
+      <td>1:18.1±0.5</td>
+      <td>1:12.2±1.3</td>
+    </tr>
+    <tr>
+      <td>ROM1:rhodopsin</td>
+      <td>1:36.3±3.9</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>PRPH2:ROM1</td>
+      <td>2.0:1±0.3</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>(PRPH2 +ROM1):rhodopsin</td>
+      <td>1:12.1±0.2</td>
+      <td>1:12.2±1.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values are shown as mean ± s.d. n/a: not applicable. Two outer segment preparations from mice of each genotype were analyzed._
+
+### Loss of ROM1 delays disc enclosure causing increased outer segment diameter and occasional disc overgrowth
 
 The retinal phenotype of Rom1-/- mice was analyzed at postnatal day 30 (P30). Our morphometric analysis showed that photoreceptor cell degeneration is just beginning at this age (Figure 1A and B). Interestingly, light microscopy imaging was sufficient to identify that the outer segment layer of these mice appeared disorganized and even shortened (Figure 1A and C). Please note that this and the three subsequent figures also include data obtained with a mouse overexpressing PRPH2 on the Rom1-/- background (PRPH2 OE/Rom1-/-), which will be described below, to facilitate a side-by-side comparison of all three phenotypes. Using transmission electron microscopy (TEM), we observed a number of outer segment structural abnormalities (Figure 2 and Figure 2—figure supplement 1), consistent with those noted in the original report (Clarke et al., 2000). In general, outer segments appeared to be shorter and wider, with some of them displaying overgrown disc membranes not aligned in a stack (yellow arrows, Figure 2B). The degree of this overgrowth varied, with the extended membranes occasionally wrapping around the entire outer segment.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig1-v1.jpg)
 
-**Figure 1.:** Rom1 and PRPH2 OE-/-/Rom1 mice.-/-(A) Representative light microscopy images of WT, Rom1 and PRPH2 OE-/-/Rom1 retinas analyzed at P30. OS: outer segment; ONL: outer nuclear layer. Scale bar: 20 µm. (-/-B) Quantification of the number of photoreceptor nuclei in a 100 µm segment of the retina at 500 µm increments away from the optic nerve (ON). Three retinas were analyzed for each genotype. Two-way ANOVA revealed statistically significant differences in the nuclear counts across genotypes (p=0.0002). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences between the total nuclear count between WT and Rom1 retinas (p=0.0001) and between -/-Rom1 and PRPH2 OE-/-/Rom1 retinas (p=0.0148), but not between WT and PRPH2 OE-/-/Rom1 retinas (p=0.3564). (-/-C) Quantification of the outer segment (OS) layer length at 500 µm increments away from the optic nerve. Three retinas were analyzed for each genotype. Two-way ANOVA revealed statistically significant differences in the OS layer lengths across genotypes (p<0.0001). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences for the OS layer length between WT and Rom1 retinas (p<0.0001) and between WT and PRPH2 OE-/-/Rom1 retinas (p=0.0006), but not between -/-Rom1 and PRPH2 OE-/-/Rom1 retinas (p=0.2924).-/-
+**Figure 1.:** (A) Representative light microscopy images of WT, Rom1-/- and PRPH2 OE/Rom1-/- retinas analyzed at P30. OS: outer segment; ONL: outer nuclear layer. Scale bar: 20 µm. (B) Quantification of the number of photoreceptor nuclei in a 100 µm segment of the retina at 500 µm increments away from the optic nerve (ON). Three retinas were analyzed for each genotype. Two-way ANOVA revealed statistically significant differences in the nuclear counts across genotypes (p=0.0002). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences between the total nuclear count between WT and Rom1-/- retinas (p=0.0001) and between Rom1-/- and PRPH2 OE/Rom1-/- retinas (p=0.0148), but not between WT and PRPH2 OE/Rom1-/- retinas (p=0.3564). (C) Quantification of the outer segment (OS) layer length at 500 µm increments away from the optic nerve. Three retinas were analyzed for each genotype. Two-way ANOVA revealed statistically significant differences in the OS layer lengths across genotypes (p<0.0001). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences for the OS layer length between WT and Rom1-/- retinas (p<0.0001) and between WT and PRPH2 OE/Rom1-/- retinas (p=0.0006), but not between Rom1-/- and PRPH2 OE/Rom1-/- retinas (p=0.2924).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative low magnification TEM images of WT, Rom1-/- and PRPH2 OE/Rom1-/- retinas analyzed at P30. RPE: retinal pigment epithelium; OS: outer segment; IS: inner segment. Scale bar: 10 µm. (B) Representative high-magnification TEM images of Rom1-/- outer segments. Yellow arrows indicate outer segment structural defects that range from slightly overgrown open discs to membranous whorls. Scale bar: 1 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative low magnification TEM images of WT and Rom1-/- retinas contrasted with the conventionally used osmium tetroxide. RPE: retinal pigment epithelium; OS: outer segment; IS: inner segment. Scale bar: 10 µm.
 
 Because these ultrastructural defects are reminiscent of those from several PRPH2 mutant lines in which photoreceptor disc enclosure is affected (Lewis et al., 2021), we assessed the status of disc enclosure in Rom1-/- outer segments. We contrasted retinal tissue with tannic acid and uranyl acetate instead of the traditionally used osmium tetroxide (Ding et al., 2015). This technique yields a darker staining of newly forming, “open” discs exposed to the extracellular space than discs fully enclosed within the outer segment. This approach revealed that even outer segments lacking gross abnormalities in Rom1-/- mice have an increased number of open discs at their base (Figure 3A and B). Whereas WT rods contained a relatively constant number of ~7 open discs (consistent with previous reports Ding et al., 2015; Volland et al., 2015; Lewis et al., 2021), Rom1-/- rods had an average of ~14 open discs. In addition, the number of open discs in Rom1-/- rods was much more variable than in WT rods, with up to ~30 open discs occasionally observed. Lastly, we quantified outer segment diameters of Rom1-/- rods and found that they were on average ~35% wider than WT rods (Figure 3C), which is close to the ~43% increase previously reported in Clarke et al., 2000.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig3-v1.jpg)
 
-**Figure 3.:** Rom1 and PRPH2 OE-/-/Rom1 mice.-/-(A) Representative high magnification TEM images of tannic acid/uranyl acetate-stained retinas of WT, Rom1 and PRPH2 OE-/-/Rom1 mice analyzed at P30. This approach stains newly forming ‘open’ discs more intensely than mature enclosed discs. Yellow arrows point to darkly stained, unenclosed discs; yellow arrowheads point to lightly stained, enclosed discs. Scale bar: 0.5 µm. (-/-B) Quantification of the number of darkly stained open discs at the rod outer segment base. Each data point represents a single outer segment. For each genotype, three retinas were analyzed with at least 35 outer segments analyzed per retina. Data were plotted with samples separated, while statistical analysis was performed on the averages within each retina (n=3 for each genotype). One-way ANOVA revealed statistically significant differences in the number of open discs across genotypes (p<0.0001). Tukey’s multiple comparisons post-hoc test revealed statistically significant differences in the number of open discs between WT and Rom1 (p<0.0001) and -/-Rom1 and PRPH2 OE-/-/Rom1 (p<0.0001) mice, but not between WT and PRPH2 OE-/-/Rom1 mice (p=0.2686). (-/-C) Quantification of the outer segment (OS) diameter. For each genotype, three retinas were analyzed with at least 66 outer segments analyzed per retina. One-way ANOVA revealed statistically significant differences in the OS diameters across genotypes (p=0.0074). Tukey’s multiple comparisons post-hoc test revealed statistically significant differences in the OS diameters between WT and Rom1 (p=0.0083) and -/-Rom1 and PRPH2 OE-/-/Rom1 (p=0.0197) mice, but not between WT and PRPH2 OE-/-/Rom1 mice (p=0.7198). Note that these diameters were measured in longitudinal sections, in which outer segment are not always sectioned across their widest part; therefore, these values are likely under-representations of the true OS diameters. However, this does not affect the comparison across genotypes.-/-
+**Figure 3.:** (A) Representative high magnification TEM images of tannic acid/uranyl acetate-stained retinas of WT, Rom1-/- and PRPH2 OE/Rom1-/- mice analyzed at P30. This approach stains newly forming ‘open’ discs more intensely than mature enclosed discs. Yellow arrows point to darkly stained, unenclosed discs; yellow arrowheads point to lightly stained, enclosed discs. Scale bar: 0.5 µm. (B) Quantification of the number of darkly stained open discs at the rod outer segment base. Each data point represents a single outer segment. For each genotype, three retinas were analyzed with at least 35 outer segments analyzed per retina. Data were plotted with samples separated, while statistical analysis was performed on the averages within each retina (n=3 for each genotype). One-way ANOVA revealed statistically significant differences in the number of open discs across genotypes (p<0.0001). Tukey’s multiple comparisons post-hoc test revealed statistically significant differences in the number of open discs between WT and Rom1-/- (p<0.0001) and Rom1-/- and PRPH2 OE/Rom1-/- (p<0.0001) mice, but not between WT and PRPH2 OE/Rom1-/- mice (p=0.2686). (C) Quantification of the outer segment (OS) diameter. For each genotype, three retinas were analyzed with at least 66 outer segments analyzed per retina. One-way ANOVA revealed statistically significant differences in the OS diameters across genotypes (p=0.0074). Tukey’s multiple comparisons post-hoc test revealed statistically significant differences in the OS diameters between WT and Rom1-/- (p=0.0083) and Rom1-/- and PRPH2 OE/Rom1-/- (p=0.0197) mice, but not between WT and PRPH2 OE/Rom1-/- mice (p=0.7198). Note that these diameters were measured in longitudinal sections, in which outer segment are not always sectioned across their widest part; therefore, these values are likely under-representations of the true OS diameters. However, this does not affect the comparison across genotypes.
 
 These findings show that ROM1 contributes to the process of disc enclosure and that the compensatory increase in the disc content of PRPH2 does not fully replace ROM1 in this capacity. Accordingly, the increase in outer segment diameter may be explained by prolonged delivery of disc membrane material to each disc before it becomes fully enclosed. On occasion, an expansion of open discs becomes uncontrolled leading to formation of membranous whorls.
 
@@ -62,9 +108,9 @@ Another phenotype of Rom1-/- mice was revealed using TEM of tangentially section
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig4-v1.jpg)
 
-**Figure 4.:** Rom1 and PRPH2 OE-/-/Rom1 mice.-/-Representative TEM images of retinas, tangentially sectioned through the outer segment layer, from WT, Rom1 and PRPH2 OE-/-/Rom1 mice analyzed at P30. Yellow arrowheads indicate incisures observed in WT and PRPH2 OE-/-/Rom1 discs, but not -/-Rom1 discs. Scale bar: 1 µm.-/-
+**Figure 4.:** Representative TEM images of retinas, tangentially sectioned through the outer segment layer, from WT, Rom1-/- and PRPH2 OE/Rom1-/- mice analyzed at P30. Yellow arrowheads indicate incisures observed in WT and PRPH2 OE/Rom1-/- discs, but not Rom1-/- discs. Scale bar: 1 µm.
 
-## ROM1 regulates the supramolecular organization of PRPH2
+### ROM1 regulates the supramolecular organization of PRPH2
 
 We next sought to address why the compensatory increase in the disc content of PRPH2 in Rom1-/- rods is insufficient to support normal disc morphogenesis. In this context, it is important to consider that defects in PRPH2 oligomerization, without an accompanying decrease in PRPH2 levels, also lead to defects in disc enclosure (Lewis et al., 2021). Therefore, we reasoned that loss of ROM1 may modulate the status of PRPH2 oligomerization. In fact, the idea that ROM1 may regulate the formation of high order PRPH2 oligomers has been put forward in a previous study (Loewen and Molday, 2000).
 
@@ -72,29 +118,29 @@ To address the possibility that PRPH2 oligomerization may be disrupted without R
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig5-v1.jpg)
 
-**Figure 5.:** (A) Western blot probed for PRPH2 after protein separation by SDS-PAGE under non-reducing conditions. Each sample contained 10 µg of lysate obtained from eyecups of WT or Rom1 mice at P30. Under these conditions, PRPH2 runs as disulfide-bound dimers (~75 kDa) and monomers (~37 kDa). The monomer band of PRPH2 runs as a doublet in -/-Rom1 but not WT eyecups. (-/-B) Quantification of the ratio between monomer and disulfide-bound (dimer) bands of PRPH2 was performed using densitometry of three independent lysates. For the doublet of monomer bands in Rom1 lysates, both bands were used for quantification. Unpaired t-test revealed a statistically significant difference in the PRPH2 monomer:dimer ratio between WT and -/-Rom1 retinas (p=0.0071). (-/-C) Western blot probed for PRPH2 after protein separation by SDS-PAGE under reducing conditions. Each sample contained 10 µg of lysate obtained from eyecups of WT or Rom1 mice. (-/-D) Lysates obtained under non-reducing conditions from eyecups of WT and Rom1 mice were subjected to velocity sedimentation on 5–20% sucrose gradients. Twelve fractions were collected with fraction #1 corresponding to 20% sucrose and fraction #12 to 5% sucrose. Proteins from each fraction were subjected to non-reducing SDS-PAGE and Western blotting for PRPH2. The distribution of molecular mass standards across fraction, as determined in -/-Chakraborty et al., 2008, is shown above the panels. (E) Quantification of both the monomeric and disulfide-bound bands of PRPH2 in each fraction was performed using densitometry of at least four independent samples and normalized to the total PRPH2 content across all fractions. Two-way ANOVA revealed statistically significant differences in the PRPH2 content across genotypes and fractions (p<0.0001 for disulfide-bound, p=0.9489 for monomer). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences between genotypes for the disulfide-bound form in fractions #1 (p=0.0022), #4 (p=0.0002), and #5 (p=0.0061).Figure 5—source data 1.Figure 5A.Figure 5—source data 2.Figure 5C.Figure 5—source data 3.Figure 5D.
+**Figure 5.:** (A) Western blot probed for PRPH2 after protein separation by SDS-PAGE under non-reducing conditions. Each sample contained 10 µg of lysate obtained from eyecups of WT or Rom1-/- mice at P30. Under these conditions, PRPH2 runs as disulfide-bound dimers (~75 kDa) and monomers (~37 kDa). The monomer band of PRPH2 runs as a doublet in Rom1-/- but not WT eyecups. (B) Quantification of the ratio between monomer and disulfide-bound (dimer) bands of PRPH2 was performed using densitometry of three independent lysates. For the doublet of monomer bands in Rom1-/- lysates, both bands were used for quantification. Unpaired t-test revealed a statistically significant difference in the PRPH2 monomer:dimer ratio between WT and Rom1-/- retinas (p=0.0071). (C) Western blot probed for PRPH2 after protein separation by SDS-PAGE under reducing conditions. Each sample contained 10 µg of lysate obtained from eyecups of WT or Rom1-/- mice. (D) Lysates obtained under non-reducing conditions from eyecups of WT and Rom1-/- mice were subjected to velocity sedimentation on 5–20% sucrose gradients. Twelve fractions were collected with fraction #1 corresponding to 20% sucrose and fraction #12 to 5% sucrose. Proteins from each fraction were subjected to non-reducing SDS-PAGE and Western blotting for PRPH2. The distribution of molecular mass standards across fraction, as determined in Chakraborty et al., 2008, is shown above the panels. (E) Quantification of both the monomeric and disulfide-bound bands of PRPH2 in each fraction was performed using densitometry of at least four independent samples and normalized to the total PRPH2 content across all fractions. Two-way ANOVA revealed statistically significant differences in the PRPH2 content across genotypes and fractions (p<0.0001 for disulfide-bound, p=0.9489 for monomer). Sidak’s multiple comparisons post-hoc test revealed statistically significant differences between genotypes for the disulfide-bound form in fractions #1 (p=0.0022), #4 (p=0.0002), and #5 (p=0.0061).
 
 Two differences were observed in Rom1-/- retinas. First, there was an ~50% increase in the fraction of PRPH2 that runs in a monomeric state (Figure 5A and B), indicating that PRPH2 oligomerization may be negatively affected by loss of ROM1. Second, the monomeric form of PRPH2 was represented by a doublet, consistent with a previous observation (Stuck et al., 2015). This doublet was consolidated into a single band under reducing conditions in the presence of DTT (Figure 5C), which suggests that the two bands in Rom1-/- retinas represent pools of PRPH2 molecules with different patterns of internal disulfide bonds. Apart from the C150 residue involved in intermolecular disulfide bonding of a PRPH2 molecule to another PRPH2 or ROM1, there are six other conserved cysteines in PRPH2 that are involved in intramolecular disulfide bonding (Goldberg et al., 1998). Therefore, it is possible that ROM1 contributes to PRPH2 assuming the intermolecular disulfide bond conformation optimal for tetraspanin oligomerization at the disc rim.
 
 To further investigate the status of PRPH2 oligomerization in Rom1-/- mice, we utilized a technique typically used to describe PRPH2 and ROM1 complexes of various sizes. In this approach, complexes are extracted from disc membranes in the presence of an non-ionic detergent and separated by velocity sedimentation on a sucrose gradient under non-reducing conditions (Clarke et al., 2000; Goldberg et al., 2001; Ding et al., 2004; Chakraborty et al., 2008; Chakraborty et al., 2009; Stuck et al., 2014; Zulliger et al., 2018; Milstein et al., 2020; Lewis et al., 2021). We performed velocity sedimentation of lysates from both WT and Rom1-/- retinas followed by SDS-PAGE of gradient fractions under non-reducing conditions (Figure 5D and E). The distribution of the PRPH2 monomeric form across fractions was unaffected by the ROM1 knockout. In both WT and Rom1-/- retinas, it was most abundant in fractions #6–8, shown to correspond to PRPH2 core complexes (Chakraborty et al., 2008). However, the loss of ROM1 shifted the distribution of the disulfide-bound PRPH2 dimers to smaller oligomeric forms, consistent with a previous report (Conley et al., 2019). Taken together, these data show that loss of ROM1 does indeed affect the status of PRPH2 oligomerization and suggest that abnormal PRPH2 oligomerization underlies the defects in disc enclosure in Rom1-/- mice.
 
-## Transgenic overexpression of PRPH2 can compensate for the loss of ROM1
+### Transgenic overexpression of PRPH2 can compensate for the loss of ROM1
 
 We next investigated whether a further increase in the level of PRPH2 could improve the morphological defects observed in Rom1-/- outer segments. We employed a transgenic line that expresses PRPH2 in both rods and cones under control of the human IRBP promoter (Nour et al., 2004). While originally called NMP, we refer to this line as PRPH2 OE (PRPH2 overexpressor). In the current study, we used PRPH2 OE mice with a single copy of this transgene, which has been shown to express ~30% excess PRPH2 over WT levels (Nour et al., 2004). PRPH2 OE mice were crossed with Rom1-/- mice and retinas were analyzed as for WT and Rom1-/- mice (Figures 1—3). Strikingly, the gross morphological defects observed in Rom1-/- mice were significantly improved by transgenic overexpression of PRPH2 (Figure 2A). PRPH2 overexpression rescued the disc enclosure defect of Rom1-/- outer segments by restoring the number of open discs to the WT level (Figure 3A and B). In addition, PRPH2 OE/Rom1-/- outer segments had normal diameters (Figure 3A and C) and their discs contained incisures (Figure 4). These data indicate that, whereas ROM1 contributes to disc formation in WT rods, it can be replaced by a sufficient excess of PRPH2.
 
-## ROM1 is able to form disc rims in the absence of the tetraspanin body of PRPH2
+### ROM1 is able to form disc rims in the absence of the tetraspanin body of PRPH2
 
 While we have shown that ROM1 contributes to the formation of disc rims, it is unclear whether it can do so in the absence of PRPH2. Because disc formation is completely abolished in the absence of PRPH2, we could not address this question using PRPH2 knockout mice. Instead, we utilized a knockin mouse model, called RRCT (Conley et al., 2019), in which the sequence of PRPH2 is replaced with that of ROM1, except for the 64 C-terminal amino acid residues (Figure 6A). The resulting chimeric protein contains the C-terminus of PRPH2, required for retaining disc membranes at the outer segment base (Salinas et al., 2017), while the rest of the protein, required for oligomerization and functioning in disc rim formation, is ROM1.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig6-v1.jpg)
 
-**Figure 6.:** (A) Cartoon schematic of the RRCT chimeric tetraspanin protein. In the RRCT mouse, the Prph2 gene has a knockin mutation that replaces it with a DNA sequence encoding a chimeric protein consisting of the tetraspanin body of ROM1 while retaining the C-terminal tail of PRPH2 that is essential for disc formation. (B) Representative TEM images of homozygous RRCT mice analyzed at P30. The boxed inset (left) is shown at a higher magnification (right) that reveals the presence of disc rims. Scale bars: 1 µm (left); 0.1 µm (right). (C) Immunofluorescent images of COS-7 cells co-transfected with RRCT-FLAG and ROM1 constructs. Cells were stained with antibodies against RRCT (red), ROM1 (blue) and calreticulin (green) to label ER membranes. Nuclei were counterstained with DAPI (grey). Scale bar: 10 µm. (D) Lysates obtained under non-reducing conditions from COS-7 cells co-transfected with RRCT-FLAG and ROM1 constructs were subjected to velocity sedimentation on 5–20% sucrose gradients. Twelve fractions were collected with fraction #1 corresponding to 20% sucrose and fraction #12 to 5% sucrose. Proteins from each fraction were subjected to reducing SDS-PAGE and Western blotting for ROM1 and RRCT. (E) Quantification of ROM1 and RRCT in each fraction was performed using densitometry of three independent lysates and normalized to the total content across all fractions.Figure 6—source data 1.Figure 6D.
+**Figure 6.:** (A) Cartoon schematic of the RRCT chimeric tetraspanin protein. In the RRCT mouse, the Prph2 gene has a knockin mutation that replaces it with a DNA sequence encoding a chimeric protein consisting of the tetraspanin body of ROM1 while retaining the C-terminal tail of PRPH2 that is essential for disc formation. (B) Representative TEM images of homozygous RRCT mice analyzed at P30. The boxed inset (left) is shown at a higher magnification (right) that reveals the presence of disc rims. Scale bars: 1 µm (left); 0.1 µm (right). (C) Immunofluorescent images of COS-7 cells co-transfected with RRCT-FLAG and ROM1 constructs. Cells were stained with antibodies against RRCT (red), ROM1 (blue) and calreticulin (green) to label ER membranes. Nuclei were counterstained with DAPI (grey). Scale bar: 10 µm. (D) Lysates obtained under non-reducing conditions from COS-7 cells co-transfected with RRCT-FLAG and ROM1 constructs were subjected to velocity sedimentation on 5–20% sucrose gradients. Twelve fractions were collected with fraction #1 corresponding to 20% sucrose and fraction #12 to 5% sucrose. Proteins from each fraction were subjected to reducing SDS-PAGE and Western blotting for ROM1 and RRCT. (E) Quantification of ROM1 and RRCT in each fraction was performed using densitometry of three independent lysates and normalized to the total content across all fractions.
 
 As previously reported (Conley et al., 2019), homozygous RRCT photoreceptors formed rudimentary outer segments (Figure 6B). The small number and size of these outer segment-like structures is likely explained by a very low expression of the chimeric protein (Conley et al., 2019), which may lead to a low efficiency of disc membrane retention. We now show that some of these structures contain stacked disc membranes that are partially enclosed within the outer segment plasma membrane. Importantly, these disc membranes have discernible rims with a characteristic hairpin-like shape. This finding indicates that ROM1 alone is, in principle, able to support the formation of disc rims in the absence of the body of PRPH2 that normally functions in this process.
 
 In an additional set of experiments, we explored the oligomerization status of ROM1 and the RRCT chimera in the absence of PRPH2. Unfortunately, the severe disruptions of outer segments in homozygous RRCT mice precluded us from obtaining a sufficient amount of retinal lysate to perform this analysis. Instead, we used an in vitro system in which we co-transfected equal amounts of RRCT and ROM1 in COS-7 cells (Figure 6C). In these cells, RRCT and ROM1 co-localized in structures that were distinct from the endoplasmic reticulum, as evident from the lack of co-localization with the endoplasmic reticulum marker, calreticulin, suggesting that they were not trapped in the biosynthetic membranes. Velocity sedimentation of lysates from these cells revealed that both RRCT and ROM1 sediment in fractions #6–8 (Figure 6D–E), which is the same as for PRPH2/ROM1 core complexes from WT photoreceptors. These data indicate that heterologously expressed RRCT and ROM1 can form core tetraspanin complexes, even in the absence of PRPH2, that are able to support disc rim formation.
 
-## Disc rims can be formed without disulfide bonds between tetraspanin molecules
+### Disc rims can be formed without disulfide bonds between tetraspanin molecules
 
 In a final experiment, we investigated whether the formation of intermolecular disulfide bonds between tetraspanins is dispensable for disc rim formation. We have previously shown that disulfide bonds between PRPH2 molecules are not absolutely required for this function because disc rims were formed in Prph2C150S/C150S knockin mice lacking the cysteine residue forming this bond (Lewis et al., 2020). Yet ROM1 also forms intermolecular disulfide bonds (Chakraborty et al., 2008), which raises the question of whether disc rim formation in Prph2C150S/C150S knockin mice was driven by disulfide-linked ROM1 molecules.
 
@@ -102,7 +148,7 @@ To explore whether disc rims can be formed in the absence of any disulfide-linke
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/89444/elife-89444-fig7-v1.jpg)
 
-**Figure 7.:** (A) Representative TEM images of tannic acid/uranyl acetate-stained retinas of Prph2 and compound C150S/C150SPrph2/C150S/C150SRom1 mice analyzed at P30. Photoreceptor outer segments of each mouse have severely perturbed outer segment structure. Yet, disc enclosure is not completely prevented as there are both darkly-stained, ‘open’ discs (yellow arrows) and lightly-stained, ‘enclosed’ discs (yellow arrowheads) in each genotype. The boxed region of each image depicts an area in which disc stacking appears relatively normal and permits the analysis of disc rim structure. Scale bar: 1 µm. (-/-B) Higher magnification images of the regions in which disc stacking appears normal in both Prph2 and C150S/C150SPrph2/C150S/C150SRom1 mice. Disc rims are formed in each genotype. Scale bar: 0.1 µm.-/-
+**Figure 7.:** (A) Representative TEM images of tannic acid/uranyl acetate-stained retinas of Prph2C150S/C150S and compound Prph2C150S/C150S/Rom1-/- mice analyzed at P30. Photoreceptor outer segments of each mouse have severely perturbed outer segment structure. Yet, disc enclosure is not completely prevented as there are both darkly-stained, ‘open’ discs (yellow arrows) and lightly-stained, ‘enclosed’ discs (yellow arrowheads) in each genotype. The boxed region of each image depicts an area in which disc stacking appears relatively normal and permits the analysis of disc rim structure. Scale bar: 1 µm. (B) Higher magnification images of the regions in which disc stacking appears normal in both Prph2C150S/C150S and Prph2C150S/C150S/Rom1-/- mice. Disc rims are formed in each genotype. Scale bar: 0.1 µm.
 
 In addition, staining with tannic acid/uranyl acetate revealed that the outer segments of Prph2C150S/C150S/Rom1-/- mice contained both open (yellow arrows, Figure 7A) and enclosed discs (yellow arrowheads, Figure 7A). This indicates that disulfide bonds among PRPH2 and ROM1 molecules are also dispensable for disc enclosure.
 
@@ -124,31 +170,153 @@ In conclusion, our study shows that ROM1 makes distinct contributions to the for
 
 ## Materials and methods
 
-## Mouse (Mus musculus) husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Labs</td>
+      <td>Jax#:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Prph2C150S</td>
+      <td>Stuck et al., 2014</td>
+      <td>MGI:6367798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>RRCT</td>
+      <td>Conley et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>PRPH2 OE</td>
+      <td>Nour et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rom1-/-</td>
+      <td>Clarke et al., 2000</td>
+      <td>MGI:2181662</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td>ATCC provides authentication and confirmation that mycoplasma contamination was not detected</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RRCT-FLAG</td>
+      <td>Conley et al., 2019</td>
+      <td></td>
+      <td>pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ROM1</td>
+      <td>Conley et al., 2010</td>
+      <td></td>
+      <td>pcDNA3.1 plasmid with murine Rom1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PRPH2 (polyclonal rabbit)</td>
+      <td>Kedzierski et al., 1999</td>
+      <td></td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ROM1 (polyclonal sheep)</td>
+      <td>Spencer et al., 2023</td>
+      <td></td>
+      <td>WB: (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RRCT (2B7; monoclonal mouse)</td>
+      <td>Conley et al., 2014</td>
+      <td></td>
+      <td>WB: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ROM1 (2H5; monoclonal mouse)</td>
+      <td>Conley et al., 2014</td>
+      <td></td>
+      <td>WB: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RRCT (2E7; monoclonal mouse)</td>
+      <td>Zulliger et al., 2015</td>
+      <td></td>
+      <td>IF: (1:2)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ROM1 (2Rom1; polyclonal rabbit)</td>
+      <td>Ding et al., 2005</td>
+      <td></td>
+      <td>IF: (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-calreticulin (polyclonal chicken)</td>
+      <td>Abcam</td>
+      <td>ab2908</td>
+      <td>IF: (1:250)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse (Mus musculus) husbandry
 
 Animal maintenance and experiments were approved by the local Institutional Animal Care and Use Committee (PROTO202000007; University of Houston, TX, USA) and guidelines as stated by the Association for Research in Vision and Ophthalmology (Rockville, MD). The generation of the Prph2C150S mouse was previously described in Stuck et al., 2014. The generation of the RRCT mouse was previously described in Conley et al., 2019. The generation of the PRPH2 OE mouse was previously described in Nour et al., 2004. The Rom1-/- mouse, described in Clarke et al., 2000, was generously provided by Roderick R McInnes (McGill University). All mice were genotyped to ensure that they did not contain either the rd8 (Mattapallil et al., 2012) or rd1 (Pittler et al., 1993) mutations commonly found in inbred mouse strains. All mice were on a C57BL/6 genetic background bearing the RPE65 L450 variant and housed under a 12/12 hr diurnal light (~30 lux) cycle. All experiments were performed with mice of randomized sex and, for each experiment, at least three biological replicates were analyzed.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 For all main figures, fixation and processing of mouse eyes for TEM was performed as described previously (Ding et al., 2015). In the afternoon, anesthetized mice were transcardially perfused with 2% paraformaldehyde, 2% glutaraldehyde and 0.05% calcium chloride in 50 mM MOPS (pH 7.4) resulting in exsanguination. Enucleated eyes were fixed for an additional 2 hr in the same fixation solution at room temperature. Eyecups were dissected from fixed eyes, embedded in 2.5% low-melt agarose (Precisionary, Greenville, NC) and cut into 200-µm-thick slices on a Vibratome (VT1200S; Leica, Buffalo Grove, IL). Agarose sections were stained with 1% tannic acid (Electron Microscopy Sciences, Hatfield, PA) and 1% uranyl acetate (Electron Microscopy Sciences), gradually dehydrated with ethanol and infiltrated and embedded in Spurr’s resin (Electron Microscopy Sciences). Seventy nm sections were cut, placed on copper grids and counterstained with 2% uranyl acetate and 3.5% lead citrate (19314; Ted Pella, Redding, CA). The samples were imaged on a JEM-1400 electron microscope (JEOL, Peabody, MA) at 60 kV with a digital camera (BioSprint; AMT, Woburn, MA). Image analysis and processing was performed with ImageJ. For Figure 2—figure supplement 1, fixation, processing, and imaging of mouse eyes for TEM was performed as described previously (Stricker et al., 2005).
 
-## Light microscopy of histological sections
+### Light microscopy of histological sections
 
 Plastic embedded blocks generated for TEM were sectioned through the optic nerve in 500 nm sections and stained with methylene blue for light microscopy as previously described (Lobanova et al., 2008). Images were taken with a confocal microscope (Eclipse 90i and A1 confocal scanner; Nikon) with a 60×objective (1.4 NA Plan Apochromat VC; Nikon) using Nikon NIS-Elements software. Image analysis and processing was performed with ImageJ.
 
-## Preparation of retinal lysates
+### Preparation of retinal lysates
 
 Eyecups were dissected and immediately frozen using liquid nitrogen and stored at −80 °C prior to processing. Lysates were prepared essentially as previously described (Stuck et al., 2014). In short, individual eyecups were lysed in 200 µl solubilization buffer (PBS, pH 7.0, containing 1% Triton X-100, 5 mM EDTA, 5 mg/ml NEM and protease inhibitors (Roche, Mannheim, Germany)). Samples were incubated on ice for 1 hr prior to being centrifuged for 30 min at 20,000 g at 4 °C. The supernatant was collected and subjected to either Western blot analysis directly or velocity sedimentation.
 
-## Western blotting of retinal lysates
+### Western blotting of retinal lysates
 
 Protein concentration was assayed by using a colorimetric Bradford assay (Bio-Rad, Hercules, CA, USA). Western blotting was performed essentially as previously described (Spencer et al., 2016). In short, lysates were incubated with Laemmli sample buffer (50 mM Tris-HCl, 2% SDS, 10% glycerol and 1% Bromophenol Blue) with or without 100 mM DTT for reducing or non-reducing blots respectively. Samples containing 10 µg of total protein were incubated at 90 °C for 5 min and run on a 10–20% Tris-HCl gel. Gels were transferred onto PVDF membrane and blocked with Intercept (PBS) Blocking Buffer (Li-Cor, Lincoln, Nebraska) with 0.25% Tween-20. Blots were incubated overnight at 4 °C with 1:1000 dilution of polyclonal rabbit anti-PRPH2 C-terminal antibody (Kedzierski et al., 1999) and 1:5000 dilution of polyclonal sheep anti-ROM1 antibody (Spencer et al., 2023). After primary antibody incubation, blots were washed and incubated with 1:10,000 dilutions of donkey anti-rabbit DyLight 800 and donkey anti-sheep DyLight 680 (Invitrogen, Carlsbad, CA) for 2 hr. All experiments were repeated at least three times. Blots were imaged using Odyssey CLx imaging system (Li-Cor).
 
-## Velocity sedimentation using sucrose gradients
+### Velocity sedimentation using sucrose gradients
 
 Sucrose gradients were prepared as previously described (Chakraborty et al., 2009). In short, gradients of 5–20% sucrose were prepared by sequentially layering 0.5 ml each of 20, 15, 10, and 5% sucrose solutions in PBS with 0.1% Triton X-100 and 10 mM NEM and allowing them to sit at room temperature for 1 hr to equilibrate. Gradients were then chilled on ice for 30 min prior to loading lysate and centrifugation at 40,000 rpm on a TLS-55 swinging bucket rotor (Beckman Coulter, Brea, CA) for 16 hr at 4 °C. The bottom of each tube was pierced with a 21 G needle and 12 fractions of ~180 µl each were collected. Western blotting was performed as described above using 15 µl samples for each fraction.
 
-## Cell culture experiments
+### Cell culture experiments
 
 COS-7 cells (ATCC, Manassas, VA, USA) were transfected with 7.5 µg of RRCT-FLAG and ROM1 mammalian expression constructs that were previously described (Conley et al., 2010; Conley et al., 2019) using a calcium phosphate transfection protocol as previously described (Conley et al., 2019). After 48 hr, cells were processed for immunofluorescent staining or velocity sedimentation as described below. Experiments were repeated three independent times.
 
@@ -156,11 +324,11 @@ Immunofluorescent staining was performed as described in Conley et al., 2010. Af
 
 For velocity sedimentation, scraped cells were lysed in the same solubilization buffer used to prepare retinal extracts. Lysates were separated as described above (200 µg protein lysate/gradient). Resulting gradient fractions were separated by SDS-PAGE under reducing conditions and blots were probed with either 1:500 dilution of monoclonal mouse anti-RRCT (2B7; described in Conley et al., 2014) or monoclonal mouse anti-ROM1 (2H5, described in Conley et al., 2014). Blots were probed with goat anti-mouse and anti-rabbit HRP secondaries (SeraCare, Milford, MA), imaged on a Bio-Rad ChemiDoc imager and analyzed in Image Lab Software version 6.0.1 (Bio-Rad).
 
-## Quantitative mass spectrometry
+### Quantitative mass spectrometry
 
 A crude preparation of rod outer segments was obtained as described in Lewis et al., 2023. Dissected mouse retinas were vortexed in 8% OptiPrep in mouse Ringer’s solution (containing 130 mM NaCl, 3.6 mM KCl, 2.4 mM MgCl2, 1.2 mM CaCl2, and 10 mM HEPES, pH 7.4) that was adjusted to 314 mOsm. The preparation was briefly left on ice to allow the remaining retinal tissue to settle. The supernatant was removed and centrifuged at 20,000 x g. Pelleted outer segments were gently washed with mouse Ringer’s solution before lysis with 2% SDS in PBS. Protein concentration was measured with the Bio-Rad Protein Assay kit (Bio-Rad). Samples containing 5–10 µg of protein were mixed with 0.25–0.5 µg BSA (used as an internal standard in this analysis) and cleaved with 1 µg trypsin/LysC mix (Promega, Madison, WI) using the SP3 beads protocol described in Hughes et al., 2014. The combined digest of outer segments and BSA was mixed with the digest of a chimeric protein consisting of concatenated tryptic peptides of outer segment proteins, including rhodopsin, PRPH2 and ROM1, which is described in Skiba et al., 2023. Mass spectrometry, data processing and data analysis were also performed as described in Skiba et al., 2023. For each genotype, a total of two biological replicates were analyzed.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 For the quantification of the number of photoreceptor nuclei (Figure 1B), photoreceptor nuclei were counted in 100 µm boxes at 500 µm intervals from the optic nerve spanning 2000 µm in each direction for three mice of each genotype, as previously described (Lobanova et al., 2018). Two-way ANOVA was performed to determine statistical significance across genotype and location.
 

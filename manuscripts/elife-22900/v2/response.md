@@ -30,9 +30,7 @@ The data in Figure 7 (now Figure 8) show that the equilibrium affinity is reduce
 
 Stimulation of DNA ligation by XRCC4-XLF complexes is mechanistically different than stimulation of the LIG4/XRCC4 complex ligation activity by XLF.
 
-XRCC4-XLF complexes stimulate DNA ligation through their ability to robustly tether DNA thereby favoring the rate of molecular collisions of the DNA ends during ligation (Andres et al., 2012, Brouwer et al., 2016). XRCC4-XLF complexes will therefore stimulate any ligase as shown in Author response image 1 with the Chlorella virus DNA ligase.10.7554/eLife.22900.034Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.22900.034
-
-DOI: http://dx.doi.org/10.7554/eLife.22900.034
+XRCC4-XLF complexes stimulate DNA ligation through their ability to robustly tether DNA thereby favoring the rate of molecular collisions of the DNA ends during ligation (Andres et al., 2012, Brouwer et al., 2016). XRCC4-XLF complexes will therefore stimulate any ligase as shown in Author response image 1 with the Chlorella virus DNA ligase.10.7554/eLife.22900.034Author response image 1.
 
 The way in which XLF stimulates LIG4/XRCC4 is associated with an increased in the rate of re-adenylation of LIG4 but the mechanism of this stimulatory effect is not understood (Riballo E, Woodbine L, Stiff T, Walker SA, Goodarzi AA, Jeggo PA. XLF-Cernunnos promotes DNA ligase IV-XRCC4 re-adenylation following ligation. Nucleic Acids Res. 2009 Feb;37(2):482-492.). XLF could, by interacting with XRCC4 in the LIG4/XRCC4 complex, induce an allosteric change in the LIG4 catalytic site.
 

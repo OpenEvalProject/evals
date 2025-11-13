@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Cambridge Institute for Medical Research, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 The Department of Haematology, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/05nz0zp31 Wellcome Trust-Medical Research Council Stem Cell Institute, University of Cambridge Cambridge United Kingdom
+1. Cambridge Institute for Medical Research, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. The Department of Haematology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Wellcome Trust-Medical Research Council Stem Cell Institute, University of Cambridge Cambridge United Kingdom ([ROR:05nz0zp31](https://ror.org/05nz0zp31))
 
 † Corresponding author
 

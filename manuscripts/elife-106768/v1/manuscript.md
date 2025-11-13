@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02f6dcw23 Department of Biochemistry and Structural Biology, University of Texas Health Science Center San Antonio United States
+1. Department of Biochemistry and Structural Biology, University of Texas Health Science Center San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
 
 † Corresponding author
 

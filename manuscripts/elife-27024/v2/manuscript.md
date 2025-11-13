@@ -24,13 +24,57 @@
 
 ## Abstract
 
-10.7554/eLife.27024.001 RNA is a critical component of chromatin in eukaryotes, both as a product of transcription, and as an essential constituent of ribonucleoprotein complexes that regulate both local and global chromatin states. Here, we present a proximity ligation and sequencing method called Ch romatin- A ssociated R NA seq uencing (ChAR-seq) that maps all RNA-to-DNA contacts across the genome. Using Drosophila cells, we show that ChAR-seq provides unbiased, de novo identification of targets of chromatin-bound RNAs including nascent transcripts, chromosome-specific dosage compensation ncRNAs, and genome-wide trans-associated RNAs involved in co-transcriptional RNA processing.
+RNA is a critical component of chromatin in eukaryotes, both as a product of transcription, and as an essential constituent of ribonucleoprotein complexes that regulate both local and global chromatin states. Here, we present a proximity ligation and sequencing method called Chromatin-Associated RNA sequencing (ChAR-seq) that maps all RNA-to-DNA contacts across the genome. Using Drosophila cells, we show that ChAR-seq provides unbiased, de novo identification of targets of chromatin-bound RNAs including nascent transcripts, chromosome-specific dosage compensation ncRNAs, and genome-wide trans-associated RNAs involved in co-transcriptional RNA processing.
 
 ## Introduction
 
 Much of the eukaryotic genome is transcribed into non-coding RNA (ncRNA), and several studies have established that a subset of these ncRNAs form ribonucleoprotein complexes that bind and regulate chromatin (Guttman and Rinn, 2012; Meller et al., 2015; Cech and Steitz, 2014). Some of the most well studied ncRNAs are those involved in dosage compensation, which include roX1 and roX2 in Drosophila and Xist in mammals. In Drosophila, roX1 and roX2 are part of the male-specific lethal (MSL) complex that coats the single male X chromosome to acetylate histone H4K16 and increase transcription (Conrad and Akhtar, 2012). In female mammals, Xist is expressed from a single X-chromosomal locus and coats the X chromosome from which it is expressed in order to silence transcription (Augui et al., 2011). Other ncRNAs, such as HOTAIR (Rinn et al., 2007; Chu et al., 2011), HOTTIP (Wang et al., 2011), and enhancer RNAs (Sigova et al., 2015), have been shown to regulate expression of specific genes by localizing to chromatin and recruiting activating or repressing proteins. Finally, repetitive ncRNA transcripts have roles at chromosomal loci essential in maintaining genomic integrity over many cell divisions, including TERRA at telomeres (Bunting et al., 2010) and alpha-satellites near centromeres (Hall et al., 2012). Despite these well-studied examples, the genomic targets of most chromatin-associated ncRNAs are unknown, and the mechanisms by which these ncRNAs regulate the epigenetic and spatial organization of chromatin remain largely unexplored.
 
 Genomic methods for studying the localization of specific RNA transcripts include ChIRP (Chu et al., 2011), CHART (Engreitz et al., 2013), and RAP (Simon et al., 2011). These techniques use hybridization of complementary oligonucleotides to pull down a single target RNA and then next generation sequencing or mass spectrometry to identify its DNA- or protein-binding partners (Simon et al., 2011). However, de novo discovery of chromatin-associated RNAs remains limited to computational predictions (Guttman and Rinn, 2012) or association with previously known factors (Khalil et al., 2009). Nuclear fractionation allows isolation of bulk chromatin and subsequent identification of chromatin bound RNAs via sequencing, but does not provide sequence-resolved maps of RNA binding locations along the genome (Werner and Ruthenburg, 2015). To overcome these limitations, we have developed ChAR-seq, a proximity ligation and sequencing method (Figure 1A) that both identifies chromatin-associated RNAs and maps them to genomic loci (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of the ChAR-seq method wherein RNA-DNA contacts are preserved by crosslinking, followed by in situ ligation of the 3’ end of RNAs to the adenylated 5’ end of the ssDNA tail of an oligonucleotide ‘bridge’ containing a biotin modification and a DpnII-complementary overhang on the opposite end. After extending the bridge by reverse transcription to generate a strand of cDNA complementary to the RNA, the genomic DNA is then digested with DpnII and then re-ligated, capturing proximally-associated bridge molecules and RNA. The chimeric molecules are reverse-transcribed, purified and sequenced. (B) Chimeric molecules are sequenced and the RNA and DNA ends are distinguished owing to the polarity of the bridge, which preferentially ligates to RNA via the 5'-adenylated tail and to DNA via the DpnII overhang. The RNA and DNA reads are then computationally recombined to produce contact maps for each annotated RNA in the genome. (C) Representative examples of genome-wide RNA coverage plots generated for Total RNA (black), mRNA (red), Hsromega (green), chinmo (green), ten-m (green), snRNA:U2 (cyan), snRNA:7SK (cyan), rox1 (blue) and roX2 (purple). Arrows show the transcription start site for each gene. In chromosome cartoons throughout the paper, light gray represents the primary chromosome scaffolds, darker gray regions are heterochromatic scaffolds, and black circles are centromeres. (D) Zoomed in region for an 850 kilobase region of chromosome 3L (chr3L). ChAR-seq tracks for Total RNA, ten-m, snRNA:U2, and snRNA:7SK are shown in comparison with PRO-seq tracks (Drosophila S2 [Kwak et al., 2013]) and ATAC-seq (this study, CME-W1-cl8+). (E) ChAR-seq contact matrix (RNA-to-RNA, top) plotted and aligned with same 850 kb region as panel D. ChAR-seq was performed without bridge addition (Hi-C/Mock-ChAR), resulting in DNA-DNA proximity ligation as in Hi-C (‘Hi-C, DNA-to-DNA’, bottom).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The oligonucleotide bridge contains a 5'-adenylated (5'-App) six nucleotide ssDNA tail (green), a single biotin modification (purple), a DpnII site (red) and a 3'-three carbon spacer (Sp3). The 3'-Sp3 is removed from the bridge during genomic DpnII digestion, permitting subsequent ligation to genomic DNA. Lower panel, Bar plot of the fraction of reads at each step of the data processing pipeline from a representative library preparation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Upper panel, Ten pmols of 17-nt adenylated ssDNA oligonucleotide (Universal App DNA, CTGTAGGCACCATCAAT) was incubated with 5 pmols of a 17nt ssRNA test probe (TTTCGTTGGAAGCGGGA) in 1x NEB T4 RNA Ligase Buffer with the indicated ligase (NEB Thermostable 5’ AppDNA/RNA ligase (Therm 5' Ligase), NEB T4 Rnl2tr K227Q Ligase (trT4K) or NEB T4 Rnl2tr R55K, K227Q ligase (trT4KQ)) and/or supplements (PEG, BSA, ATP, RNaseOUT). Products were then analyzed using denaturing polyacrylamide gel electrophoresis using a combination of NEB microRNA and low range ssRNA ladders and stained with SYBR-gold. Bands were quantified and the percent product was calculated using (shifted / (total * 0.66)) to account for the molar excess of DNA over RNA. No adjustment was made to account for preferential staining of ssDNA over ssRNA. Residual signal is expected in the lower band owing to the molar excess of DNA over RNA. A high molecular weight band is visible in the Therm 5’ Ligase lane, which most likely consists of high molecular weight concatemers of the AppDNA substrate caused by incomplete 3’ blocking of these oligos or removal of the 3’ block by the Therm 5’ Ligase. This experiment was performed once.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Data were processed using a custom pipeline, which can be accessed and is fully documented at: https://github.com/straightlab/flypipe (Bell, 2017 copy archived at https://github.com/elifesciences-publications/flypipe. Red lines indicate reads that do not align to any transcriptome in the sense orientation, and are then permitted to test alignment in the antisense orientation.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Bar plot of the relative number of reads after PCR duplicate removal and the fraction of those reads that contained the bridge. The RNase-treated cross-linked sample was incubated with 0.25 mg/mL RNase A and 12.5 Units of RNase H for 1 hr at 37°C between steps 4 and 5 of the extended protocol, followed by an additional wash step identical to step 4.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Scatter plot of the number of contacts for chromatin-associated RNAs identified in CME-W1-cl8+ rep1 vs rep2 (top), rep1 vs rep3 (middle), and rep2 vs rep3 (bottom). Pearson correlation coefficient between each replicate pair is reported.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Aligned scatter plot of spike-in level, as percentage of total soluble RNA (x-axis) vs percentage of false contacts (y-axis). MBP (red), Halo (blue), and GFP (green) purified RNA was added at 0.1%, 1%, and 10% of total soluble RNA. Bar indicated mean number of false contacts for all three spike-ins experiments at each concentration. (B) Heatmap of Pearson correlation coefficients at 100 kb bins of example class I (Hsromega), class II (7SK, 5SrRNA, snRNA:U2), and class III RNAs (roX2), aggregated mRNAs and snoRNAs, and ATAC-seq signal, which is indicative of open chromatin, and spike-ins. The genomic associations of spike-ins do not correlate well with each other, transcriptionally associated RNAs, or open chromatin.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Relative abundance of chromatin-associated RNA by transcriptome classification and strand orientation in Drosophila melanogaster CME-W1-cl8+ (male) wing disc cells.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** For each gene in our dataset, we functionally defined cis contacts as RNA-to-DNA contacts that lie within the gene body (±2 kb) for a given RNA (i.e., contacts that arise from nascent transcription). We then calculated a cis score, which is equivalent to the percentage of contacts that arise from this region. Upper plot is the per gene rank order analysis based on the cis score for each RNA in our dataset. Lower plot is a histogram of the frequency distribution for each cis score (percentage).
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** Representative contact matrix plots for chr2L, chr2R and chrX showing RNA-to-RNA contacts (ChAR-seq, top-half), relative to DNA-to-DNA contacts from Hi-C/Mock-ChAR (Hi-C, bottom half).
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig1-figsupp10-v2.jpg)
+
+**Figure 1—figure supplement 10.:** Bar plot of Pearson correlation coefficients by chromosome calculated by comparing Hi-C data from CME-W1-cl8+ (Ramírez et al., 2015) to our Hi-C/Mock-ChAR libary, where no bridge was added and biotin fill-in was performed following DpnII digestion, but prior to ligation.
 
 ## Results
 
@@ -48,9 +92,33 @@ To determine if the ChAR-seq protocol disrupts genome organization, we omitted t
 
 ChAR-seq data can also be visualized in a two-dimensional contact plot, where the genomic locus from which the RNA is transcribed is represented on the y-axis in linear genome coordinates, and the x-axis defines the genomic location where each RNA was bound. These plots provide a useful overview visualization for of the entire dataset. When we generated these contact plots for ncRNA (Figure 2A), mRNA (Figure 2B) and snRNA (Figure 2C), we observed strong horizontal lines that represent RNA transcripts that are transcribed from a single locus but are found distributed throughout the genome (class II), or in the special case of roX1 and roX2, specifically along the X chromosome (class III). Furthermore, RNAs found at sites from which they are transcribed clustered tightly along the diagonal, a feature most pronounced for mRNAs (class I) (Figure 2B). Many of the RNAs we found distributed broadly across the genome are transcription associated small nuclear RNAs (snRNAs) (Figure 2C). One of these, snRNA:7SK, is an abundant snRNA that functions as a scaffold for a transcriptional regulatory ribonucleoprotein complex that includes p-TEFb, Hexim and LARP7. Other broadly distributed snRNAs are components of the spliceosome (e.g., snRNA:U2) which largely functions co-transcriptionally (Perales and Bentley, 2009).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genome-wide plot of RNA to DNA contacts for non-coding RNAs. The y-axis represents the region of the genome from which a given RNA was transcribed and the x-axis represents the region of the genome where each RNA was found to be associated through proximity ligation (i.e., the binding site for each RNA). Genome-wide contact plots generated in the same way for (B) mRNA, and (C) snRNA. (D) Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. The majority (88%) of RNAs have fewer than 10 contacts per kilobase per million reads (CPKM) in our dataset and were not further analyzed owing to low coverage. The remaining 1952 RNAs account for 18.5 million (83%) of the total RNA-to-DNA contacts. (E) Scatter plot of length normalized chromatin-contacts versus total expression for each RNA. The 138 RNAs that had more than 100 CPKM and were enriched more than ten-fold are highlighted in red.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** RNAs are sorted according to the abundance of their genome-wide contacts (CPKM, left bars). Right bars represent the fold-enrichment of each RNA in ChAR-seq over RNA-seq.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Venn diagrams displaying overlap of chromatin-associated RNAs identified as having contacts more than 4-fold enriched over RNA expression which have more than 10 CPKM (left) or more than 100 CPKM (right) in technical replicates.
+
 To identify RNAs that are highly enriched for chromatin interactions, we plotted the normalized cumulative distribution of the number of sense contacts observed for each gene (Figure 2D). The majority of the RNAs in our dataset (14,860 out of 16,812, 88%) had fewer than 10 contacts per kilobase million reads (CPKM) (Figure 2D) and were excluded from further analysis. The remaining 1952 RNAs (12%) accounted for 83% (18.5 million) of all chromatin contacts in our data set. To estimate the contribution of total RNA abundance to this interaction signal, we performed RNA-seq for the CME-W1-cl8+ cell line and compared RNA expression levels with RNA-to-DNA contacts identified by ChAR-seq (Figure 2E, Supplementary file 1). We observed a correlation between RNA expression level and chromatin-RNA contacts; however, a cluster of RNAs clearly generated more chromatin interactions that would be expected from the overall expression levels (Figure 2E). Using both the length and read normalized contacts (CPKM) and the fold-enrichment over RNA expression as measured by RNA-seq, we identified 138 RNAs that had more than 100 CPKM and were enriched more than ten-fold, though many were enriched by 2–5 orders of magnitude (Figure 2E, red symbols; Figure 2—figure supplement 1). Notably, we observe good concordance between the RNAs identified using this methodology between replicates (Figure 2—figure supplement 2).
 
 We developed ChAR-seq using the male WME-cl8+ line, reasoning that the ncRNAs roX1 and roX2 would serve as an internal positive control. Both roX1 and roX2 are part of the MSL2 complex, which binds across the X-chromosome in male flies to recruit chromatin-modifiers that increase transcriptional output (Figure 3A) (Lucchesi and Kuroda, 2015). Indeed, ChAR-seq data showed roX1 and roX2 to be 7.6-fold (p-value<10−10) and 8.1-fold (p-value<10−10) enriched for interactions on the X chromosome, respectively (Figure 3B,C, Figure 3—figure supplement 1). In contrast, female flies express Sex lethal (Sxl), which binds to msl2 mRNA to prevent its translation, blocking assembly of the MSL2 complex (Lucchesi and Kuroda, 2015). Importantly, roX1 and roX2 require MSL2 for X-chromosome specific localization (Lucchesi and Kuroda, 2015), therefore female cells should lack detectable spreading of these ncRNAs along the X-chromosome. When we performed ChAR-seq in a female Drosophila melanogaster cell line, Kc167, we did not detect any significant roX2 localization on the X chromosome (Figure 3D) but observed excellent agreement in interaction signal from other RNAs across both cell lines (Figure 3—figure supplement 2, Figure 3C male, CME-W1-cl8+ and Figure 3D, female, Kc167, see e.g., snRNA:7SK and Hsromega).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig3-v2.jpg)
+
+**Figure 3.:** (A) Illustration of the roX1/roX2 spreading across the solitary X chromosome in male flies (CME-W1-cl8+ cell line). In contrast, the female-derived Kc167 cell line expresses significantly lower levels of the MSL2 complex, which mediates the association of roX1 and roX2, which therefore do not coat either of the two X-chromosomes in females. (B) Circos plot showing roX2 spreading from its site of transcription (red arrow) and binding with high density along the X-chromosome but low density binding throughout the genome. (C) Coverage plots of roX1 (blue), roX2 (purple), snRNA:7SK (cyan) and Hsromega (green) in male CME-W1-cl8+ cells. Tracks are DpnII normalized reads. ChAR-seq data were subsampled to match the read depth of the Kc167 sample. (D) Complementary coverage plots generated from female Kc167 cells. (E) Comparison of ChAR-seq (this work) to an alternative RNA-to-chromatin mapping method called ChIRP-seq (data from reference [Quinn et al., 2014]). Tracks for roX1 (upper, blue) and roX2 (lower, purple) were generated from 32308 and 87453 contacts, respectively, from a ChAR-seq dataset containing a total of 22.2 million contacts. For comparison, the roX1 and roX2 tracks derived from ChIRP-seq each represent greater that 20 million reads. To compare tracks at different read depths, the contact number was autoscaled, with the maximum peak height given a value of 1. (F) Comparison of the signal-to-noise ratio (see methods) between ChAR-seq and Chirp-seq for roX genes. ‘Raw reads’ is the number of roX reads present in each data set analyzed. (G) Correlation coefficients were calculated for roX1 and roX2 coverage tracks generated using ChIRP-seq and ChAR-seq and plotted relative to increasing bin size to estimate the resolution of the ChAR-seq assay.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) roX1 and roX2 are ~8 fold enriched on chromosome X as compared to autosomes (autosomal reads normalized to 1). (B) Comparison of ChAR-seq with ChIRP-seq and another recently published RNA-DNA contact identification method, GRID-seq (Li et al., 2017). Genome browser view displays contact signal for ChAR-seq, GRID-seq, and ChIRP-seq roX2 binding in a 1.75 Mb window on chrX. Signal is binned in 2 kb increments. Read density is DpnII or AluI site density normalized for ChAR- and GRID-seq, respectively, and library sized normalized for published ChIRP-seq data (asterisk). See Extended methods for filtering and restriction enzyme density normalization procedures. The Spearman’s rank correlation of signal (over 20 kb bins across chrX) between methods is: ChAR-ChIRP, rho = 0.80, GRID-ChIRP, rho = 0.84, ChAR-GRID, rho = 0.79.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Scatter plot of the number of contacts for chromatin-associated RNAs identified in CME-W1-cl8+ (x-axis) and Kc167 (y-axis) cell lines. Location of roX1 and roX2 are indicated in blue and purple respectively. Red line indicates where chromatin-associated RNAs that are not expressed in a cell-type dependent manner are expected to be found.
 
 High-resolution maps of roX1 and roX2 localization have previously been generated using ChIRP-Seq, which hybridizes probes against a known RNA and pulls down the associated chromatin for sequencing (Chu et al., 2011; Quinn et al., 2014). Comparing ChIRP-seq to ChAR-seq for both roX1 and roX2 (Figure 3E), we found that DNA contact locations were in surprisingly good agreement despite the fact that ChAR-seq reads are spread across all RNAs while ChIRP-seq reads map the specific RNA target, resulting in a large disparity in the effective sequencing depth between the methods. In ChIRP-seq, virtually all of the signal is attributable to interactions between chromatin and the target RNA. In contrast, ChAR-seq captures all RNA and DNA contacts, so that any given target RNA will comprise a subset of the total RNA-chromatin contacts in the dataset. In the case of roX1 and roX2, we observed 32,308 and 87,453 contacts, representing 0.1% and 0.36% of the ChAR-seq dataset. In contrast, the ChIRP-seq datasets plotted in Figure 3E represent ~24M and ~21M reads for roX1 and roX2, respectively. This indicates that ChAR-seq can identify RNA peaks along chromatin with high sensitivity for a given RNA.
 
@@ -59,6 +127,18 @@ To more quantitatively compare ChAR-seq to ChIRP-seq, we compared the signal-to-
 The resolution with which we can measure the localization of an RNA to a given genomic site constrains our ability to assess its potential modes of action. To measure the accuracy of ChAR-seq measurements of RNA interaction with DNA, we compared ChAR-Seq data to ChIRP-seq data to estimate the base-pair resolution of ChAR-Seq. We expected this resolution to be bounded ––in part––by the local DpnII cut frequency and the number of contacts for any given RNA. We divided the X chromosome into evenly sized bins and calculated correlation coefficients between ChIRP-seq and ChAR-seq datasets at increasing bin sizes for both roX1 and roX2 (Figure 3G). Using this method, we noted a bi-phasic increase of the correlation coefficient, corresponding to a minor plateau around 200 bp and a major plateau at ~25 kbp. The minor plateau is likely due to the DpnII distribution bias in the ChAR-seq tracks, while the major plateau is an estimate of the resolution of our assay, which is on the order of other proximity-ligation sequencing assays like Hi-C (van Berkum et al., 2010).
 
 To test if we could identify the functional roles for our most highly enriched RNAs, we clustered the snRNA class of RNAs based on their genomic contacts. These snRNAs collectively comprised 23% of all the RNA-to-DNA contacts in our dataset (Figure 4A) and are a substantial component of the spliceosome, a multi-megadalton ribonucleoprotein complex that catalyzes pre-mRNA splicing (Zhou et al., 2002; Will and Lührmann, 2011). The composition and conformation of the spliceosome is highly dynamic, though two dominant species exist in eukaryotes: the major spliceosome comprised of U1, U2, U4, U5 and U6 snRNAs, and the minor spliceosome comprised of U4:atac, U6:atac, U5, U11, and U12 (Will and Lührmann, 2011). Many members of this class of snRNAs have highly similar gene duplication variants in the Drosophila genome. We therefore first calculated the base sequence similarity of these variants to one another and aggregated signals that were tightly clustered (Figure 4—figure supplement 1). When we then correlated genome-wide binding signal within this class, we found that the distribution patterns of the major spliceosome snRNAs U1, U2, U4, U5, U6 clustered together along with snRNA:7SK (Figure 4B), which is part of the p-TEFb complex that relieves pausing of RNA Polymerase II at promoters (Kwak and Lis, 2013) and may participate in the release of paused polymerase during RNA splicing (Barboric et al., 2009). The components of the minor spliceosome did not cluster together, likely due to their low abundance (Will and Lührmann, 2011) and consequently low representation in our dataset.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative abundance of snRNAs identified by ChAR-seq. The size of the circles is proportional to the abundance of the snRNAs found by ChAR-seq. RNA components of the major and minor spliceosome are bounded by the gray boxes. (B) Cluster analysis of the pairwise correlation between genome-wide tracks of snRNAs. (C) Meta-analysis plots aggregating the signal of snRNA:7SK, snRNA:U2, snRNA:U5, roX1, roX2 and ATAC-seq over gene bodies (red), putative enhancers (blue dashed line) and random regions (black). (D) Hierarchical clustering based on pairwise Pearson correlation between representative ChAR-seq RNA-to-DNA contact coverage tracks (black) and modENCODE datasets available for the WME-C1-cl8 + cell line. Notable associations for the dosage compensation complex (green) and heterochromatin (‘het’) are indicated in the right margin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Pairwise alignment of snRNA gene variants annotated in FlyBase was performed using Genious R7 using a global alignment with free-end gaps and a 51% similarity cost matrix and the Tamura-Nei distance model. Distance scores were then clustered using the heatmap module in R. Low scores (blue) represent a high similarity, while a higher score (red) represents higher levels of dissimilarity.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27024/elife-27024-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) (top row) Boxplots showing the number of snRNA:7SK and snRNA:U2 ChAR-seq RNA-DNA trans contacts intersecting TAD boundaries (blue) or TAD centers (red) in 20 kb bins centered around the feature. Boxplot contains the median and interquartile range (25th and 75th percentile) for RNA-to-DNA contacts per bin for each RNA type. Bins were matched for repeatmasking and size. Asterisks above each boxplot denote p-values (p<1×10−9), and were calculated using the Wilcoxon rank-sum test and Bonferonni corrected for the multiple tests (all p-values<1×10−9). (bottom row) Meta-analysis plots aggregating the signal of snRNA:7SK and snRNA:U2 over TAD boundaries (red) and random regions (black) of matched size. Signal is relative to random background. (B) Similar plots as in (A), but for roX2 and ATAC-seq (i.e., Tn5 insertion signal).
 
 We next reasoned that spliceosome RNAs––as part of the co-transcriptional RNA processing machinery––should also be enriched in regions of active transcription. We therefore aggregated spliceosomal RNA signals over gene bodies (Figure 4C, red lines), putative enhancers (Kvon et al., 2014) (Figure 4C, blue dashed lines) and a random distribution of genomic bins of similar size (Figure 4C, black lines). We observed an enrichment of snRNAs (7SK, U2 and U6), but not roX1 or roX2, over gene bodies (Figure 4C) with a broad peak around transcription start sites, in good agreement with ChIRP data for 7SK in mice (Flynn et al., 2016). Because active transcription is also correlated with topological boundaries in flies (Hou et al., 2012; Ulianov et al., 2016), we examined the relationship between RNA contacts and genome organization. To test whether RNA-DNA contacts are enriched at topological boundaries, we measured the DNA contact frequency for snRNA:7SK and snRNA:U2 in 20 kb windows spanning TAD boundaries and TAD centers. Both 7SK and U2 RNAs were modestly, but significantly (Wilcoxon rank-sum test) enriched at TAD boundaries (Figure 4—figure supplement 2A (top)). We also aggregated 7SK and U2 contact signals across all TAD boundaries (Figure 4—figure supplement 2A (bottom), red lines) and a random distribution of identically sized genomic bins (Figure 4—figure supplement 2A (bottom), black lines), and found that these RNAs were ~1.4 fold enriched over boundaries. We also noted that roX2 was ~2.2 fold enriched over TAD boundaries on the X chromosome (Figure 4—figure supplement 2B), consistent with previous data showing that MSL2 dosage compensation complex High Affinity Sites (HAS) are preferentially found at TAD boundaries (Ramírez et al., 2015). Examination of chromatin accessibility (ATAC-seq) over TAD boundaries (Figure 4—figure supplement 2B) showed that open chromatin is enriched at TAD boundaries, supporting the idea that TAD boundaries are transcriptionally active in flies.
 
@@ -80,39 +160,39 @@ We anticipate that ChAR-seq will be a powerful new high throughput discovery pla
 
 ## Materials and methods
 
-## Brief description of ChAR-Seq protocol
+### Brief description of ChAR-Seq protocol
 
 Drosophila melanogaster CME-W1-cl8+ cells (Drosophila Genome Resource Center, Stock #151) were grown in T-75 flasks at 27°C in Shields and Sang M3 media supplemented with 5 µg/mL insulin, 2% FBS, 2% fly extract and 100 µg/mL Pen-Strep (Cherbas et al., 2011). Approximately 100–400 million cells were harvested for each library by centrifugation at 2000 x g for 2–4 min, resuspended in fresh media plus 1% formaldehyde and fixed for 10 min at room temperature. Fixation was quenched by adding 0.2 M glycine and mixing for 5 min at room temperature. Cells were centrifuged at 2000 x g for 2–4 min, resuspended in 1 mL of PBS, and centrifuged again at 2000 x g for 2 min. The supernatant was aspirated and discarded, and the cell pellet was flash frozen in liquid nitrogen and stored at −80C until needed. Cells were thawed in lysis buffer and the cross-linked nuclei and cellular material were isolated by centrifugation for the in situ ligation protocol. Female Kc167 cells (Drosophila Genome Resource Center, Stock #1) for analysis of sex dependent RNA contact map were processed as for CME-W1-cl8+ cells. Both Kc167 and CME-W1-cl8+ cells were authenticated by the Drosophila Genome Resource Center and tested for mycoplasma contamination by cytoplasmic DNA staining.
 
 Briefly, RNA was lightly and partially chemically fragmented by heating in the presence of magnesium. The pellet was isolated and washed, and RNA ends were ligated using truncated T4 Rnl2tr R55K K227Q ligase (hereafter referred to as trT4KQ RNA ligase) to an oligonucleotide 'bridge' molecule containing a 5'-adenylated ssDNA overhang. The RNA ligase was inactivated, the pellet was washed and the RNA strand was stabilized by first strand synthesis of the RNA through extension of the bridge by Bst 3.0 polymerase. The polymerase was inactivated and the pellet was washed. Genomic DNA was then digested with DpnII, followed by ligation of the DpnII digested genomic DNA to the opposite end of the oligonucleotide 'bridge'. Second strand synthesis was then performed using RNaseH and DNA Polymerase I to complete cDNA synthesis of the RNA-encoded side of the new, chimeric molecules. The sample was then deproteinized and crosslinks were reversed by heating overnight in SDS and proteinase K. DNA was then ethanol precipitated and sheared to ~200 bp fragments using a Covaris focused ultra-sonicator. DNA fragments containing the biotinylated bridge were then purified using magnetic streptavidin-coated beads. DNA ends were repaired using the NEBNext End Repair and dA tailing module, and ligated to NEBNext hairpin adaptors for Illumina sequencing. The adaptor hairpin was cleaved using USER, and DNA fragments were amplified by ~8–12 rounds of PCR with NEBNext Indexing Primers for Illumina (TruSeq compatible). The partially amplified library was then purified using AMPure XP beads to remove adaptor dimers, and the optimum number of additional PCR cycles was determined by qPCR to achieve approximately 30% saturation. Library amplification was then completed by the additional rounds of PCR, and the library was purified and size selected to a target range of 100–500 bps using AMPure XP beads. The size distribution of the library was checked by capillary electrophoresis using an Agilent Bioanalyzer, and quantified using qPCR against a phiX Illumina library standard curve. Libraries were sequenced using the Illumina MiSeq platform for quality control, and subsequently sequenced on the Illumina NextSeq platform (Stanford Functional Genomics Facility) using single-end 152 bp reads. Data were processed and analyzed using a custom pipeline.
 
-## Detailed ChAR-seq protocol
+### Detailed ChAR-seq protocol
 
-## Shields and Sang M3 media, for 0.5 L
+#### Shields and Sang M3 media, for 0.5 L
 
 Sterile filter media using 0.2 um filter. Store media at 4C. Warm to room temperature before splitting cells. Culture cells at 27C in 75 flasks (1–2 flasks per library), splitting or harvesting approximately every 3–4 days. Cells are detached from the flask surface by vigorously pipetting up and down with a serological pipette. Confirm that >95% of cells are healthy and viable using trypan blue assay at each harvest.
 
 All buffers and solutions prepared with DEPC-treated water. All buffers are made with fresh, unopened chemicals to minimize RNase contamination. All enzyme stocks and reagents are dedicated for RNA work and kept RNase-free. Optional steps are included for the three alternative protocols used for (A) the RNA spike-in experiment, (B) the RNase control, and (C) the Hi-C/Mock-ChAR experiment.
 
-## Step 1: Harvesting cells and crosslinking (can be done in advance)
+#### Step 1: Harvesting cells and crosslinking (can be done in advance)
 
 NOTE: we find it useful to remove the supernatant in this and all subsequent steps using a mechanical micropipette rather than an aspirator, which risks loss of sample.
 
-## Step 2: Lysis (Day 1, start in early afternoon)
+#### Step 2: Lysis (Day 1, start in early afternoon)
 
-## Lysis buffer
+##### Lysis buffer
 
-## Step 3: RNA fragmentation (Day 1)
+#### Step 3: RNA fragmentation (Day 1)
 
-## Step 3A (Optional additional step A): RNA spike in
+#### Step 3A (Optional additional step A): RNA spike in
 
-## Step 4: Wash cells to remove SDS and non-crosslinked RNA fragments (Day 1)
+#### Step 4: Wash cells to remove SDS and non-crosslinked RNA fragments (Day 1)
 
-## Step 4B (Optional additional step B): RNase control
+#### Step 4B (Optional additional step B): RNase control
 
-## Step 5: RNA to linker ligation, RNA first, Day 1
+#### Step 5: RNA to linker ligation, RNA first, Day 1
 
-## Step 5 (alternative): Hi-C control (PEG mock incubation, no ligase, no bridge)
+#### Step 5 (alternative): Hi-C control (PEG mock incubation, no ligase, no bridge)
 
 End day 1
 
@@ -120,25 +200,25 @@ End day 1
 
 Start day 2
 
-## Step 6: Wash to remove PEG (Day 2, morning)
+#### Step 6: Wash to remove PEG (Day 2, morning)
 
-## Step 7: First strand synthesis, Bst 3.0 (Day 2, morning)
+#### Step 7: First strand synthesis, Bst 3.0 (Day 2, morning)
 
-## Step 7 (alternative): Hi-C control (mock, no Bst, no NTPs)
+#### Step 7 (alternative): Hi-C control (mock, no Bst, no NTPs)
 
-## Step 8: Inactivate and wash (Day 2)
+#### Step 8: Inactivate and wash (Day 2)
 
-## Step 9: Genomic DNA digestions (Day 2, afternoon)
+#### Step 9: Genomic DNA digestions (Day 2, afternoon)
 
-## Step 10: Pellet and wash cells
+#### Step 10: Pellet and wash cells
 
-## Step 11: Inactivate DpnII
+#### Step 11: Inactivate DpnII
 
-## Step 12: Pellet and wash cells three times
+#### Step 12: Pellet and wash cells three times
 
-## Step 12 (alternative): Hi-C control (biotinylated the cut ends)
+#### Step 12 (alternative): Hi-C control (biotinylated the cut ends)
 
-## Step 13: Bridge to genomic DNA ligation (Day 2 overnight to day 3)
+#### Step 13: Bridge to genomic DNA ligation (Day 2 overnight to day 3)
 
 NOTE : this reaction requires ATP and this is different from the buffer used throughout the earlier steps, if you use T4 RNA ligase buffer, you must supplement the final concentration with 1 mM ATP
 
@@ -148,13 +228,13 @@ End day 2
 
 Start day 3
 
-## Step 14: Pellet and wash cells, to remove T4 ligase
+#### Step 14: Pellet and wash cells, to remove T4 ligase
 
 ** Allow Hi-C ligation to proceed during second strand synthesis, so skip this step for Hi-C sample **
 
-## Step 15: Second strand synthesis (skip for Hi-C control)
+#### Step 15: Second strand synthesis (skip for Hi-C control)
 
-## Step 16: Crosslink reversal (end of Day 3)
+#### Step 16: Crosslink reversal (end of Day 3)
 
 End day 3
 
@@ -162,15 +242,15 @@ End day 3
 
 Start day 4
 
-## Step 17: Precipitate DNA
+#### Step 17: Precipitate DNA
 
 NOTE: Do not cool the sample on ice as the SDS will precipitate
 
 NOTE: Flocculent should be visible after inverting the tube gently 3–4 times. If no flocculent is visible, add 200 µL of additional ice cold 100% EtOH
 
-## Step 19: Covaris shear DNA
+#### Step 19: Covaris shear DNA
 
-## Step 19: Isolation of biotinylated DNA fragments
+#### Step 19: Isolation of biotinylated DNA fragments
 
 1X tween wash buffer (TWB)
 
@@ -178,88 +258,88 @@ NOTE: Flocculent should be visible after inverting the tube gently 3–4 times. 
 
 NOTE: Do not allow the beads to dry out
 
-## Step 20: End repair, and dA tailing
+#### Step 20: End repair, and dA tailing
 
-## Step 21: Adapter ligation (on bead)
+#### Step 21: Adapter ligation (on bead)
 
 NOTE: The following order of addition is important
 
-## Step 22: Wash beads
+#### Step 22: Wash beads
 
-## Step 23: On bead amplification (library PCR 1)
+#### Step 23: On bead amplification (library PCR 1)
 
-## Step 24: First AMPure XP size selection to remove adaptor dimers (target size 200 to 500 bp)
+#### Step 24: First AMPure XP size selection to remove adaptor dimers (target size 200 to 500 bp)
 
 NOTE: The NEBNext adaptor is a 65 nt hairpin… adaptor dimers would be 65 bp, because each hairpin is ~32 bp long… however, the indexing primers are also 65 nts, so amplification of adaptor dimer results in a 130 bp fragment that must be removed at this step, and adds 130 bp to the ideal target length of 150 bp, so our molecules of interest are now 280–300 bp
 
 NOTE: This is, in theory, to be discarded, but save until you’ve validated the completed library prep by qPCR and Bioanalyzer in case needed for troubleshooting
 
-## Step 25: qPCR to determine how many more cycles to amplify
+#### Step 25: qPCR to determine how many more cycles to amplify
 
-## Step 25: Off bead amplification (library PCR 2)
+#### Step 25: Off bead amplification (library PCR 2)
 
 NOTE: the number of additional cycles, N, is ascertained by estimating the number of additional cycles required to reach 1/3 saturation from the qPCR analysis in Step 24. The number of cycles will vary between each sample library.
 
-## Step 26: High and low size selection using AMPure XP beads (final polishing)
+#### Step 26: High and low size selection using AMPure XP beads (final polishing)
 
-## Step 27: Quality control
+#### Step 27: Quality control
 
-## Sequencing
+### Sequencing
 
 ChAR-seq libraries were sequenced with single-end 152 bp reads on the Illumina MiSeq and NextSeq according to manufacturer’s instructions.
 
-## Data processing and software
+### Data processing and software
 
 Reads were processed using a custom pipeline, which can be accessed at: https://github.com/straightlab/flypipe (Bell, 2017 copy archived at https://github.com/elifesciences-publications/flypipe). PCR duplicates were removed using Super Deduper (Petersen et al., 2015 using the entire read length. Adapters were removed and reads trimmed for low quality with Trimmomatic (Bolger et al., 2014) using a composite set of Illumina adapters, leading/trailing cut length of 3, sliding window of 4:15, and a minimum length of 36. RNA and DNA portions of each read are identified and split by a custom python script that finds the bridge, uses the bridge polarity to identify which side of the read is RNA or DNA, and verifies that there is only a copy of the bridge. All reads lacking a full bridge sequence or that contained two or more bridges were removed. Only reads that contained sequence on both sides of the bridge (RNA and DNA) were processed further. Unique read IDs from the initial read containing the full molecule remained linked to both the RNA and DNA sequences after splitting from the bridge sequence. Additional software used by FlyPipe or during preparation of figures include: bowtie2 (Langmead and Salzberg, 2012), SAMtools (Li et al., 2009), BEDtools (Quinlan and Hall, 2010), MACS2 (Zhang et al., 2008), Circos (Krzywinski et al., 2009), R, GraphPad Prism v7.0, deepTools2 (Ramírez et al., 2016), HOMER (Heinz et al., 2010), and Genieous (Kearse et al., 2012).
 
-## ChAR-seq DNA and RNA alignment
+### ChAR-seq DNA and RNA alignment
 
 Four replicates were processed and merged for analysis in the following way. Reads were aligned to Drosophila melanogaster genome (dm3, release r5.57 using bowtie2 (Langmead and Salzberg, 2012) with the --very-sensitive option and allowing one mismatch. RNA was aligned separately to all dm3 transcriptomes from FlyBase (downloaded January 2016, versions r5.57): with the same bowtie2 parameters, but also first forcing sense strandedness as bridge orientation should preserve the RNA strand information, and then for reads that did not align in the sense direction, permitting antisense alignment. Reads that aligned with equal alignment score to more than one transcriptome were filtered based on a priority rank according to the following order: tRNA, miscRNA, ncRNA, transcript, three_prime_UTR, five_prime_UTR, exon, intron, miRNA, gene, gene_extended2000. For a given read, this rank preserves the annotation information from the top ranked transcripome. For example, a read aligning to the ‘ncRNA’, ‘transcript’, and ‘exon’ transcriptomes would receive ncRNA annotations, and be considered a ncRNA in further analysis. Reads aligning to tRNA and miscRNA groups were removed from further analysis. Reads lacking valid sense alignments to any transcriptome, but that aligned in the antisense orientation were ranked and filtered in the same manner. We note that for some mRNAs, some highly abundant reads emanating from the mRNA locus may potentially be expressed from small RNAs (e.g., unannotated snoRNA, tRNA, snRNA) overlapping the mRNA locus. Although the CME-W1-cl8+ cell line has the most normal karyotype of the commonly used Drosophila cell lines, the CME-W1-cl8+ reference genome has not been assembled and slight variation may exist in the positions of some reads due to potential genomic differences between CME-W1-cl8+ cells and the sequence fly strain used for the reference genome.
 
-## ChAR-seq RNA-DNA contact identification
+### ChAR-seq RNA-DNA contact identification
 
 Previously linked RNA and DNA sequences with sense alignments had their information re-associated using the original read ID. These 1-to-1 links are deemed ‘RNA-DNA contacts’. Any RNA-DNA contact that contained Ribosomal RNAs (rRNA) were removed from further analysis. Additional processing was then performed to remove mapped DNA contacts that overlapped regions of poor mappabilty using the modEncode Drosophila blacklist (ENCODE Project Consortium, 2012) (https://sites.google.com/site/anshulkundaje/projects/blacklists), repetitive regions downloaded from the UCSC Table Browser (https://genome.ucsc.edu/cgi-bin/hgTables) using the following selection parameters: clade: Insect, genome: D. melanogaster, assembly: Apr. 2006 (BDGP R5/dm3), group: Variation and Repeats, track: Repeatmasker. Several RNAs that were re-annotated as rRNA in later Drosophila genome annotation versions were also removed.
 
-## RNA coverage tracks
+### RNA coverage tracks
 
 Individual RNA tracks were generated by extracting contact information from the BED-formatted table generated by FlyPipe (described above). Coverage was calculated using BEDtools for 200 bp windows, and the number of contacts was then normalized by dividing by the number of DpnII sites for each window throughout the genome. Coverage tracks for the metagene profile analysis in Figure 4C were similarly normalized, but were extracted and normalized using a sliding window method with 200 bp bins and 20 bp steps. For the correlation clustering in Figure 4D, we normalized the X chromosome signal to the autosomes by doubling the raw contacts on chrX and chrXHet before DpnII normalization to account for the presence of only a single X chromosome in the CME-W1-cl8+ cell line. Where indicated, coverage tracks were calculated for 2 kb bins, then converted to the log2 ratio of the contacts and DpnII frequency, which was subsequently used to calculate a z-score for each bin based on the whole genome mean and standard deviation for each RNA signal track.
 
-## Hi-C and TAD analysis
+### Hi-C and TAD analysis
 
 HiC libraries (‘Hi-C/Mock-ChAR’) were performed as indicated in the methods (blue text indicates branch points in the protocol). Hi-C libraries were sequenced using 2 × 75 paired end reads and were aligned to blacklisted and repeatmasked genome using the ‘local’ and ‘reorder’ flags. The subsequent bam files were used to build the contact matrices using HiCExplorer (https://github.com/deeptools/HiCExplorer/blob/master/docs/index.rst). Matrices were built at 10 kb resolution. Data from GEO:GSE58821 were downloaded, re-aligned and processed using HiCExplorer in parallel. Plotting, TAD calling, and matrix correlation were all performed in HiCExplorer. Plots showing RNA-DNA and DNA-DNA contacts were also generated using HiCExplorer, where RNA-DNA matrices were also built at 10 kb resolution.
 
-## TAD boundary analysis
+### TAD boundary analysis
 
 Boundary regions were chosen as the 10 kb on either side around TAD edges (i.e., 20 kb total). TAD midpoints were calculated and rounded down to the nearest multiple of 10 kb, and the midpoint region was set as 10 kb to either side of the midpoint. Both boundary and midpoint region edges therefore align with 10 kb bins used for TAD calling. Regions overlapping the modENCODE blacklist or our manually curated blacklist were removed from analysis. ChAR-seq contacts were filtered to remove cis contacts, defined here as the RNA parent gene locus ±2 kb. Counts of DpnII sites, ATAC-seq insertion sites (5’ end of sequenced fragments, shifted +4 bp on the +strand and −5 bp on the - strand of the reference genome) and ChAR-seq DNA contacts within regions were calculated using the coverage or map commands in bedtools (version 2.20.1). The number of base pairs in each region (midpoint or boundary) masked by our repeat masking blacklist was calculated using bedtools coverage and groupby commands. Subsequent analysis was done with R version 3.3.1. To match the distributions of masked base pairs per region between TAD midpoints and boundaries, 20 kb region masked lengths were divided into bins of 50 bp between 0 and 1000 bp, and 500 bp between 1000 bp and 20000 bp. The boundaries and midpoints were divided into these masked length bins; within each bin, boundaries and midpoints were subsampled to the minimum number of regions for the two region types (e.g., if in a masked length bin there three boundaries and five midpoints, the midpoints will be randomly subsampled to select three midpoints.) The bin matching was verified with a Wilcoxon rank sum test of the total length of repeat masked regions in each region, with an expected non-significant p-value of 0.76. ChAR-seq DNA contact counts for each RNA type within each region were normalized by dividing the number of counts in the region by the number of DpnII sites in the region. roX2 analysis of trans-ChAR contacts at boundary and midpoint regions was only performed for TADs on the X chromosome. All other RNA contact categories were analyzed for all TAD midpoint and boundary regions that fell outside of blacklisted regions.
 
-## Correlation clustering and metaplots
+### Correlation clustering and metaplots
 
 We used deepTools (https://github.com/fidelram/deepTools) to calculate the correlation between coverage tracks using the multiBigWigSummary tool excluding the following chromosome regions: chrU, chrUextra, ChrYHet and chrM. Coverage was calculated using 100 kb bins unless indicated. The Pearson correlation coefficients were then clustered and plotted using the either the PlotCorrelation function in deepTools (snRNA clustering) or the heatplot function in R using the ward.D2 method and Euclidian distance function (modENCODE vs ChAR-seq correlation clustering). modENCODE datasets (M-values, wig-formated) for CME-W1-cl8+ were downloaded from data.modencode.org, and then re-binned into 2 kb windows, and filtered to remove modENCODE blacklist sites and repeat-regions, chrYHet, chrM, chrU and any bins lacking DpnII sites. modENCODE tracks were then transformed into z-scores by dividing the mean shifted (log2 M-values) by the genome-wide standard deviation of the bin depth. Metaplots were generated using the computeMatrix and plotProfile tools with a 2 kb window up and downstream of each region. Signal was then normalized to fold-change relative to mean of the random signal and re-ploted in GraphPad Prism.
 
-## roX1 and roX2 chromosome X enrichment
+### roX1 and roX2 chromosome X enrichment
 
 The enrichment of roX RNAs bound to chrX was calculated by obtaining the number of ChAR-seq roX1 or roX2 RNA reads that contact chrX, and comparing this to the expected number on chrX if roX1 or roX2 reads were distributed randomly over total chromosomal sequence space. A one-tailed cumulative binomial distribution test was used to generate each p-value, which is the probability of obtaining the same or greater number of ChAR-seq roX1 or roX2 reads on chrX given a random genomic distribution.
 
-## ChIRP-seq and ChAR-seq correlation analysis
+### ChIRP-seq and ChAR-seq correlation analysis
 
 ChIRP-seq binding profiles for roX1 and roX2 were obtained from published data (GSE53020_roX1_merge.bw, GSE53020_roX2_merge.bw) (Quinn et al., 2014). The Drosophila melanogaster genome (dm3) was divided into equally sized windows for a range of distinct window sizes (50 bp to 1 MB). Read counts per window were obtained using BEDtools. ChIRP-seq and ChAR-seq data were filtered identically to remove modENCODE blacklist sites and repeat-regions, chrYHet, chrM, and any bins lacking DpnII sites. roX1 and roX2 origins were excluded due to extreme read pileups in ChIRP-seq data (Chu et al., 2011). Spearman’s rank correlations of read-counts-per-bin across the genome between ChAR-seq and ChIRP-seq were performed in R and plots graphed and fitted with Prism.
 
-## ChAR-seq and ChIRP-seq signal-to-noise comparison
+### ChAR-seq and ChIRP-seq signal-to-noise comparison
 
 Signal-to-noise (SNR) analysis for ChAR-seq and ChIRP-seq data was performed similar to the approach in Figure 4B of Quinn et al. (2014), with minor modifications. We treat roX RNA contacts on the autosomes as ‘noise’, and dense chrX contacts as ‘signal’. Due to the limited number of reads for individual RNAs and the insufficient resolution afforded by DpnII cut-site locations, we were unable call narrow (<1 kb) peaks for roX1 and roX2 ChAR-seq reads using standard methods (e.g., MACS2). Therefore, to calculate signal, we divided the genome into 2 kb bins and counted the number of roX1 or roX2 RNA-DNA contacts per bin for the 300 chrX bins containing the most contacts. ChAR-seq reads were normalized to DpnII cut sites within each bin. To define noise, we randomly selected 300 equal sized bins from autosomes. The mean RNA-DNA contact count per bin on chrX peaks (‘signal’) was divided by the mean RNA-DNA contact count per bin on autosomes (‘noise’) to produce the SNR value. To avoid complications due to extreme bin values or repetitive regions, we filtered for chr4, chrM, chrY, chr2Het, chr3Het, chrXHet, chrU, and modEncode blacklist regions (REF:modencode). The roX1 and roX2 loci on chrX were removed due to extreme values for ChIRP-seq data (Chu et al., 2011). For consistency, we re-calculated the SNR for ChIRP-seq roX1 and roX2 data using the above approach and filtering, and obtained values similar to those published in Quinn et al. (2014).
 
-## ChAR-seq, ChIRP-seq, GRID-seq correlations
+### ChAR-seq, ChIRP-seq, GRID-seq correlations
 
 ChAR-seq and ChIRP-seq roX2 DNA contact signal was processed as in the SNR analysis. GRID-seq RNA and DNA raw reads were download from the NCBI SRA database (accessions: SRX1824449 and SRX1824449) aligned to the genome using bowtie2 (version 2.3.4.1) with the parameter --local, and minimum scoring threshold set to G,1,10. GRID-seq S2 cell Replicates 1 and 2 were merged after mapping. Uniquely mapping RNA reads with uniquely mapping DNA mates (samtools flag -q2) were preserved. RNA reads aligning to the roX2 locus were designated as roX2 RNAs, and the associated DNA coordinate as the roX2 DNA-contact. For consistency with the other data sets, GRID-seq reads were filtered for repeats and small chromosome scaffolds identically to the ChAR- and ChIRP-seq filtering applied in the SNR analysis. We divided the genome into 2 kb bins and counted the number of roX2 DNA-contacts in each bin, as above for ChAR- and ChIRP-seq. Restriction enzyme density can bias the number of reads within a given bin, so we normalized the raw GRID-seq read count by dividing the reads-per-bin by the number of AluI RE sites-per-bin (AluI cut map generated with hicup(version 0.5.2). This signal was then calculated for 20 kb bins across chrX, and Spearman’s rank correlation performed pairwise among the three methods.
 
-## RNA-seq library preparation
+### RNA-seq library preparation
 
 For total RNA-seq analysis, total RNA from 10 to 20 million CME-W1-cl8+ cells was purified using TriPure, then treated with 10 units of TURBO DNase (Life Technologies) at 37°C for 30 min according to the manufacturer’s instructions. RNA was re-purified with TriPure, resuspended in DEPC-treated water, and quality checked by Bioanalyzer (Agilent). Ribosomal RNAs were depleted using the Ribo-Zero rRNA removal kit (Illumina), RNA was purified using Agencourt AMPure XP beads (Beckman Coulter), then cDNAs were generated, amplified, and indexed with the ScriptSeq v2 RNA-Seq Library Preparation Kit (Epicentre) according to manufacturer’s instructions. Indexed libraries were quantified by Bioanalyzer and qPCR, pooled, and sequenced on a NextSeq 500 (Illumina).
 
-## ATAC-seq library preparation
+### ATAC-seq library preparation
 
 ATAC-seq using 250 K-500K CME-W1-cl8+ cells per reaction was performed with the Nextera DNA Library Prep Kit (Illumina, FC-121–1030). The reaction protocol was as previously described (Buenrostro et al., 2013), but without detergent or lysis incubation steps. Transposition reactions were performed at 37°C for 30 min shaking at 400 r.p.m. Libraries were purified with the QIAGEN MinElute Reaction Cleanup Kit and PCR amplified with barcoded primers. Amplification cycle number for each sample was monitored by qPCR to minimize PCR bias. PCR amplified libraries were purified with the QIAquick PCR Purification kit and excess primers removed by AMPure XP bead selection (Beckman Coulter). Final library concentrations were determined by qPCR using custom primers and PhiX sequence (Illumina) as a standard.
 
-## ATAC-seq data processing
+### ATAC-seq data processing
 
 Six technical replicates were sequenced with 75 bp paired-end reads on the Illumina Next-seq. Illumina Nextera Adapters were removed using a custom Python script. Reads were aligned to the Drosophila melanogaster genome (dm3) using bowtie2 (version 2.2.5) with the parameter -X 2000. Duplicates were removed with Picard; mitochondrial reads or reads with bowtie2 MAPQ score <30 were removed using SAMtools. All replicates had high similarity so their alignment files were merged to increase library complexity before analysis with ChAR-seq data.

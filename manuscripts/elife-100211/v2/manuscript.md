@@ -23,22 +23,22 @@
 
 ### Affiliations
 
-1. https://ror.org/03czfpz43 Department of Biochemistry, Emory University School of Medicine Atlanta United States
-2. https://ror.org/04h699437 Department of Respiratory Sciences, University of Leicester Leicester United Kingdom
-3. https://ror.org/01pxwe438 Department of Neurology and Neurosurgery, Structural Genomics Consortium, The Montreal Neurological Institute, McGill University Montreal Canada
-4. https://ror.org/036jqmy94 The Development Studies Hybridoma Databank, University of Iowa Iowa City United States
-5. https://ror.org/03arq3225 The Michael J Fox Foundation for Parkinson’s Research New York United States
-6. https://ror.org/01xs36937 Institute for Protein Innovation Boston United States
-7. https://ror.org/03czfpz43 Department of Neurology, Emory University School of Medicine Atlanta United States
-8. https://ror.org/04drvxt59 Department of Neurology and Program in Neuroscience, Harvard Medical School and Beth Israel Deaconess Medical Center Boston United States
-9. https://ror.org/05d5mza29 Center for Open Science Charlottesville United States
-10. https://ror.org/00f54p054 Department of Microbiology and Immunology, Stanford University School of Medicine Stanford United States
-11. https://ror.org/0168r3w48 Department of Neuroscience, University of California, San Diego La Jolla United States
-12. https://ror.org/05rrcem69 Department of Physiology and Membrane Biology, University of California, Davis School of Medicine Davis United States
-13. https://ror.org/01nn1pw54 Addgene Watertown United States
-14. https://ror.org/03v6m3209 Frederick National Laboratory for Cancer Research Frederick United States
-15. https://ror.org/0219dvt70 Specifica, a Q2 company Santa Fe United States
-16. https://ror.org/05wzrja17 Department of Research and Development, Abcam Cambridge United Kingdom
+1. Department of Biochemistry, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+2. Department of Respiratory Sciences, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
+3. Department of Neurology and Neurosurgery, Structural Genomics Consortium, The Montreal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+4. The Development Studies Hybridoma Databank, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+5. The Michael J Fox Foundation for Parkinson’s Research New York United States ([ROR:03arq3225](https://ror.org/03arq3225))
+6. Institute for Protein Innovation Boston United States ([ROR:01xs36937](https://ror.org/01xs36937))
+7. Department of Neurology, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+8. Department of Neurology and Program in Neuroscience, Harvard Medical School and Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+9. Center for Open Science Charlottesville United States ([ROR:05d5mza29](https://ror.org/05d5mza29))
+10. Department of Microbiology and Immunology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+11. Department of Neuroscience, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+12. Department of Physiology and Membrane Biology, University of California, Davis School of Medicine Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+13. Addgene Watertown United States ([ROR:01nn1pw54](https://ror.org/01nn1pw54))
+14. Frederick National Laboratory for Cancer Research Frederick United States ([ROR:03v6m3209](https://ror.org/03v6m3209))
+15. Specifica, a Q2 company Santa Fe United States ([ROR:0219dvt70](https://ror.org/0219dvt70))
+16. Department of Research and Development, Abcam Cambridge United Kingdom ([ROR:05wzrja17](https://ror.org/05wzrja17))
 17. CiteAb Bath United Kingdom
 
 † Corresponding author
@@ -107,6 +107,67 @@ There has also been a series of Alpbach Workshops on Affinity Proteomics that ha
 
 An ad hoc International Working Group for Antibody Validation was formed in 2016 with a goal of addressing the “collective need for standards to validate antibody specificity and reproducibility, as well as the need for reporting practices” (Uhlen et al., 2016). This group introduced the ‘five pillars’ of antibody characterization (Table 1): (i) genetic strategies (i.e., the use of knockout and knockdown techniques as controls for specificity); (ii) orthogonal strategies (i.e., comparing the results of antibody-dependent and antibody-independent experiments); (iii) multiple (independent) antibody strategies (which compare the results of experiments that use different antibodies to target the same protein); (iv) recombinant strategies (which increase target protein expression); (v) immunocapture MS strategies (in which mass spectrometry is used to identify the protein(s) captured by the antibody). These pillars are not intended to encompass all useful characterization strategies, nor are they all required for each characterization effort: rather, users are encouraged to use as many as feasible (Uhlen et al., 2016).
 
+**Table 1.**
+ The ‘five pillars’ of antibody characterization.In 2016 an ad hoc International Working Group for Antibody Validation introduced the five pillars of antibody validation/characterization: (i) genetic strategies; (ii) orthogonal strategies; (iii) (multiple) independent antibody strategies; (iv) recombinant strategies (originally called “expression of tagged proteins”); (v) capture MS strategies (Uhlen et al., 2016). In this table each pillar/strategy (left column) is followed by a brief description of the pillar/strategy, an indication of specificity, example applications for use, and pitfalls. Adapted from Waldron, 2022 and used with permission.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pillar/strategy</th>
+      <th>Description</th>
+      <th>Specificity</th>
+      <th>Example applications</th>
+      <th>Pitfalls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>Genetic strategies</td>
+      <td>Knock-out/ knock-down target gene</td>
+      <td>High</td>
+      <td>WB, IHC, IF, ELISA, IP</td>
+      <td>Requires a genetically tractable system and awareness of potential confounders (such as alternative isoforms)</td>
+    </tr>
+    <tr>
+      <td>ii</td>
+      <td>Orthogonal strategies</td>
+      <td>Compare results from Ab-dependent and Ab-independent experiments</td>
+      <td>Varies</td>
+      <td>WB, IHC, IF, ELISA</td>
+      <td>Requires variable expression of the target and cannot entirely rule out non-specific binding to similar proteins</td>
+    </tr>
+    <tr>
+      <td>iii</td>
+      <td>Independent antibody strategies</td>
+      <td>Compare results from experiments using unique Abs to the same target</td>
+      <td>Medium</td>
+      <td>WB, IHC, IF, ELISA, IP</td>
+      <td>Requires the purchase of multiple Abs and knowledge of their epitopes</td>
+    </tr>
+    <tr>
+      <td>iv</td>
+      <td>Recombinant strategies</td>
+      <td>Experimentally increase target protein expression</td>
+      <td>Medium</td>
+      <td>WB, IHC, IF</td>
+      <td>Overexpression of exogenous protein can lead to overconfidence in the specificity of the Ab</td>
+    </tr>
+    <tr>
+      <td>v</td>
+      <td>Capture MS strategies</td>
+      <td>Use MS to identify protein captured by Ab</td>
+      <td>Low</td>
+      <td>IP</td>
+      <td>Requires access to MS and it can be challenging to distinguish between Ab binding target vs protein bound to target</td>
+    </tr>
+  </tbody>
+</table>
+
+_Ab: antibody; ELISA: enzyme-linked immunosorbent assay; IF: immunofluorescence; IHC: immunohistochemistry; IP: immunoprecipitation; MS: mass spectrometry; WB: Western blotting._
+
 In summary, in order to generate reliable data when using antibodies in an experiment, the characterization of the antibody needs to document the following: (i) that the antibody is binding to the target protein; (ii) that the antibody binds to the target protein when in a complex mixture of proteins (e.g., whole cell lysate or tissue section); (iii) that the antibody does not bind to proteins other than the target protein; (d) that the antibody performs as expected in the experimental conditions used in the specific assay employed. These articles and workshops certainly helped raise awareness of the issues, identified each of the key concerns, and laid out some strategies for improvement.
 
 ## History of specific initiatives
@@ -115,13 +176,13 @@ Numerous international efforts have been initiated to address challenges in anti
 
 The early, large-scale efforts typically focused on the use of high-throughput screening and assays, as well as the use of non-antibody binding molecules (such as protein affinity reagents; Gloriam et al., 2010; Taussig et al., 2007). While these early projects generated some useful reagents and data, they fell short of their initial goals, although they did help to reveal the scale of the challenges and the limitations of the approaches being used. Below is a summary of these efforts plus two related efforts – the Research Resource Identifier (RRID) program, and the Developmental Studies Hybridoma Bank (DSHB) – presented in a somewhat chronological order (Figure 1).
 
-## Human Protein Atlas (HPA)
+### Human Protein Atlas (HPA)
 
 The Human Protein Atlas (HPA), funded in 2003 by the Wallenberg Foundation, is based in Sweden. Its goals include mapping of all human proteins in cells, tissues, organs and blood, using integrated approaches that depend heavily on antibodies. Since its inception it has grown to include other data, including from transcriptomics and RNA-seq (Human Protein Atlas, 2020). The first reports generated by the HPA were in 2005 and included data from 718 antibodies generated both by the HPA and those obtained from commercial sources (Uhlén et al., 2005; Nilsson et al., 2005). Very nice descriptions of different ways antibodies may be characterized, as well as which methods were used in their reports, provided important early data on issues surrounding the goal of generating and characterizing specific antibodies to target the complete human proteome.
 
 Tests for specificity included spotted arrays of 1440 protein fragments (an assay not widely used or available to most researchers) and antigen competition in immunohistochemistry, though each had been found to lack specificity for antibody characterization. Included in this article (Uhlén et al., 2005) is the troubling sentence, “For the commercial antibodies, we relied on the quality assurance of antibody providers”. In the Discussion the authors point out that they cannot exclude the possibility of cross reactivity to other proteins in their data, and so they encourage ongoing dialog within the scientific community to find the highest quality, validated antibodies and to exclude the bad ones. The HPA still contains much data derived from polyclonal antibodies in which additional targets appear to be recognized. Shortly afterwards they launched antibodypedia.com, a portal for sharing reports on antibodies. They include data demonstrating that while useful for high-throughput screening of antibodies, signals in peptide or protein displays are poor indicators of success in the more common applications of antibodies (Björling and Uhlén, 2008). Thus, early on it was evident that optimal antibody characterization was challenging and lacked consensus from users, but is essential to high quality, reproducible data. This work also noted the key roles to be played by the scientific community as a whole in contributing to characterization efforts and of publicly sharing all such data.
 
-## NeuroMab/NABOR
+### NeuroMab/NABOR
 
 NeuroMab is a facility at the University of California Davis, with goals that include the generation of mouse monoclonal antibodies – and, more recently, recombinant antibodies – optimized for use in studies of mammalian brains, with emphasis on antibodies useful in immunohistochemistry and Western Blots. Funded by the National Institute of Neurological Disorders and Stroke (which is part of NIH) since 2005, it works with researchers to identify targets relevant to brain studies, and to generate the optimal immunogen(s) and monoclonal antibodies that target them.
 
@@ -137,7 +198,7 @@ If one were starting the task of generating and validating antibodies targeting 
 
 The next two large-scale projects, described below – the Protein Capture Reagent Program and Affinomics – were broader in aspirations and, perhaps as a result, were less sustainable, and did not result in as many publications as might be expected, but they were still important and instructive exercises.
 
-## Protein Capture Reagent Program (PCRP)
+### Protein Capture Reagent Program (PCRP)
 
 Concerted efforts toward the goals of a collection of monoclonal antibodies covering the human proteome ramped up dramatically in 2010 when the NIH funded the Protein Capture Reagent Program (PCRP) for five years. This program focused on the generation and characterization of monoclonal antibodies and recombinant antibodies targeting human transcription factors (Roy et al., 2021; Venkataraman et al., 2018; Lai et al., 2021; Blackshaw et al., 2016). The focus on transcription factors was viewed as a test case that, if successful, would be scaled toward the entire proteome in subsequent years.
 
@@ -145,35 +206,35 @@ The PCRP involved bacterial expression of antigens, used to inoculate animals or
 
 Although the PCRP did not launch the concerted effort to generate and validate affinity reagents to target the entire human proteome, it brought to light the magnitude of the goals – that is, the challenges involved in (i) generating high quality antigens; (ii) generating appropriate recombinant antibodies; (iii) identifying the high affinity and highly specific reagents required; (iv) characterizing those antibodies at least in the most common assays that they will be used in; (v) making all data readily available to the public.
 
-## Affinomics
+### Affinomics
 
 The EU-funded Affinomics program grew out of two earlier projects: ProteomeBinders (Taussig et al., 2007) and AffinityProteome (Stoevesandt and Taussig, 2012a). Like the PCRP, it shared the ultimate goal of generating, screening, and validating a collection of protein binding reagents useful for characterization and analyses of each member of the human proteome (Stoevesandt and Taussig, 2012b). It identified a group of target proteins for initial testing that included protein kinases, SH2 domain containing proteins, protein tyrosine kinases, proteins known to be mutated in cancer, and cancer biomarkers (Landegren, 2016; Stoevesandt and Taussig, 2012b). The goals of Affinomics were broken down into seven areas: (i) protein/antigen production; (ii) binder production (not limited to antibodies); (iii) binder characterization (microarrays, Western Blots, and immunofluorescence); (iv) optimization of affinity reagent selection technologies; (v) development of tools for analysis of human serum for cancer markers; (vi) interactomes of a few, key oncogenes (e.g., RAS, mTOR, EGFR); (vii) development of suitable databases for reporting results. The 286 antibodies generated have been shared and are available through the DSHB.
 
 Together, the PCRP and Affinomics programs have helped to highlight the need for good, validated antibodies, and the challenges associated with high-throughput approaches, particularly those that use assays that are not widely used in research labs.
 
-## CiteAb
+### CiteAb
 
 CiteAb is an online database that allows researchers to search for antibodies and other reagents that are currently available. It began as a data mining research project in the laboratory of Andrew Chalmers at the University of Bath in 2012. Through data mining coupled with manual reviewing of the literature and collaborations with vendors of antibodies, it quickly grew and today covers over 14 million reagents with links to 6 million citations. Collecting such data can clearly help end users identify and begin to evaluate potential reagents for their experiments, but users should also be aware of the limitations of depending upon citation numbers as evidence of value in the absence of actual characterization data (see, for example, Laflamme et al., 2019; CiteAb, 2024). Despite this, using provided filters to restrict searches to user needs can allow one to generate a short and manageable list of potential reagents to consider using.
 
 In 2019 CiteAb began linking reagents to published images (e.g., immunofluorescence and Western blot data) to provide end users with more information, and it recently added links to characterization data generated by YCharOS to antibody pages (Longworth, 2024). CiteAb has also organized three International Antibody Validation meetings.
 
-## Research Resource Identifier (RRID)
+### Research Resource Identifier (RRID)
 
 The Research Resource Identifier (RRID) program can generate unique identifiers for antibodies and other reagents (Menke et al., 2020; Bandrowski et al., 2016; Bandrowski et al., 2023). Users can also search the RRID website to find, cite, and deposit characterization data, although the RRID initiative does not perform any antibody characterization studies. It is also important to note that an antibody can be sold by multiple different vendors with each using a different RRID number, and different lots of the same manufacturer’s antibody will have the same RRID, even if there may be significant lot-to-lot variation. To the extent possible, this practice should be replaced by better practices, including assigning one RRID to a reagent so that each antibody is given one and only one RRID number.
 
 Data mining of published articles was used early on to document problems in the underreporting of antibodies, cell lines and model organisms (Vasilevsky et al., 2013). The neuroscience community played a large role, via the Neuroscience Information Framework (NIF) and the Antibody Registry (Bandrowski et al., 2023). With the support of a number of journals and NIH funding, the RRID has seen steady increases in use and its impact on data reproducibility. By 2017 >5,000 articles in >380 journals were including RRID data and today those numbers are much higher. Notably, an initiative similar to RRID, termed the antibody identity card (Ab ID Card) was also begun, though it appears to have gained less traction than RRID. Another important development from these efforts is SciScore (Menke et al., 2020), an algorithm that can quickly search through text to identify the presence, or lack, of important identifying information for the reagents used. Use of such a tool by authors, journals and reviewers would facilitate and speed the inclusion of key information/identifiers, improve the reproducibility of any work that uses it, and decrease the burden on end users.
 
-## Developmental Studies Hybridoma Bank (DSHB)
+### Developmental Studies Hybridoma Bank (DSHB)
 
 Since its inception in 1986, the Developmental Studies Hybridoma Bank (DSHB) at the University of Iowa has maintained and distributed at minimal cost hybridoma cell lines and monoclonal antibodies shared by investigators. DSHB ensures the availability of antibodies for both human and non-human model organisms, which is particularly important to smaller fields of research. Many important antibodies that are widely used in studies of human muscle, cancers and neuroscience, and in key model organisms are found exclusively at the DSHB. Over 6,000 hybridoma lines – including those submitted by the PCRP, Affinomics, CPTAC, and NeuroMab initiatives – are maintained by DSHB, which also manages more than 600 recombinant antibodies, many of which come from the CPTAC.
 
 With >65,000 samples distributed in the past year, the DSHB remains an important component in the availability of research antibodies. However, like many commercial vendors, it cannot do the characterization work on the reagents that they distribute. In some respects, the antibodies in DSHB’s collection reflect the characterization crisis. Many of the antibodies donated to DSHB during the initial wave of hybridoma generation (<~2005) were made in research labs and are extensively characterized. In contrast, the efforts of many of the later, high-throughput projects remain less well characterized. DSHB was originally funded by the National Institute of Child Health and Human Development (which is part of NIH), but it has been fully supported by user fees since 1997.
 
-## Clinical Proteomic Tumor Analysis Consortium (CPTAC)
+### Clinical Proteomic Tumor Analysis Consortium (CPTAC)
 
 Biomarkers are needed to speed the diagnosis and treatment of diseases, notably cancers. Antibodies are used to identify and validate biomarkers, and to create assays for the detection of biomarkers and, potentially, the therapeutic targeting of biomarkers. The National Cancer Institute (part of the NIH) set up the Clinical Proteomic Tumor Analysis Consortium (CPTAC) in 2006 to fund both intramural and extramural projects. One notable intramural project is the Antibody Characterization Laboratory (ACL), which makes and characterizes renewable antibodies for use in cancer-related research using a combination of ELISA, Western Blots, immunohistochemistry and other assays, although it does not currently use KO cell lines to characterize reagents. At the time of writing, the ACL has developed 946 antibodies targeting 570 antigens (proteomics.cancer.gov/antibody-portal), which are obtainable from the DSHB.
 
-## Antibody Characterization through Open Science (YCharOS)
+### Antibody Characterization through Open Science (YCharOS)
 
 The Structural Genomics Consortium (SGC) began in 2003 with a focus on the determination of protein structures for the human proteome, and after considerable success in that arena, moved into other areas, including antibody generation and characterization. In 2020 the Antibody Characterization through Open Science, or YCharOS initiative, was launched at the Montreal Neurological Institute at McGill University as part of the SGC, with a focus on the characterization of existing antibodies. There is also a Canadian company called YCharOS Inc that raises funds for antibody characterization studies.
 
@@ -183,7 +244,7 @@ The YCharOS group recently published a highly impactful study that analyzed a se
 
 In addition to highlighting the magnitude of the antibody crisis, this work also revealed the value and importance of industry/researcher partnerships, as both the antibodies and the KO cell lines were donated by vendors. These vendors also evaluated the resulting data, and often re-evaluated their own in-house data. These vendors proactively removed ~20% of the antibodies tested that failed to meet expectations, and modified the proposed applications for ~40% (Ayoubi et al., 2023). Thus, these data demonstrate the means for both identifying useful reagents and removing bad ones. A key challenge is scaling up such efforts to proteome scale. Finally, this study showed the value of recombinant antibodies, demonstrating that on average they outperformed both monoclonal and polyclonal antibodies in all the assays used. Note that the failure of an antibody to work in any assay (or in a small number of assays) does not mean that it should necessarily be removed from the market as it may work in other assays. However, the burden should be on the vendor to make those data known to potential end users.
 
-## Only Good Antibodies (OGA)
+### Only Good Antibodies (OGA)
 
 Set up in 2023, and based at the University of Leicester, the Only Good Antibodies (OGA; Biddle et al., 2024) community works with and helps to promote the YCharOS pipeline. OGA started as a partnership between biomedical researchers and behavioral scientists who used antibodies in their research, and has the following aims: (i) to promote awareness of the issues surrounding the use of antibodies in research; (ii) to help educate researchers; (iii) to ensure better availability of characterization data; (iv) to aid the planning for antibody characterization as part of research funding proposals; (v) to better share data with reporting in publications and open data repositories. OGA has organized and run educational workshops and webinars as part of its awareness campaign, and it recently co-organized (with NC3R) a workshop in London titled ‘Defining the role of antibodies in improving research reproducibility’, that was attended by a range of stakeholders (including many of the authors of this article).
 
@@ -209,7 +270,7 @@ The goals of providing researchers with optimal reagents and enhancing the repro
 
 We list below the various stakeholders, along with recommendations for what they can do to improve the current situation. In an ideal long-term scenario, only recombinant antibodies should be used, and they should be characterized for specificity by testing on KO cell lines in the specific assays in which they will used. While it would be ideal to have antibody sequences publicly available, this remains unlikely for commercially sourced ones. That said, it appears useful to explore concepts around providing RRID-like identifiers to recombinant antibodies known to have identical sequences, allowing researchers to at least know they are using antibodies of identical sequence, without knowing the sequences themselves.
 
-## Researchers and end users
+### Researchers and end users
 
 Researchers are responsible for performing adequate controls to ensure reagent performance, enabling confident and accurate interpretations and conclusions, in both academic and biotech/pharma environments. This means that scientific papers must include detailed methods sections, as well as unambiguous descriptions of the antibodies used (RRID, source, catalog number, details as to the type of antibody, immunogen used to raise the antibody, protein concentrations used in each assay) and means of characterization. Where possible, end users should avoid the use of polyclonals, and use well characterized recombinant antibodies instead. End users can also help improve vendor websites by providing feedback, both good and bad, including data from the use of their products. Due to the large number of variations in assays between labs, there can be no single gold standard for use of an antibody in any assay. Rather, optimal controls should be included as a routine part of the data presentation, to support sound interpretations.
 
@@ -221,29 +282,29 @@ Researchers can also, when reviewing papers and grants, insist that authors and 
 
 As experts in their fields, researchers are ideally suited to work with others in the same field to generate and extend the basic characterization data from open sources into assays that could become important to that particular field. These assays will vary with the class of protein, but good assays will help a field by improving the quality of data and helping to identify the best – and worst – antibodies. Funding agencies appear unwilling to support new, large-scale antibody characterization projects, but perhaps they will support more focused projects that involve the experts in a field first prioritizing the key proteins in that field, generating or collecting appropriate KO cell lines, working together to characterize available antibodies, and then sharing the results. Discussing such efforts at scientific meetings would be time well spent. Finally, anyone writing a grant application in a field that lacks adequate antibodies needed for key experiments, should consider including requests for funding to generate and characterize such antibodies, explicitly making both the data and antibodies available to others.
 
-## Universities
+### Universities
 
 Institutions should ensure that students, postdocs and staff all receive comprehensive training in the use of reagents, including antibodies. This includes both the technical aspects and the interpretation of experimental results, along with optimal controls. Existing resources, like the Antibody Society’s webinar series (Voskuil et al., 2020), can support curriculum development in this area. Universities can also work with non-profits like YCharOS to promote scaling up their efforts. Often universities contain concentrations of expertise in different areas of research or protein families that could be leveraged to obtain funding for characterization work, ideally using comparable protocols to what is being done at YCharOS.
 
-## Journals/Publishers
+### Journals/Publishers
 
 Journals play a crucial role in establishing and maintaining high research standards, so it is not clear why they have been so slow to adopt standards for reporting the use of antibodies and for ensuring that appropriate controls were performed. The Journal of Comparative Neurology was among the first to clearly describe both the need for antibody information in manuscripts and the details of how to include it in a methods section (Saper, 2005). A unified approach to describing the use of antibodies in manuscripts, including RRID numbers and protocol details, should be a required part of the submission and review process at all reputable journals. Authors should also be required to report the amount of antibody used in each assay in protein concentrations (rather than dilution, which is ambiguous). We also encourage journals to use algorithms (such as SciScore) to automate this process, and therefore lower the burden on authors, reviewers, and editors.
 
 Editors and publishers may be resistant to develop and enforce reporting rules for antibodies, as authors may interpret them as extra work that discourages submissions at such a journal. We encourage journals to establish and enforce the highest standards of reproducibility in the work they publish, and authors to submit their work to those journals that demonstrate such high standards.
 
-## Antibody vendors and repositories
+### Antibody vendors and repositories
 
 It is important to acknowledge that commercial vendors of antibodies are businesses and, as such, they are motivated by profits. Vendors, as well as the DSHB and Addgene, should accurately represent their products, including comprehensive information for users to evaluate antibodies before purchase whenever available, including sufficient details of any data shown to allow accurate interpretation. Collaborative efforts with groups like YCharOS to validate and openly report antibody performance are vital to obtain the characterization data required. Vendors should update their data regularly and remove ineffective antibodies from the market (and, where possible, end users should buy their antibodies from such companies). Vendors should also take the lead in ensuring that each antibody is assigned one, and only one, RRID to allow better tracking and linkage to characterization data. When distributing to other vendors, they should have the opportunity to make this a requirement.
 
-## Societies
+### Societies
 
 Scientific societies play important roles in education, training, advocacy, and other activities through meetings, workshops, newsletters, and journals. The most recent annual meeting American Society for Cell Biology (ASCB) included a workshop on Antibody Validation that was attended by representatives from all stakeholders, and we encourage the inclusion of such activities in such meetings to further raise the awareness of the issues and to encourage training in best practices. Societies can also organize expert groups to discuss how best to characterize specific types of antibodies.
 
-## Disease foundations
+### Disease foundations
 
 A number of disease foundations have recognized the importance of working with researchers to help identify and make available antibodies that target key proteins and pathways implicated in a particular disease pathology. A better understanding of the ways in which changes in protein function or location may contribute to the pathology will help researchers working on treatments for the disease. For example, The Michael J Fox Foundation for Parkinson’s Research (MJFF) has developed a unique Research Tools Program which focuses solely on the generation, characterization/validation, and open distribution of preclinical laboratory tools and models for Parkinson’s disease research. Partnering with both manufacturers/vendors and academic researchers who are experts in particular targets, MJFF has made available 200 research tools to date (see, for example, Davies et al., 2013). MJFF also funds the characterization of commercial reagents through groups like YCharOS and academic labs to ensure information is readily available. We encourage more foundations to consider programs such as this and, more generally, to think about how they might support ongoing efforts to improve the rigor and reproducibility of research relevant to their work.
 
-## Funding agencies
+### Funding agencies
 
 While federal funding agencies argue they are not regulatory bodies, they play a crucial role in supporting high-quality, reproducible research. Requirements for data sharing, conflict-of-interest reporting, training in ethics, and animal care, introduced by funders have made research stronger. We encourage funding agencies to develop new opportunities to support efforts focused on antibody characterization, including training in the use of key reagents. Their support for a repository for KO cell lines is just one example of straightforward ways they could support efforts to improve the quality and reproducibility of research. The development and support for consortia of stakeholders is viewed as the best way to move forward, though ongoing support for individuals performing antibody generation, characterization, and distribution is also strongly encouraged. Building upon and expanding such efforts should be a high priority.
 

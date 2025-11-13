@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.27438.001 Many biomedical research studies use captive animals to model human health and disease. However, a surprising number of studies show that the biological systems of animals living in standard laboratory housing are abnormal. To make animal studies more relevant to human health, research animals should live in the wild or be able to roam free in captive environments that offer a natural range of both positive and negative experiences. Recent technological advances now allow us to study freely roaming animals and we should make use of them. DOI: http://dx.doi.org/10.7554/eLife.27438.001
+Many biomedical research studies use captive animals to model human health and disease. However, a surprising number of studies show that the biological systems of animals living in standard laboratory housing are abnormal. To make animal studies more relevant to human health, research animals should live in the wild or be able to roam free in captive environments that offer a natural range of both positive and negative experiences. Recent technological advances now allow us to study freely roaming animals and we should make use of them.
 
 ## Captivity alters animal development
 
@@ -22,11 +22,11 @@ Since then, researchers have learned that even modest changes to the conditions 
 
 Laboratory animals are less sensitive to experimental procedures when they have something to do. For example, enrichment can help animals to recover from brain trauma and seizures (Passineau et al., 2001; Koh et al., 2007), reverse brain damage caused by exposure to chemicals (Goldberg et al., 2011; Guilarte et al., 2003; Shih et al., 2012), and make rodents less susceptible to the effects of recreational drugs (Stairs and Bardo, 2009; Solinas et al., 2010). These studies have prompted most researchers to conclude that enrichment serves as a form of therapy (Lahvis, 2016a).
 
-Critically, the term enrichment implies that the conditions imposed by standard laboratory housing are somehow normal. Laboratory cages offer poor environments relative to the natural conditions where our research animals evolved. For example, the floor area provided to a mouse inside a standard cage is 280,000 fold smaller than its natural home range. This difference becomes even more extreme for larger animals used in research such as rhesus macaques (7 million fold) and Anubis baboons (25 million fold;
+Critically, the term enrichment implies that the conditions imposed by standard laboratory housing are somehow normal. Laboratory cages offer poor environments relative to the natural conditions where our research animals evolved. For example, the floor area provided to a mouse inside a standard cage is 280,000 fold smaller than its natural home range. This difference becomes even more extreme for larger animals used in research such as rhesus macaques (7 million fold) and Anubis baboons (25 million fold; Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/27438/elife-27438-fig1-v2.jpg)
 
-**Figure 1.:** The middle panel shows the ratio of the recommended cage floor area (cm2; Albus, 2012) to the estimated natural home range in hectares (10,000 m2; Nunn and Barton, 2000; Chambers et al., 2000; Bramley, 2014) for eleven species used in research. The left panel shows a juvenile rhesus macaque in a Nepali jungle. The right panel shows a juvenile rhesus macaque in an enriched cage.DOI: http://dx.doi.org/10.7554/eLife.27438.002
+**Figure 1.:** The middle panel shows the ratio of the recommended cage floor area (cm2; Albus, 2012) to the estimated natural home range in hectares (10,000 m2; Nunn and Barton, 2000; Chambers et al., 2000; Bramley, 2014) for eleven species used in research. The left panel shows a juvenile rhesus macaque in a Nepali jungle. The right panel shows a juvenile rhesus macaque in an enriched cage.
 
 An essential role of the brain is to adjust behavior to an unpredictable environment, an everyday experience common to wild animals and humans. By contrast, even enriched cage environments offer none of the temporal variations occurring in nature, such as changes in temperature and humidity, the availability of food and shelter, and risks to survival. These comforts and adversities evoke a wealth of feelings, including pain, fear, hunger, anticipation and pleasure. The caged environment, whether standard or enriched, isolates the research animal from these everyday experiences.
 

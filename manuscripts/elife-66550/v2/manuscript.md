@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/001w7jn25 Institute of Virology, Charité - Universitätsmedizin Berlin, corporate member of Free University Berlin, Humboldt-Universtiy Berlin, and Berlin Institute of Health Berlin Germany
-2. https://ror.org/041nas322 Institute of Virology, University of Bonn Medical Centre Berlin Germany
-3. https://ror.org/05nywn832 Department of Ecological Dynamics, Leibniz Institute for Zoo and Wildlife Research Berlin Germany
-4. https://ror.org/03v4gjf40 Institute of Ecology, Technische Universität Berlin Berlin Germany
+1. Institute of Virology, Charité - Universitätsmedizin Berlin, corporate member of Free University Berlin, Humboldt-Universtiy Berlin, and Berlin Institute of Health Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+2. Institute of Virology, University of Bonn Medical Centre Berlin Germany ([ROR:041nas322](https://ror.org/041nas322))
+3. Department of Ecological Dynamics, Leibniz Institute for Zoo and Wildlife Research Berlin Germany ([ROR:05nywn832](https://ror.org/05nywn832))
+4. Institute of Ecology, Technische Universität Berlin Berlin Germany ([ROR:03v4gjf40](https://ror.org/03v4gjf40))
 
 † Corresponding author
 
 ## Abstract
 
-Previously unknown pathogens often emerge from primary ecosystems, but there is little knowledge on the mechanisms of emergence. Most studies analyzing the influence of land-use change on pathogen emergence focus on a single host–pathogen system and often observe contradictory effects. Here, we studied virus diversity and prevalence patterns in natural and disturbed ecosystems using a multi-host and multi-taxa approach. Mosquitoes sampled along a disturbance gradient in Côte d’Ivoire were tested by generic RT-PCR assays established for all major arbovirus and insect-specific virus taxa including novel viruses previously discovered in these samples based on cell culture isolates enabling an unbiased and comprehensive approach. The taxonomic composition of detected viruses was characterized and viral infection rates according to habitat and host were analyzed. We detected 331 viral sequences pertaining to 34 novel and 15 previously identified viruses of the families Flavi -, Rhabdo -, Reo -, Toga -, Mesoni - and Iflaviridae and the order Bunyavirales . Highest host and virus diversity was observed in pristine and intermediately disturbed habitats. The majority of the 49 viruses was detected with low prevalence. However, nine viruses were found frequently across different habitats of which five viruses increased in prevalence towards disturbed habitats, in congruence with the dilution effect hypothesis. These viruses were mainly associated with one specific mosquito species ( Culex nebulosus ), which increased in relative abundance from pristine (3%) to disturbed habitats (38%). Interestingly, the observed increased prevalence of these five viruses in disturbed habitats was not caused by higher host infection rates but by increased host abundance, an effect tentatively named abundance effect. Our data show that host species composition is critical for virus abundance. Environmental changes that lead to an uneven host community composition and to more individuals of a single species are a key driver of virus emergence.
+Previously unknown pathogens often emerge from primary ecosystems, but there is little knowledge on the mechanisms of emergence. Most studies analyzing the influence of land-use change on pathogen emergence focus on a single host–pathogen system and often observe contradictory effects. Here, we studied virus diversity and prevalence patterns in natural and disturbed ecosystems using a multi-host and multi-taxa approach. Mosquitoes sampled along a disturbance gradient in Côte d’Ivoire were tested by generic RT-PCR assays established for all major arbovirus and insect-specific virus taxa including novel viruses previously discovered in these samples based on cell culture isolates enabling an unbiased and comprehensive approach. The taxonomic composition of detected viruses was characterized and viral infection rates according to habitat and host were analyzed. We detected 331 viral sequences pertaining to 34 novel and 15 previously identified viruses of the families Flavi-, Rhabdo-, Reo-, Toga-, Mesoni- and Iflaviridae and the order Bunyavirales. Highest host and virus diversity was observed in pristine and intermediately disturbed habitats. The majority of the 49 viruses was detected with low prevalence. However, nine viruses were found frequently across different habitats of which five viruses increased in prevalence towards disturbed habitats, in congruence with the dilution effect hypothesis. These viruses were mainly associated with one specific mosquito species (Culex nebulosus), which increased in relative abundance from pristine (3%) to disturbed habitats (38%). Interestingly, the observed increased prevalence of these five viruses in disturbed habitats was not caused by higher host infection rates but by increased host abundance, an effect tentatively named abundance effect. Our data show that host species composition is critical for virus abundance. Environmental changes that lead to an uneven host community composition and to more individuals of a single species are a key driver of virus emergence.
 
 ## Introduction
 
@@ -36,17 +36,931 @@ In a preliminary analysis, we had demonstrated that the prevalence of three ISVs
 
 ## Results
 
-## Biodiversity analyses
+### Biodiversity analyses
 
 The data set included 42 unique mosquito species units. The abundance of different mosquito genera varied considerably across the different habitats, as described previously by Junglen et al., 2009b. The dominant genus across all habitats except in the primary forest was Culex (50.5%), whereas in the primary forest mosquitoes of the genus Uranotaenia were most frequently sampled. Culex decens was most abundant in the secondary forest and agricultural areas, whereas Culex nebulosus mosquitoes were the most abundant species in villages and at camp sites located in the primary forest (Figure 1). A large fraction of 40, 40, and 26% of the sampled mosquitoes in the primary and secondary forest as well as at the camp sites, respectively, could not be identified to species level either due to morphological damage or to limitations of taxonomic keys. The actual number of different species in these habitats is therefore likely to be higher and the relative abundance of some mosquito species may have been underestimated (Figure 1—figure supplement 1). We counted and rarefied (r given as asymptotic diversity estimate) the highest number of species (n) in the primary forest (PF, n = 20 | r = 38 | with i number of individuals = 462), followed by camp (C, n = 18 | r = 24 | i = 418) and secondary forest (SF, n = 14 | r = 24 | i = 651), agriculture (A, n = 17 | r = 18 | i = 882), and village (V, n = 13 | r = 15 | i = 857) (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig1-v2.jpg)
+
+**Figure 1.:** (A) Study site location and overview over the five habitat types. The different habitat types along the anthropogenic disturbance gradient are depicted by photos and drawings. (B) Alluvial plot showing the distribution of the main mosquito species groups and main virus families to the five respective habitats. CulAnn: Culex annulioris; CulDec: Culex decens; CulNeb: Culex nebulosus; Cul_spec: other Culex species; Ano_spec: Anopheles species; Ura_spec: Uranotaenia species; Coq_spec: Coquillettidia species; others: all other grouped species (see main text). Bunya: order Bunyavirales containing Phenuiviridae, Peribunyaviridae, and Phasmaviridae; Flavi: Flaviviridae; Toga: Togaviridae; Rhabdo: Rhabdoviridae; Reo: Reoviridae; Iflavi: Iflaviridae; Meso: Mesoniviridae.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mosquito species richness per habitat. Rarefaction curves (with 95% confidence intervals) show the observed (solid lines) and interpolated (dotted line) mosquito diversity in the five habitats.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig1-figsupp2-v2.jpg)
+
 Rarefaction curves were still increasing for camp, primary and secondary forest, indicating that a higher trapping effort would have led to a higher number of species. However, confidence intervals were strongly overlapping, especially for camp and primary forest and for agriculture, secondary forest, and village. Bray–Curtis dissimilarity (BCd) yielded the highest difference in community assembly between primary forest and village (BCd = 0.90), and highest similarity between agriculture and secondary forest (BCd = 0.69). The hierarchical cluster analysis confirmed the finding that agriculture and secondary forest clustered together via C. decens and C. nebulosus, while villages and camp mainly clustered via C. nebulosus (Figure 1—figure supplement 2). Agriculture had high amounts of Culex annulioris and Coquillettidia metallica, while primary forest mosquito communities were characterized by Uranotaenia species. Villages were mainly characterized by Anopheles species (Figure 1—figure supplement 2). We therefore grouped our mosquitoes to the eight major groups C. decens (i = 1101), C. nebulosus (i = 719), C. annulioris (i = 263), Culex sp. (i = 222), Coquillettidia sp. (i = 95), Uranotaenia sp. (i = 502), and Anopheles sp. (i = 294), while all others, mainly the non-defined ones, were termed ‘others’ (i = 1366) (Figure 1B). Based on these findings, our anthropogenic disturbance gradient was as follows (from low to high disturbance): PF-SF-A-C-V. Significant associations were found between main mosquito groups and habitat (LRT p<0.001, df = 28, deviance = 3782; Supplementary file 1 and Figure 1B).
 
-## Assessment of the genetic virus diversity
+### Assessment of the genetic virus diversity
 
 In total, we found 331 viral RdRp sequences pertaining to 34 putative novel viruses and 15 previously identified viruses of the families Phenuiviridae, Peribunyaviridae, and Phasmaviridae of the order Bunyavirales, as well as of the families Flaviviridae, Togaviridae, Rhabdoviridae, Reoviridae, Iflaviridae, and Mesoniviridae (Table 1). Sequences with at least 5% pairwise amino acid distance to known viral RdRp sequences were suggested to pertain to distinct viral species.
 
+**Table 1.**
+ Distribution and host association of detected viruses.Number of positive pools per habitat and mosquito host species of all detected viruses and virus-like sequences. The main mosquito host species are indicated in bold letters. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village; nd: not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Virus family</th>
+      <th rowspan="2">Virus</th>
+      <th colspan="6">No. of positive pools</th>
+      <th rowspan="2">Mosquito species</th>
+      <th rowspan="2">Live virus isolate</th>
+      <th rowspan="2">Representative pool (GenBank accession number)*</th>
+      <th rowspan="2">Sequence length (nt)†</th>
+      <th rowspan="2">References</th>
+    </tr>
+    <tr>
+      <th>∑</th>
+      <th>PF</th>
+      <th>SF</th>
+      <th>A</th>
+      <th>C</th>
+      <th>V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="9">Phenuiviridae</td>
+      <td>Gouléako virus</td>
+      <td>33</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>16</td>
+      <td>Culex nebulosus, Culex decens, Culex spp., nd</td>
+      <td>x</td>
+      <td>A05 (NC_043051)</td>
+      <td>Full genome</td>
+      <td>Marklewitz et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus I</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>A27 (MZ202291)</td>
+      <td>892</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus II</td>
+      <td>12</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Uranotaenia mashonaensis, Uranotaenia ornata, Uranotaenia spp., nd</td>
+      <td></td>
+      <td>B02 (MZ202292)</td>
+      <td>1096</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus III</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B14 (MZ202293)</td>
+      <td>1099</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus IV</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B98 (MZ202294)</td>
+      <td>1096</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus V</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Anopheles spp.</td>
+      <td></td>
+      <td>E02 (MZ202298)</td>
+      <td>1091</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo phenuivirus VI</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>Anopheles gambiae, Anopheles nili, Anopheles spp., nd</td>
+      <td></td>
+      <td>F09 (MZ202300)</td>
+      <td>1210</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Sefomo virus</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens</td>
+      <td>x</td>
+      <td>C43 (MZ202295)</td>
+      <td>Full genome</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Phasi Charoen-like virus</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Aedes aegypti, nd</td>
+      <td></td>
+      <td>F04 (MZ202299)</td>
+      <td>1092</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Peribunyaviridae</td>
+      <td>Herbert virus</td>
+      <td>42</td>
+      <td>3</td>
+      <td>8</td>
+      <td>8</td>
+      <td>6</td>
+      <td>17</td>
+      <td>Culex nebulosus, Culex decens, Culex spp., Mimomyia mimomyiaformis, Coquillettidia spp., nd</td>
+      <td>x</td>
+      <td>F23 (NC_038714)</td>
+      <td>Full genome</td>
+      <td>Marklewitz et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Taï virus</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex (Culex) decens, nd</td>
+      <td>x</td>
+      <td>F47 (NC_034459)</td>
+      <td>Full genome</td>
+      <td>Marklewitz et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Cimo peribunyavirus I</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Uranotaenia mashonaensis, nd</td>
+      <td></td>
+      <td>B04 (MZ202287)</td>
+      <td>2278</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo peribunyavirus II</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>D55 (MZ202289)</td>
+      <td>3596; 2228(M segment)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo peribunyavirus III</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Culex nebulosus, Culex decens</td>
+      <td></td>
+      <td>A07 (MZ202286)</td>
+      <td>1488</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Phasmaviridae</td>
+      <td>Ferak virus</td>
+      <td>20</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+      <td>6</td>
+      <td>Culex nebulosus, Culex decens, nd</td>
+      <td>x</td>
+      <td>C51 (NC_043031)</td>
+      <td>Full genome</td>
+      <td>Marklewitz et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Jonchet virus</td>
+      <td>17</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>6</td>
+      <td>Culex decens, Culex nebulosus, Culex spp., nd</td>
+      <td>x</td>
+      <td>B81 (NC_038706)</td>
+      <td>Full genome</td>
+      <td>Marklewitz et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Spilikins virus</td>
+      <td>12</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>Culex nebulosus, Culex spp., nd</td>
+      <td></td>
+      <td>A28 (MZ202269)</td>
+      <td>Complete CDS</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Mikado virus</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex annulioris</td>
+      <td>x</td>
+      <td>D35 (MZ202272)</td>
+      <td>Complete CDS</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Rhabdoviridae</td>
+      <td>Cimo rhabdovirus I</td>
+      <td>40</td>
+      <td>0</td>
+      <td>20</td>
+      <td>15</td>
+      <td>3</td>
+      <td>2</td>
+      <td>Culex decens, Culex spp., nd</td>
+      <td></td>
+      <td>A02 (MZ202301)</td>
+      <td>1146</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo rhabdovirus II</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>A30 (MZ202302)</td>
+      <td>988</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo rhabdovirus III</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B58 (MZ202303)</td>
+      <td>769</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo rhabdovirus IV</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>C68 (MZ202304)</td>
+      <td>980</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo rhabdovirus V</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Coquillettidia metallica, nd</td>
+      <td></td>
+      <td>D24 (MZ202305)</td>
+      <td>898</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Potential Rhabdovirus-like NIRVS</td>
+      <td>Rhabdovirus-like NIRVS I</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>A19 (MZ399708)</td>
+      <td>638</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Rhabdovirus-like NIRVS II</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B82 (MZ399709)</td>
+      <td>566</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Reoviridae</td>
+      <td>Cimodo virus</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens, nd</td>
+      <td>x</td>
+      <td>C74 (NC_023420)</td>
+      <td>Full genome</td>
+      <td>Hermanns et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Wanken orbivirus</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Uranotaenia mashonaensis, nd</td>
+      <td></td>
+      <td>B14 (MZ202276)</td>
+      <td>Full genome</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Mesoniviridae</td>
+      <td>Cavally virus</td>
+      <td>30</td>
+      <td>3</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>15</td>
+      <td>Culex nebulosus, Culex decens, Culex spp., nd</td>
+      <td>x</td>
+      <td>C79 (NC_015668)</td>
+      <td>Full genome</td>
+      <td>Zirkel et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Hana virus</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Culex spp.</td>
+      <td>x</td>
+      <td>A04 (NC_020899)</td>
+      <td>Full genome</td>
+      <td>Zirkel et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Méno virus</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Uranotaenia spp.</td>
+      <td>x</td>
+      <td>E09 (NC_020900)</td>
+      <td>Full genome</td>
+      <td>Zirkel et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Nsé virus</td>
+      <td>7</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Culex nebulosus, Culex decens</td>
+      <td>x</td>
+      <td>F24 (NC_020901)</td>
+      <td>Full genome</td>
+      <td>Zirkel et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Togaviridae</td>
+      <td>Taï Forest alphavirus</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens</td>
+      <td></td>
+      <td>C21 (NC_032681)</td>
+      <td>Full genome</td>
+      <td>Hermanns et al., 2017</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Iflaviridae</td>
+      <td>Cimo iflavirus I</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens, Culex nebulosus</td>
+      <td></td>
+      <td>D52 (MZ202268)</td>
+      <td>1105</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo iflavirus II</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens</td>
+      <td></td>
+      <td>C61 (MZ202265)</td>
+      <td>186</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo iflavirus III</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Culex decens</td>
+      <td></td>
+      <td>C95 (MZ202267)</td>
+      <td>730</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Sassandra virus</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Culex spp., nd</td>
+      <td>x</td>
+      <td>C93 (MZ202266)</td>
+      <td>Full genome</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="15">Flaviviridae</td>
+      <td>Niénokoué virus</td>
+      <td>9</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Coquillettidia metallica, Culex spp., nd</td>
+      <td>x</td>
+      <td>B51 (NC_024299)</td>
+      <td>Full genome</td>
+      <td>Junglen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Nounané virus</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Uranotaenia mashonaensis</td>
+      <td>x</td>
+      <td>B31 (NC_033715)</td>
+      <td>Complete CDS</td>
+      <td>Junglen et al., 2009a</td>
+    </tr>
+    <tr>
+      <td>Anopheles flavivirus</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Anopheles gambiae, Anopheles spp.</td>
+      <td></td>
+      <td>F10 (MZ202263)</td>
+      <td>1172</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Tafomo virus</td>
+      <td>7</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Culex spp., nd</td>
+      <td>x</td>
+      <td>B22 (MZ202252)</td>
+      <td>Full genome</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus I</td>
+      <td>13</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Coquillettidia spp. (unknown COI-type C69), nd</td>
+      <td></td>
+      <td>B36 (MZ202253)</td>
+      <td>702</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus II</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Uranotaenia spp., nd</td>
+      <td></td>
+      <td>D01 (MZ202258)</td>
+      <td>790</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus III</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Uranotaenia mashonaensis, Uranotaenia spp., nd</td>
+      <td></td>
+      <td>B01 (MZ202251)</td>
+      <td>790</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus IV</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mimomyia spp., nd</td>
+      <td></td>
+      <td>E08 (MZ202261)</td>
+      <td>514</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus V</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mimomyia hispida, nd</td>
+      <td></td>
+      <td>D20 (MZ202259)</td>
+      <td>1192</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus VI</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Anopheles rhodesiensis rupicolus, Anopheles spp.</td>
+      <td></td>
+      <td>E02 (MZ202260)</td>
+      <td>516</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus VII</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B36 (MZ202254)</td>
+      <td>1188</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus VIII</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Eretmapodites intermedius, nd</td>
+      <td></td>
+      <td>B85 (MZ202255)</td>
+      <td>1188</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus IX</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>C51 (MZ202257)</td>
+      <td>1188</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus X</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>E08 (MZ202262)</td>
+      <td>736</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Cimo flavivirus XI</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Culex nebulosus</td>
+      <td></td>
+      <td>F41 (MZ202264)</td>
+      <td>1193</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Potential Flavivirus-like NIRVS</td>
+      <td>Flavivirus-like NIRVS I</td>
+      <td>10</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Coquillettidia metallica,nd</td>
+      <td></td>
+      <td>B60 (MZ399699)</td>
+      <td>943</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS II</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Aedes aegypti, Aedes spp.</td>
+      <td></td>
+      <td>E01 (MZ399703)</td>
+      <td>846</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS III</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Eretmapodites spp., nd</td>
+      <td></td>
+      <td>C78 (MZ399701)</td>
+      <td>668</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS IV</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B18 (MZ399698)</td>
+      <td>515</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS V</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>B68 (MZ399700)</td>
+      <td>512</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS VI</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Mimomyia spp., nd</td>
+      <td></td>
+      <td>F16 (MZ399707)</td>
+      <td>383</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS VII</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>nd</td>
+      <td></td>
+      <td>D57 (MZ399702)</td>
+      <td>332</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS VIII</td>
+      <td>13</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Uranotaenia spp., nd</td>
+      <td></td>
+      <td>A25 (MZ399697)</td>
+      <td>835</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS IX</td>
+      <td>8</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Uranotaenia spp., Uranotaenia mashonaensis, nd</td>
+      <td></td>
+      <td>E26 (MZ399706)</td>
+      <td>650</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavivirus-like NIRVS X</td>
+      <td>15</td>
+      <td>4</td>
+      <td>3</td>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Coquillettidia metallica, nd</td>
+      <td></td>
+      <td>E11 (MZ399705)</td>
+      <td>640</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+_*RdRp encoding sequence (previously published sequences are indicated in italic).†RdRp encoding segment or sequence, unless otherwise stated._
+
 The family Phenuiviridae (order Bunyavirales) includes important arboviruses within the genus Phlebovirus but also numerous ISVs that for example belong to the genera Goukovirus and Phasivirus (Abudurexiti et al., 2019). Nine distinct phenuiviruses were detected, which included seven novel viruses, named Sefomo virus (acronym for secondary forest mosquito virus) and Cimo phenuivirus I–VI, as well as Gouléako virus (GOLV) and Phasi Charoen-like virus (PCLV) (Marklewitz et al., 2011; Chandler et al., 2014). For all viruses, the number of positive samples per habitat is summarized in Table 1. Phylogenetic analyses showed that the viruses grouped with ISVs of the genera Goukovirus, Phasivirus, Hudivirus, and Beidivirus, as well as with the unclassified insect viruses related to the uncultured virus isolate acc 9.4 (Figure 2A). Interestingly, Cimo phenuivirus V branched basal to tenuiviruses that are transmitted between plants by planthoppers (Nault and Ammar, 1989). Cimo phenuivirus V was found in Anopheles spp. mosquitoes collected at a rice plantation. At this point we cannot differentiate whether the mosquito ingested infected plant material or whether this novel tenui-like virus can infect mosquitoes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig2-v2.jpg)
+
+**Figure 2.:** Phylogenetic trees were inferred with PhyML (LG substitution model) based on MAFFT-E protein alignments covering the conserved RdRp motifs of the families Phenuiviridae (A), Peribunyaviridae (B), and Phasmaviridae (C). The alignment length was approximately 290, 300, and 690 amino acids, respectively. Novel viruses from this study are indicated in red, and previously published viruses detected in our data set are indicated in blue. Sample origin from the different habitat types is indicated by colored circles while no detection is indicated by gray circles. Live virus isolates are marked with a blue virion. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Phylogenetic trees were inferred with PhyML (WAG (A) and LG (B) substitution model) based on MAFFT-E protein alignments covering the glycoproteins (A) and nucleocapsid (B) proteins of the family Phasmaviridae. The alignment length was approximately 1700 and 280 amino acids, respectively. Novel viruses from this study are indicated in red, and previously published viruses detected in our data set are indicated in blue.
 
 The family Peribunyaviridae (order Bunyavirales) consists of two arbovirus genera (Orthobunyavirus and Pacuvirus) and two genera that contain ISVs (Herbevirus and Shangavirus) (Hughes et al., 2020). We identified two novel peribunyaviruses, named Cimo peribunyavirus I and II. These viruses formed a monophyletic clade that shared a most recent common ancestor with arboviruses of the genera Orthobunyavirus and Pacuvirus (Figure 2B). In addition, the insect-specific herbeviruses Taï virus and Herbert virus (HEBV) (Marklewitz et al., 2013), as well as a previously undescribed herbevirus, named Cimo peribunyavirus III, were detected that fell into the clade of herbeviruses (Figure 2B).
 
@@ -62,6 +976,22 @@ The family Iflaviridae (order Picornavirales) consists of a single genus whose m
 
 The genus Flavivirus (family Flaviviridae) includes important arboviruses as well as viruses with a single host tropism for arthropods or vertebrates (Zell et al., 2017). Insect-specific flaviviruses can be divided into two groups. Classical insect-specific flaviviruses form a monophyletic clade in basal phylogenetic relationship to all other flaviviruses while dual-host-affiliated insect-specific flaviviruses are phylogenetically affiliated with the arboviruses of this genus (Blitvich and Firth, 2015). We found 12 undescribed flaviviruses, named Tafomo virus (acronym for Taï forest mosquito virus) and Cimo flavivirus I–XI, as well as a strain of Anopheles flavivirus (Fauver et al., 2016). All sequences clustered within the clade comprising the classical insect-specific flaviviruses in phylogenetic analysis (Figure 4A). In addition, two previously characterized flaviviruses, the dual-host-affiliated insect-specific flavivirus Nounané virus and the classical insect-specific flavivirus Niénokoué virus (NIEV), were detected in the mosquitoes (Junglen et al., 2009a; Junglen et al., 2017).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig4-v2.jpg)
+
+**Figure 4.:** Phylogenetic trees were inferred with PhyML (GTR substitution model) based on MAFFT-E nucleotide alignments covering the conserved RdRp motifs of the genus Flavivirus (A) and with PhyML (LG substitution model) based on a MAFFT-E protein alignment of the polymerase of the genus Orbivirus (B). The alignment length was approximately 1170 nucleotides and 1190 amino acids, respectively. Novel viruses from this study are indicated in red, previously published viruses detected in our data set are indicated in blue, and detected virus-like sequences are indicated in gray. Sample origin from the different habitat types is indicated by colored circles while no detection is indicated by gray circles. Live virus isolates are marked with a blue virion. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phylogenetic trees were inferred with PhyML (LG substitution model) based on MAFFT-E protein alignments of VP3 (A), VP4 (B), VP7 (C), and VP5 (D). The alignment length was approximately 890, 640, 350, and 510 amino acids, respectively. WKOV is indicated in red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Phylogenetic trees were inferred with PhyML (LG substitution model) based on a MAFFT-E protein alignment of the polymerase of members of the family Reoviridae (A) or with PhyML (GTR substitution model) based on MAFFT-E nucleotide alignments covering the E2-6K-E1 region of members of the genus Alphavirus (B) of the polymerase of members of the family Mesoniviridae (C). The alignment length was approximately 290 amino acids and 2720 and 7430 nucleotides, respectively. Novel viruses from this study are indicated in red, previously published viruses detected in our data set are indicated in blue, and detected virus-like sequences are indicated in gray. Sample origin from the different habitat types is indicated by colored circles while no detection is indicated by gray circles. Live virus isolates are marked with a blue virion. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) PCR amplicons of the generic rhabdovirus PCR assay. RNA/DNA extracts without reverse transcription were used for the PCR. Nested PCR amplicons of Cimo rhabdovirus I and two rhabdovirus-like NIRVS were visualized by ethidium bromide-stained agarose gel electrophoresis. Amplicons with the expected size of 260 bp are framed by a blue box. (B) Schematic representation of selected flavivirus-like NIRVS. Stop codons are indicated by an asterisk, deletions are shown as light gray boxes, frame shifts are indicated by overlapping blue boxes, and insertions with similarity to insect genes are shown as waved lines.
+
 The family Reoviridae comprises 15 genera with highly variable biological properties. Three genera contain arboviruses (Orbivirus, Coltivirus, and Seadornavirus) while viruses belonging to other genera infect vertebrates, plants, fungi, or insects (Becnel, 2012). One novel orbivirus, named Wanken orbivirus (WKOV), was detected in the mosquitoes. The complete genome of WKOV was sequenced and the polymerase encoded on the first segment showed 56% pairwise amino acid identity to Ninarumi virus. Phylogenetic analysis of the polymerase (VP1) placed WKOV on a branch with Ninarumi virus, a virus detected in Aedes fulvus mosquitoes collected in Peru (Sadeghi et al., 2017). This clade was placed basal to the clade of Culicoides- and Phlebotominae-transmitted orbiviruses (e.g. Bluetongue virus) and Letea virus, a virus detected in snakes (Natrix natrix) captured in Romania (Tomazatos et al., 2020; Figure 4B). Additional phylogenetic analyses based on VP3, VP4, VP5, und VP7 also placed WKOV together with Ninarumi virus and Letea virus basal to the clade of Culicoides- and Phlebotominae-transmitted orbiviruses (Figure 4—figure supplement 1). Additionally, Cimodo virus, which most likely defines a novel reovirus genus and which was previously characterized (Hermanns et al., 2014), was found (Figure 4—figure supplement 2A).
 
 Most viruses of the genus Alphavirus (family Togaviridae) are arboviruses. Contrary to the genus Flavivirus, only few insect-specific alphaviruses have been discovered thus far (Chen et al., 2018). We detected the previously characterized insect-specific Taï Forest alphavirus (Hermanns et al., 2017) but no further alphaviruses were found (Figure 4—figure supplement 2B).
@@ -74,7 +1004,7 @@ Besides the 12 previously published virus isolates from this sampling (Marklewit
 
 **Figure 5.:** C6/36 cells were infected with an MOI of 0.1 with Sefomo virus (A), Mikado virus (B), Sassandra virus (C), and Tafomo virus (D). Replication was measured for 3 dpi at 28, 30, 32, and 34°C.
 
-## Detection of non-retroviral integrated RNA virus sequences
+### Detection of non-retroviral integrated RNA virus sequences
 
 Genome fragments of flavi-, bunya-, and rhabdoviruses were found to have integrated into mosquito genomes and persist as so called non-retroviral integrated RNA virus sequences (NIRVS) (Palatini et al., 2017; Crochu et al., 2004; Houé et al., 2019; Roiz et al., 2009). We detected flavi- and rhabdovirus-like sequences with defective ORFs within the conserved region of the RdRp gene, suggesting the detection of NIRVS. These findings were not included in the virus diversity and prevalence analyses.
 
@@ -82,23 +1012,41 @@ The two potential rhabdovirus-like NIRVS encoded either an internal stop codon (
 
 Furthermore, we obtained 10 flavivirus-like sequences with frame shifts, internal stop codons, deletions, or integrations (Figure 4—figure supplement 3B). In case of flavivirus-like NIRVS II and III, parts of the potentially integrated sequences were related to sequences from insects including genome loci from Aedes mosquitoes. Flavivirus-like NIRVS II was amplified from an Aedes aegypti pool (E01) and the integrated fragment (68 nt) consisted of 56 nt with 81% identity to A. aegypti steroid hormone receptor homolog (AaHR3-2) gene and a 12 nt duplication of the sequence immediately adjacent to the integration site. In addition to the interrupted flavivirus-like sequence in pool E01, an identical continuous flavivirus sequence was obtained from the same pool. A similar observation was made with flavivirus-like NIRVS I (pool B60). The sequence of flavivirus-like NIRVS III (pool C78) was detected in Eretmapodites intermedius and undetermined mosquitoes. This sequence was profoundly defective (frameshifts, internal stop codon, and deletions) and continued into a 416-nt-long sequence with low similarity to Aedes albopictus and Apis spp. genome loci (Figure 4—figure supplement 3B). The very few and short sequences of Eretmapodites spp. available in GenBank most likely impeded the identification of the host genome sequence of flavivirus-like NIRV III.
 
-## Detected viruses show a high host specificity
+### Detected viruses show a high host specificity
 
 We next sought to identify whether the detected viruses were associated with specific mosquito host species. In total, 43% of the pools were found positive for at least one virus. The gross majority of the viruses (n = 39) was detected in a single mosquito species and only 10 viruses were detected in two or three different closely related mosquito species that belonged to the same mosquito genus indicating a high host specificity (Table 1). Unfortunately, ordination techniques like non-metric multidimensional scaling did not converge due to too few positive findings of viruses in the pools (data not shown).
 
 We often detected multiple viruses in one mosquito pool, especially in Culex pools, indicating possible co-infections mainly between GOLV, HEBV, CAVV, and FERV. These viruses were all associated with C. nebulosus as main mosquito host and consequently often found together in pooled mosquitoes of this species. We found significant positive associations between GOLV and HEBV, as well as between GOLV and CAVV (Figure 6). The association between GOLV and HEBV strongly increased (Spearman’s rho = 0.84, p<0.05) when considering only the host mosquito C. nebulosus. Here, also correlations of both viruses with FERV and Spilikins virus increased (rho ~ 0.45, p<0.01; results not shown).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig6-v2.jpg)
+
+**Figure 6.:** Only significant correlations are shown. AnthroDist refers to the gradient of anthropogenic disturbance from low to high. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** CulAnn: Culex annulioris, Cul_spec: other Culex species; Ano_spec: Anopheles species; Ura_spec: Uranotaenia species.
+
 Whether these mixed infections result from multiple infected individuals or from co-infected single mosquitoes could not be analyzed as no homogenates of individual specimens were available. All four viruses could be isolated together in cell culture from multiple pools. The replication of all four viruses in co-infected cell cultures was confirmed by quantitative real-time PCR suggesting no general inhibitory effect and the possibility of simultaneous infection of a single mosquito.
 
 The three jonviruses, JONV, Spilikins virus, and Mikado virus, were each also associated with specific mosquito species, namely with C. decens, C. nebulosus, and C. annulioris, respectively. Interestingly, their partial RdRp sequences showed a high degree of variation in the third codon positions that did not alter the translated protein sequences (called synonymous substitutions). For example, JONV and Mikado virus diverged by approximately 20% in their nucleotide (nt) sequences but only by 7% in their amino acid (aa) sequences. Similarly, Spilikins virus and JONV showed nt and aa divergences of 25% and 12–15%, respectively. Fixed effects likelihood (FEL) analysis of 31 detected jonvirus sequences found significant (p-value<0.05) evidence of negative selection for 88 out of 117 codons. These findings could point towards adaptation to a specific mosquito host under purifying selection. Similar strains with mainly variation in the third codon position were also observed for two Cimodo virus strains, HEBV and Cimo peribunyavirus III, two strains of Cimo peribunyavirus I, two strains of Anopheles flavivirus, as well as Cimo flavivirus I and Cimo flavivirus VII.
 
-## Virus prevalence patterns along the anthropogenic disturbance gradient
+### Virus prevalence patterns along the anthropogenic disturbance gradient
 
 According to current hypotheses in infectious disease ecology, ecological perturbation and changes in community composition are expected to influence transmission dynamics of infectious diseases (Keesing et al., 2010; Randolph and Dobson, 2012; Ostfeld and Keesing, 2000). We thus next analyzed the prevalence patterns of all detected viruses as well as abundance of their mosquito host species along the anthropogenic disturbance gradient.
 
 Across the surveyed sites, mosquito group explained on average ~26% of the variation in viral association, followed by habitat (13%) and their statistical interaction (12%) (all p-values<0.001), 48% of the variance remained unexplained. The number of mosquitoes per pool did not have a strong additional effect (<1%, p>0.1). Principal coordinate analysis (PCoA) ordination plots show that the viral community primarily partitions by C. nebulosus, Uranotaenia sp., and C. decens (Figure 6—figure supplement 1), which can be related to their main habitats in primary forest, agriculture, and villages (Figure 6—figure supplement 2).
 
 The highest virus richness was observed in the intermediately disturbed habitats secondary forest and agriculture (Figure 7A). However, the proportional number of tested mosquitoes was lower in the primary forest so that the richness in this habitat is likely underestimated.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig7-v2.jpg)
+
+**Figure 7.:** The number of distinct viruses (A) and the cumulated MIR per 1000 mosquitoes (B) were calculated for all habitat types and for the complete data set. Different virus taxa are shown in different colors. PF: primary forest; SF: secondary forest; A: agriculture; C: camp; V: village.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66550/elife-66550-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The cumulated MIR per 1000 mosquitoes was calculated for the analyzed taxa Phenuiviridae (A), Phasmaviridae (B), Reoviridae (C), Alphavirus (D), Flavivirus (E), Peribunyaviridae (F), Rhabdoviridae (G), Mesoniviridae (H), and Iflaviridae (I), as well as for all detected viruses (J) in the different habitat types and for the complete data set. The different viruses or taxa are shown in different colors.
 
 The majority of the viruses (82%, n = 40) occurred with a low frequency of less than 10 positive samples in total (see Table 1). The cumulated MIR for all detected viruses was slightly higher in villages and at the camp sites compared to the other habitats (Figure 7B). This effect was mainly caused by the increasing prevalence of several bunyaviruses and one mesonivirus (Figure 7—figure supplement 1A, B, F, and H), while other taxa like reoviruses and iflaviruses were found in specific habitats (Figure 7—figure supplement 1C and I), or like flaviviruses and rhabdoviruses increased in prevalence towards pristine or intermediately disturbed habitats (Figure 7—figure supplement 1E and G). Of note, no amplification effect was observed in habitats with higher biodiversity (Figure 7A and B).
 
@@ -144,29 +1092,29 @@ Collectively, our data show that only some viruses of a huge viral community ben
 
 ## Methods
 
-## Mosquito collection
+### Mosquito collection
 
 In total, 4562 female mosquitoes were collected in five habitat types along an anthropogenic disturbance gradient in the area of the Taï National Park in Côte d’Ivoire in 2004 (Junglen et al., 2009b). Habitat types represented pristine forest (PF), secondary forests (SF), agricultural areas (A), camps within primary forest (C)m and villages (V) in the order of low to high human disturbance (Figure 1A). Mosquitoes were collected using five CDC miniature light traps and one CDC gravid trap (developed by the U.S. Centers for Disease Control and Prevention, John W. Hock Company, USA) per sampling site, which were five sites in the PF, three sites in the SF, four sites in A (coffee, cacao, rice, and rice plantations), four camp sites (C), and two villages (V). Sampling was conducted for three consecutive days per sampling site from February to June 2004. The anthropogenic disturbance gradient was defined by apparent presence and density of humans as indicated by housing, for example, camps and villages. In addition, we accounted for the degree of plant species turnover from primary forest to agriculture. The camp is an exception as the vegetation is similar to the primary forest; however, we rated human presence higher and therefore grouped the camp closer to the village (Figure 1A). Mosquitoes were identified morphologically (Junglen et al., 2009b) and based on their COI sequences (Folmer et al., 1994). Mosquito heads were homogenized in 430 pools consisting of 1–50 individuals according to species and sampling location (Junglen et al., 2009b), resulting in 98 pools (764 mosquitoes) from the primary forest, 98 pools (1083 mosquitoes) from the secondary forest, 100 pools (1153 mosquitoes) from agricultural areas, 66 pools (568 mosquitoes) from research camps, as well as 68 pools (994 mosquitoes) from two villages.
 
-## RT-PCR screenings and sequencing
+### RT-PCR screenings and sequencing
 
 RNA was extracted from the pooled supernatants using the QIAamp Viral RNA Mini Kit (QIAGEN). The SuperScript III Reverse Transcriptase (Invitrogen–Thermo Fisher Scientific, Waltham, USA) was used for cDNA synthesis according to the manufacturer’s instructions. Generic RT-PCR assays were established based on alignments of the RNA-dependent RNA polymerase (RdRp) sequences for the following taxa, peribunyaviruses, jonviruses, feraviruses, rhabdoviruses, flaviviruses, iflaviruses, orbiviruses, and Cimodo virus. The conventional nested RT-PCRs were designed based on sequence information from viruses, which have been previously isolated from these mosquitoes in cell culture (Marklewitz et al., 2015; Zirkel et al., 2011; Hermanns et al., 2014; Junglen et al., 2009a; Junglen et al., 2017; Kallies et al., 2014; Marklewitz et al., 2011; Marklewitz et al., 2013; Quan et al., 2010; Zirkel et al., 2013), and from all major arbovirus taxa. Primer sequences are listed in Supplementary file 3. In addition, we used previously described conventional RT-PCR assays for mesoniviruses (Zirkel et al., 2013), phenuiviruses (Marklewitz et al., 2019), flaviviruses (Crochu et al., 2004; Moureau et al., 2007), and alphaviruses (Hermanns et al., 2017) to test the samples. Due to the difficulties in the establishment of a generic RT-PCR assay for the unclassified taxon of negeviruses, it was not possible to include these viruses in the analyses. This entire approach allowed the detection of viruses regardless of isolation success in cell culture. PCR products were sequenced by Sanger sequencing (Microsynth AG, Balgach, Switzerland). In addition to the generic conventional RT-PCR assays, specific qPCRs were used to test for CAVV, Nsé virus, and Mikado virus (Zirkel et al., 2013). The entire RdRp motifs of the third conserved region were amplified from all sequences with more than 5% divergence to another sequence using primer walking. Selected virus isolates were sequenced by metagenomic sequencing as previously described (Hermanns et al., 2017).
 
-## Genomic and phylogenetic analyses
+### Genomic and phylogenetic analyses
 
 All sequences were assembled and analyzed in Geneious R9.1.8 (Kearse et al., 2012). Viral sequences were categorized based on genetic similarity and phylogenetic analysis. Sequences were compared to the NCBI database using blastn and blastx. Sequences with <95% amino acid identity to known viruses were considered as putative novel virus species and named Cimo virus (acronym for Côte d’Ivoire and mosquito) with ascending numbering. Viruses isolated in cell culture and those with completely sequenced genomes received individual names. For phylogenetic analyses, the amino acid sequences (families Phenuiviridae, Peribunyaviridae, Phasmaviridae, Rhabdoviridae, and Iflaviridae and genus Orbivirus) or the nucleotide sequences (genera Flavivirus and Alphavirus and family Mesoniviridae) of the detected viruses and the related established virus species were aligned by MAFFT-E v7.308 (Katoh and Standley, 2013) in Geneious. An optimized maximum-likelihood phylogenetic tree with the substitution model based on Smart Model Selection (Lefort et al., 2017) as implemented in PhyML (mainly LG or GTR, respectively) and 1000 bootstrap replicates was calculated using PhyML (Guindon et al., 2010). For the detected jonviruses, the nonsynonymous and synonymous substitution rates were inferred using FEL as implemented in Datamonkey (Weaver et al., 2018b).
 
-## Virus growth analyses
+### Virus growth analyses
 
 Viruses were isolated in cell culture as described before (Junglen et al., 2009b). For the four novel viruses, Sefomo virus, Mikado virus, Tafomo virus, and Sassandra virus, growth kinetics were performed using the mosquito cell line C6/36 (ECACC 89051705, A. albopictus; identity has been confirmed by NGS, tested negative for mycoplasma). C6/36 cells were cultivated and seeded as previously described (Hermanns et al., 2020). The cells were infected at an multiplicity of infection (MOI) of 0.1 and incubated for 3 d at 28, 30, 32, and 34°C to determine temperature sensitivity as previously described for dual-host and insect-specific bunyaviruses (Marklewitz et al., 2015). Every 24 hr, 75 µl supernatant was taken and RNA was extracted using the NucleoSpin RNA Virus kit (Macherey-Nagel). cDNA was synthesized using the SuperScript IV reverse transcriptase (Invitrogen–Thermo Fisher Scientific) according to the manufacturer’s instructions. Specific quantitative RT-PCRs were established for all four viruses. Respective primer and probe sequences are SefomoV-F: 5′-TGGTTGAGACCTTCTGAGACTTTTC-3′, SefomoV-R: 5′-CAAAGGCCATCCCGAAGTATC-3′, SefomoV-TM: 5′–6-FAM/CCATTACAC/ZEN/CTCATCCCTATTTCATGCTGG/Iowa Black-FQ-3′, MikadoV-F: 5′-GAGAACTGTCAAAAATGGAGAAGAGA-3′, MikadoV-R: 5′-AGATGGCACCATTTTCAGTGATATAG-3′, MikadoV-TM: 5′–6-FAM/GCCAACAGC/ZEN/CAATTAAGAGAATGA/Iowa Black-FQ-3′, TafomoV-F: 5′-AATCTGATCTGGAGGACGAGTTG-3′, TafomoV-R: 5′-GCTGTTGATTAGCTGTGCATGAT-3′, TafomoV-TM: 5′–6-FAM/GGTTCTTGC/ZEN/TGGACCAGGTG/Iowa Black-FQ-3′, SassandraV-F: 5′-CATTTTGGAAGGAGATTTTTCGA-3′, SassandraV-R: 5′-GATCAAATTTCCAATAGCCCATAAA-3′ and SassandraV-TM: 5′–6-FAM/TGGACCTCA/ZEN/AGCGGATTCAACCGT/Iowa Black-FQ-3′.
 
-## Statistical analysis
+### Statistical analysis
 
-## Virus prevalence
+#### Virus prevalence
 
 To estimate virus prevalence, the IR and MLE per 1000 mosquitoes were calculated using the Excel Add-In PooledInfRate, version 4.0 (Biggerstaff, 2009). Virus data analyses were performed in GraphPad Prism 7.04 (GraphPad Software, San Diego, USA).
 
-## Biodiversity analyses
+#### Biodiversity analyses
 
 All biodiversity analyses were done with R version 3.6.2 (R Development core Team, 2019). We used rarefaction curves and Hill numbers of diversity order q = 0 (species richness) to compare mosquito communities between the five habitats Chao et al., 2014; R-package ‘iNEXT’ (Hsieh et al., 2016; Chao and Hsieh TCM, 2020). To this end, we summed the number of mosquito species per habitat and excluded non-defined species from the analysis. For detection of underlying gradients, we used the Bray–Curtis dissimilarity index Legendre and De Cáceres, 2013; R-package ‘vegan’ (Oksanen et al., 2019) and hierarchical cluster analysis to group main mosquito species according to their habitat association (R-package ‘pheatmap’). To assess whether there are significant associations between these mosquito groups and habitat, we fitted a loglinear model (generalized linear model with ‘log’ link and Poisson error distribution) to the number of mosquitoes counted per group as response variable, with mosquito group and habitat as covariates in interaction. Since there were no counts of Coquillettidia species in camp and village, we added a small constant of 1 to all responses to avoid singularities in the model outcome and to be able to model it with a log transformation. We assessed significance of the single terms using a log likelihood ratio test (LRT) of this saturated model.
 
@@ -174,6 +1122,6 @@ We used Spearman’s rho on the full data set to assess which viruses were assoc
 
 In order to determine the relative contributions and amount of variance explained by host and habitat in partitioning the viral community, we used permutational multivariate analyses of variance (PERMANOVA) tests based on Jaccard distance (presence or absence of virus in the pool) (package 'vegan,' function adonis2). We entered mosquito host taxonomy in interaction with habitat and the number of mosquitoes per pool; we only used the main mosquito groups as well as pools with at least one presence of a viral OTU into the analysis, thereby reducing the data set to 122 entries.
 
-## Nucleotide sequence accession numbers
+### Nucleotide sequence accession numbers
 
 The viral sequence fragments and genomes as well as the potential NIRVS were assigned the GenBank accession numbers MZ202249-MZ202305 and MZ399697-MZ399709, respectively. Accession numbers of representative sequences are listed in Table 1.

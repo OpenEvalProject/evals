@@ -23,14 +23,14 @@
 
 ### Affiliations
 
-1. https://ror.org/047yk3s18 Bacteriophage Medical Research Center, Department of Biology, The Catholic University of America Washington United States
+1. Bacteriophage Medical Research Center, Department of Biology, The Catholic University of America Washington United States ([ROR:047yk3s18](https://ror.org/047yk3s18))
 2. Henry M. Jackson Foundation for the Advancement of Military Medicine Bethesda United States
-3. https://ror.org/0145znz58 Laboratory of Adjuvant and Antigen Research, U.S. Military HIV Research Program, Walter Reed Army Institute of Research Silver Spring United States
-4. https://ror.org/00py81415 Department of Molecular Genetics and Microbiology, Duke University Durham United States
-5. https://ror.org/02dqehb95 Department of Biological Sciences, Purdue University West Lafayette United States
-6. https://ror.org/043jqrs76 Department of Chemistry Education, Sunchon National University Suncheon Republic of Korea
-7. https://ror.org/043jqrs76 Department of Advanced Components and Materials Engineering, Sunchon National University Suncheon Republic of Korea
-8. https://ror.org/02dqehb95 Department of Computer Science, Purdue University West Lafayette United States
+3. Laboratory of Adjuvant and Antigen Research, U.S. Military HIV Research Program, Walter Reed Army Institute of Research Silver Spring United States ([ROR:0145znz58](https://ror.org/0145znz58))
+4. Department of Molecular Genetics and Microbiology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+5. Department of Biological Sciences, Purdue University West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+6. Department of Chemistry Education, Sunchon National University Suncheon Republic of Korea ([ROR:043jqrs76](https://ror.org/043jqrs76))
+7. Department of Advanced Components and Materials Engineering, Sunchon National University Suncheon Republic of Korea ([ROR:043jqrs76](https://ror.org/043jqrs76))
+8. Department of Computer Science, Purdue University West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
 
 † Corresponding author
 
@@ -50,7 +50,7 @@ The human host is often exposed to a complex genetic pool of highly diverse and 
 
 ## Results
 
-## Hypothesis and experimental design
+### Hypothesis and experimental design
 
 We hypothesized that understanding how a T/F virus escapes host immune pressure at the very early stages of infection might identify key mutations that if included in a HIV vaccine could stimulate broader immune responses and preemptively interfere or block HIV acquisition. Our primary focus is the V1V2 domain of HIV-1 Env, one of the key determinants of virus escape in the moderately successful RV144 vaccine trial (Rolland et al., 2012; Liao et al., 2013). We therefore decided to study the evolution of V1V2 domain in the T/F viruses from four HIV-1 infected participants of RV217 Early Capture HIV Cohort (ECHO) project, a unique and rare trial that allowed tracking of HIV infection starting from just days after infection in the absence of antiretroviral therapy.
 
@@ -60,23 +60,43 @@ First, we performed phylogenetic analyses of longitudinal Env sequences to ident
 
 **Figure 1.:** (A) Phylogenetic analysis of longitudinal env sequences isolated from four acutely infected participants in the RV217 study. (B) Selection of V1V2-specific escape variants and their fusion to the C-terminus of bacteriophage T4 small terminase protein, gp16, to generate gp16-V1V2 nanoscaffolds representing various escape mutations. (C) Expression of gp16-V1V2 escape mutants in GnTi mammalian cells to produce dodecameric nanoscaffolds displaying variant immunogens. (D) Immunization of mice with V1V2 variant nanoscaffolds and evaluation of immunogenicity. (E) Design of combinatorial V1V2 mutant immunogens and evaluation of their immunogenicity and breadth of immune responses in a successive immunization study.
 
-## Phylogenetic analyses identified a striking H173Y escape mutation in the V2 domain of a T/F virus
+### Phylogenetic analyses identified a striking H173Y escape mutation in the V2 domain of a T/F virus
 
 A series of HIV-1 viral env sequences were isolated from four HIV-1 infected participants (referred here as participants – 7, 61, 94 and 100) of the RV217 ECHO project through single genome amplification (SGA). Using a sensitive nucleic acid test, each study participant was confirmed of HIV-1 positivity just days after a negative test (Fiebig stage I) and none of these participants were on antiretroviral therapy during the timeframe of the study. Env sequences were obtained at three time points, wks 1, 4 (~1 month), and 24 (~6 months) following the positive test. That a single T/F virus was responsible for infection in each participant was further ascertained by aligning independently isolated env sequences from wk 1 plasma, which were nearly identical (Robb et al., 2016). Additionally, plasma viral load with peak, nadir, and set point viremia shown for one representative patient (participant 7) indicated a typical pattern of early captured infection (Figure 2—figure supplement 1). Around 30 sequences were analyzed from each patient (median of 10 sequences per visit), with 152 sequences in total across all four patients, over a period of up to 6 months post-infection.
 
 To trace viral phylogeny for each of the T/F viruses (hereafter referred to as T/F07, T/F61, T/F94, and T/F100), the longitudinal env sequences were translated to protein sequences and aligned. Multiple sequence alignments were then used to construct phylogenetic trees using the respective T/F virus env sequence as the root for the tree construction (Figure 2—figure supplement 2). Of the four T/F viruses, T/F61 showed a few dominant mutations with relatively conserved V1V2 region, while T/F100 was found to be the most rapidly diverged virus with mutants appearing at as early as one wk after infection. By wk 4, a major branch of diverging T/F100 viruses harboring mutations in the V1V2 domain appeared. In addition, there were mutations in V5 variable loop and the less conserved α2 helix of C3 constant region. T/F94 virus also acquired various mutations including deletions in the variable V1V2 and V5 regions. Not surprisingly, most of these mutations are in the surface-exposed variable regions of HIV-1 trimer with hotspots in the loop regions (Figure 2A–B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig2-v1.jpg)
+
+**Figure 2.:** (A) Mutations observed in the RV217 participants – 7, 61, 94, and 100 are placed on HIV-1 BG505 pre-fusion trimer structure (PDB ID: 4TVP). Surface model showing dominant mutations (blue) falling on the solvent-exposed regions of the Env (gray) but not on the non-exposed or buried region (red). Modeling was done with PyMol (ver. 1.74) molecular visualization software and surface-exposed residues were defined as all residues that had >5 Å2 exposure to the solvent. (B) Mutational hotspots in the env sequence based on the genetic diversification of T/F viruses from all four participants. Total number of mutations in a particular region is plotted on the y-axis against residue positions on the env sequence (x-axis), with reference to HXB2 strain. The Env regions (labeled on top) with gray background showed high frequency of mutations. (C) Phylogenetic tree displaying T/F07 virus evolution in participant_7. The evolutionary tree was constructed by the neighbor-joining method, rooted to the T/F07 virus sequence. The viruses are designated corresponding to the time post-infection; 1 wk, 1 month (4 wks) or 6 month (24 wks) at the nodes of the branches. Prominent diverging mutations are labeled on the respective branches of the tree in red (V1V2 region) and gray (another region). (D) Dominant mutations that occurred until 24 wk post-infection in participant_7 are modeled on a ribbon model of the T/F07 trimer, generated through homology modeling using BG505 trimer (PDB ID: 4TVP) as a template. The zoomed-in image of V1V2 domain is shown to highlight the positions of V2-specific mutations, H173Y (red) and 3-residue deletion, DSV (blue). Deletion in the variable, V4 region is depicted in bright green and mutation in the conserved C2 region, K236T substitution, is shown in magenta. (E) A color-coded 4–5 β-stranded (A–D) conserved Greek-key motif structure of V1V2 domain is represented showing residue 173 on the C β-strand. (F) Snapshot of V1V2 sequences of T/F viruses from each RV217 participant under study. Major structural features of V1V2 region; semi-conserved four β-strands (A, B, C and D) and hypervariable V1 and V2 loops are labeled on top of the sequence. Prominent V1V2-specific mutation sites (observed in >50% of circulating viruses) until 24 wks are highlighted in red in the respective T/F virus sequence isolated from participants – 7, 61, 94, and 100.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Viral load values (log10) are plotted on y-axis, against the number of weeks since the first HIV-positive reaction with nucleic acid test on the x-axis. A typical pattern of curve with a peak, nadir, and set point in viral load was observed in this patient representing early captured infection. The set point is the viral load of a person infected with HIV, which stabilizes after a period of acute HIV infection.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Phylogenetic trees depicting the divergence of T/F61 (A), T/F94 (B) and T/F100 (C) viruses from the time of infection until 6 month post-infection. The trees are constructed with T/F virus sequence as root using neighbor-end joining method in CLC Mains Workbench with parameters as described in Materials and methods. Dominant mutations resulting in divergence of the viruses are labeled on the branches of the tree. T/F61 viruses lacked any predominant mutations and had conserved V1V2 region.
+
 On the other hand, T/F07 virus did not show any variants until wk 4. At 24 wk post-infection, however, nearly the entire T/F07 virus population made a complete shift to a single variant containing two mutations, one at position 173 that changed histidine to tyrosine (H173Y) and another at position 236 that changed lysine to threonine (K236T). The K236T mutation restored the well-conserved N-linked glycan at position N234 located at gp120/gp41 interface. Additionally, in some of the variants, a 3-residue deletion in the variable V2 loop (ΔDSV) and a 5-residue deletion (ΔNTTRFL) in the variable V4 loop co-occurred with the H173Y mutation (Figure 2C–D). The H173Y mutation is localized in the relatively well-conserved ‘C’ β-strand positioned at the junction of the cationic first half and the hydrophobic second half of the β-strand (Figure 2E). These characteristics, a singular variant and the remarkable shift of the viral population, strongly suggested a linkage between the variant and potential viral escape. This was in contrast to many mutations observed in the other three T/F viruses in the hypervariable V1 and V2 loops (Figure 2F) which are difficult to track and of little value for vaccine design. Furthermore, the distinct (and complex) evolutionary trajectories taken by different T/F viruses highlighted the breadth of immune responses needed for an effective HIV-1 vaccine design.
 
-## The H173Y mutation in C β-strand of V2 domain is a key determinant of virus escape against host immune pressure
+### The H173Y mutation in C β-strand of V2 domain is a key determinant of virus escape against host immune pressure
 
 The divergence of nearly the entire T/F07 virus population to H173Y variant made it a strong candidate for a viral escape mechanism. H173 is located in the C β-strand of V1V2 domain, a region that in previous studies was also found to be a critical target for host immune responses by RV144 trial vaccines. To determine if this mutant indeed arose through a strong selection against V2-directed antibody responses, the epitope specificity of antibodies was evaluated in the longitudinal plasma samples. The V1V2 domains, but not the full-length Env proteins, were used for testing in order to exclude the binding responses directed against other regions of the envelope protein. Four V1V2 domain recombinants were constructed using the phage T4 small terminase subunit gp16 (18 kDa) as a nanoscaffold: gp16-H173 (‘wild-type’ T/F07) and three 24-wk V2 mutants namely, gp16-H173Y (Y173), gp16-ΔDSV, and gp16-Y173+ΔDSV. Gp16 is a well-characterized oligomer that forms highly soluble and stable 11-mer and 12-mer ring structures. The V1V2 domains with a StrepTag fused to the C-terminus of gp16 are expected to decorate the nanoscaffold. These were expressed in GnTi cells, affinity-purified by StrepTactin chromatography (Figure 3—figure supplement 1) and used to capture the respective V1V2-specific antibody titers in the longitudinal plasma samples of participant 7 by surface plasmon resonance (SPR) assay.
 
 The data revealed remarkable epitope specificity to the V2 domain of the original T/F07 virus, but not to the H173Y variant, at 24 week post-infection. The antibodies bound strongly to V1V2-H173 and V1V2-H173.ΔDSV scaffolds but failed to bind to the Y173 variant scaffolds V1V2-Y173 and V1V2-Y173.ΔDSV (Figure 3A). These data demonstrated that the H173Y mutation is a key determinant in epitope switching at the time of virus escape against host immune pressure. No significant difference was observed with the DSV deletion mutants, although it might have played an accessory role (see below).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig3-v1.jpg)
+
+**Figure 3.:** (A) SPR binding curves showing reactivity of purified recombinant gp16-T/F07 (green), gp16-H173Y (red), gp16-ΔDSV (magenta) and gp16-H173Y+ΔDSV (blue) V1V2 proteins with a series of longitudinal plasma samples collected from participant 7 (shown on x-axis). The samples from wk 0 (pre-infection) until wk 144 (post-infection) were tested. The amount of binding is proportional to the response units (RU) plotted on the y-axis. The corresponding time points for each peak of antibodies are indicated. An early wave of V2-specific antibody represented by first peak at 6-month time-point recognized the gp16-T/F07 and gp16-ΔDSV variants [H173 variants] but not the gp16-H173Y and gp16-H173Y+ΔDSV variants [Y173 variants]. The second and third peaks of antibodies were found to be reactive to both the variants. (B–D) H173Y mutants poorly react to CH59 and CH58 antibodies. Immunoblot of the purified gp16 T/F07 V1V2 mutants (labeled on the top) showing respective binding with V2 mAbs, CH59 and CH58. Recognition by Strep-tag (purification tag) antibody served as a protein loading control (B). Binding curves of gp16-T/F07 (green), gp16-H173Y (red), gp16-ΔDSV (magenta), gp16-H173Y+ΔDSV (blue) V1V2-proteins, and gp16 scaffold only (negative control) (black) showing reactivity to CH59 (C) and CH58 (D) mAbs, as determined by ELISA performed with three technical replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) gp16-V1V2 constructs corresponding to the T/F07 virus sequence, and the V1V2-specific mutations accumulated until 24 weeks of infection in participant 7. The V1V2 sequence (light orange) amplified from the T/F07 Env (gp160) sequence was fused in-frame to the C-terminus of gp16 scaffold (blue). Each construct was cloned under the control of the CMV promoter and contained an N-terminal signal peptide (GLuc) for secretion of these recombinant proteins into the medium, and a C-terminal Twin Strep-tag II (gray) for affinity purification. The 24-week V2 mutations were introduced in the C β-strand (H173Y, red) and the hypervariable V2 loop (3 residue deletion-ΔDSV) indicated by a small triangle in the parental T/F07 construct to generate single and double mutants. (B) SDS-PAGE profile of gp16-V1V2 variant scaffolds of T/F07 expressed in HEK293S (GnTi) cells and purified through StrepTactin affinity chromatography. These recombinant glycoproteins were deglycosylated by PNGase F (band labeled on the gel) to obtain sharper bands on the gel for the purpose of quantification. (C) Dodecameric model of gp16-V1V2 showing gp16-scaffold in blue and fused V1V2 domain in bright green.
+
 Following this first ‘wave’ of antibodies specific to T/F07-H173 epitope, there was a second wave after the virus escape when the virus population switched to the resistant Y173 variant. SPR analyses showed that, contrary to the first wave, this second wave of antibodies exhibited increased breadth, recognizing both the V1V2-H173 and V1V2-Y173 variants (Figure 3A; see the peak at 1.4 years). Therefore, the second wave antibodies would be able to restrict both the original T/F07 H173 virus as well as the escaped Y173 variant. Collectively, these data strongly suggest that the V2-region, in particular the C β-strand, is a critical target for mounting immune pressure by host during the acute HIV infection.
 
-## Recapitulation of escape mutant specificity in monoclonal antibodies from RV144 vaccinees
+### Recapitulation of escape mutant specificity in monoclonal antibodies from RV144 vaccinees
 
 Next, we evaluated the binding of V2-H173 and V2-Y173 variants to the C β-strand-specific monoclonal antibodies (mAbs) CH58 and CH59 that were isolated from the RV144 trial vaccinees. These antibodies were previously reported to bind to H173 C β-strand present in the gp120 immunogen used in the RV144 vaccine trial, and the moderate protection observed in the RV144 trial correlated with such V2 C β-strand-specific antibody responses. Remarkably, while the V1V2-H173 scaffolds bound strongly to both CH58 and CH59 antibodies, the V1V2-Y173 escape variant either failed to bind (CH59) or showed drastically reduced binding (CH58). The DSV deletion again did not show a significant difference in the binding specificity (Figure 3B–D).
 
@@ -84,27 +104,43 @@ We then evaluated the ADCC responses as these were identified as one of the corr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) ADCC responses at wk 0 (A, pre-infection), 4 wks post-infection (B), 24 wks post-infection (C) of participant 7 plasma samples measured as percentage Granzyme activity (y-axis), against gp120-T/F07 (pink), gp120-H173Y (teal), gp120-H173Y+ΔDSV (orange) and control antigen, gp120-92TH023 (violet) coated target cells. (D–F) The corresponding area under curve (AUC) values for A-C graphs are shown for each curve. (G–J) V2-specific CH58 positive control antibody, (G–H) and Flu-specific CH65 negative control antibody, (I–J) mediated ADCC responses are shown with corresponding AUC values. For CH65 and CH58 mAbs, 4-fold serial dilutions starting at 12.5 µg/ml concentration were used as shown on the x-axis. Participant 7 plasma samples from each visit were 5-fold serially diluted to determine the ADCC responses. N.D is not detected.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A–C) ADCC responses at wk 0 (A, pre-infection), 4 wks post-infection (B), 24 wks post-infection (C) of participant 7 plasma samples measured as percentage Granzyme activity (y-axis), against gp120-T/F07 (pink), gp120-H173Y (teal), gp120-H173Y+ΔDSV (orange) and control antigen, gp120-92TH023 (violet) coated target cells. (D–F) The corresponding area under curve (AUC) values for A-C graphs are shown for each curve. (G–J) V2-specific CH58 positive control antibody, (G–H) and Flu-specific CH65 negative control antibody, (I–J) mediated ADCC responses are shown with corresponding AUC values. For CH65 and CH58 mAbs, 4-fold serial dilutions starting at 12.5 µg/ml concentration were used as shown on the x-axis. Participant 7 plasma samples from each visit were 5-fold serially diluted to determine the ADCC responses. N.D is not detected.
 
 The above data strongly implicated the H173Y mutation as the key variant selected against the host’s immune pressure directed against the V2-domain of the original T/F07 HIV-1 virus that severely restricted virus survival.
 
-## Recapitulation of V2-specific human immune responses in mice
+### Recapitulation of V2-specific human immune responses in mice
 
 We then hypothesized that the dramatic escape of H173Y mutant viruses might be because the histidine to tyrosine substitution caused a significant structural/conformational change in the C β-strand epitope such that it is no longer recognized by H173-specific antibodies. There is evidence that the C β-strand is conformationally dynamic and that it can take a helical form when bound to certain antibodies (Liao et al., 2013; Wibmer et al., 2018). This is also consistent with the distinct specificities of human antibodies generated against these variants, in participant 7, i.e., strict specificity of T/F07 plasma for H173 and increased breadth in the case of escaped plasma for both H173 and Y173 (as shown in Figure 3). Could this be recapitulated through immunogen design, in the absence of viral infection? To address this question, we immunized BALB/c mice (6 mice/group) with V1V2 nanoscaffolds containing four different V2 variants; H173, Y173, ΔDSV, and Y173.ΔDSV, and analyzed the specificity of the elicited antibody responses (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig5-v1.jpg)
+
+**Figure 5.:** (A) Immunization scheme. Prime plus 3-boost immunizations were performed at an interval of three wks. Pre-bleed sera were collected prior to immunizations. (B) V1V2-specific responses in different immunized groups after the last immunization (terminal bleed). Binding curves for each group are color-coded, as shown on the right side of the graph. (C) Schematic showing T/F07-V1V2 sequence labeled on top for A-D β-strands and hypervariable V1 and V2 loops. The overlapping V2 peptides used for SPR binding analysis with immunized mice sera are shown in different colors. (D–G) SPR binding responses shown for gp16-T/F07 (D), gp16-H173Y (E), gp16-ΔDSV (F), gp16-H173Y+ΔDSV (G) groups determined 2 weeks post-immunization (post) of the last boost with specific V2 peptides represented by the corresponding color of the peptides shown in (C). Pre-bleed sera prior to immunization sera were used as negative controls. The assay was performed with four technical replicates. Each dot represents individual mouse sera. The binding signal is estimated as Response Units (RU) shown on the y-axis. p-Value was determined through unpaired t-test, p-value = 0.0252.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–E) Comparative titers of V1V2 antibodies ranging from the first (prime) to the last immunization (Boost 3) in mice groups immunized with gp16- T/F07 (A) H173Y (B) ΔDSV (C) H173Y+ΔDSV (D), and Naive group (no antigen) (E) are shown. Respective pre-immune sera (collected before first immunization) from each group were also used as negative control. The antibody titers were determined by ELISA. Respective purified recombinant soluble gp140-T/F07, -H173Y, -ΔDSV and -H173Y+ΔDSV Env glycoproteins with matching V1V2 region were used as coating antigens (1 μg/ml). Triplicate absorbance (OD 650 nm) readings are used to generate binding curves for each sample. A color-coded key is provided on the top-right corner for each curve.
 
 To determine the V2 variant epitope-specific antibody titers, we constructed the His-tagged gp140 Env recombinants H173, Y173, ΔDSV, or Y173.ΔDS, expressed in GnTi cell, and the purified Env proteins were used as the coating antigens. These gp140 Envs allowed evaluation of V2 epitope specificity in the native gp140 Env context and also filtered out the gp16 scaffold- and strep-tag-specific antibody titers. The ELISA data showed that all the V1V2 variant scaffolds elicited robust V2-specific antibodies that recognized the V2 epitopes in the context of gp140 Env (Figure 5—figure supplement 1 and Figure 5B). This is notable because the V2 antibodies elicited against multiple scaffolded V2 immunogens tested previously, did not recognize the V2 epitopes in gp140 Env context, though they bound to the scaffold used for immunization (Hessell et al., 2019). The end point titers were on the order of ~105 in the immunized mice while the naïve controls showed no significant V2-specific titers. These results demonstrated high level of immunogenicity and specificity to native Env by the gp16-scaffolded V1V2 variants.
 
 We then tested the epitope specificity of the V2-specific antibodies using a series of 15-mer biotinylated peptides spanning the C β-strand by a sensitive Biacore SPR assay (Figure 5C). Remarkably, the T/F07 H173-induced sera reacted strongly with H173 C strand peptide but poorly with Y173 and other variant peptides (Figure 5D). In contrast, the escape mutant Y173-induced sera showed broad reactivity to both H173 and Y173 peptides as well as to other variant peptides containing C β-strand epitope. Moreover, the level of reactivity of Y173 antibodies to peptides was low overall when compared to the same with the gp140 Env proteins probably because these antibodies are conformation-specific (Figure 5E). Thus, the mice sera recapitulated the behavior of H173 and Y173 antibodies produced in a human infection. Furthermore, the ∆DSV deletion enhanced and broadened the reactivity of the antibodies (Figure 5F–G), which is consistent with the ADCC assays where the ∆DSV mutation showed enhanced resistance to cell killing.
 
-## H173 and Y173 variants induce antibodies of distinct specificities
+### H173 and Y173 variants induce antibodies of distinct specificities
 
 To further define the specificities of H173- and Y173-induced sera, we evaluated their ability to recognize HIV-1 Env proteins from different clades and determine their cross-reactivity. Accordingly, we constructed a series of recombinant clones and purified gp140 Env proteins from different T/F viruses, mutants, and clades: CRF_AE proteins T/F07-H173, T/F07-H173Y, T/F07-ΔDSV, T/F07-H173Y.ΔDSV, T/F61, T/F94, and T/F100, clade A [BG505], clade B [SF162 and JRFL], and clade C [1086] (Figure 6A). Their reactivity was tested using sera of mice immunized with the four V1V2 nanoscaffolds (Figure 6—figure supplement 1). The data showed that the T/F07 H173- and ΔDSV-induced antibodies reacted with autologous T/F07 Env proteins, and with clades C-1086 and AE244 HIV Envs that encode C-strand sequence closely resembling the T/F07 sequence. On the other hand, the Y173 and Y173.ΔDSV induced antibodies reacted broadly with all the proteins tested, and more strongly overall than the T/F07-induced sera as evident from the heat map and the summarized binding response (Figure 6B–C). From these, it is reasonable to conclude that the H173 immunogen induced antibodies with narrow specificity to C β-strand whereas the Y173 immunogen induced more broadly reactive antibodies.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig6-v1.jpg)
+
+**Figure 6.:** (A) Sequence alignment of V1V2 region of all the antigens used in the cross-reactivity ELISA experiment. The sequences are compared with T/F07 V1V2 (top-most) sequence. T/F07 matching residues are shown as dots and different residues are highlighted in red. Difference in the lengths of hypervariable loops is shown by dashed lines (gaps). Degree of conservation is depicted graphically at the bottom of the sequence alignment. (B) Heat-map showing cross-reactivity for each immunized group. The map is generated based on AUC values calculated from the binding curves shown in Figure 6—figure supplement 1 for each immunized group. The antigens used in the binding experiment are labeled horizontally at the bottom of the heat-map. The immunization groups are labeled vertically on the left-side of the heat map. The color gradient scale on the right side shows the degree of reactivity with corresponding numerical values. (C) Cumulative AUC values are plotted to display the summarized or total response of each immunization group towards all the antigens, calculated from the binding curves shown in Figure 6—figure supplement 1. Each antigen is depicted as a small rectangle colored with respect to the key provided at the side of the graph. Binding to each antigen corresponds to the area of rectangle in the bar graph. (D–E) In an antibody blocking assay, significant reduction in sera reactivity was observed in gp140 T/F07 coated wells pre-incubated/blocked with purified mAbs, CH59 (D, orange), and CH58 antibodies (E, teal), for gp16-T/F07 or ΔDSV (H173 variants) but not gp16-H173Y or H173Y+ΔDSV (Y173 variants) immunized mice groups, compared with the unblocked wells (gray). Titrated and optimized sera dilution was used for each group in this assay performed with three technical replicates. (F–I) Sensitivity to D180A mutation. Binding curves showing reactivity of gp16-T/F07 (F), H173Y (G), ΔDSV (H) and H173Y+ΔDSV (I) immunized sera to respective autologous T/F07-gp140 (with matching V2 mutations) coating antigens (color-coded curves) versus T/F07 gp140-D180A mutant (blue curves). Binding is determined by ELISA performed with two technical replicates. Absorbance (OD 650 nm) readings were used to generate binding curves. p-values were determined through unpaired t-test, ****=p < 0.00001, ***=p < 0.0001, **=p < 0.001 and *=p < 0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–E) Breadth was evaluated by assessing binding with a set of purified autologous and heterologous Env proteins (soluble gp140s and V1V2 tags). Respective antigen binding curves are plotted against the serial dilutions of the terminal bleed sera from each group immunized with T/F07 (A), H173Y (B), ∆DSV (C), H173Y+∆DSV (D), and PBS (Naïve, negative control) (E). Binding curves are color-coded with respect to the antigen coated as shown at the bottom right of the graph. The binding was determined through ELISA and duplicate absorbance (OD 650 nm) readings were used to generate the binding curves.
 
 Next, we tested whether the narrowly specific H173-induced antibodies are similar to CH58 and CH59 mAbs derived from RV144 vaccinees. Since the immunogen used in RV144 trial contains the H173 allele and that the CH58 and CH59 mAbs specifically recognized H173 C β-strand epitope but not the Y173 variant, we hypothesized that the H173 V2, but not the Y173 V2, might induce CH58/59-like antibody responses. This was tested by blocking assays using CH58 and CH59 mAbs. The H173 gp140 Env antigen was coated on ELISA plates and were exposed to H173 or Y173 mice sera after first blocking by treatment with CH58 or CH59 mAbs. Remarkably, the H173 sera, but not the Y173 sera, with or without ΔDSV, showed significant reduction in binding (Figure 6D–E). Furthermore, since CH58 and CH59 binding is sensitive to mutation at D180 residue that is adjacent to C β-strand (Liao et al., 2013), we evaluated its binding. Consistent with the above antibody blocking data, binding of H173-induced antibodies but not of Y173-induced antibodies was significantly more sensitive to D180A mutation (Figure 6F–I). Overall, these data suggest that the presence of histidine at position 173 favors induction of CH58/59-like antibodies with narrow specificity as were elicited by the RV144 vaccinees.
 
 The above datasets show that the mouse H173-induced antibodies, like their human counterparts, are narrowly specific to the autologous C β-strand and hence sensitive to sequence variation. Conversely, the Y173-induced antibodies are broadly reactive, conformation-dependent, and cross-reactive to diverse V2 domains that differ in length, sequence, and glycosylation. Furthermore, these antibodies also tolerated variations in C β-strand sequence not only at 173 position but also at other critical positions such as K168 or K169 (Rolland et al., 2012; Liao et al., 2013).
 
-## Structural analyses indicate conformational switching in virus escape
+### Structural analyses indicate conformational switching in virus escape
 
 To determine if the mutational switch involved in virus escape might be due to a conformational switch in the C β-strand, we performed Molecular Dynamics (MD) simulations and structural modeling analyses of H173- and Y173-V1V2 domains. For MD simulations, we first modeled H173- and Y173-V1V2 domains using MODELLER 9v7 (Sali and Blundell, 1993) based on our recently published cryo-EM structure of CRF_AE T/F100 HIV-1 Env trimer as template (PDB ID: 6NQD), due to their extensive sequence similarity (87.6%) (Ananthaswamy et al., 2019). Both these V1V2 domains assumed β-stranded conformation matching the template. The V1V2 domains were extracted to run simulations using GROMACS 5.1.2 (Van Der Spoel et al., 2005) and trajectories were produced for 100 ns with 2fs time step. We then explored how H173 and Y173 strand V1V2 models undergo changes in conformation over time.
 
@@ -116,21 +152,160 @@ In H173/Strand but not in Y173/Strand trajectory, helix content increased over t
 
 Since the template-based modeling tends to get biased towards the template structure, we next performed structural modeling of H173- and Y173-V1V2 domains using a modeling tool QUARK (Xu and Zhang, 2012) that generates ab initio structure predictions based on physical principles rather than previously resolved structures as templates. Five 3D models depicting possible conformations were generated for each V1V2 variant based on replica-exchange Monte Carlo simulation under the guide of an atomic-level knowledge-based force field. It was found that only one of the five H173-V1V2 models depicted C strand as β-strand, while the rest showed a coil plus a short β-strand or a full coil conformation (Figure 7D). In contrast, four of the five Y173-V1V2 models depicted C strand in β-stranded conformation while only one model showed this region to assume coil conformation (Figure 7E). Overall, these models indicate that H173Y mutation causes a structural change in the C β-strand thereby altering the conformational dynamics of the V1V2 domain. Furthermore, notably, models of both the variants depicted the C strand as β-strand to some degree which represent the conserved Greek key motif captured by all the resolved Env trimer structures. However, the degree of β-stranded character was identified to be much higher in Y173 variant than in H173 variant. Hence, it is plausible that the observed antibody evasion and virus escape that occurred in participant 7 was due to a structural transition in this V2 epitope, from helix to β-strand owing to H173Y mutation.
 
-## Combinatorial V2 immunogen library construction rationale
+### Combinatorial V2 immunogen library construction rationale
 
 The H173Y mutation leading to structural transition, viral escape, and induction of broadly reactive antibody species provided a conceptual basis to design an ensemble of V2-conformation variants, which could further determine if H173 and Y173 immunotypes can exhibit any effect on the V2 conformation and antibody responses with other V2 mutations. Furthermore, we hypothesized that combinatorial immunogen libraries might further broaden antibody responses which might have implications for vaccine design.
 
 For designing these combinatorial immunogen libraries, first, we sought to identify the potential escape sites in the semi-conserved C β-strand which is previously reported to be conformationally polymorphic and a prime target of V2-directed antibodies. HIV sequence database was explored to extract 100 Env sequences from each of the major geographically prevalent HIV subtypes including A, B, C, and AE. These sequences were individually aligned using CLC Main Workbench and the partly conserved C strand sequence alignment was extracted to generate a consensus logo (Figure 8A). Subsequently, sites of highest variability were identified in the consensus logogram with the rationale that a less conserved or highly variable site is likely to be linked to viral escape. This resulted in the prediction of four residues-at amino acid positions 166, 169, 170, 171 as highly variable. Then, primers were designed such that the most common variants in the natural HIV-1 population, lysine (K), arginine (R), or glutamine (Q), were incorporated at each of these positions through controlled mutagenesis approach to generate a combinatorial library (Figure 8B). The resultant library encompassed 54 V2-variants possibly representing the V2 conformations prevalent in the HIV population. The rationale behind choosing naturally selected mutations is not only to represent natural diversity of HIV-1 but to also ensure the structural and functional integrity of the V1V2 domain, thereby presenting only the most relevant epitope diversity to the immune system.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig8-v1.jpg)
+
+**Figure 8.:** (A) Consensus logo of C β-strand (residue 166–178) of the V1V2 region generated using 100 env sequences each of clades A, B, C, D, and AE. The size of the letter depicting the residue in the logo is proportional to its conservation across viral sequences under analysis. (B) Four highly variable residue positions (166, 169, 170, and 171) were selected for combinatorial mutagenesis with additional substitutions shown in blue to generate V2 combinatorial libraries. (C) Heat-map showing binding of sera from different immunized mice groups to diverse HIV-1 Env antigens. Percent AUC values derived from the binding curves and normalized to autologous antigen binding response were used to generate the heat-map. The antigens used in the binding experiment are labeled horizontally at the top of the heat-map. The immunized mice groups are labeled vertically on the left side of the heat-map. The color gradient scale on the right side shows the degree of reactivity with corresponding AUC percent values. (D) Effect of C strand sequence variation on the binding of T/F07 and H173Y immunized groups’ sera. Scatter plot showing significant difference in the reactivity of gp16-T/F07 but not H173Y immunized sera with Env antigens having C strand sequence closely matching (red circles) versus mismatching (blue squares) to T/F07. Normalized mean AUC (%) values are plotted on the y-axis estimated from the binding curve for each antigen represented as sphere or square in the graph (each circle or square represents different antigen). (E) Cumulative AUC values are plotted for T/F07 and H173Y groups to display the summarized or total response from all the diverse antigens in the library. Each antigen is depicted as a small rectangle colored with respect to the key provided at the bottom of the graph. Binding to each antigen corresponds to the area of rectangle in the bar graph. (F) CH58 antibody blocking assay data. Significant reduction in sera reactivity was observed for T/F07 and T/F07 library groups when gp140 T/F07 coated wells in duplicates were pre-incubated/blocked with purified mAb, CH58 (grey) compared to unblocked (pink). No statistically significant inhibition of binding signal was observed for any H173Y-based immunogen groups. p Values determined using unpaired t-test, **=p < 0.01 and ***=p < 0.001 (significant difference).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Size exclusion chromatography (SEC) fractionation profile of cleaved gp16-V1V2 proteins (peak 1) depicting separation of HRV3C protease (peak 2). Elution volume is plotted on the x-axis while the y-axis shows UV absorbance of the fractions. (B) Reducing SDS-PAGE profile of purified and concentrated gp16-V1V2 immunogens. Presence of very small fraction of the protease (marked by a red arrow) was detected. Appearance of smeary pattern or doublet bands are due to the presence of glycoforms. (C) ELISA showed no significant detection of α-StrepTag response in the final preparation of twin StrepTag cleaved immunogens. Uncleaved (with twin-strep tag) gp16-V1V2 was used a positive control.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** V1V2-antibodies were detected in mice groups immunized with buffer (no antigen, Naïve group), gp16-scaffold only (no V1V2 control), gp16-V1V2- T/F07, H173Y, T/F07 library, H173Y library, H173Y+ΔDSV library and H173Y+∆V1 library. A color-coded key is provided on the right side of the graph for each binding curve. Both naive and gp16-scaffold only groups showed no non-specific reactivity toward the coating antigen. The antibody titers are determined through ELISA done with two technical replicates. Respective purified recombinant soluble gp140-T/F07, -H173Y, -ΔDSV, -H173Y+ΔDSV, and –H173Y+∆V1 Env glycoproteins were used as coating antigens (1 μg/ml) matching the V1V2 region (parental template mutations for combinatorial libraries). Absorbance (OD 650 nm) readings are used to generate the binding curves.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A–C) Reducing SDS-PAGE profile of GnTi-expressed recombinant His-tagged Env proteins, gp140-T/F07 (Founder) and its V2 mutants (A); gp140s (cleaved into gp120 and gp41 subunits) (B); and gp120s (C) of different HIV-1 subtypes used as heterologous Env antigens. (D) V1V2 sequences of the diverse HIV-1 subtypes included in the heterologous Env protein library used to determine breadth. Degree of conservation (0–100%) at each residue position is depicted graphically at the bottom of the alignment. Variability in the V1V2 region of the chosen Env antigens is shown with background color gradient (red to pink) showing conservation on a scale of 0–100%.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/92379/elife-92379-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** (A–H) ELISA generated binding curves showing the reactivity of sera of mice groups immunized with T/F07 (A) H173Y (B) and combinatorial V2 libraries (lib.); (C) T/F07 (D) H173Y (E) H173Y+∆DSV (F) H173Y+∆V1 groups (G) gp16-scaffold (H) and Naive (I) groups sera were used as negative controls. The experiments were performed with five fold serially diluted pooled sera from each group with duplicate wells. Curves are color-coded for the respective antigen as shown in the box at the bottom.
+
 Four different combinatorial gp16-V1V2 nanoscaffold libraries were constructed. Three of these are in the background of H173, Y173, and Y173.∆DSV templates. The fourth library has a V1 loop deletion as this deletion has previously been shown to modulate the immunogenicity of the Env protein and the subsequent antibody responses (Saunders et al., 2005; Sanders et al., 2000; Silva de Castro et al., 2021). For this library, we used the Y173 template in which a 15-amino acid residue mutational hotspot in the V1 loop (SNITVERNITIANDTYD) was replaced with a flexible linker (AGGAS) optimized through in silico structural modeling such that it will have minimal impact on the V1V2 backbone conformation. This Y173.∆V1 library is also supposed to eliminate certain immunodominant residues in the V1 loop and enhance V2-directed antibody responses (Silva de Castro et al., 2021). These four combinatorial libraries plus the two original H173 and Y173 V2 immunogens as controls, were all expressed as gp16 nanoscaffolds in GnTi cells, and the recombinant proteins were purified. To minimize epitope distraction, a cleavable HRV3c protease site was engineered into each of the constructs and the strep-tags were removed from the purified proteins by treatment with the protease. The protease was then separated from the scaffolds by size-exclusion column chromatography (Figure 8—figure supplement 1). The pure, tag-less, V1V2 nanoscaffolds were then used for mouse immunizations and induction of V2-specific antibodies was evaluated.
 
-## Combinatorial immunogens broaden V2 antibody responses
+### Combinatorial immunogens broaden V2 antibody responses
 
 BALB/c mice (4 mice/group) were immunized at wks 0, 3, 6, and 9 with pure V2 immunogen libraries as described above (Figure 5A). Naïve mice (PBS/no antigen) and mice immunized with gp16-scaffold alone (without V2) served as negative control groups. Sera were collected after the final boost and analyzed by a series of immunological assays.
 
 V1V2-specific antibody titers were quantified by ELISA using the respective purified proteins as coating antigens. V1V2 antibodies were detected after prime immunization and enhanced by several fold with each successive boost for all the groups except for the negative control groups where no V2-specific responses were detected. The terminal bleed sera which had the maximum antibody titers were then used for detailed epitope specificity studies (Figure 8—figure supplement 2).
 
 To determine the recognition breadth of antibody responses, a series of ~20 heterologous recombinant gp140 and gp120 Env proteins from diverse HIV subtypes A, B, AE, and C were used as coating antigens for ELISA assays. Many of these were purified from GnTi cells while some were obtained from NIH Reagent Program (Figure 8—figure supplement 3A–C and Table 1). These Env proteins were selected based on the differences in the composition of the V1V2 domain C β-strand with respect to length and sequence identity, and additionally, glycosylation of their hypervariable V1 and V2 loops (Figure 8—figure supplement 3D). All these recombinant proteins were used as coating antigens to determine the cross-clade antibody responses generated by different combinatorial libraries (Figure 8—figure supplement 4).
+
+**Table 1.**
+ List of reagents obtained from the NIH Reagent Program.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Catalog #</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4961</td>
+      <td>HIV-1 BaL gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>7749</td>
+      <td>HIV-1 CN54 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>10080</td>
+      <td>HIV-1 96ZM651 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>11556</td>
+      <td>HIV-1 JR-CSF Fc-gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>11784</td>
+      <td>HIV-1 IIIB gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12063</td>
+      <td>HIV-1 UG037 gp140 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12064</td>
+      <td>HIV-1 CN54 gp140 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12569</td>
+      <td>AE.A244 D11 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12570</td>
+      <td>B.MN D11 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12571</td>
+      <td>B.9021 D11gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12572</td>
+      <td>B.6240 gp140C recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12574</td>
+      <td>B.63521 D11 gp120 mutC recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12576</td>
+      <td>M.CON-S D11 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12581</td>
+      <td>C.1086 gp140C recombinant protein</td>
+    </tr>
+    <tr>
+      <td>13055</td>
+      <td>HIV-1 AC10.29 gp120 Avi His recombinant protein</td>
+    </tr>
+    <tr>
+      <td>13342</td>
+      <td>HIV-1 93TH975 gp120 recombinant protein</td>
+    </tr>
+    <tr>
+      <td>12567</td>
+      <td>HIV-1 Env V1V2 recombinant protein (AE.A244 V1V2 tags)</td>
+    </tr>
+    <tr>
+      <td>12568</td>
+      <td>HIV-1 Env V1V2 recombinant protein (C.1086 V1V2 tags)</td>
+    </tr>
+    <tr>
+      <td>8660</td>
+      <td>HIV-1 96ZM651.8 gp140 optimized expression vector</td>
+    </tr>
+    <tr>
+      <td>12806</td>
+      <td>HIV-1 CM235 gp120 expression vector</td>
+    </tr>
+    <tr>
+      <td>12957</td>
+      <td>HIV-1 AC10.29 gp120 Avi His optimized expression vector</td>
+    </tr>
+    <tr>
+      <td>13348</td>
+      <td>HIV-1 BaL gp120 His expression vector</td>
+    </tr>
+    <tr>
+      <td>13349</td>
+      <td>HIV-1 93TH975 gp120 His expression vector</td>
+    </tr>
+    <tr>
+      <td>13350</td>
+      <td>HIV-1 CN54 gp120 His expression vector</td>
+    </tr>
+    <tr>
+      <td>12551</td>
+      <td>CH59 mAb</td>
+    </tr>
+    <tr>
+      <td>12550</td>
+      <td>CH58 mAb</td>
+    </tr>
+  </tbody>
+</table>
 
 Consistent with the first mouse study, the Y173-induced antibodies showed greater cross-reactivity than the H173-induced sera, as shown by their binding to majority of the heterologous Env proteins. In contrast, H173-induced sera strongly reacted with Env antigens from A244, 93TH75, 1086, and CM235 strains that contained similar C β-strand sequence as the T/F07 virus, while showing moderate to poor reactivity with the rest of the Env antigens as depicted in the heat map (Figure 8C). Upon grouping the antigens into T/F07 matched and mis-matched C β-strand sequence, H173 antibody responses were more sensitive to mismatches in the C β-strand region than the Y173 antibodies (Figure 8D). Cumulative response towards all the antigens was also compared for H173 and Y173 groups by plotting the summarized response based on AUC values (%) (Figure 8E). These data clearly showed that with single residue change, H173Y, there occurred significant improvement in recognition of diverse Env antigens and hence breadth of V2 reactivity.
 
@@ -158,86 +333,86 @@ In conclusion, our studies show that residue 173 and the presence of histidine o
 
 ## Materials and methods
 
-## Viral load analysis
+### Viral load analysis
 
 Viral loads were determined in participant 7 longitudinal samples from wk 0 up to wk 144 as described previously (Trinh et al., 2019; Robb et al., 2016). Briefly, viral RNA was isolated from cell-free plasma using the QIAamp viral RNA isolation kit (QIAGEN). Quantitative reverse transcription-PCR was conducted in a two-step process. First, RNA was reverse transcribed followed by treatment with RNase H (Stratagene) for 20 min at 37 °C and then cDNA was quantified using specific amplification primers, dyes, and probes. All reactions were carried out on a 7300 ABI real-time PCR system with TaqGold polymerase (Applied Biosystems) according to the manufacturer’s protocols.
 
-## Single genome amplification (SGA)-derived envelope sequencing
+### Single genome amplification (SGA)-derived envelope sequencing
 
 SGA sequencing was performed at viral sequencing core in Walter Reed Army Institute of Research (WRAIR) as described previously (Trinh et al., 2019; Keele et al., 2008). Briefly, viral RNA was extracted from the plasma of the infected RV217 participants using the QIAamp Viral RNA Mini Kit (QIAGEN, Valencia, CA, USA) and complementary DNA (cDNA) was synthesized using the SuperScript III RT kit (Invitrogen/Thermo Fisher Scientific, Waltham, MA, USA) following the manufacturer’s instructions. cDNA was amplified as a full genome or 2 half genomes overlapping by 1.5 kb as previously described using SGA strategy, which was then end-point diluted in 96-well plate, such that to yield less than 30% amplification product. Env specific primers were used to amplify env gene from the HIV genome.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Multiple sequence alignments and construction of phylogenetic trees were done using CLC Main Workbench (ver. 7.6.1) software. SGA derived env sequences obtained from various time points (1-, 4-, 24 wk post-infection) were aligned with the respective T/F virus sequence using following parameters; Gap Open Cost = 10.0; Gap Extension Cost = 1.0; and Alignment Sensitivity = Very Accurate. Phylogenetic trees were constructed using Neighbor-Joining method, Jukes Cantor protein distance measure, and 100 bootstrap replicates. For mutational frequency analysis, the total number of mutations at each residue of the Env sequence was determined. Numbering of each residue is consistent with the HXB2 strain sequence used as reference. For consensus logo construction, Env sequences of diverse subtypes were fetched from HIV sequence database, aligned using CLC Main Workbench. The logo was generated using an online tool, WebLogo (https://weblogo.berkeley.edu/logo.cgi).
 
-## Structural modeling
+### Structural modeling
 
 3D model of a gp140-T/F07 was generated using homology modeling server, SWISS-MODEL. BG505 gp140 (PDB ID: 4TVP) trimer was used as a template. Mutations were mapped on the modeled trimers using PyMol (ver. 1.74) molecular visualization software (Schrödinger, 2010). Ab initio structural modeling of T/F07- and Y173-V1V2 domains was conducted using QUARK online tool.
 
-## Molecular dynamics (MD) simulation
+### Molecular dynamics (MD) simulation
 
 First, T/F07-H173 and -Y173 trimer models were generated by MODELLER 9v7 using T/F100 Env cryo-EM structure (PDB ID: 6NQD) as template for modeling. After predicting trimer structures, V1V2 domains were extracted and used for MD simulation. GROMACS 5.1.2 was used to run four MD simulations: H173/Strand, Y173/Strand, H173/Helix, and Y173/Helix as initial models. AMBER99SB-ILDN force field was employed for protein. Dodecahedron periodic box was solvated by TIP3P water molecules. The size of the solvation box was set to 1.0 nm from the V1/V2 domain. Sodium ions were added to neutralize the system. After solvation, steepest decent minimization with 50000 steps was applied. Then, the systems were equilibrated at 300 K during 100 ps (NVT equilibrium) and at 1.0 bar during 100 ps (NPT equilibrium). After equilibration, 100 ns MD trajectory was produced for each system. The equilibration and MD production were done with 2 fs timestep, applying LINCS algorithm.
 
-## Recombinant plasmid constructions gp16-V1V2 scaffolds and combinatorial libraries
+### Recombinant plasmid constructions gp16-V1V2 scaffolds and combinatorial libraries
 
 The gp140-TF07 env sequence (spanning gp120 and the gp41 ectodomain up to amino acid 664) was codon optimized and synthesized using GeneArt Strings gene synthesis (Life Technologies). This synthetic fragment was used as template to amplify T/F07-V1V2 sequence corresponding to the residues 117–206 of the Env. The V1V2 sequence was cloned into pCDNA3.1(–) mammalian expression vector engineered to harbor codon optimized bacteriophage T4 terminase, gp16 with an N-terminal Gaussia luciferase (GLuc) signal peptide for secretion of recombinant protein into the media, and a Twin Strep-tag II sequence (WSHPQFEK) for affinity purification at the C-terminus. The amplified V1V2 fragment was cloned downstream to gp16 followed by Twin-strep tags. After the construction gp16-T/F07 V1V2 clone, point mutation and/or deletion was introduced using site-directed mutagenesis to construct gp16-H173Y, -ΔDSV and -H173Y+ΔDSV V1V2 scaffolds. For the construction gp16-V1V2 combinatorial libraries, these scaffolds were used as templates. Controlled mutagenesis was performed using randomized primer pool (IDT) with desired mutations or substitutions at the selected positions in the C strand to generate V1V2 mutant libraries. Amplified V1V2 library fragments were then cloned into the same pcDNA 3.1 vector used previously but with an exception that this vector was further engineered to harbor HRV3c protease cleavage site positioned before the Twin-strep tags for tag removal. For the construction of gp16-H173Y_ΔV1 combinatorial library, H173Y template with a stretch of V1 loop residues (SNITVERNITIANDTYD) deleted and replaced by an optimized short-linker (AGGAS) was used.
 
-## gp140 and gp120 Env clones
+### gp140 and gp120 Env clones
 
 Codon-optimized gp140 env sequences (spanning gp120 and the gp41 ectodomain up to amino acid 664) from T/F07, T/F61, T/F94, T/F100, BG505, JRFL and SF162 HIV-1 viruses harboring trimer-stabilizing SOSIP mutations (Sanders et al., 2013) and six arginine (R6) furin cleavage site (replacing native REKR cleavage site at the junction of gp120 and gp41) were synthesized (Binley et al., 2002). The gp140 genes were then cloned into pCDNA 3.1(–) vector that was engineered to harbor an N-terminal Cluster of Differentiation 5 antigen (CD5) signal peptide for secretion of the recombinant proteins into the media and 8X-Histidine tag for affinity purification. Additional mutations/deletions were introduced in gp140-T/F07 using site directed mutagenesis kit (NEB). The sequences of the recombinant clones were verified through sequencing (Retrogen, Inc). The gp120 expression vectors were obtained from NIH AIDS Reagent Program (Table 1). The furin-expressing plasmid, Furin:FLAG/pGEM7Zf(+), was obtained from Dr. Gary Thomas (Vollum Institute, Portland, Oregon). The furin fragment from this plasmid was subcloned into pcDNA3.1(–) (Life Technologies).
 
-## Cell lines and media
+### Cell lines and media
 
 HEK293S GnTI- (ATCC CRL-3022) suspension cell line was obtained from ATCC. Cell line identity was verified by STR profiling and cells were tested to be free from mycoplasma contamination. HEK293S GnTI- cells were used for expression of HIV Env proteins and maintained in FreeStyle 293 expression medium (Life Technologies), supplemented with 1% heat-inactivated fetal bovine serum (FBS, Quality Biologicals). All cells were grown in suspension in a Multitron Pro orbital shaker (Infors HT) incubator at 37 °C in 8% CO2, 80% humidified atmosphere.
 
-## Transfection
+### Transfection
 
 Plasmid DNAs for transfection were purified using Plasmid Midi kit (Qiagen) as per manufacturer’s instructions. Transfections were carried out as described previously (AlSalmi et al., 2015). Briefly, GnTi cells were grown to 1x106 /ml cell density for transfection. Prior to transfection, cells were centrifuged at 100 rpm for 5 min followed by full replacement of media with the fresh Freestyle293 media lacking FBS. The final cell density was adjusted to 2x106 / ml in half or 50% of the final volume of transfection. The cells were then placed in the shaker incubator for 1 hr at 37 °C in 8% CO2, 80% humidified atmosphere. After incubation, DNA (1 µg/ml final transfection volume) was added followed by addition of linear polyethylenimine (PEI25k, Polyscience, Inc) (1 mg/ml) at a 3:1 ratio (PEI:DNA) to the cell suspension. For gp140 expression, cells were co-transfected with furin plasmid DNA to produce cleaved gp120 and gp41 subunits that then associate non-covalently to yield native Env proteins. After 12 hr of transfection, HyClone SFM4HEK293 medium (GE Healthcare) supplemented with 1% FBS (v/v) and protein expression enhancing sodium butyrate (Reeves et al., 2002) solution (SIGMA-ALDRICH) to a final concentration of 2 nM were added to the cells to make up to the final volume of transfection. After 5 days of transfection, the supernatant was harvested by centrifuging the cells, and filtered using a 0.2 µm filter (Corning, Inc).
 
-## Protein purification
+### Protein purification
 
 Secreted twin StrepTagged gp16-V1V2 proteins in the harvested and filtered supernatant were supplemented with BioLock biotin blocking solution (IBA Lifesciences) at 5 µl/ml to mask the biotin present in the supernatant. After 30 min of incubation, the supernatant was loaded onto a 1 ml StrepTactin column (QIAGEN) at a flow rate of 0.7 ml/min in the ÄKTA prime-plus liquid chromatography system (GE Healthcare). Non-specifically bound proteins were washed off by passing at least 20 column volumes of the wash buffer (300 mM NaCl, 50 mM Tris-HCl, pH 8) or until the absorbance reached the baseline level. Bound gp16-V1V2 proteins were eluted with StrepTactin elution buffer (5 mM d-Desthiobiotin, 300 mM NaCl, 50 mM Tris-HCl, pH 8) at a flow rate of 1 ml/min. Eluted peak fractions were buffer exchanged into 100 mM NaCl, 50 mM Tris-HCl, pH 8 buffer. Protein fractions were stored with 10% glycerol at –80 °C until use for antigenicity and immunogenicity studies. GnTi expressed His-tagged gp140s and gp120s were purified from the harvested and clarified supernatant using Ni-NTA agarose beads (Qiagen) following manufacturer’s instructions.
 
-## StrepTag removal from gp16-V1V2 immunogens
+### StrepTag removal from gp16-V1V2 immunogens
 
 For the second mice immunization study, the Twin-StrepTags were cleaved off the immunogens using HRV3c protease. The recombinant proteins eluted after StrepTactin affinity chromatography, were buffer exchanged with 1 X HRV3C protease buffer to remove the desthiobiotin present in the elution buffer. One μL of protease was added per 20 μg of the purified protein (1:20) and incubated at 4 °C for 16 hr. Digested protein was passed twice through StrepTactin spin column (IBA). Uncleaved StrepTagged protein bound to the column while the flow-through containing desirable cleaved fraction was collected. The cleaved protein was then loaded onto the size-exclusion chromatography column for fractionation using 100 mM NaCl, 50 mM Tris-HCl, pH 8 buffer. Owing to a large difference in the native dodecameric gp16-V1V2 (~336 kD), HRV3C protease (47.8 kD) was separated from the final immunogens. The gp16-V1V2 fractions were pooled, concentrated and stored at –80 °C until use.
 
-## Biochemical analyses and quantifications
+### Biochemical analyses and quantifications
 
 Purified proteins were run on SDS-PAGE to quantify and assess for non-specific protein contamination. SDS-PAGE analyses were performed using 4–20% gradient Tris-glycine gels (Life Technologies) or home-made 12% gels in the presence of DTT (reducing conditions) or absence of DTT (non-reducing). All gels were stained with Coomassie blue R-250 solution. Band intensities were measured using Bio-Rad Gel Doc XR +System and Image Lab software. BSA standards were used to generate a standard curve for quantification. Deglycosylation was also performed to sharpen the bands for accurate quantitation as HIV Env proteins are glycosylated and hence appear fuzzy on gels. For deglycosylation, 1 µl (500 Units) of PNGase F (New England BioLabs, Inc) was used to deglycosylate 10 µg of the protein in the presence of 5 mM DTT and mild detergents by incubating at room temperature for 1 hr according to manufacturer’s recommendations.
 
-## Western blotting
+### Western blotting
 
 Proteins separated by SDS-PAGE were transferred to a PVDF membrane using the Trans-Blot Turbo RTA Mini PVDF Transfer Kit (Bio-Rad Laboratories, Inc). Membranes after activating with methanol were blocked with bovine serum albumin (Amresco, LLC). For Strep-Tag II detection, HRP-conjugated StrepMAB-Classical MAb (IBA Life Sciences) was used at 1:3000 dilution in PBS. Purified mAbs, CH58 and CH59 were used as primary antibodies at 1:5000 dilution in PBS and rabbit anti-human Ab HRP conjugate (Santa Cruz Biotechnology) was used as secondary antibodies at 1:10,000 dilution in PBS. Signal from HRP-conjugated antibodies was detected using Clarity Western ECL Blotting substrate (Bio-Rad Laboratories, Inc). Band intensities were measured using Bio-Rad Gel Doc XR +System and Image Lab software.
 
-## Enzyme linked immunosorbent assay (ELISA)
+### Enzyme linked immunosorbent assay (ELISA)
 
-## Streptactin ELISA
+#### Streptactin ELISA
 
 StrepTactin ELISA was performed to determine CH58 and CH59 binding to gp16-V1V2 proteins. These specialized plates are pre-coated with StrepTactin to capture strep-tagged antigens. Since the antigen does not directly bind to the plate surface it is maintained in native conformation that improves antibody recognition. To perform this assay, StrepTactin coated microplates (IBA Life Sciences) were coated with 1 µg/ml Strep-tagged proteins in a volume of 100 µl per well of buffer (25 mM Tris-HCl, pH 7.6, 2 mM EDTA, and 140 mM NaCl) and incubated for 2 h at 4 °C. Following three washes with PBST (0.05% Tween-20 in 1 X PBS), 100 µl of serially diluted Abs (10–0.001 μg/ml) in PBS were added to the wells and the plates were incubated for 1 hr at 37 °C. After three washes with PBST, the plates were incubated with 100 µl of rabbit anti-human Ab HRP conjugate at 1:3000 dilution in PBS for 30 min at 37 °C. The plates were then washed three times with PBST and the peroxidase substrate was added to develop the color reaction (TMB Microwell Peroxidase Substrate system, KPL). The reaction was terminated by adding 100 µl of BlueSTOP solution (KPL) and OD650 was recorded using VersaMax ELISA Microplate Reader (Molecular Devices).
 
-## Conventional ELISA
+### Conventional ELISA
 
 The 96-well Nunc ELISA plates were coated with 100 ng/well antigen diluted in 1 X PBS to a concentration of 1 μg/ml, for overnight at 4 °C. After 12 hr, the plates were washed thrice with 1 X PBST (1 X PBS +0.05% Tween), followed by blocking with 5% BSA in 1 X PBS for 1 hr at room temperature (RT). After incubation, plates were washed thrice with 1 X PBST, followed by addition of 100 μL of primary antibody or serum dilution for 1 hr at 37 °C. After incubation, the plates are washed three times same as before and rabbit HRP-conjugated anti-mouse IgG (H+L) (Novex, Life Technologies) as secondary antibody was added, followed by 30 min incubation at RT. The remaining procedure is same as described above for StrepTactin ELISA.
 
-## Antibody blocking assay
+### Antibody blocking assay
 
 Antibody blocking assay was conducted by modifying the ELISA protocol. Briefly, 96-well Nunc ELISA plates were coated with 100 ng/well gp140-T/F07 antigen diluted in 1 X PBS to a concentration of 1 μg/ml, for overnight at 4 °C. After 12 hr, the plates were washed thrice with 1 X PBST, followed by blocking with 3% BSA in 1 X PBS for 1 hr at room temperature (RT). Plates were washed thrice with 1 X PBST, followed by addition of 100 μL of CH58 or CH59 antibody dilution (1 μg/ml) for 1 hr at 37 °C. Wells not preincubated with CH58/CH59 antibodies served as unblocked positive control. The antibodies blocked and unblocked (control) plates were washed three times same as before and incubated with optimized mice sera dilutions (1:2000) from various immunization groups for another 1 hr at 37 °C. After washing three times, the plates were incubated with anti-mouse HRP conjugated secondary antibody for 30 min at RT. The plates were then washed followed by TMB peroxidase substrate addition (KPL) and read as described above for ELISA.
 
-## Surface plasmon resonance (SPR) binding assay
+### Surface plasmon resonance (SPR) binding assay
 
 Longitudinal plasma samples of RV217_ participant 7 were analyzed by SPR for the presence of V2-specific Abs. SPR measurements were made with a Biacore 4000 system (GE Healthcare, Uppsala, Sweden). The assay was conducted as described previously (Trinh et al., 2019). The subsequent procedure was conducted in a Biacore 4000 system. The immobilizations were completed in 10 mM HEPES and 150 mM NaCl pH 7.4 using a standard amine coupling kit. The CM5-S series chip surface was activated with a 1:1 mixture of 0.4 M 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC) and 0.1 M N-hydroxysuccinimide (NHS) for 600 s. Then 20 µg/mL of each protein diluted in 10 mM sodium acetate pH 4.5 was coupled for six minutes. The immobilized surface was then deactivated by 1.0 M ethanolamine-HCl pH 8.5 for 600 s (Trinh et al., 2012). Spot 3 in each flow cell was left unmodified to serve as reference and to subtract the buffer shifts. After the surface deactivation, the immobilized Response Unit densities were recorded for each protein: gp16-T/F07, gp16-H173Y, gp16-∆DSV, and gp16-H173Y.∆DSV. Following the surface preparation, the heat inactivated sera from participant 7 were diluted (1:100) in the running buffer (10 mM HEPES, 300 mM NaCl and 0.005% Tween 20). The diluted sera were injected onto the immobilized surface for 250 s followed by a 60-s dissociation period. The antibody bound surfaced was then enhanced with 30 µg/ml secondary Sheep Anti-Human IgG (gamma chain) Antibody (Cat#: AU004.X, Binding Site, UK) for 200 s. To regenerate the bound surface, 150 mM HCl was injected for 50 s, followed by a 60-s buffer injection. All serum samples were conducted with four replicates and collected at rate of 10 Hz, with an analysis temperature at 25C. In addition, monoclonal antibody CH58 (Tomaras et al., 2013) (Cat#: CH58_4 A (3453), from Dr, Liao, Duke Human Vaccine Institute), which binds to linear epitope of V2 (AE) was used to monitor the stability of the immobilized gp16 V1V2 surface on the CM5 chip over time. All injections were conducted at flow rate of 10 µl/min. Data analysis was performed using Biacore 4000 Evaluation software 4.1 with double subtractions to the spot 3 (unmodified surface) and the empty buffer. The immobilized scaffold gp16 was compared with unmodified surface, there was no significant of unspecific binding; therefore, unmodified surface (spot 3) was used as reference subtraction.
 
 For evaluating the binding of antibodies present in immunized mice sera with V2-peptides, The subsequent procedure was conducted in a Biacore 4000 system. The immobilizations were completed in 10 mM HEPES and 150 mM NaCl pH 7.4 using a standard amine coupling kit. The CM7-S series chip surface was activated with a 1:1 mixture of 0.4 M 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC) and 0.1 M N-hydroxysuccinimide (NHS) for 600 s (Trinh et al., 2012). Then 1 µM Streptavidin in 10 mM sodium acetate pH 4.5 (16,600–18,500 RU) was immobilized for 720 s. The immobilized surface was then deactivated by 1.0 M ethanolamine-HCl pH 8.5 for 600 s. Spot 3 in each flow cell was left unmodified to serve as a reference. After the surface deactivation, 25 pM Nlinked biotinylated overlapping V2-peptides synthesized by JPT Peptide Technologies GmbH (Berlin, Germany) were captured onto the streptavidin immobilized chips. These overlapping linear peptides were CSFNMTTEIKDKKQRV, IKDKKQRVHALFYKLD, IKDKKQRVYALFYKLD, HALFYKLDIVPIKDNN, IVPIKDNNNDSVEYRLINC and IVPIKDNNNEYRLINC. Following the surface preparation, the heat-inactivated sera were diluted (1:100) in 10 mM Hepes, 150 mM NaCl pH7.4. The diluted sere were injected onto the captured surface for 240 s followed by a 90 s dissociation period. The bound surfaced was then enhanced with a 360 s injection of secondary goat anti-mouse IgG antibody (AffiniPure Goat Anti-Mouse IgG (H+L), Cat#: 115-005-003, Jackson ImmunoResearch Laboratories, Inc). To regenerate the bound surface, 125–175 mM HCl was injected for 60 s. Four replicates for each peptide were collected, with an analysis temperature at 25 °C. All sample injections were conducted at flow rate of 10 µl/min. Data analysis was performed using Biacore 4000 Evaluation software 4.1 with double subtractions for unmodified surface and buffer for blank.
 
-## GranToxiLux (GTL) antibody-dependent cell cytotoxicity (ADCC) assay
+### GranToxiLux (GTL) antibody-dependent cell cytotoxicity (ADCC) assay
 
 ADCC assays were performed as described previously (Pollara et al., 2011). Human CD4 +T lymphoblasts, CEM.NKR.CCR5 (NIAID Reagent Repository, Cat# 0099), were used as target cells to coat recombinant gp120 proteins. The amount of coating gp120 was optimized through competition by binding of the Leu3A (anti-CD4) antibody (clone SK3; Catalog no. 340133; Final dilution 1:5; BD Bioscience, San Jose, CA, USA). Cryopreserved peripheral blood mononuclear cells, PBMCs from a healthy donor, thawed and rested overnight in R10 media, were used as effector cells (source of effector NK cells). The following day, target cells were coated with titrated amount of T/F07 and its V1V2-mutant gp120s for 75 min at 37 °C. After incubation, coated target cells were mixed with effector cells in 30:1 ratio in 96-well V-bottom plate, followed by addition on granzymeB (GzB). Finally, fourfold serially dilutions of heat-inactivated plasma samples of RV217 participant- 7, from three visits, v0 (pre-infection) for the baseline, and 4 wks (v9) and 24 wks (v14) post-infection or purified antibodies, CH58 and CH65 were added to the respective wells. After 1 hr incubation at 37 °C and 5% CO2, the plate was centrifuged and washed with wash buffer. After washing, the cells were resuspended in wash buffer and the plate was read using the BD LSRII or BD LSRFortessa with the High Throughput Sampler (HTS) with a minimum of 1250 events, to detect the activity of granzyme B (GzB) released by the effector population into target cells. The viable target cells with activated GzB substrate represented the actual population recognized by the effector cells and reported as %GzB activity. The results are reported after background subtraction of the signal acquired from target cells incubated with effector cells in the absence of plasma/antibodies.
 
-## Mouse immunizations
+### Mouse immunizations
 
 Six-week-old female BALB/c (Strain: 000651) mice were received from Jackson’s laboratory for immunization experiments. The immunization was initiated after 2 wks of quarantine. The weights of the mice were taken periodically from the start of the quarantine period to assess growth and health of mice throughout the experiment. Twenty μg of the antigen complexed with Alhydrogel 2% (Invivogen) as adjuvant was injected intramuscularly per mouse using a 22–23 gauze needle syringe. Three boosters were given after prime/first immunization at an interval of 3 wks and tail bleeds were performed to collect sera before each immunization. Mice were also bled before the first immunization to collect pre-immunized (pre-bleed) sera for the negative control. Terminal bleed was performed through cardiac puncture under general anesthesia followed by cervical dislocation to euthanize the animals.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical information is provided in the figure legends. Statistical analysis was performed using GraphPad Prism 8 and unpaired Student’s t-test was applied to calculate significance where mentioned. Data were considered statistically significant at *p≤0.05, **p≤0.01, ***p≤0.001 and ****p≤0.0001. SPR binding data of the vaccinated mice sera was analyzed through paired non-parametric 1-way ANOVA (Friedman test) to calculate statistical significance between different peptides in the same group with a confidence interval of 0.05.

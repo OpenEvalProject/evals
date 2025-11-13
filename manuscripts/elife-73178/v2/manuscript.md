@@ -38,43 +38,123 @@ The apparent nonessentiality of LTG activity would seem contradictory to this en
 
 ## Results
 
-## A single LTG is necessary and sufficient for V. cholerae growth
+### A single LTG is necessary and sufficient for V. cholerae growth
 
 We recently reported that a ∆6 LTG mutant (rlpA+ mltG+ ∆mltA ∆mltB ∆mltC ∆mltD ∆mltF ∆slt70) was viable under standard laboratory conditions and exhibited only slight morphological defects, including an increase in cell length (Weaver et al., 2019). Depletion of RlpA from this background resulted in a lethal chaining defect, suggesting that collectively, some degree of LTG activity is essential for V. cholerae growth. Since we were previously unable to delete MltG or observe its depletion from a ∆6 LTG background, we asked whether MltG exhibited a synthetic-lethal relationship with the other LTGs using a quantitative insertion/disruption assay. Briefly, we conjugated a suicide vector targeting mltG (or positive or negative control loci) into WT and ∆6 LTG and quantified viable recombinants. Surprisingly, the WT and ∆6 LTG strains both tolerated inactivation of mltG by the suicide vector so long as essential DNA synthesis genes downstream of mltG were expressed in trans to ameliorate polar effects of mltG disruption (Figure 1A, Figure 1—figure supplement 1A and B). The resulting ∆6 LTG mltG::kan mutant was viable in LB but failed to grow in low-salt LB (LB without added NaCl, hereafter designated LB0N) (Figure 1—figure supplement 1C), which could explain why previous attempts to inactivate mltG in this background using SacB-based allelic exchange (requiring selection on LB0N + sucrose) were unsuccessful (Weaver et al., 2019). Consistent with these data, we were then able to generate a clean, viable ∆7 LTG mutant (rlpA+ mltG::stop ∆mltABCDF ∆slt70) using an MqsR toxin-based allelic exchange system (Lazarus et al., 2019). The ∆7 mutant sacculus contained only a tenth of the anhMurNAc residues observed in the wild-type sacculus (Figure 1—figure supplement 1D, Supplementary file 1), suggesting that there is significantly reduced LTG activity in the ∆7 LTG mutant. Additionally, by placing the native copy of rlpA under an arabinose-inducible promoter, we were able to conditionally deplete RlpA by growing these strains in the absence of arabinose to observe the effects of LTG insufficiency (Figure 1B, Figure 1—figure supplement 2). Compared to ∆6 LTG (Weaver et al., 2019), RlpA depletion was more severe in the ∆7 background, both by morphology and plating efficiency, consistent with ∆7 exhibiting more limited LTG activity than ∆6.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig1-v2.jpg)
+
+**Figure 1.:** (A) Trans expression of DNA synthesis genes vc2016-2014 permitted pAM299 disruption of native mltG locus. lacZ and rpoB were targeted as positive and negative controls for disruption, respectively. TE, transformation efficiency; ND, below limit of detection. Three biological replicates are shown. (B) RlpA was depleted from the WT, ∆6, and ∆7 LTG backgrounds by placing its native promoter under control of arabinose induction and growing from a 10–3 overnight culture dilution into 5 mL LB ± 0.4% arabinose (ara) at 37°C with shaking for 3 hr, back-diluting 10–3 into fresh media, and incubating for another 3 hr. Cells were imaged on LB agarose pads. Scale bars = 5 μm. Dotted line indicates 10–3 back-dilution. (C) Arabinose-dependent RlpA depletion in ∆6 and ∆7 LTG backgrounds was rescued with isopropyl-β-D-1-thiolgalactopyranoside (IPTG)-inducible LTGs by growing cultures in LB ± ara (0.4%) and ±IPTG (200 μM) in 96-well plates at 37°C without shaking for 3 hr, back-diluting 10–3 into fresh media, incubating another 3 hr, and spotting directly onto the same media + kan50. Plates were incubated at 30°C for 24 hr before imaging. Complete plating efficiencies associated with panels (B) and (C) can be found in Figure 1—figure supplement 2 and Figure 1—figure supplement 4, respectively. Images are representative of three biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Transformation efficiencies represent the strepR and kanR CFU divided by total viable strepR CFU recovered from a single mating. StreptomycinR (StrepR) V. cholerae WT and ∆6 LTG strains were mated with a strepS E. coli MFD donor strain carrying the pAM299 suicide vector carrying kanamycin resistance (KanR) and targeting positive control gene lacZ, negative control gene rpoB, rlpA, or mltG. (B) The genetic region downstream of mltG encodes essential DNA synthesis genes. (C) Mean growth curves for mltG::kan strains in WT Ptacvc2016-2014 and ∆6 LTG Ptacvc2016-2014 backgrounds diluted 1:100 from overnight cultures into LB or LB0N and grown at 37°C. (D) Relative molar abundance of all anhMurNAc-containing muropeptide species in sacculus. Overnight cultures of WT, mltG::kan, ∆6 LTG, and ∆6 LTG mltG::kan (∆7 LTG) in lacZ::Ptacvc2016-2014 backgrounds were diluted 1:100 into LB + 200 μM IPTG and samples collected for HPLC analysis at OD600 0.3 (Exp, solid bars) and OD600 1.2 (Stat, striped bars). Complete muropeptide profiles can be found in Supplementary file 1. Error bars represent standard deviation from three biological replicates. Mutants were compared to the WT within each growth phase with an unpaired t-test. **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Native RlpA was depleted from the WT, ∆6, and ∆7 LTG backgrounds as described in Figure 1B, (A) imaged on LB agarose pads and (B) spot plated in 10-fold serial dilutions (100–10–6) onto LB + kan50 ± 0.4% arabinose and incubated at 30°C for 24 hr before imaging.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Clustal Omega alignment of a relevant portion of lyase domain from V. cholerae RlpA (vc0948), P. aeruginosa RlpA (pa4000), and E. coli RlpA (b0633). Two Asp residues are implicated in PaRlpA activity: PaRlpA D156 aligns with VcRlpA D133 and EcRlpA D135, and PaRlpA D168 aligns with VcRlpA D145 and EcRlpA S147. WT V. cholerae carrying (B) pHL100 rlpA-mCherry (C) rlpA∆SPOR-mCherry or (D) rlpAD145A-mCherry was grown in M9 + 0.2% glucose at 30°C for 2 hr, induced with 1 mM isopropyl-β-D-1-thiolgalactopyranoside (IPTG), and imaged on M9 + 0.2% glucose agarose pads at OD600 ~ 0.2. Demographs were generated using Oufti. Panels (B–D) are representative of two biological replicates. Scale bars = 5 μm. (E) mCherry (mC) fusion proteins were detected with mCherry antibody, with mCherry fused to a DsbA signal sequence serving as a soluble mCherry size standard. RpoA loading control detected with RpoA antibody. Raw and unedited blots can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Native RlpA depletion in ∆6 and ∆7 LTG backgrounds was rescued by single LTGs as described in Figure 1B, spot plated in 10-fold serial dilutions (from 100 to 10–6) at 0 hr and 6 hr, then incubated at 30°C for 24 hr before imaging. Images are representative of three biological replicates.
+
 Importantly, we confirmed that growth of ∆7 LTG depended on RlpA LTG activity, as RlpAD145A, a predicted active site mutant (Jorgenson et al., 2014; Figure 1—figure supplement 3A and D), was unable to promote growth despite being stably produced (Figure 1—figure supplement 4) and maintaining septal recruitment as indicated by the septal localization of an RlpAD145A-mCherry fusion (Figure 1C, Figure 1—figure supplement 4). Conversely, we found that a truncated RlpA mutant lacking the conserved SPOR domain (which is essential for septal localization in Pseudomonas aeruginosa; Jorgenson et al., 2014) no longer localized to the division septum in V. cholerae as an mCherry fusion (Figure 1—figure supplement 3C) yet still fully complemented native RlpA depletion in both ∆6 and ∆7 (Figure 1C, Figure 1—figure supplement 4), suggesting that RlpA LTG activity, but not septal localization, is essential in these backgrounds. Taken together, these results demonstrate that at least during growth in standard laboratory conditions, V. cholerae requires at minimum one active LTG of the eight currently annotated in its genome.
 
-## Only a subset of LTGs can independently fulfill all essential LTG functions
+### Only a subset of LTGs can independently fulfill all essential LTG functions
 
 Since RlpA LTG activity, but not septal localization, was essential for ∆6 and ∆7 growth, we asked whether growth required specialized LTG function or just PG cleavage function in general. To test this, we assessed the ability of other LTGs to complement ∆6 and ∆7 (Figure 1C, Figure 1—figure supplement 4). Only two native LTGs, MltD and Slt70, could fully (MltD) or partially (Slt70) substitute for RlpA in the ∆7 LTG background, demonstrating that RlpA, MltD, and (to a lesser degree) Slt70 are the only V. cholerae LTGs capable of fulfilling all required LTG roles. Additional LTGs, MltA, MltB, and MltC, were able to rescue RlpA depletion in the ∆6 LTG background (where MltG is present), but not the ∆7 LTG background (where MltG is absent). These observations suggest that LTGs perform at least two separable essential functions for viability, where MltG can perform one function but requires MltA, MltB, or MltC to perform another, and vice versa, as none of these LTGs are independently capable of supporting growth. Intriguingly, the E. coli LTG MltE, for which V. cholerae has no known homologue, was also capable of fully supporting V. cholerae growth as the sole functioning LTG, suggesting that LTG essential functions may not depend on specific protein-protein interactions. Collectively, these data suggest that LTGs are partially redundant, but some LTGs also exhibit varying degrees of functional specificity.
 
-## LTGs are required during vegetative growth
+### LTGs are required during vegetative growth
 
 We were surprised that our strains lacking major LTG activity (even ∆7) were viable. We thus sought to characterize growth and morphology of these backgrounds in more detail. While the ∆6 and ∆7 mutants grew at wild-type growth rates in LB medium when cultures were started from a 100-fold dilution of saturated overnight cultures, we noticed a dilution-dependent exacerbation of growth and morphology defects (Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2). When ∆7 LTG cultures were highly diluted from overnight cultures to increase the number of generations spent in exponential growth, we started to observe a marked growth defect (Figure 2A and B, Figure 2—figure supplement 2A). Conversely, the mltG::stop single mutant and ∆6 LTG mutant grew at wild-type growth rates independent of initial dilution factor (Figure 2B, Figure 2—figure supplement 2A). These data suggest an essential or near-essential role for MltG during sustained exponential growth, albeit only when other LTGs are also inactivated. We also observed diverse aberrant morphologies within the LTG-deficient mutants (but not a ∆mltG::stop single mutant) under these conditions (Figure 2C, Figure 2—figure supplement 1). Interestingly, despite lacking most members of an entire class of PG enzymes, ∆6 and ∆7 only exhibited only mild defects in length and width homeostasis (Figure 2D and E, Figure 2—figure supplement 2), which were only dilution factor-dependent for cell length (suggesting a cumulative division defect). When we followed a time course after back-dilution from stationary phase, we observed morphological defects accumulating in exponential phase and then largely disappearing in stationary phase (Figure 2—figure supplement 3) in both ∆6 and ∆7. Collectively, these observations suggest that LTG-deficient mutants suffer from cumulative damage during exponential growth, which is partially alleviated in stationary phase.
 
-## LTG activity is required for survival in hypo-osmotic conditions
+![Figure 2.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schema describing relationship between dilution factor (DF) of saturated cultures into fresh media and time spent in exponential growth (texp). (B) Mass doubling times (doublings per hour [DPH]) from growth curves performed in LB inoculated with 10-fold serial dilutions of saturated overnight cultures. Values were calculated from growth curves shown in Figure 2—figure supplement 2. Error bars represent standard deviation of the mean, n ≥ 3. (C) Relative abundance of cell morphologies from cultures at OD600 0.3 from panel (C). n > 500 cells. Definition criteria and images are shown in Figure 2—figure supplement 1. Mean length (D) and width (E) as a function of DF of rod cells from panel (C). n > 500 rods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cell morphology classification criteria. (B) Representative micrographs of cell morphologies where each cell type depicted accounts for >1% of population as sampled from cultures grown in LB to OD600 0.3 from 10-fold serial dilutions of overnight cultures. Scale bars = 5 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Growth curves were performed in LB at 37°C inoculated with 10-fold serial dilutions of saturated overnight cultures. Violin plots of raw (B) mean width or (C) length of single rods. n > 500 single rods. Error bars represent standard deviation of the mean, n ≥ 3. DF, dilution factor.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Saturated overnight cultures were diluted 1/1000 into LB at 37°C and periodically sampled for (A) OD600 and imaged on LB agarose pads for (B) mean width, (C) length, and (D) cell morphology as exhibited in (E) representative micrographs. Error bars in (B) and (C) represent standard deviation of the mean, n > 100 single rods. n > 200 cells for (D). Scale bars = 5 μm.
+
+### LTG activity is required for survival in hypo-osmotic conditions
 
 Our results detailed above suggested that the majority of LTGs are dispensable for growth, catalyzing renewed interest in the question of what their physiological roles are. To dissect potential roles for LTGs in cell envelope integrity maintenance, we subjected the ∆6 and ∆7 mutants to growth in low osmolarity medium. Similar to the morphology and growth defects in LB, both mutants were sensitive to low-salt conditions in a dilution-dependent manner (Figure 3A, Figure 3—figure supplement 1). Interestingly, the ∆7 LTG mutant grew at wild-type rate during the initial growth period before a rapid decrease in OD600 (indicative of lysis), suggesting that it is not the initial shock of changing osmotic conditions that kills this mutant, but rather some cumulative damage during growth in low-salt conditions (Figure 3A, Figure 3—figure supplement 1A). Importantly, this rules out a simple cell envelope defect as a cause of LTG-deficient mutant osmosensitivity. We then sought to dissect the contributions of individual LTGs to salt sensitivity. Other than RlpA, which has an established role in LB0N growth (Jorgenson et al., 2014; Weaver et al., 2019) and is still present in the ∆6 and ∆7 mutants, no other single LTG mutant exhibited a strong growth defect in LB0N (Figure 3—figure supplement 2), all further suggesting that this defect is an accumulative function of collective LTG insufficiency. Several LTGs (MltA, MltB, Slt70, and EcMltE) were able to rescue ∆6 LTG growth in LB0N at higher dilutions (Figure 3—figure supplement 2), but none could rescue ∆7 growth in LB0N except MltG, which only partially restored growth to ∆6 mutant levels (Figure 3—figure supplement 2). This suggests that no single LTG can fully support growth in LB0N, and that MltG, despite not exhibiting a defect as a single mutant, is particularly important in this environment when other LTGs are inactivated. Intriguingly, overexpression of mltF was toxic for both ∆6 (LB0N only) and ∆7 mutants (LB) (Figure 3—figure supplement 2C and D), preventing us from assessing its potential for LTG-deficient mutant complementation.
 
-## LTG mutants are hypersensitive to accumulation of periplasmic polysaccharides
+![Figure 3.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig3-v2.jpg)
+
+**Figure 3.:** (A) Mass doublings (doublings per hour [DPH]) upon increasing dilutions (dilution factor [DF]) during growth in LB0N. Values were calculated from growth curves in Figure 3—figure supplement 1. Error bars represent standard deviation of the mean, n ≥ 3. NG, no growth. (B) Representative growth curve in low-salt LB (LB0N) showing late-growing spontaneous suppressor in ∆6 LTG. (C) Whole-genome sequencing of ∆6 LB0N suppressor mutations identifies a premature stop, resulting in a 6% 3′ truncation of opgH; a deletion resulting in a 56% 3′ truncation of opgH and 36% 3′ truncation of vc1286; and a deletion of the 5′ end of ptsH. (D) Validation of low osmolarity growth defect suppression by an opgH mutation. Shown are mass doublings (DPH) upon increasing dilutions (DF) during growth in LB0N. Values were calculated from growth curves shown in Figure 3—figure supplement 1. (E) Saturated overnight cultures harboring isopropyl-β-D-1-thiolgalactopyranoside (IPTG)-inducible sacB were 10-fold serially diluted and plated on LB + kan50 ± 200 μM IPTG ± 10% sucrose, incubated at 30°C, and imaged 24 hr before. Representative of three biological replicates. Empty vector and LB0N controls are shown in Figure 3—figure supplement 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean growth curves in LB0N at 37°C started from 10-fold dilutions of saturated overnight cultures used to generate growth rates in Figure 3A. Error bars, positive standard deviation of the mean, n > 3. Growth plot on the right is reproduced from Figure 3 for comparison. (B) Suppressors of the ∆6 lytic transglycosylase (LTG) LB0N growth defect were isolated on LB and then tested for growth in LB and LB0N from a 10–5 inoculum of saturated overnight (LB) culture. (C) Mass doubling times of ∆opgH mutants calculated from (D) growth curves of ∆opgH mutants in LB at 37°C inoculated with 10-fold serial dilutions of saturated overnight cultures. (E) Mean growth curves in LB0N at 37°C started from 10-fold dilutions of saturated overnight cultures used to generate growth rates in Figure 3D. Error bars, standard deviation of the mean, n = 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mass doubling times of strains diluted 10-3 or 10-5 into LB and LB0N (+ 200μM IPTG when induction was required) normalized to the appropriate WT controls under the same growth conditions. Solid line = WT mean, Dotted lines = +/- standard deviation of WT mean. (A) Single LTG mutant growth normalized to WT growth. (B) WT, (C) ∆6 LTG and (D) ∆7 LTG carrying chromosomal lacZ::Ptac ltg normalized to WT lacZ::Ptac empty. Experiments in panels (C) and (D) were carried out simultaneously and therefore share the same control replicates. Error bars represent standard deviation of 3 biological replicates. NG = No Growth. Raw curves for (A-D) and uninduced data for (B–D) available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) ∆opgH mutants in WT, ∆6, and ∆7 backgrounds were grown in LB at 37 °C to OD600 0.3 from 10-3 inoculum of saturated overnight culture, imaged on LB agarose pads, and single rod lengths analyzed in MicrobeJ. Dotted lines denote quartiles. Significance determined by unpaired Mann-Whitney tests, n>70 single rods. (B) T-Coffee alignment of predicted cytoplasmic N-terminal domains from E. coli OpgH (b0149), Y. pseudotuberculosis MdoH (yptb2493), and V. cholerae OpgH (vc1287).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Figure 3—source data 1Saturated overnight cultures harboring (A) IPTG-inducible sacB or (B) empty vector were 10-fold serially diluted (100-10-6) and plated on LB+kan50 and LB0N+kan50 +/- IPTG (200μM) + sucrose (0, 1, or 10% W/V) and incubated at 30 °C for 24 hrs before imaging. Representative of 3 biological replicates.
+
+### LTG mutants are hypersensitive to accumulation of periplasmic polysaccharides
 
 To determine the reason for ∆LTG defects in low-salt media, we took advantage of the spontaneous appearance of suppressors arising during ∆6 LTG growth in LB0N (Figure 3B, Figure 3—figure supplement 1B). Whole-genome sequencing of three stable suppressors identified three unique mutations: a deletion in ptsH (vc0966), a frameshift mutation in opgH (vc1287), and a deletion mutation affecting both opgH and a downstream gene (vc1286) (Figure 3C). ptsH encodes HPr, a key regulator of sugar import via the phosphoenolpyruvate-carbohydrate phosphotransferase system (PTS) (Deutscher et al., 2014). OpgH is critical to the synthesis of periplasmic glucans (OPGs), which accumulate under conditions of low osmolarity and have been implicated in a variety of cell functions, including steady-state maintenance of osmolarity in the periplasm (Bontemps-Gallo et al., 2017). We were particularly intrigued by the role of periplasmic glucans and validated restoration of ∆6 LTG LB0N growth using clean deletion mutants. Inactivation of opgH completely restored wild-type growth of the ∆6 LTG mutant in LB0N, independent of initial dilution factor (Figure 3D, Figure 3—figure supplement 1E). In contrast, inactivation of opgH was only able to restore growth yield of the ∆7 LTG mutant in LB0N from a 10–2 inoculum (Figure 3D, Figure 3—figure supplement 1E), but not from greater dilutions, nor from a 10–5 inoculum in LB (Figure 3—figure supplement 1C and D), indicating that the ∆7 LTG mutant has additional exponential growth-dependent defects unique from the ∆6 LTG mutant. Interestingly, OpgH orthologues in E. coli and Yersinia pseudotuberculosis have also been ascribed a moonlighting function, tying carbon availability with cell length by inhibiting FtsZ filamentation when UDP-glucose levels are high in the cell (Hill et al., 2013; Quintard et al., 2015). The elongated cell phenotype of the ∆6 LTG and ∆7 LTG mutants could in principle be indicative of a similar activity by V. cholerae OpgH; however, deleting opgH from the ∆6 LTG mutant did not restore wild-type cell length in ∆6 (Figure 3—figure supplement 3). Additionally, alignment of V. cholerae OpgH with E. coli and Y. pseudotuberculosis suggests that it lacks much of the N-terminal domain that was shown to interact with FtsZ in E. coli (Figure 3—figure supplement 3; Hill et al., 2013).
 
 We consequently considered a model where accumulation of periplasmic glucans is detrimental to ∆LTG mutants, for example, via periplasmic crowding or an increase in periplasmic osmolarity. To test this model, we used an unrelated system to increase periplasmic crowding. The Bacillus subtilis sacB gene product, which is secreted and functions extracellularly (Pereira et al., 2001), isomerizes and polymerizes sucrose monomers into levan molecules up to several kD (Tanaka et al., 1980), molecules much too large to escape the Gram-negative periplasm through outer membrane porins. This is often exploited in allelic exchange methods for mutant generation as a means of counterselection (Steinmetz et al., 1983; Gay et al., 1983; Blomfield et al., 1991), where, for example, WT V. cholerae is sensitive to sacB expression in LB0N + sucrose. We hypothesized that the ∆LTG mutants might be hypersensitive to periplasmic levan synthesis even in standard LB salt conditions (1% W/V). To test this, we engineered strains overexpressing sacB. Consistent with the use of sacB as a counterselection method under low-salt conditions, the wild-type is sensitive to sacB induction on LB0N (Figure 3—figure supplement 4), but not LB. In contrast, we observed a sacB-dependent plating defect on sucrose in the ∆6 and ∆7 LTG mutant on LB (Figure 3E, Figure 3—figure supplement 4). Interestingly, the mltG::stop mutant also exhibited hypersensitivity to SacB activity (Figure 3E, Figure 3—figure supplement 4), suggesting that accumulating MltG substrate is a particularly strong direct or indirect contributor to this phenotype. Collectively, our data suggest that ∆LTG mutants suffer from either hyperosmotic stress or excessive molecular crowding in the periplasm, which can be exacerbated through the induction of long-chain polysaccharides.
 
-## PG transglycosylase activity causes ∆6 LTG mutant periplasmic stress
+### PG transglycosylase activity causes ∆6 LTG mutant periplasmic stress
 
 Based on our model that accumulation of polysaccharides in the periplasm is toxic, we predicted that accumulation of uncrosslinked PG strands caused by uninterrupted GT activity during TP inhibition, for example, by β-lactams (Cho et al., 2014) (a process termed ‘futile cycling’ when coupled with LTG-mediated degradation), should exacerbate LTG-deficient mutant sickness, and this has indeed been shown with Slt70 in E. coli (Cho et al., 2014). To test this hypothesis, we assessed susceptibility of ∆LTG mutants to cell wall-acting antibiotics with varying ability to induce futile cycling. In a disk diffusion assay, the ∆6 and ∆7 LTG mutants were hypersensitive to inducers of futile cycling, that is, general PBP inhibition by Penicillin G (PenG) as well as to inhibition of specific PBPs including PBP3 (aztreonam), PBP2 (mecillinam), and PBP1b (cefsulodin) (Figure 4A). Conversely, both ∆6 and ∆7 mutants exhibited wild-type sensitivity to moenomycin and fosfomycin, both of which inhibit cell wall synthesis without inducing futile cycling. Thus, β-lactam sensitivity of LTG-deficient mutants is not necessarily tied to simple inhibition of cell wall synthesis, but potentially also to periplasmic crowding due to the accumulation of uncrosslinked PG strands. Curiously, the ∆7 LTG mutant was hypersensitive to MreB inhibition by MP265. This suggests that in the absence of other LTGs MltG contributes to survival upon Rod system insufficiency through an unknown mechanism.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sensitivity to Penicillin G (PenG), aztreonam (AZTM), mecillinam (Mec), cefsulodin (Cef), moenomycin (Moeno), MP265, and fosfomycin (Fos) measured as zone of inhibition (ZOI) in a disk diffusion assay. ND, no ZOI around disk. Error bars, standard deviation. Significance determined by one-way ANOVA. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Overnight cultures were diluted 1:100 into LB + BADA (100 μM) and grown at 37°C to OD600 0.5 before addition of (B) PenG (100 μg/mL) or (C) Fos (500 μg/mL). Resulting spheroplasts were washed and imaged after 3 hr of antibiotic exposure. Fluorescence was normalized to the same intensity threshold for visual comparison except where indicated (exceptionally bright samples were normalized to a higher-intensity threshold denoted by the multiplier). Representative of two biological replicates. Scale bar = 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Overnight cultures were diluted 1:100 into LB + BADA (100 μM) and grown at 37°C to OD600 0.5 before addition of PenG (100 μg/ml). Resulting spheroplasts were removed periodically, washed, and imaged on LB agarose. (A) Fluorescence was normalized to the same intensity threshold in Figure 4—figure supplement 1 and Figure 4—figure supplement 2 for comparison except where indicated (exceptionally bright samples were normalized to a higher-intensity threshold denoted by the multiplier). Representative of two biological replicates. Scale bar = 5 μm. (B) Mean fluorescence intensity (AU) for >100 cells or spheroplasts was measured in ImageJ. N/A, not applicable due to insufficient intact spheroplasts for measurement.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Overnight cultures were diluted 1:100 into LB + BADA (100 μM) and grown at 37°C to OD600 0.5 before addition of fosfomycin (500 μg/mL). Resulting spheroplasts were removed periodically, washed, and imaged on LB agarose. (A) Fluorescence was normalized to the same intensity threshold in Figure 4—figure supplement 1 and Figure 4—figure supplement 2 for comparison. Representative of two biological replicates. Scale bar = 5 μm. (B) Mean fluorescence intensity (AU) for >100 cells or spheroplasts was measured in ImageJ.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** ∆ampG data for this figure was collected during the same experiments in Figures 2A and 3A–F; therefore, WT data are reproduced from those figures and any statistical tests shown here were performed on the complete datasets for those experiments (including WT, ∆ampG, and ∆LTG strains). (A, B) Mass doubling times from growth curves performed in LB or LB0N inoculated with 10-fold serial dilutions (100–10–6) of saturated overnight cultures. Error bars represent standard deviation of the mean, n ≥ 3. (C) Saturated overnight cultures harboring isopropyl-β-D-1-thiolgalactopyranoside (IPTG)-inducible sacB or empty vector were 10-fold serially diluted (10 and plated on LB + kan50) and LB0N + kan50 ± IPTG (200 μM) + sucrose (0, 1, or 10% W/V) and incubated at 30°C for 24 hr before imaging. Representative of three biological replicates. (D) Sensitivity to Penicillin G (PenG), aztreonam (AZTM), mecillinam (Mec), cefsulodin (Cef), moenomycin (Moeno), MP265, and fosfomycin (Fos) measured as zone of inhibition (ZOI) in a disk diffusion assay. ND, no ZOI around disk. Error bars, standard deviation. Significance determined by one-way ANOVA. ns, p>0.05. Overnight cultures were diluted 1:100 into LB + BADA (100 μM) and grown at 37°C to OD600 0.5 before addition of (E) PenG (100 μg/mL) or (F) Fos (500 μg/mL). Samples were washed and imaged after 3 hr of antibiotic exposure. Fluorescence was normalized to the same intensity threshold as Figure 4—figure supplement 1 and Figure 4—figure supplement 2 for comparison. Representative of two biological replicates. Scale bar = 5 μm. (G, H) Mean fluorescence intensity (AU) for >100 BADA-labeled cells or spheroplasts were measured in ImageJ.
+
 To further dissect PG strand accumulation under these conditions, we visualized PG synthesis and turnover during antibiotic treatment using the cell wall label BADA (Hsu et al., 2017; Kuru et al., 2012). The ∆6 and ∆7 LTG mutants were all readily labeled when grown with BADA (Figure 4—figure supplement 1, Figure 4—figure supplement 2) prior to antibiotic addition. Upon treatment with cell wall-targeting antibiotics, WT V. cholerae degrades its structural, rod-shaped sacculus to ultimately yield stable, cell wall-deficient spheroplasts (Dörr et al., 2015; Weaver et al., 2018). After up to 3 hr of treatment with PenG (100 μg/mL, 20× MIC) and continued incubation with BADA, the ∆6 and ∆7 LTG mutant spheroplasts accumulated strong periplasmic BADA signal compared to the wild-type spheroplasts in which cell wall material is presumably completely degraded and removed from the periplasm (Figure 4B, Figure 4—figure supplement 1). Meanwhile, in the ∆6 and ∆7 LTG mutants, uncrosslinked PG likely accumulates due to aberrant GT activity. Alternatively, degraded PG from the sacculus may be sufficiently retained in the periplasm to be additionally labeled with BADA by L,D-transpeptidases (Kuru et al., 2017) in the ∆6 and ∆7 LTG but not in the WT. However, inhibition of cell wall synthesis upstream of GT activity using fosfomycin (500 μg/mL) (which is expected to result in sacculus degradation without induction of futile cycling) did not result in pronounced BADA accumulation in the periplasm, suggesting that the increasing BADA signal observed during penicillin treatment does not solely reflect retention of labeled debris from the degraded sacculus, but indeed is the result of ongoing cell wall synthesis (Figure 4B, Figure 4—figure supplement 2). The diffuse nature of the BADA signal additionally suggests that the PG in the ∆6 and ∆7 spheroplasts is solubilized debris trapped in the periplasm, as opposed to a thin, intact layer of peripheral PG. At earlier stages of penicillin treatment, it also appeared that the ∆6 and ∆7 LTG mutants were slower to degrade their rod-shaped poles (Figure 4—figure supplement 1).
 
-## PG recycling is not required during periplasmic stress
+### PG recycling is not required during periplasmic stress
 
 The roles for LTGs in PG recycling are well characterized. LTGs are required to digest longer glycan strands down to single disaccharide subunits that can be imported into the cytoplasm via AmpG, a permease that selectively recognizes the anhMurNAc residue generated by LTG activity. Mutants lacking AmpG have been demonstrated to accumulate extracellular monomeric disaccharide LTG-turnover products (Hernández et al., 2020). We therefore asked whether a lack of recycling could account for some of our key phenotypes. However, an ∆ampG mutant exhibited wild-type behavior for growth in LB0N, sacB overexpression, β-lactam resistance, and BADA staining after PenG exposure (Figure 4—figure supplement 3), demonstrating that lack of PG recycling does not promote the LTG-deficient phenotypes observed here.
 
-## LTG insufficiency results in periplasmic PG strand accumulation
+### LTG insufficiency results in periplasmic PG strand accumulation
 
 Why are LTG mutants sensitive to periplasmic accumulation of polymers? Accumulating PG debris released during PG synthesis could, in principle, increase periplasmic osmolarity and/or crowding, explaining defects associated with low-salt conditions and periplasmic polysaccharide accumulation. We therefore sought to quantify soluble, periplasmic PG debris within crude cell lysates (excluding PG released into the growth medium). Canonical PG architecture analysis relies on SDS-boiled sacculi isolated by ultra-centrifugation, which permits sacculus characterization (Figure 1—figure supplement 1D, Supplementary file 1), but ignores solubilized, uncrosslinked (freely diffusing) PG fragments associated with PG turnover processes such as those potentially mediated by LTGs. We thus analyzed fragments that remained soluble after sedimentation of purified sacculi, that is, PG material that freely accumulates within the periplasm (or inside the cell) but is not attached to the cell wall. Since entire periplasmic PG strands cannot be easily resolved using subsequent LC-MS analysis, we also digested the soluble PG fraction with muramidase (to generate smaller monomers suitable for LC-MS detection) and then compared muramidase-treated vs. untreated traces to determine soluble PG architecture (Figure 5A). We first analyzed soluble products of LTG activity (Figure 5BC, Supplementary file 2). AnhMurNAc-tetrapeptide (M4N) was abundant in the wild-type during exponential phase, and predictably, M4N was significantly depleted in the ∆7 LTG-soluble muropeptide profile. Surprisingly, M4N was enriched in the mltG::kan and ∆6 LTG mutants, suggesting that the absence of some LTGs might cause upregulated activity of others.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schema describing muramidase treatment dependence of detection of monomeric or polymeric PG fragments. M4N, anhMurNAc-tetrapeptide; M4, reduced MurNAc-tetrapeptide. (B–E) Overnight cultures of. WT and ∆LTG mutants were diluted 1:100 into LB, grown at 37°C, and harvested at OD600 0.3 (Exp, solid bars) and 1.2 (Stat, striped bars) for soluble PG analysis by LC-MS. MS peak areas for M4N and M4 are shown here, and complete muropeptide profiles can be found in Supplementary file 2. Means compared to WT by unpaired t-tests, n = 3. (F) WT and ∆6 LTG strains harboring a single chromosomal copy of shyA under an isopropyl-β-D-1-thiolgalactopyranoside (IPTG)-inducible promoter were grown from 10–2 inocula for 3 hr (OD600 ~ 1.0) in LB with (ShyA+) or without (ShyA -) 200 μM IPTG at 37°C and harvested for soluble PG analysis by LC-MS. Complete muropeptide profiles can be found in Supplementary file 3. Means compared by unpaired t-test, n = 3. All error bars = standard deviation. ns, p>0.01; **p<0.01; ***p<0.001; ****p<0.0001. ND, not detected in all replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73178/elife-73178-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** WT and ∆6 LTG strains harboring a single chromosomal copy of shyA under an isopropyl-β-D-1-thiolgalactopyranoside (IPTG)-inducible promoter were grown from 10–2 inocula for 3 hr (OD600 ~1.0) in LB ± IPTG (200 μM) at 37°C. Samples were (A) imaged on LB + agarose pads and (B) spot plated in 10-fold serial dilutions (100–10–6) onto LB ± IPTG (200 μM), then incubated at 30°C for 24 hs before imaging. Representative of three biological replicates.
 
 Importantly, MurNAc-tetrapeptide species without anhMurNAc (M4) were detectable in the WT during exponential phase and significantly enriched in the ∆6/∆7 LTG mutants (Figure 5D, Supplementary file 2). By comparing the muramidase-treated vs. untreated samples, we can infer the native state of these M4 and M4N (Figure 5A, B, and D), that is, determine whether these species occur predominantly as monomers or as parts of PG polymers in vivo. Both species were significantly depleted in the muramidase-untreated samples, suggesting that in vivo they are part of polymeric, uncrosslinked PG strands. It is important to note that M4 monomers are not intermediates of cell wall synthesis (which proceeds from a tripeptide directly to pentapeptide due to addition of preformed D-Ala-D-Ala dipeptide) (Barreteau et al., 2008). This, in conjunction with a strong muramidase-treatment-dependence of the abundance of M4, excludes a cytoplasmic origin of this species. It is also interesting to note that, unlike the WT, mltG::kan, and even ∆6 LTG mutant, the ∆7 LTG appears to have a disproportionately large pool of polymeric M4 species (muramidase-dependent) compared to M4N species, suggesting that either the soluble PG strands in the ∆7 LTG mutant are extremely long or perhaps do not ubiquitously terminate in anhMurNAc residues. The abundance of soluble PG strands decreased in stationary phase (Figure 5CE, Supplementary file 2), which suggests that in the LTG-deficient mutants these strands are somehow cleared by either RlpA, an unrecognized LTG, or a cryptic PG hydrolase. Reduction of these uncrosslinked strands in stationary phase is consistent with the alleviation of morphology defects observed as cells exit exponential growth (Figure 2—figure supplement 3).
 
@@ -84,19 +164,19 @@ We next asked how these polymeric, uncrosslinked PG strands might be generated. 
 
 Despite decades of work and a renewed research focus in the last few years, we still lack a fundamental understanding of how bacteria harness both PG synthesis and constant degradation to build and maintain an essential and dynamic wall structure that is able to withstand a high internal turgor pressure. Even the basic physiological function of many cell wall cleavage enzymes (‘autolysins’) remains unknown. The exact contributions of LTGs to cell growth, for example, have remained elusive, mainly due to the high level of apparent redundancy of these enzymes, which hampered classical genotype-phenotype association analyses. While circumstantial evidence abounds, no collective physiological characterization of essential LTG function has been conducted in any organism, and even cases of demonstrated synthetic lethal relationships are rare and rely on indirect evidence (inability to delete LTG genes) (Heidrich et al., 2002; Chaput et al., 2007; Scheurwater and Clarke, 2008). The V. cholerae ∆6 and ∆7 LTG mutants described here provide a vital platform for exploring both the collective and individual contributions of LTGs to bacterial viability.
 
-## Conserved LTGs are not functionally equivalent
+### Conserved LTGs are not functionally equivalent
 
 In this study, we confirm that LTG enzymatic activity is essential for growth and division. We further demonstrate that some functional redundancy exists in V. cholerae between diverse LTG families, as has been observed in other bacteria (Atassi, 2017; Dik et al., 2017; Mueller et al., 2019). Members of LTG families 1A (Slt70), 1D (MltD), and 6A (RlpA) can support growth independent of all other natively encoded LTGs from families 1B, 1E, 2A, 3A, and 5A. Certain V. cholerae LTGs additionally exhibit complementary genetic relationships in the absence of all other LTGs, implying there are at least two essential roles for LTGs. For example, while neither MltG, MltA, MltB, nor MltC can support growth on their own, strains expressing the MltG/ MltA, MltG/MltB, or MltG/MltC pairs are each viable. Surprisingly, and importantly, essential LTG activities may not require conserved protein-protein interactions as suggested by the viability of a V. cholerae mutant expressing non-native E. coli MltE as its sole LTG. Scheurwater and Clarke unsuccessfully but informatively attempted to inactivate mltF in an E. coli ∆6 LTG (∆mltABCDE ∆slt70), suggesting that the essentiality of LTG activity is conserved between E. coli and V. cholerae, and that MltF and MltG may not be functionally redundant in E. coli (Scheurwater and Clarke, 2008). In contrast, mltF inactivation is not synthetically lethal with ∆mltABCD ∆slt70 in V. cholerae. In fact, restoring MltF expression in the ∆6 and ∆7 LTG background is toxic, indicating that V. cholerae and E. coli exhibit different genetic relationships between homologs of the same LTGs. This is perhaps most strongly exemplified by the conservation of RlpA in both species, where E. coli RlpA has no detectable LTG activity (Jorgenson et al., 2014), yet V. cholerae RlpA can perform essential functions as the sole LTG. Recently, the hydrolytic enzyme DigH in E. coli was shown to be functionally similar to LTGs by contributing to the resolution of septal PG during daughter cell separation (Yakhnina and Bernhardt, 2020). The activity of DigH (of which V. cholerae does not possess a strong homolog) may explain why E. coli does not appear to require RlpA LTG activity; this LTG-like physiological role for a hydrolytic enzyme also suggests that we may need to look beyond LTGs to fully address the roles for glycosidic bond cleavage within PG. Another recent example of glycosidases serving as functional analogues includes MpgA from Staphylococcus aureus, which shares enough homology with MltG to be identified bioinformatically as a YceG-family LTG but harbors a single active site mutation to impart a muramidase mechanism of PG cleavage (Taguchi et al., 2021).
 
 The functional redundancy of LTGs is also likely the root of an apparent paradox. Release of new PG strands from undecaprenyl pyrophosphate should be an essential function as anchoring of PG to the inner membrane is toxic (Suzuki et al., 2002) and PG release is likely necessary for lipid carrier recycling. Yet MltG, the highly conserved ‘PG terminase,’ or more generally, ‘PG release factor,’ which associates with PG synthetic complexes to release new strands, is not essential. MltG can be inactivated in wild-type V. cholerae (and E. coli) without significant consequence, but our ∆7 LTG (mltG-null) mutant lost viability upon sustained growth in exponential phase in LB. It is therefore likely that other LTGs can partially complement for PG release activity. The dilution-dependent ∆7 LTG growth defect further suggests that either RlpA has at least partial PG release activity and/or that during brief growth in exponential phase PG release activity is nonessential. MltG essentiality (or near-essentiality) can thus perhaps only be appreciated in a multiple LTG background under conditions where PG release activity is expected to be most important. This is also evidenced by the increased sensitivity of the ∆7 LTG mutant to hypo-osmotic conditions that cannot be rescued via the same mechanisms that rescue the ∆6 LTG mutant, that is, inactivation of OPG synthesis, as well as hypersensitivity to MreB inhibitor MP265. All of these defects point to a unique, MltG-dependent, conditionally essential LTG function. While this study has focused on clearance of soluble PG debris, an activity that would perhaps only be critical in organisms with a membrane-confined periplasmic space, PG release factors analogous in function to MltG are broadly conserved even in Gram-positive organisms, additionally demonstrating a necessity for further investigation into the role of PG release in bacterial cell wall homeostasis.
 
-## LTGs manage the periplasmic environment
+### LTGs manage the periplasmic environment
 
 By analyses of soluble PG, we discovered that even wild-type V. cholerae accumulates loose strands of uncrosslinked PG of periplasmic origin (detected as muramidase-dependent, soluble M4 products) and that production of these strands is dependent on the EP ShyA. PG strands appear to accumulate to detrimental levels in the ∆6 and ∆7 mutants, and we thus propose that processing soluble PG is a major collective function of LTGs. PG strand accumulation induces hypersensitivity to other polymeric sugars in the periplasm, such as OPGs, SacB-generated levans, and β-lactam-induced futile cycling products. Since these hypersensitivities are not shared by a ∆ampG mutant, previously demonstrated to accumulate small PG monomers, this polysaccharide toxicity may arise from the fact that these large polymers (PG, OPGs, or levans) cannot diffuse out through OM porins, accumulating in a growth and/or substrate-dependent manner. This would inappropriately increase the osmolarity and/or cause excessive crowding (Sochacki et al., 2011) of the periplasm to interfere with normal growth-related processes, as exemplified by the mild division defect of the V. cholerae LTG-deficient mutants.
 
 While periplasmic crowding can clearly occur in Gram-negative bacteria due to their diffusion-limiting OM, it is intriguing to consider implications for Gram-positives, where LTGs are likewise conserved, and the cell wall may not provide a meaningful diffusion barrier to long PG strands. We propose three possible (and testable) scenarios for the role of LTGs in Gram-positive bacteria. For example, only PG release activity might be essential in Gram-positives. It is also conceivable that LTGs are nonessential in Gram-positive bacteria. Lastly, ‘periplasmic’ crowding may in fact be detrimental in Gram-positive bacteria: B. subtilis PG, for example, is very long chained, and it is conceivable that PG may constitute a reasonable diffusion barrier against such long strands.
 
-## Broader implications for LTGs in PG dynamics
+### Broader implications for LTGs in PG dynamics
 
 Our data suggest that the most important roles for LTGs may not include ‘making space’ for new PG insertion, as has been assumed for fundamental models of PG synthesis. More likely, LTGs clear the periplasm of most PG debris generated by EPs during normal growth by facilitating either recycling or release of small fragments into the environment (Figure 6). As such, this collectively essential function of LTGs may not be tied to a direct influence on PG synthesis. Importantly, uncrosslinked strands are not a deviant feature unique to the LTG-deficient mutants nor β-lactam treatment (though they become more apparent under these conditions) as they were also detectable in the wild-type during normal growth. Detection of EP-dependent, uncrosslinked PG strands suggests that EP activity might be temporally separated from LTG-mediated turnover of those PG strands. This is seemingly contrary to pervasive models proposing a synchronized synthetic/autolytic complex that digests old PG while simultaneously building new PG. If such a complex exists, we propose that LTGs collectively maintain an important role complementary to it, but not inevitably as part it.
 
@@ -108,13 +188,303 @@ Lastly, while high accumulation of PG strands is toxic, maintaining a small pool
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Vibrio cholerae)</td>
+      <td>mltA</td>
+      <td>UniProtKB</td>
+      <td>vc_2312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>mltB</td>
+      <td>UniProtKB</td>
+      <td>vc_1956</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>mltC</td>
+      <td>UniProtKB</td>
+      <td>vc_0450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>mltD</td>
+      <td>UniProtKB</td>
+      <td>vc_2237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>mltF</td>
+      <td>UniProtKB</td>
+      <td>vc_0866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>mltG</td>
+      <td>UniProtKB</td>
+      <td>vc_2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>rlpA</td>
+      <td>UniProtKB</td>
+      <td>vc_0948</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>slt70</td>
+      <td>UniProtKB</td>
+      <td>vc_0700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>shyA</td>
+      <td>UniProtKB</td>
+      <td>vc_a0079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>opgH</td>
+      <td>UniProtKB</td>
+      <td>vc_1287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>ampG</td>
+      <td>UniProtKB</td>
+      <td>vc_2300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(V. cholerae)</td>
+      <td>lacZ</td>
+      <td>Kegg2 Gene DB</td>
+      <td>vc_2338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>EcrlpA</td>
+      <td>UniProtKB</td>
+      <td>b0633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli)</td>
+      <td>EcmltE</td>
+      <td>UniProtKB</td>
+      <td>b1193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Pseudomonas aeruginosa)</td>
+      <td>ParlpA</td>
+      <td>UniProtKB</td>
+      <td>pa4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Bacillus subtilis)</td>
+      <td>sacB</td>
+      <td>UniProtKB</td>
+      <td>bsu34450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(V. cholerae)</td>
+      <td>El Tor N16961; wild-type</td>
+      <td>PMID:243277</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>∆mltABCDF ∆slt70; ∆6 LTG</td>
+      <td>PMID:31286580</td>
+      <td></td>
+      <td>See Supplementary file 4; request from Doerr Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>∆mltABCDF ∆slt70 mltG::stop;∆7 LTG</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 4; request from Doerr lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mltG::stop</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 4; request from Doerr Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCVD442</td>
+      <td>PMID:15109831</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTOX5</td>
+      <td>PMID:31201277</td>
+      <td>Addgene# 127450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAM224; pGP704-kanR</td>
+      <td>PMID:2836362</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAM299</td>
+      <td>PMID:25631756</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJL1</td>
+      <td>PMID:24348240</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>GTX59788</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IRDye 800CW secondary</td>
+      <td>LI-COR</td>
+      <td>926-32211</td>
+      <td>(1:16,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RpoA (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>663104</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IRDye 800CW secondary</td>
+      <td>LI-COR</td>
+      <td>926-32210</td>
+      <td>(1:16,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin G potassium salt</td>
+      <td>Fisher Scientific</td>
+      <td>CAS:113-98-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aztreonam</td>
+      <td>Fisher Scientific</td>
+      <td>CAS:78110-38-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mecillinam</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:32887-01-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cefsulodin sodium salt hydrate</td>
+      <td>TCI Chemicals</td>
+      <td>CAS:1426397-23-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S-(4-Chlorobenzyl) Isothiouronium chloride (MP265)</td>
+      <td>Chem-Impex International</td>
+      <td>CAS:544-47-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphomycin disodium salt (fosfomycin)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:26016-99-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicrobeJ</td>
+      <td>PMID:27572972</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Oufti</td>
+      <td>PMID:26538279</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BADA</td>
+      <td>PMID:28989665</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 V. cholerae strains in this study are derivatives of V. cholerae WT El Tor strain N16961 (Heidelberg et al., 2000). Construction of plasmids and mutant V. cholerae strains is described in the next section along with a table of strains and plasmids used in this work (Supplementary file 4).
 
 Strains were grown at 30 or 37°C in Luria-Bertani (LB-Miller, Fisher Bioreagents# BP97235) with or without 1% NaCl, 1% sucrose, or 10% sucrose, or in M9 minimal media + 0.4% glucose (Cold Spring Harbor Protocols) where indicated in the figure legends. Growth media were supplemented with kanamycin (50 μg/mL), ampicillin (25 μg/mL), or chloramphenicol (5 μg/mL) in plates and overnight cultures when needed to maintain plasmids or chromosomal integration of suicide vectors. Genes under Para and Ptac regulation were induced with 0.4% L-arabinose or 200 μM isopropyl-β-D-1-thiolgalactopyranoside (IPTG), respectively.
 
-## Construction of plasmids and strains
+### Construction of plasmids and strains
 
 A summary of all strains, plasmids, and primers used in this study can be found in Supplementary file 4. E. coli DH5α λpir was used for general cloning, while E. coli SM10 or MFD λpir were used for conjugation into V. cholerae (Ferrières et al., 2010). Plasmids were constructed using Gibson assembly (Gibson et al., 2009) with the exception of plasmids expressing rlpA∆SPOR or rlpAD145A, which were generated by site-directed mutagenesis of the parent wild-type sequence rlpA plasmids. All Illumina whole-genome sequencing and variant calling for ∆6 LTG and ∆7 LTG strain verification or suppressor identification were performed by the Microbial Genome Sequencing Center (MiGS, Pittsburg, PA).
 
@@ -126,23 +496,23 @@ Ectopic chromosomal expression from IPTG-inducible Ptac was achieved through use
 
 Suicide vector pAM299 (Möll et al., 2015) was used to place rlpA under Para control at its native locus for RlpA depletion experiments. pAM299 was introduced via conjugation and selection for single-crossover events on LB + kanamycin (50 μg/mL) + streptomycin. IPTG-inducible overexpression of rlpA-mCherry fusions for localization studies and sacB for levan toxicity assays was achieved using pHL100 (Möll et al., 2015) or its conjugatable derivative pHL100mob. The sacB gene was amplified from pCVD442.
 
-## Gene insertion/disruption assay for gene essentiality
+### Gene insertion/disruption assay for gene essentiality
 
 The suicide vector pAM224 was used to disrupt genes through single-crossover integration events. 300 bp internal regions in the first third of each respective orf (towards the 5′ end) were cloned into pAM224 using methods described above. Quantitative conjugation was performed by washing, mixing, and pelleting 500 μL of recipient V. cholerae and donor MFD λpir. Pellets were resuspended in 50 μL of LB, spotted onto a 45 μm filter on LB + 600 μM DAP, and incubated at 37°C for 4 hr. Cells were recovered from the filters into 1 mL of LB by vigorous vortexing, and 20 μL of the suspension was reserved for 10-fold serial dilution and spotting onto LB + streptomycin (200 μg/mL) incubated at 30°C to calculate total CFU/mL for all viable V. cholerae. The remaining suspension was pelleted and plated on LB + kanamycin (50 μg/mL) + streptomycin incubated at 30°C. Viable CFU/mL were calculated, and kanamycin resistance was verified by patching 50 colonies back onto LB + streptomycin ± kanamycin (all kanR colonies were patched if fewer than 50 colonies were recovered). Transformation efficiency was calculated as a ratio of kanR CFU to all strepR CFU.
 
-## Western blot analysis
+### Western blot analysis
 
 Expression of translational mCherry fusions was induced in WT V. cholerae with 1 mM IPTG in LB and grown to OD600 ~ 0.6. Cells were harvested by centrifugation (9500 × g, 15 min) at room temperature and resuspended in 1% SDS + 10 mM dithiothreitol (DTT) lysis buffer. Resuspended cells were incubated at 95°C for 3 min, then sonicated 4 × 5 s at 20% amplitude. Standard Western blots against mCherry were performed using polyclonal mCherry antibody (GeneTex #GTX59788) and detection by IRDye 800CW secondary antibody (LI-COR #926-32211). After imaging for mCherry, the same blots were then reincubated with monoclonal RpoA antibody (BioLegend #663104) detected by IRDye 800CW secondary antibody on an Odyssey CLx imaging device (LI-COR).
 
-## Growth rate experiments
+### Growth rate experiments
 
 Saturated overnight cultures used for growth curve experiments were washed once and resuspended in final growth media, normalizing to OD600 2.0. Normalized cell suspensions were serially diluted into 200 μL growth media and incubated in a Bioscreen growth plate reader (Growth Curves America) at 37°C with random shaking at maximum amplitude, and OD600 recorded at 5 min intervals. Calculations of doublings per hour (DPH) were performed in R as previously described (Mueller et al., 2019). Briefly, logarithmic regressions were fitted to sections of growth curves with >5 consecutive values corresponding to OD600 0.03–0.1 (for 10–2 diluted inocula) or OD600 0.01–0.1 (for <10–3 diluted inocula). Logarithmic regressions of ≥3 replicates with fit value r2 >0.95 were used to estimate mean DPH for each strain in each growth condition. Growth rates were not calculated for samples that did not reach OD600 0.1 either through absence of detectable growth or lysis prior to reaching OD600 0.1. Growth rates were also not calculated for replicates that were subsequently determined to be suppressors or grew due to irreproducible adaptation. Means within strains between dilution factors and between strains within dilution factors were compared using a two-way ANOVA and Tukey HSD post-hoc test.
 
-## Morphology analysis by microscopy
+### Morphology analysis by microscopy
 
 Strains were grown as described in the figure legends and imaged without fixation on LB 0.8% agarose using a Leica DMi8 inverted microscope. Phase-contrast images were analyzed using MicrobeJ. Default parameter settings were applied, and features (septa) were defined as 25% constriction of cell width. Cell outlines were manually edited as needed.
 
-## Sacculus composition analysis
+### Sacculus composition analysis
 
 PG composition from insoluble sacculi samples was analyzed as described previously with some modifications (Hong, 2016; Desmarais et al., 2013). Briefly, cells were harvested and resuspended in boiled 5% SDS for 1 hr. Sacculi were repeatedly washed by ultracentrifugation (110,000 rpm, 10 min, 20°C) with MilliQ water until SDS was totally removed. Samples were treated with 20 μg Proteinase K (1 hr, 37°C) for removal of Braun’s lipoprotein, and finally treated with muramidase (100 μg/mL) for 16 hr at 37°C. Muramidase digestion was stopped by boiling, and coagulated proteins were removed by centrifugation (14,000 rpm, 15 min). For sample reduction, the pH of the supernatants was adjusted to pH 8.5–9.0 with sodium borate buffer and sodium borohydride was added to a final concentration of 10 mg/mL. After incubating for 30 min at room temperature, the sample’s pH was adjusted to pH 3.5 with orthophosphoric acid.
 
@@ -150,7 +520,7 @@ UPLC analyses of muropeptides were performed on a Waters UPLC system (Waters Cor
 
 Relative total PG amount was calculated by comparison of the total intensities of the chromatograms (total area) from three biological replicas normalized to the same OD600 and extracted with the same volumes. Muropeptide identity was confirmed by MS/MS analysis using a Xevo G2-XS QTof system (Waters Corporation) (see next section for details). Quantification of muropeptides was based on their relative abundances (relative area of the corresponding peak) normalized to their molar ratio. Analyses were performed in biological triplicates, and means were compared with unpaired t-tests.
 
-## Soluble peptidoglycan analysis
+### Soluble peptidoglycan analysis
 
 Sample preparation of soluble PG samples was performed as follows. Bacteria cultures were harvested by centrifugation (4000 rpm, 20 min, 4°C). Cell pellets were gently resuspended and washed twice with ice-cold 0.9% NaCl solution. After pelleting the cells again by centrifugation, they were resuspended in 1 mL water and boiled for 30 min. Samples were centrifuged again to remove cell debris at 14,000 rpm for 15 min, and soluble fractions were transferred to new tubes. Next, samples were filtered using 0.2 μm pore size filters. Half of the sample was treated with muramidase (100 μg/mL) for 16 hr at 37°C. Muramidase digestion was stopped by boiling, and coagulated proteins were removed by centrifugation (14,000 rpm, 15 min). Finally, sample pH was adjusted to pH 3.5 with orthophosphoric acid. When needed, samples were diluted or concentrated by speed vacuum.
 
@@ -158,10 +528,10 @@ Soluble muropeptides were detected and characterized by MS/MS analysis using a X
 
 An in-house compound library built in UNIFI was used for detection and identification of muropeptides. Subsequent identification and confirmation of each muropeptide were performed by comparison of the retention times and mass spectrometric data to known samples. Quantification was performed by integrating peak areas from extracted ion chromatograms of the corresponding m/z value of each muropeptide and normalized to their molar ratio. Soluble muropeptide analyses were performed in biological triplicates, and means were compared with unpaired t-tests.
 
-## Antibiotic sensitivity
+### Antibiotic sensitivity
 
 For zone of inhibition assays, a lawn of saturated overnight culture was spread on an LB plate and allowed to dry for 15 min. Filter disks (6 mm) were dropped with 5 μL of antibiotic solutions (Supplementary file 4) onto the lawns and incubated at 37°C for 24 hr before measurements. Means were compared with a one-way ANOVA and Tukey post-hoc test.
 
-## Fluorescent D-amino acid PG labeling
+### Fluorescent D-amino acid PG labeling
 
 Saturated overnight cultures were diluted 1:100 into LB with 100 μM BADA (Hsu et al., 2017) at 37°C for 1.5 hr before addition of antibiotic. Labeled samples were washed one time in LB before imaging on LB 0.8% agarose pads using a Leica DMi8 inverted microscope set for 490 nm excitation.

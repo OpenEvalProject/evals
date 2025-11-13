@@ -19,9 +19,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Cancer Research UK Cambridge Institute, University of Cambridge, Li Ka Shing Centre Cambridge United Kingdom
-2. https://ror.org/01q496a73 The MRC Weatherall Institute of Molecular Medicine Oxford United Kingdom
-3. https://ror.org/00bvhmc43 Centro Nacional de Investigaciones Oncológicas, C/Melchor Fernández Almagro Madrid Spain
+1. Cancer Research UK Cambridge Institute, University of Cambridge, Li Ka Shing Centre Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. The MRC Weatherall Institute of Molecular Medicine Oxford United Kingdom ([ROR:01q496a73](https://ror.org/01q496a73))
+3. Centro Nacional de Investigaciones Oncológicas, C/Melchor Fernández Almagro Madrid Spain ([ROR:00bvhmc43](https://ror.org/00bvhmc43))
 
 † Corresponding author
 
@@ -41,21 +41,53 @@ To address these challenges, we developed HGSOC PDOs and characterized their gen
 
 ## Results
 
-## HGSOC organoid culture derivation
+### HGSOC organoid culture derivation
 
 To establish HGSOC organoids we used cells obtained from patient-derived ascites (n=43), solid tumors (n=10), and patient-derived xenografts (n=15) (Figure 1a). Most ascites cultures were derived from patients with recurrent HGSOC and clinical summaries are provided in Figure 1—figure supplement 2 and Supplementary file 1. We tested the effect of two published (Kopper et al., 2019; Kessler et al., 2015) media compositions on 15 independent cultures and found similar PDO viability (Figure 1—figure supplement 1a). We, therefore, performed subsequent derivations using the less complex fallopian tube media (Kessler et al., 2015). The efficiency of establishing PDOs was dependent on the type of tissue sample used for derivation (p<0.0001, log-rank test; n=86; Figure 1—figure supplement 1b) and the highest success rate for short-term cultures (passage number between 1 and 4) was obtained using ascites and dissociated xenograft tissues (65%). We defined continuous PDO cultures as those that could be serially passaged >5 times followed by cryopreservation and successful re-culture; all data in this paper was generated between passages 5–15. Using these criteria, PDOs were established for 15/18 organoid lines (PDO16, PDO17, and PDO18 were finite culture models). Four PDOs were able to grow as continuous 2D cell lines in conventional tissue culture media (CIOV7 from PDO1; CIOV5 from PDO2; CIOV4 from PDO3; and CIOV6 from PDO7).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of the sample collection workflow used in this study. (b) Stacked bar plots show copy number signature activities ranked by signature s1 (PDO16, PDO17, and PDO18 were not continuous models). Brackets indicate PDOs derived from the same individual. (c) Stacked bar plots show copy number signature activities for organoids and the matched ascites sample from which they were derived. (d) Unsupervised hierarchical clustering of copy number signature for PDO and 692 high-grade serous ovarian carcinoma (HGSOC) cases using Aitchison’s distance with complete linkage function. Stacked barplots in the lower panel show copy number signature activities.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Survival analysis based on the type of media used to grow organoids. Two media were tested: a formulation used in the Clevers lab for growing ovarian cancer tissues and a formulation used to grow fallopian tube tissue in the Meyers’s lab. p-value was derived from the log-rank test. (b) Kaplan-Meier survival curves showing the association between the type of tissue sample used for organoid derivation and survival of cultures. Survival probability is displayed as a function of time in days. Shading indicates the 95% confidence interval for each group. Hazard ratio and p-value were obtained from a log-rank test. Crosses correspond to censored observations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Patient timeline summarising clinical data: CA125 levels, chemotherapy regimens, and computerized tomography (CT) scans. CT scan outcomes are represented as follows: Baseline as the first scan before treatment, PR as partial response, CR as complete response, SD as stable disease, and PD as progressive disease. Treatment lines are represented in different colors (information on the specific treatment regimens is available in Supplementary file 1) and the patient date of death is shown as DOD. Date of ascites collection for organoid derivation is shown with the name of the organoid.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Plot showing the percentage of mutations found within each gene across all samples (b) Oncoplot showing mutation status on a specific gene panel. P represents pathogenic mutation, LP - likely-pathogenic, and LB - likely-benign.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Tissue and PDO sections were both Hematoxylin and Eosin and p53 stained. High grade serous ovarian carcinoma tissues contain specific structures that PDOs mimicked (e.g. PDO1 showing glandular and micropapillary growth patterns). The mutant p53 prevalence observed in high-grade serous ovarian carcinoma (HGSOC) patients was reflected in the organoids with only one model displaying wild-type p53 expression patterns, some with no expression and most of them with intense nuclear staining. Microscope lens with 20x magnification was used for both tissues and organoids. Scale bars  = 200 µm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** PDOs were implanted peritoneally into immunodeficient mice and disease progression was monitored by weighing the mice. Some mice developed ascites while others had disease in the liver or peritoneum. Haematoxylin and Eosin (H&E) and p53 immunostained sections are shown for each tissue collected. Scale bars = 200 µm.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Absolute copy number profiles at 30 kb bin size are presented for all the PDOs (PDO16, PDO17, and PDO18 were not continuous models).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Comparison of genomic features between patient-derived organoid (PDO) and high-grade serous ovarian carcinoma (HGSOC) cases in public data sets (a and b) Ordered barplots show the distribution of the number of copy number segments and ploidy for organoids (labeled black bars) and 692 HGSOC tumors from the publicly available datasets of TCGA, PCAWG, and BriTROC-1 (pink bars) (c) Tumor datasets used for comparison to PDOs (green bars) included TCGA (purple), BriTROC (orange) and PCAWG (blue). All genomic features are presented in a log scale. Welch Two Sample t-test p-value on log-transformed data: number of breakpoints per 10 MB (p=0.61), segment size (p=0.45), oscillating copy number (p=0.72), number of breakpoints per chromosome arm (p=0.60), number of changepoints (p=0.85), and copy number of the segments (p=0.73).
 
 PDOs were screened for mutations enriched in HGSOC using an in-house tagged amplicon sequencing panel (Figure 1—figure supplement 3 and Supplementary file 2) and were highly comparable to mutational profiles and p53 immunostaining from the original patient sample (Figure 1—figure supplement 4). All PDOs had a TP53 mutation allele fraction between 80–95% essentially excluding co-culture of non-cancer cells. Pathogenic somatic BRCA1 or BRCA2 mutations were present in PDO4, PDO7, PDO8, and PDO9. Germline DNA sequencing for 11 of the PDO donors (Supplementary file 3) showed BRCA1/2 germline mutations with unknown clinical significance or benign variants in patients OV04-297 (PDO13), OV04-409 (PDO14), and OV04-627 (PDO5 and PDO6).
 
 To assess the feasibility of the PDOs for in vivo modeling, we implanted eight PDO models into immunodeficient mice using intraperitoneal injection to simulate peritoneal metastasis. All eight PDOs efficiently established PDX models and 7/8 resulted in solid implants on peritoneal surfaces and/or liver infiltration (Figure 1—figure supplement 5).
 
-## Genomic characterization of patient-derived organoids
+### Genomic characterization of patient-derived organoids
 
 We characterized the genomic landscape of the PDOs using sWGS and derived copy number signatures to characterize the diversity of causes of CIN (Figure 1b and Figure 1—figure supplement 6). We used our published framework for copy number signature extraction (Macintyre et al., 2018) based on non-negative matrix factorization (NMF) of feature-summarized copy number data to find the mutational processes behind the observed copy number profiles. We used the seven previously identified copy number signatures in ovarian cancer that represent different putative causes of CIN: s1: mitotic errors, s2: replication stress causing tandem duplication, s3 and s7: homologous recombination deficiency, s4: whole-genome duplication, s5: unknown etiology leading to chromothripsis, and s6: replication stress leading to focal amplification. The finite lines PDO16, PDO17, and PDO18 are included here for comparison only.
 
 PDO1 and PDO11 showed high levels of signature s1 and are thus appropriate models of mitotic errors. PDO4 exhibited high activity of a signature of replication stress-induced tandem duplication (s2) but did not have a canonical CDK12 mutation suggesting this may represent an alternative model of tandem duplication (see also below) (Menghi et al., 2016; Willis et al., 2017). Thirteen of the organoids showed evidence of s3 and can be considered as having HRD. Of these, pathogenic somatic BRCA1 and BRCA2 mutations were present in PDO4, PDO7, PDO8, and PDO9 (Figure 1—figure supplement 3 and Supplementary file 2); a novel non-synonymous secondary mutation was observed in BRCA1 (c.1367T>C) in PDO8 which was cultured after progression on PARP inhibitor therapy (paired with PDO7); BRCA1/2 mutations were not detected in the remaining PDOs with s3 (PDO2, PDO3, PDO10, PDO12, PDO15) suggesting these may be models of other mechanisms of HRD. PDO1 and PDO11 showed low signature s3 activity making them suitable models for HRP ovarian cancer. Ten of the PDOs showed s4 activity making them suitable to study the effects of WGD. Signature s5, with unknown etiology that results in chromothripsis, had generally low activity in all PDOs consistent with previous observations suggesting that canonical chromothripsis is a rare event in HGSOC (Cortés-Ciriano et al., 2020; Zack et al., 2013; Patch et al., 2015). s6, a signature of replication stress resulting in focal amplification, was high in PDO3, PDO5, PDO6, PDO9, and PDO14, indicating these are good models to study both the cause and consequence of focal amplification events. Finally, a number of organoids showed s7 making them good models to study the effects of HRD following WGD.
 
-## Organoids represent the spectrum of human high-grade serous ovarian cancers
+### Organoids represent the spectrum of human high-grade serous ovarian cancers
 
 We next compared copy number signatures from donor patient tissues and matched PDO (Figure 1c) and found that they were highly consistent except for PDO12 (OV04-467). We tested for the differential abundance of the signatures between donor samples and matching PDO using previous described statistical modeling (Cheng et al., 2022). For the patients who contributed two samples, a single sample was selected at random. The results indicated no differential abundance (Wald test on log-ratios of signatures, p-value=0.99 using a model with no correlations between signatures given that the total number of observations is low). For PDO12, the parental CDK12 mutation present in the ascites specimen was not recovered after culture, suggesting selection for a subclonal population with distinct copy number signatures (Supplementary file 2).
 
@@ -63,9 +95,17 @@ Both PDO culture and derivation of PDX models may negatively select against spec
 
 We next clustered copy number activity profiles (Figure 1d) from TCGA, PCAWG, and BriTROC (n=692) and compared these with the PDO profiles. Unsupervised hierarchical clustering of the clinical samples showed two main groups with the major group characterized by high activities for s4 and low activities for s3 suggesting frequent WGD and consistent with previous observations (Aaltonen et al., 2020; Cheng et al., 2022). The smaller group was predominantly composed of s1 mitotic errors and s3 HRD and may represent near diploid tumors. PDOs were well distributed across the two groups but there were three small subclusters that were underrepresented: those presenting a lack of s2 and s4, a lack of s2 and s3, and a lack of s3 together with high s4. PDOs derived from the same patient (PDO3 and PDO9, PDO5 and PDO6, and PDO7 and PDO8) were clustered together. Taken together, these data indicate that PDOs represents the copy number mutational landscape observed in HGSOC patients.
 
-## Effect of CNAs at the gene expression level
+### Effect of CNAs at the gene expression level
 
 To understand how PDO absolute copy number alterations (CNAs) could alter the gene expression of corresponding genes, we first tested whether PDOs displayed known HGSOC-associated amplifications (Figure 2a) and which genes were highly amplified when averaged over all PDOs (Figure 2b), including the well-characterized copy number drivers MYC and CCNE1. We performed RNA-Seq on the PDOs and compared their transcriptome to the TCGA primary tissue cohort and found highly similar cell-autonomous transcriptional profiles. As expected, we observed significant under-expression of genes relating to the tumor microenvironment (Figure 3a) which is not represented in the organoid cultures. Principal component analysis on the scaled and centered DESeq2 counts showed that PDOs derived from the same patient PDO5 and PDO6 - the transcriptome of which is nearly identical - cluster together, but that PDO7 and PDO8, which are distinguished by a secondary BRCA1 mutation following progression after PARP therapy, differ from each other (Figure 3b). As PDOs are characterized by high TP53 allele fractions in line with those seen in patient tumors, strongly indicating that they mostly consist of tumor cells, we assessed the correlation between gene copy number changes and their expression using two metrics. The first metric shows whether, on average, PDOs with lower copy number values in genes have a lower gene expression, in order to capture nonlinear relationships between copy number and gene expression. We computed the average gene expression values for the three PDOs of the lowest copy number and calculated the fraction of remaining PDOs with higher gene expression values than this average (Figure 3c). The second metric used was the R2 of the correlation between DESeq2 count values and absolute copy number in each gene across PDOs. For both metrics, higher values indicate stronger evidence for copy number-driven gene expression (Figure 3d). The most highly variable areas in the genome are located within chromosomes 8, 10, 11, 12, 17, and 1 (Figure 2—figure supplement 1a), where we found the most highly correlated genes. MYC showed a good correlation between copy number and gene expression and was also the gene with the highest absolute copy number in our PDO cohort, followed by ZWINT (Figure 2b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig2-v1.jpg)
+
+**Figure 2.:** (a) Absolute gene copy number for a set of important high-grade serous ovarian cancer genes. (b) Absolute gene copy number for the most amplified genes when averaged across all patient-derived organoids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Scatterplot assessing the agreement between copy number and gene expression in genes of high copy number variability across different chromosomes. For each gene, we computed the average expression of the three organoids with the lowest copy number value where the metric is the fraction of remaining organoids that have higher gene expression value than this average. The second metric we computed is the R2 value. In both cases, higher values indicate greater agreement between copy number and gene expression between organoids across different chromosomes. (b) Genes with the highest values for both metrics have been labeled in red across different chromosomes and the top 20 are labeled in blue. Chromosomes 14, 15, 16, 18, and 21 had no highly variable regions. Chromosomes 2 and 13 contained highly variable regions with low correlation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig3-v1.jpg)
 
@@ -73,13 +113,37 @@ To understand how PDO absolute copy number alterations (CNAs) could alter the ge
 
 As defects in DNA damage response pathways are clinically important for treatment, we tested for enrichment scores across the PDOs. PDO10 and PDO15 have a high enrichment score for homologous recombination deficiency (Figure 3e), present nearly identical signature activities, and are the two PDOs with the highest s7 activity (Figure 1b).
 
-## PDO drug screening
+### PDO drug screening
 
 We compared drug sensitivity between five PDOs and their parental uncultured patient-ascites. Using 12 anti-cancer compounds dispensed in an 8-point half-log dilution series, we found a moderate to a high correlation between the drug area under the curve (AUC) of PDO and their corresponding patient-derived ascites (Figure 4a). We then tested all the PDOs using the standard of care chemotherapy (oxaliplatin, paclitaxel, gemcitabine, and doxorubicin) (Figure 4b) as we observed no effect with the targeted therapies at the concentrations used in this study. Based on the median AUC we divided PDOs into two groups of samples passing RNA-Seq quality control: sensitive (PDO1, PDO2, PDO3, PDO11, PDO12) and resistant (PDO5, PDO6, PDO7, PDO8, PDO10) (Figure 4—figure supplement 1) and performed differential gene expression and pathway analysis (Figure 4c) to infer mechanisms of resistance. Sensitive PDOs showed increases in MYC targets and interferon alpha and gamma responses while resistant PDOs had an increase in hypoxia, KRAS signaling, and epithelial-mesenchymal transition (EMT) pathways. We compared both groups for ploidy and number of copy number segments and we did not observe any significant differences (the average number of segments is 167 for sensitive and 183 resistant PDOs, and the average ploidies are 2.8 for sensitive and 2.46 for resistant PDOs; p-value=0.7441 and p-value=0.2374, respectively; Welch Two Sample t-test).
 
-## Organoid intratumoral heterogeneity
+![Figure 4.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig4-v1.jpg)
+
+**Figure 4.:** (a) Correlation of drug response between uncultured patient cells and the patient-derived organoids (PDOs) derived from them using 12 compounds (PDO14: cor. 0.49, p-value 0.1; PDO11: cor. 0.82, p-value 0.001; PDO3: cor. 0.995, p-value 2.3e-11; PDO10: cor. 0.81, p-value 0.001; PDO12: cor.0.32, p-value 0.31). (b) Organoid drug responses to standard-of-care chemotherapies. The observed dose-response relationships were not always compatible with the Hill dose-response model assuming a sigmoidal decrease so that five-parameter logistic model fits were preferred, explaining area under the curve (AUC) estimates greater than one. Sensitive PDOs are labeled with a blue dot and resistant PDOs with a red one. (c) Significant pathways based on adjusted p-value (padj) after performing Gene Set Enrichment Analysis (GSEA) with rank based on significance level between the two PDO groups sensitive and resistant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Plot shows area under the curve (AUC) (y-axis) of each drug (lines and points) for each sample (x-axis) ordered in increasing mean AUC values. Black line reports the mean AUC and the vertical dotted line suggests a split by mean AUC. The blue dashed line indicates the standard deviation of AUC. We grouped the samples into resistant and sensitive based on the mean AUC for our differential gene expression analysis.
+
+### Organoid intratumoral heterogeneity
 
 In order to assess genomic heterogeneity within PDOs, we performed single-cell whole genome sequencing on three of the models, selected arbitrarily to represent both fast-growing (PDO2, n=76 cells, and PDO3, n=145 cells) and slow-growing models (PDO6, n=355 cells) (Figure 5). We did not observe any normal copy number profiles indicating the presence of non-cancer cells. Copy number changes at single-cell resolution revealed widespread clonal loss of heterozygosity (LOH) in large regions spanning up to entire chromosomes that were PDO specific (e.g. chromosome 13 in PDO6). Subclonal LOH, although less common, was also present in all three organoids. Amplification events were more common than losses; for example, chromosomes 2, 3, and 20 are clonally amplified in PDO2 and PDO3 whereas chromosomes 6 and 11 showed large, amplified regions shared between PDO3 and PDO6. All three PDOs present non-focal amplifications in chromosomes 1, 5, 12, and 20 as well as deletions in chromosome 13. This analysis also provided strong evidence for clonal amplification of candidate driver copy number aberrations: CCNE1 in PDO2 and PDO3, an early chromothriptic event at MYC in PDO3 (Figure 5—figure supplement 1), and AKT2 in PDO2 and PDO6. PDO6 showed early clonal loss of RB1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig5-v1.jpg)
+
+**Figure 5.:** (a–c) Single-cell DNA (scDNA) copy number where cells have been clustered using hierarchical clustering on Euclidean distance. Each row within the scDNA plots represents a cell across the different chromosomes in the x-axis and the copy number state (20 kb bins) is indicated in colors. Loss of heterozygosity and amplification events are common in all three patient-derived organoids. (d-f) Bulk absolute copy number profiles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Step plot of the absolute copy number from sWGS for PDO3, along chromosome 8. The extreme values towards the end of the chromosome indicate a chromothriptic event. Diploid state is represented by the blue dotted line.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** PDO2 contains two major clades of 42 and 30 cells. These clades are characterized by changes in chromosome 7 (triplicated in the first clade and diploid in the second, in accordance with the copy number of roughly 2.75 from bulk sequencing) and chromosome 10 (showing the opposite trend). Few subclonal losses are observed, except for those in chromosome 13 p. In PDO3, the two clades are comprised of 48 and 92 cells, with the second clade containing two subclades of 40 and 52 cells. The largest differences are in chromosomes 1, 4 and 5, 10, and 11. There is an loss of heterozygosity (LOH) region at the start of chromosome 5 in the second clade, in all other chromosomes there are further copy number gains in regions where the first clade already shows amplifications. The two subclades contain differences in chromosomes 1, 4, and 5. PDO6 contains two clades of 49 and 303 cells (the second clade is split into subclades of 158 and 145 cells). The differences in the first split are in chromosomes 3, 4, 6, and 10, in which the extent of amplifications varies, and in chromosome 13, which presents large regions of single copy loss in the second clade. The greatest difference between the subclades is a large triplication of chromosome 2 in the first subclade.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83867/elife-83867-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The color of the dots indicates whether the CN value is shared between cells, and, therefore, clonal (in red), or whether there is subclonal heterogeneity in the bin (in blue) according to a Chi-squared test of the variance in copy number among cells and correcting for ploidy.
 
 We also identified regions of clonal heterogeneity in all three PDOs (Figure 5 and Figure 5—figure supplement 2). We quantified the heterogeneity observed in each PDO by comparing the observed copy number variance to the expected copy number variance (Methods), and found that, globally, PDO3 showed the highest subclonal heterogeneity, with 48% of the genome presenting subclonal heterogeneity, followed by PDO6 (29%) and PDO2 (26%) (Figure 5—figure supplement 3).
 
@@ -97,77 +161,77 @@ This study has shown that HGSOC PDOs faithfully represent the high variability i
 
 ## Methods
 
-## Ethical approval and clinical data collection
+### Ethical approval and clinical data collection
 
 Clinical data and tissue samples for the patients were collected on the prospective cohort study Cambridge Translational Cancer Research Ovarian Study 04 (CTCR-OV04), with IRAS project ID 4853, and which was approved by the Institutional Ethics Committee (REC reference number 08 /H0306/61). Clinical decisions were made by a clinical multidisciplinary team (MDT) and researchers were not directly involved. Patients provided written, informed consent for participation in this study and for the use of their donated tissue for the laboratory studies carried out in this work and its publication. Clinical data for all the patients is provided in Supplementary Information.
 
-## Sample collection and processing
+### Sample collection and processing
 
 Samples were obtained from surgical resection, therapeutic drainage, or surgical washings. Solid tumors were assessed by a pathologist and only tumor samples with ≥50% cellularity were attempted to grow. A small portion of each sample was kept at −80 °C until used for genomic profiling.
 
-## Organoid derivation
+### Organoid derivation
 
 Tumor samples were washed in PBS, minced into 2 mm pieces using scalpels, and incubated with gentamicin (50 μg/ml), Bovine Serum Albumin Fraction V (1.5%), insulin (5 μg/mL), collagenase A (1 mg/mL) and hyaluronidase (100 U/ml) for 1–2 hr at 37 °C. Following incubation, the mixture was filtered and the cell suspension was spun down and washed with PBS. Ascites fluid was centrifuged at 450 g for 5 min. Cells were then washed with PBS and centrifuged at 400 g for 5 min.
 
 The isolated cells were resuspended in 7.5 mg/ml basement membrane matrix (Cultrex BME RGF type 2 (BME-2), Amsbio) supplemented with complete media and plated as 20 μl droplets in a six-well plate. After allowing the BME-2 to polymerize, complete media was added and the cells were left at 37 °C. We used published culture conditions for normal fallopian tube growth (Kessler et al., 2015) as follows: AdDMEM/F12 medium supplemented with HEPES (1×, Invitrogen), Glutamax (1×, Invitrogen), penicillin/streptomycin (1×, Invitrogen), B27 (1×, Invitrogen), N2 (1×, Invitrogen), Wnt3a-conditioned medium (25% v/v), RSPO1-conditioned medium (25% v/v), recombinant Noggin protein (100 ng/ml, Peprotech), epidermal growth factor (EGF, 10 ng/ml, Peprotech), fibroblast growth factor 10 (FGF10, 100 ng/ml, Peprotech), nicotinamide (1 mM, Sigma), SB431542 (0.5 μM, Cambridge Biosciences), and Y27632 (9 μM, Abmole).
 
-## Organoid culture
+### Organoid culture
 
 Organoid culture medium was refreshed every 2 days. To passage the organoids, the domes were scraped and collected in a falcon tube, TrypLE (Invitrogen) was added and incubated at 37 °C for approximately 10 min. The suspension was centrifuged at 800 g for 2 min and the cell pellet was resuspended in 7.5 mg/ml BME-2 supplemented with complete media and plated as 20 μl droplets in a six-well plate. After allowing the BME-2 to polymerize, complete media was added, and cells were incubated at 37 °C. The commonest cause of culture failure was growth arrest or fibroblast overgrowth. We considered an organoid line to be continuously established when it had been serially passaged >5 times followed by cryopreservation and successful re-culture. By these criteria, 15/18 PDO lines were continuous.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Haematoxylin and Eosin (H&E) slides were stained according to the Harris H&E staining protocol and using a Leica ST5020 multi-stainer instrument. Paraffin-embedded sections of 3 μm were stained using Leica Bond Max fully automated IHC system. Briefly, slides were retrieved using sodium citrate for 30 min and p53 antibody (D07, 1:1000, Dako) was applied for 30 min. Bond Polymer Refine Detection System (Leica Microsystems) was used to visualize the brown precipitate from the chromogenic substrate, 3,3’-Diaminobenzidine tetrahydrochloride (DAB).
 
-## Nucleic acid isolation
+### Nucleic acid isolation
 
 DNA and RNA were extracted at the same time from the same cells. Extraction was performed using the DNeasy Blood & Tissue Kit (QIAGEN) according to manufacturer instructions.
 
-## Bulk shallow whole-genome sequencing and absolute copy number signature analysis
+### Bulk shallow whole-genome sequencing and absolute copy number signature analysis
 
 Whole genome libraries were prepared using the TruSeq Nano Kit according to manufacturer instructions. Each library was quantified using the KAPA Library Quantification kit (kappa Biosystems) and 10 nM of each library was combined in a pool of 21 samples and sequenced on the Illumina HiSeq 4000 machine using single-end 150 bp reads. Reads were aligned against the human genome assembly GRCh37 using the BWA-MEM algorithm (v0.7.12). Duplicates were marked using the Picard Tool (v1.47) and copy number was assessed using the Bioconductor package QDNAseq (v1.6.1) (Scheinin et al., 2014). Shallow whole-genome samples have an approximate coverage of 0.25–0.3, assuming that the sample is diploid.
 
 Copy number signatures for the organoid cultures were calculated as previously described (Macintyre et al., 2018).
 
-## Comparison of organoid copy number signatures to those of TCGA, BriTROC-1, and PCAWG
+### Comparison of organoid copy number signatures to those of TCGA, BriTROC-1, and PCAWG
 
 Signature activities of organoids were compared to those previously described in three HGSOC cohorts: TCGA and BriTROC-1 (Macintyre et al., 2018) (sWGS-based signatures) and PCAWG (Aaltonen et al., 2020) (WGS-based signatures). Copy number signature activities were transformed using the centered log-ratio transformation with an imputation value of 10–2 to consider that they are compositional data that sample-wise add up to one. Organoid and primary tissue samples were clustered using hierarchical clustering with complete linkage on this transformed space. We performed additional analyses to confirm that our conclusions – namely, that the signature activities of organoids are representative of the activities of primary tissue, and in determining which activities are underrepresented in the organoids – were robust to the imputation value. Using imputation values between 0.001 and 0.1 we show that the dendrogram in Figure 1d is similar to the dendrograms generated using both higher and lower imputation values, and that the underrepresented clades are robust to changes in the imputation values. A more detailed report of the differences in dendrograms as we vary the imputation values can be found in the GitHub repository (see below).
 
-## Comparison of copy number signatures between ascites and organoids
+### Comparison of copy number signatures between ascites and organoids
 
 Signature exposures between ascites and organoids are compared using the same method as in a previous CN paper (Cheng et al., 2022), in which the model is detailed. Briefly, the model used is a multivariate model on isometric log-ratio (ILR)-transformed exposures that accounts for data compositionality, by modeling these transformed quantities as a non-correlated multivariate normal distribution, and testing for a difference in the mean of the two groups.
 
-## Single-cell sWGS
+### Single-cell sWGS
 
 Organoids were dissociated into single cells using TrypLE, washed twice with PBS, and counted. Single-cell solution was filtered using a 70 μm Flowmi filter to remove any duplets or triplets. With the aim of getting around 300 cells for library preparation, 4000 single cells were loaded onto the chip. Single-cell 10 x CNV libraries were prepared according to the manufacturer’s protocol (10 X Genomics) and multiplexed in equal molarity to achieve 2.4 million reads per cell. Single-cell 10 X CNV constructed libraries were sequenced on the Illumina Novaseq6000 S4 platform using PE- 150 modes. The Cell Ranger pipeline was used for quality control, trimming, and alignment.
 
-## Metric for copy number subclonal heterogeneity in single-cell
+### Metric for copy number subclonal heterogeneity in single-cell
 
-The metric for copy number subclonal heterogeneity is defined as follows. Independently, for each of the three organoids, we fitted a linear model of the standard deviation of the absolute copy number across organoids predicted by its mean, using bins of 500 kb. Copy number data were handled using the R package GenomicRanges (Lawrence et al., 2013). The marked positive correlation indicated that the data were heteroscedastic. For each bin, we computed its expected variance from the model, E(σ2), and compared it to the observed variance S2  with a Chi-Squared test with alternative hypothesis E(σ2)<S2. A statistically significant result indicates that we see a greater variance than expected in the copy number values of this bin, and that, therefore, there is subclonal heterogeneity.
+The metric for copy number subclonal heterogeneity is defined as follows. Independently, for each of the three organoids, we fitted a linear model of the standard deviation of the absolute copy number across organoids predicted by its mean, using bins of 500 kb. Copy number data were handled using the R package GenomicRanges (Lawrence et al., 2013). The marked positive correlation indicated that the data were heteroscedastic. For each bin, we computed its expected variance from the model, $E(\sigma^{2})$, and compared it to the observed variance $S^{2}$  with a Chi-Squared test with alternative hypothesis $E(\sigma^{2})<S^{2}$. A statistically significant result indicates that we see a greater variance than expected in the copy number values of this bin, and that, therefore, there is subclonal heterogeneity.
 
-## Clade analysis of single-cell copy number data
+### Clade analysis of single-cell copy number data
 
 Single-cell clades for each organoid were identified by performing hierarchical clustering using complete linkage on Euclidean distance of copy number values on 500 kb-binned genomes. Only clades with more than three cells were kept in the analysis. PDO2 had four major clades, two of which encompassed most cells (clade A: 42 cells, clade B: 30 cells), PDO3 had seven major clades, three of which with more than two cells (clade A: 40 cells, clade B: 52 cells, clade C: 48 cells). PDO6 had six clades, three of which contained more than one cell (clade A: 158 cells, clade B: 145 cells, clade C: 49 cells). The copy number profile comparison of the two clades of PDO2, and of the two pairwise comparisons of clades of PDO3 and PDO4, were carried out using the 20 kb-binned copy number profile. Bins of distinct copy numbers between cells in different clades were detected using a Holm–Bonferroni-adjusted t-test on the absolute copy number value.
 
-## Tagged-amplicon sequencing
+### Tagged-amplicon sequencing
 
 Coding sequences of TP53, PTEN, NF1, BRCA1, BRCA2, MLH1, MSH2, MSH6, PMS2, RAD51C, RAD51B, RAD51D, and hot spots for EGFR, KRAS, BRAF, PIK3CA were sequenced using tagged amplicon sequencing on the Fluidigm Access Array 48.48 platform as previously described (Forshew et al., 2012). Libraries were sequenced on the MiSeq platform using paired-end 125 bp reads. Variant calling from sequencing data was performed using an in-house analysis pipeline and IGV software (Thorvaldsdóttir et al., 2013).
 
-## RNA-Seq
+### RNA-Seq
 
 RNA quality control was performed using Tapestation according to manufacturer instructions and samples were processed using Illumina’s TruSeq stranded mRNA kit with 12 PCR cycles according to manufacturer’s instructions. Quality control of libraries was performed using Tapestation and Clariostar before normalizing and pooling. Samples were sequenced using two lanes of SE50 on a HiSeq 4000 instrument. The analysis was performed using an in-house DESeq2 (Love et al., 2014) pipeline.
 
 TCGA gene expression values were downloaded as HTSeq count files of Genome Build GRCh38 for 240 ovarian samples of either progressive disease, or complete remission or response. The counts were normalized using the DESeq2 method, based on gene-specific geometric means. The subset of genes relating to the tumor microenvironment was taken from the ConsensusTME list (https://github.com/cansysbio/ConsensusTME, Cast, 2023). The normalized expression of all genes was used to create the PCA.
 
-## Effect of CNAs at the gene expression level
+### Effect of CNAs at the gene expression level
 
 We computed the average gene expression values for the three PDOs of the lowest copy number. Three organoids, out of eleven, with the lowest expression were selected in order not to include solely outliers, as well as leaving out a high enough number of organoid samples (eight) in which we can observe the variability in their copy number and gene expression. We explored using the two, and four, PDOs and the lowest copy number, which yielded similar results - there is a very high correlation between these averaged GE values when using the lowest three organoids, and when using the lowest two, or four.
 
-## Pathway enrichment analysis
+### Pathway enrichment analysis
 
 Using our transcriptomic data, we computed enrichment scores for KEGG pathways of interest using ssGSEA, implemented in the R package GSVA (Hänzelmann et al., 2013), and using gene sets from the package GSVAdata (Hänzelmann et al., 2013). To determine which pathways were overrepresented in the differential expression analysis between sensitive and resistant samples we used the R package fgsea (Korotkevich et al., 2021) and selected the top ten pathways according to their adjusted p-value (Benjamini-Hochberg correction), using the Hallmark gene sets from MSigDBv5p2.
 
-## Drug sensitivity
+### Drug sensitivity
 
 An eight-point half-log dilution series of each compound was dispensed into 384 well plates using an Echo 550 acoustic liquid handler instrument (Labcyte) and kept at –20 °C until used. Prior to use plates were spun down and 50 µl of organoid suspension is added per well using a Multidrop Combi Reagent Dispenser (Thermo-Fisher). Following 5 days of drug incubation cell viability was assayed using 30 µl of CellTiter-Glo (Promega). Screens were performed in technical triplicate.
 
@@ -175,10 +239,10 @@ Drug response measures were standardized by dividing the original values by the 
 
 Compounds used in this study included standard-of-care chemotherapeutics paclitaxel (Sigma), oxaliplatin (Selleck), doxorubicin (Selleck), and gemcitabine (Selleck); and targeted compounds provided by AstraZeneca: AZD0156, AZD2014, AZD6738, AZD2281, AZD1775, AZD8835, AZD5363, and AZD8185. Maximum drug concentration in the assay was 30 μM apart from paclitaxel (0.3 μM) and oxaliplatin (300 μM).
 
-## In vivo growth
+### In vivo growth
 
 Animal procedures were conducted in accordance with the ethical regulations and guidelines of AWERB, NACWO, and UK Home Office (Animals Scientific Procedures Act 1986). It was approved by the CRUK CI Animal Welfare and Ethics Review Board (Home Office Project Licence number: PP7478310). 1.5 × 105 organoids were resuspended in 150 μl of PBS and injected intraperitoneally into NOD-scid IL2Rγ(null) (NSG) mice. Tumor growth was monitored by palpation and weighing the mice weekly.
 
-## Code availability
+### Code availability
 
 All the analysis code is at https://github.com/lm687/Organoids_Compositional_Analysis (copy archived at Morrill, 2023).

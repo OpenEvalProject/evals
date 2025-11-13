@@ -12,7 +12,7 @@
 
 ## Abstract
 
-At the turn of the 19th century the Austrian artist Gustav Klimt was commissioned to decorate the ceiling of the Great Hall of the University of Vienna. However the three paintings he produced – Philosophy , Medicine and Jurisprudence – were rejected by the university and later destroyed by retreating German troops during World War II. The story of these paintings, and another called Goldfish , illuminates common ground between art and science, and highlights ongoing tensions in the relationships between art, science and society.
+At the turn of the 19th century the Austrian artist Gustav Klimt was commissioned to decorate the ceiling of the Great Hall of the University of Vienna. However the three paintings he produced – Philosophy, Medicine and Jurisprudence – were rejected by the university and later destroyed by retreating German troops during World War II. The story of these paintings, and another called Goldfish, illuminates common ground between art and science, and highlights ongoing tensions in the relationships between art, science and society.
 
 ## The University of Vienna ceiling paintings
 

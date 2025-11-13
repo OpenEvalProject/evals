@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/000nhpy59 Instituto de Neurociencias de Alicante, CSIC-UMH San Juan de Alicante Spain
-2. https://ror.org/002pd6e78 Athinoula A. Martinos Center for Biomedical Imaging, Department of Radiology, Massachusetts General Hospital, Harvard Medical School Boston United States
-3. https://ror.org/02p77k626 Department of Biomedicine and Prevention, University of Rome Tor Vergata Rome Italy
-4. https://ror.org/00zmnkx60 Instituto de Investigación Sanitaria y Biomédica de Alicante (ISABIAL) Alicante Spain
+1. Instituto de Neurociencias de Alicante, CSIC-UMH San Juan de Alicante Spain ([ROR:000nhpy59](https://ror.org/000nhpy59))
+2. Athinoula A. Martinos Center for Biomedical Imaging, Department of Radiology, Massachusetts General Hospital, Harvard Medical School Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+3. Department of Biomedicine and Prevention, University of Rome Tor Vergata Rome Italy ([ROR:02p77k626](https://ror.org/02p77k626))
+4. Instituto de Investigación Sanitaria y Biomédica de Alicante (ISABIAL) Alicante Spain ([ROR:00zmnkx60](https://ror.org/00zmnkx60))
 5. Millennium Nucleus for the Study of Pain (MiNuSPain) Santiago Chile
 
 † Corresponding author
@@ -40,19 +40,67 @@ In this study, we aimed to (i) validate AxCaliber-based axonal mapping in a prec
 
 ## Results
 
-## A rat model of acute axonal damage
+### A rat model of acute axonal damage
 
 Fourteen days after injection of the neurotoxin ibotenic acid into the hippocampus, paired t-test revealed a significant increase in the mean MRI axonal diameter proxy (p=0.021) in the fimbria belonging to the injected hemisphere compared to the control (Figure 1e), confirming that the damage affected a large portion of the tract. The other parameters extracted from the MRI analysis are not significantly different between hemispheres, although there is a tendency of reduced slope of the extra-axonal radial diffusivity decay for increasing diffusion time in the injected hemisphere (Figure 1—figure supplement 1). The fimbrias were reconstructed through Diffusion Tensor Imaging (DTI)-based tractography. Through tract-based analysis, we revealed a significant effect of the injection (F1,9=20.3, p=0.001), of the position along the tract (F48,432=83.9, p<0.001) and of their interaction (F48,432=5.7, p=0.003); post-hoc comparisons between injection type, performed for each position and corrected for multiple comparisons, revealed significant differences in the mean MRI axonal diameter proxy between ibotenic acid- and saline-injected tracts in most parts of the tract. Significant differences were mostly localized posterior to the injection site (Figure 1d). In the subset of animals undergoing a protocol with lower b-values and a diffusion model not including the Δ dependency (AxCaliber), we obtained similar results (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig1-v1.jpg)
+
+**Figure 1.:** (a) Experimental scheme of stereotaxic injections of ibotenic acid (IBO) in the left hippocampus of n=19 rats. The right hippocampus was injected with saline solution and used as a control. (b) Visualization of the injection setup. (c) Example of the tractography of the fimbriae from one representative animal, superimposed on the fractional anisotropy map. The MRI axonal diameter proxy is projected on the tract through color coding. (d) Mean difference and standard deviation between groups of MRI axonal diameter proxy measured across all the streamlines constituting the fimbria in the antero-posterior axis, starting from the injection point (n=10). The injection site is shown in red. Asterisks represent significant group effect in the ANOVA, while hashtags represent significant post-hoc differences between groups in each location, corrected for multiple comparisons. (e) Mean MRI axonal diameter proxy calculated in the ibotenic vs saline-injected fimbria reconstructed using tractography. Asterisks represent significant differences (n=10, paired t test across hemispheres, p=0.021).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Mean modulus of the slope of the dependency of the extra-axonal radial diffusivity from the diffusion time calculated in the ibotenic vs saline-injected fimbria reconstructed using tractography. The slope is always negative. (b) Extra-axonal radial diffusivity. (c) Restricted signal fraction. No significant differences are found (n=9, paired t test across hemispheres, p=0.09, 0.67 and 0.46 respectively).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Mean difference and standard deviation between groups of axonal diameter measured across all the streamlines constituting the fimbria in the antero-posterior axis, starting from the injection point (n=9, low b-value protocol). The injection site is shown in red. Asterisk represents significant group effect in the ANOVA. (b) Mean MRI axonal diameter proxy calculated in the ibotenic vs saline-injected fimbria reconstructed using tractography. Asterisks represent significant differences (n=9, paired t test across hemispheres, p=0.000014).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) The two functional forms tested to fit the decay of the extra-axonal radial diffusivity are shown as a function of the diffusion times for the radial diffusivity measured on the protocol with lower b-value. (b) Example of the functional form chosen according to the BIC criterion in four of the animals.
+
 When comparing immunofluorescence staining in ibotenic acid- versus saline-injected hemispheres, we confirmed both neuronal loss in the hippocampus (p=0.026, Figure 2a–b) and axonal damage in the fimbria (p=0.047, Figure 2c–d), corresponding to a lower staining intensity of neuronal nuclear protein (NeuN) and higher intensity of neurofilament staining in the hemisphere injected with ibotenic acid. No differences were found in the fimbria myelin content using Myelin Basic Protein (MBP) staining (Figure 2—figure supplement 1), suggesting that at the studied time point, axonal structure was significantly altered, but the total myelin content was still preserved. Neurofilament fluorescence intensity was significantly correlated with the axonal diameter proxy measured with MRI (r=0.54, p=0.029) in both the fimbria tract of injected and control hemispheres (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig2-v1.jpg)
+
+**Figure 2.:** (a) NeuN staining in control vs. injected hippocampi. (b) Mean NeuN intensity in control vs. injected hippocampi. Asterisks represent significant differences across hemispheres (n=8, paired t test, p=0.026). (c) Neurofilament staining in control vs. injected fimbria. (d) Mean neurofilament intensity in control vs. injected hippocampi. Asterisks represent significant differences in means across hemispheres (n=8, paired t test, p=0.047).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Myelin Basic Protein staining in injected versus control fimbria. (b) Mean Myelin Basic Protein intensity in control vs. injected hippocampi. No significant differences in myelination were found (n=8, paired t test, p=0.38).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Significant correlation (r=0.54, p=0.029) between Neurofilaments fluorescence intensity and MRI axonal diameter proxy measured with the AxCaliber model for all hemispheres in the fimbria. Ibotenic acid injected hemispheres are shown in red and saline injected are shown in green.
 
 Scanning transmission electron microscopy (STEM) revealed increased axonal diameter in the hemisphere injected with ibotenic acid, with no significant reduction in axonal count, indicating limited axonal loss, as reported in Figure 3. In Figure 3—figure supplement 1, the total brain shrinkage from in vivo to after perfusion was quantified in three animals as 28%. Since the post-fixation with 1% osmium tetroxide gives at least a 15% additional shrinkage (Kinney et al., 2013), the total shrinkage caused by the STEM preparation can be quantified as 39%.
 
-## Axonal damage in normal-appearing white matter of multiple sclerosis patients
+![Figure 3.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative STEM photos for saline and ibotenic acid fimbriae. Segmented axons are overlaid in light blue. (b) Histogram of the axonal count in one representative animal: upper line, saline injected, lower line, ibotenic. Black lines represent the gamma function better fitting the histogram. (c) Mean axonal diameter (left) and count (right) in each photo and group. Asterisks represent significant unpaired t test differences between groups for axonal diameter (n=6, p=0.00013).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Brain volume quantification in mm obtained for three animals in vivo through manual segmentation of MRI images, and post-perfusion at days 1, 4, 7, and 10 while embedded in the fixative (2% paraformaldehyde and 2.5% glutaraldehyde in 0.1 M cacodylate buffer). (b) Same, but relative to in vivo volume.
+
+### Axonal damage in normal-appearing white matter of multiple sclerosis patients
 
 After preclinical validation in rats, we applied the clinical version of the AxCaliber MRI protocol to a cohort of 11 MS patients and 10 age-matched healthy controls. When comparing the MRI axonal diameter proxy in the NAWM of MS patients and controls, we found higher values in the MS group (p<0.05, corrected; Figure 4). The differences were mostly symmetrical across hemispheres and involved all major WM tracts, notably: the corpus callosum, the corticospinal tract, the internal capsule, the corona radiata, the thalamic radiation, the inferior longitudinal fasciculus, the cingulum, the fornix, the superior longitudinal fasciculus, the inferior fronto-occipital fasciculus, the uncinate fasciculus, and the tapetum.
 
-## Axonal diameter is preferentially increased in patients with early disease
+![Figure 4.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig4-v1.jpg)
+
+**Figure 4.:** (a) Experimental scheme. (b) Tract-based spatial statistics showing voxels in which the mean MRI axonal diameter proxy is significantly increased in multiple sclerosis versus healthy conditions (n=21, p<0.05, corrected). The opposite contrast was not statistically significant. Green: skeletonized white matter. Inflated red-yellow (through the pipeline tbss_fill): significant p value. Red-yellow: p-value <0.1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Tract-based spatial statistics showing voxels in which the slope of the extra-axonal radial diffusivity decay for increasing diffusion time (panel a) and the restricted signal fraction (panel b) are significantly decreased in multiple sclerosis versus healthy conditions (n=21, p<0.05, corrected). The opposite contrast was not statistically significant. Green: skeletonized white matter. Inflated blue-lighblue (through the tbss_fill pipeline): significant p-value.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79169/elife-79169-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Normalized 2-D histograms of fitted versus ground truth axonal diameters for two SNRs matching human (panel a) and animal (panel b) data for a single Rician noise realization, and averaged over 10 repetitions (panels c and d). In panel e and f, the simulations are repeated with intra-axonal axial diffusivity range 1.7–2.2x10–3 mm2/s for a single Rician noise realization.
+
+### Axonal diameter is preferentially increased in patients with early disease
 
 Next, we tested for associations between the measured MRI axonal diameter proxy and the disease duration. The rationale is that axonal swelling could be an early event in the disease, as suggested by postmortem evidence (Luchicchi et al., 2021).
 
@@ -96,25 +144,88 @@ In conclusion, given the central role of axonal pathology in MS, developing and 
 
 ## Materials and methods
 
-## Animal preparation
+### Animal preparation
 
 Animal preparation (n=19 rodents) was carried out as described before (Garcia-Hernandez et al., 2022). Briefly, axonal damage in the fimbria was achieved by injecting 1 μl of ibotenic acid (a selective agonist of N-methyl-D-aspartate (NMDA) glutamate receptors that produces selective neurotoxicity Zinkand et al., 1992) at a concentration of 2.5 μg/μl in the dorsal hippocampus (coordinates bregma –3.8 mm, sup-inf 3.0 mm, 2 mm from the midline in the left hemisphere) (Figure 1a). Each animal was used as its own control by injecting the same amount of saline in the opposite hemisphere. The injection does not infect the contralateral structure, as previously reported (Garcia-Hernandez et al., 2022). Neuronal degeneration in the hippocampus translates into axonal loss in its major axonal output bundle, the fimbria, which is therefore used as a model for Wallerian-like axonal degeneration (Conforti et al., 2014). Fourteen days after surgery, rats underwent MRI scans in vivo using the AxCaliber protocol and were immediately perfused. N=9 animals were processed for immunohistological analysis, while n=6 animals were prepared for electron microscopy pipeline. Histological analysis was used to stain neuronal somas (NeuN) and quantify neuronal death in the hippocampus, neurofilaments and MBP to quantify axonal integrity and myelination in the fimbria, respectively. Electron microscopy was used to quantify axonal diameter and count in the fimbriae. N=3 additional animals were used to measure brain shrinkage from the in vivo condition to post-perfusion, post-fixation and post- sample embedding.
 
-## Subjects
+### Subjects
 
 The local institutional review board approved this study and written informed consent was obtained from all participants. Eleven MS patients (age range 26–57, 6 males) and ten healthy controls (age range 23–53, 4 males) participated in the study. The minimum sample size needed to detect the effect was calculated based on previous literature (Huang et al., 2016). Age and sex were matched across groups. Eligibility criteria in patients were a diagnosis of relapsing-remitting MS (Polman et al., 2011), being on stable disease-modifying treatment or no treatment for at least 3 months, absence of clinical relapse within 3 months, and absence of corticosteroid use within one month from study enrollment. A neurologist assessed physical disability according to the EDSS (Kurtzke, 1983) and cognitive ability using the SDMT. Demographic and clinical data are shown in Table 1.
 
-## MRI acquisition
+**Table 1.**
+ Demographic characteristics of the studied cohort, including age/sex, disease duration, EDSS, SDMT, and MS treatment.The reported p-value is the outcome of the chi-square test comparing MS and healthy controls.
 
-## Rats
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">HC (n=10)</th>
+      <th colspan="2">MS (n=11)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (mean and SD)</td>
+      <td>35 y</td>
+      <td>+/-11 y</td>
+      <td>43 y</td>
+      <td>+/-12 y</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>6 M</td>
+      <td></td>
+      <td>4 M</td>
+      <td></td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Disease duration (mean and SD)</td>
+      <td>-</td>
+      <td></td>
+      <td>6.40</td>
+      <td>+/-5.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EDSS (median, min/max)</td>
+      <td>-</td>
+      <td></td>
+      <td>2</td>
+      <td>1/4.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDMT (mean z score and SD)</td>
+      <td>-</td>
+      <td></td>
+      <td>–0.70</td>
+      <td>+/-1.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medication</td>
+      <td>-</td>
+      <td></td>
+      <td colspan="3">1 avonex; 1 plegridy; 2 tecfidera; 1 gilenya; 3 ocrelizumab; 2 copaxone; 1 Rituximab</td>
+    </tr>
+  </tbody>
+</table>
+
+### MRI acquisition
+
+#### Rats
 
 MRI was performed on a 7T scanner (Bruker, BioSpect 70/30, Ettlingen, Germany) featuring a maximum gradient intensity of 700 mT/m. Diffusion Weighted Magnetic Resonance Imaging (DW-MRI) data were acquired using a stimulated echo planar imaging diffusion sequence, with 132 uniform distributed gradient directions, b=0 (3), 2000(15) and 4000(15) s/mm2, diffusion times (Δ) 15, 25, 40 and 60ms, diffusion pulse width 5ms, diffusion duration of 5ms, repetition time (TR)=7000ms and echo time (TE)=25ms. Fourteen slices were set up centered in the fimbria with field of view (FOV)=25 × 25 mm2, matrix size = 110 × 110, in-plane resolution = 0.225 × 0.225 mm2 and slice thickness = 0.6 mm. The total acquisition time was 1 hr. A subset of nine animals underwent a similar protocol, with slightly lower b-values (1000 and 2500 s/mm2) to explore a protocol with better clinical compatibility. Finally, three animals underwent a T2-weighted high resolution MRI protocol with full brain coverage to measure the brain volume in vivo. The T2-weighted sequence was acquired using a Rapid Acquisition with Relaxation Enhancement sequence with TR = 6253ms, TE = 11ms, 4 averages. Fifty-six slices covered the whole brain with field of view 25×25 mm2, matrix size 200×200, in-plane resolution 0.125×0.125 mm2 and slice thickness 0.5 mm.
 
-## Humans
+#### Humans
 
 All participants were scanned on a Siemens 3T Connectom scanner, a customized 3T MAGNETOM Skyra system (Siemens Healthcare, Erlangen, Germany) housed at the MGH/HST Athinoula A. Martinos Center for Biomedical Imaging, Boston, Massachusetts, USA. The Connectom scanner is equipped with gradient coils capable of generating a maximum gradient strength of 300 mT/m, hence allowing minimization of δ (gradient duration) and echo times even at high b-values. A 64-channel brain array coil (Keil et al., 2013) was used for data acquisition. DW-MRI data were acquired using a spin echo echo planar imaging diffusion sequence, with 273 uniformly distributed gradient directions, b=0 (1), 2000(30), and 4000(60) s/mm2, diffusion times (Δ) 17, 35, and 61 ms with four nondiffusion weighted images, diffusion pulse width 7ms, TR = 5000 ms and TE = 89ms. Eighty-two slices were set up to cover the whole brain with FOV = 220 × 220 mm2, matrix size = 110 × 110, in-plane resolution = 2 × 2 mm2 and slice thickness = 2 mm, partial Fourier factor 7/8, GRAPPA acceleration factor 2. In addition, anatomical images were acquired using 3D sequences with a 1.0 mm isotropic voxel size: T1-weighted multiecho magnetization-prepared rapid gradient-echo images were acquired in all participants (van der Kouwe et al., 2008). Fluid-attenuation inversion recovery (FLAIR) images were also acquired in MS patients for white matter lesion segmentation. The total acquisition time was around 1 hr.
 
-## Tissue processing for immunohistochemistry
+### Tissue processing for immunohistochemistry
 
 Rats were deeply anesthetized with a lethal dose of sodium pentobarbital, 46 mg/kg, injected intraperitoneally (Dolethal, E.V.S.A. laboratories., Madrid, España). Rats were then perfused intracardially with 100 ml of 0.9% phosphate saline buffer (PBS) and 100 ml of ice-cold 4% paraformaldehyde (PFA, BDH, Prolabo, VWR International, Louvain, Belgium). Then, brains were immediately extracted from the skull and fixed for 1 hr in 4% PFA. Afterwards, brains were included in 3% agarose/PBS (Sigma‒Aldrich, Madrid, Spain) and cut in a vibratome (VT 1000 S, Leica, Wetzlar, Germany) into 50-μm-thick serial coronal sections.
 
@@ -122,17 +233,17 @@ Coronal sections were rinsed and permeabilized three times in 1 x PBS with Trito
 
 The tissue sections were then examined using a computer-assisted morphometry system consisting of a Leica DM4000 fluorescence microscope equipped with a QICAM Qimaging camera 22577 (Biocompare, San Francisco, USA) and Neurolucida morphometric software (MBF, Biosciences, VT, USA). Myelin, neurofilament and neural nuclei fluorescent analysis was performed using Icy software (de Chaumont et al., 2012). For neural nuclei, two ROIs of 200 µm2 were placed per hippocampus per hemisphere in at least 5 slices per rat to obtain the corresponding intensity values. Similarly, for MBP and neurofilaments, an ROI of 400 µm2 was placed per fimbria per hemisphere in at least 5 slices per rat.
 
-## Tissue processing for electron microscopy
+### Tissue processing for electron microscopy
 
 Rats were deeply anesthetized with a lethal dose of sodium pentobarbital, 46 mg/kg, injected intraperitoneally (Dolethal, E.V.S.A. laboratories., Madrid, Spain). Afterwards, rats were transcardially perfused with 100 ml of 0.9% PBS and 100 ml of a fixative solution containing 2% paraformaldehyde and 2.5% glutaraldehyde in 0.1 M cacodylate buffer (pH 7.3) (Electron Microscopy Science, USA). The brains were quickly removed and postfixed overnight in the same fixative solution at 4 °C. The following day, the brains were washed with 0.1 M cacodylate buffer. Subsequently, the fixed brains were sliced into 250-µm-thick horizontal sections using a vibratome (Leica VT1000S, Germany). The sections were collected in cacodylate buffer, and those containing the fimbria were washed three times with 0.1 M cacodylate buffer for 15 minutes each, and subsequently postfixed with 1% osmium tetroxide in 0.1 M cacodylate buffer for 1.5 hr at 4 °C. The tissue was then washed in distilled water twice for 15 min each and dehydrated in a graded series of ethanol solutions, followed by propylene oxide. The sections were then infiltrated with a mixture of propylene oxide and Agar 100 embedding resin (Agar Scientific, UK) for 2 hr at room temperature, and then placed in fresh embedding resin overnight at room temperature. The following day, the samples were transferred to fresh embedding resin and polymerized for 30 hr at 60 °C in flat silicon moulds. Ultrathin sections (90 nm) were cut using an ultramicrotome (Leica UC7) and placed on formvar-coated copper slot grids. The ultrathin sections were then stained with lead citrate and imaged using STEM on a scanning electron microscope (Zeiss GeminiSEM 460, Germany).
 
 Photos were binarized, and axons were quantified semiautomatically by two operators blind to animals and conditions (ACC and SDS). While the cell’s inner area is detected automatically using the MATLAB function bwconncomp, nonaxonal structures are eliminated via visual screening. Six photos per condition per animal were analyzed, generating a total segmented number of axons of 12272. Axonal diameter and count were compared across conditions using an unpaired t test.
 
-## Volume measurements
+### Volume measurements
 
 Volume measurements were taken using high-resolution T2-weighted images for in vivo conditions. Four different measurements were obtained for ex vivo conditions: immediately after perfusion, and at 4-, 7-, and 10 days post-perfusion. The volumes were extracted as follows: in vivo volumes were calculated by counting the number of voxels corresponding to brain tissue in the high-resolution T2-weighted images, multiplied by the voxel volume. The volume of the perfused brains was measured using Archimedes’ principle. Briefly, a predetermined volume of fresh fixative solution was placed in a test tube, and the fixed brain was inserted into it. The difference between the final and initial volumes was considered as the volume occupied by the brain.
 
-## Data analysis
+### Data analysis
 
 Paired t tests were used to assess the differences in histological quantities between injected versus control hemispheres. Diffusion-weighted rat MRI data were preprocessed as described here (De Santis et al., 2019a). The mean signal-to-noise (SNR) of the b0 images, calculated according to Aja-Fernández et al., 2015 was 11.2 for rats (fimbria average) and 17.3 for humans (white matter average). We also tested an alternative method (Koay and Basser, 2006) for SNR calculation. While the average SNR quantification was very similar between the two approaches, in the Koay and Basser SNR maps we observed artefacts due to the iterative process, so we decided to use the method by Aja-Fernández et al., 2015.
 

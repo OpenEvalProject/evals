@@ -34,15 +34,27 @@ We used chimeric RNA-binding proteins as models to study how the three-dimension
 
 ## Results
 
-## RNA is required to generate mesh-like RNA granules in cells
+### RNA is required to generate mesh-like RNA granules in cells
 
 TIS granules have a mesh-like morphology and form through assembly of the RNA-binding protein TIS11B (Ma and Mayr, 2018). When we initially discovered TIS granules, we expressed mCherry-tagged TIS11B in HeLa cells and observed that the transfected TIS granules largely recapitulated the mesh-like three-dimensional structure of endogenous TIS granules (Figure 1A). At the time, we performed fluorescence recovery after photobleaching (FRAP) after 16 hr of transfection and observed 20% of fluorescence recovery in 120 s (Ma and Mayr, 2018). It is an accepted fact that surface tension drives liquid-like phase-separated condensates to adopt sphere-like shapes as spheres have a minimal surface area for a given volume (Hyman et al., 2014). Therefore, we initially thought that TIS granules are mesh-like because they are gel-like (Ma and Mayr, 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig1-v3.jpg)
+
+**Figure 1.:** (A) Confocal live-cell imaging of HeLa cells after the transfection of mCherry-tagged TIS11B. GFP-SEC61B was co-transfected to visualize the endoplasmic reticulum. The white dotted line demarcates the nucleus. Right: higher magnification of the indicated region. Scale bars, 5 µm (overview) and 1 µm (zoom-in). (B) Same as (A), but after transfection of TIS11B with a mutated RNA-binding domain. See Figure 1—figure supplement 1 for more mutants. CC: C135H/C173H. (C) Same as (A), but after transfection of mCherry-tagged SUMO10-SIM5 or SUMO-SIM-TIS chimera. 73% (N = 52) of SUMO-SIM-TIS granules are mesh-like. (D) Same as (A), but after transfection of mGFP-tagged FUS IDR (amino acids 1–214) or FUS-TIS chimera. All granules are mesh-like. (E) Fluorescence recovery after photobleaching of FUS-TIS and SUMO-SIM-TIS 16 hr after transfection of mCherry-SUMO-SIM-TIS or mGFP-FUS-TIS into HeLa cells. Scale bar, 1 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescence recovery after photobleaching of TIS11B 5 hr after transfection of mGFP-TIS11B into HeLa cells. Scale bar, 1 µm. (B) Shown is the amino acid sequence of the wild-type (WT) TIS11B RNA-binding domain (RBD), together with the introduced point mutations (red). CC: C135H/C173H; FF: F137N/F175N; KK: K116L/K154L; RK: R114L/K152L. (C) Western blot showing RNA oligonucleotide pulldown after co-transfection of the indicated mCherry-tagged TIS11B constructs and an AU-rich RNA oligo (TNFα AU-rich element) into HeLa cells. RNA-binding is disrupted in CC, FF, and KK mutants. HuR also binds to the AU-rich element. Tubulin was used as loading control. 2.5% of the input was loaded. (D) Confocal live-cell imaging of HeLa cells after transfection of the indicated constructs described in (B). GFP-SEC61B was co-transfected to visualize the endoplasmic reticulum. Scale bar, 1 µm. (E) Quantification of the data shown in (D). Shown is the fraction of cells with sphere-like granules formed by the indicated TIS11B proteins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Confocal live-cell imaging of HeLa cells after the transfection of mCherry-tagged TIS11B RNA-binding domain (RBD). GFP-SEC61B was co-transfected to visualize the endoplasmic reticulum (ER). The white dotted line demarcates the nucleus. Right: higher magnification of the indicated region. Scale bars, 5 µm (overview) and 1 µm (zoom-in). (B) Confocal live-cell imaging of HeLa cells after transfection of mCherry-tagged-SUMO-SIM-TIS. GFP-SEC61B was co-transfected to visualize the ER. Scale bar, 1 µm. (C) Representative images obtained from RNA-FISH (green) against GFP after transfection of GFP-CD47-LU or GFP-CD274-3′UTR in HeLa cells. BFP-FUS-TIS (magenta) was co-transfected. The white dotted lines demarcate the cell border and the nucleus, respectively. Right: line profiles of fluorescence intensities including the Pearson’s correlation coefficient (r). The arrow indicates the plane used for line profile generation. Scale bar, 5 µm.
 
 More recently, we repeated the FRAP experiment at 5 hr after transfection and observed 43% fluorescent recovery of GFP-tagged TIS11B in 10 s (Figure 1—figure supplement 1A). This observation suggested that at this time point TIS granules generated from transfected constructs have somewhat dynamic protein components despite being irregularly shaped. This observation is reminiscent of L-bodies in frog oocytes, which have a mesh-like morphology but dynamic protein components (Neil et al., 2020). Our FRAP experiments suggested that the mesh-like shape of TIS granules obtained by transfection cannot simply be explained by gel-like biophysical properties. It is important to point out that the material properties of endogenous TIS granules are currently unknown as all experiments so far have been performed with fluorescently tagged TIS11B constructs (Ma and Mayr, 2018).
 
 As TIS11B binds to AU-rich elements and the localization element of the Vg1 mRNA is highly AU-rich, we hypothesized that mRNAs play a role in determining the mesh-like morphology of condensates. TIS11B contains a double zinc finger RNA-binding domain (RBD). When we introduced different point mutations to disrupt RNA binding (Figure 1—figure supplement 1B–C; Lai et al., 2000), the mesh-like assemblies were turned into sphere-like condensates that are no longer intertwined with the ER (Figure 1B, Figure 1—figure supplement 1D, E). This suggested that the mesh-like organization of TIS granules requires the recruitment of mRNAs.
 
-## Mesh-like condensates in cells have highly mobile protein components
+### Mesh-like condensates in cells have highly mobile protein components
 
 Expression of the TIS11B RBD alone is not sufficient for condensate formation (Figure 1—figure supplement 2A). To assess the importance of the TIS11B RBD for mesh-like condensate formation, we tested if it results in network formation in the context of different multivalent domains. Expression of SUMO-SIM generates sphere-like condensates in the cytoplasm (Figure 1C; Banani et al., 2016). However, when we fused SUMO-SIM to the TIS11B RBD (SUMO-SIM-TIS), we observed a filamentous condensate that is not intertwined with the ER (Figure 1C, Figure 1—figure supplement 2B). This was an important result as it demonstrates that intertwinement with the ER is not necessary for mesh-like condensate formation.
 
@@ -50,15 +62,51 @@ Another well-studied multivalent domain is the intrinsically disordered region (
 
 Importantly, both FUS-TIS and SUMO-SIM-TIS show fast fluorescence recovery in FRAP experiments (Figure 1E), indicating that the filamentous networks have highly mobile protein components and are not aggregates. These experiments reveal that in the context of various multivalent domains the TIS11B RBD generates mesh-like condensates in vivo. Based on the current knowledge, this observation represents a paradox as it is thought that biomolecular condensates with dynamic protein components should be sphere-like because of surface tension (Hyman et al., 2014). However, the seemingly liquid-like condensates generated by FUS-TIS and SUMO-SIM-TIS have mesh-like morphologies in cells. This observation motivated us to investigate how filamentous but liquid-like condensates are generated. To do so, we chose to perform in vitro reconstitution experiments with FUS-TIS as a model system as it formed mesh-like condensates and showed a highly dynamic behavior in the FRAP experiments in cells.
 
-## Specific RNAs drive mesh-like condensate formation in vitro
+### Specific RNAs drive mesh-like condensate formation in vitro
 
 We recombinantly expressed and purified FUS-TIS (Figure 2—figure supplement 1A–C). FUS-TIS phase separates into sphere-like condensates that are liquid-like (Figure 2—figure supplement 1D, E). We then added to FUS-TIS in vitro transcribed 3′UTRs of mRNAs, which were recruited to FUS-TIS condensates (Figure 2A). The addition of the FUS 3′UTR did not change the morphology of the sphere-like condensates formed by FUS-TIS (Figure 2A). However, when we added 3′UTRs of TIS11B target mRNAs, including CD47, CD274 (PD-L1) or ELAVL1 (HuR) (Ma and Mayr, 2018), we observed formation of mesh-like FUS-TIS condensates (Figure 2A). Importantly, the mesh-like condensates do not represent aggregates as FUS-TIS protein showed fast fluorescence recovery in FRAP experiments performed at 2 and 16 hr after induction of phase separation (Figure 2B, Figure 2—figure supplement 1F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm. Five percent dextran was added into the phase separation buffer as crowding agent in all experiments. (B) Fluorescence recovery after photobleaching of mGFP-FUS-TIS (10 µM) mixed with CD47 3′UTR (50 nM) after 2 hr of incubation. Scale bar, 1 µm. (C) Same as (A), but in the presence of different RNA concentrations. (D) Same as (A), but additional RNAs are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the FUS-TIS chimeric protein. (B) SDS-PAGE of the purified FUS-TIS protein. FUS-TIS was tagged with His-MBP-mGFP at the N-terminus and with Strep-tag II at the C-terminus and purified from E. coli. mGFP: monomeric GFP. (C) Size exclusion chromatography of FUS-TIS protein. (D) Phase separation of purified mGFP-FUS-TIS protein at the indicated concentrations was induced by reducing the salt concentration from 600 mM to 150 mM through dilution; shown is a 2 hr time point. The His-MBP tag was cleaved off before the phase separation experiment using TEV protease. Scale bar, 10 µm. (E) Snapshots showing a fusion event of mGFP-FUS-TIS condensates at 2 hr. (F) Fluorescence recovery after photobleaching of mGFP-FUS-TIS (10 µM) mixed with CD47 3′UTR (50 nM) after 16 hr of incubation. Scale bar, 2 µm. (G) Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 2 hr of incubation. Scale bar, 2 µm.
 
 All phase separation experiments were performed at two time points (after 2 and 16 hr of incubation) in the presence of 5% dextran and at RNA concentrations spanning three orders of magnitude. Network formation was already observed at the early time point, but longer incubation led to formation of a more extensive network (Figure 2A, C, Figure 2—figure supplements 1G and 2A–D). Although the minimum RNA concentration required to induce network formation varied, these experiments revealed that the capacity for network formation is an intrinsic property of the RNA as sphere-forming RNAs did not form networks even at high concentrations. Instead, at high RNA concentrations, we often observed inhibition of phase separation, as was observed previously (Figure 2C, Figure 2—figure supplement 1G; Maharana et al., 2018).
 
 The three network-forming RNAs are longer than the sphere-forming RNA (Figure 2A). To examine if network formation is only accomplished by long RNAs, we tested 19 additional RNAs with a length spanning 500–3000 nt. All longer RNAs formed networks, but we observed both network and sphere formation for RNAs shorter than 2000 nt, indicating that network formation is not only determined by the length of the RNA (Figures 2D and 3A, Figure 3—figure supplements 1A–C and 2A, Figure 3—source data 1). We did not observe phase separation when using high concentrations of the RNAs alone without the addition of FUS-TIS protein (Figure 3—figure supplement 2B).
 
-## RNAs that are predicted to have large disordered regions have a high propensity to induce network formation
+![Figure 3.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-v3.jpg)
+
+**Figure 3.:** (A) Distribution of length of sphere- and network-forming RNAs. Mann–Whitney test, Z = −2.76, p=0.004. See also Figure 3—source data 1. (B) Number of AU-rich elements in sphere- and network-forming RNAs with a length shorter than 2000 nt. See also Figure 3—source data 1. Mann–Whitney test, Z = 0.190, p=0.258, NS, not significant. (C) Distribution of GC-content of sphere- and network-forming RNAs with a length shorter than 2000 nt. See also Figure 3—source data 1. Mann–Whitney test, Z = 0.566, p=0.605. (D) Centroid RNA secondary structure of TLR8 3′UTR predicted by RNAfold. The color code represents base-pairing probability. (E) Same as (D), but the TNFSF11 3′UTR is shown. (F) Normalized ensemble diversity (NED) values of sphere- and network-forming RNAs. See Figure 3—source data 1. Mann–Whitney test, Z = −3.3, ***p<0.0003. (G) Experimental validation of N = 24 in vitro transcribed RNAs whose ability for network formation was predicted by NED. Sphere formation is indicated in dark gray, whereas network formation is indicated in light gray. See Figure 3—source data 1. Mann–Whitney test was performed on the experimental validation, Z = −2.8, ***p=0.004. (H) Same as (D), but the mutant TNFSF11 3′UTR is shown. (I) Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of 150 nM of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm. (A) RNAs with a length of approximately 3000 nt are shown. (B) RNAs with a length between 1500 and 2000 nt are shown. (C) RNAs with a length of approximately 1000 nt are shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm. (A) RNAs with a length of approximately 500 nt are shown. (B) Representative confocal images of Cy5-labeled RNAs at the indicated concentrations. Scale bar, 5 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) Centroid RNA secondary structure of two sphere-forming 3′UTRs predicted by RNAfold. The color code represents base-pairing probability. See also the URLs in Figure 3—source data 1. (C, D) As in (A), but centroid RNA secondary structure of two network-forming 3′UTRs predicted by RNAfold. (E) As in (A), but sequence and centroid RNA secondary structure of a tRNA is shown. (F) As in (A), but sequence and centroid RNA secondary structure of six MS2-binding sites is shown.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Totally 10 out of 11 RNAs with a high NED value were predicted correctly to induce network formation. Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the absence or presence of the indicated in vitro transcribed RNAs after 16 hr of incubation. Scale bar, 2 µm. The length of all RNAs is approximately 1000 nt. The minimum concentration for induction of network formation varies. The GLYATL3 3′UTR is unable to induce network formation even at high concentrations. (B) Totally 9 out of 13 RNAs with a low NED value were predicted correctly to induce sphere-like condensate formation. As in (A).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Number of AU-rich elements in RNAs with high normalized ensemble diversity (NED) or low NED values. See also Figure 3—source data 1. Mann–Whitney test, NS, not significant. (B) Nucleotide sequence of the TNFSF11 3′UTR mutant. Two 15-nt oligonucleotides (red and magenta bars) that are complementary to upstream sequences (red and magenta fonts) were added into the TNFSF11 3′UTR. This reduces the unstructured regions and increases the local secondary structure.
+
+### RNAs that are predicted to have large disordered regions have a high propensity to induce network formation
 
 To identify the responsible determinants for network formation, we focused on the 18 3′UTRs that were shorter than 2000 nt and correlated their ability for network formation with several parameters. Within this size-restricted cohort, the number of AU-rich elements or the GC-content of the RNA had no influence on network formation (Figure 3B, C). We then used RNAfold to predict the secondary structure of the RNAs. RNAfold predicts the minimum free energy secondary structure and the centroid structure, which is the RNA structure that contains a minimal base-pair distance to all structures in the thermodynamic ensemble (Gruber et al., 2008). Every RNA is predicted to have unstructured regions (indicated by the green and blue colors) and regions of strong local structure (red color code; Figure 3D, E, Figure 3—figure supplement 3A–D; Aw et al., 2016). We observed a strong association between the propensity of an RNA to induce network formation and the predicted ‘unstructured-ness’ of the RNA. For sphere-inducing RNAs, the majority of their nucleotides are predicted to form strong local structures, whereas RNAs with a high propensity for network formation are predicted to contain large, unstructured regions (Figure 3D, E, Figure 3—figure supplement 3A–D, Figure 3—source data 1). We call the unstructured regions ‘large disordered regions’ (LDRs) of mRNAs.
 
@@ -66,7 +114,7 @@ Can we use RNA-fold-based structure prediction as a tool to identify network-for
 
 To test the predictive value of NED, we chose a new set of 24 AU-rich element-containing 3′UTRs purely based on their NED values and tested their network-forming abilities. We found that 19/24 (79%) of the tested RNAs were predicted correctly with respect to their sphere- or network-forming abilities (Figure 3G, Figure 3—figure supplement 4A, B, Figure 3—source data 1). As the number of AU-rich elements in both groups is comparable (Figure 3—figure supplement 5A), the high success rate strongly suggests that LDRs of 3′UTRs determine network formation. To test this prediction experimentally, we performed a loss-of-function experiment. We used the TNFSF11 3′UTR that contains several LDRs (Figure 3E) and introduced strong local base-pairing by the addition of two oligonucleotides that were perfectly complementary to upstream regions and did not disrupt AU-rich elements (Figure 3—figure supplement 5B). The TNFSF11 3′UTR mutant has stronger local structures indicated by increased base-pairing and a lower NED value, and it has largely lost the ability for network formation (Figure 3H, I). Taken together, these results support a model wherein a high diversity of predicted structural conformations correlates with the extent of LDRs in RNAs and is associated with the formation of mesh-like condensates.
 
-## RNAs work additively to induce formation of granule networks
+### RNAs work additively to induce formation of granule networks
 
 The minimum RNA concentration for network formation was 20 nM. It was observed for the CD47 and ELAVL1 3′UTRs and corresponds to 27 and 32 ng/µl, respectively (Figure 2C, Figure 2—figure supplement 1G). This is higher than the mRNA concentration in the cytoplasm of mammalian cells, which was estimated to be 8 pM to 8 nM (9.5 pg/µl to 9.5 ng/µl; see Materials and methods) (Chen et al., 2015; Chen et al., 2016; Maharana et al., 2018). As TIS granules and L-bodies contain many mRNAs (Ma and Mayr, 2018; Neil et al., 2020), we hypothesized that multiple RNAs together may contribute to network formation. Therefore, we tested whether two RNAs co-localize in the network. Labeling of several pairs of RNAs with two different fluorescent dyes showed that they co-localize (Figure 4A). Furthermore, the mixing of suboptimal amounts of four network-forming RNAs, together with FUS-TIS, resulted in network formation, indicating that the different RNAs have an additive effect (Figure 4B). Importantly, mixing 10 mRNAs together with FUS-TIS only required 2 nM (0.7–3.2 ng/µl) of each mRNA which is substantially lower than the average mRNA expression in cells (Figure 4B). These data indicate that the RNA concentrations used for the in vitro experiments are in a range that is physiologically relevant.
 
@@ -74,27 +122,174 @@ The minimum RNA concentration for network formation was 20 nM. It was observed f
 
 **Figure 4.:** (A) RNAs co-localize in mesh-like condensates. Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of two different in vitro transcribed RNAs that were labeled with Cy3 or Cy5 fluorescent dye, respectively. Images were taken after 16 hr of incubation. Scale bar, 5 µm. (B) Representative confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of a single network-forming RNA at suboptimal concentration or in the presence of 4 or 10 network-forming RNAs, each at suboptimal concentration. Images were taken after 16 hr of incubation. Scale bar, 2 µm.
 
-## Extensive intermolecular RNA–RNA interactions are required for formation of dynamic mesh-like condensates
+### Extensive intermolecular RNA–RNA interactions are required for formation of dynamic mesh-like condensates
 
 Next, we set out to address how RNAs with LDRs induce networks. We had observed that RNAs that are unable to induce networks are predicted to form strong local structures, meaning that they have a high propensity for intramolecular interactions (Figure 5A). This led us to hypothesize that network formation is caused by intermolecular RNA–RNA interactions mediated by the LDRs of mRNAs (Figure 5B). To test this, we performed native gel electrophoresis with sphere-forming and network-forming RNAs. We observed the appearance of diverse RNA species with high molecular weight only with the network-forming RNAs (Figure 5C). The observed smear is not due to degradation as the denaturing gel demonstrates that the used RNAs are intact (Figure 5C). This suggested that mRNAs with LDRs form higher-order RNA interactions in vitro.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig5-v3.jpg)
+
+**Figure 5.:** (A) Schematic of RNAs with strong local secondary structures that are predicted to induce spherical condensates. (B) Schematic of RNAs with large disordered regions that form extensive intermolecular RNA–RNA interactions that are predicted to form network-like condensates. (C) Native and denaturing agarose gel electrophoresis of sphere-forming (lanes 1–3) and network-forming (lanes 4–6) RNAs (5 µM, each [1.7, 1.6, 1.9, 1.7, 1.8, 1.7 µg/µl]). (D) Schematic of a complex RNA network characterized by extensive intermolecular RNA–RNA interactions mediated by two dimerization elements (D1 and D2) that were added to structured RNAs. (E) Native and denaturing agarose gel electrophoresis of the indicated RNAs (1 µM, each [326, 154, 345, 193 ng/µl]). (F) Representative images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of the indicated Cy3- or Cy5-labeled RNAs generated by in vitro transcription after 16 hr of incubation. Scale bar, 2 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The TLR8 3′UTR (gray) and the MYC 3′UTR (green) are predicted by RNAfold to dimerize. The secondary structure prediction shows extensive base-pairing between the two RNAs, indicated by the black marks. The nucleotide positions that demarcate the interaction sites are indicated by arrows, and the numbers show their positions in their respective 3′UTRs. The MYC 3′UTR was added directly downstream of the TLR8 3′UTR for structure prediction. Although both RNAs are able to base-pair, they are unable to form a complex RNA network. (B) Schematic of the D1 RNA dimerization motif. Shown is the sequence and base-pairing of the directional RNA dimerization motif D1 that was obtained from the CRISPR/Cas9 system and represents tracrRNA/crRNA. The two components form a heterologous RNA–RNA interaction. (C) Schematic of the D2 RNA dimerization motif. Shown is the sequence and base-pairing of the RNA dimerization motif D2, which is the HIV dimerization motif. It forms a homologous RNA–RNA interaction. (D) Centroid RNA secondary structure of the TLR8 3′UTR with the RNA dimerization elements D1 and D2 as predicted by RNAfold is shown. The color code represents base-pairing probability. NED: normalized ensemble diversity. (E) As in (D), but centroid RNA secondary structure of the MYC 3′UTR with the RNA dimerization elements D1 and D2 as predicted by RNAfold is shown.
 
 To investigate if intermolecular RNA–RNA interactions are indeed the cause of mesh-like condensates, we performed in vitro reconstitution experiments with RNAs that were designed to form multivalent RNA–RNA interactions (Figure 5D). We selected two 3′UTRs (TLR8 and MYC) that are unable to induce network formation (Figure 2D). However, they are able to dimerize, and this feature provides one degree of multivalency (Figure 5D, E, Figure 5—figure supplement 1A). We added two different RNA dimerization elements to their 5′ and 3′ ends to increase RNA multivalency (Figure 5D; Figure 5—figure supplement 1B, C). Adding RNA dimerization elements did not substantially change the NED values of TLR8 and MYC 3′UTRs. (Figure 5—figure supplement 1D, E), but this strategy enables intermolecular RNA–RNA interactions and allows the formation of a complex RNA network, demonstrated by native gel electrophoresis (Figure 5D, E). The RNA dimerization elements were derived from tracrRNA/crRNA (D1) and from HIV (D2) (Figure 5—figure supplement 1B, C; Skripkin et al., 1994; Jinek et al., 2012; Paillart et al., 2004; Khan et al., 2019).
 
 A phase separation experiment with FUS-TIS confirmed that the addition of the two predominantly structured 3′UTRs (TLR8 and MYC) generates sphere-like condensates, whereas the addition of RNAs capable of forming a crosslinked RNA network (D1-TLR8-D2 and D1-MYC-D2), which we call an RNA matrix, induces formation of mesh-like FUS-TIS condensates (Figure 5F). Taken together, this in vitro reconstitution experiment demonstrated that an extensive, multivalent RNA interaction network can drive the formation of mesh-like condensates.
 
-## Formation of a crosslinked mRNA network is sufficient for the reconstitution of mesh-like condensates in vivo
+### Formation of a crosslinked mRNA network is sufficient for the reconstitution of mesh-like condensates in vivo
 
 To investigate if mesh-like condensates can also be reconstituted in vivo, we used the same RNAs (TLR8 and MYC 3′UTRs with and without dimerization elements) together with SUMO-SIM as protein component. SUMO-SIM is especially suitable for this approach as all SUMO-SIM condensates are sphere-like. Our goal was to recruit mRNAs that are able to form a pervasive RNA interaction network into SUMO-SIM condensates using the MS2 system (Bertrand et al., 1998; Berkovits and Mayr, 2015) as this should turn the sphere-like condensates into mesh-like condensates (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig6-v3.jpg)
+
+**Figure 6.:** (A) Representative confocal image of in vivo reconstitution of mesh-like condensates using the MS2 system. mCherry-SUMO-SIM fused to the MS2 coat protein was transfected into HeLa cells. Constructs containing eGFP-fused 3ʹUTRs of TLR8 and MYC with MS2-binding sites and with the RNA dimerization elements D1 and D2 were co-transfected. Bottom: higher magnification of the indicated regions. Scale bars, 5 µm (overview) and 2 µm (zoom-in). Images were taken 16 hr after transfection. mC: mCherry. (B-D) As in (A), but one of the indicated components was omitted. (E) Quantification of the fraction of cells with mesh-like granules in the conditions shown in (A–D). Mann–Whitney test: Z = −3.5, **p=0.001. (F) Confocal live-cell imaging of HeLa cells after the transfection of mCherry-tagged TIS-HuR chimera, containing the RRM1/2 of HuR as well as the N- and C-terminal regions of TIS11B. All granules are mesh-like. Scale bars, 5 µm (overview) and 1 µm (zoom-in). (G) Same as (F), but after transfection of mGFP-tagged FUS-HuR chimera, containing the RRM1/2 of HuR as well as the FUS IDR. All granules are mesh-like.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The number of AU-rich elements in 3′UTRs correlates with 3′UTR length. The dataset contains all mRNAs expressed in HeLa cells. 3′UTRs without AU-rich elements, N = 2504, 3′UTRs with 1–3 AU-rich elements, N = 3081, 3′UTRs with more than three AU-rich elements, N = 2889 are shown. Kruskal–Wallis test: Χ2 = 4414, p=0. (B) As in (A). The number of AU-rich elements in 3′UTRs correlates with normalized ensemble diversity (NED). Kruskal–Wallis test: Χ2 = 315, p=4×10−69. (C) The number of HuR-binding sites in 3′UTRs as assessed by PAR-CLIP correlates with 3′UTR length. 3′UTRs without HuR-binding sites, N = 3860, 3′UTRs with one or two HuR-binding sites, N = 2030, 3′UTRs with more than two HuR-binding sites, N = 2584 are shown. Kruskal–Wallis test: Χ2 = 1538, p=0. (D) As in (C). The number of HuR-binding sites correlates with NED. Kruskal–Wallis test: Χ2 = 169, p=4×10−37. (E) Confocal live-cell imaging of HeLa cells after the transfection of mGFP-tagged HuR RNA-binding domain. mCherry-SEC61B was co-transfected to visualize the endoplasmic reticulum. The white dotted line demarcates the nucleus. Right: higher magnification of the indicated region. Scale bars, 5 µm (overview) and 1 µm (zoom-in).
+
 We fused SUMO-SIM to the MS2 coat protein, which can be considered as a selective RBD. The MS2 coat protein binds to RNA stem loops that were introduced in both TLR8 and MYC 3′UTRs. This system allows phase separation as SUMO-SIM is a multivalent protein and at the same time recruits the two structured 3′UTRs into the condensate (Figure 6B). In the presence of all the required elements (SUMO-SIM fused to MS2 coat protein, TLR8 and MYC 3′UTRs fused to MS2-binding sites, and the presence of the dimerization elements D1 and D2 in the RNAs), we observed mesh-like condensate formation in vivo, indicating that we are able to reconstitute mesh-like condensates in living cells (Figure 6A). Omission of MS2-binding sites or the MS2 coat protein prevents recruitment of the mRNAs to the multivalent protein and completely prevents the formation of mesh-like condensates, indicating that RNA is absolutely required for mesh-like condensate formation (Figure 6C, D). Omission of the two RNA dimerization elements from the system still allows recruitment of the RNAs to the multivalent protein. As the RNAs are able to dimerize, they generate mesh-like condensates in a few cases, but form sphere-like condensates in the majority of cases (Figure 6B, E). However, the presence of RNA dimerization elements that allow the generation of an extensive RNA interaction network that interacts with a multivalent protein substantially increases formation of mesh-like condensates in living cells (Figure 6A, E). These in vivo reconstitution experiments confirm that phase separation of an RNA-binding protein, together with mostly structured RNAs, predominantly generates sphere-like condensates, whereas phase separation of the same RNA-binding protein bound to RNAs with an ability to generate an extensive interaction network form mesh-like condensates in living cells.
 
-## Various chimeric proteins induce formation of mesh-like condensates in cells
+### Various chimeric proteins induce formation of mesh-like condensates in cells
 
 In the in vivo reconstitution experiments, we did not use the TIS11B RBD, but we functionally replaced it by the recruitment of RNA matrix-forming RNAs. This suggests that other RBDs may also be able to generate mesh-like condensates in cells. TIS11B binds to AU-rich elements (Peng et al., 1998). Transcriptome-wide analyses showed that mRNAs with several AU-rich elements in their 3′UTRs have longer 3′UTRs and higher NED values (Figure 6—figure supplement 1A, B, Figure 6—source data 1). HuR is an RNA-binding protein that also binds to U- or AU-rich elements (Lebedeva et al., 2011; Mukherjee et al., 2011; Uren et al., 2011). Analyzing HuR PAR-CLIP data showed that HuR targets also have longer 3′UTRs and higher NED values (Figure 6—figure supplement 1C, D). Therefore, we examined if the HuR RBD is capable of forming mesh-like condensates in cells. In the context of two multivalent domains (TIS11B N/C-terminus or FUS-IDR), the RRM1/2 of HuR was sufficient for the generation of mesh-like condensates (Figure 6F, G, Figure 6—figure supplement 1E). Taken together, we showed that several chimeric proteins that consist of multivalent domains that are paired with RBDs that bind to RNA matrix-forming RNAs can form mesh-like condensates in cells (Table 1).
 
-## An RNA matrix prevents complete fusion of condensates
+**Table 1.**
+ Chimeric proteins investigated for mesh-like condensate formation.RBDmut, RNA-binding domain mutant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Multivalent domain</th>
+      <th>RNA-binding domain</th>
+      <th>RNA</th>
+      <th>Diffusive pattern</th>
+      <th>Sphere-like condensate</th>
+      <th>Mesh-like condensate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>TIS11B</td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HuR</td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FUS IDR</td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SUMO-SIM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TIS11B-N/C</td>
+      <td>TIS11B RBDmut</td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TIS11B-N/C</td>
+      <td>TIS11B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>TIS11B-N/C</td>
+      <td>HuR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>FUS IDR</td>
+      <td>TIS11B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>FUS IDR</td>
+      <td>HuR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>SUMO-SIM</td>
+      <td>TIS11B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>SUMO-SIM</td>
+      <td>MS2</td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SUMO-SIM</td>
+      <td>MS2</td>
+      <td>Singlevalent RNA</td>
+      <td></td>
+      <td>√</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SUMO-SIM</td>
+      <td>MS2</td>
+      <td>Multivalent RNA</td>
+      <td></td>
+      <td></td>
+      <td>√</td>
+    </tr>
+  </tbody>
+</table>
+
+### An RNA matrix prevents complete fusion of condensates
 
 To start to get at the mechanism of mesh-like condensate formation, we imaged the early phases of condensate fusion with sphere- and network-forming mRNAs. As expected, the condensates that contain the predominantly structured 3′UTR of TLR8 fully fuse within 90 s (Figure 7A). In contrast, when two condensates that contain RNAs with LDRs, such as the 3′UTR of CD47, come into contact, they largely retain their shape and do not fully mix (Figure 7B). However, the two condensates connect at the contact sites; this enables linkage of individual condensates and allows them to grow into large assemblies with irregular shapes (Figure 7C). It is worth pointing out that despite the filamentous condensate shape the protein components are still highly mobile as was shown by FRAP experiments performed at 2 and 16 hr after mixing (Figure 2B, Figure 2—figure supplement 1F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig7-v3.jpg)
+
+**Figure 7.:** (A) Confocal 3D time-lapse imaging of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of the TLR8 3′UTR (200 nM) after 30 min of incubation. Scale bar, 2 µm. Snapshots show a fusion event of two FUS-TIS condensates. (B) Same as (A), but in the presence of the CD47 3′UTR (30 nM). Snapshots show the contact of two FUS-TIS condensates. As they do not fully mix, they grow into condensates with irregular shapes. The contact site is indicated by the white arrow. (C) Same as (B). Snapshots show two fusion events between FUS-TIS condensates 1 and 2 and between 2 and 3 and demonstrate how irregularly shaped condensates grow into large filamentous networks. (D) Representative high-resolution confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of Cy5-labeled CD47 3ʹUTR RNA after 16 hr of incubation. Scale bar, 1 µm. (E) Model showing how structured RNAs induce spherical condensates and how RNAs with large unstructured regions induce formation of filamentous and mesh-like condensates. Purple indicates the condensate. For details, see text. (F) Fluorescence recovery after photobleaching of mGFP-FUS-TIS and the indicated Cy5-labeled RNAs performed at 2 hr after setting up the phase separation experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64252/elife-64252-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative high-resolution confocal images of phase separation experiments using purified mGFP-FUS-TIS (10 µM) in the presence of Cy5-labeled TLR8 3′UTR RNA after 16 hr of incubation. Scale bar, 1 µm. (B) Fluorescence recovery after photobleaching of mGFP-FUS-TIS and the indicated Cy5-labeled RNAs at 16 hr after setting up the phase separation experiments.
 
 To get a better understanding of the morphology of the mRNAs within sphere- and mesh-like condensates, we performed high-resolution imaging. We observed that the distribution of sphere-forming mRNAs is relatively uniform in the FUS-TIS condensates (Figure 7—figure supplement 1A). In contrast, the network-forming mRNAs are unevenly distributed and generate an underlying scaffold for the phase-separated protein that resembles a skeleton (Figure 7D).
 
@@ -112,23 +307,23 @@ Our results further indicate that a large fraction of 3′UTRs has high RNA mult
 
 It remains to be shown if pervasive RNA–RNA interactions are the basis for the mesh-like morphology of TIS granules. It is possible that binding of the TIS11B RBD to its target RNA could induce a conformational change in TIS11B, thus inducing condensation and branching. Such a mechanism was recently shown to be the case for G3BP1 that forms sphere-like granules (Yang et al., 2020; Sanders et al., 2020; Guillén-Boixet et al., 2020). Alternatively, the RNAs that are bound by TIS11B may have a high propensity for intermolecular RNA–RNA interactions, thus creating mesh-like TIS granules. This model is supported by our transcriptome-wide analysis on NED values. We found that the target mRNAs of TIS11B – which are characterized by the presence of multiple AU-rich elements in their 3′UTRs – have higher NED values than 3′UTRs without AU-rich elements (Figure 6—figure supplement 1A, B). This predicts that mRNAs that are enriched in TIS granules are less structured and have a higher tendency to form multivalent RNA–RNA interactions, thus making it likely that an underlying RNA matrix causes the mesh-like morphology of TIS granules.
 
-## 3′UTRs may fulfill structural roles in the cytoplasm
+### 3′UTRs may fulfill structural roles in the cytoplasm
 
 Our data suggest that, in addition to acting as information templates for protein synthesis, mRNAs and, in particular, 3′UTRs may further fulfill roles as structural elements for cytoplasmic RNA granules. This is reminiscent of the scaffolding roles of lncRNAs in nuclear bodies, including paraspeckles (Chujo et al., 2016). Both 3′UTRs and lncRNAs have a similar AU-content and hexamer composition that differs substantially from the coding region. This finding provides further support for the scaffolding role of 3′UTRs because a higher AU-content is associated with decreased RNA structure and higher RNA flexibility (Niazi and Valadkhan, 2012). Here, we identified two RBDs (TIS11B and HuR) that both bind to longer 3′UTRs with high NED values that are able to form mesh-like condensates in cells. Therefore, it is likely that interacting 3′UTRs do not only act as RNA matrix for TIS granules and L-bodies, but may also scaffold additional cytoplasmic membraneless compartments, possibly on other membrane surfaces or on the cytoskeleton (Smith et al., 2020; Béthune et al., 2019).
 
 Formation of filamentous and mesh-like condensates is not restricted to the chimeric RNA-binding proteins used here but was also observed by others (Lin et al., 2015; Boeynaems et al., 2019; Smith et al., 2020; Neil et al., 2020). For example, the mixing of a PR30 peptide with two homopolymeric RNA species with perfect base-pairing capabilities (poly-rA plus poly-rU) induced formation of filamentous condensates (Boeynaems et al., 2019). The PR30 condensates showed little fluorescent recovery upon FRAP, thus, suggesting that physical cross-linking of the base-paired RNA structures and the PR molecules arrests phase separation (Boeynaems et al., 2019). It is likely that this represents a pathological feature of PR molecules that were shown previously to reduce FRAP recovery in many phase separation systems (Lee et al., 2016). In contrast, in our system, we used the TIS11B and HuR RBDs that bind to 3′UTRs that contain mixtures of structured and unstructured regions under physiological conditions. These observations indicate that some filamentous condensates are solid, whereas others are dynamic, and their material properties are regulated by the extent and strength of RNA–protein and RNA–RNA interactions (Ferrandon et al., 1997; Jambor et al., 2011; Trcek et al., 2015; Van Treeck et al., 2018; Trcek et al., 2020).
 
-## The large surface area of mesh-like condensates supports reactions on the surface
+### The large surface area of mesh-like condensates supports reactions on the surface
 
 Although the physiological relevance of mesh-like condensates is currently largely unknown, our study indicates that mesh-like condensates cannot simply be viewed as aggregation. Surface tension enforces a low surface to volume ratio for liquid-like spheres (Hyman et al., 2014). In contrast, mesh-like condensates have a larger surface to volume ratio. This gives them an advantage for reactions that occur on their surface. As TIS granules are intertwined with the ER, they share a large interface (Ma and Mayr, 2018). Our previous data suggests that the mesh-like shape of the TIS granule network is necessary for its function during translation of membrane proteins. We showed previously that translation in the TIGER domain enables protein complex formation of membrane proteins and promotes their trafficking to the plasma membrane (Ma and Mayr, 2018).
 
-## Intermolecular mRNA interactions and unstructured mRNA regions may have additional biological relevance
+### Intermolecular mRNA interactions and unstructured mRNA regions may have additional biological relevance
 
 These observations may indicate that the mesh-like shape of TIS granules is especially important for reactions that occur in the interface with the ER. However, also mRNAs that encode non-membrane proteins are translated in TIS granules. As translation of these proteins does not require them to be incorporated into membranes, it seems that for these reactions the shape of TIS granules is irrelevant. Rather, these reactions may take advantage of the local environment generated by TIS granules where a connected membraneless compartment may enable the enriched protein components to exchange relatively freely, thus allowing the sharing of RNA-binding proteins and chaperones (Ma and Mayr, 2018).
 
 One potential biological implication for intermolecular mRNA–mRNA interactions in TIS granules could be to facilitate co-translational protein complex assembly. Although the majority of protein complexes form co-translationally in yeast (Shiber et al., 2018), it is unclear how the protein subunits come into proximity. It is possible that the physical interaction between LDRs in 3′UTRs provides the necessary proximity of two translating ribosomes and their nascent peptide chains to promote complex assembly (Shiber et al., 2018; Mayr, 2018).
 
-## The morphogenesis of organelle networks is driven by the interplay of two opposing forces
+### The morphogenesis of organelle networks is driven by the interplay of two opposing forces
 
 We noticed that the generation of mesh-like networks – either lipid membrane-enclosed or membraneless – is conceptually similar. Our model proposes that mesh-like condensates with dynamic protein components are generated from the interplay of two forces (Figure 7E). One force promotes fusion and is driven by the surface tension of the liquid condensates. The other force prevents full fusion and is provided by the underlying RNA matrix that forms a semirigid skeleton and only allows fusion of the condensates at the contact sites. Such interplay of two antagonistic forces was also observed upon in vitro reconstitution of the membrane-enclosed tubular ER network (Powers et al., 2017). Sphere-like liposomes were mixed with proteins that exert two opposing forces: One of the proteins promotes liposome fusion and network assembly, whereas the other promotes fragmentation and disassembly. Taken together, these data indicate that membrane-enclosed and membraneless network structures result from the balance of two opposing forces.
 
@@ -136,11 +331,693 @@ RNA is probably the most versatile molecule in cells (Mayr, 2017). Through RNA m
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Jonathan S. Weissman</td>
+      <td>N/A</td>
+      <td>A human cervical cancer cell line (female origin).</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NEB</td>
+      <td>C2527H</td>
+      <td>Chemically competent E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T9026, RRID:AB_477593</td>
+      <td>WB (1:5000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab125096, RRID:AB_11133266</td>
+      <td>WB (1:5000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HuR (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 07-1735, RRID:AB_1977173</td>
+      <td>WB (1:2000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD anti-rabbit IgG secondary antibody (donkey polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-68073, RRID:AB_10954442</td>
+      <td>WB (1:10,000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW anti-mouse IgG secondary antibody (donkey polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926–32212, RRID:AB_621847</td>
+      <td>WB (1:10,000).</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-SP-GFP-CD47-LU</td>
+      <td>Berkovits and Mayr, 2015</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-GFP-ELAVL1-LU</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-SP-GFP-CD274-UTR</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-SP-GFP-FUS-UTR</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-GFP-SEC61B</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-SEC61B</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS11B</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS11B CC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS11B FF</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS11B KK</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS11B RK</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mCherry-TIS-HuR RBD</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pmCherry-SUMO10-SIM5</td>
+      <td>Liam J. Holt (NYU)</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pmCherry-SUMO10-SIM5-TIS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA-mGFP-FUS-TIS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a</td>
+      <td>Dirk Remus (MSKCC)</td>
+      <td>N/A</td>
+      <td>Bacterial expression vector.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDZ2087</td>
+      <td>Addgene</td>
+      <td>Cat# 92414</td>
+      <td>Bacterial expression of TEV protease.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-6xHis-MBP-mGFP-FUS-TIS-Strep-Tag II</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Bacterial expression of 6xHis-MBP-mGFP-FUS-TIS-Strep Tag II. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-CD47 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-ELAVL1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-CD274 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-FUS 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase- based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-CD44 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-VSIG10 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-IL10 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TNFSF11 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-GPR39 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TLR8 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-GPR34 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TNFAIP6 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-MYC 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-PLA2G4A 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-HEATR5B 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-PPP1R3F 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-DRD1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-FAM72B 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-MCOLN2 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TSPAN13 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-LHFPL6 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-FAM174A 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-VPS29 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-ADPGK 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-ASPN 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-CASP8 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-CLCA2 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-EOMES 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-ESCO1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-GLYATL3 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-HNRNPH3 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-HOGA1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-LPAR4 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-LRBA 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-LYPLAL1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-ODF2 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-PRKDC 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-RHOA 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SHQ1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SLC39A6 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SLC5A9 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SMIM3 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SNTN 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-SOSTDC1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-STBD1 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TP53TG3 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-TTC17 3′UTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>T7 RNA polymerase-based in vitro transcription. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Biotinylated RNA oligo, TNFα ARE-1</td>
+      <td>Ma and Mayr, 2018</td>
+      <td>RNA oligonucleotides</td>
+      <td>5′-CACUUGUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUA −3′</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FUS-TIS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Recombinant 6xHis-MBP-mGFP-FUS-TIS-Strep Tag II protein purified from bacteria. See Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>New England Biolab</td>
+      <td>Cat# B9000S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin C1 beads</td>
+      <td>Invitrogen</td>
+      <td>Cat# 65002</td>
+      <td>Streptavidin pulldown assay.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Lightning Multi Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# 210513</td>
+      <td>Site-directed mutagenesis.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAscript T7 Transcription Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# AMB13345</td>
+      <td>In vitro T7 transcription.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Star Bradford Protein Assay Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 5000202</td>
+      <td>Bradford assay –protein quantitation.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran T500</td>
+      <td>PHARMACOSMOS</td>
+      <td>Cat# 40030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desthiobiotin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D1411-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zinc chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 793523-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imidazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I2399-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Gold Biotechnology</td>
+      <td>Cat# I2481-EZ10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMSF</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11359061001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 10708984001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>NIH</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN</td>
+      <td>ZEISS</td>
+      <td>https://www.zeiss.com/microscopy/int/downloads/zen.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Odyssey</td>
+      <td>LI-COR Biosciences</td>
+      <td>https://www.licor.com/bio/products/imaging_systems/odyssey/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA Agarose</td>
+      <td>Qiagen</td>
+      <td>Cat# 30230</td>
+      <td>His tag purification.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>StrepTrap column</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28907547</td>
+      <td>Strep tag II purification.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra-centrifugal filters-50K</td>
+      <td>EMD Millipore</td>
+      <td>Cat# UFC905024</td>
+      <td>Concentrating protein samples.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>384-well glass-bottom microplate</td>
+      <td>Greiner Bio-One</td>
+      <td>Cat# M4437-16EA</td>
+      <td>Glass-bottom microplate for confocal imaging.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The human cervical cancer cell line, HeLa, was a gift from the lab of Jonathan S. Weissman (UCSF), provided by Calvin H. Jan. Cells were maintained at 37°C with 5% CO2 in Dulbecco’s Modified Eagle Medium containing 4500 mg/l glucose, 10% heat-inactivated fetal bovine serum, 100 U/ml penicillin, and 100 mg/ml streptomycin. The cell line has not been authenticated. The cell line is free of mycoplasma. Mycoplasma detection was performed by DAPI staining.
 
-## Constructs
+### Constructs
 
 All primers are reported in Table 1. All PCR reactions were performed using Q5 High Fidelity DNA polymerase (NEB). The basis for all mammalian expression vectors was pc-DNA-puro described previously (Ma and Mayr, 2018). The following inserts were also described previously mCherry-TIS11B, mCherry-SEC61B, eGFP-SEC61B, eGFP-CD47-3′UTR, eGFP-ELAVL1-3′UTR, eGFP-FUS-3′UTR, and eGFP-CD274-3′UTR (Ma and Mayr, 2018).
 
@@ -178,19 +1055,19 @@ To generate the eGFP-D1-3ʹUTR of MYC-D2-6xMS2 construct (MYC 3ʹUTR with RNA di
 
 To generate the MS2-mCherry-SUMO10-SIM5 (MS2 coat protein fused to the N-terminus of mCherry-SUMO10-SIM5), MS2-mCherry was PCR-amplified from the pcDNA-MS2-mCherry-HuR vector (Berkovits and Mayr, 2015) with primers MS2-SUMO-SIM F and MS2-SUMO-SIM R. pmCherry-SUMO10-SIM5 vector was digested with AgeI and BsrGI to release the mCherry fragment. The MS2-mCherry was cloned into the digested pmCherry-SUMO10-SIM5 vector with AgeI and BsrGI restriction sites.
 
-## Transfections
+### Transfections
 
 Lipofectamine 2000 (Invitrogen) was used for all transfections.
 
-## RNA oligonucleotide pulldown
+### RNA oligonucleotide pulldown
 
 To examine the RNA-binding activity of TIS11B WT and TIS11B RBD mutants, RNA oligonucleotide pulldown was performed as described previously (Ma and Mayr, 2018). A 3′-biotinylated RNA oligonucleotide of the TNFα ARE-1 (AU-rich element) was purchased from Dharmacon. mCherry-tagged constructs were transfected into HeLa cells with or without 3′-biotinylated RNA oligonucleotides. Twenty-four hours after transfection, HeLa cells were lysed with 200 µl ice-cold NP-40 lysis buffer (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 1% NP-40, 1 mM EDTA) for 30 min. Then, cell lysates were spun down at 20,000 g for 10 min at 4°C. The supernatant was transferred to a pre-cooled tube and diluted with 300 µl ice-cold dilution buffer (10 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA). Streptavidin C1 beads (Invitrogen) were added to each tube and rotated for 1 hr at 4°C. Beads were washed three times with wash buffer (10 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA). Lastly, 2× Laemmli sample buffer was added to the beads, boiled at 95°C for 10 min, and cooled on ice before loading on SDS page gels. This was followed by western blotting.
 
-## Western blot
+### Western blot
 
 Western blots were performed as described previously (Ma and Mayr, 2018). Imaging was captured on the Odyssey CLx imaging system (Li-Cor). The antibodies used are mouse anti-α-tubulin (Sigma-Aldrich, T9026, RRID:AB_477593), mouse anti-mCherry (Abcam, ab125096, RRID:AB_11133266), rabbit anti-HuR (Millipore, 07-1735, RRID:AB_1977173), IRDye 680RD donkey anti-rabbit IgG secondary antibody (Li-COR Biosciences, 926-68073, RRID:AB_10954442), and IRDye 800CW donkey anti-mouse IgG secondary antibody (Li-COR Biosciences, 926-32212, RRID:AB_621847).
 
-## Recombinant protein purification
+### Recombinant protein purification
 
 mGFP-FUS-TIS was cloned into the bacterial expression vector pET28a, which was a gift from the lab of Dirk Remus (MSKCC). At the N-terminus of mGFP, we added a 6xHis-MBP tag, followed by a Tev protease cleavage site. At the C-terminus of TIS11B, we added a Strep-Tag II (SAWSHPQFEK). The 6xHis-MBP tag was PCR-amplified from pDZ2087 construct (Addgene, #92414) with primers MBP F and MBP R. Full-length 6xHis-MBP was cloned into pET28a backbone with XbaI and EcoRI restriction sites. mGFP-FUS-TIS-Strep-tag II was PCR-amplified from pcDNA-mGFP-FUS-TIS construct with primers mGFP F and TIS RBD-Strep-tag R. The Strep-tag II sequence was incorporated into primer TIS RBD-Strep-tag R. Full-length mGFP-FUS-TIS-Strep-tag II was cloned into pET28a-6xHis-MBP backbone with NheI and EcoRI restriction sites.
 
@@ -206,7 +1083,7 @@ The eluted protein was concentrated using Amicon Ultra-centrifugal filters-50K (
 
 The fractions representing the monomeric protein were collected and concentrated with Amicon Ultra-centrifugal filters-50K (Millipore). The quality of the final protein product was examined by SDS PAGE. The OD260/280 ratio of the final protein product was 0.52, measured with NanoDrop. The protein concentration was measured by Bradford assay (Bio-Rad). The protein was aliquoted into PCR tubes and flash-frozen in liquid nitrogen and then stored at −80°C.
 
-## In vitro transcription of RNA
+### In vitro transcription of RNA
 
 All RNAs were in vitro transcribed using the T7 MEGAscript kit (Ambion by Life Technologies). All DNA templates used for in vitro transcription were PCR-amplified and purified with a gel extraction kit (Qiagen). The T7 promoter (TAATACGACTCACTATAGGG) was incorporated into the forward primers used to amplify the DNA templates. After in vitro transcription, products were DNase-treated and run on agarose gels to evaluate the integrity and size of the RNA.
 
@@ -220,7 +1097,7 @@ In vitro transcription was performed in a 20 µl volume according to the manufac
 
 The transcription reaction was incubated 3 hr at 37°C in a PCR machine. All transcribed RNAs were digested with DNase for 30 min at 37°C, then precipitated with LiCl for 4 hr to overnight at −20°C. RNAs were centrifuged at 13,000 for 15 min, and the RNA pellets were washed with 70% ethanol three times. RNAs were dissolved in nuclease-free water and stored at −20°C. The concentration of RNAs was measured by NanoDrop One.
 
-## In vitro phase separation assay
+### In vitro phase separation assay
 
 To allow phase separation, purified 6xHis-MBP-mGFP-FUS-TIS-Strep tag II protein stock was incubated with Tev protease for 1 hr at room temperature (RT) to cleave off the 6xHis-MBP tag. mGFP and Strep tag II were not cleaved off. All phase separation assays were performed in 20 µl phase separation buffer (150 mM NaCl, 200 µM ZnCl2, 25 mM Tris-Cl, pH 7.4, 1 mM DTT, 2.5% glycerol, 5% dextran T500 [Pharmacosmos]). Without 5% dextran, there is no phase separation of FUS-TIS protein at the concentration of 10 µM. ZnCl2 was added as the RBD of TIS11B has two zinc finger motifs. Only in the phase separation assay shown in Figure 2—figure supplement 1D, E ZnCl2 was omitted.
 
@@ -228,15 +1105,15 @@ After 1 hr of Tev protease digestion, the FUS-TIS protein stock was diluted into
 
 For RNA-only phase separation experiments, Cy5-labeled RNA was diluted with the same phase separation buffer into desired concentrations in a 20 µl volume. The mixture (20 µl) was then transferred into a 384-well glass-bottom microplate. The chambers of the microplate were pre-treated with 1 mg/ml BSA for 30 min before aspirating the BSA. The microplate was kept in the dark at RT for 16 hr, followed by imaging of the Cy5-labeled RNA using confocal microscopy.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Confocal imaging was performed using ZEISS LSM 880 with Airyscan super-resolution mode. Z stack images were captured with an interval size of 487 nm. A Plan-Apochromat 63x/1.4 Oil objective (Zeiss) was used. For live-cell imaging, HeLa cells were plated on 3.5 cm glass-bottom dishes (Cellvis) and transfected with the indicated constructs. Fourteen hours after transfection, cells were imaged in cell culture medium while incubating in a LiveCell imaging chamber (Zeiss) at 37°C and 5% CO2. Images were prepared with the commercial ZEN software black edition (Zeiss).
 
-## Analysis of the morphology of condensates
+### Analysis of the morphology of condensates
 
 The morphology of the condensates was scored by two independent scientists who agreed on the classification. To examine the ability of a specific RNA to induce network formation, several RNA concentrations were tested, for instance, for RNAs with a length of ~1000 nt, we tested concentrations from 50 nM (~16 ng/µl) to 750 nM (~250 ng/µl). If an RNA induced network formation within the concentration range, we considered it as network-forming RNA. If an RNA did not induce network formation even at 750 nM concentration, it was considered as a sphere-forming RNA.
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 FRAP experiments were performed with a ZEISS LSM 880 confocal microscope. A Plan-Apochromat 63x/1.4 Oil objective (Zeiss) was used.
 
@@ -246,15 +1123,15 @@ For FRAP in live cells, HeLa cells were plated on 3.5 cm glass-bottom dishes (Ce
 
 The prebleached fluorescence intensity was normalized to 1, and the signal after bleaching was normalized to the prebleach level.
 
-## RNA-FISH
+### RNA-FISH
 
 Custom Stellaris EGFP FISH probes were described previously (Berkovits and Mayr, 2015). RNA-FISH was performed as published with slight modifications (Ma and Mayr, 2018). HeLa cells were plated on 4-well Millicell EZ silde and transfected with BFP-FUS-TIS and GFP fusion constructs. Fourteen hours after transfection, cells were washed with PBS, fixed with 4% paraformaldehyde for 15 min at RT, and washed twice for 5 min with PBS. PBS was discarded and 1 ml 70% ethanol was added. The slide was kept at 4°C for 8 hr. The 70% ethanol was aspirated, 1 ml wash buffer was added (2× SSC, 10% formamide in RNase-free water), and incubated at RT for 5 min. Hybridization mix was prepared by mixing 10% dextran sulfate, 10% formamide, 2× SSC, 2 mM ribonucleoside vanadyl complex (NEB), 200 µg/ml yeast tRNA, and FISH probe (1:100). To each well, 200 µl hybridization mix was added and hybridized at 37°C overnight. Slides were washed twice for 30 min each with pre-warmed wash buffer (1 ml, 37°C) in the dark, followed by one quick wash with PBST, and then mounted with mounting solution. Images were captured using confocal ZEISS LSM 880 with Airyscan super-resolution mode (Huff, 2015).
 
-## Line profile
+### Line profile
 
 In order to examine whether specific mRNAs are enriched in the FUS-TIS granule, line profile analysis was performed. Line profiles were generated with FIJI (ImageJ). A straight line was drawn across the FUS-TIS granule, indicated by the arrows shown in the figures. Fluorescence signals along the straight line of FUS-TIS protein and the examined mRNAs were calculated with the plot profile tool in FIJI. The Pearson’s correlation coefficient (r) of two fluorescence signals was calculated with Excel.
 
-## RNA native and denaturing agarose gel electrophoresis
+### RNA native and denaturing agarose gel electrophoresis
 
 RNA native agarose gel electrophoresis was performed as described previously with a few modifications (Skripkin et al., 1994). For sphere-forming and network-forming RNAs, RNAs were diluted into 4 µl buffer A (150 mM NaCl, 25 mM Tris-Cl, pH 7.4) to a final concentration of 5 µM (CLCA2 1.7 µg/µl, TLR8 1.6 µg/µl, HNRNPH3 1.9 µg/µl, LHFPL6 1.7 µg/µl, TNFSF11 1.8 µg/µl, TSPAN13 1.7 µg/µl). RNAs were incubated at 95°C for 2 min in a PCR machine and then incubated on ice for 2 min. RNAs were kept at 37°C for 2 hr. Also, 1 µl native agarose gel loading buffer (6× stock: 60% glycerol, 10 mM Tris-Cl, pH 7.4, 0.03% bromophenol blue, and 0.03% xylene cyanol FF) was added into the RNA. A total of 1 µg RNA was loaded into the 1% agarose gel made with the Tris-acetate-EDTA (TAE) buffer for electrophoresis with TAE buffer.
 
@@ -262,20 +1139,20 @@ For RNAs containing dimerization elements (TLR8 3′UTR, MYC 3′UTR, D1a-TLR8-D
 
 For denaturing agarose gel electrophoresis, glyoxal was used. RNAs were mixed with 10 µl glyoxal and incubated at 55°C for 60 min and then incubated on ice for 10 min. A 2 µl agarose gel loading buffer was added into the RNA. A total of 1 µg RNA was loaded into the 1% agarose gel made with the TAE buffer for electrophoresis with TAE buffer.
 
-## Calculation of mRNA concentration in HeLa cells
+### Calculation of mRNA concentration in HeLa cells
 
 We estimated the concentration of a specific mRNA in mammalian cells is between 8 pM and 8 nM (9.5 pg/µl to 9.5 ng/µl) based on the following assumptions: (1) the volume of a HeLa cell is 2000 µm3; (2) the average length of an mRNA is 3500 nt, which corresponds to an average molecular weight of 1155 kDa; and (3) there are between 10 and 10,000 copies of mRNAs per cell (Chen et al., 2016; Chen et al., 2015).
 
-## Calculation of NED values
+### Calculation of NED values
 
 The ensemble diversity of 3′UTR sequences was calculated using the RNAfold software (version: 2.4.14; command line: RNAfold --MEA -d2 -p --infile=<RNA_sequences.fasta> --outfile=<RNA_sequences.RNAfold.summary>) (Hofacker et al., 1994; Lorenz et al., 2011). Only 3′UTRs with a length <7500 nt can be analyzed by RNAfold. As the values for ensemble diversity depend on the sequence length, we calculated the NED by dividing the value of ensemble diversity by the length of the 3′UTR in nucleotides. All values are listed in Figure 6—source data 1. For the 47 experimentally tested 3′UTRs, the NED values range from 0.18 to 0.38. Among the RNAs that induced mesh-like condensates (N = 28), 75% of them had NED values higher than 0.28, whereas 75% of the RNAs that induced sphere-like condensates had NED values lower than 0.265. We used these cut-offs to identify 3′UTRs with high or low NED values transcriptome-wide. The range of transcriptome-wide NED values is 0–0.44.
 
-## 3′UTR length, number of AU-rich elements, and HuR binding sites in 3′UTRs
+### 3′UTR length, number of AU-rich elements, and HuR binding sites in 3′UTRs
 
 The 3′UTR length is the full-length 3′UTR length obtained from Refseq. For counting of AU-rich elements, we only considered the canonical sequence AUUUA. We counted the number of AU-rich elements in annotated 3′UTRs of mRNAs expressed in HeLa cells. All values are listed in Figure 6—source data 1.
 
 PAR-CLIP data of HuR were analyzed from two datasets (Lebedeva et al., 2011; Mukherjee et al., 2011). Processed peak files were downloaded from POSTAR2 (Zhu et al., 2019). Peaks were intersected with a bed file containing human 3′UTRs coordinates (hg38) using bedtools (Quinlan and Hall, 2010), and the number of CLIP tags that fall into 3′UTRs was counted. The union of CLIP tags was used to categorize the different groups, meaning that the indicated number of CLIP tags was detected in at least one dataset.
 
-## Statistical methods
+### Statistical methods
 
 For all pair-wise comparisons, a two-sided Mann–Whitney test was performed. For comparisons containing more than two groups, a Kruskal–Wallis test was performed. The Pearson’s correlation coefficient is reported.

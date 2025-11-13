@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/043nxc105 Ethology Lab, Cavanilles Institute of Biodiversity and Evolutionary Biology, University of Valencia Valencia Spain
-2. https://ror.org/012a77v79 Department of Biology, Lund University Lund Sweden
+1. Ethology Lab, Cavanilles Institute of Biodiversity and Evolutionary Biology, University of Valencia Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+2. Department of Biology, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
 
 † Corresponding author
 
@@ -33,105 +33,440 @@ Our aim was to contribute to fill this gap in knowledge by studying how male har
 
 Briefly, we collected flies from a continental wild population in Requena (Spain) that experiences significant fluctuations in temperature even during the mildest months when it is reproductively active (e.g. July: average: 24.9°C, average min: 19.8°C, average max: 30.1°C, Fick and Hijmans, 2017). After acclimation of the resulting population to laboratory conditions under a fluctuating temperature regime mimicking natural conditions, we conducted five different experiments to gauge how temperature variation within a normal range (i.e. 20°C, 24°C, and 28°C) affects: (a) the overall impact of male-male competition on female lifetime reproductive success (i.e. male harm), (b) how the net effects of harm are accomplished in terms of different female fitness components (i.e. reproductive rate, actuarial aging, and reproductive aging), and (c) underlying male pre-copulatory (i.e. harassment) and post-copulatory (i.e. ejaculate toxicity) harm mechanisms (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-v2.jpg)
+
+**Figure 1.:** (A) Our aim was to study how temperature variation, across a range at which reproduction is optimum in the wild, may affect: the net decrease in female fitness resulting from male harm, what female fitness components are mainly affected by male harm, and pre-copulatory (i.e. sexual harassment) and post-copulatory (i.e. ejaculate effects on female receptivity, short-term fecundity, and survival) mechanism of harm. (B) General design of the study: (1) We sampled a wild population of Drosophila melanogaster flies that reproduce optimally between 20°C and 28°C, (2) We setup a population in the lab and left it to acclimate for a few generations under a programmed fluctuating temperature regime that mimics wild conditions in late spring-early summer (20–28°C range with mean at 24°C), (3) We run a series of five experiments (each repeated at 20°C, 24°C, and 28°C) to study temperature effects on net male harm, female fitness components and male pre- and post-copulatory mechanisms of harm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig1-figsupp5-v2.jpg)
+
 ## Materials and methods
 
-## Field collection
+### Field collection
 
 In October 2018, we used banana traps to sample Drosophila melanogaster flies from three wineries in Requena (Spain): ‘Hispano-Suizas’ (39.466128,–1.149642), ‘Pago de Tharsys’ (39.497834,–1.122781), and ‘Dominio de la Vega’ (39.515079,–1.143757). Traps were setup within the wineries, but in premises that were open to the exterior and to ample surrounding vineyards and/or in the vineyards themselves. After collection, we anesthetized flies using mild CO2 exposure. We then separated and individually distributed field-collected females in vials with standard food, left them to lay eggs for a period of 48 hr, and then incubated their eggs at 24°C, 60% humidity, and a 12:12 dark-light cycle for 14 days to allow adult flies to emerge. We inspected the genital arch of F1 males of each of these female isolines to distinguish D. melanogaster isofemale lines from D. simulans. We then collected three males and three females from each D. melanogaster isofemlae line (total of 276 flies from 46 isofemale lines) and released them into a population cage with a surplus of food medium supplemented with live yeast, setting up the ‘Vegalibre (VG)’ population. In November 2019 and October 2020, to maintain natural variation, we re-sampled the wineries and added 348 and 756 flies from 58 and 126 isofemale lines, respectively, following the same procedure (27 isofemale lines from ‘Pago de Tharsys’ and 31 isofemale lines from ‘Dominio de la Vega’ in November 2019 and 33 isofemale lines from ‘Pago de Tharsys,’ 50 isofemale lines from ‘Dominio de la Vega’ and 43 isofemale lines from ‘Hipano-Suizas’ in October 2020).
 
-## Stock maintenance and acclimation
+### Stock maintenance and acclimation
 
 We carried out all experiments between March 2020 and April 2021, using individuals from the VG field population kept in the laboratory with overlapping generations at an average temperature of 24°C with daily pre-programmed fluctuations (±4°C) mimicking natural daily temperature conditions during the reproductively active season, at ~60% humidity and on a 12:12 hr light:dark cycle (Pol Eko ST 1200 incubator). The lowest temperature was set up 1 hr after sunrise and the highest 1 hr after midday. It is important to note that our stock population of flies was kept under a programmed fluctuating temperature regime that mimics their average circadian rhythm in the field, but temperature fluctuations in nature will be inherently subject to minor stochastic variations whose effects we controlled for (and thus did not capture) in this experiment. We used maize-malt medium (7 g of agar, 72 g of malt, 72 g of maize, 9 g of soya, 15 g of live yeast, 20 g of molasses, and 33 ml of Nipagin mix –3 g of methyl 4-hydroxy-benzoate and 28 ml of ethanol 90%– per 1000 ml of water) as a food source throughout maintenance and experiments. To collect experimental flies, we introduced yeasted grape juice agar plates into stock populations to induce female oviposition. We then collected eggs and placed them in bottles containing ~75 ml of medium to be incubated at 24 ± 4°C at a mean density of 223 ± 14.3 (95% CI) (Clancy and Kennington, 2001). We collected virgin flies within 6 hr of eclosion, under ice anesthesia, and then sexed and kept them in vials with food until their use (~3 days later), at 24 ± 4°C (see below for more details).
 
-## Net impact of male harm on female fitness and underlying behavioural mechanisms (experiment 1)
+### Net impact of male harm on female fitness and underlying behavioural mechanisms (experiment 1)
 
-## Fitness assay
+#### Fitness assay
 
 To study whether male harm is affected by temperature, we established a factorial design to measure survival and lifetime reproduction success (LRS) of female flies under monogamy (i.e. one male and one female per vial) vs. polyandry (i.e. three males and one female per vial), across three stable temperature treatments typical of this population during their reproductively active period in the wild: 20°C, 24°C, and 28 °C. Comparison of female fitness at monogamy vs. polyandry is standard procedure to gauge male harm in Drosophila and other organisms (see Yun et al., 2021 for a review and Gómez-Llano et al., 2023 for a recent meta-analysis). While the sex ratio in this species is typically 1:1, the operational sex ratio is male-biased and frequently reaches a 3:1 (or higher) male-bias in mating patches in the wild (Dukas, 2020). Thus, the 1:1 vs. 3:1 sex ratios used in this study represent biologically relevant scenarios and have actually become standard in Drosophila studies measuring male harm to females (Yun et al., 2021; Gómez-Llano et al., 2023).
 
 We first collected virgin flies into same-sex vials of 15 individuals and then randomly allocated them to either of the three temperature treatments 48 hr before starting the experiment, at which temperatures they remained until its end. To estimate LRS, we transferred flies to fresh vials twice a week using mild CO2 anesthesia. We incubated the vials containing female eggs at 24 ± 4°C for 15–20 days (~15 days for vials coming from 28°C, ~17 days for 24°C and ~20 days for 20°C) to allow F1 offspring emergence, after which we froze them at –21°C for later counting. The differences in incubation time are due to differences in developmental time caused by temperature differences during the first 3–4 days of each vial (i.e. the time eggs remained at their respective temperature treatments before flipping females to new fresh vials and incubation at 24 ± 4°C). We discarded and replaced males with young (2–4 days old) virgin males (receiving the same treatment as described above for original males) three weeks after starting the experiment (at the same time for all treatments). In addition, we kept a stock of replacement males maintained at each of the three temperatures to replace dead male flies if needed. We kept focal female flies under these conditions for six weeks, after which we discarded males and followed females until they died for survival analysis (see Figure 1—figure supplement 1 for an overview of the experimental design).
 
-We started the experiment with 468 females (78 per temperature and mating treatment) and 936 males (234 per temperature in polyandry and 78 per temperature in monogamy). Due to discarded (e.g. accidentally damaged during handling) and escaped flies, final (female) sample sizes were: (a) at 20°C, npolyandry = 74 and nmonogamy = 76, (b) at 24°C: npolyandry = 72 and nmonogamy = 77, and (c) at 28°C: npolyandry = 70 and nmonogamy = 75. We estimated the overall degree of male harm by calculating relative harm (H) following Yun et al., 2021:H=Wmonogamy −WpolyandryWmonogamy
+We started the experiment with 468 females (78 per temperature and mating treatment) and 936 males (234 per temperature in polyandry and 78 per temperature in monogamy). Due to discarded (e.g. accidentally damaged during handling) and escaped flies, final (female) sample sizes were: (a) at 20°C, npolyandry = 74 and nmonogamy = 76, (b) at 24°C: npolyandry = 72 and nmonogamy = 77, and (c) at 28°C: npolyandry = 70 and nmonogamy = 75. We estimated the overall degree of male harm by calculating relative harm (H) following Yun et al., 2021:
+
+$$
+H=\frac{W_{monogamy }−W_{polyandry}}{W_{monogamy }}
+$$
 
 where W corresponds to female fitness. Thus, H provides an estimate of the relative decrease in female fitness due to male harm.
 
 Using the data collected above, we partitioned overall LRS effects into effects on early reproductive rate (i.e. offspring produced during the first two weeks of age), actuarial aging (i.e. lifespan), and reproductive aging (i.e. offspring produced over weeks 1–2 vs. 3–4). We used weeks 3–4 as an estimate of late reproductive rate because mortality was already evident at this point (i.e. reflecting aging) and then was very high from week 5 onwards (Figure 4—figure supplement 1; thus preventing accurate estimation of reproductive success).
 
-Finally, we also calculated rate-sensitive fitness estimates for each individual female and treatment population. Rate-sensitive fitness estimates take into account when offspring are produced, not just how many offspring are produced, and thus allow estimating fitness subject to the population growth rate (Edward et al., 2011). It is important to understand how differences in the number and timing of offspring production translate into fitness under different demographic scenarios. For example, early reproduction is particularly favored in increasing populations whereas late reproduction gains in importance in decreasing populations. Thus, while LRS is most suited to estimate individual fitness in stable populations, rate-sensitive estimates are preferred when r ≠ 0 (Brommer et al., 2002). We calculated both individual (ωind) and population (ωpop) rate-sensitive fitness for the following intrinsic rates of population growth: r=–0.1, r=–0.05, r=0, r=0.05, and r=0.1 (see Edward et al., 2011 for a detailed account). We then used ωpop values to calculate the relative cost (Cr) of polyandry for each temperature treatment across different values of r as:Cr=ωpop (polyandry)ωpop(monogamy)
+Finally, we also calculated rate-sensitive fitness estimates for each individual female and treatment population. Rate-sensitive fitness estimates take into account when offspring are produced, not just how many offspring are produced, and thus allow estimating fitness subject to the population growth rate (Edward et al., 2011). It is important to understand how differences in the number and timing of offspring production translate into fitness under different demographic scenarios. For example, early reproduction is particularly favored in increasing populations whereas late reproduction gains in importance in decreasing populations. Thus, while LRS is most suited to estimate individual fitness in stable populations, rate-sensitive estimates are preferred when r ≠ 0 (Brommer et al., 2002). We calculated both individual (ωind) and population (ωpop) rate-sensitive fitness for the following intrinsic rates of population growth: r=–0.1, r=–0.05, r=0, r=0.05, and r=0.1 (see Edward et al., 2011 for a detailed account). We then used ωpop values to calculate the relative cost (Cr) of polyandry for each temperature treatment across different values of r as:
 
-## Behavioral measures
+$$
+Cr=\frac{\omega_{pop (polyandry)}}{\omega_{pop(monogamy)}}
+$$
+
+#### Behavioral measures
 
 Immediately after the fitness experiment started, we conducted behavioral observations on the first day of the experiment across all treatments (Figure 1—figure supplement 1). Our aim was to investigate the behavioral mechanisms that might underlie the potential fitness effects evaluated above. Due to logistic limitations, we conducted behavioral observations in the same temperature control room, so we had to conduct trials at 20°C, 24°C, and 28°C over three consecutive days (with both monogamy and polyandry treatments evaluated at the same time for each temperature), in a randomized order (i.e. 20°C, 28°C, and 24°C). Note that we collected virgin flies over three consecutive days to ensure all flies were 5 days-old at the start of the experiment. We recorded the following behaviors: (a) courtship intensity (number of courting males per female per hour), (b) male-male aggression rate (i.e. number of aggressions per hour), and (c) female rejection (i.e. number of rejections per hour; see Bastock and Manning, 1955; Connolly and Cook, 1973 for behavioral descriptions). We also recorded the number of total matings during the observation period.
 
 Observations started at lights-on (10 a.m.) and lasted for 8 hr, during which time we continuously recorded reproductive behaviors using scan sampling of vials. Each complete scan lasted approximately 8 min, so that we always conducted one complete scan every 10 min to ensure the recording of all matings (see below). Scans consisted in observing all vials in succession for ca. 3 s each and recording all occurrences of the behaviors listed above (i.e. all-occurrences recording of target behaviors combined with scan sampling). We interspersed behavioral scans with very quick (<1 min) mating scans where we rapidly swept all vials for copulas at the beginning, in the middle, and at the end of each complete scan. This strategy ensured that we recorded all successful matings (>10 min), which typically last between 15 and 25 min in our population of D. melanogaster. We obtained a total of 49 scans per vial. Behavioral observations were conducted only once, on day 1 of the fitness experiment, as prior experiments have shown that courtship, aggressive and female rejection behaviors in D. melanogaster are sufficiently stable over time so that our behavioral indexes are representative of long-term treatment differences (e.g. Carazo et al., 2015; Carazo et al., 2014). In contrast to courtship, aggression, and rejection indexes, note that total mating frequency over the first day cannot be taken as a reliable measure of mating rate (Wolfner, 1997). Thus, our rationale in recording this variable was just to ensure that early mating ensued normally across treatments (which was the case, see Figure 5—figure supplement 2), but we did not include this variable in our statistical analyses.
 
-## Mating effect on female reproduction and survival (experiments 2 to 5)
+### Mating effect on female reproduction and survival (experiments 2 to 5)
 
 To examine post-mating mechanisms that might underlie the fitness effects observed in our first experiment, we conducted four additional experiments to test whether temperature modulates the well-documented effects that mating with a male has on female receptivity, short-term fecundity, and survival. In D. melanogaster, males manipulate female reproduction via their ejaculate, which increases male fitness but frequently decreases female lifespan and lifetime reproductive success (Chapman et al., 1995). Briefly, males transfer seminal fluid proteins (SFPs) produced by their accessory glands that stimulate female short-term fecundity, decrease female receptivity, and ensure sperm storage, thus generally promoting male success in sperm competition (Chapman et al., 1995; Wigby and Chapman, 2005). In addition, prior studies have shown that males are able to tailor investment into SFPs according to perceived sperm competition risk (SCR) and intensity (Hopkins et al., 2019). Thus, we set-up a factorial design where we manipulated the temperature (i.e. 20°C, 24°C, and 28°C) and perceived SCR levels (i.e. males kept alone vs. with 7 more males in a vial) at which adult focal males were kept prior to mating.
 
 Then, we measured how the reception of a treated male’s ejaculate after a single mating in a common garden environment (i.e. all matings at 24 °C) affected female fecundity, survival, and reproduction, following standard assays to gauge male ejaculate effects on females in D. melanogaster (e.g. Chapman et al., 1995; Perry et al., 2013; Wigby and Chapman, 2005; Wigby et al., 2009). We conducted separate experiments implementing two different temperature treatment durations (i.e. 48 hr and 13 days), to include two potential different scenarios. Our 48 hr treatment aimed to mimic short-term temperature effects on adult males whereas our 13 day treatment aimed to mimic longer-term effects on adult males that span a complete spermatogenesis cycle. The period from the synthesis of deoxyribonucleic acid in the spermatocyte to successful insemination is approximately 10 days long in D. melanogaster (Chandley and Bateman, 1962), so we treated males for 13 days after sperm depleting them (see below) to ensure that males experienced treatment temperatures across the whole spermatogenesis cycle.
 
-## Receptivity assays (experiments 2 and 3)
+#### Receptivity assays (experiments 2 and 3)
 
 We first collected focal males as virgins (i.e. within 6 hr of eclosion) under ice anesthesia and randomly placed them either individually (low SCR) or in a same-sex group of eight (high SCR) in plastic vials with food. Next, we randomly divided them into three groups that we allocated to the different stable temperature treatments for either 48 hr (i.e. short treatment duration, experiment 2, Figure 1—figure supplement 2) or 13 days (i.e. long treatment duration, experiment 3, Figure 1—figure supplement 3) immediately before the beginning of each experiment. For experiment 3, we depleted the sperm and seminal fluid of focal males before allocating them to different temperature treatments by housing them with four standard virgin females for 24 hr, given that three successive matings are enough to deplete the accessory glands of male D. melanogaster (Linklater et al., 2007; Macartney et al., 2021).
 
 We collected all females and competitor males (i.e. standard males without any previous treatment) used in receptivity assays as virgins and held them in same-sex groups of 15–20 flies at 24 ± 4°C. Experiments started by exposing all virgin females to single focal males for 2.5 hr at 24°C. After a successful copulation, we separated the mated females from the focal males and isolated them until the remating trial. We discarded unmated females and focal males. 72 hr after this first mating with the focal treated male, we individually exposed females to single virgin competitor males for 12 hr. After each trial, we transferred unmated females into a new vial with food, until the next remating trial on the next day (Figure 1—figure supplements 2 and 3). We repeated remating trials for three consecutive days, which allowed us to calculate the cumulative percentage of remated females (and associated re-mating latencies; see below) for each of the three days of each experiment. Due to a large number of vials/flies involved, we conducted the experiments in two blocks each: with n=390 females per batch in experiment 2 (n=436 rematings) and n=420 females per batch in experiment 3 (n=676 rematings). We also recorded mating duration for the first mating (i.e. with the focal treated male), the remating latency (i.e. the time lapse between males being introduced into the female-containing vial and copulation), and mating duration for re-matings. Females and focal and competitor males were 4 days old for experiment 2. In experiment 3, females and competitor males were 4 days old, while focal males were 18 days old.
 
-## Fecundity and survival assays (experiments 4 and 5)
+#### Fecundity and survival assays (experiments 4 and 5)
 
 To study the effects of a single mating on female short-term fecundity and long-term survival, we performed two experiments (experiments 4 and 5, Figure 1—figure supplements 4 and 5, respectively) where we compared female fecundity and F1 egg-to-adult viability of females mated with male flies subject to the same factorial design imposed in receptivity experiments (here experiment 4 had a treatment duration of 48 hr while experiment 5 had a treatment duration of 13 days). We collected and treated all focal males as in the receptivity assays described above, and then proceeded to mate virgin females in single pairs with focal males for 2.5 hr at 24°C. After copulation, we separated mated females from focal males and kept them individually in single vials. We discarded unmated females and focal males. We then transferred females to fresh vials every 24 hr for 4 days, and then every 3 days twice. Finally, we followed females until they died by combining them into same-treatment vials of 10 females that were flipped once a week. We removed dead flies at each flip and scored deaths on a daily basis. We counted eggs laid during the first 3 days and incubated vials from days 1, 2, 3, 4, 5, and 8 until adults emerged to count progeny and determine egg-to-adult viability (Figure 1—figure supplements 4 and 5). Sample sizes were 545 females for experiment 4, and 480 females for experiment 5. Females and focal or competitor males were 4 days old for experiment 4. In experiment 5, females and competitor males were 4 days old, while focal males were 18 days old.
 
-## Statistical analyses
+### Statistical analyses
 
 We performed all statistical analyses using R statistical software (version 3.5.2). In all cases, we assessed fit and validated models by visual inspections of diagnostic plots on raw and residual data (Zuur et al., 2010). In all models, we used ANOVA type III test ‘F’ to compute p-values corrected by the Benjamini-Hochberg (BH) method to control the inflation of the type I error-rate due to multiple testing. We fitted all models with the temperature effect as a covariate, given that it is a continuous variable. In all cases where we detected a significant interaction between main effects, we ran models separately for each temperature (or treatment duration for experiments 2–5) to explore the nature of such interactions. As a complementary analysis, in these cases, we re-fitted the original model with temperature as a factor, which allowed us to run a post hoc Tukey’s test as an additional way to explore interactions while controlling for inflation of experiment-wise type 1 error rate. We provide the latter in the SM, but we note that both approaches always yielded qualitative identical results.
 
-## Experiment 1
+#### Experiment 1
 
 To examine temperature effects on male harm, we evaluated the interaction between mating system and temperature on female fitness (LRS), early reproductive rate, reproductive aging, actuarial aging, and male and female reproductive behaviors (courtship intensity and female rejection; experiment 1). We fitted generalized linear models (GLMs) with temperature, mating system, and their interaction as fixed effects. Graphical inspection of LRS, actuarial aging, and reproductive behaviors (courtship intensity and male-male aggression) revealed that the normality assumption was apparently violated, as well as the independence assumption for LRS. Box–Cox transformation (Quinn and Keough, 2002) solved these problems and allowed us to run a GLM with a Gaussian error distribution. We compared GLMs with their corresponding null GLMs using the likelihood ratio test only to test the significance of the independent variables in the full model. We detected collinearity between the mating system and the interaction in LRS, early reproductive, reproductive aging, actuarial aging, courtship intensity, and female rejection models. In all these cases, we thus refitted the model without the main mating system effect (which was not our main interest). As a complementary analysis for LRS, we also ran a model with temperature as a factor and a predetermined quadratic contrast table (given the relationship between LRS and temperature is clearly non-linear, Figure 2), and obtained similar results.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig2-v2.jpg)
+
+**Figure 2.:** 20°C: npolyandry = 73 and nmonogamy = 74. 24°C: npolyandry = 71 and nmonogamy = 74. 28°C: npolyandry = 66 and nmonogamy = 71.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Mean ± SEM number of offspring in monogamy vs. polyandry mating system treatments, across the different temperature treatments. 20°C: npolyandry = 73 and nmonogamy = 74. 24°C: npolyandry = 71 and nmonogamy = 74. 28°C: npolyandry = 66 and nmonogamy = 71. (b) Violin plots.
+
 We also used Cox proportional hazards survival model to analyze potential differences in mortality risk across treatments, using the survival and survminer packages (Therneau, 2015; Kassambara and Kosinski, 2018), which allowed us to include the females lost during manipulations as ‘right censored’ individuals (i.e. individuals that are taken into account for demographic analysis until the day they disappear, Kleinbaum and Klein, 2012). We analyzed female rejection behaviors in two different ways. First, we examined mating system and temperature effects on overall rejection rates using a Gamma distribution, as this variable was continuous and zero-inflated. Second, we also used a binomial GLM to estimate potential differences in female rejections per courtship. Finally, we analyzed male-male aggression with the mating system as the sole main factor (as male-male aggressions where only possible in the polyandry treatment).
 
-## Experiments 2–5
+#### Experiments 2–5
 
 To examine the effect of temperature on post-copulatory effects, we evaluated the effect of SCR, temperature, treatment duration, and their interaction on receptivity (mating duration and remating latency -experiments 2 and 3) and fecundity -oviposition and egg viability- and female survival (experiments 4 and 5). For mating duration, remating latency and egg viability we fitted generalized linear models (GLMs) with temperature, SCR level, treatment duration, and their interaction as fixed effects. We assessed the significance of factors by dropping individual terms from the full model using the ‘drop1’ function, refitting models without the triple interaction where necessary. We detected a problem of collinearity between SCR and the interactions, as well as between treatment duration and the interactions in mating duration, remating latency, and egg viability models. In all these cases, we refitted the model without the main SCR and treatment duration effects (which were not our main interest). For the mating duration, we used a Gamma distribution. For remating latency and egg fertility, we used a Gaussian distribution. For oviposition, we fitted a generalized linear mixed model (GLMM) with temperature, SCR level, treatment duration and their interaction as fixed effects and day as a random effect. Initially, we run a model with a zero-inflated distribution, in which the zero values are modeled separately from the non-zero values (Zuur et al., 2010). However, we detected problems of collinearity, including treatment duration as an effect. We thus run two separate models for each treatment duration using Hurdle models without the main SCR effect. Finally, for survival, we used a Cox proportional hazards survival model to analyze potential differences in mortality risk across treatments, including the females lost during manipulations as ‘right censored’ individuals.
 
 ## Results
 
-## Net impact of male harm on female fitness and underlying behavioral mechanisms (experiment 1)
+### Net impact of male harm on female fitness and underlying behavioral mechanisms (experiment 1)
 
-## LRS
+#### LRS
 
 We detected a significant temperature by mating system interaction for female lifetime reproductive success (F1,425 = 16.931, p<0.001, Figure 2, Figure 2—figure supplement 1), and a marginally non-significant temperature effect (F1,425 = 3.712; p=0.054). Separate models for each temperature level show a larger effect of the mating system on lifetime reproductive success at 24°C than at 20°C, and larger at 20°C than at 28°C, despite 95 % CI of the estimates overlaps (Table 1, Table 1—source data 1a). The decrease in LRS in polyandry vs. monogamy peaked at 24°C (H=0.36) and was 1.6 (H=0.22) and 3.4 times (H=0.10) smaller at 20°C and 28°C, respectively. Rate-sensitive fitness estimates show that estimated population costs are dependent on background growth rates (Figure 3), and in general particularly accused in decreasing populations.
 
+**Table 1.**
+ Output from separate generalized linear models (GLMs) for each temperature level to explore significant interactions between temperature and mating system effects on female fitness components.Table 1—source data 1.Summary statistics from Tukey’s post hoc test to examine the meaning of significant interactions between temperature and mating system effects.(a) Polyandry – Monogamy contrast table for each temperature level for female fitness components. (b) Polyandry – Monogamy contrast table for each temperature level for underlying behavioral mechanisms. Test from generalized linear models (GLMs) fitted with temperature as factor. Note that using Tukey’s post hoc yielded qualitatively identical results from running models separately for each temperature.Table 1—source data 2.Summary statistics from Cox PH survival models as a complementary analysis to examine potential differences in mortality risk across treatments from the experiment 1.(a) Summary statistics from Cox PH survival full model. (b) Summary statistics from fitting separate Cox PH models for each temperature level due to a significant interaction between temperature and mating system. (c) Polyandry – Monogamy contrast table from Tukey’s post hoc for each temperature level from Cox PH survival model fitted with temperature as factor. p-values from Cox HP models are computed using ANOVA type III, LR test. Note that using Tukey’s post hoc yielded qualitatively identical results from running models separately for each temperature. The corresponding survival plot is plotted in Figure 4—figure supplement 1 .
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">T°C</th>
+      <th colspan="3">LRS</th>
+      <th colspan="3">Reproductive aging</th>
+      <th colspan="3">Actuarial aging</th>
+    </tr>
+    <tr>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20°</td>
+      <td>4.41,145</td>
+      <td>0.039</td>
+      <td>1.07(0.06–2.06)</td>
+      <td>12.11,145</td>
+      <td>&lt;0.001</td>
+      <td>–7.99(−12.5--3.5)</td>
+      <td>39.6 1,148</td>
+      <td>&lt;0.001</td>
+      <td>7.44(5.1–9.8)</td>
+    </tr>
+    <tr>
+      <td>24°</td>
+      <td>16.61,142</td>
+      <td>&lt;0.001</td>
+      <td>22.39(11.6–33.1)</td>
+      <td>35.31.142</td>
+      <td>&lt;0.001</td>
+      <td>–17.2(−22.9- -11.5)</td>
+      <td>32.2 1,143</td>
+      <td>&lt;0.001</td>
+      <td>4.84(3.2–6.5)</td>
+    </tr>
+    <tr>
+      <td>28°</td>
+      <td>2.21,135</td>
+      <td>0.137</td>
+      <td>1.88(−0.58–4.36)</td>
+      <td>14.11,135</td>
+      <td>&lt;0.001</td>
+      <td>–11.87(−18.1- -5.7)</td>
+      <td>19.7 1,137</td>
+      <td>&lt;0.001</td>
+      <td>2.97(1.7–4.3)</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig3-v2.jpg)
 
-**Figure 3.:** (a) Average rate-sensitive index fitness estimate of individual females (Mean ωind) for different population growth rates across temperature and mating system treatments (shaded areas denote SEM). 20°C: npolyandry = 73 and nmonogamy = 74. 24°C: npolyandry = 71 and nmonogamy = 74. 28°C: npolyandry = 66 and nmonogamy = 71. (b) Relative cost (C) of polyandry (vs. monogamy) for each temperature treatment for different population growth rates. rCr was calculated based on rate-sensitive index fitness estimates for populations (ωpop), whereby population costs are shown as 1 – Cr, thus reflecting the relative decrease in population growth rate.
+**Figure 3.:** (a) Average rate-sensitive index fitness estimate of individual females (Mean ωind) for different population growth rates across temperature and mating system treatments (shaded areas denote SEM). 20°C: npolyandry = 73 and nmonogamy = 74. 24°C: npolyandry = 71 and nmonogamy = 74. 28°C: npolyandry = 66 and nmonogamy = 71. (b) Relative cost (Cr) of polyandry (vs. monogamy) for each temperature treatment for different population growth rates. Cr was calculated based on rate-sensitive index fitness estimates for populations (ωpop), whereby population costs are shown as 1 – Cr, thus reflecting the relative decrease in population growth rate.
 
-## Early reproductive rate
+#### Early reproductive rate
 
 We did not detect a significant temperature by mating system interaction (F1,425 = 2.94; p=0.09). We did detect a significant main temperature effect (F1,425 = 64.63; p<0.001; Figure 2—figure supplement 2), such that early reproduction increased at 28°C.
 
-## Reproductive aging
+#### Reproductive aging
 
 We detected a significant temperature by mating system interaction for reproductive aging (F1,425 = 55.24; p<0.001; Figure 2—figure supplement 2), and a clear main effect for temperature (F1,425 = 44.25; p<0.001). Running models separately for each temperature level showed that mating system affected reproductive aging at all temperatures, but particularly so at 24°C and 28°C (Table 1, Table 1—source data 1a, Figure 2—figure supplement 2).
 
-## Actuarial aging
+#### Actuarial aging
 
 We detected a significant temperature by mating system effect for lifespan (F1,428 = 73.81; p<0.001; Figure 4, Figure 4—figure supplement 1a), and a significant main effect for temperature (F1,428 = 36.98; p<0.001). Mating system affected actuarial aging at all temperatures, but particularly so at 20°C (Table 1, Table 1—source data 1). The survival analysis yielded qualitatively identical results (Table 1—source data 2, survival plot Figure 4—figure supplement 1b).
 
-## Reproductive behaviour
+![Figure 4.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig4-v2.jpg)
+
+**Figure 4.:** 20°C: npolyandry = 73 and nmonogamy = 74. 24°C: npolyandry = 71 and nmonogamy = 73. 28°C: npolyandry = 66 and nmonogamy = 73.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Violin plot. (b) Survival plot from the Cox proportional hazard model as a complementary analysis.
+
+### Reproductive behaviour
 
 The interaction between temperature and mating system was significant for courtship rate (F1,441 = 45.62; p<0.001), and we also detected a main temperature effect (F1,441 = 16.69; p<0.001 Figure 5a, Figure 5—figure supplement 1a). Running models separately for each temperature level, mating system affected courtship rate at 24°C and 28°C but not at 20°C (Table 2, Table 1—source data 2b). Likewise, we detected a significant temperature by mating system effect for rejection rate (F1,441 = 24.48; p<0.001 Figure 5b, Figure 5—figure supplement 1b), and a main effect for temperature (F1,441 = 5.61; p=0.020). Models for each temperature level show a mating system effect at 24°C and 28°C but not at 20°C (Table 2, Table 1—source data 2b). We did not detect a significant interaction between temperature and mating system (F1,294 = 0.30; p=0.582), nor a temperature effect (F1,294=0.08; p=0.773), for rejection rates per courtship. For male-male aggression rate, we detected a significant temperature effect (F1,214 = 14.45; p<0.001 Figure 5c, Figure 5—figure supplement 1c).
 
-## Mating effects on female reproduction and survival (experiments 2 to 5)
+![Figure 5.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig5-v2.jpg)
 
-## Female receptivity (experiments 2 and 3)
+**Figure 5.:** (a) Courtships per female per hour, (b) Female rejections per hour, and (c) Aggressions male-male per hour. 20°C: npolyandry = 74 and nmonogamy = 76. 24°C: npolyandry = 72 and nmonogamy = 77. 28°C: npolyandry = 70 and nmonogamy = 75.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Mean ± SEM across temperature and mating system treatments. (b) Violin plot. Data from reproductive behaviour measures. 20°C: npolyandry = 74 and nmonogamy = 76. 24°C: npolyandry = 72 and nmonogamy = 77. 28°C: npolyandry = 70 and nmonogamy = 75.
+
+**Table 2.**
+ Output from separate generalized linear models (GLMs) for each temperature level to explore significant interactions between temperature and mating system effects on underlying behaviorual mechanisms.p-values were corrected for multiple testing using Benjamini-Hochberg correction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">T°C</th>
+      <th colspan="3">Courtship rate</th>
+      <th colspan="3">Rejection rate</th>
+    </tr>
+    <tr>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20°</td>
+      <td>0.41,148</td>
+      <td>0.546</td>
+      <td>–0.04(−0.16–0.08)</td>
+      <td>0.201,148</td>
+      <td>0.654</td>
+      <td>–0.05(−0.30–0.19)</td>
+    </tr>
+    <tr>
+      <td>24°</td>
+      <td>21.81,147</td>
+      <td>&lt;0.001</td>
+      <td>–0.40(−0.57- -0.23)</td>
+      <td>10.91.147</td>
+      <td>0.001</td>
+      <td>–17.2(−1.01- -0.25)</td>
+    </tr>
+    <tr>
+      <td>28°</td>
+      <td>40.21,143</td>
+      <td>&lt;0.001</td>
+      <td>–0.63(−0.83- -0.43)</td>
+      <td>19.31,143</td>
+      <td>&lt;0.001</td>
+      <td>–11.87(−0.96- -0.36)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mating effects on female reproduction and survival (experiments 2 to 5)
+
+#### Female receptivity (experiments 2 and 3)
 
 For the duration of the first mating in our female receptivity assays, we detected significant SCR by temperature (F1,1239 = 40.42; p<0.001), treatment duration by temperature (F1,1239 = 5.97; p=0.024), and SCR by treatment duration (F1,1239 = 5.48; p=0.024) interactions (Figure 6a, Figure 6—figure supplement 1a). We found no significant main effect for temperature (F1,1239 = 3.36; p=0.07). Running models separately for each temperature, SCR affected the duration of the first mating at 20°C, 24°C, and 28°C, while treatment duration only affected the duration of the first mating at 24°C (Table 3a, Table 3—source data 1a-b). Additionally, running models for each treatment duration, SCR affected the duration of the first mating at short and long treatment durations (Table 3b, Table 3—source data 1c). Similarly, for female remating latency, we detected significant interactions for SCR by temperature (F1,1094 = 6.15; p=0.022), and treatment duration by temperature (F1,1094 = 5.17; p=0.028), whereas the interaction between SCR by treatment duration was not significant (F1,1094 = 1.00; p=0.316) (Figure 6b, Figure 6—figure supplement 1b). We also detected a significant main temperature effect (F1,1094 = 8.21; p=0.01). Running models separately for each temperature level, SCR level, and treatment duration only affected remating latency at 28°C (Table 3a, Table 3—source data 1a-b).
 
-## Female fecundity and survival (experiments 4 and 5)
+![Figure 6.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig6-v2.jpg)
+
+**Figure 6.:** (a) Mating duration of males exposed to high (8 males per vial) or low sperm competition risk (1 male per vial) for 48 hr or 13 days prior to mating at different temperatures. 20°C: nhigh/48hr = 91, nlow/48hr = 96, nhigh/13days = 121 and nlow/13days = 117. 24°C: nhigh/48hr = 85, nlow/48hr = 88, nhigh/13days = 119 and nlow/13days = 115. 28°C: nhigh/48hr = 92, nlow/48hr = 104, nhigh/13days = 99 and nlow/13days = 117. (b) Female remating latency following a single mating with either a male from a high or low sperm competition risk level for 48 hr or 13 days before mating across temperature treatments. 20°C: nhigh/48hr = 75, nlow/48hr = 73, nhigh/13days = 119 and nlow/13days = 113. 24°C: nhigh/48hr = 61, nlow/48hr = 70, nhigh/13days = 116 and nlow/13days = 113. 28°C: nhigh/48hr = 63, nlow/48hr = 82, nhigh/13days = 98 and nlow/13days = 117.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Mean ± SEM, 48 hr treatment duration. 20°C: nhigh/day 1 = 88, nlow/day 1 = 86, nhigh/day 2 = 88, nlow/day 2 = 86, nhigh/day 3 = 88 and nlow/day 3 = 86. 24°C: nhigh/day 1 = 87, nlow/day 1 = 88, nhigh/day 2 = 87, nlow/day 2 = 88, nhigh/day 3 = 87 and nlow/day 3 = 88. 28°C: nhigh/day 1 = 86, nlow/day 1 = 86, nhigh/day 2 = 86, nlow/day 2 = 86, nhigh/day 3 = 86 and nlow/day 3 = 86. (b) Violin plot, 48 hr treatment duration. (c) Mean ± SEM, 13 days treatment duration. 20°C: nhigh/day 1 = 74, nlow/day 1 = 76, nhigh/day 2 = 74, nlow/day 2 = 76, nhigh/day 3 = 74 and nlow/day 3 = 76. 24°C: nhigh/day 1 = 72, nlow/day 1 = 76, nhigh/day 2 = 72, nlow/day 2 = 76, nhigh/day 3 = 72 and nlow/day 3 = 76. 28°C: nhigh/day 1 = 75, nlow/day 1 = 65, nhigh/day 2 = 75, nlow/day 2 = 63, nhigh/day 3 = 75 and nlow/day 3 = 63. (d) Violin plot, 13 days treatment duration.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (a) Mean ± SEM. 20°C: nhigh/48hr = 88, nlow/48hr = 86, nhigh/13days = 74 and nlow/13days = 76. 24°C: nhigh/48hr = 87, nlow/48hr = 88, nhigh/13days = 72 and nlow/13days = 76. 28°C: nhigh/48hr = 86, nlow/48hr = 86, nhigh/13days = 75 and nlow/13days = 63.(b) Violin plot.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/84759/elife-84759-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (a) Mean ± SEM. 20°C: nhigh/48hr = 80, nlow/48hr = 80, nhigh/13days = 71 and nlow/13days = 70. 24°C: nhigh/48hr = 81, nlow/48hr = 82, nhigh/13days = 60 and nlow/13days = 73. 28°C: nhigh/48hr = 80, nlow/48hr = 84, nhigh/13days = 69 and nlow/13days = 45. (b) Violin plot (c) Survival plot from the Cox proportional hazard model.
+
+**Table 3.**
+ Model outputs from separate generalized linear models (GLMs) for each (a) temperature level and (b) treatment duration to explore significant interactions.Table 3—source data 1.Summary statistics from Tukey’s post hoc test as a complementary analysis to examine the meaning of significant interactions found for mating duration and remating latency.(a) High – low sperm competition risk contrast table for each temperature level. (b) Long – short treatment duration contrast table for each temperature level. (c) High – low sperm competition risk contrast table for each treatment duration. Test from generalized linear models (GLMs) fitted with temperature as factor. Note that using Tukey’s post hoc yielded qualitatively identical results from running models separately for each temperature or treatment duration.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="12">a)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">T°C</td>
+      <td rowspan="2" colspan="2">Effect</td>
+      <td colspan="6">Mating duration</td>
+      <td colspan="3">Remating latency</td>
+    </tr>
+    <tr>
+      <td colspan="3">Fdf</td>
+      <td>p-value</td>
+      <td colspan="2">Estimate (95% CI)</td>
+      <td>Fdf</td>
+      <td>p-value</td>
+      <td>Estimate (95% CI)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">20°</td>
+      <td colspan="2">Sperm competition risk</td>
+      <td colspan="3">3.91,423</td>
+      <td>0.046</td>
+      <td colspan="2">0.03(0.0005- 0.05)</td>
+      <td>0.951,377</td>
+      <td>0.330</td>
+      <td>27.9(−28.2– 84.2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Treatment duration</td>
+      <td colspan="3">2.31,423</td>
+      <td>0.133</td>
+      <td colspan="2">–0.02(−0.04- 0.006)</td>
+      <td>0.00061,377</td>
+      <td>0.980</td>
+      <td>–0.73(−58.5– 57.0)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">24°</td>
+      <td colspan="2">Sperm competition risk</td>
+      <td colspan="3">10.61,405</td>
+      <td>0.001</td>
+      <td colspan="2">0.05(0.02– 0.07)</td>
+      <td>0.071,358</td>
+      <td>0.779</td>
+      <td>–8.47(−67.7– 50.7)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Treatment duration</td>
+      <td colspan="3">3.71,405</td>
+      <td>0.054</td>
+      <td colspan="2">–0.02(−0.05– 0.0003)</td>
+      <td>0.041,358</td>
+      <td>0.842</td>
+      <td>–6.24(−67.8– 55.3)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">28°</td>
+      <td colspan="2">Sperm competition risk</td>
+      <td colspan="3">26.51,410</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">0.084(0.052– 0.117)</td>
+      <td>8.051,358</td>
+      <td>0.005</td>
+      <td>87.81(27.1– 148.4)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Treatment duration</td>
+      <td colspan="3">0.61,410</td>
+      <td>0.451</td>
+      <td colspan="2">–0.12(−0.04- -0.2)</td>
+      <td>9.731,358</td>
+      <td>0.002</td>
+      <td>–97.65(−158.9– -36.3)</td>
+    </tr>
+    <tr>
+      <td colspan="8">b)</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Treatmentduration</td>
+      <td colspan="6">Mating duration</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Fdf</td>
+      <td>p-value</td>
+      <td colspan="3">Estimate (95% CI)</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Short (48 hr)</td>
+      <td colspan="2">4.51,554</td>
+      <td>0.033</td>
+      <td colspan="3">0.03(0.002– 0.06)</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Long (13 days)</td>
+      <td colspan="2">54.21,686</td>
+      <td>&lt;0.001</td>
+      <td colspan="3">0.07(0.051– 0.089)</td>
+      <td colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Female fecundity and survival (experiments 4 and 5)
 
 For the number of eggs produced by females during the three first days, we did not detect significant interactions between temperature and SCR for either short or long treatment durations, nor a main significant effect for temperature (Figure 6—figure supplement 2 & Table 4—source data 1): (i) Short treatment duration, SCR by temperature interaction (χ21=0.05; p=0.821), temperature effect (χ21=2.82; p=0.092), (ii) Long treatment duration, SCR by temperature interaction (χ21=0.03; p=0.840), temperature effect (χ21=0.37; p=0.541). Likewise, for the total number of offspring produced by females during days 1, 2, 3, 4, 5, and 8 after mating, we did not find significant interactions between SCR and treatment duration (F1,952 = 0.022; p=0.881), or between SCR and temperature (F1,952 = 0.418; p=0.674), but we did between temperature and treatment duration (F1,952 = 9.599; p=0.005) (Figure 6—figure supplement 3). We did not detect a main temperature effect (F1,952 = 2.797; p=0.157). Running models for each temperature level, we found that treatment duration affected the total number of offspring produced by females at 24°C and 28°C, but not at 20°C (Table 4, Table 4—source data 2).
+
+**Table 4.**
+ Summary statistics from fitting generalized linear models (GLMs) separately for each temperature level to explore the significant interaction between temperature and treatment duration effects for total offspring produced by females during days 1, 2, 3, 4, 5, and 8 after mating.Table 4—source data 1.Summary statistics from the Hurdle model to analyze potential differences in egg production across treatments with temperature as a factor.Note that using temperature as a factor yielded qualitatively identical results than treating it as a continuous covariable. p-values from Hurdel model are computed using ANOVA type III, Wald test. Corresponding data is plotted in Figure 6—figure supplement 2.Table 4—source data 2.Summary statistics from Tukey’s post hoc test as a complementary analysis to examine the meaning of significant interaction between temperature and treatment duration for total of offspring produced by females during the days 1, 2, 3, 4, 5, and 8 after mating.Short (48 hr) – Long (13 days) treatment duration contrast table for each temperature level. Test from generalized linear models (GLMs) fitted with temperature as factor. Note that using Tukey’s post hoc yielded qualitatively identical results from running models separately for each temperature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">T°C</th>
+      <th colspan="3">Total of offspring</th>
+    </tr>
+    <tr>
+      <th>Fdf</th>
+      <th>p-value</th>
+      <th>Estimate (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20°</td>
+      <td>0.61,322</td>
+      <td>0.454</td>
+      <td>1.42 (−2.30–5.15)</td>
+    </tr>
+    <tr>
+      <td>24°</td>
+      <td>4.61,321</td>
+      <td>0.032</td>
+      <td>4.11 (0.35–7.86)</td>
+    </tr>
+    <tr>
+      <td>28°</td>
+      <td>5.21,308</td>
+      <td>0.022</td>
+      <td>4.26 (0.62–7.89)</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, we did not detect significant interactions in survival (SCR by treatment duration, χ21=0.276, p=0.694; SCR by temperature, χ21=0.311, p=0.694; temperature by treatment duration, χ21=4.09, p=0.128), nor significant main temperature (χ21=1.69; p=0.386) or SCR effects (χ21=0.154; p=0.694). We did detect a significant main treatment duration effect (χ21=13.03; p=0.001; Figure 6—figure supplement 4).
 
@@ -139,7 +474,7 @@ Finally, we did not detect significant interactions in survival (SCR by treatmen
 
 We show that male harm exhibits complex plasticity in response to temperature changes within an optimal reproductive range (20–28°C) for a wild D. melanogaster population, with several implications for our understanding of how sexual conflict unfolds in nature. First, we show that net harm to females varies markedly within this range, such that relative harm (i.e. the proportional reduction in average female LRS in polygamy vs. monogamy) was maximal at 24°C, decreased at 20°C and was minimum at 28°C. Second, rate-sensitive fitness estimates indicate that arising population costs are dependent on the interaction between temperature and population demography, such that demography modulates the impact of male harm on population viability less at warmer temperatures. Third, our results strongly suggest that male harm effects on population growth have to do with the fact that different mechanisms exhibit qualitatively different reaction norms in response to temperature, with distinct effects on different female fitness components. More specifically, at cold temperatures courtship intensity (i.e. male harassment; pre-copulatory harm mechanism) decreased, and female fitness was impacted more via accelerated actuarial aging than at warm temperatures. In contrast, warm temperatures impacted mating costs and effects on female receptivity (i.e. post-copulatory mechanism), and female fitness decreased more via accelerated reproductive aging than at colder temperatures. We discuss how such plasticity may affect how male harm impacts populations, as well as selection, adaptation and, ultimately, evolutionary rescue under a warming climate.
 
-## Temperature effects on male harm and its consequences for populations
+### Temperature effects on male harm and its consequences for populations
 
 We found that temperature variation within the optimal reproductive range for our study population in the wild had a strong effect on net male harm levels. To gauge male harm, we used the standard procedure of comparing female LRS in monogamy, which imposes low male-male competition and thus low sexual conflict, vs. polyandry (i.e. a female with three males), which imposes high male-male competition and intensifies sexual conflict between the sexes (Yun et al., 2021). These sex ratios are common in mating patches in the wild, and are actually representative of the extremes in natural levels of male-male competition (Dukas, 2020). In monogamy, temperature did not affect female fitness (Figure 2), showing that female reproduction is indeed optimal within this range. In contrast, the net decrease in female LRS in polyandry vs. monogamy was highly dependent on the thermal environment, with an average decrease of H=0.36 at 24 °C, H=0.22 at 20 °C. and H=0.10 at 28 °C, at which temperature we did not find a statistically significant effect of mating system on female LRS (Figure 2).
 
@@ -151,7 +486,7 @@ To sum up, we offer strong evidence that different male harm mechanisms are sens
 
 In addition, the above results open up the possibility that warm climates may lessen the impact of sexual conflict on population viability, perhaps facilitating evolutionary rescue. Male harm effects were found to be relatively lower in warmer temperatures and in decreasing populations, precisely the type of context that would be typical of a climate-change scenario. The effects found in this study were within the optimum reproductive range for this population, but similar results have been reported in response to stressful temperatures. For instance, temperature has been used to induce environmental stress in natural populations of seed beetles (Callosobruchus maculatus), showing that a stressful thermal regime reduces intra-locus sexual conflict by aligning selection in males and females (Berger et al., 2014, but see Martinossi-Allibert et al., 2019). A previous study in a lab-adapted population of D. melanogaster also shows that male harm levels (i.e. inter-sexual conflict) decrease when subject to maladaptive warm temperatures (García‐Roa et al., 2019). However, there are two reasons why it is important to caution against direct extrapolation of our results to wild populations at this stage, in particular in relation to their relevance for populations facing the current climate crisis. First, our monogamy vs. polyandry treatments reflect the low vs. high-end of the spectrum of operational sex ratios that are typical of D. melanogaster at mating patches in the wild (Dukas, 2020), and thus our measures of male harm effects are likely to be generally higher than expected in nature. While this does not change the main conclusions regarding temperature effects, it is important to note when considering the degree to which these effects may be relevant in the wild. Second, our treatment temperatures were stable, designed to study how coarse-grain changes in temperature across the adult lifespan of flies may influence how sexual conflict unfolds in nature. Thus, future studies will need to encompass how fine-grained fluctuation (i.e. repeated variation of temperature across an adult’s lifespan) may affect male harm for a more comprehensive picture of temperature effects on sexual conflict in the wild.
 
-## Temperature effects on sexual conflict mechanisms in Drosophila melanogaster
+### Temperature effects on sexual conflict mechanisms in Drosophila melanogaster
 
 Prior to mating, D. melanogaster males harm females via sexual harassment, due to protracted courtship of one or several males that results in physical damage, interference with other behaviors (e.g. foraging or egg-laying), and costly energetic investment into male avoidance (e.g. female rejection) (Bretman et al., 2019; Partridge and Fowler, 1990; Teseo et al., 2016). Importantly, previous studies in this species have shown that male harm is directly related to courtship intensity and female rejection, and indirectly to male-male aggression as a direct measure of male intrasexual competition (e.g. Bretman et al., 2019; Carazo et al., 2014; Partridge and Fowler, 1990). In our study, we found a clear increase in both courtship intensity and female rejection in polyandry vs. monogamy, but this was largely dependent on the thermal environment (Figure 5a–b). While we found clear evidence that harassment increases in polygamy at 28°C and 24°C, we did not find a similar effect at 20°C (Figure 5a). Female rejection behaviors exhibited the same trend (Figure 5b), and this was due to increased male courtship attempts (not to an increase in female likelihood to reject male courtships). Thus, our results suggest that male harassment decreases drastically at cold temperatures and is perhaps maximal at warm temperatures, at which temperatures we also detected the highest level of male-male aggression (Figure 5c). The above results seem to suggest that the decrease in male harm to females that we detected at 20°C vs. 24°C (Figure 2) is likely explained by the substantial drop in male harassment at this temperature. However, the same logic cannot apply to the decrease in male harm to females that we detected at 28°C vs. 24°C (see below).
 
@@ -161,6 +496,6 @@ All in all, our results suggest that at least some post-copulatory harm mechanis
 
 We suggest future studies should explore these ideas by examining in detail how temperature affects the composition and transfer of SFPs to females, and how females respond to the transfer of these proteins and to male harm in general (i.e. effects on female resistance). In combination with experimental evolution at different temperatures, such an approach would allow us to disentangle between two causal hypotheses for the observed results. First, that warm temperatures may buffer sexual conflict in itself by aligning male and female reproductive interests. For example, if live-fast-die-young strategies fare relatively better for females at warm than cold temperatures, male and female optimal reproductive strategies may overlap more due to the fact that cumulative late-life effects of male harm might be diluted by the inherently high female intrinsic mortality at warm temperatures. Second, whether modulation of male harm at cold and (particularly) warm temperatures has to do with the fact that different male harm mechanisms are adapted to operate better at certain temperatures. For example, due to environmental effects on male activity or protein folding. In the latter case, male harm would be expected to increase as males adapt to higher or lower average temperatures, but sexual conflict per se (i.e. the degree to which male and female evolutionary interests overlap) would be expected to remain constant. Both of the above hypotheses could have broad consequences for our understanding of the evolution of sexual conflict across the tree of life.
 
-## Conclusions
+### Conclusions
 
 Our findings may have implications for our understanding of how sexual conflict unfolds in nature, and its consequences for populations. First, they add to growing evidence (Gomez-Llano et al., 2018; MacPherson et al., 2018; Malek and Long, 2019; Perry and Rowe, 2018; Yun et al., 2017) indicating that ecological context is key in shaping sexually antagonistic coevolution and, in particular, suggest that temperature may be a particularly salient ecological factor to understand how sexual conflict evolves and operates in nature (García-Roa et al., 2020). Second, they highlight that male harm mechanisms can be highly plastic even in response to relatively minor fluctuations in temperature well within the optimal reproductive range, and suggest that different harm mechanisms are differently affected by temperature. Third, they suggest that male harm effects on female life-history and fitness components are asymmetrically modulated by temperature; male harm particularly decreased survival at cold and moderate temperatures, and reproductive aging at moderate and hot temperatures. In conjunction, these phenomena may have a bearing on evolutionary rescue and local adaptation processes. For example, in maintaining genetic variation in sexually selected traits in males, and/or in ameliorating the demographic impact of sexual conflict in populations facing environmental change.

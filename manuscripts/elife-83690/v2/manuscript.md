@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01e41cf67 Biosciences Division, Los Alamos National Laboratory Los Alamos United States
-2. https://ror.org/01e41cf67 Center for Nonlinear Studies, Los Alamos National Laboratory Los Alamos United States
-3. https://ror.org/05gvnxz63 Data Science and Learning, Argonne National Laboratory Lemont United States
+1. Biosciences Division, Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))
+2. Center for Nonlinear Studies, Los Alamos National Laboratory Los Alamos United States ([ROR:01e41cf67](https://ror.org/01e41cf67))
+3. Data Science and Learning, Argonne National Laboratory Lemont United States ([ROR:05gvnxz63](https://ror.org/05gvnxz63))
 
 † Corresponding author
 
@@ -43,15 +43,61 @@ Despite the drawbacks to both population models and GSMs, limitations in our abi
 
 ## Results
 
-## Predictive value of the method
+### Predictive value of the method
 
 We first examine the ability of our metabolic modeling-based approach to successfully predict engraftment versus non-engraftment for different microbial species introduced orally across different experimental or clinical trial settings. The study that we use to test predictive power, authored by Maldonado-Gómez et al., 2016, involved the introduction of candidate probiotic into an established microbial community. In the study, Bifidobacterium longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these subjects. We predicted engraftment of the candidate probiotic using the ‘baseline’ samples, which were taken before introduction of the probiotic, and the ‘treatment’ samples, which were taken during probiotic administration. We compared our predictions to a binary ‘engrafter’ or ‘non-engrafter’ classification based on cell culture at later time-points.
 
 As a metric of classification success for the data set, we use the area under the curve of the receiver operator characteristic (AUC-ROC). This metric provides a measure of performance based on the model’s ability to identify true positives while avoiding false positives, so that 1 is perfect classifier performance and o.5 is equivalent to random classification (i.e. flipping a coin for each sample). We used six sets of parameters inferred from joint FBA with different hyperparameters to parameterize the gLV model, and report the resulting predictive value in Table 1.
 
+**Table 1.**
+ Area under the receiver operating characteristic curves for our method’s predictions of 22 samples from each of two time-points (TP) using six sets of parameters inferred from joint flux balance analysis (FBA) with six different sets of hyperparameters.The first three sets of inferred parameters differ in the ‘resource allocation constraint (RAC)’ in joint FBA. We used values of 35 and 70 for this parameter, as well as using joint FBA without RAC. The next three sets of parameters were inferred using an RAC value of 35 but changes to the model environments. EU average diet (C halved/doubled) had the major carbon sources of the ‘EU average diet’ (D-maltose, sucrose, D-fructose, and D-glucose) halved or doubled in availability, and ‘complete medium’ simulated the availability of any exchangeable metabolite at uniform simulated inflow.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Baseline TP (p-value)</th>
+      <th>Treatment TP (p-value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EU average diet (RAC 35)</td>
+      <td>0.6161 (0.1020)</td>
+      <td>0.8482 (&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td>EU average diet (No RAC)</td>
+      <td>0.6161 (0.1020)</td>
+      <td>0.8571 (&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td>EU average diet (RAC 70)</td>
+      <td>0.6429 (0.0741)</td>
+      <td>0.8482 (&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td>EU average diet (C halved)</td>
+      <td>0.6071 (0.1107)</td>
+      <td>0.8393 (&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td>EU average diet (C doubled)</td>
+      <td>0.6339 (0.0808)</td>
+      <td>0.8304 (0.0010)</td>
+    </tr>
+    <tr>
+      <td>Complete medium</td>
+      <td>0.6071 (0.1155)</td>
+      <td>0.7143 (0.0221)</td>
+    </tr>
+  </tbody>
+</table>
+
 Our method showed moderate positive predictive value on predictions from the baseline samples, and good predictive value on predictions made from samples taken during treatment. Improved prediction between baseline and treatment samples suggests that a change in microbiome as a response to the introduction of the probiotic impacts our method. This in turn suggests that our method captures at least part of the underlying biological processes that determine engraftment. Furthermore, these results were mostly robust to choice of hyperparameters, with the exception being that the complete medium showed significantly worse predictive value on the samples taken during treatment.
 
-In Figure 2, we show the estimated significance of our results when compared to the null model (720 samples of the null model). We use an approximate ‘edge swapping’ procedure as a null model, which draws interaction parameters randomly from the set of inferred interaction parameters, with replacement. In other words, our null model shuffles the original set of interaction parameters so that any βjiN in the null model is some βji in the inferred parameter set. This ensures that the network of interactions in our null model has the same edge weight distribution as that of our inferred model so that we may test the significance of the interactions inferred, rather than summary statistics such as diversity.
+In Figure 2, we show the estimated significance of our results when compared to the null model (720 samples of the null model). We use an approximate ‘edge swapping’ procedure as a null model, which draws interaction parameters randomly from the set of inferred interaction parameters, with replacement. In other words, our null model shuffles the original set of interaction parameters so that any $\beta_{ji}^{N}$ in the null model is some $\beta_{ji}$ in the inferred parameter set. This ensures that the network of interactions in our null model has the same edge weight distribution as that of our inferred model so that we may test the significance of the interactions inferred, rather than summary statistics such as diversity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig2-v2.jpg)
 
@@ -63,17 +109,17 @@ We also compared our method with two standard machine learning techniques: a sup
 
 **Figure 3.:** (A) Our method (horizontal lines) significantly outperformed the support vector machine classifier, which was assessed with 1000 random train/test splits. (B) The random forest classifier, also assessed with 1000 train/test splits, performed similarly on average to our method.
 
-## Uniform shifts in interaction parameters
+### Uniform shifts in interaction parameters
 
-One consequence of using the gLV model in our method is the possibility of finite-time blow-up in simulation. This happens when one or more taxa approach infinite biomass in finite simulation time. In practice, whenever one or more taxa increase to a level much higher than the initial total biomass of the simulated system, simulation is slowed down and results may be less reliable. There are two simple methods to prevent this from happening. The first is to alter every interaction parameter to be more negative (see Equation 3), making the system uniformly more antagonistic and less likely to show finite-time blow-up. The second is to include negative self-inhibition (e.g. add βii<0 parameters [see Equation 4]).
+One consequence of using the gLV model in our method is the possibility of finite-time blow-up in simulation. This happens when one or more taxa approach infinite biomass in finite simulation time. In practice, whenever one or more taxa increase to a level much higher than the initial total biomass of the simulated system, simulation is slowed down and results may be less reliable. There are two simple methods to prevent this from happening. The first is to alter every interaction parameter to be more negative (see Equation 3), making the system uniformly more antagonistic and less likely to show finite-time blow-up. The second is to include negative self-inhibition (e.g. add $\beta_{ii}<0$ parameters [see Equation 4]).
 
 We tested both of these alterations by implementing them and computing predictions and the AUC-ROC of those predictions. Figure 4 shows that these changes did not have a significant impact on the performance of our predictions, as long as only antagonism was considered. When we shifted parameters in the positive direction (simulating commensalism or mutualism), finite-time blow-up was more likely and our results were much less stable.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83690/elife-83690-fig4-v2.jpg)
 
-**Figure 4.:** (A, B) We altered the generalized Lotka-Volterra model with uniform shifts in parameters which added either antagonism or self-inhibition to the model. We tested self-inhibition with values from 0 to 1 (no self-promotion) and antagonism with values from 1 (complete antagonism) to –1 (complete commensalism), with all . Neither change had a significant impact on the area under the receiver operator characteristic curve (AUC-ROC) of our method’s predictions, although adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.βij∈[0,1]
+**Figure 4.:** (A, B) We altered the generalized Lotka-Volterra model with uniform shifts in parameters which added either antagonism or self-inhibition to the model. We tested self-inhibition with values from 0 to 1 (no self-promotion) and antagonism with values from 1 (complete antagonism) to –1 (complete commensalism), with all $\beta_{ij}\in[0,1]$. Neither change had a significant impact on the area under the receiver operator characteristic curve (AUC-ROC) of our method’s predictions, although adding commensalism to the model made the model and resulting predictions much less stable due to increased finite-time blow-up.
 
-## Interpreting mechanism—sensitivity to inferred parameters
+### Interpreting mechanism—sensitivity to inferred parameters
 
 One major advantage to any mechanistic model is that we may measure the sensitivity of our results to perturbations in the model. Here, we investigate the results of perturbing the model of the B. longum experiments in two ways: simulating ‘knock-out’ experiments and computing sensitivity to changes in interaction strength.
 
@@ -81,19 +127,138 @@ First, we simulate knock-out experiments by removing a taxa from the full networ
 
 Next, we measure the sensitivity of B. longum growth to each interaction parameter in the LV model. That is, we measure the effect of perturbing each parameter individually on the simulated abundance of B. longum at equilibrium according to antagonistic LV dynamics.
 
-## Sensitivity to community members
+#### Sensitivity to community members
 
 In order to investigate how sensitive B. longum engraftment is to each of the other species present in any sample of the B. longum experimental data set, we simulate ‘knock-out’ experiments and observe the effect this has on our prediction of engraftment. For each simulated knock-out, we removed a taxa from every sample it was present in and repeated our predictive procedure. We recorded the difference in sample score for engraftment of B. longum (Equation 2) as well as the change in AUC-ROC of our set of predictions. We simulated knock-outs for the five most abundant taxa in the data (averaging across samples).
 
 Table 2 shows the summary statistics of the simulated knock-out experiments. Of the five knock-outs and two sample time-points that we tested, all but one increased predicted engraftment by a slight amount. Interestingly, most of these also increased prediction accuracy slightly, suggesting that the increase in engraftment was more pronounced among the true engrafter samples.
 
+**Table 2.**
+ We experimented with simulated knock-outs for the top 5 taxa in average abundance in the data.The ‘sample proportion’ column gives the proportion of samples in the data set that contain the organism that was knocked out. The ‘average score difference’ is the average effect of the knock-out on our computed engraftment score, with a positive number indicating an average increase in engraftment after knock-out of the organism (implying a negative interaction between the organism and B. longum). The final column shows the impact on our predictions of removing the organism from the analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Sample proportion</th>
+      <th>Average score difference</th>
+      <th>AUC-ROC difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline TP</td>
+      <td>Bifidobacterium adolescentis</td>
+      <td>0.954545</td>
+      <td>0.010114</td>
+      <td>0.017857</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uncultured Ruminococcus sp.</td>
+      <td>1.000000</td>
+      <td>0.012803</td>
+      <td>0.026786</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uncultured Clostridium sp.</td>
+      <td>1.000000</td>
+      <td>0.006259</td>
+      <td>–0.008929</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eubacterium rectale</td>
+      <td>1.000000</td>
+      <td>0.006183</td>
+      <td>0.017857</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Faecalibacterium prausnitzii</td>
+      <td>1.000000</td>
+      <td>–0.002250</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>Treatment TP</td>
+      <td>B. adolescentis</td>
+      <td>0.954545</td>
+      <td>0.015415</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uncultured Ruminococcus sp.</td>
+      <td>1.000000</td>
+      <td>0.016707</td>
+      <td>0.008929</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uncultured Clostridium sp.</td>
+      <td>1.000000</td>
+      <td>0.014424</td>
+      <td>0.017857</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>E. rectale</td>
+      <td>1.000000</td>
+      <td>0.011133</td>
+      <td>0.026786</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>F. prausnitzii</td>
+      <td>0.954545</td>
+      <td>0.013323</td>
+      <td>0.035714</td>
+    </tr>
+  </tbody>
+</table>
+
 This experiment demonstrates that incorporating mechanism into prediction can provide useful insight beyond prediction. Because our model considers the network of interactions between microbial taxa, we are able to experiment with the effects of each individual taxa by using simulated experiments like knock-outs.
 
-## Sensitivity to interactions
+#### Sensitivity to interactions
 
-Our method is based on the network of interactions between microbial species, which ties together the individual interactions between each pair of species into one complex picture. This means that the interaction between two species unrelated to B. longum may have an effect on B. longum’s growth. We can compute this effect by computing how B. longum’s simulated abundance changes as we vary each parameter. Precisely, we can compute the derivative of B. longum with respect to each parameter βlk in the model.
+Our method is based on the network of interactions between microbial species, which ties together the individual interactions between each pair of species into one complex picture. This means that the interaction between two species unrelated to B. longum may have an effect on B. longum’s growth. We can compute this effect by computing how B. longum’s simulated abundance changes as we vary each parameter. Precisely, we can compute the derivative of B. longum with respect to each parameter $\beta_{lk}$ in the model.
 
-We computed the sensitivity of our engraftment score to 8 of the interaction parameters in the model, using an RAC value of 35 and the ‘EU average diet’. For each of the baseline and treatment time-point sample sets, we chose the 2 strongest negative and 2 strongest positive interactions that appeared in at least half of all samples, as well as the 2 strongest positive and 2 strongest negative interactions that have B. longum as a target (and so act directly on the probiotic) that appeared in at least half of all samples. We observed that engraftment score was very sensitive to all the parameters chosen. In Table 3, we show the average sensitivity across the 22 baseline and 22 treatment samples and 8 edges, as well as the average (across edges) variance across the samples. We also include the average (across samples) of the variance in engraftment score across the hyperparameter choices that we tested (with different environmental conditions and RAC values) for comparison. We notice that, in contrast to the model interaction parameters βlk, engraftment score was not particularly sensitive to hyperparameter choices.
+We computed the sensitivity of our engraftment score to 8 of the interaction parameters in the model, using an RAC value of 35 and the ‘EU average diet’. For each of the baseline and treatment time-point sample sets, we chose the 2 strongest negative and 2 strongest positive interactions that appeared in at least half of all samples, as well as the 2 strongest positive and 2 strongest negative interactions that have B. longum as a target (and so act directly on the probiotic) that appeared in at least half of all samples. We observed that engraftment score was very sensitive to all the parameters chosen. In Table 3, we show the average sensitivity across the 22 baseline and 22 treatment samples and 8 edges, as well as the average (across edges) variance across the samples. We also include the average (across samples) of the variance in engraftment score across the hyperparameter choices that we tested (with different environmental conditions and RAC values) for comparison. We notice that, in contrast to the model interaction parameters $\beta_{lk}$, engraftment score was not particularly sensitive to hyperparameter choices.
+
+**Table 3.**
+ The average sensitivity of engraftment score across 8 parameters and the 22 baseline and 22 treatment samples, as well as the average (across samples) variance across the 8 edges.The 8 edges were chosen because they were the 2 strongest positive edges, 2 strongest negative edges, the 2 strongest positive direct edges (i.e. with B. longum as a target) and the 2 strongest negative direct edges. Detailed sensitivity results for these 8 edges can be found in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Baseline time-point</th>
+      <th>Treatment time-point</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variance across setups</td>
+      <td>4.270608e-06</td>
+      <td>2.621430e-05</td>
+    </tr>
+    <tr>
+      <td>Average sensitivity (8 tested edges)</td>
+      <td>3.435107e+33</td>
+      <td>7.504735e+10</td>
+    </tr>
+    <tr>
+      <td>Variance of sensitivity (8 tested edges)</td>
+      <td>6.250203e+68</td>
+      <td>1.626682e+23</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -107,7 +272,7 @@ Here, we present a simpler model—a network of emergent interactions between mi
 
 Another strength of our approach is its interpretability. The B. longum engraftment analysis provides us with an example motivation, which would be to identify other partner microbes that could improve the responsiveness to the engraftment of a target probiotic. In this instance, we demonstrate how this might be done by quantifying the impact of five high-abundance microbes on B. longum engraftment. We see, for example, that B. adolescentis has a negative impact on B. longum engraftment (simulated knock-outs increased engraftment score), while F. prausnitzii has a positive impact on B. longum engraftment. Although time consuming, a complete set of simulated knock-out experiments is is readily possible using our method, which could identify the largest positive and negative relationships between specific taxa and B. longum engraftment.
 
-Inspecting the sensitivity of our method’s engraftment score revealed that it is very sensitive to the individual interaction parameters βlk but quite robust to changes in hyperparameters. This suggests that the method is sensitive to the interactions between microbes, while robust to changes in computational and environmental parameters. It also suggests that individual interactions between microorganisms can have an out-sized impact on the downstream composition of a microbial community. This is consistent with the idea that probiotics may have a role in treating human disease by reorganizing the microbiome through the addition of one or a few species.
+Inspecting the sensitivity of our method’s engraftment score revealed that it is very sensitive to the individual interaction parameters $\beta_{lk}$ but quite robust to changes in hyperparameters. This suggests that the method is sensitive to the interactions between microbes, while robust to changes in computational and environmental parameters. It also suggests that individual interactions between microorganisms can have an out-sized impact on the downstream composition of a microbial community. This is consistent with the idea that probiotics may have a role in treating human disease by reorganizing the microbiome through the addition of one or a few species.
 
 Lastly, we note that we have previously shown that species-species interaction modeling, i.e., models built from interactions between microbes, do not capture the complexities of microbial community dynamics that emerge as communities change in composition (Brunner and Chia, 2019). Here, we mitigate this shortcoming by determining interaction parameters from pairwise models under specific metabolic conditions, providing limited environmental context to our method. However, it is unlikely that these interactions remain constant as the microbial community manipulates its environment. We conjecture that prediction can be improved by accounting for changes in microbial interaction as the environment changes. In upcoming work (Brunner et al., 2023), we demonstrate that dynamic FBA implies that a microbial community behaves according to a discrete sequence of interaction networks over time. Incorporating this dynamic behavior may improve prediction with only a modest increase in model complexity, as long as this sequence of networks can be efficiently determined.
 
@@ -119,27 +284,43 @@ Our method, as shown in Figure 5, is based on the generalized Lotka-Volterra mod
 
 **Figure 5.:** In brief, we generate an interaction network of genome-scale models using pairwise joint flux balance analysis. To produce a prediction of engraftment for a given sample, we use the taxa present in the sample to generate an induced sub-graph of the full network. This is then used to define the parameters in the generalized Lotka-Volterra dynamical system to generate a prediction of engraftment.
 
-## Assessing receptivity with the gLV model
+### Assessing receptivity with the gLV model
 
 In order to assess how receptive a sub-graph is to an invading taxa, we used the gLV model, which can be associated with any pairwise graph. We simulated the community represented by each sample to equilibrium and scored the performance of the invading taxa by simulated final abundance or time to extinction.
 
-The gLV model (Edelstein-Keshet, 2005) of a community of N species is written as follows:(1)dxidt=xi(1+∑j≠iβjixj).
+The gLV model (Edelstein-Keshet, 2005) of a community of $N$ species is written as follows:
+
+$$
+\frac{dx_{i}}{dt}=x_{i}(1+\sumj\neqi\beta_{ji}x_{j}).
+$$
 
 Notice that we use a version of this model that assumes an intrinsic growth rate of 1 for each taxa because fitting accurate intrinsic growth rates would require additional data, while we wish to assess the performance of our methods without the need for parameter fitting. Our predictions were based on the equilibrium relative abundance of the target variable (e.g. the variable representing a candidate probiotic) in the dynamical system.
 
-The gLV model can display an array of behaviors, including multi-stability and chaos. For this reason, we use a Monte-Carlo sampling approach to generating predictions, taking repeated random draws of initial conditions and simulating forward. In our experiments, we used 1000 draws (i.e. we compute 1000 separate ODE so) for each sample. In each trial, we scored the network based on the simulated relative abundance of the invader at some large time T. It is possible that the invading taxa either dominates the community (i.e. relative abundance approaches 1) or becomes extinct in our simulation. We take this into account by setting a score as follows:(2)si=13(time to extinctionT+relative abundance at time T+time to community dominanceT)
+The gLV model can display an array of behaviors, including multi-stability and chaos. For this reason, we use a Monte-Carlo sampling approach to generating predictions, taking repeated random draws of initial conditions and simulating forward. In our experiments, we used 1000 draws (i.e. we compute 1000 separate ODE so) for each sample. In each trial, we scored the network based on the simulated relative abundance of the invader at some large time $T$. It is possible that the invading taxa either dominates the community (i.e. relative abundance approaches 1) or becomes extinct in our simulation. We take this into account by setting a score as follows:
 
-for each trial i and averaging over all trials.
+$$
+s_{i}=\frac{1}{3}(\frac{time to extinction}{T}+relative abundance at time T+\frac{time to community dominance}{T})
+$$
 
-To test changes in the structure of the gLV model and control for possible finite-time blow-up of model solutions, we tested two general alterations to the model. The first is a constant shift of the interaction parameters:(3)dxidt=xi(1+∑j=1N(βji−c)xj)
+for each trial $i$ and averaging over all trials.
 
-and the second is a shift only in the self-interaction terms:(4)dxidt=xi(1−cxi+∑j≠iβjixj).
+To test changes in the structure of the gLV model and control for possible finite-time blow-up of model solutions, we tested two general alterations to the model. The first is a constant shift of the interaction parameters:
 
-For both alterations, we used a single constant c across the entire model, and experimented with changes in the value of c.
+$$
+\frac{dx_{i}}{dt}=x_{i}(1+\sumj=1N(\beta_{ji}−c)x_{j})
+$$
 
-## Inferring interaction parameters
+and the second is a shift only in the self-interaction terms:
 
-To infer the interaction parameters βji of the dynamical system, we use a network of interactions implied by a technique known as FBA. FBA is a technique used to predict growth rates of microbes using genome-scale information about their internal metabolisms (Lewis et al., 2012). This technique requires a GSM which represents the set of metabolic pathways of a microbe, as well as information about the environmental metabolites available. An optimization problem is then solved to predict a growth rate of the microbe. Similarly, a technique known as ‘joint FBA’ (Zomorrodi and Maranas, 2012; Chan et al., 2017; Kim et al., 2022) can be used to estimate growth rates of pairs of microbes using a GSM from each microbe.
+$$
+\frac{dx_{i}}{dt}=x_{i}(1−cx_{i}+\sumj\neqi\beta_{ji}x_{j}).
+$$
+
+For both alterations, we used a single constant $c$ across the entire model, and experimented with changes in the value of $c$.
+
+### Inferring interaction parameters
+
+To infer the interaction parameters $\beta_{ji}$ of the dynamical system, we use a network of interactions implied by a technique known as FBA. FBA is a technique used to predict growth rates of microbes using genome-scale information about their internal metabolisms (Lewis et al., 2012). This technique requires a GSM which represents the set of metabolic pathways of a microbe, as well as information about the environmental metabolites available. An optimization problem is then solved to predict a growth rate of the microbe. Similarly, a technique known as ‘joint FBA’ (Zomorrodi and Maranas, 2012; Chan et al., 2017; Kim et al., 2022) can be used to estimate growth rates of pairs of microbes using a GSM from each microbe.
 
 FBA and joint FBA allow us to simulate singleton and pair growth experiments in silico and use the results of these simulated experiments to parameterize our dynamical model. Simulated biomass when grown in a pair was compared to simulated biomass when grown alone in order to determine an implied interaction between microbes. This interaction is then used as a parameter in the dynamical model, which can be conceptualized as an edge in a network of interactions.
 
@@ -149,36 +330,52 @@ To perform joint FBA, simulated inflow of nutrients was determined by medium def
 
 In order to test the impact of joint FBA hyperparameters including medium and resource allocation on our predictions, we also created networks of interaction parameters by performing joint FBA with five alternative sets of hyperparameters. Two of these networks were made with alterations to the RAC constraint we used in computing joint FBA. We computed interactions using an RAC value of 70, which relaxes the constraint on total flux, and without a resource allocation constraint. The final three networks were constructed with different media, simulating differences in the external environment. We constructed a network with the major carbon sources of the ‘EU average diet’ halved in availability, and a second with these carbons doubled. The major carbon sources were taken to be D-maltose, sucrose, D-fructose, and D-glucose. Finally, we computed a network with a ‘complete medium’ in which any exchangeable metabolite for each model was made available with uniform simulated inflow.
 
-We use the log-ratio of simulated growth in pairs and alone as the implied effect of one microbe on another. That is, if simulated growth of species i alone is xi, and growth of species i when coupled in a pair with species j is xij, we weight the edge from species j to species i as (5)wji∗=log⁡(xijxi)
+We use the log-ratio of simulated growth in pairs and alone as the implied effect of one microbe on another. That is, if simulated growth of species $i$ alone is $x_{i}$, and growth of species $i$ when coupled in a pair with species $j$ is $x_{ij}$, we weight the edge from species $j$ to species $i$ as
+
+$$
+w_{ji}^{∗}=log⁡(\frac{x_{ij}}{x_{i}})
+$$
 
 We use the log-ratio because it is the simplest choice of translating simulated data to interaction that accounts for fold-changes. Of course, the simple difference in simulated biomass is another possible choice, but this will be much more sensitive to absolute scaling in simulation, so, for example, slow growing taxa will be biased toward smaller interactions in the network. Furthermore, our in silico growth experiments only provide simulated biomass values at chemostatic equilibrium, meaning that fitting LV parameters directly to these data is an underdetermined problem, particularly when pair growth leads to a simulated extinction.
 
-We also re-scale our network so that all edge weights are in the interval [−1,1], meaning we take as our edge weights(6)wji=wji∗maxl,k(|wlk∗|).
+We also re-scale our network so that all edge weights are in the interval $[−1,1]$, meaning we take as our edge weights
 
-This re-scaling is done for computational convenience, and can be viewed as a time re-scaling of the network dynamics which does not effect our predictions. Additionally, we tested the approach after adjusting either all parameters by addition of a single constant value to every βji, as well as by adjusting the parameters by addition of a single constant value to every self-regulatory parameter βjj.
+$$
+w_{ji}=\frac{w_{ji}^{∗}}{maxl,k(|w_{lk}^{∗}|)}.
+$$
 
-## Creation of GSMs
+This re-scaling is done for computational convenience, and can be viewed as a time re-scaling of the network dynamics which does not effect our predictions. Additionally, we tested the approach after adjusting either all parameters by addition of a single constant value to every $\beta_{ji}$, as well as by adjusting the parameters by addition of a single constant value to every self-regulatory parameter $\beta_{jj}$.
+
+### Creation of GSMs
 
 In order to carry out our analysis, we needed to construct GSMs for the taxa found in the data. To do this, we matched taxa in the data by NCBI taxa ID to genomes in the NCBI RefSeq database (O’Leary et al., 2016). We matched taxa to the nearest (by tree distance according to NCBI’s taxonomic database) genome that was listed as ‘Chromosome’ or ‘Complete Genome’, or contained at least 1000 genes. On average, this approach allowed us to perform our experiments with ∼87–88% coverage of each sample. Taxa for which we failed to match a genome were removed from the data, and all analysis was performed on the remaining. For full details on the coverage of each sample, see Supplementary file 1.
 
 Next, we used the ModelSEED database through ModelSEEDPy (Seaver et al., 2021) to reconstruct 390 GSMs for each genome that we matched to the data. All models constructed showed positive 391 simulated growth rates using FBA on the ‘EU average diet’ medium.
 
-## Prediction and evaluation
+### Prediction and evaluation
 
 We used data from Maldonado-Gómez et al., 2016, in order to test the predictive power of the method. This data consisted of bacterial community composition of fecal samples taken over the course of experiments in which B. longum AH1206 was administered as an oral probiotic to 23 subjects, with data available for 22 of these. Subjects were then differentiated into ‘engrafters’ and ‘non-engrafters’ based on the survival of the probiotic strain, as determined by cell culture at later time-points, allowing us to use our method as a classifier. We note that our method ‘learns’ using joint FBA, and so there is no need to split the data into training and testing sets. In fact, the ‘learning’ procedure does not make use of any known sample classifications, as a traditional machine learning algorithm would. This allows us to test our predictions on the entire data set, which provides greater confidence in our results. We made and evaluated predictions using two sets of samples, one taken at a ‘baseline’ time-point before administration of the the probiotic, and one taken at a ‘treatment’ time-point during administration of the probiotic.
 
-We computed scores for each sample using simulation to time T=100, and varied the discrimination threshold for the binary prediction across the observed values. From this, we computed an ROC curve and its integral (commonly referred to as finding the ‘AUC-ROC’). AUC-ROCs take values in the interval [0, 1] and, in general, an AUC-ROC greater than 0.5 indicates positive predictive value of the model. We compared the AUC-ROC to classification using SVM and RF classification (Pedregosa et al., 2011). The SVM and RF classifications were performed using both the relative abundances from the data and binary (presence/absence) forms of the data, which matches our method.
+We computed scores for each sample using simulation to time $T=100$, and varied the discrimination threshold for the binary prediction across the observed values. From this, we computed an ROC curve and its integral (commonly referred to as finding the ‘AUC-ROC’). AUC-ROCs take values in the interval [0, 1] and, in general, an AUC-ROC greater than 0.5 indicates positive predictive value of the model. We compared the AUC-ROC to classification using SVM and RF classification (Pedregosa et al., 2011). The SVM and RF classifications were performed using both the relative abundances from the data and binary (presence/absence) forms of the data, which matches our method.
 
-We estimated the significance of our predictions against predictions from a null model created by parameterizing an LV system from an ‘edge-swapped’ full network. The ‘edge-swapped’ network was constructed by drawing edge weights from the original full network, with replacement, as is commonly done to create a null model in network analysis (Röttjers et al., 2021). This approach allows us to create random models that preserve the statistical characteristics of the models that we test on, while changing the specific interactions between taxa. That is, the distribution of the entire set of parameters in the null models βijN will be approximately the same as the distribution of parameters βij determined by joint FBA. Using this null model ensures that our conclusions are drawn from the joint FBA parameter learning method, and not simply a result of simpler characteristics, e.g., total connectedness of the community. We used 1039 samples from the null model to estimate the significance of our results.
+We estimated the significance of our predictions against predictions from a null model created by parameterizing an LV system from an ‘edge-swapped’ full network. The ‘edge-swapped’ network was constructed by drawing edge weights from the original full network, with replacement, as is commonly done to create a null model in network analysis (Röttjers et al., 2021). This approach allows us to create random models that preserve the statistical characteristics of the models that we test on, while changing the specific interactions between taxa. That is, the distribution of the entire set of parameters in the null models $\beta_{ij}^{N}$ will be approximately the same as the distribution of parameters $\beta_{ij}$ determined by joint FBA. Using this null model ensures that our conclusions are drawn from the joint FBA parameter learning method, and not simply a result of simpler characteristics, e.g., total connectedness of the community. We used 1039 samples from the null model to estimate the significance of our results.
 
-## SVM and RF classification
+### SVM and RF classification
 
 We compared the performance of our method to the performance of two traditional machine learning approaches: SVM and RF classifiers. We used 1000-fold cross-validation of the predictions made by these tools (i.e. 1000 independent train/test splits). Each trial consisted of splitting the data randomly into 16 training samples and 6 testing samples, fitting both an SVM and an RF classifier to the training samples using standard Python libraries (from scikit-learn v. 0.23.2; Pedregosa et al., 2011), and evaluating the 432 model’s predictions of the testing samples. This was repeated for both the ‘baseline’ and ‘treatment’ sets of samples.
 
-## Sensitivity to community members and interaction parameters
+### Sensitivity to community members and interaction parameters
 
-We compute B. longum AH1206 engraftment predictions using simulated knock-out experiments simply by removing select taxa from the model. The result is a prediction score computed according to Equation 2. This score can be compared to the non-knock-out experiment score to determine if the knock-out increased or decreased the predicted probability of B. longum engraftment. We compute and report the relative change in predicted engraftment score as(7)Δ=(score with knock-out taxa removed)−(score with knock-out taxa included)(score with knock-out taxa included).
+We compute B. longum AH1206 engraftment predictions using simulated knock-out experiments simply by removing select taxa from the model. The result is a prediction score computed according to Equation 2. This score can be compared to the non-knock-out experiment score to determine if the knock-out increased or decreased the predicted probability of B. longum engraftment. We compute and report the relative change in predicted engraftment score as
 
-We compute the sensitivity of B. longum’s growth to an interaction parameter βkl directly by using the chain rule (see, for example, Zi, 2011). This has the following form:(8)∂∂t(∂xi∂βkl)=xixkδi=l+xi∑j≠iβji∂xj∂βkl+(1+2βiixi+∑j≠iβjixj)∂xi∂βkl.
+$$
+Δ=\frac{(score with knock-out taxa removed)−(score with knock-out taxa included)}{(score with knock-out taxa included)}.
+$$
 
-Equation 8 allows us to solve a system of differential equations to determine the sensitivity of invader growth to that parameter. We solve this system of equations to a large time T=100 and report the weighted average of some late-time interval [t,T], with later time-points weighted more heavily, using the final 40 simulation time-points.
+We compute the sensitivity of B. longum’s growth to an interaction parameter $\beta_{kl}$ directly by using the chain rule (see, for example, Zi, 2011). This has the following form:
+
+$$
+\frac{∂}{∂t}(\frac{∂x_{i}}{∂\beta_{kl}})=x_{i}x_{k}\delta_{i=l}+x_{i}\sumj\neqi\beta_{ji}\frac{∂x_{j}}{∂\beta_{kl}}+(1+2\beta_{ii}x_{i}+\sumj\neqi\beta_{ji}x_{j})\frac{∂x_{i}}{∂\beta_{kl}}.
+$$
+
+Equation 8 allows us to solve a system of differential equations to determine the sensitivity of invader growth to that parameter. We solve this system of equations to a large time $T=100$ and report the weighted average of some late-time interval $[t,T]$, with later time-points weighted more heavily, using the final 40 simulation time-points.

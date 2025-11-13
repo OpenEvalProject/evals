@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Department of Biochemistry, The University of Western Ontario London Canada
-2. https://ror.org/02grkyz14 Department of Biochemistry, Department of Chemistry, The University of Western Ontario London Canada
+1. Department of Biochemistry, The University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Biochemistry, Department of Chemistry, The University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 

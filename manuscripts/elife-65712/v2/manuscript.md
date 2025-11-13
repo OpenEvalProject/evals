@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Fine control of protein stoichiometry at synapses underlies brain function and plasticity. How proteostasis is controlled independently for each type of synaptic protein in a synapse-specific and activity-dependent manner remains unclear. Here, we show that Susd4 , a gene coding for a complement-related transmembrane protein, is expressed by many neuronal populations starting at the time of synapse formation. Constitutive loss-of-function of Susd4 in the mouse impairs motor coordination adaptation and learning, prevents long-term depression at cerebellar synapses, and leads to misregulation of activity-dependent AMPA receptor subunit GluA2 degradation. We identified several proteins with known roles in the regulation of AMPA receptor turnover, in particular ubiquitin ligases of the NEDD4 subfamily, as SUSD4 binding partners. Our findings shed light on the potential role of SUSD4 mutations in neurodevelopmental diseases.
+Fine control of protein stoichiometry at synapses underlies brain function and plasticity. How proteostasis is controlled independently for each type of synaptic protein in a synapse-specific and activity-dependent manner remains unclear. Here, we show that Susd4, a gene coding for a complement-related transmembrane protein, is expressed by many neuronal populations starting at the time of synapse formation. Constitutive loss-of-function of Susd4 in the mouse impairs motor coordination adaptation and learning, prevents long-term depression at cerebellar synapses, and leads to misregulation of activity-dependent AMPA receptor subunit GluA2 degradation. We identified several proteins with known roles in the regulation of AMPA receptor turnover, in particular ubiquitin ligases of the NEDD4 subfamily, as SUSD4 binding partners. Our findings shed light on the potential role of SUSD4 mutations in neurodevelopmental diseases.
 
 ## Introduction
 
@@ -47,33 +47,85 @@ The Complement Control Protein (CCP) domain, an evolutionarily conserved module
 
 The mammalian SUSD4 gene codes for a transmembrane protein with four extracellular CCP domains (Figure 1A) and is highly expressed in the central nervous system (Holmquist et al., 2013). The SUSD4 gene is located in a genomic region deleted in patients with the 1q41q42 syndrome that includes developmental delays and intellectual deficiency (ID; Rosenfeld et al., 2011). SUSD4 is also among the 124 genes enriched in de novo missense mutations in a large cohort of individuals with autism spectrum disorders (ASDs) or IDs (Coe et al., 2019). A copy number variation and several de novo mutations with a high CADD score, which indicates the deleteriousness of the mutations, have been described in the SUSD4 gene in patients with ASDs (Cuscó et al., 2009; denovo-db, Seattle, WA [denovo-db.gs.washington.edu] 10, 2019). The SUSD4 protein has been described to regulate complement system activation in erythrocytes by binding the C1Q globular domain (Holmquist et al., 2013). Interestingly, this domain is found in major synaptic regulators such as C1QA (Stevens et al., 2007), CBLNs (Matsuda et al., 2010; Uemura et al., 2010), and C1Q-like proteins (Bolliger et al., 2011; Kakegawa et al., 2015; Sigoillot et al., 2015). Altogether these studies point to a potential role of SUSD4 in synapse formation and/or function and in the etiology of neurodevelopmental disorders.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram of the protein SUSD4 showing its domain organization with four extracellular Complement Control Protein (CCP) domains, one transmembrane (TM) domain and a cytoplasmic domain (CT). (B) Quantitative RT-PCR shows an increase in Susd4 mRNA expression (relative to the housekeeping gene Rpl13a) during postnatal development in the cerebellum and in the brainstem. Extracts were prepared from tissue samples of mice aged from 0 to 21 days (P0-21) and 3 months (3mo). Mean ± s.e.m. (n = 3 independent experiments). (C) HA-tagged SUSD4 is found in dendrites (left panel, single plane) and in some of the distal dendritic spines (right panel, arrowheads, projection of a 1.95 µm z-stack) in adult cerebellar Purkinje cells. Anti-HA and anti-GFP immunolabeling was performed on parasagittal cerebellar sections obtained from adult L7Cre mice after stereotaxic injection of AAV particles driving the expression of HA-SUSD4 and soluble GFP. Scale bars: 10 µm (left panel) and 2 µm (right panel). (D) Purkinje cells from primary mixed cerebellar cultures of L7Cre mice were transduced at 3 days in vitro (DIV3) with an HA-tagged SUSD4 expressing virus (AAV2-hSYN-DIO-HA-SUSD4-2A-eGFP) or with a control virus expressing GFP alone (AAV2-hSYN-DIO-eGFP), and immunostained in non-permeabilizing conditions at DIV17 for HA to localize surface SUSD4 (anti-HA, red), and in permeabilizing conditions to detect the green fluorescent protein (anti-GFP, green) and the endogenous GluD2 subunit (anti-GRID2, blue). Scale bar 5 µm. (E) Genomic structure of the Susd4 gene. White boxes represent exons. Exon 1 is deleted in the Susd4 loss-of-function mouse model. See also Figure 1—figure supplement 2. (F) Motor coordination and learning is deficient in adult male Susd4 -/- (knockout [KO]) mice compared to age-matched Susd4+/+ (wild-type [WT]) littermates. Each mouse was tested three times per day during 5 consecutive days on an accelerating rotarod (4-40 r.p.m. in 10 min) and the time spent on the rotarod was measured. Mean ± s.e.m. (WT n = 11 and KO n = 7 mice, two-way ANOVA with repeated measures, interaction (time and genotype): **p=0.0079, F(14, 224)=2.22; time: ****p<0.0001, F(14, 224)=3.469; genotype: p=0.0553, F(1, 16)=4.272). (G) In situ hybridization experiments were performed on brain sections from 1-month-old Susd4 WT and Susd4 KO mice to detect Susd4 mRNA using a probe encompassing exons 2–5 (see also Figure 1—figure supplement 2). Susd4 expression was found in many regions of the brain in Susd4 WT mice (see also Figure 1—figure supplement 1) including the cerebral cortex (CTX), the cerebellum (CB), and the brainstem (BS). No labeling was found in the brain of Susd4KO mice. Scale bar 500 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Susd4 mRNA expression was visualized in the brain of wild-type mice by in situ hybridization. Coronal (left) and sagittal (right) sections are presented at postnatal day 0 (P0), (B) postnatal day 7 (P7), and (C) postnatal day 30 (P30). Susd4 expression was found in many regions including the cerebral cortex (CTX), the dentate gyrus (DG) and CA3 regions in the hippocampus (coronal section, left), the cerebellum (CB), in particular Purkinje cells (PCs), and the inferior olive (IO; sagittal section, right). Scale bars 250 and 500 μm (inset C).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Structure of the Susd4 gene and strategy for the generation of the KO mouse. The gene coding for the Susd4 mRNA contains eight exons. The wild-type (WT) allele is presented indicating the localization of the primers used for genotyping and of the probes used for TaqMan RT-qPCR. In the KO allele, the 5'UTR and first exon are entirely deleted and replaced by the selection cassette. (B) Susd4 expression was assessed by RT-PCR using primers encompassing exons 6-8 in extracts from cortex (CTX), cerebellum (CB), and brainstem (BS) in Susd4 WT and Susd4 KO mice.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Footprint patterns of P30 Susd4WT and Susd4 KO mice were quantitatively analyzed by measuring stride length for the fore paws (magenta) and hind paws (cyan), stance length for the forelimbs and hindlimbs, and print separation. Mean ± s.e.m. (WT n = 9 and KO n = 10 mice; unpaired Student’s t-test; forelimb stance: p=0.3059; forelimb stride: p=0.5882; hindlimb stance: p=0.4533; hindlimb stride: p=0.3580; print separation: *p=0.0148).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Parasagittal sections of P30 Susd4 wild-type (WT and Susd4 KO cerebella were stained with Hoechst and used for quantitative analysis of the mean area of the cerebellum). Mean ± s.e.m. (n = 3 WT mice and n = 3 KO mice). Scale bar 500 µm. (B) Calbindin protein (CABP) immunostaining was used for quantitative analysis of the mean height of the molecular layer. Mean ± s.e.m. (WT n = 5 and KO n = 6 mice). Scale bar 30 µm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Image of a cerebellar acute slice from a WT mouse overlapped with the image of the color map of the MEA recording. Each pixel represents one channel, where the active units are in red. The black square highlights one of the channels. (B) Representative traces of electrical activity recorded in one channel from Susd4 WT and KO mice. Each tick points out one action potential that has been detected and sorted by the Brainwave software. (C) Histograms of the mean firing rate, coefficient of variation (CV) of interspike intervals, and CV2. Mean ± s.e.m. (WT n = 5 and KO n = 4 mice; Mann-Whitney test; mean firing rate: p=0.2857; CV: p=0.4127; CV2: p=0.5373).
+
 Proper development and function of the cerebellar circuitry is central for motor coordination and adaptation, and a range of cognitive tasks (Badura et al., 2018; Hirai et al., 2005; Ichise et al., 2000; Lefort et al., 2019; Rochefort et al., 2011; Tsai et al., 2012). Cerebellar dysfunction is associated with several neurodevelopmental disorders including ASDs (Stoodley, 2016; Stoodley et al., 2018; Wang et al., 2014). In this circuit, cerebellar Purkinje cells (PCs) receive more than a hundred thousand parallel fiber (PF) synapses whose formation, maintenance, and plasticity are essential for cerebellar-dependent learning (Gutierrez-Castellanos et al., 2017; Hirai et al., 2005; Ito, 2006; Kashiwabuchi et al., 1995). Postsynaptic LTD was first described at synapses between PFs and cerebellar PCs (Gao et al., 2012; Hirano, 2018; Ito, 2001; Ito and Kano, 1982), where it can be induced by conjunctive stimulation of PFs with the other excitatory input received by PCs, the climbing fiber (CF; Coesmans et al., 2004; Ito, 2001; Suvrathan et al., 2016). The function of members of the C1Q family, such as CBLN1 and C1QL1, is essential for excitatory synapse formation and LTD in cerebellar PCs (Hirai et al., 2005; Kakegawa et al., 2015; Matsuda et al., 2010; Sigoillot et al., 2015; Uemura et al., 2010), suggesting that proteins such as SUSD4, that interact with the C1Q globular domain, could regulate these processes.
 
 Gene expression studies from our laboratory revealed that Susd4 is highly expressed in the olivocerebellar system of the mouse. In order to uncover the potential link between SUSD4 and neurodevelopmental disorders, we sought to identify the role of SUSD4 in brain development and function, by analyzing the phenotype of a Susd4 constitutive loss-of-function mouse model. Here, we show that knockout (KO) of the Susd4 gene leads to deficits in motor coordination adaptation and learning, misregulation of synaptic plasticity in cerebellar PCs, as well as an impairment in the degradation of GluA2 AMPA receptor subunits after chemical induction of LTD. Proteomic analysis of SUSD4 binding complexes identified proteins that are involved in the regulation of several parameters controlling AMPA receptor turnover. We showed that SUSD4 directly interacts with E3 ubiquitin ligases of the NEDD4 family, which are known to regulate ubiquitination and degradation of their substrates. Our results also show that SUSD4 and GluA2 can interact in transfected HEK293 cells and partially colocalize in cultured PCs. Altogether, these findings suggest a function of SUSD4 in the regulation of GluA2 trafficking and degradation allowing proper synaptic plasticity and learning.
 
 ## Results
 
-## Susd4 is broadly expressed in neurons during postnatal development
+### Susd4 is broadly expressed in neurons during postnatal development
 
 Given the potential synaptic role for SUSD4, its pattern of expression should correlate with the timing of synapse formation and/or maturation during postnatal development. In situ hybridization experiments using mouse brain sections showed high expression of Susd4 mRNA in neurons in many regions of the central nervous system, including the cerebral cortex, the hippocampus, the cerebellum, and the brainstem (Figure 1B and Figure 1—figure supplement 1). Susd4 expression was already detected as early as postnatal day 0 (P0) in some regions but increased with brain maturation (Figure 1—figure supplement 1). In the cerebellum, a structure where the developmental sequence leading to circuit formation and maturation is well described (Sotelo, 2004), quantitative RT-PCR showed that Susd4 mRNA levels start increasing at P7 and by P21 reach about 15 times the levels detected at birth (Figure 1B). At P7, a major increase in synaptogenesis is observed in the cerebellum. At this stage, hundreds of thousands of PF excitatory synapses form on the distal dendritic spines of each PC, and a single CF arising from an inferior olivary neuron translocates and forms about 300 excitatory synapses on proximal PC dendrites (Leto et al., 2016). In the brainstem, where cell bodies of inferior olivary neurons are located, the increase in Susd4 mRNA expression occurs earlier, already by P3, and reaches a peak by P14 (Figure 1B). Similarly to the cerebellum, this pattern of Susd4 expression parallels the rate of synaptogenesis that increases during the first postnatal week in the inferior olive (Gotow and Sotelo, 1987). To identify the subcellular localization of the SUSD4 protein and because of the lack of suitable antibodies for immunolabeling, viral particles enabling CRE-dependent coexpression of HA-tagged SUSD4 and GFP in neurons were injected in the cerebellum of adult mice expressing the CRE recombinase specifically in cerebellar PCs. Immunofluorescent labeling against the HA tag demonstrated the localization of HA-SUSD4 in dendrites and in some of the numerous dendritic spines present on the surface of distal dendrites (Figure 1C). These spines are the postsynaptic compartments of PF synapses in PCs. Immunofluorescence analysis of transduced cultured PCs showed that HA-tagged SUSD4 could be immunolabeled in non-permeabilizing conditions and located at the surface of dendrites and spines (Figure 1D). Double labeling with the postsynaptic marker GluD2 (GRID2) further showed partial colocalization at the surface of some, but not all, spines. Therefore, the timing of Susd4 mRNA expression during postnatal development and the subcellular localization of the SUSD4 protein in cerebellar PCs are in agreement with a potential role for SUSD4 in excitatory synapse formation and/or function.
 
-## Susd4 loss-of-function leads to deficits in motor coordination and learning
+### Susd4 loss-of-function leads to deficits in motor coordination and learning
 
 To determine the synaptic function of SUSD4, we analyzed the phenotype of Susd4-/- constitutive KO mice with a deletion of exon 1 (Figure 1E and G and Figure 1—figure supplement 2). RT-PCR using primers encompassing the last exons and the 3'UTR show the complete absence of Susd4 mRNA in the brain of these Susd4 KO mice (Figure 1—figure supplement 2). No obvious alterations of mouse development and behavior were detected in those mutants, an observation that was confirmed by assessment of their physical characteristics (weight, piloerection), basic behavioral abilities such as sensorimotor reflexes (whisker responses, eye blinking), and motor responses (open-field locomotion; see Supplementary file 1). We further assessed the behavior of Susd4 KO mice for motor coordination and motor learning (Kayakabe et al., 2014; Lalonde and Strazielle, 2001; Rondi-Reig et al., 1997). Using a footprint test, a slightly larger print separation of the front and hind paws in the Susd4 KO mice was detected, but no differences in the stride length and stance width were found (Figure 1—figure supplement 3). In the accelerated rotarod assay, a classical test of motor adaptation and learning (Buitrago et al., 2004), the mice were tested three times per day at 1 hr interval during 5 consecutive days. The Susd4 KO mice performed as well as the Susd4+/+ (wild-type [WT]) littermate controls on the first trial (Figure 1F, day 1, trial 1). This indicates that there is no deficit in their balance function, despite the slight change in fine motor coordination found in the footprint test. However, while the control mice improved their performance as early as the third trial on the first day, and further improved with several days of training, no learning could be observed for the Susd4 KO mice either during the first day, or in the following days (Figure 1F). These results show that Susd4 loss-of-function leads to impaired motor coordination and learning in adult mice.
 
-## Susd4 loss-of-function prevents LTD at cerebellar PF/PC synapses
+### Susd4 loss-of-function prevents LTD at cerebellar PF/PC synapses
 
 Because of the high expression of Susd4 in cerebellar PCs (Figure 1G and Figure 1—figure supplement 1), we focused on this neuronal type to identify the morphological and functional consequences of Susd4 loss-of-function. No deficits in the global cytoarchitecture of the cerebellum and morphology of PCs were found in Susd4 KO mice (Figure 1—figure supplement 4). Using high-density microelectrode array (MEA), we assessed the spontaneous activity of PCs in acute cerebellar slices from Susd4 KO mice and compared to Susd4 WT mice (Figure 1—figure supplement 5). No differences were detected in either the mean spiking frequency, the coefficient of variation (CV) of interspike intervals (ISIs), or the intrinsic variability of spike trains (CV2, Holt and Douglas, 1996), indicating that the firing properties of PCs are not affected by Susd4 loss-of-function.
 
 Co-immunolabeling of PF presynaptic boutons using an anti-VGLUT1 antibody and of PCs using an anti-calbindin antibody in cerebellar sections from juvenile WT mice revealed an extremely dense staining in the molecular layer corresponding to the highly numerous PFs contacting PC distal dendritic spines (Figure 2A). The labeling pattern appeared to be similar in Susd4 KO. High-resolution microscopy and quantitative analysis confirmed that there are no significant changes in the mean density and volume of VGLUT1 clusters following Susd4 loss-of-function (Figure 2A). Electric stimulation of increasing intensity in the molecular layer allows the progressive recruitment of PFs (Konnerth et al., 1990) and can be used to assess the number of synapses and basic PF/PC transmission using whole-cell patch-clamp recordings of PCs on acute cerebellar slices (Figure 2B). No difference was observed in the amplitude and the kinetics of the responses to PF stimulation in PCs from Susd4 KO and control littermate mice (Figure 2C and Figure 2—figure supplement 1). Furthermore, the probability of vesicular release in the presynaptic PF boutons, as assessed by measurements of paired-pulse facilitation (Atluri and Regehr, 1996; Konnerth et al., 1990; Valera et al., 2012), was not changed at PF/PC synapses (Figure 2C). Finally, no differences in the frequency and amplitude of PF/PC-evoked quantal events were detected (Figure 2—figure supplement 1). Thus, in accordance with the morphological analysis, Susd4 invalidation has no major effect on the number and basal transmission of PF/PC synapses in the mouse.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig2-v2.jpg)
+
+**Figure 2.:** (A) Quantitative analysis of the morphology of PF presynaptic boutons immunolabeled by an anti-VGLUT1 antibody (red) in Purkinje cells (anti-CABP, blue). Quantifications of the density and the area of the VGLUT1 clusters did not reveal any difference between Susd4 knockout (KO) and Susd4 wild-type (WT) mice. Mean ± s.e.m. (WT n = 5 and KO n = 7 mice; VGLUT1 clusters density: Mann-Whitney test, p>0.9999; area VGLUT1 clusters: unpaired Student’s t-test, p=0.3089). Scale bars 30 µm (left) and 10 µm (right). (B) Diagram of the setup for patch-clamp recordings (REC) of Purkinje cells in 300-µm-thick parasagittal cerebellar slices. PF and climbing fiber responses were elicited by electrical stimulation (STIM). ML: molecular layer; PCL: Purkinje cell layer; GCL: granule cell layer. (C) Input-output curve of the PF/Purkinje cell transmission. The amplitude of the elicited excitatory postsynaptic currents (EPSCs) increases with the intensity of the stimulus and is not significantly different between Susd4 KO and WT littermates. The fitted curves for each genotype are presented in the inset. Representative sample traces are presented. Mean ± s.e.m. (WT n = 18 cells from eight mice and KO n = 16 cells from six mice; Kolmogorov-Smirnov test, p=0.8793). Short-term plasticity of PF/Purkinje cell synapses is not affected by Susd4 loss-of-function. PFs were stimulated twice at 50 ms interval and the paired-pulse ratio (PPR) was calculated by dividing the amplitude of the second peak by the amplitude of the first peak. Mean ± s.e.m. (WT n = 21 cells from eight mice and KO n = 16 cells from six mice; Mann-Whitney test, p=0.9052). (D) Climbing fiber-dependent PF/Purkinje cell synapse long-term depression (LTD) is impaired in the absence of Susd4 expression. LTD was induced by pairing stimulations of PFs and climbing fibers at 100 ms interval during 10 min at 0.5 Hz (see also Figure 2—figure supplement 1). The amplitude of the PF EPSC was measured using two consecutive PF stimulations at 50 ms interval. Representative sample traces are presented. Right: EPSC amplitudes from the last 10 min (purple) of recordings were used to calculate the LTD ratio relative to baseline. Mean ± s.e.m. (WT n = 16 cells from eleven mice and KO n = 14 cells from ten mice; two-tailed Wilcoxon signed rank test with null hypothesis of 100: WT **p=0.0063; KO p=0.2676; Mann-Whitney test, WT vs. KO *p=0.0476). (E) Loss-of-function of Susd4 facilitates PF/Purkinje cell synapse long-term potentiation (LTP). Tetanic stimulation of only PFs at 0.3 Hz for 100 times (see also Figure 2—figure supplement 1) induced LTP in Susd4 KO Purkinje cells while inducing only a transient increase in PF transmission in WT Purkinje cells. Representative sample traces are presented. Right: EPSC amplitudes from the last 7 min (purple) were used to calculate the LTP ratio relative to baseline. Mean ± s.e.m. (WT n = 13 cells from nine mice and KO n = 8 cells from six mice; two-tailed Wilcoxon signed rank test with null hypothesis of 100: WT p=0.5879; KO *p=0.0234; Mann-Whitney test, WT vs. KO: *p=0.0199).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the recording location (internal lobule VIa of the vermis). (B) No change in the rise time and decay of PF/PC EPSCs was induced by Susd4 deletion. Mean ± s.e.m. (wild-type [WT] n = 21 cells from eight mice and knockout [KO] n = 16 cells from six mice; rise time: unpaired Student’s t-test, p=0.4570; decay time: Mann-Whitney test, p=0.7276). (C) PF long-term depression (LTD) induction protocol. (D) Paired-pulse ratio (A2/A1) during LTD measured at 20 Hz. Mean ± s.e.m. (WT n = 16 cells from 11 mice and KO n = 14 cells from 10 mice; two-way ANOVA with repeated measures, interaction (time and genotype): p=0.9935, F(39, 1092)=0.5222). (E) PF long-term potentiation (LTP) induction protocol. (F) Paired-pulse ratio (A2/A1) during LTP measured at 20 Hz. Mean ± s.e.m. (WT n = 13 cells from nine mice and KO n = 8 cells from six mice, two-way ANOVA with repeated measures, interaction (time and genotype): p=0.9366, F(39, 741)=0.6745). (G) Delayed PF-EPSC quanta were evoked by PF stimulation in the presence of strontium (Sr++) instead of calcium (Ca++) to induce desynchronization of fusion events. Representative sample traces are presented. The cumulative probability for the amplitude shows no difference with Susd4 loss-of-function. The individual frequency values for each cell (measured as interevent interval) present no differences between the genotypes. No change in the time to peak and in the rise time of PF/PC synapse-delayed EPSC quanta was induced by Susd4 deletion. Mean ± s.e.m. (WT n = 8 cells from six mice and KO n = 8 cells from five mice; amplitude: Kolmogorov-Smirnov distribution test, p=0.1667; frequency: Mann-Whitney test, p=0.1913; time to peak: Mann-Whitney test, p=0.6454; rise time 10-90%: unpaired Student’s t-test, p=0.6486).
+
 Long-term synaptic plasticity of PF/PC synapses is involved in proper motor coordination and adaptation learning (Gutierrez-Castellanos et al., 2017; Hirano, 2018; Kakegawa et al., 2018). We first assessed LTD in PF/PC synapses using conjunctive stimulation of PFs and CFs and whole-cell patch-clamp recordings of PCs in acute cerebellar slices from juvenile mice. The LTD induction protocol produced a 42% average decrease in the amplitude of PF excitatory postsynaptic currents (EPSCs) in PCs from WT mice while the paired-pulse facilitation ratio was not changed during the course of our recordings (Figure 2D and Figure 2—figure supplement 1). In Susd4 KO PCs, the same LTD induction protocol did not induce any significant change in PF EPSCs during the 30 min recording period, showing that LTD induction and maintenance are greatly impaired in the absence of SUSD4 (Figure 2D). We then assessed LTP induction using high-frequency stimulation of PF in the absence of inhibition blockade as in Binda et al., 2016. In slices from Susd4 WT mice, tetanic stimulation every 3 s during 5 min induced only a transient increase in transmission of about 20% and the amplitude of the response returned to baseline after only 15 min (Figure 2E and Figure 2—figure supplement 1). This result suggests that under our experimental conditions and in this particular genetic background, LTD might be favored in contrast to previously obtained results (Binda et al., 2016; Titley et al., 2019). In the case of Susd4 KO PCs, the same protocol induced LTP with a 27% increase in transmission that was maintained after 35 min (Figure 2E). These results indicate that the absence of Susd4 expression promoted LTP induction at PF/PC synapses.
 
 Lack of LTD of PF/PC synapses could arise from deficient CF/PC transmission. To test this possibility, we first crossed the Susd4 KO mice with the Htr5b-GFP BAC transgenic line (http://gensat.org/MMRRC_report.jsp?founder_id=17735) expressing soluble GFP specifically in inferior olivary neurons in the olivocerebellar system to visualize CFs. We found that CFs had a normal morphology and translocated along the proximal dendrites of their PC target in Susd4 KO mice (Figure 3—figure supplement 1). We then assessed whether developmental elimination of supernumerary CFs was affected by Susd4 invalidation using whole-cell patch-clamp recordings of PCs on cerebellar acute slices (Crepel et al., 1976; Hashimoto and Kano, 2003). No difference was found in the percentage of remaining multiply-innervated PCs in the absence of Susd4 (Figure 3—figure supplement 1). We next used VGLUT2 immunostaining to label CF presynaptic boutons and analyze their morphology using high-resolution confocal microscopy and quantitative image analysis. VGLUT2 immunostaining revealed the typical CF innervation territory on PC proximal dendrites, extending up to about 80% of the molecular layer height both in control Susd4 WT and in Susd4 KO mice (Figure 3A). Furthermore, the number and density of VGLUT2 clusters were not significantly different between Susd4 WT and Susd4 KO mice. To test whether the lack of CF-dependent PF LTD was due to deficient CF transmission, we used whole-cell patch-clamp recordings of PCs in acute cerebellar slices. Contrary to what could have been expected, the typical all-or-none CF-evoked EPSC was detected in PCs from Susd4 KO mice with increased amplitude when compared to WT PCs (Figure 3B) while no differences in CF-EPSC kinetics were found (Figure 3—figure supplement 1). Analysis of the complex spikes in current-clamp mode during LTD induction did not reveal any change in the complex spike waveform, with the same mean number of spikelets in response to the repeated CF stimulation in Susd4 WT and Susd4 KO mice (Figure 3—figure supplement 1). Therefore, the lack of CF-dependent PF/PC synapse LTD in Susd4 KO mice is not due to impaired CF/PC synapse formation or transmission. Measurements of evoked quantal events revealed an increase in the amplitude of the quantal EPSCs at CF/PC synapses from juvenile mice (Figure 3C and Figure 3—figure supplement 1). Paired-pulse facilitation and depression at PF/PC and CF/PC synapses, respectively, are similar between Susd4 KO and control mice, both in basal conditions and during plasticity recordings (Figure 2C, Figure 3B, Figure 2—figure supplement 1), suggesting strongly that the changes in PF/PC synaptic plasticity and in CF/PC transmission in Susd4 KO PCs have a postsynaptic origin. Overall our results show that Susd4 loss-of-function in mice leads to a highly specific phenotype characterized by misregulation of postsynaptic plasticity in the absence of defects in synaptogenesis and in basal transmission in cerebellar PCs.
 
-## Susd4 loss-of-function leads to deficient activity-dependent degradation of GluA2
+![Figure 3.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig3-v2.jpg)
+
+**Figure 3.:** (A) Climbing fiber presynaptic boutons were immunostained with an anti-VGLUT2 antibody in cerebellar sections from P30 Susd4 wild-type (WT) and Susd4 KO mice. The extension of the CF synaptic territory was calculated by measuring the extent of the VGLUT2 (red) labeling relative to the height of the Purkinje cell dendritic tree (immunostained using an anti-CABP antibody, blue). Quantification of the mean density of VGLUT2 puncta and their mean area showed no differences between Susd4 KO mice and their control littermates. Mean ± s.e.m. (WT n = 5 and KO n = 7 mice; VGLUT2 extension: Mann-Whitney test, p=0.6389; VGLUT2 area: unpaired Student’s t-test, p=0.4311; VGLUT2 density: unpaired Student’s t-test, p=0.8925). Scale bars 30 µm (left) and 10 µm (right). (B) Short-term synaptic plasticity of CF/Purkinje cell synapses was elicited by two consecutive stimulations at various intervals. The amplitude of the CF-elicited excitatory postsynaptic current (EPSC) was increased in Susd4 KO mice compared to WT littermates. (WT n = 26 cells, nine mice and KO n = 26 cells, seven mice, Mann-Whitney test, **p=0.0066). No difference in the paired-pulse ratios (PPRs) was detected at any interval between Susd4 KO mice and WT mice. Representative sample traces are presented. See also Figure 3—figure supplement 1. Mean ± s.e.m. (WT n = 12 cells from three mice and KO n = 17 cells from five mice; Kolmogorov-Smirnov test, p=0.4740). (C) Delayed CF-EPSC quanta were evoked by CF stimulation in the presence of Sr++ instead of Ca++ to induce desynchronization of fusion events. Representative sample traces are presented. The cumulative probability for the amplitude of the events together with the individual amplitude values for each event show an increased amplitude associated with Susd4 loss-of-function. The individual frequency values for each cell (measured as interevent interval, IEI) present no differences between the genotypes. See also Figure 3—figure supplement 1. Mean ± s.e.m. (WT n = 10 cells from six mice and KO n = 8 cells from three mice; amplitude: Kolmogorov-Smirnov distribution test, ***p<0.0001; frequency: Mann-Whitney test, p=0.6334).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CFs were visualized in Susd4 wild-type (WT) and knockout (KO) mice crossed with Htr5b-eGFP reporter mice expressing the green fluorescent protein (GFP) specifically in inferior olivary neurons. Anti-GFP and anti-CABP (to visualize PCs) immunolabeling was performed on parasagittal sections of P30 mice and showed no qualitative differences in the absence of Susd4 expression. Scale bar 10 µm. (B) Patch-clamp recordings of PCs showed a similar percentage of mono- (one climbing fiber) and multi-innervation (>1 CFs) of PCs in P30 Susd4 KO and WT mice, as measured by the number of steps elicited by electrical stimulation of the CFs (WT n = 26 cells from nine mice and KO n = 26 cells from seven mice; chi-square test, p=0.5520). (C) No change in the rise and decay times of CF/PC excitatory postsynaptic currents (EPSCs) was induced by Susd4 deletion. Mean ± s.e.m. (WT n = 26 cells from nine mice and KO n = 26 cells from seven mice; rise time: unpaired Student’s t-test, p=0.3750; decay time: Mann-Whitney test, p=0.7133). (D) No change in the time to peak and in the rise time of CF/PC synapse-delayed EPSC quanta was induced by Susd4 loss-of-function. Mean ± s.e.m. (WT n = 10 cells from six mice and KO n = 8 cells from three mice; time to peak: unpaired Student’s t-test, p=0.1692; rise time 10-90%: Mann-Whitney test, p=0.0639). (E) CF/PC transmission was monitored during long-term depression (LTD) induction in current-clamp mode. Representative traces of the CF-EPSP are shown. The quantification of the number of spikelets (spikes induced by repeated CF stimulation [Mathy et al., 2009; Titley et al., 2019]) did not reveal any difference between WT and KO PCs (unpaired Student’s t-test, p=0.5791). Bottom: Measurements of the CF-EPSP area and hyperpolarization area during the LTD induction protocol. Mean ± s.e.m. (WT n = 16 cells from 11 mice and KO n = 14 cells from 10 mice).
+
+### Susd4 loss-of-function leads to deficient activity-dependent degradation of GluA2
 
 What are the mechanisms that allow regulation of long-term synaptic plasticity by SUSD4? The lack of LTD at PF/PC synapses and our analysis of evoked quantal events suggested the involvement of SUSD4 in the regulation of postsynaptic receptor numbers. GluA2 subunits are present in most AMPA receptor channels in PC excitatory synapses (Masugi-Tokita et al., 2007; Zhao et al., 1998). To assess whether Susd4 loss-of-function leads to misregulation of the GluA2 subunits at PC excitatory synapses, we first performed co-immunolabeling experiments using an anti-GluA2 antibody and an anti-VGLUT2 antibody on cerebellar sections followed by high-resolution microscopy. Several GluA2 clusters of varying sizes were detected in close association with each VGLUT2 presynaptic cluster corresponding to a single CF release site, while very small and dense GluA2 clusters were found in the rest of the molecular layer which mostly correspond to GluA2 clusters at the PF/PC synapses (Figure 4A). No obvious change in GluA2 distribution in the molecular layer in Susd4 KO mice was found when compared to controls, in accordance with normal basal transmission in PF/PC synapses (Figure 2C). Quantitative analysis of the GluA2 clusters associated with VGLUT2-labeled CF presynaptic boutons did not reveal a significant change in the total mean intensity of GluA2 clusters per CF presynaptic bouton (Figure 4A). However, the proportion of CF presynaptic boutons with no GluA2 cluster was smaller in juvenile Susd4 KO mice than in WT mice (Figure 4A). This decrease partially explains the increase in the amplitude of quantal EPSCs and CF transmission (Figure 3C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig4-v2.jpg)
+
+**Figure 4.:** (A) The number of GluA2 clusters (anti-GluA2 immunolabeling, green) per climbing fiber presynaptic bouton (anti-VGLUT2 immunolabeling, red) and their intensity were quantified in cerebellar sections of juvenile Susd4 knockout (KO) mice and Susd4 wild-type (WT) littermates. Cumulative plot for the mean GluA2 intensity per VGLUT2 bouton shows no significant change between WT and KO. The distribution of the VGLUT2 boutons according to the number of associated GluA2 clusters is significantly different between WT and KO. Mean ± s.e.m. (WT n = 5 and KO n = 5 mice; intensity: Kolmogorov-Smirnov test, p=0.5009; distribution: chi-square contingency test, ****p<0.0001). Scale bars 30 µm (top) and 15 µm (bottom). (B) Activity-dependent changes in surface localization of GluA2 was studied in cerebellar acute slices from Susd4 KO mice and control Susd4 WT littermates using a chemical LTD protocol (cLTD; K-Glu: K+50 mM and glutamate 10 μM for 5 min followed by 30 min of recovery). Surface biotinylation of GluA2 subunits was followed by affinity purification of biotinylated GluA2 subunits and anti-GluA2 immunoblot analysis. The fraction of biotinylated GluA2 was obtained by measuring the levels of biotinylated GluA2 in affinity-purified samples and total GluA2 normalized to βACTIN in input samples for each condition. The ratios between the fraction of biotinylated GluA2 after cLTD and control conditions are represented. Mean ± s.e.m. (n = 8 independent experiments; two-tailed Student’s one sample t-test was performed on the ratios with a null hypothesis of 1, PWT = 0.0212 and PKO = 0.0538). (C) Activity-dependent degradation of GluA2 was assessed in cerebellar acute slices from Susd4 KO and WT mice after induction of chemical LTD (cLTD; K-Glu: K+50 mM and glutamate 10 μM for 5 min followed by 30 min of recovery). This degradation was absent when slices were incubated with 100 µg/mL leupeptin and with 50 µM MG132 (to inhibit lysosomal and proteasome degradation, respectively), or when slices were obtained from Susd4 KO mice. Band intensities of GluA2 were normalized to βACTIN. The ratios between levels with cLTD induction (K-Glu) and without cLTD induction (CTL) are represented. See also Figure 4—figure supplement 1. Mean ± s.e.m. (n = 8 independent experiments; two-tailed Student’s one sample t-test was performed on the ratios with a null hypothesis of 1, PWT = 0.0107, PWT+Leu/MG132 = 0.3755, PKO = 0.3176 and PKO+Leu/MG132 = 0.2338). (D) Purkinje cells from primary cerebellar cultures of L7Cre mice were transduced at 3 days in vitro (DIV3) with AAV particles driving the expression of HA-SUSD4 and soluble GFP (AAV2-hSYN-DIO-HA-SUSD4-2A-eGFP) and immunolabeled at DIV17 in non-permeabilizing conditions to localize surface SUSD4 (anti-HA, red) and surface GluA2 subunits (anti-GluA2, blue). Direct green fluorescent protein is shown (GFP, green). Right panels are binarized images of the anti-HA and anti-GluA2 immunolabelings and of the colocalization of these signals (maximum projection of a 1.8 µm z-stack). Scale bar 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Surface GluA2 levels (relative to normalized GluA2 input) in basal conditions were not different on average in acute cerebellar slices from Susd4 KO when compared to slices from wild-type (WT) mice. (B) and (C) Total protein levels (normalized to βACTIN) of GluA2 (B) and GluD2 (C) were not changed in acute cerebellar slices from Susd4 WT or KO mice in basal conditions. Mean ± s.e.m. (n = 8 independent experiments; unpaired Student’s t-test; GluA2: p=0.5424; GluD2: p=0.6821). (D) Cerebellar acute slices from control WT and Susd4 KO mice were incubated to induce chemical LTD (cLTD; K-Glu: K+50 mM and glutamate 10 μM for 5 min followed by 30 min of recovery). Slices were incubated with 100 µg/mL leupeptin and with 50 µM MG132 (to inhibit lysosomal and proteasome degradation, respectively). Band intensities of GluD2 were normalized to βACTIN. The ratios between levels with cLTD induction (K-Glu) and without cLTD induction (CTL) are represented. Mean ± s.e.m. (n = 8 independent experiments; two-tailed Student’s one sample t-test was performed on the ratios with a null hypothesis of 1, PWT = 0.4973, PWT+Leu/MG132 = 0.1433, PKO = 0.3143, PKO+Leu/MG132 = 0.9538, n.s. = not significant).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) SUSD4 interaction with GluA2 was assessed by co-immunoprecipitation using HEK293 cells transfected with SEP-GluA2 together with PVRL3α as a control or HA-SUSD4. Affinity purification was performed with an anti-GFP antibody and extracts were probed for co-immunoprecipitation of GluA2 (with an anti-GluA2 antibody) and of HA-SUSD4 (anti-HA antibody) or PVRL3α (anti-PVRL3α antibody). βACTIN was used as a loading control. Representative of N = 3 independent experiments. (B) Mouse hippocampal neurons were transfected at 13 days in vitro (DIV13) with a GFP-tagged SUSD4 construct and immunostained at DIV17 for green fluorescent protein (GFP, green) to localize SUSD4 and for the endogenous GluA2 subunit (anti-GluA2, red). The arrowheads indicate the spines containing SUSD4 and GluA2. Scale bar 10 μm.
 
 In cerebellar PCs, regulation of the GluA2 subunits at synapses and of their trafficking is essential for PF LTD (Chung et al., 2003; Xia et al., 2000). To test whether activity-dependent surface localization of GluA2-containing AMPA receptors is affected by loss of Susd4, we set up a biochemical assay in which we induced chemical LTD (cLTD) in acute cerebellar slices (Kim et al., 2017) and performed surface biotinylation of GluA2 subunits followed by immunoblot quantification. In control conditions, the mean baseline levels of surface GluA2 were not significantly different between Susd4 WT and Susd4 KO mice (Figure 4—figure supplement 1). As expected, after cLTD a 35% mean reduction of surface GluA2 receptors was measured in slices from WT mice (Figure 4B; p=0.0212, two-tailed Student’s t test with a null hypothesis of 1). In acute slices from Susd4 KO mice, a similar, but not statistically significant, mean reduction of surface GluA2 receptors was detected after cLTD (28%; p=0.0538, two-tailed Student’s t test with a null hypothesis of 1). Thus, SUSD4 loss-of-function does not lead on average to a major change in the activity-dependent regulation of the number of surface GluA2 subunits.
 
@@ -81,9 +133,293 @@ Another parameter that needs to be controlled for proper LTD in PCs is the total
 
 Finally, co-immunoprecipitation experiments were performed using extracts from heterologous HEK293 cells transfected with SEP-tagged GluA2 and HA-tagged SUSD4 or the transmembrane protein PVRL3α as a control. After affinity purification of SEP-GluA2, HA-SUSD4 was detected in affinity-purified extracts while PVRL3α was not, showing the specific interaction of SEP-GluA2 and HA-SUSD4 in transfected HEK293 cells (Figure 4—figure supplement 2). In order to assess the potential colocalization of SUSD4 and GluA2 in neurons, we used a Cre-dependent AAV construct to express HA-tagged SUSD4 in cultured PCs (Figure 4D) and performed immunolabeling of surface GluA2 subunits. Clusters of HA-tagged SUSD4 partially colocalize with GluA2 clusters at the surface of some dendritic spines (Figure 4D). Partial colocalization of GluA2 and SUSD4 in neurons was also confirmed in transfection experiments in hippocampal neurons (Figure 4—figure supplement 2). Thus, SUSD4 could regulate activity-dependent degradation of GluA2-containing AMPA receptors through a direct interaction.
 
-## SUSD4 interacts with NEDD4 ubiquitin ligases
+### SUSD4 interacts with NEDD4 ubiquitin ligases
 
 To better understand how SUSD4 regulates the number of GluA2-containing AMPA receptors at synapses, we searched for SUSD4 molecular partners by affinity purification of cerebellar synaptosome extracts using GFP-tagged SUSD4 as a bait (Figure 5A). Interacting partners were identified by proteomic analysis using liquid chromatography with tandem mass spectrometry (LC-MS/MS; Savas et al., 2014). Twenty-eight candidates were identified including proteins with known function in the regulation of AMPA receptor turnover (Figure 5E). Several candidates were functionally linked to ubiquitin ligase activity by gene ontology (GO) term analysis (Figure 5A and Table 1). In particular, five members of the NEDD4 subfamily of HECT E3 ubiquitin ligases were found as potential interacting partners, three of them (Nedd4l, Wwp1, and Itch) exhibiting the highest enrichment factors among the 28 candidates. Ubiquitination is a post-translational modification essential for the regulation of protein turnover and trafficking in cells (Tai and Schuman, 2008). A survey of the expression of HECT-ubiquitin ligases shows that different members of the NEDD4 subfamily are broadly expressed in the mouse brain, however with only partially overlapping patterns (Figure 5—figure supplement 1, http://mouse.brain-map.org, Allen Brain Atlas). Nedd4 and Wwp1 are the most broadly expressed, including in neurons that also express Susd4, such as hippocampal neurons, inferior olivary neurons in the brainstem, and cerebellar PCs. Immunoblot analysis of affinity-purified synaptosome extracts confirmed the interaction of SUSD4 with NEDD4, ITCH, and WWP1 (Figure 5B). Removal of the intracellular domain of SUSD4 (SUSD4ΔCT mutant) prevented this interaction demonstrating the specificity of SUSD4 binding to NEDD4 ubiquitin ligases (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig5-v2.jpg)
+
+**Figure 5.:** (A) Mass spectrometry identification of SUSD4 interactors. Left: Affinity purification from cerebellar synaptosomes was performed using either GFP-SUSD4 as a bait or GFP as a control. Proteins were then resolved using SDS-PAGE followed by immunoblot for anti-GFP and coomassie staining of proteins. Right: Gene ontology (GO) enrichment analysis network (Molecular Function category) of the 28 candidate proteins (Cytoscape plugin ClueGO) identified in affinity purified samples (A) by liquid chromatography with tandem mass spectrometry (LC MS/MS). The ubiquitin ligase activity term is significantly enriched in particular due to the identification of several members of the NEDD4 family of HECT ubiquitin ligases. See also Table 1 (n = 3 independent experiments). (B) Immunoblot confirmation of SUSD4 interaction with NEDD4 ubiquitin ligases. Affinity purification from cerebellar synaptosomes was performed using full-length SUSD4 (HA-tagged, HA-SUSD4), a mutant lacking the C-terminal tail (HA-SUSD4ΔCT), or GFP as a bait. Proteins were then resolved using SDS-PAGE followed by immunoblot for NEDD4, ITCH, WWP1, or HA-SUSD4 (anti-HA). HA-SUSD4 interacts with all three members of the NEDD4 family. This interaction is lost when the C-terminal tail of SUSD4 is deleted or when GFP is used instead of SUSD4 as a control. (C) Schematic representation of HA-tagged SUSD4 and different mutant constructs: SUSD4ΔCT (lacking the cytoplasmic tail), SUSD4ΔNT (lacking the extracellular domain), SUSD4NT (lacking the transmembrane and intracellular domains), SUSD4ΔPY (point mutation of the PPxY site), SUSD4ΔLY (point mutation of the LPxY), and SUSD4ΔPY/LY (double mutant at both PPxY and LPxY). (D) SUSD4 interaction with GluA2 and NEDD4 was assessed by co-immunoprecipitation using HEK293 cells transfected with SEP-GluA2 together with PVRL3α as a control or one of the HA-SUSD4 constructs represented in (C). Affinity purification was performed with an anti-HA antibody and extracts were probed for co-immunoprecipitation of GluA2 (with an anti-GluA2 antibody) and of the HECT ubiquitin ligase NEDD4 (anti-NEDD4 antibody). Co-immunoprecipitated GluA2 levels are normalized to input GluA2 and then represented as relative to the immunoprecipitated levels for each SUSD4 construct. N = 3 independent experiments. (E) Potential interactors of SUSD4 control several parameters of AMPA receptor turnover. Three different pools of AMPA receptors are found in dendrites and spines: synaptic, extrasynaptic, and intracellular. AMPA receptors are synthetized and delivered close to the synaptic spine to reach the synaptic surface. At the surface, AMPA receptors can move laterally (lateral diffusion) or vertically by endocytosis and exocytosis. Endocytosis can be mediated by clathrin (CM-endocytosis) or be clathrin-independent (CI-endocytosis). CM-endocytosis is often related to activity-dependent processes. After endocytosis, AMPA receptors can choose between two different pathways from the early endosomes, one for recycling and the other for degradation. Potential molecular partners of SUSD4 identified by our proteomic analysis could regulate AMPA receptor turnover at several levels of this cycle (in red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic representation of four SUSD4 interactors: NEDD4, NEDD4L, ITCH, and WWP1. Legends: NT, N-terminus; HECT, homologous to the E6-AP C-terminus domain; CT, C-terminus. (B) Pattern of expression of Nedd4 (RP_050712_03_C08), (C) Nedd4l (RP_040625_01_G10), (D) Itch (RP_050222_01_H06), and (E) Wwp1 (RP_050510_02_E12) mRNA in the adult mouse brain. From Allen Brain Atlas (http://www.brain-map.org).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65712/elife-65712-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** HEK293 cells were transfected with SEP-GluA2 together with PVRL3α as a control or one of the HA-SUSD4 constructs for co-immunoprecipitation experiments. Input extracts were probed for GluA2 (with an anti-GluA2 antibody), the HECT ubiquitin ligase NEDD4 (anti-NEDD4 antibody), and the HA-tagged SUSD4 constructs (anti-HA antibody). βACTIN was used as a loading control. Representative image of N = 3 independent experiments. Quantifications represent the GluA2 or HA band intensity normalized to the intensity of the βACTIN band.
+
+**Table 1.**
+ List of SUSD4 interactors.Proteomic identification of SUSD4 interacting partners affinity-purified from synaptosomes extracts using GFP-SUSD4 as a bait (≥2 unique peptides; enrichment factor ≥4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>UniProtKB accession num.</th>
+      <th>Protein name</th>
+      <th>Gene name</th>
+      <th>Mol. weight (kDa)</th>
+      <th>Unique peptides</th>
+      <th>MS/MS count</th>
+      <th>Enrichment factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q8CFI0</td>
+      <td>E3 ubiquitin-protein ligase NEDD4-like</td>
+      <td>Nedd4l</td>
+      <td>115,42</td>
+      <td>28</td>
+      <td>319</td>
+      <td>159.5</td>
+    </tr>
+    <tr>
+      <td>Q8BH32</td>
+      <td>Sushi domain-containing protein 4</td>
+      <td>Susd4</td>
+      <td>53,796</td>
+      <td>4</td>
+      <td>97</td>
+      <td>48.5</td>
+    </tr>
+    <tr>
+      <td>Q8BZZ3</td>
+      <td>NEDD4-like E3 ubiquitin-protein ligase WWP1</td>
+      <td>Wwp1</td>
+      <td>104,69</td>
+      <td>13</td>
+      <td>90</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Q8C863</td>
+      <td>E3 ubiquitin-protein ligase Itchy</td>
+      <td>Itch</td>
+      <td>98,992</td>
+      <td>24</td>
+      <td>83</td>
+      <td>41.5</td>
+    </tr>
+    <tr>
+      <td>Q3TXU5</td>
+      <td>Deoxyhypusine synthase</td>
+      <td>Dhps</td>
+      <td>40,642</td>
+      <td>9</td>
+      <td>81</td>
+      <td>40.5</td>
+    </tr>
+    <tr>
+      <td>Q9DBG3</td>
+      <td>AP-2 complex subunit beta</td>
+      <td>Ap2b1</td>
+      <td>104,58</td>
+      <td>9</td>
+      <td>47</td>
+      <td>23.5</td>
+    </tr>
+    <tr>
+      <td>P50171</td>
+      <td>Estradiol 17-beta-dehydrogenase 8</td>
+      <td>Hsd17b8</td>
+      <td>26,588</td>
+      <td>2</td>
+      <td>32</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Q9DBH0</td>
+      <td>NEDD4-like E3 ubiquitin-protein ligase WWP2</td>
+      <td>Wwp2</td>
+      <td>98,76</td>
+      <td>14</td>
+      <td>31</td>
+      <td>15.5</td>
+    </tr>
+    <tr>
+      <td>Q922R8</td>
+      <td>Protein disulfide-isomerase A6</td>
+      <td>Pdia6</td>
+      <td>48,1</td>
+      <td>8</td>
+      <td>26</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>P27773</td>
+      <td>Protein disulfide-isomerase A3</td>
+      <td>Pdia3</td>
+      <td>56,678</td>
+      <td>12</td>
+      <td>24</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>P17427</td>
+      <td>AP-2 complex subunit alpha-2</td>
+      <td>Ap2a2</td>
+      <td>104,02</td>
+      <td>7</td>
+      <td>23</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Q8BWG8</td>
+      <td>Beta-arrestin-1</td>
+      <td>Arrb1</td>
+      <td>46,972</td>
+      <td>4</td>
+      <td>23</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Q91WC3</td>
+      <td>Long-chain fatty acid – CoA ligase 6</td>
+      <td>Acsl6</td>
+      <td>78,016</td>
+      <td>11</td>
+      <td>22</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>P27546</td>
+      <td>Microtubule-associated protein 4</td>
+      <td>Map4</td>
+      <td>117,43</td>
+      <td>9</td>
+      <td>18</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Q505F5</td>
+      <td>Leucine-rich repeat-containing protein 47</td>
+      <td>Lrrc47</td>
+      <td>63,589</td>
+      <td>9</td>
+      <td>17</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Q9Z2H5</td>
+      <td>Band 4.1-like protein 1</td>
+      <td>Epb41l1</td>
+      <td>98,314</td>
+      <td>8</td>
+      <td>17</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>P46935</td>
+      <td>E3 ubiquitin-protein ligase NEDD4</td>
+      <td>Nedd4</td>
+      <td>102,71</td>
+      <td>7</td>
+      <td>17</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Q8BMK4</td>
+      <td>Cytoskeleton-associated protein 4</td>
+      <td>Ckap4</td>
+      <td>63,691</td>
+      <td>11</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>P47708</td>
+      <td>Rabphilin-3A</td>
+      <td>Rph3a</td>
+      <td>75,488</td>
+      <td>7</td>
+      <td>15</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>P42128</td>
+      <td>Forkhead box protein K1</td>
+      <td>Foxk1</td>
+      <td>74,919</td>
+      <td>6</td>
+      <td>15</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>P62812</td>
+      <td>Gamma-aminobutyric acid receptor subunit alpha-1</td>
+      <td>Gabra1</td>
+      <td>51,753</td>
+      <td>7</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Q60737</td>
+      <td>Casein kinase II subunit alpha</td>
+      <td>Csnk2a1</td>
+      <td>45,133</td>
+      <td>7</td>
+      <td>13</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td>Q99KV1</td>
+      <td>DnaJ homolog subfamily B member 11</td>
+      <td>Dnajb11</td>
+      <td>40,555</td>
+      <td>5</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>P63037</td>
+      <td>DnaJ homolog subfamily A member 1</td>
+      <td>Dnaja1</td>
+      <td>44,868</td>
+      <td>4</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Q9QY76</td>
+      <td>Septin-11</td>
+      <td>Sept11</td>
+      <td>49,694</td>
+      <td>5</td>
+      <td>9</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>O70318</td>
+      <td>Band 4.1-like protein 2</td>
+      <td>Epb41l2</td>
+      <td>109,94</td>
+      <td>6</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>P62196</td>
+      <td>26S protease regulatory subunit 8</td>
+      <td>Psmc5</td>
+      <td>45,626</td>
+      <td>5</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Q9Z2Q6</td>
+      <td>Septin-5</td>
+      <td>Sept5</td>
+      <td>42,747</td>
+      <td>4</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 The NEDD4 subfamily of HECT ubiquitin ligases is known to ubiquitinate and target for degradation many key signaling molecules, including GluA1- and GluA2-containing AMPA receptors (Schwarz et al., 2010; Widagdo et al., 2017). Ubiquitin ligases of the NEDD4 family bind variants of PY motifs on target substrates and adaptors (Chen et al., 2017). However, GluA1 and GluA2 subunits lack any obvious motif of this type. In contrast, two potential PY binding sites are present in the intracellular domain of SUSD4 (Figure 5C). To test whether SUSD4 and GluA2 interaction is affected by SUSD4 binding to NEDD4 ubiquitin ligases, co-immunoprecipitation experiments were performed on extracts from heterologous HEK293 cells transfected with SEP-tagged GluA2 and various HA-tagged SUSD4 constructs (Figure 5C and D). In addition to several deletion constructs of SUSD4, we generated single- and double-point mutants of the two PY motifs in its intracellular tail (Figure 5C). Lack of the cytoplasmic domain completely abrogated binding of NEDD4 to SUSD4, confirming the results obtained using synaptosome extracts (Figure 5D). Deletion of the N-terminus domain of SUSD4 did not affect NEDD4 binding. Furthermore, while the mutation of the PPxY site in the intracellular tail (SUSD4-ΔPY mutant) abrogated binding of NEDD4 only partially, mutation of the LPxY site (SUSD4-ΔLY mutant) or of both sites (SUSD4-ΔPY/LY mutant) completely prevented the binding to NEDD4 ubiquitin ligases (Figure 5C and D). These mutations did not change significantly the level of HA-SUSD4 protein in transfected HEK293 cells suggesting that the degradation of SUSD4 itself is not regulated by binding of NEDD4 ubiquitin ligases (Figure 5—figure supplement 2). In accordance with our results obtained using SEP-GluA2 as a bait (Figure 4—figure supplement 2), GluA2 was detected in extracts obtained by affinity purification of the HA-tagged full-length SUSD4 (HA-SUSD4), while it was absent if HA-SUSD4 was replaced by a control transmembrane protein, PVRL3α (Figure 5D and Figure 5—figure supplement 2). Deletion of the extracellular domain (HA-SUSD4ΔNT) or the cytoplasmic domain (HA-SUSD4ΔCT) did not reduce significantly the ability to interact with SEP-GluA2 when compared to HA-SUSD4 (Figure 5D and Figure 5—figure supplement 2). Strong co-immunoprecipitation of GluA2 was detected in anti-HA affinity-purified extracts from cells expressing the HA-tagged extracellular domain of SUSD4 alone (HA-SUSD4-NT construct), showing that this domain is sufficient for GluA2 interaction (Figure 5D and Figure 5—figure supplement 2). Finally using the SUSD4-ΔLY mutant or SUSD4-ΔPY/LY mutant as a bait did not significantly modify the levels of co-immunoprecipitated GluA2 compared to HA-SUSD4, showing that binding of NEDD4 ubiquitin ligases does not affect SUSD4’s ability to interact with GluA2.
 
@@ -91,17 +427,17 @@ The NEDD4 subfamily of HECT ubiquitin ligases is known to ubiquitinate and targe
 
 Our study shows that the CCP domain-containing protein SUSD4 starts to be expressed in various neurons of the mammalian central nervous system when synapses are formed and mature. Susd4 loss-of-function in mice leads to impaired motor coordination adaptation and learning, misregulation of synaptic plasticity in cerebellar PCs, and perturbed degradation of GluA2-containing AMPA receptors after chemically induced LTD. SUSD4 and the GluA2 AMPA receptor subunit interact in transfected heterologous cells and colocalize partially in transduced cultured neurons. Finally, we show that SUSD4 directly binds to ubiquitin ligases of the NEDD4 family, which have been previously shown to regulate GluA2 degradation.
 
-## SUSD4 promotes long-term synaptic depression
+### SUSD4 promotes long-term synaptic depression
 
 The choice between recycling of AMPA receptors to the membrane or targeting to the endolysosomal compartment for degradation is key for the regulation of the number of AMPA receptors at synapses, as well as for the direction and degree of activity-dependent synaptic plasticity (Ehlers, 2000; Lee et al., 2002). Blocking the trafficking of AMPA receptors through recycling endosomes, for example, using a RAB11 mutant, prevents LTP in neurons (Park et al., 2004). Conversely, blocking the sorting of AMPA receptors to the endolysosomal compartment, for example, using a RAB7 mutant, impairs LTD in hippocampal CA1 pyramidal neurons and cerebellar PCs (Fernández-Monreal et al., 2012; Kim et al., 2017). Further support for the role of receptor degradation comes from mathematical modeling showing that in cerebellar PCs LTD depends on the regulation of the total pool of glutamate receptors (Kim et al., 2017). The GluA2 AMPA receptor subunit, and its regulation, is of particular importance for LTD (Diering and Huganir, 2018). Phosphorylation in its C-terminal tail and the binding of molecular partners such as PICK1 and GRIP1/2 are known to regulate endocytosis and recycling (Bassani et al., 2012; Chiu et al., 2017; Fiuza et al., 2017), and mutations in some of the phosphorylation sites lead to impaired LTD (Chung et al., 2003). The molecular partners regulating the targeting for degradation of GluA2 subunits in an activity-dependent manner during LTD remain to be identified. Our study shows that loss-of-function of Susd4 leads both to loss of LTD and loss of activity-dependent degradation of GluA2 subunits. Loss-of-function of Susd4 does not affect degradation of another postsynaptic receptor, GluD2, showing the specificity of SUSD4 action. Furthermore, loss-of-function of Susd4 facilitates LTP of PF/PC synapses. Overall our results suggest a role for SUSD4 in the targeting of GluA2-containing AMPA receptors to the degradation compartment during synaptic plasticity.
 
-## SUSD4 interacts with regulators of AMPA receptor turnover
+### SUSD4 interacts with regulators of AMPA receptor turnover
 
 The degradation of specific targets such as neurotransmitter receptors must be regulated in a stimulus-dependent and synapse-specific manner in neurons, to ensure proper long-term synaptic plasticity, learning, and memory (Tai and Schuman, 2008). How is this level of specificity achieved? Adaptor proteins, such as GRASP1, GRIP1, PICK1, and NSF, are known to promote AMPA receptor recycling and LTP (Anggono and Huganir, 2012). Such adaptors for the promotion of LTD remain to be found.
 
 Our results show that SUSD4 directly binds to HECT E3 ubiquitin ligases of the NEDD4 family. The family of HECT E3 ubiquitin ligases contains 28 enzymes including the NEDD4 subfamily that is characterized by an N-terminal C2 domain, several WW domains, and the catalytic HECT domain (Weber et al., 2019). This subgroup of E3 ligases adds K63 ubiquitin chains to their substrate, a modification that promotes sorting to the endolysosomal compartment for degradation (Boase and Kumar, 2015). NEDD4 E3 ligases are highly expressed in neurons in the mammalian brain and have many known substrates with various functions, including ion channels and the GluA1 AMPA receptor subunit. Accordingly, KO mice for the Nedd4-1 gene die during late gestation (Kawabe et al., 2010). The activity and substrate selectivity of NEDD4 E3 ligases thus need to be finely tuned. Both GluA1 and GluA2 AMPA receptor subunits are ubiquitinated on lysine residues in their intracellular tails in an activity-dependent manner (Lin et al., 2011; Lussier et al., 2011; Schwarz et al., 2010; Widagdo et al., 2015). Mutation of these lysine residues decreases localization of GluA1 and GluA2 AMPA receptor subunits in the endolysosomal compartment in neurons (Widagdo et al., 2015). However, GluA1 and GluA2 subunits lack any obvious intracellular direct binding motif to the WW domain of NEDD4 ubiquitin ligases, raising questions about the precise mechanism allowing regulation of AMPA subunits trafficking and degradation by these enzymes. We showed that SUSD4 and GluA2 AMPA receptor subunits interact in cells and partially colocalize in neurons. SUSD4 could thus regulate the targeting of NEDD4 ubiquitin ligases to AMPA receptors in an activity-dependent manner in neurons. Alternatively, the interaction of SUSD4 with NEDD4 ubiquitin ligases might regulate the trafficking of the SUSD4/GluA2 complex to the degradation pathway. Furthermore, among the potential partners of SUSD4 identified by our proteomics analysis, several other candidates have functions that are relevant for the regulation of synaptic plasticity, such as receptor anchoring, clathrin-mediated endocytosis, and proteasome function (Figure 5E). Further work is needed to determine the precise mechanism of action of SUSD4 in neurons in the context of synaptic plasticity.
 
-## SUSD4 and neurodevelopmental disorders
+### SUSD4 and neurodevelopmental disorders
 
 Susd4 loss-of-function leads to motor impairments, a symptom that is also found in ASD patients (Fournier et al., 2010). Deficits in LTD such as the one found in the Susd4 KO mice are a common feature of several mouse models of ASDs (Auerbach et al., 2011; Baudouin et al., 2012; Piochon et al., 2014). Because of the broad expression of SUSD4 and of ubiquitin ligases of the NEDD4 subfamily in the mammalian central nervous system, whether motor impairments in the Susd4 KO mice are directly the results of synaptic deficits in cerebellar PCs remain to be demonstrated. Very recently, a reduction in exploratory behavior, in addition to impairments of motor coordination, was reported after Susd4 loss-of-function (Zhu et al., 2020). Thus, mutations in the Susd4 gene might contribute to the etiology of neurodevelopmental disorders by impairing synaptic plasticity at many synapse types.
 
@@ -109,7 +445,430 @@ In humans, the 1q41-42 deletion syndrome is characterized by many symptoms inclu
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Susd4</td>
+      <td>NCBI</td>
+      <td>Gene ID: 96935</td>
+      <td>chr1:182,764,895–182,896,591</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Susd4 knockout mice</td>
+      <td>Lexicon Genetics Incorporated, Tang et al., 2010</td>
+      <td>B6:129S5-Susd4tm1Lex</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Htr5b-GFP mouse line</td>
+      <td>Gene Expression Nervous System Atlas (GENSAT) Project</td>
+      <td>STOCK Tg(Htr5b-EGFP)BZ265Gsat/Mmmh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>L7Cre mouse line</td>
+      <td>Jackson Laboratories</td>
+      <td>B6.129-Tg(Pcp2-cre)2Mpin/J</td>
+      <td>Stock number 004146</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293H</td>
+      <td>Gibco</td>
+      <td>Cat# 11631–017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLA</td>
+      <td>Sigma</td>
+      <td>Cat# 93021013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CABP</td>
+      <td>Swant</td>
+      <td>Cat# 300</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CABP</td>
+      <td>Swant</td>
+      <td>Cat# CB38</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab1218</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab6556</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GLUA2, clone 6C4</td>
+      <td>Millipore and BD</td>
+      <td>Cat# MAB397 and Cat# 556341</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GLUA2</td>
+      <td>Abcam</td>
+      <td>Cat# ab206293</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GLURδ1/2</td>
+      <td>Millipore</td>
+      <td>Cat# AB2285</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-HA</td>
+      <td>Roche Life</td>
+      <td>Cat# 11867423001</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-ITCH</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12117</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NEDD4</td>
+      <td>Millipore</td>
+      <td>Cat# 07–049</td>
+      <td>(1:100,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-VGLUT1</td>
+      <td>Millipore</td>
+      <td>Cat# AB5905</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-VGLUT2</td>
+      <td>Millipore</td>
+      <td>Cat# AB2251</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-WWP1</td>
+      <td>Proteintech</td>
+      <td>Cat# 13587–1-AP</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-goat Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11057</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# R37114</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-mouse Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>#A10037</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rabbit Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A21206</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rat Alexa Fluor 594</td>
+      <td>Invitrogen</td>
+      <td>#A21209</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rat Alexa Fluor 568</td>
+      <td>Abcam</td>
+      <td>Cat# 175475</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-guinea Pig Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A110-73</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-guinea Pig Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat# A21450</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse HRP</td>
+      <td>Jackson Immune Research Laboratories</td>
+      <td>Cat# 115-035-174</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rat HRP</td>
+      <td>Jackson Immune Research Laboratories</td>
+      <td>#112-035-175</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep polyclonal anti-digoxigenin alkaline phosphatase</td>
+      <td>Roche Life Science</td>
+      <td>Cat# 11093274910</td>
+      <td>(1:2000 - 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-βACTIN HRP, clone AC-15</td>
+      <td>Abcam</td>
+      <td>Cat# ab49900</td>
+      <td>(1:25,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHA-SUSD4-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>From pEGFP-N1 (Addgene, Cat# 6085–1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHA-SUSD4</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHA-SUSD4-ΔNT</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHA-SUSD4-NT</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-SUSD4-ΔPY</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-SUSD4-ΔLY</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-SUSD4-ΔPY/LY</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-eGFP</td>
+      <td>Addgene</td>
+      <td>Cat# 6029–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-PVRL3α</td>
+      <td>This paper</td>
+      <td></td>
+      <td>From pCAG-mGFP (Addgene, Cat# 14757)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Susd4_WT_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTG TGG TTT CAA CTG GCG CTG TG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Susd4_WT_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCT GCC GGT GGG TGT GCG AAC CTA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Susd4_KO_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTG GCG GTT TCG CTA AAT AC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Susd4_KO_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGA GCT CGT TAT CGC TAT GAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Htr5b-GFP_F</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>TTG GCG CGC CTC CAA CAG GAT GTT AAC AAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Htr5b-GFP_R</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>CGC CCT CGC CGG ACA CGC TGA AC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>L7cre_1</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>GGT GAC GGT CAG TAA ATT GGA C</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>L7cre_2</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>CAC TTC TGA CTT GCA CTT TCC TTG G</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>L7cre_3</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>TTC TTC AAG CTG CCC AGC AGA GAG C</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P1675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Tocris</td>
+      <td>Cat# 0106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP52432</td>
+      <td>Tocris</td>
+      <td>Cat# 1246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ16259685</td>
+      <td>Tocris</td>
+      <td>Cat# 2333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DPCPX</td>
+      <td>Tocris</td>
+      <td>Cat# 0439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AM251</td>
+      <td>Tocris</td>
+      <td>Cat# 1117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sinaptiqs</td>
+      <td>Antoine Valera</td>
+      <td>Software written in Python</td>
+      <td>http://synaptiqs.wixsite.com/synaptiqs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>Sigma</td>
+      <td>Cat# 14533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant viral particles</td>
+      <td>hSYN-DIO-HA-SUSD4-2A-eGFP-WPRE</td>
+      <td>Vector biolabs</td>
+      <td>AAV2 particles</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Susd4 KO mice were generated using ﻿129S5/SvEvBrd ES microinjected in C57BL/6J blastocysts and maintained on the C57BL/6J background (generated by Lexicon Genetics Incorporated, The Woodlands, TX) (Tang et al., 2010). Out of the eight Susd4 exons, coding exon 1 (NCBI accession NM_144796.2) and the 5'UTR (NCBI accession BM944003) were targeted by homologous recombination. This resulted in the deletion of a 1.3 kb sequence spanning the transcription initiation site and exon 1 (Figure 1E and Figure 1—figure supplement 2). Subsequent genotyping of mice was performed using PCR to detect the WT allele (forward primer: 5' CTG TGG TTT CAA CTG GCG CTG TG 3'; reverse primer: 5' GCT GCC GGT GGG TGT GCG AAC CTA 3') or the targeted allele (forward primer: 5' TTG GCG GTT TCG CTA AAT AC 3'; reverse primer: 5' GGA GCT CGT TAT CGC TAT GAC 3'). Heterozygous Susd4+/- mice were bred to obtain all the genotypes needed for the experiments (Susd4+/+[WT] and Susd4-/-[KO] mice) as littermates.
 
@@ -119,7 +878,7 @@ The L7Cre mouse line was obtained from Jackson laboratories (B6.129-Tg(Pcp2-cre)
 
 All animal protocols were approved by the Comité Regional d’Ethique en Experimentation Animale (no. 00057.01) and animals were housed in authorized facilities of the CIRB (# C75 05 12).
 
-## Antibodies
+### Antibodies
 
 The following primary antibodies were used: mouse monoclonal anti-CABP (1:1000; Swant, Switzerland, Cat#300), rabbit polyclonal anti-CABP (1:1000; Swant, Cat#CB38), mouse monoclonal anti-GFP (1:1000; Abcam, Cambridge, UK, Cat#ab1218), rabbit polyclonal anti-GFP (1:1000; Abcam, Cat#ab6556), mouse monoclonal anti-GluA2 (clone 6C4; 1:500; Millipore, MA, Cat#MAB397 and BD, NJ, Cat#556341), rabbit monoclonal anti-GluA2 (1:1000; Abcam, Cat#ab206293), rabbit polyclonal anti-GluRδ1/2 (1:1000; Millipore, Cat#AB2285), rat monoclonal anti-HA (1:1000; Roche Life Science, Penzberg, Germany, Cat#11867423001), rabbit monoclonal anti-ITCH (1:1000; Cell Signaling Technology, MA, Cat#12117), rabbit polyclonal anti-NEDD4 (1:10,000; Millipore, Cat#07–049), guinea pig polyclonal anti-VGLUT1 (1:5000; Millipore, Cat#AB5905), guinea pig polyclonal anti-VGLUT2 (1:5000; Millipore, Cat#AB2251), and rabbit polyclonal anti-WWP1 (1:2000; Proteintech, Chicago, IL, Cat#13587–1-AP).
 
@@ -127,51 +886,51 @@ The following secondary antibodies were used: donkey polyclonal anti-goat Alexa 
 
 The following conjugated antibodies were used: sheep polyclonal anti-digoxigenin alkaline phosphatase (1:2000-1:5000; Roche Life Science, Cat#11093274910), mouse monoclonal anti-βACTIN (clone AC-15) HRP (1:25000; Abcam, Cat#ab49900).
 
-## Plasmids
+### Plasmids
 
 Full-length Susd4 mouse gene was cloned into the mammalian expression vector pEGFP-N1 (Addgene, MA, Cat#6085–1) to express a SUSD4-GFP fusion construct under the control of the CMV promoter (pSUSD4-GFP). An N-terminal HA tag was inserted just after the signal peptide (pHA-SUSD4-GFP). pHA-SUSD4 was obtained by removal of the C-terminal GFP of pHA-SUSD4-GFP. A truncated form of Susd4, expressing the HA-SUSD4-ΔCT mutant, was obtained by inserting a stop codon downstream of the sixth exon, 39 bp after the transmembrane domain using PCR on the pHA-SUSD4-GFP plasmid and the following primers: forward primer 5' GCG CTA GCG ATG TAT CCT TAT GAT GTT CCT G 3'; reverse primer 5'TAG CGG CCG CTA TTA GGG GGG GAA GTG GGC CTT 3'. Other mutant constructs were similarly obtained: the truncated form of HA-SUSD4-ΔNT corresponding to amino acids 294–490 and the extracellular form of SUSD4, HA-SUSD4-NT, corresponding to amino acids 2–299. The HA-SUSD4-ΔPY contains a mutation in amino acids 411 and 414 changing PPAY to APAA while HA-SUSD4-ΔLY is mutated in amino acids 376 and 379 changing LPTY to APTA. Mutagenesis was performed using the QuikChange Lightning Multi site directed mutagenesis kit (Agilent, Santa Clara, CA, Cat#210513) according to the manufacturer’s instructions. The plasmid pIRES2-eGFP (Addgene, Cat#6029–1) was used as transfection control. The plasmid expressing SEPGluA2 (Addgene, Cat#24001) was used to follow GluA2. The control transmembrane protein PVRL3α was cloned into the mammalian expression vector pCAG-mGFP (Addgene, Cat#14757) to express the protein under the pCAG promoter (pCAG-PVRL3α).
 
-## Viral mediated in vivo expression of HA-SUSD4
+### Viral mediated in vivo expression of HA-SUSD4
 
 AAV2 particles were generated using an hSYN-DIO-HA-SUSD4-2A-eGFP-WPRE construct (Vector biolabs, Malvern, PA) and injected stereotaxically in cerebella of adult mice expressing the CRE recombinase in cerebellar PCs using the L7Cre mice. In the absence of Cre expression, the transgene is not produced. In the presence of Cre expression, the transgene will be ‘FLip-EXchanged’ leading to expression of the transgene specifically in PCs.
 
-## In situ hybridization
+### In situ hybridization
 
 Fresh frozen 20-μm-thick sections were prepared using a cryostat (Cryostar NX 70, Thermo Fisher Scientific, ref: 957000H) from brains of Susd4 WT and KO mice at P0, P7, or P21. The probe sequence corresponded to the nucleotide residues 287–1064 bp (encompassing exons 2–5) for mouse Susd4 (NM_144796.4) cDNA. The riboprobes were used at a final concentration of 0.05 μg/μL, and hybridization was done overnight at a temperature of 72°C. The anti-digoxigenin-AP antibody (for details, see 'Antibodies' section) was used at a dilution of 1:5000. Alkaline phosphatase detection was done using BCIP/NBT colorimetric revelation (Roche Life Science, Cat#11681451001).
 
-## Behavioral study
+### Behavioral study
 
 Twelve- to 14-week-old male mice were used in this study. They were housed in groups of 3–5 in standard conditions: 12 hr light/dark cycle, with ad libitum food and water access. Seven days before the beginning of behavioral test, mice were housed individually to limit inter-houses variability resulting from social relationships. All behavioral tests took place in the light cycle.
 
-## SHIRPA protocol
+#### SHIRPA protocol
 
 Mice performed a series of tests to ensure their general good health and motor performance and habituate them to being manipulated (Crawley, 2006). The test includes observation of appearance, spontaneous behavior, neurological reflexes, anxiety, motor coordination, balance rotarod, and muscular strength tests and were performed within 5 days. Individuals presenting deficits during the SHIRPA protocol were not used for other behavioral tests.
 
-## Footprint analysis
+#### Footprint analysis
 
 The fore and hind paws of mice were dipped in magenta and cyan non-toxic paint, respectively. Mice were allowed to walk through a rectangular plastic tunnel (9 cm W × 57 cm L × 16 cm H), whose floor was covered with a sheet of white paper. Habituation was done the day before the test. Five footsteps were considered for the analysis. Footprints were scanned and length measurements were made using ImageJ.
 
-## Rotarod
+#### Rotarod
 
 Mice were first habituated to the rotarod apparatus, 3 days before the acceleration test. The habituation protocol consists of 5 min at 4 r.p.m. To evaluate the motor coordination, mice were placed on immobile rotarod cylinders, which ramped up from 0 to 45 rotations per minute in 10 min. The timer was stopped when the mouse fell off the cylinder or did a whole turn with it. For a given session, this procedure was repeated three times per day separated by 60 min. The session was repeated during 5 consecutive days.
 
-## Whole-cell patch-clamp on acute cerebellar slices
+### Whole-cell patch-clamp on acute cerebellar slices
 
 Responses to PF and CF stimulation were recorded in PCs of the lobule VI in acute parasagittal and horizontal (LTP experiments) cerebellar slices from Susd4 KO juvenile (from P25 to P35) or adult (~P60) mice. Susd4 WT littermates were used as controls. Mice were anesthetized using isoflurane 4% and sacrificed by decapitation. The cerebellum was dissected in ice-cold oxygenated (95% O2 and 5% CO2) bicarbonate buffered solution (BBS) containing (in mM): NaCl 120, KCl 3, NaHCO3 26, NaH2PO4 1.25, CaCl2 2, MgCl2 1, and D(+)-glucose 35. Three-hundred-micrometer-thick cerebellar slices were cut with a vibratome (Microm HM650V: Thermo Scientific Microm, MA, or 7000smz-2 Campden Instruments Ltd., UK) in slicing solution (in mM): N-methyl-D-glucamine 93, KCl 2.5, NaH2PO4 1.2, NaHCO3 30, HEPES 20, D(+)-glucose 25, MgCl2 10, sodium ascorbate 5, thiourea 2, sodium pyruvate 3, N-acetyl-cystein 1, kynurenic acid 1, and CaCl2 0.5 (pH 7.3). Immediately after cutting, slices were allowed to briefly recover at 37°C in the oxygenated sucrose-based buffer (in mM): sucrose 230, KCl 2.5, NaHCO3 26, NaH2PO4 1.25, D(+)-glucose 25, CaCl2 0.8, and MgCl2 8. D-APV and minocycline at a final concentration of 50 μM and 50 nM, respectively, were added to the sucrose-based buffer. Slices were allowed to fully recover in bubbled BBS with 50 mM minocycline at 37°C for at least 40 min before starting the experiment, then maintained at room temperature for a maximum time of 8 hr (from slicing time). Patch-clamp borosilicate glass pipettes with 3–6 MΩ resistance were filled with the following internal solutions:
 
 Stimulation electrodes with ~5 MΩ resistances were pulled from borosilicate glass pipettes and filled with BBS. Recordings were performed at room temperature on slices continuously perfused with oxygenated BBS. The experiment started at least 20 min after the whole-cell configuration was established. The Digitimer DS3 (Digitimer Ltd) stimulator was used to elicit CF and PF and neuronal connectivity responses in PCs. Patch-clamp experiments were conducted in voltage clamp mode (except for the LTP and LTD induction protocols that were made under current-clamp mode) using a MultiClamp 700B amplifier (Molecular Devices, CA) and acquired using the freeware WinWCP written by John Dempster (https://pureportal.strath.ac.uk/en/datasets/strathclyde-electrophysiology-software-winwcp-winedr). Series resistance was compensated by 60–100% and cells were discarded if significant changes were detected. Currents were low-pass filtered at 2.2 kHz and digitized at 20 kHz.
 
-## CF- and PF-EPSC experiments
+#### CF- and PF-EPSC experiments
 
 To isolate the AMPARs current, the BBS was supplemented with (in mM): picrotoxin 0.1, D-AP5 10, CGP52432 0.001, JNJ16259685 0.002, DPCPX 0.0005, and AM251 0.001. CF and PF EPSCs were monitored at a holding potential of −10 mV. During CF recordings, the stimulation electrode was placed in the granule cell layer below the clamped cell; CF-mediated responses were identified by the typical all-or-none response and strong depression displayed by the second response elicited during paired-pulse stimulations (20 Hz). The number of CFs innervating the recorded PC was estimated from the number of discrete CF-EPSC steps. PF stimulation was achieved by placing the stimulation electrode in the molecular layer at the minimum distance required to avoid direct stimulation of the dendritic tree of the recorded PC. The input-output curve was obtained by incrementally increasing the stimulation strength. Peak EPSC values for PF were obtained following averaging of three consecutive recordings, values for CF EPSC correspond to the first recording. Short-term plasticity experiments were analyzed using a software written in Python by Antoine Valera (http://synaptiqs.wixsite.com/synaptiqs).
 
-## PF long-term plasticity experiments
+#### PF long-term plasticity experiments
 
 PCs were clamped at −60 mV. Each PF-induced response was monitored by a test protocol of paired stimulation pulses (20 Hz) applied every 20 s. A baseline was established during 10 min of paired-pulse stimulation in the voltage clamp configuration. After that, an induction protocol was applied in current-clamp mode with cells held at −60 mV. During LTD induction, the PFs were stimulated with two pulses at high frequency (200 Hz) and, after 100 ms, the CF was stimulated with four pulses at high frequency (200 Hz) repeated every 2 s for a period of 10 min. During LTP induction, recordings were made using BBS not supplemented with picrotoxin, and the PFs were stimulated with bursts of 15 pulses at high frequency (100 Hz) repeated every 3 s for a period of 5 min (Binda et al., 2016). Then, PCs were switched to the voltage clamp mode and paired stimulation pulses applied again, lasting 40 min. All the data were normalized to the mean baseline. Long-term plasticity was analyzed with the software Igor Pro 6.05 (WaveMetrics INC, OR).
 
 PF- and CF-delayed EPSC quanta events were detected and analyzed using the software Clampfit 10.7 (Molecular Devices). PF- and CF-delayed EPSC quanta superposed events were discarded manually based on the waveform. A threshold of 10 pA for minimal amplitude was used to select the CF events; 100 (PF) and 300 (CF) events for each neuron were studied by analyzing consecutive traces.
 
-## High-density MEA analysis of PC spiking in acute cerebellar slices
+### High-density MEA analysis of PC spiking in acute cerebellar slices
 
 Experiments were performed on acute cerebellar slices obtained from 3- to 6-month-old mice in artificial cerebrospinal fluid (ACSF) containing (in mM): NaCl 125, KCl 2.5, D(+)glucose 25, NaHCO3 25, NaH2PO4 1.25, CaCl2 2, and MgCl2 1 (95% O2 and 5% CO2). Parasagittal slices (320 μm) were cut at 30°C (Huang and Uusisaari, 2013) with a vibratome (7000smz-2, Campden Instruments Ltd.) at an advance speed of 0.03 mm/s and vertical vibration set to 0.1–0.3 μm. Slices were then transferred to a chamber filled with oxygenated ACSF at 37°C and allowed to recover for 1 hr before recordings.
 
@@ -179,7 +938,7 @@ For recording, the slices were placed over a high-density microelectrode array o
 
 To quantify the average variability in the firing rate, the CV of the ISI in seconds was calculated as the ratio of the standard deviation of ISIs to the mean ISI of a given cell. To measure the firing pattern variability within a short period of two ISIs, CV2 was calculated [CV2 = 2|ISIn+1 − ISIn|/(ISIn+1 + ISIn)] (Holt and Douglas, 1996).
 
-## Affinity purification of SUSD4 interactors from synaptosome preparations
+### Affinity purification of SUSD4 interactors from synaptosome preparations
 
 HEK293H (Gibco, MA, Cat#11631–017) were maintained at 37°C in a humidified incubator with 5% CO2 in Dulbecco’s modified Eagle’s medium (DMEM; containing high glucose and glutamax, Life Technologies, Cat#31966047) supplemented with 10% fetal bovine serum (FBS, Gibco, Cat#16141–079) and 1% penicillin/streptomycin (Gibco, Cat#15140122). 106 cells were plated per well in a six-well plate and transfected 24 hr (h) after plating with the indicated plasmids (1 µg plasmid DNA per well) using Lipofectamine 2000 (Invitrogen, Cat#11668–019) according to manufacturer’s instructions.
 
@@ -187,37 +946,37 @@ Forty-eight hours after transfection, cells were lysed and proteins were solubi
 
 To prepare synaptosome fractions, cerebella from WT mice (P30) were homogenized at 4°C in 10 volumes (w/v) of 10 mM Tris buffer (pH 7.4) containing 0.32 M sucrose and protease inhibitor cocktail (1:100). The resulting homogenate was centrifuged at 800 g for 5 min at 4°C to remove nuclei and cellular debris. Synaptosomal fractions were purified by centrifugation for 20 min at 20,000 r.p.m. (SW41Ti rotor) at 4°C using Percoll-sucrose density gradients (2-6-10–20%; v/v). Each fraction from the 10–20% interface was collected and washed in 10 mL of a 5 mM HEPES buffer pH 7.4 (NaOH) containing 140 mM NaCl, 3 mM KCl, 1.2 mM MgSO4, 1.2 mM CaCl2, 1 mM NaH2PO4, 5 mM NaHCO3, and 10 mM D(+)-glucose by centrifugation. The suspension was immediately centrifuged at 10,000 g at 4°C for 10 min. Synaptosomes in the pellet were resuspended in 100 µL of lysis buffer (10 mM Tris-HCl pH 7.5, 10 mM EDTA, 150 mM NaCl, 1% Tx) supplemented with a protease inhibitor cocktail (1:100) and MG132 (100 µM). Lysates were sonicated for 10 s and further incubated for 1 hr at 4°C. HA-SUSD4, GFP-SUSD4, or its control GFP-coated beads were then incubated with the synaptosomal lysates for 3 hr at 4°C. Beads were washed three times with lysis buffer supplemented with 0.1% SDS. Bound proteins were eluted for 10 min at 75°C using Laemmli buffer (160 mM Tris pH 6.8, 4% SDS, 20% glycerol, 0.008% BBP) with 5% β-mercaptoethanol before SDS-PAGE followed by western blotting or mass spectrometry.
 
-## Co-immunoprecipitation experiments in HEK293 cells
+### Co-immunoprecipitation experiments in HEK293 cells
 
 106 HEK293H cells were plated per well in six-well plates and transfected 24 hr after plating with the indicated plasmids (1.6 µg plasmid SEPGluA2 per well, using a molar ratio of 2:1 SEPGluA2:other plasmid) using Lipofectamine 2000 according to manufacturer’s instructions. For anti-HA pull downs, proteins from HEK293 cell lysates were solubilized in lysis buffer (1 M Tris-HCl pH 8, 10 mM EDTA, 1.5 M NaCl, 1% Tergitol [Sigma; Cat#NP40], 2% Na azide, 10% SDS, and 10% Na deoxycholate) supplemented with a protease inhibitor cocktail (1:100) and MG132 (1%). Then, lysates were sonicated for 15 s, further clarified by a centrifugation at 14,000 r.p.m. for 10 min. Supernatants were collected and incubated with Dynabeads Protein G (Life Technologies, Cat#10004D) and 28.8 µg of rat monoclonal anti-HA antibody (for details, see 'Antibodies' section) under gentle rotation for 1 hr at 4°C. Precipitates were washed three times in lysis buffer and then eluted by boiling (65°C) the beads 15 min in sample buffer (made from sample buffer 2× concentrate, Sigma, Cat#S3401) before SDS-PAGE. For SEPGluA2 pull downs, 48 hr after transfection, cells were washed twice in 1× PBS, lysed with 200 µL of lysis buffer (50 mM Tris-HCl pH 8% and 1% Tx) supplemented with a protease inhibitor cocktail (1:100) and MG132 (50 µM), scraped, sonicated 3 × 5 s, and proteins were further solubilized for 30 min at 4°C under rotation. Lysates were clarified by centrifugation at 14,000 r.p.m. for 10 min at 4°C. Supernatants (inputs) were collected and incubated with G-protein Dynabeads (Thermo Fisher Scientific, Cat#10004D), previously linked to mouse anti-GFP antibody (for details, see 'Antibodies' section), under gentle rotation for 1 hr at 4°C, to coat the beads with the SEP-tagged GluA2 proteins and interactors. Using a magnet, coated beads were washed five times in lysis buffer and bound proteins were then eluted by boiling for 15 min at 65°C in 1× sample buffer before SDS-PAGE and western blot analysis for detection of HA-SUSD4, GluA2, and PVRL3α.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 Proteins were separated by SDS-PAGE on 10% polyacrylamide gels (Mini-PROTEAN TGX Precast Gels, Bio-Rad, Hercules, CA) and stained with Protein Staining Solution (Euromedex, Souffelweyersheim, France). Gel lanes were cut into five pieces and destained with 50 mM triethylammonium bicarbonate and three washes in 100% acetonitrile. Proteins were digested in-gel using trypsin (1.2 µg/band, Gold, Promega, Madison, WI), as previously described (Thouvenot et al., 2008). Digest products were dehydrated in a vacuum centrifuge.
 
-## Nano-flow LC-MS/MS
+#### Nano-flow LC-MS/MS
 
 Peptides, resuspended in 3 μL formic acid (0.1%, buffer A), were loaded onto a 15 cm reversed phase column (75 mm inner diameter, Acclaim Pepmap 100 C18, Thermo Fisher Scientific) and separated with an Ultimate 3000 RSLC system (Thermo Fisher Scientific) coupled to a Q Exactive Plus (Thermo Fisher Scientific) via a nano-electrospray source, using a 120 min gradient of 5-40% of buffer B (80% ACN, 0.1% formic acid) and a flow rate of 300 nL/min.
 
 MS/MS analyses were performed in a data-dependent mode. Full scans (375–1500 m/z) were acquired in the Orbitrap mass analyzer with a 70,000 resolution at 200 m/z. For the full scans, 3 × 106 ions were accumulated within a maximum injection time of 60 ms and detected in the Orbitrap analyzer. The 12 most intense ions with charge states ≥2 were sequentially isolated to a target value of 1 × 105 with a maximum injection time of 45 ms and fragmented by higher-energy collisional dissociation in the collision cell (normalized collision energy of 28%) and detected in the Orbitrap analyzer at 17,500 resolution.
 
-## MS/MS data analysis
+#### MS/MS data analysis
 
 Raw spectra were processed using the MaxQuant environment (Cox and Mann, 2008, v1.5.5.1) and Andromeda for database search (Cox et al., 2011). The MS/MS spectra were matched against the UniProt Reference proteome (Proteome ID UP000000589) of Mus musculus (release 2017_03; http://www.uniprot.org) and 250 frequently observed contaminants (MaxQuant contaminants database) as well as reversed sequences of all entries. The following settings were applied for database interrogation: mass tolerance of 7 ppm (MS) and 0.5 Th (MS/MS), trypsin/P enzyme specificity, up to two missed cleavages allowed, only peptides with at least seven amino acids in length considered, and Oxidation (Met) and acetylation (protein N-term) as variable modifications. The ‘match between runs’ feature was allowed, with a matching time window of 0.7 min. False discovery rate (FDR) was set at 0.01 for peptides and proteins.
 
 A representative protein ID in each protein group was automatically selected using an in-house bioinformatics tool (leading v2.1). First, proteins with the most numerous identified peptides are isolated in a ‘match group’ (proteins from the ‘Protein IDs’ column with the maximum number of ‘peptides counts’). When more than one protein ID is present after filtering in a ‘match group’, the best annotated protein in UniProtKB (reviewed entries rather than automatic ones), highest evidence for protein existence, most annotated protein according to the number of Gene Ontology Annotations (GOA Mouse v151) is defined as the ‘leading’ protein. Only proteins identified with a minimum of two unique peptides, without MS/MS in control immunoprecipitation and exhibiting more than fourfold enrichment (assessed by spectral count ratio) in Sushi domain-containing protein 4 (SUSD4) immunoprecipitation vs. control immunoprecipitation, in the two biological replicates, were considered as potential partners of SUSD4 (Table 1).
 
-## GO analysis
+#### GO analysis
 
 The statistically enriched GO categories for the 28 candidate proteins were determined by Cytoscape (v3.6) plugin ClueGO v2.5.3 (Bindea et al., 2009). The molecular function category was considered (release 18.12.2018, https://www.ebi.ac.uk/GOA), except evidences inferred from electronic annotations. Terms are selected by different filter criteria from the ontology source: three to eight GO level intervals, minimum of four genes per GO term, and 10% of associated genes/term. A two-sided hypergeometric test for enrichment analysis (Benjamini-Hochberg standard correction used for multiple testing) was applied against the whole identified protein as reference set. Other predefined settings were used. Each node representing a specific GO term is color-coded based on enrichment significance (p-value). Edge thickness represents the calculated score (κ) to determine the association strength between the terms.
 
-## cLTD and GluA2 surface biotinylation assay in cerebellar acute slices
+### cLTD and GluA2 surface biotinylation assay in cerebellar acute slices
 
 Three-hundred-micrometer-thick parasagittal cerebellar slices were obtained from P31-P69 WT and Susd4 KO mice following the same protocol described before (see 'Whole-cell patch-clamp on acute cerebellar slices' section). Slices were incubated for 2 hr at 37°C in oxygenated BBS with or without proteasome (50 µM MG132 in DMSO) and lysosomal (100 µg/mL leupeptine in water, Sigma, Cat#11034626001) inhibitors. cLTD was induced by incubating the slices for 5 min at 37°C in BBS containing 50 mM K+ and 10 μM glutamate (diluted in HCl), followed by a recovery period in BBS for 30 min at 37°C all under oxygenation, in presence or not of inhibitors. Control slices were incubated in parallel in BBS solution containing HCl. Slices were then homogenized in lysis buffer, containing: 50 mM Tris-HCl, 150 mM NaCl, 0.1% SDS, 0.02% Na azide, 0.5% Na deoxycholate, 1% NP-40, and protease inhibitor cocktail (1:100). Homogenates were incubated 45 min at 4°C, then sonicated and centrifuged at 14,000 r.p.m. for 10 min at 4°C. Supernatants were then heated at 65°C in 2× sample buffer (Sigma, Cat#S3401) prior to western blot analysis for detection of GluA2 and GluD2.
 
 For GluA2 surface biotinylation assay, cerebellar slices (obtained from mice aged between P27 and P61) were treated as above. After a recovery period of 30 min at 37°C in BBS, slices were incubated in a biotinylation solution (Thermo Fisher Scientific, EZ-Link Sulfo-NHS-SS-Biotin, Cat#A39258, 0.125 mg/mL) for 30 min on ice without oxygen. Slices were finally washed three times for 10 min in PBS pH 7.4 at 4°C and then homogenized in lysis buffer, containing: 50 mM Tris-HCl pH 8, 150 mM NaCl, 0.1% SDS, 0.02% Na azide, 0.5% Na deoxycholate, 1% NP-40, and protease inhibitor cocktail (1:100). Homogenates were incubated 45 min at 4°C, then sonicated and centrifuged at 14,000 r.p.m. for 10 min at 4°C. Supernatants (inputs) were collected and incubated with Dynabeads MyOne Streptavidin C1 (Thermo Fisher Scientific, Cat#65001) under gentle rotation overnight at 4°C. Using a magnet, beads were washed five times in lysis buffer and biotinylated proteins were then eluted by boiling for 15 min at 65°C in 1× sample buffer before SDS-PAGE and western blot analysis for detection of GluA2.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Labeling of primary hippocampal neurons: Hippocampi were dissected from E18 mice embryos and dissociated. 1.2×105 neurons were plated onto 18 mm diameter glass coverslips precoated with 80 µg/mL poly-L-ornithine (Sigma, Cat#P3655) and maintained at 37°C in a 5% CO2 humidified incubator in neurobasal medium (Gibco, Cat#21103049) supplemented with 2% B-27 supplement (Gibco, Cat#17504044) and 2 mM Glutamax (Gibco, Cat#35050-038). Fresh culture medium (neurobasal medium supplemented with 2% B-27, 2 mM L-glutamine [Gibco, Cat#A2916801], and 5% horse serum [Gibco, Cat#26050088]) was added every week for maintenance of the neuronal cultures.
 
@@ -225,21 +984,21 @@ Hippocampal neurons at days in vitro 13 (DIV13) were transfected using Lipofecta
 
 Labeling of primary cerebellar mixed cultures: Cerebellar mixed cultures were prepared from P0 tg/0 ‘B6.129-Tg(Pcp2-cre)2Mpin/J’ (stock number 004146, outbred, C57Bl/6J background) mouse cerebella and were dissected and dissociated according to previously published protocol (Tabata et al., 2000). Neurons were seeded at a density of 5×106 cells/mL. Mixed cerebellar cultures were transduced at DIV3 using a Cre-dependent AAV construct that expresses HA-tagged SUSD4 and soluble GFP (2 µL of AAV2-hSYN-DIO-HA-SUSD4-2A-eGFP-WPRE at 4.1×1012 GC/mL or control AAV2-hSYN-DIO-eGFP-WPRE at 5×1012 GC/mL). At DIV17, neurons were fixed with 4% PFA in PBS 1× for 30 min at room temperature. After rinsing with PBS, non-specific binding sites were blocked using PBS containing 4% DS and 0.2% Tx. Primary and secondary antibodies were diluted in PBS 1% DS and 0.2% Tx and incubated 1 hr at room temperature. Three PBS 0.2% Tx washes were performed before and after each antibody incubation. Nuclear counterstaining was performed with Hoechst 33342 for 15 min at room temperature.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Labeling of brain sections
+#### Labeling of brain sections
 
 Thirty-micrometer-thick parasagittal brain sections were obtained using a freezing microtome (SM2010R, Leica) and brains obtained after intracardiac perfusion with 4% PFA in PBS solution of mice sedated with 100 mg/kg pentobarbital sodium. Sections were then washed three times for 5 min in PBS, then blocked with PBS 4% DS for 30 min. The primary antibodies were diluted in PBS, 1% DS, 1% Tx. The sections were incubated in the primary antibody solution overnight at 4°C and then washed three times for 5 min in PBS 1% Tx. Sections were incubated in the secondary antibody, diluted in PBS, 1% DS, 1% Tx solution for 1 hr at room temperature. The sections were then incubated for 15 min at room temperature with the nuclear marker Hoechst 33342 in PBS 0.2% Tx. Finally, the sections were washed three times for 5 min in PBS 1% Tx, recovered in PBS and mounted with Prolong Gold (Thermo Fisher Scientific, Cat#P36934) between microscope slides and coverslips (Menzel-gläser, Brunswick, Germany, Cat#15165252).
 
-## RT-PCR and quantitative RT-PCR
+### RT-PCR and quantitative RT-PCR
 
 For standard RT-PCR, total RNA was isolated from the cortex, cerebellum, and brainstem of 2-month-old Susd4 KO mice and WT control littermates, using the RNeasy mini kit (Qiagen, Venlo, The Netherlands, Cat#74104). Equivalent amounts of total RNA (100 ng) were reverse-transcribed according to the protocol of SuperScript VILO cDNA Synthesis kit (Life Technologies, CA, Cat#11754–250) as stated by manufacturer’s instructions. The primers used were forward 5' TGT TAC TGC TCG TCA TCC TGG 3' and reverse 5' GAG AGT CCC CTC TGC ACT TGG 3’. PCR was performed with an annealing temperature of 61°C, for 39 cycles, using the manufacturer’s instructions (Taq polymerase; New England Biolabs, MA, Cat#M0273S). Quantitative PCR was performed using the TaqMan universal master mix II with UNG (Applied Biosystems, Cat# 4440038) and the following TaqMan probes: Rpl13a (#4331182_Mm01612986_gH) and Susd4 (#4331182_Mm01312134_m1).
 
-## Western blot analysis
+### Western blot analysis
 
 After samples were mixed with sample buffer, proteins were resolved by electrophoresis on a 4–12% NuPAGE Bis-Tris-Gel according to Invitrogen protocols, then electrotransferred using TransBlot DS Semi-dry transfer Cell or TransBlot Turbo transfer system (Bio-Rad) to PVDF membrane (Immobilon-P transfer membrane, Millipore, Cat#IPVH00010). Membranes were blocked in PBS supplemented with Tween 0.2% (PBST) and non-fat milk 5% and incubated with primary antibodies in PBST-milk 5%. After washing three times in PBST, membranes were incubated with horseradish peroxidase-conjugated secondary antibodies in PBST-milk 5%. Membranes were finally washed three times and bound antibodies were revealed using Immobilon Western (Millipore, Cat#WBKLS) or Western Femto Maximum Sensitivity (Thermo Fisher Scientific, Cat#34095) or SuperSignal West Dura (Thermo Fisher Scientific, Cat#34075) or ECL western blotting substrate (Thermo Fisher Scientific, Cat#32209) chemiluminescent solutions and images acquired on a Fusion FX7 system (Vilber Lourmat, Île-de-France, France). Quantitation of western blots was performed using the ImageJ software on raw images under non-saturating conditions. Band intensities of proteins of interest were obtained after manually selecting a rectangular region around the band. The signal intensity of the band of interest was then normalized to the signal intensity of the corresponding βACTIN (used as a loading control). For quantifications of immunoprecipitation experiments, input intensities were normalized to βACTIN, and then the intensities of immunoprecipitated protein bands were normalized to the normalized inputs, unless otherwise stated.
 
-## Image acquisition and quantification
+### Image acquisition and quantification
 
 In situ hybridization images were acquired using an Axio Zoom v16 (Zeiss, Oberkochen, Germany) microscope equipped with a digital camera (AxioCam HRm) using a 10× objective (pixel size 0.650 μm).
 
@@ -251,7 +1010,7 @@ VGLUT1 and VGLUT2 puncta were analyzed using the Matlab software and a homemade 
 
 The software ImageJ was used to measure the total area of a cerebellar section from images of staining obtained with the nuclear marker Hoechst. The extension of the molecular layer was measured using images of the anti-CABP staining. Nine parasagittal sections were analyzed per animal. The data presented correspond to the mean per animal.
 
-## Statistical analysis
+### Statistical analysis
 
 Data from all experiments were imported in Prism (GraphPad Software, CA) for statistical analysis, except for electrophysiology data that were imported to Igor Pro 6.05 (WaveMetrics INC) for statistical analysis.
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.04251.001 Nuclear pore complexes (NPCs) conduct massive transport mediated by shuttling nuclear transport receptors (NTRs), while keeping nuclear and cytoplasmic contents separated. The NPC barrier in Xenopus relies primarily on the intrinsically disordered FG domain of Nup98. We now observed that Nup98 FG domains of mammals, lancelets, insects, nematodes, fungi, plants, amoebas, ciliates, and excavates spontaneously and rapidly phase-separate from dilute (submicromolar) aqueous solutions into characteristic ‘FG particles’. This required neither sophisticated experimental conditions nor auxiliary eukaryotic factors. Instead, it occurred already during FG domain expression in bacteria. All Nup98 FG phases rejected inert macromolecules and yet allowed far larger NTR cargo complexes to rapidly enter. They even recapitulated the observations that large cargo-domains counteract NPC passage of NTR⋅cargo complexes, while cargo shielding and increased NTR⋅cargo surface-ratios override this inhibition. Their exquisite NPC-typical sorting selectivity and strong intrinsic assembly propensity suggest that Nup98 FG phases can form in authentic NPCs and indeed account for the permeability properties of the pore. DOI: http://dx.doi.org/10.7554/eLife.04251.001
+Nuclear pore complexes (NPCs) conduct massive transport mediated by shuttling nuclear transport receptors (NTRs), while keeping nuclear and cytoplasmic contents separated. The NPC barrier in Xenopus relies primarily on the intrinsically disordered FG domain of Nup98. We now observed that Nup98 FG domains of mammals, lancelets, insects, nematodes, fungi, plants, amoebas, ciliates, and excavates spontaneously and rapidly phase-separate from dilute (submicromolar) aqueous solutions into characteristic ‘FG particles’. This required neither sophisticated experimental conditions nor auxiliary eukaryotic factors. Instead, it occurred already during FG domain expression in bacteria. All Nup98 FG phases rejected inert macromolecules and yet allowed far larger NTR cargo complexes to rapidly enter. They even recapitulated the observations that large cargo-domains counteract NPC passage of NTR⋅cargo complexes, while cargo shielding and increased NTR⋅cargo surface-ratios override this inhibition. Their exquisite NPC-typical sorting selectivity and strong intrinsic assembly propensity suggest that Nup98 FG phases can form in authentic NPCs and indeed account for the permeability properties of the pore.
 
 ## Introduction
 
@@ -47,21 +47,21 @@ We now observed that Nup98 FG domains from animals, fungi, plants, amoebas, cili
 
 One possible explanation for the observed permselectivity of NPCs is given by the hypothesis that the barrier-critical FG domains assemble into a sieve-like meshwork, whose contact points can be temporarily and locally resolved by translocating NTRs. Indeed, it was previously shown that several FG domains can jellify into hydrogel meshworks with such a ‘smart sieve behaviour’, i.e. they reject inert macromolecules above a certain size limit but let the same cargoes pass when bound to an appropriate NTR. However, only gels with a concentration of no less than 200 mg/ml FG domain (corresponding to 3–4 mM FG domain or 100–175 mM FG motifs) showed such selectivity. Compared to the ≈200 nM Nup98 present in a (pre-assembly) metaphase Xenopus egg extract (Hülsmann et al., 2012), this would require a ≈20,000-fold increase in concentration. Hence, we wondered if and how such high local concentration could possibly be reached.
 
-## Expected minimal FG domain concentrations in authentic NPCs
+### Expected minimal FG domain concentrations in authentic NPCs
 
 Clearly, the recruitment of FG Nups to the NPC scaffold already represents a first concentration step. A lower limit for the resulting FG concentration can thus be estimated based on three assumptions: (i) only Nup98-type FG domains participate in the barrier, (ii) these domains occur in 48 copies per NPC (Ori et al., 2013), and (iii) not only dwell inside the central channel (length: 80 nm; width: 40 nm) but reach 70 nm into the nuclear and cytoplasmic space. The latter value represents the farthest distance from the NPC plane at which epitopes of an FG Nup (Nup358) had previously been detected by immuno-EM (Walther et al., 2002). These numbers give an accessible volume of 1.5 × 10−18 litres and concentrations of 50 µM (2.5 mg/ml) for the FG domain and 2 mM for the FG motifs. When considering non-Nup98 FG domains as well, the lower bound increases to 6 mM FG motifs.
 
 However, this is still far lower than the above-mentioned threshold for hydrogel selectivity. An effective hydrogel-based barrier should therefore assemble within NPCs only if some mechanism increases the local FG domain concentration further by a factor of 10–100.
 
-## FG particle assembly by phase-separation from dilute aqueous solutions
+### FG particle assembly by phase-separation from dilute aqueous solutions
 
 In the simplest case, local concentrations can increase because the barrier-forming FG domains have an intrinsic propensity to self-concentrate and hence to phase-separate from aqueous solutions. However, even then the question still remains if the resulting protein-rich phase has an appropriate FG repeat concentration and structure to function as a barrier with NPC-like permselectivity. Given that these issues are central for our understanding of NPC function, we decided to address them systematically.
 
-As an initial example, we chose the FG domain of
+As an initial example, we chose the FG domain of S. cerevisiae Nup100, because it is a well-studied Nup98 homolog that can restore a functional barrier in FG Nup-depleted Xenopus NPCs (Hülsmann et al., 2012), but it has not yet been tested if this domain is also sufficient for assembling a selective hydrogel in vitro. In the first series of experiments, we prepared a 1000 µM Nup100 FG domain stock solution, supplemented by 2 M guanidinium hydrochloride in order to initially keep the domain molecules in a non-interacting state. The solution was then rapidly diluted in 100 volumes of a neutral Tris/NaCl buffer, which lowered the protein concentration to 10 µM and the guanidinium ion concentration to negligible levels (Figure 1A). Remarkably, the Nup100 FG domain solution turned instantaneously turbid, pointing to a very rapid phase-separation and formation of small particles or liquid droplets, which can be easily recovered by centrifugation (Figure 1B). We tried to record a time course of this reaction (by static light scattering) but had to realise that the reaction had already reached its endpoint before we could place samples into the instrument and start the measurement (after 10–30 s).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig1-v1.jpg)
 
-**Figure 1.:** (A) Illustration of the experimental design. (B) Cohesive FG domains self-assemble into FG phases that can be collected by centrifugation. Two stock protein solutions were prepared in 2 M guanidinium hydrochloride (GuHCl), 100 mM Tris/HCl pH 8.0. They contained 300 µM of a Z-domain tandem fusion (labelled 1:1 with Atto565 maleimide) and 300 µM FG domain from either or Nsp1 (residues 274–601) or Nup100. 5% of the FG domain molecules carried an Atto488 maleimide label. 16.7 µl of each solution was diluted with 500 µl 50 mM Tris/HCl pH 7.5, 150 mM NaCl (TBS). Photographs show test tubes after ultracentrifugation (100,000×g, 30 min), illuminated at 366 nm. Note that the Nup100 FG domain pelleted, while the non-cohesive Nsp1 FG repeats and the globular ZZ-domain remained soluble. (C) FG particle formation at different concentrations. Label-free ScNsp1276-601 and ScNup100 FG domains were diluted from 400 µM stocks (in 2 M GuHCl) to the indicated concentrations with TBS. Formed particles were analysed by Dynamic light scattering (DLS) using a DynaPro NanoStar instrument (Wyatt Technologies). Two data sets, comprising each 100 acquisitions à 5 s, were averaged for each dilution. The Dynamics 7.1.5 software was used for autocorrelation analysis and computation of size distributions. (D) Confocal laser-scanning microscopy (CLSM) images showing an overview and zoom-in of ScNup100 FG particles. (E) FG particles exclude inert molecules. Particles were formed with 10 µM ScNup100 FG domain and 0.5 µM Atto390-tracer. Particles were mixed with Alexa488-labeled maltose binding protein (MBP), which remained excluded from the particle and thus qualified as an internal standard for Alexa488 fluorescence. (F) Estimation of FG domain concentration within FG particles. Particles were formed with 10 µM unlabelled, 0.5 µM Atto390- and 14 nM Alexa488-labelled ScNup100 FG-domain. CLSM images were taken after adding different dilutions of MBP-Alexa488, which served as an internal fluorescence standard. Correlating extra-particle Alexa488 signals (originating from MBP) with the known supplied MBP concentrations and matching them with the intra-particle Alexa488 signals (originating from 1/715th of the FG-domain molecules) suggests that an average particle contains ≈4.5 mM (≈275 mg/ml) FG-domain. This corresponds to ≈200 mM FG motifs.DOI: http://dx.doi.org/10.7554/eLife.04251.003
+**Figure 1.:** (A) Illustration of the experimental design. (B) Cohesive FG domains self-assemble into FG phases that can be collected by centrifugation. Two stock protein solutions were prepared in 2 M guanidinium hydrochloride (GuHCl), 100 mM Tris/HCl pH 8.0. They contained 300 µM of a Z-domain tandem fusion (labelled 1:1 with Atto565 maleimide) and 300 µM FG domain from either or Nsp1 (residues 274–601) or Nup100. 5% of the FG domain molecules carried an Atto488 maleimide label. 16.7 µl of each solution was diluted with 500 µl 50 mM Tris/HCl pH 7.5, 150 mM NaCl (TBS). Photographs show test tubes after ultracentrifugation (100,000×g, 30 min), illuminated at 366 nm. Note that the Nup100 FG domain pelleted, while the non-cohesive Nsp1 FG repeats and the globular ZZ-domain remained soluble. (C) FG particle formation at different concentrations. Label-free ScNsp1276-601 and ScNup100 FG domains were diluted from 400 µM stocks (in 2 M GuHCl) to the indicated concentrations with TBS. Formed particles were analysed by Dynamic light scattering (DLS) using a DynaPro NanoStar instrument (Wyatt Technologies). Two data sets, comprising each 100 acquisitions à 5 s, were averaged for each dilution. The Dynamics 7.1.5 software was used for autocorrelation analysis and computation of size distributions. (D) Confocal laser-scanning microscopy (CLSM) images showing an overview and zoom-in of ScNup100 FG particles. (E) FG particles exclude inert molecules. Particles were formed with 10 µM ScNup100 FG domain and 0.5 µM Atto390-tracer. Particles were mixed with Alexa488-labeled maltose binding protein (MBP), which remained excluded from the particle and thus qualified as an internal standard for Alexa488 fluorescence. (F) Estimation of FG domain concentration within FG particles. Particles were formed with 10 µM unlabelled, 0.5 µM Atto390- and 14 nM Alexa488-labelled ScNup100 FG-domain. CLSM images were taken after adding different dilutions of MBP-Alexa488, which served as an internal fluorescence standard. Correlating extra-particle Alexa488 signals (originating from MBP) with the known supplied MBP concentrations and matching them with the intra-particle Alexa488 signals (originating from 1/715th of the FG-domain molecules) suggests that an average particle contains ≈4.5 mM (≈275 mg/ml) FG-domain. This corresponds to ≈200 mM FG motifs.
 
 When applying dynamic light scattering (DLS) to the 10 µM Nup100 FG domain sample, we observed a very prominent particle population with diameters ranging mostly between 2 and 8 µm (Figure 1C). At a lower concentration (0.625 µM), we observed a broader main peak with 0.4–4 µm particles (accounting for ≈60% by mass), another peak with 25 nm assembly intermediates (10%) and residual monomers (30%). The remaining monomer concentration can be taken as an estimate for the critical concentration for this phase-separation, which hence should be in the range of ≈200 nM FG domain or ≈10 µM FG repeat units. Yet, already the anchorage of FG domains to the NPC scaffold should result in a ≥200 times higher local concentration (2 mM repeat units; see above). This ≥200-fold oversaturation should thus drive FG phase-separation to completion also in real NPCs. The rapid onset of the in vitro FG particle formation further supports this view, as it indicates that self-association of Nup100 FG domains is not impeded by a kinetic hurdle.
 
@@ -71,33 +71,33 @@ Confocal laser-scanning microscopy (CLSM) of Nup100 FG particles, formed in the 
 
 As a next step, we wanted to determine the Nup100 FG domain concentration in the formed particles. For that we recorded the local fluorescent intensity of the added Alexa488 FG domain tracer, determined absolute fluorophore concentrations by calibration with a series of internal Alexa488-MBP standards (Figure 1E,F), and used this number to derive an average intra-particle concentration of the Nup100 FG domain of 275 mg/ml (corresponding to 4.7 mM FG domain or 200 mM FG motifs). Further assuming a specific partial volume for the protein part of 0.73 ml/g, one can estimate that the polypeptide accounts for 20% and water (respectively buffer) for the remaining 80% of the particle volume. These numbers are well in line with the assumption that these particles indeed represent hydrogels.
 
-## ScNup100 FG particles are highly selective FG phases
+### ScNup100 FG particles are highly selective FG phases
 
-We subsequently used CLSM to assess how fluorescent permeation probes would partition into the self-assembled Nup100 FG particles. As shown in
+We subsequently used CLSM to assess how fluorescent permeation probes would partition into the self-assembled Nup100 FG particles. As shown in Figure 2A, the particles allowed for a strong accumulation of probes with NTR-like properties. This applied to NTF2, Importin β complexed with an Atto488-labelled IBB-domain or an IBB-GFP fusion, or even a 520 kDa octameric complex comprising four copies of Importin β and the IBB-ZsGreen homotetramer. The particles were imaged after just ≈3 min of NTR influx. Nevertheless, particle:buffer partition coefficients of ≈200 were observed, and the NTRs showed already a rather even distribution between the centres and peripheries of the 5–10 µm-sized particles. A comparison with computer simulations (Figure 3) suggests that the influx was so rapid that diffusion within the surrounding buffer, but not the actual particle-entry, must have become rate-limiting. The intra-particle NTR distributions are consistent with intra-particle diffusion coefficients of ≥0.1 µm2/s, implying that it would take these transported species no more than 10 milliseconds to traverse a 40-nm thick NPC barrier made of the same material. This agrees well with previously observed NPC dwell times of NTF2 or importin β during a successful pore passage (Yang et al., 2004; Kubitscheck et al., 2005; Yang and Musser, 2006).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig2-v1.jpg)
 
-**Figure 2.:** (A) FG particles were formed at 10 µM ScNup100 FG domain concentration (including 5% Atto390-tracer), as described above. 3 µM of the passive permeation probe MBP-mCherry or 1 µM of the indicated active permeation species were added (concentration referring to substrate monomers). CLSM images were taken ≈2–3 min later, using the 405 nm, 488 nm, or 561 nm laser lines for exciting the FG tracer, active or passive permeation probes, respectively. (B) Intra-FG particle dynamics of FG domains and NTR⋅cargo complexes. ScNup100 FG particles were formed as in Figure 1E and challenged with 1 µM of a yeast Impβ•IBB-MBP-GFP complex. CLSM images show two particles. One of them was photobleached at 405 and 488 nm in one hemisphere. Fluorescence recovery of the FG domain tracer as well as of the NTR⋅cargo complex was detected over time.DOI: http://dx.doi.org/10.7554/eLife.04251.004
+**Figure 2.:** (A) FG particles were formed at 10 µM ScNup100 FG domain concentration (including 5% Atto390-tracer), as described above. 3 µM of the passive permeation probe MBP-mCherry or 1 µM of the indicated active permeation species were added (concentration referring to substrate monomers). CLSM images were taken ≈2–3 min later, using the 405 nm, 488 nm, or 561 nm laser lines for exciting the FG tracer, active or passive permeation probes, respectively. (B) Intra-FG particle dynamics of FG domains and NTR⋅cargo complexes. ScNup100 FG particles were formed as in Figure 1E and challenged with 1 µM of a yeast Impβ•IBB-MBP-GFP complex. CLSM images show two particles. One of them was photobleached at 405 and 488 nm in one hemisphere. Fluorescence recovery of the FG domain tracer as well as of the NTR⋅cargo complex was detected over time.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig3-v1.jpg)
 
-**Figure 3.:** Influx of the NTR⋅cargo complex into the FG particles had to be performed in suspension, which implied that we had to wait until particles had settled to the bottom of the slide (≈3 min) before concentration profiles across a particle and surrounding buffer could be recorded. Then, however, the endpoint of accumulation was essentially reached already. In order to nevertheless estimate kinetic parameters for particle-entry, we simulated the process and asked which parameter set would be consistent with the observed cargo distribution at the 3 min time point. These parameters included the partition coefficient (220) and 7 µm particle diameter (both measured directly), the diffusion coefficient in buffer (Dbuffer = 50 µm2/s, derived by the Stokes–Einstein equation from the radius of the Impβ•IBB-GFP complex and the viscosity of the buffer), as well as the intra-particle diffusion coefficient (DParticle = 0.1 µm2/s), which was the smallest that allowed an even intra-particle distribution of the cargo at the 3 min timepoint. ‘Capture efficiency’ describes the probability that a colliding NTR⋅cargo complex gets captured by the particle. Simulations were performed in Mathematica 9.0 and exploited the spherical symmetry of the particle to simplify the system of differential equations (see Supplementary file 1 for the Mathematica code and more detailed explanations). (A) ScNup100 FG particles were formed at 10 µM and 30 min later challenged with 1 µM Impβ•IBB-GFP complex. CLSM image was taken after another 3 min. (B) Impβ•IBB-GFP concentration profile across the area indicated in panel A. Signal was normalized to the concentration in buffer. (C) Simulation of influx for indicated parameters and time points. (D) Sensitivity analysis, varying the parameters used in C. It revealed that diffusion in buffer, the partition coefficient, and diffusion inside the particle, but not the capture efficiency, are limiting for the influx process.DOI: http://dx.doi.org/10.7554/eLife.04251.005
+**Figure 3.:** Influx of the NTR⋅cargo complex into the FG particles had to be performed in suspension, which implied that we had to wait until particles had settled to the bottom of the slide (≈3 min) before concentration profiles across a particle and surrounding buffer could be recorded. Then, however, the endpoint of accumulation was essentially reached already. In order to nevertheless estimate kinetic parameters for particle-entry, we simulated the process and asked which parameter set would be consistent with the observed cargo distribution at the 3 min time point. These parameters included the partition coefficient (220) and 7 µm particle diameter (both measured directly), the diffusion coefficient in buffer (Dbuffer = 50 µm2/s, derived by the Stokes–Einstein equation from the radius of the Impβ•IBB-GFP complex and the viscosity of the buffer), as well as the intra-particle diffusion coefficient (DParticle = 0.1 µm2/s), which was the smallest that allowed an even intra-particle distribution of the cargo at the 3 min timepoint. ‘Capture efficiency’ describes the probability that a colliding NTR⋅cargo complex gets captured by the particle. Simulations were performed in Mathematica 9.0 and exploited the spherical symmetry of the particle to simplify the system of differential equations (see Supplementary file 1 for the Mathematica code and more detailed explanations). (A) ScNup100 FG particles were formed at 10 µM and 30 min later challenged with 1 µM Impβ•IBB-GFP complex. CLSM image was taken after another 3 min. (B) Impβ•IBB-GFP concentration profile across the area indicated in panel A. Signal was normalized to the concentration in buffer. (C) Simulation of influx for indicated parameters and time points. (D) Sensitivity analysis, varying the parameters used in C. It revealed that diffusion in buffer, the partition coefficient, and diffusion inside the particle, but not the capture efficiency, are limiting for the influx process.
 
 At the same time, we observed that the inert MBP-mCherry fusion (65 kDa) remained well excluded from the particles' interior (see Figure 2A). The respective partition coefficients of <0.1 were far lower than the estimated fraction of the particles' volume that is occupied by the solvent, which in turn is consistent with the assumption of a sieve structure causing a size-exclusion effect.
 
-## Though FG particles are solids, NTRs traverse them like a liquid
+### Though FG particles are solids, NTRs traverse them like a liquid
 
 The phase-separation of cohesive FG domains from dilute aqueous solutions draws an interesting parallel to RNA granules, which are membrane-free compartments formed by multivalent interactions between RNAs and RNA-binding proteins. RNA granules are also of near-spherical shape and this shape has been attributed to a liquid state and surface tension effects (Brangwynne et al., 2009). Given these similarities, we wanted to probe the physical conditions of the obtained FG phases and used FRAP for this purpose (Figure 2B). After bleaching the Atto390 fluorophore of labelled FG domains, we observed that bleached patterns within the Nup100 FG particles remained stable for some minutes at least. This indicates a solid state of the particles and stable interactions between FG domains. The simultaneously bleached NTR-signal was, however, far more dynamic. The particles' peripheries showed a clear signal recovery already within two seconds, indicating a very rapid exchange with the surrounding medium. This implies that this NTR-species can rapidly exit the particle—despite its very high partition coefficient. The fluorescent signal in the centre of a particle with a radius of ≈4 µm recovered with a half time of ≈40 s. This clearly shows that NTRs are actually very mobile within a rather static FG phase.
 
-## Formation of selective FG phases within living cells
+### Formation of selective FG phases within living cells
 
 We had previously prepared FG hydrogels by quickly dissolving the TFA (trifluoroacetic acid) salt of a lyophilised FG domain to ≈200 mg/ml, and one could argue that gels formed only because the domains were forced artificially to such a high local concentration. We now demonstrated that initially very dilute aqueous solutions of Nup98 FG domains phase-separate into an FG-rich phase (see Figure 1 and below). However, in order to suppress intermolecular contacts prior to this dilution step, we had to keep the concentrated protein solution in ≥2 M guanidinium hydrochloride. One could therefore argue that such transient denaturation is still non-physiological and might have caused an artificial FG hydrogel formation that otherwise would not have occurred.
 
-In order to address this issue, we avoided any denaturing treatment during the next steps. Specifically, we tested whether Nup98-derived FG domains also self-assemble into selective phases, when they are simply expressed in the bacterium
+In order to address this issue, we avoided any denaturing treatment during the next steps. Specifically, we tested whether Nup98-derived FG domains also self-assemble into selective phases, when they are simply expressed in the bacterium Escherichia coli and thus are not exposed to any potentially structure-changing manipulation. Following recombinant expression (after modest induction), we resuspended the bacteria in a physiological buffer, gently disrupted the cells by lysozyme treatment, and subjected the lysate to a 10,000×g centrifugation step. We observed that the FG domains from Nup100 and Nup116 (the second S.c. Nup98 paralog) pelleted under these conditions (Figure 4A,B). Given that the centrifugation was performed with only a k-factor of ≈1000 S, it thus appeared that these FG domains had formed rather large structures.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig4-v1.jpg)
 
-**Figure 4.:** For the undistorted in vivo formation of FG bodies, the ScNup100 and ScNup116 FG domains were expressed in Escherichia coli (NEB Express) following induction with 0.5 mM IPTG at 30°C. Cells were pelleted, resuspended in TBS, and lysed with 1 mg/ml lysozyme, 20 µg/ml DNAse I and 0.5% Tween 20. Insoluble ‘FG bodies’ were recovered by centrifugation at 10,000×g. SDS-PAGE analysis of supernatant (‘Sup’) and pellet fractions and the permeability properties of the recovered ScNup100 (A) and ScNup116 (B) FG bodies are shown. Crude FG bodies were washed twice in TBS and their permselectivity analysed as described in Figure 2. (C) Mobility of NTR⋅cargo complexes in FG bodies. ScNup100 FG bodies were challenged with 1 µM Impβ•IBB-GFP and photobleached, and fluorescence recovery was detected over time. Note that the NTR⋅cargo complex was mobile also within the in vivo formed FG bodies. The white dashed line in the 50 s frame indicates the region analysed for the line plots shown below the images. (D) Fluorescence recovery over time in the area indicated by the blue box in the zoom-in of the particle outlined by the dashed lines in C. The analysed region lies approximately 1 µm inside of the particle. Fluorescence recovery occurred with a time constant of ≈100 s. Note that this involved not only intra-particle diffusion, but also the uptake from the buffer against a ≈200-fold concentration gradient. (E) In contrast to the FG bodies, actin inclusion bodies did not enrich the Impβ•IBB-GFP species, but in fact excluded it like MBP-mCherry.DOI: http://dx.doi.org/10.7554/eLife.04251.008
+**Figure 4.:** For the undistorted in vivo formation of FG bodies, the ScNup100 and ScNup116 FG domains were expressed in Escherichia coli (NEB Express) following induction with 0.5 mM IPTG at 30°C. Cells were pelleted, resuspended in TBS, and lysed with 1 mg/ml lysozyme, 20 µg/ml DNAse I and 0.5% Tween 20. Insoluble ‘FG bodies’ were recovered by centrifugation at 10,000×g. SDS-PAGE analysis of supernatant (‘Sup’) and pellet fractions and the permeability properties of the recovered ScNup100 (A) and ScNup116 (B) FG bodies are shown. Crude FG bodies were washed twice in TBS and their permselectivity analysed as described in Figure 2. (C) Mobility of NTR⋅cargo complexes in FG bodies. ScNup100 FG bodies were challenged with 1 µM Impβ•IBB-GFP and photobleached, and fluorescence recovery was detected over time. Note that the NTR⋅cargo complex was mobile also within the in vivo formed FG bodies. The white dashed line in the 50 s frame indicates the region analysed for the line plots shown below the images. (D) Fluorescence recovery over time in the area indicated by the blue box in the zoom-in of the particle outlined by the dashed lines in C. The analysed region lies approximately 1 µm inside of the particle. Fluorescence recovery occurred with a time constant of ≈100 s. Note that this involved not only intra-particle diffusion, but also the uptake from the buffer against a ≈200-fold concentration gradient. (E) In contrast to the FG bodies, actin inclusion bodies did not enrich the Impβ•IBB-GFP species, but in fact excluded it like MBP-mCherry.
 
 At first glance, the insoluble material resembled ordinary inclusion bodies that result when ‘difficult-to-fold-proteins’ (for example recombinant actin; Figure 4E) form irreversible aggregates during overexpression in a prokaryotic host. One critical difference is, however, that the initially insoluble ‘FG bodies’ slowly dissolved when soluble FG domain molecules were removed from the equilibrium, for example during repeated steps of pelleting and resuspending in fresh aliquots of buffer (not shown).
 
@@ -107,83 +107,389 @@ In Figure 4C, we bleached the Impβ⋅IBB-GFP signal in an area that comprised a
 
 Earlier studies already reported that overexpressing, for example, a YFP-Nup100 FG repeat fusion in S. cerevisiae (Patel et al., 2007) or GFP-fused to the human Nup98 FG domain in HeLa cells (Xu and Powers, 2013), can result in characteristic intra-cellular foci. Yet, the composition, dependence on host factors and barrier properties of such assemblies had not been evaluated. Figure 4 now demonstrates that in vivo formed minimalistic Nup98 FG phases feature a striking NPC-like permselectivity. It also shows that phase-separation requires neither accessory eukaryotic factors nor sophisticated experimental manipulations. Instead, the assembly of FG bodies relies exclusively on the strong intrinsic propensity of these FG domains to interact.
 
-## Nup98 FG domains from diverse species share the propensity to form highly selective FG particles
+### Nup98 FG domains from diverse species share the propensity to form highly selective FG particles
 
-If self-assembly of barrier-critical FG domains into selective FG phases is fundamental for NPC function, then one can expect this phenomenon to be conserved throughout the eukaryotic tree of life. We decided to test this assumption by comparing ten different Nup98 FG domains from nine divergent species, namely: Nup98 from human (
+If self-assembly of barrier-critical FG domains into selective FG phases is fundamental for NPC function, then one can expect this phenomenon to be conserved throughout the eukaryotic tree of life. We decided to test this assumption by comparing ten different Nup98 FG domains from nine divergent species, namely: Nup98 from human (Radu et al., 1995), Branchiostoma floridae (representing lancelets), Drosophila melanogaster (representing insects; Presgraves et al., 2003), NPP-10/Nup98 from Caenorhabditis elegans (representing nematodes; Voronina and Seydoux, 2010), the two already mentioned paralogs Nup100 and 116 from Saccharomyces cerevisiae (representing fungi; Wente et al., 1992), Dictyostelium discoideum Nup220 (representing amoebas), Arabidopsis thaliana Nup98B (representing plants; Tamura et al., 2010), the macronuclear MacNup98A from Tetrahymena thermophila (representing ciliates; Iwamoto et al., 2009) as well as Nup158 from Trypanosoma brucei (representing euglenozoans/excavates; DeGrasse et al., 2009). Criteria for this selection had been a wide sampling of species and sequence diversity, a preference for well-studied model organisms, and exclusion of FG domains shorter than 400 residues. The resulting selection covered all major eukaryotic clades (See Figure 5A), with the exception of Rhizaria, where genome analysis has lagged far behind and only Nup98s with apparently short FG domains were listed in databases at the time of our analysis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig5-v1.jpg)
 
-**Figure 5.:** (A) This study analyses ten Nup98 FG domains from nine species. Cartoon illustrates their positions within the eukaryotic tree of life (adapted from Keeling et al., 2005). See Supplementary file 2 for complete sequences. LCEA denotes the position of the last common ancestor to all eukaryotes. (B) Indicated His-tagged FG domains (30 µg each) were immobilized on 30 µl PEG-passivated Ni(ii) chelate beads and rotated for 2 hr at 4°C with 1 µM untagged human Importin β (400 µl). Bound prey and immobilized baits were co-eluted with SDS/Imidazol and analysed by SDS-PAGE/Coomassie-staining. Note the incomplete elution of the Saccharomyces Nup116 and Dictyostelium Nup220 FG domains. Phenyl-Sepharose served as a positive control (Ribbeck and Görlich, 2002). Binding was in 25 mM Tris/HCl pH 7.5, 100 mM NaCl, 1 mM MgCl2, 0.5% PEG4000, 5 mM DTT.DOI: http://dx.doi.org/10.7554/eLife.04251.009
+**Figure 5.:** (A) This study analyses ten Nup98 FG domains from nine species. Cartoon illustrates their positions within the eukaryotic tree of life (adapted from Keeling et al., 2005). See Supplementary file 2 for complete sequences. LCEA denotes the position of the last common ancestor to all eukaryotes. (B) Indicated His-tagged FG domains (30 µg each) were immobilized on 30 µl PEG-passivated Ni(ii) chelate beads and rotated for 2 hr at 4°C with 1 µM untagged human Importin β (400 µl). Bound prey and immobilized baits were co-eluted with SDS/Imidazol and analysed by SDS-PAGE/Coomassie-staining. Note the incomplete elution of the Saccharomyces Nup116 and Dictyostelium Nup220 FG domains. Phenyl-Sepharose served as a positive control (Ribbeck and Görlich, 2002). Binding was in 25 mM Tris/HCl pH 7.5, 100 mM NaCl, 1 mM MgCl2, 0.5% PEG4000, 5 mM DTT.
 
 As a first step, we constructed bacterial expression vectors, and recombinantly expressed, purified, and immobilized all ten Nup98 domains. We observed that all of them bound human Importin β specifically and to a similar extend (Figure 5B). This suggests that the mode of FG domain⋅NTR-interaction has not changed dramatically during eukaryotic evolution.
 
-We next extended our analysis of spontaneous FG phase formation to the entire set of Nup98 FG domains. We observed that all of them showed the same readiness to phase-separate and form FG particles as the ScNup100 FG domain (
+We next extended our analysis of spontaneous FG phase formation to the entire set of Nup98 FG domains. We observed that all of them showed the same readiness to phase-separate and form FG particles as the ScNup100 FG domain (Figures 6 and 7). The size distribution of particles differed between the various FG domains, which perhaps reflects different particle seeding and growth rates. But otherwise, the particles were mostly spherical and showed a rather even intra-particle FG domain distribution. In this species comparison, they were also remarkably similar in their intra-particle FG domain concentration (average 250 mg/ml, range 175–350 mg/ml; see Table 1). Furthermore, not in a single case did the critical FG domain concentration for the phase-separation exceed 1 µM or 50 µg/ml, even when FG domains were O-glycosylated (Table 1; see also Labokha et al., 2013). Remember that the local Nup98 FG domain concentration at NPCs should be at least 50 times higher, even if one assumes that the domains initially do not interact. Thus, a phase-separation of Nup98 FG domains into selective FG hydrogels should be thermodynamically highly favoured for the stoichiometry settings of authentic NPCs. Moreover, the striking conservation of the underlying biophysical properties throughout the eukaryotic kingdom can be taken as a very strong argument for a fundamental functional relevance.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig6-v1.jpg)
 
-**Figure 6.:** The indicated Nup98 FG domains were studied. Representative repeat sequences are shown in single letter code (see Supplementary file 2 for complete sequences). Particles were formed at 5 µM (HsNup98, TtMacNup98, TbNup158) or 10 µM FG domain concentration (all other FG domains). The suspensions were afterwards supplemented with 3 µM MBP-mCherry and 1 µM ThioflavinT, a diagnostic dye for the presence of amyloid-like cross-β-structures. Particles were detected based on exclusion of MBP-mCherry. ThioflavinT was excited at 405 nm and detected in a 460–500 nm window. Graphs show quantitations for the measured signals (gray value scales). ScNup100 FG particles gave the strongest signal. For Table 1, all Thioflavin signals were normalized to the Nup100 signal.DOI: http://dx.doi.org/10.7554/eLife.04251.006
+**Figure 6.:** The indicated Nup98 FG domains were studied. Representative repeat sequences are shown in single letter code (see Supplementary file 2 for complete sequences). Particles were formed at 5 µM (HsNup98, TtMacNup98, TbNup158) or 10 µM FG domain concentration (all other FG domains). The suspensions were afterwards supplemented with 3 µM MBP-mCherry and 1 µM ThioflavinT, a diagnostic dye for the presence of amyloid-like cross-β-structures. Particles were detected based on exclusion of MBP-mCherry. ThioflavinT was excited at 405 nm and detected in a 460–500 nm window. Graphs show quantitations for the measured signals (gray value scales). ScNup100 FG particles gave the strongest signal. For Table 1, all Thioflavin signals were normalized to the Nup100 signal.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig7-v1.jpg)
 
-**Figure 7.:** Particles were formed as described in Figure 6, followed by the addition of either 1 µM NTF2-Atto488 or Impβ•IBB-GFP and 3 µM mCherry as active and passive permeation probes, respectively. The experimental setup was as in Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.04251.007
+**Figure 7.:** Particles were formed as described in Figure 6, followed by the addition of either 1 µM NTF2-Atto488 or Impβ•IBB-GFP and 3 µM mCherry as active and passive permeation probes, respectively. The experimental setup was as in Figure 2A.
 
-## Nup98 FG phases may or may not rely on cross-β structures
+**Table 1.**
+ Key descriptors of FG particle constitution
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Molecular weight*</th>
+      <th rowspan="2">Number of residues*</th>
+      <th rowspan="2">Number of FG motifs*</th>
+      <th colspan="3">Estimated critical concentration†</th>
+      <th rowspan="2">Estimated intra-particle concentration‡</th>
+      <th rowspan="2">NQ-content*</th>
+      <th rowspan="2">Relative Thioflavin-T signal§</th>
+    </tr>
+    <tr>
+      <th colspan="2">FG domain</th>
+      <th>FG motifs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Homo sapiens HsNup98</td>
+      <td>≈49 kDa</td>
+      <td>500</td>
+      <td>39</td>
+      <td>≈25 nM</td>
+      <td>≈1 µg/ml</td>
+      <td>≈1 µM</td>
+      <td>≈175 mg/ml</td>
+      <td>11%</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Branchiostoma floridae BfNup98</td>
+      <td>≈46 kDa</td>
+      <td>479</td>
+      <td>40</td>
+      <td>≈20 nM</td>
+      <td>≈1 µg/ml</td>
+      <td>≈1 µM</td>
+      <td>≈200 mg/ml</td>
+      <td>8%</td>
+      <td>8%</td>
+    </tr>
+    <tr>
+      <td>Branchiostoma floridae BfNup98 + GlcNAc</td>
+      <td>≈55 kDa</td>
+      <td>479</td>
+      <td>40</td>
+      <td>≈150 nM</td>
+      <td>≈10 µg/ml</td>
+      <td>≈6 µM</td>
+      <td>ND</td>
+      <td>8%</td>
+      <td>ND#</td>
+    </tr>
+    <tr>
+      <td>Drosophila melongaster DmNup98</td>
+      <td>≈56 kDa</td>
+      <td>581</td>
+      <td>46</td>
+      <td>≈200 nM</td>
+      <td>≈10 µg/ml</td>
+      <td>≈9 µM</td>
+      <td>≈300 mg/ml</td>
+      <td>10%</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>Caenorhabditis elegans CeNup98</td>
+      <td>≈48 kDa</td>
+      <td>494</td>
+      <td>36</td>
+      <td>≈700 nM</td>
+      <td>≈40 µg/ml</td>
+      <td>≈25 µM</td>
+      <td>≈300 mg/ml</td>
+      <td>18%</td>
+      <td>52%</td>
+    </tr>
+    <tr>
+      <td>Saccharomyces cerevisiae ScNup100</td>
+      <td>≈58 kDa</td>
+      <td>578</td>
+      <td>43</td>
+      <td>≈175 nM</td>
+      <td>≈10 µg/ml</td>
+      <td>≈7.5 µM</td>
+      <td>≈275 mg/ml</td>
+      <td>28%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Saccharomyces cerevisiae ScNup116</td>
+      <td>≈65 kDa</td>
+      <td>737</td>
+      <td>47</td>
+      <td>≈700 nM</td>
+      <td>≈50 µg/ml</td>
+      <td>≈33 µM</td>
+      <td>≈350 mg/ml</td>
+      <td>26%</td>
+      <td>78%</td>
+    </tr>
+    <tr>
+      <td>Dictyostelium discoideum DdNup220</td>
+      <td>≈68 kDa</td>
+      <td>719</td>
+      <td>56</td>
+      <td>≈125 nM</td>
+      <td>≈10 µg/ml</td>
+      <td>≈7 µM</td>
+      <td>≈300 mg/ml</td>
+      <td>12%</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis thaliana AtNup98B</td>
+      <td>≈66 kDa</td>
+      <td>668</td>
+      <td>52</td>
+      <td>≈25 nM</td>
+      <td>≈1 µg/ml</td>
+      <td>≈1.5 µM</td>
+      <td>≈200 mg/ml</td>
+      <td>13%</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Tetrahymena thermophila TtMacNup98A</td>
+      <td>≈61 kDa</td>
+      <td>666</td>
+      <td>42</td>
+      <td>≈25 nM</td>
+      <td>≈1 µg/ml</td>
+      <td>≈1 µM</td>
+      <td>≈175 mg/ml</td>
+      <td>18%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Trypanosoma brucei TbNup158</td>
+      <td>≈50 kDa</td>
+      <td>565</td>
+      <td>58</td>
+      <td>≈300 nM</td>
+      <td>≈15 µg/ml</td>
+      <td>≈17.5 µM</td>
+      <td>≈250 mg/ml</td>
+      <td>12%</td>
+      <td>2%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All values are given for full-length FG domains (including GLEBS domains). The molecular weight of glycosylated BfNup98 was estimated by SDS-PAGE.†The critical concentrations for phase separation were estimated as described in Figure 1C and the methods section.‡Intra-particle FG domain concentrations were estimated as described in Figure 1F and the methods section.§Thioflavin-T signals are normalised to the ScNup100 Thioflavin-T signal; also see Figure 6.#Experiments with macroscopic hydrogels suggest that the Thioflavin-T signal of glycosylated BfNup98 FG particles is even lower than the observed signal for the non-glycosylated BfNup98 FG particles._
+
+### Nup98 FG phases may or may not rely on cross-β structures
 
 As expected from the extreme evolutionary distances separating the host species, the sequences of the ten analysed Nup98 FG domains are actually rather diverse. They differ, for example, quite widely in their NQ-content (Table 1; Supplementary file 1), i.e., in a parameter that has been linked to the formation of amyloid-like structures, also in NQ-rich hydrogels (Alberti et al., 2009; Ader et al., 2010). To test if these sequence differences also translate into different contents of amyloid-like cross-β sheets, we stained the particles with ThioflavinT—a compound whose 480 nm fluorescence emission is enhanced upon binding to NQ-rich and other amyloid-like cross-β structures (Vassar and Culling, 1959; Khurana et al., 2005). Particles derived from the most NQ-rich FG domains, Nup100 (28%) and Nup116 (26%) showed indeed by far the strongest ThioflavinT signal, supporting that cross-β structures can occur not only in amyloid fibres, but also in self-assembled FG particles (Figure 6 and Table 1). The NQ content alone is, however, not necessarily a reliable predictor for the presence of cross-β sheets. The C. elegans Nup98 and the Tetrahymena MacNup98A FG domains, for example, have a very similar NQ-fraction (18%), yet we observed a clear ThioflavinT signal only for C. elegans FG particles. The Tetrahymena MacNup98A FG particles were essentially ThioflavinT-negative, perhaps because their high glycine content counteracts β-sheet formation and/or stability. FG particles from the other species also showed at most a weak ThioflavinT signature. Taken together, this suggests that particles from the selected FG domains sample different modes of inter-FG repeat interactions, and we were curious to find out if this would translate into different permselectivities.
 
-## Conserved permselectivity of Nup98 FG phases from diverse species
+### Conserved permselectivity of Nup98 FG phases from diverse species
 
 Strikingly, we observed that Nup98 FG particles from all ten Nup98 FG domains efficiently excluded not only the still rather large MBP-mCherry fusion (≈75 kDa) (Figure 6) but also rejected the far smaller mCherry (≈25 kDa) (Figure 7). At the same time, these FG phases allowed a high or very high accumulation of NTF2 (Figure 7). In each case, the partition coefficient of NTF2 was at least 1000 times higher than that of mCherry.
 
-A FRAP analysis revealed that the solid state of the Nup100 FG particles and low mobility of the phase-separated Nup100 FG domain were no exception but also applied to other FG particles, for example, formed by the evolutionary very distant
+A FRAP analysis revealed that the solid state of the Nup100 FG particles and low mobility of the phase-separated Nup100 FG domain were no exception but also applied to other FG particles, for example, formed by the evolutionary very distant Tetrahymena MacNup98A FG domain (Figure 8). Our analysis also revealed an extremely rapid exchange of NTF2 between the TtMacNup98A particles and the surrounding buffer, as well as a very high mobility of NTF2 inside these particles.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig8-v1.jpg)
 
-**Figure 8.:** TtMacNup98A FG particles were formed with 5 µM unlabeled and 25 nM Atto390-labeled TtMacNup98A FG domain and challenged with 1 µM NTF2-Atto488. 5 min after NTR addition, particles were photobleached at 405 and 488 nm in one hemisphere, and fluorescence recovery of the tracer and NTR followed over time.DOI: http://dx.doi.org/10.7554/eLife.04251.011
+**Figure 8.:** TtMacNup98A FG particles were formed with 5 µM unlabeled and 25 nM Atto390-labeled TtMacNup98A FG domain and challenged with 1 µM NTF2-Atto488. 5 min after NTR addition, particles were photobleached at 405 and 488 nm in one hemisphere, and fluorescence recovery of the tracer and NTR followed over time.
 
-## Sequence features of Nup98 FG domains
+### Sequence features of Nup98 FG domains
 
-We observed that aqueous Nup98 FG domain solutions spontaneously separate into FG phases with just the ‘right’ FG domain concentration and structure for creating a barrier with NPC-typical permselectivity. This held true for Nup98 FG domains from nine evolutionary very distant species—a clear indication for a strong evolutionary pressure to maintain the underlying physicochemical properties. As an additional indication, we noticed extreme sequence conservation amongst vertebrates, covering ≈400 million years of evolution. The Nup98 FG domains from human and the fish
+We observed that aqueous Nup98 FG domain solutions spontaneously separate into FG phases with just the ‘right’ FG domain concentration and structure for creating a barrier with NPC-typical permselectivity. This held true for Nup98 FG domains from nine evolutionary very distant species—a clear indication for a strong evolutionary pressure to maintain the underlying physicochemical properties. As an additional indication, we noticed extreme sequence conservation amongst vertebrates, covering ≈400 million years of evolution. The Nup98 FG domains from human and the fish Lepisosteus oculatus, for example, share ≈70% identical residues, which is close to the ≈75% identities between the corresponding globular autoproteolytic Nucleoporin 2 domains (Figure 9). Moreover, most of the observed exchanges were just conservative permutations between T, S, A, and N within the spacers, while spacer lengths and the type of FG motif at a given position remained extremely conserved. The Nup98 FG domain is thus an exception from the rule that intrinsically disordered domains change rapidly during evolution (Denning and Rexach, 2007). In fact, this indicates that the Nup98 FG domain engages in critical interactions along its entire sequence and that deviations from this optimal sequence are not well tolerated.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig9-v1.jpg)
 
-**Figure 9.:** Nup98 from human (GI: 530395413), the frog Xenopus tropicalis (GI: 523580018) and the fish Lepisosteus oculatus (GI: 573879996) were aligned. FG motifs are in bold; deviations from the human sequence are marked in yellow. The domain structure is annotated. Unlike typical intrinsically disordered domains, the Nup98 FG domain shows a similar conservation (≈70% identity) as the globular, folded nucleoporin2 domain (≈75% identity). The majority of exchanges between the FG domains are very conservative, that is mostly permutations between T, S, N, A, and to a lesser extent, with G. Please also note that many exchanges from the human sequence are identical in frog and fish, further supporting the notion of slow evolution.DOI: http://dx.doi.org/10.7554/eLife.04251.012
+**Figure 9.:** Nup98 from human (GI: 530395413), the frog Xenopus tropicalis (GI: 523580018) and the fish Lepisosteus oculatus (GI: 573879996) were aligned. FG motifs are in bold; deviations from the human sequence are marked in yellow. The domain structure is annotated. Unlike typical intrinsically disordered domains, the Nup98 FG domain shows a similar conservation (≈70% identity) as the globular, folded nucleoporin2 domain (≈75% identity). The majority of exchanges between the FG domains are very conservative, that is mostly permutations between T, S, N, A, and to a lesser extent, with G. Please also note that many exchanges from the human sequence are identical in frog and fish, further supporting the notion of slow evolution.
 
-With greater evolutionary distance, differences in the preferred FG sequence context and inter-FG spacer compositions became evident. Ciliates, for example, prefer GLFG motifs, fungi SLFG or GLFG, plants PFG, PAFG, or xFG and Trypanosomes GGFGQ motifs (Table 2). Likewise, fungi prefer very NQ-rich inter-FG spacers, lancelets very T-rich, and trypanosomes very GA-rich spacers.10.7554/eLife.04251.013Table 2.Sequence features of the studied FG domainsDOI: http://dx.doi.org/10.7554/eLife.04251.013FG motif density (occurrence per 100 aa).Hs 98Bf 98Dm 98Ce 98Sc 100Sc 116Dd 220At 98BTt Mac98ATb 158All FG dipeptides7.88.47.97.37.46.47.87.86.310.3(G/A)FG2.41.62.10.60.71.20.81.90.11.6(S/T)FG1.21.90.71.01.20.20.31.20.40.2GLFG1.62.71.02.21.92.73.20.04.00.0SLFG0.40.40.92.22.10.31.10.10.10.0PFG0.80.60.50.20.50.51.51.60.10.7PAFG0.00.00.70.00.00.10.01.20.00.0GFGQ0.00.00.00.00.00.00.00.00.07.8Other FG1.41.22.01.11.01.40.91.81.60.0Bold data represents dominant FG motifsFraction of hydrophobic and charged residues (w/o GLEBS domains; in %).Hs 98Bf 98Dm 98Ce 98Sc 100Sc 116Dd 220At 98BTt Mac98ATb 158FILVM17161614171514161613FILVMP21192218201821262019DE0.40.00.50.00.20.00.00.30.00.2RK1.61.71.71.62.31.80.10.70.61.8Amino acid composition of the spacer regions (i.e. FG domains w/o FG motifs and GLEBS domains; in %).Hs 98Bf 98Dm 98Ce 98Sc 100Sc 116Dd 220At 98BTt Mac98ATb 158T1625141111918131210S1157131611111913G1013999101362224A7716947671019N63410191326101Q5568913107811P4374347956Bold data represents dominant amino acids
+With greater evolutionary distance, differences in the preferred FG sequence context and inter-FG spacer compositions became evident. Ciliates, for example, prefer GLFG motifs, fungi SLFG or GLFG, plants PFG, PAFG, or xFG and Trypanosomes GGFGQ motifs (Table 2). Likewise, fungi prefer very NQ-rich inter-FG spacers, lancelets very T-rich, and trypanosomes very GA-rich spacers.
 
-At this point, we wondered if Nup98 FG domain sequences have anything in common that could possibly explain their unique biophysical properties. To achieve the best possible sampling, we performed exhaustive database searches and identified 666 sequences that matched several stringent criteria for representing Nup98 FG domains (
+**Table 2.**
+ Sequence features of the studied FG domains
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="11">FG motif density (occurrence per 100 aa).</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Hs 98</th>
+      <th>Bf 98</th>
+      <th>Dm 98</th>
+      <th>Ce 98</th>
+      <th>Sc 100</th>
+      <th>Sc 116</th>
+      <th>Dd 220</th>
+      <th>At 98B</th>
+      <th>Tt Mac98A</th>
+      <th>Tb 158</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All FG dipeptides</td>
+      <td>7.8</td>
+      <td>8.4</td>
+      <td>7.9</td>
+      <td>7.3</td>
+      <td>7.4</td>
+      <td>6.4</td>
+      <td>7.8</td>
+      <td>7.8</td>
+      <td>6.3</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>(G/A)FG</td>
+      <td>2.4</td>
+      <td>1.6</td>
+      <td>2.1</td>
+      <td>0.6</td>
+      <td>0.7</td>
+      <td>1.2</td>
+      <td>0.8</td>
+      <td>1.9</td>
+      <td>0.1</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>(S/T)FG</td>
+      <td>1.2</td>
+      <td>1.9</td>
+      <td>0.7</td>
+      <td>1.0</td>
+      <td>1.2</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>1.2</td>
+      <td>0.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>GLFG</td>
+      <td>1.6</td>
+      <td>2.7</td>
+      <td>1.0</td>
+      <td>2.2</td>
+      <td>1.9</td>
+      <td>2.7</td>
+      <td>3.2</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>SLFG</td>
+      <td>0.4</td>
+      <td>0.4</td>
+      <td>0.9</td>
+      <td>2.2</td>
+      <td>2.1</td>
+      <td>0.3</td>
+      <td>1.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>PFG</td>
+      <td>0.8</td>
+      <td>0.6</td>
+      <td>0.5</td>
+      <td>0.2</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>1.5</td>
+      <td>1.6</td>
+      <td>0.1</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>PAFG</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>1.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>GFGQ</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>Other FG</td>
+      <td>1.4</td>
+      <td>1.2</td>
+      <td>2.0</td>
+      <td>1.1</td>
+      <td>1.0</td>
+      <td>1.4</td>
+      <td>0.9</td>
+      <td>1.8</td>
+      <td>1.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td colspan="11">Bold data represents dominant FG motifs</td>
+    </tr>
+  </tbody>
+</table>
+
+At this point, we wondered if Nup98 FG domain sequences have anything in common that could possibly explain their unique biophysical properties. To achieve the best possible sampling, we performed exhaustive database searches and identified 666 sequences that matched several stringent criteria for representing Nup98 FG domains (Figure 10). Analysis of the sequences indeed revealed several features that appear conserved across all eukaryotic clades, namely: a rather constant number of FG dipeptide motifs per domain (median 43 ± 6), a similar FG motif density (one FG motif per 12.5 ± 0.7 residues) and domain-length (median 549 ± 87 residues per FG domain), as well as a very strong bias for G, T, S, A, N, Q, and P in the inter-FG spacers (Figure 10).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig10-v1.jpg)
 
-**Figure 10.:** (A) The Nucleoporin2 domains of human Nup98/96 (GI: 56549643), Arabidopis thaliana Nup98A (GI: 22329468), and Tetrahymena thermophila MicNup98B (GI: 289623519) were used as BLAST templates to identify further Nup98 homologues in the non-redundant NCBI protein database. The 913 sequences identified in all three searches were then analysed further as subsequently described. (B) Taxonomic classification of identified full-length Nup98 candidates. (C) Cartoon illustrates domain structure of a canonical Nup98-Nup96 fusion protein that includes an FG repeat domain, an embedded Gle2p-binding site (GLEBS domain), an intervening domain, the Nucleoporin2 domain, as well as the Nup96 part. The number of Nup98 candidates that comprise a given module is written underneath. (D) FG domains included residues from translation start till the last FG dipeptide but excluded the GLEBS domain (as defined by alignment with the ScNup116 GLEBS domain). For subsequent analyses, only the 666 FG domains with 400–1000 residues were considered. The histogram illustrates the FG dipeptide density distribution with a median of 9 FG dipeptides per 100 residues (or one FG dipeptide per 11 residues). Outliers to higher densities (>10 FG/100 residues) mainly represent domains dominated by less hydrophobic FG motifs (e.g. GFGQ motifs) than the often dominating LFG motifs. (E) Average amino acid composition of Nup98 FG domains and corresponding standard deviations. Note that the inter FG spacers are dominated by G, T, S, A, N, Q, and P, while F and L dominate the hydrophobic residues. F shows the smallest coefficient of variation.DOI: http://dx.doi.org/10.7554/eLife.04251.014
+**Figure 10.:** (A) The Nucleoporin2 domains of human Nup98/96 (GI: 56549643), Arabidopis thaliana Nup98A (GI: 22329468), and Tetrahymena thermophila MicNup98B (GI: 289623519) were used as BLAST templates to identify further Nup98 homologues in the non-redundant NCBI protein database. The 913 sequences identified in all three searches were then analysed further as subsequently described. (B) Taxonomic classification of identified full-length Nup98 candidates. (C) Cartoon illustrates domain structure of a canonical Nup98-Nup96 fusion protein that includes an FG repeat domain, an embedded Gle2p-binding site (GLEBS domain), an intervening domain, the Nucleoporin2 domain, as well as the Nup96 part. The number of Nup98 candidates that comprise a given module is written underneath. (D) FG domains included residues from translation start till the last FG dipeptide but excluded the GLEBS domain (as defined by alignment with the ScNup116 GLEBS domain). For subsequent analyses, only the 666 FG domains with 400–1000 residues were considered. The histogram illustrates the FG dipeptide density distribution with a median of 9 FG dipeptides per 100 residues (or one FG dipeptide per 11 residues). Outliers to higher densities (>10 FG/100 residues) mainly represent domains dominated by less hydrophobic FG motifs (e.g. GFGQ motifs) than the often dominating LFG motifs. (E) Average amino acid composition of Nup98 FG domains and corresponding standard deviations. Note that the inter FG spacers are dominated by G, T, S, A, N, Q, and P, while F and L dominate the hydrophobic residues. F shows the smallest coefficient of variation.
 
-A comparison of typical intrinsically disordered (IDP) regions (as represented in the DisProt database;
+A comparison of typical intrinsically disordered (IDP) regions (as represented in the DisProt database; Sickmeier et al., 2007) and globular proteins (as represented by the PDB database) revealed that Nup98 FG domains are very distinct from these two domain categories (Figure 11). They have far fewer charged residues (median 2.5 ± 0.4%) than either average IDP regions (28 ± 7%) or globular proteins (24 ± 3%). They are clearly more hydrophobic than typical IDP regions and, in fact, comparably hydrophobic as globular proteins. Thus, the Nup98 FG domains should have a similar potential to bury hydrophobic side chains from water as globular proteins. In contrast to the latter however, this does not result in a globular fold, but in strong inter-FG repeat cohesion. Taken together, the strong selection against charges and maintenance of hydrophobicity is well in line with our observation that Nup98 FG domains experience water as a “poor solvent” and consequently phase-separate from even rather dilute solutions. The evolutionary conservation of the underlying sequence features suggests again a fundamental functional relevance.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig11-v1.jpg)
 
-**Figure 11.:** Analysis was similar to Uversky et al. (2000), the differences being (i) that we considered not the net charge, but the total fraction of charged residues and (ii) we used a more strictly defined hydrophobicity scale that is not biased by globular protein structures. For each protein sequence, the mean fraction of charged residues was determined by counting D, E, K, and R and dividing this sum by the sequence length. Mean hydrophobicity was calculated according to a scale based on partitioning of Nα-acetyl-amino acid amides between 1-octanol and water at neutral pH (given in Table 2 in Fauchere and Pliska, 1983). For clarity, we re-scaled their numbers linearly to range between 0 and 1, and thus used the following parameters: (R, 0); (K, 0.006); (D, 0.012); (E, 0.113); (N, 0.132); (Q, 0.242); (S, 0.298); (G, 0.31); (H, 0.35); (T, 0.39); (A, 0.405); (P, 0.46); (Y, 0.604); (V, 0.684); (M, 0.687); (C, 0.782); (L, 0.831); (F, 0.859); (I, 0.862); (W, 1). The brightness in the heat maps reflects the number of proteins in a given regime of the plot. (A) 667 intrinsically disordered protein (IDP) regions were extracted from the DisProt database (Sickmeier et al., 2007) and analysed as described above. Note their wide distribution in the plot, their high content of charges residues and low hydrophobicity. (B) Analysis of 34,551 non-redundant protein sequence entries from the PDB (Bernstein et al., 1978), representing mostly globular, folded proteins. Note that these sequences are on average less charged and considerably more hydrophobic than the bulk of IDPs. (C) Analysis of the 666 identified Nup98 FG domains (excluding the GLEBS domain). Despite also being intrinsically disordered, they strongly cluster in a very narrow region with extremely very low charge density and a hydrophobicity very close to globular proteins. The few outliers with slightly less hydrophobicity represent NQ-rich sequences and reflect the facts (i) that N and Q are more hydrophilic than other typical inter-FG spacer residues (A, T, S, G, P) and (ii) probably that NQ-rich stretches contribute to cohesiveness by conferring very hydrophilic (cross-β) contacts (Ader et al., 2010). (D) For direct comparison, plots A (in red), B (in blue), and C (in green) were overlaid in a single plot.DOI: http://dx.doi.org/10.7554/eLife.04251.015
+**Figure 11.:** Analysis was similar to Uversky et al. (2000), the differences being (i) that we considered not the net charge, but the total fraction of charged residues and (ii) we used a more strictly defined hydrophobicity scale that is not biased by globular protein structures. For each protein sequence, the mean fraction of charged residues was determined by counting D, E, K, and R and dividing this sum by the sequence length. Mean hydrophobicity was calculated according to a scale based on partitioning of Nα-acetyl-amino acid amides between 1-octanol and water at neutral pH (given in Table 2 in Fauchere and Pliska, 1983). For clarity, we re-scaled their numbers linearly to range between 0 and 1, and thus used the following parameters: (R, 0); (K, 0.006); (D, 0.012); (E, 0.113); (N, 0.132); (Q, 0.242); (S, 0.298); (G, 0.31); (H, 0.35); (T, 0.39); (A, 0.405); (P, 0.46); (Y, 0.604); (V, 0.684); (M, 0.687); (C, 0.782); (L, 0.831); (F, 0.859); (I, 0.862); (W, 1). The brightness in the heat maps reflects the number of proteins in a given regime of the plot. (A) 667 intrinsically disordered protein (IDP) regions were extracted from the DisProt database (Sickmeier et al., 2007) and analysed as described above. Note their wide distribution in the plot, their high content of charges residues and low hydrophobicity. (B) Analysis of 34,551 non-redundant protein sequence entries from the PDB (Bernstein et al., 1978), representing mostly globular, folded proteins. Note that these sequences are on average less charged and considerably more hydrophobic than the bulk of IDPs. (C) Analysis of the 666 identified Nup98 FG domains (excluding the GLEBS domain). Despite also being intrinsically disordered, they strongly cluster in a very narrow region with extremely very low charge density and a hydrophobicity very close to globular proteins. The few outliers with slightly less hydrophobicity represent NQ-rich sequences and reflect the facts (i) that N and Q are more hydrophilic than other typical inter-FG spacer residues (A, T, S, G, P) and (ii) probably that NQ-rich stretches contribute to cohesiveness by conferring very hydrophilic (cross-β) contacts (Ader et al., 2010). (D) For direct comparison, plots A (in red), B (in blue), and C (in green) were overlaid in a single plot.
 
-## Effect of hexanediols on FG phase-separation
+### Effect of hexanediols on FG phase-separation
 
 Early evidence for the importance of hydrophobic contacts in maintaining the permeability barrier of authentic NPCs came from the use of 7% (wt/vol) trans-cyclohexane 1,2 diol to interfere with such interactions in semi-permeabilised HeLa cells. This treatment collapsed the NPC barrier and allowed rapid nucleocytoplasmic equilibration of an MBP reporter, which could be reversed by removal of the reagent (Ribbeck and Görlich, 2002). Later, similar effects of n-hexane 1,6 diol on the S. cerevisiae NPC barrier were published, whereas ethanol appeared to have little direct consequence on passive nuclear influx of cytoplasmic reporters (Shulga and Goldfarb, 2003).
 
-The effect of the hexanediols was attributed to a reversible disruption of inter-FG repeat cohesion (
+The effect of the hexanediols was attributed to a reversible disruption of inter-FG repeat cohesion (Ribbeck and Görlich, 2002; Patel et al., 2007). Hence, one would expect that hexanediols should also interfere with the formation of FG phases. Figure 12 shows that trans-1,2-cyclohexanediol or 1,6 hexanediol indeed effectively suppressed the assembly of S. cerevisiae Nup116 and Tetrahymena Mac98A FG particles, while ethanol had no disruptive effect. Taken together, these findings further affirm the very close relationship between authentic NPCs and the Nup98 FG phases described in this work.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig12-v1.jpg)
 
-**Figure 12.:** FG particles were assembled in a volume of 200 µl with 10 µM ScNup116 (A) or TtMacNup98A (B) FG domain in the presence of increasing amounts of trans-1,2-cyclohexanediol, 1,6-hexanediol or ethanol. After 60 min of incubation, formed particles were collected as pellets in a 10-min 20,000×g centrifugation step. They were analysed together with the soluble supernatants by SDS-PAGE. Both hexanediols clearly disrupted the FG particles, though TtMacNup98A FG particles appear slightly more resistant than ScNup116 FG particles (consistent with the lower saturation concentration of the Mac98A FG domain). In contrast, ethanol had no disruptive effect, but rather precipitated the FG domains.DOI: http://dx.doi.org/10.7554/eLife.04251.016
+**Figure 12.:** FG particles were assembled in a volume of 200 µl with 10 µM ScNup116 (A) or TtMacNup98A (B) FG domain in the presence of increasing amounts of trans-1,2-cyclohexanediol, 1,6-hexanediol or ethanol. After 60 min of incubation, formed particles were collected as pellets in a 10-min 20,000×g centrifugation step. They were analysed together with the soluble supernatants by SDS-PAGE. Both hexanediols clearly disrupted the FG particles, though TtMacNup98A FG particles appear slightly more resistant than ScNup116 FG particles (consistent with the lower saturation concentration of the Mac98A FG domain). In contrast, ethanol had no disruptive effect, but rather precipitated the FG domains.
 
-## Large cargo domains require multiple NTRs for efficient partitioning into a selective FG phase
+### Large cargo domains require multiple NTRs for efficient partitioning into a selective FG phase
 
-When analysing
+When analysing Tetrahymena MacNup98a FG particles in more detail, we noticed that they accumulated NTF2 very efficiently in their interiors, but arrested the Importin β⋅IBB-GFP complex at their surfaces (Figure 13A). As a similar arrest at real NPCs would be very problematic, we decided to dig deeper into this problem. At first glance, this was reminiscent of macroscopic Xenopus Nup98 FG hydrogels, which were permeable for Importin β-type NTRs only when O-glycosylated with GlcNAc (Labokha et al., 2013). However, since there is no indication for a similar modification in ciliates and as the Tetrahymena Nup98A domain contains far fewer serines and threonines as potential modification sites than its vertebrate counterpart, we also had to consider other possibilities.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig13-v1.jpg)
 
-**Figure 13.:** FG particles (with 5% Atto390-labeled tracer) were formed with 5 µM TtMacNup98A FG domain. CLSM images show how NTR⋅cargo complexes of different sizes and NTR-to-cargo ratios partition between FG phase and bulk solvent. IBB (recognized by Importin β) and M9 (recognized by Transportin, Trn) represent two orthogonal nuclear import signals. See Figure 13—figure supplement 1 and main text for additional information.DOI: http://dx.doi.org/10.7554/eLife.04251.017
+**Figure 13.:** FG particles (with 5% Atto390-labeled tracer) were formed with 5 µM TtMacNup98A FG domain. CLSM images show how NTR⋅cargo complexes of different sizes and NTR-to-cargo ratios partition between FG phase and bulk solvent. IBB (recognized by Importin β) and M9 (recognized by Transportin, Trn) represent two orthogonal nuclear import signals. See Figure 13—figure supplement 1 and main text for additional information.
 
 ![Figure 13—Figure supplement 1.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig13-figsupp1-v1.jpg)
 
-**Figure 13—Figure supplement 1.:** The experiment is identical to the corresponding panels of Figure 13, the only difference being that a larger field and more particles were imaged at a lower resolution. This was done in order to document that the described differences apply to entire particle populations.DOI: http://dx.doi.org/10.7554/eLife.04251.018
+**Figure 13—Figure supplement 1.:** The experiment is identical to the corresponding panels of Figure 13, the only difference being that a larger field and more particles were imaged at a lower resolution. This was done in order to document that the described differences apply to entire particle populations.
 
 Apart from size, there is actually another difference between NTF2 and the Importin β⋅IBB-GFP complex: NTF2 is a species with a ‘pure’ NTR-surface, whereas Importin β also had to ‘squeeze’ the bound IBB-GFP molecule through the meshes of the gel. It is therefore possible that their spontaneous opening is just too slow or energetically too costly to allow an efficient entry.
 
@@ -191,15 +497,15 @@ If this were true, then one would expect that an NTR⋅cargo complex with a smal
 
 At this point, one could still argue that ZsGreen and GFP are different proteins and that differences other than the fraction of exposed cargo surface account for the difference in Importin-mediated particle-entry. In a next step, we therefore used one and the same cargo (an IBB-MBP-GFP-M9 fusion), and just varied the number of bound NTRs. This cargo includes two orthogonal nuclear import signals, the IBB-domain recruiting Importin β (Görlich et al., 1996) and the M9-domain conferring nuclear import by Transportin (Pollard et al., 1996). Figure 13B shows that neither Importin β nor Transportin alone were sufficient to ferry the cargo across the buffer-particle boundary. Yet, when present together on the same cargo molecule, the two importins synergised and mediated efficient influx and strong accumulation of the cargo in the interior of the particles (Figure 13B).
 
-Given that the
+Given that the Tetrahymena MacNup98A FG particles are particularly tight towards inert macromolecules, it is possible that they exaggerate the inhibitory effect of an exposed cargo domain on barrier-passage. This effect is, however, also evident (with somewhat shifted size limits) for particles from other Nup98 FG domains. S. cerevisiae Nup116 FG particles, for example, brightly accumulate NTF2 and the Importin β⋅IBB-Atto488 complex (Figure 14A). The accumulation was already weaker for the Importin β⋅IBB-GFP complex, while an Importin β⋅IBB-MBP-GFP complex got stuck at the particles' surface. The larger Importin β⋅IBB-ZsGreen complex (with its minimized exposed cargo surface) could again overcome the boundary and accumulated inside. Likewise, the IBB-MBP-GFP-M9 fusion accumulated inside the particles only when Importin β and Transportin were simultaneously bound to this cargo molecule (Figure 14B).
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig14-v1.jpg)
 
-**Figure 14.:** FG particles (with 5% Atto390-labeled tracer) were formed with 10 µM S. cerevisiae Nup116 FG domain. See Figure 13 and main text for additional information.DOI: http://dx.doi.org/10.7554/eLife.04251.019
+**Figure 14.:** FG particles (with 5% Atto390-labeled tracer) were formed with 10 µM S. cerevisiae Nup116 FG domain. See Figure 13 and main text for additional information.
 
 Hence, the self-assembled FG phases very nicely recapitulate a key sorting criterion of authentic NPCs, namely that large cargoes require multiple NTRs and thus a good surface coverage by NTRs for an effective pore passage. In fact, the phenomenon of NTR-cooperation was originally observed with a very similar cargo, namely with an IBB-2xMBP-M9 fusion. This cargo bound well to NPCs in the presence of importin β alone, but rapidly traversed NPC only when both, Importin β as well as Transportin, had been recruited (Ribbeck and Görlich, 2002). Likewise, Tu et al., (2013) recently showed that a single Transportin molecule could confer efficient NPC targeting of a large M9-β-Gal fusion complex, but successful NPC barrier-passage required several Transportin molecules. These remarkable parallels indeed strongly suggest that the permselectivities of in vitro assembled Nup98 FG phases and authentic NPCs are governed by the same mechanistic principles and by functionally equivalent structures.
 
-## Perspectives
+### Perspectives
 
 We found that Nup98 FG domains assemble from (even dilute) aqueous solutions into very protein-rich phases that reject inert molecules ≥25 kDa in size, but at the same time allow influx of far larger NTR-complexes. They even reproduce the multi-NTR requirement for larger cargoes and recapitulate the kinetics of NPC passage. The most straightforward interpretation of these data is that such phases also assemble inside authentic NPCs and account for the permselectivity of nuclear pores, as previously predicted by the selective phase model.
 
@@ -207,11 +513,11 @@ Yet, the concept of cohesive FG repeat interactions as the basis of NPC transpor
 
 The assembly of selective Nup98 FG phases within NPCs should a priori be a thermodynamically highly favoured process because the local FG motif concentration exceeds the critical concentration at least 100-fold and the system should thus be highly over-saturated with respect to an FG phase-separation. Any block of such an assembly would therefore require a masking of the sticky parts, i.e. of thousands of cohesive FG repeat units per NPC. If effective ‘cohesion suppressors’ existed, then they would have to be exceedingly abundant NPC ligands, which only leaves NTRs as possible candidates.
 
-We tested this and observed that NTRs do not block Nup98 FG phase-separation even if present in 10-fold molar excess over FG domain (
+We tested this and observed that NTRs do not block Nup98 FG phase-separation even if present in 10-fold molar excess over FG domain (Figure 15). This is not surprising because (i) NTR⋅FG domain interactions are governed by an extreme multivalency (with ≈40 NTR-binding sites on the FG domain and ≈10 FG-binding sites on importin β; Isgro and Schulten, 2005), and (ii) such multivalency is prone to drive phase-separation (Li et al., 2012)—at least for molar ratios that can be accommodated in the context of NPCs. The tested 10-fold molar excess is probably already far greater than what nuclear pores could possibly hold, because an NPC with 100 anchored FG domains would then be liganded with 1000 NTR molecules (which would at least double the observed mass of an NPC). We consider it, however, possible that NTRs can suppress ectopic FG phase-separation outside NPCs, because there, NTRs are present in an ≈100-fold molar excess over Nup98 FG domains (Hahn and Schlenstedt, 2011; Hülsmann et al., 2012).
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/04251/elife-04251-fig15-v1.jpg)
 
-**Figure 15.:** (A) NTRs do not suppress FG particle formation at molar ratios expected within NPCs. FG particles were formed by dilution of TtMacNup98A to 5 µM (including 5% Atto390-labeled tracer) with Tris-buffered saline containing the indicated concentrations of Importin β. Approximately, 60 s after particle formation, 3 µM mCherry was added. The CLSM images show that FG particles can still form in the presence of a 10-fold molar excess of NTRs. (B) An excess of NTRs does not compromise barrier function. Zoom-ins on the particles indicated in A show that mCherry is excluded in all cases. (C) Importin β increases the critical concentration for FG particle formation only when added in very high excess. FG particles were formed by dilution of TtMacNup98A to 1 µM (including 5% Atto488-labeled tracer) with Tris-buffered saline containing 5 µM Atto565-labeled ZZ-domain and the indicated concentrations of Importin β. After 10 min of incubation, particles were collected by ultra-centrifugation at ≈125,000×g for 1 hr, and the amount of FG domains in the pellet and supernatant analysed by SDS-PAGE. For detection of the labelled FG domains, a Fujifilm FLA-9000 fluorescence imager was used. (D) Unlike Importin β, NTF2 does not influence the critical concentration of FG particle formation. Experimental setup as in (C), with the exception that TtMacNup98A FG particles were formed by dilution with buffer containing the indicated concentrations of NTF2.DOI: http://dx.doi.org/10.7554/eLife.04251.020
+**Figure 15.:** (A) NTRs do not suppress FG particle formation at molar ratios expected within NPCs. FG particles were formed by dilution of TtMacNup98A to 5 µM (including 5% Atto390-labeled tracer) with Tris-buffered saline containing the indicated concentrations of Importin β. Approximately, 60 s after particle formation, 3 µM mCherry was added. The CLSM images show that FG particles can still form in the presence of a 10-fold molar excess of NTRs. (B) An excess of NTRs does not compromise barrier function. Zoom-ins on the particles indicated in A show that mCherry is excluded in all cases. (C) Importin β increases the critical concentration for FG particle formation only when added in very high excess. FG particles were formed by dilution of TtMacNup98A to 1 µM (including 5% Atto488-labeled tracer) with Tris-buffered saline containing 5 µM Atto565-labeled ZZ-domain and the indicated concentrations of Importin β. After 10 min of incubation, particles were collected by ultra-centrifugation at ≈125,000×g for 1 hr, and the amount of FG domains in the pellet and supernatant analysed by SDS-PAGE. For detection of the labelled FG domains, a Fujifilm FLA-9000 fluorescence imager was used. (D) Unlike Importin β, NTF2 does not influence the critical concentration of FG particle formation. Experimental setup as in (C), with the exception that TtMacNup98A FG particles were formed by dilution with buffer containing the indicated concentrations of NTF2.
 
 Alternative models for NPC function, avoiding cohesive interactions as a selectivity principle, have been repeatedly proposed. As we discuss in the following, they lack, however, direct experimental evidence or even collide with experimental observations.
 
@@ -231,9 +537,194 @@ Moreover, a perfect control of transport through the NPC requires not only the p
 
 ## Materials and methods
 
-## DNA constructs, protein expression, and purification
+### DNA constructs, protein expression, and purification
 
-Every protein used in this study was expressed in the E. coli strains BLR or NEB Express. Constructs and purification strategies for the following proteins have been described before: Transportin and NTF2 (Ribbeck and Görlich, 2001), IBB-MBP-mEGFP, IBB-ZsGreen, mCherry, MBP-mCherry (Frey and Görlich, 2009). For all other proteins, new expression vectors have been generated (See Table 3). If required, coding sequences were adapted and optimized for expression in E. coli. This was particularly important for the FG domain from Tetrahymena because this species uses a non-universal genetic code. Sequences and plasmid maps are available on request.10.7554/eLife.04251.021Table 3.Proteins and corresponding bacterial expression constructs used in this studyDOI: http://dx.doi.org/10.7554/eLife.04251.021Protein namePlasmidEncoding forUsed in figuresHsNup98 FGpHBS491His18-HsNup981-499-Cys5B, 6, 7BfNup98 FGpHBS505His18-BfNup981-478-Cys5B, 6, 7DmNup98 FGpHBS503His18-DmNup981-580-Cys5B, 6, 7CeNup98 FGpHBS504His18-CeNup981-493-Cys5B, 6, 7ScNup100 FGpHBS512His18-ScNup1002-580-Cys1B-F, 2, 3A, 5B, 6, 7ScNup100 FGpHBS697His18-ScNup1001-580-Cys4A, 4CScNup116ΔGLEBS FGpHBS514His18-ScNup1162-109,167-715-Cys5B, 6, 7, 12, 13ScNup116 FGpHBS698His18-ScNup1161-736-Cys4BDdNup220 FGpHBS241His14-TEV-DdNup2201-718-Cys5B, 6, 7AtNup98B FGpHBS383His14-TEV-AtNup98B1-668-Cys5B, 6, 7TtMacNup98A FGpHBS418His18-TtMacNup98A1-666-Cys5B, 6, 7, 8, 12, 13, 14, 15TbNup158 FGpHBS249His14-TEV-TbNup1581-565-Cys5B, 6, 7ScNsp1274-601 FGpSF654His10-TEV-ScNsp1274-601-Cys1B-CScImpβpMR676His14-brSUMO-ScKap95p2, 3A, 4, 13, 14, 15A-CHsImpβpICH005His14-scSUMO-HsImpβ5HsTrnpKK006His10-mEGFP-TEV-HsTransportin11B, 13B, 14BHsNTF2pAL239His14-brSUMO-HsNTF22A, 7, 8, 13A, 14A, 15DScIBBpHBS695His14-ZZ-brNEDD8-Srp1p2-63-Cys2A, 13A, 14AScIBB-GFPpSF807His14-TEV-ScSrp1p2-63-mEGFP2A, 3A, 4, 13A, 14AScIBB-MBP-GFPpHBS45His14-TEV-ScSrp1p2-63-MBP-mEGFP2B, 13A, 14AScIBB-MBP-GFP-HsM9pHBS704His14-TEV-ScSrp1p2-63-MBP-mEGFP-hnRNP A1268-30613B, 14BScIBB-ZsGreenpSF881His14-TEV-ScSrp1p2-63-ZsGreen2A, 13A, 14AZZpHBS237His10-ZZ-TEV-Cys1B, 15C-DmCherrypSF846His14-TEV-mCherry7, 15BGFPpHBS349His18-mEGFP5BMBP-mCherrypSF844His14-TEV-MBP-mCherry2A, 4A-B, 4D, 6MBPpSF1911His14-brSUMO-MBPGly260Cys–His61EHsActinpKG017His14-brSUMO-HsβActin4D
+Every protein used in this study was expressed in the E. coli strains BLR or NEB Express. Constructs and purification strategies for the following proteins have been described before: Transportin and NTF2 (Ribbeck and Görlich, 2001), IBB-MBP-mEGFP, IBB-ZsGreen, mCherry, MBP-mCherry (Frey and Görlich, 2009). For all other proteins, new expression vectors have been generated (See Table 3). If required, coding sequences were adapted and optimized for expression in E. coli. This was particularly important for the FG domain from Tetrahymena because this species uses a non-universal genetic code. Sequences and plasmid maps are available on request.
+
+**Table 3.**
+ Proteins and corresponding bacterial expression constructs used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein name</th>
+      <th>Plasmid</th>
+      <th>Encoding for</th>
+      <th>Used in figures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HsNup98 FG</td>
+      <td>pHBS491</td>
+      <td>His18-HsNup981-499-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>BfNup98 FG</td>
+      <td>pHBS505</td>
+      <td>His18-BfNup981-478-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>DmNup98 FG</td>
+      <td>pHBS503</td>
+      <td>His18-DmNup981-580-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>CeNup98 FG</td>
+      <td>pHBS504</td>
+      <td>His18-CeNup981-493-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>ScNup100 FG</td>
+      <td>pHBS512</td>
+      <td>His18-ScNup1002-580-Cys</td>
+      <td>1B-F, 2, 3A, 5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>ScNup100 FG</td>
+      <td>pHBS697</td>
+      <td>His18-ScNup1001-580-Cys</td>
+      <td>4A, 4C</td>
+    </tr>
+    <tr>
+      <td>ScNup116ΔGLEBS FG</td>
+      <td>pHBS514</td>
+      <td>His18-ScNup1162-109,167-715-Cys</td>
+      <td>5B, 6, 7, 12, 13</td>
+    </tr>
+    <tr>
+      <td>ScNup116 FG</td>
+      <td>pHBS698</td>
+      <td>His18-ScNup1161-736-Cys</td>
+      <td>4B</td>
+    </tr>
+    <tr>
+      <td>DdNup220 FG</td>
+      <td>pHBS241</td>
+      <td>His14-TEV-DdNup2201-718-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>AtNup98B FG</td>
+      <td>pHBS383</td>
+      <td>His14-TEV-AtNup98B1-668-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>TtMacNup98A FG</td>
+      <td>pHBS418</td>
+      <td>His18-TtMacNup98A1-666-Cys</td>
+      <td>5B, 6, 7, 8, 12, 13, 14, 15</td>
+    </tr>
+    <tr>
+      <td>TbNup158 FG</td>
+      <td>pHBS249</td>
+      <td>His14-TEV-TbNup1581-565-Cys</td>
+      <td>5B, 6, 7</td>
+    </tr>
+    <tr>
+      <td>ScNsp1274-601 FG</td>
+      <td>pSF654</td>
+      <td>His10-TEV-ScNsp1274-601-Cys</td>
+      <td>1B-C</td>
+    </tr>
+    <tr>
+      <td>ScImpβ</td>
+      <td>pMR676</td>
+      <td>His14-brSUMO-ScKap95p</td>
+      <td>2, 3A, 4, 13, 14, 15A-C</td>
+    </tr>
+    <tr>
+      <td>HsImpβ</td>
+      <td>pICH005</td>
+      <td>His14-scSUMO-HsImpβ</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>HsTrn</td>
+      <td>pKK006</td>
+      <td>His10-mEGFP-TEV-HsTransportin</td>
+      <td>11B, 13B, 14B</td>
+    </tr>
+    <tr>
+      <td>HsNTF2</td>
+      <td>pAL239</td>
+      <td>His14-brSUMO-HsNTF2</td>
+      <td>2A, 7, 8, 13A, 14A, 15D</td>
+    </tr>
+    <tr>
+      <td>ScIBB</td>
+      <td>pHBS695</td>
+      <td>His14-ZZ-brNEDD8-Srp1p2-63-Cys</td>
+      <td>2A, 13A, 14A</td>
+    </tr>
+    <tr>
+      <td>ScIBB-GFP</td>
+      <td>pSF807</td>
+      <td>His14-TEV-ScSrp1p2-63-mEGFP</td>
+      <td>2A, 3A, 4, 13A, 14A</td>
+    </tr>
+    <tr>
+      <td>ScIBB-MBP-GFP</td>
+      <td>pHBS45</td>
+      <td>His14-TEV-ScSrp1p2-63-MBP-mEGFP</td>
+      <td>2B, 13A, 14A</td>
+    </tr>
+    <tr>
+      <td>ScIBB-MBP-GFP-HsM9</td>
+      <td>pHBS704</td>
+      <td>His14-TEV-ScSrp1p2-63-MBP-mEGFP-hnRNP A1268-306</td>
+      <td>13B, 14B</td>
+    </tr>
+    <tr>
+      <td>ScIBB-ZsGreen</td>
+      <td>pSF881</td>
+      <td>His14-TEV-ScSrp1p2-63-ZsGreen</td>
+      <td>2A, 13A, 14A</td>
+    </tr>
+    <tr>
+      <td>ZZ</td>
+      <td>pHBS237</td>
+      <td>His10-ZZ-TEV-Cys</td>
+      <td>1B, 15C-D</td>
+    </tr>
+    <tr>
+      <td>mCherry</td>
+      <td>pSF846</td>
+      <td>His14-TEV-mCherry</td>
+      <td>7, 15B</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>pHBS349</td>
+      <td>His18-mEGFP</td>
+      <td>5B</td>
+    </tr>
+    <tr>
+      <td>MBP-mCherry</td>
+      <td>pSF844</td>
+      <td>His14-TEV-MBP-mCherry</td>
+      <td>2A, 4A-B, 4D, 6</td>
+    </tr>
+    <tr>
+      <td>MBP</td>
+      <td>pSF1911</td>
+      <td>His14-brSUMO-MBPGly260Cys–His6</td>
+      <td>1E</td>
+    </tr>
+    <tr>
+      <td>HsActin</td>
+      <td>pKG017</td>
+      <td>His14-brSUMO-HsβActin</td>
+      <td>4D</td>
+    </tr>
+  </tbody>
+</table>
 
 All NTRs, transport substrates and inert molecules were purified by virtue of N-terminal His-tags and native Ni(II) chelate chromatography. Elution was performed with either imidazole or by on-column protease cleavage (Frey and Görlich, 2014a, 2014b). The tags of all imidazole-eluted proteins were cleaved off in solution with TEV protease, proteins were further purified by gel filtration on a Superdex200 column equilibrated with 44 mM Tris pH 7.5, 290 mM NaCl, 4.4 mM MgCl2, 5 mM DTT, and eventually snap-frozen in liquid nitrogen after addition of 250 mM sucrose.
 
@@ -241,7 +732,7 @@ FG domains were purified using Ni(II) chelate chromatography under denaturing co
 
 The 2-thiopyridine-activated SH-silica matrix was produced by the following steps: (i) modifying macroporous silica (Davisil XWP 1000 Å 35–70 micron [Alltech Grom GmbH, Worms, Germany]) with 2% (vol/vol) 3-glycidoxypropyl-trimethoxysilane (CAS#2530-83-8) in xylene o/n @ 60°C, (ii) washing in xylene, ethanol, and finally water, (iii) reaction with aqueous 0.5 M dithiothreitol buffered with 0.1 M Tris/HCl pH 7.5, o/n, 40°C, under argon, (iv) thorough washing in oxygen-free water, transfer in degassed isopropanol:water (50:50) and reaction with 0.1 M 2,2' dithiodipyridine (CAS#2127-03-9), 0.05 M Tris/HCl pH 7.5 in degassed isopropanol:water (50:50) at 20°C under argon. The matrix was stored after washing in 100% degassed isopropanol at 4°C under argon and transferred to binding buffer immediately prior to use. Covalent chromatography was performed at room temperature. For regeneration, the procedure was repeated at step (iv).
 
-## Estimation of the critical concentrations for FG domain phase-separation
+### Estimation of the critical concentrations for FG domain phase-separation
 
 For estimation of the critical concentrations for phase-separation, FG particles were formed by diluting soluble, unfolded FG domain stocks in 2M GuHCl with TBS (50 mM Tris/HCl pH 7.5, 150 mM NaCl) to a range of FG domain concentrations (10 µM, 5 µM, 2.5 µM, 1.25 µM, 0.6 µM, 0.3 µM, 0.1 µM, 0.06 µM). As a first estimate for the saturation concentration, we used the lowest FG domain concentration that yielded detectable particles in the DLS setup (see Figure 1C). This number was then refined by measuring the concentration of apparent monomers that co-existed with already formed particles.
 

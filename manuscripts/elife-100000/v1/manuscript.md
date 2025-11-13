@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02n96ep67 Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, Affiliated Mental Health Center (ECNU), School of Psychology and Cognitive Science, East China Normal University Shanghai China
-2. https://ror.org/02n96ep67 Institute of Wisdom in China, East China Normal University Shanghai China
-3. https://ror.org/03ej8bw49 Shanghai Changning Mental Health Center Shanghai China
+1. Shanghai Key Laboratory of Mental Health and Psychological Crisis Intervention, Affiliated Mental Health Center (ECNU), School of Psychology and Cognitive Science, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
+2. Institute of Wisdom in China, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
+3. Shanghai Changning Mental Health Center Shanghai China ([ROR:03ej8bw49](https://ror.org/03ej8bw49))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ Taken together, we examined the impact of group identification on collective per
 
 ## Results
 
-## Group identification leads to differences in collective performance
+### Group identification leads to differences in collective performance
 
 We examined the impact of manipulated group identification on increasing intergroup discrimination. First, a repeated-measures ANOVA on group identification revealed a significant interaction between the levels of group identification and the order of rating group identification (F1, 58 = 6.83, p＜0.012, η2p = 0.11; Figure 8C). Post hoc paired t-tests revealed that following the manipulation, participants in the High Group Identification condition reported higher group identification (group identification_2) than those in the Low Group Identification condition (group identification_2) (t58 = 4.83, p < 0.001). This effect was diminished before manipulation (t58 = 1.73, p = 0.090). These results confirmed the effectiveness and validity of our paradigm in inducing different levels of group identification.
 
@@ -43,7 +43,7 @@ Next, we observed significant differences in collective performance between the 
 
 **Figure 1.:** (A) Manipulated group identification led to group differences in collective performance. (B) Group identification was positively correlated with better collective performance. The Pearson’s correlation and its associated analyses were based on the data from group identification_2. *p < 0.05.
 
-## The differences in collective performance are correlated with single-brain activation
+### The differences in collective performance are correlated with single-brain activation
 
 We sought to identify single-brain activations that supported individual performance. First, by performing one-sample t-tests for single-brain activations, we observed significantly increased single-brain activations in the DLPFC (CH4, t59 = 14.54, p < 0.001, false discovery rate [FDR] corrected) and the TPJ (CH1, t59 = 3.89, p = 0.022, FDR corrected). Subsequently, we performed independent t-tests on single-brain activations in channels that exhibited significant results, with group identification levels as the independent variable. The results showed significant differences in single-brain activations between the High and Low Group Identification groups in the DLPFC (CH4, t58 = 2.71, p = 0.015, FDR corrected, Cohen’s d = 0.42) (Figure 2A).
 
@@ -55,15 +55,23 @@ Furthermore, single-brain activations in the DLPFC (CH4) were associated with in
 
 Based on the results mentioned above, the DLPFC (CH4) has been determined as the key neural substrate responsible for individual performance.
 
-## The differences in collective performance are correlated with neural synchronization
+### The differences in collective performance are correlated with neural synchronization
 
 We sought to identify neural synchronization that supported collective performance. First, by performing one-sample t-tests for group neural synchronization (GNS), we observed a significantly increased GNS in the OFC (CH20, t59 = 1.98, p = 0.046, FDR corrected; CH21, t59 = 2.49, p = 0.024, FDR corrected) and the TPJ (CH1, t59 = 2.16, p = 0.030, FDR corrected). Subsequently, independent t-tests were conducted on GNS in the pertinent channels, which revealed that GNS was significantly different between the High and Low Group Identification groups in the OFC (CH21, t58 = 2.21, p = 0.037, FDR corrected, Cohen’s d = 0.58) (Figure 3). A permutation test confirmed that the observed interactive effects on GNS in real groups were outside the 95% CI of a null distribution comprising 1000 pseudo groups (Figure 3—figure supplement 1). Therefore, the neural synchronization was only found in the ‘real’ groups who were interacting in the task. The pattern of associated results was similar to that of HbO when the analyses of HbR were conducted (see the Supplementary Materials).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100000/elife-100000-fig3-v1.jpg)
+
+**Figure 3.:** (A) A significant difference between the High and Low Group Identification groups in the orbitofrontal cortex (OFC) (CH21) was observed (p-value, false discovery rate [FDR] corrected). (B) Greater group neural synchronization (GNS) in the OFC (CH21) was associated with higher collective performance. (C) A mediation model suggested that GNS mediated the relationship between group identification of each group and collective performance. *p < 0.05, **p < 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100000/elife-100000-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The figure showed the distribution of the permutated average intergroup coupling enhancement. The black lines indicated the positions of the true means of the original groups.
 
 Results showed that greater GNS in the OFC (CH21) was associated with higher collective performance (r = 0.46, p = 0.001; Figure 3B). The mediation model demonstrated a satisfactory fit (CFI = 0.86, TLI = 0.86, RMSEA = 0.04), suggesting that group identification of each group caused changes in GNS in the OFC and ultimately impacted the corresponding collective performance (βa = 0.29, SE = 0.01, t = 2.24, p = 0.026; βb = 0.25, SE = 7.28, t = 1.88, p = 0.049; βc = 0.37, SE = 0.01, t = 2.24, p = 0.005) (Figure 3C).
 
 Through correlation and regression model analysis, we found that in group decision-making, the increase in group identity would affect group performance by improving GNS in the OFC brain region.
 
-## Brain activation connectivity links the single-brain activation and the corresponding GNS
+### Brain activation connectivity links the single-brain activation and the corresponding GNS
 
 Given the above association between individuals’ single-brain activations and individual performance, as well as GNS and collective performance, we subsequently explored how individuals’ single-brain activations and the corresponding group’s neural synchronizations were linked by brain activation connectivity.
 
@@ -75,7 +83,7 @@ We first extracted the HbO brain activities related to individual performance (e
 
 The findings implied that DLPFC–OFC connectivity could link the individual’s single-brain activations and the group’s GNS, thus unifying individual performance and collective performance.
 
-## The dynamic neural process
+### The dynamic neural process
 
 To better understand how group identification influences collective performance at a neural level, we examined the dynamic activation of single brains, the GNS, and brain activation connectivity throughout the entire task. Our research findings revealed a significant increase in single-brain activation at approximately 7 min into the task, during the group sharing stage (t = 9.88, p < 0.001; green line in Figure 5). Furthermore, there was a notable increase in brain activation connectivity around 12 min into the task, during the group discussion stage (t = 4.70, p = 0.013; black line in Figure 5), and GNS at approximately 17 min into the task, also during the group discussion stage (t = 3.01, p = 0.042; orange line in Figure 5).
 
@@ -85,7 +93,7 @@ To better understand how group identification influences collective performance 
 
 Considering the entire dynamic process, there was a time delay in the transition from individual to collective decisions, and brain activation connectivity was in the middle. In addition to the regulation model provided above, it further supported the processing of information flow in the single-brain activation, DLPFC–OFC connectivity, and ultimately the GNS.
 
-## The two-in-one neural model of group identification influences collective performance
+### The two-in-one neural model of group identification influences collective performance
 
 Building on the above results, we have developed a two-in-one neural model that explains how group identification influences collective performance (Figure 6). This descriptive model aims to illustrate the potential interrelationships among these indicators and establish a conceptual framework to inspire forthcoming research endeavors. In the first step, group identification influences individual performance, which is associated with significant single-brain activation in the DLPFC of each group member. In the second step, group identification influences collective performance, which is linked to significant within-GNS in the OFC. These two steps are linked by the DLPFC–OFC connectivity, which modulates the relationship between individual DLPFC activation and GNS in the OFC. In particular, people with a strong sense of group identification tend to have better individual performance, which is associated with increased single-brain activation in the DLPFC of each group member. This, in turn, leads to improved collective performance, which is linked to higher levels of within-GNS in the OFC. On the other hand, groups with a low sense of group identification tend to have poorer individual performance, which is associated with decreased activity in the DLPFC. This also results in poorer collective performance, which is correlated with lower levels of GNS in the OFC. The DLPFC–OFC connectivity modulates the relationship between the single-brain activation in the DLPFC and the corresponding group’s neural synchronizations in the OFC. This influences the similarity in individual and collective performance, thus connecting individual performance and collective performance.
 
@@ -93,7 +101,7 @@ Building on the above results, we have developed a two-in-one neural model that 
 
 **Figure 6.:** In the first step, group identification influences individual performance, which is associated with significant single-brain activation in the dorsolateral prefrontal cortex (DLPFC) of each group member. In the second step, group identification influences collective performance, which is linked to significant within-group neural synchronization (GNS) in the orbitofrontal cortex (OFC). These two steps are connected by the DLPFC–OFC connectivity, which modulates the relationship between individual DLPFC activation and GNS in the OFC.
 
-## The quality of information exchange is correlated to the effect of group identification
+### The quality of information exchange is correlated to the effect of group identification
 
 To gain a better understanding of how various group identifications led to differences in collective performance, we gathered further evidence by assessing the quality of information exchange from the video. Independent t-tests were conducted on the quality of information exchange, which revealed that the quality of information exchange was significantly different between the High and Low Group Identification groups (t58 = 2.53, p = 0.014, Cohen’s d = 0.67) (Figure 7B). Pearson’s correlation showed that the higher quality of information exchange, the better collective performance (r = 0.36, p = 0.007) (Figure 7C). The results of our study indicated that interactive frequency played a role in indicating the relationship between group identification and collective performance.
 
@@ -119,87 +127,103 @@ To summarize, the present study revealed and connected the individual and group 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 G* Power 3.1 (Faul et al., 2007) indicates that for t-tests with a medium-to-large effect size (d = 0.70), an alpha level of 0.05, and a desired statistical power of 0.80 (Cohen, 1988), a sample size of at least 52 triads is needed. In total, the data of 60 triads, consisting of 180 healthy college students (96 females, aged 20.45 ± 2.28 years), were included. In addition, 3 participants (2 female, 20.15 ± 1.56 years) without knowledge of the experimental design details were recruited to rate the collective performance, while another 3 participants (2 females, 21.68 ± 1.32 years) were recruited to rate the interactive frequency. The study had full ethical approval by the University Committee on Human Research Protection (HR2-0189-2022), East China Normal University. Informed written consent was obtained from each participant before each experiment.
 
-## Experimental procedures and tasks
+### Experimental procedures and tasks
 
 The study aimed to investigate how collective performance was affected when group identification was either high or low. Participants came to the laboratory and were randomly assigned to 60 groups, each consisting of 3 people of the same gender. Each triad consisted of participants who were unfamiliar with one another and had not previously engaged in similar tasks. They were randomly assigned to either the high or low group identification manipulation and completed the task while undergoing hyperscanning with fNIRS.
 
-## Group identification manipulation
+#### Group identification manipulation
 
 To manipulate group identification (High Group Identification and Low Group Identification conditions), we referred to previous studies (Efferson et al., 2008; Yang et al., 2020). For each High Group Identification condition, the participants in each triad were invited to chat with each other to introduce themselves and find three-person-shared features for minutes. For each Low Group Identification condition, the participants in each triad were asked to chat with each other about the main courses they had been taking during this semester without being explicitly asked to find shared features (Figure 8A). The participants rated the group identification in their group before and after the manipulation (i.e., group identification _1 and group identification _2) (Figure 8B). Both discussions were conducted for the same duration of 3 min, ensuring that the number of exchanges between the two groups remained comparable. The group identification was assessed using a 3-item questionnaire with each item being rated on a 100-point scale ranging from 0 = strongly disagree to 100 = strongly agree (Van Bavel and Cunningham, 2012). The questionnaire was presented on participants’ phones. The reliability of this scale was confirmed to be high (α = 0.87). The three participants conducted face-to-face offline interaction throughout the manipulation process. In addition to explaining the next phase of the task and controlling the timer, experimenters would be isolated from participants.
 
-## Task
+![Figure 8.](https://cdn.elifesciences.org/articles/100000/elife-100000-fig8-v1.jpg)
+
+**Figure 8.:** (A) Group identification manipulation. For each High Group Identification condition, the participants in each triad were invited to chat with each other to introduce themselves and find three-person-shared features for minutes. For each Low Group Identification condition, the participants in each triad were asked to chat with each other about the main courses they had been taking during this semester without being explicitly asked to find shared features. (B) The rate of group identification. The participants in each triad rated the group identification in their group before and after the manipulation. (C) Group identification manipulation check. We examined how the level of group identification changed when we manipulated it, for both High and Low Group Identification conditions. Group identification_1, Group identification before manipulation; Group identification _2, Group identification after manipulation. (D) The procedure of task. First, participants completed a series of individual difference questionnaires before the task. Then, each group member received 18 common information and 2 private information. They read their information within 5 min. After that, each triad was required to complete verbal information exchange, comprising both group sharing and group discussion. Each group member texted the private information to other members by Tencent Meeting during group sharing for 5 min, and they discussed the information currently disclosed with others orally during the group discussion for 20 min. Ultimately, the groups had a period of 5 min to answer the questions. *p < 0.05, ***p < 0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/100000/elife-100000-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Optode probe sets. The sets were placed over the prefrontal and left TPJ regions.
+
+#### Task
 
 We adopted a well-validated collaborative problem-solving task that incorporated the hidden profile task to solve a murder mystery case (De Wilde et al., 2017; Stasser and Stewart, 1992; Xie et al., 2023b). The case description contained 24 relevant arguments that were either incriminating or exonerating for each suspect (Suspects A, B, and C). In total, each suspect had six incriminating arguments presented against them. Additionally, Suspects B and C each had three exonerating arguments to their defense, while Suspect A did not. Accordingly, when combining all 24 relevant arguments, Suspect A was the real guilty suspect, while Suspects B and C could be ruled out because of the exonerating clues. However, each group member was not privy to all of the relevant information. To uncover the truth, individuals had to exchange and combine their knowledge with the knowledge of their group members, as the common information incorrectly indicated that Suspect B or C was guilty.
 
-## Procedure
+#### Procedure
 
 To start the procedure, participants were given 3 min to rest (Figure 8D). They sat around a table without partitions between each other. Building on prior group decision-making research (Stasser and Stewart, 1992; Xie et al., 2023a), we refined all stages to enhance controllability throughout the process (i.e., a. Reading information, b. Sharing private information, c. Discussing information, d. Decision). Each group member was then given 18 common and 2 private pieces of information, which they read in 5 min (Figure 8D). Each participant would get a piece of paper, which presented the information. Participants could read independently. Subsequently, each triad was required to complete verbal information exchange, comprising both group sharing and group discussion (Figure 8D; Xie et al., 2023b). During the group sharing, participants entered Tencent Meeting via their mobile phones and were able to text their private information in the chat box to their group members for 5 min. During the group discussion, each group discussed the information that had been disclosed orally for 20 min. Participants were sitting and communicating around a table. The distance between adjacent participants was about 15 cm, and the distance between face-to-face participants was about 40 cm. In this process of discussion, the participants were able to communicate face-to-face and verbally. After discussion, all triads were given 5 min to answer the following questions: (1) the probability of three suspects, 0–100% for each suspect; (2) the motivation and tool of crime; and (3) deduced the entire process of crime. The three questions were presented on paper, allowing participants to write their answers directly on the same sheet. Subsequently, three independent raters used these paper questionnaires to record and calculate the scores for each group.
 
-## fNIRS data acquisition
+### fNIRS data acquisition
 
 In this study, the brain activities of participants in each group were simultaneously recorded with fNIRS using an ETG-7100 optical topography system (Hitachi Medical Corporation, Japan). The absorption of near-infrared light (two wavelengths: 695 and 830 nm) was measured with a sampling rate of 10 Hz. The oxyhemoglobin (HbO) and deoxyhemoglobin (HbR) were obtained under the modified Beer–Lambert law. We focused our analyses on the HbO signal for the following reasons: (1) HbO concentration is sensitive to changes in regional cerebral blood flow (Hoshi, 2003); (2) the HbO signal was reported to have a higher signal-to-noise ratio than the HbR signal (Mahmoudzadeh et al., 2013); and (3) an increasing number of studies have revealed neural synchronization based on the HbO signal (Yang et al., 2020).
 
 Two optode probe sets were used to cover each participant’s prefrontal and left TPJ regions (Figure 8—figure supplement 1). The DLPFC plays a crucial role in group decision-making processes, with findings suggesting that individuals exhibiting reduced prefrontal activity were more prone to out-group exclusion and demonstrated stronger in-group preferences (Goupil et al., 2021; Jankovic, 2014; Yang et al., 2020). Similarly, the left TPJ has been previously reported to be associated with decision-making and information exchange (De Freitas et al., 2019; Tindale and Winget, 2019). For each participant, one 3 × 5 optode probe set (8 emitters and 7 detectors forming 22 measurement points with 3 cm optode separation, see Supplementary file 1, table S1 for detailed MNI coordinates) was placed over the prefrontal cortex (reference optode is placed at Fpz, following the international 10–20 system for positioning). The other 2 × 4 probe set (4 emitters and 4 detectors forming 10 measurement points with 3 cm optode separation, see Supplementary file 2, table S2 for detailed MNI coordinates) was placed over the left TPJ (reference optode is placed at T3, following the international 10–20 system for positioning). The probe sets were examined and adjusted to ensure consistency of the positions across the participants. After the completion of data collection, we utilized the Vpen positioning system to accurately locate the detection light poles, ultimately obtaining the MNI positioning coordinates.
 
-## Behavioral analyses
+### Behavioral analyses
 
-## Group identification
+#### Group identification
 
 To examine and quantify the manipulation of group identification, the scores of the participants in each triad were averaged to determine the group identification, and an ANOVA with repeated measures was performed to examine group identification, with the levels of group identification (High/Low) serving as a between-subjects variable, and the orders of rating group identification (group identification_1/group identification_2) as a within-subjects variable (Figure 8C). Moreover, Pearson’s correlation was used to examine the relationship between group identification_2 and collective performance.
 
-## Individual performance
+#### Individual performance
 
 Individual performance was evaluated based on participants’ accuracy in solving the case, including their probability estimates for the three suspects (0–100% each, 2 points per suspect, totaling 6 points), identification of the crime’s motivation (1 point) and tool (1 point), and deduction of the full crime process (20 points). Three independent raters assessed each participant’s performance, demonstrating high consistency (Cronbach’s α = 0.89).
 
-## Collective performance
+#### Collective performance
 
 Collective performance was calculated by averaging the individual scores assigned by the three raters for each group, representing the group’s overall accuracy in the case solution.
 
 An independent t-test was conducted to examine collective performance, with group identification levels being the independent variable and collective performance as the dependent variable. Moreover, we employed a regression model to examine how varying levels of group identification affect collective performance, using group identification scores as the independent variable and collective performance as the dependent variable.
 
-## The similarity in individual-collective performance
+#### The similarity in individual-collective performance
 
-After the z-score normalization of each item for individual and collective performance, we calculated the Euclidean distance (Equation 1) between individual and collective performance. In Equation 1, x is the individual score, y is the collective score (y is calculated from the three per capita scores), and i stands for the group number. So, xi means the individual score of participants in the i group, and yi means the collective score of the i group. d(x, y) represents the distance from the individual to the collective score. A smaller distance indicated a higher similarity in individual-collective performance, while a larger distance suggested a lower similarity in individual-collective performance,(1)d(x,y)=∑(xi−yi)\begin{document}$$\displaystyle d\left (x,y\right)=\sqrt{\sum \left (x_{i}-y_{i}\right) }$$\end{document}
+After the z-score normalization of each item for individual and collective performance, we calculated the Euclidean distance (Equation 1) between individual and collective performance. In Equation 1, x is the individual score, y is the collective score (y is calculated from the three per capita scores), and i stands for the group number. So, xi means the individual score of participants in the i group, and yi means the collective score of the i group. d(x, y) represents the distance from the individual to the collective score. A smaller distance indicated a higher similarity in individual-collective performance, while a larger distance suggested a lower similarity in individual-collective performance,
+
+$$
+d(x,y)=\sqrt{\sum(x_{i}−y_{i})}
+$$
 
 To investigate whether there was a significant difference in the similarity in individual-collective performance between conditions, an independent t-test was conducted with group identification levels as the independent variable and the similarity in individual-collective performances as the dependent variable.
 
-## fNIRS data analyses
+### fNIRS data analyses
 
-## Overview
+#### Overview
 
 We aimed to investigate the neural mechanisms underlying the impact of different levels of group identification on collective performance. (1) To do this, we sought to examine whether the individual differences in individual performance were reflected in single-brain activations. We first identified task-related brain regions and compared the single-brain activation of different levels of group identification. We then examined the correlation between single-brain activation and individual performance and tested whether the relationship between an individual’s perceived group identification and individual performance was mediated by single-brain activation. (2) We sought to examine whether the group differences in collective performance were reflected in within-GNS. We first identified task-related GNS and compared GNS of different levels of group identification. We then examined the correlation between collective performance and GNS and tested whether the relationship between the group identification score of each triad and collective performance was mediated by GNS. (3) Examining brain activation connectivity, we sought to bridge single-brain activations and the corresponding GNS, thus unifying individual decision-making and collective performance. We first identified task-related brain activation connectivity and compared brain activation connectivity of different levels of group identification. We then examined the correlation between the similarity in individual-collective performance and brain activation connectivity and tested whether the relationship between the individual’s single-brain activations and the corresponding GNS was mediated by brain activation connectivity.
 
-## Pre-processing approach
+#### Pre-processing approach
 
 We sought to explore the neural mechanisms that manipulated group identification and its effect on collective performance. Data were preprocessed using the Homer2 package in MATLAB 2020b (Mathworks Inc, Natick, MA, USA). First, motion artifacts were detected and corrected using a discrete wavelet transformation filter procedure. After that, the raw intensity data were converted to optical density (OD) changes. Then, kurtosis-based wavelet filtering (Wav Kurt) was applied to remove motion artifacts with a kurtosis threshold of 3.3 (Chiarelli et al., 2015). Based on a prior multi-brain study of social interactions (Cheng et al., 2022), the output was bandpass filtered using a Butterworth filter with order 5 and cut-offs at 0.01 and 0.5 Hz to remove longitudinal signal drift and instrument noise. Finally, OD data were converted to HbO concentrations.
 
-## Single-brain activation
+#### Single-brain activation
 
 The detailed steps are as follows: (1) We analyzed the data using SPM-based software (Ye et al., 2009), focusing on the time series from information reading to decision-making, and extracted the HbO signal for each participant and triad. The onsets and durations of these time series were used to generate the stimulus design, which was convolved with a canonical hemodynamic response function (HRF) using NIRS-SPM. (2) We then employed a general linear model (GLM) to fit the predicted signals to the actual data, obtaining beta estimates (regression coefficients) for each parameter in the single-subject design matrices. Within the GLM framework, contrast maps were generated to compare activation between the baseline (resting phase) and task sessions (encompassing information reading to decision-making) for each subject, based on the HbO signal. Next, the regression factor was convolved with the HRF, and regression analysis provided brain activation values representing decision-making activity for each participant across all task stages and channels. For group-level analysis, we conducted second-level, random-effects analyses (Friston et al., 2007) by aggregating the β values across participants. A one-sample t-test was performed for each channel to determine whether mean activation significantly exceeded zero (i.e., greater task-related activation than rest), with p-values corrected for FDR (p < 0.05, Benjamini and Hochberg, 1995). (3) Channels showing significant single-brain activations were identified as task-related and included in further analyses, and the results were visualized on a standard MNI brain template using summary statistics.
 
 Subsequently, we conducted independent t-tests on single-brain activations in task-related brain regions, with group identification levels as the independent variable. The p-values were also adjusted to control for FDR (p < 0.05; Benjamini and Hochberg, 1995). Then, we used Pearson’s correlation analyses to investigate the relationship between single-brain activation and individual performance (i.e., evaluated based on participants' accuracy in solving the case). Finally, we employed the PROCESS model 4 to construct a mediation model with 5000 bootstrap resamples (Preacher and Hayes, 2008) to examine the relationship between an individual’s perceived group identification and individual performance, which was mediated by single-brain activation.
 
-## Within-GNS
+#### Within-GNS
 
-After pre-processing, GNS was used as the neural index (i.e., interpersonal brain activities that co-vary along the time course). Concerning GNS, and similar to previous studies (Pan et al., 2021; Yang et al., 2020), the wavelet transform coherence (WTC) (Equation 2) was used to assess the cross-correlation between two oxy-Hb time series of pairs of participants. Here, t denotes the time, s indicates the wavelet scale, 〈⋅〉 represents a smoothing operation in time, and W is the continuous wavelet transform (Grinsted et al., 2004). Within each triad (taking one triad with subject IDs of 1, 2, and 3 as an example), WTC was applied to generate the brain-to-brain coupling of each pair in each triad (Coherence 1&2, Coherence 1&3, and Coherence 2&3). Then, three coherence values from three pairs were averaged as the GNS for each triad, that is, GNS = (Coherence 1&2 + Coherence 1&3 + Coherence 2&3)/3,(2)WTC(t,s)=|⟨s−1wij(t,s)⟩|2|⟨s−1wi(t,s)⟩|2|⟨s−1wj(t,s)⟩|2′\begin{document}$$\displaystyle WTC\left (t,s\right)=\frac{\left |\, \left \langle s^{-1}w^{ij}\left (t,s\right)\right \rangle \right |^{2}}{\left |\, \left \langle s^{-1}w^{i}\left (t,s\right)\right \rangle \right |^{2}\left |\, \left \langle s^{-1}w^{j}\left (t,s\right)\right \rangle \right |^{2'}}$$\end{document}
+After pre-processing, GNS was used as the neural index (i.e., interpersonal brain activities that co-vary along the time course). Concerning GNS, and similar to previous studies (Pan et al., 2021; Yang et al., 2020), the wavelet transform coherence (WTC) (Equation 2) was used to assess the cross-correlation between two oxy-Hb time series of pairs of participants. Here, t denotes the time, s indicates the wavelet scale, 〈⋅〉 represents a smoothing operation in time, and W is the continuous wavelet transform (Grinsted et al., 2004). Within each triad (taking one triad with subject IDs of 1, 2, and 3 as an example), WTC was applied to generate the brain-to-brain coupling of each pair in each triad (Coherence 1&2, Coherence 1&3, and Coherence 2&3). Then, three coherence values from three pairs were averaged as the GNS for each triad, that is, GNS = (Coherence 1&2 + Coherence 1&3 + Coherence 2&3)/3,
+
+$$
+WTC(t,s)=\frac{|⟨s^{−1}w^{ij}(t,s)⟩|^{2}}{|⟨s^{−1}w^{i}(t,s)⟩|^{2}|⟨s^{−1}w^{j}(t,s)⟩|^{2^{′}}}
+$$
 
 Regarding the ﬁrst step, we estimated whether GNS was enhanced during the task compared to the baseline. Time-averaged GNS (also averaged across channels in each group) was compared between the baseline session (i.e., the resting phase) and the task session (from reading information to making decisions) using a series of one-sample t-tests. Here, p-values were thresholded by controlling for FDR (p < 0.05; Benjamini and Hochberg, 1995). When determining the frequency band of interest, the time-averaged GNS was also averaged across channels. After that, we analyzed the time-averaged GNS of each channel. Then, channels showing significant GNS were regarded as regions of interest and included in subsequent analyses. An independent t-test was conducted on GNS, with group identification levels being the independent variable. Here, p-values were thresholded by controlling for FDR (p < 0.05; Benjamini and Hochberg, 1995). After that, the nonparametric permutation test was conducted on the observed interaction effects on GNS of the real group against the 1000 permutation samples. By pseudo-randomizing the data of all participants, a null distribution of 1000 pseudo-groups was generated (e.g., time series from member 1 in group 1 were grouped with member 2 in group 2 and member 3 in group 3). The GNS of 1000 reshuffled pseudo-groups was computed, and the GNS of the real groups was assessed by comparing it with the values generated by 1000 reshuffled pseudo-groups. To provide a complete picture of the underlying neural features, we also analyzed the GNS based on the HbR signal (see Supplementary Materials). Second, the Pearson’s correlation between GNS and collective performance (i.e., calculated by averaging the individual scores assigned by the three raters for each group) was performed. It is plausible that neural synchronization is closely associated with group identification and collective performance, suggesting that it serves as a promising mechanism to explore how group identification influences collective outcomes. Moreover, previous research has established that neural synchronization facilitates the emergence of group identification, and the degree to which neural synchronization occurs among group members may shape how individuals identify with the group (Xie et al., 2023a; Reinero et al., 2021). Ultimately, PROCESS model 4 with 5000 bootstraps resamples was used to test how GNS mediated the relationship between group identification and collective performance (Preacher and Hayes, 2008).
 
-## The brain activation connectivity
+#### The brain activation connectivity
 
 Studies in neuroimaging have indicated that brain activation connectivity could be useful in understanding brain functional integration (Lu et al., 2010; Montero-Hernandez et al., 2018; Yang et al., 2020). Consequently, an exploratory analysis was conducted to test the hypothesis that brain activation connectivity could support the connection between an individual’s single-brain activations and the corresponding group’s GNS, thereby linking individual decision-making and collective performance.
 
 To explore this hypothesis, we first isolated HbO brain activity associated with individual and collective performance. Following that, we analyzed Pearson’s correlations between the original HbO data in the region related to individual and collective performance, denoted as brain activation connectivity (Lu et al., 2010). Subsequently, we carried out one-sample t-tests on brain activation connectivity to ascertain if there was any connection to the task. Furthermore, independent t-tests were conducted on brain activation connectivity with the group identification levels as the independent variable, accounting for the FDR (p < 0.05; Benjamini and Hochberg, 1995). Finally, we employed correlation and mediation analyses to assess if brain activation connectivity could explain the connection between individuals’ single-brain activation and the related group’s GNS. We examined the connection between the similarity in individual-collective performance and the correlation of brain activation, as well as whether the impact of each individual’s single-brain activation on the corresponding group’s GNS was regulated by their brain activation connectivity. We utilized the PROCESS tool in SPSS to investigate the proposed moderation effect. Specifically, we applied Model 1 with 5000 bootstrap resamples to examine the interaction between the independent variable (i.e., single-brain activation) and the moderator (i.e., brain activation connectivity) in predicting the dependent variable (i.e., GNS). It is noteworthy that prior to analysis, all variables in the moderation model were mean-centered to reduce multicollinearity and improve the interpretability of interaction terms.
 
-## Dynamic analyses
+#### Dynamic analyses
 
 Our goal was to gain a more thorough understanding of how group identification influences collective performance through neural processes, with a focus on dynamic perspectives and tracking. We used 1-min epochs to analyze the average single-brain activation, GNS, and brain activation connectivity during the task. We then plotted the time course of dynamic single-brain activation and conducted one-sample t-tests to identify significant single-brain activation, GNS, and the correlation of brain activation periods. To better understand the interactive behavior revealed by dynamic single-brain activation, we linked the brain activation time series with video recordings of interactive behavior.
 
-## Additional modal measures and analyses
+### Additional modal measures and analyses
 
 Additionally, we aimed to gain a more comprehensive understanding of how various group identifications influence collective performance. To this end, we obtained more evidence through other methods. Previous studies have shown that the quality of information exchange, such as verbal interactions, eye contact, and smiling, is a reliable indicator of group behavior and is associated with collective performance (Dikker et al., 2022; Hirsch et al., 2018; Jiang et al., 2015; Liu et al., 2021; Xie et al., 2023b). Therefore, three independent raters were asked to rate the quality of the information exchange of each group, with a Cronbach’s alpha of 0.85. The raters were guided to consider verbal interactive frequency (e.g., ‘I agree with you’, ‘You’re right’, ‘I understand what you mean’) and nonverbal interactive frequency (e.g., eye contact and smiling) (Jiang et al., 2015; Xie et al., 2023a; Figure 7A). The evaluation period consisted of group sharing and discussion, in which the raters evaluated the suggested items in 1-min increments. The scores of the 25 periods were then compiled. The final quality of the group’s information exchange was determined by taking the average of the scores of the three raters for each group. A higher quality of the group’s information exchange entails communicating more fully.
 

@@ -23,17 +23,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0062dz060 The Earlham Institute Norwich Research Park Norwich United Kingdom
-2. https://ror.org/010jx2260 National Institute of Agricultural Botany Cambridge United Kingdom
+1. The Earlham Institute Norwich Research Park Norwich United Kingdom ([ROR:0062dz060](https://ror.org/0062dz060))
+2. National Institute of Agricultural Botany Cambridge United Kingdom ([ROR:010jx2260](https://ror.org/010jx2260))
 3. IBM Research Europe Warrington United Kingdom
-4. https://ror.org/05kgk6p34 British Beet Research Organisation Norwich United Kingdom
-5. https://ror.org/039zvsn29 Department of Life Science, The Natural History Museum London United Kingdom
+4. British Beet Research Organisation Norwich United Kingdom ([ROR:05kgk6p34](https://ror.org/05kgk6p34))
+5. Department of Life Science, The Natural History Museum London United Kingdom ([ROR:039zvsn29](https://ror.org/039zvsn29))
 
 † Corresponding author
 
 ## Abstract
 
-Crop pathogens reduce yield and contribute to global malnourishment. Surveillance not only detects presence/absence but also reveals genetic diversity, which can inform our understanding of rapid adaptation and control measures. An often neglected aspect is that pathogens may also use crop wild relatives as alternative hosts. This study develops the beet ( Beta vulgaris ) rust ( Uromyces beticola ) system to explore how crop pathogens evolve to evade resistance using a wild reservoir. We test predictions that crop selection will drive virulence gene differentiation and affect rates of sex between crop- and wild-host rust populations. We sequenced, assembled, and annotated the 588 Mb beet rust genome, developed a novel leaf peel pathogen DNA extraction protocol, and analysed genetic diversity in 42 wild and crop isolates. We found evidence for two populations: one containing exclusively wild-host isolates; the other containing all crop-host isolates, plus five wild isolates. Effectors showed greater diversity in the exclusively wild population and greater differentiation between populations. Preliminary evidence suggests the rates of sexual reproduction may differ between populations. This study highlights how differences in pathogen populations might be used to identify genes important for survival on crops and how reproduction might impact adaptation. These findings are relevant to all crop-reservoir systems and will remain unnoticed without comparison to wild reservoirs.
+Crop pathogens reduce yield and contribute to global malnourishment. Surveillance not only detects presence/absence but also reveals genetic diversity, which can inform our understanding of rapid adaptation and control measures. An often neglected aspect is that pathogens may also use crop wild relatives as alternative hosts. This study develops the beet (Beta vulgaris) rust (Uromyces beticola) system to explore how crop pathogens evolve to evade resistance using a wild reservoir. We test predictions that crop selection will drive virulence gene differentiation and affect rates of sex between crop- and wild-host rust populations. We sequenced, assembled, and annotated the 588 Mb beet rust genome, developed a novel leaf peel pathogen DNA extraction protocol, and analysed genetic diversity in 42 wild and crop isolates. We found evidence for two populations: one containing exclusively wild-host isolates; the other containing all crop-host isolates, plus five wild isolates. Effectors showed greater diversity in the exclusively wild population and greater differentiation between populations. Preliminary evidence suggests the rates of sexual reproduction may differ between populations. This study highlights how differences in pathogen populations might be used to identify genes important for survival on crops and how reproduction might impact adaptation. These findings are relevant to all crop-reservoir systems and will remain unnoticed without comparison to wild reservoirs.
 
 ## Introduction
 
@@ -43,21 +43,76 @@ Gene flow in its broadest sense occurs at different rates. At one end of the spe
 
 Rust fungi make up some of the most economically devastating crop pathogens, infecting crops of global significance such as wheat (Schwessinger et al., 2020), soybean (Loehrer et al., 2014), and coffee (Porto et al., 2019). They are also ideal systems for exploring host adaptation and the crop-reservoir pathogen populations because they are known for their complex life cycles, which include changes in ploidy, partitioned sexual, clonal, overwintering, and dispersal stages (Kristoffersen et al., 2018), but primarily because of their obligate association with the living host (Figueroa et al., 2020). In an agricultural context, the main infection phase is clonal, where urediniospores are found erupting from pustules on the surface of leaves (Figure 1A). Each spore contains two haploid nuclei (dikaryotic). This clonal phase can continue indefinitely on susceptible hosts but can also alternate with a seasonal sexual stage, often on a wild host species (Figueroa et al., 2020). While there are exceptions, the general principle is that mutation increases heterozygous polymorphism between dikaryotic content (as well as within the population) in the clonal phase, and recombination shuffles this variation in the sexual phase (Figueroa et al., 2020; Schwessinger et al., 2020). The rare sexual reproduction on a wild host may be a key determinant in bouts of adaptation. In most cases, the sexual phase of the life cycle occurs on a different host plant, termed heteroecism (as opposed to autoecism). In the case of wheat stem rust, this alternate host is barberry, and the presence of this alternate host has been associated with increased rust virulence in Europe and the US for hundreds of years (Barnes et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91245/elife-91245-fig1-v1.jpg)
+
+**Figure 1.:** (A) U. beticola pustules on sugar beet. (B) Sea beets in their natural setting along an estuary, located bottom right and middle of the bank. Leaves are clipped and brought back into the lab. (C & D) Pustules are covered with 5 µl peel solution which dries and is peeled off for DNA extraction, library preparation, and sequencing. (E) An electron micrograph image of a rust pustule, isolate urediniospores are visible. (F) The rust genome k-mer spectra is a histogram of the number of k-mers (in the reads) found at a given multiplicity (or depth) at k-mers in the assembly. K-mers present in the reads but absent in the assembly are plotted in black, present once in the assembly in red, then purple for twice. The inset plot shows the k-mer distribution where all contigs without a blast hit are removed. The black peak within the main distribution indicates that real U. beticola content has been removed and should not be filtered from the assembly. (G) BUSCO completeness scores for our U. beticola (588.0 Mbp) genome in comparison to Hemileia vastatrix (541.2 Mbp), Uromyces viciae-fabae (209.5 Mbp), P. triticinia (106.6 Mbp), Puccinia graminis (81.5 Mbp) and P. striiformis f. sp. Tritici (61.4 Mbp). Colours indicate Missing, Fragmented, Complete and Duplicated, and Complete and Single copy BUSCOs. Genomes are in size order, represented as grey bars outlining BUSCO scores. The U. beticola genome, while large, has comparatively low levels of missing, fragmented, and duplicated BUSCO content.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91245/elife-91245-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The U. beticola assembly contains a large proportion of interspersed repeat content (~90%). Analysis of repeat content across rust genomes (RepeatModeler RepeatMasker) shows a strong correlation between genome size and repeat content. Expansion of the U. beticola genome and proliferation of repeats is in line with the level observed in other rusts based on this significant positive correlation between genome size and repeat content in the rust genomes analysed.
+
 Alternate hosts act as centres of rust genetic diversity and recombination, and these are important forces for adaptation which operate outside of crop-infecting populations. However, these processes are difficult to study, either because the wild hosts are peppered throughout a global range and difficult to locate, and/or they are in regions that are difficult to access. For instance, in wheat yellow (stripe) rust, the centre of genetic diversity and recombination are in Nepal, Pakistan, and China, and yet their largely clonally sustained populations expand to every continent except Antarctica (Ali et al., 2014). The present study is an attempt to resolve this obstacle by developing a system, the crop-wild beet rust system – sugar beet (B. vulgaris subsp. vulgaris), sea beet (Beta vulgaris subsp. maritima), and beet rust (Uromyces beticola) – which is ideally suited to study crop-wild pathogen evolution. Sugar beet is one of the most recently domesticated crop species (circa 200 y, Dohm et al., 2014), which is grown for sugar production and is being developed as a biofuel throughout Europe and the USA (Panella, 2010). Domesticated in Europe, it is often grown alongside coastally distributed sea beet, which remains a source of genetic variation for sugar beet breeding (Cauwer et al., 2012; Leys et al., 2014; Sandell et al., 2022; Figure 1B). Kristoffersen et al., 2018 present the beet rust disease cycle, showing both sugar and sea beet are impacted by the autoecious rust pathogen, U. beticola. Being an obligate biotroph U. beticola must survive on wild hosts between sugar beet crops cycles. Despite living on a single host species, the beet rust lifecycle contain urediospore (n+n) and teliospore (2 n; and subsequent basidiospore (n), pycniospore (n) and aeciospores (n+n)) stages (Kristoffersen et al., 2018). It is the asexual urediospores that can cyclically reinfect, and sexual basidiospores that are important in the consideration of the impact of a partitioned lifecycle for invasion and evolution. Although relatively little is known about resistance mechanisms in beet species, one resistance locus, the Rz2 locus responsible for rhizomania resistance, has been well described (Rodríguez et al., 2019). Microsatellite analyses of wild sea beet populations demonstrate high levels of allelic diversity and heterozygosity, associated with outbreeding, which is corroborated at the genome scale (Fénart et al., 2008; Ribeiro et al., 2016; Stevanato et al., 2001; Sandell et al., 2022).
 
 Here, we explore the utility of the beet-rust system as a model to understand pathogen adaptation to agricultural environments. We have produced the first annotated U. beticola genome assembly and characterised population genetic diversity of rust isolates from sugar and sea beets collected across the east of England. We developed a DNA peel extraction protocol to favourably extract pathogen DNA relative to host DNA and re-sequenced 42 rust isolates (24 from sugar beet hosts and 18 from sea beets; ~370 km of coastline). Our predictions were that (A) isolates would partition into populations separated by the wild and crop host divide (allowing for some cross-infection) (B) genes important for success in these environments would be more genetically differentiated between populations, and that (C) the rate of clonal to sexual reproduction would be elevated in the crop pathogen population. Genes important for adaptation to the agricultural environment likely have many functions. However, we reason that host genetic diversity is one of the largest discriminating factors, and therefore we focused on pathogen genetic diversity at putative host interaction genes (effectors). Effector candidates can be readily identified using their secretion signals in the gene annotation process. Most importantly, these genes are known to be at the centre of the virulence-resistance arms race, where the right combination of effectors will increase the virulence of an isolate, and yet host recognition of a single effector will prevent infection (Stukenbrock and McDonald, 2009). We find that (A) rust isolates from all crop hosts belong to a single genetic cluster, which also included five northern wild host isolates, indicating a potential invasion source. The remaining wild-host isolates fall in an exclusively wild clade. We find that (B) this wild reservoir clade has especially high diversity at effector genes, which are also more differentiated than non-effectors. We find that (C) the rate of clonal to sexual reproduction differs between populations, although this signal is in opposite directions based on genotypic and linkage-based analyses. Our results are by no means final, but they do bring us closer to understanding ongoing processes that generate novel virulent pathogen lineages. From a surveillance perspective, these methods have implications for pathogen invasion and emergence, and our ability to target treatment and reduce chemical inputs (Richard et al., 2022).
 
 ## Results
 
-## U. beticola genome assembly
+### U. beticola genome assembly
 
 We assembled the U. beticola genome (588 Mbp) using short-read data into 19,690 contigs with a genome N50 of 74 Kbp, the largest contig being 554 Kbp (Table 1). Rust genomes are often problematic to assemble because of the dikaryotic (n+n) content of the uredospore life stage (Aime et al., 2017; Kristoffersen et al., 2018). K-mer sampling read content is a method of ascertaining whether the content in the sequencing reads is reflected in the assembly they produce (Mapleson et al., 2016). Divergent haplotypic content would be evident as a double peak in the k-mer distribution of the reads (e.g. see Figure 1 in ref Loehrer et al., 2014). We did not observe this signal characteristic of divergent haplotypic (heterozygous) content and instead, our plots suggest our assembly to have relatively low heterozygosity, misassembles or frame-shifts (Mapleson et al., 2016; Figure 1F). The spectra also shows that rare k-mers (suspected errors in the reads, in black) are not found in the main distribution of the assembly. The content present once (in red) centres around the sequencing depth (~50 x) with a slight heterozygous shoulder (~25 x). To assess whether contigs that did not retrieve a blast hit were assembly artifacts, we removed them and replotted the k-mer spectra. We found that this removed content from the main part of the distribution, suggesting that these contigs are genuine and so they were retained (Figure 1F).
+
+**Table 1.**
+ Summary assembly statistics for Uromyces beticola (EI v1.1) genome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mean</th>
+      <th>29,880.49</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median</td>
+      <td>11,829</td>
+    </tr>
+    <tr>
+      <td>Min</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>554,123</td>
+    </tr>
+    <tr>
+      <td>N50[length]</td>
+      <td>294,203,835</td>
+    </tr>
+    <tr>
+      <td>N50[value]</td>
+      <td>74,005</td>
+    </tr>
+    <tr>
+      <td>L50</td>
+      <td>2309</td>
+    </tr>
+    <tr>
+      <td>Total length</td>
+      <td>588,346,853</td>
+    </tr>
+    <tr>
+      <td>Total sequences</td>
+      <td>19,690</td>
+    </tr>
+  </tbody>
+</table>
 
 To assess completeness of our U. beticola assembly and annotation, we used core gene presence in comparison to a range of other rust assemblies of smaller and equivalent size (Cantu et al., 2011; Link et al., 2014; Porto et al., 2019; Figure 1G). BUSCO (Simão et al., 2015) genome completeness places our U. beticola genome within the level of other rust assemblies (85.1% of the complete BUSCOs; 84.0% single copy). Moreover, the level of duplicated BUSCOs is low in comparison to other rust assemblies where divergent dikaryotic content may be more problematic (Figure 1G).
 
 The U. beticola genome annotation identified 9148 protein-coding genes (17,591 transcripts) with a mean transcript length of 2058 bp (6.4 exons per gene) and a mean coding sequence (CDS) length of 1240.9 bp (spliced from transcript in the annotation; see also Supplementary file 1). A large proportion of genes were annotated as transposable elements (6464 TEs) within this repeat-rich genome, in which low complexity and interspersed repeats represent 89.96% of the genome (see Supplementary file 1). Our reassessment of published rust genomes shows that this level of repeat content is consistent with such a large rust genome (Figure 1—figure supplement 1). Signal peptide information was used to define the secretome and then 225 putative effectors were identified using EffectorP2.0 (Sperschneider et al., 2018).
 
-## U. beticola is differentiated into two UK populations
+### U. beticola is differentiated into two UK populations
 
 Sugar beet cultivation in the UK is based around the four sugar processing plants in the east of England. We analysed genome-wide SNP diversity of U. beticola isolated from wild coastal sea beets and (agricultural) sugar beets from this region. We sequenced 46 isolates and, after quality control, 42 (mean depth = 18.9; SD = 5.5) were from either a wild sea beet (n=18) or a sugar beet crop (n=24; Appendix 1—table 1). Using 1.87 million SNPs, we assessed genetic diversity at three levels. First, we used principal component analysis (PCA) and then discriminant analysis of principle components (DAPC) to identify structure in the distribution of genetic variation among isolates. PCA was run on 307,041 linkage pruned SNPs and represented as a scatter and a neighbour joining (NJ) tree. Isolates differentiate into two clusters across the first principal component (PC1, Figure 2A) which separates a group containing only wild-infecting isolates from another group containing all crop-infecting isolates plus five northern wild isolates. A neighbour joining tree is not able to accurately depict relationships among recombining isolates. However, the NJ tree does reflect populations partitioned across PC1 in addition to different patterns of diversification in both clades, which is consistent with clonality and rapid spread in the agricultural clade (Figure 2A and B). The five wild isolates found in the agricultural clade are not found together within the same subclade. DAPC is a method that utilises data transformation by PCA as a prior step to discriminant analysis, is not biased by linked sites, and is able to partition in the presence of clonally related isolates. Using 1.87 million SNPs, all 41 PCs were retained to determine using the lowest Bayesian information criterion (BIC), that isolates are partitioned into two clusters (see Figure 2C, Appendix 2). Fifteen PCs were used in the DAPC analysis, and this confirms that clusters are entirely disentangled across a single discriminant function (Figure 2C), with individual membership of each cluster equal to one (Figure 2D).
 
@@ -79,7 +134,7 @@ We went on to explore the impact of increasing k values, specifically on the ass
 
 Network analyses were based on gene CDS regions from those genes with read coverage greater than 60% of the gene (per isolate). Low coverage genes, or gene absence did not appear to disproportionately impact one population. Low coverage impacted 87 out of 9148 genes. Most of these genes (48) were absent from all isolates. Seven genes were absent from the wild population, but they were also absent in the majority of individuals in the crop population. There was a high correlation between the presence of a gene in one population and that in another (r2=0.89; p=<2.2e-16). This was the case regardless of whether isolates were grouped by DAPC clustered populations or by host affiliation (see below & Appendix 3). This pattern of gene presence/absence in effectors was the same, where four effectors were absent in all isolates.
 
-## Effector genes provide evidence for adaptation
+### Effector genes provide evidence for adaptation
 
 The sugar beet crop is not in the ground year-round, and so our expectation is that this obligate biotrophic rust invades the crop from a more diverse wild pathogen population. Natural selection from a genetically depauperate crop is predicted to disproportionally impact effectors and somewhat determine the pathogen lineage that infects the monoculture. Therefore, gene and effector genetic diversity and differentiation values respectively represent a genome-wide distribution reflecting demography (i.e. migration and drift), as well as selective forces from the hosts and the environment. We investigated differences in genetic diversity and differentiation between effector and non-effector genes to begin to unpick these processes, our null expectation being that genes would have reduced genetic diversity, and they should fall randomly around an FST distribution, compared to more diverse and differentiated effectors (prediction B).
 
@@ -99,27 +154,27 @@ After demonstrating greater effector diversity in the wild reservoir population,
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91245/elife-91245-fig5-v1.jpg)
 
-**Figure 5.:** (A) Levels of nucleotide diversity plotted against genetic differentiation of effector (red) and non-effector genes (green). Genetic differentiation is significantly greater in effectors than non-effectors which suggests that more genes in this group are exposed to diversifying selection, favouring variation specific to each environment. (B) Polymorphic effectors are plotted against the non-effector F distribution, highlighting those effectors in the upper and lower ranges. (STC) Polymorphic effectors plotted in order of agricultural nucleotide diversity underlines the importance of assessing agricultural diversity against a non-crop background, because this highlights those effectors, that are fixed in agriculture, are those that are most differentiated. Known effector functions in the upper and lower ranges are included (A & B, see Source data 1).
+**Figure 5.:** (A) Levels of nucleotide diversity plotted against genetic differentiation of effector (red) and non-effector genes (green). Genetic differentiation is significantly greater in effectors than non-effectors which suggests that more genes in this group are exposed to diversifying selection, favouring variation specific to each environment. (B) Polymorphic effectors are plotted against the non-effector FST distribution, highlighting those effectors in the upper and lower ranges. (C) Polymorphic effectors plotted in order of agricultural nucleotide diversity underlines the importance of assessing agricultural diversity against a non-crop background, because this highlights those effectors, that are fixed in agriculture, are those that are most differentiated. Known effector functions in the upper and lower ranges are included (A & B, see Source data 1).
 
 Adaptation of virulence can also be mediated via effector silencing (Jeon et al., 2022). Unfortunately, this nuance is not adequately captured without expression data and, in this genome and resequencing data, we observe neither a signal of increased alternative splicing nor other high-impact nonsense mutations that could impact the functionality of the protein product (see Appendix 4).
 
-## How might diversity statistics be used to identify important candidates?
+### How might diversity statistics be used to identify important candidates?
 
 Effectors receive fewer functional annotations than non-effector genes, which is likely a consequence of the evolutionary pressure to avoid host recognition, causing rapid diversification to reduce sequence similarity and the prevalence of conserved domains and homologs (Franceschetti et al., 2017). However, functional annotations were associated with 134 shared effectors that have zero polymorphism across both populations and included, among others: Rust Transferred Protein (Pretsch et al., 2013), conserved across the Pucciniales Lorrain et al., 2019; Alpha-amylase, important for degradation of plant cell walls; CSEP-06 (Candidate Secreted Effector Protein), important in Asian soybean rust Elmore et al., 2020; and Glycine-serine-rich candidate effector (important in Stripe rust, Liu et al., 2022), a Sod Cu domain-containing protein, and a thioredoxin domain-containing protein, all of which are important for suppression of host induction of reactive oxygen species (ROS), a core host response for initiation of immunity and host cell death (see functions in Source data 1). Of those ubiquitous effectors that were found to maintain polymorphism (across both populations), we also identified functions associated with carbohydrate-binding – carbohydrate-active enzymes (CAZymes; UniProt: A0A165X6D7 Suzek et al., 2007) and DPBB 1, important for degradation of polysaccharides (e.g. cellulose) in plant cell walls (IPR009009 Blum et al., 2021; CATH 2.40.40.10 Sillitoe et al., 2021).
 
 We were particularly interested in the functions of the differentiated effectors but, unsurprisingly, there are even fewer known functions within this set (Figure 5B). PriA, important for priming DNA replication (Zavitz and Marians, 1991), has been associated with replication restart in response to DNA oxidative damage (Feng et al., 2011). The two most differentiated effectors in this study were also fixed in the crop population (Figure 5C). These differentiated and fixed genes are key to our understanding of selection within this population, which may be periodically bottlenecked by cropping. Unfortunately, we were not able to assign functions to these two highly differentiated fixed effectors Source data 1 and they remain important candidates for further investigation.
 
-## Reproduction may be partitioned between populations
+### Reproduction may be partitioned between populations
 
 Annual availability of the sugar beet crop may select specific pathogen genotypes from wild reservoir populations, but subsequent competition among pathogen genotypes on replicated crop hosts is expected to favour clonal reproduction, both because it is rapid but also because it preserves successful genotypic combinations (Ali et al., 2010). We next assessed the evidence for prediction C: that crop selection increases the rate of clonal to sexual reproduction in the population containing those isolates. Perhaps surprisingly, the level of heterozygosity is not significantly higher in the crop population, as might be expected if clonality were operating long-term (Figure 6A; median heterozygous site No.: Agri = 326,246,, Wild = 321,031; Wilcoxon W=225, p=0.332; e.g. Schwessinger et al., 2020). To understand the relative contribution of sexual and asexual reproduction in wild and crop populations, we assessed the level of inbreeding. The inbreeding coefficient, F, is a genotype-based metric that describes the proportion of genetic variation contained within an individual isolate relative to its subpopulation. In most cases, F scales between zero and one, indicating a continuum between random mating and complete inbreeding. We found that FIS is negative in all isolates of the crop population (Figure 6B). Negative FIS indicates excess heterozygosity and a role for the preservation of polymorphism via clonal reproduction (Balloux et al., 2003). The wild population also contains isolates with negative FIS values, but others are positive, and this population has significantly higher FIS on average (Figure 6B; Median FIS: Agri = −0.218, Wild = −0.074; Wilcoxon W=92, p-value = 0.008). This difference in FIS between wild and crop populations is consistent with a difference in the relative rates of sexual reproduction between these populations; clonal reproduction predominantly operates in agriculture, whereas reproduction is both clonal and sexual in the wild. Linkage disequilibrium is also informative for the rate of sexual reproduction (Nieuwenhuis and James, 2016). Given the fragmented, repeat-rich nature of the present genome, we prefer to use these genotypic measures of inbreeding and clonality. However, linkage-based analysis of recombination supported the opposite case, that recombination (4Ner) was indeed preserved to a greater degree in the agricultural population (Appendix 4). High contiguity phased assemblies are an important next step to resolve and discriminate the genotypic- and haplotypic-based signals.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91245/elife-91245-fig6-v1.jpg)
 
-**Figure 6.:** (A) The level of heterozygosity is not significantly different between crop and wild populations. Isolates that cluster within the crop population but were isolated on a wild host, are marked by cross in each panel. (B) Numbers of SNPs per isolate (within population), plotted against inbreeding coefficient (F). Wild rust isolates have fewer SNPs segregating within population and broadly distributed ISF values that tend more towards zero and above. Crop isolates have larger numbers of SNPs (within population) and ISF values that are significantly more negative on average. Negative ISF values are indicative of a heterozygous excess and consistent with clonal modes of reproduction, as are accumulation of mutations at the isolate level. (ISC) Numbers of homozygous and heterozygous SNPs per isolate (across all isolates). Each isolate is represented by a single bar where homozygous sites coloured by population (Agri = orange, Wild = cyan). Grey with red tips represents the number of heterozygous sites per isolate with the red tips indicating the proportion of those heterozygous sites that are in regions of excess heterozygosity. The vertical black line separates population total values (left, reaching 1.87 million SNPs) from isolate values (right). (D) Numbers of SNPs per isolate, here SNPs are in relation to all other isolates plotted against mean pairwise Neighbour-Net distance among all isolates, compared to panel B.
+**Figure 6.:** (A) The level of heterozygosity is not significantly different between crop and wild populations. Isolates that cluster within the crop population but were isolated on a wild host, are marked by cross in each panel. (B) Numbers of SNPs per isolate (within population), plotted against inbreeding coefficient (FIS). Wild rust isolates have fewer SNPs segregating within population and broadly distributed FIS values that tend more towards zero and above. Crop isolates have larger numbers of SNPs (within population) and FIS values that are significantly more negative on average. Negative FIS values are indicative of a heterozygous excess and consistent with clonal modes of reproduction, as are accumulation of mutations at the isolate level. (C) Numbers of homozygous and heterozygous SNPs per isolate (across all isolates). Each isolate is represented by a single bar where homozygous sites coloured by population (Agri = orange, Wild = cyan). Grey with red tips represents the number of heterozygous sites per isolate with the red tips indicating the proportion of those heterozygous sites that are in regions of excess heterozygosity. The vertical black line separates population total values (left, reaching 1.87 million SNPs) from isolate values (right). (D) Numbers of SNPs per isolate, here SNPs are in relation to all other isolates plotted against mean pairwise Neighbour-Net distance among all isolates, compared to panel B.
 
 To specifically investigate whether the heterozygosity associated with the inbreeding coefficient could have been caused by other processes, we looked for an association with other features of the genome, as excess heterozygosity could also be caused by repeat content and erroneous heterozygosity via read mismapping. Blocks of excess heterozygosity (consecutive sites of excess heterozygosity based on a 5% significance level using the Hardy-Weinberg equilibrium test) impact crop and wild populations to different extents. We found that the crop population has approximately 22 thousand blocks (two or more consecutive excess heterozygous sites) where the wild population has less than ten thousand blocks (mean block length: Agri = 227.7 bp, Wild = 124.0 bp; mean No. excess heterozygous sites: Agri = 5.1, Wild = 5.9). We found no association between these blocks of excess heterozygosity with repeat or genic regions (Fisher’s exact test for all cases: Agri-interspersed repeats, Agri-all repeats, Agri-protein-coding genes, Wild-interspersed repeats, Wild-all repeats, Wild-protein-coding genes; p=1). Therefore, we do not believe genotypic estimates for differential levels of inbreeding are caused by read mismapping.
 
-## Host versus population grouping of rust isolates highlights non-effector genes
+### Host versus population grouping of rust isolates highlights non-effector genes
 
 The analyses described thus far were based on population diversity evidence that placed five wild isolates within an agricultural clade. There are several arguments that might account for this observation. First, there is no reason to expect that a crop-host isolate lineage can never infect a wild host, particularly given the prevalence of these isolates and the expectation that this crop population may have been seeded from a wild isolate. Unfortunately, host sequencing coverage was too low to identify any relationship between host and pathogen genetic diversity (Appendix 1—table 1). We did additional analysis of pathogen data under a strict crop-host and wild-host criterion. In essence, this involved moving the five wild-host isolates found in the crop-host population, into the wild-host population, introducing nucleotide diversity. By forcing this direct split between wild-host and crop-host isolates we were interested to see whether there were effectors that increased levels of differentiation. There was a strong positive correlation between differentiation at all genes using both partitioning regimes and, as expected, the population partition had higher levels of differentiation (Appendix 5). This strong correlation preserved the signals observed in the previous (DAPC-based) analysis, albeit to a lesser degree. Effectors were also no more differentiated among host-partitioned isolates than for population partitioning.
 
@@ -127,13 +182,13 @@ The analyses described thus far were based on population diversity evidence that
 
 Here, we explored the potential for population genetic measures to describe the processes underlying contemporary crop pathogen adaptation and invasion. In doing so, we set out to highlight the importance of sampling and analysing a genetic reservoir outside of the agricultural system as a means of identifying genes important for survival within that agricultural system. This wild reservoir population’s genetic diversity would not have been visible had we only sampled the crop. Agriculture is a recent phenomenon and all plant pathogens, until crop domestication, evolved on wild relative hosts (Weisberg et al., 2021). Crop pathogens must therefore specialise, and we reasoned that the contemporary signal of this will be present in their genomes as: (A) population structure partitioned by wild and crop hosts, (B) polymorphism favoured at host interaction (effector) genes, in addition to (C) skewed reproduction towards clonality on their monoculture crop hosts (versus wild hosts). Analyses were selected because they can be applied to any gene or fragmented genome and have applications towards pathogen genomic surveillance (Peers et al., 2024).
 
-## Beet rust is differentiated into two populations in the UK
+### Beet rust is differentiated into two populations in the UK
 
 We found evidence for (prediction A) two populations overall – the population containing all the crop isolates spanned the 200 km sugar beet cropping area and surrounded the second, wild coastal population. Crop isolates were sampled just 10 km from these wild isolates at their nearest point. It is perhaps not surprising that all crop isolates belonged to the same population. However, as well as living on all crop hosts, this population continued outside of the beet cultivation area, northwards on sea beets, to the edge of our sampling range. Therefore, this crop population also included five northern wild isolates (24 crops and five wild isolates). Population genetic assignment, using PCA, DAPC, network, admixture, and machine learning analyses all identified these five northern sea beet isolates within this crop population, finding that they were no more admixed than crop isolates and did not occupy their own subclade of the network. This finding is perhaps consistent with the expectation that crop populations invade from a wild source (as well as reinfect). Without broader sampling into the northern wild range, or temporal sampling, we cannot speculate on the broader metapopulation dynamics of the source of the crop lineage and its turnover. However, host diversity is likely an important determinant of pathogen diversity and preliminary evidence from wild beet inoculation trials shows that northern (Humber) hosts represent both a distinct genetic group and have reduced resistance to crop rusts (Yvanne, et al., in prep).
 
 To address whether a strict definition of a pathogen’s host affiliation impacted our results, we also analysed diversity under that definition, ignoring population structure. As expected, this reduced the overall level of differentiation among populations but the signal in effectors remained (see below).
 
-## Genetic reservoirs of effectors and their selection
+### Genetic reservoirs of effectors and their selection
 
 Effectors had greater nucleotide diversity than non-effectors in the wild population but not in the crop-infecting population, which is consistent with the maintenance of polymorphism by balancing selection in the wild (Hughes and Yeager, 1998). This, and the observation that effectors were significantly more differentiated between wild and crop-infecting populations on average, are consistent with prediction B and suggests diversifying selection (host resistance) operating to distinguish diversity between populations. This is interesting because we do not discount the potential for effector diversity selected for both populations, reducing differentiation (Muirhead, 2001; Schierup et al., 2000). We indeed expect that this is also the case for a given subset of effectors, which makes our finding more remarkable.
 
@@ -141,7 +196,7 @@ Resistance gene durability, rapid breakdown, and effector evolution is an area o
 
 Genetic differentiation could be one of several criteria applied to define the importance of genes that are particularly successful on crop hosts. The absence of a barrier to gene flow between wild-host and crop-host isolates also provides a source of novel effector polymorphism (McCann, 2020) and so the level of genetic differentiation at both extremes can inform on the importance of diversity as well as sources of introduction. Effectors in general tend to receive fewer functional annotations and, interestingly, differentiated effectors identified in the present study have fewer known functions compared to those pervasive effectors that are preserved in both wild and crop populations, and also tend to be retained among species. The present work provides a framework to identify agriculturally adapted gene candidates and subsequently identify the mechanisms that facilitate that adaptation via introgression and recombination.
 
-## Partitioning modes of reproduction
+### Partitioning modes of reproduction
 
 Rusts are among those fungi able to partition sexual (recombination) and clonal life stages (Figueroa et al., 2020), and this strategy makes them particularly suited to invasion (Gladieux et al., 2015a). The beet rust lifecycle is autoecious (Kristoffersen et al., 2018) but the advantages of clonality (i.e. preservation of successful combinations of effectors and rapid spread on temporally available crop hosts), are as present as the advantages of recombining effectors on pervasive sexual wild hosts. Our third prediction (C), therefore, was that despite potentially high levels of gene flow (or frequent invasion), the advantages of clonal reproduction on crops would impose enough of a constraint to allow us to observe an increase in the signal of clonality in our crop-host pathogen population. Our observations here were mixed. At the genotypic level, we used isolate heterozygosity to observe a signal of clonality across the crop population. Incidentally, our five northern wild isolates from this crop population also had this signal of elevated inbreeding. Importantly, isolates from the wild reservoir population also carried signals of inbreeding alongside outbreeding, although significantly higher levels of outbreeding overall. These regions of heterozygous excess were not associated with repeats, which is consistent with an increase in the rate of clonality in agriculture, where clonal lineages preserve their heterozygosity (Balloux et al., 2003). At the haplotypic level, however, the estimated rate of recombination was greater for the crop-infecting population compared to the wild.
 
@@ -151,7 +206,7 @@ Investment in clonal or sexual reproduction can vary with environmental heteroge
 
 Crop pathogens represent a rare opportunity to study the trade-off of clonality and sex. Wheat stripe rust has bouts of clonality spanning decades where increased levels of isolate heterozygosity is believed to be driven by lack of a local sexual host (Schwessinger et al., 2020). The long term impact being that the incidence of clonal wheat rust epidemics appears related to the proximity of its sexual host (Mojerlou et al., 2025). M. lini also shows temporally varying levels of clonality associated with epidemic spread on flax (Linum marginale) (Susi et al., 2020). Balloux et al., 2003 state that mixed clonal and sexual reproductive modes are nearly indistinguishable from strict sexual reproduction. The fact that we observe excess heterozygosity in most isolates, with the wild population being impacted to a lesser extent, suggests that sexual reproduction may be infrequent in the wild and perhaps removed from agriculture by clonal spread post-invasion (Maynard Smith et al., 1993). This is despite polymorphism being low (e.g. 44.6% polymorphic gene CDS), perhaps suggesting temporally fluctuating population size. Sex and the rate of clonality, inflation of effective population size, and gene flow with boom and bust dynamics make accurate modelling of the population difficult (e.g. Susi et al., 2020). The future impact of climate change on the availability of novel environments and environmental heterogeneity further complicates our ability to protect crops. A better understanding of genotypic- and linkage-based factors are important for this beet-rust system, but must be combined with work on the impact of lifestyle on invasion dynamics (Taliadoros et al., 2025, in revision) to allow analysis of crop pathogen genetic diversity with reservoir populations in mind. Estimation of linkage and the rate of sex is not only critical to our ability to determine where novel pathogen lineages come from, but how they continue to adapt and overcome novel sources of host resistance and treatment.
 
-## Genomic tools for population genetics
+### Genomic tools for population genetics
 
 Identifying pathogen reservoirs of diversity is arguably the first step in determining sources of introgression (or recombination). Single isolate, high contiguity phased assemblies allow differentiation and divergence metrics to be plotted at the genome level, but gene level analyses as applied here provide excellent insight from reduced resources, in the sense of sampling, sequencing, and/or assembly (Peers et al., 2024). To explore crop-wild plant pathogen diversity we generated the first assembly and annotation of U. beticola and developed a method to extract pathogen DNA for population analyses which reduces host DNA contamination. The fungal peel-sequencing method was originally developed for microscopy and was repurposed here to allow us to paint on, peel off, and genome sequence rust pustules from the surface of a leaf. This peel sequencing method was used for re-sequencing and population genetics and approximately doubled the number of isolates we could sequence.
 
@@ -159,13 +214,13 @@ The ~600 Mbp U. beticola genome is large for a fungus, but not for a rust (Loehr
 
 Pathogen genetic reservoirs may be operating in a number of crop wild relatives, or alternative hosts. Many agronomically important rusts have an alternate host which is used by the fungus to enter its sexual phase (Aime et al., 2017). In the case of the wheat rusts, hundreds of years before a causative link was established, superstition drove the removal of its alternative host, Berberis, from cereal-growing regions (Barnes et al., 2020). U. beticola reproduces on wild sea beet and, the permanent proximate availability of this host offers an explanation as to why we have not observed such divergence of karyon in U. beticola.
 
-## Conclusions
+### Conclusions
 
 Once we acknowledge that crop pathogens exchange genetic variation and even invade from (non-crop) genetic reservoirs, we underline the importance of incorporating these ideas into our understanding of how crop pathogens overcome host resistance. We set out to explore the utility of analysing genetic diversity of crop pathogens against a non-crop (wild) background, to highlight crop isolate polymorphism which would not otherwise have stood out as important for adaptation and emergence. In this first analysis of the beet-rust system we found, as expected, that effectors were disproportionately impacted by predicted host selection. In line with aims to reduce the blanket use of fungicides (Kristoffersen et al., 2018; Langdale, 2021), identification of potential sources of pathogen emergence will allow more targeted treatment of those agricultural areas deemed important for invasion. Further investigation of this system will shed light on these areas, but analysis of multiple systems using a crop-reservoir framework will improve our understanding of pathogen evolution. This broader knowledge has implications for crop protection via pathogen surveillance, virulence gene identification, and emergence prediction.
 
 ## Materials and methods
 
-## Genome assembly and annotation of U. beticola
+### Genome assembly and annotation of U. beticola
 
 A rustinfected sugar beet plant from Norfolk was placed in a Snijders growth cabinet (16 hr day at 16°C and 14°C at night) to allow the infection to progress in the absence of agitation by wind and rain. Multiple pustules (Figure 1) from a single heavily infected leaf (sampled in Garboldisham, Figure 3A) were broken and spores collected for DNA extraction (see below for CTAB details) for DISCOVAR PCR free library preparation and sequencing (Weisenfeld et al., 2014). A HiSeq 2500 (Illumina inc) was used to sequence 43.8 Gbp of data which was estimated to be 73 x coverage based on genome size estimates of ~600 Mbp generated using k-mer coverage of skim sequenced peels (Supplementary file 3). Post assembly, contigs less than 1 Kbp were removed as they don’t represent real terms increase in the span of a single read pair. ABySSv2.0.2 (Simpson et al., 2009), KATv2.3.4 (Mapleson et al., 2016), BlobTools v0.9.19 Laetsch and Blaxter, 2017 and BUSCOv4.0 (Simão et al., 2015; against basidiomycota_odb10) were used to assess genome content, contiguity and completeness. BlobTools was used to retain contigs with BLAST hits to Basidiomycetes as well as those without a hit.
 
@@ -195,6 +250,77 @@ AUGUSTUS was run three different ways by assigning higher bonus scores and prior
 
 Run1: Run utilizes the evidence hints generated from Mikado transcript models, RNA-Seq Portcullis junctions, cross-species protein alignments (filtered at 80% coverage and 50% identity), RNA-Seq read coverage, and interspersed repeats by using the sources and priorities (Table 2).
 
+**Table 2.**
+ Evidence sets for AUGUSTUS run in three ways.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Evidence</th>
+      <th>Run1</th>
+      <th>Run2</th>
+      <th>Run3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mikado Transcript Gold</td>
+      <td>Source M; Priority 10;</td>
+      <td>Source M; Priority 10;</td>
+      <td>Source E; Priority 10;</td>
+    </tr>
+    <tr>
+      <td>Mikado Transcript Silver</td>
+      <td>Source F; Priority 9;</td>
+      <td>Source F; Priority 9;</td>
+      <td>Source E; Priority 9;</td>
+    </tr>
+    <tr>
+      <td>Mikado Transcript Bronze</td>
+      <td>Source E; Priority 8;</td>
+      <td>Source E; Priority 8;</td>
+      <td>Source E; Priority 8;</td>
+    </tr>
+    <tr>
+      <td>Mikado Transcripts</td>
+      <td>Source E; Priority 7;</td>
+      <td>Source E; Priority 7;</td>
+      <td>Source E; Priority 7;</td>
+    </tr>
+    <tr>
+      <td>Portcullis Pass Gold (score = 1)</td>
+      <td>Source E; Priority 6;</td>
+      <td>Source E; Priority 6;</td>
+      <td>Source E; Priority 6;</td>
+    </tr>
+    <tr>
+      <td>Portcullis Pass Silver (score &lt;1)</td>
+      <td>Source E; Priority 4;</td>
+      <td>Source E; Priority 4;</td>
+      <td>Source E; Priority 4;</td>
+    </tr>
+    <tr>
+      <td>Proteins</td>
+      <td>Source P; Priority 4;</td>
+      <td>Source P; Priority 4;</td>
+      <td>Source P; Priority 9;</td>
+    </tr>
+    <tr>
+      <td>RNA-Seq Coverage Wig Hints</td>
+      <td>Source W; Priority 3;</td>
+      <td>NONE</td>
+      <td>NONE</td>
+    </tr>
+    <tr>
+      <td>Repeats</td>
+      <td>Source RM; Priority 1;</td>
+      <td>Source RM; Priority 1;</td>
+      <td>Source RM; Priority 1;</td>
+    </tr>
+  </tbody>
+</table>
+
 Run2: Run uses same evidence hints as Run1, except that we do not use the RNA-Seq read coverage hints.
 
 Run3: Run uses same evidence hints as Run2, except that we give higher weightage to the cross-species protein alignments, and we also change the priorities (Table 2).
@@ -203,27 +329,27 @@ The final set of gene models was selected using Minos (see Supplementary file 2,
 
 Assignment of gene biotypes and confidence classification of gene models as biotypes ‘protein-coding gene,’ ‘predicted gene,’ and ‘transposable element gene’, and assigned as high or low confidence based on below criteria:
 
-## High confidence protein-coding gene
+#### High confidence protein-coding gene
 
 Any protein-coding gene where any of its associated gene models have a BUSCO v4.0.6 (Seppey et al., 2019) protein status of Complete/Duplicated OR have blastp (v2.9.0+) coverage (average across query and target coverage) ≥ 80% against the list protein datasets mentioned in Section 4. Or alternatively have average blastp coverage (across query and target coverage) ≥ 60% against the list protein datasets AND have transcript alignment F1 score (average across nucleotide, exon, and junction F1 scores based on RNA-Seq transcript assemblies) ≥ 40%.
 
-## Low confidence protein-coding gene
+#### Low confidence protein-coding gene
 
 Any protein-coding gene where all of its associated transcript models do not meet the criteria to be considered as high confidence protein-coding transcripts.
 
-## High confidence transposable element gene
+#### High confidence transposable element gene
 
 Any protein-coding gene where any of its associated gene models have coverage ≥ 40% against the combined interspersed repeats mentioned in Section 5. Gene build/Repeats section.
 
-## Low confidence transposable element gene
+#### Low confidence transposable element gene
 
 Any protein-coding gene where all of its associated transcript models do not meet the criteria to be considered as high confidence and assigned as a transposable element gene (see c).
 
-## Low confidence predicted gene
+#### Low confidence predicted gene
 
 Any protein-coding gene where all of its associated transcript models do not meet the criteria to be considered as high confidence protein-coding transcripts. And, in addition where any of the associated gene models have average blastp coverage (across query and target coverage)<30% against the list protein datasets mentioned in Section 4 AND having a protein-coding potential score <0.25 calculated using CPC2 0.1 (Kang et al., 2017).
 
-## Discarded models
+#### Discarded models
 
 Any models having no BUSCO protein hit AND no protein alignment score (average across nucleotide, exon, and junction F1 scores based on protein alignments) AND no transcript alignment F1 score (average across nucleotide, exon, and junction F1 scores based on RNA-Seq transcript assemblies) AND no blastp coverage (average across query and target coverage) AND Kallisto v0.44 (Bray et al., 2016) expression score <0.3 from across RNA-Seq reads OR having short CDS <30 bps.
 
@@ -231,7 +357,7 @@ All proteins were functionally annotated using AHRD v.3.3.3 (Hallab et al., 2017
 
 In plant pathogenic fungi, gene products that are secreted outside of the fungal cell and into the host are considered candidate host interaction genes, potentially facilitating infection. These putative effectors are identified here using signal peptide information, genes with the presence of a signal peptide using SignalP v3.0: (-s notm -u 0.34; Bendtsen et al., 2004) and the absence of transmembrane or mitochondrial localization signals using TMHMM v2.0 and TargetP-2.0 Server (Emanuelsson et al., 2007) were finally assessed for sequence similarity to known effectors using EffectorP2.0 (Sperschneider et al., 2018). These putative effectors (henceforth, effector) were not functionally validated in the present study. However, we did use signals of diversity and differentiation to begin to categorise effectors into those that were more differentiated. This was initially done for those polymorphic effectors in the five percent most extreme levels of the differentiation scale, however, because effectors in general receive fewer functional annotations in the databases, none of those effectors had a functional annotation (Supplementary file 2 and Source data 1). Therefore, we broadened this criterion to those in the top twenty-five percent of the non-effector gene distribution. Future work to formally characterise differences in pervasive effectors from crop-adapted ones will shed light on the roles of these genes.
 
-## U. beticola isolate collection and sequencing
+### U. beticola isolate collection and sequencing
 
 To identify wild sample sites, in 2015 we explored coastal sites on the east of England where sea beet was known to grow. To help locate these sites we used a number of online records of beta maritima distributions as a guide, such as the Botanical Society of Britain and Ireland species distribution list (https://database.bsbi.org/maps/), the Online Atlas of the British and Irish Fauna (https://plantatlas.brc.ac.uk/) and the National Biodiversity Network Atlas (https://nbnatlas.org/). Between the months of September 2015 to December 2016, samples of numerous beet folia pathogens (546) were collected as leaf peels (see below). Wild sites of approximately 5 km were surveyed to identify beets and their infections and wild sea beet rust samples (81) were collected from UK east coast sites between Southminster and Hull (~370 km of coastline). Sugar beet rust samples (326) were collected by the British Beet Research Organisation (BBRO) by beet growers covering approximately the same latitudes (~200 km). For wild sites, we sampled multiple plants at different patches per site, that ranged in size from a few hundred meters to approximately 5 km (Supplementary file 2).
 
@@ -241,11 +367,11 @@ Peels were ground using one 4 mm and five 1 mm stainless steel ball bearings in 
 
 Libraries prepared using leaf peels can differ in levels of biological contamination (from the host and from other leaf surface microorganisms). To avoid sequencing heavily contaminated peels we screened our samples using skim sequencing. Data from two lanes of HiSeq2500 (125PE, Illumina Inc) was used to align the reads to the rust reference (Samtools view -q 60; see below). Rust samples considered for resequencing were from those 300 libraries with the greatest coverage of the reference (see Supplementary file 3). In total, there were 404 rust samples with a mean mapping coverage of 8.4 mb, ranging from 280 bp-18.78kbp, with the top 300 samples having a read coverage of greater than 8mbp. Libraries were prepared using the LITE method Perez Sepulveda et al., 2020 and 46 isolates were genome sequenced at the Earlham Institute on nine lanes of an Illumina HiSeq4000 (150PE, Illumina Inc) generating ~750 Gbp of read data.
 
-## Mapping and SNP calling
+### Mapping and SNP calling
 
 Reads were quality trimmed (minimum length 90, quality 30, --paired; Trim_Galore v0.4.0; Babraham Institute, Cambridgeshire, UK). Reads were then aligned to the reference using BWA mem (Li, 2013), SAMtools v1.5 (Li et al., 2009), and BCFtools v1.3.1 were then used to sort and remove duplicate reads and mpileup (-t DP) to call variants (bcftools call -c). VCFtools v0.1.13 (Danecek et al., 2011) was used to filter SNPs to an isolate minimum depth of five, maximum depth of 1.8x mean depth per isolate, and a minimum genotype quality of 30. SNP sites with more than two alleles were excluded as probable errors. Finally, sites that were missing in 30% or more isolates were also removed. Four isolates were removed from further analysis because their average depth was less than 10 x leaving 42 isolates for population analyses (Appendix 1—table 1).
 
-## SNP diversity and differentiation analysis
+### SNP diversity and differentiation analysis
 
 Population differentiation was determined using principal component analysis and discriminant analysis of principal components (Adegenet:PCA, Jombart, 2008; DAPC, Jombart et al., 2010; vcfR v1.12.0, Knaus and Grünwald, 2017). PCA was based on 307,041 linkage-filtered SNPs (PLINK v2.0.0, -indep 50 10 0.1; Purcell et al., 2007) and DAPC based on all 1.87 million SNPs. The find.clusters (2-20) function, with all 41 principal components, identified two genetic clusters based on the lowest Bayesian information criterion (BIC). DAPC was then run using 15 principal components, accounting for 68.7% of the conserved variance. Clone correction (mlg.filter) was conducted using a filtered SNP dataset using 1 SNP per 100 Kbp (1.1% of the total) and no clonal genotypes were condensed in the dataset regardless of the threshold used from filter_stats (farthest, average, or nearest). All 42 isolates were retained for further analysis.
 

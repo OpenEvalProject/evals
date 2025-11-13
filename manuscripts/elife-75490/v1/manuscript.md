@@ -18,11 +18,11 @@
 
 ### Affiliations
 
-1. https://ror.org/020f3ap87 Department of Biochemistry & Cellular and Molecular Biology, University of Tennessee Knoxville United States
-2. https://ror.org/02ymw8z06 Department of Physics and Astronomy, University of Missouri Columbia United States
-3. https://ror.org/020f3ap87 Department of Chemistry, University of Tennessee Knoxville United States
-4. https://ror.org/02ymw8z06 Department of Biochemistry, University of Missouri Columbia United States
-5. https://ror.org/02ymw8z06 Electron Microscopy Core, University of Missouri Columbia United States
+1. Department of Biochemistry & Cellular and Molecular Biology, University of Tennessee Knoxville United States ([ROR:020f3ap87](https://ror.org/020f3ap87))
+2. Department of Physics and Astronomy, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
+3. Department of Chemistry, University of Tennessee Knoxville United States ([ROR:020f3ap87](https://ror.org/020f3ap87))
+4. Department of Biochemistry, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
+5. Electron Microscopy Core, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
 
 † Corresponding author
 
@@ -40,13 +40,41 @@ Here, we describe how the use of biophysical techniques (mass photometry, native
 
 ## Results
 
-## CL assembles into polymers in solution
+### CL assembles into polymers in solution
 
 When we ran CL on an SDS-PAGE, we observed not only the expected monomeric band running at ~4 kDa, but also a band of slower electrophoretic mobility (Figure 1A). This result suggests that CL self-assembles in solution, and we hypothesized that this event might be related to its ability to damage cellular membranes. We therefore investigated CL oligomerization, first using native ion mobility-mass spectrometry (IM-MS), a sensitive analytical technique that can isolate and characterize transient oligomers based on their mass-to-charge ratio (m/z), shape, size, and charge. IM-MS analysis of CL revealed several oligomeric species (Figure 1B). The mass spectral peak at m/z 3311, which corresponds to a nominal oligomer-to-charge ratio (n/z) of 1/1, was notable due to its high intensity when compared to the surrounding oligomers. Analysis of the arrival time distributions (ATD) of this mass spectral peak (Figure 1C) revealed two features that correspond to higher-order CL oligomers. We conservatively assigned the longest arrival time feature (salmon) as an 8-mer with z = +8. This assignment was performed comparing the isotopic spacing and drift time of the features within the ATD with other mass spectral peaks (see Figure 1—figure supplement 1). Since a species with a high charge will travel faster than one with a lower charge, the fastest arrival time species (green) is proposed to be a large oligomer resulting from the self-assembly of the 8-mer. The ATD data therefore suggest that CL forms an 8-mer that self-assembles. Given that CL adopts helical structure in solution (Moyes et al., 2016), we built an atomistic model of the 8-mer by aligning CL’s sequence into the eight-helix coiled coil formed by CC-Type2-II (PDB ID 6G67). After the resulting structure was energy minimized (Figure 1—figure supplement 1), the theoretical collisional cross-section of the model, 2500 Å2, agreed with the experimental value of 2567 Å2.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig1-v1.jpg)
+
+**Figure 1.:** (A) SDS-PAGE of CL shows a~4 kDa monomeric band, and a band corresponding to a large oligomer. Molecular weight markers are shown on the left. (B) IM-MS mass spectrum of CL annotated with oligomer-to-charge (n/z) ratios. The inset spectrum reveals oligomers that are not immediately identifiable in the top spectrum. (C) Arrival time distribution of the 8-mer (n/z=1/1) species. This peak was more populated than those corresponding to smaller oligomers, which might result from decomposition of the 8-mer in the gas phase. The experimental collisional cross section for the single 8-mer (highlighted in salmon) is given. (D) Analytical ultracentrifugation data identifies populations of increasingly larger CL oligomers. (E) Mass photometry data of CL oligomeric species. The green area marks the approximate mass range (<50 kDa) below the resolution of the technique. Data distribution was best fit with six Gaussian populations (shown as blue lines, and summary fit is the black line). The mass of the peaks agree with the expected mass for 2, 3, 4, 8, 13, and 22 CL 8-mers (similar to a Fibonacci sequence).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The 2D-ion mobility plot and corresponding arrival time distribution of m/z 3311. It is unambiguous from the isotope spacings that the peaks represent multiple very high charge state species. Our instrument can routinely discern up to z = +6 within the ion mobility plot, but in this case, the spacing of the most abundant species is too small to be resolved. The trimer is largest species with a resolved isotopic spacing as shown in panel A. We conservatively assigned the feature next to the trimer as a tetramer. Note that the difference in arrival time of the features decrease from the dimer to the trimer (4ms), and the trimer to the tetramer (1.61ms). One would expect the arrival time difference between the tetramer and a pentamer to be smaller than 1.61ms, since the contribution of one monomeric unit decreases as the oligomeric assembly grows. However, the difference in arrival time of the tetramer to the most intense feature is 2.92ms, which allows us to deduce that this feature must be a large oligomer (n>5). (B) Mass spectral peak of m/z 3311. Spacing that roughly correlates to z = +8 are highlighted within the spectrum. This leads us to believe that the previously unknown feature (blue arrow) in panel A is that of an octamer with z = +8. (C) Comparison of arrival time distributions of higher-order Candidalysin oligomers. For m/z 3311, the collisional cross section for the feature highlighted in red is calculated under the assumption that this feature is an octamer. We note that the species at n/z=7/8 and 8/9 exhibit faster arrival times compared to the putative n/z=8/8. This follows the expectant logic since n/z=8/9 has a higher charge state than n/z=8/8, and thus traverses the drift cell faster. On the other hand, n/z=7/8 has the same charge state as n/z=8/8, but is a smaller oligomer, which results in a shorter arrival time. (D) Atomistic model of the CL 8-mer, with a molecular weight of 26.5 kDa. Each monomer helix is colored differently, and the C- and N-termini are marked.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gaussian fitting of the MP data of CL WT. The table shows the fitting parameters and the resulting errors. BIC (Bayesian information criterion) analysis was used to determine the optimal number of Gaussian terms for the fitting. (B) The relative mass of the six Gaussian components shows that the first peaks, corresponding to two, three, five and eight 8-mers, are the most abundant species, and are similarly populated.
 
 We used two additional biophysical methods to confirm and further investigate CL oligomerization in solution. We first performed analytical ultracentrifugation of CL (Figure 1D). The sedimentation velocity results reveal a low sedimentation peak, likely corresponding to a CL monomer, and several larger assemblies, in agreement with the IM-MS data analysis. We next used mass photometry (MP), a technique that allows mass determination of biomolecules with single-molecule resolution from their combined light scattering and reflection signature (Asor and Kukura, 2022). While MP is insensitive to the mass of an CL 8-mer (26.5 kDa), as the resolution of the instrument is limited to particles >50 kDa, MP has high sensitivity to larger species. Figure 1E displays MP data of CL, consisting of a main peak and a long tail. The main peak agrees with the mass of two bound 8-mers, while the larger mass peaks would correspond to the progressive assembly of 8-mers (see Figure 1—figure supplement 2). The long tail of the MP data reaches beyond 600 kDa, which would correspond to the assembly of tens of 8-mers. Taken together, the four techniques reveal that CL readily forms large oligomers in solution and suggest that the 8-mer is the seed for CL self-assembly into large structures.
 
 We employed microscopy to resolve the assemblies that CL forms in solution. We first performed negative-stain transmission electron microscopy (TEM), and observed that CL does not form amorphous aggregates, but instead assembles into linear structures (Figure 2A). The TEM data revealed a basic structural unit, which seemed to grow in a step-wise fashion into polymers (Figure 2A, side panels). The longer polymers curved, and in some cases closed in on themselves, forming a loop with diameter ≥10 nm. We further studied CL polymerization by atomic force microscopy (AFM) since this technique provides high resolution images of single particles and can also be readily used to image membrane pores (Dufrêne et al., 2017). AFM images of CL adsorbed onto mica in buffer (Figure 2B) agreed with the TEM results and confirmed that CL polymerizes and can form loops. The bending stiffness of CL polymers was calculated from AFM images through persistence length, Lp, analysis (Lp = 9 nm±2 nm, N=100, Figure 2—figure supplement 1). The bending stiffness of linear CL polymers is significantly lower than other biological polymers, like actin fibers (Gittes et al., 1993), explaining the ability of CL polymers to close into loops.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig2-v1.jpg)
+
+**Figure 2.:** (A) TEM reveals CL polymerization; scale bar = 100 nm. Features of growing complexity are magnified in the side panels; scale bar = 10 nm. (B) AFM imaging in fluid shows overall agreement with TEM data; scale bar = 100 nm. Four similar CL features are also highlighted in the side panels; scale bar = 10 nm. (C) Smoothed volume histogram of N=7838 individual features (solid black line) fitted with Gaussian distributions (solid colored lines, summary fit is the gray dashed line). The inset compares the experimental volume of the first four peaks (squares colored as in panel C) with simulated volumes (black diamonds) calculated from N 8-mers. The cartoon shows an example of head-to-toe assembly of two 8-mers. Error bars for the peak positions represent the standard deviation. (D) When the height of the individual features was measured, it yielded a bimodal distribution, with heights of 3.2 nm and 4.6 nm. The insets show the two proposed orientations of the 8-mer. The topographic surface is overlaid to show convolution of the AFM tip.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) AFM images of CL in solution yield a persistence length, Lp, of 9±2 nm. The value was calculated from a fit (solid line, coefficient of determination = 0.87) to the mean square end-to-end distance of N=100 polymers. (B) An identical value of Lp (within uncertainty of the analysis) was obtained by calculating the decay of tangent-tangent correlations. I9A in solution yielded a persistence length, Lp, of 13±2 nm. The value was calculated from the exponential decay (solid line) of tangent-tangent correlations of N=100 polymers. Inset: The angle q is defined by polymer segments separated by a distance l along the contour of the polypeptide.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** AFM volume analysis indicates that the subunit observed to consitute the polymer seed is significantly larger than a peptide monomer. Based on comparison between simulated and experimental data, the primary subunit volume peak is at least a pentamer, but probably larger due to tip deconvolution.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Comparison of N 8-mer subunits in the side orientation arranged either linearly or with an added curvature (Scale bar = 15 nm). Volumes are plotted for each particle showing larger volumes for curved polymers. Error bars for the peak positions represent the standard deviation.
 
 Examination of AFM images containing thousands of particles yielded a volume distribution with a sharp peak and a long tail (Figure 2C), which resembles the distribution observed in the MP data (Figure 1E). Such agreement suggests that the AFM results are robust and are not caused by spurious interactions with the AFM tip. The AFM volume histogram was deconvolved by fitting Gaussian distributions, revealing a primary peak and several larger sub-populations of larger volumes (Figure 2C). The volume increased in approximately constant steps between the populations (see side panels of Figure 2B), confirming that a basic intermediate oligomer grew first by dimerization, followed by sequential addition to further increase linear polymer length.
 
@@ -54,27 +82,75 @@ We measured the height of the individual particles observed by AFM, and the resu
 
 Polymer growth of CL 8-mers in the horizontal orientation (lying flat on a surface) can occur by addition of a second 8-mer in two fundamental modes, side-by-side or head-to-toe. When we modeled the latter arrangement for the assembly of two, three, and four head-to-toe 8-mers (Figure 2C, inset), we found agreement between the simulated and experimental AFM volumes (Figure 2C, inset; Figure 2—figure supplement 3). Taken together, the data indicate that a CL polymer is formed when a basic subunit, which our results suggest is an 8-mer, is aligned in the longest dimension, and grows by sequential head-to-toe addition of additional subunits.
 
-## CL forms two classes of membrane pores
+### CL forms two classes of membrane pores
 
 CL mediates C. albicans infection by damaging the integrity of the plasma membrane of human cells (Moyes et al., 2016). It has been proposed that CL forms membrane pores (Moyes et al., 2016), but such structures have never been observed. We performed AFM imaging on supported lipid bilayers made of DOPC (1,2-dioleoyl-sn-glycero-3-phosphocholine) to gain insights into how CL causes membrane disruption. We observed that in the presence of CL, bilayers indeed exhibited punctate depressions commonly associated with pores (Figure 3A). Though the AFM tip is sharp (nominal radius ~8 nm), the pores’ radii were often smaller than the tip, preventing passage all the way through the 4-nm-thick membrane, which cause artificially shallow readings (Pittman et al., 2018; Schaefer et al., 2022; Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig3-v1.jpg)
+
+**Figure 3.:** Representative images showing predominantly unrimmed (A) and rimmed (B) pore features in supported DOPC membranes; scale bars = 100 nm. The insets show zoomed views of green boxed features; scale bars = 10 nm. (C) Area histograms show that unrimmed pores (gray line) display a broad peak at 41±25 nm2 (mean ± S.D.) with a shoulder at ~130 nm2, similar to loops found in solution (38±21 nm2, aqua blue line). In contrast, the rimmed pores (black line) exhibit a narrower distribution with a smaller area (26±19 nm2) (Nunrimmed pores = 1468, Nrimmed pores = 492, Nloops = 261). (D) Unrimmed (top) and rimmed (bottom) features were imaged over several minutes; scale bars = 10 nm. (E) Line scans, marked as white lines in the previous panel, show the dynamics of the pore profile in both cases. Different colors were used for each image. The average depth (Avg) and relative deviation (Dev), defined as the standard deviation of the depth divided by Avg, are listed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Inset shows the height distribution of all pixels for N=313 unrimmed pores (gray, n=153,832 pixels) and N=193 rimmed pores (black, n=114,996 pixels). Zero height represents the top of the upper leaflet of the lipid bilayer. The main graph is rescaled to show the area encompassed by the dark green dashed line. Multiple Gaussians are fitted to the histograms to deconvolve the different populations. Both unrimmed and rimmed pores had populations that deviated from the background (~0 nm), which are plotted in addition to the summary fits. The unrimmed pores show two distinct depths, –0.7±0.5 nm and –0.3±0.2 nm (mean ± σ.) The rimmed pores have a single population lower than the background, located at –1.0±0.4 nm. Additionally, a positive population is located at +0.3 ± 0.4 nm, corresponding to the topographically high rims. (B) A line scan (white dashed line) across an image of rimmed pores demonstrates the 4 nm depth of the DOPC bilayer in profile; scale bar = 100 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Lateral diffusion of an unrimmed pore (arrows). (B) A void forms two pores. The arrows highlight positive features; scale bars = 20 nm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Both unrimmed and rimmed pore species present in the same image; scale bar = 100 nm. Two pores of similar size are shown in line scan profile (unrimmed in blue, rimmed in green).
+
 The CL pores fell into two broad categories: simple depressions (Figure 3A), and complex pores surrounded by a rim of discrete protrusions of an approximate height of 0.3 nm above the bilayer surface (Figure 3B). To differentiate between the two types of pores, they are henceforth referred to as ‘unrimmed’ (Figure 3A) and ‘rimmed’ (Figure 3B) pores, respectively. Both types of pores were free to diffuse in the bilayer (Figure 3—figure supplement 2), indicating that CL is not immobilized by interactions with the mica surface. Occasionally rimmed and unrimmed pores were observed in the same image area (Figure 3—figure supplement 3), suggesting that variations in imaging conditions were not responsible for driving the system between rimmed and unrimmed states. Rimmed pores generally have a smaller area than unrimmed pores (Figure 3C). Unrimmed pores have a broad area distribution, with the main population at 41 nm2 (Figure 3C, gray), while the rimmed pores have a narrower distribution, and an area peak at 26 nm2 (Figure 3C, black). Selected areas of the samples were imaged repeatedly to produce a time series of both unrimmed and rimmed pores. A representative unrimmed pore (Figure 3D, top row) shows dynamic behavior, with large variations over time. The pore depth visibly varies, flickering between deep and shallow states. On the other hand, the rimmed pore (Figure 3D, bottom row) appears deeper, and is more stable, as shown by the constant profile over time (Figure 3E). While the two types of pores are likely to cause membrane permeabilization, we propose that the presence of the rim endows the pore with increased stability, which could potentially be a mechanism to afford CL pores with enhanced membrane damaging capabilities.
 
-## CL polymers insert into the membrane, and loops become membrane pores
+### CL polymers insert into the membrane, and loops become membrane pores
 
 We noticed that there were strong similarities between the shape and size of the loops that CL forms in the absence of membrane and the unrimmed membrane pores (Figure 3C, compare blue and gray lines). This agreement led us to hypothesize that CL loops could insert into membranes and become unrimmed pores. We could test this hypothesis as occasionally a patch of supported bilayer would spontaneously dissociate from the underlying mica surface (Figure 4A). Upon imaging the exact same area again, we observed features similar to the CL polymers and loops detected in the absence of lipid bilayers. Indeed, loops, often inter-connected, were observed where pores were previously present (see blue arrows). Linear features similar to the CL polymers observed for solution samples were also present, which had been previously obscured by the presence of a bilayer. This observation indicates that linear polymers can insert into membranes without causing membrane disruption, but when they close into a loop they form an unrimmed membrane pore.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig4-v1.jpg)
+
+**Figure 4.:** (A) Lipid patches exhibiting pore-like features occasionally dissociated from the mica surface, revealing underlying structures similar to CL polymers in solution [see Figure 2B]; scale bars = 200 nm. Blue arrows indicate pore features and corresponding polymer loops/tangles. Linear features were revealed that were not previously observed when lipid was present (red arrows). A green asterisk draws attention to a tall positive feature that remains in both images, serving as a reference. (B) Detergent was used to forcibly remove lipid bilayers. The addition of DβM followed by rinsing revealed underlying CL structures. Scale bars = 100 nm. (C) A histogram of particle heights compares data of CL adsorbed in solution (black, N=7838) to the features remaining after addition of DβM to the CL +DOPC system (gold, N=8170). The control results were bimodal, indicating two overall 8-mer orientations. The features left after detergent removal of the membrane exhibited a broad peak roughly encapsulating both of the solution peaks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Adding DβM to CL in solution (i.e. in the absence of lipid) induces no drastic change in CL polymers, which remain adhered to the mica surface (scale bars = 100 nm). (B) DβM added to bare DOPC bilayers removes the bilayer with a small amount of residual lipid left behind on the mica surface. (C) A volume histogram of CL after DβM addition (gray) shows a slight increase in size of the features compared to the CL in solution data (black), likely attributable to occasional detergent molecules binding to CL. The fraction of looped features before and after the addition of DβM are shown in the table on the right (σ=standard deviation, 3 experiments).
 
 In order to replicate these spontaneous events in a deterministic manner, we used the mild detergent dodecyl beta-D-maltoside (DβM) to remove the lipid bilayer (Milhiet et al., 2006; Rinia et al., 2001). Once the detergent and solubilized lipid were rinsed away, the CL structures remaining were imaged (Figure 4B). Control experiments showed that DβM efficiently removed DOPC molecules from the mica support, but did not dissociate the CL polymers (Figure 4—figure supplement 1); however, our data suggest that detergent treatment might reduce the fraction of polymers that close into a loop (Figure 4—figure supplement 1). The histogram in Figure 4C reveals similarities between the height of CL features adsorbed to mica in solution, showing a bimodal population, and in membrane areas post-DβM treatment. In these latter samples, there was a broadening of the primary height peak, which can be attributed to binding between CL and the detergent. However, the increase in taller features could also be an indication that the vertical 8-mer orientation (Figure 2D) is favored in the presence of lipid membranes.
 
 Our data indicate that loops can insert into membranes and form unrimmed pores. These might later mature into the rimmed pores, which have better defined dimensions. The question then arises regarding what orientation, head-to-toe or side-by-side, does the CL 8-mer adopt in the two types of pores. To investigate this question, we modeled loops of N subunits in the two 8-mer orientations, head-to-toe and side-by-side (Figure 5A). Comparison between the experimental inner areas and the models (Figure 5A, Figure 5—figure supplement 1) suggest that the loops found in solution, similar to the linear polymers, assemble into a head-to-toe fashion. The average loop would be composed of six head-to-toe 8-mers, for a mass (159 kDa) that corresponds with the start of the tail in the MP distribution (Figure 1E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig5-v1.jpg)
+
+**Figure 5.:** (A) CL pores were simulated using two possible arrangements of the 8-mer subunit, side-by-side (green) and head-to-toe (dark blue). The particle area is plotted versus the number of subunits. The insets show simulations for N=6 in both orientations. Closed loops with less subunits were not geometrically feasible. The side panel shows the experimental areas for unrimmed pores (gray symbol), rimmed pores (black), and the loops found in solution (aqua blue); error bars represent standard deviation. A cartoon depicts which measurements are being compared, the inner loop area (top) and the pore area (bottom). (B) Standard circular dichroism (CD) of CL in buffer (blue) and in the presence of lipid vesicles (black). (C) OCD data in supported membranes for CL WT (black), I9A (green), and G4W (red). The inset shows theoretical OCD curves for a TM helix (blue) or an α-helix aligned parallel to the membrane plane (red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Simulated images of loops formed by six 8-mers are shown side-by-side with experimental data compatible for the two orientations. The upper panel compares a head-to-toe simulation with a solution loop, and the lower panel shows the vertical model compared to a CL pore after lipid spontaneously dissociated; scale bars = 10 nm. (B) Line scans through the feature demonstrate geometric agreement between models (black lines) and experimental data (red lines).
+
 We further studied CL morphology after membrane insertion by analyzing the features that remained after spontaneous lipid dissociation (Figure 4A). For unrimmed pores, the AFM data also corresponded to a head-to-toe 8-mer arrangement (Figure 5A). Loops with a side-by-side orientation were rare in the solution data, but were common in CL samples that had been exposed to lipid. Indeed, comparison between the model and the rimmed pores data suggest that in these pores the 8-mers switch from the head-to-toe orientation found in the unrimmed pores (gray square, side panel of Figure 5A), to a side-by-side orientation (black square). Specifically, the modeled areas predict that unrimmed pores contain six to eight head-to-toe 8-mers, while rimmed pores are formed by six to twelve side-to-side 8-mers. Therefore, we propose that a rimmed pore (Figure 3B) appears when the 8-mer subunits in an unrimmed pore rotate 90 degrees, switching from the head-to-toe to the side-by-side arrangement (compare insets in Figure 5A).
 
 We interrogated the results of the modeling using circular dichroism (CD). Figure 5B shows that CL forms, as expected (Moyes et al., 2016), an α-helical structure in solution, as evidenced by the spectral minima at 208 and 222 nm. We also observed that the presence of lipid vesicles promotes modest additional helix formation, possibly by growth of the α-helix and its ends. The orientation of the CL α-helix with respect to the membrane plane can be determined using oriented CD (OCD), which is performed using supported lipid membranes (Nguyen et al., 2019). OCD can discriminate between helices aligned along the membrane plane, and transmembrane (TM) helices (Wu et al., 1990; Figure 5C, inset). The OCD data of CL displayed low intensity, and a minimum at ~225 nm and a maximum at ~195 nm, similarly to the expected result for TM helices (Alves et al., 2018; Stefanski et al., 2021). The OCD spectrum therefore indicates that the predominant orientation of helices in CL in membranes was inserted across the membrane, in a TM orientation. This is the proposed helical alignment that is expected in the side-by-side 8-mer arrangement of the rimmed pores. However, the presence of a depression at ~210 nm agrees with the presence of a population of α-helices oriented along the plane of the membrane, like those expected for the unrimmed pore. Therefore, the OCD result supports the presence of a combination of rimmed and unrimmed CL pores with the respective helical orientations predicted by the AFM modeling.
 
-## Mutational analysis of CL provides mechanistic insights
+### Mutational analysis of CL provides mechanistic insights
 
 Our experimental data and modeling indicate that CL 8-mers in solution polymerize in a head-to-toe fashion. We sought to further validate this hypothesis by testing mutations in the CL sequence. A head-to-toe assembly of a parallel helical bundle implies interaction between the N-terminal (Nt) helical ends of an 8-mer with the C-termini of the adjacent subunit (Figure 6—figure supplement 1). Our 8-mer model predicts that the Nt is slightly kinked at residue G4 (Figure 6A). Since glycine residues confer flexibility to α-helices (Choy et al., 2003), we reasoned that the mutation of residue G4 (Figure 6A) might affect CL self-assembly. We replaced this residue with a bulky tryptophan side chain to maximize the expected disturbance. We first tested the ability of the resulting G4W CL variant to polymerize in solution using MP, and observed that G4W formed few large assemblies (Figure 6B). The residue G4 lies at the outer surface of the hollow cylinder that the 8-mer forms. We sought to test the effect of a residue at the opposite side of the helix, which is predicted to form the core of the structure. We therefore tested the I9A mutation. The MP results show that the I9A variant, on the other hand, self-assembles efficiently in solution (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig6-v1.jpg)
+
+**Figure 6.:** (A) The position of the residues G4 (red) and I9 (green) are shown for two different orientations of the 8-mer model. The CL sequence highlighting the position of the mutations is shown at the bottom. (B) Mass photometry shows that the G4W variant has a lower tendency to form large assemblies than I9A in solution. (C) AFM data of CL variants in the absence of membranes. The I9A variant exhibits increased loop features, while G4W does not form polymers; scale bar = 100 nm. Representative I9A features are selected from the image: a protomer, a loop, and a large loop; scale bars = 10 nm. (D) The volumes of the features observed by AFM were calculated, and are shown as accumulated fraction. Data are shown for CL WT (N=7838 features), I9A (N=3609), and G4W (N=190). (E) The fraction of all polymers that close into a loop was calculated for all variants. Error bars are standard deviations (n=3 independent experiments); p-values are the result of a Student’s t-test comparing the I9A and G4W data to the WT. (F) I9A CL forms membrane pores, while pores were not observed for G4W; scale bars = 100 nm for full images, 10 nm for inset. (G) Liposome dye release assay shows that CL variants display different membrane disruption. Top panel shows a time course of dye release for CL WT (black), I9A (green), and G4W (red) at 333 nM, and the bottom panel shows the percentage of dye release after 2 hrs for different peptide concentrations. N=3–4 and error bars are S.D. (H) SDS-PAGE of variants. The 16% tricine gel was silver-stained. Samples were incubated at 37 °C. The position of molecular weight markers is shown. The lower mobility of the G4W oligomer results from the corresponding differences in molecular weight (MWCL-WT=3310 Da, and MWCL-G4W = 3439 Da).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** N-termini are shown in red, and C-termini in blue.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A volume histogram of CL in solution compares the wildtype (N=7838 features), I9A (N=3609), and G4W (N=422). The I9A mutant has a smaller primary peak,~100 nm3, indicating a large number of smaller features. The larger volumes of the loops fall into the long high-volume shoulder. (B) An area histogram of N=1397 unrimmed pore-like features shows I9A increases the pore area of the primary peak population >20%, from 50 nm2 (unrimmed wild type, N=1468)–61 nm2. N=156 I9A loops are analyzed with the Hessian blob algorithm to get the inner areas and compared to the unrimmed I9A pore areas (N=1397). The overall agreement between pore geometry and loop inner areas for both the I9A mutant and the WT (Nrings = 261) suggests that structures formed in solution can directly translate into membrane pores.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Circular dichroism (CD) spectra of WT and variant CL collected in buffer. (B) CD spectra collected in the presence of a 200:1 molar excess of POPC LUVs, in 1 mM NaPi buffer, pH. Data are provided for CL WT (black), I9A (Green) and G4W (red).
 
 We next tested the two variants using AFM to visualize the morphology of the polymers they formed. The AFM results agreed with the MP, as I9A formed long polymers and closed loops, while G4W formed few large structures (Figure 6C, compare top and bottom panels). We quantified the AFM images by measuring the volume of all particles, and compared these results with AFM data of WT CL. The resulting Figure 6D shows that G4W does not efficiently assemble into large (>1000 nm3) structures, while WT and I9A do. However, only the I9A variant forms a significant number of very large assemblies (>3000 nm3), which generally corresponded with over-sized loops (Figure 6C, side panel). Since the AFM data (Figure 4) indicate that linear polymers need to close to form membrane pores, a key parameter for membrane disruption would be the ability of polymers to close into loops. We determined the frequency of loop formation for the three peptides (Figure 6E), and observed that there is overall agreement between the ability to form polymers and the loop formation propensity. Consistent with the model that loops in solution become pores, we observed that I9A formed larger membrane pores than WT (Figure 6—figure supplement 2), while we did not observe membrane pores formed by G4W (Figure 6F). Additionally, the higher I9A pore area has a corresponding increase in the inner area of the loops compared to WT CL (Figure 6—figure supplement 2), supporting the hypothesis that the pore architecture is defined by the loops.
 
@@ -84,7 +160,7 @@ CL pores damage the plasma membrane of epithelial cells. This attack triggers th
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75490/elife-75490-fig7-v1.jpg)
 
-**Figure 7.:** (A) Representative western blots of oral epithelial cells (TR146) probed for c-Fos expression and phosphorylation of MKP1 after 2 hr treatment with WT and variant CL. (B) Quantification of c-Fos and MKP1 phosphorylation was used to assess danger response signaling. Data were normalized to values obtained in control conditions. Actin was used as a loading control. N=4, and bars are the S.D.Figure 7—source data 1.
+**Figure 7.:** (A) Representative western blots of oral epithelial cells (TR146) probed for c-Fos expression and phosphorylation of MKP1 after 2 hr treatment with WT and variant CL. (B) Quantification of c-Fos and MKP1 phosphorylation was used to assess danger response signaling. Data were normalized to values obtained in control conditions. Actin was used as a loading control. N=4, and bars are the S.D.
 
 ## Discussion
 
@@ -98,49 +174,266 @@ It is interesting to compare the topography and mode of action of CL pores to th
 
 Pore maturation for perfringolysin O (Czajkowsky et al., 2004; Nelson et al., 2008) and suilysin (Leung et al., 2014), involves a vertical collapse that allows formation of a TM pore. In contrast, the rearrangement of the 8-mer orientation that leads to rim formation causes CL to protrude from the bilayer and could be defined as a vertical swell between the two types of pores. The reason why pore maturation in CL occurs is not clear, but it might be related to the three K residues located at the Ct (Figure 6A). In the unrimmed pores, the head-to-toe orientation of the 8-mers would likely place the positive charges of the K side chain in contact with lipid molecules, resulting in a meta-stable configuration. However, in the vertical 8-mer orientation found in the rimmed pore, the K residues are expected to be solvent-exposed, resulting in a more stable conformation. An additional difference with some pore-forming proteins is that imaging of bilayers in the presence of CL did not show open polymers. However, bilayer removal revealed that linear CL polymers insert into the membranes, but they cannot be readily observed as they do not disturb the bilayer surface or protrude significantly from it. This behavior contrasts with the arcs formed by suilysin, as these rigid open polymers were able to remove lipid molecules from the bilayer to cause perforations (Leung et al., 2014). Finally, we compare the CL mechanism with the membrane attack (MAC) system that forms membrane pores in pathogens. MAC employs the 71 kDa C9 protein, which polymerizes in solution prior to forming pores (Song et al., 1996; Dudkina et al., 2016; DiScipio and Hugli, 1985). However, C9 needs other components of the MAC system inserted into the membrane (e.g. C7 and C8), which then serve to recruit multiple C9s. Hence significant distinctions remain between the pore-forming mode of action of CL and that of the MAC system.
 
-## Conclusions
+### Conclusions
 
 Here, we elucidate how CL forms the membrane pores that damage cells infected by C. albicans. Our data show that CL preassembles into a pore-competent loop conformation in solution. To the best of our knowledge, this process represents a novel mechanism of pore formation, since other PFT that form aqueous pores require binding to the plasma membrane as monomers to self-assemble. The assembly of CL into an insertion-competent state in solution might provide an infectivity advantage for C. albicans, as it could facilitate faster membrane damage. At the same time, we propose that this assembly mechanism might constitute a therapeutic opportunity to inhibit CL pore formation. Targeting membrane pores presents several drug delivery drawbacks, and it is therefore significantly more challenging than a soluble target. However, drug molecules that prevent CL polymerization in solution could be used as therapeutics to fight C. albicans infection. Specifically, a molecule that inhibits the formation of CL loops would be expected to prevent the assembly of the membrane pores that damage human epithelial cells.
 
-## Limitations of the study
+### Limitations of the study
 
 Our data suggest that the oligomeric state of the basic assembly unit is a CL 8-mer, as indicated by the native mass spectrometry data and this assignment is consistent with AFM volume analysis. However, it is intrinsically challenging to precisely determine the stoichiometry of large oligomeric assemblies. We therefore cannot rule out that CL assembles instead through an intermediate of different stoichiometry (e.g., a 7-mer or a 9-mer). High resolution methods will also be required to confirm the directionality that the CL oligomers adopt in the polymer, to confirm that they are aligned head-to-tail. We additionally identified the loss-of-function variant G4W, and the possible gain-of-function I9A. Future studies that unravel how these mutations affect the biophysical parameters that govern peptide self-assembly and membrane interaction, are expected to shed light on the specific reasons behind the disparate effects of the mutations. Additionally, these investigations could allow us to determine if CL pore formation is indeed under kinetic control, as we suspect.
 
 ## Materials and methods
 
-## Peptide preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Agilent 6560 IMS-QTOF Software</td>
+      <td>Agilent Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin Pro</td>
+      <td>Origin</td>
+      <td></td>
+      <td>Used to graph IMS-MS data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Visual Molecular Dynamics (VMD)</td>
+      <td>http://www.ks.uiuc.edu/Research/vmd/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMBOSS</td>
+      <td>EMBL-EBI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS 4.6.7</td>
+      <td>GROMACS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium Acetate, Ultrapure</td>
+      <td>VWR</td>
+      <td>631-61-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LC-MS Water</td>
+      <td>Sigma-Aldrich</td>
+      <td>7732-18-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Buccal squamous cell carcinoma</td>
+      <td>ECACC</td>
+      <td>TR146</td>
+      <td>ECACC 10032305</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti mouse IRDye 680 (Goat polyclonal)</td>
+      <td>LI-COR</td>
+      <td>925–68070</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-MKP1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2857 S</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Fos (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2250 S</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti rabbit IRDye 800 (Goat polyclonal)</td>
+      <td>LI-COR</td>
+      <td>926–32211</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-actin (mouse monoclonal)</td>
+      <td>ABCAM</td>
+      <td>ab6276</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Wild-Type Candidalysin</td>
+      <td>Peptide 2.0</td>
+      <td>CL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>I9A Candidalysin</td>
+      <td>Peptide 2.0</td>
+      <td>I9A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>G4W Candidalysin</td>
+      <td>Peptide 2.0</td>
+      <td>G4W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>POPC</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850457 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPC</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850375 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein</td>
+      <td>MP</td>
+      <td>02190167-CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Discover MP</td>
+      <td>Refeyn version 2.2.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Acquire MP</td>
+      <td>Refeyn version 2.2.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEDFIT</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-beta-D-Maltoside</td>
+      <td>Millipore Sigma</td>
+      <td>D4641</td>
+      <td>DBM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 7.08</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6.38</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Asylum AFM Software</td>
+      <td>Oxford instruments</td>
+      <td></td>
+      <td>Version 16</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AFM tips</td>
+      <td>Olympus</td>
+      <td></td>
+      <td>See AFM Materials and methods Section</td>
+    </tr>
+  </tbody>
+</table>
+
+### Peptide preparation
 
 Wild-type (sequence: SIIGIIMGILGNIPQVIQIIMSIVKAFKGNK) and variant candidalysin were synthesized employing solid-phase synthesis by Peptide 2.0 (Chantilly, VA) and HPLC-purified. Purity (>95%) was checked by MALDI-TOF and analytical HPLC. Lyophilized stocks were resuspended in MilliQ H2O, stored at –80 °C, and diluted in the desired buffer at the time of experimentation.
 
-## Ion-mobility mass spectrometry
+### Ion-mobility mass spectrometry
 
 Peptide samples were directly injected via a syringe pump into a JetStream ESI nebulizer. Mass spectral data and ion mobility measurements were collected using an Agilent 6560 IMS-QTOF mass spectrometer. The peptides were ionized in positive-mode and ions were subsequently pulsed into a helium-filled drift cell in a multi-field fashion (ΔV=890, 790, 690, 590, and 490 V). The pressure of the drift cell was maintained at 3.940 Torr with the pressure differences between the drift cell and trap funnel being approximately 300 mTorr. An exit funnel and hexapole ion guide focused the ions into the QTOF mass spectrometer. Mobility data were collected over the course of 5.2 min (additional instrument parameters are given in Supplementary file 1). Arrival time distributions were extracted with the Agilent IM-MS Browser software and graphed with Origin Pro.
 
-The ion’s arrival time can be related to the change in drift cell voltage (ΔV) to determine the ion’s reduced mobility (K0). To calculate the momentum transfer collision integral, which approximates the experimental collisional cross section (σexp), the Mason-Schamp equation was used (Mason and McDaniel, 1988): ( 1)σexp≈3ze16N01K02πμkBT
+The ion’s arrival time can be related to the change in drift cell voltage (ΔV) to determine the ion’s reduced mobility ($K_{0}$). To calculate the momentum transfer collision integral, which approximates the experimental collisional cross section ($\sigma_{exp}$), the Mason-Schamp equation was used (Mason and McDaniel, 1988):
 
-where z is the ionic charge, e is the elementary charge, N0 is the number gas density, µ is the reduced mass of the ion-buffer gas pair, kB is the Boltzman constant, and T is the temperature of the buffer gas. Theoretical collisional cross sections were calculated using the trajectory method available in the Mobcal package (Mesleh et al., 1996).
+$$
+\sigma_{exp}≈\frac{3ze}{16N_{0}}\frac{1}{K_{0}}\sqrt{\frac{2\pi}{\muk_{B}T}}
+$$
 
-## Molecular dynamics simulation
+where z is the ionic charge, e is the elementary charge, $N_{0}$ is the number gas density, µ is the reduced mass of the ion-buffer gas pair, $k_{B}$ is the Boltzman constant, and T is the temperature of the buffer gas. Theoretical collisional cross sections were calculated using the trajectory method available in the Mobcal package (Mesleh et al., 1996).
+
+### Molecular dynamics simulation
 
 An atomistic model of CL 8-mer was built by aligning the peptide sequence to that of the eight-helix coiled coil CC-Type2-II (PDB ID 6G67) (Rhys et al., 2018) using EMBOSS (Madeira et al., 2019). The initial structure was minimized using GROMACS 4.6.7 (39) during 25 ns and the CHARMM27 force field. Molecular dynamics (MD) simulation of the two interacting 8-mers was performed using the same package and force field. The initial structure was minimized using the steepest decent method and solvated in a TIP3P cubic water box (a=14.03 nm). Chloride anions were added to neutralize the charges. Solvent and volume equilibration simulations in NPT ensemble (T=300 K and P=1 bar) were performed to optimize the box size, followed by 45-ns NPT simulations at 300 K. The LINCS algorithm (Hess, 2008) was employed to constrain bonds between heavy atoms and hydrogen, and the SETTLE algorithm (Miyamoto and Kollman, 1992) was used for water molecules. These constraints allowed an integration time step of 2.0 fs. The electrostatic and dispersion forces were computed with a real space cutoff of 1.2 nm, and particle mesh Ewald method (Darden et al., 1993) was used to treat long-range electrostatics. The temperature was maintained by the Nose-Hoover thermostat. The temperature and pressure coupling constants were 0.1 and 1.0 ps, respectively. The equations of motion were integrated according to the leap-frog algorithm.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Sedimentation velocity experiments were performed at 20 °C with an An-60Ti rotor in a Beckman Optima XL-I ultracentrifuge at 35,000 RPM. Sedimentation was followed by absorbance at 230 nm and the continuous sedimentation coefficient distribution was obtained using SEDFIT. The following parameters were used for analysis: frictional ratio of 1.2, partial specific volume of 7.3 ml/g, buffer density of 0.9982 g/ml, and buffer viscosity of 1.002 mPa s.
 
-## Mass photometry
+### Mass photometry
 
 WT and variant CL were diluted to 333 nM in the AFM imaging buffer (10 mM HEPES, 150 mM NaCl, pH 7.3) prior to measurement. Experiments were performed on clean glass coverslips using a Mass Photometer (OneMP, Refeyn). Videos were recorded for 120 s and analyzed on DiscoverMP (Refeyn, version 2.2.0) to determine the molecular mass. The molecular mass was obtained by comparison with known protein standards measured on the same day.
 
-## TEM
+### TEM
 
 Transmission electron microscopy was performed using 2 μM CL samples in AFM imaging buffer incubated on carbon grids for 2 minutes at 25 °C, negatively stained with uranyl acetate, and imaged at 120kV (JEOL, JEM-1400).
 
-## Liposome preparation
+### Liposome preparation
 
 Lipids were purchased from Avanti Polar Lipids, Alabaster, AL. POPC (1-palmitoyl-2-oleoyl-glycero-3-phosphocholine), DOPC (1,2-dioleoyl-sn-glycero-3-phosphocholine) stocks were prepared in chloroform and stored at –20 °C. Lipids were dried under argon gas and stored in a vacuum overnight prior to use in experiments. Lipid films were resuspended as described below. Large unilamellar vesicles (LUVs) were prepared using a Mini-Extruder (Avanti Polar Lipids, Alabaster, AL) with a 100 nm filter (Whatman, United Kingdom) (Nguyen et al., 2015; Scott et al., 2015).
 
-## Atomic force microscopy
+### Atomic force microscopy
 
 A sample of one hundred milligrams of DOPC in chloroform was divided into microcentrifuge tubes and dried under argon gas to form uniform films. The tubes were incubated overnight in a vacuum chamber. A dry mechanical roughing pump (XDS5, Edwards) was used to minimize the probability of contamination (Schaefer et al., 2022). Samples were back-filled with argon, sealed, and stored at –20 °C. At the time of extrusion, AFM imaging buffer was added to swell the lipids. The lipid solution was extruded (Liposofast, Avestin) through 100 nm membranes 25 times to form unilamellar vesicles. The solution was aliquoted and stored at –80 °C until the time of the experiment. A phosphorus assay was conducted to determine lipid concentration (Stewart, 1980). For AFM imaging of CL in solution, stock aliquots of CL were diluted in imaging buffer to the desired concentration (typically 333 nM). A 90 µL droplet was added to freshly cleaved mica and incubated for 10 min at 25 °C. Samples were rinsed from above the surface using buffer exchange (~100 µL of imaging buffer were exchanged over the surface 5–6 times). Images were collected in imaging buffer with biolever mini tips (Olympus, k~0.1 N/m, fo~30 kHz in fluid) using tapping mode (Cypher, Asylum Research). Care was taken to keep the magnitude of the tip sample force to ≤100 pN during imaging deduced by comparing the free space tapping amplitude (∼5 nm) to the imaging set point amplitude (∼4 nm). Under such conditions, minimal protein distortion is expected (Sanganna Gari et al., 2013). As is typical in AFM, lateral image scales are significantly larger than the false color vertical scales.
 
@@ -148,28 +441,40 @@ To image pores, a method for forming lipid bilayers via vesicle rupture was adap
 
 For AFM simulations, the tip was modeled as two overlapping spheres of different radii (R=8 and 4 nm) (Schaefer et al., 2022) and the CL 8-mer was positioned in specified orientations. For a single octamer, the geometry of the simulated image (volume = 360 nm3) roughly corresponds with the geometry of the smallest subunits observed in AFM (volume of primary experimental peak ± σ=234 ± 130 nm3). Polymeric arrangements of the octamer subunit were made by aligning them head-to-toe in linear or in loop conformations. The inset in Figure 2C compares the first four peak locations in the experimental data to the volumes of simulated curved arrangements of 1–4 subunits. Each of the simulated volumes agree with the experimental volume peaks within error. Curved simulations were chosen for this comparison because a linear model underestimates the measured volume due to a lack of curvature-dependent convolution in the simulation. To avoid volume degeneracies, only small (1–4 subunit) features are analyzed. The persistence length was calculated using Easyworm software (Lamour et al., 2014).
 
-## Circular dichroism spectroscopy
+### Circular dichroism spectroscopy
 
-The circular dichroism (CD) spectrum of candidalysin was collected in the presence and absence of POPC liposomes. LUVs were prepared by extruding resuspended lipid at 1 mM in sodium phosphate buffer pH 7.4. The final lipid concentration was 130 µM, and the final peptide concentration was 5 μM. CD spectra were measured in a Jasco J-850 spectropolarimeter with a 2 mm path length. A lipid blank and a buffer blank were subtracted from the lipid and lipid-free samples, respectively. Mean residue ellipticity (MRE) was calculated as: ( 2)θMRE=θl×N-1×c×1000
+The circular dichroism (CD) spectrum of candidalysin was collected in the presence and absence of POPC liposomes. LUVs were prepared by extruding resuspended lipid at 1 mM in sodium phosphate buffer pH 7.4. The final lipid concentration was 130 µM, and the final peptide concentration was 5 μM. CD spectra were measured in a Jasco J-850 spectropolarimeter with a 2 mm path length. A lipid blank and a buffer blank were subtracted from the lipid and lipid-free samples, respectively. Mean residue ellipticity (MRE) was calculated as:
 
-where θ is ellipticity (millidegrees), l is cuvette pathlength (mm), N is the number of amino acids in the peptide, and c is the concentration of the peptide (M).
+$$
+\theta_{MRE}=\frac{\theta}{l\timesN-1\timesc\times1000}
+$$
 
-## Oriented circular dichroism
+where $\theta$ is ellipticity (millidegrees), $l$ is cuvette pathlength (mm), $N$ is the number of amino acids in the peptide, and $c$ is the concentration of the peptide (M).
+
+### Oriented circular dichroism
 
 Two circular quartz slides (Hellma Analytics, Müllheim, Germany) were cleaned by submerging in piranha solution (75% H2SO4, 25% H2O2) for five minutes. POPC films were resuspended in 2,2,2-trifluoroethanol with or without CL, and this mixture was air-dried onto the slides for at least twelve hours at room temperature. The amount of total lipid on each slide was 85.3 nmol, and the amount of peptide on each slide 1.71 nmol, for a lipid to peptide ratio of 50:1. The deposited lipid was then rehydrated with PBS in a chamber containing saturated potassium sulfate, which produces a relative humidity of 96% to prevent the films from dehydrating. After at least 12 hr, the slides were loaded onto an OCD cell containing saturated potassium sulfate. OCD spectra were measured eight times on a Jasco J-815 spectropolarimeter. The OCD cell was rotated 45° between measurements to correct for any imperfections in the lipid bilayers. To obtain the final spectra, the eight measurements were averaged, and peptide-free lipid blanks were subtracted.
 
-## Fluorescent dye-release assay
+### Fluorescent dye-release assay
 
-Dried lipid films were rehydrated with 50 mM calcein solubilized in 50 mM EDTA and 50 mM NaPi (pH 8) solution. LUVs were formed as described above, separated from free dye by gel filtration using a PD-10 column (GE Life Sciences, Chicago, IL), and diluted to a working lipid concentration of 144 μM. Peptide was added to the calcein entrapped LUVs to achieve the desired lipid:peptide molar ratios. The calcein fluorescence increase caused by dequenching was used as a proxy for CL-induced membrane leakage. A positive control was measured after each treatment, consisting of 0.016% w/v Triton X-100 (TX). A negative control of PBS in lieu of peptide treatment was used to calculate percent leakage:(3)NormalizedLeakage=(FCL+FPBS)(FTX−FPBS)
+Dried lipid films were rehydrated with 50 mM calcein solubilized in 50 mM EDTA and 50 mM NaPi (pH 8) solution. LUVs were formed as described above, separated from free dye by gel filtration using a PD-10 column (GE Life Sciences, Chicago, IL), and diluted to a working lipid concentration of 144 μM. Peptide was added to the calcein entrapped LUVs to achieve the desired lipid:peptide molar ratios. The calcein fluorescence increase caused by dequenching was used as a proxy for CL-induced membrane leakage. A positive control was measured after each treatment, consisting of 0.016% w/v Triton X-100 (TX). A negative control of PBS in lieu of peptide treatment was used to calculate percent leakage:
 
-where FICL is the fluorescence intensity after treatment with CL, FITX corresponds to the positive control (100% leakage), and FIPBS corresponds to negative control (0% leakage). The quenching effect of TX on calcein was accounted for by measuring the fluorescence intensity of calcein in the presence and absence of TX and calculating a correction factor applied to FTX: (4)CorrectionFactor=FICalceinFICalcein+TX
+$$
+NormalizedLeakage=\frac{(F_{CL}+F_{PBS})}{(F_{TX}−F_{PBS})}
+$$
+
+where FICL is the fluorescence intensity after treatment with CL, FITX corresponds to the positive control (100% leakage), and FIPBS corresponds to negative control (0% leakage). The quenching effect of TX on calcein was accounted for by measuring the fluorescence intensity of calcein in the presence and absence of TX and calculating a correction factor applied to FTX:
+
+$$
+CorrectionFactor=\frac{FI_{Calcein}}{FI_{Calcein+TX}}
+$$
 
 The concentration of calcein was determined by measuring the fluorescence of calcein entrapped within the LUVs post purification. Samples were loaded into a black 96-well plate (Corning, Kennebunk, ME) and measured for two hours, with readings taken every minute, on a Cytation 5 plate reader (BioTek, Winooski, VT) using an excitation wavelength of 495 nm and an emission wavelength of 515 nm.
 
-## Cell culture
+### Cell culture
 
 Experiments were performed using the TR146 buccal squamous carcinoma cell line obtained from the European Collection of Authenticated Cell Cultures (ECACC 10032305) and grown in Dulbecco’s Modified Eagle Medium (DMEM, Gibco) supplemented with 10% fetal bovine serum (FBS) and 1% penicillin-streptomycin. Cells were authenticated via STR profiling. Mycoplasma contamination was ruled out by PCR (Abcam 289834). All experiments were performed in serum-free DMEM.
 
-## Western blot
+### Western blot
 
 TR146 cells were grown to confluency and starved overnight in serum-free DMEM. Cells were treated with 15 μM peptide for two hours. Post-incubation, cells were lysed on ice with TEN-T buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 1 mM EDTA, 1% Triton-X 100) containing phosphatase (Sigma) and protease (ThermoFisher) inhibitors for 30 min. Lysates were collected post centrifugation (20 min, 13,000 RPM, 4 °C) and separated on 10% SDS-PAGE gels before transfer to 0.45 µm nitrocellulose membranes. Blots were probed with primary antibodies for c-Fos (1:500, Cell Signaling Technology, 2250 S) and phospho-MKP1 (1:1000, Cell Signaling Technology, 2857 S) overnight. Fluorescent secondary antibodies (1:10,000, goat-anti mouse IRDye 680, goat-anti rabbit IRDye 800, LI-COR) were used for detection on a LI-COR Odyssey CLx. Human β-actin (1:1000, Abcam, ab6276) was used as a loading control and protein expression and phosphorylation was quantified using ImageStudio software.

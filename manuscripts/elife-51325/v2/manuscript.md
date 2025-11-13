@@ -34,7 +34,7 @@
 
 ## Abstract
 
-Genome-wide association studies for non-syndromic orofacial clefting (OFC) have identified single nucleotide polymorphisms (SNPs) at loci where the presumed risk-relevant gene is expressed in oral periderm. The functional subsets of such SNPs are difficult to predict because the sequence underpinnings of periderm enhancers are unknown. We applied ATAC-seq to models of human palate periderm, including zebrafish periderm, mouse embryonic palate epithelia, and a human oral epithelium cell line, and to complementary mesenchymal cell types. We identified sets of enhancers specific to the epithelial cells and trained gapped-kmer support-vector-machine classifiers on these sets. We used the classifiers to predict the effects of 14 OFC-associated SNPs at 12q13 near KRT18 . All the classifiers picked the same SNP as having the strongest effect, but the significance was highest with the classifier trained on zebrafish periderm. Reporter and deletion analyses support this SNP as lying within a periderm enhancer regulating KRT18 / KRT8 expression.
+Genome-wide association studies for non-syndromic orofacial clefting (OFC) have identified single nucleotide polymorphisms (SNPs) at loci where the presumed risk-relevant gene is expressed in oral periderm. The functional subsets of such SNPs are difficult to predict because the sequence underpinnings of periderm enhancers are unknown. We applied ATAC-seq to models of human palate periderm, including zebrafish periderm, mouse embryonic palate epithelia, and a human oral epithelium cell line, and to complementary mesenchymal cell types. We identified sets of enhancers specific to the epithelial cells and trained gapped-kmer support-vector-machine classifiers on these sets. We used the classifiers to predict the effects of 14 OFC-associated SNPs at 12q13 near KRT18. All the classifiers picked the same SNP as having the strongest effect, but the significance was highest with the classifier trained on zebrafish periderm. Reporter and deletion analyses support this SNP as lying within a periderm enhancer regulating KRT18/KRT8 expression.
 
 ## Introduction
 
@@ -48,9 +48,37 @@ Here we used ATAC-seq to identify a of a set of zebrafish periderm enhancer cand
 
 ## Results
 
-## Identification of periderm-specific enhancers throughout the zebrafish genome
+### Identification of periderm-specific enhancers throughout the zebrafish genome
 
 In Tg(krt4:gfp)gz7TG transgenic embryos GFP was reported to be present exclusively in the most superficial layer of the embryo, called the enveloping layer (EVL) or periderm, after 8 hr post fertilization (hpf) (Gong et al., 2002). Because a separate transgenic line built from the same element shows reporter expression in both basal and superficial epidermal layers at 54 hpf (O'Brien et al., 2012), we sectioned Tg(krt4:gfp)gz7TG embryos at 11 hpf (4-somite stage) and confirmed that GFP was only present at high levels in the periderm (Figure 1A). We dissociated such embryos at 11 hpf, isolated GFP-positive and GFP-negative cells, and performed ATAC-seq on both populations (Figure 1A). We then mapped the small (<100 bp) ATAC-seq fragments, which are indicative of nucleosome free regions (NFRs), within the zebrafish genome (Buenrostro et al., 2015). The concordance of peaks called between two replicates of this experiment was strong (Figure 1—figure supplement 1). At the majority of NFRs, the density of mapped reads was comparable in GFP-positive and GFP-negative cells, but at about 5% of elements (i.e., 12865 and 13947 peaks, respectively; Supplementary file 1a), the normalized density of mapped reads was enriched in one or the other cell type (log2(fold change)>0.5 or <−0.5, FDR < 0.01); we refer to these elements as GFP-positive NFRs (Supplementary file 1b) and GFP-negative NFRs (Supplementary file 1c), respectively (Figure 1B). Consistent with previous reports, overall ATAC-seq signal was high at transcription start sites (Buenrostro et al., 2015; Quillien et al., 2017; Figure 1—figure supplement 2A), but the majority of cell-type-specific NFRs were located in intergenic regions (Figure 1—figure supplement 2B). In both GFP-positive and GFP-negative NFRs, the average evolutionary conservation was higher within NFRs than in flanking DNA (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-v2.jpg)
+
+**Figure 1.:** (A) Transverse section of an 11 hpf (4-somite stage) Tg(krt4:gfp) embryo, showing GFP is confined to the superficial layer of cells, and workflow of ATAC-seq in periderm and non-periderm cells. (B) Density plots of ATAC-seq results. Each line is centered on a nucleosome free region (NFR) with significantly more ATAC-seq reads in GFP-positive or GFP-negative cells; the majority of ATAC-seq peaks were not enriched in either cell type. Density plots also show H3K27Ac ChIP-seq signal in whole embryos at eight hpf and/or at 24 hpf data from Bogdanovic et al. (2012) at each of the GFP-positive NFRs; the latter are sorted in to those that overlap (or are flanked by within 100–1500 bp) peaks of H3K27Ac signal (cluster 1, 4301 elements) and or not (cluster 2, 7952 elements). (C) UCSC Genome browser tracks showing the ATAC-seq peaks in GFP-positive and GFP-negative cells, and H3K27Ac signal from whole embryos at eight hpf and at 24 hpf data from Bogdanovic et al. (2012) at the cldne locus. Boxes, examples of cluster one elements, also known as zebrafish GFP-positive active enhancers (zGPAEs). Elements are cldne+6 kb (zv9 : chr15:2625460–2625890), cldne +3 kb (chr15:2629012–2629544), cldne −8 kb (chr15:2639873–2640379), cldne −11 kb (chr15:2643578–2644160), and cldne TSS (chr15:2631981–2632513). (D) Plot of average density of H3K27Ac ChIP-seq signal (purple) and ATAC-seq signal (green). (E) GO enrichment for term ‘Gastrula:Bud 10–10.33 hr; periderm’ among NFRs enriched in GFP-positive cells with normalized fold change greater than 2 (ATAC(FC >2)) and 4 (ATAC(FC >4)), NFRs enriched in GFP-positive cells flanked or overlapped by 24hpf and 80% epiboly H3K27Ac ChIP-seq peaks (cluster 1) and or not (cluster 2), NFRs enriched in GFP-positve cells flanked or overlapped by 24hpf and 80% epiboly H3K4me1 ChIP-seq peaks (cluster 1) or not(cluster 2), NFRs enriched in GFP-positive cells flanked or overlapped by 24hpf H3K27Ac ChIP-seq peaks (cluster 1) or not (cluster 2), and NFRs enriched in GFP-positive cells flanked or overlapped by 80% epiboly H3K27Ac ChIP-seq peaks (cluster 1) or not (cluster 2). (F), (G) Lateral views of wild-type embryos at 11 hpf injected at the 1-cell stage with GFP reporter constructs built from (F) cldne +6 and (G) cldne transcription start site (TSS) elements. Left panels are stack views of the embryo, and right panels are surface plot for the embryos indicating most GFP signal is from the surface (periderm) of the embryos. Number in parentheses is the ratio of embryos with at least 10 GFP-positive periderm cells over injected embryos surviving at 11 hpf. (H) Volcano plot of RNA seq data, showing the expression of genes associated (by GREAT) with zGPAEs (green dots) or with zGNAEs (pink dots) in GFP-positive cells (beta-value >0) or in GFP-negative cells (beta-value <0). (I) Plot of accessibility scores of elements with differential accessibility (i.e., both zGPAEs and zGNAEs) associated with genes that are differentially expressed in GFP-positive and GFP-negative cells, showing that elements with increased accessibility in GFP-positive cells tend to be associated with genes whose expression is enriched in GFP-positive cells, and vice versa.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ATAC-seq summit centered heatmap of ATAC-seq signals from two biological replicates. (B) Scatter plots showing the ATAC-seq signal correlation between two biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Histogram of read density of ATAC-seq in 10 kb flanking transcription start sites (TSS). (B) Pie chart showing the genomic location of GFP-positive NFRs (from ATAC-seq biological replicate 1).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Genome browser screenshot for cldne +3, cldne −11, and cldne −8 elements. (B–D) Surface plots for wild-type embryos at 11 hpf injected at the 1 cell stage with GFP reporter constructs for cldne +3, cldne −11, and cldne −8 elements. Number in parentheses is the ratio of embryos with at least 10 GFP-positive periderm cells over injected embryos surviving at 11 hpf.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Barchart showing GO enrichment analysis for two clusters of GFP-positive specific NFRs. (B) Barchart showing GO enrichment analysis for two clusters of GFP-negative specific NFRs.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Volcano plot for genes expressed in GFP-positive (in green) and –negative (in red) cells. (B) GSEA for genes expressed in GFP-positive cells using EVL gene set (www.zfin.org).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig1-figsupp7-v2.jpg)
 
 ATAC-seq identifies nucleosome free regions (NFRs), which include active enhancers, active and inactive promoters, and CTCF-bound regions, some of which are insulators (Buenrostro et al., 2013; Iwafuchi-Doi et al., 2016). We reasoned that the subset of NFRs that are active enhancers and promoters would be flanked by nucleosomes with histone H3 acetylated on lysine 27 (H3K27Ac), a mark of active chromatin (Creyghton et al., 2010). We used published data sets from whole embryos at 8 hpf or 24 hpf (Bogdanovic et al., 2012). Although periderm comprises a small fraction of the embryo, we found examples of elements with ATAC-seq signal virtually specific to GFP-positive cells that nonetheless overlapped or were flanked by peaks of H3K27Ac signal detected in whole embryos (Figure 1C).
 
@@ -62,9 +90,27 @@ We tested the enhancer activity of ten elements of the H3K27AcHigh cluster, each
 
 To gain a genome-wide view of the association between zGPAEs and genes whose expression is enriched in periderm, we again sorted GFP-positive and GFP-negative cells from Tg(krt4:gfp) embryos at 11 hpf and generated expression profiles for both populations using RNA-seq. We identified 4331 genes with higher expression in GFP-positive cells and 4216 genes with higher expression in GFP-negative cells (q value < 0.05, beta <0, average TPM in GFP-positive cells > 1) (Figure 1H, Figure 1—figure supplement 6A). As expected, genes enriched in GFP-positive cells correlated positively with genes annotated at ZFIN, an online gene-expression atlas, as being expressed in the EVL (Figure 1—figure supplement 6B) (www.zfin.org). Differentially accessible elements associated with genes whose expression is enriched in GFP-positive cells had significantly higher average accessibility in GFP-positive cells than in GFP-negative cells, and vice versa (Figure 1I). For instance, there is a zGPAE near cyt1, a gene with higher expression in GFP-positive versus GFP-negative cells (Figure 1—figure supplement 7A) and there is a GNAE near her4.3 with the opposite expression trend (Figure 1—figure supplement 7B). Some exceptions to the general pattern were observed (e.g., hspb9 and npm1b, Figure 1H); this might reflect the fact that enhancers do not always regulate an adjacent gene. We conclude that most or perhaps all zGPAEs are enhancers active in periderm in embryos at 8 hpf to 24 hpf.
 
-## Transcription factor binding sites overrepresented within zGPAEs
+### Transcription factor binding sites overrepresented within zGPAEs
 
 Using HOMER, we identified 12 short sequence motifs, corresponding to the preferred binding sites of specific transcription factors, that are enriched in zGPAEs and present in at least 5% them (Figure 2A); this list of zGPAE-signature motifs prompted testable hypothesis regarding the membership and structure of the periderm GRN. For instance, analysis of our RNA-seq profile of GFP-positive cells, and of available single-cell sequencing data (sc-seq) from zebrafish embryos (Farrell et al., 2018; Wagner et al., 2018), revealed transcription factors expressed in the EVL at 10–14 hpf; the subset of these that bind zGPAE-enriched motifs are candidates to participate in the periderm GRN (Figure 2A, ‘best match’). In addition, clustering zGPAEs by virtue of the stage when the H3K27Ac signal is strongest (Figure 2—figure supplement 1A; Bogdanović et al., 2012) and then reassessing motif enrichment in each cluster revealed that the IRF6 site is more strongly enriched in early-acting zGPAEs (i.e., with H3K27Ac signal stronger earlier) (Figure 2—figure supplement 1B, cluster 1), and the TFAP2 and GATA sites in more strongly enriched in late-acting zGPAEs (Figure 2—figure supplement 1B, cluster 2 and 3), than in zGPAEs overall (Figure 2A). This implies that Irf6 acts earlier in the periderm GRN than do Tfap2 and Gata paralogs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig2-v2.jpg)
+
+**Figure 2.:** (A) Enriched motifs in zGPAEs. PWM, position weighted matrix. TF, transcription factors. Best match, transcription factor in the indicated family with highest expression in GFP-positive cells, whether or not the expression is enriched in GFP-positive cells in comparison to GFP-negative cells. (B) Genome browser view showing a GFP-positive nucleosome free region (NFR) about 3 kb downstream of the transcription start site of cldne gene. (C) Schematic of frequency of Tn5 cleavage sites at within this NFR, indicating reduced frequency of cleavage at a motif matching the GRHL binding site relative to in flanking DNA. (D) Confocal image of a wild-type embryo at 10 hpf (2-somite stage) injected at the one-cell stage with a reporter construct containing this NFR. (E) Bar chart showing number of embryos positive for GFP signal in the periderm after being injected with the intact reporter or one in which the GRHL motif was deleted. (F) Bar chart showing the percentage of genes whose expression is higher in GFP-positive cells than in GFP-negative cells that are flanked by a zGPAE possessing the indicated binding site.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) ATAC-seq summit centered heatmap of H3K27Ac ChIP-seq at 4.5 hpf, 8hpf and 24hpf data from Bogdanovic et al. (2012), cluster performed by k-mean. (B) Motif enriched in zGPAEs with high H3K27Ac at 4.5hpf. (C) Motifs enriched in zGPAEs with high H3K27Ac at 24 hpf.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Depending on the expression level in periderm cells (GFP-positive cells) most enriched transcription factors with the relevant motifs are in hexagon while other enriched transcription factors with the relevant motifs are in round. Each TF node is colored according to the normalized expression z-score (related to periderm genes). The thickness of each edge represents the number of motifs located in the all nearby enhancers to each TF (within 100kbp to the transcription start site).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Hierarchy clustering for the number of enriched motifs in all GPAEs. ‘Count’ in the color key indicates the sum for different number of each motif ‘frequency’. (B) Bar chart for the number of GPAEs with different two-motif combination. (C) Bar chart for the number of GPAEs with different three-motif combination. (D) Nearest EVL genes (within 100.0 kbp) of the GPAEs with ‘GRHL+TEAD+FOS’ and ‘KLF+TFAP2+GATA’ combination. GR: GRHL, TE: TEAD, FO: FOS, TF: TFAP2, GA: GATA, CE: CEBP, KL: KLF.
 
 We predicted that zGPAE-enriched motifs would be essential for the periderm enhancer activity of zGPAEs. A zGPAE 3 kb downstream of the cldne transcriptional start site possesses a GRHL motif but lacks other signature motifs (Figure 2B). ATAC-seq data from GFP-positive cells included fewer TN5-mediated cleavage events within this motif than in flanking DNA, indicating that a transcription factor bound at the motif (Figure 2C; Pique-Regi et al., 2011). We amplified the zGPAE, deleted the motif by site-directed mutagenesis, engineered both the intact and motif-deleted versions into a GFP reporter vector (separately), and injected each into wild-type zebrafish embryos at the 1-cell stage. The periderm enhancer activity of the intact zGPAE was strong and specific at 11 hpf (4-somite stage) (Figure 2D), but that of the GRHL motif-deleted form was weaker (i.e., fewer injected embryos exhibited GFP in the periderm) (Figure 2E,F). Similarly, we identified zGPAEs in which motifs matching the KLF (Figure 2—figure supplement 2A), TFAP2 (Figure 2—figure supplement 2B) and C/EBP (Figure 2—figure supplement 2C) motifs were the only ones detected. In each case this sequence was protected from transposase access and its deletion reduced periderm enhancer reporter activity. Collectively, these assays support the assumption that zGPAE-enriched motifs are transcription factor binding sites essential for the function of periderm enhancers.
 
@@ -72,15 +118,37 @@ We then built a network using the best-match candidate transcription factors as 
 
 To determine if particular combinations of signature motifs are over represented in zGPAEs we counted the numbers of zGPAEs with various two-motif or three-motif combinations (Figure 2—figure supplement 4B and C). While some combinations were present more frequently than others, genes associated with zGPAEs with the most frequent three-motif-combination and those associated with the least frequent three-motif combination both were highly enriched for with the GO term ‘EVL (6–8 hr)'. Interestingly, however, the target genes of these two types of GPAEs rarely overlapped (Figure 2—figure supplement 4D). We also carried out unsupervised hierarchical clustering based on the frequency and combinations of motifs they contained (Figure 2—figure supplement 4A), but did not detect any striking patterns. Presumably distinct motif combinations reflect the deployment of transcription factors to effect expression of the associated genes in the EVL with specific timing, levels, or spatial constraint.
 
-## A gapped k-mer support vector machine classifier trained on zebrafish periderm enhancer candidates
+### A gapped k-mer support vector machine classifier trained on zebrafish periderm enhancer candidates
 
 Towards comparing periderm enhancers in zebrafish and mammals, we sought to convert the pattern of enriched binding motifs into a scoring function. To this end we trained a supervised machine-learning classifier called gapped k-mer support vector machine (gkmSVM) on zGPAEs (Ghandi et al., 2014; Figure 3A). The trained classifier consists of a set of weights quantifying the contribution of each possible 10-mer to an element’s membership in a training set. The resulting scoring function quantifies the degree to which a given test sequence resembles the training set (Ghandi et al., 2014). Five-fold cross validation on subsets of zGPAEs reserved from the training set revealed that the gkmSVM trained on zGPAEs had an area under the receiver operating characteristic curve (auROC) of 0.88, and area under the precision-recall curve (auPRC) of 0.87 (Figure 3B). The latter shows we can identify over 50% of all zebrafish enhancers (recall) at a false positive rate of under 10% (precision = 1-false positive rate). These performance measures compare favorably to those of sequence-based classifiers trained on tissue-specific enhancers in other studies (Gorkin et al., 2012; Chen et al., 2018) and support the validity of the parameters we chose to use for identifying zGPAEs.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig3-v2.jpg)
+
+**Figure 3.:** (A) Pipeline for training and cross-validation of gkmSVM classifier on zebrafish periderm enhancer candidates. (B) Receiver Operating Characteristic (ROC) and Precision-Recall (PR) curves using the gkmSVM trained on zGPAEs. au, area under. Color of curves corresponds to SVM scores. (C) Violin plots showing SVM scores of zebrafish genome tiles with 0% or at least 90% overlapped with the training set (GPAEs). (D) Average H3K27Ac ChIP-seq reads at the 30,000 elements with the highest or lowest scores from the gkmSVM trained on zGPAEs. (E) GO enrichment assay for genes associated with the top-scoring tiles 10,000 tilesincluding those that overlap the training set.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig3-figsupp1-v2.jpg)
+
 The performance measures indicated that the classifier should be able to distinguish elements with periderm enhancer activity based on their sequence. To test this prediction, we partitioned the genome into 400 bp tiles, each overlapping the preceding one by 300 bp, and scored each tile with the classifier. As expected, the average score of the tiles that overlap zGPAEs (i.e., the training set) was higher than that for tiles that do not overlap zGPAEs (Figure 3C). Moreover, the average H3K27Ac signal in 24 hpf embryos at the top scoring 30,000 tiles was higher than in the lowest-scoring 30,000 tiles (Figure 3D). Most importantly, genes associated with the top-scoring 10,000 tiles are enriched for the GO terms ectoderm, EVL, and periderm (Figure 3E), fulfilling our prediction. In addition, average expression of such genes was higher in GFP-positive versus GFP-negative cells in our RNA-seq profiles of these two cell types (p<1.46e-05, Mann-Whitney-Wilcoxon Test). Interestingly, the top-scoring 10,000 tiles that do not overlap zGPAEs are not enriched for GO terms related to EVL (Figure 3—figure supplement 1). Thus, even though the classifier overall has a low false discovery rate, given the large size of the genome there are many high-scoring elements are not periderm enhancers (false positives).
 
-## Zebrafish periderm enhancers share a binding site code with mouse and human periderm enhancers
+### Zebrafish periderm enhancers share a binding site code with mouse and human periderm enhancers
 
 While tissue-specific enhancers are rarely conserved between mammals and zebrafish (with some exceptions Visel et al., 2008), inter-species reporter tests have shown that they nonetheless can be composed of the same binding site code (Fisher et al., 2006a). Therefore, we predicted that elements of the human genome that receive a high score from the classifier trained on zGPAEs will be enriched for human periderm enhancers. To test this notion, we divided the human genome into 400 bp tiles and scored each tile using the classifier trained on zGPAEs. We identified the top-scoring 0.1% bin of tiles (28,595 tiles) and examined their overlap with active enhancers, defined by ChIP-seq with antibodies to various chromatin-marks, in 125 cell/tissue types evaluated by the Roadmap Epigenomics project (Kundaje et al., 2015). Although periderm was not among the tissues evaluated by this project, top-scoring tiles were enriched within enhancers for several epithelial cell types more so than in other categories of enhancers (Figure 4A). For instance, the average H3K27Ac signal in the top 0.1% tiles was much higher in normal human epidermal keratinocytes (NHEK) than in a transformed lymphocyte cell line (GM12878) (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig4-v2.jpg)
+
+**Figure 4.:** (A) Enrichment of human genome tiles that receive a top 0.1% bin score using a zGPAE-trained classifier at enhancers active in the indicated cell type, as revealed by ChIP-seq to chromatin marks in the Roadmap Epigenomics project (Visel et al., 2008). -Such tiles are significantly enriched within a variety of epithelial enhancers. [E05: H1 BMP4 Derived Trophoblast Cultured Cells; E027: Breast Myoepithelial Primary Cells; E028: Breast variant Human Mammary Epithelial Cells; E057, E058: Foreskin Keratinocyte Primary Cells; E079: Esophagus; E091: Placenta; E099: Placenta amnion; E119, Mammary Epithelial Primary Cells (HMEC); E127:NHEK-Epidermal Keratinocyte Primary Cells]. (B) Average density of H3K27Ac ChIP-seq signal in NHEK and GM12878 cells (Visel et al., 2008) at top 0.1% tiles using a zGPAE-trained classifier. (C) Genome browser view focused on IRF6-9.7, also known as IRF6 multispecies conserved sequence 9.7 (MCS9.7) (hg19 chr1:209989050–209989824). A SNP within it, rs642961 (chr1: 209989270), is associated with risk for non-syndromic orofacial cleft. Brazil mutation refers to a rare mutation reported in a patient with Van der Woude syndrome (Fakhouri et al., 2012). This element has peaks of H3K27Ac, IRF6, TP63, and KLF4 ChIP-seq in normal human keratinocytes. Multiz Alignments of 100 vertebrate species shows it is conserved among mammals but not in zebrafishNonetheless it possesses tiles in the top 1.0-1.5% and 0.2% bins using a zGPAE-trained classifier (D) Genome browser view focused on ZNF750-37 (hg19 chr17:80832267–80835105). This element has similar ChIP-seq signature as IRF6-9.7, and like it is not overtly conserved to fish but posseses high-scoring tiles using the zGPAE-trained classifier. (E) GFP expression pattern of Tg(IRF6-9.7:gfp; krt4:Tomato) at five dpf. (F) GFP expression pattern of Tg(ZNF750-37:gfp; krt4:Tomato) at five dpf. Both of these human non-coding elements have periderm enhancer activity in zebrafish embryos.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–K) Lateral views of (A–C, G–I) bright field or (B’, C’, D, E, H’, I’, J, K) epifluorescence images of (A–F) Tg(IRF6-9.7:gfp) or (G–K) Tg(ZNF750-37:eGFP) transgenic zebrafish embryos at the indicated stage. Both strains exhibit GFP expression in the periderm. (F) Transverse and (F’) sagittal sections Tg(IRF6-9.7:gfp) larvae at 5 dpf showing GFP expression in oral epithelium.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Intersection of TP63, IRF6, KLF4 and H3K27Ac ChIP-seq peaks in human NHEK cells. (B) Coordinates for five genomic regions with overlapped TP63, IRF6, KLF4 and H3K27Ac ChIP-seq peaks. (C–E) Genome browser view for regions sharing this feature near RAP2B, KLF4, and PLAU.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Transient transgenic reporter assays for enhancer candidates near human PPL and zebrafish ppl. (A) Genome browser (hg19) view for PPL -8.3kb. (B) Lateral view, anterior to the right, of an embryo at 48 hpf injected at the one cell stage with the PPL-8.3kb:gfp reporter construct. (C) Bar chart showing number of embryos with 10 or more GFP-positive periderm cells injected with the indicated construct. PPL-8.3kb:DKLF: in the enhancer element, the motif matching the KLF4 binding site has been deleted. (D) Zebrafish genome (danRer 7) browser view for ppl-10kb (E) Lateral view, anterior to the right, of an embryo at 48 hpf injected at the one cell stage with the ppl-10kb:gfp reporter construct. (F) Bar chart showing number of embryos with 10 or more GFP-positive periderm cells injected with the indicated construct. ppl-810kb:DKLF: in the enhancer element, the motif matching the KLF4 binding site has been deleted.
 
 If top-scoring tiles in the human genome include human periderm enhancers, then the set of genes associated with such tiles should be enriched for those expressed in periderm. While there is no available expression profile of human periderm, a recent single cell-seq analysis of a region in murine embryonic faces reported a cluster of 248 genes co-expressed with the canonical periderm marker Krt17 (Li et al., 2019). Genes associated with the top-scoring 0.1% bin of tiles are enriched for those in this cluster (hereafter, mouse periderm) (hypergeometric p-value=0.044) (Li et al., 2019). Similarly, the zebrafish orthologs of such genes are expressed, on average, at higher levels in GFP-positive versus GFP-negative cells described above (Wilcoxon rank sum test, p-value=8.371e-06). Finally, we analyzed tiles of the mouse genome using the classifier trained on zGPAEs and found that tiles in the top-scoring 0.1% bin were strongly associated with genes expressed in mouse periderm (Fisher’s Exact test, p=2.2e-16) (Li et al., 2019). These findings suggest periderm enhancers in zebrafish, human and mouse genomes are enriched for the same transcription factor binding sites.
 
@@ -92,17 +160,47 @@ We found a third periderm enhancer 8.3 kb upstream of the transcriptional start 
 
 To determine whether the shared binding sites reflect sequence homology between ppl-10 and PPL-8.3, we performed sequence alignments. We found that a 467 bp core sequence from the zebrafish enhancer (plus-strand) is marginally more identical to a 400 bp core sequence from the human enhancer (plus-strand) relative to several control sequences including: the zebrafish minus-strand (reverse-complement), the non-biological reverse sequence, and non-biological sequences of similar lengths produced by Fisher-Yates shuffling of the plus-strand sequence (see Material and methods, Supplementary file 2a and Supplementary file 2b). Furthermore, three-way alignments of the human and mouse plus-strand sequences with each of the zebrafish test and control sequences indicates that the zebrafish plus-strand engenders a need for a number of null characters (dashes) in the three-way alignments that is almost one standard deviation smaller than the controls (158 insertions versus an average number of insertions of 200.2 +/- 44.1 s.d. amongst minus-strand, reverse, and three Fisher-Yates shuffled sequences of the plus-strand). Last, the Hu_400+ and Zf_467+ pairwise-alignment has more 5 bp-long blocks of perfect identity (five such blocks) relative to all five of the zebrafish controls (average two 5 bp-long blocs). Much of this potentially faint conservation overlies the elements conserved in the mammalian enhancer sequences (Supplementary file 2b). In summary, there is modest but detectable sequence homology between human PPL-8.3 and zebrafish ppl-10.
 
-## Defining sets of enhancers in mouse palate epithelium and a human oral epithelium cell line with ATAC-seq
+### Defining sets of enhancers in mouse palate epithelium and a human oral epithelium cell line with ATAC-seq
 
 Given the preceding findings, we reasoned that the gkmSVM classifier trained on the zebrafish periderm enhancers might be able to identify SNPs that disrupt periderm enhancers, and might perform as well as or better than classifiers trained on enhancers from other relevant tissues, such as mouse palate epithelium or a human oral epithelium cell line. To test this prediction, we dissected palate shelves from mouse embryos at embryonic day (E)14.5 and manually removed epithelium, both basal and periderm layers together, after brief incubation in trypsin (Figure 5A). Subsequently we subjected both the palate epithelium and the residual palate mesenchyme to ATAC-seq; there was a strong correlation among peaks in the three replicates (Figure 5—figure supplement 1A). In palate epithelium, we identified elements with more ATAC-seq reads than in palate mesenchyme (i.e., palate epithelium-specific NFRs, listed in Supplementary file 1g and h); these were binned as high- or low-density H3K27Ac signal (6079 and 8177 elements, respectively; listed in Supplementary file 1i) based on H3K27Ac ChIP-seq data from embryonic facial prominences (E14.5, ENCODE database, GEO:GSE82727) (ENCODE Project Consortium, 2012; Figure 5B). In the H3K27AcHigh cluster, the average H3K27Ac ChIP-seq signal dipped in the center of the NFR (Figure 5C) as in zGPAEs. The average density of ATAC-seq reads was slightly higher in H3K27AcHigh vs. H3K27AcLow cluster (Figure 5—figure supplement 1B). Genes assigned to H3K27AcHigh elements were strongly enriched for the GO term ‘oral epithelium’ (log10(binomial-FDR) <75), as were those assigned to H3K27AcLow elements (log10(binomial-FDR) <49) (Figure 5D, Figure 5—figure supplement 1C). Significantly, we found H3K27AcHigh cluster elements both near genes expressed at high levels in superficial palate epithelium (palate periderm) (e.g., Krt17, Figure 5E) and near those expressed in basal palate epithelium (e.g., Krt14, Figure 5—figure supplement 1D), showing that the isolated epithelium contained both of these layers. We also observed mesenchyme-specific NFRs in the H3K27AcHigh cluster near genes whose expression is high in mesenchyme (e.g., Runx2, Figure 5F), and shared NFRs in the H3K27AcHigh cluster near genes expressed in both (e.g., Klf4, Figure 5—figure supplement 1E). Elements in the H3K27AcHigh cluster that do not overlap transcription start sites were named mouse palate epithelium active enhancers (mPEAEs) (Supplementary file 1i). HOMER revealed 18 short sequences for which mPEAEs are enriched and that are present in at least 5% of them (Figure 5G). Of note, six were predicted to be bound by transcription factors also predicted to bind one of the 11 zGPAE signature motifs (Figure 5G, bold text), suggesting epithelial enhancers in vertebrates share a set of core transcription factors.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig5-v2.jpg)
+
+**Figure 5.:** (A) Workflow of ATAC-seq in epithelium and mesenchyme cells isolated from palate shelves dissected from E14.5 embryos. (B) Heatmap plots of ATAC-seq and E14.5 mouse facial prominence H3K27Ac ChIP-seq (Klein and Andersen, 2015) in tissue-specific NFRs. (C) Plot of average density of H3K27Ac ChIP-seq signal, showing higher signal at cluster 1 elements than cluster 2 elements. (D) GO enrichment (MGI mouse gene expression pattern) of genes associated with cluster 1 elements. (E and F) UCSC Genome browser views of the mouse genome (mm10 build) showing the ATAC-seq and H3K27Ac ChIP-seq signals near the Krt17 and Runx2 genes. Red box, an example of a mouse palate-epithelium active enhancer (mPEAE). Blue boxes, examples of mouse palate mesenchyme active enhancers (mPMAEs). (G) Motifs enriched in cluster 1 of E14.5 palate-epithelium specific NFRs with elements overlying transcription start sites removed (i.e., mPEAEs). Motifs shared with zGPAEs are in bold.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Correlation of three biological replicates of E14.5 mouse palate epithelium and mesenchyme ATAC-seq results. (B) ATAC-seq density plot of different clusters of E14.5 mouse palate epithelium specific NFRs. (C) GO enrichment (MGI mouse gene expression pattern) of genes associated with cluster 2 elements. (D and E) UCSC Genome browser view showing the ATAC-seq and H3K27Ac ChIP-seq signals in Krt14 and Klf4 locus.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Heatmap plots of ATAC-seq of HIOEC- and HEPM-specific NFRs. (B). GO enrichment for the genes near cluster 1 of HIOEC-specific NFRs. (C). GO enrichment for the genes near cluster 2 of HIOEC-specific NFRs. (D and E) UCSC Genome browser tracks showing the HIOEC and HEPM ATAC-seq and NHEK H3K27Ac ChIP-seq signals in IRF6 (D) and RUNX2 (E) locus.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Motifs enriched in hOEAEs. Bold, shared motifs enriched in all three epithelial tissues. (B) The significance of enrichment of each of the shared motifs among hOEAEs, mPEAEs and zPEAEs.
+
 Similarly, we carried out ATAC-seq, and H3K27Ac ChIP-seq on human immortalized oral epithelial cells (HIOEC) induced to differentiate by incubation in calcium. For comparison, we also carried out ATAC-seq on the human embryonic palate mesenchyme (HEPM) cell line . Focusing on ATAC-seq peaks that concorded among three replicates in each cell type, 31,296 NFRs present in HIOEC cells were absent in HEPM cells (Supplementary file 1j). Among such HIOEC-specific peaks, 15,972 overlapped (or were flanked by) H3K27Ac peaks called in two or more of the three replicates (cluster 1) (Figure 5—figure supplement 2A; listed in Supplementary file 1k) while 15,324 peaks neither overlapped nor were flanked (within 1500 bp) by H3K27Ac peaks (cluster 2). GO term enrichment revealed that genes associated with cluster 1 HIOEC-specific peaks were enriched for epithelial structure (Figure 5—figure supplement 2B), while cluster 2 did not exhibit such enrichment (Figure 5—figure supplement 2C). For instance, the KRT17 gene is expressed in human epithelia, and chromatin regions within this locus were specifically open in HIOEC cells and overlapped with a human embryonic craniofacial super enhancer (Figure 5—figure supplement 2D). By contrast, chromatin regions within the RUNX2 locus were specifically open in HEPM cells (Figure 5—figure supplement 2E). From cluster 1 we filtered out elements containing transcription start sites, and named the remaining subset human oral-epithelium active enhancers (hOEAEs). They were enriched for a set of binding sites, such as TEAD, JUN, C/EBP, GRHL and TFAP2; among these several were shared with zGPAEs and mPEAEs (Figure 5—figure supplement 3).
 
-## Ranking OFC-associated SNPs using classifiers trained on zGPAEs, mPEAEs, and hOEAEs
+### Ranking OFC-associated SNPs using classifiers trained on zGPAEs, mPEAEs, and hOEAEs
 
 Next, we used the classifiers trained on zGPAEs, mPEAEs, and hOEAEs to predict which single nucleotide polymorphisms (SNPs) associated with risk for orofacial cleft near the KRT18 gene are most likely to disrupt an enhancer of the type upon which the classifier was trained. Revisiting our previously published GWAS data (Leslie et al., 2017), including imputed SNPs, we found 14 SNPs with at least suggestive p-values for association to risk for orofacial clefting (OFC) (p<1e-5) and in strong linkage disequilibrium with the lead SNP at this locus (i.e., SNPs 1–14) (SNP labels and p-values, Supplementary file 1j; Figure 6A). Functional SNPs are predicted to a) lie in enhancers active in a relevant tissue and b) have allele-specific effects on enhancer activity. To determine which SNPs lie in enhancers we evaluated published chromatin-state data from human embryonic faces (Wilderman et al., 2018) and 111 cell types characterized by the Roadmap Epigenomics project (Kundaje et al., 2015). Interestingly just three of the SNPs, i.e., SNP1, SNP2, and SNP13, lie in chromatin predicted to be active in one or more of these tissues while the others lay in relatively inert chromatin (Figures 6B, 9 representative Roadmap cell lines are shown). Using the classifier trained on zGPAEs, we calculated deltaSVM scores of the 14 SNPs, and for comparison, of 1000 additional SNPs within 100 kb (Figure 6C and D). The deltaSVM scores for most of the OFC-risk-associated SNPs were within one standard deviation of the median score of 1000 SNPs. By contrast, the deltaSVM score of SNP2 lower than that of 998 of 1000 randomly selected SNPs, and thus was an outlier (Bonferroni corrected p value = 0.028) (Figure 6C and D). Interestingly, SNP2 also had the strongest negative deltaSVM of all the OFC-risk-associated SNPs when the classifier was trained on mPEAEs or on hOEAEs, although in neither case were the deltaSVM values significant outliers in comparison to those of the 1000 randomly-selected SNPs (SNP2, Bonferroni corrected p values of 0.126 and 0.238, respectively) (Supplementary file 3b-e). Because KRT18 is not expressed in palate mesenchyme, we used the classifier trained on mouse palate mesenchyme active elements (mPEAEs) as a negative control. As expected the deltaSVM for SNP2 was unremarkable (within the middle 50% of scores of 1000 SNPs) (Figure 6D and Supplementary file 3b-e). In conclusion, as DeltaSVM indicates that the risk-variant of SNP2 significantly lessens the periderm-enhancer score of the element containing it, SNP2 is the top-candidate for a functional SNP at this locus.
 
-## Reporter assays in human oral epithelium cells support SNP2 being functional variant
+![Figure 6.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig6-v2.jpg)
+
+**Figure 6.:** (A) Regional plot showing OFC-risk-associated single nucleotide polymorphism (SNPs) near KRT18 from this study. SNP4 is the lead SNP from our meta-analysis of OFC GWAS (Leslie et al., 2017). (B) Browser view of the human genome, hg19, focused on this locus. Tracks: SNPs: OFC-risk-associated SNPs. SNP1: rs11170342, SNP2: rs2070875, SNP3: rs3741442, SNP4: rs11170344, SNP5: rs7299694, SNP6: rs6580920, SNP7: rs4503623, SNP8: rs2363635, SNP9: rs2682339, SNP10: rs111680692, SNP11: rs2363632, SNP12: rs4919749, SNP13: rs2638522, SNP14: rs9634243. Color coded bars: Chromatin status (color code explained in key), revealed by ChIP-seq to various chromatin marks. Cs13-cs17, facial explants from human embryos at Carnegie stage (cs) 13–17, encompassing the time when palate shelves fuse (Wilderman et al., 2018). Roadmap Epigenomics Project cell lines (Visel et al., 2008): GM12878, B-cell derived cell line; ESC, Embryonic stem cells; K562, myelogenous leukemia; HepG2, liver cancer; HUVEC, Human umbilical vein endothelial cells; HMEC, human mammary epithelial cells; HSMM, human skeletal muscle myoblasts; NHEK, normal human epidermal keratinocytes; NHLF, normal human lung fibroblasts. AP, active promoter; WP, weak promoter; PP, poised promoter; AE, active enhancer; WE, weak enhancer; TT, transcriptional transition; WT, weakly transcribed; Ins, insulator; PR, polycomb-repressed. (C) deltaSVM scores predicted by zGPAEs-derived classifier for the 14 OFC associated SNPs near KRT18. (D) Box and whisker plots of deltaSVM scores of 1000 randomly-selected SNPs near KRT18, scored by classifiers trained by zGPAEs (zebrafish periderm active enhancers), hOEAEs (human oral epithelium active enhancers), mPEAEs (mouse palatal epithelium active enhancers) and mPMAEs (mouse palatal mesenchyme active enhancers). The line is the median scoring SNP, the box contains the middle-scoring two quartiles, and the whisker represent the top and lower quartiles. Dots are outliers. deltaSVM scores for SNP1 and SNP2 are indicated. Number out of 1000 randomly selected SNPs with a lower deltaSVM than SNP2 with classifier trained on zGPAEs, 2; on mPEAEs, 9; on hOEAEs, 17; on mPMAEs, 186. (E) Dual luciferase assay for non-risk and risk alleles of rs11170342 (SNP1) and rs2070875 (SNP2) in GMSM-K cells. (F) Schematic diagram showing the workflow of generating GMSM-K cell colonies with 109 bp flanking SNP2 deleted by CRISPR-Cas9. (G,H) qRT-PCR showing relative RNA expression of KRT18 (G) and KRT8 (H) in three homozygous knockout colonies (KO) and one isolated wild-type colony (Control) of GMSM-K cell lines. (I) Lateral view of transgenic mice LacZ reporter assay for the 700 bp DNA fragment overlapping SNP2. (I’) Section of the facial prominence from I (red circled region).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** KO: three homozygous knockout colonies; Control: one isolated wildtype colony; Pool-control: pool of GMSM-K cells transfected with two gRNAs only; Pool-KO: Pool of GMSM-K cells transfected with two gRNA along with Cas9 RNP.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/51325/elife-51325-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Embryos injected with a reporter construct built from a 701 bp element centered on SNP1, harboring the risk or non-risk allele as indicated. The large majority of embryos with SNP1 constructs, of either allele, were not blue, and no two blue embryos showed the same pattern. R-random integration, see below. No further copy number analysis was carried out. (B) Embryos injected with a reporter construct built from a 700 bp element centered on SNP2, harboring the risk or non-risk allele as indicated. Using the genomic DNA isolated from each embryo, PCR was carried out to determine if the reporter construct was present at all, and whether it was (S - single) present at the safe harbor locus in a single copy, (T - tandem), present at the safe harbor locus in more than one copy, or (R-random) was detectable but absent from the safe harbor locus, suggesting it integrated randomly into the genome (Kvon et al., 2020). One embryo (number 1, boxed) injected with a SNP2 construct (risk-allele) showed reporter activity in the periderm, as predicted. Quantitative PCR indicated this embryo had 8–10 copies of the reporter construct while the other T embryos had 2 copies.
+
+### Reporter assays in human oral epithelium cells support SNP2 being functional variant
 
 Previously, upon training a gkmSVM classifier on melanocyte enhancers, the deltaSVM scores of SNPs within known melanocyte enhancers were found to correlate with the observed differences in reporter activity between t enhancer constructs tested in a melanocyte cell line (Lee et al., 2015). Therefore we predicted that, similarly, upon training a classifier on zGPAEs, mPEAEs, or hOEAEs, deltaSVM scores of SNPs within known epithelium enhancers would correlate with the differences in reporter activity between risk and non-risk constructs tested in a human basal oral keratinocyte cell line. Of the 14 OFC-risk associated SNPs at this locus, only SNP1 and SNP2 lie in chromatin marked as an active enhancer in normal human epidermal keratinocytes (NHEK) cells, which we predict are similar to oral keratinocytes (Figure 6B). SNP1 has a neutral deltaSVM when the classifier was trained on zGPAEs or mPEAEs (Figure 6C and D and Figure 6—figure supplement 1) and a deltaSVM of −3, in the lowest quartile of 1000 SNPs, when the trained on hOEAEs (Figure 6D and Figure 6—figure supplement 1). As mentioned above, SNP2 had a strongly negative deltaSVM with the classifier trained on zGPAEs, mPEAEs, and hOEAEs (Figure 6C and D). We amplified 700-base-pair elements centered on each SNP, engineered them to harbor either the risk-associated or non-risk associated allele of the SNP, introduced them (separately) into a luciferase-based reporter vector (with a basal SV40 promoter), and transfected these constructs into GMSM-K basal oral epithelium cells (Gilchrist et al., 2000). Both elements drove luciferase levels above background, suggesting that both SNPs lie in enhancers active in oral keratinocytes. SNP2 but not SNP1 had significant allele-specific effects on this enhancer activity, with the risk-associated variant driving lower reporter activity than the non-risk variant (Figure 6E). Thus, for these two SNPs, the deltaSVM scores and reporter effects were correlated, and SNP2 was further supported as being functional.
 
@@ -112,7 +210,7 @@ KRT18 is expressed in many epithelia other than periderm, including trophectoder
 
 Interestingly, however, a single embryo transgenic for the risk allele of the SNP2 element exhibited mild reporter expression in the periderm of the face and limbs (Figure 6I,I’, and Figure 6—figure supplement 3B). We hypothesized that this embryo had a higher copy number of the reporter vector than the other embryos. PCR analysis confirmed that this embryo carried 8 copies of the reporter constructs, whereas all other embryos transgenic for SNP2 carried only two copies. This result is consistent with the the prediction that SNP2 lies in a periderm enhancer .
 
-## Allele-specific effects of SNP1 and SNP2 transcription factor binding sites
+### Allele-specific effects of SNP1 and SNP2 transcription factor binding sites
 
 We used JASPAR to assess the transcription factor consensus binding sites in 19 bp windows centered on SNP1 (rs11170342) or SNP2 (rs2070875). The risk allele of SNP1 strongly reduced the score of Plagl1 and Spz1 sites, and created high-scoring sites for SP4/8/9 and KLF14/15. The risk allele of SNP2 strongly reduced the score of SNAI1/2, NFATC1/2/4, and SIX1/2 sites, and created high-scoring sites for HNF4A/G and NR2F1 (Supplementary file 3f). Interestingly, Snai2 is expressed in mouse palate epithelium, and Snai1/Snai2 double mutants exhibit abnormal migration of periderm at medial edge palate epithelium (Murray et al., 2007).
 
@@ -134,61 +232,386 @@ We conclude by suggesting the classifiers presented may be useful in nominating 
 
 ## Materials and methods
 
-## Identification of SNPs associated with human orofacial clefting
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot TOP10</td>
+      <td>Life technologies</td>
+      <td>Cat# C4040-10</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>GMSM-K (human embryonic oral epithelial cell line)</td>
+      <td>(Gilchrist et al., 2000)</td>
+      <td>RRID:CVCL_6A82</td>
+      <td>a kind gift from Dr. Daniel Grenier</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HIOEC (human immortalized oral epithelial cells)</td>
+      <td>(Sdek et al., 2006)</td>
+      <td>RRID:CVCL_6E43</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEPM (human embryonic palatal mesenchyme cells)</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-1486, RRID:CVCL_2486</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Histone H3, Acetylated Lysine 27 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab4729, RRID:AB_2118291; lot NO. GR3211959-1;</td>
+      <td>ChIP (4 ug per 500,000 HIOEC cells)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXX330 (plasmid)</td>
+      <td>Addgene;{Cong, 2013 #2;Ran, 2013 #1}</td>
+      <td>RRID :Addgene_ 42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cFos-GFP</td>
+      <td>(Fisher et al., 2006b)</td>
+      <td></td>
+      <td>a gift from Shannon Fisher</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cFos-tdTomato</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Modified from cFos-GFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR/D-TOPO</td>
+      <td>Life technologies</td>
+      <td>InvitrogenCat# K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cFos-FFLuc</td>
+      <td>(Liu et al., 2017a)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cFos-RLuc</td>
+      <td>(Liu et al., 2017a)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Klf17_+1.8_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGCTGACTCCA CCATCCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Klf17_+1.8_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACCTACCCCTTGGC TAATCGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cavin2b_+18_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCTGTTTTTGC CATCAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cavin2b_+18_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACCTTTTAATCAC CGCCTTTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gadd45ba_−0.7_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGTTGGGTTC AGAGGTAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gadd45ba_−0.7_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACCATGACTCGAC GAAAGCAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SNP2_gRNA_left</td>
+      <td>This paper</td>
+      <td>gRNA target</td>
+      <td>CTAAGAAGGATC TGCTCCCC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SNP2_gRNA_right</td>
+      <td>This paper</td>
+      <td>gRNA target</td>
+      <td>GAGGACAGTATTC TTAAACG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAqueous Total RNA Isolation Kit</td>
+      <td>Ambion</td>
+      <td>Cat# AM1912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator-5 Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-Seq v4 Ultra Low Input RNA Kit</td>
+      <td>TAKARA</td>
+      <td>Cat# 634888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA 6000 Pico</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# 5067–1513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat# FC-131–1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat# FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VAHTS Universal DNA Library Prep Kit for Illumina</td>
+      <td>Vanzyme</td>
+      <td>Cat# ND606-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>Roche</td>
+      <td>Cat# KK4824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext High-Fidelity 2x PCR Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0541S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampure XP beads</td>
+      <td>Beckman Coutler</td>
+      <td>Cat# A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.25% trypsin-EDTA</td>
+      <td>Life Technologies</td>
+      <td>Cat# 25200056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Defined trypsin inhibitor</td>
+      <td>Life Technologies</td>
+      <td>Cat# R007100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Turbo DNase I</td>
+      <td>Ambion</td>
+      <td>Cat# AM2238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R</td>
+      <td>RRID:SCR_001905</td>
+      <td>v 3.5.1 v 3.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>(Langmead and Salzberg, 2012)</td>
+      <td>RRID:SCR_005476</td>
+      <td>v 2.3.4.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>(Bolger et al., 2014)</td>
+      <td>RRID:SCR_011848</td>
+      <td>v.0.38</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind</td>
+      <td>(Ross-Innes et al., 2012)</td>
+      <td>RRID:SCR_012918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>seqMINER</td>
+      <td>(Ye et al., 2011)</td>
+      <td>RRID:SCR_013020</td>
+      <td>v 1.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>(Heinz et al., 2010)</td>
+      <td>RRID:SCR_010881</td>
+      <td>v 3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gapped k-mer support vector machine</td>
+      <td>(Ghandi et al., 2016)</td>
+      <td>https://rdrr.io/cran/gkmSVM/</td>
+      <td>v 0.79.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTools</td>
+      <td>(Quinlan and Hall, 2010)</td>
+      <td>RRID:SCR_006646</td>
+      <td>v 2.24.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard Tools</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>RRID:SCR_006525</td>
+      <td>v 0.35</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>(Li et al., 2009)</td>
+      <td>RRID:SCR_002105</td>
+      <td>v 1.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>(Zhang et al., 2008)</td>
+      <td>RRID:SCR_013291</td>
+      <td>v 2.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepTools</td>
+      <td>(Ramírez et al., 2016)</td>
+      <td>RRID:SCR_016366</td>
+      <td>v 2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification of SNPs associated with human orofacial clefting
 
 We re-analyzed our published meta-analysis of two GWASs for orofacial clefting (Leslie et al., 2017).The details of each contributing GWAS have been extensively described. Data are from a total of 823 cases, 1700 controls, and 2811 case-parent trios and were obtained by genotyping using the Illumina HumanCore+Exome array or the Illumina Human610-Quad array. In our re-analysis, genotype probabilities for imputed SNPs were converted to most-likely genotype calls using GTOOL (http://www.well.ox.ac.uk/~cfreeman/software/gwas/gtool.html). Genotype calls were retained for analysis only if the genotype with the highest probability was greater than 0.9. SNPs were excluded if the minor allele frequency was low (<1%), the imputation quality scores was low (INFO <0.5) or deviating from Hardy-Weinberg equilibrium in genetically defined Europeans (p<0.0001). Statistical analyses were performed as previously described (Leslie et al., 2017), using an inverse variance-weighted fixed-effects meta-analysis. At the 12q13.13 locus, we prioritized 14 SNPs whose p-values indicated strong linkage disequilibrium (<1E-5) (listed in Supplementary file 1j). These included two SNPs with p-values reaching formal genome-wide significance (5E-8): rs11170344, the lead SNP in our re-analysis; and rs3741442, which was identified in a recent GWAS in a Chinese orofacial cleft population. (Yu et al., 2017).
 
-## Zebrafish lines and maintenance
+### Zebrafish lines and maintenance
 
 D. rerio were maintained in the University of Iowa Animal Care Facility according to a standard protocol (protocol no. 6011616). (Westerfield, 1993) All zebrafish experiments were performed in compliance with the ethical regulations of the Institutional Animal Care and Use Committee at the University of Iowa and in compliance with NIH guidelines. Zebrafish embryos were maintained at 28.5°C, and staged by hours or days post-fertilization (hpf or dpf).
 
-## Mouse maintenance
+### Mouse maintenance
 
 All C57BL/6 mouse experiments used for ATAC-seq library preparation were performed in accordance with approval of the Institutional Animal Care and Use Committees at the School and Hospital of Stomatology of Wuhan University (protocol no. 00271454). Mouse experiments for LacZ reporter transgenic animal work performed at the Lawrence Berkeley National Laboratory (LBNL) were reviewed and approved by the LBNL Animal Welfare and Research Committee. Transgenic mouse assays were performed in Mus musculus FVB strain mice.
 
-## Cell culture
+### Cell culture
 
 GMSM-K human embryonic oral epithelial cell line (a kind gift from Dr. Daniel Grenier; Gilchrist et al., 2000) and the human immortalized oral epithelial cell (HIOEC) line (Sdek et al., 2006) were maintained in keratinocyte serum-free medium (Life Technologies, Carlsbad, CA) supplemented with EGF and bovine pituitary extract (Life Technologies). HEPM human embryonic palatal mesenchyme cells (ATCC CRL-1486) were maintained in DMEM (Hyclone, Pittsburgh, PA) supplemented with 10% fatal bovine serum (Hyclone). All the cell lines used in this study were tested for mycoplasma contamination and authenticated by genetic profiling using polymorphic short tandem repeats.
 
-## Electroporation and dual luciferase assay
+### Electroporation and dual luciferase assay
 
 For dual luciferase assays, each reporter construct was co-transfected with Renilla luciferase plasmid and three biological replicates were used. Briefly, GMSM-K cells were electroporated with plasmid using the Amaxa Cell Line Nucleofector Kit (Lonza, Cologne, Germany) and the Nucleofector II instrument (Lonza). We used a dual-luciferase reporter assay system (Promega, Madison, WI) and 20/20 n Luminometer (Turner Biosystems, Sunnyvale, CA) to evaluate the luciferase activity following manufacturer’s instructions. Relative luciferase activity was calculated as the ratio between the value for the Firefly and Renilla enzymes. Three independent measurements were performed for each transfection group. All results are presented as mean ±s.d. Statistical significance was determined using the Student’s t-test.
 
-## Plasmid constructs and transient reporter analysis of potential periderm enhancer in zebrafish and mouse
+### Plasmid constructs and transient reporter analysis of potential periderm enhancer in zebrafish and mouse
 
 All candidate enhancer elements described were cloned using zebrafish or human genomic DNA, and were harvested from either zebrafish embryos or a human immortalized oral keratinocyte cell line (GMSM-K; Gilchrist et al., 2000). Products were cloned into the pENTR/D-TOPO plasmid (Life Technologies, Carlsbad, CA) and validated by Sanger sequencing. Site-directed mutagenesis was used to generate elements lacking the corresponding motifs or containing a risk variant. All elements were subcloned into the cFos-GFP plasmid (a gift from Shannon Fisher; Fisher et al., 2006b) or cFos-tdTomato, a derivative of cFos-GFP, or cFos-GFP; Cry-GFP, a derivative that includes a lens-specific promoter (cloning details available upon request). For each reporter construct, at least 100 embryos at the 1 cell to 2 cell stage were injected (20 pg reporter construct plus 20 pg tol2 mRNA); three replicates were performed, each on a different day (Fisher et al., 2006b). Embryos injected were examined by epifluorescence microscopy first at approximately 11 hpf, then each day subsequently until approximately four dpf. SNP1 and SNP2 700 bp elements, used in GFP and LacZ reporter constructs were (SNP1) chr12:53,340,250–53,340,950 and (SNP2) chr12:53,343,968–53,344,668 (hg19). Specifically, for mouse reporter assay, candidate enhancers were PCR-amplified and cloned upstream of a Shh-promoter-LacZ-reporter cassette. We used a mouse enhancer-reporter assay that relies on site-specific integration of a transgene into the mouse genome (Kvon et al., 2020). In this assay, the reporter cassette is flanked by homology arms targeting the H11 safe harbor locus (Tasic et al., 2011). Cas9 protein and a sgRNA targeting H11 were co-injected into the pronucleus of FVB single cell stage mouse embryos (E0.5) together with the reporter vector (Kvon et al., 2020). Embryos were sampled and stained at E13.5. Embryos were only excluded from further analysis if they did not carry the reporter transgene. Transgene copy number was estimated by qPCR using a TaqMan probe targeting Shh promoter.
 
-## Dissociation of zebrafish embryos and FACS
+### Dissociation of zebrafish embryos and FACS
 
 About 500 Tg(krt4:GFP) (Gong et al., 2002) embryos were collected at the 4-somite stage and rinsed with PBS without Ca2+ or Mg2+ (Life Technologies). Embryos were dechorionated using pronase (Sigma, St. Louis, MO, 1 mg/mL in fish water 1 mg/mL in fish water) at room temperature for 10 min, rinsed in PBS, and then dissociated cells using a pestle and incubated in trypsin (0.25%)-EDTA (Life technology) at 33°C for 30 min. Reactions were stopped by adding PBS supplemented with 5% fetal bovine serum (Life technologies). Dissociated cells were re-suspended into single-cell solution and analyzed at the University of Iowa Flow Cytometry Facility, using an Aria Fusion instrument (Becton Dickinson, Franklin Lakes, NJ).
 
-## Dissociation of mouse palatal epithelium
+### Dissociation of mouse palatal epithelium
 
 Mouse embryos at were collected at E14.5 and palate shelves were dissected. The multi-layered palate shelf epithelium was manually isolated as described previously (Zhang et al., 2017). Briefly, palatal shelves isolated from the frontal facial prominence were incubated in 0.25% trypsin-EDTA (Life Technologies) at 4°C for 10 min, after which the reaction was stopped using Trypsin Inhibitor (Life Technologies). Under a dissecting microscope, the epithelium was isolated for ATAC-seq by gently peeling using microforceps. The remaining tissue, comprised largely of mesenchymal cells, was also collected for control samples. This isolation protocol was previously described as a method for harvesting oral periderm (Zhang et al., 2017), but in our experiment it was clear that the epithelial layers were harvested together. Supporting the basal epithelium being harvested with the epithelial and not the mesenchymal layer, the ATAC-seq results from the former and not the latter show open chromatin at the Tp63 gene. Approximately 20,000 epithelial cells and the same number of mesenchymal cells were harvested from seven embryos at E14.5. About 20,000 cells were used to prepare one ATAC-seq library.
 
-## Preparation of RNA-seq libraries and high-throughput sequencing
+### Preparation of RNA-seq libraries and high-throughput sequencing
 
 Three independent biological replicates were subjected to RNA-seq profiling. In each replicate, we isolated 20,000 peridermal and non-peridermal cells from Tg(krt4:GFP) embryos at the 4-somite stage. Total RNA was extracted from the sorted cells using the RNAqueous Total RNA Isolation Kit (Ambion, Foster City, CA) and treated with Turbo DNase I (Ambion, Austin, TX) to remove residual genomic DNA. The treated RNA was then purified and concentrated using the RNA Clean and Concentrator-5 Kit (Zymo Research, Irvine, CA). After quantification with Qubit 3.0 (Life Technologies) and quality control with the Agilent RNA 6000 Pico Kit on Agilent 2100 (Agilent Technologies, Santa Clara, CA), 1 ug of RNA was subjected to first-strand cDNA synthesis and cDNA amplification using the SMART-Seq v4 Ultra Low Input RNA Kit (Takara Bio, Kusatsu, Shiga, Japan). Purified cDNA was quantified using Qubit (Life Technologies), and for each library 150 pg cDNA was used as input with the Nextera XT DNA Sample Preparation Kit (Illumina, San Diego, CA), following the manufacturer’s instructions. Each DNA library was quantified using a KAPA Library Quantification Kit (Roche, Mannheim, Germany) and pooled for HiSeq4000 (Illumina) high-throughput sequencing at the same molarity.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 RNA-seq raw reads data was trimmed using the Trimmomatic (Usadel Lab, Aachen, Germany. v0.36; Bolger et al., 2014) (parameter: ILLUMINACLIP:TrueSeq3PE-PE.fa:2:30:10:8:TRUE LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:30), and aligned to zv10 cDNA reference sequence using the kallisto (Pachter Lab, California Institute of Technology, Pasadena, CA) aligner (Bray et al., 2016) with the default parameters. The output from kallisto was quantified using the sleuth R package (Pachter Lab; Pimentel et al., 2017) according to a standard protocol. We used q-value <0.01 and p-value<0.01 as the threshold for significant difference. Gene set enrichment analysis was performed using GSEA (v 3.0) (Subramanian et al., 2005). Gene ontology (GO) enrichment analysis was performed using the Metascape online tool (http://metascape.org/gp/index.html) (Tripathi et al., 2015), and the top GO categories were selected according to the binomial P values. Raw and processed sequencing data for RNA-seq were deposited in GEO repository (GSE140241).
 
-## Chromatin immunoprecipitation of H3K27 acetylation (H3K27Ac) combined with high throughput sequencing (ChIP-seq)
+### Chromatin immunoprecipitation of H3K27 acetylation (H3K27Ac) combined with high throughput sequencing (ChIP-seq)
 
 HIOEC cells were seeded at 1 × 105 cells per 100 mm plate (one plate per biological replicate), grown to 90–100% confluency (refreshed medium every other day) and subjected to 1.2 mM Ca2+ in culture medium for 3 days. Cell were washed with ice-cold PBS (Hyclone) and fixed with 1% paraformaldehyde (PFA) for 10 min at room temperature. PFA was then quenched in 134M Glycine (Sigma) for 5 min at room temperature, and cells were collected with a cell scraper in ice-cold PBS. After centrifuge for 10 mins at 500 g, the cell pellets were resuspended with 5 mM PIPES pH8.5, 85 mM KCl, 1% (v/v) IGEPAL CA-630, 50 mM NaF, 1 mM PMSF, 1 mM phenylarsine oxide, 5 mM Sodium Orthovanadate and protease inhibitor cocktail (Roche, Germany). After sonication, chromatin immunoprecipitation was performed using 4 ug of anti-Histone H3, Acetylated Lysine 27 (H3K27Ac) (Abcam, Cambridge, UK, ab4729, lot NO. GR3211959-1) per 500,000 cells. ChIP-seq library were indexed with kit (ND606-01, Vanzyme, China). 150-bp-paired-end sequencing was performed using the HiSeq X Ten sequencer (Illumina, provided by Annoroad Genomics, China). Output sequences were trimmed using Trimmomatic (v0.38) (Bolger et al., 2014) (parameter: ILLUMINACLIP:TrueSeq3PE-PE.fa:2:30:10:8:TRUE LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:30). All trimmed, paired reads were aligned to human genome assembly 19 (hg19) using Bowtie 2 (Johns Hopkins University, Baltimore, MD, default parameters; Langmead and Salzberg, 2012). Peaks were called using MACS2 (v2.1.1) (Zhang et al., 2008). DeepTools (Max Planck Institute for Immunobiology and Epigenetics, Freiburg, Germany, v 2.0) was used to confirm reproducibility of the biological replicates and generate bigWig coverage files for visualization (Ramírez et al., 2016). Raw and processed sequencing data for this H3K27Ac ChIP-seq were deposited in GEO repository (GSE139809).
 
-## Preparation of ATAC-seq library and high-throughput sequencing
+### Preparation of ATAC-seq library and high-throughput sequencing
 
 We prepared the ATAC-seq library according to a previously published protocol (Buenrostro et al., 2013). Briefly, sorted cells were lysed with 50 µL cold lysis buffer (10 mM Tris-‐HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% NP-40; all components purchased from Sigma) in a centrifuge at 500 x g for 15 min at 4°C. Pelleted nuclei were resuspended in 50 µL tagmentation reaction mix (25 µL Nextera TD Buffer, 2.5 µL Nextera TD Enzyme, and 22.5 µL H2O, all from the Nextera DNA Sample Preparation Kit [Illumina]). Tagmentation was performed at 37°C for 30 min in a thermocycler and, immediately after the reaction was completed, the DNA was purified using a Qiagen PCR Purification MinElute Kit (QIAGEN, Germantown, MD) and eluted with 10 µL elution buffer. Eluted DNA was subjected to PCR amplification and library indexing, using the NEBNext High-Fidelity 2x PCR Master Mix (New England Biolabs, Ipswich, MA) with a customized Nextera PCR primer pair, according to the following program: 72°C for 5 min; 98°C for 30 s; 11 cycles of 98°C for 10 s, 63°C for 30 s, and 72°C for 1 min; and hold at 4°C. The PCR product was purified with 1.8 x volume (90 µL for each sample) of Ampure XP beads (Beckman Coulter, Brea, CA) to produce 18 µL of final library. Library quality was assessed using 1 µL of the final purified DNA on a BioAnalyzer 2100 High Sensitivity DNA Chip (Agilent Technologies). All DNA libraries that exhibited a nucleosome pattern in the BioAnalyzer 2100 Assay passed the pre-sequencing QC process and were pooled for high-throughput sequencing in HiSeq 2500, HiSeq4000, or HiSeq X Ten (Illumina, provided by Annoroad Genomics Company (China)).
 
-## Mapping of ATAC-seq reads and calling of peaks and differential peaks
+### Mapping of ATAC-seq reads and calling of peaks and differential peaks
 
 Raw ATAC-seq reads were trimmed using Trimmomatic (v 0.38) (Bolger et al., 2014) (parameter: ILLUMINACLIP:NexteraPE-PE.fa:2:30:10:8:TRUE LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:5) and mapped to either the danRer7, hg19 or mm10 reference genome using Bowtie 2 (Langmead and Salzberg, 2012) (default parameters). Sorting, removal of PCR duplicates and conversion from SAM to BAM files were performed using SAMtools (Li et al., 2009). A customized Python script was used to identify fragments shorter than 100 bp as the nucleosome-free-regions (NFRs), as previously described (custom scripts and piplines we deployed are available at https://github.com/Badgerliu/periderm_ATACSeq; copy archived at https://github.com/elifesciences-publications/periderm_ATACSeq) (Buenrostro et al., 2013). The Picard toolset (http://broadinstitute.github.io/picard/) was used to check fragment size distribution. We employed DeepTools (v 2.0) to check the reproducibility of the biological replicates and generate bigWig coverage files for visualization (Ramírez et al., 2016). Peaks were called using MACS2 (v2.1.1) (Zhang et al., 2008) (parameter: --nomodel--nolambda --gsize 1.4e9 --keep-dup all --slocal 10000 --extsize 54 for zebrafish periderm ATAC-seq, and --nomodel --nolambda --gsize 2.7e9 --keep-dup all --slocal 10000 for mouse periderm or HOIEC ATAC-seq). Differentially accessible NFRs were identified using an R package DiffBind (Ross-Innes et al., 2012) with a fold-change threshold of 0.5, and FDR < 0.01.
 
 Raw and processed sequencing data for zebrafish, mouse and human ATAC-seq were deposited in GEO repository (GSE140241, GSE139945 and GSE139809).
 
-## Integration of ATAC-seq and H3K27Ac ChIP-seq data
+### Integration of ATAC-seq and H3K27Ac ChIP-seq data
 
 To compare our zebrafish periderm ATAC-seq results to those in previously published whole-embryo H3K27Ac ChIP-seq studies (Bogdanovic et al., 2012), we retrieved the single-end, raw read data from GEO Series GSE32483 H3K27Ac ChIP-seq from whole zebrafish embryos at several stages. Raw data were aligned to the danRer7 reference genome using Bowtie 2, and peaks were called using MACS2. Following an earlier study (Gorkin et al., 2012), we defined ‘H3K27Ac-flanked’ regions as those between adjacent H3K27Ac peaks separated by up to 1500 bp. NFRs were identified in cells isolated at 11 hpf; GFP-positive active elements (GPAEs) were the GFP-positive NFRs that overlap H3K27Ac peaks, or H3K27Ac flanked regions, at 8.3 hpf (80% epiboly) and/or at 24 hpf embryos; GNAEs were the GFP-negative NFRs that did so.
 
@@ -196,40 +619,40 @@ The approach used to identify enhancers that are active in the mouse palate epit
 
 We used seqMINER (v 1.2.1) (Ye et al., 2011) to calculate the normalized reads matrix for each NFR of interest, generating a matrix file for the downstream heatmap and density plot in R.
 
-## Assignment of ATAC-seq peaks to genes and gene ontology analysis
+### Assignment of ATAC-seq peaks to genes and gene ontology analysis
 
 The Genomic Regions Enrichment of Annotations Tool (GREAT, http://great.stanford.edu/public/html/) (McLean et al., 2010) was employed to assign genes proximal to genomic regions of interest (i.e., ATAC-seq and high-scoring elements), using the following locus-to-gene association rule: two nearest genes within 100 kb. We also used GREAT to identify GO terms for which the set of associated genes was enriched.
 
-## Comparisons of peak accessibility and gene expression
+### Comparisons of peak accessibility and gene expression
 
 To compare ATAC-seq accessibility and relative gene expression between tissues, we first identified genes for which zebrafish peridermal and non-peridermal tissue was enriched using Sleuth as described above. We then identified the normalized ATAC-seq accessibility using the EdgeR package embedded in the DiffBind analysis suite (cutoff: fold change >0.5 or<−0.5, p-value<0.01). We used GREAT to associate the periderm- and non-periderm-enriched genes with their tissue-specific ATAC-seq peaks. To determine whether the accessibility of periderm-specific ATAC-seq correlates with gene expression in the periderm, we compared the accessibility of tissue-specific ATAC-seq peaks (values normalized) within genes for which either peridermal or non-peridermal tissue is enriched, as well as the levels of expression of genes associated with periderm or non-periderm ATAC-seq peaks.
 
-## Motif enrichment analysis and footprinting for periderm-enriched motifs
+### Motif enrichment analysis and footprinting for periderm-enriched motifs
 
 We identified the de novo motifs for which the genomic regions of interest are enriched using the findMotifsGenome.pl function of HOMER (Heinz et al., 2010) (parameter: -len 8,10,12), and assigned the most enriched motifs to the transcription factors with highest expression in related tissues. For the Tn5 footprint analysis, we shifted all reads aligned to the plus strand by +4 bp, and all reads aligned to the minus strand by −5 bp. To predict the binding of members of the GRHL, KLF, TFAP2, and C/EBP transcription factor families, we downloaded the related motifs in all transcription factors of interest (http://cisbp.ccbr.utoronto.ca/) (Weirauch et al., 2014), and calculated the Tn5 cleavage frequency in the +/- 100 bp sequence flanking the motifs of interest, using CENTEPEDE (Pique-Regi et al., 2011).
 
 For analysis of the potential clustering pattern of periderm-enriched motif combination within zebrafish GPAEs, we firstly annotated all the GPAEs using HOMER annotatePeaks function with the motif files for GRHL, TEAD, KLF, FOS, TFAP2, GATA and CEBP, and counted the occurrence of each motif in each peak. Hierarchy clustering was then performed on the occurrence of different motif in each peak using the ‘hierarchy_cluster_motif_combination_pattern_in_GPAE.R’ script deposited in periderm_ATACSeq github repository. We also counted the sum of every two-motif-combination and three-motif-combination in each GPAE using ‘motif_combination_count.R’ script deposited in github.
 
-## Comparison of TFBS enrichment
+### Comparison of TFBS enrichment
 
 To determine the number of binding sites that would have been shared by chance, we generated 10 sets of 4000 randomly-selected 400 bp sequences from two species and assessed the average number of transcription factors predicted to bind sequences enriched in both species. Transcription factors receiving a score of 0.8 in HOMER output (Heinz et al., 2010) were considered to match the binding site.
 
-## Construction of network depicting the regulatory relationships among periderm-enriched transcription factors
+### Construction of network depicting the regulatory relationships among periderm-enriched transcription factors
 
 To assign periderm signature motifs to the periderm-enriched genes, we first annotated all periderm-specific NFRs with signature motifs using HOMER, then calculated the total number of times each motif was present in all of periderm-specific NFRs near the periderm-enriched transcription factor. Expression levels of each transcription factor in the periderm were also taken into account.
 
-## Training of a gapped k-mer support vector machine on zebrafish periderm enhancers
+### Training of a gapped k-mer support vector machine on zebrafish periderm enhancers
 
 All GFP-positive active enhancers (GPAEs) were resized into 400 bp regions that maximize the overall ATAC-seq signal within each NFR; all GPAEs composed of > 70% repeats were removed. Repeat fractions were calculated using repeat masked sequence data (danRer7) from the UCSC Genome Browser (http://genome.ucsc.edu/). A supervised-machine-learning classifier, gapped k-mer support vector machine (gkmSVM) was used to generate a 10-fold larger set of random genomic 400 bp sequences in the danRer7 reference genome, based on matching of GC and repeat fraction of the positive training set. gkmSVM were performed to generate a scoring vector (parameter: K = 6, L = 10). Related ROC and PRC were generated using gkmSVM output (Ghandi et al., 2016). For genome-wide enhancer predictions, mouse (mm10) and human (hg19) genomes were segmented into 400 bp regions with 300 bp overlap, and all regions were scored using a gkmSVM script.
 
-## Tests of enhancer homology
+### Tests of enhancer homology
 
 The following DNA fragments were used to test homology of the human and zebrafish enhancers. The 489 bp sequence corresponding to the human ppl periderm enhancer (plus-strand) was trimmed to a conserved 400 bp core block (‘Hu_400+”), which lacks an overlapping non-conserved AluJr4 SINE on the ppl-proximal side and a non-conserved MIR SINE on the ppl-distal side. The homologous mouse sequence to the human 400 bp core enhancer was determined to be a 409 bp fragment (‘Mm_409+”). A zebrafish 467 bp core fragment (‘Zf_467+”) was identified to correspond to be the block most similar to the mammalian ppl enhancer core. All three core fragments lie 8.5 kb (human), 4.0 kb (mouse), and 10.4 kb (zebrafish) upstream of ppl, which is transcribed to the left in each case. To evaluate homology between Hu_400+ and Zf_467+ enhancer fragments we performed pairwise alignments between various sequences using CLUSTALW and default parameters as available via Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/). The Hu_400+ | Mm_409+ pairwise alignment constituted the homologous control to compare to the Hu_400+ | Zf_467+ test alignment. For different types of negative controls, we also aligned the Hu_400+ sequence to the mouse and fish sequences corresponding to the minus-strand (i.e., reverse-complements ‘Mm_409-’ and ‘Zf_467-‘), the non-biological reverse sequence (‘Mm_409R’ and ‘Zf_467R’), and three different Fisher-Yates shuffled versions of the mouse and zebrafish plus-strand sequences (‘Mm_409+S1/S2/3’ and ‘Zf_467+S1/S2/S3’). Last, we also compared different 3-way alignments involving Hu_400+, Mm_409+, and the various zebrafish test and controls (Supplementary file 2a and Supplementary file 2b).
 
-## Annotation of potential zebrafish periderm enhancer candidates using ENCODE/Roadmap data
+### Annotation of potential zebrafish periderm enhancer candidates using ENCODE/Roadmap data
 
 All mapped data from the Roadmap Epigenomics Project (Kundaje et al., 2015) (http://www.roadmapepigenomics.org/) were downloaded as BAM files; imputed enhancer regions in each cell/tissue type were also downloaded. Using the BEDTools (v2.24.0) (Quinlan and Hall, 2010) intersect function, we evaluated the fraction of high-scored elements that overlapped with enhancer regions in each cell/tissue type.
 
-## Analysis of transcription factor binding sites affected by alleles of SNP1 and SNP2
+### Analysis of transcription factor binding sites affected by alleles of SNP1 and SNP2
 
 We used 19 bp sequences centered on the SNP1 and SNP2, with risk or non-risk alleles of these SNPs, as input to JASPAR (http://jaspar.genereg.net) (Fornes et al., 2019). We queried all 1011 transcription factor binding site profiles using a relative profile score threshold of 80%. ‘Sites lost’ were those at a particular start position with a score of 5.0 or higher in the sequence with the non-risk allele and with a score less than 2.0, or not detected, in the sequence with the risk allele. ‘Sites gained’ had the opposite pattern.

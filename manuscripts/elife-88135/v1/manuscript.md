@@ -12,17 +12,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03cve4549 Institute for Immunology and School of Medicine, Tsinghua University Beijing China
-2. https://ror.org/05kje8j93 Tsinghua-Peking Center for Life Sciences, Tsinghua University Beijing China
+1. Institute for Immunology and School of Medicine, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+2. Tsinghua-Peking Center for Life Sciences, Tsinghua University Beijing China ([ROR:05kje8j93](https://ror.org/05kje8j93))
 3. Beijing Key Laboratory for Immunological Research on Chronic Diseases Beijing China
-4. https://ror.org/03zjqec80 Arthritis and Tissue Degeneration Program and the David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery New York United States
-5. https://ror.org/02r109517 Department of Medicine, Weill Cornell Medical College New York United States
+4. Arthritis and Tissue Degeneration Program and the David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+5. Department of Medicine, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
 ## Abstract
 
-Notch-RBP-J signaling plays an essential role in the maintenance of myeloid homeostasis. However, its role in monocyte cell fate decisions is not fully understood. Here, we showed that conditional deletion of transcription factor RBP-J in myeloid cells resulted in marked accumulation of blood Ly6C lo monocytes that highly expressed chemokine receptor CCR2. Bone marrow transplantation and parabiosis experiments revealed a cell-intrinsic requirement of RBP-J for controlling blood Ly6C lo CCR2 hi monocytes. RBP-J-deficient Ly6C lo monocytes exhibited enhanced capacity competing with wildtype counterparts in blood circulation. In accordance with alterations of circulating monocytes, RBP-J deficiency led to markedly increased population of lung tissues with Ly6C lo monocytes and CD16.2 + interstitial macrophages. Furthermore, RBP-J deficiency-associated phenotypes could be genetically corrected by further deleting Ccr2 in myeloid cells. These results demonstrate that RBP-J functions as a crucial regulator of blood Ly6C lo monocytes and thus derived lung-resident myeloid populations, at least in part through regulation of CCR2.
+Notch-RBP-J signaling plays an essential role in the maintenance of myeloid homeostasis. However, its role in monocyte cell fate decisions is not fully understood. Here, we showed that conditional deletion of transcription factor RBP-J in myeloid cells resulted in marked accumulation of blood Ly6Clo monocytes that highly expressed chemokine receptor CCR2. Bone marrow transplantation and parabiosis experiments revealed a cell-intrinsic requirement of RBP-J for controlling blood Ly6CloCCR2hi monocytes. RBP-J-deficient Ly6Clo monocytes exhibited enhanced capacity competing with wildtype counterparts in blood circulation. In accordance with alterations of circulating monocytes, RBP-J deficiency led to markedly increased population of lung tissues with Ly6Clo monocytes and CD16.2+ interstitial macrophages. Furthermore, RBP-J deficiency-associated phenotypes could be genetically corrected by further deleting Ccr2 in myeloid cells. These results demonstrate that RBP-J functions as a crucial regulator of blood Ly6Clo monocytes and thus derived lung-resident myeloid populations, at least in part through regulation of CCR2.
 
 ## Introduction
 
@@ -34,45 +34,85 @@ Recombinant recognition sequence binding protein at the Jκ site (RBP-J; also na
 
 ## Results
 
-## RBP-J is essential for the maintenance of blood Ly6Clo monocytes
+### RBP-J is essential for the maintenance of blood Ly6Clo monocytes
 
 To investigate the role of RBP-J in monocyte subsets, we utilized mice with RBP-J specific deletion in the myeloid cells (Rbpjfl/flLyz2cre/cre mice). Efficient deletion of Rbpj in blood monocytes was confirmed by quantitative real-time PCR (qPCR) (Figure 1—figure supplement 1A). Flow cytometric analysis revealed that RBP-J-deficient mice had a significant increase in the proportion of Ly6Clo monocytes, but not Ly6Chi monocytes, in blood, compared to age-matched control mice with the genotype Rbpj+/+Lyz2cre/cre (Figure 1A). In contrast to circulating monocytes, RBP-J-deficient mice exhibited minimal alterations in the percentages of monocyte subsets in bone marrow (BM) and spleen (Figure 1B, Figure 1—figure supplement 1C). Additionally, RBP-J deficiency in myeloid cells did not appear to have an effect on neutrophils (Figure 1—figure supplement 1B). Therefore, among circulating myeloid populations, RBP-J selectively controlled the subset of Ly6Clo monocytes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig1-v1.jpg)
+
+**Figure 1.:** (A) Blood Ly6Chi and Ly6Clo monocytes in Rbpj+/+Lyz2cre/cre control and Rbpjfl/flLyz2cre/cre mice were determined by flow cytometry analyses (FACS). Representative FACS plots (left) and cumulative data of cell ratio (right) are shown. (B, C) Representative FACS plots and cumulative data quantitating percentages of bone marrow (BM) monocyte subsets (B) and myeloid progenitor cells (C) (CD45+CD11b+Ly6G-CD115+ Ly6Chi monocyte; CD45+CD11b+Ly6G-CD115+Ly6Clo monocyte; MDP, CD45+Lin-CD117+CD115+CD135+ Ly6C-; cMoP, CD45+Lin-CD11b-CD117+CD115+ CD135-Ly6C+). Lin: CD3, B220, Ter119, Gr-1 and CD11b. (D) Experimental outline for panel (E). (E) Cumulative data quantitating percentages of sinusoidal monocytes (CD45+) within total BM Ly6Clo monocytes. Data are pooled from at least two independent experiments; n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant; **p<0.01 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantitative real-time PCR (qPCR) analysis of Rbpj expression in sorted monocyte subsets from control and RBP-J-deficient mice. (B) Blood and bone marrow (BM) CD45+CD11b+Ly6G+ neutrophils were determined by FACS. Cumulative data of cell ratio are shown. (C) Spleen monocyte subsets were determined by FACS. Representative FACS plots (left) and cumulative data of cell ratio and absolute numbers (right) are shown. Data are pooled from at least two independent experiments; n ≥ 2 in each group. Data are shown as mean ± SEM; n.s., not significant; *p<0.05 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
 BM progenitors that give rise to circulating monocytes are monocyte-dendritic cell progenitors (MDPs) and common monocyte progenitors (cMoPs) (Hanna et al., 2011; Hettinger et al., 2013; Liu et al., 2019; Varol et al., 2007). Next, we analyzed BM progenitors and found that the percentages of MDPs and cMoPs were equivalent in control and RBP-J-deficient mice (Figure 1C). These results in conjunction with the observations of normal BM monocyte populations, suggest that alterations of peripheral blood Ly6Clo monocytes may not originate from BM. Next, we examined whether RBP-J may influence the egress of Ly6Clo monocytes from BM and measured BM exit rate of Ly6Clo monocytes using in vivo labeling of sinusoidal cells as previously described (Figure 1D; Debien et al., 2013). The results showed that RBP-J deficiency did not affect egress of Ly6Clo monocytes from BM (Figure 1E). Taken together, these data revealed RBP-J as a critical regulator controlling homeostasis of peripheral blood Ly6Clo monocytes.
 
-## RBP-J deficiency does not affect Ly6Chi monocyte conversion or Ly6Clo monocyte survival and proliferation
+### RBP-J deficiency does not affect Ly6Chi monocyte conversion or Ly6Clo monocyte survival and proliferation
 
 Next, we aimed to determine whether the increase in blood Ly6Clo monocytes in RBP-J-deficient mice was due to decreased cell death or enhanced proliferation. We first stained monocytes with Annexin V and 7-amino-actinomycin D (7-AAD) to identify apoptotic cells and observed comparable percentages of apoptotic blood Ly6Clo monocytes in control and RBP-J-deficient mice (Figure 2A). Given the crucial role of Nr4a1 in the survival of Ly6Clo monocytes (Hanna et al., 2011), we detected the expression of Nr4a1, which was similar in Ly6Clo monocytes from control and RBP-J-deficient mice (Figure 2—figure supplement 1A). We then assessed the proliferative capacity by analyzing Ki-67 expression as well as in vivo EdU incorporation. Ki-67 levels in blood monocytes displayed no differences between control and RBP-J-deficient mice (Figure 2B). The percentage of EdU+ monocytes did not significantly differ between control and RBP-J-deficient mice at the indicated time points, implying that the turnover of Ly6Clo monocytes was normal in RBP-J-deficient mice (Figure 2C). Fluorescent latex beads as particulate tracers could be phagocytosed by monocytes after intravenous injection and stably label Ly6Clo monocytes (Tacke et al., 2006). Thus, we intravenously injected fluorescent latex beads into control and RBP-J-deficient mice to track circulating monocytes (Figure 2D). By day 7 post injection, only Ly6Clo monocytes were latex+ as previously reported (Tacke et al., 2006), whereas control and RBP-J-deficient mice groups presented a similar frequency of latex+ monocytes (Figure 2E). Together, these data indicated that RBP-J did not influence monocyte survival and proliferation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative FACS plots of monocyte subsets in blood stained with 7-amino-actinomycin D (7-AAD) and Annexin V. (B) FACS analysis of Ki-67 expression in Rbpj+/+Lyz2cre/cre control and Rbpjfl/flLyz2cre/cre blood monocyte subsets. Black lines represent control mice, and red lines represent RBP-J-deficient mice. (C) Analysis of time course of EdU incorporation of monocyte subsets in bone marrow (BM) and blood after a single 1 mg EdU pulsing. The percentages of EdU+ cells among the indicated monocyte subsets are shown. (D) Experimental outline for panel (E). (E) Analysis of time course of latex beads incorporation of monocyte subsets in blood after latex beads injection. The percentages of latex+ cells among the indicated monocyte subsets are shown. (F) Cartoon depicting the adoptive transfer. BM GFP+Ly6Chi monocytes were sorted from Lyz2cre/creCx3cr1gfp/+ or Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice and transferred into Ccr2RFP/RFP recipient mice. Sixty hours after transfer, cell fate was analyzed. (G) Representative FACS plots are shown in the left panel, and the frequencies of GFP+Ly6Clo monocytes within total Ly6Clo monocytes are shown in the right panel. Data are pooled from two independent experiments (G); n ≥ 2 in each group (C, E, G). Data are shown as mean ± SEM; n.s., not significant; (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse (E, G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative FACS plots, cumulative mean fluorescence intensity (MFI) and quantitative real-time PCR (qPCR) analysis of Nr4a1 expression in control and RBP-J-deficient blood monocyte subsets. Shaded curves represent isotype control, black lines represent control mice, and red lines represent RBP-J-deficient mice. (B) Representative FACS plots of GFP+Ly6Chi monocytes in recipient. Data are pooled from two independent experiments (A); n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
 Previous studies have shown that Ly6Clo monocytes are observed in recipient mice following the adoptive transfer of Ly6Chi monocytes, indicating that Ly6Chi monocytes can convert into Ly6Clo monocytes (Varol et al., 2007; Yona et al., 2013). We next wished to evaluate whether conversion of Ly6Chi monocyte was regulated by RBP-J by isolating BM GFP+Ly6Chi monocytes from Lyz2cre/creCx3cr1gfp/+ control or Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice and adoptively transferring them into Ccr2RFP/RFP recipients (Figure 2F). Sixty hours after transfer, a subset of cells from donors were converted into Ly6Clo monocytes (Figure 2—figure supplement 1B), and equal percentages of Ly6Clo monocytes were derived from control and Rbpjfl/flLyz2cre/creCx3cr1gfp/+ donors (Figure 2G). Thus, the conversion of Ly6Chi monocyte into Ly6Clo monocyte was not affected by RBP-J deficiency.
 
-## RBP-J regulates blood Ly6Clo monocytes in a cell-intrinsic manner
+### RBP-J regulates blood Ly6Clo monocytes in a cell-intrinsic manner
 
 We next wondered whether the increase in Ly6Clo monocytes in RBP-J-deficient mice was BM-derived and cell-intrinsic. We performed BM transplantation by engrafting lethally irradiated mice with a 1:4 mixture of Rbpj+/+Lyz2cre/cre control and Rbpjfl/flLyz2cre/cre BM cells (CD45.2) and Cx3cr1gfp/+ BM cells (CD45.1) (Figure 3A). Eight weeks after transplantation, we analyzed the frequencies of CD45.2+ donor cells in the BM and blood of recipient mice and found that the frequencies of CD45.2+ cells within total cells were similar to the mixture ratio of BM cells for Ly6Chi monocytes and neutrophils in both BM and blood (Figure 3B, Figure 3—figure supplement 1A and B). Specifically, more blood Ly6Clo monocytes were derived from RBP-J-deficient donors than control donors (Figure 3B), reflecting that the contribution of RBP-J-deficient cells in blood Ly6Clo cells was significantly higher than that of control cells. These results implied that RBP-J-deficient BM cells were highly efficient in generating blood Ly6Clo monocytes.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cartoon depicting the bone marrow (BM) transplantation. BM recipient 6-week-old male C57BL/6 mice (CD45.2) were lethally irradiated. BM cells from donor mice (Rbpj+/+Lyz2cre/cre or Rbpjfl/flLyz2cre/cre and CD45.1, Cx3cr1gfp/+) were collected and transferred into recipient mice. Mice were used after 8 wk of BM reconstitution. (B) Representative FACS plots (left) and cumulative data (right) quantitating the frequency of Rbpj+/+Lyz2cre/cre and Rbpjfl/flLyz2cre/cre donor cells among Ly6Chi and Ly6Clo monocytes in the blood of recipient mice. (C) Cartoon depicting the generation of Rbpj+/+Lyz2cre/cre control or Rbpjfl/flLyz2cre/cre and Cx3cr1gfp/+ parabiotic pairs. (D) Representative FACS plots (left) and cumulative data (right) quantitating percentages of monocyte subsets derived from control or RBP-J-deficient mice in control or RBP-J-deficient mice. (E) Representative FACS plots (left) and cumulative data (right) quantitating percentages of monocyte subsets derived from control or RBP-J-deficient mice in Cx3cr1gfp/+ mice. Data are pooled from at least two independent experiments; n ≥ 6 in each group. Data are shown as mean ± SEM; n.s., not significant; ***p<0.001; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse. SSC-A, side scatter area.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative FACS plots (left) and cumulative data (right) quantitating percentages of blood neutrophils in recipient mice. (B) Bone marrow (BM) neutrophils and Ly6Chi monocytes in recipient mice were determined by FACS. (C) CD4+ T cells and CD19+ B cells were analyzed by FACS in parabiotic mice. Data are pooled from at least two independent experiments (A, C); n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
 Given that RBP-J-deficient mice had more Ly6Clo monocytes in blood than did control mice, we performed parabiosis experiments, a surgical union of two organisms, which allowed parabiotic mice to share their blood circulation. The contribution of circulating cells from one animal to another can be estimated by measuring the percentage of blood cells that originated from each animal (Liu et al., 2007). We joined a CD45.1, Cx3cr1gfp/+ mouse with an age- and sex-matched Rbpj+/+Lyz2cre/cre control or Rbpjfl/flLyz2cre/cre mouse (CD45.2) (Figure 3C). Four weeks after the procedure, about 50% of B cells and T cells in parabiotic mice displayed efficient exchange of their circulation (Figure 3—figure supplement 1C). As expected, RBP-J-deficient mice exhibited higher percentages of Ly6Clo monocytes than control animals (Figure 3D). Intriguingly, in the parabiotic Cx3cr1gfp/+ mice, RBP-J-deficient cells still constituted significantly higher proportion of circulating Ly6Clo, but not Ly6Chi monocytes, than RBP-J sufficient counterparts as indicated by the percentages of the GFP-negative population (Figure 3E). These results implicated that the enhanced ability of Ly6Clo monocytes to circulate in the peripheral blood as a result of RBP-J deficiency was cell-intrinsic.
 
-## RBP-J regulates phenotypical marker genes in blood Ly6Clo monocytes
+### RBP-J regulates phenotypical marker genes in blood Ly6Clo monocytes
 
 To further study the consequences of RBP-J loss of function in blood Ly6Clo monocytes, we performed gene expression profiling by RNA-seq, which revealed that Ly6Clo monocytes in RBP-J-deficient mice exhibited low expression of Itgax but high expression of Ccr2, in comparison to those in control mice (Figure 4A). These differential expression patterns of phenotypic marker genes were also confirmed by qPCR and flow cytometry analysis (Figure 4B). However, blood Ly6Chi monocytes and BM monocytes displayed normal levels of CD11c and CCR2 (Figure 4B, Figure 4—figure supplement 1A). Moreover, principal component analysis showed distinct expression pattern of monocytes between control and RBP-J-deficient mice (Figure 4C). To determine whether the regulation of phenotypic markers by RBP-J in blood Ly6Clo monocytes was cell-intrinsic, we performed BM transplantation as described above (Figure 3A). The findings indicated that Ly6Clo monocytes derived from RBP-J-deficient BM cells expressed high levels of CCR2 but low levels of CD11c, in comparison to those derived from control BM cells, whereas no significant changes were observed in blood Ly6Chi and BM monocytes, as expected (Figure 4D, Figure 4—figure supplement 1B). These results collectively suggested that RBP-J regulated the expression of CCR2/CD11c in a cell-intrinsic manner.
 
-## RBP-J-mediated control of blood Ly6Clo monocytes is CCR2 dependent
+![Figure 4.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig4-v1.jpg)
+
+**Figure 4.:** (A) Heatmap of RNA-seq dataset showing the top 20 downregulated and upregulated genes in blood Ly6Clo monocytes from Rbpjfl/flLyz2cre/cre versus Rbpj+/+Lyz2cre/cre control mice. Blue and red font indicates downregulated and upregulated genes in RBP-J-deficient Ly6Clo monocytes respectively. (B) Representative FACS plots, cumulative mean fluorescence intensity (MFI), and quantitative real-time PCR (qPCR) analysis of CCR2/CD11c expression in control and RBP-J-deficient blood monocyte subsets. Shaded curves represent isotype control, black lines represent control mice, and red lines represent RBP-J-deficient mice. (C) Principal component analysis (PCA) of indicated cell types. (D) Representative FACS plots and cumulative MFI of CCR2/CD11c expression in blood monocyte subsets derived from control or RBP-J-deficient mice. Black lines represent control mice, and red lines represent RBP-J-deficient mice. Data are pooled from two independent experiments (B, D); n ≥ 6 in each group. Data are shown as mean ± SEM; n.s., not significant; **p<0.01; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cumulative mean fluorescence intensity (MFI) of CCR2 expression in BM monocyte subsets. (B) FACS plots of CCR2 and CD11c in BM Ly6Chi and Ly6Clo monocytes from control and RBP-J-deficient mice. Data are pooled from three independent experiments (A); n ≥ 7 in each group. Data are shown as mean ± SEM; n.s., not significant (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
+### RBP-J-mediated control of blood Ly6Clo monocytes is CCR2 dependent
 
 Given that RBP-J deficiency led to enhanced CCR2 expression in Ly6Clo monocytes and that CCR2 is essential for monocyte functionality under various inflammatory and non-inflammatory conditions (Shi and Pamer, 2011), we wished to genetically investigate the role of CCR2 in the RBP-J-deficient background. We generated RBP-J/CCR2 double-deficient (DKO) mice with the genotype Rbpjfl/flLyz2cre/creCcr2RFP/RFP with Lyz2cre/creCcr2RFP/+ and Rbpjfl/flLyz2cre/creCcr2RFP/+ mice serving as controls. As expected, the expression of CCR2 in Ly6Clo monocytes was reduced in DKO mice compared to RBP-J-deficient mice (Figure 5A), confirming the successful deletion of the Ccr2 gene. DKO mice showed a lower percentage of both Ly6Chi and Ly6Clo monocytes than RBP-J-deficient mice (Figure 5B and C). Notably, the percentage of Ly6Clo monocytes in DKO mice was comparable to that observed in the control mice (Figure 5B and C), implicating that deletion of CCR2 corrected RBP-J deficiency-associated phenotype of increased Ly6Clo monocytes. Whereas, both RBP-J-deficient and DKO mice exhibited lower expression levels of CD11c in their Ly6Clo monocyte than control mice, suggesting that the regulation of CD11c expression was independent of CCR2 (Figure 5D). These results suggested that RBP-J regulated Ly6Clo monocytes, at least in part, through CCR2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig5-v1.jpg)
 
-**Figure 5.:** lo monocytes are decreased in double-deficient (DKO) mice.(A) Representative FACS plots and cumulative mean fluorescence intensity (MFI) of CCR2 expression in Lyz2cre/creCcr2 control, RFP/+Rbpjfl/flLyz2cre/creCcr2 and RFP/+Rbpjfl/flLyz2cre/creCcr2 (DKO) blood Ly6CRFP/RFPhi and Ly6Clo monocytes are shown. (B, C) Blood monocyte subsets in control, RBP-J-deficient, and DKO mice were determined by FACS. Representative FACS plots (B) and cumulative data of cell ratio (C) are shown. (D) Representative FACS plots and cumulative MFI of CD11c expression in control, RBP-J-deficient and DKO blood Ly6Chi and Ly6Clo monocytes are shown. Data are pooled from at least two independent experiments; n ≥ 5 in each group. Data are shown as mean ± SEM; n.s., not significant; **p<0.01; ***p<0.001; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Representative FACS plots and cumulative mean fluorescence intensity (MFI) of CCR2 expression in Lyz2cre/creCcr2RFP/+ control, Rbpjfl/flLyz2cre/creCcr2RFP/+ and Rbpjfl/flLyz2cre/creCcr2RFP/RFP (DKO) blood Ly6Chi and Ly6Clo monocytes are shown. (B, C) Blood monocyte subsets in control, RBP-J-deficient, and DKO mice were determined by FACS. Representative FACS plots (B) and cumulative data of cell ratio (C) are shown. (D) Representative FACS plots and cumulative MFI of CD11c expression in control, RBP-J-deficient and DKO blood Ly6Chi and Ly6Clo monocytes are shown. Data are pooled from at least two independent experiments; n ≥ 5 in each group. Data are shown as mean ± SEM; n.s., not significant; **p<0.01; ***p<0.001; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
 
-## Lung Ly6Clo monocytes are accumulated in RBP-J-deficient mice
+### Lung Ly6Clo monocytes are accumulated in RBP-J-deficient mice
 
 In mice, alveolar macrophages (AM) are maintained by local self-renewal and arise from fetal liver-derived precursors, whereas interstitial macrophages (IM) probably originate from monocytes (Guilliams et al., 2013; Hashimoto et al., 2013; Sabatel et al., 2017). Schyns et al. identified three subpopulations of IM according to expression of CD206 and CD16.2, and Ly6Clo monocytes are proposed to give rise to CD64+CD16.2+ IM (Schyns et al., 2019). We next compared the populations of lung monocytes and IM between control and RBP-J-deficient mice. The conditional deletion of RBP-J resulted in a significant increase in the absolute and relative numbers of Ly6Clo monocytes and CD16.2+ IM, while the numbers of Ly6Chi monocytes, CD206- IM, and CD206+ IM remained unchanged (Figure 6A and B). To confirm these findings, lung sections from Lyz2cre/creCx3cr1gfp/+ control and Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice were stained with an anti-GFP antibody, which revealed a significant increase in the number of GFP+ cells in RBP-J-deficient mice (Figure 6C). In addition, we evaluated the proliferative capacity of Ly6Clo monocytes and CD16.2+ IM, but did not observe enhanced EdU incorporation in Ly6Clo monocytes and CD16.2+ IM from RBP-J-deficient mice (Figure 6—figure supplement 1A and B). These findings suggested that the augmented population of these cells might not have resulted from increased in situ proliferation. Previous reports have indicated that lipopolysaccharide (LPS) can increase the population of IM in a CCR2-dependent manner (Sabatel et al., 2017). We thus challenged mice with LPS and analyzed monocytes and IM at days 0 and 4. LPS exposure induced an increase in numbers of Ly6Clo monocytes, CD16.2+ IM, and CD206- IM compared to baseline both in control and RBP-J-deficient mice (Figure 6D and E). There was a trend toward higher Ly6Chi monocyte after LPS treatment, although this observation was not statistically significant. Of note, RBP-J-deficient mice exhibited robustly elevated numbers of Ly6Clo monocytes and CD16.2+ IM compared with control mice after LPS treatment (Figure 6D and E), suggesting that RBP-J-deficient Ly6Clo monocytes were recruited to inflamed tissue in large numbers and differentiated into CD16.2+ IM.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) indicate populations in the lungs of Rbpj+/+Lyz2cre/cre and Rbpjfl/flLyz2cre/cre mice were determined by FACS. Representative FACS plots (A) and cumulative data of cell ratio and absolute numbers (B) are shown. (C) Immunofluorescence staining for GFP+ cells in the lungs from Lyz2cre/creCx3cr1gfp/+ and Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice (CX3CR1 [green]; DAPI [blue]). Scale bars represent 50 µm. (D, E) Rbpj+/+Lyz2cre/cre and Rbpjfl/flLyz2cre/cre mice were instilled intranasally with phosphate buffered saline (PBS) or PBS containing lipopolysaccharide (LPS), and lungs were harvested at the indicated time points. Representative FACS plots (D) and cumulative data of cell ratio and absolute numbers (E) are shown. Data are pooled from at least two independent experiments; n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant; *p<0.05; **p<0.01; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Incorporation of EdU was assessed 24 hours after injection. Bone marrow (BM) monocyte subsets were used as controls. FACS plots (A) and representative data (B) are shown. Each symbol represents an individual mouse.
 
 To investigate whether the elevated levels of lung monocytes and CD16.2+ IM in RBP-J-deficient mice were derived from blood Ly6Clo monocytes, we examined monocytes and IM in Lyz2cre/creCcr2RFP/+ control, Lyz2cre/creCcr2RFP/RFP, Rbpjfl/flLyz2cre/creCcr2RFP/+ and Rbpjfl/flLyz2cre/creCcr2RFP/RFP (DKO) mice. The deletion of CCR2 led to a decrease in Ly6Chi monocytes, and the Ly6Clo monocytes in DKO mice were reduced to a level similar to that of control mice (Figure 7A and B). While the DKO mice had more CD16.2+ IM compared to control mice, these cells were severely reduced compared to RBP-J-deficient mice (Figure 7A and C). The above data supported the notion that increased lung Ly6Clo monocytes and CD16.2+ IM in RBP-J-deficient mice were derived from blood Ly6Clo monocytes. In summary, these results suggested that in RBP-J-deficient mice, recruitment of blood Ly6Clo monocytes to the lung was markedly facilitated by increased cell number as well as heightened expression of CCR2, leading to the increase of lung Ly6Clo monocytes and CD16.2+ IM.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88135/elife-88135-fig7-v1.jpg)
 
-**Figure 7.:** lo monocytes and CD16.2+ interstitial macrophages (IM).(A) Representative FACS plots of lung monocyte and IM subsets in Lyz2cre/creCcr2, RFP/+Rbpjfl/flLyz2cre/creCcr2, RFP/+Lyz2cre/creCcr2 and RFP/RFPRbpjfl/flLyz2cre/creCcr2 mice. (RFP/RFPB, C) Cumulative data of cell ratio and absolute numbers of monocyte (B) and IM (C) subsets. (D) Proposed model. RBP-J is a crucial regulator of blood Ly6Clo monocytes. Mice with conditional deletion of RBP-J in myeloid cells exhibit a marked increase in blood Ly6Clo monocytes, which highly express CCR2, and subsequently accumulate lung Ly6Clo monocytes and CD16.2+ IM. Data are pooled from two independent experiments; n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Representative FACS plots of lung monocyte and IM subsets in Lyz2cre/creCcr2RFP/+, Rbpjfl/flLyz2cre/creCcr2RFP/+, Lyz2cre/creCcr2RFP/RFP and Rbpjfl/flLyz2cre/creCcr2RFP/RFP mice. (B, C) Cumulative data of cell ratio and absolute numbers of monocyte (B) and IM (C) subsets. (D) Proposed model. RBP-J is a crucial regulator of blood Ly6Clo monocytes. Mice with conditional deletion of RBP-J in myeloid cells exhibit a marked increase in blood Ly6Clo monocytes, which highly express CCR2, and subsequently accumulate lung Ly6Clo monocytes and CD16.2+ IM. Data are pooled from two independent experiments; n ≥ 4 in each group. Data are shown as mean ± SEM; n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 (two-tailed Student’s unpaired t-test). Each symbol represents an individual mouse.
 
 ## Discussion
 
@@ -86,53 +126,89 @@ At the steady state, Ly6Clo monocytes patrol endothelium of blood vessel. After 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Cx3cr1gfp/gfp mice (JAX stock 005582) and Ccr2RFP/RFP mice (JAX stock 017586) were purchased from the Jackson Laboratory. Mice with a myeloid-specific deletion of the Rbpj were generated by crossing Rbpjfl/fl mice to Lyz2-Cre mice as described previously (Hu et al., 2008). Rbpjfl/flLyz2cre/cre were crossed to Cx3cr1gfp/gfp mice to obtain Lyz2cre/creCx3cr1gfp/+and Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice. Cx3cr1gfp/+ mice were obtained by crossing Cx3cr1gfp/gfp with C57/BL6 CD45.1+ mice. Rbpjfl/flLyz2cre/cre mice were crossed with Ccr2RFP/RFP mice to obtain Lyz2cre/creCcr2RFP/+, Lyz2cre/creCcr2RFP/RFP, Rbpjfl/flLyz2cre/creCcr2RFP/+ and Rbpjfl/flLyz2cre/creCcr2RFP/RFP mice. All mice were maintained under specific pathogen-free conditions. All animal experimental protocols were approved by the Institutional Animal Care and Use Committees of Tsinghua University (17-hxy). Gender- and age-matched mice were used at 7–12 weeks old for experiments.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Blood monocytes were sorted by flow cytometry. The total RNA was extracted using total RNA purification kit (GeneMarkbio) and reversely transcribed to cDNA by M-MLV Reverse Transcriptase (Takara). qPCR was performed on a real-time PCR system (StepOnePlus; Applied Biosystems) using FastSYBR mixture (CWBIO). Gapdh messenger RNA was used as internal control to normalize the expression of target genes. Primer sequences are provided in Table 1.
 
-## RNA-seq analysis
+**Table 1.**
+ Primers sequences for regular quantitative real-time PCR (qPCR) used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gapdh</td>
+      <td>ATCAAGAAGGTGGTGAAGCA</td>
+      <td>AGACAACCTGGTCCTCAGTGT</td>
+    </tr>
+    <tr>
+      <td>Rbpj</td>
+      <td>ACCCCTGTGCCTGTCGTAGAA</td>
+      <td>TCCCGGAATGCAGAAATGTC</td>
+    </tr>
+    <tr>
+      <td>Nr4a1</td>
+      <td>TTGAGCTTGAATACAGGGCA</td>
+      <td>AGTTGGGGGAGTGTGCTAGA</td>
+    </tr>
+    <tr>
+      <td>Ccr2</td>
+      <td>CCTTGGGAATGAGTAACTGTGTGAT</td>
+      <td>ATGGAGAGATACCTTCGGAACTTCT</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA-seq analysis
 
 Ly6Chi and Ly6Clo blood monocytes were isolated from Rbpj+/+Lyz2cre/cre and Rbpjfl/flLyz2cre/cre mice, and total RNA was extracted using total RNA purification kit (GeneMarkbio). RNA was converted into RNA-seq libraries, which were sequenced with the pair-end option using an Illumina-HiSeq2500 platform at Beijing Genomics Institute (BGI), China. The significantly downregulated genes were identified with p-value<0.05 and (FPKM + 1) fold changes ≤ 0.2, and significantly upregulated genes were identified with p-value <0.05 and (FPKM + 1) fold changes ≥ 5.7. The RNA-seq data are deposited in Gene Expression Omnibus under accession number GSE208772.
 
-## Annexin V staining
+### Annexin V staining
 
 Annexin V and 7-AAD were used for identification of apoptotic monocytes by flow cytometry. Blood cells were stained with annexin V (eBioscience) and 7-AAD (BioLegend) according to the manufacturer’s protocols.
 
-## EdU pulsing and latex beads labeling
+### EdU pulsing and latex beads labeling
 
 Mice were injected intravenously with a single 1 mg EdU (Thermo Scientific). BM and blood cells were collected and stained with fluorescence-conjugated mAb against CD45, CD11b, Ly6G, CD115, and Ly6C. Cells were then fixed, permeabilized, and stained with reaction cocktail using EdU Assay Kit. Labeled cells were analyzed by flow cytometry.
 
 Mice were injected intravenously with a single 10 µl latex beads (Polysciences) in 250 µl phosphate buffered saline (PBS). Blood cells were harvested at indicated time. Cells were then stained for CD45, CD11b, Ly6G, CD115, Ly6C, and analyzed by flow cytometry.
 
-## In vivo labeling of sinusoidal leukocytes
+### In vivo labeling of sinusoidal leukocytes
 
 Mice were injected intravenously with 1 μg of PE-conjugated anti-CD45 antibodies. Two minutes after antibody injection, mice were sacrificed, and BM were harvested. BM cells were then stained and analyzed by flow cytometry.
 
-## Generation of BM chimera
+### Generation of BM chimera
 
 C57/BL6 CD45.2+ mice were lethally irradiated in two doses of 5.5 Gy 2 hr apart. 0.8 × 105 BM cells from Rbpj+/+Lyz2cre/cre mice (CD45.2+) or Rbpjfl/flLyz2cre/cre mice (CD45.2+) were mixed with 3.2 × 105 BM cells from Cx3cr1gfp/+ mice (CD45.1+), and injected intravenously into recipient mice. Mice were used for experiments 8 wk after irradiation.
 
-## Adoptive transfers
+### Adoptive transfers
 
 BM GFP+Ly6Chi monocytes were sorted from Lyz2cre/creCx3cr1gfp/+ or Rbpjfl/flLyz2cre/creCx3cr1gfp/+ mice, and transferred to Ccr2RFP/RFP mice. Blood cells were collected 60 hr later for flow cytometry analyses.
 
-## Parabiosis
+### Parabiosis
 
 Cx3cr1gfp/+ CD45.1+ mice were surgically joined with age-matched female Rbpjfl/flLyz2cre/cre or Rbpj+/+Lyz2cre/cre CD45.2+ mice at the age of 6 wk. Bloods were obtained via cardiac puncture, and cell populations were analyzed by flow cytometry at 4 wk after the surgery.
 
-## Intranasal instillations of LPS
+### Intranasal instillations of LPS
 
 Rbpj+/+Lyz2cre/cre or Rbpjfl/flLyz2cre/cre mice were anesthetized with isoflurane and intranasally instilled with 10 μg LPS in 25 μl of PBS. Lungs were harvested 4 d later for flow cytometry analyses.
 
-## Immunofluorescence histology
+### Immunofluorescence histology
 
 Lungs from Rbpjfl/flLyz2cre/creCx3cr1gfp/+ and Lyz2cre/creCx3cr1gfp/+ mice were fixed in 1% paraformaldehyde and incubated in 30% sucrose separately overnight at 4℃. The samples were then incubated in the mixture of 30% sucrose and OCT compound (Sakura Finetek) overnight at 4℃. The tissues were embedded and frozen in OCT compound and then cut at 10 µm thickness. Tissue sections were dried for 10 min at 50℃ and then fixed in 1% paraformaldehyde at room temperature for 10 min, permeabilized in PBS/0.5% Triton X-100/0.3 M glycine for 10 min, and blocked in PBS/5% goat serum for 1 hr at room temperature. Sections were stained with rabbit anti-GFP antibodies (1:200; Proteintech) overnight at 4℃ and washed with PBS/0.1% Tween-20 for 30 min three times at room temperature. Sections were then incubated with AF488-conjugated goat anti-rabbit antibodies (1:1000; Cell Signaling Technology) for 2 hr at room temperature and washed with PBS/0.1% Tween-20 for 30 min three times at room temperature. Sections were stained with DAPI (Solarbio) for 7 min, washed in PBS for 8 min two times at room temperature, and mounted with SlowFade Diamond Antifade Mountant (Life Technologies).
 
-## Cell isolation and flow cytometry
+### Cell isolation and flow cytometry
 
 Peripheral blood (PB) was sampled by eyeball extirpating, spleens were mashed through a 70 μm strainer, and BM cells were collected from femurs. Lungs were perfused with 5 ml of HBSS (MACGENE) through the right ventricle, excised, and digested in HBSS containing 5% FBS, 1 mg/ml collagenase type I (Sigma-Aldrich) and 0.05 mg/ml DNase I (Sigma-Aldrich) for 1 hr at 37°C. The digested tissues were homogenized by shaking, passed through a 70 µm cell strainer to create a single-cell suspension. The suspension was enriched in mononuclear cells and harvested from the 1.080:1.038 g/ml interface using a density gradient (Percoll from GE Healthcare). BM, spleen, PB, and lung cells were stained with fluorescently conjugated antibodies. The absolute number of cells was counted by using CountBright Absolute Counting Beads (Invitrogen).
 
@@ -142,6 +218,6 @@ For intracellular staining, cells were stained with antibodies to surface antige
 
 Cells were analyzed on FACSFortessa or FACSAria III flow cytometer (BD Biosciences) using FlowJo software.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism software. All results are shown as mean ± SEM. Statistical significance was determined using Student’s unpaired t-test. Statistical significance was defined as p<0.05.

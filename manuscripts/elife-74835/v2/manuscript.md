@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00baskk38 Translational Neuromodeling Unit, Institute for Biomedical Engineering, University of Zurich & ETH Zurich Zurich Switzerland
-2. https://ror.org/01462r250 Institute for Clinical Chemistry, University Hospital Zurich Zurich Switzerland
-3. https://ror.org/0199g0r92 Max Planck Institute for Metabolism Research Cologne Germany
+1. Translational Neuromodeling Unit, Institute for Biomedical Engineering, University of Zurich & ETH Zurich Zurich Switzerland ([ROR:00baskk38](https://ror.org/00baskk38))
+2. Institute for Clinical Chemistry, University Hospital Zurich Zurich Switzerland ([ROR:01462r250](https://ror.org/01462r250))
+3. Max Planck Institute for Metabolism Research Cologne Germany ([ROR:0199g0r92](https://ror.org/0199g0r92))
 
 † Corresponding author
 
@@ -54,7 +54,7 @@ In each of the two studies, 81 healthy male volunteers were randomly assigned to
 
 All steps of our analysis pipeline, including data exclusion criteria and statistical contrasts of interest, were specified in a time-stamped analysis plan prior to the unblinding of the researcher conducting the analysis (see Materials and Methods, section Analysis plan, data and code availability).
 
-## MMN paradigm and distraction task
+### MMN paradigm and distraction task
 
 We used a new variant of the auditory oddball paradigm, in which we explicitly varied the degree of volatility in the auditory stream over time. In a classical oddball paradigm, one stimulus is less likely to occur and thus considered a surprising, or ‘deviant’, stimulus, whereas the other stimulus is considered the ‘standard’ event. Our sequence was generated such that both tones could be perceived as standard (predictable) or deviant (surprising), depending on the current context. Volatile phases were defined by more frequent context switches (every 25–60 trials). Figure 1A displays the probability structure underlying the tone sequence and the division into stable and volatile phases.
 
@@ -72,9 +72,252 @@ We cannot exclude the possibility that the participants with missing behavioral 
 
 We analyzed trial-wise EEG responses in our paradigm using a factorial design with the within-subject factors ‘mismatch’ (standards versus deviants) and ‘stability’ (stable versus volatile; both factors implemented at the first level) and the between-subject factor ‘drug’ (study 1: placebo vs. amisulpride vs. biperiden; study 2: placebo vs. levodopa vs. galantamine). To account for interindividual differences in pharmacokinetics, drug plasma concentration levels per participant (obtained via blood samples, see Materials and Methods) entered the group-level GLM as a covariate. In the following, we report the group-level effects, separately for both studies, for the main effect of mismatch, its interaction with drug group, the interaction between mismatch and stability, and the three-way interaction mismatch × stability × drug. In Appendix 2, we additionally report the main effect of stability and its interaction with drug.
 
-## Biperiden delays and topographically shifts the MMN
+### Biperiden delays and topographically shifts the MMN
 
 In study 1, mismatch effects were different between drug groups: biperiden delayed and topographically shifted mismatch signals compared to amisulpride and placebo (see Figure 2A for selected sensors, and Figure 2B for selected time points). When considering the whole time × sensor space and correcting for multiple comparisons using Gaussian random field (GRF) theory, this difference was significant at pre-frontal sensors for the comparison between the amisulpride and the biperiden group: between 160 ms and 172 ms after tone onset, the difference between standard and deviant ERPs was significantly smaller in the biperiden group compared to the amisulpride group, peaking at 164 ms (t = 4.45, p = 0.012, Figure 2C, Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig2-v2.jpg)
+
+**Figure 2.:** (A) Difference waves (deviants – standards) at selected sensors for the different drug groups in study 1. (B) Scalp distribution of the mismatch contrast at selected time points. The mismatch response in the biperiden group peaked later and more towards right central channels than in the other groups. (C) Mismatch responses in pre-frontal sensors were significantly weaker in the biperiden group compared to the amisulpride group. Displayed are t-maps for the contrast MMN amisulpride > MMN biperiden. The first map runs across the scalp dimension y (from posterior to anterior, y-axis), and across peristimulus time (x-axis), at the spatial x-location indicated above the map. Significant t values (p < 0.05, whole-volume FWE-corrected at the peak-level) are marked by white contours. The scalp map below shows the t-map at the indicated peristimulus time point, corresponding to the peak of that cluster, across a 2D representation of the sensor layout. ERP plot shows the difference waves for a selected sensor, separately for the biperiden and amisulpride groups. The location of the chosen sensor on the scalp is marked on the scalp map by the corresponding symbol. (D) Pharmacological effects when only testing mismatch ERPs during stable phases. Logic of display as in Panel C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) ERPs to deviants were significantly different from ERPs to standards in large parts of the time × sensor space, including the classical mismatch negativity in fronto-central channels between 100 and 250 ms after tone onset. Logic of display as in main Figure 2. (B) ERPs and difference waves for selected sensors, separately for the three drug groups. The location of the chosen sensors on the scalp is marked on the scalp map in panel A by the corresponding symbol.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) As in study 1, mismatch was significant in large parts of the time × sensor space, including the classical mismatch negativity. Logic of display as in main Figure 2. (B) ERPs and difference waves for selected sensors, separately for the three drug groups. Mismatch signals were highly similar across drug groups.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Mismatch signals (deviants – standards) at sensor FCz in study 1. (B) Mismatch signals (deviants – standards) at sensor FCz in study 2. There were no significant differences between mismatch signals of the different drug groups in study 2. (C) Pharmacological effects on mismatch in study 1: the new pipeline located the dominant effect of biperiden in a later time window compared to our original pipeline. Around 344 ms, mismatch signals were significantly stronger in the biperiden group compared to placebo and amisulpride, due to a delayed peak of the P3 component.
+
+**Table 1.**
+ Significant clusters of activation for main effect of mismatch (standards versus deviants) and pharmacological effects on mismatch in study 1.The table lists the peak coordinates (x, y, and z for time), peak t values, corresponding Z values, whole-volume FWE-corrected p-values at the peak level, and cluster size (kE). The last column lists the minimal and maximal time points of the cluster, i.e., the significant time window tsig.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study 1: Mismatch</th>
+      <th>cluster</th>
+      <th>x[mm]</th>
+      <th>y[mm]</th>
+      <th>z[ms]</th>
+      <th>t66</th>
+      <th>Z≡</th>
+      <th>pFWE</th>
+      <th>kE</th>
+      <th>twsig[ms]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A standards &gt; deviants</td>
+      <td>1</td>
+      <td>–13</td>
+      <td>2</td>
+      <td>172</td>
+      <td>16.59</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td>8,217</td>
+      <td>100–232</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>0</td>
+      <td>13</td>
+      <td>400</td>
+      <td>8.24</td>
+      <td>6.81</td>
+      <td>0.000</td>
+      <td>1,037</td>
+      <td>364–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>–13</td>
+      <td>50</td>
+      <td>276</td>
+      <td>6.66</td>
+      <td>5.81</td>
+      <td>0.000</td>
+      <td>284</td>
+      <td>240–300</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>-4</td>
+      <td>–95</td>
+      <td>304</td>
+      <td>5.38</td>
+      <td>4.88</td>
+      <td>0.002</td>
+      <td>135</td>
+      <td>284–328</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>–60</td>
+      <td>–57</td>
+      <td>268</td>
+      <td>4.76</td>
+      <td>4.40</td>
+      <td>0.015</td>
+      <td>166</td>
+      <td>240–280</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–60</td>
+      <td>–36</td>
+      <td>260</td>
+      <td>4.73</td>
+      <td>4.38</td>
+      <td>0.016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–60</td>
+      <td>–46</td>
+      <td>264</td>
+      <td>4.73</td>
+      <td>4.37</td>
+      <td>0.016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B deviants &gt; standards</td>
+      <td>1</td>
+      <td>–47</td>
+      <td>–68</td>
+      <td>176</td>
+      <td>14.42</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td>6,293</td>
+      <td>100–328</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>64</td>
+      <td>–62</td>
+      <td>200</td>
+      <td>13.55</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+      <td>–78</td>
+      <td>164</td>
+      <td>11.83</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>17</td>
+      <td>72</td>
+      <td>168</td>
+      <td>13.93</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td>1,592</td>
+      <td>100–236</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>34</td>
+      <td>–46</td>
+      <td>364</td>
+      <td>6.10</td>
+      <td>5.41</td>
+      <td>0.000</td>
+      <td>336</td>
+      <td>352–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>47</td>
+      <td>–52</td>
+      <td>400</td>
+      <td>5.27</td>
+      <td>4.80</td>
+      <td>0.003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>–51</td>
+      <td>–30</td>
+      <td>400</td>
+      <td>5.79</td>
+      <td>5.19</td>
+      <td>0.000</td>
+      <td>286</td>
+      <td>376–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>4</td>
+      <td>72</td>
+      <td>400</td>
+      <td>4.56</td>
+      <td>4.24</td>
+      <td>0.027</td>
+      <td>5</td>
+      <td>400–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>26</td>
+      <td>67</td>
+      <td>400</td>
+      <td>4.46</td>
+      <td>4.15</td>
+      <td>0.036</td>
+      <td>1</td>
+      <td>400–400</td>
+    </tr>
+    <tr>
+      <td>C AMI &gt; BIP</td>
+      <td>1</td>
+      <td>8</td>
+      <td>67</td>
+      <td>164</td>
+      <td>4.83</td>
+      <td>4.45</td>
+      <td>0.012</td>
+      <td>31</td>
+      <td>160–172</td>
+    </tr>
+  </tbody>
+</table>
 
 To understand whether this mismatch × drug interaction was driven more by standard or deviant tones or both, we compared responses to standards and deviants separately within the significant cluster (cluster 1 in Table 1C, k = 31). Both effects were visible: responses to standards were more positive under biperiden compared to amisulpride (Cohen’s d = 0.83 at the peak voxel, t = 2.79) and responses to deviant tones were less positive under biperiden compared to amisulpride (peak d = 0.92, t = 3.15), together leading to a reduced mismatch (MMN) under biperiden.
 
@@ -84,11 +327,298 @@ Together, these differences are indicative of both a delay and a shift in topogr
 
 Figure 2—figure supplement 1 displays the main effect of mismatch (averaging across drug groups) in our paradigm. This contrast served to confirm that our paradigm elicited a classical mismatch negativity comparable with previous reports: in a large cluster of frontal, fronto-central, and central sensors, ERPs to standard tones were significantly more positive than ERPs to deviant tones from 100 to 232 ms after tone onset, with a peak difference at 172 ms (t = 16.59, p < 0.001). The reverse was true at pre-frontal (100 to 236 ms, peak at 168 ms, t = 13.93, p < 0.001) and temporo-parietal sensors (100 to 328 ms, peak at 176 ms, t = 14.42, p < 0.001). We found eight additional clusters of significant differences between standard and deviant ERPs at later time points within peristimulus time, which are listed in Table 1 and partly displayed in Figure 2—figure supplement 1.
 
-## Neither galantamine nor levodopa affect mismatch responses
+### Neither galantamine nor levodopa affect mismatch responses
 
 In study 2, there were no significant differences in mismatch ERPs between drug groups, both when considering the whole time × sensor space and when constraining the search volume to the significant average mismatch effect using the functionally defined mask. This also held when, by the same argument as in study 1, constraining the search even further by considering as a functional mask only the large cluster of frontal, fronto-central and central sensors described below, which corresponded to the classical time windows and sensor locations for the mismatch negativity.
 
 Averaging across drug groups (main effect of mismatch), we again found the typical mismatch negativity effect, where ERPs to standard tones were significantly more positive than ERPs to deviant tones from 100 to 216 ms after tone onset in a large cluster of frontal, fronto-central, and central sensors (peak at 176 ms, t = 14.13, p < 0.001), and the opposite held at left temporo-parietal and parietal sensors (100 to 216 ms, peak at 172 ms, t = 13.97, p < 0.001). Standard and deviant ERPs were significantly different in nine additional clusters, which are listed in Table 2 and partly displayed in Figure 2—figure supplement 2.
+
+**Table 2.**
+ Significant clusters of activation for main effect of mismatch (standards versus deviants) in study 2.Columns are organized as in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study 2: Mismatch</th>
+      <th>cluster</th>
+      <th>x[mm]</th>
+      <th>y[mm]</th>
+      <th>z[ms]</th>
+      <th>t73</th>
+      <th>Z≡</th>
+      <th>pFWE</th>
+      <th>kE</th>
+      <th>twsig[ms]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A standards &gt; deviants</td>
+      <td>1</td>
+      <td>13</td>
+      <td>-9</td>
+      <td>176</td>
+      <td>14.13</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td>7,583</td>
+      <td>100–216</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>18</td>
+      <td>160</td>
+      <td>13.76</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+      <td>–25</td>
+      <td>124</td>
+      <td>10.85</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>0</td>
+      <td>-9</td>
+      <td>396</td>
+      <td>8.66</td>
+      <td>7.16</td>
+      <td>0.000</td>
+      <td>1,338</td>
+      <td>364–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>4</td>
+      <td>–95</td>
+      <td>292</td>
+      <td>7.34</td>
+      <td>6.33</td>
+      <td>0.000</td>
+      <td>713</td>
+      <td>244–332</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26</td>
+      <td>–89</td>
+      <td>280</td>
+      <td>6.66</td>
+      <td>5.87</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>47</td>
+      <td>–62</td>
+      <td>252</td>
+      <td>5.71</td>
+      <td>5.18</td>
+      <td>0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>4</td>
+      <td>61</td>
+      <td>288</td>
+      <td>6.14</td>
+      <td>5.50</td>
+      <td>0.000</td>
+      <td>320</td>
+      <td>256–304</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–4</td>
+      <td>56</td>
+      <td>268</td>
+      <td>6.07</td>
+      <td>5.44</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>–47</td>
+      <td>–68</td>
+      <td>256</td>
+      <td>5.93</td>
+      <td>5.34</td>
+      <td>0.000</td>
+      <td>364</td>
+      <td>232–284</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–60</td>
+      <td>–57</td>
+      <td>260</td>
+      <td>5.65</td>
+      <td>5.13</td>
+      <td>0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B deviants &gt; standards</td>
+      <td>1</td>
+      <td>–42</td>
+      <td>–73</td>
+      <td>172</td>
+      <td>13.97</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td>5,637</td>
+      <td>100–216</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>55</td>
+      <td>–68</td>
+      <td>196</td>
+      <td>10.87</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–42</td>
+      <td>–73</td>
+      <td>124</td>
+      <td>10.38</td>
+      <td>Inf</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>-8</td>
+      <td>–30</td>
+      <td>256</td>
+      <td>7.41</td>
+      <td>6.38</td>
+      <td>0.000</td>
+      <td>2,876</td>
+      <td>232–328</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–26</td>
+      <td>–14</td>
+      <td>288</td>
+      <td>6.83</td>
+      <td>5.99</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+      <td>–9</td>
+      <td>304</td>
+      <td>6.67</td>
+      <td>5.87</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>38</td>
+      <td>–68</td>
+      <td>400</td>
+      <td>6.65</td>
+      <td>5.86</td>
+      <td>0.000</td>
+      <td>302</td>
+      <td>372–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>4</td>
+      <td>72</td>
+      <td>388</td>
+      <td>6.03</td>
+      <td>5.41</td>
+      <td>0.000</td>
+      <td>168</td>
+      <td>368–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>68</td>
+      <td>18</td>
+      <td>192</td>
+      <td>5.36</td>
+      <td>4.91</td>
+      <td>0.002</td>
+      <td>20</td>
+      <td>168–204</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>–60</td>
+      <td>-9</td>
+      <td>400</td>
+      <td>5.26</td>
+      <td>4.83</td>
+      <td>0.003</td>
+      <td>153</td>
+      <td>388–400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–34</td>
+      <td>–62</td>
+      <td>396</td>
+      <td>5.04</td>
+      <td>4.65</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 To rule out that some of our analysis choices (average reference, weak high-pass filter, no baseline correction, and a trial definition with comparably low trial numbers per condition) were making us insensitive to potentially more subtle drug effects in our data, we reanalyzed the data from both studies using equivalent settings as in previous studies on cholinergic modulation of MMN (Klinkenberg et al., 2013; Moran et al., 2013; Caldenhove et al., 2017). These settings included a stronger high-pass filter and a trial definition that resulted in higher trial numbers per condition (for details, see section Control analyses in Materials and methods).
 
@@ -102,23 +632,253 @@ A further difference between our analysis approach and previous reports on musca
 
 In line with the results obtained under our original pipeline, we found that the MMN peak latency in study 1 was increased under biperiden (mean: 181.9 ms, std: 3.4) compared to placebo (mean: 168.8 ms, std: 3.2, Table 3). Peak amplitudes were not significantly different between drug groups. This is consistent with a temporal shift of the mismatch response in the early (classical) MMN time window of the kind we describe above. In other words, even though the whole time × sensor space analysis under the new processing pipeline had located the dominant drug effect in a later component, we still found evidence for this early MMN shift when focusing on the classical MMN sensors. Note, however, that the peak-based approach of extracting ERP amplitudes and latencies employed in this ROI analysis is known to be susceptible to noise (e.g. Clayson et al., 2013) and that we will base our main conclusions on the whole sensor space analysis presented above.
 
+**Table 3.**
+ Results of the ROI analysis.Table lists mean (std) values of the peak amplitudes and latencies separately for each drug group in the two studies. F (p) values refer to the effect of the factor drug group in a 3 × 3 ANOVA (drug × sensor). Last row lists the significant post-hoc comparisons between pairs of drug groups. Lat. = Latency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Study 1</th>
+      <th colspan="4">Study 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>PLA</td>
+      <td>AMI</td>
+      <td>BIP</td>
+      <td>F2,208(p)</td>
+      <td>PLA</td>
+      <td>LEV</td>
+      <td>GAL</td>
+      <td>F (p)</td>
+    </tr>
+    <tr>
+      <td>Peaks (µV)</td>
+      <td>–1.83 (0.1)</td>
+      <td>–1.95 (0.1)</td>
+      <td>–2.04 (0.1)</td>
+      <td>1.1 (0.33)</td>
+      <td>–1.75 (0.1)</td>
+      <td>–2.0 (0.1)</td>
+      <td>–1.76 (0.1)</td>
+      <td>1.73 (0.18)</td>
+    </tr>
+    <tr>
+      <td>Lat. (ms)</td>
+      <td>168.8 (3.2)</td>
+      <td>173.7 (3.2)</td>
+      <td>181.9 (3.4)</td>
+      <td>4.06 (0.02)</td>
+      <td>165.1 (2.75)</td>
+      <td>173.2 (2.75)</td>
+      <td>163.7 (2.75)</td>
+      <td>3.5 (0.03)</td>
+    </tr>
+    <tr>
+      <td>Post-hoc t</td>
+      <td colspan="2">Lat.: BIP &gt; PLA</td>
+      <td colspan="2">p = 0.013</td>
+      <td colspan="2">Lat.: LEV &gt;GAL</td>
+      <td colspan="2">p = 0.038</td>
+    </tr>
+  </tbody>
+</table>
+
 In study 2, consistent with the whole sensor-space analysis, there was no significant difference between MMN peak amplitude or latency between the galantamine group and placebo. Peak latency differed significantly between galantamine and levodopa (with galantamine peaking earlier), but neither was significantly different from placebo (Table 3). Due to the above-mentioned caveats with the ROI analysis approach, and the fact that this apparent latency effect was not even visible in the average ERP traces at FCz (Figure 2—figure supplement 3), we did not follow up on this finding.
 
-## Mismatch responses are stronger during stability
+### Mismatch responses are stronger during stability
 
 Our paradigm allowed us to test whether auditory mismatch signals would depend on the current level of stability in the sensory input. In study 1, we found such an interaction effect (mismatch × stability) in 3 clusters. Between 180 and 220 ms after tone onset, mismatch was significantly stronger in stable as compared to volatile phases, with a peak difference at 204 ms (t = 5.13, p = 0.001) at central and centro-parietal sensors. Right parietal and left temporo-parietal sensors, which generally show the mismatch effect with the opposite sign compared to fronto-central channels, also showed stronger (negative) mismatch for stable phases than for volatile phases (right parietal cluster: 188–236 ms, peak at 200 ms, t = 5.07, p = 0.001; left temporo-parietal cluster: 200–220 ms, peak at 208 ms, t = 5.33, p = 0.003; see Table 4 and Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig3-v2.jpg)
+
+**Figure 3.:** (A) Regions of the time × sensor space where ERPs to tones in stable phases were more positive than ERPs to tones in volatile phases. Logic of display as in Figure 2. (B) ERP difference waves (deviants – standards) at the peak sensors for the two clusters shown in panel A, separately for the three drug groups. (C) Pharmacological effect on the interaction: at right central channels, the biperiden group showed a stronger interaction effect between mismatch and stability than the placebo group (significant only within a spatio-temporal mask, see main text). Displayed is the t-map of the contrast and the difference waves (volatile – stable MMN) at sensor C2. (D) ERPs to standards and deviants at the same sensors as plotted in A and B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74835/elife-74835-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Panels show mismatch difference waves (deviants – standards), averaged across all drug groups, during stable and volatile phases of the experiment, and the difference between these (volatile – stable), across variations in pre-processing (ORG vs NEW) and trial definition (INIT vs 2REP). Data are shown at an exemplar left central sensor (C3; note that the location in sensor space of the peak effect varied slightly across pipelines).(A) Study 1: Stable mismatch responses were stronger than volatile mismatch responses around or before 200ms irrespective of the analysis pipeline used. (B) Study 2: Under all pipelines except ORG preprocessing and INIT trial definition, stable mismatch responses were stronger than volatile mismatch responses around or before 200 ms. ORG = original pre-processing pipeline as defined in the main text, NEW = adjusted pipeline as defined in section Control analyses in Materials and methods, INIT = initial trial definition: all standards and deviants following at least 5 repetitions, 2REP = new trial definition: all standards and deviants following at least 2 repetitions, for exact definitions refer to section First level general linear model and Control analyses in Materials and methods.
+
+**Table 4.**
+ Significant clusters of activation for interaction effects (mismatch × stability) on ERPs in study 1.Columns are organized as in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study 1: mismatch × stability</th>
+      <th>cluster</th>
+      <th>x[mm]</th>
+      <th>y[mm]</th>
+      <th>z[ms]</th>
+      <th>t66</th>
+      <th>Z≡</th>
+      <th>pFWE</th>
+      <th>kE</th>
+      <th>twsig[ms]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A stable MMN &gt; volatile MMN</td>
+      <td>1</td>
+      <td>17</td>
+      <td>–19</td>
+      <td>204</td>
+      <td>5.73</td>
+      <td>5.14</td>
+      <td>0.001</td>
+      <td>591</td>
+      <td>180–220</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>–17</td>
+      <td>–25</td>
+      <td>196</td>
+      <td>5.68</td>
+      <td>5.10</td>
+      <td>0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B volatile MMN &gt; stable MMN</td>
+      <td>1</td>
+      <td>42</td>
+      <td>–78</td>
+      <td>200</td>
+      <td>5.63</td>
+      <td>5.07</td>
+      <td>0.001</td>
+      <td>119</td>
+      <td>188–236</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>55</td>
+      <td>–68</td>
+      <td>200</td>
+      <td>5.17</td>
+      <td>4.72</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>64</td>
+      <td>–62</td>
+      <td>200</td>
+      <td>5.04</td>
+      <td>4.62</td>
+      <td>0.007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>–60</td>
+      <td>–57</td>
+      <td>208</td>
+      <td>5.33</td>
+      <td>4.85</td>
+      <td>0.003</td>
+      <td>29</td>
+      <td>200–220</td>
+    </tr>
+  </tbody>
+</table>
 
 Interaction effects in central channels reflected the following pattern: responses to standard tones were more positive and responses to deviant tones more negative during stable phases than during volatile phases (Figure 3D). The opposite was true for interaction effects at temporo-parietal clusters. This indicates that mismatch negativity, as defined by the difference between standards and deviants, was stronger during more stable periods.
 
 In study 2, ERPs showed no significant interaction effects between the factors mismatch and stability. In other words, mismatch responses did not differ between stable and volatile periods of the experiment. Again, we tested the robustness of these findings with respect to our analysis choices. We found that either applying a more aggressive correction of slow drifts or adopting a trial definition which retained more trials per condition revealed significant interaction effects equivalent to those seen in study 1 under the original pipeline (Figure 3—figure supplement 1).
 
-## Biperiden particularly affects mismatch responses during stability
+### Biperiden particularly affects mismatch responses during stability
 
 In the ERPs at the sensors which showed significant mismatch stability interaction effects in study 1, it appeared that the interaction effect was mainly driven by the biperiden group (Figure 3B). Indeed, when examining the drug groups separately, the interaction effect was significant only in the biperiden group (208 ms, t = 4.96, p = 0.009) at right central channels, but not in the placebo or the amisulpride group. However, there were no clusters for the three-way interaction with drug group which survived multiple comparison correction across the whole time × sensor space. The same held when zooming in on those clusters that showed significant interaction effects, using the functionally defined mask of the average interaction effects. However, focusing on only those parts of the time × sensor space where there was a significant positive interaction between mismatch and stability (cluster 1 in Table 4), we did find a significant three-way interaction such that the interaction of mismatch and stability was stronger in the biperiden group compared to the placebo group at 212 ms at right central sensors (t = 3.18, p = 0.034 after small volume correction, see Figure 3C). Note that, similar to the constrained mask for the overall mismatch effects, this constrained mask was not part of our a priori analysis plan.
 
 In line with our analysis plan, we also examined the interaction of drug with mismatch during stable phases separately from mismatch during volatile phases. Because mismatch effects were stronger during stable periods of the experiment (see above), we suspected that we might also be more sensitive to the effects of the pharmacological manipulation in these periods.
 
 Indeed, while there were no significant effects of drug group on mismatch in volatile phases, drug groups did differ significantly in their mismatch response during stable periods. Again, as for overall mismatch, pre-frontal sensors showed significantly reduced mismatch responses between 160 ms and 168 ms after tone onset in the biperiden group compared to the amisulpride group, peaking at 164ms (t = 4.74, p = 0.016). Additionally, later mismatch responses were significantly larger in the biperiden group compared to placebo at right central and centro-parietal sensors (see Table 5 and Figure 2D), again reflecting a delayed mismatch response under biperiden with a shift in topography from left frontal and pre-frontal toward right central and centro-parietal channels.
+
+**Table 5.**
+ Significant clusters of activation for pharmacological effects on stable mismatch in study 1.Columns are organized as in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study 1:Stable Mismatch</th>
+      <th>cluster</th>
+      <th>x[mm]</th>
+      <th>y[mm]</th>
+      <th>z[ms]</th>
+      <th>t66</th>
+      <th>Z≡</th>
+      <th>pFWE</th>
+      <th>kE</th>
+      <th>twsig[ms]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A PLA &gt;BIP</td>
+      <td>1</td>
+      <td>–26</td>
+      <td>56</td>
+      <td>204</td>
+      <td>4.56</td>
+      <td>4.24</td>
+      <td>0.027</td>
+      <td>8</td>
+      <td>204–212</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>–26</td>
+      <td>61</td>
+      <td>224</td>
+      <td>4.36</td>
+      <td>4.07</td>
+      <td>0.049</td>
+      <td>1</td>
+      <td>224–224</td>
+    </tr>
+    <tr>
+      <td>B BIP &gt; PLA</td>
+      <td>1</td>
+      <td>21</td>
+      <td>–19</td>
+      <td>212</td>
+      <td>4.92</td>
+      <td>4.52</td>
+      <td>0.009</td>
+      <td>78</td>
+      <td>200–220</td>
+    </tr>
+    <tr>
+      <td>C AMI &gt; BIP</td>
+      <td>1</td>
+      <td>17</td>
+      <td>72</td>
+      <td>164</td>
+      <td>4.74</td>
+      <td>4.38</td>
+      <td>0.016</td>
+      <td>11</td>
+      <td>160–168</td>
+    </tr>
+  </tbody>
+</table>
 
 When constraining the search volume using the average effect of stable mismatch, the delayed mismatch in the biperiden group was additionally significantly stronger than in the amisulpride group at 204 ms in left pre-frontal sensors (t = 4.17, p = 0.041). Overall, the effects of biperiden on stable mismatch resembled the ones on overall mismatch signals, but with higher effect sizes, while there were no significant pharmacological effects on volatile mismatch.
 
@@ -132,7 +892,7 @@ Our paradigm allowed us to examine processing of auditory deviants in two differ
 
 In the following, we will first discuss the pharmacological effects on mismatch responses in the light of previous literature, then examine the influence of environmental volatility on mismatch processing and how this interacted with biperiden. Finally, we will discuss the clinical implications of our findings for treatment selection in schizophrenia.
 
-## Delayed and topography-shifted mismatch responses under biperiden
+### Delayed and topography-shifted mismatch responses under biperiden
 
 In study 1, mismatch responses in the biperiden group peaked later and were distributed more towards right centro-parietal channels than in the other drug groups (Figure 2B). This resulted in significantly smaller mismatch amplitudes at pre-frontal sensors early on, in classical MMN time windows (biperiden vs. amisulpride), and significantly larger MMN at centro-parietal sensors later (biperiden vs. placebo).
 
@@ -150,7 +910,7 @@ Surprisingly, in study 2, we did not find an effect of galantamine on mismatch r
 
 Notably, our analysis differed from previous investigations of the effects of biperiden and galantamine on the MMN (e.g. Klinkenberg et al., 2013; Moran et al., 2013; Caldenhove et al., 2017) in terms of pre-processing choices such as the choice of reference, the amount of high-pass filtering and the application of baseline correction. To examine the robustness of our main results to these analysis choices and to rule out that differences in results between studies were simply due to different pre-processing strategies, we re-analyzed our data using equivalent settings to these previous reports. The results of this analysis were largely supportive of our claims: we also found significant effects of biperiden (versus placebo and amisulpride) on mismatch signals that were compatible with an increase in MMN latency, even when adopting the same pipeline as used in previous studies. Similarly, there was still no effect of galantamine on mismatch responses in a whole time × sensor space analysis based on this adapted pipeline.
 
-## Biperiden and the influence of environmental volatility on mismatch processing
+### Biperiden and the influence of environmental volatility on mismatch processing
 
 In classical oddball paradigms, the occasional deviant represents a rule violation, but its impact on subsequent rule representation is limited, as the tone sequence reverts back to the standard tone immediately. In contrast, the roving oddball paradigm examines model updating in a changing environment, as every deviant signals the onset of a new rule. In our new volatility oddball paradigm, the relevance of the detected rule violation to the representation of the rule additionally varies across different periods of the experiment: during more stable phases, oddballs represent noise and deviants should not lead to a major update of the current belief about the underlying rule. In contrast, during volatile phases, the probabilities of the two tones sometimes reverse and deviants thus occasionally signal the onset of a new rule. Theoretical treatments suggest that this volatility can impact on the size of belief updates in two opposing ways (Mathys et al., 2011). On the one hand, increased belief uncertainty due to environmental volatility should increase learning rates (i.e., belief updates) – in other words, deviants are more meaningful in volatile phases due to the occasional rule switch. On the other hand, stable phases allow for a more precise prediction of the input than volatile phases, as beliefs about the more likely tone occurrence are allowed to accumulate for longer. This suggests an increased impact of deviants during stability. It is a priori not clear which of these two opposing effects would dominate in a given setting. In our case, we examined this question by contrasting mismatch effects between stable and volatile periods of our task.
 
@@ -162,13 +922,13 @@ We have previously capitalized on the history-dependence of EEG amplitudes in th
 
 Importantly, in line with the results from the conventional averaging approach, we found that only biperiden affected the EEG signatures of model-derived precision-weighted prediction errors – neither dopaminergic manipulations nor galantamine showed significant differences to the placebo group. Moreover, the biperiden effect concerned not only signatures of low-level prediction errors, reflecting mismatches between expected and actual tone identities, but also signatures of higher level prediction errors serving to refine beliefs about environmental volatility. However, for ease of accessibility and to enable direct comparison with previous work on dopaminergic and cholinergic effects on the MMN, we have focused our conclusions on the results of the conventional ERP analysis, and only present the model-based analysis in the appendix.
 
-## Future directions
+### Future directions
 
 In this study, we employed a conventional ERP analysis, but considered all sensors and time points under multiple comparison correction, to detect effects of experimental conditions that manifest as differences in evoked response amplitudes within our time-window of interest. In our main analysis, the effect of biperiden on mismatch signals as compared to placebo appeared relatively subtle but was retrieved with higher effect sizes and survived multiple comparison correction across the whole time × sensor space when (a) focusing on the stable phases of our experiment (in line with our analysis plan, Figure 2D), despite the reduction in trial numbers this entails, (b) using an alternative pre-processing pipeline with more aggressive correction of slow drifts and retaining more trials per condition (Figure 2—figure supplement 3), or (c) adopting a model-based approach which takes into account all trials of the experiment (Appendix 1). Similarly, the effect of environmental volatility showed up more robustly across studies when either using the alternative pre-processing, or retaining more trials per condition, or both (Figure 3—figure supplement 1). This suggests that the pre-processing and statistical strategy of the main analysis did not have optimal sensitivity for detecting these effects. Thus, for future studies using our paradigm, either focusing the analysis on an ROI based on the average effects presented here, or adopting the model-based analysis approach, would be promising strategies – in particular, when extracting effects in individual participants or patients.
 
 Furthermore, our pattern of results – an apparent biperiden-induced shift in mismatch responses from an early to a later peak, and from frontal to central channels – suggests that methods which go beyond the amplitude-based approach used here and exploit the rich temporal information in the EEG signal could help us to further understand the impact of cholinergic neurotransmission on perceptual inference in our task. Examples for this are principal component analysis (PCA) based analyses (Hunt et al., 2015), which take into account the topography as well as the time course of the ERP, or dynamic causal modeling (DCM), which interprets scalp-level effects in terms of extrinsic (between-area) connectivity changes and local effects (such as synaptic gain modulation within an area) in an underlying network of sources (David et al., 2006; Kiebel et al., 2006; Garrido et al., 2007). Future analyses of the current data set might employ this technique to infer on low-level (synaptic) mechanisms underlying the observed pharmacological effects, for example, biperiden-induced changes in post-synaptic gain of supragranular pyramidal cells in auditory cortex (Moran et al., 2013; Schöbi et al., 2021).
 
-## Clinical implications
+### Clinical implications
 
 Together, the current analyses demonstrate that mismatch responses in our paradigm were sensitive to muscarinic receptor status. In contrast, and in line with previous reports (Kähkönen et al., 2002; Leung et al., 2007; Leung et al., 2010; Korostenskaja et al., 2008), dopaminergic challenges in both of our studies did not affect mismatch responses. Notably, in our control analyses, biperiden differed significantly from both placebo and amisulpride in the same sensors and time points. Such a differential sensitivity to cholinergic versus dopaminergic neuromodulation may prove valuable for understanding and predicting differential treatment responses in individuals diagnosed with schizophrenia. Importantly, while the reduction of MMN amplitudes in patients compared to healthy controls is robust and of large effect size (Erickson et al., 2016), there is still considerable inter-individual variation in MMN amplitudes among patients (Light and Swerdlow, 2015), supporting the idea that different subgroups of patients might differ in their MMN expression. Based on our results, we speculate that reduced MMN in patients might be relatively more indicative of cholinergic versus dopaminergic dysregulation of synaptic plasticity.
 
@@ -184,13 +944,13 @@ Second, prospective patient studies are needed, which test whether this readout 
 
 ## Materials and methods
 
-## Analysis plan, data and code availability
+### Analysis plan, data and code availability
 
 Prior to the unblinding of the researcher conducting the analysis, a version-controlled and time-stamped analysis plan was created. This plan detailed the analysis pipeline ex ante (see next sections). The analysis plan is provided online at https://gitlab.ethz.ch/tnu/analysis-plans/weber-muscarinic-mmn-erp. The data used for this manuscript are available at https://research-collection.ethz.ch/handle/20.500.11850/477685, adhering to the FAIR (Findable, Accessible, Interoperable, and Re-usable) data principles. Furthermore, the analysis code that reproduces the results presented here is publicly available on the GIT repository of ETH Zurich at https://gitlab.ethz.ch/tnu/code/weber-muscarinic-mmn-erp-2021. The code used for running the experimental paradigm will also be made publicly available, as part of a future release of the open source software package TAPAS (https://www.translationalneuromodeling.org/tapas).
 
-## Study 1
+### Study 1
 
-## Participants
+#### Participants
 
 In total, 81 volunteers (mean age 22.7 years (SD = 3.6, range = 18–38)) participated in study 1. The data reported here were collected as part of a larger project which included other paradigms and data modalities. Sample size per study was chosen to obtain a statistical power of 80% for detecting significant differences between drug conditions (assuming a significance threshold of α = 0.05, an expected drop-out rate of 25%, and an effect size of d = 0.8 or larger). In this initial study with its focus on the feasibility of an EEG-based readout of differential sensitivity to cholinergic (muscarinic) vs. dopaminergic function, we aimed for controlling potential confounds as tightly as possible. In addition to measuring individual drug plasma levels and transmitter-relevant single-nucleotide polymorphisms (see below), we therefore only recruited male participants in order to avoid the significant influence of fluctuating estrogen levels on dopaminergic and cholinergic systems (Gasbarri et al., 2012; Colzato and Hommel, 2014; Barth et al., 2015). However, this has the obvious disadvantage that our study is not representative for the entire population. This is a significant limitation which we revisit in the Discussion. All participants were right-handed, Caucasian, and non-smokers with normal or corrected-to-normal vision. Further exclusion criteria included serious chronic or current physical or mental illness, drug consumption, and hearing aids.
 
@@ -198,7 +958,7 @@ To exclude any cardiac abnormalities that could render a pharmacological interve
 
 Data from a total of 10 participants could not be used in the group analysis presented here for the following reasons: change of the stimulus sequence after the first few participants (N = 6), technical issues during measurement (N = 2), and failure to sufficiently correct for eye blink artefacts during preprocessing of EEG data (N = 2, see below). Therefore, the results reported here are based on a final sample of N = 71 participants, with N = 25 in the placebo group (mean age 23.2 years [SD = 4.8, range = 18–38]), N = 24 in the amisulpride group (mean age 22.4 years [SD = 3.4, range = 18–33]), and N = 22 in the biperiden group (mean age 22.5 years [SD = 3.1, range = 18–29]). Criteria for excluding data sets from the group analysis were defined and documented in a time-stamped analysis plan prior to un-blinding of the analyzing researcher (see below, section ‘Analysis Plan, Data and Code Availability’).
 
-## Pharmacological substances and administration
+#### Pharmacological substances and administration
 
 At the clinical examination, participants were instructed to abstain from the consumption of alcohol and grapefruit juice for 24 hr before the EEG measurement, not to take any medications within 3 days before the experiment and not to consume other drugs. They were further instructed not to eat for 3 hr before the EEG measurement, and to abstain from driving a car for 48 hr after the experiment.
 
@@ -206,11 +966,11 @@ Approximately 80 min before the start of the EEG measurement, capsules of each c
 
 Amisulpride was administered using Solian 400 mg mixed with 570 mg of lactose. At this dose, amisulpride blocks postsynaptic D2 and D3 receptors, thus inhibiting DA transmission (Chhabra and Bhatia, 2007). Biperiden capsules contained two units of 2 mg Akineton (i.e., 4 mg in total) mixed with 880 mg of lactose. Biperiden is the most selective M1 antagonist available for human subjects (Katayama et al., 1990; Bolden et al., 1992) and has only minor peripheral anticholinergic effects in comparison with other anticholinergic substances. Placebo capsules contained 960 mg of lactose.
 
-## Blood samples
+#### Blood samples
 
 Four blood samples were collected per participant in order to (1) estimate the actual drug plasma levels at the time participants performed the experimental task (using two samples), and (2) to assess genetic variation at functional single nucleotide polymorphisms (SNPs) of two genes relevant to the pharmacological intervention (using two samples). However, the assessment of genetic effects in our study is constrained by the very limited sample size. In particular, for some genotypes of interest, there were only 2 or 3 individuals within certain drug groups showing these genotypes. We therefore refrain from interpreting or discussing these genetic effects any further and report them in Appendix 3 for completeness and potential guidance for future follow-up studies with larger sample sizes.
 
-## Drug plasma concentration
+#### Drug plasma concentration
 
 For both pharmacological agents, the expected maximal plasma concentration was around 1 hr after intake (amisulpride: first peak of plasma concentration after 1 hr, second peak at 3–4 hr, absolute bioavailability of 48%, elimination half-life ~12 hr (https://compendium.ch/mpro/mnr/8962/html/de); biperiden: for single dose usage, peak of plasma concentration around 1 hr after administration, absolute bioavailability ~33%; elimination half-life 11–21.3 hr (https://compendium.ch/mpro/mnr/1853/html/de)).
 
@@ -220,17 +980,17 @@ Blood analysis was performed by the Institute of Clinical Chemistry at the Unive
 
 Estimated drug plasma levels at the time of the experimental task were read off a linear approximation of drug concentration decay between the two collection time points for each individual and entered the group level general linear model (GLM) as a covariate (see below).
 
-## MMN paradigm
+#### MMN paradigm
 
 Participants passively listened to a sequence of tones, presented binaurally through headphones, while engaging in a visual distraction task (described below). The auditory stimuli consisted of two pure sinusoidal tones; a high (528 Hz) and a low (440 Hz) tone. A total of 1800 tones were presented, with a duration of 70 ms each and an inter-stimulus interval of 500 ms, see Figure 1 for a visualization of the paradigm and relative timing of events. Auditory and visual stimuli were presented using PsychToolbox (PTB3, psychotoolbox.org).
 
 The probability of hearing the high tone was either 0.15 (in which case it was the deviant) or 0.85 (in which case it functioned as a standard), except for four short phases, 50 trials each, in which the probability of hearing either tone was equal. In order to ensure that both tones appeared equally often in both roles, the second half of the stimulus stream was a repetition of the first half, with only the tones switched. This avoids potential confounding effects by ensuring that both stimulus categories have, on average, the same physical properties across the duration of the experiment.
 
-## Visual distraction task
+#### Visual distraction task
 
 Participants performed a distracting visual task and were instructed to ignore the sounds. The task consisted of detecting changes to a centrally presented small white square. Whenever the square opened to either the left or the right side, participants were instructed to press a button on a response box with their index finger (left opening) or middle finger (right opening). The 36 ‘square openings’ (half of them to the left) occurred at irregular intervals and did not coincide with tone presentations but always followed a tone with a delay varying randomly between 50 and 250 ms after tone offset (see Figure 1B).
 
-## EEG data acquisition and preprocessing
+#### EEG data acquisition and preprocessing
 
 EEG data were collected at a sampling rate of 500 Hz using an EASYCAP system 64 scalp electrodes including one electrooculography (EOG) channel (10–20 layout; EASYCAP GmbH, https://www.easycap.de/wordpress/). Data were recorded with nose-reference. Before starting the experimental task, impedances were ensured to be well below 20 kOhm for all channels. For a subset of participants, ECG and pulse oximetry data were additionally acquired via a bipolar amplifier (BrainAmp ExG; Brain Products GmbH, https://www.brainproducts.com/index.php); however, these data were not analyzed in the present study. For one participant, erroneous cabling during data acquisition resulted in a different order of EEG channels. This could be corrected for during the pre-processing of the data.
 
@@ -246,7 +1006,7 @@ Finally, epochs in which the (absolute) signal recorded at any of the channels e
 
 The remaining good trials were converted, for each participant, into scalp images for all 63 EEG channels and all time points between 100 ms and 400 ms after tone onset, using a voxel size of 4.2 mm × 5.4 mm × 4.0 ms. The images were spatially smoothed with a Gaussian kernel (FWHM: 16 mm × 16 mm) in accordance with the assumptions of Random Field Theory (Worsley et al., 1996; Kiebel and Friston, 2004) and to accommodate for between-subject spatial variability in channel space. To avoid confusion, we only use the term ‘MMN’ when we talk about effects in the classical time window (100–200 ms) and sensor locations (frontocentral sensors) for the MMN, and use ‘mismatch responses’ for all other effects.
 
-## First-level general linear model
+#### First-level general linear model
 
 We defined categorical trial types based on our tone sequence: deviant trials were defined as the first tone with a different frequency; following previous studies (Garrido et al., 2008), we only considered tones as deviants which followed at least 5 repetitions of the other tone (N = 119). Equivalently, standard trials were defined as the 6th repetition of the same tone (N = 106) in order to keep trial numbers comparable across conditions. Based on the probability structure of the input sequence, we further divided these into deviants in stable phases, deviants in volatile phases, standards in stable phases, and standards in volatile phases. Stable phases were defined as phases in which the probability of hearing the high tone did not change for at least 100 trials; volatile phases were all other phases of the experiment. An alternative trial definition was applied in the analyses examining robustness (section Control analyses).
 
@@ -256,7 +1016,7 @@ For visualization purposes, grand average waveforms were computed for each condi
 
 Additionally, and in line with our analysis plan, we performed a model-based analysis in which the conventional trial definition (‘standard’ versus ‘deviant’ trials) was replaced with a trial-wise estimate of the amount of prediction error that each tone in our sequence would elicit, according to an ideal observer model. This analysis has the advantage of taking into account the trial-by-trial dynamics; on the other hand, it requires making assumptions about the nature of the learning process. The details of this analysis and the obtained results are presented in Appendix 1.
 
-## Group level general linear models
+#### Group level general linear models
 
 Random effects group analysis across all participants was performed using a standard summary statistics approach (Penny and Holmes, 2007). We used a separate group-level GLM for each effect of interest from the first level GLM, which implements a factorial design with the between-subject factor ’drug’ (levels: 1. Placebo, 2. Amisulpride, 3. Biperiden). With regard to non-sphericity correction, the group-level analysis assumed independence (measurements are unrelated to each other), given the between-subject design, and non-identity (variances may differ across measurements).
 
@@ -264,7 +1024,7 @@ We introduced a covariate for the estimated drug plasma concentration levels of 
 
 In sum, our design effectively comprised two within-subject factors – mismatch (standards vs. deviants) and stability (stable vs. volatile), which we specified in our first-level GLM – and one between-subject factor, drug group (placebo vs. amisulpride vs. biperiden). At the group level, we were particularly interested in the interaction between the factors mismatch and drug, and the three-way interaction between mismatch, stability, and drug.
 
-## Pharmacological effects
+#### Pharmacological effects
 
 For each effect of interest from the first level, we used eight separate t-tests to examine: average positive and negative EEG deflections for the effect across drug groups, and drug differences in the expression of the effect: amisulpride compared to placebo in both directions, biperiden compared to placebo in both directions, and differences between amisulpride and biperiden in both directions.
 
@@ -272,11 +1032,11 @@ In addition to an initial analysis across the whole time-sensor space, we invest
 
 For all analyses, we report all results that survived family-wise error (FWE) correction, based on Gaussian random field theory, across the entire volume (time × sensor space), or within the functional masks (small volume correction, SVC), at the peak level (p < 0.05).
 
-## Study 2
+### Study 2
 
 Study 2 employed exactly the same study design as study 1 except for the pharmacological agents used. The participants did not overlap across studies. In the following, we only report the parts of the experiment that differed to study 1 and refer the reader to study 1 for all other aspects of the experiment and analysis. In particular, we followed exactly the same analysis steps as outlined in the analysis plan for study 1 (see section Analysis plan, data and code availability).
 
-## Participants
+#### Participants
 
 In total, 81 male volunteers (mean age 23.5 years [SD = 3.5, range = 18–35]) participated in study 2. Inclusion and exclusion criteria were identical to study 1.
 
@@ -284,7 +1044,7 @@ Participants were randomly assigned to one of three drug groups: placebo, levodo
 
 Data from three participants could not be used in the group analysis presented here due to a diagnosis of diabetes (N = 1; prior to unblinding, we decided not to analyze this dataset because of potential interactions of insulin with DA; Figlewicz et al., 2003; Fiory et al., 2019), technical issues during measurement (N = 1), and an adverse event prior to data acquisition (N = 1; nausea). Therefore, the results reported here are based on a sample of N = 78 participants, with N = 26 in the placebo group (mean age 24.3 years [SD = 3.9, range = 19–35]), N = 26 in the levodopa group (mean age 23.6 years [SD = 3.8, range = 19–33]), and N = 26 in the galantamine group (mean age 22.7 years [SD = 3.0, range = 18–33]).
 
-## Pharmacological substances, administration, and blood samples
+#### Pharmacological substances, administration, and blood samples
 
 Approximately 80 min before the start of the EEG measurement, capsules of each compound (levodopa/galantamine/placebo) were administered as a single oral dose. All capsules had the same visual appearance and drug administration was double-blind.
 
@@ -294,15 +1054,15 @@ For both pharmacological agents, the expected maximal plasma concentration was a
 
 The first blood sample was collected on average 77.71 min (SD: 14.38) after drug intake. A second blood sample was taken 192.79 min (SD: 18.45) after drug administration. Blood samples were collected and processed as described in study 1. As in study 1, an additional blood sample was collected for assessing genetic variation at selected functional single nucleotide polymorphisms (SNPs). As for study 1, we report the results of the genetic analyses in Appendix 3, bearing in mind the sample size limitations mentioned above.
 
-## Paradigm and distraction task
+#### Paradigm and distraction task
 
 We used the same paradigm and distraction task as in study 1. However, following observations during study 1 that participants found the task rather tiring due to long sequences without visual events, we increased the number of square openings in the visual distraction task from 36 to 90 to make the task more engaging. One participant had a hit rate below 75% (see section Results). Again, we report the group level results including data from this participant in the main text, but also report the results based on the analysis without this dataset (Supplementary file 1).
 
-## EEG recording and statistical analysis
+#### EEG recording and statistical analysis
 
 EEG recording setup, preprocessing pipeline and statistical analysis were identical to study 1. For all channels in all participants, the number of excluded epochs was below 20% of the total number of epochs, therefore, we did not mark any channels as bad. The number of remaining good trials was 1753 on average (SD = 71), with no significant differences (one-way ANOVA F = 1.18, p = 0.31) across groups (placebo: 1770, SD = 51; levodopa: 1740, SD = 86; galantamine: 1750, SD = 71). The specification of first level and group level GLMs was identical to study 1.
 
-## Control analyses
+### Control analyses
 
 In separate analyses, we examined the robustness of our main findings to changes in analysis strategy. We were particularly interested in (1) the main effect of mismatch and its modulation by drug group, and (2) the interaction of mismatch and stability, after correcting for slow drifts and increasing trial numbers.
 

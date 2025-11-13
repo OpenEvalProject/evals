@@ -34,39 +34,203 @@ In this study, we will use recent genetic data to investigate the roles of lipid
 
 ## Materials and methods
 
-## GWAS summary datasets and lipoprotein particle measurements
+### GWAS summary datasets and lipoprotein particle measurements
 
 Table 1 describes all GWAS summary datasets used in this study, including two GWAS of the traditional lipid risk factors (Willer et al., 2013; Hoffmann et al., 2018), two recent GWAS of the human lipidome (Kettunen et al., 2016; Davis et al., 2017), and three GWAS of CAD or MI (Nikpay et al., 2015; Nelson et al., 2017; Abbott et al., 2018). In the two GWAS of the lipidome (Kettunen et al., 2016; Davis et al., 2017), high-throughput nuclear magnetic resonance (NMR) spectroscopy was used to measure the circulating lipid and lipoprotein traits (Soininen et al., 2009). We investigated the 82 lipid and lipoprotein traits measured in these studies that are related to very-low-density lipoprotein (VLDL), LDL, intermediate-density lipoprotein (IDL), and HDL subfractions and particle sizes. All the subfraction traits are named with three components that are separated by hyphens: the first component indicates the size (XS, S, M, L, XL, XXL); the second component indicates the fraction according to the lipoprotein density (VLDL, LDL, IDL, HDL); the third component indicates the measurement (C for total cholesterol, CE for cholesterol esters, FC for free cholesterol, L for total lipids, P for particle concentration, PL for phospholipids, TG for triglycerides). For example, M-HDL-P refers to the concentration of medium HDL particles.
 
+**Table 1.**
+ Information about the GWAS summary datasets used in this article.The columns are the phenotypes reported by the GWAS studies, the consortium or name of the first author of the publication, PubMed ID, population, sample size, other GWAS datasets with other lapping sample, and URLs we used to download the datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>Dataset name</th>
+      <th>PubMed ID</th>
+      <th>Population</th>
+      <th>Sample size</th>
+      <th>Sample overlap with other datasets</th>
+      <th>URL to summary dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Traditional lipid traits</td>
+      <td>GERA</td>
+      <td>29507422 Hoffmann et al., 2018</td>
+      <td>Multi-ethnic</td>
+      <td>94,674</td>
+      <td></td>
+      <td>ftp://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GLGC</td>
+      <td>24097068 Willer et al., 2013</td>
+      <td>European</td>
+      <td>188,578</td>
+      <td>Kettunen, CARDIoGRAMplusC4D</td>
+      <td>http://csg.sph.umich.edu/abecasis/public/lipids2013/</td>
+    </tr>
+    <tr>
+      <td>Lipoprotein subfraction traits</td>
+      <td>Davis</td>
+      <td>29084231 Davis et al., 2017</td>
+      <td>Finnish</td>
+      <td>8372</td>
+      <td></td>
+      <td>http://csg.sph.umich.edu/boehnke/public/metsim-2017-lipoproteins/</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kettunen</td>
+      <td>27005778 Kettunen et al., 2016</td>
+      <td>European</td>
+      <td>24,925</td>
+      <td>GLGC, CARDIoGRAMplusC4D</td>
+      <td>http://www.computationalmedicine.fi/data#NMR_GWAS</td>
+    </tr>
+    <tr>
+      <td>Heart disease traits</td>
+      <td>CARDIoGRAMplusC4D (CAD)</td>
+      <td>26343387 Nikpay et al., 2015</td>
+      <td>Mostly European</td>
+      <td>185,000</td>
+      <td>GLGC, Kettunen</td>
+      <td>http://www.cardiogramplusc4d.org/data-downloads/</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CARDIoGRAMplusC4D + UK Biobank (CAD)</td>
+      <td>28714975 Nelson et al., 2017</td>
+      <td>Mostly European</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UK Biobank (MI)</td>
+      <td>Interim round two release Abbott et al., 2018</td>
+      <td>European</td>
+      <td>360,420</td>
+      <td></td>
+      <td>http://www.nealelab.is/uk-biobank/</td>
+    </tr>
+  </tbody>
+</table>
+
 Aside from the concentration and content of lipoprotein subfractions, the two lipidome GWAS also measured the traditional lipid traits (TG, LDL-C, HDL-C), the average diameter of the fractions (VLDL-D, LDL-D, HDL-D) and the concentration of apolipoprotein A1 (ApoA1) and apolipoprotein B (ApoB). A full list of the lipoprotein measurements investigated in this article can be found in Appendix 1.
 
-## Genetic correlation and phenotypic screening
+### Genetic correlation and phenotypic screening
 
 Genetic correlation is a measure of association between the genetic determinants of two phenotypes. It is conceptually different from epidemiological correlation that can be directly estimated from cross-sectional data. In this study, we applied the LD-score regression (Bulik-Sullivan et al., 2015) to the lipidome GWAS (Kettunen et al., 2016; Davis et al., 2017) to estimate the genetic correlations between the lipoprotein subfractions, particle sizes, and traditional risk factors. We then removed lipoprotein subfractions and particle sizes that are strongly correlated with the traditional risk factors, defined as an estimated genetic correlation > 0.8 with TG, LDL-C, HDL-C, ApoB, or ApoA1 in the GWAS published by Davis et al., 2017. Because these traits are largely co-determined with the traditional risk factors, they do not represent independent biological mechanisms and may lead to multicollinearity issues in multivariate MR analyses. Finally, we obtained an independent estimate of the genetic correlations between the selected traits by applying the LD score regression to the GWAS published by Kettunen et al., 2016. We used Bonferroni's procedure to correct for multiple testing (familywise error rate at 0.05).
 
-## Three-sample Mendelian randomization design
+### Three-sample Mendelian randomization design
 
-For MR, we employed a three-sample design (Zhao et al., 2019b) in which one GWAS was used to select independent genetic instruments that are associated with one or several lipoprotein measures. The other two GWAS were then used to obtain summary associations of the selected SNPs with the exposure and the outcome, as in a typical two-sample MR design (Pierce and Burgess, 2013; Hemani et al., 2016). More specifically, the selection GWAS was used to create a set of SNPs that are in linkage equilibrium with each other in a reference panel (distance >10 megabase pairs, r2<0.001). This was done by ordering the SNPs by the p-values of their association with the trait(s) under investigation and then selecting them greedily using the linkage-disequilibrium (LD) clumping function in the PLINK software package (Purcell et al., 2007). To avoid winner's curse, we require the other two GWAS to have no overlapping sample with the selection GWAS.
+For MR, we employed a three-sample design (Zhao et al., 2019b) in which one GWAS was used to select independent genetic instruments that are associated with one or several lipoprotein measures. The other two GWAS were then used to obtain summary associations of the selected SNPs with the exposure and the outcome, as in a typical two-sample MR design (Pierce and Burgess, 2013; Hemani et al., 2016). More specifically, the selection GWAS was used to create a set of SNPs that are in linkage equilibrium with each other in a reference panel (distance >10 megabase pairs, $r^{2}<0.001$). This was done by ordering the SNPs by the p-values of their association with the trait(s) under investigation and then selecting them greedily using the linkage-disequilibrium (LD) clumping function in the PLINK software package (Purcell et al., 2007). To avoid winner's curse, we require the other two GWAS to have no overlapping sample with the selection GWAS.
 
 As the GWAS published by Davis et al., 2017 has a smaller sample size, we used it to select the genetic instruments so the larger dataset can be used for statistical estimation. In univariable MR, associations of the selected SNPs with the exposure trait (a lipoprotein subfraction or a particle size trait) were obtained from the GWAS published by Kettunen et al., 2016 and the associations with MI were obtained using summary data from an interim release of UK BioBank (Abbott et al., 2018). To maximize the statistical power, we used the so-called ‘genome-wide MR’ design. Independent SNPs are selected by using LD clumping, but we do not truncate the list of SNPs by their p-values. More details about this design can be found in a previous methodological article (Zhao et al., 2019b).
 
-To control for potential pleiotropic effects via the traditional risk factors, we performed two multivariable MR analyses for each lipoprotein subfraction or particle size under investigation. The first multivariable MR analysis considers four exposures: TG, LDL-C, HDL-C, and the lipoprotein measurement under investigation. The second multivariable MR analysis replaces LDL-C and HDL-C with ApoB and ApoA1, in accordance with some recent studies (Richardson et al., 2020). SNPs were ranked by their minimum p-values with the four exposures and are selected as instruments only if they were associated with at least one of the four exposures (p-value ≤10-4). Both multivariable MR analyses used the Davis (Davis et al., 2017) and GERA (Hoffmann et al., 2018) datasets for instrument selection, the Kettunen (Kettunen et al., 2016) and GLGC (Willer et al., 2013) datasets for the associations of the instruments with the exposures, and the CARDIoGRAMplusC4D + UK Biobank (Nelson et al., 2017) dataset for the associations with CAD.
+To control for potential pleiotropic effects via the traditional risk factors, we performed two multivariable MR analyses for each lipoprotein subfraction or particle size under investigation. The first multivariable MR analysis considers four exposures: TG, LDL-C, HDL-C, and the lipoprotein measurement under investigation. The second multivariable MR analysis replaces LDL-C and HDL-C with ApoB and ApoA1, in accordance with some recent studies (Richardson et al., 2020). SNPs were ranked by their minimum p-values with the four exposures and are selected as instruments only if they were associated with at least one of the four exposures (p-value $\leq10^{-4}$). Both multivariable MR analyses used the Davis (Davis et al., 2017) and GERA (Hoffmann et al., 2018) datasets for instrument selection, the Kettunen (Kettunen et al., 2016) and GLGC (Willer et al., 2013) datasets for the associations of the instruments with the exposures, and the CARDIoGRAMplusC4D + UK Biobank (Nelson et al., 2017) dataset for the associations with CAD.
 
-## Statistical estimation
+### Statistical estimation
 
 For univariable MR, we used the robust adjusted profile score (RAPS) because it is more efficient and robust than many conventional methods (Zhao et al., 2020; Zhao et al., 2019b). RAPS can consistently estimate the causal effect even when some of the genetic variants violate instrumental variables assumptions. For multivariable MR, we used an extension to RAPS called GRAPPLE to obtain the causal effect estimates of multiple exposures (Wang et al., 2020). GRAPPLE also allows the exposure GWAS to have overlapping sample with the outcome GWAS, while the original RAPS does not. We assessed the strength of the instruments using the modified Cochran's Q statistic (Sanderson et al., 2019). Because many lipoprotein subfraction traits were analyzed simultaneously, we used the Benjamini-Hochberg procedure to correct for multiple testing (Benjamini and Hochberg, 1995) and the false discovery rate was set to be 0.05. More detail about the statistical methods can be found in Appendix 3.
 
-## Genetic markers for lipoprotein subfractions and CAD
+**Table 2.**
+ Results of some multivariable Mendelian randomization analyses.Each row in the table corresponds to a multivariable MR analysis with traditional lipid profile and the specified lipoprotein subfraction or particle size trait. Reported numbers are the point estimates and 95% confidence intervals of the exposure effect.
 
-To obtain genetic markers, we selected SNPs that are associated with the lipoprotein measurements identified in the MR (p-value ≤5×10-8) and CAD (p-value ≤0.05) but are not associated with LDL-C or ApoB (p-value ≥10-3). To maximize the power of this exploratory analysis, we meta-analyzed the results of the two lipidome GWAS (Kettunen et al., 2016; Davis et al., 2017) by inverse-variance weighting. For the associations with LDL-C and CAD, we used the GWAS summary data reported by the GLGC (Willer et al., 2013) and CARDIoGRAMplusC4D (Nelson et al., 2017) consortia. We used LD clumping to obtain independent markers (Purcell et al., 2007) and then validate the markers using tissue-specific gene expression data from the GTEx project.
 
-## Sensitivity analysis and replicability
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Effect of TG</th>
+      <th>Effect of LDL-C</th>
+      <th>Effect of HDL-C</th>
+      <th>Effect of subfraction/particle size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None</td>
+      <td>0.19 [0.09,0.29]</td>
+      <td>0.38 [0.33,0.44]</td>
+      <td>−0.053 [-0.13,0.03]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-HDL-P</td>
+      <td>0.37 [0.22,0.52]</td>
+      <td>0.39 [0.32,0.45]</td>
+      <td>0.30 [0.08,0.52]</td>
+      <td>−0.69 [-1.09,–0.3]</td>
+    </tr>
+    <tr>
+      <td>S-HDL-P</td>
+      <td>0.23 [0.12,0.33]</td>
+      <td>0.45 [0.38,0.52]</td>
+      <td>−0.11 [-0.2,–0.02]</td>
+      <td>−0.33 [-0.52,–0.15]</td>
+    </tr>
+    <tr>
+      <td>HDL-D</td>
+      <td>0.11 [0.00,0.22]</td>
+      <td>0.42 [0.36,0.49]</td>
+      <td>−0.44 [-0.69,–0.2]</td>
+      <td>0.33 [0.11,0.56]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Effect of TG</td>
+      <td>Effect of ApoB</td>
+      <td>Effect of ApoA1</td>
+      <td>Effect of Subfraction/Particle size</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>0.05 [-0.05,0.14]</td>
+      <td>0.49 [0.38,0.60]</td>
+      <td>−0.095 [-0.21,0.02]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-HDL-P</td>
+      <td>−0.00 [-0.18,0.17]</td>
+      <td>0.50 [0.31,0.69]</td>
+      <td>0.13 [-0.06,0.32]</td>
+      <td>−0.47 [-0.80,–0.15]</td>
+    </tr>
+    <tr>
+      <td>S-HDL-P</td>
+      <td>0.07 [-0.03,0.17]</td>
+      <td>0.53 [0.41,0.65]</td>
+      <td>−0.13 [-0.25,–0.02]</td>
+      <td>−0.24 [-0.40,–0.08]</td>
+    </tr>
+    <tr>
+      <td>HDL-D</td>
+      <td>0.06 [-0.04,0.15]</td>
+      <td>0.61 [0.47,0.76]</td>
+      <td>−0.46 [-0.73,–0.19]</td>
+      <td>0.30 [0.08,0.52]</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic markers for lipoprotein subfractions and CAD
+
+To obtain genetic markers, we selected SNPs that are associated with the lipoprotein measurements identified in the MR (p-value $\leq5\times10^{-8}$) and CAD (p-value $\leq0.05$) but are not associated with LDL-C or ApoB (p-value $\geq10^{-3}$). To maximize the power of this exploratory analysis, we meta-analyzed the results of the two lipidome GWAS (Kettunen et al., 2016; Davis et al., 2017) by inverse-variance weighting. For the associations with LDL-C and CAD, we used the GWAS summary data reported by the GLGC (Willer et al., 2013) and CARDIoGRAMplusC4D (Nelson et al., 2017) consortia. We used LD clumping to obtain independent markers (Purcell et al., 2007) and then validate the markers using tissue-specific gene expression data from the GTEx project.
+
+### Sensitivity analysis and replicability
 
 Because we had multiple GWAS summary datasets for the lipoprotein subfractions and CAD/MI (Table 1), we swapped the roles of the GWAS datasets in the three-sample MR design whenever permitted by the statistical methods to obtain multiple statistical estimates. These estimates are not completely independent of the primary results, but they can nonetheless be used to assess replicability. As a sensitivity analysis, We further analyzed univariable MR using inverse-variance weighting (IVW) (Burgess et al., 2013) and weighted median (Bowden et al., 2016) and compared with the primary results obtained by RAPS. We also assessed the assumptions made by RAPS using some diagnostic plots suggested in previous methodological articles (Zhao et al., 2019b).
 
 ## Results
 
-## Genetic correlations and phenotypic screening
+### Genetic correlations and phenotypic screening
 
 We obtained the genetic correlations of the lipoprotein subfractions and particle sizes with the traditional lipid risk factors: TG, LDL-C, HDL-C, ApoB, and ApoA1 (Table 1). We found that almost all VLDL subfractions traits (besides those related to very small VLDL subfraction) and the mean VLDL particle diameter have an estimated genetic correlation with TG very close to 1. Most traits related to the large and very large HDL subfractions also have a high genetic correlation with HDL-C and ApoA1.
 
@@ -76,7 +240,7 @@ After removing traits that are strongly correlated with the traditional risk fac
 
 **Figure 1.:** White asterisk indicates the correlation is statistically significant after Bonferroni correction for multiple comparisons at level 0.05.
 
-## Mendelian randomization
+### Mendelian randomization
 
 Figure 2 shows the estimated causal effect of the selected lipoprotein measurements on MI or CAD that are statistically significant (false discovery rate = 0.05). The unfiltered results can be found in Appendix 3, which also contains results of the sensitivity and replicability analyses.
 
@@ -88,13 +252,13 @@ The concentration and content of medium HDL particles showed protective effects 
 
 Table 2 reports the estimated effects of M-HDL-P, S-HDL-P, HDL-D, and traditional lipid traits (TG, LDL-C, HDL-C, ApoB, ApoA1) in the multivariable MR analyses. To better understand the role of HDL subfractions and particle sizes, we also included in the table the results of the multivariate MR analyses for the traditional lipid risk factors only. Those baseline analyses suggested that HDL-C/ApoA1 had a weak, non-significant protective effect on CAD, which is consistent with prior studies (Holmes et al., 2015; Wang et al., 2020). Adding S-HDL-P to the MR analysis did not substantially alter the estimated effects of the traditional lipid traits. However, when M-HDL-P or HDL-D was included in the model, the estimated effects of M-HDL-P and HDL-D changed substantially. In particular, when M-HDL-P was included in the multivariable MR analyses, HDL-C/ApoA1 showed a harmful effect on CAD. When HDL-D was included, HDL-C/ApoA1 showed a protective effect.
 
-## Genetic markers associated with HDL subfractions and CAD
+### Genetic markers associated with HDL subfractions and CAD
 
 We identified four genetic variants that are associated with S-HDL-P, M-HDL-P, or HDL-D, not associated with LDL-C or ApoB, and associated with CAD: rs838880 (SCARB1), rs737337 (DOCK6), rs2943641 (IRS1), and rs6065904 (PLTP) (Figure 3). These SNP-cis gene pairs are also supported by examining expression quantitative trait loci (eQTL) in the tissue-specific GTEx data (Appendix 4). The first three variants were not associated with S-HDL-P. However, they had uniformly positive associations with M-HDL-P, L-HDL-P, XL-HDL-P, HDL-D, ApoA1, and HDL-C, and a negative association with CAD. The last variant rs6065904 had positive associations with S-HDL-P and M-HDL-P, negative associations with L-HDL-P, XL-HDL-P, HDL-D, negative but smaller associations with ApoA1 and HDL-C, and a negative association with CAD.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58361/elife-58361-fig3-v2.jpg)
 
-## Sensitivity and replicability analysis
+### Sensitivity and replicability analysis
 
 We also investigated the effects of lipoprotein subfractions and particle sizes on MI/CAD using multiple GWAS datasets, MR designs and statistical methods. The results are provided in Appendix 3 and are generally in agreement with the primary results reported above. The diagnostic plots for S-HDL-P and M-HDL-P did not suggest evidence of violations of the instrument strength independent of direct effect (InSIDE) assumption (Bowden et al., 2015) made by RAPS and GRAPPLE (Appendix 4).
 

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Poor diet and lifestyle exposures are implicated in substantial global increases in non-communicable disease burden in low-income, remote, and Indigenous communities. This observational study investigated the contribution of the fecal microbiome to influence host physiology in two Indigenous communities in the Torres Strait Islands: Mer, a remote island where a traditional diet predominates, and Waiben a more accessible island with greater access to takeaway food and alcohol. Counterintuitively, disease markers were more pronounced in Mer residents. However, island-specific differences in disease risk were explained, in part, by microbiome traits. The absence of Alistipes onderdonkii , for example, significantly (p=0.014) moderated island-specific patterns of systolic blood pressure in multivariate-adjusted models. We also report mediatory relationships between traits of the fecal metagenome, disease markers, and risk exposures. Understanding how intestinal microbiome traits influence response to disease risk exposures is critical for the development of strategies that mitigate the growing burden of cardiometabolic disease in these communities.
+Poor diet and lifestyle exposures are implicated in substantial global increases in non-communicable disease burden in low-income, remote, and Indigenous communities. This observational study investigated the contribution of the fecal microbiome to influence host physiology in two Indigenous communities in the Torres Strait Islands: Mer, a remote island where a traditional diet predominates, and Waiben a more accessible island with greater access to takeaway food and alcohol. Counterintuitively, disease markers were more pronounced in Mer residents. However, island-specific differences in disease risk were explained, in part, by microbiome traits. The absence of Alistipes onderdonkii, for example, significantly (p=0.014) moderated island-specific patterns of systolic blood pressure in multivariate-adjusted models. We also report mediatory relationships between traits of the fecal metagenome, disease markers, and risk exposures. Understanding how intestinal microbiome traits influence response to disease risk exposures is critical for the development of strategies that mitigate the growing burden of cardiometabolic disease in these communities.
 
 ## Introduction
 
@@ -40,35 +40,333 @@ To investigate the role of the intestinal microbiome in defining the health impa
 
 ## Results
 
-## Study population characteristics
+### Study population characteristics
 
 According to Australian national averages (Australian Bureau of Statistics, 2019; Shannon, 2002), 9.1% of adult Australians consumed at least one sugar-sweetened beverage each day and 51% consumed at least two servings of fruit. Furthermore, 67% of the Australian adult population are classified as being overweight or obese, and 4.1% have type 2 diabetes. In contrast to these national patterns, 53% of the study cohort consumed at least one sugar-sweetened beverage each day. While 70% consumed at least two servings of fruit each day, 76% of the study population were overweight or obese and 39% had type 2 diabetes.
 
-## Island-specific differences in exposure to chronic disease risk factors
+### Island-specific differences in exposure to chronic disease risk factors
 
 Study participants were drawn equally from Waiben, the main commercial and administrative center of the Torres Strait Islands (n = 50), and Mer, a smaller, more remote, island (n = 50). There were no island differences in participant gender (males: n = 27 in Waiben, n = 24 in Mer, p=0.548) or in the prevalence of current smokers (smokers: n = 17 in Waiben, n = 16 in Mer, p=0.832). Residents of Mer largely consumed a diet that is traditional in the Torres Strait Islands (Niccoli and Partridge, 2012), including frequent consumption of fresh seafood. In comparison, Waiben residents had a more ‘westernized’ diet, characterized by significantly higher consumption of takeaway food and alcohol, and lower consumption of seafood (Table 1). Although current dogma suggests such dietary habits would be associated with increased chronic disease risk, increased levels of chronic disease risk markers were not observed for Waiben residents. Specifically, Mer residents had significantly (p<0.05) greater systolic blood pressure, mean arterial pressure (MAP), C-reactive protein, IL-12, IL-18, and IFNγ, compared to Waiben residents. While not achieving statistical significance (p=0.100), the prevalence of T2D in Mer residents was also greater than in Waiben residents (48% versus 30%, respectively; Table 1).
 
+**Table 1.**
+ Characteristics of Waiben and Mer residents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Waiben (n = 50)</th>
+      <th>Mer (n = 50)</th>
+      <th>Unadjusted P-value *</th>
+      <th colspan="2">Age-adjusted P-value †</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age [years]</td>
+      <td>40 (31, 54)</td>
+      <td>58 (36, 65)</td>
+      <td>0.003</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Exposure chronic disease risk factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sugar-sweetened beverage consumption [serves/day]</td>
+      <td>1 (0, 1)</td>
+      <td>1 (0, 1)</td>
+      <td>0.576</td>
+      <td colspan="2">0.562</td>
+    </tr>
+    <tr>
+      <td>Fruit consumption [serves/day]</td>
+      <td>2 (1, 3)</td>
+      <td>2 (1, 2)</td>
+      <td>0.680</td>
+      <td colspan="2">0.682</td>
+    </tr>
+    <tr>
+      <td>Vegetable consumption [serves/day]</td>
+      <td>3.5 (2.0, 5.0)</td>
+      <td>3.5 (2.0, 4.0)</td>
+      <td>0.609</td>
+      <td colspan="2">0.606</td>
+    </tr>
+    <tr>
+      <td>Takeaway consumption [serves/week]</td>
+      <td>1 (0, 2)</td>
+      <td>0 (0, 1)</td>
+      <td>0.011</td>
+      <td colspan="2">0.009</td>
+    </tr>
+    <tr>
+      <td>Seafood consumption [serves/week]</td>
+      <td>2 (1, 3)</td>
+      <td>2 (1, 5)</td>
+      <td>0.020</td>
+      <td colspan="2">0.021</td>
+    </tr>
+    <tr>
+      <td>Alcoholic beverage consumption [serves/day]</td>
+      <td>0.33 (0.00, 0.99)</td>
+      <td>0.20 (0.00, 1.88)</td>
+      <td>0.597</td>
+      <td colspan="2">0.592</td>
+    </tr>
+    <tr>
+      <td>Smoking [cigarettes/day]</td>
+      <td>0.00 (0.00, 5.25)</td>
+      <td>0.00 (0.00, 2.25)</td>
+      <td>0.804</td>
+      <td colspan="2">0.800</td>
+    </tr>
+    <tr>
+      <td>Physical activity [min/week]</td>
+      <td>180 (90, 236)</td>
+      <td>210 (150, 360)</td>
+      <td>0.925</td>
+      <td colspan="2">0.925</td>
+    </tr>
+    <tr>
+      <td>Biological chronic disease risk factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Glucose [mmol/L] ‡</td>
+      <td>5.2 (4.7, 5.7)</td>
+      <td>5.6 (4.8, 6.5)</td>
+      <td>0.056</td>
+      <td colspan="2">0.050</td>
+    </tr>
+    <tr>
+      <td>HbA1c [mmol/mol] ‡</td>
+      <td>38 (34, 42)</td>
+      <td>43 (36.5, 45)</td>
+      <td>0.127</td>
+      <td colspan="2">0.109</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure [mmHg]</td>
+      <td>121 (112.5, 129.5)</td>
+      <td>129 (115.3, 139.5)</td>
+      <td>0.028</td>
+      <td colspan="2">0.025</td>
+    </tr>
+    <tr>
+      <td>Mean arterial pressure [mmHg]</td>
+      <td>87.8 (72.0–113.7)</td>
+      <td>95.8 (61.0–126.3)</td>
+      <td>0.034</td>
+      <td colspan="2">0.033</td>
+    </tr>
+    <tr>
+      <td>Body mass index [kg/m2]</td>
+      <td>31.1 (25.8, 37.9)</td>
+      <td>32.1 (25.5, 36.5)</td>
+      <td>0.893</td>
+      <td colspan="2">0.893</td>
+    </tr>
+    <tr>
+      <td>Waist circumference [cm]</td>
+      <td>105 (92, 116)</td>
+      <td>116 (101, 125)</td>
+      <td>0.019</td>
+      <td colspan="2">0.016</td>
+    </tr>
+    <tr>
+      <td>Waist to hip ratio</td>
+      <td>0.62 (0.53, 0.69)</td>
+      <td>0.68 (0.61, 0.75)</td>
+      <td>0.035</td>
+      <td colspan="2">0.027</td>
+    </tr>
+    <tr>
+      <td>Inflammatory biomarkers ‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Interferon γ [pg/mL]</td>
+      <td>0.69 (0.61, 0.83)</td>
+      <td>0.96 (0.67, 1.18)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>C-Reactive protein [mg/L]</td>
+      <td>0.36 (0.23, 0.51)</td>
+      <td>1.36 (0.63, 1.76)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Interleukin-1β [pg/mL]</td>
+      <td>0.39 (0.19, 0.61)</td>
+      <td>0.37 (0.23, 0.5)</td>
+      <td>0.534</td>
+      <td colspan="2">0.536</td>
+    </tr>
+    <tr>
+      <td>Interleukin-12p40 [pg/mL]</td>
+      <td>1.98 (1.26, 3.47)</td>
+      <td>6.32 (3.31, 11.37)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Interleukin-12p70 [pg/mL]</td>
+      <td>0.46 (0.41, 0.51)</td>
+      <td>0.82 (0.62, 1.07)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Interleukin-13 [pg/mL]</td>
+      <td>1.72 (1.48, 1.94)</td>
+      <td>1.82 (1.82, 2.07)</td>
+      <td>0.008</td>
+      <td colspan="2">0.008</td>
+    </tr>
+    <tr>
+      <td>Interleukin-15 [pg/mL]</td>
+      <td>7.37 (4.36, 10.7)</td>
+      <td>8.76 (6.89, 12.23)</td>
+      <td>0.281</td>
+      <td colspan="2">0.272</td>
+    </tr>
+    <tr>
+      <td>Interleukin-18 [pg/mL]</td>
+      <td>11.34 (4.57, 18.17)</td>
+      <td>21.38 (13.26, 37.51)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Interleukin-4 [pg/mL]</td>
+      <td>4.97 (4.61, 6.09)</td>
+      <td>6.80 (5.95, 9.23)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MCP-1/CCL2 [pg/mL]</td>
+      <td>52.77 (32.89, 88.41)</td>
+      <td>111.60 (67.65, 149.9)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Tumor necrosis factor α [pg/mL]</td>
+      <td>0.17 (0.11, 0.30)</td>
+      <td>0.47 (0.40, 0.68)</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Species-alpha diversity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Count [Chao1 species richness]</td>
+      <td>68.5 (64.0, 72.3)</td>
+      <td>68.0 (57.8, 73.3)</td>
+      <td>0.805</td>
+      <td colspan="2">0.805</td>
+    </tr>
+    <tr>
+      <td>Distribution [Shannon evenness index]</td>
+      <td>0.68 (0.61, 0.71)</td>
+      <td>0.71 (0.66, 0.75)</td>
+      <td>0.027</td>
+      <td colspan="2">0.026</td>
+    </tr>
+    <tr>
+      <td>Variety [Shannon diversity index]</td>
+      <td>2.83 (2.50, 2.98)</td>
+      <td>2.94 (2.73, 3.20)</td>
+      <td>0.061</td>
+      <td colspan="2">0.060</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results are median (Q1, Q3). * ANOVA between Mer and Waiben. † ANCOVA between Mer and Waiben adjusted for age. ‡ analysis performed on log-transformed data. Abbreviations: MCP: Monocyte Chemoattractant Protein; MIP: Macrophage Inflammatory Protein._
+
 The explanation for such a proatherogenic biomarker profile in Mer residents was not immediately apparent. Mer residents were significantly older than Waiben residents (mean age [years]: 41.5 versus 51.7; p=0.003), a recognized risk factor for chronic disease (Arumugam et al., 2011). However, significant differences in measures of blood pressure and inflammatory markers remained even after adjusting for age (Table 1).
 
-## Fecal microbiome characteristics
+### Fecal microbiome characteristics
 
 Exploratory factor analysis of species relative abundance revealed six major factors (Supplementary file 1a). However, differences in microbiota traits were evident between the two island communities. Mer residents displayed higher species evenness (Table 1), even after adjustment for age (p=0.026). While the fecal microbiota composition for the study population as a whole was broadly in keeping with that described for adult populations more generally (Human Microbiome Project Consortium, 2012; Gassasse et al., 2017), the communities differed in their species-level microbiota composition (P[perm]=0.001, pseudo-F = 2.125, 9882 permutations); Figure 1a, Figure 1—figure supplement 1. Linear discriminant analysis effect size (LEfSe) identified differentially enriched species in each subpopulation (Figure 1b), which were phylogenetically diverse and represented five distinct bacterial phyla (Figure 1c). For example, the Proteobacteria and Euryarchaeota phyla were significantly higher in Mer compared to Waiben in both unadjusted and age-adjusted models (Supplementary file 1b). Klebsiella pneumoniae (NCBI:txid573; Proteobacteria) and Escherichia coli (NCBI:txid562; Proteobacteria), common causes of enteric and disseminated infection, and the important methanogen, Methanobrevibacter smithii (NCBI:txid2173; Euryachaeota), were also significantly enriched in Mer.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig1-v1.jpg)
+
+**Figure 1.:** (a) Non-metric Multidimensional Scaling of the Bray Curtis similarity resemblance matrix, with ellipses at 95% confidence interval. n = 100 (b) Fold differences in LDA mean proportions of differentially abundant species in Waiben and Mer. Bars were sorted based on the sequential ranking of significance and separated by the two populations. Only taxa significant at a logarithmic LDA score ≥3 and a factorial Kruskal-Wallis test Alpha (α)≤0.05 are shown. n = 100 (c) A phylogenetic tree based on the NCBI taxonomy of differentially abundant species identified using LEfSe. All species designated ‘unclassified’ were not used in generating the tree. Branches/edges are colored according to phylum rank classification and terminal nodes/species labels are colored based on study site overrepresentation. n = 100.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The size of the nodes represents the logarithmically scaled relative abundances of taxa. Only clades consisting of at least five markers, with nodes constituting at least 1% relative abundance, are highlighted. Annotations begin from the phylum level.
+
 Characteristics of fecal microbiome metabolic capacity were then assessed. The prevalence of 18 microbial pathways, which accounted for 5% of the total community pathways identified by HUManN2, differed significantly between Mer and Waiben populations (Figure 2a). Three pathways that were more highly represented in the Mer population related to energy-generating glycolysis pathways, including homolactic fermentation (ANAEROFRUCAT-PWY: homolactic fermentation, p=0.005), glycolysis I (from glucose-6-phosphate, p=0.004), glycolysis II (from fructose-6-phosphate, PWY-5484, p=0.004), and glycolysis VI pathway (PWY66-400, p=0.004). Pathways that were more highly represented in the Waiben population included those relating to amino acid biosynthesis, including L-valine (VALSYN-PWY, p=0.006), L-isoleucine biosynthesis I and IV (ILEUSYN-PWY, p=0.006; PWY-5104, p=0.004), L-lysine biosynthesis VI (PWY-5097, p=0.009), and L-lysine, L-threonine and L-methionine biosynthesis II super pathway (PWY-724, p=0.004). In addition, pathways relating to aromatic acid biosynthesis (COMPLETE-ARO-PWY, p=0.004) and the precursor, chorismate (ARO-PWY, p=0.004 and PWY-6163, p=0.008) were also more prevalent in the Waiben population. Stratification of these pathways based on microbial taxa indicated that island-specific differences in glycolytic pathways were primarily accounted for by differences in the abundance of E. coli, while those relating to the biosynthesis of aromatic acid compounds were largely explained by the distribution of members of the Roseburia genus, including Roseburia intestinalis and Roseburia hominis (Figure 2b). The contribution of these bacterial taxa to the pathways identified was in keeping with the trends observed between the two island populations when metabolic capacity was assessed at a microbiota-wide level (FDR p<0.05; Figure 2—figure supplement 1).
 
-## Microbiome as a mediator of exposure-inflammation relationships
+![Figure 2.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig2-v1.jpg)
+
+**Figure 2.:** (a) Pathway abundances at the whole community level were statistically compared between the groups, and the 95% confidence interval of the effect-size for each pathway was determined using a non-parametric bootstrap method. (b) The heatmap represents community pathway abundances stratified into significant contributions from bacterial species to between-group differences. The color scale depicts the magnitude of the difference of stratified pathway abundances between the groups. All statistical comparisons were performed using the Mann-Whitney test and corrected for multiple testing using the false discovery rate method. Statistical significance for all comparisons was determined at p<0.05. Heatmap boxes with an ‘-’ indicated non-significant stratified pathway abundance differences between the groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bacterial species that significantly contributed to the stratified pathway abundances between the groups are depicted (Mann-Whitney test with false discovery rate correction for multiple testing, p<0.05). The color scale represents the magnitude of contribution of each stratified pathway abundance to whole-community pathway abundance. Heatmap boxes with an ‘-’ indicated non-significant stratified pathway abundance differences between the groups.
+
+### Microbiome as a mediator of exposure-inflammation relationships
 
 From the data presented above, it is clear that our understanding of the factors that shape the microbiome composition and inflammatory profile of this population of Australian Torres Strait Islanders is incomplete. We, therefore, explored whether differences in the characteristics of the intestinal microbiome substantially influenced the relationship between exposure to dietary, lifestyle, and environmental factors (age, gender, island, smoking status and intakes of fruits, vegetables, takeaways, sugar-sweetened beverages, seafood, and alcohol) on circulating concentrations of inflammatory biomarkers. When comparing the various theoretical frameworks, structural equation modeling suggested that microbiome factors may potentially mediate the relation between exposures and pathophysiology, when considering inflammatory profile (Supplementary file 1c, Figure 3, Figure 3—figure supplement 1). Most notable was the positive association sugar-sweetened beverage consumption had with the Biomarker Factor 3 (the latent construct representing IL13, IL15, IFN gamma, and IL1β), as well as with Species Factor 1, which consisted of Haemophilus parainfluenzae, Bacteroides ovatus and fragilis, members of the Veillonella genus, Eubacterium halli, Anaerostipes hadrus, Roseburia intestinalis, Ruminococcus obeum, Ruminococcus gnavus, Lachnospiraceae bacterium 5_1_63FAA and Lachnospiraceae bacterium 8_1_57FAA (Figure 3). Interestingly, a positive association was also observed between Biomarker Factor 3 and Species Factor 1. These associations were of particular interest, in part, because, when compared to the Australian national average, these communities consumed considerably more sugar-sweetened beverages. Of particular interest was the influence of Lachnospiraceae bacterium 8_1_57FAA (NCBI:txid665951) as in bootstrapped analyses of both islands combined, this was found to mediate the overall association between increased sugar-sweetened beverage consumption and increased serum concentration of IL-15 (Figure 4a, Figure 4—figure supplement 1). In fact, mediation by Lachnospiraceae bacterium 8_1_57FAA was found to significantly (p=0.044) account for (median [95% confidence intervals]) 13.5 (0.4, 44.2) percent of the total effect of sugar-sweetened beverages on IL-15 concentrations in unadjusted models, and account for 16.5 (0.6, 60.0) percent of the age-adjusted total effect (p=0.040). The mediation of the relationship between sugar-sweetened beverages and IL-15 remained significant, even after including island in the age-adjusted model, with Lachnospiraceae bacterium 8_1_57FAA significantly accounting for 21.2 (1.5, 78.9) percent of the total observed association (p=0.032). Despite the total association being ameliorated, the moderation by Lachnospiraceae bacterium 8_1_57FAA remained significant even in the multivariate-adjusted model (p=0.036).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig3-v1.jpg)
+
+**Figure 3.:** A modified path diagram of the final SEM supporting the mediatory effect of the gut microbiota on inflammation. The heatmaps represent direct associations of diet, behavior, and demographics with the gut microbiota and inflammatory biomarkers. Only significant paths of the effect of the gut microbiota on inflammation are shown. Standardized β coefficients are reported. Species Factors 1–6 denote latent variables of the community gut microbiota modeled as exploratory factor analysis (EFA) regression scores of the species relative abundance; Biomarker Factors 1–3 denote latent variables representing community inflammatory biomarkers as grouped using EFA. *p 0.1–0.05, **p 0.05–0.001, ***p<0.001. Edge colors : Green: positive association; red: negative association. Black arrows indicate the direction of association of diet, demographics, and behavioral exposures with both inflammatory biomarkers and the gut microbiota.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Final framework (framework 1): The gut microbiome mediates, in part, the relationship between exposure risk factors and host inflammation. (b) Framework 2: The gut microbiome and exposure risk factors both, independently, impact host inflammation. (c) Framework 3: Exposure risk factors are associated with gut microbiome and inflammatory profile, but there is no relationship between microbiome and inflammation. (d) Framework 4: Exposure risk factors are associated with the inflammatory profile, and the inflammatory profile predicts the gut microbiome composition.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig4-v1.jpg)
+
+**Figure 4.:** (a) Lachnospiraceae bacterium 8_1_57FAA mediates the unadjusted relation of sugar-sweetened beverage intake with the serum concentration of Interleukin 15. The total effect (95% confidence interval) for the model was 0.054 (0.023, 0.090), P-value: <0.001. n = 100 (b) Lachnospiraceae bacterium 8_1_57FAA mediates the unadjusted relation of sugar-sweetened beverage intake with mean arterial pressure. The total effect (95% confidence interval) for the model was −0.006 (–1.530, 1.420), P-value: 0.950. n = 100 a ACME (average causal mediation effects); b ADE (average direct effects).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Age-adjusted model. The total effect (95% confidence interval) for the model was 0.049 (0.015, 0.086) P-value: 0.004. (b) Age- and island-adjusted model. The total effect (95% confidence interval) for the model was 0.046 (0.008, 0.085) P-value: 0.016. (c) Multivariate-adjusted model. Includes adjustment for age, island, body mass index, gender, cigarette use, and intakes of fruits, vegetables, takeaways, seafood, and alcohol. The total effect (95% confidence interval) for the model was 0.045 (–0.0003, 0.088) P-value: 0.084.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Age-adjusted model. The total effect (95% confidence interval) for the model was 0.842 (−0.822, 2.520) P-value: 0.300. (b) Age-and island-adjusted model. The total effect (95% confidence interval) for the model was 0.948 (−0.694, 2.670) P-value: 0.246. (c) Multivariate-adjusted model. Includes adjustment for age, island, body mass index, gender, cigarette use, and intakes of fruits, vegetables, takeaways, seafood, and alcohol. The total effect (95% confidence interval) for the model was 0.295 (−1.730, 2.170) P-value: 0.808.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Lachnospiraceae family-restricted blast search (blast parameters e-value = 1 e-10, Max targets = 250) using Lachnospiraceae bacterium 8_1_57FAA 16 rRNA as a query against the NCBI non-redundant genes database was performed. The resulting top 250 best blast hits were used to construct a Grishin distance tree using the fast-minimum evolution model in NCBI BLAST. Terminal node labels are Taxonomic Name (Sequence ID).
+
 We then sought to identify the biological significance of this relationship by looking at the role of Lachnospiraceae bacterium 8_1_57FAA in mediating the observed relationship between sugar-sweetened beverage consumption and blood pressure (Supplementary file 1d). Mean arterial pressure was greater in Mer than in Waiben in both unadjusted and age-adjusted models. Lachnospiraceae bacterium 8_1_57FAA mediated a positive association between sugar-sweetened beverage intake and MAP in unadjusted (Figure 4b) and age-adjusted models (Figure 4—figure supplement 2). Even after controlling for factors that could influence this relationship, Lachnospiraceae bacterium 8_1_57FAA continued to mediate a positive association between sugar-sweetened beverage intake and MAP for the combined island populations. In contrast to the significant mediatory effect of Lachnospiraceae bacterium 8_1_57FAA, no significant direct relationship between sugar-sweetened beverage intake and diastolic blood pressure was observed, indicating the considerable role played by the gut bacteria in the association of diet and pathophysiology in this context. The position of Lachnospiraceae bacterium 8_1_57FAA withing the Lachnospiraceae family is indicated in Figure 4—figure supplement 3.
 
-## Microbiome as a moderator of exposure-pathophysiology relationships
+### Microbiome as a moderator of exposure-pathophysiology relationships
 
 Mediation is not the only way in which the microbiome can influence how dietary, lifestyle, and environmental factors influence pathophysiology. The microbiome can also interact with these relationships in such a way that the association of dietary, lifestyle, and environmental factors with pathophysiology depends on the presence/absence of a particular microorganism. Given that systolic blood pressure is an important chronic disease risk factor, and was higher in Mer than in Waiben systolic blood pressure was selected for an analysis of interaction. A microbiome-wide interaction study was performed, and, after correcting for multiple comparisons, Alistipes onderdonkii (NCBI:txid328813) was identified as a microorganism that significantly interacted with the island-systolic blood pressure relationship (Figure 5). The pattern of interaction was such that a failure to detect Alistipes onderdonkii in the gut microbiome was associated with increased systolic blood pressure, but only in Mer, and when these microorganisms were present, systolic blood pressure in Mer was identical to that of Waiben residents. These effect modifications remained even after adjusting for various diet and lifestyle exposure variables, suggesting that higher systolic blood pressure in Mer residents, despite Mer residents having lower traditional exposure risk factors, may be explained by an interaction between geographic location and the gut microbiome.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58407/elife-58407-fig5-v1.jpg)
 
-**Figure 5.:** Alistipes onderdonkii and island systolic blood pressure.(a) Unadjusted model, (b) age-adjusted model, and (c) multivariate-adjusted model which includes the adjustment for age, body mass index, gender, smoking status, and intakes of fruits, vegetables, takeaways, sugar-sweetened beverages, seafood, and alcohol. Only significant P values (p<0.05) are shown n = 100.
+**Figure 5.:** (a) Unadjusted model, (b) age-adjusted model, and (c) multivariate-adjusted model which includes the adjustment for age, body mass index, gender, smoking status, and intakes of fruits, vegetables, takeaways, sugar-sweetened beverages, seafood, and alcohol. Only significant P values (p<0.05) are shown n = 100.
 
 ## Discussion
 
@@ -92,43 +390,47 @@ Our findings highlight the potential contribution of the intestinal microbiome t
 
 ## Materials and methods
 
-## Participants and setting
+### Participants and setting
 
 This observational study recruited participants from the Well Persons Health Check (WPHC). In 1997, the Australian government started a broad community health promotion and screening programme called the WPHC (Berger et al., 2020) conducted by the Torres and Cape Hospital and Health Service (TCHHS). Through WPHC several Indigenous (Aboriginal and/or Torres Strait Islander) communities in northern Queensland were screened annually for sexually transmitted infections and chronic cardiovascular as well as chronic metabolic conditions. In 2016, TCHHS collaborated with James Cook University (Zenadth Kes Health Partnership; Weiland, 1978) to conduct these surveys in two Australian island communities, Waiben and Mer. These islands are located in the Torres Strait Islands (TSI) archipelago, which lies in the waters separating the far northern continental Australia’s Cape York Peninsula (northern-most tip of Queensland) and the Western Province of Papua New Guinea, off the continent of Australia. Mer (Murray Island) is a 4.3 km2 remote island located on the eastern periphery of the Torres Strait region, 210 km northeast of Waiben and 340 km west of Port Moresby, with a population of 450 in 2016. The island is less connected with no known fast-food outlet. Waiben (Thursday Island) is a 3.5 km2 landmass located about 39 km north of Cape York Peninsula with a population of 2938 in 2016. It is the administrative and commercial center of the Torres Strait Island Region.
 
 In addition to the health check that was a standard component of the WPHC, participants consented to have additional health data collected for research purposes. Verbal consent was used whenever a written one could not be obtained. In addition to individual consent, parent/legal guardian consent was obtained for all participants younger than 18 years. The study incorporated all WPHC participants who identified as Aboriginal and/or Torres Strait Islander and attended the screening in October, November, and December 2016. There were 214 individuals aged 15 years and older who participated in the October, November, and December 2016 WPHC and identified as Aboriginal and/or Torres Strait Islander. Participants were excluded due to insufficient survey information (n = 2) and or not providing consent to participate in the research component of the health check (n = 1). Only participants who provided stool samples for metagenomic sequencing (total n = 100; 50 participants from each site) were then included in the current analysis. The study was granted ethical approval by the Far North Queensland Human Research Ethics Committee (HREC/16/QCH/70–1059). In addition, written support from the local Community Council, Primary Health Care Service, and TCHHS was also provided (Weiland, 1978).
 
-## Participant demographic, dietary, and behavioral factors
+### Participant demographic, dietary, and behavioral factors
 
 We collected the island of residence, age, gender, physical activity, and daily alcohol consumption as well as smoking status. Dietary intake of seafood, takeaway foods, vegetables, fruits, and sugar-sweetened beverages was determined using a culturally-appropriate food frequency questionnaire that assessed food and beverage consumption through the use of non-leading questions (Weiland, 1978).
 
-Age, gender, height, weight, ethnicity, systolic blood pressure (SBP), diastolic blood pressure (DBP), known diabetes status, and known diabetes therapy were documented from WPHC clinical records. The mean arterial pressure (MAP) was calculated from brachial pressure values as follows:MAP=SBP+(2×DBP)3
+Age, gender, height, weight, ethnicity, systolic blood pressure (SBP), diastolic blood pressure (DBP), known diabetes status, and known diabetes therapy were documented from WPHC clinical records. The mean arterial pressure (MAP) was calculated from brachial pressure values as follows:
+
+$$
+MAP=\frac{SBP+(2\timesDBP)}{3}
+$$
 
 Body mass index (BMI; kg/m2) was computed from weight and height records. Hypertension was defined as SBP >140 and/or DBP > 90. Tobacco smoking and alcohol consumption were assessed using a standarized questionnaire.
 
-## Clinical sample collection
+### Clinical sample collection
 
 A summary of key resources utilized, including sample collection kits, DNA isolation and library prep kits, DNA sequencing platform, and software is provided in Supplementary file 1e Each participant provided a sample of stool, blood, and urine. The stool was collected by participants using the OMNIgene GUT collection kit (DNA Genotek, Ontario, Canada), according to manufacturer’s instructions. Briefly, the stool was deposited in a sterile container, transferred into the OMNIgene tube using the provided spatula, mixed with the stabilizing liquid, and stored at room temperature until collection. Blood and urine were collected by TCHHS as described previously (Zhao et al., 2008).
 
-## Measurements of inflammatory and cardiometabolic markers
+### Measurements of inflammatory and cardiometabolic markers
 
 Concentrations of various biomarkers in blood and/or urine were measured using chemistry multiplex immunoassays and enzyme-linked immunosorbent assays (ELISA; Bolger et al., 2014) as follows: Interleukins (IL) IL-1β, IL-2, IL-4, IL-5, IL-6, IL-10, IL-12p40, IL-12p70, IL-13, IL-15, IL-17A, IL-18, and IL-33; type II interferon (IFNγ), monocyte chemoattractant protein 1 (MCP1/CCL2), macrophage inflammatory protein (MIP-1α/CCL3), and tumor necrosis factor alpha (TNFα) were measured using Luminex High Sensitivity (8-plex and 9-plex) Human ProcartaPlex Panels. Serum C-reactive protein (CRP) was measured using the CRP Human ProcartaPlex Simplex Kit. Serum lipopolysaccharide-binding protein (LBP) was also measured using Human LBP ELISA Kit. Random blood glucose (RBG) and glycated hemoglobin or hemoglobin A1c (HbA1c) were measured using blood glucose meter and Haemoglobin A1c (HbA1c) (Human) ELISA Kit, respectively. All commercial assays were performed according to manufacturers’ instructions.
 
-## DNA isolation and metagenomic sequencing
+### DNA isolation and metagenomic sequencing
 
 Microbial DNA was isolated from stool samples using DNeasy Powerlyzer PowerSoil Kit (Qiagen, Hilden, Germany). DNA yield was determined in Qubit Fluorometric Quantification using Quant-iT High-Sensitivity dsDNA Assay Kit. Libraries for shotgun metagenomic sequencing were fragmented using Nextera XT Library Preparation Kit v2 (Illumina Inc, San Diego, CA) and indexed using the Illumina Nextera XT Index Kit v2 according to manufacturer’s instructions. Amplicon libraries were then sequenced on the Illumina HiSeq 2500 platform at the SAHMRI David R Gunn Genomics Suite using Illumina HiSeq SBS 2 × 125bp v4 kit (Illumina Inc). Reads were converted into FASTQ format using bcl2fastq v.1.8.4. On average, 16,666,136 sequencing reads were obtained from each sample before quality filtering.
 
-## Bioinformatic processing
+### Bioinformatic processing
 
 Paired-end reads were adapter- and quality-filtered using Trimmomatic v.0.36 (Truong et al., 2015) with the following parameters: PE ILLUMINACLIP:TruSeq3-PE:3:30:10 LEADING:10 MINLEN:30 SLIDINGWINDOW: 4:30; HEADCROP:10. Samples included in the downstream analysis had at least 7.4 million paired-end reads of at least 91 bp in length after quality control. The quality of reads was checked before and after this process using FastQC v.0.11.5.
 
 Using the quality-controlled paired-end reads, taxonomic profiling was performed using the metagenomic phylogenetic analysis (MetaPhlAn) v.2.6 (Franzosa et al., 2018), which uses a database of clade-specific markers to quantify microbiota constituents at the species and higher taxonomic levels. The generation of the abundance of metabolic pathways was performed using HUMAnN2 (Asnicar et al., 2015). Taxonomic and metabolic profiles for both islands were visualized using GraPhlAn v.0.9.7 (Whittaker, 1972). Sequenced metagenomic data were submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) under BioProject ID PRJNA503909. Summary of the quality-controlled fecal microbiome sequencing reads is shown in Supplementary file 1f.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses and graphical illustrations were accomplished in R software for statistical computing, Primer 7, GraphPad Prism 7, and Statistical Analysis Software (SAS/STAT) suite. Rare taxa, present in less than 40% of the participants at <1% relative abundance, were excluded from the analysis.
 
-Alpha-diversity is defined as a local measure of average species diversity in a community. (Whittaker, 1972; Jost, 2007). To estimate the species alpha diversity in Mer and Waiben, we examined the microbial composition in each community using the vegan (Oksanen et al., 2018) package in R. (R Development Core Team, 2010) Accordingly, the 'estimate' function was used to calculate Chao1’s measure of richness; a measure of the number of species (or other taxonomic levels) present at a site. The 'diversity' function was used to estimate the Shannon-Wiener Index (H'); a measure of how many different types of species are present in the community. Species diversity takes into account both species richness and the dominance or evenness of the species. Evenness measures homogeneity in a community in terms of species relative abundances. A community in which all species are proportionately common is regarded as stable and has a high degree of evenness. Since vegan does not provide a function for Shannon’s evenness/equitability (E), we used a modified R function to estimated E by dividing the actual diversity (H') with the maximum possible diversity value (Hmax). The reasoning is, H' decreases when the species composition is more uneven and reaches a maximum with the highest evenness. Therefore, when all species are equally common, Hmax=ln⁡S (where S is the total number of species), and E= H' ÷ Hmax. Differences in species composition within Mer and Waiben were analyzed in GraphPad using the Mann-Whitney U-test the with FDR multiple-testing adjustment.
+Alpha-diversity is defined as a local measure of average species diversity in a community. (Whittaker, 1972; Jost, 2007). To estimate the species alpha diversity in Mer and Waiben, we examined the microbial composition in each community using the vegan (Oksanen et al., 2018) package in R. (R Development Core Team, 2010) Accordingly, the 'estimate' function was used to calculate Chao1’s measure of richness; a measure of the number of species (or other taxonomic levels) present at a site. The 'diversity' function was used to estimate the Shannon-Wiener Index (H'); a measure of how many different types of species are present in the community. Species diversity takes into account both species richness and the dominance or evenness of the species. Evenness measures homogeneity in a community in terms of species relative abundances. A community in which all species are proportionately common is regarded as stable and has a high degree of evenness. Since vegan does not provide a function for Shannon’s evenness/equitability (E), we used a modified R function to estimated E by dividing the actual diversity (H') with the maximum possible diversity value (Hmax). The reasoning is, H' decreases when the species composition is more uneven and reaches a maximum with the highest evenness. Therefore, when all species are equally common, $H_{max}=ln⁡S$ (where S is the total number of species), and $E=H'\divH_{max}$. Differences in species composition within Mer and Waiben were analyzed in GraphPad using the Mann-Whitney U-test the with FDR multiple-testing adjustment.
 
 Beta diversity is defined as the change in species composition from one community to the next (Whittaker, 1972; Jost, 2007). Species relative abundances were square root-transformed and used to calculate Bray-Curtis distances of samples dissimilarity in Primer6. To test the null hypothesis of no difference in species relative abundance between islands, we used permutational multivariate analysis of variance (PERMANOVA) model on the Bray-Curtis dissimilarity data under a partial (type III) sum of squares, a fixed-effects sum to zero for mixed terms, 10,000 unrestricted parameters permutation of residuals and Monte Carlo tests in Primer v.6. The matrix of Bray-Curtis distances was also used as input to calculate non-metric multidimensional scaling (NMDS) coordinates using vegan package in R (R Development Core Team, 2010). The first and second components were used to create an ordination plot using ggvegan.
 

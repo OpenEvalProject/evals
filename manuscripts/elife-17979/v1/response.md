@@ -17,11 +17,9 @@ Essential issues that must be addressed:
 
 We agree with the referees that it is important to determine how so called “type 2” antibodies are being generated in the absence of Th2 cells.
 
-We observed a slight increase in IL-4 production by non-T cells, though, given their low frequency above the background, we are hesitant to be conclusive and do not wish to include the data for publication (see Author response image 1). Instead, to our excitement, even though the Th2 responses was reduced (consistent with our study in 2013), we found that the Tfh cells generated in the absence of CD301b DCs produce intact levels of IL-4 and IL-21 (comparable to the undepleted mice). In addition, there were a lot more Tfh cells in the CD301b-depleted mice. We believe that the combination of the increase in the number of Tfh, as well as their robust secretion of IL-4 and IL-21, explains why the CD301b-depleted mice are capable of generating the type 2 antibody responses including IgE and IgG1. These data are included as new Figure 8F.10.7554/eLife.17979.019Author response image 1.IL-4 production from non-T cells in CD301b+ DC-depleted mice.Dashed line indicates staining background.DOI: http://dx.doi.org/10.7554/eLife.17979.019
+We observed a slight increase in IL-4 production by non-T cells, though, given their low frequency above the background, we are hesitant to be conclusive and do not wish to include the data for publication (see Author response image 1). Instead, to our excitement, even though the Th2 responses was reduced (consistent with our study in 2013), we found that the Tfh cells generated in the absence of CD301b DCs produce intact levels of IL-4 and IL-21 (comparable to the undepleted mice). In addition, there were a lot more Tfh cells in the CD301b-depleted mice. We believe that the combination of the increase in the number of Tfh, as well as their robust secretion of IL-4 and IL-21, explains why the CD301b-depleted mice are capable of generating the type 2 antibody responses including IgE and IgG1. These data are included as new Figure 8F.10.7554/eLife.17979.019Author response image 1.IL-4 production from non-T cells in CD301b+ DC-depleted mice.Dashed line indicates staining background.
 
 Dashed line indicates staining background.
-
-DOI: http://dx.doi.org/10.7554/eLife.17979.019
 
 Is there an increase in IL-21 production that is capable of substituting for lack of IL-4?
 
@@ -29,11 +27,9 @@ As stated above, we examined the production of IL-21 and IL-4 in CD301b-depleted
 
 Are other non type-2 antibodies, such as IgG2a, IgG3 also increased?
 
-We measured IgG3 levels in CD301b-depleted immunized animals. IgG3 responses were not induced upon immunization with papain + OVA. Please see Author response image 2).10.7554/eLife.17979.020Author response image 2.IgG3 production in mice immunized with OVA plus papain in the footpad.All mice received intraperitoneal injection of OVA without papain on day 14.DOI: http://dx.doi.org/10.7554/eLife.17979.020
+We measured IgG3 levels in CD301b-depleted immunized animals. IgG3 responses were not induced upon immunization with papain + OVA. Please see Author response image 2).10.7554/eLife.17979.020Author response image 2.IgG3 production in mice immunized with OVA plus papain in the footpad.All mice received intraperitoneal injection of OVA without papain on day 14.
 
 All mice received intraperitoneal injection of OVA without papain on day 14.
-
-DOI: http://dx.doi.org/10.7554/eLife.17979.020
 
 The 2013 manuscript demonstrated substantial increases in frequency of IFNγ producing cells, which would in principle skew the humoral response towards these antibody subclasses. In this regard, it would be helpful to demonstrate intracellular IL-4 and IFNγ cytokine levels after ex vivo restimulation on the non-Tfh, Tfh and GC-Tfh phenotype CD4 T cells following immunization in this depletion model.
 

@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.29002.001 RasGRPs are guanine nucleotide exchange factors that are specific for Ras or Rap, and are important regulators of cellular signaling. Aberrant expression or mutation of RasGRPs results in disease. An analysis of RasGRP1 SNP variants led to the conclusion that the charge of His 212 in RasGRP1 alters signaling activity and plasma membrane recruitment, indicating that His 212 is a pH sensor that alters the balance between the inactive and active forms of RasGRP1. To understand the structural basis for this effect we compared the structure of autoinhibited RasGRP1, determined previously, to those of active RasGRP4:H-Ras and RasGRP2:Rap1b complexes. The transition from the autoinhibited to the active form of RasGRP1 involves the rearrangement of an inter-domain linker that displaces inhibitory inter-domain interactions. His 212 is located at the fulcrum of these conformational changes, and structural features in its vicinity are consistent with its function as a pH-dependent switch.
+RasGRPs are guanine nucleotide exchange factors that are specific for Ras or Rap, and are important regulators of cellular signaling. Aberrant expression or mutation of RasGRPs results in disease. An analysis of RasGRP1 SNP variants led to the conclusion that the charge of His 212 in RasGRP1 alters signaling activity and plasma membrane recruitment, indicating that His 212 is a pH sensor that alters the balance between the inactive and active forms of RasGRP1. To understand the structural basis for this effect we compared the structure of autoinhibited RasGRP1, determined previously, to those of active RasGRP4:H-Ras and RasGRP2:Rap1b complexes. The transition from the autoinhibited to the active form of RasGRP1 involves the rearrangement of an inter-domain linker that displaces inhibitory inter-domain interactions. His 212 is located at the fulcrum of these conformational changes, and structural features in its vicinity are consistent with its function as a pH-dependent switch.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ In order to understand the role of His 212 in regulation of RasGRP1 we sought to
 
 ## Results and discussion
 
-## Human missense variants of RasGRP1
+### Human missense variants of RasGRP1
 
 Single nucleotide variants that cause amino acid substitutions (missense variants; SNVs) are frequent and generate human genetic variation: most people inherit ∼12,000 missense gene variants (Abecasis et al., 2010). We identified all SNVs reported for RasGRP1 in publicly available databases, and took a shotgun approach to test a panel of these SNVs for their ability to alter RasGRP1 regulation (Figure 1C).
 
@@ -59,17 +59,33 @@ We have not been able to express full length RasGRP1 and study the autoinhibitor
 
 Most SNVs were neutral, with signaling features either similar to WT RasGRP1 or with lower activity. There are numerous possible reasons for SNVs signaling at lower strength, including reduction in protein stability (data not shown). However, the His 212 Tyr SNV signaled more strongly to ERK than WT, indicating altered regulation of RasGRP1. More detailed analysis of the cellular biochemical traits of the SNVs in the His 212 region demonstrated that His 212 Tyr, but not Ser 220 Leu, Phe 221 Cys, and Phe 226 Leu, resulted in increased basal signals to P-ERK and P-S6 in unstimulated cells as compared to WT RasGRP1 (Figure 1F).
 
-## His 212 controls basal RasGRP1 signals
+### His 212 controls basal RasGRP1 signals
 
 His 212 in RasGRP1 is conserved among all vertebrate RasGRPs, and is present in most RasGRP proteins from lower organisms (Figure 2A). This residue is located in the first helix of the Cdc25 domain, and is far from the Ras-binding site. We assessed the activity of RasGRP1 bearing mutations at position 212 in transfected cells. Analysis of the human SNV variant His 212 Tyr and His 212 Ala, both alterations to neutral residues, showed increased basal signals to P-ERK in RasGRP1−/−RasGRP3−/− DT40 cells (Figure 2B, Figure 2—figure supplement 1A) as well as in JPRM441 (Figure 2C, Figure 2—figure supplement 1B), a RasGRP1-deficient Jurkat T cell leukemia line that we previously exploited to asses RasGRP1 function (Roose et al., 2005; Iwig et al., 2013). Similarly, the His 212 Tyr and His 212 Ala variants of RasGRP1 signaled stronger to P-S6 in the DT40 cell system (Figure 2D, Figure 2—figure supplement 1C); PTEN- and SHIP1-deficiency in Jurkat results in hyperactive PI3kinase signals (Abraham and Weiss, 2004), making analysis of PI3K-dependent signals, such as those to S6, difficult in Jurkat. Thus, the His 212 Tyr and His 212 Ala variants are less autoinhibited. Mutation of His 212 to positively charged residues, i.e. His 212 Arg and His 212 Lys, maintained autoinhibition of RasGRP1 activity in unstimulated cells with a similar efficiency as WT RasGRP1 (Figures 2E,F and G, Figure 2—figure supplement 1D,E and F). Note that our analysis of the effects of these, and other, mutations in RasGRP1 is necessarily restricted to cell-based assays. As shown previously, the RasGRP1 construct used here is released from autoinhibition when studied in vitro, in solution (Iwig et al., 2013). The inability of in vitro measurements to capture details of the regulatory mechanism may reflect the role of dimerization in maintaining autoinhibition – the construct used in these studies lacks the C-terminal dimerization domain, and we have not yet succeeded in expressing and purifying full-length RasGRP1.
 
-## The charge of His 212 impacts activation of RasGRP1
+![Figure 2.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig2-v2.jpg)
+
+**Figure 2.:** (A) Alignment of RasGRP isoforms and RasGRP1 sequences in different species to determine conserved residues. His 212 conservation is indicated by grey color. (B–G) Low RasGRP1-expressing Jurkat cells (JPRM441), or RasGRP1−/−RasGRP3−/− DT40 cells were transfected with wildtype- or variants of EGFP-RasGRP1. (B–D) His 212 was mutated into neutrally charged residues (His 212 Ala, His 212 Tyr), or (E–G) into positively charged residues (His 212 Arg, His 212 Lys). RasGRP1 signaling was determined by levels of phosphorylated ERK (P-ERK) and S6 (P–S6). Shown are average median levels of P-ERK and P-S6, corrected for untransfected cells for each experiment, to prevent experimental fluctuation in fluorescent signal. (Figure 2B and E: WT N = 8, His 212 Tyr N = 8, His 212 Ala N = 6, His 212 Arg N = 3, His 212 Lys N = 3, Figure 2C and F: WT N = 10, His 212 Tyr N = 7, His 212 Ala N = 7, Figure 2D and G: WT, His 212 Arg, His 212 Lys, all N = 6). Kruskal-wallis test was used, with post-test Dunn's multiple comparisons, comparing each mutant to WT (*p<0.05), **p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) His 212 was mutated into neutrally charged residues (His 212 Ala, His 212 Tyr), or into positively charged residues (His 212 Arg, His 212 Lys). RasGRP1 signaling was determined by levels of phosphorylated ERK (P-ERK) and S6 (P–S6). Graphs depict fold changes of P-ERK or P-S6 relative to Wildtype for the different expression levels (low, medium, or high) of RasGRP1-EGFP. (A and D: WT N = 8, His 212 Tyr N = 8, His 212 Ala N = 6, His 212 Arg N = 3, His 212 Lys N = 3, B and E: WT N = 10, His 212 Tyr N = 7, His 212 Ala N = 7, C and F: WT, His 212 Arg, His 212 Lys, all N = 6). Kruskal-wallis test was used, with post-test Dunn's multiple comparisons, comparing each mutant to WT(*p<0.05), **p<0.01, ***p<0.001).
+
+### The charge of His 212 impacts activation of RasGRP1
 
 The same transfection phospho-flow strategy also allows for evaluation of RasGRP1 function following B cell receptor (BCR) stimulation, by analyzing kinase pathway signals in cells that express low levels of RasGRP1-EGFP, which we gate on. Upon BCR stimulation with M4 antibody, we typically observe induced levels of P-ERK and P-S6 that are 7–9 fold and 2–3 fold over baseline, respectively (Figure 3A). Note that induction of ERK phosphorylation is more robust than S6 phosphorylation upon BCR stimulation. Thus, S6 phosphorylation appears to be a more robust event in the basal state (Figure 1) and ERK phosphorylation is a more robustly triggered kinase pathway in stimulated cells. To understand the role of His 212 in the activation of RasGRP1, we used our transfection phospho-flow platform and BCR stimulation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig3-v2.jpg)
+
+**Figure 3.:** (A) Assay to determine RasGRP1 activity in receptor stimulated cells using RasGRP1-/-RasGRP3-/- DT40 cells, BCR stimulation, and gating on low levels of transfected RasGRP1-EGFP. (B–E) Effects of H212 mutations on RasGRP1 activity were tested upon B cell receptor (BCR) stimulation. Shown are average median levels of P-ERK and P-S6 in EGFP-low expressing cells, corrected for wildtype stimulated cells. WT was set on 1.0. Kruskal-wallis test (Figure 3C and D; WT N = 10, His 212 Tyr/Ala N = 7, Figure 3D and E; all N = 6) was used, with post-test Dunn's multiple comparisons, comparing each mutant to WT. P-values are shown. All graphs show mean ±SD. (F) Localization of full length expressed RasGRP1-EGFP in DT40 RasGRP1−/− RasGRP3−/− cells, showing basal state (no stim, cytoplasmic), and upon B cell receptor stimulation (+BCR, arrows indicate plasma membrane localization). Below, representative profiles of expression are shown, peaks on the left and/or right side indicate membrane localization. (G) Membrane localization of WT, and mutants His 212 Tyr, His 212 Lys RasGRP1 was determined by microscopy analysis of unstimulated and BCR stimulated cells. Pie charts depict average individual cell counts analyzed in 3 separate experiments. Total number of cells analyzed under each condition are listed below charts.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Shown are representative examples of microscopy analyses of RasGRP1-EGFP low expressing DT40 RasGRP1−/− RasGRP3−/− cells without and with B cell receptor (BCR) stimulation. The top row shows the total maximum Z-projection, and the bottom row shows a single z-plane, which was used for counting. (B) Shown are representative examples of microscopy analysis of high RasGRP1-EGFP expressing cells. The signal shows localization of full length expressed RasGRP1-EGFP wildtype (WT) and mutants (His212Lys, His212Tyr), showing basal state (no stim, cytoplasmic), and upon B cell receptor stimulation (+BCR, arrows indicate plasma membrane localization).
+
 Changing His 212 to neutral residues, as in the human SNV His 212 Tyr or the designed His 212 Ala variant, resulted in increased levels of BCR-induced phosphorylation of ERK and S6 (Figure 3B and C). Conversely, altering His 212 to positively charged residues, either His 212 Arg or His 212 Lys, impaired the BCR-induced ERK and S6 responses (Figure 3D and E). The transfection platform with EGFP-tagged RasGRP1 also allowed us to investigate the recruitment of RasGRP1 to the plasma membrane (Bivona et al., 2003; Daley et al., 2013). Wildtype and His 212 Tyr versions of RasGRP1-EGFP revealed very similar efficiency of plasma membrane recruitment upon BCR-stimulation (Figure 3F and G, and Figure 3—figure supplement 1). Most striking was the complete lack of RasGRP1 plasma membrane recruitment for the positively charged mutant His 212 Lys (Figure 3G and Figure 3—figure supplement 1). This is remarkable because BCR-stimulation generates a robust intracellular calcium flux and increased levels of DAG (Myers and Roose, 2016), which recruits RasGRP1 to the membrane and activates it. Thus, the His 212 Lys mutation blocks the responsiveness of RasGRP1 to these calcium and DAG cues. Together, these data suggest that the positive charge of His 212 contributes to RasGRP1 autoinhibition in the basal state (Figure 2), and that a neutral residue at position 212 is essential to allow for RasGRP1 plasma membrane recruitment and signal output to the ERK and S6 pathways (Figure 3).
 
-## His 212 functions as a pH sensor that modulates RasGRP1 activity
+### His 212 functions as a pH sensor that modulates RasGRP1 activity
 
 Given that increases in intracellular pH can result in deprotonation of histidines (Schönichen et al., 2013) (Figure 4A), we next explored whether RasGRP1 is regulated by intracellular pH through His 212. Cells in an activated state often display increases in intracellular pH (pHi); For example, the pHi is elevated in tumor cells, which promotes tumor survival and progression (Webb et al., 2011; Grillo-Hill et al., 2015). Stimulation of DT40 cells by PMA (a diacylglycerol analogue) and ionomycin (calcium ionophore), mimicking lymphocyte receptor signaling events that connect to RasGRP1, resulted in a consistent increase of the intracellular pH (Figure 4B).
 
@@ -83,13 +99,21 @@ We chose NH4Cl and EIPA to modulate the pHi so that we could subsequently assess
 
 With these approaches, we investigated if the augmentation of BCR-induced ERK signals at increased pHi was the result of deprotonation of His 212 in RasGRP1 expressed in these cells. We used untransfected cells or RasGRP1−/−RasGRP3−/− DT40 cells transfected with WT RasGRP1, His 212 Tyr, or His 212 Lys. First, we established that all four cell populations demonstrated very similar pHi increases or decreases upon NH4Cl incubation or a NH4Cl pulse with EIPA, respectively (Figure 4G). We found that increased pHi (Figure 4H) or decreased pHi (Figure 4I) only impacted the level of ERK signaling when His 212 in RasGRP1 was intact. His 212 Tyr and His 212 Lys lost the pHi-dependent regulation. These data indicate that His 212 in RasGRP1 is a pH sensor, and that increases in intracellular pH and His 212 deprotonation promote RasGRP1 activation.
 
-## Structures of active complexes of RasGRP2 and RasGRP4
+### Structures of active complexes of RasGRP2 and RasGRP4
 
 In order to understand the role of His 212 in controlling the activation state of the protein, we wished to determine the structure of RasGRP1 bound to Ras, i.e., in an active form, but we failed to crystallize this complex. In order to obtain structures of active complexes we shifted our focus to other RasGRP family members, since they are closely related in sequence (Figure 5A and Figure 5—figure supplement 1). The different RasGRPs have been reported to prefer different members of the Ras subfamily, based on gene knockout experiments (see review [Ksionda et al., 2013]). We first determined the specificity of all four RasGRP family members for Ras and Rap, using an in vitro GEF assay and only the catalytic domains of RasGRPs. We found that RasGRP1 and RasGRP4 are specific for Ras, whereas RasGRP2 has a clear preference for Rap1B. RasGRP3 works equally efficiently as a GEF for Ras, Rap1B and Rap2A (Figure 5B). These findings are in agreement with published work that compared a large panel of GEFs and their preference for specific small GTPases as substrates (Popovic et al., 2013).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cartoon showing the four RasGRP isoforms, with key conserved regulatory residues indicated. (B) RasGRP isoform specificity for GTPases HRas, Rap1B, and Rap2A was tested by in vitro nucleotide exchange assays. Shown are the GDP-GTP exchange rates in time for RasGRP-1, -2, -3, and -4 catalytic domains (RasGRPcat, consisting of the REM and Cdc25 domains), in different concentrations (x-axis), for Ras (blue) Rap1B (red), Rap2A (purple). (C–F) Structures of RasGEF (green) – GTPase (orange) complexes are shown with cartoon representation for comparison. RasGRP4:HRas (C) and RasGRP2:Rap1B (D) complex structures were determined by this study. (E) HRas bound to the catalytic site of SOS and SOScat domain of the SOScat:HRas complex is extracted from PDB ID:1NVV (Margarit et al., 2003). (F) The structures of REM-cdc25 domain of Epac2 and Rap1B in Epac2:Rap1B complex are extracted from PDB ID:3CF6 (Rehmann et al., 2008).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The phylogenetic tree of RasGRP homologs was generated by MUSCLE (Please cite Li et al. 2015, Nucleic Acids Research, 43, W580-4.). Each gene is annotated by the organism common name followed by NCBI gene name and sequence ID. RasGRP homologs from lower organisms form a distinct outgroup. (B) Sequence alignment of the RasGRP isoforms was generated by MUSCLE. The human RasGRP1 residues shown in Figure 5A are highlighted with red boxes.
+
 We were successful in crystallizing the catalytic modules of RasGRP4 bound to HRas and RasGRP2 bound to Rap1B (see Materials and methods for details). Comparison of the structures of the RasGRP4:HRas and RasGRP2:Rap1B complexes show that nucleotide-free HRas and Rap1B are bound in a similar fashion to the two RasGRP proteins (Figure 5C and D), and that the binding mode is similar to that seen in SOS:HRas (Boriack-Sjodin et al., 1998) and Epac2:Rap1B (Rehmann et al., 2008) complexes (Figure 5E and F).
 
-## A role for the REM-cdc25 linker in stabilizing the active conformation of RasGRPs
+### A role for the REM-cdc25 linker in stabilizing the active conformation of RasGRPs
 
 An intriguing aspect of the RasGRP2:Rap1B structure is that the linker connecting the REM domain to the Cdc25 domain (REM-Cdc25 linker) is ordered in its entirety (Figure 6A and B). By contrast, this linker is disordered in the RasGRP4 structure (Figure 6C). The sequence of the linker is conserved between RasGRP1 and RasGRP2, but is drastically different in RasGRP4 (Figure 6D). The structure of the linker as visualized in the RasGRP2 structure is of potential functional importance, because it is inconsistent with adoption of the autoinhibited structure of RasGRP1 that we have defined earlier (Iwig et al., 2013) (compare Figure 6A and B with Figure 6E).
 
@@ -103,17 +127,130 @@ The high sequence conservation of the REM-Cdc25 linker between RasGRP1 and RasGR
 
 Another observation that points to the relevance of this linker conformation is that PMA- or antigen receptor-induced phosphorylation of RasGRP1 at Thr 184 in the REM-Cdc25 linker, or RasGRP3 at the corresponding residue (Thr 133), is correlated with increased RasGRP activity. Mutation of these threonine residues to alanine results in reduced, but not eliminated, RasGEF activity (Aiba et al., 2004), whereas introduction of a negative charge to mimic a phosphorylated threonine results in higher activity (Roose et al., 2005). The corresponding residue in RasGRP2 is Thr 134 (Figure 6D) and is phosphorylated in lymphocytes analyzed by total phospho-proteomics (Dr. Doreen Cantrell, set of 11 phospho-peptides from RasGRP2, personal communication). The positioning of the REM-Cdc25 linker in the RasGRP2:Rap1B complexes places the side chain of Thr 134 close to the side chains of the positively charged Lys 172 and Arg 195 in the Cdc25 domain, which provides a possible explanation for the activating effect of phosphorylation of the threonine residue, which adds a negative charge (Figure 6H).
 
-## The location and environment of His 212 is consistent with a role as pH sensor
+### The location and environment of His 212 is consistent with a role as pH sensor
 
 The cellular signaling results with variants of His 212, including the human SNV His 212 Tyr, and the findings that His 212 is a pH sensor, prompted us to investigate how His 212 may impact the transition between the autoinhibited and active states of RasGRP1. Schematic diagrams for these two states are shown in Figure 7A and B, which indicate the position of His 212 with respect to the structural elements that rearrange in the transition. His 212 is located within helix A of the Cdc25 domain, at the interface between helices A and J. Helix J is connected to helix K, which forms part of the Ras binding site. In the autoinhibited conformation of RasGRP1, Helix J is part of the platform on which the EF domain is docked (Figure 7C). Thus, the location of His 212 is consistent with a role for this residue in the transition between the active and inactive states of RasGRP1. In addition, the structure suggests that the charge on the histidine residue will be important.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) Schematic diagram of RasGRP1 conformations. Color scheme is the same as Figure 6A,C and E. In the autoinhibited form (A), the cdc25-EF linker sits in the Ras binding site and the EF domain docks on the cdc25 domain. The active form of RasGRP1 (B) is extrapolated from the active RasGRP2-Rap1B structure. The Rem-cdc25 linker is stabilized by an ion-pair formed by Arg 181 and Asp 228. (C) The interaction between the REM-cdc25 linker and the EF hand is shown. Leu 199 and Leu 200 are stacked on the EF hand domain, while Phe 201 is inserted into a hydrophobic pocket in the cdc25 domain. (D) His 212 and surrounding acidic residues in RasGRP1 are shown. (E) Electrostatic surface potential of RasGRP1 is shown with the same view as Figure 7D. (F, G) Basal signaling activity of RasGRP1 WT and Glu 404 variants in RasGRP1-/-RasGRP3-/- DT40 cells. Shown are average median levels of P-ERK (F) and P-S6 (G), corrected for wildtype in RasGRP1-EGFP low expressing cells. Friedman test was used, with post-test Dunn's multiple comparisons, comparing each mutant to WT. (N = 6. All graphs show mean ±SD. *p<0.05 and **p<0.01.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/29002/elife-29002-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Shown are average median levels of P-ERK (A, C) and P-S6 (B, D), corrected for untransfected cells for each experiment. Friedman test was used, with post-test Dunn's multiple comparisons, comparing each mutant to WT. (RasGRP1 low N = 6, RasGRP1 medium (N = 5 for P-ERK, N = 6 for P-S6), RasGRP1 high (N = 4). All graphs show mean ±SD. *p<0.05 and **p<0.01.
+
 An unusual aspect of this histidine is that there are five negatively charged residues in its vicinity (Figure 7D). Four of these are provided by helix A (Glu 205, Glu 207, Glu 208 and Glu 211) and the fifth one (Glu 404) is provided by the loop leading into helix J, which packs against helix A (Figure 7E). We estimated the pKa values of the histidine sidechains in RasGRP1, using continuum electrostatics as implemented in a web-based server for the program DELPHI (Sharp and Honig, 1990; Wang et al., 2016). Using the crystal structure of the cdc25 domain of RasGRP1 (Iwig et al., 2013), the pKa value of His 212 is calculated to be 6.90, that is, increased by almost 1 pH unit above the pKa value of an isolated histidine (6.0). His 212 has the highest calculated pKa value among the nine histidines in the cdc25, indicating that it is primed to convert from positive to neutral when the intracellular pH increases beyond a neutral value (Table 1). The calculated pKa value of this residue is reduced significantly when one or more of the four glutamate sidechains located nearby, in helix A, are substituted by alanine.
+
+**Table 1.**
+ Estimated pKa values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Estimated pKa values</th>
+    </tr>
+    <tr>
+      <th>Residue no.</th>
+      <th>wild-type</th>
+      <th>E208A</th>
+      <th>E211A</th>
+      <th>E404A</th>
+      <th>E205A, E207A, E208A, E211A</th>
+      <th>E205A, E207A, E208A, E211A, E404A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>His 212</td>
+      <td>6.90</td>
+      <td>6.81</td>
+      <td>6.71</td>
+      <td>6.71</td>
+      <td>6.44</td>
+      <td>6.12</td>
+    </tr>
+    <tr>
+      <td>His 286</td>
+      <td>6.56</td>
+      <td>6.55</td>
+      <td>6.55</td>
+      <td>6.55</td>
+      <td>6.53</td>
+      <td>6.52</td>
+    </tr>
+    <tr>
+      <td>His 303</td>
+      <td>6.83</td>
+      <td>6.83</td>
+      <td>6.83</td>
+      <td>6.83</td>
+      <td>6.82</td>
+      <td>6.82</td>
+    </tr>
+    <tr>
+      <td>His 315</td>
+      <td>6.17</td>
+      <td>6.16</td>
+      <td>6.16</td>
+      <td>6.17</td>
+      <td>6.15</td>
+      <td>6.15</td>
+    </tr>
+    <tr>
+      <td>His 318</td>
+      <td>6.26</td>
+      <td>6.26</td>
+      <td>6.26</td>
+      <td>6.26</td>
+      <td>6.26</td>
+      <td>6.26</td>
+    </tr>
+    <tr>
+      <td>His 358</td>
+      <td>6.57</td>
+      <td>6.57</td>
+      <td>6.56</td>
+      <td>6.57</td>
+      <td>6.56</td>
+      <td>6.56</td>
+    </tr>
+    <tr>
+      <td>His 381</td>
+      <td>6.27</td>
+      <td>6.27</td>
+      <td>6.27</td>
+      <td>6.27</td>
+      <td>6.27</td>
+      <td>6.27</td>
+    </tr>
+    <tr>
+      <td>His 389</td>
+      <td>6.58</td>
+      <td>6.58</td>
+      <td>6.58</td>
+      <td>6.58</td>
+      <td>6.58</td>
+      <td>6.58</td>
+    </tr>
+    <tr>
+      <td>His 411</td>
+      <td>6.23</td>
+      <td>6.22</td>
+      <td>6.22</td>
+      <td>6.22</td>
+      <td>6.21</td>
+      <td>6.20</td>
+    </tr>
+  </tbody>
+</table>
 
 We observed a similar cluster of glutamate residues surrounding a His pH sensor in the focal adhesion-associated protein talin, and computational pKa prediction suggested that these glutamate residues have increased pKa values (Srivastava et al., 2008). In both RasGRP1 and talin the glutamate network could be part of the pH sensor with histidine. Supporting this idea, experimental work has shown that histidines with coordinating glutamate residues have increased pKa values when determined experimentally by NMR (Tishmack et al., 1997; Hiebler et al., 2017; Baran et al., 2008). As noted earlier, mutation of His 212 to non-titratable residues abrogates pH sensitive activation, which is also consistent with a role for this residue in pH sensing.
 
 We propose that the configuration of residues seen in the autoinhibited RasGRP1 structure is stable when His 212 is protonated, because the concentration of negative charge in this region would favor a positively charged histidine. Neutralization of the histidine may favor disruption of the clustering of negative charge, most likely by movement of Glu 404, in the loop leading into helix J (the other four acidic residues are on the same helix as His 212, and are less likely to move away). In the active structure, the loop bearing Glu 404 packs against the REM-Cdc25 linker (Figure 7). In the autoinhibited RasGRP1 structure, the REM-Cdc25 linker positions two hydrophobic sidechains (Leu 199 and Leu 200) against the hydrophobic interface formed between helix J and the EF domain (Figure 7C). Release of the leucine residues, due to destabilization of the conformation of the REM-Cdc25 linker, would weaken the interface with the EF domain and help initiate a transition towards the active conformation. Consistent with this idea, we found that mutation of Glu 404 resulted in altered RasGRP1 activity, while mutation of Glu 208, located within helix A, had no effect. Replacement of Glu 404 by either alanine or arginine both resulted in increased signals to S6 but not to the less basally active RasGRP1-ERK pathway (Figure 7F and G, and Figure 7—figure supplement 1).
 
-## Concluding remarks
+### Concluding remarks
 
 In unstimulated cells, RasGRP1 is in an inactive conformation, in which the Cdc25-EF linker prevents Ras binding to the active site (Iwig et al., 2013). In dimeric and autoinhibited RasGRP1, the EF domains from each molecule in a RasGRP1 dimer block the DAG-binding sites on the C1 domains of the dimer partner (Figure 8). Lymphocyte receptor stimulation results in increased pHi, increased DAG levels, and increased intracelluar calcium levels, and we propose that these three signals coordinately induce a conformational change in RasGRP1. The structure of the RasGRP2:Rap1B complex that we have now determined establishes an important role for the REM-Cdc25 linker in the transition to the active state. A prominent feature in the active RasGRP2 structure is the formation of an ion-pair between Arg 131, in the REM-Cdc25 linker and Asp 177 in the Cdc25 domain (Arg 181 and Asp 228 in RasGRP1). This salt bridge and the position of the REM-Cdc25 linker reinforces the active conformation of RasGRP and is incompatible with the autoinhibited conformation (Figure 7).
 
@@ -131,43 +268,43 @@ More clear is the notion that increased pHi is a hallmark of cancer cells and pr
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 Jurkat and low level RasGRP1 expressing JPRM441 cells were previously characterized (Roose et al., 2005) and described (Roose et al., 2007). RasGRP1−/−RasGRP3−/− DT40 cells were described in (Roose et al., 2007).
 
-## Medium and buffers
+### Medium and buffers
 
 Jurkat and JPRM441 were cultured in RPMI1640 (Hyclone), containing 10% Fetal calf serum (FCS), 1% glutamine, 10 mM Hepes, penicillin and streptomycin. DT40 culture medium contained additional 1% chicken serum. After electroporation, cells were recovered in culture medium without penicillin and streptomycin. Starvation of cells was performed in culture medium containing low FCS (0.2%) for 3 hr, or in plain RPMI1640 for 30 mins. FACS buffer consisted of Phosphate buffered salt (PBS) with 2 mM EDTA, 2% FCS, and 0.1% NaN3.
 
-## Transfection of cells with RasGRP1-EGFP plasmids
+### Transfection of cells with RasGRP1-EGFP plasmids
 
 RasGRP1−/−RasGRP3−/− DT40 cells, or low level RasGRP1 expressing JPRM441 cells (Roose et al., 2005) were transfected by electroporation with DNA plasmids encoding EGFPN1-RasGRP1 wildtype or mutant (20 × 106 cells with 20 microgram DNA)(Biorad Genepulser Xcel). Then cells were rested, stimulated and used for flow cytometry, microscopy, and pHi modulation as described below.
 
-## Flow cytometry assays
+### Flow cytometry assays
 
 The protocol was slightly modified from an earlier published version (Iwig et al., 2013). DT40 cells, or JPRM441 cells (Roose et al., 2005) were transfected as described above, and recovered in culture medium without antibiotics for 3–4 hr. Cells were washed, resuspended in plain RPMI, seeded 0.4 × 106 per well in a 96 well round bottom plate, and starved in an incubator for 30 min. DT40 cells were stimulated with anti-IgM (clone M4), cross-linking the B cell receptor, or with vector (RPMI), and JPRM441 cells were treated with RPMI1640 only for 5 min. Cells were fixated in prewarmed fixations buffer (BD, Cytofix, BD biosciences, San Jose, CA), or in 4% paraformaldehyde in Phosphate buffered saline (PBS), for 15 min at 21°C, washed in FACSbuffer, and permeabilized in either 0.5% Phosflow buffer IV (BD biosciences) for 15 min at 21°C, or MetOH for 30 min on ice. Barcoding protocols were modified from described methods (Krutzik et al., 2011). Pacific Blue and Alexa Fluor 750 carboxilic acid succinimidyl-esters (Life Technologies, Grand Island, NY) were added in the methanol or the phosflow buffer IV in titrated serial dilutions, and incubated for 30 min on ice (Methanol), or for 15 min at 21°C (phosflow buffer IV). Cells were washed thoroughly in FACS buffer, and barcoded cells were pooled and incubated for 30 min with antibodies towards P-ERK, P-S6, and for JPRM441 cells we used cleaved caspase or cleaved PARP to exclude (pre-) apoptotic cells from analysis. Cells were washed and analyzed using the LSR II flow cytometer, or LSR Fortessa (BD Biosciences, San Jose, CA, USA). Data were analyzed using Cytobank (Cytobank Inc, Mountain View, CA, USA). In some of the pHi modulation experiments cells were measured without barcoding.
 
-## Antibodies for flow cytometry
+### Antibodies for flow cytometry
 
 Anti-phosphorylated-S6 -PE (clone D57.2.2E, #5316 s, diluted 1:200), anti-phosphorylated ERK-AF647 (clone 137F5, #5376, diluted 1:50), cleaved caspase 3- pacific blue (clone D3E9, #8788, diluted 1:200), or anti-phosphorylated ERK (clone 197G2, #4377 s, diluted 1:50) all from Cell Signaling Technologies, Beverly, MA, USA). Unconjugated P-ERK was followed by AffiniPure F(ab')2 fragment Donkey-anti-Rabbit IgG, conjugated to APC (#711-136-152, diluted 1:50) or PE (#711-116-152, diluted 1:50, Jackson ImmunoResearch, West Grove, PA, USA), or cleaved PARP-AF647 (clone F21-852, #558710, diluted 1:100, BD Biosciences, San Jose, CA, USA)
 
-## Microscopy assays
+### Microscopy assays
 
 RasGRP1-RasGRP3 deficient DT40 cells were transfected by electroporation with DNA plasmids encoding EGFPN1-RasGRP1. Cells were cultured for 4 hr, and starved for 30 min in RPMI. Cells were stimulated by anti-IgM (M4), cross-linking the B cell receptor, 20 ng/ml PMA, or with vehicle (RPMI) for 2 min. Cells were fixated in 4% paraformaldehyde in PBS, for 15 min, at 21°C, and washed. Cells were FACS sorted (MoFlo XDP, Beckman Coulter,CA, USA) for RasGRP1-EGFP low or high expression onto poly-L Lysine coated microscopy slides. For each sample 30–50 RasGRP1-EGFP-low cells were captured on a Zeiss confocal microscope, and scored blindly by 2 independent researchers for localization of RasGRP1 (cytoplasmic, or membrane. Cells with partial or full membrane localization (showing a clear line of increased GFP signal at the edge) were counted as 'membrane localization'. Whilst cells only without clear increased membrane fluorescent signal were counted as 'cytoplasma localization'. Profiles were made with Fiji (ImageJ) software.
 
-## pHi modulation and receptor stimulation in cells
+### pHi modulation and receptor stimulation in cells
 
 Cells were transfected as described above, recovered for 2 hr in culture medium containing 10% FCS without antibiotics, and then transferred to starvation medium containing 0.2% FCS for 3 hr prior to assay. Cells were then were treated with 15 mM ammonium chloride (NH4Cl) in RPMI for 10 min to increase pHi, or pulsed with 15 mM NH4Cl for 15 min, spun down to remove NH4Cl, and resuspended in RPMI with 10 mM EIPA (5'-(N-ethyl-N-isopropyl)amiloride, a selective inhibitor of Na+/H+ exchanger NHE1 activity, Enzo Life Science) for 5 min to decrease pHi (Choi et al., 2013). Next, stimulation with anti-B cell receptor antibody M4 (1:1000) or 20 ng/ml diacylglycerol analogue PMA (phorbol 12-myristate 13-acetate) was performed in presence of NH4Cl, EIPA, or RPMI (control), and after 5 minutes cells were fixated in 4% PFA (paraformaldehyde) in PBS (phosphate buffered salt).
 
-## pHi measurements
+### pHi measurements
 
 0.5 × 106 cells per well were plated on a 24 well dishes coated with poly-L Lysine, and induced to be quiescent by maintaining for 3 hr in RPMI with 0.2% FCS. Intracellular pH (pHi) was determined as previously described (Choi et al., 2013) in a bicarbonate buffer (25 mM HCO3−, 115 mM NaCl, 5 mM KCl, 10 mM glucose, 1 mM KPO4, 1 mM MgSO4, and 2 mM CaCl2, pH 7.4) by using cells loaded with 1 µM 2′,7′-bis-(2-carboxyethyl)−5-(and-6)-carboxyfluorescein (BCECF; Invitrogen). To determine steady-state pHi, fluorescence of BCECF at Ex490/Em530 and Ex440/Em530 was acquired every 15 s for 5 min using a plate reader (SpectraMax M5; Molecular Dynamics) and the fluorescence ratios were converted to pHi by calibrating the fluorescence in each well with 10 µM nigericin in 105 mM KCl.
 
-## In vitro nucleotide exchange assay
+### In vitro nucleotide exchange assay
 
 In vitro nucleotide exchange rates for RasGRP1-4 proteins (RasGRP1cat, RasGRP2cat, RasGRP3, and RasGRP4cat) and small GTPases (HRas, Rap1B, and Rap2A) were measured and analyzed as described previously (Iwig et al., 2013), except that the final GTPase concentration was 1 µM instead of 500 nM.
 
-## Protein expression and purification
+### Protein expression and purification
 
 RasGRP2cat (residues 1-394), RasGRP2cat (1-425), and RasGRP4cat (46-460) expression vectors were constructed by inserting the genes into 2CT-10 plasmid (attaches an N-terminal hexa-histidine tag followed by MBP and TEV protease cleavage site), a gift from Scott Gradia (Addgene plasmid # 55209). RasGRP3cat (1-418) was cloned into pSMT3 vector. Rap1B (1-167), Rap1B (1-175), and Rap2A (1-167) was cloned into pProEX HTb vector (Invitrogen). All proteins correspond to human genes.
 
@@ -177,7 +314,7 @@ For RasGRPcat domains, the cells were grown at 37°C with 100 µg/ml ampicillin,
 
 HRas (residues 1–166), Rap1B (1-167), Rap1B (1-175), and Rap2A (1-167) were expressed and purified as described previously for HRas (Iwig et al., 2013).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 The RasGRP2:Rap1B complex and the RasGRP4:HRas complex were formed by mixing the proteins at 1:2 ratio of the GEF and either Rap1B or HRas. After addition of alkaline phosphatase (SIGMA, P0114), the sample was incubated at 4°C overnight. The complexes were purified by gel filtration (Superdex 75 column) in SEC buffer.
 

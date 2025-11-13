@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.39945.001 The dopamine (DA) hypothesis posits the increase of mesolimbic dopamine levels as a defining commonality of addictive drugs, initially causing reinforcement, eventually leading to compulsive consumption. While much experimental evidence from psychostimulants supports this hypothesis, it has been challenged for opioid reinforcement. Here, we monitor genetically encoded DA and calcium indicators as well as cFos in mice to reveal that heroin activates DA neurons located in the medial part of the VTA, preferentially projecting to the medial shell of the nucleus accumbens (NAc). Chemogenetic and optogenetic manipulations of VTA DA or GABA neurons establish a causal link to heroin reinforcement. Inhibition of DA neurons blocked heroin self-administration, while heroin inhibited optogenetic self-stimulation of DA neurons. Likewise, heroin occluded the self-inhibition of VTA GABA neurons. Together, these experiments support a model of disinhibition of a subset of VTA DA neurons in opioid reinforcement.
+The dopamine (DA) hypothesis posits the increase of mesolimbic dopamine levels as a defining commonality of addictive drugs, initially causing reinforcement, eventually leading to compulsive consumption. While much experimental evidence from psychostimulants supports this hypothesis, it has been challenged for opioid reinforcement. Here, we monitor genetically encoded DA and calcium indicators as well as cFos in mice to reveal that heroin activates DA neurons located in the medial part of the VTA, preferentially projecting to the medial shell of the nucleus accumbens (NAc). Chemogenetic and optogenetic manipulations of VTA DA or GABA neurons establish a causal link to heroin reinforcement. Inhibition of DA neurons blocked heroin self-administration, while heroin inhibited optogenetic self-stimulation of DA neurons. Likewise, heroin occluded the self-inhibition of VTA GABA neurons. Together, these experiments support a model of disinhibition of a subset of VTA DA neurons in opioid reinforcement.
 
 ## Introduction
 
@@ -100,31 +100,202 @@ Here, by confirming the validity of the DA hypotheses for opioids, we aim to int
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>DATIREScre</td>
+      <td>The Jackson Laboratory (www.jax.org)</td>
+      <td>MGI:3689434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gad2tm2(cre)Zjh</td>
+      <td>The Jackson Laboratory (http://www.jax.org)</td>
+      <td>MGI:4418713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens, human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-CAG-dLight1.1</td>
+      <td>Dr. Lin Tian, University of California Davis</td>
+      <td></td>
+      <td>Patriarchi et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVDJ-EF1a-DIO-GCaMP6m</td>
+      <td>Stanford Vector Core</td>
+      <td>Cat# GVVC-AAV-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV8-hSyn-DIO-ChrimsonR-tdTo</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-hSyn-DIO-HM4D(Gi)-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-DIO-ChR2(H134R)-eYFP</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-DIO-eArch3.0-eYFP</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CTB (Alexa FluorTM 555 Conjugate)</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Cat# C34776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CTB (Alexa FluorTM 488 Conjugate)</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Cat# C34775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CTB (Alexa FluorTM 647 Conjugate)</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Cat# C34778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diacetylmorphine (heroin)</td>
+      <td>DiaMo Narcotics GmbH</td>
+      <td>DIAPHIN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Citalopram</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 14572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reboxetine</td>
+      <td>Tocris</td>
+      <td>Cat# 1982</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cocaine</td>
+      <td>University Hospital of Geneva</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cFos</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID: AB_2106783</td>
+      <td>(dilution 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase</td>
+      <td>Sigma-Altrich</td>
+      <td>Cat# T2928</td>
+      <td>(dilution 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- GFP</td>
+      <td>Invitrogen/Thermo Fisher</td>
+      <td>Cat# 11122</td>
+      <td>(dilution 1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7.02</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2017a</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Synapse</td>
+      <td>Tucker-Davis Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Wild-type C57BL/6 and transgenic mice were used throughout the study. Weights, ages and genders were homogeneously distributed among the groups. Transgenic mice were backcrossed to the C57BL/6 line for a minimum of four generations. Transgenic DAT-Cre mice (Slc6a3) were heterozygous BAC transgenic mice in which the Cre recombinase expression was under the control of the regulatory elements of the DA transporter gene (DAT-Cre+ mice; (Turiault et al., 2007) DAT-Cre mice were originally provided by Günther Schutz. GAD-Cre+ (Gad65Cre non-inducible;(Kätzel et al., 2011)) mice (Gad2) were also used. All animals were kept in a temperature (21 ± 2°C) and humidity (50 ± 5%) controlled environment with a 12 hr light/12 hr dark cycle (lights on at 7:00). Food and water were available ad libitum, unless otherwise stated. All procedures were approved by the animal welfare committee of the Cantonal of Geneva, in accordance with Swiss law.
 
-## Stereotaxic injections and optic fiber cannulation
+### Stereotaxic injections and optic fiber cannulation
 
 Anesthesia was induced at 5% and maintained at 2.5% isoflurane (w/v) (Baxter AG) during the surgery. The animal was placed in a stereotaxic frame (Angle One) and craniotomies were performed using stereotaxic coordinates (for VTA: AP −3.3; ML −0.9 with a 10° angle; DV −4.3. For the lateral NAc shell: AP 0.98; ML +- 1.6; DV −4.5. For the medial NAc shell: AP 1.6; ML +- 0.5; DV −4.3). Injections of virus (0.5 μl) used graduated pipettes (Drummond Scientific Company), broken back to a tip diameter of 10–15 mm, at an infusion rate of 0.05 μl / min. Following the same procedure AAV5-hSyn-DIO-HM4D(Gi)-mCherry, AAV5-EF1a-DIO-ChR2(H134R)-eYFP and AAV5-EF1a-DIO-eArch3.0-eYFP (all from University of North Carolina Vector Core) were also injected bilaterally in the VTA, while AAV-DJ-EF1a-DIO-GCaMP6m (Stanford Vector Core) and dLight1 (AAV9-CAG-dLight1.1, courtesy of Dr. Lin Tian, University of California Davis) were injected unilaterally in the VTA and the NAc, respectively. Finally, cholera toxin subunit B Alexa Fluor 555, 488 and 647 conjugate (CTB 555, CTB 488 and CTB 647, Invitrogen) were injected bilaterally in the lateral or medial NAc shell respectively. When the experimental paradigm required it, during the same surgical procedure, unique chronically indwelling optic fiber cannula (Sparta et al., 2011) were implanted above the VTA using the exact same coordinates as for the injection except for DV coordinate, which was reduced to 4.2. Three screws were fixed into the skull to support the implant, which was further secured with dental cement. First behavioral session typically occurs 10–14 days after surgery to allow sufficient expression of the virus.
 
-## Implantation of jugular vein catheter
+### Implantation of jugular vein catheter
 
 Mice were anaesthetized with a mix of ketamine (60 mg/kg, Ketalar) and xylazine (12 mg/kg, Rompun) solution. Catheters (CamCaths, model MIVSA) made of silicone elastomer tubing (outside diameter 0.63 mm, inside diameter 0.30 mm) were inserted 1.0–1.2 cm in the right jugular vein, about 5 mm from the pectoral muscle, to reach the right atrium. The other extremity of the catheter was placed subcutaneously in the mid-scapular region and connected to stainless steel tubing appearing outside the skin. Blood reflux in the tubing was checked to confirm correct placement of the catheter. Mice were allowed to recover for 3–5 days before the start of drug self-administration training and received antibiotics (Baytril 10%, 1 ml in 250 ml of water) in the drinking water during this period. Catheters were flushed daily with a heparin solution (Heparin ‘Bichsel’) in saline (30 IU) during the recovery period and just before and after each self-administration session.
 
-## Self-administration apparatus
+### Self-administration apparatus
 
 All behavioral experiments were performed during the light phase and took place in mouse operant chambers (ENV-307A-CT, Med Associates) situated in sound-attenuating cubicle (Med Associates). Two retractable levers were present on both sides of one wall of the chamber. A cue-light was located above each lever and a house light was present in each chamber. During intravenous drug self-administration sessions, the stainless steel tubing of the catheter device was connected through a CoEx PE/PVCtubing (BCOEX-T25, Instech Solomon) to a swivel (Instech Solomon) and then an infusion pump (PHM-100, Med-Associates). The apparatus was controlled and data captured using a PC running MED-PC IV (Med-Associates).
 
-## Drug self-administration acquisition
+### Drug self-administration acquisition
 
 To familiarize the mice with the operant self-administration setting, we performed four days of food shaping, whereby the mouse had to press an active lever once to obtain a food reward (FR1, one 60 min session per day, 20 mg sucrose pellet, Test Diet, USA). Following IV-catheter placement surgery mice were deprived of food for 12 hr before the first self-administration session to promote exploratory activity and were given food access ad libitum after the first session. Each session was 360 min in duration and started with the illumination of the house light and the insertion of the two levers into the operant chamber. During the first six sessions, a single press on the active lever (termed fixed-ratio one, or FR1) resulted in an infusion of 0.05 mg/kg of heroin (diacetylmorphine, DiaMo Narcotics GmbH, dissolved in 0.9% saline at 0.05 mg/mL and delivered at 0.0177 ml/s as a unit dose depending on the weight of the mouse) paired with a 5 s continuous illumination of the cue light above the active lever. Completion of the fixed-ratio also initiated a timeout period of 40 s during which heroin was no longer available. For the next six sessions, the dose of heroin was halved to 0.025 mg/kg in order to boost lever pressing (as a measure of motivation) while avoiding overdoses or any eventual sedative effect. Time out period was reduced to 10 s. The active lever (left or right lever) was randomly assigned for each mouse. To avoid an overdose of heroin, a maximum of 75 infusions for the ‘high’ dose and 150 for the ‘low’ dose were allowed per session. Only mice having reached a stable rate of correct lever responses were included in the study. Saline control mice undertook the same procedure as heroin mice except that saline (NaCl 0.9% B. Braun) replaced heroin infusions.
 
-## Test of cue-associated drug seeking
+### Test of cue-associated drug seeking
 
 Thirty days after the final self-administration session (that is day 42), mice were tested for cue-associated seeking. The cue-associated drug-seeking test was a 90 min session, identical to the heroin acquisition period (house light on, insertion of the two levers), except that one press on the active lever (FR1 schedule) now triggered illumination of the cue light for 5 s but without a heroin infusion or a timeout period. The infusion pump was also activated during the drug-seeking session, because the pump noise provided an extra drug-associated cue.
 
-## Fiber photometry cannulation and recordings
+### Fiber photometry cannulation and recordings
 
 Following viral injections (see above), DAT-Cre+ or wildtype mice were chronically implanted with an optic fiber (MFC_400/430–0.48_4 mm_ZF2.5(G)_FLT, Doric Lenses) above the VTA (GCaMP6m experiments) or NAc (dLight experiments). During recordings excitation (470 nm, M470F3, Thorlabs) and control LED light (405 nm, M405FP1, Thorlabs) was passed through excitation filters and focused onto a patch cord (MFP_400/430/1100–0.48_4 m_FC-ZF2.5, Doric Lenses). The fiber patch cord was connected to the chronically implanted fiber, and emission light (500–550 nm) was collected through the same fiber and passed onto a photoreceiver (Newport 2151, Doric Lenses). Excitation light was sinusoidally modulated at 211 and 531 Hz (470 nm and 405 nm light, respectively) and collected raw signal was demodulated by a real-time signal processor (RZ5P, Tucker Davis Systems) to determine contributions from 470 nm and 405 nm excitation sources (see Lerner et al., 2015).
 
@@ -136,15 +307,15 @@ A subgroup of dLight animals was DAT-Cre positive (n = 3), and also injected w
 
 All data analyses were performed offline in Matlab (custom script https://github.com/tjd2002/tjd-shared-code, Davidson, 2016). To calculate dF/F, a linear fit was applied to the 405 nm signal during the baseline period to align it to the 470 nm signal, producing a fitted 405 nm signal that was used as F0 to normalize the 470 nm using standard dF/F normalization: (470 nm signal - fitted 405 nm signal)/fitted 405 nm signal. To quantify signal changes, for GCaMP6 experiments the average signal in the five minutes preceding the first IV injection (saline or heroin) was then compared to the average signal in the five minutes following the fifth IV injection (saline or heroin). For dLight experiments, the average signal in the five minutes preceding IP injection was compared to the average signal between ten and fifteen minutes after IP injection. At the end of all experiments, mice were euthanized and brains fixed in paraformaldehyde to prepare histological slices for verification of virus expression.
 
-## Cell culture for dLight1 sensitivity experiment
+### Cell culture for dLight1 sensitivity experiment
 
-HEK293T cells (ATCC, Manassas VA #1573, STR authenticated, mycoplasma negative) were cultured and transfected as previously described (Patriarchi et al., 2018). Briefly, hippocampal neurons were isolated and infected using AAVs (1 x 109 GC/ml) at DIV5. Two weeks later, cells were washed with HBSS (Life Technologies) and imaged using a 40X oil-based objective on an inverted Zeiss Observer LSN710 confocal microscope with 488/513 ex/em wavelengths. For testing dLight1 sensitivity, neurotransmitters were directly applied to the bath during imaging sessions. A dual buffer gravity-driven perfusion system was used to exchange buffers between different drug concentrations. One-photon emission spectrum for the sensors was determined using the lambda-scan function of the confocal microscope. Two-photon emission spectrum was obtained with a 40X water-based objective on a SliceScore (Scientifica) and used to obtain normalized two-photon cross-section using MATLAB ROIs were generated using the threshold function in Fiji. Spatial movies and images of dF/F in response to a ligand was calculated as Ft-F-baselineF-baseline with Ft the pixel-wise fluorescence value at each time and mean fluorescence in time points prior to ligand application,F-baseline.
+HEK293T cells (ATCC, Manassas VA #1573, STR authenticated, mycoplasma negative) were cultured and transfected as previously described (Patriarchi et al., 2018). Briefly, hippocampal neurons were isolated and infected using AAVs (1 x 109 GC/ml) at DIV5. Two weeks later, cells were washed with HBSS (Life Technologies) and imaged using a 40X oil-based objective on an inverted Zeiss Observer LSN710 confocal microscope with 488/513 ex/em wavelengths. For testing dLight1 sensitivity, neurotransmitters were directly applied to the bath during imaging sessions. A dual buffer gravity-driven perfusion system was used to exchange buffers between different drug concentrations. One-photon emission spectrum for the sensors was determined using the lambda-scan function of the confocal microscope. Two-photon emission spectrum was obtained with a 40X water-based objective on a SliceScore (Scientifica) and used to obtain normalized two-photon cross-section using MATLAB ROIs were generated using the threshold function in Fiji. Spatial movies and images of dF/F in response to a ligand was calculated as $\frac{Ft-F-baseline}{F-baseline}$ with $Ft$ the pixel-wise fluorescence value at each time and mean fluorescence in time points prior to ligand application,$F-baseline$.
 
-## Immunostaining and cell counting
+### Immunostaining and cell counting
 
 Mice were injected with a lethal dose of pentobarbital (150 mg/kg) and perfused trans-cardially with cold PBS and 4% paraformaldehyde solution. Brains were extracted and submerged in fixative for 24 hr at 4°C. Series of coronal 60 mm thick sections were cut on a vibratome. Immunostaining started by blocking slices in PBS 10% BSA and 0.3% Triton X-100 followed by overnight incubation in PBS 3% BSA and 0.3% Triton X-100 with primary antibody: cFos (dilution 1:5000, rabbit polyclonal, Santa Cruz, RRID: AB_2106783), TH (dilution 1:500, Mouse monoclonal anti-Tyrosine Hydroxylase, Sigma T2928) or GFP (dilution 1:500, rabbit polyclonal, Invitrogen, A11122). After three 15 min washes in PBS at room temperature, slices were incubated with 1:500 Alexa-conjugated secondary antibodies against the corresponding species (Alexa-Fluor 488, 555, Life Technologies). After three more steps of washing in PBS, a Hoechst staining was used to stain all neurons. Slices were then mounted and covered on microscope slides using mounting medium Mowiol (Calbiochem, Cat 475904–100 GM). Images were obtained in a confocal laser-scanning microscopy with a Fluoview 300 system (Olympus) using a 488 nm argon laser and a 537 nm heliumneon laser or in Leica SP5 confocal microscope using additional 350 nm laser with a 20x/0.7 NA oil immersion or objective. A semi-automated method was used to quantify viral infection and cFos expression in confocal images of brain slices containing the VTA or the NAc. Equally thresholded images were subjected to multiparticle analysis (NIH ImageJ). Region of interest (ROI) intensity values were obtained from the z stack of raw images by using Multi Measure tool. Colocalization was determined by overlap of the ROI obtained from the two independent fluorescence signals. Analysis was performed in at least three sections per animal.
 
-## DA neuron Self-Stimulation/Inhibition Acquisition
+### DA neuron Self-Stimulation/Inhibition Acquisition
 
 For optogenetic studies, fiber optic cannulae of mice were connected via patch cords (Thor Labs, Germany) to a rotary joint (FRJ_1 × 2_FC-2FC; Doric Lenses, Quebec, Canada), suspended above the operant chamber. A second patch cord connected from the rotary joint to a blue or orange DPSS laser (SDL-473–100 mW or SDL-593–100 mW, respectively; Shanghai Dream Lasers; Shanghai, China) positioned outside of the cubicle. Laser power was typically 15–20 mW measured at the end of each patch cord. Thus, allowing for up to 30% power loss in connecting the patch cord to the implanted cannulae, we estimated laser power to be approximately 10–14 mW at the tip of the cannulae. In some cases, a mechanical shutter was used to control laser output (SR474 driver with SR476 shutter head; Stanford Research Systems, aligned using a connectorized mechanical shutter adaptor; Doric Lenses).
 
@@ -152,14 +323,14 @@ Each of the 22 optogenetic stimulation of VTA DA acquisition sessions lasted 60 
 
 Each of the 19 optogenetic inhibition of VTA GABA acquisition sessions lasted 180 min with no maximum number of reward. During all the sessions, a single press on the active lever (termed fixed ratio one, or FR1) resulted in a 10 s illumination of a cue light (pulses of 1 s at 1 Hz). After a delay of 5 s, onset of a 15 s continuous orange laser stimulation. A 20 s timeout followed the rewarded lever press, during which lever presses had no consequence but were recorded.
 
-## Effect of heroin on locomotor activity
+### Effect of heroin on locomotor activity
 
 To assess locomotor activity, mice were tested over a 30 min free exploration period in an open field. The apparatus consisted of Plexiglas square (40 × 40 cm). Light intensity was respectively 150 lux and 120 lux at the center and walls of the arena. Animals were injected daily with saline or increasing doses of heroin (4, 8, 16, 32 mg/kg, i.p., 10 ml/kg) immediately before being placed in the apparatus. The distance travelled was recorded and analyzed by a video-tracking system (ANY-maze; Stoelting).
 
-## Effect of chemogenetic inhibition of VTA DA neurons on self-administration behavior
+### Effect of chemogenetic inhibition of VTA DA neurons on self-administration behavior
 
 One hour before the behavioral test, DAT-Cre+ mice expressing DREADD receptors were intraperitoneally injected with CNO 2 mg/kg in saline solution (10 ml/kg). The mice were then placed in the same settings as in a self-administration 360 min session (as described on page 12). Mice were randomly assigned to one of the two behavioral protocols. DAT-Cre- mice were used in the same settings as negative controls.
 
-## Statistics
+### Statistics
 
 Sample sizes were calculated using publicly available sample size calculators; group sizes are in the range use for similar methodology by us and others. Experiments were typically repeated in at least two cohorts. Samples were randomly assigned to experimental groups. Experimenters were not blinded for data collection and analysis, except for cFos quantification (both acquisition and analysis),. Multiple comparisons were first subject to mixed-factor ANOVA defining both between- (for example, DAT-cre +vs DAT-cre-; saline or heroin self-administration groups) and/or within- (for example, active or inactive lever presses) group factors. Where significant main effects or interaction terms were found (p<0.05), further comparisons were made by a two-tailed Student’s t-test with Bonferroni correction. Single comparisons of between- or within-group measures were made by two-tailed non-paired or paired Student’s t-test, respectively.

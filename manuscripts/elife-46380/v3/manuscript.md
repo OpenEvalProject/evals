@@ -43,37 +43,323 @@ Here, we established a chemical genetics approach based on the mutation of a ‘
 
 ## Results
 
-## Screen for novel substrates of endothelial PKA
+### Screen for novel substrates of endothelial PKA
 
 In order to identify direct substrates of endothelial PKA, we employed a chemical genetics approach (Allen et al., 2005). The ATP-binding pocket of kinases contains a conserved ‘gatekeeper residue’, which in naturally occurring wild type (WT) kinases is usually a methionine or phenylalanine. In engineered analogue specific (AS) kinases, this ‘gatekeeper residue’ is replaced with a smaller amino acid (glycine or alanine), enabling the AS-kinases to accept ATP analogues (or ATPγS analogues) that are modified at the N6 position with bulky groups as (thio-)phosphodonors. In contrast, WT-kinases poorly use these analogues. Once the substrates are thiophosphorylated by AS-kinases, they can be further alkylated and therefore recognized by a thiophosphate ester-specific antibody (Alaimo et al., 2001; Allen et al., 2005; Allen et al., 2007; Banko et al., 2011). To generate AS-PKACα, we mutated the methionine 120 to a glycine residue. Testing seven different variants of N6-substituted bulky ATPγS analogues, we identified 6-cHe-ATPγS as the best thiophosphodonor for AS-PKACα substrates in HUVEC lysates (Figure 1—figure supplement 1).
 
 To identify endothelial substrates of PKACα, HUVECs expressing WT-PKACα or AS-PKACα were lysed in kinase lysis buffer (KLB) and the thiophosphorylation reaction with 6-cHe-ATPγS was performed. After alkylation with p-Nitrobenzyl mesylate (PNBM), thiophosphorylated proteins were immunoprecipitated with the thioP antibody coupled to rProtein G Agarose beads (Figure 1A). For quality control, one thirtieth of the protein on agarose beads was eluted for western blot analysis, and the same amount of protein was used for gel silver staining (Figure 1B). The rest was subjected to mass spectrometry analysis. Two independent experiments were performed. Candidate endothelial PKA targets were identified as peptides that were at least 2-fold (log ratio(AS/WT)>1) enriched in the AS-PKACα samples compared to WT- PKACα samples in both experiments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig1-v3.jpg)
+
+**Figure 1.:** (A) Strategy for labeling, immunoprecipitation and identifying of PKACα substrates in HUVEC lysates. (B) Thio-phosphorylation of PKA substrates in HUVEC lysates expressing WT-PKACα or AS-PKACα for mass spectrometry analysis. Left panel (input) shows western blot analysis of lysates after alkylation before immunoprecipitation, middle panel (Eluate) shows western blot analysis of the eluted proteins from the immunoprecipitation beads, right panel (Eluate) shows the silver staining of the same samples as middle panel. (C) Validation of the six PKACα substrates identified in the chemical genetic approach screen by overexpressing of potential substrates and WT-PKACα (or AS-PKACα) in 293Tcells, and labeling the substrate in 293 T cell lysates. Western blots are representative of two independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Kinase assay in HUVEC lysates using WT-PKACα and AS-PKACα. All the western blot membranes were exposed at the same time. (B) Structural formulas of 7 different N6-substituted ATPγS analogs.
+
 The ninety-seven proteins identified in both experiments (Table 1—source data 1) included several known PKA substrates such as NFATC1 (Niswender et al., 2002), VASP (Anton et al., 2014; Butt et al., 1994; Profirovic et al., 2005), PRKAR2A and PRKAR2B (Manni et al., 2008) indicating that the chemical genetic screen worked well to identify PKA substrates. Thirty proteins with at least 8-fold enrichment (log ratio(AS/WT)>3) are listed according to their log ratio (AS/WT) value in Table 1, presenting the most likely direct substrates of PKA in this screen.
+
+**Table 1.**
+ List of PKACa substrates.Proteins are listed according to the log of fold changes of AS-PKACα to WT- PKACα. Two independent experiments have been done to prepare the PKACα substrates samples for mass spectrometric analysis.Table 1—source data 1.The full list of proteins identified in both experiments is provided.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Uniprot</th>
+      <th rowspan="2">Protein.names</th>
+      <th rowspan="2">Gene.names</th>
+      <th rowspan="2">Peptides</th>
+      <th colspan="2">Log ratio AS/WT</th>
+    </tr>
+    <tr>
+      <th>experiment1</th>
+      <th>experiment2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q6AI12</td>
+      <td>Ankyrin repeat domain-containing protein 40</td>
+      <td>ANKRD40</td>
+      <td>9</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Q6P6C2</td>
+      <td>RNA demethylase ALKBH5</td>
+      <td>ALKBH5</td>
+      <td>6</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Q9NRY4</td>
+      <td>Rho GTPase-activating protein 35</td>
+      <td>ARHGAP35</td>
+      <td>9</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>E7EVC7</td>
+      <td>Autophagy-related protein 16–1</td>
+      <td>ATG16L1</td>
+      <td>8</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>J3KPC8</td>
+      <td>Serine/threonine-protein kinase SIK3</td>
+      <td>SIK3;KIAA0999</td>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>A1 × 283</td>
+      <td>SH3 and PX domain-containing protein 2B</td>
+      <td>SH3PXD2B</td>
+      <td>4</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Q8IWZ8</td>
+      <td>SURP and G-patch domain-containing protein 1</td>
+      <td>SUGP1</td>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Q9UJX5</td>
+      <td>Anaphase-promoting complex subunit 4</td>
+      <td>ANAPC4</td>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>O43719</td>
+      <td>HIV Tat-specific factor 1</td>
+      <td>HTATSF1</td>
+      <td>4</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>O95644-5</td>
+      <td>Nuclear factor of activated T-cells, cytoplasmic 1</td>
+      <td>NFATC1</td>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>G8JLI6</td>
+      <td>Prolyl 3-hydroxylase 3</td>
+      <td>LEPREL2</td>
+      <td>3</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>F8W781</td>
+      <td>Zinc finger CCCH domain-containing protein 13</td>
+      <td>ZC3H13</td>
+      <td>3</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Q9BZL4</td>
+      <td>Protein phosphatase 1 regulatory subunit 12C</td>
+      <td>PPP1R12C</td>
+      <td>21</td>
+      <td>6,04440274</td>
+      <td>7,30701515</td>
+    </tr>
+    <tr>
+      <td>O14974</td>
+      <td>Protein phosphatase 1 regulatory subunit 12A</td>
+      <td>PPP1R12A</td>
+      <td>26</td>
+      <td>5,72796034</td>
+      <td>7,12654716</td>
+    </tr>
+    <tr>
+      <td>Q00537</td>
+      <td>Cyclin-dependent kinase 17</td>
+      <td>CDK17</td>
+      <td>31</td>
+      <td>6,37867381</td>
+      <td>6,39216838</td>
+    </tr>
+    <tr>
+      <td>Q9Y4G8</td>
+      <td>Rap guanine nucleotide exchange factor 2</td>
+      <td>RAPGEF2</td>
+      <td>21</td>
+      <td>10</td>
+      <td>6,17455504</td>
+    </tr>
+    <tr>
+      <td>Q9BYB0</td>
+      <td>SH3 and multiple ankyrin repeat domains protein 3</td>
+      <td>SHANK3</td>
+      <td>32</td>
+      <td>5,26591421</td>
+      <td>5,6389181</td>
+    </tr>
+    <tr>
+      <td>J3KSW8</td>
+      <td>Myosin phosphatase Rho-interacting protein</td>
+      <td>MPRIP</td>
+      <td>18</td>
+      <td>4,61398477</td>
+      <td>5,61155414</td>
+    </tr>
+    <tr>
+      <td>P31323</td>
+      <td>cAMP-dependent protein kinase type II-beta regulatory subunit</td>
+      <td>PRKAR2B</td>
+      <td>19</td>
+      <td>7,05077105</td>
+      <td>5,33509437</td>
+    </tr>
+    <tr>
+      <td>P13861</td>
+      <td>cAMP-dependent protein kinase type II-alpha regulatory subunit</td>
+      <td>PRKAR2A</td>
+      <td>24</td>
+      <td>5,42841998</td>
+      <td>5,04010629</td>
+    </tr>
+    <tr>
+      <td>Q14980-2</td>
+      <td>Nuclear mitotic apparatus protein 1</td>
+      <td>NUMA1</td>
+      <td>61</td>
+      <td>3,45625969</td>
+      <td>4,47466712</td>
+    </tr>
+    <tr>
+      <td>O15056</td>
+      <td>Synaptojanin-2</td>
+      <td>SYNJ2</td>
+      <td>13</td>
+      <td>4,64022655</td>
+      <td>4,46069701</td>
+    </tr>
+    <tr>
+      <td>J3KNX9</td>
+      <td>Unconventional myosin-XVIIIa</td>
+      <td>MYO18A</td>
+      <td>10</td>
+      <td>10</td>
+      <td>4,43208178</td>
+    </tr>
+    <tr>
+      <td>Q86UU1-2</td>
+      <td>Pleckstrin homology-like domain family B member 1</td>
+      <td>PHLDB1</td>
+      <td>19</td>
+      <td>5,4105243</td>
+      <td>4,10782285</td>
+    </tr>
+    <tr>
+      <td>P28715</td>
+      <td>DNA repair protein complementing XP-G cells</td>
+      <td>ERCC5;BIVM-ERCC5</td>
+      <td>8</td>
+      <td>3,3571826</td>
+      <td>4,09305592</td>
+    </tr>
+    <tr>
+      <td>P12270</td>
+      <td>Nucleoprotein TPR</td>
+      <td>TPR</td>
+      <td>104</td>
+      <td>3,3333472</td>
+      <td>4,04477536</td>
+    </tr>
+    <tr>
+      <td>Q15111</td>
+      <td>Inactive phospholipase C-like protein 1;Phosphoinositide phospholipase C</td>
+      <td>PLCL1</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3,32188704</td>
+    </tr>
+    <tr>
+      <td>Q9HD67</td>
+      <td>Unconventional myosin-X</td>
+      <td>MYO10</td>
+      <td>39</td>
+      <td>4,13973415</td>
+      <td>3,21827463</td>
+    </tr>
+    <tr>
+      <td>Q14185</td>
+      <td>Dedicator of cytokinesis protein 1</td>
+      <td>DOCK1</td>
+      <td>34</td>
+      <td>4,50413426</td>
+      <td>3,18515106</td>
+    </tr>
+    <tr>
+      <td>O75116</td>
+      <td>Rho-associated protein kinase 2</td>
+      <td>ROCK2</td>
+      <td>29</td>
+      <td>3,27701864</td>
+      <td>3,08277835</td>
+    </tr>
+  </tbody>
+</table>
 
 To validate novel candidate PKACα substrates, we overexpressed WT-PKACα or AS-PKACα together with flag- or GFP- tagged candidate proteins in 293 T cells, and used the 6-cHe-ATPγS as thiophosphate donor to thiophosphorylate substrates in lysates as described above. Lysate immunoprecipitation was carried out with M2 anti-flag beads or anti-GFP antibody coupled agarose beads, and the immune complexes were probed by western blot using thiophosphate antibody. The known PKA substrate NFATC1 served as a positive control. Five selected new candidate proteins (PPP1R12C, ATG16L1α, DDX17, ANKRD40 and ATG5) out of ninety-seven proteins were tested; four of these five proteins were confirmed to be thiophosphorylated by AS-PKACα, indicating that they are indeed direct substrates of AS-PKACα (Figure 1C). Only ATG5 was not thiophosphorylated by AS-PKACα in the validation of the screen (Figure 1C). Bioinformatic analysis of ATG5 amino acids sequence also failed to identify a consensus PKA substrate motif (R-R/K-X-S/T;K/R-X1-2-S/T) (Kennelly and Krebs, 1991). Since ATG5 directly binds to ATG16L1 (Matsushita et al., 2007; Mizushima et al., 1999), it likely co-precipitated with ATG16L1 in our screen.
 
 ATG5 and ATG16L1 are conserved core components of the autophagy process, and PKA activity has been shown to negatively regulate autophagy in S. Cervisiae and mammalian cells through phosphorylation of ATG1/ULK1 (Mizushima, 2010). ATG16L1 however has not previously been identified as a PKA target, prompting us to further investigate this interaction and the potential regulatory role of PKA and autophagy in endothelial sprouting.
 
-## Pkacα phosphorylates ATG16L1α at S268 and ATG16L1β at S269
+### Pkacα phosphorylates ATG16L1α at S268 and ATG16L1β at S269
 
 To identify the PKACα phosphorylation sites in ATG16L1, we spot-synthesized 25-mer overlapping peptides that cover the entire ATG16L1 protein. The peptide array was subjected to an in vitro PKA phosphorylation assay. Three peptides of the ATG16L1α and 7 peptides of ATG16L1β were phosphorylated compared to the negative control (Figure 2A, Supplementary file 1). The common amino acid sequences included in the phosphorylated peptides predicted Ser268 in ATG16L1α and Ser269 as well as Ser287 in ATG16L1β as potential PKA phosphorylation sites (Figure 2B). Indeed serine to alanine mutation S268A in ATG16L1α and S269A but not S287A mutation in ATG16L1β resulted in a loss of AS-PKACα thiophosphorylation of these two ATG16L1 isoforms (Figure 2C and D). Moreover, LC-MS/MS analysis demonstrated phosphorylation of ATG16L1α at S268 and of ATG16L1β at S269 (Figure 2E and F). Of note, thiophosphorylation was converted to normal phosphorylation by 1% TFA acid-catalyzed hydrolysis during sample preparation for LC-MS/MS, thus identifying the target sites as phosphorylated, not thiophosphorylated (Figure 2—figure supplement 1). Together, these results demonstrate that S268 and S269 are the PKACα phosphorylation sites of ATG16L1α and ATG16L1β, respectively.
 
-## Pkacα regulates ATG16L1 by phosphorylation-dependent degradation
+![Figure 2.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig2-v3.jpg)
+
+**Figure 2.:** (A) Peptide SPOT assay of ATG16L1 phosphorylation sites screening. (B) Amino acid sequence including potential PKACα phosphorylation sites in ATG16L1α and ATG16L1β according to the peptide SPOT assay result of Figure 2A. (C–D) Identification of PKACα phosphorylation site in ATG16L1α (C) and ATG16L1β (D). Analysis was performed as in Figure 1C. Western blots are representative of two independent experiments. (E–F) Flag tagged ATG16L1α and ATG16L1β were thio-phosphorylated by AS-PKACα and purified twice using M2 beads and thioP antibody coupled beads, followed by mass spectrometric analysis. LC-MS/MS spectra of the PKA- phosphorylated ATG16L1α tryptic peptide pSVSSFPVPQDNVDTHPGSGK and ATG16L1β tryptic peptide RLpSQPAGGLLDSITNIFGR. The results demonstrate that PKA phosphorylated ATG16L1α at S268 and phosphorylated ATG16L1β at S269.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) ATG16L1α (A) and ATG16L1β (B) thiophosphorylated and immunoprecopitated as in Figure 1C, then treated with or without 1% TFA at 37°C for 4 hr.
+
+### Pkacα regulates ATG16L1 by phosphorylation-dependent degradation
 
 Phosphorylation is one of the most widespread types of post-translational modification, and is crucial for signal transduction (Hunter, 1995; Manning et al., 2002; Ubersax and Ferrell, 2007). Previous research demonstrated that phosphorylation can regulate protein degradation by controlling its stabilization (Bullen et al., 2016; Geng et al., 2009; Hwang et al., 2009). To determine whether phosphorylation of ATG16L1α by PKA regulates protein stability, we overexpressed ATG16L1αWT and the mutant ATG16L1αS268A in HUVECs. To activate PKA, HUVECs were treated with the PKA specific activator 6-Bnz-cAMP. Using cycloheximide (CHX) to prevent new protein synthesis allowed us to detect the degradation of ATG16L1αWT and ATG16L1αS268A over time. Western blot analysis showed that most of the ATG16L1αWT degraded after 12 hr, whereas ATG16L1αS268A remained largely stable (Figure 3A), suggesting that the phosphorylation of ATG16L1α at site Ser268 by PKA promotes degradation. For ATG16L1β, Ser269 phosphorylation exhibited a similar function (Figure 3B). In addition, the phosphomimetic site mutants ATG16L1αS268D and ATG16L1βS269D were less stable than wild type ATG16L1α and ATG16L1β (Figure 3C–3D), supporting the idea that phosphorylation of ATG16L1α on site S268 and ATG16L1β on site S269 by PKA promotes degradation. In accordance, depleting PKACα in HUVECs by shRNA led to accumulation of ATG16L1 (Figure 3E) whereas activating PKA by 6-Bnz-cAMP caused ATG16L1 reduction (Figure 3F). Moreover, in PKA inhibited endothelial cells isolated from dnPKAiEC mice (Nedvetsky et al., 2016), ATG16L1 protein was also increased compared to endothelial cells isolated from corresponding Cdh5-CreERT2 control mice (Figure 3G). dnPKAiEC is the short denomination for Prkar1aTg/+ mice carrying a single floxed dominant-negative Prkar1a allele, (the regulatory subunit Prkar1a of PKA is an endogenous inhibitor of PKA) crossed with Cdh5-CreERT2 mice expressing tamoxifen inducible Cre recombinase under control of endothelial specific Cdh5 promotor (Nedvetsky et al., 2016). Taken together, these results indicate that PKACα regulates ATG16L1 by phosphorylation-dependent degradation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig3-v3.jpg)
 
-**Figure 3.:** (A–A'') HUVECs infected with Flag ATG16L1α (WT or S268A) were treated with 250 µM 6-bnz-cAMP and 20 µg/ml CHX at the time points indicated when they reached confluence (A). Quantifications of Flag ATG16L1α WT (A') and S268A (A'') expression. (B–B'') HUVECs infected with Flag ATG16L1β (WT or S269A) were treated with 250 µM 6-bnz-cAMP and 20 µg/ml CHX at the time points indicated when they reached confluence (B). Quantifications of Flag ATG16L1β WT (B') and S269A (B'') expression. (C–C'') HUVECs infected with GFP ATG16L1α (WT or S268D) were treated with 20 µg/ml CHX at the time points indicated when they reached confluence (C). Quantifications of GFP ATG16L1α WT (C') and S268D (C'') expression. (D–D'') HUVECs infected with GFP ATG16L1β (WT or S269D) were treated with 20 µg/ml CHX at the time points indicated when they reached confluence (D). Quantifications of GFP ATG16L1β WT (D') and S269D (D'') expression. (E–E') HUVECs infected with shRNA (scramble or shPKACα) virus were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (E). Quantifications of indicated protein expression (E'). (F–F') HUVECs treated with DMSO (control) and 500 µM 6-bnz-cAMP were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (F). Quantifications of indicated protein expression (F'). (G–G') Endothelial cells isolated from mice (wild type or dnPKAiEC) were lysed in RIPA buffer and ATG16L1 protein was analyzed by western blot (G). Quantifications of indicated ATG16L1 expression (G'). Data present the mean ± SD of 3 independent experiments. *P<0,05; **P<0,01; ***P<0,001; ****P<0,0001.Figure 3—source data 1.Figure 3A, B, C, D, E, F and G.
+**Figure 3.:** (A–A'') HUVECs infected with Flag ATG16L1α (WT or S268A) were treated with 250 µM 6-bnz-cAMP and 20 µg/ml CHX at the time points indicated when they reached confluence (A). Quantifications of Flag ATG16L1α WT (A') and S268A (A'') expression. (B–B'') HUVECs infected with Flag ATG16L1β (WT or S269A) were treated with 250 µM 6-bnz-cAMP and 20 µg/ml CHX at the time points indicated when they reached confluence (B). Quantifications of Flag ATG16L1β WT (B') and S269A (B'') expression. (C–C'') HUVECs infected with GFP ATG16L1α (WT or S268D) were treated with 20 µg/ml CHX at the time points indicated when they reached confluence (C). Quantifications of GFP ATG16L1α WT (C') and S268D (C'') expression. (D–D'') HUVECs infected with GFP ATG16L1β (WT or S269D) were treated with 20 µg/ml CHX at the time points indicated when they reached confluence (D). Quantifications of GFP ATG16L1β WT (D') and S269D (D'') expression. (E–E') HUVECs infected with shRNA (scramble or shPKACα) virus were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (E). Quantifications of indicated protein expression (E'). (F–F') HUVECs treated with DMSO (control) and 500 µM 6-bnz-cAMP were lysed in RIPA buffer and proteins were analyzed by western blot using indicated antibodies (F). Quantifications of indicated protein expression (F'). (G–G') Endothelial cells isolated from mice (wild type or dnPKAiEC) were lysed in RIPA buffer and ATG16L1 protein was analyzed by western blot (G). Quantifications of indicated ATG16L1 expression (G'). Data present the mean ± SD of 3 independent experiments. *P<0,05; **P<0,01; ***P<0,001; ****P<0,0001.
 
-## Inhibition of autophagy partially normalizes the vascular phenotype caused by PKA-deficiency
+### Inhibition of autophagy partially normalizes the vascular phenotype caused by PKA-deficiency
 
 ATG16L1 is an important component of the ATG16L1-ATG5-ATG12 protein complex, required for LC3 lipidation and autophagosome formation. Both LC3 lipidation and autophagosome formation represent essential steps in autophagy (Kuma et al., 2002; Levine and Kroemer, 2008; Matsushita et al., 2007; Mizushima et al., 2003; Mizushima et al., 1999). Accumulation of ATG16L1 upon PKA knock down resulted in increased levels of the positive autophagy marker LC3II whilst reducing the negative autophagy marker p62 in HUVECs (Figure 3E) whereas depleting ATG16L1 by 6-Bnz-cAMP mediated PKA activation resulted in decreased levels of LC3II whilst increasing p62 in HUVECs (Figure 3F). Since ATG16L1 protein levels in endothelial cells isolated from dnPKA mice were also increased, we hypothesized that increased autophagy in endothelial cells may contribute to the vascular phenotype in these mice. If so, inhibiting autophagy could potentially normalize vascular hypersprouting in dnPKAiEC mice. To test this hypothesis, we crossed the ATG5 conditional knock out mice ATG5ECKO (ATG5flox/flox mice crossed with Cdh5-CreERT2 mice) with dnPKAiEC mice, performed retinal staining for isolectin B4 (IB4, membrane staining) and the tip cell specific marker ESM1, and quantified the IB4 and ESM1 positive areas. No significant difference were observed between Cdh5-CreERT2 control mice and ATG5ECKO mice on both the vascular plexus and tip cells. However, ATG5ECKO partially rescued both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice. Retinal stainings demonstrated that ATG5 deletion in endothelial cells in vivo, which shuts down ATG5-dependent autophagy, partially normalizes the hypersprouting phenotype of dnPKAiEC mice (Figure 4A–4F). Autophagy inhibitor chloroquine (CQ) treatment confirmed that autophagy inhibition can partially rescue both the hyperdense vascular plexus front and the increasing tip cells in dnPKAiEC mice (Figure 4—figure supplement 1) . Further more, although the ratio of proliferating endothelial cells was not significant different in retinas of the four groups of mice (Cdh5-CreERT2 control; ATG5ECKO;dnPKAiEC; and dnPKAiEC ATG5ECKO), the total number of endothelial cells and proliferating endothelial cells was deceased in dnPKAiEC ATG5ECKO compared to dnPKAiEC mouse retinas (Figure 5A–5D). Also the low levels of apoptotic endothelial cells showed no significant differences (Figure 5E–5F), suggesting that neither the rate of proliferation nor the frequency of apoptosis are drivers of PKA and ATG5 dependent vascular density and sprouting phenotypes. ATG5 deletion in endothelial cells instead appears to normalize the hypersprouting phenotype of dnPKAiEC mice by reducing the number of endothelial tip cells cells as well as the total number of proliferating endothelial cells. Although speculative at this time, a shorter cell cycle or more rounds of cycling per cell in the case of increased autophagy would for example explain the increased number of cells with unchanged ratio of proliferating endothelial cells. Altogether our results suggest that PKA regulates the switch from sprouting to stabilization of nascent vascular plexuses by limiting endothelial autophagy levels via ATG16L1 degradation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig4-v3.jpg)
+
+**Figure 4.:** (A–F) Mice were injected with tamoxifen from P1 to P3, then retinas were collected at P6. Isolectin B4 and ESM1 staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice. Representative images are shown (A,D). Quantifications of radial expansion (B), sprouts per 100µm (C), vascular area (E) and ESM1 positive area (F) per field of retinal fronts. 8-10 retinas were measured for each group, *P<0,05; **P<0,01; ***P<0,001; ****P<0,0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Mice were injected with tamoxifen from P1 to P3, and retinas were collected at P6. Isolectin B4 and ESM1 staining of P6 retinas isolated from wtPKA and dnPKAiEC mice treated with PBS or CQ. Representative images are shown (A,B). (C–D) Quantifications of vascular area (C) and ESM1 positive area (D) per field of retinal fronts. 30–35 fields (images) taken from 6 to 7 retinas were measured for each group, ****p<0,0001.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/46380/elife-46380-fig5-v3.jpg)
 
-**Figure 5.:** (A–D) Mice were injected with tamoxifen from P1 to P3, 50 µl 1 mg/ml EdU were I.P injected 2 hr before retinas collecting at P6. CD31 and ERG staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice followed by EdU Click-iT 647 dye labeling. Representative images are shown (A). Quantifications of endothelial cells (ERG positive cells) (B), proliferating endothelial cells (EdU and ERG positive cells) (C) and ratio of proliferating endothelial cells (EdU and ERG positive cells/ERG positive cells) (D). 6–9 retinas were measured for each group, *p<0,05; **p<0,01; ***p<0,001; ****p<0,0001. (E–F) Mice were injected with tamoxifen from P1 to P3, then retinas were collected at P6. CD31 and Cleaved caspase 3 staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice. Representative images are shown (E). Quantifications of endothelial apoptosis (F). 6–8 retinas were measured for each group.Figure 5—source data 1.Figure 5B), proliferating endothelial cells (EdU and ERG positive cells) (figure 5C), ratio of proliferating endothelial cells (EdU and ERG positive cells/ERG positive cells) (Figure 5D) and endothelial apoptosis (Figure 5F).
+**Figure 5.:** (A–D) Mice were injected with tamoxifen from P1 to P3, 50 µl 1 mg/ml EdU were I.P injected 2 hr before retinas collecting at P6. CD31 and ERG staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice followed by EdU Click-iT 647 dye labeling. Representative images are shown (A). Quantifications of endothelial cells (ERG positive cells) (B), proliferating endothelial cells (EdU and ERG positive cells) (C) and ratio of proliferating endothelial cells (EdU and ERG positive cells/ERG positive cells) (D). 6–9 retinas were measured for each group, *p<0,05; **p<0,01; ***p<0,001; ****p<0,0001. (E–F) Mice were injected with tamoxifen from P1 to P3, then retinas were collected at P6. CD31 and Cleaved caspase 3 staining of P6 retinas isolated from wtPKA with wtATG5 or ATG5ECKO mice and dnPKAiEC with wtATG5 or ATG5ECKO mice. Representative images are shown (E). Quantifications of endothelial apoptosis (F). 6–8 retinas were measured for each group.
 
 ## Discussion
 
@@ -91,60 +377,483 @@ Finally, on a technical note, the chemical genetics approach developed by Shokat
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Prkar1αtm2Gsm</td>
+      <td>PMID: 21533282</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Tg(Cdh5-cre/ERT2)1Rha</td>
+      <td>MGI:3848980</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>ATG5flox/flox</td>
+      <td>PMID: 16625204</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HUVEC</td>
+      <td>PromoCell and freshly isolated cells</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus)</td>
+      <td>pRRL.CMV.flag- PKACα</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus)</td>
+      <td>pRRL.CMV.flag- PKACαM120G</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pECE-M2-PPP1R12A</td>
+      <td>Addgene:31658</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>EGFPC1-huNFATc1EE-WT</td>
+      <td>Addgene: 24219</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pDESTmycDDX17, pRRL.CMV.flag-DDX17</td>
+      <td>Addgene: 19876 This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pMRX-IP/SECFP-hATG16L1 pRRL.CMV.flag- ATG16L1α</td>
+      <td>Addgene: 58994 This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.flag- ATG16L1β</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.GFP- ATG5</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.flag- ATG16L1α S268A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.flag- ATG16L1β S269A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.flag- ATG16L1β S287A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.flag- ATG16L1β S269A and S287A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.GFP- ATG16L1α</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.GFP- ATG16L1α S268D</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.GFP- ATG16L1β</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pRRL.CMV.GFP- ATG16L1β S269D</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLKO.1-TRC cloning shRNA vector</td>
+      <td>Addgene: 10878</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pLKO.1-TRC shPKACα</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Thiophosphate ester antibody [51-8]</td>
+      <td>Abcam: ab92570</td>
+      <td></td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Thiophosphate ester antibody [51-8]</td>
+      <td>Abcam: ab133473</td>
+      <td></td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (14C10) Rabbit mAb</td>
+      <td>cell signaling: #2118</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Atg16L1 (D6D5) Rabbit mAb</td>
+      <td>cell signaling: #8089</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LC3B (D11) XP Rabbit mAb</td>
+      <td>cell signaling: #3868</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKA C-α Antibody</td>
+      <td>cell signaling: #4782</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SQSTM1/p62 (D5E2) Rabbit mAb</td>
+      <td>cell signaling: #8025</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-PKA Substrate (RRXS*/T*) (100G7E) Rabbit mAb</td>
+      <td>cell signaling: #9624</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP Tag Polyclonal Antibody</td>
+      <td>Invitrogen: A11122</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-Actin(c-11)</td>
+      <td>Santa Cruz Biotechnology: sc-1615</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANTI-FLAG antibody produced in rabbit</td>
+      <td>Sigma: F7425</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal ANTI-FLAG M2 antibody produced in mouse</td>
+      <td>Sigma: F3165</td>
+      <td></td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody</td>
+      <td>cell signaling: #7074</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-goat IgG-HRP</td>
+      <td>Santa Cruz Biotechnology: sc-516086</td>
+      <td></td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Donkey Anti-Mouse IgG (H+L)</td>
+      <td>Jackson Immuno Research: 715-035-151</td>
+      <td></td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isolectin GS-IB4 From Griffonia simplicifolia, Alexa Fluor 488 Conjugate</td>
+      <td>Thermo Fisher: I21411</td>
+      <td></td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Endocan/ESM-1 Antibody</td>
+      <td>R and D: AF1999</td>
+      <td></td>
+      <td>IF 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Thermo Fisher: A21432</td>
+      <td></td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-ERG</td>
+      <td>Abcam: ab92513</td>
+      <td></td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-cleaved caspase 3</td>
+      <td>R and D: AF835</td>
+      <td></td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD31</td>
+      <td>BD Pharmingen: BD553370</td>
+      <td></td>
+      <td>IF 1:200 IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Thermo Fisher: A21208</td>
+      <td></td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Thermo Fisher: A31572</td>
+      <td></td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>NEB: E0554S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lenti-X p24 Rapid Titer Kit</td>
+      <td>Clontech:632200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Silver Stain Kit</td>
+      <td>Thermo Fisher:24600</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 647 Imaging Kit</td>
+      <td>Thermo fishier:C10340</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-tremeGENE HP DNA transfection reagent</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-cHe-ATPγS</td>
+      <td>Biolog:C127</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sp-8-CPT-cAMPS</td>
+      <td>Biolog:C012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-bnz-cAMP</td>
+      <td>Biolog:C009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>image J</td>
+      <td>image J</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Prism 7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recombinant Protein G Agarose</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sheep anti-Rat IgG-coupled Dynabeads</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human Umbilical Vein Endothelial Cells (HUVECs) were freshly isolated (or purchased from Promocell) and cultured in Endothelial Cell Growth Medium (Ready-to-use) (Promocell), passage 3 to 5 were used for experiments. HEK293T cells were cultured in Dulbecco's Modified Eagle Medium (DMEM, Thermo Fisher) with 10% Fetal Bovine Serum (FBS, Thermo Fisher) and 50 U/ml penicillin and 50 mg/ml streptomycin (Thermo Fisher) in 5% CO2 at 37°C.
 
-## Plasmid construction
+### Plasmid construction
 
 Lentivirus vector pRRLsin.PPT.CMV.flag.MCS and pRRLsin.PPT.CMV.GFP.MCS were generated by resctrictional cloning of a sequence coding flag-tag/GFP-tag into the pRRLsin.PPT.CMV.MCS vector at XbaI and XmaI restriction sites. PKACα gene from mouse, ANKRD40 and ATG5 were amplified from total RNA extracted from HUVECs and cloned into the pRRLsin.PPT.CMV.flag/GFP.MCS vector. pECE-M2-PPP1R12A wt, EGFPC1-huNFATc1EE-WT, pDESTmycDDX17, pMRX-IP/SECFP-hATG16L1 were purchased from Addgene. pDESTmycDDX17, pMRX-IP/SECFP-hATG16L1 and subcloned to vector pRRLsin.PPT.CMV.flag.MCS. PKACα M120G, ATG16L1α S268A, ATG16L1β S269A, ATG16L1β S287A, ATG16L1β S269A and S287A were generated by site-directed mutagenesis using Q5 Site-Directed Mutagenesis Kit (NEB). ATG5, ATG16L1α, ATG16L1α S268D, ATG16L1β, ATG16L1β S269D were cloned into the pRRLsin.PPT.CMV.GFP.MCS vector. pLKO.1-TRC cloning shRNA vector (addgene) was used to clone PKACa shRNA constructs targeting sequence: TAGATCTCACCAAGCGCTTTG and TCAAGGACAACTCAAACTTAT.
 
-## Lentivirus production and infection
+### Lentivirus production and infection
 
 For lentivirus production, HEK293T cells, seeded in 150 mm dishes, were transfected with flag-tagged or GFP-tagged constructs, psPAX2 and pMD2.G using X-tremeGENE HP (Roche) as transfection reagent. Medium was changed 12–16 hr after transfection. Lentivirus-containing medium was collected in 24–48 hr afterwards and filtered through 0.45 filters. Lentivius titers were determined with Lenti-X p24 Rapid Titer Kit (Clontech). To infect HUVEC, lentivirus (MOI 20–50) and polybrene (final concentration 8 μg/ml) was added to cells for 18–22 hr, and then the cells were washed with PBS and replaced the medium with fresh EGM2.
 
-## Protein extraction and western blot
+### Protein extraction and western blot
 
 Cells were lysed in RIPA buffer contained protease inhibitor cocktail and PhosSTOP (Roche). Protein concentrations were measured by Pierce BCA Protein Assay Kit. Samples were further diluted with SDS-loading buffer and SDS-PAGE was performed using NuPAGE 4–12% Bis-Tris Protein Gels (Invitrogen). Proteins were tranferred to nitrocellulose membrane with iBlot 2 Dry Blotting System (Thermo Fisher) or to PVDF membranes by wet blotting. Membranes were blocked with 5% nonfat milk in TBST and primary antibodies were incubated overnight at 4°C or 1.5 hr at room temperature. HRP-conjugated secondary antibodies were diluted and incubated 1 hr at room temperature. SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher) was used for imaging. Following antibodies were used: rabbit anti-thiophosphate ester (ab92570,1:5000) was from Abcam, goat anti-β-actin (sc-1615,1:2000) antibody, chicken anti-goat IgG-HRP (sc-516086,1:5000) were from Santa Cruz Biotechnology, rabbit anti-GAPDH (#2118,1:1000), rabbit anti-PKACa (#4782,1:1000), rabbit anti-ATG16L1 (#8089,1:1000), rabbit anti-p62 (#8025,1:1000), rabbit anti-LC3 (#3868,1:1000) antibodies and anti-rabbit IgG, HRP-linked antibody (#7074,1:2000) were from Cell Signaling, rabbit anti-flag (F7425,1:1000) and mouse anti-flag (F3165,1:1000) were from Sigma and rabbit anti-GFP (A11122,1:1000) was from Invitrogen. Peroxidase affinipure donkey anti-mouse IgG (715-035-151,1:2000) was from Jackson Immuno Research.
 
-## Chemical genetic screen and validation of PKA substrates
+### Chemical genetic screen and validation of PKA substrates
 
 HUVECs (6 10cm-dishes each containing 1 × 106 cells) were infected with lentivirus encoding either flag-PKACα WT (as negative control) or flag-PKACα M120G. 48 hr after infection, cells were stimulated with Sp-8-CPT-cAMPS (Biolog) for 10 min, then lysed in kinase lysis buffer (1% NP40, 142 mM NaCl, 25 mM Tris-HCl (pH 7.5), 5 mM β-glycerophosphate, 2 mM dithiothreitol, 0.1 mM Na3VO4, 10 mM MgCl2) with protease inhibitor cocktail on ice for 20 min and spun (16,000g × 10 min) to remove cell debries. 3.5 mM GTP and 350 μM 6-cHe-ATPγS (Biolog) were added to the lysates. After 30 min incubation at 30°C, 2.5 mM p-Nitrobenzyl mesylate (PNBM, Abcam) was added and the reaction was incubated for additional 2 hr at room temperature. PNBM was removed by Zeba Spin Desalting Columns, 7K MWCO (Thermo Fisher) and samples were washed with IP buffer (1% NP40, 150 mM NaCl, 50 mM Tris-HCl (pH 7.5), 0.5% sodium deoxycholate). The protein fractions were precleared by incubation with Recombinant Protein G Agarose for one hour at 4°C. The precleared samples were then incubated with anti-thiophosphate ester antibody (51-8; Abcam) coupled to Recombinant Protein G Agarose coupled gently rocking overnight at 4°C. The agarose beads were washed four times with IP buffer. 1/30 of the washed beads was boiled in SDS sample loading buffer for western blot detection or silver staining. The rest samples were used for mass spectrometry analyze.
 
 For validation of the identified substrates, 293 T cells (1.5 × 106 on a 6 cm dish) were transfected with 0.5 μg pRRL PKACα WT or pRRL PKACα M120G and 1.5 μg of indicated candidate substrate using X-tremeGENE HP DNA transfection reagent (Roche). 30 hr after transfection, cells were stimulated with Sp-8-CPT-cAMPS (Biolog) for 10 min, lysated and treated as described above.
 
-## Silver staining
+### Silver staining
 
 Silver staining was performed using Pierce Silver Stain Kit (Thermo Fisher,24600) according to the manufacturer’s protocol. Briefly, the SDS-page gel was washed in ultrapure water and fixed by fixing solution (30% ethanol,10% acetic acid) for 30 min. After incubating the gel in sensitizer working solution (provided in the kit) for 1 min, silver stain enhancer (provided in the kit) was added for another 5 min. Subsequently, the gel was incubated with developer working solution (provided in the kit) for 2–3 min, before stopping the reaction with stop solution (provided in the kit).
 
-## Mass spectrometry to identify new PKA substrates and phosphorylation sites
+### Mass spectrometry to identify new PKA substrates and phosphorylation sites
 
 For mass spectrometric analysis to identify new PKA substrates, samples were prepared by chemical genetical approach as described above, each sample was run on a stacking SDS-PAGE collecting all proteins in a single band. After coomassie blue staining, the minced gel pieces were digested with trypsin based on Shevchenko et al. (2006) in an automated fashion using a PAL robot (Axel Semrau/CTC Analytics). Samples were measured on an LTQ Orbitrap VELOS mass spectrometer (Thermo Fisher) connected to a Proxeon nano-LC system (Thermo Fisher). Five microliters of the sample was loaded on a nano-LC column (0.074 × 250 mm, 3 mm Reprosil C18; Dr. Maisch) and separated on a 155 min gradient (4%–76% acetonitrile) at a flow rate of 0.25 µl/min and ionized using a Proxeon ion source. Mass spectrometric acquisition was done at a resolution of 60,000 with a scan range of 200–1,700 m/z in FTMS mode selecting the top 20 peaks for collision-induced dissociation fragmentation. Tandem mass spectrometric scans were measured in ion-trap mode with an isolation width of 2 m/z and a normalized collision energy of 40. Dynamic exclusion was set to 60 s. For data analysis, the MaxQuant software package version 1.5.2.8 (Cox and Mann, 2008) was used. Carbamidomethylation on cysteine was set as a fixed modification and oxidized methionine, acetylated N-termini and phosphorylation as variable modifications. An FDR of 0.01 was applied for peptides and proteins and the Andromeda search (Cox et al., 2011) was performed using a mouse Uniprot database (August 2014). MS intensities were normalized by the MaxLFQ algorithm implemented in MaxQuant (Cox et al., 2014). MaxLFQ-normalized intensities among the replicates of the groups to be related were used for comparison. For downstream analysis R was used to calculate fold changes and t-statistics.
 
 For mass spectrometric analysis to identify phosphorylatin sites of ATG16L1, purified thiophosphorylated ATG16L1 proteins on beads were washed 3 times with 800 µl IP buffer followed by three times washing with 800 µl digestion buffer (20 mM Tris pH 8.0, 2 mM CaCl2) and dried. The washed beads were resuspended in 150 µl digestion buffer and incubated for 4 hr with 1 µg trypsin (Promega, catnr: V5111) at 37 °C. Beads were removed, another 1 µg of trypsin was added and proteins were further digested overnight at 37 °C. Peptides were acidified with 1% TFA and purified on Omix C18 tips (Agilent, catnr. A57003100), dried and re-dissolved in 20 µl loading solvent (0.1% TFA in water/acetonitrile (98:2, v/v)). Five microliters of the peptide mixture was injected for LC-MS/MS analysis on an Ultimate 3000 RSLC nano LC (Thermo, Bremen, Germany) in-line connected to a Q Exactive mass spectrometer (Thermo). Trapping was performed at 10 μl/min for 4 min in loading solvent on a 100 μm internal diameter (I.D.)×20 mm trapping column (5 μm beads, C18 Reprosil-HD, Dr. Maisch, Germany) and the sample was loaded on a reverse-phase column (made in-house, 75 µm I.D. x 220 mm, 1.9 µm. Peptides were eluted by a linear increase from 2% to 55% solvent B (0.08% formic acid in water/acetonitrile (2:8, v/v)) over 120 min at a constant flow rate of 300 nl/min. The mass spectrometer was operated in data-dependent mode, automatically switching between MS and MS/MS acquisition. Full-scan MS spectra (400–2000 m/z) were acquired at a resolution of 70,000 in the orbitrap analyzer after accumulation to a target value of 3,000,000. The five most intense ions above a threshold value of 17,500 were isolated (window of 2.0 Th) for fragmentation at a normalized collision energy of 25% after filling the trap at a target value of 50,000 for maximum 80 ms. MS/MS spectra (200–2000 m/z) were acquired at a resolution of 17,500 in the orbitrap analyzer. Raw LC-MS/MS data files were searched against the human proteins in the Uniprot/Swiss-Prot database (database version of September 2017 containing 20,237 human sequences, downloaded from www.uniprot.org). The mass tolerance for precursor and fragment ions were set to 4.5 and 20 ppm, respectively, during the main search. Enzyme specificity was set as C-terminal to arginine and lysine, also allowing cleavage at proline bonds with a maximum of two missed cleavages. Variable modifications were set to oxidation of methionine residues, acetylation of protein N-termini, phosphorylation and thiophosphorylation of serine, threonine and tyrosine residues. The minimum score for modified peptides was set to 40. The S-lens RF level was set at 50 and we excluded precursor ions with single, unassigned and charge states above five from fragmentation selection.
 
-## Peptide arrays, Peptide SPOT assay of ATG16L1 phosphorylation sites screening
+### Peptide arrays, Peptide SPOT assay of ATG16L1 phosphorylation sites screening
 
 Automatic peptide SPOT synthesis was carried out as described previously (Hundsrucker et al., 2006; Hundsrucker et al., 2010; Maass et al., 2015; Stefan et al., 2007). Fmoc-protected amino acids (Intavis) and amino-modified acid-stable cellulose membranes with PEG-spacers (Intavis) were used for peptide spots synthesis on an Intavis ResPep-SL device.
 
 For phosphorylation of the peptides by PKA (Maass et al., 2015), the membranes were activated in ethanol, blocked in blocking buffer (5% milk in TBS-T: Tris-HCl, 10 mM; NaCl, 150 mM; Tween 20, 0.05%; pH 7.4) for 3 hr at room temperature, and washed twice with incubation buffer (Tris-HCl, 50 mM; MgCl2, 5 mM; ATP, 100 µM). His-tagged recombinant catalytic subunits (vector pET46) were purified from E. coli (strain Rosetta D3) as described (Maass et al., 2015; Schäfer et al., 2013). The membranes were incubated with the recombinant protein (1 nM) in incubation buffer (1 hr, 30°C), washed three times with TBS-T, and phosphorylated serines were detected with PKA phosphosubstrate antibody directed against the consensus site RRX p(S/T) (Cell Signaling Technology, 100G7E, rabbit mAB #9624) in blocking buffer overnight at 4°C (Christian et al., 2011). The membranes were washed three times with TBS-T, and a secondary horseradish peroxidase (HRP)-coupled donkey anti-rabbit antibody (#711-036-153; Jackson Immuno Research) was added (3 hr, RT). After three washs with TBS-T, an ECL system (Immobilon Western substrate, Merck Millipore) and an Odyssey FC device (Li-Cor ) was used for visualizing phosphorylated serines.
 
-## Animal procedures
+### Animal procedures
 
 All animal experimental procedures were approved by the Institutional Animal Care and Research Advisory Committee of the University of Leuven and performed according to the European guidelines. Following mouse strains were used: Prkar1atm2Gsm (Willis et al., 2011), Tg(Cdh5-cre/ERT2)1Rha (Wang et al., 2010) and ATG5flox/flox (Hara et al., 2006). All animals used in the experiments were of mixed N/FVB x C57/Bl6 background. For chloroquine rescue retinal angiogenesis experiment, pups were intraperitoneally injected with 50 μl of 1 mg/ml tamoxifen from postnatal day one (P1) to P3, and 100 μl of 1.25 mg/ml chloroquine or PBS from P1 to P5. Mice were euthanized at P6, and dissection and staining of the retinas were performed as described below. For ATG5 deletion in endothelial cells rescue retinal angiogenesis experiment and apoptosis assay in retinal endothelial cells, pups were intraperitoneally injected with 50 μl of 1 mg/ml tamoxifen from P1 to P3 and euthanized at P6. For proliferation assay in retinal endothelial cells, 50 μl of 1 mg/ml EdU (Thermo fishier,C10340) were intraperitoneally injected 2 hr before euthanizing the mice at P6. For endothelial cells isolation, pups were intraperitoneally injected with 75 μl of 1 mg/ml tamoxifen daily from P7 until P10 and the mice were euthanized at 8 weeks and endothelial cells were isolated as described below.
 
-## Retinal angiogenesis assay
+### Retinal angiogenesis assay
 
 To analyse retinal angiogenesis, the procedures of isolation and staining of the retinas were performed as published (Pitulescu et al., 2010). Briefly, retinas were dissected in PBS and blocked/permeabilized in retina blocking buffer (1% BSA and 0.3% Triton X-100 in PBS) for 1–2 hr at room temperature. Alexa Fluor 488 conjugated Isolectin GS-IB4 (Invitrogen) diluted in Pblec solution (1 mM MgCl2, 1 mM CaCl2, 0.1 mM MnCl2 and 1% Triton X-100 in PBS) was added to visualize whole-retina vasculature by incubating overnight at 4°C, followed by staining for ESM1 (primary goat anti-ESM1 antibody; R and D Systems). After mounting, images of retinas were taken using a Leica SPE confocal microscope equipped with a HC PL APO 20X/0.75 IMM CORR CS2 objective or Leica SP8 confocal microscope equipped with a HCX IRAPO L 25X/0.95 W objective. Images were taken at room temperature using Leica LAS X software and processed with image J software.
 
-## Retinal endothelial proliferation and apoptosis assay
+### Retinal endothelial proliferation and apoptosis assay
 
 To perform endothlial proliferation and apoptosis assays, mouse eyes were collected at P6 and fixed for 30 min at room temperature with 4% PFA. Retinas were dissected in PBS and blocked/permeabilized in 1% BSA, 50 μg/ml digitonin in PBS, primary antibodies (rat anti-CD31,BD553370; rabbit anti-ERG,ab92513; rabbit anti-Cleaved caspase 3,AF835) were incubated overnight at 4°C and secondary antibodies (Thermo fisher) were incubated for 2 hr at room temperature. Both antibodies were diluted in1% BSA, 2% donkey serum, 50 μg/ml digitonin in PBS. The Click-iT Edu cell proliferation kit (C10340) was used to visualize proliferating endothelial cells. After mounting, images of retinas were taken using a Leica SPE confocal microscope equipped with a ACS APO 40X/1.15 oil CS objective or Leica SP8 confocal microscope equipped with a HCX IRAPO L 25X/0.95 W objective. Images were taken at room temperature using Leica LAS X software and processed with image J software.
 
-## Endothelial cell isolation from liver or lung
+### Endothelial cell isolation from liver or lung
 
 Livers or lung lobes were collected in dry 10 cm dishes and minced finely with blades for one minute, and then incubated in 25 ml of pre-warmed Dulbecco modified Eagle medium (4.5 g/L glucose with L-glutamine) containing 2 mg/mL collagenase (Invitrogen) in 50 ml tubes, gently shaking for 45 min at 37°C. Suspensions were passed through a 70 μm cell strainer (VWR) and cells were spun down at 400 g for 8 min at 4°C. Pellets were resuspended in 10 ml Dulbecco modified Eagle medium containing 10% FBS, 50 U/ml penicillin and 50 μg/ml streptomycin, passed through 40 μm Nylon cell strainer (BD Falcon, Cat. No. 352340) and centrifuged at 400 g for 8 min at 4°C. Cells were resuspended in cold DPBS (1 ml/lung and 2 ml/liver), added to sheep anti-Rat IgG-coupled Dynabeads (Invitrogen) pre-incubated with purified Rat Anti-Mouse CD31 (BD Pharmingen) and incubated at 4°C for 20 min. The beads were separated using a magnetic particle concentrator (Dynal MPC-S; Invitrogen) and washed with cold DPBS with 0.1% BSA. This washing step was repeated five times after which cells were lysed in RIPA buffer for Western Blotting.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism 7. The one-way ANOVA was used to compare more than two experimental groups.

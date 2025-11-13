@@ -22,9 +22,9 @@
 
 1. Institut Curie, Laboratory of Genetics and Developmental Biology, PSL Research University, INSERM U934, CNRS UMR3215 Paris France
 2. Sorbonne University, UPMC University of Paris VI Paris France
-3. https://ror.org/043wmc583 IGF, University of Montpellier, CNRS, INSERM Montpellier France
-4. https://ror.org/013cjyk83 Institut Curie, PSL Research University, CNRS UMR 144 Paris France
-5. https://ror.org/013cjyk83 Institut Curie, PSL Research University, Laboratory of Mass Spectrometry and Proteomics Paris France
+3. IGF, University of Montpellier, CNRS, INSERM Montpellier France ([ROR:043wmc583](https://ror.org/043wmc583))
+4. Institut Curie, PSL Research University, CNRS UMR 144 Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+5. Institut Curie, PSL Research University, Laboratory of Mass Spectrometry and Proteomics Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
 
 † Corresponding author
 
@@ -44,35 +44,75 @@ To study epithelial communications in a stroma-free environment, we analysed the
 
 ## Results
 
-## Tumour cells induce a cancer-like behaviour in WT intestinal epithelial cells
+### Tumour cells induce a cancer-like behaviour in WT intestinal epithelial cells
 
 To mimic intratumoral heterogeneity in stroma-free conditions, we co-cultured tumoroids derived from primary intestinal tumours of Apc1638N/+ mutant mice (Fodde et al., 1994), labelled by membrane tdTomato (Muzumdar et al., 2007) with WT GFP-marked small intestinal organoids, derived from LifeAct-GFP mice (Riedl et al., 2008; Figure 1—figure supplement 1A). Within 24–48 hr of co-culture with tumoroids, WT organoids (up to 20%), normally displaying the stereotypical budding morphology (Sato et al., 2009; Figure 1A), adopted an unpolarised hollow cystic shape presenting a diameter larger than 100 µm (indicated by arrows in Figure 1B), closely resembling the morphology of Apc mutant tumoroids (Schwank et al., 2013; Figure 1C). To assess if this morphological change was due to mid-range paracrine or juxtacrine signals, we cultured WT organoids in cM from either wildtype (WT-cM) or tumour (T-cM) organoids. Consistent with our observations from co-cultures, WT organoids exposed to T-cM (Figure 1E), but not to WT-cM (Figure 1D), grew as cysts, suggesting that tumoroids secrete factors able to morphologically alter WT epithelial cells. Tumoroids derived from different primary tumours reproducibly induced the cystic ‘transformation’, albeit to variable extents (Figure 1—figure supplement 1B). Of interest, the cM from Apc-/- organoids (derived from VillinCreERT2; Apcflox/flox mice), where Apc knockout was induced by Cre recombination and did not rely on spontaneous Apc LOH, reproduced the effect of T-cM and induced a cystic morphology in WT organoids, confirming a direct effect caused by aberrant Wnt signalling (Figure 1—figure supplement 1C). The morphological change was all the more remarkable as it occurred within 6–12 hr of exposure to T-cM (Figure 1—figure supplement 1D and E) and was reversed after 2–4 days, if no fresh medium was added, suggesting exhaustion of the responsible factor(s) and ruling out the possibility of acquired genetic mutations in normal organoids. Since a cystic organoid morphology has been linked to Wnt pathway activation, we analysed the expression of the quantitative Wnt reporter 7TG (Brugmann et al., 2007). As shown in Figure 1F, cystic organoids grown in T-cM did not present canonical Wnt pathway activation (Figure 1F, right panel), unlike organoids stimulated with the small-molecule CHIR99021, an inhibitor of the enzyme GSK-3, widely used to simulate Wnt activation (Ring et al., 2003; Figure 1F, middle panel). Confirming these observations, we could not observe any significant difference in the number of Lgr5+ cells in the presence of T-cM compared to both WT-cM and normal ENR (Figure 1—figure supplement 1F), whereas exposure to the GSK3 inhibitor CHIR99021 (ENRC) resulted, as expected, in a significant increase in GFP+ cells. Despite absence of Wnt activation and similar numbers of Lgr5-expressing cells (Figure 1F, Figure 1—figure supplement 1F), we found that T-cM-exposed cystic organoids presented a higher proportion of cycling cells (compare cystic ‘C’ and budding ‘B’ in Figure 1G and Figure 1—figure supplement 1G). Moreover, while proliferative cells were restricted to the crypts in control organoids exposed to WT-cM (Figure 1H), cystic organoids in T-cM displayed undifferentiated proliferative cells scattered throughout the newly formed cysts (Figure 1I). The increase in proliferative cells is linked to defective enterocyte differentiation, as shown by loss of Keratin 20 expression (Figure 1I).
 
-## THBS1 mediates the organoid morphological and behavioural change
+![Figure 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig1-v1.jpg)
+
+**Figure 1.:** (A) WT budding organoids marked by LifeAct-GFP (in green) after 24 hr in culture in organoid medium (ENR). (B) WT organoids marked by LifeAct-GFP after 24 hr in co-culture with tdTomato-expressing tumoroids in ENR. Arrows indicate WT (green) cystic organoids. (C) APC mutant cystic tumoroids marked by tdTomato after 24 hr in culture. (D, E) WT budding organoids cultured for 24 hr in conditioned medium from WT organoids (WT-cM in D) or tumoroids (T-cM in E). Arrows indicate WT cystic organoids in (E). (F) Representative images of WT organoids expressing the Wnt reporter 7TG exposed to WT-cM, 10 µM CHIR99021 (CHIR 10 µM) or T-cM for 24 hr. Pseudo-colour shows log10 intensities of the reporter fluorescence. (G) Quantification of the percentage of EdU+ cells per organoid for budding organoids grown in WT-cM (B – WT-cM, n = 14), budding organoids grown in T-cM (B – T-cM, n = 13), or cystic organoids grown in T-cM (C – T-cM, n = 9). (H, I) Immunofluorescence for proliferative cells (EdU in red) and differentiated cells (anti-Keratin 20 in green) in WT organoids grown in WT-cM (H) or T-cM (I) for 24 hr. The corresponding bright-field (BF) images are shown in the right panels. DAPI stains DNA in blue. Scale bar = 100 µm. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental design of co-culture experiments with green organoids and red tumoroids at 3:1 ratio (wildtype [WT] organoids:tumoroids). ENR: medium containing EGF, Noggin, and R-spondin1. (B) Quantification of the percentage of WT cystic organoids in the presence of conditioned medium (cM) derived from the indicated cultures. (C) Quantification of the percentage of WT cystic organoids in the presence of cM derived from WT organoids, tumoroids, or three different Apc-/- organoids generated from hyperplastic small intestine of VillinCreERT2;Apcflox/flox mice. (D, E) Time-lapse analysis of the growth of WT organoids in the presence of WT-cM (D) or T-cM (E) (in hours:minutes). (F) Quantification of the percentage of Lgr5-GFP+ cells in WT organoids treated with ENR, ENR+CHIR99021 (ENRC), WT-cM or T-cM (n = 4 for each condition). (G) Quantification of the percentage of Ki67+ proliferative cells per organoid for budding organoids grown in WT-cM (B – WT-cM, n = 16), budding organoids grown in T-cM (B – TcM, n = 15) or cystic organoids grown in T-cM (C – T-cM, n = 9). Scale bar = 100 µm. Graphs indicate average values ± SD. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests.
+
+### THBS1 mediates the organoid morphological and behavioural change
 
 Cancer cells are known to secrete numerous factors to remodel the tumour microenvironment. Having established that the morphological change was mediated by proteins present in the T-cM, since the effect was abolished upon proteinase K treatment (Figure 2—figure supplement 1A), we performed a quantitative proteomics analysis by Stable Isotope Labelled Amino acids in Culture (SILAC) mass spectrometry to define the composition of the T-cM relative to WT-cM. Gene Ontology (GO) analysis of the proteins over-represented in T-cM showed enrichment in cell adhesion, wound healing, and generally ECM-related GO terms (Figure 2—figure supplement 1B). We selected secreted factors that were enriched in T-cM compared to WT-cM (Figure 2—figure supplement 1C) and explored their possible involvement in the morphological ‘transformation’ using neutralising antibodies. Among the tested candidates, we found that neutralisation of the secreted glycoprotein THBS1 alone was sufficient to entirely abolish the morphological change of WT organoids after 24 hr (Figure 2A, Figure 2—figure supplement 1D). Neutralisation of Thbs1 with three blocking antibodies, targeting different epitopes of the protein to exclude any potential non-specific binding, was sufficient to completely block the cystic morphology (Figure 2B, Figure 2—figure supplement 1E). These experiments demonstrated that THBS1 was necessary for the observed cystic phenotype.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig2-v1.jpg)
+
+**Figure 2.:** (A) Quantification of the percentage of WT cystic organoids in T-cM upon neutralisation with blocking antibodies against ceruloplasmin (CP), connective tissue growth factor (CTGF), hepatoma-derived growth factor (HDGF), galectin-3 (LGALS3), galectin-3 binding protein (LGALS3BP), thrombospondin-1 (THBS1), and transthyretin (TTR) (5 µg/ml). (B) Quantification of the percentage of WT cystic organoids in T-cM upon neutralisation with three different blocking antibodies against THBS1 (clones A4.1, A6.1, and C6.7 at 5 µg/ml). (C) Quantification of the percentage of EdU+ cells (2 hr pulse) per organoid for WT budding (B – IgG1, n = 9) or cystic organoids (C – IgG1, n = 4) exposed to T-cM in the presence of IgG1 or antibodies anti-THBS1 (B – anti-THBS1, n = 9). (D–F) Whole-mount immunostaining for proliferation (EdU in red) and apoptosis (anti-cleaved caspase-3, CASP3 in green) of WT organoids exposed to T-cM with anti-IgG1 control (D, E) or anti-THBS1 (F) antibodies. DAPI stains DNA in blue. The corresponding bright-field (BF) images are shown on the right panels. (G, H) Representative pictures of self-transformed WT organoids overexpressing Thbs1 (Lenti-Thbs1 in H) and control organoids infected with an empty vector (Lenti-Control in G). Black arrows indicate cystic organoids. (I) Quantification of the percentage of cystic organoids in Thbs1-expressing cultures (Lenti-Thbs1) versus control cultures (Lenti-Control) grown for 24 hr in ENR medium (n = 5). Scale bars = 100 µm in (D–F) and in the insets of (G, H) and 500 µm in (G, H) low magnification. Graphs indicate average values ± SD. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Proteinase K treatment of tumour conditioned medium (T-cM) abolished the cystic transformation. (B) Gene Ontology (GO) analysis of significantly enriched or unique proteins in T-cM compared to wildtype conditioned medium (WT-cM). (C) Volcano plot showing differential enrichment of proteins in T-cM compared to WT-cM by Stable Isotope Labelled Amino acids in Culture (SILAC)-based mass spectrometry. The selected candidates are indicated for one of the replicates in blue. The three different colours (black, blue, and green dots) correspond to three replicates (n = 3). (D) Representative bright-field images of WT organoids grown in T-cM upon neutralisation with blocking antibodies against the indicated proteins. (E) Representative bright-field images of WT organoids grown in normal medium (left panel) or T-cM upon neutralisation with control IgG1 or three different blocking antibodies against THBS1 (clones A4.1, A6.1, and C6.7). (F) Western blot anti-FLAG (targeting overexpressed THBS1-FLAG) and β-actin (loading control) in pure Matrigel, WT organoids infected with a control lentivirus (CTRL) or with lenti-Thbs1 (THBS1-Flag), HEK293T cells infected with lenti-Thbs1 (THBS1-Flag) or control lentivirus (CTRL). Scale bar = 100 µm in (A), 500 µm in (D, E) (100 µm in insets in E). Cystic organoids are indicated by red arrowheads in (A), (D), and (E).
+
 In order to test if THBS1 neutralisation was also able to rescue the ectopic proliferation, we counted the number of proliferative cells per organoid. Consistent with our previous observations, cystic organoids presented ectopically proliferating cells when cultured with IgG1 control antibodies (Figure 2C and E). However, addition of anti-THBS1 antibodies abolished ectopic proliferation and restricted EdU+ cells exclusively to the crypts (Figure 2C and F). Treatment with anti-THBS1 antibodies did not present toxicity to normal organoids, as no increase in apoptotic cells was observed (Figure 2D–F). Moreover, THBS1 was sufficient to induce the morphological change, since its ectopic expression in WT organoids (Figure 2—figure supplement 1F) also led to cyst development (Figure 2G–I), to the same extent as T-cM (Figure 2I). Of note, culture of WT organoids in the presence of recombinant THBS1 did not elicit any effect, possibly due to the lack of essential post-translational modifications.
 
-## THBS1 is necessary for the growth of tumoroids but not of normal organoids
+### THBS1 is necessary for the growth of tumoroids but not of normal organoids
 
 We observed that Thbs1 is exclusively expressed by tumour but not WT intestinal cells (Figure 2—figure supplement 1C, Figure 5—figure supplement 1D); surprisingly, we found that THBS1 is also essential for tumoroids’ growth. Indeed, neutralisation of THBS1 for 48 hr specifically reduced tumoroid survival and considerably arrested their growth (Figure 3A–D and G–J, Figure 3—figure supplement 1A). Importantly, the same tumoroid growth inhibition was observed upon Thbs1 genetic deletion (Figure 3E and F) using CRISPR-Cas9 knockout (Figure 3—figure supplement 1B–E). Quantification of the proportion of dividing cells showed that neutralisation of THBS1 significantly reduced tumoroids’ proliferative capacity (Figure 3M, N and P), without affecting the growth of normal organoids (Figure 3K, L and O), suggesting a promising therapeutic avenue.
 
-## WT organoids activate a regenerative/foetal transcriptional programme upon the influence of tumoroids’ conditioned medium
+![Figure 3.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Representative bright-field images of wildtype (WT) organoids (A, B) or tumoroids (C, D) incubated with IgG1 isotype control antibodies (A, C) or anti-THBS1 A6.1-neutralising antibody (B, D) (10 µg/ml). (E, F) Representative images of tumoroids infected with a lentivirus CRISPR-GFP without sgRNA (control in E) or with an sgRNA targeting Thbs1 (Thbs1-KO in F) 48 hr after replacement of single-cell seeding medium (ENRC) by tumoroid medium (EN). (G, H) Quantification of the number of tumoroids upon antibody neutralisation relative to their size: small tumoroids between 30 and 150 µm in (G); large tumoroids of more than 150 µm diameter in (H). (I) Quantification of the percentage of cystic tumoroids upon treatment by IgG1 isotype control antibodies or three different neutralising antibodies targeting THBS1 (as indicated) for 48 hr. (J) Paired quantification of the number of living tumoroids derived from four independent tumours (from four mice) upon treatment with three neutralising antibodies targeting THBS1 for 48 hr. Antibody concentration: 10 µg/ml. (K–N) Immunofluorescence staining for proliferative cells (EdU in red) and apoptosis (anti-cleaved caspase-3, CASP3 in green) in WT organoids (K, L) or tumoroids (M, N) exposed to IgG1 isotype control antibodies (K, M) or to anti-THBS1 A6.1-neutralising antibody (L, N). (O, P) Quantification of EdU+ cells per organoid (O) or tumoroid (P) in the presence of IgG1 control or anti-THBS1 (A6.1) antibodies. Scale bars = 100 µm. Graphs indicate average values ± SD. Statistical analysis was performed with paired Student’s t-test in (G–J) and two-tailed unpaired Welch’s t-tests in (O) and (P).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of tumoroids cultures grown for 48 hr in EN medium in the presence of control IgG1 or anti-THBS1-neutralising antibodies A6.1, A4.1, C6.7, as indicated. (B) Analysis of CRISPR edits from Sanger sequencing of DNA at the expected cut site for Cas9 in wildtype (WT) or THBS1 KO mouse embryonic fibroblasts infected with no sgRNA or sgRNA targeting Thbs1, respectively. Red boxes indicate the sgRNA sequences with the PAM sequence underlined in red; red vertical dashed lines indicate the expected cut site. (C, D) Representative images of tumoroids infected with lenti-CRISPR expressing no sgRNA (CTRL in C) or sgThbs1 (KO in D) probed for Thbs1 expression using single-molecule RNA fluorescence in situ hybridisation (smRNA FISH) with a probe recognising Thbs1 (pThbs1 in white). Red fluorescence indicates infected cells and DAPI stains the nuclei. (E) Quantification of the percentage of infected cells (red) expressing Thbs1 per organoid (n = 3). Scale bar = 500 µm in (A) and 100 µm in (C, D) and insets in (A). Statistical analysis was performed with two-tailed unpaired Welch’s t-tests.
+
+### WT organoids activate a regenerative/foetal transcriptional programme upon the influence of tumoroids’ conditioned medium
 
 In order to decipher the molecular responses of WT epithelial cells to T-cM, we obtained the gene expression profiles of WT organoids exposed to either T-cM or WT-cM, along with the transcriptional signature of the tumoroids from which the corresponding T-cM was derived. Interestingly, we found that T-cM induced transcriptional responses enriched for genes upregulated in cancer, including colorectal adenoma (Figure 4—figure supplement 1A, red), suggesting that, alongside the typical tumour-like cystic morphology, WT cells also acquire signatures characteristics of tumour cells when exposed to T-cM. Furthermore, this analysis revealed that organoids grown in the presence of T-cM showed enrichment of genes of the Yes-associated protein (YAP)/Hippo pathway (Figure 4—figure supplement 1A, green). Given the intricate relationship between Wnt signalling and YAP in the intestine, suggesting that tumour formation requires additional signals other than Wnt, that induce YAP nuclear translocation (Cai et al., 2015; Azzolin et al., 2014; Gregorieff et al., 2015; Taniguchi et al., 2015; Taniguchi et al., 2017; Guillermin et al., 2021), we assessed the involvement of the YAP pathway in T-cM-mediated phenotypes. First, we compared our RNA-sequencing results to a YAP activation signature from intestinal organoids (Gregorieff et al., 2015) using Gene Set Enrichment Analysis (GSEA) and found a strong correlation with both WT organoids (Figure 4A) and tumoroids (Figure 4D). Consistent with recent studies describing YAP activation as an integral part of the regenerative and foetal programmes of the normal intestinal epithelium (Yui et al., 2018), we found a robust association with the reported physiological ‘foetal human colitis’ intestinal signature (Yui et al., 2018; Figure 4B and E), suggesting a link between the morphological change we characterised and reactivation of regenerative/foetal programmes occurring during tumorigenesis. These findings indicate that WT organoids in the presence of tumour-secreted factors, including THBS1, switch their transcriptional programme from a Wnt-dependent homeostatic to a Wnt-independent, YAP-dependent regenerative/foetal-like response, repressing differentiation genes (Figures 1I, 4C and F) without significantly affecting Wnt signalling (Figure 1F, Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig4-v1.jpg)
+
+**Figure 4.:** Gene Set Enrichment Analyses (GSEA) showing the correlation between differentially expressed genes in WT organoids cultured in T-cM (A–C) or tumoroids (D–F) and the indicated transcriptional signatures. NES: Normalised Enrichment Score; green NES: positive correlation; red NES: inverse correlation. (G) Representative image of WT organoids expressing Cas9-GFP (in green) transduced with an sgRNA targeting Yap1 (sgYap1 in red). Higher magnification of a budding Yap1KO organoid (in yellow in G′) and a cystic Yap1WT organoid expressing only Cas9-GFP but no sgRNA (in green in G′′). (H) Percentage of cystic organoids induced by exposure to T-cM in WT, Yap1KO or Tead4KO organoids, as indicated. (I–N) Max projections of immunostaining for YAP1 (in red) of WT organoids exposed to WT-cM (I), or T-cM (J–L) for 24 hr presenting cystic (J) or budding (K, L) morphologies. Organoids in (L) are treated by neutralising antibodies targeting THBS1 (A6.1), which rescues the budding morphology. Organoids in (M) overexpress THBS1 (LentiThbs1) and tumoroids are shown in (N). DAPI stains DNA in blue. White arrowheads pinpoint YAPHIGH cells in Z-section insets. (O) Quantification of the percentage of nuclear YAP (nYAPHIGH) cells/organoid based on the ratio of nuclear vs. cytoplasmic YAP1 in cystic and budding WT organoids grown in WT-cM or T-cM for 24 hr, in WT organoids overexpressing Thbs1 (lenti-Thbs1) or tumoroids, as indicated. (P) Quantification of the percentage of nYAPHIGH cells/organoid in WT organoids cultured with T-cM and control IgG1 or anti-THBS1 (A6.1) antibodies for 24 hr. Scale bars correspond to 100 µm in (G, I–N). Graphs indicate average values ± SD. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests. For the lenti-Thbs1 sample, a Welch’s corrected t-test was applied to compare the percentage of nYAPHIGH cells/organoid between Thbs1-expressing organoids and WT organoids infected with an empty lentivirus.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pathway analysis of selected KEGG and GSEA-MSigDB terms enriched in the signatures of organoids grown in tumour conditioned medium (T-cM) (left panel) or tumoroids (right panel). (B) Gene Set Enrichment Analysis (GSEA) comparing differentially expressed genes in wildtype (WT) organoids exposed to T-cM or in tumoroids with the WNT signature (Nusse Lab). Green NES: positive correlation; grey NES: non-significant correlation. (C, D) Representative bright-field images of WT organoids grown in T-cM in the presence of DMSO (C) or the YAP inhibitor verteporfin (D). (E) Map of the lenti-sgRNA-tdTomato lentiviral vector used for knockout experiments and schematic diagram of the RosaCREERT2;Cas9-GFP mouse line used to derive WT organoids. (F) Analysis of CRISPR edits from Sanger sequencing of DNA at the expected cut site for Cas9 in mouse embryonic fibroblasts infected with no sgRNA (WT) or sgRNAs targeting Yap1 (KO in F, left) and Tead4 (KO in F, right). Red boxes indicate the sgRNA sequences with the PAM sequence underlined in red; red vertical dashed lines indicate the expected cut site. (G, H) Representative immunofluorescence against YAP1 (in red) of colonoids exposed to WT-cM (G) or T-cM (H) for 24 hr. DAPI stains DNA in blue. (I, J) Quantification of the percentage of YAPHIGH cells/organoid based on the ratio of nuclear vs. cytoplasmic YAP1 (I) or of EdU+ cells/organoid (J) in WT colonoids grown in WT-cM or T-cM. Scale bar = 100 µm. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests.
 
 To assess the functional significance of YAP pathway activation, we pharmacologically blocked it using verteporfin, an inhibitor of the YAP-TEAD interaction (Liu-Chittenden et al., 2012), and observed a complete loss of cystic organoids with no discernible effects on their growth (Figure 4—figure supplement 1C and D). We further corroborated these results through the genetic deletion by CRISPR/Cas9 of Yap1 and one of its cellular effectors, the transcription factor Tead4 (Guillermin et al., 2021), found upregulated upon exposure to T-cM (Figure 4—figure supplement 1E and F). Yap1 or Tead4 knockout in WT organoids (Figure 4G) caused a considerable decrease in the proportion of cystic organoids induced by T-cM, suggesting that the YAP/Hippo pathway mediates the morphological change (Figure 4H). We further found that WT organoids, upon T-cM exposure, displayed a higher number of cells with nuclear YAP1, a readout of YAP pathway activation and a typical characteristic of tumoroids (Figure 4I–K and O). Notably, T-cM induces nuclear YAP accumulation in both cystic and budding organoids (Figure 4J, K and O), suggesting that YAP activation is necessary but not sufficient to induce the switch to the cystic phenotype.
 
 Importantly, neutralisation of THBS1 with three blocking antibodies was sufficient to rescue both the cystic phenotype and YAP nuclear accumulation since the proportion of cells presenting nuclear YAP dropped to control levels (Figure 4L and P). Corroborating the key role of THBS1 in YAP activation, we also found that lentiviral overexpression of THBS1 (Lenti-Thbs1) was sufficient to trigger both cystic shapes and YAP nuclear translocation (Figure 4M and O). Furthermore, we assayed the effect of T-cM onto organoids derived from mouse colon (colonoids) and confirmed that T-cM also induced YAP activation and promoted proliferation in colonoids (Figure 4—figure supplement 1G–J), like in small intestinal organoids, consolidating the relevance of our findings to colon cancer.
 
-## Thbs1-expressing and YAP-activated tumour cells are mutually exclusive in mouse tumours
+### Thbs1-expressing and YAP-activated tumour cells are mutually exclusive in mouse tumours
 
 To further substantiate the in vivo relevance of our results, we induced acute Apc loss in VillinCreERT2;Apcflox/flox mice for a short time (4 days) and found that Thbs1 was ectopically expressed by Apc mutant intestinal epithelial cells, indicating that Thbs1 expression is induced by Wnt activation (Figure 5—figure supplement 1A–C). To demonstrate that YAP nuclear accumulation is induced in WT epithelial cells neighbouring mutant tumour cells, we induced mosaic Apc loss in both VillinCreERT2;Apcflox/+ and VillinCreERT2;Apcflox/flox mice, allowing us to study non-recombined WT epithelial cells adjacent to or within Apc mutant tumours. These experiments showed that in both Apc heterozygotes (Figure 5F) and homozygotes (Figure 5G) mice, the majority of the cells presenting nuclear YAP do not coincide with Apc mutant cells (displaying high levels of cytoplasmic and nuclear β-catenin, indicative of Wnt activation), but they are always in close proximity to mutant cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig5-v1.jpg)
+
+**Figure 5.:** (A, C) Representative section of Apc mutant intestinal tumours analysed by single-molecule fluorescence in situ hybridisation (smFISH) for Thbs1 (pThbs1, red dots) and Lgr5 (pLgr5, green dots in A) or the YAP target Sca1 (pSca1, green dots in C). Examples of segmented and processed region of interest (ROI) that were automatically counted as co-localisation (Thbs1+/Lgr5+ in A or Thbs1+/Sca1+ cells in C outlined in yellow and indicated by yellow arrows) or single-probe expression (outlined in red or green and indicated by arrows of the corresponding colour) are shown. E-cadherin demarcates epithelial cells in white and DAPI labels nuclei in blue in (A) and (C). (B, D) Quantification of the frequency of tumour regions expressing exclusively one probe or co-expressing two probes (yellow): Thbs1 only in red or Lgr5 only in green (B); Thbs1 only in red or Sca1 only in green (D). The observed frequencies of co-localisation (yellow in B) or mutual exclusion (yellow in D) are statistically significant compared to the calculated probability of random co-expression (blue columns) (n = 22 sections from two tumours in B and n = 51 sections from five tumours in D). (E) Correlation of the number of RNA molecules (dots/mm²) detected by single-molecule RNA fluorescence in situ hybridisation (smRNA FISH) for the YAP target CTGF and Thbs1 in mouse intestinal tumours. Red dots indicate large tumours (≥ 8 mm), orange dots small tumours (<8 mm). Dashed lines indicate 95% confidence intervals. (F, G) Representative sections of tumours derived from VillinCreERT2;Apcflox/+ (Apc+/- in F) or VillinCreERT2;Apcflox/flox (Apc-/- in G) immunostained for YAP1 (in red) and β-catenin (in green). Wildtype (WT) glands displaying membrane-bound β-catenin, adjacent to mutant areas presenting diffuse cytoplasmic/nuclear β-catenin expression are demarcated by dashed lines. White arrows indicate examples of cells showing high levels of nuclear YAP. Scale bars = 50 µm and 10 µm in insets. Statistical analysis was performed with Wilcoxon test in (B–D) and linear regression test with 95% confidence in (E).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76541/elife-76541-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Representative sections of single-molecule RNA fluorescence in situ hybridisation (smRNA FISH) targeting Thbs1 (pThbs1, red dots) in the small intestine of wildtype (WT) mice (ApcWT in A) or VillinCreERT2;Apcflox/flox mice (Apc-/- in B). (C) Quantification of the number of Thbs1 dots per field in ApcWT or Apc-/- small intestine. (D) Representative sections of smRNA FISH targeting Thbs1 (pThbs1, red dots) and the Wnt target Axin2 (pAxin2, green dots) in mouse intestinal tumours (Apc1638N). (E) Quantification of the percentage of probe-expressing area reflecting cells expressing Thbs1 only (red), Lgr5 only (green), or co-expressing both (yellow) annotated by three independent and double-blinded investigators, corresponding to Figure 5A and B. (F, G) Representative sections of mouse intestinal tumours analysed by smRNA FISH for Thbs1 (pThbs1, green dots) and immunostained with an antibody against the epithelial marker Keratin 20 (K20 in red in F) or with anti-THBS1 antibody (in red in G). (H, I) Representative sections of Apc mutant intestinal tumours analysed by smRNA FISH for the YAP target genes Ctgf (pCtgf, green dots in H) or Cyr61 (pCyr61, green dots in I) and Thbs1 (pThbs1, red dots). (J) Quantification of the percentage of probe-expressing area reflecting cells expressing Thbs1 only (red), Sca1 only (green), or co-expressing both (yellow) annotated by three independent and double-blinded investigators, corresponding to Figure 5C and D. (K) Representative sections of Apc mutant intestinal tumours immunostained for YAP1 (in red) and KI67 (in green). White arrows in insets show nuclear YAP1HIGH/Ki67+ cells (n = 6 sections from three tumours). (L) Representative sections of chemically induced colon tumours analysed by smRNA FISH for expression of Thbs1 (pThbs1, red dots) and the YAP target gene Sca1 (pSca1, green dots); regions presenting co-localisation of Thbs1 and Sca1 are outlined in yellow. (M) Quantification of the percentage of probe-expressing area reflecting cells expressing Thbs1 only (red), Sca1 only (green), or both (yellow). The observed mutual exclusion of red and green regions is statistically significant compared to the calculated probability of random co-expression (blue column) (n = 30 sections from five tumours). E-cadherin antibody in white demarcates epithelial cells in (A, B, D, H, L). DAPI labels nuclei in blue. Scale bar = 50 µm (10 µm in the insets). Statistical analysis was performed with two-tailed unpaired Welch’s t-tests in (C) (p=0.0506) and Wilcoxon test in (M).
+
 Consistent with these findings, we found that Thbs1+ cells in mouse tumours largely coincide with the cells expressing the widely accepted Wnt target genes Axin2 (Figure 5—figure supplement 1D) and Lgr5 (Barker et al., 2009; Figure 5A and B, Figure 5—figure supplement 1E), while they do not express the differentiation marker Keratin 20 (Figure 5—figure supplement 1F). The RNA probe recognising Thbs1 co-localises with the THBS1 protein visualised by antibody staining (Figure 5—figure supplement 1G). Furthermore, single-molecule RNA fluorescence in situ hybridisation (smRNA FISH) showed a clear and highly significant mutual exclusion between Thbs1-expressing cells and cells showing YAP activation, as assessed by expression of the YAP targets Ctgf (Figure 5—figure supplement 1H), Cyr61 (Figure 5—figure supplement 1I), Sca1 (Figure 5C and D, Figure 5—figure supplement 1J), and indicating the presence of two distinct tumour cell populations: one Thbs1+/Sca1- (64.61% ± 29.14%) and one Thbs1-/Sca1+ (30.40% ± 27.72%) (Figure 5D). Of relevance to colon cancer, these results are confirmed both in small intestinal adenomas (Apc1638N in Figure 5 and Figure 5—figure supplement 1A–K) and chemically induced colon tumours (Figure 5—figure supplement 1L and M). At the whole-tumour scale, Thbs1 and CTGF expression are highly correlated (Figure 5E and R² = 0.84).
 
-## The THBS1-YAP axis is conserved in early stages of human colorectal cancer
+### The THBS1-YAP axis is conserved in early stages of human colorectal cancer
 
 The main components of the signalling axis we have uncovered, Thbs1, Ctgf, and Cyr61, but not the Wnt target gene Lgr5, are highly correlated in bulk transcriptomics of human colorectal samples (Figure 6A). To establish if the mechanism mediating paracrine cellular communication that we uncovered is conserved in human colon cancer, we then analysed a cohort of 10 human colon tumours (five low-grade adenomas and five invasive carcinomas) for their expression of THBS1, LGR5, and YAP (Figure 6B–E). Supporting our results in mouse adenomas, the analysis of human tumours at different stages revealed that Thbs1 is highly expressed in Lgr5+ cells only in early-stage adenomas (Figure 6B) but not in advanced carcinomas (Figure 6C). Extensive co-expression of Thbs1 and Lgr5 in adenomas is accompanied by the presence of large tumour regions rich in cells presenting nuclear YAP (Figure 6D), which were not visible in invasive adenocarcinomas (Figure 6E). This intriguing observation can explain why no significant correlation between Thbs1 and Lgr5 expression was found in our in silico analysis of human advanced colon cancer (Figure 6A). These results, combined with our findings in organoids and transgenic mice, suggest a key role of the Thbs1-YAP axis in tumour initiation.
 
@@ -92,174 +132,182 @@ Based on the results we report here, we propose a model for tumour initiation wh
 
 ## Materials and methods
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Experiments were performed in biological and technical replicates as stated. For each experiment, we have used at least n = 3 organoid lines originating from n = 3 different mice, and experiments with at least n = 3 replicates were used to calculate the statistical value of each analysis. All graphs show mean ± SD. Statistical analysis was performed with two-tailed unpaired Welch’s t-tests, unless otherwise stated.
 
-## Transgenic mouse models
+### Transgenic mouse models
 
 All mouse lines used have been previously described. Intestinal tumours were generated in Apc1638N mutant mice (Fodde et al., 1994), crossed to the R26mTmG line (Muzumdar et al., 2007), or in VillinCreERT2 (el Marjou et al., 2004) crossed to Apc Delta14 (Colnot et al., 2004) mice, and Lgr5-GFP (Barker et al., 2007) mice were kindly provided by H. Clevers. GFP-expressing wildtype organoids were generated from the LifeAct-GFP mouse line (Riedl et al., 2008). Organoids used for KO experiments were obtained by crossing R26-LSL-Cas9-GFP (Platt et al., 2014) and R26CreERT2 mouse lines (Ventura et al., 2007). All mice used were of mixed genetic background.
 
-## Chemically induced colon tumour model
+### Chemically induced colon tumour model
 
-## AOM/DSS colon carcinogenesis experimental protocol
+#### AOM/DSS colon carcinogenesis experimental protocol
 
 To induce colon tumours, we followed the protocol from Tanaka et al., 2003: Notch1-CreERT2/R26mTmG mice of 5–7 months of age received a single intraperitoneal injection of AOM (Sigma #A5486) followed by DSS (MP Biomedicals #160110) administration (3% in drinking water) 1 day after the AOM injection for five consecutive days. General health status and mouse body weight were monitored daily during and after treatment. To verify the presence of colon tumours, two mice were checked 1 month after the first cycle of DSS treatment, but no tumours were detected (only signs of inflammation). We administered another cycle of DSS (3% in drinking water) for 3 days, and tumour formation was monitored by colonoscopy using a Karl Storz endoscopic system.
 
-## Human tumours
+### Human tumours
 
 Five low-grade adenomas and five invasive adenocarcinomas were obtained from the Centre of Biological Resources of Institut Curie and examined by the service of pathology.
 
-## Organoids cultures
+### Organoids cultures
 
-## Wildtype organoids
+#### Wildtype organoids
 
 Wildtype organoids were cultured and passaged as previously described (Sato et al., 2009) and derived from the small intestine or colon of 2–5-month-old mice. The Matrigel crypts mix was plated as 50 µl drops in 24-well plates or 35 µl drops in eight-well Ibidi imaging chambers (Ibidi 80827) for whole-mount staining. After polymerisation, the Matrigel drop was covered with wildtype organoid medium containing EGF, Noggin, R-spondin1 (ENR) for small intestinal organoids or EGF, Noggin, R-spondin1, CHIR99021, Y27632, Wnt3a (ENRCYW) for colonoids. Reagents, media, and buffers are listed in the Key resources table. Factors, inhibitors, and neutralising antibodies that were added to the medium are also indicated in the Key resources table.
 
-## Tumoroids
+#### Tumoroids
 
 Apc1638N heterozygous mice of more than 6 months of age were dissected and intestinal tumours were harvested using forceps and micro-dissection scissors to reduce contamination with adjacent healthy tissue. Periampullary tumours were excluded from the study to avoid contamination with stomach cells. To remove the remaining healthy tissue surrounding the extracted tumour, tumours were incubated in 2 mM EDTA in PBS (pH = 8.0) for 30 min at 4°C. Tumours were then briefly vortexed to detach the remaining normal tissue, leaving clean spheres. In order to dissociate tumour cells, the tumour was chopped into 1–3 mm fragments using a razor blade and digested in 66% TrypLE (Thermo Fisher 12605010) diluted in PBS, for 10 min at 37°C under continuous agitation at 180 rpm. The supernatant containing the dissociated cells was harvested, and fresh 66% TrypLE was added to the remaining fragments for another 10 min. The supernatant was strained using a 70 µm cell strainer. Cells were then centrifuged at 400 × g for 5 min at 4°C, suspended in DMEM-F12 (2% Penicillin-Streptomycin) and plated in 50% Matrigel drops as described for wildtype organoid cultures. After polymerisation, 300 µl of EN medium containing EGF and Noggin (EN) was added. The medium was replaced every 1–2 weeks. Tumoroids were passaged every 1 (for line expansion) or 3–4 weeks (for medium conditioning). Reagents and medium composition are listed in the Key resources table.
 
-## Co-culture assay
+### Co-culture assay
 
 Wildtype and tumour organoid cultures were started at least 2 weeks before co-culture in order to use stable and exponentially growing cultures. These passages guaranteed morphologically homogeneous organoids. After passage of wildtype and tumour organoids, the fragments were mixed at approximately 3:1 wildtype organoid to tumoroids ratio. Mixed fragments were plated as described above. After Matrigel polymerisation at 37°C, ENR medium (300 µl/well) was added. Reagents and medium composition are listed in the Key resources table.
 
-## Conditioned medium assay
+### Conditioned medium assay
 
 WT organoids were passaged as previously described. After Matrigel polymerisation, 150 µl of ENR 2× concentrated and 150 µl of cM were added. Analyses were performed between 24 and 48 hr after plating, unless otherwise specified.
 
-## Tumoroid conditioned medium preparation
+### Tumoroid conditioned medium preparation
 
 Established tumoroid cultures (more than two passages) were grown for 1 week. After 1 week of expansion, fresh medium was added and conditioned for 1–2 weeks depending on the organoid density. Immediately after harvesting, the cM was centrifuged at 400 × g for 5 min at 4°C to remove big debris and cell contamination. The supernatant was recovered and centrifuged again at 2000 × g for 20 min at 4°C and then ultracentrifuged at 200,000 × g for 1.5 hr at 4°C in order to remove extracellular vesicles. The supernatant was snap-frozen in liquid nitrogen and stored at –80°C.
 
-## WT conditioned medium preparation
+### WT conditioned medium preparation
 
 WT intestinal organoid cultures were passaged and grown for 3 days in order to obtain high-density cultures. Then, fresh ENR medium was conditioned for 1 week and prepared as described above.
 
-## Organoid freezing
+### Organoid freezing
 
 Matrigel drops containing organoids in exponential growth were collected in PBS and centrifuged twice at 400 × g for 5 min at 4°C to remove Matrigel and debris. The organoids were suspended at a high density in Cryostor10 freezing medium (six wells of organoids per 1 ml of cryogenic medium). Organoids were incubated for 10 min in Cryostor10 before being frozen.
 
-## Organoid thawing
+### Organoid thawing
 
 Organoids were quickly thawed at 37°C and suspended in 5 ml of FBS prior to centrifugation at 400 × g for 5 min at 4°C. The organoids were suspended in DMEM-F12 with 2% Penicillin/Streptomycin and mixed with Matrigel at a 1:1 ratio as described above. After polymerisation at 37°C, ENR or EN medium was added. Due to the FBS impact on organoid morphology, the thawed organoids were passaged at least once and carefully checked for their morphology prior to use. Reagent and medium composition are listed in the Key resources table.
 
-## Organoid infection
+### Organoid infection
 
 Wildtype or tumour organoids were put in culture at least 1 week before viral transduction. To plate 8 wells of infected organoids, 12 wells of exponentially growing organoids were harvested in cold Cell Recovery Solution and incubated on ice for 15 min to dissolve the Matrigel. Organoids were then centrifuged at 400 × g for 5 min at 4°C. For cell dissociation, the pellet was suspended in 2 ml of AccuMax (Sigma A7089) containing CHIR99021, Y27632 (CY), and incubated at 37°C for 8 min. Digestion was then stopped by adding 2 ml of DMEM-F12 containing B27 and CY. Organoids were further mechanically dissociated by pipetting up and down 40–50 times. The cell suspension was then centrifuged at 400 × g for 5 min at 4°C. Organoids were carefully suspended in 300 µl of 66× concentrated virus (see below) containing CY and TransDux reagents prior to addition of 300 µl of cold-liquid Matrigel and plated as previously described. After polymerisation at 37°C, 300 µl/well of ENR-CY medium was added. ENR-CY was replaced by ENR 2 days later. This is essential to avoid a morphological change to cysts due to exposure to CHIR99021. After 4 days, organoids were passaged and cultured as described above. Reagents and medium composition are listed in the Key resources table.
 
-## Lentiviruses
+### Lentiviruses
 
-## Plasmids
+#### Plasmids
 
 Lenti-7TG was a gift from Roel Nusse (Addgene plasmid# 24314; http://n2t.net/addgene:24314; RRID:Addgene_24314). The Lenti-sgRNA-mTomato (LRT) construct was obtained by replacement of the GFP sequence with tandem Tomato in the Lenti-sgRNA-GFP (LRG), a gift from Christopher Vakoc (Addgene plasmid# 65656; http://n2t.net/addgene:65656; RRID:Addgene_65656). LentiCRISPRv2GFP was a gift from David Feldser (Addgene plasmid# 82416; http://n2t.net/addgene:82416; RRID:Addgene_82416). LentiThbs1Tg is a lentiORF-expressing mouse Thbs1 (NM_011580) –myc-DKK (Origene# MR211744L3V). pMD2.G was a gift from Didier Trono (Addgene plasmid# 12259; http://n2t.net/addgene:12259; RRID:Addgene_12259). psPAX2 was a gift from Didier Trono (Addgene plasmid# 12260; http://n2t.net/addgene:12260; RRID:Addgene_12260).
 
-## sgRNA cloning
+#### sgRNA cloning
 
 Both lentivirus backbones used for the knockout experiments harboured the GeCKO cloning adaptors (Shalem et al., 2014; Sanjana et al., 2014). The sgRNAs inserted in either vectors are listed in the Key resources table.
 
-## Virus production
+#### Virus production
 
 Lentiviral particles were produced in HEK 293T cells. Day 0: 8 × 106 cells were plated onto a T75 flask in 10 ml of complete medium. Day 1: cells were transfected using PEI/NaCl. For this, two solutions were prepared: mix A contained 625 µl NaCl 150 mM + 75 µl PEI and mix B contained 625 µl NaCl 150 mM + 6 µg of plasmid DNA at a molar ratio of 4:3:2 (lentiviral vector: psPAX2: pMD2.G). Mix A and B were incubated for 5 min at room temperature (RT) and then mixed and incubated for 15 min at RT before being added drop by drop on top of the cells. Medium was changed on day 2, and 10 ml of supernatant containing virus particles was collected on days 3 and 4. The supernatants were centrifuged for 5 min at 1500 rpm at 4°C in order to remove dead cells and debris. The virus particles were then concentrated to 300 µl using Amicon Ultra Centrifugal Filters (UFC910024; Sigma) by spinning at 1000 × g at 4°C for 1 hr.
 
-## sgRNA validation
+#### sgRNA validation
 
 The efficiency of sgRNAs was assessed in mouse embryonic fibroblasts (MEFs) infected with a lentivirus expressing the Cas9 enzyme along with blasticidin resistance (Addgene plasmid# 52962). 48 hr upon infection, infected MEFs were selected in 10 µg/ml blasticidin for 7 days. sgRNAs targeting Thbs1, Yap1, and Tead4 (sequences listed in the Key resources table) were cloned in the LRT lentiviral vector (expressing red Tomato fluorescent protein) and produced as described above. After transduction of the MEFs-Cas9 with LRT-Thbs1, Yap1, or Tead4, cells were FACS-sorted based on their red fluorescence and their genomic DNA extracted. For each sgRNA, the cut site region (± 200 bp) was PCR-amplified and sequenced using the same primers (listed in the Key resources table). Chromatograms were manually analysed using ApE (v2.0.61) to confirm the precise cut site, which induced mutations starting at –3 bp before the PAM sequence.
 
-## Mass spectrometry
+### Mass spectrometry
 
-## Sample preparation
+#### Sample preparation
 
 Isotope-labelled cM requires pre-loading of isotopic amino acids in order to detect all proteins synthesised and secreted by cells (Ong et al., 2002). To label newly produced proteins, two essentials isotopically labelled amino acids (IAA), arginine and lysine, were added to the culture medium. WT organoids were labelled with [²H4]-lysine (Lys4) and [13C6]-arginine (Arg6) for 2 weeks (two passages), whilst tumoroids were labelled with [13C615N2]-lysine (Lys8) and of [13C615N4]-arginine (Arg10) for 2 weeks (two passages). Then, medium was conditioned as described above using SILAC-ENR (2 × 1 week) or SILAC-EN (1 × 2 weeks). After a functional assay confirming their transforming capacities, conditioned media were concentrated. Subsequently, 2 ml of tumoroids conditioned media or 4 ml of wildtype conditioned media were precipitated by cold acetone. Dried protein pellets were then recovered with 50 µl of 2× Laemmli buffer with SDS and β-mercapto-ethanol (0.1%), boiled at 95°C for 5 min and centrifuged 5 min at 14,000 × g.
 
-## MS sample processing
+#### MS sample processing
 
 Gel-based samples were cut in eight bands and in-gel digested as described in standard protocols. Briefly, following the SDS-PAGE and washing of the excised gel slices, proteins were reduced by adding 10 mM dithiothreitol (Sigma-Aldrich) prior to alkylation with 55 mM iodoacetamide (Sigma-Aldrich). After washing and shrinking of the gel pieces with 100% acetonitrile, trypsin/LysC (Promega) was added and proteins were digested overnight in 25 mM ammonium bicarbonate at 30°C. Extracted peptides were dried in a vacuum concentrator at RT and re-dissolved in solvent A (2% MeCN, 0.3% TFA) before LC-MS/MS analysis.
 
-## LC-MS/MS analysis
+#### LC-MS/MS analysis
 
 Liquid chromatography (LC) was performed with an RSLCnano system (Ultimate 3000, Thermo Scientific) coupled online to an Orbitrap Fusion Tribrid mass spectrometer (MS, Thermo Scientific). Peptides were trapped on a C18 column (75 μm inner diameter × 2 cm; nanoViper Acclaim PepMap 100, Thermo Scientific) with buffer A′ (2/98 MeCN/H2O in 0.1% formic acid) at a flow rate of 2.5 µl/min over 4 min. Separation was performed on a 50 cm × 75 μm C18 column (nanoViper Acclaim PepMap RSLC, 2 μm, 100 Å, Thermo Scientific) regulated to a temperature of 55°C with a linear gradient of 5–30% buffer B (100% MeCN in 0.1% formic acid) at a flow rate of 300 nl/min during 100 min. Full-scan MS was acquired in the Orbitrap analyser with a resolution set to 120,000, a mass range of m/z 400–1500 and a 4 × 105 ion count target. Tandem MS was performed by isolation at 1.6 Th with the quadrupole, HCD fragmentation with normalised collision energy of 28, and rapid scan MS analysis in the ion trap. The MS2 ion count target was set to 2 × 104, and only those precursors with charge state from 2 to 7 were sampled for MS2 acquisition. The instrument was run at maximum speed mode with 3 s cycles.
 
-## Mass spectrometry data processing
+#### Mass spectrometry data processing
 
 Data were acquired using the Xcalibur software (v 3.0), and the resulting spectra were interrogated by SequestHT through Thermo Scientific Proteome Discoverer (v 2.1) with the Mus musculus Swissprot database (022017 containing 16,837 sequences and 244 common contaminants). The mass tolerances in MS and MS/MS were set to 10 ppm and 0.6 Da, respectively. We set carbamidomethyl cysteine, oxidation of methionine, N-terminal acetylation, heavy 13C615N2-lysine (Lys8) and 13C615N4-arginine (Arg10), and medium 2H4-lysine (Lys4) and 13C6-arginine (Arg6) as variable modifications. We set specificity of trypsin digestion and allowed two missed cleavage sites. The resulting files were further processed by using myProMS (v 3.5) (Poullet et al., 2007). The SequestHT target and decoy search results were validated at 1% false discovery rate (FDR) with Percolator. For SILAC-based protein quantification, peptide extracted ion chromatograms (XICs) were retrieved from Thermo Scientific Proteome Discoverer. Global MAD normalisation was applied on the total signal to correct the XICs for each biological replicate (n = 3). Protein ratios were computed as the geometrical mean of related peptides. To estimate ratio significance, a t-test was performed with the R package limma (Ritchie et al., 2015) and the FDR was controlled using the Benjamini–Hochberg procedure (Benjamini and Hochberg, 1995) with a threshold set to 0.05. Proteins with at least two peptides detected, a twofold enrichment, and an adjusted p-value<0.05 were retained as significant hits.
 
-## Pathway enrichment analysis
+#### Pathway enrichment analysis
 
 GO terms enrichment analysis used the proteins significantly enriched in sample comparisons (T-cM/WT-cM; two peptides, fold change > 2, adjusted p-value<0.05) and the unique proteins to T-cM. GO biological processes, cellular components, and molecular functions were analysed using the UniProt-GOA Mouse file (v. 20181203). Significant GO terms had a p<0.05.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
-## Organoids staining
+#### Organoids staining
 
 For whole-mount IF, organoids were grown on eight-well chamber slides (Ibidi 80827). For EdU staining, a 2 hr pulse of EdU (10 µM, Carbosynth Limited NE08701) preceded fixation. After fixation using 4% paraformaldehyde (Euromedex 15710) in PBS for 1 hr at RT, organoids were washed with PBS and permeabilised in PBS + 1% Triton X-100 (Euromedex 2000-C) for 1 hr at RT. Organoids were then incubated with 150 µl of diluted antibodies (listed in the Key resources table) in blocking buffer (PBS, 2% BSA, 5% FBS, 0.3% Triton X-100) overnight at RT. After three washes of 5 min in PBS, 150 µl of secondary antibodies were added together with DAPI diluted in PBS and incubated at RT for 5 hr. Organoids were then washed with PBS for three times for 5 min each and stored in a 1:1 ratio PBS and glycerol (Euromedex 15710) before imaging. For EdU staining, the EdU signal was revealed after the secondary antibody step using the EdU Click-it kit (Thermo Fisher Scientific C10340).
 
-## Human sections IF staining
+#### Human sections IF staining
 
 Paraffin sections 3 µm of human samples were deparaffinised and rehydrated using the standard protocol of xylene/ethanol gradient. Antigens were unmasked by boiling the slides in a citrate-based solution (Eurobio-Abcys H-3300). Slides were then incubated in blocking buffer (PBS, 2% BSA, 5% FBS). Antibodies (listed in the Key resources table) were incubated overnight at 4°C. After three washes of 5 min each in PBS, secondary antibodies were incubated at RT for 2 hr alongside DAPI. Slides were mounted in Aqua-poly/mount (Tebu Bio 18606-5).
 
-## Mouse sections IF staining
+#### Mouse sections IF staining
 
 Intestinal tissue samples were fixed overnight at RT with 10% formalin prior to the paraffin embedding. 4 µm FFPE sections were prepared for β-catenin/YAP co-staining. Briefly, the tissue sections were deparaffinised five times in xylene 5 min each, rehydrated five times in ethanol 100% 5 min each, then once in ethanol 70% for 10 min. A heat-mediating antigen retrieval was made using boiling sodium citrate tribasic dihydrate solution 10 mM, PH = 6 (Sigma S4641) for 20 min. The sections were then blocked and permeabilised with 5% donkey serum 0.01% Triton X-100 for 30 min at RT before being incubated with rabbit anti-YAP dilution 1/100 (Signaling Technology #14074) and mouse anti β-catenin (BD 610153) (dilution 1/200) overnight at 4°C. The next day, slides were washed three times in PBS Tween20 0.01% and then incubated for 1 hr at RT with matching secondary antibodies donkey anti-rabbit A594 (Jackson ImmunoResearch 711-546-152) and donkey anti-mouse A488 (Jackson ImmunoResearch 715-546-150) (dilution 1/500) with DAPI. Slides were mounted using Fluoromount Aqueous Mounting Medium (Sigma F4680).
 
-## Single-molecule RNA fluorescence in situ hybridisation
+#### Single-molecule RNA fluorescence in situ hybridisation
 
 smRNA FISH was performed on mouse tissue cryosections or human paraffin-embedded tumour sections using RNAscope Multiplex Fluorescent Detection Kit v2 (ACD 323110) and pipeline following manufacturer’s recommendations. Thbs1 mRNA were labelled using RNAscope Probe- Mm-Thbs1-C3 (#457891-C3) or Hs-THBS1-C2 (#426581-C2), CTGF mRNA were labelled using RNAscope Probe- Mm-CTGF (#314541) and Lgr5 mRNA were labelled using RNAscope Probe- Mm-Lgr5 (#312171) or Hs-LGR5-C3 (#311021-C3). In order to subsequently perform immunostaining after the FISH, a protease III step not exceeding 20 min was included. Subsequent antibody staining was performed as described.
 
-## Epithelial masks generation
+#### Epithelial masks generation
 
 To quantify RNAscope results only in epithelial cells, epithelial masks were generated using E-cadherin immunostaining. After Ilastik training allowing segmentation of E-cadherin-stained membranes, masks were smoothed by closing function (iteration = 15) and holes filling. Generated masks were manually corrected for consistency.
 
-## smRNA FISH dots quantification
+#### smRNA FISH dots quantification
 
 Raw images were segmented using Ilastik (v1.3.2) and training performed on negative controls (background), positive controls, and experimental slides (dots). Segmented masks were cleaned using Fiji through an opening function, 2 px Gaussian blur and Moments threshold. Generated masks were manually checked for consistency with raw data. Aggregates of dots were excluded using watershed function and individual dots (size = 2–250 circularity = 0.50–1.00) were analysed and counted using built-in Analyse Particle function. Epithelial dots were obtained by multiplication of dot masks by the corresponding epithelial masks previously generated.
 
-## Image acquisition
+#### Image acquisition
 
 Images were obtained on an Inverted Wide Confocal Spinning Disk microscope (Leica) using ×40/1.3 OIL DIC H/N2 PL FLUOR or ×20/0.75 Multi Immersion DIC N2 objectives and Hamamtsu Orca Flash 4.0 camera. Images were captured using MetaMorph. Whole-plate acquisition was performed using a dissecting microscope and Cell Discoverer 7 (Leica). Images were captured with ZEN. For RNAscope experiments, images were obtained on a PLAN APO ×40/1.3 NA objective on an upright spinning disk (CSU-X1 scan-head from Yokogawa) microscope (Carl Zeiss, Roper Scientific, France), equipped with a CoolSnap HQ2 CCD camera (Photometrics). Images were captured using MetaMorph.
 
-## Nuclear/cytoplasmic quantification
+#### Nuclear/cytoplasmic quantification
 
 Nuclear IF ratios were obtained using a custom-made ImageJ macro. This macro segmented the nuclei on the DAPI channel using Otsu Threshold, Watershed, and Particles analysis. For each segmented nucleus, a cytoplasmic halo of eight pixels was generated and excluded from the DAPI mask to avoid false cytoplasmic measurements in neighbouring nuclei. The mean intensities of the segmented nucleus and cytoplasmic regions of interest (nROI and cROI) were then measured in the IF channel (nIF and cIF). Cells were counted only if area ratio nucleus/cytoplasm > 0.5, avoiding bias of pixel sampling either due to miss-segmentation or to overcrowded regions. Results (nIF, cIF, and ratio) were computed in Microsoft Excel. A density curve of the nIF/cIF ratio was performed for each category of organoid in order to observe peaks trends of positive and negative nuclei for IF. Threshold was defined manually in the inter-peak region at 1.1 (YAP) and 1.25 (EdU). To exclude low or non-specific signal, a minimal mean intensity cut-off for cIF was established from the experimental images. Using the threshold and the cut-off, the percentage of nIFHIGH cells per organoid was calculated.
 
-## RNA-sequencing
+### RNA-sequencing
 
-## Sample preparation
+#### Sample preparation
 
 Organoids were harvested using Cell Recovery Solution as described above. After 15 min of Matrigel dissolution, organoids were pelleted at 500 × g for 5 min. Pellets were recovered in 1 ml of PBS in 1.5 ml tubes and pelleted again at same conditions. RNA extraction was performed using RNeasy Mini Kit (QIAGEN) following the manufacturer’s recommendations. Total RNA integrity (RINe) were subjected to quality control and quantification using an Agilent TapeStation instrument showing excellent integrity (RNA Integration Number, RIN = 10). NanoDrop spectrophotometer was used to assess purity based on absorbance ratios (260/280 and 260/230).
 
-## RNA-sequencing
+#### RNA-sequencing
 
 RNA-sequencing libraries were prepared from 1 µg of total RNA using the Illumina TruSeq Stranded mRNA Library preparation kit that allows to prepare libraries for strand-specific mRNA-sequencing. A first step of polyA selection using magnetic beads was performed to address sequencing specifically on polyadenylated transcripts. After fragmentation, cDNA synthesis was performed followed by dA-tailing before ligation of the TruSeq indexed adapters (Unique Dual Indexing strategy). PCR amplification generated the cDNA library. After qPCR quantification, sequencing was carried out using 2 × 100 cycles (paired-end reads, 100 nucleotides) on an Illumina NovaSeq 6000 system (S1 flow cells) to get around 45 M paired-end reads per sample. FastQ files were generated from raw sequencing data using bcl2fastq where demultiplexing was performed according to indexes.
 
-## RNA-seq data processing
+#### RNA-seq data processing
 
 Sequencing reads were aligned on the Mouse Reference Genome (mm10) using the STAR mapper (v2.5.3a) (Dobin et al., 2013). Protein-coding genes from the Gencode annotation (vM13) have been used to generate the raw count table. Overall sequencing quality controls report a very high-sequencing quality, a high fraction of mapped reads, and a high enrichment in exonic reads.
 
-## Differential analysis
+#### Differential analysis
 
-Expressed genes (TPM ≥ 1 in at least one sample) have then been selected for supervised analysis. The raw count table was normalised using the TMM method from the edgeR R package (v3.25.9) (Robinson et al., 2010), and the limma (Ritchie et al., 2015) voom (v3.39.19) functions were applied to detect genes with differential expression. In order to compare tumoroids versus wildtype samples, we designed a linear model as follows:Yits=μi+Tit+Eit
+Expressed genes (TPM ≥ 1 in at least one sample) have then been selected for supervised analysis. The raw count table was normalised using the TMM method from the edgeR R package (v3.25.9) (Robinson et al., 2010), and the limma (Ritchie et al., 2015) voom (v3.39.19) functions were applied to detect genes with differential expression. In order to compare tumoroids versus wildtype samples, we designed a linear model as follows:
 
-where T is the type effect (T = {WT-cM, T-cM, Tumoroids}). We then restricted the dataset to WT-cM and T-cM samples, and applied the following model:Yits=μi+Tit+Ss+Eits
+$$
+Y_{its}=\mu_{i}+T_{it}+E_{it}
+$$
+
+where T is the type effect (T = {WT-cM, T-cM, Tumoroids}). We then restricted the dataset to WT-cM and T-cM samples, and applied the following model:
+
+$$
+Y_{its}=\mu_{i}+T_{it}+S_{s}+E_{its}
+$$
 
 where T is the type effect (T = {WT-cM, T-cM}) and S is the sample effect (S = {sample1, sample2, sample3}). All raw p-values were corrected for multiple testing using the Benjamini–Hochberg method (Benjamini and Hochberg, 1995). Genes with an adjusted p<0.05 and a log2 fold change >1 were called significant.
 
-## Pathway enrichment
+#### Pathway enrichment
 
 We applied pathway enrichment analysis on upregulated genes (p-value<0.05 and logFC > 1) in T-cM and tumoroid samples compared to normal organoids (WT-cM) using KEGG, MSigDB curated gene sets, and MSigDB regulatory target gene sets. The enrichment analysis was performed using the R package clusterProfiler (v3.14.3) and msigdbr (v7.1.1).
 
 Source code is available at https://gist.github.com/wenjie1991/d79fe428ac80c8f2e5d781a966df3978, (Jacquemin, 2022a copy archived at swh:1:rev:0887f17c2a830b5adfc42757a744a547a8e8fc54).
 
-## Gene Set Enrichment Analysis
+#### Gene Set Enrichment Analysis
 
 GSEA v4.0.3 was used to generate and calculate the enrichment score. Transcriptional signatures used for the analysis were extracted from the literature (Gregorieff et al., 2015; Yui et al., 2018; Merlos-Suárez et al., 2011; Mourao et al., 2019) and Nusse Lab (https://web.stanford.edu/group/nusselab/cgi-bin/wnt/target_genes). GSEA were calculated by gene set and 1000 permutations in our RNASeq normalised reads count matrix.
 
-## Human colon cancer gene expression analysis
+#### Human colon cancer gene expression analysis
 
 The gene expression data and clinical variables from the TCGA Colon Adenoma (COAD) cohort were downloaded from TSVdb (Sun et al., 2018) on 20 June 2020. Analyses were performed on Primary Solid Tumour gene expression data subset. Pairwise correlation analysis assayed THBS1, CTGF, CYR61, and WWC2 on 285 COAD tumour samples. The expression data were transformed by log2. Then, Spearman’s correlation was calculated and visualised by the PerformanceAnalytics (v2.0.4) R package.
 
 Source code is available at https://gist.github.com/wenjie1991/6ff60b3edd5f61d0bd2ebe4f9404e46e, (Jacquemin, 2022b copy archived at swh:1:rev:5d5522e57aeb12b67347377e13e45fd3c1304836).
 
-## Data and materials availability
+### Data and materials availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD020002 (Perez-Riverol et al., 2019). The RNA-sequencing data have been deposited in the Gene Expression Omnibus (GEO) repository under accession code GSE153160: whole-genome transcriptomic analysis of intestinal organoids and tumoroids. All other data supporting the conclusions of this study are provided in the main text or the supplementary materials.

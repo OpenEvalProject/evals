@@ -43,33 +43,93 @@ Single-particle tracking (SPT) of fluorescently tagged proteins in live cells ha
 
 ## Results
 
-## Tracking single molecules of histones and remodeler SWR1
+### Tracking single molecules of histones and remodeler SWR1
 
 We fused the self-labeling HaloTag to H2A.Z, H2B, and Swr1 (the catalytic subunit of the SWR1 complex) for sole source expression under native promoter control and validated the function of these fusion constructs (Figure 1—figure supplement 1A). Yeast cultures were fluorescently labeled to saturation with Janelia Fluor 646 (Grimm et al., 2015; Figure 1—figure supplement 1B,C), and movies of single molecules were recorded at high temporal resolution (10 ms exposure) in live cells (Rust et al., 2006; Shim et al., 2012; Videos 1–3). Single molecule trajectories (n > 1000 and≥6 frames for each trajectory) were obtained from over 50 yeast cells for each strain. The data are presented as histograms of particle frequency over the diffusion coefficient (log D) extracted from mean squared displacements (MSD) (Figure 1A–D, and methods). For a more robust quantitation of diffusive populations, we also applied a kinetic modeling approach (‘Spot-On’) based on single particle displacements (Hansen et al., 2018; Figure 1E,F). We performed Spot-On analysis on single-molecule trajectories (≥3 frames), cite Spot-On values for chromatin-bound and chromatin-free fractions in the text, and provide results from both Spot-On and MSD analyses in all figures.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Normalized histograms and two-component Gaussian fits for H2A.Z-Halo (A) and Halo-H2B (B) show the log diffusion coefficient distributions. The Gaussian fit for HaloTag is shown for reference (‘Halo only’ in A). (C, D) Normalized histograms and two-component Gaussian fits for Swr1-Halo in WT cells (C) and the swc2Δ mutant (D). Solid line: sum of two-component fit; dashed line: individual component. Percent value of the slow component along with Bootstrap resampling errors and the number of trajectories (n) are indicated. (E) Cumulative distribution functions (CDF) of 10 ms displacements. (F) Spot-On results with fitting errors showing fractions of chromatin-bound molecules derived from modeling CDFs over 10–50 ms intervals. All molecules tracked with JF646 dye except Halo only, which was imaged with JF552.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Growth of strains bearing SWR1, H2A.Z (HTZ1) and H2B (HTB1) fusions to HaloTag. Saturated cultures at optical density 1.0 were spotted (1:5 serial dilutions) on CSM plates with or without 1% formamide or 150 mM HU (hydroxyurea) and incubated for 2–3 days at the indicated temperatures. WT and mutant strains htz1Δ and swr1Δ are shown for comparison. (B) Cells expressing H2A.Z-Halo and Swr1-Halo were stained with JF646 and the cell lysate was resolved on SDS-PAGE. Fluorescent scan of duplicate lanes show specific labeling of Halo-tagged H2A.Z and Swr1 proteins. (C) SDS-PAGE shows 10 nM JF646 saturates H2A.Z-Halo in yeast cells in a routine 2 hr staining period. (D) Normalized histogram and two-component Gaussian fit for HaloTag (fused to NLS). The slow fraction is 5%. (E) Top: Profile of H2A.Z-Halo diffusivity in biological replicate, same condition as Figure 1A experiment. (F) Profile of H2A.Z-Halo diffusivity in cells stained with JF552. All molecules tracked with JF552 dye except (E), which was tracked with JF552.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Histogram of displacements over time intervals of 10, 20, 30, 40 and 50 ms (dt 1–5) for H2A.Z. First four displacements were included for each track. Kinetic fitting shown as dashed line and measured displacements in color. Data were analyzed using the Spot-On web-interface (https://SpotOn.berkeley.edu). (B) Spot-On analysis of H2B. (C,D) Spot-On analysis of Swr1 in WT and swc2Δ cells. (E) Comparison of diffusive parameters for H2A.Z, H2B, Swr1 and Swr1 in the swc2Δ strain, extracted from MSD-based and Spot-On analytic platforms. Bootstrap resampling errors shown for MSD and fitting errors shown for Spot-On. All molecules tracked with JF646 dye.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) FACS analysis shows DNA content of the synchronized cell population upon time of release from α-factor arrest, from 0’ – 120.’ (B, C) Normalized histogram and two-component Gaussian fit for H2A.Z-Halo in cells synchronized in pre-S phase, and in S phase. (D) Spot-On results shows both Pre-S and S phase cells have 84% chromatin bound H2A.Z. All molecules tracked with JF646 dye.
+
+![Video 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-video1.mp4.jpg)
+
+**Video 1.:** Molecules were tracked with JF552 dye. Time is indicated on top in seconds and outline of nuclear regions are marked in yellow.
+
+![Video 2.](https://cdn.elifesciences.org/articles/55667/elife-55667-video2.mp4.jpg)
+
+**Video 2.:** Molecules were tracked with JF646 dye. Time is indicated on top in seconds and outline of nuclear regions are marked in yellow.
+
+![Video 3.](https://cdn.elifesciences.org/articles/55667/elife-55667-video3.mp4.jpg)
+
+**Video 3.:** Molecules were tracked with JF552 dye. Time is indicated on top in seconds and outline of nuclear regions are marked in yellow.
 
 The SPT profiles for H2A.Z and H2B were best fitted by a simple model comprised of two diffusive populations—a major, slow-diffusing chromatin-bound fraction (H2A.Z: 82%, H2B: 76%, average D: 0.03 μm2s−1), and a minor, fast-diffusing chromatin-free fraction (H2A.Z: 1.18 μm2s−1, H2B: 1.29 μm2s−1) (Figure 1E,F and Figure 1—figure supplement 2A,B,E). Additional minor populations of H2A.Z and H2B with distinct diffusive values are not excluded. The fraction of chromatin-bound H2A.Z was consistent with a previous estimate by in vivo cross-linking (Mohan et al., 2018), and the D value of bound yeast H2B was also consistent with that of mammalian H2B (0.02 μm2s−1) in a previous report (Hansen et al., 2018). The ‘free’ H2A.Z fraction represents soluble H2A.Z-H2B dimers biochemically associated with histone chaperones, in addition to a minor population in complex with the ~1 MDa SWR1 complex (Luk et al., 2007). We observed similar frequencies of chromatin-bound and free H2A.Z in cells growing synchronously after release from G1 arrest into S phase (Figure 1—figure supplement 3).
 
 In contrast to behaviors of the histones, the SWR1 complex (Swr1-Halo subunit) showed more chromatin-free diffusion. In addition, deletion of Swc2, a key subunit involved in the recruitment of SWR1 to gene promoters (Ranjan et al., 2013), substantially reduced the chromatin-bound fraction from 47% to 21% (Figure 1C,D,F). (Our imaging regime captures both stable and transiently bound SWR1 in the slow-diffusing population; the remaining 21% of slow molecules for the swc2∆ mutant may be largely attributed to transient binding). With these validations, we proceeded to investigate regulators of H2A.Z dynamics, based on the fractional changes in chromatin-bound and free H2A.Z. Notably, while the aforementioned labeling of HaloTag was adequately conducted with the JF646 dye, a superior flurophore JF552 became available in the course of this work, prompting its use in subsequent experiments for improved signal to noise (Zheng et al., 2019; Figure 1—figure supplement 1F).
 
-## Eviction of H2A.Z upon SWR1 depletion in live yeast
+### Eviction of H2A.Z upon SWR1 depletion in live yeast
 
 The steady-state chromatin occupancy for H2A.Z is a function of competing deposition and eviction pathways. To highlight H2A.Z eviction in live cells, we blocked the H2A.Z incorporation pathway at gene promoters by conditional ‘anchor-away’ (AA) depletion of the Swc5 subunit, which is not required for Swr1 recruitment (Figure 2—figure supplement 1), but essential for SWR1 activity (Haruki et al., 2008; Sun and Luk, 2017; Tramantano et al., 2016). In the AA system, rapamycin mediates heterodimerization of FRB and FKBP12 moieties fused to Swc5 and the ribosomal protein RPL13A, respectively (i.e. Swc5-FRB and RPL13A-FKBP12), thus depleting Swc5 from the nucleus along with pre-ribosomal subunit export (Haruki et al., 2008). The ‘wild type’ AA yeast strain, mutated for TOR1 and the FK506-binding protein, is physiologically resistant to rapamycin and displays normal growth phenotype and normal H2A.Z and Pol II distributions (Tramantano et al., 2016; Wong et al., 2014).
 
 Upon Swc5 AA, we found the expected decrease of chromatin-bound H2A.Z from 79% to 49% (Figure 2A–C and rapamycin time course in Figure 2—figure supplement 2), consistent with ChIP-seq results showing genome-wide reduction of H2A.Z at +1 nucleosomes under similar conditions (Tramantano et al., 2016). The remaining chromatin-bound H2A.Z may be due to residual H2A.Z at the +1 nucleosome or to histone chaperone-mediated H2A.Z deposition in nucleosomes over the entire genome, as suggested by in vivo cross-linking studies (Mohan et al., 2018; Tramantano et al., 2016). Our live-cell findings are thus consistent with the SWR1 requirement for promoter-specific H2A.Z deposition.
 
-## Role of RNA Pol II in H2A.Z eviction
+![Figure 2.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time course of H2A.Z-Halo labeling, rapamycin treatment and image acquisition in Swc5-AA cells. Rapamycin treatment for an hour before SPT, and imaging performed in continued presence of rapamycin. (B, C) Normalized histograms and two-component Gaussian fits for H2A.Z-Halo imaged in the Swc5-AA cells. Imaging data were acquired in absence of rapamycin (B) or presence of rapamycin (C). Spot-On results show that Swc5 depletion causes a reduction in chromatin-bound H2A.Z. (E) Overlay of tracks, color-coded according to log diffusion coefficients, obtained from representative nuclei. Number of tracks (n) is indicated for each nucleus. All molecules tracked with JF552 dye.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Normalized histograms and two-component Gaussian fits for Swr1-Halo imaged in Swc5-AA cells in the absence (A) or presence (B) of rapamycin. (C) Spot-On analysis of the same imaging data. Anchor away of Swc5 did not reduce the fraction of chromatin-bound Swr1, which is consistent with ChIP-PCR results showing Swr1 binds to gene promoters in absence of swc5 (Morillo-Huesca et al., 2010), and in vitro data showing efficient nucleosome binding by the purified SWR1(swc5∆) complex (Ranjan et al., 2013). All molecules tracked with JF646 dye.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of cell staining and imaging conditions. (B,C) SPT data from different time points after rapamycin treatment were pooled for normalized diffusion histogram (B) and Spot-On analysis (C). (D–G) Data in Figure 2 re-analyzed for changes in level of chromatin-bound H2A.Z during the course of imaging. Data from first and second half of the imaging period were pooled, and analyzed using diffusion histograms (E,F) and Spot-On kinetic modeling (G).
+
+### Role of RNA Pol II in H2A.Z eviction
 
 To identify H2A.Z eviction factors, we tested candidates that could mitigate the loss of chromatin-bound H2A.Z when both deposition and eviction factors were co-depleted in a double AA experiment. As the transcription PIC is constitutively enriched at the majority of NDRs (Rhee and Pugh, 2012) and has been causally linked to H2A.Z eviction (Tramantano et al., 2016), we first imaged the distribution of H2A.Z after nuclear depletion of both Swc5 and the Rpb1 catalytic subunit of Pol II. When Swc5 and Rpb1 are co-depleted by double AA, the chromatin-bound H2A.Z fraction increased (66%) relative to Swc5 AA alone (49%) (compare Figure 3A to Figure 2C and Figure 3A to Figure 2D). A complete restoration to the wild type level of H2A.Z is not anticipated because co-depletion of Swc5 also reduces H2A.Z deposition by SWR1 during anchor away. Fluorescence microscopy confirmed relocation of Swc5 to the cytoplasm in double AA cells, excluding inefficient nuclear depletion as a caveat (Figure 3—figure supplement 1C,D). These results indicate that Pol II indeed plays a major role in H2A.Z eviction. (Single AA of Rpb1 in rapamycin-treated cells showed a marginal increase from 84% to 87% of the bulk chromatin-bound H2A.Z over the untreated control [Figure 3—figure supplement 2A–C]).
 
-## INO80 is not required for eviction of H2A.Z
+![Figure 3.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig3-v2.jpg)
+
+**Figure 3.:** (A) Normalized histograms and two-component Gaussian fits for H2A.Z-Halo imaged in cells co-depleted for Rpb1 and Swc5. (B) H2A.Z-Halo distributions in cells co-depleted for Ino80 and Swc5. (C) Spot-On results showing co-depletion of Rpb1 along with Swc5 inhibits H2A.Z eviction. All molecules tracked with JF552 dye.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Deconvolution fluorescence microscopy shows nuclear depletion of Swc5-FRB-GFP in rapamycin-treated, single anchor-away cells, and in Swc5-FRB-GFP; Rpb1-FRBdouble anchor-away cells. Images of JF646-labeled H2A.Z-Halo locate nuclei. Z-axis steps of 200 µm were captured on a DeltaVision fluorescence microscope and 10 deconvoluted stacks were projected.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) H2A.Z-Halo distributions in Rpb1-AA strain without (A) and with (B) depletion of Rpb1. (C) Spot-On results for chromatin bound H2A.Z upon Rpb1 depletion. Single AA of Rpb1 causes only a slight increase in chromatin-bound H2A.Z, which is likely due to concomitant inhibition of SWR1’s biochemical activity at reduced concentration of free H2A.Z-H2B dimer (Wang et al., 2016). (D, E) H2A.Z distributions in single anchor-away of Ino80. (F) Spot-On results show Ino80 depletion has no effect on level of chromatin-bound H2A.Z. All molecules tracked with JF552 dye.
+
+### INO80 is not required for eviction of H2A.Z
 
 To examine the role of the INO80 remodeler in H2A.Z eviction, we analyzed the H2A.Z distribution for Swc5 and Ino80 co-depletion by double AA and found no rise in bound H2A.Z compared to the single AA of Swc5 (compare Figure 3A to Figure 2C and Figure 3C to Figure 2D). (We observed no change in chromatin-bound H2A.Z for single AA of Ino80 (Figure 3—figure supplement 2D–F)). Taken together, we conclude that Pol II, but not the INO80 remodeler, has a major role in H2A.Z eviction. Contributions by other factors such as the ANP32E histone chaperone found in mammalian cells are not excluded (Mao et al., 2014; Obri et al., 2014).
 
-## Kin28/CDK7 affects H2A.Z eviction
+### Kin28/CDK7 affects H2A.Z eviction
 
 Transcription by Pol II is a complex process involving PIC assembly, Pol II initiation, promoter escape, productive elongation and termination (Jonkers and Lis, 2015; Sainsbury et al., 2015). Given that site-specific phosphorylation of the Rpb1 subunit of Pol II regulates the progression of transcription, targeted depletion of transcriptional kinases provides an opportunity to identify the step involved in H2A.Z eviction. A key post-initiation step involves Serine five phosphorylation (Ser5-P) of heptapeptide repeats on the C-terminal domain (CTD) of Pol II (Rpb1) (Corden, 2013; Harlen and Churchman, 2017). Ser5-P is catalyzed by the yeast Kin28/Cdk7 kinase, a component of the kinase module (Kin28-Ccl1-Tfb3) of TFIIH, and is linked to capping of nascent RNA, Pol II release from the Mediator complex, promoter escape and early elongation. Recently, the Bur1/Cdk9 kinase was shown to phosphorylate the Rpb1 linker just upstream of CTD, at residues Thr 1471 and Ser 1493 (Chun et al., 2019), facilitating Pol II transition from early elongation to productive elongation. Furthermore, the Ctk1/Cdk12 kinase mediates Ser2 phosphorylation of the CTD associated with productive elongation through protein-coding regions (Corden, 2013; Harlen and Churchman, 2017; Wong et al., 2014). To investigate which phosphorylated state of Pol II is linked to H2A.Z eviction, we examined H2A.Z distributions in double AA cells conditionally deficient for Swc5 in combination with each of the three CTD kinases. Only Kin28 is required for H2A.Z eviction, as indicated by 65% chromatin-bound H2A.Z in the Kin28 and Swc5 double AA relative to 49% in the single AA of Swc5 (compare Figure 4B to Figure 2C and Figure 4F to Figure 2D). Consistent with its role in H2A.Z eviction, depletion of Kin28 alone showed an increase in chromatin-bound H2A.Z, though marginal (from 78% to 82%, Figure 4—figure supplement 1A–C). In contrast, double AA of Swc5 and the Bur1 kinase did not inhibit loss of chromatin-bound H2A.Z, nor did double AA of Swc5 and the Ctk1 kinase (Figure 4C, D and F).
 
-## H2A.Z removal does not require RNA capping
+![Figure 4.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation shows the three Pol II kinases Kin28, Bur1 and Ctk1 recruited at initiation, early-elongation and elongation phases respectively of Pol II and corresponding phosphorylation of indicated Rpb1 CTD sites. Set1 is the first of the three RNA capping enzymes; it removes γ-phosphate from the RNA 5’end to generate 5’ diphosphate. (B, C, D, E) Normalized histograms and two-component Gaussian fits for H2A.Z-Halo imaged in cells co-depleted for Swc5 along with Kin28 (B), Bur1 (C), Ctk1 (D) and Cet1 (E). (F) Spot-On results show Kin28 is required to evict H2A.Z. All molecules tracked with JF552 dye.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55667/elife-55667-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) H2A.Z-Halo distributions in Kin28-AA strain without (A) and with (B) depletion of Kin28. (C) Spot-On results for chromatin bound H2A.Z upon Kin28 depletion. (D) Reproduction of Gaussian fits for H2A.Z-Halo distributions in rapamycin-treated Swc5-AA cells (from Figure 2C). (E) H2A.Z-Halo distributions in cells co-depleted for Swc5 and Rrp6. (F) Spot-On results for chromatin-bound H2A.Z upon double depletion of Swc5 and Rrp6. All molecules tracked with JF552 dye.
+
+### H2A.Z removal does not require RNA capping
 
 In the wake of Pol II initiation, nascent RNA is co-transcriptionally capped by the sequential activity of three enzymes—Cet1, Ceg1 and Abd1—and is completed when RNA reaches ~100 nt (Lidschreiber et al., 2013). Capping of the 5’ end of nascent RNA is initiated by the Cet1-Ceg1 complex, which recognizes the 5’ triphosphate on the RNA and Ser5-P on the Pol II CTD (Martinez-Rucobo et al., 2015). To examine whether RNA capping or associated activities are required for H2A.Z eviction, we performed double AA of Swc5 and Cet1, and found no increase in chromatin-bound H2A.Z compared to single AA of Swc5 (compare Figure 4E to Figure 2C and Figure 4F to Figure 2D). Thus, H2A.Z eviction is not dependent on RNA capping. Likewise, we found no increase of chromatin-bound H2A.Z upon double AA of Swc5 and Rrp6, the 3’−5’ exonuclease responsible for degradation of noncoding RNA (Figure 4—figure supplement 1E,F). Taken together, we conclude that an early stage of transcription elongation closely linked to Pol II CTD Ser5 phosphorylation by Kin28 is required for robust eviction of chromatin-bound H2A.Z.
 
@@ -93,7 +153,7 @@ We envision that H2A.Z eviction is coupled to transcription not only from protei
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+### Yeast strains and plasmids
 
 The plasmid for HaloTag (Halo) fusions was generated by cloning HaloTag (Promega) in the pBluescript SK (-) vector followed by insertion of a KanMx cassette (Kanamycin) or NatMx cassette (Nourseothricin), following standard procedures (Gelbart et al., 2001). PCR amplification and standard yeast transformation methods were used for tagging the protein of interest at the C-terminus, with a serine-glycine (SG4)2 linker to HaloTag.
 
@@ -105,30 +165,42 @@ Strains and plasmids used for anchor-away studies were obtained from Euroscarf.
 
 The transporter gene PDR5 was deleted in all strains for retention of HTL-dye conjugate in live yeast cells. Strain genotypes are listed in Supplementary file 1.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cells were fixed by adding two volumes of 100% ethanol and stored for one hour at 4◦C. Cells were washed with 50 mM Tris-HCl (pH 7.5) buffer and digested with RNase (1 mg/ml) and RNase A (0.2 mg/ml) overnight at 37◦C on a rotator. Proteins were digested with Proteinase K (1 µg/µl) at 50◦C for 30 min. Cells were stained with 2 µM SYTOX (Tris buffer) at 4◦C for 4 hr and sonicated on Diagenode Biorupter 300 for 10 s at high setting. Cells were scanned on LSR II FACS instrument.
 
-## Cell culture and labeling
+### Cell culture and labeling
 
 Cells were grown and imaged in CSM media (Complete Supplement Mixture) supplemented with 40 mg/L adenine hemisulfate. The JF646-HaloTag ligand was synthesized as previously described (Grimm et al., 2015). The new JF552 dye has a higher signal to noise ratio and is more photostable than JF646. The JF552 dye is a modification of JF549, with similar brightness, but enhanced cell permeability that allows its use for SPT in yeast (Zheng et al., 2019). For in vivo labeling, early log phase cells (O.D600 0.2) were labeled with JF-HaloTag ligand (10 nM for JF646 and 20 nM for JF552) for two hours at 30 degrees in suspension culture. Cells were washed four times with CSM to remove free dye.
 
 Prior to use, 0.17 mm coverslips (Ø 25 mm, Electron Microscopy Services) were flamed to remove punctuated surface auto-fluorescence and to suppress dye binding, and coated with Concanvalin A (2 mg/ml) for 30 min at room temperature, and air-dried for one hour. Coverslips were assembled in a Ø 35 mm Attofluor chamber (Invitrogen). A 1 ml cell suspension was immobilized for 10 min and live cells were imaged in CSM media at room temperature. For anchor away experiments, rapamycin (1 µg/ml) was added one hour prior to imaging, and cells were imaged in the presence of rapamycin. Two biological replicates were performed for each experimental condition.
 
-## Cell cycle synchronization
+### Cell cycle synchronization
 
 Cells were synchronized in G1 by adding α factor for 2 hr (3 µg/ml at 0 min and additional 2 and 1 µg/ml at 60 and 90 min respectively). High autofluorescence did not allow SMT in presence of α factor, which was removed by replacing culture medium. Cells released from G1 at room temperature took 40 min to enter S phase. Both for Pre-S and S phase SMT, cells were stained and synchronized in suspension culture and immobilized right before SMT.
 
-## Wide-field single molecule imaging with epi-Illumination microscope
+### Wide-field single molecule imaging with epi-Illumination microscope
 
 Single-molecule imaging was conducted on a Zeiss Observer Z1 microscope with a Zeiss Plan-Apochromat 150X/1.35 glycerin-immersion objective. Cells of interest were identified under infrared illumination (750 nm, 10 nm FWHM) using a near IR-CCD camera (IDS UI-3370CP-NIR-GL) and Semrock 743 nm/25 nm FWHM filter. A 555 nm (Crystalaser) or 637 nm (Vortran) laser was used for dye excitation, typically at 100 mW total power (TTL pulsed). All laser beams were spectrally filtered and combined using a custom beam combiner (by J.W., details available upon request). A Semrock FF01-750/SP filter was included at the output to remove any residual near infrared emission from lasers. Combined laser beams were collimated into a 2m-long Qioptic fiber (kineFLEX-P-2-S-405.640–0.7-APC-P2) with output through a 12 mm EFL reflective collimator (Thorlabs). The resulting Ø6mm Gaussian beam was introduced into the back port of the microscope. The following cubes were utilized in the microscope turret to direct excitation light towards the sample and filter fluorescence: 1) for JF646 - 648 beamsplitter and 676/29 nm filter, 2) for JF552 - 561 beamsplitter and 612/69 nm filter. Images were acquired with a Hamamatsu C9100-13 back-illuminated EM-CCD camera through additional FF01-750/SP and NF03-405/488/561/635E quad-notch filters. The camera was operated at −80°C with a typical EM gain of 1200 and directly controlled by laser emission via the TTL signal.
 
-## Image acquisition
+### Image acquisition
 
 Images were obtained using either 637 nm laser (JF646) or 555 nm laser (JF552), of excitation intensity ~1KW/cm2 and for each field of view ~7000 frames were captured. Single molecules were tracked using DiaTrack Version 3.05 software, with the following settings; remove blur 0.1, remove dim 70–100, maximum jump six pixels. Single molecule images were collected after pre-bleach of initial intense fluorescence (glow). While imaging with JF646, a 405 nm laser excitation (1–10 mW/cm2, TTL pulses 2–5 ms per frame) was triggered to maintain single fluorophore detection density. Immobilized cells in CSM media were imaged over a 90 min imaging session.
 
-## Analysis of single-molecule images
+### Analysis of single-molecule images
 
 Movies with two dimensional single molecule data were analyzed by DiaTrack Version 3.05 (Vallotton and Olivier, 2013), which determines the precise position of single molecules by Gaussian intensity fitting and assembles particle trajectories over multiple frames. In Diatrack remove blur was set to 0.1, remove dim set at 70 and max jump set at five pixels, where each pixel was 107 nm. Trajectory data exported from Diatrack was further analyzed by a custom computational package ‘Sojourner’ (by S.L.). The package is available on Github (https://rdrr.io/github/sheng-liu/sojourner/). The Mean Squared Displacement (MSD) was calculated for all trajectories six frames or longer. Diffusion coefficients for individual molecules were calculated by unconstrained linear fit (R2 >0.8) of the MSD values computed for time lags ranging from 2 dt to 5 dt, where dt = 10 ms is the time interval between frames, and slope of linear fit was divided by 4 (pre-factor for 2-dimensional Brownian motion) (Qian et al., 1991). The histogram of log converted diffusion coefficients was fitted with double gaussian function from the ‘mixtools’ package (Benaglia et al., 2009) to estimate the fraction of chromatin-bound molecules (mean range between 0.050–0.112 µm2 s−1). Standard error on the mean of each gaussian fit parameter was estimated using a bootstrap resampling approach (Efron, 1979).
 
-The Spot-On analysis was performed on trajectories three frames or longer using the web-interface https://spoton.berkeley.edu/ (Hansen et al., 2018). The bound fractions and diffusion coefficients were extracted from the CDF of observed displacements over different time intervals. For Brownian motion in two dimensions, the probability that a particle starting from origin will be found within a circle of radius r at time interval ∆𝜏 is given as follows.Pr,∆τ=r2D∆τe-r24D∆τwhere D is diffusion coefficient. In Spot-On, the cumulative displacement histograms were fitted with a 2-state model.pr,∆τ=F1 r2(D1∆τ+σ2)e-r24(D1∆τ+σ2)+ZCORR(∆τ,∆Z,D2)F2r2(D1∆τ+σ2)e-r24(D1∆τ+σ2)where F1 and F2 are bound and free fractions, σ is single molecule localization error, D1 and D2 are diffusion coefficients of bound and free fractions, and ZCORR is correction factor for fast molecules moving out of axial detection range (Hansen et al., 2018). The axial detection range for JF646 on our setup is 650 nm. The following settings were used on the Spot-On web interface: bin width 0.01, number of time points 6, jumps to consider 4, use entire trajectories-No, Max jump (µm) 1.2. For model fitting the following parameters were selected: Dbound (µm2/s) min 0.001 max 0.1, Dfree (µm2/s) min 0.15 max 5, Fbound min 0 max 1, Localization error (µm)- Fit from data-Yes min 0.01 max 0.1, dZ (µm) 0.65 for JF646 and dZ 0.6 for JF552, Use Z correction- Yes, Model Fit CDF, Iterations 3.
+The Spot-On analysis was performed on trajectories three frames or longer using the web-interface https://spoton.berkeley.edu/ (Hansen et al., 2018). The bound fractions and diffusion coefficients were extracted from the CDF of observed displacements over different time intervals. For Brownian motion in two dimensions, the probability that a particle starting from origin will be found within a circle of radius r at time interval ∆𝜏 is given as follows.
+
+$$
+Pr,\Delta\tau=\frac{r}{2D\Delta\tau}e^{\frac{-r^{2}}{4D\Delta\tau}}
+$$
+
+where D is diffusion coefficient. In Spot-On, the cumulative displacement histograms were fitted with a 2-state model.
+
+$$
+pr,\Delta\tau=F_{1}\frac{r}{2(D_{1}\Delta\tau+\sigma^{2})}e^{\frac{-r^{2}}{4(D_{1}\Delta\tau+\sigma^{2})}}+Z_{CORR}(\Delta\tau,\DeltaZ,D_{2})F_{2}\frac{r}{2(D_{1}\Delta\tau+\sigma^{2})}e^{\frac{-r^{2}}{4(D_{1}\Delta\tau+\sigma^{2})}}
+$$
+
+where F1 and F2 are bound and free fractions, $\sigma$ is single molecule localization error, D1 and D2 are diffusion coefficients of bound and free fractions, and $Z_{CORR}$ is correction factor for fast molecules moving out of axial detection range (Hansen et al., 2018). The axial detection range for JF646 on our setup is 650 nm. The following settings were used on the Spot-On web interface: bin width 0.01, number of time points 6, jumps to consider 4, use entire trajectories-No, Max jump (µm) 1.2. For model fitting the following parameters were selected: Dbound (µm2/s) min 0.001 max 0.1, Dfree (µm2/s) min 0.15 max 5, Fbound min 0 max 1, Localization error (µm)- Fit from data-Yes min 0.01 max 0.1, dZ (µm) 0.65 for JF646 and dZ 0.6 for JF552, Use Z correction- Yes, Model Fit CDF, Iterations 3.

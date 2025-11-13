@@ -30,13 +30,47 @@ To address this unmet need we set out to develop the first high-throughput pheno
 
 ## Results
 
-## Phenotypic assay development
+### Phenotypic assay development
 
 Our automated platform (Figure 1A) allows for the identification of relatively fast-acting compounds with a rapid plate-processing time (~75 minutes/ 384-well plate), where the motility assay runs for ~30 min followed directly by the AR assay (~45 min). Automated cell tracking (Figure 1B and Figure 1—figure supplement 1A,B) using time-lapse images allowed kinetic parameter quantification on >200 cells/well (Figure 1C). The kinetics show good agreement with clinical systems (Figure 1—figure supplement 1C) and a comparable distribution was observed between experimental days, plates and positions (Figure 1—figure supplement 2) with any small differences between days stemming from donor pool variance. Importantly, spermatozoa were found to be tolerant to the DMSO concentrations used in our screening program (0.0625%–0.1% Figure 1—figure supplement 1D). To determine the optimal screening batch size untreated spermatozoa were dispensed every 30 min for 150 min observing only a small decrease in motility (~10%) after four plates were screened (Figure 1—figure supplement 1E). A flow cytometry-based assay measuring AR (Figure 1D) was run directly afterwards (Figure 1E and Figure 1—figure supplement 1F).
 
-## Screening of the ReFRAME library, confirmation of hits by dose response
+![Figure 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-v2.jpg)
+
+**Figure 1.:** (A) Graphical summary of modular screening workflow where motility measurement is followed by acrosome reaction (AR) measurement allowing a screening throughput of >1400 compounds per donor pool (B) Steps in imaging and analysis: human sperm are recorded with brightfield illumination (first panel) then sperm heads detected using a particle tracking algorithm (second panel) which are then tracked across the timelapse series of images (third panel) and subsequently classified (fourth panel). Each panel contains a zoomed-in subsection of the field. Colour coding for tracking distance and kinetic classification is shown in the panel insets: Tracking panel - rainbow gradient (showing progression over time); Classification panel - red for immotile (IM), yellow for non-progressively motile (NPM) and blue for progressively motile (PM). Scale bars: 100 μm (main images), 5 μm (insets). (C) Sperm counts per well after microscopy and detection shown in a combined violin/box plot. Colours: purple violin outline (probability density of values), yellow dots (outliers of boxplot). (D) Graphical summary of the expected populations determined by flow cytometry based on distribution of cells measured with FL3-A (Pi) vertical axis and FL1-A (PNA-488) horizontal axis: dead cells (upper left, Pi+ PNA-); dead and acrosome-reacted (upper right, Pi+ PNA+); unstained/live/non-reacted (lower left) and live acrosome-reacted (lower right, Pi-PNA+). (E) Example flow cytometry data comparing sperm treated with the Ca2+ ionophore (A23187) which induces AR (left panel) with sperm from DMSO-treated well (right panel). Colours indicate event density. (F) Combined violin/box plot data showing flow cytometry event counts per well. Colours and label as in (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example data for a single sperm track with x and y coordinates being used to calculate standard sperm kinetics. Colour represents the cumulative distance travelled in microns. Acronyms: VCL (curvilinear velocity), ALH (amplitude of lateral head displacement; maximum value), STR (straightness ratio). (B) Explanation of main kinematic parameters (VCL, VSL [straight line velocity], VAP [average path velocity] and ALH). (C) Comparison of data from the standard computer-assisted semen analysis (CASA) with the high-throughput system using a Bland-Altman plot of VAP, VCL and VSL. Colours: turquoise line (mean of differences), dashed purple lines (limit of agreement, mean of differences + /- 1.96 * SD). (D) Effect of DMSO on sperm motility (VCL) relative to untreated wells. Green line represents concentration range used in this study (0.0625–0.1%) (E) Effect of pre-dispense incubation time on sperm motility (% reduction in VCL). Colours: green line (arbitrary 10% cut-off). (F) Plots of FL3-A vs FL1-A for the flow cytometry assay controls using acrosome specific PNA-488 dye (FL-1) and cell viability marker propidium iodine (Pi, FL-3) upon addition of A23187 Ca-ionophore. Panels from left to right: with ionophore and acrosome stain; with ionophore and propidium iodide only, with ionophore but unstained. Colours: red rectangles show population gates; coloured hexagons show event density (bin size = 40).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Distribution of average path velocities (VAP) for sperm motility classes (IM = immotile; NPM = non progressively motile; PM = progressively motile), using data from two positions within each well (Position 1, Position 2), represented as combined box/violin plot. Each box/violin plot is a summary of a screening day (n = 4, 384-well plates). Colours: each screening day is represented as a different colour; grey = boxplot outliers. (B) Distribution of numbers of tracked sperm per well across screening days, represented as combined box/violin plot. Each box/violin plot is a summary of one screening plate. Colours as in (A). (C) Distribution of events identified in the flow cytometry assay, represented as combined box/violin plots. Each box/violin plot is a summary of a screening plate. Colours as in (A).
+
+### Screening of the ReFRAME library, confirmation of hits by dose response
 
 The ReFRAME library (11,968 compounds) was supplied in ‘assay-ready’ imaging plates and was solubilised prior to addition of sperm. High assay quality was achieved throughout with a Z’-factor between 0.4–0.8 (Figure 2B). A total of 63 putative hit compounds decreased motility to varying degrees based on a hit selection cut-off of >15% reduction in motility (Figure 2A with examples in Figure 2C,D,F,G and Video 1 and 2). 14 compounds were selected as putative AR+ hits (Figure 3A with examples in B, C). Motility hits were confirmed with resupplied material in dose-response experiments. There was a dose-dependent decrease in motility for 29 compounds (46% hit confirmation rate), with EC50 values as low as 0.05 µM and effect sizes ranging from 15–100% (Figure 2F,G; Figure 2—source data 1, Supplementary file 1). Amongst the confirmed hits were the aldehyde dehydrogenase inhibitor, Disulfiram (70% maximum reduction at 10 µM) and a putative platelet aggregation inhibitor, KF-4939 (100% max. reduction; EC50 = 0.49 μM), and a range of other compounds having very modest effect and/or showing low potency (See Figure 2—source data 1, Supplementary file 1). In order to test reversibility, wash out experiments were performed. Only a small recovery of motility was observed, after wash out of Disulfiram (Figure 2—figure supplement 1). In the AR screen, 9 of the resupplied compounds had a dose-dependent effect with EC50 values as low as 0.4 µM (See Figure 3—source data 2, Supplementary file 2). However, following the orthogonal assay triaging we implemented to eliminate assay interference compounds, none of the AR hits were found to be true positives (see examples in Figure 3—figure supplement 1D) despite the primary screen showing good assay robustness.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig2-v2.jpg)
+
+**Figure 2.:** (A) Primary screening results of the motility assay. Each dot represents a well (either compound or control well) showing % of DMSO control (Curvilinear Velocity: VCL). Positive controls (Pristimerin), negative controls (DMSO) and individual compound datapoints are shown. The dashed line showing the 15% of control (reduction in VCL) – the cut-off for primary hit selection. Total number of compounds = 11,903, excluding wells with auto-focus errors and with ‘sticky’ compounds which have been excluded from analysis. See dataset (http://doi.org/10.5061/dryad.jdfn2z36z) Figure 2—source code 1. (B) Assay robustness: the standard high throughput screening metric, Z' (see Materials and methods; Zhang et al., 1999) was used to determine the performance of the assay for all screening plates. Dashed lines indicate min/max Z' values. (C) Tracking data visualizations of 3 example wells showing sperm tracks of both imaging positions (Position 1 [Pos. 1] and Position 2 [Pos. 2] respectively) within the wells. A DMSO control well (left panels ‘Control’) shows a large number of progressively motile (PM) sperm (yellow) with few non-progressively motile (NPM) sperm (green and very few immotile (IM) sperm (purple) – this is in contrast to the shorter tracks and higher levels of NPM and IM in the middle panel (‘20% reduction’) for a compound that shows 20% inhibition of motility (i.e. 80% of control) and the right hand panel (‘80% reduction’) for a compound showing 80% inhibition (i.e. 20% of control), showing almost all cells are in the IM and NPM classes. (D) Histogram of sperm tracks quantification of the data show in (C). (E) Summary of motility assay hit rate (0.5%) and reconfirmation rate (0.24%). (F-G) Dose response confirmation of two hits. 8-point 3-fold dilution curves are shown with 10 μM as the highest concentration. Two data points per concentration (n = 2, data point is mean ± SD). Each curve is a 4-parameter logistic fit. Each plot shows estimated values Hill Slope and EC50. The chemical structure of the hit compound is shown as well as some annotation and physicochemical properties. Physicochemical properties were calculated using RDKit, Python and KNIME: SlogP = partition coefficient (Wildman and Crippen, 1999); TPSA is the Topological Polar Surface Area (Ertl et al., 2000); MW is the exact Molecular weight; QED = Quantitative Estimate of Drug-likeness (Bickerton et al., 2012).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Different donor pools analysed on three different days are represented by the three different colours. Data shown are four technical replicates per donor pool for DMSO/Disulfiram and two technical replicates for the untreated samples. For each measurement a minimum of 200 cells were recorded. See Figure 2—figure supplement 1—source data 1 along with Figure 2—figure supplement 1—source code 1 .
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig3-v2.jpg)
+
+**Figure 3.:** (A) Results of primary screening of the library using the acrosome assay (live cells, acrosome reacting, Pi- PNA+ population). Each dot represents a well (either compound or control well). Shown is % Events (number of events in Pi- PNA+ gate relative to total events in the sampled well). Datapoints for compounds, negative controls (DMSO) and positive controls (A23187) are shown. Black dashed line = 15% threshold for primary hits selection. See Figure 3—source data 1 along with Figure 3—source code 1. (B-C) Data from two example wells: a DMSO well (left panel) and a well with 65% Pi- PNA+ population (right panel). (D) Summary of acrosome assay results before and after triage.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Results are shown of primary screening data for two of the other populations in the flow cytometry assay: (A) Acrosome reaction positive and propidium iodide positive (PI+ PNA+) events and (B) acrosome reaction negative and propidium positive (Pi+ PNA-) events. Shown is % Events (number of events relative to total events per well). Datapoints for compounds, negative controls (DMSO) and positive controls (A23187) are shown. See Figure 3—source data 1 along with Figure 3—source code 1 . (C) Control experiment showing microscopy images of A23187-induced acrosome-reacted sperm. Shown are individual channels (greyscale) for acrosome signal stained with PNA-Alexa488 (green band in merged image) and DNA stained with Propidium iodide indicating lack of cell viability (purple in merged image). Scale bar = 10 μM. (D) Orthogonal assay to eliminate fluorescent compounds: Two primary hits were analyzed using fluorescence microscopy without addition of staining reagents: top panels show the non-specific fluorescence of Merbromin and in bottom panels fluorescence of Manoalide which stains only significantly in the midpiece/tail. Grey scale images are shown in the left two panels and a merged image on the right. Key: green channel = Ex 488 nm with Em bandpass filter BP 525/50 nm; red channel = Ex 561 nm; Em Bandpass filter BP600/37 nm). Scale bar = 10 μM.
+
+![Video 1.](https://cdn.elifesciences.org/articles/51739/elife-51739-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/51739/elife-51739-video2.mp4.jpg)
+
+**Video 2.:** Tracking is overlayed in each panel. Colour coding is detailed in Figure 2.
 
 ## Discussion
 
@@ -54,49 +88,171 @@ In summary, our high-throughput phenotypic platform allows for the screening of 
 
 ## Materials and methods
 
-## Ethical approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapien)</td>
+      <td>Live spermatozoa</td>
+      <td>Donated semen samples</td>
+      <td></td>
+      <td>Local ethical approval (13/ES/0091)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lectin PNA (Arachis hypogaea), Alexa Fluor 448 Conjugate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher:L21409; RRID: AB_2315178</td>
+      <td>Stored as 1 mg/mL stock in DMSO; used at 1:1000 final dilution</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Propidium Iodide; Live/Dead Sperm Viability kit,</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher:L7011,</td>
+      <td>Stored as 2.4 mM stock; used at a 1:2000 final dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ReFRAME (Repurposing, Focused Rescue, and Accelerated Medchem) library</td>
+      <td>CALIBR at the Scripps Institute; Publication (Janes et al., 2018)</td>
+      <td></td>
+      <td>www.reframedb.org</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pristimerin</td>
+      <td>Merck</td>
+      <td>Merck:530070</td>
+      <td>Stored as 10 mM stock in DMSO; used at final concentration of 20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>calcium ionophore (A23187)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:C7522</td>
+      <td>Stored as 10 mM stock in DMSO, used at a final concentration of 10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Disulfiram</td>
+      <td>Tocris</td>
+      <td>Tocris:3807</td>
+      <td>Stored as 10 mM stock in DMSO, used at 10 μM final concentration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trackpy v0.4.1</td>
+      <td>Zenodo. (http://doi.org/10.5281/zenodo.1226458)</td>
+      <td></td>
+      <td>Publication: (Crocker and Grier, 1996); Publication: (Allan, 2018)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FFMPEG</td>
+      <td>FFmpeg Developers (http://ffmpeg.org)</td>
+      <td>RRID:SCR_016075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor packages</td>
+      <td>Bioconductor (https://bioconductor.org)</td>
+      <td>RRID:SCR_006442</td>
+      <td>flowCore, flowDensity, flowWorkspace, ggcyto</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDF5</td>
+      <td>HDF Group (www.hdfgroup.org)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dr4pl</td>
+      <td>Dr4pl (https://cran.r-project.org/web/packages/dr4pl/index.html)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for data analysis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The R code used for data analysis is included in the supplement files accompanying this paper</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KNIME</td>
+      <td>Berthold et al., 2008</td>
+      <td></td>
+      <td>https://www.knime.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RDKit</td>
+      <td>RDKit, 2018</td>
+      <td></td>
+      <td>https://www.rdkit.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical approval
 
 Written consent was obtained from each donor in accordance with the Human Fertilization and Embryology Authority (HFEA) Code of Practice (version 8) under local ethical approval (13/ES/0091) from the Tayside Committee of Medical Research Ethics B.
 
-## Development of methods for motility and Acrosome Reaction (AR)
+### Development of methods for motility and Acrosome Reaction (AR)
 
 A pre-existing automated cell-based phenotypic screening platform was adapted with the use of live human spermatozoa. The platform utilises a Yokogawa CV7000 Cell Voyager high-throughput microscope able to image 384 multiwell plates under full environmental control acquiring timelapse images at a sufficiently high speed (~48 fps)_to capture the fast-moving sperm for tracking analysis. For high throughput screening with human spermatozoa to be effective and yield meaningful hits, the system needed to replicate, as close as possible, the manual workflow currently used in an andrology lab, so that the effect of large numbers of compounds on viable human sperm could be performed. In order to achieve this goal, we investigated a number of factors that could impact the quality of the data such as: plate type; concentration and number of spermatozoa per well; logistics of spermatozoa preparation by density gradient centrifugation and handling; donor-pooling; dispense speed for getting spermatozoa into 384 well plates; timing of compound addition; temperature control; image acquisition parameters; algorithm choice for motility assessment and data management and, evaluating the overall speed of data analysis. In addition, a flow cytometry-based assay and data analysis workflow was developed to measure acrosomal status and cell viability. We chose to perform all experiments on non-capacitated sperm as this condition is the most consistent, less prone to donor-effects and is closer to the state in which the sperm will be when they would be encountering the male contraceptive drug. The goal was to be able to screen a 384-well plate in both assays consecutively within 90 min of sperm dispensing using the fully automatic robotic system. Data was analysed for inter- and intra-plate variation (both technical and biological replicates) and signal-to-background and variance measured to demonstrate the assay was reproducible and robust. The assay was shown to be scalable and all the workflows optimal. Once established, the system was validated by screening the ReFRAME library (Janes et al., 2018) and hits confirmed by dose-response analysis.
 
-## Sperm handling
+### Sperm handling
 
 Control semen samples were obtained from volunteer donors with normal sperm concentration, motility and semen characteristics (WHO, 2010) and no known fertility problems. Samples were obtained by masturbation after 48–72 hr of sexual abstinence. After ~ 30 min of liquefaction at 37°C, cells were prepared using a discontinuous density gradient procedure (DGC). Semen was loaded on top of a 40–80% suspension of Percoll (Sigma Aldrich, UK) diluted with non-capacitation medium using Minimal Essential Medium Eagle, supplemented with HEPES, Sodium lactate and Sodium Pyruvate to achieve a similar buffer as described previously (Tardif et al., 2014). We routinely pooled samples after DGC from 3 to 5 donors for use in each screening batch run in order to reduce donor-to-donor variability. Samples were obtained and analysed in line with suggested guidance for human semen studies where appropriate (Björndahl et al., 2016).
 
-## Motility assay
+### Motility assay
 
 Sperm cells were incubated for 3 hr at 37°C after DGC, transferred to the robotic platform (HighRes Biosolutions Inc) and maintained at 37°C with gentle stirring (100 rpm) in a water bath on top of a magnetic stirrer. Approximately 10,000 spermatozoa (10 μl) were dispensed per well using a MultiDrop Combi (ThermoFisher) into pre-warmed assay-ready plates. Spermatozoa were incubated with the compounds for 10 mins (thus favouring fast acting compounds) at 37°C in the CV7000 microscope prior to the commencement of imaging.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 A CV7000 Cell Voyager high-content imaging system (Yokogawa) was used as it allowed full environmental control, sufficient contrast using simple brightfield optics and a fast acquisition rate (up to 45 frames per second). Using a 20x lens with bright field illumination (0.11 ms exposure, 3% lamp power), time-lapse image series were acquired (24 frame in 0.5 s) at two positions per well (with a 400 μm gap between positions to eliminate double counting of sperm). Image acquisition across a 384-well plate with such settings takes ~ 17 min.
 
-## Sperm tracking
+### Sperm tracking
 
 A Python implementation of the particle tracking algorithm originally developed by others (Crocker and Grier, 1996) was employed (Trackpy v0.4.1 Allan, 2018). The algorithm determines the position of every sperm head in each frame and links the position over time creating tracks. We optimized the algorithm parameters for our imaging data to exclude sperm cross-tracks and avoid detecting non-sperm particles. The image data (~17,000 files amounting to 21 GB per plate) can be processed within 30 min using a standard desktop PC (Intel Core i5-6600 CPU, 3.3 GHz, 8 Gb RAM) and can also be parallelized on a compute cluster with minimal effort.
 
-## Acrosome assay
+### Acrosome assay
 
 A flow cytometry-based assay was developed employing an iQue Screener (Sartorius) with Alexa488-conjugated peanut agglutinin (PNA) (Mortimer et al., 1987) and general sperm viability (using propidium iodide, Pi). This assay was run directly after motility assessment. Controls (DMSO and the Ca2+ ionophore A23187) were added using an acoustic dispenser (Echo 555, Labcyte Inc) and incubated for 10 min at 37°C in the SteriStore (HighRes Biosolutions Inc). PNA488 (ThermoFisher Scientific, Cat. No. L21409, stored as 1 mg/mL stock) was then added to achieve a 1:1000 final dilution and propidium iodide (ThermoFisher Scientific, Live/Dead Sperm Viability kit, Cat. No. L7011, stored as 2.4 mM solution) was added to achieve a 1:2000 final dilution using a liquid handler (Tempest, Formulatrix). After addition of dyes, plates were incubated for 10 min at 37°C in the SteriStore before sampling using an iQue Screener (2 s sip time per well with pump setting of 45 rpm). This resulted in a sample processing time of about 25 min per 384-well plate. Cells were categorised as either: unstained cells; ‘dead’ cells (Pi+ PNA-); Acrosome-reacted but ‘dead’ cells (Pi+ PNA+); or Acrosome-reacted ‘live’ cells (Pi- PNA+). This method is capable of detecting a shift of populations (Pi+ and PNA+) upon induction of AR using A23187. The AR assay was performed as an agonist screen (scoring for induction of AR in live cells compared to DMSO controls) with the expectation that compounds could be found that induce AR beyond levels of induction with A23187.
 
-## Controls and QC criteria
+### Controls and QC criteria
 
 For the motility assay DMSO was used as a vehicle control (negative control) and Pristimerin (Merck, Cat. No. 530070, stored as 10 mM stock in DMSO; final concentration of 20 µM) as a positive control. For the acrosome assay we added a calcium ionophore (A23187, Sigma-Aldrich, Cat. No. C7522, stored as 10 mM stock in DMSO, used at a final concentration of 10 µM) as a positive control and DMSO was added to wells as a negative control to be at the same final concentration as that present in the compound-containing wells (0.0625%). DMSO tolerance was tested by performing the standard motility assay exposing sperm to increasing concentrations (max 10%) of DMSO for 10 min. We calculate the standard statistical measure of assay robustness, the Z’ value (Zhang et al., 1999) for each plate using positive and negative controls for the motility assay and observed Z’ values ranging between 0.4–0.8. In addition, we performed a visual check of heatmaps for every plate to detect edge effects.
 
-## Data analysis and normalization
+### Data analysis and normalization
 
-## Motility
+#### Motility
 
 custom R scripts were written to calculate standard sperm kinetic parameters (Mortimer et al., 2015). Those parameters allow classification of sperm into standard WHO classes: progressively motile (PM) (where average path velocity: VAP > 25 um/sec AND straightness: STR > 80%); non-progressively motile (NPM) (where VAP > 5 um/sec OR straight line velocity: VSL > 11 um/sec), and immotile (IM). In addition to calculating kinetic parameters, we established a workflow to generate movies of time-lapse videos with overlapping sperm tracks using R and FFMPEG (FFmpeg Developers. Available from http://ffmpeg.org). We expressed results as % of control curvilinear velocity: VCL. This was defined as VCL_median (cpd)/VCL_median(DMSO)*100. Hit selection criteria was 15% reduction of VCL. VCL was chosen as the main kinetic measurement as it had an acceptable Z’ value and is independent of path averaging. Wells with autofocus errors or compounds which did not dissolve properly (resulting in sperm cells being stuck in one location but moving normally in the rest of the well) were excluded from analysis.
 
-## Acrosome
+#### Acrosome
 
 iQue Screener Data was exported as FCS format and processed using the following Bioconductor packages for analysing flow cytometry data: flowCore, flowDensity, flowWorkspace, ggcyto (see https://bioconductor.org). These packages allow handling flow cytometry data as objects, which can then be compensated, gated and visualized efficiently. In addition, we use HDF5 format (www.hdfgroup.org) for storing processed and averaged data. Percent events for each population (Pi+ PNA+, Pi- PNA+, Pi+ PNA- and Pi- PNA-), normalized to total well events, were calculated. Hits were defined as compounds which induce AR beyond 15% (maximum level of induction achieved with positive control). Wells with irregularities (low in Pi+ or Pi+PNA+ population, or below 200 events) have been excluded from analysis.
 
-## Compound screening
+### Compound screening
 
 We screened the ~12,000 compound ReFRAME (Repurposing, Focused Rescue, and Accelerated Medchem) library (Janes et al., 2018; and www.reframedb.org) supplied by CALIBR at the Scripps Institute. This unique library consists of bioactives and approved drugs that have been assembled from the literature, drug databases and by patent mining. Compounds dissolved in DMSO were spotted (12.5 nL, final assay concentration ~ 6 μM) into 384-well black-sided optical imaging plates (CellCarrier, PerkinElmer) at CALIBR and were shipped on dry ice to the screening centre in Dundee and stored at −20 °C until required. Immediately prior to screening plates were thawed, controls were added using the acoustic dispenser (Echo 555, Labcyte), and 10 μl warm media added followed by shaking on a plate shaker for 10 s. Plates were then incubated for 30 min at 37°C to solubilise the compounds and prewarm the plates prior to the addition of live sperm (see above). With the addition of the media containing sperm (10 μl) the final concentration of DMSO in each well was 0.0625%.
 
@@ -104,14 +260,14 @@ All experiments were performed with pools of donors (3–5 per batch of 4 screen
 
 The ReFrame library has been screened for cytotox (using CellTiterGlo) in HEK293 and HepG2 cells (see www.reframedb.org) with some of the hit compounds displaying activity in one or both assays (Figure 2—source data 1), information which helps inform compound progression decisions.
 
-## Dose response experiments
+### Dose response experiments
 
 Assay-ready 384-well CellCarrier plates with 8-point curves (10 μM highest concentration) were resupplied by CALIBR in duplicate and processed as described above. Curves were fitted using the R package dr4pl (https://cran.r-project.org/web/packages/dr4pl/index.html) using a 4-parameter logistic fit option.
 
-## Triaging of AR hits
+### Triaging of AR hits
 
 Given the prevalence of a range of interfering compounds amongst the library hits, two approaches were used for triaging. These additional triaging steps, after the primary screen, allowed for the elimination of intrinsically fluorescent compounds and compounds fluorescing in the presence of biological material. Screening plates were excited at 488 nm and read at 520 nm and 670 nm in a M1000Pro multimode plate reader (Tecan) after flow cytometry. In addition, when performing dose-response curve follow up on resupply material a replicate set of compound-dosed cells were processed with no-dyes added. This identified the small number of compounds whose fluorescence is indistinguishable from a true positive. In addition, visual confirmation of the appropriate pattern of acrosome staining was performed by microscopy.
 
-## Disulfiram washout assay
+### Disulfiram washout assay
 
 In order to assess the ability of sperm cells to recover motility after Disulfiram removal, wash-out experiments were conducted at two timepoints using non-capacitating conditions. Spermatozoa were pooled after DGC preparation in the same manner as for screening. Pooled samples were diluted to a concentration of approximately 106/mL and incubated at 37°C under non-capacitating conditions (see above). After this initial incubation period, Disulfiram (10 μM final concentration) or vehicle control (DMSO to 0.1% final concentration) were added and incubated at 37°C for 20 min. Following exposure to Disulfiram or DMSO control, sperm cells were washed by centrifugation at 300 g for 5 min in 5 mL of the non-capacitation media. After washing, the pellet was resuspended in 500 μl of the appropriate media and incubated at 37°C for 1 hr. Samples were taken for analysis by computer-assisted-sperm analysis (CASA) [CEROS machine (version 12), Hamilton Thorne Research, Beverly, MA, USA] before treatment, after 20 mins treatment and 1 hr post washout. Wash-out experiments were performed on three separated days, utilising different donors to make up the pooled sample. Each condition was repeated in duplicate on each of these days and each CASA reading was performed in duplicate.

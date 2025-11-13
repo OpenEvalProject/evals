@@ -39,13 +39,130 @@ Native BBSome complexes were isolated directly from bovine retinal tissue using 
 
 Three-dimensional classification of the cryo-EM data (Figure 1—figure supplement 1b–d) revealed that BBSome complexes with and without ARL6 were captured. The BBSome alone was resolved to 3.1 Å resolution and the BBSome:ARL6:GTP complex to 3.5 Å resolution (Figure 1—figure supplement 1e and Table 1). We also isolated BBSome complexes that lack BBS5 or BBS7 (Figure 1—figure supplement 1d). These rare subcomplexes (2–4% of the total dataset) may reflect native intermediates, or dissociation of the complex during purification or vitrification. Compared to the previous mid-resolution structure (Chou et al., 2019), our higher-resolution data allows atomic models to be built with sidechain accuracy including for previously unbuilt domains of BBS2 and BBS7. The higher-resolution data also revealed that the N-terminal β-propeller domains of BBS2 (BBS2βprop) and BBS7 (BBS7βprop) and the pleckstrin homology domains of BBS5 had been misplaced at lower resolution.
 
-## Overall architecture of the BBSome
+**Table 1.**
+ Cryo-EM data collection, refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>BBSome (EMD-21144) (PDB 6VBU)</th>
+      <th>BBSome:ARL6:GTP (EMD-21145) (PDB 6VBV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>81,000</td>
+      <td>81,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>56</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.1 to −2.4</td>
+      <td>−1.1 to −2.4</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.06</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>152,942</td>
+      <td>75,201</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>3.1 0.143</td>
+      <td>3.5 0.143</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution limit set in refinement (Å)</td>
+      <td>3.1</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−45.9</td>
+      <td>−43.6</td>
+    </tr>
+    <tr>
+      <td>Model composition Non-hydrogen atoms Protein residues Ligands</td>
+      <td>30,209 3820 2 Ca2+</td>
+      <td>31,676 4000 2 Ca2+; 1 GTP</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2) Protein Ligand</td>
+      <td>60.8 74.0</td>
+      <td>53.9 82.3</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td>0.005 0.68</td>
+      <td>0.004 0.71</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>
+      <td>2.02 12.0 0.2</td>
+      <td>2.07 12.7 0.7</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>93.5 6.5 0.0</td>
+      <td>92.7 7.2 0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall architecture of the BBSome
 
 In the absence of ARL6, the eight subunits of the BBSome are arranged in two lobes that we call the head and the body (referred to as the top and base lobes by Chou and colleagues [Chou et al., 2019]) (Figure 1). The head is formed by an asymmetric heterodimer of BBS2 and BBS7, with the other six subunits forming the body. The head and body are connected by a helical neck formed from two abutting coiled coils, one from BBS2 and the other from BBS9. BBS1βprop occupies a special position in the BBSome, cradled loosely between BBS7 in the head and BBS4 in the body. The division of the BBSome into head and body lobes with BBS1βprop considered separately is based on both the physical architecture and differences in dynamics. Relative to the body, the head is more flexible and less well resolved, while BBS1βprop shows additional flexibility independent of the head movement (Figure 1—figure supplement 1g). To visualize the interlobe movement and generate high quality maps for model building, we used multibody refinement. The results show that the head adopts an ensemble of conformations with no single trajectory dominating (Video 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig1-v2.jpg)
+
+**Figure 1.:** (a) Two views of the cryo-EM structure of the bovine BBSome (postprocessed map contoured at a threshold of 0.015 and colored by subunit). (b) Atomic models of the eight subunits of the BBSome in the same orientations as the map in panel a. The BBSome can be conceptually divided into head and body lobes (indicated with dashed lines) with the β-propeller domain of BBS1 sandwiched between. A helical neck formed from abutting coiled coils from BBS2 and BBS9 connects the head and body of the BBSome.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Silver-stained SDS-PAGE gel showing the purity of the bovine BBSome after purification but before addition of excess ARL6 for cryo-EM analysis. The subunits are labeled by their predicted molecular masses (given in Table 2). (b) Representative micrograph. (c) Selected 2D classes showing that the BBSome adopts a variety of orientations on the cryo-EM grid. (d) Processing strategy used to computationally separate BBSome and BBSome:ARL6:GTP complexes. (e) Fourier shell correlation (FSC) curves for the BBSome (black) and BBSome:ARL6:GTP (blue) complexes. The resolution at FSC = 0.143 is given. (f) Model-to-map FSC curves for the BBSome (black) and BBSome:ARL6:GTP (blue) complexes. The FSC curves were calculated using the unsharpened maps prior to multibody refinement. The resolution at FSC = 0.5 is shown with a dashed line. (g) Unsharpened maps colored by local resolution (before multibody refinement).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Representative examples of the density for each of the eight BBSome subunits. (b) Model and density map for a region of ARL6. (c) Density for the GTP in the BBSome:ARL6:GTP complex. All maps are postprocessed following multibody refinement and contoured at a threshold between 0.015–0.02. Landmark residues are labeled.
+
+![Video 1.](https://cdn.elifesciences.org/articles/53322/elife-53322-video1.mp4.jpg)
+
+**Video 1.:** Two orthogonal views are shown for each motion.
+
 Within the body, BBS9 interacts with all other subunits of the BBSome. The extensive interconnectivity may explain why the BBSome needs three dedicated chaperonin-like BBS proteins (BBS6, BBS10, and BBS12) and CCT/TRiC family chaperonins to assemble (Seo et al., 2010).
 
-## BBS1, BBS2, BBS7 and BBS9 are structural homologs
+### BBS1, BBS2, BBS7 and BBS9 are structural homologs
 
 BBS2, BBS7, and BBS9 all share the same five-domain architecture with an N-terminal β-propeller (βprop) followed by a heterodimerization α-helix (hx), an immunoglobulin-like GAE domain (GAE), a mixed α/β plaform (pf), and an α-helical coiled-coil (CC) (Figure 2a). BBS1 is a shorter homolog that lacks the last two domains. The conserved domain architectures of BBS1, BBS2, BBS7 and BBS9 suggest a common evolutionary origin. Together these four structurally homologous proteins are responsible for two-thirds of the molecular mass of the BBSome (Table 2), including all of the head.
 
@@ -53,17 +170,116 @@ BBS2, BBS7, and BBS9 all share the same five-domain architecture with an N-termi
 
 **Figure 2.:** (a) Domain organization of BBS1, BBS2, BBS7, and BBS9. (b) The bovine BBSome contains four homologous β-propeller domains. The positions of the calcium cations that bind BBS2βprop are marked with a star. (c) BBS9βprop rainbow colored from N to C-terminus. The N-terminal β1-strand serves as a ‘velcro’ closure for blade 7. The individual blades are numbered. (d) BBS1βprop contains a helical insertion that likely interacts with the N-terminus of BBS4. (e) Calcium-binding loops of BBS2βprop. Residue D170 is mutated in Bardet-Biedl syndrome (Patel et al., 2016).
 
+**Table 2.**
+ Proteins present in the BBSome or BBSome:ARL6:GTP complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>NCBI accession</th>
+      <th>Protein length (residues)</th>
+      <th>Molecular mass (kDa)</th>
+      <th>Total built residues (BBSome)</th>
+      <th>Total built residues (BBSome: ARL6:GTP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BBS1</td>
+      <td>XP_010819476.1</td>
+      <td>668</td>
+      <td>72.9</td>
+      <td>486</td>
+      <td>486</td>
+    </tr>
+    <tr>
+      <td>BBS2</td>
+      <td>NP_001033249.1</td>
+      <td>721</td>
+      <td>79.8</td>
+      <td>659</td>
+      <td>659</td>
+    </tr>
+    <tr>
+      <td>BBS4</td>
+      <td>NP_001069424.1</td>
+      <td>519</td>
+      <td>58.2</td>
+      <td>386</td>
+      <td>391</td>
+    </tr>
+    <tr>
+      <td>BBS5</td>
+      <td>NP_001094602</td>
+      <td>341</td>
+      <td>38.8</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>BBS7</td>
+      <td>NP_001178275.2</td>
+      <td>715</td>
+      <td>80.4</td>
+      <td>698</td>
+      <td>706</td>
+    </tr>
+    <tr>
+      <td>BBS8</td>
+      <td>XP_024853996</td>
+      <td>501</td>
+      <td>56.6</td>
+      <td>475</td>
+      <td>475</td>
+    </tr>
+    <tr>
+      <td>BBS9</td>
+      <td>NP_001179782</td>
+      <td>887</td>
+      <td>99.1</td>
+      <td>764</td>
+      <td>764</td>
+    </tr>
+    <tr>
+      <td>BBS18</td>
+      <td>XP_003587939.1</td>
+      <td>69</td>
+      <td>8.1</td>
+      <td>52</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>NP_001069250.1</td>
+      <td>186</td>
+      <td>21.1</td>
+      <td>-</td>
+      <td>167</td>
+    </tr>
+  </tbody>
+</table>
+
 The β-propeller domains of the four homologous BBS subunits are closely related members of the seven-bladed WD40 repeat family (Figure 2b). Each β-propeller has a ‘velcro’ closure with the N-terminal β1-strand serving as the outermost strand for the last blade (Figure 2c). Only BBS1βprop contains a large structured insertion, with a helical region between residues 110 and 195 (Figure 2d). This insertion is one of the few regions of the BBSome for which we cannot build an accurate atomic model. Although the function of this insertion is unclear, if forms multiple chemical crosslinks with the disordered N-terminus of BBS4 (Chou et al., 2019), and has been suggested to bind PCM-1 at centriolar satellites during BBSome assembly (Chou et al., 2019; Kim et al., 2004).
 
 BBS2βprop is unique among the BBSome β-propeller domains, as contains two Dx[D/N]xDG-like calcium-binding loops (Rigden et al., 2011); the first in blade 4 and the second in blade 6. A calcium cation can be seen bound to both loops, coordinated by a network of acidic sidechains and the mainchain of the conserved glycine (Figure 2e). A mutation (D170N) in the first of these loops is associated with BBS (Patel et al., 2016), suggesting that calcium binding by BBS2 is required for the proper functioning of the BBSome.
 
 The β-propeller domains of BBS1, 2, 7 and 9 are followed by an α-helix and an immunoglobulin-like β-sandwich (Figure 3a–c and Figure 3—figure supplement 1a). This β-sandwich structurally resembles GAE domains, which are found in two different types of clathrin adaptors; the adaptin subunits of clathrin adaptor protein (AP) complexes (Owen et al., 1999; Traub et al., 1999) and the monomeric GGA family of clathrin adaptor proteins (Dell'Angelica et al., 2000). However, the GAE domains of the BBSome and clathrin adaptors differ in both topology − the β4 strand participates in different β-sheets (Figure 3—figure supplement 1b–c) − and function. Whereas the GAE domains of clathrin adaptors recruit accessory proteins to clathrin by binding hydrophobic motifs within the cytosolic tails of transmembrane proteins (Brett et al., 2002; Miller et al., 2003), the BBSome GAE domains are involved in heterodimerization. BBS2GAE dimerizes with BBS7GAE in the head (Figure 3b), and BBS1GAE dimerizes with BBS9GAE in the body (Figure 3c). The dimerization interface occludes the peptide-binding site of the clathrin adaptor GAE domains (Brett et al., 2002; Jürgens et al., 2013; Miller et al., 2003) (Figure 3d). The BBSome GAE domains also show low sequence and structural similarity with one another. For example, both BBS7GAE and BBS9GAE have a strand insertion between the β3 and β4 strands, but this additional strand contributes to different β-sheets in the two subunits (Figure 3—figure supplement 1b). These structural differences likely prevent incorrect pairing between BBSome subunits during assembly. The α-helix that precedes the GAE domain is part of the dimerization interface and forms a short coiled-coil with the corresponding α-helix of its partner subunit (Figure 3a–c).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig3-v2.jpg)
+
+**Figure 3.:** (a) Location of BBS1, BBS2, BBS7, and BBS9 in the BBSome, colored except for their β-propeller domains. GAE heterodimers shown in panels c and d are boxed. In the rotated view all non-colored subunits are removed for clarity. (b) Heterodimerization of BBS2 and BBS7 involves the hx-GAE module. (c) Heterodimerization of BBS1 and BBS9. (d) Superposition of BBS9GAE with the GAE domain of AP-1 clathrin adaptor subunit γ-like 2 reveals that the heterodimerization interface with BBS1GAE would occlude the substrate binding pocket. (e) The GAE-pf module of BBS2, BBS7 and BBS9 resembles the equivalent module of the AP-2 clathrin adaptor α2-adaptin. While BBS9GAE-pf superposes closely with α2-adaptin, the GAE and pf domains of BBS2 and BBS7 (inset) adopt different orientations relative to one another.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Three-dimensional model of the BBS1GAE domain with β-strands colored. (b) Topology diagrams for the GAE domains of BBS1, BBS2, BBS7, and BBS9 following the color scheme in panel a. BBS7GAE and BBS9GAE have strand insertions (shown in gray) between the β3 and β4 strands that contribute to different β-sheets in the two subunits. (c) The topology of a GAE domain from the clathrin adaptor protein GGA3 (PDB: 1P4U). Compared to the clathrin adaptor GAE domain, the β4 strand (green) of the GAE domains of the BBSome contributes to the other β-sheet. (d) Three-dimensional model of the BBS7pf domain with secondary structure elements colored. (e) Topology diagram of BBS7pf following the color scheme in panel d. BBS2pf and BBS9pf share the same topology as BBS7pf. (f) The platform domain of the AP-2 clathrin adaptor α-appendage has an additional N-terminal α-helix and but lacks the C-terminal β-strand found in the BBSome pf domains.
+
 In BBS2, BBS7 and BBS9, the GAE domain is followed by a domain which consists of a single β-sheet and two α-helices (Figure 3—figure supplement 1d). This domain resembles the platform domain that follows the GAE domain in the α-adaptin subunit of the clathrin AP-2 complex (Owen et al., 1999; Traub et al., 1999) but lacks the N-terminal α-helix and has an additional C-terminal β-strand (Figure 3—figure supplement 1e–f). Like the GAE and platform domains of α-adaptin, the GAE and platform domains of the BBSome subunits make extensive, hydrophobic contacts with one another (with an interface of 520–610 Å2). The relative orientation between the GAE and pf domains of BBS9 mirrors those of α-adaptin (Owen et al., 1999; Traub et al., 1999) and the modules are closely superimposable (Figure 3e). However, the same domains in BBS2 and BBS7 adopt different orientations relative to one another (Figure 3e, inset), which prevents the modules being readily superimposable with α-adaptin. Like the GAE domain, the platform domain of α-adaptin is capable of binding substrate peptides through a hydrophobic pocket (Brett et al., 2002). In the BBSome, these platform domains are solvent accessible, but are yet to be implicated in substrate recognition.
 
 In all three subunits, the platform domain is followed by a helical C-terminal region containing a coiled-coil. The coiled-coils of BBS2 and BBS9 come together to form the neck of the BBSome (Figure 1b). The coiled-coil of BBS7 is unpaired but contacts the midpoint of the neck (Figure 3a).
 
-## Domain organization of the body
+### Domain organization of the body
 
 BBS4, BBS5, BBS8 and BBS18 make up the remaining third of the molecular mass of the BBSome. BBS4 and BBS8 are related proteins with tetratricopeptide repeats (TPRs) that fold into α-solenoids (Figure 4). BBS8 occupies a central region of the body whereas BBS4 runs along the side (Figure 4b). The two subunits are physically connected with the C-terminus of BBS8 binding perpendicular to the midsection of BBS4 (Figure 4c). Whereas BBS4 forms a conventional uninterrupted α-solenoid, BBS8 has an insertion between the third and fourth α-helices of its α-solenoid (residues 48–158). This insertion consists of two short α-helices and long loops that fold together into a compact domain (Figure 4b–c). The density for this region is considerably weaker than for the neighboring environment, suggesting it is flexible or capable of unfolding. TPR-containing proteins typically bind a specific linear peptide within the concave surface of the α-solenoid (Zeytuni and Zarivach, 2012). In the case of the BBS4 and BBS8, the linear peptide is BBS18, the smallest BBSome subunit (Figure 4c). By stretching between BBS4 and BBS8, BBS18 appears to stabilize their association. In absence of BBS18, BBS4 fails to incorporate into the BBSome (Loktev et al., 2008).
 
@@ -77,13 +293,25 @@ BBS5, the remaining subunit, is located at the periphery of the body in extensiv
 
 **Figure 5.:** (a) Position of BBS5 at the periphery of the BBSome body. BBS5 has tandem pleckstrin homology domains (BBS5N-PH and BBS5C-PH) and an extended C-terminus (BBS5C-term). (b) BBS5N-PH and BBS5C-PH superpose with a root-mean-square deviation (r.m.s.d.) of 0.97 Å. (c) Potential phosphoinositide binding sites were determined from crystal structures of pleckstrin homology domains in complex with inositol-(1,3,4,5)-tetrakisphosphate (PDB: 1FAO) (Ferguson et al., 2000) or sulfate ions (PDB: 2CAY) (Teo et al., 2006). Three of the four potential binding sites in BBS5 are occluded by other BBSome subunits (blue arrows). The fourth (green arrow) is accessible but not conserved. (d) Superposition of BBS5C-PH with the GLUE domain of Vps36, a component of the ESCRT-II complex (Teo et al., 2006). Vps36GLUE has a non-canonical phosphoinositide binding site (identified based on the binding site of a sulfate ion).
 
-## ARL6-mediated activation of the BBSome
+### ARL6-mediated activation of the BBSome
 
 The BBSome is recruited to ciliary membranes by membrane-associated, GTP-bound ARL6 (Jin et al., 2010). A crystal structure has shown that ARL6:GTP interacts with blades 1 and 7 of the BBS1βprop (Mourão et al., 2014). However, this binding site is occluded in the BBSome structure, as blade 7 of BBS1 forms a continuous eight-stranded β-sheet with the corresponding blade of the adjacent BBS2βprop (Figure 6a). The occlusion of the ARL6 binding site and the general flexibility of the head had led to suggestions that the head must open to allow ARL6 to bind (Chou et al., 2019). However, our 3.5 Å resolution structure of the BBSome:ARL6:GTP complex shows that the head remains in a closed, downward conformation even in the presence of ARL6 (Figure 6b). Rather, BBS1βprop swivels in its cradle between BBS4 and BBS7 to accommodate ARL6 (Figure 6c and Figure 6—figure supplement 1). This swiveling action involves a rotation of approximately 25° and a movement of 13 Å away from BBS2βprop. The N-terminal half of BBS4 shows a small 2–3 Å displacement to accommodate the movement of BBS1βprop. However, the hx and GAE domains of BBS1 remain static due to their attachment to BBS1βprop through a flexible linker. The swiveling of BBS1βprop opens a central cavity in the BBSome with dimensions of 50 × 15 Å, wide enough to accommodate a polypeptide chain. This cavity is flanked by the newly exposed edges of BBS1βprop, BBS2β-prop and BBS7βprop as well as BBS4 and BBS8 in the body.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig6-v2.jpg)
+
+**Figure 6.:** (a) In the BBSome-only state, BBS1βprop and BBS2βprop bind edge-to-edge with hydrogen bonding between their β1 strands generating a continuous eight-stranded β-sheet. (b) Cryo-EM structure of the BBSome:ARL6:GTP complex (postprocessed map contoured at a threshold of 0.015 and colored by subunit). ARL6 interacts with BBS7βprop and BBS1βprop, which is in a rotated state compared to in the BBSome-only structure (Figure 1). (c) Rotation of BBS1βprop in the ARL6-bound state breaks the interaction with BBS2βprop and opens a central cavity in the BBSome. The region highlighted in panel d is boxed. (d) Details of the interaction between ARL6:GTP, BBS2, and BBS7. A loop of BBS7 that is disordered in the BBSome-only state forms a β-addition with the central β-sheet of ARL6. Regions of BBS2 and BBS7 that are not fully resolved in the cryo-EM density are shown as dashed lines.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Atomic model of the BBSome showing the positions of BBS1 in the unbound (gray) and ARL6-bound states (blue). (b) Two orthogonal views showing interatomic vectors calculated between Cα atoms of the BBSome. Each vector is colored by subunit. Only BBS1βprop shows substantial movement in the ARL6 bound state. The direction of movement is indicated by an arrow.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53322/elife-53322-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) ARL6 determines the orientation of the BBSome at membrane. The relatively flat surface of the BBSome suggests that it runs parallel to the membrane with the opposite side interacting with the IFT complexes. (b) The BBSome as viewed from the arrow in panel a. The three subunits (BBS1, BBS2, and BBS9) that interact experimentally with IFT38 (Nozaki et al., 2019) are colored. The three domains come together at the base of the neck where the coiled-coils of BBS2 and BBS9 meet the GAE dimerization domains of BBS1 and BBS9 (circled).
+
 The interaction between ARL6:GTP and the BBSome-bound BBS1βprop is similar to that seen in the crystal structure of the C. reinhardtii BBS1βprop:ARL6:GTP ternary complex (Mourão et al., 2014). The first and last blades of BBS1βprop interact with the switch two loop and helices α3 (residues 75–78) and α4 (residues 98–108) of the GTP-bound ARL6. Density for GTP (Figure 1—figure supplement 2c) and the ordered switch loops of ARL6 are clearly visible in our reconstruction. We also see an additional interaction between ARL6 and the loop that connects BBS7βprop with BBS7hx (residues 320–335) (Figure 6d). This linker is disordered in the BBSome-only structure but binds along the β-edge of the central β-sheet of ARL6. The corresponding linker in BBS2 also comes close to ARL6 (Figure 6d), although the density is insufficiently resolved to build a model of this interaction. These contacts may stabilize the BBSome:ARL6 interaction and the downward position of the head in the presence of ARL6.
 
-## Structural mapping of BBS mutations
+### Structural mapping of BBS mutations
 
 Taking advantage of our high-quality maps in which individual sidechains are well resolved, we mapped known disease mutations in human BBSome subunits and ARL6 onto the structure of the bovine BBSome:ARL6:GTP complex (Figure 7a). Pathogenic mutations were obtained from a curated list of BBS-associated mutations (Chou et al., 2019) supplemented with ARL6 mutations from the ClinVar database (Landrum et al., 2014) (Table 3). Only non-synonymous polymorphisms annotated as pathogenic in either BBS or retinitis pigmentosa were considered. BBS1 and BBS2 are the two most commonly mutated genes in BBS (Forsythe and Beales, 1993) with the majority of mutations located in their β-propeller domains. This includes the BBS1M390R mutation, the single most common mutation found in human BBS patients and one which is sufficient to induce BBS phenotypes including retinal degeneration and obesity in a mouse model (Davis et al., 2007). Our analysis suggests that many of the mutations within BBS1βprop and BBS2βprop would result in the introduction of bulky or charged residues that would disrupt hydrophobic packing and correct folding, as shown experimentally for the M390R mutation introduced into recombinant BBS1βprop (Mourão et al., 2014). The vulnerability of BBS1βprop and BBS2βprop reflects their important contributions to the BBSome’s autoinhibitory and activation mechanisms. Destabilizing mutations within these domains would affect formation of the head, the positioning of BBS1βprop, and recruitment by ARL6. We also note a cluster of mutations in BBS7 (L317V, H323R, G329V, R346Q) close to its interaction site with ARL6. In particular, H323R and G329V are within the flexible linker that only becomes ordered in the presence of ARL6 (Figure 7b). Mutations within this linker may disrupt ARL6-mediated BBSome recruitment.
 
@@ -91,17 +319,76 @@ Taking advantage of our high-quality maps in which individual sidechains are wel
 
 **Figure 7.:** (a) Known disease-causing mutations mapped onto the model of the BBSome:ARL6:GTP complex. Each sphere, colored by subunit, represents a missense mutation associated with either BBS or retinitis pigmentosa. (b) Mutations in BBS7 close to the binding site with ARL6. (c–e), BBS mutations that could disrupt subunit association and therefore proper BBSome assembly. Panels b-e show the postprocessed map contoured at a threshold between 0.015–0.02 and colored by subunit.
 
+**Table 3.**
+ Mutations in ARL6 associated with BBS or retinitis pigmentosa (RP) that are mapped onto the structure in Figure 7a.The mapped disease-associated mutations in core BBSome subunits are provided as a supplemental table in Chou et al. (2019).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Protein mutation</th>
+      <th>Phenotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARL6</td>
+      <td>T31M</td>
+      <td>BBS</td>
+      <td>(Fan et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>T31R</td>
+      <td>BBS</td>
+      <td>(Fan et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>A89V</td>
+      <td>RP</td>
+      <td>(Aldahmesh et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>I91T</td>
+      <td>BBS</td>
+      <td>(Chandrasekar et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>I94T</td>
+      <td>RP</td>
+      <td>(Khan et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>G169A</td>
+      <td>BBS</td>
+      <td>(Young et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>ARL6</td>
+      <td>L170W</td>
+      <td>BBS</td>
+      <td>(Fan et al., 2004)</td>
+    </tr>
+  </tbody>
+</table>
+
 Most mutations outside BBS1βprop and BBS2βprop can be rationalized as causing misfolding of individual subunits, predominantly by affecting the packing of the hydrophobic cores. Other mutations map to the interfaces between subunits. For example, BBS4N309K (Muller et al., 2010) maps to the interface with BBS18 (Figure 7c), BBS1E224K (Redin et al., 2012) maps to the interface between BBS1βprop and BBS4 (Figure 7d), and BBS2R632P (Katsanis et al., 2001) maps to the interface between the coiled-coils of BBS2 and BBS9 in the neck (Figure 7e). These mutations may affect the proper assembly of the BBSome.
 
 ## Discussion
 
-## Mechanism of BBSome activation and implications for substrate recognition and IFT
+### Mechanism of BBSome activation and implications for substrate recognition and IFT
 
 Our structures of the BBSome with and without ARL6 show that activation of the BBSome at ciliary membranes requires a swiveling of BBS1βprop that widens a cavity in the body of the BBSome. This relief of autoinhibition through a conformational change is similar to other Arf-regulated systems, including the clathrin adaptor complexes (Ren et al., 2013). The rotation of BBS1βprop and the opening of the cavity may allow substrate recognition by newly accessible elements. In particular, the breaking of the continuous β-sheet between BBS1 and BBS2 exposes β-edge strands, which are common mediators of protein–protein interactions (Remaut and Waksman, 2006) that have the potential to hydrogen bond to cytosolic regions of transmembrane proteins. BBS1 is especially implicated in substrate recognition and interacts with all known substrates of the BBSome including the C-terminal cytosolic tails of Smoothened and Patched-1 (Zhang et al., 2012), the Leptin receptor (Seo et al., 2009), and polycystin-1 (Su et al., 2014). The plasticity of BBS1 in its loosely held cradle may allow it to subtly reorient to make optimal contacts with multiple cargoes. Some substrates bind other BBSome subunits as well as BBS1. Smoothened binds BBS4, BBS5, and BBS7 in co-transfection immunoprecipitation experiments (Zhang et al., 2012). Polycystin-1 interacts with BBS4, BBS5, and BBS8 in yeast two-hybrid screens (Su et al., 2014). Our structures show that these subunits are present on a relatively flat face of the BBSome that, based on the orientation induced by ARL6, would lie parallel to the ciliary membrane in vivo, forming a large interface for cargo binding (Figure 6—figure supplement 2). However, the relevance of these interactions is unclear as trafficking of polycystin-1 to cilia is only severely diminished in BBS1 knockdown cells (Su et al., 2014).
 
 Assuming the flat surface of the BBSome abuts the membrane, the opposite face would be free to interact with the IFT complexes (IFT-A and IFT-B), with which the BBSome comigrates (Lechtreck et al., 2009; Liew et al., 2014; Ou et al., 2005; Williams et al., 2014). Recent data from visible immunoprecipitation experiments has mapped the interaction to BBS1, BBS2 and BBS9 of the BBSome, and IFT38 of the IFT-B complex (Nozaki et al., 2019). This is consistent with the copurification of BBSome subunits with endogeneously tagged IFT38 in a human cell line (Beyer et al., 2018). Analysis of our structure shows that BBS1, BBS2 and BBS9 come together at the base of the neck where the coiled-coil domains of BBS2 and BBS9 meet the GAE dimerization domains of BBS1 and BBS9. Whether this is the sole binding site for the IFT complexes awaits further investigation, especially as other IFT-B subunits including IFT25 (Eguether et al., 2014), IFT27 (Aldahmesh et al., 2014; Eguether et al., 2014; Liew et al., 2014), IFT74 (Lindstrand et al., 2016) and IFT172 (Schaefer et al., 2016) are either genetically associated with BBS or have been associated with BBSome exit from the cilium.
 
-## Relationship to vesicle coats
+### Relationship to vesicle coats
 
 Our structures strengthen the proposed evolutionary relationship between the BBSome, clathrin coats, and the COPI and COPII coatomers (Jin et al., 2010; van Dam et al., 2013), which are all involved in transmembrane-protein trafficking. In particular, we show that the GAE-pf module of BBS2, BBS7, and BBS9 is structurally related to the same module found in the α-adaptin subunit of the clathrin adaptor complex, AP-2 (Owen et al., 1999; Traub et al., 1999) (Figure 3e). The mechanism of membrane-recruitment and activation of the BBSome by ARL6 is also reminiscent of the activation of clathrin AP complexes by Arf1 and Arf6 GTPases (Paleotti et al., 2005; Ren et al., 2013), in which a GTPase-induced conformational change precedes substrate recognition.
 
@@ -113,37 +400,229 @@ In summary, our structures of the BBSome with and without ARL6 reveal the intric
 
 ## Materials and methods
 
-## ARL6 cloning and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Bos taurus)</td>
+      <td>ARL6. NCBI Gene ID: 519014</td>
+      <td>IDT</td>
+      <td>-</td>
+      <td>Codon optimized</td>
+    </tr>
+    <tr>
+      <td>Biological Sample</td>
+      <td>Bovine dark-adapted retinas</td>
+      <td>W L Lawson company (NE, USA)</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Escherichia coli cells</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td>69450–4</td>
+      <td>Chemically Competent cells</td>
+    </tr>
+    <tr>
+      <td>Affinity resin</td>
+      <td>Anti-Flag M2</td>
+      <td>Sigma</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>GTP</td>
+      <td>Sigma</td>
+      <td>G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cryo grids</td>
+      <td>QUANTIFOIL R 1.2/1.3</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Q4100AR1.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibsons Assembly</td>
+      <td>Invitrogen</td>
+      <td>A14606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence based reagents</td>
+      <td>Arl6_dN16 Fwd</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGTTCATGTGCTGTGTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagents</td>
+      <td>Arl6_dN16 Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTCCCACCCCCTTTATCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagents</td>
+      <td>Arl6_addHis_Fwd</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TG GAA GTT CTG TTC CAG GGG CCC GATTACAAGGACGATGATGATAAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagents</td>
+      <td>Arl6_addHis_Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAATTCTCGAGCGGCCGCCCTTATGTCTTCACCGACTGAATC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>serialEM</td>
+      <td>doi:10.1038/s41592-019-0396-9</td>
+      <td>RRID:SCR_017293</td>
+      <td>https://bio3d.colorado.edu/SerialEM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2 v.1.2.1</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND v.4.1.13</td>
+      <td>doi:10.1016/j.jsb.2015.08.008</td>
+      <td>RRID:SCR_016732</td>
+      <td>https://cistem.org/ctffind4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION v.3.0.4</td>
+      <td>doi:10.7554/eLife.42166</td>
+      <td>RRID:SCR_016274</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php/Download_%26_install</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot v. 0.9-pre</td>
+      <td>doi:10.1107/S0907444904019158</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix.real_space_refine</td>
+      <td>doi:10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera v1.13.1</td>
+      <td>doi:10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX v.0.9</td>
+      <td>doi:10.1002/pro.3235</td>
+      <td>RRID:SCR_015872</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL v2.3.2</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>crYOLO</td>
+      <td>doi:10.1038/s42003-019-0437-z</td>
+      <td>-</td>
+      <td>http://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap</td>
+      <td>doi:10.1038/nmeth.2727</td>
+      <td>-</td>
+      <td>http://resmap.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>I-TASSER</td>
+      <td>doi:10.1186/1471-2105-9-40</td>
+      <td>RRID:SCR_014627</td>
+      <td>https://zhanglab.ccmb.med.umich.edu/I-TASSER</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity v.4.3.1</td>
+      <td>doi:10.1107/S0907444909042073</td>
+      <td>RRID:SCR_014226</td>
+      <td>http://molprobity.biochem.duke.edu</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>doi: 10.7554/eLife.01456</td>
+      <td>RRID:SCR_003511</td>
+      <td>https://sbgrid.org/</td>
+    </tr>
+  </tbody>
+</table>
+
+### ARL6 cloning and purification
 
 To isolate the BBSome complex from bovine retina, we first generated a recombinant bait protein, bovine ARL6. A synthetic, codon-optimized nucleotide sequence (Integrated DNA Technologies) encoding Bos taurus ARL6 with an N-terminal FLAG tag replacing the first 16 residues of ARL6 was inserted into a pSY5 vector using Gibson assembly. The pSY5 vector introduces an additional octahistidine tag and PreScission cleavage site prior to the Flag tag. A dominant negative Q73L mutation was introduced to slow GTP hydrolysis (Jin et al., 2010). His8-3C-Flag-∆16NARL6(Q73L) was expressed in Escherichia coli BL21(DE3) cells (Novagen) at 20°C overnight after induction with 1 mM isopropyl β-D-1-thiogalactopyranoside (Sigma) once the cells reached an optical density of 0.4–0.6 at 600 nm. The bacterial cells were collected by centrifugation at 7000 x g for 7 min. All subsequent steps were performed on ice or at 4°C. The bacterial cells were resuspended in lysis buffer (40 mM Tris pH 8.0, 150 mM NaCl, 10 mM imidazole, 5 mM MgCl2, 4 mM β-mercaptoethanol, 0.05% NP-40, HALT protease inhibitor cocktail (Thermo Fischer Scientific)) and sonicated for a total of 8 min using 20 s on/20 s off cycles and 20% amplitude. The bacterial lysate was clarified using centrifugation at 40,000 x g for 40 min and loaded onto a 5 ml His-Trap column (GE Healthcare) pre-equilibrated with lysis buffer. The column was then washed with 100 ml of lysis buffer without protease inhibitors. The octahistidine tag was removed overnight by on-column digestion with human rhinovirus 3C protease which specifically recognizes the PreScission cleavage site. The cleaved Flag-∆16NARL6(Q73L) protein (hereon in called ‘ARL6’) was eluted from the column with 25 ml of lysis buffer and concentrated to a final volume of 1 ml using a concentrator with a 10 kDa molecular weight cutoff (Thermo Fischer Scientific). ARL6 was purified to homogeneity using a Superdex 200 (16/60) size-exclusion chromatography column (GE Healthcare) and elutes as a single, symmetric peak. The peak fractions were pooled, concentrated to ~10 mg/ml, vitrified in 50 μl aliquots in liquid nitrogen, and stored at −80°C until further use.
 
-## Preparation of retinal extracts
+### Preparation of retinal extracts
 
 Bovine retinas were purchased from W L Lawson company (NE, USA). 50 g of bovine retinas were resuspended in lysis buffer (40 mM Tris pH 8.0, 150 mM NaCl, 250 mM sucrose, 5 mM MgCl2, 4 mM β-mercaptoethanol, Halt protease inhibitor cocktail (Thermo Fischer Scientific)) and homogenized using a Tissue Tearor (BioSpec Products) for 1 min. The retinal tissue was further homogenized using 6–10 strokes of a glass Dounce homogenizer. The lysate was clarified by centrifugation at 40,000 x g for 50 min and the supernatant collected.
 
-## Purification of the BBSome
+### Purification of the BBSome
 
 Prior to generating the ARL6 affinity column, we incubated ~2 mg (100 μM) ARL6 with 2 mM GTP (final concentration) for 1 hr. The ARL6:GTP complex was then loaded onto 3 ml of anti-Flag M2 affinity resin (Sigma). The resin was washed with 30 ml of buffer + 100 μM GTP to remove any excess, unbound ARL6. Immediately before loading onto the column, 100 μM GTP (final concentration) was added to the clarified lysate. The retinal tissue lysate was loaded onto anti-Flag M2 pre-saturated with bovine of ARL6 and incubated for 1 hr at 4°C. The lysate was passed over the column using a peristaltic pump multiple times with a flow rate of 2 ml/min. Resin was washed with 40 ml lysis buffer + 100 μM GTP. The BBSome:ARL6 complex was eluted from the column with a total of 10 ml of 0.1 mg/ml Flag peptide (Sigma). Elution was performed in five steps, in which each step involved a 30 min incubation with Flag peptide. The eluted BBSome:ARL6 complex was concentrated to 500 μl using a concentrator with a 100 kDa molecular weight cutoff (Thermo Fischer Scientific) and injected onto a Superdex 200 (16/600) size-exclusion chromatography column (GE Healthcare) equilibrated with 20 mM Hepes pH 7.5, 220 mM NaCl, 5 mM MgCl2, 4 mM β-mercaptoethanol. The peak fractions were pooled and concentrated using 100 kDa cut-off concentrator (Thermo Fischer Scientific) to ~0.5–0.7 mg/ml. ARL6 dissociates from the BBSome during size-exclusion chromatography. The BBSome-containing fractions were then buffer exchanged into 20 mM Hepes pH 7.5, 20 mM NaCl, 5 mM MgCl2,4 mM β-mercaptoethanol and loaded onto a 1 ml MonoQ anion exchange chromatography column (GE Healthcare). After washing with 10 column volumes of buffer, a gradient of 20 mM to 1 M NaCl was applied to elute the BBSome. The purity of the BBSome is shown in Figure 1—figure supplement 1a.
 
-## Sample preparation for cryo-EM
+### Sample preparation for cryo-EM
 
 Prior to making grids, 0.7 mg/ml BBSome (~18 μM) was mixed with 2 × molar excess of ARL6 (36 μM) and 1 mM GTP and incubated for an hour at 4°C. During incubation, holey carbon R1.2/1.3 grids with gold 400 mesh (Quantifoil Micro Tools) were glow discharged at 15 mA for 30 s (PELCO easiGlow Glow Discharge Cleaning System). 3 µl of BBSome:ARL6:GTP complexes were applied to each glow-discharged grid. Grids were blotted for 2 s with a −2 offset at ~100% humidity and 20°C before being plunge-frozen in liquid ethane using a Vitrobot Mk II (Thermo Fisher Scientific).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 The grids were imaged on a Titan Krios microscope (Thermo Fisher Scientific) operating at an acceleration voltage of 300 kV and equipped with a BioQuantum K3 Imaging Filter (slit width 25 eV). Images were recorded on a K3 Summit direct electron detector (Gatan) operated in counting mode (Figure 1—figure supplement 1b). For data collection, we used a spot size of 4, a C2 aperture of 50 μm, and a nominal magnification of 81,000 x, yielding a pixel size of 1.06 Å. The total exposure time of each movie stack was 4 s fractionated into 50 frames with a total exposure of approximately 56 electrons/Å2. The defocus targets were −1.1 to −2.4 μm. In total, 9408 micrographs were collected from two sessions. SerialEM was used for data collection (Schorb et al., 2019).
 
-## Image processing
+### Image processing
 
 We used MotionCor2 to correct for global and local (5 × 5 patches) beam-induced motion and to dose weight the individual frames (Zheng et al., 2017). CTFFIND-4.1 was used to estimate parameters of the contrast transfer function (CTF) (Rohou and Grigorieff, 2015). Particles were picked from the micrographs using crYOLO (Wagner et al., 2019) and their coordinates exported to RELION-3.0 (Zivanov et al., 2018) for all subsequent processing steps. Particles were extracted with a box size of 320 pixel. A single round of two-dimensional classification was performed and well-defined classes corresponding to BBSome particles were selected (Figure 1—figure supplement 1c). An initial map for the BBSome was generated using RELION’s implementation of the stochastic gradient descent algorithm using default parameters and a mask diameter of 280 Å. The initial map was used as a reference for three-dimensional refinement. After refinement, CTF refinement and Bayesian polishing were performed. The particles from the two data collection sessions were combined after Bayesian polishing and 3D classification (without alignment) was performed (Figure 1—figure supplement 1d). The two best classes (based on occupancy and map quality) were selected and refined together. As this map is generated from BBSome particles with and without ARL6, we next performed focused classification with signal subtraction (FCwSS) with a mask centered on ARL6 to separate the different species. Classes with and without ARL6 were independently selected and refined. After post-processing in RELION-3.0, including correcting for the modulation transfer function of the K3 Summit direct electron detector, the resolution of the BBSome reconstruction was 3.1 Å and the resolution of the BBSome:ARL6 complex was 3.5 Å based on the FSC = 0.143 criterion (Rosenthal and Henderson, 2003) (Figure 1—figure supplement 1e). Final reconstructions were sharpened using automatically estimated B-factors (Rosenthal and Henderson, 2003). Local resolution calculations were performed with ResMap (Kucukelbir et al., 2014).
 
 To further improve the map density of the BBSome, we used multibody refinement with masks covering the body (mask 1) and head (mask 2) lobes. BBS1βprop was included in the body mask. The masks were made in RELION with a raised-cosine soft edge. The quality of the map for the body was minimally improved with the resolution remaining unchanged at 3.1 Å, but the quality of the map for the head improved, with a nominal resolution of 3.4 Å. A third mask centered on the ARL6:BBS1βprop subcomplex was used for multibody refinement of the BBSome:ARL6:GTP complex. These masks resulted in final resolutions of 3.3 Å for the body, 3.8 Å for the head, and 4.0 Å for the ARL6:BBS1βprop subcomplex. The masked maps from multibody refinement were resampled to the pre-multibody reference and merged by taking the maximum density value at each voxel using the vop maximum command in Chimera (Pettersen et al., 2004). These chimeric maps were used for model building to take advantage of the improved map quality. Chimera was also used to generate a movie (Video 1) showing the motion of the lobes and the ARL6:BBS1βprop subcomplex represented by the first three eigenvectors.
 
-## Model building and refinement
+### Model building and refinement
 
 Amino acid sequences for the Bos taurus BBSome subunits were obtained from the NCBI (Table 2) and used as the input to generate comparative models with I-TASSER (Zhang, 2008). These models were trimmed to remove unstructured or poorly predicted regions. For BBS9βprop, BBS1βprop and ARL6, the crystal structures of human BBS9βprop (PDB: 4YD8) (Knockenhauer and Schwartz, 2015) and Chlamydomonas reinhardtii BBS1βprop:ARL6:GTP complex (PDB: 4V0N) (Mourão et al., 2014) were used directly and mutated to the Bos taurus sequence. The models were then placed into the BBSome density map using the fit-to-map procedure in Chimera (Pettersen et al., 2004) or manually in Coot v0.8.9 (Brown et al., 2015). These homology and crystal structures were used as starting points for model building, but most required comprehensive remodeling. All GAE, pf, and CC domains were built de novo. The previous model of the BBSome obtained by integrative modeling (PDB-Dev accession PDBDEV_00000018) (Chou et al., 2019) was not available or used during the modeling process. During model building and real-space refinement in Coot, torsion, planar peptide and Ramachandran restraints were used. The models were refined using Phenix.real_space_refine (Afonine et al., 2018) against the composite maps from multibody refinement. During refinement the resolution limit was set to match the resolution determined using the FSC = 0.143 criterion. Secondary structure, Ramachandran and rotamer restraints were applied during refinement. Round of manual model correction in Coot was performed between rounds of refinement. The final models were validated using MolProbity v.4.3.1 (Chen et al., 2010) with model statistics provided in Table 1. FSC curves calculated between the models and the unsharpened maps are shown in Figure 1—figure supplement 1f.
 
-## Figures
+### Figures
 
 Figure panels were generated using PyMOL (DeLano, 2002), Chimera (Pettersen et al., 2004), or ChimeraX (Goddard et al., 2018). Maps colored by local resolution (Figure 1—figure supplement 1g) were generated with unsharpened density maps using ResMap (Kucukelbir et al., 2014).
 

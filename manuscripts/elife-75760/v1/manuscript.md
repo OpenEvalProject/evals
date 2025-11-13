@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00dvg7y05 Program in Cellular and Molecular Medicine, Boston Children’s Hospital and Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School Boston United States
-2. https://ror.org/04t5xt781 Department of Chemistry and Chemical Biology, Northeastern University Boston United States
-3. https://ror.org/01vx35703 Department of Physics, East Carolina University Greenville United States
+1. Program in Cellular and Molecular Medicine, Boston Children’s Hospital and Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+2. Department of Chemistry and Chemical Biology, Northeastern University Boston United States ([ROR:04t5xt781](https://ror.org/04t5xt781))
+3. Department of Physics, East Carolina University Greenville United States ([ROR:01vx35703](https://ror.org/01vx35703))
 
 † Corresponding author
 
 ## Abstract
 
-Hemostasis in the arterial circulation is mediated by binding of the A1 domain of the ultralong protein von Willebrand factor (VWF) to GPIbα on platelets to form a platelet plug. A1 is activated by tensile force on VWF concatemers imparted by hydrodynamic drag force. The A1 core is protected from force-induced unfolding by a long-range disulfide that links cysteines near its N- and C-termini. The O -glycosylated linkers between A1 and its neighboring domains, which transmit tensile force to A1, are reported to regulate A1 activation for binding to GPIb, but the mechanism is controversial and incompletely defined. Here, we study how these linkers, and their polypeptide and O -glycan moieties, regulate A1 affinity by measuring affinity, kinetics, thermodynamics, hydrogen deuterium exchange (HDX), and unfolding by temperature and urea. The N-linker lowers A1 affinity 40-fold with a stronger contribution from its O -glycan than polypeptide moiety. The N-linker also decreases HDX in specific regions of A1 and increases thermal stability and the energy gap between its native state and an intermediate state, which is observed in urea-induced unfolding. The C-linker also decreases affinity of A1 for GPIbα, but in contrast to the N-linker, has no significant effect on HDX or A1 stability. Among different models for A1 activation, our data are consistent with the model that the intermediate state has high affinity for GPIbα, which is induced by tensile force physiologically and regulated allosterically by the N-linker.
+Hemostasis in the arterial circulation is mediated by binding of the A1 domain of the ultralong protein von Willebrand factor (VWF) to GPIbα on platelets to form a platelet plug. A1 is activated by tensile force on VWF concatemers imparted by hydrodynamic drag force. The A1 core is protected from force-induced unfolding by a long-range disulfide that links cysteines near its N- and C-termini. The O-glycosylated linkers between A1 and its neighboring domains, which transmit tensile force to A1, are reported to regulate A1 activation for binding to GPIb, but the mechanism is controversial and incompletely defined. Here, we study how these linkers, and their polypeptide and O-glycan moieties, regulate A1 affinity by measuring affinity, kinetics, thermodynamics, hydrogen deuterium exchange (HDX), and unfolding by temperature and urea. The N-linker lowers A1 affinity 40-fold with a stronger contribution from its O-glycan than polypeptide moiety. The N-linker also decreases HDX in specific regions of A1 and increases thermal stability and the energy gap between its native state and an intermediate state, which is observed in urea-induced unfolding. The C-linker also decreases affinity of A1 for GPIbα, but in contrast to the N-linker, has no significant effect on HDX or A1 stability. Among different models for A1 activation, our data are consistent with the model that the intermediate state has high affinity for GPIbα, which is induced by tensile force physiologically and regulated allosterically by the N-linker.
 
 ## Introduction
 
@@ -38,11 +38,11 @@ Here, to understand how binding of the VWF A1 domain to platelet GPIbα is regul
 
 ## Results
 
-## Proteins
+### Proteins
 
 We compared the effect of the linkers N- and C-terminal to A1, which separate A1 from D3 and A2, respectively, and which contain O-glycosylation sites that have been chemically identified in native VWF (Solecka et al., 2016; Titani et al., 1986; Figure 1). Because the linkers are O-glycosylated in mammalian Expi293 cells and not in E. coli, we expressed A1 protein constructs in both cell types in order to test the effect in some assays of both polypeptide and O-glycan components of the linkers (Figure 1C). The N- and C-terminal boundaries of the constructs were based on allowing comparability to previous studies; references to the previous literature and a structural rationale for defining the minimal size of A1 as residues 1270–1463 and the maximal size of A1 plus linkers as residues 1240–1494 are described in Methods. To obtain A1 disulfide bond formation in bacteria, thioredoxin–A1 fusion proteins were expressed in E. coli SHuffle cells. The C-terminal boundary of the A1+N+C bacterial construct at Ser-1486 that was already on hand was extended by three residues in the mammalian A1+OGly+N+C construct to increase the likelihood of O-glycosylation of residue Ser-1486 and to include O-glycosylated residue Thr-1487 (Solecka et al., 2016; Titani et al., 1986). Constructs were purified using His tag affinity and by Superdex S200 size exclusion, and for the bacterial constructs, also with an intervening heparin affinity chromatography step. As expected based on O-glycosylation, the mammalian constructs migrated more slowly and showed increased heterogeneity in sodium dodecyl–sulfate polyacrylamide gel electrophoresis (SDS–PAGE) compared to the corresponding bacterial A1 constructs (Figure 1D). Furthermore, faster migration of all seven A1 constructs in nonreducing than reducing SDS–PAGE confirmed that all contained the long-range disulfide bond.
 
-## A1–GPIbα-binding kinetics and thermodynamics
+### A1–GPIbα-binding kinetics and thermodynamics
 
 Using biolayer interferometry (BLI), we measured A1 association to and dissociation from GPIbα immobilized through a biotinylated C-terminal avitag to BLI sensor tips. A1 preparations were subjected to S200 gel filtration the day of each measurement to remove aggregates. Global fits at all analyte concentrations to a single on- and off-rate for each A1 construct were good (Figure 2). In contrast, when gel filtration was omitted, data could not be fit to a single on- and off-rate. Differences among all seven A1 constructs in 150 mM NaCl showed that the linkers were of great importance in regulating A1 affinity for GPIbα (Figure 2). Comparisons to A1 short showed that nonglycosylated linkers in A1+N+C lowered affinity by 10-fold while the presence of glycosylated linkers in A1+OGly+N+C lowered affinity by 50-fold. The N-linker in A1+N lowered affinity by 4.3-fold while the C-linker in A1+C lowered affinity by 2.5-fold. Glycosylation of the N-linker was also more important than the C-linker; the affinity of A1+OGly+N was 10-fold lower than A1+N while the affinity of A1+OGly+C was only 2-fold lower than A1+C. O-Glycosylated linkers consistently lowered on-rates (Figure 2B). Overall, the results showed that both the polypeptide linker moiety and the O-glycan moiety of A1 linkers contributed to lowering A1 affinity for GPIbα, that the N-linker was more important than the C-linker in lowering affinity, and that the combined effect was very large at 50-fold.
 
@@ -58,21 +58,39 @@ To independently test affinity, and obtain binding thermodynamics, we used isoth
 
 **Figure 3.:** (A) Panels show ITC traces of heat absorption after each injection (above) and fit of enthalpy to the binding isotherm (below) in 150 mM NaCl at 22°C. (B) Table summarizing the reaction Gibbs free energies (∆G) and the enthalpic (∆H) and entropic (T∆S) contributions. Errors show difference from mean of n = 2 independent experiments, except for A1+N+C which shows the fitting error from one experiment.
 
-## A1 stability and the thermodynamics of the intermediate state
+### A1 stability and the thermodynamics of the intermediate state
 
 The relative stabilities of A1 short and the three O-glycosylated A1 constructs to denaturation by heat or urea were measured by tryptophan fluorescence, whose emission maximum shifts to higher wavelength upon exposure to solvent during unfolding. The fluorescence intensity ratio (FIR), I350/I330, showed that constructs had three states, that is, exhibited two unfolding transitions (Figure 4A, B, D). Constructs containing the N-linker, that is A1+OGly+N+C and A1+OGly+N, were more stable to heat (Tm of 53.2 and 53.3°C for the first transition, respectively) than constructs lacking the N-linker, that is A1+OGly+C and A1 short (Tm of 49.9 and 50.7°C for the first transition, respectively) (Figure 4A, B). These results suggest that the N-linker stabilizes the native state of A1 relative to the intermediate state. Furthermore, all four constructs showed a second inflection point between 60° and 65° (second peak or shoulder of the derivative curve, Figure 4B). These results suggested two-step unfolding behavior and thus that A1 has three states, native (N), intermediate (I), and D (denatured) as previously observed (Auton et al., 2007).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) Effect of heating from 30 to 85°C on A1 stability and aggregation. (A) Unfolding was measured by excitation of tryptophan at 275 nm and measuring the ratio of the fluorescence intensity at 350 and 330 nm (fluorescence intensity ratio [FIR] = I350/I330). (B) The derivative of data in A (dFIR/dT) shows two unfolding transitions for each A1 construct and provides evidence for three states of A1: N, I, and U as described in Results. (C) Backscattered light intensity as a measure of A1 aggregation. (D) Unfolding of A1 by urea measured at 20°C by FIR as in panel A. Lines show fits to the three-state model of A1 unfolding as described in Methods and Results (see also Source Data). (E) Tabulation of the melting temperature of the native state (Tm) from panels A and B and the free energy difference between the native and intermediate states of A1 (ΔGI–N), the concentration of urea at which the I and N states are equally populated (Curea I–N), and m, from the fits in panel D.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.
+**Figure 4.:** (A–C) Effect of heating from 30 to 85°C on A1 stability and aggregation. (A) Unfolding was measured by excitation of tryptophan at 275 nm and measuring the ratio of the fluorescence intensity at 350 and 330 nm (fluorescence intensity ratio [FIR] = I350/I330). (B) The derivative of data in A (dFIR/dT) shows two unfolding transitions for each A1 construct and provides evidence for three states of A1: N, I, and U as described in Results. (C) Backscattered light intensity as a measure of A1 aggregation. (D) Unfolding of A1 by urea measured at 20°C by FIR as in panel A. Lines show fits to the three-state model of A1 unfolding as described in Methods and Results (see also Source Data). (E) Tabulation of the melting temperature of the native state (Tm) from panels A and B and the free energy difference between the native and intermediate states of A1 (ΔGI–N), the concentration of urea at which the I and N states are equally populated (Curea I–N), and m, from the fits in panel D.
 
 A1 aggregation by heat was measured by backscattered light intensity. After the inflection point for the intermediate state, A1 short began to aggregate (Figure 4C compared to Figure 4B). A1+OGlyc+C required higher temperature for aggregation, which began to occur after the inflection point for the denatured state (Figure 4C compared to Figure 4B). Strikingly, the O-glycosylated N-linker completely protected A1+OGly+N and A1+OGly+N+C from aggregation at temperatures up to 85°C.
 
 Denaturation in urea confirmed the existence of an intermediate state and was used to estimate the free energy of the intermediate state relative to the native state, that is, ΔGI–N. The A1 constructs showed two separate unfolding transitions, one between 1 and 4 M urea, and another above 5 M urea (Figure 4D). All constructs showed a plateau in between, or in the case of A1+OGly+C, followed a similar trend, but with a decrease in slope instead of a clear plateau. Similar three-state unfolding curves were previously seen for a construct similar to A1+N+C using circular dichroism (Auton et al., 2007). We fit the unfolding data to a three-state model. We assumed that all four constructs had the same m-value (a parameter that defines the cooperativity of transition) and that each state had a unique baseline FIR slope as a function of urea concentration that was shared among the four constructs (Methods). We thus determined the difference in energy between the I and N states (ΔGI–N), the concentration of urea at which the I and N states are equally populated (Curea I–N), and m, a value that is related to the size of folded domains (Ghosh and Dill, 2009; Santoro and Bolen, 1988; Figure 4E). The results showed that the O-glycosylated N-linker markedly increased the stability of the native state and thus the gap in energy between the native and intermediate state, with higher ΔGI–N values and transitions at higher urea concentrations for A1+OGly+N and A1+OGly+N+C than for A1 short and A1+OGly+C (Figure 4E).
 
-## Changes in HDX dynamics among A1 constructs correlate with affinity and stability differences
+### Changes in HDX dynamics among A1 constructs correlate with affinity and stability differences
 
 HDX MS measures solvent accessibility and H-bonding and reports on the dynamics and stability of proteins (Wales and Engen, 2006). The O-glycosylated A1 constructs and A1 short were allowed to exchange their backbone amide hydrogens for deuterium in D2O for varying periods of time, digested with pepsin, and the kinetics of deuterium exchange were measured for 108 A1 peptides (91% coverage, 5.8× redundancy, Figure 5 and Figure 5—figure supplements 1–5). HDX as a function of secondary structure and sequence position trended similarly for all four constructs studied (shown for A1 short in Figure 5A and for all in Figure 5—figure supplements 1 and 2). Figure 5A shows exchange for all 108 peptides at all time points, from 10 s to 4 hr. Over the A1 sequence from N- to C-terminal, the least exchange was seen for the β1-strand, the α1-helix, the β2- and β3-strands, the α3-helix, and the α6-helix, which all had at least one peptide with less than 20% deuteration at 4 hr. These slowly exchanging secondary structural elements neighbor one another and the GPIbα-binding site on A1 (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-v1.jpg)
+
+**Figure 5.:** (A) Relative deuterium exchange at all time points for A1 short as % of the available amide backbone H atoms in each peptide, colored according to the key. Figure 5—figure supplements 1 and 2 show data for all constructs. (B) Difference (Δ) in HDX at all time points of A1 short minus HDX for the other three constructs as indicated. In (A) and (B), residues with VWD type 2B mutations are shown below sequence numbers as red circles. (C) Full HDX kinetics for selected peptides. Figure 5—figure supplements 3–5 show data for all peptides. (D) Structure of A1 bound to GPIbα (PDB 1SQ0). A1 is colored rainbow from N- (blue) to C-terminus (red). Residues with VWD type 2B mutations are shown as Cα atom spheres. Labeled residues are shown in stick. GPIbα is shown in silver, from the β-finger to the β-switch.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Peptides from the indicated A1 fragments are colored according to the key with deuterium exchange at all time points as % of the available amide backbone H atoms in each peptide. Residue number based on the immature sequence indicated above and secondary structures indicated below.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Peptides from the indicated A1 fragments are colored according to the key with deuterium exchange at all time points as % of the available amide backbone H atoms in each peptide. Residue number based on the immature sequence indicated above and secondary structures indicated below.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-figsupp4-v1.jpg)
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/75760/elife-75760-fig5-figsupp5-v1.jpg)
 
 Consistent differences in the amount of HDX were found in specific regions among the four A1 constructs (Figure 5B, C and Figure 5—figure supplements 3–5). The A1+OGly+N+C and A1+OGly+N constructs showed significantly less deuterium exchange (>0.7 Da) at almost all time points in peptides that were centered on the α1–β2 loop and the β3–α2 loop. These loops locate near to GPIbα (Figure 5B–D). We also observed reduced exchange in the α2–α3 loop, but the most meaningful difference was only seen at the 4 hr time point. The α1–β2 loop is nearby the long-range disulfide and in a region with multiple gain-of-function VWD type 2B mutations (Figure 5D). The β3–α2 loop is near to GPIbα and has four basic residues (labeled in Figure 5D) but they are not close enough to directly interact with acidic residues in the GPIbα leucine-rich repeats.
 
@@ -106,44 +124,123 @@ In summary, our results show that the A1 N-linker, but not the C-linker, increas
 
 ## Materials and methods
 
-## Boundaries of A1 constructs
+### Boundaries of A1 constructs
 
 Boundaries for truncations of A1 used here were taken from what had been used in the literature and structural considerations. Constructs beginning here at residues 1238 and 1264 had previously been used in related papers in Auton et al., 2007; Auton et al., 2012; Auton et al., 2010a; Auton et al., 2010b and (Blenner et al., 2014), respectively. Similarly, a construct ending at residue 1469 was previously used in Blenner et al., 2014. Longer constructs used here ending at 1486 or 1489 ended at positions intermediate between longer constructs ending at 1480 (Madabhushi et al., 2014; Tischer et al., 2020) and 1493 (Deng et al., 2018). Twelve examples of A1 crystallized alone or in complexes (PDB codes 1m10, 1sq0, 1u0n, 1auq, 1u0o, 1ijk, 1ijb, 1fns, 1uex, 3hxo, 3hxq, and 4c2a) were superimposed to define boundaries between residues that were largely invariant in structure (part of the A1 domain) or variable among structures (part of linkers). Superimposition shows that the A1 backbone takes the same path beginning at residue F1270 and ending at residue E1463; the A1 disulfide links C1272 and C1458. The paths of two D3 assembly monomers (PDB code 6n29) are similar up to residue E1239 and the paths of five A2 monomers in PDB codes 3gxb and 3zqk are similar beginning at residues 1495. Thus, the minimum length of the A1 domain might be considered to be between residues 1270 and 1463 and the A1 linkers might be considered to extend up to the boundaries of the D3 and A2 domains, that is from residue 1240 to 1494. We are not aware of tests of the feasibility of obtaining good expression of constructs of these lengths and chose lengths that would allow comparison to previous results as described above.
 
-## Glycosylated proteins
+### Glycosylated proteins
 
 Human VWF A1 domain constructs as shown in Figure 1C (pre-pro-VWF amino acid residue numbering), beginning with residue 1238 or 1264 and ending with residue 1469 or 1489 and followed with a C-terminal 6xHis tag were cloned into a bicistronic IRES-GFP expression vector, ET8 (Zhou and Springer, 2014) and transfected into Expi293F cells using lipofectamine reagent (Invitrogen). Stable transfectants were selected in the presence of 500 μg/ml G418 (Geneticin) and subjected to two rounds of fluorescence-activated cell sorting. In each sort, the 8% most fluorescent cells were expanded in Expi293 expression medium. Culture supernatants were harvested after 5 days, supplemented with 20 mM HEPES (N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid), pH 7.4 and 0.2 mM NiCl2 (final concentration), and loaded onto a Ni-NTA agarose column by gravity (2 ml Ni-NTA agarose beads per 500 ml of culture supernatant). The column was pre-equilibrated in Washing Buffer (20 mM HEPES, pH 7.4, 150 mM NaCl, 0.2 mM NiCl2). After loading the supernatant, the column was washed with 5 column volumes of Washing Buffer followed by 10 column volumes of 20 mM HEPES, 1 M NaCl, 16 mM imidazole, 0.2 mM NiCl2. Protein was eluted with 20 mM HEPES, 150 mM NaCl, and 300 mM imidazole, and further purified by Superdex 200 (GE Healthcare) size-exclusion chromatography in 20 mM HEPES, 150 mM NaCl, pH 7.5.
 
 Wild-type GPIbα, residues 1–290 of the mature protein with a C-terminal His6 tag, with or without an intervening Avi-tag sequence (GLNDIFEAQKIEWHE), was purified from culture supernatant of HEK293 stable transfectants (Blenner et al., 2014) by Ni-NTA affinity chromatography and Superdex 200 size exclusion as above.
 
-## Nonglycosylated proteins
+### Nonglycosylated proteins
 
 The cDNA sequence encoding A1 beginning with residue 1238 or 1264 and ending with residue 1469 or 1486 (Figure 1C) was cloned into the pET32a vector with a thioredoxin fusion protein (LaVallie et al., 1993) and a TEV cleavage site at its N-terminus and a 6xHis tag at its C-terminus. Proteins were expressed in SHuffle cells (Lobstein et al., 2012), which were grown at 37°C in LB medium; at an A600 of 0.8, 1 mM IPTG was added and the temperature was shifted to 25°C. After 20 hr, cells were collected by centrifugation and lysed in a French press at 4°C in 20 mM HEPES (pH 7.4), 150 mM NaCl. The lysate was centrifuged at 17,000 × g at 4°C for 40 min. Ni-NTA agarose beads were added to the supernatant containing soluble A1 and shaken overnight at 4°C in 40 ml Falcon tubes (1.5 ml beads/40 ml supernatant). Beads were centrifuged at 2500 RPM for 5 min and resuspended in 10 ml buffer (20 mM HEPES, 150 mM NaCl, pH 7.4) per tube and vortexed for 2 min (first washing step). After two more washing steps, five cleaning steps were performed following the same procedure but with 20 mM HEPES, 1 M NaCl, and 16 mM imidazole. The beads were then packed into a column and eluted with 20 mM HEPES, 150 mM NaCl, 300 mM imidazole by gravity. The eluate was mixed with Tobacco Etch Virus (TEV) protease (A1:TEV mass ratio of 10:1) and dialysed against 20 mM HEPES, 150 mM NaCl overnight at 4°C. The thioredoxin-cleaved A1 was centrifuged for 10 min at 13,000 rpm to remove precipitate. The supernatant was further purified by heparin column (HiTrap Heparin HP, GE Healthcare), washed with 20 mM HEPES, 350 mM NaCl, and eluted with 20 mM HEPES, 800 mM NaCl. Finally, the protein was subjected to Superdex 200 size-exclusion chromatography as above.
 
-## Storage and repurification
+### Storage and repurification
 
 Protein concentrations were determined from their A280 using the extinction coefficient calculated by ProtParam tool at the Expasy website. All proteins were stored at −80°C and subjected to a second round of size-exclusion chromatography on the day of measurements. This was essential to prevent protein aggregates from contributing to affinity and kinetics measurements, that is, to obtain data that can be reliably fitted with a 1:1 binding model.
 
-## Kinetic binding measurements
+### Kinetic binding measurements
 
 The GPIbα used for kinetic measurements contained an N-terminal Avi-tag which was biotinylated using a BirA biotin-protein ligase kit (Cat #BirA500, Avidity, Aurora, CO). BLI used Octet RED384 instrument and software (ForteBio). Streptavidin-functionalized sensors were dipped in biotinylated GPIbα (1 μM) for 60 s and quenched with 10 μg/ml biotinyl-lysine for 40 s. Binding and dissociation responses were recorded at varying A1 concentrations in 20 mM HEPES, pH 7.5, 0.02% Tween-20, and either 10, 30, or 150 mM NaCl as indicated. Response in a buffer-only reference well was subtracted (internal reference). The experiment was also carried out using the same concentrations of A1 and the internal reference but with sensors that had no absorbed GPIbα (parallel reference). Parallel reference responses were subtracted from the experimental responses with Octet software. Data at different A1 concentrations were fit globally to single kon and koff values for each experimental condition and plotted using Originlab (Origin, Northampton, MA). The ionic strength of 20 mM HEPES, pH 7.5 was calculated using https://www.liverpool.ac.uk/pfg/Research/Tools/BuffferCalc/Buffer.html.
 
-## Isothermal calorimetry
+### Isothermal calorimetry
 
 Proteins were dialyzed overnight against 150 mM NaCl, 20 mM Tris–HCl, pH 7.5, degassed, and centrifuged at 20,000 × g for 10 min. GPIbα (250 μM except 550 μM with A1+OGly+N+C) was titrated into an A1 protein solution (22 μM except 50 μM with A1+OGly+N+C) in a MicroCal iTC200 (GE Healthcare Life Sciences). A priming injection of 0.4 μl (not included in data analysis) was followed by 2 μl injections every 180 s. Data averaged over 2 s windows were analyzed using Originlab 7.
 
-## Stability to denaturant and heat
+### Stability to denaturant and heat
 
 For urea denaturation, A1 (0.25–0.5 mg/ml) in 10 μl of 20 mM HEPES, pH 7.5, 150 mM NaCl was mixed with 10 μl of 200 mM HEPES, pH 7.5, 1.5 M NaCl, ×μl of 7.5 M urea, and (80-x) μl of water, where x gave final urea concentrations of 0.135–6 M in 24 concentration steps in 100 μl, and equilibrated for 24 hr at 20°C. Intrinsic Trp fluorescence was measured at 330 and 350 nm upon excitation at 275 nm with a Prometheus NT48 (NanoTemper) with automatic adjustment of excitation power.
 
-FIR, emission intensities at 350 nm over 330 nm, was fit as a function of urea concentration to a three-state transition model using the linear extrapolation method (Santoro and Bolen, 1988). FIR at each urea concentration (Curea) is modeled as the population weighted contribution from the native state (N), intermediate state (I), and the denatured state (D): FIR (Curea)=FIRN∗PN+FIRI∗PI+FIRD∗PD where FIRN , FIRI, and FIRD represent the linear baseline for the N, I, and D states, respectively, which can be expressed as FIRj=bj+sj⋅CUrea , with bj and sj as intercept and slope of the j state. PN , PI, and PD represent the population of N, I, and D states at each urea concentration, respectively. The population of state j (Pj) in the system can be related to the free energy of each state (N, I, D) based on the Boltzmann distribution, Pj=Exp(−△GjR.T)Exp(−△GNR.T)+Exp(−△GIR.T)+Exp(−△GDR.T)  , where R is the gas constant, and T is absolute temperature of the system. With the N state as reference state (ΔGN=0), the free energy of the I and D states at each urea concentration can be expressed as ΔGI(CUrea)=ΔGI0+mI.CUrea and ΔGD(CUrea)=ΔGD0+mD.CUrea, respectively, where ΔGI0 and ΔGU0 are the free energy of the I and D state in absence of urea, and mI and mD are the cooperativity of transition from the N to I state, and from N to D state, respectively. For a cooperative two-state transition induced by a particular denaturant, the m-value is proportional to the surface area exposed upon protein denaturation and is generally proportional to the protein size. The linear relationship between m-values and globular protein chain lengths have been reported for denaturant-induced protein unfolding (Ghosh and Dill, 2009). Thus, the final fitting function for the three-state transition is as follows, where b and s are baseline intercept and slope values, respectively, for N or I states:(1)FIR(Curea)=(bN+sN⋅CUrea)+(bI+sI⋅CUrea)⋅Exp(−ΔGI0+mI⋅CUreaR⋅T)+(bU+sU⋅CUrea)⋅Exp(−ΔGD0+mD⋅CUreaR⋅T)1+Exp(−ΔGI0+mI⋅CUreaR⋅T)+Exp(−ΔGD0+mD⋅CUreaR⋅T)
+FIR, emission intensities at 350 nm over 330 nm, was fit as a function of urea concentration to a three-state transition model using the linear extrapolation method (Santoro and Bolen, 1988). FIR at each urea concentration (Curea) is modeled as the population weighted contribution from the native state (N), intermediate state (I), and the denatured state (D): $FIR (C_{urea})=FIR_{N}∗P_{N}+FIR_{I}∗P_{I}+FIR_{D}∗P_{D}$ where $FIR_{N}$ , $FIR_{I}$, and $FIR_{D}$ represent the linear baseline for the N, I, and D states, respectively, which can be expressed as $FIR_{j}=b_{j}+s_{j}⋅C_{Urea}$ , with $b_{j}$ and $s_{j}$ as intercept and slope of the j state. $P_{N}$ , $P_{I}$, and $P_{D}$ represent the population of N, I, and D states at each urea concentration, respectively. The population of state j ($P_{j}$) in the system can be related to the free energy of each state (N, I, D) based on the Boltzmann distribution, $P_{j}=\frac{Exp(\frac{−△G_{j}}{R.T})}{Exp(\frac{−△G_{N}}{R.T})+Exp(\frac{−△G_{I}}{R.T})+Exp(\frac{−△G_{D}}{R.T})}$  , where R is the gas constant, and T is absolute temperature of the system. With the N state as reference state ($ΔG_{N}=0$), the free energy of the I and D states at each urea concentration can be expressed as $ΔG_{I}(C_{Urea})=ΔG_{I}^{0}+m_{I}.C_{Urea}$ and $ΔG_{D}(C_{Urea})=ΔG_{D}^{0}+m_{D}.C_{Urea}$, respectively, where $ΔG_{I}^{0}$ and $ΔG_{U}^{0}$ are the free energy of the I and D state in absence of urea, and $m_{I}$ and $m_{D}$ are the cooperativity of transition from the N to I state, and from N to D state, respectively. For a cooperative two-state transition induced by a particular denaturant, the m-value is proportional to the surface area exposed upon protein denaturation and is generally proportional to the protein size. The linear relationship between m-values and globular protein chain lengths have been reported for denaturant-induced protein unfolding (Ghosh and Dill, 2009). Thus, the final fitting function for the three-state transition is as follows, where b and s are baseline intercept and slope values, respectively, for N or I states:
 
-Nonlinear least square fit to Equation 1 was employed to fit the urea denaturation data for four A1 constructs. The data were globally fit with shared sN , sI , sD , mI, and mD , and individual bN , bI , bD , ΔGI0, and ΔGD0 for each construct. The rationale for fitting the baseline slope for each state to a shared value between the four constructs is that the N- and C-terminal linker does not contain any tryptophan. The rationale for the four constructs to share the same m-values for the I and D states is that the four constructs only differ in the O-glycosylated linkers which are not folded.
+$$
+FIR(C_{urea})=\frac{(b_{N}+s_{N}⋅C_{Urea})+(b_{I}+s_{I}⋅C_{Urea})⋅Exp(−\frac{ΔG_{I}^{0}+m_{I}⋅C_{Urea}}{R⋅T})+(b_{U}+s_{U}⋅C_{Urea})⋅Exp(−\frac{ΔG_{D}^{0}+m_{D}⋅C_{Urea}}{R⋅T})}{1+Exp(−\frac{ΔG_{I}^{0}+m_{I}⋅C_{Urea}}{R⋅T})+Exp(−\frac{ΔG_{D}^{0}+m_{D}⋅C_{Urea}}{R⋅T})}
+$$
+
+Nonlinear least square fit to Equation 1 was employed to fit the urea denaturation data for four A1 constructs. The data were globally fit with shared $s_{N}$ , $s_{I}$ , $s_{D}$ , $m_{I}$, and $m_{D}$ , and individual $b_{N}$ , $b_{I}$ , $b_{D}$ , $ΔG_{I}^{0}$, and $ΔG_{D}^{0}$ for each construct. The rationale for fitting the baseline slope for each state to a shared value between the four constructs is that the N- and C-terminal linker does not contain any tryptophan. The rationale for the four constructs to share the same m-values for the I and D states is that the four constructs only differ in the O-glycosylated linkers which are not folded.
 
 For heat denaturation, A1 (0.25–0.5 mg/ml) was in 20 mM HEPES, pH 7.5, 150 mM NaCl. FIR was measured in the Prometheus NT48 while temperature was ramped from 30 to 85°C at a rate of 1 °C/min using an excitation power of 50%. Additionally, the intensity of backscattered light was recorded as a measure of aggregation.
 
-## HDX mass spectrometry
+### HDX mass spectrometry
 
 HDX experiments were essentially as reported previously (Iacob et al., 2013; Le et al., 2018). Comprehensive experimental details and parameters are provided in Table 1, in the recommended (Masson et al., 2019) tabular format. All HDX MS data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with dataset identifier PXD029942.
+
+**Table 1.**
+ Hydrogen deuterium exchange (HDX) MS data summary and list of experimental parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>A1 short</th>
+      <th>A1N</th>
+      <th>A1C</th>
+      <th>A1NC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HDX reaction details*</td>
+      <td colspan="4">15-Fold dilution with labeling buffer at 20°C, final D2O level = 93.3%, pHread = 7.10; equal volume quench buffer at 0°C, pHread = 2.5</td>
+    </tr>
+    <tr>
+      <td>HDX time course</td>
+      <td colspan="4">10 s, 1 m, 10 m, 1 hr, 4 hr</td>
+    </tr>
+    <tr>
+      <td>HDX controls</td>
+      <td colspan="4">3 undeuterated for each condition</td>
+    </tr>
+    <tr>
+      <td>Back exchange</td>
+      <td colspan="4">30–35%</td>
+    </tr>
+    <tr>
+      <td>Number of peptides</td>
+      <td>102</td>
+      <td>103</td>
+      <td>101</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>Sequence coverage</td>
+      <td>93.2%</td>
+      <td>92.5%</td>
+      <td>91.8%</td>
+      <td>90.9%</td>
+    </tr>
+    <tr>
+      <td>Avg. peptide length (a.a.)</td>
+      <td>12.3</td>
+      <td>12.2</td>
+      <td>12.3</td>
+      <td>12.3</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>5.4</td>
+      <td>5.14</td>
+      <td>4.89</td>
+      <td>5.77</td>
+    </tr>
+    <tr>
+      <td>Replicates</td>
+      <td colspan="4">2 technical for each condition</td>
+    </tr>
+    <tr>
+      <td>HDXrepeatability†</td>
+      <td colspan="4">±0.15 relative Da</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Labeling buffer: 20 mM HEPES, 150 mM NaCl, 99% D2O, pD 7.5; quench buffer: 300 mM sodium phosphate, 0.25 M Tris (2-carboxyethyl)phosphine hydrochloride (TCEP-HCl), H2O pH 2.5.†All reported values are the average relative deuterium level as given by the DynamX software, which in some cases is an average of more than one charge state, across all peptides in both technical replicates. No statistical tests were applied to the HDX MS measurements._
 
 Briefly, A1 short and each O-glycosylated protein construct (28 μM in 20 mM HEPES, 150 mM NaCl) was diluted 15-fold into 20 mM HEPES, 150 mM NaCl, 99% D2O (pD 7.5) at room temperature. At deuterium exchange time points from 10 s to 240 min, an aliquot was quenched by adjusting the pH to 2.5 with an equal volume of 300 mM sodium phosphate, 0.25 M tris (2-carboxyethyl)phosphine hydrochloride (TCEP-HCl), H2O. Samples were analyzed as previously described (Iacob et al., 2013; Wales et al., 2008). They were digested offline with 10 mg/ml pepsin in water for 5 min on ice, then injected into a custom Waters nanoACQUITY UPLC HDX Manager. All mass spectra were acquired using a Waters Synapt G2-Si HDMSE mass spectrometer. Comparison experiments were done under identical experimental conditions such that deuterium levels were not corrected for back exchange and are therefore reported as relative (Wales and Engen, 2006). All experiments were performed in duplicate. The error of measuring the mass of each peptide was ±0.15 Da in this experimental setup. The peptides were identified using PLGS 3.0.1 software and the HDX MS data were processed using DynamX 3.0 (Waters Corp., USA). Peptides common to A1+OGly+N+C and the shorter constructs were followed with HDX, with an overall sequence coverage of 90.9%. In total, 108 peptic peptides were followed with HDX uptake plots (Figure 5—figure supplements 1–5).

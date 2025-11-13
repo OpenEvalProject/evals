@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04h9pn542 Department of Physiology, Seoul National University College of Medicine Seoul Republic of Korea
-2. https://ror.org/04h9pn542 Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea
-3. https://ror.org/04h9pn542 Memory Network Medical Research Center, Wide River Institute of Immunology, Seoul National University College of Medicine Seoul Republic of Korea
-4. https://ror.org/04h9pn542 Neuroscience Research Institute, Seoul National University Medical Research Center Seoul Republic of Korea
+1. Department of Physiology, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+2. Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+3. Memory Network Medical Research Center, Wide River Institute of Immunology, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+4. Neuroscience Research Institute, Seoul National University Medical Research Center Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
 
 † Corresponding author
 
@@ -34,13 +34,13 @@ To address this gap, we investigated the necessity of CF-induced instructive sig
 
 ## Results
 
-## Optogenetic inhibition of climbing fiber transmission derived from the inferior olive
+### Optogenetic inhibition of climbing fiber transmission derived from the inferior olive
 
 To specifically manipulate CF signals in the cerebellar cortex, generally known to originate from the IO, we injected AAV1-CaMKIIα-eNpHR 3.0-EYFP or AAV1-CaMKIIα-EGFP into the IO of wild-type mice (Figure 1A and B). This approach allowed visualization of IO neuron expression and CF terminals in the brainstem nucleus and flocculus. Importantly, the selectively segregated expression in these regions enabled manipulation of CF terminals without disrupting IO somas, which, if damaged, can critically impair motor performance and ocular reflexes due to the IO’s role as a prominent center of sensory integration (Pham et al., 2020; Shaikh et al., 2017; Van Der Giessen et al., 2008).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic diagram showing virus injection for optogenetic manipulation of CF transmission. (B) Bi. A virus is expressed specifically only in the IO region (IO, inferior olive; py, pyramidal tract; ml, medial lemniscus). Scale bar, 100 μm. Bii. Virus expression along CF in the cerebellar flocculus region. (GCL, granule cell layer; PCL, Purkinje cell layer; ML, molecular layer; FL, flocculus). Scale bar, 100 μm. (C) A scheme of optogenetic suppression using a yellow laser (593 nm, 3–5 mW) while recording CF EPSCs under voltage clamp mode. (D) Left, representative traces of CF EPSCs of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Right, Quantitative analysis of suppression of CF EPSCs (GFP: n = 10 cells/2 mice, NpHR: n = 9 cells/5 mice, *** p < 0.001, Unpaired t-test). (E) A scheme of optogenetic suppression while recording complex spikes under current clamp mode. (F) Representative traces of complex spike of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Quantitative analysis of number of complex spike spikelets (GFP: n = 8 cells/1 mouse, NpHR: n = 8 cells/5 mice, ** p = 0.002; Paired t-test). The error bars indicate ± SEM.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Schematic diagram showing virus injection for optogenetic manipulation of CF transmission. (B) Bi. A virus is expressed specifically only in the IO region (IO, inferior olive; py, pyramidal tract; ml, medial lemniscus). Scale bar, 100 μm. Bii. Virus expression along CF in the cerebellar flocculus region. (GCL, granule cell layer; PCL, Purkinje cell layer; ML, molecular layer; FL, flocculus). Scale bar, 100 μm. (C) A scheme of optogenetic suppression using a yellow laser (593 nm, 3–5 mW) while recording CF EPSCs under voltage clamp mode. (D) Left, representative traces of CF EPSCs of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Right, Quantitative analysis of suppression of CF EPSCs (GFP: n = 10 cells/2 mice, NpHR: n = 9 cells/5 mice, *** p < 0.001, Unpaired t-test). (E) A scheme of optogenetic suppression while recording complex spikes under current clamp mode. (F) Representative traces of complex spike of the GFP (top) and NpHR group (bottom) with (dark line) and without (light line) opto-stimulation. Quantitative analysis of number of complex spike spikelets (GFP: n = 8 cells/1 mouse, NpHR: n = 8 cells/5 mice, ** p = 0.002; Paired t-test). The error bars indicate ± SEM.
 
 To confirm the effectiveness of optogenetic inhibition of climbing fiber (CF) transmission, we performed whole-cell patch-clamp recordings of Purkinje cells (PCs) in acute slices of cerebellar vermis lobules 4–5. A 593 nm yellow laser was used to activate halorhodopsin (NpHR). PCs were selected based on optical fluorescence expression (Figure 1C and E), and a stimulation electrode was positioned in the granule cell layer near the recorded PC. The stimulation intensity was carefully calibrated to evoke minimal CF excitatory postsynaptic currents (EPSCs). Laser illumination (3–5 mW) during stimulation resulted in a significant reduction in EPSC amplitude, indicating robust inhibition of CF transmission. Notably, this inhibition was consistent, with 9 out of 9 cells in the NpHR group exhibiting reliable suppression without failures. Importantly, laser illumination did not affect CF EPSCs in the GFP group (Figure 1D). Under the current-clamp mode, CF stimulation-induced spikelets were also completely abolished in the NpHR group but remained unaffected in the GFP group (Figure 1F). These findings establish that optogenetic inhibition effectively suppresses CF-PC synaptic transmission in vitro.
 
@@ -48,27 +48,27 @@ To extend our findings in vivo, we recorded from PCs in awake, head-fixed mice d
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic diagram of virus injection into IO and in vivo recording during optogenetic manipulation of CF transmission. Arrow heads indicate NpHR-expressing CF terminals in the molecular layer of the cerebellar cortex. Scale bar, 50 μm. (B) Representative electrophysiological recording traces of PC firing from the GFP and NpHR groups, without (OFF) and with (ON) yellow (593 nm) opto-stimulation. The upper plots show 10 s traces without and with opto-stimulation, and the lower plots display a 1 s segment from the respective upper traces. Asterisks denote Cs. (C) Comparison of Ss firing rates during optogenetic inhibition. For the GFP group, firing rates with laser off (n = 11 cells from 4 mice) versus on (n = 11 cells from 4 mice) were not significantly different (Mann-Whitney test, p = 0.8594). Similarly, for the NpHR group, no significant difference was observed between OFF (n = 10 cells from 6 mice) and ON (n = 10 cells from 6 mice) conditions (Mann-Whitney test, p > 0.9999). (D) Comparison of Cs firing rates during optogenetic inhibition. In the GFP group, no significant difference was observed between OFF (n = 8 cells from 4 mice) and ON (n = 8 cells from 4 mice) conditions (Mann-Whitney test, p = 0.4563). In the NpHR group, Cs firing rates were significantly reduced during opto-stimulation (OFF, n = 6 cells from 6 mice; ON, n = 6 cells from 6 mice; Mann-Whitney test, ** p = 0.0022). Of note, 6 out of 8 recorded cells were responsive to optogenetic suppression. The error bars indicate ± SEM.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.
+**Figure 2.:** (A) Schematic diagram of virus injection into IO and in vivo recording during optogenetic manipulation of CF transmission. Arrow heads indicate NpHR-expressing CF terminals in the molecular layer of the cerebellar cortex. Scale bar, 50 μm. (B) Representative electrophysiological recording traces of PC firing from the GFP and NpHR groups, without (OFF) and with (ON) yellow (593 nm) opto-stimulation. The upper plots show 10 s traces without and with opto-stimulation, and the lower plots display a 1 s segment from the respective upper traces. Asterisks denote Cs. (C) Comparison of Ss firing rates during optogenetic inhibition. For the GFP group, firing rates with laser off (n = 11 cells from 4 mice) versus on (n = 11 cells from 4 mice) were not significantly different (Mann-Whitney test, p = 0.8594). Similarly, for the NpHR group, no significant difference was observed between OFF (n = 10 cells from 6 mice) and ON (n = 10 cells from 6 mice) conditions (Mann-Whitney test, p > 0.9999). (D) Comparison of Cs firing rates during optogenetic inhibition. In the GFP group, no significant difference was observed between OFF (n = 8 cells from 4 mice) and ON (n = 8 cells from 4 mice) conditions (Mann-Whitney test, p = 0.4563). In the NpHR group, Cs firing rates were significantly reduced during opto-stimulation (OFF, n = 6 cells from 6 mice; ON, n = 6 cells from 6 mice; Mann-Whitney test, ** p = 0.0022). Of note, 6 out of 8 recorded cells were responsive to optogenetic suppression. The error bars indicate ± SEM.
 
 Optogenetic inhibition selectively suppressed Cs firing rates in the NpHR group without affecting Ss rates, whereas no changes were observed in the GFP control group (Figure 2C and D). Recordings from the same neurons during both laser-off and laser-on conditions demonstrated consistent and robust suppression of Cs activity throughout the 40-min optostimulation period. Although continuous recordings over several hours were not feasible, the stability and sustained suppression observed at 40 min strongly suggest that the manipulation would remain effective during the extended durations required for behavioral experiments. These findings confirm that optogenetic inhibition of NpHR-expressing CFs selectively suppresses Cs activity in awake mice without altering Ss activity. Furthermore, they validate the feasibility and specificity of using optogenetic interventions to block CF transmission both in vitro and in vivo, reinforcing the reliability of this approach for studying CF contributions to cerebellar function and behavior.
 
-## Inhibition of climbing fiber transmission during memory acquisition
+### Inhibition of climbing fiber transmission during memory acquisition
 
 An evaluation of CF’s direct contribution in a region-specific manner has not been performed. Thus, after confirming the viability of optogenetic inhibition of CF, we investigated whether the elimination of CF transmission in the cerebellar flocculus affects cerebellar motor learning. When images on the retina are unstable due to mismatched visual inputs, CF signals are conventionally perceived to be responsible for sending error signals to the cerebellar cortex to improve ocular reflexes (Bloedel and Bracha, 1998; Frens et al., 2001; Zang and De Schutter, 2019). Using the same mouse model shown in Figure 1, we surgically implanted an optical fiber in flocculus to suppress CF transmission in vivo during OKR (Figure 3A). Head-fixed mice were placed in a rotating drum painted with a black striped pattern to provide visual input, and its rotating motion elicited an unstable retinal image. Hence, in the beginning, the trace of the mouse’s eye movement represented in a sine curve was only partially overlapping with the trace of the drum’s kinetics, but as the mouse underwent more sessions of OKR learning, the trace of eye movement became almost identical (Figure 3Bi). Notably, the group with inhibited CF transmission exhibited only slight changes or no improved trace of eye movements (Figure 3Bii). Overall, the results demonstrated that CF transmission is required for motor memory acquisition.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig3-v1.jpg)
 
-**Figure 3.:** (A) Illustration of the optokinetic reflex behavioral test (left) and experimental scheme (right). For training, visual stimulation was given by constant rotation of the screen, while the table, where a mouse’s head is fixed, remained stationary. For day 1, a mouse was trained for a total of 50 minutes, and on day 2, an amount of sustained memory was validated via gain check. Scale bar, 100 μm. (B) Representative traces of the screen (black sinusoidal curve) and eye movements (grey sinusoidal curve) divided into the GFP (i) and NpHR (ii) groups. Top traces (pre) were acquired before learning, and bottom traces (post) were obtained after 50 min of learning. The vertical scale bar represents 10 degrees per second and the horizontal scale bar represents 0.5 s. (C) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). Yellow boxes indicate opto-stimulation (12.5 58 mW for 10 min/session, total of 5 sessions). The left graph represents the GFP (n = 8) and the right graph indicates the NpHR (n = 9) group. (D) Comparison of gain changes between the GFP and NpHR groups (GFP, n = 8 mice; NpHR, n = 9 mice). Percentages of gain increment from 0 to 50 min were calculated. The change of gain of the GFP group was significantly larger than that of the NpHR group (left; Unpaired t-test, p = 0.0007). The gain of the GFP group was significantly increased from 0 to 50 min (right; Paired t-test, **** p < 0.0001), while the NpHR group showed no significant improvement of gain from 0 to 50 min (right; Paired t-test, p = 0.1046). The error bars indicate ± SEM.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.
+**Figure 3.:** (A) Illustration of the optokinetic reflex behavioral test (left) and experimental scheme (right). For training, visual stimulation was given by constant rotation of the screen, while the table, where a mouse’s head is fixed, remained stationary. For day 1, a mouse was trained for a total of 50 minutes, and on day 2, an amount of sustained memory was validated via gain check. Scale bar, 100 μm. (B) Representative traces of the screen (black sinusoidal curve) and eye movements (grey sinusoidal curve) divided into the GFP (i) and NpHR (ii) groups. Top traces (pre) were acquired before learning, and bottom traces (post) were obtained after 50 min of learning. The vertical scale bar represents 10 degrees per second and the horizontal scale bar represents 0.5 s. (C) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). Yellow boxes indicate opto-stimulation (12.5 58 mW for 10 min/session, total of 5 sessions). The left graph represents the GFP (n = 8) and the right graph indicates the NpHR (n = 9) group. (D) Comparison of gain changes between the GFP and NpHR groups (GFP, n = 8 mice; NpHR, n = 9 mice). Percentages of gain increment from 0 to 50 min were calculated. The change of gain of the GFP group was significantly larger than that of the NpHR group (left; Unpaired t-test, p = 0.0007). The gain of the GFP group was significantly increased from 0 to 50 min (right; Paired t-test, **** p < 0.0001), while the NpHR group showed no significant improvement of gain from 0 to 50 min (right; Paired t-test, p = 0.1046). The error bars indicate ± SEM.
 
 This indicates that CF transmission is essential for cerebellar motor learning by presenting two contrasting learning curves. The control group exhibited an increasing trend in the learning curve, whereas the NpHR group’s learning curve was almost flat, which reflects no change of gain (Figure 3C). The gain value through the learning sessions was distinctly increased in the control group, whereas the NpHR group showed no significant change in gain (Figure 3D). Furthermore, from 0 to 50 min period of learning, the control group demonstrated almost a doubling in gain, whereas the NpHR group showed little or almost no change of gain (Figure 3E). These results indicate that CF transmission is required for the proper acquisition of motor memory.
 
-## Inhibition of climbing fiber transmission during memory consolidation and retrieval phase
+### Inhibition of climbing fiber transmission during memory consolidation and retrieval phase
 
 When memories are initially acquired, they are generally unstable; hence, it requires some time to shape a stabilized long-term memory (Attwell et al., 2002). Therefore, memories undergo multiple processes that allow distinct shifts from short-term to long-term memory, leading to the construction of adapted behavior (Shutoh et al., 2006). Having confirmed the active involvement of CF transmission during memory acquisition, we sought to understand if its role is limited to the acquisition period or extends to memory transfer during the consolidation phase for long-term storage. We implemented identical surgical and behavioral procedures as previously conducted. However, instead of optogenetically inhibiting the transmission during memory acquisition, we suppressed CF activity in two distinct optogenetic manipulation schemes: one targeting short-term inhibition (30 min) and the other for long-term inhibition (6 hr) (Figure 4A and D). This approach was based on findings that long-term memories associated with cerebellum-dependent behaviors are vulnerable to disruption within specific time windows of consolidation, spanning from minutes to hours (Cooke et al., 2004; Titley et al., 2007). Learning curves confirmed the successful gain enhancement, validating the integrity of memory acquisition (Figure 4B and E). Once the gain was robustly enhanced, optogenetic inhibition of CF transmission during consolidation did not yield any change in the maintenance of memory, irrespective of the duration of manipulation. Consequently, long-term memory was well-established in both NpHR and GFP groups (Figure 4C and F). In addition, we verified whether CF signaling is required during the retrieval phase (Figure 4G). When mice, fully trained in the optokinetic reflex, displayed increased gain, disrupting CF signaling did not affect the retrieval of motor memory (Figure 4H). This divergence underscores a specialized role for CF transmission in the early stages of motor learning, with subsequent phases relying on distinct neural mechanisms. The results highlight phase-specific contributions of CF-driven error signaling, aligning with the hypothesis that memory consolidation and retrieval depend on downstream circuits independent of CF activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95838/elife-95838-fig4-v1.jpg)
 
-**Figure 4.:** (A) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 30 min. (B) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP and the right graph indicates the NpHR group. (C) Comparison of consolidation percentage between the GFP and NpHR groups (GFP group, n = 7 mice; NpHR group, n = 9 mice). The percentage of sustained memory after 24 hr was calculated. No difference was observed between the groups (p = 0.3173; Unpaired t-test). (D) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 6 hr. (E) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP group, and the right graph indicates the NpHR group. (F) Comparison of gain changes between GFP and NpHR groups (GFP group, n = 6 mice; NpHR group, n = 6 mice). Percentages of gain increment from 0 to 50 min were calculated. No difference was observed between the groups (Unpaired t-test, p = 0.6405). (G) Illustration of the experimental scheme. Following proper motor learning on day 1, the remaining gain value was checked on day 2, after testing 1st gain retrieval without opto-stimulation, 2nd gain retrieval was tested with opto-stimulation to validate the effect of CF inhibition on gain retrieval (opto-stimulation was given 3 times for 24 s each at 12.5 mW). (H) Gain retrievals before and during opto-stimulation were compared. The left graph represents the GFP group, and the right shows the NpHR group (GFP group, n = 6 mice; NpHR group, n = 8 mice). There was no significant variation between the groups (NpHR group, p = 0.2439; GFP group, p = 0.3180; Paired t-test). The error bars indicate ± SEM.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.Figure 4—source data 5.Figure 4—source data 6.Figure 4—source data 7.Figure 4—source data 8.
+**Figure 4.:** (A) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 30 min. (B) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP and the right graph indicates the NpHR group. (C) Comparison of consolidation percentage between the GFP and NpHR groups (GFP group, n = 7 mice; NpHR group, n = 9 mice). The percentage of sustained memory after 24 hr was calculated. No difference was observed between the groups (p = 0.3173; Unpaired t-test). (D) Illustration of the experimental scheme. 10 min of optokinetic reflex training was repeated 5 times, and then opto-stimulation (12.5 mW) was given at 0 min post-learning for 6 hr. (E) The learning curve from 0 to 50 min, and +24 hr period. Change of gain is indicated at each time point (+10 min increment). A yellow box indicates opto-stimulation at 0 min post-learning. The left graph represents the GFP group, and the right graph indicates the NpHR group. (F) Comparison of gain changes between GFP and NpHR groups (GFP group, n = 6 mice; NpHR group, n = 6 mice). Percentages of gain increment from 0 to 50 min were calculated. No difference was observed between the groups (Unpaired t-test, p = 0.6405). (G) Illustration of the experimental scheme. Following proper motor learning on day 1, the remaining gain value was checked on day 2, after testing 1st gain retrieval without opto-stimulation, 2nd gain retrieval was tested with opto-stimulation to validate the effect of CF inhibition on gain retrieval (opto-stimulation was given 3 times for 24 s each at 12.5 mW). (H) Gain retrievals before and during opto-stimulation were compared. The left graph represents the GFP group, and the right shows the NpHR group (GFP group, n = 6 mice; NpHR group, n = 8 mice). There was no significant variation between the groups (NpHR group, p = 0.2439; GFP group, p = 0.3180; Paired t-test). The error bars indicate ± SEM.
 
 ## Discussion
 
@@ -90,44 +90,138 @@ In conclusion, inhibiting CF transmission during motor learning impairs gain inc
 
 ## Materials and methods
 
-## Animals and stereotaxic surgery for virus injection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>AAV9.CaMKIIα.EGFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50469</td>
+      <td>Plasmid #50469</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1. CaMKIIα.eNpHR 3.0.EYFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_26971</td>
+      <td>Plasmid #26971</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zoletil</td>
+      <td>Virvac</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rompun</td>
+      <td>Bayer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Samyang Pharmaceutical</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Meloxicam</td>
+      <td>Boehringer Ingelheim</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and stereotaxic surgery for virus injection
 
 All experimental procedures were approved by the Seoul National University Institutional Animal Care and Use Committee (SNU-21031907–1 and SNU-230109-2-4). Animals were housed under a 12  hr light–dark schedule, with food and water available ad libitum, at 20–24  °C and 40–60% relative humidity. First, only male wild-type mice (aged 7–10 weeks C57Bl/6 N from Orient Bio) were anesthetized using intraperitoneal injections of a Zoletil/Rompun mixture (30 mg / 10 mg/kg). For optogenetic expression in CF, the virus was injected into the IO 2–3 weeks before the behavioral test, as previously described (Kimpo et al., 2014; Roh et al., 2020). Briefly, bilateral injections were made at the midpoint between the edge of the occipital bone and the C1 cervical vertebra. The glass pipette was set at a 55° angle from the vertical and 7° from the midline. After approaching a 3 mm depth, a virus solution containing 100–200 nL of AAV1-CaMkIIα-eNpHR3.0-EYFP or AAV9.CaMkIIα-EGFP was injected with a Picopump at 5 nL/s. The pipettes were left in place for 10 min before they were removed to minimize backflow.
 
-## Stereotaxic surgery for optic cannula implantation
+### Stereotaxic surgery for optic cannula implantation
 
 After the mice were fully recovered (a few days to a week) from the first surgery of virus injection, a second operation of optic cannula implantation (Ø1.25 mm Ceramic Ferrule, L=3.0 mm) near cerebellar flocculus and head fixation was conducted. Unlike the fiber optic cannula, head fixation parts were hand-made. Before the surgery, mice were anesthetized by intraperitoneal injection of Zoletil 50 (Virbac, 15 mg/kg) and xylazine (Rompun, Bayer, 15 mg/kg) mixture. Mice were given 48 hr to recover after surgery.
 
-## Confirmation of viral expression
+### Confirmation of viral expression
 
 After completion of all the experiments, sampling using cardiac perfusion is performed. The brain was then extracted and coronal sections were made at 30 μm intervals. Images were acquired and processed using a confocal microscope (Zeiss LSM 7 MP, Carl Zeiss, Jena, Germany) and Zen software (Zeiss). The location of virus expression was confirmed by comparison with the brain atlas (Paxinos and Franklin’s The Mouse Brain in Stereotaxic Coordinates 4th Edition by George Paxinos).
 
-## Optical suppression of CF terminals in the cerebellar cortex in vivo
+### Optical suppression of CF terminals in the cerebellar cortex in vivo
 
 To manipulate CF transmission-induced Cs in PCs, AAV1.CaMKII⍺.eNpHR3.0.eYFP or AAV8.CaMKIIa.eGFP was bilaterally injected into the IO. A glass micro-pipette was used to inject 200 nL per site. To optically suppress the CF terminals and record CF-PC synaptic response, a small cranial window was made above the cerebellar cortex lobule IV/V a week after the viral injection. After 2 weeks from the viral injection, mice underwent single-unit recordings. The recordings were performed as described in Neural data acquisition and analysis. Cs responses were acquired during 10 s of yellow on and off sessions 20 times to test the effect of CF terminal suppression on CF-PC synaptic transmission.
 
-## Neural data acquisition and analysis
+### Neural data acquisition and analysis
 
 Single-unit recordings were performed while mice were head-fixed and awake in the recording rack. A Digital Lynx system (Neuralynx, Bozeman, MT) was used to amplify, band pass filter (0.1–8000 Hz for simple spikes, 10–200 Hz for complex spikes), and digitize the electrode recordings. A silicon neural probe (Cambridge NeuroTech) was used to probe and acquire Cs signals. Cs signals were collected at a 32 kHz sampling rate. Cs waveforms were manually selected based on visual inspection of the averaged appearance of characteristic negative Ca2+ peaks.
 
-## Slice preparation, electrophysiology, and optogenetic validation
+### Slice preparation, electrophysiology, and optogenetic validation
 
 An acute brain slice preparation and electrophysiological experiments were carried out as previously described (Lee et al., 2024). First, mice aged 9–10 weeks with AAV1.CaMKIIα.eNpHR 3.0.WPRE-EYFP injection into their inferior olivary neuron 2–3 weeks before the preparation were anesthetized by isoflurane and briefly decapitated. Then, 250 μm-thick sagittal slices of the cerebellar vermis were obtained from the mice using a vibratome (VT1200S, Leica). The ice-cold cutting solution contained 75 mM sucrose, 75 mM NaCl, 2.5 mM KCl, 7 mM MgCl2, 0.5 mM CaCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 25 mM glucose with bubbled 95% O2 and 5% CO2. The slices were immediately transferred into the artificial cerebrospinal fluid (ACSF) containing 125 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 10 mM glucose with bubbled 95% O2 and 5% CO2. They were allowed to recover at 32 °C for 30 min and at room temperature for 1 hr. All recordings were performed within 8 hr of recovery.
 
 Brain slices were placed in a submerged chamber with perfusion of ACSF for at least 10 min before recording. We used OptoPatcher (HEKA Elektronik) holding recording pipette (2–3 MΩ) filled with internal solution containing 9 mM KCl, 10 mM KOH, 120 mM K-gluconate, 3.48 mM MgCl2, 10 mM HEPES, 4 mM NaCl, 4 mM Na2ATP, 0.4 mM Na3GTP, and 17.5 mM sucrose (pH 7.25). The stimulation electrode was placed on the granule cell layer near the PC. The stimulation isolator injected a brief current pulse to the stimulation electrode and was controlled using PatchMaster software (HEKA Elektronik). Stimulation intensity (6–30 μA) was calibrated to minimally evoke CF EPSC. Regarding the laser on trial, a 593.5 nm irradiation from a yellow laser was applied 5 s before CF stimulation. The eEPSC amplitude was averaged over three lasers on and off trials. Under current clamp mode, complex spikes induced by CF stimulation were recorded using the same validation protocol. Overall, the laser illumination (3–5 mW) consistently inhibited CF transmission. Electrophysiological data were acquired using an EPC10 patch-clamp amplifier (HEKA Elektronik) and PatchMaster software (HEKA Elektronik) with a sampling frequency of 20 kHz, and the signals were filtered at 2 kHz. All electrophysiological recordings were acquired from the central cerebellar vermis. The amplitude of EPSC was analyzed using Igor Pro (WaveMetrics).
 
-## Optokinetic reflex behavior test
+### Optokinetic reflex behavior test
 
 First, two sessions of acclimation were conducted. During each session, the mouse was restrained using a custom-made restrainer for 20 min both with and without light for habituation to the recording environment. Following the procedure reported by Stahl et al., 2000, a calibration was performed. This allowed for the conversion of the dynamics of pupil-to-eye rotation. Next, three basal oculomotor performances, including (OKR), vestibulo-ocular reflex in the dark (dVOR), and vestibulo-ocular reflex in the light (lVOR), were measured. During the recording of eye movements, it was necessary to control pupil dilation that was induced by an absence of light in dark conditions. Thus, physostigmine salicylate solution (Eserine; Sigma Millipore) was given to mice under brief isoflurane anesthesia. The concentration of eserine solution was increased from 0.1%, 0.15%, and 0.2% based on the pupil size. Basal oculomotor performances were described in gains. For the actual learning protocol, we adopted OKR, and it consisted of five training sessions (10 min per session), six checkup points, and 24 hr of consolidation period. During the training sessions, the mice were visually stimulated with a sinusoidally rotating drum (±5 degrees). Completely trained mice were placed back into their home cage, which was stored in the dark condition until the last gain checkup points.
 
-## Experimental design
+### Experimental design
 
 For our in vivo OKR experiments, group sizes for mice expressing AAV‐Ef1α‐DIO‐NpHR‐EYFP (NpHR) or AAV‐Ef1α‐DIO‐EYFP (EYFP) were chosen to match those of comparable published studies (PMID: 36639897; 16458438; 16135754; 11805298) to ensure adequate statistical power. Each cohort underwent identical surgical, recovery, and behavioral testing pipelines, with two independent cohorts run to confirm reproducibility. Mice were randomly assigned to the NpHR or EYFP groups, and the order of OKR testing was shuffled across animals to eliminate potential time-of-day or operator effects. While full blinding to viral condition was not technically feasible, all data acquisition and processing steps were standardized to minimize bias.
 
-## Gain analysis
+### Gain analysis
 
 Gains acquired from basal oculomotor performances and OKR learning were calculated as the ratio of evoked eye movements to the movement of the screen or turn table as visual or vestibular stimuli, respectively. A custom-built LabView (National Instruments) analysis tool was used for all the calculations.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean  ± SEM and were analyzed in GraphPad Prism (GraphPad Software Inc, CA, USA). Between‐group comparisons of continuous variables (e.g., CF-EPSC suppression magnitudes, percent gain change, consolidation percentages) were analyzed by unpaired two-tailed t-tests. Within‐animal comparisons (e.g. pre- versus post-learning gain; number of complex-spike spikelets) were analyzed by paired two-tailed t-tests. Simple and complex spike firing rates were compared with two-tailed Mann-Whitney U tests, which did not meet parametric assumptions and/or involved small sample sizes. All tests were two‐tailed, and statistical significance was defined as p < 0.05. In figures, asterisks denote significance levels (*p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001), and the exact test used with sample sizes and p-values is reported in each legend.

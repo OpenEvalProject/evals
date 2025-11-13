@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00ysqcn41 Department of Neuroscience, Jefferson Synaptic Biology Center, Vickie and Jack Farber, Institute for Neuroscience, Sydney Kimmel Medical College, Thomas Jefferson University Philadelphia United States
-2. https://ror.org/05gq02987 Department of Neuroscience, Brown University Providence United States
+1. Department of Neuroscience, Jefferson Synaptic Biology Center, Vickie and Jack Farber, Institute for Neuroscience, Sydney Kimmel Medical College, Thomas Jefferson University Philadelphia United States ([ROR:00ysqcn41](https://ror.org/00ysqcn41))
+2. Department of Neuroscience, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 3. Robert J. and Nancy D. Carney Institute for Brain Science Providence United States
 4. Department of Neurobiology, Harvard Medical School Boston United States
-5. https://ror.org/00f54p054 Department of Biology, Stanford University Stanford United States
+5. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -30,6 +30,14 @@ With only one axon extending out from the soma, a neuron uses axonal branches to
 
 The central projections of the dorsal root ganglia (DRG) sensory neurons in the spinal cord provide an excellent model to investigate such guidance mechanisms during branch morphogenesis. These projections relay somatosensory information (e.g., pain and touch) collected by their peripheral projections in the skin and muscle to the brain (Altman and Bayer, 1984; Mirnics and Koerber, 1995; Nascimento et al., 2018; Ramon y Cajal, 1904). Upon reaching the dorsal spinal cord, they normally bifurcate in a location called the dorsal root entry zone (DREZ; Mirnics and Koerber, 1995; Ozaki and Snider, 1997). The bifurcated branches appear to extend in opposite directions along the rostrocaudal axis, generating T-shaped junctions, as part of the dorsal funiculus in the DREZ (Figure 1E; Gibson and Ma, 2011; Nascimento et al., 2018). The dorsal funiculus is a critical axonal track in the spinal cord that allows information to flow between the peripheral nervous system (PNS) and the central nervous system (CNS). Damage to or malformation of this evolutionarily conserved axonal structure in the DREZ can lead to paralysis, as commonly seen after spinal cord injury or in genetic disorders such as Frederick ataxia (Koeppen et al., 2017; Smith et al., 2012; Zheng et al., 2019). Thus, understanding the development of DRG axon bifurcation could provide useful insights into the mechanisms that ensure the fidelity of forming branched circuits.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Inverted fluorescent images of wholemount NF staining of CUBIC-cleared E10.5 WT (A, C) or Ntn1β/β (B, D) embryos. The projected images are viewed from the lateral side of the body at the region of forelimb (A–B) and hindlimb (C–D). The space above the dorsal funiculus (dotted-line box) is devoid of NF-fibers in WT embryos (A, C), but filled with misprojecting axons (arrows) from DRGs (*) that grow dorsally in the mutant (B,D). The compass indicates the dorsal (D)-ventral (V) axis and the rostral (R)-caudal (C) axis. (E) A model depicting DRG sensory axon projections in the spinal cord. Bifurcation is shown in the DREZ (green area) that forms the eventual dorsal funiculus. (F) Quantification of the number of axonal fibers at the proximal, medial, or distal location from the dorsal funiculus (see purple lines in B and D) in the wholemount staining of WT and Ntn1β/β (Nβ/β) embryos (n=3 animals per condition). Two-way ANOVA F(1, 12)=199.5 with Tukey’s HSD Test with multiple comparisons t between WT and Ntn1β/β i(proximal p<0.0001; medial p<0.0001; and distal, p=0.001). (G–N) Inverted fluorescent images of NF-stained transverse sections of the brachial region of E10.5 (G–H, K–L) and E11.5 (I–J, M–N) embryos. Misprojections (arrows) extending from the DREZ (green box) are seen in Ntn1β/β (K–N) but not WT (G–J) animals. Asterisks (*) label the DRG. Images in H, J, L, N are zoomed-in views of the boxed regions around the DREZ in G, I, K, M, respectively. The compass indicates the dorsal (D)-ventral (V) axis and the left (L)-right (R) axis. *** p<0.001, **** p<0.0001. Bars: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Dark field images of in situ hybridization using 35S-labeled mRNA probes for Ntn1 in cross sections of E10.5 and E11.5 mouse embryos. Ntn1 expression is mainly confined to the inside of the spinal cord, including the floor plate (FP), the ventricular zone, and the lateral domain in the dorsal horn adjacent to the DREZ (arrow). Asterisks (*) label the DRG. (C–J) Whole mount NF staining using HRP-based colorimetric substrates in E10.5 WT (C–D,G–H) or Ntn1β/β (E–F, I–J) embryos (n=5). BA/BB-cleared embryos are viewed from the lateral side of the forelimb (C–F) or hindlimb (G–J) region. Asterisks (*) label the DRG, arrows point to the front (yellow) or the back (white) dorsal funiculus, and misprojections (black). Images in D,F,H,J show enlarged views of the boxed region of a single DRG in C,E,G,I. Bars: 100 μm.
+
 Studies in the past have begun to tease out the molecular and cellular mechanisms that generate this stereotypic branch. In mice, after reaching the dorsal spinal cord at embryonic day (E) 10.5 (Mirnics and Koerber, 1995; Ozaki and Snider, 1997), the DRG central projection first generates a new branch in response to the C-type natriuretic peptide (CNP) present in the dorsal spinal cord, a step that requires the CNP receptor Npr2 as well as cGMP signaling (Schmidt et al., 2009; Schmidt et al., 2007; Zhao and Ma, 2009; Zhao et al., 2009). The resulting two daughter branches are then guided to grow only in the DREZ along the rostrocaudal axis (Ozaki and Snider, 1997), leading to the formation of the T-shaped branch junction. This step is partly controlled by the Slit family of guidance molecules, Slit1 and Slit2, which are expressed next to the DREZ inside the spinal cord, as well as their Robo receptors, which are expressed by DRG neurons (Ma and Tessier-Lavigne, 2007). In mouse mutants lacking Slit1 and Slit2 or their receptors Robo1 and Robo2, one of the daughter branches misprojects into the spinal cord. However, the defect only affects ~50% DRG axons and does not eliminate the dorsal funiculus, suggesting the presence of other molecular mechanisms that guide bifurcating DRG afferents.
 
 In search of additional molecular mechanisms, we re-evaluated the role of Netrin-1 (Ntn1), an extracellular molecule expressed in the spinal cord (Serafini et al., 1996; Figure 1—figure supplement 1A–B). Early studies of Ntn1 deletion based on a gene-trap allele (Ntn1β/β) as well as targeted deletion alleles have identified aberrant entry of sensory axons into the dorsal spinal cord at E11.5 and E12.5 (Bin et al., 2015; Varadarajan and Butler, 2017; Varadarajan et al., 2017; Wang, 1999; Watanabe et al., 2006; Wu et al., 2019; Yung et al., 2015). Because of its expression immediately adjacent to the DREZ at E11.5 (Serafini et al., 1996), it has been suggested that Ntn1 prevents premature ingrowth of sensory afferents into the spinal cord via repulsion, an activity that was demonstrated in vitro (Masuda et al., 2008; Watanabe et al., 2006). However, it is not clear whether Ntn1 is also required for proper DRG axon bifurcation, and if so, whether Ntn1 is needed for forming the second branch or guiding bifurcated axons.
@@ -38,7 +46,7 @@ Using wholemount immunostaining coupled with tissue clearing (Huber et al., 2005
 
 ## Results
 
-## Loss of Ntn1 causes axons to escape from the dorsal funiculus during bifurcation
+### Loss of Ntn1 causes axons to escape from the dorsal funiculus during bifurcation
 
 To determine the role of Ntn1 in early DRG axon development, we first confirmed the expression of Ntn1 in the spinal cord at E10.5, when DRG axons start to bifurcate and form the dorsal funiculus (Ma and Tessier-Lavigne, 2007; Ozaki and Snider, 1997). Consistent with previous published expression data (Serafini et al., 1994), Ntn1 transcripts are found mainly confined to the inside of the spinal cord, including the floor plate, the ventricular zone, and the lateral domain in the dorsal horn below the dorsal funiculus along the pial layer from E10.5 to E11.5 (Figure 1—figure supplement 1A–B arrows). This RNA expression profile is in line with the localization of Ntn1 proteins made by ventricular zone neural progenitor cells and deposited along the pial layer adjacent to the DREZ (Dominici et al., 2017; Varadarajan and Butler, 2017).
 
@@ -50,7 +58,7 @@ To quantify the misprojections, we used line scans to determine the number of mi
 
 To better understand the location of misprojections, we examined transverse sections of E10.5 (Figure 1G, H, K, L) and E11.5 (Figure 1I, J, M, N) embryos stained for NF. In the dorsal spinal cord of WT embryos, NF labels axons that extend from the DRG into the DREZ (Figure 1G, H, I, J). The DREZ is smaller at E10.5 than E11.5 (Figure 1G and H vs I,J), but at both ages, the intense NF staining that represents the cross-sections of the dorsal funiculus remains inside the DREZ. However, in Ntn1β/β mutants, NF-labeled fibers extended out from the DREZ at both ages. More misprojections were found at E11.5, but they all grow along the pia surface (Figure 1K, L, M and N), consistent with the dorsally extending trajectories seen in the wholemount staining above. Thus, loss of Ntn1 caused NF-labeled axons to escape from the DREZ.
 
-## Ntn1 is invovled in DRG branch guidance at the time of bifurcation
+### Ntn1 is invovled in DRG branch guidance at the time of bifurcation
 
 Since NF can label axons from different neuronal populations including DRG sensory neurons, commissural neurons, and other spinal cord interneurons (Bin et al., 2015; Moreno-Bravo et al., 2019; Yung et al., 2015), we wanted to confirm that the observed misprojections at E10.5 are indeed axons from DRG sensory neurons. We thus introduced a neural specific CreERT2 recombinase driver (Neurog1-CreERT2) and an Ai14 Cre reporter to our Ntn1 mice to label all DRG neurons (Koundakjian et al., 2007). After Tamoxifen treatment to activate the Cre recombinase, we used RFP antibody to label the fluorescent protein tdTomato, which is expressed from the Ai14 allele, and examined DRG neurons and their axons in iDISCO-cleared and antibody-stained wholemount embryos (Renier et al., 2014).
 
@@ -58,13 +66,21 @@ In WT control embryos, tdTomato labeling is seen in DRG cell bodies (Figure 2A, 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig2-v1.jpg)
 
-**Figure 2.:** Ntn1 mutants.β/β(A–C) Sensory axon specific genetic labeling based on tdTomato expression driven by tamoxifen-induced Neurog1:CreER in E10.5 WT (T2A) or Ntn1 (β/βB) embryos that were cleared by iDISCO. Fluorescent images of immunostaining using RFP antibodies (for tdTomato) (A–C) or 2H3 antibodies (for NF) (A’-C’) are taken from the lateral side of the spinal cord in the brachial region of cleared wholemount embryos. Color-merged images are shown in A”-C”. Dorsal funiculi are inside the yellow dotted-line boxes and DRGs are marked by asterisks (*). Zoomed-in images (C) from the boxed regions in B (white box) highlights the co-staining of DRG-specific tdTomato and NF in abnormal fibers (yellow arrows) that extend from the dorsal funiculus in Ntn1 mutants (nβ/β=3). White arrows indicate NF-labeled misprojections that do not co-stain for tdTomato. (D–H) Sparse sensory axon labeling in WT or Ntn1 animals based on the basal tdTomato fluorescence driven by β/βNeurog1-CreER without using tamoxifen. Inverted fluorescent images (T2D,E,G,H) are viewed along the DREZ from the lateral side of the spinal cord in cleared wholemount embryos. The merged fluorescent image of tdTomato and NF labeling shows the DREZ (dotted-line box) in F. Normal turning is found in WT animals (n=3) for bifurcated (D, n=11/12 axons) and non-bifurcated axons (E, n=14/14 axons). In Ntn1 mutant embryos (n=3), tdTomato labeled axons (purple arrows) can be seen misprojecting from the DREZ in bifurcated (β/βG,H, n=7/14 axons) and non-bifurcated axons (H, n=9/13 axons). Green ‘V’ indicates the location of bifurcation junctions or the turning point of single axons. (I) Quantification of the defects in sparsely labeled axons above. The percentage of fibers that correctly (black bar) or incorrectly (grey bar) turn at the DREZ is quantified in two groups: bifurcated (+) or non-bifurcated (-). Student’s t-tests compare the mean value of percentage of fibers misprojecting between WT and Ntn1 (β/βN) in non-bifurcated axons (t(4)=25, p<0.0001) and bifurcated axons (t(4)=4.533, p=0.0106). * p<0.05, and **** p<0.0001, Bars: 100 μm.β/βFigure 2—source data 1.N embryos (β/βFigure 2I).
+**Figure 2.:** (A–C) Sensory axon specific genetic labeling based on tdTomato expression driven by tamoxifen-induced Neurog1:CreERT2 in E10.5 WT (A) or Ntn1β/β (B) embryos that were cleared by iDISCO. Fluorescent images of immunostaining using RFP antibodies (for tdTomato) (A–C) or 2H3 antibodies (for NF) (A’-C’) are taken from the lateral side of the spinal cord in the brachial region of cleared wholemount embryos. Color-merged images are shown in A”-C”. Dorsal funiculi are inside the yellow dotted-line boxes and DRGs are marked by asterisks (*). Zoomed-in images (C) from the boxed regions in B (white box) highlights the co-staining of DRG-specific tdTomato and NF in abnormal fibers (yellow arrows) that extend from the dorsal funiculus in Ntn1β/β mutants (n=3). White arrows indicate NF-labeled misprojections that do not co-stain for tdTomato. (D–H) Sparse sensory axon labeling in WT or Ntn1β/β animals based on the basal tdTomato fluorescence driven by Neurog1-CreERT2 without using tamoxifen. Inverted fluorescent images (D,E,G,H) are viewed along the DREZ from the lateral side of the spinal cord in cleared wholemount embryos. The merged fluorescent image of tdTomato and NF labeling shows the DREZ (dotted-line box) in F. Normal turning is found in WT animals (n=3) for bifurcated (D, n=11/12 axons) and non-bifurcated axons (E, n=14/14 axons). In Ntn1β/β mutant embryos (n=3), tdTomato labeled axons (purple arrows) can be seen misprojecting from the DREZ in bifurcated (G,H, n=7/14 axons) and non-bifurcated axons (H, n=9/13 axons). Green ‘V’ indicates the location of bifurcation junctions or the turning point of single axons. (I) Quantification of the defects in sparsely labeled axons above. The percentage of fibers that correctly (black bar) or incorrectly (grey bar) turn at the DREZ is quantified in two groups: bifurcated (+) or non-bifurcated (-). Student’s t-tests compare the mean value of percentage of fibers misprojecting between WT and Ntn1β/β (Nβ/β) in non-bifurcated axons (t(4)=25, p<0.0001) and bifurcated axons (t(4)=4.533, p=0.0106). * p<0.05, and **** p<0.0001, Bars: 100 μm.
 
 To further confirm the DRG origin of misprojecting fibers found in Ntn1 mutants and examine the nature of the defect, we next investigated the misprojections at the single axon level. We utilized the leaky recombinase activity of CreERT2 in the absence of tamoxifen, which leads to tdTomato expression, seemingly at random in a small population of DRG neurons and thus sparsely labels their axons. In iDISCO cleared E10.5 WT embryos, tdTomato labeling revealed that DRG axons displayed two types of morphologies in the DREZ: (1) bifurcated axons (Figure 2D), which have already reached the DREZ and bifurcated to extend the two branches in the dorsal funiculus that can be visualized by NF co-staining (Figure 2F); (2) non-bifurcated axons (Figure 2E), which have not yet bifurcated but reached the spinal cord and turned into the DREZ. Both bifurcated and non-bifurcated axons (n=12 vs 14) stay within the DREZ (Figure 2I) in the WT spinal cord. Similar bifurcated (n=17) and non-bifurcated (n=13) axons are found in Ntn1β/β mutants (Figure 2I). However, although some bifurcated axons exhibit branches that correctly turn at the DREZ and follow the dorsal funiculus (Figure 2G, left branch), others often project dorsally out of the DREZ, indicating guidance errors (Figure 2G, right branch). Non-bifurcated axons often enter the DREZ and project away from the dorsal funiculus (Figure 2H). For comparison, nearly all axonal terminals stayed within the DREZ of WT embryos (Figure 2I), whereas ~55% bifurcated and ~70% non-bifurcated axons in the Ntn1β/β mutants misprojected outside of the defined dorsal funiculus (Figure 2I). These results demonstrate that loss of Ntn1 alters the guidance of DRG axons at the DREZ during bifurcation.
 
-## Ntn1 and Slit regulate different aspects of sensory axon guidance during bifurcation
+### Ntn1 and Slit regulate different aspects of sensory axon guidance during bifurcation
 
 Our previous studies showed that impaired Slit signaling led to misguidance of one of the bifurcated DRG branches, which enter the dorsal spinal cord in the absence of Slit/Robo signaling (Ma and Tessier-Lavigne, 2007). Since the misprojections in Ntn1 mutants appear on the dorsal pial surface and stay outside the spinal cord, we hypothesize that Ntn1 and Slit have different guidance functions that are both required for the formation of the dorsal funiculus. To test this hypothesis, we generated triple mutants (Slit1-/-;Slit2-/-;Ntn1β/β) and examined sensory axons in wholemount embryos using NF staining and tissue clearing as described in Figure 1. Triple mutants were generated in the Slit1 null background (Slit1-/-;Slit2+/+;Ntn1+/+), which has nearly normal DRG axon projections (Figure 3A), similar to those in the WT embryos described above (Figure 1A and C). Once reaching the DREZ, axons form compact bundles that run along the rostrocaudal axis. A few short stray axons, due to the loss of Slit1, enter the normally clear space between the dorsal funiculi of the two sides of the embryo (Figure 3A). In contrast, NF labeled axons are completely disorganized around the DREZ (dotted-line region) in triple mutants (Slit1-/-;Slit2-/-;Ntn1β/β) (Figure 3B). DRG axons still grow dorsally extending from the cell body, but rarely turn into the longitudinal track of the DREZ. Most of them continue to grow straight (Figure 3B, arrows) or veer off slightly after passing the presumptive dorsal funiculus. Examination using traditional DAB staining described earlier also confirms this complete ablation of the funiculus in triple mutants (Figure 3—figure supplement 1A–D) when viewed in either the forelimb or the hindlimb region. This analysis of triple mutants demonstrates that both Slit and Ntn1 are needed for the formation and integrity of the dorsal funiculus and supports the notion that they have different guidance roles during DRG axon bifurcation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Inverted fluorescent images of NF staining in CUBIC-cleared E10.5 embryos in the forelimb region. The dorsal funiculus (between dotted-lines) is evident in the control Slit1-/-;Slit2+/+;Ntn1+/+ embryo and the space above it has few labeled fibers (arrows, A), but in the Slit1-/-;Slit2-/-; Ntn1β/β mutant (B), extensive NF-labeled axons (arrows) wander into the dorsomedial region of the spinal cord while the dorsal funiculus (between dotted-lines) is reduced and diminished. DRGs are marked by green asterisks (*). (C–N) Inverted fluorescent images of NF staining in wholemount embryos of E10.5 embryos with various genotypes are viewed from the lateral side (D–G) or the dorsal surface (J–M). Arrows denote sensory misprojections found in Slit1-/-;Slit2+/+;Ntn1+/+ (D, J), Slit1-/-;Slit2-/-;Ntn1+/+ (E, K), Slit1-/-;Slit2+/+; Ntn1β/β (F, L) and Slit1-/-;Slit2-/-;Ntn1β/β (G, M) animals. In Slit1-/-;Slit2-/-;Ntn1β/β triple mutants (G, M), the dorsal funiculus is nearly absent with misprojecting fibers. The number of axonal fibers at proximal, medial, and distal locations between the DREZ and the dorsal midline is quantified in the bar graphs from the lateral (H) or the top-down (N) view (n=3 for each data set). The orientation and measurement location are shown in the corresponding cartoons (C and I) and DRGs are marked by green asterisks (*). Statistics from two-way ANOVA analysis and pairwise comparions in H: for proximal misprojections, Slit1-/- vs. Slit1-/-;Slit2-/- p=0.0122; Slit1-/- vs. Ntn1β/β p=0.0011; Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.001; for medial misprojections, Slit1-/-vs. Ntn1β/β p=0.0122; Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.0001; and for distal misprojections, Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.0001. Statistics from two-way ANOVA analysis in I: for proximal misprojections, Slit1-/- vs. Slit1-/-;Slit2-/- p=0.0388; Slit1-/-vs. Ntn1β/β p=0.0002; Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.0002; for medial misprojections, Slit1-/-vs. Ntn1β/β p=0.0388; Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.0001; and for distal misprojections, Slit1-/- vs. Ntn1β/β p=0.0175; Slit1-/- vs. Slit1-/-;Slit2-/-;Ntn1β/β p=0.0004. (O–T) Inverted fluorescent images of NF staining in cross sections of E10.5 embryos with various genotypes (P-S, n=3). Orange arrows indicate axonal misprojections found in Slit1-/-;Slit2-/- mutants inside the spinal cord and blue arrows indicate misprojections associated with Ntn1β/β mutants at the pial surface. Blue lines with arrow at both ends indicate the distance from dorsal projections to the midline. Quantification of defects (T) is based on the distance of the dorsal fibers from the midline (blue bars) and the total length of misprojection fibers inside the spinal cord (orange bars). The cartoon (O) illustrates the two types of misprojections (brown lines) and the quantification of dorsal distance (blue lines). Statistics from one-way ANOVA analysis in T: for dorsal fiber distance, WT vs. Slit1-/-;Slit2-/- p=0.0003; WT vs. Ntn1β/β p<0.0001; WT vs. Slit1-/-;Slit2-/-;Ntn1β/β p<0.0001; and for horizontal fiber length, WT vs. Slit1-/-;Slit2-/- p=0.0016; WT vs. Ntn1β/β p=0.0472; WT vs. Slit1-/-;Slit2-/-;Ntn1β/β p=0.007. * p<0.05, ** p<0.01, *** p<0.001 and **** p<0.0001, ns, not significant. Bars: 100 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) HRP-based neurofilament staining is viewed from the dorsolateral side of E10.5 embryos in the forelimb (A–B) or the hindlimb (C–D) region. Note the difference in labeled axons at the front (yellow arrowheads) or the back (white arrowheads) dorsal funiculi after they grow out from the DRG (*) between Slit1-/-;Slit2-/-;Ntn1β/β mutants (B,D) and littermate controls (A,C) (n=2).
 
 To gain further insights and distinguish the role of Slit and Ntn1, we next compared the trajectory and location of NF-labeled misprojections in embryos lacking Slit1 only, both Slit1 and Slit2, both Slit1 and Ntn1, or all three genes by visualizing them from different angles. First, when viewed from the lateral side of the wholemount embryos as above (Figure 3C), Slit1 single mutants (Slit1-/-;Slit2+/+;Ntn1+/+) (Figure 3D) have a compact DREZ with few DRG axons projecting away. In double mutants lacking both Slit1 and Slit2 (Slit1-/-;Slit2-/-;Ntn1+/+), an increased number of DRG axons leave the DREZ (Figure 3E, arrows) and appear in the proximal region of the dorsal spinal cord (Figure 3E), similar to those reported previously (Ma and Tessier-Lavigne, 2007). The number of misprojections tapers off more distally from the DREZ (Figure 3E). This can be demonstrated by viewing the misprojections from the dorsal side of the spinal cord (Figure 3K), as those misprojections maintain a relatively straight trajectory perpendicular to the DREZ. They also reach the midline but stop there without crossing to the contralateral side of the spinal cord. Such a trajectory is consistent with their invasion into the spinal cord, which can be shown on the transverse-section of the spinal cord. There, NF-labeled fibers appear to enter the spinal cord from the DREZ with horizontal trajectories inside the dorsal proper (Figure 3Q, arrows). These misprojections reach the midline with an average length of 137.8 μm and a summed length of ~0.8 mm, indicating a high number of misprojections (Figure 3T). For comparison, few misprojections are found in the Slit1-/- animal on transverse sections, with a summed length of only 0.02 mm (Figure 3T).
 
@@ -74,21 +90,29 @@ The independent roles are further demonstrated in triple mutants (Slit1-/-;Slit2
 
 Taken together, these analyses from different views of the DREZ reveal distinct phenotypes in mice lacking Ntn1 and Slit1/2, thus supporting the different guidance roles of these pathways during dorsal funiculus development.
 
-## Single axon analysis by DiI indicates neither Ntn1 nor Slit is required for branch formation
+### Single axon analysis by DiI indicates neither Ntn1 nor Slit is required for branch formation
 
 To determine whether Ntn1 is required for bifurcation, the process of forming the second branch of DRG sensory axons, we used DiI iontophoresis to label and examine single DRG axons at E12.5, the age when the majority of axons normally have already generated two branches (Ma and Tessier-Lavigne, 2007; Ozaki and Snider, 1997). Spinal cords were removed and imaged from an open book preparation (Figure 4A). Individuals axons were analyzed from maximum projections that were color coded for the depth in the z-plane (Figure 4B and C) Indeed, in WT embryos, labeled axons properly turn at the DREZ and 26 out of 27 axons have T-shaped junctions at the DREZ (Figure 4B and D). In Ntn1β/β mutants, 32 out of 34 axons analyzed also have two branches (Figure 4F), indicating that branch formation itself is not affected in the absence of Ntn1. Similarly, 28 out of 29 axons have bifurcated in the Slit1-/-;Slit2-/- mutant embryos (Figure 4E), while 20 out of 21 labeled axons in the triple Slit1-/-;Slit2-/-; Ntn1β/β mutants have two branches (Figure 4C and G). Since bifurcation remains nearly intact at this age for all these mutants, we conclude neither Ntn1 nor Slit is required for the formation of two branches.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig4-v1.jpg)
 
-**Figure 4.:** Slit and Ntn1 mutants.(A–C) Single cell DiI labeling of DRG axons in open book preparations (A) of spinal cords isolated from E12.5 WT (B) and Slit1 (-/-;Slit2-/-;Ntn1β/βC) animals. Maximum z-projection are depth color coded (~45 μm represented by the color bar) with multiple bifurcating axons visible in the field of view. Arrows point to misprojecting fibers and green “V” indicates the location of bifurcation junctions. (D–G) Skeletonized tracings of DiI labeled axons from embryos with various genotypes. WT axons show stereotyped T-bifurcation along the DREZ (D, n=4 animals). Axons in Slit1 mutants overshoot the DREZ (-/-;Slit2-/-E, n=3 animals). In Ntn1 mutant embryos, axons stray from the DREZ and have disrupted turns along the DREZ (F, n=5 animals). Axons in β/βSlit1 triple mutants are completely disorganized around the DREZ (-/-;Slit2-/-;Ntn1β/βG, n=2 animals). Dashed lines in D show the angle (θ) measurement. (H–J) Quantification of the turning angle of bifurcated branches along the DREZ (H) from single axon labeling above showed the mean raw angles are similar for all genotypes (one way ANOVA F(3,114)=0.8229, p=n .s.). However, the deviation of raw angles from the average was significantly different among different genotypes (I). One way ANOVA with Tukey’s Post-hoc for multiple comparisons ([F(3,114)=15.97, p<0.0001]): WT and Slit1, p<0.0001; -/-;Slit2-/-;Ntn1β/βSlit1and -/-;Slit2-/-Slit1, p=0.0001; and -/-;Slit2-/-;Ntn1β/βNtn1 and β/βSlit1, p<0.0001. Additionally, the angle difference between the two branches showed significantly difference among genotypes (-/-;Slit2-/-;Ntn1β/βJ). One way ANOVA with Tukey’s Post-hoc for multiple comparisons ([F(3,114)=12.99, p<0.0001]): WT and Slit1, p<0.0001; -/-;Slit2-/-;Ntn1β/βSlit1and -/-;Slit2-/-Slit1, p=0.0004; and -/-;Slit2-/-;Ntn1β/βNtn1 and β/βSlit1, p=0.0001. Only the comparison between the triple mutants and other genotypes are shown here. *** p<0.001, **** p<0.0001, ns: not significant. Bars: 100 μm.-/-;Slit2-/-;Ntn1β/βFigure 4—source data 1.Figure 4H), angle deviation (Figure 4I), and angle difference (Figure 4J).
+**Figure 4.:** (A–C) Single cell DiI labeling of DRG axons in open book preparations (A) of spinal cords isolated from E12.5 WT (B) and Slit1-/-;Slit2-/-;Ntn1β/β (C) animals. Maximum z-projection are depth color coded (~45 μm represented by the color bar) with multiple bifurcating axons visible in the field of view. Arrows point to misprojecting fibers and green “V” indicates the location of bifurcation junctions. (D–G) Skeletonized tracings of DiI labeled axons from embryos with various genotypes. WT axons show stereotyped T-bifurcation along the DREZ (D, n=4 animals). Axons in Slit1-/-;Slit2-/- mutants overshoot the DREZ (E, n=3 animals). In Ntn1β/β mutant embryos, axons stray from the DREZ and have disrupted turns along the DREZ (F, n=5 animals). Axons in Slit1-/-;Slit2-/-;Ntn1β/β triple mutants are completely disorganized around the DREZ (G, n=2 animals). Dashed lines in D show the angle (θ) measurement. (H–J) Quantification of the turning angle of bifurcated branches along the DREZ (H) from single axon labeling above showed the mean raw angles are similar for all genotypes (one way ANOVA F(3,114)=0.8229, p=n .s.). However, the deviation of raw angles from the average was significantly different among different genotypes (I). One way ANOVA with Tukey’s Post-hoc for multiple comparisons ([F(3,114)=15.97, p<0.0001]): WT and Slit1-/-;Slit2-/-;Ntn1β/β, p<0.0001; Slit1-/-;Slit2-/-and Slit1-/-;Slit2-/-;Ntn1β/β, p=0.0001; and Ntn1β/β and Slit1-/-;Slit2-/-;Ntn1β/β, p<0.0001. Additionally, the angle difference between the two branches showed significantly difference among genotypes (J). One way ANOVA with Tukey’s Post-hoc for multiple comparisons ([F(3,114)=12.99, p<0.0001]): WT and Slit1-/-;Slit2-/-;Ntn1β/β, p<0.0001; Slit1-/-;Slit2-/-and Slit1-/-;Slit2-/-;Ntn1β/β, p=0.0004; and Ntn1β/β and Slit1-/-;Slit2-/-;Ntn1β/β, p=0.0001. Only the comparison between the triple mutants and other genotypes are shown here. *** p<0.001, **** p<0.0001, ns: not significant. Bars: 100 μm.
 
-## Single axon analysis supports that Ntn1 and Slit are involved in different aspects of guidance at the DREZ
+### Single axon analysis supports that Ntn1 and Slit are involved in different aspects of guidance at the DREZ
 
 The DiI analysis also allowed us to analyze additional features of bifurcating DRG sensory axons. We examined the single axon trajectories by measuring and comparing two angles between the two branches and the primary axons (Figure 4D). In WT animals, the angle of bifurcation is on average 115.4° (Figure 4H), consistent with a more curved trajectory of bifurcation at this age. The average deviation is 10.2° (Figure 4I) and the difference between two angles from the same axons is 11.8 ° (Figure 4J), indicating similar projection patterns for the two bifurcated branches. In Slit1-/-;Slit2-/- mutant embryos (Figure 4E), some branches turn normally into the DREZ, while others often fail to properly turn but instead overshoot into the spinal cord, as portrayed by a relatively straight trace. When analyzed together, the average angle is 118.9°, only marginally larger than WT (Figure 4H), but the angle deviation is increased to 19.5° and the angle difference to 31.6 ° (Figure 4I and J), reflecting misguidance of one of the two branches (Figure 4I) and consistent with the previous finding (Ma and Tessier-Lavigne, 2007). A similar angle difference was found in Ntn1β/β mutant embryos (Figure 4F). The average angle of bifurcation is ~108.0° (Figure 4H) with a deviation of 17.5° (Figure 4I) and a difference of 31.8°. However, analysis of Slit1-/-;Slit2-/-; Ntn1β/β triple mutants (Figure 4G) reveals an enhanced defect with highly deviated trajectories. Although the average angle is 110.7°, similar to that of WT (Figure 4H), nearly all branches are deviated from the average angle by a margin of 37.8°, significantly different from that seen in either Slit1;Slit2 or Ntn1 mutants (Figure 4I). Some branches in the triple mutants even overshoot the DREZ with 180° angles, turn with a drastic kink, or have an altered axis of turning in the DREZ (Figure 4G). As a result, the angle difference is increased dramatically in the triple mutants, reaching 74.6° (Figure 4J). Taken together, these results demonstrate the additive roles of Ntn1 and Slit, suggesting that the guidance of the two branches has different requirements of Ntn1 and Slit.
 
-## Role of DCC and Robo receptors in DRG axon guidance during dorsal funiculus formation
+### Role of DCC and Robo receptors in DRG axon guidance during dorsal funiculus formation
 
 To further demonstrate the requirement of the two extracellular signals in guiding DRG sensory axons during bifurcation, we examined mice lacking the Ntn1 receptor DCC, which was previously shown to have a late-ingrowth defect (Ding et al., 2005). DCC is expressed at low levels in the DRG by in situ analysis (Faure et al., 2020; Figure 5—figure supplement 1), and recent analysis by single cell RNAseq suggests DCC is expressed in a subset of sensory neurons (Faure et al., 2020). Using wholemount analysis of E10.5 Dcc mutants, we found similar misprojections as those in Ntn1 mutants (Figure 5A and B, arrows). Since the deletion of the Slit receptor Robo1 and Robo2 results in the same overshooting error as the loss of Slit1 and Slit2 (Ma and Tessier-Lavigne, 2007), we next generated a triple mutant lacking all three receptors (Robo1--/--;Robo2--/--;Dcc-/-). Fluorescent labeling of sensory axons in E10.5 wholemount embryos reveals extensive dorsal misprojections that fail to form axonal bundles of the dorsal funiculus in the triple mutant when compared with the littermate control (Figure 5C and D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) Inverted fluorescent images of NF staining in CUBIC-cleared E10.5 embryos viewed from the lateral side in the forelimb region. WT (A, n=3) have relatively few axons straying from the dorsal funiculus (boxed region). Purple arrows denote sensory misprojections found in Robo1-/-;Robo2-/--;Dcc+/+ embryos (C, n=2) or DCC-/- (B, n=6). In Robo1-/-;Robo2-/-;Dcc-/- mutants (D, n=3), the dorsal funiculus is completely lost and disorganized with axons wandering into the dorsomedial region of the spinal cord. (E–H) Inverted fluorescent images of NF staining in the cross section of E11.5 embryos with various genotypes. Orange arrows indicate horizontal misprojections inside the spinal cord found in Robo1-/-;Robo2-/- mutants and blue arrows indicate dorsal misprojections along the pial surface associated with Dcc-/- mutants. Lines with arrow at both ends (blue) indicate the distance between dorsal misprojections to the midline. (I–J) Quantification of dorsal and horizontal misprojections based on the distance from the roof plate to the DREZ (I, blue bars, n=3, except n=4 for WT) and the total length of horizontal fibers (J, orange bars, n=3). Statistics from one-way ANOVA analysis: for dorsal fiber distance in I, WT vs. R1-/-;R2-/- p=0.0008; WT vs. DCC-/- p=0.0001; WT vs. R1-/-;R2-/-; DCC-/- p<0.0001; for dorsal fiber length in J, WT vs. R1-/-;R2-/- p=0.0010; WT vs. DCC-/- p=0.0054; WT vs. R1-/-;R2-/-; DCC-/- p<0.0001. ** p<0.01; *** p<0.001; **** p<0.0001, ns: not significant. Bars: 100 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94109/elife-94109-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Dark field images of in situ hybridization using 35S-labeled mRNA probes in cross sections (16 μm) of mouse spinal cords from E10.5 and E11.5 embryos. Dcc is expressed mainly inside the spinal cord and weakly in the DRG (*). FP: floor plate.
 
 To characterize the misprojections quantitatively, we examined E11.5 spinal cord transverse-sections and found the same two types of NF-labeled misprojections seen in mutants lacking Slit and Ntn1 above (Figure 3). In Robo1-/-;Robo2--- mutant embryos (Figure 5G), , the DREZ still forms but some fibers invade the spinal cord with straight trajectories that shoot horizontally in the dorsal spinal cord (Figure 5I), similar to that in Slit1-/-;Slit2-/- cross sections (Figure 3). In Dcc-/- only mutants, the DREZ still forms and the NF-labeled fibers misproject upward along the pial layer (Figure 5F), leading to a reduced distance between the midline and the DREZ (Figure 5I), similar to the Ntn1 phenotype (Figure 1L and M). In Robo1--/--;Robo2--/--;Dcc-/- triple mutants, two types of misprojecting fibers are found, similar to those in Slit1-/-;Slit2-/-;Ntn1β/β embryos (Figure 3). Both misprojections originate from the DREZ, but some stay dorsally on top of the pial surface (Figure 5F and H) while others enter the spinal cord horizontally (Figure 5G and H, arrows). When quantified, mice lacking either Robo1;Robo2 or DCC have similar total lengths of horizontal misprojections, but the triple mutants have increased total lengths, reflecting an increased number of misprojections (Figure 5J). In addition, the gap between the dorsal misprojections and the midline seems to be reduced significantly in all mutants (Figure 5I). These phenotypes are similar to those found in the analysis of Slit1;Slit2 and Ntn1 mutants above (Figure 3), thus demonstrating that loss of either the ligand or the receptor of both signaling systems has the same impact on DRG axon guidance at the DREZ.
 
@@ -96,13 +120,13 @@ To characterize the misprojections quantitatively, we examined E11.5 spinal cord
 
 Our in vivo analysis of two guidance pathways has identified multiple guidance mechanisms that shape DRG axons bifurcation when forming the dorsal funiculus in the DREZ. We show that development of this stereotyped T-shaped structure requires both Ntn1 and Slit, which regulate different aspects of guidance during bifurcation. These results demonstrate the presence of multiple mechanisms to ensure the proper formation of the dorsal funiculus, a structure that is essential to sensory function in the mammalian spinal cord (Light, 1988).
 
-## Ntn1 signaling is required for guiding bifurcating DRG axons in the DREZ
+### Ntn1 signaling is required for guiding bifurcating DRG axons in the DREZ
 
 Our analysis of mouse mutants lacking the secreted molecule Ntn1 expanded previous observation of a spinal cord ingrowth defect that was interpreted as the function of Ntn1 in a critical ‘waiting period’ before DRG axons sprout collateral branches (Watanabe et al., 2006). However, our study showed that loss of this molecular pathway also leads to a profound guidance error at the time of bifurcation, as misprojecting axons were found as early as E10.5, when the dorsal funiculus first forms (Figure 1). The misprojecting axons do not stop at the DREZ but instead project more dorsally along the pial surface with random paths, supporting the idea that Ntn1 is needed for proper guidance of DRG afferents right at the time when they bifurcate in the DREZ. The origin of the misprojections is confirmed to come from DRG neurons by both genetic labeling using Neurog1-CreERT2 (Figure 2) and DiI labeling (Figure 4). Single axon labeling by both methods further demonstrates the guidance role of Ntn1, which is different from what was suggested by previous studies (Masuda et al., 2008; Watanabe et al., 2006). In these studies, DRG axons were found to enter from the ventral side of the DREZ in the medial spinal cord, leading to the proposal that Ntn1 blocks the DRG axons from entering the spinal cord when they initially arrive at the DREZ. Our data demonstrate that Ntn1 is required for guidance as well, but Ntn1 acts on bifurcating axons to guide their growth along the DREZ and loss of Ntn1 causes misprojections to exit the dorsal side of the DREZ (Figure 1). Moreover, single axon DiI labeling at a later stage rules out the requirement of Ntn1 in bifurcation as the majority of DRG axons in Ntn1 mutants still form two branches (Figure 4). This is an important conclusion as premature entrance into the spinal cord could interfere or delay bifurcation, which was not analyzed previously (Masuda et al., 2008; Watanabe et al., 2006). Interestingly, both dorsal and medial misprojections were observed in the recent studies of the embryo with complete Ntrn1 deletion (Moreno-Bravo et al., 2019; Varadarajan and Butler, 2017; Wu et al., 2019), suggesting that Ntn1 may play multiple guidance roles. Regardless, our single axon analysis (Figures 2 and 4) demonstrates that Ntn1 exerts its guidance function on DRG axons at the time of bifurcation.
 
 The guidance function is further supported by the similar defect found in mice lacking the Ntn1 receptor DCC (Figure 5). This DCC function is reminiscent to that found in zebrafish DRG axons, which require proper DCC signaling to control actin-mediated invadopodia during the initial entry into the spinal cord (Kikel-Coury et al., 2021). There are two possible mechanisms. One is that Ntn1 proteins present locally outside the DREZ (Figure 1—figure supplement 1; Serafini et al., 1996) provides a permissive cue that encourage the growth of newly bifurcated branches but restrict their trajectory within the DREZ, similar to the recently described role for Ntn1 in confining pontine neuron migration (Yung et al., 2018). Such a permissive function matches with the proposed adhesion function of DCC (Meijers et al., 2020). Alternatively, it is possible that the guidance function is mediated by a repulsive action of Ntn1, which can be mediated by both DCC and the repulsive receptor Unc5C. This is supported by Unc5C expression in DRG neurons as well as the repulsive activity of Ntn1 on E11.5 and E13.5 DRG axons in vitro (Masuda et al., 2008; Watanabe et al., 2006). Thus, it would be interesting to re-examine Unc5C mutants and determine its role during DRG axon bifurcation and distinguish these potential mechanisms for Ntn1 signaling. Regardless, our studies demonstrate a key role for Ntn1 signaling in DRG axon guidance right after bifurcation at the DREZ.
 
-## Multiple mechanisms are present to regulate DRG axon guidance during bifurcation
+### Multiple mechanisms are present to regulate DRG axon guidance during bifurcation
 
 One striking result from our studies is the complete disorganization and the loss of axonal bundles in the dorsal funiculus when both Slit and Ntn1 pathways are impaired. This is reflected by the severe sensory misprojections in triple mutants lacking all three genes, Ntn1, Slit1, and Slit2, in which nearly all DRG axons leave the DREZ and grow medially into the dorsal spinal cord (Figure 3). Similar problems were found in mice lacking the receptors for both pathways (Figure 5). To our knowledge, this is the first report of such a severe defect of the dorsal funiculus.
 
@@ -114,7 +138,7 @@ Building on a collateral-couple repulsion model we proposed earlier (Gibson and 
 
 **Figure 6.:** A working model for the role of Slit and Ntn1 in regulating branch guidance at two different steps during bifurcation. The primary axon of the central projection from DRG neurons first extends toward the dorsal spinal cord. After reaching the DREZ, the axon is turned by Slit into the rostrocaudal direction. After forming the second branch stimulated by CNP, the two bifurcated axons continue to grow along the DREZ with their trajectories regulated by a Ntn1-dependent guidance mechanism.
 
-## New insights of guidance regulation at the DREZ
+### New insights of guidance regulation at the DREZ
 
 The guidance function of Ntn1 and Slit has been well studied in midline guidance (Chédotal, 2019), but guidance regulation of DRG axons at the DREZ is less well understood. It is worth noting that midline crossing is defined by the floor plate, a structure that is formed during early spinal cord development and which serves as an intermediate target (Chédotal, 2019). However, in our view, the DREZ is an evolving structure that is not defined by any preexisting cell types. Rather, the DREZ is constructed at the location where DRG sensory axons first bifurcate, a process that involves the interaction of the DRG central axons with the cells in the dorsal spinal cord. This is best illustrated by the recent time-lapse imaging in the live zebrafish spinal cord, where the growth cone of pioneer DRG sensory neurons uses actin-rich filopodia and invadopodia to interact with the glial environment and brake axon growth at the future DREZ (Kikel-Coury et al., 2021; Nichols and Smith, 2019). Interestingly, DCC signaling was shown to control invadopodia stabilization during this precise guidance event, pointing to a critical role of the interaction between DRG axons and the local environment when entering the spinal cord (Kikel-Coury et al., 2021). Although our phenotype is consistent with this critical role, future live cell imaging is needed to examine how growth cones of rodent DRG axons are regulated to coordinate growth, guidance, and bifurcation during DREZ development. Nonetheless, our identification of the role of extracellular cues like Slit, Ntn1, and CNP (Ma and Tessier-Lavigne, 2007; Zhao and Ma, 2009) supports the hypothesis that both formation of the second branch and guidance of both bifurcated branches are critical to establishing the DREZ.
 
@@ -122,11 +146,126 @@ In addition to these extracellular cues, it has been suggested that sensory axon
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Neurog1:CreERT2</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008529</td>
+      <td>A BAC transgenic mouse strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Ai14(tdTomato)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td>A knock-in mouse strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Ntn1β/β</td>
+      <td>Serafini et al., 1996</td>
+      <td>RRID:MMRRC_030660-UCD</td>
+      <td>A gene trap mouse strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Slit1;Slit2</td>
+      <td>Plump et al., 2002</td>
+      <td>RRID:MMRRC_030404-MU</td>
+      <td>A knock-out mouse strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Dcc</td>
+      <td>Fazeli et al., 1997</td>
+      <td>RRID:MMRRC_030626-MU</td>
+      <td>A knock-out mouse strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>Robo1;Robo2</td>
+      <td>Ma and Tessier-Lavigne, 2007</td>
+      <td>RRID:MMRRC_030747-MU</td>
+      <td>A knock-out mouse strain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-neurofilament (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 2H3,RRID:AB_531793</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (Rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379, RRID:AB_2209751</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5-AffiniPure Donkey Anti-Mouse IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-175-150 RRID:AB_2340819</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 711-165-152, RRID:AB_2307443</td>
+      <td>(IF1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dil</td>
+      <td>Invitrogen</td>
+      <td>Cat# D282</td>
+      <td>0.5% in ethanol</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM 10</td>
+      <td>GraphPad</td>
+      <td>RRID: SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_013673</td>
+      <td>https://www.leica-microsystems.com/products/microscope-software/details/product/leica-las-x-ls/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithim</td>
+      <td>FIJI</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://fiji.sc</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 All animal procedures followed the Guidelines for the Care and Use of Laboratory Animals of the National Institutes of Health and the approved IACUC protocols of the Thomas Jefferson University (#01558 and #01559) and of the Brown University (#21-12-0006). Mice were maintained in a CD-1 background. Timed pregnancies were determined based on vaginal plugs and the first date was designated as E0.5. Mutant alleles for Ntn1, Dcc, Slit1, Slit2 and Robo1;Robo2 were described previously (Fazeli et al., 1997; Ma and Tessier-Lavigne, 2007; Plump et al., 2002; Serafini et al., 1996). The transgenic allele Neurog1-CreERT2 that express CreERT2 recombinase from the Neurogenin-1 promoter was described (Koundakjian et al., 2007) and the Cre-reporter, Ai14(tdTomato), that expresses the red fluorescent protein tdTomato from a CAG promoter was described (Madisen et al., 2010). Homozygous Ntn1β/β mutants were generated from heterozygous sires and dams. To obtain Slit1-/-;Slit2-/-;Ntn1β/β triple mutants, mice carrying a single copy of Slit2 and Ntn1 mutant allele in the Slit1-/- background were first generated and then used to obtain triple mutants. Genotyping of Slit1, Slit2, Robo1, Robo2 and Dcc was done by PCR as previously described (Fazeli et al., 1997; Ma and Tessier-Lavigne, 2007; Plump et al., 2002); genotyping of Ai14(tdTomato) and Neurog1:CreERT2 was done by PCR using primers recomended by the Jackson Laboratory. For Ntn1 genotyping, the intensity and kinetics of lacZ staining of embryonic tails were used to determine the copy number of the mutant allele and the resulting Ntn1β/β mutant exhibited consistent midline crossing phenotype described previously (Serafini et al., 1996). For tdTomato labeling of DRG axons, pregnant dams at E9.5 were administered via oral gavage a dose of tamoxifen solution (0.5 mg / 50 µl) diluted in peanut oil that was warmed at 37 °C. Following dissection, tdTomato fluorescent expression was screened using an epifluorescent microscope.
 
-## Immunohistochemistry, tissue clearing, and imaging
+### Immunohistochemistry, tissue clearing, and imaging
 
 Embryos (E10.5-E11.5) were fixed overnight in 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS). For wholemount immunostaining, embryo samples were pretreated with methanol dehydration, bleached in 10% hydrogen peroxide o/n at 4 °C, then subject to the reverse MeOH gradient re-rehydration treatment followed by staining based on either iDISCO or CUBIC protocols (Renier et al., 2014; Susaki et al., 2014; Tainaka et al., 2014).
 
@@ -142,15 +281,15 @@ To detect tdTomato expression, rabbit anti Red Fluorescent Protein (RFP) polyclo
 
 HRP staining in wholemount embryos followed previously described method (Ma and Tessier-Lavigne, 2007). Embryos were bleached with hydrogen peroxide overnight, incubated with primary antibodies and then HRP-conjugated secondary antibodies. After converting the 3,3'-diaminobenzidine (DAB) substrate to brownish deposit around labeled axons, the embryos were cleared in a BA/BB solution (benzylalcohol:benzylbenzonate, 2:1) (Huber et al., 2005), and imaged by the Spot II-RT camera mounted on a Stemi-6 stereoscope (Zeiss, Inc).
 
-## DiI labeling of DRG axons in the spinal cord
+### DiI labeling of DRG axons in the spinal cord
 
 For single neuron labeling by DiI, embryos were fixed in 4% PFA and then cut open from the ventral side to expose the DRG. A small dye crystal was delivered to the DRG from an ethanol solution of DiI (0.5%) in a glass pipette (1 μm opening) by iontophoresis with a current of ~5–20 mA as previously described (Ma and Tessier-Lavigne, 2007). The dye was allowed to diffuse at 25 °C overnight. The floorplate of the spinal cord was cut to create an open-book, which was then laid down in an imaging chamber with the lateral side down. The labeled axons were imaged on a Leica SP8 confocal microscope at 20 X objective (NA = .4). Maximum projections were traced and skeletonized in ImageJ using the Neurotrace plugin.
 
-## In situ hybridization
+### In situ hybridization
 
 Cryosections (16 μm) of E10.5 and E11.5 mouse embryos were processed for in situ analysis following a published procedure (Ma and Tessier-Lavigne, 2007). 35S-labeled probes were generated using the following published templates for Netrin-1 (Serafini et al., 1996). Dark field images were taken on a Zeiss compound microscope.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Embryos with different genotypes were collected from the same litters and subjected to the immunohistochemical analysis described above. Image comparison was done in the same spinal cord region of embryos with the same age and similar body size. The number of animals analyzed is listed in the figure legends.
 
@@ -162,6 +301,6 @@ To quantify DiI labeled single axons, clearly visible axons were first divided i
 
 For all statistical analysis, a minimum of three mice were analyzed. All data are expressed as Mean ± Standard Error of the Mean (SEM), and statistical values are included in figure legends.
 
-## Note
+### Note
 
 Andrea Yung is now affiliated with Genentech; all her work for this manuscript was conducted while affiliated with Harvard Medical School.

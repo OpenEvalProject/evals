@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01y1kjr75 National Key Laboratory of Intelligent Tracking and Forecasting for Infectious Diseases, TEDA Institute of Biological Sciences and Biotechnology, Nankai University Tianjin China
+1. National Key Laboratory of Intelligent Tracking and Forecasting for Infectious Diseases, TEDA Institute of Biological Sciences and Biotechnology, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
 
 † Corresponding author
 
 ## Abstract
 
-Salmonella is a major foodborne pathogen that can effectively replicate inside host macrophages to establish life-threatening systemic infections. Salmonella must utilize diverse nutrients for growth in nutrient-poor macrophages, but which nutrients are required for intracellular Salmonella growth is largely unknown. Here, we found that either acquisition from the host or de novo synthesis of a nonprotein amino acid, β-alanine, is critical for Salmonella replication inside macrophages. The concentration of β-alanine is decreased in Salmonella -infected macrophages, while the addition of exogenous β-alanine enhances Salmonella replication in macrophages, suggesting that Salmonella can uptake host-derived β-alanine for intracellular growth. Moreover, the expression of panD, the rate-limiting gene required for β-alanine synthesis in Salmonella, is upregulated when Salmonella enters macrophages. Mutation of panD impaired Salmonella replication in macrophages and colonization in the mouse liver and spleen, indicating that de novo synthesis of β-alanine is essential for intracellular Salmonella growth and systemic infection. Additionally, we revealed that β-alanine influences Salmonella intracellular replication and in vivo virulence partially by increasing expression of the zinc transporter genes znuABC , which in turn facilitates the uptake of the essential micronutrient zinc by Salmonella . Taken together, these findings highlight the important role of β-alanine in the intracellular replication and virulence of Salmonella , and panD is a promising target for controlling systemic Salmonella infection.
+Salmonella is a major foodborne pathogen that can effectively replicate inside host macrophages to establish life-threatening systemic infections. Salmonella must utilize diverse nutrients for growth in nutrient-poor macrophages, but which nutrients are required for intracellular Salmonella growth is largely unknown. Here, we found that either acquisition from the host or de novo synthesis of a nonprotein amino acid, β-alanine, is critical for Salmonella replication inside macrophages. The concentration of β-alanine is decreased in Salmonella-infected macrophages, while the addition of exogenous β-alanine enhances Salmonella replication in macrophages, suggesting that Salmonella can uptake host-derived β-alanine for intracellular growth. Moreover, the expression of panD, the rate-limiting gene required for β-alanine synthesis in Salmonella, is upregulated when Salmonella enters macrophages. Mutation of panD impaired Salmonella replication in macrophages and colonization in the mouse liver and spleen, indicating that de novo synthesis of β-alanine is essential for intracellular Salmonella growth and systemic infection. Additionally, we revealed that β-alanine influences Salmonella intracellular replication and in vivo virulence partially by increasing expression of the zinc transporter genes znuABC, which in turn facilitates the uptake of the essential micronutrient zinc by Salmonella. Taken together, these findings highlight the important role of β-alanine in the intracellular replication and virulence of Salmonella, and panD is a promising target for controlling systemic Salmonella infection.
 
 ## Introduction
 
@@ -35,33 +35,95 @@ In this work, using targeted metabolic profiling, in vitro and in vivo infection
 
 ## Results
 
-## Host-derived β-alanine promotes Salmonella replication inside macrophages
+### Host-derived β-alanine promotes Salmonella replication inside macrophages
 
 To explore changes in the levels of different amino acids inside macrophages upon Salmonella infection, we performed targeted metabolomics analysis of mouse RAW264.7 macrophages that were mock-infected or infected with wild-type Salmonella (Salmonella enterica serovar Typhimurium ATCC 14,028 s, STM) for 8 hr using liquid chromatography-tandem mass spectrometry (LC‒MS/MS) (Figure 1A). Principal component analysis (PCA) demonstrated a clear separation between the mock- and Salmonella-infected groups (Figure 1B). A total of 26 free amino acids were analyzed, and eight showed significant differences in abundance between the two groups (VIP (Variable Importance in the Projection) >1 and p<0.05; FC (fold change) > 1.5 or < 0.667) (Figure 1C and D). Compared with those in the mock-infected group, the concentrations of three amino acids (L-hydroxyproline, L-citrulline and L-cysteine) were upregulated (Figure 1C), and five amino acids (L-asparagine, L-serine, L-aspartate, β-alanine and γ-aminobutyric acid) were downregulated (Figure 1D) in the Salmonella-infected group. Consistent with previous findings, intracellular serine concentrations were downregulated due to the reprogramming of macrophage glucose metabolism during Salmonella infection (Jiang et al., 2021). Salmonella can use host-derived aspartate and asparagine for growth in macrophages (Popp et al., 2015); therefore, the decrease in intracellular aspartate and asparagine upon Salmonella infection is likely due to their utilization by bacteria. Interestingly, β-alanine concentrations were also downregulated in the Salmonella-infected group (Figure 1D), suggesting that intracellular Salmonella may use host-derived β-alanine for growth.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic workflow for targeted metabolomics investigation of mock- and Salmonella-infected (STM) mouse RAW264.7 macrophages. Picture materials were used from bioicons (https://bioicons.com/). (B) Principal component analysis (PCA) score plots of metabolic profiles in the mock- and Salmonella-infected (STM) groups (n=4 biologically independent samples). (C) The concentrations of upregulated amino acids in the mock- and Salmonella-infected groups (n=4 biologically independent samples). (D) The concentrations of downregulated amino acids in the mock- and Salmonella-infected groups (n=4 biologically independent samples). (E) Fold intracellular replication (20 hr vs. 2 hr) of Salmonella WT in RAW264.7 cells in the presence of 0.5, 1, 2, 4 mM β-alanine. Data are presented as the mean ± SD, n=3 independent experiments. (F) Growth curves of Salmonella WT and the argT mutant (ΔargT) in N-minimal (left) and M9 minimal (right) medium supplemented with β-alanine (1 mM) as the sole carbon source. Data are presented as mean ± SD, n=4 independent experiments. Statistical significance was assessed using two-sided Student’s t-test (C, D) and one-way ANOVA (E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Data are presented as mean ± SD, n=3 independent experiments. Statistical significance was assessed using a two-sided Student’s t-test. ns, not Significant.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** RAW264.7 cells were infected with Salmonella wild-type (WT) for 8 hr, in the presence or absence of 1 mM β-alanine. Subsequently, the infected cells were collected for flow cytometry analysis. Representative dot plots and quantification of M1 (CD86+) and M2 (CD163+) macrophages are displayed in the left and right panels, respectively. Data are presented as mean ± SD, n=3 independent experiments. Statistical significance was assessed using two-way ANOVA. ns, not Significant.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Data are presented as mean ± SD, n=3 independent experiments.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Data are presented as mean ± SD, n=3 independent experiments.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Data are presented as mean ± SD, n=4 independent experiments. Statistical significance was assessed using two-way ANOVA. ns, not Significant.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** n=5 mice per group. Statistical significance was assessed using the Mann-Whitney U test. ns, not Significant.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Data are presented as mean ± SD, n=3 independent experiments.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Data are presented as mean ± SD, n=3 independent experiments.
 
 To investigate whether host-derived β-alanine can promote intracellular Salmonella replication, we added an additional 0.5, 1, 2, 4 mM β-alanine (Schneider et al., 2004) to the culture medium (RPMI) of RAW264.7 cells and then infected them with Salmonella to test the influence of β-alanine addition on the ability of Salmonella to replicate in macrophages. The results showed that the replication of Salmonella in RAW264.7 cells significantly (p<0.001) increased with the addition of 1, 2, or 4 mM β-alanine (Figure 1E). Furthermore, β-alanine enhanced Salmonella intracellular replication in a dose-dependent manner (Figure 1E). The results suggest that host-derived β-alanine facilitates Salmonella replication inside macrophages. We then investigated whether β-alanine-mediated Salmonella growth promotion is due to the changes in antimicrobial activity of the macrophages. We observed that the addition of 1 mM β-alanine did not influence the ROS (reactive oxygen species) and RNS (reactive nitrogen species) levels in Salmonella-infected RAW264.7 cells (Figure 1—figure supplement 1). Flow cytometry analysis indicated that the addition of 1 mM β-alanine did not affect the percentage of pro-inflammatory M1 macrophages (CD86+) and anti-inflammatory M2 macrophages (CD163+) during Salmonella infection (Figure 1—figure supplement 2), implying that the addition of β-alanine to macrophages does not change their immune response. Combining these results, we can further infer that Salmonella use host-derived β-alanine for intracellular growth.
 
 Direct validation of Salmonella using host-derived β-alanine for intracellular growth requires a mutant that has a defect in β-alanine uptake. Escherichia coli uptakes β-alanine via the transporter protein CycA (Schneider et al., 2004). However, the Salmonella ΔcycA mutant was able to use β-alanine as the sole carbon source for growth in minimal medium (Figure 1—figure supplements 3 and 4), indicating that CycA is not a transporter for β-alanine in Salmonella. Consistent with these results, mutation of cycA did not influence the replication of Salmonella in RAW264.7 cells (Figure 1—figure supplement 5) or colonization in mouse systemic tissues (liver and spleen; Figure 1—figure supplement 6). In E. coli, GabP transports γ-aminobutyric acid (GABA), a structural analog of β-alanine, and may also transport β-alanine (Pavić et al., 2021). Nevertheless, the Salmonella ∆gabP mutant displayed no growth defect in minimal medium with β-alanine as the sole carbon source (Figure 1—figure supplements 7 and 8), indicating that GabP is not involved in β-alanine uptake in Salmonella. Strikingly, the ΔargT mutant—defective in arginine uptake—showed markedly decreased growth in the minimal medium with β-alanine as the sole carbon source (Figure 1F), suggesting that ArgT also transports β-alanine in Salmonella. It has been reported that ArgT is essential for Salmonella replication within macrophages and full virulence in vivo (Das et al., 2010). Given that ArgT is involved in both arginine and β-alanine uptake (as verified in this study), whether the attenuated virulence of the ∆argT mutant is due to a deficiency in β-alanine or arginine requires further investigation.
 
-## De novo β-alanine synthesis is critical for Salmonella replication inside macrophages
+### De novo β-alanine synthesis is critical for Salmonella replication inside macrophages
 
 Salmonella can de novo synthesize β-alanine via the decarboxylation of L-aspartate, which is catalyzed by L-aspartate decarboxylase (PanD) (Figure 2A) and is reportedly the rate-limiting step of β-alanine generation (Begley et al., 2001; Schmitzberger et al., 2003; West et al., 1985). To further assess the role of β-alanine in Salmonella intracellular replication, we analyzed the expression level of the Salmonella panD gene in macrophages and the impact of panD mutation on the ability of Salmonella to replicate in macrophages. Quantitative real-time PCR (qRT‒PCR) assays revealed that the expression level of panD was significantly (p<0.01) greater in RAW264.7 cells than in RPMI-1640 medium (Figure 2B). Increased expression of panD was also observed in N-minimal medium, a widely used medium that mimics the conditions inside macrophages, as revealed by qRT‒PCR and bioluminescent reporter assays (Figure 2C and D). These results demonstrate that panD expression is enhanced during Salmonella growth inside macrophages, suggesting a relationship between panD expression and intracellular Salmonella growth.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig2-v1.jpg)
+
+**Figure 2.:** (A) Scheme of β-alanine and the downstream CoA biosynthesis pathway in Salmonella. (B) Quantitative real-time PCR (qRT‒PCR) analysis of the expression of the Salmonella panD gene in RAW264.7 cells (8 hr post-infection) and RPMI-1640 medium. (C) qRT‒PCR analysis of the expression of the Salmonella panD gene in N-minimal medium and LB medium. (D) Expression of the panD-lux transcriptional fusion in N-minimal medium and LB medium. Luminescence values were normalized to 105 bacterial CFUs. (E) Fold intracellular replication (20 hr vs. 2 hr) of Salmonella Typhimurium 14,028 s wild-type (WT), the panD mutant (ΔpanD), and the complemented strain (cpanD) in RAW264.7 cells. (F) Number of intracellular Salmonella WT, ΔpanD, and cpanD strains per RAW264.7 cell at 2 and 20 hr post-infection. The number of intracellular bacteria per infected cell was estimated in random fields, n=80 cells per group from three independent experiments. (G) Representative immunofluorescence images of Salmonella WT, ΔpanD, and cpanD in RAW264.7 cells at 20 hr post-infection (green, Salmonella; blue, nuclei; scale bars, 50 µm). Images are representative of three independent experiments. (H) Replication of Salmonella WT and ΔpanD in RAW264.7 cells in the presence or absence of 1 mM β-alanine. The data are presented as the mean ± SD, n=3 (B–E, H) independent experiments. Statistical significance was assessed using a two-sided Student’s t-test (B–D) or one-way ANOVA (E, F, H). ns, not Significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Data are presented as mean ± SD, n=4 independent experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Data are presented as mean ± SD, n=4 independent experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Data are presented as mean ± SD, n=4 independent experiments. Statistical significance was assessed using a two-sided Student’s t-test. ns, not Significant.
 
 We then constructed the panD mutant strain ΔpanD and compared the replication ability of the ΔpanD strain and the Salmonella Typhimurium 14,028 s wild-type (WT) strain in RAW264.7 cells. Gentamicin protection assays showed that the replication of ΔpanD in RAW264.7 cells decreased 2.4-fold at 20 hr post-infection compared with that of the WT strain (p<0.001), while complementation of ΔpanD with the panD gene restored the replication ability of the mutant strain in RAW264.7 cells (Figure 2E). Immunofluorescence analysis revealed that the number of ΔpanD in each infected RAW264.7 cell was comparable to that of the WT strain at the initial infection stage (2 hr), but at 20 hr post-infection, the number of ΔpanD in each infected RAW264.7 cell was significantly (p<0.0001) lower than that of the WT strain (Figure 2F and G). These results indicate that panD contributes to Salmonella replication in macrophages. The growth rates of ΔpanD in LB medium and RPMI medium resembled those of the WT (Figure 2—figure supplements 1 and 2), indicating that the impaired intracellular replication ability of the mutant was not due to a growth defect. Moreover, the replication defect of ΔpanD in RAW264.7 cells was relieved by the addition of 1 mM β-alanine to the RPMI medium (Figure 2H). Furthermore, we examined the role of β-alanine synthesis in the intracellular replication of Salmonella within another typical serovar, Salmonella enterica serovar Typhi (S. Typhi), a serovar specific to humans and the causative agent of typhoid fever (de Jong et al., 2012). We found that the replication of S. Typhi ΔpanD in human THP-1 macrophages was reduced by 2.6-fold compared to the S. Typhi Ty2 WT strain (p<0.01) (Figure 2—figure supplement 3), suggesting that panD also facilitates S. Typhi replication within human macrophages.
 
 These data collectively suggest that β-alanine synthesis is critical for Salmonella replication inside macrophages.
 
-## De novo β-alanine synthesis is critical for systemic Salmonella infection in mice
+### De novo β-alanine synthesis is critical for systemic Salmonella infection in mice
 
 As replication in macrophages is a key determinant of systemic Salmonella infection, we reasoned that β-alanine synthesis also influences Salmonella systemic infection in vivo. To determine whether β-alanine influences systemic Salmonella infection, we conducted mouse infection assays using intraperitoneal (i.p.) injection. This method allows Salmonella to disseminate directly to systemic sites via the lymphatic and bloodstream systems, bypassing the need for intestinal invasion (Pandeya et al., 2023; Silva et al., 2016). BALB/c mice were infected by i.p. injection of 5000 CFU of WT, ΔpanD, or the complemented strain cpanD. The survival rate, body weight, bacterial burden in the liver and spleen, and liver histopathological alterations of the infected mice were measured (Figure 3A). The WT-infected mice exhibited high lethality and marked loss of body weight within 5 d, and all mice died within 9 d of infection (Figure 3B and C). In contrast, the ΔpanD-infected mice displayed significantly improved survival rates and body weights, and no mice died within the 10 d surveillance period (Figure 3B and C). Consistent with these results, the bacterial burden in the liver and spleen of the ΔpanD-infected mice was significantly decreased, and the body weight was significantly increased compared with that of the WT-infected mice on day 3 post-infection (Figure 3D). Complementation of ΔpanD with panD significantly decreased the survival rate and body weight of infected mice but significantly increased the bacterial burden in the liver and spleen of the infected mice (Figure 3B–D). Through immunofluorescence staining, we examined the bacterial count in liver macrophages of mice infected with WT, ΔpanD, and complemented strain. The results showed that the bacterial count in each macrophage from ΔpanD-infected mice was significantly (P<0.0001) lower than that in WT-infected mice, on day 5 post-infection. Complementation of ΔpanD with panD restored the bacterial count in each macrophage to WT level (Figure 3E). Furthermore, H&E staining revealed increased aggregation of inflammatory cells and pyknosis in the livers of the WT-infected mice on day 5 post-infection, while these histopathological alterations were obviously reduced in the livers of ΔpanD-infected mice (Figure 3F). Taken together, these results reveal that β-alanine synthesis is critical for systemic Salmonella infection in mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig3-v1.jpg)
 
-**Figure 3.:** Salmonella infection in mice.(A) Schematic illustration of the mouse infection assays. Picture materials were used from bioicons (https://bioicons.com/). (B, C) Survival curves (B) and body weight dynamics (C) of mice infected i.p. with Salmonella wild-type (WT), ΔpanD, or cpanD. n=10 randomly assigned mice per group. (D) Liver and spleen bacterial burdens and body weights of mice infected with Salmonella WT, ΔpanD, or cpanD on day 3 post-infection. n=7 randomly assigned mice per group. (E) Representative immunofluorescence images and intracellular bacterial counts of Salmonella WT, ΔpanD, and cpanD in mouse liver at 5 d post-infection (green, Salmonella; blue, nuclei; scale bars, 50 µm). Images are representative of three independent experiments. The number of intracellular bacteria per infected cell was estimated in random fields, with n=80 cells per group from three independent experiments. (F) Representative H&E-stained liver sections from mice that were left uninfected or infected with Salmonella WT, ΔpanD, or cpanD on day 5 post-infection. Arrows indicate severe inflammatory cell infiltration in the mouse liver. Images are representative of three independent experiments. The data are presented as the mean ± SD (B–E). Statistical significance was assessed using the log-rank Mantel–Cox test (B), two-sided Student’s t-test (C), or one-way ANOVA (D, E).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Schematic illustration of the mouse infection assays. Picture materials were used from bioicons (https://bioicons.com/). (B, C) Survival curves (B) and body weight dynamics (C) of mice infected i.p. with Salmonella wild-type (WT), ΔpanD, or cpanD. n=10 randomly assigned mice per group. (D) Liver and spleen bacterial burdens and body weights of mice infected with Salmonella WT, ΔpanD, or cpanD on day 3 post-infection. n=7 randomly assigned mice per group. (E) Representative immunofluorescence images and intracellular bacterial counts of Salmonella WT, ΔpanD, and cpanD in mouse liver at 5 d post-infection (green, Salmonella; blue, nuclei; scale bars, 50 µm). Images are representative of three independent experiments. The number of intracellular bacteria per infected cell was estimated in random fields, with n=80 cells per group from three independent experiments. (F) Representative H&E-stained liver sections from mice that were left uninfected or infected with Salmonella WT, ΔpanD, or cpanD on day 5 post-infection. Arrows indicate severe inflammatory cell infiltration in the mouse liver. Images are representative of three independent experiments. The data are presented as the mean ± SD (B–E). Statistical significance was assessed using the log-rank Mantel–Cox test (B), two-sided Student’s t-test (C), or one-way ANOVA (D, E).
 
-## β-Alanine is involved in the regulation of several metabolic pathways in Salmonella
+### β-Alanine is involved in the regulation of several metabolic pathways in Salmonella
 
 To explore the mechanism(s) associated with β-alanine-mediated promotion of Salmonella replication in macrophages and in vivo virulence, we performed RNA sequencing (RNA-seq) to reveal the differences in gene transcripts between Salmonella WT and ΔpanD strains grown in N-minimal medium. PCA plot of the global transcriptomic profiles clearly demonstrated separation between the WT and ΔpanD strains (Figure 4A). Remarkable transcriptional changes were observed due to the mutation of panD. Compared with those in the WT strain, 1379 genes were differentially expressed in the ΔpanD strain, with 561 upregulated genes and 618 downregulated genes (fold change ≥2 and p-value <0.05; Figure 4B). Gene Ontology (GO) enrichment analysis revealed that the differentially expressed genes (DEGs) were mainly involved in the metabolism and biosynthesis of several amino acids (including arginine, leucine, histidine, and branched amino acids), carboxylic acid metabolism, small molecule biosynthesis, and aerobic respiration (Figure 4C). Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis also revealed a high frequency of terms related to metabolism, including amino acid metabolism, lipid metabolism, carbohydrate metabolism, energy metabolism, and nucleotide metabolism (Figure 4D). These data collectively indicate that β-alanine is involved in the regulation of a series of metabolic pathways in Salmonella.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig4-v1.jpg)
+
+**Figure 4.:** (A) Principal component analysis (PCA) score plots of transcriptomic profiles of Salmonella wild-type (WT) and ΔpanD (n=3 biologically independent samples). (B) Volcano plot of the differentially expressed genes (DEGs) in Salmonella WT versus ΔpanD. The upper right section (red dots) indicates the upregulated DEGs, and the upper left section (green dots) indicates the downregulated DEGs. (C) Gene Ontology (GO) enrichment analysis of DEGs. Bubble chart showing the top 20 enriched Gene Ontology (GO) terms. (D) Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis of DEGs. (E) Expression of the downregulated pathways (activated by PanD) is shown in the Z score-transformed heatmap, with red representing higher abundance and blue representing lower abundance. (F) Quantitative real-time PCR (qRT‒PCR) analysis of the mRNA levels of 16 selected downregulated DEGs in Salmonella WT, ΔpanD, and cpanD. The data are presented as the mean ± SD, n=3 independent experiments. Statistical significance was assessed using two-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig4-figsupp3-v1.jpg)
 
 Further analysis of the downregulated DEGs (activated by PanD) revealed that mutation of panD decreased the expression of genes involved in even pathways that are associated with the virulence of Salmonella or other bacterial pathogens, including methionine metabolism, fatty acid β-oxidation, histidine biosynthesis, and the transport of zinc, galactose, potassium, and polyamine (Figure 4E). Zinc and potassium uptake are associated with the virulence of Salmonella (zinc acquisition promotes Salmonella Typhimurium virulence in mice, and potassium acquisition promotes Salmonella Enteritidis virulence in chickens) (Ammendola et al., 2007; Battistoni et al., 2017; Ilari et al., 2016; Liu et al., 2013), while the remaining 5 pathways are involved in the pathogenicity of other pathogens (Basavanna et al., 2013; Paiva et al., 2016; Feldman et al., 2016; Lauriano et al., 2004; Martínez-Guitián et al., 2019). In addition, the expression of the LysR-type transcriptional regulator LeuO, which activates the expression of the leuABCD leucine synthesis operon and numerous virulence genes in Salmonella Typhimurium (Dillon et al., 2012; Guadarrama et al., 2014; Hernández-Lucas et al., 2008), was also downregulated in the ΔpanD strain (Figure 4E). In line with the decreased expression of leuO, the expression of leuABCD was downregulated in the ΔpanD strain (Figure 4E).
 
@@ -71,13 +133,13 @@ Salmonella pathogenesis largely depends on virulence genes encoded by Salmonella
 
 Taken together, these data suggest that β-alanine might promote Salmonella intracellular replication and virulence by activating virulence-associated pathway(s) or activating the virulence-associated regulator LeuO, rather than by activating the expression of virulence genes encoded within pathogenicity islands.
 
-## β-alanine promotes Salmonella virulence in vivo partially by increasing the expression of zinc transporter genes
+### β-alanine promotes Salmonella virulence in vivo partially by increasing the expression of zinc transporter genes
 
 Next, we inactivated the seven downregulated pathways mentioned above, as well as the regulatory gene leuO in Salmonella, to uncover the mechanism(s) by which β-alanine promotes Salmonella virulence in vivo. Mouse infection assays revealed that mutations in fadAB, metR, hisABCDFGHL, kdpABC, mglABC, and potFGHI, which are associated with fatty acid β-oxidation, methionine metabolism, histidine biosynthesis, potassium uptake, galactose uptake, and polyamine uptake, respectively, did not influence Salmonella colonization in the mouse liver or spleen (Figure 5A and B) or the body weight of infected mice (Figure 5C). Interestingly, although LeuO has been reported to be associated with the regulation of a diverse set of virulence factors (Dillon et al., 2012; Guadarrama et al., 2014), mutation of the regulatory gene leuO did not influence Salmonella colonization in the mouse liver or spleen (Figure 5A and B) or the body weight of infected mice (Figure 5C). In contrast, mutation of the zinc transporter gene znuA significantly decreased Salmonella colonization in the mouse liver and spleen (Figure 5D, left and middle panels); this result is consistent with previous studies (Ammendola et al., 2007; Battistoni et al., 2017; Ilari et al., 2016). Accordingly, the body weight of ΔznuA-infected mice was significantly (p<0.001) greater than that of the WT-infected mice (Figure 5D, right panel). These results indicate that β-alanine might promote Salmonella virulence in vivo by promoting zinc uptake.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig5-v1.jpg)
 
-**Figure 5.:** Salmonella virulence in vivo partially by increasing the expression of zinc transporter genes.(A, B, C) Liver (A) and spleen (B) bacterial burdens and body weight (C) of mice infected with Salmonella wild-type (WT), ΔfadAB, ΔmetR, ΔhisABCDFGHL, ΔkdpABC, ΔmglABC, ΔpotFGHI, or ΔleuO on day 3 post-infection. n=5 mice per group. (D) Liver and spleen bacterial burdens and body weights of mice infected with Salmonella WT, ΔpanD, ΔznuA or ΔpanDΔznuA on day 3 post-infection. n=5 mice per group. (E) The zinc levels in the livers of mice infected with either Salmonella WT or ΔpanD for 3 d, n=5 mice per group. The data are presented as the mean ± SD (A–E). Statistical significance was assessed using one-way ANOVA (A-D), two-sided Student’s t-test (E). ns, not Significant.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A, B, C) Liver (A) and spleen (B) bacterial burdens and body weight (C) of mice infected with Salmonella wild-type (WT), ΔfadAB, ΔmetR, ΔhisABCDFGHL, ΔkdpABC, ΔmglABC, ΔpotFGHI, or ΔleuO on day 3 post-infection. n=5 mice per group. (D) Liver and spleen bacterial burdens and body weights of mice infected with Salmonella WT, ΔpanD, ΔznuA or ΔpanDΔznuA on day 3 post-infection. n=5 mice per group. (E) The zinc levels in the livers of mice infected with either Salmonella WT or ΔpanD for 3 d, n=5 mice per group. The data are presented as the mean ± SD (A–E). Statistical significance was assessed using one-way ANOVA (A-D), two-sided Student’s t-test (E). ns, not Significant.
 
 To test this hypothesis, we initially evaluated the zinc content in the livers of WT- and ΔpanD-infected mice, on day 3 post-infection. We observed that the zinc concentration in the macrophages of ΔpanD-infected mouse livers was 3.2-fold higher than in those of WT-infected mice (p<0.0001; Figure 5E), suggesting that the panD gene and β-alanine are crucial for Salmonella to obtain zinc from host cells.
 
@@ -85,13 +147,13 @@ Next, we constructed a double mutant, ΔpanDΔznuA, and compared colonization of
 
 Collectively, these data indicate that β-alanine promotes in vivo virulence of Salmonella partially by increasing the expression of zinc transporter genes.
 
-## β-alanine promotes Salmonella replication within macrophages partially by increasing the expression of zinc transporter genes
+### β-alanine promotes Salmonella replication within macrophages partially by increasing the expression of zinc transporter genes
 
 To determine whether β-alanine influences Salmonella intracellular replication by acting on zinc transporters, the zinc content in RAW 264.7 macrophages infected with WT and ΔpanD was also examined. We observed that the zinc concentration in ΔpanD-infected RAW 264.7 cells increased by 1.8-fold compared to WT-infected cells (p<0.0001; Figure 6A), further indicating the panD gene and β-alanine are crucial for Salmonella to absorb zinc from macrophages.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/103714/elife-103714-fig6-v1.jpg)
 
-**Figure 6.:** Salmonella replication within macrophages partially by increasing the expression of zinc transporter genes.(A) The zinc levels in RAW264.7 cells after infection with Salmonella wild-type (WT) or ΔpanD for 8 hr. (B) Replication of Salmonella WT, ΔpanD, ΔznuA, and ΔpanDΔznuA in RAW264.7 cells. (C) Replication of Salmonella WT and ΔpanD in RAW264.7 cells in the presence or absence of 100 μM ZnSO4. (D) Replication of Salmonella WT and ΔznuA in RAW264.7 cells in the presence or absence of 1 mM β-alanine. The data are presented as the mean ± SD, n=3 independent experiments (A–D). Statistical significance was assessed using a two-sided Student’s t-test (A), one-way ANOVA (B-D). ns, not Significant. (E) Schematic model of β-alanine-mediated Salmonella replication inside macrophages. In macrophages, Salmonella acquires β-alanine both via the uptake of β-alanine from host macrophages and the de novo synthesis of β-alanine. β-alanine promotes the expression of zinc transporter genes ZnuABC, which facilitate the uptake of zinc by intracellular Salmonella, therefore, promote Salmonella replication in macrophages and subsequent systemic infection.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) The zinc levels in RAW264.7 cells after infection with Salmonella wild-type (WT) or ΔpanD for 8 hr. (B) Replication of Salmonella WT, ΔpanD, ΔznuA, and ΔpanDΔznuA in RAW264.7 cells. (C) Replication of Salmonella WT and ΔpanD in RAW264.7 cells in the presence or absence of 100 μM ZnSO4. (D) Replication of Salmonella WT and ΔznuA in RAW264.7 cells in the presence or absence of 1 mM β-alanine. The data are presented as the mean ± SD, n=3 independent experiments (A–D). Statistical significance was assessed using a two-sided Student’s t-test (A), one-way ANOVA (B-D). ns, not Significant. (E) Schematic model of β-alanine-mediated Salmonella replication inside macrophages. In macrophages, Salmonella acquires β-alanine both via the uptake of β-alanine from host macrophages and the de novo synthesis of β-alanine. β-alanine promotes the expression of zinc transporter genes ZnuABC, which facilitate the uptake of zinc by intracellular Salmonella, therefore, promote Salmonella replication in macrophages and subsequent systemic infection.
 
 We then analyzed the ability of ΔznuA and ΔpanDΔznuA to replicate in RAW264.7 macrophages via gentamicin protection assays. The results showed that the replication of ΔpanDΔznuA in RAW264.7 cells was significantly reduced compared with that of the single mutant ΔznuA (Figure 6B), implying that the contribution of panD to the intracellular replication of Salmonella is partially dependent on znuA. The addition of 100 μM zinc to RPMI medium increased the replication of ΔpanD in RAW264.7 cells (Figure 6C), while the addition of 1 mM β-alanine to RPMI medium did not increase the replication of ΔznuA (Figure 6D), suggesting that the impaired replication due to the decrease in β-alanine can be relieved by zinc supplementation.
 
@@ -113,70 +175,241 @@ Overall, our findings suggest a model in which Salmonella exploits host- and bac
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>BALB/c mice</td>
+      <td>Beijing Vital River Laboratory Animal Technology</td>
+      <td>Cat# 213</td>
+      <td>6-wk-old female</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW264.7</td>
+      <td>ATCC</td>
+      <td>Cat# TIB-71; RRID:CVCL_0493</td>
+      <td>mouse macrophage-like cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti-Salmonella antibody (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab20320; RRID:AB_445509</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD86 antibody (Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab119857; RRID:AB_10902800</td>
+      <td>Flow Cyt (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD163 antibody (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab182422; RRID:AB_2753196</td>
+      <td>Flow Cyt (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rat IgG H&amp;L (Alexa Fluor 488) antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab150165; RRID:AB_2650997</td>
+      <td>Flow Cyt (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit IgG H&amp;L (Alexa Fluor 647) antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab150075; RRID:AB_2752244</td>
+      <td>Flow Cyt (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-alanine</td>
+      <td>Solarbio</td>
+      <td>Cat# A9770</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EASYspinPlus bacterial RNA rapid extraction kit</td>
+      <td>Aidlab</td>
+      <td>Cat# RN0802</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>2×RealStar Power SYBR qPCR Mix</td>
+      <td>Genstar</td>
+      <td>Cat# A304</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>StarScript III RT Kit</td>
+      <td>Genstar</td>
+      <td>Cat# A232</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROS fluorescence probe (BBoxiProbe O06)</td>
+      <td>Bestbio</td>
+      <td>Cat# BB-46051</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNS fluorescence probe (BBoxiProbe O52)</td>
+      <td>Bestbio</td>
+      <td>Cat# BB-470567</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>gentleMACS/Mouse Liver Dissociation Kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-105-807</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zinc fluorescence probe (Zinquin ethyl ester)</td>
+      <td>MKBio</td>
+      <td>Cat# MX4516</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Hematoxylin-Eosin(HE) staining kit</td>
+      <td>Sangon Biotech</td>
+      <td>Cat# E607318</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.5.1</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2</td>
+      <td>Bowtie</td>
+      <td>RRID:SCR_016368</td>
+      <td>https://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur 4.0</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:SCR_014593</td>
+      <td>https://www.thermofisher.cn/order/catalog/product/OPTON-30965?SID=srch-srp-OPTON-30965</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 2.3 ((blue edition))</td>
+      <td>Carl Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td>https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat# 21490</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 Six-wk-old female BALB/c mice were obtained from Beijing Vital River Laboratory Animal Technology (Beijing, China). Mice were housed in barrier facilities under specific pathogen-free conditions with a 12 hr light/dark cycle at a temperature of 24 ± 2°C and a relative humidity of 50 ± 5%. Mice were fed a standard mouse chow diet, and they consumed food and water ad libitum throughout the experiment. All animal experiments were conducted in accordance with the policies of the Institutional Animal Care Committee of Nankai University (Tianjin, China) and performed under protocol no. 2021-SYDWLL-000029.
 
-## Cell culture
+### Cell culture
 
 The RAW264.7 mouse macrophage-like cell line (ATCC TIB-71) was obtained from the Shanghai Institute of Biochemistry and Cell Biology of the Chinese Academy of Sciences (Shanghai, China). This cell line originates from ATCC and is not included in the list of commonly misidentified cell lines. Additionally, this cell line is free of mycoplasma contamination. Cells were cultured in RPMI-1640 medium (Gibco #11879020) supplemented with 10% (v/v) fetal bovine serum (FBS, Gibco #10100147) at 37℃ with 5% CO2. Cells were seeded in 24-well tissue culture plates at 1×105 cells per well 24 hr before infection.
 
-## Bacterial strains, plasmids, and growth conditions
+### Bacterial strains, plasmids, and growth conditions
 
 The bacterial strains and plasmids used in this study are listed in Supplementary file 1. The Salmonella enterica serovar Typhimurium (STM) strain ATCC 14,028 s was used as the WT strain throughout this study and for the construction of the mutants. Mutant strains were generated using the λ Red recombination system with the plasmid pSIM17 (Jiang et al., 2017). To construct the complemented strain of ΔpanD, the amplified DNA fragments of the panD ORF and its upstream promoter were digested and inserted into the BamHI–EcoRI site of the low-copy-number plasmid pBR322. To generate the panD-lux reporter fusion, the amplification products of the panD promoter region were digested and cloned into the XhoI–BamHI site of the plasmid pMS402, which carries a promoter-less luxCDABE reporter gene cluster (Liang et al., 2008). The sequences of primers used for the construction of the strains are listed in Supplementary file 2. All the strains were verified by PCR amplification and sequencing.
 
 Bacterial strains were conventionally grown overnight in Luria–Bertani (LB) medium (10 g/L tryptone, 5 g/L yeast extract, and 10 g/L NaCl) or in N-minimal medium (10 μM MgCl2, 110 μM KH2PO4, 7.5 mM (NH4)2SO4, 0.5 mM K2SO4, 5 mM KCl, 38 mM glycerol, and 0.1% [w/v] casamino acids) supplemented with appropriate antibiotics at 37 °C with shaking at 180 rpm or on LB agar plates. All antibiotics were used at their standard concentrations (chloramphenicol, 25 μg/mL; kanamycin, 50 μg/mL; ampicillin, 100 μg/mL; gentamicin, 10 or 100 μg/mL) unless otherwise mentioned.
 
-## Growth curve
+### Growth curve
 
 Bacterial strains were conventionally grown overnight in LB medium. The next day, they were subcultured (1:100) in new LB medium and RPMI-1640 medium or subcultured in N-minimal medium supplemented with glycerol or β-alanine as the sole carbon source at 37 °C with shaking at 180 rpm. To measure the growth of bacteria, 200 μL of the bacterial cultures were transferred to the microplate wells. The absorbance (OD600) of the bacteria was measured every half hour for 12 hr with a Spark multimode microplate reader (Tecan).
 
-## Bioluminescent reporter assays
+### Bioluminescent reporter assays
 
 STM WT carrying the panD-luxCDABE fusion plasmid was conventionally grown overnight in LB medium, and the next day, the cells were subcultured (1:100) in new LB medium or N-minimal medium for 8 hr. The luminescence of the cultured bacteria (200 μl) was measured with a Spark multimode microplate reader (Tecan). Moreover, the cultured bacteria (100 μl) were serially diluted and plated on LB agar plates to estimate bacterial CFUs. Bacterial CFUs were used to normalize luminescence values.
 
-## Salmonella infection of macrophages
+### Salmonella infection of macrophages
 
 Bacterial strains were conventionally grown overnight in LB medium to the late stationary phase, and the next day, the bacteria were diluted to 2×106 CFUs/mL and opsonized in RPMI-1640 medium supplemented with 10% FBS for 15 min. The macrophage monolayers were infected with the opsonized bacteria culture (0.5 mL/well, multiplicity of infection (MOI)=10) and centrifuged at 800×g for 5 min to synchronize infection. The infected cells were incubated for 30 min at 37 °C in 5% CO2 and then washed three times with 1×PBS. Fresh RPMI-1640 medium containing 100 μg/mL gentamicin was added to the infected cells to kill extracellular bacteria. After 1 hr, fresh RPMI-1640 medium containing 10 μg/mL gentamicin was added to the infected cells for the remainder of the experiment. To assess the intracellular growth of Salmonella, the infected cells were lysed with 1% Triton X-100 at 2 hpi and 20 hpi, and the abundance of the intracellular bacteria CFUs was estimated on LB agar plates. The relative fold replication of intracellular bacterial strains was denoted as the CFUs recovered at 20 hpi relative to those at 2 hpi. The relative fold change in replication was normalized to the number of RAW264.7 cells. When indicated, 1 mM β-alanine or 100 μM ZnSO4 were added after 1 hr of gentamicin treatment.
 
-## Targeted metabolomics analysis of amino acids in macrophages
+### Targeted metabolomics analysis of amino acids in macrophages
 
 Targeted metabolomics was conducted as previously described (Jiang et al., 2021), with the combined metabolites of infected cells and intracellular bacteria extracted for analysis. The metabolites have been confirmed to be dominated by the host metabolites (Jiang et al., 2021). RAW264.7 cells were mock-infected or infected with STM WT for 8 hr. The cells were harvested and washed with precooled PBS solution to remove the medium. Cellular metabolites were extracted using ice-cold extraction solvent (40:40:20 vol/vol/vol acetonitrile:methanol:water, 0.1 M formic acid), incubated at –20℃ for 20 min, and then centrifuged for 10  min at 12,000×g and 4℃ to obtain the supernatant. Subsequently, the supernatant was transferred to an LC-MS vial and analyzed using ultrahigh-performance liquid chromatography (Acquity; Waters, Milford, MA, USA) coupled with mass spectrometry (Q Exactive Hybrid Quadrupole-Orbitrap; Thermo Fisher Scientific, Waltham, MA, USA). Metabolites were separated with a Luna NH2 column (2 mm × 100 mm, 3 µm particle size; Phenomenex). Mobile phase A was 20 mM ammonium acetate (pH 9.0), and mobile phase B was acetonitrile containing 0.1% formic acid. The flow rate was 0.4  ml/min. Xcalibur 4.0 software (Thermo Fisher) was used for data acquisition and processing. Metabolite identification was achieved by high-resolution mass and retention time matching to authentic standards. The absolute quantification of amino acids was performed using the standard curve method, and the values were normalized to the cell number. Four biological replicates of each sample were analyzed.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 RAW264.7 cells were infected with STM WT or ΔpanD and the complemented strain cpanD as described above. After 2 and 20 hr of cultivation, the infected cells were fixed for 15 min in 4% paraformaldehyde, washed in PBS, and permeabilized with 0.1% Triton X-100 in PBS for 15 min. The fixed samples were blocked in 5% bovine serum albumin for 30 min, followed by staining with a FITC-conjugated anti-Salmonella antibody (1:100 dilution, Abcam #ab20320) for 1 hr at room temperature in the dark. The nuclei were then stained with DAPI (Invitrogen #D21490) for 2 min. A confocal laser scanning microscope (Zeiss LSM800) and ZEN 2.3 software (blue edition) were used to acquire and analyze the cell images (Objective lens: 40x; The number of intracellular bacteria per infected cell was estimated in random fields by Fiji-ImageJ).
 
-## RNA isolation
+### RNA isolation
 
 RNA was extracted from Salmonella strains cultured in N-minimal medium or LB medium. To investigate the expression of the Salmonella panD gene inside macrophages, we obtained RNA from intracellular bacteria in RAW264.7 cells at 8 hr post-infection and from bacteria in RPMI medium. RNA was extracted using an EASYspinPlus bacterial RNA rapid extraction kit (Aidlab #RN0802) according to the manufacturer’s protocol. RNA quantity and purity were determined using a NanoDrop 2000 spectrophotometer (NanoDrop Technologies). RNA samples were stored at −80 °C before use.
 
-## Quantitative real-time PCR (qRT‒PCR)
+### Quantitative real-time PCR (qRT‒PCR)
 
 According to the manufacturer’s protocols, qRT‒PCR was performed using 2x RealStar Power SYBR qPCR Mix (Genstar #A304) in a QuantStudio 5 real-time PCR system (Applied Biosystems). cDNA was synthesized using a StarScript III RT Kit (Genstar #A232). Each sample was subjected to qRT‒PCR in triplicate. The expression level of the 16 S rRNA gene was used to normalize that of the target genes. We estimated the expression of each target gene using the 2−ΔΔCt method.
 
-## RNA sequencing and analyses
+### RNA sequencing and analyses
 
 The STM WT and ΔpanD strains were conventionally grown overnight in LB medium, subcultured (1:100) in N-minimal medium for 8 hr, and then collected by centrifugation for RNA extraction. Sequencing libraries were generated using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs) according to the manufacturer’s instructions, and sequencing was conducted using the Illumina HiSeq 2000 platform at Shanghai Majorbio Bio-Pharm Technology Co., Ltd. (Shanghai, China). The sequencing data were deposited in the NCBI Sequence Read Archive under accession number (SRA, PRJNA1124637). The clean reads were mapped to the STM ATCC 14028 reference genome (CP001363 and CP001362) by using the short-sequence alignment software Bowtie 2. Gene expression was evaluated using the fragments per kilobase of transcript per million mapped reads (FPKM) method. DEGs in the panD mutant relative to the WT were determined using the R statistical package software EdgeR. The thresholds for statistically significant differences were set to a fold change  ≥ 2 or ≤ 0.5 and a false discovery rate (FDR) ≤ 0.05. p-values were adjusted using the Benjamini–Hochberg procedure for controlling the FDR. Enrichment analysis of DEGs was conducted using GO and KEGG enrichment analyses.
 
-## Mouse infection
+### Mouse infection
 
 Salmonella strains were conventionally cultured overnight in LB medium, and the next day, they were subcultured (1:100) in new LB medium and grown at 37 °C with shaking at 200 rpm to stationary phase (OD600~2). The bacteria were diluted to 5×104 CFUs/mL in 0.9% NaCl. Groups of BALB/c mice were infected i.p. with 0.1 mL of the NaCl suspension. For survival assays, we recorded and monitored the mortality and body weight of the infected mice daily for 10 d. To analyze the bacterial burden of the mouse liver and spleen, we weighed the infected mice first on day 3 post-infection and then harvested the liver and spleen. The liver and spleen of infected mice were homogenized in ice-cold PBS, serially diluted, and plated on LB plates containing the appropriate antibiotics to determine bacterial CFUs. H&E staining of the mouse liver was performed to investigate the histopathological alterations in the liver of infected mice. To evaluate the histopathological alterations in the mouse liver, we harvested the liver of the infected mice on day 5 post-infection. The mouse liver was washed with 0.9% NaCl, fixed with 10% neutral formalin for 48 hr, and subsequently processed for routine paraffin embedding. Paraffin-embedded tissues were sectioned at a thickness of 5 μm and then stained with hematoxylin (Sangon Biotech #E607318) and eosin (Sangon Biotech #E607318) for histopathological examination. The stained sections were then examined by light microscopy (Leica DM2500 LED).
 
-## Flow cytometry
+### Flow cytometry
 
 RAW264.7 cells were infected with Salmonella WT for 8 hr, in the absence or presence of 1 mM β-alanine, which was added to the infected cells at 1 hr post-infection. The infected cells were fixed for 15 min in 4% paraformaldehyde, washed in PBS, and permeabilized with 0.1% Triton X-100 in PBS for 15 min. The fixed samples were blocked in 5% bovine serum albumin for 30 min, followed by staining with an anti-CD86 antibody (Abcam, #ab119857), an anti-CD163 antibody (Abcam, #ab182422) for 30 min, and a goat anti-rat IgG H&L (Alexa Fluor 488) (Abcam, #ab150165), a donkey anti-rabbit IgG H&L (Alexa Fluor 647) (Abcam, #ab150075) for 30 min in the dark. The infected cells were analyzed using a BD FACSAria Flow Cytometer (BD Biosciences).
 
-## Assessment of intracellular ROS/ RNS levels
+### Assessment of intracellular ROS/ RNS levels
 
 RAW264.7 cells were infected with Salmonella WT for 8 hr, either in the absence or presence of 1 mM β-alanine. The β-alanine was added to the infected cells at 1 hr post-infection. Following the infection, the cells were washed three times with PBS, and the levels of ROS and RNS were measured using a ROS fluorescence probe (BBoxiProbe O06, Bestbio, #BB-46051) and an RNS fluorescence probe (BBoxiProbe O52, Bestbio, #BB-470567), respectively, in accordance with the manufacturer’s protocol. The ROS/RNS levels were normalized to the cell count.
 
-## Assessment of zinc levels in mouse liver and RAW 264.7 macrophages
+### Assessment of zinc levels in mouse liver and RAW 264.7 macrophages
 
 To assess the zinc level in mouse liver, mice were i.p. infected with approximately 5000 CFUs of Salmonella WT or ΔpanD for 3 d, with three mice in each injection group. Following infection, mouse livers were collected and then dissociated into single cells using the gentleMACS/Mouse Liver Dissociation Kit (Miltenyi Biotec, #130-105-807) in accordance with the manufacturer’s protocol. The zinc concentration in mouse liver was determined using a zinc fluorescence probe (Zinquin ethyl ester, MKBio, #MX4516) following the manufacturer’s instructions and normalized by the cell count.
 
 To assess the zinc level in RAW 264.7 macrophages, RAW 264.7 cells were infected with Salmonella WT or ΔpanD for 8 hr. The infected cells were washed three times with PBS, and zinc concentration was measured using a zinc fluorescence probe (Zinquin ethyl ester, MKBio, MX4516) following the manufacturer’s protocol. The zinc concentration was normalized by the cell count.
 
-## Statistical analysis
+### Statistical analysis
 
 The data are presented as the mean ± SD. All in vitro experiments were conducted in duplicate and repeated at least three times (n≥3). Mouse assays were performed twice, with at least two mice (n≥2) in each injection group, and the combined data from the two experiments was used for statistical analysis. Statistical analyses were performed using GraphPad InStat software (version GraphPad Prism 9.5.1, San Diego, CA, USA) with two-sided Student’s t-tests, one-way ANOVA, two-way ANOVA, log-rank Mantel–Cox tests, or Mann‒Whitney U tests according to the test requirements (as stated in the figure legends). A p-value <0.05 indicated a statistically significant difference. ns represents no statistical significance.

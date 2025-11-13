@@ -23,6 +23,108 @@ The goal of this review is to pinpoint the specific features, including the weak
 
 Murine tumor models have proven to be useful for our understanding of biological processes that take place during tumor growth, and for the preclinical development of antitumor therapies. However, the limitations of these models are too frequently overlooked. As a result, numerous anti-tumor drugs that were shown to be efficient in mice ended up being unusable against human tumors. Even if such a major failure has already been discussed, this problem still needs to be examined in depth. A large part of this review will be devoted to comparing the properties of spontaneous (SP) and transplanted (TP) tumors. We will take advantage of two models (a mammary tumor and a melanoma), in which TP and SP tumors can be obtained with isogenic tumor cells. This comparison will be made for the first time by taking into account global structural and functional points of view. Structural features are those that affect the tumor architecture, which is largely dependent on the pre-existence of an epithelial to mesenchymal transition (EMT). For the functional analysis in TP and SP tumors, we examine a series of key tumor features: vascularization, growth rate, immune infiltrate and inflammation, tumor metabolism, and influence of tumor-derived TGFβ. We evaluate the influence of these features on spontaneous growth rate and, most importantly, on the sensitivity of tumors to various treatments, as summarized in Table 1.
 
+**Table 1.**
+ Structural and functional comparison of SP and TP tumors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>SP vs TP</th>
+      <th>Subcutaneous (s.c.) TP vs orthotopic (ortho.)TP</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Vasculature fragility</td>
+      <td>TP &gt; SP</td>
+      <td>Ortho &gt; s.c.</td>
+      <td>Fenton et al. (2001); Drees et al. (2015); Guerin et al. (2019); Fung et al. (2015)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Vasculature growth rate</td>
+      <td>TP &gt; SP</td>
+      <td></td>
+      <td>This review</td>
+    </tr>
+    <tr>
+      <td colspan="2">Tumor architecture</td>
+      <td>SP &gt; TP SP = TP</td>
+      <td></td>
+      <td>This review Weiss et al. (2017); Guerin et al. (2019)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Tumor growth rate</td>
+      <td>TP &gt; SP TP = SP</td>
+      <td></td>
+      <td>Wexler et al. (1965); McCredie et al. (1971); Rous (1914); Burton and Begg (1961); Zhu et al. (2017)</td>
+    </tr>
+    <tr>
+      <td colspan="2">TGFβ abundance</td>
+      <td>SP &gt; TP</td>
+      <td>Ortho &gt; s.c.</td>
+      <td>Guerin et al. (2019); Zhu et al. (2017); Choudhury et al. (2004)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Spontaneous immune response</td>
+      <td>TP &gt; SP</td>
+      <td></td>
+      <td>Anders et al. (2017)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Tumor-associated macrophage (TAM) renewal rate</td>
+      <td>TP &gt; SP</td>
+      <td></td>
+      <td>Strachan et al. (2013); Franklin et al. (2014)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Myeloid-derived suppressor cell (MDSC) abundance</td>
+      <td>SP &gt; TP</td>
+      <td>Ortho &gt; s.c.</td>
+      <td>Coffelt and de Visser (2015); Zhu et al. (2017); Guerin et al. (2019); Devaud et al. (2014)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Sensitivity to</td>
+      <td>Immunogenic cell death (ICD)-based chemotherapy</td>
+      <td>TP only</td>
+      <td></td>
+      <td>Ciampricotti et al. (2012); Coffelt and de Visser (2015)</td>
+    </tr>
+    <tr>
+      <td>Stimulator of interferon genes protein (STING) agonists</td>
+      <td>TP only</td>
+      <td></td>
+      <td>Guerin et al. (2019)</td>
+    </tr>
+    <tr>
+      <td>Adoptive transfer of T cells</td>
+      <td>TP &gt; SP</td>
+      <td></td>
+      <td>Zhu et al. (2017)</td>
+    </tr>
+    <tr>
+      <td>Vaccination</td>
+      <td>TP only</td>
+      <td></td>
+      <td>Old et al. (1961); Hirsch (1962); Reilly et al. (2000); Ercolini et al. (2003)</td>
+    </tr>
+    <tr>
+      <td>Cortisone</td>
+      <td>TP &gt; SP</td>
+      <td></td>
+      <td>Burton and Begg (1961)</td>
+    </tr>
+    <tr>
+      <td>Interleukin-12 (IL-12)</td>
+      <td>TP only</td>
+      <td></td>
+      <td>Lee et al. (2002)</td>
+    </tr>
+  </tbody>
+</table>
+
 The fact that different tumor models may not be equivalent is an issue that was first recognized a long time ago. One of the first to address this problem was Francis Peyton Rous, well before the Nobel prize that he obtained in 1966 for his work on virus-induced tumors. In 1914, FP Rous examined the extent to which the mouse diet could influence tumor growth rate in SP and TP tumors (Rous, 1914). He concluded that starvation slows down tumor growth, by affecting both the tumor and its stroma. Importantly, he pointed out that results obtained in these SP and TP systems differ and that 'generalizations from work with transplanted tumors as regards the effects of diet on spontaneous growths are unwarranted’.
 
 Since then, the specific features of different tumor models have been discussed in several reviews (Sharpless and Depinho, 2006; Talmadge et al., 2007; Coffelt and de Visser, 2015; Olson et al., 2018), often with a focused scope, such as a comparison between the different types of genetically engineered mice models (GEMM) designed to develop so-called ‘spontaneous’ tumors. Before starting the comparison between TP and SP tumors, it is necessary to have a global vision of the wide variety of murine tumor models.
@@ -31,7 +133,7 @@ Since then, the specific features of different tumor models have been discussed 
 
 The diversity of TP tumors stems from the origin and the type of cells that are implanted, their abundance and their site of implantation (subcutaneous or orthotopic). These tumor cells may be established cell lines, primary tumor cells freshly dissociated from spontaneous tumors, or fragments of tumors transferred from donor to host animals. In the latter two cases, transplanted cells include different cell types present in the tumor microenvironment. In the two isogenic models that are examined in this review, the TP tumors developed after implantation of a tumor cell line in one case (the melanoma), whereas TP tumors in the PyMT mammary model developed after transplantation of dissociated SP tumors.
 
-## Syngeneic tumors versus xenografts
+### Syngeneic tumors versus xenografts
 
 In a vast majority of studies with TP tumors, tumor cells are grafted in syngeneic mice. If a treatment proves to be efficient in such preclinical settings, the translation to clinical studies often presents difficulties, because the molecular tools developed in the murine models cannot always be used for humans. For instance, the STING agonist DMXAA (5,6-dimethylxanthenone-4-acetic acid), which destroys tumor vessels in TP murine tumors quite efficiently, is totally devoid of effects against the vasculature of human tumors. This difference is mainly due to the fact that DMXAA action in TP tumors requires STING binding and activation; however, this molecule does not bind at all to human STING (Conlon et al., 2013). This explains the total absence of effects of DMXAA in a Phase III clinical trial involving almost 1300 patients (Lara et al., 2011). Even when compatible with human molecules, STING agonists may still not work in clinical trials given their inefficacy in SP tumors compared to TP models, as will be discussed below. The species specificity of molecular tools is also true for a large panel of antibodies and engineered constructs, such as chimeric antigen receptors (CAR).
 
@@ -39,7 +141,7 @@ For these reasons, pharmaceutical companies have encouraged the use of human xen
 
 It is theoretically possible to circumvent this problem by using humanized mice. However, because immune responses involve many different cell types, obtaining a mouse with a fully humanized immune system is very complicated (Olson et al., 2018). Moreover, for humanization to be complete, it should be extended to other cells of the tumor microenvironment, that is endothelial cells and stromal cells. The complexity and the resulting cost of such mice are both huge.
 
-## Subcutaneous versus orthotopic implantation
+### Subcutaneous versus orthotopic implantation
 
 The advantage of implanting tumor cells subcutaneously is that the size of these tumors is easier to measure than that of visceral tumors. However, numerous papers have shown that tumor growth, vascularization and sensitivity to anti-tumoral treatments are dependent upon the site of implantation. Thus, there are fewer functional blood vessels in orthotopic tumors than in subcutaneous tumors, as measured with a perfusion marker (Fung et al., 2015). Compared to subcutaneous tumors, orthotopic tumors are more immunosuppressive in nature, with a larger abundance of alternatively activated macrophages, and they are less sensitive to immunotherapy than subcutaneous tumors (Devaud et al., 2014). This difference could be related to the fact that TGFβ is present in tumors derived from orthotopic but not subcutaneous implantation, as shown in a pancreatic cell line (Choudhury et al., 2004). Note that TGFβ is frequently present in SP tumors, as discussed by Guerin et al. (2019), and from this point of view, orthotopic TP tumors are more similar than subcutaneous TP ones to SP models.
 
@@ -75,7 +177,7 @@ All of the examples given above concern primary tumors, and not metastases, whi
 
 Now that the global landscape of tumor models has been recalled, we can begin to compare them. The discussion will focus on comparing TP and SP tumors, by examining the different functional aspects of the tumors that appear to be model-dependent. Up to now, such comparisons have mainly dealt with differences in the vasculature of TP and SP tumors (Falk, 1982; Fenton et al., 2001; Fenton et al., 2004; Sikder et al., 2003; Lee et al., 2002). Here, we underline the importance of not only the vasculature but also the tumor's growth rate, immune infiltrate, inflammation level, metabolism, and TGFβ signaling, and how these characteristics influence tumor sensitivity to anti-cancer treatments (as summarized in Table 1). We also highlight the variability observed for different features. This variability does not result from some inaccuracy in the measurements. It rather reflects the importance of stochasticity in life, which has been taken into account in several complementary concepts: first in Darwin’s theory of natural selection of random variants, then in the notions of ‘epigenetic landscape’ (Waddington, 1957), ‘gene network dynamics’, multi-stability and self-organization, which allow a given living system to adopt several possible stable states (Huang, 2012). A phenotype is not determined by genotype alone but also by constraints including stochastic events and epigenetics. Therefore, the ‘variability’ that is inherent to some tumor models should not be concealed.
 
-## Vascularization
+### Vascularization
 
 Using various approaches (Box 2), several steps in tumor angiogenesis have been distinguished. This process starts with proliferative endothelial cells that sprout from pre-existing blood vessels, giving rise to uncovered blood vessels of small diameter. The newly formed blood vessels subsequently expand by means of endothelial cell proliferation and migration to form larger blood vessels, which are progressively covered by pericytes. Contrary to the initial uncovered sprouts, these larger mature vessels are formed by quiescent endothelial cells that have limited proliferation and sprouting (Gee et al., 2003). However, all of these processes are often deregulated at cellular and molecular levels in cancer, giving rise to a heterogeneous, disorganized and misshaped vessel network, which is aberrantly covered by pericytes and therefore poorly functional (Leite de Oliveira et al., 2011). From tumor to tumor, and for reasons mentioned above, a huge variability is observed in the detailed shape of the vascular network and in the size of its meshes.
 
@@ -87,7 +189,7 @@ Another difference in the vascularization of SP and TP tumors is related to the 
 
 Compared to slow SP tumors, the rapidly growing TP tumors are likely to have more immature blood vessels that are more sensitive to inflammatory cytokines such as TNFα, which may be produced following a bacterial infection. By inducing vascular disruption, TNFα and other pro-inflammatory cytokines could facilitate bacterial tumor-colonization. The different vasculature structure in TP and SP tumors may explain why, after systemic administration of Salmonella typhimurium, which are bacteria with reported tumor-targeting propensity, bacterial colonization was higher in TP than in SP tumors. As a result, S. typhimurium may exert an oncolytic action against TP but not against SP tumors (Drees et al., 2015). In line with the observation in SP models, clinical studies showed lack of tumor colonization by the Salmonella typhimurium strain VNP20009, again underlying how transplanted tumors do not always mimic the autochthonous tumors that develop in SP models or in patients (Drees et al., 2015).
 
-## Tumor architecture
+### Tumor architecture
 
 After tumor initiation, stromal cells may be recruited by the nascent tumor from neighboring normal tissue or may differentiate from mesenchymal cells arriving through the blood from the bone marrow (Bucala et al., 1994; Kraman et al., 2010). The self-organization of the stroma involves different cell types including stromal cells, endothelial cells and macrophages. The stromal compartment usually includes a peritumoral capsule and stromal sheets between tumor islets. This organization is typical of human carcinoma and it is also observed in some murine tumor models (see below). In the MMTV-PyMT (pre-EMT) model, fibronectin is only expressed by stromal cells, and the vasculature is strictly associated with the stroma. This holds true whether the tumor is SP, or whether it results from an orthotopical implant (TP) of cells freshly dissociated from a SP tumor (Figure 1A&B) and thus includes multiple cell types that have not been kept in culture. However, in most commonly used models of TP tumors, 105–106 cells from an established tumor cell line are injected subcutaneously. Cells kept in culture for a long time usually drift, and such tumor cell lines have frequently acquired fibroblast markers such as gp38 or fibronectin because they have gone through EMT. An example is provided by the TC1 (TP) tumor model (Figure 1C). Post-EMT tumor cells never form tumors that are organized into tumor islets and stromal sheets, as if the self-organization of the stromal compartment were hampered by the similarities between fibroblasts and post-EMT tumor cells. Moreover, a mesenchymal transition may sometimes take place in vivo. This is the case for a SP melanoma model named TiRP described in Zhu et al. (2017) (Figure 1D). This tumor shows a uniform fibronectin expression and no tumor islets nor stromal sheets. The same structure is observed in the corresponding TP melanoma (not shown).
 
@@ -99,7 +201,7 @@ Thus, the existence or not of a mesenchymal transition determines a certain arch
 
 The use of tumor models that present an architecture of tumor islets separated by stromal sheets is of particular relevance for the following reason. M. Angelo and colleagues have recently shown that, in breast cancer, an enriched co-occurrence of immune populations defines a structured immune environment that is indicative of a good prognosis (Keren et al., 2018). They have established an important correlation between a structure (the spatial distribution of immune cells in the tumor) and a function (the efficacy of the anti-tumoral immune response), without suggesting a causal explanation for this correlation. On the basis of the previous discussion, we propose that a well-developed, regular stroma surrounding a functional vascular tree provides an oxygenated space in which immune cells can be recruited. The different cell types gathered there may interact and are ready to respond to an external stimulation. Murine models show that such structures are not observed when tumor cells have gone through EMT. If such a structure is important in human primary carcinoma, one should be aware of the limits of murine models that do not present such an architecture.
 
-## Growth rate
+### Growth rate
 
 As already pointed out, the growth of a tumor is entirely dependent on its vascularization. Indeed, in the absence of angiogenesis, a tumor cannot grow beyond 1–3 mm in diameter (Greene, 1941; Gimbrone et al., 1969). Once vascularized, the tumor cells that proliferate most actively are those located close to blood vessels (Tannock, 1968). The growth rate of tumor cells is thus indirectly controlled by that of endothelial cells within the tumor (Tannock, 1970).
 
@@ -117,7 +219,7 @@ Thus, variations in the rate of tumor growth may be observed in two directions: 
 
 Altogether, tumor growth rate is strongly dependent on the angiogenesis rate. Tumors that grow fast are not only more aggressive but also more susceptible to antitumoral treatment for several reasons. First their vascular network is more immature and therefore more fragile. Second, rapidly proliferating cells are more susceptible to anti-mitotic drugs or to high local concentrations of IFNα (Sujobert and Trautmann, 2016; Weiss et al., 2017). To conclude on the rate of tumor growth: when tumor cells divide regularly, the tumor growth is exponential and linear on a log scale. However, this growth rate may be either accelerated, when the tumor escapes microenvironmental brakes (particularly conspicuous for SP tumors), or reduced, when angiogenesis becomes insufficient and hypoxic or necrotic regions appear.
 
-## Tumor metabolism
+### Tumor metabolism
 
 Intense efforts have been devoted in the past century to answering the question of whether tumorigenesis could be a consequence of a peculiar metabolism, initially described by Otto Warburg. This important issue is mentioned only briefly here, given that no striking difference has been observed in the metabolism of TP versus SP tumors. However, it is worth underlining the mechanisms by which the metabolism of tumor cells and macrophages are linked to the vascular architecture and the spatial distribution of immune cells within the tumor.
 
@@ -127,7 +229,7 @@ In vitro experiments in which macrophages are co-cultured with tumor cells sho
 
 Thus, the interrelated metabolism of tumor cells and macrophages contributes to the coupling between the vascular architecture and the localization of infiltrating immune cells within the tumor.
 
-## Immune infiltrate and inflammation
+### Immune infiltrate and inflammation
 
 As pointed out above, the localization of the immune tumor infiltrate is tightly linked to the vascular architecture. However, the nature and the properties of the immune infiltrating cells are a different issue, which will be examined now.
 
@@ -145,7 +247,7 @@ Immunogenic cell death (ICD) is a concept that describes the following chain of 
 
 Nevertheless, the notion of ICD may be useful if it is considered in a wider sense. Indeed, if instead of relying on an ICD-based chemotherapy alone, immune cell stimulation and chemotherapy are combined, then it could be expected that the immune response may be amplified by chemotherapy-induced ICD.
 
-## TGFβ
+### TGFβ
 
 The last factor examined in this review, which is key to understanding differences between TP and SP tumors, is TGFβ.
 
@@ -169,7 +271,7 @@ A third example of identical tumor cells that behave differently in a SP and a T
 
 It is often considered that different organs give rise to different types of human cancers that have distinct genomic profiles and sensitivities to anticancer therapies. The origin of these differences has been explored with different approaches including: (i) profiling the tumor-associated mutations and the transcriptional landscape of the immune infiltrate; and (ii) considering the original functioning of the healthy organ and the cross-talk between tumor cells and the stromal and immune microenvironment. Here, we examine factors that could be decisive for the organ-specificity of human tumors, and consider which preclinical tumor models should be used to take this specificity into account.
 
-## High-throughput analyses
+### High-throughput analyses
 
 To what extent can sets of mutations in tumors be viewed as organ-specific? A few mutations are found more frequently in some organs than in others. For instance, ∼50% of melanomas harbor recurrent BRAF mutations, which are key to the immune evasion of melanoma (Sumimoto et al., 2006) and which are amenable to specific treatments (Robert et al., 2015), whereas such mutations are much less frequent in colon cancers (Corcoran et al., 2012). By contrast, colorectal cancers frequently harbor KRAS mutations, which are rare in melanomas (AACR Project GENIE Consortium, 2017) but extremely frequent in pancreatic cancers (Lanfredini et al., 2019). A thorough analysis of the mutanome of >60,000 tumors has demonstrated, however, that tumors have remarkably few shared alterations with other tumors, even in the context of major driver alterations and in specific disease types (Hartmaier et al., 2017). Thus, mutanome profiles are too variable and overlapping to constitute major determinants of the organ-specificity of tumors.
 
@@ -179,7 +281,7 @@ Are there immune profiles that are specific to tumors in a given organ? This app
 
 Thus, these approaches have provided a huge amount of data on many tumor types. However, owing to the descriptive nature of these analyses, these studies do not yield mechanistic insights and they have not led to strong predictive conclusions on tumor-specific treatments (Wellenstein and de Visser, 2018).
 
-## Functional points of view
+### Functional points of view
 
 One may wonder if there is a functional explanation behind the fact that the average mutational burden is much higher in melanoma or lung squamous carcinoma than in thyroid or bone cancer. We propose here such an explanation. It is now clear that several key mutations are necessary but not sufficient for a tumor to develop. Tumor development also requires a favorable, tumor-promoting microenvironment, as thoughtfully predicted in the ‘seed and soil’ theory of S. Paget in 1889, a theory often revisited since then (Fidler, 2003). A poly-mutated transformed cell is initially prevented from proliferating by a protective microenvironment that includes not only the immune system but also the normal stroma (Mueller and Fusenig, 2004; Bissell and Hines, 2011). One may hypothesize that tumors with the highest mutation load are those on which the initial anti-tumoral brake was the strongest, so that a large number of mutations were needed for the nascent tumor to escape from its anti-tumoral microenvironment. Thus, melanoma or lung carcinoma would appear in a context that is quite unfavorable for tumor development, whereas, at the other end of the mutational burden spectrum, bone cancer or germ cell tumors would emerge in a less constrained environment (AACR Project GENIE Consortium, 2017). This could be related to the fact that both the skin and mucosa represent interfaces between the inside and outside of the organism, where both the exposure to pathogens or other insults and the immune surveillance against them are greatest.
 

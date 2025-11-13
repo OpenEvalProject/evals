@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.37385.001 The status signalling hypothesis aims to explain within-species variation in ornamentation by suggesting that some ornaments signal dominance status. Here, we use multilevel meta-analytic models to challenge the textbook example of this hypothesis, the black bib of male house sparrows ( Passer domesticus ). We conducted a systematic review, and obtained primary data from published and unpublished studies to test whether dominance rank is positively associated with bib size across studies. Contrary to previous studies, the overall effect size (i.e. meta-analytic mean) was small and uncertain. Furthermore, we found several biases in the literature that further question the support available for the status signalling hypothesis. We discuss several explanations including pleiotropic, population- and context-dependent effects. Our findings call for reconsidering this established textbook example in evolutionary and behavioural ecology, and should stimulate renewed interest in understanding within-species variation in ornamental traits.
+The status signalling hypothesis aims to explain within-species variation in ornamentation by suggesting that some ornaments signal dominance status. Here, we use multilevel meta-analytic models to challenge the textbook example of this hypothesis, the black bib of male house sparrows (Passer domesticus). We conducted a systematic review, and obtained primary data from published and unpublished studies to test whether dominance rank is positively associated with bib size across studies. Contrary to previous studies, the overall effect size (i.e. meta-analytic mean) was small and uncertain. Furthermore, we found several biases in the literature that further question the support available for the status signalling hypothesis. We discuss several explanations including pleiotropic, population- and context-dependent effects. Our findings call for reconsidering this established textbook example in evolutionary and behavioural ecology, and should stimulate renewed interest in understanding within-species variation in ornamental traits.
 
 ## Introduction
 
@@ -49,11 +49,204 @@ Here, we meta-analytically assessed the textbook example of the status signallin
 
 Overall, we obtained the primary data for seven of 13 (54%) published studies, and we provided data for six additional unpublished studies (Table 1—Appendix 1).
 
-## Dominance hierarchies
+**Table 1.**
+ Studies used in the meta-analyses and meta-regressions testing the across-study relationship between dominance rank and bib size in male house sparrows.More information is available in the data files provided (Sánchez-Tójar et al., 2018a).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study ID</th>
+      <th>Reference</th>
+      <th>Population ID</th>
+      <th>Primary data?</th>
+      <th>Number of groups*</th>
+      <th>Total number of males†</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Ritchison, 1985</td>
+      <td>Kentucky (captivity)</td>
+      <td>No</td>
+      <td>3</td>
+      <td>35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Møller, 1987</td>
+      <td>Denmark (wild)</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Andersson and Åhlund, 1991</td>
+      <td>Sweden (captivity)</td>
+      <td>No</td>
+      <td>10</td>
+      <td>20</td>
+      <td>Estimate originally reported as statistically non-significant.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Solberg and Ringsby, 1997</td>
+      <td>Norway (captivity)</td>
+      <td>Yes</td>
+      <td>5</td>
+      <td>44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Liker and Barta, 2001</td>
+      <td>Hungary (captivity)</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Gonzalez et al., 2002</td>
+      <td>Spain (captivity)</td>
+      <td>No</td>
+      <td>8</td>
+      <td>41</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Hein et al., 2003</td>
+      <td>Kentucky (wild)</td>
+      <td>Yes</td>
+      <td>4</td>
+      <td>39</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Riters et al., 2004</td>
+      <td>Wisconsin (captivity)</td>
+      <td>No</td>
+      <td>4</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Lindström et al., 2005</td>
+      <td>New Jersey (captivity)</td>
+      <td>No</td>
+      <td>4</td>
+      <td>28</td>
+      <td>Author shared processed data, but group ID was unavailable, so data were not re-analysed.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Bókony et al., 2006</td>
+      <td>Hungary (captivity)</td>
+      <td>Yes</td>
+      <td>2</td>
+      <td>19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Buchanan et al., 2010</td>
+      <td>Scotland (captivity)</td>
+      <td>No</td>
+      <td>14 5</td>
+      <td>56 20</td>
+      <td>Groups were tested twice. Post-breeding estimates originally reported as statistically non-significant.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Dolnik and Hoi, 2010</td>
+      <td>Austria (captivity)</td>
+      <td>No</td>
+      <td>4 4</td>
+      <td>31 31</td>
+      <td>Groups were tested twice. Pre-infection estimates originally reported as statistically non-significant.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Rojas Mora et al., 2016</td>
+      <td>Switzerland (captivity)</td>
+      <td>Yes</td>
+      <td>14</td>
+      <td>56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Lendvai et al.</td>
+      <td>Hungary (captivity)</td>
+      <td>Yes3</td>
+      <td>4</td>
+      <td>46</td>
+      <td>Unpublished data part of: Lendvai et al., 2004; Bókony et al., 2012</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Tóth et al.</td>
+      <td>Hungary (captivity)</td>
+      <td>Yes3</td>
+      <td>3</td>
+      <td>35</td>
+      <td>Unpublished data part of: Tóth et al., 2009; Bókony et al., 2012</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Bókony et al.</td>
+      <td>Hungary (captivity)</td>
+      <td>Yes3</td>
+      <td>4</td>
+      <td>26</td>
+      <td>Unpublished data part of: Bókony et al., 2010; Bókony et al., 2012</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Sánchez-Tójar et al.</td>
+      <td>Germany (captivity)</td>
+      <td>Yes3</td>
+      <td>4</td>
+      <td>95</td>
+      <td>Unpublished study conducted in 2014.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Sánchez-Tójar et al.</td>
+      <td>Lundy Island (wild)</td>
+      <td>Yes3</td>
+      <td>7</td>
+      <td>172</td>
+      <td>Unpublished study conducted from 2013 to 2016.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Westneat</td>
+      <td>Kentucky (captivity)</td>
+      <td>Yes3</td>
+      <td>10</td>
+      <td>40</td>
+      <td>Unpublished study conducted in 2005.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*for primary data = yes, groups of birds containing less than four individuals were not included (see Materials and methods).†Note: since most studies analysed more than one group of birds, the total number of males is different from group size in most cases (see below).‡Information for the unpublished datasets is available in Appendix 1—table 5._
+
+### Dominance hierarchies
 
 Mean sampling effort was 36 interactions/individual (SD = 24), which highlights that, overall, dominance hierarchies were inferred reliably across groups (Sánchez-Tójar et al., 2018b). The mean Elo-rating repeatability was 0.92 (SD = 0.07) and the mean triangle transitivity was 0.63 (SD = 0.28). Thus, the dominance hierarchies observed across groups of house sparrows were medium in both steepness and transitivity.
 
-## Meta-analytic mean
+### Meta-analytic mean
 
 Our meta-analyses revealed a small overall effect size with large 95% credible intervals that overlapped zero (Table 2; Figure 1). Additionally, the overall heterogeneity (I2overall) was moderate (53%; Table 2). Thus, our results suggested that generally, bib size is at best a weak and unreliable signal of dominance status in male house sparrows.
 
@@ -61,11 +254,139 @@ Our meta-analyses revealed a small overall effect size with large 95% credible i
 
 **Figure 1.:** Both meta 1 and meta 2 include published and unpublished estimates, with meta 2 including two non-reported estimates assumed to be zero (see section ‘Meta-analyses’). We show posterior means and 95% credible intervals from multilevel meta-analyses. Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr). Light, medium and dark grey show small, medium and large effect sizes, respectively (Cohen, 1988). k is the number of estimates.
 
-## Moderators of the relationship between dominance rank and bib size
+**Table 2.**
+ Results of the multilevel meta-analyses on the relationship between dominance rank and bib size in male house sparrows.Additionally, the results of the Egger’s regression tests are shown. Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr). Both meta 1 and meta 2 include published and unpublished estimates, with meta 2 including two non-reported estimates assumed to be zero (see section ‘Meta-analyses’).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Meta-analysis</th>
+      <th>K</th>
+      <th>Meta-analytic mean [95% CrI]</th>
+      <th>I2population ID [95% CrI] (%)</th>
+      <th>I2study ID [95% CrI] (%)</th>
+      <th>I2overall [95% CrI] (%)</th>
+      <th>Egger’s regression [95% CrI]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>meta 1</td>
+      <td>85</td>
+      <td>0.23 [−0.01,0.45]</td>
+      <td>16 [0,48]</td>
+      <td>21 [0,51]</td>
+      <td>53 [33,73]</td>
+      <td>−0.13 [−0.59,0.27]</td>
+    </tr>
+    <tr>
+      <td>meta 2</td>
+      <td>87</td>
+      <td>0.20 [−0.01,0.40]</td>
+      <td>15 [0,46]</td>
+      <td>20 [0,49]</td>
+      <td>53 [34,74]</td>
+      <td>−0.12 [−0.55,0.28]</td>
+    </tr>
+  </tbody>
+</table>
+
+_k = number of estimates; CrI = credible intervals; I2 = heterogeneity._
+
+### Moderators of the relationship between dominance rank and bib size
 
 None of the three biological moderators studied (season, group composition and type of interactions) explained differences among studies (Table 3). Sampling effort (i.e. the ratio of interactions to individuals recorded) also was not an important moderator (Table 3).
 
-## Detection of publication bias
+**Table 3.**
+ Results of the multilevel meta-regressions testing the effect of several moderators on the relationship between dominance rank and bib size in male house sparrows.Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Meta-regression</th>
+      <th>Estimates</th>
+      <th>Mean [95% CrI]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>meta 1</td>
+      <td>intercept</td>
+      <td>0.17 [-0.11,0.46]</td>
+    </tr>
+    <tr>
+      <td>(k = 85)</td>
+      <td>season</td>
+      <td>−0.11 [-0.41,0.21]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>group composition</td>
+      <td>0.14 [-0.34,0.59]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>type of interactions</td>
+      <td>0.33 [-0.17,0.91]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R2marginal=</td>
+      <td>23 [2,48]</td>
+    </tr>
+    <tr>
+      <td>meta 2</td>
+      <td>intercept</td>
+      <td>0.15 [-0.10,0.45]</td>
+    </tr>
+    <tr>
+      <td>(k = 87)</td>
+      <td>season</td>
+      <td>−0.08 [-0.42,0.22]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>group composition</td>
+      <td>0.12 [-0.32,0.62]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>type of interactions</td>
+      <td>0.27 [-0.17,0.85]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R2marginal=</td>
+      <td>20 [0,45]</td>
+    </tr>
+    <tr>
+      <td>sampling effort</td>
+      <td>intercept</td>
+      <td>0.24 [-0.15,0.55]</td>
+    </tr>
+    <tr>
+      <td>(k = 61)</td>
+      <td>sampling effort</td>
+      <td>0.11 [-0.49,0.74]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sampling effort2</td>
+      <td>−0.14 [-0.77,0.43]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R2marginal=</td>
+      <td>8 [0,24]</td>
+    </tr>
+  </tbody>
+</table>
+
+_k = number of estimates; CrI = credible intervals; R2marginal = percentage of variance explained by the moderators. The factors season (non-breeding: 0, breeding: 1), group composition (mixed-sex: 0, male-only: 1), and type of interactions (all: 0, aggressive-only: 1) were mean-centred, and the covariates ‘sampling effort’ and its squared term were z-transformed._
+
+### Detection of publication bias
 
 There was no clear asymmetry in the funnel plots (Figure 2). Also, Egger’s regression tests did not show evidence of funnel plot asymmetry in any of the meta-analyses (Table 2). However, published effect sizes were larger than unpublished ones, and the latter were not different from zero (Table 4; Figure 3). Additionally, we found that the overall effect size decreased over time and approached zero (Table 4; Figure 4).
 
@@ -79,7 +400,55 @@ There was no clear asymmetry in the funnel plots (Figure 2). Also, Egger’s reg
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/37385/elife-37385-fig4-v1.jpg)
 
-**Figure 4.:** k = 53 estimates from 12 publications).The solid blue line represents the model estimate, and the shading shows the 95% credible intervals of a multilevel meta-regression based on published studies (see section ‘Detection of publication bias’). Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr). Circle area represents the size of the group of birds tested to obtain each estimate, where light blue denotes estimates for which group size is inflated due to birds from different groups being pooled, as opposed to dark blue where group size is accurate.
+**Figure 4.:** The solid blue line represents the model estimate, and the shading shows the 95% credible intervals of a multilevel meta-regression based on published studies (see section ‘Detection of publication bias’). Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr). Circle area represents the size of the group of birds tested to obtain each estimate, where light blue denotes estimates for which group size is inflated due to birds from different groups being pooled, as opposed to dark blue where group size is accurate.
+
+**Table 4.**
+ Results of the multilevel meta-regressions testing for time-lag and publication bias in the literature on status signalling in male house sparrows.Estimates are presented as standardized effect sizes using Fisher’s transformation (Zr). Credible intervals not overlapping zero are highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Meta-regression</th>
+      <th>Estimates</th>
+      <th>Mean [95% CrI]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>time-lag bias</td>
+      <td>intercept</td>
+      <td>0.26 [0.03,0.57]</td>
+    </tr>
+    <tr>
+      <td>(k = 53)</td>
+      <td>year of publication</td>
+      <td>−0.21 [-0.41,–0.01]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R2marginal=</td>
+      <td>29 [0,66]</td>
+    </tr>
+    <tr>
+      <td>published vs.</td>
+      <td>intercept</td>
+      <td>−0.09 [-0.37,0.18]</td>
+    </tr>
+    <tr>
+      <td>unpublished (k = 85)</td>
+      <td>publisheda</td>
+      <td>0.50 [0.19,0.81]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R2marginal=</td>
+      <td>38 [0,68]</td>
+    </tr>
+  </tbody>
+</table>
+
+_k = number of estimates; CrI = credible intervals; R2marginal = percentage of variance explained by the moderators; a relative to unpublished. Year of publication was z-transformed._
 
 ## Discussion
 
@@ -105,25 +474,25 @@ In conclusion, our results challenge an established textbook example of the stat
 
 ## Materials and methods
 
-## Systematic review
+### Systematic review
 
 We used several approaches to maximize the identification of relevant studies. First, we included all studies reported in a previous meta-analysis that tested the relationship between dominance rank and bib size in house sparrows (Nakagawa et al., 2007). Second, we conducted a keyword search on Web of Science, PubMed and Scopus from 2006 to June 2017 to find studies published after Nakagawa et al., 2007, using the combination of keywords [‘bib/badge’, ‘sparrow’, ‘dominance/status/fighting’]. Third, we screened all studies on house sparrows used in a meta-analysis that tested the relationship between dominance and plumage ornamentation across species (Santos et al., 2011) to identify additional studies that we may have missed in our keyword search. We screened titles and abstracts of all articles and removed the irrelevant articles before examining the full texts (Supplementary file 1). We followed the preferred reporting items for systematic reviews and meta-analyses (PRISMA: Moher et al., 2009); see ‘Reporting Standards Documents’). We only included articles in which dominance was directly inferred from agonistic dyadic interactions over resources such as food, water, sand baths or roosting sites (Appendix 1—table 1).
 
-## Summary data extraction
+### Summary data extraction
 
 Some studies had more than one effect size estimate per group of birds studied. When the presence of multiple estimates was due to the use of different statistical analyses on the same data, we chose a single estimate based on the following order of preference: (1) direct reports of effect size per group of birds studied (e.g. correlation coefficient), (2) inferential statistics (e.g. t, F and χ2 statistics) from analyses where group ID was accounted for and no other fixed effects were included, (3) direct reports of effect size where individuals from different groups where pooled together, (4) inferential statistics from models including other fixed effects. When the presence of multiple estimates was due to the use of different methods to estimate bib size and dominance rank on the same data, we chose a single estimate per group of birds or study based on the order of preference shown in Appendix 1—tables 1–3. In each case, the order of preference was determined prior to conducting any statistical analysis, and thus, method selection was blind to the outcome of the analyses (more details in Appendix 1).
 
-## Primary data acquisition
+### Primary data acquisition
 
 We requested primary data (i.e. agonistic dyadic interactions and bib size measures) of all relevant studies identified by our systematic review. Additionally, we asked authors to share, if available, any unpublished data that could be used to test the relationship between dominance rank and bib size in house sparrows. We emailed the corresponding author, but if no reply was received, we tried contacting all the other authors listed. One study (Møller, 1987) provided all primary data in the original publication and, therefore, its author was not contacted. Last, we included our own unpublished data (Appendix 1—table 5).
 
 Most studies recorded data from more than one group of birds (Table 1). For each primary dataset obtained, we inferred the dominance hierarchy of each group of birds from the observed agonistic dyadic interactions (wins and losses) among individuals using the randomized Elo-rating method, which estimates dominance hierarchies more precisely than other methods (Sánchez-Tójar et al., 2018b). We then used the provided measures of individual bib size (e.g. area outlined from pictures) or, if possible, calculated bib area from length and width measures following (Møller, 1987). Subsequently, we estimated the Spearman’s rho rank correlation (ρ) between individual rank and bib size for each group of birds. For one study (Buchanan et al., 2010), we received the already inferred dominance hierarchies for each group of birds, which we then correlated with bib size to obtain ρ.
 
-## Effect size coding
+### Effect size coding
 
 Regardless of their source (primary or summary data), we transformed all estimates (e.g. ρ, F statistics, etc) into Pearson’s correlation coefficients (r), and then into standardized effect sizes using Fisher’s transformation (Zr) for among-study comparison. We used the equations from Nakagawa et al., 2007 and Lajeunesse, 2013. Since log(0) is undefined, r values equal to 1.00 and −1.00 were transformed to 0.975 and −0.975, respectively, before calculating Zr. Zr values of 0.100, 0.310 and 0.549 were considered small, medium and large effect sizes, respectively (equivalent benchmarks from Cohen, 1988). When not reported directly, the number of individuals (n) was estimated from the degrees of freedom. The variance in Zr was calculated as: VZr = 1/(n-3). Estimates (k) based on less than four individuals were discarded (k = 33 estimates discarded).
 
-## Meta-analyses
+### Meta-analyses
 
 We ran two multilevel meta-analyses to test whether dominance rank and bib size were positively correlated across studies. The first meta-analysis, in other words ‘meta 1’, included published and unpublished (re-)analysed effect sizes (i.e. effect sizes estimated from the studies we obtained primary data from), plus the remaining published effect sizes obtained from summary data (i.e. effect sizes for which primary data were unavailable).
 
@@ -131,7 +500,7 @@ The second meta-analysis, in other words ‘meta 2’, tested the robustness of 
 
 We investigated inconsistency across studies by estimating the heterogeneity (I2) from our meta-analyses following Nakagawa and Santos, 2012b. I2 values around 25, 50% and 75% are considered as low, moderate and high levels of heterogeneity, respectively (Higgins et al., 2003).
 
-## Meta-regressions
+### Meta-regressions
 
 We tested if season, group composition and/or the type of interactions recorded had an effect on the meta-analytic mean. For that, we ran two multilevel meta-regressions that included the following moderators (hereafter ‘biological moderators’): (1) ‘season’, referring to whether the study was conducted during the non-breeding (September-February) or the breeding season (March-August); (2) ‘group composition’, referring to whether birds were kept in male-only or in mixed-sex groups; and, (3) ‘type of interactions’, referring to whether the dyadic interactions recorded were only aggressive (e.g. threats and pecks), or also included interactions that were not obviously aggressive (e.g. displacements). Because only three of 19 studies were conducted in the wild (k = 12 estimates; Table 1), we did not include a moderator testing for captive versus wild environments. The three biological moderators were mean-centred following Schielzeth, 2010 to aid interpretation.
 
@@ -139,11 +508,11 @@ The ratio of agonistic dyadic interactions recorded to the total number of inter
 
 For all meta-regressions, we estimated the percentage of variance explained by the moderators (R2marginal) following (Nakagawa and Schielzeth, 2013).
 
-## Random effects
+### Random effects
 
 All meta-analyses and meta-regressions included the two random effects ‘population ID’ and ‘study ID’. Population ID was related to the geographical location of the population of birds studied. We used Google maps to estimate the distance over land (i.e. avoiding large water bodies) among populations, and assumed the same population ID when the distance was below 50 km (13 populations; Table 1). Study ID encompassed those estimates obtained within each specific study (19 studies). Two studies tested the prediction twice for the same groups of birds (Table 1) and, within each population, some individuals may have been sampled more than once. However, we could not include ‘group ID’ and/or ‘individual ID’ as additional random effects due to either limited sample size or because the relevant data were not available.
 
-## Detection of publication bias
+### Detection of publication bias
 
 For the meta-analyses, we assessed publication bias using two methods that are based on the assumption that funnel plots should be symmetrical. First, we visually inspected asymmetry in funnel plots of meta-analytic residuals against the inverse of their precision (defined as the square root of the inverse of VZr) for each meta-analysis. Funnel plots based on meta-analytic residuals (the sum of effect-size-level effects and sampling-variance effects) are more appropriate than those based on effect sizes when multilevel models are used (Nakagawa and Santos, 2012b). Second, we ran Egger’s regressions using the meta-analytic residuals as the response variable, and the precision (see above) as the moderator (Nakagawa and Santos, 2012b) for each meta-analysis. If the intercept of such a regression does not overlap zero, estimates from the opposite direction to the meta-analytic mean might be missing and hence we consider this evidence of publication bias (Nakagawa and Santos, 2012b). Further, we tested whether published estimates differed from unpublished estimates. For that, we ran a multilevel meta-regression that included population ID and study ID as random effects, and ‘unpublished’ (two levels: yes (0), no (1)) as a moderator. This meta-regression was based on meta 1 (i.e. it did not include the two non-reported estimates). We did not use the trim-and-fill method (Duval and Tweedie, 2000a; Duval and Tweedie, 2000b) because this method has been advised against when significant heterogeneity is present (Moreno et al., 2009; Jennions et al., 2013), as it was the case in our meta-analyses (see section 'Results’).
 
@@ -151,6 +520,6 @@ Finally, we analysed temporal trends in effect sizes that could indicate ‘time
 
 All analyses were run in R v. 3.4.0 (R Core Team, 2017). We inferred individual dominance ranks from agonistic dyadic interactions using the randomized Elo-rating method from the R package ‘aniDom’ v. 0.1.3 (Farine and Sánchez-Tójar, 2017; Sánchez-Tójar et al., 2018b). Additionally, we described the dominance hierarchies observed in the groups of house sparrows for which primary data was available. For that we estimated the uncertainty of the dominance hierarchies using the R package ‘aniDom’ v. 0.1.3 (Farine and Sánchez-Tójar, 2017; Sánchez-Tójar et al., 2018b) and the triangle transitivity (McDonald and Shizuka, 2013) using the R package ‘compete’ 3.1.0 (Curley, 2016). We used the R package ‘MCMCglmm’ v. 2.24 (Hadfield, 2010) to run the multilevel meta-analytic (meta-regression) models (Hadfield and Nakagawa, 2010). For each meta-analysis and meta-regression, we ran three independent MCMC chains for 2 million iterations (thinning = 1,800, burn-in = 200,000) using inverse-Gamma priors (V = 1, nu = 0.002). Model chains were checked for convergence and mixing using the Gelman-Rubin statistic. The auto-correlation within the chains was <0.1 in all cases. For each meta-analysis and meta-regression, we chose the model with the lowest DIC value to extract the posterior mean and its 95% highest posterior density intervals (hereafter 95% credible interval). We report all data exclusion criteria applied and the results of all analyses conducted in our study.
 
-## Data and code availability
+### Data and code availability
 
 We provide all of the R code and data used for our analyses (Sánchez-Tójar et al., 2018a).

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.31414.001 Many animals can orient using the earth’s magnetic field. In a recent study, we performed three distinct behavioral assays providing evidence that the nematode Caenorhabditis elegans orients to earth-strength magnetic fields ( Vidal-Gadea et al., 2015 ). A new study by Landler et al. suggests that C. elegans does not orient to magnetic fields ( Landler et al., 2018 ). They also raise conceptual issues that cast doubt on our study. Here, we explain how they appear to have missed positive results in part by omitting controls and running assays longer than prescribed, so that worms switched their preferred migratory direction within single tests. We also highlight differences in experimental methods and interpretations that may explain our different results and conclusions. Together, these findings provide guidance on how to achieve robust magnetotaxis and reinforce our original finding that C. elegans is a suitable model system to study magnetoreception.
+Many animals can orient using the earth’s magnetic field. In a recent study, we performed three distinct behavioral assays providing evidence that the nematode Caenorhabditis elegans orients to earth-strength magnetic fields (Vidal-Gadea et al., 2015). A new study by Landler et al. suggests that C. elegans does not orient to magnetic fields (Landler et al., 2018). They also raise conceptual issues that cast doubt on our study. Here, we explain how they appear to have missed positive results in part by omitting controls and running assays longer than prescribed, so that worms switched their preferred migratory direction within single tests. We also highlight differences in experimental methods and interpretations that may explain our different results and conclusions. Together, these findings provide guidance on how to achieve robust magnetotaxis and reinforce our original finding that C. elegans is a suitable model system to study magnetoreception.
 
 ## Introduction
 
@@ -32,11 +32,11 @@ Landler et al., 2018 also raised conceptual issues with our findings and interpr
 
 ## Results and discussion
 
-## Overt differences in experimental methods
+### Overt differences in experimental methods
 
 Landler et al. attempted to reproduce our results with British worms by performing modified versions of three of our experiments. These modifications included worthwhile control measures and analysis that differed slightly from our original study. Unfortunately, it appears many of these experiments deviated from our described methods. For each experiment, they found negative results concluding that C. elegans may not orient to magnetic fields. Below, we discuss differences in experimental methods, analysis, and interpretation that may explain their failure to match our results.
 
-## Animal satiation states
+#### Animal satiation states
 
 One of the major differences between our methods and theirs was in the duration of the assays. In Vidal-Gadea et al., 2015 we experimentally determined and reported that 30 min away from food was sufficient to flip the magnetotaxis behavior of the worms from positive to negative. This was initially unexpected, because C. elegans does not flip its orientation preference after 30 min away from food for other orientation behaviors including chemotaxis to benzaldehyde. We therefore described this time as sufficient to induce the ‘starved’ state in animals, and went on to perform several experiments with worms in the ‘fed’ or ‘starved’ states. For ‘starved’ assays, we ensured that worms were away from food for 30 min prior to starting an experiment. From reading Landler et al., 2018 it is now clear that we did not explicitly mention that this definition of starvation implied that for worms to be tested in the ‘fed’ state, animals would need to complete their assay within 30 min.
 
@@ -44,15 +44,15 @@ With practice, we found that we could run our behavioral assays to near completi
 
 It is clear from Landler et al., 2018 that they decided to modify our magnet assay to last 60 min rather than 30 min precisely because they continued to see moving animals all the way until this time point (see their Methods). Unfortunately, this also implies that many worms participating in the assay (which they described was a sufficiently large number to make them deviate from our protocol) would have transitioned to the ‘starved’ state. By our described definition of ‘fed’ and ‘starved’ (also adopted by Landler et al.) they report testing animals under both ‘fed’ (first half of the assay), and ‘starved’ (second half of the assay) conditions. This issue may have been obviated when Landler et al. tested pre-starved worms (their Figure 3B); however, no-magnet controls and horizontal-oriented tube controls for these assays were not reported (see below). We believe this singular, and crucial, difference might explain their different results.
 
-## Animal rearing
+#### Animal rearing
 
 A second major difference between our methods involved the rearing conditions for our animals. Like many C. elegans labs, our worms were grown in laboratories maintained at 20°C. We deliberately kept animals away from artificial magnetic fields (generated by electrical equipment or wiring). Landler et al. grew their animals in incubators. This attempt at controlled culturing could have accidentally grown their animals under extreme magnetic and electric fields conditions generated by their incubators. This is not trivial. Recent studies demonstrated that extreme magnetic inhomogeneities are produced within these type of devices (Makinistian and Belyaev, 2018). For example, animals cultured mere centimeters apart would be exposed to fields differing by up to a factor of 36. This includes hypomagnetic field areas, where the absence of magnetic fields might affect the development of magnetic organs. Therefore, it appears that while rearing animals at 20°C Landler et al. might have unintentionally cultured animals under wildly variable magnetic conditions. This method might also produce preferences for a cultivation temperature in animals that could confound behavior when they are tested in a chamber with a different ambient temperature. We are not certain of what effect these conditions might produce in the magnetic machinery or behavior of worms, however we think it prudent to control magnetic exposure of animals to be used in magnetic studies.
 
-## Additional differences in experimental methods
+### Additional differences in experimental methods
 
 We next describe additional differences between our experiments that might have further contributed to their observations.
 
-## Burrowing assay
+#### Burrowing assay
 
 Landler et al., 2018 assayed whether N2 worms injected into agar-filled cylinders burrowed up or down. They report no bias for burrowing up or down, with or without an imposed inverted magnetic field.
 
@@ -62,7 +62,7 @@ Landler et al., 2018 suggested that unintended temperature gradients generated b
 
 Our burrowing experiments tested in the natural earth field showed that worms migrated differentially based on their global site of origin and satiation state. This observation undermines the likelihood of temperature gradients, or magnetite contamination, being responsible for our results. Furthermore, our findings that worms lacking the transduction channel encoded by the tax-4 gene, or by worms with genetically ablated AFD neurons, failed to burrow preferentially up or down in earth’s natural field strongly point to the involvement of these neurons and molecules in this behavior (Vidal-Gadea et al., 2015). None of these results are mentioned in Landler et al., 2018.
 
-## Horizontal plate assay
+#### Horizontal plate assay
 
 Landler et al., 2018 tested how worms migrate to the edge of a 10 cm diameter plate in a horizontal magnetic field where they were trapped by azide at the edge. Unlike our study, they found no significant degree of orientation in their migration.
 
@@ -70,11 +70,11 @@ In Landler et al., 2018, they point out that we treated each worm as an individu
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/31414/elife-31414-fig1-v1.jpg)
 
-**Figure 1.:** Vidal-Gadea et al., 2015 confirms strong orientation with respect to imposed magnetic field.Well-fed N2 worms were placed in the center of a 10 cm diameter plate and allowed to migrate freely for 30 min as an earth-strength magnetic field was imposed across the surface of the plate. Worms were trapped by sodium azide at the perimeter. The vector averages for each of the 28 assays (black lines) are plotted as well as the average of these vectors (red line). Vector average values are listed on right. This analysis found a significantly biased vector average of 94.7° (p<0.0001) that was not statistically different from our previously reported value of 132° based on the analysis of individual worms.
+**Figure 1.:** Well-fed N2 worms were placed in the center of a 10 cm diameter plate and allowed to migrate freely for 30 min as an earth-strength magnetic field was imposed across the surface of the plate. Worms were trapped by sodium azide at the perimeter. The vector averages for each of the 28 assays (black lines) are plotted as well as the average of these vectors (red line). Vector average values are listed on right. This analysis found a significantly biased vector average of 94.7° (p<0.0001) that was not statistically different from our previously reported value of 132° based on the analysis of individual worms.
 
 Landler et al., 2018 also noted that all worms in their magnetic field conditions are set by an experimenter not involved in the analysis. This blinding protocol was also the case for our original study, but not explicitly mentioned. Anecdotally, we expected British worms to migrate towards magnetic north, just like magnetotactic bacteria, but remained puzzled for months when our results unexpectedly showed them consistently migrating at a 132° angle with respect to magnetic north. This illustrates how our expectations did not affect our analysis or results. Indeed, we still do not know why worms prefer this particular angle, although we presented a parsimonious explanation that worms may choose a migratory direction based on the inclination of their native field.
 
-## Magnetotaxis assay
+#### Magnetotaxis assay
 
 Landler et al. also performed a modified version of our magnetotaxis assay, reporting that worms exhibited no preference for the magnet when compared with a Wilcoxon signed rank test to a control group (although the control group is not described or plotted in their manuscript). However, Landler et al. chose to extend their assay time. We feel it is unacceptable that they fail to display their control data due to implications described below.
 
@@ -90,25 +90,25 @@ To investigate the possibility that Landler et al. had obtained positive results
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/31414/elife-31414-fig2-v1.jpg)
 
-**Figure 2.:** Landler et al., 2018 by testing worms in both fed and starved states and omitting controls.(A) Comparison of magnetotaxis data reported by Vidal-Gadea et al., 2015 and Landler et al., 2018 obtained by measuring their plots. Figure 3B and F, and Figure 3B, Figure 3—figure supplement 1 were reproduced from Landler et al., 2018; published under the terms of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/)). Because Landler et al. omitted no-magnet control data, we used no-magnet control data from Vidal-Gadea et al., 2015. We found that Landler et al., 2018 worms fed OP50 bacteria (or OP50 plus 1% magnetite) show no significant orientation versus no-magnet control worms. (B) Under the hypothesis that Landler et al might have combined fed and starved worms because their assays were run for twice as long, we used the absolute value of the magnetotaxis index to reveal evidence that worms display a biased migration in the presence of a magnetic field (irrespective of the towards or away sign of their migration). We found that both magnet treatments in Landler et al., 2018 resulted in significantly biased migration when compared with no-magnet controls. (C) We also analyzed burrowing data from Landler et al., 2018 and used our horizontal controls because they were omitted in Landler et al., 2018. We demonstrate that combining data from fed and starved worm abolished significant burrowing indexes that were otherwise observed from each of these populations. Similarly, comparison of Landler et al., 2018 burrowing indices to our horizontal controls (N = 24) revealed no burrowing bias in their field up results for either fed or starved conditions. (D) However, when we compared the absolute value of burrowing bias we found that our combined fed + starved group, as well as Landler et al.’s ‘fed’ worms now showed significant bias when compared to horizontal controls. All tests based on Mann-Whitney Ranked Sum Tests.
+**Figure 2.:** (A) Comparison of magnetotaxis data reported by Vidal-Gadea et al., 2015 and Landler et al., 2018 obtained by measuring their plots. Figure 3B and F, and Figure 3B, Figure 3—figure supplement 1 were reproduced from Landler et al., 2018; published under the terms of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/)). Because Landler et al. omitted no-magnet control data, we used no-magnet control data from Vidal-Gadea et al., 2015. We found that Landler et al., 2018 worms fed OP50 bacteria (or OP50 plus 1% magnetite) show no significant orientation versus no-magnet control worms. (B) Under the hypothesis that Landler et al might have combined fed and starved worms because their assays were run for twice as long, we used the absolute value of the magnetotaxis index to reveal evidence that worms display a biased migration in the presence of a magnetic field (irrespective of the towards or away sign of their migration). We found that both magnet treatments in Landler et al., 2018 resulted in significantly biased migration when compared with no-magnet controls. (C) We also analyzed burrowing data from Landler et al., 2018 and used our horizontal controls because they were omitted in Landler et al., 2018. We demonstrate that combining data from fed and starved worm abolished significant burrowing indexes that were otherwise observed from each of these populations. Similarly, comparison of Landler et al., 2018 burrowing indices to our horizontal controls (N = 24) revealed no burrowing bias in their field up results for either fed or starved conditions. (D) However, when we compared the absolute value of burrowing bias we found that our combined fed + starved group, as well as Landler et al.’s ‘fed’ worms now showed significant bias when compared to horizontal controls. All tests based on Mann-Whitney Ranked Sum Tests.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31414/elife-31414-fig3-v1.jpg)
 
-**Figure 3.:** C. elegans magnetotaxis trajectory.(A) The direction of iron filings scattered across an assay plate reveals the general shape of magnetic field emanating from a 1.5’ diameter magnet, north-facing up beneath the plate. (B) Side view of magnetic field lines and their vertical and horizontal components across the surface of the agar-filled plate. Magnet and plate shown to scale. Field line strength not to scale. Gray arrowheads denote start location for worms and points where azide was spotted above the magnet and control goals. (C) Top view of horizontal component of magnetic field (red arrows) across the surface of the agar-filled plate. Note that magnetic north points directly away from the center of the magnet everywhere on the plate. Wild-type N2 worms prefer to move at 132° to magnetic north, which predicts the trajectory (purple arrows and line). Field lines not to scale. (D) Strength of the total magnetic field and its vertical and horizontal components across the agar surface. (E) Inclination angle of the magnetic field across the agar surface. (F) Majority of observed trajectories for N2 worms in the magnetotaxis assay arc left of magnet consistent with prediction.
+**Figure 3.:** (A) The direction of iron filings scattered across an assay plate reveals the general shape of magnetic field emanating from a 1.5’ diameter magnet, north-facing up beneath the plate. (B) Side view of magnetic field lines and their vertical and horizontal components across the surface of the agar-filled plate. Magnet and plate shown to scale. Field line strength not to scale. Gray arrowheads denote start location for worms and points where azide was spotted above the magnet and control goals. (C) Top view of horizontal component of magnetic field (red arrows) across the surface of the agar-filled plate. Note that magnetic north points directly away from the center of the magnet everywhere on the plate. Wild-type N2 worms prefer to move at 132° to magnetic north, which predicts the trajectory (purple arrows and line). Field lines not to scale. (D) Strength of the total magnetic field and its vertical and horizontal components across the agar surface. (E) Inclination angle of the magnetic field across the agar surface. (F) Majority of observed trajectories for N2 worms in the magnetotaxis assay arc left of magnet consistent with prediction.
 
-## New behavioral experiments support original study
+### New behavioral experiments support original study
 
-## Reproduction by independent labs
+#### Reproduction by independent labs
 
 Since our initial description of this behavior in C. elegans (Vidal-Gadea and Pierce-Shimomura, 2012a), we are aware of several groups joining the study of magnetic field detection using nematodes. While conducting our original study, Ilan et al. (2013) reported that parasitic nematodes migrated preferentially south over north when placed in a magnetic field. We recently became aware of a group at the University of Quilmes, Argentina who independently reproduced our findings with minor modifications (Vidal-Gadea et al., 2018).
 
 Landler et al., 2018 notes that a study by Njus et al., 2015 reported that worms failed to respond to magnetic fields. Njus et al. restricted their study to crawling velocity and omega bends and not orientation. Nevertheless, in Figure 6 of Njus et al., 2015, they show a 10 ± 7% to 90 ± 20% change omega bends when a 5-mT magnetic field was introduced or removed respectively. Such difference in turns would have a significant effect on course trajectory and orientation. Rather than comparing these paired measurements to each other, Njus et al. compared them to the number of worms turning in the absence of a magnetic stimuli for which they report an average of 70 ± 50%. A 50% variability in omega bends is surprising and not consistent with previous reports in the literature (e.g. Vidal-Gadea et al., 2012), or even with the variability they report for the rest of their data (22.5 ± 8%, obtained by measuring and averaging standard deviations from test conditions reported by Njus et al., 2015: Figure 6). Not surprisingly, no test condition was significantly different from such a variable control. Therefore, the Njus et al., 2015 study appears to offer little evidence to counter the idea that C. elegans orients to magnetic fields.
 
-## Conceptual issues regarding magnetic orientation in C. elegans
+### Conceptual issues regarding magnetic orientation in C. elegans
 
 In addition to methodological issues, Landler et al., 2018 raise two conceptual issues regarding our original study that we address below.
 
-## Magnetotaxis assay trajectories
+#### Magnetotaxis assay trajectories
 
 How do worms move in our magnetotaxis assay? As described above, worms are placed in the center of an agar-filled Petri plate with a 0.29 T strength, 1.5-inch diameter, neodymium magnet placed north-side facing up 1 cm beneath the agar surface on one side of the plate (Figure 3A–C). Azide is pipetted on magnet and control sides to immobilize worms that reach either location. Landler et al., (2017) correctly point out that the intensity of the magnetic field generated by the magnet is many times stronger than the earth’s field. They ask how could worms orient to this magnetic gradient if they never encountered magnetic fields this size during their course of evolution.
 
@@ -120,7 +120,7 @@ Armed with an empirically validated model of the magnetic field in our plates, w
 
 Taken together, this reanalysis of data from our 2015 study unifies the migratory patterns observed in all three behavioral assays and yields new predictions strengthening our original findings.
 
-## Magnetic orientation in three-dimensions
+##### Magnetic orientation in three-dimensions
 
 In our original study, we observed that different wild C. elegans strains isolated from different locations on the earth migrate at a different particular angle relative to magnetic north. For instance, relative to magnetic north, well-fed worms from Britain accumulate on average at 132°, Australian worms at 302°, and Hawaiian worms at 121°. Moreover, when worms were starved, each strain migrated ~180° relative to the preferred angle when well fed. In our study, we made the parsimonious hypothesis that these different angles may relate to the different inclination angle of the earth’s magnetic field at each location.
 
@@ -130,16 +130,16 @@ We were also puzzled how worms migrated at a particular angle to 2D magnetic fie
 
 We still do not understand how or why worms behave this way, and are not wedded to any particular hypothesis. As the first study of magnetic orientation in C. elegans, we do not feel that we must provide a mechanistic explanation for a finding that we do not yet fully understand. We tend to agree with Landler et al. and others in their observation that magnetic orientation alone is unlikely to be the only way worms navigate vertically. In our original study we did not hypothesize that worms orient in three dimensions solely by employing their magnetic sense. Organisms known to use the earth magnetic field in orientation also rely on additional sensory modalities to accomplish their behaviors. This is true of magnetotactic bacteria (which combine magnetotaxis with chemotaxis) and birds (which rely on vision for much of their migrations) (Chen et al., 2010; Muheim et al., 2016). For C. elegans, the AFD sensory neurons are clearly established as thermosensory, but are also involved in humidity, and CO2 detection (Mori and Ohshima, 1995; Bretscher et al., 2011; Russell et al., 2014). As we noted in Vidal-Gadea et al., 2015, these environmental parameters are stratified vertically in the soil, although the direction of their gradients can vary independently for each parameter. Consider for example the reversal of the vertical temperature gradient in the soil during daytime vs nighttime, or reversals in humidity gradients during a rainfall vs following a rain. These complex cues likely provide worms with reliable information about the vertical dimension. However, because each of these cues regularly reverse their gradients, they are less likely to provide reliable orientation information (i.e. which way is up or down). We hypothesize that magnetosensation allows worms to disambiguate directional information associated with other environmental cues.
 
-## Conclusion
+### Conclusion
 
 Magnetic orientation may be challenging to test in C. elegans, but worthwhile to get a foothold in discovering some of the first evidence for cellular and molecular basis for magnetoreception in animals.
 
 ## Materials and methods
 
-## Estimation of magnetic field
+### Estimation of magnetic field
 
 We used the K and J Magnetics magnetic field calculator to approximate field strength over distance and validated the resulting field components with our DC milligauss meter model mgm magnetometer (Alphalab, Utah).
 
-## Statistics
+### Statistics
 
 Vectorial data were analyzed as previously described (Vidal-Gadea et al., 2015) using Circular Toolbox for Matlab (Mathworks). Following Landler et al., (2017), animals were not pooled but each assay was rather treated as a unit. We conducted Rayleigh tests to determine probability of deviation from circular distribution. Non- parametric groups were compared using Mann-Whitney Ranked Sum tests.

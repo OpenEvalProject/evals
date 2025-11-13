@@ -18,23 +18,23 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Center for Genomics and Systems Biology, New York University New York United States
-2. https://ror.org/03nawhv43 Department of Nematology and Department of Botany & Plant Sciences, University of California, Riverside Riverside United States
-3. https://ror.org/03nawhv43 Center for Plant Cell Biology, Institute for Integrative Genome Biology, University of California, Riverside Riverside United States
-4. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
-5. https://ror.org/0593p4448 International Rice Research Institute Los Baños Philippines
-6. https://ror.org/03qnxaf80 Department of Biological Sciences, Fordham University Bronx United States
+1. Center for Genomics and Systems Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Nematology and Department of Botany & Plant Sciences, University of California, Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+3. Center for Plant Cell Biology, Institute for Integrative Genome Biology, University of California, Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+4. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. International Rice Research Institute Los Baños Philippines ([ROR:0593p4448](https://ror.org/0593p4448))
+6. Department of Biological Sciences, Fordham University Bronx United States ([ROR:03qnxaf80](https://ror.org/03qnxaf80))
 7. Inari Agriculture Nv Gent Belgium
-8. https://ror.org/030s54078 Institute of Crop Science, University of the Philippines Los Baños Philippines
-9. https://ror.org/05wf2ga96 New York Genome Center New York United States
-10. https://ror.org/055r0va70 International Center for Biosaline Agriculture Dubai United Arab Emirates
-11. https://ror.org/002rjbv21 Département de Chimie, Université du Quebéc à Montréal Montreal Canada
+8. Institute of Crop Science, University of the Philippines Los Baños Philippines ([ROR:030s54078](https://ror.org/030s54078))
+9. New York Genome Center New York United States ([ROR:05wf2ga96](https://ror.org/05wf2ga96))
+10. International Center for Biosaline Agriculture Dubai United Arab Emirates ([ROR:055r0va70](https://ror.org/055r0va70))
+11. Département de Chimie, Université du Quebéc à Montréal Montreal Canada ([ROR:002rjbv21](https://ror.org/002rjbv21))
 
 † Corresponding author
 
 ## Abstract
 
-Populations can adapt to stressful environments through changes in gene expression. However, the fitness effect of gene expression in mediating stress response and adaptation remains largely unexplored. Here, we use an integrative field dataset obtained from 780 plants of Oryza sativa ssp. indica (rice) grown in a field experiment under normal or moderate salt stress conditions to examine selection and evolution of gene expression variation under salinity stress conditions. We find that salinity stress induces increased selective pressure on gene expression. Further, we show that trans -eQTLs rather than cis -eQTLs are primarily associated with rice’s gene expression under salinity stress, potentially via a few master-regulators. Importantly, and contrary to the expectations, we find that cis-trans reinforcement is more common than cis-trans compensation which may be reflective of rice diversification subsequent to domestication. We further identify genetic fixation as the likely mechanism underlying this compensation/reinforcement. Additionally, we show that cis - and trans -eQTLs are under balancing and purifying selection, respectively, giving us insights into the evolutionary dynamics of gene expression variation. By examining genomic, transcriptomic, and phenotypic variation across a rice population, we gain insights into the molecular and genetic landscape underlying adaptive salinity stress responses, which is relevant for other crops and other stresses.
+Populations can adapt to stressful environments through changes in gene expression. However, the fitness effect of gene expression in mediating stress response and adaptation remains largely unexplored. Here, we use an integrative field dataset obtained from 780 plants of Oryza sativa ssp. indica (rice) grown in a field experiment under normal or moderate salt stress conditions to examine selection and evolution of gene expression variation under salinity stress conditions. We find that salinity stress induces increased selective pressure on gene expression. Further, we show that trans-eQTLs rather than cis-eQTLs are primarily associated with rice’s gene expression under salinity stress, potentially via a few master-regulators. Importantly, and contrary to the expectations, we find that cis-trans reinforcement is more common than cis-trans compensation which may be reflective of rice diversification subsequent to domestication. We further identify genetic fixation as the likely mechanism underlying this compensation/reinforcement. Additionally, we show that cis- and trans-eQTLs are under balancing and purifying selection, respectively, giving us insights into the evolutionary dynamics of gene expression variation. By examining genomic, transcriptomic, and phenotypic variation across a rice population, we gain insights into the molecular and genetic landscape underlying adaptive salinity stress responses, which is relevant for other crops and other stresses.
 
 ## Introduction
 
@@ -48,23 +48,102 @@ Here, we use an integrative system genomics approach to comprehensively dissect 
 
 ## Results
 
-## Variation in transcript abundance
+### Variation in transcript abundance
 
 To understand the microevolutionary dynamics of gene expression variation under salinity stress, we first investigated variation in transcript abundance in 130 accessions of O. sativa ssp. indica. We conducted a field experiment in the dry season of 2017 (January-May) at the International Rice Research Institute in Los Baños, Laguna, Philippines. Three replicates of each accession were planted separately in a normal wet paddy field as well as a similar field in which plants were exposed to moderate salinity stress (salt levels maintained at 6 dSm–1) maintained until maturity. Average fecundity was significantly lower in the saline field than in normal conditions (Figure 1a; two-tailed paired t-test p=1.658 x 10–8) with most of genotypes having significantly lower fecundity in the saline field (n=94; one-sample proportion test p=3.639 x 10–7).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig1-v1.jpg)
+
+**Figure 1.:** (a) The O. sativa ssp. indica populations showed higher average fitness in the normal (blue) and saline (pink) field (two-tailed paired t-test p=1.658 x 10–8) and fitness further showed a significant effects of genotype (G) and environment (E); genotype ×environment (G×E) was not significant. Analysis of variance (ANOVA) [G and E (p<0.001), G×E (p=0.49)]; n=130 accessions. (b) Broad-sense heritability (H2) distribution of Oryza sativa spp. indica transcripts. Two-way ANOVA, genotype FDR-adjusted q<0.001, n=130 accessions. (c–e) The strength of linear selection |S|, linear selection differentials (S), and quadratic selection differentials (C) for genome-wide gene expression in normal (blue) and saline (pink) conditions. X-axes represent a theoretical quantile for normal distribution with mean = 0 and standard deviation = 1. (f) Conditionally neutral (light gray), and antagonistically pleiotropic transcripts (blue and magenta represent beneficial expression in normal and saline conditions, respectively). Black represents transcripts experiencing selection in the same direction in both environments (expression is beneficial or detrimental in both environments).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Enrichment statistics provided in Supplementary file 4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) cis-eQTL (SNP = Chr12:4512002) for PSAN (OS12T0189400-01). (b) trans-eQTL (SNP = Chr02:2755240) for CRR7 (OS01T0763700-01). eQTL statistics provided in Supplementary file 10. X-axis represents the eQTL SNP haplotypes, y-axis represents normalized transcript expression in normal conditions. Numbers inside box plots represent the number of accessions in each group. p-value indicates the one-sided Wilcoxon-test significance.
+
 To examine gene expression in the field, mRNA levels were measured in leaf blades from 780 plants (130 accessions in triplicates for each environment) via 3’-end-biased mRNA sequencing (Meyer et al., 2011). Leaf blades were sampled 38 days after sowing (DAS), corresponding to 7 days of plants being exposed to stress in the saline field. Population variance in gene expression of 18,141 widely expressed transcripts was partitioned into genotype (G), environment (E), and genotype ×environment (G×E) effects using a two-way mixed analyses of variance (ANOVA) with environment as a fixed effect and genotype and genotype ×environment as random effects (Supplementary file 1). At a conservative false discovery rate (FDR) of 0.001, all but 3 transcripts displayed a significant genotype effect, indicating that expression levels of most transcripts are heritable. This effect of genotype is reflected in the broad-sense heritability (H2) distribution of gene expression levels (Figure 1b), which had a median value H2=0.53 (range of 0.012–0.987; Supplementary file 1). In addition to the high levels of heritability, 16,371 transcripts had a significant G×E term, indicating that for many transcripts, genotypes showed heritably different levels of expression in different environments. The significant G×E indicates genetic variation for plasticity, indicating that this plasticity can evolve. Although we see a widespread heritable plastic response in gene expression, we found no evidence of genotype-dependent plasticity in fitness (G×E for fitness p=0.49; Figure 1a), indicating that the G×E of transcripts does not translate to the complex trait of fitness. This could be due to a combination of factors, like gene interactions (pleiotropy and epistasis) leading to little to no effect on fitness, or environment specific genotype-dependent gene regulation (environment specific eQTLs). Furthermore, only a relatively small number of transcripts (254) showed significant variation due to E, indicating genotype-independent plasticity in gene expression for only a small fraction of genes.
 
-## Selection on gene expression
+### Selection on gene expression
 
 To identify transcripts associated with high fitness in normal and saline environments, we measured the strength of selection on gene transcript levels. We did this using phenotypic selection analysis (Lande and Arnold, 1983), taking the total number of filled rice seeds/grains (total fecundity) as a proxy for fitness (Groen et al., 2020). We estimated the linear (S) and quadratic (C) selection differentials, which are estimates for directional (negative or positive S) selection, and stabilizing (negative C) or disruptive (positive C) selection. We calculated the raw (S and C), variance-standardized (Ss and Cs), and mean-standardized differentials (Sm and Cm). We found that both mean and variance of transcript expression vary significantly between conditions (Mann-Whitney U-test, mean and standard deviation: p<2.2 x 10–16), which means that the interpretation of the strength of selection based on either of these differentials could be misleading (Supplementary file 2). To overcome this, and given that we were interested in selection on gene expression, which were all measured in the same units, we used the non-standardized raw selection differentials for all downstream analyses. We also report the mean- and variance-standardized selection coefficients (Supplementary file 3). From hereon, we use positive and negative directional selection to represent the case where higher fitness is associated with increase and decrease in trait value, respectively. Stabilizing and disruptive selection similarly represent the situations where higher fitness is associated with average vs extreme value of the trait, respectively. In contrast, we limit the use of positive and purifying selection to their molecular evolution definition, that is to represent the case where increase in fitness is associated with derived and ancestral allele, respectively. Lastly, balancing selection refers to the circumstance where multiple alleles are maintained in the population which is associated with increased fitness.
 
 Most transcripts were (nearly) neutral (|S|<0.1) in both the normal and saline environments (Figure 1c). Additionally, within the normal environment, there was a general trend towards stronger positive (9654 transcripts with S>0) compared to negative (8,415 transcripts with S<0) selection on gene expression, indicating that higher expression of transcribed genes is associated with greater fitness (Table 1, Mann-Whitney U-test, normal: p=3.95 x 10–15). In comparison, although the strength of positive directional selection was higher than that of negative directional selection in the saline field, higher expression of most of the transcribed genes is associated with lower fitness (Table 1, Mann-Whitney U-test, saline: p=0.0068). Although no transcripts cleared the Bonferroni correction threshold in saline conditions, under normal conditions 17 transcripts cleared the threshold, 13 of which were under positive directional selection (Supplementary file 3).
 
+**Table 1.**
+ Summary statistics of selection on gene expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>Control</th>
+      <th>Salt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Median |S|</td>
+      <td>0.0501</td>
+      <td>0.0507</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S&gt;0</td>
+      <td># Transcripts</td>
+      <td>9654</td>
+      <td>8885</td>
+    </tr>
+    <tr>
+      <td>Median S</td>
+      <td>0.053</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S&lt;0</td>
+      <td># Transcripts</td>
+      <td>8415</td>
+      <td>9133</td>
+    </tr>
+    <tr>
+      <td>Median S</td>
+      <td>–0.047</td>
+      <td>–0.050</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C&gt;0</td>
+      <td># Transcripts</td>
+      <td>7175</td>
+      <td>8713</td>
+    </tr>
+    <tr>
+      <td>Median C</td>
+      <td>0.077</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C&lt;0</td>
+      <td># Transcripts</td>
+      <td>10894</td>
+      <td>9304</td>
+    </tr>
+    <tr>
+      <td>Median C</td>
+      <td>–0.096</td>
+      <td>–0.111</td>
+    </tr>
+  </tbody>
+</table>
+
+_S and C represent the linear and quadratic selection differentials._
+
 We also found that a high proportion of transcripts experienced stabilizing selection (C<0) in both normal and saline environments. This effect was pronounced under normal conditions, with the strength of stabilizing selection being stronger than that of disruptive selection (Table 1; Mann-Whitney U-test, normal: p<2.2 x 10–16). In contrast, within the saline environment, there was no detectable difference between the strength of stabilizing and disruptive selection (Mann-Whitney U-test, normal: p=0.514), due to a higher proportion of transcripts experiencing stronger disruptive selection. This indicates that in the saline environment, as compared to normal conditions, an increase in fitness is associated with extremes in transcript abundance.
 
 Comparing the distribution of selection differentials between environmental conditions, we found that selection was stronger in the saline field compared to the normal wet paddy field (Table 1; Figure 1d and e). This was true for the overall strength of directional selection (Mann-Whitney U-test, p=0.012), as well as for negative directional (p=8.27 × 10–6), stabilizing (p<2.2 x 10–16) and disruptive (p<2.2 x 10–16) selection, but not positive directional selection (p=0.735).
 
-## Gene expression trade-offs
+### Gene expression trade-offs
 
 Next we compared the proportions of genes showing an opposite direction of selection in across environments (antagonistic pleiotropy- AP) and those showing selection in only one environment (conditional neutrality- CN; Anderson et al., 2011). Since the detection of CN relies on p-value being significant in only one environment, compared to the detection of AP which relies on p-value being significant in both environments, this introduces a bias towards the detection of CN. To account for this inherent bias, we used a more stringent p-value cutoff to define CN (a transcript with p<0.025 in one environment and p>0.05 in the other environment) in comparison to AP (a transcript with p<0.05 in both environments and opposite directionality of S; Groen et al., 2020; Siddiqui et al., 2021). We found that 10.80% of the transcripts showed selection patterns consistent with CN, while only 0.28% of transcripts showed AP (Figure 1f; Supplementary file 4). The proportion of transcripts showing CN was greater than expected by chance and greater than the proportion showing AP two-tailed proportion z-test p<2.2 x 10–16. These results are consistent with a lack of trade-offs in which the expression of a gene is favored in one environment and disfavored in another.
 
@@ -72,9 +151,15 @@ Among the 51 AP transcripts, increased expression of 38 was beneficial only in n
 
 We then wondered whether any difference underlie gene regulation of these AP transcripts relative to the non-AP transcripts, potentially indicating the genetic basis for this trade-off. We identified single nucleotide polymorphisms (SNPs) associated with transcript expression levels in each environment separately using whole-genome polymorphism data (expression quantitative trait loci [eQTL] analyses; see below). We found SNPs regulating expression of two photosynthesis related AP transcripts (PSAN and CRR7) only in the normal environment (Figure 1—figure supplement 2). We further looked at the 13 AP transcripts that were beneficial only in the saline environment (Supplementary file 4). Although there was no significant GO enrichment for these transcripts, among them we identified a cyclophilin-encoding transcript (OsCYP2), which has been shown to confer salt tolerance in rice (Lee et al., 2015; Roy et al., 2022; Ruan et al., 2011). However, no SNP was associated with the expression of this gene in either normal or saline conditions.
 
-## Biological processes under selection
+### Biological processes under selection
 
 To investigate the broader biological processes associated with differential selection (strong directional selection in only one environment), we ranked all GO biological processes by their median directional selection strength in each environment and identified the processes with significantly stronger selection relative to their respective environment. We identified 13 and 18 processes that were under strong differential selection in normal and saline conditions, respectively (Supplementary file 5; Figure 2a). Processes primarily involved in various aspects of growth and defense were under stronger selection in normal conditions, whereas processes associated with regulation of flowering, cell cycle control and reproduction showed stronger selection under saline conditions (Figure 2a). This provides insight into the specific biological processes related to changes in flowering time and reduced yield, both of which have been associated with salinity stress in multiple species (Chang et al., 2019; Li et al., 2007; Zandt and Mopper, 2002; Zhang et al., 2022b). Furthermore, studies have found that the osmotic stress induced by salinity causes a reduction in the cyclin-dependent kinases (CDKs) responsible for cell-cycle transitions (G1/S and G2/M; Ma et al., 2015; Schuppler et al., 1998; West et al., 2004). Aligned with this, our study also supports the notion that salinity stress affects cell cycle regulation, and leads to reduced growth and reproduction.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig2-v1.jpg)
+
+**Figure 2.:** (a) GO biological processes under stronger selection in normal (blue) and saline conditions (pink). Error bars represent 95% confindence intervals. around the median. (b) Linear selection gradients (β), along with direct (D), indirect (I) and total (T) responses to selection on suites of transcripts in normal (blue) and saline conditions (pink).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig2-figsupp1-v1.jpg)
 
 Gene expression usually operates within the context of robust gene interaction/regulatory networks (Amiri et al., 2018; Israel et al., 2016; Ko and Brandizzi, 2020). Selection acting on these interacting genes is one of leading causes of indirect selection, which can constrain the response of a population to selection on gene expression (Agrawal and Whitlock, 2010; Groen et al., 2020; Kondrashov and Houle, 1994). To examine this phenomenon, we identified suites of correlated transcripts using principal component (PC) analysis on genome-wide gene expression levels. We then estimated the linear (β) and quadratic selection (γ) gradients for PCs explaining over 0.5% of variance in each environment (Supplementary file 6). Although quadratic selection was generally weak, linear selection on some PCs showed significant directional selection (Supplementary file 7).
 
@@ -82,7 +167,7 @@ Using the breeder’s equation (Falconer and Mackay, 1996), we predicted the res
 
 We found PCs enriched for metabolic pathways and biosynthesis of phenylpropanoids and secondary metabolites to be under selection in the normal environment (Figure 2a; Figure 2—figure supplement 1; Supplementary file 7). Different transcripts involved in these pathways were under positive and negative directional selection which may act to keep these pathways in a steady-state. Interestingly, circadian rhythm was found to be under positive directional selection, with an overall positive response to selection, in the saline environment (Figure 2a; Figure 2—figure supplement 1; Supplementary file 7). This is in alignment with the role of circadian clock genes in conferring salt tolerance (Kim et al., 2013; Wei et al., 2021; Xu et al., 2022), and indicates a tentative increase in expression of circadian clock genes with continuous exposure to soil salinity.
 
-## Salinity stress induces decoherence
+### Salinity stress induces decoherence
 
 Gene expression levels are generally correlated, but these correlations can be perturbed by environmental stresses, a phenomenon that is termed decoherence (Lea et al., 2019). Such decoherence has been demonstrated in humans and primates (Lea et al., 2019; Pu et al., 2022; Watowich et al., 2022), but little is known about how stress alters the correlation structure of specific transcripts pairs, and functional groups of transcripts, in plants. To examine decoherence in rice, we utilized the recently developed CILP (Correlation by Individual Level Product) method (Lea et al., 2019), which detects the systematic loss of correlation in gene expression among individuals. Since CILP calculates product correlations for all possible pairs of genes, we used transcripts with selection strengths greater than 0.1 (|S|>0.1) in at least one environment with expression greater than 0 in at least 50% of individuals (2051 transcripts; Supplementary file 8) to reduce data dimensionality.
 
@@ -92,15 +177,41 @@ We found that the correlation structure for gene expression was broadly similar 
 
 **Figure 3.:** (a) Pearson correlation coefficients between pairs of transcripts (|S|>0.1 and expression greater than 0 in at least 50% individuals) in normal (x-axis) and saline conditions (y-axis). Pink and blue represent pairs with correlation stronger in saline and normal conditions, respectively; gray represents correlation that is not significantly different between conditions. (b) Enrichment of transcripts with significant pairs greater than the median (median significant pair per transcript = 12, n=853) involved in regulatory decoherence post salt exposure.
 
-## Selection on organismal traits
+### Selection on organismal traits
 
 In addition to gene expression data, we also collected phenotypic data for 13 organismal traits in normal and saline conditions, which provides us with the opportunity to examine how salt stress influences complex phenotypes and identify connections between variation in traits with fitness consequences and underlying patterns of gene expression (Figure 4). Since these traits were measured on different scales, we estimated variance-standardized selection gradients on these traits, focusing only on seven traits that were not strongly correlated to limit the contribution of indirect selection (Pearson correlation coefficient <0.6; Figure 4—figure supplement 1). We identified three traits – leaf osmotic potential (LOP), chlorophyll a content (Chl_a), and flowering time (FT) – that displayed different selection patterns in normal versus saline environments (Figure 4; Supplementary file 9).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig4-v1.jpg)
+
+**Figure 4.:** Linear (β) and quadratic (γ) selection gradients on the traits LOP (leaf osmotic potential), Chl_a (chlorophyll a content), and FT (flowering time). Error bars represent mean ± SE (nnormal: 384; nsalt:365); dots and asterisks indicate significance of selection-gradient at two-sided unadjusted p<0.1 and p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Highlighted black boxes indicate the uncorrelated traits chosen for selection analyses. Numbers inside the boxes and the heatmap represent Pearson correlation coefficients. V_LOP: Leaf Osmotic Potential; Na: Sodium content; K: Potassium content; chl_a and chl_b: Chlorophyll a and b content, respectively; Cx +c: Total carotenoid content; DaystoFlower: First day of flowering; Daysto50Flower: Day on which 50% of plants in a plot flowered (focal plant and its nine neighboring plants); T1 and T2 represent vegetative and reproductive timepoints, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Paired t-test (two-sided paired t-test p=0.001) showed significant reduction in flowering times after salt treatment, indicating earlier flowering saline conditions.
+
 Leaf osmotic potential is a key trait associated with water transport in plants, and which decreases with increasing salinity, leading to low water uptake by the plant. This trait was under positive directional selection in the control environment but under stabilizing selection under saline conditions, which suggests that an optimal LOP is important under salt stress (Figure 4). Furthermore, we found Chl_a content at the reproductive stage to be under negative directional selection in saline conditions. Although ion toxicity has previously been shown to reduce chlorophyll content (Ashraf and Bhatti, 2000; Taïbi et al., 2016), our results showed that this reduction is associated with increased survival and reproductive fitness, consistent with the general trend for reduced photosynthesis under salinity stress. We also found that FT was under positive directional selection (selection for later flowering) in normal conditions but under stabilizing selection in saline conditions (Figure 4). Moreover, FT was significantly reduced under saline conditions (two-tailed paired t-test p=0.0012; Figure 4—figure supplement 2), implying that salt stress selects for an earlier flowering compared to that in the normal wet paddy.
 
-## Genetic architecture of gene expression variation
+### Genetic architecture of gene expression variation
 
 To dissect the genetic architecture of gene expression variation, we identified expression quantitative trait loci (eQTLs) and examined whether and how selection acts on these eQTLs (Figure 5). We identified cis- and trans-eQTLs (FDR <0.001) regulating expression of 3065 and 3277 genes in normal and salinity stress conditions, respectively (Supplementary file 10). The median number of cis- and trans-eQTLs regulating the expression of a gene were similar between environments (median eQTL per gene cis-normal=14, cis-saline=13, trans-normal=5, trans-saline=4). We observed that 49.64% (29,623 of a total 59,669) of cis-eQTLs were common in both environments, as compared to 18.62% (25,528 of a total 137,100) of trans-eQTLs; this result was robust to FDR cutoff (FDR of 0.01 and 0.05). This is consistent with previous observations from studies on other species that have found 48–77% overlapping cis-eQTLs and 9–60% common trans-eQTLs across environments (Smith and Kruglyak, 2008; Snoek et al., 2012; Sterken et al., 2023). Moreover, comparing the effect sizes of the two categories of eQTLs, we found that trans-eQTLs explain more variation in transcript abundance as compared to cis-eQTLs in both environments (two-tailed t-test p<10–16; mean effect size: cis-normal=0.77, trans-normal=1.04, cis-saline=0.80, trans-saline=1.08). This further indicates that trans-eQTLs might be more environment-specific than cis-eQTLs. We tested this explicitly by identifying loci showing gene-environment interaction (G×eQTL) and found that at FDR of 0.05, cis-eQTLs constituted merely 0.28% (142 of 50718) of the total identified G×eQTLs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig5-v1.jpg)
+
+**Figure 5.:** (a) Effect sizes of genes with both cis and trans factors under saline conditions showing excess of reinforcing cis-trans (teal) in comparison to compensating cis-trans (salmon). (b) Inter-varietal variation in gene expression for genes under compensating control is significantly lower than for those under reinforcing control; one-sided Mann-Whitney p=0.0028. c, Frequency distribution of MAF (minor allele frequency) for cis-eQTLs (blue) and trans-eQTLs (yellow) in saline conditions against the genome-wide background (gray).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** X-axes indicate genomic locations of 100 kb nonoverlapping windows for which the total numbers of unique genes regulated were calculated (Y-axis). Hotspots were defined as windows regulating expression of over 30 genes; there were 0 hotspots in normal conditions (max number of genes = 28), and 11 hotspots in saline conditions. Gray horizontal line represents the cutoff of 30 genes.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Effect sizes of genes with both cis and trans factors showing excess of cis-trans reinforcement (teal) in comparison to cis-trans compensation (salmon). (B) Inter-varietal differences in gene expression for genes under compensating control is significantly lower than that for genes under reinforcing control; one-sided Mann-Whitney p=0.026.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/99352/elife-99352-fig5-figsupp3-v1.jpg)
 
 We identified eQTL hotspots, which are regions of the genome that are associated with expression variation of a large number of genes (Qu et al., 2018). These regions can occur either due to low amounts of recombination (high linkage disequilibrium- LD) or because they contain master-regulators that pleiotropically control expression of multiple functionally-associated genes (Hammond et al., 2011; Kliebenstein, 2009; West et al., 2007). To account for LD and identify regions likely to contain master-regulators, we chose to focus on the subset of genes regulated by the lead-SNPs (SNP with the most significant association) in a given 100 kb region. Through this approach, we identified 11 trans-eQTL hotspots (number of unique genes >30) in saline conditions, but none in normal conditions (Figure 5—figure supplement 1; Supplementary file 11). These results indicate that natural variation in gene regulation under stress conditions may be dependent on a few master-regulators, as has been shown for drought stress in rice and maize (Kuroha et al., 2017; Liu et al., 2020). Interestingly, one of the hotspots, Chr7: 25.9–26.0 Mb, influenced the expression of a disproportionately high number of genes (191 genes) and contains the gene OsFLP, a R2R3 myb-like transcription factor that regulates stomatal development (Wu et al., 2019). OsFLP has recently been associated with salt tolerance in rice (Qu et al., 2022).
 
@@ -134,69 +245,69 @@ Other genes that are beneficial only in the saline environment include a cycloph
 
 ## Materials and methods
 
-## Plant material
+### Plant material
 
 Domesticated rice is primarily classified into two distinct genetic subgroups, O. sativa ssp. indica and O. sativa ssp. japonica. These subgroups are grown in sympatry and are often recognized as subspecies, given the reproductive barriers between them (Nadir et al., 2018). Further analyses have identified a widely accepted classification consisting of genetically distinct varietal groups namely, indica, aus/circum-aus, aromatic/circum-basmati, tropical japonica, and temperate japonica (Garris et al., 2005). For this study, a total of 130 O. sativa ssp. indica (including indica and circum-aus groups) and 65 O. sativa ssp. japonica (including circum-basmati, tropical japonica, and temperate japonica) accessions were selected, including traditional varieties/landraces and three additionally replicated salt-sensitive and -tolerant test varieties. We focused our analyses on O. sativa ssp. indica since it is the predominant global varietal group (Supplementary file 13). Seeds were obtained from the International Rice Genebank Collection (IRGC) at the International Rice Research Institute (IRRI) in the Philippines, and from a 2016 bulk seed collection obtained from plants grown under normal (wet and non-saline) conditions at IRRI during the course of a previous study (Groen et al., 2020).
 
-## Field experiment
+### Field experiment
 
 The field experiment was conducted in the dry season of 2017 at IRRI in Los Baños, Laguna, Philippines. Seeds from each accession were sown on December 16, 2016, and seedlings were then transplanted into the experimental fields at 17 days after sowing (DAS), on January 5, 2017. The field experiment was conducted across two locations: site L4 (14°09'34.6"N 121°15'42.4"E) was prepared as the non-salinized ‘normal’ environment and site L5 (14°09'35.2"N 121°15'42.5"E) as the salinized environment, following Groen et al., 2020. Within each field environment, there were three blocks and three replicates of each genotype (accession), with each genotype planted once per block in a random location. Each plant was planted in a single-row with 0.2-m × 0.2-m spacing between them for a total of one focal plant and seven neighboring plants (included in the experiment) per plot. Each experimental plot included the accessions NSIC Rc 222 and NSIC Rc 182 that served as border rows (Supplementary file 13). The application of salt in site L5 started on January 19, 2017, when the plants were 31 days old. The salinity level was monitored by recording electrical conductivity (EC), using EC meters installed in each of the parcels at a depth of 30 cm. The EC levels were recorded twice per day until reaching an EC = 6 dSm–1 and then recorded daily. The salinity levels were then maintained at 6 dSm–1 (considered mild to moderate salinity stress) until maturity. Management and maintenance of the fields included the application of basal fertilizer, spraying of insecticides against thrips and removal of plants potentially infected with rice tungro virus.
 
-## Tissue collection for transcriptome sequencing
+### Tissue collection for transcriptome sequencing
 
 Leaf sampling was performed as previously described (Groen et al., 2020). Briefly, leaf collection in the non-saline and saline field was done from 10:00 hr to 12:00 hr at 38 DAS (8 days after the beginning of the salt treatment) in the non-saline and saline field from 10:00 hr to 12:00 hr. Both fields were sampled simultaneously and with individuals within a block collected in the same order. For each sample, about 10 cm of leaf length were cut into small pieces and placed in chilled 5 mL tubes containing 4 mL of RNALater (Thermo Fisher Scientific) solution for RNA stabilization and storage. Leaf samples from each of the 5 ml tubes were then transferred into pairs of 2 mL tubes (one for processing and one for backup), then stored at −80  °C.
 
-## Yield harvesting and panicle trait phenotyping
+### Yield harvesting and panicle trait phenotyping
 
 A total of 780 plants were harvested individually and labeled such that the yield of all plants used for each type of measurement (mRNA sequencing, phenotypic measurements) was known. Individual seeds collected were further categorized as filled, partially filled, and unfilled, using manual assessment and a seed counter (Hoffman Manufacturing). Panicle length measurements and panicle trait phenotyping (PTRAP) of 30 seeds were also performed.
 
-## Functional trait phenotyping
+### Functional trait phenotyping
 
 In addition to yield-related measurements, we collected data on a number of physiological, morphological, and phenological traits to assess differences between rice accessions in response to soil salinity. In both the non-saline and saline fields, we recorded leaf osmotic potential (LOP) in the vegetative stage, performed chlorophyll analysis based on 1 mg leaf samples and measured ion content (analysis of sodium, Na+, and potassium, K+, analysis) based on 20 mg of leaf samples in both the vegetative and reproductive stages. We also measured plant height for growth rate (measured once a week until maturity). Flowering time was recorded as the day on which 50% of plants in a plot flowered; these plants included the focal plant and its seven neighboring plants. Whole plants were both harvested at the vegetative stage and at maturity to measure wet and dry biomass.
 
-## Extraction of total RNA for library construction
+### Extraction of total RNA for library construction
 
 Leaf samples stored at −80  °C were thawed at room temperature briefly and excess RNALater was removed. Tissue samples were then flash-frozen in liquid nitrogen and ground using a TissueLyser II (QIAGEN). After this, total RNA was extracted using the RNeasy Plant Mini Kit according to manufacturer’s protocol (QIAGEN) and eluted in nuclease-free water. The integrity of total RNA was assessed by agarose gel electrophoresis, and RNA from a random subset of samples was further assessed by Agilent TapeStation (Agilent Technologies). RNA concentration was quantified on a Qubit (Invitrogen). Samples were stored at −80  °C until library preparation.
 
-## RNA-seq library preparation and sequencing
+### RNA-seq library preparation and sequencing
 
 Library preparation for 780 samples was performed as described in Groen et al., 2020 and followed a plate-based 3′-end mRNA sequencing (3′ mRNA-seq) protocol. Briefly, total RNA from each sample was transferred individually into 96-well plates and normalized to a concentration of 10 ng in 50 μL nuclease-free water. Then, mRNA samples were reverse-transcribed using Superscript II Reverse Transcriptase (Thermo Fisher Scientific) and cDNAs were amplified using the Smart-seq2 protocol (Picelli et al., 2013) with modifications (Groen et al., 2020). This resulted in multiplexed pools of 96 samples, where 48 samples were from the non-saline field environment and 48 samples were from the same plot number in the saline field environment. Each pool was used for library preparation with the Nextera XT DNA sample prep kit (Illumina), returning 3′-biased cDNA fragments, similar to the Drop-seq protocol (Macosko et al., 2015). The resulting cDNA libraries were then quantified on an Agilent BioAnalyzer and sequenced at the NYU Genomics Core on an Illumina NextSeq 500 with the configuration HighOutput 1x75 base pairs (bp) and the settings: Read 1 of 20 bp (bases 1–12, well barcode; bases 13–20, unique molecular identifier [UMI]) and Read 2 of 50 bp. Raw sequence reads have been submitted to the SRA (BioProject PRJNA1010833).
 
-## RNA-seq data processing and data normalization
+### RNA-seq data processing and data normalization
 
 3′ mRNA-seq read data were processed as previously described in Groen et al., 2020. Briefly, Drop-seq tools v1.12 (RRID:SCR_018142; https://github.com/broadinstitute/Drop-seq) and Picard tools v2.9.0 (https://broadinstitute.github.io/picard/) were used to generate the metadata. The reference genome, Nipponbare IRGSP 1.0 (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/433/935/GCF_001433935.1_IRGSP-1.0), and annotations were indexed with STAR v020201 (Dobin et al., 2013). Prior to generating read counts, raw reads were converted from FASTQ to unaligned BAM format using Picard tools FastqToSam before being processed using the unified script for a FASTQ starting format. After this, digital gene-expression matrices displaying either UMI or raw read counts with transcripts as rows and samples as columns containing counts from reads with 96 expected sample barcodes were produced using the DigitalExpression utility. Sample barcodes corresponding to beads never exposed to rice total RNA were filtered out based on low numbers of transcribed elements as described previously (Groen et al., 2020; Macosko et al., 2015). Rice individuals that ended up being discarded due to low numbers of transcribed elements, were sequenced again using another library.
 
 UMI counts per sample were normalized through dividing by the total number of detected UMIs in that sample and multiplying by 1×106 to obtain transcripts per million. The resulting data matrices were then merged into one digital gene-expression super-matrix, containing transcripts-per-million expression data for all samples. Elements with very low transcription levels (transcript models with a sigma signal <20) were discarded, after which a robust normalization was conducted using an invariant set normalization protocol within the DChip utility v2010.01 (Li and Wong, 2001). All downstream analyses were done in log-space, using normalized expression levels (log2[normalized transcripts-per-million value +1]) of transcribed elements estimated using R v3.4.3 (R Development Core Team, 2013; Robinson et al., 2010). In a final step of filtering, transcripts that were not detected in at least 10% of individuals across our populations and did not derive from protein-coding genes on nuclear chromosomes were removed prior to performing subsequent analyses.
 
-## Quantitative genetics of fecundity and gene expression
+### Quantitative genetics of fecundity and gene expression
 
 All downstream analyses were done using R v3.4.3 (R Development Core Team, 2013; Robinson et al., 2010). The effect of genotype (G), environment (E) and genotype-by-environment (G×E) on fecundity (number of filled grains) was assessed using two-way ANOVA with E as a fixed effect, and G and G×E as random effects (https://www.angelfire.com/wv/bwhomedir/notes/anova2.pdf). Essentially, the between sum of squares for G, E, and G×E was estimated using a one-way ANOVA with the aov function, which was then used to estimate the F-statistic. The significance of each term was determined using the F-tests with pf function. Fecundity, averaged by genotype, was further compared between the environments using a two-tailed paired t-test. Variation in gene expression was partitioned similarly using the same model as above, and significance of each term was tested using F-tests via a mixed-model ANOVA (Howell, 1997). Multiple testing was controlled using a False-Discovery Rate (FDR) of 0.001. Broad-sense heritability was estimated as H2 = σ2G /(σ2G + σ2GE/e + σ2E/re), with σ2G, σ2E and σ2GE as the variance explained due to G, E, and G×E; e and r represent the number of environments and number of replicates per environment, respectively. Inter-varietal differences in gene expression was estimated for each environmental condition as the population-wide variance between accession mean expression levels.
 
-## Univariate and multivariate selection analyses
+### Univariate and multivariate selection analyses
 
 Univariate selection differentials consider each trait separately and represent the total strength of selection acting on a trait (Lande, 1979; Lande and Arnold, 1983). Fitness was estimated as fecundity, which was the total number of filled rice grains per individual. Unstandardized linear selection differentials (S) on gene expression were estimated as coefficients of linear regression with fecundity as the dependent variable in each regression and transcript abundance and block as the independent variables. Unstandardized quadratic selection differentials (C) were estimated similarly as twice the coefficients of quadratic regression for transcript abundance and fecundity (Conner and Hartl, 2004; Stinchcombe et al., 2008). Regressions were performed using the lmer function (Bates et al., 2015). Using these we then estimated the variance-standardized, and mean-standardized selection differentials (Hereford et al., 2004; Lande and Arnold, 1983). Data preparation included filtering out individuals with zero fecundity followed by normalizing fecundity fitness by mean fitness. To satisfy normality and remove noise inherent in expression data, transcripts with expression values more than 3 standard deviations from the mean were removed, which affected fewer than 1% of individuals. Selection differentials were estimated for transcripts that were expressed in at least 20 individuals and were estimated separately in each of the two environments. Multiple testing was controlled using Bonferroni correction (Bland and Altman, 1995) using the p.adjust function.
 
 Multivariate selection gradients represent the strength of direct selection acting on each trait, after removing indirect selection caused by correlations with other traits (Lande and Arnold, 1983). Principal component analysis (PCA) was performed on transcript abundance using the prcomp function in R (R Development Core Team, 2013; Kassambara, 2017) and PCs explaining over 0.5% of variance in each environment were chosen for multivariate selection analyses. Linear (β) and quadratic (γ) selection gradients were estimated as coefficients of multiple regression with the normalized fecundity fitness as the dependent variable and the PCs as the independent variables (Conner and Hartl, 2004). We then chose the top one percent of transcripts showing the highest loadings of the PCs (n=182) and counted the number of transcripts showing evidence for positive directional selection (same directionality between loading of the transcript on the PC and univariate selection differential (S) acting on the transcript estimated above) versus negative directional selection (opposite directionality between loading of the transcript on the PC and univariate selection differential (S) acting on the transcript estimated above) and based on the majority assigned a directionality to the selection gradients on PCs. Variance-standardized multivariate selection gradients were estimated for functional traits without strong correlation to avoid collinearity among traits (Lande and Arnold, 1983; Presotto et al., 2019), using a Pearson correlation coefficient <0.6 as threshold, which was estimated using the cor function in R (R Development Core Team, 2013).
 
-## Selection analyses on gene ontology biological processes
+### Selection analyses on gene ontology biological processes
 
 Gene Ontology (GO) term annotations for rice genes/transcripts were downloaded from Monocots PLAZA 5.0 (Van Bel et al., 2022). All fourth-level biological-process terms were downloaded using GO.db v3.15.0 (Carlson, 2022) and only these terms were considered for further analyses. Next, terms with fewer than 20 transcripts in our dataset were filtered out to minimize redundancy, leaving a total of 670 terms and 10,235 associated transcripts. The selection strength on a biological-process term was estimated as the median selection strength of all transcripts annotated with that term. A term was considered to be under significantly stronger selection compared to the transcriptome-wide median if the median strength of selection for a term was over the transcriptome-wide median selection strength by at least the 95% confidence interval for the selection strength of that term. GO enrichments were done using ShinyGO (Ge et al., 2020).
 
-## Regulatory decoherence analyses
+### Regulatory decoherence analyses
 
 To examine regulatory decoherence in rice, a recently developed method, CILP (Correlation by Individual Level Product), was used (Lea et al., 2019). CILP first estimates the correlation of a phenotype (transcript expression in our case) within each individual in the sample and then using linear model or linear mixed effect model tests for associations between this estimate and a fixed effect predictor variable (environment in our case), while controlling for covariates. Since CILP calculates product correlations for all possible pairs of genes, only transcripts with a selection strength greater than 0.1 (|S|>0.1) in at least one environment with expression greater than 0 in at least 50% individuals were included to reduce the dimensionality (leaving 2318 transcripts). Multiple testing was controlled using a False-Discovery Rate (FDR) of 0.05.
 
-## Genotype data and SNP calling
+### Genotype data and SNP calling
 
 Raw FASTQ files were downloaded from the Sequence Read Archive (SRA) website under BioProject PRJEB6180 for 14 accessions (Wang et al., 2018) and under Bioprojects PRJNA422249 and PRJNA557122 for 92 accessions (Gutaker et al., 2020; Supplementary file 13). Further, genomes of 19 accessions were re-sequenced, and submitted to the SRA (BioProject PRJNA1012700), leading to a total of 125 accessions for which genomic data was available (Supplementary file 13).
 
 Raw reads were processed for quality control and adapter trimming using the bbduk program of BBTools version 37.66 (https://jgi.doe.gov/data-and-tools/bbtools/) using the options: minlen = 25 qtrim = rl trimq = 10 ktrim = r k=25 mink=11 hdist = 1 tpe tbo. The output from this program was mapped to the reference genome O. sativa Nipponbare IRGSP 1.0 genome that was downloaded from NCBI Genome (https://www.ncbi.nlm.nih.gov/genome/?term=txid4530[orgn]) using bwa-mem2 v2.1 (Vasimuddin et al., 2019). PCR duplicates were marked and removed using the Picard tools version 2.9.0. SNPs were called using GATK HaplotypeCaller v4.2.0.0 to obtain a multi-accession joint SNP file. Only SNPs that were above 5 bp distance from an indel variant were taken. Next, SNPs were filtered using the recommended GATK hard filtering (Van der Auwera et al., 2013). Further, using vcftools v0.1.16 (Danecek et al., 2011), SNPs with at least 80% genotype calls and a minor allele frequency of 0.05 were retained (--max-missing 0.8 --maf 0.05). Since rice is a inbred species, we also removed any SNPs that displayed heterozygosity of over 5% identified using vcftools v0.1.16 –hardy (Danecek et al., 2011). Next, missing genotype calls were imputed and phased using Beagle v4.1 (Browning and Browning, 2016), and using vcftools v0.1.16 -m2 -M2 (Danecek et al., 2011) only biallelic SNPs were retained for further analyses. Finally, SNPs were randomly pruned such that one SNP per 1000 bp was retained using vcftools v0.1.16 –thin (Danecek et al., 2011), leaving a SNP dataset of 246,714 markers.
 
-## G-matrix estimation and prediction of short-term phenotypic evolution
+### G-matrix estimation and prediction of short-term phenotypic evolution
 
 A G-matrix (G) representing the additive genetic variance and covariance was estimated for the principal component axes (PCs) by taking the eigengene. This was done by deploying GREML v1.94 (Yang et al., 2011). Although the principal components are by definition uncorrelated at the level of the individual replicate plants, they start showing genetic covariances when loading values of replicates from each genotype are averaged. Next, using the multivariate breeder’s equation (Δ z=G β), we predicted the response to short-term phenotypic selection (Δz) on the PCs.
 
-## Association mapping
+### Association mapping
 
 Association mapping was performed between the SNP markers and gene expression values recorded in the normal and saline environments. For this, the linear model in Matrix eQTL was used (Shabalin, 2012). The normalized gene expression values were averaged over the replicates in each environment separately and these averages were subsequently used to test for associations. The first five principal components (PCs) of the kinship matrix were estimated using GAPIT v3 (Wang and Zhang, 2021) and added as covariates to control for population structure. Associations were considered significant at a false-discovery rate (FDR)<0.001, and when significant were included in downstream analyses. Due to long stretches of homozygosity attributed to the highly inbred nature of rice, trans-eQTLs were defined as being on a different chromosome or at least 1 Mb away from a gene under its influence on the same chromosome; cis-eQTLs were defined as <100 kb away from an associated gene.
 

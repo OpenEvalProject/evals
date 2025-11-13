@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00vpwhm04 Institute of Neuroscience, Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China
+1. Institute of Neuroscience, Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
 
 † Corresponding author
 

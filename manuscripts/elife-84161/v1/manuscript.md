@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/041nas322 LIMES Institute, Department of Molecular Brain Physiology and Behavior, University of Bonn Bonn Germany
-2. https://ror.org/00f7hpc57 Institute of Physiology and Pathophysiology, Friedrich-Alexander-Universität Erlangen-Nürnberg Erlangen Germany
+1. LIMES Institute, Department of Molecular Brain Physiology and Behavior, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+2. Institute of Physiology and Pathophysiology, Friedrich-Alexander-Universität Erlangen-Nürnberg Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))
 
 † Corresponding author
 

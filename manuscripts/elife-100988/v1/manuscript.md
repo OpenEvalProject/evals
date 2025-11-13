@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Psychology, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Department of Psychology & Neuroscience Program, University of Michigan Ann Arbor United States
+1. Department of Psychology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Department of Psychology & Neuroscience Program, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ Goal- and sign-tracking index the presence of broader, opponent cognitive-motiva
 
 ## Results
 
-## Phenotype screening and distribution by sex and vendor
+### Phenotype screening and distribution by sex and vendor
 
 PCA-based screening generated five behavioral measures indicating the speed and frequency of contacting the lever (Pavlovian conditioned stimulus [CS]) versus the speed and frequency of head entries into the food port. These measures were collapsed into the PCA score, indicating the degree of sign- and goal-tracking, respectively, of individual rats over five PCA test sessions. Prior analyses have consistently shown that all rats orient toward the CS, that is, all rats learn the predictive significance of the CS, but only some – the STs – approach and contact the CS (Figure 1a, top right photo), while GTs do not contact the CS but approach and enter the food port (Figure 1a, bottom right photo; e.g., Robinson and Flagel, 2009; Meyer et al., 2012; Pitchers et al., 2017a).
 
@@ -44,7 +44,7 @@ PCA scores from the last two sessions were averaged and used to classify rats as
 
 As PCA screening was conducted in four separate cohorts of rats, separated by 2–19 months, we first determined that PCA scores did not differ across these cohorts (no main effects of cohort on response bias (respbias), probability difference (probdiff), latency, or PCA index; all F < 1.74, all p > 0.16). Chi-square tests were used to determine if sex or the commercial source of the rats (vendor) influenced the distribution of phenotypes. Consistent with prior reports (Pitchers et al., 2015), the distribution of PCA scores did not differ by sex (X2(2, N = 378) = 0.35, p = 0.56; Figure 1b). However, the distribution of PCA scores from rats obtained from the two vendors differed significantly (X2(2, N = 378) = 36.62, p < 0.001; Figure 1c; note that the percentages of phenotypes shown in Figure 1c were calculated individually for each vendor). Relatively more rats obtained from Inotiv displayed lever-directed behaviors, while rats supplied by Taconic relatively more frequently exhibited goal cup-directed behaviors (see also Fitzpatrick et al., 2013; Gileta et al., 2022). A follow-up analysis rejected the possibility that vendor-specific PCA score distribution differed by sex (Inotiv: X2(2, N = 133) = 1.30, p = 0.52; Taconic: X2(2, N = 245) = 1.41, p = 0.50). GTs and STs of both sexes and from either vendor were combined for use in subsequent experiments.
 
-## CTTT acquisition and criterion performance
+### CTTT acquisition and criterion performance
 
 Upon reaching criterion performance in the CTTT (see the apparatus, illustration of task rules and a timeline of an individual trial in Figure 3), defined as >70% cued turns and cued stops for two consecutive days/sessions, and prior to the intracranial implantation of microelectrode arrays (MEAs), the relative number of cued turns and stops were recorded from an additional four test sessions to determine baseline CTTT performance of GTs and STs.
 
@@ -56,7 +56,7 @@ The number of training sessions required by GTs (n = 29, 13 females) and STs (n 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100988/elife-100988-fig4-v1.jpg)
 
-**Figure 4.:** n = 29, 13 females) and sign-trackers (STs) (n = 22, 12 females; see Figure 2).(a) The number of training sessions to reach CTTT criterion performance, defined as 70% correct responses to either cue for two consecutive days, differed neither between the phenotypes nor the sexes. However, baseline performance, based on data from four test sessions conducted after rats had reached criterion performance, indicated that GTs scored more cued turns than STs (b). Moreover, a main effect of day reflected that all rats performed more cued turns on day 3 than on day 1 (post hoc Bonferroni test (c); note that (c) and (d) show response ratios but ANOVAs were conducted using arcsine transformed data because ratio data violated homoscedasticity). (d) The relative number of cued stops did not differ between the phenotypes. There were no main effects of sex and no significant interactions between the effects of phenotype, day, and sex on cued turns and cued stops. (e) Relative to the time of cue onset, GTs initiated and completed cued turns later than STs. Reflecting the parallel effects of phenotype on initiation and completion times, the actual time needed to complete turns did not differ between the phenotypes (**: p < 0.01).
+**Figure 4.:** (a) The number of training sessions to reach CTTT criterion performance, defined as 70% correct responses to either cue for two consecutive days, differed neither between the phenotypes nor the sexes. However, baseline performance, based on data from four test sessions conducted after rats had reached criterion performance, indicated that GTs scored more cued turns than STs (b). Moreover, a main effect of day reflected that all rats performed more cued turns on day 3 than on day 1 (post hoc Bonferroni test (c); note that (c) and (d) show response ratios but ANOVAs were conducted using arcsine transformed data because ratio data violated homoscedasticity). (d) The relative number of cued stops did not differ between the phenotypes. There were no main effects of sex and no significant interactions between the effects of phenotype, day, and sex on cued turns and cued stops. (e) Relative to the time of cue onset, GTs initiated and completed cued turns later than STs. Reflecting the parallel effects of phenotype on initiation and completion times, the actual time needed to complete turns did not differ between the phenotypes (**: p < 0.01).
 
 After having reached performance criterion, GTs scored significantly more cued turns than STs across four subsequent test sessions (main effect of phenotype: F(1,47) = 5.03, p = 0.003, ηp2 = 0.097; Figure 4b). This analysis also revealed a main effect of day (or session; F(3,141) = 4.96, p = 0.003, ηp2 = 0.096), reflecting that all rats generated more cued turns during the third when compared with the first of the four sessions used for the determination of CTTT baseline performance (for multiple comparisons see Figure 4c). Sex did not affect turning rates (F(1,47) = 0.01, p = 0.95) and interactions between phenotype, sex, and day remained insignificant (all F < 2.10, all p > 0.15). The proportion of cued stops following stop cue presentation did not differ by phenotype, day, or sex (all main effects and interactions: all F < 3.06; all p > 0.052; Figure 4d).
 
@@ -64,7 +64,7 @@ Relative to the time of cue onset, GTs initiated and completed cued turns signif
 
 Taken together, GTs and STs acquired the CTTT within a similar number of training sessions, GTs scored more cued turns than STs, and GTs initiated and completed cued turns, relative to cue onset, at significantly later times relative to cue onset. Subsequent experiments recorded DMS glutamatergic transients during cued turns, cued stops, missed turns, false turns, locked to reward delivery, and tested the role of fronto-striatal glutamatergic projections in generating performance-associated glutamatergic transients. Because of the absence of significant effects of sex, and of interactions involving sex as a factor, in the analysis of baseline CTTT performance, subsequent statistical analyses, using linear-mixed effect models (LMMs) to account for effects of animals and variable numbers of transients recorded from each animal, did not further involve sex as a statistical variable. Furthermore, cue modality did not impact turn or stop rates and thus was not included as a factor in the final analyses.
 
-## Turn and stop cue-locked, phenotype-specific glutamate dynamics
+### Turn and stop cue-locked, phenotype-specific glutamate dynamics
 
 Rats were screened for the classification of the phenotypes, underwent CTTT training until they performed at criterion level, followed by implantation of an MEA into the DMS and subsequent recordings of glutamate currents during CTTT performance. Figure 5 illustrates the four recording sites fabricated onto a ceramic backbone (Figure 5a), the preparation of pairs of recording sites for the measurement of glutamate concentrations and potential electroactive interferents, and the measurement scheme (Figure 5b, c). Following calibration of glutamate oxidase-coated and sentinel electrodes in vitro (Table 1; a representative example is shown in Figure 5d), MEAs were permanently implanted into the DMS (Figure 5e; see Methods for stereotaxic coordinates of accepted placements).
 
@@ -72,7 +72,139 @@ Rats were screened for the classification of the phenotypes, underwent CTTT trai
 
 **Figure 5.:** (a) Schematic illustration of a ceramic backbone with four platinum–iridium (Pt/Ir) recording sites, organized in two pairs, with each recording site measuring 333 µm long and 15 µm wide. The upper pair was fabricated to measure currents reflecting glutamate concentration (red, also b), while the lower pair served as sentinels for background current recording and subtraction (yellow, also c). Glutamate oxidase (GO) was immobilized onto the upper (b), but not lower (c), pair of recording sites. After GO coating, a non-conducting polymer, m-(1,3)-phenylenediamine was electroplated onto both sites to prevent the transfer of small electroactive organic molecules to the Pt sites. Application of a 0.7-V constant potential versus an Ag/AgCl reference electrode (not shown) served to oxidize hydrogen peroxide at individual recording sites (e.g., Burmeister et al., 2000; Parikh et al., 2010), yielding current proportional to the concentration of glutamate at the recording site. (d) In vitro calibration (representative example) indicated the sensitivity, linearity of the response to increasing concentrations of glutamate, and selectivity of GO-coated recording sites (red; see Figure 2 for calibration data). The current recorded via the sentinel site did not respond to glutamate and the meta-(1,3)-phenylenediamine (mPD) barrier completely prevented ascorbic acid (AA) from generating current, Addition of dopamine (DA) increased the current by about 0.5 pA (note that the ordinate used to graph the current obtained via the GO-immobilized site (200 pA) obscures the visualization of such a small increase). For the 3/15 electrodes that exhibited a dopamine response (>0.1 pA; see Table 1), net currents were normalized by the dopamine response (Burmeister and Gerhardt, 2001). (e) Electrodes were implanted into the dorsomedial striatum (DMS); see Methods for stereotaxic coordinates of accepted placements; the circles in (e) indicate the location of microelectrode tips placed within this area (red circles: placements in rats which were recorded during Cued-Triggered Turning Task (CTTT) performance; purple circles: placements in rats in which fronto-striatal projections were silenced; note that placements along the anterior–posterior axis were flattened onto the section shown in e).
 
+**Table 1.**
+ Electrode in vitro calibration characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sensitivity (slope) to glutamate (M ± SEM)</th>
+      <th>Selectivity for glutamate over ascorbic acid (AA; M ± SEM)</th>
+      <th>Limit of detection of glutamate (M ± SEM)</th>
+      <th>Linearity of response(R2; M ± SEM)</th>
+      <th>Dopamine-evoked current (individual electrode values*)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Minimum criteria</td>
+      <td>&gt;5 pA/μM</td>
+      <td>&gt;50:1glutamate:AA</td>
+      <td>&lt;1.0 μM</td>
+      <td>R2 &gt; 0.95</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Measured (N = 15 electrodes; 8 in GTs, 7 in STs)</td>
+      <td>12.0 ± 0.2</td>
+      <td>113.1 ± 23.5</td>
+      <td>0.3 ± 0</td>
+      <td>0.9 ± 0</td>
+      <td>0.26, 0.47, and 0.53 pA*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Recordings of glutamate reflecting currents in vivo using these three electrodes (two in goal trackers [GTs] and one in a sign-tracker [ST]) were normalized (divided) by dopamine-evoked currents._
+
 Figure 5a, b shows representative glutamate currents recorded during cued turns in GTs and STs. These traces illustrate the predominance of single, turn cue-locked peaks in GTs, contrasting with the more frequent presence of multiple (two or three) peaks with relatively smaller maximum amplitudes in STs (see Methods for the definition of a peak). Furthermore, reward delivery-locked peaks occurred more frequently, and with relatively higher maximum amplitudes, in STs than in GTs. Our analyses of glutamate peak characteristics were guided by the view that such peaks reflect the orchestrated yet asynchronous depolarization of glutamatergic terminals, over several hundreds of milliseconds and within fractions of micrometers from the electrode surface, and likely sufficient to stimulate synaptic and extra-synaptic, relatively low-affinity glutamate receptors (Hascup et al., 2008; Parikh et al., 2008; Parikh et al., 2010; Mattinson et al., 2011; Quintero et al., 2011; Parikh et al., 2014) (e.g., Clements et al., 1992; Rusakov and Kullmann, 1998; Budisantoso et al., 2013; Matthews et al., 2022; Mendonça et al., 2022). Table 2 details the number of glutamate traces per rat phenotype and sex included in the analyses of cue- or reward-locked maximum peak concentrations and peak numbers.
+
+**Table 2.**
+ Number of glutamate traces extracted for the analysis of glutamate peaks locked to turn cues, stop cues, or reward delivery, per phenotype and sex.Note: Trace counts from rats expressing the empty DREADD control construct are not included in this table as Figures 6 and 7 do not show the (insignificant) results from these rats.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Glutamate release data shown in Figure</th>
+      <th rowspan="2"></th>
+      <th colspan="2">GTs</th>
+      <th colspan="2">STs</th>
+    </tr>
+    <tr>
+      <th>Females</th>
+      <th>Males</th>
+      <th>Females</th>
+      <th>Males</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5c, 5d(turns)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>11–1312534</td>
+      <td>12–1612.5484</td>
+      <td>10–1412242</td>
+      <td>12–1513675</td>
+    </tr>
+    <tr>
+      <td>5e(misses)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>6–97.5294</td>
+      <td>7–88324</td>
+      <td>6–97.5122</td>
+      <td>6–76345</td>
+    </tr>
+    <tr>
+      <td>5f(stops)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>12–1717574</td>
+      <td>1713584</td>
+      <td>14–1816292</td>
+      <td>11–1714765</td>
+    </tr>
+    <tr>
+      <td>5g(reward delivery)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>14–1514.5584</td>
+      <td>14–1514.5584</td>
+      <td>11–1211232</td>
+      <td>11–1211565</td>
+    </tr>
+    <tr>
+      <td>7g, 7h, 7i(DREADD-expressing rats; turns after vehicle)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>7–1010374</td>
+      <td>7–88233</td>
+      <td>1010101</td>
+      <td>7–119475</td>
+    </tr>
+    <tr>
+      <td>7g, 7h,7i(DREADD-expressing rats; turns after CNO)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>2–85.5214</td>
+      <td>5–76183</td>
+      <td>8881</td>
+      <td>7–98425</td>
+    </tr>
+    <tr>
+      <td>7j(DREADD-expressing rats; misses after vehicle)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>4–75.5224</td>
+      <td>4–74153</td>
+      <td>6661</td>
+      <td>84235</td>
+    </tr>
+    <tr>
+      <td>7j(DREADD-expressing rats; misses after CNO)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>7–118.5354</td>
+      <td>66183</td>
+      <td>3331</td>
+      <td>2–43165</td>
+    </tr>
+    <tr>
+      <td>7k(DREADD-expressing rats; reward after CNO)</td>
+      <td>Traces per rat, rangeTraces per rat, medianTotal number of tracesNumber of rats</td>
+      <td>10–1412364</td>
+      <td>10–1613523</td>
+      <td>1212121</td>
+      <td>11–1412625</td>
+    </tr>
+  </tbody>
+</table>
 
 Maximum glutamate peak concentrations recorded during the cue period, and followed by turns, were significantly higher in GTs than in STs phenotype: F(1,28.85) = 8.85, p = 0.006, ηp2 = 0.23 (Figure 6c). Furthermore, the presence of single peaks predominantly characterized cue-locked recordings from GTs while two or three peaks occurred relatively more frequently in STs (X2(2, N = 192) = 1 6.36, p = 0.0003; Figure 6d). Recordings during cue periods that were followed by failures to turn, or misses, indicated higher maximum peak amplitudes in STs when compared to GTs (missed turns: F(1,193) = 55.20, p < 0.001, ηp² = 0.22, Figure 6e; no phenotype effects on peak number; not shown). Likewise, relatively higher maximum peak amplitudes in STs were recorded during stop cue periods when followed by stops (F(1,27.67) = 33.32, p < 0.001, ηp² = 0.55, Figure 6f) and locked to reward delivery (F(1,19.28) = 28.88, p < 0.001, ηp² = 0.40, Figure 6g; note that errors in response to stop cues – false turns – were rare and therefore not analyzed).
 
@@ -80,7 +212,7 @@ Maximum glutamate peak concentrations recorded during the cue period, and follow
 
 **Figure 6.:** (a) and (b) show representative recording traces from goal trackers (GTs) and sign-trackers (STs) (five each), respectively, recorded during cued turns. Filled circles indicate peaks (defined in Methods), open black symbols were associated with the execution of the turn, symbols surrounded by a black circle with treadmill stops and the onset of a 5-s pause (see also Figure 3), and symbols surrounded by a green circle mark the delivery of reward following a cued turn. Currents recorded during the cue-on period (reddish background) were used to determine cue-locked peak characteristics, and those recorded during a 2-s period following reward delivery were used to compute reward-locked glutamate peaks. These current traces illustrate the predominance of single turn cue-locked peaks in GTs (a), contrasting with the more frequent presence of two or three turn cue-locked peaks in STs (b). Furthermore, reward delivery more reliably evoked glutamate peaks in STs (b). Linear-mixed effects model (LMM)-based analysis of glutamate traces (see Table 2 for the number of traces per phenotype and sex included in this analyses) indicated significantly higher turn cue-locked maximum peaks in GTs when followed by actual turns (c). Furthermore, single glutamate peaks were observed more frequently in GTs than in STs, while two or three peaks during the cue period tended to be more frequent in STs (X2 test; d). In contrast to glutamate currents recorded during the cue period, maximum glutamate concentrations were higher in STs during all other response categories (missed turns, e; cued stops, f; note that errors following stop cues, i.e., false turns, were extremely rare and thus peaks obtained from these trials were not analyzed), and following reward delivery during cued turn trials (g; c, e–g depict estimated marginal means (EMMs), and 95% CI; main effects of phenotype: **, ***: p < 0.01, 0.001).
 
-## Glutamate trace characteristics predicting cued turns
+### Glutamate trace characteristics predicting cued turns
 
 The characteristics of glutamate traces (maximum peak concentration, number of peaks, and time to peak) were extracted from a total of 548 recordings of turn cue trials, 364 of which yielded a turn (GTs: 206, STs: 158) and 184 a miss (GTs: 112, STs: 72), to determine whether such characteristics, individually or in combination, disproportionally predicted more cue-triggered turns in GTs or STs. Contingency tables were used to compare phenotype-specific proportions of cued turns and misses, and to compute the probability for turns in GTs relative to STs.
 
@@ -96,7 +228,7 @@ In contrast to the significantly higher odds for turns in GTs following a single
 
 Together, these analyses of glutamate trace characteristics indicated that increasing maximum peak glutamate concentrations and the presence of a single, cue-evoked glutamate peak strongly increased the relative probability of GTs to execute a cued turn. Moreover, the combination of these two properties yielded significantly even higher relative turn probabilities in GTs (Figure 7). In contrast, the presence of multiple glutamate peaks, GTs were significantly less likely than STs to turn although, when combined with higher (<4 µM) maximum peak concentrations, turn proportions of the two phenotypes no longer differed significantly. These findings suggest fundamentally different turn cue-evoked glutamate release dynamics in GTs versus STs, perhaps involving separate afferent circuitry influencing the excitability of cortico-striatal glutamatergic terminals. Therefore, we predicted that inhibition of the cortico-striatal neurons affects turning rates and cued turn-evoked glutamate peaks primarily in GTs, consistent with prior evidence indicating their relative reliance on top–down, cortico-fugal systems to execute cued responses.
 
-## Inhibition of fronto-striatal projection disrupts cued turning and turn cue-evoked glutamate in GTs, but not STs
+### Inhibition of fronto-striatal projection disrupts cued turning and turn cue-evoked glutamate in GTs, but not STs
 
 As described above, in GTs, cued turning was associated with tightly orchestrated single glutamate release events that were closely locked to the turn cue, comparable with attended cue-evoked cholinergic transients in cortex (Parikh et al., 2007; Gritton et al., 2016; Howe et al., 2017), and therefore hypothesized to reflect cortico-striatal activation (see also Introduction). In contrast, in STs, the relatively more frequent occurrence of multiple glutamate release events and the presence of greater reward delivery-locked glutamate release may reflect a greater control of glutamate release by striatal interneuronal networks and striatal afferents originating from the midbrain, including dopaminergic projections traditionally linked to the processing of reward. Indeed, ascending projections to the striatum may influence, directly and via striatal interneurons, the excitability of glutamatergic terminals of cortico-striatal projections (e.g., Tritsch and Sabatini, 2012; Agnoli et al., 2013; Dautan et al., 2020; Moss et al., 2021). In STs, such ascending control of glutamate release by reward circuitry may have been responsible for relatively higher reward delivery-locked glutamate levels and for the less tightly organized glutamate dynamics during cued turns. We tested the hypothesis that turn cue-locked glutamate peaks in GTs reflect cortico-striatal activation by using a dual vector approach to express an inhibitory DREADD in fronto-striatal projection neurons.
 
@@ -104,15 +236,15 @@ GTs (n = 12, 6 females) and STs (n = 10, 4 females; see Figure 2) underwent surg
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/100988/elife-100988-fig8-v1.jpg)
 
-**Figure 8.:** N-oxide (CNO) on Cued-Triggered Turning Task (CTTT) performance.(a) Following initial handling and screening to identify the rat’s phenotype (17 goal trackers [GTs], 8 females; 12 sign-trackers [STs], 6 females; Figure 2), rats were infused with either a Cre-dependent inhibitory DREADD or the empty control vector (both expressing mCherry; b) into the lower layers of the prelimbic cortex, and a retrogradely transported, Cre-expressing plasmid into the dorsomedial striatum (DMS) (expressing eGFP). These rats continued to undergo CTTT performance training, followed either by (c) a test of the effects of vehicle or CNO on CTTT performance (the blue syringes symbolizing CNO administration) or by (d) implantation of an microelectrode array for the measurement of glutamate concentrations in the DMS and following vehicle or CNO administration. Following recovery from that surgery, the effects of CNO and vehicle on performance and performance-associated glutamate concentrations were assessed. In GTs, administration of CNO significantly reduced the relative number of cued turns (e), but not cued stops (f; e and f show individual data, mean and 95% CI; post hoc multiple comparisons: ***: p < 0.001, Tukey’s Honest Significant Difference test). CNO had no effects on cued turns or stops in rats expressing an empty control vector (see Results). In GTs, CNO administration attenuated cue-locked maximum peak glutamate concentrations during (residual) cued turns (g) and decreased the number of traces with just one glutamate peak during the cue period while increasing the frequency of two peaks during this period (h). Following the administration of CNO, residual turns took significantly more time to be initiated in GTs when compared with vehicle-treated GTs and CNO-treated STs (i). When followed by failures to turn, or misses, turn cue-locked maximum peak concentrations were not affected in GTs but reduced in STs (significant interaction between the effects of phenotype and CNO; j). Maximum peak glutamate concentrations locked to reward delivery again were higher in STs than in GTs, and CNO reduced these concentrations in both phenotypes (main effect of CNO, no interaction k); (multiple comparisons: **, ***: p < 0.01, 0.001).
+**Figure 8.:** (a) Following initial handling and screening to identify the rat’s phenotype (17 goal trackers [GTs], 8 females; 12 sign-trackers [STs], 6 females; Figure 2), rats were infused with either a Cre-dependent inhibitory DREADD or the empty control vector (both expressing mCherry; b) into the lower layers of the prelimbic cortex, and a retrogradely transported, Cre-expressing plasmid into the dorsomedial striatum (DMS) (expressing eGFP). These rats continued to undergo CTTT performance training, followed either by (c) a test of the effects of vehicle or CNO on CTTT performance (the blue syringes symbolizing CNO administration) or by (d) implantation of an microelectrode array for the measurement of glutamate concentrations in the DMS and following vehicle or CNO administration. Following recovery from that surgery, the effects of CNO and vehicle on performance and performance-associated glutamate concentrations were assessed. In GTs, administration of CNO significantly reduced the relative number of cued turns (e), but not cued stops (f; e and f show individual data, mean and 95% CI; post hoc multiple comparisons: ***: p < 0.001, Tukey’s Honest Significant Difference test). CNO had no effects on cued turns or stops in rats expressing an empty control vector (see Results). In GTs, CNO administration attenuated cue-locked maximum peak glutamate concentrations during (residual) cued turns (g) and decreased the number of traces with just one glutamate peak during the cue period while increasing the frequency of two peaks during this period (h). Following the administration of CNO, residual turns took significantly more time to be initiated in GTs when compared with vehicle-treated GTs and CNO-treated STs (i). When followed by failures to turn, or misses, turn cue-locked maximum peak concentrations were not affected in GTs but reduced in STs (significant interaction between the effects of phenotype and CNO; j). Maximum peak glutamate concentrations locked to reward delivery again were higher in STs than in GTs, and CNO reduced these concentrations in both phenotypes (main effect of CNO, no interaction k); (multiple comparisons: **, ***: p < 0.01, 0.001).
 
-## CNO-induced inhibition of prelimbic–DMS projections disrupts cued turns in GTs
+#### CNO-induced inhibition of prelimbic–DMS projections disrupts cued turns in GTs
 
 On the first of 4 days of testing of the effects of CNO or vehicle, and when the vehicle for CNO was administered, the number of turns/turn cue trials and the number of stops/stop cue trials did not differ significantly between animals without (Figure 8c) and with (Figure 8d) implanted MEAs (both t < 0.65, both p > 0.53, at alpha = 0.05/2). Thus, for the initial analysis of the effects of CNO on CTTT performance, data from both groups od rats were combined. The effects of CNO/vehicle in GTs and STs on cued turns and cued stops were analyzed individually, using the average score from two tests each of the effects of vehicle and CNO, and ANOVA of the effects of phenotype and treatment (vehicle/CNO; repeated measures ANOVA, with alpha = 0.05/2). The effects of phenotype and treatment interacted significantly (F(1,20) = 35.99, p < 0.0001, ηp² = 0.64) reflecting that CNO reduced the ratio of turns/turn cue trials in GTs by nearly 50% (for multiple comparisons see Figure 8e). This analysis also indicated a main effect of phenotype (F(1,20) = 9.45, p = 0.006) that likewise reflected the greatly suppressed turn rates in GTs treated with CNO while turn rates in STs were unaffected by CNO (M, SEM: GTs: 0.54 ± 0.04 turns/turn cue trials; STs: 0.71 ± 0.04). Similarly, the relatively large effect of CNO in GTs accounted for a main effect of treatment (F(1,20) = 37.91, p < 0.0001; vehicle: 0.72 ± 0.03; CNO: 0.53 ± 0.03). The post hoc comparison between the turn rates of vehicle-treated GTs and vehicle-treated STs remained insignificant, reflecting that compared to the analysis of baseline performance (Figure 4b), GTs turned relatively less frequently when following additional surgeries to infuse the DREADD construct and implant electrodes (Figure 8e). Perhaps the performance of GTs was impacted relatively more severely by these surgeries, consistent with evidence indicating a relatively greater response of the innate immune system of GTs to immune challenges (Carmon et al., 2023).
 
 To control for potential off-target effects of CNO, the effects of CNO (5.0 mg/kg) and vehicle on the relative number of cued turns were assessed in GTs expressing the empty control vector (n = 5). In these rats, CNO did not affect the relative number of cued turns (t(3) = 0.78, p = 0.50; means: vehicle: 0.77 turns/turn cue trials; CNO: 0.73). Although there were no effects of CNO on cued turns in DREADD-expressing STs (above), we also tested the effects of CNO in two STs expressing the empty control vector (mean of 2 test sessions per treatment: vehicle: 0.6 and 0.6 cued turns/turn cue trials; CNO: 0.65 and 0.75). Therefore, and similar to results from previous studies (see Methods; see also Avila et al., 2020; Lawson et al., 2023), these findings did not suggest off-target effects of CNO, at the dose used, on rodent behavior.
 
-## Fronto-striatal inhibition attenuates turn cue-locked glutamate peaks in GTs
+#### Fronto-striatal inhibition attenuates turn cue-locked glutamate peaks in GTs
 
 Guided by the results illustrated in Figures 6 and 7 and using identical peak definitions and extraction methods, the analyses of the effects of fronto-striatal inhibition via CNO-induced DREADD activation on glutamate transients focused on cue-locked maximum peak concentrations and the number of peaks during residual turns. LMMs were used to analyze the effects of CNO or vehicle on glutamate transients recorded from GTs and STs expressing the inhibitory hM4Di DREADD or the empty control construct (Figure 8; see also Table 2).
 
@@ -120,11 +252,11 @@ Administration of CNO significantly reduced turn cue-locked maximum peak glutama
 
 As seen before, cue period-based glutamate traces obtained from GTs predominately featured a single peak while over 80% of the traces recorded in STs showed two or three peaks (Figure 8h). Administration of CNO in GTs reduced the number of single peak and increased the number of two-peak occurrences but, in STs, did not affect the frequencies of one, two, or three peak occurrences (separate Chi-squared tests on the effects of vehicle and CNO on frequencies; GTs: X2(2, N = 99) = 17.87, p < 0.001; STs: X2(2, N = 107) = 0.03, p = 0.98; Figure 8h).
 
-## Residual turns following CNO-induced inhibition in GTs
+#### Residual turns following CNO-induced inhibition in GTs
 
 CNO robustly reduced cued turn rates in GTs (Figure 8e). Furthermore, we observed CNO-attenuated maximum glutamate peaks (Figure 8g) during (residual) cued turns, raising the question whether these residual turns differed behaviorally from those seen in vehicle-treated GTs. Therefore, we compared residual cued turns following CNO with turns executed following vehicle administration. Administration of CNO significantly increased the time GTs took to initiate turns, relative to cue onset, when compared with vehicle-treated GTs and CNO-treated STs (LMM; phenotype × treatment: F(1,173.72) = 9.70, p = 0.002, ηp2 = 0.05; see Figure 8i for multiple comparisons).
 
-## Effects of CNO-mediated fronto-striatal inhibition on glutamate peaks during misses, cued stops, and reward delivery
+#### Effects of CNO-mediated fronto-striatal inhibition on glutamate peaks during misses, cued stops, and reward delivery
 
 In contrast to turn cue-locked maximum glutamate concentrations in trials followed by turns, when followed by misses, CNO had no effect (main effect of treatment: F(1,133.99) = 1.62, p = 0.21; Figure 8j). However, a significant interaction between the effects of treatment and phenotype (F(1,133.99) = 3.88, p = 0.04; ηp2 = 0.03) reflected that CNO significantly reduced cue-locked maximum peak concentrations in STs in trials yielding misses (results of multiple comparisons are shown in Figure 8j). There were no effects of CNO on stop cue-locked maximum peak glutamate concentrations, irrespective of whether the stop cue was followed by a stop or a (false) turn (all p > 0.23; not shown).
 
@@ -132,13 +264,13 @@ As before (Figure 6g), peak glutamate concentrations locked to reward delivery w
 
 As described above, administration of CNO to GTs expressing the DREADD construct attenuated maximum glutamate peaks, increased the occurrence of turn cue-locked traces with more than one peak, and slowed the initiation of the turn. In STs expressing the DREADD construct, CNO had no effects on these measures. The lack of effects of CNO on cued turns in five GTs expressing the empty control vector is described above. In addition, we extracted turn cue-locked glutamate traces (vehicle: 18 traces; CNO: 16 traces) from an empty vector-expressing GT. Administration of CNO did not reduce maximum glutamate peak concentrations (M, SD; vehicle: 8.51 ± 3.67 µM; CNO 8.59 ± 5.60 µM; t(16) = 0.05, p = 0.96) and did not appreciably increase the proportion of traces with just one peak (vehicle: 67%; CNO: 69%). Furthermore, CNO did not slow the initiation of the actual turns (M, SD; vehicle: 1.80 ± 1.29 s; CNO 1.70 ± 1.19 s; t(16) = 0.14, p = 0.89). The absence of effects of CNO on cued turning performance and on turn cue-locked glutamate dynamics is consistent with prior studies showing the absence of behavioral effects of 5.0 mg/kg CNO in rats not expressing the DREADD vector (Avila et al., 2020; Kucinski et al., 2022).
 
-## DREADD expression in prelimbic cortex predicts CNO efficacy
+#### DREADD expression in prelimbic cortex predicts CNO efficacy
 
 The efficacy of the expression of eGFP in the DMS and of mCherry in the prelimbic cortex was quantified using categories that are illustrated in Figure 9a–f. Furthermore, we computed the proportion of neurons in the prelimbic cortex which co-expressed both fluorochrome reporters (Figure 9h, i). As the area of eGFP expression in neuronal soma in the DMS may only partially correspond to the synaptic space of prelimbic projections, it was not unexpected that DMS eGFP transfection efficacy scores did not correlate significantly with the efficacy of CNO to reduce cued turns (GTs: R2 = 0.01, p = 0.84; STs: R2 = 0.32, p = 0.09). In contrast, in GTs, but not STs, the expression efficacy of mCherry in the prelimbic cortex, that is, of the inhibitory DREADD construct, was significantly correlated with the efficacy of CNO to attenuate cued turns (GTs: R2 = 0.48, p = 0.02; STs: R2 = 0.06, p = 0.51; Figure 9g). Likewise, in GTs, but not STs, the proportion of neurons expressing both the reporter for the inhibitory DREADD and the retrogradely transported Cre-expressing construct was positively correlated with CNO-induced reduction of cued turns (GTs: R2 = 0.77, p = 0.0004; STs: R2 = 0.06, p = 0.51; Figure 9j). Thus, in GTs, the degree of CNO-induced inhibition of prelimbic cortex–DMS projections predicted the efficacy of CNO to attenuate cued turning rates.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/100988/elife-100988-fig9-v1.jpg)
 
-**Figure 9.:** The presence of the amplified mCherry fluorescent reporter signal (red channel) in cortex indicated the expression of the inhibitory hM4Di DREADD vector. Illustration of expression efficacy ratings for eGFP in the striatum (a, b) and of mCherry in the prelimbic cortex (c, d), with a top score of 5 indicating complete or near-complete expression exclusively in the DMS projection field of prelimbic cortex efferent neurons (Mailly et al., 2013) and prelimbic cortex, respectively. The example of eGFP expression in the DMS in (e) (cc, corpus callosum) received a score of 2 (illustrated in a) because the expression field was located in part lateral to the prelimbic cortex projection field. (f) depicts an example of mCherry expression in the prelimbic cortex that was assigned a score of 4 as it was restricted to the deeper layers in the prelimbic cortex and extended dorsally into cingulate cortex. In goal trackers (GTs), but not sign-trackers (STs), mCherry expression scores in cortex were significantly correlated with the efficacy of clozapine N-oxide (CNO) to reduce cued turns (; note that the ordinate in g( depicts the difference between the proportion of turns in vehicle- minus CNO-treated rats, so that higher scores indicate greater CNO effects, and therefore higher expression scores were correlated with greater CNO effects). (g)h) depicts the retrogradely transported eGFP and the expression of mCherry, including the co-expressing of both fluorochromes, primarily in layer 5 of the prelimbic cortex. The brightened rectangular region in (h) is enlarged in (i) and shows neurons co-expressing nucleolar eGFP and cytoplasmic mCherry (white arrows in i). In GTs, but not STs, the proportion of double-labeled neurons in prelimbic cortex was significantly correlated with the efficacy of CNO to attenuate cued turns (j) note that higher scores on the ordinate depicts greater CNO effects.
+**Figure 9.:** The presence of the amplified mCherry fluorescent reporter signal (red channel) in cortex indicated the expression of the inhibitory hM4Di DREADD vector. Illustration of expression efficacy ratings for eGFP in the striatum (a, b) and of mCherry in the prelimbic cortex (c, d), with a top score of 5 indicating complete or near-complete expression exclusively in the DMS projection field of prelimbic cortex efferent neurons (Mailly et al., 2013) and prelimbic cortex, respectively. The example of eGFP expression in the DMS in (e) (cc, corpus callosum) received a score of 2 (illustrated in a) because the expression field was located in part lateral to the prelimbic cortex projection field. (f) depicts an example of mCherry expression in the prelimbic cortex that was assigned a score of 4 as it was restricted to the deeper layers in the prelimbic cortex and extended dorsally into cingulate cortex. In goal trackers (GTs), but not sign-trackers (STs), mCherry expression scores in cortex were significantly correlated with the efficacy of clozapine N-oxide (CNO) to reduce cued turns (g; note that the ordinate in (g) depicts the difference between the proportion of turns in vehicle- minus CNO-treated rats, so that higher scores indicate greater CNO effects, and therefore higher expression scores were correlated with greater CNO effects). (h) depicts the retrogradely transported eGFP and the expression of mCherry, including the co-expressing of both fluorochromes, primarily in layer 5 of the prelimbic cortex. The brightened rectangular region in (h) is enlarged in (i) and shows neurons co-expressing nucleolar eGFP and cytoplasmic mCherry (white arrows in i). In GTs, but not STs, the proportion of double-labeled neurons in prelimbic cortex was significantly correlated with the efficacy of CNO to attenuate cued turns (j) note that higher scores on the ordinate depicts greater CNO effects.
 
 ## Discussion
 
@@ -158,57 +290,57 @@ The present results contribute to bio-behavioral conceptualizations of the impac
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 378 Sprague Dawley rats (215 females; 250–500 g; obtained from Inotiv, West Lafayette, IN, and Taconic, Rensselaer, NY) were individually housed on a 12-hr light/dark cycle (lights on at 7:00 AM) at ~21°C with ad libitum access to food (Laboratory Rodent Diet 5001, LabDiet) and water. The experiments detailed below used four separate cohorts of rats (each consisted of 52 rats, 26 females and composed of rats obtained from both Taconic and Inotiv). The four cohorts were obtained and formed across 19 months, reflecting the experimental demands of amperometric recordings. All experimental procedures were approved by the University Committee on the Use and Care of Animals at the University of Michigan (protocol # PRO00010749 and PRO00011037) and carried out in laboratories accredited by the Association for Assessment and Accreditation of Laboratory Animal Care AAALAC; Unit # 000285; PHS assurance # D16-00072 (A3114-01). Animals acclimated to housing quarters for 2 days before the onset of experimental procedures. Figure 2 depicts the use of a total of 378 rats across the four main experimental stages described in this report.
 
-## Behavioral phenotyping
+### Behavioral phenotyping
 
-## Apparatus, PCA testing, and measures
+#### Apparatus, PCA testing, and measures
 
 PCA-based behavioral phenotyping was carried out using conditioning chambers and methods detailed in previous reports (e.g., Pitchers et al., 2017a; Pitchers et al., 2017b; Campus et al., 2019; Kucinski et al., 2022; Carmon et al., 2023). Briefly, the chambers were equipped with a food port located 2.5 cm above the floor in the center of the intelligence panel, a red house light located on the opposite wall (on throughout training sessions), and a retractable lever (Med Associates) located 2.5 cm to the left or right of the food receptacle and 6 cm above the floor. The retractable lever was illuminated when extended with a white light-emitting diode placed inside the lever house. The pellet dispenser (Med Associates) delivered one 45 mg banana-flavored sucrose pellet (Bio-Serv) into the food magazine port at a time. A head entry was recorded each time a rat broke the infrared photobeam located inside the food magazine port. Conditioning chambers were situated in sound-reducing enclosures. Data collection was controlled by Med-PC IV Behavioral Control Software Suite.
 
 Trials began by illuminating and extending the lever (conditioned stimulus; CS) for 8 s. Following lever retraction, a banana pellet was delivered into the magazine port (unconditioned stimulus) and a variable intertrial interval (ITI; 90 ± 60 s) started. A training session consisted of 25 trials and lasted 35–40 min. The following measures were extracted: (1) number of lever deflections (contacts); (2) latency to first lever deflection; (3) number of head entries into the food magazine port (referred to as food cup entries) during the presentation of the CS; (4) latency to the first magazine port entry after the CS presentation; (5) number of magazine port entries during the ITI.
 
-## Phenotype classification
+#### Phenotype classification
 
 The PCA score was computed to index the animals’ propensity to approach the lever CS versus the food magazine port during the CS period. This score combined the averages of three measures obtained during the fourth and fifth day of testing (e.g., Robinson and Flagel, 2009; Meyer et al., 2012; Yager et al., 2015; Pitchers et al., 2017a; Pitchers et al., 2017b): (1) the probability of contacting either the lever CS or food magazine port during the CS period (P(lever) − P(food port)); (2) the response bias for contacting the lever CS or the food magazine port during the CS period: (# lever CS contacts − # food magazine port contacts)/(# lever CS contacts + # food magazine port contacts); and (3) the latency to contact the lever CS or the food magazine port during the CS period: (food magazine port contact latency − lever CS contact latency)/8. PCA scores ranged from −1.0 to +1.0, where +1.0 indicates an animal made a sign-tracking lever response on every trial and −1.0 a goal-tracking food port response on every trial. Rats with an averaged PCA index score ranging from −1.0 to −0.5 were classified as GTs, and rats with a PCA index score between +0.5 and +1.0 as STs.
 
-## Cued-Triggered Turning Task
+### Cued-Triggered Turning Task
 
-## Apparatus
+#### Apparatus
 
 The CTTT apparatus, behavioral methods, and the CTTT performance measures were previously described in Avila et al., 2020. Briefly, a treadmill, 32.51 cm wide by 153.67 cm long, was constructed by modifying a 2200 Series Flat Belt End Drive Dorner conveyor (Dorner, WI). The conveyor belt surface material was polypropylene, friction-resistant, and easily cleaned with ethanol or soap. A Dorner Variable Speed Controller (Dorner, WI), with speeds ranging from 0 to 32 cm/s or 19.2 m/min, was used to operate the conveyor. Furthermore, the conveyor was enclosed by a Faraday cage (145.10 cm long, 32.51 cm wide, and 38.1 cm tall), grounded to block out static electric fields. Copper reward ports were installed on either end of the treadmill to allow delivery of 45 mg banana pellets. A 28 V DC, 100 mA stimulus light was approximately 2.54 cm in diameter with a flat lens and mounted on both sides lengthwise on the Faraday cage (MedAssociates, Inc, St. Albans, VT). A Mallory-SonAlert audible device, mounted in the center of the Faraday cage, was used to generate the auditory cue. This device emitted a continuous tone at 68 dBA sound pressure level, which is within the acceptable range for chronic presentations, to neither elicit a fearful response nor induce hearing loss (Turner et al., 2005; Castelhano-Carlos and Baumans, 2009). Sessions were videotaped with four web cameras (Logitech C920x HD Pro Webcam, Full HD 1080p/30fps) and relayed to an Intel Xeon workstation (Dell, Round Rock, TX) via USB cords and processed with OBS Studio (Open Broadcaster Software, free and open-source software).
 
-## Training regimen
+#### Training regimen
 
 Rats were trained to walk on a treadmill until the onset of one of two cues (tone or light, presented for 2 s), indicating that following a 5-s treadmill stop, 1 s after cue onset, the treadmill restarted in the reverse or same direction (Avila et al., 2020). Rats were trained using either the tone as the turn cue and the light as the stop cue, or vice versa. Cued turns and cued stops were rewarded by manually delivering a banana-flavored sucrose pellet (45 mg; Bio-Serv) into the reward port. Cued turns and cued stops were rewarded at the port located in front of the rat following completion of the turn or the stop, respectively. Rats first underwent a treadmill acclimation regimen using a procedure adapted from Arnold and Salvatore, 2014. For 1 week, rats were placed into the Faraday cage for 3 min with the belt paused and then acclimated to walk on the treadmill at speeds up to 9.6 cm/s or approximately 6 m/min (treadmill speed was gradually icreased during this period as detailed in Avila et al., 2020). Between sessions and subjects, the Plexiglass walls of the Faraday cage and the treadmill belt were wiped down with 70% ethanol and soap.
 
 Contrary to the acclimation phase, during which experimenters manually controlled the treadmill, the subsequent training phase was controlled entirely by custom scripts using Med-PC software and interface (MedAssociates). Rats walked at a speed of 9.6 cm/s and cues were presented for 2 s. The modality of the turn and stop cues was counterbalanced across animals. Maximally two successive presentations of a cue of the same modality were allowed. The ITI was 60 ± 45 s. The total number of trials per daily session was 18, with a maximum duration of a test session of 20 min. Upon reaching the performance criterion, after 2–3 weeks of training, defined as 70% correct responses to either cue for two consecutive days, rats were tested and videotaped for four additional days. Data from these four sessions were used to determine potential phenotype and sex-based differences in baseline performance. Thereafter, rats underwent surgery for chronic MEA implantation.
 
-## CTTT performance measures
+#### CTTT performance measures
 
 The number of cued turns, missed turns, cued stops, and false turns were extracted from offline scoring of session videos. For a cued turn to be scored, the animal must have initiated a turn, defined by a rotation of the longitudinal orientation of the body of at least 90°, before the treadmill restart, that is, within 8 s of the cue onset. A stop was defined as a cessation of forward movement. For stops occurring before the treadmill stopped, rats would typically stop while positioned at the backend of the treadmill so that following a stop, the treadmill would transport them to the front of the treadmill (within the remaining 1–3 s until the treadmill stopped), without the rat contacting the front end of the test chamber. Following the treadmill stop and during the 5 s pause, a false turn was scored if the animal (falsely) turned. The time of initiation and completion of cued turns, relative to the onset of the cue, were extracted from session videos. For the analysis of baseline CTTT performance, and because rats generated a variable number of cued turns during the four sessions used for this analysis, individual turn onset and completion times were averaged across the test sessions. Additional performance measures were extracted from training and testing sessions to explore relationships between cued turning and stopping performance, phenotype and, subsequently, glutamatergic transients (detailed in Results).
 
-## Amperometric recordings of analysis of glutamate currents
+### Amperometric recordings of analysis of glutamate currents
 
-## Electrode preparation and calibration
+#### Electrode preparation and calibration
 
 Extracellular glutamate concentrations were measured on electrode surfaces featuring immobilized glutamate oxidase and by performing fixed-potential amperometry to determine hydrogen peroxide concentrations resulting from catalyzed oxidation of glutamate. Based on calibration curves generated in vitro, the resulting currents were expressed as micromolar glutamate concentrations at the recording site (Burmeister and Gerhardt, 2001; Rutherford et al., 2007; Hascup et al., 2008; Parikh et al., 2008; Parikh et al., 2010; Parikh et al., 2014; Clay and Monbouquette, 2018; Bermingham et al., 2022). The configuration consisted of a ceramic backbone probe (Quanteon LLC, Nicholasville, KY, USA) housing four recording sites, each 15 × 333 μm, crafted from platinum–iridium. These recording sites were grouped into two pairs, separated by 30 μm between each member of a pair and a 100-μm vertical spacing between the pairs, so that the two pairs of electrodes were linearly arranged along the shank of the probe. MEAs were modified for in vivo recordings in behaving rats by soldering four enamel-coated magnet wires (30 ga) to the terminals on the electrode panel and the other end to gold-pin connectors. Reference electrodes were constructed by soldering Ag/AgCl reference electrodes prepared from 0.008” silver wire (A-M Systems, Carlsberg, WA) to gold-pin connectors. The pins were then inserted into a 9-pin ABS plug (GS09PLG-220, Grinder Scientific) and adhered to the microelectrode with epoxy. Custom 9-pin ABS plugs were also printed with a STUDIO G2 3D printer (BigRep, Berlin, Germany). The top pair of electrodes, termed active sites, were coated with recombinant L-glutamate oxidase (US Biological Life Sciences) solution (1 U in 1 μl DiH2O), cross-linked with a bovine serum albumin and glutaraldehyde mixture, by manually applying microdroplets using a 1-μl Hamilton syringe. The lower pair of electrodes, termed sentinels, were coated with only the bovine serum albumin and glutaraldehyde mixture, to record currents unrelated to glutamate concentrations. After a minimum 24-hr incubation period to ensure optimal adherence of the enzyme layer, an exclusion layer composed of meta-(1,3)-phenylenediamine (Mitchell, 2004) was electroplated onto each recording site’s surface by 5 min application of 0.85 V versus a silver/silver chloride (Ag/AgCl) reference electrode (Bioanalytical Systems). This exclusion layer prevents sensing electroactive interferents such as ascorbic acid (AA) and catecholamines (e.g., Mitchell, 2004). After another 24-hr incubation period for the electrode sites to dry, recording sites were calibrated to determine the sensitivity for glutamate, selectivity for glutamate versus interferents, stability, and limit of detection of glutamate. Calibrations were conducted using a FAST-16 electrochemical system (Quanteon). A constant voltage of 0.7 V was applied versus an Ag/AgCl reference electrode, and the system was placed in a heated 40 ml bath of 0.05 M PBS. Following a 30-min baseline recording, aliquots of stock solutions of AA (20 mM), glutamate (20 mM), and dopamine (2 mM) were added to the calibration beaker such that the final concentrations were 250 μM AA, 20, 40, and 60 μM glutamate, and 2 μM dopamine (see also Wassum et al., 2012; Malvaez et al., 2015). Changes in amperometric current at individual electrode sites were measured after each solution to calculate the slope (sensitivity), the limit of detection, selectivity for AA and dopamine, and linearity (R2). Glutamate sensors were required, at a minimum, to have a sensitivity of >5 pA/μM glutamate, a limit of detection <1.0 μM glutamate, glutamate:AA selectivity ratio >50:1, minimal changes in current across all channels following dopamine addition (<3 pA), and a linear response to increasing glutamate concentrations (20–80 μM glutamate) of R > 0.95. The characteristics of the electrodes used in the present experiments exceeded these minimum requirements (Table 1).
 
-## Chronic implantation of MEAs
+#### Chronic implantation of MEAs
 
 Upon having reached stable, criterion-level CTTT performance (≥70% cued turns and stops for two consecutive days), MEAs were chronically implanted into the DMS. Rats were anesthetized using isoflurane gas (5% induction and 1–3% maintenance) and mounted on a stereotaxic frame on a heating pad to maintain a 37°C body temperature. Ophthalmic ointment lubricated eyes. A craniotomy and durotomy using a bent 27-gauge needle for dura removal were performed above the right DMS (AP: +0.50 mm; ML: −2.20 mm from bregma). Three stainless steel screws were threaded into the cranium. The MEA was then lowered 4.5 mm dorsoventrally from the dura into the striatum. At the same time, an Ag/AgCl reference electrode was implanted at a remote site in the contralateral hemisphere. The microelectrode assembly was anchored with methyl methacrylate dental cement, and exposed regions of the skull were filled with a translucent, medium-viscosity silicone adhesive to minimize leakage of the dental cement onto the brain. Animals rested over a 48-hr recovery period before moving to the next phase of the experiment. Amperometric recordings were collected by connecting the head stages to a FAST-16 potentiostat/data electrochemical system (Quanteon) via a shielded cable and low-impedance commutator. The hydrogen peroxide by-product of glutamate oxidase-mediated catalyzation of the oxidative deamination of glutamate was electrochemically oxidized by applying 0.7 V versus the Ag/AgCl reference electrode and digitized at a sampling rate of 5 Hz. Behavioral sessions began following a 50-min baseline recording period. Consistent with prior evidence showing that implanted MEAs maintain stable sensitivity and reliability for at least 7 days after implantation, electrochemical recordings were completed within 7 days of MEA implantation (Rutherford et al., 2007).
 
-## Amperometry data processing and analysis of glutamate peaks
+#### Amperometry data processing and analysis of glutamate peaks
 
-## Baseline correction and normalization
+##### Baseline correction and normalization
 
 Electrochemical recording data were processed using a custom MATLAB (MathWorks) script. The background current recorded on sentinel sites was subtracted from the current recorded on the active sites, normalized by the response to dopamine (Burmeister and Gerhardt, 2001), and then converted to glutamate concentration based on calibration curves. Normalization of net currents by dopamine currents corrected for variations in the efficacy of the meta-(1,3)-phenylenediamine barrier (Burmeister and Gerhardt, 2001). Such normalization was only computed for recordings with electrodes which responded to dopamine (3 out of a total of 15 electrodes; see Table 1). Trial-associated glutamate concentrations were determined for three periods:
 
 The analysis of event-locked glutamate concentrations focused on determining maximum peak concentrations and the number of glutamate peaks. Prior studies on the effects of depolarization of synaptic terminals, blocking such depolarization, or of pharmacological manipulations of the excitability of terminals, confirmed that peak concentrations of extracellular glutamate indicate the degree and extent of terminal depolarization (Hascup et al., 2008; Parikh et al., 2008; Parikh et al., 2010; Mattinson et al., 2011; Quintero et al., 2011; Parikh et al., 2014).
 
-## Peak identification criteria
+##### Peak identification criteria
 
 The PeakDet function in MATLAB (MathWorks) was utilized to identify peaks, requiring setting threshold and minimum differences.
 
@@ -216,25 +348,25 @@ These criteria for identifying peaks were adopted from peak analyses employed in
 
 The maximum peak concentration (µM) and number of peaks were extracted from each trace used for the final analyses. Peak amplitude was defined as the highest glutamate concentration reached within 2 s from the onset of a cue or from reward delivery. During missed turns, peaks were not identified in a small fraction of trials (<2% in both phenotypes), yielding missed data for this measure. The number of peaks was counted across a 2-s period from cue onset or reward delivery.
 
-## Trace inclusion and exclusion criteria
+##### Trace inclusion and exclusion criteria
 
 For each response category (cued turns, misses, cued stops, false turns), glutamate traces were included into the final analyses if: (1) if the electrode met the in vitro calibration criteria; (2) traces were devoid of major electrostatic interferences (such as resulting from the headstage contacting the reward port); (3) task compliance was apparent (animals walking continuously counter the direction of the treadmill and promptly reversing direction upon cue or treadmill onset); (4) the accuracy of the electrode placement was confirmed, determined following the completion of experiments. The data from one rat that developed seizures after the second day of recordings were completely excluded from the final analyses. As a result, 1–27 (range) traces per rat and response category were included in the final analyses. Table 2 details the range and median of the total number of traces, per rat phenotype and sex, which were included in the final analyses of glutamate peaks.
 
-## Verification of MEA placements in the DMS
+### Verification of MEA placements in the DMS
 
 MEAs were chronically implanted into the DMS to record extracellular glutamate levels while performing the CTTT. Following the completion of experiments, administration of a lethal dose of sodium pentobarbital (270 mg/kg, i.p.) was followed by transcardial perfusion of saline, followed by 4% paraformaldehyde in 0.15 m sodium-phosphate solution, pH 7.4. Extracted brains were postfixed in 4% paraformaldehyde for 24 hr, then submerged in 30% sucrose solution until they sank. Using a freezing microtome (CM 2000R; Leica), 35 μm thick brain slices were sectioned and stored in cryoprotectant until further histologic processing. Sections were mounted and processed with a Cresyl Violet Nissl stain to verify placements. A Leica DM400B digital microscope was used to photomicrograph the sections at ×1.25 and ×5. For electrochemical recordings to be included in the final analyses, microelectrodes needed to be placed within the following stereotaxic space: AP: −0.3 to 0.6 mm, ML: 2 to 2.5 mm, and DV: −4.2 to −5 mm.
 
-## Intracranial infusions of a Cre-dependent DREADD and a retrograde Cre-vector
+### Intracranial infusions of a Cre-dependent DREADD and a retrograde Cre-vector
 
 We utilized a pathway-specific dual vector chemogenetic strategy (Hart et al., 2018b) to selectively inhibit the activity of fronto-cortical projections to the DMS. Intracranial infusions of a Cre-dependent Designer Receptor Exclusively Activated Only by Designer Drug (DREADD) and a retrogradely transported Cre-expressing plasmid were carried out following PCA screening and prior to CTTT acquisition training. In a subset of rats, a second surgery, carried out following the acquisition of the CTTT, was conducted to implant MEAs into the DMS. The viral vectors containing the Cre-dependent plasmid pAAV-hSyn-DIO-hM4D(Gi)-mCherry (AddGene #44362-AAV8; titer of 2.1 × 1013 GC/ml), Cre-dependent control plasmid pAAV-hSyn-DIO-mCherry (AddGene #50459-AAV8; titer of 2.2 × 1013 GC/ml), or the retrogradely transported Cre-expressing plasmid pENN-rAAV-hSyn-HI-eGFP-Cre-WPRE-SV40 (AddGene #105540-AAVrg; titer of 1.9 × 1013 GC/ml) were infused into the lower layers of the prelimbic cortex (for the anatomical organization of fronto-striatal projections see, e.g., Mailly et al., 2013) and the DMS, respectively.
 
 Craniotomies and durotomies were carefully performed above four sites of the DMS using a bent 27-gauge needle for dura removal to minimize the impact on the subsequent implantation of recording electrodes and electrochemical recordings. One μl of pENN-rAAV-hSyn-HI-eGFP-Cre-WPRE-SV40 vector was infused (bolus) into the DMS at two sites per hemisphere (AP: +0.2/1.2; ML: ±2.5/2.2; DV: −4.5 mm from dura) to retrogradely transfect afferent projections. In addition, 1 μl of AAV-hSyn-DIO-hM4D(Gi)-mCherry or AAV-hSyn-DIO-mCherry (control vector) was infused (bolus) into the prelimbic cortex (AP: +3.2; ML: ±0.7; DV: −3.5 mm from dura) to allow for the selective inhibition of cortico-striatal projections. The injector was left in place for 8 min to minimize diffusion into the injector tract. Rodents recovered for 1 week before treadmill and CTTT training.
 
-## Clozapine N-oxide
+#### Clozapine N-oxide
 
 CNO was obtained from Tocris Bioscience (Bristol, United Kingdom) and dissolved 10 mg/ml in 6% DMSO in 0.9% NaCl solution. CNO (5.0 mg/ml/kg; i.p.) or vehicle was administered i.p. 50 min before the onset of CTTT testing. In rats also equipped for electrochemical recording of DMS glutamate levels, CNO was given just prior to the onset of recording the pre-task baseline (above). Rats were given vehicle and CNO on alternate days. Regarding potential off-target effects of clozapine (Gomez et al., 2017), we and others have previously consistently failed to detect effects of this dose of CNO in rats expressing the control vector, including in rats performing the CTTT, complex movement control tasks, or an operant sustained attention task (Jendryka et al., 2019; Avila et al., 2020; Kucinski et al., 2022). Given effective dose ranges of clozapine in rodents performing complex behavioral tasks (Martinez and Sarter, 2008), and given the proposed conversion rate of CNO to clozapine, an approximately 50- to 100-fold higher dose of clozapine would be required to produce significant effects on rodent behavior (see also Mahler and Aston-Jones, 2018; Lawson et al., 2023).
 
-## Visualization and quantification of GFP/mCherry-expressing neurons
+#### Visualization and quantification of GFP/mCherry-expressing neurons
 
 We amplified the mCherry fluorescent reporter signal of the inhibitory hM4Di DREADD vector to enhance the evaluation of the transfection efficacy and distribution of neurons co-expressing mCherry and eGFP. The eGFP fluorescent label did not necessitate signal enhancement. Sections underwent six washes for 5 min each in 0.1 m PBS, pH 7.3, and then were immersed in 0.1% Triton X-100 diluted in PBS for 15 min. After three 5 min PBS rinses, sections incubated for 60 min at room temperature in the blocking solution, 1% normal donkey serum and 1% Triton X-100 made in PBS. Sections were incubated overnight in the primary antibody (rabbit anti-mCherry, ab167453, Abcam; 1:500; diluted in blocking solution to prevent non-specific binding). The next day, and following three 5 min PBS rinses, sections were incubated for 90 min at room temperature in the secondary antibody (donkey anti-rabbit conjugated to Alexa 594, PIA32754, Invitrogen, 1:500). Following three 5 min rinses with PBS and sections were mounted, air dried, and cover-slipped with Vectashield Antifade Mounting Medium (H-1000; Vector Laboratories).
 
@@ -242,24 +374,24 @@ A Zeiss LM 700 confocal microscope, equipped for sequential multi-track acquisit
 
 We employed a modification of a prior, semi-quantitative estimation of transfection efficacy and space (Avila et al., 2020). Briefly, GFP labeling that was centered in the striatal target region of prelimbic projections (Mailly et al., 2013) was assigned the highest transfection score (5), whereas labeling that extended into more lateral and ventral regions and only partially covered the target region were assigned lower scores. Likewise, mCherry labeling that exclusively covered the entire prelimbic cortex was assigned the highest score. Partial expression of mCherry in this region, or labeling that extended dorsally or ventrally beyond the prelimbic cortex, were assigned lower transfection efficacy scores. Furthermore, single-and double-labeled neurons were counted in the prelimbic region, and the proportion of double-labeled neurons was computed for each rat. Counting frames were superimposed on each subregion using the ImageJ multipoint tool. Cells were counted on two sections per brain, yielding four counts per brain and subregion. Averaged counts obtained from each brain and subregion were used for further analyses. To produce images of neurons expressing mCherry and GFP, and control for potential ‘bleed-through’ (e.g., North, 2006), we used the split view feature within Zen Black software (ZEN 2.31 SP1 Black Edition; Zeiss) for examination of individual channels with multi-track images. Tile scanning/stitching techniques were implemented at both ×10 (3 × 2 tiles, covering an area of 3455.94 by 2370.64 μm) and ×20 magnifications (4 × 3 tiles, covering an area of 1407.88 by 1135.31 μm).
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
-## Behavioral data
+#### Behavioral data
 
 Chi-square tests were used to determine the effects of sex and the commercial source of rats (vendor) on the distribution of PCA scores. Baseline CTTT performance was analyzed using conventional repeated measures ANOVAs; associated graphs depict individual values, means, and 95% confidence intervals (CIs). Conventional ANOVAs were computed using SPSS for Windows (version 28.0; SPSS) and GraphPad Prism (version 10.1.2).
 
-## Glutamate concentrations and effects of CNO
+#### Glutamate concentrations and effects of CNO
 
 Extracellular glutamate concentrations were sentinel-corrected, normalized to dopamine (if applicable), and pre-cue baseline corrected (see above for details). From these data, peak concentrations and the number of peaks were extracted (see above for the definition peaks). Given the complexity of the experimental design (variable number of rats per phenotype, turn and stop trials, and of cue-evoked glutamatergic transients), here we first determined potential phenotype-specific differences in glutamate peaks across trial types and response categories, followed, in cases, by post hoc analyses of event-related glutamate levels within individual phenotypes. LMMs with restricted maximum likelihood estimation were computed in SPSS for Windows (version 28.0; SPSS). A key reason for using LMMs concerned the definition of sample size (number of animals vs. the number of individual traces collected from each animal). Moreover, sample sizes may vary across repeated or otherwise dependent measures (e.g., Schielzeth et al., 2020; Yu et al., 2022). Data from repeated sessions were used to compute repeated fixed effects, and phenotype was used to determine between-subjects fixed effects, with a subject identifier random intercept. Separate LMMs were computed for the analysis of glutamate levels during cue periods followed by turns, missed turns, or cued stops, and locked to reward delivery. The covariance structures with the lowest Akaike’s information criterion were selected for each model (Verbeke and Molenberghs, 2009). Main effects of phenotype were followed up using Bonferroni’s method for pairwise comparison of the means. When LMMs reported significant interactions, repeated measures ANOVAs were used to compare data from repeated sessions, with Huynh–Feldt-corrected F values and corrected degrees of freedom applied in case of violation of the sphericity assumption. Data graphs showing LMM-analyzed glutamate concentrations depict individual values, estimated marginal means, and 95% CIs. Phenotypic frequencies of traces with one, two, or three peaks during cue periods were analyzed using Chi-squared tests.
 
-## Contingency table analyses
+#### Contingency table analyses
 
 Glutamate trace characteristics were extracted from 548 recordings of turn cue trials, 364 of which yielded a turn (GTs: 206, STs: 158) and 184 a miss (GTs: 112, STs: 72). Contingent on threshold maximum peak concentrations, and the presence of a single or multiple cue-evoked glutamate peaks, the proportions of turns and misses were compared using contingency table analyses (p values were computed using Fisher’s exact test; GraphPad Prism). Furthermore, the relative probability for turns in GTs, as well as the reciprocal value, were derived from these analyses (Koopman asymptotic score; Koopman, 1984; Motulsky, 2018).
 
-## Effects of CNO on CTTT performance
+#### Effects of CNO on CTTT performance
 
 The effects of CNO or its vehicle on cued turns and stops, in rats expressing the inhibitory DREADD or the empty control vector, were analyzed using repeated measures ANOVA (general linear model) on the effects of phenotype and treatment day. For clarity, effects on the two behavioral measures were analyzed separately, at alpha = 0.05/2. Tukey’s Honest Significant Difference test was used to compare, post hoc, the effects of the first and second administration of CNO with the effects of the first and second administration of vehicle (GraphPad Prism).
 
-## p values and effect sizes
+#### p values and effect sizes
 
 Exact p values were reported (Greenwald et al., 1996; Sarter and Fritschy, 2008; Michel et al., 2020). For key findings, effect sizes were computed using generalized eta squared (ηp2) (effect sizes of 0.02 typically are classified as small, 0.13 as medium, and 0.26 as large; e.g., Bakeman, 2005), derived from Bonferroni pairwise comparisons of estimated marginal means (Greenwald et al., 1996).

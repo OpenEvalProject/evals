@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.28768.001 Master regulatory genes of tissue specification play key roles in stem/progenitor cells and are often important in cancer. In the prostate, androgen receptor (AR) is a master regulator essential for development and tumorigenesis, but its specific functions in prostate stem/progenitor cells have not been elucidated. We have investigated AR function in CARNs (CAstration-Resistant Nkx3.1-expressing cells), a luminal stem/progenitor cell that functions in prostate regeneration. Using genetically--engineered mouse models and novel prostate epithelial cell lines, we find that progenitor properties of CARNs are largely unaffected by AR deletion, apart from decreased proliferation in vivo . Furthermore, AR loss suppresses tumor formation after deletion of the Pten tumor suppressor in CARNs; however, combined Pten deletion and activation of oncogenic Kras in AR-deleted CARNs result in tumors with focal neuroendocrine differentiation. Our findings show that AR modulates specific progenitor properties of CARNs, including their ability to serve as a cell of origin for prostate cancer.
+Master regulatory genes of tissue specification play key roles in stem/progenitor cells and are often important in cancer. In the prostate, androgen receptor (AR) is a master regulator essential for development and tumorigenesis, but its specific functions in prostate stem/progenitor cells have not been elucidated. We have investigated AR function in CARNs (CAstration-Resistant Nkx3.1-expressing cells), a luminal stem/progenitor cell that functions in prostate regeneration. Using genetically--engineered mouse models and novel prostate epithelial cell lines, we find that progenitor properties of CARNs are largely unaffected by AR deletion, apart from decreased proliferation in vivo. Furthermore, AR loss suppresses tumor formation after deletion of the Pten tumor suppressor in CARNs; however, combined Pten deletion and activation of oncogenic Kras in AR-deleted CARNs result in tumors with focal neuroendocrine differentiation. Our findings show that AR modulates specific progenitor properties of CARNs, including their ability to serve as a cell of origin for prostate cancer.
 
 ## Introduction
 
@@ -48,7 +48,7 @@ To investigate whether the stem/progenitor properties of CARNs are dependent upo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig1-v2.jpg)
 
-**Figure 1.:** (A) Time course for lineage-marking of CARNs and inducible AR deletion using castrated and tamoxifen-treated control Nkx3.1 mice and CreERT2/+; R26R-YFP/+Nkx3.1 mice. (CreERT2/+; Arflox/Y; R26R-YFP/+B) FACS analyses of lineage-marked YFP+ cells in total EpCAM+ epithelial cells. (C) Percentage of YFP+ cells among total epithelial cells in castrated and tamoxifen-induced Nkx3.1 controls and CreERT2/+; R26R-YFP/+Nkx3.1 mice. Error bars represent one standard deviation; the difference between groups is not significant (p=0.51, independent t-test). (CreERT2/+; Arflox/Y; R26R-YFP/+D) Expression of AR, luminal markers (CK8 and CK18), and basal markers (CK5 and p63) in lineage-marked CARNs (top) and AR-deleted CARNs (bottom). Note that all lineage-marked cells express luminal but not basal markers (arrows). Scale bars in D) correspond to 50 μm.10.7554/eLife.28768.004Figure 1—source data 1.in vivo.
+**Figure 1.:** (A) Time course for lineage-marking of CARNs and inducible AR deletion using castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. (B) FACS analyses of lineage-marked YFP+ cells in total EpCAM+ epithelial cells. (C) Percentage of YFP+ cells among total epithelial cells in castrated and tamoxifen-induced Nkx3.1CreERT2/+; R26R-YFP/+ controls and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. Error bars represent one standard deviation; the difference between groups is not significant (p=0.51, independent t-test). (D) Expression of AR, luminal markers (CK8 and CK18), and basal markers (CK5 and p63) in lineage-marked CARNs (top) and AR-deleted CARNs (bottom). Note that all lineage-marked cells express luminal but not basal markers (arrows). Scale bars in D) correspond to 50 μm.
 
 Using this strategy, we compared the properties of CARNs in Nkx3.1CreERT2/+; R26R-YFP/+ mice, which we denote as ‘control’ mice, with those in Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice, which we denote as ‘AR-deleted’ mice. We found that the percentage of lineage-marked YFP-positive cells, corresponding to CARNs, was not significantly different (p=0.51) between the control (0.36 ± 0.17%, n = 5 mice) and AR-deleted mice (0.31 ± 0.06%, n = 5 mice) (Figure 1B,C). Notably, we found that 87.1% of the YFP-positive cells in Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice (n = 344/395 cells in four mice) were AR-negative, indicating that AR deletion occurred with high efficiency. Furthermore, these YFP-positive cells expressed the luminal markers cytokeratins 8 and 18 (CK8 and CK18), but not cytokeratin 5 (CK5) and p63, indicating that AR deletion does not alter the luminal phenotype of CARNs (Figure 1D). These findings indicate that AR deletion does not affect the frequency or luminal properties of CARNs.
 
@@ -56,19 +56,27 @@ To investigate the progenitor properties of AR-deleted CARNs, we examined their 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig2-v2.jpg)
 
-**Figure 2.:** (A) Time course for lineage-marking and androgen-mediated regeneration. (B) Percentage of single YFP+ cells or YFP+ clusters of 2 cells, 3–4 cells, and >4 cells at 4, 7, 14, and 28 days of androgen-mediated regeneration. This analysis does not include YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 2—source data 1. (C) YFP+ cells (arrows) in prostates of mice with lineage-marked CARNs (top) and AR-deleted CARNs (bottom) at days 4, 7, 14 and 28 days during androgen-mediated regeneration. (D) Identification of basal YFP+ cells (arrows) as progeny of CARNs (top) or AR-deleted CARNs (bottom). Scale bars in C) and D) correspond to 50 μm.10.7554/eLife.28768.006Figure 2—source data 1.+ cells during regeneration.
+**Figure 2.:** (A) Time course for lineage-marking and androgen-mediated regeneration. (B) Percentage of single YFP+ cells or YFP+ clusters of 2 cells, 3–4 cells, and >4 cells at 4, 7, 14, and 28 days of androgen-mediated regeneration. This analysis does not include YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 2—source data 1. (C) YFP+ cells (arrows) in prostates of mice with lineage-marked CARNs (top) and AR-deleted CARNs (bottom) at days 4, 7, 14 and 28 days during androgen-mediated regeneration. (D) Identification of basal YFP+ cells (arrows) as progeny of CARNs (top) or AR-deleted CARNs (bottom). Scale bars in C) and D) correspond to 50 μm.
 
 To compare the proliferative ability of control and AR-deleted CARNs and their progeny, we pursued BrdU pulse-chase experiments during prostate regeneration. We performed castration and tamoxifen administration on control and AR-deleted mice, followed by androgen-mediated regeneration for 28 days, with administration of daily doses of BrdU either from days 1 through 4 of regeneration or from days 11 through 14 (Figure 3A,B). When BrdU was administered from days 1 through 4 of regeneration, we could readily detect BrdU+YFP+ cells in the control prostates (50.9 ± 11.8%, n = 3 mice) as well as AR-deleted prostates (62.9 ± 14.9%, n = 3 mice) (Figure 3C,E). In contrast, when BrdU was administered from days 11 through 14, we could only detect BrdU+YFP+ cells in the control prostates (11.1 ± 6.2%, n = 3 mice), but not in the AR-deleted prostates (0%, n = 3 mice) (Figure 3D,F). This difference suggests that AR-deleted CARNs and/or their progeny have a defect in proliferation during later stages of regeneration, consistent with the analysis of YFP+ cluster size (Figure 2B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig3-v2.jpg)
 
-**Figure 3.:** (A,B) Time course of BrdU incorporation during androgen-mediated regeneration of castrated and tamoxifen-treated control Nkx3.1 mice and CreERT2/+; R26R-YFP/+Nkx3.1 mice. BrdU injections were performed during either days 1 through 4 (CreERT2/+; Arflox/Y; R26R-YFP/+A) or days 11 through 14 (B), followed by analysis at 28 days. (C) Identification of BrdU+YFP+ cells (arrows) in control (top) and AR-deleted (bottom) prostate tissue after administration of BrdU during early stages of regeneration. (D) YFP-positive cells in control prostate tumors (top) can incorporate BrdU (arrow) but not in AR-deleted prostate tumors (bottom), after administration of BrdU during later stages of regeneration. (E,F) Percentage of BrdU+ and BrdU– cells among total YFP+ cells after injection of BrdU from days 1 through 4 (E) or days 11 through 14 (F) of regeneration. Error bars represent one standard deviation; the difference in (E) is not statistically significant (p=0.34, independent t-test), but is significant in (F) (p=0.027, independent t-test). This analysis excludes YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 3—source data 1. (G) Schematic depiction of tissue recombination of lineage-marked CARNs with rat urogenital mesenchyme followed by renal grafting. (H) Analysis of grafts generated from lineage-marked CARNs (top) and AR-deleted CARNs (bottom); arrows in bottom panels indicate AR-expressing stromal cells surrounding the AR-negative prostate duct. Scale bars in C), D) and H) correspond to 50 μm.10.7554/eLife.28768.008Figure 3—source data 1.
+**Figure 3.:** (A,B) Time course of BrdU incorporation during androgen-mediated regeneration of castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. BrdU injections were performed during either days 1 through 4 (A) or days 11 through 14 (B), followed by analysis at 28 days. (C) Identification of BrdU+YFP+ cells (arrows) in control (top) and AR-deleted (bottom) prostate tissue after administration of BrdU during early stages of regeneration. (D) YFP-positive cells in control prostate tumors (top) can incorporate BrdU (arrow) but not in AR-deleted prostate tumors (bottom), after administration of BrdU during later stages of regeneration. (E,F) Percentage of BrdU+ and BrdU– cells among total YFP+ cells after injection of BrdU from days 1 through 4 (E) or days 11 through 14 (F) of regeneration. Error bars represent one standard deviation; the difference in (E) is not statistically significant (p=0.34, independent t-test), but is significant in (F) (p=0.027, independent t-test). This analysis excludes YFP+AR+ cells that fail to undergo AR deletion in the experimental mice; full quantitation of all cell populations is provided in Figure 3—source data 1. (G) Schematic depiction of tissue recombination of lineage-marked CARNs with rat urogenital mesenchyme followed by renal grafting. (H) Analysis of grafts generated from lineage-marked CARNs (top) and AR-deleted CARNs (bottom); arrows in bottom panels indicate AR-expressing stromal cells surrounding the AR-negative prostate duct. Scale bars in C), D) and H) correspond to 50 μm.
 
 Notably, although YFP-expressing basal cells could be readily identified in both control and AR-deleted prostates, there was an increase in the percentage of basal cells within the YFP+ population in the AR-deleted mice (Figure 2D). This difference was evident using either the basal marker CK5 (2.1% CK5+AR+YFP+ versus 19.2% CK5+AR–YFP+) or p63 (3.5% p63+AR+YFP+ versus 14.6% p63+AR–YFP+) (Figure 2D). These findings indicate that AR-deleted CARNs favor generation of basal progeny and/or that there is decreased proliferation or survival of luminal progeny during regeneration.
 
 As a further test of the progenitor properties of AR-deleted CARNs, we examined their ability to generate prostate ducts in a tissue recombination/renal grafting assay. Previously, we had shown that single CARNs were capable of generating ducts in this assay (Wang et al., 2009). We isolated YFP-positive cells from control and AR-deleted mice that had undergone castration and tamoxifen induction, and recombined 10 YFP-positive cells together with 2.5 × 105 rat embryonic urogenital mesenchyme cells, followed by renal grafting (Figure 3G). We found that both control and AR-deleted CARNs could generate prostate ducts (Figure 3H), but that the AR-deleted CARN-s were significantly less efficient (12.5% graft efficiency, n = 16) compared to the control CARNs (p=0.003; 68.8% graft efficiency, n = 16), consistent with a proliferation defect in the AR-deleted CARNs.
 
 Based on these findings, we further investigated the properties of CARNs and AR-deleted CARNs by establishing adherent cell lines. Using a novel method based on conditions that we previously established for culture of prostate organoids (Chua et al., 2014), we successfully generated adherent cell lines from single YFP+ cells isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. Genotyping of the resulting lines led to identification of Ar-positive (non-recombined allele) and Ar-negative (recombined allele) lines, which we term APCA and ADCA (Ar-Positive CArn-derived and Ar-Deleted CArn-derived) lines. These cell lines could be propagated as adherent cells in the presence of Matrigel and DHT. Under these conditions, we found that the APCA (n = 2) and ADCA (n = 2) lines were morphologically indistinguishable (Figure 4A). These cell lines were comprised of a mixture of cells expressing basal (CK5) or luminal (CK8) markers or both, as well as Foxa1, an epithelial marker that encodes a transcriptional partner of AR (Gao et al., 2003; He et al., 2010) (Figure 4A). Furthermore, both the APCA and ADCA lines showed robust proliferation at similar levels, as demonstrated by Ki67 immunostaining, CellTiter-Glo assays, and colony formation in the presence or absence of DHT (Figure 4A–C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig4-v2.jpg)
+
+**Figure 4.:** (A) Morphology and marker expression of cell lines derived from single YFP+ cells from castrated and tamoxifen-treated control Nkx3.1CreERT2/+; R26R-YFP/+ mice and Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice. The APCA lines (top) and ADCA lines (bottom) show similar bright-field morphology, expression of YFP, Foxa1, and Ki67, as well as co-expression of CK8 and CK5, but differ in expression of AR. (B) APCA and ADCA cell lines display similar cell growth at days 1, 2, 4, and 6 after plating in the absence or presence of DHT, as assessed by CellTiter-Glo assay. Results shown are from a single experiment with five technical replicates and are representative of two biological replicates after normalization with day 0 luminescent signal. (C) Colony formation by APCA and ADCA cell lines in the absence or presence of DHT. Results are from a single experiment with three technical replicates and are representative of two biological replicates. (D) Renal grafts generated from tissue recombinants of 100,000 APCA or ADCA cells with rat urogenital mesenchyme, and analyzed at 12 weeks. Bottom row shows APCA grafts treated with tamoxifen for 4 days at 7 weeks of growth to induce Ar deletion (bottom); arrows indicate cells that did not undergo Ar deletion after tamoxifen treatment. Scale bars in A) and D) correspond to 50 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Flow-sorting strategy to eliminate EpCAM–E-cadherin– cells from dissociated benign human prostate epithelial cells obtained from radical prostatectomies. (B) Bright-field images of a human prostate epithelial cell line at passages 3 and 6. (C) HPE cells broadly express AR and both luminal (CK8) and basal (CK5) markers, and have more limited expression of PSA and Ki67. Scale bars in B) correspond to 100 μm, and in C) to 50 μm.
 
 To determine the relative efficiency of forming APCA and ADCA lines from AR+ and AR– CARNs, respectively, we sorted 60 single YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice into individual wells of a 96-well plate. We found that six YFP+ cells gave rise to adherent lines, with four of these corresponding to AR+ lines that had failed to undergo Cre-mediated recombination of the conditional Ar allele, and two lines corresponding to AR– lines. After correcting for the 87.1% efficiency of recombination of the AR-floxed allele in vivo, these data indicate that the relative plating efficiency for the AR– CARNs compared to AR+ CARNs is 7.4%, consistent with the decreased grafting efficiency of AR– CARNs.
 
@@ -86,7 +94,7 @@ Finally, we tested the ability of AR-deleted CARNs to serve as a cell of origin 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28768/elife-28768-fig6-v2.jpg)
 
-**Figure 6.:** (A) Prostate histology and marker expression in Nkx3.1 (NP-CARN) and CreERT2/+; Ptenflox/flox; R26R-YFP/+Nkx3.1 (NPA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Shown are representative images for hematoxylin-eosin staining (H and E) and immunofluorescence for YFP, AR, phospho-Akt (pAkt), E-cadherin (Ecad), Ki67, and cleaved caspase-3 (CC3). Arrows indicate occurrence of cell death (YFP/AR in NPA-CARN), proliferation (Ecad/Ki67), and apoptosis (Ecad/CC3). (CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+B) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NP-CARN and NPA-CARN prostates. Error bars represent one standard deviation; differences between groups are statistically significant as determined by independent t-test. (C) Prostate tumor histology and marker expression in Nkx3.1 (NPK-CARN) and CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; R26R-YFP/+Nkx3.1 (NPKA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Arrows indicate cells undergoing proliferation (Ecad/Ki67) and apoptosis (Ecad/CC3). (CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+D) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NPK-CARN and NPKA-CARN prostates. Differences between groups are not statistically significant as determined by independent t-test (Ki67, p=0.724; CC3, p=0.507). (E) Focal neuroendocrine differentiation in NPKA-CARN tumors. Shown are H and E and immunohistochemical staining (IHC) of serial sections for Synaptophysin (Syn) and Aurora kinase A (Aurka), IHC for Foxa2 and Chromogranin A (ChrA), as well as immunofluorescence for YFP and Syn shown as an overlay and as individual channels; arrows indicate positive cells. (F) Quantitation of Syn+ cells in total epithelial cells in NPK-CARN and NPKA-CARN tumors. Scale bars for H and E and IHC in A, C,) and E) correspond to 100 μm, and in other panels to 50 μm.10.7554/eLife.28768.014Figure 6—source data 1.
+**Figure 6.:** (A) Prostate histology and marker expression in Nkx3.1CreERT2/+; Ptenflox/flox; R26R-YFP/+ (NP-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+ (NPA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Shown are representative images for hematoxylin-eosin staining (H and E) and immunofluorescence for YFP, AR, phospho-Akt (pAkt), E-cadherin (Ecad), Ki67, and cleaved caspase-3 (CC3). Arrows indicate occurrence of cell death (YFP/AR in NPA-CARN), proliferation (Ecad/Ki67), and apoptosis (Ecad/CC3). (B) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NP-CARN and NPA-CARN prostates. Error bars represent one standard deviation; differences between groups are statistically significant as determined by independent t-test. (C) Prostate tumor histology and marker expression in Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; R26R-YFP/+ (NPK-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ (NPKA-CARN) mice that have been castrated and tamoxifen-treated, followed by androgen-mediated regeneration for 1 month. Arrows indicate cells undergoing proliferation (Ecad/Ki67) and apoptosis (Ecad/CC3). (D) Quantitation of Ki67+ and CC3+-positive cells in total Ecad+ epithelial cells in NPK-CARN and NPKA-CARN prostates. Differences between groups are not statistically significant as determined by independent t-test (Ki67, p=0.724; CC3, p=0.507). (E) Focal neuroendocrine differentiation in NPKA-CARN tumors. Shown are H and E and immunohistochemical staining (IHC) of serial sections for Synaptophysin (Syn) and Aurora kinase A (Aurka), IHC for Foxa2 and Chromogranin A (ChrA), as well as immunofluorescence for YFP and Syn shown as an overlay and as individual channels; arrows indicate positive cells. (F) Quantitation of Syn+ cells in total epithelial cells in NPK-CARN and NPKA-CARN tumors. Scale bars for H and E and IHC in A, C,) and E) correspond to 100 μm, and in other panels to 50 μm.
 
 In contrast, AR deletion did not affect tumor initiation following combined deletion of Pten and activation of the oncogenic KrasG12D allele. Using a similar protocol for castration, tamoxifen-treatment, and androgen-mediated regeneration, we compared the phenotypes of Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; R26R-YFP/+ controls (NPK-CARN) and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ mice (NPKA-CARN). In both genotypes, deletion of Pten and activation of oncogenic Kras resulted in formation of tumors with large clusters of YFP+ cells that express pAkt and Ras (Figure 6C). Furthermore, both NPK-CARN and NPKA-CARN tumors displayed high proliferative indices (20%, n = 3 vs. 19%, n = 3) and low frequencies of apoptosis (0.9%, n = 3 vs. 0.8%, n = 3) (Figure 6D). Notably, we observed an important difference between the NPK-CARN and NPKA-CARN tumors, as all the NPKA-CARN tumors contained a low but variable percentage of synaptophysin-positive neuroendocrine cells among total epithelial cells (0.7%, n = 3), which were never observed in the NPK-CARN controls (0%, n = 3) (Figure 6E,F). We also observed rare cells in all three NPKA-CARN tumors that expressed other neuroendocrine markers such as Chromogranin A, Foxa2, and Aurora kinase A (Figure 6E). Since the synaptophysin-postive cells co-expressed YFP (Figure 6E), we conclude that transformed AR-negative CARNs can give rise to neuroendocrine cells.
 
@@ -110,58 +118,810 @@ Finally, since tumors initiated from CARNs following combined Pten deletion and 
 
 ## Materials and methods
 
-## Mouse strains and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>NOG</td>
+      <td>PMID: 15879151</td>
+      <td>NOD.Cg-Prkdcscid Il2rgtm1Sug/JicTac</td>
+      <td>Taconic (Hudson, NY)</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Nkx3.1CreERT2</td>
+      <td>PMID: 19741607</td>
+      <td>Nkx3-1tm4(CreERT2)Mms</td>
+      <td>established by Shen lab</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Ptenflox</td>
+      <td>PMID: 11691952</td>
+      <td>C;129S4-Ptentm1Hwu/J</td>
+      <td>JAX #004597 (Bar Harbor, ME)</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>KrasLSL-G12D</td>
+      <td>PMID: 11751630</td>
+      <td>B6.129-Krastm4Tyj/Nci</td>
+      <td>MMHCC #01XJ6</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>ARflox</td>
+      <td>PMID: 14745012</td>
+      <td>B6N.129-Artm1Verh/Cnrm</td>
+      <td>EMMA #02579</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>R26R-YFP</td>
+      <td>PMID: 11299042</td>
+      <td>B6.129 × 1-Gt(ROSA) 26Sortm1(EYFP)Cos/J</td>
+      <td>JAX #006148</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HPE-1</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 23 tissue, sorted for EpCAM+Ecad+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-2</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 23 tissue, sorted for EpCAM+Ecad+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-3</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 24 tissue, sorted for EpCAM+Ecad+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-4</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 25 tissue</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-5</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-6</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+Ngfr+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-7</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 25 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-8</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 26 tissue</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-9</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-10</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-11</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 26 tissue, sorted for EpCAM+Ecad+Agr2+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-12</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 27 tissue</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-13</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 27 tissue; sorted for EpCAM+Ecad+cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HPE-14</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from radical prostatectomy 27 tissue, sorted for EpCAM+Ecad+Cd24+ cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>ADCA-1</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with deletedAr (recombined) allele</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>ADCA-2</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with deletedAr (recombined) allele</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>APCA-1</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with intact Ar (non-recombined) allele</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>APCA-2</td>
+      <td>this work</td>
+      <td></td>
+      <td>Adherent cell line established from single YFP+ cell isolated from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R262R-YFP/+ mouse with intact Ar (non-recombined) allele</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Androgen receptor (AR)</td>
+      <td>Sigma (St. Louis, MO)</td>
+      <td>A9853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytokeratin 8 (CK8)</td>
+      <td>Developmental Studies Hybridoma Bank (Iowa City, IA)</td>
+      <td>TROMA-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytokeratin 18 (CK18)</td>
+      <td>Abcam (Cambridge, MA)</td>
+      <td>ab668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytokeratin 5 (CK5)</td>
+      <td>Covance (San Diego, CA)</td>
+      <td>SIG3475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytokeratin 5 (CK5)</td>
+      <td>Covance</td>
+      <td>PRB-160P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p63</td>
+      <td>Santa Cruz (Dallas, TX)</td>
+      <td>sc-8431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Abcam</td>
+      <td>ab13970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Roche (St. Louis, MO)</td>
+      <td>11814460001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BrdU</td>
+      <td>AbD Serotec MCA (Hercules, CA)</td>
+      <td>2060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Foxa1</td>
+      <td>Abcam</td>
+      <td>ab55178</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67</td>
+      <td>eBiosciences (San Diego, CA)</td>
+      <td>14–5698, clone SolA15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cleaved-caspase-3 (CC3)</td>
+      <td>BD Pharmingen (San Jose, CA)</td>
+      <td>559565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Prostate specific antigen (PSA)</td>
+      <td>Dako (Santa Clara, CA)</td>
+      <td>M0750, clone ER-PR8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Kras</td>
+      <td>Abcam</td>
+      <td>ab84573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synaptophysin (Syn)</td>
+      <td>BD Transduction Laboratories (San Jose, CA)</td>
+      <td>611880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Aurora A (Aurka)</td>
+      <td>Abcam</td>
+      <td>ab13824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chromogranin A (ChrA)</td>
+      <td>Abcam</td>
+      <td>ab15160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Foxa2</td>
+      <td>Abnova (Taiwan)</td>
+      <td>H00003170-M12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AMACR</td>
+      <td>Zeta Corp (Arcadia, CA)</td>
+      <td>Z2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EpCAM</td>
+      <td>BioLegend</td>
+      <td>118214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>E-cadherin</td>
+      <td>eBiosciences</td>
+      <td>46-3249-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nerve growth factor receptor (Ngfr)</td>
+      <td>BioLegend</td>
+      <td>345108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cd24</td>
+      <td>BioLegend</td>
+      <td>311008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anterior gradient 2 (Agr2)</td>
+      <td>Abcam</td>
+      <td>ab1139894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EpCAM</td>
+      <td>BioLegend</td>
+      <td>324208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nkx3.1 wild-type primers</td>
+      <td>PMID: 19741607</td>
+      <td>DOI 10.1038/nature08361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nkx3.1CreERT2 primers</td>
+      <td>PMID: 19741607</td>
+      <td>DOI 10.1038/nature08361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CreERT2 primers</td>
+      <td>PMID: 19741607</td>
+      <td>DOI 10.1038/nature08361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R262R-YFP primers</td>
+      <td>PMID: 11299042</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptenflox primers</td>
+      <td>PMID: 11691952</td>
+      <td>DOI: 10.1126/science.1065518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pten wild-type primers</td>
+      <td>PMID: 11691952</td>
+      <td>DOI: 10.1126/science.1065518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KrasLSL-G12D primers</td>
+      <td>PMID: 11751630</td>
+      <td>DOI:10.1101/gad.943001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kras wild-type primers</td>
+      <td>PMID: 11751630</td>
+      <td>DOI:10.1101/gad.943001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arflox primers</td>
+      <td>PMID: 14676301</td>
+      <td>DOI: 10.1084/jem.20031233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ar wild-type primers</td>
+      <td>PMID: 14676301</td>
+      <td>DOI: 10.1084/jem.20031233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arflox (recombined) primers</td>
+      <td>PMID: 14676301</td>
+      <td>DOI: 10.1084/jem.20031233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arflox (not recombined) primers</td>
+      <td>PMID: 14676301</td>
+      <td>DOI: 10.1084/jem.20031233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide amplification</td>
+      <td>ThermoFisher Scientific (Waltham, MA)</td>
+      <td>T20922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ccommercial assay or kit</td>
+      <td>Tyramide amplification</td>
+      <td>ThermoFisher Scientific</td>
+      <td>T30953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide amplification</td>
+      <td>ThermoFisher Scientific</td>
+      <td>T30954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide amplification</td>
+      <td>ThermoFisher Scientific</td>
+      <td>T20926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide amplification</td>
+      <td>ThermoFisher Scientific</td>
+      <td>T20912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ABC Elite</td>
+      <td>Vector Labs (Burlingame, CA)</td>
+      <td>pk6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Citrate-based antigen unmasking solution</td>
+      <td>Vector Labs</td>
+      <td>H3300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tris-based antigen unmasking solution</td>
+      <td>Vector Labs</td>
+      <td>H3301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaRED</td>
+      <td>Vector Labs</td>
+      <td>SK3800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo 3D</td>
+      <td>Promega (Madison, Wi)</td>
+      <td>G9681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MagMAX−96forMicroarrays Total RNA Isolation Kit</td>
+      <td>Ambion (Waltham, MA)</td>
+      <td>Am1839</td>
+      <td>Used the ‘no spin’ protocol for RNA purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA library prep kit</td>
+      <td>Illumina (San Diego, CA)</td>
+      <td>20020595</td>
+      <td>Library preparation was performed by the Columbia Genome Center using Illumina kits</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tissue Tek OCT compound</td>
+      <td>VWR Scientific (Radnor, PA)</td>
+      <td>25608–930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamax</td>
+      <td>Invitrogen (Waltham, MA)</td>
+      <td>35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen; TM</td>
+      <td>Sigma</td>
+      <td>T5648-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamicin</td>
+      <td>Invitrogen</td>
+      <td>15750–060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase/hyaluronidase</td>
+      <td>STEMCELL Technologies (Cambridge, MA)</td>
+      <td>07912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Modified Hank's Balanced Salt Solution; HBSS</td>
+      <td>STEMCELL Technologies</td>
+      <td>37150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dnase I</td>
+      <td>STEMCELL Technologies</td>
+      <td>07900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632 ROCK inhibitor</td>
+      <td>STEMCELL Technologies</td>
+      <td>72307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10x Earle's Balanced Salt Solution</td>
+      <td>ThermoFisher Scientific</td>
+      <td>14155063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hepatocyte medium supplemented withepidermal growth factor (EGF)</td>
+      <td>Corning (Corning, NY)</td>
+      <td>355056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>ThermoFisher Scientific</td>
+      <td>354234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.25% trypsin-EDTA</td>
+      <td>STEMCELL Technologies</td>
+      <td>07901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>ThermoFisher Scientific</td>
+      <td>12676029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12</td>
+      <td>ThermoFisher Scientific</td>
+      <td>11320033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrdU</td>
+      <td>Sigma</td>
+      <td>B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase</td>
+      <td>STEMCELL Technologies</td>
+      <td>07913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrotestosterone; DHT</td>
+      <td>Sigma</td>
+      <td>A8380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Real time analysis; RTA</td>
+      <td>Illumina</td>
+      <td>https://support.illumina.com/sequencing/sequencing_software/real-time_analysis_rta.html</td>
+      <td>Base calling using this software was performed by the Columbia Genome Center</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2fastq2</td>
+      <td>Illumina</td>
+      <td>Ilumina: version 2.17</td>
+      <td>The sequencing data was trimmed and converted to fastq format by the Columbia Genome Center</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spliced Transcripts Alignment to a Reference (STAR)</td>
+      <td>PMID: 23104886</td>
+      <td>Github: version 2.5.2b</td>
+      <td>Sequencing reads mapping to mouse genome (USCS/mm10) was performed by the Columbia Genome Center</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>PMID: 24227677</td>
+      <td>subread.sourceforge.net version: v1.5.0-p3</td>
+      <td>Sequencing reads mapping to mouse genome (USCS/mm10) was performed by the Columbia Genome Center</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-studio 0.99.902, R v3.3.0</td>
+      <td>The R Foundation for Statistical Computing, ISBN 3-900051-07-0</td>
+      <td>v3.3.0</td>
+      <td>R language for statistical computing was used for data analysis and visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>homoloGene</td>
+      <td>NCBI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene Set Enrichment Analysis</td>
+      <td>PMID: 16199517</td>
+      <td>DOI 10.1073/pnas.0506580102</td>
+      <td>GSEA was used to compares differential gene expression signatures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statistical Package for the Social Sciences; SPSS, Kolmogorov-Smirnov test, Arcsine transformation, Welch t-test, Fisher's Exact Test</td>
+      <td>IBM SPSS Statistics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Histological grading of mouse prostate phenotypes</td>
+      <td>PMID: 12163397</td>
+      <td>DOI 10.1016/S0002-9440 (10)64228-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mini-osmotic pump</td>
+      <td>Alzet (Cupertino, CA)</td>
+      <td>0000298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>40 µm cell strainer</td>
+      <td>Falcon (Corning, NY)</td>
+      <td>Fisher Scientific 352340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-well Primaria plate</td>
+      <td>Corning</td>
+      <td>Fisher Scientific 353872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6-well Primaria plate</td>
+      <td>Corning</td>
+      <td>Fisher Scientific 353846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-well CELLSTAR plate</td>
+      <td>Greiner Bio-One (Monroe, NC)</td>
+      <td>655090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lab-Tek Chamber Slide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>154534</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains and genotyping
 
 The Nkx3.1CreERT2 driver (Nkx3-1tm4(cre/ERT2)Mms) has been previously described (Wang et al., 2009). Mice carrying the R26R-YFP (B6.129 × 1-Gt(ROSA)26Sortm1(EYFP)Cos/J) reporter (Srinivas et al., 2001) were obtained from the Jackson Laboratory Induced Mutant Resource. Mice carrying the conditional Ptenflox (B6.129S4-Ptentm1Hwu/J) allele (Lesche et al., 2002) and the inducible Kraslsl-G12D (B6.129-Krastm4Tyj/Nci) allele (Jackson et al., 2001) were obtained from the National Cancer Institute Mouse Models of Human Cancer Consortium Repository. Mice with the conditional Arflox (B6N.129-Artm1Verh/Cnrm) allele (De Gendt et al., 2004) was obtained from the European Mouse Mutant Archive. Animals were maintained on a congenic C57BL/6N background. Genotyping was performed using the primers listed in Supplementary file 1A. Primer sequences used for genotyping of Ar alleles were previously described (Yeh et al., 2003).
 
-## Mouse procedures
+### Mouse procedures
 
 For lineage-marking and simultaneous deletion of AR in CARNs, Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ males were castrated at 8 weeks of age and allowed to regress for 4 weeks, followed by administration of tamoxifen (Sigma; 9 mg/40 g body weight in corn oil) by daily oral gavage for four consecutive days, and a chase period of 4 weeks. Administration of testosterone for prostate regeneration (Sigma; 25 mg/ml in 100% ethanol and diluted in PEG-400 to a final concentration of 7.5 mg/ml) was performed by subcutaneous implantation of mini-osmotic pumps (Alzet) that release testosterone solution at a rate of 1.875 μg/hr, which yields physiological levels of serum testosterone (Banach-Petrosky et al., 2007). For BrdU incorporation experiments, BrdU (Sigma; 100 mg/kg) was administered by intraperitoneal injection twice daily for 4 consecutive days, either from days 1 through 4 or from days 11 through 14 during androgen-mediated regeneration.
 
 For cell of origin experiments, Nkx3.1CreERT2/+; Ptenflox/flox; Arflox/Y; R26R-YFP/+ and Nkx3.1CreERT2/+; Ptenflox/flox; KrasLSL-G12D/+; Arflox/Y; R26R-YFP/+ mice as well as corresponding controls were castrated at 8 to 12 weeks of age. One month later, mice were administered tamoxifen, with a chase period of 3 months, followed by androgen-mediated regeneration for 1 month; mice were then euthanized for analysis. All animal experiments were performed according to protocols approved by the Institutional Animal Care and Use Committee at Columbia University Medical Center.
 
-## Benign human prostate specimens
+### Benign human prostate specimens
 
 Radical prostatectomy samples were obtained from consented patients under the auspices of an Institutional Review Board approved protocol at Columbia University Medical Center. Tissue from benign prostate regions was dissected and transported to the laboratory in DMEM/F12 (Gibco) supplemented with 5% FBS. Benign pathology was first determined by H and E-staining of snap-frozen sections, and subsequently confirmed by immunostaining of paraffin sections for p63 and AMACR.
 
-## Tissue acquisition, dissociation and isolation of prostate epithelial cells
+### Tissue acquisition, dissociation and isolation of prostate epithelial cells
 
 Tissue dissociation and isolation were performed as previously described (Chua et al., 2014). In brief, mouse prostate tissue from all lobes was dissected in cold phosphate buffered saline (PBS) and minced with scissors. For human prostate specimens, tissue was cut into small pieces with scalpels, washed with PBS with 4 mg/ml Gentamicin (Gibco), and then minced with scissors. Both mouse and human prostate tissues were then incubated in DMEM/F12 (Gibco) supplemented with 5% FBS and 1:10 dilution of collagenase/hyaluronidase (STEMCELL Technologies) at 37°C for 3 hr. Dissociated tissues were spun at 350 g for 5 min, and resuspended in ice-cold 0.25% trypsin-EDTA (STEMCELL Technologies), followed by incubation at 4°C for 1 hr. Trypsinization was stopped by addition of Modified Hank’s Balanced Salt Solution (HBSS) (STEMCELL Technologies) supplemented with 2% FBS. After centrifugation at 350 g, pelleted cells were resuspended with pre-warmed 5 mg/ml dispase (STEMCELL Technologies) supplemented with 1:10 dilution of 1 mg/ml DNase I (STEMCELL Technologies), triturated vigorously for 1 to 2 min, and diluted by addition of HBSS/2% FBS. Finally, the cell suspension was passed through a 40 μm cell strainer (Falcon).
 
-## Flow cytometry
+### Flow cytometry
 
 For flow sorting of mouse prostate epithelial cells, cell suspensions were stained on ice for 25 min with fluorescent-tagged EpCAM (BioLegend #118214) antibody. For isolation of human prostate epithelial cells, we used fluorescent-tagged EpCAM (BioLegend #324208, specific for human) and E-cadherin (eBioscience #46-3249-82) antibodies. The stained cells were spun, and cell pellets washed with HBSS/2% FBS, followed by resuspension in HBSS/2% FBS with 10 µM Y-27632 (ROCK inhibitor; STEMCELL Technologies) and a 1:1000 dilution of 0.5 mg/ml DAPI to exclude dead cells. Both side-scatter pulse width (SSC-W) vs. area (SSC-A) and forward side-scatter pulse area (FSC-A) vs. heights (FSC-H) were used to isolate single dissociated cells.
 
-## Adherent culture for mouse and human prostate epithelial cells
+### Adherent culture for mouse and human prostate epithelial cells
 
 To establish cell lines from lineage-marked CARNs as well as benign prostate epithelial cells, we performed adherent culture in our prostate organoid medium (Chua et al., 2014), consisting of hepatocyte medium supplemented with 10 ng/ml epidermal growth factor (EGF) (Corning), 10 μM Y-27632 (STEMCELL Technologies), 1x glutamax (Gibco), 5% Matrigel (Corning), 5% charcoal-stripped FBS (Gibco) heat-inactivated at 55°C for 1 hr, and supplemented with either 100 nM or 1 nM DHT (Sigma) for mouse and human cells, respectively. To derive APCA and ADCA lines, single YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice were flow-sorted directly into 96-well Primaria plates (Corning), and were monitored daily to assess colony formation. Successful colonies were expanded and genotyped to assess the status of the Arflox allele. For derivation of lines from benign human prostate epithelium, cells expressing either EpCAM and/or E-cadherin were plated into six-well Primaria plates at a density of 100,000 cells/well.
 
 Passaging of adherent cultures was performed by removal of accumulated Matrigel on surface of the cells by gentle washing. The cells were washed with cold PBS, treated with 0.25% trypsin for 5 min at 37°C, and mechanically dissociated. Medium was changed every 4 days. Adherent cells were frozen in media consisting of 80% FBS, 10% complete medium, and 10% DMSO. Each APCA and ADCA line has been propagated continuously for at least eight passages.
 
-## Cell culture assays
+### Cell culture assays
 
 To assess cell viability, APCA and ADCA lines were plated in 96-well Primaria plates at a density of 1000 cells/well in the presence or absence of DHT. Cell viability was assayed at days 1, 2, 4 and 6 after plating using CellTiter-Glo 3D (Promega), with five technical replicates for each time point. In brief, CellTiter-Glo 3D reagent was thawed at 4°C and brought to room temperature prior to use. 100 μl of the reagent was added into each well containing 100 μl of medium. After shaking for 5–10 min, the mixture was then transferred to a 96-well CELLSTAR plate (Greiner), followed by incubation at room temperature for 10 min prior to measurement using a luminometer plate reader.
 
 To assess colony formation, APCA and ADCA lines were plated in six-well Primaria plates at a density of 500 cells/well and grown for 9 days. three technical replicates were performed for each line in the presence or absence of DHT. At day 10 after plating, wells were washed with PBS and fixed with 100% methanol for 5 min. The wells were then washed with PBS for three times before staining with filtered 0.1% crystal violet solution. After drying the plates, colonies were counted, with a colony defined as a cell cluster containing at least 50 cells.
 
-## Tissue recombination and renal grafting
+### Tissue recombination and renal grafting
 
 For tissue recombination, 10 YFP+ cells from castrated and tamoxifen-treated Nkx3.1CreERT2/+; Arflox/Y; R26R-YFP/+ mice or control Nkx3.1CreERT2/+; R26R-YFP/+ mice were combined with 250,000 dissociated rat urogenital mesenchyme cells from embryonic day 18.5 embryos, and resuspended in 15 μl of 9:1 collagen:setting buffer solution (10x Earle’s Balanced Salt Solution (Life Technologies), 0.2 M NaHCO3, and 50 mM NaOH). The recombinants were cultured overnight in DMEM with 10% FBS and 100 nM DHT, followed by grafting under the kidney capsules of male NOD.Cg-Prkdcscid Il2rgtm1Sug/JicTac (NOG) mice (Taconic). Renal grafts were harvested for analysis at 7–12 weeks after grafting. For the experiment involving APCA and ADCA lines, 100,000 cells were recombined with 250,000 rat urogenital mesenchyme cells, followed by grafting. At 6 weeks after grafting, some mice implanted with APCA cells were treated with tamoxifen to induce Ar deletion.
 
 Grafts were harvested for analysis after 12 weeks of growth and analyzed in paraffin sections for the presence of ducts expressing YFP. (Note that ducts can also be formed by YFP–cells that are derived from contaminating rat urogenital epithelium due to incomplete separation from the urogenital mesenchyme.) Graft efficiency was calculated on the basis of the presence of YFP+ ducts in the grafts using control CARNs and on the presence of YFP+AR– ducts in the grafts using AR-deleted CARNs.
 
-## Histology and immunostaining
+### Histology and immunostaining
 
 For cryosections, tissues were fixed in 4% paraformaldehyde in PBS at 4°C overnight, placed in 30% sucrose in PBS overnight, and transferred to 1:1 30% sucrose in PBS and OCT (Tissue-Tek) solution for at least 4 hr prior to embedding in OCT. For paraffin sections, tissues were fixed in 10% formalin for 1 to 2 days, depending on size of tissue, prior to processing and embedding. Hematoxylin-eosin staining was performed using standard protocols. For immunostaining, sections underwent antigen-retrieval by heating in citrate acid-based or tris-based antigen unmasking solution (Vector Labs) for 45 min. Primary antibodies were applied to sections and incubated at 4°C overnight in a humidified chamber. Alexa Fluors (Life Technologies) were used as secondary antibodies. In some cases, tyramide amplification (Life Technologies) or ABC Elite (Vector Labs) kits together with HRP-conjugated or biotinylated secondary antibodies and NovaRed kit were used for signal detection. For immunofluorescent staining of cells, 5000 adherent cells/well were seeded on a eight-well Lab-Tek Chamber Slide (Nunc), grown for 4–8 days, and fixed with 4% paraformaldehyde for 10 min. After washing the slides with 3 changes of PBS, immunostaining was performed as above without antigen retrieval. Details of antibodies used are provided in Supplementary file 1B.
 
 Histological grading of mouse prostate phenotypes was performed according to (Park et al., 2002). For lineage-tracing experiments, quantitation of marker staining was performed by manual counting of cells from confocal images taken with a 40x objective.
 
-## RNA sequencing and bioinformatic analysis
+### RNA sequencing and bioinformatic analysis
 
 For RNA preparation, APCA and ADCA cell lines at passage 5 or 6 were grown to approximately 70–80% confluency in Primaria 6-well plates in the presence of DHT, and lysed in Trizol. Total RNA extraction was performed using the ‘No Spin’ method of the MagMAX-96 for Microarrays kit (Ambion). Library preparation and RNA sequencing was performed by the Columbia Genome Center using their standard pipeline. In brief, mRNA was enriched by poly-A pull-down, and library preparation was performed using an Illumina TruSeq RNA prep kit. Libraries were pooled and sequenced using an Illumina HiSeq2500 instrument, yielding approximately 30 million single-ended 100 bp reads per sample. RTA (Illumina) was used for base calling and bcl2fastq2 (version 2.17) for conversion of BCL to fastq format, coupled with adaptor trimming. Reads were mapped to the mouse genome (UCSC/mm10) using STAR (2.5.2b) and FeatureCounts (v1.5.0-p3).
 
 RNA-seq data raw counts were normalized and the variance was stabilized using DESeq2 package (Bioconductor) in R-studio 0.99.902, R v3.3.0 (The R Foundation for Statistical Computing, ISBN 3-900051-07-0). Differential gene expression signatures were defined as a list of genes ranked by their differential expression between any two phenotypes of interest (e.g. APCA versus ADCA lines; CRPC-NE versus CRPC, etc.), estimated using a two-sample two-tailed Welch t-test (for n ≥ 3) or fold-change (for n < 3). For comparison of a mouse gene signature with a human gene signature, mouse genes were mapped to their corresponding human orthologs based on the homoloGene database (NCBI). Signatures were compared using Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005), with the significance of enrichment estimated using 1000 gene permutations. Pathway enrichment analysis was performed using the C2 database, which includes pathways from REACTOME (Fabregat et al., 2016), KEGG (Ogata et al., 1999), and BioCarta (http://www.biocarta.com/genes/allpathways.asp). Expression data are deposited in the Gene Expression Omnibus database under GSE99233.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analysis was performed using the Statistical Package for the Social Sciences (SPSS). Data distribution was assessed by the Kolmogorov-Smirnov test. Arcsine transformation was performed on data with non-normal distribution. Two-sample two-tail Welch t-test or Fisher’s Exact Test was performed for comparison between two independent groups as appropriate. No statistical methods were used to pre-determine sample size, and experiments were not randomized; investigators were not blinded to allocation during experiments and outcome assessment.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.34062.001 Co-opting the cellular machinery for protein production is a compulsory requirement for viruses. The Cricket Paralysis Virus employs an Internal Ribosomal Entry Site (CrPV-IRES) to express its structural genes in the late stage of infection. Ribosome hijacking is achieved by a sophisticated use of molecular mimicry to tRNA and mRNA, employed to manipulate intrinsically dynamic components of the ribosome. Binding and translocation through the ribosome is required for this IRES to initiate translation. We report two structures, solved by single particle electron cryo-microscopy (cryoEM), of a double translocated CrPV-IRES with aminoacyl-tRNA in the peptidyl site (P site) of the ribosome. CrPV-IRES adopts a previously unseen conformation, mimicking the acceptor stem of a canonical E site tRNA. The structures suggest a mechanism for the positioning of the first aminoacyl-tRNA shared with the distantly related Hepatitis C Virus IRES.
+Co-opting the cellular machinery for protein production is a compulsory requirement for viruses. The Cricket Paralysis Virus employs an Internal Ribosomal Entry Site (CrPV-IRES) to express its structural genes in the late stage of infection. Ribosome hijacking is achieved by a sophisticated use of molecular mimicry to tRNA and mRNA, employed to manipulate intrinsically dynamic components of the ribosome. Binding and translocation through the ribosome is required for this IRES to initiate translation. We report two structures, solved by single particle electron cryo-microscopy (cryoEM), of a double translocated CrPV-IRES with aminoacyl-tRNA in the peptidyl site (P site) of the ribosome. CrPV-IRES adopts a previously unseen conformation, mimicking the acceptor stem of a canonical E site tRNA. The structures suggest a mechanism for the positioning of the first aminoacyl-tRNA shared with the distantly related Hepatitis C Virus IRES.
 
 ## Introduction
 
@@ -41,11 +41,164 @@ To analyze the integrity and stability of complexes for cryoEM, we assembled rib
 
 Maximum likelihood particle sorting methods implemented in RELION (Scheres, 2012) were applied to a large cryoEM dataset at two different stages (Figure 1D). An initial classification in two dimensions allowed for the separation of full ribosome (80S) from small subunit (40S) particles. The two sorted subgroups were further classified using masking methods with signal subtraction with focus in the inter-subunit space, where this type of IRES binds as well as canonical translation factors. The L1 stalk was also included in the masked area to allow for a wider sampling. This strategy revealed, in a single classification step, several sub-populations, reflecting the heterogeneity of the sample. A binary 80S/CrPV-IRES complex in a pre-translocation conformation could be identified as well as two sub-populations with CrPV-IRES in a double translocated state. In the double translocated reconstructions, the ribosome adopts a non-rotated configuration of the small subunit, with clear density for aminoacyl-tRNA in the P site and a either eEF2 or eRF1* in the A site (Figure 1D, Figure 2—figure supplement 1, Figure 3—figure supplement 1 and Table 1).
 
+**Table 1.**
+ Data collection, model refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Data collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage (KV)</td>
+      <td>300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−0.5/–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å/pixel)</td>
+      <td>1.08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Electron dose (e-/Å2)</td>
+      <td>64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Images collected</td>
+      <td>16,303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Model Refinement</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CrPV-IRES/eRF1*</td>
+      <td>CrPV-IRES/eEF2</td>
+    </tr>
+    <tr>
+      <td>Program/Protocol</td>
+      <td>Refmac5/Reciprocal space</td>
+      <td>Phenix/Real space</td>
+    </tr>
+    <tr>
+      <td>Resolution:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC 0.143 (Å)</td>
+      <td>3.2</td>
+      <td>4.75</td>
+    </tr>
+    <tr>
+      <td>Used in refinement (Å)</td>
+      <td>3.8</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Map sharpening (Å)</td>
+      <td>−91.86</td>
+      <td>−113.6</td>
+    </tr>
+    <tr>
+      <td>Average B-factors (Å)</td>
+      <td>169.58</td>
+      <td>394.12</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.011</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>Angles (o)</td>
+      <td>1.58</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td colspan="3">Validation</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>2.81</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td>Clashcore, all atoms</td>
+      <td>5.74</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>Favored rotamers (%)</td>
+      <td>88.51</td>
+      <td>99.7</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>3</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>83.23</td>
+      <td>95.3</td>
+    </tr>
+  </tbody>
+</table>
+
 Recent studies by single-molecule FRET (smFRET) have characterized the kinetics of the translocation events required for the CrPV-IRES to deliver an aminoacyl-tRNA to the P site of the ribosome (Petrov et al., 2016; Zhang et al., 2016). Slow movements of the CrPV-IRES compared with canonical translocation of tRNAs are evident from this data and explain the capturing of a late-stage intermediate of translocation with eEF2 in our dataset (Figure 2A-C). Our cryoEM reconstruction reveals that the conformation of the IRES in this intermediate state is similar to the conformation reported for the single translocated state (Muhs et al., 2015), with the SL-IV and SL-V detached from the 40S and exposed to the solvent. PKI is in an intermediate position between the P and E sites of the small subunit as well as the aminoacyl-tRNA is in an intermediate position between the A and P site of the 40S (Figure 2B). Domain IV of eEF2 occupies the A site of the small ribosomal subunit. This configuration is maintained by a distinctive swiveled configuration of the 40S head, resembling one of the late stages recently reported for the first translocation event (Figure 2C)(Abeyrathne et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig2-v1.jpg)
+
+**Figure 2.:** (A) Overview of a mammalian ribosome with double translocated CrPV-IRES (green), aminoacyl-tRNA (purple) and eEF2 (red). (B) Top, detailed view of the ribosomal sites E, P and A in the structure with a double translocated CrPV-IRES with eEF2. Canonical tRNAs (from PDB ID 4V5C) are depicted as semi-transparent grey cartoons. Bottom left, zoomed view highlighting the displacement of both aminoacyl-tRNA and CrPV-IRES PKI from canonical positions. Domain IV of eEF2 occupies the A site. Bottom right, final experimental densities for the ribosome ligands described at 7 Å. (C) On the left, two views of the experimental density for the 40S of the two double translocated reconstructions where it can be appreciated the swiveled configuration of the 40S head in the complex with eEF2 (grey). For comparative purposes, the map for the eRF1* containing complex (yellow) has been low pass filtered to a similar resolution as the eEF2 containing complex (grey). Right, atomic refined model colored according to the root-mean squared displacement (RMSD) with red and blue indicating the highest and lowest values, respectively (in Ångstroms).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fourier Shell Correlation (FSC) computed for the two half maps of the final subset of particles after classification. The resolution is estimated to be 4.75 Å using the 0.143 criterion. (B) Map-versus-model cross validation FSC. The final model was validated using standard procedures. FSC of the refined model against half map 1 (blue) overlaps with the FSC against half map 2 (red, not included in the refinement). The black curve corresponds to the FSC of the final model against the final map. (C) Slice through the final, unsharpened map colored according to the local resolution as reported by RESMAP. (D) Due to the flexibility of the CrPV-IRES a Gaussian filter was applied to the map limiting the resolution to 7 Å. The final density is shown in D where it can be appreciated features corresponding to that resolution.
 
 The most populated class of particles represent a double translocated CrPV-IRES with aminoacyl-tRNA in a canonical configuration in the P site and eRF1* in the A site (Figure 3). Both aminoacyl-tRNA and eRF1* populate conformations recently described, with the characteristic bent of the mRNA at the stop codon (Figure 3—figure supplement 1D; Brown et al., 2015). The small subunit in this reconstruction is in a non-rotated configuration and the 40S head is not tilted or swiveled (Figure 3). CrPV-IRES has undergone a conformational change that mainly affects PKI, but also the relative orientation of PKII and PKIII. In the pre-translocated as well as in the single translocated conformation of the IRES, PKII and PKIII interact by a network of non-covalent interactions involving sugar–sugar stacking interactions as well as A-minor interactions (Figure 4—figure supplement 1, (Murray et al., 2016; Pfingsten et al., 2006). This compact configuration adopted due to the physical proximity of PKII and PKIII seems to be a requirement for the initial binding to the ribosome as well as for the first translocation event (Murray et al., 2016; Muhs et al., 2015). In the state described here, these interactions are no longer established and a pronounced gap could be observed between both pseudoknots (Figure 4B, bottom right and Figure 4—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig3-v1.jpg)
+
+**Figure 3.:** (A) Overview of a mammalian ribosome with double translocated CrPV-IRES (green), aminoacyl-tRNA (purple) and eRF1* (orange). (B) Top, detailed view of the ribosomal E, P and A sites with a canonical configuration for the aminoacyl-tRNA in the P site, eRF1* in the A site and a disassembled CrPV-IRES PK I in the E site (green). Canonical P site tRNA (from PDB ID 4V5C) is depicted as semi-transparent grey cartoon. Bottom, large field of view of the final unsharpened map obtained for this reconstruction focused on the area described. (C) The position of the three ligands in the double translocated complex with eRF1* in comparison with canonical tRNAs. The L1 stalk is depicted in cyan.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fourier Shell Correlation (FSC) computed for the two half maps of the final subset of particles after classification. The resolution is estimated to be 3.2 Å using the 0.143 criterion. (B) Map-versus-model cross validation FSC. Thefinal model was validated using standard procedures. FSC of the refined model against half map 1 (blue) overlaps with the FSC against half map 2 (red, not included in the refinement). The black curve corresponds to the FSC of the final model against the final map. (C) Slice through the final, unsharpened map colored according to the local resolution as reported by RESMAP.(D) Close-up views of the final density for the A site (left) and P site (right). Clear densities for individual bases could be observed.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig4-v1.jpg)
+
+**Figure 4.:** (A) Top left, overview of the double translocated ribosome complex with eRF1* with the L1 stalk region highlighted. Main view, L1 stalk in the double translocated complex (cyan) is displaced from the position acquired in a complex with canonical tRNAs (grey) with a magnitude of approximately 30 Å. This displacement is similar to the one reported for the pre-translocated complex with eEF2 and a non-hydrolyzable GTP analog (orange)(Murray et al., 2016). (B) Conformational transition observed in CrPV-IRES upon back-swiveling of the 40S head. Left, due to a swiveled 40S head configuration in the double translocated complex with eEF2, SL-IV and SL-V remain solvent exposed, as in the single translocated complex (Muhs et al., 2015), and detached from the ribosomal protein eS25 (green). Right, once the head of the 40S relocates to its non-swiveled position, CrPV-IRES acquires a new conformation involving a new interaction with eS25 (green). (C) Scheme showing the secondary structure of CrPV-IRES in the pre-translocated state (left), after a single translocation (center) and after the double translocation (right). Arrows indicate the repositioning of PKII and PKIII as well as the new interaction established with ribosomal protein eS25. On the right, close up views of the final unsharped map obtained for this reconstruction for the regions indicated by circles.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pre-translocation conformation of the CrPV-IRES (PDB ID 5IT9). PKI (green) is mimicking a cognate tRNA/mRNA pair and the PKIII (circled) and PKII (red) are in interacting distance as shown in C. (B) In the double translocated conformation, the PKI is disassembled and PKII and PKIII are no longer in interacting distance. PKIII (arrow) suffers a pronounce displacement. (C) In the pre-translocation state, a network of non-covalent interactions involving sugar-sugar stacking interactions as well as A-minor interactions.
+
 Upon back-swiveling of the 40S following eEF2 departure, the aminoacyl-tRNA is placed in its final canonical position in the P site (Figure 3B). This event triggers the disassembly of the CrPV-IRES PKI. Although the mRNA-like part remains placed in the E site of the 40S, the ASL-like segment experiences a pronounced displacement to occupy the E site of the 60S, now mimicking the acceptor stem of a canonical E site tRNA (Figure 3B C). The L1.1 part of CrPV-IRES remains attached to the L1 stalk along this process whose position relative to the 60S is similar to the one described in the complex with eEF2 and a non-hydrolyzable GTP analog or after the first translocation (Figure 4A)(Murray et al., 2016; Muhs et al., 2015). The back-swiveling of the 40S head upon eEF2 departure is also involved in a new relative orientation of PKII and PKIII (Figure 3B C). The swiveled configuration (Figure 4B, left), SL-IV and SL-V, components of PKII, are exposed to the solvent, in a similar position described for the single translocated CrPV-IRES (Muhs et al., 2015). The eukaryotic specific protein eS25, a key element of the small subunit involved in early recruitment of the CrPV-IRES as well as in the positioning of the IRES in the pre-translocation stage (Schüler et al., 2006), is not interacting with the IRES (Figure 4B, left arrow). Upon back swiveling of the 40S head, a new interaction is established between the CrPV-IRES and eS25 (Figure 4B right,arrow and (C) not involving SL-V like in the pre-translocated complex. The α-helix of eS25 comprising residues 52 to 65 could be observed in interacting distance with a helical segment of the CrPV-IRES formed by residues 6123–6127 and 6159–6164 (Figure 4C, top right). This new interaction stabilizes the CrPV-IRES in a distinctive conformation, with PKII and PKIII assembled but with a wider relative orientation (Figure 4C) and the PKI disassembled with residues 6175 to 6200 (Figure 3C)corresponding to the ASL mimicking part of PKI, populating a space corresponding to the acceptor stem of a canonical E site tRNA (Figure 4C, bottom right and Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/34062/elife-34062-video1.mp4.jpg)
+
+**Video 1.:** CrPV-IRES binds initially to the ribosome inserting the PKI (green) in the A site (PDBID 5IT9, [Murray et al., 2016]). After a first translocation, PKI is placed in the P site (PDBID 4D61, Muhs et al., 2015) and a second translocation event induces its disassembly (this work). Molecular transitions have been approximated by a linear morph using Chimera (Pettersen et al., 2004).
 
 ## Discussion
 
@@ -65,26 +218,26 @@ Therefore, to assemble translationally competent ribosomes, distantly related IR
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 Expression vector for His-tagged eRF1*(AGQ mutant) (Frolova et al., 1999) and transcription vector for Leu-tRNA have been previously described (Pisarev et al., 2010). Transcription vector for CrPV-Leu-STOP was constructed inserting a T7 promoter sequence upstream of CrPV IGR IRES sequence followed by the two first coding triplets and an EcoRI site, using pUC19 as a scaffold vector. Site-directed mutagenesis was employed to change the first coding triplet to CUU encoding leucine and the second coding triplet to a stop (UAG) codon, rendering the CrPV-Leu-STOP construct. CrPV-Leu-STOP RNA and Leu-tRNA were transcribed using T7 RNA polymerase.
 
-## Purification of translation components and aminoacylation of Leu-tRNA
+### Purification of translation components and aminoacylation of Leu-tRNA
 
 Native 40S and 60S subunits, eEF2, rabbit aminoacyl-tRNA synthetases (Alkalaeva et al., 2006), and eEF1A (Carvalho et al., 1984)were prepared as previously described. Recombinant eRF1* was purified according to a previously described protocol (Alkalaeva et al., 2006). In vitro transcribed Leu-tRNA was aminoacylated with leucine in the presence of rabbit aminoacyl-tRNA synthetases as previously described (Pisarev et al., 2010).
 
-## Assembly of ribosomal complexes
+### Assembly of ribosomal complexes
 
 To reconstitute different ribosomal complexes, we incubated 1.8 pmol 40S ribosomal subunits with 2 pmol CrPV-Leu-STOP RNA in a 20 μl reaction mixture containing buffer A (20 mM Tris-HCl, pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1 mM EDTA, 1 mM DTT) with 0.4 mM GTP for 5 min at 37. Then, the reaction mixture was supplemented with 2.5 pmol 60S ribosomal subunits and additionally incubated for 5 min at 37. Next, we added 10 pmol eEF1A, 3 pmol eEF2, and 0.4 Leu, and incubated for 5 min at 37. Finally, ribosomal complexes were incubated with 20 pmol eRF1 (AGQ) for 5 min at 37. We analyzed the assembled ribosomal complexes via a toe-printing assay essentially as described (Pestova and Hellen, 2005).
 
-## CryoEM sample preparation and data acquisition
+### CryoEM sample preparation and data acquisition
 
 Aliquots of 3 μl of assembled ribosomal complexes at concentration of 80–100 nM were incubated for 30 s on glow-discharged holey gold grids (UltrAuFoil R1.2/1.3 (Russo and Passmore, 2016)), on which a home-made continuous carbon film (estimated to be 50Åthick) had previously been deposited. Grids were blotted for 2.5 s and flash cooled in liquid ethane using an FEI Vitrobot. Grids were transferred to an FEI Titan Krios microscope equipped with an energy filter (slits aperture 20 eV) and a GatanK2 detector operated at 300 kV. Data were recorded in counting mode at a magnification of 130,000 corresponding to a calibrated pixel size of 1.08 Å. Defocus values ranged from 1.6 to 3.6 μm. Images were recorded in automatic mode using the Leginon (Carragher et al., 2000) software and frames were aligned with Motioncor2 (Zheng et al., 2017) and checked on the fly using APPION (Lander et al., 2009).
 
-## Image processing and structure determination
+### Image processing and structure determination
 
 Contrast transfer function parameters were estimated using GCTF (Zhang, 2016) and particle picking was performed using GAUTOMACH without the use of templates and with a diameter value of 260 pixels. All 2D and 3D classifications and refinements were performed using RELION (Scheres, 2012). An initial 2D classification with a four times binned dataset identified all ribosome particles. A second 2D classification step with two times binned data was employed to separate 80S from 40S particles. A consensus reconstruction with all 80S particles was computed using the AutoRefine tool of RELION whose resulting map was used to build a mask containing the inter-subunit space and the L1 stalk. 3D classification with signal subtraction using the previously described mask and a T value of 10 allowed for the identification of several population of ligands inside the mask, namely empty ribosomes, pre-translocated CrPV IRES and double translocated populations with aminoacyl-tRNA and eEF2 or eRF1*. Final refinements with unbinned data for the classes selected yielded high resolution maps with density features in agreement with the reported resolution. Local resolution was computed with RESMAP (Kucukelbir et al., 2014).
 
-## Model building and refinement
+### Model building and refinement
 
 Models for the mammalian ribosome, Leu-tRNALeu, eEF2 and eRF1* were docked into the maps using CHIMERA (Pettersen et al., 2004) and COOT (Emsley and Cowtan, 2004) was used to manually adjust the L1 stalk and rebuild CrPV IRES using our previous model as initial step. An initial round of refinement was performed in Phenix using real space refinement with secondary structure restrains (Adams et al., 2011). A final step of reciprocal-space refinement using REFMAC was performed (Murshudov et al., 1997) for the eRF1* complex. The fit of the model to the map density was quantified using FSCaverage and Cref.

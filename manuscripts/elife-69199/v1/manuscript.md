@@ -44,7 +44,7 @@ The presence of CRD in APP, the reported involvement of Wnt signaling in APP pro
 
 ## Results
 
-## Drosophila APP like interacts genetically with Wnt5
+### Drosophila APP like interacts genetically with Wnt5
 
 Drosophila APPL has been implicated in neural development (Cassar and Kretzschmar, 2016; Nicolas and Hassan, 2014) and is required for learning and memory (Preat and Goguel, 2016). Drosophila APPL is a homologue of human APP and has been used as a model for understanding the physiological function of the APP family (Soldano and Hassan, 2014; van der Kant and Goldstein, 2015). We previously reported that appl genetically interacts with components of the Wnt-PCP pathway (Soldano et al., 2013) during mushroom body (MB) axon growth. The MBs are a bilateral neuronal structure in the fly brain required for learning and memory (Heisenberg, 2003). To understand the role of APPL in axonal PCP signaling, we first explored the specific nature of the genetic interaction between appl and the gene encoding the PCP protein Van Gough (Vang). In contrast to control MBs, 17% of male appl null mutant flies (appld/Y, henceforth Appl-/-) displayed a loss of the MBb-lobe (Figure 1A,A’). The PCP receptor Vang is also required for β-lobe growth (Shimizu et al., 2011); we observed that flies homozygous for the null allele vangstbm-6 exhibited 50% β-lobe loss. Whereas vangstbm-6 heterozygotes show no MB defects, the loss of one copy of vang in Appl-/- flies is comparable (43% β-lobe loss) to the complete loss of vang (Figure 1B). Therefore, in the absence of appl, vang is haploinsufficient. Next, we performed rescue experiments of Appl-/- mutant flies. Re-expression of APPL in the mutant MBs significantly rescued β-lobe loss. In contrast, the overexpression of Vang in Appl-/- null flies failed to do so. These loss and gain of function data suggest that Wnt-PCP signaling requires APPL to regulate axonal growth (Figure 1B).
 
@@ -54,39 +54,119 @@ Drosophila APPL has been implicated in neural development (Cassar and Kretzschm
 
 APPL and Vang are both transmembrane proteins that are part of the same receptor complex required for MB axonal growth (Soldano et al., 2013). We wondered if APPL interaction with the Wnt-PCP pathway involved a ligand and focused on Drosophila Wnt5 as a candidate. Wnt5 has been implicated in the regulation of MB axon growth (van der Kant and Goldstein, 2015; Grillenzoni et al., 2007), although the mechanism is unclear. We first examined the genetic interaction between Wnt5 and vang in β-lobe axon growth. Loss of vang caused a highly penetrant phenotype (50%), while Wnt5 nulls showed β-lobe loss only in 5% of the brains examined, suggesting that Wnt5 is largely dispensable for β-lobe growth. Surprisingly, Wnt5-/-; vang-/- double mutants showed an almost complete rescue of vang loss of function (Figure 1C a,b,d,D, Supplementary file 1). Therefore, in the absence of Vang, Wnt5 inhibits β-lobe growth, suggesting that Wnt5 interacts with another receptor and antagonizes its function in PCP-mediated axon growth. We therefore examined the genetic interaction between Wnt5 and appl. Loss of Wnt5 in Appl-/- flies resulted in a phenotype similar to Appl-/- flies alone (Figure 1C b,c,e, E). Thus, in the absence of APPL, Wnt5 no longer negatively impacts MB axon growth, suggesting that APPL may be a Wnt5 receptor.
 
-## APPL and human APP bind Wnt5 via the CRD
+### APPL and human APP bind Wnt5 via the CRD
 
 Wnt5 is a member of the large family of Wnt ligands, some of whose receptors and co-receptors harbor a conserved extracellular CRD thought to be important for Wnt binding (Dann et al., 2001; Oishi et al., 2003). Intriguingly, APP harbors a CRD-like domain (Bush et al., 1993) in its extracellular region that includes 12 cysteine residues conserved across APP paralogs and orthologs (Figure 2A). The distribution of the cysteine residues resembles those present in the CRDs of other PCP receptors such as Fz and Ror-2 (Figure 2—figure supplement 1). We asked whether the CRDs of APP and APPL are potential Wnt5a-binding domains. To test this, we generated forms of human APP (hAPP) and APPL lacking the CRD (hAPPΔCRD and APPLΔCRD). Next, we overexpressed a tagged form of Wnt5a together with hAPP, APPL, hAPPΔCRD, or APPLΔCRD in HEK293 cells and performed co-immunoprecipitation (IP) assays. Wnt5a immunoprecipitated full-length hAPP and APPL but not hAPPΔCRD or APPLΔCRD (Figure 2B). Reciprocally, full-length hAPP and APPL immunoprecipitated significant amounts of Wnt5a in contrast to hAPPΔCRD and APPLΔCRD (Figure 2B’). Similarly, APPL was found to precipitate Wnt5 from transfected Drosophila S2 cell lysates (Figure 2—figure supplement 2).
 
-## Wnt5a treatment affects APP trafficking and expression in maturing mouse primary cortical neuron
+![Figure 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig2-v1.jpg)
+
+**Figure 2.:** (A) APPL extracellular region contains a conserved CRD. The figure shows a CLUSTAL alignment of the CRD of different APP homologs. The 12 cysteine residues (as indicated by the red asterisks) are highly conserved across species. (B–B’) Wnt5a binds APPL and APP in a CRD-dependent manner. (B) Co-immunoprecipitation (co-IP) of the full-length proteins APP-flag and APPL-flag but not their truncated forms APPΔCRD-flag and APPLΔCRD-flag with Wnt5a-myc. (B’) Reciprocal co-IP showing that Wnt5a-myc is co-IPed with flAPP-flag and APPL-flag can but not when the CRDs are deleted.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** CLUSTAL alignment of the extracellular regions of Drosophila Frizzled (Fz) and Mus musculus Firzzled-1 (Fz-1) (A). CLUSTAL alignment of the extracellular regions of Drosophila Ror-2 and Mus musculus Ror-2 (Ror) (B). All proteins showed conserved cysteine residues in their extracellular region (as indicated by the red asterisks).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** S2 cells were transfected in triplo with the indicated expression plasmids, lysates prepared and V5-tagged WNT5-containing complexes were immunoprecipitated with anti-V5 antisera. Following SDS-PAGE and transfer to PVDF membrane, MYC-tagged APPL species were detected with anti-MYC and an HRP-conjugated chemiluminscent detection reagent.
+
+### Wnt5a treatment affects APP trafficking and expression in maturing mouse primary cortical neuron
 
 The findings above suggest that the APP family may represent a new class of conserved Wnt receptors. We sought to investigate this further at a cell biological level using developing mouse embryonic primary cortical neurons as a model system. APP trafficking and processing have been intensively investigated in studies relating to AD, and according to early reports the half-life of APP is quite short, ranging from 1 hr to 4 hr (Hunter and Brayne, 2012; El Ayadi et al., 2012). In mouse embryonic (E16) primary neuron cultures, full-length mouse APP (fl-mAPP; henceforth we refer to mouse APP as mAPP and to human APP as hAPP) expression significantly dropped after 2 hr of treatment with translational inhibitor (Cycloheximide) (Figure 3—figure supplement 1), suggesting relatively rapid turnover of mAPP. To study the relation between mAPP and Wnts, we first verified that mAPP also binds Wnt5a through its CRD and found that fl-mAPP but not mAPPΔCRD co-IP’s with Wnt5a, similar to APPL and hAPP (Figure 3A). Next, we used immunofluorescence to localize mAPP with or without Wnt5a treatment in developing cortical neurons during axonal outgrowth (DIV7). mAPP is modified to maturation in the Trans Golgi Network (TGN) to be subsequently transferred to the plasma membrane where it can be internalized into early endosomes. From the early endosome, mAPP is either recycled back to the TGN through retromer-dependent sorting, or to the late endosome and then lysosome to be degraded (Haass et al., 2012; Vagnozzi and Praticò, 2019). We used markers for early endosomes (Rab5), recycling endosome (Rab11), TGN (Golgin97), and lysosomes (Lamp1) to trace mAPP trafficking after 2 hr and 4 hr Wnt5a treatment. The fraction of mAPP co-localized with early endosomes was not affected after 2 hr (Figure 3—figure supplement 2A) or 4 hr (Figure 3B,C) of Wnt5a treatment. Similarly, we observed no effects on co-localization with recycling endosomes (Figure 3—figure supplement 3A,D) indicating normal initial internalization and recycling of mAPP. However, we found a reduction of mAPP in the TGN, accompanied by an increase of mAPP in lysosomes both after 2 hr (Figure 3—figure supplement 2D,G) and 4 hr (Figure 3B,D,E) of Wnt5a treatment suggesting that Wnt5a regulates intracellular targeting of mAPP after internalization. Importantly, the levels of expression of these markers (Rab5, Golgin97, and Lamp1) are not affected by Wnt5a treatment (Figure 3—figure supplement 4). Next, we asked if this altered trafficking affected mAPP levels. We found that the level of fl-mAPP was significantly reduced after 4 hr of Wnt5a treatment, as shown by western blot (Figure 3F,G), with no effect on mApp mRNA levels (Figure 3H). The results of immunofluorescence (IF) and western blot (WB) suggest that the decrease of the mAPP upon Wnt5a treatment is caused by lysosomal degradation. To confirm this, we used Bafilomycin-A in combination with Wnt5a treatment. Bafilomycin-A treatment was performed 1 hr after Wnt5a addition as Wnt5a treatment already affected APP levels after 2 hr (Figure 3—figure supplement 5)- to inhibit the lysosome and found that this restored mAPP to control levels (Figure 3I–L). These data suggest that non-canonical Wnt5a-PCP signaling reduces mAPP stability.
 
-## Wnt3a binds to and stabilizes APP via the CRD
+![Figure 3.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-v1.jpg)
+
+**Figure 3.:** (A) Co-immunoprecipitation (co-IP) of Wnt5a-Myc with full-length proteins mAPP-flag or mAPP-delatCRD-flag. The tagged proteins were co-expressed in HEK293T cells and immunoprecipitated with ant-flag and anti-Myc antibodies. Wild-type mAPP could pull down Wnt5a and vice versa, while mAPP lacking the CRD domain showed impaired ability to pull down Wnt5a, even with higher protein levels compared to wild-type mAPP in the input. (B) mAPP localization after 4 hr PBS/BSA or Wnt5a treatment. Immunofluorescence for APP (red), Rab5 (early endosome marker, green), Golgin97 (TGN marker, green), and Lamp1 (lysosome marker, green) revealed mAPP localization in different intracellular compartments. The inset showed zoomed in images of the area in the white box and arrows indicated the overlap of mAPP with respective cellular compartment markers. Scale bar = 10 µm. (C–E) Quantification of the overlap of mAPP with early endosome (C), TGN (D) or lysosome (E), respectively, after Wnt5a treatment. (n=33–55 cells, t-test). (F) Western blots of mAPP and Actin on the lysates of DIV7 primary cultured cortical neurons showed that mAPP protein expression level was altered after Wnt5a treatment. (G) Quantification of the western blots results for fig F. (n=three biological independent repeat, t-test). (H) qPCR results showed that mApp mRNA expression was not affected after Wnt5a treatment on DIV7. App-/- mice derived primary neurons were used as a negative control. (n=three biological independent repeat, one-way ANOVA). (I and J) Western blots for APP showed that the lysosome inhibitor Bafilomycin-A (J) could rescue Wnt5a-induced mAPP reduction compared with control groups (I). (K and L) Quantification of the western blots result for figure I and J. (n=three biological independent repeat, t-test). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01. .
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Western blots for the time course (0.5 hr, 1 hr, 2 hr, 4 hr) of fl-mAPP expression after Cycloheximide (50 µg/ml, A) or DMSO (0.05%, B) treatment at DIV7. (C and D) Quantification of fl-mAPP expression after Cycloheximide (C) or DMSO treatment (D). (n=three biological independent repeat, one-way ANOVA). Bars represent the mean ± S.E.M. **p<0.01, ****p<0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Quantification of the overlap between mAPP and early endosome 2 hr after Wnt3a/5a treatment in DIV7 cultured cortical primary neurons: APP-WT groups (A), APP-KO rescued with APP groups (B) and APP-KO rescued with APP-ΔCRD groups (C). (n=38–44 cells, one-way ANOVA). (D–F) Quantification of the overlap between mAPP and TGN 2 hr after Wnt3a/5a treatment in DIV7 cultured cortical primary neurons: APP-WT groups (D), APP-KO rescued with APP groups (E) and APP-KO rescued with APP-ΔCRD groups (F). (n=43–48 cells, one-way ANOVA). (G–I) Quantification of the overlap between mAPP and lysosome 2 hr after Wnt3a/5a treatment in DIV7 cultured cortical primary neurons: APP-WT groups (G), APP-KO rescued with APP groups (H) and APP-KO rescued with APP-ΔCRD groups (I). (n=38–40 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–C) Quantification of the overlap between mAPP and recycling endosome 4 hr after Wnt3a/5a treatment in DIV7 cultured cortical primary neurons: APP-WT groups (A), APP-KO rescued with APP groups (B) and APP-KO rescued with APP-ΔCRD groups (C). (n=41–49 cells, one-way ANOVA). (D–F) Quantification of the overlap between mAPP and recycling endosome 2 hr after Wnt3a/5a treatment in DIV7 cultured cortical primary neurons: APP-WT groups (D), APP-KO rescued with APP groups (E) and APP-KO rescued with APP-ΔCRD groups (F). (n=42–56 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Western blots for fl-mAPP, Rab5, Golgin97, Lamp1, and Actin 4 hr after Wnt3a/5a treatment at DIV7. (B–E) Quantification of the western blots results for figure (A) fl-mAPP (B), Rab5 (C), Golgin97 (D), and Lamp1 (E). (n=three biological independent repeat, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Representative western blots for the time course (0.5 hr, 1 hr, 2 hr, 4 hr) of fl-mAPP expression after PBS/BSA (ctrl) and Wnt3a/5a treatment at DIV7. Relative expression value of the protein bands normalized to the respective actin were also shown.
+
+### Wnt3a binds to and stabilizes APP via the CRD
 
 We wondered whether mAPP can also bind other members of the Wnt family of ligands. Wnt3a is one of the 19 Wnt members in mouse and human. During development, Wnt3a usually induces β-catenin signaling pathway which plays an import role in gene expression, cell proliferation, and differentiation (Mulligan and Cheyette, 2012; Rosso and Inestrosa, 2013). Recent studies suggest that Wnt3a and beta-Catenin signaling may be involved in AD pathology (Parr et al., 2015; Tapia-Rojas et al., 2016). More interestingly, studies on mouse AD models showed that Wnt3a and Wnt5a interact competitively and antagonistically with regard to APP-mediated synapse loss (Sellers et al., 2018; Elliott et al., 2018). We therefore wondered whether, like Wnt5a, Wnt3a also binds to mAPP through the conserved CRD and regulates its levels. To test this, we performed IP experiments with Wnt3a. We found that fl-mAPP and Wnt3a co-IP in a CRD-dependent fashion (Figure 4A). We next tested the effects of Wnt3a treatment on APP trafficking. As shown in and Figure 3—figure supplement 2(A), The fraction of mAPP co-localized with early endosomes (Figure 4B,C) and recycling endosome (Figure 3—figure supplement 2A,D) was not affected after 2 hr and 4 hr of Wnt3a treatment. However, more mAPP was present in the TGN, with no effect on the lysosomal mAPP fraction after 2 hr (Figure 3—figure supplement 2D,G) and 4 hr (Figure 4B–E) of Wnt3a treatment. The expression levels of Rab5, Golgin97 and Lamp1 were not affected after Wnt3a treatment (Figure 3—figure supplement 4). Western blot analysis showed increased fl-mAPP upon Wnt3a treatment (Figure 4F,G), but no effect on mRNA levels (Figure 4H). There is evidence that mAPP is recycled back to the TGN from early endosomes through the retrograde pathway (Vagnozzi and Praticò, 2019). To test whether Wnt3a regulates mAPP retro trafficking to the TGN, we co-treated primary neurons with Wnt3a and a retromer inhibitor (LY294002), retromer inhibitor treatment was performed 1 hr after Wnt3a addition as Wnt3a treatment could affected APP protein expression clearly 2 hr later (Figure 3—figure supplement 5). This reversed the effect of Wnt3a on mAPP trafficking protein levels (Figure 4I–L). Then, we tested the effects of simultaneous treatment with Wnt3a and Wnt5a. This resulted in no change to APP protein levels compared to controls, suggesting that Wnt3a and Wnt5a neutralize each other’s effects on mAPP (Figure 4M,N), again with no effects on mRNA levels (Figure 4O). We and others have previously shown that APP is a key component in both Wnt canonical and non-canonical Wnt signaling (Elliott et al., 2018; Soldano et al., 2013). We confirmed this in our system and found that treatment with Wnt3a resulted in β-catenin accumulation in APP-WT, but not APP-KO, primary cortical neurons at DIV7 (Figure 4—figure supplement 1A–D). We also observed a tendency toward a decrease in β-catenin upon Wnt5a treatment, but this did not reach statistical significance.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig4-v1.jpg)
+
+**Figure 4.:** (A) Co-immunoprecipitation (co-IP) of Wnt3a-V5 with full-length proteins mAPP-flag or mAPPLΔCRD. The tagged proteins were co-expressed in HEK293T cells and immunoprecipitated with ant-flag and anti-v5 antibodies. Wild-type mAPP could pull down Wnt3a and vice versa, while mAPP lacking the CRD domain showed impaired ability to pull down Wnt3a even with higher protein levels compared to wild type mAPP in the input. (B) mAPP localization after 4 hr PBS/BSA or Wnt3a treatment. Immunofluorescence for APP (red), Rab5 (green), Golgin97 (green), and Lamp1 (green) revealed mAPP localization in different intracellular compartments. The inset showed zoomed in images of the area in the white box and arrows indicated the overlap of mAPP with respective cellular compartment markers. Scale bar = 10 um. (C–E) Quantification of the overlap of mAPP with early endosome (C), TGN (D) or lysosome (E), respectively, after Wnt3a treatment. (n=33–54 cells, t-test). (F) Western blots of mAPP and Actin on the lysates of DIV7 primary cultured cortical neurons showed that mAPP protein expression level was altered after Wnt3a treatment. (G) Quantification of the western blots results for figure F. (n=three biological independent repeat, t-test). (H) qPCR results showed that mApp mRNA expression was not affected after Wnt3a treatment on DIV7. App-/- mice derived primary neurons were used as a negative control. (n=three biological independent repeat, one-way ANOVA). (I and J) Western blots for APP showed that the Retromer inhibitor Ly294002 (J) could rescue Wnt3a-induced mAPP increase compared with control groups (I). (K and L) Quantification of the western blots results for figure I and J. (n=three biological independent repeat, t-test). (M) Western blots for mAPP expression 4 hr after Wnt3a and Wnt5a treatment at the same time on DIV7. PBS/BSA group acted as control group. (N) Quantification of the western blots results for figure M. (n=three biological independent repeat, t-test). (O) qPCR results for mApp mRNA expression in mApp knockout neurons (negative control), PBS/BSA treated control group neurons and Wnt3a+Wnt5a-treated group neurons. (n=three biological independent repeat, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Western blots for β-Catenin and Actin expression on APP-WT (A) and APP-KO (B) primary cultured cortical neurons 4 hr after Wnt3a/5a treatment at DIV7. (C and D) Quantification of the western blots results for figure A and B. (n=three biological independent repeat, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A and B) Detection of secreted Aβ40 (A) and Aβ42 (B) from DIV7 primary cultured cortical neurons treated with Wnt3a (supernatant collected from 4 hr Wnt3a treatment or anther 24 hr cultured with medium refreshed without Wnt3a). (C and D) Detection of secreted Aβ40 (C) and Aβ42 (D) from DIV7 primary cultured cortical neurons treated with Wnt5a (supernatant collected from 4 hr Wnt5a treatment or anther 24 hr cultured with medium refreshed without Wnt5a). Bars represent the mean ± S.E.M., n=three biological independent repeat, one-way ANOVA. *p<0.05, **p<0.01, ***p<0.001.
 
 Because Wnt treatment affects APP trafficking and expression, we tested Aβ40 and Aβ 42 production in primary cortical neurons at DIV7 after 4 hr treatment of with Wnt3a or Wnt5a. Our data show that a 4 hr Wnt3a/5a treatment has a long-lasting effect on Aβ40/42 production and that those effects are antagonistic. Consistent with Wnt3a favoring recycling of APP, we found that Wnt3a treatment significantly decrease Aβ40/42 production (Figure 4—figure supplement 2A,B). In contrast, Wnt5a treatment, which induces APP internalization into acidic compartments, resulted in an increase in Aβ40/42 production (Figure 4—figure supplement 2C,D). Importantly, these data are in accordance with other reports that Wnt/catenin pathway favors non-amyloidogenic APP processing while Wnt/PCP signaling does the opposite (Elliott et al., 2018).
 
 Taken together, these data indicate that Wnt3a also binds to mAPP via the CRD and regulates mAPP trafficking and expression and that Wnt5a and Wnt3a act antagonistically to regulate APP protein homeostasis.
 
-## The CRD is required for Wnt-mediated regulation of APP trafficking and expression
+### The CRD is required for Wnt-mediated regulation of APP trafficking and expression
 
 Our data thus far show that APP interacts with Wnts through its CRD and that Wnts regulate APP intracellular trafficking and expression. We therefore asked whether the CRD is required for the effects of Wnts on mAPP. To address this question, we created two lentiviral vectors: pLv-pSyn1-mAPP-Flag-IRESeGFP (flag-tagged fl-mAPP) and pLv-pSyn1-mAPPΔCRD-Flag-IRESeGFP (flag-tagged mAPPΔCRD). Primary cortical neurons from App knockout mice were transduced with the fl-mAPP or mAPPΔCRD vectors, or a control GFP vector (pLv-pSyn1-IRESeGFP) exogenous APP/APPΔCRD was detectable using either anti-APP or anti-flag antibodies (Figure 5—figure supplement 1A–C). In neurons transduced with wild-type mAPP, we confirmed that mAPP expression could be increased and decreased by Wnt3a and Wnt5a treatments, respectively (Figure 5A,C). In contrast, in neurons transduced with mAPPΔCRD those effects were eliminated (Figure 5B,D). Finally, we performed IF to trace mAPP and mAPPΔCRD localization. Neurons transduced with wild type mAPP showed the same results as wild-type neurons with more mAPP in the TGN upon 4 hr of Wnt3a treatment and more mAPP in lysosomes upon 2 hr (Figure 3—figure supplement 2B,E,H) and 4 hr of Wnt5a treatment (Figure 5—figure supplement 2A–D). Similarly, there was no effect on colocalization with recycling endosome upon 2 or 4 hr of treatment (Figure 3—figure supplement 3, E). All these effects were abolished in neurons transduced with mAPPΔCRD (Figure 5E–H; Figure 3—figure supplement 3F; Figure 3—figure supplement 2C,F,I).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig5-v1.jpg)
+
+**Figure 5.:** (A and B) Western blots for the detection of exogenous APP expression 4 hr after PBS/BSA (control), Wnt3a or Wnt5a treatment at DIV7 in APP-KO primary cultured neurons which were transfected with pLv-pSyn1-mAPP-Flag-IRESeGFP (A) or pLv-pSyn1-mAPPΔCRD-Flag-IRESeGFP (B) lenti-virus. (C and D) Quantification of the western blots results for figure A and B, respectively. (n=three biological independent repeat, one-way ANOVA). (E) Localization of exogenous mAPP expression in APP–KO primary cultured cortical neurons 4 hr after Wnt3a or Wnt5a treatment. Immunofluorescence for APP (red), Rab5 (green), Golgin97 (green), and Lamp1 (green) revealed mAPP localization in different intracellular compartments. The inset showed zoomed in images of the area in the white box and arrows indicated the overlap of mAPP with respective cellular compartment markers. (F–H) Quantification of the overlap of mAPP with early endosome (F), TGN (G), or lysosome (H), respectively, after Wnt3a or Wnt5a treatment. (n=32–51 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunostaining of APP (red) after transfected with pLv-pSyn1-IRESeGFP (left panel, negative control), pLv-pSyn1-mAPP-Flag-IRESeGFP (middle panel), and pLv-pSyn1-mAPPΔCRD-Flag-IRESeGFP (right panel) lenti-virus in APP-KO primary cultured neurons. Scale bar = 10 um. (B and C) Western blots for the detection of exogenous mAPP expression by using anti-flag (B) and anti-APP (C) antibodies.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Location of exogenous mAPP in APP knock-out primary cultured cortical neurons 4 hr after Wnt3a or Wnt5a treatment on DIV7. Immunofluorescence for APP (red), Rab5 (green), Golgin97 (green), and Lamp1 (green) revealed mAPP localization in different intracellular compartments. The inset showed zoomed in images of the area in the white box and arrows indicated the overlap of mAPP with respective cellular compartment markers. Scale bar = 10 um. (B–D) Quantification of the overlap of mAPP with early endosome (B), TGN (C) or lysosome (D), respectively, after Wnt3a or Wnt5a treatment. Bars represent the mean ± S.E.M., n=37–50 cells, one-way ANOVA. Samples collected from at least two independent experiments. *p<0.05.
+
 In summary, these data show that the CRD of mAPP is critical for Wnt3a/5a binding and mediates the effects of Wnts on mAPP trafficking and expression.
 
-## CRD is critical for APP to regulate neurite outgrowth and complexity
+### CRD is critical for APP to regulate neurite outgrowth and complexity
 
 APP and its proteolytic products have been reported to affect neurite outgrowth during development (Billnitzer et al., 2013; Young-Pearse et al., 2008) in different systems. We used primary cortical neuron derived from E16.5 mice embryos to investigate if the CRD of mAPP is required for regulation of neurite outgrowth by mAPP. We examined axonal and dendritic outgrowth (Figure 6A) at three developmental stages in vitro: DIV2, DVI3, and DIV7 (Dotti et al., 1988).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of a primary neuron. Colored lines indicate axonal or dendritic branch tips which were quantified. Yellow indicates the Axon Initial Segment (AIS) marked with Ankry G in experiments. (B) Representative confocal images for GFP (green) and AnkG (red) immunostaining at DIV3 on primary cultured cortical neurons of the four genotypes examined: mAPP wild type, mAPP–KO, and mAPP–KO rescued with mAPP or CRD-mutant mAPP. Transfected plasmids containing GFP alone, mAPP-flag-GFP or mAPPΔCRD-flag-GFP, which was performed at the onset of cell seeding. Scale bar = 50 µm. (C–E). Quantification of three parameters on these four genotypes at DIV3: the total axon length (the main axonal process and the branches deriving from the main process, C), the longest axonal length (D), the total axonal branch tips (E), primary branch tips (F) and secondary branch tips (G). (n=59–70 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01 ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Quantification of the total axon length (A), the longest axon length (B) and axon branch tips (C) from DIV2 cultured primary cortical neuron. (D–F) Quantification of the total dendrite length (D), the longest dendrite length (E) and dendrite branch tips (F) from DIV2 cultured primary cortical neuron. Bars represent the mean ± S.E.M., n=30–38 cells, t-test. Samples collected from at least two independent experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Quantification of the total dendrite length (A), the longest dendrite length (B) and dendrite branch tips (C) from DIV3 cultured primary cortical neurons on APP-WT groups, APP-KO groups, APP-KO rescued with APP groups and APP-KO rescued with APP-ΔCRD groups. (n=51 cells, one-way ANOVA). (D) Axon complexity Index (ACI) analysis of axon at DIV3 on each group (n=59–69 cells, one-way ANOVA). (E–G) Quantification of the main dendrite process (E), the primary (F) and secondary (G) dendrite process numbers on each group (n=51 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments.
 
 While we found no effect on initial outgrowth at DIV2 (Figure 6—figure supplement 1A–F), at DIV3 mAPP knockout neurons exhibit increased axonal outgrowth compared to controls reflected in three parameters: total axon length, longest axon length, and the number of branch tips (Figure 6B–E). In contrast, dendritic outgrowth was not different from controls (Figure 6—figure supplement 2A–C). We asked whether the CRD was required for mAPP function during neurite outgrowth. To this end, we transfected mAPP knockout neurons with either fl-mAPP or mAPPΔCRD. Increased axonal length and axonal branch tips were rescued by the fl-mAPP but not by the form lacking the CRD at DIV3 (Figure 6B–E). Next, we analyzed axonal branching in greater detail and found that loss of mAPP increased the numbers of both primary and secondary axonal branches at DIV3, an increase that was rescued by fl-mAPP but not by mAPPΔCRD (Figure 6F,G). Finally, we examined the Axon Complexity Index (ACI) (Wong et al., 2017), which measures the ratio of branches of different orders to total branch number, at DIV3. At this early stage, the ACI showed a tendency to increase in mAPP knockout neurons that was not significant (Figure 6—figure supplement 2D), likely because both primary and secondary branches show a similar level of increase. Together these data suggest an overall increase in axonal growth. In contrast to axonal growth, we found no significant alterations in dendritic length or branching (Figure 6—figure supplement 2E–G) consistent with the fact that the spur in dendritic outgrowth is largely initiated at DIV4 (Polleux and Snider, 2010; Barnes and Polleux, 2009).
 
 To further analyze neurite outgrowth, we examined axonal and dendritic growth at DIV7. By this stage, mAPP knockout neurons showed an increased ACI (Figure 7A,B). In contrast, total axonal length, longest axon length, and the total number of branch tips was not significantly different (Figure 7C–E). The increase in axonal complexity in mAPP knockout neurons was due to a significant reduction in the number of primary branches and a significant increase in the number of secondary branches (Figure 7F,G). Once again, all phenotypes were rescued by fl-mAPP but not mAPPΔCRD.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative confocal images for GFP (green) and AnkG (red) immunostaining at DIV7 on primary cultured cortical neurons of the four genotypes examined: mAPP wild type, mAPP- KO and mAPP-KO rescued with APP or CRD-mutant APP. Transfected plasmids containing GFP alone, mAPP-flag-GFP or mAPPΔCRD-flag-GFP, which was performed at the onset of cell seeding. Scale bar = 100 um. (B–G) Analysis of Axon complexity Index (ACI, B), the total axonal length (C), the longest axonal length (D), all axonal branch tips (E), the primary branch tips (F) and the secondary branch tips (G) at DIV7. (n=54 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69199/elife-69199-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–C) Quantification of the total dendrite length (A), the longest dendrite length (B) and dendrite branch tips (C) from DIV7 cultured primary cortical neurons on APP-WT groups, APP-KO groups, APP-KO rescued with APP groups and APP-KO rescued with APP-ΔCRD groups. (n=52 cells, one-way ANOVA). (D–F) Quantification of the main dendrite process (D), the primary (E) and secondary (F) dendrite process numbers from DIV7 cultured primary cortical neurons on each group. (n=52 cells, one-way ANOVA). Bars represent the mean ± S.E.M. Samples collected from at least two independent experiments. *p<0.05, **p<0.01, ****p<0.0001.
+
 Finally, we examined dendritic growth at DIV7. We observed no difference in total dendrite length or the size of the longest dendrite (Figure 7—figure supplement 1A,B), but observed a significant decrease in the total number of dendritic processes in mAPP knockout neurons compared to controls (Figure 7—figure supplement 1C). This reduction was due to the presence of fewer main dendritic processes in mAPP knockout neurons but no effect was observed on the primary or secondary dendritic branches (Figure 7—figure supplement 1D–F). All phenotypes were rescued by fl-mAPP but not mAPPΔCRD. Taken together, our results show that the role of APP in neuronal maturation requires the CRD domain.
 
-## Wnts regulate neurite development in a CRD dependent manner
+### Wnts regulate neurite development in a CRD dependent manner
 
 The Wnt pathway plays an important role in regulating neurite development, therefore we tested if the APP CRD is important for the interaction between APP and Wnt in regulating neurite outgrowth. To address this question, we analyzed neurite outgrowth in APP-KO primary cortical neurons rescued with APP-WT or APP-ΔCRD plasmids after Wnt3a/5a treatment. On DIV3 Wnt3a treatment significantly increased total axon length, the length of longest axon and axon branch tips in the presence of fl-APP but not APP-Δ-CRD (Figure 8A,B,C). These data suggest that APP mediates Wnt3a effects on axonal outgrowth. In contrast to Wnt3a, Wnt5a treatment had no effect in the presence of fl-APP but resulted in increased axonal length when the CRD domain was removed. These data show that APP normally protects axons from the effects of Wnt5a at this developmental stage and that the CRD is required for this (Figure 8B). Thus, APP promotes Wnt3a and antagonizes Wnt5a effects on neurons at DIV3 via the CRD domain. Similarly, on DIV7 we found a positive Wnt3a effect on axon complexity which was observed in the presence of fl-APP but not APP-Δ-CRD (Figure 8D). In contrast Wnt5a had no effect. Finally, we found that treatment with either Wnt3a or Wnt5a decreases the number of the main dendrites in the presence of fl-APP and the effect is absent or even reversed in the presence of APP-Δ-CRD (Figure 8E). Together, these data show that the CRD of APP is required for Wnt3a/5a to regulate neurite outgrowth in cortical primary neurons.
 
@@ -106,19 +186,477 @@ Finally, our findings suggest that in addition to the well-described proteolytic
 
 ## Materials and methods
 
-## Drosophila stocks and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FasII (1D4)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>AB_528235 RRID:AB_528235</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Wnt5a</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2392 RRID:AB_2304419</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-APP</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 127 003 RRID:AB_2056967</td>
+      <td>IF (1:100) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-rab5</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 108 011 RRID:AB_887773</td>
+      <td>IF (1:100) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-rab11a</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-166523, RRID:AB_2173466</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- Golgin-97</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21270, RRID:AB_221447</td>
+      <td>IF (1:100) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Lamp1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-19992, RRID:AB_2134495</td>
+      <td>IF (1:20) WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970, RRID:AB_300798</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig Polyclonal antiserum anti-Ankyrin G</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 386004 RRID:AB_2725774</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Polyclonal Anti-V5</td>
+      <td>Millipore</td>
+      <td>Cat# AB3792 RRID:AB_91591</td>
+      <td>IP (1:20) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat Monoclonal Anti-DYKDDDDK Epitope Tag</td>
+      <td>Novus</td>
+      <td>Cat# NBP1-06712 RRID:AB_1625981</td>
+      <td>IP (1:20) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Monoclonal Anti-c-Myc</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M4439 RRID:AB_439694</td>
+      <td>IP (1:20) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken IgY (H+L), Alexa Fluor488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11039, RRID:AB_142924</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L), Alexa Fluor488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11008, RRID:AB_143165</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgG (H+L), Alexa Fluor488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11006, RRID:AB_141373</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- Mouse IgG (H+L), Alexa Fluor488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11029, RRID:AB_138404</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L), Alexa Fluor555</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Guinea Pig IgG (H+L), Alexa Fluor555</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21435, RRID:AB_2535856</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Donkey Anti-Mouse IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-035-150, RRID:AB_2340770</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 711-035-152, RRID:AB_10015282</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Donkey Anti-Rat IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 712-035-153, RRID:AB_2340639</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat#X100</td>
+      <td>In PBS 0.1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol Reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L15 medium</td>
+      <td>Gibco</td>
+      <td>11415064</td>
+      <td>Medium for embryo brain isolation on ice</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.05% trypsin/EDTA</td>
+      <td>Gibco</td>
+      <td>25300–054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SVF</td>
+      <td>Invitrogen</td>
+      <td>10270106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNAse</td>
+      <td>Serlabo</td>
+      <td>LS002138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobasal medium</td>
+      <td>Gibco</td>
+      <td>21103049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27 supplement</td>
+      <td>Gibco</td>
+      <td>17504–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamax</td>
+      <td>Gibco</td>
+      <td>35050–061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wnt3a</td>
+      <td>R and D Systems</td>
+      <td>645-WN-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wnt5a</td>
+      <td>R and D Systems</td>
+      <td>1324-WNP-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>invitrogen</td>
+      <td>88899-55-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY294002</td>
+      <td>Sigma</td>
+      <td>L9908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermofisher</td>
+      <td>Cat#L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>Cat#10566016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat#15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>APP-KO mouse</td>
+      <td>A gift from Bart De Strooper’s lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hek293</td>
+      <td>A gift from Marie-Claude Potier’s lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAPP_F</td>
+      <td>This paper Ordered from IDT</td>
+      <td>PCR primers</td>
+      <td>CATCCAGAACTGGTGCAAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAPP_R</td>
+      <td>This paper Ordered from IDT</td>
+      <td>PCR primers</td>
+      <td>GACGGTGTGCCAGTGAAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin _F</td>
+      <td>This paper Ordered from IDT er</td>
+      <td>PCR primers</td>
+      <td>TCCATCATGAAGTGTGACGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin _R</td>
+      <td>This paper Ordered from IDT r</td>
+      <td>PCR primers</td>
+      <td>GAGCAATGATCTTGATCTTCAT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLv-pSyn1-mAPP-Flag-IRESeGFP</td>
+      <td>ICM-institute, Virus facility</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to transfect and express the mAPP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLv-pSyn1-mAPPΔCRD-Flag-IRESeGFP</td>
+      <td>ICM-institute, Virus facility</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to transfect and express the mAPP-ΔCRD</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLv-pSyn1- eGFP</td>
+      <td>ICM-institute, Virus facility</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to transfect and express the GFP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3-mApp-FLAG-IRES-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3-mAPPΔCRD-FLAG-IRES-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA3-Wnt5a-myc</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCDNA-Wnt3A-V5</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pCDNA3-hApp-FLAG-IRES-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pCDNA3-hAPPΔCRD-FLAG-IRES-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>transfected construct</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 205311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler480 SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>Cat# 04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>4–12% polyacrylamide gels (SDS-PAGE)</td>
+      <td>ThermoFisher</td>
+      <td>NW04122BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G sepharose beads</td>
+      <td>ThermoFisher</td>
+      <td>Ref.10612D Lot.00644644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nikon</td>
+      <td>A1-R</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus</td>
+      <td>FV-1200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Cat# D9564</td>
+      <td>1 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and maintenance
 
 Flies were raised at 25°C, on standard cornmeal and molasses medium. The stocks used in this study are: w*, Appld; Vangstbm-6; w1118, Wnt5400; P247Gal4; w*, Appld, Wnt5400.
 
-## Cloning
+### Cloning
 
 All constructs were generated by PCR amplification and overlap extension PCR. PCR products were inserted into the respective vectors by classical restriction enzyme cloning. All constructs were sequence-verified. To generate transgenic flies, open-reading frames with epitope tags were cloned into the pUAST-attB fly expression vector and transgenes were inserted into the genome at the VK37 docking site (2L, 22A3) via PhiC31-mediated transgenesis.
 
-## Mushroom body analyses
+### Mushroom body analyses
 
 Adult fly brains were dissected in phosphate buffered saline (PBS) and fixed in 3.7% formaldehyde in PBT (PBS+ 0.1% Triton100-X) for 15 min. Then, the brains were washed three times in PBT and blocked in PAX-DG for 1 hr at RT. The samples were later incubated with the primary antibody overnight at 4°C. After incubation, the brains were washed three times with PBT and incubated with an ALEXA Fluor secondary antibodies (Life technologies) for 2 hr at RT. After three times washes in PBT, the brains were mounted in Vectashield (Vector Labs, USA) mounting medium. The following antibodies were used: mouse anti-FasII (Developmental Studies Hybridoma Bank (DSHB), 1/50), rabbit anti-GFP (Invitrogen, 1/500). The mounted brains were imaged on a LEICA DM 6000 CS microscope coupled to a LEICA CTR 6500 confocal system and a Nikon A1-R confocal (Nikon) mounted on a Nikon inverted microscope (Nikon). The pictures were then processed using ImageJ.
 
-## Primary cortical neuron culture, virus transduction, and plasmids transfection
+### Primary cortical neuron culture, virus transduction, and plasmids transfection
 
 All experiments were done according to policies on the care and use of laboratory animals of European Communities Council Directive (2010/63). The protocols were approved by the French Research Ministry following evaluation by a specialized ethics committee (dossier number 4437). APP knock out mice were a gift from the De Strooper lab. Cortical primary neuron cultures were prepared from embryonic day 16.5 mice (APP wild or APP mutant), as described previously (Cheng et al., 2016).
 
@@ -126,46 +664,46 @@ Virus (pLv-pSyn1-mAPP-Flag-IRESeGFP, pLv-pSyn1-mAPPΔCRD-Flag-IRESeGFP, or pLv-p
 
 Plasmids (pLv794_pTrip_PromSynaptin1_GFP_DeltaU3, pLv-pSyn1-MmApp-FLAG-IRES-eGFP, or pLv-pSyn1-mAPPΔCRD-FLAG-IRES-eGFP) transfection was performed at the onset of cell seeding (4x105cells/mL) in 24 wells plates with coverslip coated with PDL 24 hr before. All procedure follow the protocol from Lipofectamine 3000 transfection reagent (Thermofisher Catalog Number: L3000008) with little modified, each well transfection with 500 ng corresponding plasmid, medium was refreshed 5–6 hr after transfection.
 
-## Wnt and inhibitor treatment in primary neuron
+### Wnt and inhibitor treatment in primary neuron
 
 Wnt5a (400 ng/ml) (645-WN-010, R and D Systems), Wnt3a (150 ng/ml) (1324-WNP-010, R and D Systems), and PBS/BSA (control) addition performed at DIV7. In all experiments related to inhibitor, cells will be treated with inhibitor 1 hr after Wnt addition (Bafilomycin A1, 100 nM, Invitrogen, 88899-55-2), LY294002 (10 µM, Sigma, L9908) and a DMSO (0.05%DMSO in culture medium) group will be set as control. Protein or RNA samples collected after 4 hr of Wnt treatment.
 
-## Aβ 40/42 detection
+### Aβ 40/42 detection
 
 For the Aβ 40/42 detection, first, culture medium refreshed with Wnt3a (50 ng/ml or 150 ng/ml) or Wnt5a (100 ng/ml or 400 ng/ml) on DIV7 primary cortical neurons. Then, supernatant was collected after 4 hr Wnt3a/5a treatment for Aβ detection, and refreshed with medium without Wnt3a/5a. At last, the second round supernatant collection performed after additional 24 hr culture. The procedure of Aβ detection is based on the protocol from V-PLEX Plus Aβ Peptide Panel 1 (6E10) Kit (K15200G, MSD).
 
-## Amino acids sequence of deleted CRD
+### Amino acids sequence of deleted CRD
 
 Amino acids with underscore are deleted in mouse, human APPΔCRD or APPLΔCRD.
 
-## hAPP695 (NCBI Reference Sequence: NP_958817.1)
+#### hAPP695 (NCBI Reference Sequence: NP_958817.1)
 
 MLPGLALLLLAAWTARALEVPTDGNAGLLAEPQIAMFCGRLNMHMNVQNGKWDSDPSGTKTCIDTKEGILQYCQEVYPELQITNVVEANQPVTIQNWCKRGRKQCKTHPHFVIPYRCLVGEFVSDALLVPDKCKFLHQERMDVCETHLHWHTVAKETCSEKSTNLHDYGMLLPCGIDKFRGVEFVCCPLAEESDNVDSADAEEDDSDVWWGGADTDYADGSEDKVVEVAEEEEVAEVEEEEADDDEDDEDGDEVEEEAEEPYEEATERTTSIATTTTTTTESVEEVVRVPTTAASTPDAVDKYLETPGDENEHAHFQKAKERLEAKHRERMSQVMREWEEAERQAKNLPKADKKAVIQHFQEKVESLEQEAANERQQLVETHMARVEAMLNDRRRLALENYITALQAVPPRPRHVFNMLKKYVRAEQKDRQHTLKHFEHVRMVDPKKAAQIRSQVMTHLRVIYERMNQSLSLLYNVPAVAEEIQDEVDELLQKEQNYSDDVLANMISEPRISYGNDALMPSLTETKTTVELLPVNGEFSLDDLQPWHSFGADSVPANTENEVEPVDARPAADRGLTTRPGSGLTNIKTEEISEVKMDAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIATVIVITLVMLKKKQYTSIHHGVVEVDAAVTPEERHLSKMQQNGYENPTYKFFEQMQN.
 
-## MmApp (NCBI Reference Sequence: NP_031497.2)
+#### MmApp (NCBI Reference Sequence: NP_031497.2)
 
 MLPSLALLLLAAWTVRALEVPTDGNAGLLAEPQIAMFCGKLNMHMNVQNGKWESDPSGTKTCIGTKEGILQYCQEVYPELQITNVVEANQPVTIQNWCKRGRKQCKTHTHIVIPYRCLVGEFVSDALLVPDKCKFLHQERMDVCETHLHWHTVAKETCSEKSTNLHDYGMLLPCGIDKFRGVEFVCCPLAEESDSVDSADAEEDDSDVWWGGADTDYADGGEDKVVEVAEEEEVADVEEEEADDDEDVEDGDEVEEEAEEPYEEATERTTSTATTTTTTTESVEEVVRVPTTAASTPDAVDKYLETPGDENEHAHFQKAKERLEAKHRERMSQVMREWEEAERQAKNLPKADKKAVIQHFQEKVESLEQEAANERQQLVETHMARVEAMLNDRRRLALENYITALQAVPPRPHHVFNMLKKYVRAEQKDRQHTLKHFEHVRMVDPKKAAQIRSQVMTHLRVIYERMNQSLSLLYNVPAVAEEIQDEVDELLQKEQNYSDDVLANMISEPRISYGNDALMPSLTETKTTVELLPVNGEFSLDDLQPWHPFGVDSVPANTENEVEPVDARPAADRGLTTRPGSGLTNIKTEEISEVKMDAEFGHDSGFEVRHQKLVFFAEDVGSNKGAIIGLMVGGVVIATVIVITLVMLKKKQYTSIHHGVVEVDAAVTPEERHLSKMQQNGYENPTYKFFEQMQN.
 
-## appl (Drosophila melanogaster) (NCBI Reference Sequence: NP_001245451.1)
+#### appl (Drosophila melanogaster) (NCBI Reference Sequence: NP_001245451.1)
 
 mcaalrrnlllrslwvvlaigtaqvqaasprwepqiavlceagqiyqpqylseegrwvtdlskkttgptclrdkmdlldyckkaypnrditnivesshyqkiggwcrqgalnaakckgshrwikpfrclgpfqsdallvpegclfdhihnasrcwpfvrwnqtgaaacqergmqmrsfamllpcgisvfsgvefvccpkhfktdeihvkktdlpvmpaaqinsandelvmndeddsndsnyskdaneddlddeddlmgddeeddmvadeaataggspntgssgdsnsgslddinaeydsgeegdnyeedgagseseaeveaswdqsggakvvslksdssspssapvapapekapvksesvtstpqlsasaaafvaansgnsgtgagappstaqptsdpyfthfdphyehqsykrleeshrekvtrvmkdwsdleekyqdmrladpkaaqsfkqrmtarfqtsvqaleeegnaekhqlaamhqqrvlahinqrkreamtcytqalteqppnahhvekclqkllralhkdrahalahyrhllnsggpggleaaaserprtlerlididravnqsmtmlkrypelsakiaqlmndyilalrskddipgsslgmseeaeagildkyrveierkvaekerlrlaekqrkeqraaereklreeklrleakkvddmlksqvaeqqsqptqsstqsqaqqqqqekslpgkelgpdaalvtaanpnlettksekdlsdteygeatvsstkvqtvlptvdddavqravedvaaavahqeaepqvqhfmthdlghressfslrrefaqhahaakegrnvyftlsfagialmaavfvgvavakwrtsrsphaqgfievdqnvtthhpivreekivpnmqingyenptykyfevke.
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
 Cells were lysed for RNA or protein extraction and then subjected to qRT-PCR or western blots as previously described (Liu et al., 2014). The detailed sequence of each primer used in the whole study for qRT-PCR were summarized below : β-actin, sense 5'- TCCATCATGAAGTGTGACGT-3' and anti-sense 5'- GAGCAATGATCTTGATCTTCAT −3', mAPP, sense 5'- CATCCAGAACTGGTGCAAGCG-3' and anti-sense 5'- GACGGTGTGCCAGTGAAGATG −3' GAPDH, sense 5'- GCTGCCAAGGCTGTGGGCAAG-3' and anti-sense 5'- GCCTGCTTCACCACCTTC −3'.
 
-## Western blots
+### Western blots
 
 Western blots were performed follow the user guide of Mini Gel Tank (ThermoFisher, A25977) with little modified. Briefly, Protein samples collected from total cell lysates with RIPA buffer, supernatant were collected after centrifugation, denatured samples were loaded separated on the 4–12% polyacrylamide gels (SDS-PAGE) (ThermoFisher, NW04122BOX) and then transferred to the 0.42 µm nitrocellulose membranes, blots visualization performed after primary and secondary antibody incubation.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Human embryonic kidney (HEK293) cells (provided from Dr. Marie-Claude Potier) were purchased from ATCC, regularly mycoplasma test performed by the CELIS core facility of ICM. For the immunoprecipitation experiments, HEK293in 10 cm dish (70% confluent) were transfected with pCDNA3-MmApp-FLAG-IRES-eGFP, pCDNA3-mAPPΔCRD-FLAG-IRES-eGFP, pCDNA3-Wnt5a-myc, pCDNA-Wnt3A-V5 or co-transfected APP or APPΔCRD with Wnt3a or Wnt5a. Three days after transfection, cells were collected with NP-40 lysis buffer, then sample supernatant was collected after >12000 rpm centrifugation for 20 min at 4°C, 450 µl supernatant was incubated with primary antibody overnight at 4°C, then Protein G sepharose beads (Thermo Fisher Scientific) were added to the sample to capture protein-antibody complex by rotating 2 hr at room temperature, then washed four times with the lysis buffer, and resuspended with loading buffer then denatured at 95 degree for 10 min, blots visualized after western blot procedure as described before.
 
-## Immunofluorescence
+### Immunofluorescence
 
 At DIV 7, cultured primary neurons in 24 wells were washed once with 1X PBS, then fixed in 4% paraformaldehyde (PFA) in PBS at room temperature (RT) for 10 min. After three times washing with 1X PBS, cells were blocked with 10% normal donkey or goat serum in 1 X PBS for 30 min at RT followed by three times washing in 1 X PBS. Thereafter, cells were incubated with primary antibodies diluted in 1 X PBS containing 1% normal donkey or goat serum for 2–3 hr at RT. three times washing with 1 X PBS, incubated with appropriate secondary antibodies conjugated with Alexa Fluor 488, Alexa Fluor 555, or Alexa Fluor 647 (1:500, Invitrogen) in 1 X PBS containing 1% normal donkey or goat serum for 1 hr at RT. Washed with 1 X PBS for three times, then counterstained the slides with DAPI (1:2000, Sigma) and mounted by using Vectashield (Vector) after rinsing. Primary antibodies used in this study were rabbit anti-APP (1:100, Synaptic Systems, 127 003), mouse anti-rab5 (1:100, Synaptic Systems, 108011), mouse anti-rab11a (1:20, Santa Cruz, sc-166523), mouse anti- Golgin-97 (1:100, Invitrogen, A-21270), rat anti-Lamp1 (1:20, Santa Cruz, sc-19992). After staining, images were obtained by using confocal microscope (Olympus FV-1200 or Leica SP8). The percentage of APP or APP-ΔCRD co-localizing with rab5, rab11, Golgin-97 and Lamp1 was calculated using JACOP (Bolte and Cordelières, 2006).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using GraphPad Prism software (GraphPad Software Inc, La Jolla, CA, USA). Differences between groups were compared using the Student’s t test, One-way ANOVA and Mann Whitney two-sample test (two-tail) as appropriate.

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.28141.001 Models of recognition memory have postulated that the mammillo-thalamic tract (MTT)/anterior thalamic nucleus (AN) complex would be critical for recollection while the Mediodorsal nucleus (MD) of the thalamus would support familiarity and indirectly also be involved in recollection (Aggleton et al., 2011). 12 patients with left thalamic stroke underwent a neuropsychological assessment, three verbal recognition memory tasks assessing familiarity and recollection each using different procedures and a high-resolution structural MRI. Patients showed poor recollection on all three tasks. In contrast, familiarity was spared in each task. No patient had significant AN lesions. Critically, a subset of 5 patients had lesions of the MD without lesions of the MTT. They also showed impaired recollection but preserved familiarity. Recollection is therefore impaired following MD damage, but familiarity is not. This suggests that models of familiarity, which assign a critical role to the MD, should be reappraised.
+Models of recognition memory have postulated that the mammillo-thalamic tract (MTT)/anterior thalamic nucleus (AN) complex would be critical for recollection while the Mediodorsal nucleus (MD) of the thalamus would support familiarity and indirectly also be involved in recollection (Aggleton et al., 2011). 12 patients with left thalamic stroke underwent a neuropsychological assessment, three verbal recognition memory tasks assessing familiarity and recollection each using different procedures and a high-resolution structural MRI. Patients showed poor recollection on all three tasks. In contrast, familiarity was spared in each task. No patient had significant AN lesions. Critically, a subset of 5 patients had lesions of the MD without lesions of the MTT. They also showed impaired recollection but preserved familiarity. Recollection is therefore impaired following MD damage, but familiarity is not. This suggests that models of familiarity, which assign a critical role to the MD, should be reappraised.
 
 ## Introduction
 
@@ -41,15 +41,227 @@ Overall, Aggleton’s models have received only mixed support concerning the rol
 
 ## Results
 
-## Participants
+### Participants
 
 We recruited 14 patients with a left ischemic thalamic lesion in the stroke units of the university hospitals of Toulouse and Bordeaux (France). Our recruitment criterion was the detection of a first symptomatic thalamic infarct, regardless of initial symptoms or neurobehavioural report at onset. Only left thalamic strokes were included, in order to ensure a homogenous group. Patients were included at least 3 months after their stroke, had no history of previous neurovascular, inflammatory or neurodegenerative diseases, and had to be right-handed or ambidextrous. We excluded one patient because of a depressive syndrome that impacted cognition, and one patient because a lacunar lesion was only visible on the T2 sequence in the acute phase. The final sample therefore contained 12 patients (P1 to P12) along with 25 healthy participants matched for age and education (Table 1 for demographic data of both groups; see lesions on structural MRI scans in axial view in Figure 1 and in coronal view in Figure 1—figure supplement 1). All the participants underwent a standard neurological examination, a standard neuropsychological assessment, three verbal recognition memory tasks, and a high-resolution 3D MR scan. We carried out all the investigations in a single day and in the same order.
 
-## Standard neuropsychological assessment
+![Figure 1.](https://cdn.elifesciences.org/articles/28141/elife-28141-fig1-v2.jpg)
+
+**Figure 1.:** The red circles indicate infarcts. P5’s lesion is hardly visible on the picture (lesion volume = 5 mm3). We therefore provide a zoom on the Flair image, where the lesion is easier to see.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28141/elife-28141-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The red circles indicate infarcts. P5’s lesion is hardly visible on the picture (lesion volume = 5 mm3). We therefore provide a zoom on the Flair image, where the lesion is easier to see.
+
+**Table 1.**
+ Mean (standard deviation) [min, max] demographic data of patients and controls, and patients in the dMTT and iMTT subgroups.MannWhitney and χ2 tests were used to compare patients and controls, and permutations tests and χ2 to compare dMTT and iMTT.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Left thalamic infarct patients (n = 12)</th>
+      <th>Healthy control participants (n = 25)</th>
+      <th>P value</th>
+      <th>dMTT subgroup (n = 7)</th>
+      <th>iMTT subgroup (n = 5)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>53.2 (14.6) [25, 75]</td>
+      <td>52.6 (11.6) [25, 69]</td>
+      <td>0.86</td>
+      <td>58.9 (16.6) [25, 75]</td>
+      <td>45.2 (6.3) [38, 52]</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Sex (female (F)/male (M))</td>
+      <td>3F/9M</td>
+      <td>15F/10M</td>
+      <td>0.05</td>
+      <td>1F/6M</td>
+      <td>2F/3M</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Education level (years)</td>
+      <td>12.8 (4.1) [5, 17]</td>
+      <td>13.6 (4.1) [5, 21]</td>
+      <td>0.25</td>
+      <td>12.3 (4.2) [5, 17]</td>
+      <td>11 (4.2) [5, 17]</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Handedness (right (R)/left (L)/ambidextrous (A))</td>
+      <td>11 R/1A</td>
+      <td>22R/3L</td>
+      <td>0.17</td>
+      <td>6 R/1A</td>
+      <td>5 R</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Time since onset</td>
+      <td>589 (588.9) days [3 months, 4 years 11 months]</td>
+      <td>–</td>
+      <td>–</td>
+      <td>527 (647.2) days [3 months, 4 years 11 months]</td>
+      <td>675 (556.1) days [3 months, 3 years 8 months]</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Normalized volume of overall lesions (mm3)</td>
+      <td>516.8 (265.2) [30, 982]</td>
+      <td>–</td>
+      <td>–</td>
+      <td>679.6 (160.7) [538, 982]</td>
+      <td>289 (208.5) [30, 605]</td>
+      <td>0.005</td>
+    </tr>
+  </tbody>
+</table>
+
+### Standard neuropsychological assessment
 
 The participants underwent a comprehensive cognitive assessment. Patients performed less well than controls on verbal memory tasks (p<0.01 for all variables), and their executive functions and language were moderately impaired (Table 2, Supplementary file 1). No significant difference was found between patients and controls on the visual memory tasks although the recall of the Rey figure tended to be impaired, and behavioural assessments.
 
-## Recognition memory tasks
+**Table 2.**
+ Median [min, max] results of the standard neuropsychological assessment.MannWhitney tests were used to compare the groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tasks</th>
+      <th>Subtests</th>
+      <th>Patients N = 12</th>
+      <th>Controls N = 25</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">MEMORY</td>
+    </tr>
+    <tr>
+      <td>FCSRT - verbal</td>
+      <td>- Delayed total recall/16 - Recognition/48</td>
+      <td>10.0 (1, 16) 44.5 (5, 48)</td>
+      <td>16.0 (15, 16) 48.0 (47, 48)</td>
+      <td>&lt;0.01 &lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Logical memory - verbal</td>
+      <td>- Delayed recall (30 min)/50 - Recognition/30</td>
+      <td>16.5 (3, 37) 24.0 (16, 28)</td>
+      <td>38.0 (24, 46) 28.0 (23, 30)</td>
+      <td>&lt;0.0001 &lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Rey figure - visual</td>
+      <td>- Delayed recall (2 min)/36</td>
+      <td>19.8 (3, 32)</td>
+      <td>27.0 (17, 34)</td>
+      <td>0.053</td>
+    </tr>
+    <tr>
+      <td>DMS 48 - visual</td>
+      <td>-Delayed forced-choice recognition (60 min)/48</td>
+      <td>47.5 (44, 48)</td>
+      <td>47.0 (38, 48)</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td colspan="5">EXECUTIVE FUNCTIONS</td>
+    </tr>
+    <tr>
+      <td>Auditory-verbal span - Ss</td>
+      <td></td>
+      <td>8.0 (4, 14)</td>
+      <td>13.0 (9, 18)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Visuospatial span (n = 11) - Ss</td>
+      <td></td>
+      <td>11.0 (5, 16)</td>
+      <td>13.0 (9, 19)</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Digit symbol - Ss</td>
+      <td></td>
+      <td>9.5 (5, 12)</td>
+      <td>12.0 (8, 18)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Stroop</td>
+      <td>- Errors</td>
+      <td>0 [0, 6]</td>
+      <td>0 [0, 4]</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Literal fluency (p)</td>
+      <td>- Number of words in 2 min</td>
+      <td>15.5 (8, 23)</td>
+      <td>26.0 (11, 42)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Semantic fluency (animals)</td>
+      <td>- Number of words in 2 min</td>
+      <td>22.5 (16, 40)</td>
+      <td>42.0 (32, 61)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="5">LANGUAGE</td>
+    </tr>
+    <tr>
+      <td>Confrontation naming/36</td>
+      <td></td>
+      <td>33.5 (26, 36)</td>
+      <td>36.0 (35, 36)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="5">BEHAVIOUR</td>
+    </tr>
+    <tr>
+      <td>Starkstein Apathy Scale/42</td>
+      <td></td>
+      <td>9.5 [0, 18]</td>
+      <td>8.0 (1, 19)</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Beck Depression Inventory</td>
+      <td></td>
+      <td>3.0 [0, 8]</td>
+      <td>2.0 [0, 13]</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>State-trait anxiety/80 (n = 11)</td>
+      <td></td>
+      <td>38.0 (28, 51)</td>
+      <td>40.0 (23, 57)</td>
+      <td>0.69</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Ss = scaled score. n = 11 indicates that one of the patient did not undergo this task._
+
+### Recognition memory tasks
 
 We used three different verbal recognition memory tasks to measure recollection and familiarity, each relying on a different procedure, in order to obtain recollection and familiarity estimates that were not dependent upon a specific task or estimation procedure (Yonelinas, 2001; Bowles et al., 2007; Diana et al., 2007). Figure 2 (see Supplementary file 1 for the details) shows the results of patients and controls for the three recognition indices d’ (global performance), R (Recollection), and F (Familiarity) for each of the three experimental tasks: Receiving Operating Characteristics (ROC), Process Dissociation Procedure (PDP), Remember-Know-Guess paradigm (RKG). These results were highly convergent: patients’ discrimination and recollection were impaired in all three tasks after correction for multiple comparisons, whereas familiarity was preserved (d’ comparison between patients and controls: ROC U = 42.5, p=0.001, A = 0.86; PDP U = 72.5, p=0.04, A = 0.76; RKG U = 23, p<0.001, A = 0.92; recollection comparison ROC U = 37.5, p<0.001, A = 0.88; PDP U = 71.5, p=0.047, A = 0.76; RKG U = 25.5, p<0.0001, A = 0.92; Familiarity comparison: ROC U = 104, p=0.1; PDP U = 92.5, p=0.06; RKG U = 114, p=0.3). We, therefore, computed summary scores across the three tasks (last row of Figure 2, mean z scores across ROC, PDP and RKG tasks). zd’ and zR were evidently lower in patients (U = 23, p<0.00001, A = 0.92 and U = 11, p=0.00001, A = 0.96). Familiarity was also found to be impaired (U = 80, p=0.02, A = 0.73). Recollection correlated with global performance (rho = 0.65, p=0.05), but familiarity did not. The response criteria were not different between patients and controls in the ROC (ROC c in patients: median = −0.3, min = −1.4, max = 0.6; U = 124, p=0.4) and RKG tasks (RKG c in patients: median = −0.4, min = −1.5, max = 1; U = 110, p=0.2) whereas in the PDP task the patients’ bias was significantly more conservative (PDP c median = −0.3, min = −1.4, max = 0.8; U = 61.5, p<0.01).
 
@@ -65,7 +277,7 @@ Although group results indicated impaired recollection and a modest impairment o
 
 Lastly, we failed to find any correlations between performances on the executive tests and zd’, zR and zF. Even though we assessed correlations both with individual tests of executive functions, and by calculating summary scores across all the tests, as we did across the three recognition memory tasks.
 
-## Volumetry and lesion localization
+### Volumetry and lesion localization
 
 Only P1, P3 and P10 had lesions outside the thalamus (in the brain stem, red nucleus or white matter), and none of these involved brain areas known to play a role in declarative memory. The Fazekas and Schmidt score, which assesses white matter lesions, was ≤2 for all patients and controls (Kapeller et al., 2003). Patients had lesions in the left medial group (n = 11), especially the MDpc, the intralaminar nuclei (n = 12), and the midline nuclei (n = 11) (Figure 4; details for individual patients in Supplementary file 2). Lesions were observed in the lateral group for 9 patients. As can be seen in Supplementary file 2, the extent to which these various nuclei were damaged varied greatly from one patient to another. It is noteworthy that only one patient had a very minor damage in the anterior group (1 mm3 in the AN), and only one had a very small lesion in the posterior group (1 mm3 in the limitans nucleus). Thus, with regard to Aggleton et al.’s models, none of the patients had a significant or isolated AN lesion, while 11/12 had MD lesions.
 
@@ -77,7 +289,7 @@ No correlations were found with the executive tests, nor between recognition ind
 
 MTT volumetric analysis revealed atrophy of the MTT in seven patients. In six of these, the MTT was also labelled damaged using Morel’s atlas, confirming the convergence between the two assessment methods. We included all seven patients in the damaged MTT subgroup, and the other five patients in the intact MTT subgroup. Thus, in line with Aggleton et al.’s models, damaged MTT patients had a lesion of the AN/MTT complex, while intact MTT patients had an MD lesion (except for P3), as well as varying degrees of damage to the intralaminar and midline nuclei. The two groups were not different in age and scholarship level (Table 1).
 
-## Subgroup comparisons
+### Subgroup comparisons
 
 The damaged MTT subgroup had a poorer mean performance (zd’: Z = −2.07, p=0.049), and displayed poorer recollection (zR: Z = −2.98, p=0.001) and familiarity (zF: Z = −2.11, p=0.03) than the intact MTT subgroup (Figure 3 and Figure 5, supplementary file 2). The intact MTT subgroup had a lower zd’ and a lower zR, but their zF was similar to that of controls (zd’: Z = −2.84, p<0.01, and zR: Z = −2.22, p<0.05).
 
@@ -117,15 +329,15 @@ In conclusion, even if the role of the MD in recognition memory becomes clearer,
 
 ## Materials and methods
 
-## Ethics and participants
+### Ethics and participants
 
 All participants provided written informed consent in accordance with the declaration of Helsinki to take part in this study, which was approved by the local institutional review board (Comité de Protection des Personnes Sud-Ouest et Outre-Mer no. 2-11-04). Patients with single unilateral left ischemic thalamic stroke were recruited in the stroke units of Toulouse and Bordeaux university hospitals (France).
 
-## Standard neuropsychological assessment
+### Standard neuropsychological assessment
 
 We tested verbal memory (Free and Cued Selective Reminding Test, Van der Linden, 2004); Logical Memory, Wechsler, 2001), visual memory (Rey-Osterrieth Complex Figure, Rey and Vaivre-Douret, 1960); DMS48, Barbeau et al., 2004. The latter is a clinical recognition memory test that was not included in the experimental analyses.), executive functions (Digit and Spatial Span, Wechsler, 2001; d2 test, Brickenkamp and Zillmer (1998); Trail Making Test, Godefroy and GREFEX, 2008; Stroop test, Godefroy and GREFEX, 2008; Digit-Symbol test, Wechsler, 1997; literal and semantic lexical fluency, Godefroy and GREFEX, 2008; Similarities, Wechsler, 1997), language (ExaDé confrontation naming test, Bachy-Langedock, 1989), and affects (State-Trait Anxiety Inventory, Spielberger, 1983; Starkstein Apathy Scale, Starkstein and Leentjens (2008); Beck Depression Inventory, Beck and Steer, 1993). Handedness was assessed with the Edinburgh Handedness Inventory (Oldfield, 1971).
 
-## Recognition memory tasks
+### Recognition memory tasks
 
 Each task was made of an encoding phase, a distractive phase of 10 min during which participants completed nonverbal tests and a recognition phase. The words were presented using Eprime v2. Participants typed their responses on a keyboard to monitor behaviour. For each task we computed three indices of interest: accuracy, computed as a d’ reflecting the ability to discriminate between targets and distractors, and R and F indices. Accuracy was computed based on the signal detection theory, corrected according to Snodgrass and Corwin (1988). R and F index calculation depended on each procedure, as described below. The response bias (conservative to liberal) was measured in each task and corresponds to the signal detection criterion (c corrected). Because there were three tests and because results were highly consistent across the three tasks, these indices were also averaged for each patient after a z-score transformation (using the control subjects mean and standard deviation) to obtain a summary score for each index.
 
@@ -139,23 +351,23 @@ The PDP task (Figure 6B) was adapted from Wolk et al. (2008). In the first phase
 
 The RKG task was based on Tulving’s protocol (Tulving, 1985; Gardiner, 2001) (Figure 6C). Participants explicitly encoded 60 abstract words, of which 20 had a positive valence, 20 a negative valence, and 20 a neutral one categorized based on the results of an earlier pilot work. All were presented in uppercase letters. The frequency of occurrence the words in printed texts (Lexique2.org, New et al., 2001) ranged from 0.1 to 388.2 (mean = 32.6, SD = 56.6). Words contained between 3 and 13 letters (mean = 6.8, SD = 1.5) and 1 and 5 syllables (mean = 2.2, SD = 0.8). Participants pressed ‘1’ if the word was masculine, and ‘2’ if it was feminine during the encoding phase. After the 10 min interval, participants had to recognize the targets among distractors (n = 60) in a yes/no recognition task. For each ‘yes’ response, they were asked to say whether they remembered the item with reference to the encoding context (R responses), if they recognized the item without any context (K responses), or if they simply guessed (G responses). The probability of using recollection or familiarity was then estimated following Yonelinas et al. (1998). The recollection index corresponded to the correct ‘Yes’ responses corrected for false alarms and divided by the probability for the response to be a R response. The familiarity index corresponded to the difference between old and new items distributions, measured using d’. None of the words was repeated across the tasks.
 
-## Structural MRI acquisition and analysis
+### Structural MRI acquisition and analysis
 
 A 3T scanner was used to acquire MRI images (Philips Achieva). A three-dimensional T2-weighted sequence (1*1*1 mm voxel size, echo time = 337 ms, repetition time = 8000 ms, inversion time = 2400 ms, field of view = 240*240*170, slice thickness = 1 mm, slice number = 170) and a three-dimensional T1-weighted sequence (1*1*1 mm voxel size, echo time = 8.1 ms, repetition time = 3.7 ms, flip angle = 8°, field of view = 240*240*170, slice thickness = 1 mm, slice number = 170) were used to quantify the lesions. White-matter lesions were quantified with the Fazekas and Schmidt score by two independent raters (LD and MP, modified kappa, κ = 0.8) (Kapeller et al., 2003).
 
-## Lesion volumetry
+### Lesion volumetry
 
 Two independent investigators (LD and PE) manually segmented the lesions on the native T1 images using MRIcron software (modified kappa, κ = 0.82) (Rorden et al., 2007). After the native images and lesions had been normalized to the MNI (Montreal Neurological Institute) template (FSL), volumes expressed in mm3 were automatically calculated for each patient (Fsl.anat toolbox).
 
-## Lesion localization
+### Lesion localization
 
 Lesions were automatically localized using Krauth’s digital version of Morel’s atlas of the thalamus (FSL Atlasquery) (Morel, 2007; Krauth et al., 2010). We then measured the volume of the normalized lesions in each nucleus (mm3) for each participant, as well as the proportion of lesions for each nucleus, using the labelled volumes of Krauth’s version of Morel’s atlas. We assessed the proportion of lesions outside the thalamus (expressed in %) (FIRST model-based sub-cortical structure segmentation tool, FSL).
 
-## MTT assessment
+### MTT assessment
 
 An MTT label was included in Morel’s atlas. Furthermore, we manually segmented patients’ and controls’ MTTs, and carried out a volumetric analysis using MRIcron software (two independent investigators, LD and PE). Patients were included in the damaged MTT subgroup if at least one of the two methods indicated damage. Segmentations with an inter-rater agreement below 70% were reviewed by the two raters together. Details about the lesion volumetry and localization, as well as the MTT assessment, are reported in Danet et al. (2015).
 
-## Statistical analysis
+### Statistical analysis
 
 Analyses were carried out using χ2 for nominal data. We used the nonparametric MannWhitney U test for comparisons between patients and controls, but opted for a permutation test, a procedure suitable for small sample size, to compare the performances of the dMTT and iMTT subgroups (Ernst, 2004).
 

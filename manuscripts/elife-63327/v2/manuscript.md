@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Medial Microbiology and Immunology, School of Medicine, University of California, Davis Davis United States
-2. https://ror.org/016tfm930 Center for Biodefense and Emerging Infectious Diseases, University of Texas Medical Branch Galveston United States
-3. https://ror.org/05rrcem69 Genome Center, University of California, Davis Davis United States
+1. Department of Medial Microbiology and Immunology, School of Medicine, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Center for Biodefense and Emerging Infectious Diseases, University of Texas Medical Branch Galveston United States ([ROR:016tfm930](https://ror.org/016tfm930))
+3. Genome Center, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -35,13 +35,146 @@ In this work, we have established a model system to study HGT from the host geno
 
 ## Results
 
-## An experimental system to detect host gene capture by vaccinia virus
+### An experimental system to detect host gene capture by vaccinia virus
 
 In order to detect HGT into VACV, we designed an experimental system that uses the selective pressure imposed by PKR on VACV replication. In this model, we use a VACV strain (VC-R2) that lacks both PKR antagonists and can therefore only replicate in PKR-deficient cells or in complementing cells that express viral PKR inhibitors, such as VACV E3 or K3 (Hand et al., 2015). We stably transfected PKR-competent RK13 cells with E3L-tagged mCherry (mCherry-E3L) (Figure 1A), selected an individual clone that showed robust mCherry-E3 expression by fluorescence microscopy, and verified that it contained the entire expression cassette (Figure 1—figure supplement 1). The PKR-sensitive virus VC-R2 can infect these cells as efficiently as wild-type VACV, but not wild-type RK13 cells. However, if during the course of infection VC-R2-acquired mCherry-E3L from the host cell, the virus would be able to replicate in PKR-competent cells and fluoresce red (Figure 1A). The expression cassette also contains the rabbit β-globin intron (Figure 1B) enabling us to distinguish between direct DNA-mediated integration or indirect RNA-mediated integration, the two most likely mechanisms for HGT into DNA viruses. We infected the RK13-mCherry-E3L cell line with VC-R2 and titered the resulting viruses on permissive RK13 + E3 + K3 cells (Rahman et al., 2013). Then, we infected wild-type RK13 cells, which are nonpermissive for VC-R2, with these viruses and isolated plaques that expressed both mCherry and EGFP (Figure 1A). Overall, we identified 20 recombinant viruses with unique integration sites (Figure 1D, E). In total, we screened approximately 7.5 × 108 virions while optimizing this system. After optimization, we screened 3.63 × 108 virions derived from a single 48-hr infection of RK13 cells (multiplicity of infection [MOI] = 0.01). We screened this population in RK13 cells (MOI = 0.2) and identified 16 unique HGT isolates. This indicates a detected transfer rate of mCherry-E3L into the VACV genome of approximately 1 in 22.7 million viable virions.
 
-## Horizontally acquired genes show evidence of LINE-1-mediated retrotransposition
+![Figure 1.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-v2.jpg)
+
+**Figure 1.:** (A) VACV lacking E3L and K3L cannot replicate in wild-type RK13 cells, but can replicate in cells stably transfected with mCherry-E3L. Virus that acquired E3L can replicate in wild-type RK13 cells (right). (B) Schematic of the mCherry-E3L vector that was stably transfected into RK13 cells. (C) Schematic of the general genetic architecture of horizontally transferred genes identified in VACV isolates. (D) HGT integration sites in the VACV genome. The VACV genome is represented in blue. Genes highlighted above the genome were described to have likely originated from HGT (Hughes and Friedman, 2005; Bratke and McLysaght, 2008). Features shown below the genome are: integration sites into genes (black boxes, blue lines) or into intergenic regions (red lines). The orientation of the transferred genes is indicated by the arrow, colors of arrows indicate the orientation of mCherry-E3L relative to target genes (blue: same direction; red: opposite direction; black arrow: intergenic). (E) Maps of mCherry-E3L integration sites in HGT1–20. Arrows indicate the direction of transcription for VACV and mCherry-E3L. Intergenic regions are depicted in yellow. The position of an integrated U2 small nuclear RNA and the associated poly(A) tract is shown for HGT20 by dashed lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Map of the expression cassette in the pmCherry-E3L plasmid used to stably transfect RK13 cells. The positions of oligonucleotides used to amplify the parts of the expression cassette are indicated by arrows. (B) Fluorescent micrograph of stably transfected RK13-mCherry-E3L cells. (C) PCR specific for mCherry-E3L did not amplify a product from RK13 cells (lane 1), but amplified comparably sized products from the plasmid pmCherry-E3L (lane 2) and genomic DNA of the RK13-mCherry-E3L cell line (lane 3). A smaller band was amplified from HGT3 DNA due to the spliced-out intron (lane 4). M = molecular weight marker.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The 5′ and 3′ UTR of the mCherry-E3L gene are shown in light green. Dark red indicates the rabbit β-globin intron. A synthetic early/late poxvirus promoter sequence is marked in gray. mCherry is shown in red. E3L is highlighted in yellow. poly(A) tracts are shown in turquoise. VACV genomic sequences surrounding the integration sites in HGT1 through 20 are shown in lower case letters. Blue shades highlight untemplated nucleotides 5′ of the 5′ UTR. Target site duplications at the mCherry-E3L integration sites are indicated in pink. For HGT20, dark green indicates a fragment of a U2 small nuclear RNA encoding sequence. For HGT1–20, sequences from Sanger sequencing of PCR products are shown. Note that the poly(A) tracts were not completely sequenced and might contain sequencing errors due to problems with sequencing of long mononucleotide stretches and possible heterogeneity in the population.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Insertion start sites and polyadenylation sites of transgenes in horizontal gene transfer (HGT) viruses #1 to #20 are indicated.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) To determine whether mCherry-E3L was present in both ITRs or only in one, primers were designed to span the integration site and the unique region outside of the ITR. (B) Both primer sets yielded larger PCR products for HGT15 than for the parental VC-R2, indicating that mCherry-E3L was present in both ITRs.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig1-figsupp5-v2.jpg)
+
+### Horizontally acquired genes show evidence of LINE-1-mediated retrotransposition
 
 To map the integration sites, we plaque-purified each HGT candidate three times and used both Sanger sequencing of amplicons from inverse PCR (Ochman et al., 1988) and PacBio-based long-read sequencing (Eid et al., 2009; Figure 1—figure supplements 2 and 3). The integration sites were distributed throughout the VACV genome, and were found in intergenic spaces (three cases), as well as in nonessential and essential genes (Figure 1D, E, Table 1). All 20 isolates (HGT1–20) displayed hallmarks of RNA-dependent, retrotransposon-mediated integrations, including spliced-out introns and long untemplated stretches of poly(A) at the 3′ end (Esnault et al., 2000). To determine if mCherry-E3L was present in both sites of the ITR in the C19L/B25R locus in HGT15, PCR with DNA of HGT15 and VC-R2, as control, was performed with a primer located in the ITR, toward the termini of the integration site and primers outside of the ITR. Both primer combinations showed larger bands when DNA HGT15 DNA was used as template, in comparison to VC-R2 DNA, which is indicative of mCherry-E3L in both ITR copies (Figure 1—figure supplement 4). In HGT20, the integrated sequence contained the intron-less mCherry-E3L cassette fused to an 88-bp cellular DNA fragment encoding U2 small nuclear (sn) RNA, which contained a second poly(A) tract (Figure 1E, Figure 1—figure supplement 5).
+
+**Table 1.**
+ Integration sites of mCherry-E3L in horizontal gene transfer (HGT) viruses and importance of disrupted genes for virus replication.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Isolate #</th>
+      <th>Integration site</th>
+      <th>Essential vs. nonessential</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HGT1</td>
+      <td>Intergenic between H4L and H5R</td>
+      <td>Presumably nonessential</td>
+    </tr>
+    <tr>
+      <td>HGT2</td>
+      <td>I8R</td>
+      <td>Essential (Gross and Shuman, 1996)</td>
+    </tr>
+    <tr>
+      <td>HGT3</td>
+      <td>H4L</td>
+      <td>Essential (Kane and Shuman, 1992)</td>
+    </tr>
+    <tr>
+      <td>HGT4</td>
+      <td>G1L</td>
+      <td>Essential (Hedengren-Olcott et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>HGT5</td>
+      <td>I4L</td>
+      <td>Nonessential (Child et al., 1990; Gammon et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>HGT6</td>
+      <td>D1R</td>
+      <td>Essential (Hassett et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>HGT7</td>
+      <td>A40R</td>
+      <td>Nonessential (Wilcock et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>HGT8</td>
+      <td>A9L</td>
+      <td>Essential (Yeh et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>HGT9 and HGT10</td>
+      <td>D9R</td>
+      <td>Nonessential (Parrish and Moss, 2006)</td>
+    </tr>
+    <tr>
+      <td>HGT11</td>
+      <td>B4R</td>
+      <td>Nonessential (Burles et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>HGT12</td>
+      <td>Intergenic between A49R and A50R</td>
+      <td>Presumably nonessential</td>
+    </tr>
+    <tr>
+      <td>HGT13</td>
+      <td>F13L</td>
+      <td>Nonessential (Blasco and Moss, 1991)</td>
+    </tr>
+    <tr>
+      <td>HGT14</td>
+      <td>H4L</td>
+      <td>Essential (Kane and Shuman, 1992)</td>
+    </tr>
+    <tr>
+      <td>HGT15</td>
+      <td>C19L/B25R</td>
+      <td>Nonessential (Perkus et al., 1991)</td>
+    </tr>
+    <tr>
+      <td>HGT16</td>
+      <td>A26L</td>
+      <td>Nonessential (Howard et al., 2008; Chang et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>HGT17</td>
+      <td>G6R</td>
+      <td>Nonessential (Senkevich et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>HGT18</td>
+      <td>D6R</td>
+      <td>Essential (Broyles and Fesler, 1990)</td>
+    </tr>
+    <tr>
+      <td>HGT19</td>
+      <td>D11L</td>
+      <td>Essential (Seto et al., 1987)</td>
+    </tr>
+    <tr>
+      <td>HGT20</td>
+      <td>Intergenic between N2L and M1L</td>
+      <td>Presumably nonessential</td>
+    </tr>
+  </tbody>
+</table>
 
 In 19 cases, short TSDs of VACV sequences surrounded the integration sites (Figure 1C, E, Figure 2, Supplementary file 1). These TSDs had an average length of 15.9 bp and a consensus (3′-AA/TTTT-5′) motif at the integration site typical of the cleavage consensus site of the LINE-1 (L1) group of retrotransposons (Figure 2; Kojima, 2010; Gilbert et al., 2002). HGT11 contained a 2.7-kb deletion immediately downstream of the integration site in B4R, precluding the identification of a TSD (Figure 1E).
 
@@ -49,25 +182,41 @@ In 19 cases, short TSDs of VACV sequences surrounded the integration sites (Figu
 
 **Figure 2.:** (A) Length distribution of TSDs. (B) WebLogo of the consensus sequence and individual sequences of TSDs. Ten nucleotides 5′ and 3′ of the TSDs, as well as six nucleotides of the TSDs adjacent to the putative first and second long interspersed nuclear element-1 (LINE-1) endonuclease cleavage sites, respectively, are shown.
 
-## HGT acquisition in essential genes is facilitated by mutual complementation
+### HGT acquisition in essential genes is facilitated by mutual complementation
 
 To analyze whether HGT imposed any fitness costs, we compared the plaque sizes of HGT viruses in RK13 and BSC-40 cells with plaques formed by replication-competent viruses VC-2 and vP872 (Beattie et al., 1991). For most HGT viruses, plaque sizes were comparable to the replication-competent viruses in RK13 cells (Figure 3A). However, in BSC-40 cells some viruses formed substantially smaller plaques than in RK13 cells, for example HGT3, HGT14, and HGT19. HGT13 (insertion in F13L) formed tiny plaques in both cell lines, consistent with a previous report of defective viral spread in a F13L-deficient VACV (Blasco and Moss, 1991). HGT11, containing a deletion stretching from B4R through B8R, also exhibited a small plaque phenotype in both cell types. These findings indicate that, unsurprisingly, HGT can cause a loss-of-fitness.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig3-v2.jpg)
+
+**Figure 3.:** (A) Plaque sizes formed by horizontal gene transfer (HGT) virus isolates in RK13 and BSC-40 cells 3 days after infection. Location of integration (intergenic spaces [i], essential [e], nonessential [n], and a deletion [d]) are indicated below each bar. Dotted lines indicate plaque sizes caused by vP872. Between 30 and 387 plaques were measured for each virus (see Figure 3—source data 1 for details). Mean standard deviations and adjusted p-values calculated with Dunn's test of multiple comparisons are indicated. Asterisks denote significant differences between vP872 and HGT isolates (*p < 0.05; **p < 0.005; ***p < 0.0005). (B) Percentage of foci that were mCherry-positive 3 days after infecting RK13 + E3 + K3 cells with the indicated HGT viruses. (C) Complementation of HGT13 by VC-R2. RK13 cells were infected with either HGT13 alone (left) or coinfected with HGT13 and VC-R2 (right). Foci were visualized 3 days after infection at the same magnification. (D) Location of PCR primers for amplifying integration sites in HGT1 and HGT3. (E) PCR amplification for integration site identified for HGT1 (PCR#1, left) and HGT3 (PCR#1, right).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** VC-R2 permissive RK13 + E3 + K3 cells were infected with plaque-purified horizontal gene transfer (HGT) virus isolates at 100 pfu/well. 48 hr after infection, red and green fluorescent images were taken and overlayed in FiJi.
 
 Surprisingly, eight of the VACV genes that were disrupted by HGT were reported to be essential for virus replication (Table 1).
 
 Because these insertions should presumably inactivate these essential genes, it was unclear how this HGT resulted in viable viruses. One possibility could be that although these viruses were plaque purified three times, the parent virus may have persisted to complement the otherwise nonviable HGT virus. To test this hypothesis, we infected RK13 + E3 + K3 cells, which are also permissive for the parental virus, with each plaque-purified HGT isolate. In all these infections, we identified the expected EGFP/mCherry double-positive foci. Additionally, foci that were EGFP positive but mCherry negative were observed in isolates in which mCherry-E3L insertions occurred in essential genes, indicating the continued presence of parental virus. The percentage of mCherry positive to mCherry negative foci in these viruses ranged between 7% and 51% (Figure 3B, Figure 3—figure supplement 1). We hypothesized that the two fluorescent phenotypes indicated mutual complementation, wherein the HGT virus supplied mCherry-E3 and VC-R2 supplied the disrupted essential gene product, thus permitting replication of both viruses in coinfected cells. To test this hypothesis, we coinfected RK13 cells with VC-R2 and the F13L-disrupted HGT13 virus, which did not contain detectable VC-R2 but formed only minute foci in either RK13 or BSC-40 cells. As predicted, in the coinfection we observed larger foci in addition to the very small foci produced by HGT13 alone (Figure 3C). In an additional, PCR-based test of this hypothesis, we amplified DNA spanning the integration sites in HGT1, which acquired mCherry-E3L in an intergenic region, or HGT3, in which the essential gene H4L was disrupted. As expected, HGT1 yielded a single 2.3 kB amplicon of the expected size for mCherry-E3L integration. However, we amplified two products from HGT3: a 396-bp amplicon, consistent with wild-type H4L, and a 2.2 kb amplicon consistent with mCherry-E3L integration into H4L (Figure 3D, E). Taken together, these assays support our hypothesis of mutual complementation of these viruses.
 
-## Recombination of complementing viruses generates replication-competent individual viruses
+### Recombination of complementing viruses generates replication-competent individual viruses
 
 If both viruses complemented each other efficiently, the expected ratio of HGT virus to parent to virus should be close to 1:1. However, for most HGT isolates this ratio was lower, indicating that virus complementation did not necessarily result in optimal replication of both viruses. In these cases, there may be strong selective pressure to evolve a single replication-competent virus that is not reliant on a complementing virus. To test this hypothesis, we serially passaged the HGT3/parental virus population in PKR-competent RK13 cells. In three independent replicates, we observed a rapid increase in double-positive fluorescent foci (Figure 4A, B), consistent with an increase in HGT3 fitness. In order to directly test for a fitness increase, we infected RK13 and BSC-40 cells with the passaged virus populations for 48 hr and then titered the viruses on RK13 + E3 + K3 cells. Whereas in RK13 cells the passaged viruses showed only a modest increase in replication (about fivefold) in passages 9 and 17, an approximately 100-fold higher replication was observed for BSC-40 cells infected with passages 9 and 17 as compared to passage 0 (Figure 4C and D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig4-v2.jpg)
 
-**Figure 4.:** (A) The percentage of mCherry-positive foci formed on RK13 + E3 + K3 cells by three serially passaged replicates of HGT3. Percentages were determined for the indicated passages (P). (B) Increase in double-positive mCherry and EGFP expressing foci of replicate 3 during serial passaging. (C) RK13 and (D) BSC-40 cells were infected with serially passaged HGT3 in duplicate (multiplicity of infection [MOI] = 0.01) for 48 hr and viruses were titered on RK13 + E3 + K3 cells. Error bars indicate standard deviations.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** (A) The percentage of mCherry-positive foci formed on RK13 + E3 + K3 cells by three serially passaged replicates of HGT3. Percentages were determined for the indicated passages (P). (B) Increase in double-positive mCherry and EGFP expressing foci of replicate 3 during serial passaging. (C) RK13 and (D) BSC-40 cells were infected with serially passaged HGT3 in duplicate (multiplicity of infection [MOI] = 0.01) for 48 hr and viruses were titered on RK13 + E3 + K3 cells. Error bars indicate standard deviations.
 
 To investigate possible structural changes around the disrupted H4L locus, we designed outward-facing primers in H4L similar to an approach to detect gene amplification in poxviruses (Elde et al., 2012; Brennan et al., 2014). This PCR strategy only yields products if two or more copies of H4L are adjacent to each other (Figure 5A). We amplified products from passaged virus DNA, but not from DNA isolated from VC-R2 or the original plaque-purified virus (P0) (Figure 5B). Because of this evidence for genomic structural changes, we used PacBio long-read sequencing to more completely define these changes in the different populations. This approach demonstrated that in each HGT3 virus population, there were genomes in which an intact copy of H4L existed in close proximity to the mCherry-E3L-disrupted H4L locus, although we found several different recombinant viruses with different genomic architectures (Figure 5C). Only three shared nucleotides are present at the breakpoints, indicating nonhomologous recombination between the parent and HGT viruses (Figure 5—figure supplement 1). Taken together, these observations suggest that recombination occurred early in the population during serial passage, supporting the hypothesis that there may be selective pressure to generate a single viable virus. Alternatively, mCherry-E3L may have integrated into a preexisting H4L duplication; however, this scenario is unlikely, because virus complementation would be unnecessary.
 
-## Signatures of naturally occurring LINE-1-mediated HGT in the Golgi anti-apoptotic protein encoding gene
+![Figure 5.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig5-v2.jpg)
+
+**Figure 5.:** (A) PCR strategy to detect gene arrays with outward-facing primers. (B) Representative PCR products amplified with outward-facing primers for VC-R2 and three independent HGT3 passages. (C) Recombination of complementing viruses resulted in tandem arrays of the H4L locus as determined by long-read sequencing.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63327/elife-63327-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Recombination site in HGT3 between H7R and H3L identified in passage 10 of replicate 3 and passage 17 of replicate 2 by PCR and Sanger sequencing, as well as in passage 17 of replicate 3 by PacBio sequencing. The red rectangle shows three shared nucleotides between the genes at the breakpoint. (B) Recombination site in HGT3 between H6R and H3L identified in passage 2 of replicate 3 by PCR and Sanger sequencing. The red rectangle shows three shared nucleotides between the genes at the breakpoint. (C) Schematic representation of recombined loci in parental VC-R2 and HGT3, and recombined loci in r3P17 (blue dotted line) and r3P2 (red dashed line).
+
+### Signatures of naturally occurring LINE-1-mediated HGT in the Golgi anti-apoptotic protein encoding gene
 
 To determine whether this mechanism is relevant in nature, we asked whether we could detect evidence of RNA-mediated HGT in any phylogenetically predicted HGT candidate genes. We selected and analyzed the phylogenetically predicted HGT gene encoding Golgi anti-apoptotic protein (GAAP, also known as Transmembrane BAX Inhibitor Motif Containing 4, TMBIM4) in the cowpox virus Finland_2000_MAN strain, which is also present in some other orthopoxviruses. GAAP shows approximately 76% protein identity with its mammalian homologs and therefore was likely acquired relatively recently (Gubser et al., 2007). Analyzing this gene for signatures of HGT, we identified putative remnants of a poly(A) tail (16 out of 21 bp) 3′ of the gene, and a perfect 18-bp TSD flanking the gene, which contains AA/TTGT at the presumed site for the first nick during integration similar to the AA/TTTT motif identified in our screen. Moreover, adjacent to each TSD are two 59-bp homology regions, which share 83% nucleotide identity, and could be remnants of a larger duplication due to recombination, as seen in this study (Figure 6).
 
@@ -99,43 +248,43 @@ This work, and the companion study by Fixsen et al., 2020, provides the first ex
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 RK13 cells (ATCC CCL-37) and BSC-40 (ATCC CRL-2761) cell lines were kindly provided by Dr. Bernard Moss and Dr. Adam Geballe, respectively. RK13 cells expressing E3 and K3 (designated RK13 + E3 + K3) were previously described (Rahman et al., 2013). All cell lines were maintained in Dulbecco’s modified essential medium (DMEM, Life Technologies) supplemented with 5% fetal bovine serum (FBS, Fisher) and 25 μg/ml gentamycin (Quality Biologicals) at 37°C and 5% CO2. RK13 + E3 + K3 cells were supplemented with 500 μg/ml geneticin and 300 μg/ml zeocin (Life Technologies). Cell lines were seeded in 6-well (at 5 × 105 cells/well) or 12-well (at 2.5 × 105 cells/well) plates 24 hr before infections. Cell lines used in this study were negative for mycoplasma contamination as determined with Lookout Mycoplasma PCR Detection Kit (Millipore Sigma). During the course of this study, the RK13 cells we used were confirmed to be of European rabbit (Oryctolagus cuniculus) origin by PacBio sequencing (ArrayExpress accession: E-MTAB-9682). PKR expressed in BSC-40 was amplified from cDNA and sequenced, which confirmed that the cells are of African green monkey (Chlorocebus aethiops) origin.
 
 RK13 cells expressing mCherry-E3 (RK13-mCherry-E3L) were generated by stable transfection of ApaLI-linearized pmCherry-E3L using GenJet (SignaGen) according to the manufacturer’s protocol. The pmCherry-E3L vector contains, in 5′ to 3′ order, the SV40 promoter, rabbit β-globin intron, a synthetic poxvirus early/late promoter, a mCherry-E3L fusion gene, cloned into the backbone of pEGFP-N1 (Clontech). During this process, the CMV promoter and EGFP were removed from pEGFP-N1. Transfected cells were selected with 500 µg/ml geneticin (G418, Invitrogen) for 2 weeks. Individual clones were isolated by seeding cells at a low density (0.3–1 cell/ well) in 96-well plates. Wells containing a single cell, verified by fluorescent microscopy, were selected to establish clonal cell lines. Genomic DNA was prepared to verify the structure of the integrated cassette by PCR with primer JR253-intron-4F (5′-TTC CAG AAG TAG TGA AGA GGC TT-3′) and JR254-E3L-5R (5′-AGC AAG TAA AAC CTC TAC AAA TG-3′). All subsequent experiments were carried out with one RK13 + mCherry-E3L cell clone that showed robust mCherry-E3 expression (Figure 1—figure supplement 1).
 
-## Viruses
+### Viruses
 
 Vaccinia virus VC-2 (Copenhagen strain) and vP872 (∆K3L) (Beattie et al., 1991) were kindly provided by Dr. Bertram Jacobs and propagated in RK13 cells. VC-R2, which lacks both E3L and K3L (Brennan et al., 2014), was propagated in RK13 + E3 + K3 cells. VC-2, vP872, and VC-R2 were purified by zonal sucrose gradient centrifugation as previously described (Cotter et al., 2017). Virus clones HGT1 to HGT20 were plaque purified three times in RK13 cells with carboxymethyl cellulose (CMC, 1% final concentration in DMEM + 5% FBS) overlay. Virus clones HGT1–7 were purified by zonal sucrose gradient centrifugation. For HGT8–20, crude cell lysates were used as stocks. All viruses were titered in RK13 + E3 + K3 cells on 12-well plates. Virus samples were tenfold serially diluted and cells were infected in duplicate. One hour after infection, the infecting medium was replaced with CMC and incubated for 3 days at 37°C in 5% CO2. The CMC overlays were then aspirated, and plaques were identified by staining the monolayers with 0.1% crystal violet in 20% methanol.
 
 Serial passaging of HGT3 was performed as described (Brennan et al., 2014; Elde et al., 2012). Briefly, confluent RK13 cells in 6-well plates were infected with plaque-purified HGT3 virus (MOI = 0.1) in triplicate. Forty-eight hours after infection (hpi), cell lysates were collected, freeze-thawed three times, sonicated, and titered on RK13 + E3 + K3 cells before serially infecting new RK13 cells. Genomic DNA from passaged viruses was isolated from infected RK13 cells (MOI = 1.0) as previously described (Esposito et al., 1981). RK13 and BSC-40 cells were infected with passaged virus populations in duplicate at MOI = 0.01 for 48 hr and viruses were titered on RK13 + E3 + K3 cells in duplicate.
 
-## Screening for viruses that captured mCherry-E3L
+### Screening for viruses that captured mCherry-E3L
 
 RK13-mCherry-E3L cells were infected with VC-R2 (MOI = 0.01) for 3 days. Viruses were titered on RK13 + E3 + K3 cells. Subsequently, viruses were screened on confluent monolayers of RK13 cells in 6-well plates. Cells were infected at MOI = 0.2 to screen for fluorescence to avoid cell death observed at higher MOIs. For most isolates, plaques were identified after 3 days but some took as long as 5 days. Initially, plates were screened for double-positive mCherry and EGFP expressing plaques using an inverted microscope (Leica DMi8 automated, total magnification ×6.25) using the FITC filter (460–500 nm) to visualize EGFP and the Texas Red filter (540–580 nm) to visualize mCherry. In order to increase throughput, screening for double-positive plaques was then performed with an automated microscope (EVOS FL Auto 2, Thermo Fisher Scientific) using comparable filters. Double-positive virus plaques were picked using a sterile pipette tip. Harvested plaques were subjected to three rounds of freeze–thaw followed by sonication (two times 30 s). These viruses were then serially diluted to infect RK13 cells for a total of three rounds of plaque purification. After the third round of plaque purification, viruses were amplified in RK13 cells and titered on RK13 + E3 + K3 cells. Viral genomic DNA was isolated from infected RK13 cells according to a published protocol (Seto et al., 1987).
 
-## Detection of mCherry-E3L integration sites in the virus genome
+### Detection of mCherry-E3L integration sites in the virus genome
 
 The mCherry-E3L integration sites in the purified HGT virus genomes were located by inverse PCR amplification and by PacBio sequencing. For inverse PCR, we used a XbaI restriction site in between mCherry-E3L. VC-2 contains 123 XbaI sites. Viral DNA from HGT isolates was digested with XbaI, and then ligated by T4 DNA ligase (NEB) to make circular DNA. After ligation, E3L-specific, outward-facing primers: HGT-E3L-1F (5′-TGG CAG TAG ATA AAC TTC TTG GTT ACG-3′) and HGT-E3L-1R (5′-AGC CTC ACA CAC AAT CTC TGC G-3′) were used to amplify DNA circles containing mCherry-E3L and neighboring genomic viral DNA. These amplicons were gel purified and Sanger sequenced to define the approximate mCherry-E3L integration sites, because the long poly(A) tails precluded identification of the virus sequences 3′ of the poly(A) tails. To define integration sites and TSDs, primers (Supplementary file 2) from the VACV genome that are adjacent to the integration sites were designed to amplify whole integrated captured sequences, which were then Sanger sequenced. Because for HGT5 and HGT19, PCR amplification of the whole insert did not work, two separate PCR amplification with primers located in E3L and the adjacent vaccinia virus genes were performed and sequenced.
 
 To determine if mCherry-E3L integrated into both sites of the ITR in the C19L/B25R locus in HGT15, PCR with DNA of HGT15 and VC-R2, as control, was performed with primers that combined primer JR179-C19L-2F (5′-CGA GGA CTA TGT TTG GTA TAC TG-3′) located in the ITR, toward the termini of the integration site and primers JR180-C13L-2R (5′-CTG GAC TAT CCA CAC CTG-3′) for the ‘left’ region of the VACV genome, and JR181-B19R-1F (5′-CTA GTA GAG GCG GTA TCA C-3′), for the ‘right’ region of the VACV genome outside of the ITR. Both primer combinations showed larger bands when DNA HGT15 DNA was used as template, in comparison to VC-R2 DNA, which is indicative of mCherry-E3L in both ITR copies (Figure 1—figure supplement 4).
 
-## Measurement of plaque sizes
+### Measurement of plaque sizes
 
 Confluent 6-well plates of either RK13 or BSC-40 cells were infected with 100 PFU of either each HGT isolate, VC-R2, or vP872 in triplicate. After 1 hr, cells were overlaid with CMC and incubated at 37°C in 5% CO2 for 3 days followed by crystal violet staining. The stained plates and an adjacent ruler were imaged with the EVOS FL 2 microscope (Thermo Fisher Scientific) using a bright-field filter. Plaque sizes were calculated using Adobe Photoshop CC 2019. To calculate this, a global scale was set by measuring the average number pixels in a 1-mm distance from the imaged rulers (133 pixels = 1 mm, SD = 0.98 pixels) using the Adobe Photoshop CC 2019 ruler tool. The Photoshop quick selection tool was used to mark the perimeter of individual plaques followed by area measurement from the analysis tab. Between 30 and 387 plaques were measured for each virus. Kruskal–Wallis one-way analysis of variance followed by Dunn’s test of multiple comparisons was used to compare the mean plaque area of HGT samples with vP872 (alpha = 0.05) by GraphPad Prism (version 8.3.0). Graphs are presented as mean ± standard deviation and adjusted p values are shown.
 
-## Identifying virus complementation
+### Identifying virus complementation
 
 Confluent 6-well plates of RK13 + E3 + K3 cells were infected with 100 PFU of HGT1 through HGT20, and the passaged HGT3 from passages 2, 9, and 17. The percentage of mCherry and EGFP double-positive plaques were determined 3 days after infection using the automated EVOS FL Auto 2 microscope (Thermo Fisher Scientific). Images were taken at 4 × 0.13 NA magnification by using filter channels Texas red (540–580 nm) for mCherry and EGFP (465–495 nm) to visualize EGFP. Single-channel autofocus was used with phase-contrast using the first field to autofocus all other fields. 100% of well areas were photographed, stitched and tiled by using the EVOS FL Auto 2 software and analyzed to quantify the number of single-positive EGFP plaques and double-positive EGFP and mCherry expressing plaques. For each virus sample more than 86 plaques were analyzed.
 
 For the VC-R2 and HGT13 complementation assay, confluent 6-well plates of RK13 cells were coinfected in duplicate with each virus (MOI = 0.05 for each virus), or with HGT13 alone (MOI = 0.1). Images for mCherry fluorescence were taken 3 days after infection with EVOS FL Auto 2.
 
-## Detection of tandem duplications of the H4L locus using PCR
+### Detection of tandem duplications of the H4L locus using PCR
 
 Genomic DNA from HGT3 passages 0, 2, 9, and 17 as well as VC-R2 were used as templates for PCR using outward-facing primers: JR81-H4L-2F (5′-GTC TAG TAG ATA TGC TTT TAT TTT TG-3′) and JR80-H4L-2R (5′-CGA AAA TAT AAC TCG TAT TAA AGA G-3′) or JR42-H4L-3F (5′-CAC GGA GAT GGC GTA TTT AAG AG-3′) and JR88-H4L-3R (5′-GAG CTA ACG TGT GAC GAA G-3′). PCR amplified products were cloned into the pCR2.1-TOPO-TA (Invitrogen) vector for amplification and Sanger sequencing using M13F (-21) and M13R primers (UC Davis sequencing facility).
 
-## Library preparation, PacBio CCS sequencing, and data analysis
+### Library preparation, PacBio CCS sequencing, and data analysis
 
 HiFi SMRTbell library construction and sequencing were performed using Sequel II System 2.0 with P2/C2 (polymerase 2.0 and chemistry 2.0) chemistry at UC Davis DNA Technologies Core according to the manufacturer’s instructions (Pacific Biosciences). Before library preparation, the quality of genomic DNA was evaluated by pulsed-field gel electrophoresis (Sage Science Pippin Pulse) and genomic DNA concentration was quantified using a Qubit 3.0 Fluorometer (Life Technologies Q33216). Briefly, 10 µg of each viral genomic DNA was used for HiFi SMRTbell library preparation by using SMRTbell Express Template Prep Kit 2.0 (Pacific Biosciences 100-938-900). The genomic DNA was sheared to ~15–20 kb size by Megaruptor (Diagenode B06010001). The sheared DNA samples were then concentrated and purified by AMPure PB Beads (Pacific Biosciences 100-265-900) by adding 0.45× volume of AMPure PB magnetic beads to each sheared DNA samples and subsequent 80% ethanol precipitation and elution with 100 µl elution buffer. Following genomic DNA shearing and purification, each genomic DNA sample was subjected to single-strand DNA (ssDNA) overhang removal and DNA damage repair. In short, ssDNA overhangs were removed using ssDNA overhang removal reaction mix (DNA prep buffer, NAD, DNA prep additive and DNA prep enzyme) and incubated at 37°C for 15 min. The DNA fragments of each sample were then repaired by using a DNA damage repair mix and incubated at 37°C for 30 min before proceeding to End repair/A-tailing by mixing with 1× End prep mix and incubated at 20°C for 10 min followed by 30 min incubation at 65°C. After that, different barcoded adapters were ligated to each fragmented viral DNA sample by mixing with adapter ligation reaction mix (Overhang adapter v3, ligation mix, ligation additive, and ligation enhancer) and incubated at 20°C for an hour followed by incubation at 65°C for 10 min to inactivate the ligase. After ligation reaction, each adapter-ligated SMRTbell library was treated with exonucleases to remove damaged or unligated DNA fragments for 1 hr at 37°C followed by a second purification step with 0.45× AMPure PB Beads. After purification, the libraries were multiplexed into two library pools for size selection: 6-plex pool 1 and 10-plex pool 2. These pooled SMRTbell libraries were then purified by mixing with 0.45× volume of AMPure PB beads followed by 80% ethanol wash and elution with 31 µl EB for size selection. Size selection was done using the BluePippin Size-Selection System (Sage Science BLU0001) to remove <6 kb SMRTbell templates and eluted the size selected libraries into two size fractions: 9–13 and >15 kb per pooled library. The only fraction with >15 kb SMRTbell libraries was purified with 0.50× AMPure PB Beads and used for primer annealing and polymerase binding. Sequencing Primer v2 (PN 101-847-900) was annealed to each size selected SMRTbell library fraction of >15 kb length at primer: template ratio of 20:1 by denaturation step at 80°C for 150 min followed by slow cooling at 0.1°C/s to 25°C. Prior to sequencing, the polymerase-template complex was bound to the P2 enzyme with 10:1 polymerase to the SMRTbell template ratio for 4 hr. The polymerase-bound SMRTbell libraries were then sequenced by placing libraries in an 8 M SMRT cell at a sequencing concentration of 63 pM and 30 hr movie run time in a Sequel II System 2.0 machine.
 

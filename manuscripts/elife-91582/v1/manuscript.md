@@ -8,11 +8,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03qt6ba18 Neuroscience Institute, Georgia State University Atlanta United States
-2. https://ror.org/013sk6x84 HHMI Janelia Research Campus Ashburn United States
-3. https://ror.org/013meh722 Department of Physiology, Development, and Neuroscience, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
-5. https://ror.org/03efmqc40 School of Life Sciences, Arizona State University Tempe United States
+1. Neuroscience Institute, Georgia State University Atlanta United States ([ROR:03qt6ba18](https://ror.org/03qt6ba18))
+2. HHMI Janelia Research Campus Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+3. Department of Physiology, Development, and Neuroscience, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+5. School of Life Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
 
 † Corresponding author
 
@@ -34,69 +34,141 @@ Analyses of cold-sensitive circuitry downstream of CIII md neurons elucidated du
 
 ## Results
 
-## Peripheral sensory neurons share synaptic partners
+### Peripheral sensory neurons share synaptic partners
 
 Recent work on competitive interactions and behavioral transitions in Drosophila larvae has reported CIII md and Ch connectomes in the context of larval mechanosensation (Masson et al., 2020). We performed a comparative circuit analysis of somatosensory (Ch, CIII md, and CIV md) neurons using an online repository hosted by LMB Cambridge, which contains a ssTEM volume of Drosophila melanogaster first instar larval central nervous system and a repository of neural reconstructions (https://l1em.catmaid.virtualflybrain.org). Here, we report and contextualize relevant CIII md neuron downstream neurons, whose functional roles in cold nociception were evaluated. The meta-analyses of previously published literature on Drosophila larval somatosensory connectomes revealed several common post-synaptic partners that are shared amongst Ch, CIII md, and CIV md neurons (Figure 1A). CIII md neurons are upstream of multisensory integration neurons, pre-motor neurons, and projection neurons. Class III md neurons are synaptically connected to multisensory integration neurons (Basin-2, –3, and –4). The downstream pathway from Basins includes connectivity to A00c neurons and a polysynaptic pathway to the rolling command neuron (Goro) via A05q neurons. CIII md neurons are also connected to various pre-motor neurons, which are ventral nerve cord localized neurons providing synaptic input to motor neurons, including DnB, A02n, Chair-1, A01d3, A02f, A02h, and A27k, and projection neurons including A05q, A09e, TePn05, A08n, A09o, A02o, and dILP7. The CIII md neuron connectome analyses reveal broad second-order connectivity and complex interconnectivity amongst second-order neurons (Figure 1A, Figure 1—figure supplement 1). Functional and behavioral roles of CIII md neuron second-order interneurons in cold nociception remain unexplored and below we address this knowledge gap.
 
-## Functional analysis of somatosensory neurons in cold nociception
+![Figure 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sensory neuron second-order connectome analyses. Heatmap plot of synaptic connections between sensory neuron subtypes including chordotonal (Ch), class III (CIII) md, class IV (CIV) md neurons and previously published centrally located neurons. Sensory neurons (SN) Ch, CIII md, and CIV md were analyzed. Multisensory integrator (MSI) neurons include Basin-1, –2, –3, and –4. Neurons downstream of MSI (Post-MSI) include A00c, A05q, and Goro. Premotor neurons (PMNs) include Chair-1 (A10a), Down and Back (DnB), A02m, and A02n. Lastly, sensory neurons are also connected to several command/projection neurons including A02o, A09e, A10j, A09o, TePn04, and TePn05. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B, C) Calcium imaging of sensory neurons including chordotonal (IAVGAL4), class III md (19–12 GAL4), and class IV md (ppkGAL4) neurons using CaMPARI2. There were three conditions for sensory neurons: No photoconversion (PC) control (no stimulus and no photoconversion), photoconversion control (photoconversion and no stimulus), and stimulus (Stim) condition (photoconversion and 6°C stimulus). CaMPARI2 data are reported area normalized intensity ratios for Fred/Fgreen (mean ± SEM). Average N for each cell type and each condition is n=32. (B) CaMPARI2 response measured at the cell body for each neuron type. (C) Sholl intensity analysis performed using custom FIJI scripts. CaMPARI2 response is measured radially away from the center of the soma. (D) Cold-evoked responses of third instar Drosophila larva. Sensory neurons Ch, CIII md or CIV md neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT). (D, left) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (D, right) Cumulative %CT response for a duration of 5s. Controls include w1118 and EmptyGAL4 >TNT. Significant stars: turquoise stars represent comparison to w1118 and purple stars represent comparison to EmptyGAL4 >TNT. Average n=72. (E) Neural activation of sensory neurons via cell-type-specific expression of ChETA relative to EmptyGAL4 >ChETA control. EmptyGAL4 n=35. Ch n=20, CIV n=20. & CIII n=143. (E, left) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (E, right) Peak %CT. (F) Neural co-activation of sensory neurons and CIII md neurons. Here each condition represents expression of ChETA in CIII md neurons and plus Ch (via IAV-GAL4), CIII (via R83B04GAL4) or CIV md neurons (via ppkGAL4). (F, left) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (F, right) Peak %CT response during optogenetic stimulation. CIII n=143 and average experimental n=50 Significant differences indicated via asterisks, where *p<0.05, ***p<0.001, and ****p<0.0001. (G, left) Cold-evoked CT behavioral responses throughout larval development. In controls (w1118), cold-evoked CT responses are stronger as the larvae develop. CT magnitude is significantly greater between 1st v. 3rd instars and 2nd v. 3rd instars. CT duration is significantly higher between 1st v. 3rd instars. Silencing CIII md (19–12 GAL4) using TNT leads to significantly reduced cold-evoked responses as measured via CT duration and magnitude across development when compared to age-matched w1118 controls. For each condition average n=82 larvae. (G, right) CIII md neuron activation via optogenetics reveals that CT responses increase as the animal develops. No ATR controls do not exhibit any CT responses as measured by CT duration and magnitude. Activating CIII md (19–12 GAL4) using ChR2-H134R leads to significantly increased optogenetic-evoked responses as measured via CT duration and magnitude across development when compared to age-matched no ATR controls. Drosophila larvae with ATR show significant increase in CT magnitude between 1st v. 3rd instars and 2nd v. 3rd instars. Additionally, CT duration is significantly higher between 1st v. 2nd instars and 1st v. 3rd instars. For each condition average n=27 larvae (H) Comparison between cold- and CIII-evoked CT responses throughout development, where the CT duration and magnitude are normalized to 1st instar larvae. (H, left) For 2nd instar larvae both cold- and CIII-evoked CT duration increases by ~20% compared to 1st instar larvae. For 3rd instar larvae both cold- and CIII-evoked CT duration increases by ~40% and~30%, respectively, compared to 1st instar larvae. (H, right) For 2nd instar larvae both cold- and CIII-evoked CT magnitude increases by ~13% and~10%, respectively, compared to 1st instar larvae. For 3rd instar larvae both cold- and CIII-evoked CT magnitude increases by ~32% compared to 1st instar larvae.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Synaptic connectivity matrix for neurons whose role in cold nociception was assessed. The number in brackets indicates the total number of neurons analyzed for each cell type. (A) Absolute number of synaptic connections between pre- and post-synaptic neurons. (B) Connectivity represented as proportion of synaptic input to the post-synaptic neurons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A schematic of cold plate assay. Briefly, 3rd instar Drosophila larvae are plated on a thin metal plate, then we expose the larvae to noxious temperature by transferring the plate onto pre-chilled Peltier cold plate. (B) Behavior videos are automatically processed using custom macros in Fiji, where behavioral videos are cropped, and background is removed to improve quantitative analysis. (C) Larval surface area is measured using Noldus Ethovision. The following larval cold-evoked contraction (CT) behavioral metrics are calculated using r: Instantaneous CT%, cumulative CT%, CT duration and CT magnitude. We define CT behavioral response as a reduction in surface area less than –10%.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images of Drosophila larval in vivo intact animal ventral nerve cord calcium responses assessed via pan-neural CaMPARI expression. Freely moving larvae were exposed to innocuous touch, noxious heat (45°C) or noxious cold (6°C) stimulus for 20s and simultaneously exposed to 20s of photo-converting light. Z-stacks of ventral nerve cord are shown with 2 µm steps. Briefly, all animals were from the same batch, imaging was conducted using the same settings, and larvae were exposed to the same levels of photo-converting light. For better visualization, Fred/Fgreen CaMPARI fluorescence is reported, and images were pseudo-colored for enhancing signal-to-noise ratio, where highest intensity represented as white and lowest intensity with dark blue. Scale bar represents 50 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative images of somatosensory neurons (Ch, CIII md, and CIV md). Note, all images have separate magnification. Each image’s scale bar represents 50 µm. Drosophila larva and larval brain graphic was created with BioRender.com. (B) Confocal images of chordotonal (Ch: IAVGAL4), class III md (CIII: 19-12GAL4), and class IV md (CIV: ppkGAL4) neurons expressing CaMPARI2. There were three conditions for sensory neurons: No photoconversion control (no stimulus [Stim] and no photoconversion [PC]), photoconversion control (photoconversion and no stimulus), and stimulus condition (photoconversion and 6°C stimulus). Top row shows merge of Fred and Fgreen, second row is Fgreen, third row is Fred, and last row contains FredLUT, which is pseudo-colored with highest intensity being white and lowest intensity being dark blue (color scale bar on bottom right). Cell body and dendrites are outlined in white for Ch, and cell body is outlined in white for CIII and CIV neurons. Scale bar represents 10 µm. (C) CIII md neurotransmitter release is required for cold-evoked mouth hook retraction in Drosophila larvae. Using epifluorescence microscopy, CIII md neuron cold-evoked increases in Ca2+ levels (19–12>GCaMP6 m±TNT) were assessed and the delay in mouth hook retraction was measured. Compared to controls, there is a significant delay in mouth retraction, when CIII md neurons are silenced with tetanus toxin expression. Average n=12 with three stimulations per animal.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** To perform neural activation experiments, we created a custom-built optogenetic experimental setup, which has a very high spatial resolution and signal-to-noise ratio by using principles of dark field illumination. (A) Schematic of custom optogenetic rig, where stimulus and video recording are controlled via computer using Noldus Ethovision. Individual Drosophila larva are plated on clear glass plate and illuminated from below with white light. Neuron activating blue light is also delivered from the below. Individual behavioral videos are automatically cropped and stabilized using custom Fiji macros. (B, C) We measured two variables: Drosophila larval surface area and mobility. (B) Top, image stills from various timepoints before and during optogenetic stimulation of cold-sensitive CIII md neurons resulting in contraction (CT) behavioral response. Bottom, percent change in area over time of an individual animal. During baseline, larval locomotion and turns results brief changes in surface area (±2–4%). Whereas upon neural stimulation, there is a distinct lasting reduction in surface area of less than –10%. (C) Larval mobility refers to changes in larval postures as measured by changes in occupied space. Since the amount of larval mobility is a function of various intrinsic and extrinsic factors, we normalized larval mobility to the baseline period, where there was no neural activation. Top, conceptual framework of how larval mobility is measured. Original videos are motion stabilized in the XY axis and thresholded. Next, we perform image calculations (Mobility=Frametimepoint 2 – Frametimepoint 1) to get just the red shaded portions denoting changes in postural locations (red arrowheads). Drosophila larval time series mobility data are reported as percent change in mobility, time spent being immobile and percent of immobile animals, or for a genotype percent of animals that are immobile over time, immobility is defined as –25% or more reduction in mobility.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Activation of CIII md neurons using different optogenetic actuators including CsChrimson, ChETA, ChR2 and ChR2-H134R. Activation of CIII md neurons using either 19–12 GAL4 or 83B04GAL4 leads to a contraction response in third instar Drosophila larvae. Optogenetic activation of CIII md neurons (19–12 GAL4) using CsChrimson, ChETA, ChR2, or ChR2-H134R leads to CT responses. Each optogenetic actuator has unique impacts neuronal action potential firing rates leading to slightly different CT responses, however, CIII md neuron activation leads to CT behavioral response. (B–F) Represents instantaneous CT percentage responses of no ATR control and with ATR conditions for each of the actuators. (B–E) 470 nm light was used to activate CIII md neurons. (F) CsChrimson is very sensitive to minimal ambient white light exposure. Here, the experiments were conducted in near darkness conditions and thus no pre-stimulus data are recorded. The larval behavior was only recorded upon optogenetic light (617 nm) exposure. (B) 19–12GAL4>ChETA average n=27. (C) 19–12GAL4>ChR2 H134R average n=37. (D) 19–12GAL4>ChR2 average n=29. (E) 83B04GAL4>ChETA average n=30. (F) 19–12GAL4>CsChrimson average n=33.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A–F) Drosophila larval mobility following somatosensory neuron optogenetic activation (A–C) and CIII md neuron plus co-activation of Ch, additional CIII GAL4 driver (83B04GAL4) or CIV md neurons (D–F). (A, D) Instantaneous percent immobility. Blue bar represents optogenetic neural activation. (B, E) Average percent change in mobility for each genotype, where greater percent immobility results in larger changes in average mobility. (C, F) Immobility duration in seconds during stimulation. Neural activation: EmptyGAL4’ n=35. Ch n=20, CIV n=20, and CIII n=143. Neural co-activation: CIII n=143 and average experimental n=50.Significant differences indicated via asterisks, where ****p<0.0001.
+
+### Functional analysis of somatosensory neurons in cold nociception
 
 Due to shared post-synaptic neural connectivity of Ch, CIII md, and CIV md neurons (Figure 1A, Figure 1—figure supplement 1), we first assessed functional roles of these sensory neurons in cold nociception by investigating: (1) stimulus-evoked calcium responses in the Drosophila larval ventral nerve cord; (2) cold-evoked calcium responses of these sensory neurons; (3) necessity and sufficiency of these sensory neurons in cold-evoked behaviors; and (4) examining whether co-activating multiple sensory neurons facilitates CIII-mediated behavioral response in Drosophila larvae.
 
-## CaMPARI analyses reveal distinct neuropil activation patterns by sensory stimuli
+#### CaMPARI analyses reveal distinct neuropil activation patterns by sensory stimuli
 
 Drosophila larvae have distinct behavioral responses to various sensory stimuli including touch, heat or cold. Exposure to noxious cold temperatures (≤10°C) evokes highly stereotyped head and tail withdrawal towards the center of the animal, termed here as contraction (CT) response (Patel et al., 2022; Turner et al., 2016). The cold-evoked CT response is defined as at least 10% reduction in larval surface area (Figure 1—figure supplement 2). Innocuous mechanical stimuli evoke a suite of behaviors including pausing, turning, head withdrawal, and/or reverse locomotion. Noxious heat exposure leads to a corkscrew body roll escape response (Babcock et al., 2009; Babcock et al., 2011; Im et al., 2015; Ohyama et al., 2015; Tracey et al., 2003). Previous work on stimulus-evoked changes in neural ensembles in larval zebrafish (Danio rerio) used the genetically encoded calcium integrator CaMPARI to reveal distinct CNS neural activation patterns in response noxious heat or cold exposure (Fosque et al., 2015). CaMPARI affords great spatial resolution as stimulus-evoked neural responses are captured from a freely moving animal.
 
 With CaMPARI and pan-neural imaging of ventral nerve cord neurons, we visualized central representations of somatosensory stimuli across sensory modalities including innocuous mechanical, noxious cold, or noxious heat, which are primarily detected via Ch, CIII md, and CIV md neurons, respectively. We pan-neuronally expressed CaMPARI using R57C10GAL4 (Jenett et al., 2012; Pfeiffer et al., 2008) and Drosophila larvae were simultaneously exposed to diverse sensory stimuli and photoconverting light. Post-hoc imaging of intact Drosophila larvae ventral nerve cord revealed relatively little neural activity when larvae are not presented with any sensory stimulus (Figure 1—figure supplement 3). However, upon innocuous mechanical (gentle touch) stimulation, there is a marked increase in neural activation as reported by Fred/green LUT (Figure 1—figure supplement 3). Drosophila larvae exposed to noxious heat experience a large, spatially broad increase in neural activity. Incidentally, similar neuropil regions appear to be activated by both innocuous touch and noxious heat, albeit at different levels (Figure 1—figure supplement 3). Lastly, noxious cold exposure leads to robust neural activation medially, in the neuropil; however, cell bodies seem to have lower activation levels compared to touch or heat stimulations (Figure 1—figure supplement 3). These experiments measuring pan-neuronal ventral nerve cord activity in response to sensory stimuli would be ideal for comparative neural activation analyses, were the spatial resolution of the optical microscope sufficient. Acknowledging the limitations of the approach, we heretofore focus instead on single-cell type specific genetic driver lines for identified neurons that can be assigned to known neurons in the connectome.
 
-## CIII md somatosensory neurons exhibit robust Ca2+ responses to cold
+#### CIII md somatosensory neurons exhibit robust Ca2+ responses to cold
 
 Somatosensory neurons function as primary sensors of external stimuli. Ch and CIII md neurons have previously been reported to exhibit cold-evoked Ca2+ increases (Turner et al., 2016; Turner et al., 2018), whereas CIV md neurons are weakly sensitive to cold stimuli (Turner et al., 2016). Furthermore, previous studies have addressed the potential confounds of cold-induced muscle contraction on cold-induced electrical activity of CIII md neurons, where electrophysiological recordings performed on de-muscled larval fillets revealed that CIII md neural activity is not dependent upon muscles in response to cold. Exposure to noxious cold stimuli results in temperature-dependent increases in CIII neuron electrical activity consisting of both bursting and tonic firing (Himmel et al., 2021; Himmel et al., 2022; Himmel et al., 2023; Maksymchuk et al., 2022; Maksymchuk et al., 2023; Patel et al., 2022). Cold sensitivity of sensory neurons (Ch, CIII md, and CIV md) was assessed by selectively expressing the CaMPARI2 Ca2+ integrator in sensory neurons using cell-type-specific driver lines (Figure 1—figure supplement 4A). CaMPARI2 signal, as assessed by Fred/Fgreen ratios at the cell body, reveal all three neuron subtypes (Ch, CIII md, and CIV md) have significantly higher response upon cold exposure compared to no stimulus controls (Figure 1B, Figure 1—figure supplement 4B). Unsurprisingly, as high-threshold nociceptors, CIII md or CIV md neurons present relatively low responses upon photoconverting light exposure sans cold (Figure 1B, Figure 1—figure supplement 4B). However, mechanosensitive Ch neurons exhibit relatively high responses upon exposure to only photoconverting light but no stimulus indicative of high baseline neuronal activity (Figure 1B, Figure 1—figure supplement 4B).
 
 Similar to the analysis at cell bodies, in the dendrites of Ch neurons we observe marked increases in CaMPARI2 response to photoconverting light (control); however, upon cold exposure (experimental condition) there is a further increase in CaMPARI2 response (Figure 1C). Sholl intensity analysis (see Methods) likewise reveals that CIII md neurons present relatively low CaMPARI2 response in control conditions; however, there is a robust cold-evoked increase in CaMPARI2 response throughout the dendrites (Figure 1C). Interestingly, CIV md neurons also exhibited significant increases in CaMPARI2 response upon cold exposure in the cell body (Figure 1B). However, there is no change in distal dendritic CIV md neuron CaMPARI2 response between cold and no stimulus conditions (Figure 1C). CIII md have robust cold-evoked Ca2+ responses compared to Ch and CIV md neurons, which have relatively low cold-evoked Ca2+ increases (Figure 1B and C). Collectively, these data validate previous findings that identified CIII md neurons as the most sensitive to noxious cold temperatures both at the cell body and dendrites, and thus we focused our study on the neural circuitry postsynaptic to CIII md neurons.
 
-## CIII md somatosensory neurons are necessary and sufficient for the cold response
+#### CIII md somatosensory neurons are necessary and sufficient for the cold response
 
 We assessed the necessity of somatosensory neurons in noxious cold-evoked behavioral responses (Figure 1—figure supplement 2) by expressing tetanus toxin light chain, which inhibits neurotransmitter release (Sweeney et al., 1995). Based on Ca2+ imaging, we expected both Ch and CIII md neurons may be necessary for cold-evoked CT responses. Neural silencing of Ch or CIII md neurons led to significant reductions in cold-evoked CT responses compared to either w1118 (parental line) or EmptyGAL4 controls (a GAL4 construct lacking the promotor sequence; Figure 1D). Instantaneous behavioral response curves also indicate lower cold sensitivity when either Ch or CIII md neurons are silenced. However, inhibiting neurotransmitter release in CIV md neurons alone did not result in significant reductions in cold-evoked CT responses (Figure 1D). To further assess the requirement of CIII md neuron activity for cold-evoked behaviors, we simultaneously measured the delay from the onset of CIII md cold-evoked Ca2+ increases to evoked mouth hook retraction. Upon neural silencing of CIII md neurons, there is a significant delay in mouth hook retraction compared to controls suggesting that cold-evoked head withdrawal requires sensory perception (Figure 1—figure supplement 4C). Among the three somatosensory neuron types tested, neural silencing of CIII md neurons resulted in the strongest impairment in cold-evoked behavioral response.
 
 Next, we evaluated whether neural activation of sensory neurons via optogenetics would be sufficient to elicit the CT behavioral response (Figure 1—figure supplement 5A). First, we tested the efficacy of various optogenetic actuators in eliciting CIII-evoked CT responses using either blue light actuators (ChR2, ChR2-H134R, and ChETA) or red-shifted actuator (CsChrimson) and two independent CIII md GAL4 drivers were used (19–12 GAL4 and GMR83B04GAL4) (Figure 1—figure supplement 6A–F; Berndt et al., 2011; Boyden et al., 2005; Gunaydin et al., 2010; Klapoetke et al., 2014). Collectively, using either blue or red-shifted optogenetic actuators, third instar Drosophila larvae exhibited light-evoked CT responses (Figure 1—figure supplement 6). We selected ChETA for the majority of the experiments due to its high spike fidelity and lack of plateau potential (Gunaydin et al., 2010). We expressed ChETA in individual sensory neuron subtypes and assessed evoked behavioral responses (Gunaydin et al., 2010). When assessing evoked responses, we first analyzed CT responses as measured by changes in surface area (Figure 1—figure supplement 5B). Only neural activation of CIII md neurons led to CT responses in Drosophila larvae (Figure 1E) consistent with our previously published work (Turner et al., 2016). Additionally, we analyzed larval mobility, which refers to changes in larval postures as measured by changes in occupied space (Figure 1—figure supplement 5C). Upon neural activation of CIII md neurons, there is a large increase in Drosophila larval immobility compared to controls (Figure 1—figure supplement 7A–C). However, there was no difference in immobility when either Ch or CIV md neurons were optogenetically activated compared to control (Figure 1—figure supplement 7A–C). Of the somatosensory neurons tested, only CIII md neurons are sufficient to elicit the CT response.
 
-## Effect of co-activating CIII md somatosensory neurons plus additional somatosensory neuron classes
+#### Effect of co-activating CIII md somatosensory neurons plus additional somatosensory neuron classes
 
 Both Ch and CIV md neurons share common first-order post-synaptic partners with CIII md neurons, and all three somatosensory neuron types present cold-evoked increases in calcium levels. However, neither Ch nor CIV md are sufficient to elicit a CT response. To further clarify the roles of Ch and CIV md in cold-evoked behaviors, we simultaneously activated CIII md neurons plus either Ch or CIV md neurons. We expected that co-activation of multiple sensory neuron subtypes would facilitate optogenetically -evoked CT responses. Optogenetic activation of CIII md neurons using two CIII driver lines (19–12GAL4 and 83B04GAL4) led to sustained increases in instantaneous CT responses compared to control, where only one driver line (19–12GAL4) was used to activate CIII md neurons (Figure 1F). The activation of CIII md neurons concurrently using two driver lines (expressed in the same cell type, CIII md) led to a significant increase in immobility compared to single GAL4 driver-mediated activation of these neurons (Figure 1—figure supplement 7D–F), suggesting a single GAL4 line does not exhaust the dynamic range of the CT response. Co-activation of CIII md and Ch neurons, which are cold sensitive and required for cold-evoked CT responses, led to a subtle initial increase in instantaneous CT response compared to CIII activation alone; however, the initial increase in evoked CT response was quickly reduced to well below control (Figure 1F). Therefore, the co-activation of two somatosensory neuron types, Ch and CIII md, elicited a CT response that varied along the temporal axis relative to the activation of CIII md alone. Drosophila larval immobility was reduced during co-activation of Ch and CIII md neurons compared to CIII md neuron activation alone, suggesting that Ch neurons do not facilitate CIII md neuron-mediated CT responses (Figure 1—figure supplement 7D–F). CIV md and CIII md neurons share a large proportion of common second-order interneuron connectivity, including multisensory integration neurons, premotor, and ascending neurons. We predicted that CIV md and CIII md neuron co-activation might potentiate CT responses. Interestingly, simultaneous activation of CIII and CIV md neurons led to small but insignificant reductions in instantaneous and peak CT responses compared to CIII md neuron activation alone (Figure 1F). Similarly, co-activation of CIII md and CIV md neurons did not alter larval immobility compared to only CIII md neuron activation (Figure 1—figure supplement 7D–F). Ch neurons are cold sensitive and required for cold nociceptive behaviors but do not facilitate CIII md neuron-evoked behavioral responses (Figure 1B–F; Turner et al., 2018). Meanwhile, CIV md neurons are modestly cold sensitive but are not required for cold nociception and do not facilitate CIII md neuron-evoked CT responses. Collectively, CIII md neurons have the strongest cold-evoked calcium response, are required for cold-evoked behavioral response and are sufficient for the CT response.
 
-## CT response in Drosophila larvae throughout development
+#### CT response in Drosophila larvae throughout development
 
 Synaptic connectivity was mapped using first instar larvae, however, thus far we assessed cold- or CIII md-evoked larval behavioral responses in third instar larvae. Previous work assessing how synaptic connectivity scales between first and third instar larvae revealed that there is a five-fold increase in the number of synaptic connections and the size of neurons thus conserving overall connectivity as measured by percent of input synapses during larval development (Gerhard et al., 2017). Similarly, larval muscle cell size and sarcomere number scale linearly with the larval body size, while maintaining average sarcomere length (Balakrishnan et al., 2020; Demontis and Perrimon, 2009). Muscle contractile force analyses showed that total larval contractile force generation is not dependent on the size or the orientation of third instar larvae (Ormerod et al., 2022). We investigated how CT behavior changes throughout larval development by assessing both cold- and CIII md-evoked responses. First, cold-evoked larval CT magnitude and duration scale linearly across development (Figure 1G and H). Drosophila larvae with silenced CIII md neurons exhibited significantly reduced CT duration and magnitude compared to age matched controls (Figure 1G and H). Next, we evaluated how CIII md neuron-evoked CT behavior develops in Drosophila larvae. Similar to cold-evoked CT responses, CIII md neuron-evoked CT behavior also shows a linear trend in CT duration and magnitude (Figure 1G and H). Lastly, we assessed the similarity between cold- and CIII md-evoked CT responses throughout larval development. For second instar larvae, there was a 20% change increase in CT duration from first instar larvae for both cold and CIII md activation (Figure 1H). For third instar larvae, there was a greater increase in CT duration from first instar larvae for cold-evoked compared to CIII-activation (Figure 1H). Meanwhile, developmental increases in CT magnitude between cold- and CIII md neuron activation are nearly identical (Figure 1H). Collectively, cold-evoked CT response scales linearly throughout development, where CIII md neurons are necessary and sufficient for cold nociceptive responses.
 
-## Multisensory integrators are required and facilitate larval contraction response
+### Multisensory integrators are required and facilitate larval contraction response
 
 Basin interneurons function as multisensory integrators receiving convergent inputs from mechano-, chemo- and thermo-sensitive peripheral sensory neurons (Figure 2A, Figure 2—figure supplement 1A). Previous behavioral and functional studies have revealed that Basin interneurons are required for nociceptive escape responses mediated by Ch and CIV md neurons (Ohyama et al., 2015). Both Ch and CIV md neurons play roles in CIII md-mediated behavioral responses either in cold nociception and/or can detect cold stimuli. We hypothesized that Basin interneuron function is required downstream of cold nociceptive somatosensory neurons. We evaluated whether Basin interneurons are necessary and sufficient for cold nociception, exhibit cold-evoked increases in calcium response and function downstream of CIII md neurons.
 
-## Silencing Basin interneurons reduces cold-evoked CT
+![Figure 2.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig2-v1.jpg)
+
+**Figure 2.:** (A) Basins (1-4) receive inputs from sensory neurons (Ch, CIII md, and CIV md), Basins, premotor neuron Down and Back (DnB) and command-like/projection neuron A02o and TePn05. Heatmap plot of pre-synaptic connections to Basins. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–E) Cold-evoked responses of third instar Drosophila. Basin (1-4) neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT), where All Basin (R72F11GAL4), Basin-1 (R20B01GAL4), Basin-2 (SS00739splitGAL4), and Basin-4 (SS00740splitGAL4). (B) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (C) Cumulative %CT response for a duration of 5s. (D) CT duration in seconds. (E) CT magnitude as average percent change in area for the duration of stimulus. Controls include w1118, EmptyGAL4’ (w;;attP2) or EmptyGAL4’’>TNT (w;attP40;attP2). Significant differences were compared to each GAL4’s respective controls dependent on insertion sites. Significant stars: turquoise stars represent comparison to w1118, purple stars represent comparison to EmptyGAL4’>TNT and sea green stars represent comparison to EmptyGAL4’’>TNT. Average n=68. (F–I) Neural co-activation of Basin neurons and CIII md neurons. Here each condition represents expression of ChETA in CIII md neurons and plus Basin (1-4) neurons. (F) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (G) Peak %CT response during optogenetic stimulation. (H) CT duration in seconds during optogenetic stimulation. (I) CT magnitude as average percent change in area for the duration of stimulus. Significant stars: purple stars represent comparison to CIII md +EmptyGALGAL4’>ChETA. EmptyGAL4’ n=143 and experimental condition average n=49. (J) Overall percent change from control for either neural silencing or neural co-activation. The metrics for neural silencing include cumulative %CT, CT magnitude, and CT duration. The following metrics were used to calculate percent for neural co-activation: cumulative %CT, peak %CT, CT duration and magnitude. Significant differences indicated via asterisks, where *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Individual Basin neuron subtypes (magenta) and CIII md neuron axons (blue). Neural reconstruction data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–D) Drosophila larval mobility for Basin plus CIII md neuron optogenetic co-activation. (B) Instantaneous percent immobility. Blue bar represents optogenetic neural activation. (C) Average percent change in mobility for each genotype, where greater percent immobility results in larger changes in average mobility. (D) Immobility duration in seconds during stimulation. EmptyGAL4’ n=143 and experimental condition n=49. Comparisons to CIII md +EmptyGALGAL4’>ChETA. Significant differences indicated via asterisks, where **p<0.01, and ****p<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Heatmap represents optogenetically-evoked instantaneous contraction (CT) proportions of Drosophila larvae. Individual neuronal cell types were optogenetically activated using cell-type-specific expression of ChETA. Black arrow indicates optogenetic activation of primary cold somatosensory CIII md neurons, which are the only the genotype with high proportions CT. Average n=31.
+
+#### Silencing Basin interneurons reduces cold-evoked CT
 
 Basin interneurons receive somatosensory cues from CIII md neurons, thus we predicted that inhibiting neurotransmitter release from Basin neurons will result in impaired cold-evoked behaviors (Figure 2A). We assessed the requirement of all Basin neurons using ‘pan-’ Basin driver lines and also assessed roles of individual Basin neurons using subtype-specific driver lines. Neural silencing of all Basin (1-4) neurons, using R72F11GAL4, led to significant reductions in cold-evoked CT responses compared to genetic background (w1118) and EmptyGAL4’ controls (Figure 2B). Drosophila larvae with impaired Basin (1-4) neuronal function had significant reductions in CT duration, magnitude, and cumulative %CT response compared to controls (Figure 2C–E). CIII neurons have differential connectivity to individual Basin subtypes (Figure 2A). Therefore, we assessed requirement of Basin-1, –2, or –4 neurons, for which there are previously validated independent driver lines (Jovanic et al., 2016; Ohyama et al., 2015). Tetanus toxin-mediated neural silencing of Basin-2 or –4 led to significant reductions in cold-evoked CT response, as measured by cumulative %CT response, CT duration, and CT magnitude, compared to controls (Figure 2B–E). CIII md neurons do not synapse onto Basin-1 neurons according to the EM-mapped connectome (Figure 2A; Masson et al., 2020); however, Basin-1 and –2 neurons share synaptic connectivity to both feedback and feedforward GABAergic interneurons, both of which are downstream of sensory neurons (Jovanic et al., 2016). Furthermore, Basin-1 neural activation leads to depolarizations in Basin-2 through GABAergic disinhibitory pathway (Jovanic et al., 2016). Therefore, we expected that inhibiting neurotransmitter release in Basin-1 neurons would result in reduced cold-evoked responses. Neural silencing of Basin-1 neurons resulted in modest, but significant reductions in cold-evoked responses (Figure 2B–E). Impaired Basin neuron signaling results in at least 25% reduction in cold-evoked responses with the strongest reductions for all-Basin, Basin-2, or Basin-4 driver lines (Figure 2J).
 
-## Co-activation of Basin interneurons and CIII md somatosensory neurons enhances CT
+#### Co-activation of Basin interneurons and CIII md somatosensory neurons enhances CT
 
 Next, we evaluated whether neural activation of Basin neurons would impair or elicit a CT response. Optogenetic activation of Basin neurons, either using all Basin or individual Basin driver lines, did not elicit a CT response (Figure 2—figure supplement 2). But the simultaneous co-activation of CIII md and Basin neurons led to sustained increases in CT responses compared to controls, where only CIII md neurons were activated, across multiple behavioral metrics (Figure 2F–I). Coactivation did not result in a change in larval immobility (Figure 2—figure supplement 1B–D), whereas activation of all Basins led to significantly greater immobility (Figure 2—figure supplement 1B–D). These results indicate that Basin neurons are not sufficient for the CT response, but that the combined activation of CIII md and Basins not only suffices but also elicits an even stronger CT response than activating CIII md neurons alone.
 
 To parse the contribution of individual Basin neuronal subtypes, we next assessed the role of Basin-1,–2, or –4, and all four Basins together, in either facilitating or suppressing CT responses using our co-activation paradigm (Figure 2F–I). Co-activation of Basin-1 or Basin –2 with CIII md neurons led to an enhanced CT response compared to controls across all measures of behavioral response including instantaneous %CT response, peak %CT response, CT duration and CT magnitude (Figure 2F–I), with a subsequent significant increase in larval immobility (Figure 2—figure supplement 1B–D). Basin-2 plus CIII md neuron co-activation led to strong facilitation of CT responses, but surprisingly resulted in significantly reduced immobility (Figure 2—figure supplement 1B–D). Unlike for all other Basin neurons tested, Basin-4 and CIII md neuron co-activation led to a suppression of CT response, where peak instantaneous %CT response was similar to controls; however, there was a rapid reduction in instantaneous %CT response compared to controls (Figure 2F–I). Both CT duration and CT magnitude were significantly impaired for Basin-4 plus CIII md neuron co-activation compared to controls (Figure 2H-I), which also showed significantly lower immobility (Figure 2—figure supplement 1B–D). Interestingly, dual activation of CIII md and all Basin neurons led to weaker CT enhancement compared to co-activation of either Basin-1 or –2 coupled with CIII md neurons (Figure 2J), consistent with the finding that co-activation with Basin-4 reduced the CT response. Collectively, second-order Basin neurons are required for cold-evoked responses and specifically Basin-1 and Basin-2 are able to enhance CIII md neuron-evoked behavioral responses.
 
-## CaMPARI reveals Basin-2 and Basin-4 are activated in CT responses
+#### CaMPARI reveals Basin-2 and Basin-4 are activated in CT responses
 
 To further explore how Basin interneurons function in cold nociception, we sought to investigate cold-evoked Ca2+ responses of Basin neurons. Since somatosensory neurons are cholinergic (Salvaterra and Kitamoto, 2001), we expected that Basin neurons postsynaptic to CIII md neurons will exhibit cold-evoked increases in Ca2+. Post-hoc imaging of evoked CaMPARI2 fluorescence revealed that Basin neurons have significantly higher Fred/Fgreen ratios compared to control, as assessed by all-Basin driver line (Figure 3A). We further investigated Ca2+ responses in greater detail using individual driver lines for Basin-1,–2 or –4. Basin-1 neurons are weakly required for cold-evoked CT responses (Figure 2J) and coherently do not exhibit cold-evoked increases in Ca2+ response (Figure 3B). In contrast, Basin-2 and –4 neurons both exhibit significant increases in Ca2+ responses compared to their respective controls (Figure 3C and D). Collectively, Basin-2 and –4 neuron subtypes that are required for cold-evoked CT responses (Figure 2J) also exhibit cold-evoked increases in Ca2+.
 
-## CIII md neurons and Basin-2 and –4 neurons are functionally connected
+![Figure 3.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Ca2+ responses of Basin neurons upon cold exposure vs. controls (room temperature). Neural responses (CaMPARI2) of Basin neuron cell bodies were analyzed using the following cell type driver lines (A) All Basin (R72F11GAL4) average n=197, (B) Basin-1 (R20B01GAL4) average n=27, (C) Basin-2 (SS00739splitGAL4) average n=119 and (D) Basin-4 (SS00740splitGAL4) average n=46. CaMPARI2 fluorescence ratio is reported as Fred/Fgreen. We report the data as individual datapoints, where the red line represents mean, and hybrid plots (boxplot and violin) for visualizing the distribution and quartiles of data. Significant stars represent p<0.05, where comparisons were made to their respective no stimulus controls. (E–H) To functionally assess CIII md neuron to Basin-2 or Basin-4 connectivity, we optogenetically activated CIII md neurons (83B04lexA>CsChrimson) and visualized changes in evoked Ca2+ using Basin-2splitGAL4 or Basin-4splitGAL4>GCaMP6 m. Control: No all trans-retinal (ATR) supplemented diet, which is required for optogenetic stimulation in Drosophila. Orange bars indicate optogenetic stimulation. (E, G) Basin-2 and Basin-4 changes in GCaMP reported as ΔF/Fprestimulus, where prestimulus refers to 15s prior to optogenetic stimulation. (F, H) Maximum Basin-2 and Basin-4 neuronal responses (ΔF/Fprestimulus) upon optogenetic stimulation. Average n for each genotype was 13. Comparisons made to relevant controls and significant differences indicated via asterisks, where *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Blue arrows indicate strength of synaptic connectivity between the CIII md neurons and second order neurons. In the behavioral analysis column, the arrow direction indicates reduction or enhancement of CT response, and shading indicates the magnitude of change from control. In neural activity column: NC denotes no significant change in Ca2+ response, the arrow direction indicates reduction or enhancement in evoked Ca2+ response and shading indicates magnitude of change from control. Empty spaces indicate experimental analyses were not performed.
+
+#### CIII md neurons and Basin-2 and –4 neurons are functionally connected
 
 Basin-2 and –4 are postsynaptic to CIII md neurons, are required for cold nociception and have cold-evoked increases in Ca2+. Next, we assessed whether CIII md neurons and Basin-2 or –4 neurons are functionally connected. From the EM-reconstructed connectome, we predicted that the activation of CIII md neuron will result in increased Ca2+ levels of Basin-2 or –4. As expected, optogenetic activation of CIII md neurons led to significant increases in Ca2+ levels in Basin-2 neurons, and repeated stimulation of CIII md neurons did not lead to sensitization of Basin-2 Ca2+ responses (Figure 3E and F). Previously, it was shown that Ch and CIII md neurons could elicit Ca2+ response in Basin-4 neurons (Kaneko et al., 2017), however, in this previous study the authors were unable to determine which of the two sensory neuron cell types led to increases in the Basin-4 Ca2+ response (Kaneko et al., 2017). Here, we show that upon specifically activating CIII md neurons, Basin-4 neurons have large, rapid increases in cytosolic Ca2+ followed by quick return to baseline levels. In contrast to Basin-2, Basin-4 neurons showed reduced Ca2+ responses upon repetitive activations of CIII md neurons (Figure 3G and H). Therefore, CIII md neuron activation is differentially encoded by Basin-2 and –4 neurons, where upon initial stimulation Basin-4 neurons have a much larger CIII md neuron-evoked increase in Ca2+ levels but exhibit habituation compared to Basin-2 neurons, which show consistent Ca2+ upon repetitive stimulations. Collectively, our data demonstrate that Basin neurons are required for cold-evoked behaviors, and Basin-2 and –4 neurons functionally operate downstream of CIII md neurons (Figure 3—figure supplement 1).
 
-## Multisensory integrators function independently of Goro pathway for cold nociception
+### Multisensory integrators function independently of Goro pathway for cold nociception
 
 Basin neurons innervate a set of projection neurons (A05q and A00c), which are upstream of a command neuron (Goro) that is responsible for initiating CIV md neuron-mediated nociceptive escape behaviors (Figure 4A, Figure 4—figure supplement 1A; Ohyama et al., 2015). We set out to test whether cold-evoked behavioral responses mediated by CIII md and Basin neurons function through A00c, A05q, and/or Goro neurons. We first assessed whether these neurons are required for cold-evoked behavioral responses (Figure 4B–E). Neural silencing of A05q neurons via tetanus toxin led to mild, yet significant reductions in cold-evoked responses, when compared to w1118 genetic control (Figure 4B–E). Neural silencing of A00c neurons resulted in significantly lower cold-evoked cumulative CT response compared to w1118 (Figure 4C). There were also significant reductions in CT duration and CT magnitude when A00c neurons were silenced compared to both controls (Figure 4D and E). In contrast, the Goro command neuron for nociceptive rolling behavior is not required for cold-evoked CT responses (Figure 4B–E). Next, we assessed whether neural activation of these neurons led to evoked CT responses. Like Basin neurons, single cell-type activation of A00c, A05q, or Goro neurons did not lead to CT behavior (Figure 2—figure supplement 2). Similarly, optogenetic co-activation of CIII md neurons and A05q or Goro neurons did not lead to significant facilitation of the CT response (Figure 4F–I). However, simultaneously co-activating A00c and CIII md neurons led to significant increases in CT duration and CT magnitude (Figure 4H-I). There were no changes in Drosophila larval immobility upon co-activation of CIII md plus A00c, A05q, or Goro neurons (Figure 4—figure supplement 1B–D). Only co-activation of A00c neurons leads to notable enhancement of CIII md-mediated CT response, whereas neural silencing of A00c or A05q neurons led to greater than 25% impairment in cold-evoked behavioral responses (Figure 4J). In conclusion, the Basin to Goro polysynaptic pathway does not significantly contribute to the cold-evoked CT response.
 
-## Premotor neurons function downstream of CIII md neurons to mediate cold nociceptive responses
+![Figure 4.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig4-v1.jpg)
+
+**Figure 4.:** (A) A00c and A05q primarily receive inputs from Basins and premotor neuron Down and Back (DnB). Goro neurons primarily receive inputs from A05q neurons. Heatmap plot of pre-synaptic connections to downstream neurons. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–E) Cold-evoked responses of third instar Drosophila. We used cell-type-specific driver lines for downstream neurons to drive expression of tetanus toxin (TNT): A00c (R71A10GAL4), A05q (R47D0GAL4), and Goro (R69F06GAL4). (B) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (C) Cumulative %CT response for a duration of 5s. (D) CT duration in seconds. (E) CT magnitude as average percent change in area for the duration of stimulus. Controls include w1118 and EmptyGAL4’ (w;;attP2). For each genotype average n=64. Significant stars: turquoise stars represent comparison to w1118 and purple stars represent comparison to EmptyGAL4’>TNT. (F–I) Neural co-activation of downstream neurons and CIII md neurons. Here each condition represents the expression of ChETA in CIII md neurons plus A00c, A05q, or Goro neurons. (F) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (G) Peak %CT response during optogenetic stimulation. (H) CT duration in seconds during optogenetic stimulation. (I) CT magnitude as average percent change in area for the duration of stimulus. Significant purple stars represent comparison to CIII md + EmptyGAL4’>ChETA. EmptyGAL4 n=143 and experimental condition average n=33. (J) Overall percent change from control for either neural silencing or neural co-activation. The metrics for neural silencing include cumulative %CT, CT magnitude, and CT duration. The following metrics were used to calculate percent for neural co-activation: cumulative %CT, peak %CT, CT duration and magnitude. Significant differences indicated via asterisks, where *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Individual interneuron subtypes (magenta) and CIII md neuron axons (blue). Neural reconstruction data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–D) Drosophila larval mobility for A00c, A05q, or Goro neurons plus CIII md neuron optogenetic coactivation. (B) Instantaneous percent immobility. Blue bar represents optogenetic neural activation. (C) Average percent change in mobility for each genotype, where greater percent immobility results in larger changes in average mobility. (D) Immobility duration in seconds during stimulation. Significant stars represent p<0.05, where stars represent comparison to CIII md +EmptyGALGAL4’>ChETA. EmptyGAL4 n=143 and experimental condition average n=33.
+
+### Premotor neurons function downstream of CIII md neurons to mediate cold nociceptive responses
 
 Select Drosophila larval premotor neurons were previously implicated in CIV-mediated nociceptive escape responses. Specifically, DnB premotor neurons are involved in noxious thermal stimulus-evoked c-bending and rolling behavior (Burgos et al., 2018; Lopez-Bellido et al., 2019). Drosophila larvae also roll in response to activation of mCSI premotor neurons, which are synaptically connected to CIV md neurons and predicted to be A02m/n neurons from EM connectomes (Lopez-Bellido et al., 2019; Yoshino et al., 2017). Additionally, Chair-1 (A10a) premotor neurons have been implicated in anemotaxis (Jovanic et al., 2019). Collectively, these nocifensive premotor neurons primarily receive inputs from both primary sensory neurons (CIII and CIV md) and multisensory integrators (Basin-2 and –4) (Figure 5A, Figure 5—figure supplement 1A). CIII md neurons have additional synaptic connectivity with intersegmental feedback circuitry involved in locomotion, where Ifb-fwd (A01d3) is active during forward locomotion and Ifb-bwd (A27k) is active during backwards locomotion (Kohsaka et al., 2019). The intersegmental feedback circuit neurons (A01d3 and A27k) are interconnected via A02e and A02g (Kohsaka et al., 2019). GABAergic A31k premotor neuron is downstream of A01d3 and is responsible for inhibiting motor activity causing relaxation of the larval body. Lastly, A02f has been implicated in delaying nocifensive behavioral responses (Garner, 2020). We predicted that select premotor neurons are required for cold-evoked responses and function downstream of CIII md neurons in a stimulus-specific manner.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig5-v1.jpg)
+
+**Figure 5.:** (A) Chair-1 (A10a), A02m/n (predicted to be mCSI neurons) and Down and Back (DnB, A09l) primarily receive inputs from Basins, CIII md, and CIV md neurons. Heatmap plot of pre-synaptic connections to premotor neurons. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–E) Cold-evoked responses of third instar Drosophila. Premotor neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT), where Chair-1 (SS00911splitGAL4), DnB’ (IT4015GAL4), DnB’’ (IT412GAL4), and mCSI (R94B10GAL4). (B) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (C) Cumulative %CT response for a duration of 5s. (D) CT duration in seconds. (E) CT magnitude as average percent change in area for the duration of stimulus Controls include w1118, EmptyGAL4’ (w;;attP2), or EmptyGAL4’’>TNT (w;attP40;attP2). Significant differences were compared to each GAL4’s respective controls dependent on insertion sites. Significant stars: turquoise stars represent comparison to w1118, purple stars represent comparison to EmptyGAL4’>TNT and sea green stars represent comparison to EmptyGAL4’’>TNT. For each genotype average n=71. (F–I) Neural co-activation of premotor neurons and CIII md neurons. Here each condition represents expression of ChETA in CIII md neurons plus premotor neurons. (F) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (G) Peak %CT response during optogenetic stimulation. (H) CT duration in seconds during optogenetic stimulation. (I) CT magnitude as average percent change in area for the duration of stimulus. EmptyGAL4’ n=143 and experimental condition average n=35. Significant stars represent p<0.05, where purple stars represent comparison to CIII md +EmptyGALGAL4’>ChETA. (J) Overall percent change from control for either neural silencing or neural co-activation. The metrics for neural silencing include cumulative %CT, CT magnitude, and CT duration. The following metrics were used to calculate percent for neural co-activation: cumulative %CT, peak %CT, CT duration, and magnitude. Significant differences indicated via asterisks, where *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Individual premotor neuron subtypes (magenta/green) and CIII md neuronal axons (blue). Neural reconstruction data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–D) Drosophila larval mobility observed with premotor neurons plus CIII md neuron optogenetic coactivation. (B) Instantaneous percent immobility. Blue bar represents optogenetic neural activation. (C) Average percent change in mobility for each genotype, where greater percent immobility results in larger changes in average mobility. (D) Immobility duration in seconds during stimulation. EmptyGAL4’ n=143 and experimental condition average n=35. Comparison to CIII md +EmptyGALGAL4’>ChETA. Significant differences indicated via asterisks, where *p<0.05, and ****p<0.0001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–D) Cold-evoked responses of third instar Drosophila larvae. Premotor neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT), using these driver lines A01d3 (SS02065splitGAL4), A27k (SS026694splitGAL4), A02e (R70C01GAL4), A02f (SS01792GAL4), A02g (R36G02GAL4), and A31k (SS04399splitGAL4). (A) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (B) Cumulative %CT response for a duration of 5s. (C) CT duration in seconds. (D) CT magnitude is an average percent change in area for the duration of stimulus. Controls include w1118, EmptyGAL4’ (w;;attP2) or EmptyGAL4’’>TNT (w;attP40;attP2). Significant differences were compared to each GAL4’s respective controls dependent on insertion sites. There were no significant differences detected. Therefore, the following premotor neurons (A01d3, A27k, A02e, A02f, A02g, and A31k) are not required for cold-evoked CT responses. For each genotype average n=68.
 
 Inhibition of neural transmission via cell-type-specific expression of tetanus toxin in individual premotor neurons led to reduced cold-evoked responses in Drosophila larvae (Figure 5B–E). Silencing Chair-1 neurons resulted in the strongest reduction of cold-evoked CT responses, where instantaneous %CT was the lowest of all premotor neuron subtypes tested (Figure 5B). CT duration, magnitude, and cumulative percent response were all significantly reduced compared to controls (Figure 5B–E). Impairment in Chair-1 neuronal signaling leads to 75% reduction from controls in cold-evoked behaviors (Figure 5J). We silenced DnB neurons using two independent cell-type-specific driver lines (DnB’ (IT4051GAL4) & DnB’’(IT412GAL4)), where both resulted in reduced instantaneous %CT response, along with significant reductions in CT duration and magnitude compared to controls (Figure 5B–E). Silencing mCSI (R94B10GAL4) neurons also resulted in significantly reduced cold-evoked CT responses compared to controls (Figure 5B–E). DnB or mCSI inhibition of neurotransmitter release leads to approximately 50% reduction in cold-evoked CT responses (Figure 5J). Furthermore, we silenced premotor neurons previously implicated in locomotion (A01d3, A27k, A02e, A02g, A31k) or delaying nocifensive responses (A02f); this did not lead to significant changes in cold-evoked CT responses (Figure 5—figure supplement 2). Collectively, the previously implicated nocifensive premotor neurons are required for cold-evoked behavioral responses.
 
@@ -104,9 +176,29 @@ Based on EM connectivity and neural silencing experiments, we predicted that act
 
 Since these premotor neurons are postsynaptic to CIII md neurons and their activity is required for proper cold-evoked behaviors, we predicted that either activation of CIII md neurons or exposure to cold would cause increases in Ca2+. To test this prediction, we selectively expressed the Ca2+ integrator CaMPARI2 in premotor neurons. Unexpectedly, there was no change in cold-evoked Ca2+ levels in mCSI or Chair-1 neurons (Figure 6A and B). Noxious cold exposure did, however, lead to significant Ca2+ increases in DnB neurons (Figure 6C and D). To further assess how CIII md neuronal activity affects DnB function, we optogenetically activated CIII md neurons and assessed evoked Ca2+ levels of DnB using GCaMP6. Interestingly, Drosophila larvae raised without all trans-retinal, a requisite light-sensitive cofactor for optogenetic experiments, also had a mild light-evoked increase in Ca2+ (Figure 6E and F). CIII md neuron optogenetic activation led to significant increases in DnB Ca2+ levels that slowly returned to baseline levels (Figure 6E and F). Upon repeated CIII md neuron activations, DnB neurons exhibit a blunted Ca2+ response relative to initial stimulation (Figure 6E and F). Taken together, we find that premotor neuronal function is required for cold nociception and premotor neuron activity can facilitate CIII md neuron-mediated CT responses (Figure 6—figure supplement 1).
 
-## Ascending interneurons are required for cold nociceptive responses
+![Figure 6.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Ca2+ responses of premotor neurons upon cold exposure vs. controls (room temperature). Neural responses (CaMPARI2) of premotor neuron cell bodies were analyzed using the following cell type driver lines (A) mCSI (R94B10GAL4) average n=116, (B) Chair-1 (SS00911splitGAL4) average n=66, (C) DnB’ (IT4015GAL4) average n=250, and (D) DnB’’ (IT412GAL4) average n=245, CaMPARI2 fluorescence ratio is reported as Fred/Fgreen. We report the data as individual datapoints, where the red line represents mean, and hybrid plots (boxplot and violin) for visualizing the distribution and quartiles of data. Significant stars represent p<0.05, where comparisons were made to their respective no stimulus controls. (E–F) To functionally assess CIII md neuron to DnB connectivity, we optogenetically activated CIII md neurons (83B04lexA>CsChrimson) and visualized changes in evoked Ca2+ using DnB-GAL4 >GCaMP6 m. Control: No ATR supplemented diet, which is required for optogenetic stimulation in Drosophila. Orange bars indicate optogenetic stimulation. (E) DnB changes in GCaMP reported as ΔF/Fprestimulus, where prestimulus refers to 15s prior to optogenetic stimulation. (F) Maximum DnB neuronal responses (ΔF/Fprestimulus) upon optogenetic stimulation. Average n=10. Significant differences indicated via asterisks, where *p<0.05, **p<0.01, and ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Blue arrows indicate strength of synaptic connectivity between the CIII md neurons and second order neurons. In the behavioral analysis column, the arrow direction indicates reduction or enhancement of CT response, and shading indicates the magnitude of change from control. In the neural activity column: NC denotes no significant change in Ca2+ response, the arrow direction indicates reduction or enhancement in evoked Ca2+ response, and shading indicates the magnitude of change from control. Empty spaces indicate experimental analyses were not performed.
+
+### Ascending interneurons are required for cold nociceptive responses
 
 Sensory, second order multisensory integration neurons (Basins) and a premotor neuron (DnB) have further direct synaptic connectivity to a set of projection neurons including A09e, A08n, A02o, dILP7, and R61A01GAL4 labeled neurons (labels: A10j, A09o, TePn04, TePn05) that have previously been implicated in anemotaxis, mechanosensory, or chemosensory evoked behavioral responses (Hu et al., 2017; Jovanic et al., 2019; Kaneko et al., 2017; Masson et al., 2020; Takagi et al., 2017; Vogelstein et al., 2014). Briefly, A09e receives synaptic inputs from CIII md, CIV md, A08n, DnB, and TePn05 (Figure 7A, Figure 7—figure supplement 1A). A09e and CIII md neurons are both required for Drosophila larval anemotaxis (Jovanic et al., 2019; Masson et al., 2020). A08n primarily receives inputs from CIV md neurons and very few inputs from CIII md neurons (Figure 7A, Figure 7—figure supplement 1A). However, Drosophila third instar larval synaptic connectivity visualization using GFP reconstituted across synaptic partners (GRASP) revealed that A08n are not synaptic partners of CIII md neurons (Kaneko et al., 2017). A08n neurons function downstream of CIV md neurons for noxious chemical and mechanical nociception (Hu et al., 2017; Kaneko et al., 2017), and neural activation of Ch and CIII md neurons does not lead to activation of A08n neurons (Tenedini et al., 2019). R61A01GAL4-labeled neurons receive inputs from Ch, CIII md, CIV md, Basins, DnB, and A09e (Figure 7A, Figure 7—figure supplement 1A). Neurons labeled by R61A01GAL4 have been implicated in mechanosensation (Masson et al., 2020). CIII md neurons synapse onto two additional neurons that function in processing mechanosensitive information A02o and dILP7. A02o neurons are command-like neurons required for directional avoidant responses to noxious touch (Takagi et al., 2017), whereas dILP7 neurons are required for noxious mechanical and/or UV/blue light avoidance using short neuropeptide F or Ilp7, respectively (Hu et al., 2017; Imambocus et al., 2022). CIII md to dILP7 synaptic connectivity is observed in the first instar larval EM connectome, however, assessing synapse connectivity using activity-dependent GRASP in third instar larvae, there was no detectable connectivity (Hu et al., 2017). We assessed whether the following projection neurons A09e, A08n, neurons in the expression pattern of the GAL4 line R61A01 (A10j, A09o, TePn04, TePn05), A02o and dILP7 neurons are required for cold-evoked behaviors and function in conjunction with CIII md neurons for generating CT behavioral response.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig7-v1.jpg)
+
+**Figure 7.:** (A) A09e, A09o, A10j, TePn04, TePn05, A08n, dILP7, and A02o primarily receive inputs from CIII md, CIV md, Basin-1, Basin-2, and DnB neurons. Heatmap plot of pre-synaptic connections to projection neurons. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–E) Cold-evoked responses of third instar Drosophila. Projection neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT), where A09e (SS00878splitGAL4), R61A01GAL4 (labels A09o, A10j, TePn04, and TePn05), and A08n (R82E12GAL4). (B) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (C) Cumulative %CT response for a duration of 5s. (D) CT duration in seconds. (E) CT magnitude as average percent change in area for the duration of stimulus. Controls include w1118, EmptyGAL4’ (w;;attP2) or EmptyGAL4’’>TNT (w;attP40;attP2). Significant differences were compared to each GAL4’s respective controls dependent on insertion sites. Significant stars: turquoise stars represent comparison to w1118, purple stars represent comparison to EmptyGAL4’>TNT and sea green stars represent comparison to EmptyGAL4’’>TNT. For each genotype average n=72. (F–I) Neural co-activation of projection neurons and CIII md neurons. Here, each condition represents the expression of ChETA in CIII md neurons plus projection neurons. (F) Instantaneous %CT over time. Blue bar represents optogenetic neural activation. (G) Peak %CT response during optogenetic stimulation. (H) CT duration in seconds during optogenetic stimulation. (I) CT magnitude as average percent change in area for the duration of stimulus. EmptyGAL4’ n=143 and experimental condition average n=35. Significant purple stars represent comparison to CIII md +EmptyGALGAL4’>ChETA. (J) Overall percent change from control for either neural silencing or neural co-activation. The metrics for neural silencing include cumulative %CT, CT magnitude, and CT duration. The following metrics were used to calculate percent for neural co-activation: cumulative %CT, peak %CT, CT duration, and magnitude. Significant differences indicated via asterisks, where *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Individual projection neuron subtypes (magenta) and CIII md neuron axons (blue). Neural reconstruction data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–D) Drosophila larval mobility observed with projection neurons plus CIII md neuron optogenetic coactivation. (B) Instantaneous percent immobility. Blue bar represents optogenetic neural activation. (C) Average percent change in mobility for each genotype, where greater percent immobility results in larger changes in average mobility. (D) Immobility duration in seconds during stimulation. Significant stars represent p<0.05, where stars represent comparison to CIII md +EmptyGALGAL4’>ChETA. EmptyGAL4’ n=143 and experimental condition average n=35. Significant differences indicated via asterisks, where **p<0.01.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–D) Cold-evoked responses of third instar Drosophila. Projection neurons were silenced by inhibiting neurotransmitter release via cell-type-specific expression of tetanus toxin (TNT) using driver lines for dILP7 (ILP7GAL4) and A02o (MB120bsplitGAL4). (B) Instantaneous %CT over time. The heatmap on top represents change in temperature over time. (C) Cumulative %CT response for a duration of 5s. (D) CT duration in seconds. (E) CT magnitude as average percent change in area for the duration of stimulus. Controls include w1118, EmptyGAL4’ (w;;attP2) or EmptyGAL4’’>TNT (w;attP40;attP2). Significant differences were compared to each GAL4’s respective controls dependent on insertion sites. For each genotype average n=73. Significant differences indicated via asterisks, where *p<0.05 and **p<0.01.
 
 Neural silencing of projection neurons using cell-specific expression of tetanus toxin led to impairments in cold-evoked behaviors. Neurotransmission inhibition in projection neurons (A09e and R61A01) that receive strong connectivity from CIII md neurons led to significant reductions in all the CT behavioral metrics that we analyzed (Figure 7B–E). As expected, A08n neurons, which primarily receive inputs form CIV md neurons, are not required for cold-evoked CT response (Figure 7B–E). Whereas neural silencing of A09e or R61A01 neurons led to greater than 50% reduction in cold-evoked responses from controls (Figure 7J). Furthermore, neural silencing of dILP7 led to a mild but significant reduction in cold-evoked CT responses, whereas A02o neurons were dispensable for cold nociception (Figure 7A, Figure 7—figure supplement 2).
 
@@ -114,19 +206,35 @@ Next, we assessed whether these projection neurons were able to elicit a CT resp
 
 Our neural silencing analyses suggest that A09e and R61A01GAL4 (A10j, A09o, TePn04, TePn05) neurons are required for cold-evoked responses. We hypothesized that these neurons are cold sensitive and function downstream of CIII md neurons. We predicted that these neurons would have increases in Ca2+ upon cold stimulation or optogenetic activation of CIII md neurons. A09e neurons present indeed significant increases in Ca2+ levels upon cold stimulation, as measured by cell-type-specific expression of CaMPARI2 (Figure 8A). Optogenetic activation of CIII md neurons led to significant increases in evoked Ca2+ levels of A09e neurons (Figure 8B and C). Multiple stimulations of CIII md neurons did lead to slightly lower levels of evoked Ca2+ but overall Ca2+ response was largely similar between stimulations (Figure 8B and C). For R61A01GAL4 Ca2+ imaging experiments, we restricted our analyses to TePn04 and TePn05 neurons, which were reliably identifiable in an intact Drosophila larval preparation. There were significant increases in CaMPARI2 response of TePn04/05 neurons upon cold stimulation (Figure 8D). Optogenetic stimulation of CIII md neurons led to strong increases in Ca2+ levels of TePn04/05 neurons; however, Ca2+ levels rapidly returned to baseline levels (Figure 8E and F). Repeated stimulations of CIII md neurons led to a blunted Ca2+ response in TePn04/05 neurons following the initial stimulation (Figure 8E and F). Combined, these data indicate A09e and R61A01GAL4 neurons function downstream of CIII md neurons for cold nociception (Figure 8—figure supplement 1), indicating that ascending neurons relay cold somatosensation to the brain.
 
-## Comparative analyses of cold-sensitive neurons
+![Figure 8.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig8-v1.jpg)
+
+**Figure 8.:** Neural responses of A09e (SS00878GAL4) (A-C) and terminally located TePns (−04,–05) were analyzed using R61A01GAL4 (D-F). (A, D) Ca2+ responses of projection neurons upon cold exposure vs. controls (room temperature). Cold-evoked neural responses (CaMPARI2) of projection neuron cell bodies were analyzed for (A) A09e (n=27) and (D) TePns04, and TePn05 (n=42). CaMPARI2 fluorescence ratio is reported as Fred/Fgreen. We report the data as individual datapoints, where the red line represents mean, and hybrid plots (boxplot and violin) for visualizing the distribution and quartiles of data. Significant stars represent p<0.05, where comparisons were made to their respective no stimulus controls. (B, C, E-F) To assess, if A09e or TePns functions downstream of CIII md neurons, we optogenetically activated CIII md neurons (83B04lexA>CsChrimson) and visualized changes in evoked Ca2+ using projection neuron-specific GAL4>GCaMP6 m. Control: No ATR supplemented diet, which is required for optogenetic stimulation in Drosophila. Orange bars indicate optogenetic stimulation. (B, E) Changes in GCaMP reported as ΔF/Fprestimulus, where prestimulus refers to 15s prior to optogenetic stimulation. (C, F) Maximum neuronal responses (ΔF/Fprestimulus) upon optogenetic stimulation. A09e average n=22. TePns average n=8. Significant differences indicated via asterisks, where *p<0.05, ***p<0.001, and ****p<0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Blue arrows indicate the strength of synaptic connectivity between the CIII md neurons and second-order neurons. In the behavioral analysis column, the arrow direction indicates reduction or enhancement of CT response, and shading indicates the magnitude of change from control. In neural activity column: NC denotes no significant change in Ca2+ response, the arrow direction indicates reduction or enhancement in evoked Ca2+ response, and shading indicates the magnitude of change from control. Empty spaces indicate experimental analyses were not performed.
+
+### Comparative analyses of cold-sensitive neurons
 
 Thus far, data were presented in logical groups based on their previously known cell types and functions; however, these neurons function in an interconnected network and behavioral and functional imaging data must be assessed collectively to study circuit function. As discussed in previous sections, of all the cell types we tested, only optogenetic activation of CIII md neurons alone is sufficient to elicit CT responses (Figure 2—figure supplement 2). Neural co-activation of CIII md neurons plus additional cell types resulted in marked increases in CT responses compared to only CIII md neuron activation (Figure 9A). Neural silencing of cell types downstream of CIII md neurons led to significant reductions in cold-evoked CT (Figure 9B). To understand how these behavioral phenotypes are interrelated, we performed t-distributed stochastic neighbor embedding (t-SNE) analysis on both neural silencing and co-activation behavioral datasets. We identified five different clusters that exhibit varying impacts on behavioral phenotypes upon either neural co-activation or silencing (Figure 9C and D). The first group clusters together with the control genotype and includes CIV, A05q, Goro, and A08n neurons. This group on average had less than 25% change in behavioral phenotypes in either neural co-activation or silencing experiments (Figure 9C and D). Basin-1 and DnB neurons clustered together, where on average they had 49% enhancement of CT response upon neural co-activation and 45% reduction in cold-evoked CT response upon neural silencing (Figure 9C and D). R61A01 and CIII md neurons formed a cluster, where neural silencing resulted in nearly 60% reduction cold-evoked behavior and 20% enhancement of CIII md neuron-evoked behaviors upon neural co-activation (Figure 9C and D). A group of neurons including Chair-1, Basin-4, and Ch were required for cold-evoked behavioral responses; however, these neurons did not facilitate CIII-evoked CT responses (Figure 9C and D). In the last group, neural silencing of all Basins, Basin-2, mCSI, A00c, or A09e led to an overall 69% reduction in cold-evoked behaviors and 34% enhancement in CIII evoked CT response (Figure 9C and D). Additionally, we assessed how CIII md neuron synaptic connectivity to post-synaptic neurons could inform whether CIII md post-synaptic neurons are required for cold nociception (Figure 9E). Generally, neural silencing of highly connected CIII md post-synaptic neurons exhibited a greater requirement in cold nociception; however, there are a few notable exceptions (A02f and A02o), where greater connectivity did not lead to significant impairment in cold sensitivity (Figure 9E).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig9-v1.jpg)
 
-**Figure 9.:** Drosophila larval behavioral responses and synaptic connectivity informs functional connectivity assessed via Ca2+ imaging.(A, B) Instantaneous CT proportions for all genotypes in this study. (A) Neural co-activation experiments, where CIII plus additional neuronal types were simultaneously optogenetically activated. Controls for optogenetic experiments were tested with or without ATR supplement and include the following conditions: background strain (w1118), background strain crossed to UAS-ChETA, and Empty crossed to GAL4UAS-ChETA. Blue bar represents optogenetic stimulation. (B) Neurotransmitter release inhibition of individual neuronal types using cell-type-specific expression of TnT. (C, D) t-distributed stochastic neighbor embedding (t-SNE) analysis of all neuronal subtypes role in both cold nociception (neural silencing data) and CIII md neuron-evoked CT facilitation (co-activation data). (C) 2D plot of t-SNE analysis, where post-hoc clustering analysis based on ‘Euclidian complete’ method revealed five unique groups. The following percent change from control (Empty) data were included in the analysis: For neural co-activation (peak % CT response, cumulative % CT response, average % change in area, and CT duration) and for neural silencing (cumulative % CT response, average % change in area, and CT duration). (GAL4D) Average percent change from control for each cluster in (C) across all neural co-activation or neural silencing metrics. (E) Synaptic connectivity informs cold-evoked behavioral responses. Here, for each neuron type, the percent synaptic input from CIII md neurons is plotted against cold-evoked CT % upon neuron silencing. There is a negative correlation between greater synaptic connectivity and lower % CT response. (F–H) Analyses of connectivity upon select circuit components and comparative CIII md neuron-evoked calcium responses in post-synaptic neurons. (F) Proportion of synaptic inputs amongst neurons are plotted. A09e neurons integrate responses from multiple pathways originating from CIII md neurons. Network map created using Cytoscape (Shannon et al., 2003). (G, H) CIII md neuron-evoked calcium responses in post-synaptic neurons. (G) ΔF/Fbaseline over time. (H) Average max ΔF/Fbaseline. Averages ± SEM of all trials are plotted. Significant differences indicated via asterisks, where *p<0.05, **p<0.001, and ****p<0.0001.
+**Figure 9.:** (A, B) Instantaneous CT proportions for all genotypes in this study. (A) Neural co-activation experiments, where CIII plus additional neuronal types were simultaneously optogenetically activated. Controls for optogenetic experiments were tested with or without ATR supplement and include the following conditions: background strain (w1118), background strain crossed to UAS-ChETA, and EmptyGAL4 crossed to UAS-ChETA. Blue bar represents optogenetic stimulation. (B) Neurotransmitter release inhibition of individual neuronal types using cell-type-specific expression of TnT. (C, D) t-distributed stochastic neighbor embedding (t-SNE) analysis of all neuronal subtypes role in both cold nociception (neural silencing data) and CIII md neuron-evoked CT facilitation (co-activation data). (C) 2D plot of t-SNE analysis, where post-hoc clustering analysis based on ‘Euclidian complete’ method revealed five unique groups. The following percent change from control (EmptyGAL4) data were included in the analysis: For neural co-activation (peak % CT response, cumulative % CT response, average % change in area, and CT duration) and for neural silencing (cumulative % CT response, average % change in area, and CT duration). (D) Average percent change from control for each cluster in (C) across all neural co-activation or neural silencing metrics. (E) Synaptic connectivity informs cold-evoked behavioral responses. Here, for each neuron type, the percent synaptic input from CIII md neurons is plotted against cold-evoked CT % upon neuron silencing. There is a negative correlation between greater synaptic connectivity and lower % CT response. (F–H) Analyses of connectivity upon select circuit components and comparative CIII md neuron-evoked calcium responses in post-synaptic neurons. (F) Proportion of synaptic inputs amongst neurons are plotted. A09e neurons integrate responses from multiple pathways originating from CIII md neurons. Network map created using Cytoscape (Shannon et al., 2003). (G, H) CIII md neuron-evoked calcium responses in post-synaptic neurons. (G) ΔF/Fbaseline over time. (H) Average max ΔF/Fbaseline. Averages ± SEM of all trials are plotted. Significant differences indicated via asterisks, where *p<0.05, **p<0.001, and ****p<0.0001.
 
 Analyses of Drosophila larval behavioral phenotypes revealed distinct roles for downstream neurons in cold nociceptive circuitry. Mapping synaptic connectivity of a particular circuit is only the first step in understanding how individual behaviors arise. Here, we draw attention to select CIII md neuron first-order neurons (Basins (–2 and –4), DnB, TePns, and A09e) that showed robust requirements for cold nociceptive behaviors and had functional connectivity to CIII md neurons (Figure 9F). TePns synapse onto Basin-4 and form reciprocal connections to Basin-2, DnB, and A09e (Figure 9F). DnB further synapses onto Basin-4 and A09e. Within this circuit motif one might predict that A09e neurons function as the master integrators, where they might be computing synaptic information from various sources (Figure 9F). Consistent with EM connectivity, A09e neurons have the highest CIII md neuron-evoked Ca2+ responses of the tested cell types (Figure 9G and H). Compared to Basin-4 neurons, Basin-2 neurons receive greater synaptic input from CIII md neurons (Figure 9F). However, CIII md neuron activation leads to nearly twice as much Ca2+ response in Basin-4 neurons than Basin-2 (Figure 9G and H). DnB neurons receive the second highest synaptic input from CIII md neuron and have the second highest CIII md neuron-evoked Ca2+ response (Figure 9G and H). TePns receive significantly lower synaptic input compared to Basin-2 neurons; however, they both exhibit similar levels of CIII md neuron-evoked Ca2+ response (Figure 9G and H). Comparative analyses reveal that synaptic connectivity is informative about functional neural activity, however, additional molecular and functional studies are required to fully understand roles of these neurons in cold nociception. Collectively, our findings on neural substrates of cold nociception indicate that second-order multisensory integration by Basin neurons, select pre-motor neurons, and projection neurons are preferentially activated in a stimulus-specific manner to elicit appropriate behavioral responses.
 
-## Neuromuscular basis of cold-evoked CT in Drosophila larval
+### Neuromuscular basis of cold-evoked CT in Drosophila larval
 
 Sensory perception is the first node for interfacing with the external environment, which is processed through various pathways in the brain eventually leading to motor commands that generate stimulus-specific behavioral responses. Thus far, we have implicated CIII md neurons as the primary cold-sensitive neurons, which transduce thermal cues to select multisensory integration neurons, premotor neurons, and ascending neurons. However, it remains unexplored how the sensory and central processing of cold leads to CT responses. To this end, assessing CIII md neuron’s premotor neuron network revealed that collectively CIII md premotor neurons have connectivity to five of the six major muscle groups in a Drosophila larva hemi-segment (Figure 10A). Next, we assessed how individual Drosophila larva muscular segments respond to noxious cold. Analysis of muscle localized Ca2+ responses revealed that all larval segments have cold-evoked increases in Ca2+ (Figure 10B–D). Interestingly, the strongest cold-evoked response is present in abdominal segments (A2-A5), whereas anterior (T1-A1) and posterior (A6-A8) segments have marginally smaller cold-evoked Ca2+ responses (Figure 10B and C). Similar to cold-evoked CT behavior, where the head and tail contract towards the center of the animal, muscle segments in anterior and posterior reach peak activity sooner than the central segments by an average of 4s (Figure 10B’). Evaluating individual larval cold-evoked Ca2+ levels revealed segmental responses that can be attributed to previously identified cold-evoked behavioral responses (i.e. CT and head and/or tail raises) (Figure 10D; Turner et al., 2016; Turner et al., 2018).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig10-v1.jpg)
+
+**Figure 10.:** (A) Motor neurons (MN) receiving synaptic input from premotor neurons that are downstream of CIII md neurons. Heatmap plot of pre-synaptic connections to motor neurons. Synaptic connectivity data was extracted from Neurophyla LMB Cambridge. (https://neurophyla.mrc-lmb.cam.ac.uk/). (B–D) Analysis of cold-evoked Ca2+ responses of muscles in individual segments measured by expressing jRCaMP1a using Mef2GAL4. Larval graphic created using BioRender.com. (B) Average ΔF/Fprestimulus of individual larval segments across time. (B’) Average cold-evoked Ca2+ response in the anterior (T1–A1), central (A2–A5), posterior (A6–A8) segments. Dotted lines mark max ΔF/Fprestimulus and time to max ΔF/Fprestimulus. (C) Average ΔF/Fprestimulus of individual larval segments during cold exposure. (D) Individual larval average ΔF/Fprestimulus for each larval segments during cold exposure. Individual larval responses exhibit a variety of cold-evoked increases in Ca2+, similar to the range of observed micro-behaviors that lead to CT. Average n=16. (E–H) Analysis of cold-evoked Ca2+ of individual muscle cells in Drosophila larvae as measured by expressing jRCaMP1a using Mef2GAL4 and laser confocal microscopy. (E) Schematic of individual muscle cells in a larval hemi-segment from an external view. Muscles that are numerically labeled were analyzed; many ventrally located muscles could not reliably be analyzed. (F) Average ΔF/Fprestimulus of individual spatial muscle groups as defined in Zarin et al., 2019. All muscle groups show cold-evoked Ca2+ increase; however, the dynamics of each muscle group are varied. Dorsal longitudinal (DL) and Dorsal oblique (DO) both have strong cold-evoked Ca2+ response that is largely stable throughout the stimulus period. Both DL and DO muscles have a peak average ΔF/ Fprestimulus about halfway through the stimulus. Lateral Transverse (LT) muscles show an ever-increasing cold-evoked Ca2+ response that peaks near the end of the stimulus. Lastly, Ventral Longitudinal (VL) and Ventral Oblique (VO) have cold-evoked Ca2+ increase that is highest at the onset of stimulus and decays gradually throughout the stimulus period. (G) Cold-evoked average ΔF/Fprestimulus of individual muscles across time. (H) Cold-evoked average max ΔF/Fprestimulus of individual muscles across time. Average n=16. (I) Heatmap representation of average time max ΔF/Fprestimulus for individual muscles.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/91582/elife-91582-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A–E) Cold-evoked muscle Ca2+ responses with functional motor neurons and optogenetically silenced motor neurons. (A, B) Heatmap of average ΔF/Fprestimulus GCaMP6f responses in segments T1-A4. Segments A5-A8 were not analyzed due to high autofluorescence of the digestive tract. (C, D) Heatmap of average ΔF/Fprestimulus GCaMP6f responses individual larvae and segments during the stimulus period. When motor neurons are silenced, nearly all analyzed segments have similar cold-evoked responses compared to controls, with certain segments reaching very high average ΔF/Fprestimulus. (E) Average muscle average ΔF/Fprestimulus GCaMP6f response comparison for each segment between control and silenced motor neurons. Average n=13 larvae. Genotype: 44H10-GCaMP6f, D42 >GtACR1±ATR. (F–H) Muscle postsynaptic density (PSD) Ca2+ responses were assessed using SynapGCaMP6f (MHC-CD8-GCaMP6f-Sh) in Drosophila larval segment T3/A1. In controls, there is a robust cold-evoked increase in Ca2+ levels; however, upon ethyl ether application, there is a significant reduction in evoked Ca2+ levels. (F) Average ΔF/Fprestimulus over time for all stimulations. (G) Average ΔF/Fprestimulus during stimulus of all quantified PSDs for each animal across three stimulations. (H) Average ΔF/Fprestimulus of individual PSDs across three stimulations. Average n=3 larvae with average PSDs n=171.
 
 Furthermore, we assessed whether impaired circuit function would lead to reduced cold-evoked muscle responses. Firstly, while maintaining sensory perception, silencing motor neuron activity using GtACR1 resulted in significant reductions in cold-evoked Ca2+ levels compared to controls (Figure 10—figure supplement 1A–E). Secondly, application of ethyl ether also resulted in significant reductions in cold-evoked Ca2+ activity in postsynaptic densities (PSDs) in larval muscles (Figure 10—figure supplement 1F–H).
 
@@ -138,13 +246,13 @@ Environmental stimuli are detected by peripheral sensory neurons, which transduc
 
 Here, we assessed the downstream circuitry of a multimodal sensory (CIII md) neuron that detects both innocuous mechanical and noxious cold temperatures. In CIII md neurons, detection of innocuous cues occurs via low threshold activation and noxious cues are detected via high threshold activation leading to stimulus-relevant behaviors (Turner et al., 2016). Transduction of nociceptive cold stimulus is predominantly mediated by multimodal Ch and CIII md neurons. However, nociceptive peripheral sensory neurons, CIII md and CIV md neurons, function through shared downstream neural circuitry. We describe the behavioral and functional requirements of multisensory integration (Basins) neurons, premotor (DnB and mCSI) neurons and projection (A09e and TePns) neurons in noxious cold-evoked behavioral responses. We identified circuit components that play a role in amplifying noxious cues and differentiating between opposing noxious (heat versus cold) stimuli-evoked behaviors at various levels of sensory processing. Finally, we characterize how stimulus-evoked muscle contractions lead to cold nociceptive behavioral response. Our findings provide key insights into how environmental cues are processed by multiplexed networks for multisensory integration and decision making.
 
-## Basin-1 neurons function across sensory modalities as gain modulators for noxious stimuli-evoked escape responses
+### Basin-1 neurons function across sensory modalities as gain modulators for noxious stimuli-evoked escape responses
 
 Accurately responding to potentially harmful stimuli by appropriately executing energetically expensive escape behaviors is critical for animal survival. Incorrectly performing escape responses in absence of dangerous stimuli can have long-term detrimental consequences. Therefore, the need for neural mechanisms responsible for integrating various noxious and innocuous sensory stimuli for accurately executing stimulus-appropriate escape responses. Here, we focus on the role of Basin neurons, known to mediate various escape responses (Jovanic et al., 2016; Masson et al., 2020; Ohyama et al., 2015).
 
 EM connectome analyses revealed that somatosensory (Ch, CIII md, and CIV md) neurons all synapse onto multisensory integrating Basin neurons, and that amongst the Basins subtypes, Basin-1 neurons are presynaptic to Basin-2, –3, and –4 neurons (Masson et al., 2020; Ohyama et al., 2015). On the basis of the known connectome, we analyzed the function of Basin neurons in cold-evoked escape behaviors. Our findings indicate that optogenetic activation of Basin-1 is not sufficient to evoke noxious cold-evoked behavioral response (Figure 2—figure supplement 2), and it was known that thermogenetic activation of Basin-1 is also not sufficient for evoked rolling escape (Ohyama et al., 2015). Therefore, Basin-1 neuron activity alone is not sufficient to elicit a noxious stimuli-evoked behavioral response. However, due to intricate connectivity amongst the Basins, the total integrated output of multiple Basin neurons may lead to threshold activation of noxious stimulus-evoked escape responses. And indeed, thermogenetic co-activation assays found that Basin-1 neural activity could facilitate a Basin-4-mediated rolling response (Ohyama et al., 2015), and also the activation of Basin-1 neurons leads to the activation of Basin-2 neurons through lateral disinhibition (Jovanic et al., 2016). Here, we found that co-activation of Basin-1 plus CIII md neurons led to strong-evoked CT responses (Figure 2). Taken together, these studies concluded that Basin-1 facilitates the activation of other Basin neurons, and our results also provide additional support for the role of Basin-1 neurons in fine-tuning behavioral outcomes and enhancing cumulative output of multisensory integration Basin neurons leading stimulus-specific escape responses.
 
-## Multisensory integration neurons drive behavioral selection downstream of sensory neurons
+### Multisensory integration neurons drive behavioral selection downstream of sensory neurons
 
 In order to evaluate the functional and behavioral roles of neurons within a circuit, a comprehensive analysis of both upstream and downstream synaptic connectivity is necessary. Basin-2 and –4 neurons integrate different amounts of synaptic input from somatosensory neurons, other Basin neurons, feedforward/back inhibitory neurons, and projection neurons. Basin-4 neurons receive greater excitatory synaptic input compared to Basin-2 neurons, which have greater connectivity with local inhibitory neurons (Jovanic et al., 2016; Masson et al., 2020; Ohyama et al., 2015). Larger inhibitory connectivity of Basin-2 neurons likely arises from much broader downstream connectivity including several projection/descending neurons (A00c, A02o, A05q, A10j, TePn04), premotor neurons (A02m, A02n, Chair-1), descending feedback inhibitory neuron (SeIN128), local feedback neurons (Handle-a/-b), whereas Basin-4 downstream connectivity is restricted to limited set of neurons (A00c, A02o, Basin-3, Chair-1) (Zhu et al., 2024). These synaptic level differences in multisensory integration neurons underlie noxious stimuli-specific evoked responses and suggest that CIII md neuron-mediated responses primarily function through Basin-2 neurons and CIV md neuron-mediated environmental cues are processed via Basin-4 neurons.
 
@@ -152,39 +260,372 @@ Chemical nociception in Drosophila larvae primarily functions via CIV md neurons
 
 Despite the accumulating evidence that cold-evoked responses are primarily mediated by Basin-2, our Ca2+ analyses revealed that compared to Basin-2, Basin-4 neurons have much greater cold- or CIII md neuron-evoked Ca2+ responses. There are a few possible explanations for greater Basin-4 activity levels. Firstly, greater Basin-4 Ca+2 activity could be due to greater synaptic input from projection neurons (TePn04/05) and premotor neurons (DnB), which are both required for cold nociception and exhibit cold- or CIII md neuron-evoked Ca2+ responses (Figure 7, Figure 8—figure supplement 1; Masson et al., 2020). Secondly, reduced Basin-2 Ca2+ responses could be due to greater connectivity with feedback/feedforward inhibitory local neurons (Jovanic et al., 2016; Masson et al., 2020) or descending feedback neuron (SeIN128) (Zhu et al., 2024). Descending inhibitory, SeIN128, neuron functions in transitioning from rolling to fast crawling response in Drosophila larvae (Zhu et al., 2024). SeIN128 receives synaptic input from Basin-2 but not Basin-4, while providing feedback inhibition to Basins (−1,–2, –3), premotor neurons (A02m/n, Chair-1, and DnB) and projection neurons (A00c, A02o, and A05q) (Ohyama et al., 2015; Zhu et al., 2024). Thus, lower cold-/CIII md neuron-evoked Basin-2 neural activity could be due to greater feedback inhibitory input compared to Basin-4. Comparative Ca2+ imaging or electrophysiological analyses can further delineate the precise interplay between Basin-2 and –4 neurons in integrating sensory information across somatosensory modalities leading to distinct behavioral responses. However, to date, synaptic connectivity and behavioral analyses collectively indicate an initial sensory discrimination node amongst the Basin neurons, where downstream processing of CIII-mediated sensory input is conveyed through Basin-2 and its downstream connectivity. Meanwhile, CIV somatosensory information is transduced through the Basin-4 neuronal pathway.
 
-## Differential roles of pre-motor neurons lead to behavioral selection
+### Differential roles of pre-motor neurons lead to behavioral selection
 
 Animal locomotive behavioral responses are implemented through neurosecretory systems and muscle contractions evoked by motor neuron activity. Motor neurons integrate a conglomerate of neural impulses from premotor neurons, leading to appropriate muscle activation patterns to implement specific behavioral responses (Bellardita and Kiehn, 2015; Berkowitz et al., 2010; Carreira-Rosario et al., 2018; Green and Soffe, 1996; Huang and Zarin, 2022; Liao and Fetcho, 2008; Talpalar et al., 2013; Zarin et al., 2019). Recent work in premotor and motor neuron connectomics has provided evidence for both labeled line and combinatorial connectivity between promotor and motor neurons that give rise to co-active motor neuron states leading to selective muscle group activation (Cooney et al., 2023; Huang and Zarin, 2022; Zarin et al., 2019). Various Drosophila larval premotor neuron subtypes and/or motor pools have been implicated in locomotion, nociception, and innocuous mechanosensation (Burgos et al., 2018; Cooney et al., 2023; Huang and Zarin, 2022; Kohsaka et al., 2017; Kohsaka et al., 2014; Kohsaka et al., 2019; Yoshino et al., 2017; Zarin et al., 2019). Neural reconstruction efforts in Drosophila larvae have revealed that somatosensory (CIII md and CIV md) neurons are not directly connected to motor neurons, but rather feed into polysynaptic pathways leading to motor neurons via premotor neurons (such as the DnB, mCSI, and Chair-1 neurons studied here) (Cooney et al., 2023; Jovanic et al., 2019; Ohyama et al., 2015; Winding et al., 2023; Yoshino et al., 2017). Premotor neurons (DnB, mCSI, and Chair-1) that receive synaptic input from CIII md neurons are required for cold-evoked responses. However, only premotor neurons previously implicated in nociceptive escape responses, DnB and mCSI, can facilitate CIII-evoked CT responses (Burgos et al., 2018; Lopez-Bellido et al., 2019; Yoshino et al., 2017). Meanwhile, Chair-1 neurons, which are required for innocuous mechanosensation (Jovanic et al., 2019), do not facilitate CIII md neuron-mediated CT responses. We showed, with Ca2+ imaging, that Chair-1 neurons are not activated upon cold exposure. It remains unclear whether Chair-1 neuronal function is sufficient to drive specific sensory-evoked behaviors or requires a combinatorial pre-motor neuronal activity for generating evoked behavioral responses. Given the data, we speculate that Chair-1 neurons likely gate innocuous-to-noxious stimulus-evoked behaviors; however, additional functional studies are required to tease out how Chair-1 neurons function in behavioral selection.
 
-## Heterogeneity in thermosensory processing reflects variety of thermal stimuli
+### Heterogeneity in thermosensory processing reflects variety of thermal stimuli
 
 Animals detect changes in temperature through a variety of sensors that occupy and function in different spatiotemporal timescales. Thermosensory systems function to detect changes at the epidermal, brain and visceral levels, and these broad thermosensory inputs must be integrated to generate appropriate behavioral responses (Nakamura, 2018). The underlying neural circuitry for thermosensation differs based on body plan and type of thermosensation. In mice, cool and warm sensory signals, which are detected by TRP channels, are transmitted to the spinal dorsal horn, where distinct cool/warm pathways relay epidermal changes in temperature to thalamocortical regions for perception and discrimination (Nakamura, 2018). In Drosophila larvae and adults, thermotaxis occurs through temperature detection via dorsal organ ganglion (DOG) and antennal thermoreceptors, respectively (Frank et al., 2015; Gallio et al., 2011; Hernandez-Nunez et al., 2021; Klein et al., 2015; Liu et al., 2003). Investigations of circuit bases of thermotaxis have revealed different strategies for larval and adult systems. Adult antennal thermoreceptors have distinct hot or cold sensors, which project to the proximal antennal lobe (PAL), where hot and cold information is segregated into discrete regions (Gallio et al., 2011; Macpherson et al., 2015). Thermal coding properties of thermosensory projections neurons (tPNs), whose dendrites are located in PAL, include both slow/fast adapting tPNs and broadly/narrowly tuned tPNs (Frank et al., 2017). Drosophila larval thermosensory DOG contains both warm- and cool-sensing cells that are connected to individual cool or warm projection neurons (Hernandez-Nunez et al., 2021). DOG thermosensory information is further integrated by integration projection neurons (iPNs), which receive inputs from both warm and cool projection neurons (Hernandez-Nunez et al., 2021). The Drosophila larval noxious thermosensory system has distinct hot (CIV md) or cold (CIII md) sensing neurons (Babcock et al., 2009; Tracey et al., 2003; Turner et al., 2016). Larval somatosensory thermal inputs mediated by CIII md neurons are heavily integrated by second order neurons (Basins, DnB, A09e, etc.), where population coding leads to cold-evoked behavioral response. Noxious cold stimulus is encoded downstream of CIII md neurons by ascending neurons (A09e and TePns) that allow for systems-level integration of multiple thermal inputs including those from cool/warm sensitive larval DOG neural circuits and cold/heat information from CIII/CIV md neurons, respectively. Thermal information from the larval DOG and somatosensory neurons converges onto the mushroom body, where cool or warm projection neurons downstream of DOG and feed-forward projection neurons downstream of ascending neurons (A09e) synapse onto the same mushroom body output neuron (Eichler et al., 2017; Hernandez-Nunez et al., 2021; Winding et al., 2023). Thus far, ascending pathways into the brain have been characterized for larval cold nociception; however, descending output neurons responsible for cold-evoked behaviors remains unidentified. Diversity in processing thermosensory stimuli reflects heterogeneity at molecular, cellular, and circuit levels that collectively function to maintain proper thermal homeostasis and ultimately behavioral action selection. The Drosophila larval thermosensory system is well-suited to dissect mechanisms underlying central nervous system integration of varying spatial and functional thermosensory information by utilizing various molecules, sensory systems, and interconnected circuits for appropriate behavioral responses.
 
-## Muscle activity patterns underpin behavioral responses
+### Muscle activity patterns underpin behavioral responses
 
 Animals interact with the external environment by detecting external cues via sensory systems that are transduced to the CNS, where motor commands are generated to elicit stimulus-relevant muscle activity patterns leading to behavioral responses. Drosophila larval body wall muscle have unique behavior relevant muscle activity patterns for locomotion and nociceptive responses (rolling and CT;) (Cooney et al., 2023; Heckscher et al., 2012; Liu et al., 2023; Zarin et al., 2019, This work). In forward locomotion, posterior segments contract before anterior segments generating a forward contraction wave, where the longitudinal (dorsal and ventral) muscles contract first during the wave phase and lateral muscles contract during the interwave interval (Heckscher et al., 2012; Liu et al., 2023; Zarin et al., 2019). Exposure to nociceptive heat, mechanical or chemical cues larvae execute a corkscrew rolling response (Babcock et al., 2009; Hu et al., 2017; Hu et al., 2020; Hwang et al., 2012; Im et al., 2018; Im et al., 2015; Kaneko et al., 2017; Lopez-Bellido et al., 2019; Ohyama et al., 2013; Ohyama et al., 2015; Robertson et al., 2013; Tracey et al., 2003). In rolling response, multiple abdominal segments respond synchronously for executing a roll (Cooney et al., 2023). Furthermore, within a hemi-segment, the muscle activation pattern moves circumferentially during the roll durations, where DL, DO, and VL muscles are active during the bend phase and LT, VO, & VA muscles transition the larval hemi-segment into a stretch phase completing a roll (Cooney et al., 2023). In cold-evoked CT responses, anterior and posterior segments reach peak activation before central segments. Within a hemi-segment individual muscles groups have unique activation profiles, where upon cold exposure both dorsal and ventral muscles reach peak response before lateral muscles. Thus, we can conclude the following. For both cold-evoked CT and locomotion, longitudinal (dorsal and ventral) muscles contract before lateral muscles, whereas rolling response has a mixed activation pattern. The larval segments respond uniquely and are dependent on the behavior being generated. In forward locomotion, there is a propagating wave of activation from posterior to anterior; in rolling, there is a synchronous activation of segments; and in CT response, anterior/posterior segments contract before central. The underlying circuitry responsible for generating these three unique behaviors differs based on sensory, central, and motor processing modules.
 
 ## Methods
 
-## Fly strains
+### Fly strains
 
 All Drosophila melanogaster strains used in this study are listed in (Table 1). All Drosophila reagents were maintained on standard cornmeal-molasses-agar diet in 12:12 hr light-dark cycle at ~22°C. All experimental crosses were raised in 12:12 hr light-dark cycle at 29°C, unless otherwise stated. We used two separate CIII md neuron driver lines in this study:19–12GAL4, R83B04GAL4 and R83B04lexA.
 
-## Molecular cloning and transgenic generation of CIIIlexA
+**Table 1.**
+ Drosophila melanogaster strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Nomenclature</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+      <th>Insertion site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>w1118</td>
+      <td></td>
+      <td>BDSC</td>
+      <td>3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CaMPARI2</td>
+      <td>UAS-CaMPARI2</td>
+      <td>BDSC</td>
+      <td>78317</td>
+      <td>attP5</td>
+    </tr>
+    <tr>
+      <td>ChETA</td>
+      <td>UAS-ChETA::YFP</td>
+      <td>BDSC</td>
+      <td>36495</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>ChR2</td>
+      <td>UAS-ChR2</td>
+      <td>BDSC</td>
+      <td>9681</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>ChR2-H134R</td>
+      <td>UAS-H134R-ChR2</td>
+      <td>BDSC</td>
+      <td>28995</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>CsChrimson</td>
+      <td>LexAop2-CsChrimson.tdTomato</td>
+      <td>BDSC</td>
+      <td>82183</td>
+      <td>VK00005</td>
+    </tr>
+    <tr>
+      <td>CsChrimson</td>
+      <td>UAS-IVS-CsChrimson.mCherry</td>
+      <td>BDSC</td>
+      <td>82180</td>
+      <td>VK00005</td>
+    </tr>
+    <tr>
+      <td>GCaMP6m</td>
+      <td>UAS-GCaMP6m</td>
+      <td>BDSC</td>
+      <td>42748</td>
+      <td>attP40</td>
+    </tr>
+    <tr>
+      <td>Pan-neural CaMPARI</td>
+      <td>R57C10GAL4, UAS-CaMPARI</td>
+      <td>BDSC</td>
+      <td>58763</td>
+      <td>VK00040/VK00020</td>
+    </tr>
+    <tr>
+      <td>RCaMP</td>
+      <td>UAS-jRCaMP1a</td>
+      <td>BDSC</td>
+      <td>63792</td>
+      <td>VK00005</td>
+    </tr>
+    <tr>
+      <td>SynapGCaMP6f</td>
+      <td>Mhc-SynapGCaMP6f</td>
+      <td>BDSC</td>
+      <td>67739</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Muscle GCaMP +GtACR1</td>
+      <td>w;;44H10::GCaMP6f, UAS-GtACR1</td>
+      <td>Gift from Zarin Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TnT</td>
+      <td>UAS-TeTxLC.tnt-E2</td>
+      <td>BDSC</td>
+      <td>28837</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Ch</td>
+      <td>IAV - GAL4</td>
+      <td>BDSC</td>
+      <td>52273</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>CIII</td>
+      <td>19–12 - GAL4</td>
+      <td></td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>CIII</td>
+      <td>R83B04 - GAL4</td>
+      <td>BDSC</td>
+      <td>41309</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>CIII</td>
+      <td>R83B04 - lexA</td>
+      <td>This Study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CIII &gt;ChETA</td>
+      <td>19–12GAL4, UAS-ChETA::YFP</td>
+      <td>BDSC</td>
+      <td>36495</td>
+      <td>Chr 3,attP2</td>
+    </tr>
+    <tr>
+      <td>CIV</td>
+      <td>ppk - GAL4</td>
+      <td>BDSC</td>
+      <td>32079</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Mef2</td>
+      <td>Mef2-GAL4</td>
+      <td>BDSC</td>
+      <td>27390</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>EmptyGAL4’</td>
+      <td>w;;attP2</td>
+      <td>BDSC</td>
+      <td>68384</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>EmptyGAL4’’</td>
+      <td>w;attP40;attP2</td>
+      <td>Gift from Rubin Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A00c</td>
+      <td>R71A10 - GAL4</td>
+      <td>BDSC</td>
+      <td>39562</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>A01d3</td>
+      <td>SS02065 - splitGAL4</td>
+      <td>Gift from Nose Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A02e</td>
+      <td>R70C01 - GAL4</td>
+      <td>BDSC</td>
+      <td>39520</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>A02f</td>
+      <td>SS01792 - GAL4</td>
+      <td>Gift from Zlatic &amp; Ohyama Labs</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A02g</td>
+      <td>R36G02 - GAL4</td>
+      <td>BDSC</td>
+      <td>49939</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>A02o</td>
+      <td>MB120B - splitGAL4</td>
+      <td>Gift from Nose Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A05q</td>
+      <td>R47D07 - GAL4</td>
+      <td>BDSC</td>
+      <td>50304</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>A08n</td>
+      <td>R82E12 - GAL4</td>
+      <td>BDSC</td>
+      <td>40153</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>A09e</td>
+      <td>SS00878 - splitGAL4</td>
+      <td>Gift from Zlatic Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A27k</td>
+      <td>SS026694 - splitGAL4</td>
+      <td>Gift from Nose Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>A31k</td>
+      <td>SS04399 - splitGAL4</td>
+      <td>Gift from Zarin Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>All Basin</td>
+      <td>R72F11 - GAL4</td>
+      <td>BDSC</td>
+      <td>39786</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>Basin-1</td>
+      <td>R20B01 - GAL4</td>
+      <td>BDSC</td>
+      <td>48877</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>Basin-2</td>
+      <td>SS00739 - splitGAL4</td>
+      <td>Gift from Zlatic Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>Basin-4</td>
+      <td>SS00740 - splitGAL4</td>
+      <td>Gift from Zlatic Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>Chair-1</td>
+      <td>SS00911 - splitGAL4</td>
+      <td>Gift from Zlatic Lab</td>
+      <td></td>
+      <td>attP40;attP2</td>
+    </tr>
+    <tr>
+      <td>dILP7</td>
+      <td>ILP7 – GAL4</td>
+      <td>Gift from Jan Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DnB'</td>
+      <td>IT4051 - GAL4</td>
+      <td>Gift from Grueber Lab</td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>DnB''</td>
+      <td>IT412 - GAL4</td>
+      <td>BDSC</td>
+      <td>63300</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Goro</td>
+      <td>R69F06 - GAL4</td>
+      <td>BDSC</td>
+      <td>39497</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>mCSI</td>
+      <td>R94B10 - GAL4</td>
+      <td>BDSC</td>
+      <td>41325</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>R61A01/TePns</td>
+      <td>R61A01 - GAL4</td>
+      <td>BDSC</td>
+      <td>39269</td>
+      <td>attP2</td>
+    </tr>
+    <tr>
+      <td>D42</td>
+      <td>D42 – GAL4</td>
+      <td>BDSC</td>
+      <td>8816</td>
+      <td>Chr 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning and transgenic generation of CIIIlexA
 
 GMR83B04GAL4 was characterized as CIII md neuron driver using both optogenetics and visualization using membrane markers (Galindo et al., 2023; Himmel et al., 2023; Patel et al., 2022). The R83B04 enhancer containing entry vector was a gift from the FlyLight team at Janelia Research Campus, Ashburn, VA. We performed Gateway cloning to insert the R83B04 enhancer upstream of lexA. LR reaction was performed using R83B04 containing entry vector and lexA containing (pBPLexA::p65Uw) destination vector (Addgene: 26231). Transgenic fly generation was conducted by GenetiVision. R83B04lexA was inserted in the VK20 docking site using PhiC31 integrase-mediated transformation.
 
-## EM connectomics
+### EM connectomics
 
 All data for synaptic connectivity, circuit diagrams and wire frame projections of neural cell types were extracted from Neurophyla LMB Cambridge (https://neurophyla.mrc-lmb.cam.ac.uk/). Relevant primary literature sources are cited within the main text. Sensory neurons from abdominal segments 1–4 were analyzed and for the remaining cell types, all reconstructed neurons were included (date accessed: March 04, 2022).
 
-## Cold plate assay
+### Cold plate assay
 
 We assessed requirements of neurons downstream from peripheral sensory neurons in cold-evoked responses using the cold plate assay (Patel and Cox, 2017; Patel et al., 2022; Turner et al., 2016). GAL4 drivers for select neuronal subtypes were used to express the light chain of tetanus toxin (UAS-TNT). We used two sets of controls: w1118, genetic background control, and EmptyGAL4, which contains a GAL4 construct but no regulatory promoter (GAL4 only control). Genetic crosses were raised on standard cornmeal-molasses-agar diet and at 29°C. To assess cold-evoked behavioral responses of age-matched Drosophila third instar larvae, we exposed the ventral surface to noxious cold (10°C) temperatures. Briefly, using a brush we remove third instar larvae from food and place them on wet Kimwipe. Food debris is removed passively by allowing the larvae to freely locomote on wet Kimwipe. We place 6–8 larvae on a thin black metal plate that is subsequently placed on a pre-chilled (10°C) Peltier plate TE technologies Peltier plate (CP-031, TC-48–20, RS-100–12). Larval responses are recorded from above using Nikon DSLR (D5300). Changes in larval surface area were extracted using FIJI and Noldus Ethovision XT (GitHub, copy archived at Patel and CoxLabGSU, 2025; Patel et al., 2022) (https://github.com/CoxLabGSU/CaMPARI-intensity-and-cold-plate-assay-analysis/tree/AtitAPatel-cold_plate_assay). Next, we isolated individual larva from each video, removed the background, and used Ethovision to measure larval surface area. Using custom built r scripts, we compiled data from each larva and each genotype. Utilizing r, we calculated percent change in larval surface area (Area change = (AreaN – Average_Areabaseline)/ Average_Areabaseline*100). From the percent change in area dataset, we report three behavioral metrics: Average change in area, which is average percent change in area for the stimulus duration. We defined cold-evoked CT response as a change in area of –10% or less for at least 0.5 consecutive seconds. CT duration, time spent at or below –10% change in area. Lastly, percent CT response, which is cumulative percent of animals that CT for at least 0.5 consecutive seconds.
 
 Statistical analysis: We performed the following statistical tests for all cold plate assay data analysis. %CT response: Fisher’s exact with Benjamini-Hochberg for multiple comparison. We used r for performing comparisons of percent behavior response between genotypes, we used Benjamini-Hochberg multiple comparison correction. CT duration: Kruskal-Wallis with Benjamini, Krieger and Yekutieli for multiple comparisons. CT duration data are not normal. CT magnitude: One-way ANOVA with Holm-Šídák’s for multiple comparisons.
 
-## Neural activation via optogenetics
+### Neural activation via optogenetics
 
 We performed two types of neural activations to assess sufficiency for CT response: single downstream neural activation and co-activation, where we simultaneously activated CIII md neurons and individual downstream neurons. For optogenetic experiments in Drosophila, a light-sensitive co-factor all trans-retinal (ATR) is required. For all conditions, all adult animals in the genetic cross were placed in ATR (1500 µM) supplemented food and subsequently F1 progeny were also raised in food containing ATR and raised in dark. For control condition, we used an EmptyGAL4 containing GAL4 construct but no regulatory promoter. Optogenetic experiments were conducted using a similar setup as previously described (Patel et al., 2022). Briefly, we used principles of dark field microscopy to enhance signal to noise ratio and capture high resolution larval videos. We created a custom dark field stage, where a Canon DSLR T3i camera captures video from above. Neural activation is performed by two blue led lights that are controlled remotely using the Noldus control box (Thorlabs: DC4100, DC4100-hub, and two M470L3-C4 led light. Noldus: mini-IO box). Larval behaviors are directly captured using Noldus Ethovision XT software, which also controls blue led activation. All optogenetic experiments were conducted in a dimly lit room. Third instar Drosophila larva were removed from food plug and placed onto wet Kimwipe, where larval locomotion allowed for passive removal of food debris. We lightly sprayed water onto a thin glass plate, then placed a single larva for optogenetic stimulation. The glass plate was manually moved on XY-axis to keep larva in the field of view. The following stimulus paradigm was used: 5s of baseline (light off) and 5s of neural activation (blue led lights on).
 
@@ -196,7 +637,7 @@ Data compilation and analysis were performed in r using custom scripts. Optogene
 
 Statistical analysis: We performed the following statistical tests for all behavioral optogenetic data analysis. %CT peak response: Fisher’s exact with Benjamini-Hochberg for multiple comparison. We used r for performing comparisons of percent behavior response between genotypes, we used Benjamini-Hochberg multiple comparison correction. CT/immobility duration: Kruskal-Wallis with Benjamini, Krieger, and Yekutieli for multiple comparisons. CT duration data are not normal. CT/immobility magnitude: One-way ANOVA with Holm-Šídák’s for multiple comparisons.
 
-## CT behavior across life stages - cold plate assay
+### CT behavior across life stages - cold plate assay
 
 For assessing cold-evoked larval behavior across life stages, we developed a specialized behavior apparatus that improved to signal-to-noise ratios, allowed for similar stimulus magnitude between trial and across larval life stages, and an improved assay throughput. The apparatus consists of VWR circulating water chiller (model: MX7LR20), two aquarium mini-pumps (model: AD20P-1230D), custom 3D-printed water chamber with glass 1 inch glass walls, a remote control to activate the aquarium pumps (Syantek model: BHZ0320U-RF), three-way water valve (Malida model: 607569660968), iPad screen protector (Ailun model: B0BJQ24MK7), Canon R6 with RF50mm F1.8 and RF85mm F2 macro lens and led lights for illumination from all sides (Daybetter model: FLSL-DB-501215RGBUS). The larvae were removed and cleaned as described above, then placed on a thin transparent glass plate (screen protector). The glass plate bearing larvae is placed on a 3D-printed water chamber, then pre-chilled water is piped into the chamber using mini-aquarium pumps. After the water touches the bottom of the glass plate a three-way water valve is turned off and the chilled water remains in the 3D-printed water chamber providing cold stimulation to the larvae through the glass surface. At the end of the trial, the water valve is opened to drain the water into the VWR water chiller. For first and second instar larval assays, an 85 mm RF macro lens was used at different distances to increase magnification. A 50 mm RF lens was used to image third instar larval cold-evoked responses.
 
@@ -204,13 +645,13 @@ To quantitatively analyze the larval responses, we used slightly modified versio
 
 Statistical analysis: We performed the following statistical tests for all behavioral data analysis. CT magnitude and duration: One-way ANOVA with Holm-Šídák’s for multiple comparisons.
 
-## CT behavior across life stages – optogenetic assay
+### CT behavior across life stages – optogenetic assay
 
 To evaluate CIII-evoked CT responses across life stages, we utilized optogenetic neural activation of CIII md neurons using ChR2-H134R±ATR. In order to maintain consistent blue-light-based neural activation, we used Canon R6 camera mounted on AxioScope V16 Zeiss microscope for visualizing Drosophila larvae at life stage specific magnification while applying oblique blue light exposure (Thorlabs: DC4100, DC4100-hub, and one M470L3-C4 led light). We recorded larva responses without blue light (pre-stimulus) for 5s and 5s of blue light exposure. To quantitatively analyze larval responses, we used a similar method as described above for neural activation.
 
 Statistical analysis: We performed the following statistical tests for all behavioral optogenetic data analysis. CT magnitude and duration: One-way ANOVA with Holm-Šídák’s for multiple comparisons.
 
-## Cold-evoked Ca2+ responses of muscles in Drosophila larvae
+### Cold-evoked Ca2+ responses of muscles in Drosophila larvae
 
 For visualizing cold-evoked Ca2+ responses of larval muscles in each segment, we expressed jRCaMP1a in Drosophila larval muscles using mef2GAL4 and motor neuron silencing using GtACR1 with muscle Ca2+ imaging. Cold stimulus was delivered using the CherryTemp temperature controller (Cherry Biotech: Cherry Temp dual channel temperature control), which allows for rapid changes in temperature. To analyze Drosophila larval cold-evoked segmental response, we used AxioScope V16 Zeiss microscope with a Canon R6 camera mounted. In vivo jRCaMP1a responses were observed in third instar larva, where the larva was mounted with dorsal midline centered on the top. Using FIJI, changes in jRCaMP1a fluorescence intensities in each segment were quantified with manually drawn regions of interest (ROI). We report changes in jRCaMP1a fluorescence as ΔF/F = (F-Fprestimulus)/ Fprestimulus*100 and average ΔF/F for each larval segment.
 
@@ -222,7 +663,7 @@ We used the above-mentioned Cherry Temp. dual channel temperature control system
 
 Statistical analysis: Delay in mouth hook retraction - Mann-Whitney test. For motor neuron silencing assay - Two-way ANOVA with Holm-Šídák’s for multiple comparisons. For pharmacology assay - Mann-Whitney test for non-parametric data and Welch’s t-test for parametric data.
 
-## CaMPARI imaging
+### CaMPARI imaging
 
 Post-synaptic neuron CaMPARI2 imaging: For assessing cold-evoked Ca2+ responses of sensory neurons and CIII md neuron downstream neurons, we utilized CaMPARI2, which upon photoconverting light and high intracellular Ca2+ stably photoconverts fluorescence from green to red. We performed the cold plate assay as described above. For the stimulus condition, the Peltier plate was set to noxious cold (6°C) temperature, and for the control condition, the Peltier plate was turned off (room temperature). We placed individual third instar larvae onto the Peltier plate and simultaneously exposed the animal to photoconverting light for 20 seconds. CaMPARI2 fluorescence was imaged in live, intact larvae via confocal microscopy. Zeiss LSM 780 Axio examiner microscope, Plan-Apochromat 20x objective, and excitation wavelengths of 561nm and 488nm were used to image larval ventral nerve cord or peripheral sensory neurons. We mounted live intact larva onto microscope slide and immobilized the larva by placing a coverslip, as previously described (Im et al., 2018; Patel and Cox, 2017; Patel et al., 2022; Turner et al., 2016). Three-dimensional CaMPARI2 fluorescence in ventral nerve cord localized downstream neurons was imaged at 607.28µm x 607.28µm (XY resolution) and 2µm z-slices. ROIs were identified and area normalized fluorescence intensity for red and green signals were obtained via Imaris 9.5 software. CaMPARI responses are reported as a ratio of Fred/Fgreen. Statistical comparisons: Parametric data – Welch’s t-test and non-parametric data – Mann-Whitney test.
 
@@ -234,10 +675,10 @@ Sholl intensity analysis – Sholl intensity analysis was performed using a set 
 
 Ventral nerve cord CaMPARI imaging: We utilized Pan-neural (R57C10GAL4>CaMPARI) driver to visualize ventral nerve cord Ca2+ responses to various stimuli including innocuous touch, noxious heat (45°C) and noxious cold (6°C). Stimulus and photoconverting light were delivered for 20s. Whole ventral nerve cord was imaged at 607.28µm x 607.28 µm (XY resolution) and 2 µm z-slices. The rest of the stimulus delivery and imaging was similar to previously described CaMPARI experiments. No statistical analyses were performed.
 
-## CIII activation and second-order neuron GCaMP imaging
+### CIII activation and second-order neuron GCaMP imaging
 
 CIII md neuron-evoked responses in downstream neurons were evaluated by using optogenetics and GCaMP. We expressed lexAop-CsCrimson in CIII md neurons using R83B04lexA and used downstream neuron-specific GAL4 to drive expression of GCaMP6m. For the experimental condition, all adult animals in the genetic cross were reared in ATR (1500 µM) supplemented food, and subsequently, F1 progeny were also raised in food containing ATR. For control condition, adult flies and F1 progeny were raised in standard cornmeal-molasses-agar diet. Both control and experimental crosses were reared in 24 hr dark. We mounted live intact third instar larvae in between microscope slide and a coverslip. Larval ventral nerve cord and cells of interest were located using epifluorescence on Zeiss LSM 780 confocal microscope. Larval GCaMP6 responses were allowed to return to baseline for at least 2 minutes. Time-lapse acquisition was imaged at 250.06µm x 250.06 µm x 307.2ms using 488 nm laser wavelength. CIII md neural activation was performed using two oblique 617 nm leds (Thorlabs M617F2 and M79L01) that were manually operated using Thorlabs led controller (Thorlabs DC4100 and DC4100-hub). We performed three sequential neural activations using the following paradigm: Baseline light off (30s)->neural activation (617 nm for 15s)->light off (30s)->neural activation (617 nm for 15s)->light off (30s)->neural activation (617 nm for 15s)->light off (30s). Time-lapse videos were stabilized using Stack reg – Rigid transformation in FIJI (Linkert et al., 2010; Schindelin et al., 2012; Thévenaz et al., 1998). ROI were manually drawn and area normalized GCaMP fluorescence over time was exported. We report changes in GCaMP6m fluorescence as ΔF/F = (F-Fprestimulus)/ Fprestimulus*100 and max ΔF/F for each of the three neural activation epochs. Statistical comparisons: Parametric data – Welch’s t-test and non-parametric data – Mann-Whitney test.
 
-## Statistics and data visualization
+### Statistics and data visualization
 
 Statistical analyses were performed using r (Fisher’s exact test) and GraphPad Prism. All graphical visualization of the data were created using Prism GraphPad. Details on specific statistical tests are listed in the respective methods section.

@@ -12,19 +12,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00te3t702 Department of Epidemiology and Biostatistics, College of Public Health, University of Georgia Athens, Georgia United States
-2. https://ror.org/00te3t702 Department of Genetics, University of Georgia Athens, Georgia United States
-3. https://ror.org/03czfpz43 Department of Biostatistics and Bioinformatics, Emory University Atlanta, Georgia United States
-4. https://ror.org/00te3t702 Department of Health Policy and Management, College of Public Health, University of Georgia Athens, Georgia United States
-5. https://ror.org/05bnh6r87 Division of Nutritional Sciences, Cornell University Ithaca, New York United States
-6. https://ror.org/00hj54h04 Dell Pediatric Research Institute and the Depts of Pediatrics, of Nutrition, and of Chemistry, University of Texas at Austin Austin, Texas United States
-7. https://ror.org/00te3t702 Institute of Bioinformatics, University of Georgia Athens, Georgia United States
+1. Department of Epidemiology and Biostatistics, College of Public Health, University of Georgia Athens, Georgia United States ([ROR:00te3t702](https://ror.org/00te3t702))
+2. Department of Genetics, University of Georgia Athens, Georgia United States ([ROR:00te3t702](https://ror.org/00te3t702))
+3. Department of Biostatistics and Bioinformatics, Emory University Atlanta, Georgia United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+4. Department of Health Policy and Management, College of Public Health, University of Georgia Athens, Georgia United States ([ROR:00te3t702](https://ror.org/00te3t702))
+5. Division of Nutritional Sciences, Cornell University Ithaca, New York United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+6. Dell Pediatric Research Institute and the Depts of Pediatrics, of Nutrition, and of Chemistry, University of Texas at Austin Austin, Texas United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+7. Institute of Bioinformatics, University of Georgia Athens, Georgia United States ([ROR:00te3t702](https://ror.org/00te3t702))
 
 † Corresponding author
 
 ## Abstract
 
-Circulating omega-3 and omega-6 polyunsaturated fatty acids (PUFAs) have been associated with various chronic diseases and mortality, but results are conflicting. Few studies examined the role of omega-6/omega-3 ratio in mortality. We investigated plasma omega-3 and omega-6 PUFAs and their ratio in relation to all-cause and cause-specific mortality in a large prospective cohort, the UK Biobank. Of 85,425 participants who had complete information on circulating PUFAs, 6461 died during follow-up, including 2794 from cancer and 1668 from cardiovascular disease (CVD). Associations were estimated by multivariable Cox proportional hazards regression with adjustment for relevant risk factors. Risk for all three mortality outcomes increased as the ratio of omega-6/omega-3 PUFAs increased (all P trend <0.05). Comparing the highest to the lowest quintiles, individuals had 26% (95% CI, 15–38%) higher total mortality, 14% (95% CI, 0–31%) higher cancer mortality, and 31% (95% CI, 10–55%) higher CVD mortality. Moreover, omega-3 and omega-6 PUFAs in plasma were all inversely associated with all-cause, cancer, and CVD mortality, with omega-3 showing stronger effects. Using a population-based cohort in UK Biobank, our study revealed a strong association between the ratio of circulating omega-6/omega-3 PUFAs and the risk of all-cause, cancer, and CVD mortality. Research reported in this publication was supported by the National Institute of General Medical Sciences of the National Institute of Health under the award number R35GM143060 (KY). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
+Background:Circulating omega-3 and omega-6 polyunsaturated fatty acids (PUFAs) have been associated with various chronic diseases and mortality, but results are conflicting. Few studies examined the role of omega-6/omega-3 ratio in mortality.Methods:We investigated plasma omega-3 and omega-6 PUFAs and their ratio in relation to all-cause and cause-specific mortality in a large prospective cohort, the UK Biobank. Of 85,425 participants who had complete information on circulating PUFAs, 6461 died during follow-up, including 2794 from cancer and 1668 from cardiovascular disease (CVD). Associations were estimated by multivariable Cox proportional hazards regression with adjustment for relevant risk factors.Results:Risk for all three mortality outcomes increased as the ratio of omega-6/omega-3 PUFAs increased (all Ptrend <0.05). Comparing the highest to the lowest quintiles, individuals had 26% (95% CI, 15–38%) higher total mortality, 14% (95% CI, 0–31%) higher cancer mortality, and 31% (95% CI, 10–55%) higher CVD mortality. Moreover, omega-3 and omega-6 PUFAs in plasma were all inversely associated with all-cause, cancer, and CVD mortality, with omega-3 showing stronger effects.Conclusions:Using a population-based cohort in UK Biobank, our study revealed a strong association between the ratio of circulating omega-6/omega-3 PUFAs and the risk of all-cause, cancer, and CVD mortality.Funding:Research reported in this publication was supported by the National Institute of General Medical Sciences of the National Institute of Health under the award number R35GM143060 (KY). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
 
 ## Introduction
 
@@ -34,23 +34,23 @@ It has been suggested that the high omega-6/omega-3 ratio in Western diets, 20:1
 
 ## Methods
 
-## Study population
+### Study population
 
 The UK Biobank study is a prospective, population-based cohort study in the United Kingdom (Sudlow et al., 2015). Between 2006 and 2010, 502,384 prospective participants, aged 40–69, in 22 assessment Centers throughout the UK were recruited for the study. The population information was collected through a self-completed touch-screen questionnaire; brief computer-assistant interview; physical and functional measures; and blood, urine, and saliva collection during the assessment visit. Participants with cancer (n=37,736) or CVD (n=100,972), those who withdrew from the study (n=879), and those with incomplete data on the plasma omega-6/omega-3 ratio (n=277,372) were excluded from this study, leaving 85,425 participants, 6461 died during follow-up, including 2794 from cancer and 1668 from CVD.
 
-## Ascertainment of exposure
+### Ascertainment of exposure
 
 Metabolomic profiling of plasma samples was performed with high-throughput nuclear magnetic resonance (NMR) spectroscopy. At the time of this analysis (15 Mar 2023), UK Biobank released the Phase 1 metabolomic dataset, which covered a random selection of 118,461 plasma samples from the baseline recruitment. These samples were collected between 2007 and 2010 and had been stored in −80 °C freezers, while the NMR measurements took place between 2019 and 2020. Detailed descriptions can be found in previous publications about plasma sample preparation, NMR spectroscopy setup, quality control protocols, correction for sample dilution, verification with duplicate samples and internal controls, and comparisons with independent measurements from clinical chemistry assays (Sudlow et al., 2015; Julkunen et al., 2023; Würtz et al., 2017). Five PUFAs-related biomarkers were directly measured in absolute concentration units (mmol/L), including total PUFAs, total omega-3 PUFAs, total omega-6 PUFAs, docosahexaenoic acid (DHA), and linoleic acid (LA). Of note, DHA is one type of omega-3 PUFAs, and LA is one type of omega-6 PUFAs. Our primary exposure of interest, the omega-6/omega-3 ratio, was calculated based on their absolute concentrations. We also performed supplemental analysis for four exposures, the percentages of omega-3 PUFAs, omega-6 PUFAs, DHA, and LA in total fatty acids (omega-3%, omega-6%, DHA%, and LA%), which were calculated by dividing their absolute concentrations by that of total fatty acids.
 
-## Ascertainment of outcome
+### Ascertainment of outcome
 
 The date and cause of death were identified through the death registries of the National Health Service (NHS) Information Centre for participants from England and Wales and the NHS Centre Register Scotland for participants from Scotland (Sudlow et al., 2015). At the time of the analysis (March 15, 2023), we had access to the most up-to-date mortality dataset (Version: December 2022), which had the date of death up to 12 November 2021. Therefore, follow-up time was calculated as the time between the date of entering the assessment centre and this date, or the date of death, whichever happened first. The underlying cause of death was assigned and coded in vital registries according to the International Classification of Diseases, 10th revision (ICD-10). CVD mortality was defined using codes I00-I99, and cancer mortality was defined using codes C00-D48. To exclude those who had cancer at baseline, we used the overall cancer incidence information based on diagnoses in cancer registers derived from the Health and Social Care Information Centre and the NHS Central Register that were coded based on ICD-9 and ICD-10 codes. The information about CVD incidence was retrieved from Hospital inpatient data and Death Register records that were coded according to ICD-9 and ICD-10 codes, and self-reported medical condition.
 
-## Ascertainment of covariates
+### Ascertainment of covariates
 
 The baseline questionnaire included detailed information on several possible confounding variables: demographic factors (age, sex, assessment centre, ethnicity), socioeconomic status (Townsend Deprivation Index), lifestyle habits (alcohol assumption, smoking status, body mass index (BMI), physical activity, comorbidities (including hypertension, diabetes, and longstanding illness)), and other supplementation (fish-oil supplementation). The Townsend Deprivation Index, used as an indicator of socioeconomic status, is retrieved directly from the UK Biobank. BMI was defined as the body mass divided by the square of the body height and was expressed in units of kg/m2. Comorbidities, including hypertension, diabetes, and longstanding illness, were self-reported at baseline. Longstanding illness refers to any long-standing illness, disability, or infirmity, without other specific information. We also retrieved the information on dietary PUFA intakes and serum biomarkers for secondary analysis. Dietary PUFAs were estimated based on the 24 hr dietary recall (Perez-Cornago et al., 2021). The percentage of dietary omega-3 and omega-6 PUFAs were calculated as the corresponding absolute dietary PUFAs divided by summation of dietary monounsaturated fatty acids, saturated fatty acids, omega-3 fatty acids, and omega-6 fatty acids. The biochemistry markers were measured in the blood samples collected at recruitment.
 
-## Statistical analysis
+### Statistical analysis
 
 We summarized and compared the characteristics of the participants across quintiles of the omega-6/omega-3 ratio at baseline using descriptive statistics. Pearson’s Chi-squared test and ANOVA test were used to compare the demographic characteristics across quintiles, respectively, for categorical variables and continuous variables. To investigate associations of the ratio with all-cause and cause-specific mortality, we used multivariable Cox proportional hazards regression models to calculate hazard ratios (Chua et al., 2012) and their 95% confidence intervals (CI). The proportional hazards assumption was not violated based on Schoenfeld residuals. We analyzed the ratio as continuous and categorical variables (i.e. quintiles). For all trend tests, we used the median value of each quintile as a continuous variable in the models. Potential nonlinear associations were assessed semi-parametrically using restricted cubic splines (4 knots were used in regression splines; Durrleman and Simon, 1989).
 
@@ -62,15 +62,515 @@ We also conducted several sensitivity analyses. First, to assess whether the ass
 
 ## Results
 
-## Baseline characteristics
+### Baseline characteristics
 
 In the analytic cohort of 85,425 participants, over a mean of 12.7 years of follow-up, 6461 died, including 2794 from cancer and 1668 from CVD. The baseline characteristics of the participants across quintiles of the ratio of omega-6/omega-3 were summarized in Table 1. Study participants were, on average, 56 years old and 90% White. Those in the higher ratio quintiles were more likely to be younger, male, and current smokers, but less likely to have comorbidities and take fish oil supplementation.
 
-## Main results
+**Table 1.**
+ Selected participaneline across quintiles of the plasma omega-6/omega-3 PUFAs ratio (n=85,425).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Omega-6/omega-3 ratio quintiles</th>
+    </tr>
+    <tr>
+      <th>Characteristics*</th>
+      <th>1 (median = 5.9)(n=17,085)</th>
+      <th>2 (median = 7.6) (n=17,085)</th>
+      <th>3 (median = 9.1) (n=17,085)</th>
+      <th>4 (median = 11.0)(n=17,085)</th>
+      <th>5 (median = 14.8) (n=17,085)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>58.6 (7.5)</td>
+      <td>57.2 (7.9)</td>
+      <td>55.7 (8.2)</td>
+      <td>54.7 (8.3)</td>
+      <td>53.4 (8.2)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Sex (male%)</td>
+      <td>40.3</td>
+      <td>44.9</td>
+      <td>47.5</td>
+      <td>49.4</td>
+      <td>52.8</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td colspan="7">Ethnicity(n%)</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>15,375 (90.4%)</td>
+      <td>15,486 (91.0%)</td>
+      <td>15,494 (91.1%)</td>
+      <td>15,467 (91.1%)</td>
+      <td>15,420 (90.7%)</td>
+      <td>0.384‡</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>113 (0.7%)</td>
+      <td>99 (0.6%)</td>
+      <td>105 (0.6%)</td>
+      <td>92 (0.5%)</td>
+      <td>116 (0.7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>673 (4.0%)</td>
+      <td>639 (3.8%)</td>
+      <td>663 (3.9%)</td>
+      <td>653 (3.8%)</td>
+      <td>659 (3.9%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>844 (5.0%)</td>
+      <td>786 (4.6%)</td>
+      <td>742 (4.4%)</td>
+      <td>773 (4.6%)</td>
+      <td>810 (4.8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>80</td>
+      <td>75</td>
+      <td>81</td>
+      <td>100</td>
+      <td>80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>27.0 (4.4)</td>
+      <td>27.3 (4.5)</td>
+      <td>27.3 (4.7)</td>
+      <td>27.3 (4.8)</td>
+      <td>26.9 (5.0)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>54</td>
+      <td>64</td>
+      <td>55</td>
+      <td>58</td>
+      <td>71</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TDI</td>
+      <td>–1.6 (3.0)</td>
+      <td>–1.5 (3.0)</td>
+      <td>–1.4 (3.1)</td>
+      <td>–1.2 (3.1)</td>
+      <td>–0.9 (3.2)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>17</td>
+      <td>24</td>
+      <td>24</td>
+      <td>28</td>
+      <td>22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Smoking status (n%)</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>9426 (55.5%)</td>
+      <td>9272 (54.6%)</td>
+      <td>9424 (55.4%)</td>
+      <td>9400 (55.3%)</td>
+      <td>9214 (54.2%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>6402 (37.7%)</td>
+      <td>6194 (36.5%)</td>
+      <td>5772 (34.0%)</td>
+      <td>5492 (32.3%)</td>
+      <td>4951 (29.1%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>1,162 (6.8%)</td>
+      <td>1,526 (9.0%)</td>
+      <td>1,802 (10.6%)</td>
+      <td>2,104 (12.4%)</td>
+      <td>2,832 (16.7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>95</td>
+      <td>93</td>
+      <td>87</td>
+      <td>89</td>
+      <td>88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Alcohol status (n%)</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>631 (3.7%)</td>
+      <td>676 (4.0%)</td>
+      <td>655 (3.8%)</td>
+      <td>755 (4.4%)</td>
+      <td>974 (5.7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>536 (3.1%)</td>
+      <td>554 (3.2%)</td>
+      <td>535 (3.1%)</td>
+      <td>617 (3.6%)</td>
+      <td>835 (4.9%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>15,877 (93.2%)</td>
+      <td>15,822 (92.8%)</td>
+      <td>15,847 (93.0%)</td>
+      <td>15,664 (91.9%)</td>
+      <td>15,221 (89.4%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>41</td>
+      <td>33</td>
+      <td>48</td>
+      <td>49</td>
+      <td>55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="6">Physical activity (n%)</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>2422 (17.4%)</td>
+      <td>2602 (18.8%)</td>
+      <td>2653 (19.1%)</td>
+      <td>2617 (19.0%)</td>
+      <td>2613 (18.9%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Moderate</td>
+      <td>5879 (42.2%)</td>
+      <td>5762 (41.5%)</td>
+      <td>5712 (41.1%)</td>
+      <td>5533 (40.1%)</td>
+      <td>5327 (38.6%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>5635 (40.4%)</td>
+      <td>5506 (39.7%)</td>
+      <td>5545 (39.9%)</td>
+      <td>5654 (41.0%)</td>
+      <td>5854 (42.4%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>3149</td>
+      <td>3215</td>
+      <td>3175</td>
+      <td>3281</td>
+      <td>3291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fish oil supplementation (Yes%)</td>
+      <td>48.1</td>
+      <td>37.7</td>
+      <td>29.6</td>
+      <td>22.7</td>
+      <td>15.5</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>50</td>
+      <td>47</td>
+      <td>77</td>
+      <td>82</td>
+      <td>71</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Comorbidity (Yes%)</td>
+      <td>38.6</td>
+      <td>37.3</td>
+      <td>34.2</td>
+      <td>33.8</td>
+      <td>33.0</td>
+      <td>&lt;0.001‡</td>
+    </tr>
+    <tr>
+      <td>Plasma omega-3 percentage</td>
+      <td>6.6 (1.4)</td>
+      <td>4.9 (0.5)</td>
+      <td>4.2 (0.4)</td>
+      <td>3.5 (0.3)</td>
+      <td>2.6 (0.5)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Plasma omega-6 percentage</td>
+      <td>36.3 (3.7)</td>
+      <td>37.4 (3.4)</td>
+      <td>38.2 (3.3)</td>
+      <td>39.1 (3.2)</td>
+      <td>40.2 (3.1)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Plasma DHA percentage</td>
+      <td>2.8 (0.8)</td>
+      <td>2.1 (0.5)</td>
+      <td>1.9 (0.4)</td>
+      <td>1.7 (0.4)</td>
+      <td>1.5 (0.4)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Plasma LA percentage</td>
+      <td>27.0 (3.3)</td>
+      <td>28.4 (3.1)</td>
+      <td>29.3 (3.0)</td>
+      <td>30.2 (3.0)</td>
+      <td>31.3 (3.1)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Dietary omega-3 percentage</td>
+      <td>3.6 (1.8)</td>
+      <td>3.2 (1.4)</td>
+      <td>3.0 (1.3)</td>
+      <td>2.9 (1.2)</td>
+      <td>2.7 (1.0)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>9355</td>
+      <td>9628</td>
+      <td>9857</td>
+      <td>9974</td>
+      <td>10,288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dietary omaga-6 percentage</td>
+      <td>16.8 (4.6)</td>
+      <td>16.5 (4.4)</td>
+      <td>16.6 (4.6)</td>
+      <td>16.5 (4.7)</td>
+      <td>16.5 (4.8)</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Missing (n)</td>
+      <td>9355</td>
+      <td>9628</td>
+      <td>9857</td>
+      <td>9974</td>
+      <td>10,288</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*All variables measured at baseline are presented as mean (SD) unless otherwise specified.†From the ANOVA test for continuous variables.‡From the Pearson’s Chi-squared test for categorical variables._
+
+### Main results
 
 The associations of the omega-6/omega-3 ratio with all-cause and cause-specific mortality were presented in Table 2. A higher ratio was strongly associated with higher mortality from all causes, cancer, and CVD (Ptrend <0.05 for all three). In the fully adjusted models that considered the ratio as a continuous variable, every unit increase in the ratio corresponded to 2%, 1%, and 2% higher risk in all-cause, cancer, and CVD mortality, respectively. When comparisons were made between the highest and the lowest quintile of the omega-6/omega-3 ratio, there were 26%, 14%, and 31% increased risk for all-cause, cancer, and CVD mortality, respectively.
 
-## Stratified analysis
+**Table 2.**
+ Associations* of the plasma omega-6/omega-3 PUFAs ratio with all-cause, cancer, and CVD mortality risk in the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="4">Omega ratio variable forms</th>
+      <th colspan="10">Causes of death</th>
+    </tr>
+    <tr>
+      <th colspan="3">All-cause</th>
+      <th colspan="3">Cancer</th>
+      <th colspan="4">Cardiovascular diseases</th>
+    </tr>
+    <tr>
+      <th>Number of deaths</th>
+      <th>Partially adjusted associations†</th>
+      <th>Fully adjusted associations‡</th>
+      <th>Number of deaths</th>
+      <th>Partially adjusted associations†</th>
+      <th>Fully adjusted associations‡</th>
+      <th>Number of deaths</th>
+      <th colspan="2">Partially adjusted associations†</th>
+      <th>Fully adjusted associations‡</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>HR(95%CI)</th>
+      <th>HR(95%CI)</th>
+      <th></th>
+      <th>HR(95%CI)</th>
+      <th>HR(95%CI)</th>
+      <th></th>
+      <th>HR(95%CI)</th>
+      <th colspan="2">HR(95%CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Continuous</td>
+      <td>6461</td>
+      <td>1.02(1.02–1.03)</td>
+      <td>1.02(1.02–1.03)</td>
+      <td>2794</td>
+      <td>1.02(1.01–1.03)</td>
+      <td>1.01(1.00–1.02)</td>
+      <td>1668</td>
+      <td>1.02(1.01–1.03)</td>
+      <td colspan="2">1.02(1.01–1.03)</td>
+    </tr>
+    <tr>
+      <td>Quintiles(median)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>1 (5.9)</td>
+      <td>1348</td>
+      <td>1.00 (ref)</td>
+      <td>1.00 (ref)</td>
+      <td>593</td>
+      <td>1.00 (ref)</td>
+      <td>1.00 (ref)</td>
+      <td>369</td>
+      <td>1.00 (ref)</td>
+      <td colspan="2">1.00 (ref)</td>
+    </tr>
+    <tr>
+      <td>2 (7.6)</td>
+      <td>1256</td>
+      <td>1.00(0.92–1.08)</td>
+      <td>0.96(0.88–1.05)</td>
+      <td>563</td>
+      <td>1.02(0.91–1.15)</td>
+      <td>0.98(0.86–1.12)</td>
+      <td>315</td>
+      <td>0.90(0.77–1.05)</td>
+      <td colspan="2">0.89(0.75–1.06)</td>
+    </tr>
+    <tr>
+      <td>3 (9.1)</td>
+      <td>1236</td>
+      <td>1.06(0.98–1.15)</td>
+      <td>1.01(0.93–1.11)</td>
+      <td>543</td>
+      <td>1.08(0.96–1.21)</td>
+      <td>0.99(0.87–1.13)</td>
+      <td>321</td>
+      <td>0.97(0.84–1.13)</td>
+      <td colspan="2">0.97(0.81–1.16)</td>
+    </tr>
+    <tr>
+      <td>4 (11.0)</td>
+      <td>1252</td>
+      <td>1.14(1.06–1.23)</td>
+      <td>1.09(1.00–1.19)</td>
+      <td>548</td>
+      <td>1.16(1.03–1.31)</td>
+      <td>1.12(0.98–1.27)</td>
+      <td>306</td>
+      <td>0.98(0.84–1.15)</td>
+      <td colspan="2">1.02(0.86–1.22)</td>
+    </tr>
+    <tr>
+      <td>5 (14.8)</td>
+      <td>1369</td>
+      <td>1.34(1.24–1.45)</td>
+      <td>1.26(1.15–1.38)</td>
+      <td>547</td>
+      <td>1.27(1.12–1.43)</td>
+      <td>1.14(1.00–1.31)</td>
+      <td>357</td>
+      <td>1.20(1.04–1.40)</td>
+      <td colspan="2">1.31(1.10–1.55)</td>
+    </tr>
+    <tr>
+      <td>Ptrend</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.011</td>
+      <td></td>
+      <td>0.002</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*From Cox proportional hazards regression.†Adjusted for age (years; continuous), sex (male, female), race (White, Black, Asian, Others), Townsend deprivation index (continuous), assessment centre.‡Adjusted for age (years; continuous), sex (male, female), race (White, Black, Asian, Others), Townsend deprivation index (continuous), assessment centre, BMI (kg/m2; continuous), smoking status (never, previous, current), alcohol intake status (never, previous, current), physical activity (low, moderate, high), and comorbidities (yes, no).CI, confidence interval; HR, hazards ratio; ref, reference._
+
+### Stratified analysis
 
 The fully adjusted associations of the omega-6/omega-3 ratio with all-cause mortality revealed that compared to the lowest quintile, the highest quintile has strong, statistically significant associations with elevated risk within all categories of age, sex, TDI, BMI, comorbidities, physical activity, and smoking status (Figure 1, Supplementary file 2: Table S2), except in those aged less than 58 years old and BMI less than 25. The estimated associations with all-cause mortality were stronger in current smokers (P for interaction <0.01; Figure 1, Supplementary file 2). For cancer and CVD mortality, they also tended to be stronger among current smokers but did not reach statistical significance (P for interaction = 0.13 and 0.12, respectively). The associations with CVD mortality tended to be stronger among participants without comorbidities (P for interaction <0.01). No significant interactions were found for other risk factors (Figure 2).
 
@@ -82,7 +582,7 @@ The fully adjusted associations of the omega-6/omega-3 ratio with all-cause mort
 
 **Figure 2.:** Results were adjusted for age (years; continuous), sex (male, female), race (White, Black, Asian, Others), Townsend deprivation index (continuous), assessment centre, BMI (kg/m2; continuous), smoking status (never, previous, current), alcohol intake status (never, previous, current), physical activity (low, moderate, high), and comorbidities (yes, no).
 
-## Restricted cubic spline analysis
+### Restricted cubic spline analysis
 
 Restricted cubic spline analysis suggested significant positive associations of the omega-6/omega-3 ratio with all-cause, cancer, and CVD mortality (p<0.05 for all three outcomes, Figure 3). Potential nonlinearity in these positive associations was identified for all-cause mortality (p<0.05) and CVD mortality (p<0.05) but not for cancer mortality (p=0.12). The strength of the relationship between the ratio and all-cause mortality appears to remain at a relatively low level before it starts to increase quickly after the ratio exceeds 8. A similar trend with higher uncertainties was observed for CVD mortality.
 
@@ -90,15 +590,15 @@ Restricted cubic spline analysis suggested significant positive associations of 
 
 **Figure 3.:** Hazard ratios and omega ratios are presented in the vertical and horizontal axis, respectively. The best estimates and their confidence intervals are presented as solid red lines and dotted black lines, respectively. The ratio 4 was selected as a reference level, and the x-axis depicts the ratio from 0 to 40. Potential nonlinearity was identified for all-cause mortality (p<0.05) and CVD-caused mortality (p<0.05), but not for cancer-caused mortality (p=0.12). All HRs are adjusted for age (years; continuous), sex (male, female), race (White, Black, Asian, Others), Townsend deprivation index (continuous), assessment centre, BMI (kg/m2; continuous), smoking status (never, previous, current), alcohol intake status (never, previous, current), physical activity (low, moderate, high), and comorbidities (yes, no).
 
-## Omega-3, Omega-6, Joint analysis, and comparison with dietary PUFAs
+### Omega-3, Omega-6, Joint analysis, and comparison with dietary PUFAs
 
 We further performed analyses to assess whether the associations of the omega-6/omega-3 ratio with mortality outcomes were primarily driven by omega-3 or omega-6 fatty acids. The correlation between omega-3% and omega-6% was relatively low with r=–0.12 (p<0.01). Across all models, both the omega-3% and omega-6% were inversely associated with all three mortality outcomes, except for plasma omega-6% with CVD mortality under Model 3 (Ptrend <0.01, Supplementary file 2: Tables S3 and S4). Notably, their associations remained significant when they were included in the same models. On the other hand, the effect sizes of the inverse associations were always bigger for the omega-3% under the fully adjusted Model 3. For example, when comparing those in the highest omega-3% quintile to the lowest quintile, the fully adjusted HRs (95% CI) for all-cause, cancer, and CVD mortality were, respectively, 0.69 (0.63, 0.76), 0.75 (0.65, 0.87), and 0.68 (0.57, 0.82) (Supplementary file 2: Table S3). The corresponding HRs for the omega-6% were 0.77 (0.70, 0.85), 0.80 (0.68, 0.92), and 0.83 (0.68, 1.02) (Supplementary file 2: Table S4). Furthermore, in another joint analysis of the omega-3% and omega-6%, the lowest risk for all-cause and cancer mortality was observed among those in the joint highest categories of the two fatty acids (Supplementary file 2: Table S5). For example, when comparing those in the highest quintiles of the two fatty acids to the group with the joint lowest group, the HRs (95% CI) for all-cause and cancer mortality were, respectively, 0.48 (95% CI, 0.35, 0.67) and 0.53 (95% CI, 0.33, 0.86). In the analysis of dietary PUFAs with mortality, the effect sizes were smaller and less significant compared with those of the corresponding plasma levels. When analyzed as continuous variables, dietary omega-3%, omega-6% and omega-6/omega-3 ratio were all significantly associated with all-cause, cancer, and CVD mortality, in directions consistent with their plasma counterparts. The trend test across the five quintiles revealed significant associations between dietary omega-3% and omega-6/omega-3 ratio with cancer mortality (P for trend <0.001 and=0.002, respectively; Supplementary file 2: Table S6). The correlation between dietary omega-3% and omega-6% was r=0.41 (p<0.01).
 
-## Mediation analysis for intermediate biomarkers
+### Mediation analysis for intermediate biomarkers
 
 The baseline serum biomarkers of the participants across quintiles of the ratio of omega-6/omega-3 were summarized in Supplementary file 2:Table S7. The estimates for the three paths a (association between plasma omega-6/omega-3 ratio and biomarkers), b (association between biomarkers and mortality outcomes), and c (association between plasma omega-6/omega-3 ratio and mortality outcomes), as well as the percentage of indirect effect (a to b) among the overall associations, were reported in Supplementary file 2: Table S8 and Figure S1. These analyses identified CRP and SHBG as potential mediators for the association of plasma omega-6/omega-3 ratio with all-cause mortality (proportion of mediating = 4% and 5.0%, respectively).
 
-## Other sensitivity analyses
+### Other sensitivity analyses
 
 We performed analyses to examine the associations of DHA% and LA% with mortality outcomes. The correlation between DHA% and LA% was relatively low with r=0.03 (p<0.01). Under the fully-adjusted model, both DHA% and LA% were inversely associated with all three mortality outcomes, regardless of being treated as continuous or quintiles (Supplementary file 2: Table S9). After further adjustment of the fish oil supplementation status, the associations between the ratio of omega-6/omega-3 and mortality outcomes were slightly attenuated yet did not alter the main findings (Supplementary file 2: Table S10). Our primary analysis excluded participants with missing information (i.e. a complete-case analysis). We performed a sensitivity analysis using the multiply-imputed datasets, and there were no substantial changes (Supplementary file 2: Table S11). Moreover, the exclusion of participants who died during their first-year follow-up did not materially alter the results (Supplementary file 2: Table S12). The baseline characteristics are comparable between participants with or without exposure information (Supplementary file 2: Table S13).
 
@@ -118,6 +618,6 @@ Strengths of our current study include the use of objective PUFA biomarkers in p
 
 Several potential limitations deserve attention. First, plasma omega-3 and omega-6 PUFAs were measured only once at baseline. Their levels may vary with diet or other lifestyle factors, which could cause misclassification over follow-up. However, some studies demonstrated that multiple measurements of omega-3 PUFAs have been consistent for a 6-month period (Kobayashi et al., 2001). Moreover, the 13 year within-person correlation for circulating omega-6 PUFAs was comparable to such correlations for other major CVD risk factors (Clarke et al., 1999) Thus, the single measurement of PUFAs at baseline, although not perfect, provides us with adequate information to investigate the relative long-term effects. Second, although we adjusted for many potential confounders in the model, we cannot rule out the imprecisely measured and unmeasured factors. Third, we acknowledged that the cohort did not mirror the broader UK demographic in terms of socioeconomic and health profiles. Participants in the UK Biobank generally exhibited better health and higher socioeconomic status than the average UK resident, potentially influencing the disease prevalence and incidence rates. Nonetheless, the UK Biobank’s extensive sample size and comprehensive exposure data enable the generation of valuable estimates for exposure-disease associations. These estimates have been corroborated by findings from more demographically representative cohorts (Batty et al., 2020; Fry et al., 2017). Last, although we included individuals of different ancestries in the analysis, over 90% of the participants were of European ancestry. The generalizability of our findings across ancestries requires future verification.
 
-## Conclusions
+### Conclusions
 
 In this large prospective cohort study, we documented robust positive associations of the plasma omega-6/omega-3 fatty acids ratio with the risk of all-cause, cancer, and CVD mortality. Moreover, we found that plasma omega-3 and omega-6 PUFAs were independently and inversely associated with the three mortality outcomes, with omega-3 fatty acids showing stronger inverse associations. Our findings support the active management of a high circulating level of omega-3 fatty acids and a low omega-6/omega-3 ratio to prevent premature death. Future research is warranted to further test the causality, such as Mendelian randomization and randomized controlled trials. Mechanistic research, including comprehensive mediation analysis, in-depth experimental characterization in animal models or cell lines, and intervention studies, is also needed to unravel the molecular and physiological underpinnings.

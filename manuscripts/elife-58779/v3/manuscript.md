@@ -40,13 +40,25 @@ Kv1.1 channel, the product of the gene Kcna1, is thought to regulate postnatal n
 
 ## Results
 
-## Kv1.1 regulates postnatal neuron generation in a cell-autonomous manner
+### Kv1.1 regulates postnatal neuron generation in a cell-autonomous manner
 
 The Kv1.1 channel is widely expressed throughout the entire central nervous system (Hallows and Tempel, 1998), and the loss of Kv1.1 function in mice homozygous for either the megencephaly mutation or the Kv1.1-null mutation (Kv1.1KO) causes seizures, starting 3 weeks after birth (Donahue et al., 1996; Petersson et al., 2003). Our previous study in 3-month-old Kcna1mceph/+ mice carrying the MADM-6 b cassettes (Rosa26TG/GT) showed that Kv1.1 acts cell-autonomously to regulate the number of neuronal progeny (Yang et al., 2012a). We further carried out the MADM study in Kcna1- mice, which did not show signs of seizures before reaching adulthood (Figure 1). We first generated Nestin-cre;Kcna1; MADM-6 quadruple transgenic mice that carried Nestin-cre, Kcna1-, Rosa26TG, and Rosa26GT. Nestin-Cre mediated somatic recombination in a subset of neural progenitor cells that carried the MADM-6 cassettes, and the daughter cells bearing the Kcna1-/- alleles were labeled with green fluorescent protein (GFP) (green), while the wild-type sibling daughter cells were labeled with tdTomato (red) (Figure 1A,B,C,D). Comparable numbers of green Kv1.1KO neurons and red wild-type neurons were observed in 1-month-old Nestin-cre;Kcna1+/-;MADM-6 mice; however, a significantly larger number of green Kv1.1KO neurons was found in 2- to 3-month-old Nestin-cre;Kcna1+/-;MADM-6 mice compared to wild-type controls (Figure 1E). As expected for granule cells born postnatally, the newly generated green Kv1.1KO neurons were located farther from the SGZ in the granule cell layer (Figure 1F). Unlike adult-born neurons, which gradually decrease in number over the course of a month owing to apoptosis, developmentally-born neurons generated during late embryogenesis and early postnatal stages typically survive for more than 2 months before the onset of cell death; generation and maturation of these neurons take about 1 month, with those generated early in life located farther from the SGZ (Cahill et al., 2017; Dayer et al., 2003; Kerloch et al., 2019; Toni and Schinder, 2015). Thus, the MADM experiments revealed an overproduction of developmentally born neurons from Kv1.1KO neural progenitor cells in early postnatal stages.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig1-v3.jpg)
+
+**Figure 1.:** Mosaic analysis with double markers (MADM) of the dentate gyrus in wild-type or Kcna1+/- mice. Kv1.1KO and wild-type neurons can be respectively identified as green (GFP) (A) and red (TdTomato) (B) neurons. (C) 4′,6-diamidino-2-phenylindole (DAPI) counterstain. (D) Overlay of signals in (A) and (B), scale bar = 100 µm. (E) Statistical analysis of the red wild-type and green Kv1.1KO neurons in the dentate gyrus. The numbers of red wild-type and green Kv1.1KO neurons were comparable in the dentate gyrus of 1-month-old mice; however, compared to the numbers of red wild-type neurons, the numbers of green Kv1.1KO neurons were much higher in the dentate gyrus of 2- to 3-month-old mice (two-way ANOVA followed by Sidak's multiple comparisons test; p=0.0008, for 2- to 3-month-old mice). n = 9–12 for each group. (F) Compared to the red wild-type neurons, green Kv1.1KO neurons were more often positioned farther away from the sub-granular zone (SGZ) in 2- to 3-month-old mice, indicating that the green Kv1.1KO neurons were born in the postnatal period (p=0.0002, Mann-Whitney U-test). n = 100 for each group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Immunostaining indicated that there was no difference in dentate gyrus (DG) between wild-type and Kv1.1KO mice, in terms of Sox2+ progenitors (A, D) (p=0.4807, t-test), Ctip2+ postmitotic marker (B, E) (p=0.5365, t-test), or NeuN+ neurons (C, F) (p=0.4606, t-test) at E16.5. n = 5–6 for each genotype. Scale bar = 100 µm. Data are presented as mean ± SEM. n.s., no significant difference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunostaining and quantification showed no significant difference in hippocampus between wild-type and Kv1.1KO mice, in terms of PV+ interneurons (B) (p=0.1363, t-test) or SST+ interneurons (C) (p=0.6372, t-test). n = 5–6 for each genotype. Scale bar = 250 µm. Data are presented as mean ± SEM. n.s., no significant difference.
+
 To test whether Kv1.1 function is essential for neurogenesis during embryogenesis, we examined embryos with or without Kv1.1 and found no significant difference in the numbers of hippocampal progenitors or neurons at E16.5 (Figure 1—figure supplement 1). We also analyzed interneurons expressing parvalbumin (PV) or somatostatin (SST) in the dentate gyrus and found no significant difference between mice with or without Kv1.1 at P10 (Figure 1—figure supplement 2). Taken together, our experiments indicate that Kv1.1 functions in postnatal neural progenitors of the SGZ to regulate the production of neuronal progeny during the first 3 months of life, raising the question regarding the mechanisms underlying this process.
 
-## Functional expression of Kv1.1 in SGZ neural progenitor cells
+### Functional expression of Kv1.1 in SGZ neural progenitor cells
 
 Kv1.1 is highly expressed throughout the entire central nervous system (Wang et al., 1994). Given that neural progenitor cells only account for a small fraction of total cells in the brain, we decided to utilize Fezf2-GFP reporter mice to specifically examine neural stem cells and progenitor cells in the SGZ (Gong et al., 2003). The majority of the Fezf2-GFP-positive cells in the SGZ co-expressed BLBP and GFAP, two well-established neural stem cell markers (Berberoglu et al., 2014). We also found that Kv1.1 mRNA was expressed in the granule cell layer of the dentate gyrus (red dots, Figure 2A); a portion of the Kv1.1 mRNA signal was in close proximity to the GFP mRNA (green dots), which indicates Fezf2-GFP neural progenitor cells in the SGZ (Figure 2A,B). To further corroborate this finding, we performed immunostaining to determine the distribution pattern of the Kv1.1 protein in the mouse dentate gyrus. We found that Kv1.1 protein was highly expressed in mature granule cells and interneurons as reported previously (Grosse et al., 2000; Wang et al., 1994). A closer look further revealed the presence of Kv1.1 in DCX+ cells but not in Sox2+ cells, thereby confirming the expression of Kv1.1 in late-stage neural progenitor cells (Figure 2C).
 
@@ -56,7 +68,7 @@ Kv1.1 is highly expressed throughout the entire central nervous system (Wang et 
 
 Next, we wanted to determine whether Kv1.1 protein could form functional potassium channels in the Fezf2-GFP-positive cells. As Kv1.1-mediated potassium currents can be inactivated by holding at relatively high voltages (> −50 mV) (Storm, 1988) and are sensitive to dendrotoxin-K (DTX-K) (Grissmer et al., 1994), a potent blocker of Kv1 family channels, we performed whole-cell patch-clamp recording in wild-type (Figure 2D,E,F) and Kv1.1KO (Figure 2F,G,I) Fezf2-GFP-positive cells. We could detect DTX-K-sensitive and low-voltage inactivated potassium currents in wild-type but not Kv1.1KO (Figure 2J) Fezf2-GFP+ cells. These findings reveal that Kv1.1 forms functional channels in Fezf2-GFP neural progenitor cells.
 
-## Loss of Kv1.1 depolarizes a subset of the neural progenitor cells in SGZ
+### Loss of Kv1.1 depolarizes a subset of the neural progenitor cells in SGZ
 
 Next, we looked into the impact of removing Kv1.1 from Fezf2-GFP cells at different developmental stages (Figure 3A). This experiment was performed within the first postnatal month to avoid complications from seizures that begin later in life. We sought to evaluate quiescent Sox2+ type 1 radial glia-like stem cells, highly proliferative Sox2+Tbr2+ type 2a neural progenitor cells, and type 2b neural progenitor cells that only express Tbr2. Based on the expression of cell-type markers, we first calculated the proportions of these three cell types among Fezf2-GFP cells. We found a high proportion of Tbr2+-only type 2b neural progenitor cells in Kv1.1KO SGZ compared to wild type (Figure 3B,C, arrowheads). These results suggested that the presence of Kv1.1 limits the number of late-stage neural progenitor cells.
 
@@ -72,15 +84,39 @@ Voltage-gated potassium channels are known to be involved in regulating action p
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig5-v3.jpg)
 
-**Figure 5.:** (A) Acute brain slice recording from the DG of an Fezf2-GFP mouse. (B and C) A multinomial logistic regression model was constructed using the biophysical characteristics of cells that were identified previously (same cohort of cells from Figure 3D) as the training dataset. Two individual regression models were generated for wild-type (B) and Kv1.1KO (C) cells. The cell types of unknown cells were later classified according to the resting membrane potential, input resistance, and membrane capacitance. Heatmaps show the estimated probabilities for each cell type against membrane potential (D), input resistance (E), and membrane capacitance (D). The cell types were determined based on maximum likelihood. (G) Resting membrane potentials of wild-type and Kv1.1KO progenitor cells. The predicted type 2b cells lacking Kv1.1 channels were significantly more depolarized (two-way ANOVA, followed by Sidak's multiple comparisons test; p<0.0001, for type 2b cells). Comparable input resistances (H) and membrane capacitances (I) were observed between wild-type and Kv1.1KO cells. n = 144, 25, and 22 for type 1, 2a, and 2b cells, respectively, in the wild-type group; n = 71, 70, and 22 for type 1, 2a, and 2b cells, respectively, in the Kv1.1KO group. (J–L) Voltage responses from type 1 (J), type 2a (K), type 2b (L) to series voltage from -120 mV to +40 mV or -80 mV to +40 mV, with a holding potential of -80 mV. (M) Current–voltage curves in (J–L) (the circles indicate the positions of measurements; type 1 (7 cells), type 2a (7 cells), type 2b (10 cells)). (N, O) Voltage response from -80 mV to +40 mV, with a holding potential of -80 mV and leak subtraction, shown for type 2b (N); current–voltage curve of type 2b (n = 17 cells) with leak subtraction (O). (P) A representative transient inward current (sodium current) was observed in 9 out of 25 type 2b cells. Data are presented as mean ± SD in (G), (H), and (I); mean ± SEM in (M, O).Figure 5—source data 1.
+**Figure 5.:** (A) Acute brain slice recording from the DG of an Fezf2-GFP mouse. (B and C) A multinomial logistic regression model was constructed using the biophysical characteristics of cells that were identified previously (same cohort of cells from Figure 3D) as the training dataset. Two individual regression models were generated for wild-type (B) and Kv1.1KO (C) cells. The cell types of unknown cells were later classified according to the resting membrane potential, input resistance, and membrane capacitance. Heatmaps show the estimated probabilities for each cell type against membrane potential (D), input resistance (E), and membrane capacitance (D). The cell types were determined based on maximum likelihood. (G) Resting membrane potentials of wild-type and Kv1.1KO progenitor cells. The predicted type 2b cells lacking Kv1.1 channels were significantly more depolarized (two-way ANOVA, followed by Sidak's multiple comparisons test; p<0.0001, for type 2b cells). Comparable input resistances (H) and membrane capacitances (I) were observed between wild-type and Kv1.1KO cells. n = 144, 25, and 22 for type 1, 2a, and 2b cells, respectively, in the wild-type group; n = 71, 70, and 22 for type 1, 2a, and 2b cells, respectively, in the Kv1.1KO group. (J–L) Voltage responses from type 1 (J), type 2a (K), type 2b (L) to series voltage from -120 mV to +40 mV or -80 mV to +40 mV, with a holding potential of -80 mV. (M) Current–voltage curves in (J–L) (the circles indicate the positions of measurements; type 1 (7 cells), type 2a (7 cells), type 2b (10 cells)). (N, O) Voltage response from -80 mV to +40 mV, with a holding potential of -80 mV and leak subtraction, shown for type 2b (N); current–voltage curve of type 2b (n = 17 cells) with leak subtraction (O). (P) A representative transient inward current (sodium current) was observed in 9 out of 25 type 2b cells. Data are presented as mean ± SD in (G), (H), and (I); mean ± SEM in (M, O).
 
 Although we have obtained convincing results showing that the type 2b neural progenitor cells lacking Kv1.1 channels were more depolarized, the invasive nature of the patch-clamp technique caused more than 70% of the recorded cells to be either damaged or lost during the subsequent immunostaining procedure, and therefore, their developmental stages were not determined. We tried to classify those Fezf2-GFP-positive cells based on their resting membrane potential, input resistance, and membrane capacitance, the three basic biophysical characteristics obtained from patch-clamp recording (Figure 5). First, we used the biophysical characteristics of cells with unequivocal cell-type identification determined by post-hoc immunostaining as a training dataset (Figure 4G) to construct separate multinomial logistic regression models for wild-type and Kv1.1KO cells (Fahrmeir and Tutz, 2001). The probability of each cell belonging to a given cell type was calculated by fitting biophysical characteristics to the models: resting membrane potentials (Figure 5D), input resistance (Figure 5E), and membrane capacitance (Figure 5F). We found that more than 80% of the Fezf2-GFP-positive cells with known cell types could be accurately predicted using this regression model. Interestingly, judging from the gap-junction-permeable neurobiotin labeling, we noticed that cells from the same subtypes clustered closely together (Figure 5B, C). Of note, type 1 neural stem cells tended to have a more hyperpolarized resting membrane potential, lower input resistance, and larger membrane capacitance, while type 2b neural progenitor cells tended to have more depolarized resting membrane potentials, higher input resistance, and smaller membrane capacitance. The cell type was then assigned based on the highest probability. Consistent with the results shown in Figure 4G, we found that the assigned type 2b neural progenitor cells lacking Kv1.1 channel were also significantly more depolarized than their wild-type counterparts. Nevertheless, both the input resistance (Figure 5E) and membrane capacitance (Figure 5F) were comparable between wild-type and Kv1.1KO cells. To validate the progenitor classification and reveal the cell membrane properties, we plotted I-V curves for the three subgroups, as classified by the multinomial logistic regression model. Similar to the results of a previous study using progenitor cell recording (Steiner et al., 2006), type 1 neural stem cells characteristically displayed passive, non-inactivating currents with a linear current–voltage relationship (Figure 5J,M), similar to the properties of astrocytes. In contrast, type 2b neural progenitor cells expressed small outwardly rectifying currents (Figure 5L,M). Of note, in 9 out of 25 type 2b neural progenitor cells, we observed transient inward currents induced by depolarizations more positive than −30 mV, followed by outwardly rectifying currents; these observations are indicative of sodium currents, hence consistent with neuronal differentiation (Figure 5P). The delayed outward rectifying currents in type 2b neural progenitor cells were more apparent when characterized by means of leak subtraction (Figure 5P,O). Moreover, the electrophysiological features of type 2a neural progenitor cells were suggestive of a transition phase between type 1 neural stem cells and type 2b neural progenitor cells, since type 2a neural progenitor cells displayed outwardly rectifying currents but no detectable sodium currents (Figure 5K,M).
 
-## Kv1.1 regulates neural progenitor cell number via the TrkB signaling pathway
+### Kv1.1 regulates neural progenitor cell number via the TrkB signaling pathway
 
 A previous work has shown that suppressing TrkB signaling by removing brain-derived neurotrophic factor (BDNF) from neural progenitor cells drastically reduces the thickness of the dentate gyrus granule cell layer (Li et al., 2008), while enhancing TrkB signaling by overexpressing BDNF in neural progenitor cells augments neurogenesis (Quesseveur et al., 2013). Notably, increased BDNF expression has been found in the Kv1.1KO mouse brains (Diez et al., 2003). Carbamazepine, an anti-epileptic drug, could antagonize this increase of BDNF levels and also suppress the excessive neurogenesis in SGZ in adult Kv1.1KO mice (Lavebratt et al., 2006). We hypothesized that the excessive depolarization of type 2b neural progenitor cells lacking Kv1.1 (Figure 4G and Figure 5G) might stimulate neural progenitor cell proliferation by elevating the level of TrkB signaling. Restrained with the antibody incompatibility for double labeling, we stained the neural progenitor cells in SGZ with antibodies against phospho-TrkB (Tyr816), together with either Sox2 or Tbr2. We found most of the phospho-TrkB-positive cells within the SGZ region (Figure 6, Figure 6—figure supplement 1, and Figure 7—figure supplement 1), and a greater number of phospho-TrkB-positive cells in the dentate gyrus of Kv1.1KO mice as compared to the wild-type mice (Figure 6). Moreover, phospho-TrkB was found primarily in Tbr2+ or DCX+ cells (Figure 6B and Figure 6—figure supplement 1) but rarely in Sox2+ cells (Figure 6A and Figure 6—figure supplement 1), despite the fact that the expression levels of TrkB receptor are higher in type 1 neural progenitor cells (Vilar and Mira, 2016). Not only did the loss of Kv1.1 cause an increase of Tbr2+ cells with phospho-TrkB signals, but also the phospho-TrkB signals in the Tbr2+ cells were much more intense in the Kv1.1KO mice, suggesting that the TrkB signaling pathway was activated in the Tbr2-expressing type 2b cells in Kv1.1KO mice (Figure 3).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig6-v3.jpg)
+
+**Figure 6.:** Phospho-TrkB (Tyr816) signal represents a surrogate measure for TrkB activity. Phospho-TrkB-positive cells rarely colocalized with the Sox2-positive, presumably type 1 and type 2b neural progenitor cells (A); by contrast, phospho-TrkB-positive cells colocalized with the majority of Tbr2-positive, presumably type 2b cells. (B) More Tbr2+/phospho-TrkB+ neural progenitor cells could be found in the sub-granular zone (SGZ) of Kv1.1KO mice. Scale bar = 100 μm (A) and 50 μm (B). (C) Quantification analysis of phospho-TrkB levels in Sox2+ or Tbr2+ cells. The phospho-TrkB fluorescent intensity (F1) of each Sox2+ or Tbr2+ cell was measured and normalized to the Sox2+ or Tbr2+ fluorescent intensity and the total measured cell area (F2 X nm2). n = 246, 243, 69, and 92 for Sox2+/WT, Sox2+/Kv1.1KO, Tbr2+/WT, and Tbr2+/Kv1.1KO cells, respectively. **** p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Phospho-TrkB-positive cells rarely colocalized with the Sox2-positive, presumably type 1 and type 2b neural progenitor cells but mostly colocalized with the DCX+ late-stage progenitor cells. Scale bar = 50 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Immunostaining of the dentate gyrus from mice treated with daily intraperitoneal vehicle-only (A) or GNF-5837 (20 mg/kg) (B) injection for 3 weeks. phospho-TrkB signal (green) can be detected in the sub-granular zone (SGZ) region in control (A) but not GNF-5837 (B). Scale bar = 100 µm.
+
 To test whether antagonizing TrkB activity could reduce the hyperplastic effect of Kv1.1 on adult neurogenesis, we performed daily intraperitoneal injections of GNF-5837 (20 mg/kg), a brain-permeable Trk inhibitor (Albaugh et al., 2012), into mice for 3 weeks starting at the first postnatal week. This 3-week GNF-5837 treatment was sufficient to suppress TrkB signaling, as the phospho-TrkB levels were drastically reduced in the hippocampus (Figure 7—figure supplement 1). Both Fezf2-GFP-positive cells and Ki67-positive cells in Kv1.1KO and control mice were comparable in number after this GNF-5837 treatment (Figure 7B,C,D). By contrast, age-matched Kv1.1KO mice receiving vehicle-only injection had significantly more Fezf2-GFP- and Ki67-positive cells in the SGZ than those in control mice (Figure 7A,B,C), in agreement with a previous report (Almgren et al., 2007). Thus, pharmacological inhibition of Trk receptors prevented the increase of neural progenitor cells in the SGZ of Kv1.1KO mice.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig7-v3.jpg)
+
+**Figure 7.:** (A, C, and D) Kv1.1KO mice have more Fezf2-GFP- (C) and Ki67-positive cells (D) than wild-type mice, with vehicle treatment. p=0.0014, one-way ANOVA followed by Tukey's test in (C); p<0.0001, one-way ANOVA followed by Tukey's test in (D). (B, C, and D) Suppression of Kv1.1-dependent neurogenesis by GNF-5837, a potent Trk inhibitor. Mice receiving daily GNF-5837 (20 mg/kg) administration had comparable numbers of Fezf2-GFP- (C) and Ki67-positive cells (D) between wild-type and Kv1.1KO mice; n = 6–8 mice from each genotype with vehicle-only or GNF-5837 treatment. (E) Clonal analysis of adult neurogenesis. Tamoxifen (0.5 mg) was administered at postnatal 3 weeks to sparsely delete Ntrk2 (a gene that encodes the TrkB receptor) in a subset of neural progenitor cells. In cells lacking only one allele of TrkB, Kv1.1KO had larger clone sizes than wild-type cells; by contrast, the Kv1.1-dependent proliferation advantage was abrogated in clones lacking both TrkB alleles. p=0.0389, comparing wild-type and Kv1.1KO on the Ntrk2flox/+ background; two-way ANOVA followed by Sidak's multiple comparisons test; n = 39–157 for each group. Scale bar = 100 μm. Data are presented as mean ± SEM. *p<0.05, **p<0.01; ***p<0.001; ****p<0.0001; n.s., no significant difference. (F) Kolmogorov-Smirnov plots showing a rightward shift of clone sizes in Kcna1-/-;Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mice (red trace) compared to wild-type Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mice (black trace) (p=0.0029, t-test), but this effect was absent in mice lacking TrkB receptor (p>0.05 between wild-type Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ (black trace) and Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+ (blue trace); Kcna1-/-;Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+ (green trace)).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Immunostaining of the dentate gyrus from mice treated with daily intraperitoneal vehicle-only (A) or GNF-5837 (20 mg/kg) (B) injection for 3 weeks. phospho-TrkB signal (green) can be detected in the sub-granular zone (SGZ) region in control (A) but not GNF-5837 (B). Scale bar = 100 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/58779/elife-58779-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** Single low-dose tamoxifen (0.5 mg/kg) was injected into a 3-week-old Gli1creERT2/+;Rosa26Tom/+ mouse and later sacrificed at 8 weeks of age. The clonal clusters were defined as the TdTomato+ cells contained within 100-μm radius of the clone center. (A) An overview of a whole-mount 3D hippocampus (red) from a Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+ mouse. The neural progenitor cells were identified automatically by the software, and the clone sizes were labeled as the number above the green circles. (B) A higher magnification of two single-cell clones that were separated by more than 150 µm. (C) A group of cells that are clustered within a radius of 45 µm are considered as a single clone with 10 cells. Both (B) and (C) were obtained from the hippocampus of a Kcna1-/-; Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mouse.
 
 If Kv1.1 channels limit neural progenitor cell proliferation, Kv1.1KO neural progenitor cells should generate larger clones than controls. To estimate the clone size, we generated Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+ and Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mice in the background of either wild-type or Kv1.1KO. These quadruple transgenic mouse lines carried a tamoxifen-inducible cre-recombinase Gli1creERT2 that can sparsely delete the floxed-Ntrk2 gene that encodes the TrkB receptor in the neural stem cells and progenitor cells of the SGZ in the presence of tamoxifen. The Cre-dependent TdTomato reporter (Rosa26Tom) was used to label tamoxifen-activated CreER recombinase cells and their progeny (Li et al., 2013; Singh et al., 2015). We intraperitoneally injected 3-week-old mice with a single dose of tamoxifen (0.5 mg/kg) to delete the floxed-Ntrk2 in the SGZ, and the clone sizes were estimated at 8 weeks of age. A single clone was defined as encompassing all the cells within a 100-µm radius of the clone center (Singh et al., 2015). Indeed, TrkB deletion abolished the hyperplastic phenotype in Kv1.1KO mice, as Kcna1-/-;Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mice had larger clone sizes than Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+, Kcna1-/-;Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+, and Gli1creERT2/+;Ntrk2flox/flox;Rosa26Tom/+ mice (Figure 7E and Figure 7—figure supplement 2). The cumulative clone-size plots further confirmed a rightward skewness distribution rather than just an outlier bias (red trace) in Kcna1-/-;Gli1creERT2/+;Ntrk2flox/+;Rosa26Tom/+ mice, and this shift was not observed for the neural progenitor cells lacking TrkB receptors (green trace) (Figure 7F).
 
@@ -108,32 +144,305 @@ In summary, our study has uncovered a unique role of Kv1.1 in regulating neuroge
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain background (Mus musculus)</td>
+      <td>ICR (CD-1 or Swiss Outbred)</td>
+      <td>BioLASCO Taiwan</td>
+      <td></td>
+      <td>Outbred strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Kcna1- (Kcna1tm1Tem)</td>
+      <td>PMID:9581771</td>
+      <td>MGI: 1861959</td>
+      <td>Dr. Bruce Tempel (University of Washington, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26GT (Gt(ROSA)26Sortm6(ACTB-EGFP*,-tdTomato))</td>
+      <td>PMID:22479386</td>
+      <td>MGI: 5314252</td>
+      <td>Dr. Liqun Luo (Stanford University, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26TG (Gt(ROSA)26Sortm7(ACTB-EGFP*))</td>
+      <td>PMID:22479386</td>
+      <td>MGI: 5314253</td>
+      <td>Dr. Liqun Luo (Stanford University, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>POMC-GFP (Tg(Pomc-EGFP)1)</td>
+      <td>PMID:11373681</td>
+      <td>MGI: 3776091</td>
+      <td>Dr. Jeffery Friedman (Rockefeller University, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Fezf2-GFP (Tg(Fezf2-EGFP)CO61Gsat)</td>
+      <td>PMID:14586460</td>
+      <td>MGI: 3847288</td>
+      <td>Dr. Su Guo (University of California, San Francisco, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ntrk2flox (Ntrk2tm1Lfr)</td>
+      <td>PMID:10995833</td>
+      <td>MGI: 2384391</td>
+      <td>Dr. Louis Reichardt (University of California, San Francisco, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nestin-cre (Tg(Nes-cre)1Kln)</td>
+      <td>PMID:10471508</td>
+      <td>MGI: 2176173</td>
+      <td>Jackson Laboratory, USA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gli1creERT2 (Gli1tm3(cre/ERT2)Alj)</td>
+      <td>PMID:15315762</td>
+      <td>MGI: 3053957</td>
+      <td>Jackson Laboratory, USA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26Tom (Gt(ROSA)26Sortm14(CAG-tdTomato)Hze)</td>
+      <td>PMID:20023653</td>
+      <td>MGI: 3809524</td>
+      <td>Jackson Laboratory, USA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves, USA</td>
+      <td>Cat#: GFP-1010 RRID:AB_2307313</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sox2 (mouse monoclonal, IgG2b)</td>
+      <td>Millipore, USA</td>
+      <td>Cat#: MAB4343 RRID:AB_11205572</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tbr2 (rabbit monoclonal)</td>
+      <td>Abcam, USA</td>
+      <td>Cat#: ab183991 RRID:AB_2721040</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tbr2 (chicken polyclonal)</td>
+      <td>Millipore, USA</td>
+      <td>Cat#: AB15894 RRID:AB_10615604</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Doublecortin (rabbit monoclonal)</td>
+      <td>Cell Signaling, USA</td>
+      <td>Cat#: 14802</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-TrkB (Tyr816) (rabbit polyclonal)</td>
+      <td>Millipore, USA</td>
+      <td>Cat#: ABN1381RRID:AB_2721199</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kv1.1 (mouse polyclonal, IgG2b)</td>
+      <td>Aves, USA</td>
+      <td>Cat#: 75–105RRID:AB_2128566</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Invitrogen, USA</td>
+      <td>Cat#: MA5-14520RRID:AB_10979488</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fluoromount G</td>
+      <td>SouthernBiotech, USA</td>
+      <td>Cat#: 0100–01 RRID:SCR_015961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Fluorescent Multiplex Kit</td>
+      <td>Advanced Cell Diagnostics, Inc, USA</td>
+      <td>Cat#: 320850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Probe-Mm-GFP</td>
+      <td>Advanced Cell Diagnostics, Inc, USA</td>
+      <td>Cat#: 400281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Probe-Mm-Kcna</td>
+      <td>Advanced Cell Diagnostics, Inc, USA</td>
+      <td>Cat#: 435901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNF-5837</td>
+      <td>Tocris, UK</td>
+      <td>Cat#: 4559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG400 (Polyethylene glycol 400)</td>
+      <td>Sigma-Aldrich, USA</td>
+      <td>Cat#: 1546445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cremophor EL</td>
+      <td>Sigma-Aldrich, USA</td>
+      <td>Cat#: C5135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dendrotoxin-K</td>
+      <td>Alomone Labs, Israel</td>
+      <td>Cat#: D-400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cremophor EL</td>
+      <td>Sigma-Aldrich, USA</td>
+      <td>Cat#: C5135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobiotin</td>
+      <td>Vector Laboratories, USA</td>
+      <td>Cat#: SP-1120</td>
+      <td>0.3% in the pipette solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lucifer yellow-conjugated dextrans</td>
+      <td>Invitrogen, USA</td>
+      <td>Cat#: D-1825</td>
+      <td>0.2% in the pipette solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neutravidin</td>
+      <td>Thermo Fisher, USA</td>
+      <td>Cat#: 31000</td>
+      <td>0.25%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10.0</td>
+      <td>Molecular Devices, USA</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7.0</td>
+      <td>Graphpad, USA</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 9.0</td>
+      <td>Bitplane, Switzerland</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>The R foundation</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 This study was carried out in strict accordance with the recommendations found in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. The experimental protocols were approved by the Institutional Animal Care and Use Committee of Academia Sinica (protocol #: 15-01-813) and the University of California, San Francisco. Mice (3–5 per cage) were housed in the animal facility and fed with a regular chow diet on a standard 12 hr light/12 hr dark cycle. At least three animals were used for every experimental group. The Kcna1- mice were obtained from Dr. Bruce Tempel's lab at the University of Washington, USA. Rosa26GT (Gt(ROSA)26Sortm6(ACTB-EGFP*,-tdTomato)) and Rosa26TG (Gt(ROSA)26Sortm7(ACTB-EGFP*)), two transgenic mouse lines for producing MADM-6 mice, were obtained from Dr. Liqun Luo's lab at Stanford University, USA. The Ntrk2flox mice were obtained from Dr. Louis Reichardt's lab at the University of California, San Francisco, USA. POMC-GFP (Tg(Pomc-EGFP)1) mice were obtained from Dr. Jeffery Friedman's lab at Rockefeller University, USA. Fezf2-GFP (Tg(Fezf2-EGFP)CO61Gsat) mice were obtained from Dr. Su Guo's lab at the University of California, San Francisco, USA. Nestin-cre (Tg(Nes-cre)1Kln), Gli1creERT2 (Gli1tm3(cre/ERT2)), and Rosa26Tom (Gt(ROSA)26Sortm14(CAG-tdTomato)) mice were obtained from Jackson Laboratory (Bar Harbor, Maine, USA). All mice were maintained on an ICR (Institute of Cancer Research) background. GNF-5837 (Tocris, UK) was dissolved in dimethyl sulfoxide (DMSO) (Sigma, USA), and then diluted in a solvent composed of 65% PEG400 (Sigma, USA) and 35% Cremophor EL (Sigma, USA) for intraperitoneal injection.
 
-## Electrophysiology
+### Electrophysiology
 
 Brain slices (250 µm thickness) containing the hippocampus were prepared as described previously (Yang et al., 2012b). Mice were first anesthetized with isoflurane and then decapitated. The brain was swiftly removed and placed in cutting solution: 110 mM choline chloride, 25 mM NaHCO3, 11 mM glucose, 2.5 mM KCl, 1.25 mM NaH2PO4, 11.6 mM sodium ascorbate, 3.1 mM sodium pyruvate, 7 mM MgCl2, and 0.5 mM CaCl2, equilibrated with 95% O2/5% CO2. Brain slices were obtained from tissue immersed in the cutting solution using a compresstome (Precisionary Instruments, USA). Slices were then incubated in artificial cerebrospinal fluid (aCSF): 126 mM NaCl, 21.4 mM NaHCO3, 10 mM glucose, 2.5 mM KCl, 1.25 mM NaH2PO4, 1.2 mM MgCl2, and 2 mM CaCl2, equilibrated with 95% O2/5% CO2. An Axon700B amplifier (Molecular Devices Corp, USA) was used to measure membrane currents and membrane capacitance in the standard whole-cell patch-clamp configuration. Data were acquired at 5 kHz with Clampex10 software (Molecular Devices Corp, USA). The intracellular solution contained 135 mM potassium gluconate, 15 mM KCl, 10 mM HEPES, 5 mM Mg2ATP, 1 mM Na3GTP, 10 mM sodium phosphocreatine, and 0.05 mM EGTA; pH was adjusted to 7.2 with KOH. Dendrotoxin-κ (Alomone Labs, Israel) was used to specifically block the Kv1.1 channel. Pipettes were pulled from 1.5 mm borosilicate glass capillaries (Sutter Inc, USA) and had a resistance of 3–5 MΩ when filled with the intracellular solution; data were excluded from further analyses if the series resistance was higher than 20 MΩ and the holding current at −70 mV was lower than −100 pA. All experiments were performed at room temperature.
 
-## Immunostaining
+### Immunostaining
 
 Mice were fed ad libitum and were anesthetized with intraperitoneal Zoletil/Xylazine injection before transcardial perfusion with saline followed by 4% PFA. Brains were removed and post-fixed overnight in 4% PFA. Brains were then cryoprotected overnight in saline containing 30% sucrose at 4°C until they sank. For antigen retrieval, the brain sections (16 µm) were boiled in sodium citrate buffer (10 mM sodium citrate, 0.05% Tween 20, pH 6.0) between 95 and 100°C for 20 min. After the buffer was cooled to room temperature, the samples were further processed. The brain sections were washed in a blocking medium containing 0.1% Triton X-100% and 5% donkey serum (Jackson Immunoresearch Laboratories), and incubated overnight (4°C) with primary antibodies against GFP (chicken, 1:400; Aves, USA), Sox2 (mouse IgG2b, 1:400; Millipore, USA), Ctip2 (rabbit, 1:500; Abcam, USA), Tbr2 (rabbit, 1:400; Abcam, USA.), Tbr2 (chicken, 1:400; Millipore, USA), Doublecortin (rabbit, 1:400; Cell Signaling, USA), Kv1.1 (1:200; Antibodies Inc, USA), phospho-TrkB (rabbit, 1:200; Millipore, USA), or Ki67 (rabbit, 1:500; Invitrogen, USA), followed by Alexa dye-tagged secondary antibodies (donkey 1:100; Invitrogen, USA). For immunostaining of samples after electrophysiology recording, the brain slices were fixed in 4% PFA at 4°C for 2 hr. The internal solution contained Neurobiotin (0.3%, MW: 367 Da; Vector Laboratories, USA) and Lucifer yellow-conjugated dextrans (0.2%, MW: 10 kDa; Invitrogen, USA) to respectively label gap junction-coupled cells and recorded cells. The slices were washed three times at room temperature for 40 min in 0.3% Triton X-100 and 3% Bovine Serum Albumin (BSA) (Sigma Aldrich, USA) for blocking and permeabilization, followed by incubation overnight at 4°C with Neutravidin (0.25%; Thermo Fisher Scientific, USA) and primary antibodies against GFP (chicken, 1:400; Aves, USA), Sox2 (mouse IgG2b, 1:400; Millipore, USA) or Tbr2 (rabbit, 1:400; Abcam, USA). Secondary antibodies conjugated with goat anti-rabbit IgG Alexa 405, goat anti-chicken IgG Alexa 488, and goat anti-mouse IgG2b Alexa 633 were purchased from Invitrogen. The slides were mounted using Fluoromount G mounting medium containing 4′,6-diamidino-2-phenylindole (DAPI) (Southern Biotech, USA), and images were acquired using a confocal microscope (Zeiss, Germany).
 
-## In situ hybridization
+### In situ hybridization
 
 The mouse brains were frozen and sectioned, as previously described (Li et al., 2019). Sections were fixed with chilled 4% PFA for 15 min and then washed with 0.1 M phosphate buffered saline (PBS) twice. Sections were then dehydrated with 50% ethanol, 70% ethanol, and 100% ethanol sequentially. Slides were treated with protease and then incubated with a customized probe for 2 hr. Signal was detected using Probe-Mm-GFP and Probe-Mm-Kcna and further amplified by RNAscope Fluorescent Multiplex Kit (Advanced Cell Diagnostics, USA). Images were acquired using a confocal microscope (Zeiss, Germany).
 
-## Clonal analysis
+### Clonal analysis
 
 The clonal analysis was performed as described previously (Singh et al., 2015). Briefly, for sparsely labeling the progenitor cells, 3-week-old mice carrying Gli1creERT2; Rosa26Tom with wild-type or Kcna1-/- and Ntrk2flox/flox or Ntrk2flox/+ were injected with a single dose of 0.5 mg/kg of tamoxifen (Sigma, USA) dissolved in corn oil (Sigma, USA). At 8 weeks of age, mice were killed by an intraperitoneal injection of 150 mg/kg Zoletil + 20 mg/kg xylazine. Both hippocampi were dissected out and fixed overnight in a PBS solution containing 4% PFA. The hippocampi were rendered transparent in scale 0 for 2 days at 37°C, and then transferred to scale 4 for 1 day at 4°C (Hama et al., 2015). The whole-mount hippocampus was imaged in 3D using a Zeiss LSM700 confocal microscope system (Zeiss, Germany). Imaris9.7 (Oxford Instruments, Switzerland) was used to identify TdTomato-positive neural progenitor cells. The clonal clusters were defined as the TdTomato-positive cells within 100-μm radius of the clone center, as illustrated in Figure 7—figure supplement 1 (Singh et al., 2015).
 
-## Multinomial logistic regression classification of cell types
+### Multinomial logistic regression classification of cell types
 
-To classify cells and make associations between cell type and resting membrane potentials, input resistance and membrane capacitance, we applied the multinomial logistic regression model as follows:P(C=c|X=x)P(C=0|X=x)=exp⁡(βc,0+x1βc,1+x2βc,2+x3βc,3),c=1,2,where C = 0, 1, 2 represents type 1, 2a, and 2b cells, respectively, and X = (X1,X2,X3) represents the centralized and standardized (log⁡Cm,log⁡Rm,Vm). By using a standard maximum likelihood estimation, the estimated coefficients are(β1,0,β1,1,β1,2,β1,3,β2,0,β2,1,β2,2,β2,3)=(−0.343,−1.067,−1.317,1.681,−3.074,−2.746,0.782,1.359)for wild-type cells and(β1,0,β1,1,β1,2,β1,3,β2,0,β2,1,β2,2,β2,3)=(0.567,−1.373,−0.051,0.302,−5.353,−6.935,−1.626,5.549)for Kv1.1KO cells.
+To classify cells and make associations between cell type and resting membrane potentials, input resistance and membrane capacitance, we applied the multinomial logistic regression model as follows:
 
-Each cell was then assigned to the class with the highest probability P(C=c|X=x),c=0,1,2. Based on the estimated coefficients, it appeared that smaller values of Cm and larger values of Vm were associated with a higher probability of being type 2b neural progenitor cells than being type 1 neural stem cells.
+$$
+\frac{P(C=c|X=x)}{P(C=0|X=x)}=exp⁡(\beta_{c,0}+x_{1}\beta_{c,1}+x_{2}\beta_{c,2}+x_{3}\beta_{c,3}),c=1,2,
+$$
 
-## Statistical analyses
+where C = 0, 1, 2 represents type 1, 2a, and 2b cells, respectively, and X = (X1,X2,X3) represents the centralized and standardized $(log⁡Cm,log⁡Rm,Vm)$. By using a standard maximum likelihood estimation, the estimated coefficients are
+
+$$
+(\beta_{1,0},\beta_{1,1},\beta_{1,2},\beta_{1,3},\beta_{2,0},\beta_{2,1},\beta_{2,2},\beta_{2,3})=(−0.343,−1.067,−1.317,1.681,−3.074,−2.746,0.782,1.359)
+$$
+
+for wild-type cells and
+
+$$
+(\beta_{1,0},\beta_{1,1},\beta_{1,2},\beta_{1,3},\beta_{2,0},\beta_{2,1},\beta_{2,2},\beta_{2,3})=(0.567,−1.373,−0.051,0.302,−5.353,−6.935,−1.626,5.549)
+$$
+
+for Kv1.1KO cells.
+
+Each cell was then assigned to the class with the highest probability $P(C=c|X=x),c=0,1,2$. Based on the estimated coefficients, it appeared that smaller values of Cm and larger values of Vm were associated with a higher probability of being type 2b neural progenitor cells than being type 1 neural stem cells.
+
+### Statistical analyses
 
 For immunostaining experiments, cell counts were performed on two to three images per mouse, and n-values indicate numbers of different mice, except for the assessment of clonal analysis, where n-values correspond to numbers of different clonal pools from four to six mice per genotype. For electrophysiological experiments, n-values correspond to numbers of different cells from each individual brain slice. Statistical analyses were performed with Prism software (Graphpad, USA) or R Project for Statistical Computing (The R Foundation, USA). Two-way ANOVA with Sidak's multiple comparisons post-hoc test, one-way ANOVA with Tukey's test, Mann-Whitney U-test, or Student's t-test for pair-wise comparisons were used as appropriate. p<0.05 was considered statistically significant.

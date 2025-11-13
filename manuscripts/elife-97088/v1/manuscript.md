@@ -12,18 +12,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Interdepartmental Neuroscience Program, Yale University New Haven United States
-2. https://ror.org/03v76x132 Department of Psychology, Yale University New Haven United States
-3. https://ror.org/03v76x132 Department of Neuroscience, Yale University New Haven United States
-4. https://ror.org/03v76x132 Wu Tsai Institute, Yale University New Haven United States
-5. https://ror.org/03v76x132 Kavli Institute for Neuroscience, Yale University School of Medicine New Haven United States
-6. https://ror.org/03v76x132 Department of Psychiatry, Yale University New Haven United States
+1. Interdepartmental Neuroscience Program, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Department of Psychology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Department of Neuroscience, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+4. Wu Tsai Institute, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+5. Kavli Institute for Neuroscience, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Department of Psychiatry, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-In recent years, the field of neuroscience has increasingly recognized the importance of studying animal behaviors in naturalistic environments to gain deeper insights into ethologically relevant behavioral processes and neural mechanisms. The common marmoset ( Callithrix jacchus ), due to its small size, prosocial nature, and genetic proximity to humans, has emerged as a pivotal model toward this effort. However, traditional research methodologies often fail to fully capture the nuances of marmoset social interactions and cooperative behaviors. To address this critical gap, we developed the Marmoset Apparatus for Automated Pulling (MarmoAAP), a novel behavioral apparatus designed for studying cooperative behaviors in common marmosets. MarmoAAP addresses the limitations of traditional behavioral research methods by enabling high-throughput, detailed behavior outputs that can be integrated with video and audio recordings, allowing for more nuanced and comprehensive analyses even in a naturalistic setting. We also highlight the flexibility of MarmoAAP in task parameter manipulation which accommodates a wide range of behaviors and individual animal capabilities. Furthermore, MarmoAAP provides a platform to perform investigations of neural activity underlying naturalistic social behaviors. MarmoAAP is a versatile and robust tool for advancing our understanding of primate behavior and related cognitive processes. This new apparatus bridges the gap between ethologically relevant animal behavior studies and neural investigations, paving the way for future research in cognitive and social neuroscience using marmosets as a model organism.
+In recent years, the field of neuroscience has increasingly recognized the importance of studying animal behaviors in naturalistic environments to gain deeper insights into ethologically relevant behavioral processes and neural mechanisms. The common marmoset (Callithrix jacchus), due to its small size, prosocial nature, and genetic proximity to humans, has emerged as a pivotal model toward this effort. However, traditional research methodologies often fail to fully capture the nuances of marmoset social interactions and cooperative behaviors. To address this critical gap, we developed the Marmoset Apparatus for Automated Pulling (MarmoAAP), a novel behavioral apparatus designed for studying cooperative behaviors in common marmosets. MarmoAAP addresses the limitations of traditional behavioral research methods by enabling high-throughput, detailed behavior outputs that can be integrated with video and audio recordings, allowing for more nuanced and comprehensive analyses even in a naturalistic setting. We also highlight the flexibility of MarmoAAP in task parameter manipulation which accommodates a wide range of behaviors and individual animal capabilities. Furthermore, MarmoAAP provides a platform to perform investigations of neural activity underlying naturalistic social behaviors. MarmoAAP is a versatile and robust tool for advancing our understanding of primate behavior and related cognitive processes. This new apparatus bridges the gap between ethologically relevant animal behavior studies and neural investigations, paving the way for future research in cognitive and social neuroscience using marmosets as a model organism.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ Here, we introduce an innovative method for studying cooperative behaviors in co
 
 ## Materials and methods
 
-## Apparatus design and construction
+### Apparatus design and construction
 
 We developed an apparatus for an automated version of the cooperative pulling paradigm for marmosets (Figure 1). In this setup, two marmosets are each placed in a separate transparent behavior box set atop the behavioral rig. The marmosets are able to freely move within their individual boxes and have full access to their pull levers in front of them. They can reach out of a slot in the transparent behavior boxes to pull their levers at any time. The levers are controlled by an assembly of components that allow us to program a rotational force to be exerted on the levers. This force can be used to change the position of the levers or adjust the difficulty of pulling the levers. With the incorporated sensors, we can also measure the position of and force exerted on the lever with millisecond precision. Additionally, there are five GoPro cameras and two microphones to capture video and audio recordings, respectively.
 
@@ -57,35 +57,154 @@ The base frame of this apparatus is constructed of modular T-slotted framing and
 
 The core of the apparatus is the assembly that controls the marmosets’ pulling levers (Figure 1B). This assembly is constructed from the materials listed in Table 1. The movement of and force required to pull each pull lever is controlled by a servo motor that is programmed via microcontroller development boards (Teensy). With custom code (Arduino), we can exert rotational force on the levers via motor control. This enables us to change the force with which marmosets must pull the levers. It also allows us to reset the levers to the starting positions after the marmosets have pulled the levers. The levers are also connected to two sensors, a strain gauge and a potentiometer. The strain gauge converts the force exerted onto the lever into an electrical signal. The potentiometer measures the position of the lever in a rotary motion and converts it into an electrical signal. These signals can be transmitted to a computer via the Teensy board and used in the task code to evaluate the marmosets’ lever-pulling actions and contingently trigger reward delivery from the syringe pumps (New Era/DUAL-NE-1000X). A successful lever pull is determined by the lever position passing a specified positional threshold as determined by the potentiometer reading. For the Self-Reward condition, a lever pull is considered successful when either lever passes the positional threshold at any time in the session. For the Mutual Cooperation condition, a pair of lever pulls is considered successful when the second lever pull has passed the positional threshold within 1 s of the partner’s lever having passed the positional threshold.
 
+**Table 1.**
+ Apparatus parts and information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Apparatus item</th>
+      <th>Part</th>
+      <th>Manufacturer/part number</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pull Lever Head</td>
+      <td>Ball Head</td>
+      <td>Custom</td>
+      <td>Lever grip suitable for marmosets</td>
+    </tr>
+    <tr>
+      <td>Pull Lever Shaft</td>
+      <td>6-inch rod</td>
+      <td>ThorLabs / ER6-P4</td>
+      <td>Holds lever head at appropriate height</td>
+    </tr>
+    <tr>
+      <td>Lever Bumpers</td>
+      <td>Load-Rated Threaded Bumper</td>
+      <td>McMaster-Carr/93115K121</td>
+      <td>Bumper for lever to rest on when in starting position</td>
+    </tr>
+    <tr>
+      <td>Lever Assembly Motor</td>
+      <td>Servo Motor</td>
+      <td>ClearPath Integrated Servo System by Teknic/CPM-MCVC-3411S-RLN</td>
+      <td>Exerts rotational force on the lever</td>
+    </tr>
+    <tr>
+      <td>Motor Mounting Plate</td>
+      <td>Custom-designed aluminum mounting plate</td>
+      <td>Custom designed. Aluminum cut by water jet</td>
+      <td>Holds servo motor to base frame</td>
+    </tr>
+    <tr>
+      <td>Potentiometer</td>
+      <td>Rotary Potentiometer—10k Ohm, Linear</td>
+      <td>SparkFun Electronics/COM-09939</td>
+      <td>Delivers real-time positional output of pull lever</td>
+    </tr>
+    <tr>
+      <td>Strain Gauge</td>
+      <td>Load cell</td>
+      <td>SparkFun Electronics/SEN-14729</td>
+      <td>Delivers real-time force reading of pull lever</td>
+    </tr>
+    <tr>
+      <td>Potentiometer-Motor Adaptor</td>
+      <td>Custom designed</td>
+      <td>Custom designed. Aluminum cut by water jet</td>
+      <td>Yokes potentiometer shaft and motor shaft</td>
+    </tr>
+    <tr>
+      <td>Potentiometer Mounting Plate</td>
+      <td>Custom-designed aluminum mounting plate</td>
+      <td>Custom designed. Aluminum cut by water jet</td>
+      <td>Holds the potentiometer in position adjacent to the servo motor</td>
+    </tr>
+    <tr>
+      <td>Potentiometer Plate Crossbars</td>
+      <td>Ø1/2" Optical Post, SS, 8–32 Setscrew, 1/4"-20 Tap, L=2"</td>
+      <td>ThorLabs / TR2</td>
+      <td>Fixes potentiometer mounting plate to motor mounting plate</td>
+    </tr>
+    <tr>
+      <td>Counterweight</td>
+      <td>Custom-designed aluminum bar</td>
+      <td>Custom-designed aluminum bar cut by water jet</td>
+      <td>Offsets pull lever weight to balance system</td>
+    </tr>
+    <tr>
+      <td>Control board</td>
+      <td>Teensy 3.2 USB Development Board</td>
+      <td>SparkFun Electronics/DEV-13736</td>
+      <td>Microcontroller used to integrate motors, potentiometer, and strain gauge</td>
+    </tr>
+    <tr>
+      <td>Breadboard</td>
+      <td>Solder-able Breadboard</td>
+      <td>SparkFun Electronics/PRT-12070</td>
+      <td>Connects Teensy microcontroller to sensors, facilitating control and computer integration</td>
+    </tr>
+    <tr>
+      <td>Syringe Pump</td>
+      <td>Syringe Pump</td>
+      <td>New Era/DUAL-NE-1000X</td>
+      <td>Syringe pump controlled by task code to deliver juice reward</td>
+    </tr>
+    <tr>
+      <td>Frame</td>
+      <td>T-slotted rails</td>
+      <td>McMaster-Carr/47065T553</td>
+      <td>Provide a scaffolding to support lever-motor assembly</td>
+    </tr>
+    <tr>
+      <td>Cameras</td>
+      <td>Go-Pro Cameras</td>
+      <td>Go-Pro/HERO10</td>
+      <td>Record videos of marmosets performing the task</td>
+    </tr>
+    <tr>
+      <td>Audio Recorder</td>
+      <td>Voice Recorder, 16 GB</td>
+      <td>QZTELECTRONIC (via Amazon)</td>
+      <td>Record vocalizations from marmosets performing the task</td>
+    </tr>
+  </tbody>
+</table>
+
 The lever-motor assembly also consists of structural components that hold each component in the appropriate position. The servo motor is attached to the base frame with a custom-designed mounting plate. A custom-designed clamp sits around the shaft of the motor and serves to yoke the strain gauge and pull lever to the movement of the motor shaft. The top side of the strain gauge connects to the top side of the clamp, and the lever is then connected to the opposite end of the strain gauge. This enables lever force reading by the strain gauge each time the lever is pulled. The bottom side of this clamp is attached to a counterweight (Figure 1B). Positioned directly opposite to the motor shaft is the potentiometer (Figure 1B). The potentiometer is yoked to the motor shaft such that when the lever moves, and therefore the motor shaft rotates, the potentiometer shaft also rotates. This ensures that the potentiometer shaft movement and therefore the potentiometer readings correspond to lever movement. To achieve this, we use a 3D-printed potentiometer-motor adapter. One side of this adapter fits onto the motor shaft and the other side fits onto the potentiometer shaft. Both shafts are held securely in place with set screws.
 
 Finally, the body of the potentiometer must be held in a stable position so that it does not also move when the potentiometer shaft rotates. To achieve this, we designed a potentiometer mounting plate. This plate has two holes such that crossbars can be attached to connect this potentiometer mounting plate to the motor mounting plate. Additionally, it has a hole that the potentiometer shaft is passed through, and a smaller hole that the tab on the potentiometer body can be placed in. This tab holds the potentiometer in a fixed position to prevent the potentiometer body from rotating when the potentiometer shaft rotates.
 
-## Animals
+### Animals
 
 We trained a total of seven adult common marmosets (C. jacchus) (3 males, 4 females; 6.0±1.7 years, mean ±s.d.) to perform the MarmoAAP lever-pulling tasks. All marmosets were either pair- or group-housed and lived in the same colony room with a 12 hr light-dark cycle. All pairs tested together were familiar cage-mates. Before testing sessions, water access was temporarily removed, and the AM feed was withheld for 1–3 hr. Water and food were given upon return to the home cage after testing at which point animals had unrestricted access to both. All procedures were approved by the Yale Institutional Animal Care and Use Committee (Yale University IACUC Protocol #2023-20163) and complied with the National Institutes of Health Guide for the Care and Use of Laboratory Animals.
 
-## Behavioral training
+### Behavioral training
 
 Marmosets were first trained to voluntarily enter a transport box. At this stage, they were also trained to target touch the metal rod used for the apparatus’ lever from their home cage in exchange for a marshmallow or mealworm reward. Once marmosets were comfortable entering the transport box, they were habituated to transportation to the testing room and sitting inside the transport box in the room. During training, marmosets were always transported and habituated in cage-mate pairs. Once comfortable in the testing room, marmosets were habituated to the transparent behavior boxes (Figure 1A) and trained to pull the levers (Figure 1A) on the apparatus in exchange for a liquid reward (marshmallow fluff diluted with water; 6 g marshmallow fluff per 20 ml water).
 
 Next, marmosets were trained to perform the Self-Reward task. For this task, marmoset pairs were placed in their separate transparent behavior boxes side-by-side, and each was free to pull their lever at any time in exchange for 0.1 ml of liquid reward. The pull-reward contingency was fully independent across the two marmosets. A monitor in front of them depicted a white square cue for this task (Figure 1C). Once they reliably performed the Self-Reward task, we began training them to perform the Mutual Cooperation task. For this task, we introduced a contingency requiring that they pull their levers within a certain time window of one another to receive mutual liquid rewards. A yellow circle cue was depicted on the monitor in front of them for this task. Training advanced through incremental decreases in the cooperative time window including 3 s, 2 s, then 1.5 s, and finally 1 s. A pair of lever pulls in this condition was deemed successful cooperation if the levers were both pulled past their position thresholds within the cooperative time window. After the follower pulled their lever on a successful pull, a tone was played immediately and 0.2 ml of liquid reward was delivered to both animals 1 s later.
 
-## Multi-animal 3D tracking
+### Multi-animal 3D tracking
 
 We used DeepLabCut2 (DLC2) (Mathis et al., 2018; Nath et al., 2019; Lauer et al., 2022) to track the head frames of marmosets. We labeled the six facial parts for both animals to define the head frames – two ear tufts, two eyes, central blaze, and mouth. The training dataset contained 270 video frames taken from three cameras in three sessions. We used the multi-animal version of the DLC2 model (Lauer et al., 2022), and trained the model with labeled frames from all three cameras for 15,000 iterations until the errors from the loss function reached the plateau (loss <0.001). We applied this trained model to videos taken from all three cameras. This model was also generalizable across sessions and different marmoset individuals. We use Anipose to create the 3D reconstruction of the marmosets’ head frames based on videos taken simultaneously from the three cameras (Karashchuk et al., 2021). We first used the checkerboard method to calibrate the three cameras using Anipose, and then provided the DLC2 tracking results from all three cameras at the same time to Anipose to finalize the triangulations.
 
-## Head chamber implantation and craniotomy
+### Head chamber implantation and craniotomy
 
 One animal received a head chamber implant and craniotomy. After the head chamber was surgically implanted, the animal was allowed to recover for 2 weeks. After the recovery, a second procedure was performed to create a craniotomy and mount a screw microdrive (‘nanodrive’; Cambridge Neurotechnologies Inc) holding a 64-channel linear array electrode (NeuroNexus) onto the skull of the marmoset. Craniotomy placement was guided by CT scans and stereotaxic coordinates. The electrode’s electronic interface board was then connected to the White Matter eCube headstage chips (White Matter LLC) which were secured in the marmoset’s head chamber. The implanted electrode was then lowered into the desired cortical site.
 
-## Neural recordings
+### Neural recordings
 
 Recordings were logged using White Matter’s eCube headstage system. At the beginning of each recording session, the marmoset was restrained, but not head-fixed, in a chair, and the White Matter’s data logger was connected to the headstage chips in the head chamber. The logger was secured in place with a cap. The marmoset was previously habituated to this restraint process, and the process typically lasted approximately 5 min. The marmoset was then transferred to their transparent behavior box, which was placed on the rig next to their partner’s box, allowing both to engage in the behavioral task. On neural recording days, behavioral sessions consisted of one block of the Mutual Cooperation task and one block of the Self-Reward task, each lasting approximately 10 min. After the behavioral testing, the marmoset was again placed in the chair for removal of the data logger. Electrical signals were collected at 20 kHz from the probe. Action potential waveforms were extracted using Kilosort2 (Pachitariu et al., 2023) and manually sorted into single units and multi-units using phy, an open-source Python library for manual clustering of electrophysiology data.
 
 ## Results
 
-## Marmosets perform high number of trials on automated lever-pulling tasks
+### Marmosets perform high number of trials on automated lever-pulling tasks
 
 The implementation of MarmoAAP yielded significant advancements in the ability to study complex behaviors in marmoset monkeys. In the initial phase of our study, we successfully trained a cohort of seven marmosets to perform the Self-Reward condition in which they could pull their lever at any time to earn a 0.1 ml juice reward for themselves. On average, marmosets pulled 163±56 (mean ± s.e.m.) times per 20 min behavioral session demonstrating high levels of motivated behavior (Figure 2A). This training phase thus demonstrated the marmosets’ capacity to acquire and consistently execute lever-pulling behavior, providing a dependable means to elicit a high number of motivated and appetitive behaviors.
 
@@ -101,7 +220,7 @@ This learning progression was further characterized by quantifiable metrics refl
 
 Notably, the utilization of the automated behavioral paradigm enabled marmosets to perform an average of 146 trials per 20 min behavioral session across all sessions of learning the task, with an average of 47.9±3.3 trials (mean ± s.e.m.) resulting in successful level pulls (i.e. cooperation in Mutual Cooperation condition) and 98.9±6.6 trials resulting in unsuccessful attempts (Figure 2A). It’s important to note that these numbers reflect performance across all sessions, including those during the initial learning phase, where success rates were often below the 50% proficiency threshold. This is a substantial improvement compared to the average of 10.4 trials per session observed in studies employing more manual cooperation paradigms. This heightened throughput, coupled with high repeatability, emerges as a critical asset for dissecting the intricacies of behavioral dynamics and the neural computations underlying complex behaviors.
 
-## Customizable task parameters allow for adaptation to marmosets’ abilities
+### Customizable task parameters allow for adaptation to marmosets’ abilities
 
 Our behavior training also underscored the importance of task parameter adjustability in optimizing marmosets’ performance. We tailored MarmoAAP to individual marmosets by fine-tuning parameters such as the distance required for a lever pull to register as a full pull and the force needed to initiate the lever-pulling action. By initially reducing the force required to pull the lever to 50 g, marmosets were able to smoothly transition into learning the task. Once they became habituated to the lever-pulling paradigm, we increased the lever-pulling force to 100 g and maintained this force level for Self-Reward and Mutual Cooperation tasks.
 
@@ -109,7 +228,7 @@ Additionally, we customized the reward magnitude offered for task completion to 
 
 Furthermore, MarmoAAP can easily be adapted to a wide variety of behavioral paradigms both in terms of the hardware configuration and parameters set by the task code. Given the modular nature of the apparatus design, the assembly can easily be adjusted to increase or decrease the number of pull levers as well as to change their configuration relative to one another. The task requirements imposed on the animals can also be easily adjusted by changing the task code. For example, the cooperative pull timing contingency, the force required to pull the lever, lever pull distance, and reward timing are just a few examples of task parameters that can be adjusted through the task code. One can imagine a wide variety of experiments that could be achieved with this apparatus to test cognitive processes such as, but not limited to, observational learning, memory, competition, altruism, executive function, and a host of other motivated behaviors.
 
-## High-resolution behavioral data allows for advanced analyses
+### High-resolution behavioral data allows for advanced analyses
 
 MarmoAAP facilitates comprehensive collection of detailed behavioral data across a variety of modalities. Its design allows for the capture of millisecond level outputs detailing lever positioning (Figure 2B) and the force applied to the lever. Additionally, it can be built to support cameras to record multiple angles for video data collection and incorporate microphones to record audio. Leveraging this video data, we used automated behavioral marking tools like DeepLabCut2 (DLC2) (Mathis et al., 2018; Nath et al., 2019) to obtain frame-by-frame annotations of the marmosets’ head frames (Figure 2D). This rich dataset serves as a foundation for subsequent analyses, including the exploration of inferred gaze direction, spatial location within the enclosure, and overall movement trajectories.
 
@@ -119,7 +238,7 @@ Recognizing the highly vocal nature of marmosets and their extensive repertoire 
 
 By incorporating these behavioral metrics from video and audio recordings with the timing of marmosets’ pulling behaviors and reward delivery, one can gain a more comprehensive understanding of the intricate interplay between behavior, vocal communication, and cooperative interactions in this species using an automated pulling task.
 
-## Precise synchronization with reproducible behavior allows behavior-locked neural data analyses
+### Precise synchronization with reproducible behavior allows behavior-locked neural data analyses
 
 In addition to providing rich behavioral data and offering flexibility for various tasks, MarmoAAP and associated behavioral paradigms create an avenue for simultaneous neural recordings while freely moving marmosets are engaged in tasks implemented by MarmoAAP. MarmoAAP significantly increases the number of trials available for analysis and thus ensures ample statistical power when investigating the relationship between neural activity and behaviors. The highly reproducible lever-pulling behavior in marmosets within a naturalistic context strikes a crucial balance between conventional laboratory tests, where monkeys are immobilized and tasks lack natural movement but are tightly controlled, and more naturalistic animal behavior studies, where animals exhibit unrestrained behavior but lack regular behavioral benchmarks for studying the underlying neural dynamics (Fan et al., 2021; Knöll et al., 2018).
 
@@ -135,11 +254,11 @@ The Marmoset Automated Apparatus for Pulling (MarmoAAP) bridges the gap between 
 
 The development of MarmoAAP arrives at a critical time, coinciding with burgeoning efforts to engineer genetically modified marmosets (Kaiser and Feng, 2015; Kishi et al., 2014; Kumita et al., 2019; Sato et al., 2016). As such models progress, it is essential to have robust methodologies that can accurately measure the features of marmoset social interactions. Precise behavioral assays are indispensable for future investigations aiming to elucidate the effects of genetic modifications on social behavior and test potential therapeutic approaches. Just as neurological abilities such as locomotion can be quantitatively assessed (Pickett et al., 2020), it is critical to establish equivalent metrics for evaluating complex behavioral patterns in marmosets.
 
-## Automated task paradigm for naturalistic social exploration
+### Automated task paradigm for naturalistic social exploration
 
 Using MarmoAAP, we were able to elicit consistent and highly repeatable motivated behaviors in freely moving marmoset monkeys. This task design strikes a pivotal balance between traditional naturalistic animal behavior studies, which benefit from a high degree of naturalism but often suffer from low behavioral resolution and limited trial counts, and conventional lab studies, which are highly controlled but lack natural ethological relevance (Fan et al., 2021). Previous research has underscored the substantial impact of behavioral context, specifically the distinction between constrained and freely moving conditions, on prefrontal cortical representations of social information (Jovanovic et al., 2022). Our shift toward a paradigm that integrates naturalistic, yet highly repeatable, decisions and actions is imperative for the comprehensive exploration of natural social behaviors and the elucidation of their underlying neural mechanisms. This approach addresses the limitations of paradigms that fall short of faithfully capturing the intricacies of social interactions, emphasizing the importance of a more ecologically valid framework for advancing our understanding of the neural dynamics that underpin fundamental aspects of primate social brain functions.
 
-## Quantification of high-throughput cooperative behaviors
+### Quantification of high-throughput cooperative behaviors
 
 We show that marmosets exhibit a rapid acquisition of proficiency in the lever-pulling action and demonstrate their capacity to grasp more complex task contingencies, such as the cooperative pulling task highlighted in this study. Our findings also showcase that the detailed behavioral data outputs from the apparatus, including millisecond-level timestamps for lever pulls and reward deliveries, enable us to quantitatively assess marmosets’ learning and performance on this task. Significantly, our study demonstrates that the automated apparatus facilitates a substantial 15-fold increase in the number of trials conducted per session compared to conventional pulling paradigms. This increased trial throughput is of critical importance for investigations of the neural mechanisms underlying these social behaviors, ensuring the acquisition of a robust dataset for comprehensive analyses of neural activity during naturalistic behavioral settings. Moreover, the ability to examine complex social interactions with high-throughput data might be particularly important for characterizing transgenic marmoset models.
 
@@ -147,20 +266,20 @@ While our study demonstrates a considerable increase in trial throughput using t
 
 We experimented with several liquid rewards and ultimately selected diluted marshmallow water, as it was consistently consumed by all marmosets. However, further optimization tailored to individual marmosets’ preferences could potentially enhance motivation and extend the duration of task engagement, thereby increasing the number of trials per session. Additionally, our approach to food and water restriction was minimal, involving only the removal of food and water for 1–3 hr each morning without limiting the overall daily intake. For future studies, researchers might consider implementing more controlled and stringent food and water restrictions, in line with established protocols, to increase the marmosets’ motivation by ensuring they are sufficiently hungry or thirsty during task sessions. While our primary focus was on the design, development, and validation of the apparatus and methods, we recognize the potential for further optimization in these areas to maximize the efficacy of the paradigm for neurophysiological and cognitive experiments.
 
-## Manipulability and adaptability of task parameters and apparatus
+### Manipulability and adaptability of task parameters and apparatus
 
 Importantly, the configuration of MarmoAAP allows for precise adjustment of task parameters, a key feature for optimizing marmoset performance and facilitating investigations into a diverse array of complex behaviors. Experimenters can easily fine-tune parameters in the task code to customize apparatus functionality for various behavioral tasks or to accommodate the specific needs and capabilities of individual animals. This adaptability not only expedites the animal training process but also allows for a nuanced exploration of the intricate dimensions of cooperative behaviors, ensuring that experimental conditions closely align with research objectives. Additionally, the design of MarmoAAP is modular, enabling it to be built in different configurations, such as varying the positioning or number of motors and levers. This modularity allows the apparatus to be adapted not only for different types of social tasks but also for non-social tasks, further expanding its utility. Such flexibility is indispensable not only for cooperative tasks but also positions our paradigm as a versatile tool for delving into cognitive processes beyond cooperation.
 
 Although this paradigm was developed specifically for marmosets, its adaptable design suggests it could be readily modified for use in other species. One key modification would involve adjusting the size of the servo motor and the lever, as the current setup is tailored to small animals like marmosets, which can be trained to exert a pulling force of approximately 500–600 g. For larger animals, incorporating a larger motor capable of exerting greater force, along with more durable parts, would be recommended. By making these adjustments, researchers could tailor the paradigm to suit the physical and cognitive characteristics of different animals, enabling comparative studies across species. This is particularly valuable, as it allows for the examination of how various species approach the same social challenges, providing deeper insights into the nuances of their socio-cognitive abilities.
 
-## High-resolution behavioral data and multimodal analyses
+### High-resolution behavioral data and multimodal analyses
 
 In tandem with the intricate behavioral outputs derived from the apparatus, MarmoAAP incorporates the integration of information from many sources and modalities. Utilizing video recordings obtained during the task, we showcased the application of automated behavioral marking tools, such as DLC2 (Mathis et al., 2018; Nath et al., 2019), to probe the interplay between behavioral dynamics—particularly gaze behaviors—and performance on the cooperative task. Complementarily, the inclusion of audio recordings enriches this dataset, allowing for a comprehensive examination of marmosets’ vocal communication patterns and their correlation with task events. This multimodal approach establishes a robust foundation for nuanced investigations into the cognitive processes and social dynamics of marmosets, aligning with a goal toward a comprehensive understanding of primate social behaviors.
 
-## Integration with neural recordings
+### Integration with neural recordings
 
 A key attribute of the MarmoAAP design is its capacity to seamlessly integrate with wireless electrophysiology recordings, providing an avenue to explore the neural underpinnings of behavioral processes. The apparatus allows for precise time-locking of task and behavioral events with neural activity as demonstrated in the dlPFC and the OFC. With a substantially increased number of trials amassed through MarmoAAP, this demonstration supports the possibility of examining the neural dynamics underlying cooperative behaviors in marmosets. Our apparatus and paradigm represent a noteworthy advancement, bridging the gap between traditional animal behavior studies that address ethologically relevant behaviors of animals and precise, highly controlled investigations of neural activity.
 
-## Conclusion and future directions
+### Conclusion and future directions
 
 In conclusion, we hope that MarmoAAP and the associated automated cooperative pulling paradigm will make a significant contribution to the study of marmoset social behaviors in the field. The combination of a highly modular and adaptable design, high-resolution behavioral data, and integration with neural recordings positions our paradigm as a robust and versatile tool for unraveling the complexities of primate behavior. As we move forward, this paradigm not only serves as a platform for in-depth investigations into marmoset social dynamics but also holds the promise of extending our understanding of cognitive processes and neural mechanisms across a variety of complex behaviors. The scientific community can leverage this paradigm to explore a myriad of cognitive processes, from observational learning to executive function, laying the groundwork for comprehensive insights into the neural mechanisms of complex behaviors in nonhuman primates.

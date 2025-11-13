@@ -29,9 +29,7 @@ We added this point as “The asymptotic value (extrapolated from the exponentia
 
 Figure 1—figure supplement 1B, right suggests that the recovery is sometimes only partial. Are longer recordings available?
 
-The partial recovery observed in Figure 1—figure supplement 1B is probably due to photobleaching. In Figure 1—figure supplement 1B, because we used field stimulation to elicit exocytosis, which stimulates all the calyx, we could not use neighboring non-stimulated calyx terminal as a reference as in Figure 7—figure supplement 2, hence photobleaching was not corrected. In Figure 7—figure supplement 2 figure legend, we added “The apparent partial recovery is due to photobleaching (Hua et al., 2011).” Subtracting the baseline decline before stimulation also suggests that incomplete recovery is likely to be due to photobleaching (please see Author response image 1 ).10.7554/eLife.14643.016Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.14643.016
-
-DOI: http://dx.doi.org/10.7554/eLife.14643.016
+The partial recovery observed in Figure 1—figure supplement 1B is probably due to photobleaching. In Figure 1—figure supplement 1B, because we used field stimulation to elicit exocytosis, which stimulates all the calyx, we could not use neighboring non-stimulated calyx terminal as a reference as in Figure 7—figure supplement 2, hence photobleaching was not corrected. In Figure 7—figure supplement 2 figure legend, we added “The apparent partial recovery is due to photobleaching (Hua et al., 2011).” Subtracting the baseline decline before stimulation also suggests that incomplete recovery is likely to be due to photobleaching (please see Author response image 1 ).10.7554/eLife.14643.016Author response image 1.
 
 Do the authors assume that the decline in fluorescence (Figure 1E, top) returns to the pre-stimulation baseline? If so, how can this assumption be justified?
 

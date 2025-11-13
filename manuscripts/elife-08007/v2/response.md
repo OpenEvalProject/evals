@@ -95,9 +95,7 @@ We agree with this point – please see answer to Essential Revision #5.
 
 Please see answer to Essential Revision #6. Figure 5F now describes the methylation state of AGS-unique DRIP peaks clearly showing DNA hypomethylation in AGS1, AGS2, AGS4, but not AGS5 samples.
 
-In answer to your specific request regarding the methylation state of AGS-unique DRIP peaks that overlap retroelements, we are providing Author response image 1.10.7554/eLife.08007.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08007.020
-
-DOI: http://dx.doi.org/10.7554/eLife.08007.020
+In answer to your specific request regarding the methylation state of AGS-unique DRIP peaks that overlap retroelements, we are providing Author response image 1.10.7554/eLife.08007.020Author response image 1.
 
 7) The lack of overlap between AGS unique DRIP seq peaks and regions of GC skew/ annotated TSSs is taken as an indication that the aberrant RNA:DNA hybrids detected do not arise co-transcriptionally. Barring a direct test of the role of transcription on RNA: DNA hybrids in AGS cells, I'm not sure one can rule out a transcription-dependent mechanism at this juncture.
 

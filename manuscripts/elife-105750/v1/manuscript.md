@@ -45,7 +45,7 @@ Data are presented as arithmetic means of the results obtained from multiple
 
 replicate experiments ± standard deviations. Statistical significance was determined by Student’s paired t-test using Microsoft Excel or Graph Pad Prism. Statistical significance was considered at P values of 0.05.
 
-## Figures and legends
+### Figures and legends
 
 1) Figure 1: There was an unintentional error in significance (p-value) when comparing cAMP secretion by WT-H37Rv and phoPR-KO shown in Figure 1B. The two star significance (**) is now changed to non-significant (ns). The change had no net effect on the reported values. The error was corrected in the associated Figure.
 

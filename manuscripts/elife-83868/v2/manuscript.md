@@ -19,21 +19,21 @@
 
 ### Affiliations
 
-1. https://ror.org/0245cg223 Institute of Biochemistry and Molecular Biology, ZBMZ, Faculty of Medicine, University of Freiburg Freiburg Germany
-2. https://ror.org/0245cg223 Faculty of Biology, University of Freiburg Freiburg Germany
-3. https://ror.org/0245cg223 Institute of Medical Biometry and Statistics (IMBI), Faculty of Medicine and Medical Center, University of Freiburg Freiburg Germany
-4. https://ror.org/0245cg223 Institute of Physics, University of Freiburg Freiburg Germany
-5. https://ror.org/0245cg223 Biochemistry and Functional Proteomics, Institute of Biology II, Faculty of Biology, University of Freiburg Freiburg Germany
-6. https://ror.org/0245cg223 Institute of Physiology, Faculty of Medicine, University of Freiburg Freiburg Germany
-7. https://ror.org/0245cg223 CIBSS - Centre for Integrative Biological Signalling Studies, University of Freiburg Freiburg Germany
-8. https://ror.org/0245cg223 BIOSS Centre for Biological Signalling Studies, University of Freiburg Freiburg Germany
-9. https://ror.org/00fbnyb24 Department of Biochemistry, Theodor-Boveri-Institute, University of Würzburg Würzburg Germany
+1. Institute of Biochemistry and Molecular Biology, ZBMZ, Faculty of Medicine, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+2. Faculty of Biology, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+3. Institute of Medical Biometry and Statistics (IMBI), Faculty of Medicine and Medical Center, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+4. Institute of Physics, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+5. Biochemistry and Functional Proteomics, Institute of Biology II, Faculty of Biology, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+6. Institute of Physiology, Faculty of Medicine, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+7. CIBSS - Centre for Integrative Biological Signalling Studies, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+8. BIOSS Centre for Biological Signalling Studies, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+9. Department of Biochemistry, Theodor-Boveri-Institute, University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
 
 † Corresponding author
 
 ## Abstract
 
-Calcineurin B homologous protein 3 (CHP3) is an EF-hand Ca 2+ -binding protein involved in regulation of cancerogenesis, cardiac hypertrophy, and neuronal development through interactions with sodium/proton exchangers (NHEs) and signalling proteins. While the importance of Ca 2+ binding and myristoylation for CHP3 function has been recognized, the underlying molecular mechanism remained elusive. In this study, we demonstrate that Ca 2+ binding and myristoylation independently affect the conformation and functions of human CHP3. Ca 2+ binding increased local flexibility and hydrophobicity of CHP3 indicative of an open conformation. The Ca 2+ -bound CHP3 exhibited a higher affinity for NHE1 and associated stronger with lipid membranes compared to the Mg 2+ -bound CHP3, which adopted a closed conformation. Myristoylation enhanced the local flexibility of CHP3 and decreased its affinity to NHE1 independently of the bound ion, but did not affect its binding to lipid membranes. The data exclude the proposed Ca 2+ -myristoyl switch for CHP3. Instead, a Ca 2+ -independent exposure of the myristoyl moiety is induced by binding of the target peptide to CHP3 enhancing its association to lipid membranes. We name this novel regulatory mechanism ‘target-myristoyl switch’. Collectively, the interplay of Ca 2+ binding, myristoylation, and target binding allows for a context-specific regulation of CHP3 functions.
+Calcineurin B homologous protein 3 (CHP3) is an EF-hand Ca2+-binding protein involved in regulation of cancerogenesis, cardiac hypertrophy, and neuronal development through interactions with sodium/proton exchangers (NHEs) and signalling proteins. While the importance of Ca2+ binding and myristoylation for CHP3 function has been recognized, the underlying molecular mechanism remained elusive. In this study, we demonstrate that Ca2+ binding and myristoylation independently affect the conformation and functions of human CHP3. Ca2+ binding increased local flexibility and hydrophobicity of CHP3 indicative of an open conformation. The Ca2+-bound CHP3 exhibited a higher affinity for NHE1 and associated stronger with lipid membranes compared to the Mg2+-bound CHP3, which adopted a closed conformation. Myristoylation enhanced the local flexibility of CHP3 and decreased its affinity to NHE1 independently of the bound ion, but did not affect its binding to lipid membranes. The data exclude the proposed Ca2+-myristoyl switch for CHP3. Instead, a Ca2+-independent exposure of the myristoyl moiety is induced by binding of the target peptide to CHP3 enhancing its association to lipid membranes. We name this novel regulatory mechanism ‘target-myristoyl switch’. Collectively, the interplay of Ca2+ binding, myristoylation, and target binding allows for a context-specific regulation of CHP3 functions.
 
 ## Introduction
 
@@ -49,15 +49,35 @@ The interaction of CHP3 with NHE1 is an ideal system to analyse the effects of m
 
 ## Results
 
-## Pure fully myristoylated and non-myristoylated untagged CHP3 are functional in binding a single calcium ion
+### Pure fully myristoylated and non-myristoylated untagged CHP3 are functional in binding a single calcium ion
 
 In order to dissect the effects of Ca2+ and myristoylation on target and lipid binding of human CHP3, we aimed for pure untagged CHP3 and myristoylated CHP3 (mCHP3). Non-myristoylated CHPs were previously produced with affinity tags and purified by corresponding affinity chromatography (Gutierrez-Ford et al., 2003; Liang et al., 2020; Fuchs et al., 2018). Yet, the peptide tag used for affinity purification of rat CHP1 was shown to interact with the hydrophobic target-binding pocket (Naoe et al., 2005) and might interfere with conformational changes. Myristoylated untagged CHP1 had been produced with low yield by co-expression with yeast N-myristoyltransferase (Timm et al., 1999). Here, we produced untagged CHP3 and mCHP3, the latter by co-expression with human N-myristoyltransferase 1, and used Ca2+-dependent hydrophobic interaction chromatography (HIC) for purification. HIC has been previously used for purification of other EFCaBPs including CaM and calcineurin B (Tanaka et al., 1984; Wei and Lee, 1997). Combining HIC and gel filtration, we obtained pure untagged proteins, as shown by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) analysis (Figure 1A) with an average yield of 9 mg/l of expression culture. Single symmetrical peaks in the elution profiles of analytical gel filtration indicated monodisperse protein preparations of CHP3 and mCHP3. Both proteins form only monomers under reducing conditions in the presence of 2 mM TCEP (Figure 1—figure supplement 1). The slightly higher electrophoretic mobility of mCHP3 compared to CHP3 resolved in high-resolution SDS–PAGE analysis already indicated that the protein was covalently modified (Figure 1A). To check the degree of myristoylation, we analysed mCHP3 and CHP3 by native mass spectrometry (MS). The measured mass of mCHP3 was increased by ~211 Da (Figure 1B, bottom) in comparison to CHP3 (Figure 1B, top), which is in agreement with the covalent attachment of one myristoyl group (Mr = 210 Da). Native MS analysis of three independently produced and purified samples confirmed reproducible complete myristoylation of recombinant CHP3. Interestingly, the ion mobility arrival time was shorter for mCHP3 (Figure 1C) indicating a more compact shape of mCHP3 compared to CHP3. To reveal the stoichiometry of Ca2+ binding, we performed native MS analysis of CHP3 and mCHP3 after addition of Ca2+. The molecular masses of both proteins were shifted by ~40 Da (Figure 1B), which corresponds to the binding of a single Ca2+ ion and, thus, documents that both recombinant CHP3 and mCHP3 are functional in respect to Ca2+ binding and confirms the presence of one Ca2+-binding site (Gutierrez-Ford et al., 2003; Perera et al., 2001).
 
-## Ca2+-induced conformational changes are similar in CHP3 and mCHP3
+![Figure 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) analysis (16%, tricine mini gels) showed a mobility shift of mCHP3 in comparison to CHP3; positions of co-migrated molecular mass standards are indicated in kDa on the left; Figure 1—source data 1: Full gel for (A). (B) Left, deconvoluted mass spectra of CHP3 (top) and mCHP3 (bottom) show a measured intact protein mass of 24.617 and 24.828 kDa (∆Mr = 211 Da), which is in line with the addition of the myristoyl group of 210 Da. For mCHP3, also low abundant dimeric species were observed by native MS analysis. Right, zoom-in spectra in the range of 24.8 ± 0.3 kDa that show differences in masses as indicated by dashed lines. In the presence of Ca2+, the measured intact protein mass of CHP3 and mCHP3 was increased by ~40 Da (mass accuracy ± 1 Da), respectively, indicating binding of one Ca2+ ion. (C) Ion mobility arrival time distributions for the +8 charge state of CHP3 (solid line) and mCHP3 (dashed line). A shoulder with shorter arrival times indicates the presence of a low abundant dimeric species for CHP3 and mCHP3. Arrival times of mCHP3 were reduced by 1.36 ms (±0.37 ms; n = 3; p = 0.024) compared to CHP3. See Figure 1—figure supplement 2 for non-deconvoluted mass spectra showing charge state distributions of CHP3 and mCHP3 measured in the positive ion mode by native MS.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The position of elution peaks of mass standards (aldolase: 158 kDa, conalbumin: 75 kDa, carbonic anhydrase: 29 kDa, cytochrome c: 12.4 kDa) are indicated on the top.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig1-figsupp2-v2.jpg)
+
+### Ca2+-induced conformational changes are similar in CHP3 and mCHP3
 
 Next, we analysed the effect of Ca2+ binding in the presence of Mg2+ and of the N-terminal myristoylation on CHP3 conformation. For this purpose, we optimized the FPH (fluorescence probe hydrophobicity) assay, previously developed to monitor Ca2+-induced conformational changes of CHPs (Liang et al., 2020), by using the dye ProteOrange (Lumiprobe) at defined micromolar concentration (see Materials and methods). In this assay, the fluorescence of the dye strongly increases upon its binding to hydrophobic protein surfaces (Niesen et al., 2007).
 
 In the Mg2+-bound state, CHP3 and mCHP3 showed low fluorescence (Figure 2—figure supplement 1A). After Ca2+ addition, the fluorescence intensity increased by 30% and 40% for CHP3 and mCHP3, respectively, reflecting an increase in hydrophobicity (Figure 2A). Ca2+ removal by EGTA reduced the fluorescence to the initial level, indicating the reversibility of Ca2+ binding and of the respective conformational changes. Depletion of both Mg2+ and Ca2+ by EDTA turned the protein into the non-physiological apo-state, the fluorescence was in between that of the Mg2+- and Ca2+-bound states. The proteins appeared to be destabilized in the apo-state and could not be reverted into the functional form by Ca2+ addition (Figure 2A). Interestingly, the N-terminal myristoylation did not affect the conformational changes of CHP3. As a control, we probed the hydrophobicity of recoverin, the prototypic protein with a classical Ca2+-myristoyl switch (Ames et al., 1997; Figure 2—figure supplement 1B). Ca2+ induced similar changes of non-myristoylated recoverin as of CHP3 in the FPH assay, whereas hydrophobicity of the myristoylated protein increased much stronger (about 3.5-fold) in response to Ca2+ binding, which most likely resulted from the exposure of the myristic group.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig2-v2.jpg)
+
+**Figure 2.:** (A) Kinetic fluorescence probe hydrophobicity (FPH) assay. Fluorescence of dye bound at hydrophobic protein surfaces was monitored at λem = 585 nm (excitation λex = 470 nm) and at 22°C. Protein (1.5 µM) was prepared in the Mg2+-bound state (2 mM MgCl2, 1 mM EGTA). CaCl2, EDTA, and EGTA were sequentially added as indicated. First, 2 mM CaCl2 was added and then chelated with addition of 3 mM EGTA. Next, 3 mM EDTA was added to remove both divalent ions (CHP3 in apo-state) followed by another addition of 4 mM CaCl2. (B) Intrinsic tryptophan fluorescence was monitored at λem = 330 nm (excitation λex = 280 nm) at 22°C. Protein (2.5 μM) in the Mg2+-bound state was used and the additions were performed as described above for the FPH assay. (C) AlphaFold2.0 model (Varadi et al., 2022) of CHP3 in surface presentation, with surface coloured for hydrophobicity (Eisenberg et al., 1984). The model most likely resembles the open or target-bound conformation. The single tryptophan residue highlighted in green (Trp191) is located in the hydrophobic target-binding pocket. EC50 values for binding of Ca2+ to CHP3 (D) and mCHP3 (E) determined with FPH assay. Fluorescence of samples with CHP3 or mCHP3 at different Ca2+ concentrations was measured at 590 nm in the presence of 2 mM MgCl2. Three biological replicates (shown in different colours) with three to four technical replicates each for CHP3 and mCHP3 were measured. The data were fitted with Hill equation using global non-linear regression. (F) 95% confidence intervals (Δχ2 of 3.84) of EC50 values for binding of Ca2+ calculated with profile likelihood method. EC50 values (asterisks) are shown with confidence intervals in square brackets below the graph.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Original fluorescence traces of the FPH assay for three biological replicates of CHP3 and mCHP3. (B) Normalized fluorescence traces of the FPH assay for myristoylated and non-myristoylated recoverin (mRec and Rec).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig2-figsupp2-v2.jpg)
 
 To prove that changes in the dye-mediated fluorescence observed in the FPH assay were indeed caused by conformational changes, we probed the intrinsic tryptophan fluorescence of CHP3 and mCHP3. According to the 3D model of CHP3 predicted with AlphaFold2.0 (Varadi et al., 2022), the single tryptophan residue (Trp191) is located in CHP3’s hydrophobic target-binding pocket at the protein surface (Figure 2C) in line with the measured emission maxima of CHP3 and mCHP3 of ~330 nm (Figure 2—figure supplement 2). Intensity and emission maximum of intrinsic tryptophan fluorescence depend on the local environment of the residue (Vivian and Callis, 2001; Eftink, 2000). Ca2+ addition decreased the intrinsic fluorescence of CHP3 (Figure 2B) reflecting conformational changes accompanied with changes in the local environment of Trp191 in the hydrophobic pocket. This is in line with an increase of CHP3 hydrophobicity observed with the FPH assay. These conformational changes monitored by intrinsic fluorescence were also reverted by Ca2+ removal (EGTA addition) (Figure 2B). Only for mCHP3, the removal of both Mg2+ and Ca2+ caused irreversible changes in the intrinsic fluorescence.
 
@@ -65,27 +85,61 @@ In order to evaluate whether myristoylation affects the Ca2+-binding affinity of
 
 Combining the data of the FPH assay and of the intrinsic tryptophan fluorescence, we conclude that CHP3 undergoes reversible Ca2+-induced conformational changes as typical for a Ca2+ sensor protein. The hydrophobic target-binding pocket of CHP3 is occluded in the Mg2+-bound state (closed conformation), and becomes exposed to the environment upon Ca2+ binding (open conformation).
 
-## Ca2+ binding and myristoylation independently affect thermal stabilities of CHP3 and its complex with NHE1 target peptide
+### Ca2+ binding and myristoylation independently affect thermal stabilities of CHP3 and its complex with NHE1 target peptide
 
 To further dissect the effects of Ca2+ and N-terminal myristoylation on CHP3, we probed the thermal stability of CHP3 alone and in complex with the CHP-binding domain of NHE1 (CBD, NHE1 residues 525–545) using nano-differential scanning fluorimetry (nanoDSF). To obtain the CHP3:CBD complex used for nanoDSF, we co-expressed CHP3 and CBDHis using the pETDuet-1 system and purified the resulting complex. For the myristoylated complex (mCHP3:CBD), simultaneous co-expression of three proteins (CHP3, CBDHis, and human N-myristoyltransferase 1 (NMT1)) from a modified pETDuet-1 vector was performed, and the resulting complex was purified. Myristoylation of CHP3 in the complex was confirmed by electrospray ionization (ESI)-TOF mass spectrometric analysis. Free CHP3 had the highest thermal stability in the Mg2+-bound state (Tmapp 70.1 ± 0.3°C), and Ca2+ binding reduced the melting point to 66.9 ± 0.2°C (CHP3 in Figure 3). In the presence of both ions, the Ca2+ effect appeared to be dominant with a melting temperature (Tmapp) of 65.0 ± 0.9°C. In line with the results of the FPH assay, which indicated a destabilized apo-state, the latter showed strongly reduced thermal stability (Tmapp 56.1 ± 0.5°C). Notably, binding of the target peptide CBD strongly increased the thermal stability for the Ca2+-bound and apo-states (compare CHP3 and CHP3:CBD in Figure 3), with about 12°C in the presence of Ca2+, 13°C in the presence of Ca2+ plus Mg2+ and about 11°C for the apo-state. Thus, the CHP3:CBD complex showed the highest thermal stability when Ca2+ was bound. Surprisingly, CBD binding did not have any effect on the thermal stability of the Mg2+-bound state.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig3-v2.jpg)
+
+**Figure 3.:** Thermal stabilities of free proteins and complexes with the target peptide CBD were measured with nanoDSF in the presence of either 10 mM Mg2+, Ca2+, Ca2+ + Mg2+, or EDTA. Temperatures of thermal unfolding (apparent Tm) are shown as mean ± standard deviation (SD) of three independent biological replicates. Raw nanoDSF traces are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig3-figsupp1-v2.jpg)
+
 The N-terminal myristoylation decreased the Tmapp of CHP3 in all states to the same degree (9.8°C for Mg2+-bound and 10.6°C for Ca2+-bound states, 10.9°C in the presence of both ions, 4.5°C for the already destabilized apo-state) (compare CHP3 and mCHP3 in Figure 3). A similar destabilizing effect of the myristoylation was observed for the mCHP3:CBD complex with a decrease of Tmapp in the range from 6.4°C for the Ca2+-bound state to 3.2°C for the apo-state (compare CHP3:CBD and mCHP3:CBD in Figure 3). Thus, the N-terminal myristoylation lowers the stability of CHP3 independently of the bound ion and of the target binding that means independent of the conformation.
 
-## Ca2+ binding to CHP3 allows more effective cleavage within EF-2, whereas CBD binding drastically increases proteolytic stability
+### Ca2+ binding to CHP3 allows more effective cleavage within EF-2, whereas CBD binding drastically increases proteolytic stability
 
 In order to pinpoint flexible regions of CHP3 in a given conformation and to probe whether these regions are affected by myristoylation, ion and target binding, we performed limited trypsinolysis of CHP3, mCHP3, and their complexes with CBD in the presence of Ca2+, Mg2+, or EDTA.
 
 CHP3 was readily proteolysed by trypsin with nearly one half of the protein already degraded after 5 min and almost no full-length protein remained after 60-min incubation (Figure 4A, top, FL). Trypsin cleavage sites (Arg and Lys residues) are distributed all over the CHP3 amino acid sequence (Figure 4—figure supplement 1A), yet productive cleavage requires not only availability of the site but also flexibility of the peptide chain at the cleavage site to adapt to the active site of the protease (Teilum et al., 2009). During the reaction, we observed the appearance of two major fragments (labelled 1 and 2 in Figure 4A). We analysed those fragments with MS to determine exact masses and precisely locate the cleavage sites (Figure 4—figure supplement 1C). Fragment 1 has a mass of 17.92 kDa corresponding to residues 2–155 of CHP3 (UniProtID Q96BS2-1) lacking the C-terminal part (Figure 4C). Fragment 2 has a mass of 9.63 kDa and includes residues 74–155. Thus, it derived from a cleavage of fragment 1 within the predicted EF-2 (Figure 4C). Noteworthy, both fragments still contain the single functional EF-hand of CHP3 (EF-3). Target peptide binding nearly completely prevented the trypsin cleavage, and the intensity of the full-length CHP3 band was only slightly reduced even after 60-min incubation (Figure 4A, bottom). Next, we compared the proteolytic stability of CHP3 in different states. In the presence of only Ca2+, Mg2+, or both ions together, the degradation rate of the full-length protein (FL) was comparable, whereas the apo-state degraded much faster (Figure 4B, FL). Fragment 1 appeared already after 5 min and degraded further over time (Figure 4B, 1), its cleavage was more pronounced in the presence of Ca2+ and was accompanied with an increase of fragment 2 (Figure 4B, 2). This indicates that the cleavage site located in EF-2 becomes more available for the protease in the open conformation (Ca2+ bound). N-terminal myristoylation did not affect the proteolytic stability of the full-length protein, whereas it slightly reduced the stability of fragment 1 in all states. In addition, a second minor band below fragment 1 appeared for mCHP3 (Figure 4B). The small differences in the tryptic cleavage of CHP3 and mCHP3 indicate a local destabilizing effect of the myristoyl moiety, in line with the lower thermal stability of mCHP3 compared to CHP3. The complex formation with CBD drastically increased the proteolytic stability of both CHP3 and mCHP3, as nearly no degradation occurred under all analysed experimental conditions (Figure 4B, CHP3:CBD and Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig4-v2.jpg)
+
+**Figure 4.:** (A) Time-dependent (0–60 min) limited proteolysis (trypsin) of CHP3 (top) and the complex of CHP3:CBD (bottom) in the presence of both Mg2+ and Ca2+. Positions of full-length protein (FL) and two major proteolytic fragments (1 and 2) as well as CBD are indicated on the right of the Coomassie-stained SDS–PAGE gel, positions of co-separated molecular mass standards (mass in kDa) – on the left; the sample containing only trypsin was loaded on the first lane (T); Figure 4—source data 1: Full gels of (A). (B) Time-dependent limited proteolysis of CHP3 and mCHP3 in the presence of Mg2+, Ca2+, both ions or in the absence of them. Sections of the gel with bands corresponding to the full-length protein (FL) and two major proteolytic fragments (1 and 2) are shown. Nearly no degradation was observed for CHP3 and mCHP3 in the complex with CBD in all conditions (Mg2+ + Ca2+ condition is presented here, other gels are shown in Figure 4—figure supplement 1B and its source data). (C) Schematic representation of full-length CHP3 with indication of N- and C-lobes, four EF-hand motifs (active EF-3 is highlighted in green). Proteolytic fragments 1 and 2 and trypsin cleavage sites were identified by mass spectrometry. (D) Combined ribbon and surface presentation of the CHP3 AlphaFold2.0 model (Varadi et al., 2022) with N- and C-lobes shown in blue and orange, respectively, and the connecting CHP-loop in cyan; the two major trypsin cleavage sites are highlighted in yellow and Ca2+ ion as a green sphere. The Ca2+ position in EF-3 was modelled by superimposition of the CHP3 model with the CHP1 X-ray structure, pdb ID 2ct9 (Andrade et al., 2004).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Location of potential trypsin cleavage sites (Lys and Arg residues) in the CHP3 sequence. The two major sites, at which the cleavage is effective in the limited proteolysis are highlighted in red. (B) The full-size gels of limited proteolysis in different conditions. Proteins samples are indicated on the left, the ion conditions – on the top, trypsin only (T), or different CHP3 samples (CHP3, mCHP3, CHP3:CBD, or mCHP3:CBD) incubated with trypsin for 0, 5, 15, 30, 45, and 60 min were loaded from the left to the right. For a band annotation, see Figure 4A. Gels of CHP3 (MgCl2+CaCl2) and of CHP3:CBD (MgCl2+CaCl2) from Figure 4A (C) LC–ESI-TOF mass spectrometry analysis of major proteolytic fragments (1 and 2), the detected masses were 17,922 Da for the fragment 1 and 9630 Da for the fragment 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** CHP3 has one active EF-hand only, which is EF-3 (green box). EF-2 and EF-4 of CHP3 have 9-residue insertions, which disrupt the canonical Ca2+-coordinating loop, whereas EF-1 of CHP3 lacks the conservative negatively charged residues important for Ca2+ coordination (positions X, Y and –Z, respective CHP3 residues are S36, G37, and N46). EF-1, EF-2, and EF-4 that do not bind Ca2+ in CHP3 are shown in red rectangles. N-terminal myristoylation site is indicated with an arrow. Sequence alignment was done in BioEdit (Hall, 1999) using ClustalW algorithm.
+
 We mapped both major cleavage sites on the 3D model of CHP3 predicted with AlphaFold2.0 (Varadi et al., 2022; Figure 4D). This model closely resembles the structures of CHP1 and CHP2 in complex with CBD (Ammar et al., 2006; Mishima et al., 2007), of CHP1 in complex with full-length NHE1 (Dong et al., 2021) and of CHP1 with an artificial C-terminal helix bound in the target-binding pocket (Kennedy et al., 1996), that is structures of target-bound CHPs. All these structures represent the Ca2+-bound state. The cleavage site R155/S156 is located in this model at the N-side of the incoming α-helix of EF-4 and though surface exposed the α-helical location may hamper the proteolytic digest (Fontana et al., 1997). The other site, R73/K74 is located in the middle of the EF-2 loop (non-functional Ca2+-binding loop) (Figure 4D). Though the site appears to be surface exposed in the model, one should note that CHP3 has a 9-amino acid long insertion in that position as compared to CHP1 and CHP2 (Figure 4—figure supplement 2). The structure of CHP3 may deviate from the model and information for other conformations is lacking. Clearly, limited proteolysis showed that both sites are accessible and sufficiently flexible for productive cleavage in the free CHP3, yet become protected against cleavage upon complex formation. Both major cleavage sites are highly unlikely to be covered by CBD in the complex, as they are facing away from the target-binding pocket (Figure 4D). Thus, the drastic changes in the proteolytic stability indicate reduced flexibility in EF-2 and EF-4, which could be caused by structural rearrangements of CHP3 upon target peptide binding.
 
-## Ca2+ binding and the N-terminal myristoylation independently modulate the affinity of CHP3 for NHE1
+### Ca2+ binding and the N-terminal myristoylation independently modulate the affinity of CHP3 for NHE1
 
 To analyse how the conformational changes described above affect CHP3 function, we measured affinities of CHP3 and mCHP3 for the target peptide CBD with microscale thermophoresis (MST) in Ca2+- and in Mg2+-bound states. We used the system established earlier for quantification of binding affinities of CHP isoforms (CHP1, CHP2, and CHP3) to NHE1, in which the target peptide CBD was fused to maltose-binding protein (MBP-CBD) for its stabilization (Liang et al., 2020; Fuchs et al., 2018). We conducted the MST experiments with three biological replicates per sample and five individual titration series (technical replicates) per biological replicate (Figure 5). The dissociation constant (KD) for a given sample was calculated with a global parameter estimation procedure including all biological and technical replicates. We fitted the mass action law to the MST data points using non-linear regression. Confidence intervals were assessed for each KD value by calculating profile likelihoods (error surface plots) as described elsewhere (Kreutz et al., 2013; Scheuermann et al., 2016; Figure 5E). Comparison of the resulting KD values showed that the effects of Ca2+ binding and myristoylation on CHP3:CBD interaction are independent. Namely, Ca2+ binding increased affinities for CBD of both non-myristoylated (CHP3:CBD, KD = 3.1 [2.8; 3.4] nM) and myristoylated CHP3 (mCHP3:CBD, KD = 5.6 [5.1; 6.2] nM) by about fivefold as compared to the Mg2+-bound state (CHP3:CBD, KD = 14.6 [12.5; 16.9] nM; mCHP3:CBD, KD = 28.2 [26.6; 29.8] nM) (Figure 5A–D). In turn, for both Ca2+- and Mg2+-bound states, myristoylation decreased the affinity twofold (Figure 5). Hence, CHP3 binds to NHE1 with nanomolar affinity in both open and closed conformation and independently of its modification, however, Ca2+ binding and myristoylation modulates the affinity.
 
-## Target peptide and Ca2+ binding regulate the interaction of CHP3 with lipid membranes
+![Figure 5.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig5-v2.jpg)
+
+**Figure 5.:** The interaction of CHP3 (A, B) and mCHP3 (C, D) with MBP-CBD was measured with three biological replicates shown in different colours (each with five technical replicates) in the presence of either Ca2+ (A, C) or Mg2+ (B, D). The combined data from individual experiments were fitted with a one-site binding model using global non-linear regression. (E) 95% confidence intervals (Δχ2 of 3.84) of KD’s for CHP3:CBD and mCHP3:CBD calculated with profile likelihood method. Raw MST traces are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Each graph contains measurements of one biological replicate (indicated with label (1), (2), (3)) with five technical replicates.
+
+### Target peptide and Ca2+ binding regulate the interaction of CHP3 with lipid membranes
 
 As we showed that the effects of Ca2+ and myristoylation on conformational changes of CHP3 and mCHP3 are independent, the hypothesis of a Ca2+-myristoyl switch for CHP3 (Gutierrez-Ford et al., 2003; Zaun et al., 2012) had to be questioned. Therefore, we analysed binding of CHP3 and mCHP3 to POPC:POPS (3:1 molar ratio) liposomes with a co-sedimentation assay in the presence of either Mg2+ or Ca2+, and compared to the binding of recoverin, used as control protein for a Ca2+-myristoyl switch. In line with previous studies (Zozulya and Stryer, 1992), non-myristoylated recoverin (Rec) only weakly interacted with liposomes in both Mg2+- and Ca2+-bound states, whereas the interaction of myristoylated protein (mRec) increased about fourfold upon Ca2+ addition (Figure 6A, B). In the Mg2+-bound state, CHP3 interacted weakly with liposomes similar to recoverin, only a small protein amount co-sedimented with liposomes. In contrast to recoverin, Ca2+ addition increased the binding of non-myristoylated CHP3 (about 2.5 times) to liposomes, whereas myristoylation did not further increase this binding (Figure 6A, B). Interestingly, the binding of the target peptide CBD substantially changed the interaction of CHP3 with liposomes. In both the absence and the presence of Ca2+, only a small amount of the CHP3:CBD complex was associated with liposomes. However, CHP3 myristoylation increased the binding in both conditions about fourfold (Figure 6A, B). In the presence of Ca2+, the binding of mCHP3:CBD was even slightly higher than without it, however the difference was not significant. These results indicate the following mode of interaction. The myristic moiety is located in the protein core of target-free CHP3 and is not accessible to lipid membranes in the presence of Ca2+. Most likely, other protein regions are involved in membrane binding in this case. Target peptide binding causes conformational rearrangements with displacement of the myristic moiety from the protein core to the environment, which leads in consequence to an increased association of CHP3 and its target to lipid membranes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig6-v2.jpg)
+
+**Figure 6.:** Proteins were co-sedimented with POPC:POPS (3:1 molar ratio) liposomes in the presence of either 2 mM Mg2+ or 2 mM Mg2+ + 2 mM Ca2+ at 24°C. Non-myristoylated and myristoylated recoverin (Rec and mRec, respectively) were used as Ca2+-myristoyl switch control proteins. (A) Amount of proteins co-sedimented with liposomes was analysed with SDS–PAGE (4–12%, Bis-Tris). (B) Quantification of protein-liposome binding based on the densitometry of bands (SDS–PAGE shown in (A)) corresponded to the co-sedimented proteins with three biological (CHP3 and complexes) or technical (recoverin) replicates. Values were normalized to the respective non-myristoylated protein in the Mg2+-bound state. Data are shown as mean ± standard deviation (SD), one-way analysis of variance (ANOVA) with Tukey post-test was performed for mean comparison (statistical significance: n.s. – p > 0.05, **p < 0.01, ***p < 0.001). (C) N-terminal myristoylation of target-associated CHP3 in mouse brain. LC–MS/MS analysis of a trypsin-digested size fraction of solubilized mouse brain membrane containing NHE1-associated CHP3 (see Materials and methods). Upper panel: high coverage of the mouse CHP3 primary sequence by MS/MS-identified peptides (in red; black: sequences not identified, grey: sequences not accessible to our MS analysis) without inclusion of N-myristoyl modification. Lower panel: MS/MS spectrum from the same measurement assigned to the myristoylated tryptic N-terminal peptide of CHP3. Note that no other forms of the N-terminal peptide were detectable in error-tolerant search. Figure 6—source data 1: Full gels for (A) and replicates; raw data of band densitometry and ANOVA test p-values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** LC–MS/MS analysis of trypsin-digested total membrane fraction obtained from mouse platelets. Upper panel: coverage of the mouse CHP3 primary sequence by MS-identified peptides (in red; black: sequences not identified, grey: sequences not accessible to our MS analysis) without inclusion of N-myristoyl modification. Lower panel: MS/MS spectrum from the same measurement assigned to the myristoylated tryptic N-terminal peptide of CHP3. No other modifications of the N-terminus were detectable in error-tolerant search.
 
 Finally, we investigated the N-terminal myristoylation status of membrane associated CHP3 in vivo using liquid chromatography coupled mass spectrometry (LC–MS/MS). In three different preparations, namely (1) size fractionated complexes from mouse brain membranes (Figure 6C), (2) integral membrane proteins isolated from mouse platelets (i.e. after carbonate extraction, Figure 6—figure supplement 1), and (3) anti-NHE1-affinity purification from solubilized mouse brain membranes (data not shown) we identified the vast majority of MS-accessible CHP3 peptides, but only the myristoylated form of the N-terminal peptide. Together, this suggests that myristoylated CHP3 is both NHE1 associated and membrane anchored in agreement with a target-induced exposure and membrane integration of the N-terminal myristoyl moiety.
 
@@ -97,7 +151,7 @@ First, we optimized the protein production and purification to obtain pure myris
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83868/elife-83868-fig7-v2.jpg)
 
-**Figure 7.:** 2+ and target peptide (NHE1 CBD) binding.Ca2+ (magenta) replaces Mg2+ (green) in EF-3 and induces the transition from the closed to the open conformation. Ca2+ binding affects the local flexibility in the N-lobe accelerating the tryptic cleavage and reduces the thermal stability of CHP3. In both, Ca2+- and Mg2+-bound states, CHP3 binds the target peptide CBD with nanomolar affinity (KD values indicated, in brackets for myristoylated CHP3). Complex formation has no effect on the thermal stability of the Mg2+-bound state (closed conformation), whereas it strongly enhances thermal stability of the Ca2+-bound state (open conformation). Independent of the bound ion, both trypsin cleavage sites are protected from proteolysis in the CHP3:CBD complex.
+**Figure 7.:** Ca2+ (magenta) replaces Mg2+ (green) in EF-3 and induces the transition from the closed to the open conformation. Ca2+ binding affects the local flexibility in the N-lobe accelerating the tryptic cleavage and reduces the thermal stability of CHP3. In both, Ca2+- and Mg2+-bound states, CHP3 binds the target peptide CBD with nanomolar affinity (KD values indicated, in brackets for myristoylated CHP3). Complex formation has no effect on the thermal stability of the Mg2+-bound state (closed conformation), whereas it strongly enhances thermal stability of the Ca2+-bound state (open conformation). Independent of the bound ion, both trypsin cleavage sites are protected from proteolysis in the CHP3:CBD complex.
 
 The Ca2+-induced open conformation with lower thermal stability and increased local flexibility appears to provide the molecular basis for CHP3 to interact more readily with its target(s) (Figure 7). Our data support this hypothesis. Firstly, the binding of the target peptide resulted in a drastic increase of CHP3 thermal and proteolytic stabilities. However, the thermal stability increased only in the presence of Ca2+, whereas for the Mg2+-bound state it remained unchanged. These characteristics of the Ca2+-induced open conformation may lower the energy barrier for binding of the target peptide. Secondly, in line with co-immunoprecipitation of tagged NHE1 and tagged CHP3 from transfected AP-1 cells (Zaun et al., 2012), we detected binding between CHP3 and CBD in both, Ca2+- and Mg2+-bound states (see Figure 5). The quantitative analysis with MST showed that the affinity of the Ca2+-bound state was about five times higher, clearly indicating that Ca2+ controls CHP3 function.
 
@@ -117,11 +171,112 @@ CHP3 is an emerging important player in the cellular Ca2+ signalling network tha
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETDuet-1Δ6His_hNMT_Nef</td>
+      <td>DOI:10.1371/journal.pone.0010081</td>
+      <td></td>
+      <td>Provided by Prof. Willbold (Forschungszentrum Jülich, Germany)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# A7906</td>
+      <td>For production of mCHP3 and mRec</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Trypsin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# T1426</td>
+      <td>For limited trypsinolysis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Myristic acid</td>
+      <td>Carl Roth GmbH</td>
+      <td>Cat.# 6469.1</td>
+      <td>For production of mCHP3 and mRec</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>POPC</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>Cat.# 850457C</td>
+      <td>Liposome preparation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>POPS</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>Cat.# 840034C</td>
+      <td>Liposome preparation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProteOrange</td>
+      <td>Lumiprobe</td>
+      <td>Cat.# 40210</td>
+      <td>Dye for FPH assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Monolith Series Protein labeling kit – RED-NHS</td>
+      <td>Nanotemper Technologies</td>
+      <td>Cat.# MO-001</td>
+      <td>MST labeling kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Monolith Series Premium Capillaries</td>
+      <td>Nanotemper Technologies</td>
+      <td>Cat.# MO-K025</td>
+      <td>MST capillaries</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data2Dynamics Software</td>
+      <td>https://github.com/Data2Dynamics/d2d; Kreutz, 2023</td>
+      <td></td>
+      <td>For statistical analysis of datasets consisted of technical and biological replicates</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16% Novex Tricine Gel</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat.# EC66955BOX</td>
+      <td>SDS–PAGE system for separation of CHP3 and mCHP3</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-well black plates</td>
+      <td>Greiner Bio-One</td>
+      <td>Cat.# 655076</td>
+      <td>For FPH assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 The generation of all plasmids was performed using NEBuilder HiFi DNA assembly Master Mix (New England Biolabs GmbH, Frankfurt, Germany). Protein-coding sequences (CDS) were inserted without any additions for affinity tags if not stated otherwise. The pETDuet-1Δ6His_hNMT_Nef containing the codon optimized CDS of the human N-myristoyltransferase 1 (NMT1, Gene ID 4836, UniProtKB ID P30419) was kindly provided by Prof. Willbold (Forschungszentrum Jülich, Germany). To obtain the pETDuet1_NMT1_TESC plasmid, the codon optimized (E. coli) CDS of human CHP3 (TESC, Gene ID 54997, UniProtKB ID Q96BS2) was cloned into the second multiple cloning site of the pETDuet-1Δ6His_hNMT_Nef plasmid replacing the Nef CDS. The NMT1 CDS was deleted from the pETDuet1_NMT1_TESC plasmid to generate the plasmid pETDuet1_TESC. For co-expression of the NHE1 CBD:CHP3 complexes, the codon optimized (E. coli) CDS of a minimal NHE1 CBD with three additional histidines added C-terminally (NHE1 residues 525–545, MRSINEEIHTQFLDHLLTGIEDICGHYGHHHHHH, CBDHis) was used. In case of the pETDuet1_CBDHis_TESC plasmid, the CBDHis CDS was inserted in the first multiple cloning site, whereas for the pETDuet1_NMT1_CBDHis_TESC plasmid, the CBDHis CDS, and the linker region containing T7 promoter/lac operator and ribosome-binding site was inserted between NMT1 and CHP3 CDSs. The plasmid pETDuet1_Rec containing the codon optimized CDS of human recoverin (Gene ID 5957, UniProtKB ID P35243) in the second multiple cloning site was obtained from BioCat (Heidelberg, Germany). NMT1 CDS was inserted into the first site of this plasmid to obtain the pETDuet1_NMT1_Rec plasmid.
 
-## Protein productions and purifications
+### Protein productions and purifications
 
 We adapted the protocol of Glück et al., 2010 for the production of recombinant myristoylated CHP3 (mCHP3) by co-expression with human NMT1. Pre-cultures in TBcarb medium were made from a single colony of E. coli BL21 (DE3) transformed with the pETDuet1_NMT1_TESC plasmid. Main cultures in TBcarb medium containing the surfactant Antifoam 204 (Merck KGaA, Darmstadt, Germany) were inoculated to a final OD600 = 0.1 and incubated at 37°C. At OD600 = 0.6, the temperature was shifted to 28°C and 3% ethanol (vol/vol) was added. Myristic acid (mixed with 4% bovine serum albumin) was added at OD600 = 0.70–0.75. The protein production was induced at OD600 = 0.8 with 0.5 mM IPTG (isopropyl β-D-1-thiogalactopyranoside). After 4-hr incubation, cells were harvested and stored at −80°C. Non-myristoylated CHP3 was produced similarly using the plasmid without NMT1 (pETDuet1_TESC); no antifoam, ethanol and myristic acid were added to the medium. The expression was performed at 30°C overnight.
 
@@ -131,19 +286,23 @@ Recoverin and mRecoverin were produced and purified as described above for CHP3 
 
 The production of CHP3:CBD and mCHP3:CBD complexes was performed as described above using pETDuet1_CBDHis_TESC or pETDuet1_NMT1_CBDHis_TESC plasmids, respectively. Cells were lysed in the presence of 20 mM imidazol. The complexes were purified by IMAC followed by gel filtration. Cell lysate was loaded onto a HisTrap FF 5 ml column pre-equilibrated with buffer A containing 10 mM CaCl2 and 20 mM imidazol. After removal of unbound material with 10 column volumes of the equilibration buffer, elution was done with a linear gradient from 20 to 600 mM imidazol over 20 column volumes. For gel filtration, buffer A containing 10 mM CaCl2 was used as a running buffer.
 
-## Native mass spectrometry
+### Native mass spectrometry
 
 The degree of myristoylation was determined by native MS. For native ion mobility separation (IM)-MS analysis, proteins were transferred into 200 mM ammonium acetate, pH 6.7. Capillaries for nanoflow ESI were prepared in-house from borosilicate glass capillaries 1.0 mm OD × 0.78 mm ID (Harvard Apparatus, Holliston, MA, USA) using a micropipette puller Model P-97 (Sutter Instruments, Novato, CA, USA) and coated with gold using a sputter coater 108 auto (Cressington TESCAN GmbH, Dortmund, Germany). 3–5 µl of 20 µM protein were loaded per experiment. Measurements were carried out with quadrupole-IM-MS-ToF instrument Synapt G1 HDMS (Waters Corporation, Milford, MA, USA and MS Vision, Almere, The Netherlands) equipped with a 32,000 m/z range quadrupole. Pressures were 8 mbar backing in the source, 0.017 mbar argon in the trap and transfer collision cell and 0.5 mbar nitrogen in the ion mobility cell. Instrument parameters were as follow: capillary voltage 1.2 kV, source temperature 60°C, sample cone voltage 100 V, extraction cone voltage 10 V, acceleration voltages in the trap and transfer cell 5 and 35 V, respectively, IM bias potential 22 V, wave velocity and height 300 m/s and 8 V. Spectra were acquired in the positive ion mode in the m/z range 1000–6000. Spectra recorded for cesium iodide at 50 mg/ml in 50% (vol/vol) isopropanol were used for external mass calibration. Data were processed and analysed using MassLynx Software version 4.1 (Waters Corporation) and UniDec version 2.7.3 (Marty et al., 2015). For charge state deconvolution, smoothing and subtraction of linear background from raw spectra were done.
 
-## MS sequencing of native CHP3
+### MS sequencing of native CHP3
 
 Mouse brain membranes were prepared, solubilized with ComplexioLyte 47 (Logopharm, Germany) and protein complexes were separated by BN-PAGE as described (Schwenk et al., 2012). A section corresponding to an apparent molecular weight of 630 kDa (the migration size of native NHE1 complexes) was excised and subjected to MS analysis (as described below). Mouse platelets were prepared from fresh blood by differential centrifugation and 20 µg washed with 50 µl 100 mM Na2CO3 pH 11 (10 min at 4°C, followed by ultracentrifugation at 233,000 × g for 20 min). The resulting pellet was dissolved in Laemmli buffer and separated on an SDS–PAGE gel and silver stained. The section <50 kDa was excised, in-gel digested with trypsin, the peptides were dissolved in 20 µl 0.5% (vol/vol) trifluoroacetic acid, and 1 µl was analysed on an LC–MS/MS setup (UltiMate 3000 RSLCnano HPLC/QExactive HF-X mass spectrometer, both Thermo Scientific, Germany) as described (Kollewe et al., 2021). MS/MS data were extracted and searched against the UniProtKB/Swiss-Prot database (mouse, rat, human, release 20220525; Mascot search engine version 2.7, Matrix Science, UK) with the following settings: Acetyl (Protein N-term), Carbamidomethyl (C), Gln->pyro-Glu (N-term Q), Glu->pyro-Glu (N-term E), Oxidation (M), Propionamide (C) as variable modifications, one missed cleavage allowed, with or without myristoylation (N-term G) or in error-tolerant mode; precursor/fragment mass tolerance was ±10 ppm/±25 mmu, significance threshold p < 0.05.
 
-## Fluorescence-based assays
+### Fluorescence-based assays
 
 The conformational changes of the protein in response to ion binding were probed with the FPH assay (Liang et al., 2020) and by monitoring the intrinsic tryptophan fluorescence. The buffer of the protein solution was exchanged to the assay buffer (20 mM HEPES, 150 mM NaCl, 1 mM TCEP (Tris(2-carboxyethyl)phosphin), 2 mM MgCl2, pH 7.2) containing 1 mM EGTA using Zeba spin desalting columns (Thermo Fisher Scientific Inc, Waltham, MA, USA). The FPH assay was modified as follows. 500 µl of 1.5 µM protein and 5 µM ProteOrange (Lumiprobe GmbH, Hannover, Germany) in the assay buffer were mixed and incubated for 30 min in the dark. The fluorescence at 585 nm (excitation at 470 nm) was measured continuously with the Cary Eclipse spectrofluorimeter (Agilent Technologies, Santa Clara, CA, USA). Every 60 s a new compound was added in the following order: 2 mM CaCl2, 3 mM EGTA, 3 mM EDTA (ethylenediaminetetraacetic acid), and 4 mM CaCl2.
 
-Determination of Ca2+ EC50 values was performed using the FPH assay, mixing 1.5 µM protein and 5 µM ProteOrange with varied (0.34 µM to 8.0 mM) concentrations of CaCl2. The assay was carried out in 96-well black plates (Greiner Bio-One, Frickenhausen, Germany) with a sample volume of 100 μl. For each biological replicate, three to four technical replicates were measured. The fluorescence at 590 nm with excitation at 485 nm (F590) was measured with the BioTek Synergy 2 plate reader (Agilent Technologies, Santa Clara, CA, USA). The data were fitted using the Hill equationF590(c(Ca2+))=F0+Fmax1+(EC50c(Ca2+))n
+Determination of Ca2+ EC50 values was performed using the FPH assay, mixing 1.5 µM protein and 5 µM ProteOrange with varied (0.34 µM to 8.0 mM) concentrations of CaCl2. The assay was carried out in 96-well black plates (Greiner Bio-One, Frickenhausen, Germany) with a sample volume of 100 μl. For each biological replicate, three to four technical replicates were measured. The fluorescence at 590 nm with excitation at 485 nm (F590) was measured with the BioTek Synergy 2 plate reader (Agilent Technologies, Santa Clara, CA, USA). The data were fitted using the Hill equation
+
+$$
+F_{590}(c(Ca^{2+}))=F_{0}+\frac{F_{max}}{1+(\frac{EC50}{c(Ca^{2+})})^{n}}
+$$
 
 to estimate parameters from data which has the a priori unknown parameters: F0 (F590 in the absence of Ca2+), Fmax (maximal change of F590), EC50, and n (Hill coefficient). The parameters EC50 and the Hill coefficient n represent biological quantities that are global and therefore shared between the three biological replicates. The parameters F0 and Fmax are affected by experimental procedures and therefore different between the three biological replicates. Adding one parameter for dose-independent measurement noise, a total of nine parameters has to be estimated simultaneously for each condition. Parameter uncertainty can be assessed using the profile likelihood method, which is also referred to as error surface plots. We utilized optimization to obtain the best parameter set that minimizes deviation between model and data in terms of the negative log-likelihood. Uncertainty of the parameters is quantified using profile likelihood method (Kreutz et al., 2013), which is also termed error surface plots in the literature. This fitting procedure was independently applied to both conditions in order to obtain EC50 values and corresponding uncertainties for both conditions. Data2Dynamics Software (Raue et al., 2015) used for EC50 determination from data including biological and technical replicates is available at GitHub (https://github.com/Data2Dynamics/d2d, copy archived at Kreutz, 2023).
 
@@ -151,29 +310,37 @@ For monitoring the intrinsic tryptophan fluorescence, 500 µl of 2.5 µM of the 
 
 All assays were performed with three individually purified biological replicates of CHP3 and mCHP3.
 
-## Thermal stability analysis with nanoDSF
+### Thermal stability analysis with nanoDSF
 
 The thermal stability of CHP3, mCHP3, and the complexes with CBD was compared at different conditions using nano differential scanning fluorimetry (nanoDSF). Buffer of the protein solutions was exchanged to the assay buffer as above; the final concentration was adjusted to 100 µM and thermal stability was measured in the presence of 10 mM of either MgCl2, CaCl2, MgCl2 and CaCl2, or EDTA. Each sample was measured with two technical and three independent biological replicates in standard capillaries (Nanotemper Technologies, Munich, Germany) with the Prometheus NT.48 device (Nanotemper Technologies). Measurements were carried out from 20 to 95°C with a heating rate of 1°C/min. Unfolding of proteins analysed was irreversible, thus apparent melting temperatures (Tmapp) are given. They were determined as an inflection point of the unfolding curves using the PR.ThermControl software (Nanotemper Technologies).
 
-## Limited proteolysis
+### Limited proteolysis
 
 Next, we probed the proteolytic stability of CHP3, mCHP3, and of their complexes with CBD. Buffer of the protein solutions was exchanged to the assay buffer containing either 2 mM MgCl2 + 0.5 mM EGTA, 2 mM CaCl2, 2 mM MgCl2 + 2 mM CaCl2, or 2 mM EDTA as an additive. The final protein concentration was adjusted to 0.5 mg/ml for each sample. Each reaction was started with the addition of 0.01 mg/ml trypsin (Sigma Aldrich, Cat. No. T1426) dissolved in 1 mM HCl, and performed for 1 hr on ice. Samples were taken after 5, 15, 30, 45, and 60 min, directly mixed with an equal volume of 2× reducing NuPAGE LDS sample buffer (Thermo Fisher Scientific) and boiled for 5 min at 95°C. The proteolytic fragments were separated on 12% NuPAGE Bis-Tris gels (Thermo Fisher Scientific).
 
 To determine which trypsin cleavage sites in CHP3 are accessible for proteolysis, the major proteolytic fragments were analysed by ESI MS. 100 µl of CHP3 and mCHP3 in the assay buffer with 2 mM CaCl2 and 2 mM MgCl2 were incubated with trypsin for 15 min. Protein fragments were separated on 16% Novex Tricine gels (Thermo Fisher Scientific). The major bands were cut, minced into smaller pieces and loaded on top of 300 kDa Nanosep centrifugal devices (Pall Corporation, Port Washington, NY, USA). Proteins were eluted two times with 400 µl of the assay buffer containing 0.1% SDS by centrifugation at 14,000 × g for 20 min. Eluates were concentrated with Vivaspin500 5,000 MWCO concentrators (Sartorius AG, Goettingen, Germany). SDS was removed by precipitation with 0.2 M KCl followed by 10 min centrifugation at 14,000 × g. 10 µl of each sample were analysed with liquid chromatography (Thermo Fisher Ultimate 3000 with Phenomenex Jupiter 5 µm C4 300 Å 50 × 2 mm) coupled to high-resolution ESI MS (Maxis 4G, Bruker Corporation, Billerica, MA, USA). The resulting peptide masses were compared to all possible trypsin digestion fragments of CHP3 or mCHP3 to identify the cleavage sites.
 
-## Microscale thermophoresis
+### Microscale thermophoresis
 
 MST was performed using the Monolith Pico device (Nanotemper Technologies) as described previously (Fuchs et al., 2018). The only difference was the use of the measuring buffer containing either 10 mM CaCl2 or 10 mM MgCl2 (20 mM HEPES, 5 mM TCEP, 150 mM NaCl, 0.05% Tween-20, 10 mM MgCl2, or 10 mM CaCl2; pH 7.2). All measurements were performed with three independently produced and purified protein replicates of CHP3, mCHP3, and MBP-CBD. Every condition was titrated and measured five times per biological replicate (technical replicates).
 
-Mass action kinetics of a one-site binding model was utilized to derive the fitting function for dissociation constant (KD) determination: Let A and B* denote the concentrations of unlabelled and labelled binding partners respectively, and the concentration of the protein complex by AB*. The total amounts of A and B* (Atot and Btot∗) can be controlled by the experimental setup. In our application, Btot∗ =10 nM was fixed and Atot =[MBP-CBD] was the independent variable for the dose response analysis. The thermophoresis data were normalized and fitted with global non-linear regression to the dose response function (Scheuermann et al., 2016):Fn(Atot)=(B∗Btot∗⋅Fn, B∗)+(AB∗Btot∗⋅Fn,AB∗)
+Mass action kinetics of a one-site binding model was utilized to derive the fitting function for dissociation constant (KD) determination: Let A and B* denote the concentrations of unlabelled and labelled binding partners respectively, and the concentration of the protein complex by AB*. The total amounts of A and B* ($A_{tot}$ and $B_{tot}^{∗}$) can be controlled by the experimental setup. In our application, $B_{tot}^{∗}$ =10 nM was fixed and $A_{tot}$ =[MBP-CBD] was the independent variable for the dose response analysis. The thermophoresis data were normalized and fitted with global non-linear regression to the dose response function (Scheuermann et al., 2016):
 
-with Fn(Atot) – thermophoresis (change of normalized fluorescence) as a function of MBP-CBD concentration, Fn, B* and Fn,AB* – thermophoresis of the labelled partner and the complex, respectively. The concentration of the complex is given byAB∗= (KD+Atot+Btot∗)−(KD+Atot+Btot∗)2−4⋅Atot⋅Btot∗2
+$$
+F_{n}(A_{tot})=(\frac{B^{∗}}{B_{tot}^{∗}}⋅F_{n, B^{∗}})+(\frac{AB^{∗}}{B_{tot}^{∗}}⋅F_{n,AB^{∗}})
+$$
+
+with $F_{n}(A_{tot})$ – thermophoresis (change of normalized fluorescence) as a function of MBP-CBD concentration, $F_{n, B^{*}}$ and $F_{n,AB^{*}}$ – thermophoresis of the labelled partner and the complex, respectively. The concentration of the complex is given by
+
+$$
+AB^{∗}= \frac{(K_{D}+A_{tot}+B_{tot}^{∗})−\sqrt{(K_{D}+A_{tot}+B_{tot}^{∗})^{2}−4⋅A_{tot}⋅B_{tot}^{∗}}}{2}
+$$
 
 which follows from solving a quadratic function originating from mass action kinetics combined with equilibrium assumption for the signal strength.
 
-Simultaneously, all individual parameters (B*, Fn, B*,Fn,AB*) per biological replicate were fitted together with the global KD value. To estimate the noise level within the technical replicates we used an error model with absolute and relative errors represented by two parameters per biological replicate. With three biological replicates, this results in a total of 16 parameters that were fitted simultaneously. We utilized deterministic multistart optimization to obtain the best parameter set that minimizes deviation between model and data in terms of the negative log-likelihood. Uncertainty of the parameter of interest KD is quantified using profile likelihood method (Kreutz et al., 2013), which is also termed error surface plots in the literature. This fitting procedure was independently applied to each condition in order to obtain KD values and corresponding uncertainties for all four conditions. Data2Dynamics Software (Raue et al., 2015) used for KD determination from data including biological and technical replicates is available at GitHub (https://github.com/Data2Dynamics/d2d, copy archived at Kreutz, 2023).
+Simultaneously, all individual parameters ($B^{*}, F_{n, B^{*}},F_{n,AB^{*}}$) per biological replicate were fitted together with the global KD value. To estimate the noise level within the technical replicates we used an error model with absolute and relative errors represented by two parameters per biological replicate. With three biological replicates, this results in a total of 16 parameters that were fitted simultaneously. We utilized deterministic multistart optimization to obtain the best parameter set that minimizes deviation between model and data in terms of the negative log-likelihood. Uncertainty of the parameter of interest KD is quantified using profile likelihood method (Kreutz et al., 2013), which is also termed error surface plots in the literature. This fitting procedure was independently applied to each condition in order to obtain KD values and corresponding uncertainties for all four conditions. Data2Dynamics Software (Raue et al., 2015) used for KD determination from data including biological and technical replicates is available at GitHub (https://github.com/Data2Dynamics/d2d, copy archived at Kreutz, 2023).
 
-## Interaction of proteins with lipid membranes
+### Interaction of proteins with lipid membranes
 
 The POPC:POPS (Avanti Polar Lipids, Birmingham, AL, USA) mixture (3:1 molar ratio) in chloroform was dried in round bottom glass vials under a nitrogen stream. The dried lipid film was resuspended in liposome buffer (20 mM HEPES, 150 mM NaCl, 10% sucrose, pH 7.2) at a final concentration of 4 mM, sonified three times for 20 s with 40 s breaks (Bandelin Sonorex ultrasonic bath). Then liposomes were subjected to 10 freeze–thaw cycles and extruded through a 1-μm polypropylene membrane (Avestin, Ottawa, Canada). The size of the resulting liposomes was controlled with DLS (DynaPro NanoStar, Wyatt Technology, Santa Barbara, CA, USA). Liposomes were stored at room temperature in the dark.
 

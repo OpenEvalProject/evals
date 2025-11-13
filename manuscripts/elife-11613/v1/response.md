@@ -105,6 +105,4 @@ Thank you for the suggestion. We have now quantified the % of electroporated (Td
 
 If possible, as part of Figure 7, a model/summary figure would improve the paper and allow more citations via highlighting the model. I think this would be an important addition.
 
-Thank you. We have added a model/summary figure. To highlight the significance of the model, we have placed it as a separate figure (Figure 9).10.7554/eLife.11613.036Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.11613.036
-
-DOI: http://dx.doi.org/10.7554/eLife.11613.036
+Thank you. We have added a model/summary figure. To highlight the significance of the model, we have placed it as a separate figure (Figure 9).10.7554/eLife.11613.036Author response image 1.

@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/008xxew50 Department of Applied and Experimental Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands
-2. https://ror.org/008xxew50 Institute for Brain and Behavior Amsterdam (iBBA), Vrije Universiteit Amsterdam Amsterdam Netherlands
-3. https://ror.org/04dkp9463 Department of Psychology, University of Amsterdam Amsterdam Netherlands
-4. https://ror.org/04dkp9463 Amsterdam Brain and Cognition, University of Amsterdam Amsterdam Netherlands
-5. https://ror.org/027bh9e22 Cognitive Psychology Unit, Institute of Psychology and Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands
-6. https://ror.org/00t3r8h32 Department of Psychology, University of Lübeck Lübeck Germany
-7. https://ror.org/00t3r8h32 Center of Brain, Behavior and Metabolism, University of Lübeck Lübeck Germany
+1. Department of Applied and Experimental Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+2. Institute for Brain and Behavior Amsterdam (iBBA), Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+3. Department of Psychology, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+4. Amsterdam Brain and Cognition, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+5. Cognitive Psychology Unit, Institute of Psychology and Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+6. Department of Psychology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+7. Center of Brain, Behavior and Metabolism, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 
 † Corresponding author
 

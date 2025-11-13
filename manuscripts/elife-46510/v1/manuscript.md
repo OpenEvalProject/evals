@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.46510.001 The established view is that vibrotactile stimuli evoke two qualitatively distinctive cutaneous sensations, flutter (frequencies < 60 Hz) and vibratory hum (frequencies > 60 Hz), subserved by two distinct receptor types (Meissner’s and Pacinian corpuscle, respectively), which may engage different neural processing pathways or channels and fulfil quite different biological roles. In psychological and physiological literature, those two systems have been labelled as Pacinian and non-Pacinian channels. However, we present evidence that low-frequency spike trains in Pacinian afferents can readily induce a vibratory percept with the same low frequency attributes as sinusoidal stimuli of the same frequency, thus demonstrating a universal frequency decoding system. We achieved this using brief low-amplitude pulsatile mechanical stimuli to selectively activate Pacinian afferents. This indicates that spiking pattern, regardless of receptor type, determines vibrotactile frequency perception. This mechanism may underlie the constancy of vibrotactile frequency perception across different skin regions innervated by distinct afferent types.
+The established view is that vibrotactile stimuli evoke two qualitatively distinctive cutaneous sensations, flutter (frequencies < 60 Hz) and vibratory hum (frequencies > 60 Hz), subserved by two distinct receptor types (Meissner’s and Pacinian corpuscle, respectively), which may engage different neural processing pathways or channels and fulfil quite different biological roles. In psychological and physiological literature, those two systems have been labelled as Pacinian and non-Pacinian channels. However, we present evidence that low-frequency spike trains in Pacinian afferents can readily induce a vibratory percept with the same low frequency attributes as sinusoidal stimuli of the same frequency, thus demonstrating a universal frequency decoding system. We achieved this using brief low-amplitude pulsatile mechanical stimuli to selectively activate Pacinian afferents. This indicates that spiking pattern, regardless of receptor type, determines vibrotactile frequency perception. This mechanism may underlie the constancy of vibrotactile frequency perception across different skin regions innervated by distinct afferent types.
 
 ## Introduction
 
@@ -33,33 +33,76 @@ We addressed this question by using brief pulsatile mechanical stimuli that enab
 
 ## Results
 
-## Detection thresholds mediated by FAII afferents at low frequencies
+### Detection thresholds mediated by FAII afferents at low frequencies
 
 Detection thresholds for pulsatile stimuli (Figure 1b) evoking low-frequency discharge exclusively in FAII afferents (the Pacinian channel) were measured at two frequencies within the flutter range (6 and 24 Hz) and for comparison at two frequencies in the vibratory hum range (100 and 200 Hz). For pulsatile stimuli, the detection thresholds on the finger were low at all frequencies: 1.3 (± 0.6 mean ± SD; n = 6) μm at the lowest (6 Hz) frequency and 0.7 (± 0.2; n = 6) μm at the highest (200 Hz) (Figure 1a). Regardless of the frequency, the perceptual thresholds for pulsatile stimuli were well below response threshold for FAI afferents (Johansson et al., 1982; Saal et al., 2017; Talbot et al., 1968), and thus could only have been mediated by the FAII afferents through the Pacinian channel. The detection thresholds for sinusoidal stimuli (Figure 1b) were considerably higher within flutter range frequencies and, as expected, steeply decreased with increasing frequency from 28 (± 6; n = 6) μm at 6 Hz to 0.7 (± 0.2; n = 6) μm at 200 Hz (Figure 1a). This reflects a shift from activation of FAI afferents, which have thresholds around 10–15 μm even at their characteristic frequencies, to activation of the much more sensitive FAII afferents which have thresholds for sinusoidal stimulation below 1 μm at their characteristic frequencies (Johansson et al., 1982; Saal et al., 2017; Talbot et al., 1968).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46510/elife-46510-fig1-v1.jpg)
 
-**Figure 1.:** (A) Vibrotactile detection thresholds on the finger across frequency ranges for sinusoidal and pulsatile stimuli (n = 12). Shaded area represent ± 95% confidence intervals. (B) An example of the sinusoidal and pulsatile waveforms.10.7554/eLife.46510.003Figure 1—source data 1.
+**Figure 1.:** (A) Vibrotactile detection thresholds on the finger across frequency ranges for sinusoidal and pulsatile stimuli (n = 12). Shaded area represent ± 95% confidence intervals. (B) An example of the sinusoidal and pulsatile waveforms.
 
-## Perceptual properties of low-frequency discharge rate in Pacinian channel
+### Perceptual properties of low-frequency discharge rate in Pacinian channel
 
 We next examined whether the Pacinian channel is capable of conveying a sense of vibration frequency within the flutter range. To do this, the amplitude of the pulsatile vibrotactile stimuli was kept at the level of 3 µm regardless of repetition rate (frequency), which is well below the activation thresholds of FAI afferents. The amplitudes for comparison sine waves were selected after conducting intensity matching to the 3 µm pulsatile stimulus in pilot experiments and are presented in Table 1 of the Materials and methods. Given variability in intensity matching between subjects, we verified that frequency judgements were insensitive to amplitude changes (Figure 2—figure supplement 1). The apparent frequency of a 20 or 40 Hz FAII-driven pulsatile stimulus was obtained from participants’ comparisons of the pulsatile (P) and sinusoidal (S) stimuli in the following combinations PP, SP, with SS as a control (Figure 2). From these comparisons, we calculated the point of subjective equality (PSE) of frequency. The physical frequency defined as repetition rate for pulsatile or frequency for sinusoidal stimuli used as test stimulus was either 20 or 40 Hz.
 
-## FAII afferent activation in flutter range creates frequency percept
+![Figure 2.](https://cdn.elifesciences.org/articles/46510/elife-46510-fig2-v1.jpg)
+
+**Figure 2.:** The test stimulus was either sinusoidal or pulsatile presented at 20 Hz and 40 Hz. The test stimulus was compared with a range of comparison frequencies: 10, 14, 18, 22, 26, 30 Hz with 20 Hz test stimulus; and 25, 31, 37, 43, 49, 55 Hz with 40 Hz test stimulus. Black horizontal lines represent mean ± 95% confidence intervals (n = 12).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46510/elife-46510-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Results are shown for five subjects (n = 5), who conducted the same experimental protocol illustrated in Figures 2 and 3 at 40 Hz, but with two different amplitudes (randomly interleaved) for the comparison frequencies. For the sinusoidal comparisons, the standard was 60 µm, and the comparisons were 40 µm (sine low) and 90 µm (sine high). For the pulsatile comparisons, the standard was 6 µm, and the comparisons were 3 µm (pulse low) and 10 µm (pulse high). Mean values for PSE and Weber fraction for each condition with 95% CI were: 40 Hz comparisonsPSEWeber Fractionsine low38.8 (37.1 - 40.5) Hz0.15 (0.11 - 0.19)sine high42.8 (38.5 – 47.0) Hz0.14 (0.10 - 0.19)pulse low40.3 (38.5 - 42.2) Hz0.17 (0.11 - 0.24)pulse high39.0 (37.7 - 40.3) Hz0.15 (0.09 - 0.21)
+
+**Table 1.**
+ Amplitudes and frequencies used in each experimental condition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Test stimulus</th>
+      <th>Comparison stimulus</th>
+      <th>Comparison frequencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PP</td>
+      <td>20 Hz, Pulsatile, 3 µm 40 Hz, Pulsatile, 3 µm</td>
+      <td>Pulsatile, 3 µm Pulsatile, 3 µm</td>
+      <td>10, 14, 18, 22, 26, 30 Hz 25, 31, 37, 43, 49, 55 Hz</td>
+    </tr>
+    <tr>
+      <td>SS</td>
+      <td>20 Hz, Sinusoidal, 150 µm 40 Hz, Sinusoidal, 40 µm</td>
+      <td>Sinusoidal, 150 µm Sinusoidal, 40 µm</td>
+      <td>10, 14, 18, 22, 26, 30 Hz 25, 31, 37, 43, 49, 55 Hz</td>
+    </tr>
+    <tr>
+      <td>SP</td>
+      <td>20 Hz, Sinusoidal, 150 µm 40 Hz, Sinusoidal, 40 µm</td>
+      <td>Pulsatile, 3 µm Pulsatile, 3 µm</td>
+      <td>10, 14, 18, 22, 26, 30 Hz 25, 31, 37, 43, 49, 55 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+### FAII afferent activation in flutter range creates frequency percept
 
 In the PP condition, participants compared the frequency of a pulsatile test stimulus with that of six pulsatile comparison stimuli. The PSEs obtained from the psychometric curves were very close to the physical frequencies of the presented test stimuli: 20.0 (19.5–20.5; 95% confidence interval, CI) Hz for the 20 Hz test, and 40.8 (39.8–41.7) Hz for the 40 Hz test stimulus (Figure 2; n = 12). The narrow CI values indicate that pulsatile stimuli evoked perceptions with a well-defined frequency. The PSE values obtained with sinusoidal stimuli (SS condition) using six sinusoidal comparison frequencies were 19.5 (18.8–20.2) Hz for the 20 Hz test and 41.7 (39.8–43.7) Hz for the 40 Hz test stimulus (Figure 2; n = 12). Repeated measures two-way ANOVA indicated no difference between types of stimuli (pulsatile or sinusoidal) used (F(1, 11)=0.131, p=0.72).
 
-## Frequency percept mediated by low-frequency discharge in FAII afferents is analogous to that evoked by sinusoidal stimuli
+### Frequency percept mediated by low-frequency discharge in FAII afferents is analogous to that evoked by sinusoidal stimuli
 
 The PSE for the 20 Hz pulsatile test stimulus was 22.0 (19.7–24.4; 95% CI) Hz when determined in comparison to six sinusoidal frequencies (PS condition), which was no different from the 20 Hz stimulus (p=0.09, n = 12; one sample two-tailed t-test). This indicates that both pulsatile and sinusoidal low-frequency stimuli generate a percept of identical frequency within the flutter frequency range. For 40 Hz pulsatile test stimulus, the PSE assessed in comparison with sinusoidal stimuli was 43.6 (39.8–47.4; 95% CI) Hz; again, this was not different from 40 Hz (p=0.06, n = 12; one sample two-tailed t-test).
 
-## Frequency discrimination capacity mediated by FAII afferents within the flutter range
+### Frequency discrimination capacity mediated by FAII afferents within the flutter range
 
 Weber fractions that were mediated exclusively by FAII afferents within the flutter frequency range were just as low as the Weber fractions determined with sinusoidal stimuli mediated predominantly by FAI afferents (Figure 3). Two-way repeated measures ANOVA indicated that the FAII afferents provided frequency discrimination in the flutter range that was no different from sinusoidal stimuli predominantly mediated by FAI afferents (F(1, 11)=0.004, p=0.949). However, there was an effect of frequency (F(1, 11)=29.00, p=0.0002) indicating that the size of the Weber fraction is affected by frequency and not afferent type providing this input. Weber fractions were lower at the higher frequency (40 Hz) than they were at 20 Hz for both pulsatile and sinusoidal stimuli (0.21 vs 0.14 and 0.19 vs 0.15, respectively; n = 12).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46510/elife-46510-fig3-v1.jpg)
 
-**Figure 3.:** For details refer to legend of Figure 2.10.7554/eLife.46510.009Figure 3—source data 1.
+**Figure 3.:** For details refer to legend of Figure 2.
 
 ## Discussion
 
@@ -73,7 +116,7 @@ A consequence of generalised neural processing for frequency, regardless of the 
 
 Functionally, it means that FAII afferents and the Pacinian channel are well suited for detecting fast discrete mechanical transients with low repetition rate as might arise during object manipulation or exploration of surfaces with sparsely distributed sharp asperities or ridges. The evidence that low-frequency signals arising from FAII afferents are consciously perceived and easily discriminated strongly suggests that they are biologically important and are likely to be utilised by neural circuits dedicated to motor control of the hand. In regard to new technology development, the exquisite sensitivity of FAII afferents combined with their role in tactile perception and motor control makes them a useful target when designing haptic and teleoperated devices.
 
-## Conclusions
+### Conclusions
 
 In this study we obtained evidence that low-frequency spike trains in FAII afferents (Pacinian channel) can readily induce a vibratory percept with the same low frequency attributes as signalled by FAI afferents (Meissner’s, non-Pacinian channel). It has become evident that perception of vibrotactile frequency depends on the discharge pattern of the active afferents, rather than the afferent type that is active. Low frequency spike trains in FAII afferents can induce a vibratory percept which has the same frequency attributes as that induced by sinusoidal stimuli. These new findings raise questions about whether much of the observed functional dichotomy between Pacinian and non-Pacinian channels relates to behavioural interpretations of the stimulus rather than to the type of receptor that the signal originates from. In addition, our proposed universal frequency decoding system would help explain the perceptual constancy of vibrotactile frequency perception which is a prominent problem in tactile system where distinct human skin regions and types (e.g. glabrous and hairy) functionally encode the same physical features of stimuli using remarkably different receptor types tuned for different stimulus features.
 
@@ -81,11 +124,11 @@ These findings are consistent with the growing evidence of extensive convergence
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Research participants were healthy volunteers aged 20 to 26 years without any known history of neurological disorders which would affect the somatosensory system. Ethics approval was obtained from the UNSW Human Research Ethics Committee, and all participants signed a consent form. The participants were reimbursed for their time. There were six participants (four female) in the detection threshold experiments and 12 (6 female) in the frequency perception experiments. Five participants were in both experiments. The sample size was determined by pilot studies to determine effect size, and according to accepted practice in psychophysical experiments. No individual subjects or data outliers were excluded from the data analyses.
 
-## Apparatus
+### Apparatus
 
 The mechanical stimulation probe was a metal ball 5 mm in diameter at the end of a metal rod driven by a V4 shaker (Data Physics, San Jose). To drive the shaker, analogue output signals were amplified by a Signalforce 30W Power Amplifier (Data physics, San Jose, USA). The displacement of the stimulation probe was monitored using an OptocoNCDT 2200–10 laser displacement sensor (Micro-Epsilon, Ortenburg, Germany) with a resolution of 0.15 μm at 10 kHz.
 
@@ -93,11 +136,11 @@ Stimulus delivery was controlled by a CED data acquisition system (CED, Cambridg
 
 The stimuli were delivered to the finger pad of the right index finger. The arm, hand and stimulated finger were positioned and held in place with the aid of a vacuum pillow (GermaProtec, Kristianstad, Sweden). The pillow, filled with small foam balls, was moulded around the participant’s arm, and the air was then pumped out to hold its shape. The probe was positioned on the finger with a force of 50 g; the probe protracted from this rest position. White noise was delivered through headphones to eliminate auditory cues associated with the mechanical stimulator. Participants made responses by pressing buttons with the unstimulated hand.
 
-## Vibration stimulus
+### Vibration stimulus
 
 A stereotyped brief pulsatile mechanical stimulus with a protraction time of only 2 ms was used to control the spiking pattern in recruited afferents (Figure 1a). As the duration of the mechanical stimulus was comparable to the refractory period of the action potential, each mechanical stimulation event generated only a single time-controlled spike in responding afferents (Birznieks and Vickery, 2017). Each mechanical pulse is a reproducible and uniform event which ensures that the same population of afferents will be excited regardless of the rate at which these pulses are repeated.
 
-## Detection thresholds
+### Detection thresholds
 
 Detection thresholds were measured for pulsatile and sinusoidal stimuli at four frequencies: 6, 24, 100 and 200 Hz. Thresholds were determined on the fingertips. All together thresholds were tested in 16 conditions (2 waveforms x 4 frequencies x 2 locations). The thresholds for two types of stimuli were measured together in a single session with their trials pseudo-randomly interleaved. Each testing session lasted about 10 min, with a total of 8 sessions for each participant.
 
@@ -109,7 +152,7 @@ To measure detection thresholds, we used a two-interval forced-choice (2IFC) pro
 
 To calculate detection thresholds, we used the QUEST package implemented in Psychtoolbox-3 (http://psychtoolbox.org) for MATLAB. We defined the threshold as the intensity at which the stimulus could be correctly identified for 82% of trials, and was given by the mean of the posterior distribution function. For each threshold estimate, 41 trials were conducted. To determine the amplitude of the vibration to present on each trial, we used a Bayesian adaptive QUEST protocol (Watson and Pelli, 1983), operating on the log-transformed amplitudes. The prior threshold estimate depended on the waveform and frequency (80 µm for 6 Hz sinusoidal, 5 µm for 24 Hz sinusoidal and 3 µm for 100 and 200 Hz sinusoidal, and for all pulsatile stimuli). The amplitude of the vibration on each trial was determined by the QUEST algorithm in most cases. The exceptions were the first trial, which was fixed at the prior threshold estimate for that stimulus, and every tenth trial, which was three times the value suggested by QUEST, to give participants a few easy trials. The actual amplitude delivered was measured and this value, along with the participant’s response, was returned to the QUEST algorithm on each trial.
 
-## Frequency perception
+### Frequency perception
 
 To measure frequency perception, we used a similar 2IFC procedure as described above. However, in this case, both stimulus intervals presented to the participant contained vibration stimulation. The participant was required to indicate which of the two intervals contained the vibration with the highest frequency, the first or the second. One interval contained the test stimulus of fixed frequency, and the other contained the comparison stimulus, which varied in frequency from trial to trial (Figure 4b). Six comparison frequencies were paired with the test stimulus 20 times each, in a random sequence.
 
@@ -125,7 +168,7 @@ The amplitude of all pulsatile stimuli was 3 µm which was approximately three t
 
 For the sinusoidal stimuli, we chose amplitudes such that the perceived intensity of all stimuli were approximately equal (see Table 1). Given that there is inter- and intra- subject variability, we verified that intensity cues were not used for frequency judgements. We conducted control experiments in five subjects (n = 5) who conducted the same experimental protocol illustrated in Figures 2 and 3 at 40 Hz, but with two different amplitudes (randomly interleaved) for the comparison frequencies. For the sinusoidal comparisons, the standard was 60 µm, and the comparisons were 40 µm (sine low) and 90 µm (sine high). For the pulsatile comparisons, the standard was 6 µm, and the comparisons were 3 µm (pulse low) and 10 µm (pulse high). The data in Figure 2—figure supplement 1 show that amplitude of the sinusoidal or pulsatile stimuli had no effect on PSE or Weber’s fractions indicating that subjects can readily judge frequency while ignoring any intensity cues.
 
-## Statistical analysis
+### Statistical analysis
 
 One sample two-tailed t-test (n = 12) was used to test whether the PSE obtained in psychophysics experiments using either pulsatile or sinusoidal stimuli in 12 subjects rendered the same result as physical frequency of the periodic mechanical stimulus of the same type. In this test, PSE obtained by comparing pulsatile stimulus (test stimulus) with sinusoidal stimuli (comparison stimuli) was compared to the expected PSE if test and comparison stimuli would be of the same type (sinusoidal).
 

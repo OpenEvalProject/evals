@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.45801.001 Bioluminescence imaging (BLI) is ubiquitous in scientific research for the sensitive tracking of biological processes in small animal models. However, due to the attenuation of visible light by tissue, and the limited set of near-infrared bioluminescent enzymes, BLI is largely restricted to monitoring single processes in vivo. Here we show, that by combining stabilised colour mutants of firefly luciferase (FLuc) with the luciferin (LH 2 ) analogue infraluciferin (iLH 2 ), near-infrared dual BLI can be achieved in vivo. The X-ray crystal structure of FLuc with a high-energy intermediate analogue, 5’-O-[N-(dehydroinfraluciferyl)sulfamoyl] adenosine (iDLSA) provides insight into the FLuc-iLH 2 reaction leading to near-infrared light emission. The spectral characterisation and unmixing validation studies reported here established that iLH 2 is superior to LH 2 for the spectral unmixing of bioluminescent signals in vivo; which led to this novel near-infrared dual BLI system being applied to monitor both tumour burden and CAR T cell therapy within a systemically induced mouse tumour model.
+Bioluminescence imaging (BLI) is ubiquitous in scientific research for the sensitive tracking of biological processes in small animal models. However, due to the attenuation of visible light by tissue, and the limited set of near-infrared bioluminescent enzymes, BLI is largely restricted to monitoring single processes in vivo. Here we show, that by combining stabilised colour mutants of firefly luciferase (FLuc) with the luciferin (LH2) analogue infraluciferin (iLH2), near-infrared dual BLI can be achieved in vivo. The X-ray crystal structure of FLuc with a high-energy intermediate analogue, 5’-O-[N-(dehydroinfraluciferyl)sulfamoyl] adenosine (iDLSA) provides insight into the FLuc-iLH2 reaction leading to near-infrared light emission. The spectral characterisation and unmixing validation studies reported here established that iLH2 is superior to LH2 for the spectral unmixing of bioluminescent signals in vivo; which led to this novel near-infrared dual BLI system being applied to monitor both tumour burden and CAR T cell therapy within a systemically induced mouse tumour model.
 
 ## Introduction
 
@@ -41,39 +41,73 @@ Previous approaches to dual-BLI have been disappointing. The use of multiple bio
 
 An ideal dual-BLI approach would use two spectrally distinct bioluminescent proteins utilising a single substrate followed by spectral unmixing of the signal. However, this approach is not currently feasible using LH2. Although luciferases can be mutated to alter the colour of their emission, a limit appears to have been reached for mutational colour modulation of firefly and related luciferases. The most red-shifted of these enzymes have maximal peak emissions between 610 and 620 nm (Branchini et al., 2010). This is insufficient for dual BLI in vivo. Due to the differential attenuation of light by biological tissue spectral unmixing of a red-shifted luciferase paired with a standard or green-shifted enzyme is challenging, especially in deeper tissue models (Mezzanotte et al., 2011). Shifting the emission of both enzymes into the near infrared must be achieved to allow adequate unmixing. To further red-shift peak emission we and others have turned to chemical modification of the D-luciferin (LH2) substrate (Adams and Miller, 2014). We recently described the LH2 analogue infraluciferin (iLH2) which has a luciferase dependent red-shifted peak emission of up to 706 nm (Jathoul et al., 2014) (Figure 1a). We hypothesised that combining colour modulation of bioluminescence through mutagenesis of the FLuc protein along with red-shifting bioluminescence by chemical modification of LH2 would allow dual-BLI, an approach that has not been described previously.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig1-v2.jpg)
+
+**Figure 1.:** (a) Chemical structures of native D-Luciferin (LH2) and the LH2 analogue infraluciferin (iLH2). (b) The crystal structure of Firefly luciferase (FLuc) in complex with the infraluciferyl-adenylate analogue 5’-O-[(N-dehydroinfraluciferyl)-sulfamoyl] adenosine (iDLSA) resolved to a 3.2 Å resolution (PDB ID: 6HPS). (c) The structure of FLuc in complex with the iLH2 analogue iDLSA aligned to the reported structure of FLuc in complex with the LH2 analogue 5’-O-[(N-dehydroluciferyl)-sulfamoyl] adenosine (DLSA) (PDB ID: 4G36) (Sundlov et al., 2012) based on the FLuc N-terminal domain (residues 1–436). The structure of FLuc in complex with iLH2 is shown in red, and the structure of FLuc in complex with LH2 is shown in orange. (d) The structure of FLuc in complex with luciferin analogue DLSA (PDB ID: 4G36) (orange) and the infra-luciferin analogue iDLSA (red). Those residues within 4 Å of the substrate in each structure are highlighted in blue. (e) The table lists all residues within 4 Å of the both substrates, with those in orange or red only being found within 4 Å of DLSA and iDLSA respectively. (f) Highlights the same seven active site residues for both the aligned structures, with FLuc iLH2 residues in blue and FLuc LH2 residues in green. All analysis performed in PyMOL software (Schrodinger).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig1-figsupp1-v2.jpg)
+
 In this work, we explored the possible structural interactions in the enzyme that may account for the near infrared emission of iLH2 and its application to dual-BLI in vivo. First, the X-ray crystal structure of FLuc in complex with a high-energy intermediate analogue, 5’-O-[(N-dehydroinfraluciferyl)-sulfamoyl] adenosine (iDLSA) was determined to provide insight into the FLuc-iLH2 light-emitting reaction. Next, we selected a pair of stabilised colour-shifted FLuc mutants, which emit with a 20 nm separation in peak emission wavelength with iLH2 in the near infrared. We demonstrated the ability to spectrally unmix these two biological signals in vivo at depth using iLH2. Finally, we show a proof-of-concept of utility using this novel dual imaging technique to longitudinally monitor both tumour burden and chimeric antigen receptor (CAR) T cell therapy within a single animal model.
 
 ## Results
 
-## Crystal structure of firefly luciferase in complex with a iLH2 analogue
+### Crystal structure of firefly luciferase in complex with a iLH2 analogue
 
 To help understand the red shift in bioluminescence emission from FLuc that is observed in its reaction with iLH2, the X-ray crystal structure of FLuc in complex with iDLSA was resolved and is shown in Figure 1b (PDB ID: 6HPS). Data collection and refinement statistics (molecular replacement); and data collection, phasing and refinement statistics for mad (semet) structures can be found in Figure 1—figure supplement 1. iDLSA captures FLuc in the adenylation step of the light emitting reaction (1H and 13C data spectra synthetic chemical compounds can be found in). The conformation of the iLH2 heterocyclic rings with respect to the alkene, as drawn in Figure 1a, is confirmed to be as predicted by computational studies and is the most likely conformation of the light emitting form (Berraud-Pache and Navizet, 2016). This newly crystallised FLuc structure was aligned with the reported structure of FLuc with 5’-O-[(N-dehydroluciferyl)-sulfamoyl] adenosine (DLSA) (PDB ID: 4G36) (Sundlov et al., 2012). The structures show good alignment to each other, however there is evidence of a more open active site supported by a reduction in root-mean-squared (RMSD) score when aligned based on just the N-terminal domain of FLuc rather than the entire structure (RMSD = 0.688 and 0.783 respectively) (Figure 1c).
 
 All FLuc residues in close proximity (4 Å) to DLSA were also found to be within the same distance to iDLSA, with the exception of Arg437, >4 Å away from iDLSA (Figure 1d and e). We noted that despite differences in the conformation of iDLSA compared to DLSA in both 4G36 and L. cruciata 2D1S (Nakatsu et al., 2006) structures, the positions of the phenolic groups are quite similar (~0.5 Å). The altered position of the benzothiazole ring and the greater size of iDLSA may be the cause of a series of small active site changes that affect residues Glu311, Arg337, Asn338, Gly339, and Thr343 resulting in a total of six differences in H-bonding interactions. When specific residues implicated in the light emitting reaction (Sundlov et al., 2012) were measured between the two structures differences ranged from 0.7 to 1.6 Å; with the biggest divergence being Lys529 (found in the C-terminal cap) which had a 2.4 Å difference in the nitrogen residue found in the side chain of the amino acid (Figure 1f). The resulting increase in active site polarity due to the rotation of the C-terminal cap, if maintained during the light emitting conformation, could contribute to the red-shift in light emission (Nakatsu et al., 2006), in addition to the increased π-conjugation through the chemical structure of the emitter. This X-ray structure will help the future design of more efficient FLuc-iLH2 pairs.
 
-## Spectral unmixing of firefly luciferase mutants in vitro
+### Spectral unmixing of firefly luciferase mutants in vitro
 
 A range of colour-shifted, thermo- and pH stable FLuc mutants were spectrally characterised in vitro with a comparative selection of LH2 analogues proven to red-shift bioluminescence emission (CycLuc1– Evans et al., 2014; Aka-Lumine-HCL – Kuchimaru et al., 2016; and iLH2– Jathoul et al., 2014). Two new luciferins NH2-NpLH2 and OH- NpLH2 have also been shown to have near infrared emissions (Hall et al., 2018) but these were reported too late to include in this study. FLuc mutants were engineered to combine mutations reported to provide superior stability (Jathoul, 2012) and colour-shifting capability (Branchini et al., 2005) (stabilising and colour shifting FLuc mutations are detailed in Materials and methods). The Raji B lymphoma cell line engineered to express a FLuc mutant were spectrally imaged after addition of each substrate. These cell lines were subsequently used for all in vitro and in vivo testing. Both CycLuc1 and Aka-Lumine-HCL showed a consistent red-shift in peak bioluminescence emission wavelength to ~600 nm and ~660 nm respectively for all FLuc mutants, making these substrates unsuitable for dual colour BLI (Figure 2—figure supplement 1). The data confirmed that with LH2 both FLuc_natural and FLuc_green have a peak emission of ~560 nm, whilst FLuc_red has a peak emission of ~620 nm (Figure 2—figure supplement 1) (Jathoul, 2012), (Branchini et al., 2005). When tested with iLH2 all FLuc mutants were shifted >100 nm into the near infrared but maintained their relative spectral shift [FLuc_green ~ 680 nm, FLuc_natural ~ 700 nm and FLuc_red ~ 720 nm (Figure 2—figure supplement 1)]. From this, we progressed further with two FLuc mutants, FLuc_green and FLuc_red to explore their utility for dual-BLI.
 
 The ability to spectrally unmix FLuc_green and FLuc_red (Figure 2a) in vitro was investigated by mixing the two FLuc_mutants expressed in the Raji B lymphoma cell line at various ratios followed by spectral imaging and unmixing with both LH2 and iLH2 (Figure 2b). As would be expected from accurate spectral unmixing, the top wells were classified as containing mostly FLuc_green signal, which gradually decreased down the plate in line with the decreasing proportions of FLuc_green expressing cells, with the bottom wells being largely classified as FLuc_red signal for both LH2 and iLH2. The percentage unmixed signal of FLuc_green and FLuc_red was plotted for each ratio of FLuc expressing cells (Figure 2c). Correlation analysis was performed on this data comparing input cellular proportions with unmixed signal, giving R2 values of 0.9983 and 0.9972 for LH2 and iLH2 respectively. Even though all 18 bandpass filters equipped on the IVIS Spectrum were utilised for spectral unmixing in this in vitro testing, we appreciate that not all potential users of this novel dual bioluminescence methodology will have access to machines with such a wide selection of bandpass filters. Therefore, further analysis of our data showed that spectral unmixing could be achieved with high accuracy just using a subset of filters. For LH2, the use of 3 bandpass filters (500 nm, 660 nm, 820 nm) gave an R2 value of 0.9958; For iLH2, the use of 3 bandpass filters (600 nm, 700 nm, 800 nm) gave an R2 value of 0.9937. The highest accuracy of spectral unmixing we could achieve using just two filters were R2 values of 0.9776 and 0.9775 for LH2 (500 nm and 720 nm) and iLH2 (600 nm and 720 nm), respectively. Additionally, an experiment was carried out where FLuc_green and FLuc_red have been expressed at different levels in the same cell. Spectral bioluminescence imaging and unmixing has subsequently been performed to successfully reflect these differing expression levels with both LH2 and iLH2 (Figure 2—figure supplement 2). This spectral imaging data show that both LH2 and iLH2 can be used for dual bioluminescence reporting in vitro.
 
-## Spectral characterisation of firefly luciferase mutants with LH2 and iLH2 in vivo
+![Figure 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-v2.jpg)
+
+**Figure 2.:** (a) Bioluminescence spectral unmixing of cells expressing colour-shifted Firefly luciferase (FLuc) mutants, for both in vitro assays and in vivo animal models, requires spectral bioluminescence imaging through a series of bandpass filters. Bioluminescence spectral imaging acquires spectral data, which can then be deconvoluted into its separate components. As depicted, spectral unmixing in vivo is significantly more challenging due to attenuation of bioluminescent signal that does not fall within the bio-optical window. (b) FLuc colour mutants FLuc_green and FLuc_red expressed in the B lymphoma Raji cell line were mixed in various proportions (0–100% of the total population). After addition of either D-luciferin (LH2) or infraluciferin (iLH2) plates were spectrally imaged using the IVIS Spectrum (Perkin Elmer).Unmixed green and unmixed red output images produced from library spectral unmixing using Living Image software (Perkin Elmer) for both substrates. (c) Percentage unmixed signal of FLuc_green and FLuc_red for each ratio of FLuc expressing cells tested when imaged with LH2 and iLH2. Signal adjusted to 100% populations. Mean and standard deviation plotted (n = 6 for both LH2 and iLH2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) LH2, (b) iLH2, (c) CycLuc1 and d) Aka-Lumine-HCL) in vitro, alongside the chemical structure of CycLuc1 and Aka-Lumine-HCL below the corresponding spectra). Spectra normalised to peak emission for each FLuc mutant with each substrate. Each point on the x-axis gives the midpoint of the 20 nm band pass filter used in spectral imaging.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The mammalian B Lymphoma Raji cell line was transduced with FLuc_green and FLuc_red, which was then sorted by flow cytometry using co-expressed marker genes to get cell populations with differing expression levels of the two luciferases enzymes. (a) The normalised median fluorescence intensity (MFI) of FLuc_green and FLuc_red for each cellular population (b) Differing combinations of low and high expression levels of FLuc_green and FLuc_red could be detemined using spectral bioluminescence imaging and spectral unmixing with both LH2 and iLH2.
+
+### Spectral characterisation of firefly luciferase mutants with LH2 and iLH2 in vivo
 
 To investigate the use of FLuc_green and FLuc_red with LH2 and iLH2 for in vivo dual BLI three NOD scid gamma (NSG) tumour models, representing increasing tissue depth (subcutaneous, systemic and intracranial), were established with the Raji B lymphoma cell line expressing either FLuc_green or FLuc_red (as described for in vitro experiments). All tumour models were then spectrally imaged with both LH2 and iLH2 (Figure 3, Figure 3—figure supplement 1 and Figure 3—figure supplement 2) to obtain the normalised spectra and average radiance of each FLuc mutant with both luciferins in all three in vivo models (Figure 4). The normalised bioluminescence spectra for every mouse in each model when imaged with LH2 is shown, with the total radiance for each mouse plotted to the right of the spectral plot (Figure 4a–c). The data show that when imaged with LH2 both FLuc_green and FLuc_red had an average peak emission between 610–630 nm; meaning the peak emission for FLuc_red is maintained as in vitro whereas the peak emission of FLuc_green is red shifted by ~60 nm in vivo. FLuc_green also exhibited a bimodal spectral distortion, with a minor peak at ~560 nm. In contrast to LH2, FLuc_green and FLuc_red had a ~ 20 nm separation of average peak emissions in all three animal models with iLH2 (FLuc_green ~ 700 nm and FLuc_red ~720 nm) (Figure 4d–f).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-v2.jpg)
+
+**Figure 3.:** A representative selection of filter images from mice engrafted with the Raji B lymphoma cell line expressing either Fluc_green or Fluc_red for each of the in vivo tumour models when imaged with iLH2 (a) subcutaneous (b) systemic and (c) intracranial (bandpass filters not shown are 600 nm, 640 nm, 680 nm, 720 nm, 760 nm, 800 nm).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-figsupp2-v2.jpg)
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig4-v2.jpg)
 
-**Figure 4.:** 2 and iLH2 in vivo.The normalised spectra, and a plot of average radiance, for each FLuc mutant when expressed in the Raji B lymphoma cell line engrafted in each tumour model when imaged with LH2 is shown, (a) subcutaneous (b) systemic and (c) intracranial, and when the same animals were imaged with iLH2 is shown, (d) subcutaneous (e) systemic and (f) intracranial. Subcutaneous (n = 9), systemic (n = 10), intracranial (n = 7). T test used to establish statistical significance comparing average radiance values (systemic model when imaged with LH2p=0.0224).
+**Figure 4.:** The normalised spectra, and a plot of average radiance, for each FLuc mutant when expressed in the Raji B lymphoma cell line engrafted in each tumour model when imaged with LH2 is shown, (a) subcutaneous (b) systemic and (c) intracranial, and when the same animals were imaged with iLH2 is shown, (d) subcutaneous (e) systemic and (f) intracranial. Subcutaneous (n = 9), systemic (n = 10), intracranial (n = 7). T test used to establish statistical significance comparing average radiance values (systemic model when imaged with LH2p=0.0224).
 
 In addition to the separation of peak emission wavelengths when imaged with iLH2 in vivo, the relative intensities of FLuc_green and FLuc_red were more comparable when imaged with iLH2 than with LH2; With LH2 FLuc_red had an average radiance that was 42 (subcutaneous), 4.12 (systemic) and 7.28 (intracranial) times brighter than FLuc_green (Figure 4a–c). Whereas, when imaged with iLH2 the average radiance between FLuc_green and FLuc_red was 1.38 (subcutaneous), 1.2 (systemic) and 1.51 (intracranial) times different (Figure 4d–f). No statistically significant difference in relative intensities between FLuc_green and FLuc_red was found in tumour models imaged with iLH2 (p=0.3414, 0.4594 and 0.6153 for the subcutaneous, systemic and intracranial tumour models respectively, T test). This comparability of relative intensities between FLuc_green and FLuc_red with iLH2 means that if used as genetic reporters for dual imaging, the dynamic range of radiance values for both enzymes will be more similar, therefore giving a more accurate comparison of the processes being monitored.
 
-## Spectral unmixing of firefly luciferase mutants in vivo
+### Spectral unmixing of firefly luciferase mutants in vivo
 
 To validate the ability to spectrally unmix FLuc_green and FLuc_red in vivo with iLH2 a systemic Raji tumour model was established. Raji cell lines expressing the FLuc mutants were mixed in the following ratios: 90:10, 75:25 and 50:50 for FLuc_green: FLuc_red and vice versa. After spectral BLI with both substrates, animals were sacrificed and the bone marrow was extracted for flow cytometry analysis to confirm the proportions of engrafted Raji FLuc populations (representative examples of flow cytometry plots can be found in Figure 5—figure supplement 1). Spectral unmixing was performed using Living Image (Perkin Elmer) by creating library spectra of FLuc_green and FLuc_red with both LH2 and iLH2, established from the pure expressing populations obtained during in vivo spectral characterisation (Figure 4). Output images with both LH2 (Figure 5a) and iLH2 (Figure 5b) were generated for FLuc_green and FLuc_red, as well as a composite image for each substrate.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig5-v2.jpg)
+
+**Figure 5.:** The Raji B lymphoma cell line expressing either FLuc_green or Fluc_red, were mixed in various proportions and engrafted in a systemic in vivo model. Cell mixtures ranged from 90:10 to 10:90 Fluc_green to Fluc_red, and each imaging session included one mouse engrafted with each mixture. Animals were spectrally imaged with D-Luciferin (LH2) and infraluciferin (iLH2) using the IVIS spectrum (Perkin Elmer) in separate imaging sessions. (a) An example of the unmixed Fluc_green, umixed Fluc_red and composite output images when imaged with LH2 and (b) iLH2. Percentage of unmixed Fluc_green and Fluc_red signal for each cell mixture when imaged with (c) LH2 (d) iLH2, and (e) extracted bone marrow samples when analysed by flow cytometry (n = 4 per dilution condition).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Representative flow cytometry plots showing gating of extracted bone marrow sample from (a) an FLuc mutant Raji tumour model and from (b) a control mouse. (c) also representative flow cytometry plots from a mouse engrafted with each different mixture of mutant FLuc Raji cells (ratio given is Fluc_green: Fluc_red).
+
 The percentage signal unmixed as FLuc_green and FLuc_red with both LH2 (Figure 5c) and iLH2 (Figure 5d) was determined and correlated to the percentage population of each FLuc_mutant within the Raji cell population taken from extracted bone marrow samples and analysed using flow cytometry (Figure 5e). A correlation of 0.99 was found with iLH2 (R2 value, SD = 0.01). LH2 had a correlation of 0.89 (R2 value, SD = 0.06), which was significantly different from the R2 values obtained by flow cytometry (p<0.0001, ONE-Way ANOVA with post hoc Tukey test). No significant difference was found between R2 values determined by flow cytometry and unmixed bioluminescence signal using iLH2. Additionally, significant differences were found between the percentage unmixed signal using LH2 and cellular proportions determined by flow cytometry, with p values of < 0.0001, 0.003, 0.0042 and 0.0056 for the 90%, 75%, 50% and 25% FLuc_green conditions respectively. No significant difference was found between percentage unmixed signal using iLH2 and cellular proportions determined by flow cytometry, except for the 90% FLuc_green condition (p=0.0257). Therefore, iLH2 is superior to LH2 for in vivo dual reporting applications.
 
-## Application of dual bioluminescence imaging using infraluciferin
+### Application of dual bioluminescence imaging using infraluciferin
 
 The characterised and validated in vivo dual BLI system using FLuc mutants in combination with iLH2 was then applied to track tumour burden and CAR T cell therapy within the same animal model. A Raji B lymphoma tumour cell line expressing FLuc_green was used, and healthy human donor T cells were engineered to express CD19 CAR and FLuc_red linked via a 2A peptide. Tumour cells were first systemically engrafted, followed by administration of CAR T cells 8 days later. A control animal received tumour only. Spectral BLI using iLH2 was then performed at 3, 4 and 6 days post CAR T cell administration on the IVIS Spectrum.
 
@@ -97,7 +131,178 @@ One potential limitation of this system in its current state is the lower quantu
 
 ## Materials and methods
 
-## Preparation of 5’-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Photinus pyralis)</td>
+      <td>FLuc</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>Amino acid changes from ref 21 and 23, codon optimised for mammalian expression for use in this paper</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse, male)</td>
+      <td>NSG</td>
+      <td>Jax mouse strain (Charles River)</td>
+      <td>NOD.Cg-Prkdcscid Il2rgtm1WjI/SzJ</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human, male)</td>
+      <td>Raji B lymphoma</td>
+      <td>ATCC CCL-86</td>
+      <td>N/A</td>
+      <td>Mycoplasma tested by GATC (Eurofins Genomics)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD34-PE</td>
+      <td>Biolegend</td>
+      <td>Clone 581, RRID: AB_1731862</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD271-APC</td>
+      <td>Biolegend</td>
+      <td>Clone ME20.4, RRID: AB_10645515</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, dye</td>
+      <td>Viability APC eFluoro780</td>
+      <td>eBioscience</td>
+      <td>N/A</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse/human CD11b PerCP/Cy5.5</td>
+      <td>Biolegend</td>
+      <td>Clone M1/70, RRID: AB_893232</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD19 FITC</td>
+      <td>eBioscience</td>
+      <td>Clone HIB19, RRID: AB_10669461</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD20 eFLuor 450</td>
+      <td>eBioscience</td>
+      <td>Clone 2H7, RRID: AB_1633384</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Luciferin</td>
+      <td>Regis technologies</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Living Image</td>
+      <td>Perkin Elmer</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flow Jo</td>
+      <td>Tree Star Inc (Oregon, USA)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL software</td>
+      <td>Schrodinger</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CrysalisPro</td>
+      <td>Agilent Technologies</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACSDIVA</td>
+      <td>BD biosciences</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>infraluciferin</td>
+      <td>Anderson, J.C.; Grounds, H.; Jathoul, A.P.; Murray, J.A.H.; Pacman, S.J.; Tisi, L. RSC Advances 2017, 7, 3975–82</td>
+      <td>N/A</td>
+      <td>Prepared by JC Anderson laboratory</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>iDLSA</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>Prepared by JC Anderson laboratory, seebelow and data set at https://doi.org/10.5061/dryad.3j9kd51cs.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CycLuc1</td>
+      <td>Merck Millipore</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aka-Lumine-HCL</td>
+      <td>Wako Pure Chemical Industries</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of 5’-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin
 
 All manipulations were routinely carried out under an inert (Ar or N2) atmosphere. All reagents were used as received unless stated. For the purposes of thin layer chromatography (tlc), Merck silica-aluminium plates were used, with uv light (254 nm) and potassium permanganate or anisaldehyde for visualisation. For column chromatography Merck Geduran Si 60 silica gel was used. Butyl lithium solutions were standardised with diphenyl acetic acid.
 
@@ -127,11 +332,11 @@ Trans: A pure sample of trans was by separated by column chromatography to give 
 
 Copies of all 1H and 13C NMR have been deposited at https://doi.org/10.5061/dryad.3j9kd51cs.
 
-## Preparation of the p.pyralis luciferase-5’-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin (FLuc-iDLSA) complex
+### Preparation of the p.pyralis luciferase-5’-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin (FLuc-iDLSA) complex
 
 Approximately 0.6 mg of iDLSA was suspended in 500 µL of crystallisation buffer (25 mM Tris-Cl containing 200 mM AmSO4, 1 mM DTT, 1 mM EDTA) pH 7.85 at 21°C. The solution was vortexed vigorously and sonicated. Most of the solid was dissolved and the concentration was determined to be ~1 mM by UV absorbance (using an extinction coefficient of 8200 at 372 nm for this buffer and pH). A 20 mg/mL solution of P. pyralis luciferase (PpyWT that contains the N-terminal peptide GPLGS-) in the same buffer (500 µL) was mixed gently with the iDLSA at room temperature and then incubated at 15°C for 20 min. The concentration of iDLSA in the protein-inhibitor mixture was determined by UV absorbance to be 620 µM, giving an inhibitor:enzyme ratio of ~3:1, at this point the bioluminescence activity of the mixture was assayed and the enzyme was 85% inhibited. A small amount of a separate iDLSA solution (available from solubility trials) was added to bring the inhibitor:enzyme ratio to ~4:1, and based on activity the enzyme was 91% inhibited. Finally, the protein-inhibitor solution was added to ~0.5 mg of iDLSA and mixed gently and incubated at 15°C for 15 min. Based on activity, 99% of the enzyme was inhibited and based on UV absorbance the inhibitor:enzyme ratio was 5.6:1 (950 µM:170 µM) The protein-inhibitor solution was centrifuged and a very slight amount of inhibitor was evident. The supernatant was frozen in liquid nitrogen in ~18–50 µL aliquots and stored at −80°C. A single aliquot was thawed and the solution remained clear. The pH of this solution at 6°C should be 8.3, pH 8.17 at 10°C, and pH 7.9 at 21°C.
 
-## Crystallisation and refinement of P. pyralis luciferase/dehydroinfraluciferin DLSA complex
+### Crystallisation and refinement of P. pyralis luciferase/dehydroinfraluciferin DLSA complex
 
 Approximately 0.6 mg of iDLSA was resuspended in 500 µL of buffer (25 mM Tris-Cl containing 200 mM (NH4)2SO4, 1 mM DTT, 1 mM EDTA) pH 7.85 at 21°C to a concentration of 1 mM as determined by UV absorbance (extinction coefficient of 8200 at 372 nm). This solution was mixed with a 20 mg/mL solution of P. pyralis (inhibitor:enzyme ratio of ~3:1) at room temperature and then incubated at 15°C for 20 min. The inhibitor:enzyme solution was centrifuged and the supernatant was frozen in liquid nitrogen in ~18–50 µL aliquots and stored at −80°C for future crystallisations.
 
@@ -141,37 +346,37 @@ Data were collected at the Diamond Light Source on beam line IO4-1, at wavelengt
 
 The X-ray data collection and refinement statistics have been deposited at https://doi.org/10.5061/dryad.3j9kd51cs.
 
-## Firefly luciferase mutants and cell lines
+### Firefly luciferase mutants and cell lines
 
 FLuc mutants contained 11 pH and temperature stabilising mutations (F14R/L35Q/A105V/V182K/T214C/I232K/D234G/E354R/D357Y/S420T/F465R) (Jathoul, 2012). FLuc_green contained an additional three mutations (V241I/G246A/F250S), and FLuc_red has the red-shifting mutation S284T, as well as the mutation R354I which is required to maintain the red-shift in this stabilised FLuc backbone (Branchini et al., 2007). All FLuc mutants were codon optimised for mammalian expression and cloned into the MLV-based splicing gamma retroviral vector SFG. The Raji B lymphoma cell line used in all experiments was transduced to express a FLuc mutant, and subsequently flow-sorted for pure FLuc expressing populations using a co-expressed marker gene. For tumour cell lines FLuc.IRES was upstream of the marker gene CD34 or dNGFR as indicated. For T cells FLuc.2A_peptide was upstream of the CAR CD19-4G7_HL-CD8STK-41BBZ.
 
-## Production of retroviral supernatant
+### Production of retroviral supernatant
 
 HEK-293T packaging cells were plated at a density of 200’000 cells/ml in 100 mm tissue culture dish ~24 hr prior to transfection. Transfections were performed when cells were 50–70% confluent. A bulk transfection mixture was prepared where 30 μl GeneJuice Transfection Reagent (Merck millipore) was added to 470 μl of plain RPMI for each supernatant to be produced. Following a 5 min incubation at room temperature, a total volume of 12.5 μg of DNA was added for each plate to be transfected (for retroviral transfection: 3.125 μg RDF RD114 env plasmid, 4.6875 μg PeqPam-env gagpol plasmid, 4.6875 μg SFG retroviral construct). Following addition of plasmid DNA, the mixture was incubated for a further 15 min at room temperature prior to dropwise addition to the HEK- 293 T cell culture. Plates were gently agitated following transfection. Supernatant harvested at 48 hr was stored at 4°C, and was then combined with the 72 hr harvest prior to aliquoting and storage at −80°C.
 
-## Transduction of cell lines
+### Transduction of cell lines
 
 The day prior to transduction Raji B lymphoma cells (atcc ccl-86) (>90% viable) were diluted ~1 in 10 to ensure exponential growth for transduction; also a well of non-tissue culture treated 24 well plate was coated with 8 μg/ml retronectin (Lonza) for every plasmid to be transduced and left at 4°C overnight. The next day retronectin was aspirated and 250 μl of each retroviral supernatant for transduction was added to a well and incubated for 30 min at room temperature. Whilst incubating, Raji cells were harvested, counted and resuspended at a concentration of 600,000 cells/ml. supernatants were aspirated from wells of retronectin coated plate and 500 μl of cell suspension was added to each well followed by 1.5 ml of the same retroviral supernatant that was previously incubated in each well. Cells were spin transduced at 1000 RCF for 40 min then returned to incubator for 48 hr before harvest and expression testing.
 
-## Flow cytometry and Fluorescence Activated Cell Sorting
+### Flow cytometry and Fluorescence Activated Cell Sorting
 
 Transduction efficiencies were assessed by flow cytometry, based on marker gene expression as indicated by antibody staining using the BD LSR FortessaX-20. If necessary Fluorescence Activated Cell Sorting (FACS) was performed to obtain pure expressing populations, also based on marker gene expression as indicated by antibody staining, using the BD FACS Aria Fusion. FACS was also use to sort populations of cells expressing differing levels of FLuc_green and FLuc_red within the same cell. Concentration of antibody used was guided by manufacturer’s instructions. Anti-human CD34-PE (clone 581), anti-human CD271-APC (clone ME20.4) and anti-mouse/human CD11B-PerCP/Cy5.5 (clone M1/70) (Biolegend). Anti-humanCD19-FITC (clone HIB19), anti-human CD20-eFluor450 (clone 2H7) and Viability APC-eFluor780 (eBioscience). Data were analysed using Flow Jo software (Tree Star Inc, Oregon, USA).
 
-## Flow cytometry of extracted bone marrow
+### Flow cytometry of extracted bone marrow
 
 When bone marrow cells were required for flow cytometry analysis. Following animal sacrifice by CO2 narcosis and cervical dislocation, the femurs were removed and transferred to PBS pending cellular harvest. The ends of the femur were snipped off using scissors and the bone was placed in an extraction tube (microfuge tube with holder made from 200 μl pipette tip inserted). Tubes were centrifuged at 1000 RCF for 60 s. Bone marrow pellet was resuspended in 50 μl Ammonium-Chloride-Potassium (ACK) lysing buffer (Lonza) and left for 60 s at room temperature before washing with PBS and passing through a 70 μm filter before pelleting. Samples were blocked 2.4G2 supernatant (rat anti-mouse CD32) supplemented with mouse Ig FcR blocking reagent (Miltenyl Biotec) for 30 min at room temperature. Cells were washed with PBS and pelleted, followed by each sample being transferred to a well of a U-bottomed 96 well plate before proceeding with antibody staining. An antibody master mix containing all antibodies to be used for staining was prepared in PBS to a total volume of 100 μl per sample. Samples were left to stain at room temperature in the dark for 30 min. Samples were washed once with PBS, pelleted and transferred to FACS tubes. Beckman Coulter Flow-Checkfluorospheres were used as a stopping gate for flow cytometry analysis. Beads are supplied at 1 × 10e6 beads/ml in an aqueous solution containing preservative surfactant. To prevent toxicity to cellular samples, beads were washed once with PBS prior to addition to samples. Following centrifugation (400 RCF for 5 min), beads were resuspended in an equal volume of PBS with 10 μl of beads added to each sample.
 
 As six fluorophores were used for bone marrow analysis, compensation was performed prior to sample acquisition using OneComp eBeads (eBioscience). Events were kept between 2,000–5,000 events/second, with 1000 events being recorded per sample, using flow check beads as a stopping gates (10% each sample). Flow cytometry gating first identified the lymphocyte population (FSC-A vs SSC-A), exclusion of doublet cells (SSC-A vs SSC-W); antibodies detailed in Flow cytometry and Fluorescence Activated Cell Sorting were then used to gate on viable cells, exclude mouse monocyte cells (mCD11b), identify the Raji tumour cell population (CD19 and CD20) and finally co-expressed marker gene (dNGFR and dCD34).
 
-## Preparation of CAR T cells
+### Preparation of CAR T cells
 
 On day one peripheral blood mononuclear cells were isolated from a healthy donor blood using Ficoll-paque density gradient media (GE Healthcare). Cells were resuspended at 2 × 106/ ml and stimulated with 1 mg/ml PHA (Sigma). On day 2 cells were fed with IL-2 at a concentration of 100 U/ml (Genscript). On day 3 cells were transduced as described in transduction of cell lines, with IL-2 at a final concentration of 100 U/ml. On day 6 cells were harvested and resuspended at 1 × 106/ml with 100 U/ml IL-2 and left to recover for at least 48 hr before in vivo injection. Transduction efficiency was measured using flow cytometry.
 
-## In vitro bioluminescence assays
+### In vitro bioluminescence assays
 
 For spectrographic testing of FLuc, mutants were stably transduced in the mammalian Raji B-cell lymphoma cell line. For in vitro bioluminescence assays cells were harvested, counted and 1 × 106 cells/well were resuspended in TEM buffer (1M Tris-acetate, 20 mM EDTA and 100 mM MgSO4 at pH 7.8) and added in triplicate to wells of a black 96-well plate (100 μl/well). If mixtures of cells were used, total cell number remained the same. For spectral testing the stage temperature of the IVIS Spectrum was set to 37°C (automatic acquisition mode, FOV 13.2, f/1). iLH2 was synthesised by UCL Chemistry. Other substrates tested include D-luciferin (Regis Technologies), CycLuc1 (Merck Millipore) and Aka-Lumine-HCL (Wako Pure Chemical Industries). Substrates were dispensed into the wells using a multi-channel pipette (at a final concentration of 300 μM). A 2 min delay was allowed for stabilisation of light output. Images were acquired through all 18 bandpass filters on the IVIS Spectrum (20 nm bandpass, 490 nm to 840 nm). Living image software (Perkin Elmer) was used for ROI analysis of spectral images and spectral unmixing analysis. Image analysis involved placing a ROI over the signal in each well. If a series of spectral images was acquired, the same ROI was placed over the well in every image for each plate. For spectral unmixing analysis, guided spectral unmixing was first used on pure expressing FLuc_green and FLuc_red populations to create a library spectra for each mutant with each substrate. The relevant library spectra was then used to perform spectral unmixing on mixed FLuc_green and FLuc_red populations (or cellular populations expressing both enzymes). Data exported to Excel (Microsoft) and Prism (Graphpad) for further analysis. Spectra was normalised to peak emission for each FLuc mutant with each substrate. Due to the characterisation nature of these in vitro experiments, and the substantial amounts of precious chemicals needed to synthesise iLH2, it was decided to repeat each in vitro experiment twice with three replicates.
 
-## In vivo models
+### In vivo models
 
 All animal studies were approved by the University College London Biological Services Ethical Review Committee and licensed under the UK Home Office regulations and the Guidance for the Operation of Animals (Scientific Procedures) Act 1986 (Home Office, London, United Kingdom). All of the in vivo models used the severely immunocompromised NSG (NOD.Cg PrkdcscidIl2rgtm1Wji/SzJ) mouse model (JAX mouse strain, Charles River). Mice were male and aged between 6–8 weeks old. Due to the characterisation, or proof of concept, nature of these experiments, and the substantial amounts of precious chemicals needed to synthesise iLH2, it was decided to engraft 4–5 mice for every condition in each model to ensure engraftment and survival in a least three animals for each condition. Also, no specific toxicity experiments were performed, but no adverse side effects were observed with iLH2.
 
@@ -181,10 +386,10 @@ For engraftment of systemic tumours, FLuc expressing Raji cell lines were counte
 
 For engraftment of intracranial tumours, FLuc expressing Raji cell lines were counted and 2 × 104 cells were pelleted for each animal. Cells were washed twice in PBS before being resuspended in PBS to a concentration of 1 × 104 cells/μl and were kept on ice ready for injection. Intracranial injections were performed using a stereotaxic frame fitted with a hamilton syringe. Cells were injected (2 μl bolus) into the right striatum (from bregma 2 mm right, 1 mm anterior, 4 mm down). Mice were left at least 7 days for tumour development before imaging.
 
-## In vivo bioluminescence imaging
+### In vivo bioluminescence imaging
 
 For imaging of in vivo models, LH2 and iLH2 were solubilised in sterile PBS and animals were administered with substrate (2 mg (or 100 mg/kg) of either LH2 or iLH2 in 200 μl or 400 μl bolus respectively) via intraperitoneal (IP) injection. Animals were anaesthetised using 2% Isofluorine (flow rate 1 L/min O2). Spectral imaging was commenced 10 min post IP injection to allow stabilisation of light output. If the same animal was being imaged with both LH2 and iLH2, at least 24 hr was left between imaging to allow for full clearance of substrate. In vivo bioluminescent images were acquired using IVIS Spectrum (FOV 24, f/1, Medium (8)bin, automatic acquisition mode for imaging with LH2, FOV 24, f/1, Medium (8)bin, 120 s acquisition, total imaging time 24 mins for imaging with iLH2). These parameters are calculated to keep the binning, exposure time and f/stop within an optimal range for quantification. Up to five animals could be imaged at once and the stage was heated to 37°C. Open filter images were acquired prior to and post spectral imaging to confirm the stability of photon emission during spectral acquisition. Spectral imaging acquired images through 14 and 12 of the 20 nm bandpass filters on the IVIS Spectrum depending on substrate used (530–830 nm for LH2 and 590–830 nm for iLH2), starting from the lowest to the highest filter. It was not necessary to acquire images through all filters as the bioluminescent emissions of FLuc mutants did not cover the full spectral range from 490 to 850 nm. Living image software was used for ROI analysis of spectral images and spectral unmixing analysis. Radiance values for bioluminescence are shown using pseudo-colour scales detailed in each image. Image analysis involved placing an ROI over the tumour signal for every animal in each model. If a series if spectral images were acquired, the same ROI was placed over tumour signal in every image for each mouse. For spectral unmixing analysis, guided spectral unmixing was first used on pure expressing FLuc_green and FLuc_red populations from spectral characterisation experiments to create a library spectra for each mutant with each substrate. The relevant library spectra was then used to perform spectral unmixing on mixed FLuc_green and FLuc_red populations. Data exported to Excel (Microsoft) and Prism (Graphpad) for further analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Where relevant means ± standard deviation of data given. Statistical tests used include T test and ONE-way ANOVA with post hoc Tukey’s test for multiple column comparison (Prism, Graphpad). Correlation analysis performed using Microsoft excel.

@@ -45,33 +45,237 @@ Here, we collected grassland soil samples from two biotas of alpine and temperat
 
 ## Results
 
-## Prokaryotic and plant community similarity over geographic distance
+### Prokaryotic and plant community similarity over geographic distance
 
 A total of 11,063 operational taxon units (OTUs) were detected from all 258 grassland soil samples in both alpine and temperate biotas (Figure 1—figure supplement 1). A significant (p < 0.001) binomial relationship (U shape) was observed for the prokaryotic community over geographic distance in top- (R2 = 0.161) or subsoil (R2 = 0.114) from all sites on a scale up to 4000 km. Specifically, the prokaryotic community similarity in topsoil decreased over geographic distance on a scale of <1920 km mostly within either temperate or alpine biota, but increased after this tipping point when across biotas (in pairwise sites between alpine and temperate biotas). Similarly, the prokaryotic community similarity in subsoil decreased over geographic distance on a scale of <1760 km mostly within either temperate or alpine biota, but increased after this tipping point when across biotas (Figure 1). When across biotas, the prokaryotic community similarity increased significantly over geographic distance with similar slopes (turnover rates) in top- (slope = 0.007, R2 = 0.199) and subsoil (slope = 0.006, R2 = 0.134).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig1-v2.jpg)
+
+**Figure 1.:** Panels (a) and (c) represent the prokaryotic community in topsoil, while panels (b) and (d) represent the prokaryotic community in subsoil. Orange and light blue points represent pairwise sites within the alpine and temperate biota, respectively. Gray points represent pairwise sites between the alpine biota cross temperate biota. Gray shades stand for 95% confidence interval.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Light blue points are for pairwise sites in the alpine grassland. Orange points are for pairwise sites in the temperate grassland. Gray points are for pairwise sites between the alpine grassland cross temperate grassland. Gray shades stand for 95% confidence interval.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Topsoil; (b) subsoil. Light blue points are for pairwise sites in the alpine grassland. Orange points are for pairwise sites in the temperate grassland. Gray points are for pairwise sites between the alpine grassland cross temperate grassland. Gray shades stand for 95% confidence interval.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** QZ stands for the sampling sites in the alpine grassland, and NM stands for the sampling sites in the temperate grassland.
 
 Within the alpine biota, a valid (p < 0.001) distance-decay relationship was observed for the prokaryotic community over geographic distance in top- (R2 = 0.034) or subsoil (R2 = 0.013). However, within the temperate biota, the distance-decay relationship for the prokaryotic community occurred only in topsoil (R2 = 0.129, p < 0.001), while no relationship was observed in subsoil. In topsoil, prokaryotic community similarity had a higher turnover rate in the temperate (−0.012) than alpine biota (−0.005).
 
 Similar to the prokaryotic community, the plant community also exhibited a significant U-shape relationship (R2 = 0.071, p < 0.001) for its similarity over geographic distance in all sites on a scale up to 4000 km, with a tipping point of 1858 km (Figure 1—figure supplement 2a). A significant (p < 0.001) distance-decay relationship for plant community was observed within the alpine (Figure 1—figure supplement 2b, R2 = 0.015, p < 0.001) or temperate biota (Figure 1—figure supplement 2b, R2 = 0.005, p < 0.01).
 
-## Prokaryotic community similarity over environmental distance
+### Prokaryotic community similarity over environmental distance
 
 Relatively short-term environmental similarity also exhibited a U-shape pattern over geographic distance in either top- or subsoil from all sites on a scale up to 4000 km (Figure 2a and d). In contrast, relatively long-term environmental similarity, much higher than short-term environmental similarity on the same scale, did not change greatly over geographic distance in either top- or subsoil.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig2-v2.jpg)
+
+**Figure 2.:** Panels a, b, and c represent the environmental similarity in topsoil, while panels d, e, and f represent the environmental similarity in subsoil. The environmental similarity was calculated by Bray-Curtis index based on relatively long-term (b, e, and green points in a and d) or short-term variables (c, f, and red points in a and d). Relatively long-term environmental variables included mean annual precipitation (MAP), mean annual temperature (MAT), pH, soil organic carbon (SOC), soil total nitrogen (TN) and soil total phosphorus (TP). Relatively short-term environmental variables included soil water content (SWC), soil available phosphorus (AP), dissolved organic carbon (DOC), dissolved organic nitrogen (DON), NH4+, and NO3-. Orange, gray, and light blue points represent pairwise sites within the alpine biota, within temperate biota, and alpine biota cross temperate biota, respectively. Gray shades stand for 95% confidence interval.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a–d) Topsoil; (e–h) subsoil. Shades stand for 95% confidence interval.
 
 Soil prokaryotic community similarity decreased significantly (p < 0.001) in all sites over the relatively long-term (turnover rate = −0.291 or −0.278 in top- or subsoil, respectively) or short-term (turnover rate = −0.193 or −0.159 in top- or subsoil, respectively) environmental distance (Figure 2—figure supplement 1a and e. In the topsoil, the prokaryotic community similarity decreased significantly (p < 0.001) over the relatively long-term (turnover rate = −0.277, R2 = 0.131) or short-term (turnover rate = −0.194, R2 = 0.135) environmental distance within the alpine biota (Figure 2—figure supplement 1b), as well as decreased over long-term (turnover rate = −0.339, R2 = 0.108) or short-term (turnover rate = −0.063, R2 = 0.011) environmental distance within the temperate biota (Figure 2—figure supplement 1c). In the subsoil, the prokaryotic community similarity decreased significantly over the relatively long-term (turnover rate = −0.279, R2 = 0.104) or short-term (turnover rate = −0.215, R2 = 0.093) environmental distance within the alpine biota (Figure 2—figure supplement 1f), while there was no relationship within the temperate biota (Figure 2—figure supplement 1g). Across biotas or in pairwise sites between the alpine cross temperate biota (Figure 2—figure supplement 1d and h), the prokaryotic community similarity decreased over relatively long-term (turnover rate = −0.161 or −0.130 in top- or subsoil, respectively) or short-term (turnover rate = −0.191 or −0.175 in top- or subsoil, respectively) environmental distance.
 
 By Mantel test, the prokaryotic composition dissimilarity in top- or subsoil was significantly correlated with geographic distance or altitude within the alpine or temperate biota and across the alpine and temperate biotas (Supplementary file 1), except that the subsoil prokaryotic composition dissimilarity within the temperate biota was not linked to geographic distance. However, by partial Mantel, the prokaryotic composition dissimilarity in top- or subsoil was not correlated with geographic variables when across biotas (Table 1).
 
+**Table 1.**
+ Partial Mantel test for relationship between prokaryotic community similarity and relatively long-term environmental variables, relatively short-term environmental variables, and geographic variables across biotas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="4">Alpine× temperate</th>
+    </tr>
+    <tr>
+      <th colspan="2">Topsoil</th>
+      <th colspan="2">Subsoil</th>
+    </tr>
+    <tr>
+      <th>r</th>
+      <th>p</th>
+      <th>r</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAP</td>
+      <td>0.060</td>
+      <td>0.101</td>
+      <td>0.047</td>
+      <td>0.165</td>
+    </tr>
+    <tr>
+      <td>MAT</td>
+      <td>0.000</td>
+      <td>0.498</td>
+      <td>–0.021</td>
+      <td>0.625</td>
+    </tr>
+    <tr>
+      <td>pH</td>
+      <td>–0.001</td>
+      <td>0.516</td>
+      <td>–0.004</td>
+      <td>0.542</td>
+    </tr>
+    <tr>
+      <td>SOC</td>
+      <td>0.231</td>
+      <td>0.001</td>
+      <td>0.120</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>TN</td>
+      <td>0.151</td>
+      <td>0.003</td>
+      <td>0.046</td>
+      <td>0.146</td>
+    </tr>
+    <tr>
+      <td>TP</td>
+      <td>–0.143</td>
+      <td>0.999</td>
+      <td>–0.072</td>
+      <td>0.908</td>
+    </tr>
+    <tr>
+      <td>Long-term environment variables</td>
+      <td>0.121</td>
+      <td>0.010</td>
+      <td>0.049</td>
+      <td>0.174</td>
+    </tr>
+    <tr>
+      <td>SWC</td>
+      <td>0.112</td>
+      <td>0.015</td>
+      <td>0.094</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>AP</td>
+      <td>0.003</td>
+      <td>0.387</td>
+      <td>0.064</td>
+      <td>0.124</td>
+    </tr>
+    <tr>
+      <td>DOC</td>
+      <td>0.307</td>
+      <td>0.001</td>
+      <td>0.206</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>DON</td>
+      <td>0.398</td>
+      <td>0.001</td>
+      <td>0.401</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>NH4+</td>
+      <td>0.223</td>
+      <td>0.001</td>
+      <td>0.023</td>
+      <td>0.350</td>
+    </tr>
+    <tr>
+      <td>NO3-</td>
+      <td>–0.135</td>
+      <td>0.990</td>
+      <td>0.040</td>
+      <td>0.234</td>
+    </tr>
+    <tr>
+      <td>Short-term environment variables</td>
+      <td>0.523</td>
+      <td>0.001</td>
+      <td>0.465</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Latitude</td>
+      <td>–0.541</td>
+      <td>1.000</td>
+      <td>–0.433</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Longitude</td>
+      <td>–0.525</td>
+      <td>1.000</td>
+      <td>–0.430</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Distance*</td>
+      <td>–0.544</td>
+      <td>1.000</td>
+      <td>–0.438</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Altitude</td>
+      <td>–0.672</td>
+      <td>1.000</td>
+      <td>–0.588</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Geographic variables</td>
+      <td>–0.5664</td>
+      <td>1.000</td>
+      <td>–0.462</td>
+      <td>1.000</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Calculated by the geographic distance for paired samples based on the longitude and latitude of each sample._
+
 As revealed by partial Mantel (Table 1 and Supplementary file 2) test, the significant decay relationship between topsoil prokaryotic community similarity and relatively short-term environmental distance across biotas was mainly driven by soil water content (SWC, r = 0.112, p = 0.015), dissolved organic carbon (DOC, r = 0.307, p = 0.001), dissolved organic nitrogen (DON, r = 0.398, p = 0.001) and NH4+(r = 0.223, p = 0.001). Similar short-term environmental variables (except NH4+) were responsible for the significant decay relationship in the subsoil.
 
 Within the alpine biota, the significant distance-decay relationship between topsoil prokaryotic community similarity and relatively long-term environmental distance was driven by mean annual precipitation (MAP, r = 0.235, p = 0.002). Except the relatively long-term variable of MAP (r = 0.199, p = 0.007, Supplementary file 2), the short-term environmental variable of DON (r = 0.211, p = 0.029) was also responsible for the significant distance-decay relationship of prokaryotic community similarity in the subsoil within the alpine biota. Within the temperate biota, the significant distance-decay relationship between topsoil prokaryotic community similarity and relatively long-term environmental distance was driven by MAP (r = 0.310, p = 0.001).
 
-## Deterministic and stochastic processes in prokaryotic community assembly
+### Deterministic and stochastic processes in prokaryotic community assembly
 
 Null model and βNTI (β-nearest taxon index) analyses were used to explore the roles of deterministic and stochastic processes on community assembly. The similarity of observed communities in all samples (Figure 3—figure supplement 1) or samples in each biota (Figure 3—figure supplement 1a and b) was significantly (p < 0.001) higher than that of the permutated communities generated by the null model, revealing the important role of deterministic processes in determining the community assembly. As shown in Figure 3, the range of |βNTI| > 2 also confirmed the importance of deterministic processes in prokaryotic community assembly, and identified the dominant role (>84%) of homogeneous environmental selection, which means selection under homogeneous abiotic and biotic environmental conditions leading to more similar structures among communities (Macarthur and We, 1967). Specifically, the contribution of deterministic processes was relatively lower in the alpine (Figure 3j; 92.91% and 87.47% in top- and subsoils, respectively) than temperate (96.63% and 94.04% in top- and subsoils, respectively) biota, and higher in the topsoil than subsoil in all sites. Moreover, most βNTI values were less than –2 either in the top- (86.01–96.63%) or subsoil (84.09–93.37%) from all sites, indicating that prokaryotic communities were assembled mainly by homogeneous selection, in deterministic processes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig3-v2.jpg)
+
+**Figure 3.:** βNTI values of prokaryote in the top- (a, b, c, and d) and subsoil (e, f, g, and h) from all sites (a and e), within alpine (b and f) or temperate biota (c and g), and pairwise sites in the alpine cross temperate biotas (d and h) were presented. The proportion of |βNTI| > 2 (deterministic processes) in the top- and subsoils from all sites (i), within alpine biota (j), within temperate biota (k) and pairwise sites in the alpine cross temperate biotas (l) were presented. Light blue and orange colors stand for βNTI values and their proportions in the top- and subsoils, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The null model for soil prokaryotic community similarity from the alpine grassland (a), temperate grassland (b) and all sites (c). The pink and blue stand for observed similarity and permutated similarity by null model, respectively. ‘***’ stand for the significance at 0.001 level.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig3-figsupp2-v2.jpg)
 
 We further compared the immigration rates (m) of prokaryotes (Figure 3—figure supplement 2) based on the algorithm developed by Hubbell for the neutral theory (Xing et al., 2019). Prokaryotic immigration rates were significantly lower in the alpine (0.159 ± 0.008 and 0.146 ± 0.008 in top- and subsoils, respectively, p < 0.01) than temperate biota (0.261 ± 0.010 and 0.246 ± 0.009 in top- and subsoils, respectively, p < 0.01) in the same soil layer. Moreover, immigration rates were higher in the top- (0.159 ± 0.008 and 0.261 ± 0.010 in the alpine and temperate biotas, respectively, p < 0.01) than subsoil (0.146 ± 0.008 and 0.246 ± 0.009 in the alpine and temperate biotas, respectively, p < 0.01) in the same biota.
 
 In the structural equation model (SEM), plant community dissimilarity (1-similarity) rather than its similarity was used to parallel to geographic distance and environmental distance. As is shown in Figure 4 and Figure 4—figure supplement 1, SEM results showed that long-term environmental variables, including soil properties (SOC, TN, TP, and pH) and climate factors (MAT and MAP), had a strong influence on the plant community; while the short-term environmental variables (i.e., SWC, DOC, DON, NH4+, NO3-, and AP) hadn’t. In the pairwise sites between alpine cross temperate biotas, SEM (Figure 4) showed that prokaryotic community similarity was mainly affected by geographic distance (r = 0.388 and 0.320 in top- and subsoils, respectively), relatively long-term environmental distance (r = –0.171 and –0.130 in top- and subsoils, respectively), plant community dissimilarity (r = –0.124 and –0.065 in top- and subsoils, respectively), and relatively short-term environmental distance (r = –0.046 and –0.069 in top- and subsoils, respectively).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig4-v2.jpg)
+
+**Figure 4.:** Red and blue lines stand for negative and positive correlations, respectively; bold lines stand for significance at p = 0.05 level.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70164/elife-70164-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Topsoil of the northern grassland; (b) topsoil of the alpine grassland; (c) topsoil of the temperate grassland; (d) subsoil of the northern grassland; (e) subsoil of the alpine grassland; (f) subsoil of the temperate grassland. Red lines stand for negative correlation and blue lines stand for positive correlation; Bold lines stand for significance at 0.05 level.
 
 Within each biota, geographic distance only had a direct effect on topsoil prokaryotic community similarity (r = −0.275) in the temperate grassland, while its effect in topsoil of the alpine biota was only indirect through relatively short-term (r = 0.140) and long-term environmental distances (r = 0.222), as well as plant community dissimilarity (r = 0.232). In the alpine biota, increases in plant community dissimilarity, relatively long-term and short-term environmental distances, directly decreased the similarity of soil prokaryotic community. The explained variances of soil prokaryotic community similarity were 26.8% and 21.3% in the top- and subsoils, respectively (Figure 4—figure supplement 1). In the temperate biota, other than the direct effect of geographic distance, plant community dissimilarity, relatively long-term and short-term environmental distances, also affected topsoil prokaryotic community similarity directly. In the subsoil of the temperate biota, prokaryotic community similarity was not significantly correlated with any factors and the explained variance was merely 0.2%.
 
@@ -93,13 +297,13 @@ In the topsoil, the turnover rate of prokaryote was higher in temperate than alp
 
 Notably, within the temperate biota across 1661 km, prokaryotic community similarity did not change over geographic distance in the subsoil. Moreover, subsoil prokaryotic community similarity was not linked with plant community dissimilarity (Figure 1—figure supplement 3) and long-term environmental distance (Figure 2—figure supplement 1). It was correlated weakly with the short-term environmental distance based on the correlation test (R2 = 0.011) and SEM (r = −0.002). These phenomena denied the possibility that prokaryote community assembly was dependent on plant community or environment heterogeneity in subsoil of the temperate biota. Cases of no distance-decay relationship for microorganisms have also been reported previously (Zhou et al., 2008; Cox et al., 2016; Davison et al., 2015), possibly explained by factors like the paleogeographic history (Cox et al., 2016; Davison et al., 2015) and plant-dependent (Davison et al., 2015).
 
-## Conclusion
+### Conclusion
 
 This study provides a systematical analysis of the spatial pattern of soil prokaryotic communities in the northern grassland of China. Soil prokaryotic similarity exhibited a U-shape distribution pattern over geographic distance at a scale of up to 4000 km. This finding overturns the well-accepted geographic distance-decay relationship, which was still valid in the top- or subsoils within the alpine biota and only in the topsoil within the temperate biota. Despite different climate and ecosystem types in the alpine and temperate biotas, habitats far more apart when across biotas were more similarly as revealed by the U-shape pattern for short-term environmental variables over geographic distance. Consistently, deterministic processes were found to dominate the soil prokaryotic community assembly by null model and βNTI analyses, and further partial Mantel analysis revealed that SWC and dissolved nutrients (DOC and DON) may be responsible for the decay relationship of prokaryotic community similarity over environmental distance, overturning the geographic distance-decay relationship.
 
 ## Materials and methods
 
-## Study sites and field sampling
+### Study sites and field sampling
 
 The alpine grassland in the region of Qinghai-Tibet Plateau belongs to the Qinghai Tibet Plateau biota, and the temperate grassland in the region of Inner Mongolia belongs to Eurasian grassland biota, according to the Chinese floristic geography (Wu, 2019). A total of 129 sites and 258 samples were collected from the northern grassland of China. Among them, 128 samples from 64 sites (red dots in Figure 1—figure supplement 1) were collected from July 29 to August 14, 2014, in the Qinghai-Tibet Plateau alpine biota, China. Alpine biota sample sites covered a variety of alpine ecosystems, including alpine meadow, alpine steppe, alpine desert, and shrub; 130 samples from 65 sites (blue dots in Figure 1—figure supplement 1) were collected from September 10–24, 2015, in the temperate biota, in Inner Mongolia, China. Temperate biota sample sites covered three types of temperate grassland ecosystem, namely temperate meadow, temperate steppe, and temperate desert. The distance between each two adjacent sample sites was no less than 60 km and removed from potential human interference such as towns, villages, and roads.
 
@@ -107,20 +311,20 @@ A GPS (global positioning system) was used to record the geographic coordinates 
 
 Topsoil or subsoil samples from each plot were pooled and then sieved through a 2 mm mesh, and the roots were selected as belowground biomass (BGB). Sieved topsoil or subsoil samples were divided into two subsamples. One part was stored at room temperature and dried in the shade for measuring physical and chemical properties. The other part was stored at approximately 4°C in the field by a mobile refrigerator, delivered with dry ice to the laboratory in Beijing, and finally frozen at –80°C in a freezer before DNA extraction.
 
-## Soil properties
+### Soil properties
 
 Soil pH was measured by pH meter (STARTER3100, Ohaus Instruments Co., Ltd, Shanghai, China) with a 1:5 of soil water ratio (5 g soil: 25 mL ddH2O). SWC was measured by ovening fresh soil samples at 105°C for 24 hr. SOC was measured by a TOC analyzer (Liqui TOC II; Elementar Analysensysteme GmbH, Hanau, Germany). Soil TN was measured on an auto-analyzer (SEAL Analytical GmbH, Norderstedt, Germany). Soil TP and AP were measured by a UV-VIS spectrophotometer (UV2700, SHIMADZU, Japan). Nitrate-N (NO3-) and ammonium-N (NH4+) were extracted with 2 M KCl (soil mass to solution ratio of 1:5) and then analyzed on a continuous-flow ion auto-analyzer (SEAL Analytical GmbH, Norderstedt, Germany). Soil DOC and DON were measured on a TOC Analyser (Liqui TOC II; Elementar Analysensysteme GmbH, Hanau, Germany). Plant AGB and BGB were measured after oven drying at 65°C for 72 hr. MAT (1980–2014) and MAP (1980–2014) of each study site were obtained from ‘China Meteorological Data Service Center’ (CMDC: https://data.cma.cn/) by latitude and longitude.
 
-## Microbial analysis
+### Microbial analysis
 
 Soil genomic DNA was extracted from 0.25 g frozen soil three times at each soil layer at each site and then mixed into one DNA sample using PowerSoil DNA Isolation Kits (MO BIO Laboratories, Carlsbad, CA). The quality of extracted DNA was assessed based on OD 260/280 and 260/230 nm absorbance ratios by NanoDrop (2000) spectrophotometer (NanoDrop Technologies Inc, Wilmington, DE,). Primer pair 515 F (5’-GTGYCAGCMGCCGCGGTA-3’) and 909 R (5’-CCCCGYCAATTCMTTTRAGT-3’) was selected to amplify the V4-V5 region of 16S rRNA and the target fragment length was 374 bp, and the 12 bp barcode was added at the end of 5’ of 515F. A 50 μL PCR system was configured in 0.2 mL tube, including 2 μL template DNA diluent, 4 μL dNTP, 4 μL Mg2+, 5 μL Buffer, 0.5 L Ex Taq enzyme, 1 μL forward primer, 1 μL reverse primer, 32.5 L ddH2O. The PCR procedure was performed as follows: predenaturation at 95°C for 10 min, 30 PCR cycles (deformation at 94°C for 30 s, annealing at 53°C for 25 s, extension at 68°C for 45 s), and a final extension at 72°C for 10 min. The PCR products were purified by 1% agarose gel using GeneJET Gel Extraction Kit (Thermo Scientific, Lithuania, USA). The purified DNA was tested by NanoDrop (2000) spectrophotometer (NanoDrop Technologies Inc, Wilmington, DE,). All purified DNA samples were mixed in 100 ng before database construction and sequencing, which was performed by Illumina Miseq in Chengdu Biology Institute.
 
 The MiSeq raw data was analyzed by UPARSE pipeline with USEARCH 8 software to obtain an OTUs table. The double ended sequencing was performed by the Illumina Miseq platform with 2 × 250 bp V2 Kits at Chengdu Institute of Biology, Chinese Academy of Sciences. Raw reads generated from the Miseq paired-end sequencing were merged by Fast Length Adjustment of Short reads (FLASH) (Magoč and Salzberg, 2011). The fastq sequencing files were combined into one new fastq file. By USEARCH v8.0.1623 (Edgar, 2013), barcode sequences were replaced by new labels, and the forward and backward primer sequences were removed by the command of -fastq_filter. The unique representative sequences were selected by the command of -fastx_uniques. After discarding singletons, OTUs were clustered at the 97% threshold and chimeras were removed simultaneously by the command of -cluster_otus. The command of -usearch_global was then used to map the fastq file into an OTU table. Each OTU was annotated by Mothur v1.27 (Schloss et al., 2009) with classify.seqs command, and sliva.nr_v128.align was selected as the reference database. The OTU table was resampled to the same sequence (Figure 1—figure supplement 4) before further analysis by R 3.5.0 with the resample package.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare the soil bacterial samples from different climate regions, we divided the soil samples into alpine samples and temperate samples according to collection sites. The altitude of the alpine biota sampling sites ranged from 2796 to 4891 m, and that of temperate biota was from 10 to 1796 m. According to the sampling position in the soil layers, samples were divided into topsoil (0–5 cm) samples and subsoil (5–20 cm) samples. The geographic distance (km) between each two sites was calculated based on their longitude and latitude using the ‘distGeo’ function of ‘geosphere’ package in R program, which considers spheric deviations. Plant communities were classified into four functional groups (grasses, sedges, legumes, and forbs) and plant communities’ similarity and dissimilarity were calculated based on Bray-Curtis distance by the vegan package of R. The relatively long-term and short-term environmental variables were defined based on whether they remain stable within 1 year or not. For example, SOC is believed to be stable in natural grasslands for years (Paul et al., 2001), thus being divided into the relatively long-term environmental variables; while AP (Chen et al., 2003), DOC (Don and Kalbitz, 2005), and DON (Retelletti Brogi et al., 2019) are reported to be dynamic within 1 year, thus being divided into the relatively short-term environmental variables. This division has been used previously (Zhou et al., 2021). In this study, relatively long-term environmental variables included MAP, MAT, pH, SOC, TN, and TP, while relatively short-term environmental variables included SWC, AP, DOC, DON, NH4+, and NO3-.
 
-The Bray-Curtis similarity and dissimilarity of the prokaryotic community were calculated using OTU tables resampled to a minimum number of sequences from each sample (7500 in this study). The Mantel test and partial Mantel test based on a Pearson correlation were used to test the relationship of soil prokaryotic similarity, geographic distance, and long-term multiple environmental variables or short-term multiple environmental variables. The turnover rate was estimated by the slope of the linear regression model based on the least square method. The tipping point was calculated by the function of d(Y)/d(x)=0 in binomial function. Pearson correlation was used to test the relationship of soil prokaryotic diversity with environmental variables.
+The Bray-Curtis similarity and dissimilarity of the prokaryotic community were calculated using OTU tables resampled to a minimum number of sequences from each sample (7500 in this study). The Mantel test and partial Mantel test based on a Pearson correlation were used to test the relationship of soil prokaryotic similarity, geographic distance, and long-term multiple environmental variables or short-term multiple environmental variables. The turnover rate was estimated by the slope of the linear regression model based on the least square method. The tipping point was calculated by the function of $d(Y)/d(x)=0$ in binomial function. Pearson correlation was used to test the relationship of soil prokaryotic diversity with environmental variables.
 
 Null model (Nj and Gr, 1996) and βNTI analyses (Fine and Kembel, 2011) were used to distinguish different ecological processes, including deterministic processes (homogenous selection and heterogeneous selection), random dispersal (homogenous dispersal, dispersal limitation), drift, and diversification (Zhou and Ning, 2017). Null model analysis was performed by comparing the Bray-Curtis similarity of observed communities and randomly permutated communities using R3.5.0 with package vegan and picante. The |βNTI| > 2 means community was constructed by deterministic processes, and βNTI < –2 means homogenous selection plays a major role, while βNTI > + 2 means heterogenous is more important. The –2 < βNTI < + 2 means stochastic processes determined community succession (Dini-Andreote et al., 2015). A βNTI analysis was performed by R 3.5.0 with the ape package. The estimation of immigration rate (m) was calculated by TeTame 2.0 (Chave and Jabot, 2008) based on Hubbell’s neutral theory of biodiversity (Hubbell and Borda-de-Água, 2004). Parameter estimation was rigorously performed by maximum-likelihood using the sampling formula developed by Etienne, 2005; Etienne and Alonso, 2005; Etienne et al., 2006; Etienne and Olff, 2005. This model is seen as a potentially useful null model in ecology; in this model, the species relative abundances in a guild are determined by two parameters, namely θ and m. The θ governs the appearance of a new species in the regional species pool, and m governs immigration into local communities of individuals from the regional species pool. We further used SEM to disentangle the causal pathways through which geographic distance, short-term environmental distance, long-term environmental distance, and plants’ community dissimilarity influence soil prokaryotic similarity. SEM in this study is implemented by AMOS software.

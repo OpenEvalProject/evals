@@ -97,7 +97,7 @@
 
 ## Abstract
 
-10.7554/eLife.40553.001 To identify factors that regulate gut microbiota density and the impact of varied microbiota density on health, we assayed this fundamental ecosystem property in fecal samples across mammals, human disease, and therapeutic interventions. Physiologic features of the host (carrying capacity) and the fitness of the gut microbiota shape microbiota density. Therapeutic manipulation of microbiota density in mice altered host metabolic and immune homeostasis. In humans, gut microbiota density was reduced in Crohn’s disease, ulcerative colitis, and ileal pouch-anal anastomosis. The gut microbiota in recurrent Clostridium difficile infection had lower density and reduced fitness that were restored by fecal microbiota transplantation. Understanding the interplay between microbiota and disease in terms of microbiota density, host carrying capacity, and microbiota fitness provide new insights into microbiome structure and microbiome targeted therapeutics. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+To identify factors that regulate gut microbiota density and the impact of varied microbiota density on health, we assayed this fundamental ecosystem property in fecal samples across mammals, human disease, and therapeutic interventions. Physiologic features of the host (carrying capacity) and the fitness of the gut microbiota shape microbiota density. Therapeutic manipulation of microbiota density in mice altered host metabolic and immune homeostasis. In humans, gut microbiota density was reduced in Crohn’s disease, ulcerative colitis, and ileal pouch-anal anastomosis. The gut microbiota in recurrent Clostridium difficile infection had lower density and reduced fitness that were restored by fecal microbiota transplantation. Understanding the interplay between microbiota and disease in terms of microbiota density, host carrying capacity, and microbiota fitness provide new insights into microbiome structure and microbiome targeted therapeutics.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -107,27 +107,75 @@ Microbiota density has previously been measured with colony-forming units, DNA s
 
 ## Results
 
-## The natural variation of gut microbiota density in mammals is driven by host and microbial factors
+### The natural variation of gut microbiota density in mammals is driven by host and microbial factors
 
 In macroecology, carrying capacity is the maximal density of organisms supported by an ecosystem and is broadly dictated by the resources (e.g., food, water, and habitat) in the environment. Whether or not the collection of species in an environment can reach the carrying capacity depends on their ability to efficiently utilize the available resources (i.e., the community’s fitness for the environment). To explore the contribution of host carrying capacity and gut microbiota fitness to microbiota density, we first collected fecal material from sixteen different mammalian species (Supplementary file 1) in order to sample a diverse range of host intestinal architectures and gut microbial community compositions. Using methods optimized to assay fecal microbiota density with greater throughput (see Materials and methods and Figure 1—figure supplement 1), we observed significant differences in microbiota density across the mammalian species (H = 69.0, p = 6.72 x 10−9; Kruskal-Wallis) with a 216-fold difference between the median of the most dense and least dense gut microbiota (Figure 1A). At the higher taxonomic rank of order, where we sampled at least two unique species (Atriodactyla, Carnivora, Primates, and Rodentia), we still found significant differences in microbiota density (H = 39.0, p = 3.39 x 10−9; Kruskal-Wallis), suggesting that evolutionarily conserved host features impact microbiota density. We found no correlation between microbiota density and either fecal water content (ρ = -0.0418, p = 0.892, Spearman; Figure 1B) or host size (mass) (ρ = -0.364, p = 0.167, Spearman; Figure 1—figure supplement 2). Nonetheless, animals from order Carnivora (dog, ferret, lion, red panda, and tiger), with simple gut architectures adapted to carnivorous diets, had significantly reduced microbiota densities compared with the rest of the mammals studied (p = 6.14 x 10−10, Mann-Whitney, Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig1-v1.jpg)
+
+**Figure 1.:** (A) Fecal microbiota density varies across mammalian species. (B) Microbiota density and water content of fecal samples are not correlated. (C) Animals from the order Carnivora have a reduced microbiota density compared to mammals from other orders. (D) Different mammalian gut microbiotas transplanted into germ-free Swiss Webster mice (n = 3 per group) vary in their fitness to reach microbiota densities similar to mouse microbiotas. In (A, C, and D) points depict individual samples, and bars indicate median. In (B) points and lines indicate median values ± SEM. In (D) a red X indicates the microbiota density of the original mammalian sample, while dashed lines represent IQR of conventional Swiss Webster mice. ***p < 0.001. Source data available for (A-D). 16S rRNA gene amplicon sequencing data is available for (A and D) (see Materials and methods).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We homogenized one dog fecal sample and created multiple aliquots for DNA extraction using either the DIB or phenol:chloroform extraction methods. (A) We do not observe evidence of bias introduced by the DNA extraction method chosen, as we observe similar microbial compositions for the multiple aliquots, regardless of extraction method. (B) Relative OTU abundances from DIB and phenol:chloroform extracted samples are highly correlated (ρ = 0.904, p = 1.82 x 10−45, Pearson’s correlation). Dots represent average values of an individual OTU abundance across several aliquots processed using each method (n = 8 for DIB, n = 6 for phenol:chloroform). (C) We performed qPCR of host and bacterial fractions of mixed mouse/microbial DNA samples. Spike-in samples with known fractions of mouse and bacterial DNA (e.g., B010M090 = 10% bacterial + 90% mouse) were quantified with qPCR to validate the potential to identify the origin of DNA in a mixed sample. Samples from mouse fecal pellets across a variety of conditions show that the host contribution to the extracted DNA is small, even for samples with low microbiota density. Red points indicate the true spike-in percentage of bacterial DNA. GF_1, GF_2, GF_3 are host DNA controls of germ-free mouse feces. GF_Spleen is a host DNA control from a germ-free mouse spleen. (D) Estimates of microbiota density based on DNA content are correlated with estimates of microbiota density based CFUs from anaerobic culturing of fecal samples (ρ = 0.628, p = 1.05 x 10−5, Spearman), regardless of the source of the fecal sample. Each dot represents one sample that was quantified in parallel by colony-forming unit assay and by DNA content quantification. Colors indicate the type of sample used.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** We do not find a relationship between mammalian body mass and microbiota density (ρ = -0.364, p = 0.167, Spearman).
+
 To assay the relative contributions of the host (i.e., carrying capacity) and the microbiota (i.e., microbiota fitness) to microbiota density, we utilized germ-free mice with controlled host carrying capacity (i.e., fixed diet, genetics, and environment) transplanted with the microbiotas of different mammals. Although there are clear caveats to assaying properties of the microbiota in a non-native host, several prior studies have demonstrated that germ-free microbiota transplantations from other mammals can recapitulate many aspects of the microbial community (Goodman et al., 2011; Ridaura et al., 2013; Seedorf et al., 2014) and even host physiology (Britton et al., 2019; Cekanaviciute et al., 2017; De Palma et al., 2017; Sampson et al., 2016) in the murine host. Importantly, these microbiota transplant experiments provide an experimental tool to estimate relative differences in fitness between microbiotas because each microbiota is transplanted into one or more replicate murine hosts with the same carrying capacity. In germ-free Swiss Webster mice colonized with four of the lowest density microbiotas in our initial screen (lion, elephant, ferret, and red panda), the lion and red panda microbiotas reached higher microbiota densities in the mouse than in the native host (Figure 1D), suggesting their densities were limited by the carrying capacity of their host (which could include factors like intestinal architecture, host diet and host social behaviors). The elephant and ferret microbiotas colonized mice at densities comparable to those in the native host and significantly less dense than a mouse microbiota (Figure 1D), suggesting their densities are limited by the fitness of each microbiota that cannot reach the mouse carrying capacity. Altogether, these mammalian microbiota samples and germ-free transfer experiments demonstrate that as in macroecology, microbiota density represents the combined influence of host carrying capacity and community fitness.
 
-## Manipulation of colonic microbiota density alters host physiology
+### Manipulation of colonic microbiota density alters host physiology
 
 To broadly assess the impact of therapeutics on gut microbiota density, we provided SPF mice with one of 20 orally administered drugs, including antibiotics, anti-motility agents, and laxatives (Supplementary file 2). Only 9 of the 14 tested antibiotics significantly decreased gut microbiota density compared to untreated animals (p < 0.05 for each; Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction), and the taxa reduced by each antibiotic were not strongly reflective of the antibiotic’s spectrum (see Supplemental Results and Figure 2—figure supplement 1). Amongst these 9 density-reducing antibiotics, there were substantial differences in each drug’s depleting capacity (Figure 2A). Of the laxatives, PEG 3350 reduced microbiota density (p = 2.22 x 10−4), while lactulose increased it (p = 0.0279). The anti-motility agent loperamide and the proton pump inhibitor omeprazole had no significant effect. Across the pharmacologics, we never observe high microbiota density with low alpha diversity, which drives a significant correlation between alpha diversity and microbiota density (ρ = 0.628, p < 0.0001, Spearman correlation; Figure 2—figure supplement 2H). However, we commonly observe high alpha diversity with low microbiota density (e.g., animals given metronidazole; Figure 2—figure supplement 2H), suggesting changes in microbiota density do not strictly correspond to changes in alpha diversity (see Supplemental Results and Figure 2—figure supplement 2). As with our results in the mammals, we found no correlation between microbiota density and fecal water content across the tested pharmacologics (ρ = -0.338, p = 0.411, Spearman; Figure 2—figure supplement 3F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig2-v1.jpg)
+
+**Figure 2.:** (A) Pharmacologic interventions differentially alter microbiota density in SPF C57BL/6J mice. Samples from 3 to 12 (mean = 6) mice per group. (B–E) Antibiotic-induced changes in microbiota density significantly correlate with (B) host cecum size, (C) adiposity, (D) fecal IgA, and (E) colonic lamina propria FoxP3 +T regulatory cells. n = 6 mice per antibiotic group, 9 SPF antibiotic-free controls, and six germ-free controls. In (A), dashed lines represent the IQR of untreated SPF C57BL/6J mice and AVNM = ampicillin, vancomycin, neomycin, metronidazole. Statistical tests performed for individual treatment conditions vs untreated using Kruskal-Wallis with Dunn’s post-test corrected for multiple comparisons with the Bonferonni correction. Bars indicate median. ns = not significant, *p < 0.05, **p < 0.01, and ***p < 0.001. In (B-E) points represent individual mice. Shapes indicate treatment group. Source data available for (A-E). 16S rRNA gene amplicon sequencing data is available for A (see Materials and methods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Absolute abundance of Gram-negative (A) and Gram-positive (B) organisms in the mouse fecal microbiota before and after polymyxin B treatment. (C–D) Absolute abundance of Gram-negative (A) C and Gram-positive (D) organisms in the mouse fecal microbiota before and after vancomycin treatment. In (A-D) bars indicate median and Wilcoxon rank sum test was used to test for significance; ***p < 0.001. 16S rRNA gene amplicon sequencing data is available (see Materials and Methods).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) The relative abundances of the microbiota in SPF C57BL/6J mice treated with (A) low dose (n = 5) and (B) high-dose (n = 3) vancomycin are each dominated by a single phyla. Taking changes in microbiota density into account, the absolute abundance of the microbiota at the phylum level in the (C) low-dose vancomycin group demonstrates an expansion of Verrucomicrobia compared to reduction of all phyla in the (D) high-dose vancomycin group. (E) Changes in alpha diversity in response to high (0.5 mg/mL, n = 3) and low (0.2 mg/mL, n = 5) dose vancomycin treatment do not correlate with the changes observed in microbiota density. (F) Both low and high dose vancomycin treatment in mice reduce alpha diversity. (G) Low dose vancomycin did not significantly alter microbiota density, while high dose vancomycin reduced microbiota density to near zero. (H) Across all tested pharmacologics, there was a significant correlation between microbiota density and alpha diversity as we never observed low alpha diversity with high density. In (F and G) bars indicate median, *p < 0.05, **p < 0.01, and ***p < 0.001 (Kruskal-Wallis with Dunn’s post-test corrected for multiple comparisons with the Bonferonni correction). In (E and H) colors indicate treatment. For all, points represent individual samples. 16S rRNA gene amplicon sequencing data is available (see Materials and Methods).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Microbial density changes observed in mice administered antibiotics ad libitum in drinking water for four weeks. (B–E) The reduction in microbiota density results in changes in the (B) cecum size, (C) epididymal fat pad mass, (D) fecal IgA, and (E) colonic lamina propria FoxP3+ T regulatory cells. (F) Across the microbiota changes induced by the pharmacologics, microbiota density and water content are not correlated. In A, bars indicate median and nonparametric statistics used to test for significance vs control (Kruskal-Wallis with Dunn’s post-test corrected for multiple comparisons with the Bonferonni correction). In (B-E) bars indicate mean ± SEM and Dunnett’s test used to test for significance. *p < 0.05, **p < 0.01, ***p < 0.001 (Dunnett’s test). Source data available for (A-E).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Water content of fecal samples from mice fed diets high in soluble fiber (psyllium) is greater than that of mice fed diets high in insoluble fiber (cellulose). (B) There is no change in the water content of mice fed diets that vary in their protein content. (C) Mice fed a diet high in soluble fiber had decreased microbiota density compared to mice fed a diet high in insoluble fiber. (D) Protein content of the diet influences microbiota density, as shown in Llewellyn et al. (2018). In A and B, bars indicate mean ± SEM, and Student’s t test was used to test for significance. In (C and D) bars indicate median, and Wilcoxon rank sum test was used to test for significance; **p < 0.01 and ***p < 0.001. Source data available for (A-D).
+
 Comparing antibiotic-treated or germ-free mice with conventional mice has demonstrated the influence of the microbiota on a range of physiological measures (Atarashi et al., 2011; Faith et al., 2014; Bäckhed et al., 2004; Geuking et al., 2011; Ivanov et al., 2009; Mortha et al., 2014; Muller et al., 2014; Bongers et al., 2014; Ridaura et al., 2013; Wostmann and Bruckner-Kardoss, 1959; Zhang et al., 2015). To better understand the impact of microbiota density on host physiology, we selected five antibiotics (ampicillin, ciprofloxacin, clindamycin, polymyxin B, vancomycin) based on their varying ability to decrease microbiota density (Figure 2A). As expected, treating 4-week old SPF C57BL/6J mice with each antibiotic in their drinking water for four weeks (n = 6 mice per antibiotic, 9 SPF antibiotic-free controls, and 6 germ-free controls) led to a range of density reductions across the experimental groups (1.1 – 36.0 fold; Figure 2—figure supplement 3A). We found a significant negative correlation between cecum size and microbiota density (ρ = -0.729, p = 2.46 x 10−7, Spearman; Figure 2—figure supplement 3B). Epididymal fat pad mass, fecal IgA, and lamina propria FoxP3+CD4+ regulatory T cells were each positively correlated with microbiota density (ρfat = 0.587, pfat = 6.11 x 10−5; ρIgA = 0.783, pIgA = 3.35 x 10−7; ρTreg = 0.639, pTreg = 5.31 x 10−6; Spearman; Figure 2—figure supplement 3C–3E). The strength of these associations is independent of the water content of the feces. Using group averages, the Spearman's correlations are the same for dry and wet microbiota density vs phenotypes (i.e., the rank order of density does not change when using dry weights). Furthermore, when estimating the relationships between microbiota density and host physiology with linear models we find that wet weight is a better predictor of changes in cecum size, epididymal fad pad mass, fecal IgA, and FoxP3+CD4+ regulatory T cells than dry weight.
 
-## Microbiota density in inflammatory bowel disease (IBD)
+### Microbiota density in inflammatory bowel disease (IBD)
 
 To characterize the impact of host health status on gut microbiota density, we collected fecal samples from 70 healthy controls, 138 subjects with Crohn’s disease (CD), 97 subjects with ulcerative colitis (UC), and 19 subjects with UC that had undergone an ileal pouch-anal anastomosis (IPAA) procedure following total colectomy. Concordant with prior work using phylum-specific qPCR (Frank et al., 2007) and flow cytometry (CD-only; Vandeputte et al., 2017b), subjects with IBD had decreased microbiota density compared to healthy controls (pUC = 0.00181, pCD = 1.77×10−4, pIPAA = 2.40×10−5, each vs Healthy, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 3A), even when excluding individuals receiving antibiotics (Figure 3—figure supplement 1A). Individuals with active CD, as well as IPAA subjects, had increased fecal water content compared to healthy individuals (pactive CD = 0.036, pIPAA = 0.0184, each vs Healthy; Tukey’s HSD), while individuals with UC or inactive CD did not. Nonetheless, the decrease in microbiota density in IBD compared to healthy controls was consistent across individuals with active disease or inactive disease (pactive IBD = 7.68 x 10−5, pactive CD = 0.000466, pinactive IBD = 0.00229, pinactive CD = 0.0479, each vs Healthy, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 3B), demonstrating that the microbiota density changes in IBD were not simply driven by the increased fecal water content that occurred with active inflammation in CD.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig3-v1.jpg)
+
+**Figure 3.:** (A) Subjects with ulcerative colitis and Crohn’s disease, as well as subjects who have undergone ileal pouch-anal anastomosis (IPAA) have reduced microbiota density compared to healthy controls. (B) The reduction in microbiota density in IBD patients is independent of disease activity. (C–D) 16S rRNA gene sequencing reveals phylum-level changes in (C) relative and (D) absolute abundances of the microbiota in subjects with UC, CD, and IPAA compared to healthy controls. (E–H) The absolute abundance of all of the major phyla are strongly correlated with microbiota density, with the exception of Proteobacteria, whose abundance is largely constant. In (A-C) bars indicate median, **p < 0.01, and ***p < 0.001 (Kruskal-Wallis with Dunn’s post-test corrected for multiple comparisons with the Bonferonni correction). In (C) each point represents the average microbiota density for an individual mouse before or after the initiation and development of colitis. In (E-H) points represent individual subjects and colors indicate their health status. Source data available for (A and B). 16S rRNA gene amplicon sequencing data is available for (C-H) (see Materials and methods).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Microbiota density is reduced in subjects with IBD and IPAA in the absence of antibiotic use. Nonetheless, the microbiota density of individuals with IBD on antibiotics was significantly lower for individuals with IBD on antibiotics. (B) Alpha diversity is reduced in subjects with IBD relative to healthy controls In (A and B) bars indicate median, *p < 0.05, **p < 0.01, ***p < 0.001, ns = not significant. Source data available for (A and B). 16S rRNA gene amplicon sequencing data is available (see Materials and Methods).
+
 To associate changes in microbiota composition with the altered microbiota density in individuals with IBD, we performed 16S rRNA gene amplicon sequencing of the fecal DNA (Figure 3C–3D). In line with previous studies (Frank et al., 2007; Gevers et al., 2014; Gophna et al., 2006; Jacobs et al., 2016), the IBD microbiome had a decreased alpha diversity compared to healthy subjects (pUC = 0.00339, pCD = 2.39×10−9, pIPAA = 1.17×10−12, each vs Healthy; Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 3—figure supplement 1B). When we multiplied each taxa’s relative abundance by the microbiota density to calculate their absolute abundances, we found decreases in gut microbiota density were most significantly correlated with decreases in Firmicutes, while Proteobacteria were the only one of the four major phyla in the gut microbiota that were not correlated with microbiota density (Figure 3E–3H). These results from measuring the density of each phyla provide a novel insight compared to previous studies that associated a relative increase in the proportion of Proteobacteria with IBD (Frank et al., 2007; Gevers et al., 2014). We show here that in absolute terms, Proteobacteria are able to sustain a constant density in the individuals with IBD while the remaining phyla decrease in density.
 
-## Fecal microbiota transplants restore microbiota density and microbiota fitness
+### Fecal microbiota transplants restore microbiota density and microbiota fitness
 
 Given the large difference in the microbiota between healthy individuals and those with recurrent Clostridium difficile infection (rCDI) (Figure 4—figure supplement 1A and B; Seekatz et al., 2014; Shankar et al., 2014), we hypothesized that on a mechanistic level, FMT bolsters colonization resistance by improving gut microbiota fitness. In fecal samples from FMT donors and their rCDI FMT recipients prior to and after FMT, we observed that the rCDI gut microbiota has a significantly lower microbiota density than the donor microbiota, and that FMT increased microbiota density (p < 0.05 for all comparisons, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 4A). We did not observe any differences in fecal water content between the donors and recipients before or after FMT (p > 0.2 for all comparisons, Tukey’s HSD). In addition, we found that rCDI FMT recipients had both a relative and absolute increase in Proteobacteria that was significantly reduced by FMT (Figure 4B and C, and Figure 3—figure supplement 1C–1F). These data suggest that FMT restores higher densities of Bacteroidetes, Firmicutes, and Actinobacteria to more fully realize the host’s carrying capacity. However, these results may be confounded by the fact that the individuals with rCDI have been exposed to antibiotic treatment prior to their FMT, and as we showed in Figure 2A, antibiotics may reduce microbiota density.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig4-v1.jpg)
+
+**Figure 4.:** (A) rCDI subjects have reduced microbiota densities that are significantly increased upon FMT with donor microbiotas. (B and C) Following FMT, the composition of the microbiota of individuals with rCDI is restored to more closely resemble that of healthy donors in both (B) relative and (C) absolute terms. (D) Germ-free mice were colonized with the microbiota from FMT Donors (a) or individuals with rCDI that underwent FMT (b). These mice then received the microbiota from the FMT donor corresponding to the clinical FMT (c) which could be compared to germ-free mice colonized with the Post-FMT sample from the individual who received the FMT (d). (E) Microbiota density in mice from the experimental scheme described in (D) showed decrease in microbiota fitness prior to FMT and an increase in microbiota density following FMT demonstrating the restoration of community fitness. In (A and E) points represent individual samples, bars indicate median, *p < 0.05, **p < 0.01, and ***p < 0.001 (Kruskal-Wallis with Dunn’s post-test corrected for multiple comparisons with the Bonferonni correction). In (E), colors represent each one of five different FMT donor-recipient pairs. Source data available for A and E. 16S rRNA gene amplicon sequencing data is available for B, C, and E (see Materials and methods).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40553/elife-40553-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Alpha diversity in rCDI is significantly lower than in healthy individuals used as FMT donors. This change in alpha diversity is restored by FMT. (B) Principal coordinates analysis of unifrac distances based on the absolute abundances of OTUs in healthy FMT donors and rCDI before and after FMT. (C–F) The rCDI microbiota density is driven largely by the abundance of Proteobacteria and Firmicutes. In healthy donors and individuals following FMT, Proteobacteria are present at a constant absolute abundance, and microbiota density is driven by Firmicutes, Bacteroidetes, and Actinobacteria. Points represent individual subjects and colors indicate their health status In (A) bars indicate median, ***p < 0.001. In (B) points represent individual samples. Ellipses indicate the 95% confidence interval of distribution of points. 16S rRNA gene amplicon sequencing data is available (see Materials and Methods).
 
 To separate the host physiologic and pharmacologic factors that might impact our understanding of community fitness in rCDI, we utilized a gnotobiotic murine model of FMT (Figure 4D) where germ-free mice were initially colonized with the fecal material of individuals with rCDI for 3 weeks prior to a single transplant of fecal material via oral gavage from a second human donor – the same healthy FMT donor used for the transplant clinically. The ex-germ-free mice therefore model the fecal microbiota transplant but in a fixed environment, with a controlled diet, and no antibiotic confounder. As a control, we colonized germ-free mice with the FMT donor microbiota alone (Figure 4D). The microbiota density of mice colonized with the healthy samples (a) was greater than that of mice colonized with rCDI samples (b) (p = 1.79×10−4, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 4E), suggesting that rCDI individuals have a reduced microbiota fitness compared to healthy donors. Following the introduction of the healthy donor microbiota to the mice colonized with the rCDI microbiota (c), we observed increased microbiota density in these mice (p = 6.88×10−8, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 4E), implying a restoration of microbiota fitness. Furthermore, when we colonize germ-free mice with the microbiota of the individuals with rCDI 6–12 months after they received an FMT (d), we find that their microbiota fitness had been restored, just as in our mouse FMT model (p = 8.60×10−8, Kruskal-Wallis rank sum test, followed by a Dunn’s test with Bonferroni correction; Figure 4E). These findings in the mice model recapitulate the data in our human cohort of FMT recipients and suggest that FMT successfully treats the fitness defect of the rCDI community.
 
@@ -149,89 +197,575 @@ Finally, we found that the reduced microbiota density in rCDI, due to a lack of 
 
 ## Materials and methods
 
-## Mammalian samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse/Rat Foxp3 PE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-5773-82; RRID:AB_465936</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Anti-Mouse CD4</td>
+      <td>BioLegend</td>
+      <td>Cat# 100411; RRID:AB_312696</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC/Cy7 Anti- Mouse CD45</td>
+      <td>BioLegend</td>
+      <td>Cat# 103115; RRID:AB_312980</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgA-HRP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A4789; RRID:AB_258201</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgA-UNLB</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1040–01; RRID:AB_2314669</td>
+      <td>Working concentration 1 ng/μL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amoxicillin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A8523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A9518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azithromycin</td>
+      <td>AK Scientific</td>
+      <td>Cat# SYN3010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C1389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cephalexin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C4895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ciprofloxacin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 17850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clarithromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C9742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clindamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C5269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lactulose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 61360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Loperamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Research Products International</td>
+      <td>Cat# M81000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# N6386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Omeprazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# O104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Peroxidase Solution B</td>
+      <td>KPL</td>
+      <td>Cat# 50-65-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhenoL:Chloroform:IAA, 25:24:1, pH 6.6</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM9732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PM Buffer</td>
+      <td>Qiagen</td>
+      <td>Cat# 19083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylene Glycol 3350</td>
+      <td>Miralax</td>
+      <td>Product # 11523–723</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polymyxin B</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P0972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rifaximin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R9904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAlater Stabilization Reagent</td>
+      <td>Qiagen</td>
+      <td>Cat# 76104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dodecyl sulfate (SDS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 75746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMB Peroxidase Substrate</td>
+      <td>KPL</td>
+      <td>Cat# 50-76-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vancomycin</td>
+      <td>Amresco</td>
+      <td>Cat# 990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bioanalyzer 6000 Nano Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 5067–1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 Fixation/Permeabilization Buffer Set</td>
+      <td>BioLegend</td>
+      <td>Cat# 421403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II DNA Library Prep Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat# E7645L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick 96 PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 28181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-IT dsDNA Assay Kit – Broad Range</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# Q32853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-IT dsDNA Assay Kit – High Sensitivity</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# Q33130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie Aqua Fixable Viability Kit</td>
+      <td>BioLegend</td>
+      <td>Cat# 423101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.1 mm diameter zirconia/silica beads</td>
+      <td>BioSpec</td>
+      <td>Cat# 11079101z</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1.0 mL collection tubes</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 3740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.0 mL collection tubes</td>
+      <td>Axygen</td>
+      <td>Cat# SCT-200-SS-C-S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agencourt AMPure XP Beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor Pico</td>
+      <td>Diagenode</td>
+      <td>Cat# B01060010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase VIII</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C2139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNase1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DN25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSR II Flow Cytometer</td>
+      <td>BD Biosciences</td>
+      <td>SORP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mini-Beadbeater-96</td>
+      <td>BioSpec</td>
+      <td>Cat# 1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NEBNext Ultra Q5 Master Mix</td>
+      <td>New England BioLabs</td>
+      <td>Cat# M0544L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SPRIselect Beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# B23317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Synergy HTX Multi-Mode Microplate Reader</td>
+      <td>BioTek</td>
+      <td>http://www.biotek.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, deposited data</td>
+      <td>Greengenes reference database version 13_8</td>
+      <td>DeSantis et al., 2006</td>
+      <td>http://greengenes.lbl.gov</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, deposited data</td>
+      <td>Microbiota 16S rDNA gene sequences</td>
+      <td>This paper</td>
+      <td>SRA Project #: PRJNA413199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, deposited data</td>
+      <td>Mus musculus mm10 genome</td>
+      <td>UCSC</td>
+      <td>http://genome.ucsc.edu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, deposited data</td>
+      <td>Shotgun metagenomic sequencing data</td>
+      <td>This paper</td>
+      <td>SRA Project #: PRJNA413199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>16S V4 (515–806) F 5’-GTGCCAGCAGCCGCGGTAA-3’</td>
+      <td>IDT (Relman et al., 1992)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>16S V4 (515–806) R 5’-GGACTACCAGGGTATCTAAT-3’</td>
+      <td>IDT (Relman et al., 1992)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (primers)</td>
+      <td>Mouse TNFa (6455–6718) F 5’-GGCTTTCCGAATTCACTGGAG-3’</td>
+      <td>IDT (Nitsche et al., 2001)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence -based reagent (primers)</td>
+      <td>Mouse TNFa (6455–6718) R 5’-CCCCGGCCTTCCAAATAAA-3’</td>
+      <td>IDT (Nitsche et al., 2001)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva</td>
+      <td>BD Biosciences</td>
+      <td>http://www.bdbiosciences.com/us/instruments/research/software/flow-cytometry-acquisition/bd-facsdiva-software/m/111112/overview</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FLASH</td>
+      <td>Magoč and Salzberg, 2011</td>
+      <td>http://ccb.jhu.edu/software/FLASH/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo (version 10)</td>
+      <td>Treestar</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaPhlAn2</td>
+      <td>Truong et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multcomp  R package</td>
+      <td>Hothorn et al., 2008</td>
+      <td>https://cran.r-project.org/package=multcomp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyloseq R package</td>
+      <td>McMurdie and Holmes (2013)</td>
+      <td>https://joey711.github.io/phyloseq</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QIIME (version 1.9.1)</td>
+      <td>Caporaso et al., 2010</td>
+      <td>http://qiime.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team, 2017</td>
+      <td>https://www.R-project.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>C57BL/6J mice</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>Swiss Webster mice</td>
+      <td>Taconic Biosciences</td>
+      <td>SW-M and SW-F</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian samples
 
 Fecal samples from the mammals used in this study were collected either from laboratory animals housed and maintained at the Icahn School of Medicine at Mount Sinai (New York, NY), or from animals at the Zoo Knoxville (Knoxville, TN). Approximate animal masses were curated from the literature (Blandford, 1987; Lambert, 1998; Ebinger, 1974; Garland, 1983; Roberts and Gittleman, 1984; Smith and Jungers, 1997).
 
-## Mice
+### Mice
 
 Specific pathogen free (SPF) mice were purchased from Jackson Labs (C57BL/6J) or Taconic (Swiss Webster Mice). Germ-free (GF) WT C57BL/6J (Jackson), and Swiss Webster (Taconic) mice were housed in standard, commercially available flexible film isolators. To generate gnotobiotic mice from human or mammalian fecal samples, GF mice were gavaged with 200 μL of clarified stool from the source. Four week old male mice were used for the antibiotic treatment phenotyping experiments (Figure 3). All other experiments used both male and female mice between 4 and 6 weeks old. Swiss Webster mice were used to perform gnotobiotic experiments. All animal experiments in this study were approved by Institutional Animal Care and Use Committee (IACUC) of the Icahn School of Medicine (protocol: IACUC-2013-1385) and were performed in accordance with the approved guidelines for animal experimentation at the Icahn School of Medicine at Mount Sinai.
 
-## Human subjects
+### Human subjects
 
 Individual ages 18 and over were recruited to be part of the study using a protocol approved by the Mount Sinai Institutional Review Board (HS# 11-01669). Once the coordinators went over the consent form and subjects consented to be part of the study to be published with subjects deidentified, they were given a study identification number that all their study samples were labeled with. All study samples were processed with no identifiers linked to them other than their study id. To study the microbiota of individuals with IBD, we collected fecal samples from 70 healthy controls (42 female, 28 male), with an average age of 55.1 (range: 23-73), 109 individuals with ulcerative colitis (67 female, 42 male), with an average age of 52.8 (range: 22-80), and 144 individuals with Crohn’s Disease (72 female, 72 male), with an average age of 41.7 (range: 22-79). For subjects with ulcerative colitis we defined disease activity using the Mayo Endoscopic Subscore (Mayo). Individuals with a Mayo = 3 were categorized as having active disease, and individuals with a Mayo = 0 were categorized as having inactive disease. For individuals with Crohn’s disease, active disease was defined as a Simple Endoscopic Score for Crohn Disease (SES-CD) ≥5, and inactive disease as SES-CD = 0. The remaining samples were excluded from these analyses. Stool samples were also collected from individuals with ulcerative colitis that had undergone an ileal pouch-anal anastomosis procedure following total colectomy (3 female, 12 male), with an average age of 42.93 (range: 19-68). These samples were collected from individuals in accordance with the IRB at the Tel Aviv Sourasky Medical Center. All individuals signed an informed consent. For the analysis of the change in the microbiota in recurrent Clostridium difficile infection following fecal microbiota transplantation, we collected samples from 11 healthy donors (8 female, 3 male; average age: 47.9, range: 25-75), 12 recipients who also had IBD (8 female, 4 male; average age: 55.3, range: 32-78), and 11 recipients who did not have IBD (9 female, 3 male; average age: 62, range: 36-87), as described in Hirten et al. (2018). The study was approved by the Mount Sinai IRB.
 
-## Fecal sample collection and pre-processing
+### Fecal sample collection and pre-processing
 
 To quantify the mass of each fecal sample or fecal sample aliquot, we pre-weighed tubes prior to sample collection and post-weighed the tubes after adding the fecal material. For mouse samples, fresh fecal samples were collected directly into the collection tubes and stored at −80°C. For all other mammalian species with larger fecal sample sizes, samples were aliquoted on dry ice or liquid nitrogen and stored at −80°C. Sample aliquot sizes were targeted in the linear range of the fecal DNA extraction protocol (approx. 50 mg in mice and <200 mg in humans) to enable quantitative yields of DNA from the fecal material. Samples weighing less than 5 mg were excluded from analysis.
 
-## Phenol:chloroform DNA extraction
+### Phenol:chloroform DNA extraction
 
 Fecal samples processed with the phenol:chloroform DNA extraction method were collected into 2.0 mL collection tubes (Axygen, SCT-200-SS-C-S). Similar to previous studies (Reyes et al., 2013), samples were suspended in a solution containing 282 μL of extraction buffer (20 mM Tris (pH 8.0), 200 mM NaCl, 2mM EDTA), 200 μL 20% SDS, 550 μL phenol:chloroform:isoamyl alcohol (25:24:1, pH 7.9), and 400 μL of 0.1 mm diameter zirconia/silica beads (BioSpec, 11079101z). Samples were then lysed by mechanical disruption with a Mini-Beadbeater-96 (BioSpec, 1001) for 5 minutes at room temperature. Samples were centrifuged at 4000rpm for 5 minutes to separate aqueous and organic phases. The aqueous phase was collected and mixed with 650 μL of PM Buffer (Qiagen, 19083). DNA extracts were then purified using a Qiagen PCR Purification kit (Qiagen, 28181), and eluted into 100 μL of EB buffer. Purified DNA was quantified using the Broad Range or High Sensitivity Quant-IT dsDNA Assay kit (Thermo Fisher, Q32853 and Q33130) in combination with a BioTek Synergy HTX Multi-Mode Reader.
 
-## DNase inactivation buffer DNA extraction
+### DNase inactivation buffer DNA extraction
 
 Phenol:chloroform based DNA extraction with bead beating is an effective method to isolate microbial DNA from feces. However, automation of phenol:chloroform requires liquid handling robotics in an environment compatible with this hazardous chemical mixture. In addition, the variable volume of the aqueous phase produced with this method presents an obstacle for its automation. We therefore tested the DIB bead beating extraction protocol as an alternative, since by eliminating the hazardous chemicals the protocol is compatible with more high-throughput liquid handling robotics platforms.
 
 Samples processed with the DNase Inactivation Buffer (DIB) DNA extraction method were collected into 1.0 mL tubes (Thermo Fisher, 3740). Samples were suspended in a solution containing 700 μL of DIB (0.5% SDS, 0.5 mM EDTA, 20 mM Tris (pH 8.0)) and 200 μL of 0.1 mm diameter zirconia/silica beads. Samples were then lysed by mechanical disruption and centrifuged as above. Since there is no phase separation with this method, it is straightforward to subsample the supernatant to improve the dynamic range of DNA quantification by avoiding saturating the column with DNA quantities above the binding capacity. 50-200 μL of the supernatant was transferred into new collection tubes. Depending on the volume collected, an additional volume of DIB was added in order to reach a total volume of 200 μL. Next, this DIB lysate was combined with 600 μL of PM Buffer, purified with a Qiagen PCR Purification kit, and eluted into 100 μL of EB buffer. Purified DNA was quantified using the Broad Range or High Sensitivity Quant-IT dsDNA Assay kit in combination with a BioTek Synergy HTX Multi-Mode Reader.
 
-## 16S rRNA sequencing
+### 16S rRNA sequencing
 
 DNA templates were normalized to 2 ng/μL, and the V4 variable region of the 16S rRNA gene was amplified by PCR using indexed primers as previously described (Faith et al., 2013). The uniquely indexed 16S rRNA V4 amplicons were pooled and purified with AMPure XP beads (Beckman Coulter, A63880) with a ratio of 1:1 beads to PCR reaction. Correct amplicon size and the absence of primer dimers were verified by gel electrophoresis. The pooled samples were sequenced with an Illumina MiSeq (paired-end 250bp). Raw sequencing files (fastq) for all 16S sequencing samples are stored in the public Sequence Read Archive (SRA) under project number PRJNA413199.
 
-## Shotgun metagenomic sequencing
+### Shotgun metagenomic sequencing
 
 Metagenomic libraries were prepared using the NEBNext Ultra II DNA Library Prep kit (New England BioLabs, E7645L). Briefly, DNA samples were first sheared by sonication with a Diagenode Bioruptor Pico sonicator (Diagenode, B01060010) for a total of 14 cycles of 20 seconds. End repair and adapter ligation was performed as per the manufacturer’s instructions. The ligation products were then purified using a double size selection with SPRIselect beads (Beckman Coulter, B23317) to retain products of 500–600 base pairs. Enrichment PCR was performed with NEBNext Ultra Q5 Master Mix (New England BioLabs, M0544L). Samples were quantified using the High Sensitivity Quant-IT dsDNA assay kit in combination with a BioTek Synergy HTX Multi-Mode Reader, checked for appropriate size by gel electrophoresis, and pooled in even proportions. The pooled libraries were then purified with double size selection using 0.6x followed by 0.2x of AMPure XP beads (Beckman Coulter, A63880). Samples were sequenced with an Illumina HiSeq (paired-end 150 bp). For MetaPhlAn2 analysis, paired end sequence files were combined into one file per sample by concatenation of the two read files. Sequence data files (fastq) for all metagenomic sequencing samples are stored in the public Sequence Read Archive (SRA) under project number PRJNA413199.
 
-## Fecal sample water content
+### Fecal sample water content
 
 Samples were collected into pre-weighed 2.0 mL collection tubes (Axygen, SCT-200-SS-C-S). After collecting a fecal sample, sample mass was determined by post-weighing the tube. To measure the water content of a sample, tubes were placed at 105°C for 24 hr, and weighed again (Hinnant and Kothmann, 1988). The water content of a sample was calculated as the difference in final and initial mass of the sample, divided by the initial mass.
 
-## Pharmacologic treatment of mice
+### Pharmacologic treatment of mice
 
 Antibiotics (and other compounds) were provided ad libitum to mice in their drinking water, when possible. All of the pharmacologics were prepared into a 2% sucrose solution (which also served as the control treatment) and sterilized with a 0.22 μm filter. Compounds that were not readily water-soluble were administered to mice via oral gavage of 200 μL once per day, as indicated in Supplementary file 1. Unless identified otherwise, antibiotic and pharmacologic concentrations were calculated using a maximal clinical dose (taken from the online clinical resource UpToDate.com) or from previous studies (Atarashi et al., 2011; Kashyap et al., 2013; Larsson et al., 1983; Vaishnava et al., 2011; Bryant et al., 1988), assuming a 20 g mouse that drinks 3 mL water per day.
 
-## Measurement of fecal immunoglobulin A
+### Measurement of fecal immunoglobulin A
 
 Fecal pellets were collected and massed. To each fecal pellet, 1 mL of sterile PBS was added per 100 mg feces. Each sample was homogenized without beads in a Mini-Beadbeater-96 for 3 min (BioSpec, 1001) followed by vortexing for 3 min. Samples were centrifuged at 9000g for 10 min at 4°C and supernatants were collected. Immunoglobulin A was measured by ELISA. Plates were coated with a working concentration of 1 ng/μL of goat anti-mouse IgA-UNLB (SouthernBiotech Cat# 1040-01, RRID:AB_2314669), and then blocked with 1% BSA in PBS overnight at 4°C. Wells were washed with washing buffer (0.1% Tween-20 in PBS) 3 times. Then, fecal supernatant was diluted in dilution buffer (0.1% Tween-20, 1% BSA in PBS), added to each well, and incubated overnight at 4°C. The wells were washed again with washing buffer 5 times, and incubated for 2 hours at room temperature with a 1/2000 dilution of goat anti-mouse IgA-HRP (Sigma-Aldrich Cat# A4789, RRID:AB_258201) in dilution buffer. Following the incubation, the wells were washed 5 times with PBS/Tween-20. Next, TMB substrate was added to wells for 1 minute (KBL, 50-76-02 and 50-65-02), and the reaction was quenched using 1M H2SO4. Absorbance at 450 nm was measured using a BioTek Synergy HTX Multi-Mode Reader. Samples were quantified against a standard curve from 1000 ng/mL to 0.5 ng/mL.
 
-## CFU assay
+### CFU assay
 
 We performed colony forming unit assays to obtain a culture-dependent measurement of microbiota density that also incorporates viability, as only live microbes will form colonies in this assay. Fecal samples were stored at −80°C after sampling. Prior to plating larger samples were pulverized under liquid nitrogen. Approximately 500 mg of fecal sample was homogenized in 12 ml of rich broth and filtered with a 100 μM filter to remove particulate matter (Britton et al., 2019). Serial dilutions of this clarified fecal slurry were plated on chocolate agar and grown in an anaerobic chamber at 37°C for 72 hours, whereupon colonies were manually quantified and normalized to CFU/g feces.
 
-## Colonic lamina propria immune populations
+### Colonic lamina propria immune populations
 
 Colonic lamina propria immune cell populations were measured as previously described (Britton et al., 2019). Briefly, colonic tissue was dissected and placed into RPMI medium at 4°C. Tissues were then transferred into HBSS and vortexed briefly, before being transferred into dissociation buffer (10% FBS, 5 mM EDTA, 15 mM HEPES in HBSS) and shaken for 30 minutes at 110 rpm at 37°C. Tissues were washed in HBSS before digestion in HBSS containing 2% FBS, 0.5 mg/mL Collagenase VIII (Sigma C2139) and 0.5 mg/mL DNase 1 (Sigma DN25) for 30 minutes at 110 rpm at 37°C. Digested tissue was then passed through a 100 μm filter into cold RPMI medium. Samples were then centrifuged at 1500 rpm, 4°C for 5 minutes. The supernatant was removed and cells were washed once more in PBS before staining for flow cytometry. No enrichment of mononuclear cells by density centrifugation was performed. Cells were initially blocked with Fc Block (BioLegend Cat# 101320, RRID:AB_1574975) and subsequently stained for: viability (BioLegend Cat# 423101) and immunolabelled for expression of CD4 (1:200, BioLegend Cat# 100411, RRID:AB_312696) and CD45 (1:100, BioLegend Cat# 103115, RRID:AB_312980), and FoxP3 (1:100, Thermo Fisher Scientific Cat# 12-5773-82, RRID:AB_465936). Surface markers were stained before fixation and intracellular markers were stained after fixation with the FoxP3 Fixation/Permeabilization Kit (eBioscience). Samples were run on a BD LSRII and analyzed with FlowJo.
 
-## Microbiota density and absolute abundances
+### Microbiota density and absolute abundances
 
 We define microbiota density as the total DNA extracted from each sample (in μg) per mg of fresh sample. For samples processed with the DIB-based extraction method, the total DNA extracted is adjusted by the fraction of the supernatant that was subsampled in the DNA extraction (e.g., a 100 μL subsample is 1/7th of the total volume; total sample DNA is [DNA eluted] * 7). We then are able to utilize this measurement of microbiota density to compute the absolute abundance of microbial taxa by scaling the relative abundances of microbes in a sample by the microbiota density of that sample.
 
-## 16S rRNA gene amplicon sequencing data analysis
+### 16S rRNA gene amplicon sequencing data analysis
 
 Paired end reads were joined into a single DNA sequence using the FLASH algorithm (Magoč and Salzberg, 2011). We split our pooled sequencing library by index using QIIME v 1.9.1 (Caporaso et al., 2010), and picked OTUs against the greengenes reference database 13_8 at 97% sequence identity (DeSantis et al., 2006; McDonald et al., 2012). The resulting OTU tables were subsequently analyzed in R (R Core Team, 2017) with the help of the phyloseq package (McMurdie and Holmes, 2013), and custom functions developed to convert relative abundances into absolute abundances using microbiota density data.
 
-## Shotgun metagenomic sequencing data analysis
+### Shotgun metagenomic sequencing data analysis
 
 The metagenomic sequencing data was analyzed using MetaPhlAn2 (Truong et al., 2015). One million paired-end reads were used for each sample, providing enough depth to reach species-level resolution (Hillmann et al., 2018).
 
-## Statistical analysis
+### Statistical analysis
 
 Data presented were analyzed and visualized using the R statistical software (R Core Team, 2017). Statistical tests were used as described in the main text. For nonparametric statistical tests, multiple comparisons were performed using Dunn’s test following Kruskal-Wallis using the FSA R package (Ogle, 2018), and corrected for multiple comparisons using Bonferonni correction. For many-to-one comparisons (e.g., pharmacologic treatments compared to untreated controls), multiple hypothesis testing correction was accomplished by using Dunnett’s test, implemented with the multcomp R package (Hothorn et al., 2008). For multiple comparisons between experimental groups, Tukey’s honest significant difference (HSD) was used to correct for multiple testing. Unless otherwise noted, figures depict individual samples as points, and the bars indicate the median or mean ± SEM. In figures, *p < 0.05, ** p < 0.01, and ***p < 0.001.
 
-## Repeated sampling of gnotobiotic mice
+### Repeated sampling of gnotobiotic mice
 
 For the experiments in which gnotobiotic mice were used to assess the roles of host carrying capacity and microbiota fitness in shaping microbiota density, mice were sampled longitudinally to increase sample size for each condition. For the mice colonized with fecal samples from the lion, elephant, ferret, and red panda, two-way ANOVA shows that the main effect is the microbiota used to colonize the mouse (F = 32.3, p = 8.27×10−16), while the identity of the individual mice does not contribute to the effects (F = 1.08, p = 0.388). The same is true for the mice colonized with fecal samples from individuals with IBD and pouch (F = 29.4, p < 0.0001 for the colonizing microbiota; F = 0.746, p = 0.634; two-way ANOVA). As a result, we are able to effectively measure the microbiota density of gnotobiotic mice in these conditions and increase the utility of each gnotobiotic mouse.
 
-## Supplemental results
+### Supplemental results
 
-## DNase inactivation buffer vs phenol chloroform DNA extraction comparison
+#### DNase inactivation buffer vs phenol chloroform DNA extraction comparison
 
 To test if the two DNA extraction methods affected the resulting microbiota composition data, we processed separate aliquots from the same fecal sample using both methods. We found that the abundances of taxa in the sample processed with both methods were highly correlated (Figure 1—figure supplement 1A and B), suggesting that they represent equivalent ways to assay microbial community composition. In practice, the DIB method was most conducive to the small feces produced by mice and the large majority of mouse samples for this study were processed using this protocol, since the protocol utilizes smaller tubes that can be arrayed into standard 96-well formats. For the remaining mammals, the phenol:chloroform method was used as the number of stools used in the study was less, and the larger stools were more practical to aliquot into the wider 2.0 mL tube used for the phenol:chloroform method.
 
 One possible limitation of using DNA content as a measurement of microbiota density is that small amounts of fecal matter contain sufficient DNA to saturate or clog the DNA binding columns used during extraction. This upper limit can largely be avoided by limiting the amount of input fecal material of higher microbiota density mammals (e.g., mice) to < 50 mg and lower microbiota density mammals (e.g., humans) to < 200 mg. In our experience, bead beating also becomes inefficient at >200 mg of fecal material. In contrast to the phenol:chloroform method, the DIB extraction protocol relies on a subsampling step that provides an additional safeguard to ensure the DNA extraction does not saturate the capacity of the Qiagen DNA-binding columns. By sampling a fraction of the lysate, we can extend the upper limit of our extraction protocol. At the extreme, using a 5 μL subsample of the lysate can increase the dynamic range by a factor of 140, which in turn implies that we can measure microbiota density for samples containing up to 1.4 mg of DNA (140 * 10 μg binding capacity of columns). On the lower end of our dynamic range, dye-based methods (Qubit Hi-sensitivity) provide an accurate detection down to 0.2 ng.
 
-## qPCR quantification of DNA origin
+#### qPCR quantification of DNA origin
 
 While the dynamic range of the DIB extraction method described above is typically sufficient for stool samples, which contain high densities of microbial DNA compared with other environments, we further extended the method with qPCR-based quantification of the V4 region of the 16S rRNA gene. Additionally, by utilizing DNA yield per fecal sample as a measure of microbiota density, we assume host DNA is a minor contributor to the total fecal DNA yield.
 
@@ -239,15 +773,15 @@ To quantify the amount of bacterial and mouse DNA in our samples, we targeted th
 
 We quantified the amount of host vs bacterial DNA in several samples by qPCR, and evaluated the qPCR performance against spike-in controls with known combinations of mouse and bacterial DNA. We found that even amongst samples with low microbial density (e.g., samples from mice treated with vancomycin), the DNA content is largely microbial (Figure 1—figure supplement 1C). We were also able to measure the presence of microbial DNA down to concentrations near 1 pg/μL (Figure 1—figure supplement 1C). This allows us to measure microbial density for samples with DNA as low as 100 pg (minimum concentration 1 pg/μL in a 100 μL elution volume). Coupled with the ability to subsample the lysate from our DNA extraction protocol, this allows us to measure microbiota density across 5 orders of magnitude for the phenol:chloroform method and 7 orders of magnitude with the DIB protocol.
 
-## Antibiotic spectrum and in vivo activity
+#### Antibiotic spectrum and in vivo activity
 
 By combining measures of microbiota density with sequencing-based measures of gut microbiota composition, we can study the ability of antibiotics to act within the context of a complex microbial community. We examined the 16S rRNA gene sequencing data from our antibiotics experiments (Figure 2) to study the effects of polymyxin B, which acts by binding to the bacterial outer membrane that is present in gram-negative but not gram-positive organisms, and of vancomycin, which acts by inhibiting cell wall synthesis in gram-positive bacteria, and is thought to have little or no efficacy against gram-negative organisms. We focused on the changes in absolute abundances of bacterial phyla that are largely gram-positive (Actinobacteria and Firmicutes) or largely gram-negative (Bacteroidetes and Proteobacteria). Polymyxin B did not reduce the microbiota density overall, and did not significantly reduce the absolute abundance of Gram-negative bacteria (p = 0.116, Wilcoxon rank sum test; Figure 2—figure supplement 1A) or change the absolute abundance of Gram-positive bacteria (p = 0.273, Wilcoxon rank sum test, Figure 2—figure supplement 1B). Vancomycin, on the other hand, drove a significant decrease in the absolute abundance of both gram-positive and gram-negative organisms (pGram(+) = 6.27×10−13, pGram(-) = 6.27×10−13, Wilcoxon rank sum test; Figure 2—figure supplement 1C and D). These results suggest that the spectrum of activity of antibiotics as determined by in vitro assays may not reflect the effects of these drugs in vivo, when they are introduced to complex communities of organisms such as in the gut.
 
-## Absolute microbial dynamics and alpha diversity in response to pharmacologics
+#### Absolute microbial dynamics and alpha diversity in response to pharmacologics
 
 Culture-independent measurements have revealed that antibiotics can disrupt the composition of a healthy gut microbiota (Dethlefsen et al., 2008). We hypothesized that antibiotics may also have an impact on the gut microbiota density. To test this hypothesis, we administered vancomycin in two doses (0.2 mg/mL and 0.5 mg/mL) to two sets of SPF C57BL/6J mice and collected fecal pellets before and during treatment. We found that vancomycin exerted selective pressure against susceptible organisms leading to a relative expansion of Verrucomicrobia and Firmicutes in the low and high dose groups respectively (Figure 2—figure supplement 2A and B ). When we multiplied each taxa’s relative abundance by the microbiota density to calculate their absolute abundances, we observed a bloom of Verrucomicrobia in the low dose group (Figure 2—figure supplement 2C ). Surprisingly, in the high dose group, we found that vancomycin successfully depleted members of all phyla, including Firmicutes (Figure 2—figure supplement 2D ). Microbiota density and alpha diversity were not significantly correlated (ρ = 0.107; p = 0.557; Spearman; Figure 2—figure supplement 2E), as both low dose and high dose vancomycin significantly reduced alpha diversity (plow = 6.10 x 10−5 and phigh = 0.00223, final timepoint vs baseline, Mann Whitney; Figure 2—figure supplement 2F ), while only high dose vancomycin reduced microbiota density (plow = 0.669, phigh = 0.0127, final timepoint vs baseline, Mann Whitney; Figure 2—figure supplement 2G ).
 
-## Identifying fungi in rCDI samples
+#### Identifying fungi in rCDI samples
 
 Recent work has demonstrated that the fungal community may play an important role in modulating response to FMT in patients with rCDI (Zuo et al., 2018). We sought to identify whether our cohort of individuals with rCDI had a significant fungal component to their microbiota. We performed shotgun metagenomic sequencing on fecal samples from patients prior to FMT (n = 15) and profiled the composition of the microbial community using MetaPhlAn2 (Truong et al., 2015). Using this approach, we were only able to identify fungal reads in one of the eighteen samples. In this sample, Saccharomyces cerevisiae was the only identified fungi and comprised 0.112% of the mapped reads, while the remaining 99.9% were mapped to bacteria, consistent with previous reports of fungal reads accounting for approximately 0.1% of the human gut metagenome (MetaHIT Consortium et al., 2010).
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Sanofi-Pasteur’s CYD-TDV is the only licensed dengue vaccine. Two phase three trials showed higher efficacy in seropositive than seronegative recipients. Hospital follow-up revealed increased hospitalisation in 2–5- year-old vaccinees, where serostatus and age effects were unresolved. We fit a survival model to individual-level data from both trials, including year 1 of hospital follow-up. We determine efficacy by age, serostatus, serotype and severity, and examine efficacy duration and vaccine action mechanism. Our modelling indicates that vaccine-induced immunity is long-lived in seropositive recipients, and therefore that vaccinating seropositives gives higher protection than two natural infections. Long-term increased hospitalisation risk outweighs short-lived immunity in seronegatives. Independently of serostatus, transient immunity increases with age, and is highest against serotype 4. Benefit is higher in seropositives, and risk enhancement is greater in seronegatives, against hospitalised disease than against febrile disease. Our results support vaccinating seropositives only. Rapid diagnostic tests would enable viable ‘screen-then-vaccinate’ programs. Since CYD-TDV acts as a silent infection, long-term safety of other vaccine candidates must be closely monitored. Bill & Melinda Gates Foundation, National Institute for Health Research, UK Medical Research Council, Wellcome Trust, Royal Society. NCT01373281 and NCT01374516 .
+Background:Sanofi-Pasteur’s CYD-TDV is the only licensed dengue vaccine. Two phase three trials showed higher efficacy in seropositive than seronegative recipients. Hospital follow-up revealed increased hospitalisation in 2–5- year-old vaccinees, where serostatus and age effects were unresolved.Methods:We fit a survival model to individual-level data from both trials, including year 1 of hospital follow-up. We determine efficacy by age, serostatus, serotype and severity, and examine efficacy duration and vaccine action mechanism.Results:Our modelling indicates that vaccine-induced immunity is long-lived in seropositive recipients, and therefore that vaccinating seropositives gives higher protection than two natural infections. Long-term increased hospitalisation risk outweighs short-lived immunity in seronegatives. Independently of serostatus, transient immunity increases with age, and is highest against serotype 4. Benefit is higher in seropositives, and risk enhancement is greater in seronegatives, against hospitalised disease than against febrile disease.Conclusions:Our results support vaccinating seropositives only. Rapid diagnostic tests would enable viable ‘screen-then-vaccinate’ programs. Since CYD-TDV acts as a silent infection, long-term safety of other vaccine candidates must be closely monitored.Funding:Bill & Melinda Gates Foundation, National Institute for Health Research, UK Medical Research Council, Wellcome Trust, Royal Society.Clinical trial number:NCT01373281 and NCT01374516.
 
 ## Introduction
 
@@ -40,119 +40,735 @@ Here we present a survival model with time and age varying hazards, which we fit
 
 ## Materials and methods
 
-## Data
+### Data
 
 We use the individual-level trial data from the CYD14 and CYD15 trials, in both the active phase (25 months post first dose) and the 1st year of passive phase hospital follow-up. In the active phase, all symptomatic dengue disease is detected, but in the passive phase only hospitalisations were detected. All cases refer to virologically confirmed dengue. Infecting serotype is known for almost all cases (97.6% for CYD14, 95.8% for CYD15, 96.7% overall). Baseline serostatus is known for only a minority of subjects (19.3% for CYD14, 9.6% for CYD15, 12.7% overall). Model variants (including our main model) that consider serotype-specific effects omit all cases of unknown serotype. We right-censor after date of first case for each patient, and so do not consider multiple cases per patient.
 
-## Model
+### Model
 
-We divide trial participants by trial arm a and baseline serostatus b (0 = seronegative or 1 = seropositive at baseline), as described in Figures 1 and 2. Disease risk is allowed to vary by the number of prior dengue exposures and by disease type (where disease type refers either to trial phase (active = 0; passive = 1) or disease severity (non-severe/non-hospitalised = 0, severe/hospitalised = 1)). We consider a country-specific baseline hazard of disease (or force of infection, i.e. the risk of disease among susceptibles) as a spline λc(t), and we link baseline seropositivity to each participant’s age and the background transmission intensity in their country (see below). A trial participant of age α in trial arm a, with baseline serostatus b, in country c is subject to the following hazard from serotype d of disease type D at time t:λabcdD(t,α)=λc(t)ρcdMbZ(α)RabcD(α)(1−δa,VacIbd*(α,t,tF))where RabcD(α) is the relative risk of disease associated with natural infection. Mb is the multiplier of the baseline hazard associated with baseline serostatus b, equal to 1 for seronegatives and fitted for seropositives. This parameter reflects seropositive participants’ reduced infection risk due to their immunity to at least one serotype.
+We divide trial participants by trial arm a and baseline serostatus b (0 = seronegative or 1 = seropositive at baseline), as described in Figures 1 and 2. Disease risk is allowed to vary by the number of prior dengue exposures and by disease type (where disease type refers either to trial phase (active = 0; passive = 1) or disease severity (non-severe/non-hospitalised = 0, severe/hospitalised = 1)). We consider a country-specific baseline hazard of disease (or force of infection, i.e. the risk of disease among susceptibles) as a spline λc(t), and we link baseline seropositivity to each participant’s age and the background transmission intensity in their country (see below). A trial participant of age α in trial arm a, with baseline serostatus b, in country c is subject to the following hazard from serotype d of disease type D at time t:
+
+$$
+\lambda_{abcdD}(t,\alpha)=\lambda_{c}(t)ρ_{cd}M_{b}Z(\alpha)R_{abcD}^{}(\alpha)(1−\delta_{a,Vac}I_{bd}^{*}(\alpha,t,t_{F}))
+$$
+
+where $R_{abcD}^{}(\alpha)$ is the relative risk of disease associated with natural infection. Mb is the multiplier of the baseline hazard associated with baseline serostatus b, equal to 1 for seronegatives and fitted for seropositives. This parameter reflects seropositive participants’ reduced infection risk due to their immunity to at least one serotype.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig2-v3.jpg)
 
 **Figure 2.:** In all model variants, we allow the initial magnitude and mean duration of transient immunity to vary by baseline serostatus (exponential waning is assumed). (A) Our main model allows transient immunity magnitude to vary by age and serotype, as well as baseline serostatus. For each serostatus, we model transient immunity with age, and serotype effects are incorporated additively (see Materials and methods for details). We further include an age-specific multiplier of the baseline hazard. (B) and (C) show reduced model variants that dispense with serotype and age effects, respectively. (D) Shows our simplest model variant without explicit age or serotype effects.
 
-ρcd ∈ [0,1] is the proportion of serotype d in country c (assumed to be constant, with ∑d=14ρcd=1, see below); Z(α) is the multiplier of the force of infection for age α; δαVac is the Kronecker delta defined byδa,Vac={1a=Vaccine0a=Control
+ρcd ∈ [0,1] is the proportion of serotype d in country c (assumed to be constant, with $\sumd=14ρ_{cd}=1$, see below); Z(α) is the multiplier of the force of infection for age α; δαVac is the Kronecker delta defined by
 
-We define the transient immunity Ibd*(α, t, tF) against serotype d for vaccinees of age α and baseline serostatus b at time t, given time of most recent vaccine dose tF byIbd∗(α,t,tF)={Ibd(α)exp⁡(−(t−tF)/τb)Ibd(α)>0Ibd(α)Otherwise
+$$
+\delta_{a,Vac}={1a=Vaccine0a=Control
+$$
+
+We define the transient immunity Ibd*(α, t, tF) against serotype d for vaccinees of age α and baseline serostatus b at time t, given time of most recent vaccine dose tF by
+
+$$
+I_{bd}^{∗}(\alpha,t,t_{F})={I_{bd}(\alpha)exp⁡(−(t−t_{F})/\tau_{b})I_{bd}(\alpha)>0I_{bd}(\alpha)Otherwise
+$$
 
 That is, positive values of transient immunity wane exponentially (to reflect previously observed antibody dynamics Clapham et al., 2016). Additional details on age-specific transient immunity Ibd(α) and duration τb, and force of infection Z(α) are given below [Figure 2A].
 
-The relative risk of disease of type D for a subject with i prior dengue exposures is given by KiD. K1 0 = 1 (secondary febrile dengue illness) is taken to be the baseline, and we assume the relative risk is the same for tertiary and quaternary infection of either type, and so K2D = K3D. Our model considers serostatus to be binary (either seropositive or seronegative), and so we define the risk of disease φcD(α) among seropositive participants, which is an aggregate of the risks of disease given monotypic or multitypic infection history, shown below.
+The relative risk of disease of type D for a subject with i prior dengue exposures is given by KiD. K1 0 = 1 (secondary febrile dengue illness) is taken to be the baseline, and we assume the relative risk is the same for tertiary and quaternary infection of either type, and so K2D = K3D. Our model considers serostatus to be binary (either seropositive or seronegative), and so we define the risk of disease $\phi_{cD}(\alpha)$ among seropositive participants, which is an aggregate of the risks of disease given monotypic or multitypic infection history, shown below.
 
-Our main model considers vaccination to alter the risk of disease associated with prior exposure, by acting as a silent, disease-free infection (Figure 1). Therefore, the relative risks are defined as follows:Rabc0(α)={K0,0a=Control,b=0φc0(α)a=Control,b=1K1,0a=Vaccine,b=0K2,0a=Vaccine,b=1when considering the active phase of the trial (or symptomatic disease of any severity) andRabc1(α)={K0,0K0,1a=Control,b=0φc0(α)φc1(α)a=Control,b=1K1,0K1,1a=Vaccine,b=0K2,0K2,1a=Vaccine,b=1when considering the passive phase of the trial or hospitalised/severe disease. A glossary of the above terms can be found in Supplementary file 1.
+Our main model considers vaccination to alter the risk of disease associated with prior exposure, by acting as a silent, disease-free infection (Figure 1). Therefore, the relative risks are defined as follows:
 
-## Severity analysis
+$$
+R_{abc0}(\alpha)={K_{0,0}a=Control,b=0\phi_{c0}(\alpha)a=Control,b=1K_{1,0}a=Vaccine,b=0K_{2,0}a=Vaccine,b=1
+$$
+
+when considering the active phase of the trial (or symptomatic disease of any severity) and
+
+$$
+R_{abc1}(\alpha)={K_{0,0}K_{0,1}a=Control,b=0\phi_{c0}(\alpha)\phi_{c1}(\alpha)a=Control,b=1K_{1,0}K_{1,1}a=Vaccine,b=0K_{2,0}K_{2,1}a=Vaccine,b=1
+$$
+
+when considering the passive phase of the trial or hospitalised/severe disease. A glossary of the above terms can be found in Supplementary file 1.
+
+#### Severity analysis
 
 We interpret relative risks in two different ways depending on our analysis. The probability of case detection depends on the degree of trial surveillance, and so by default we allow relative risks to differ between the active and passive trial phases. For example, Ki = 2, D = 0 is the risk of clinically apparent disease (of any severity) in the active phase for those with two or more prior infection. Alternatively, when distinguishing between severe and non-severe disease (or equivalently between hospitalised and non-hospitalised disease), risk of disease does not differ between trial phases but between disease severities, for example, the risk of severe disease in seronegatives would be Ki = 0, D = 1. In practice, these two interpretations of the relative risk parameters are largely equivalent as non-hospitalised disease is detected exclusively by active surveillance and passive surveillance only detects hospitalised or severe disease. It does however change the calculation of survival probabilities. We allow relative risks of hospitalised disease to differ between CYD14 and CYD15 trials to account for the non-standardised hospitalisation criteria between Southeast Asia and Latin America. We do not do so when modelling severe disease since the trials used the WHO dengue severity criteria to ascribe disease severity in all trial sites. We fix the ratios K0,1 /K1,1 = K2,1/K1,1 = 0.25 (Ferguson et al., 2016), while the proportion of symptomatic secondary infections that require hospitalisation (or that result in severe disease) K1,1 are fitted parameters.
 
 It should be stressed that in our formulation overall vaccine benefit cannot be measured by transient immunity alone, but rather in combination with the change in relative risk induced by vaccination.
 
-## Baseline hazard splines
+#### Baseline hazard splines
 
-We model the baseline hazard for each country as a quadratic spline. We divide the follow-up period of length T into n-1 intervals {tk}k=1n with tk=k×Tn, and define λc(tk)=κck as the knots of the spline for country c.λc(t)=max{0, {∑i=02βickti;tk≤t<tk+1;k=1,2,...,n−3∑i=02βic(n−2)ti;tn−2≤t<tnκc1;t≤t1κcn;t≥tn}
+We model the baseline hazard for each country as a quadratic spline. We divide the follow-up period of length T into n-1 intervals ${t_{k}}_{k=1}^{n}$ with $t_{k}=k\times\frac{T}{n}$, and define $\lambda_{c}(t_{k})=κ_{ck}$ as the knots of the spline for country c.
 
-The observation period is approximately T = 4 years, and we use n =10 knots, spaced at 4-month intervals. For polynomial ∑i=02βickti, we solve the following equations for coefficients {β0ck,β1ck,β2ck}:λc(tk)=κc(k)=∑i=02βicktkiλc(tk+1)=κc(k+1)=∑i=02βicktk+1iλc(tk+2)=κc(k+2)=∑i=02βicktk+2i
+$$
+\lambda_{c}(t)=max{0, {\sumi=02\beta_{ick}t^{i};t_{k}\leqt<t_{k+1};k=1,2,...,n−3\sumi=02\beta_{ic(n−2)}t^{i};t_{n−2}\leqt<t_{n}κ_{c1};t\leqt_{1}κ_{cn};t\geqt_{n}}
+$$
 
-The knot locations {tk}k=1n are fixed and their values {κck}k=1n are fitted parameters.
+The observation period is approximately T = 4 years, and we use n =10 knots, spaced at 4-month intervals. For polynomial $\sumi=02\beta_{ick}t^{i}$, we solve the following equations for coefficients ${\beta_{0ck},\beta_{1ck},\beta_{2ck}}$:
 
-## Relative risk in seropositives
+$$
+\lambda_{c}(t_{k})=κ_{c(k)}=\sumi=02\beta_{ick}t_{k}^{i}
+$$
+
+
+
+$$
+\lambda_{c}(t_{k+1})=κ_{c(k+1)}=\sumi=02\beta_{ick}t_{k+1}^{i}
+$$
+
+
+
+$$
+\lambda_{c}(t_{k+2})=κ_{c(k+2)}=\sumi=02\beta_{ick}t_{k+2}^{i}
+$$
+
+The knot locations ${t_{k}}_{k=1}^{n}$ are fixed and their values ${κ_{ck}}_{k=1}^{n}$ are fitted parameters.
+
+#### Relative risk in seropositives
 
 If hc is the constant historical force of infection in country c, then the probability of remaining seronegative until age α is given by
 
-p0c(α)=e−hc×α.
+$p_{0c}(\alpha)=e^{−h_{c}\times\alpha}$.
 
-Therefore, the probability of seropositivity (i.e. at least one infection) by age α is given by 1−e−hc×α. Assuming that each serotype carries an equal force of infection, then the probability of exactly one infection with any serotype is given byp1c(α)=4×e−3hc/4×α×(1−e−hcα/4)
+Therefore, the probability of seropositivity (i.e. at least one infection) by age α is given by $1−e^{−h_{c}\times\alpha}$. Assuming that each serotype carries an equal force of infection, then the probability of exactly one infection with any serotype is given by
 
-The relative risk of disease φcD(α) in seropositive participants is therefore a weighted average of the risk in participants with one or more than one prior exposure.φcD(α)=p1c(α)1−p0c(α)K1D+(1−p1c(α)1−p0c(α))K2D
+$$
+p_{1c}(\alpha)=4\timese^{−3h_{c}/4\times\alpha}\times(1−e^{−h_{c}\alpha/4})
+$$
+
+The relative risk of disease φcD(α) in seropositive participants is therefore a weighted average of the risk in participants with one or more than one prior exposure.
+
+$$
+\phi_{cD}(\alpha)=\frac{p_{1c}(\alpha)}{1−p_{0c}(\alpha)}K_{1D}+(1−\frac{p_{1c}(\alpha)}{1−p_{0c}(\alpha)})K_{2D}
+$$
 
 Note that the historical hazards hc refer to infection, not disease, and that this approximation assumes that historical force of infection is equal across serotypes.
 
-## Serotype proportions
+#### Serotype proportions
 
-The proportions ρcd of serotype d in country c must satisfy ∑d4ρcd=1 for all c. Therefore, given proportions for three serotypes, the fourth is explicitly determined. We fit three parameters qcy (y = 1, 2, 3) for each country c and calculateρc1=qc1ρc2=qc2×(1−qc1)ρc3=qc3×(1−qc2)×(1−qc1)ρc4=(1−qc3)×(1−qc2)×(1−qc1)
+The proportions ρcd of serotype d in country c must satisfy $\sumd4ρ_{cd}=1$ for all c. Therefore, given proportions for three serotypes, the fourth is explicitly determined. We fit three parameters qcy (y = 1, 2, 3) for each country c and calculate
+
+$$
+ρ_{c1}=q_{c1}
+$$
+
+
+
+$$
+ρ_{c2}=q_{c2}\times(1−q_{c1})
+$$
+
+
+
+$$
+ρ_{c3}=q_{c3}\times(1−q_{c2})\times(1−q_{c1})
+$$
+
+
+
+$$
+ρ_{c4}=(1−q_{c3})\times(1−q_{c2})\times(1−q_{c1})
+$$
 
 Each parameter qcy is fitted with prior Unif(0,1).
 
-## Age effects
+#### Age effects
 
 We use a step function to model age-specific transient immunity and force of infection multiplier. This function is constant within the age groups 2–5, 6–11 and 12–16 years. We also considered a quadratic spline formulation, similar to the baseline hazard, with four knots placed at ages 2, 6, 12 and 16 years, although this did not sufficiently improve model fit.
 
-We model serotype and age effects additively (Figure 2A), that is, if Ab(α) gives the relationship between transient immunity and age for serostatus b, then the (initial) magnitude of transient immunity Ibd(α) for baseline serostatus b and serotype d for age α is given byIbd(α)=Ab(α)+sbdwhere sbd is the intercept for baseline serostatus b and serotype d (fixed at 0 for serotype d = 1).
+We model serotype and age effects additively (Figure 2A), that is, if Ab(α) gives the relationship between transient immunity and age for serostatus b, then the (initial) magnitude of transient immunity Ibd(α) for baseline serostatus b and serotype d for age α is given by
 
-## Likelihood
+$$
+I_{bd}(\alpha)=A_{b}(\alpha)+s_{bd}
+$$
 
-If the hazard due to all serotypes combined is given byλabcD(t,α)=∑d=14λabcdD(t,α)then where relative risks distinguish between trial phases, we letλabc∗(t,α)={λabc0(t,α)t<tPλabc1(t,α)t≥tPwhere tP is the date that active surveillance ends and passive surveillance begins, and define the integrated hazard between start and end times tS and tE asΛabc(tS,tE,α)=∫tStEλabc*(t,α)dt
+where sbd is the intercept for baseline serostatus b and serotype d (fixed at 0 for serotype d = 1).
 
-Our model does not consider multiple disease episodes for the same patient over the observation period, and subjects are right-censored after they become a case for the first time. Therefore, when relative risks distinguish between the severity of disease, ‘survival’ between times tS and tE refers to surviving disease of both severities, and we therefore define the integrated hazard additively asΛabc(tS,tE,α)=∫tStE(λabc0(t,α)+λabc1(t,α))dt
+### Likelihood
+
+If the hazard due to all serotypes combined is given by
+
+$$
+\lambda_{abcD}(t,\alpha)=\sumd=14\lambda_{abcdD}(t,\alpha)
+$$
+
+then where relative risks distinguish between trial phases, we let
+
+$$
+\lambda_{abc}^{∗}(t,\alpha)={\lambda_{abc0}(t,\alpha)t<t_{P}\lambda_{abc1}(t,\alpha)t\geqt_{P}
+$$
+
+where tP is the date that active surveillance ends and passive surveillance begins, and define the integrated hazard between start and end times tS and tE as
+
+$$
+Λ_{abc}(t_{S},t_{E},\alpha)=\int_{t_{S}}^{t_{E}}\lambda_{abc}^{*}(t,\alpha)dt
+$$
+
+Our model does not consider multiple disease episodes for the same patient over the observation period, and subjects are right-censored after they become a case for the first time. Therefore, when relative risks distinguish between the severity of disease, ‘survival’ between times tS and tE refers to surviving disease of both severities, and we therefore define the integrated hazard additively as
+
+$$
+Λ_{abc}(t_{S},t_{E},\alpha)=\int_{t_{S}}^{t_{E}}(\lambda_{abc0}(t,\alpha)+\lambda_{abc1}(t,\alpha))dt
+$$
 
 This interpretation assumes that hazards are proportional between disease severities (although not between trial arms, countries or between number of prior infections).
 
-In both formulations, the probability ℙabc(tS,tE,α) of remaining disease free from between times tS and tE is given byPabc(tS,tE,α)=exp⁡(−Λabc(tS,tE,α))and so the probability ℚabcdD(tS,tE,α) of disease from serotype d of type D at time tE is given byℚabcdD(tS,tE,α)=ℙabc(tS,tE,α)λabcdD(tE,α)×TIwhere TI is the time interval within which the hazard is assumed to be constant. We take TI to be 1 day.
+In both formulations, the probability $ℙ_{abc}(t_{S},t_{E},\alpha)$ of remaining disease free from between times tS and tE is given by
 
-For brevity, we combine the above to denote the probability of clinical outcome C given parameters θ byPabc∗(C,tS,tE,α;θ)=Pabc∗(C,tS,tE,α)={QabcdD(tS,tE,α)C=casePabc(tS,tE,α)C=non-case
+$$
+P_{abc}(t_{S},t_{E},\alpha)=exp⁡(−Λ_{abc}(t_{S},t_{E},\alpha))
+$$
 
-If hc denotes the constant historical force of infection in country c, then the probabilities πbc(α) of having serostatus b in country c at age α are given byπ0c(α)=e−hcαthen the likelihood of parameters θ is given byℒ(θ)=∏i=1N(ℙaibici*(Ci,tSi,tEi,αi)πbici(αi))
+and so the probability $ℚ_{abcdD}(t_{S},t_{E},\alpha)$ of disease from serotype d of type D at time tE is given by
 
-## Data augmentation
+$$
+ℚ_{abcdD}(t_{S},t_{E},\alpha)=ℙ_{abc}(t_{S},t_{E},\alpha)\lambda_{abcdD}(t_{E},\alpha)\timesT_{I}
+$$
+
+where TI is the time interval within which the hazard is assumed to be constant. We take TI to be 1 day.
+
+For brevity, we combine the above to denote the probability of clinical outcome C given parameters θ by
+
+$$
+P_{abc}^{∗}(C,t_{S},t_{E},\alpha;\theta)=P_{abc}^{∗}(C,t_{S},t_{E},\alpha)={Q_{abcdD}(t_{S},t_{E},\alpha)C=caseP_{abc}(t_{S},t_{E},\alpha)C=non-case
+$$
+
+If hc denotes the constant historical force of infection in country c, then the probabilities πbc(α) of having serostatus b in country c at age α are given by
+
+$$
+\pi_{0c}(\alpha)=e^{−h_{c}\alpha}
+$$
+
+then the likelihood of parameters θ is given by
+
+$$
+ℒ(\theta)=\prodi=1N(ℙ_{a_{i}b_{i}c_{i}}^{*}(C_{i},t_{S}_{i},t_{E}_{i},\alpha_{i})\pi_{b_{i}c_{i}}(\alpha_{i}))
+$$
+
+### Data augmentation
 
 We have baseline immunity data for only around 10% of subjects, and the above likelihood requires the baseline serostatus of each trial participant. We employ data augmentation, in which the baseline serostatus of each participant outside the immunogenicity subset is treated as a parameter, to infer the immunological status of each participant with missing baseline serostatus. This has the advantage that fitted parameters are less dependent on initial assignment of baseline serostatus and can be considered as marginal distributions over possible values of baseline immunity. We use Gibbs sampling to calculate the conditional probability of seropositivity, given the current state of the parameter chain θ and the patient’s age, trial arm, country and clinical outcome C.
 
-Abbreviating and letting ℙ(S+|C;θ) and ℙ(S−|C;θ)=1−ℙ(S+|C;θ) respectively denote the probabilities of seropositivity and seronegativity at baseline given clinical outcome C, by Bayes’ theorem we haveℙ(S+|C;θ)=ℙ(C|S+;θ)ℙ(C;θ)=ℙ(C|S+;θ)ℙ(C|S+;θ)ℙ(S+;θ)+ℙ(C|S−;θ)ℙ(S−;θ)
+Abbreviating and letting $ℙ(S_{+}|C;\theta)$ and $ℙ(S_{−}|C;\theta)=1−ℙ(S_{+}|C;\theta)$ respectively denote the probabilities of seropositivity and seronegativity at baseline given clinical outcome C, by Bayes’ theorem we have
 
-For example, a non-case of age α in country c has the following probability of seropositivity at baselineP(S+|Non-case;θ)=Pa,1,c(tS,tE,α)Pa,1,c(tS,tE,α)(1−exp⁡(−hcα))+Pa,0,c(tS,tE,α)exp⁡(−hcα)for parameters θ. Similarly, for a case of severity D of age α in country c we haveP(S+|Case;θ)=Qa,1,c,D(tS,tE,α)Qa,1,c,D(tS,tE,α)(1−exp⁡(−hcα))+Qa,0,c,D(tS,tE,α)exp⁡(−hcα)
+$$
+ℙ(S_{+}|C;\theta)=\frac{ℙ(C|S_{+};\theta)}{ℙ(C;\theta)}=\frac{ℙ(C|S_{+};\theta)}{ℙ(C|S_{+};\theta)ℙ(S_{+};\theta)+ℙ(C|S_{−};\theta)ℙ(S_{−};\theta)}
+$$
 
-## Hazard ratios
+For example, a non-case of age α in country c has the following probability of seropositivity at baseline
 
-If 𝒱 and 𝒞 are the sets of vaccinees and controls, respectively, then within any given stratum of interest 𝒮 (e.g. in a particular country, age or serostatus subset, or combination thereof), then posterior ratios of hazards of any disease severity and due to any serotype HR(t*) for all serotypes combined at time post-first dose t* are given byHR𝒮(t*)=∑i∈𝒮∩𝒱λaibici(tSi+t*,αi)∑i∈𝒮∩𝒞λaibici(tSi+t*,αi)|𝒮∩𝒞||𝒮∩𝒱|where |𝒮| denotes the number of trial participants in stratum 𝒮.
+$$
+P(S_{+}|Non-case;\theta)=\frac{P_{a,1,c}(t_{S},t_{E},\alpha)}{P_{a,1,c}(t_{S},t_{E},\alpha)(1−exp⁡(−h_{c}\alpha))+P_{a,0,c}(t_{S},t_{E},\alpha)exp⁡(−h_{c}\alpha)}
+$$
 
-For hazard ratios HR(t*,d) of a particular disease severity D and serotype d, we haveHR𝒮(t*,d,D)=∑i∈𝒮∩𝒱λaibicidD(tSi+t*,αi)∑i∈𝒮∩𝒞λaibicidD(tSi+t*,αi)|𝒮∩𝒞||𝒮∩𝒱|
+for parameters θ. Similarly, for a case of severity D of age α in country c we have
 
-## Survival curves
+$$
+P(S_{+}|Case;\theta)=\frac{Q_{a,1,c,D}(t_{S},t_{E},\alpha)}{Q_{a,1,c,D}(t_{S},t_{E},\alpha)(1−exp⁡(−h_{c}\alpha))+Q_{a,0,c,D}(t_{S},t_{E},\alpha)exp⁡(−h_{c}\alpha)}
+$$
 
-For stratum 𝒮 as at t* days post-first dose, posterior survival probabilities ℙ𝒮(t*) are calculated asℙ𝒮(t*)=∑i∈𝒮ℙaibici(tSi,tSi+t*,αi)|𝒮|and if n𝒮(t*) denotes the number of cases in stratum 𝒮 that occurred within t* days post-first dose, then the observed survival probabilities are given byℙ𝒮,Obs(t*)=1−n𝒮(t*)|𝒮|
+### Hazard ratios
 
-## Attack rates
+If $𝒱$ and $𝒞$ are the sets of vaccinees and controls, respectively, then within any given stratum of interest $𝒮$ (e.g. in a particular country, age or serostatus subset, or combination thereof), then posterior ratios of hazards of any disease severity and due to any serotype HR(t*) for all serotypes combined at time post-first dose t* are given by
 
-The period for which participants were under active or passive surveillance varies by patient. Therefore, we calculate attack rates usingAR(Trial Period)=∑i∈𝒮ℙaibici(tSi,tAi,αi)−ℙaibici(tSi,tBi,αi)∑i∈𝒮tBi−tAiwhere tAi and tBi are the start and end times of the trial period for patient i (tSi is the start of follow-up and is arbitrary here). To compute attack rates for observed data, we use the same formula, but ℙaibici(tSi,t,αi) takes value 0 if the patient i is a case between tSi and t, and 1 otherwise. We use exact binomial confidence intervals on aggregate observed survival probabilities. For predicted attack rates, we use 95% credible intervals of posterior samples.
+$$
+HR_{𝒮}(t*)=\frac{\sumi\in𝒮∩𝒱\lambda_{a_{i}b_{i}c_{i}}(t_{S_{i}}+t*,\alpha_{i})}{\sumi\in𝒮∩𝒞\lambda_{a_{i}b_{i}c_{i}}(t_{S_{i}}+t*,\alpha_{i})}\frac{|𝒮∩𝒞|}{|𝒮∩𝒱|}
+$$
 
-## Model variants and fitting
+where $|𝒮|$ denotes the number of trial participants in stratum $𝒮$.
+
+For hazard ratios HR(t*,d) of a particular disease severity D and serotype d, we have
+
+$$
+HR_{𝒮}(t*,d,D)=\frac{\sumi\in𝒮∩𝒱\lambda_{a_{i}b_{i}c_{i}dD}(t_{S_{i}}+t*,\alpha_{i})}{\sumi\in𝒮∩𝒞\lambda_{a_{i}b_{i}c_{i}dD}(t_{S_{i}}+t*,\alpha_{i})}\frac{|𝒮∩𝒞|}{|𝒮∩𝒱|}
+$$
+
+### Survival curves
+
+For stratum $𝒮$ as at t* days post-first dose, posterior survival probabilities $ℙ_{𝒮}(t*)$ are calculated as
+
+$$
+ℙ_{𝒮}(t*)=\frac{\sumi\in𝒮ℙ_{a_{i}b_{i}c_{i}}(t_{S_{i}},t_{S_{i}}+t*,\alpha_{i})}{|𝒮|}
+$$
+
+and if $n_{𝒮}(t*)$ denotes the number of cases in stratum $𝒮$ that occurred within t* days post-first dose, then the observed survival probabilities are given by
+
+$$
+ℙ_{𝒮,Obs}(t*)=1−\frac{n_{𝒮}(t*)}{|𝒮|}
+$$
+
+### Attack rates
+
+The period for which participants were under active or passive surveillance varies by patient. Therefore, we calculate attack rates using
+
+$$
+AR(Trial Period)=\frac{\sumi\in𝒮ℙ_{a_{i}b_{i}c_{i}}(t_{S_{i}},t_{A_{i}},\alpha_{i})−ℙ_{a_{i}b_{i}c_{i}}(t_{S_{i}},t_{B_{i}},\alpha_{i})}{\sumi\in𝒮t_{B_{i}}−t_{A_{i}}}
+$$
+
+where $t_{A_{i}}$ and $t_{B_{i}}$ are the start and end times of the trial period for patient $i$ ($t_{S_{i}}$ is the start of follow-up and is arbitrary here). To compute attack rates for observed data, we use the same formula, but $ℙ_{a_{i}b_{i}c_{i}}(t_{S_{i}},t,\alpha_{i})$ takes value 0 if the patient $i$ is a case between $t_{S_{i}}$ and $t$, and 1 otherwise. We use exact binomial confidence intervals on aggregate observed survival probabilities. For predicted attack rates, we use 95% credible intervals of posterior samples.
+
+### Model variants and fitting
 
 Model fitting was performed using the Metropolis–Hastings algorithm for parameter inference and Gibbs sampling for data augmentation. Parameters fitted include the relative risks, vaccine-induced transient immunities (by baseline serostatus, serotype and age) and their durations. For each country-specific baseline hazard, the logged knots of the spline are the fitted parameters, which explicitly determine all values of the baseline hazard. Prior distributions for parameters and augmented data were uniform (Supplementary file 1), and proposal distributions were normal. Each model variant was run for 1,100,000 iterations with a burn-in period of 100,000, storing 1 in every 100 iterations as posterior samples. Convergence was assessed visually. The model was coded in C++ using OpenMP (Dagum and Menon, 1998), and results were analysed in R 3.6.1 (R Development Core Team, 2019). All model code is available at https://github.com/dlaydon/DengVaxSurvival (Laydon, 2021; copy archived at swh:1:rev:d4964b7240312a371b2767533099643c59025dbf).
 
 We consider alternative model variants that do not incorporate explicit serotype or age effects (Figure 2B–D, Table 1), and also a variant without vaccine-induced immune priming. Model fit is assessed both visually and using the Bayesian Information Criterion (BIC) (Bhat and Kumar, 2010) and the Widely Applicable Bayesian Information Criterion (WBIC) (Watanabe, 2013). For the WBIC, model variants with the highest values are to be preferred, in contrast to the BIC where model variants with the lowest values are preferred.
 
+**Table 1.**
+ Parameter values by model variant.A, B, C, D refer to panels A, B, C and D of Figure 2. WBIC: Widely-Applicable Bayesian Information Criterion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Model variant</th>
+      <th>Main model A</th>
+      <th>Age effects onlyB</th>
+      <th>Serotype effects onlyC</th>
+      <th>Simplest modelD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">WBIC</td>
+      <td>−28627.1</td>
+      <td>−29065.33</td>
+      <td>−28591.5</td>
+      <td>−29018.16</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Relative risks</td>
+      <td>Trial phase</td>
+      <td>No. prior infections</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active (K0,0)</td>
+      <td>0</td>
+      <td>0.7 (0.36, 0.98)</td>
+      <td>0.53 (0.26, 0.9)</td>
+      <td>0.52 (0.28, 0.83)</td>
+      <td>0.43 (0.24, 0.78)</td>
+    </tr>
+    <tr>
+      <td>Active (K0,1)</td>
+      <td>1 (baseline)</td>
+      <td>1 (1, 1)</td>
+      <td>1 (1, 1)</td>
+      <td>1 (1, 1)</td>
+      <td>1 (1, 1)</td>
+    </tr>
+    <tr>
+      <td>Active (K0,2)</td>
+      <td>two or 3</td>
+      <td>0.31 (0.14, 0.63)</td>
+      <td>0.32 (0.14, 0.65)</td>
+      <td>0.2 (0.1, 0.4)</td>
+      <td>0.21 (0.089, 0.45)</td>
+    </tr>
+    <tr>
+      <td>Passive (K1,0)</td>
+      <td>0</td>
+      <td>0.053 (0.034, 0.078)</td>
+      <td>0.054 (0.035, 0.078)</td>
+      <td>0.051 (0.033, 0.073)</td>
+      <td>0.052 (0.034, 0.074)</td>
+    </tr>
+    <tr>
+      <td>Passive (K1,1)</td>
+      <td>1</td>
+      <td>0.21 (0.14, 0.31)</td>
+      <td>0.22 (0.14, 0.31)</td>
+      <td>0.2 (0.13, 0.29)</td>
+      <td>0.21 (0.14, 0.3)</td>
+    </tr>
+    <tr>
+      <td>Passive (K2,1)</td>
+      <td>2 or 3</td>
+      <td>0.053 (0.034, 0.078)</td>
+      <td>0.054 (0.035, 0.078)</td>
+      <td>0.051 (0.033, 0.073)</td>
+      <td>0.052 (0.034, 0.074)</td>
+    </tr>
+    <tr>
+      <td rowspan="20">Seronegative transient immunity</td>
+      <td rowspan="4">Any serotype</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.64 (0.34, 0.81)</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>-</td>
+      <td>0.48 (0.085, 0.77)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>-</td>
+      <td>0.65 (0.36, 0.85)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>-</td>
+      <td>0.61 (0.25, 0.85)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 1</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.47 (0.12, 0.74)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.16 (–0.34, 0.61)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.39 (–0.0023, 0.73)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.4 (0.022, 0.73)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Serotype 2</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.29 (0.0095, 0.62)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>−0.11 (–0.72, 0.46)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6–11 years</td>
+      <td>0.12 (–0.38, 0.57)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12–16 years</td>
+      <td>0.14 (–0.39, 0.6)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 3</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.69 (0.29, 0.96)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.43 (–0.17, 0.86)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.65 (0.15, 0.96)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.67 (0.17, 0.97)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 4</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.78 (0.59, 0.92)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.54 (0.11, 0.85)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.76 (0.53, 0.93)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.78 (0.48, 0.98)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="20">Seropositive transient immunity</td>
+      <td rowspan="4">Any serotype</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.43 (0.041, 0.73)</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>-</td>
+      <td>0.23 (0.0089, 0.6)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>-</td>
+      <td>0.49 (0.11, 0.74)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>-</td>
+      <td>0.65 (0.37, 0.82)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 1</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.29 (0.015, 0.64)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.21 (0.011, 0.55)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.42 (0.063, 0.7)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.54 (0.22, 0.78)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 2</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.4 (0.041, 0.75)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.26 (0.015, 0.63)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.47 (0.1, 0.76)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.59 (0.28, 0.83)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 3</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.54 (0.12, 0.84)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.36 (0.06, 0.72)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.57 (0.19, 0.83)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.69 (0.39, 0.9)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Serotype 4</td>
+      <td>Any age</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.79 (0.44, 0.98)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2–5 years</td>
+      <td>0.52 (0.2, 0.86)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>0.73 (0.37, 0.96)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>0.85 (0.56, 0.99)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Transient-immunity duration</td>
+      <td>Seronegative (τ0)</td>
+      <td>4.5 (1, 9.6)</td>
+      <td>5 (1.1, 9.7)</td>
+      <td>4.1 (0.97, 9.4)</td>
+      <td>4.9 (1.2, 9.6)</td>
+    </tr>
+    <tr>
+      <td>Seropositive (τ1)</td>
+      <td>11 (2.3, 20)</td>
+      <td>12 (2.9, 20)</td>
+      <td>9.5 (1.2, 19)</td>
+      <td>10 (1.3, 20)</td>
+    </tr>
+    <tr>
+      <td rowspan="3" colspan="2">Age-specific hazard multiplier Z(α)</td>
+      <td>2–5 years (baseline)</td>
+      <td>1 (1,1)</td>
+      <td>1 (1, 1)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6–11 years</td>
+      <td>1.2 (0.91, 1.5)</td>
+      <td>1.1 (0.88, 1.4)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12–16 years</td>
+      <td>1.1 (0.79, 1.5)</td>
+      <td>1 (0.76, 1.4)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Infection risk multiplier</td>
+      <td>Seronegative (M0, baseline)</td>
+      <td>1 (1,1)</td>
+      <td>1 (1, 1)</td>
+      <td>1 (1,1)</td>
+      <td>1 (1, 1)</td>
+    </tr>
+    <tr>
+      <td>Seropositive (M1)</td>
+      <td>0.77 (0.43, 0.99)</td>
+      <td>0.61 (0.31, 0.96)</td>
+      <td>0.69 (0.4, 0.97)</td>
+      <td>0.57 (0.33, 0.94)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Trial data
+### Trial data
 
 Figure 3 shows the proportion of participants with virologically detected dengue by trial, age group, trial phase, serotype and disease severity. Both trials show a clear benefit of vaccine across each age group for the active phase (25 months post-first dose), where surveillance could detect both hospitalised and non-hospitalised disease. In the passive phase (next 11 months following active phase), there are considerably fewer cases, owing to its shorter duration and detection of only hospitalised cases. Further, the benefits of vaccination in the passive phase are less than the active, and 2–5-year-old vaccinees show a greatly increased risk of hospitalisation than controls. In both trials, a mix of infecting serotypes among cases was observed.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig3-v3.jpg)
 
-## Model outputs
+### Model outputs
 
 Because we consider both transient immunity and the change in disease risk induced by vaccination, the vaccine’s overall effect can be difficult to interpret using only parameter estimates. We therefore summarise model output using hazard ratios (vaccine/control). Figure 4 shows estimated posterior hazard ratios for symptomatic disease (regardless of hospitalisation) by trial, serostatus and age group over time.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig4-v3.jpg)
+
+**Figure 4.:** Each plot shows posterior hazard ratios (vaccine: control) for each age group at 0, 12, 25 and 36 months (0, 1, 2 or 3 years) of follow-up. Hazard ratios consider symptomatic disease regardless of serotype or hospitalisation status. Grey line indicates a ratio of 1, that is, no difference between the trial arms. Red line is the mean posterior estimate, and pink intervals represent 95% credible intervals of posterior samples. Rows show ratios when not broken down by serostatus (top row), for seronegatives (middle row) and seropositives (bottom row), for CYD14 (left column) and CYD15 (right column).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** As per Figure 4. Hazard ratios consider symptomatic disease regardless of hospitalisation status.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** As per Figure 4. Left and right columns show hazard ratios for non-hospitalised and hospitalised disease, respectively (regardless of serotype). Ratios are almost identical when considering severe and non-severe disease (not shown).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** As per Figure 4. Ratios are almost identical when considering non-severe disease (not shown).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** As per Figure 4. Ratios are almost identical when considering severe disease (not shown).
 
 The vaccine has the greatest benefit for seropositive recipients: hazard ratios remain low throughout the active phase and the first year of passive phase, and mean posterior and 95% credible intervals are below 1 for all ages, indicating consistent benefit. The decrease in hazard ratios over time in each age group reflects the greater benefit to seropositives against hospitalised/severe disease as only this disease outcome is measured in the passive phase.
 
@@ -170,6 +786,28 @@ We estimate the proportions of symptomatic primary, secondary and tertiary/quate
 
 Estimates of transient immunity by age, serostatus and serotype are shown in Figure 5. For every serotype, seronegative transient immunity estimates do not vary for older age groups but are lower for 2–5 year olds. They are lowest for serotype 2 (with negative mean estimates of −11% (−72–46%) for 2–5 year olds) and relatively high for serotypes 3 and 4. For seropositives, while estimates are again higher for serotypes 3 and 4, they vary less by serotype but more by age, with immunity being lower for younger than older children. Our results imply that transient immunity varies by age, independently of serostatus, although more so in seropositives (Figure 5, Table 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-v3.jpg)
+
+**Figure 5.:** Profiles of age-group-specific transient immunity by serostatus for serotypes 1–4. Mean posterior estimates are shown in red, with 95% credible intervals surrounding.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Durations τb (b = 0, 1) of transient immunity by serostatus. We allow seronegative duration (left) to vary between 0 and 10 years and seropositive duration (right) to vary between 0 and 20 years.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Serotypes 1–4 are shown in red, grey, blue and orange, respectively. There is wide variation between countries in their serotype prevalence.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-figsupp3-v3.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** As per Figure 5.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** Age-specific durations of transient immunity by serostatus. modelled as a step function. Mean posterior estimates are shown in red, with 95% credible intervals surrounding. We allow seronegative durations to vary between 0 and 10 years and seropositive durations to vary between 0 and 20 years.
+
 We could not precisely infer durations of transient immunity. Mean posterior estimates of seronegative and seropositive transient immunity duration are 4.5 (1–9.6) and 11 (2.3–20) years, respectively. However, a closer look at parameter posterior distributions (Figure 5—figure supplement 1, top row) is informative: in seropositives, approximately equal weight is given to longer durations of between 5 and 20 years (85% of posterior mass is above 5 years), whereas in seronegatives shorter durations are more likely (modal estimate is approximately 2 years and 62% of posterior mass is below 5 years).
 
 If seropositive transient immunity were zero (or alternatively if the duration of transient immunity in seropositives was very short), then vaccination would only prime immunity and only individuals with pre-existing monotypic immunity would benefit from vaccination. Instead we estimate positive values for transient immunity for each age group and serotype. Further, model fits that fix seropositive transient immunity at zero do not reproduce the trial data. Therefore, for seropositives, to the extent that transient immunity is long-lived, vaccination confers benefit beyond that of priming immunity and consequent reduction of disease risk to that associated with natural tertiary and quaternary infection. Hence individuals with pre-existing multitypic immunity are also predicted to benefit from vaccination, with the caveat that we were not able to test a model in which transient immunity only applied to those with monotypic immunity. Conversely, in seronegatives, any positive benefit that mitigates long-term increase in disease risk is short-lived.
@@ -178,15 +816,87 @@ We find that the age group-specific multiplier of the baseline hazard increases
 
 Estimates of the serotype proportions by country are shown in Figure 5—figure supplement 2, showing substantial heterogeneity between countries in their serotype distributions (e.g. Puerto Rico and Brazil’s cases are almost exclusively comprised of serotypes 1 and 4, respectively).
 
-## Model fits
+### Model fits
 
 Observed Kaplan–Meier curves demonstrate a clear overall benefit of vaccination. Over the combined active and first year passive phase, controls acquire symptomatic disease more than vaccinees in every country and age group. In both trials, vaccine efficacy wanes over time, and the slopes in the Kaplan–Meier curves become more equal (Figure 6). The active phase lasted ~25 months (760 days), after which the slopes of the curves in each trial arm level off because only hospitalisations were detected. The model was fitted to the combined data from CYD14 and CYD15, and reproduces the observed Kaplan–Meier curves well across countries and age groups (Figure 6).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-v3.jpg)
+
+**Figure 6.:** In each plot, vaccine and control survival probabilities are plotted against days post-first dose (vaccine or placebo). Dark lines denote observed curves, dashed lines are the mean posterior estimates, with 95% credible intervals around.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** As per Figure 6, showing fits of model considering any disease severity (left column), non-severe disease (middle column) and severe disease (right column).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** As per Figure 6, showing fits of model considering any disease severity (left column), non-hospitalised disease (middle column) and hospitalised disease (right column).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** As per Figure 6.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** As per Figure 6.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp5-v3.jpg)
+
+**Figure 6—figure supplement 5.:** As per Figure 6.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp6-v3.jpg)
+
+**Figure 6—figure supplement 6.:** As per Figure 6.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp7-v3.jpg)
+
+**Figure 6—figure supplement 7.:** As per Figure 6.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig6-figsupp8-v3.jpg)
+
+**Figure 6—figure supplement 8.:** As per Figure 6.
+
 Observed attack rates varied widely by country, trial arm, trial phase and age group (Figure 7, Figure 7—figure supplements 1 and 2). Attack rates were generally higher in CYD14 than CYD15, and they decrease with age in both arms. Our main model captures this variation well, and the mean predicted attack rates fall within the confidence intervals of the observed attack rates in every age group, country, trial arm and trial phase. Importantly, the mean estimates reproduce the increased hospitalisation among 2–5-year-old vaccinees observed in the CYD14 trial (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-v3.jpg)
+
+**Figure 7.:** Observed and predicted age group-specific attack rates are shown for CYD14 (left column) and CYD15 (right column), for first three years follow-up (active phase and first year hospital phase combined), and for the first year of follow-up only. Blue and red denote observed attack rates for control and vaccine groups, while light blue and pink denote model predictions for control and vaccine groups. Confidence intervals for observed attack rates are calculated using exact binomial confidence intervals, whereas the uncertainty around predicted rates are 95% posterior sample credible intervals.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** As per Figure 7.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** As per Figure 7.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** As per Figure 7. Seronegative (top row) and seropositive (bottom row) observed and predicted attack rates for CYD14 (left column) and CYD15 (right column) for combined active and first year passive follow-up.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp4-v3.jpg)
+
+**Figure 7—figure supplement 4.:** As per Figure 7. Seronegative (top row) and seropositive (bottom row) observed and predicted attack rates for CYD14 (left column) and CYD15 (right column) for first year passive follow-up only.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp5-v3.jpg)
+
+**Figure 7—figure supplement 5.:** As per Figure 7, showing attack rates by age group for CYD14 (left column) and CYD15 (right column). The top row shows attack rates for non-hospitalised disease in the active phase (the majority of case data). Second and third rows show attack rates for hospitalised disease during the active phase (middle row) and first year passive phase (bottom row).
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp6-v3.jpg)
+
+**Figure 7—figure supplement 6.:** As per Figure 7, showing attack rates by age group for CYD14 (left column) and CYD15 (right column). The top row shows attack rates for non-severe disease in the active phase (the majority of case data). Second and third rows show attack rates for severe disease during the active phase (middle row) and first year passive phase (bottom row).
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp7-v3.jpg)
+
+**Figure 7—figure supplement 7.:** As per Figure 7.
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/65131/elife-65131-fig7-figsupp8-v3.jpg)
+
+**Figure 7—figure supplement 8.:** As per Figure 7.
 
 Figure 7—figure supplements 3 and 4 show attack rates outputted from the immunogenicity subset only, where model predictions remain within the confidence intervals of observed attack rates. Attack rates again decrease with age in seropositives but not seronegatives, likely because of immunity to previously encountered serotypes (Figure 7—figure supplement 4). For seronegative vaccinees, increased disease risk in the passive phase is predicted for all age groups in both trials, and not only 2–5 year olds in CYD14. Conversely, predicted seropositive attack rates are lower for vaccinees than controls across both trials. Our estimates well reproduce the data that is not overly sparse and again largely predict the 2017 NS1 data (Sridhar et al., 2018). The observed distribution of seroprevalence by age in the immunogenicity subset is well mirrored in the augmented data (Figure 5—figure supplement 3).
 
-## Severity analysis
+### Severity analysis
 
 Our default interpretation of relative risk parameters Ki,D distinguishes between differences in case detection under active and passive surveillance. However, we can also interpret these parameters to distinguish between non-hospitalised and hospitalised disease (or alternatively between non-severe and severe disease) (see Materials and methods).
 
@@ -198,7 +908,7 @@ Age-, serotype- and serostatus-specific transient immunity estimates are similar
 
 When distinguishing between severe and non-severe disease, we reproduce observed survival curves at trial level for non-severe disease, but fits are less good for severe disease (Figure 6—figure supplement 1). This is due firstly to limited data (non-severe cases outnumber severe cases by 1223 to 58), and secondly because we do not allow transient immunity to vary by disease severity. When we instead consider hospitalisation (Figure 6—figure supplement 2), fits to survival curves are good regardless of hospitalisation status. In both scenarios, model fits to ‘either’ disease severity (e.g. surviving both severe and non-severe disease) closely resemble those of our default interpretation, where disease severity is not considered. Attack rates in each disease category are relatively well fitted, although passive phase attack rates are less well fitted for severe or hospitalised disease (non-hospitalised febrile disease is not detected by passive surveillance) (Figure 7—figure supplements 5 and 6).
 
-## Alternative model variants
+### Alternative model variants
 
 We conducted a sensitivity analysis to examine whether more parsimonious models are sufficient to explain the complex trial data (Appendix 1). Broadly, it is necessary to include explicit age effects to reproduce the age distribution of cases and to include serotype effects to reproduce variation by country. While we could not precisely infer the duration of transient immunity, our analysis indicated that it is short-lived in seronegatives and long-lived in seropositives.
 

@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03wkg3b53 Retinal Neurophysiology Section, National Eye Institute Bethesda United States
-2. https://ror.org/03wkg3b53 Genetic Engineering Core, National Eye Institute Bethesda United States
-3. https://ror.org/03wkg3b53 Immunoregulation Section, National Eye Institute Bethesda United States
-4. https://ror.org/03wkg3b53 Biological Imaging Core, National Eye Institute Bethesda United States
-5. https://ror.org/03wkg3b53 Molecular Mechanisms Section, National Eye Institute Bethesda United States
+1. Retinal Neurophysiology Section, National Eye Institute Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
+2. Genetic Engineering Core, National Eye Institute Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
+3. Immunoregulation Section, National Eye Institute Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
+4. Biological Imaging Core, National Eye Institute Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
+5. Molecular Mechanisms Section, National Eye Institute Bethesda United States ([ROR:03wkg3b53](https://ror.org/03wkg3b53))
 6. iPSC Core, National Heart, Lung, and Blood Institute Bethesda United States
 7. Tiresias Bio Half Moon Bay United States
 
@@ -43,37 +43,131 @@ In this study, we adopted a previously published protocol appropriate for cultur
 
 ## Results
 
-## Differentiation and characterization of human iPSC-derived microglia
+### Differentiation and characterization of human iPSC-derived microglia
 
 We used five distinct human iPSC lines for microglia cell differentiation, including the first-available iPSC line, KYOUDXR0109B, from ATCC; and four other lines NCRM6, MS19-ES-H, ND2-AAVS1-iCAG-tdTomato, and NCRM5-AAVS1-CAG-EGFP, from the National Heart, Lung, and Blood Institute (NHLBI). Our approach to microglia differentiation was informed by our previous work with primary mouse retinal microglia cell culture (Ma et al., 2009) and a variety of established microglia cell differentiation protocols (Muffat et al., 2016; Pandya et al., 2017; Abud et al., 2017; Douvaras et al., 2017; Haenseler et al., 2017; Takata et al., 2017). We opted for the myeloid progenitor/microglia cell floating culture method (van Wilgenburg et al., 2013; Haenseler et al., 2017) for its simplicity, efficiency, and consistency, which enables the generation of a large and uniform population of microglial cells.
 
 The differentiation process involved three key stages: embryoid body (EB) formation, myeloid progenitor cell generation, and microglia cell maturation (Figure 1A–D). Following myeloid differentiation, floating myeloid progenitor cells were harvested and allowed to differentiate further for 2 weeks in 6-well plates/flask under conditions promoting microglial differentiation. We modified this step to include additional differentiation factors in the differentiation medium, including IL34, CSF1, CX3CL1, TGFB1, and TGFB2. We found that these factors promoted microglial morphological ramification and process elongation. Immunohistochemical analysis of the resulting cells showed that among CD34(+) cells, 98.6% were immunopositive for IBA1 (Figure 1E, F), and 98.5% were immunopositive for P2RY12 (Figure 1E, G). Immunostaining with myeloid cell markers CX3CR1, CD68, and CD11b showed positivity in 88%, 99.7%, and 94.3%, respectively, demonstrating the high efficiency of differentiation achieved by this procedure (Figure 1—figure supplement 1). Most of the resulting hiPSC-derived microglia showed spindle-shaped morphologies, with some displaying short ramifications in their processes (Figure 1E), resembling those observed in primary mouse retinal microglia cultures (Ma et al., 2009). Floating myeloid progenitor cell harvest could be performed repeatedly over 3 months following culture establishment, providing a steady and consistent supply for further microglia differentiation and generation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig1-v1.jpg)
+
+**Figure 1.:** (A) Human iPSCs were cultured in a 6-well plate. Scale bar = 200 µm. (B) Embryoid body formation was enabled in AggreWell800 plate at day 8 in culture medium mTeSR1 plus BMP4, VEGF, and SCF. Scale bar = 200 µm. (C) Image of a myeloid precursor cluster following 1 month culture of embryoid bodies in TheraPEAK X-vivo-15 Serum-free Hematopoietic Cell Medium with added M-CSF and IL3. Scale bar = 50 µm. (D) Image of microglial cells in maturation culture for 2 weeks with Dulbecco's Modified Eagle Medium (DMEM)/F12 plus non-essential amino acids, glutamine, IL34, CSF1, TGFb2, and CX3CL1. Scale bar = 50 µm. (E) Immunohistochemical staining for Iba1 and human CD34, CX3CR1, P2RY12, CD11b, and CD68. Scale bar = 100 µm. (F) Cell counts and colocalization analysis of (F) CD34- and Iba1-positive cells and (G) positivity for myeloid cell markers CX3CR1, CD11b, activation marker CD68, and microglia marker P2RY12 in differentiated microglia.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Confocal images showed SPI1 and TREM2 staining. Scale bar = 100 μm. (B) SPI1- and TREM2-positive cells are 99.7% and 99.4%, respectively, in entire DAPI+ cell counts.
+
 A comparative RNAseq analysis between differentiated hiPSC-derived microglia collected at the end of the protocol vs. floating myeloid progenitor cells revealed a significant upregulation of microglia-enriched gene expression following microglial differentiation, including Cx3cr1, P2ry12, P2ry13, Aif1, Trem2, Gpr34, CD53, CTSS, and C3aR1 (Figure 2A–C). Moreover, hiPSC-derived microglia exhibited higher expression of genes associated with inflammation, apoptosis regulation, phagocytosis, lipid metabolism, and immune responses. The floating myeloid progenitor cells showed higher expression of hematopoietic/myeloid cell lineage genes (Figure 2D). Ingenuity Pathway Analysis (IPA) of differentially expressed genes identified IL6, IL1B, and STAT3 as central signaling hubs critical to the regulation of inflammatory responses in microglia (Figure 2E, Figure 2—figure supplement 1, Supplementary file 1). We also compared the gene expression profiles between differentiated hiPSC-derived microglial cells vs. human microglia isolated ex vivo from the fetal and adult brain (Figure 2—figure supplements 2–4 Supplementary files 2 and 3; Abud et al., 2017; Douvaras et al., 2017; Muffat et al., 2016; Böttcher et al., 2019; van der Poel et al., 2019; Eisenberg and Levanon, 2013). The results of the correlation analysis indicated that hiPSC-derived microglial cells demonstrated an expression profile comparable to those in fetal and adult microglia in vivo but were more distinct from those in monocytes and inflammatory monocytes. Thus, our method of obtaining differentiated microglia can reliably and efficiently generate a large population of homogenous functional microglial cells of human origin.
 
-## Human iPSC-derived microglia show inflammation responses and phagocytosis activity
+![Figure 2.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig2-v1.jpg)
+
+**Figure 2.:** (A) Volcano plot showing representative genes that were either upregulated (red) or downregulated (green) in differentiated microglia vs. MPCs. (B) Heat map showing increased expression of microglia-enriched genes in differentiated microglia (Supplementary file 1). (C) Histogram comparing the expression levels of microglia-enriched genes in terms of Fragments Per Kilobase of transcript per Million mapped reads (FPKM). *p < 0.05. (D) Histogram comparing expression levels of myeloid cell lineage genes in human-induced pluripotent stem cell (iPSC)-derived MPC and microglia cells using FPKM. *p < 0.05. (E) Graphic signaling pathway analysis with Ingenuity Pathway Analysis (IPA) highlighting IL6 and IL1B as signaling hubs in differential gene expression patterns (Supplementary file 1) in differentiated microglia vs. MPCs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The human microglia gene panel combined our mouse microglia-enriched genes and human microglia-enriched genes (Abud et al., 2017; Muffat et al., 2016; Douvaras et al., 2017; Böttcher et al., 2019; van der Poel et al., 2019). The total microglia-enriched gene list contains 203 genes (Supplementary file 2), which used to be extracted from the gene profile of human-induced pluripotent stem cell (hiPSC)-MG and downloaded human adult microglia (AMG), fetal microglia (FMG), inflammatory monocyte (IM) and monocytes (M) (GSE 178846, Abud et al., 2017). 188 genes (Supplementary file 2) were obtained from both gene lists. All the gene counts were normalized with four human cells housekeeping genes C1orf43, RAB7A, REEP5, and VCP (Eisenberg and Levanon, 2013). The hierarchical cluster was analyzed by JMP (JMP Statistical Discovery LLC). Results showed that hiPSC-MG is more comparable with AMG and FMG.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The correlation analysis of 188 human microglia-enriched genes (Supplementary file 2) among human-induced pluripotent stem cell (hiPSC)-derived microglia cells (hiPSC-MG), human adult brain microglia (AMG) cells (A), fetal brain microglia (FMG) cells (B), inflammatory monocytes (IM) (C), and monocytes (M) (D) (GSE 178846, Abud et al., 2017), respectively. The images and the analysis results (Prism, GraphPad) showed that expression levels of microglia-enriched genes in hiPSC-MG are more correlated between those in FMG (r = 0.7358, p < 0.0001) and AMG (r = 0.7057, p < 0.0001).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Correlation comparison of entire gene profiles between male (A)/female (B) human-induced pluripotent stem cell (hiPSC)-derived microglial cells and male (A)/female (B) human brain microglia cells (GSE 111972, van der Poel et al., 2019; Supplementary file 3), respectively. The results showed they are significantly correlative (r = 0.8055 (M), r = 0.8326 (F), p < 0.0001).
+
+### Human iPSC-derived microglia show inflammation responses and phagocytosis activity
 
 Microglia play crucial roles in mediating inflammatory responses to stimuli and in phagocytosing pathogens. To investigate these functions further, we stimulated hiPSC-derived microglia with lipopolysaccharide (LPS) and analyzed their responses. Transcriptomic profiling using bulk RNAseq revealed that the primary responses to LPS stimulation involved changes in IL6, IL1B, IL1A, TNFA, and IFNG signaling (Figure 3A, Supplementary file 4), indicating the ability of hiPSC-derived microglia to demonstrate classical activation. This was confirmed through expression analysis using quantitative reverse transcription-PCR (qRT-PCR) and protein multiplex profiling, which showed a 50- to 800-fold increase in the expression of IL6, IL1A, IL1B, TNFA, IL8, CXCL10, and CCL2 mRNA after 6 hr of LPS stimulation (Figure 3B). Similarly, we observed a significant increase in protein expression levels of these cytokines in cell lysate and culture medium (Figure 3C, D). We also treated hiPSC-derived microglia with IFNγ and a combination of IFNγ + LPS (Figure 3—figure supplement 1), and the results demonstrated that the combination of IFNγ + LPS promoted IL1A, IL1B, TNFA, CCL8, and CXCL10 expression. These findings indicate that hiPSC-derived microglia, akin to microglia in vivo, exhibited strong responses to LPS and IFNγ stimulation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ingenuity Pathway Analysis (IPA) showed different gene expression (fold change >twofold, p < 0.05) between LPS-treated and control hiPSC-derived microglial cells, demonstrating activation of core pathways involving IL6, IL1A, IL1B, and IFNG. (B) Assessment of mRNA expression of selected genes for inflammatory cytokines using quantitative reverse transcription-PCR (qRT-PCR; Oligonucleotide primers are provided in Supplementary 4) demonstrated increased expression following LPS (0.1 µg/ml) stimulation for 6 hr (3-6 replicates). These changes corresponded to increases in the protein expression levels of inflammatory cytokines following 24 hr of LPS stimulation as measured with a Multiplex kit (Millipore) in cell lysate (C) and conditioned media (D). The data in (C) and (D) are presented as means ± SEM (3-6 replicates). *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** hiPSC-derived microglial cells were cultured in 6-well plates for 14 days, 20 ng/ml of human IFNG and 0.5 µg/ml of LPS were added to the wells, respectively, or 20 ng/ml of human IFNG and 0.5 µg/ml of LPS were added to the wells together. After 6 hr of incubation, the cells were washed and harvested into a 1.5-ml Eppendorf tube for RNA isolation with a NucleoSpin RNA/Protein Mini kit (Macherey-Nagel, #740933.50). The cDNA was synthesized with PrimeScript 1st strand cDNA Synthesis Kit (Takara, #6110A). Quantitative reverse transcription-PCR (qRT-PCR) was performed using a SYBR green RT-PCR kit (Affymetrix), using the Bio-Rad CFX96 Touch Real-Time PCR Detection System under the following conditions: denaturation at 95°C for 5 min, followed by 40 cycles of 95°C for 10 s, and then 60°C for 45 s. Threshold cycle (CT) values were calculated and expressed as fold-induction determined using the comparative CT (2ΔΔCT) method. Ribosomal protein S13 (RPS13) and GAPDH were used as internal controls. Oligonucleotide primers are provided in Supplementary 4, the samples have 3 replicates. .
+
 Microglia are local immune cells in the CNS, functioning as phagocytes involved in clearing apoptotic or necrotic cells, and cell debris (Green et al., 2016), remodeling neuronal connectivity by engulfing synapses, axonal and myelin debris (Paolicelli et al., 2011), and removing pathogens by direct phagocytosis (Nau et al., 2014). To assess the phagocytic capability of hiPSC-derived microglia, we exposed them to three different types of bioparticles: Escherichia coli bacteria, zymosan, and bovine photoreceptor outer segments (POSs) (Figure 4A–D). The cells altered their morphology in response and rapidly internalized the fluorescent-labeled particles (Figure 4A–D, Figure 4—figure supplements 1 and 2). The engulfed bioparticles were condensed into perinuclear aggregates, likely within lysosomal bodies. They also demonstrated concurrent morphological changes into amoeboid-shaped cells (Figure 4D, E), resembling phenotypes demonstrated by retinal microglia phagocytosing photoreceptors in the context of photoreceptor degenerative pathologies in vivo (Zhao et al., 2015).
 
-## Transition of hiPSC-derived microglial cells to a homeostatic state within the mouse retina following xenotransplantation in vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig4-v1.jpg)
+
+**Figure 4.:** Human iPSC-derived microglia were incubated for 1 hr in pHrodo Red E. coli bioparticles (A), pHrodo Red zymosan bioparticles (B), DiI-labeled bovine photoreceptor outer segments (POSs) (C) and labeled with anti-human P2RY12 antibody (green) and DAPI. Scale bar = 40 µm. (D) A high-magnification view of a POS-containing intracellular vesicle within a labeled microglial cell is shown. Scale bar = 40 µm. (E) An overlay of panels in (D) with side views. Scale bar = 40µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The cells were fixed with 4% paraformaldehyde (PFA) for 20 min and stained with IBA1 and hP2RY12, respectively. The DiI-labeled bovine photoreceptor outer segments can only be engulfed by IBA1- or P2RY12-positive microglia cells. Scale bar = 16 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** After 1 hr of treatment with zymosan, 5 µg/ml concentration did not change the microglia cell morphology, but over 20 µg/ml concentration changed the microglia morphology to an ameboid round shape.
+
+### Transition of hiPSC-derived microglial cells to a homeostatic state within the mouse retina following xenotransplantation in vivo
 
 To assess the ability of hiPSC-derived microglia to serve as microglia donor cell sources for transplantation, we conducted xenotransplantation experiments using humanized immunodeficient Rag2−/−;IL2rg−/−;hCSF1+/+ transgenic mice as recipients as previously employed (Svoboda et al., 2019; Xu et al., 2020b; Chadarevian et al., 2023). Prior to xenotransplantation, recipient transgenic mice were pharmacologically depleted of endogenous retinal microglia by systemic administration of the CSF1R inhibitor PLX-5622 to create a depleted tissue niche for the integration of xenotransplanted microglia (Zhang et al., 2018). Two days following PLX-5622 treatment, adult transgenic mice were transplanted with 5000 hiPSC-derived microglia via injection into the subretinal space (Figure 5A). Tissue analysis at 4 and 8 months post-transplantation revealed that transplanted cells, which were marked by either tdTomato or EGFP expression, had migrated anteriorly from the subretinal space into the neural retina and were distributed across a wide retinal area within the inner and outer retinal layers including the ganglion cell layer (GCL), IPL, and OPL (Figure 5B–D) in retinal loci typically occupied by endogenous microglia. Transplanted cells were immunopositive for IBA1, and human CD11b (hCD11b) (Figure 5H, I), as well as for microglia signature markers hP2RY12 and hTMEM119 (Figure 5D). Interestingly, the transplanted cells within the retina showed a ramified morphology typical of homeostatic microglia and demonstrated a regularly tiled ‘mosaic’ distribution in their soma positions. These integrated cells were juxtaposed alongside residual endogenous murine microglia, which showed similar morphology and distribution as in endogenous conditions. This indicated that transplanted hiPSC-derived microglia responded to similar intraretinal cues and inter-microglia neighbor–neighbor interactions that guide the spatial and morphological organization of retinal microglia in vivo (Figure 5B–G). Similar observations were made for separate experiments involving the transplantation of tdtomato- and EGFP-expressing hiPSC-derived microglia (Figure 5B, C, H, I).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-v1.jpg)
+
+**Figure 5.:** (A) The schematic diagram shows the timeline for transplantation experiments. Two-month-old adult transgenic Rag2−/−;IL2rg−/−;hCSF1+/+ mice were fed a PLX-5622-containing diet for 10 days before switching to standard chow. Two days following the resumption of standard chow, human iPSC-derived microglial cells expressing either tdTomato or EGFP were xenotransplanted into the subretinal space via subretinal injection (5000 cells in 1 µl injection volume). Retinas were harvested for analysis 120 and 240 days following transplantation. (B, C) The retinas isolated from post-transplantation were analyzed in flat-mounted tissue with confocal imaging. Transplanted human-induced pluripotent stem cell (hiPSC)-derived microglia were visualized through their expression of tdtomato (TdT) (B) or EGFP (C), while endogenous mouse microglia were visualized using immunostaining for mouse Tmem119 (mTmem119). Imaging analysis was performed in separate layers of the retina, including the ganglion cell layer (GL), inner plexiform layer (IPL), and outer plexiform layer (OPL). Scale bar = 100 µm. (D) The retinal section showed human iPSC-derived microglial cells integrated into whole retinal layers (top panel) and positively stained with human P2RY12 and TMEM119 microglia signature markers. Scale bar = 100 µm. The microglia cell number in GL, IPL, and OPL of host mouse retina were counted: mouse microglial cells (Iba1+, tdT−) and grafted human microglial cells (Iba1+, tdT+) were shown in (E), (F), and (G), respectively. ***p < 0.001, ****p < 0.0001, 3-6 biological replicates were performed. (H) and (I) showed tdT (H) or EGFP (I) labeled human iPSC-derived microglial cells in the IPL and OPL of the flat-mount retina with human CD11b staining. These results demonstrated that the infiltration of grafted hiPSC-derived microglial cells integrated into the mouse retina is general in nature and not cell line specific. Scale bar = 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Entire section images showed GFAP, GS, RBPMS, and Iba1 staining for astrocytes, Müller cells, ganglion cells, and microglia cells in the retina after 4 months of xenotransplantation. Scale bar = 300 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The high-magnification images showed GFAP, GS, RBPMS, and Iba1 staining for astrocytes, Müller cells, ganglion cells, and microglia cells in the retina after 4 months of transplantation. Scale bar = 100 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Entire section images showed arrestin, calbindin, and PKCα staining for cone photoreceptors, horizontal and some amacrine cells, and bipolar cells in the retina after 4 months of xenotransplantation. Scale bar = 300 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The partial section of high-magnification images showed arrestin, calbindin, and PKCα staining for cone photoreceptors, horizontal and some amacrine cells, and bipolar cells in the retina after 4 months of xenotransplantation. Scale bar = 100 µm.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** The section images showed Red Fluorescence Protein (RFP) and mouse CD11b staining to determine the tdT+ human microglia cells and local mouse microglia cells in the retina after 4 months of xenotransplantation. The results showed that the tdT+ human microglia cells colocalized with RFP staining (Far red) but not mouse CD11b (green) staining. Scale bar = 100 µm.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** The hight magnification images showed RFP and mouse CD11b staining in the retina after 4 months of xenotransplantation. The results showed that the tdT+ human cells colocalized with RFP staining (Far red) but not mouse CD11b (green) staining. The triangle marker indicated that the local mouse microglia cells were only stained with mouse CD11b but not colocalized with tdT+ human microglia cells. Scale bar = 50 µm.
+
 We further evaluated the impact of human iPSC-derived microglia xenotransplantation on the host mouse retinal cells (Figure 5—figure supplements 1–6). We examined the effect of microglia transplantation on endogenous Müller cell morphology and gliosis markers as retinal microglia have been described to interact with Müller glia to regulate overall retinal neuroinflammatory response (Wang et al., 2014). Immunostaining with glial fibrillary acidic protein (GFAP) and glutamine synthetase (GS) antibody (Figure 5—figure supplements 1 and 2) indicated that the transplanted human iPSC-derived microglial cells did not trigger any upregulation of Müller cell gliosis markers or induced morphological changes or reactive proliferation for up to 4 months post-transplantation. Additionally, the laminar organization of the inner and outer retinal layers remained normal and similar to those in control retinas not subjected to transplantation (Figure 5—figure supplements 1–4), indicating that microglia transplantation had no adverse impact on the structural integrity of the retina. Furthermore, immunostaining with the mouse CD11b antibody, which marked the residual population of endogenous mouse microglia showed the spatial juxtaposition of these mouse microglia with transplanted human iPSC-derived microglia in a common mosaic of tiled cells (Figure 5—figure supplements 5 and 6), indicating the ability of transplanted hiPSC-derived microglia to integrate with and exchange signals with the residual endogenous microglial population, but not replaced.
 
-## Transplanted hiPSC-derived microglia respond to induction of RPE cell injury with migration and proliferation
+### Transplanted hiPSC-derived microglia respond to induction of RPE cell injury with migration and proliferation
 
 To monitor the longer-term consequences of microglia xenotransplantation, we extended analysis and examined the location and morphology of transplanted hiPSC-microglia up to 8 months post-transplantation. Analysis of retinal flat mounts confirmed that the tdTomato+ cells remained appropriately located in the GCL, IPL, and OPL, forming a mosaic-like distribution typical of endogenous microglia (Figure 6—figure supplements 1 and 2). These cells maintained expression of hP2RY12 and hTMEM119, markers of homeostatic retinal microglia, indicating their long-term integration within the recipient mouse retina.
 
 To evaluate the function of the transplanted hiPSC-derived microglia in the mouse retina and their ability to respond to injury in vivo, we subjected recipient mice 240 days post-transplantation to sodium iodate (NaIO3)-mediated RPE injury and analyzed retinal tissue 3 and 7 days post-injury (Figure 6A). In a previous study (Ma et al., 2017), we had characterized the responses of endogenous retinal microglia in this injury model; in the few days following injury, microglia within the neural retina migrated into the subretinal space, coming into close proximity to damaged RPE cells. This resulted in a transient decrease in microglia number in the IPL and OPL, which then recovered partially following the proliferation of the remaining microglia to replenish the depleted areas. We found that transplanted hiPSC-derived microglia demonstrated responses similar to endogenous microglia. Three days after NaIO3 injury, there was an increase in tdTomato+, hP2ry12+, hiPSC-derived microglia in the subretinal space, while their number decreased in the IPL and OPL (Figure 6B–D, G), indicating a migration of these cells from the neuroretina to the subretinal space. Some of the remaining tdTomato+ and P2ry12+ cells in the inner retina were positive for the cell-proliferation marker Ki67, indicating active cell division (Figure 6B–D, F). The numbers of Ki67+ tdTomato+ microglia peaked at 3 days post-injury and decreased thereafter (Figure 6B–F). Seven days post-injury, the numbers of tdTomato+ and P2ry12+ human iPSC-derived microglia increased in the IPL and OPL but decreased in the subretinal space (Figure 6E, G); Ki67+ tdTomato+ cell numbers also declined (Figure 6E, F). These findings suggest that once the hiPSC-derived microglia had replenished endogenous numbers in the inner retina, their division ceased. This response mirrors that of the endogenous mouse retinal microglia to NaIO3 injury (Ma et al., 2017).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig6-v1.jpg)
+
+**Figure 6.:** (A) The schematic diagram shows the experiment’s procedure. After 8 months post-transplantation of hiPSC-derived microglia, recipient animals were administered NaIO3 (30 mg/kg body weight, intraperitoneal injection) to induce RPE injury. Retinas were harvested at 3 and 7 days after NaIO3 administration and microglia numbers in the retina and subretinal space will be monitored in retina and RPE-choroid flat mounts. (B) RPE-choroid flat mounts demonstrate an increase of hiPSC-derived microglia (tdTomato+ and P2RY12+) in the subretinal space in response to RPE injury. A subset of subretinal microglia labeled for Ki67 indicates active proliferation. Scale bar = 60 µm. (C) and (D) showed the number of P2RY12+ and tdtomato+ human microglial cells in inner plexiform layer (IPL) (C) and outer plexiform layer (OPL) (D) decreased; some of them showed Ki67+ staining, Scale bar = 60 µm. The cell count results showed in (F) and (G). (E) The retinal flat mount showed the number of P2RY12+ and tdtomato+ human microglial cells in IPL and OPL that were repopulated, and the cells stopped dividing with loss of the Ki67 staining at 7 days after NaIO3 injection. The cell numbers are shown in (F) and (G) (3 biological replicates). Scale bar = 60 µm, ** P<0.01, *** P<0.001, **** P,0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The images showed the tdtomato+ human microglia cells colocalized with hP2RY12 staining in GL, inner plexiform layer (IPL), and outer plexiform layer (OPL) in the mouse retina. Scale bar = 300 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The images showed the tdtomato+ human microglia cells colocalized with hTMEM119 staining in GL, inner plexiform layer (IPL), and outer plexiform layer (OPL) in the mouse retina. Scale bar = 300 µm.
+
 Overall, these results demonstrate that the transplanted human iPSC-derived microglial cells retained a capacity for migration and proliferative responses to injury in a manner observed for endogenous microglia.
 
-## hiPSC-derived microglial cells phagocytize debris or dead photoreceptor cells after NaIO3-induced RPE cell injury
+### hiPSC-derived microglial cells phagocytize debris or dead photoreceptor cells after NaIO3-induced RPE cell injury
 
 Phagocytosis, a critical function of microglia, is essential both during development and in the resolution of pathological processes. Retinal microglia adaptively phagocytose and clear apoptotic photoreceptors in the rd10 mouse model of photoreceptor degeneration (Silverman et al., 2019). We found here that 3 days following NaIO3-induced RPE cell injury, tdTomato+ transplanted hiPSC-derived microglia migrated not only to the subretinal space but also into the photoreceptor layer (Figure 7A–C), coincident with the time of photoreceptor degeneration, when photoreceptor morphology becomes disrupted and photoreceptor density decreases (Figure 7A). Within the photoreceptor layer, hiPSC-derived microglia were observed to phagocytose photoreceptors as evidenced by the accumulation of intracellular autofluorescent material in their soma (Figure 7A, B, D), and their transformation into larger amoeboid cells (Figure 7B, yellow arrowhead) containing arrestin-immunopositive photoreceptor-derived debris. mRNA analysis for human-specific transcripts also indicated that transplanted hiPSC-derived microglia upregulated inflammatory cytokine expression, increased phagocytosis, and decreased expression of microglia homeostatic genes and neurotrophic factors (Figure 7—figure supplement 1; Supplementary file 5). Taken together, these findings further demonstrate that the xenografted human iPSC-derived microglial cells generate functional responses to in vivo injury that closely resemble those of endogenous homeostatic retinal microglia.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig7-v1.jpg)
+
+**Figure 7.:** (A) Dyshomeostatic human microglial cells (tdtomato+) accumulated in the photoreceptor cell layer after 3 days of sodium iodate (NaIO3)-induced RPE cell injury compared with no NaIO3 administration. The photoreceptor cells stained with cone arrestin (green) and autofluorescence showed in magenta. Scale bar = 60 µm. (B) High-magnificent images and the side view showed human microglial cells (red) co-labeled with photoreceptor cells arrestin staining (green) after 3 days of NaIO3 injury. The yellow arrowhead showed the colocalized tdT+ human microglia cell and arrestin+ cone photoreceptor cell. Scale bar = 40 µm. (C) The number of tdtomato+ human microglial cells in the photoreceptor layer. (D) The mean gray autofluorescence value in each human microglia cell. ****p < 0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The gene coding sequences were compared between humans and mice, a human-specific sequence was chose to make the oligos (Supplementary file 5), and ran a quantitative reverse transcription-PCR (qRT-PCR) on 8-month hiPSC-derived microglia cells grafted retinas with/without sodium iodate (NaIO3)-treated retinas. The results revealed that hiPSC-derived microglia cells expressed more inflammatory factors and phagocytosis genes and promoted cell migration but decreased microglia cell signature genes and neurotrophic factors in NaIO3-treated retina (3 biological replicates in each group).
 
 ## Discussion
 
@@ -85,7 +179,7 @@ Microglial cells are instrumental in the development and progression of numerous
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/90695/elife-90695-fig9-v1.jpg)
 
-**Figure 9.:** Fritsche et al., 2016) expressed in retinal microglia cells.The microglia gene expression data are from microarray data previously published (Ma et al., 2013). The gene list is in Supplementary file 7.
+**Figure 9.:** The microglia gene expression data are from microarray data previously published (Ma et al., 2013). The gene list is in Supplementary file 7.
 
 Human iPSCs offer promising prospects for many retinal research fields (Zhong et al., 2014; Leach et al., 2016; Tanaka et al., 2016). For over a decade, macrophage/microglial cells have been differentiated using human iPSC (Karlsson et al., 2008; Pocock and Piers, 2018). An abundance of hiPSC-derived microglial cells, with defined genomic background and easy manipulation of hiPSC, offer substantial benefits in various research areas.
 
@@ -101,17 +195,881 @@ In conclusion, hiPSCs can be differentiated into microglial cells through a simp
 
 ## Materials and methods
 
-## Experimental animals and PLX-5622 treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C;129S4-Rag2tm1.1Flv Csf1tm1(CSF1)Flv Il2rgtm1.1Flv/J</td>
+      <td>PubMed:21791433</td>
+      <td>MGI:J:177073</td>
+      <td>RRID:IMSR_JAX:017708</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>KYOUDXR0109B</td>
+      <td>ATCC</td>
+      <td>ACS-1023</td>
+      <td>Human-induced pluripotent stem cells (iPSCs)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>NCRM6</td>
+      <td>NHLBI</td>
+      <td>NCRM6 (female) iPSC line</td>
+      <td>From CD34+ cells, Episomal vectors</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>MS19-ES-H</td>
+      <td>NHLBI</td>
+      <td>MS19-ES-H (female) iPSC line</td>
+      <td>From PBMS cells, Cytotune Sendai Virus kit</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>NCRM5-AAVS1-CAG-EGFP</td>
+      <td>NHLBI</td>
+      <td>NCRM5-AAVS1-CAG-EGFP (clone 5)</td>
+      <td>From CD34+ cells, NCRM5 (male) reporter iPSC line with CAG-EGFP targeted mono-allelically at AAVS1 safe harbor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>ND2-AAVS1-iCAG-tdTomato</td>
+      <td>NHLBI</td>
+      <td>ND2-AAVS1-iCAG-tdTomato (clone 1)</td>
+      <td>From fibroblast cells, ND2 (male) reporter iPSC line with insulated CAG-tdTomato targeted mono-allelically at AAVS1 safe harbor</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Iba1 (rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>Cat. #: 019-19741, RRID:AB_839504</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human TMEM119 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: HPA051870, RRID:AB_2681645</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD68 (mouse monoclonal)</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: MAB20401</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD45 (mouse monoclonal)</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: FAB1430R</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD11b (mouse monoclonal)</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: FAB1699R</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CX3CR1 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 61-6099-42</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human HLA (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 11-9983-42</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD11b (rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: MCA711G</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 13-0300, RRID:AB_2532994</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse TMEM119 (guinea pig polyclonal)</td>
+      <td>Synaptic systems</td>
+      <td>Cat. #: 400 004, RRID:AB_2832239</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD68 (rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: MCA1957, RRID:AB_322219</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD34 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat. #: 14-0341</td>
+      <td>IHC (1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PU.1 (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: MA5-15064</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Trem2 (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 702886</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD45 (rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: MCA1388, RRID:AB_321729</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti glutamine synthetase (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #: MAB302, RRID:AB_2110656</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RBPMS (guinea Pig polyclonal Ab)</td>
+      <td>Phosphosolutions</td>
+      <td>Cat. #: 1832-RBPMS</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cone arrestin (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #: AB15282, RRID:AB_1163387</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-calbindin (rabbit polyclonal)</td>
+      <td>Swant</td>
+      <td>Cat. #: CB-38a</td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PKCa (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P4334, RRID:AB_477345</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>RockLand</td>
+      <td>Cat. #: 600-401-379-RTU</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67-660 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat. #: 50-5698-82, RRID:AB_2574235</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-P2RY12 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PA5-77671, RRID:AB_2736305</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-P2RY12 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: HPA014518, RRID:AB_2669027</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A27034, RRID:AB_2536097</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A11011, RRID:AB_143157</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A32733, RRID:AB_2633282</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A28175, RRID:AB_2536161</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-11004, RRID:AB_141371</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-21235, RRID:AB_141693</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-21208, RRID:AB_141709</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG Alexa Fluor 594</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-21209, RRID:AB_2535795</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG Alexa Fluor 650</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: SA5-10029, RRID:AB_2556609</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti CD11b, Alexa Fluor 488</td>
+      <td>eBioscience</td>
+      <td>Cat. #: 53-0112-82, RRID:AB_469901</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human M-CSF</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: PHC9501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IL3</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: 203-IL-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human IL-34</td>
+      <td>Peprotech</td>
+      <td>Cat. #: 200–34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human CX3CL1</td>
+      <td>Peprotech</td>
+      <td>Cat. #: 300–31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human TGFb1</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: 7666-MB-005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human TGFb2</td>
+      <td>R&amp;D</td>
+      <td>Cat. #: 7346-B2-005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human BMP-4</td>
+      <td>GIBCO</td>
+      <td>Cat. #: PHC9534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human SCF</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat. #: 130096692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human VEGF</td>
+      <td>GIBCO</td>
+      <td>Cat. #: PHC9394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PLX5622</td>
+      <td>Plexxikon</td>
+      <td>PLX5622 was provided by Plexxikon Inc and formulated in AIN-76A standard chow by Research Diets Inc</td>
+      <td>1200 mg/kg in chow</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NaIO3</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: S4007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BSA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: A2153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FBS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A3160702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ketamine</td>
+      <td>Anased</td>
+      <td>Cat. #: NDC13985-584-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Xylazine</td>
+      <td>Anased</td>
+      <td>Cat. #: NDC59399-110-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Topical tropicamide</td>
+      <td>Alcon</td>
+      <td>Cat. # 215340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phenylephrine</td>
+      <td>Alcon</td>
+      <td>Cat. l# 215664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>0.5% Proparacaine HCL</td>
+      <td>Sandoz</td>
+      <td>Cat. #: 101571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Surcrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: S7903-5KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>OCT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 23-730-571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Fluorescein AK-FLUOR</td>
+      <td>Akorn</td>
+      <td>Cat. #: 17478-253-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: T5648-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>HBSS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: H8264-1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-(+)-Cysteine hydrochloride monohydrate</td>
+      <td>Fisher</td>
+      <td>Cat. #: C562-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Papain, lyophilized</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat. #: LS003119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DNAse I</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat. #: LS006333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Superoxide dismutase</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat. #: LS003540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C1345-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>(+)-α-Tocopherol acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: T-1157-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Gentamicin solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: G1397-10ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D-(+)-Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: G7021-100g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Antipain dihydrochloride</td>
+      <td>Roche</td>
+      <td>Cat. #: 11004646001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>HEPES</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 15630080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>EDTA</td>
+      <td>KD medical</td>
+      <td>Cat. #: RGC-3130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>RNAlater solution</td>
+      <td>Ambion</td>
+      <td>Cat. #: AM7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: X100100ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tween 20</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P1379-100ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Paraformadehyde</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. #: 50-259-97</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Donkey serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: D9663-10ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Goat serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: G9023-10ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bloking Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 11096176001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit, TMR red</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 12156792910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ib4 Alexa Fluor 568</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: I21412</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ib4 Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: I32450</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: D9542</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mounting medium without DAPI</td>
+      <td>Vector</td>
+      <td>Cat. #: H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mounting medium with DAPI</td>
+      <td>Vector</td>
+      <td>Cat. #: H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. #: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rnase free Dnase set</td>
+      <td>QIAGEN</td>
+      <td>Cat. #: 79254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>First strand cDNA synthesis</td>
+      <td>Takara</td>
+      <td>Cat. #: 6110A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MessageBooster cDNA synthesis kit</td>
+      <td>Epicentre</td>
+      <td>Cat. #: MB060110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 4385617</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LiDirect Lightening genotyping kit</td>
+      <td>LifeSci</td>
+      <td>Cat. #: M0015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience Flow Cytometry Staining Buffer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 00-4222-57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>X-VIVO-15 medium</td>
+      <td>Lonza</td>
+      <td>Cat. #: BEBP02-061Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DMEM:F12 medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 11330057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mTeSR1</td>
+      <td>Stemcell technologies</td>
+      <td>Cat. #: 85850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>N2 supplement</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 17502048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Non-essential Amino Acids (NEAA)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GlutaMax Supplement</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Geltrex</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A1413301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrypLE Express</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 12605010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rho-kinase inhibitor Y-27632</td>
+      <td>abcam</td>
+      <td>Cat. #: ab143784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mFreSR</td>
+      <td>Stemcell technologies</td>
+      <td>Cat. # 05854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Stem Cell Dissociation Reagent</td>
+      <td>ATCC</td>
+      <td>Cat, #: ACS-3010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Stem Cell Freezing Media</td>
+      <td>ATCC</td>
+      <td>Cat. #: ACS-3020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pHrodo Red E. coli BioParticles</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: P35361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pHrodo Red Zymosan Bioparticles</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: P35364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bovine rod outer segment</td>
+      <td>Invision Bioresources</td>
+      <td>Cat. #: 98740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant DiI Cell-Labeling Solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: V22885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipopolysaccharides (LPS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: L2630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RIPA lysis buffer</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: R0278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>proteinase inhibitor mixture</td>
+      <td>Calbiochem</td>
+      <td>Cat. #: 539132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Milliplex bead assay kit</td>
+      <td>Millipore</td>
+      <td>Cat. #: MCYTOMAG-70K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AggreWellsTM800</td>
+      <td>Stemcell technologies</td>
+      <td>Cat. #: 34825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism7</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 7</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>IPA</td>
+      <td>QIAGEN</td>
+      <td>RRID:SCR_008653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>JMP</td>
+      <td>JMP</td>
+      <td>RRID:SCR_014242</td>
+      <td>Version 12</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental animals and PLX-5622 treatment
 
 In vivo experiments were conducted according to protocols (NEI-698) approved by the Institutional Animal Care and Use Committee (National Eye Institute Animal Care and Use Committee) and adhered to the Association for Research in Vision and Ophthalmology (ARVO) statement on animal use in ophthalmic and vision research. Rag2−/−;IL2rg−/−;hCSF1+/+ transgenic mice were obtained from Jackson Laboratories (Stock #17708). Animals were housed in a National Institutes of Health (NIH) animal facility under a 12-hr light/dark cycle and fed standard chow. Genotype analysis by sequencing revealed that the rd8 mutation was absent in the Crb1 gene. To deplete retinal microglia, 2-month-old experimental animals were administered a diet containing PLX-5622 (Plexxikon, at 1200 parts per million), a potent and selective inhibitor of the CSF1R previously demonstrated to deplete the majority of microglia in the mouse brain (Dagher et al., 2015) and retina (Zhang et al., 2018). Animals were maintained continuously on the PLX-5622 diet for 10 days and then switched back to standard chow.
 
-## Human iPSC culture
+### Human iPSC culture
 
 Five human iPSC lines were used in this study. The KYOUDXR0109B hiPSC line was generated in Yamanaka Lab from fibroblasts isolated from a healthy female donor and reprogrammed by the expression of OCT4, SOX2, KLF4, and MYC using retroviral transduction. Cells are tested for postfreeze viability and growth, sterility (including mycoplasma), identity by short-tandem repeat (STR) analysis and karyotype by G-banding. Each lot is tested for pluripotency using flow cytometry for the expression of the pluripotent markers (KYOUDXR0109B Human Induced Pluripotent Stem (IPS) Cells [201B7] (ATCC ACS1023)). The line of NCRM5-AAVS1-CAG-EGFP (clone 5), ND2-AAVS1-iCAG-tdTomato (clone 1), NCRM6, and MS19-ES-H were obtained from the NHLBI iPSC Core Facility of National Heart, Lung and Blood Institute (NHLBI). NCRM5-AAVS1-CAG-EGFP is an EGFP-expressing reporter iPSC line with CAG-EGFP targeted mono-allelically at the AAVS1 safe harbor locus in NCRM5 iPSCs. These iPSCs were reprogrammed from CD34+ peripheral blood mononuclear cells (PBMCs) from a healthy male donor and the cell line was authenticated (Luo et al., 2014). ND2-AAVS1-iCAG-tdTomato is a tdTomato-expressing reporter iPSC line with insulated CAG-tdTomato targeted mono-allelically at the AAVS1 safe harbor locus in ND2 iPSCs. These ND2-AAVS1-iCAG-tdTomato (clone1) cell line was reprogrammed using healthy male fibroblast cells and was authenticated by STR profiling performed by WiCell Cytogenetics lab using a Powerplex 16 System (Promega) and genomic DNA extracted from the iPSCs with DNeasy Blood and Tissue Kit (QIAGEN) (Patterson et al., 2020). Microglia differentiated from these two reporter lines were used for the xenotransplantation experiments. The MS19-ES-H line was reprogrammed from PBMCs from a healthy female donor with a Cytotune Sendai Virus kit (Thermo Fisher). The STR profiling was performed by WiCell Cytogenetics lab using a Powerplex 16 System (Promega) and genomic DNA extracted from the iPSCs with DNeasy Blood and Tissue Kit (QIAGEN) (Patterson et al., 2019). NCRM6 iPSC line was reprogrammed from CD34+ PBMCs from a healthy female donor with episomal iPSC reprogramming vectors (Thermo Fisher). This cell line was authenticated by Cell Line Genetics for STR service using the above same method. All hiPSC lines used in this study were determined by mycoplasma with MycoAlert (Lonza’s MycoAlert Plus kit) and excluded mycoplasma contamination.
 
 Cells were cultured on Geltrex-coated (0.2 mg/ml, Gibco, #A1413302) 6-well plates using 1× mTeSRTM-1 medium. Passaging was performed following dissociation with TrypLE Express enzymatic digestion (Gibco by Life Technologies). Upon initial plating, cells were cultured in medium containing 3 µM Rho-kinase inhibitor (Y-27632, Abcam). The medium was completely refreshed every day. Cells reaching 70% confluence were either passaged or cryopreserved in Stem Cell Freezing Media (mFreSR, StemCells, Catalog # 05854).
 
-## Myeloid progenitor cell differentiation and microglial cell maturation
+### Myeloid progenitor cell differentiation and microglial cell maturation
 
 The protocol for the differentiation of hiPSC cells to myeloid progenitors and then to microglia were adapted and modified from those described previously by the Cowley laboratory (van Wilgenburg et al., 2013; Haenseler et al., 2017). The first step of the protocol to enable EB formation employed the Spin-EBs formation method performed in AggreWellsTM800 microwell culture plates (Stemcell Technologies, Catalog # 34825). Briefly, 1 ml of mTeSRTM-1 spin-EB medium was added into each culture well and centrifuged at 3000 × g for 2 min. Subsequently, 4 × 106 iPSCs in 1 ml of medium were added to the well of spin-EB plate and then centrifuged at 800 rpm for 3 min. The plate was incubated at 37°C, 5% CO2 for 4 days, then 1 ml medium was replaced in a drop-wise manner every day for the next 4 days with an EB medium: mTeSR1 medium (STEMCELL Technologies) containing 50 ng/ml BMP-4 (Gibco- PHC9534), 20 ng/ml human stem cell factor (SCF, Miltenyi Biotec), and 50 ng/ml vascular endothelial growth factor (hVEGF, Gibco- PHC9394).
 
@@ -119,36 +1077,36 @@ In the second step of myeloid progenitor differentiation, the resulting EBs were
 
 In the third step of microglia differentiation, the non-adherent floating cell layer consisting of differentiated myeloid progenitor cells was harvested from the supernatant and transferred into the 6-well plate and allowed to settle and adhere overnight. Two-thirds of the medium volume was removed and replaced with a microglia cell differentiation medium: DMEM/F12 medium (Gibco, #11330) containing 50 ng/ml M-CSF (Invitrogen), 100 ng/ml IL-34 (Peprotech), 10 ng/ml TGFb1 and 2–5 ng/ml TGFb2 (both from R&D Systems), 20 ng/ml CX3CL1 (Peprotech), 1× N2 supplement and 2 mM Glutamax supplement. The culture was maintained for 2 weeks after which the differentiated iPSC-derived microglia were harvested for analysis or for cell transplantation.
 
-## Phagocytosis assay
+### Phagocytosis assay
 
 To assess microglia phagocytosis in vitro, the following bioparticles were employed as targets: (1) pHrodo Red E. coli BioParticles Conjugate for Phagocytosis (Thermo Fisher Scientific, Cat#P35361); (2) pHrodo Red Zymosan Bioparticles Conjugate for Phagocytosis (Thermo Fisher Scientific, Cat#P35364); (3) bovine rod POSs (Invision Bioresources, Cat#98740). Bovine POS was diluted in serum-free DMEM/F12 (1:1; Gibco) to a concentration of 106 segments/ml and fluorescently labeled with the lipophilic dye DiI (Vybrant Cell-Labeling Solutions; Invitrogen) according to the manufacturer’s instructions. Each phagocytosis assay employed 1 × 105 POSs and 2 mg/ml pHrodo Red E. coli membrane/Zymosan BioParticles.
 
 For the assay, harvested floating myeloid cells were transferred into 4-well chamber slides (Thermo Fisher). For phagocytosis assessment of myeloid cells, the cells were cultured for 1 day and challenged with bioparticles. To assess iPSC-derived microglia, the cells were cultured in a microglia cell differentiation medium for 2 weeks and then challenged. In the assay, bioparticles were added to the 100 µl serum-free DMEM/F12 medium in the slide chamber, incubated for 1 hr at 37°C, washed three times with phosphate-buffered saline (PBS), and then fixed in 4% paraformaldehyde (PFA) for 20 min. Fixed cells were immunostained with antibodies to IBA1 and P2RY12 and counterstained with DAPI. Stained cells were imaged with an Olympus 1000 confocal microscope, and image analysis was conducted using ImageJ software (NIH).
 
-## mRNA and protein analysis following LPS challenge in vitro
+### mRNA and protein analysis following LPS challenge in vitro
 
 Differentiated hiPSC-derived microglia cultured in 6-well plates were stimulated with LPS at 100 ng/ml for 6 and 24 hr. Microglia stimulated for 6 hr were collected in RNAlater solution (Thermo Fisher) and stored at −80°C for further qRT-PCR analysis. Microglia stimulated for 24 hr were collected for protein quantification. After the medium was collected, the cells in the well were washed with 1× PBS, and then 200 µl of RIPA lysis buffer with proteinase inhibitor cocktail (Calbiochem) was added; the cells were removed by scraping, collected into 1.5 ml Eppendorf tube, and then homogenized with sonication (Sonicator 125 Watts, Qsonica) at 4°C. After sonication and centrifugation, total protein concentration was measured (BCA protein assay kit; Pierce). Levels of individual cytokines were determined using a Milliplex bead assay kit (Milliplex MAP human cytokine/chemokine magnetic bead panel, #MCYTOMAG-70K; Millipore) and involving the Luminex MAPIX system with data analysis using xPONENT 4.2 software (Luminex). The cytokines analyzed included IL1A, IL1B, IL6, IL8, TNFa, CXCL10, CCL2, CCL3, CCL4, and IL10.
 
-## mRNA expression analysis by quantitative RT-PCR
+### mRNA expression analysis by quantitative RT-PCR
 
 mRNA expression was quantitated using qRT-PCR. Harvested cells were lysed by trituration and homogenized using QIAshredder spin columns (QIAGEN). Total RNA was isolated using the RNeasy Mini kit (QIAGEN) according to the manufacturer’s specifications. First-strand cDNA synthesis from mRNA was performed using qScript cDNA SuperMix (Quanta Biosciences) using oligo-dT as primer. qRT-PCR was performed using an SYBR green RT-PCR kit (Affymetrix), using the Bio-Rad CFX96 Touch Real-Time PCR Detection System under the following conditions: denaturation at 95°C for 5 min, followed by 40 cycles of 95°C for 10 s, and then 60°C for 45 s. Threshold cycle (CT) values were calculated and expressed as fold-induction determined using the comparative CT (2ΔΔCT) method. Ribosomal protein S13 (RPS13) and GAPDH were used as internal controls. Oligonucleotide primers are provided in Supplementary file 4.
 
-## Transplantation of hiPSC-derived microglia by subretinal injection
+### Transplantation of hiPSC-derived microglia by subretinal injection
 
 Differentiated hiPSC-derived microglia grown in flasks were first washed in 1× PBS before being removed by scraping and collected into a 50-ml tube in 5 ml PBS. Cell numbers were counted using a cell counter (Countess 3, Thermo Fisher). Microglia were collected by centrifugation (5 min at 4°C, 200 × g) and the resulting cell pellet resuspended in 1× PBS at a concentration of 5000 cells/µl for in vivo transplantation via subretinal injection. Experimental animals were given general anesthesia (ketamine 90 mg/kg and xylazine 8 mg/kg) and additional topical anesthesia (0.5% Proparacaine HCL, Sandoz) applied to the injected eye. For the injection, the temporal sclera was exposed by a conjunctival cut-down and a scleral incision made 0.5 mm behind the limbus using 32 G needle to access the subretinal space. The tip of a blunt 32 G needle attached to a Hamilton micro-syringe was introduced through the incision at an angle 5 degrees tangent to the globe and advanced 0.5–1 mm into the subretinal space under a dissecting microscope. Microglial cells (5000 cells in 1 µl PBS) were slowly injected from the micro-syringe into the subretinal space using an aseptic technique. Post-procedure, treated eyes were carefully inspected for signs of bleeding or distention and intraocular pressure was monitored using a tonometer (iCare TONOLAB, Finland). In the event that intraocular pressure remained elevated (>20 mmHg) and/or the globe appeared distended, a vitreous tap was performed using a 33 G needle to reduce intraocular pressure. In the unlikely event that excessive bleeding is observed, the animal will be examined by a veterinarian or euthanized immediately.
 
-## Immunohistochemical analyses
+### Immunohistochemical analyses
 
 For immunohistochemical analysis of microglia in vitro, microglia were differentiated in 4-well chambered slides, fixed in 4% PFA for 20 min and processed for immunostaining. For in vivo analyses, recipient animals were euthanized by CO2 inhalation, and the eyes were enucleated. Enucleated eyes were dissected to form posterior segment eyecups and fixed in 4% PFA in phosphate buffer (PB) for 2 hr at 4°C. Eyecups were either cryosectioned (Leica CM3050S) or further dissected to form retinal flat mounts. Flat-mounted retinas were blocked for 1 hr in a blocking buffer containing 10% normal donkey serum and 1% Triton X-100 in PBS at room temperature. Primary antibodies included IBA1 (1:500, Wako, #019-19741), anti-mouse Tmem119 (1:500, Synaptic Systems, #400 004), anti-human TMEM119 (1:100, Sigma, #HPA051870), anti-mouse Cd68 (1:200, Bio-Rad, #MCA1957), anti-human CD68 (1:100, R&D, #MAB20401), anti-mouse Cd45 (1:100, Bio-Rad, #MCA1388), anti-human CD45 (1:100, R&D, #FAB1430R), cone arrestin (1:200, Millipore, #AB15282), Ki67 (1:30, eBioscience, #50-5698-82), anti-P2RY12 (1:100, Thermo Fisher, #PA5-77671 and Sigma, #HPA014518), CD34 (1:50, eBioscience, #14–0341), hCD11b (1:100, R&D, #FAB1699R), mCD11b (Bio-Rad, Cat#: MCA711G, 1:100), CX3CR1 (1:100, Invitrogen, #61-6099-42), hHLA (Invitrogen, #11-9983-42), SPI1 (Invitrogen, #MA5-15064), TREM2 (1:100, Invitrogen, #702886), glutamine synthetase (1:200, Millipore, #MAB302), PKCa (1:200, Sigma-Aldrich, #p4334), GFAP (1:200, Invitrogen, #13-0300), RBPMS (1:100, Phosphosolutions, 1832-RBPMS), Calbindin (1:5000, Swant, CB-38a), and anti-RFP (1:200, RockLand, 600-401-379-RTU). Primary antibodies were diluted in blocking buffer and incubated at 4°C overnight for retinal sections and at room temperature overnight on a shaker for retinal flat mounts. Experiments in which primary antibodies were omitted served as negative controls. After washing in 1× PBST (0.2% Tween-20 in PBS), retinal samples were incubated for 2 hr at room temperature with secondary antibodies (AlexaFluor 488-, 568-, or 647-conjugated anti-rabbit, mouse, rat, goat, and guinea pig IgG) and DAPI (1:500; Sigma-Aldrich) to label cell nuclei. Isolectin B4 (IB4), conjugated to AlexaFluor 568/647 (1:100, Life Technologies), was used to label activated microglia and retinal vessels. Stained retinal samples were imaged with confocal microscopy (Olympus FluoView 1000, or Zeiss LSM 880, or Nikon A1R). For analysis at high magnification, multiplane z-series were collected using 20 or 40 objectives; Confocal image stacks were viewed and analyzed with FV100 Viewer Software, NIS-Element Analysis and ImageJ (NIH).
 
-## RNAseq analysis
+### RNAseq analysis
 
 For whole transcriptome analysis, cultured myeloid progenitor cells and differentiated microglial cells with and without 0.1 µg/ml LPS treatment were harvested in the flasks and 6-well plates, respectively. After harvesting, all samples stored frozen in RNAlater (Roche) solution before RNA extraction using the QIAGEN RNA Mini Kit. RNA quality and quantity were evaluated using Bioanalyzer 2100 with the RNA 6000 Nano Kit (Agilent Technologies). The preparation of RNA library and transcriptome sequencing was performed using an external vendor (Novogene, Sacramento, CA). Genes with adjusted p-value <0.05 and log2FC (Fold Change) >1 were considered differentially expressed. IPA (QIAGEN) was employed for canonical pathway and graphical pathway analysis. The microglia gene list was constructed from our previous microarray data from retinal microglial cells and published data (Ma et al., 2013; Bennett et al., 2016). The heat map, volcano, and histogram plot were performed using Prism 9.5.1 (GraphPad).
 
-## NaIO3-induced model of RPE cell injury
+### NaIO3-induced model of RPE cell injury
 
 Recipient mice 8 months following xenotransplantation were administered a single dose of NaIO3 (Honeywell Research Chemicals) at a dose of 30 mg/kg body weight via intraperitoneal injection. Animals were euthanized 3 and 7 days after NaIO3 injection, and their retinas were harvested and subjected to histological and molecular analysis.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 All data in the graphical panel represent mean ± standard error. When only two independent groups were compared, signiﬁcance was determined by a two-tailed unpaired t-test with Welch’s correction. When three or more groups were compared, one-way ANOVA with the Bonferroni post hoc test or two-way ANOVA was used. A p-value <0.05 was considered signiﬁcant. The analyses were done in GraphPad Prism v.5. All experiments were independently performed at least three experimental replicates to confirm consistency in observations across replicates.

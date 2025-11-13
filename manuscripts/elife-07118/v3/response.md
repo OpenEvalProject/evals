@@ -96,11 +96,9 @@ We thank the reviewer for this comment. Indeed, we do not know the stoichiometry
 
 4) In case TolA(sol) does indeed not interact with PBP1B, using this protein would be a good control for the specificity of the effect on PBP1B activity observed with full-length TolA (Figure 5A).
 
-We have now done this control showing that, indeed, TolA(sol) has no effect on PBP1B activity (see Author response image 3). We also performed a reaction with a large excess of TolA(sol) and CpoB together (both at 40 µM) and saw no effect (not shown).10.7554/eLife.07118.029Author response image 3.> Contineous GTase assay with dansyl-lipid II and 1 µM PBP1B with 3 µM TolA-his or TolA(sol) at 0.065% Triton, 30°C.DOI: http://dx.doi.org/10.7554/eLife.07118.029
+We have now done this control showing that, indeed, TolA(sol) has no effect on PBP1B activity (see Author response image 3). We also performed a reaction with a large excess of TolA(sol) and CpoB together (both at 40 µM) and saw no effect (not shown).10.7554/eLife.07118.029Author response image 3.> Contineous GTase assay with dansyl-lipid II and 1 µM PBP1B with 3 µM TolA-his or TolA(sol) at 0.065% Triton, 30°C.
 
 > Contineous GTase assay with dansyl-lipid II and 1 µM PBP1B with 3 µM TolA-his or TolA(sol) at 0.065% Triton, 30°C.
-
-DOI: http://dx.doi.org/10.7554/eLife.07118.029
 
 5) I wonder how reliable the kinetic rates in Figure 6—figure supplement 1 are. They appear to vary significantly between the different graphs. Moreover, the values given appear to be based on the bottom graph in which there was apparently some disturbance during the first 400 sec of the measurement.
 

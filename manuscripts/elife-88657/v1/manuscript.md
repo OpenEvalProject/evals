@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0420db125 Lulu and Anthony Wang Laboratory of Neural Circuits and Behavior, The Rockefeller University New York United States
+1. Lulu and Anthony Wang Laboratory of Neural Circuits and Behavior, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
 
 † Corresponding author
 
 ## Abstract
 
-Foraging animals optimize feeding decisions by adjusting both common and rare behavioral patterns. Here, we characterize the relationship between an animal’s arousal state and a rare decision to leave a patch of bacterial food. Using long-term tracking and behavioral state classification, we find that food leaving decisions in Caenorhabditis elegans are coupled to arousal states across multiple timescales. Leaving emerges probabilistically over minutes from the high arousal roaming state, but is suppressed during the low arousal dwelling state. Immediately before leaving, animals have a brief acceleration in speed that appears as a characteristic signature of this behavioral motif. Neuromodulatory mutants and optogenetic manipulations that increase roaming have a coupled increase in leaving rates, and similarly acute manipulations that inhibit feeding induce both roaming and leaving. By contrast, inactivating a set of chemosensory neurons that depend on the cGMP-gated transduction channel TAX-4 uncouples roaming and leaving dynamics. In addition, tax-4- expressing sensory neurons promote lawn-leaving behaviors that are elicited by feeding inhibition. Our results indicate that sensory neurons responsive to both internal and external cues play an integrative role in arousal and foraging decisions.
+Foraging animals optimize feeding decisions by adjusting both common and rare behavioral patterns. Here, we characterize the relationship between an animal’s arousal state and a rare decision to leave a patch of bacterial food. Using long-term tracking and behavioral state classification, we find that food leaving decisions in Caenorhabditis elegans are coupled to arousal states across multiple timescales. Leaving emerges probabilistically over minutes from the high arousal roaming state, but is suppressed during the low arousal dwelling state. Immediately before leaving, animals have a brief acceleration in speed that appears as a characteristic signature of this behavioral motif. Neuromodulatory mutants and optogenetic manipulations that increase roaming have a coupled increase in leaving rates, and similarly acute manipulations that inhibit feeding induce both roaming and leaving. By contrast, inactivating a set of chemosensory neurons that depend on the cGMP-gated transduction channel TAX-4 uncouples roaming and leaving dynamics. In addition, tax-4-expressing sensory neurons promote lawn-leaving behaviors that are elicited by feeding inhibition. Our results indicate that sensory neurons responsive to both internal and external cues play an integrative role in arousal and foraging decisions.
 
 ## Introduction
 
@@ -29,49 +29,129 @@ Here, we characterize the behavioral patterns and circuit mechanisms that accomp
 
 ## Results
 
-## Animals make foraging decisions at the boundaries of bacterial food lawns
+### Animals make foraging decisions at the boundaries of bacterial food lawns
 
 To study foraging decisions at high resolution, we filmed and quantified the behavior of individual animals on small lawns of bacterial food (~3 mm diameter) on an agar surface (Figure 1A and B). During a 40-min assay, animals spent ~97% of their time on the lawn, and preferentially occupied the edge of the bacterial lawn where bacterial density was highest (Figure 1C, Figure 1—figure supplement 1A–D). As a result, the tip of the animal’s head encountered the lawn boundary approximately once per minute. A few of these encounters resulted in a lawn leaving event, in which the animal exited the bacterial lawn (Figure 1D, Figure 1—video 1). Lawn-leaving occurred in 26% of the assays, with a mean value of one event per 95 min (Figure 1H–I, Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig1-v1.jpg)
+
+**Figure 1.:** (A) Image of C. elegans on a small lawn of bacteria. Head is indicated with a green dot, lawn boundary is indicated with a white line. Scale bar is 1 mm. (B) Schematic depicting lawn boundary distance measured as the distance from the head to the closest point on the lawn boundary. (C) Empirical distribution of lawn boundary distance in wild type datasets. Positive values indicate distances inside the lawn, negative values indicate distances outside the lawn. (D–G) Four example images from behavioral sequences generating different types of foraging decisions. Scale bar is 0.5 mm in all panels. Head is indicated with a green dot in all panels. In E-G, yellow X indicates the maximum displacement of the head outside the lawn during head pokes. (D) Lawn leaving occurs when an animal approaches lawn boundary and fully crosses through it to explore the bacteria-free agar outside the lawn. Yellow X indicates the position on the lawn boundary encountered by worm’s head before exiting the lawn. (E) Head Poke Forward occurs when animal continues forward movement on the lawn during and after poking its head outside the lawn. (F) Head Poke Pause occurs when animal pauses following head poke before resuming forward movement on the lawn. (G) Head Poke Reversal is generated by a reversal following head poke before resuming forward movement on the lawn. (H) Number of lawn leaving events per animal in 40-min assay. Bubble sizes are proportional to the percentage of animals that execute each number of lawn leaving events within a 40-min assay. (I) Frequency of different foraging decisions. (J) Midbody speed aligned to different foraging decision types. Wild type dataset (C,H,I,J): n=1586 animals. Violin plots in (I) show median and interquartile range. In all time-averages, dark line represents the mean and shaded region represents the standard error. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** White scale bar is 1 mm. (B) GFP intensity across the orange transect line plotted in (A) shows accumulation of bacterial cells near the lawn boundary in brighter GFP pixels. (C) An image of the same lawn in brightfield. (D) Brightfield intensity across the orange transect line plotted in (C) shows local darkening at the lawn boundary corresponding to bright GFP pixels in (A). (E) Duration of individual excursions outside the lawn. Quantified across wild type dataset (n=1586 animals). See Figure 1—source data 1.
 
 Once an animal left the lawn, it typically remained outside of the food for 1–2 min before re-entering the lawn (Figure 1—figure supplement 1E, Figure 1—source data 1). Most edge encounters were not followed by leaving; instead, animals that poked their head outside of the lawn either continued forward locomotion (head poke-forward), paused (head poke-pause), or executed a reversal (head poke-reversal; Figure 1E–G, Figure 1—video 1). Head poke-reversals were the most common event after lawn edge encounter (1.1 events/min), followed by head poke-forward and head poke-pause events; lawn leaving events were the least frequent (Figure 1I, Figure 1—source data 1).
 
 High resolution analysis revealed characteristic behavioral dynamics prior to different events. Each head poke encounter with the lawn edge was preceded by an increase in speed over three seconds, and resolved by a reversal, pause, or continued forward movement within 5 s (Figure 1J). Lawn leaving events encompassed a longer acceleration that began 30 s before the leaving event (Figure 1J). At longer time scales, the average speed over 1 min before and after the edge encounter varied slightly for different classes of events, with head poke-forward events and lawn-leaving associated with the highest speeds. The different behavioral patterns preceding lawn leaving and head pokes suggest that lawn leaving is a distinct foraging decision, and not a random resolution of an edge encounter. In particular, it suggests that lawn leaving is linked to a persistent behavioral state reflected in ongoing locomotion speed.
 
-## Lawn leaving behavior is associated with high arousal states on short and long timescales
+### Lawn leaving behavior is associated with high arousal states on short and long timescales
 
 To gain further insight into the behavioral states preceding lawn leaving, we coarse-grained our behavioral measurements into 10 s intervals (‘bins’) and expanded the time axis to allow analysis across different durations. On average, a slow rise in speed began two minutes before lawn leaving, with a rapid acceleration in the last minute before leaving (Figure 2A). We analyzed these behaviors in the context of the well-characterized roaming and dwelling states (Ben Arous et al., 2009; Flavell et al., 2013; Fujiwara et al., 2002). Training a two-state Hidden Markov Model (HMM) based on absolute speed and angular speed (reorientations) recovered a bifurcation of roaming and dwelling states (Figure 2—figure supplement 1A–D; Methods). Using these criteria, wild type animals on small lawns roamed for a median of 12% of the duration of the assay (Figure 2—figure supplement 1C, Figure 2—source data 1). Although 80% of lawn leaving events occurred within roaming states, less than 1% of the 10 s roaming bins contained a lawn leaving event (Figure 2B). Five minutes before leaving, 34% of animals were roaming, a fraction that steadily increased such that 80% of animals were roaming immediately before leaving (Figure 2C, Figure 2—source data 1). By contrast, the fraction of animals roaming before head poke-reversals increased only slightly before the event (Figure 2—figure supplement 3C). Within roaming states, the average speed was constant until the rapid acceleration ~30 s prior to lawn leaving (Figure 2D). To ask if the brief acceleration accounts for the apparent increase in roaming before lawn leaving, we compared the duration of roaming states that preceded lawn leaving to those that did not. We found that roaming states directly before lawn leaving were slightly longer than other roaming state, arguing that acceleration events alone do not drive the correlation between roaming and lawn leaving (Figure 2—figure supplement 1E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig2-v1.jpg)
+
+**Figure 2.:** (A) Midbody forward speed aligned to lawn leaving. Left, heatmap of individual speed traces. Right, mean midbody forward speed computed across the heatmap traces. White space indicates missing data or times when animal was off the lawn. (B) Overlap of lawn leaving events with roaming and dwelling. Left, percentage of leaving events found in each state. Right, percentage of 10 s roaming or dwelling bins that contain a leaving event. (C) Roaming and dwelling aligned to lawn leaving. Left, heatmap of roaming/dwelling state classifications aligned to lawn leaving event. Center, fraction of animals in roaming or dwelling state prior to leaving. Right, total fraction of time spent roaming and dwelling in all assays that included a lawn-leaving event (n=371). Median is highlighted and interquartile range is indicated by shaded area. (D) Roaming speed aligned to lawn leaving. Left, heatmap showing speed of roaming animals before lawn leaving. Right, mean roaming speed computed at times when less than 10% of aligned traces had missing data. White space indicates times when animals were not roaming before leaving. (E) Overlap of lawn leaving events with AR-HMM states. Left, percentage of leaving events found in each state. Right, percentage of 10 s bins per AR-HMM state that contain a leaving event. (F) AR-HMM states aligned to lawn leaving. Left, heatmap of AR-HMM state classifications. Center, fraction of animals in each state prior to leaving. Right, total fraction of time spent in each AR-HMM state in all assays that included a lawn-leaving event (n=371). Median is highlighted and interquartile range is indicated by shaded area. (G) State 3 speed aligned to lawn leaving. Left, heatmap showing speed of animals in state 3 before lawn leaving. Right, mean state 3 speed computed at times when less than 10% of aligned traces had missing data. White space indicates times when animals were not in state 3 before leaving. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatter plot of average absolute speed and angular speed in 10 s intervals for wild type animals on small lawns (n=1586 animals, 380,640 bins). The boundary shown, used for all data in the paper, defines roaming (high speed/low angular speed) and dwelling (low speed/high angular speed). (B) Two-state Hidden Markov Model trained on wild-type animals. Roaming Behavior and Dwelling Behavior correspond to 10 s intervals either above or below the separating line in (A), respectively. Roaming and dwelling states are inferred from the Hidden Markov Model. Black arrows indicate transition probabilities between states and colored arrows represent emission probabilities. (C) Fraction of time spent roaming across wild type animals. (D) Complementary cumulative distribution functions (ccdfs) for roaming and dwelling state durations in minutes. (E) Empirical complementary cumulative distribution functions (ccdfs) comparing state durations of roaming states that did or did not precede a lawn leaving event. Statistics by Kolmogorov-Smirnov two-sample test. **** p<10–4. (F) Scatter plot of average absolute speed and angular speed in 10 s intervals for wild type animals on uniform lawns (n=31 animals, 7440 bins). (G) Same as (E) for animals on small lawns recorded in parallel with animals on uniform lawns (n=31 animals, 7440 bins). (H) Animals roam more on uniform lawns than on small lawns. * p<0.05 by Student’s t-test on logit-transformed data. Violin plots show median and interquartile range. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of animal body shape with key body points indicated. (B–E) Schematics illustrating derived behavioral features. See Methods for detailed description. (B) Midbody speed, (C) Midbody angular speed, (D) Head radial velocity relative to midbody, (E) Head angular velocity relative to midbody. (F–K) Quantification of behavioral parameters per animal while in each AR-HMM state. (F) Fraction of time spent moving forward, (G) Midbody forward speed, (H) Midbody angular speed, (I) Head angular velocity, (J) Head radial velocity, (K) Fraction of time spent in each state per animal. (L) Transition matrix for four-state AR-HMM. Rows index state at time t, columns index state at t+1. (M) Fraction of AR-HMM states found in roaming and dwelling states. (N) Fraction of roaming and dwelling states found in each AR-HMM state. (O) Empirical complementary cumulative distribution functions (ccdfs) comparing state durations from the 4-state AR-HMM to those of roaming and dwelling. (P) Example behavioral trace with two lawn leaving events. Absolute speed and lawn boundary distance are shown for a continuous 40-min assay. Foraging decisions are annotated with colored tick marks above lawn boundary distance trace. Roaming, Dwelling, and AR-HMM states are annotated above absolute speed with colored bars. Distributions are computed across wild type animals on small lawns (n=1586). Violin plots show median and interquartile range. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Midbody forward speed aligned to head poke reversals. Left, heatmap of individual speed traces. Right, mean midbody forward speed computed across the heatmap traces. (B) Overlap of head poke reversals with roaming and dwelling. Left, percentage of head poke reversals found in each state. Right, percentage of 10 s time bins roaming or dwelling that contain a head poke reversal. (C) Roaming and dwelling aligned to head poke reversals. Left, heatmap of roaming/dwelling state classifications aligned to head poke reversals. Center, fraction of animals in roaming or dwelling state prior to head poke reversals. Right, total fraction of time spent roaming and dwelling in all assays that included a head poke reversal. (D) Overlap of head poke reversals with AR-HMM states. Left, percentage of head poke reversals found in each state. Right, percentage of 10 s time bins per AR-HMM state that contain a head poke reversal. (E) AR-HMM states aligned to head poke reversals. Left, heatmap of roaming/dwelling state classifications aligned to head poke reversals. Center, fraction of animals in each AR-HMM state prior to head poke reversals. Right, total fraction of time spent in each AR-HMM state in all assays that included a head poke reversal. Data aligned to head poke reversals (n=63,585) from wild type animals (n=1586). Dark lines represent the mean and shaded region represents the standard error. In boxplots, median is highlighted, and interquartile range is indicated by shaded area. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Positive values indicate distances inside the lawn, negative values indicate distances outside the lawn (See Figure 1). (A) Lawn boundary distance of animals while roaming and dwelling. Statistics by Kolmogorov-Smirnov two-sample test. (B) Same as (A) but plotted as a cumulative distribution. (C) Lawn boundary distance of animals in each state of four-state AR-HMM. Statistics by Kolmogorov-Smirnov two-sample tests with Bonferroni correction. (D) Same as (C) but plotted as a cumulative distribution. Distributions are computed across wild type animals on small lawns (n=1586). In (A-B), **** p<10–4. In (C-D), each AR-HMM state is significantly different from all others (a-d), although effect sizes are small.
 
 The roaming-dwelling HMM was initially developed on uniform bacterial lawns (Flavell et al., 2013), which elicit more roaming than the small lawns used here (Figure 2—figure supplement 1F–H, Figure 2—source data 1). Expanding this model to include posture information identified eight subclasses of dwelling states (Cermak et al., 2020). To explore alternative analysis methods, we generated an HMM behavioral state model trained on our experimental conditions. An Autoregressive Hidden Markov model (AR-HMM) (Buchanan et al., 2017; Linderman et al., 2020), trained over an expanded set of locomotion parameters, converged on four states that largely reflect forward locomotion speed and related features (Figure 2—figure supplement 2A–K, Methods). These four states provided a different segmentation of locomotory arousal that partly overlaps with roaming and dwelling states (Figure 2—figure supplement 2M–N). Most lawn leaving events occurred during the high speed, high arousal AR-HMM state 3 (Figure 2E). Animals spent a median of 9% of the time in state 3 (Figure 2—figure supplement 2K, Figure 2—source data 1), but 5 min before leaving, 26% of animals were in state 3, which ramped to 82% immediately before leaving (Figure 2F, Figure 2—source data 1). Like roaming, state 3 increased only slightly before head poke reversals (Figure 2—figure supplement 3E). Animals across all behavioral states – roaming, dwelling, and the four AR-HMM states – were similarly distributed across the bacterial lawn, with strong enrichment near the lawn boundary (Figure 2—figure supplement 4A–D).
 
 Both the two-state model and the four-state model show that arousal states increase before lawn leaving over at least two phases: an enrichment of a high arousal state 3–5 min before leaving, followed by a rapid acceleration in the last 30 s. Because the widely used two-state roaming-dwelling model captured the key features of lawn-leaving as well as these alternative methods, we applied that analysis to subsequent experiments.
 
-## Food intake regulates arousal states and lawn leaving
+### Food intake regulates arousal states and lawn leaving
 
 Animals roam more and leave lawns more frequently when bacteria are hard to ingest or have low nutritional value (Ben Arous et al., 2009; Shtonda and Avery, 2006). Conversely, simply increasing food concentration suppressed roaming and leaving on small lawns (Figure 3A–B, Figure 3—source data 1; Bendesky et al., 2011). To separate the behavioral effects deriving from sensation of food odors from ingestion of food, we treated E. coli OP50 bacteria with aztreonam, an antibiotic that renders bacteria inedible to C. elegans by preventing bacterial cell septation (Ben Arous et al., 2009; Gruninger et al., 2008). Both lawn leaving and roaming were dramatically increased on aztreonam-treated E. coli lawns (Figure 3C–D, Figure 3—figure supplement 1A–B, Figure 3—source data 1, Supplementary file 2). Animals on aztreonam-treated lawns maintained the characteristic speed acceleration in the last 30 s before leaving (Figure 3—figure supplement 1C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Increasing bacterial density suppresses roaming and leaving. (A) Fraction of time roaming on small lawns seeded with bacteria of different optical density (OD). OD1: n=45, OD2: n=46, OD4: n=47, Statistics by one-way ANOVA with Tukey’s post-hoc test on logit-transformed data. (B) Number of lawn leaving events per animal in the same assays as (A). Statistics by Kruskal-Wallis test with Dunn’s multiple comparisons test. (C–D) Animals on inedible food roam and leave lawns more than animals on edible food. (C) Fraction of time roaming on inedible bacteria generated by adding aztreonam dissolved in DMSO to E. coli growing on plates.+DMSO/+aztreonam n=64,+DMSO (control) n=66, Statistics by Student’s t-test performed on logit-transformed data. (D) Number of lawn leaving events in the same assays as (C). Statistics by Mann-Whitney U-test. (E–J) Feeding inhibition by optogenetic depolarization of pharyngeal muscles stimulates roaming and lawn leaving. (E) Heatmap showing roaming and dwelling for animals before, during, and after 10 min optogenetic feeding inhibition. Data for animals pre-treated with all-trans retinal (+ATR) is shown. (F) Fraction of animals roaming before, during, and after optogenetic feeding inhibition. Light ON period denoted by yellow shading (+ATR n=36). Control animals not pre-treated with all-trans retinal (-ATR n=32). Statistics by Student’s t-test comparing +/-ATR data averaged and logit-transformed during intervals indicated by black lines above plots: Minutes 0–10, 12–20, 22–30. (G) A greater fraction of animals leave lawns during feeding inhibition. Statistics by Fisher’s exact test. (H) Number of lawn leaving events in the same assays as (G). Statistics by Wilcoxon rank-sum test. (I) Cumulative distribution of time until the first head poke reversal or lawn leaving event during feeding inhibition. Statistics by Kolmogorov-Smirnov two-sample test. (J) Roaming animals accelerate before leaving during feeding inhibition. Left, mean roaming speed of animals before leaving. Right, quantification of roaming speed increase from minutes –3 to –1 to the last 30 s before leaving. Statistics by Wilcoxon rank-sum test. Statistics: ns, not significant, * p<0.05, *** p<10–3,**** p<10–4 In time-averages (F,J), dark line represents the mean and shaded region represents the standard error. Violin plots show median and interquartile range. In (H), each dot pair connected by a line represents data from a single animal. In (J), each dot pair connected by a line represents data preceding a single lawn leaving event. Thick black line indicates the average. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Aztreonam affects roaming and leaving by affecting bacterial growth. In ‘pre-add’ conditions, the drug is added to liquid cultures and agar plates during bacterial growth. In ‘post-add’ conditions, the drug is added after bacterial growth just before testing behavior. (A) Fraction of time roaming. Different letters mark significant differences in roaming by logit-transformation followed by one-way ANOVA and Tukey’s post hoc test. (pre-add:+DMSO/+aztreonam n=12,+DMSO (control) n=15; post-add:+DMSO/+aztreonam n=12,+DMSO (control) n=16). (B) Number of lawn leaving events in the same assays as (A). Different letters mark significant differences in leaving by Kruskal-Wallis followed by Dunn’s multiple comparisons test. (C) Animals on inedible food accelerate before leaving the lawn. Statistics by Wilcoxon rank-sum test. (D–G) Quantification of controls relating to optogenetic feeding inhibition experiments. (D) Light exposure does not induce roaming in animals not pre-treated with all-trans retinal. Statistics by paired t-test on logit-transformed data. (E) Light exposure reliably induces roaming in animals pre-treated with all-trans retinal. Statistics by paired t-test on logit-transformed data. (F) Light exposure does not increase the fraction of animals that leave lawns when animals are not pre-treated with all-trans retinal. Statistics by Fisher’s exact test. (G) Light exposure does not increase the number of lawn leaving events when animals are not pre-treated with all-trans retinal. Statistics by Wilcoxon rank-sum test. (H) Cumulative distribution of time until the first head poke reversal or lawn leaving event while the light is OFF. Statistics by Kolmogorov-Smirnov two-sample test. (I–J) Quantification of roaming and leaving in animals with or without pre-treatment with all-trans retinal without light exposure. (-ATR n=67,+ATR n=57). (I) Pre-treatment with all-trans retinal does not alter the fraction of time roaming. Statistics by Student’s t-test on logit-transformed data. (J) Pre-treatment with all-trans retinal does not alter the number of lawn leaving events per animal. Statistics by Mann-Whitney U test. Statistics: ns not significant (p>0.05), **** p<10–4 Violin plots show median and interquartile range. In (D,E,G), each dot pair connected by a line represents data from a single animal. In (C), each dot pair connected by a line represents data preceding a single lawn leaving event. See Figure 3—source data 1.
 
 Locomotion speed is regulated by direct interoception of pharyngeal pumping, the motor behavior associated with intake of bacterial food (Rhoades et al., 2019). To ascertain whether similar mechanisms affect arousal and lawn leaving, we acutely inhibited pharyngeal pumping by optogenetic activation of the red-shifted channelrhodopsin ReaChR in pharyngeal muscle (Lin et al., 2013; Figure 3E–J). Acute feeding inhibition strongly stimulated both roaming and lawn leaving (Figure 3E–H, Figure 3—figure supplement 1D–E, Figure 3—source data 1, Supplementary file 2).
 
 While roaming and head pokes began immediately upon feeding inhibition, leaving events did not occur immediately but instead accumulated throughout the 10-min stimulation interval (Figure 3I). In each case, leaving was preceded by a 30 s acceleration in speed (Figure 3J). Thus, feeding inhibition elicits both roaming and lawn-leaving behaviors, and lawn-leaving occurs probabilistically during roaming states.
 
-## Parallel regulation of arousal states and leaving by neuromodulatory mutants
+### Parallel regulation of arousal states and leaving by neuromodulatory mutants
 
 To further examine the relationship between arousal states and lawn leaving, we examined mutants with known alterations in roaming and dwelling. Animals deficient in serotonin (tph-1), dopamine (cat-2), or the neuropeptide receptor NPR-1 (npr-1) roam at a higher rate than wild type (Cermak et al., 2020; Cheung et al., 2005; Flavell et al., 2013; Omura et al., 2012; Sawin et al., 2000). We found that each of these mutants showed increased lawn leaving compared to wild-type controls, strengthening the observed correlation between roaming and leaving rates (Figure 4A–C and E–G, Supplementary file 2). In addition, the fraction of animals roaming increased over several minutes before leaving events, as was observed in wild type animals (Figure 4I–K). Finally, each mutant accelerated during the 30 s prior to leaving (Figure 4M–O). Thus, although the molecular basis of arousal is different in each of these mutants, the overall dynamics of roaming and lawn leaving are preserved across genotypes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig4-v1.jpg)
+
+**Figure 4.:** (A–P) Roaming, lawn leaving, roaming before leaving, and roaming speed quantified across mutants in four neuromodulatory genes known to alter roaming and dwelling: tph-1, cat-2, npr-1, and pdfr-1. (A–D) Fraction of time roaming. Statistics by Student’s t-test on logit-transformed data. (E–H) Number of lawn leaving events per animal. Statistics by Mann-Whitney U test. (I–L) Fraction of animals roaming before lawn leaving. Left, fraction of animals roaming in the last 5 min before lawn leaving. WT and mutant roaming fractions were compared over the two minutes prior to leaving (black bar). Right, total fraction of time spent roaming and dwelling in all assays that included a lawn-leaving event. Statistics by Student’s t-test on logit-transformed data. Note that roaming levels were unusually low (A,B,I,J) or high (C,K) in the wild-type controls for these groups, and therefore genotypes cannot be compared across different experimental panels. (M–P) Roaming speed before leaving computed at times when less than 10% of aligned traces had missing data. Paired plots indicate the average speed from minutes –3 to –1 and in the last 30 s before leaving per animal. Statistics by Wilcoxon rank-sum test. Statistics: ns not significant (p>0.05), ** p<0.01, *** p<10–3, **** p<10–4 Violin plots and box plots show median and interquartile range. In time-averages, dark line represents the mean and shaded region represents the standard error. In paired plots (M-P), each dot pair connected by a line represents data preceding a single lawn leaving event. Thick black line indicates the average. (tph-1 n=139, wild type controls n=127; cat-2 n=88, wild type controls n=76; npr-1 n=91, wild type controls n=90; pdfr-1 n=265, wild type controls n=247). See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Optogenetic feeding inhibition in pdfr-1 mutants. (A) Left, Fraction of animals roaming before, during and after optogenetic feeding inhibition in pdfr-1 mutants and paired wild type controls. Statistics by Student’s t-test comparing pdfr-1 and matched wild type data averaged and logit-transformed in intervals denoted by black bars above: Data compared at 0–10, 12–20, 22–30 min. Right, Difference in fraction of time roaming between light ON and light OFF conditions per animal. Statistics by Mann-Whitney U test. Left and Center, pdfr-1 animals and wild type controls execute more lawn leaving events under feeding inhibition while light is ON. Statistics by Wilcoxon rank-sum test. Right, difference in number of lawn leaving events between light ON and light OFF conditions per animal. Statistics by Mann-Whitney U test. (pdfr-1 n=23, wild type controls n=27). (C-D) Optogenetic feeding inhibition in tph-1 mutants. Same as (A) for tph-1 animals and matched controls. Same as (B) for tph-1 animals and matched controls. (tph-1 n=18, wild type controls n=16)Statistics: ns not significant (p>0.05), * p<0.05, ** p<0.01, *** p<10–3. Violin plots show median and interquartile range. In time-averages, dark line represents the mean and shaded region represents the standard error. In paired plots, each dot pair connected by a line represents data from a single animal. Thick black line indicates the average. See Figure 4—source data 1.
 
 Animals lacking the G-protein-coupled receptor Pigment Dispersing Factor Receptor (PDFR-1) roam less than wild type (Flavell et al., 2013; Ji et al., 2021; Meelkop et al., 2012). On the small lawns used here, pdfr-1 mutants roamed less, but left food lawns at the same low rate as wild type (Figure 4D and H). Roaming rates increased similarly during the 3 min prior to lawn leaving in wild type and pdfr-1 animals, suggesting that the coupling of roaming and leaving does not require PDFR-1 signaling (Figure 4L). Although their basal locomotion speed is lower (Flavell et al., 2013; Ji et al., 2021), pdfr-1 did accelerate slightly before lawn leaving (Figure 4P). In summary, neuromodulatory mutants varied in the fraction of time spent roaming and dwelling, but in each case lawn-leaving behaviors were coupled to roaming and a brief speed acceleration.
 
 Optogenetic inhibition of feeding elicited immediate roaming and probabilistic lawn leaving in both pdfr-1 and tph-1 mutants (Figure 4—figure supplement 1), indicating that neither of these neuromodulators is essential for interpreting feeding inhibition. This was surprising because the tph-1-expressing NSM neurons sense bacterial ingestion and signal food availability via serotonin release (Rhoades et al., 2019), and were therefore candidates to relay feeding signals. NSM may act through additional transmitters as well as serotonin, or it may be redundant with additional neurons that detect feeding inhibition.
 
-## Acute circuit manipulation drives deterministic roaming and probabilistic leaving
+### Acute circuit manipulation drives deterministic roaming and probabilistic leaving
 
 As a complement to the neuromodulatory mutants, we employed a circuit-based approach to manipulate arousal levels and examine effects on lawn leaving. Roaming is strongly stimulated by pdfr-1; we defined sites of pdfr-1 expression that stimulate roaming using an intersectional Cre-Lox system that restores pdfr-1 expression in targeted groups of cells in pdfr-1 mutant animals (Figure 5—figure supplement 1, Figure 5—figure supplement 2A; Flavell et al., 2013). Previous work identified a moderate effect of AIY, RIM, and RIA neurons as mediators of pdfr-1-dependent roaming (Flavell et al., 2013). We observed a stronger rescue of roaming upon pdfr-1 expression solely in the RIB neurons, which are active during rapid forward locomotion (Figure 5—figure supplement 2B–D; Ji et al., 2021; Wang et al., 2020).
 
 Following this result, we asked whether optogenetic activation of RIB might be sufficient for roaming in wild-type animals. PDFR-1 signals through the heterotrimeric G protein Gαs to increase cAMP levels (Janssen et al., 2008), and optogenetic activation of groups of PDFR-1-expressing neurons with the bacterial light-activated adenylyl cyclase BlaC increases roaming (Flavell et al., 2013; Ryu et al., 2010). We found that acute optogenetic activation of only RIB with BlaC induced immediate roaming in over 80% of animals (Figure 5A–C, Figure 5—figure supplement 3A–B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design. Stimulation of bacterial light-activated adenylyl cyclase (BlaC) with 455 nm light increases cAMP synthesis in RIB::BlaC neurons. (B) Heatmap showing roaming and dwelling for RIB::BlaC animals before, during, and after 10-min optogenetic stimulation. (C) Fraction of animals roaming before, during, and after optogenetic blue light stimulation. Light ON period denoted by blue shading. Control animals are wild type. Statistics by Student’s t-test comparing RIB::BlaC and wild-type animals averaged and logit-transformed during intervals indicated by black lines above plots: Data compared at 0–10, 12–20, 22–30 min. (D) A greater fraction of RIB::BlaC animals leave lawns when the light is ON vs. OFF. Statistics by Fisher’s exact test. (E) Number of lawn leaving events under the same conditions as (D). Statistics by Wilcoxon rank-sum test. (F) Cumulative distribution of time until the first head poke reversal or lawn leaving event while the light is ON. Statistics by Kolmogorov-Smirnov two-sample test. Statistics: ns not significant (p>0.05), ** p<0.01, *** p<10–3, **** p<10–4 In time-averages (C), dark line represents the mean and shaded region represents the standard error. (RIB::BlaC n=35, wild type n=34) In (E), each dot pair connected by a line represents data from a single animal. Thick black line indicates the average. See Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Genomic region surrounding pdfr-1 (black boxes represent coding exons, gray boxes are non-coding exons), region deleted in pdfr-1(ok3425) mutants, proximal and distal promoters, PCR fragments used in transgenic rescue experiments. (B) Rescue of pdfr-1 roaming phenotype by transgenic expression from the PCR fragments illustrated in (A). Different letters mark significant differences in roaming by logit-transformation followed by Tukey’s post hoc test (wild type n=55, pdfr-1 n=59, PCR fragment #1; pdfr-1 n=46, PCR fragment #2; pdfr-1 n=51). Violin plots show median and interquartile range. (C) pdfr-1 expression patterns from the proximal and distal promoters as reported (Barrios et al., 2012, Flavell et al., 2013) and from this work. See Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (B) Restoring pdfr-1 expression in AIY, RIM, and RIA neurons did not rescue roaming on small lawns (wild type n=64, inverted pdfr-1 transgene n=64, AIY, RIM, RIA pdfr-1 rescue n=64, pan-neuronal::Cre rescue n=67). (C) Restoring pdfr-1 expression in RIB neurons rescued roaming comparably to pan-neuronal rescue on small lawns (wild type n=27, inverted pdfr-1 transgene n=32, RIB pdfr-1 rescue n=33, pan-neuronal::Cre rescue n=31). (D) Differential interference contrast (DIC), GFP fluorescence and composite images of an animal expressing pdfr-1 in the RIB neurons using the transgenic strategy shown in (A). Scale bar is 10 μm. Statistics: In (B-C), different letters mark significant differences in roaming by logit-transformation followed by Tukey’s post hoc test. Violin plots (B,C) show median and interquartile range. See Figure 5—source data 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A–E) Quantification of RIB::BlaC controls. (A) Blue light stimulation does not induce roaming in wild-type animals. Statistics by paired t-test on logit-transformed data. (B) Blue light stimulation reliably induces roaming in RIB::BlaC animals. Statistics by paired t-test on logit-transformed data. (C) Blue light stimulation does not elevate the fraction of wild-type animals that leave lawns. Statistics by Fisher’s exact test. (D) Blue light stimulation does not elevate the number of lawn leaving events per wild type animal. Statistics by Wilcoxon rank-sum test. (E) Cumulative distribution of time until the first head poke reversal or lawn leaving event while the light is OFF. Statistics by Kolmogorov-Smirnov two-sample test. (F) Roaming animals only accelerate slightly before leaving during RIB BlaC stimulation. Left, mean roaming speed of animals before leaving. Right, quantification of roaming speed changes before leaving. Statistics by Wilcoxon rank-sum test. (RIB BlaC n=35, wild type n=34). Statistics: ns not significant (p>0.05), **** p<10–4 In paired plots (A,B,D), each dot pair connected by a line represents data from a single animal. Thick black line indicates the average. See Figure 5—source data 1.
+
 RIB::BlaC stimulation also potentiated lawn leaving, with over 70% of animals leaving lawns during the stimulation period (Figure 5D–E). Like lawn-leaving during optogenetic feeding inhibition, this behavior was probabilistic across the 10-min light pulse (Figure 5F). Animals accelerated slightly in the 30 s before leaving, but the speed increase appeared less pronounced than in other manipulations, suggesting that RIB activity may partially occlude the acceleration motif in lawn leaving (Figure 5—figure supplement 3F). Neither roaming nor lawn leaving was potentiated by blue light exposure in wild type control animals not expressing BlaC (Figure 5C, Figure 5—figure supplement 3A, C-D).
 
-## Chemosensory neurons couple roaming dynamics, internal state, and lawn leaving
+### Chemosensory neurons couple roaming dynamics, internal state, and lawn leaving
 
 In addition to the neuromodulatory arousal systems, multiple food- and pheromone-sensing chemosensory neurons affect roaming, dwelling, and leaving behaviors (Supplementary file 1). Most of these neurons use the cyclic nucleotide-gated channel gene tax-4 for sensory transduction, and tax-4 mutants have diminished roaming behavior (Ben Arous et al., 2009; Fujiwara et al., 2002; Figure 6A, Supplementary file 1). However, we found that tax-4 mutant animals continued to leave lawns – indeed, they left at slightly higher rates than wild-type animals (Figure 6B, Supplementary file 2). Moreover, the temporal relationship between roaming and leaving was altered in tax-4 mutants, which typically roamed for only ~1 min prior to lawn leaving (Figure 6C, Figure 6—figure supplement 1A–B). These results indicate that loss of tax-4 disrupted the characteristic arousal dynamics associated with leaving.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Roaming and leaving in tax-4 mutants, and rescue by tax-4 expression in ASJ neurons (wild type n=143, tax-4 n=156, tax-4 ASJ rescue n=148). Additional features of roaming and leaving are shown in Figure 6—figure supplement 1; results with additional rescued neurons are in Figure 6—figure supplement 2. (A) Fraction of time roaming. Statistical tests, one-way ANOVA followed by Tukey’s post hoc test on logit-transformed data. (B) Number of lawn-leaving events per animal. Statistical tests, Kruskal-Wallis followed by Dunn’s multiple comparisons test. (C) Fraction of animals roaming before lawn-leaving. Left, fraction of animals roaming in the last 5 min before lawn leaving. Roaming fractions were compared over the 2 min prior to leaving (black bar). Right, total fraction of time spent roaming and dwelling in all assays that included a lawn-leaving event. Key, statistical tests of differences in roaming two minutes before leaving by one-way ANOVA followed by Tukey’s post hoc test on logit-transformed data. (D–E) Optogenetic feeding inhibition in tax-4 mutants and rescued strains (wild type n=70, tax-4 n=66, tax-4 ASJ rescue n=68). (D) Left, Fraction of time spent roaming under optogenetic feeding inhibition in tax-4 and ASJ rescue strain. Statistics by paired t-test on logit-transformed data. Right, Difference in the fraction of time roaming when the light is ON and OFF. Statistics by one-way ANOVA followed by Tukey’s post hoc test on logit-transformed data. (E) Left, Number of lawn leaving events under optogenetic feeding inhibition in tax-4 and ASJ rescue strain. Statistics by Wilcoxon rank-sum test. Right, Difference in the number of lawn leaving events when the light is ON and OFF. Statistics by Kruskal-Wallis test followed by Dunn’s multiple comparisons test. ns not significant (p>0.05), * p<0.05, *** p<10–3, **** p<10–4 Violin plots and box plots (A,D) show median and interquartile range. In time-averages (C), dark line represents the mean and shaded region represents the standard error. In paired plots (D,E), each dot pair connected by a line represents data from a single animal. Thick black line indicates the average. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Different letters mark significant differences by Kolmogorov-Smirnov two-sample tests with Bonferroni correction. (B) Same as (A) for roam state durations before leaving events. Wild type n=143, tax-4 n=156, tax-4 ASJ rescue n=148. Statistics: different letters indicate significant differences. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) ASJ or ASJ +ASK tax-4 rescue restores roaming to tax-4 mutants. (B) ASK tax-4 rescue suppresses lawn leaving below tax-4 levels. (C–D) Quantification of roaming and leaving in tax-4 mutants with tax-4 rescued in AWC or ASI neurons (wild type n=79, tax-4 n=88, AWC rescue n=68, ASI rescue n=77). (C) AWC or ASI tax-4 rescue fails to restore roaming to tax-4 mutants. (D) AWC tax-4 rescue restores lawn leaving to wild-type levels. (E–F) Quantification of roaming and leaving in tax-4 mutants with tax-4 rescued in AQR/PQR/URX neurons (wild type n=35, tax-4 n=32, AQR/PQR/URX rescue n=19). (E) AQR/PQR/URX tax-4 rescue fails to restore roaming to tax-4 mutants. (F) AQR/PQR/URX tax-4 rescue fails to restore lawn leaving. Violin plots (A,C,E) show median and interquartile range. Statistics: Different letters mark significant differences. ns not significant (p>0.05), * p<0.05, ** p<0.01, *** p<10–3. Statistical tests for differences in fraction of time roaming by one-way ANOVA followed by Tukey’s post hoc test on logit-transformed data. Statistical tests for differences in lawn leaving by Kruskal-Wallis test followed by Dunn’s multiple comparisons test. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Fraction of animals roaming before, during, and after optogenetic feeding inhibition. Light ON period denoted by yellow shading. (B) Cumulative distribution of time until the first head poke reversal or lawn leaving event while the light is OFF. Statistics by all pairwise Kolmogorov-Smirnov two-sample tests, Bonferroni corrected. (C) Same as (D) for when the light is ON. Pairwise significant differences in time to first lawn leaving are indicated in the figure legend. (D) Left, Roaming speed before leaving while the light is ON computed at times when less than 10% of aligned traces had missing data. Roaming speed from the last 30 s is averaged and compared by statistical testing: significant differences are reported in the figure legend under ‘before’. Right, paired plots indicate the average speed from minutes –3 to –1 and in the last 30 s before leaving per animal. Each dot pair connected by a line represents data preceding a single lawn leaving event. Thick black line indicates the average. Statistics: ** p<0.01, *** p<10–3, Different letters mark significant differences. Violin plots (B,C) show median and interquartile range. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/88657/elife-88657-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A–B) In these panels, wild type n=30, tax-4 n=22, tax-4 ASJ rescue n=10 on inedible food generated by pre-treatment of bacterial lawns with aztreonam before growth. (A) Wild type, tax-4 and tax-4 ASJ rescue animals all roam near-constantly on inedible food. Statistical tests of differences in roaming by one-way ANOVA followed by Tukey’s post hoc test on logit-transformed data. (B) tax-4 mutants leave lawns of inedible bacteria less frequently than wild type. tax-4 ASJ rescue restores lawn leaving. Statistical tests of differences in lawn leaving by Kruskal-Wallis followed by Dunn’s multiple comparisons test. See Figure 6—source data 1.
 
 Many of the 15 classes of sensory neurons that express tax-4 have been implicated in roaming or leaving behaviors (Supplementary file 1). We rescued tax-4 separately in AWC, which senses food odors; ASK, which senses amino acids and pheromones; ASJ and ASI, which sense pheromones, food, and toxins; and URX/AQR/PQR, which sense environmental oxygen (Ben Arous et al., 2009; Bendesky et al., 2011; Greene et al., 2016; Milward et al., 2011). Significant effects on roaming or leaving behavior were observed upon ASJ, ASK, or AWC rescue (Figure 6A–C, Figure 6—figure supplement 1 and S2). The strongest effects resulted from tax-4 rescue in the ASJ neurons, which partially restored roaming levels before lawn leaving (Figure 6A–C, Figure 6—figure supplements 1 and 2), and tax-4 rescue in the ASK neurons, which paradoxically suppressed leaving to a level below that of either wild type or tax-4 animals (Figure 6—figure supplement 2). Because ASJ and ASK showed opposite effects in these experiments, we also examined strains in which both neurons were rescued. Combined ASJ and ASK rescue normalized roaming and leaving compared to ASK rescue alone, albeit not to fully wild-type levels (Figure 6—figure supplement 2). While we have not tested all neurons and combinations, these results suggest that multiple tax-4-expressing sensory neurons have roles in arousal-related behaviors and highlight ASJ as a regulator of roaming and leaving dynamics.
 
@@ -81,13 +161,13 @@ Next, we asked how tax-4 mutants responded to acute inhibition of feeding. As in
 
 Both in the wild and in laboratory settings, foraging locomotion patterns exhibit scale invariance, meaning that similar statistics of movement displacement and duration arise on short and long timescales (Ayala-Orozco et al., 2004; Proekt et al., 2012). Long-term arousal changes are regulated by neuromodulators that signal widely throughout the brain (Flavell et al., 2022; Taghert and Nitabach, 2012; Weissbourd et al., 2014), whereas moment-by-moment decision-making involves fast sensorimotor circuits (Gold and Shadlen, 2007). Here, we show that C. elegans couples food leaving decisions, which unfold over seconds, to high arousal roaming states that last minutes. Although food intake and neuromodulatory signaling both alter the frequency of sustained C. elegans roaming states, these changes do not disrupt the coupling of roaming to food leaving decisions. Instead, sensory neurons link roaming and leaving behaviors, integrating these behavioral motifs, their dynamic properties, and their regulation by food intake.
 
-## Behavioral arousal alters probabilistic decision-making
+### Behavioral arousal alters probabilistic decision-making
 
 From an ethological perspective, lawn-leaving is a classical foraging decision based on an animal’s assessment of the quality of a food patch (Charnov, 1976). Previous studies of lawn-leaving have identified features of the environment, like food availability, population density, and toxic repellents, that affect leaving probability as predicted by foraging theory. Here, we have extended these observations using the framework of computational neuroethology (Datta et al., 2019), examining behavior in detail across time to identify rare leaving events and the behavioral context in which they occurred. We found that leaving was tightly coupled to roaming both during spontaneous behaviors and after acute manipulations that induced roaming states. In each case, and in neuromodulatory mutants that altered roaming frequency, leaving occurred when animals were roaming, occurred probabilistically over minutes during the roaming state, and was preceded by a brief 30 s acceleration in speed. The stereotyped features of leaving behavior, which were not shared by other lawn edge encounters, suggest that it is a discrete behavioral motif associated with roaming states. Leaving can be viewed as a form of decision-making—a discrete action that drives an adaptive behavioral choice between alternatives, influenced by internal states such as arousal (Kennedy et al., 2014).
 
 Roaming and dwelling comprise a widely used framework for defining arousal states in C. elegans, although changing experimental conditions or analysis methods can reveal sub-states or alternative classification frameworks (this work and Cermak et al., 2020; Gallagher et al., 2013; Raizen et al., 2008; Van Buskirk and Sternberg, 2007). Classical ethology presents such internal states as hierarchical and mutually exclusive (Tinbergen, 1951), while molecular and circuit analysis has extended and refined these ideas (Asahina et al., 2014; Flavell et al., 2013; Hindmarsh Sten et al., 2021; Hong et al., 2014; Moy et al., 2015; Pan et al., 2012). Our results indicate that lawn leaving behaviors are coupled to the roaming state, but within this state they are relatively rare and apparently probabilistic. More detailed studies may reveal additional regulators, such as an individual’s sensory experience, that shape the pattern of leaving behavior (Coen et al., 2014).
 
-## Sensory neurons integrate internal state and external sensation to guide foraging decisions
+### Sensory neurons integrate internal state and external sensation to guide foraging decisions
 
 Our results identify two distinct biological mechanisms that regulate lawn leaving. First, leaving is coupled to arousal state. Leaving rates are 20-fold higher in roaming animals than in dwelling animals, and the leaving rates of most arousal mutants are largely explained by the fact that they spend more time roaming (Supplementary file 2). The second mechanism is controlled by tax-4 sensory neurons, which shape the behavioral dynamics of roaming and leaving across a range of conditions and stimulate leaving during feeding inhibition.
 
@@ -99,11 +179,259 @@ Sensory neurons in C. elegans and other animals are most often studied in the co
 
 ## Methods
 
-## Nematode and bacterial culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>Wild type</td>
+      <td>Yoshimura et al., 2019</td>
+      <td>PD1074 (now CGC1)</td>
+      <td>Used in all figures except Figure 4 tph-1 and cat-2 controls</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>Wild type</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX0001</td>
+      <td>Used as wild type controls in Figure 4 tph-1 and cat-2 experiments</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pharynx ReaChR</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX16279</td>
+      <td>Figures 3 and 6 and supplements</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14295</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>tph-1</td>
+      <td>https://cgc.umn.edu/strain/MT15434</td>
+      <td>ID_BargmannDatabase:MT15434</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>cat-2</td>
+      <td>Stern et al., 2017</td>
+      <td>ID_BargmannDatabase:CX11078</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>npr-1</td>
+      <td>Jang et al., 2017</td>
+      <td>ID_BargmannDatabase:CX13663</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pharynx ReaChR; pdfr-1</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX16528</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pharynx ReaChR; tph-1</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX16529</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>RIB::BlaC</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX18471</td>
+      <td>Figure 5, Figure 5—figure supplement 3</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>PCR fragment #1; pdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14378</td>
+      <td>Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>PCR fragment #2; pdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14383</td>
+      <td>Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pdfr-1:: CreONpdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14485</td>
+      <td>Figure 5—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>RIB pdfr-1 rescue; pdfr-1</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX18302</td>
+      <td>Figure 5—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pan-neuronal pdfr-1 rescue; pdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14488</td>
+      <td>Figure 5—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>AIY, RIM, RIA pdfr-1 rescue; pdfr-1</td>
+      <td>Flavell et al., 2013</td>
+      <td>ID_BargmannDatabase:CX14271</td>
+      <td>Figure 5—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>tax-4</td>
+      <td>Worthy et al., 2018</td>
+      <td>ID_BargmannDatabase:CX13078</td>
+      <td>Figure 6, Figure 6—figure supplements 1 and 2, 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>ASJ rescue; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX11118</td>
+      <td>Figure 6, Figure 6—figure supplements 2 and 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>ASK rescue; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX13361</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>ASJ +ASK rescue; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX11110</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>AWC rescue; tax-4</td>
+      <td>Worthy et al., 2018</td>
+      <td>ID_BargmannDatabase:CX13790</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>ASI rescue; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX11558</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>URX/AQR/PQR rescue; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX11113</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pharynx ReaChR; tax-4</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX18452</td>
+      <td>Figure 6, Figure 6—figure supplement 3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, N2 hermaphrodite)</td>
+      <td>pharynx ReaChR; tax-4; ASJ rescue</td>
+      <td>This paper</td>
+      <td>ID_BargmannDatabase:CX18538</td>
+      <td>Figure 6, Figure 6—figure supplement 3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli, OP50)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>https://cgc.umn.edu/strain/OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aztreonam</td>
+      <td>Sigma</td>
+      <td>PZ0038</td>
+      <td>CAS:78110-38-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>all trans-Retinal (ATR)</td>
+      <td>Sigma</td>
+      <td>R2500</td>
+      <td>CAS:116-31-4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (https://imagej.nih.gov/)</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 1.50i</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks (https://www.mathworks.com/)</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2018a, R2020a, R2021a, R2023a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlyCapture</td>
+      <td>Pointgrey (https://www.ptgrey.com/)</td>
+      <td></td>
+      <td>Version FlyCap2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python (python.org)</td>
+      <td>RRID:SCR_008394</td>
+      <td>Version 3.8.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tracking and analysis code</td>
+      <td>this paper; Scheer and Bargmann, 2023</td>
+      <td>https://github.com/BargmannLab/Scheer_Bargmann2023</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Nematode and bacterial culture
 
 Bacterial food used in all experiments was E. coli strain OP50. Nematodes were grown at 20 °C on nematode growth media plates (NGM; 51.3 mM NaCl, 1.7% agar, 0.25% peptone, 1 mM CaCl2, 12.9 μM cholesterol, 1 mM MgSO4, 25 mM KPO4, pH 6) seeded with 200 μL of a saturated E. coli liquid culture that had been grown at room temperature for 48 hr or overnight at 37 °C (without shaking) from a single colony of OP50 in 100 mL of sterile LB (Brenner, 1974). All experiments were performed on young adult hermaphrodites, picked as L4 larvae the evening before an experiment. Wild-type controls were the CGC1 (previously PD1074) sequenced strain derived from the N2 Bristol strain (Yoshimura et al., 2019), except for Figure 4 tph-1 and cat-2 controls, which were the CX0001 isolate of the N2 Bristol strain. Mutant strains were backcrossed into wild type to reduce background mutations. Transgenic strains were always compared to matched controls tested in parallel on the same days. Full genotypes and detailed descriptions of all strains and transgenes appear in Supplementary file 3: Strain details.
 
-## Molecular biology and transgenics
+### Molecular biology and transgenics
 
 Strains tested for pdfr-1 rescue using PCR-amplified genomic fragments (Figure 5—figure supplement 1) were from Flavell et al., 2013. For cell-selective pdfr-1 rescue, an inverted cDNA under the pdfr-1 distal promoter was the floxed rescue construct (Figure 5—figure supplement 2), and Cre expression was driven by a pan-neuronal promoter (tag-168), in RIM (tdc-1), in AIY and others (mod-1), in RIA (glr-3), and in RIB (sto-3). A 972 bp region upstream of the sto-3 gene that drives expression solely in the RIB neurons was cloned using these primers:
 
@@ -111,51 +439,51 @@ Strains and extrachromosomal arrays for tax-4 rescue were reported in Macosko et
 
 Transgenic animals were generated by microinjection of DNA containing the genetic construct of interest, a fluorescent co-injection marker (myo-2p::mCherry, myo-3p::mCherry, elt-2p::nGFP, elt-2p::mCherry), and empty pSM vector to reach a final DNA concentration of 100 ng/μL. Transgenes were maintained as extrachromosomal arrays.
 
-## Small lawn foraging assay
+### Small lawn foraging assay
 
 For all assays, E. coli OP50 was grown overnight in a shaking LB liquid culture from a single colony at 37 °C. On the morning of the assay, 400 μL of saturated liquid culture was diluted into 5 mL of LB and allowed to grow to OD1 at 37 °C (~1.5 hours), as measured by spectrophotometer. The liquid culture was then spun down and resuspended in M9 buffer (3 g KH2PO4, 6 g Na2HPO4, 5 g NaCl, 1 ml 1 M MgSO4, H2O to 1 liter) then concentrated to a density of OD2 (and OD1 or OD4 in Figure 3A–B). To generate the test lawns, 2 μL of this concentrated bacterial resuspension was seeded onto NGM agar in the center of each well of a custom-made laser-cut six-well plate, where each well is 10 mm in diameter (Stern et al., 2017).
 
 50 μL of bacterial resuspension was seeded onto a separate NGM agar plate to be used as a food density acclimation plate. Lawns were grown at 20–22°C for 2 hr before the assay. Adult hermaphrodites picked as L4s 16–20 hr before the assay were then transferred to acclimation plates. After 45–90 min, animals were transferred to an unseeded NGM plate, cleaned of E. coli, and transferred singly into each well of the assay plates, where they were placed on bacteria-free agar and allowed to find the small food lawn on their own. Animals of the same genotype were grouped on the same six-well plates and each plate was recorded by a single camera. We used 12 cameras, enabling simultaneous recording of up to 72 individual animals at a time. Temperature and relative humidity within the behavioral recording apparatus were continuously monitored during recordings to ensure that environmental conditions were consistent across filming locations. As a further precaution, the filming locations of each genotype and wild type controls within the recording apparatus were randomized across batches of experiments and days to average out behavioral influences deriving from non-uniform local environmental conditions. Assays were recorded for 1 hr at 3 frames per second using 12 8.8 MP USB3 cameras (Pointgrey, Flea3) and 35 mm high-resolution objectives (Edmund Optics). LED backlights (Metaphase Technologies) provided uniform illumination of the assay plates. Commercial software (Flycapture, Pointgrey) was used to record the movies.
 
-## Uniform lawn assay
+### Uniform lawn assay
 
 Assays testing worm behavior on uniform bacterial lawns were performed as in the small lawn foraging assay with the exception that instead of 2 μL of bacteria seeded in the center of the well, 15 μL of OD2 bacterial suspension was spread evenly throughout the well. Bacteria were grown for 2 hr before acclimation and starting the assay.
 
-## Optogenetic feeding inhibition assay
+### Optogenetic feeding inhibition assay
 
 Pharyngeal pumping was inhibited by expressing the red-shifted channelrhodopsin ReaChR (Lin et al., 2013) under the myo-2 pharyngeal muscle promoter (a strain generously provided by Steve Flavell). Animals were stimulated while navigating small food lawns described above. Experimental animals were grown on bacterial lawns containing 50 μM all-trans retinal (+ATR) overnight before assays. Control animals were placed on lawns made in parallel that did not contain retinal (-ATR). A 590 nm Precision LED with Uniform Illumination (Mightex) controlled with custom MATLAB software was used to deliver optogenetic stimuli. Animals were acclimated to small lawns (no ATR) for 20 min before being exposed to alternating 10 min intervals of light OFF and light ON using 590 nm light at 60 μW/mm2 strobed at 10 Hz with a 50% duty cycle (Figure 3, Figure 4—figure supplement 1, Figure 6, Figure 6—figure supplement 3). Recording hardware and software was identical to that of off-food foraging assays without optogenetic stimulation except that 475 nm short-pass filters were used on recording optics (Edmund Optics) to prevent overexposure of the video recording during light pulse delivery.
 
 For behavioral quantification in Figure 3E–F, Figure 4—figure supplement 1A and C–D, and Figure 6—figure supplement 3A, only data before, during and after the first light pulse is shown. For aggregate comparisons of within-animal behavior in light OFF vs. light ON conditions, the two light OFF and light ON pulses were merged, that is merging intervals 0–10 min +20–30 min, and 10–20 min + 30–40 min for statistical analyses. For statistical tests comparing the fraction of animals roaming across genotypes or conditions, steady state light intervals were used for averaging and comparing as indicated in the figure legends: 0–10, 12–20, 22–30 min.
 
-## RIB::BlaC assay
+### RIB::BlaC assay
 
 Activation of the RIB neurons was accomplished using blue light-activated adenylyl cyclase BlaC (Ryu et al., 2010). BlaC was cloned into the pSM vector under the sto-3 promoter to drive expression in the RIB neurons. Stimulation was carried out as described for ReaChR (above), except no all-trans retinal was applied and the animals were exposed to blue light (455 nm) at 3 μW/mm2 strobed at 10 Hz with a 50% duty cycle (Figure 5, Figure 5—figure supplement 3). To prevent overexposure of the video recording during light pulse delivery, 525-nm long pass filters were used on recording optics (Edmund Optics). Behavioral quantification for Figure 5B–C was conducted as above (optogenetic feeding inhibition assay).
 
-## Inedible food assay
+### Inedible food assay
 
 Experiments with inedible bacterial food generated by addition of aztreonam were performed following the protocol of Gruninger et al., 2008. E. coli OP50 was grown in LB from a single colony to saturation overnight. On the morning of the assay, 400 μL of saturated liquid culture was diluted into 5 mL of LB with aztreonam (10 μg/ml) and allowed to grow to OD1 at 37 °C. To generate test lawns, 2 μL of this bacterial suspension was plated on NGM agar test plates containing aztreonam (10 μg/ml). Small lawn assays were performed as described above (see ‘Small lawn foraging assay’), except that bacteria on NGM +aztreonam plates were allowed to grow for 4 hr before assay testing. To test for any acute behavioral responses to aztreonam, we also performed a control ‘post-add’ experiment, in which 2 μL of either 4 μg/mL aztreonam dissolved in DMSO or DMSO alone was added to normal small bacterial lawns after 4 hr of growth on NGM agar (Figure 3—figure supplement 1).
 
-## Behavioral tracking and lawn feature detection
+### Behavioral tracking and lawn feature detection
 
 Because each video recorded the behavior of up to 6 individual animals, videos were manually cropped so each surrounded just a single animal using FFmpeg software (Tomar, 2006). To extract animal positions and postures, captured movies were analyzed by custom made scripts in MATLAB (Mathworks, version 2021a) using the Image Processing Toolbox and the Computer Vision Toolbox. In each frame of the movie, the worm is segmented by background subtraction and its XY position is tracked over time using a Kalman filter. From the background-subtracted worm image, a smooth spline of 49 points was computationally applied and features relating to the movement of points along the body were derived following Javer et al., 2018. Disambiguation of the head versus tail was determined by assigning the head as the end of the spline that had greater cumulative displacement over the video assay, facilitating determination of times when the animal moved forward and backward.
 
-## Behavioral features extracted
+### Behavioral features extracted
 
 Features were defined as described in Javer et al., 2018. Briefly, body parts were defined based on a skeletonized spline containing 49 points equally distributed along the length of the worm body. The head comprises spline points 1–8. The midbody comprises spline points 17–33. The positions of head and midbody were calculated by deriving the centroid of each of these point sets by averaging their x and y positions before subsequent analyses (see Figure 2—figure supplement 2).
 
 All these features were binned into contiguous 10 s intervals for subsequent analyses. There are also several features only defined for 10 s bins:
 
-## Lawn boundary-related metrics and Lawn boundary interaction behaviors
+### Lawn boundary-related metrics and Lawn boundary interaction behaviors
 
 The outline of the bacterial lawn was determined by edge detectors applied to the background averaged across movie frames. Across every frame, the closest boundary point to the animal’s head was determined and used to calculate ‘lawn boundary distance’.
 
 Lawn boundary distance and movement direction were used to classify a set of lawn boundary interaction behaviors. Head pokes were classified based on an excursion of the head that peaks outside the lawn before returning to the lawn interior. In the period following maximal displacement outside the lawn and before resuming locomotion inside the lawn (‘recovery interval’), three types of head pokes were categorized: head poke forward, in which at least half of the recovery interval is spent moving forward, head poke reversal, in which the animal executes a reversal during the recovery interval, or head poke pauses, in which an animal spends at least half of the recovery interval with speed less than 0.02 mm/s. Lawn leaving events were marked as the first frame when the animal’s head emerged from the lawn before its entire body exited the lawn.
 
-## Quality control for including animals in subsequent analyses
+### Quality control for including animals in subsequent analyses
 
 Behavior and lawn features were detected and tracked over the 1 hr assay but only the latter 40 min of data were retained for analysis to minimize the effects from manipulating animals prior to recordings. Data from single animals were only retained in subsequent analyses if the following conditions were met: (1) the worm was visible in the video for at least half of the time the worm was recorded (cumulatively 30 min), (2) the worm was inside the bacterial lawn for at least one minute within the first 20 min of the video (before usable data was collected), (3) the plate was not bumped during the recording. All criteria were established before data collection.
 
-## Quantitative locomotion analysis and HMM analyses
+### Quantitative locomotion analysis and HMM analyses
 
 All quantitative analyses of locomotion and Hidden Markov Model building after behavioral tracking were performed in Python. For all analyses of animal locomotion and model-building, behavioral data from animals outside the food lawn was censored.
 
@@ -163,17 +491,17 @@ To classify roaming and dwelling states, speed and angular speed of animal centr
 
 An Autoregressive Hidden Markov Model (AR-HMM) was trained to segment animal behavioral states on food using a different set of behavioral features relating to forward body movement and head movements: fraction of time moving forward per 10 s bin, midbody forward speed, midbody angular speed, head angular velocity relative to midbody and head radial velocity relative to midbody (Figure 2, Figure 2—figure supplement 2, see above for feature definitions).
 
-Formally, at each time step t, we have discrete hidden states zt∈1,2,...K  that follow Markovian dynamics, zt+1|zt,{πk}k=1K∼πzt,  where {πk}k=1K is the transition matrix and πk∈[0,1]K corresponds to the k-th row. Given hidden states zt, the resulting feature dynamics are given by xt|xt−1,zt∼N(Aztxt−1+bzt,Qzt), where Ak and Qk are real 5x5 linear dynamics and covariance matrices, respectively. bk∈R5 is the bias. The linear dynamics matrix A specifies a continuous flow on the feature space. The bias term b can drive the dynamics in a particular direction. In the case where A is all zeros, the system has no dynamics and this amounts to a Hidden Markov Model with Gaussian emissions. AR-HMMs were also trained using the SSM package (Linderman et al., 2020). AR-HMM performance was evaluated by calculating the ratio of the log-likelihood of held-out test data set using the AR-HMM same data under the AR-HMM and a multivariate Gaussian model xt∼N(μ,Σ).
+Formally, at each time step t, we have discrete hidden states $z_{t}\in1,2,...K$  that follow Markovian dynamics, $z_{t+1}|z_{t},{\pi_{k}}_{k=1}^{K}∼\pi_{z_{t}},$  where ${\pi_{k}}_{k=1}^{K}$ is the transition matrix and $\pi_{k}\in[0,1]^{K}$ corresponds to the k-th row. Given hidden states $z_{t}$, the resulting feature dynamics are given by $x_{t}|x_{t−1},z_{t}∼N(A_{z_{t}}x_{t−1}+b_{z_{t}},Q_{z_{t}})$, where $A_{k}$ and $Q_{k}$ are real 5x5 linear dynamics and covariance matrices, respectively. $b_{k}\inR^{5}$ is the bias. The linear dynamics matrix A specifies a continuous flow on the feature space. The bias term $b$ can drive the dynamics in a particular direction. In the case where A is all zeros, the system has no dynamics and this amounts to a Hidden Markov Model with Gaussian emissions. AR-HMMs were also trained using the SSM package (Linderman et al., 2020). AR-HMM performance was evaluated by calculating the ratio of the log-likelihood of held-out test data set using the AR-HMM same data under the AR-HMM and a multivariate Gaussian model $x_{t}∼N(\mu,Σ)$.
 
-## Sample size determination, replicates and group allocation
+### Sample size determination, replicates and group allocation
 
 The number of animals in each experiment is detailed in the figure legends. Assays were typically repeated across at least 2 days of experiments to account for day-to-day variability. Control animals were always run on the same days as experimental animals.
 
 Using G*POWER 3.1, we chose sample sizes based on the desired ability to detect an effect size of 1 with 80% power and a 5% alpha, yielding a minimum value of n=18 animals per group for a two-sample unmatched comparison of means and n=11 animals per group for a matched comparison of means (Faul et al., 2009).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-All comparisons in the fraction of time roaming were performed after logit-transformation logitp=ln⁡(p1-p), where p is the fraction of time spent roaming per animal.
+All comparisons in the fraction of time roaming were performed after logit-transformation $logitp=ln⁡(\frac{p}{1-p})$, where p is the fraction of time spent roaming per animal.
 
 Either Wilcoxon rank sum test or paired t-tests were used to compare matched data (roaming speed at –3 to –1 min vs. last 30 s before leaving, number of lawn leaving events during light OFF vs. ON, fraction of time roaming during light OFF vs. ON).
 

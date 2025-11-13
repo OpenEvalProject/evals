@@ -28,13 +28,21 @@ T4 neurons use both local excitatory and inhibitory inputs to generate directio
 
 ## Results
 
-## Whole-cell recordings of T5 neurons show small-field, directionally selective responses
+### Whole-cell recordings of T5 neurons show small-field, directionally selective responses
 
 We measured visual responses of T5 neurons by targeting in-vivo whole-cell electrophysiological recordings to their GFP-labelled somata and presenting stimuli on a hemi-cylindrical LED display (Figure 1B). We confirmed the identity of the labeled neurons as T5 cells by recording reliable depolarizations in response to small OFF flashing squares (~11°×11°; pixels turned off from an intermediate-intensity background). These flashing squares were also used to localize the RF center (Figure 1C) in a step-wise process that mapped the maximal response position for each recorded neuron by probing smaller areas at higher resolution until the peak response was localized to a single pixel (~2°×2°) of the display. Having localized the RF center, we then evaluated DS for each neuron by measuring responses to bars of three widths moving through the RF center along eight directions. The bars moved at the speed (28°/s) that produced the largest directionally selective responses in T4 neurons (Gruntman et al., 2018). Each of the 17 T5 neurons we recorded showed clear preferred and null directions (PD and ND) of motion, with relatively wide tuning (i.e. similar magnitude responses in the directions ± 45° away from the PD; individual neuron example Figure 1D; population responses Figure 1E). The PD response shows a clear hyperpolarization following the depolarizing peak, and the ND response shows a dip preceding the depolarization peak. We quantified these responses with a Directional Selectivity Index (DSI = [PDmax – NDmax]/PDmax), and found that this measure is significantly different from zero for the three widths tested (Figure 1E). We note that the smallest bar presented (1-pixel wide,~2°) generated a clear directionally selective response but did not induce the prominent hyperpolarization observed for the wider bars. We further note that although wider bars evoked stronger responses, they did not increase the DSI (Figure 1E), because these stronger stimuli also evoked a corresponding increase in the ND response magnitude. The response dynamics and the width of the directional tuning are similar to our T4 responses to moving bars (Figure 1 of Gruntman et al., 2018).
 
-## T5 receptive field is comprised of spatially offset depolarization and hyperpolarization
+### T5 receptive field is comprised of spatially offset depolarization and hyperpolarization
 
 Classic studies of mammalian directionally selective neurons used decomposable motion stimuli to map spatial responses to the individual components (the ‘first-order RF’), and to their pairwise interactions (the ‘second-order RF’). This procedure was important in ruling out competing models for generating DS (Barlow and Levick, 1965; Emerson et al., 1992; Emerson et al., 1987; Jagadeesh et al., 1993). In our previous work (Gruntman et al., 2018), we adapted this approach to T4 neurons, and found that a fine-scale characterization of the neuron’s first-order RF was incompatible with the Hassenstein-Reichardt model (Hassenstein and Reichardt, 1956), the predominant model for computing DS in insects. We wondered whether the differences between the signs of T4’s and T5’s columnar inputs would also produce functional changes in the first-order RF. We therefore used on-line stimulus generation to map the spatial and temporal properties of T5 receptive fields using flashing bars presented along the identified PD-ND axis of each cell (Figure 1). We used bars of width 1, 2, and 4 pixels (corresponding to 2.25°, 4.5°, and 9° of visual angle), and our RF maps are plotted (Figure 2) along a stimulus position axis, where a unit change in position is equivalent to a 1-pixel movement of a width 1 bar (see Figure 2—figure supplement 1 for mapping onto visual angle for T5 neurons with PDs aligned to diagonal and cardinal directions on our display). Although these single position bar flashes lack directional information, the temporal and spatial structure of T5 responses to them make up the first-order RF that is used for all further comparisons, since more complex stimuli can be comprised of different concatenations of single position flashes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig2-v2.jpg)
+
+**Figure 2.:** (A) Averaged, baseline-subtracted responses (mean ± SEM) to bar flash stimulus at the indicated positions (numbered below, examples schematized above) along the PD–ND axis of each cell (n = 17 cells) aligned to the central depolarizing position (=0, see Materials and methods for details). Responses to 40 ms flashes in gray; responses to 160 ms flashes are colored. Elongated bar in each stimulus schematic marks center position. Downwards arrowhead: example non-linearity in responses to stimuli of different durations. Upwards arrowhead: example non-linearity in hyperpolarization in response to stimuli of different durations. (B) Mean responses from indicated positions in (A) of width-2 bar flashes, aligned to stimulus presentation (gray rectangle). (C) Response rise start time (time to reach 10% of max), rise time (10%–50%), and decay time (80%–20%) for positions surrounding the receptive field center (calculated for 160 ms flashes of width-2 bars). Results presented as differences from the central position (* indicates significantly above/below zero for pooled positions from the leading/trailing side respectively, two-tailed t-test, p<0.05; n = 17 cells). (D) Maximum depolarizing and hyperpolarizing responses at each stimulus position for 160 ms bar flashes of all three widths. Dots correspond to median response (size indicates the number of cells for each position), shaded regions demarcate upper and lower quartiles. Superimposed black line represents the median T4 results for width 1 ON bars (Gruntman et al., 2018). See also Figure 2—figure supplement 1 for the T5 receptive field corrected for visual angle.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Averaged, baseline-subtracted responses (mean ± SEM) to bar flash stimuli (width 4, 160 ms) at the indicated positions (numbered below) along the PD–ND axis of each cell (n = 12 cells for diagonal; n = 5 cells for cardinal) aligned to the center excitatory position. (B) Maximum depolarizing and hyperpolarizing responses at each stimulus position for 160 ms bar flashes of all three widths corrected for visual angle. Lines correspond to median responses; shaded regions demarcate upper and lower quartiles. Note that after correction the receptive fields for both groups are highly overlapping.
 
 Aligning the responses from all the cells based on the position of the peak depolarization (Figure 2A) reveals T5’s (first-order) RF structure: (1) Depolarizing responses dominate the center, with increased response magnitude for stronger stimuli (wider bars or flashes of longer duration). This increase is not linear. For example, at certain positions responses cannot be detected for weak stimuli but clear responses can be seen for stronger stimuli (e.g. compare bar width 1 at position 5, gray vs. brown traces, downwards arrowhead). (2) Inputs along the PD-ND axis are spatially asymmetric around the RF center. On the leading side of the RF the responses reflect depolarizing input (Figure 2A, green positions), while on the trailing side, responses show a mixture of depolarization and hyperpolarization (Figure 2A, pink positions). This general structure is similar to T5 measurements in a recent paper using voltage imaging (Wienecke et al., 2018). Although stronger stimuli (wider bars or longer duration flashes) induce a stronger hyperpolarizing component in the response, this effect is also non-linear. For example, average traces in position 3 (bars of width 2) show no hyperpolarization for a 40 ms flash (gray trace), but a prominent hyperpolarization when the flash duration is 160 ms (brown trace, Figure 2A, upwards arrowhead).
 
@@ -44,17 +52,37 @@ Spatially asymmetric hyperpolarization also induces faster decaying responses on
 
 Plotting the peak depolarization and hyperpolarization for each cell at each position for long duration flashes of all widths illustrates the RF structure described above: depolarizing component decaying symmetrically from the center, and an asymmetric hyperpolarizing component on the trailing side (Figure 2D). This structure is comparable to the RF structure we measured for T4 cells (Figure 2D, black curves). Note that the T4 RF was mapped using responses to a bar of width 1, suggesting a potential size-sensitivity difference between the ON and the OFF pathways (consistent with Haag et al., 2017). The high degree of similarity in the first-order RF between T4 and T5 cells suggests that both cell types receive similar (functional) inputs. But do they use a similar DS mechanism? To test this directly we next characterized T5 responses to elementary motion stimuli.
 
-## T5 neurons generate directional selectivity using ND suppression
+### T5 neurons generate directional selectivity using ND suppression
 
 Sequential presentation of two adjacent bar flashes, sometimes referred to as two-step apparent motion, is a common stimulus used to map the second-order RF of directionally selective cells by comparing the superposition (summation shifted in time) of the first-order responses with the responses to the sequential, two position stimulation (Figure 3A). This comparison is a direct test for the relative contribution of either PD enhancement or ND suppression in generating the directionally selective response (Figure 3A). To illustrate the general response properties, we focus first on responses to width two bars that were each presented for 160 ms (Figure 3B,C). Responses on the leading side of the RF, up to and including the center (position 0), did not exhibit DS. Since both PD and ND combinations evoke a similar maximal response (e.g. −3 to −1 versus −1 to −3, horizontal lines) the neurons are effectively ‘motion blind’ in this region of the RF. Responses to combinations that included the trailing side of the RF, where hyperpolarization was detected (Figure 2D), exhibited a larger maximal response for the PD combination, and therefore exhibited DS (e.g. Figure 3B 1 to 3 in red versus 3 to 1 in blue, horizontal lines).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematized responses to the elementary motion stimulus of sequential bar pair flashes. Response could be the sum of the responses to the individual flashes (top), could show preferred direction, PD, enhancement (middle) or null direction, ND, suppression (bottom). (B) Baseline-subtracted responses (mean ± SEM) to bar pair combinations presented at different positions along the PD–ND axis (n = 3,11,11,8 cells). Top: responses to PD and ND bar pairs. Middle: responses to PD bar pairs (same as top) with the temporally aligned sum of the responses to the component bar flashes in pink. Bottom: responses to ND bar pairs (same as top), sum of responses to component bar flashes in cyan. Stimulus presentation interval indicated with gray rectangles. Stimulus schematic shows positions of both bars (0 position depicted by elongated bar). (C) Boxplot summary of response maxima for (B) (same color conventions). Top: response maxima, Middle and Bottom: second bar maxima for measured and summed responses. (D) Boxplot summary of response maxima differences for all (non-overlapping) bar pair stimuli presented. Top: difference between PD and ND, positive value indicates a directionally selective response. Middle: difference between second bar response maxima for measured and summed PD responses. Positive value indicates PD enhancement. Bottom: same as middle, but for ND. Negative value indicates ND suppression (* indicates mean significantly differs from zero, unpaired t-test corrected for multiple comparisons by controlling for the false discovery rate with q = 0.075). Boldface positions are presented in (B) and (C). (E) Comparison of directional selectivity versus linearity of response for all presented bar pair combinations, including data from (D) and responses to overlapping positions (see Materials and methods). Each dot corresponds to the mean (of n ≥ 3 cells) response differences for each position pair (± SEM). Marker size indicates bar width (small for 2, large for 4-pixel wide), marker fill indicates duration (empty 40 ms, filled 160 ms). Results of linear regression in black (non-significant slope for MeasuredPD - SumPD vs. MaxPD - MaxND, [−0.402, 0.073], 95% confidence interval; significant slope for MeasuredND - SumND vs. MaxPD - MaxND, [−0.641,–0.301], 95% confidence interval). See also Figure 3—figure supplement 2 for more details of bar width four responses.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** This figure shows the same analysis and results as in Figure 3, but summarized using response mean rather than peak. (A) Baseline-subtracted responses (mean ± SEM) to bar pair combinations presented at different positions along the PD–ND axis (same as in Figure 3). (B) Boxplot summary of response means for (A) (same color conventions). Top: response means, Middle and Bottom: second bar means for measured and summed responses. (C) Boxplot summary of differences in response means for all (non-overlapping) bar pair stimuli presented. Top: difference between PD and ND, positive value indicates a directionally selective response. Middle: difference between second bar response means for measured and summed PD responses. Positive value indicates PD enhancement. Bottom: same as middle, but for ND. Negative value indicates ND suppression (* indicates mean significantly differs from zero, unpaired t-test corrected for multiple comparisons by controlling for the false discovery rate with q = 0.075). Boldface positions are presented in (A and B). (D) Comparison of directional selectivity versus linearity of response for all presented bar pair combinations, including data from (C) and responses to overlapping positions (see Materials and methods). Each dot corresponds to the mean (of n ≥ 3 cells) response differences for each position pair (± SEM). Marker size indicates bar width (small for 2, large for 4-pixel wide), marker fill indicates duration (empty 40 ms, filled 160 ms). Results of linear regression in black (non-significant slope for MeasuredPD - SumPD vs. MeanPD - MeanND , [−0.25, 0.21], 95% confidence interval; significant slope for MeasuredND - SumND vs. MeanPD - MeanND ,. [−0.6,–0.21], 95% confidence interval).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Same as Figure 3B for 4-pixel-wide (9°) apparent motion stimuli. Stimulus schematic depicts positional information only and are presented in a staggered manner to illustrate overlapping positions for these pairwise combinations. Numbers below each column indicate the number of cells for that pairwise comparison. (B) Same as (A), but for non-overlapping positions. Summary of these pairwise combinations is shown in Figure 3D. Every combination shows a clear sub-linearity in response to the second bar’s appearance (measured response is always close to or smaller than the summed response in the lighter color).
 
 To further explore the mechanism underlying DS we compare each two bar stimulus response (Figure 3B middle and bottom, darker traces) to the superposition of the component responses (Figure 3B middle and bottom, lighter traces). In the leading side of the RF, where T5 is ‘motion blind,’ we find that the sequential responses are well approximated by the sum of the individual responses. However, in the trailing side of the RF, where T5 generates directionally selective responses, this comparison reveals suppression of ND responses (blue arrow), as can be seen in the comparison between responses to the second bar (whose location provides the directional component of the stimulus pair; Figure 3C). We note that there are no conditions where the summed responses are smaller than the measured responses, regardless of whether the comparison is made using response maximum or mean (Figure 3—figure supplement 1). In other words, no combinations of 4.5° bars showed PD enhancement. A recent paper using calcium imaging reported PD enhancement in both T4 and T5 cells, but only for stimuli above a certain size (>6° for T5s; Haag et al., 2017). However, our findings hold for all of the apparent motion conditions we tested: fast (40 ms) and slow (160 ms), bars of width 2 (4.5°) and width 4 (9°), and sequential positions that were either adjacent or overlapping (Figure 3D,E and Figure 3—figure supplement 2). Although PD responses exhibited suppression (Figure 3D, middle), these stimuli still evoked directionally selective responses in trailing side positions due to the asymmetric structure of the RF and the even larger suppression of ND stimulation (Figure 3D, top).
 
 To summarize the responses to all of these different pairwise combinations we plot the difference between the peak responses of each PD and ND sequence pair (a measure of DS, with a positive value indicating PD preference) against the difference between the measured response and the sum of the component responses (indicating suppression when negative, enhancement when positive). Although we used an expansive stimulus set, we found numerous combinations showing ND suppression and not a single condition showing an enhanced PD response (this is again valid if the comparison is based on mean responses, see Figure 3—figure supplement 1D). Furthermore, we found a significant correlation between the magnitude of ND suppression and the magnitude of the directionally selective response (more suppression correlates with more DS), while no such correlation was found for PD responses (Figure 3E; MeasuredND - SumND vs. MaxPD - MaxND R2: 0.396, slope 95% confidence interval: [−0.64,–0.31]; MeasuredPD - SumPD vs. MaxPD - MaxND R2: 0.02, slope 95% confidence interval: [−0.402, 0.073]). Taken together, these data provide strong evidence for the suppression of ND motion as the only mechanism through which DS is generated in the membrane potential of T5 neurons.
 
-## A conductance-based model quantitatively predicts directionally selective responses
+### A conductance-based model quantitatively predicts directionally selective responses
 
 We constructed a conductance-based neuronal model to test our intuitive proposal regarding the generation of directionally selective responses in T5 cells. The model—henceforth referred to as the EI model—includes an excitatory and an inhibitory conductance that are combined using a biophysically inspired non-linearity (Figure 4A). The model, which is slightly simplified from our previous T4 model (Gruntman et al., 2018), is parameterized with spatial and temporal filters for each conductance (Supplementary file 1 and Materials and methods). Based on our previous T4 modeling (Gruntman et al., 2018), we hypothesized that the passive integration of these conductances would be sufficient to explain T5’s response dynamics. Our objective in constructing the EI model was not only to generate DS responses, but to explore whether the information contained in the responses to non-moving stimuli is sufficient to predict the neuron’s responses to more complex stimuli, such as drifting gratings.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig4-v2.jpg)
+
+**Figure 4.:** (A) T5 EI model schematic with fast spatially symmetric excitation and slow, trailing-side asymmetric inhibition. (B) Mean measured responses to single bar flashes of 3 widths and two flash durations at eight different positions (in colors) compared to predicted model responses (gray) from an example cell (same as Figure 1). Model parameters were optimized to each cell using only responses from bars of width 2 (brown frame). (C) Peak measured response compared to the peak of the predicted response for all bar flash stimuli from all cells and positions (empty marker denotes short duration flash, filled denotes long flashes). Each dot represents the mean peak response (for top 10 of 1000 optimization solutions for each cell, estimated by fit error), while vertical lines (most obscured by markers) represent maximal and minimal values of the peak responses. Diagonal lines surrounding the unity line denote + /- the upper quartile of the Mean Absolute Deviation (MAD) of responses to repeated presentation of the same stimuli (see Materials and methods). (D) Mean measured responses to moving bars of three widths and two speeds overlaid with predicted responses from linear (superposition of flash responses) and EI conductance model for same example cell and the same model parameters as in (B). Note scale change on voltage axis of linear predictions due to overestimation. (E) Peak measured responses compared to peak predicted responses from both linear and EI models for all moving bars (grouped by bar width). Plotting conventions as in C; except PD in red, ND in blue. Note consistent overestimation of linear model, which is exacerbated for larger stimuli. See also Figure 4—figure supplement 1 for distributions of individual cell measurement and EI model prediction responses.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each subplot shows peak measured responses compared to the peak model prediction responses for all the stimuli recorded for an individual cell. Plotting conventions are as in Figure 4C. The bolded value on the lower right of each plot is the proportion of model responses falling within the ‘MAD bounds’ (a measure of dispersion bases on the Mean Absolute Deviation of measured responses to the same stimulus).
 
 We optimized model parameters using an iterative, non-linear, least squares procedure to minimize the difference between the numerical simulation and measured responses for width 2 bar flashes (Figure 4B). Importantly, since we optimized only based on responses to static flashing bars, the model parameters were not influenced by any motion-related responses. The model’s responses to any stimulus are then simply the result of passive integration of excitatory and inhibitory conductances injected with a temporal pattern determined by the spatial and temporal structure of the stimulus (see Materials and methods). Since our aim was to predict responses to more complex stimuli and since these are sensitive to stimulus position within the RF, we optimized model parameters using responses from individual neurons, and not a population average.
 
@@ -62,7 +90,7 @@ The size of the stimuli used to probe directionally selective cells is a promine
 
 Our simple model accounts for responses to local flash stimuli of multiple widths (containing no directional information), but how well does it predict responses to moving bars of different widths? Our moving bar stimuli are comprised of an ordered sequence of bar flashes. This allowed us to compare EI model responses to moving bar stimuli with the linear superposition of bar flash responses (summed responses after appropriate temporal alignment). Figure 4D shows example traces from the same cell as in Figure 4B, with linear predictions on the left and EI model predictions on the right (same parameters as above). The linear model predictions capture some of the response dynamics but appear to overestimate response magnitudes, particularly for strong stimuli. Our EI model, on the other hand, captures both the magnitude of the maximal response in both directions and the dynamic structure of the response traces. For example, the simulated results to slow ND motion show a hyperpolarizing dip before the depolarizing peak, but this dip is absent from ND motion traces for fast motion. This is explained by the slow inhibitory conductance, which cannot contribute much to the early component of the response to fast motion. We again compared the maximal responses between both models’ predictions and measured data across all cells. Predictions from the linear model consistently overestimate the measured response (Figure 4E, left), and this overestimation is most severe for fast responses to wide bars. Although the limitations of a linear model have already been shown in Figure 3, here we find an even larger discrepancy with predictions of moving bar response due to error accumulation over time. In contrast, the EI model predictions match the measured responses more closely, with comparisons of max responses amplitudes spread evenly around the diagonal (Figure 4E, right). Notably, if PD enhancement contributed to generating DS responses to moving bars of width four in our measurements, we would see a consistent underestimate of PD motion by the simulation. However, the EI predicted responses for both PD and ND motion show the same symmetrical spread around the diagonal (Figure 4E, right), again confirming that a single, simple non-linear mechanism can account for DS responses to moving bars of different widths.
 
-## Conductance-based EI model recapitulates responses to more complex spatial and temporal stimuli
+### Conductance-based EI model recapitulates responses to more complex spatial and temporal stimuli
 
 Given the strong correspondence between model predictions and response measurements for bar flashes and moving bars across speeds and widths, we challenged our EI model with more complex stimuli. Bar flashes have a simple spatial and temporal structure; moving bars are comprised of sequential activation of adjacent positions. The stimulus presented in the example in Figure 5A, flashes of gratings in different phases, has a non-contiguous spatial structure, requiring spatial integration from different RF regions. As can be seen from the example cell (same cell and parameters as in Figure 4), our model also accurately predicted responses to these grating flashes. Importantly, when the visual input stimulated both the excitatory and the inhibitory fields (E or I above stimulus schematic in Figure 5A), the model predicted the dominant conductance, both in this individual example and in the population (Figure 5B).
 
@@ -72,21 +100,33 @@ Given the strong correspondence between model predictions and response measureme
 
 Next, we challenged our model with drifting gratings, the most complex stimulus we presented. This stimulus has a non-contiguous spatial structure that is swept across the RF in a temporally cyclic manner. We simulated responses to square wave grating (composed of dark and background level bars) moving at two different speeds and starting from two different phases (Figure 5C). Although the model parameters were optimized using only the static stimuli responses (Figure 4B, middle), the model’s predictions capture several aspects of the recorded responses: the transient responses to the appearance of the grating (that differ dramatically between the two phases), the amplitude of the oscillation (compared in Figure 5E), and even the apparent amplitude adaptation in the responses to fast-drifting gratings. The model correctly predicted some surprising aspects of measured responses, such as the different phase relations between PD and ND responses in the different cells (most cells show out-of-phase responses like Example cell 2, Figure 5D, while a few showed in-phase responses, like Example cell 1, Figure 5C). The correspondence between prediction and measurement (Figure 5E) suggests that this dramatic phase difference is largely a consequence of the structure of the first-order RF of each cell. In summary, a simple model that integrates fast, excitatory and spatially offset, slow inhibitory inputs predicts T5 responses to a range of visual stimuli.
 
-## A conductance model relying on removal of excitatory input cannot recapitulate T5 responses
+### A conductance model relying on removal of excitatory input cannot recapitulate T5 responses
 
 In our previous paper (Gruntman et al., 2018), we applied the EI model to T4 neurons from the ON motion pathway. T4 neurons receive small-field, local inhibitory inputs at a dendritic location that corresponds to the trailing side in our EI model, but T5 neurons do not (Shinomiya et al., 2019; Davis et al., 2018). Therefore, we asked whether T5 responses can be modeled without local inhibitory inputs, but rather with the local removal of excitation. The parameters for this model (referred to as the E+E- model) include the same linear filters that set the temporal dynamics of the conductances and the same Gaussian filters that establish their spatial receptive fields. To instantiate a removal of excitation model, we included two additional parameters: a magnitude for a stimulus-independent excitatory conductance from which excitation can be removed, and a magnitude for a stimulus-independent inhibitory conductance that ensures the neuron’s baseline will not drift due to the addition of the above conductance (see Materials and methods and Supplementary file 2).
 
 Figure 6 shows E+E- model simulation results (same optimization procedure) for the same example cell as in Figure 4. Although the E+E- model predicts the response magnitude for the bar width two stimuli that were used in the optimization, it fails to generalize, as evidenced by poor estimates of responses to wider bar flash stimuli (Figure 6A,B). The E+E- model predictions for moving bar stimuli also consistently overestimate the measured responses, with larger errors in the responses to ND stimuli (Figure 6C). The differential overestimation of ND responses means that response magnitudes to bars moving in the preferred or the null direction are similar. As a consequence, the directional selectivity of the E+E- model is lower than measured (DSI for the example cell indicated in Figure 6C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mean measured responses to single bar flashes of two widths flashed for 160 ms at eight different positions from the same example cell as in Figure 4 (in colors) compared to predicted E+E- model responses (gray). Model parameters were optimized using only responses to bar width two flashes (brown frame). (B) Peak measured response compared to peak predicted response for bar flash stimuli from all cells and positions. Same conventions as in Figure 4, but only 160 ms flash responses are shown. The E+E- model overestimates the width 4 bar flash responses. (C) Traces: Mean measured responses from same example cell as in Figure 4 for slow moving bar stimuli overlaid with E+E- model predicted responses. Scatter plots: Peak measured responses compared to peak predicted responses from E+E- model for all moving bar responses across cells (grouped by bar width). Plotting conventions as in Figure 4. Note similar response magnitude for PD and ND stimuli; DSI comparison provided for the example cell and E+E- model. See also Figure 6—figure supplements 1 and 2 for E+E- model results from different optimization procedures.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mean measured responses to single bar flashes of two widths flashed for 160 ms at eight different positions from the same example cell as in Figure 4 (in colors) compared to predicted E+E- model responses (gray). Model parameters were optimized using responses to flashing bars of both widths (brown frame). (B) Peak measured response compared to peak predicted response for bar flash stimuli from all cells and positions. Same conventions as in Figure 6. Note the under-estimation of width-2 bar flashes (C) Traces: Mean measured responses from same example cell and same stimuli as in Figure 6 overlaid with E+E- model predicted responses. Scatter plots: Peak measured responses compared to peak predicted responses from E+E- model for all moving bars responses across cells (grouped by bar width). Plotting conventions as in Figure 6. Note similar response magnitude for PD and ND stimuli; DSI comparison provided for the example cell and E+E- model. (D) Mean measured responses to slow (160 ms) flashes of grating stimuli in different phases compared with model predictions (same example cell, same model parameters as in (A). Stimulus schematic above traces are same as in Figure 5A. (E) Peak measured response compared to peak predicted response, for flashes of all grating phases. Plotting conventions as in Figure 5B.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Same as Figure 6—figure supplement 1, but these results were generated using model parameters that were optimized using flashing and moving bars responses of width 2 (brown frame).
+
 In analyzing the low directional selectivity of the E+E- model, we found that it is, in part, due to saturation of the removed excitatory conductance. To expand the effective dynamic range of the E- conductance we tried several alternative optimization procedures (Figure 6—figure supplements 1 and 2). We were able to reproduce responses to the stimuli used for optimization, but the same parameters failed to generalize to other stimuli. Specifically, the E+E- models generated responses that were less directionally selective than both our measurements and the EI model.
 
-## Inhibition is superior to removal of excitation for generating directional selectivity
+### Inhibition is superior to removal of excitation for generating directional selectivity
 
 To understand the inability of the E+E- model to generate strong directional selectivity for moving bars, we compared it to our EI model under similar conditions. We found three major differences contributing to the poor performance of the E+E- model (Figure 7, the relevant comparison for each major difference is indicated with a circled number).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/50706/elife-50706-fig7-v2.jpg)
 
-**Figure 7.:** Each column presents responses from a different model version to a moving bar stimulus of width 2 with 80ms step duration: EI model from Figure 4, E+E- model from Figure 6, and a Scaled version of the EI model. Parameters for first and second column are the best fit (for each model, separately) for the example cell used in Figure 4 and 6. The Scaled EI model parameters were inherited from the E+E- model (see Materials and methods for details), with coefficients (CE, CI) required to match the depolarizing and hyperpolarizing conductances in the numerator of the E+E- model. First and second rows show the dynamics of the depolarizing and hyperpolarizing conductances in each model to PD and ND stimuli. The dashed line in the E+E- column represents the magnitude of  (maximal value for EgE*-, see Materials and methods). Third, fourth, and fifth rows show, respectively, the integrated conductance, the total conductance, and the voltage response of each model version. Circled numbers and shaded frames emphasize comparisons discussed in the Results. Scale bars are shared across columns and, for the top four rows, represent 0.5 normalizing conductance (Leak for EI and scaled EI, total stimulus-independent conductances for E+E-).
+**Figure 7.:** Each column presents responses from a different model version to a moving bar stimulus of width 2 with 80ms step duration: EI model from Figure 4, E+E- model from Figure 6, and a Scaled version of the EI model. Parameters for first and second column are the best fit (for each model, separately) for the example cell used in Figure 4 and 6. The Scaled EI model parameters were inherited from the E+E- model (see Materials and methods for details), with coefficients (CE, CI) required to match the depolarizing and hyperpolarizing conductances in the numerator of the E+E- model. First and second rows show the dynamics of the depolarizing and hyperpolarizing conductances in each model to PD and ND stimuli. The dashed line in the E+E- column represents the magnitude of $g_{E}^{*}$ (maximal value for E-, see Materials and methods). Third, fourth, and fifth rows show, respectively, the integrated conductance, the total conductance, and the voltage response of each model version. Circled numbers and shaded frames emphasize comparisons discussed in the Results. Scale bars are shared across columns and, for the top four rows, represent 0.5 normalizing conductance (Leak for EI and scaled EI, total stimulus-independent conductances for E+E-).
 
 This model comparison shows that removing excitation is qualitatively different from adding inhibition. Implementing this seemingly simple change from I to E- leads to changes in the conductance balance, the creation of an intrinsic bound on the strength of hyperpolarization, and a less efficient differential suppression of PD and ND responses. This analysis further clarifies the importance of non-linearity for computing directional selectivity in our EI model. By normalizing the difference between the depolarizing and hyperpolarizing conductances with their sum, the EI model amplifies the differences between the PD and ND responses (already present in the ΔG). Taken together, these modeling results corroborate our central finding that inhibition appears to sculpt the essential asymmetry for directionally selective responses in T5 cells.
 
@@ -116,7 +156,45 @@ Motion vision in flies has long been a model system for neuronal computation. It
 
 ## Materials and methods
 
-## Electrophysiology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP</td>
+      <td>Janelia Research Campus</td>
+      <td>pJFRC28-10XUAS-IVS-GFP-p10 (attP2)</td>
+      <td>Rubin Lab JFRC28</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Stable split Gal4 (T5)</td>
+      <td>Janelia Research Campus</td>
+      <td>w; VT055812-AD(attP40); R47H05-DBD(attP2)</td>
+      <td>Rubin Lab SS25175</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks Inc</td>
+      <td>2018b</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Electrophysiology
 
 Experiments were performed on 1–2 day old female Drosophila melanogaster (flies were reared under 16:8 light:dark cycle at 24°C). To target T5 cells, a single genotype was used: pJFRC28-10XUAS-IVS-GFP-p10 (Pfeiffer et al., 2012) in attP2 crossed to stable split-GAL4 SS25175 (w; VT055812-AD(attP40); R47H05-DBD(attP2)) generously provided by Aljoscha Nern in Gerry Rubin’s lab (line details with expression data available from http://splitgal4.janelia.org/). Flies were briefly anesthetized on ice and transferred to a chilled vacuum holder where they were mounted, with the head tilted down, to a customized platform machined from PEEK using UV-cured glue (Loctite 3972). CAD files for the platform and vacuum holder are available upon request. To reduce brain motion the proboscis was fixed to the head with a small amount of the same glue. The posterior part of the cuticle was removed using syringe needles and fine forceps. The perineural sheath was peeled using fine forceps and, if needed, further removed with a suction pipette under the microscope. To further reduce brain motion, muscle 16 (Demerec, 1950) was removed from between the antenna.
 
@@ -126,7 +204,7 @@ The mounted, dissected flies were positioned on a rigid platform mounted on an a
 
 All recordings were obtained from the left side of the brain. Current clamp recordings were sampled at 20 KHz and low-pass filtered at 10 KHz using Axon multiClamp 700B amplifier (National Instrument PCIe-7842R LX50 Multifunction RIO board) using custom LabView (2013 v.13.0.1f2; National Instruments) and MATLAB (Mathworks, Inc) software. Shortly after breaking in, recordings were stabilized with a small injection of a hyperpolarizing current (0–3 pA) setting the membrane potential to a range between −60 to −55 mV (uncorrected for liquid junction potential). Occasionally, the injected current required adjustments, but these were done prior to the acquisition of the single bar flash data. To verify recording quality, current step injections were performed at the beginning of the experiment.
 
-## Visual stimuli
+### Visual stimuli
 
 The display was constructed from an updated version of the LED panels previously described (Reiser and Dickinson, 2008). The arena covered slightly more than one half of a cylinder (216° in azimuth and ~72° in elevation) of the fly’s visual field, with the diameter of each pixel subtending an angle of (at most) 2.25° on the fly eye. Green LEDs (emission peak: 565 nm) were used, dark stimuli (off pixels) were presented on an intermediate intensity background of ~31 cd/m2.
 
@@ -136,7 +214,7 @@ To map the receptive field (RF) center of each recorded cell, three grids of fla
 
 Other presented stimuli were:
 
-## Analysis
+### Analysis
 
 All data analysis was performed in MATLAB using custom written code. Since the T5 baseline was typically stable, we included only trials in which the mean pre-stimulus baseline did not differ from the overall pre-stimulus mean for that group of stimuli by more than 10 mV. We also verified that the pre-stimulus mean and overall mean for that trial did not differ by more than 15 mV (or 25 mV for slow moving bars, due to their strong responses). This is the same criteria we used for our previous T4 study (Gruntman et al., 2018). Responses were later aligned to the appearance of the bar stimulus and averaged (or the appearance of the bar in the central position in case of the 8-orientation moving bar). T5 cells are expected to signal using graded synapses. Consistent with this expectation, we find that T5 recordings only occasionally feature very small, fast transients (~1–2 mV in size) that could not be verified as spikes. Therefore, we have focused our analysis on the graded (sub-threshold) components of T5’s responses.
 
@@ -158,68 +236,144 @@ Data selection: For Figure 5, only cells that showed a non-diagonal preferred di
 
 Phase and amplitude calculation: For Figure 5, we calculated the phase by fitting a cosine to the response after removing the first cycle (to eliminate the effect of the grating appearance). When presented in Figure 5E, phase is shown between −2π and π to facilitate the separation of PD and ND responses for moving grating starting at the two different phases.
 
-## Statistics
+#### Statistics
 
 To determine statistically significant differences, the one-sided, unpaired Student's t-test was used for comparing groups (Figures 1E, 2C, and 3D). In Figure 3D, we controlled for the false discovery rate using the Benjamini and Hochberg procedure (Benjamini and Hochberg, 1995), with q = 0.075. We noted that data were approximately normally distributed in general, but no formal test was conducted. Regression analysis for Figure 3E and Figure 3—figure supplement 1D) was performed using MATLAB fit function, fitting a first-degree polynomial. No statistical methods were used to pre-determine sample sizes, however our sample sizes are similar to those reported in previous publications (Bahl et al., 2015; Turner-Evans et al., 2017; Tuthill et al., 2014). Data collection and analysis could not be performed blind to the conditions of the experiments.
 
-## Data plotting conventions
+#### Data plotting conventions
 
 All boxplots presented were plotted with these conventions: box represents upper and lower quartile range, line represents median, whiskers were omitted, and individual data points are overlaid on the box.
 
-## T5 neuron models (Figures 4, 5 and 7)
+### T5 neuron models (Figures 4, 5 and 7)
 
-## Model membrane potential
+#### Model membrane potential
 
-The models that follows are largely based on the T4 model we previously introduced (Gruntman et al., 2018). We modeled the dynamics of T5 somatic membrane potential, V(t), as a single-compartment conductance-based neuron(1)τV˙(t)=−(V(t)−VL)−(gE∗+gE(t))(V(t)−VE)−(gI∗+gI(t))(V(t)−VI)where τ denotes the integration time constant of the model neuron and VE, VI, VL denote, respectively, the excitatory, inhibitory, and leak reversal potentials. gE∗ denotes a baseline excitatory conductance that is stimulus-independent, from which a stimulus-dependent conductance could be added or removed (gE(t)). To ensure the baseline membrane potential will not drift due to the stimulus-independent conductance gE∗, we added a stimulus-independent inhibitory global conductance, gI∗. Finally, gI(t) denotes a stimulus-dependent inhibitory conductance. To simplify the model, and based on our results from the T4 model (Gruntman et al., 2018), we assumed negligible integration on the membrane and set τ=0.
+The models that follows are largely based on the T4 model we previously introduced (Gruntman et al., 2018). We modeled the dynamics of T5 somatic membrane potential, $V(t)$, as a single-compartment conductance-based neuron
 
-The model membrane potential (Equation 1) can thus be written as(2)V=VL+(gE∗+gE)VE+(gI∗+gI)VI1+gE∗+gI∗+gE+gIwhere, for simplicity, we omitted the time dependence in the conductances and membrane potential. When there is no input stimulus into the system, the baseline voltage is(3)Vb=VL+gE∗VE+gI∗VI1+gE∗+gI∗
+$$
+\tauV˙(t)=−(V(t)−V_{L})−(g_{E}^{∗}+g_{E}(t))(V(t)−V_{E})−(g_{I}^{∗}+g_{I}(t))(V(t)−V_{I})
+$$
 
-Note that in the presence of stimulus-independent conductances, the baseline voltage is not necessarily identical to the leak reversal potential. The difference between baseline voltage and leak reversal potential is(4)Vb−VL=gE∗(VE−VL)+gI∗(VI−VL)1+gE∗+gI∗=(VE−VL)gE∗−αgI∗1+gE∗+gI∗;α=VL−VIVE−VL
+where $\tau$ denotes the integration time constant of the model neuron and $V_{E}$, $V_{I}$, $V_{L}$ denote, respectively, the excitatory, inhibitory, and leak reversal potentials. $g_{E}^{∗}$ denotes a baseline excitatory conductance that is stimulus-independent, from which a stimulus-dependent conductance could be added or removed $(g_{E}(t))$. To ensure the baseline membrane potential will not drift due to the stimulus-independent conductance $g_{E}^{∗}$, we added a stimulus-independent inhibitory global conductance, $g_{I}^{∗}$. Finally, $g_{I}(t)$ denotes a stimulus-dependent inhibitory conductance. To simplify the model, and based on our results from the T4 model (Gruntman et al., 2018), we assumed negligible integration on the membrane and set $\tau=0$.
 
-The membrane potential in Equation 2 can thus be written as(5)V=Vb(1+gE∗+gI∗)+gEVE+gIVI1+gE∗+gI∗+gE+gI
+The model membrane potential (Equation 1) can thus be written as
 
-We can then compute the membrane potential change with respect to baseline as(6)V−Vb=(VE−Vb)gE+(VI−Vb)gI1+gE∗+gI∗+gE+gI=(VE−Vb)gE′−α′gI′1+gE′+gI′where gE′=gE1+gE∗+gI∗, gI′=gI1+gE∗+gI∗ denote the conductances normalized to the stimulus-independent total conductance, and α′=Vb−VIVE−Vb.
+$$
+V=\frac{V_{L}+(g_{E}^{∗}+g_{E})V_{E}+(g_{I}^{∗}+g_{I})V_{I}}{1+g_{E}^{∗}+g_{I}^{∗}+g_{E}+g_{I}}
+$$
 
-Finally, we can define an integrated conductance ΔG=gE′−α′gI′ and a total conductance ΣG=1+gE′+gI′, so that the model response (Equation 6) can be written as(7)V−Vb=(VE−Vb)ΔGΣG
+where, for simplicity, we omitted the time dependence in the conductances and membrane potential. When there is no input stimulus into the system, the baseline voltage is
 
-## T5 neuron model – EI version
+$$
+V_{b}=\frac{V_{L}+g_{E}^{∗}V_{E}+g_{I}^{∗}V_{I}}{1+g_{E}^{∗}+g_{I}^{∗}}
+$$
 
-In this model there is a stimulus-dependent excitatory conductance (gE=E), a stimulus-dependent inhibitory conductance (gI=I), and no stimulus-independent conductances (gI∗=gE∗=0). With these choices, the baseline membrane potential (Equation 3) becomes Vb=VL, and the membrane potential (Equation 6) becomes(8)V−VL=(VE−VL)E−αI1+E+Ias in our previously published model (Gruntman et al., 2018).
+Note that in the presence of stimulus-independent conductances, the baseline voltage is not necessarily identical to the leak reversal potential. The difference between baseline voltage and leak reversal potential is
 
-## T5 neuron model – E+E- version (Figures 6 and 7)
+$$
+V_{b}−V_{L}=\frac{g_{E}^{∗}(V_{E}−V_{L})+g_{I}^{∗}(V_{I}−V_{L})}{1+g_{E}^{∗}+g_{I}^{∗}}=(V_{E}−V_{L})\frac{g_{E}^{∗}−\alphag_{I}^{∗}}{1+g_{E}^{∗}+g_{I}^{∗}};\alpha=\frac{V_{L}−V_{I}}{V_{E}−V_{L}}
+$$
 
-We assume that both the stimulus-dependent added conductance (E+) and the stimulus-dependent removed conductance (E-) share the same reversal potential and therefore represent the total stimulus-dependent conductance in the model as gE=E+−E−.
+The membrane potential in Equation 2 can thus be written as
 
-We rectified E− to prevent negative conductance values,that is E− never exceeds the stimulus independent conductance (gE∗). The stimulus-dependent inhibitory conductance was assumed to be absent (gI=0).
+$$
+V=\frac{V_{b}(1+g_{E}^{∗}+g_{I}^{∗})+g_{E}V_{E}+g_{I}V_{I}}{1+g_{E}^{∗}+g_{I}^{∗}+g_{E}+g_{I}}
+$$
 
-## Bound for E- conductance
+We can then compute the membrane potential change with respect to baseline as
 
-With these choices, we can write Equation 6 as(9)V−Vb=(VE−Vb)E+′−E−′1+E+′−E−′where(10)E+/−′=E+/−′1+gE∗+gI∗
+$$
+V−V_{b}=\frac{(V_{E}−V_{b})g_{E}+(V_{I}−V_{b})g_{I}}{1+g_{E}^{∗}+g_{I}^{∗}+g_{E}+g_{I}}=(V_{E}−V_{b})\frac{g_{E}^{′}−\alpha^{′}g_{I}^{′}}{1+g_{E}^{′}+g_{I}^{′}}
+$$
 
-Since E− is removed, we demand E−≤gE∗. Therefore, E−≤gE∗1+gE∗+gI∗<1
+where $g_{E}^{′}=\frac{g_{E}}{1+g_{E}^{∗}+g_{I}^{∗}}$, $g_{I}^{′}=\frac{g_{I}}{1+g_{E}^{∗}+g_{I}^{∗}}$ denote the conductances normalized to the stimulus-independent total conductance, and $\alpha^{′}=\frac{V_{b}−V_{I}}{V_{E}−V_{b}}$.
 
-Additionally, from Equation 4 we know that(11)Vb≅VL⇒gE∗≅αgI∗
+Finally, we can define an integrated conductance $ΔG=g_{E}^{′}−\alpha^{′}g_{I}^{′}$ and a total conductance $ΣG=1+g_{E}^{′}+g_{I}^{′}$, so that the model response (Equation 6) can be written as
 
-Leading to the following bound for the E- conductance(12)E−′≤gE∗1+gE∗+gE∗/α
+$$
+V−V_{b}=(V_{E}−V_{b})\frac{ΔG}{ΣG}
+$$
 
-## T5 neuron model – scaled EI version (Figure 7)
+### T5 neuron model – EI version
+
+In this model there is a stimulus-dependent excitatory conductance $(g_{E}=E)$, a stimulus-dependent inhibitory conductance $(g_{I}=I)$, and no stimulus-independent conductances $(g_{I}^{∗}=g_{E}^{∗}=0)$. With these choices, the baseline membrane potential (Equation 3) becomes $V_{b}=V_{L}$, and the membrane potential (Equation 6) becomes
+
+$$
+V−V_{L}=(V_{E}−V_{L})\frac{E−\alphaI}{1+E+I}
+$$
+
+as in our previously published model (Gruntman et al., 2018).
+
+### T5 neuron model – E+E- version (Figures 6 and 7)
+
+We assume that both the stimulus-dependent added conductance (E+) and the stimulus-dependent removed conductance (E-) share the same reversal potential and therefore represent the total stimulus-dependent conductance in the model as $g_{E}=E_{+}−E_{−}$.
+
+We rectified $E_{−}$ to prevent negative conductance values,that is $E_{−}$ never exceeds the stimulus independent conductance $(g_{E}^{∗})$. The stimulus-dependent inhibitory conductance was assumed to be absent $(g_{I}=0)$.
+
+#### Bound for E- conductance
+
+With these choices, we can write Equation 6 as
+
+$$
+V−V_{b}=(V_{E}−V_{b})\frac{E_{+}^{′}−E_{−}^{′}}{1+E_{+}^{′}−E_{−}^{′}}
+$$
+
+where
+
+$$
+E_{+/−}^{′}=\frac{E_{+/−}^{′}}{1+g_{E}^{∗}+g_{I}^{∗}}
+$$
+
+Since $E_{−}$ is removed, we demand $E_{−}\leqg_{E}^{∗}$. Therefore, $E_{−}\leq\frac{g_{E}^{∗}}{1+g_{E}^{∗}+g_{I}^{∗}}<1$
+
+Additionally, from Equation 4 we know that
+
+$$
+V_{b}≅V_{L}⇒g_{E}^{∗}≅\alphag_{I}^{∗}
+$$
+
+Leading to the following bound for the E- conductance
+
+$$
+E_{−}^{′}\leq\frac{g_{E}^{∗}}{1+g_{E}^{∗}+g_{E}^{∗}/\alpha}
+$$
+
+### T5 neuron model – scaled EI version (Figure 7)
 
 To generate this version of the model we used the dynamics of the EI model with the spatial and temporal parameters from the E+E- model. The parameters of the E conductance were matched to the E+ conductance, while the parameters of the I conductance were matched to the E- conductance. Due to the stimulus-independent conductances in the E+E- model the amplitudes could not be directly matched. Therefore, we scaled the E and I conductance to match the numerator of the E+E- model so that the depolarizing and hyperpolarizing conductances are equal.
 
-## Model conductances, inputs, and optimization
+### Model conductances, inputs, and optimization
 
-## Model conductances
+#### Model conductances
 
-The dynamics of the excitatory and inhibitory conductances (k(t);k=E,E+,E−,I), measured in units of leak conductance, are described by two first-order linear filters in series(13)τkRh˙k(t)=−hk(t)+Ikstim(t)τkDk˙(t)=−k(t)+hk(t)where (τkR;τkD;k=E,E+,E−,I) denote the rise and decay time constants of the conductances, and Ikstim(t) is determined by the spatial receptive fields of the conductances and the spatiotemporal profile of the visual stimulus.
+The dynamics of the excitatory and inhibitory conductances $(k(t);k=E,E_{+},E_{−},I)$, measured in units of leak conductance, are described by two first-order linear filters in series
 
-## Model inputs
+$$
+\tau_{k}^{R}h˙_{k}(t)=−h_{k}(t)+I_{k}^{stim}(t)\tau_{k}^{D}k˙(t)=−k(t)+h_{k}(t)
+$$
 
-The input to the conductance equationsIkstim(t)=ΣxRk(x)S(x,t),is determined by the spatiotemporal profile of the visual stimulus S(x,t) and the spatial receptive field of the conductance (Rk(x);k=E,E+,E−,I). The integer index x runs over locations along the ND-PD axis of a cell. This spatial discretization is dictated by the smallest size of the bars used in the experiment (width 1). The arbitrary reference x=0 denotes the empirically determined location in the cell receptive field where a flashed bar elicited the strongest depolarization. The stimulus S(x,t) can assume two possible values, 0 or 1, denoting respectively the absence or presence of an OFF bar of width one at the corresponding spatial location and time. We are not explicitly considering the height of the bar, hence our model stimuli replicate the one-dimensional equivalent of the stimuli used in the experiments.
+where $(\tau_{k}^{R};\tau_{k}^{D};k=E,E_{+},E_{−},I)$ denote the rise and decay time constants of the conductances, and $I_{k}^{stim}(t)$ is determined by the spatial receptive fields of the conductances and the spatiotemporal profile of the visual stimulus.
 
-## Receptive fields
+### Model inputs
 
-We modeled the spatial receptive field of the excitatory and inhibitory conductances as a Gaussian profileRk(x)=Ake−(x−μk)22σk2centered at location μk, with amplitude Ak and width σk(k=E,E+,E−,I).
+The input to the conductance equations
 
-## Model optimization
+$$
+I_{k}^{stim}(t)=Σ_{x}R_{k}(x)S(x,t),
+$$
+
+is determined by the spatiotemporal profile of the visual stimulus $S(x,t)$ and the spatial receptive field of the conductance $(R_{k}(x);k=E,E_{+},E_{−},I)$. The integer index $x$ runs over locations along the ND-PD axis of a cell. This spatial discretization is dictated by the smallest size of the bars used in the experiment (width 1). The arbitrary reference $x=0$ denotes the empirically determined location in the cell receptive field where a flashed bar elicited the strongest depolarization. The stimulus $S(x,t)$ can assume two possible values, 0 or 1, denoting respectively the absence or presence of an OFF bar of width one at the corresponding spatial location and time. We are not explicitly considering the height of the bar, hence our model stimuli replicate the one-dimensional equivalent of the stimuli used in the experiments.
+
+### Receptive fields
+
+We modeled the spatial receptive field of the excitatory and inhibitory conductances as a Gaussian profile
+
+$$
+R_{k}(x)=A_{k}e^{−\frac{(x−\mu_{k})^{2}}{2\sigma_{k}^{2}}}
+$$
+
+centered at location $\mu_{k}$, with amplitude $A_{k}$ and width $\sigma_{k}(k=E,E_{+},E_{−},I)$.
+
+### Model optimization
 
 We numerically integrated the model dynamics with a 4th-order Runge-Kutta integration scheme. We obtained model parameters by numerically minimizing the squared error between the membrane potential dynamics of the model and the measured membrane potential of T5 cells in response to flashed bars of width 2. A constrained minimization procedure was performed 1000 times for each cell, starting from random uniform initialization of the parameter values within specified bounds (Supplementary file 1). Predictions for the remaining sets of stimuli from the top 1% of models (10/1000, based only on the magnitude of the error for the width 2 bar flash stimuli) were then compared with the measured responses (Figures 4 and 5). All simulations were performed in Matlab. Code and data are available at https://github.com/reiserlab/T5ConductanceModel (copy archived at https://github.com/elifesciences-publications/T5ConductanceModel).

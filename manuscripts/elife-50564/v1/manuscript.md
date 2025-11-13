@@ -21,31 +21,83 @@ Protein synthesis is critical for remodeling synaptic proteomes, especially when
 
 Zebrafish are vertebrates that exhibit a variety of complex behaviors (Orger and de Polavieja, 2017) including swimming and rheotaxis (e.g. Olszewski et al., 2012; Oteiza et al., 2017; Marques et al., 2018), hunting (e.g. Bianco et al., 2011; Semmelhack et al., 2014), learning (eg. Hinz et al., 2013; Roberts et al., 2013; Aizenberg and Schuman, 2011; Kenney et al., 2017; Ahrens et al., 2012; Valente et al., 2012) and social behaviors (e.g. Hinz et al., 2013; Peichel, 2004; Oliveira, 2013; Gerlai, 2014; Teles et al., 2016; Stednitz et al., 2018; Dreosti et al., 2015). Moreover, a variety of neurological syndromes including epilepsy have been investigated (Kundap et al., 2017). The zebrafish larval brain is small and translucent, enabling high-resolution imaging of cells. The complexity of brain tissue, however, is still an issue. Neurons, in particular, have long processes, which are tightly entangled in their respective tissues. As such, monitoring protein synthesis levels with cell-type and temporal resolution has so far been impossible in zebrafish neurons, highlighting the need for the methodology developed here (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic demonstrating the method to visualize newly synthesized proteins in the brain in a cell-type-specific manner. (B) The protein sequence of the catalytic core domain of the MetRS in a number of species including Danio Rerio shows strong conservation (green). Leucine 270 (bold green) was mutated to Glycine to develop cell-type-specific metabolic labeling in zebrafish. (C) Schematic of the binding pocket of the MetRS and the ribosome during translation. The wt MetRS allows the charging of Met (black) that can be incorporated during translation initiation and elongation (left). The non-canonical amino acid ANL (blue), which contains an azide group, does not fit into the binding pocket of the wt MetRS, and thus is notincorporated into nascent protein (center). The mutant MetRSL270G can charge ANL, which is then incorporated into newly synthesized proteins (in cells expressing the MetRSL270G). (D) Schematic of the UAS-CFP-MetRSL270G line transgene. Crossing the line with any Gal4-expressing line allows for the metabolic labeling of newly synthesized proteins in any accessible cell type. (E) A scheme demonstrating the use of the ELAVL3-Gal4:UAS-CFP-MetRSL270G line. Left: a zebrafish larva expressing the transgene in neurons (cyan). Following addition of ANL to the water bath, newly synthesized proteins in neurons incorporate ANL (blue). Right: a whole mount click reaction with a fluorescent alkyne reveals the newly synthesized proteins (red). (F) The effect of different ANL concentrations on swim speed after 24 hr of ANL exposure (measurement was done in the presence of ANL). 10 mM ANL, which had no significant effect on larvae swimming, was used in further experiments. N = 5 to 6 larvae for each concentration. (G) Projections of confocal images of zebrafish larval brains after click reactions demonstrating the specificity of fluorescently labeled nascent protein in the MetRSL270G larva treated with ANL, but not in controls. Scale bar = 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the experimental setup. The chamber was placed in a custom-built, enclosed behavioral box that isolated the larvae from outside visual or acoustic stimuli. The behavioral box had a semitransparent bottom, onto which different light environments were projected to each half of the swimming lanes, using a computer-controlled monitor, while the position of the larvae was captured every second using a camera mounted above. The larvae swam for 3 min, then the light and dark regions were shifted every minute in an alternating manner (light region became dark and dark region became light) as indicated by the scheme. (B) Percentage of time spent in light environment by larval zebrafish during the entire experiment. Positions were recorded after 5 s from the time of the light shift and each dot represents the percentage of time for a single larva. Blue line: average, box range: standard error, whiskers show min and max. n = 6 for 0 mM ANL, and 7 larvae for every other ANL concentration. This experiment shows that the larvae maintain the ability to sense the light/dark environment, react to it and keep their natural preferences when exposed to ANL concentrations between 5 and 20 mM.
+
 Bio-orthogonal approaches based on metabolic precursors enable the labeling of nascent proteins or protein modifications (Hinz et al., 2012; Beatty et al., 2006; Laughlin et al., 2008), and have been combined with immunostaining to measure protein synthesis in specific cell types (Liu and Cline, 2016). These platforms have recently been coupled with genetic control, allowing access to particular cell types. For example, the wild-type Methionyl-tRNA synthetase (MetRS) can be modified to enable the charging of a different azide-bearing non-canonical amino acid, the methionine analog azidonorleucine (ANL), which cannot be charged by the wild-type MetRS. By using cell-type-specific promoters, the mutant MetRS can be expressed in cell types of interest and the nascent proteins can be labeled via the administration of ANL, as has been demonstrated in Caenorhabditis elegans (Yuet et al., 2015), Drosophila melanogaster (Erdmann et al., 2015) and Mus musculus (Alvarez-Castelao et al., 2017).
 
 To date, overall levels of protein synthesis within neurons across the entire intact brain have not yet been measured and imaged in any vertebrate. The existing protein synthesis reporters used for most single cell analyses rely on fluorescent tagging of individual protein species and therefore do not measure endogenous nascent protein levels. Here we demonstrate for the first time the ability to label and image in situ newly synthesized proteins in vivo in a cell-type-specific manner. We visualized nascent neuronal proteins across the entire animal. Combining a specific Gal4 reporter line with the UAS-MetRSL270G and adding ANL for various durations enabled cell-type-specific labeling with temporal control. We also demonstrate the sensitivity of the protein synthesis signal to alterations in neuronal activity.
 
 ## Results
 
-## Cell-type-specific nascent protein tagging
+### Cell-type-specific nascent protein tagging
 
 To enable cell-type-specific non-canonical amino acid tagging in zebrafish, we cloned and mutated the zebrafish MetRS to introduce a point mutation (L270G) at a conserved position in the methionine binding pocket (Figure 1B–C). We developed a transgenic line in which the conditional expression of CFP and the MetRSL270G (separated by T2A) is under the control of the UAS enhancer. When these fish are crossed to a Gal4 line with a cell-type-specific promoter, cell-type-specific incorporation of azidonorleucine (ANL) into nascent proteins can be achieved (Figure 1C–D). In order to realize cell-type-specific labeling of newly synthesized proteins in neurons, we crossed the UAS-CFP- MetRSL270G line with a well-established pan neuronal driver Gal4 line, ELAVL3-Gal4 (Figure 1D–E). Following the addition of ANL, the charging of ANL by MetRSL270G and its incorporation into protein, a click reaction was performed and newly synthesized proteins were visualized (Figure 1E). In a previous study, we showed that zebrafish nascent proteins can be globally labeled with the non-canonical amino acid azidohomoalanine (AHA) via its addition to the swim water (Hinz et al., 2012). We added ANL to the swim water and determined whether there were any apparent behavioral effects. Freely swimming larvae were incubated with different concentrations of ANL for 24 hr (hrs) and the average swim speed was measured. We found that ANL concentrations of 10 mM or less did not affect larval swimming behavior (Figure 1F). Zebrafish larvae exhibit a preference for illuminated regions of their habitat (Hinz et al., 2013). We also observed that the ELAVL3-MetRSL270G larvae maintained their light preference in the presence of ANL (Figure 1—figure supplement 1). We next incubated larvae with 10 mM ANL for 24 hr, fixed the larvae and performed a whole-mount click reaction (see Materials and methods). Confocal images acquired across the brain revealed newly synthesized proteins in neurons in ELAVL3-MetRSL270G larvae that were incubated with ANL. Only weak fluorescence was detected in WT larvae that were incubated with ANL, or ELAVL3-MetRSL270G larvae that were not incubated with ANL (Figure 1G, for images of single z-sections see Figure 1—video 1 and Figure 1—video 2).
 
-## Detection of endogenous nascent proteins in different neuronal populations
+### Detection of endogenous nascent proteins in different neuronal populations
 
 We performed bio-orthogonal non-canonical amino-acid tagging (BONCAT) (Dieterich et al., 2007; Dieterich et al., 2006) on proteins extracted from WT or MetRSL270G larvae (4 dpf) after metabolic labeling (24 hr, 10 mM ANL) or MetRSL270G fish without metabolic labeling. Western blot analysis revealed an abundance of biotinylated nascent proteins, spanning various molecular weights, in head tissue from ANL-treated MetRSL270G larvae (Figure 2A, Figure 2—figure supplement 1) and only low background levels of biotinylated proteins in the controls (WT ANL+, MetRSL270G ANL- in Figure 2A). To examine the robustness and specificity of the labeling, we visualized newly synthesized proteins in different brain regions. We incubated 3 dpf larvae with 10 mM ANL for 24 hr, fixed the larvae (at 4 dpf) and performed a whole-mount click reaction using a fluorescent alkyne tag. We performed immunostaining for CFP to visualize neurons expressing CFP (and therefore MetRSL270G) in the same larvae. We then imaged the entire nervous system visualizing both nascent protein and CFP (Figure 2, Figure 2—figure supplements 2–5). We detected nascent protein signal across the nervous system including in the subpallium, habenula, anterior pretectum, optic tectum, hindbrain, medulla and the spinal cord (Figure 2, Figure 2—figure supplement 2). In order to quantify the nascent protein signal, we segmented the cell somata volumes using the 3D CFP signal (Figure 2—figure supplements 6–7 and Figure 2—video 1). We then measured the average voxel intensity in the fluorescent-alkyne channel to determine the level of nascent protein in each cell. We segmented hundreds to over two thousand cells in each larva. We calculated the average signal intensity in a specific brain region, the habenula (Figure 2G), and in the entire nervous system (Figure 2H). The same click reaction performed on larvae that were not incubated with ANL revealed only low levels of background fluorescence (Figure 2C–D,G–H). In some neurons, we could detect a nascent protein signal in neurites indicating the sensitivity of the method to visualize newly synthesized proteins in dendrites or axons (Figure 2—figure supplement 2C–D, Figure 2—figure supplement 8). These newly synthesized proteins could have either been synthesized in somata and moved to the processes, or could have been synthesized locally in the processes.
 
-## Detecting nascent proteins with different periods of labeling
+![Figure 2.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-v1.jpg)
+
+**Figure 2.:** 3 dpf larvae were incubated with 10 mM ANL for 24 hr in vivo, fixed (at 4 dpf) and clicked to a biotin tag for BONCAT or a fluorescent tag to visualize nascent proteins in situ. (A) Immunoblot detecting newly synthesized proteins in WT larvae treated with ANL (WT ANL+, control), MetRSL270G (MerRS*) larvae treated with ANL (ANL +) or not (ANL-, control). (B) Dorsal view collage projection of confocal images showing fluorescently labeled newly synthesized neuronal proteins (red). (C-F) High magnification view of different brain regions. 4–6 confocal planes are shown (~10 microns in depth). Note the overlap between the CFP channel (Ab staining, green) and the nascent protein channel (click labeling, red), indicating that the signal is specific to cells expressing the MetRSL270G. (C-D) Optic tectum (Ot). (C) Shown are 4 planes of the region indicated by the square in B. (D) The same region in a larva not incubated with ANL demonstrating the CFP but not nascent protein labeling. (E) Maximal projection of labelled newly synthesized proteins in an entire brain (dorsal view and lateral view) (see Figure 2—figure supplement 2A–B for lower brightness). White frames indicate the subpallium (Sp), habenula (Hb) and anterior pretectum (Apt), regions zoomed in (in F). (F) CFP Ab staining and nascent protein labeling in 4–6 confocal images indicated in the white frames in E. See Figure 2—figure supplement 2 for more brain regions. (G-H) Quantification of the average nascent protein levels in the habenula (G) and the entire nervous system (H). Neurons were segmented in 3D using the CFP channel (see supplementary material and Figure 2—figure supplements 6–7) and the average voxel fluorescence intensity for the CFP and fluorescently labeled nascent protein was measured in each cell. Plotted are the average fluorescence intensities in single cells. 30 to 60 neurons were segmented for each habenula of 4 ANL-treated and 3 control larvae (G). (H) Quantification of the average CFP and nascent protein fluorescence intensity in neurons across the entire nervous system. More than 1000 neurons were segmented in 3D using the CFP channel (similar to G). Plotted are the mean fluorescence intensities in single cells from 3 larvae treated (ANL+, squares) or not treated (ANL-, circles) with ANL. See Figure 2—figure supplement 5 for statistical differences between the groups. Squares: ANL- (control), circles: ANL+, blue: CFP, red: Nascent protein, black line – mean fluorescence intensity within a single larva. One cell had a nascent protein intensity value below ten and is shown on the x-axis. Scale bars = 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average intensity was measured for each of the three lanes and normalized to the WT, ANL+ sample. (B) Average intensity was measured for each of the three lanes and normalized to the WT, ANL+ sample as in A. Shown is an average of two independent experiments. Bars indicate standard error of the mean.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A-B) Maximum intensity projection of newly synthesized protein labeling in an entire brain (A) - dorsal view, B - lateral view) (same image as in Figure 2E,F with lower brightness to demonstrate the variability of nascent protein intensity in regions that appear saturated in Figure 2). White frames indicate the subpallium, habenula and anterior pretectum as in Figure 2E,F. (C-E) Maximum intensity projections of nascent protein labeling (red, top), and CFP Ab staining (green, middle) in indicated brain areas: hindbrain (C), the medulla (D), and the spinal cord (E). Note the nascent protein labeling in neuronal processes indicated in some examples (gray arrows in C, D). Scale bar = 20 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** CFP Ab staining and ANL labeling were performed on WT zebrafish larvae. Shown are confocal images of the similar regions of the same dimensions (X, Y, Z) of the confocal images shown in Figure 2F. The same procedure indicated in Figure 2 was performed and the same microscopy settings were used for the imaging.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** 3 dpf larvae were incubated with 10 mM ANL for 24 hr in vivo, fixed (at 4 dpf) and clicked to a fluorescent alkyne tag to label nascent proteins in situ. Shown are single planes of CFP Ab staining and nascent protein labeling of the regions in the images in Figure 2F. Scale bars = 20 μm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Quantification of the average levels of nascent proteins in the habenula (data from Figure 2G). Neurons were segmented in 3D using the CFP channel. 30 to 60 neurons were segmented for each habenula and the average voxel intensity for the CFP and nascent protein synthesis channels was measured in each cell. The average neuronal fluorescence intensity in the CFP channel or the nascent protein was calculated for each larva (average data in Figure 2G). Plotted is the average of 4 ANL-treated and 3 control larvae. Bars indicate SEM. (B) Quantification of the averaged fluorescent nascent protein intensity in neurons across the entire nervous system (data from Figure 2H). More than 1000 neurons were segmented in 3D using the CFP channel (similar to Figure 2H). The average fluorescence intensity of CFP or nascent proteins was calculated for each larva (averaged data in Figure 2H). Plotted are the mean intensities of 3 larvae treated (ANL+) or not treated (ANL-) before click chemistry. **p<0.01 (0.0071 and 0.0061 for A and B respectively).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Click chemistry was performed to label nascent proteins. Antibody staining for CFP was performed to detect cells expressing CFP (and MetRSL270G) across the larvae. Individual neurons were segmented in 3D according to the CFP signal, before measuring nascent proteins (in the segmented ROIs). (A) Projection of the surface of segmented neurons across a larva following semi-automatic segmentation using Zen and Imaris 9.2 software (see Materials and methods for details). (B-G) Zoom-in on a representative ROI (white frame in A showing the raw data and segmentation. Projections of ~20 microns in depth, of the same ROI from different viewpoints (demonstrated by rotating the image (B-D)) are used to show the overlay with the surface after segmentation (E-G respectively). A ROI with a relatively low density of neurons was chosen for visualization purposes. 1805 cells were segmented in this larva (A). Yellow – surfaces (segmentation), Scale bars: A = 50 μm, B-G = 5 μm.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** Zoom-in on a more challenging densely labeled ROI in the habenula. (A-C) Projections of the CFP channel from different viewpoints and their respective surfaces after segmentation (D-F respectively). The watershed algorithm (in Imaris) was used to separate adjacent cells. Cells that were not detected by Imaris were not included. Scale bars = 5 μm.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** Representative images of cells exhibiting labeling of nascent proteins in neurites. Maximum intensity projections of 3–6 confocal planes (5.7–12 microns) are shown. Freely swimming larvae were incubated with ANL for 24 hr (same larvae as in Figures 2 and 3). Click chemistry was performed to label nascent proteins prior to imaging. Nascent proteins in neuronal processes were detected in different brain regions including optic tectum (A, note the staining in the neuropil in the top left corner), Mauthner cells (B, C), hindbrain (D) and forebrain (E). Gray arrows indicate neurites. Scale bars = 5 μm.
+
+### Detecting nascent proteins with different periods of labeling
 
 We found that 24 hr of ANL exposure was sufficient to allow the detection of nascent protein signal (Figure 2). In order to determine if an even shorter incubation period would result in labeling, we incubated 3 dpf zebrafish larvae for 12 hr with the same ANL concentration (10 mM). Quantification of the average nascent protein intensity in neurons revealed significant labeling compared to the control, but these levels were significantly lower than levels observed following 24 hr of ANL incubation (Figure 3). This relatively short labeling window could thus be used for comparing protein synthesis intensities between experimental and control fish in various behavioral paradigms.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig3-v1.jpg)
 
-**Figure 3.:** Larvae were incubated with 10 mM ANL in their water bath for the indicated durations before fixation and click reaction. (A) Neurons in the habenula of MetRSL270G larvae were segmented in 3D using the CFP channel and the fnascent proteinintensity was measured in each neuron. Plotted are the average intensities of 3 larvae for each treatment (N = 3 for each treatment). Error bars indicate the SEM (N = 3). *p<0.05 (0.005 for 12 hr and 0.009 for 24 hr). (B) Representative images. Shown are maximal projections of 10 planes (~4 μm) of confocal images in the nascent proteins channel of the forebrain focusing on the olfactory bulb. Calibration bar – top left, scale bar = 10 μm.Figure 3—source data 1.Figure 3A.
+**Figure 3.:** Larvae were incubated with 10 mM ANL in their water bath for the indicated durations before fixation and click reaction. (A) Neurons in the habenula of MetRSL270G larvae were segmented in 3D using the CFP channel and the fnascent proteinintensity was measured in each neuron. Plotted are the average intensities of 3 larvae for each treatment (N = 3 for each treatment). Error bars indicate the SEM (N = 3). *p<0.05 (0.005 for 12 hr and 0.009 for 24 hr). (B) Representative images. Shown are maximal projections of 10 planes (~4 μm) of confocal images in the nascent proteins channel of the forebrain focusing on the olfactory bulb. Calibration bar – top left, scale bar = 10 μm.
 
-## Detection of altered neuronal protein synthesis levels following seizures
+### Detection of altered neuronal protein synthesis levels following seizures
 
 We next addressed whether the nascent protein signal was sensitive to global alterations in neural activity. The GABAergic receptor antagonist Pentylenetetrazole (PTZ) induces epileptic-like neuronal discharges and seizure-like behaviors in rodents and zebrafish (Baraban et al., 2005; Baraban et al., 2007; Naumann et al., 2010). PTZ has been shown to induce expression of immediate early genes in larval zebrafish (Baraban et al., 2005). To determine the effect of elevated neural activity and behavioral seizures on protein synthesis levels in neurons in vivo, we incubated 3 dpf MetRSL270G larvae with ANL for 12 hr and induced seizures by adding PTZ for the last 2.5 hr (Figure 4A). We then measured neuronal protein synthesis levels within single cells in two different brain regions, the spinal cord and the habenula (Figure 4B–E). We segmented tens to hundreds of neurons in the spinal cord or right habenula and calculated the average protein synthesis signal in each cell (Figure 4D). Following PTZ exposure, we detected a significant (~60%) increase in protein synthesis levels in the habenula and a modest, though not significant, increase in the spinal cord (Figure 4D–E) when calculating the average intensity between several larvae.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the experiment. Freely swimming larvae were incubated with ANL. After 10 hr incubation, PTZ was added for 2.5 hr, inducing seizures. Following fixation, whole-mount click with a fluorescent alkyne and confocal imaging were performed. (B-C) Representative images of the ANL signal in the spinal cord (B) or habenula (C). Shown are maximum projections of 4 confocal planes of the specific regions of larvae treated or non-treated with the protein synthesis inhibitor puromycin (PSI) and treated or non-treated with PTZ. (D) Quantification of the images shown in (B-C). Cells were segmented in 3D using the CFP channel, and the mean nascent protein labeling was measured in each cell using the fluorescent-alkyne channel. The dots represent the mean intensity in cells in the corresponding image (of B-C respectively). Red line – mean, whiskers - STDEV. (E) Bar plot showing the average nascent protein intensity in 3 to 5 larvae PTZ- and PTZ+, respectively. CFP positive cells in the spinal cord or the habenula were segmented in 3D using the CFP antibody staining. The levels of newly synthesized proteins were measured using the fluorescent alkyne (similar to D). More than 100 neurons in the spinal cord and 30 neurons in the habenula were analyzed. The average intensity was calculated for each larva. Plotted are the averaged intensities for each treatment (N = 3 to 5 larvae for each treatment). Error bars indicate SEM. *p<0.05, **p<0.01***p<0.001. Scale bars = 5 μm (B, C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50564/elife-50564-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Larvae were incubated with ANL and PTZ and were processed as described in Figure 4, for the ELAVL3-MetRSL270G line. Scale bar = 5 μm.
 
 ## Discussion
 
@@ -67,30 +119,96 @@ Zebrafish larvae have the advantage of being both translucent and smaller than m
 
 ## Materials and methods
 
-## Zebrafish husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti GFP</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11122</td>
+      <td>IF(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti GFP</td>
+      <td>Aves</td>
+      <td>Cat# GFP 1010</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-chicken IR680</td>
+      <td>Licor</td>
+      <td>Cat# 926–68075</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IR800</td>
+      <td>Licor</td>
+      <td>Cat# 925–32211</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Zebrafish line</td>
+      <td>HuC-Gal4</td>
+      <td>Stevenson, T. J. et al</td>
+      <td></td>
+      <td>Schuman lab, See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Zebrafish line</td>
+      <td>UAS-MetRSL270</td>
+      <td>Tefor-Amagen/ This paper</td>
+      <td></td>
+      <td>Schuman lab, See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Zebrafish line</td>
+      <td>ELAVL3-MetRSL270G</td>
+      <td>Tefor-Amagen/ This paper</td>
+      <td></td>
+      <td>Schuman lab, See Materials and methods section</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry
 
 Adult fish strains AB, UAS-MetRSL270, ELAVL3-MetRSL270G and HuC-Gal4 were kept at 28°C on a 14 hr light/10 hr dark cycle, in a Techinplast Zebtec system. Embryos were obtained from natural spawning using a Techinplast breeding system, and were maintained in E3 embryo medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4) at 28°C on a 14 hr light/10 hr dark cycle.
 
-## Constructs and transgenic zebrafish
+### Constructs and transgenic zebrafish
 
 The following plasmid was injected to wt (AB strain) eggs at one cell stage: pBT2_4xnr UAS-CFP (Tol2-4xnr UAS:cerulean-2A-MetRS-6x His –Tol2). MetRS (Methionyl-tRNA synthetase (AAH57463.1) Danio rerio with mutation to L270G. The 4x non-repetitive (nr) UAS sequence was designed by the Halpern lab (Akitake et al., 2011). The following primers were used for genotyping: forward- gcaagggcgaggagctg, reverse: gctcaggtagtggttgtcg. The PCR product size was 602 bp. Huc:Gal4 was generated by the Piotrowski lab (Stevenson et al., 2012).
 
-## ANL administration
+### ANL administration
 
 Azidonorleucine (ANL) was synthesized as previously described Mahdavi et al. (2016). ANL was kept as powder and was freshly dissolved in E3 solution prior to experiments at the indicated concentrations (0, 5, 10 and 20 mM). For the dosage determination experiment, Konstanz wt or ELAVL3-MetRSL270G freely swimming zebrafish larvae were supplemented with ANL or mock E3 exchange for 24 hr. During the last 20 min, larvae were moved to a chamber with swimming lanes that allowed single larvae to freely swim. The positions of the larvae were recorded with a camera at 1 Hz, and tracked automatically with a Matlab script to measure swimming distance and speed. In all the fluorescent labeling experiments, the ANL concentration was 10 mM. 0.1 mM 1-phenyl 2-thiourea (PTU) was added to the E3 water at 1 dpf for all larvae in Figures 2–4.
 
-## Click chemistry for fluorescent tagging
+### Click chemistry for fluorescent tagging
 
 3–4 dpf old larvae were anaesthetized on ice for 45 min. Larvae were transferred to 1.5 ml tubes and washed once with clean E3. E3 was removed and replaced with 1 ml fixation solution (4% PFA, 4% Sucrose in PBS (137 mM NaCl, 2.7 mM KCl, 4.3 mM Na2HPO4, 1.4 mM KH2PO4)), and incubated overnight at 4°C with gentle shaking. Next, larvae were dehydrated in Methanol at −20°C overnight. Samples were gradually rehydrated through successive 5 min washes with 75% methanol in PBST (PBS+0.1% Tween-20), 50% methanol in PBST, 25% methanol in PBST and PBST. Samples were incubated 3 times for 5 min in PBDTT (PBST + 1% DMSO and 0.5% Triton X-100) and digested with 1 mg/ml collagenase (Sigma-Aldrich) in PBST for 45 min for permeabilization. Following one wash with PBST, larvae were post-fixed for 20 min in 4% PFA and 4% Sucrose in PBS. Samples were washed 3 times for 5 min in PBDTT and incubated for 3 hr at 4°C in blocking buffer (5% BSA, 10% goat serum in PBDTT). Samples were then washed 3 times for at least 10 min in PBST (pH 7.8). ANL labeled proteins were tagged using a click reaction. To 1 ml PBS (pH 7.8) TBTA (Sigma-Aldrich) 1:500 (stock 200 mM in DMSO, final 0.2 mM) was added followed by a 10 s vortex, TCEP (Thermo Scientific) 1:400 (stock 40 mM in H2O, final 0.5 mM), 10 s vortex, 1:500 AlexaFluor-647-alkyne (Invitrogen, stock 2 mM in DMSO, final 2 μM), 10 s vortex, and 1:500 CuSO4 (stock 200 mM in H2O, final 0.2 mM) followed by 30 s vortex. The above click reaction buffer was immediately added to tubes containing the larvae and kept overnight in the dark, at 4°C with gentle agitation. Samples were washed 4 times for 30 min in PBDTT with 0.5 mM EDTA and twice for one hour in PBDTT and kept in PBS (pH 7.4) until mounting. For immunofluorescence, samples were incubated in blocking buffer (10% serum in PBS) for 1 hr and incubated with 1:600 rabbit anti GFP antibody (Invitrogen A11122; to detect CFP) in blocking buffer overnight with gentle agitation at 4°C. Samples were washed in PBST twice and PBS 3 times (~10 min each wash), incubated with blocking buffer for ten minutes and incubated with an Alexa-488 fluorescent secondary antibody (goat anti rabbit, ThermoFisher A1008) overnight with gentle agitation at 4°C. Samples were washed twice with PBST and PBS (pH 7.4). After click or immunofluorescence, the samples were gradually moved to glycerol through successive 5 min washes (25% glycerol in PBS, 50% glycerol in PBS, 75% glycerol in PBS) and finally 100% glycerol and kept at 4°C in dark.
 
-## BONCAT
+### BONCAT
 
 Larvae were incubated with 10 mM ANL for 24 hr. After incubation, the media was replaced with fresh E3. Larvae were sacrificed on ice-cold water (30 min). Heads were dissected using a scalpel and immediately snap frozen in tubes (1.5 ml, Eppendorf) that were pre-cooled using dry ice and stored at −80C until lysis. Tissue was homogenized and lysed using a pestle in lysis buffer (1% in Triton X100, 0.4% (w/v) SDS in PBS pH 7.8, 1:1000 EDTA free protease inhibitors (Calbiochem) and benzonase (Sigma, 1:1,000), and denatured at 75°C, 13,000 rpm for 10 min. Lysates were then cleared by centrifugation. BONCAT was performed as previously described (Dieterich et al., 2007). In brief, 60 μg proteins were dissolved in 120 μL PBS pH 7.8 supplemented with 0.01% SDS, 0.1% Triton, 300 μM Triazol (Sigma, 678937), 50 μM biotin-alkyne tag (Thermo, B10185) and 83 μg/mL CuBr (prepared by dilution of fresh 10 mg/mL solution in DMSO) at 4°C overnight in the dark. Biotinylated proteins were then separated by gel electrophoresis and immunoblotted with 1:1000 chicken anti-GFP (Aves), 1:1000 rabbit anti-biotin (Cell signaling) and Donkey anti-chicken IR680, goat anti-rabbit IR800 (IB, 1:10,000, Licor) antibodies.
 
-## Microscopy
+### Microscopy
 
 Larvae were directly, or after dissection to remove the eyes and yolk sack (Figures 2–4), mounted on Mattek dishes with the dorsal side facing the glass bottom of the dish prior to imaging. Larvae were imaged using a Zeiss LSM880 confocal microscope and a 25X glycerol objective (NA 0.8, PSF: X 0.389, Y 0.336, Z 1.62). Spacing between z planes = 1.89 micron. 488 and 633 lasers were used for Alexa488 and Alexa647, respectively (filters: 504–563 and 652–702, respectively). To image the entire brain, tiling was done with 10% overlap using the ZEN program with a scaling of 0.332 micron per pixel and a 12-bit mode; tiles were stitched together using the ZEN program after imaging. In Figure 2, in order to allow for the clear visualization of 3-dimensional data of an entire larva in 2 dimensions, a collage was made to exclude non-relevant planes (e.g: in each region of the tail, only 3–5 planes out of ~150 contain neurons, therefore a maximal projection of the entire stack would impede a clear visualization of the neurons).
 
-## 3D fluorescence intensity analysis
+### 3D fluorescence intensity analysis
 
 Stitched images were imported to Imaris 9.2. Cell segmentation was conducted using CFP channel intensities. Surface segmentation of cells in the entire image was based on the Marching cube algorithm (Lorensen and Cline, 1987) using the Imaris program. In some regions where we noticed that the segmentation did not perform well, a regional segmentation was performed again using the same algorithm with a manual threshold in smaller specific ROIs. False positive objects that were not real cells, such as salt crystals, were deleted based on morphology. Splitting of touching objects was allowed using the watershed algorithm. In some cases where splitting of touching objects failed due to a high density of neurons, a few cells were inevitably considered as one. The threshold of the minimal volume was set to 10 μm3, and of the minimal ‘sphericity’ was set to 0.75. An example of segmentation in a low density ROI can be found in Figure 2—figure supplement 6, and in Figure 2—video 1. Segmentation of a densely labeled ROI in the habenula is demonstrated in Figure 2—figure supplement 7. After segmentation in the CFP channel, the intensity values were measured in both the CFP and the ANL channels (for Figure 2) or for the ANL channel (Figures 3–4). For each cell, the average voxel intensity was calculated and documented. Next, based on the average cell intensities, the average intensity of cell in a region or an entire larva was calculated. Finally the mean intensity between 3 to 4 larvae was calculated for each region or entire larvae and plotted (n = 3 or 4). The error bars in all the graphs represent Standard Error of the Mean (SEM), unless otherwise noted. In Figure 4D, the bars represent SEM between cells. In all the other graphs, error bars represent SEM between the average intensities of several larvae. One-tailed, two-sample unequal variance (heteroscedastic) TTESTs were used for calculating all the p values (p).

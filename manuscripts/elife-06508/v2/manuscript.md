@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.06508.001 Perforin-2 (MPEG1) is a pore-forming, antibacterial protein with broad-spectrum activity. Perforin-2 is expressed constitutively in phagocytes and inducibly in parenchymal, tissue-forming cells. In vitro, Perforin-2 prevents the intracellular replication and proliferation of bacterial pathogens in these cells. Perforin-2 knockout mice are unable to control the systemic dissemination of methicillin-resistant Staphylococcus aureus (MRSA) or Salmonella typhimurium and perish shortly after epicutaneous or orogastric infection respectively. In contrast, Perforin-2-sufficient littermates clear the infection. Perforin-2 is a transmembrane protein of cytosolic vesicles -derived from multiple organelles- that translocate to and fuse with bacterium containing vesicles. Subsequently, Perforin-2 polymerizes and forms large clusters of 100 Å pores in the bacterial surface with Perforin-2 cleavage products present in bacteria. Perforin-2 is also required for the bactericidal activity of reactive oxygen and nitrogen species and hydrolytic enzymes. Perforin-2 constitutes a novel and apparently essential bactericidal effector molecule of the innate immune system. DOI: http://dx.doi.org/10.7554/eLife.06508.001
+Perforin-2 (MPEG1) is a pore-forming, antibacterial protein with broad-spectrum activity. Perforin-2 is expressed constitutively in phagocytes and inducibly in parenchymal, tissue-forming cells. In vitro, Perforin-2 prevents the intracellular replication and proliferation of bacterial pathogens in these cells. Perforin-2 knockout mice are unable to control the systemic dissemination of methicillin-resistant Staphylococcus aureus (MRSA) or Salmonella typhimurium and perish shortly after epicutaneous or orogastric infection respectively. In contrast, Perforin-2-sufficient littermates clear the infection. Perforin-2 is a transmembrane protein of cytosolic vesicles -derived from multiple organelles- that translocate to and fuse with bacterium containing vesicles. Subsequently, Perforin-2 polymerizes and forms large clusters of 100 Å pores in the bacterial surface with Perforin-2 cleavage products present in bacteria. Perforin-2 is also required for the bactericidal activity of reactive oxygen and nitrogen species and hydrolytic enzymes. Perforin-2 constitutes a novel and apparently essential bactericidal effector molecule of the innate immune system.
 
 ## Introduction
 
@@ -47,29 +47,29 @@ Here we show that Perforin-2 is a major antibacterial effector protein of the in
 
 ## Results
 
-## Perforin-2-deficient neutrophils and macrophages are unable to kill pathogenic bacteria, including Mycobacterium tuberculosis
+### Perforin-2-deficient neutrophils and macrophages are unable to kill pathogenic bacteria, including Mycobacterium tuberculosis
 
-Professional phagocytes avidly ingest and kill bacteria. To elucidate the contribution of Perforin-2 towards their bactericidal activity, we compared professional phagocytes from Perforin-2 deficient mice with Perforin-2 heterozygous and wild-type phagocytes. Perforin-2-deficient murine peritoneal exudate macrophages (PEM), neutrophils, and bone marrow-derived macrophages (BMDM) are unable to kill three different species of Mycobacteria
+Professional phagocytes avidly ingest and kill bacteria. To elucidate the contribution of Perforin-2 towards their bactericidal activity, we compared professional phagocytes from Perforin-2 deficient mice with Perforin-2 heterozygous and wild-type phagocytes. Perforin-2-deficient murine peritoneal exudate macrophages (PEM), neutrophils, and bone marrow-derived macrophages (BMDM) are unable to kill three different species of Mycobacteria (Mycobacterium smegmatis, Mycobacterium avium, M. tuberculosis), as indicated by significant intracellular bacterial replication in MPEG1 (Perforin-2) −/− compared to +/+ or +/− phagocytes (Figure 1A–C, Figure 1—figure supplement 1). Although BMDM express Perforin-2 constitutively, they must be activated with IFN and LPS in order to mediate Perforin-2-dependent growth inhibition of M. tuberculosis (Mtb) (Figure 1—figure supplement 2). This suggest that the destruction of Mtb requires both the expression and activation of Perforin-2.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig1-v2.jpg)
 
-**Figure 1.:** (A-C) Perforin-2 knockout, heterozygous, and wild-type macrophages and neutrophils were infected with Mycobacterium species (A) PEM infected with Mycobacterium smegmatis, (B) Neutrophils infected with Mycobacterium avium, and (C) BMDM infected with Mycobacterium tuberculosis. (D-H) Perforin-2 knockdown can be complemented in BV2 microglia cells infected with (D) M. avium, (E) M. smegmatis, (F) Salmonella typhimurium, and (G) MRSA. (H) Western blot demonstrating protein levels after complementation: BV2 transfected with (Lane 1) Perforin-2-RFP and Perforin-2 siRNA, (Lane 2) RFP and Perforin-2 siRNA, (Lane 3) RFP and Perforin-2 scramble siRNA, and (Lane 4) Perforin-2 siRNA alone. In western blots, Perforin-2-RFP is detected as a 105 kD band compared to the 72 kD band seen for endogenous Perforin-2 (lane 1 and 3 respectively). (I) Human MDM infection with MRSA. = MPEG1 (Perforin-2) wild-type cells (+/+), = MPEG1 (Perforin-2) heterozygous cells (+/−), • MPEG1 (Perforin-2) knockout cells (−/−). ■= RFP + Perforin-2 siRNA transfected cells, □= RFP + scramble siRNA transfected cells. ▼= Perforin-2-RFP + Perforin-2 siRNA transfected cells. One-way ANOVA with Tukey's multiple comparisons post-hoc test was used for A–G. (A–C) *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type cells; *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous cells. (D–G) *p < 0.05 between RFP + Perforin-2 siRNA:RFP + scramble siRNA and RFP + Perforin-2 siRNA:Perforin-2-RFP + Perforin-2 siRNA. (I) *p < 0.05 multiple t-tests with post-hoc correction for multiple comparisons using the Holm-Sidak method.DOI: http://dx.doi.org/10.7554/eLife.06508.003
+**Figure 1.:** (A-C) Perforin-2 knockout, heterozygous, and wild-type macrophages and neutrophils were infected with Mycobacterium species (A) PEM infected with Mycobacterium smegmatis, (B) Neutrophils infected with Mycobacterium avium, and (C) BMDM infected with Mycobacterium tuberculosis. (D-H) Perforin-2 knockdown can be complemented in BV2 microglia cells infected with (D) M. avium, (E) M. smegmatis, (F) Salmonella typhimurium, and (G) MRSA. (H) Western blot demonstrating protein levels after complementation: BV2 transfected with (Lane 1) Perforin-2-RFP and Perforin-2 siRNA, (Lane 2) RFP and Perforin-2 siRNA, (Lane 3) RFP and Perforin-2 scramble siRNA, and (Lane 4) Perforin-2 siRNA alone. In western blots, Perforin-2-RFP is detected as a 105 kD band compared to the 72 kD band seen for endogenous Perforin-2 (lane 1 and 3 respectively). (I) Human MDM infection with MRSA. = MPEG1 (Perforin-2) wild-type cells (+/+), = MPEG1 (Perforin-2) heterozygous cells (+/−), • MPEG1 (Perforin-2) knockout cells (−/−). ■= RFP + Perforin-2 siRNA transfected cells, □= RFP + scramble siRNA transfected cells. ▼= Perforin-2-RFP + Perforin-2 siRNA transfected cells. One-way ANOVA with Tukey's multiple comparisons post-hoc test was used for A–G. (A–C) *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type cells; *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous cells. (D–G) *p < 0.05 between RFP + Perforin-2 siRNA:RFP + scramble siRNA and RFP + Perforin-2 siRNA:Perforin-2-RFP + Perforin-2 siRNA. (I) *p < 0.05 multiple t-tests with post-hoc correction for multiple comparisons using the Holm-Sidak method.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Murine peritoneal macrophages (A, B) or neutrophils (C, D) were isolated from Perforin-2 wild-type (wt), Perforin-2 heterozygous (het), or Perforin-2 homozygous knockout (ko) mice. Western blot after probing with mouse Perforin-2 and densitometry analysis demonstrates that Perforin-2 wild-type have the greatest amount of Perforin-2, heterozygous mice have a moderate level of Perforin-2, and the knockout animals have no Perforin-2 protein detected. Densitometry analysis includes a minimum of three Western Blots. Statistical analysis was conducted utilizing one-way ANOVA with Tukey's multiple comparisons post-hoc test in B and D *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.004
+**Figure 1—figure supplement 1.:** Murine peritoneal macrophages (A, B) or neutrophils (C, D) were isolated from Perforin-2 wild-type (wt), Perforin-2 heterozygous (het), or Perforin-2 homozygous knockout (ko) mice. Western blot after probing with mouse Perforin-2 and densitometry analysis demonstrates that Perforin-2 wild-type have the greatest amount of Perforin-2, heterozygous mice have a moderate level of Perforin-2, and the knockout animals have no Perforin-2 protein detected. Densitometry analysis includes a minimum of three Western Blots. Statistical analysis was conducted utilizing one-way ANOVA with Tukey's multiple comparisons post-hoc test in B and D *p < 0.05.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** BMDM were collected from Perforin-2 wild-type animals (), Perforin-2 heterozygous animals (), or Perforin-2 knockout animals (•). After differentiation to BMDM, macrophages were infected with Mtb. This experiment is representative of four different experiments. Statistical analysis was performed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. No significant difference was observed at any time point.DOI: http://dx.doi.org/10.7554/eLife.06508.005
+**Figure 1—figure supplement 2.:** BMDM were collected from Perforin-2 wild-type animals (), Perforin-2 heterozygous animals (), or Perforin-2 knockout animals (•). After differentiation to BMDM, macrophages were infected with Mtb. This experiment is representative of four different experiments. Statistical analysis was performed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. No significant difference was observed at any time point.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Western blot analysis of human Perforin-2 expression from two donors for primary monocyte derived macrophages and neutrophils (PMN). In addition, the efficiency of human Perforin-2 knockdown is demonstrated from two separate RA treated HL-60 experiments. (B) Densitometry analysis of both HL-60 human Perforin-2 knockdown experiments from (A). Statistical analysis was performed with Students T-test *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.006
+**Figure 1—figure supplement 3.:** (A) Western blot analysis of human Perforin-2 expression from two donors for primary monocyte derived macrophages and neutrophils (PMN). In addition, the efficiency of human Perforin-2 knockdown is demonstrated from two separate RA treated HL-60 experiments. (B) Densitometry analysis of both HL-60 human Perforin-2 knockdown experiments from (A). Statistical analysis was performed with Students T-test *p < 0.05.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Human HL-60-neutrophils were generated by differentiating HL-60 with RA. One day prior to the experiment, HL-60/PMN cells were transfected with either a pool of scramble (□) or human Perforin-2 specific (■) siRNA. Cells were infected with (A) S. typhimurium, (B) MRSA, or (C) M. smegmatis 24 hr after transfection, which converged with maximal RA neutrophil differentiation. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.007
+**Figure 1—figure supplement 4.:** Human HL-60-neutrophils were generated by differentiating HL-60 with RA. One day prior to the experiment, HL-60/PMN cells were transfected with either a pool of scramble (□) or human Perforin-2 specific (■) siRNA. Cells were infected with (A) S. typhimurium, (B) MRSA, or (C) M. smegmatis 24 hr after transfection, which converged with maximal RA neutrophil differentiation. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.
 
 We also used Perforin-2 siRNA to ablate Perforin-2 in cells in vitro. To exclude the possibility of off-target protein effects by Perforin-2-siRNA, we performed complementation assays in BV2-microglia with C-terminally tagged Perforin-2-RFP (Figure 1D–G). Endogenous Perforin-2 was silenced (Figure 1H, lane 2) with siRNA specific for the 3′-untranslated sequence and the cells were complemented by transfection with siRNA-resistant Perforin-2-RFP (Figure 1H, lane 1). Only Perforin-2-RFP but not control RFP transfection restored bactericidal activity. The data indicated that RFP-tagged Perforin-2 was fully active and that siRNA ablation of Perforin-2 has negligible off-target effects on bactericidal activity. The results suggested that Perforin-2 is critical for intracellular bacterial killing.
 
@@ -77,23 +77,23 @@ We also sought to determine the role of Perforin-2 in human professional phagocy
 
 In summary, the results indicate that professional murine and human phagocytes require Perforin-2 to kill phagocytosed bacteria. This finding raised the question of the function of the other known bactericidal mediators in relation to Perforin-2.
 
-## Reactive oxygen and nitrogen species enhance the bactericidal activity of Perforin-2 but have little microbicidal activity when Perforin-2 is absent
+### Reactive oxygen and nitrogen species enhance the bactericidal activity of Perforin-2 but have little microbicidal activity when Perforin-2 is absent
 
 Reactive oxygen (ROS) and reactive nitrogen (RNS) species are recognized for their bactericidal activity in phagocytic cells. PEM activated by IFN-γ and LPS produce both families of effectors (Figure 2—figure supplement 1). We used the well-characterized chemical inhibitors N-acetyl-L-cysteine (NAC) and L-NG-nitroarginine methyl ester (L-NAME) to block ROS and nitric oxide (NO) respectively as Perforin-2 and ROS or Perforin-2 and RNS knockout animals are not currently available (Vazquez-Torres et al., 2000; Mantena et al., 2008; Sohn et al., 2011).
 
-First, we established that the addition of the inhibitors reduced levels of ROS and NO produced by activated PEMs (
+First, we established that the addition of the inhibitors reduced levels of ROS and NO produced by activated PEMs (Figure 2—figure supplement 1). The role of endogenous ROS and NO on cellular bactericidal activity in PEM in the presence and absence endogenous of Perforin-2 was assessed in two complementary ways. First, we assessed the effect of chemical inhibitors of ROS and NO on killing of intracellular wild-type S. typhimurium (Figure 2A–D). ROS is known to be active and produced during the first 4 hr after S. typhimurium infection in PEM (Mastroeni et al., 2000). In Perforin-2 deficient PEM, S. typhimurium replicated equally well regardless of ROS inhibition (Figure 2B). This suggests ROS had minimal influence on intracellular replication of S. typhimurium in the absence of Perforin-2. In contrast, with PEM that express Perforin-2, the inhibition of endogenous ROS by NAC enables S. typhimurium to replicate significantly more than mock treatment during the first 4 hr after infection, suggesting that ROS in combination with Perforin-2 helps to restrain S. typhimurium replication during this period (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig2-v2.jpg)
 
-**Figure 2.:** (A–D) Wild-type S. typhimurium infection of PEMs isolated from either MPEG1 (Perforin-2) +/+ (A, C), or MPEG1 (Perforin-2) −/− mice (B, D). Non-filled symbols indicated MPEG1 (Perforin-2) +/+ PEMs; whereas filled symbols are MPEG1 (Perforin-2) −/− PEMs. Cells were incubated with NAC (blue line), NAME (green line), or mock (black line). To assess bacterial resistance mechanisms against these effectors, (E) SodC1 or (F) HmpA knockout S. typhimurium were used to infect MPEG1 (Perforin-2) −/− or +/+ PEMs. The above experiments were conducted with six biologic replicates and are representative of four independent experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.008
+**Figure 2.:** (A–D) Wild-type S. typhimurium infection of PEMs isolated from either MPEG1 (Perforin-2) +/+ (A, C), or MPEG1 (Perforin-2) −/− mice (B, D). Non-filled symbols indicated MPEG1 (Perforin-2) +/+ PEMs; whereas filled symbols are MPEG1 (Perforin-2) −/− PEMs. Cells were incubated with NAC (blue line), NAME (green line), or mock (black line). To assess bacterial resistance mechanisms against these effectors, (E) SodC1 or (F) HmpA knockout S. typhimurium were used to infect MPEG1 (Perforin-2) −/− or +/+ PEMs. The above experiments were conducted with six biologic replicates and are representative of four independent experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) PEM nitrite production following stimulation with LPS and IFN-γ and incubation with ROS (NAC) or NO (NAME) inhibitors as indicated. (B) Reactive oxygen production of PEMs after LPS or PMA stimulation with addition of indicated inhibitors.DOI: http://dx.doi.org/10.7554/eLife.06508.009
+**Figure 2—figure supplement 1.:** (A) PEM nitrite production following stimulation with LPS and IFN-γ and incubation with ROS (NAC) or NO (NAME) inhibitors as indicated. (B) Reactive oxygen production of PEMs after LPS or PMA stimulation with addition of indicated inhibitors.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** M. smegmatis by PEM.PEMs were isolated from either (A, C) wild-type, or (B, D) Perforin-2 knockout mice. □= MPEG1 (Perforin-2) +/+ PEMs, ■= MPEG1 (Perforin-2) −/− PEMs. Cells were incubated with NAC (blue line), NAME (green line), or mock (black line). The above graphs were conducted with eight biologic replicates and are representative of three experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.010
+**Figure 2—figure supplement 2.:** PEMs were isolated from either (A, C) wild-type, or (B, D) Perforin-2 knockout mice. □= MPEG1 (Perforin-2) +/+ PEMs, ■= MPEG1 (Perforin-2) −/− PEMs. Cells were incubated with NAC (blue line), NAME (green line), or mock (black line). The above graphs were conducted with eight biologic replicates and are representative of three experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05.
 
 Inhibition of endogenous NO production with L-NAME in the presence of Perforin-2 also allowed increased intracellular S. typhimurium replication beginning several hours post-infection (Figure 2C) coinciding with the known time period required for onset of NO production (see Figure 2—figure supplement 1) (Mastroeni et al., 2000). As with ROS, endogenous NO had little effect on S. typhimurium replication in the absence of Perforin-2 (Figure 2D). The results indicate that although ROS and NO contribute towards the intracellular killing of bacterial pathogens, their bactericidal activity is largely dependent upon the presence of Perforin-2.
 
@@ -103,23 +103,317 @@ To further investigate the dependence of ROS and NO bactericidal activity upon P
 
 Thus, both chemical and genetic analyses indicate that Perforin-2 is required for the bactericidal activity of ROS and NO in macrophages.
 
-## Perforin-2 is required for bactericidal activity of parenchymal, tissue forming cells
+### Perforin-2 is required for bactericidal activity of parenchymal, tissue forming cells
 
-The induction of Perforin-2 in certain parenchymal cells was reported previously (Fields et al., 2013; McCormack et al., 2013). We expanded this analysis for many human and murine primary cells and established cell lines, ranging from epithelial to endothelial cells, from astrocytes to myoblasts, and from neural cells to secretory cells (Table 1, Table 2). Every cell type derived from ectodermal, neuroectodermal, endodermal, or mesodermal lineage tested to date is able to express Perforin-2 message either constitutively or after type I or II IFN induction. Table 1 (murine cells) and Table 2 (human cells) summarize these results while their respective supplements (Supplementary files 1, 2) show the inducibility of Perforin-2′s mRNA and protein (qPCR of ΔCT of Perforin-2 normalized to GAPDH and western blot analysis). Moreover, all cell types analyzed (54 out of 54) are able to kill bacteria in an in vitro bactericidal assay when Perforin-2 is expressed. When infection occurs prior to Perforin-2 induction or when Perforin-2 is siRNA-ablated or genetically deficient using the above assay, bacteria were not killed by cells and consequently replicate. In contrast, cells that express Perforin-2 were bactericidal. These results suggest that Perforin-2 can be expressed ubiquitously to defend cells against bacterial invasion.10.7554/eLife.06508.011Table 1.Murine perforin-2 expressionDOI: http://dx.doi.org/10.7554/eLife.06508.011Cell type:Perforin-2 expression:Peritoneal macrophageConstitutiveBone marrow derived macrophage (BMDM)ConstitutiveBone marrow derived dendritic cell (BMDC)ConstitutiveBV-2 microglia cell lineConstitutiveRaw264.7 macrophage cell lineConstitutiveJ774A.1 macrophage cell lineConstitutiveMicrogliaConstitutiveNeutrophil (peritoneum stimulation)ConstitutiveNeutrophil (bone marrow)ConstitutiveGamma delta (γδ) T cell (from Skin)ConstitutiveGamma delta (γδ) T cell (from Gut)ConstitutiveGamma delta (γδ) T cell (from Vagina)ConstitutiveMarginal zone B cellConstitutiveKeratinocyte (Back)ConstitutiveIntestinal epithelial cellsConstitutiveSplenocytesConstitutiveOT1 CD8 T cell induced with TGFβ, RA, and IL2ConstitutiveOT1 CD8 T cellInducibleCD4 T cellInducibleB cellInducibleAstrocyteInducibleNeuronInducibleCath.a neuroblastoma cell lineInducibleNeuro-2A neuroblastoma cell lineInducibleAdult CNS fibroblastInducibleEmbryonic fibroblastInducibleNIH 3T3 fibroblast cell lineInducibleBalb/c 3T3 fibroblast cell lineInducibleC2C12 myoblast cell lineInducibleNeonatal ventricular myocytesInducibleCMT-93 rectal carcinoma cell lineInducibleCT26 colon carcinoma cell lineInducibleB16-F10 melanoma cell lineInducibleB16-F0 melanoma cell lineInducibleMOVCAR 5009 ovarian cancer cell lineInducibleMOVCAR 5447 ovarian cancer cell lineInducibleLL/2 Lewis lung carcinoma cell lineInducibleED-1 lung adenocarcinoma cell lineInducibleItalics: Ex vivo primary cells utilized for analysis.10.7554/eLife.06508.012Table 2.Human peforin-2 expressionDOI: http://dx.doi.org/10.7554/eLife.06508.012Cell type:Perforin-2 expression:Monocyte derived macrophage (MDM)ConstitutiveMonocyte derived dendritic cell (MDC)ConstitutivePBMC isolated NK cellConstitutivePolymorphonuclear granulocyte (neutrophil)ConstitutiveHL-60 promyelocyte cell line RA differentiated to PMNConstitutiveHL-60 cell line PMA differentiated to MacrophageConstitutiveFetal keratinocyteConstitutiveAdult keratinocyteConstitutivePMA differentiated Thp-1 monocyte cell lineConstitutiveNK-92 cell lineConstitutiveNormal colon biopsyConstitutiveNormal skin biopsyConstitutiveUmbilical endothelial cell (HUVEC)InducibleHeLa cervical carcinoma cell lineInducibleA2EN endocervical epithelial cell lineInducibleUM-UC-3 bladder cancer cell lineInducibleUM-UC-9 bladder cancer cell lineInducibleCaCo-2 colorectal carcinoma cell lineInducibleHEK293 embryonal kidney cell lineInducibleMIA-PaCa-2 pancreatic cancer cell lineInducibleSkin fibroblastInducibleThp-1 monocyte cell lineInducibleHL-60 promyelocyte cell lineInducibleOVCAR3 ovarian carcinoma cell lineInducibleA549 alveolar adenocarcinoma cell lineInducibleU-1752 bronchiolar epithelial cell lineInducibleJeg-3 placental choriocarcinoma cell lineInducibleItalics: Ex vivo primary cells utilized for analysis.
+The induction of Perforin-2 in certain parenchymal cells was reported previously (Fields et al., 2013; McCormack et al., 2013). We expanded this analysis for many human and murine primary cells and established cell lines, ranging from epithelial to endothelial cells, from astrocytes to myoblasts, and from neural cells to secretory cells (Table 1, Table 2). Every cell type derived from ectodermal, neuroectodermal, endodermal, or mesodermal lineage tested to date is able to express Perforin-2 message either constitutively or after type I or II IFN induction. Table 1 (murine cells) and Table 2 (human cells) summarize these results while their respective supplements (Supplementary files 1, 2) show the inducibility of Perforin-2′s mRNA and protein (qPCR of ΔCT of Perforin-2 normalized to GAPDH and western blot analysis). Moreover, all cell types analyzed (54 out of 54) are able to kill bacteria in an in vitro bactericidal assay when Perforin-2 is expressed. When infection occurs prior to Perforin-2 induction or when Perforin-2 is siRNA-ablated or genetically deficient using the above assay, bacteria were not killed by cells and consequently replicate. In contrast, cells that express Perforin-2 were bactericidal. These results suggest that Perforin-2 can be expressed ubiquitously to defend cells against bacterial invasion.
 
-Perforin-2 siRNA knockdown was used to determine its contribution towards intracellular killing of bacteria by IFN-induced murine and human parenchymal cells. Although IFN induces hundreds of antimicrobial genes in addition to Perforin-2, silencing of Perforin-2 alone was sufficient to cause bacterial replication. Without exception, Perforin-2 expression and function were essential for killing a diverse array of intracellular pathogenic bacteria by parenchymal or phagocytic cells. Examples of bactericidal activity include human vascular endothelial cells (HUVEC); human pancreatic cells (MIA-PaCa-2); human uroepithelial cells (UM-UC-9); murine ovarian epithelial cells (MOVCAR 5009); murine colon epithelial cells (CT26); and murine cardiac myoblasts (C2C12), respectively (
+**Table 1.**
+ Murine perforin-2 expression
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type:</th>
+      <th>Perforin-2 expression:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peritoneal macrophage</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Bone marrow derived macrophage (BMDM)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Bone marrow derived dendritic cell (BMDC)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>BV-2 microglia cell line</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Raw264.7 macrophage cell line</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>J774A.1 macrophage cell line</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Microglia</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (peritoneum stimulation)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (bone marrow)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Gamma delta (γδ) T cell (from Skin)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Gamma delta (γδ) T cell (from Gut)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Gamma delta (γδ) T cell (from Vagina)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Marginal zone B cell</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Keratinocyte (Back)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Intestinal epithelial cells</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Splenocytes</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>OT1 CD8 T cell induced with TGFβ, RA, and IL2</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>OT1 CD8 T cell</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>CD4 T cell</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>B cell</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Astrocyte</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Neuron</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Cath.a neuroblastoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Neuro-2A neuroblastoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Adult CNS fibroblast</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Embryonic fibroblast</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>NIH 3T3 fibroblast cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Balb/c 3T3 fibroblast cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblast cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Neonatal ventricular myocytes</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>CMT-93 rectal carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>CT26 colon carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>B16-F10 melanoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>B16-F0 melanoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>MOVCAR 5009 ovarian cancer cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>MOVCAR 5447 ovarian cancer cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>LL/2 Lewis lung carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>ED-1 lung adenocarcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+  </tbody>
+</table>
+
+_Italics: Ex vivo primary cells utilized for analysis._
+
+**Table 2.**
+ Human peforin-2 expression
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type:</th>
+      <th>Perforin-2 expression:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monocyte derived macrophage (MDM)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Monocyte derived dendritic cell (MDC)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>PBMC isolated NK cell</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Polymorphonuclear granulocyte (neutrophil)</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>HL-60 promyelocyte cell line RA differentiated to PMN</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>HL-60 cell line PMA differentiated to Macrophage</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Fetal keratinocyte</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Adult keratinocyte</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>PMA differentiated Thp-1 monocyte cell line</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>NK-92 cell line</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Normal colon biopsy</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Normal skin biopsy</td>
+      <td>Constitutive</td>
+    </tr>
+    <tr>
+      <td>Umbilical endothelial cell (HUVEC)</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>HeLa cervical carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>A2EN endocervical epithelial cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>UM-UC-3 bladder cancer cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>UM-UC-9 bladder cancer cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>CaCo-2 colorectal carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>HEK293 embryonal kidney cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>MIA-PaCa-2 pancreatic cancer cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Skin fibroblast</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Thp-1 monocyte cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>HL-60 promyelocyte cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>OVCAR3 ovarian carcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>A549 alveolar adenocarcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>U-1752 bronchiolar epithelial cell line</td>
+      <td>Inducible</td>
+    </tr>
+    <tr>
+      <td>Jeg-3 placental choriocarcinoma cell line</td>
+      <td>Inducible</td>
+    </tr>
+  </tbody>
+</table>
+
+_Italics: Ex vivo primary cells utilized for analysis._
+
+Perforin-2 siRNA knockdown was used to determine its contribution towards intracellular killing of bacteria by IFN-induced murine and human parenchymal cells. Although IFN induces hundreds of antimicrobial genes in addition to Perforin-2, silencing of Perforin-2 alone was sufficient to cause bacterial replication. Without exception, Perforin-2 expression and function were essential for killing a diverse array of intracellular pathogenic bacteria by parenchymal or phagocytic cells. Examples of bactericidal activity include human vascular endothelial cells (HUVEC); human pancreatic cells (MIA-PaCa-2); human uroepithelial cells (UM-UC-9); murine ovarian epithelial cells (MOVCAR 5009); murine colon epithelial cells (CT26); and murine cardiac myoblasts (C2C12), respectively (Figure 3 and Supplementary file 3). Examples of human and murine siRNA-mediated Perforin-2 protein knockdown include HUVECs and myoblasts (Figure 3, Supplementary file 4). To certify that Perforin-2 siRNA targeting was specific, siRNA resistant Perforin-2-RFP was utilized to complement Perforin-2 siRNA in parenchymal tissue forming cells. Figure 3—figure supplement 1 highlights representative examples of Perforin-2 complementation in myoblasts, intestinal epithelial cells, and PEM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig3-v2.jpg)
 
-**Figure 3.:** One day prior to the infection, cells were transfected with either a pool of scramble (□) or Perforin-2 specific (■) siRNA and 14 hr prior to the infection induced with IFN-γ. (A) HUVEC cells infected with M. smegmatis, (B) MIA-PaCa-2 cells infected with S. typhimurium, (C) UM-UC-9 infected with MRSA, (D) Perforin-2 MEF infected with MRSA, (E) Human Kc infected with MRSA induced with IFN-γ, (F) Human Kc infected with MRSA with no IFN-γ induction. = MPEG1 (Perforin-2) +/+, = MPEG1 (Perforin-2) +/−, •= MPEG1 (Perforin-2) −/−. (A–C, E, F) The above graphs contain 5–9 biologic replicates, and are representative of 3–7 independent experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05. (D) One-way ANOVA with Tukey post-hoc multiple comparisons. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type mice *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous mice. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type.DOI: http://dx.doi.org/10.7554/eLife.06508.013
+**Figure 3.:** One day prior to the infection, cells were transfected with either a pool of scramble (□) or Perforin-2 specific (■) siRNA and 14 hr prior to the infection induced with IFN-γ. (A) HUVEC cells infected with M. smegmatis, (B) MIA-PaCa-2 cells infected with S. typhimurium, (C) UM-UC-9 infected with MRSA, (D) Perforin-2 MEF infected with MRSA, (E) Human Kc infected with MRSA induced with IFN-γ, (F) Human Kc infected with MRSA with no IFN-γ induction. = MPEG1 (Perforin-2) +/+, = MPEG1 (Perforin-2) +/−, •= MPEG1 (Perforin-2) −/−. (A–C, E, F) The above graphs contain 5–9 biologic replicates, and are representative of 3–7 independent experiments. Statistical analysis was performed utilizing multiple T-tests with correction for multiple comparisons using the Holm-Sidak method. *p < 0.05. (D) One-way ANOVA with Tukey post-hoc multiple comparisons. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type mice *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous mice. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Murine cells were transfected with either a pool of murine Perforin-2 specific siRNA and a RFP vector control plasmid (■); a pool of scramble siRNA and a RFP vector control plasmid (□); or a pool of murine Perforin-2 specific siRNA and a siRNA resistant Perforin-2-RFP vector (▼) and stimulated for 14 hr with IFN-γ. (A) C2C12 infected with S. typhimurium, (B) CMT93 infected with MRSA, and (C) PEM infected with M. smegmatis. The above graphs were conducted with biologic triplicates and are representative of four experiments. Statistical analysis was performed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.014
+**Figure 3—figure supplement 1.:** Murine cells were transfected with either a pool of murine Perforin-2 specific siRNA and a RFP vector control plasmid (■); a pool of scramble siRNA and a RFP vector control plasmid (□); or a pool of murine Perforin-2 specific siRNA and a siRNA resistant Perforin-2-RFP vector (▼) and stimulated for 14 hr with IFN-γ. (A) C2C12 infected with S. typhimurium, (B) CMT93 infected with MRSA, and (C) PEM infected with M. smegmatis. The above graphs were conducted with biologic triplicates and are representative of four experiments. Statistical analysis was performed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. *p < 0.05.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Human primary keratinocytes were transfected with a pool of scramble siRNA or human Perforin-2 specific siRNA 24 hr prior to cell collection for western blot. (A) Western blot analysis demonstrating Perforin-2 protein levels in (Lane 1) human MDM, (Lane 2) human keratinocytes with Perforin-2 siRNA ablation, (Lane 3) human keratinocytes transfected with scramble siRNA. (B) Densitometry analysis from A analyzing five different experiments. Statistical analysis was performed with one-way ANOVA with Tukey post-hoc Multiple comparisons. *p < 0.05, ns = not significant.DOI: http://dx.doi.org/10.7554/eLife.06508.015
+**Figure 3—figure supplement 2.:** Human primary keratinocytes were transfected with a pool of scramble siRNA or human Perforin-2 specific siRNA 24 hr prior to cell collection for western blot. (A) Western blot analysis demonstrating Perforin-2 protein levels in (Lane 1) human MDM, (Lane 2) human keratinocytes with Perforin-2 siRNA ablation, (Lane 3) human keratinocytes transfected with scramble siRNA. (B) Densitometry analysis from A analyzing five different experiments. Statistical analysis was performed with one-way ANOVA with Tukey post-hoc Multiple comparisons. *p < 0.05, ns = not significant.
 
 To further validate the requirement of Perforin-2 for bactericidal activity in non-phagocytic cells, we used genetically deficient MEFs obtained from MPEG1 (Perforin-2) +/+, +/−, and −/− littermates. After overnight induction with IFN-γ, MPEG1 (Perforin-2) +/+ MEFs eliminate MRSA. In contrast, IFN-γ treated Perforin-2 −/− MEFs enable MRSA to replicate. Heterozygous MEFs had intermediate bactericidal activity (Figure 3D) suggesting a gene dose effect of Perforin-2.
 
@@ -127,25 +421,25 @@ Keratinocytes (Kc) represent the first cellular barrier to infection in the skin
 
 Cumulatively, our results suggest that Perforin-2 is an effector for cellular defense against pathogenic bacteria in professional phagocytes and in other cells. The ubiquity of Perforin-2 expression suggests a critical importance in cellular defenses of many, if not all, tissue against pathogenic bacteria. The findings raise the question of the molecular mechanisms by which Perforin-2 exerts its potent bactericidal function.
 
-## Perforin-2 accumulates in membranes enclosing bacteria and is associated with bacterial lysis
+### Perforin-2 accumulates in membranes enclosing bacteria and is associated with bacterial lysis
 
-The MACPF domain of Perforin-2 suggests that it is a pore-forming protein similar to the pore-formers of complement (C9) and cytotoxic lymphocytes (Perforin-1) (
+The MACPF domain of Perforin-2 suggests that it is a pore-forming protein similar to the pore-formers of complement (C9) and cytotoxic lymphocytes (Perforin-1) (Podack and Tschopp, 1982; Dennert and Podack, 1983; Law et al., 2010). In analogy to C9 and perforin-1, pore-formation by the MACPF domain of Perforin-2 on the bacterial surface may constitute the lethal hit. However, Perforin-2, unlike C9 and Perforin-1, is anchored in membrane vesicles with its MACPF domain predicted to reside inside the vesicle or outside on the plasma membrane (Figure 4A). Therefore we decided to study the cell biology of Perforin-2 in resting cells and following bacterial infection.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic demonstrating proposed orientation of Perforin-2 in vesicles. (B) Fractionation results of endogenous Perforin-2 from human macrophages. (Lane L) is a post-nuclear lysate control, (Lane 1–8) are individual fractions corresponding with specific indicated organelles. (C) Overexpression of murine Perforin-2-GFP in murine BV2 microglial cells. (D–F) Confocal images taken 5 min after S. typhimurium infection in Perforin-2-GFP + Perforin-2 siRNA transfected BV2 cells. White arrows denote extracellular S. typhimurium, red arrows highlight a DNA cloud corresponding with S. typhimurium (D) DAPI only, (E) Perforin-2-GFP only, (F) Merge of DAPI and Perforin-2-GFP. (G–I) Confocal images taken 5 min after Escherichia coli-GFP infection in Perforin-2-RFP + Perforin-2 siRNA transfected BV2 cells. Arrows point to extracellular E. coli-GFP that has made contact but is still extracellular with normal bacilli morphology maintained. (G) E. coli-GFP only, (H) Perforin-2-RFP only, and (I) merge E. coli-GFP and Perforin-2-RFP. Fractions in B were probed as follows: Cytoplasm—MEK1/2; Early Endosome—EEA1; Lysosome—Lamp1; ER—calreticulin; Golgi—Golgin-97; Mitochondria—Prohibitin; Peroxisome—Catalase; Plasma Membrane—Cadherin.DOI: http://dx.doi.org/10.7554/eLife.06508.016
+**Figure 4.:** (A) Schematic demonstrating proposed orientation of Perforin-2 in vesicles. (B) Fractionation results of endogenous Perforin-2 from human macrophages. (Lane L) is a post-nuclear lysate control, (Lane 1–8) are individual fractions corresponding with specific indicated organelles. (C) Overexpression of murine Perforin-2-GFP in murine BV2 microglial cells. (D–F) Confocal images taken 5 min after S. typhimurium infection in Perforin-2-GFP + Perforin-2 siRNA transfected BV2 cells. White arrows denote extracellular S. typhimurium, red arrows highlight a DNA cloud corresponding with S. typhimurium (D) DAPI only, (E) Perforin-2-GFP only, (F) Merge of DAPI and Perforin-2-GFP. (G–I) Confocal images taken 5 min after Escherichia coli-GFP infection in Perforin-2-RFP + Perforin-2 siRNA transfected BV2 cells. Arrows point to extracellular E. coli-GFP that has made contact but is still extracellular with normal bacilli morphology maintained. (G) E. coli-GFP only, (H) Perforin-2-RFP only, and (I) merge E. coli-GFP and Perforin-2-RFP. Fractions in B were probed as follows: Cytoplasm—MEK1/2; Early Endosome—EEA1; Lysosome—Lamp1; ER—calreticulin; Golgi—Golgin-97; Mitochondria—Prohibitin; Peroxisome—Catalase; Plasma Membrane—Cadherin.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A-L) We used RAW264.7 macrophages which constitutively express Perforin-2 and studied the subcellular localization of fluorescent Perforin-2. RAW264.7 macrophages were transfected with Perforin-2-RFP and stimulated with IFN-γ and LPS for 14 hr to induce a shift towards M1 macrophages. Cells were fixed and stained as indicated. These images are representative of 3 separate experiments.DOI: http://dx.doi.org/10.7554/eLife.06508.017
+**Figure 4—figure supplement 1.:** (A-L) We used RAW264.7 macrophages which constitutively express Perforin-2 and studied the subcellular localization of fluorescent Perforin-2. RAW264.7 macrophages were transfected with Perforin-2-RFP and stimulated with IFN-γ and LPS for 14 hr to induce a shift towards M1 macrophages. Cells were fixed and stained as indicated. These images are representative of 3 separate experiments.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A-F) BV2 cell line overexpressing Perforin-2-GFP infected with S. typhimurium. Images are collected 5 min post-infection. Arrows indicate extracellular S. typhimurium that has maintained the normal shape of S. typhimurium-likely attributed to not being surrounded by the bactericidal Perforin-2-GFP.DOI: http://dx.doi.org/10.7554/eLife.06508.018
+**Figure 4—figure supplement 2.:** (A-F) BV2 cell line overexpressing Perforin-2-GFP infected with S. typhimurium. Images are collected 5 min post-infection. Arrows indicate extracellular S. typhimurium that has maintained the normal shape of S. typhimurium-likely attributed to not being surrounded by the bactericidal Perforin-2-GFP.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** E. coli-GFP within minutes of infection.BV2 microglia were transfected with Perforin-2-RFP and stimulated overnight with IFN-γ. Transfected cells were infected with E. coli-GFP for several minutes upon which the cells were fixed and imaged. Arrows point to extracellular E. coli-GFP. (A) Perforin-2-RFP only, (B) E. coli-GFP only, (C) Merge of Perforin-2-RFP and E. Coli-GFP. Yellow in (C) corresponds with colocalization of Perforin-2-RFP with E. coli-GFP.DOI: http://dx.doi.org/10.7554/eLife.06508.019
+**Figure 4—figure supplement 3.:** BV2 microglia were transfected with Perforin-2-RFP and stimulated overnight with IFN-γ. Transfected cells were infected with E. coli-GFP for several minutes upon which the cells were fixed and imaged. Arrows point to extracellular E. coli-GFP. (A) Perforin-2-RFP only, (B) E. coli-GFP only, (C) Merge of Perforin-2-RFP and E. Coli-GFP. Yellow in (C) corresponds with colocalization of Perforin-2-RFP with E. coli-GFP.
 
 In lieu of antibodies capable of detecting native endogenous Perforin-2, as these reagents are not currently available, we transfected c-terminal tagged Perforin-2–RFP or–GFP into cells in which endogenous Perforin-2 was knocked down. The Perforin-2 fusion proteins were functionally active as shown above in complementation studies (Figure 1, Figure 3—figure supplement 1). In a murine macrophage cell line (RAW264.7) tagged murine Perforin-2 was localized to ER, Golgi, and early endosomes based on its overlay with ER tracker, GM130, and EEA1 respectively (Figure 4, Figure 4—figure supplement 1).
 
@@ -157,83 +451,83 @@ To directly demonstrate the presence of bacteria in Perforin-2-RFP-containing en
 
 Overall, these studies demonstrated that Perforin-2 is able to rapidly translocate to endosomal membranes, or in some cells may already be localized in these membranes in order to trap intracellular bacteria (upon fusion with phagosomes). During this process GFP is released from GFP synthesizing bacteria suggesting bacterial demise. Similarly, the appearance of diffuse bacterial DNA inside the vesicle suggests that integrity of the bacteria has been compromised. Owing to Perforin-2′s highly conserved MACPF domain, we next were interested in elucidating if Perforin-2 and its MACPF domain can form pores.
 
-## Perforin-2 forms large clusters of 100 Å pores in bacterial cell walls
+### Perforin-2 forms large clusters of 100 Å pores in bacterial cell walls
 
-To address the hypothesis that Perforin-2 can form pores in membranes akin to C9 of complement and Perforin-1 we used an artificial system by overexpressing Perforin-2 in HEK-293 cells, followed by the isolation of post-nuclear membranes, limited proteolysis, and their analysis by negative staining electron microscopy (EM). The cytoplasmic domain of Perforin-2 has a predicted trypsin cleavage site close to the N-terminus of its transmembrane domain which may be functionally important. We observed clusters of typical membrane pores of ∼100 Å inner diameter in these membranes (
+To address the hypothesis that Perforin-2 can form pores in membranes akin to C9 of complement and Perforin-1 we used an artificial system by overexpressing Perforin-2 in HEK-293 cells, followed by the isolation of post-nuclear membranes, limited proteolysis, and their analysis by negative staining electron microscopy (EM). The cytoplasmic domain of Perforin-2 has a predicted trypsin cleavage site close to the N-terminus of its transmembrane domain which may be functionally important. We observed clusters of typical membrane pores of ∼100 Å inner diameter in these membranes (Figure 5A,B) that were morphologically similar to poly-C9 and poly-Perforin-1 pores on bacterial and cell membranes (Schreiber et al., 1979; Podack and Tschopp, 1982; Podack and Dennert, 1983). Pores were not observed on any membranes in the absence of trypsin treatment. These experiments suggest that Perforin-2, putatively via its MACPF domain, is able to form clusters of regular polymeric pores on membranes akin to C9 of complement and Perforin-1. Although our methodology facilitated visualization of poly Perforin-2 pores, we are not suggesting that Perforin-2 is typically activated by trypsin nor are we suggesting that eukaryotic membranes are typical targets of Perforin-2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Electron micrograph of polymerized Perforin-2 membrane lesions from Perforin-2-GFP transfected HEK-293 cells, with Perforin-2 activated to form pores by trypsin digestion to the enriched membrane fraction. Panel A Demonstrates the quantity of pores on the Perforin-2 overexpressed membranes after trypsin activation. Panel B denotes a higher magnification to illustrate the uniform pore structure. (C-G) Perforin-2 wild-type MEFs were treated with IFN-γ for 14 hr, and infected with (C–E) MRSA or (F, G) M. smegmatis. After 5 hr the infected bacteria were isolated and imaged utilizing negative stain TEM. Arrows point to black, stain-filled pores on the bacterial cell wall surrounded by white, stain excluding borders created by polymerized Perforin-2. Round pores measure 8.5–10 nm inner diameter, the size typical for polymerized Perforin-2-pores. Panels E and G are close-up images of the boxed region in C and F. Blinded quantification of pore amount with different conditions is demonstrated in Figure 6—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.06508.020
+**Figure 5.:** (A, B) Electron micrograph of polymerized Perforin-2 membrane lesions from Perforin-2-GFP transfected HEK-293 cells, with Perforin-2 activated to form pores by trypsin digestion to the enriched membrane fraction. Panel A Demonstrates the quantity of pores on the Perforin-2 overexpressed membranes after trypsin activation. Panel B denotes a higher magnification to illustrate the uniform pore structure. (C-G) Perforin-2 wild-type MEFs were treated with IFN-γ for 14 hr, and infected with (C–E) MRSA or (F, G) M. smegmatis. After 5 hr the infected bacteria were isolated and imaged utilizing negative stain TEM. Arrows point to black, stain-filled pores on the bacterial cell wall surrounded by white, stain excluding borders created by polymerized Perforin-2. Round pores measure 8.5–10 nm inner diameter, the size typical for polymerized Perforin-2-pores. Panels E and G are close-up images of the boxed region in C and F. Blinded quantification of pore amount with different conditions is demonstrated in Figure 6—figure supplement 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** 10 blinded fields were counted from the above eight conditions. Pores are defined as regions containing stain (corresponding to a ‘hole” in the surface) that is approximately 10 nm in diameter. Around the “hole” ultrastructure needs to be visible to ensure that the presumed “hole” is actually a pore. Statistical analysis was performed by with one-way ANOVA with Tukey Post-hoc Multiple Comparisons.*p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.021
+**Figure 5—figure supplement 1.:** 10 blinded fields were counted from the above eight conditions. Pores are defined as regions containing stain (corresponding to a ‘hole” in the surface) that is approximately 10 nm in diameter. Around the “hole” ultrastructure needs to be visible to ensure that the presumed “hole” is actually a pore. Statistical analysis was performed by with one-way ANOVA with Tukey Post-hoc Multiple Comparisons.*p < 0.05.
 
 The MACPF domain has been shown to be the pore-forming domain of Perforin-1 and of the membrane attack complex of complement (Hadders et al., 2007; Rosado et al., 2007; Slade et al., 2008; Law et al., 2010). The physical proximity of the pore-forming MACPF domain of Perforin-2 to endocytosed bacteria suggested that bacteria killed inside the endosomes might also exhibit electron microscopic images typical for Perforin-2-lesions on bacterial surfaces/membranes. To test this hypothesis, we induced Perforin-2 expression in MEF overnight with IFN-γ and infected the following day with M. smegmatis or MRSA. Intracellular bacteria were then re-isolated from MEFs after 5 hr and bacterial surfaces were inspected by negative-staining electron microscopy (Figure 5C–G). Large patches of densely clustered pores of ca. 100 Å inner diameter are visualized on both MRSA and M. smegmatis surfaces with similar irregularities as those observed in complement lesions on E. coli surfaces (Schreiber et al., 1979). MRSA bacterial surfaces are more hydrophilic and show more uniform negative staining (Figure 5C–E) when compared to M. smegmatis samples that appear washed out with lower detail and contrast. This observed difference is due to the high hydrophobicity of the mycobacterial surface that repels negative stain except where it accumulates in the pore (Figure 5F,G) (Noda and Kanemasa, 1986; Stokes et al., 2004). Pores are only visible after bacteria were isolated from cells expressing Perforin-2. Pores were not present on control bacteria or after isolation of bacteria from Perforin-2 deficient cells as determined by blinded quantification of the pore-like structures (Figure 5—figure supplement 1). There were significantly greater numbers of pore-like structures (two or more orders of magnitude) associated with bacteria isolated from Perforin-2 expressing cells compared to Perforin-2 deficient cells. This indicates that there is a strong correlation between pore-formation and Perforin-2.
 
-## Perforin-2 cleavage fragments are detectable in isolated bacteria after infection
+### Perforin-2 cleavage fragments are detectable in isolated bacteria after infection
 
 Although it is not yet technically possible to prove definitively that the visualized pores are poly- Perforin-2, the existence of Perforin-2 pores is contingent upon a physical association between Perforin-2 and bacterial cells. Since we have a panel of antibodies that recognize denatured Perforin-2, we reasoned that it is possible to prove or disprove the latter. To accomplish this, we utilized five antibodies raised against peptides from different regions of human Perforin-2 (Figure 6—figure supplement 1). Perforin-2−/− MEFs were transfected with either GFP or human Perforin-2-GFP plasmids and infected for 1 hr with a gram-negative bacteria (Enteropathogenic E. coli, EPEC) or gram-positive bacteria (MRSA). Of note these two species were chosen due to their common extracellular preference in order to improve the isolation of bacteria undergoing Perforin-2 mediated bacteriolysis following infection with eukaryotic cells. In order to determine eukaryotic cellular contamination following bacterial purification, non-infected cells were processed in parallel as a control. Bacterial isolation and enrichment was successful as all fractions and filtrates were below detection for contaminating mammalian membranes and cellular debris as determined by immunoblot with antibodies targeting murine clathrin, actin, and GFP (data not shown).
 
-Following the isolation procedure and subsequent differential rounds of centrifugation, Perforin-2 reactive bands with different molecular weights were detected in fractions containing either EPEC or MRSA. Perforin-2 was not detected after these fractions were passed through 0.22 μM filters (
+Following the isolation procedure and subsequent differential rounds of centrifugation, Perforin-2 reactive bands with different molecular weights were detected in fractions containing either EPEC or MRSA. Perforin-2 was not detected after these fractions were passed through 0.22 μM filters (Figure 6). Prior to filtration each sample was spiked with goat IgG to account for nonspecific loss of soluble proteins. Unlike Perforin-2, goat IgG was equally detected in both bacterial fractions and filtrates. This indicates that Perforin-2 was not present as a soluble protein nor associated with cellular debris or microvesicles. Rather, Perforin-2 was associated with particles larger than 0.22 microns, such as bacterial cells. This conclusion was supported by the detection of the EPEC transcription factor ADA in the bacterial fractions but not filtrates. Likewise, MRSA Penicillin Binding Protein (PBP) was only detected in the unfiltered bacterial fractions.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig6-v2.jpg)
 
-**Figure 6.:** Perforin-2 −/− MEFs were transfected with human Perforin-2-GFP or GFP induced with murine IFN-γ and infected with the extracellular bacteria MRSA or EPEC. Following infection, bacteria were isolated, goat IgG was added to assess for nonspecific protein loss, and a portion filtered to distinguish bacteria from debris/soluble proteins. A noninfected control (first lane), demonstrates the selectivity of the differential centrifugations to remove mammalian cells. Figure 6—figure supplement 1 illustrates the recognition domain for human each Perforin-2 specific peptide generated antibody as well as verification. Fractions were probed against peptide-generated antibodies against the Perforin-2 domain (C93), and peptide generated antibodies against the MACPF domain (C186, C252). Commercial antibodies against ADA of EPEC and PBP of MRSA were utilized as bacterial markers. An additional band was observed following PBP immunoblot with a slightly higher molecular weight. This band was unspecific because it occurred in all samples including those derived from the experiments using EPEC. No signal was detected with previously validated peptide derived antibodies targeting the cytoplasmic domain of human Perforin-2 (C174), or peptide derived antibodies targeting a N-terminal portion of the Perforin-2 domain (C267) (Data not shown). In addition, commercial anti-human Perforin-2 antibody (detecting the cytoplasmic domain), clathrin, actin, and GFP also did not generate any signal (data not shown).DOI: http://dx.doi.org/10.7554/eLife.06508.022
+**Figure 6.:** Perforin-2 −/− MEFs were transfected with human Perforin-2-GFP or GFP induced with murine IFN-γ and infected with the extracellular bacteria MRSA or EPEC. Following infection, bacteria were isolated, goat IgG was added to assess for nonspecific protein loss, and a portion filtered to distinguish bacteria from debris/soluble proteins. A noninfected control (first lane), demonstrates the selectivity of the differential centrifugations to remove mammalian cells. Figure 6—figure supplement 1 illustrates the recognition domain for human each Perforin-2 specific peptide generated antibody as well as verification. Fractions were probed against peptide-generated antibodies against the Perforin-2 domain (C93), and peptide generated antibodies against the MACPF domain (C186, C252). Commercial antibodies against ADA of EPEC and PBP of MRSA were utilized as bacterial markers. An additional band was observed following PBP immunoblot with a slightly higher molecular weight. This band was unspecific because it occurred in all samples including those derived from the experiments using EPEC. No signal was detected with previously validated peptide derived antibodies targeting the cytoplasmic domain of human Perforin-2 (C174), or peptide derived antibodies targeting a N-terminal portion of the Perforin-2 domain (C267) (Data not shown). In addition, commercial anti-human Perforin-2 antibody (detecting the cytoplasmic domain), clathrin, actin, and GFP also did not generate any signal (data not shown).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Six peptide antibodies were generated against different regions of human Perforin-2. Two antibodies detect in the MACPF domain of Perforin-2: C252 detects in the N-terminal portion; C186 detects in the C terminal portion of the domain. Two antibodies detect in the Perforin-2 domain of Perforin-2: C93 detects in the N terminal portion; C267 detects in the C terminal portion of the domain. Two antibodies detect in the same portion of the cytoplasmic tail of Perfroin-2: C246 and C174 (B) Antibodies were screened against either Perforin-2 constitutively expressing human macrophages from PMA differentiated Thp1s or murine macrophages (BV2 microglia cell line). All bands are located at ∼72kD, the predicted weight of Perforin-2. (C, D) Example antibodies C186 and C174 with increasing concentrations of Thp1 or BV2 protein loaded to assess detection sensitivity of the peptide antibody.DOI: http://dx.doi.org/10.7554/eLife.06508.023
+**Figure 6—figure supplement 1.:** (A) Six peptide antibodies were generated against different regions of human Perforin-2. Two antibodies detect in the MACPF domain of Perforin-2: C252 detects in the N-terminal portion; C186 detects in the C terminal portion of the domain. Two antibodies detect in the Perforin-2 domain of Perforin-2: C93 detects in the N terminal portion; C267 detects in the C terminal portion of the domain. Two antibodies detect in the same portion of the cytoplasmic tail of Perfroin-2: C246 and C174 (B) Antibodies were screened against either Perforin-2 constitutively expressing human macrophages from PMA differentiated Thp1s or murine macrophages (BV2 microglia cell line). All bands are located at ∼72kD, the predicted weight of Perforin-2. (C, D) Example antibodies C186 and C174 with increasing concentrations of Thp1 or BV2 protein loaded to assess detection sensitivity of the peptide antibody.
 
 Antibodies directed to the amino-terminal domains detected Perforin-2 in bacterial fractions. Two different banding patterns were observed depending upon which region the peptide derived Perforin-2 antibodies recognized (Figure 6—figure supplement 1). A single ca. 50 kD band was detected after probing with an antibody targeting amino-terminal portion of the Perforin-2 domain. Probing with either carboxy- or amino-terminal MACPF domain antibodies recognized two bands in the bacterial fractions. One of these bands is the same size as the ca. 50kD band observed with the amino-terminal detecting Perforin-2 domain antibody, suggesting that this band is a combination of the MACPF domain and an amino-terminal portion of the Perforin-2 domain. Both MACPF domain antibodies also identified another band of ca. 37kD that is not detected with the Perforin-2 domain antibody, indicative of a MACPF domain fragment. Antibodies raised against the carboxy-terminal region of the Perforin-2 domain, the cytoplasmic domain, or the GFP tag were negative in unfiltered bacterial fractions despite validation of both Perforin-2 peptide antibodies with human macrophage whole cell lysates (data not shown, Figure 6—figure supplement 1). These results indicate that Perforin-2 makes physical contact with bacteria are supports are interpretation of electron dense poly-Perforin-2 pores.
 
-## Perforin-2 deficient mice succumb to epicutaneous MRSA infection
+### Perforin-2 deficient mice succumb to epicutaneous MRSA infection
 
 We next sought to extend our in vitro studies to in vivo models using Perforin-2 deficient mice. Perforin-2 was neither vital for developmental processes nor for the control of commensal bacteria under specific pathogen-free conditions. This specifically included the regular development of the innate and adaptive immune system (Figure 7—figure supplement 1). This permitted us to study the antibacterial activity of Perforin-2 in vivo with a traditionally sub-lethal dose of MRSA and later other pathogens (S. typhimurium).
 
 S. aureus is part of the normal bacterial skin flora in humans, but it can also become a major cause of serious skin and systemic infections. S. aureus's pathogenic arsenal, coupled with significant complement and antibiotic resistance, has allowed MRSA to evolve into a life-threatening, antibiotic-resistant pathogen in both community acquired as well as nosocomial settings. To determine the bactericidal role of Perforin-2 against MRSA in vivo, we utilized an epicutaneous MRSA challenge model for mice (Cheng et al., 2009; Wanke et al., 2013) in which hair removal is followed by ‘tape-stripping’ (Wanke et al., 2013) to disrupt the keratin barrier while exposing intact keratinocytes without overt wounding. MPEG1 (Perforin-2) −/−, +/−, and +/+ littermates were challenged on the tape-stripped skin with 109 CFU of MRSA, a PFGE type USA300 clinical isolate.
 
-Perforin-2 knockout mice exhibited significantly decreased survival and more weight loss compared to Perforin-2 heterozygous or wild-type littermates (
+Perforin-2 knockout mice exhibited significantly decreased survival and more weight loss compared to Perforin-2 heterozygous or wild-type littermates (Figure 7A,B, Figure 7—figure supplement 2). To investigate the rate and route of the bacterial spread, 7 animals from each of the three genotypes were sacrificed 6 and 12 days following infection and the colony forming units (CFU) in their spleen, kidney, blood, and skin were determined (Figure 7, Figure 7—figure supplement 3). On day 6, all groups showed signs of systemic MRSA infection (recoverable CFU from internal organs). However, CFUs in Perforin-2 −/− mice were significantly higher than in wild-type mice (Figure 7—figure supplement 3) and by day 12, Perforin-2 deficient mice continued to have bacteremia with 100 to 100,000 fold higher MRSA counts in their organs as compared to Perforin-2 heterozygous or wild-type littermates (Figure 7B–E). The majority of heterozygous animals completely cleared the infection, with only a few mice demonstrating recoverable CFU in internal organs and the skin at day 12 (Figure 7B–E) while MRSA of the wild-type animals could only be recovered from the skin of three animals. On the other hand, all Perforin-2 knockout mice failed to eliminate MRSA and recover their weight. These animals eventually succumbed to infection (Figure 7A, Figure 7—figure supplement 2). Similar trends were observed with 129X1/SVJ congenic animals (Figure 7B) indicating that MRSA mortality was controlled by Perforin-2 and not attributable to confounding passenger mutations or genetic background differences between 129X1/SVJ and C57Bl/6 mice (Vanden Berghe et al., 2015).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig7-v2.jpg)
 
-**Figure 7.:** (A) Aggregated survival curves of 60 C57BL/6 × 129 × 1/SJV mice challenged epicutaneously with 109 MRSA. (B) Aggregated survival curves of 75,129X1/SVJ mice challenged epicutaneously with 109 MRSA. (C–F) Organ load twelve days after MRSA epicutaneous infection in (C) blood, (D) spleen, (E) kidney, and (F) skin. (G) Perforin-2 ex vivo infection of murine neutrophils with MRSA. = MPEG1 (Perforin-2) wild-type animals (+/+), = MPEG1 (Perforin-2) heterozygous animals (+/−), •= MPEG1 (Perforin-2) knockout animals (−/−). Log-rank (Mantel–Cox) test was performed for A and B with statistical significance p < 0.0001. One-way ANOVA with Tukey post-hoc multiple comparisons was performed in C-G. *p < 0.05 as indicated. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous neutrophils. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type neutrophils.DOI: http://dx.doi.org/10.7554/eLife.06508.024
+**Figure 7.:** (A) Aggregated survival curves of 60 C57BL/6 × 129 × 1/SJV mice challenged epicutaneously with 109 MRSA. (B) Aggregated survival curves of 75,129X1/SVJ mice challenged epicutaneously with 109 MRSA. (C–F) Organ load twelve days after MRSA epicutaneous infection in (C) blood, (D) spleen, (E) kidney, and (F) skin. (G) Perforin-2 ex vivo infection of murine neutrophils with MRSA. = MPEG1 (Perforin-2) wild-type animals (+/+), = MPEG1 (Perforin-2) heterozygous animals (+/−), •= MPEG1 (Perforin-2) knockout animals (−/−). Log-rank (Mantel–Cox) test was performed for A and B with statistical significance p < 0.0001. One-way ANOVA with Tukey post-hoc multiple comparisons was performed in C-G. *p < 0.05 as indicated. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous neutrophils. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type neutrophils.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Frequency of CD4, CD8, and NK cells in the peripheral blood of Perforin-2 knockout and wild-type littermate mice. The phenotype of peripheral blood lymphocytes was determined by 7-color flow cytometer analysis. Each bar (A–D, G) represents the Mean ± SD from 10 to 14 mice, numbers represent the percentage of cells among live lymphocyte (A, D, G) or CD3 gated cell population (B, C). Plots represent (A) CD3+ population, (B) CD4 population, (C) CD8 population, (D) NK population, and (G) B cell population. Percentage of memory markers on (E) CD3+CD4 and (F) CD3+CD8 positive cells was determined by expression of CD44 and CD62L: Naïve CD62L + CD44-; Central memory CD62L + CD44+; and Effector memory CD62L-CD44+. The data are compiled percentage averages of 10–14 mice per group analyzed in two independent experiments. No statistical differences were observed for any adaptive immune populations by Students T-test p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.025
+**Figure 7—figure supplement 1.:** Frequency of CD4, CD8, and NK cells in the peripheral blood of Perforin-2 knockout and wild-type littermate mice. The phenotype of peripheral blood lymphocytes was determined by 7-color flow cytometer analysis. Each bar (A–D, G) represents the Mean ± SD from 10 to 14 mice, numbers represent the percentage of cells among live lymphocyte (A, D, G) or CD3 gated cell population (B, C). Plots represent (A) CD3+ population, (B) CD4 population, (C) CD8 population, (D) NK population, and (G) B cell population. Percentage of memory markers on (E) CD3+CD4 and (F) CD3+CD8 positive cells was determined by expression of CD44 and CD62L: Naïve CD62L + CD44-; Central memory CD62L + CD44+; and Effector memory CD62L-CD44+. The data are compiled percentage averages of 10–14 mice per group analyzed in two independent experiments. No statistical differences were observed for any adaptive immune populations by Students T-test p < 0.05.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** Mice were shaved, tape-stripped, weighed for preinfection baseline, and infected with 109 S. aureus. Blinded individuals weighed the animals at indicated time points. = Perforin-2 wild-type animals,  = Perforin-2 heterozygous animals, • = Perforin-2 knockout animals. (A) Weight loss in 25 mice after infection throughout the first six days post-infection. (B) Overall weight loss of 25 animals infected with 109 S. aureus, after 30% weight loss animals were euthanized, causing the apparent rebound in weight of surviving animals at day 10. The above experiments portray a representative experiment of three repeats. Statistical analysis was preformed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. * indicates p < 0.05 between both knockout:wild-type and knockout:heterozygous animals.DOI: http://dx.doi.org/10.7554/eLife.06508.026
+**Figure 7—figure supplement 2.:** Mice were shaved, tape-stripped, weighed for preinfection baseline, and infected with 109 S. aureus. Blinded individuals weighed the animals at indicated time points. = Perforin-2 wild-type animals,  = Perforin-2 heterozygous animals, • = Perforin-2 knockout animals. (A) Weight loss in 25 mice after infection throughout the first six days post-infection. (B) Overall weight loss of 25 animals infected with 109 S. aureus, after 30% weight loss animals were euthanized, causing the apparent rebound in weight of surviving animals at day 10. The above experiments portray a representative experiment of three repeats. Statistical analysis was preformed with one-way ANOVA with Tukey Post-hoc Multiple Comparisons. * indicates p < 0.05 between both knockout:wild-type and knockout:heterozygous animals.
 
 ![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig7-figsupp3-v2.jpg)
 
-**Figure 7—figure supplement 3.:** Mice were shaved, tape-stripped, and infected with 109 S. aureus. = Perforin-2 wild-type animals,  = Perforin-2 heterozygous animals, • = Perforin-2 knockout animals. (A–D) Organs from seven mice were collected six days after MRSA infection, weighed, homogenized, serially diluted, plated, and enumerated. Samples were normalized in weight to one another. (A) Blood was collected from cardiac puncture, (B) Spleen, (C) Kidney, and (D) Skin—site of bacterial inoculation. All samples were analyzed by Kruskal–Wallis test with Dunn's post-hoc multiple comparisons test. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.027
+**Figure 7—figure supplement 3.:** Mice were shaved, tape-stripped, and infected with 109 S. aureus. = Perforin-2 wild-type animals,  = Perforin-2 heterozygous animals, • = Perforin-2 knockout animals. (A–D) Organs from seven mice were collected six days after MRSA infection, weighed, homogenized, serially diluted, plated, and enumerated. Samples were normalized in weight to one another. (A) Blood was collected from cardiac puncture, (B) Spleen, (C) Kidney, and (D) Skin—site of bacterial inoculation. All samples were analyzed by Kruskal–Wallis test with Dunn's post-hoc multiple comparisons test. *p < 0.05.
 
 We also investigated the in vitro control of MRSA by neutrophilic granulocytes because they contribute to abscess formation and, with some MRSA strains, are credited with the clearance of infection (Rigby and DeLeo, 2012). We found that MRSA replicated in Perforin-2 −/− neutrophils, but was killed in the presence of Perforin-2. Heterozygous neutrophils had intermediate bactericidal activity towards MRSA, suggesting that Perforin-2 was a rate-limiting molecule to control intracellular MRSA after infection (Figure 7G). These in vivo results indicate that Perforin-2 is required to limit the early systemic dissemination of MRSA (Hahn et al., 2009; Onunkwo et al., 2010) and, ultimately, to clear epicutaneous MRSA infection.
 
-## Perforin-2 deficient mice succumb to S. typhimurium orogastric infection
+### Perforin-2 deficient mice succumb to S. typhimurium orogastric infection
 
 To investigate whether the in vivo protection by Perforin-2 was limited to a particular site of infection or gram-positive pathogens, we also infected Perforin-2 deficient animals with gram-negative S. typhimurium via the orogastric route using well established protocols (Barthel et al., 2003). However, owing to the previously observed sensitivity of Perforin-2 deficient animals to MRSA, we decreased the infectious inoculum from the normal LD50 of 108 CFU–105 CFU.
 
-As expected for this low infectious inoculum, Perforin-2 wild-type animals only transiently lost weight (<10%) whereas Perforin-2 deficient mice progressively lost weight and acquired severe diarrhea. Perforin-2 heterozygous littermates had more severe initial weight loss than wild-type animals, but these animals were able to recover (
+As expected for this low infectious inoculum, Perforin-2 wild-type animals only transiently lost weight (<10%) whereas Perforin-2 deficient mice progressively lost weight and acquired severe diarrhea. Perforin-2 heterozygous littermates had more severe initial weight loss than wild-type animals, but these animals were able to recover (Figure 8—figure supplement 1). Equal S. typhimurium inoculation and colonization was confirmed by CFU analysis of the feces 12 hr following S. typhimurium inoculation (Figure 8—figure supplement 2). Finally, 129X1/SVJ congenic animals were infected with 105 S. typhimurium to address possibly confounding passenger mutations resulting from the different genetic background. As with the MRSA experiments, the observed Perforin-2 phenotype did not result from genetic differences because the aggregated survival curves were similar (compare Figure 8B with Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig8-v2.jpg)
 
-**Figure 8.:** S. typhimurium challenge.(A) Aggregated survival curves of 70 C57BL/6 × 129 × 1/SJV mice challenged with 105 S. typhimurium. (B) Aggregated survival curves of 45,129X1/SVJ mice challenged with 105 S. typhimurium. (C–F) Organ load five days after 105 S. typhimurium infection in C57BL/6 × 129 × 1/SJV mice in (C) blood, (D) small intestine, (E) liver, and (F) spleen. = MPEG1 (Perforin-2) wild-type animals (+/+), = MPEG1 (Perforin-2) heterozygous animals (+/−), •= MPEG1 (Perforin-2) knockout animals (−/−). Log-rank (Mantel–Cox) test was performed for A and B with statistical significance p < 0.0001. One-way ANOVA with Tukey post-hoc multiple comparisons was performed in C-F. *p < 0.05 as indicated.DOI: http://dx.doi.org/10.7554/eLife.06508.028
+**Figure 8.:** (A) Aggregated survival curves of 70 C57BL/6 × 129 × 1/SJV mice challenged with 105 S. typhimurium. (B) Aggregated survival curves of 45,129X1/SVJ mice challenged with 105 S. typhimurium. (C–F) Organ load five days after 105 S. typhimurium infection in C57BL/6 × 129 × 1/SJV mice in (C) blood, (D) small intestine, (E) liver, and (F) spleen. = MPEG1 (Perforin-2) wild-type animals (+/+), = MPEG1 (Perforin-2) heterozygous animals (+/−), •= MPEG1 (Perforin-2) knockout animals (−/−). Log-rank (Mantel–Cox) test was performed for A and B with statistical significance p < 0.0001. One-way ANOVA with Tukey post-hoc multiple comparisons was performed in C-F. *p < 0.05 as indicated.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** S. typhimurium challenge.Representative weight loss curves of 15 mice in each group challenged with 105 S. typhimurium.  = MPEG1 (Perforin-2) wild-type (+/+) animals, = MPEG1 (Perforin-2) heterozygous (+/−) animals, •= MPEG1 (Perforin-2) knockout (−/−) animals. One-way ANOVA with Tukey post-hoc multiple comparisons was performed with *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type mice *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous mice. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type.DOI: http://dx.doi.org/10.7554/eLife.06508.029
+**Figure 8—figure supplement 1.:** Representative weight loss curves of 15 mice in each group challenged with 105 S. typhimurium.  = MPEG1 (Perforin-2) wild-type (+/+) animals, = MPEG1 (Perforin-2) heterozygous (+/−) animals, •= MPEG1 (Perforin-2) knockout (−/−) animals. One-way ANOVA with Tukey post-hoc multiple comparisons was performed with *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type mice *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type and Perforin-2 knockout:Perforin-2 heterozygous mice. *p < 0.05 between Perforin-2 knockout:Perforin-2 wild-type, Perforin-2 knockout:Perforin-2 heterozygous, and Perforin-2 heterozygous:Perforin-2 wild-type.
 
 ![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig8-figsupp2-v2.jpg)
 
-**Figure 8—figure supplement 2.:** 5 S. typhimurium inoculation.Feces was collected, homogenized, serially diluted, plated, and enumerated from 30 animals of each genotype 12 hr after S. typhimurium oral-gastric inoculation. No statistical differences were observed in fecal shedding between groups at this time point. Statistical analysis was performed with one-way ANOVA with Tukey post-hoc multiple comparisons.DOI: http://dx.doi.org/10.7554/eLife.06508.030
+**Figure 8—figure supplement 2.:** Feces was collected, homogenized, serially diluted, plated, and enumerated from 30 animals of each genotype 12 hr after S. typhimurium oral-gastric inoculation. No statistical differences were observed in fecal shedding between groups at this time point. Statistical analysis was performed with one-way ANOVA with Tukey post-hoc multiple comparisons.
 
 ![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/06508/elife-06508-fig8-figsupp3-v2.jpg)
 
-**Figure 8—figure supplement 3.:** 5 S. typhimurium oral-gastric infection.(A–D) Organs from 10 mice were collected 60 hr after S. typhimurium infection, weighed, homogenized, serially diluted, plated, and enumerated. Samples were normalized in weight to one another. (A) Blood was collected from cardiac puncture, (B) Small Intestine, (C) Liver, and (D) Spleen. All samples analyzed by Kruskal–Wallis test with Dunn's post-hoc multiple comparisons test. *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06508.031
+**Figure 8—figure supplement 3.:** (A–D) Organs from 10 mice were collected 60 hr after S. typhimurium infection, weighed, homogenized, serially diluted, plated, and enumerated. Samples were normalized in weight to one another. (A) Blood was collected from cardiac puncture, (B) Small Intestine, (C) Liver, and (D) Spleen. All samples analyzed by Kruskal–Wallis test with Dunn's post-hoc multiple comparisons test. *p < 0.05.
 
 Colonization of the animals with S. typhimurium was performed 60 hr following their infection (Figure 8—figure supplement 3). At this time point all three Perforin-2 groups showed signs of systemic S. typhimurium infection; however, with CFUs in Perforin-2 −/− mice were significantly higher than in wild-type animals. Moreover, only the former animals were septic with high bacterial titers in the blood. 5 days following infection, the bacterial burden of S. typhimurium in Perforin-2 −/− mice continued to be significantly higher in all organs as compared to their MPEG1 (Perforin-2) +/+ littermates (Figure 8C–F) with intermediate levels observed in the heterozygous littermates.
 
@@ -261,7 +555,7 @@ Given the central role of Perforin-2 in antimicrobial responses, the pathogenici
 
 ## Materials and methods
 
-## Cell culture and bacterial organisms
+### Cell culture and bacterial organisms
 
 RAW264.7 (TIB-71), J774A.1 (TIB-67), HL-60 (CCL-240), HeLa 229 (CCL 21), CATH.a (CRL-11179), Neuro-2A (CCL-131), NIH/3T3 (CRL-1658), Balb/c 3T3 (CCL-163), C2C12 (CRL-1772), CMT-93 (CCL-223), CT26.WT (CRL-2638), B16-F10 (CRL-6475), B16-F0 (CRL-6322), LL/2 (CRL-1642), MIA PaCa-2 (CRL-1420), Thp1 (TIB-202), NK-92 (CRL-2407), OVCAR3 (HTB-161), CaCo-2 (HTB-37), A549 (CCL-185), U-1752, JEG-3 (HTB-36), and HEK-293 (CRL-1573) cell lines were obtained from American Type Culture Collection, Manassas, VA. HUVECs were a gift from Dr. W Balkan, University of Miami, FL. BV2 microglial cell line was a gift from Dr. J Bethea, University of Miami, FL. ED-1 mouse lung adenocarcinoma cell line derived from the lung tumors of transgenic mice that express cyclin-E driven by the human Surfactant-C promoter was a gift from Dr. D Robbins, University of Miami, FL. MOVCAR 5009 and MOVCAR 5447 cells were a gift from Dr. D Connolly, Fox Chase Cancer Center, PA. A2EN primary-cell-like cervical epithelial cells were provided by Dr. K Fields, University of Kentucky, KY. UM-UC-3 and UM-UC-9 bladder cancer cell lines were a gift from Dr. B Grossman, MD Anderson Cancer Center, TX. Human adult and neonatal keratinocytes were obtained from Lonza. Primary murine astrocytes and primary CNS fibroblasts were a gift from Dr. J Lee, University of Miami, FL. Neonatal ventricular myocytes were a gift from Dr. N Bishopric, University of Miami, FL.
 
@@ -269,7 +563,7 @@ All cells were cultured at 37°C in a humidified atmosphere containing 5% CO2 fo
 
 S. typhimurium LT2 (ATCC 700720) and SL1344 (gift from Dr. J. Galán, Yale University), and E. coli K12 DH5α were grown in Luria–Bertani broth (LB) or heart infusion broth (HIB; Becton, Dickinson and Co., Sparks, MD, United States) at 37°C. Staphylococcus aureus CLP148 and CLP153 (MRSA PFGE type USA300) were grown in LB or tryptic soy broth (Sigma–Aldrich, St. Loius, MO, United States) at 37°C. M. avium (gift from Dr. T. Cleary, University of Miami), and M. smegmatis (ATCC 700084) were grown in Middlebrook 7H9 broth. S. typhimurium LT2 carrying deletions in hmpA (codons 35 to 361) and sodC1 (codons 16 to 142) were generated via lambda Red-mediated recombination (Datsenko and Wanner, 2000) with modifications as described by Bartra et al (Bartra et al., 2008), and cultured in the same manner as wild-type S. typhimurium.
 
-## Generation of Perforin-2 knockout mice
+### Generation of Perforin-2 knockout mice
 
 For the generation of Perforin-2 knockout mice the targeting vector was linearized and electroporated into RW-4 ES cells originating from the 129X1/SvJ strain, followed by selection in G418. Targeted clones were screened by PCR. From 90 clones, 2 positive clones were selected that had undergone homologous recombination and were identified through Southern blot analysis. One ES clone was utilized for the generation of chimeric mice by injection using C57Bl/6J blastocysts as the host. The resulting female chimeras were further mated with C57Bl/6J male mice for germ line transmission. The heterozygous mice (F1 mice) were interbred to obtain wild-type, heterozygous, and homozygous littermates (F2). C57Bl/6 × 129 × 1/SvJ animals utilized in these experiments were backcrossed 8–10 times for these experiments. Mouse genotype was determined by PCR using PCR probes MP10 and MP11.
 
@@ -277,33 +571,33 @@ To generate 129X1/SvJ inbred animals without potential ES cell passenger mutatio
 
 Animals were bred at the University of Miami, Miller School of Medicine Transgenic Core Facility. Mice were allowed to freely access food and water and were housed at an ambient temperature of 23°C on a 12 hr light/dark cycle under specific pathogen-free condition. Animal care and handling were performed as per IACUC guidelines.
 
-## Methicillin resistant S. aureus in vivo epicutaneous infection
+### Methicillin resistant S. aureus in vivo epicutaneous infection
 
 All animal experiments were performed in accordance with University of Miami Animal Care and Use Committee guidelines. Animal's genotype was blinded prior to the experiment to limit bias. Our methodology was adopted from references (Cheng et al., 2009; Wanke et al., 2013). In brief, all mice were shaved and tape-stripped (7 applications) with Transpore tape (3M, Minneapolis, MN, United States). This level of tape stripping did not create a wound, but was sufficient to disrupt the epidermal barrier. An inoculum of 109 MRSA strain CLP 153 in 0.02 ml of phosphate-buffered saline (PBS) or PBS control was added to ∼1 cm2 of skin and the area bandaged with plastic sheet and overwrapped with dressings of Transpore tape and Nexcare waterproof tape (3M) for 6 hr, at which time the bandage was removed. Mice were weighed daily throughout the experiment; animals were euthanized after greater than 30% weight loss.
 
 For CFU enumeration, mice were sacrificed either 6 or 12 days after infection, cardiac puncture was performed and organs were harvested, weighed, and homogenized using a potter homogenizer in ddH2O with 0.05% Triton X-100. The homogenates were diluted and plated on TSA II plates (kanamycin and oxacillin selection). All samples were normalized based on weight.
 
-## S. typhimurium in vivo infection
+### S. typhimurium in vivo infection
 
 All animal experiments were performed in accordance with University of Miami Animal Care and Use Committee guidelines. Animal's genotype was blinded prior to the experiment to limit bias. Mice were infected orogastrically with 105 colony-forming units of Streptomycin resistant S. typhimurium (SL1344) 24 hr after orogastric Streptomycin pretreatment as previously described (Barthel et al., 2003). Mice were weighed daily throughout the experiment; the animals were euthanized after greater than 30% weight loss.
 
 For CFU enumeration, mice were sacrificed 3 days after 105 S. typhimurium orogastric infection, cardiac puncture was performed and organs were harvested, weighed, and homogenized using a potter homogenizer in ddH2O with 0.05% Triton X-100. The homogenates were diluted and plated on MacConkey agar plates (streptomycin at 100 μg/ml). All samples were normalized based on weight.
 
-## M. tuberculosis fluorescent counts
+### M. tuberculosis fluorescent counts
 
 Mouse bone marrow-derived macrophages were cultured in DMEM containing 15% L929-conditioned medium, 10% fetal bovine serum, and 2 mM glutamate for 7 days. Macrophages were plated in 96 well plates and infected at an MOI of 3:1 with M. tuberculosis CDC 1551 expressing the fluorescent protein mCherry under constitutive promoter (smyc'::mCherry). Bacterial survival and growth was monitored by measuring mCherry fluorescence using a Perkin–Elmer EnVision plate reader. This assay has been previously validated by comparison with colony forming unit (CFU) counts (Lee et al., 2013).
 
-## Immunoblot
+### Immunoblot
 
 Anti-murine Mpeg1 (ab25146), anti-human Mpeg1 (ab176974), anti-calreticulin (ab22683), anti-GM130 (ab52649), anti-clathrin (ab2731), anti-Methicillin Resistant Staphylococcus Aureus (ab73263), anti-Ada (ab18104), anti-pan Cadherin (ab140338), and anti-catalase (ab16731) (Abcam, Cambridge, MA); anti-GFP (sc9996), and anti-EEA1 (sc-6415) (Santa Cruz Biotechnology, Dallas, TX); anti-Prohibitin (Poly6031), anti-Lamp1 (1D4B), and anti-β-actin (2F1-1) (Biolegend, San Diego, CA, United States); anti-Golgin-97 (Thermo Fisher Scientific, Waltham, MA, United States); MEK1/2 (D1A5) (Cell Signaling Technology, Danvers, MA, United States); peptide synthesized cytoplasmic Perforin-2 antibody (21st Century Biochemicals, Marlborough, MA, United States); and peptide synthesized human Perforin-2 antibodies against each domain (Abmart, Berkeley Heights, NJ, United States) were utilized for immunoblots as indicated.
 
 Densitometry analysis was performed where indicated utilizing ImageJ software.
 
-## Flow cytometry and antibodies
+### Flow cytometry and antibodies
 
 Antibodies directed against murine CD3 (clone 145-2C11, Biolegend), CD4 (clone RM4-5, Biolegend), CD8 (clone 53-6.7, Biolegend), NK1.1 (clone PK136, Biolegend), CD62L (clone MEL-14, Biolegend), CD44 (clone IM7, Biolegend), and CD19 (clone 6D5, Biolegend) were used in multicolor FACS analysis. Samples were washed and resuspended in cold flow cytometry staining buffer (1% BSA/PBS); stained for 30 min in the dark before a final wash and acquisition. All samples were acquired on a BD Fortessa Flow cytometer running FACS DIVA software. Analysis was performed using FlowJo X software (TreeStar; OR, United States).
 
-## Subcellular fractionation of endogenous perforin-2
+### Subcellular fractionation of endogenous perforin-2
 
 Subcellular fractionation was performed on human THP-1 cell line induced with PMA for 16 hr and then allowed to rest without PMA stimulation for 48 hr. Samples were isolated following Axis-Shield Density Gradient methods (Axis-Shield, Norway) for exocytosis analysis: resolution of plasma membrane from TGN/endosomes and cytosolic proteins in self-generated gradient (S45). In brief, cells were harvested and homogenized utilizing a Dounce homogenizer. The homogenate was then centrifuged to pellet nuclei and other cell debris. The post-nuclear supernatant was then loaded equally on decreasing concentrations of iodixanol (30%, 20%, 10%) and centrifuged at 353,000g for 3 hr. The gradient was then collected in 0.1 ml fractions by aspiration from the meniscus.
 
@@ -311,46 +605,46 @@ For better resolution of clathrin-coated vesicles, endosomes, and lysosomes prot
 
 After collection, fractions were analyzed for protein content by DC Protein Assay (Bio-Rad, Hercules, CA, United States), and screened for localization of subcellular fractions by Western blot analysis.
 
-## Intracellular bacterial load
+### Intracellular bacterial load
 
 The intracellular gentamicin protection assays were conducted as previously described (Lutwyche et al., 1998; Laroux et al., 2005; McCormack et al., 2013). Briefly, 100 ng/ml of species specific human or murine IFN-γ was added 14 hr before infection where necessary to uniformly induce Perforin-2 expression. In all graphs bacteria were added as indicated, and after 30–60 min to allow for uptake/invasion, the extracellular bacteria were washed and re-plated in gentamicin supplemented medium. For gentamicin protection assays, the multiplicity of infection was between 20 and 50 bacteria per cell to allow for sufficient uptake of bacteria.
 
 For gentamicin-free intracellular assessment of bacterial load, the gentamicin protection assay was modified as follows: achieve >90% eukaryotic cell confluence on infection, decrease multiplicity of infection from between 20–50 to between 0.5–5, and trypsinize eukaryotic cells after initial wash steps to help eliminate attached extracellular bacteria. Every 4 hr, the medium was removed and checked for extracellular bacterial growth, washed twice with PBS, and replaced with fresh medium.
 
-## Isolation of extracellular bacteria for perforin-2 fragments
+### Isolation of extracellular bacteria for perforin-2 fragments
 
 The gentamicin-free infection assay described above was modified as follows to increase extracellular bacterial recovery: utilization of pathogens that do not facilitate uptake (enteropathogenic E. coli and MRSA), increased inoculation to a MOI from 0.5–5 to 10–30, and decreased invasion/attachment time from 60 min to 40 min. After the attachment/early infection phase was complete, cells were washed 5x with prewarmed media to remove non-adherent bacteria, and infection was allowed to continue for an additional 30 min. After this was complete, cells were washed an additional 3x with PBS and trypsinized to remove both cells as well as extracellular bacteria.
 
 Enrichment of extracellular bacteria was performed by successive low-speed differential centrifugations to remove intact mammalian cells from extracellular bacteria. Cell/bacteria from above were spun at 200g for 15′ with collection of the supernatant, the supernatant was collected and respun for a total for 7 spins. Non-infected mammalian cells were also treated in the same fashion to quantify for mammalian cellular contamination. Following the last spin from above, the supernatant was spun at 20,000g for 15′ to pellet all bacteria and cellular debris. Goat IgG was added to the bacterial enriched pellet following resuspension and part of the post-infection bacterial/goat IgG solution was then filtered through prewashed 0.22 μm filters. After filtration, the eluent was collected and fractions were mixed and boiled with reducing laemmli sample buffer and loaded on SDS-PAGE for Immunoblotting.
 
-## RNA interference
+### RNA interference
 
 For murine cells, RNA interference and transfection were conducted as previously described (McCormack et al., 2013). For human cells, the aforementioned murine system was modified through utilizing three human Perforin-2-specific silencer select siRNAs purchased from Thermo Fisher Scientific Silencer Select #s61053, s47810, s61054. Silencer select negative control #1 and 2 from)Thermo Fisher Scientific were also utilized as a negative control.
 
-## Quantitation of gene expression via qRT-PCR
+### Quantitation of gene expression via qRT-PCR
 
 Murine or human RNA extraction, cDNA synthesis and analysis was performed as previously described (Fields et al., 2013; McCormack et al., 2013). Message for the housekeeping gene GAPDH was amplified as an internal normalization control. All assays were performed in technical triplicate for each RNA sample.
 
-## Assessment of nitrite and ROS detection
+### Assessment of nitrite and ROS detection
 
 For nitrite detection, adherent PEM were stimulated overnight with IFN-γ (100 ng/ml) and stimulated with LPS (100 ng/ml) in the presence of N-Acetyl Cysteine (NAC) (Sigma-Aldrich, St. Louis, MO) or NG-nitro-L-arginine methyl ester (L-NAME) (Sigma-Aldrich) for 48 hr. 50 μl of supernatant was collected for analysis of NO2- production using Griess reagents. 50 μl of 1% sulfanilamide in 3% H3PO4 was added to 50 μl of supernatant followed by 50 μl of 0.1% napthylethylene dihydrochloride in 3% H3PO4 and the wells were read on a spectrophotometer at 550 nM. Sodium nitrite was used a standard at concentrations ranging from 1 μM to 125 μM.
 
 For ROS detection, adherent PEM were stimulated overnight with IFN-γ (100 ng/ml) and then labeled with 10 μM CM-H2DCFDA (Thermo Fisher Scientific) in PBS for 30 min at 37°C, followed by washing and addition of complete media. Inhibitors were added 30 min prior to addition of LPS, PMA (1 μM), or H2O2 (200 μM). 30 minutes later, cells were scraped and immediately analyzed by flow cytometry.
 
-## Confocal imaging
+### Confocal imaging
 
 For live cell imaging, RAW264.7 or BV-2 cells were nucleofected with Perforin-2-GFP and stimulated overnight with LPS (1 ng/ml) and IFN-γ (100U/ml) in glass bottom dishes with No. 1.5 coverglass (MatTek Corp, Ashland, MA, United States). Cells were washed once with PBS and organelles were labeled. For endoplasmic reticulum (ER) labeling, ER-Tracker™ Blue-White DPX (Thermo Fisher Scientific) was used at a working concentration of 1 μM for 30 min at 37°C. For all other stains, transfected cells were fixed with 3% paraformaldehyde (PFA) for 15 min at room temperature, permeabilized with 0.5% saponin, blocked with 10% normal goat serum and incubated with primary and secondary antibodies. Anti-CD107a (LAMP-1) (BD Pharmingen, San Jose, CA, United States), anti-EEA1 (EMD Millipore), and anti-GM130 (BD Biosciences) were used to identify cellular organelles. Secondary antibodies were all raised in goats. Images were taken on a Leica SP5 inverted confocal microscope with a motorized stage and analyzed using Leica application suite advanced fluorescence software.
 
-## Electron microscopy
+### Electron microscopy
 
-## Eukaryotic cell membranes
+#### Eukaryotic cell membranes
 
 Membranes were isolated from stably transfected Perforin-2-GFP HEK-293 cells by N2-cavitation and differential centrifugation. Membranes were resuspended in a small volume of neutral Tris-buffered saline, treated with 100 μg/ml trypsin for 1 hr at 37°C, washed and negatively stained with 5% neutral Na-phosphotungstate for 30 s. Images were taken at 52,000-fold initial magnification on a Phillips CM10 transmission electron microscope.
 
-## Bacterial membranes
+#### Bacterial membranes
 
 MEF were stimulated for 14 hr with IFN-γ (100 U/ml) and infected with the indicated bacterial strains at a multiplicity of infection of 30 for 5 hr. Prokaryote membranes were harvested through lysing MEFs with the non-ionic, non-denaturing detergent 1% Igepal in ddH2O. The lysate was centrifuged at 200g for 10 min to pellet intact bacteria; intact bacteria were subsequently sheared with a polytron to disrupt intact bacteria and separate the bacterial surface (cell wall and membrane). The resulting pellet was treated with 100 μg/ml trypsin for 1 hr at 37°C, sedimented and resuspended in minimal ddH2O and negatively stained with 3% uranyl formate for 30 s. Images were taken between 52,000 to 168,000-fold initial magnification on a Phillips CM10 transmission electron microscope.
 
-## Statistical analysis
+### Statistical analysis
 
 Students t-test, multiple t-test with Holm-Sidak multiple comparisons correction, one-way ANOVA with Bonferroni multiple comparisons test, or Kruskal–Wallis non-parametric test with Dunn's multiple comparison test was used for comparisons (GraphPad Prism Version 6.0b and SPSS 21.0 were utilized for statistical analysis).

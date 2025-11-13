@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.32222.001 Chromosomal translocations are hallmarks of various types of cancers and leukemias. However, the molecular mechanisms of chromosome translocations remain largely unknown. The ataxia-telangiectasia mutated (ATM) protein, a DNA damage signaling regulator, facilitates DNA repair to prevent chromosome abnormalities. Previously, we showed that ATM deficiency led to the 11q23 chromosome translocation, the most frequent chromosome abnormalities in secondary leukemia. Here, we show that ARP8, a subunit of the INO80 chromatin remodeling complex, is phosphorylated after etoposide treatment. The etoposide-induced phosphorylation of ARP8 is regulated by ATM and ATR, and attenuates its interaction with INO80. The ATM-regulated phosphorylation of ARP8 reduces the excessive loading of INO80 and RAD51 onto the breakpoint cluster region. These findings suggest that the phosphorylation of ARP8, regulated by ATM, plays an important role in maintaining the fidelity of DNA repair to prevent the etoposide-induced 11q23 abnormalities.
+Chromosomal translocations are hallmarks of various types of cancers and leukemias. However, the molecular mechanisms of chromosome translocations remain largely unknown. The ataxia-telangiectasia mutated (ATM) protein, a DNA damage signaling regulator, facilitates DNA repair to prevent chromosome abnormalities. Previously, we showed that ATM deficiency led to the 11q23 chromosome translocation, the most frequent chromosome abnormalities in secondary leukemia. Here, we show that ARP8, a subunit of the INO80 chromatin remodeling complex, is phosphorylated after etoposide treatment. The etoposide-induced phosphorylation of ARP8 is regulated by ATM and ATR, and attenuates its interaction with INO80. The ATM-regulated phosphorylation of ARP8 reduces the excessive loading of INO80 and RAD51 onto the breakpoint cluster region. These findings suggest that the phosphorylation of ARP8, regulated by ATM, plays an important role in maintaining the fidelity of DNA repair to prevent the etoposide-induced 11q23 abnormalities.
 
 ## Introduction
 
@@ -40,11 +40,23 @@ INO80 forms a chromatin remodeling complex with more than 15 subunits (Jin et al
 
 ## Results
 
-## Phosphorylation of ARP8 after etoposide treatment regulated by ATM and ATR
+### Phosphorylation of ARP8 after etoposide treatment regulated by ATM and ATR
 
 In our previous study, we showed that ATM deficiency resulted in the overloading of INO80 and RAD51 onto the BCR of the MLL gene after etoposide treatment (Sun et al., 2010). The finding led us to investigate the phosphorylation target of the ATM kinase, which could regulate the loading of INO80 and RAD51 onto the BCR. First, we examined the phosphorylation status of INO80 after etoposide treatment. However, we could not detect the phosphorylation of INO80 by ATM after etoposide treatment by an immunoblotting analysis (Figure 1—figure supplement 1A). Therefore, we decided to examine the phosphorylation of the subunits of the INO80 protein complex after etoposide treatment.
 
 The substrates of ATM contain the core sequence with an SQ or TQ motif (Kim et al., 1999; Matsuoka et al., 2007; O'Neill et al., 2000). By searching for SQ or TQ motifs in the subunits of the INO80 complex, we found that APR8 had an SQ motif at S412 and Q413. This motif in ARP8 is indicated as a putative phosphorylation site in the PhosphoSitePlus database (Figure 1A and Figure 1—figure supplement 1B–D). ARP8 is required for DNA binding by INO80 in yeast and mammals, and the ARP8 knockout in human cells impairs the binding of INO80 to chromatin and causes defects in DNA repair (Kashiwaba et al., 2010; Saravanan et al., 2012). Therefore, we examined whether ARP8 was the phosphorylation target of ATM. The immunoblotting analysis, using antibodies against the ATM/ATR substrate, revealed that the level of ARP8 phosphorylation was significantly increased from 2 hr after etoposide treatment (Figure 1B). The disappearance of the signal by a protein phosphatase treatment validated that the derived signal resulted from the phosphorylation of ARP8 (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig1-v1.jpg)
+
+**Figure 1.:** (A) Amino acid sequence 408 through 420 of ARP8. The Ser412 residue, within the ATM/ATR substrate motif and the CK2 substrate motif, is indicated. (B) Immunoprecipitation analysis of ARP8 phosphorylation. U2OS cells transiently expressing an empty HA vector or a vector encoding HA-tagged ARP8 were treated with DMSO (ctrl) or etoposide (Etp) for 15 min, then washed twice and cultured in complete medium for the indicated times. The nuclear extracts were incubated with anti-HA-conjugated anti-mouse IgG Dynabeads. The precipitates were electrophoresed through a gel and probed by western blotting with an anti-ATM/ATR substrate antibody or an anti-HA antibody. λPPase treatment identified the band of phosphorylated HA-ARP8. The blot of input was probed by antibodies against phospho-ATM (p-ATM), γ H2AX or phospho-RPA2 at Ser4/8 (p-RPA2). β-actin was used as a loading control. (C) Identification of the ARP8 phosphorylation site by an immunoprecipitation analysis. U2OS cells were transfected with an empty HA vector (vet), or a vector encoding HA-tagged wild-type ARP8 (WT) or HA-ARP8 S412A (S412A) for 48 hr. The cells were washed after treatment with etoposide or DMSO for 15 min, cultured in fresh medium, and harvested at the indicated time points. Whole cell extracts were used for the immunoprecipitation analysis. (D) Etoposide-induced ARP8 phosphorylation in ATM-deficient BIVA and ATM-proficient 11–4 cells. Immunoprecipitation analysis of cell extracts of BIVA or 11–4 cells transfected with HA-tagged wild-type ARP8 using anti-HA antibodies. The cells were treated with DMSO (ctrl) or etoposide (Etp) for 15 min, cultured in fresh medium, and harvested at the indicated time points. Whole cell extracts were used for the immunoprecipitation analysis, which was performed as described in (B). The amounts of phosphorylated ARP8 and HA-ARP8 were quantified, using the Image J software. The results of the quantitative analysis are shown as the relative values to the DMSO controls. Source data are presented in Figure 1—source data 1. (E) Immunoprecipitation analysis of cell extracts from 11 to 4 cells expressing HA-tagged ARP8. The cells were treated with DMSO, 10 μM ATMi (KU55933), or 10 μM ATRi (VE821) for 2 hr before etoposide treatment, and then the inhibitors (5 μM) were added after the cells were washed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Damage-induced INO80 phosphorylation was not detected by an ATM/ATR antibody. Immunoprecipitation analysis of INO80 phosphorylation. After treatment with or without etoposide for 15 min, cells were cultured in fresh medium for 0.5, 1 or 2 hr. The whole cell l extracts from U2OS cells were incubated with anti-INO80 or normal IgG-conjugated Dynabeads. The precipitates were electrophoresed through a gel and probed by western blotting with an anti-ATM/ATR substrate antibody or an anti-INO80 antibody. The arrows indicate the position of INO80. (B) Schematic diagram of full-length human ARP8. The insertions of ARP8 are shown in yellow, and the SQ motif in insertion IV is pink. (C) A 3D structure model of ARP8. Insertion I, insertion IV, and the locations of important amino acid residues are indicated. This structure was obtained from the Protein Database (PDB ID: 4FO0), and was modified according to the report by Gerhold et al. and the description for PDB ID: 4FO0. (D) Alignment of multiple ARP8 sequences. The partial amino acid sequences containing the SQ motif or the corresponding amino acids, which are colored red. The homologous sequence corresponding to human ARP8 was obtained from the NCBI Protein Database.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoprecipitation analysis of U2OS cells transiently expressing HA-tagged ARP8, treated with or without an ATM inhibitor (ATMi). ATM inhibitor (10 or 20 μM) was added as indicated for 2 hr before etoposide (Etp) treatment. (B) Immunoprecipitation analysis of ARP8 phosphorylation, using U2OS cells cotransfected with HA-tagged ARP8 and either siATM, siCK2, or the double siRNAs (dKD) for 48 hr. The cells were cultured for 2 hr in fresh medium after etoposide (Etp) treatment. Immunoprecipitation was performed with anti-HA-conjugated beads. The precipitated proteins were detected by western blotting, using the indicated antibodies.
 
 To confirm that Ser412 is the site in ARP8 that is phosphorylated after etoposide treatment, we produced an ARP8 mutant by replacing Ser412 with alanine. An immunoprecipitation analysis revealed that the etoposide-induced phosphorylation was completely abolished by the S412A substitution, indicating that Ser412 is the sole site within ARP8 that is phosphorylated in response to etoposide treatment (Figure 1C).
 
@@ -52,33 +64,73 @@ Next to investigate whether the etoposide-induced phosphorylation of ARP8 is reg
 
 Since ATMi did not completely abolish the etoposide-induced phosphorylation of ARP8, we next examined the relevance of ATR, another PI3-family kinase member sharing the same phosphorylation motif with ATM. ATR is responsible for the phosphorylation in the DNA replication stress response, and is activated by ATM after ionizing radiation (Cuadrado et al., 2006; Jazayeri et al., 2006; Myers and Cortez, 2006). The etoposide-induced phosphorylation of ARP8 was strongly repressed by the ATR inhibitor VE821 (ATRi) in 11–4 cells (Figure 1E, lanes 9–12). This finding suggests that ATR is the major kinase responsible for etoposide-induced ARP8 phosphorylation. In contrast, casein kinase 2, another kinase involved in the DNA damage response (Olsen et al., 2012) (Guerra et al., 2014) was not involved in the phosphorylation of ARP8 after etoposide treatment (Figure 1—figure supplement 2B). Together, these findings suggest that the phosphorylation of ARP8 at S412 after etoposide treatment is regulated by ATM and ATR.
 
-## Negative regulation of the etoposide-induced loading of INO80 onto the MLL BCR by the phosphorylation of ARP8
+### Negative regulation of the etoposide-induced loading of INO80 onto the MLL BCR by the phosphorylation of ARP8
 
 Having established that ARP8 is phosphorylated after etoposide treatment, we investigated the role of ARP8 in INO80 loading onto the MLL BCR (Figure 2A). The enrichment of γH2AX on BCR was observed in ATM-proficient 11–4 cells after etoposide treatment, suggesting that etoposide induces DNA damage specifically at the BCR (Figure 2—figure supplement 1A). A chromatin immunoprecipitation (ChIP) analysis revealed that the depletion of ARP8 reduced the binding of INO80 to the BCR after etoposide treatment in BIVA cells ((Figure 2—figure supplement 1B). Since the depletion of ARP8 did not affect the levels of INO80 (Figure 2—figure supplement 1C), the result suggests that ARP8 is required for loading INO80 onto the MLL BCR after etoposide treatment in BIVA cells. Next, to explore the role of ARP8 phosphorylation in the regulation of INO80 loading onto the BCR after etoposide treatment, we generated ATM-proficient 11–4 cell lines expressing the siRNA-resistant wild-type ARP8 (WT) or the phosphorylation-deficient mutant S412A (Figure 2—figure supplement 2A). The ChIP analysis revealed that the expression of the S412A mutant in ATM-proficient cells increased the binding of INO80 to the BCR after etoposide treatment (Figure 2B). Moreover, ATMi treatment increased the binding of INO80 to the BCR after etoposide treatment in ATM-proficient cells expressing wild-type ARP8 (Figure 2C). These findings suggest that the etoposide-induced phosphorylation of ARP8 represses the binding of INO80 to the BCR. Importantly, the ATMi treatment failed to enhance the enrichment of INO80 at the BCR in ATM-proficient 11–4 cells expressing the ARP8 S412A mutant (Figure 2D). This suggests that ARP8 phosphorylation at S412 regulated by ATM is responsible for the excessive binding of INO80 at the BCR after etoposide treatment. To further confirm the repression of the INO80 binding to the BCR by the ARP8 phosphorylation, we next introduced the siRNA-resistant phosphomimetic mutant S412D into the ATM-deficient BIVA cells. Consistently, the expression of the phosphomimetic mutant S412D in BIVA cells reduced the binding of INO80 to the BCR after etoposide treatment (Figure 2E). Taken together, these results indicate that the phosphorylation of ARP8 represses the loading of INO80 onto the MLL BCR in response to etoposide-induced damage.
 
-## Phosphorylation of ARP8 regulates its interaction with INO80
+![Figure 2.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the BCR in the MLL gene. The locations of the primers used in the real-time PCR analyses are shown. The arrow indicates 11q23 chromosome translocation breakpoint hotspot identified in treatment-related leukemia. Ex: Exon. (B) ChIP analysis of the INO80 loading onto the MLL BCR in endogenous ARP8-depleted11-4 Flp-In cells expressing either the siRNA-resistant wild-type (WT) or phospho-deficient ARP8 (S412A) after tetracycline treatment. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 1 or 2 hr. GAPDH is shown as the control region. Values represent the means ± SE from three independent experiments. *: p<0.05. Source data are presented in Figure 2—source data 1. (C) ChIP analysis of the INO80 loading onto the MLL BCR in wild-type ARP8 expressing11-4 Flp-In cells. The cells were treated with/without an ATM inhibitor (KU55933) for 2 hr before etoposide treatment, and then the inhibitors (5 μM) were added after the cells were washed. The experiment was performed as described in (B). Values represent the means ± SE from three independent experiments. *: p<0.05. The level of ATM phosphorylation or expression of INO80 was shown in Figure 2—figure supplement 2B. Source data are presented in Figure 2—source data 1. (D) ChIP analysis of the INO80 loading onto the MLL BCR in S412A ARP8 expressing 11–4 Flp-In cells. The cells were treated with/without 10 μM ATM inhibitor for 2 hr before etoposide treatment, and then the inhibitors (5 μM) were added after the cells were washed. The experiment was performed as described in (B). Values represent the means ± SE from three independent experiments. n.s: no significant difference. The levels of ATM phosphorylation and INO80 expression are shown in Figure 2—figure supplement 2C. Source data are presented in Figure 2—source data 1. (E) ChIP analysis of the INO80 loading onto the MLL BCR in endogenous ARP8-depleted BIVA cells transfected with either the siRNA-resistant wild-type (WT) or phospho-mimetic ARP8(S412D). The control cells were transfected with an empty vector and a non-targeting siRNA (vet). The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 1 hr. Values represent the means ± SE from three independent experiments. *p<0.05, n.a: not analyzed. Source data are presented in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Etoposide treatment induced H2AX phosphorylation on BCR of MLL gene. ChIP analysis of γH2AX enrichment on the MLL BCR in ATM proficient 11–4 cells. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then fixed immediately (0 hr) or after culture in fresh medium for 0.5 hr (0.5 hr). β-globin (betaG) is shown as the control region. Values represent the means ± SE from four independent experiments. The results of immunoblotting analyses of γH2AX and H2AX are shown. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then harvested immediately (0 hr) or after culture in fresh medium for 0 (Etp) or 0.5 hr (0.5 hr). Source data are presented in Figure 2—source data 2. (B) Depletion of ARP8 reduced the etoposide-induced enrichment of INO80 onto the BCR of the MLL gene. ChIP analysis of INO80 loading onto the MLL BCR in AT5BIVA cells depleted by either a non-targeting siRNA (siNT) or siARP8. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 30 or 60 min. GAPDH is shown as the control region. Values represent the means ± SE from four independent experiments. *: p<0.05. Source data are presented in Figure 2—source data 2. (C) ARP8 depletion did not affect INO80 or RAD51 expression. Immunoblotting analysis of non-targeting siRNA(NT) or siARP8 transfected cells. The final concentration of each siRNAs is indicated. β-actin was used as the loading control. In further studies, we used 0.2–0.3 nM of siRNA. The data showed that the depletion of ARP8 did not disturb INO80 and RAD51 levels.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immunofluorescence staining of 11–4 Flp-In cells expressing HA-tagged wild-type ARP8 (WT) or S412 phospho-deficient ARP8 (SA). For induction of HA-ARP8 expression, tetracycline was added for 24 hr. The anti-HA antibody was used to identify the expression of HA-ARP8. DAPI was used for DNA staining. (B and C) Immunoblotting analysis of phosphorylated-ATM, and expression level of INO80 and RAD51 in 11–4 Flp-In cells. The endogenous ARP8-depleted11-4 Flp-In cells with tetracycline inducible expression of siRNA-resistant wild-type (WT) (B) or S412A ARP8 (S412A) (C), were treated with/without 10 μM ATM inhibitor for 2 hr, before DMSO (ctrl) or etoposide treatment. The cells were harvested at the indicated time point after etoposide removal. β-actin is shown as a loading control.
+
+### Phosphorylation of ARP8 regulates its interaction with INO80
 
 To determine whether the phosphorylation of ARP8 affects the loading of INO80 onto the MLL BCR through its interaction with INO80, we performed an immunoprecipitation analysis using U2OS cells. We found that etoposide treatment increased the interaction between INO80 and ARP8 in the ATM-proficient U2OS cells (Figure 3A). The etoposide-induced interaction between INO80 and ARP8 was enhanced by the treatment of U2OS cells with an ATM inhibitor (Figure 3A). These findings raised the possibility that ATM negatively regulates the interaction of ARP8 with INO80 after etoposide treatment. Therefore, we investigated the role of the ATM-regulated phosphorylation of ARP8 in the interaction between ARP8 and INO80 after etoposide treatment by using the U2OS cells stably expressing the phosphorylation-deficient ARP8 S412A mutant. An immunoprecipitation analysis showed an increased level of interaction of the ARP8 S412A mutant with INO80 after etoposide treatment, as compared to that of wild-type ARP8 (ARP8 WT) in ATM-proficient cells (Figure 3B). Similar results were obtained using the U2OS cells transiently expressing the ARP8 S412A mutant (Figure 3—figure supplement 1A). These findings support the notion that the phosphorylation of ARP8 represses its interaction with INO80 after etoposide treatment. To confirm the repression of the association of ARP8 with INO80 by ATM, we transiently expressed HA-tagged ARP8 WT or S412D mutant in ATM-deficient BIVA cells. An immunoprecipitation analysis revealed the increased interaction of INO80 with ARP8 WT, but not with the S412D mutant, in ATM-deficient BIVA cells after etoposide treatment (Figure 3—figure supplement 1B). A proximity ligation assay confirmed the decreased interaction of INO80 with the ARP8 S412D mutant (Figure 3—figure supplement 2). Taken together, these findings suggest that the phosphorylation of ARP8 represses the interaction between INO80 and ARP8 after etoposide treatment.
 
-## ARP8 phosphorylation negatively regulates RAD51 loading onto the BCR after etoposide treatment
+![Figure 3.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunoprecipitation analysis of the interaction between INO80 and ARP8 in ATM inhibitor treated U2OS cells. The cells were treated with 10 μM KU55933 (ATMi) or equal amounts of DMSO (mock) for 2 hr, and then treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium with or without 5 μM KU55933 for 2 hr. Immunoprecipitation analysis was performed with either anti-ARP8 antibodies or normal IgG. The relative immunoprecipitated amounts of INO80 are shown. Quantitative analysis was performed using the Image J software. (B) Examination of the interaction between INO80 and ARP8 in U2OS cells expressing HA-tagged wild-type or S412A ARP8. The endogenous ARP8-depleted cells were treated with etoposide for 15 min. After the cells were washed, they were placed in fresh medium and harvested at the indicated time points. The nuclear extracts were incubated with anti-HA-conjugated anti-mouse IgG Dynabeads. The precipitates were electrophoresed through a gel and probed by western blotting with an anti-INO80 or an anti-HA or an anti-ATM/ATR substrate antibody. The amounts of INO80 and HA-ARP8 were quantified, using the Image J software. The results of quantitative analysis are shown as the relative values as compared to the DMSO control from three independent experiments. Source data are presented in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Examination of the interaction between INO80 and wild-type ARP8 or phospho-deficient ARP8. U2OS cells were co-transfected with Flag-INO80 and HA (vet), HA-ARP8 (WT), or HA-ARP8 S412A vectors, respectively, for 48 hr and subsequently treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 2 hr. The immunoprecipitation analysis was performed using anti-HA antibodies. The precipitates were electrophoresed through a gel and probed by western blotting with an anti-Flag or an anti-HA or anti-ATM/ATR substrate antibody. The co-immunoprecipitated amounts of Flag-INO80 relative to HA-ARP8 are shown. Quantitative analysis was performed using the Image J software. (B) Co-immunoprecipitation analysis of ARP8 and INO80. ATM-deficient BIVA cells were co-transfected with the siARP8 and siARP8-resistant HA-tagged wild-type ARP8 or phospho-mimetic S412D ARP8 mutant. After etoposide removal, the cells were recovered at the indicated time points. The nuclear extracts were incubated with anti-HA-conjugated anti-mouse IgG Dynabeads. The precipitates were electrophoresed through a gel and probed by western blotting with either an anti-INO80 antibody or an anti-HA antibody. The amounts of INO80 and HA-ARP8 were quantified, using the Image J software. The results of quantitative analysis are shown as the relative values as compared to the DMSO control, from three independent experiments. Source data are presented in Figure 3—source data 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Proximity ligation assay (PLA) signals (in red) indicate ARP8-INO80 interactions. GM0637 cells were transfected with the HA-tagged wild-type, S412 A or S412D mutant of ARP8 or empty vector (vet). Nuclei were stained with DAPI (in blue). Scale bar: 10 μm. (B) Percentages of cells with more than five PLA signals. All results are the means of four independent experiments, and error bars show the standard deviation of the mean. *p<0.05. n.s.: no significant difference. Source data are presented in Figure 3—source data 3.
+
+### ARP8 phosphorylation negatively regulates RAD51 loading onto the BCR after etoposide treatment
 
 In our previous study, we detected the excess loading of RAD51 onto the BCR of the MLL gene in etoposide-treated ATM-deficient BIVA cells (Sun et al., 2010). In yeast, INO80 promotes DNA end resection and RAD51 binding to ssDNA for homology search/invasion during HR (Lademann et al., 2017; Tsukuda et al., 2009). To explore the mechanism of excessive RAD51 loading on the BCR, we examined the involvement of INO80 in RAD51 binding to damaged chromatin. A ChIP assay revealed that the depletion of INO80 by siRNA reduced the loading of RAD51 onto the MLL BCR in BIVA cells after etoposide treatment, suggesting that human INO80 promotes RAD51 binding to the BCR (Figure 4—figure supplement 1A and B). We next investigated the requirement for ARP8 in RAD51 binding to the MLL BCR. A ChIP analysis showed that the depletion of ARP8 reduced the binding of RAD51 to the MLL BCR in BIVA cells after etoposide treatment (Figure 4—figure supplement 1C). Since the depletion of ARP8 did not affect the level of RAD51 (Figure 2—figure supplement 1C), these findings suggest the involvement of ARP8 in the excessive binding of RAD51 to the BCR in BIVA cells.
 
 We then studied the effect of ARP8 phosphorylation on the regulation of RAD51 binding to the BCR after etoposide treatment. The expression of the ARP8 phosphorylation-deficient mutant S412A increased the RAD51 binding to the BCR of the MLL gene after etoposide treatment in ATM-proficient cells (Figure 4A). In ATM-proficient cells, ATMi treatment resulted in an increase of RAD51 binding to the BCR (Figure 4B), but it did not cause a further increase of RAD51 when ARP8 S412A was expressed (Figure 4C). In contrast, the expression of the ARP8 phosphomimetic mutant S412D in ATM-deficient BIVA cells repressed the excessive binding of RAD51 to the BCR (Figure 4D). These results strongly suggest that ARP8 phosphorylation at S412 represses the loading of RAD51 onto the MLL BCR after etoposide treatment. Taken together, the phosphorylation of ARP8 regulated by ATM may negatively regulate the loading of RAD51 onto the BCR after etoposide treatment, by repressing the loading of the INO80 complex.
 
-## Repression of 11q23 chromosome translocations through the phosphorylation of ARP8
+![Figure 4.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig4-v1.jpg)
+
+**Figure 4.:** (A) ChIP analysis of the RAD51 loading onto the MLL BCR in endogenous ARP8-depleted11-4 Flp-In cells expressing the siRNA-resistant wild-type (WT) or phospho-deficient ARP8 (S412A) after tetracycline treatment. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 1 or 2 hr. Values represent the means ± SE from three independent experiments. **: p<0.01. Source data are presented in Figure 4—source data 1. (B) ChIP analysis of the RAD51 loading onto the MLL BCR in wild-type ARP8 expressing 11–4 cells. Following a treatment with/without 10 μM ATM inhibitor (KU55933) for 2 hr, the cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium with or without 5 μM KU55933 for 1 or 2 hr. Values represent the means ± SE from three independent experiments. *p<0.05. The levels of ATM phosphorylation and expression of RAD51 are shown in Figure 2—figure supplement 2B. Source data are presented in Figure 4—source data 1. (C) ChIP analysis of the RAD51 loading onto the MLL BCR in S412A ARP8 mutant expressing 11–4 Flp-In cells. The experiment was performed as described in (B). Values represent the means ± SE from three independent experiments. n.s: no significant difference. The levels of ATM phosphorylation and RAD51 expression are shown in Figure 2—figure supplement 2C. Source data are presented in Figure 4—source data 1. (D) ChIP analysis of the RAD51 loading onto the MLL BCR in endogenous ARP8-depleted BIVA cells transfected with either the siRNA-resistant wild-type (WT) or phospho-mimetic ARP8 (S412D). GAPDH is shown as the control region. The control cells were transfected with the empty vector and the non-targeting siRNA (vet). Values represent the means ± SE from three independent experiments. *p<0.05. n.a: not analyzed. Source data are presented in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblotting analysis of INO80 depletion efficiency. Two kinds of siRNAs against INO80 were used for the detection of the INO80 knockdown efficiency. RAD51 expression did not affect the INO80 knockdown. β−actin was used as the loading control. (B) ChIP analysis of the enrichment of RAD51 in AT5BIVA cells treated with non-targeting siRNA (siNT) or the siRNAs against INO80 (siINO80-1 and siINO80-4). The cells were treated with etoposide for 15 min, washed, and then cultured in fresh medium for 1 hr (Etp). Vehicle treatment was performed as a control. The DNA was analyzed by real-time PCR, using the MLL BCR gene primers. The β−globin gene (betaG) was used as a control region. Values represent the means ± SE from six independent experiments. *p<0.05. Source data are presented in Figure 4—source data 2. (C) ChIP analysis of RAD51 loading onto the MLL BCR, in AT5BIVA cells transfected with the non-targeting siRNA (siNT) or siARP8. The cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and then cultured in fresh medium for 30 or 60 min. GAPDH is shown as the control region. Values represent the means ± SE from four independent experiments. *p<0.05, **p<0.01. Source data are presented in Figure 4—source data 2.
+
+### Repression of 11q23 chromosome translocations through the phosphorylation of ARP8
 
 Having established that ARP8 regulates the loading of RAD51 and INO80 onto the BCR after etoposide treatment, we decided to examine the involvement of ARP8 in 11q23 chromosome translocations. A two-color fluorescence in situ hybridization (FISH) analysis, covering the upstream and downstream regions of the MLL BCR, revealed that the number of BIVA cells carrying split FISH signals after etoposide treatment was significantly reduced by the siRNA-mediated depletion of ARP8, suggesting the involvement of ARP8 in 11q23 chromosomal abnormalities in ATM-deficient cells (Figure 5A and B). This finding was confirmed by the FISH analysis with a different DNA probe set (Figure 5—figure supplement 1A). In contrast, the number of split signal positive cells among the ATM-proficient 11–4 cells was increased by the depletion of ARP8 (Figure 5B). This was confirmed by the FISH analysis of ARP8-deficient Nalm-6 cells (Figure 5—figure supplement 1B). These findings suggest that ATM prevents the etoposide-induced 11q23 chromosome translocations through the regulation of ARP8.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig5-v1.jpg)
+
+**Figure 5.:** (A) Dual-color FISH analysis of chromosome 11q23. Representative FISH images using etoposide treated BIVA cells are shown. Arrows indicate the split signals (separated by >1 µm). Scale bar: 5 μm. (B) The percentages of AT5BIVA or 11–4 cells with split chromosome 11q23 signals are shown. The non-targeting control siRNA (siNT) or siARP8-depleted cells were treated with DMSO (ctrl) or etoposide for 15 min, washed, and cultured for 6 hr in fresh medium. At least 2,000 cells were analyzed in every experiment. The average percentages of cells with split signals from four independent experiments are shown. Values represent the means ± SE. ***p<0.001 as determined by the Z test. The ARP8 knockdown is shown in the gel image on the right. Source data are presented in Figure 5—source data 1. (C, D) Dual-color FISH analyses of chromosome 11q23 using ARP8-depleted AT5BIVA (C) and 11–4 (D) cells expressing the siARP8-resistant ARP8 wild-type (WT), S412D, or S412A. The average percentages of the cells with split signals from three independent experiments are shown. Values represent the means ± SE. ***p<0.001 as determined by the Z test. Source data are presented in Figure 5—source data 1. (E) Dual-color FISH analyses of chromosome 11q23 using 11–4 cells expressing the siARP8-resistant ARP8 S412A. The cells were treated with/without 10 μM ATM inhibitor (KU55933) for 2 hr before etoposide treatment. After the cells were washed, KU55933 (5 μM) was added until the cells were harvested. The average percentages of the cells with split signals from three independent experiments are shown. Values represent the means ± SE from three independent experiments. n.s.: no significant difference. Source data are presented in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Dual-color FISH analysis of chromosome 11q23 in AT5BIVA and 11–4 cells, using the probe from Vysis. The non-targeting control siRNA (siNT) or siARP8-depleted cells were treated with etoposide for 15 min, washed, and cultured for 6 hr in fresh medium. Values represent the means ± SE from three independent experiments. *p<0.05. n.s: no significant difference. Source data are presented in Figure 5—source data 2. (B) Dual-color FISH analysis of chromosome 11q23 in wild-type or ARP8-knockout Nalm-6 cells. The cells were treated with 20 μM of etoposide for 15 min, and then cultured for 4 hr in fresh medium. In every experiment, 200 cells were analyzed. The average percentages of the cells with split signals are shown from four independent experiments. Values represent the means ± SE. **p<0.01, as determined by the Z test. The tetracycline-induced ARP8 knockout is shown in the gel image on the right. Source data are presented in Figure 5—source data 2.
+
 Next, to investigate the role of the ATM-dependent phosphorylation of ARP8 in preventing the 11q23 chromosome abnormalities, we performed the FISH analysis of ATM-deficient BIVA cells expressing the phospho-mimicking ARP8 S412D mutant. The FISH analysis revealed that the expression of ARP8 S412D reduced the number of cells exhibiting split FISH signals after etoposide treatment in ATM-deficient cells (Figure 5C). In contrast, the expression of the phospho-deficient ARP8 S412A mutant increased the incidence of 11q23 chromosome translocations in ATM-proficient 11–4 cells (Figure 5D). Notably, ATMi treatment failed to enhance the event in ARP8 S412A mutant expressing cells (Figure 5E). Taken together, these findings strongly suggest that the ATM-dependent phosphorylation of ARP8 is required to prevent the etoposide-induced 11q23 chromosome abnormalities, through the negative regulation of RAD51 and INO80 binding to the BCR.
 
-## ATM, but not ATR, negatively regulates RAD51 loading onto the BCR after etoposide treatment to repress 11q23 chromosome translocations
+### ATM, but not ATR, negatively regulates RAD51 loading onto the BCR after etoposide treatment to repress 11q23 chromosome translocations
 
 Since the etoposide-induced phosphorylation of ARP8 was strongly repressed by an ATR inhibitor in 11–4 cells (Figure 1E), the ATR-dependent phosphorylation of ARP8 could also be involved in the excessive RAD51 loading onto the BCR. To test this possibility, we performed a chromatin immunoprecipitation assay of 11–4 cells treated with the ATR inhibitor, VE821. In contrast to the significant increase of etoposide-induced RAD51 binding to the BCR by the treatment with the ATM inhibitor, ATR inhibition failed to so (Figure 6A). These results suggest that ATR is not involved in the regulation of RAD51 binding at the BCR of MLL after etoposide treatment.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32222/elife-32222-fig6-v1.jpg)
 
-**Figure 6.:** (A) ChIP analysis of the RAD51 loading onto the MLL BCR in ATMi or ATRi or a combination of ATMi and ATRi treated 11–4 cells. 11–4 cells were treated with ATMi (10 µM), ATRi (10 µM), or a combination of ATMi and ATRi for 2 hr before etoposide treatment. After washing the cells, the inhibitors (5 μM) were added until the cells were harvested. The ChIP analysis was performed as described in Figure 4. Values represent the means ± SE from three independent experiments. *p<0.05. **p<0.01. Source data are presented in Figure 6—source data 1. (B) The percentages of 11–4 cells with split chromosome 11q23 signals are shown. 11–4 cells were treated with ATMi (10 µM), ATRi (10 µM), or a combination of ATMi and ATRi for 2 hr before etoposide treatment. After the cells were washed, the inhibitors (5 μM) were added until the cells were harvested. Dual-color FISH analyses of chromosome 11q23 were performed as described in Figure 5. Values represent the means ± SE from three independent experiments. *p<0.05. **p<0.01, ***p<0.001, n.s.: no significant difference.10.7554/eLife.32222.026Figure 6—source data 1.Figure 6A and B.
+**Figure 6.:** (A) ChIP analysis of the RAD51 loading onto the MLL BCR in ATMi or ATRi or a combination of ATMi and ATRi treated 11–4 cells. 11–4 cells were treated with ATMi (10 µM), ATRi (10 µM), or a combination of ATMi and ATRi for 2 hr before etoposide treatment. After washing the cells, the inhibitors (5 μM) were added until the cells were harvested. The ChIP analysis was performed as described in Figure 4. Values represent the means ± SE from three independent experiments. *p<0.05. **p<0.01. Source data are presented in Figure 6—source data 1. (B) The percentages of 11–4 cells with split chromosome 11q23 signals are shown. 11–4 cells were treated with ATMi (10 µM), ATRi (10 µM), or a combination of ATMi and ATRi for 2 hr before etoposide treatment. After the cells were washed, the inhibitors (5 μM) were added until the cells were harvested. Dual-color FISH analyses of chromosome 11q23 were performed as described in Figure 5. Values represent the means ± SE from three independent experiments. *p<0.05. **p<0.01, ***p<0.001, n.s.: no significant difference.
 
 Next, we examined the effect of an ATRi on the etoposide-induced 11q23 chromosome translocations in ATM-proficient 11–4 cells, by the dual color FISH analysis using the MLL gene probes (Figure 6B). The increase of the split signal positive cells by ATRi was less than that by ATMi. Although ATR is suggested to be the major kinase responsible for ARP8 phosphorylation after etoposide treatment, this finding suggests that the effect of ATRi on the etoposide-induced chromosome translocations is limited. Moreover, no additional effects of ATRi on the increase of the chromosome translocations by ATMi were observed. Taken together, these findings strongly suggest that ATM, but not ATR, negatively regulates RAD51 loading onto the BCR after etoposide treatment to repress11q23 chromosome translocations.
 
@@ -100,27 +152,422 @@ Chromosome abnormalities involving the MLL gene are one of the most frequent chr
 
 ## Materials and methods
 
-## Cell culture and chemical treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>arp8</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 93973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>ino80</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 54617</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>atm</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>atr</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>rad51</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 5888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapiens)</td>
+      <td>rpa2</td>
+      <td>NA</td>
+      <td>GenBank: GeneID 6118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>AT5BIVA</td>
+      <td>PMID:21048951</td>
+      <td>RRID: CVCL_7442</td>
+      <td>Cell line maintained in S. Matsuura lab;</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>11–4</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>Cell line maintained in S. Matsuura lab;</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>RRID: CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>GM0637</td>
+      <td>other</td>
+      <td>RRID: CVCL_7297</td>
+      <td>Cell line maintained in T. Cremer lab;</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>Tet-Off ARP8 Nalm-6</td>
+      <td>PMID:25299602</td>
+      <td></td>
+      <td>Cell line maintained in M. Harata lab;</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>Flp-In T-REx 11–4</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = 11–4; constructed by use of Flp-In T-REx core kit (Invitrogen)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>Flp-In T-REx 11–4 HA-ARP8-WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = Flp In T-REx 11–4; Addition of tetracyclin induces expression of HA-tagged recombinant ARP8 wild-type protein</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>Flp-In T-REx 11–4 HA-ARP8-S412A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = Flp In T-REx 11–4; Addition of tetracyclin induces expression of HA-tagged recombinant ARP8-S412A mutant protein</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>U2OS HA-ARP8-WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = U2 OS; stably expressing HA-tagged recombinant ARP8 wild-type protein</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo Sapiens)</td>
+      <td>U2OS HA-ARP8-S412A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = U2 OS; stably expressing HA-tagged recombinant ARP8-S412A protein</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho ATM/ATR substrate motif (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology:Cat# 6966S; RRID:AB_10949894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATM protein kinase pS1981 (mouse monoclonal)</td>
+      <td>Rockland</td>
+      <td>Rockland:Cat# 200-301-400; RRID:AB_217868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA Tag (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore:Cat# 05–904; RRID:AB_417380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Histone H2A.X, phospho (Ser139) (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore:Cat# 05–636; RRID:AB_309864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human RAD51 (rabbit polyclonal)</td>
+      <td>Bio Academia</td>
+      <td>Bio Acdemia:Cat# 70–001; RRID:AB_2177110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho RPA32 (S4/S8) (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Laboratories:Cat# A300-245A; RRID:AB_210547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-INO80 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Laboratories:Cat# A303-371A; RRID:AB_10950580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Human RPA/p34 (Replication Protein A) Ab-1 (mouse monoclonal)</td>
+      <td>Lab Vision</td>
+      <td>Lab Vision:Cat# MS-691-P0; RRID:AB_143149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (mouse monolconal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-32233; RRID:AB_627679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Histone H2A.X</td>
+      <td>Abcam</td>
+      <td>Abcam: Cat# ab124781; RRID_AB_10971675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-beta-actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:Cat # A5441; RRID:AB_476744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ARP8 (rabbit monoclonal)</td>
+      <td>PMID:25299602</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cy3-secondary</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pME18FL-hARP8</td>
+      <td>PMID:18163988</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1/Myc-His(-)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:Cat # V855-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5/FRT/TO</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:Cat # K650001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-arp8</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = pME18FL-hARP8; PCR, HA tag was fused; mutagenized in the Ambion Silencer Select s41201 siRNA target site for resistance; inserted into pcDNA3.1/Myc-His(-) or pcDNA5/FRT/TO</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-arp8-S412A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = HA-arp8; PCR, mutagenized; inserted into pcDNA3.1/Myc-His(-) or pcDNA5/FRT/TO</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-arp8-S412D</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitor = HA-arp8; PCR, mutagenized; inserted into pcDNA3.1/Myc-His(-)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligonucleotide for construction of siRNA-resistant HA-ARP8</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5'-CTCAACAAAATGCCACCATCGTTCAGACGTATAATTGAAAATGTGGATG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligonucleotide for construction of siRNA-resistant HA-ARP8-S412A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5'-TTGCAGCACAGAGCTCAGGGCGATCCTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligonucleotide for construction of siRNA-resistant HA-ARP8-S412D</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5'-TTGCAGCACAGAGATCAGGGCGATCCTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of bt56 forward</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-TACTCTGAATCTCCCGCA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of bt56 reverse</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-CGCTCGTTCTCCTCTAA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of t56 forward</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-TTGCCAAGTCTGTTGTGAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of t56 reverse</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-CAGAGGCCCAGCTGTAGTTC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of GAPDH forward</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5'-TCTCCCCACACACATGCACTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of GAPDH reverse</td>
+      <td>this paper</td>
+      <td></td>
+      <td>5'-CCTAGTCCCAGGGCTTTGATT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of beta-globin forward</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-TTGGACCCAGAGGTTCTTTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primer for RT-PCR of beta-globin reverse</td>
+      <td>PMID:21048951</td>
+      <td></td>
+      <td>5'-GAGCCAGGCCATCACTAAAG-3'</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink PLA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:Cat # DUO92002, DUO92004, DUO92008</td>
+      <td>Proximity Ligation Assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>etoposide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:Cat # E1383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATM inhibitor (KU55933)</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore:Cat# 118500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATR inhibitor IV</td>
+      <td>Merck Millipore</td>
+      <td>Merck Millipore:Cat# 504972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metefer 4 MetaCyte</td>
+      <td>Metasystems</td>
+      <td>v 3.11.4</td>
+      <td>software for FISH analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XL MLL Plus</td>
+      <td>Metasystems Probes</td>
+      <td>Metasystems Probes:Cat# D5060-100-OG</td>
+      <td>probe for FISH analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSI MLL Dual Color, BreakApart Rearrangement Probe</td>
+      <td>Vysis, Abbott Molecular Inc.</td>
+      <td>Vysis, Abbott Molecular Inc.: 32–190083</td>
+      <td>probe for FISH analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and chemical treatment
 
 The SV40-transformed AT fibroblast cell line AT5BIVA and its ATM-proficient derivative, AT5BIVA cells reconstituted with chromosome 11 (11-4), were kindly provided by Dr. S. Matsuura (Sun et al., 2010). The AT5BIVA cells were cultured in Dulbecco’s Modified Eagle’s medium (DMEM, Sigma-Aldrich), supplemented with 10% fetal bovine serum (FBS, Equitech-Bio, Kerrville, USA). The 11–4 cells were maintained in DMEM supplemented with 10% FBS and 0.2 mg/ml of G418 (Nacalai Tesque). The Flp-In T-Rex 11–4 cells were maintained in DMEM, supplemented with 10% tetracycline-free FBS (Sigma-Aldrich, St. Louis, USA), 10 μg/ml blasticidin S HCl (Gibco, Japan) and 40 μg/ml hygromycin B (Invitrogen, Carlsbad, USA). The human osteosarcoma U2OS cell line (ATCC) was cultured in Minimum Essential Medium Eagle (MEM, Sigma-Aldrich), supplemented with 10% FBS. GM0637 cells were cultured in DMEM, supplemented with 10% FBS. Tet-Off ARP8 Nalm-6 cells were cultured at 37°C in RPMI-1640, containing GlutaMAX-I (Gibco) and supplemented with 10% FBS. For the induction of the ARP8 knockout, tetracycline (Sigma-Aldrich) was added to the culture medium to a final concentration of 2 μg/ml (Osakabe et al., 2014). AT5BIVA, 11–4 cell lines were kindly provided by Dr. S. Matsuura laboratory, Hiroshima University, Japan. U2OS cell line was purchased from ATCC. GM0637 cell line was kindly provided by Dr. T. Cremer laboratory, LMU, Germany. Tet-Off ARP8 Nalm-6 cell line was kindly provided by Dr. M. Harata laboratory, Tohoku University, Japan. For the induction of DNA damage, as described elsewhere, the cells were exposed to 100 μM etoposide (Sigma-Aldrich), unless otherwise stated, for 15 min, washed, and cultured in fresh medium. Dimethylsulfoxide (DMSO) was used as the vehicle for etoposide, and was present in the cell cultures at a final concentration of 0.1%. Unless otherwise stated, both the ATM inhibitor KU55933 (Merck Millipore, Billerica, USA) and ATR inhibitor IV VE821 (Merck Millipore) were used at 10 μM for two hours before etoposide treatment and at 5 μM after the cells were washed, respectively.
 
-## Antibodies
+### Antibodies
 
 The antibodies used for chromatin immunoprecipitation, immunoblotting, and immunofluorescence staining were rabbit anti-phospho ATM/ATR substrate motif (Cell Signaling Technology, Danvers, USA), mouse anti-phospho ATM (Rockland, Pottstown, USA), mouse anti-HA, mouse anti-γH2AX (Merck Millipore), rabbit anti-RAD51 (Bio Academia,Japan), rabbit anti -RPA2 S4/8 and rabbit anti-INO80 (Bethyl, Montgomery, USA), mouse anti-RPA34 (Lab Vision, Fremont, USA), rabbit anti-glyceraldehyde-3-phosphate dehydrogenase (anti-GAPDH) (Santa Cruz Biotechnology, USA), rabbit anti-H2AX (Abcam, UK), and mouse anti-β-actin (Sigma-Aldrich) and rabbit anti-ARP8 (Osakabe et al., 2014).
 
-## RNAi and plasmids
+### RNAi and plasmids
 
 All siRNAs were Ambion Silencer Select siRNAs (Thermo Fisher Scientific,USA). The siRNAs were s41201 for ARP8, s57219 for ATM, s3638 for CK2, s29257 and s224310 for INO80. Select Negative Control siRNA was used as the control. The siRNA interference experiments were performed 2 days after transfection with 0.2–0.3 nM siRNA, using Lipofectamine RNAiMAX (Invitrogen). The pcDNA 3.1 vector bearing the HA-tagged ARP8 was constructed by inserting the PCR-amplified ARP8 cDNA into the NotI/HindIII sites, followed by inserting the PCR-amplified HA between the ApaI and XhoI sites of pcDNA3.1/Myc-His (-) C. Plasmid transfections were performed using the GeneJuice transfection reagent (Novagen, Billerica, USA), according to the manufacturer’s instructions. For rescue experiments, the siRNA-resistant ARP8 expression vector was co-transfected with the siRNA, using the Lipofectamine 2000 transfection reagent (Invitrogen) for 2 or 3 days. The mutant vectors were constructed by site-directed mutagenesis, using the indicated oligonucleotides: For the siRNA-resistant HA-ARP8 mutant, 5'-ctcaacaaaatgccaccatcgttcagacgtataattgaaaatgtggatg-3', for the HA-ARP8 S418A mutant, 5'-TTGCAGCACAGAGCTCAGGGCGATCCTG-3', and for the S418D mutant, 5'-TTGCAGCACAGAGATCAGGGCGATCCTG-3'. The sequences were confirmed using a BigDye Terminator v3.1 Cycle Sequencing Kit and an Applied Biosystems Genetic Analyzer, model 3130.
 
-## Establishment of stably expressing cells
+### Establishment of stably expressing cells
 
 To generate cells stably expressing U2OS, the pcDNA 3.1 plasmid encoding the HA-tagged wild-type or S412A mutant of ARP8 was transfected using the GeneJuice transfection reagent, with G418 selection (Nacalai Tesque, Japan). After the confirmation of stable expression by immunofluorescence staining and immunoblotting, pools of single clones were used for experiments. For the generation of the inducible expression of wild-type or phosphorylation mutant ARP8 in 11–4 cells, the Flp-In System (Thermo Fisher Scientific) was used, according to the manufacturer’s instructions. The siRNA-resistant HA-tagged wild-type,or S412A ARP8 fragment from pcDNA 3.1 HA-ARP8 was inserted between the HindIII and KpnI sites of the pcDNA5/FRT/TO vector. For the induction of the HA-ARP8 expression, a final concentration of 2 μg/ml tetracycline was added for 24 hr.
 
-## FISH analysis
+### FISH analysis
 
 FISH analyses were performed using the 11q23 chromosome translocation probe (XL MLL plus, MetaSystems probes, Germany) and the LSI MLL Dual Color, BreakApart Rearrangement Probe (Vysis, Abbott Molecular Inc. Abbott park, USA), according to the manufacturers’ protocols. For the DNA FISH analysis using the probe from Metaystems, the images were acquired on an Axio Imager Z2 microscope (Carl Zeiss, Germany) equipped with the MetaSystems software. Subsequently, at least 2000 etoposide-exposed or DMSO-exposed cells were counted by the Metafer platform, MetaCyte, and the cells containing split signals (separated by >1 μm) were monitored. For the DNA FISH analysis using the probe from Vysis, the images were acquired on a Zeiss AxioplanII microscope using an AxioCamMRm controlled by Axiovision. At least 200 etoposide-exposed or DMSO-exposed cells were counted. All FISH analyses were repeated three times.
 
-## Chromatin immunoprecipitation and real-time PCR assay
+### Chromatin immunoprecipitation and real-time PCR assay
 
 In brief, the cells were fixed by adding formaldehyde to a 1% final concentration for 10 min at 25°C. The cells were then sonicated to prepare chromatin suspensions of DNA fragments that were roughly 300–500 bps in length. Immunoprecipitations were performed using antibodies against INO80 and RAD51. Normal rabbit IgG was used as the negative control. Real-time PCR reactions were performed using SYBR premix Ex Taq (TAKARA, Japan). The dissociation curve analysis of the melting temperature of the amplified DNA showed that each primer set gave a single, specific product. The immunoprecipitation data were normalized to those of a control region in the GAPDH or β-globin gene, to correct for experimental variation. The relative immunoprecipitation value represents the ratio of the immunoprecipitated DNA after chemical treatment to the immunoprecipitated DNA after vehicle treatment. All ChIP analyses were repeated at least three times, and in each experiment, quantitative PCR reactions were performed in duplicate. Values represent the means ± SE. The primers for real-time PCR were: bt56 forward: 5 '-TACTCTGAATCTCCCGCA-3' bt56 reverse: 5'-CGCTCGTTCTCCTCTAA-3' t56 forward: 5'-TTGCCAAGTCTGTTGTGAGC-3' t56 reverse: 5'-CAGAGGCCCAGCTGTAGTTC-3'
 
@@ -132,18 +579,18 @@ GAPDH reverse: 5'-CCTAGTCCCAGGGCTTTGATT-3'.
 
 β-globin reverse: 5'-GAGCCAGGCCATCACTAAAG3'
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 After fixation in 4% paraformaldehyde in 1X phosphate-buffered saline (PBS) for 10 min at room temperature, the cells were permeabilized with 0.1% sodium dodecyl sulfate (SDS)−0.5% Triton X-100 in 1x PBS for 5 min. For the detection of HA-tagged ARP8, fixed cells were incubated for 30 min at 37°C with a mouse anti-HA antibody (1:600) in 1% bovine serum albumin (BSA)/1 XPBS. Cy3-conjugated goat anti-mouse (1:1,000, Invitrogen) antibodies were used as the secondary antibodies. Cells were mounted using Vectashield containing DAPI and observed with a BZ-X700 microscope (Keyence).
 
-## Immunoprecipitation and immunoblotting
+### Immunoprecipitation and immunoblotting
 
 The nuclear fraction was prepared as described previously (Liu et al., 2015). The whole cells extracts were prepared using buffer C (20 mM HEPES pH 7.9, 400 mM NaCl, 1 mM EDTA, 0.1% NP-40, 0.5 mM DTT, 1X protease inhibitor (Roche), 1X phosphatase inhibitor (Nacalai Tesque), 20% glycerol), and the diluted lysates were used for immunoprecipitation. For immunoprecipitation assay of transfected cells, anti-HA antibody conjugated IgG Dynabeads (Novex) were used, and for the endogenous protein, anti-INO80 antibody, anti-ARP8 antibody, or normal IgG conjugated IgG Dynabeads were used. The immunoprecipitation analysis was performed at least twice to confirm the results. The precipitates were electrophoresed through a gel and probed by western blotting with the indicated the antibodies. The intensities of the bands were quantified, using the Image J software.
 
-## Proximity ligation assay (PLA)
+### Proximity ligation assay (PLA)
 
 GM0637 cells were transfected with the HA-tagged wild type or S412A or S412D mutant of ARP8 or empty vector for 24 hr, fixed with 2% paraformaldehyde in PBS for 10 min at room temperature and permeabilized with 0.5% Triton X-100 in PBS for 5 min at room temperature. The cells were incubated with the rabbit anti-INO80 and mouse anti-HA antibodies diluted in 0.1% BSA for 30 min at 37°C in a moist chamber. Proximity ligation was then conducted in situ, according to the manufacturer’s instructions (Olink Bioscience, Sweden). We used the PLA probe anti-rabbit PLUS and the PLA probe anti-mouse MINUS. To visualize the interaction between two proteins, the samples were incubated for ligation and amplification. After serial SSC (sodium/sodium citrate) washes, nuclei were stained with DAPI. The slides were mounted with Vectashield (Vector Labs). PLA signals were detected with an LSM780 confocal microscope (Carl Zeiss), with a 63 × 1.40 NA plan-apochromat objective, and counted in at least 400 cells with the Image J software. All PLA analyses were repeated four times.
 
-## Data analysis
+### Data analysis
 
 Data in all experiments are represented as mean ± SE. Statistical analysis was performed using the two-tailed unpaired t- test. For the FISH analysis, the percentages of cells with split signals were determined by the Z test of homogeneity for independent samples. Results reaching p<0.05 were considered to be statistically significant (*p<0.05, **p<0.01, ***p<0.001).

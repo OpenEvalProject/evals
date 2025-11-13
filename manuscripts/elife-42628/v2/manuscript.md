@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.42628.001 Systemic blood pressure is determined, in part, by arterial smooth muscle cells (myocytes). Several Transient Receptor Potential (TRP) channels are proposed to be expressed in arterial myocytes, but it is unclear if these proteins control physiological blood pressure and contribute to hypertension in vivo. We generated the first inducible, smooth muscle-specific knockout mice for a TRP channel, namely for PKD2 (TRPP1), to investigate arterial myocyte and blood pressure regulation by this protein. Using this model, we show that intravascular pressure and α 1 -adrenoceptors activate PKD2 channels in arterial myocytes of different systemic organs. PKD2 channel activation in arterial myocytes leads to an inward Na + current, membrane depolarization and vasoconstriction. Inducible, smooth muscle cell-specific PKD2 knockout lowers both physiological blood pressure and hypertension and prevents pathological arterial remodeling during hypertension. Thus, arterial myocyte PKD2 controls systemic blood pressure and targeting this TRP channel reduces high blood pressure.
+Systemic blood pressure is determined, in part, by arterial smooth muscle cells (myocytes). Several Transient Receptor Potential (TRP) channels are proposed to be expressed in arterial myocytes, but it is unclear if these proteins control physiological blood pressure and contribute to hypertension in vivo. We generated the first inducible, smooth muscle-specific knockout mice for a TRP channel, namely for PKD2 (TRPP1), to investigate arterial myocyte and blood pressure regulation by this protein. Using this model, we show that intravascular pressure and α1-adrenoceptors activate PKD2 channels in arterial myocytes of different systemic organs. PKD2 channel activation in arterial myocytes leads to an inward Na+ current, membrane depolarization and vasoconstriction. Inducible, smooth muscle cell-specific PKD2 knockout lowers both physiological blood pressure and hypertension and prevents pathological arterial remodeling during hypertension. Thus, arterial myocyte PKD2 controls systemic blood pressure and targeting this TRP channel reduces high blood pressure.
 
 ## Introduction
 
@@ -38,67 +38,199 @@ Here, we generated an inducible, myocyte-specific PKD2 knockout mouse to investi
 
 ## Results
 
-## Generation of tamoxifen-inducible smooth muscle-specific PKD2 knockout mice
+### Generation of tamoxifen-inducible smooth muscle-specific PKD2 knockout mice
 
 Mice with loxP sites flanking exons 11 and 13 (Pkd2fl/fl) of the Pkd2 gene were crossed with tamoxifen-inducible Myh11-cre/ERT2 mice, producing a Pkd2fl/fl:Myh11-cre/ERT2 line. Genotyping was performed using a 3-primer (a, b, c) strategy to identify wild-type (in C57BL/6J), floxed and deleted PKD2 alleles. PCR of genomic DNA from mesenteric and hindlimb arteries of wild-type mice that lack loxP sites produced a 232 bp transcript (Figure 1—figure supplement 1). Tamoxifen-treated Pkd2fl/fl mouse arteries and aorta produced a transcript of 318 bp, which arose from primers a and b (Figure 1—figure supplement 1). PCR amplified a 209 bp transcript in vasculature from tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice due to primers a and c, confirming loss of the primer b annealing site. PCR of vasculature in Pkd2fl/fl:Myh11-cre/ERT2 arteries also produced a faint 318 bp band, suggesting that PKD2 is expressed in vascular wall cell types other than myocytes where DNA would not undergo recombination (Figure 1—figure supplement 1).
 
-## PKD2 transcripts and protein are absent in arterial myocytes of tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice
+### PKD2 transcripts and protein are absent in arterial myocytes of tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice
 
 RT-PCR was performed on RNA extracted from arterial myocytes (~500 cells) that had been individually harvested from mesenteric arteries of tamoxifen-treated Pkd2fl/fl and tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice. Arterial myocyte cDNA from both genotypes amplified transcripts for both actin and myosin heavy chain 11, a smooth muscle-specific marker (Figure 1A). In contrast, products for PECAM, an endothelial cell marker, and aquaporin 4, an astrocyte marker, were not amplified, suggesting that the isolated mRNA was from pure smooth muscle (Figure 1A). PKD2 primers were designed to anneal to a sequence in exons 9/10 (forward) and 13 (reverse), which span the recombination site (Figure 1A). Transcripts for PKD2 were amplified by cDNA from arterial myocytes of Pkd2fl/fl mice, but not arterial myocytes of Pkd2fl/fl:Myh11-cre/ERT2 mice (Figure 1A). These data indicate that tamoxifen induces PKD2 knockout in arterial myocytes of the Pkd2fl/fl:smCre+ mice (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig1-v2.jpg)
+
+**Figure 1.:** (A) RT-PCR showing the absence of PKD2 transcript in isolated myocytes from tamoxifen-treated Pkd2fl/fl:myh11-cre/ERT2 mice. (B) Western blots illustrating the effect of tamoxifen-treatment in Pkd2fl/fl and Pkd2fl/fl:myh11-cre/ERT2 mice on PKD2, CaV1.2L (full-length CaV1.2) and CaV1.2S (short CaV1.2) proteins in mesenteric and hindlimb arteries. (C) Mean data for proteins in mesenteric arteries of tamoxifen-treated Pkd2fl/fl:myh11-cre/ERT2 mice when compared to those in tamoxifen-treated Pkd2fl/fl mice. n = 4–7. * indicates p<0.05 versus Pkd2fl/fl. (D) En-face immunofluorescence imaging illustrating that PKD2 protein (red, Alexa Fluor 555) is abolished in myocytes of mesenteric and hindlimb arteries in tamoxifen-treated Pkd2fl/fl:myh11-cre/ERT2 mice (representative of 6 mesenteric and six hindlimb arteries). In contrast, PKD2 protein in endothelial cells is unaltered. Nuclear staining (DAPI) is also shown. Scale bars = 20 µm. (E) Confocal and DIC images illustrating that PKD2 protein (Alexa Fluor 555) is abolished in isolated mesenteric artery myocytes of tamoxifen-treated Pkd2fl/fl:myh11-cre/ERT2 mice (representative data from 5 Pkd2fl/fl and 5 Pkd2fl/fl:myh11-cre/ERT2 mice). Scale bars = 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ethidium bromide gel illustrating PCR products in vasculature of C57BL/6J (WT) mice and tamoxifen-treated Pkd2fl/fl and Pkd2fl/fl:myh11cre/ERT2 mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blots illustrating PKD2 protein was lower in mesenteric arteries of tamoxifen-treated Pkd2fl/fl:myh11-cre/ERT2 mice, whereas other proteins were similar. (B) Mean data for proteins in hindlimb arteries of Pkd2 smKO mice (n = 4–6). (C) Western blots of proteins in aorta. Cav1.2L, full-length Cav1.2; Cav1.2S, short Cav1.2. (D) Mean data from aorta (n = 4). * indicates p<0.05 versus Pkd2fl/fl.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Western blots illustrating Angiotensin II type one receptor (AT1R), Piezo1, α1-adrenergic receptor A (α1A), α1-adrenergic receptor B (α1B), α1-adrenergic receptor D (α1D) and G protein-coupled receptor 68 (GPR68) protein levels in mesenteric and hindlimb arteries of Pkd2fl/fland Pkd2fl/fl:myh11-cre/ERT2 mice. (B) Mean data from mesenteric and hindlimb arteries (n = 4 per group).
 
 Western blotting was performed to quantify proteins in intact arteries of tamoxifen-injected Pkd2fl/fl:Myh11-cre/ERT2 and tamoxifen-injected Pkd2fl/fl mice. In mesenteric and hindlimb arteries of Pkd2fl/fl:Myh11-cre/ERT2 mice, PKD2 protein was ~25.3% and 32.6%, respectively of that in Pkd2fl/fl controls (Figure 1B,C, Figure 1—figure supplement 2A,B). In contrast, TRPC6, TRPM4, and ANO1 channels and PKD1, which can form a complex with PKD2 (Qian et al., 1997; Tsiokas et al., 1997), were similar between genotypes (Figure 1C, Figure 1—figure supplement 2A,B). CaV1.2 protein was similar in mesenteric arteries, but slightly higher (~25.6%) in hindlimb arteries of Pkd2fl/fl:Myh11-cre/ERT2 mice (Figure 1B,C, Figure 1 – figure supplement B). In aorta of Pkd2fl/fl:Myh11-cre/ERT2 mice, PKD2 protein was ~46.8% of that in Pkd2fl/fl, whereas CaV1.2 and PKD1 were similar (Figure 1—figure supplement 2C and D). Piezo1, angiotensin II type one receptors and GPR68 have been proposed to act as vascular mechanosensors (Li et al., 2014; Xu et al., 2018; Schleifenbaum et al., 2014; Blodow et al., 2014). Piezo1, angiotensin II type one receptors and GPR68 proteins were similar in mesenteric and hindlimb arteries of Pkd2fl/fl and Pkd2fl/fl:Myh11-cre/ERT2 mice (Figure 1—figure supplement 3). α-adrenergic receptor subtypes 1A, 1B and 1D were also measured and all were similar in mesenteric and hindlimb arteries of Pkd2fl/fl and Pkd2fl/fl:Myh11-cre/ERT2 mice (Figure 1—figure supplement 3).
 
 Immunofluorescence demonstrated that PKD2 protein was present in myocytes of intact arteries and in isolated myocytes of tamoxifen-treated Pkd2fl/fl control mice, but absent in myocytes of tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice (Figure 1D,E). In contrast, PKD2 protein was present in endothelial cells of both tamoxifen-treated Pkd2fl/fl and Pkd2fl/fl:Myh11-cre/ERT2 mouse arteries (Figure 1D). These data indicate that PKD2 detected in Western blots of tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mouse arteries is protein present in cell types other than myocytes that would not be targeted by the smooth muscle-specific Cre. These results indicate that PKD2 is expressed in myocytes of mesenteric and hindlimb arteries and aorta and that tamoxifen treatment of Pkd2fl/fl:Myh11-cre/ERT2 mice selectively abolishes PKD2 expression in myocytes. From this point in the manuscript, tamoxifen-treated Pkd2fl/fl:Myh11-cre/ERT2 mice will be referred to as Pkd2 smKO, with tamoxifen-treated Pkd2fl/fl mice used as controls in all experiments.
 
-## Pkd2 smKO mice are hypotensive
+### Pkd2 smKO mice are hypotensive
 
 Telemetry indicated that diastolic and systolic blood pressures were both lower in Pkd2 smKO mice than in Pkd2fl/fl mice (Figure 2A and B). Mean arterial pressure (MAP) was lower in Pkd2 smKO mice during both day and night cycles, was sustained for days and on average was ~ 22.5% lower in Pkd2 smKO mice than in Pkd2fl/fl mice (Figure 2C, Figure 2—figure supplement 1A). Locomotion was similar between genotypes, indicating that the lower blood pressure in Pkd2 smKO mice was not due to inactivity (Figure 2—figure supplement 1B). Echocardiography indicated that cardiac output, fractional shortening, ejection fraction and heart rate were similar in Pkd2 smKO and Pkd2fl/fl mice (Figure 2D). Pkd2 smKO kidney glomeruli and tubules were normal and indistinguishable from those of Pkd2fl/fl mice (Figure 2E). Plasma angiotensin II, aldosterone and ANP and plasma and urine electrolytes were similar in Pkd2 smKO and Pkd2fl/fl mice (Table 1, p>0.05 for all). These results demonstrate that arterial myocyte PKD2 channels control systemic blood pressure and that cardiac function and kidney anatomy and function are similar in Pkd2 smKO and Pkd2fl/fl mice.
 
-## Myocyte PKD2 channels are essential for pressure-induced vasoconstriction in hindlimb arteries
+![Figure 2.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig2-v2.jpg)
+
+**Figure 2.:** (A) Original telemetric blood pressure recordings from Pkd2 smKO and Pkd2fl/fl mice. (B) Mean systolic and diastolic blood pressures in Pkd2fl/fl (n = 11) and Pkd2 smKO (n = 12) mice. * indicates p<0.05 versus Pkd2fl/fl. (C) Mean arterial blood pressures (MAP) in Pkd2fl/fl (n = 11) and Pkd2 smKO (n = 12) mice during day and night (gray) cycles. ZT: Zeitgeber Time. * indicates p<0.05 versus Pkd2fl/fl for all data points. (D) Mean echocardiography data. Cardiac output (CO), fractional shortening (FS), ejection fraction (EF) and heart rate (HR). (Pkd2fl/fl, n = 5; Pkd2 smKO mice, n = 4). (E) Representative images of H and E stained kidney cortex used for histological assessment (n = 3 mice used for for each group).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean arterial blood pressure (MAP) in Pkd2 smKO and Pkd2fl/fl mice (n = 6 per group). * indicates p<0.05 versus Pkd2fl/fl. (B) Mean data of locomotor activity, n = 6 per group.
+
+**Table 1.**
+ Plasma hormones and plasma and urine electrolytes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pkd2fl/fl</th>
+      <th>Pkd2 smKO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Plasma hormones (pg/ml)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angiotensin II</td>
+      <td>202.5 ± 17.2 (n = 16)</td>
+      <td>204.7 ± 12.1 (n = 15)</td>
+    </tr>
+    <tr>
+      <td>Aldosterone</td>
+      <td>341.0 ± 18.2 (n = 16)</td>
+      <td>365.6 ± 14.0 (n = 10)</td>
+    </tr>
+    <tr>
+      <td>ANP</td>
+      <td>107.2 ± 9.4 (n = 18)</td>
+      <td>118.3 ± 12.3 (n = 18)</td>
+    </tr>
+    <tr>
+      <td>Plasma electrolytes (mM)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Na+</td>
+      <td>142.3 ± 1.0 (n = 7)</td>
+      <td>152.0 ± 5.5 (n = 6)</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>6.4 ± 0.4 (n = 7)</td>
+      <td>6.8 ± 0.3 (n = 6)</td>
+    </tr>
+    <tr>
+      <td>Cl-</td>
+      <td>78.8 ± 0.7 (n = 7)</td>
+      <td>84.1 ± 4.3 (n = 6)</td>
+    </tr>
+    <tr>
+      <td>Urine electrolytes (mM)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Na+</td>
+      <td>136.9 ± 9.3 (n = 15)</td>
+      <td>147.0 ± 16.2 (n = 15)</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>563.2 ± 30.2 (n = 15)</td>
+      <td>548.6 ± 37.6 (n = 15)</td>
+    </tr>
+    <tr>
+      <td>Cl-</td>
+      <td>455.4 ± 24.7 (n = 15)</td>
+      <td>479.1 ± 42.0 (n = 15)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Myocyte PKD2 channels are essential for pressure-induced vasoconstriction in hindlimb arteries
 
 Intravascular pressure stimulates vasoconstriction in small, resistance-size arteries. This myogenic response is a major regulator of both regional organ blood flow and systemic blood pressure. To determine whether PKD2 channels contribute to myogenic tone, pressure-induced (20–100 mmHg) vasoconstriction was measured in first-order gastrocnemius arteries. Intravascular pressures greater than 40 mmHg produced increasing levels of constriction in Pkd2fl/fl arteries, reaching ~ 20.9% tone at 100 mmHg (Figure 3A,B). In contrast, pressure-induced vasoconstriction was robustly attenuated in Pkd2 smKO gastrocnemius arteries, which developed only ~ 5.4% tone at 100 mmHg or approximately one quarter of that in Pkd2fl/fl arteries (Figure 3A,B). The passive diameters of Pkd2fl/fl and Pkd2 smKO gastrocnemius arteries were similar (Figure 3—figure supplement 1A). Depolarization (60 mM K+) stimulated slightly larger vasoconstriction in Pkd2 smKO than Pkd2fl/fl gastrocnemius arteries (Figure 3—figure supplement 1B). These data are consistent with the small increase in CaV1.2 protein measured in gastrocnemius arteries of Pkd2 smKO mice and indicate that attenuation of the myogenic response is not due to loss of voltage-dependent Ca2+ channel function and that the reduction in systemic blood pressure may stimulate CaV1.2 expression in hindlimb arteries, but not in mesenteric arteries or aorta (Figure 1C, Figure 1—figure supplement 2B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative traces illustrating diameter responses to intravascular pressure in gastrocnemius arteries of Pkd2fl/fl and Pkd2 smKO mice. (B) Mean data for myogenic tone in gastrocnemius arteries (Pkd2fl/fl, n = 5; Pkd2 smKO, n = 6). * indicates p<0.05 versus Pkd2fl/fl. (C) Representative traces illustrating hindlimb perfusion pressure in response to increasing flow. (D): Mean data for hindlimb perfusion pressure (Pkd2fl/fl, n = 6; Pkd2 smKO, n = 4). * indicates p<0.05 versus Pkd2fl/fl.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean passive diameter at 80 mmHg of first-order gastrocnemius arteries (G) and third-, fourth-and fifth-order mesenteric arteries (M) (Pkd2fl/fl: G, n = 5; M3rdn = 4; M4thn = 5; M5thn = 5 and Pkd2 smKO: G, n = 5; M3rd n = 7; M4th n = 4; M5th n = 5). (B) Mean data for 60 mM K+-induced constriction in pressurized (100 mmHg) gastrocnemius arteries from Pkd2fl/fl (n = 4) and Pkd2 smKO (n = 4) mice. * indicates p<0.05 versus Pkd2fl/fl. (C) Mean data of phenylephrine-induced constriction in pressurized gastrocnemius arteries (Pkd2fl/fl n = 4, Pkd2 smKO n = 5). (D) Mean data of angiotensin II-induced constriction in gastrocnemius arteries pressurized to 100 mmHg (Pkd2fl/fl, n = 5 and Pkd2 smKO, n = 5–6). (E) Mean data of phenylephrine-induced pressure responses in intact hindlimb (Pkd2fl/fl, n = 11–13 and Pkd2 smKO, n = 8–9).
+
 Sympathetic control of blood pressure occurs in part due to the activation of α1-adrenergic receptors in arterial myocytes. To investigate the contribution of myocyte PKD2 channels to α1-adrenergic receptor-mediated vasoconstriction, responses to phenylephrine, a selective α1-adrenergic receptor agonist, were measured. Phenylephrine stimulated similar vasoconstrictions in pressurized gastrocnemius arteries of Pkd2fl/fl and Pkd2 smKO mice (Figure 3—figure supplement 1C). To determine whether this similar response to receptor agonists was specific to α1-adrenergic receptors, vasoregulation by angiotensin II was measured. Angiotensin II also stimulated similar vasoconstrictions in Pkd2fl/fl and Pkd2 smKO mouse gastrocnemius arteries (Figure 3—figure supplement 1D). To study vasoregulation in intact skeletal muscle, a perfused hindlimb preparation was used. Stepwise increases in intravascular flow produced lower pressures in hindlimbs of Pkd2 smKO mice than in those of Pkd2fl/fl mice (Figure 3C,D). For example, at a flow rate of at 2.5 ml/min the mean pressure in hindlimbs of Pkd2 smKO mice were ~ 63.2% of those in Pkd2fl/fl mice (Figure 3C,D). In contrast, at constant flow, phenylephrine similarly increased pressure in hindlimbs of Pkd2 smKO and Pkd2fl/fl mice (Figure 3—figure supplement 1E). These data suggest that arterial myocyte PKD2 channels are essential for pressure-induced vasoconstriction, but not phenylephrine- or angiotensin II-induced vasoconstriction, in hindlimb arteries.
 
-## Pressure-induced membrane depolarization requires myocyte PKD2 channels in hindlimb arteries
+### Pressure-induced membrane depolarization requires myocyte PKD2 channels in hindlimb arteries
 
 To investigate the mechanism(s) by which myocyte PKD2 channels regulate contractility, membrane potential was measured in pressurized hindlimb arteries using glass microelectrodes. At 10 mmHg, the mean membrane potential of Pkd2fl/fl and Pkd2 smKO arteries were similar at ~ −59.6 and −58.5 mV, respectively (Figure 4A,B). Increasing intravascular pressure to 100 mmHg depolarized Pkd2fl/fl arteries by ~ 22.5 mV, but did not alter the membrane potential of arteries from Pkd2 smKO mice (Figure 4A,B). In contrast, phenylephrine depolarized arteries to similar membrane potentials in both genotypes (Figure 4A,B). These data suggest that pressure activates PKD2 channels in myocytes of hindlimb arteries, leading to depolarization and vasoconstriction.
 
-## Swelling activates PKD2 channels in hindlimb artery myocytes
+![Figure 4.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative traces of microelectrode impalements under indicated conditions illustrating that pressure-induced depolarization is attenuated in gastrocnemius arteries of Pkd2 smKO mice. Phenylephrine (PE) = 1 µM. Scale bars: Y = 10 mV, X = 20 s. (B) Mean data for membrane potential recordings in pressurized hindlimb arteries in the absence or presence of PE (Pkd2fl/fl: 10 mmHg, n = 11; 100 mmHg, n = 10; 100 mmHg + PE, n = 13 and Pkd2 smKO: 10 mmHg, n = 11; 100 mmHg, n = 10; 100 mmHg + PE, n = 14). * indicates p<0.05 versus 10 mmHg in Pkd2fl/fl. # indicates p<0.05 versus 100 mmHg in the same genotype. (C) Representative ICats recorded between −100 and +100 mV in isotonic (300 mOsm), hypotonic (250 mOsm) and hypotonic bath solution with Gd3+ (100 µM) in the same Pkd2fl/fl and Pkd2 smKO mouse hindlimb artery myocytes. (D) Representative I-V relationships of Gd+3 -sensitive Icats activated by hypotonic solution in Pkd2fl/fl and Pkd2 smKO hindlimb myocytes. (E) Mean data for Gd3+-sensitive ICats recorded in hypotonic solution in Pkd2fl/fl and Pkd2 smKO myocytes (n = 5 for each). * indicates p<0.05 versus 250 mOsm, # p<0.05 versus Pkd2fl/fl. (F) Representative I-V relationships between −100 and +100 mV in isotonic (300 mOsm), hypotonic (250 mOsm) and hypotonic bath solution with low (40 mM) Na+ in the same Pkd2fl/fl mouse hindlimb artery myocyte.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative I-V relationships recorded between −100 and +100 mV in the same hindlimb artery myocytes of Pkd2fl/fl or Pkd2 smKO mice in control and PE (10 µM). (B) Mean data for current density at −100 and +100 mV (Pkd2fl/fl, n = 6 and Pkd2 smKO, n = 6). * indicates p<0.05 versus control in the same genotype.
+
+### Swelling activates PKD2 channels in hindlimb artery myocytes
 
 The contribution of PKD2 channels to mechanosensitive currents was investigated in hindlimb artery myocytes. Recent evidence indicates that recombinant PKD2 generates voltage-dependent, outwardly rectifying currents and is primarily a Na+-permeant channel under physiological membrane potentials and ionic gradients (Shen et al., 2016; Gonzalez-Perrett et al., 2002). Whole cell ICat was recorded using the whole-cell patch-clamp configuration with symmetrical Na+ solutions. In Pkd2fl/fl myocytes, reducing bath solution osmolarity from 300 to 250 mOsm caused cell swelling and activated an outwardly rectifying ICat that increased 2.3 ± 0.3 and 3.0 ± 0.7 fold at −100 and + 100 mV, respectively (p<0.05, n = 5, Figure 4C). Swelling-activated ICat was inhibited by Gd3+, a non-selective cation channel blocker (Figure 4C,D,E). The mean reversal potential for ICat was similar in isotonic (−0.2 ± 1.3 mV) and hypotonic solutions (0.1 ± 3.8 mV; p>0.05), suggesting that swelling activated a INa. To test this conclusion experimentally, Na+ substitution experiments were performed. In a hypotonic bath solution, a reduction in bath [Na+] from 115 to 40 mM shifted the Erev to −14.6 ± 0.5 mV in Pkd2fl/fl myocytes (n = 5, p<0.05 versus Erev in 250 mOsm) (Figure 4F). When adjusted for the liquid junction potential caused by the solution change (+6.9 mV), the corrected Erev is −21.5 ± 0.5 mV, which is similar to the calculated ENa (−24.2 mV). Reducing bath Na+ also decreased inward current and increased outward current. In contrast, swelling did not activate a ICat (p<0.05, n = 5), nor did Gd3+ alter ICat when applied in hypotonic bath solution, in hindlimb artery myocytes of Pkd2 smKO mice (Figure 4C,D,E). In further contrast to the differential effects of cell swelling, phenylephrine activated similar amplitude ICats in hindlimb artery myocytes of Pkd2fl/fl and Pkd2 smKO mice (Figure 4—figure supplement 1). These data indicate that cell swelling activates PKD2 channels, leading to a Na+ current in hindlimb artery myocytes, whereas phenylephrine does not activate PKD2 channels in this cell type.
 
-## Myocyte PKD2 channels contribute to phenylephrine-induced vasoconstriction in mesenteric arteries
+### Myocyte PKD2 channels contribute to phenylephrine-induced vasoconstriction in mesenteric arteries
 
 Mesenteric arteries were studied to determine whether myocyte PKD2 channels control contractility in another arterial bed that is a major regulator of systemic blood pressure. In contrast to the robust attenuation of myogenic vasoconstriction in gastrocnemius arteries of Pkd2 smKO mice, pressure- and depolarization-induced vasoconstriction was similar in mesenteric arteries of Pkd2 smKO and Pkd2fl/fl mice (Figure 5A, Figure 5—figure supplement 1B). Myogenic tone was similar regardless of whether third, fourth, or fifth-order Pkd2 smKO and Pkd2fl/fl mouse mesenteric arteries were studied (Figure 5—figure supplement 1A). Passive diameter of mesenteric arteries was not altered by myocyte PKD2 knockout (Figure 3—figure supplement 1A). The differential contribution of myocyte PKD2 channels to pressure-induced vasoconstriction in gastrocnemius and mesenteric arteries was not due to size, as passive diameters of first-order gastrocnemius and third-order mesenteric arteries were similar (Figure 3—figure supplement 1A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig5-v2.jpg)
+
+**Figure 5.:** (A) Mean vasoconstriction over a range of pressures in resistance-size mesenteric arteries from Pkd2fl/fl (n = 7) and Pkd2 smKO (n = 9) mice. (B) Original recordings of concentration-dependent, phenylephrine (PE)-induced contraction in mesenteric artery rings. (C) Mean PE-induced contraction (Pkd2fl/fl, n = 5; Pkd2 smKO, n = 6; *p<0.05 versus Pkd2fl/fl). (D) Representative phenylephrine-induced vasoconstriction in pressurized (80 mmHg) fifth-order mesenteric arteries. (E) Mean PE-induced vasoconstriction in pressurized (80 mmHg) fourth-and fifth-order mesenteric arteries (Pkd2fl/fl, n = 6; Pkd2 smKO, n = 6; *p<0.05 versus Pkd2fl/fl at the same PE concentration).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mean myogenic tone at 80 mmHg illustrating that myogenic tone is similar in third-, fourth-and fifth-order mesenteric arteries and unaltered by PKD2 knockout (Pkd2fl/fl: 3rd n = 4; 4th n = 5; 5th n = 4 and Pkd2 smKO: 3rd n = 7; 4th n = 4; 5th n = 4). (B) Mean data for 60 mM K+-induced constriction in first-and second order mesenteric artery rings (Pkd2fl/fln = 5; Pkd2 smKO n = 6). (C) Mean data for phenylephrine-induced vasoconstriction in pressurized, endothelium-denuded 4th order mesenteric arteries (Pkd2fl/fl, n = 3 and Pkd2 smKO, n = 3). * indicates p<0.05 versus Pkd2fl/fl. (D) Mean myogenic tone at 80 mmHg in endothelium-denuded 4th order mesenteric arteries (Pkd2fl/fl, n = 3 and Pkd2 smKO, n = 3). (E) Mean data for angiotensin II-induced vasoconstriction in mesenteric arteries (Pkd2fl/fl, n = 11–12 and Pkd2 smKO, n = 10–11).
+
 The splanchnic circulation receives considerable sympathetic innervation. To investigate the contribution of myocyte PKD2 channels to α1-adrenoceptor-mediated responses, phenylephrine-induced vasoconstriction was measured. Phenylephrine-induced isometric contractions in mesenteric artery (first- and second-order) rings of Pkd2 smKO mice were smaller than those in Pkd2fl/fl controls (Figure 5B,C). For instance, with 1 µM phenylephrine, contractions in Pkd2 smKO arteries were ~ 15.3% of those in Pkd2fl/fl arteries, with maximal phenylephrine-induced contraction ~ 57.3% of that in Pkd2fl/fl arteries (Figure 5B,C). The mean concentration of phenylephrine-induced half-maximal contraction (EC50, µM) was slightly higher in Pkd2 smKO (2.4 ± 0.2) than Pkd2fl/fl (1.1 ± 0.3) arteries (p<0.05, Figure 5B,C). In pressurized (80 mmHg) mesenteric (fourth- and fifth-order) arteries of Pkd2 smKO mice, phenylephrine-induced vasoconstrictions were between ~ 50.9% and 64.8% of those in Pkd2fl/fl controls (Figure 5D,E). Similar results were obtained with endothelium-denuded mesenteric arteries, indicating that attenuated vasoconstriction to phenylephrine was due to loss of PKD2 in myocytes (Figure 5—figure supplement 1C and D). In contrast to attenuated phenylephrine-mediated vasoconstriction, angiotensin II-induced constriction was not different between Pkd2fl/fl and Pkd2 smKO mesenteric arteries (Figure 5—figure supplement 1E). These data indicate that arterial myocyte PKD2 channels are activated by distinct vasoconstrictor stimuli in arteries of different tissues, contributing to α1-adrenoceptor-mediated vasoconstriction in mesenteric arteries and essential for the myogenic response in hindlimb arteries.
 
-## α1-adrenergic receptors stimulate myocyte PKD2 channels, leading to membrane depolarization in mesenteric arteries
+### α1-adrenergic receptors stimulate myocyte PKD2 channels, leading to membrane depolarization in mesenteric arteries
 
 At an intravascular pressure of 10 mmHg, the membrane potential of Pkd2fl/fl and Pkd2 smKO mesenteric arteries was similar (Figure 6A,B). An increase in pressure to 80 mmHg stimulated a similar depolarization in mesenteric arteries of Pkd2fl/fl and Pkd2 smKO mice, to ~39.7 and 36.7 mV, respectively (Figure 6A,B). Phenylephrine application further depolarized Pkd2fl/fl mesenteric arteries by ~19.9 mV, but did not change the membrane potential of Pkd2 smKO arteries (Figure 6A,B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative traces of microelectrode impalements illustrating that phenylephrine (PE, 1 µM)-induced depolarization is attenuated in mesenteric arteries of Pkd2 smKO mice. Scale bars: Y = 10 mV, X = 20 s. (B) Mean membrane potential recordings in pressurized (10 and 80 mmHg) mesenteric arteries and in PE at 80 mmHg (Pkd2fl/fl: 10 mmHg, n = 13; 80 mmHg, n = 9; 80 mmHg + PE, n = 15. Pkd2 smKO: 10 mmHg, n = 11; 80 mmHg, n = 12; 80 mmHg + PE, n = 12). *p<0.05 versus 10 mmHg in the same genotype. # p<0.05 versus 80 mmHg in the same genotype. (C) Original current recordings obtained between −100 and +100 mV in the same Pkd2fl/fl and Pkd2 smKO myocytes in control, PE (10 μM), low Na+ (40 mM)+PE and low Na+ (40 mM)+PE + Gd3+ (100 µM). (D) Mean paired data (Pkd2fl/fl, n = 5; Pkd2 smKO, n = 5; *p<0.05 versus control in the same genotype).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative I-V relationships from the same isolated mesenteric artery myocytes of Pkd2fl/fl or Pkd2 smKO mice in isosmosmotic (300 mOsm), hyposmotic (250 mOsm) and hyposmotic (250 mOsm) + Gd3+ (100 µM) solutions. (B) Mean data for hyposmoticactivated Gd3+ (100 µM)-sensitive cationic current density at −100 and +100 mV (Pkd2fl/fl, n = 6 and Pkd2 smKO, n = 6).
+
 To examine phenylephrine-regulation of ICat in isolated mesenteric artery myocytes, the whole-cell patch-clamp configuration was used with symmetrical 140 mM NaCl. In Pkd2fl/fl cells, phenylephrine activated outwardly rectifying ICat, increasing density ~ 1.43 and 1.57-fold at −100 mV and + 100 mV, respectively (Figure 6C,D). In the presence of phenylephrine, a reduction in bath [Na]o from 140 to 40 mM shifted the Erev from 0.5 ± 0.5 to −23.2 ± 1.6 mV in Pkd2fl/fl myocytes (n = 5, p<0.05 versus PE/low Na+). When corrected for the liquid junction potential (+5.6 mV) caused by the change in bath [Na]o, this Erev is −28.8 ± 1.6 mV, which is similar to calculated ENa (−32.8 mV) under these conditions. Reducing bath Na+ also reduced inward current and increased outward current. The subsequent addition of Gd3+ reduced current density to ~ 44.9% and 20.7% of that in phenylephrine/40 mM Na+at −100 and + 100 mV, respectively (n = 5, p<0.05, Figure 6C). In contrast to effects in Pkd2fl/fl myocytes, phenylephrine did not alter ICat in Pkd2 smKO myocytes (Figure 6C,D). In further contrast to the differential effects of phenylephrine, swelling activated similar amplitude ICat in mesenteric artery myocytes of Pkd2fl/fl and Pkd2 smKO mice (Figure 6—figure supplement 1). These data indicate that phenylephrine activates PKD2 channels, leading to a INa in mesenteric artery myocytes, whereas cell swelling does not activate PKD2 channels in mesenteric artery myocytes.
 
-## PKD2 channel knockout in arterial myocytes attenuates hypertension
+### PKD2 channel knockout in arterial myocytes attenuates hypertension
 
 We tested the hypothesis that arterial myocyte PKD2 channels are associated with the increase in blood pressure during hypertension. Angiotensin II-infusion is a well-established method to produce a stable elevation in mean arterial pressure. Blood pressure was measured following implantation of subcutaneous osmotic minipumps that infused angiotensin II or saline in Pkd2 smKO and Pkd2fl/fl mice. Angiotensin II steadily increased MAP to a plateau of ~155.6 mmHg in Pkd2fl/fl mice and to ~ 134.6 mmHg in Pkd2 smKO mice (Figure 7A). The angiotensin II-induced increase in MAP (ΔMAP) was ~ 25.6% smaller in Pkd2 smKO than Pkd2fl/fl mice (Figure 7A). Saline infusion did not alter blood pressure in either Pkd2 smKO or Pkd2fl/fl mice. These data indicate that myocyte PKD2 channel knockout reduces both the absolute systemic blood pressure and the increase in blood pressure during hypertension.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig7-v2.jpg)
 
-**Figure 7.:** Pkd2 smKO mice.(A) Telemetric blood pressure time course showing the development of angiotensin II-induced hypertension in Pkd2 (n = 6) and fl/flPkd2 smKO mice (n = 9). Osmotic minipumps containing either saline or angiotensin II were implanted one day prior to day 0. * indicates p<0.05 versus Pkd2 in the same condition. (fl/flB) Western blots illustrating total PKD2 protein in mesenteric and hindlimb arteries of saline-and angiotensin II-treated control mice. (C) Mean total PKD2 protein in mesenteric and hindlimb arteries of angiotensin II-treated mice compared to saline control (n = 8 for each group). * indicates p<0.05 versus saline in the same arterial preparation. (D) Western blots showing surface and intracellular PKD2 protein in arteries of saline-and angiotensin II-treated mice. (E) Mean surface PKD2 protein in mesenteric and hindlimb arteries of angiotensin II-treated mice compared to saline control (n = 8 for each group). * indicates p<0.05 versus saline in the same arterial preparation. (F) Mean data illustrating the percentage of total PKD2 located at the surface in mesenteric and hindlimb arteries of saline-and angiotensin II-treated mice (n = 4 for each group).
+**Figure 7.:** (A) Telemetric blood pressure time course showing the development of angiotensin II-induced hypertension in Pkd2fl/fl (n = 6) and Pkd2 smKO mice (n = 9). Osmotic minipumps containing either saline or angiotensin II were implanted one day prior to day 0. * indicates p<0.05 versus Pkd2fl/fl in the same condition. (B) Western blots illustrating total PKD2 protein in mesenteric and hindlimb arteries of saline-and angiotensin II-treated control mice. (C) Mean total PKD2 protein in mesenteric and hindlimb arteries of angiotensin II-treated mice compared to saline control (n = 8 for each group). * indicates p<0.05 versus saline in the same arterial preparation. (D) Western blots showing surface and intracellular PKD2 protein in arteries of saline-and angiotensin II-treated mice. (E) Mean surface PKD2 protein in mesenteric and hindlimb arteries of angiotensin II-treated mice compared to saline control (n = 8 for each group). * indicates p<0.05 versus saline in the same arterial preparation. (F) Mean data illustrating the percentage of total PKD2 located at the surface in mesenteric and hindlimb arteries of saline-and angiotensin II-treated mice (n = 4 for each group).
 
-## Hypertension is associated with an upregulation of both total and surface PKD2 proteins in systemic arteries
+### Hypertension is associated with an upregulation of both total and surface PKD2 proteins in systemic arteries
 
 To investigate mechanisms by which arterial myocyte PKD2 channels may be associated with an increase in blood pressure during hypertension, total and surface proteins were measured in arteries. PKD2 total protein in mesenteric and hindlimb arteries of angiotensin II-induced hypertensive mice were ~ 149.2% and 143.4%, respectively, of those in normotensive mice (Figure 7B,C). Arterial biotinylation revealed that surface PKD2 protein in mesenteric and hindlimb arteries of hypertensive mice were also ~ 150.3% and 145.9% of those in controls (Figure 7D,E). In contrast, cellular distribution of PKD2 was similar in mesenteric and hindlimb arteries of normotensive and hypertensive mice, with ~ 85% of protein located in the plasma membrane (Figure 7F). These data indicate that during hypertension, an increase in total PKD2 protein leads to an increase in the abundance of surface PKD2 channels.
 
-## Myocyte-specific PKD2 channel knockout induces vasodilation and prevents arterial remodeling during hypertension
+### Myocyte-specific PKD2 channel knockout induces vasodilation and prevents arterial remodeling during hypertension
 
 To test the hypothesis that the reduction in systemic blood pressure in Pkd2 smKO mice during hypertension was due to vasodilation, the contractility of pressurized (80 mmHg) mesenteric arteries was measured using myography. Phenylephrine-induced vasoconstrictions in angiotensin II-treated Pkd2 smKO mouse arteries were between ~67.6% and 71.1% of those in Pkd2fl/fl arteries (Figure 8A). In contrast, myogenic tone was similar in arteries of angiotensin II-treated Pkd2 smKO and Pkd2fl/fl mice (Figure 8B). These results indicate that knockout of arterial myocyte PKD2 channels attenuates phenylephrine-induced vasoconstriction during hypertension. These data also suggest that hypertension does not promote the emergence of a mechanism by which PKD2 channels contribute to the myogenic response in mesenteric arteries.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/42628/elife-42628-fig8-v2.jpg)
 
-**Figure 8.:** (A) Mean phenylephrine-induced vasoconstriction in pressurized (80 mmHg) mesenteric arteries from angiotensin II-treated mice (Pkd2, n = 7–8; fl/flPkd2 smKO, n = 8).
+**Figure 8.:** (A) Mean phenylephrine-induced vasoconstriction in pressurized (80 mmHg) mesenteric arteries from angiotensin II-treated mice (Pkd2fl/fl, n = 7–8; Pkd2 smKO, n = 8).
 
 Hypertension is associated with inward remodeling of vasculature (Schiffrin, 2012). To investigate the involvement of myocyte PKD2 channels in pathological remodeling, arterial sections from angiotensin II-treated Pkd2 smKO and Pkd2fl/fl mice were imaged and analyzed. In saline-treated Pkd2 smKO and Pkd2fl/fl mice, the wall-to-lumen ratio of mesenteric arteries was similar (Figure 8C,D). Angiotensin II infusion increased the artery wall-to-lumen ratio ~2.9 fold in Pkd2fl/fl mice, but only 1.3-fold in Pkd2 smKO mice, or ~89.6% less (Figure 8C,D). These data suggest that PKD2 knockout in myocytes attenuates arterial remodeling during hypertension.
 
@@ -124,78 +256,228 @@ In summary, we show that arterial myocyte PKD2 channels are activated by distinc
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pkd2fl/fl</td>
+      <td>John Hopkins PKD Core</td>
+      <td>PMID 20862291</td>
+      <td>Mice with Pkd2 gene flanked by loxP regions</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Myh11-cre/ERT2</td>
+      <td>Jackson Laboratories. PMID 18084302</td>
+      <td>Stock # 019079 RRID:IMSR_JAX:019079</td>
+      <td>Mice with tamoxifen-inducible Cre recombinase that is expressed under the smooth muscle myosin heavy polipeptide 11 (Myh11) promoter.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Pkd2fl/fl:Myh11-cre/ERT2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mouse line created in-house by mating Pkd2fl/fl with Myh11-cre/ERT2. Mice with inducible smooth muscle-specific deletion of PKD2.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti PKD2 (rabbit polyclonal)</td>
+      <td>Baltimore PKD Core</td>
+      <td>Rabbit mAB 3374 CT-14/4,</td>
+      <td>IF 1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti PKD2 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. # sc-100415 RRID:AB_1127284</td>
+      <td>WB 1:100 dilution, IF 1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti PKD1 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. # sc-130554 RRID:AB_2163355</td>
+      <td>WB 1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti CaV1.2 (mouse monoclonal)</td>
+      <td>UC Davis/NIH NeuroMab</td>
+      <td>Cat# 73–053. RRID:AB_10672290</td>
+      <td>WB 1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti ANO1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. # ab64085 RRID:AB_1143505</td>
+      <td>WB 1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti TRPC6 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. # ab62461 RRID:AB_956401</td>
+      <td>WB 1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti TRPM4 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. # ab106200 RRID:AB_10865760</td>
+      <td>WB 1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti Actin (mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. # MAB1501 RRID:AB_2223041</td>
+      <td>WB 1:5000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555 secondary antibodies (anti rabbit and anti mouse)</td>
+      <td>Thermofisher</td>
+      <td>Cat. # A-21429 (RRID:AB_141761) and # A-31570 (RRID:AB_2536180)</td>
+      <td>IF 1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nuclear staining (DAPI)</td>
+      <td>Thermofisher</td>
+      <td>Cat. # 3571 RRID:AB_2307445</td>
+      <td>IF 1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-Link Sulfo-NHS -LC-LC-Biotin</td>
+      <td>Thermofisher</td>
+      <td>Cat. # 21338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-Link Maleimide-PEG2-Biotin</td>
+      <td>Thermofisher</td>
+      <td>Cat. # 21901BID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Angiotensin II ELISA kit</td>
+      <td>Elabscience</td>
+      <td>Cat. # E-EL-M2612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Atrial Natriuretic Peptide ELISA kit</td>
+      <td>Elabscience</td>
+      <td>Cat. # E-EL-M0166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Aldosterone ELISA kit</td>
+      <td>Mybiosource</td>
+      <td>Cat. # MBS775626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Angiotensin II</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. # A9525</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the Animal Care and Use Committee of the University of Tennessee. Pkd2fl/fl mice with loxP sites flanking exons 11–13 of the Pkd2 gene were obtained from the John Hopkins PKD Core. Pkd2fl/fl mice were crossed with tamoxifen-inducible smooth muscle-specific Cre mice (Myh11-cre/ERT2, Jackson Labs, ref. (Zhang et al., 2009)) to produce Pkd2fl/fl:Myh11-cre/ERT2 mice. Male Pkd2fl/fl:Myh11-cre/ERT2 or Pkd2fl/fl mice (6–10 weeks of age) were injected with tamoxifen (1 mg/ml, i.p.) once per day for 5 days and studied no earlier than 17 days after the last injection. C57BL/6J mice (12 weeks old) were purchased from Jackson Laboratories. Angiotensin II (1.5 ng/g/min) and saline (0.9 NaCl) were infused in mice using subcutaneous osmotic minipumps (Alzet).
 
-## Tissue preparation and myocyte isolation
+### Tissue preparation and myocyte isolation
 
 Mice were euthanized with isofluorane (1.5%) followed by decapitation. First- to fifth-order mesenteric and hindlimb (saphenous, popilital and gastrocnemius) arteries were removed and placed into ice-cold physiological saline solution (PSS) that contained (in mM): 112 NaCl, 6 KCl, 24 NaHCO3, 1.8 CaCl2, 1.2 MgSO4, 1.2 KH2PO4 and 10 glucose, gassed with 21% O2, 5% CO2 and 74% N2 to pH 7.4. Arteries were cleaned of adventitial tissue and myocytes dissociated in isolation solution containing (in mM): 55 NaCl, 80 sodium glutamate, 5.6 KCl, 2 MgCl2, 10 HEPES and 10 glucose (pH 7.4, NaOH) using enzymes, as previously described (Qian et al., 1997).
 
-## Genomic PCR
+### Genomic PCR
 
 Genomic DNA was isolated from mesenteric and hindlimb arteries using a Purelink Genomic DNA kit (ThermoFisher Scientific). Reaction conditions used are outlined in the Baltimore PKD core center genotyping protocol (http://baltimorepkdcenter.org/mouse/PCR%20Protocol%20for%20Genotyping%20PKD2KO%20and%20PKD2%5Eneo.pdf). Genotyping was performed using a 3-primer strategy, with primers a (5’-CCTTTCCTCTGGTTCTGGGGAG), b (5’-GTTGATGCTTAGCAGATGATGGC) and c (5’-CTGACAGGCACCTACAGAACAGTG) used to identify floxed and deleted alleles.
 
-## RT-PCR
+### RT-PCR
 
 Fresh, dissociated mesenteric artery myocytes were manually collected using an enlarged patch pipette under a microscope. Total RNA was extracted from ~ 500 myocytes using the Absolutely RNA Nanoprep kit (Agilent Technologies, Santa Clara, CA, USA). First-strand cDNA was synthesized from 1 to 5 ng RNA using SuperScript IV (Invitrogen, Life Technologies). PCR was performed on first-strand cDNA using the following conditions: an initial denaturation at 94°C for 2 min, followed by 40 cycles of denaturation at 94°C for 30 s, annealing at 56°C for 30 s, and extension at 72°C for 1 min. PCR products were separated on 2% agarose–TEA gels. Primers were used to amplify transcripts of PKD2, aquaporin 4, myosin heavy chain 11, platelet-endothelial cell adhesion molecule 1 (PECAM-1) and actin (Supplementary file 1). The PKD2 forward primer spanned the junction of exons 9 and 10 and the reverse primer annealed to exon 13.
 
-## Western blotting
+### Western blotting
 
 Proteins were separated on 7.5% SDS-polyacrylamide gels and blotted onto PVDF membranes. Membranes were blocked with 5% milk and incubated with the following primary antibodies: CaV1.2 (Neuromab), PKD1 and PKD2 (Santa Cruz, sc-100415), ANO1, TRPC6 and TRPM4 (Abcam) and actin (MilliporeSigma) overnight at 4°C. Membranes were washed and incubated with horseradish peroxidase-conjugated secondary antibodies at room temperature. Protein bands were imaged using an Amersham Imager 600 gel imaging system (GE Healthcare) and quantified using ImageJ software.
 
-## En-face arterial immunofluorescence
+### En-face arterial immunofluorescence
 
 Arteries were cut longitudinally and fixed with 4% paraformaldehyde in PBS for 1 hr. Following a wash in PBS, arteries were permeabilized with 0.2% Triton X-100, blocked with 5% goat serum and incubated overnight with PKD2 primary antibody (Rabbit mAB 3374 CT-14/4: Baltimore PKD Center) at 4°C. Arteries were then incubated with Alexa Fluor 555 rabbit anti-mouse secondary antibody (1:400; Molecular Probes) and 4’,6-diamidino-2-phenylindole, dihydrochloride (DAPI) (1:1000; Thermo Scientific) for 1 hr at room temperature. Segments were washed with PBS, oriented on slides with the endothelial layer downwards and mounted in 80% glycerol solution. DAPI and Alexa 555 were excited at 350 nm and 555 nm with emission collected at ≤437 nm and ≥555 nm, respectively.
 
-## Isolated arterial myocyte immunofluorescence
+### Isolated arterial myocyte immunofluorescence
 
 Myocytes were plated onto poly-L-lysine-coated coverslips, fixed with 3.7% paraformaldehyde in PBS and permeabilized with 0.1% Triton X-100. After blocking with 5% BSA, cells were incubated with mouse monoclonal anti-PKD2 antibody (Santa Cruz) overnight at 4°C. Slides were then washed and incubated with Alexa Fluor 555 rabbit anti-mouse secondary antibody (Molecular Probes). Secondary antibodies were washed and coverslips mounted onto slides. Images were acquired using a Zeiss 710 (Carl Zeiss) laser-scanning confocal microscope and 40x and 63x oil immersion objectives.
 
-## Kidney histology
+### Kidney histology
 
 Kidney sections were stained with H and E and examined by Probetex, Inc (San Antonio, Texas). Briefly, tubules, glomeruli and vasculature were examined for frequency or homogeneity of pathologic abnormalities. These included characteristics of hypercellularity, hypocellularity, necrosis, apoptosis, matrix accumulation, inflammation, fibrosis and protein droplets. The size and thickness of the cortex, medulla, papilla, glomeruli, tubules and vasculature were also examined.
 
-## Telemetric blood pressure measurements
+### Telemetric blood pressure measurements
 
 Radiotelemetric transmitters (PA-C10, Data Sciences International) were implanted subcutaneously into anesthetized mice, with the sensing electrode placed in the aorta via the left carotid artery. Seven days later blood pressures were measured using a PhysioTel Digital telemetry platform (Data Sciences International). Dataquest A.R.T. software was used to acquire and analyze data.
 
-## Echocardiography
+### Echocardiography
 
 Mice were anesthetized with isofluorane. Ultrasound gel was placed on a hairless area of the chest before and echocardiography performed using a Visual Sonics Vevo 2100 system. Anesthetic depth, heart rate and body temperature were monitored throughout the procedure.
 
-## Arterial histology
+### Arterial histology
 
 Arteries were fixed with paraformaldehyde and embedded in paraffin. 5 µm thick sections were cut using a microtome and mounted on slides. Sections were de-paraffinized, blocked in BSA and incubated with H and E. Images were acquired using a transmitted light microscope (Nikon Optiphot-2) and measurements made using Stereo Investigator software (MicrobrightField, Inc.). Wall-to-lumen ratios were calculated as wall thickness/lumen diameter, where the wall (tunica media) thickness and lumen diameter of each section was the averages of four and two equidistant measurements, respectively.
 
-## Blood and urine analysis
+### Blood and urine analysis
 
 Retro-orbital blood was drawn from isofluorane-anesthetized mice using a Microvette Capilliary Blood Collection System (Kent Scientific Corporation). Plasma was extracted and angiotensin II (Elabscience), aldosterone (Mybiosource) and atrial natriuretic peptide (Elabscience) concentrations measured using commercially available ELISA kits and an EL800 plate reader (BioTeK). Mice were housed in individual metabolic cages for 72 hr and urine collected for the final 24 hr. Plasma and urine electrolyte concentrations were measured using the MMPC Core at Yale University.
 
-## Pressurized artery myography
+### Pressurized artery myography
 
 Experiments were performed using isolated mouse third-, fourth and fifth-order mesenteric arteries and first-order gastrocnemius arteries using PSS gassed with 21% O2/5% CO2/74% N2 (pH 7.4). Arterial segments 1–2 mm in length were cannulated at each end in a perfusion chamber (Living Systems Instrumentation) continuously perfused with PSS and maintained at 37°C. Intravascular pressure was altered using an attached reservoir and monitored using a pressure transducer. Luminal flow was absent during experiments. Arterial diameter was measured at 1 Hz using a CCD camera attached to a Nikon TS100-F microscope and the automatic edge-detection function of IonWizard software (Ionoptix). Myogenic tone was calculated as: 100 x (1-Dactive/Dpassive) where Dactive is active arterial diameter, and Dpassive is the diameter determined in the presence of Ca2+-free PSS supplemented with 5 mM EGTA).
 
-## Perfused hindlimb pressure measurements
+### Perfused hindlimb pressure measurements
 
 Isolated hindlimbs were inserted into a chamber containing gassed PSS (21% O2/5% CO2/74% N2) that was placed on a heating pad to maintain temperature at 37°C. The femoral artery was cannulated with a similar diameter glass pipette and perfused with gassed PSS at 37°C using a peristaltic pump. Perfusion pressure was measured using a pressure transducer connected to the inflow. The flow rate was increased stepwise from 0 to 2.5 mL/min in 0.25 mL/min steps to generate a response curve. Values were corrected by subtracting the pressure produced by the pipette alone at each flow rate. Prior to measuring responses to phenylephrine, flow rate was adjusted to maintain a constant perfusion pressure of 80 mmHg. Data were recorded and analyzed using IonWizard software (Ionoptix).
 
-## Wire myography
+### Wire myography
 
 Mesenteric artery segments (1 st and 2nd order, 2 mm in length) were mounted on tungsten wires in a multi-channel myography system (Danish Myo Technology). Chambers contained PSS that was continuously gassed with 21% O2/5% CO2/74% N2 (pH 7.4). Arterial rings were subjected to a resting tension of 10 mN and allowed to equilibrate prior to experimentation. Responses were measured to increasing concentrations of phenylephrine or 60 mM K+. Data were acquired and analyzed using LabChart software (ADInstruments).
 
-## Pressurized artery membrane potential measurements
+### Pressurized artery membrane potential measurements
 
 Membrane potential was measured by inserting sharp glass microelectrodes (50–90 mΩ) filled with 3 M KCl into the adventitial side of pressurized mesenteric or hindlimb arteries. Membrane potential was recorded using a WPI FD223a amplifier and digitized using a MiniDigi 1A USB interface, pClamp 9.2 software (Axon Instruments) and a personal computer. Criteria for successful intracellular impalements were: (1) a sharp negative deflection in potential on insertion; (2) stable voltage for at least 1 min after entry; (3) a sharp positive voltage deflection on exit from the recorded cell and (4) a < 10% change in tip resistance after the impalement.
 
-## Patch-clamp electrophysiology
+### Patch-clamp electrophysiology
 
 Isolated arterial myocytes were allowed to adhere to a glass coverslip in a recording chamber. The conventional whole-cell configuration was used to measure non-selective cation currents (Icat) by applying voltage ramps (0.13 mV/ms) between −100 mV and +100 mV from a holding potential of −40 mV. For cell swelling experiments, the pipette solution contained (in mM): Na+ aspartate 115, mannitol 50, HEPES 10, glucose 10, EGTA 1, NaGTP 0.2, with free Mg2+ and Ca2+ of 1 mM and 200 nM, respectively (pH 7.2, NaOH). Isotonic (300 mOsm) bath solution contained (in mM): Na+ aspartate 115, mannitol 50, glucose 10, HEPES 10, CaCl2 2, MgCl2 1 (pH 7.4, NaOH). Hypotonic (250 mOsm) bath solution was the same formulation as isotonic bath solution with the exclusion of mannitol (pH 7.4, NaOH). For experiments that measured ICat regulation by phenylephrine, the bath solution contained (in mM): 140 NaCl, 10 glucose, 10 HEPES, 1 MgCl2, and pH was adjusted to 7.4 with NaOH. Pipette solution contained: 140 NaCl, 10 HEPES, 10 Glucose, 5 EGTA, 1 MgATP, 0.2 NaGTP, and pH was adjusted to 7.2 with NaOH. Total MgCl2 and total CaCl2 were adjusted to give free Mg2+ concentrations of 1 mM and free Ca2+ of 200 nM. Free Mg2+ and Ca2+ were calculated using WebmaxC Standard (http://www.stanford.edu/~cpatton/webmaxcS.htm). Na+ concentration was reduced in bath solutions through equimolar replacement with N-methyl-D-glucamine. Liquid junction potentials that occurred due to a reduction in bath Na+ concentration were measured experimentally and used to correct reversal potential values measured in myocytes during voltage-clamp experiments. Briefly, liquid junction potentials were determined by measuring the immediate shift in voltage that occurred in a patch-clamp pipette containing pipette solution when bath solution containing normal Na+ concentration was replaced with one containing low Na+. Currents were recorded using an Axopatch 200B amplifier and Clampex 10.4 (Molecular Devices), digitized at 5 kHz and filtered at 1 kHz. Offline analysis was performed using Clampfit 10.4.
 
-## Arterial biotinylation
+### Arterial biotinylation
 
 Procedures used were similar to those previously described (Tsiokas et al., 1997). Briefly, arteries were biotinylated with EZ-Link Sulfo-NHS-LC-LC-Biotin and EZ-Link Maleimide-PEG2-Biotin. Unbound biotin was quenched with glycine-PBS, washed with PBS and then homogenized in radioimmunoprecipitation assay (RIPA) buffer. Protein concentration was normalized and biotinylated surface protein was captured by incubating cell lysates with avidin beads (Pierce) at 4°C. Proteins present in biotinylated and non-biotinylated samples were identified using Western blotting.
 
-## Statistical analysis
+### Statistical analysis
 
 OriginLab and GraphPad InStat software were used for statistical analyses. Values are expressed as mean ± SEM. Student t-test was used for comparing paired and unpaired data from two populations and ANOVA with Student-Newman-Keuls post hoc test used for multiple group comparisons. p<0.05 was considered significant. Power analysis was performed to verify that the sample size gave a value of > 0.8 if P was > 0.05.

@@ -43,42 +43,170 @@ Renal macrophages are found in an intricate network surrounding the renal tubula
 
 Two complementary strategies were used to fate-map CSF1R+, and CX3CR1+ yolk-sac-derived macrophages (Figure 1 and Figure 1—figure supplement 1). Erythromyeloid progenitors (EMP) give rise to these populations, and the yolk-sac macrophages appear in the yolk-sac around E8.5. Subsequently, from E9.0 until E14.5, they proliferate, migrate, and colonize the embryo through the vascular system (Stremmel et al., 2018; Munro et al., 2019). To lineage-label these cells, we exposed Csf1r-CreERt; Rosa26tdTomato and Cx3cr1CreERt; Rosa26tdTomato embryos to 4-hydroxytamoxifen (4-OHT) at E8.5 and E9.5, respectively (Figure 1A and Figure 1—figure supplement 1A), (Mass, 2018). This efficiently and irreversibly labels yolk-sac-derived macrophages with the tdTomato reporter. Importantly, the approach does not label fetal monocytes or HSCs (Gomez Perdiguero et al., 2015; Yahara et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fate-mapping strategies of CX3CR1+ yolk-sac macrophages. 4-hydroxytamoxifen (4-OHT) was injected once into pregnant dams at 9.5 dpc and offspring analyzed at the indicated times (n = 4–6 for P0 to 6-month-old; n = 2 for 12-month-old). Yolk-sac macrophages and their progeny are irreversibly tagged with tdTomato. (B) Distribution of CX3CR1-lineage cells in postnatal kidneys. Arrows: CX3CR1-lineage cells. (C) Percentage of tdTomato+ to F4/80+ cells. Data are represented as means ± S.D. ***, p<0.001; ****, p<0.0001; n.s., not significant. (D) Confocal images of F4/80 and CD64 staining in aged kidneys (six mo) with CX3CR1-lineage tracing (n = 3). Scale bars: 200 μm in B; 20 μm in D.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fate-mapping strategies of CSF1R+ yolk-sac macrophages. 4-hydroxytamoxifen (4-OHT) was injected once into pregnant dams at 8.5 dpc and offspring analyzed at the indicated times (n = 4–6). Yolk-sac macrophages and their progeny are irreversibly tagged with tdTomato. (B) Distribution of CSF1R-lineage cells in postnatal kidneys (n = 4). Arrows: CSF1R-lineage cells. Inset: higher magnification of dotted box. (C) Confocal images of F4/80 staining with CSF1R-lineage tracing (n = 3). Arrowheads: F4/80+CSFIR-lineage cells. Scale bars: 200 μm in B; and in 20 μm in C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cx3cr1CreERt; Rosa26tdTomato/wt mice were used to determine tdTomato reporter activity in the absence of 4-OHT treatment. (A) While we observed a few tdTomato-expressing cells in the brain, there were no tdTomato-positive cells in the liver and kidney at P3 without 4-OHT treatment. Scale bars: 100 μm. (B) Cx3cr1CreERt; Rosa26wt/wt mice from the same litter were used as a negative control. (C) There were no tdTomato-positive cells in the kidney of 2-month-old Cx3cr1CreERt; Rosa26tdTomato/wt mice without 4-OHT treatment. Arrowheads: tdTomato-expressing cells. Scale bars: 100 μm in A and B; and 50 μm in C.
+
 At postnatal day 0 (P0), we detected a small number of tdTomato+ cells in kidneys from both lines (Figure 1 and Figure 1—figure supplement 1). A previous fate-mapping strategy that labels all HSC-derived cells indicated that 40% to 50% of tissue-resident macrophages in the young adult kidney originate from HSC; the remainder was inferred to derive from yolk-sac hematopoiesis (Schulz et al., 2012). Consistent with this inference, we found CX3CR1-lineage labeled cells in kidneys from birth, with numbers increasing progressively over time (2 weeks, 2 months and 6 months; Figure 1, B and C). Surprisingly, we observed an unexpected large increase in the proportion of tdTomato-positive cells relative to total F4/80-positive cells at 6 months, especially in the cortex and outer medulla, despite no significant change in the number of F4/80-positive cells per section. This increase was maintained up to 1 year (Figure 1B). The tdTomato-labeled cells were positive for mature macrophage markers, F4/80 and CD64 (Figure 1D), (Viehmann et al., 2018; Brähler et al., 2018). By contrast, we observed only a few F4/80-positive CSF1R-lineage cells inside the kidneys (Figure 1—figure supplement 1, B and C), as reported previously (Schulz et al., 2012). As CSF1R+ and CX3CR1+ yolk-sac macrophages represent a developmental sequence of tissue-resident macrophages derived from EMP, the observed low labeling of CSF1R-lineage cells might be attributable to differences in labeling efficacies and migration kinetics of progenitors.
 
 To further delineate the chronological shift of renal macrophages, we examined the HSC contribution to renal macrophages using the Flt3-Cre; Rosa26tdTomato mouse line (Mass, 2018; Yahara et al., 2020; Benz et al., 2008). This mouse line irreversibly labels fetal and adult HSC-derived multipotent hematopoietic progenitors and their progeny with tdTomato expression. Consistent with the increase of yolk-sac-derived renal macrophages with age, we observed a decreased number of F4/80+ tdTomato+ cells in the kidneys from 6-month-old mice compared to those from 2-month-old mice (Figure 2, A and B). These data demonstrate that EMP-derived CX3CR1+ yolk-sac macrophages and their descendants are major contributors to the resident renal macrophage population in aged kidneys.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig2-v2.jpg)
 
-**Figure 2.:** + cells in the kidneys.The Flt3-Cre; Rosa26 mouse line was used to examine the contribution of HSC-derived tissue-resident macrophages. (tdTomatoA) Distribution of F4/80+ Flt3-lineage cells in postnatal kidneys. The kidneys were analyzed at the indicated times (n = 4–5). HSC-derived cells and their progeny are irreversibly tagged with tdTomato. (B) Percentage of tdTomato+ F4/80+ to total F4/80+ cells. Note that the number of tdTomato+ F4/80+ cells decreases with age. Data are represented as means ± S.D. *, p<0.05; **, p<0.01.Figure 2—source data 1.
+**Figure 2.:** The Flt3-Cre; Rosa26tdTomato mouse line was used to examine the contribution of HSC-derived tissue-resident macrophages. (A) Distribution of F4/80+ Flt3-lineage cells in postnatal kidneys. The kidneys were analyzed at the indicated times (n = 4–5). HSC-derived cells and their progeny are irreversibly tagged with tdTomato. (B) Percentage of tdTomato+ F4/80+ to total F4/80+ cells. Note that the number of tdTomato+ F4/80+ cells decreases with age. Data are represented as means ± S.D. *, p<0.05; **, p<0.01.
 
 Our findings raise the question of the underlying mechanisms responsible for the chronological shift of macrophage composition. We first tested whether the proliferation of yolk-sac-derived renal macrophages can potentially contribute to their population dynamics. CX3CR1-lineage-labeled cells that express the proliferation marker, Ki67, are present in kidneys from birth to 6 months of age, indicating that yolk-sac-derived macrophages retain the potential to expand in numbers through proliferation (Figure 3, A and B). We further found that higher percentages of CX3CR1-lineage-labeled F4/80+ cells express Ki67 in comparison to tdTomato-negative F4/80+ cells at 2 weeks and 2 months of age, suggesting that CX3CR1-lineage cells have a higher proliferating capacity (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of fate-mapping strategy. (B and C) CX3CR1-lineage macrophages proliferate in neonatal and aged kidneys. Cx3cr1 mice were treated with 4-hydroxytamoxifen (4-OHT) at E9.5 (n = 3–5). Arrowheads: Ki67CreERt; Rosa26tdTomato+ CX3CR1-lineage cells. Percentage of Ki67+ proliferating cells are shown in C. Note that a higher percentage of CX3CR1-lineage F4/80+ cells (tdTomato+) are Ki67-positive compared to tdTomato– F4/80+ cells. Data are represented as means ± S.D. *, p<0.05; **, p<0.01; n.s., not significant. Scale bars: 10 μm.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic of fate-mapping strategy. (B and C) CX3CR1-lineage macrophages proliferate in neonatal and aged kidneys. Cx3cr1CreERt; Rosa26tdTomato mice were treated with 4-hydroxytamoxifen (4-OHT) at E9.5 (n = 3–5). Arrowheads: Ki67+ CX3CR1-lineage cells. Percentage of Ki67+ proliferating cells are shown in C. Note that a higher percentage of CX3CR1-lineage F4/80+ cells (tdTomato+) are Ki67-positive compared to tdTomato– F4/80+ cells. Data are represented as means ± S.D. *, p<0.05; **, p<0.01; n.s., not significant. Scale bars: 10 μm.
 
 Another possibility is recruitment of yolk-sac-derived macrophages from extra-renal reservoirs through the circulation. To test this hypothesis, we generated a parabiotic union between young Cx3cr1GFP/+ and Cx3cr1CreERt; Rosa26tdTomato mice that had been exposed to 4-OHT in utero at E9.5 (Figure 4A). Effective blood sharing between the pair was confirmed by detecting Cx3cr1-promoter-driven GFP expression in bone marrow cells derived from both mice (data not shown). When analyzed at 5 weeks after parabiosis, we found a few tdTomato+ cells in the extravascular, interstitial area of the cortex and medulla of the Cx3cr1GFP parabiont kidneys (0.105 ± 0.04% of total F4/80+ cells; Figure 4, B and C). We also found that a significantly higher percentage of tdTomato-positive cells expresses Ki67 in the kidneys of Cx3cr1GFP mice compared to the tdTomato-positive cells in the kidneys of Cx3cr1CreERt; Rosa26tdTomato mice (Ki67+tdTomato+ relative to tdTomato+; 28.55 ± 8.23% vs. 3.16 ± 0.74%) (Figure 4, D and E). While further investigation is required, these results suggest that the tdTomato-positive circulating progenitors may have a significant proliferative capacity and can slowly contribute to the adult renal macrophage pool. Currently, the origin of the circulating CX3CR1-lineage cells is not known but we speculate that one site is the spleen, which we recently identified as a reservoir of CX3CR1+ yolk-sac macrophages (Yahara et al., 2020).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of parabiotic experiments. (B and C) Localization of tdTomato+ CX3CR1-lineage cells in Cx3cr1GFP kidneys. The tdTomato-positive cells were lineage-labeled in Cx3cr1CreERt; Rosa26tdTomato mice in utero at E9.5. They migrated into the parabiont Cx3cr1GFP kidneys from circulation. Note that tdTomato+ cells were detected in extravascular interstitium (n = 4 per group). Endomucin; an endothelial cell marker. *, lumen of capillaries. Arrowheads, CX3CR1-lineage cells from circulation. (D and E) Circulation-derived CX3CR1-lineage cells proliferate in adult kidneys. Arrowheads, CX3CR1-lineage cells from circulation. GFP fluorescence was lost during the antigen retrieval process to detect Ki67. Percentages of Ki67+tdTomato+ cells relative to tdTomato+ cells in the kidneys of indicated genotype are shown in E (n = 4 per group). Note that tdTomato+ cells in Cx3cr1GFP kidneys are derived from circulation. Data are represented as means ± S.D. *, p<0.05. Scale bars: 10 μm in B and C; and in 20 μm in D. Legends for the Supplementary Figures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51756/elife-51756-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Cx3cr1CreERt; Rosa26tdTomato/wt mice were used to determine tdTomato reporter activity in the absence of 4-OHT treatment. Note that 4-OH tamoxifen treatment at E9.5 effectively identifies CX3CR1-lineage cells (red) in the spleen of all animals received the drug (N = 7 out of 7 mice tested). Scale bars: 50 μm.
 
 In conclusion, we have shown here that the proportion of yolk-sac-derived, CX3CR1-positive, macrophages increases significantly in the kidney with age, with recruitment from the circulation and proliferation being two possible mechanisms. Our findings provide a foundation for future studies to investigate the functional heterogeneity of ontogenically distinct renal macrophages in younger versus aged kidneys. These future studies may provide novel insight into age-related susceptibility of the kidney to acute and chronic diseases.
 
 ## Materials and methods
 
-## Study approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Cx3cr1CreERt</td>
+      <td>The Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:020940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Csf1r-CreERt (aka, Csf1r-Mer-iCre-Mer)</td>
+      <td>The Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:019098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Flt3-Cre</td>
+      <td></td>
+      <td>RRID:IMSR_EM:11790</td>
+      <td>Flt3-Cre mice were bred into the C57BL6/J background for six generations by the Shinohara lab.</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Rosa26tdTomato</td>
+      <td>The Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Cx3cr1GFP</td>
+      <td>The Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:005582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 (Rat monoclonal)</td>
+      <td>Bio-Rad (MCA497)</td>
+      <td>RRID:AB_2098196</td>
+      <td>Clone C1:A3-1 IF: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD64 (Rat monoclonal)</td>
+      <td>Bio-Rad (MCA5997)</td>
+      <td>RRID:AB_2687456</td>
+      <td>Clone AT152-9 IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Endomucin (Rat monoclonal)</td>
+      <td>Abcam (ab106100)</td>
+      <td>RRID:AB_10859306</td>
+      <td>Clone V.7C7.1 IF: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rat monoclonal)</td>
+      <td>eBioscience (14-5698-82)</td>
+      <td>RRID:AB_10854564</td>
+      <td>Clone SolA15 IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Thermo (MA5-14520)</td>
+      <td>RRID:AB_10979488</td>
+      <td>Clone SP6 IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed (Rabbit polyclonal)</td>
+      <td>Rockland (600-401-379)</td>
+      <td>RRID:AB_2209751</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH, Bethesda, MD (Version 1.52P)</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study approval
 
 All experiments were performed according to IACUC-approved protocols (A051-18-02 and A196-16-0).
 
-## Animals
+### Animals
 
 The mouse lines were from the Jackson Laboratory (Stock No: 019098; 020940; 007914; and 005582). The Flt3-Cre mouse line was kindly provided from Dr. K Lavine (Washington University, St. Louis, MO). 75 μg/g body weight of 4-hydroxytamoxifen (4-OHT; Sigma Aldrich, St. Louis, MO) dissolved in corn oil (Sigma Aldrich) was intraperitoneally administered into pregnant dams with 37.5 μg/g body weight progesterone (Sigma Aldrich) to avoid fetal abortions. Mice without 4-OHT treatment were used for the specificity of tdTomato signals (Figure 1—figure supplement 2 and Figure 4—figure supplement 1). Animals were allocated randomly into experimental groups and analyses. To determine experimental group sizes, data from our previous study were used to estimate the required numbers.
 
-## Parabiosis surgery
+### Parabiosis surgery
 
 Parabiosis surgery was performed as previously described (Yahara et al., 2020). Briefly, a longitudinal skin incision was performed from elbow to knee joint to each mouse. The two mice were connected by suture. Parabionts were separated 5 weeks after the surgery. The mice were euthanized, and kidneys and spleen were harvested for analyses. Sham surgery was performed in the same way except for joining two animals.
 
-## Antibodies and sample processing
+### Antibodies and sample processing
 
 Primary antibodies: F4/80 (Bio-Rad, Hercules, CA; clone Cl:A3-1), CD64 (Bio-Rad; clone AT152-9), Endomucin (Abcam; Cambridge, UK; clone V.7C7.1), Ki67 (eBioscience, San Diego, CA; clone SolA15 and Thermo, Waltham, MA; clone SP6), and dsRed (Rockland, Limerick, PA; cat. #600-401-379). Fluorescent-labeled secondary antibodies were used appropriately. 7 μm cryosections were stained using standard protocols. Heat-induced antigen retrieval was performed using pH6.0 sodium citrate solution (eBioscience). Images were captured using Axio imager and 780 confocal microscopes (Zeiss, Oberkochen, Germany). More than three randomly selected areas from 3 to 5 kidneys were imaged and quantified using ImageJ.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Results are expressed as means ± SD. Unpaired t-test was used for comparing two groups. One-way ANOVA followed by Dunnett's correction was used for multiple group comparison. A P-value less than 0.05 was considered statistically significant.

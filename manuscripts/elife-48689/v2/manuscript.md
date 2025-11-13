@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.48689.001 Changes in cell proliferation define transitions from tissue growth to physiological homeostasis. In tendons, a highly organized extracellular matrix undergoes significant postnatal expansion to drive growth, but once formed, it appears to undergo little turnover. However, tendon cell activity during growth and homeostatic maintenance is less well defined. Using complementary methods of genetic H2B-GFP pulse-chase labeling and BrdU incorporation in mice, we show significant postnatal tendon cell proliferation, correlating with longitudinal Achilles tendon growth. Around day 21, there is a transition in cell turnover with a significant decline in proliferation. After this time, we find low amounts of homeostatic tendon cell proliferation from 3 to 20 months. These results demonstrate that tendons harbor significant postnatal mitotic activity, and limited, but detectable activity in adult and aged stages. It also points towards the possibility that the adult tendon harbors resident tendon progenitor populations, which would have important therapeutic implications.
+Changes in cell proliferation define transitions from tissue growth to physiological homeostasis. In tendons, a highly organized extracellular matrix undergoes significant postnatal expansion to drive growth, but once formed, it appears to undergo little turnover. However, tendon cell activity during growth and homeostatic maintenance is less well defined. Using complementary methods of genetic H2B-GFP pulse-chase labeling and BrdU incorporation in mice, we show significant postnatal tendon cell proliferation, correlating with longitudinal Achilles tendon growth. Around day 21, there is a transition in cell turnover with a significant decline in proliferation. After this time, we find low amounts of homeostatic tendon cell proliferation from 3 to 20 months. These results demonstrate that tendons harbor significant postnatal mitotic activity, and limited, but detectable activity in adult and aged stages. It also points towards the possibility that the adult tendon harbors resident tendon progenitor populations, which would have important therapeutic implications.
 
 ## Introduction
 
@@ -34,25 +34,41 @@ Therefore, we sought to examine cell turnover rates in limb tendons during growt
 
 ## Results
 
-## H2B-GFP pulse chase experiments demonstrate a shift from high to low proliferation rates in postnatal mice
+### H2B-GFP pulse chase experiments demonstrate a shift from high to low proliferation rates in postnatal mice
 
 To characterize cell proliferation in the tendon, we used the doxycycline (Dox) inducible Histone 2B-green fluorescent protein reporter mouse model (Col1a1-tetO-H2B-GFP; ROSA-rtTA, henceforth referred to as H2B-GFP), which has been used to quantify cell proliferation and identify slowly cycling label-retaining cell populations based on the stability and dilution of H2B-GFP protein in each cell (Chakkalakal et al., 2014; Foudi et al., 2009). After H2B-GFP expression is induced by Dox addition, Dox is removed for the chase period and H2B-GFP protein becomes diluted in proportion with each subsequent cell division (Figure 1A). Therefore, cells cycling more frequently will dilute H2B-GFP protein more quickly and will appear unlabeled earlier in the chase period; more slowly cycling cells will retain H2B-GFP protein longer during the chase. To verify the H2B-GFP system worked efficiently in the tendon, we pulsed mice with Dox from embryonic stage (E) 10 to birth and examined H2B-GFP expression on postnatal day (P) 0. Two photon microscopy images of histological sections of pulsed P0 Achilles (Figure 1B–B’’) tendons showed widespread expression of H2B-GFP throughout the Hoechst+ tendon nuclei. We next confirmed by flow cytometry that more than 90% of the tendon cells were positive for H2B-GFP at P0 (Figure 1D), indicating efficient labeling of all tendon cell populations examined. To ensure we were enriching for tendon cells, we only analyzed cells from dissected tendon tissues that were negative for CD45 and CD31 to remove blood and endothelial cells, respectively (Figure 1—figure supplement 1A). We also found the background level of H2B-GFP expression without the addition of Dox was very low (<1%; Figure 1—figure supplement 1B). At all stages analyzed, tendon cells were isolated from extensor, deep and superficial flexor, and Achilles tendons in the hindlimbs and extensor, deep and superficial flexor tendons in the forelimbs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig1-v2.jpg)
+
+**Figure 1.:** (A) At birth (P0), longitudinal sections of Achilles (B–B’’) tendons (n = 3 mice) show extensive H2B-GFP+ (green B, B'; white B’’) labeling of Hoechst+ nuclei (blue, B, B’). SHG is shown in white (B, C). Histogram showing that more than 95% of the cells are H2B-GFP+ at P0 (D). After 680 days, Achilles (C–C’’) tendons (n = 3 mice) have qualitatively fewer H2B-GFP+ (green C, C'; white C’’) labeled Hoechst+ nuclei (blue C, C’). Histogram showing only 20% of the cells are H2B-GFP+ and the H2B-GFP intensity has decreased at 645 days (E). For the histograms, a representative is shown; tendons from n > 3 mice were examined independently. Scale Bars, 50 µm; Vertical red lines (H, O) indicate the control GFP beads for standardizing intensity and gates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative flow cytometry analysis of H2B-GFP expression in a H2B-GFP heterozygous mouse that never received Dox, indicating a relatively small amount (<1%) of transgene expression occurs in the absence of Dox induction (B). n = 3 mice per experiment.
 
 To determine the total cumulative proliferation of tendon cells from birth to aged mice, we next examined H2B-GFP expression in tendons that had been pulsed with Dox at embryonic stages and allowed to chase without Dox for over 18 months using section and FACS analysis. Tendons in section imaged using 2-photon microscopy appeared to have reduced H2B-GFP+ expression in Hoechst+ nuclei (Figure 1C–C’’) compared to P0 tendons (Figure 1B–B’’). We found that H2B-GFP+ cells had shifted in the intensity of GFP (Figure 1E) with only 20.1 ± 1.4% of the cells H2B-GFP+ at 645 days (Figure 2A). Previous studies calculate that 7-8 divisions are needed for a cell to fall below the GFP detection threshold (Foudi et al., 2009). This would indicate that the H2B-GFP+ population at 645 days proliferated less than 7-8 times, while the H2B-GFP– population proliferated at a minimum of 7-8 times since birth. Together, these data show that all tendon cells proliferate after birth, but that a subpopulation of the cells display limited proliferative activity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig2-v2.jpg)
 
-**Figure 2.:** + cells from postnatal to aged stages.The percentage of H2B-GFP+ tendon cells decreases from P0 to P645, with a rapid decline of H2B-GFP+ tendon cells by 14 days post birth and a more graduate decrease in H2B-GFP+ cells from P14 to P645 (A). Analysis of H2B-GFP+ tendon cells shows logarithmic decay (log2) in the percentage of H2B-GFP+ cells (B). H2B-GFP+ tendon cells decrease in their intensity of GFP from P0 to P645 (C; stages examined are labeled and shown with different shades of green; histogram is a representative from n = 4 mice). Using the change in H2B-GFP intensity, a model was used to calculate the daily cell proliferation rates (D), which shows significantly higher proliferation rates from P0 to P21, and lower proliferation rates at P80 and P600. Tendons from n > 3 mice were examined per each stage shown on the graph. All error bars represent standard deviation.  10.7554/eLife.48689.006Figure 2—source data 1.Figures 2A–C and 3A-D.  10.7554/eLife.48689.007Figure 2—source data 2.Figure 2D.
+**Figure 2.:** The percentage of H2B-GFP+ tendon cells decreases from P0 to P645, with a rapid decline of H2B-GFP+ tendon cells by 14 days post birth and a more graduate decrease in H2B-GFP+ cells from P14 to P645 (A). Analysis of H2B-GFP+ tendon cells shows logarithmic decay (log2) in the percentage of H2B-GFP+ cells (B). H2B-GFP+ tendon cells decrease in their intensity of GFP from P0 to P645 (C; stages examined are labeled and shown with different shades of green; histogram is a representative from n = 4 mice). Using the change in H2B-GFP intensity, a model was used to calculate the daily cell proliferation rates (D), which shows significantly higher proliferation rates from P0 to P21, and lower proliferation rates at P80 and P600. Tendons from n > 3 mice were examined per each stage shown on the graph. All error bars represent standard deviation.
 
 To more deeply assess the dynamic changes of tendon cell proliferation after birth, we analyzed Dox pulsed mice at multiple stages of chase from P0 to P80. We observed a decrease in the total percentage of H2B-GFP+ cells from 93.6 ± 1.2% at P0 to 76.7 ± 9.6% at P7% and 52.0% at P14 (Figure 2A). However, the percentage of H2B-GFP+ tendon cells remained relatively constant between P14 and P80 with no significant differences among any pair of time points (Figure 2A), suggesting limited cell division occurred from P21-P80. Interestingly, the percentage of H2B-GFP+ cells was further reduced at 645 days to 20.1 ± 1.4% indicating low but detectable amounts of cell proliferation continue in adult and aged mice (Figure 2A,B).
 
 As significant changes in the percentage of positive and negative H2B-GFP cells between P14-P80 were not observed, we next examined alterations in H2B-GFP intensity, as this would reveal more subtle changes in cell division that occur. We noted a marked shift in the H2B-GFP+ intensity from 105 at P0 to 103 after 645 days (Figures 1E and 2C). Using a logarithmic decay equation to define the dilution of GFP signal mathematically (see Materials and methods), we also observed increased proliferation at early stages (Figure 2D). Our calculations show that tendon cells were dividing at a rate of 19 ± 4.2% per day from P0 to P7 and 9 ± 4.25% per day from P7 to P14 (Figure 2D). Proliferation rates decreased to 3.85 ± 0.07% per day between P14 and P21 and 1.75 ± 0.64% per day from P21 to P80. After P80, the rate of tendon cell proliferation was markedly decreased to 0.1 ± 0.13% per day by P600 (Figure 2D). Together, these proliferation rates derived from mathematical modeling of H2B-GFP decay and the absolute loss of H2B-GFP intensity over time from our flow cytometry analysis indicate that there are relatively high levels of proliferation at the early postnatal stages. In addition, this proliferative activity is greatly diminished after one month of age, but not extinguished in adult or aged tendons.
 
-## BrdU incorporation analysis identifies a postnatal transition from high to low cell division rates
+### BrdU incorporation analysis identifies a postnatal transition from high to low cell division rates
 
 To complement our mathematical model of H2B-GFP decay, we used flow cytometry to quantify the percentage of tendon cells that had incorporated Bromodeoxyuridine (BrdU), a thymidine analog that incorporates into replicating DNA, for different BrdU administration lengths and stages. We performed intraperitoneal (IP) injection of BrdU and harvested tendons to determine the number of BrdU+ cells after 24 hours. For flow cytometry analysis, highly proliferative organs (gastrocnemius muscle) were used as positive controls, tendon tissues from mice that had not received BrdU treatment were used as negative controls, and Scleraxis (Scx)-Cre;Rosa-LSL-TdTomato+(abbreviated Scx-Cre;TdTom) mice were used to analyze Scx-descendent tendon cells (Blitz et al., 2009). We found that BrdU injection at P0 resulted in 76 ± 13.8% BrdU+ tendon cells at P1, while at P8 and P22, 26 ± 6.5% and 8.4 ± 3.4% of the tendon cells were BrdU+ positive, respectively (Figure 3A,B). In adult mice, we observed that less than 1% of the cells were BrdU+ (P60 = 0.4 ± 0.2%, P370 = 0.5 ± 0.1%). To verify these findings in tissue sections, we injected EdU at P1 and P59 and examined Scx-Cre;TdTom+ and EdU+ tendon cells in section one day later. Consistent with our BrdU and H2B-GFP results, we observed more Scx-Cre;TdTom+/EdU+ cells in the Achilles tendon at P2 compared with P60 mice (Figure 3C). Interestingly, we also observed noticeable doublets of EdU+ cells in rows along on the longitudinal axis of the Achilles tendon (Figure 3C,B’). This indicates that the cells divided and retained their relative position in channels along the long axis of the tendon and is consistent with prior work noting an increase in cell number along the longitudinal axis at postnatal stages (Kalson et al., 2015). These results show a high rate of proliferation immediately following birth, and a decrease in the first weeks of postnatal life, specifically after P21, which is consistent with our H2B-GFP mathematical model. However, the low percentage of BrdU+ cells at P60 and P370 suggests minimal turnover in adult tendons. To more accurately quantify the amount of cell proliferation in adults, we administered BrdU continuously in the drinking water of Scx-GFP;Scx-Cre;TdTom mice for 90 to 100 days. We found that after long periods of BrdU administration, 4 month old mice had incorporated BrdU into 2.35 ± 1.2% of the Scx-Cre;TdTom+ cells and 2.75 ± 2.9% of the Scx-GFP+ cells (Figure 3D,E; Figure 3—figure supplement 1), using flow cytometry. Quantification of BrdU stained tendon sections at 3 and 6 months showed a similar percentage of BrdU+ cells (Figure 3F), further supporting a low, but detectable rate of turnover in adult mouse tendons. We also observed a significantly greater number of cells incorporating BrdU in the outer compared with internal tendon regions (Figure 3F). In mice older than 1 year of age, 90 days administration of BrdU yielded 0.48 ± 0.26% of BrdU+ tendon cells (Figure 3D), however, this decrease was not statistically significant between 4, 6 and 13 month stages.
 
-## Dynamic gene expression changes occur during the transition in cell division rate
+![Figure 3.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig3-v2.jpg)
+
+**Figure 3.:** Examination of BrdU incorporation 24 hr after BrdU injection reveals higher BrdU incorporation rates at P0 through P14 compared with P21 and later stages (A). Representative flow cytometry of 24 hr BrdU labeled Scx-Cre;TdTom+ tendon cells shows 30.3% BrdU+/TdTom+ cells at P8 and 6.65% BrdU+/TdTom+ cells at P28 (B). 24 hr EdU labeling identifies a significant number of proliferating cells at P2 (C, A’, B’), but no EdU+ cells were observed at P60 (C, C’,D’). Administration of BrdU for over 90 days after P30 shows low but detectable levels of BrdU incorporation from 120 to 400 days (D). Example flow cytometry shows 2.18% BrdU+/TdTom+ cells after 3 months of BrdU incorporation (1–4 months, (E). Quantification of BrdU+/TdTom+ cells in tendon sections (F) shows a similar percentage of incorporation as the flow cytometry analysis and significantly more BrdU incorporating nuclei in outer Achilles tendon regions compared with inner regions at either 3 and 6 months. For all experiments, n = 3 mice were examined per stage. Error bars are standard deviation. Scale bars = 100 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** n = 3 mice per experiment. Error bars are standard deviation.
+
+### Dynamic gene expression changes occur during the transition in cell division rate
 
 Since we have determined that there is a transition in cell division rate during the first postnatal month, we also predict that there are dynamic gene expression changes occurring during this period, especially for genes important for proliferation and matrix production. We performed RT-qPCR assays on RNA isolated from whole distal limb tendon homogenate for a small set of transcripts. These assays provide further information about cell proliferation (Mki67), tendon cell identity and differentiation (Scx, Mkx), and matrix production and assembly (Col1a2, Col3a1, Fmod), during tendon growth. An analysis of variance (ANOVA) on ∆CT values for each gene demonstrated a significant change in expression of all genes across the developmental range (p<0.05). Tukey’s Honestly Significant Difference (HSD) post hoc tests revealed the specific pairs of time points for which relative expression is significantly different (see Supplementary file 1).
 
@@ -62,13 +78,25 @@ For many of the genes, relative expression levels decreased during the first mon
 
 **Figure 4.:** RT-qPCR of selected markers of proliferation (Mki67; blue), tendon transcription factors (TFs, Scx and Mkx; green), and extracellular matrix (Col1a2, Col3a1, and Fmod; gray). Relative expression was calculated using the ∆CT method using Gapdh as the reference gene. For all genes assayed, significant differences between all six time points were found via ANOVA (p<0.05). Stars indicate significant differences based on Tukey’s HSD compared to P0 only (*p<0.05; **p<0.01; ***p<0.001). See Supplementary file 1 for ANOVA statistics and full report of post hoc pairwise comparisons. n = 3 biological replicates per time point. Boxplot edges represent the interquartile range (IQR) and the middle line represents the median. Whiskers represent 1.5 x IQR.
 
-## Tendon cell density and tendon length undergo dynamic changes during early postnatal stages
+### Tendon cell density and tendon length undergo dynamic changes during early postnatal stages
 
 To understand how tendon cell number changes relative to matrix expansion during growth, we also quantified tendon cell density during the first postnatal month. Using 2-photon microscopy and second harmonic generation (SHG) imaging to generate 3D images of Scx-GFP+ Achilles tendons, we counted Hoechst+ cells and examined collagen organization at P0, P7, P14, and P28 (Figure 5A–D’’’; Videos 1–5). As has been previously reported (Kalson et al., 2015), we observed a decrease in cell density per unit area, with 42.3 ± 11.44, 26 ± 4.6, 21.8 ± 3.3, and 9.6 ± 1.9 cells per 50 mm x 50 mm at P0, P7, P14, and P28, respectively (Figure 5E). These results suggest that matrix expansion outpaces cell proliferation, at least for the cross-sectional area of the tendon. Consistent with this observation, using the same imaging conditions, we observed an increase in SHG signal intensity from P0 to P28, suggesting an increase in collagen density at these stages (Figure 5A’’’–D’’’). We also noticed a larger variability in cell density at P0 compared to P28, which could indicate natural variability in growth rates during early stages. To understand how cell division compares with longitudinal tendon growth, we measured the Achilles tendon length from the enthesis to its connection with the gastrocnemius muscle at postnatal and adult stages. Strikingly, we observed rapid growth in the early postnatal stages with the Achilles tendon increasing from 0.127 ± 0.019 cm at P0 to 0.35 ± 0.017 cm at P14, and to 0.436 ± 0.018 cm at P21. However, the length of the Achilles tendon did not change significantly between P21 to P28 (Figure 5B), and only increased modestly from 0.496 ± 0.01 cm at P28 to 0.54 ± 0.007 cm after P30 (P30-P270) (Figure 5B). Overall, the time periods where we observed significant increases in Achilles tendon length correspond directly with our observations of periods of active tendon cell proliferation. This suggests the interesting possibility that, in parallel with matrix expansion, cell proliferation during the first two weeks after birth may in some way contribute to longitudinal growth or result from mechanical or chemical changes that occur during this dynamic longitudinal growth period.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48689/elife-48689-fig5-v2.jpg)
 
-**Figure 5.:** Two photon microscopy images of Achilles tendons showing second harmonic generation signal (purple, A-D’; white, A’’’–D’’’), Hoechst+ nuclei (white, A–D’), and Scx-GFP+ cells (green, A–D, A’’–D’’). Images show changes in cell density, cell shape, and collagen organization at P0 (A–A’’’), P7 (B–B’’’), P14 (C–C’’’), and P28 (D–D’’’). Using optical sections from 2-photon images, we found that tendon cell density significantly decreases at postnatal stages (E, each point represents cell counts from an optical section; n = 3 mice analyzed per stage). The Achilles tendon undergoes significant longitudinal growth from P0 to P30; no significant increases in Achilles length is detected after P30 (F, each point represents measurements from one mouse Achilles; n > 3 mice). Error bars are standard deviation. Scale bars = 100 µm.  10.7554/eLife.48689.013Figure 5—source data 1.Figure 5A.  10.7554/eLife.48689.014Figure 5—source data 2.Figure 5F.
+**Figure 5.:** Two photon microscopy images of Achilles tendons showing second harmonic generation signal (purple, A-D’; white, A’’’–D’’’), Hoechst+ nuclei (white, A–D’), and Scx-GFP+ cells (green, A–D, A’’–D’’). Images show changes in cell density, cell shape, and collagen organization at P0 (A–A’’’), P7 (B–B’’’), P14 (C–C’’’), and P28 (D–D’’’). Using optical sections from 2-photon images, we found that tendon cell density significantly decreases at postnatal stages (E, each point represents cell counts from an optical section; n = 3 mice analyzed per stage). The Achilles tendon undergoes significant longitudinal growth from P0 to P30; no significant increases in Achilles length is detected after P30 (F, each point represents measurements from one mouse Achilles; n > 3 mice). Error bars are standard deviation. Scale bars = 100 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48689/elife-48689-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/48689/elife-48689-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/48689/elife-48689-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/48689/elife-48689-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/48689/elife-48689-video5.mp4.jpg)
+
+**Video 5.:** For this movie, the ‘reslice’ feature in the FIJI software was used to convert the image from the sagittal to transverse view.
 
 ## Discussion
 
@@ -90,34 +118,230 @@ In summary, by using complementary genetic and chemical labeling methods, we hav
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Col1a1:tetO-H2B-GFP; ROSA:rtTA (H2B-GFP)</td>
+      <td>Brack, Hochedlinger labs, PMID: 24715455, 19060879</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Scx-GFP</td>
+      <td>Schweitzer lab, PMID: 20059955</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Scx-Cre</td>
+      <td>Schweitzer lab,PMID: 11585810</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gt(ROSA)26Sortm9(CAG.tdTomato)Hze (ai9)/TdTom</td>
+      <td>Jackson</td>
+      <td>cat# 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti Mouse CD31</td>
+      <td>BD</td>
+      <td>Cat#551262</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti Mouse CD45</td>
+      <td>BD</td>
+      <td>Cat# 557659</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal BrdU</td>
+      <td>Biolegend</td>
+      <td>Cat# 339808</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal BrdU</td>
+      <td>Abcam</td>
+      <td>Cat# 6326</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Green Flow Cytometry Reference Beads</td>
+      <td>Molecular Probes</td>
+      <td>Cat# C16508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU</td>
+      <td>Invitrogen</td>
+      <td>Cat# C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit HS RNA assay</td>
+      <td>Invitrogen</td>
+      <td>Cat# Q32852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#18091050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR</td>
+      <td>Applied Biosystems</td>
+      <td>Cat#4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dox</td>
+      <td>Sigma</td>
+      <td>cat#D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase II</td>
+      <td>Worthington</td>
+      <td>Cat# LS004176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>Cat#11956–092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P/S</td>
+      <td>Corning</td>
+      <td>Cat#30002 CL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hepes</td>
+      <td>Gibco</td>
+      <td>Cat#15630–80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase I</td>
+      <td>Gibco</td>
+      <td>Cat# 17100–017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase</td>
+      <td>Gibco</td>
+      <td>Cat# 1710541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrdU</td>
+      <td>Sigma</td>
+      <td>Cat#B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst</td>
+      <td>Thrmo Fisher</td>
+      <td>Cat# H3569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>'stats' version 3.5.1(Team)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 We thank Andrew Brack (UCSF) and Konrad Hochedlinger (MGH) for the Doxycycline (Dox) inducible H2B-GFP (Col1a1:tetO-H2B-GFP; ROSA:rtTA) heterozygous mice used in these studies. To induce transgene expression, Dox (Sigma D9891, 2 mg/ml, supplemented with sucrose at 10 mg/ml) was added to the drinking water of timed pregnant females at E10-birth as described (Foudi et al., 2009). Scx-GFP and Scx-Cre mice were provided by the Schweitzer lab (Blitz et al., 2009; Schweitzer et al., 2001). Gt(ROSA)26Sortm9(CAG-tdTomato)Hze (Ai9) were obtained from Jackson Laboratory (Jax cat# 007909). All experiments were performed according to our protocol approved by the Massachusetts General Hospital Institutional Animal Care and Use Committee (IACUC: 2013N000062).
 
-## Flow cytometry
+### Flow cytometry
 
 The tendon cells were isolated from the distal forelimb and hindlimb tendon tissue (Achilles, extensor, deep and superficial flexor tendons) from mice at time points between P0 and 2 years. Limb tendons were enzymatically dissociated in a solution containing 0.2% collagenase II (Worthington Cat# LS004176) in DMEM (Gibco Cat#11956–092) with 1% P/S (Corning Cat#30002 CL) and 1% Hepes (Gibco Cat#15630–80) for 2 hr at 37°C. Subsequently, a secondary digestion solution containing 0.2% Collagenase I (Gibco Cat# 17100–017) and 0.4% Dispase (Gibco Cat# 1710541) was added and the samples were incubated for an additional for 30 min at 37°C. The digested cells were filtered with 30 µm filters (MACS Cat# 130041407) and washed. For the H2B-GFP+ studies, we enriched for tendon cells from H2B-GFP+ mice by excluding for CD31+ and CD45+ cells using FACS prior to analysis (BD Cat#551262, Cat# 557659). For the BrdU analysis, cells were stained with anti-BrdU following tendon tissue dissociation (Biolegend, Cat# 339808), and tendons from Scx-Cre;TdTom+; or Scx-Cre;TdTom+;Scx-GFP+ mice were used to analyze TdTom+ or GFP+ tendon cells. Flow cytometry was performed using 5 ml tubes (BD Biosciences Cat# 352235) on a FACSAria II (BD Biosciences). For each independent experiment, gates were defined by positive and negative control tendon cells from TdTom+/TdTom- and GFP+/GFP- cells. For the negative controls for BrdU analysis, BrdU antibody staining was performed on tendon cells isolated from mice that were not administered BrdU. To ensure reproducibility of H2B-GFP emission intensity between different samples and sorting times, the voltage of the photomultiplier receiving signal from the 488 nm laser was normalized using Green Flow Cytometry Reference Beads prior to every sort (Molecular Probes Cat# C16508).
 
-## BrdU, EdU labeling, Tendon Histology, and Imaging
+### BrdU, EdU labeling, Tendon Histology, and Imaging
 
 BrdU was injected at a concentration of 150 mg/kg (Sigma Cat#B5002) as described (Magavi and Macklis, 2008). Flow cytometry analysis was performed as described previously. For BrdU immunostaining, sections underwent antigen retrieval and immunostaining using anti-BrdU (1:100; Abcam Cat# 6326). EdU was administered at 20 mg/kg as described (Salic and Mitchison, 2008) and tendon sections were stained using the Click-iT EdU kit (Invitrogen Cat# C10337). For histological sections, tendons were fixed overnight in 4% PFA, followed by 5% sucrose for 1 hr, and 30% sucrose overnight before being mounted in OCT. A Leica cryostat (CM3050S) was used to obtain 8–10 μm sections. Pictures were taken with Zeiss AxioImager D2 with (10X and 20X magnification) and prepared using Adobe Photoshop and Illustrator. For 2-photon imaging of H2B-GFP expression in mouse Achilles tendons (Figure 1), we chose 2-photon microscopy due to the longer wavelengths used to image the sample and the high collagen content of the tendon. The longer wavelengths penetrated the tendon tissue more efficiently and produced a better signal to noise ratio that was not affected by the collagen fibers, resulting in a more unified GFP signal. Achilles tendon samples from at least three mice were sectioned and analyzed at P0 (end of pulse) and 680 days (end of chase). For the P0-P28 data (Figure 5), at least 3 Achilles tendons from different mice were analyzed. For all 2-photon imaging, we stained the nucleus with Hoechst 33258 (ThermoFisher Cat# H3569) at 1:100,000 dilution. To standardize signal detection between sections and samples, the laser power was adjusted to ‘Bright Z’ mode. The images were analyzed using FIJI (Schindelin et al., 2012). For P28 transverse Scx-GFP Achilles tendon Video 5, the ‘reslice’ feature in the FIJI software was used to convert the image from the sagittal to transverse view (Schindelin et al., 2012). The images were taken with optical slices every 0.4 µm with a 25X wet lens (XLPlan N 25X WMP) on an Olympus 2P microscope FLOVIEW FVMPE-RS.
 
-## Tendon length and cell counting measurements
+### Tendon length and cell counting measurements
 
 Tendons from at least three mice were measured per stage from the calcaneus to the gastrocnemius muscle, and the data were analyzed using Prism software (Graphpad). For BrdU incorporation quantification (Figure 3F), we examined 3–4 tendon transverse sections in 3–4 regions along the tendon per mouse from at least three mice. In these transverse sections, we counted BrdU in the outer tendon regions within the outer 20 µm of the tendon and the inner regions comprised the regions internal from this area. The data points in Figure 3F represent the ratio of BrdU+/TdTom+ cells in the inner or outer regions of 3–4 sections from one region along the tendon. For cell density counting, we counted cells in three 50 µm x 50 µm squares in 7–9 optical transverse sections per Achilles tendon per mouse with a gap of 20 microns between sections and at least three mice were analyzed per stage. The 50 µm x 50 µm square was created using FIJI (Schindelin et al., 2012), and in each optical section the nucleus number was counted in at least three different locations.
 
-## Mathematical modeling
+### Mathematical modeling
 
-To define the dilution of the GFP signal mathematically, we modeled the change in signal intensity using a logarithmic decay equation:P(t)=P(0)e−kt
+To define the dilution of the GFP signal mathematically, we modeled the change in signal intensity using a logarithmic decay equation:
+
+$$
+P(t)=P(0)e^{−kt}
+$$
 
 In this formula, we assume that GFP signal intensity decreases through dilution by cell proliferation. We calculated the constant between populations at different times (k), by comparing the populations’ median GFP intensity at particular times (P(t)). Assuming that the increase in tendon cell number could be measured by the decrease of the GFP intensity (Figure 2B and D), we calculated the dilution of GFP between each time point from P0 to 645 days (Figure 2C).
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
 Fresh, whole limb tendons (pooled forelimb and hindlimb from a single individual; n = 3 mice per time point) were dissected from mice euthanized via CO2 and immediately placed in cold TRIzol (Invitrogen 15596026). Tendons were roughly chopped with clean microdissection scissors in TRIzol and frozen at −80C until RNA extraction via TRIzol-chloroform and a proprietary kit. Briefly, the homogenate in TRIzol was thawed on ice, vortexed, and transferred to a clean microcentrifuge tube to remove tissue debris. The traditional TRIzol-chloroform extraction protocol was followed until phase separation. An equal volume of ethanol was added to the upper aqueous phase and the mixture was transferred to a Zymo IIC spin column (Zymo Research C1011) for purification and DNase I treatment using the Zymo Direct-Zol system (Zymo Research R2050, R2060) following the manufacturer’s guidelines. RNA quality was examined using spectrophotometry (NanoDrop 2000c, Thermo Scientific) and capillary electrophoresis (2100 Bioanalyzer, Agilent), and concentration was measured via fluorometric quantitation (Qubit HS RNA assay, Invitrogen Q32852). The final RNA product was stored at −80C.
 
 Total RNA was reverse transcribed using the SuperScript IV first strand synthesis system (Thermo Fisher 18091050). 100 ng total RNA for each sample (n = 3 per time point) was converted to cDNA using oligo(dT)20 primers. SYBR green assays (Applied Biosystems 4367659) were run in technical triplicate with 1 ng of cDNA template in each 12.5 µl reaction. Samples were amplified for 40 cycles using the LightCycler 480 II real time PCR system (Roche Diagnostics). All targets were normalized to Gapdh (see Supplementary file 2 for primer sequences). Relative expression values were calculated for visualization using the ∆CT method (Livak and Schmittgen, 2001); statistics were performed on ∆CT values (Supplementary file 1). All self-designed primers were designed using PrimerBLAST (Ye et al., 2012).
 
-## Statistics
+### Statistics
 
 For the RT-qPCR assays, statistical differences among the six timepoints were investigated via ANOVA and post hoc pairwise comparisons were computed using Tukey’s Honestly Significant Difference test on the ∆CT values (n = 3 biological replicates per time point; alpha = 0.05). R statistical software (R Development Core Team, 2018) was used for all RT-qPCR calculations and visualizations. Data analysis in R was facilitated using R packages included in the Tidyverse collection (Wickham, 2017) and statistical analysis was performed using the implementations of ANOVA and Tukey’s HSD in 'stats' version 3.5.1 (R Development Core Team, 2018) . For each stage analyzed by flow cytometry, least three mice were used per group. Statistical differences between time points for all flow cytometry analysis were calculated using a Welch’s t-test. One-way ANOVA was used to calculate statistical differences in cell density. A two-tailed t-test was used to calculate significance between BrdU incorporation in outer and inner tendon regions and Achilles tendon length measurements between different stages.

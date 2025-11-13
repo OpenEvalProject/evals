@@ -12,17 +12,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Neuroscience Graduate Program, University of Washington Seattle United States
-2. https://ror.org/00cvxb145 Department of Neurobiology and Biophysics, University of Washington Seattle United States
-3. https://ror.org/00cvxb145 Department of Biology, University of Washington Seattle United States
-4. https://ror.org/00jmfr291 Department of Electrical Engineering and Computer Science, University of Michigan Ann Arbor United States
-5. https://ror.org/00cvxb145 Department of Mechanical Engineering, University of Washington Seattle United States
+1. Neuroscience Graduate Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Department of Neurobiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Biology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Department of Electrical Engineering and Computer Science, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Department of Mechanical Engineering, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
 ## Abstract
 
-Walking animals must maintain stability in the presence of external perturbations, despite significant temporal delays in neural signaling and muscle actuation. Here, we develop a 3D kinematic model with a layered control architecture to investigate how sensorimotor delays constrain the robustness of walking behavior in the fruit fly, Drosophila . Motivated by the anatomical architecture of insect locomotor control circuits, our model consists of three component layers: a neural network that generates realistic 3D joint kinematics for each leg, an optimal controller that executes the joint kinematics while accounting for delays, and an inter-leg coordinator. The model generates realistic simulated walking that resembles real fly walking kinematics and sustains walking even when subjected to unexpected perturbations, generalizing beyond its training data. However, we found that the model’s robustness to perturbations deteriorates when sensorimotor delay parameters exceed the physiological range. These results suggest that fly sensorimotor control circuits operate close to the temporal limit at which they can detect and respond to external perturbations. More broadly, we show how a modular, layered model architecture can be used to investigate physiological constraints on animal behavior.
+Walking animals must maintain stability in the presence of external perturbations, despite significant temporal delays in neural signaling and muscle actuation. Here, we develop a 3D kinematic model with a layered control architecture to investigate how sensorimotor delays constrain the robustness of walking behavior in the fruit fly, Drosophila. Motivated by the anatomical architecture of insect locomotor control circuits, our model consists of three component layers: a neural network that generates realistic 3D joint kinematics for each leg, an optimal controller that executes the joint kinematics while accounting for delays, and an inter-leg coordinator. The model generates realistic simulated walking that resembles real fly walking kinematics and sustains walking even when subjected to unexpected perturbations, generalizing beyond its training data. However, we found that the model’s robustness to perturbations deteriorates when sensorimotor delay parameters exceed the physiological range. These results suggest that fly sensorimotor control circuits operate close to the temporal limit at which they can detect and respond to external perturbations. More broadly, we show how a modular, layered model architecture can be used to investigate physiological constraints on animal behavior.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Here, we develop a new, interpretable, and generalizable model of fly walking, w
 
 ## Results
 
-## A kinematic model of fly walking that incorporates delays and accommodates perturbations
+### A kinematic model of fly walking that incorporates delays and accommodates perturbations
 
 We designed a walking model with three functional layers (Figure 1B), inspired by the hierarchical anatomical organization of the fly nervous system (Figure 1A, Dallmann et al., 2021). The three layers are an inter-leg phase coordinator, a trajectory generator, and an optimal controller that interfaces with a leg dynamics model. Each individual leg is modular and governed by its own dynamics, optimal controller, and trajectory generator. Inter-leg coordination is accomplished by the phase coordinator alone. In other words, the movement of each leg is not coupled to any other leg except through the phase of its current step cycle. This modularity is inspired by the segmental neuroanatomy of the VNC, in which each leg is controlled by distinct local premotor circuits and pools of motor neurons (Lesser et al., 2024; Cheong et al., 2024). While the model is inspired by neuroanatomy, its components do not strictly correspond to components of the nervous system—the construction of a neuroanatomically accurate model is deferred to future work (see Discussion).
 
@@ -48,29 +48,29 @@ We designed a walking model with three functional layers (Figure 1B), inspired b
 
 Each layer in the model is an abstraction for the layer below it, such that various elements of walking (e.g. joint control, inter-leg coordination) can be integrated through modules. Below, we describe each modular component of our model; more details on its derivation and implementation are elaborated in the Methods and materials and Appendices. Although the model can turn and side-step, our analysis focuses on forward-walking — the model is driving the fly to walk straight in all simulations, unless otherwise stated.
 
-## Inter-leg phase coordinator
+### Inter-leg phase coordinator
 
-To coordinate multi-legged walking, we modeled the step phase of each leg as an oscillator. We refer to the left and right legs as L1–3 and R1–3, respectively, where the front legs are L1 and R1. The phase coupling of the six-leg oscillators establishes realistic inter-leg coordination. We use a Kuramoto oscillator model (Acebrón et al., 2005; Strogatz, 2000) to perform this coordination, as in Proctor and Holmes, 2018; equations and implementation details are in Methods and materials. Briefly, the phase coordinator takes the instantaneous phases ϕ from all legs as input, then outputs the desired phases ϕd to all legs. These desired phases are synchronized across pairs of legs to maintain a tripod coordination pattern, even when subject to unpredictable perturbations. We estimated the phase coupling coefficient among legs from measured 3D joint kinematics of walking flies (Karashchuk et al., 2021). Without the phase coordinator, individual trajectory generators would generate realistic kinematics for each leg, but they would not be coordinated with each other.
+To coordinate multi-legged walking, we modeled the step phase of each leg as an oscillator. We refer to the left and right legs as L1–3 and R1–3, respectively, where the front legs are L1 and R1. The phase coupling of the six-leg oscillators establishes realistic inter-leg coordination. We use a Kuramoto oscillator model (Acebrón et al., 2005; Strogatz, 2000) to perform this coordination, as in Proctor and Holmes, 2018; equations and implementation details are in Methods and materials. Briefly, the phase coordinator takes the instantaneous phases $ϕ$ from all legs as input, then outputs the desired phases $ϕ_{d}$ to all legs. These desired phases are synchronized across pairs of legs to maintain a tripod coordination pattern, even when subject to unpredictable perturbations. We estimated the phase coupling coefficient among legs from measured 3D joint kinematics of walking flies (Karashchuk et al., 2021). Without the phase coordinator, individual trajectory generators would generate realistic kinematics for each leg, but they would not be coordinated with each other.
 
-## Joint kinematics trajectory generator
+### Joint kinematics trajectory generator
 
 The trajectory generator layer is responsible for producing realistic 3D joint kinematics of each leg. To express the relationships among all leg joint angles, we use an artificial neural network trained to generate angle trajectories. The modular design makes it possible to train trajectory generators separately from the inter-leg phase coordinator and optimal controller. Ultimately, the optimal controller integrates desired angle trajectories with proprioceptive joint angle feedback to output joint torques to the physical model of each leg.
 
-As illustrated schematically in Figure 1B, the inputs to the trajectory generator module are desired leg phase ϕd, joint angles θ, joint angular velocities θ˙, and walking speed and direction of the fly. The trajectory generator then outputs the leg phase velocity ϕ˙ and desired angular accelerations θ¨d. This output is integrated to produce the desired angle and angular velocities θd,θ˙d, which are the inputs to the optimal controller.
+As illustrated schematically in Figure 1B, the inputs to the trajectory generator module are desired leg phase $ϕ_{d}$, joint angles $\theta$, joint angular velocities $\theta˙$, and walking speed and direction of the fly. The trajectory generator then outputs the leg phase velocity $ϕ˙$ and desired angular accelerations $\theta¨_{d}$. This output is integrated to produce the desired angle and angular velocities $\theta_{d},\theta˙_{d}$, which are the inputs to the optimal controller.
 
 To train the network from data, we used joint kinematics of flies walking on a spherical treadmill, obtained from tracking 3D joint angles with Anipose (Karashchuk et al., 2021). Details on training approach and network properties are described in Methods and materials. The walking speed and directions are signals that are not generated from other modules of the model, but are instead external inputs to the trajectory generator computed from the data; biologically, these signals are analogous to descending signals from the fly brain (Simpson, 2024). This organization is motivated by the observation that walking velocity and direction have a substantial effect on joint angles, but they do not have a substantial effect on the parameters and outputs of the phase coordinator (e.g. phase offsets), as substantiated in Appendix 1.
 
-After training and when assembled with the other layers of the model, the trajectory generator receives proprioceptive information on the observed, current state of the leg θ,θ˙, as well as the target desired phase ϕd from the phase coordinator. Thus, it generates a time series of desired angles and angular velocities for some future interval and sends this time series θ¨d to the controller; it also estimates the current phase velocity ϕ˙ of the leg, which is passed to the phase coordinator.
+After training and when assembled with the other layers of the model, the trajectory generator receives proprioceptive information on the observed, current state of the leg $\theta,\theta˙$, as well as the target desired phase $ϕ_{d}$ from the phase coordinator. Thus, it generates a time series of desired angles and angular velocities for some future interval and sends this time series $\theta¨_{d}$ to the controller; it also estimates the current phase velocity $ϕ˙$ of the leg, which is passed to the phase coordinator.
 
 In the absence of external perturbations, the trajectory generator produces realistic joint angles similar to those of walking flies, as we show below. When challenged with unpredictable external perturbations, the impact on the trajectory generator is mitigated by the optimal controller layer, which attempts to return the actual state to the desired state. This control is possible because the controller operates at a higher temporal frequency than the trajectory generator in the model. The controller can perform many iterations (and reject disturbances) in between updates to and from the trajectory generator. We emphasize that all data used to train the trajectory generator came from experimental conditions without external perturbations.
 
-## Control and dynamics
+### Control and dynamics
 
-The optimal controller layer maintains walking kinematics in the presence of sensorimotor delays and helps compensate for external perturbations. This design was inspired by optimal control-based models of movements in humans (Todorov and Jordan, 2002; Scott, 2004; Berret et al., 2011). At regular intervals, the controller receives a short time series of desired state trajectories θd from the trajectory generator layer. The controller then produces the necessary torques τ to track this trajectory for the given leg dynamics. External perturbations w, when present, enter through the dynamics and affect the state θ,θ˙; the controller then senses the state and responds accordingly.
+The optimal controller layer maintains walking kinematics in the presence of sensorimotor delays and helps compensate for external perturbations. This design was inspired by optimal control-based models of movements in humans (Todorov and Jordan, 2002; Scott, 2004; Berret et al., 2011). At regular intervals, the controller receives a short time series of desired state trajectories $\theta_{d}$ from the trajectory generator layer. The controller then produces the necessary torques $\tau$ to track this trajectory for the given leg dynamics. External perturbations $w$, when present, enter through the dynamics and affect the state $\theta,\theta˙$; the controller then senses the state and responds accordingly.
 
 To design the controller, we first derived dynamical equations for each leg using link-and-joint models (Figure 1C), then linearized these dynamics and designed a linear quadratic regulator (LQR) controller. This optimal controller senses the state of the leg via proprioceptive input, then determines the optimal motor output for walking. The controller makes use of internal predictive states to accommodate sensory and motor delays. A detailed description of the controller derivations can be found in Methods and materials. We note that the walking and compensation capabilities of the full models are not contingent upon any specific dynamics or controller formulation; any controller that adequately tracks the trajectory generator would suffice.
 
-## The model generates realistic walking kinematics
+### The model generates realistic walking kinematics
 
 The layered model generates 3D walking kinematics that resemble real kinematic data from walking flies (Figure 2). Below, we provide qualitative and quantitative comparisons of joint angles, joint angular velocities, and phases of walking both within and across legs.
 
@@ -78,21 +78,33 @@ The layered model generates 3D walking kinematics that resemble real kinematic d
 
 **Figure 2.:** (A) Example time series of femur-tibia flexion (R1) and femur rotation (L2) for three different walking speeds: 8, 10, and 12 mm/s. Real data (orange) exhibited more variability than simulations (blue). (B) Angle vs. computed per-leg phase of femur-tibia flexion on leg R1 and femur rotation on leg L2 for four different walking speeds. Each plot contains data from 4 walking bouts with different initial conditions. (C) Average differences between model simulations and data, over a range of forward walking, turning, and side-stepping speeds over 500 distinct bouts. The dotted line (5.56 degrees) indicates uncertainty associated with markerless 3D joint tracking (Karashchuk et al., 2021). All simulations used a sensory delay of 10 ms and a motor delay of 30 ms, based on values measured experimentally with electrophysiology from leg sensory and motor neurons/muscles (Tuthill and Wilson, 2016b; Azevedo et al., 2020).
 
-## Qualitative evaluation of joint angle time series and videos of walking kinematics
+### Qualitative evaluation of joint angle time series and videos of walking kinematics
 
 We first qualitatively compared simulated and real kinematics by examining time series data and videos. In example trajectories of femur-tibia flexion angles of the right front and femur rotation angles of the left middle legs, the simulated time series matched the mean, frequency, and pseudo-triangular shape of the fly data (Figure 2A). Articulated animations of simulated and real trajectories are shown in Videos 1–3. Although the model and data were largely similar, some differences stood out. For example, the simulated amplitudes were generally smaller than the real amplitudes, and the simulated trajectories tended to be more regular.
 
-## Comparing joint angles and angular velocities versus phase
+![Video 1.](https://cdn.elifesciences.org/articles/99005/elife-99005-video1.mp4.jpg)
+
+**Video 1.:** Shown is an example comparison of real and simulated fly walking kinematics, visualized on a fly model by inverse kinematics (no further physics simulation).
+
+![Video 2.](https://cdn.elifesciences.org/articles/99005/elife-99005-video2.mp4.jpg)
+
+**Video 2.:** (Top row) Example simulated 3D pose trajectories at 8, 10, 12, and 14 mm/s forward walking (0 mm/s turning and side speeds). (Bottom row) Example 3D pose trajectories from data at the same speeds for comparison. Note that we fix angle joints not included in the model.
+
+![Video 3.](https://cdn.elifesciences.org/articles/99005/elife-99005-video3.mp4.jpg)
+
+**Video 3.:** (Top row) Example simulated 3D pose trajectories of fly walking with some nonzero side or rotation speed. Forward speed is 12 mm/s throughout. (Bottom row) Example 3D pose trajectories from data with similar speeds.
+
+### Comparing joint angles and angular velocities versus phase
 
 We next sought to quantitatively compare simulated and real joint angles. Direct comparisons of time series trajectories are inadequate, because temporal offsets between time series produce large mismatches even if the time series are similar. For instance, if we shift a time series trajectory by a half-cycle and compare it with itself, this will produce a large mismatch, even though the two trajectories are identical except for a misalignment in phase.
 
-To compare real and simulated trajectories, we computed the step-cycle phase for each time series and used this to plot the mean angles θ as a function of phase (Figure 2B). Here, we make the distinction between the generated phase, the per-leg phases produced by the phase coordinator of the model, and computed phase, which can be computed for each joint from time series data. Since we did not have access to the generated, desired phase for real fly data, all comparisons were made between computed phases.
+To compare real and simulated trajectories, we computed the step-cycle phase for each time series and used this to plot the mean angles $\theta$ as a function of phase (Figure 2B). Here, we make the distinction between the generated phase, the per-leg phases produced by the phase coordinator of the model, and computed phase, which can be computed for each joint from time series data. Since we did not have access to the generated, desired phase for real fly data, all comparisons were made between computed phases.
 
 When we averaged joint angles for all legs over 500 distinct walking bouts of 0.5–2 s in duration, we found that the mean differences between real and simulated joint angles were less than 6 degrees (Figure 2C). This difference is comparable to the uncertainty associated with markerless tracking of 3D fly walking kinematics that we used as training data (5.56 degrees, from Karashchuk et al., 2021). Errors for angular velocity were higher. Aggregate differences as a function of walking and turning velocity are shown in Appendix 4.
 
 The similarity between real and simulated data as a function of phase was consistent across the natural range of forward walking speeds (Figure 2B). Plots for all legs and joints are shown in Appendices 3 and 4. We further demonstrate the model’s capacity to simulate leg kinematics by comparing the phase coupling of simulated joint kinematics with real walking flies, both within and across legs, in Appendix 5.
 
-## Model maintains walking under unpredictable external perturbations
+### Model maintains walking under unpredictable external perturbations
 
 When walking in natural environments, animals frequently navigate uneven or slippery terrain. Thus, robust sensorimotor control systems must detect and respond to such unexpected perturbations in order to maintain stable locomotion.
 
@@ -108,27 +120,43 @@ To evaluate the model’s ability to walk in the presence of perturbations, we c
 
 Example animations of simulated walking bouts with perturbations are shown in Videos 4–7.
 
-To quantify the extent to which perturbed kinematics resemble normal, unperturbed walking, we introduce a new quantitative metric termed kinematic similarity (KS). For a given window of a kinematic trajectory, KS is computed by the log-likelihood that it occurred in the real fly-walking data (illustrated in Figure 4A and detailed in Methods and materials). Briefly, we reduce the experimental data to 2 dimensions using principal components analysis (PCA), then fit a kernel density estimator (KDE) to the resulting distribution. We then project each bout of simulated walking onto this subspace and evaluate the KDE model to obtain a log probability density function estimate, which corresponds to the kinematic similarity of the simulated bout to real walking bouts in the data. Lower values of KS mean lower similarity to data. When we applied this method to bouts from experimental data, we found that the average KS of experimental data was –1.627. Thus, we use KS >−1.6 as a general threshold for evaluating the realism of joint angle trajectories.
+![Video 4.](https://cdn.elifesciences.org/articles/99005/elife-99005-video4.mp4.jpg)
+
+**Video 4.:** Shown are example simulated 3D pose trajectories of fly walking with 10 ms sensory delay and varying motor delays. Below are mean kinematic similarity values during the perturbation.
+
+![Video 5.](https://cdn.elifesciences.org/articles/99005/elife-99005-video5.mp4.jpg)
+
+**Video 5.:** Shown are example simulated 3D pose trajectories of fly walking with 10 ms sensory delay and varying motor delays. Below are mean kinematic similarity values during the perturbation.
+
+![Video 6.](https://cdn.elifesciences.org/articles/99005/elife-99005-video6.mp4.jpg)
+
+**Video 6.:** Shown are example simulated 3D pose trajectories of fly walking with 30 ms motor delay and varying sensory delays. Below are mean kinematic similarity values during the perturbation.
+
+![Video 7.](https://cdn.elifesciences.org/articles/99005/elife-99005-video7.mp4.jpg)
+
+**Video 7.:** Shown are example simulated 3D pose trajectories of fly walking with 30 ms motor delay and varying sensory delays. Below are mean kinematic similarity values during the perturbation.
+
+To quantify the extent to which perturbed kinematics resemble normal, unperturbed walking, we introduce a new quantitative metric termed kinematic similarity (KS). For a given window of a kinematic trajectory, KS is computed by the log-likelihood that it occurred in the real fly-walking data (illustrated in Figure 4A and detailed in Methods and materials). Briefly, we reduce the experimental data to 2 dimensions using principal components analysis (PCA), then fit a kernel density estimator (KDE) to the resulting distribution. We then project each bout of simulated walking onto this subspace and evaluate the KDE model to obtain a log probability density function estimate, which corresponds to the kinematic similarity of the simulated bout to real walking bouts in the data. Lower values of KS mean lower similarity to data. When we applied this method to bouts from experimental data, we found that the average KS of experimental data was –1.627. Thus, we use KS $>−1.6$ as a general threshold for evaluating the realism of joint angle trajectories.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99005/elife-99005-fig4-v1.jpg)
 
 **Figure 4.:** (A) Method for computing kinematic similarity between real data and simulated walking. First, the full set of experimental data (from flies) is used to compute a Gaussian kernel density estimator (KDE). To quantify the similarity (to data) of a given bout of simulated walking, we apply the KDE to evaluate the log probability density function of each bout, a scalar value we refer to as kinematic similarity (KS). High KS indicates that the perturbed walking resembles the unperturbed walking from data, while low KS indicates that the perturbed walking deviates from data and results in unnatural angles (as seen at 40 ms motor delay). The average KS value of bouts from experimental data was –1.627. (B, C) Kinematic similarity of simulated walking during perturbations for impulse and persistent stochastic perturbations. For each square of the heatmap, four simulations with different initial conditions were simulated and averaged. Simulations became less similar to data with increased perturbation strength. All simulations used a sensory delay of 10 ms and a motor delay of 30 ms. Perturbation velocities were drawn from a random uniform distribution with mean perturbation strength (rad/s) and standard deviation of 0.1 × mean.
 
-As expected, larger perturbations led to walking behaviors with lower KS, and KS was not strongly dependent on forward walking speed (Figure 4B–C). For persistent stochastic perturbations, the model produced realistic joint angle trajectories (KS >−1.6) for all simulated perturbation strengths. Impulse perturbations appeared to be more challenging for the model, as they resulted in lower KS. From the time series, we observed that impulse perturbations resulted in greater instantaneous deviation from the standard waveform than persistent stochastic perturbations of the same magnitude. This is due to the fact that impulse perturbations produce simultaneous changes to all legs and joints, whereas persistent stochastic perturbations are spread out in time and typically non-simultaneous.
+As expected, larger perturbations led to walking behaviors with lower KS, and KS was not strongly dependent on forward walking speed (Figure 4B–C). For persistent stochastic perturbations, the model produced realistic joint angle trajectories (KS $>−1.6$) for all simulated perturbation strengths. Impulse perturbations appeared to be more challenging for the model, as they resulted in lower KS. From the time series, we observed that impulse perturbations resulted in greater instantaneous deviation from the standard waveform than persistent stochastic perturbations of the same magnitude. This is due to the fact that impulse perturbations produce simultaneous changes to all legs and joints, whereas persistent stochastic perturbations are spread out in time and typically non-simultaneous.
 
-## Effect of sensory and motor delays on walking
+### Effect of sensory and motor delays on walking
 
 Temporal delays are inherent properties of sensorimotor control systems, but they are difficult to manipulate experimentally (Bässler, 1993). Therefore, we used our model to investigate how changing sensory and motor delays affect locomotor robustness. We used measurements from the literature to estimate physiological delays for leg sensory and motor neurons in the Drosophila leg. Our estimate of sensory delay (5–15 ms) was based on the measured delay from spike initiation in a mechanosensory neuron in the Drosophila femur to the peak of an excitatory postsynaptic potential in a postsynaptic VNC neuron (Tuthill and Wilson, 2016b). Our estimate of motor delay (20–40 ms) was based on the time between spike initiation in a tibia motor neuron cell body to the onset of muscle force production, measured with a force probe (Azevedo et al., 2020).
 
 Without external perturbations, the model produced realistic walking with arbitrary delays, since the controller can effectively compensate for large delays by using predictions of joint angles in the future. However, in the presence of external perturbations and high delay values, the model was unable to maintain realistic walking, since it could not respond rapidly enough to unexpected perturbations. Here, we consider the composite effects of persistent stochastic perturbations with motor and sensor delays. Similar results for impulse perturbations are included in Appendix 7.
 
-We first fixed the sensory delay at 10 ms and measured the effect of varying motor delays. Examining the time series data, we found that for low values of motor delay (10 ms, 20 ms), even stronger perturbations had almost no effect (Figure 5A). However, at higher values of motor delay, the effects of the same perturbation became more pronounced, although the model still managed to recover after the perturbations ended. Over a range of perturbation strengths and walking speeds, the model maintained realistic walking (KS >−1.6) up to about 30 ms of motor delay (Figure 5C). This value is consistent with motor delays measured from the fruit fly leg, where the time between motor neuron spiking to the onset of muscle force production is about 30 ms (Azevedo et al., 2020).
+We first fixed the sensory delay at 10 ms and measured the effect of varying motor delays. Examining the time series data, we found that for low values of motor delay (10 ms, 20 ms), even stronger perturbations had almost no effect (Figure 5A). However, at higher values of motor delay, the effects of the same perturbation became more pronounced, although the model still managed to recover after the perturbations ended. Over a range of perturbation strengths and walking speeds, the model maintained realistic walking (KS $>−1.6$) up to about 30 ms of motor delay (Figure 5C). This value is consistent with motor delays measured from the fruit fly leg, where the time between motor neuron spiking to the onset of muscle force production is about 30 ms (Azevedo et al., 2020).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99005/elife-99005-fig5-v1.jpg)
 
 **Figure 5.:** (A, B) Example time series of femur-tibia flexion on leg R1 and femur rotation on leg L2 under various values of motor (10, 20, 30, 40 ms) and sensory delay (0, 5, 10, 15 ms). Perturbation effects became more noticeable with increasing delay values. (C, D, E) Similarity of during-perturbation walking to data across delay values, perturbation strengths, and forward speeds. For each square of the heatmap, four simulations with different initial conditions were simulated and evaluated. At low delay values, simulated walking maintained high similarity even under large perturbations. As perturbation strength and delays increased, simulated walking became less similar to data; the effect was more pronounced with increased delays. When we fixed one delay value and varied the other, the model maintained realistic walking (KS > – 1.6) up to about 30 ms of motor delay and 10 ms of sensory delay across a range of conditions. When we allowed both motor and sensory delay to vary, the model maintained realistic walking when the sum of the delays was no more than about 45 ms. (F) Post-perturbation walking with motor and sensory delays. The model was unable to recover from perturbations for large delay values. Unless otherwise stated, forward speed = 12 mm/s, and perturbation strength = 1.875 rad/s.
 
-Next, we fixed the motor delay at 30 ms and observed the effect of varying sensory delays. From time series data, we found that even at low values of sensory delay (0 ms, 5 ms), the effects of perturbations on model output were significant (Figure 5B). When sensory delay increased, the effects of the perturbation became more pronounced. Over a range of perturbation strengths and walking speeds, the model maintained realistic walking (KS >−1.6) up to about 10 ms of sensory delay (Figure 5D). This range is consistent with experimental estimates of delays from mechanosensory neurons in the fly femur (Tuthill and Wilson, 2016b), although delays could be even longer for more distal sensors. For example, a sensory neuron at the tip of the tarsus would take ∼20 ms to travel 2 mm at an estimated conduction velocity of ∼0.3 m/s (Tuthill and Wilson, 2016b).
+Next, we fixed the motor delay at 30 ms and observed the effect of varying sensory delays. From time series data, we found that even at low values of sensory delay (0 ms, 5 ms), the effects of perturbations on model output were significant (Figure 5B). When sensory delay increased, the effects of the perturbation became more pronounced. Over a range of perturbation strengths and walking speeds, the model maintained realistic walking (KS $>−1.6$) up to about 10 ms of sensory delay (Figure 5D). This range is consistent with experimental estimates of delays from mechanosensory neurons in the fly femur (Tuthill and Wilson, 2016b), although delays could be even longer for more distal sensors. For example, a sensory neuron at the tip of the tarsus would take ∼20 ms to travel 2 mm at an estimated conduction velocity of ∼0.3 m/s (Tuthill and Wilson, 2016b).
 
 For any fixed set of values of motor and sensory delays, the KS of perturbed walking was not dependent on forward walking speed. In other words, slower walking did not improve the model’s ability to sustain walking during perturbations (Figure 5C and D). We expand on this observation in the Discussion.
 
@@ -140,7 +168,7 @@ In summary, we used a virtual fly model of walking to perform in silico manipula
 
 In this paper, we develop a computational model that realistically imitates the 3D joint kinematics of walking Drosophila and incorporates sensorimotor delay as a tunable parameter. We then used the model to establish a quantitative relationship between sensorimotor delays and locomotor robustness. We found that the model’s ability to maintain walking following external perturbations significantly degrades for delay values that exceed known physiological values, suggesting that these parameters are fundamental constraints on fly locomotion. The formulation of a modular, multi-layered model for locomotor control makes new experimentally testable hypotheses about fly motor control and can also be applied to investigate limbed locomotion in other organisms. Future extensions of the model to improve its realism may include premotor neural circuits from the fly connectome (Lesser et al., 2024; Cheong et al., 2024) and biomechanical interactions between the limb and the environment (Lobato-Rios et al., 2022; Wang-Chen et al., 2023; Vaxenburg et al., 2024).
 
-## Fundamental constraints on locomotion imposed by sensory and motor delays
+### Fundamental constraints on locomotion imposed by sensory and motor delays
 
 Sensory and motor delays are inextricable properties of animal locomotor systems. To study the impact of delays on locomotor control, we developed a hierarchical walking model with explicit inclusion of physiological delays as tunable parameters. Importantly, the model incorporates delay while preserving behavioral realism, laying the groundwork for future studies on the effect of delay on other aspects of locomotion and sensorimotor control.
 
@@ -152,17 +180,17 @@ Our model suggests that fly walking operates in a middle ground with respect to 
 
 In our model, robust locomotion was constrained by the cumulative sensorimotor delay. This result could be experimentally validated by comparing how animals with different ratios of sensory to motor delays respond to perturbations. Alternatively, it may be possible to manipulate sensory vs. motor delays in a single animal, perhaps by altering the development of specific neurons or ensheathing glia (Kottmeier et al., 2020). If sensory and motor delays have significantly different effects on walking quality, then additional compensatory mechanisms for delays could play a larger role than we expect, such as prediction through sensory integration, mechanical feedback, or compensation through central control. A rich and related topic for future exploration is the interaction of delays with body size and behavioral ecology. Longer limbs, heavier bodies, and more mechanically complex tasks may alter the tradeoffs between energetics, speed of force generation, noise, and robust sensorimotor control (Labonte et al., 2024; Sutton et al., 2023).
 
-## Role of proprioceptive feedback in fly walking
+### Role of proprioceptive feedback in fly walking
 
 Our model provides insight into the role of proprioceptive feedback in fly walking, which remains an active area of research (Dallmann et al., 2021). Many models of fly walking ignore the role of feedback, relying instead on central pattern generators (Lobato-Rios et al., 2022; Szczecinski et al., 2018; Aminzare et al., 2018) or metachondral waves (DeAngelis et al., 2019) to model kinematics. Some models incorporate proprioceptive feedback, primarily as a mechanism that alters timing of movements in inter-leg coordination (Goldsmith et al., 2020; Wang-Chen et al., 2023). Experimental work in cockroaches suggests that these fast-running insects rely on central control and mechanical feedback, particularly at high speeds (Couzin-Fuchs et al., 2015; Ayali et al., 2015b). In contrast, studies in stick insects have shown that these slow-walking animals are highly dependent on proprioceptive feedback for leg coordination during walking (Bässler, 1977; Ayali et al., 2015a; Schilling et al., 2013).
 
 Silencing mechanosensory chordotonal neurons alters step kinematics in walking Drosophila (Mendes et al., 2013; Pratt et al., 2024). Additionally, removing proprioceptive signals via amputation interferes with inter-leg coordination in flies at low walking speeds (Berendes et al., 2016). However, the role of leg proprioception in overcoming external perturbations has not previously been studied in flies. In our model, which does not include limb compliance or other biomechanical adaptations, the fly effectively overcomes perturbations using only proprioceptive feedback. The need for proprioception to compensate for perturbations may be reduced when biomechanical mechanisms are present. Nonetheless, we hypothesize that removing proprioceptive feedback would impair an insect’s ability to sustain locomotion following external perturbations.
 
-## Predictive control is critical for responding to perturbations due to motor delay
+### Predictive control is critical for responding to perturbations due to motor delay
 
 Sustaining realistic walking kinematics in the presence of perturbations and motor delays is a challenging task for any model. In our model, this design criterion motivated us to develop a compensatory prediction in the optimal controller formulation, based on Stenberg et al., 2022. The controller compensates for the known motor delay by predicting future dynamics. We found that the model was quite sensitive to the prediction horizon, i.e., how far into the future the controller predicts. The model works best when the controller’s prediction horizon matches the motor delay — we thus used matched values in all simulations. We experimented with altering the prediction horizon to be less than the motor delay, with catastrophic consequences: the model ceased walking and mostly produced noise (not shown). From this observation, we deduce that future predictions are crucial in compensating for motor delays in our walking model, in agreement with previous theoretical work on predictive or ‘forward’ models for sensorimotor control (Desmurget and Grafton, 2000; Li et al., 2023). We propose that fly motor circuits may encode predictions of future joint positions, so the fly may generate motor commands that account for motor neuron and muscle delays. Consistent with this hypothesis, Dallmann et al., 2023 recently found that descending motor commands from the brain excite GABAergic interneurons in the VNC that inhibit velocity-encoding proprioceptors. Thus, some proprioceptive feedback signals from the fly leg are predictively suppressed during self-generated movements.
 
-## Layered model produces robust walking and facilitates local control
+### Layered model produces robust walking and facilitates local control
 
 One key finding of our model is that robust walking in the presence of external perturbations can emerge from a local controller in combination with a trajectory generator that is trained only on perturbation-free walking data. We did not model adaptation because compensation emerges as a property of a tuned controller with feedback. The success of this simple, layered model suggests that fast, robust locomotion could be maintained locally, requiring minimal plasticity within central circuits.
 
@@ -174,7 +202,7 @@ Beyond walking, our layered model framework could be applied to other animals wi
 
 The layered model approach also has potential applications for biomimetic robotic locomotion. For simplicity, we used a linearized link-and-joint dynamical model. However, one could also replace this dynamical model to control a hexapod robot such as in Goldsmith, 2019. Due to its modular nature, the other modules (trajectory generator, inter-leg coordinator) would remain unchanged and the resulting model could, in theory, generate 3D kinematics for bio-mimetic walking on a robotic platform. Overall, the model can be thought of as performing a layered implementation of imitation learning, which is a popular technique in robotics (Hua et al., 2021; Johns, 2021).
 
-## Towards biomechanical and neural realism
+### Towards biomechanical and neural realism
 
 The goal of our model was to produce realistic 3D joint kinematics while incorporating sensory and motor delays. To achieve this, the model contains several physiological simplifications. First, our dynamics model did not allow dynamical coupling between legs through the mechanics of the body, as the legs are only coupled neurally through the phase coordinator. However, in real bodies, the legs are also dynamically coupled through the body and its weight distribution over the legs (Dallmann et al., 2017). Our model also did not consider explicit leg-ground contact interactions. Rather, interactions with the ground were implicitly taken into account by the trajectories learned by the neural network, though they were not made explicit in the dynamics. Our goal was to mimic the kinematic trajectory, a problem known in robotics as motion control. However, including ground contact interactions would require computing ground contact forces, which are currently unavailable in the kinematics dataset we used.
 
@@ -182,7 +210,7 @@ In order to model ground contact forces and joint torques, force-based learning 
 
 A promising avenue for future investigation is an integration of our controller architecture with a virtual physics model (Lobato-Rios et al., 2022; Wang-Chen et al., 2023; Vaxenburg et al., 2024), which would facilitate the incorporation of dynamical coupling between legs, as well as leg-ground contact interactions. The inclusion of these features may require additional coordination between the legs, which might decrease allowable values of sensory and motor delay.
 
-Another step toward biological realism is the incorporation of explicit dynamical models of proprioceptors, muscles, tendons, and other biomechanical aspects of the exoskeleton. The proprioceptive neurons in the femoral chordotonal organ of each fly leg encode angles and angular derivatives (Mamiya et al., 2018). Additional proprioceptive feedback is provided by hair plate sensory neurons (limit detectors) and campaniform sensilla (load sensors), which are distributed across each leg (Tuthill and Wilson, 2016a). Thus, our use of joint state θ,θ˙, likely underestimates the resolution of proprioceptive feedback to the fly motor system. We anticipate that the increased sensory resolution from more detailed proprioceptor models and the stability from mechanical compliance of limbs in a more detailed biomechanical model would make the system easier to control and increase the allowable range of delay parameters. Conversely, we expect that modeling the nonlinearity and noise inherent to biological sensors and actuators may decrease the allowable range of delay parameters. In the stick insect, load-sensing campaniform sensilla appear to have greater conduction delays than movement-sensing proprioceptors in the femoral chordotonal organ (Gebehart and Büschges, 2021). Future models may investigate how these different delays from different proprioceptive sensors impact sensorimotor control.
+Another step toward biological realism is the incorporation of explicit dynamical models of proprioceptors, muscles, tendons, and other biomechanical aspects of the exoskeleton. The proprioceptive neurons in the femoral chordotonal organ of each fly leg encode angles and angular derivatives (Mamiya et al., 2018). Additional proprioceptive feedback is provided by hair plate sensory neurons (limit detectors) and campaniform sensilla (load sensors), which are distributed across each leg (Tuthill and Wilson, 2016a). Thus, our use of joint state $\theta,\theta˙$, likely underestimates the resolution of proprioceptive feedback to the fly motor system. We anticipate that the increased sensory resolution from more detailed proprioceptor models and the stability from mechanical compliance of limbs in a more detailed biomechanical model would make the system easier to control and increase the allowable range of delay parameters. Conversely, we expect that modeling the nonlinearity and noise inherent to biological sensors and actuators may decrease the allowable range of delay parameters. In the stick insect, load-sensing campaniform sensilla appear to have greater conduction delays than movement-sensing proprioceptors in the femoral chordotonal organ (Gebehart and Büschges, 2021). Future models may investigate how these different delays from different proprioceptive sensors impact sensorimotor control.
 
 A further step towards neural realism would be to constrain the trajectory generator and optimal controller using patterns of synaptic connectivity within sensorimotor circuits of the fly VNC. This is now feasible using recent connectomes of the Drosophila VNC (Azevedo et al., 2024; Takemura, 2023). However, many challenges remain for connectome-constrained models, because many important physiological parameters are still unknown.
 
@@ -194,7 +222,7 @@ Our layered approach could be a useful framework for learning principles from cl
 
 ## Materials and methods
 
-## Tracking joint angles of D. melanogaster walking in 3D
+### Tracking joint angles of D. melanogaster walking in 3D
 
 We obtained fruit fly D. melanogaster walking kinematics data following the procedure previously described in Karashchuk et al., 2021. Briefly, a fly was tethered to a tungsten wire and positioned on a frictionless spherical treadmill ball suspended on compressed air. Six cameras (Basler acA800-510 μm with Computar zoom lens MLM3X-MP) captured the movement of all of the fly’s legs at 300 Hz. The fly size in pixels ranges from about 300×300 up to 700×500 pixels across the six cameras. Using Anipose, we tracked 30 keypoints on the fly, which are the following five points on each of the six legs: body-coxa, coxa-femur, femur-tibia, and tibia-tarsus joints, as well as the tip of the tarsus.
 
@@ -202,111 +230,254 @@ To fit the model described in this paper, we extracted a subset of the tracking 
 
 In total, our dataset consisted of 3473 walking bouts from 45 flies total. The average length of a walking bout was 0.877 s (263 frames), with 3049.7 s of walking total (914,909 frames).
 
-## Inter-leg phase coordinator
+### Inter-leg phase coordinator
 
 We model the coordination between legs as phase-coupled Kuramoto oscillators (Strogatz, 2000), where the frequency of each oscillator is driven by the trajectory generator described in the next section.
 
-Specifically, the phase for a leg i is ϕi and evolves according to its derivative ϕ˙i(1)ϕ˙i=Fi(θi,θ˙i,v,ϕi)+α∑j≠isin⁡(ϕj−ϕi−ϕ¯ij),
+Specifically, the phase for a leg $i$ is $ϕ_{i}$ and evolves according to its derivative $ϕ˙_{i}$
 
-where Fi is the trajectory generator function for leg i, α is the coupling strength, and ϕ¯ij is the steady-state phase offset between legs i and j.
+$$
+ϕ˙_{i}=F_{i}(\theta_{i},\theta˙_{i},v,ϕ_{i})+\alpha\sumj\neqisin⁡(ϕ_{j}−ϕ_{i}−ϕ¯_{ij}),
+$$
 
-We model the coupling across the legs as all-to-all coupling, with coupling strength α=6.5. We found this coupling strength best reproduced the phase coupling distributions from the real data (as shown in Appendix 5).
+where $F_{i}$ is the trajectory generator function for leg $i$, $\alpha$ is the coupling strength, and $ϕ¯_{ij}$ is the steady-state phase offset between legs $i$ and $j$.
 
-We estimate ϕ¯ij from the walking data by taking the circular mean over phase differences of pairs of legs during walking bouts. We find that the phase offset across legs is not strongly modulated across walking speeds in our dataset (see Appendix 1), so we model ϕ¯ij as a single constant independent of speed. In future studies, this could be a function of forward and rotation speeds to account for fine phase modulation differences.
+We model the coupling across the legs as all-to-all coupling, with coupling strength $\alpha=6.5$. We found this coupling strength best reproduced the phase coupling distributions from the real data (as shown in Appendix 5).
 
-## Trajectory generator
+We estimate $ϕ¯_{ij}$ from the walking data by taking the circular mean over phase differences of pairs of legs during walking bouts. We find that the phase offset across legs is not strongly modulated across walking speeds in our dataset (see Appendix 1), so we model $ϕ¯_{ij}$ as a single constant independent of speed. In future studies, this could be a function of forward and rotation speeds to account for fine phase modulation differences.
+
+### Trajectory generator
 
 A trajectory generator model was formulated for each of the six legs and fit separately to fly walking data tracked during tethered walking without any external perturbations.
 
-## Model formulation
+### Model formulation
 
-We formulate the trajectory generator as the function(2)(θ¨,ϕ˙)=F(θ,θ˙,v,ϕ),
+We formulate the trajectory generator as the function
 
-where θ is a vector of joint angles, θ˙ is a vector of joint angle derivatives, v is the desired walking speed and direction, and ϕ is the phase of the leg. Initially, we explored using the trajectory generator to directly output angles and angular velocities θ,θ˙; however, we found that more realistic (i.e. similar to data) trajectories were produced when we used the trajectory generator to output angular acceleration θ¨, which we integrated to produce the desired angle and angular velocities. Note that v is not communicated to or from the layers above and below; instead, we consider walking speed and direction to be given as commands descending from the brain.
+$$
+(\theta¨,ϕ˙)=F(\theta,\theta˙,v,ϕ),
+$$
 
-To compute a trajectory given an input v and an initial ϕ, θ, and θ˙, we integrate the function F numerically using the midpoint method (Lotkin, 1956). Following methods from Holden et al., 2017 and Zhang et al., 2018, we represent the function F as a multi-layer perceptron neural network with 2 hidden layers of 512 units each. We use ELU (Clevert et al., 2015) as our nonlinearity. In total, the multi-layer perceptron has 274,437 parameters for T1 legs and 272,388 parameters for T2 and T3 legs, with the slight difference in parameters due to the different number of joint angles (dimension of θ) modeled for a given leg.
+where $\theta$ is a vector of joint angles, $\theta˙$ is a vector of joint angle derivatives, $v$ is the desired walking speed and direction, and $ϕ$ is the phase of the leg. Initially, we explored using the trajectory generator to directly output angles and angular velocities $\theta,\theta˙$; however, we found that more realistic (i.e. similar to data) trajectories were produced when we used the trajectory generator to output angular acceleration $\theta¨$, which we integrated to produce the desired angle and angular velocities. Note that $v$ is not communicated to or from the layers above and below; instead, we consider walking speed and direction to be given as commands descending from the brain.
 
-## Training data
+To compute a trajectory given an input $v$ and an initial $ϕ$, $\theta$, and $\theta˙$, we integrate the function $F$ numerically using the midpoint method (Lotkin, 1956). Following methods from Holden et al., 2017 and Zhang et al., 2018, we represent the function $F$ as a multi-layer perceptron neural network with 2 hidden layers of 512 units each. We use ELU (Clevert et al., 2015) as our nonlinearity. In total, the multi-layer perceptron has 274,437 parameters for T1 legs and 272,388 parameters for T2 and T3 legs, with the slight difference in parameters due to the different number of joint angles (dimension of $\theta$) modeled for a given leg.
 
-To train the multi-layer perceptron network used to represent F, we used the fly walking data, tracked as described in the section above. The training data consists of joint angles θ, computed θ˙ and θ¨, and walking velocity v. We estimated the walking cycle phase ϕ using a Hilbert transform over the femur-tibia flexion angle for T1 legs, femur rotation angle for T2 legs, and coxa-femur angle for T3 legs. For each phase, we filtered the corresponding angle using a first-order Butterworth bandpass filter with 3 Hz and 60 Hz as critical frequencies, using the scipy library (Virtanen et al., 2020). Then, we applied a Hilbert transform to each angle to obtain a complex waveform. We estimate the walking cycle phase from each complex waveform by estimating the angle of each point in the waveform.
+### Training data
 
-## Training procedure
+To train the multi-layer perceptron network used to represent $F$, we used the fly walking data, tracked as described in the section above. The training data consists of joint angles $\theta$, computed $\theta˙$ and $\theta¨$, and walking velocity $v$. We estimated the walking cycle phase $ϕ$ using a Hilbert transform over the femur-tibia flexion angle for T1 legs, femur rotation angle for T2 legs, and coxa-femur angle for T3 legs. For each phase, we filtered the corresponding angle using a first-order Butterworth bandpass filter with 3 Hz and 60 Hz as critical frequencies, using the scipy library (Virtanen et al., 2020). Then, we applied a Hilbert transform to each angle to obtain a complex waveform. We estimate the walking cycle phase from each complex waveform by estimating the angle of each point in the waveform.
 
-Training the neural network representing F from data was performed in two steps, minimizing its error in predicting one time step, then minimizing its error in predicting a short time trajectory.
+### Training procedure
 
-In the first step, we minimized the error of F for predicting (θ¨,ϕ˙) over one time step, given the corresponding (θ,θ˙,v,ϕ) from the training data. We minimized the mean squared error of the prediction, normalized by the variance for each dimension. We trained our network for 300 iterations over the full training data using a batch size of 2500 training samples, using gradient descent with the Adam algorithm (Kingma and Ba, 2017). To ensure a robust function at this step, we applied dropout to a random 5% of the hidden units (Srivastava et al., 2014). We standardized the input and output training data to the multi-layer perceptron so that it has a mean of 0 and standard deviation of 1.
+Training the neural network representing $F$ from data was performed in two steps, minimizing its error in predicting one time step, then minimizing its error in predicting a short time trajectory.
 
-In the second step, we minimize the error of F for predicting a trajectory θ when numerically integrated over a short time horizon in the future. Specifically, we integrate F over T=60 steps given initial conditions (θ,θ˙,v,ϕ) to produce an estimated desired trajectory of θd(t). Here, we minimized the loss:(3)∑tt+T‖cos⁡(θd(t))−cos⁡(θ(t))‖22+‖sin⁡(θd(t))−sin⁡(θ(t))‖22
+In the first step, we minimized the error of $F$ for predicting $(\theta¨,ϕ˙)$ over one time step, given the corresponding $(\theta,\theta˙,v,ϕ)$ from the training data. We minimized the mean squared error of the prediction, normalized by the variance for each dimension. We trained our network for 300 iterations over the full training data using a batch size of 2500 training samples, using gradient descent with the Adam algorithm (Kingma and Ba, 2017). To ensure a robust function at this step, we applied dropout to a random 5% of the hidden units (Srivastava et al., 2014). We standardized the input and output training data to the multi-layer perceptron so that it has a mean of 0 and standard deviation of 1.
+
+In the second step, we minimize the error of $F$ for predicting a trajectory $\theta$ when numerically integrated over a short time horizon in the future. Specifically, we integrate $F$ over $T=60$ steps given initial conditions $(\theta,\theta˙,v,ϕ)$ to produce an estimated desired trajectory of $\theta_{d}(t)$. Here, we minimized the loss:
+
+$$
+\sumtt+T‖cos⁡(\theta_{d}(t))−cos⁡(\theta(t))‖_{2}^{2}+‖sin⁡(\theta_{d}(t))−sin⁡(\theta(t))‖_{2}^{2}
+$$
 
 using gradient descent with the Adam algorithm (Kingma and Ba, 2017). During training, we clip gradients to a norm of 10 to stabilize training.
 
 The training was implemented using Tensorflow (Abadi, 2015) running on a computer with NVIDIA GeForce RTX 2070 GPU and AMD Ryzen Threadripper 1920X 12-Core Processor.
 
-## Leg dynamics and optimal controller formulation
+### Leg dynamics and optimal controller formulation
 
 All techniques used for dynamics formulation are standard tools from control theory. We begin with a link-and-joint model of the fly leg, as shown in Figure 1C. For simplicity, we only model joints that exhibit large ranges of movement during naturalistic walking and turning. For instance, varying femur rotation is important to the movements of the middle legs, but the front legs exhibit near-constant femur rotation Karashchuk et al., 2021; thus, a femur rotation joint is included for the middle and hind legs only. The joints included for each leg are shown in Table 1.
 
-We write the Denavit-Hartenberg (DH) table of the leg model and use this to systematically derive the Euler-Lagrange matrix equations of motion:(4)τ=M(θ)θ¨+C(θ,θ˙)θ˙+B(θ)θ˙+g(θ),
+**Table 1.**
+ Joints included for leg models.
 
-where τ is the vector of joint torques; θ, θ˙, and θ¨ are vectors of joint angles, angular velocity, and angular acceleration; M, C, B, are the inertia, Coriolis, and friction matrices, and g is the gravity vector.
 
-Let us define the state to be the angles and angular derivatives q=[q1q2]=[θθ˙] and input to be torques τ. We next rearrange (4) into the form q˙=F(q,τ), so that(5)[q1˙q2˙]=[q2−M(q1)−1(C(q1,q2)q2+B(q1)q2+g(q1))]+[0M(q1)−1]τ.
+<table>
+  <thead>
+    <tr>
+      <th>Joint</th>
+      <th>Front legs</th>
+      <th>Middle legs</th>
+      <th>Hind legs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body-coxa flexion</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Coxa rotation</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Coxa-femur flexion</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Femur rotation</td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Femur-tibia flexion</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
 
-To linearize this system, we choose equilibrium values q¯ and τ¯, such that F(q¯,τ¯)=0. In particular, q1¯ is taken to be the average joint angles for each leg joint computed from the data. It follows that q2¯=0, and τ¯=g(q¯1) gives the desired equilibrium.
+We write the Denavit-Hartenberg (DH) table of the leg model and use this to systematically derive the Euler-Lagrange matrix equations of motion:
 
-We linearized about this equilibrium point, which leads to an equation of the following form:(6)x˙=Acx+Bcu,
+$$
+\tau=M(\theta)\theta¨+C(\theta,\theta˙)\theta˙+B(\theta)\theta˙+g(\theta),
+$$
 
-where x=q−q¯ and Bc are the Jacobians with respect to q and τ, respectively. In other words,(7)Ac=∂F∂q(q¯,τ¯)(8)Bc=∂F∂τ(q¯,τ¯).
+where $\tau$ is the vector of joint torques; $\theta$, $\theta˙$, and $\theta¨$ are vectors of joint angles, angular velocity, and angular acceleration; $M$, $C$, $B$, are the inertia, Coriolis, and friction matrices, and $g$ is the gravity vector.
+
+Let us define the state to be the angles and angular derivatives $q=[q_{1}q_{2}]=[\theta\theta˙]$ and input to be torques $\tau$. We next rearrange (4) into the form $q˙=F(q,\tau)$, so that
+
+$$
+[q_{1}˙q_{2}˙]=[q_{2}−M(q_{1})^{−1}(C(q_{1},q_{2})q_{2}+B(q_{1})q_{2}+g(q_{1}))]+[0M(q_{1})^{−1}]\tau.
+$$
+
+To linearize this system, we choose equilibrium values $q¯$ and $\tau¯$, such that $F(q¯,\tau¯)=0$. In particular, $q_{1}¯$ is taken to be the average joint angles for each leg joint computed from the data. It follows that $q_{2}¯=0$, and $\tau¯=g(q¯_{1})$ gives the desired equilibrium.
+
+We linearized about this equilibrium point, which leads to an equation of the following form:
+
+$$
+x˙=A_{c}x+B_{c}u,
+$$
+
+where $x=q−q¯$ and $B_{c}$ are the Jacobians with respect to $q$ and $\tau$, respectively. In other words,
+
+$$
+A_{c}=\frac{∂F}{∂q}(q¯,\tau¯)
+$$
+
+
+
+$$
+B_{c}=\frac{∂F}{∂\tau}(q¯,\tau¯).
+$$
 
 In our code, we use the SymPyBotics toolbox (Sousa, 2013) to obtain symbolic equations for the quantities in Equation 4, then numerically compute Jacobian values.
 
-Next, we rewrite the system in discrete time using a sampling interval T, which is typically chosen to be an integer multiple of the sampling interval from the data (the tracking data was acquired every T=1/300 s). In our controller simulations, we use T=1/600 s. The discretized dynamics are thus written as:(9)x(t+T)=Ax(t)+Bu(t),
+Next, we rewrite the system in discrete time using a sampling interval $T$, which is typically chosen to be an integer multiple of the sampling interval from the data (the tracking data was acquired every $T=1/300$ s). In our controller simulations, we use $T=1/600$ s. The discretized dynamics are thus written as:
 
-where A=I+AcT and B=BcT.
+$$
+x(t+T)=Ax(t)+Bu(t),
+$$
 
-Finally, we perform a coordinate shift to error dynamics. This allows us to apply standard control techniques for trajectory tracking. We define the tracking error to be y=q−qd, where qd is the desired state, and this error obeys the following dynamics:(10a)y(t+1)=Ay(t)+Bu(t)+w(t)+wtraj(t)(10b)wtraj(t)=A(qd(t)−q¯)+q¯−qd(t+1)
+where $A=I+A_{c}T$ and $B=B_{c}T$.
 
-where w is the external perturbation. wtraj represents the effect of constantly changing trajectories — for example, if the desired trajectory at the current time-step is some value a, and the desired trajectory at the next time-step is some other value b, then this is equivalent to introducing a perturbation of b−a. Error y is a column vector with length ny (8 for front legs, and 6 for the other legs), and input u is a column vector with length nu=ny/2.
+Finally, we perform a coordinate shift to error dynamics. This allows us to apply standard control techniques for trajectory tracking. We define the tracking error to be $y=q−q_{d}$, where $q_{d}$ is the desired state, and this error obeys the following dynamics:
 
-To include motor delay (known as actuation delay in controls literature) and sensory delay, we make use of augmented state formulations as introduced in Stenberg et al., 2022. Let the motor delay be μ steps. We re-define u as the intended actuation, which is delayed by μ steps before it affects the state. We introduce a variable a such that ai represents u delayed by i steps. a is a column vector with length μ×nu, and it can be written as:(11)a1(t+1)=u(t),ai(t+1)=ai−1(t),i∈[2,μ]
+$$
+y(t+1)=Ay(t)+Bu(t)+w(t)+w_{traj}(t)
+$$
 
-Similarly, let the sensory delay be δ steps. The state information y is delayed by δ steps before it reaches the controller. We introduce another variable s such that si represents y delayed by i steps. s is a column vector with length δ×ny, and can be written as:(12)s1(t+1)=y(t),si(t+1)=si−1(t),i∈[2,δ]
 
-We define g as the effect of changing trajectories in the future, where gi=wtraj(t+i). Note that this does not correspond to any physical signal — rather, it is a virtual variable that allows us to incorporate knowledge of the future trajectory. g is a column vector with length (μ+1)×ny, and it can be written as:(13)gμ(t+1)=wtraj(t+μ+1),gi(t+1)=gi+1(t),i∈[0,μ−1]
 
-We can now rewrite the dynamics (Equation 10a) to include delays using these variables:(14)y(t+1)=Ay(t)+Baμ(t)+g0(t)+w(t)
+$$
+w_{traj}(t)=A(q_{d}(t)−q¯)+q¯−q_{d}(t+1)
+$$
 
-Finally, we define f as the prediction of y in the future (assuming no perturbations), where fi represents the prediction i steps into the future. Like g, this variable does not correspond to any physical signal, and is used to incorporate predictive capability into the controller. f is a column vector of length μ×ny. The first portion of f can be written as(15)f1(t+1)=Ay(t+1)+Baμ−1(t)+g1(t)=A2y(t)+ABaμ(t)+Ag0(t)+Aw(t)+Baμ−1(t)+g1(t)
+where $w$ is the external perturbation. $w_{traj}$ represents the effect of constantly changing trajectories — for example, if the desired trajectory at the current time-step is some value $a$, and the desired trajectory at the next time-step is some other value $b$, then this is equivalent to introducing a perturbation of $b−a$. Error $y$ is a column vector with length $n_{y}$ (8 for front legs, and 6 for the other legs), and input $u$ is a column vector with length $n_{u}=n_{y}/2$.
 
-and subsequent values can be written as(16)fi(t+1)=A(fi−1(t+1))+Baμ−i(t)+gi(t),i∈[2,μ−1]fμ(t+1)=A(fμ−1(t+1))+Bu(t)+gμ(t)
+To include motor delay (known as actuation delay in controls literature) and sensory delay, we make use of augmented state formulations as introduced in Stenberg et al., 2022. Let the motor delay be $\mu$ steps. We re-define $u$ as the intended actuation, which is delayed by $\mu$ steps before it affects the state. We introduce a variable $a$ such that $a_{i}$ represents $u$ delayed by $i$ steps. $a$ is a column vector with length $\mu\timesn_{u}$, and it can be written as:
 
-where the A term must be written out and simplified as is done in Equation 15. We define an augmented state vector z:(17)z(t)=[y(t)f(t)a(t)s(t)g(t)]
+$$
+a_{1}(t+1)=u(t),a_{i}(t+1)=a_{i−1}(t),i\in[2,\mu]
+$$
 
-and write the overall system in the form of(18)z(t+1)=Fz(t)+Gu(t)+waug(t),(19)r(t)=Hz(t),
+Similarly, let the sensory delay be $\delta$ steps. The state information $y$ is delayed by $\delta$ steps before it reaches the controller. We introduce another variable $s$ such that $s_{i}$ represents $y$ delayed by $i$ steps. $s$ is a column vector with length $\delta\timesn_{y}$, and can be written as:
 
-where F, G, H, and waug(t) can be directly obtained by rearranging Equation 11, Equation 12, Equation 13, Equation 14, Equation 16. In particular, H is zero everywhere except at the block corresponding to sδ, where it is identity, i.e., r(t)=sδ(t). This is the only information from the system that is received by the controller.
+$$
+s_{1}(t+1)=y(t),s_{i}(t+1)=s_{i−1}(t),i\in[2,\delta]
+$$
 
-To achieve effective trajectory tracking, we seek a control law under which y remains small. This can be achieved using the Linear Quadratic Gaussian (LQG) controller (Åström and Murray, 2021). The controller is governed by the following equations:(20)z^(t+1)=Fz^(t)+Gu(t)+L(r(t)−Hz^(t))(21)u(t)=Kz^(t),
+We define $g$ as the effect of changing trajectories in the future, where $g_{i}=w_{traj}(t+i)$. Note that this does not correspond to any physical signal — rather, it is a virtual variable that allows us to incorporate knowledge of the future trajectory. $g$ is a column vector with length $(\mu+1)\timesn_{y}$, and it can be written as:
 
-where z^ is the estimate of the augmented state (comprised of y^,f^,a^,s^, and g^), estimated via a steady-state Kalman filter; L and K are the optimal observer and controller matrices, respectively, synthesized via discrete algebraic Riccati equations. We directly feed in future values of the trajectory by setting g^μ(t)=wtraj(t+μ). By doing this, we ensure that the future trajectory ‘estimate’ is perfect, i.e., g^=g. This helps the controller estimate values of f (future states) and y. The overall information flow within, to, and from the controller is shown in Figure 6.
+$$
+g_{\mu}(t+1)=w_{traj}(t+\mu+1),g_{i}(t+1)=g_{i+1}(t),i\in[0,\mu−1]
+$$
+
+We can now rewrite the dynamics (Equation 10a) to include delays using these variables:
+
+$$
+y(t+1)=Ay(t)+Ba_{\mu}(t)+g_{0}(t)+w(t)
+$$
+
+Finally, we define $f$ as the prediction of $y$ in the future (assuming no perturbations), where $f_{i}$ represents the prediction $i$ steps into the future. Like $g$, this variable does not correspond to any physical signal, and is used to incorporate predictive capability into the controller. $f$ is a column vector of length $\mu\timesn_{y}$. The first portion of $f$ can be written as
+
+$$
+f_{1}(t+1)=Ay(t+1)+Ba_{\mu−1}(t)+g_{1}(t)=A^{2}y(t)+ABa_{\mu}(t)+Ag_{0}(t)+Aw(t)+Ba_{\mu−1}(t)+g_{1}(t)
+$$
+
+and subsequent values can be written as
+
+$$
+f_{i}(t+1)=A(f_{i−1}(t+1))+Ba_{\mu−i}(t)+g_{i}(t),i\in[2,\mu−1]f_{\mu}(t+1)=A(f_{\mu−1}(t+1))+Bu(t)+g_{\mu}(t)
+$$
+
+where the $A$ term must be written out and simplified as is done in Equation 15. We define an augmented state vector $z$:
+
+$$
+z(t)=[y(t)f(t)a(t)s(t)g(t)]
+$$
+
+and write the overall system in the form of
+
+$$
+z(t+1)=Fz(t)+Gu(t)+w_{aug}(t),
+$$
+
+
+
+$$
+r(t)=Hz(t),
+$$
+
+where F, G, H, and $w_{aug}(t)$ can be directly obtained by rearranging Equation 11, Equation 12, Equation 13, Equation 14, Equation 16. In particular, H is zero everywhere except at the block corresponding to $s_{\delta}$, where it is identity, i.e., $r(t)=s_{\delta}(t)$. This is the only information from the system that is received by the controller.
+
+To achieve effective trajectory tracking, we seek a control law under which $y$ remains small. This can be achieved using the Linear Quadratic Gaussian (LQG) controller (Åström and Murray, 2021). The controller is governed by the following equations:
+
+$$
+z^(t+1)=Fz^(t)+Gu(t)+L(r(t)−Hz^(t))
+$$
+
+
+
+$$
+u(t)=Kz^(t),
+$$
+
+where $z^$ is the estimate of the augmented state (comprised of $y^,f^,a^,s^$, and $g^$), estimated via a steady-state Kalman filter; L and K are the optimal observer and controller matrices, respectively, synthesized via discrete algebraic Riccati equations. We directly feed in future values of the trajectory by setting $g^_{\mu}(t)=w_{traj}(t+\mu)$. By doing this, we ensure that the future trajectory ‘estimate’ is perfect, i.e., $g^=g$. This helps the controller estimate values of $f$ (future states) and $y$. The overall information flow within, to, and from the controller is shown in Figure 6.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99005/elife-99005-fig6-v1.jpg)
 
 **Figure 6.:** The controller receives delayed sensory information from the dynamics model, as well as future trajectory information from the trajectory generator. The controller interacts with the dynamics model via a delayed motor action signal. The internal structure of the controller is that of a standard output feedback controller, which incorporates estimation via a Kalman filter. Dotted lines indicate muscle and sensor delays.
 
-## Generate joint trajectories of the complete model with perturbations
+### Generate joint trajectories of the complete model with perturbations
 
-The full model integrates all of the modules to generate trajectories of joint angles over time. The phase coordinator and trajectory generators combine to compute the desired joint angles θi for each leg i, and the controller implements them constrained by the dynamics. We run the full model at 600 Hz.
+The full model integrates all of the modules to generate trajectories of joint angles over time. The phase coordinator and trajectory generators combine to compute the desired joint angles $\theta_{i}$ for each leg $i$, and the controller implements them constrained by the dynamics. We run the full model at 600 Hz.
 
-At each time step, we first update the phases of the legs ϕi based on the phase coupling equation above. Every 2 timesteps, we update the target joint angles θd using the trajectory generator model. We run the trajectory generator F for dmotor time steps on its own, by continually integrating its output. This future trajectory forms the basis of f, the predicted future errors used to guide the controller.
+At each time step, we first update the phases of the legs $ϕ_{i}$ based on the phase coupling equation above. Every 2 timesteps, we update the target joint angles $\theta_{d}$ using the trajectory generator model. We run the trajectory generator $F$ for $d_{motor}$ time steps on its own, by continually integrating its output. This future trajectory forms the basis of $f$, the predicted future errors used to guide the controller.
 
-Each time step, we run the controller and dynamics model to control the torque τ so that the joint angles θ go towards the target joint angles θd. If there is a disturbance, we apply it to the joint angles and derivatives at this point. Every 8 timesteps, we set θd=θ, so that the trajectory generator predicts an intended trajectory in line with the current state.
+Each time step, we run the controller and dynamics model to control the torque $\tau$ so that the joint angles $\theta$ go towards the target joint angles $\theta_{d}$. If there is a disturbance, we apply it to the joint angles and derivatives at this point. Every 8 timesteps, we set $\theta_{d}=\theta$, so that the trajectory generator predicts an intended trajectory in line with the current state.
 
 For the perturbation numerical experiments described in the Results, we ran all simulations for 1800 timesteps at 600 Hz. For persistent stochastic perturbations, we applied the perturbation from 600th timesteps to 1200th timesteps. For impulse perturbations, we applied a single strong perturbation at 600th timesteps.
 
 We ran all our simulations on an Intel(R) Core(TM) i9-9940X CPU. We used GNU Parallel (Tange, 2011) to run simulations on multiple cores simultaneously.
 
-## Computing kinematic similarity (KS) by quantifying likelihood of walking kinematics relative to ground truth
+### Computing kinematic similarity (KS) by quantifying likelihood of walking kinematics relative to ground truth
 
 We followed a multi-step procedure in order to quantify the likelihood of the simulated walking kinematics relative to observed distribution of walking kinematics. This procedure is schematized in Figure 4A.
 
@@ -316,6 +487,6 @@ We chose two dimensions for PCA for two key reasons. First, these two dimensions
 
 We run our model described above to produce simulated joint angle trajectories. To estimate a likelihood of a simulated set of angles, we first projected them onto the same principal components identified from the observed kinematics. Then, we use the KDE model to estimate the logarithmic probability density function (log PDF) for each frame during the perturbation; we refer to this as the kinematic similarity (KS). For persistent stochastic perturbations, we estimated mean KS during the perturbation, from 600th timesteps to 1200th timesteps. For impulse perturbations, we estimated mean KS in the transient recovery process, which we estimated to be from 610th timesteps to the 800th timesteps.
 
-## Visualization of joint movement trajectories
+### Visualization of joint movement trajectories
 
 For Video 1, we visualized the simulated and real joint movements using the biomechanical fly body model from Vaxenburg et al., 2024. For each frame, we ran an inverse kinematics optimization over the model angles to match the simulated or real joint positions of the fly. We did not simulate realistic physics of the fly legs and their interactions with the ground in these visualizations. In our data, the fly thorax was fixed, and the wings were removed, so in these visualizations, we also fixed every other degree-of-freedom in the fly model besides the six legs. For the remaining videos, we visualized the joints as ball-and-stick models using matplotlib (Hunter, 2007).

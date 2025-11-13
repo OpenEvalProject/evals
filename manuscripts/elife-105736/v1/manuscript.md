@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05njb9z20 Department of Biology, Biotechnical Faculty, University of Ljubljana Ljubljana Slovenia
+1. Department of Biology, Biotechnical Faculty, University of Ljubljana Ljubljana Slovenia ([ROR:05njb9z20](https://ror.org/05njb9z20))
 
 † Corresponding author
 

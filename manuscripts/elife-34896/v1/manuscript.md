@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34896.001 The transport of glutamate into synaptic vesicles exhibits an unusual form of regulation by Cl - as well as an associated Cl - conductance. To distinguish direct effects of Cl - on the transporter from indirect effects via the driving force Δψ, we used whole endosome recording and report the first currents due to glutamate flux by the vesicular glutamate transporters (VGLUTs). Chloride allosterically activates the VGLUTs from both sides of the membrane, and we find that neutralization of an arginine in transmembrane domain four suffices for the lumenal activation. The dose dependence suggests that Cl - permeates through a channel and glutamate through a transporter. Competition between the anions nonetheless indicates that they use a similar permeation pathway. By controlling both ionic gradients and Δψ, endosome recording isolates different steps in the process of synaptic vesicle filling, suggesting distinct roles for Cl - in both allosteric activation and permeation.
+The transport of glutamate into synaptic vesicles exhibits an unusual form of regulation by Cl- as well as an associated Cl- conductance. To distinguish direct effects of Cl- on the transporter from indirect effects via the driving force Δψ, we used whole endosome recording and report the first currents due to glutamate flux by the vesicular glutamate transporters (VGLUTs). Chloride allosterically activates the VGLUTs from both sides of the membrane, and we find that neutralization of an arginine in transmembrane domain four suffices for the lumenal activation. The dose dependence suggests that Cl- permeates through a channel and glutamate through a transporter. Competition between the anions nonetheless indicates that they use a similar permeation pathway. By controlling both ionic gradients and Δψ, endosome recording isolates different steps in the process of synaptic vesicle filling, suggesting distinct roles for Cl- in both allosteric activation and permeation.
 
 ## Introduction
 
@@ -30,39 +30,83 @@ The electrophysiological analysis of transport-associated currents provides a wa
 
 ## Results
 
-## Whole endosome recording detects glutamate currents by the VGLUTs
+### Whole endosome recording detects glutamate currents by the VGLUTs
 
 Similar to other synaptic vesicle proteins, the wild type VGLUTs target to endosomes when expressed in non-neural cells (Tan et al., 1998; Foss et al., 2013). To produce enlarged endosomes amenable to the patch clamp technique, we cotransfected HEK293 cells with a constitutively active version of early endosome Rab5 (Q79L) as well as VGLUT fused to EGFP (Stenmark et al., 1994; Dong et al., 2008; Cang et al., 2013). After mechanical isolation of the enlarged GFP+ endosomes, we performed whole endosome recording with a pipette solution containing 140 mM Cl- at pH 5 since this maximally activated the VGLUT-associated Cl- conductance in oocytes (Eriksen et al., 2016) (Figure 1A) and mimics the conditions in recycling synaptic vesicles. To minimize background currents due to endogenous conductances, we eliminated permeant cations from all solutions. We also included the Cl- channel blocker 5-nitro-2-(3-phenylpropylamino)benzoic acid (NPPB) in the pipette to inhibit endogenous Cl- currents since we had previously found that NPPB does not affect the VGLUT-associated Cl- conductance in oocytes (Eriksen et al., 2016). Using voltage ramps from −100 to +100 mV in endosomes expressing VGLUT1, we observe small but substantial inwardly rectifying currents in the absence of external Cl- (Figure 1A,C). In the absence of permeant cations, these currents most likely reflect the efflux of Cl-. Controls expressing Q79L Rab5 alone show no inward currents due to the suppression of an endogenous Cl- conductance by lumenal (pipette) NPPB (Figure 1B, Figure 1—figure supplement 1B,C). The addition of external Cl- (140 mM) does not consistently affect the inward current but substantially increases the outward currents associated with VGLUT1, with no effect observed in Q79L Rab5 controls (Figure 1A–C). The small size of the currents enables the low background to interfere with the precise determination of reversal potential, but shifts in the appropriate direction are consistent with the behavior of Cl- as a permeant ion. The currents also vary in magnitude, which might reflect differences in the expression on individual endosomes (Figure 1 insets). Analysis of the other two isoforms (VGLUT2 and 3) shows behavior similar to VGLUT1 (Figure 1—figure supplement 2A–D). It is possible that the isoforms differ in current amplitude but the selection of GFP+ endosomes for recording makes it difficult to assess a role for differences in transporter expression. Like the VGLUTs expressed in oocytes (Eriksen et al., 2016), VGLUTs expressed in endosomes thus exhibit a Cl- conductance.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig1-v1.jpg)
+
+**Figure 1.:** (A,D) Whole endosome patch clamp recording configuration, with 140 mM Cl- at pH 5.0 and NPPB in the pipette, showing outward currents at positive lumenal potentials and inward currents at negative potentials. Representative recordings from control (Rab5 Q79L) and VGLUT1+ (Rab5 Q79L) endosomes with voltage ramps from −100 mV to +100 mV are shown from the same endosome in (B) as in (E) and in (C) as in (F), in the presence of external gluconate (0 Cl-), Cl- (140 mM), aspartate or glutamate (both 20 mM). Insets show the maximum inward and outward currents for each endosome (B, Iin, p=0.698, Iout, p=0.748 both by paired t-test; C, Iin, p=0.910, Iout, p=0.0156 both by Wilcoxon; E, Iin, p=0.202, Iout, p=0.232 both by paired t-test; F, Iin, p=0.360 by paired t-test, Iout, p=0.001 by paired t-test, n = 7–9 for all). *p<0.05 by Wilcoxon matched pairs test; +++p<0.001 by paired t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Whole endosome recording conditions with 140 mM Cl- at pH 5.0 but no NPPB in the pipette (lumen). Representative recordings from cells expressing only rab Q79L (B), VGLUT1 (D), VGLUT2 (E) and VGLUT3 (F), using voltage ramps as described in Figure 1. (C) Maximum inward and outward currents, with 140 mM external gluconate (0 Cl-) used to define the baseline outward current, and no baseline subtraction for the maximum inward current (n = 3–8). Bar graph indicates mean ± SEM. C, control; 1–3, VGLUT1-3 and statistical comparisons are made to C. ‡p<0.01, ‡‡p<0.001 by Mann-Whitney test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Whole endosome recording conditions with 140 mM Cl- at pH 5.0 and 200 µM NPPB in the pipette (lumen). Representative recordings from endosomes expressing VGLUT2 (B,E) and VGLUT3 (C,F). The top (A,B) and bottom (C,D) recordings were made from the same endosome, demonstrating inward and outward Cl- currents (top) and outward glutamate currents (bottom). The compiled data from multiple endosomes are shown in D, the currents defined as in Figure 1—figure supplement 1 and statistical comparisons made to control (C). (n = 5–9). Bar graph indicates mean ± SEM. ‡‡p<0.001, ‡‡‡p<0.0001 by Mann-Whitney test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative endosome recordings with 140 mM Cl- at pH 5.0 in the patch pipette, either Cl- (A) or glutamate (D) in the bath solution, with increasing concentrations of Evans Blue in the bath (n = 4). Dose response of the outward Cl- (B), inward Cl- (C) and outward glutamate currents (E) to Evans Blue (n = 3–4).
+
 To assess the flux of glutamate, we added the amino acid to endosomes expressing VGLUT1. Glutamate (20 mM) produces similar but slightly smaller outward currents than Cl- added to the same endosomes, with a negative shift in reversal potential supporting behavior as a permeant ion (Figure 1D–F). To test specificity, we used the closely related amino acid aspartate, which is not recognized by the VGLUTs (Maycox et al., 1988; Carlson et al., 1989). In contrast to glutamate, aspartate produces no outward currents and cells expressing mutant Rab5 alone show no response to glutamate or aspartate (Figure 1D–F). VGLUT2 and 3 exhibit outward currents similar to VGLUT1 in response to glutamate and not aspartate (Figure 1—figure supplement 2D–F). Further, the dye Evans Blue, which is known to block vesicular glutamate transport (Chaudhry et al., 2008), inhibits both Cl- and glutamate currents with submicromolar potency (Figure 1—figure supplement 3). The residual currents despite Evans Blue presumably reflect endogenous HEK cell conductances. Despite the difficulty inherent in recording transport-associated currents from intracellular membranes, we show that endosome recording can thus detect glutamate transport currents mediated by the VGLUTs.
 
-## Allosteric activation of the VGLUTs by lumenal and cytosolic Cl−
+### Allosteric activation of the VGLUTs by lumenal and cytosolic Cl−
 
 To understand how Cl- stimulates vesicular glutamate transport, we first used endosome recording to characterize the role of lumenal Cl-. As anticipated, reduction of the lumenal (pipette) Cl- to 10 mM effectively eliminates the inward currents (due to Cl- efflux) mediated by VGLUT1 (Figure 2A). However, the reduction also prevents outward currents due to both external Cl- and glutamate, and 30 mM lumenal Cl- has a similar effect (Figure 2A,B). At 50 mM lumenal Cl-, however, the outward currents due to external Cl- and glutamate become more substantial, as do the inward currents due to Cl- efflux (Figure 2C). Independent of effects on pH and Δψ, lumenal Cl- is thus required to activate the flux of glutamate as well as Cl-, supporting the allosteric role proposed previously on the basis of the VGLUT-associated Cl- conductance (Eriksen et al., 2016). The inward currents increase with lumenal Cl-, consistent with its role as permeant ion, but the outward currents saturate at 50 mM lumenal Cl-, consistent with the allosteric activation by lumenal Cl- of the VGLUT-associated Cl- conductance previously reported (Figure 2—figure supplement 1) (Eriksen et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) Representative whole endosome recordings under the same conditions as in Figure 1 but in the presence of 10 mM (A), 30 mM (B) and 50 mM lumenal Cl- (C) (n = 4 each). (D) To assess potentiation, 10 mM Cl- was added to the external solution without (E) or with (F) 20 mM glutamate (n = 5 each). Insets show maximum outward currents for each endosome in the different external conditions (A, ICl, p=0.147, Iglut, p=0.150 both by paired t-test, B, ICl, p=0.327, Iglut, p=0.666 both by paired t-test, C, ICl, p=0.035, Iglut, p=0.010 both by paired t-test, E, ICl, p=0.01 by Wilcoxon, F, Iglut, p=0.002 by paired t-test). (G) Increase in outward current produced by 10 mM external Cl- without or with 20 mM glutamate (p=0.034 by paired t-test). *p<0.05 by Wilcoxon; +p<0.05 and ++p<0.01 by paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The compiled inward and outward (Cl- and glutamate) VGLUT1 currents from Figure 2 are replotted as a function of lumenal Cl- concentration. Bar graph indicates mean ± SEM. n = 4.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative recordings (A–C) and compiled data (D) for VGLUT1+ (A), VGLUT2+ (B) and VGLUT3+ (C) endosomes with 140 mM Br- at pH 5 in the pipette and 140 mM NMDG gluconate (0 Cl-), Br- (140 mM), glutamate or aspartate (both 20 mM) in the bath solution. The outward current for gluconate was used as the baseline for Br-, PO43- and Cl- currents, and the outward current for aspartate was used as the baseline for glutamate currents (D). ‡p<0.05 by Mann-Whitney test. Representative recordings (E,F) and compiled data (G) for VGLUT1-3+ endosomes in the presence of 140 mM external NMDG Cl (E), NMDG PO4 or Na PO4 (F), with 140 mM NMDG Cl at pH 5.0 in the lumen (n = 5). Bar graphs indicate mean ± SEM and statistical comparisons made to control (D) and to NMDG Cl (G). +p<0.05, ++p<0.01 by paired t-test.
 
 We then examined the role of cytosolic Cl-, maintaining pipette Cl- at 140 mM in light of the requirement for lumenal activation. In the absence of external Cl-, glutamate produces easily detectable outward currents (Figure 1F, Figure 1—figure supplement 2D–F). Consistent with this, synaptic vesicles do not absolutely require external (cytosolic) Cl- to accumulate glutamate (Disbrow et al., 1982; Naito and Ueda, 1985; Carlson et al., 1989; Hartinger and Jahn, 1993; Wolosker et al., 1996). To determine whether external Cl- has any impact on glutamate currents, we compared the effect of external Cl- in the presence and absence of external glutamate (Figure 2D). At 10 mM, external Cl- produces small outward currents just slightly larger than those with no external Cl- (Figure 2E). In contrast, 10 mM Cl- clearly potentiates the currents due to 20 mM glutamate (Figure 2F,G), and this larger effect in the presence of glutamate excludes a simple additive interaction between the two currents. With whole endosome voltage clamp eliminating any change in ionic gradients or Δψ, this potentiation strongly supports an allosteric mechanism for the acceleration of synaptic vesicle filling and glutamate release by cytosolic Cl- (Hori and Takahashi, 2012).
 
 We also used endosome recording to assess the recognition and permeation of other anions. Previous work has identified only one anion other than Cl- that activates vesicular glutamate transport—Br- (Naito and Ueda, 1985; Eriksen et al., 2016). By comparison to endosomes with low lumenal Cl- (Figure 2A), we now find that lumenal Br- activates glutamate currents in endosomes expressing VGLUT1-3 (Figure 2—figure supplement 2A–D). In addition, external Br- produces outward currents with a negative shift in reversal potential similar to that caused by Cl- and glutamate, indicating that, like the other anions, Br- also permeates. The VGLUTs were originally identified as Na+-dependent phosphate transporters (Ni et al., 1994; Aihara et al., 2000), and experiments with purified recombinant protein reconstituted into artificial membranes have supported this function (Juge et al., 2006; Preobraschenski et al., 2018). However, the addition of phosphate to endosomes expressing VGLUT1 did not produce any detectable currents in the presence or absence of external Na+ (Figure 2—figure supplement 2E–G). The VGLUTs may therefore either fail to transport phosphate, or mediate electroneutral cotransport of Na+ and phosphate).
 
-## A conserved arginine residue in TM4 suffices for allosteric activation of the VGLUTs by chloride
+### A conserved arginine residue in TM4 suffices for allosteric activation of the VGLUTs by chloride
 
 To understand the relationship between allosteric activation and permeation by Cl-, we sought to identify mutations that distinguish between these functions, focusing on conserved basic residues in transmembrane domains (TMs) that might interact with Cl- (Figure 3A). Taking advantage of structural modeling and previous functional studies (Juge et al., 2006; Almqvist et al., 2007; Herman et al., 2014; Eriksen et al., 2016), we first neutralized a highly conserved arginine residue in TM7. Consistent with previous work in Xenopus oocytes (Eriksen et al., 2016), all 3 VGLUT isoforms with this mutation (R314A in VGLUT1, R322A in VGLUT2 and R326A in VGLUT3) show no significant inward or outward Cl- or glutamate currents (Figure 3B,C, Figure 3—figure supplement 1A–C,D,G), similar to control endosomes expressing Rab5 Q79L alone (Figure 1B). Importantly, this mutation does not impair VGLUT expression (Figure 3—figure supplement 2F) (Eriksen et al., 2016) or localization of the GFP-tagged protein (data not shown), indicating a specific requirement for this residue in transport.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sequence alignment of transmembrane domains TM 7, 1 and 4 from the related VGLUT isoforms and species with highly conserved arginine highlighted (red). (B) Representative whole endosome recordings (with 140 mM NMDG Cl at pH 5.0 in the pipette) of VGLUT1 R314A (C) and R80A (D) (n = 4 each). (E) Representative recordings with 0 mM Cl- in the pipette of endosomes expressing VGLUT1 WT (F) and R176A (G) (n = 5–9). Insets show maximum outward currents in the different external solutions (C, ICl, p=0.547, Iglut, p=0.080 both by paired t-test, D, ICl, p=0.062, Iglut, p=0.782 both by paired t-test, F, ICl, p=0.625 by Wilcoxon, Iglut, p=0.397 by paired t-test, G, ICl, p=0.002, Iglut, p=0.017 both by paired t-test). +p<0.05 and ++p<0.01 by paired t-test. Insets (C,D,F,G) indicate maximal outward currents for each endosome.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Compiled data (A–C) and sample traces (D–I) for alanine substitutions at conserved arginine residues in TM7, 1 and 4 of VGLUT1 (A), VGLUT2 (B,D–F) and VGLUT3 (C,G–I). All endosomes were recorded with 140 mM NMDG Cl at pH 5.0 in the pipette (n = 3–5) except for those expressing the arginine mutant in TM4, which were recorded with 140 mM NMDG gluconate (0 mM Cl-) in the pipette (n = 4–7). The baselines for outward Cl- and glutamate currents were defined as in Figure 1—figure supplement 1 and Figure 2—figure supplement 2. Bar graphs indicate mean ± SEM. +p<0.05, ++p<0.01 by unpaired t-test and ‡p<0.05, ‡‡p<0.01 by Mann-Whitney test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Representative recordings with 140 mM Cl- in the pipette from endosomes expressing VGLUT1 R176K (B) and R176Q (n = 3) (C). Representative recordings with 0 mM Cl- in the pipette of endosomes expressing VGLUT1 R176K (E) (n = 3). Insets show maximum outward currents in the different external solutions (B, ICl, p=0.048, Iglut, p=0.016 both by paired t-test, C, ICl, p=0.963, Iglut, p=0.894 both by paired t-test, E, ICl, p=0.734, Iglut, p=0.629 both by paired t-test. *p<0.05. (F) Western blot of lysates from HEK293T cells expressing VGLUT1-EGFP (WT, R80A, R176A, R176K, R176Q and R314A) and untransfected cells as negative control. The expression of wild type and mutant VGLUT1-EGFP was analyzed by quantitative fluorescent immunoblotting, with VGLUT1 band intensity normalized to actin. Bar graph indicates mean ± SEM. n = 3.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Whole cell recording of VGLUT2 misexpressed at the plasma membrane (pmVGLUT2) of HEK293T cells. (A) Representative ramp currents from HEK293T cells expressing wild type pmVGLUT2 (left), R184A pmVGLUT2 (middle) or empty vector as negative control (right) in external choline chloride, pH 7.5 (black), choline chloride, pH 5.5 (blue) and choline gluconate, pH 5.5 (red). (B) Maximal inward currents normalized to cell capacitance from voltage ramps of wild type pmVGLUT2 (black), R184A pmVGLUT2 (grey) and vector-only transfected HEK cells (white) in external choline gluconate, pH 5.5 and choline gluconate, pH 5.5. n = 6–9 cells.
 
 We then focused on a conserved arginine in TM1. Replacement by alanine (R80A in VGLUT1) also eliminates the outward currents produced by Cl- and glutamate entry (Figure 3D). However, this mutation spares the inward currents, indicating that the residue has a specific role in uptake of both anions but not Cl- efflux. It is more difficult to evaluate the baseline inward currents due to Cl- efflux than the outward currents due to anion addition, but all three isoforms (including R88A in VGLUT2 and R93A in VGLUT3) exhibit the same phenomenon (Figure 3—figure supplement 1A–C,E,H). Efflux of Cl- may thus involve a mechanism distinct from glutamate translocation or even Cl- entry. Alternatively, this arginine may affect rectification of the currents.
 
 Third, we neutralized the conserved arginine in TM4 (Arg176 in VGLUT1, Arg184 in VGLUT2 and Arg189 in VGLUT3). As previously shown (Figure 2), both inward and outward currents require lumenal Cl- (Figure 3F). Despite the absence of lumenal Cl-, R176A VGLUT1 allows robust outward currents due to the external addition of Cl- or glutamate (Figure 3G), and R184A and R189A have the same effects in VGLUT2 and 3, respectively (Figure 3—figure supplement 1A–C,F,I). To test the role of the positive charge in recognition of Cl-, we replaced Arg176 in VGLUT1 by the similarly cationic amino acid lysine (R176K) or by neutral glutamine (R176Q). Like wild type VGLUT1, R176K exhibits currents in the presence but not the absence of lumenal Cl- (Figure 3—figure supplement 2). However, the R176Q mutant does not exhibit currents even with lumenal Cl-, making it difficult to assess the impact on Cl- recognition (Figure 3—figure supplement 2C). Western analysis indicated that all of the VGLUT1 mutants are expressed (Figure 3—figure supplement 2F); although the levels vary, we selected GFP+ endosomes for all of these experiments and the functional R176K mutant was expressed at levels similar to nonfunctional R80A and R176Q. To test further the role of Arg176 in Cl- recognition, we took advantage of an internalization-defective form of VGLUT2 previously used to assess Cl- currents across the plasma membrane in HEK cells as well as Xenopus oocytes (Eriksen et al., 2016). As previously shown, whole cell recording of HEK cells expressing internalization-defective but otherwise wild type VGLUT2 exhibit inwardly rectifying Cl- currents that depend on high external Cl- as well as low pH (Figure 3—figure supplement 3). In contrast, R184A VGLUT2 exhibits inward currents independent of external Cl-. In both whole endosome and whole cell configurations, dependence on Cl- thus requires a cationic residue at this position in TM4, strongly suggesting that lumenal Cl- normally binds at this site, and neutralization of this residue suffices to fulfill the allosteric activation required for both Cl- conductance and glutamate transport. Anion permeation persists despite this mutation, further indicating that this residue is required only for allosteric activation by Cl-. Allosteric activation and permeation thus involve distinct interactions of Cl- with the transporter.
 
-## Chloride and glutamate translocate using distinct mechanisms but compete for permeation
+### Chloride and glutamate translocate using distinct mechanisms but compete for permeation
 
 Many of the same factors (such as Δψ and lumenal Cl-) activate both glutamate and Cl- currents, raising questions about the relationship between the two permeant anions. To compare the pathways for permeation, we examined the dose-response to external Cl- (Figure 4A). The outward Cl- currents show no evidence of saturation up to 140 mM (Figure 4B). In contrast, the glutamate currents saturate with EC50376 µM (204–726 µM 95% confidence interval) in 10 mM external Cl- (Figure 4C), an apparent affinity slightly higher than previously measured (1–3 mM) using radiotracer flux assays (Naito and Ueda, 1985; Tabb et al., 1992) but very similar to that determined in the absence of Cl- or from glutamate-induced acidification (0.2–0.3 mM) (Disbrow et al., 1982; Maycox et al., 1988). The two anions thus appear to permeate through entirely different mechanisms, Cl- through the low affinity conduction pathway of a channel, and glutamate through the alternating access mechanism of a transporter, similar to the EAATs (Fairman et al., 1995; Wadiche et al., 1995).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34896/elife-34896-fig4-v1.jpg)
 
-**Figure 4.:** - and glutamate conductances.(A–C) Dose-response of outward currents to external Cl- (B) or glutamate in the presence of either 1 mM or 10 mM external Cl- (C), all at lumenal pH 5.0. The EC50 for glutamate (C) was 376 µM in 10 mM Cl- and 2.95 µM in 1 mM Cl- (p=0.017 by Mann-Whitney, n = 5–6 each). nH, the Hill coefficients for glutamate in different cytoplasmic Cl concentrations. (D–F) Representative recordings and compiled data for endosomes expressing VGLUT1 with either high lumenal Cl- (E) or glutamate (F) in the presence of 140 mM external Cl- (Iin, p=0.029, Iout, p=0.029 both by Mann-Whitney) (++p<0.05 by Mann-Whitney test). (G) Permeation of glutamate by an alternating access mechanism, with the occluded state shown on the left, and permeation by Cl- through a channel (shown on the right). Both anions use a related permeation pathway, but the arginine in TM4 that confers allosteric activation by lumenal Cl- lies outside the permeation pathway. (H) Model for different stages in the filling of synaptic vesicles with glutamate. Immediately after endocytosis (early), the synaptic vesicle contains high concentrations of Cl- which provide the allosteric activation required for anion flux by the VGLUTs (blue). The H+ pump (black) provides the driving force Δψ and cytosolic Cl- allosterically activates rather than inhibits due to the saturating concentration of cytosolic glutamate. As glutamate enters (intermediate), Δψ dissipates and the vesicle acidifies, activating the Cl- conductance and the resulting Cl- efflux maintains the Δψ that drives glutamate uptake. When vesicle filling approaches completion (late), the different permeation mechanisms ensure that efflux of Cl- but not glutamate maintains Δψ while stabilizing the accumulated transmitter.
+**Figure 4.:** (A–C) Dose-response of outward currents to external Cl- (B) or glutamate in the presence of either 1 mM or 10 mM external Cl- (C), all at lumenal pH 5.0. The EC50 for glutamate (C) was 376 µM in 10 mM Cl- and 2.95 µM in 1 mM Cl- (p=0.017 by Mann-Whitney, n = 5–6 each). nH, the Hill coefficients for glutamate in different cytoplasmic Cl concentrations. (D–F) Representative recordings and compiled data for endosomes expressing VGLUT1 with either high lumenal Cl- (E) or glutamate (F) in the presence of 140 mM external Cl- (Iin, p=0.029, Iout, p=0.029 both by Mann-Whitney) (++p<0.05 by Mann-Whitney test). (G) Permeation of glutamate by an alternating access mechanism, with the occluded state shown on the left, and permeation by Cl- through a channel (shown on the right). Both anions use a related permeation pathway, but the arginine in TM4 that confers allosteric activation by lumenal Cl- lies outside the permeation pathway. (H) Model for different stages in the filling of synaptic vesicles with glutamate. Immediately after endocytosis (early), the synaptic vesicle contains high concentrations of Cl- which provide the allosteric activation required for anion flux by the VGLUTs (blue). The H+ pump (black) provides the driving force Δψ and cytosolic Cl- allosterically activates rather than inhibits due to the saturating concentration of cytosolic glutamate. As glutamate enters (intermediate), Δψ dissipates and the vesicle acidifies, activating the Cl- conductance and the resulting Cl- efflux maintains the Δψ that drives glutamate uptake. When vesicle filling approaches completion (late), the different permeation mechanisms ensure that efflux of Cl- but not glutamate maintains Δψ while stabilizing the accumulated transmitter.
 
 On the other hand, the common features of Cl- and glutamate currents, such as the allosteric requirement for lumenal Cl-, suggest a shared mechanism. For this reason, we repeated the dose-response curve to glutamate, but in the presence of 1 mM rather than 10 mM Cl- since both concentrations have been reported to confer allosteric activation of vesicular glutamate transport (Naito and Ueda, 1985). Remarkably, lowering external Cl- to 1 mM shifts the glutamate dose-response dramatically to the left, with Km 2.95 µM (0.8–10.3 µM 95% confidence interval) (Figure 4C), two orders of magnitude higher apparent affinity than previously measured using either radiotracer flux or vesicle acidification. The response to glutamate also differs in cooperativity, with Hill coefficient 0.51 ± 0.14 in 1 mM Cl- and 1.41 ± 0.37 in 10 mM Cl-, possibly contributing to the dramatic effect of Cl- on substrate recognition. The effect of Cl- on glutamate transport demonstrates competition between the two anions for permeation through the VGLUTs. The two anions thus use a related permeation pathway, but differ in the mode of permeation.
 
-## Replacement of lumenal chloride with glutamate fails to confer allosteric activation
+### Replacement of lumenal chloride with glutamate fails to confer allosteric activation
 
 To determine how the VGLUTs function late in the process of synaptic vesicle filling, when glutamate replaces lumenal Cl-, we substituted pipette Cl- with glutamate. In contrast to high lumenal Cl-, which confers both inward and outward flux of Cl- (Figure 4E), high lumenal glutamate does not enable Cl- influx (Figure 4F). The absence of inward as well as outward currents with high lumenal glutamate also shows that glutamate cannot undergo efflux under these conditions. The loss of allosteric activation thus effectively inactivates the VGLUTs, preventing the efflux of glutamate after vesicle filling.
 
@@ -86,28 +130,115 @@ Taken together, the results suggest that the Cl- conductance associated with ves
 
 ## Materials and methods
 
-## Constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>VGLUT1</td>
+      <td>Edwards lab</td>
+      <td>NM_053859.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>VGLUT2</td>
+      <td>Edwards lab</td>
+      <td>NM_053427.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>VGLUT3</td>
+      <td>Edwards lab</td>
+      <td>NM_153725.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>UCSF Cell Culture Fac.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-actin</td>
+      <td>Sigma</td>
+      <td>MAB1501R</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-VGLUT1</td>
+      <td>Millipore Sigma</td>
+      <td>AB5905</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PolyJet</td>
+      <td>SignaGen</td>
+      <td>SL100688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lipofectamine 2000</td>
+      <td>Gibco Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5.0</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs
 
 All three isoforms of the Rattus norvegicus vesicular glutamate transporters (NCBI Reference Sequences: NM_053859.2, NM_053427.1, NM_153725.1) were amplified by PCR using primers designed to include a Kozak sequence (5’-CGCCACC-3’) at the 5’ end as well as the necessary restriction sites for subcloning: NheI/AflII for pVGLUT1- and pVGLUT2-EGFP and NheI/AgeI for pVGLUT3-EGFP. The products were then subcloned into the pEGFP-N1 vector (Clontech). Alanine was substituted for the arginines in TM7, 1 and 4 of rat VGLUT cDNAs using either QuickChange or New England Biolabs’ Q5 Site-Directed Mutagenesis Kit (Catalog No. E0554), and the change confirmed by DNA sequencing. The Rab5 Q79L-mCherry construct (AddGene Plasmid No. 35138), was used to enlarge endosomes.
 
-## Cell culture
+### Cell culture
 
 HEK293T cells were cultured in Dulbecco’s Modified Eagle Media (ThermoFisher, Catalog No. 11965–092, Waltham, MA.) with 10% defined Fetal Bovine Serum (GE Healthcare Life Sciences HyClone, Catalog No. SH30070.0, Pittsburgh, PA.) and were independently authenticated and confirmed negative for mycoplasma (both by the ATCC). Rab5 Q79L-mCherry and wild type or mutant pVGLUT-EGFP (1 µg each) were cotransfected into HEK293T cells (~70–90% confluence) in 6-well tissue culture plates using the PolyJet transfection reagent (SignaGen Catalog No. SL100688, Rockville, MD.) at a ratio of 3:1 (PolyJet (µL):DNA (µg)). Following the manufacturer’s recommendation, we incubated the PolyJet transfection complex for 12–18 hr, then replaced the solution with fresh serum-containing media. After 4–5 hr, the transfected cells were trypsinized and replated onto poly-L-lysine-coated coverslips in the same serum-containing media, and incubated until recording the next day.
 
-## Electrophysiology
+### Electrophysiology
 
-## Whole endosome recording
+#### Whole endosome recording
 
 Borosilicate glass patch pipettes (Sutter Instruments, Catalog No. BF150-75-10) were made with a Sutter Instrument P-87 puller (Novato, CA.) and fire-polished with the Narishige Microforge MF-830 (Amityville, NY.) to a final resistance of 6–10 MΩ. As previously described (Cang et al., 2015), the plasma membrane of HEK293T cells containing enlarged endosomes was ruptured with a glass pipette. The enlarged endosome was then extruded using the same pipette tip. Another clean pipette tip was then used to patch on and form a gigaohm seal with the isolated endosome. Only one enlarged endosome was recorded from each coverslip. Patch recordings were performed with an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA.) and a DigiData 1440A data acquisition system (Molecular Device, Sunnyvale, CA.). The recordings obtained from the amplifier were not inverted. The standard voltage ramp protocol from −100 mV to +100 mV lasted 800 msecs. Before beginning the ramp, the holding potential at 0 mV was dropped to −100 mV for 50 msec. The standard bath (cytosolic) solution contained (in mM) 140 NMDG gluconate, 2 MgSO4, 20 HEPES, 5 EGTA, 10 glucose, pH 7.2. The standard pipette (luminal) solution contained (in mM) 140 NMDG Cl, 1 MgCl2, 20 MES, 10 Glucose, 2 CaCl2, pH to 5.0. Substitutions to these standard solutions are noted in the figure legends. To manipulate pH, we used either 20 mM HEPES, pH 7.2 or 20 mM MES, pH 5.0. Addition of L-glutamic acid or L-aspartic acid involved replacement of equimolar gluconate to maintain osmolarity. Similarly, Cl-, Br- and PO4 replaced gluconate. Figures were plotted with MATLAB (Mathworks, Natick, MA.), Adobe Illustrator (Adobe, San Jose, CA.), and Prism (GraphPad, LaJolla, CA.). Nonlinear regression was used to fit the dose-response curves.
 
-## Whole cell recording
+#### Whole cell recording
 
 One to two days before recording, HEK293T cells were transfected using Lipofectamine 2000 (Life Technologies) with 2 μg pIRES2-EGFP or pIRES-EGFP FI/AA 2 × GG VGLUT2 per 700,000 cells. The cells were trypsinized 1–4 hr before recording, and plated onto polylysine-coated glass coverslips. Whole-cell patch clamp recordings of EGFP-positive cells were performed using an Axopatch 200B amplifier (Molecular Devices) at room temperature. Electrodes pulled from borosilicate glass (BF150-86-7.5; Sutter Instruments) were fire polished and back filled with pipette solution containing 145 mM TMA-gluconate, 30 mM HEPES pH 7.5, 5 mM EGTA, 2.5 mM MgCl2, ±5 mM glutamate (mOsm 315–320). Gigaohm seals were formed in Ringer’s bath solution containing (in mM) 130 NaCl, 10 HEPES pH 7.4, 10 glucose, 4 KCl, 2 CaCl2, 1 MgCl2. A 3 M KCl agar salt bridge was used for bath reference electrode. Access resistance and membrane capacitance were determined using the Membrane Test application of pClamp 10 (Molecular Devices). Currents were recorded using a 800 ms ramp from −100 mV to 60 mV in the following bath solutions (all 320–325 mOsm): Chloride, pH 7.5 (in mM, 145 choline Cl-, 30 HEPES, 2 Mg gluconate), Chloride, pH 5.5 (145 choline Cl-, 50 MES, 2 Mg gluconate), Gluconate, pH 7.5 (145 choline gluconate, 30 HEPES, 2 Mg gluconate) and Gluconate solution, pH 5.5 (145 choline gluconate, 50 MES, 2 Mg gluconate). The currents were sampled at 10 kHz and low pass filtered at 1 kHz.
 
-## Quantitative western analysis
+### Quantitative western analysis
 
 Two days after transfection, the HEK293T cells were lysed for 30 min at 4°C in buffer containing 25 mM Tris, pH 7.5, 150 mM NaCl, 1% Triton X-100, 1 mM EDTA supplemented with complete protease inhibitor (Roche), the extract sedimented for 20 mins at 14000 g at 4°C and the pellet discarded. Five mg supernatant protein was separated by electrophoresis through 10% SDS-polyacrylamide and transferred to a nitrocellulose membrane. The membrane was blocked in 150 mM NaCl with 50 mM Tris, pH 7.4 (TBS) and 5% dry milk, incubated with guinea pig anti-VGLUT1 (1:2000, Millipore Sigma) or mouse anti-actin (1:3000, Sigma) in TBS + 0.1% Tween-20 overnight at 4°C, washed three times for 5 min each in TBS + 0.1% Tween-20, incubated for 30 min at room temperature with IRDye 800CW Donkey anti-Guinea Pig or IRDye 800CW Goat anti-Mouse IgG (1:20000, LI-COR) in blocking buffer + 0.1% Tween-20, washed three times for 10 min each in TBS + 0.1% Tween-20 and rinsed in TBS. The membrane was scanned using an Odyssey device (LI-COR) and the resulting images quantified in ImageJ.
 
-## Statistical analysis
+### Statistical analysis
 
 The parametric paired t-test or non-parametric Wilcoxon test were used to determine statistical significance between currents obtained from the same endosome in different external solutions, depending on whether the distribution of individual data was Gaussian. The Mann-Whitney test was used to compare the EC50 for glutamate of endosomes with different external Cl- concentrations.

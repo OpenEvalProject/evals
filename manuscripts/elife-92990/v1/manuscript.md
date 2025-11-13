@@ -23,24 +23,24 @@
 
 ### Affiliations
 
-1. https://ror.org/02bfwt286 Drug Delivery, Disposition and Dynamics, Monash Institute of Pharmaceutical Sciences, Monash University Parkville Australia
-2. https://ror.org/02czsnj07 School of Medicine, Deakin University Geelong Australia
-3. https://ror.org/02czsnj07 The Institute for Mental and Physical Health and Clinical Translation, Deakin University Geelong Australia
-4. https://ror.org/02bfwt286 Monash Biomedicine Discovery Institute and Department of Microbiology, Monash University Clayton Australia
-5. https://ror.org/02bfwt286 Centre to Impact AMR, Monash University Clayton Australia
-6. https://ror.org/02bfwt286 Medicinal Chemistry, Monash Institute of Pharmaceutical Sciences, Monash University Parkville Australia
-7. https://ror.org/02sc3r913 Discovery Biology, Centre for Cellular Phenomics, Griffith University Nathan Australia
-8. https://ror.org/03adhka07 Swiss Tropical and Public Health Institute Allschwil Switzerland
-9. https://ror.org/02s6k3f65 University of Basel Basel Switzerland
-10. https://ror.org/01b6kha49 The Walter and Eliza Hall Institute of Medical Research Parkville Australia
-11. https://ror.org/01ej9dk98 Department of Medical Biology, The University of Melbourne Parkville Australia
-12. https://ror.org/02sc3r913 School of Environment and Science, Griffith University Nathan Australia
+1. Drug Delivery, Disposition and Dynamics, Monash Institute of Pharmaceutical Sciences, Monash University Parkville Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+2. School of Medicine, Deakin University Geelong Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+3. The Institute for Mental and Physical Health and Clinical Translation, Deakin University Geelong Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+4. Monash Biomedicine Discovery Institute and Department of Microbiology, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+5. Centre to Impact AMR, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+6. Medicinal Chemistry, Monash Institute of Pharmaceutical Sciences, Monash University Parkville Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+7. Discovery Biology, Centre for Cellular Phenomics, Griffith University Nathan Australia ([ROR:02sc3r913](https://ror.org/02sc3r913))
+8. Swiss Tropical and Public Health Institute Allschwil Switzerland ([ROR:03adhka07](https://ror.org/03adhka07))
+9. University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+10. The Walter and Eliza Hall Institute of Medical Research Parkville Australia ([ROR:01b6kha49](https://ror.org/01b6kha49))
+11. Department of Medical Biology, The University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+12. School of Environment and Science, Griffith University Nathan Australia ([ROR:02sc3r913](https://ror.org/02sc3r913))
 
 † Corresponding author
 
 ## Abstract
 
-New antimalarial drug candidates that act via novel mechanisms are urgently needed to combat malaria drug resistance. Here, we describe the multi-omic chemical validation of Plasmodium M1 alanyl metalloaminopeptidase as an attractive drug target using the selective inhibitor, MIPS2673. MIPS2673 demonstrated potent inhibition of recombinant Plasmodium falciparum ( Pf A-M1) and Plasmodium vivax ( Pv A-M1) M1 metalloaminopeptidases, with selectivity over other Plasmodium and human aminopeptidases, and displayed excellent in vitro antimalarial activity with no significant host cytotoxicity. Orthogonal label-free chemoproteomic methods based on thermal stability and limited proteolysis of whole parasite lysates revealed that MIPS2673 solely targets Pf A-M1 in parasites, with limited proteolysis also enabling estimation of the binding site on Pf A-M1 to within ~5 Å of that determined by X-ray crystallography. Finally, functional investigation by untargeted metabolomics demonstrated that MIPS2673 inhibits the key role of Pf A-M1 in haemoglobin digestion. Combined, our unbiased multi-omic target deconvolution methods confirmed the on-target activity of MIPS2673, and validated selective inhibition of M1 alanyl metalloaminopeptidase as a promising antimalarial strategy.
+New antimalarial drug candidates that act via novel mechanisms are urgently needed to combat malaria drug resistance. Here, we describe the multi-omic chemical validation of Plasmodium M1 alanyl metalloaminopeptidase as an attractive drug target using the selective inhibitor, MIPS2673. MIPS2673 demonstrated potent inhibition of recombinant Plasmodium falciparum (PfA-M1) and Plasmodium vivax (PvA-M1) M1 metalloaminopeptidases, with selectivity over other Plasmodium and human aminopeptidases, and displayed excellent in vitro antimalarial activity with no significant host cytotoxicity. Orthogonal label-free chemoproteomic methods based on thermal stability and limited proteolysis of whole parasite lysates revealed that MIPS2673 solely targets PfA-M1 in parasites, with limited proteolysis also enabling estimation of the binding site on PfA-M1 to within ~5 Å of that determined by X-ray crystallography. Finally, functional investigation by untargeted metabolomics demonstrated that MIPS2673 inhibits the key role of PfA-M1 in haemoglobin digestion. Combined, our unbiased multi-omic target deconvolution methods confirmed the on-target activity of MIPS2673, and validated selective inhibition of M1 alanyl metalloaminopeptidase as a promising antimalarial strategy.
 
 ## Introduction
 
@@ -56,9 +56,17 @@ Here, we report an M1 selective aminopeptidase inhibitor with a hydroxamic acid 
 
 ## Results
 
-## Design and synthesis of a cross-species hydroxamic acid-based inhibitor selective for Plasmodium M1 alanyl aminopeptidase
+### Design and synthesis of a cross-species hydroxamic acid-based inhibitor selective for Plasmodium M1 alanyl aminopeptidase
 
 We previously reported a series of PfA-M1 and M17 aminopeptidase inhibitors that possessed a hydroxamic acid zinc binding group to coordinate catalytic zinc ion(s) and a variety of hydrophobic groups to probe the S1’ binding pocket of these enzymes (Vinh et al., 2019). Whilst a number of these modifications successfully improved inhibitory potency, their incorporation reduced polarity and aqueous solubility. One such example is the pivaloyl group present in compound 1 (Figure 1A; Drinkwater et al., 2016b; Vinh et al., 2019). In order to balance these opposing factors, one of the methyl groups of the pivaloyl was replaced by an alcohol to increase polarity whilst maintaining the capacity to engage the S1’ pocket via hydrophobic interactions (Figure 1A). This modification resulted in MIPS2673 (compound 4), which has a significantly lower cLogP (1.45 vs 2.23 for 1) and favourable solubility (i.e. the kinetic solubility of MIPS2673 was estimated to be in the 50–100 μg/mL range using nephelometry vs 12.5–25 µg/mL for 1). MIPS2673 (4) was synthesised from methyl 2-amino-2-(4-bromophenyl)acetate (2) in three synthetic steps as shown in Figure 1. Amide formation was achieved via an EDCI-mediated coupling and the trifluorophenyl moiety was installed using a Suzuki-Miyaura coupling to form the synthetic intermediate 3. Finally, the methyl ester was converted to the corresponding hydroxamic acid using 5 M methanolic KOH and NH2OH•HCl to afford MIPS2673 (4).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig1-v1.jpg)
+
+**Figure 1.:** (A) Synthesis of MIPS2673 (4). Reagents and conditions: (i) RCOOH, EDCI, DMAP, CH2Cl2; (ii) 3,4,5-trifluorophenylboronic acid, Pd(PPh3)2Cl2, Na2CO3, THF; (iii) NH2OH•HCl, KOH. (B) Binding mode of MIPS2673 bound to PfA-M1 determined by X-ray crystallography (8SLO.pdb). Interactions between MIPS2673 (orange sticks) and PfA-M1 (grey) shown as black dashed lines. Inhibition constant (Ki) for MIPS2673 towards recombinant, purified PfA-M1 and PvA-M1. (C) Sensitivity to MIPS2673 exposure (72 hr) for P. falciparum 3D7 parasites. Parasite growth was determined relative to a no-drug control by SYBR Green I assay. The EC50 value was calculated from four biological replicates performed in technical triplicate and the data plotted as the mean ± standard error of the mean. (D) Stage-dependent activity of MIPS2673 in P. falciparum (3D7). Synchronised ring- or trophozoite-stage cultures were incubated for either 24 hr or 48 hr with compound at 10× EC50, before the drug was washed off and parasites allowed to grow for a further 48 hr. Growth was determined via SYBR Green I assay and compared to vehicle (DMSO)-treated controls. Shown is the mean ± standard deviation (n=4). (E) MIPS2673-induced morphology and growth effects for P. falciparum 3D7 parasites (left). Synchronised cultures at 4 hr post invasion were treated over two cycles (C1, cycle 1; C2, cycle 2) with either 5× or 10× EC50 or DMSO at the concentration present in the 10× EC50 treatment. Representative Giemsa-stained smears from two biological replicates show parasites stalling and dying at the ring to trophozoite transition. The percentage of parasites at each stage of development is shown from counts of 100 infected red blood cells at 16 hr, 28 hr, and 40 hr post invasion (right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Sensitivity to artesunate exposure (72 hr) for P. falciparum 3D7 parasites. Artesunate activity was tested alongside MIPS2673 as a reference compound with known antimalarial activity. Parasite growth was determined relative to a no-drug control by SYBR Green I assay. The EC50 value was calculated from four biological replicates performed in technical triplicate and the data plotted as the mean ± standard error of the mean.
 
 We determined the inhibitory activity of MIPS2673 against M1 and M17 enzymes from both P. falciparum and P. vivax (Figure 1B). The binding affinities (Ki) of MIPS2673 towards purified, recombinant PfA-M1 show the compound to be a potent inhibitor (Ki = 211 ± 11 nM), with >4-fold selectivity over PfA-M17 (Ki = 921 ± 69 nM). MIPS2673 was significantly more potent against PvA-M1 (Ki = 6.4 ± 0.5 nM) with >155-fold selectivity over PvA-M17 (Ki >1000 nM). We confirmed that MIPS2673 is non-inhibitory against the PfA-M18 (Ki >500 µM) and PfAPP (Ki >40 µM) recombinant metalloaminopeptidases (data not shown).
 
@@ -66,35 +74,305 @@ In contrast to the M1 selectivity demonstrated by MIPS2673, the inhibitor 1 was 
 
 To investigate the potential for off-target effects, we examined the selectivity of MIPS2673 over several human M1 homologs, including leukotriene A-4 hydrolase (LTA4H), endoplasmic reticulum aminopeptidase 1 (ERAP1), and endoplasmic reticulum aminopeptidase 2 (ERAP2). MIPS2673 showed minimal inhibition of ERAP1 and ERAP2 at concentrations below 500 µM (Table 1), whereas MIPS2673 caused >50% inhibition of LTA4H at concentrations above 10 µM (Table 1). We also tested MIPS2673 against the HEK293 cell line to further predict potential human cytotoxicity. No cytotoxicity to HEK293 cells was observed up to a concentration of 40 µM. As a comparison, the current antimalarials chloroquine and dihydroartemisinin inhibit HEK293 proliferation by 67% and 29%, respectively, at 40 µM. At 120 µM, MIPS2673 inhibited cellular proliferation by 89% compared to the untreated control (Table 2).
 
-## In vitro antiparasitic activity of MIPS2673
+**Table 1.**
+ Percent inhibition by MIPS2673 of PfA-M1 and PvA-M1 aminopeptidase activities compared to selected human M1 homologues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Concentration (µM)</th>
+      <th colspan="5">% inhibition*</th>
+    </tr>
+    <tr>
+      <th>PfA-M1</th>
+      <th>PvA-M1</th>
+      <th>LTA4H</th>
+      <th>ERAP1</th>
+      <th>ERAP2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.25</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>100</td>
+      <td>100</td>
+      <td>58</td>
+      <td>2.3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>–</td>
+      <td>–</td>
+      <td>42.2</td>
+      <td>89.8</td>
+      <td>97.8</td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>–</td>
+      <td>–</td>
+      <td>53.4</td>
+      <td>95.6</td>
+      <td>98.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values represent the mean of three independent experiments. All assays were performed at pH 8.0. The concentration of substrate H-Leu-NHMec (H-Leu-NHMec, L-leucine-7-amido-4-methylcoumarin hydrochloride) varied depending on the enzyme assayed 20 µM for PfA-M1, 40 µM for PvA-M1, and 100 µM for ERAP1 and ERAP2. LTA4H was assessed using the substrate H-Ala-NHMec (L-alanine-7-amido-4-methylcoumarin hydrochloride) at a concentration of 20 µM. LTA4H, leukotriene A-4 hydrolase. ERAP1, endoplasmic reticulum aminopeptidase 1. ERAP2, endoplasmic reticulum aminopeptidase 2._
+
+**Table 2.**
+ Cytotoxicity of MIPS2673 against the human HEK293 cell line.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Compound</th>
+      <th colspan="2">% inhibition*</th>
+    </tr>
+    <tr>
+      <th>40 µM</th>
+      <th>120 µM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIPS2673</td>
+      <td>NI</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Puromycin†</td>
+      <td>100</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>Chloroquine</td>
+      <td>67</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>DHA</td>
+      <td>29</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values represent the mean from two experiments.†Puromycin was tested at 10 µM. NI, no inhibition._
+
+### In vitro antiparasitic activity of MIPS2673
 
 Having synthesised a Plasmodium-specific M1 aminopeptidase inhibitor, we next explored the activity of MIPS2673 against in vitro blood-stage cultures of P. falciparum. We found that MIPS2673 has a 72 hr EC50 of 324 nM (250–470 CI) against the laboratory reference strain, 3D7 (Figure 1C), compared with the expected low nanomolar EC50 achieved with the clinically used artemisinin derivative, artesunate, which was analysed in parallel (Figure 1—figure supplement 1). MIPS2673 demonstrated no shift in EC50 when tested against a panel of drug-resistant P. falciparum lines (Table 3). Stage specificity assays were performed to identify which stage of asexual development MIPS2673 is most active against. Synchronised ring or trophozoite cultures were exposed to MIPS2673 for 24 hr or 48 hr at 10× EC50, then stringently washed to remove the compound. Parasite growth was assessed after 48 hr compared to a vehicle-treated control. This confirmed MIPS2673 is most potent against trophozoite-stage parasites (Figure 1D), corresponding to the period of peak PfA-M1 expression (Allary et al., 2002) and activity (Gavigan et al., 2001). As expected, no stage-dependent difference in activity was observed in parasites exposed to MIPS2673 for 48 hr, as this duration incorporates the full asexual erythrocytic cycle. The control compound, artesunate, was equipotent across all conditions, consistent with the known activity and kinetic profiles for artemisinins (Yang et al., 2016).
+
+**Table 3.**
+ MIPS2673 effectiveness against a panel of drug-resistant P. falciparum strains*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>P. falciparum strain</th>
+      <th>Sensitivity profile</th>
+      <th>EC50 (nM)†</th>
+      <th colspan="2">Fold shift in EC50 relative to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>NF54</td>
+      <td>Dd2</td>
+    </tr>
+    <tr>
+      <td>NF54</td>
+      <td>Sensitive</td>
+      <td>237</td>
+      <td>1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K1</td>
+      <td>Decreased sensitivity to chloroquine</td>
+      <td>278</td>
+      <td>1.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7G8</td>
+      <td>Decreased sensitivity to chloroquine</td>
+      <td>293</td>
+      <td>1.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TM90C2B</td>
+      <td>Decreased sensitivity to atovaquone</td>
+      <td>194</td>
+      <td>0.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cam3.1</td>
+      <td>Decreased sensitivity to artemisinin</td>
+      <td>244</td>
+      <td>1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dd2</td>
+      <td>Decreased sensitivity to chloroquine</td>
+      <td>220</td>
+      <td>0.9</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Dd2 DDD107498</td>
+      <td>Decreased sensitivity to eEF2 inhibitor, DDD107498</td>
+      <td>211</td>
+      <td></td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Dd2 MMV390048</td>
+      <td>Decreased sensitivity to PI4K inhibitor, MMV390048</td>
+      <td>164</td>
+      <td></td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Dd2 DSM265</td>
+      <td>Decreased sensitivity to DHODH inhibitor, DSM265</td>
+      <td>183</td>
+      <td></td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Dd2 GNF156</td>
+      <td>Decreased sensitivity to GNF156</td>
+      <td>195</td>
+      <td></td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Dd2 ELQ300</td>
+      <td>Decreased sensitivity to cyt bc1 inhibitor, ELQ300</td>
+      <td>174</td>
+      <td></td>
+      <td>0.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_*72 hr [3H]-hypoxanthine incorporation assay.†Mean values from two biological replicates._
 
 To visually characterise the effects of MIPS2673 on parasites, we treated synchronised 3D7 cultures at the early ring stage and monitored their development by light microscopy evaluation of Giemsa-stained thin blood smears (Figure 1E). We found that MIPS2673 caused significant growth retardation when compared to the untreated control and parasite growth stalled at the ring to trophozoite transition (~16–22 hr post invasion). In contrast, untreated parasites progressed into schizonts and eventually re-invaded red blood cells to commence the next asexual cycle.
 
 Having confirmed activity against asexual stages of P. falciparum, we next determined whether MIPS2673 kills the transmissible sexual forms of the parasite, known as gametocytes. We found that MIPS2673 has transmission-blocking activity and is most potent against early gametocytes (stages I-III), compared to late (stages IV-V) and mature (stage V) stages (Table 4), but is less potent than the artemisinin derivative, artesunate.
 
-## Identification of molecular targets for MIPS2673 in P. falciparum by thermal stability proteomics
+**Table 4.**
+ MIPS2673 effectiveness against P. falciparum early (I-III), late (IV-V), and mature (V) gametocyte stages of NF54-pfs16-GFP parasites.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Compound</th>
+      <th colspan="3">EC50 (nM)*</th>
+    </tr>
+    <tr>
+      <th>Early-stage gametocytes</th>
+      <th>Late-stage gametocytes</th>
+      <th>Mature-stage gametocytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIPS2673</td>
+      <td>1660±71</td>
+      <td>5300±1923</td>
+      <td>98% (120 µM)†</td>
+    </tr>
+    <tr>
+      <td>Artesunate</td>
+      <td>16±5.0</td>
+      <td>26±2.0</td>
+      <td>51±23</td>
+    </tr>
+  </tbody>
+</table>
+
+_*EC50 values were determined in technical duplicate from two to three biological repeats.†% inhibition at 120 µM (EC50 not determined)._
+
+### Identification of molecular targets for MIPS2673 in P. falciparum by thermal stability proteomics
 
 Our biochemical studies showing binding and inhibition of recombinant Plasmodium metalloaminopeptidases do not rule out the possibility that the antiparasitic activity of MIPS2673 is due to non-specific binding to other parasite metalloproteins or off-target proteins. Genetic target validation was not possible as previous attempts to mutate PfA-M1 were not successful (Dalal and Klemba, 2007; Zhang et al., 2018), and MIPS2673-resistant parasites were not available. Therefore, we developed orthogonal mass spectrometry-based chemoproteomics approaches to validate that MIPS2673 is on-target and M1-selective in the complex parasite environment (Figure 2). We initially developed a streamlined thermal stability proteomics workflow that combined traditional thermal proteome profiling methods with an optimised DIA-liquid chromatography coupled to mass spectrometry (LC-MS/MS) approach (Siddiqui et al., 2022a; George et al., 2023).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig2-v1.jpg)
 
-**Figure 2.:** P. falciparum lysates.Synchronised trophozoite-stage parasites (30–38 hr post invasion) are isolated from the host red blood cell by hypotonic lysis. Proteins are extracted from cells under native conditions by multiple freeze-thaw cycles. The lysate, comprising the soluble protein fraction, is pooled and distributed to achieve multiple independent incubations per reaction condition for use in either thermal stability or limited proteolysis workflows. For thermal stability proteomics studies, the parasite lysate is subjected to treatment with vehicle (untreated control) or drug at two concentrations, followed by thermal challenge at 60°C. The soluble (non-denatured) protein fraction is isolated by ultracentrifugation and digested overnight with trypsin. The resulting peptide mixture is analysed by data-independent acquisition (DIA)-liquid chromatography coupled to mass spectrometry (LC-MS/MS) against an in-house-generated spectral library to determine drug-induced thermal stabilisation. For limited proteolysis studies, ligand-protein interactions are monitored at multiple drug concentrations following double protease digestion. An initial pulse proteolysis with the broad specificity protease, proteinase K (PK), captures local ligand-induced structural alterations of proteins that become differentially susceptible to protease cleavage upon drug binding. Samples then undergo complete digestion under reducing conditions with trypsin/LysC. Differential proteolytic patterns produced upon ligand binding are detected by DIA-LC-MS/MS and analysed against a limited proteolysis spectral library.
+**Figure 2.:** Synchronised trophozoite-stage parasites (30–38 hr post invasion) are isolated from the host red blood cell by hypotonic lysis. Proteins are extracted from cells under native conditions by multiple freeze-thaw cycles. The lysate, comprising the soluble protein fraction, is pooled and distributed to achieve multiple independent incubations per reaction condition for use in either thermal stability or limited proteolysis workflows. For thermal stability proteomics studies, the parasite lysate is subjected to treatment with vehicle (untreated control) or drug at two concentrations, followed by thermal challenge at 60°C. The soluble (non-denatured) protein fraction is isolated by ultracentrifugation and digested overnight with trypsin. The resulting peptide mixture is analysed by data-independent acquisition (DIA)-liquid chromatography coupled to mass spectrometry (LC-MS/MS) against an in-house-generated spectral library to determine drug-induced thermal stabilisation. For limited proteolysis studies, ligand-protein interactions are monitored at multiple drug concentrations following double protease digestion. An initial pulse proteolysis with the broad specificity protease, proteinase K (PK), captures local ligand-induced structural alterations of proteins that become differentially susceptible to protease cleavage upon drug binding. Samples then undergo complete digestion under reducing conditions with trypsin/LysC. Differential proteolytic patterns produced upon ligand binding are detected by DIA-LC-MS/MS and analysed against a limited proteolysis spectral library.
 
 To identify the binding target/s of MIPS2673 in P. falciparum asexual blood stages in a proteome-wide manner, we used native parasite lysates, as direct drug-protein interactions are more selectively identified in cellular lysates, rather than live cells that are susceptible to downstream effects of drug action. The parasite lysates were exposed to 1 µM or 4 µM of MIPS2673 or vehicle (DMSO control) for 3 min prior to heating at 60°C, a temperature that should allow detection of most drug-induced protein stabilisation events in an untargeted manner with wide proteome coverage (Dziekan et al., 2019; Dziekan et al., 2020). After the thermal challenge, the soluble (non-denatured) protein fraction was isolated by ultracentrifugation, digested overnight with trypsin and the peptide mixture analysed directly using global DIA-LC-MS/MS. Proteins detected with significantly higher abundance in treated relative to control samples reflect thermal stabilisation of the target due to ligand binding. To minimise identification of false positive hits, proteins reproducibly stabilised (p<0.05 and fold-change ≥1.2 compared to the untreated control) across multiple drug concentrations and experiments were considered drug-interacting proteins. Among 1632 proteins reproducibly detected with a minimum of two peptides across two independent experiments (each with at least three independent incubations of MIPS2673 or vehicle with protein lysate), five proteins were consistently stabilised at both drug concentrations compared to DMSO (Figure 3A, Figure 3—source data 1, and Figure 3—source data 2). Of these, PfA-M1 (PF3D7_1311800) was one of the most significantly stabilised proteins (p<0.01 at 1 µM). PfA-M1 exhibited concentration-dependent stabilisation in the presence of MIPS2673, with an average stabilisation of 1.8-fold and 2.8-fold at 1 µM and 4 µM, respectively, relative to the untreated control (Figure 3B). The four other proteins consistently stabilised were not metalloproteins and included two conserved Plasmodium proteins with unknown functions (PF3D7_1026000 and PF3D7_0604300), a putative AP2 domain transcription factor (PF3D7_1239200) and a human protein, Ras-related Rab-39A (Q14964) (Figure 3B). These hits could represent other MIPS2673-interacting proteins. The PfA-M17 protein was not stabilised by MIPS2673 at either drug concentration after a 60°C thermal challenge (Figure 3—figure supplement 1). We previously showed PfA-M17 is stabilised at this temperature in parasite lysates treated with a selective PfA-M17 inhibitor (Edgar et al., 2022). Overall, our unbiased thermal stabilisation proteomics approach confirmed MIPS2673 selectively targets the M1 aminopeptidase over M17 and does not bind indiscriminately to parasite metalloproteins.
 
-## Identification of MIPS2673 targets in P. falciparum by limited proteolysis coupled mass spectrometry
+![Figure 3.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig3-v1.jpg)
+
+**Figure 3.:** (A) Paired volcano plots of all proteins detected after a 60°C thermal challenge across two experiments from P. falciparum lysates (at least n=3 of independent lysate incubations per condition and experiment) treated with 1 μM (left) and 4 μM (right) MIPS2673. Outside panels show the fold-change in protein abundance for treated relative to untreated samples as a function of statistical significance (p-value) for independent experiments. Each protein is represented with a single data point. Significance cut-offs for thermal stabilisation were p<0.05 (Welch’s t-test) and fold-change >1.2 (unshaded regions). The central panel plots protein fold-change from experiments one and two, with proteins in the upper right quadrant reproducibly stabilised by >1.2-fold. Proteins passing both fold-change and statistical cut-offs at both drug concentrations and in multiple independent experiments are highlighted. M1-family alanyl aminopeptidase (PF3D7_1311800) is in red and all other proteins passing cut-offs are in blue. (B) Individual profiles for the five proteins reproducibly stabilised by MIPS2673 after a 60°C thermal challenge. Two independent experiments are shown. Data are mean protein abundances in the absence and presence of MIPS2673 (± SD) from four replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Abundance of PfA-M17 leucyl aminopeptidase from P. falciparum lysates in the absence and presence of MIPS2673 after a 60°C thermal challenge. PfA-M17 was not stabilised by MIPS2673 after a 60°C thermal challenge (p>0.05). Error bars indicate SD (n=4 independent lysate incubations per condition in each independent experiment).
+
+### Identification of MIPS2673 targets in P. falciparum by limited proteolysis coupled mass spectrometry
 
 Having identified several MIPS2673 binding proteins using thermal stability proteomics, we wanted to further investigate the target profile of MIPS2673 with a complementary target deconvolution method. To this end, we developed an efficient protocol for limited proteolysis-based studies of P. falciparum and applied it for the unbiased identification of targets of MIPS2673 (Figure 2). Native P. falciparum lysates were treated for 10 min with different concentrations of MIPS2673 (1 µM or 10 µM in experiment one and 0.1 µM, 1 µM, or 10 µM in experiment two) or vehicle in at least four independent incubations per experiment. Proteome extracts were then subjected to double protease digestion. An initial limited proteolysis with proteinase K for 4 min captured local structural alterations of proteins that become differentially susceptible to protease cleavage upon drug binding. Secondly, samples undergo complete digestion under reducing conditions overnight with trypsin/LysC to make peptides amenable for global proteomics analysis. Differentially abundant proteolytic peptides between MIPS2673 and vehicle-treated samples were then identified on a global scale with DIA-LC-MS/MS. The proteolytic peptide patterns of drug targets should be altered in the treated samples as compound binding prevents protein cleavage by proteinase K, resulting in decreased abundance of peptides with non-tryptic ends or an increase in concentration of the associated fully tryptic peptide (Figure 4A). We quantified 26,611 peptides from 2153 proteins in experiment one and 16,662 peptides from 1989 proteins in experiment two (Figure 4—source data 1). Each dataset was initially analysed for differentially abundant peptides between each MIPS2673 concentration and vehicle by filtering based upon relative peptide abundance (absolute fold-change >1.5), statistical significance (q<0.01) and proteolytic peptide pattern (i.e. increased fully tryptic or decreased half tryptic). In experiment one and experiment two respectively, approximately 3% of peptides from 379 proteins and 0.6% of peptides from 69 proteins met these thresholds at each drug concentration and were considered significant (Figure 4B). After prioritising targets based upon the number of significant peptides detected per protein (Fisher’s exact test, Bonferroni corrected p<0.05), we identified seven putative drug targets in experiment one and only one putative target in experiment two (Figure 4C and Figure 4—source data 2). Interestingly, among the seven possible target proteins identified by limited proteolysis in experiment one, five were metalloproteins. These included PfA-M1, three other aminopeptidases – M17 leucyl aminopeptidase, aminopeptidase P (PfAPP), and M18 aspartyl aminopeptidase (PfA-M18) – and adenosine deaminase (PfADA) (Figure 4C). The expected target, PfA-M1 aminopeptidase, was the only protein reproducibly identified as the MIPS2673 target across both independent limited proteolysis experiments. Indeed, the consistent identification of PfA-M1 as the only significant protein in both limited proteolysis coupled with mass spectrometry (LiP-MS) and thermal stability proteomics methods strongly supports PfA-M1 being the primary target of MIPS2673.
 
-## Features of structurally significant PfA-M1 LiP-MS peptides
+![Figure 4.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig4-v1.jpg)
+
+**Figure 4.:** (A) Principle of LiP-MS analysis. Ligand binding to a protein alters the local proteolytic susceptibility and prevents protein cleavage by proteinase K. In the bound state this results in decreased abundance of peptides with non-tryptic ends (half tryptic, HT) shown in pink and/or an increase in concentration of the corresponding fully tryptic (FT) peptide, shown in red. Peptides unaffected by ligand binding (grey) are unchanged in abundance. (B) Volcano plots of two independent LiP-MS experiments (at least n=3 independent lysate incubations per condition and experiment). Each data point represents a detected peptide. Fold-changes (FC) in peptide abundance in treated vs untreated samples are shown as a function of significance (q<0.01) at the MIPS2673 concentrations shown. Peptides highlighted in blue represent LiP peptides that were significant across all concentrations tested within an experiment. Red peptides represent significant LiP peptides from PfA-M1. (C) Short-list of putative MIPS2673 targets identified in each LiP-MS experiment after prioritising targets based upon the number of significant peptides detected per protein. Significance was determined using a Fisher’s exact test and Bonferroni corrected p<0.05. The expected target PfA-M1 aminopeptidase is shown in red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Fold enrichment (left) and significance (right) of GO molecular functions enriched among the expanded list of candidate MIPS2673 targets identified in the first LiP-MS experiment. All proteins with an uncorrected p<0.05 were tested against a background of proteins for which abundance was measured. PlasmoDB GO terms were used for GO term mapping. Enrichment in molecular function GO terms was tested with the Fisher’s exact test using the weight-algorithm in topGO. All terms with a p-value less than 0.05 were considered significant. GO terms represented by fewer than five proteins in the background dataset were excluded from the analysis.
+
+### Features of structurally significant PfA-M1 LiP-MS peptides
 
 The identification of drug targets with LiP-MS typically identifies structurally perturbed peptides located in very close proximity to the ligand binding site (Piazza et al., 2020; Piazza et al., 2018) and we hypothesised that this would also be the case in our study. Among the 108 PfA-M1 peptides reproducibly detected across both LiP-MS experiments, we identified nine structurally significant LiP-MS peptides (q<0.01 and absolute fold-change >1.5 at all drug concentrations in both experiments) (Figure 5A) and mapped these to our PfA-M1 crystal structure with MIPS2673 bound (PDB ID: 8SLO). We measured the minimum distance between atoms of the significant peptides and those of MIPS2673 and found that structurally significant peptides identified with LiP-MS were frequently located in very close proximity to MIPS2673. The median minimum distance between the significant LiP-MS peptides and bound MIPS2673 was 6.5 Å, significantly less than the 13.2 Å median distance for all detected PfA-M1 peptides (p=0.025) (Figure 5—figure supplement 1). Among the nine structurally significant LiP-MS peptides, four contained atoms within Van der Waals distance (<4 Å) of MIPS2673. In contrast, the median minimum distance of structurally perturbed LiP peptides of other putative MIPS2673-interacting proteins identified with either thermal stability proteomics or LiP-MS (experiment one) were not significantly closer to expected binding sites when compared to all peptides detected, except for significant LiP peptides from PfA-M17 (median minimum distance of 8.56 Å vs 17.47 Å, p=0.045) (Figure 5—figure supplement 2). Based on these observations, we hypothesised that significantly dysregulated LiP-MS peptides could estimate the known MIPS2673 binding site on PfA-M1. A distance of 6.44 Å from MIPS2673 was used to define the binding cleft boundary (Piazza et al., 2018) and included the PfA-M1 residues known to interact with bound MIPS2673. Six of the nine significant LiP peptides overlapped with, or were within 4 Å of this binding cleft. The median distance between the atoms of significant LiP peptides and of cleft residues was 2.6 Å, compared to a median distance of 8.2 Å for all PfA-M1 peptides (p=0.029) (Figure 5B). Of the three significant LiP peptides located >4 Å from the operational binding site, two are located at the C-terminal opening in domain IV that forms a channel leading towards the active site (McGowan et al., 2009). To understand if this type of data could approximate a ligand binding site correctly, we calculated the centre of mass of the atoms of the nine structurally significant LiP peptides and represented this as a geometric point within the PfA-M1 structure and then compared this to the known binding site (Figure 5C). The minimum distance between this point and MIPS2673 was 5.2 Å and the MIPS2673 centre of mass neighbourhood (residues within 6.44 Å of the centre of mass) overlapped with the binding site (Figure 5C). This indicated that our LiP-MS approach provides a good approximation of the MIPS2673 binding site with its target, PfA-M1.
 
-## Untargeted metabolomics analysis of P. falciparum infected red blood cells treated with MIPS2673
+![Figure 5.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig5-v1.jpg)
+
+**Figure 5.:** (A) Relative abundance of the significant LiP peptides commonly identified across two LiP-MS experiments following P. falciparum proteome lysate treatment with MIPS2673. The mean ± SEM of at least three independent lysate incubations per condition and experiment are shown. (B) Median distances between atoms of the nine significant LiP peptides or all detected PfA-M1 peptides and the PfA-M1 binding cleft residues. *p<0.05, Mann-Whitney test. (C) MIPS2673 binding site on PfA-M1 determined by X-ray crystallography (PDB: 8SLO), and approximation of the MIPS2673 binding site using the significant PfA-M1 LiP peptides and centre of mass calculation. The significant LiP peptides are mapped onto the PfA-M1 structure with MIPS2673 bound and are shown in pink. The drug ligand is shown in blue and the centre of mass of the significant LiP peptides is shown by a magenta star. The area in cyan represents the neighbourhood of the drug binding site determined as residues within 6.44 Å of bound MIPS2673. The neighbourhood of the LiP peptide centre of mass (residues within 6.44 Å of the centre of mass) is depicted in magenta.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Among the 108 PfA-M1 peptides commonly identified across both LiP-MS experiments, nine peptides were significantly dysregulated in the presence of MIPS2673 at all concentrations tested. The atoms of these LiP peptides were used to measure the distribution of distances to bound MIPS2673 compared to all detected PfA-M1 peptides. *p<0.05, Mann-Whitney test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Distance measurement analyses were performed for other putative MIPS2673-interacting proteins identified with thermal stability proteomics and LiP-MS (experiment one) where a protein structure was available and significant LiP-MS peptides were identified. Only peptides detected in both LiP-MS experiments were considered for analysis. Significant LiP peptides were defined as any peptide that passed the relative abundance (absolute fold-change >1.5), statistical significance (q<0.01), and proteolytic peptide pattern (i.e. increased fully tryptic or decreased half tryptic) filters at any concentration in both LiP-MS experiments. For the metalloproteins PfA-M17, PfAPP, and PfADA (PDB: 7RIE, 5JR6, and 6II7, respectively) the active site metal ions were used as a reference point for minimum distance measurements. For PfMIF (PDB: 4P7S), the bound ligand 20K and TRXR1 (PDB: 2ZZC), the bound ligands FAD and NADP, were used for minimum distance measurements. For RAB39A, which is not a metalloprotein and where no ligand-bound structure is available, the GTP binding site residues (blue) were used (AlphaFold: AF-Q14964-F1). Significant LiP-MS peptides are in pink, metal ions are in light blue, and ligands are in dark blue or orange (NADP only). Peptide mapping for multimeric proteins was performed for one chain only (chain A for PfA-M17, PfAPP and TRXR1, and chain B for PfMIF). The putative PfApiAP2 transcription factor, PF3D7_1239200, was excluded as no protein structure is available and the AlphaFold predicted structure is of very low quality (pLDDT score 36.67). No peptides met the significance criteria for PfA-M18 and the conserved parasite proteins, PF3D7_1026000 and PF3D7_0604300. *p<0.05, Mann-Whitney test. For RAB39A and TRXR1, where only one significant LiP-MS peptide was identified per protein, statistical significance was not determined.
+
+### Untargeted metabolomics analysis of P. falciparum infected red blood cells treated with MIPS2673
 
 To further determine the specificity of MIPS2673 for PfA-M1 and whether it induces off-target effects, we performed untargeted metabolomics on infected red blood cells treated with 1 µM of MIPS2673 (3× EC50 value) for 1 hr and compared the profile to vehicle (DMSO) control (four to nine biological replicates). Heatmap analysis of relative abundances of all putative metabolites revealed that treatment with MIPS2673 disproportionally impacted peptide metabolism (Figure 6—figure supplement 1). Of the 201 putative peptides identified, 97 were significantly dysregulated (p<0.05). The majority of dysregulated peptides were significantly increased (fold-change >1.5 and p<0.05) in abundance in MIPS2673-treated cultures compared to DMSO control, indicative of aminopeptidase inhibition. Targeted analysis of the 97 increased peptides in drug-treated cultures revealed that the majority were likely derived from Hb chains (α and β) (Figure 6A). Mapping to Hb sequences was possible for 24 peptides using MS/MS spectra to confirm peptide sequences (Figure 6B; green dots). For the remaining putative peptides identified by accurate mass, but for which MS/MS spectra could not be obtained, we assessed whether any peptide isomeric to the putative peptide could be mapped to Hb (Figure 6B; orange dots for peptides mapping to Hb chains and blue dots for peptides that could not be mapped). Overall, ~80% of significantly dysregulated peptides could be mapped to one of the Hb chains, with nearly all increasing in abundance following treatment with MIPS2673 compared to DMSO control. To further validate that the majority of elevated peptides are likely to be Hb-derived, we repeated this same analysis for each of the ~4700 proteins identified in our recent comprehensive proteomic analysis of P. falciparum-infected red blood cells (Siddiqui et al., 2022a). We quantified the number of peptide matches to each protein and then divided by protein length to yield a normalised estimate of the similarity of each protein to our significantly dysregulated peptides. By this measure, Hb chains α and β were the most highly matched protein compared to the remaining infected red blood cell proteome (Figure 6C; red bars), indicating that MIPS2673 predominantly, but not exclusively, disrupts Hb digestion.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig6-v1.jpg)
+
+**Figure 6.:** (A) Hierarchical clustering of the 97 peptides significantly dysregulated after treatment with MIPS2673 (fold-change >1.5 and p<0.05); four biological replicates for MIPS2673 and MIPS2571 (data from Edgar et al., 2022) and nine biological replicates for DMSO control. Vertical clustering displays similarities between samples, while horizontal clusters reveal the relative abundances (median normalised) of the 97 peptides. The color scale bar represents log2 (mean-centred and divided by the standard deviation of each variable) intensity values. Peptides with hyphen (-) notation indicate confirmed sequence by MS/MS. Peptides with slash (/) notation indicate putative amino acid composition (accurate mass), without confirmed sequence order. (B) Differential enrichment of all (201) putatively identified peptides that could (orange dots) or could not (blue dots) be derived from haemoglobin (Hb) α and β. Green dots are peptides that have MS/MS spectra and their sequences have been confirmed. (C) Histogram of the sequence similarity of ~4700 proteins present in P. falciparum infected red blood cells to the peptides significantly dysregulated by treatment with MIPS2673. Here, sequence similarity is quantified as the number of times a significantly perturbed peptide matches a given protein, normalised by protein length. The Hb chains α and β are highlighted in red bars.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92990/elife-92990-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmap analysis of peak intensities of all putative metabolites for each condition; 1 µM of MIPS2673 for 1 hr and DMSO control (untreated). Data is shown from four to nine biological replicates; red, blue, and yellow indicate increase, decrease, and no change, respectively, in the relative abundance of putative metabolites identified.
 
 We have recently reported that an inhibitor of PfA-M17 (MIPS2571) also predominantly disrupted metabolism of short Hb-derived peptides, which was a metabolic signature consistent with genetic knockdown of PfA-M17 (Edgar et al., 2022). However, a direct comparison of peptide perturbations induced by MIPS2673 and MIPS2571 (data from Edgar et al., 2022) showed clearly distinct peptide profiles. Whilst many peptides accumulated with both inhibitors, the extent of peptide accumulation differed, and a subset of short basic peptides (containing Lys or Arg) were elevated following exposure to MIPS2673, but not the PfA-M17 inhibitor (Figure 6A). Furthermore, the peptide changes observed following treatment with MIPS2673 differ substantially from the peptide changes observed following treatment of P. falciparum-infected red blood cells with other potent antimalarials such as artemisinins (Creek et al., 2016; Giannangelo et al., 2020) and mefloquine (Birrell et al., 2020). Those antimalarials induce significant depletion of Hb-derived peptides, in contrast to the accumulation observed with the aminopeptidase inhibitors. Overall, the metabolic profile induced by MIPS2673 is unique, and consistent with specific inhibition of PfA-M1.
 
@@ -118,9 +396,9 @@ Collectively, we have demonstrated selective targeting of Plasmodium M1 alanyl a
 
 ## Methods
 
-## Chemistry
+### Chemistry
 
-## Synthetic materials and methods
+#### Synthetic materials and methods
 
 Chemicals and solvents were purchased from standard suppliers and used without further purification. 1H NMR, 13C NMR, and 19F NMR spectra were recorded on a Bruker Avance Nanobay III 400MHz Ultrashield Plus spectrometer at 400.13 MHz, 100.61 MHz, and 376.50 MHz, respectively. Chemical shifts (δ) are recorded in parts per million (ppm) with reference to the chemical shift of the deuterated solvent. Unless otherwise stated, samples were dissolved in CDCl3. Coupling constants (J) and carbon-fluorine coupling constants (JCF) are recorded in Hz and multiplicities are described by singlet (s), doublet (d), triplet (t), quadruplet (q), broad (br), multiplet (m), doublet of doublets (dd), doublet of triplets (dt). LC-MS was performed using either system A or B. System A: an Agilent 6100 Series Single Quad coupled to an Agilent 1200 Series HPLC using a Phenomenex Luna C8 (2) 50×4.6 mm, 5 µm column. The following buffers were used: buffer A: 0.1% formic acid (FA) in H2O; buffer B: 0.1% FA in MeCN. Samples were run at a flow rate of 0.5 mL/min for 10 min: 0–4 min 5–100% buffer B in buffer A, 4–7 min 100% buffer B, 7–9 min 100–5% buffer B in buffer A, 9–10 min 5% buffer B in buffer A. Mass spectra were acquired in positive and negative ion mode with a scan range of 100–1000 m/z. UV detection was carried out at 254 nm. System B: an Agilent 6120 Series Single Quad coupled to an Agilent 1260 Series HPLC using a Poroshell 120 EC-C18 50×3.0 mm, 2.7 µm column. The following buffers were used: buffer A: 0.1% FA in H2O; buffer B: 0.1% FA in MeCN. Samples were run at a flow rate of 0.5 mL/min for 5 min; 0–1 min 5% buffer B in buffer A, 1–2.5 min 5–100% buffer B in buffer A, 2.5–3.8 min 100% buffer B, 3.8–4 min 100–5% buffer B in buffer A, 4–5 min 5% buffer B in buffer A. Mass spectra were acquired in positive and negative ion mode with a scan range of 100–1000 m/z. UV detection was carried out at 214 nm and 254 nm.
 
@@ -128,37 +406,37 @@ Methyl 2-(2-hydroxy-2-methylpropanamido)-2-(3',4',5'-trifluoro-[1,1'­-­bipheny
 
 2-Hydroxy-N-(2-(hydroxyamino)-2-oxo-1-(3',4',5'-trifluoro-[1,1'-biphenyl]-4-yl)ethyl)-2-methylpropanamide [MIPS2673 (4)]. Methyl 2-(2-hydroxy-2-methylpropanamido)-2-(3',4',5'-trifluoro-[1,1'-biphenyl]-4-yl)acetate (3) (100 mg, 0.26 mmol) was dissolved in anhydrous MeOH (5 mL/mmol of ester) at room temperature. NH2OH·HCl (4.0 eq) was added followed by KOH (5 M in anhydrous MeOH, 5.0 eq). The mixture was stirred at room temperature overnight and monitored by LC-MS analysis. The mixtures were directly dry-loaded on to Isolute HM-N (Biotage), before purification by FCC. The desired hydroxamic acid 3 was obtained as white solid (40 mg, 40% yield). 1H NMR (DMSO-d6) δ 11.13 (s, 1H), 9.15 (s, 1H), 8.07 (d, J=8.1 Hz, 1H), 7.78–7.63 (m, 4H), 7.46 (d, J=8.3 Hz, 2H), 5.74 (s, 1H), 5.29 (d, J=8.1 Hz, 1H), 1.26 (s, 3H), 1.23 (s, 3H); 19F NMR (DMSO-d6) δ –134.91 (d, J=21.7 Hz), –163.45 (dd, J=21.8 Hz). 13C NMR (DMSO-d6) δ 176.2, 166.4, 150.9 (ddd, JCF = /9.8/4.3 Hz), 139.5, 140.2–137.1 (m), 136.9–136.4 (m, 2C), 127.3, 127.2, 111.8–110.9 (m), 72.5, 53.2, 27.8, 27.6; m/z HRMS (TOF ES+) C18H18F3N2O4 [MH]+ calcd 383.1213; found 383.1214; LC-MS tR: 3.2 min; HPLC tR: 7.7 min, >99%.
 
-## Routine parasite culture
+### Routine parasite culture
 
 P. falciparum parasites (3D7 line) were cultured continuously in O+ human red blood cells (Australian Red Cross Blood Service) at 2–4% haematocrit using standard methods (Trager and Jensen, 1976), with minor modifications (Creek et al., 2016). Briefly, cultures were maintained at 37°C under defined atmospheric conditions (94% N2, 5% CO2, and 1% O2) in RPMI 1640 medium supplemented with 0.5% Albumax II (Gibco, Australia), HEPES (5.94 g/L), hypoxanthine (50 mg/L), and sodium bicarbonate (2.1 g/L). Parasites were synchronised using multiple rounds of sorbitol lysis (Lambros and Vanderberg, 1979) and monitored at least every 48 hr by Giemsa staining of methanol-fixed blood smears.
 
 Parasite material for thermal stability and limited proteolysis experiments was obtained from cultures synchronised to 30–38 hr post invasion. Parasites were isolated from red blood cells via hypotonic lysis to avoid the use of solubilising molecules such as saponin. Briefly, infected red blood cells were magnetically purified and incubated with 10 mL of hypotonic lysis buffer (150 mM ammonium chloride, 10 mM potassium bicarbonate, 1 mM EDTA in Milli-Q water) for 5 min at 4°C. Following hypotonic lysis, the intact parasite pellets were washed three times in phosphate-buffered saline (PBS) and stored at –80°C until whole proteome preparation.
 
-## Whole proteome preparation
+### Whole proteome preparation
 
 Parasite pellets were resuspended in 1–2 mL of cold 100 mM HEPES buffer (pH 8.1) and subjected to freeze-thaw lysis by cycling at 2–3 min intervals between dry ice and a 35°C heat block. Cells used for limited proteolysis also underwent mechanical shearing after freeze-thaw lysis by passing the thawed suspension through a 26-gauge (10–20×) and then a 30.5-gauge needle (10–20×). The resulting lysates were centrifuged to remove cell debris (20,000×g for 20 min at 4°C), the supernatants collected and combined to create one pooled parasite lysate. For thermal stability experiments, the cell debris obtained after centrifugation underwent two additional cycles of freeze-thaw and the collected supernatants were added to the pooled lysate. All remaining steps were performed at 4°C. The protein concentration of the resulting lysate was determined using the Pierce bicinchoninic acid (BCA) protein assay kit (Thermo Fisher Scientific).
 
-## Lysate treatment for thermal stability proteomics and mass spectrometry analysis
+### Lysate treatment for thermal stability proteomics and mass spectrometry analysis
 
 The pooled lysate was equally separated to achieve at least three incubations (technical replicates) per condition. The parasite lysates were incubated with 1 µM or 4 µM of MIPS2673 or vehicle (DMSO) for 3 min at room temperature, followed by thermal challenge at 60°C for 5 min. Each sample was incubated at room temperature for a further 3 min prior to being returned to ice. The denatured protein was removed via ultracentrifugation at 100,000×g for 20 min (4°C) in a Beckman Coulter Optima XE-90 – IVD ultracentrifuge with a 42.2 Ti rotor. The protein concentration in the soluble fraction was determined using a BCA assay. Samples were then reduced and alkylated at 95°C for 5 min using 10 mM tris(2-carboxyethyl)phosphine hydrochloride (TCEP) and 40 mM iodoacetamide (40 mM final concentration), respectively. Each sample was digested overnight with mass spectrometry-grade trypsin (1:50; Promega) at 37°C while shaking. The following day, trypsin activity was quenched using 5% FA and samples were subjected to desalting using in-house-generated StageTips, as described previously (Rappsilber et al., 2003). The samples were then dried and resuspended in 12 μL of 2% (vol/vol) acetonitrile (ACN) and 0.1% (vol/vol) FA containing indexed retention time (iRT) peptides (Biognosys) for LC-MS/MS analysis.
 
-## Lysate treatment for limited proteolysis and mass spectrometry analysis
+### Lysate treatment for limited proteolysis and mass spectrometry analysis
 
 An equivalent volume of protein lysate was aliquoted from a lysate pool for a minimum of three independent incubations per condition and incubated with MIPS2673 (0.1–10 µM) or vehicle (DMSO) at room temperature for 10 min. Proteinase K from Tritirachium album (Sigma-Aldrich) was added to all of the reactions at a 1:100 ratio of enzyme to protein and incubated at room temperature for 4 min. The digestion reactions were stopped by heating samples to 98°C for 1 min, followed by addition of an equal volume of 10% sodium deoxycholate (Sigma-Aldrich) to achieve a final concentration of 5%. Samples were incubated for a further 15 min at 98°C. These samples were then removed from the heat and subjected to complete digestion under denaturing conditions.
 
 Samples were reduced and alkylated for 10 min at 95°C with 10 mM TCEP and 40 mM chloroacetamide, respectively. Subsequently, samples were digested with Trypsin/LysC (1:100 enzyme to substrate ratio) for 16 hr at 37°C while shaking. Deoxycholate was precipitated by addition of FA to a final concentration of 1.5% and centrifuged at 16,000×g for 10 min. After transferring the supernatant to a new tube an equal volume of FA was added again and the centrifugation repeated. Digests were desalted using in-house-generated StageTips (Rappsilber et al., 2003) and after drying resuspended in 12 μL of 2% (vol/vol) ACN and 0.1% (vol/vol) FA containing iRT peptides (Biognosys) for LC-MS/MS analysis.
 
-## LC-MS/MS acquisition for proteomics
+### LC-MS/MS acquisition for proteomics
 
 LC-MS/MS was carried out using data-independent acquisition mode on a Q-Exactive HF mass spectrometer (Thermo Scientific) as described previously (Siddiqui et al., 2022a). Briefly, samples were loaded at a flow rate of 15 μL/min onto a reversed-phase trap column (100 μm × 2 cm), Acclaim PepMap media (Dionex), maintained at a temperature of 40°C. Peptides were eluted from the trap column at a flow rate of 0.25 μL/min through a reversed-phase capillary column (75 μm × 50 cm) (LC Packings, Dionex). The HPLC gradient was 158 min and gradually reached 30% ACN after 123 min, 34% ACN after 126 min, 79% ACN after 131 min, and 2% after 138 min for a further 20 min. The mass spectrometer was operated in a data-independent mode with a 43-fixed-window setup of 18 m/z effective precursor isolation over the m/z range of 364–988 Da. Full scan was performed at 60,000 resolution (AGC target of 3e6 and maximum injection time of 54 ms) with fragmentation resolution at 15,000 (AGC target of 2e5, maximum injection time of 22 ms, normalised collision energy of 27.0).
 
-## Data analysis for thermal stability proteomics experiments
+### Data analysis for thermal stability proteomics experiments
 
 Raw files were processed using Spectronaut 13.0 against an in-house-generated P. falciparum infected red blood cell spectral library as described previously (Siddiqui et al., 2022a). The consensus library contained 42,245 peptides corresponding to 4421 protein groups. For processing, raw files were loaded and Spectronaut calculated the ideal mass tolerances for data extraction and scoring based on its extensive mass calibration with a correction factor of 1. Both at precursor and fragment level, the highest data point within the selected m/z tolerance was chosen. Identification of peptides against the library was based on default Spectronaut settings (Manual for Spectronaut 13.0, available on Biognosis website). Briefly, precursor Qvalue Cut-off and Protein Qvalue Cut-off were as per default at 1%, therefore only those that passed the cut-off were considered as identified and used for subsequent processing. Retention time prediction type was set to dynamic iRT. Interference correction was on MS2 level. For quantification, the interference correction was activated and a cross-run normalisation was performed using the total peak area as the normalisation base with a significance level of 0.01.
 
 Significantly stabilised proteins were determined by first calculating the fold-change between the MIPS2673 (1 µM and 4 µM conditions) and vehicle-treated samples for each experiment. Statistical significance of the change in protein abundance was determined by a Welch’s t-test. Proteins that were significantly stabilised (fold-change >1.2, p<0.05) at both MIPS2673 concentrations in multiple experiments were considered putative targets. The data were plotted using paired volcano plots, whereby fold-change in protein abundance was plotted as a function of statistical significance for multiple conditions or experiments to visualise commonly stabilised proteins.
 
-## Data analysis for limited proteolysis experiments
+### Data analysis for limited proteolysis experiments
 
 For limited proteolysis experiments, raw data files were processed using Spectronaut 13.0 as described above, except a limited proteolysis-specific P. falciparum infected red blood cell spectral library was used. The in-house-generated library contained 85,039 peptides corresponding to 4681 protein groups.
 
@@ -168,40 +446,40 @@ The position of drug binding using the centre of mass and distance measurements 
 
 To reveal in an unbiased way whether any protein functions are overrepresented in the expanded list of candidate targets from the experiment one dataset, this list was tested for functional enrichments using the topGO R-package (Moldovan et al., 2020). All proteins with an uncorrected p<0.05 were tested against a background of proteins for which abundance was measured. PlasmoDB GO terms were used for GO term mapping. We tested for enrichment in molecular function GO terms with the Fisher’s exact test using the weight-algorithm in topGO (Alexa et al., 2006). All terms with a p-value less than 0.05 were considered significant. GO terms represented by fewer than five proteins in the background dataset were excluded from the analysis.
 
-## Enzyme assays
+### Enzyme assays
 
 Inhibition of aminopeptidase activity assays were performed against nine aminopeptidases: the M1 alanyl and M17 leucyl aminopeptidases from P. falciparum (PfA-M1; PfA-M17) and P. vivax (PvA-M1; PvA-M17), the M18 aspartyl and aminopeptidase P aminopeptidases from P. falciparum (PfA-M18; PfAPP) and three human M1 homologues: LTA4H (OriGene TP307617), ERAP1 (OriGene TP314469), and ERAP2 (Creative BioMart ERAP2-304H). The Plasmodium enzymes were produced recombinantly as described previously (McGowan et al., 2009; McGowan et al., 2010; Malcolm et al., 2021; Drinkwater et al., 2016a; Sivaraman et al., 2012) and the human recombinant enzymes were purchased from commercial suppliers as indicated.
 
 The ability of MIPS2673 to inhibit aminopeptidase activity was assessed by fluorescence assays using fluorogenic substrates L-leucine-7-amido-4-methylcoumarin hydrochloride (H-Leu-NHMec, 20 µM for PfA-M1, 40 µM for PvA-M1, and 100 µM for ERAP1 and ERAP2) for all enzymes except LTA4H that was assessed using L-alanine-7-amido-4-methylcoumarin hydrochloride (H-Ala-NHMec, 20 μM) and PfAPP that was assessed using Lys(Abz)-Pro-Pro-NA (PPpNA, 10 μM) (Drinkwater et al., 2016b). Aminopeptidase activity of Pf-M18 was measured by an absorbance assay using the substrate L-glutamic acid γ-(4-nitroanilide) (L-Glu-pNA, 100 μM) (Sivaraman et al., 2012). All assays were performed at pH 8.0. The concentration of substrate in the assay was held constant for each enzyme and ranged from 10 μM to 100 μM depending on the enzyme. Reactions were measured at 37°C in white 384-well plates in a total volume of 50 μL using a spectrofluorimeter (BMG FLUOstar) with excitation at 355 nm and emission at 460 nm for the fluorescence assays or excitation at 405 nm for the absorbance assays. The fluorescence or absorbance signal was continuously monitored until a final steady-state velocity, v, was obtained. Inhibition constants were calculated in biological triplicate from three different protein preparations. For determination of the apparent Morrison inhibition constant (denoted here as Ki), enzymes were pre-incubated in 100 mM Tris-HCl, pH 8.0 (supplemented with 1 mM CoCl2 for M17 aminopeptidases) and inhibitor added 20 min prior to the addition of substrate. Substrate concentrations were selected to allow sensitive detection of enzyme activity while not exceeding the Km for each enzyme. A compound concentration range was selected to obtain a complete inhibition curve (0–100%) in biological triplicate. Where possible, the Ki values were calculated by plotting the initial rates versus inhibitor concentration, and fitting to the Morrison equation for tight binding inhibitors in GraphPad Prism (non-linear regression method). Where a Ki could not be calculated (ERAP1), the percentage inhibition was calculated assuming 100% activity in the absence of compound.
 
-## Structural biology
+### Structural biology
 
 PfA-M1 was co-crystallised with MIPS2673 by the hanging-drop method using previously established protocols (McGowan et al., 2009). Purified protein was concentrated to 5.0 mg/mL and mixed with MIPS2673 to a final ligand concentration of 1 mM. Crystals grew in 20–30% poly(ethylene glycol) (PEG)8000, 0.1 M Tris pH 7.5–8.5, 0.2 M MgCl2, 10% glycerol. Co-crystals were subjected to an additional overnight compound soak before being snap-frozen in liquid nitrogen. Data were collected at 100 K using synchrotron radiation at the Australian Synchrotron beamlines 3BM1 (Cowieson et al., 2015). Data were processed using XDS (Kabsch, 2010) and Aimless (Evans and Murshudov, 2013) as part of the CCP4i program suite (Winn et al., 2011). The structures were solved by molecular replacement in Phaser (McCoy et al., 2007) using the structure of unliganded PfA-M1 coordinates (RCSB ID 3EBG) as the search models. The structures were refined using Phenix (Adams et al., 2010), with 5% of reflections set aside for calculation of Rfree. Between refinement cycles, the protein structure, solvent, and inhibitors were manually built into 2Fo − Fc and Fo − Fc electron density maps using COOT (Emsley and Cowtan, 2004; Emsley et al., 2010), with restraint files generated by Phenix where necessary. The data collection and refinement statistics can be found in Supplemental Information (Figure 1—source data 1). The coordinates and structure factors are available from the Protein Data Bank with PDB Accession codes: 8SLO.pdb (PfA-M1-MIPS2673).
 
-## Determination of compound EC50 against 3D7 P. falciparum parasites
+### Determination of compound EC50 against 3D7 P. falciparum parasites
 
 Parasite viability assay was performed as previously described (Edgar et al., 2022). Synchronised ring stage P. falciparum 3D7 parasites were cultured in 96-well U-bottom plates at 0.5% parasitaemia and 2% haematocrit, to which 50 μL of serially diluted MIPS2673 or artesunate was added. After 72 hr plates were placed at –80°C before being analysed in buffer containing 20 mM Tris pH 7.5, 5 mM EDTA, 0.008% saponin (wt/vol), and 0.008% Triton X-100 (vol/vol) (Smilkstein et al., 2004) containing 0.2 μL/mL SYBR Green I Nucleic Acid Gel Stain (10,000× in DMSO; Thermo Fisher). After 1 hr incubation, fluorescence intensity was read on a Glomax Explorer Fully Loaded plate reader (Promega) at emission wavelengths of 500–550 nm and an excitation wavelength of 475 nm. Uninfected RBCs and parasites treated with DMSO were used to normalise fluorescence. Data from four biological replicates performed in triplicate were plotted as 4-parameter log dose non-linear regression analysis with a sigmoidal dose-response curve fitted using GraphPad Prism 9 to generate EC50 values, with error bars representative of the SEM.
 
-## EC50 determination against drug-resistant field isolates and laboratory selected P. falciparum parasites
+### EC50 determination against drug-resistant field isolates and laboratory selected P. falciparum parasites
 
 In vitro testing was performed with a modified [3H]-hypoxanthine incorporation assay, as previously reported (Snyder et al., 2007).
 
-## Parasite killing rate assay
+### Parasite killing rate assay
 
 Assay was performed as previously described (Edgar et al., 2022). Synchronised ring or trophozoite P. falciparum 3D7 parasites were cultured in the presence of 10× the EC50 of MIPS2673 or artesunate for either 24 hr or 48 hr. Media containing compound was replenished at 24 hr for 48 hr assays. After incubation, RBCs were thoroughly washed to remove the compound and cultures were diluted 1/3 with fresh media and further grown for 48 hr before being placed at –80°C. Cultures were thawed and analysed using SYBR Green I assay as described above. Parasite viability was determined as a percentage of DMSO-treated parasites cultured alongside compound-treated parasites. Artesunate was used as a comparison of the parasite killing rate, and experiments were performed in four biological replicates.
 
-## Gametocyte activity assay
+### Gametocyte activity assay
 
 Viability assays were performed as previously described (Duffy and Avery, 2013; Duffy et al., 2016; Lucantoni et al., 2017) against PfNF54-s16-GFP early (I-III); late (IV-V), and mature (V) stage gametocytes. Gametocytes were assessed at early stage (day 2), late stage (day 8), and mature (day 12). Compounds diluted in 4% DMSO were transferred into 384-well imaging plates; gametocytes at various stages added, and plates incubated for 72 hr in 5% CO2, 5% O2, and 60% humidity at 37°C. After 72 hr incubation, 5 µL of MitoTracker Red CMH2XRos in PBS added per well and plates incubated overnight. Image acquisition and analysis was undertaken on the Opera QEHS micro-plate confocal imaging system. An Acapella-based script using the MTR fluorescent signal and the GFP designated object quantifying viable stage-dependent parasite morphology identified gametocytes. Gametocyte viability was calculated as a percentage of the positive (5 µM puromycin) and negative (0.4% DMSO) controls. EC50 values were calculated using a 4-parameter log dose, non-linear regression analysis, with sigmoidal dose-response (variable slope) curve fit using GraphPad Prism (version 4.0). No constraints were used in the curve fit. Chloroquine, artesunate, pyronaridine, pyrimethamine, dihydroartemisinin, and methylene blue were analysed in parallel as reference compounds. Experiments were completed in duplicate for two or three biological replicates.
 
-## HEK293 cytotoxicity assay
+### HEK293 cytotoxicity assay
 
 To assess the cytotoxicity of MIPS2673 against mammalian cells, an established and well-validated metabolic assay for HEK293 cells was used (Duffy and Avery, 2012). In brief, HEK293 cells were maintained in DMEM supplemented with 10% fetal bovine serum. Compound testing was undertaken in tissue culture-treated 384-well plates incubated for 72 hr at 37°C and 5% CO2. The media was then removed and replaced with resazurin (final concentration 44 μM). After an additional 6 hr incubation, total fluorescence was measured using an Envision plate reader (Perkin Elmer) (excitation/emission: 530 nm/595 nm).
 
-## Metabolomics
+### Metabolomics
 
 P. falciparum 3D7 cultures that underwent double sorbitol synchronisation were incubated for a further 28–42 hr to achieve the desired trophozoite stage (28 hr post invasion). Infected RBC cultures at 6% parasitaemia and 2% haematocrit (2×108 cells in total) were treated with 3× the EC50 of MIPS2673 (1 µM) or an equivalent volume of DMSO (negative control) for 1 hr, after which metabolites were extracted. Following incubation, all samples were centrifuged at 650×g for 3 min, supernatants were removed, and pellets were washed in 1 mL of ice-cold PBS. Samples were again centrifuged at 650×g for 3 min to remove all of the PBS and the pellets were resuspended in 150 µL of ice-cold extraction buffer (100% methanol). Samples were then incubated on an automatic vortex mixer for 1 hr at 4°C before being centrifuged at 21,000×g for 10 min. Supernatant was collected and 100 µL was stored at –80°C until further analysis and 10 µL from each sample was pooled to serve as a quality control sample. LC-MS analysis and data processing were as previously described (Edgar et al., 2022).
 
-## Kinetic solubility estimation
+### Kinetic solubility estimation
 
 Kinetic solubility was estimated using nephelometry (SolpH) according to the method of Bevan and Lloyd, 2000. Briefly, the compound in DMSO was spiked into either pH 6.5 phosphate buffer or 0.01 M HCl (approximately pH 2) with the final DMSO concentration being 1%. After 30 min had elapsed, samples were then analysed via nephelometry to determine a solubility range.

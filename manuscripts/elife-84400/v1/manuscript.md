@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Plant and Environmental Sciences, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/0316ej306 Life Sciences Core Facilities, Weizmann Institute of Science Rehovot Israel
-3. https://ror.org/0316ej306 Department of Biological Regulation, Weizmann Institute of Science Rehovot Israel
+1. Department of Plant and Environmental Sciences, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Life Sciences Core Facilities, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+3. Department of Biological Regulation, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
 
 † Corresponding author
 
 ## Abstract
 
-Unicellular algae, termed phytoplankton, greatly impact the marine environment by serving as the basis of marine food webs and by playing central roles in the biogeochemical cycling of elements. The interactions between phytoplankton and heterotrophic bacteria affect the fitness of both partners. It is becoming increasingly recognized that metabolic exchange determines the nature of such interactions, but the underlying molecular mechanisms remain underexplored. Here, we investigated the molecular and metabolic basis for the bacterial lifestyle switch, from coexistence to pathogenicity, in Sulfitobacter D7 during its interaction with Emiliania huxleyi , a cosmopolitan bloom-forming phytoplankter. To unravel the bacterial lifestyle switch, we analyzed bacterial transcriptomes in response to exudates derived from algae in exponential growth and stationary phase, which supported the Sulfitobacter D7 coexistence and pathogenicity lifestyles, respectively. In pathogenic mode, Sulfitobacter D7 upregulated flagellar motility and diverse transport systems, presumably to maximize assimilation of E. huxleyi -derived metabolites released by algal cells upon cell death. Algal dimethylsulfoniopropionate (DMSP) was a pivotal signaling molecule that mediated the transition between the lifestyles, supporting our previous findings. However, the coexisting and pathogenic lifestyles were evident only in the presence of additional algal metabolites. Specifically, we discovered that algae-produced benzoate promoted the growth of Sulfitobacter D7 and hindered the DMSP-induced lifestyle switch to pathogenicity, demonstrating that benzoate is important for maintaining the coexistence of algae and bacteria. We propose that bacteria can sense the physiological state of the algal host through changes in the metabolic composition, which will determine the bacterial lifestyle during interaction.
+Unicellular algae, termed phytoplankton, greatly impact the marine environment by serving as the basis of marine food webs and by playing central roles in the biogeochemical cycling of elements. The interactions between phytoplankton and heterotrophic bacteria affect the fitness of both partners. It is becoming increasingly recognized that metabolic exchange determines the nature of such interactions, but the underlying molecular mechanisms remain underexplored. Here, we investigated the molecular and metabolic basis for the bacterial lifestyle switch, from coexistence to pathogenicity, in Sulfitobacter D7 during its interaction with Emiliania huxleyi, a cosmopolitan bloom-forming phytoplankter. To unravel the bacterial lifestyle switch, we analyzed bacterial transcriptomes in response to exudates derived from algae in exponential growth and stationary phase, which supported the Sulfitobacter D7 coexistence and pathogenicity lifestyles, respectively. In pathogenic mode, Sulfitobacter D7 upregulated flagellar motility and diverse transport systems, presumably to maximize assimilation of E. huxleyi-derived metabolites released by algal cells upon cell death. Algal dimethylsulfoniopropionate (DMSP) was a pivotal signaling molecule that mediated the transition between the lifestyles, supporting our previous findings. However, the coexisting and pathogenic lifestyles were evident only in the presence of additional algal metabolites. Specifically, we discovered that algae-produced benzoate promoted the growth of Sulfitobacter D7 and hindered the DMSP-induced lifestyle switch to pathogenicity, demonstrating that benzoate is important for maintaining the coexistence of algae and bacteria. We propose that bacteria can sense the physiological state of the algal host through changes in the metabolic composition, which will determine the bacterial lifestyle during interaction.
 
 ## Introduction
 
@@ -33,9 +33,84 @@ In the current study, we investigated the behavior of the Roseobacter Sulfitobac
 
 ## Results
 
-## E. huxleyi-derived exudates induce remodeling of Sulfitobacter D7 transcriptome
+### E. huxleyi-derived exudates induce remodeling of Sulfitobacter D7 transcriptome
 
 The interaction between Sulfitobacter D7 and E. huxleyi displays two distinct phases (Figure 1a). Initially, there is a coexisting phase in which the alga grows exponentially, and the bacterium grows as well. The interaction shifts to pathogenic when the virulence of Sulfitobacter D7 toward E. huxleyi is invoked upon exposure to high concentrations of algal DMSP, which occurs when the alga reaches stationary phase or when DMSP is applied exogenously to algae in exponential growth (Figure 1a; Barak-Gavish et al., 2018). We aimed to unravel the response of Sulfitobacter D7 to the pathogenicity-inducing compound, DMSP, and to different alga-derived infochemicals that affect the lifestyle of the bacterium. We grew Sulfitobacter D7 in conditioned media (CM) derived from algal cultures at exponential and stationary phase (Exp-CM and Stat-CM, respectively), in which DMSP concentration is low and high, respectively (Barak-Gavish et al., 2018; Figure 1b, Table 1). This enabled us to dissect the interaction with E. huxleyi into its different phases, that is, Exp-CM represents the coexisting phase, and Stat-CM represents the pathogenic phase. An additional pathogenicity-inducing treatment was Exp-CM supplemented with 100 µM DMSP (herein Exp-CM + DMSP). This condition mimicked co-cultures to which we added DMSP exogenously and thus induced Sulfitobacter D7 pathogenicity, which led to the death of exponentially growing E. huxleyi (Figure 1a). While the concentration of DMSP measured in natural seawater is typically in the tens of nanomolar range (Barak-Gavish et al., 2018; Kettle et al., 1999), algae-derived compounds are present in higher concentrations in the phycosphere (Seymour et al., 2017; Stocker, 2012). Furthermore, the concentrations of DMSP measured in axenic stationary phase E. huxleyi cultures reach up to 70 µM (Barak-Gavish et al., 2018). We therefore argue that the 100 µM concentration used in our study is appropriate and ecologically relevant, especially in light of the high densities of the algal and bacterial cultures used in our experimental system.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig1-v1.jpg)
+
+**Figure 1.:** (a) Time course of E. huxleyi CCMP379 and bacterial abundance (full and dashed lines, left and right axes, respectively) in algal mono-cultures or during co-culturing with Sulfitobacter D7. Top panel: Co-cultures display two phases with distinct bacterial lifestyles: coexistence and pathogenicity. Bottom panel: DMSP was added at day 0 to a final concentration of 100 µM. Results represent average ± SD (n=3). Figure 1a has been adapted from Figure 5 of Barak-Gavish et al., 2018. (b) Design of Sulfitobacter D7 transcriptome experiment aiming to explore gene expression profiles in response to E. huxleyi-derived media and in response to DMSP. Growth media consisted of conditioned media (CM) derived from E. huxleyi at exponential growth or stationary phase (Exp-CM and Stat-CM, respectively), and an additional treatment in which 100 µM of DMSP was added (Exp-CM + DMSP). These media differentially induce the coexistence and pathogenicity lifestyles of Sulfitobacter D7. In order to identify DMSP-responsive genes we inoculated Sulfitobacter D7 in defined minimal media (MM), lacking E. huxleyi-derived exudates, without and with 100 µM DMSP (MM and MM + DMSP, respectively). Sulfitobacter D7 was inoculated into each media and harvested for RNA profiling after 24 hr of growth. Initial conditions of the media and bacterial growth are elaborated in Table 1. (c) Principle component analysis of Sulfitobacter D7 detected genes in all treatments (2588 genes). Triplicates of each treatment are shown. (d) Heatmap of gene expression of all differentially expressed genes in the comparisons Exp-CM + DMSP vs. Exp-CM, Stat-CM vs. Exp-CM, and MM + DMSP vs. MM (1179 genes). Clusters were determined based on k-means analysis. Significant functional enrichment in each cluster, based on Kyoto encyclopedia of genes and genomes (KEGG) pathways, is denoted. Each row represents one gene, and the color intensity corresponds to the standardized expression across all samples (triplicates of each treatment are shown). Expression values are scaled by row. Genes in cluster 1 are ordered based on the mean expression values in the MM + DMSP treatment. Genes in cluster 2–4 are ordered based on the mean expression values in the Exp-CM treatment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Pearson correlation and dendrogram of hierarchical clustering between all samples in Sulfitobacter D7 transcriptome according to gene expression values. Replicates of same treatment show high correlation and cluster together. Conditioned media (CM) and minimal media (MM) treatments cluster separately. DMSP, dimethylsulfoniopropionate; Exp-CM, exponential CM; Stat-CM, stationary CM.
+
+**Table 1.**
+ Conditions of the media used for Sulfitobacter D7 transcriptome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">For conditioned media (CM)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Media</td>
+      <td>Sulfitobacter D7 abundance at t=24 hr (106∙mL–1)†</td>
+      <td>DMSP concentration (µM)‡</td>
+      <td>Days ofE. huxleyi growth</td>
+      <td>E. huxleyi abundance (cells∙mL–1)</td>
+      <td>% Dead cells‡</td>
+    </tr>
+    <tr>
+      <td>Exp-CM</td>
+      <td>2.6±0.1</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1∙106</td>
+      <td>8.5%</td>
+    </tr>
+    <tr>
+      <td>Exp-CM + DMSP</td>
+      <td>3.7±0.3</td>
+      <td>100</td>
+      <td>5</td>
+      <td>1∙106</td>
+      <td>8.5%</td>
+    </tr>
+    <tr>
+      <td>Stat-CM</td>
+      <td>17.5±0.8</td>
+      <td>10.5</td>
+      <td>12</td>
+      <td>3∙106</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td>MM</td>
+      <td>7.5±0.5</td>
+      <td>0</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>MM + DMSP</td>
+      <td>18.6±1.3</td>
+      <td>100</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_DMSP, dimethylsulfoniopropionate; CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM.*Conditions of exponential and stationary E. huxleyi cultures from which Exp-CM and Stat-CM were obtained, respectively (n=1).†Results represent average ± SD (n=3). At t=24 hr bacteria were harvested for transcriptome analysis (experimental setup, Figure 1b).‡DMSP and cell death measurements are described in Barak-Gavish et al., 2018 (n=1)._
 
 In order to reveal the bacterial transcriptional response to algal exudates, we harvested bacterial cells after 24 hr of growth in the different CM treatments and performed RNAseq analysis, using a modified protocol based on Avraham et al., 2016 (Figure 1b, Table 1). We aimed to identify pathogenicity-related genes by comparing Sulfitobacter D7 gene expression profiles in the pathogenicity-inducing media to the coexistence medium. We further aimed to find bacterial genes that are specifically responsive to DMSP and are not affected by other alga-derived factors. Therefore, we grew Sulfitobacter D7 in defined minimal medium (MM), which lacks algal metabolites, supplemented it with 100 µM DMSP (herein MM + DMSP), and examined the transcriptional response. This experimental design allowed us to expand our understanding on the bacterial response to DMSP, algal infochemicals and which of these are essential for coexistence and pathogenicity.
 
@@ -43,29 +118,90 @@ Among the 3803 genes in Sulfitobacter D7 genome, we detected the expression of 2
 
 To identify the pathogenicity- and DMSP-related genes, we examined the genes that were differentially expressed (DE) in the following comparisons: Exp-CM+DMSP vs. Exp-CM, Stat-CM vs. Exp-CM, and MM +DMSP vs. MM. We defined significantly DE genes as |fold change|>2 and adjusted p-value ≤0.05. The DE genes were separated into four clusters, based on k-means clustering, and we assessed the enrichment in KEGG pathways in each cluster (Figure 1d). Cluster 1 contained 197 genes that were responsive to DMSP, namely DE in the Exp-CM±DMSP and the MM ±DMSP comparisons. Interestingly, the expression pattern of cluster 1 genes in response to DMSP was largely different: in Exp-CM, DMSP led to downregulation, while in MM it led to upregulation. The differential effect of DMSP in Exp-CM and MM is also visualized in the PCA and is evident by the number of DE genes in each comparison: 968 genes were DE between Exp-CM vs. Exp-CM+DMSP, while only 170 genes were DE between MM vs. MM +DMSP (Table 2). Since the metabolic composition of these two media was profoundly different, it suggests that the effect of DMSP signaling depends on the simultaneous perception of other metabolites. Namely, in different chemical contexts, DMSP will affect Sulfitobacter D7 gene expression in different ways.
 
+**Table 2.**
+ Number of Sulfitobacter D7 differentially expressed genes in pathogenicity vs. coexistence modes and in response to DMSP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Exp-CM +DMSPvs. Exp-CM</th>
+      <th>Stat-CMvs. Exp-CM</th>
+      <th>MM +DMSPvs. MM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upregulated</td>
+      <td>560</td>
+      <td>358</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>Downregulated</td>
+      <td>408</td>
+      <td>237</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>968</td>
+      <td>495</td>
+      <td>170</td>
+    </tr>
+  </tbody>
+</table>
+
+_DE genes were defined as genes with |fold change|>2 and adjusted P-value ≤0.05.DMSP, dimethylsulfoniopropionate; CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM._
+
 Cluster 2 contained 322 genes that were highly expressed in the coexistence medium, Exp-CM, compared to the pathogenicity-inducing media, therefore, we consider it as coexistence-related. This cluster was enriched with genes related to the phenylalanine metabolism pathway, and specifically to phenylacetic acid (PAA) degradation (Figure 1—source data 3). PAA is a phytohormone that can potentially promote algal growth (Cook, 2019), and PAA metabolism in bacteria relates to production of secondary metabolites that can affect algae (Thiel et al., 2010; Wang et al., 2016). Clusters 3 and 4 contained 264 and 396 genes, respectively, that were mainly upregulated in Exp-CM +DMSP and Stat-CM compared to Exp-CM, and we consider these as pathogenicity-related clusters. Cluster 4 also contained genes that were highly expressed in MM ±DMSP. Cluster 3 was enriched with genes encoding for ABC transporters and ribosomal proteins, and cluster 4 was enriched with flagellar genes and genes related to oxidative phosphorylation (Figure 1d, Figure 1—source data 3). The enrichment in genes encoding for ribosomal proteins and an F-type ATPase, related to oxidative phosphorylation, in the pathogenicity-related clusters suggests that during the pathogenic lifestyle Sulfitobacter D7 may be more metabolically active than in the coexistence lifestyle (Figure 1—source data 3). Overall, this transcriptomics experimental setup enabled us to capture the gene expression of Sulfitobacter D7 in coexistence and pathogenicity modes. Moreover, it demonstrated the pivotal role of DMSP in regulating gene expression, which depends also on the chemical environment. In E. huxleyi-derived CM, DMSP led to major changes in Sulfitobacter D7 transcriptome, while in MM, which lacked additional algal metabolites, DMSP had a minor effect on gene expression. We therefore suggest that the additional algal factors act in concert with DMSP and are required for the expression of coexistence- and pathogenicity-related genes.
 
-## The pathogenic lifestyle of Sulfitobacter D7 includes upregulation of flagellar genes and increased motility
+### The pathogenic lifestyle of Sulfitobacter D7 includes upregulation of flagellar genes and increased motility
 
 The enrichment in flagellar genes in cluster 4 suggests that flagellar motility may be involved in the pathogenic lifestyle of Sulfitobacter D7. We examined the expression of all the genes necessary for flagellar assembly, which are localized in a gene cluster in the genome of Sulfitobacter D7 (Figure 2a). Most of the flagellar genes were significantly upregulated in pathogenicity-inducing media compared to the coexistence medium (Figure 2a), including the genes encoding for the flagellar hook and basal body (Figure 2a and Figure 2—source data 1). The flagellar genes FliC, FliM, FlgC, FlgB, and FliI were not DE but were highly expressed in all treatments (Figure 2—source data 1). The genes FlhB, FliR, FlhA, and FliQ were not sufficiently detected in our analysis. Interestingly, in MM there were no significant changes in expression of flagellar genes in response to DMSP, although the overall expression was higher than in the CM samples (Figure 2a, Figure 2—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig2-v1.jpg)
 
-**Figure 2.:** (a) Fold change of flagellar gene expression in the comparisons: Exp-CM +DMSP vs. Exp-CM (yellow), Stat-CM vs. Exp-CM (blue), and MM +DMSP vs. MM (gray). Genes marked with * are significantly differentially expressed. The flagellar genes are localized in a gene cluster on the Sulfitobacter D7 chromosome, as shown below the graph. Genes in gray are not related to the flagellum. The function of each gene is indicated in the flagellum assembly scheme on the top-right. Expression values are presented in Figure 2—source data 1. (b) Bacterial motility inferred by the colony area of Sulfitobacter D7 plated on semi-solid agar media. Bacteria were pre-conditioned in liquid CM (Exp-CM, Exp-CM + DMSP, and Stat-CM) for 24 hr and plated on the corresponding semi-solid CM plates (yellow bars). For control, bacteria were pre-conditioned on liquid marine broth (½MB) and plated on semi-solid CM plates (blue bars). Colony area was determined after 6 days of growth. Results represent average ± SD (n=10–12 colonies per treatment). Statistical differences were tested using two-way analysis of variance, followed by Tukey’s post-hoc test. * p-value <0.05, *** p-value <0.0001. (c) Representative bacterial colonies from each treatment showing the difference in colony area and morphology. The arrows depict bacterial motility extensions from the core colony. The extensions were not included in the colony area measurements. DMSP, dimethylsulfoniopropionate; CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM.Figure 2—source data 1.Sulfitobacter D7 expression of flagellar genes.Figure 2—source data 2.Sulfitobacter D7 plated on semi-solid agar media.
+**Figure 2.:** (a) Fold change of flagellar gene expression in the comparisons: Exp-CM +DMSP vs. Exp-CM (yellow), Stat-CM vs. Exp-CM (blue), and MM +DMSP vs. MM (gray). Genes marked with * are significantly differentially expressed. The flagellar genes are localized in a gene cluster on the Sulfitobacter D7 chromosome, as shown below the graph. Genes in gray are not related to the flagellum. The function of each gene is indicated in the flagellum assembly scheme on the top-right. Expression values are presented in Figure 2—source data 1. (b) Bacterial motility inferred by the colony area of Sulfitobacter D7 plated on semi-solid agar media. Bacteria were pre-conditioned in liquid CM (Exp-CM, Exp-CM + DMSP, and Stat-CM) for 24 hr and plated on the corresponding semi-solid CM plates (yellow bars). For control, bacteria were pre-conditioned on liquid marine broth (½MB) and plated on semi-solid CM plates (blue bars). Colony area was determined after 6 days of growth. Results represent average ± SD (n=10–12 colonies per treatment). Statistical differences were tested using two-way analysis of variance, followed by Tukey’s post-hoc test. * p-value <0.05, *** p-value <0.0001. (c) Representative bacterial colonies from each treatment showing the difference in colony area and morphology. The arrows depict bacterial motility extensions from the core colony. The extensions were not included in the colony area measurements. DMSP, dimethylsulfoniopropionate; CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM.
 
 To assess the involvement of motility in the behavioral switch of Sulfitobacter D7 and to validate the expression patterns of flagellar genes, we performed a bacterial motility assay in response to E. huxleyi-derived metabolites. We examined the colony expansion of Sulfitobacter D7 in semi-solid agar plates composed of Exp-CM, Exp-CM +DMSP, or Stat-CM. We first pre-conditioned Sulfitobacter D7 in the respective liquid CM for 24 hr, in order to induce the appropriate expression of flagellar genes. Sulfitobacter D7 plated on pathogenicity-inducing semi-solid media showed higher colony expansion areas than in the coexistence medium, indicating increased motility under these conditions (Figure 2b–c). The average colony area in semi-solid Stat-CM and Exp-CM +DMSP was 37.0 and 20.8 mm2, respectively, while in Exp-CM it was only 13 mm2 (Figure 2b). Moreover, the morphology of the colonies was different; the colony edges in Stat-CM were smeared, and there were bacterial motility extensions from the core colony, indicating bacterial migration in the semi-solid agar (Figure 2c). The smeared edges were also evident in Exp-CM +DMSP, but to a lesser extent. These results validated the expression patterns of flagellar genes in each CM. Interestingly, Sulfitobacter D7 that was pre-grown in liquid marine broth (½MB), and was therefore not pre-exposed to E. huxleyi infochemicals, and subsequently plated on the three semi-solid CM did not show major differences in the average colony area (Figure 2b–c). This strongly indicates that Sulfitobacter D7 grown in liquid pathogenicity-inducing media were pre-conditioned for motility by upregulating the expression of flagellar genes compared to the coexistence medium. Still, even without the priming in liquid pathogenicity-inducing media, bacterial colonies grown in liquid ½MB and plated on Stat-CM were significantly larger and showed the smeared edges morphology, implying that in semi-solid Stat-CM there was also induction of motility (Figure 2b–c). Taken together, high expression of flagellar genes in pathogenicity-inducing media, along with the observation that bacteria are indeed more motile in these conditions, indicates that flagella-driven motility may be involved in the pathogenic lifestyle of Sulfitobacter D7 during interaction with E. huxleyi.
 
-## DMSP and E. huxleyi-derived metabolites modulate the expression of Sulfitobacter D7 transport genes
+### DMSP and E. huxleyi-derived metabolites modulate the expression of Sulfitobacter D7 transport genes
 
 The enrichment in ABC transporters in cluster 3 suggests that nutrient uptake by Sulfitobacter D7 is prominent during the interaction with E. huxleyi. We thus examined the expression of all 493 transport genes in Sulfitobacter D7 genome. We found that transporters for energy-rich organic compounds were expressed in CM treatments (Figure 3, Figure 3—source data 1). This includes transporters for amino acids and peptides, carbohydrates and sugars, organic sulfur and nitrogen compounds, as well as for inorganic nutrients and metals. Examination of bacterial transport genes was shown to serve as a sensitive readout for estimating which metabolites reside in the medium and are taken up by bacteria (Ferrer-González et al., 2021). Therefore, the elevated expression of transporters implies that the CM contained E. huxleyi-derived metabolites that Sulfitobacter D7 can benefit from during growth in CM and during the interaction with the alga. Such metabolites include branched-chain amino acids, sugars, C4 carbohydrates, and DMSP, which are known to be produced by E. huxleyi (Obata et al., 2013; Tsuji et al., 2012; Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig3-v1.jpg)
+
+**Figure 3.:** Heatmap of gene expression of representative transport genes for various metabolite classes. Each row represents one gene, and the blocks represent a complete transport system in which at least two genes were differentially expressed (DE) in the comparisons indicated on the bottom. The column ‘cluster number’ corresponds to the heatmap cluster in Figure 1d in which the gene is found. Colored * denotes in which comparison of the gene was significantly DE. Color intensity corresponds to the standardized expression across all samples (triplicates of each treatment are shown). Expression values are scaled by row. Expression and fold-change values are presented in Figure 3—source data 1. ABC, ATP-binding cassette; TRAP, tripartite ATP-independent periplasmic; BCCT, betaine/carnitine/choline transporter. The letters correspond to the transport system components: A, ATP-binding; S, substrate-binding; P, permease; Q, dctQ subunit; M, dctM subunit.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Venn diagrams showing the number of differentially expressed transport genes in the indicated treatment comparisons. The left diagram corresponds to genes that were upregulated in samples with higher DMSP concentration, and the right side is downregulated genes. Venn diagrams were generated using BioVenn (Hulsen et al., 2008). CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM.
 
 Numerous transport genes were DE in the pairwise comparisons of the different treatments (Figure 3, Figure 3—figure supplement 1, and Figure 3—source data 1). Sulfitobacter D7 grown in Stat-CM had a similar expression profile of transport genes to that of Exp-CM +DMSP (Figure 3, Figure 3—figure supplement 1, and Figure 3—source data 1). Therefore, Sulfitobacter D7 grown in the pathogenicity-inducing media was indeed in a distinct transcriptional and metabolic state compared to the coexistence medium. Many transport genes were upregulated in Exp-CM +DMSP compared to Exp-CM: 99 genes, which constitute ~20% of Sulfitobacter D7 transport genes (Figure 3, Figure 3—figure supplement 1). An additional 39 genes were downregulated in response to DMSP addition to Exp-CM. Interestingly, also in MM +DMSP 42 transport genes were upregulated compared to MM, and 14 were downregulated. Namely, in both Exp-CM and MM, DMSP induced remodeling of the transporter repertoire. The fact that the addition of a single metabolite, that is DMSP, led to DE of a multitude of transporters for various metabolite classes demonstrates the signaling role of DMSP. When we examined the amount of DE transport genes that were shared between the comparisons of the DMSP-supplemented treatments, we found only eight genes that were DE in a similar manner (Figure 3—figure supplement 1). Namely, DMSP led to a shift in transporter gene expression in both media, but the identity of the DE transporters was unique for each medium. This strengthens our hypothesis that the DMSP signal affects bacterial gene expression, but the activation of the coexistence and pathogenicity transcriptional profiles depends on additional algal metabolites.
 
 The differential effect of DMSP in Exp-CM and MM was especially notable in the expression of the DMSP transporters (betaine-carnitine-choline transporters; Kiene et al., 1998), which were significantly upregulated in Stat-CM and Exp-CM +DMSP, where DMSP was present at high concentrations compared to Exp-CM. However, the expression of these transporters was not affected by the addition of DMSP in the MM ±DMSP treatments. This was the same for the DmdA gene that encodes for the enzyme responsible for the first step of DMSP breakdown (Curson et al., 2011; Figure 1—source data 2). DmdA was barely expressed in MM +DMSP, albeit DMSP was present at high concentrations. Therefore, DMSP uptake and metabolism were prominent in E. huxleyi-derived CM, which contains additional algal metabolites that were not present in the MM. Taken together, DMSP has a strong signaling role and works in concert with additional algal metabolites to induce the coexistence- to pathogenicity-related gene expression in Sulfitobacter D7.
 
-## Algal benzoate is a key metabolite for E. huxleyi-Sulfitobacter D7 coexistence
+### Algal benzoate is a key metabolite for E. huxleyi-Sulfitobacter D7 coexistence
 
 We searched in the Sulfitobacter D7 transcriptomic response to E. huxleyi-derived metabolites for evidence of involvement of additional algal factors, other than DMSP, in the regulation of the lifestyle switch from coexistence to pathogenicity. We revealed a plasmid-encoded degradation pathway of the aromatic compound benzoate that was highly expressed in CM samples (Figure 4a–b, Figure 4—source data 1). Aromatic compound degradation is a common metabolic feature in Roseobacters (Buchan et al., 2004; Moran et al., 2007). The metabolic intermediates of benzoate catabolism can be directed to β-ketoadipate, which is subsequently metabolized to form the tricarboxylic acid (TCA) cycle precursors, acetyl-CoA and succinate (Harwood and Parales, 1996). There are two pathways to metabolize benzoate to β-ketoadipate, through cathechol (Ben genes) and through 4-hydroxybenzoate and protocatechuate (BphA and PobA genes) (Figure 4—figure supplement 1). An additional benzoate degradation pathway is through benzoyl-CoA (Box genes) (Figure 4—figure supplement 1; Fuchs et al., 2011). Sulfitobacter D7 harbors the pathway through catechol (Figure 4a). The Ben genes are localized in a gene cluster adjacent to a transcription factor BenM, which is known to regulate the expression of BenABCD and CatAB (Figure 4b; Bundy et al., 2002; Collier et al., 1998). All the genes in this benzoate-degradation gene cluster were expressed in CM treatments. Interestingly, the transporter of benzoate, which is encoded by a chromosomal gene, was also expressed in all CM, therefore it is not affected by the DMSP signal, as was observed for other transport systems (Figure 3). This suggests that Sulfitobacter D7 can assimilate and perceive algae-derived benzoate as a growth factor or signal regardless of the concentration of DMSP and may therefore be important in the initial coexistence phase.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig4-v1.jpg)
+
+**Figure 4.:** (a) The benzoate degradation pathway in Sulfitobacter D7. The genes that encode for the enzymes mediating the subsequent transformations of benzoate to succinate and acetyl-CoA are denoted in bold. (b) Expression values of benzoate-related genes, which are localized on Sulfitobacter D7 plasmid 5 in a gene cluster, as indicated below the graph. The benzoate transporter, BenE, is encoded on the chromosome. Genes in gray are not related to benzoate. Results represent average ± SD (n=3). Expression and fold-change values are presented in Figure 4—source data 1. Genes marked with * were significantly differentially expressed (DE) between all conditioned media (CM) and minimal media (MM) treatments (Exp-CM vs MM, Exp-CM vs MM + DMSP, Exp-CM +DMSP vs MM, Exp-CM +DMSP vs MM +DMSP, Stat-CM vs MM, and Stat-CM vs MM +DMSP). Genes marked with ** were significantly DE between all CM and MM treatments but one comparison (for BenD Exp-CM vs MM +DMSP; for PcaF Exp-CM +DMSP vs MM). (c) Benzoate concentration (bars, left axis) and bacterial growth (triangles, right axis) in MM supplemented with 100 µM benzoate, as a sole carbon source, without inoculation (gray) and upon inoculation of Sulfitobacter D7 (yellow). Results represent average ± SD (n=3). p-Value <0.0001 for the difference in benzoate concentration between the ‘No bac’ and ‘+D7’ treatments. No bacterial growth was observed in un-inoculated MM. (d) Extracellular benzoate concentration in the media of E. huxleyi CCMP379 cultures during growth in mono-culture (blue) or during co-culturing with Sulfitobacter D7 (yellow). # Benzoate was detected below the limit of quantification. Results represent average ± SD (n=3). p-Value <0.0001 for the difference in benzoate concentration between the ‘E. huxleyi’ and ‘E. huxleyi +D7’ treatments. Statistical differences in (c) and (d) were tested using a mixed effects model, with treatment and time as fixed effects, and replicate as a random effect. BenABC, benzoate 1,2-dioxygenase subunit alpha, beta, and reductase component, respectively; BenD, cis-1,2-dihydroxybenzoate dehydrogenase; CatA, catechol 1,2-dioxygenase; CatB, muconate cycloisomerase; PcaD, 3-oxoadipate enol-lactonase; PcaIJ, 3-oxoadipate CoA-transferase, alpha and beta subunits, respectively; PcaF, 3-oxoadipyl-CoA thiolase, DMSP, dimethylsulfoniopropionate; CM, conditioned media; MM, minimal media; Exp-CM, exponential CM; Stat-CM, stationary CM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Aerobic degradation of benzoate by bacteria can occur through three possible pathways: through catechol (Ben genes), through protocatechuate (BphA and PobA genes), and through benzoyl-CoA (Box genes). The first two pathways converge to β-ketoadipate, and in all the three pathways the end products are acetyl-CoA and succinate/succinyl-CoA, which are channeled to the tricarboxylic acid (TCA) cycle (Fuchs et al., 2011). The names of the genes encoding for the enzymes mediating the metabolic transformations are denoted next to the arrows. Full arrow represents a single enzymatic reaction, while dashed arrows represent multiple enzymatic reactions. The genes marked in bold were used as query genes for examining the prevalence of benzoate transport and catabolism genes in genomes of phytoplankton-associated bacteria (Figure 5a, Figure 5—source data 1). BenABC, benzoate 1,2-dioxygenase subunit alpha, beta, and reductase component, respectively; BenD, cis-1,2-dihydroxybenzoate dehydrogenase; CatA, catechol 1,2-dioxygenase; CatB, muconate cycloisomerase; PcaD, 3-oxoadipate enol-lactonase; PcaIJ, 3-oxoadipate CoA-transferase, alpha and beta subunits, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Bacterial growth after 24 hr in minimal media supplemented with different concentrations of benzoate as sole carbon source, without or with addition of 100 µM dimethylsulfoniopropionate (DMSP; gray and green, respectively). Results represent average ± SD (n=3). Statistical differences were tested using two-way analysis of variance, followed by Tukey's post-hoc test. p-Value <0.01 for the difference between ‘100 µM’ and ‘1000 µM’ compared to ‘0 µM’. Addition of DMSP did not significantly affect bacterial growth.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a-b) Ultra-high-performance liquid chromatography-electrospray ionization (UHPLC-ESI)-high resolution mass spectrometry analysis of benzoate. (a) Extracted ion chromatograms (EICs) of the molecular ions [M-H]− of benzoate (m/z 121.029; yellow) and benzoate-d5 (m/z 126.06; blue) as internal standard (IS) from a solid phase extract of artificial seawater that was spiked with both metabolites at 1 µM. The IS benzoate-d5 elutes 0.2 min earlier due to its uniformly deuterium-labeled aromatic ring. (b) Standard calibration curve of sodium benzoate and benzoate-d5 as IS from solid phase extracts of artificial seawater samples that were spiked in duplicates at different benzoate concentrations ranging from 0.2 µM to 100 µM. (c-d) UHPLC-ESI-tandem mass spectrometry (MS/MS) analysis of benzoate. (c) EICs of the fragment ions [M-H-CO2]− of benzoate (m/z 77) and benzoate-d5 (m/z 82) as IS in a calibration curve sample with 100 µM benzoate and 125 µM benzoate-d5. (d) Standard calibration curve of sodium benzoate and benzoate-d5 as IS at different benzoate concentrations ranging from 12.5 nM to 100 nM.
 
 To investigate if Sulfitobacter D7 can grow on benzoate, we inoculated the bacterium in MM supplemented with benzoate as a sole carbon source and found that it promoted bacterial growth in a dose-dependent manner (Figure 4—figure supplement 2). We further monitored the consumption of benzoate by growing the bacterium with 100 µM benzoate in MM. Sulfitobacter D7 grew by three orders of magnitude within 24 hr and consumed benzoate to an undetectable level, while the concentration of benzoate in the non-inoculated medium did not change significantly (Figure 4c). We further followed the concentration of benzoate in the medium of E. huxleyi cultures. We found that E. huxleyi produced and released benzoate to the medium when grown in mono-culture (Figure 4d). The concentration of benzoate in the algal culture’s medium was in the tens of nM range. Nevertheless, the concentration of benzoate in the phycosphere is likely much higher (Seymour et al., 2017). Upon co-culturing with Sulfitobacter D7, algal benzoate was rapidly consumed by the bacteria. These results demonstrate that Sulfitobacter D7 can grow on alga-derived benzoate and benefit from this metabolite during interactions with E. huxleyi.
 
@@ -73,7 +209,7 @@ Bacterial degradation of various aromatic compounds is mostly directed to the β
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig5-v1.jpg)
 
-**Figure 5.:** (a) Presence of benzoate transport and degradation genes in genomes of phytoplankton-associated Proteobacteria. Emiliania huxleyi-associated bacteria are denoted. Colored tiles depict the presence of the genes. Bacterial strains highlighted in bold possess genes for both transport and degradation of benzoate. Bacterial benzoate degradation pathways are elaborated in Figure 4—figure supplement 1. The full data of the presence of all query genes in the genomes of the bacteria is presented in Figure 5—source data 1. The query genes are listed in Key resources table. (b) Bacterial growth after 24 hr in minimal media with no carbon source or supplemented with 100 µM benzoate or succinate, as a sole carbon source, of Sulfitobacter D7 (yellow) and two additional Sulfitobacter strains (Sulfitobacter pontiacus DSM 10014 [green] and Sulfitobacter brevis DSM 11443 [blue]) that do not possess the genes required for benzoate utilization. Results represent average ± SD (n=3). Statistical differences were tested using two-way analysis of variance, followed by Tukey’s post-hoc test. * p-Value <0.05, ** p-value <0.01 *** p-value <0.0001. (c) Time course of E. huxleyi CCMP379 and bacterial abundance (left and right panels, respectively) in algal mono-cultures (gray) or during co-culturing with Sulfitobacter D7 (yellow), S. pontiacus (green), or S. brevis (blue). Results represent average ± SD (n=3). Statistical differences were tested using repeated-measures analysis of variance, followed by a Tukey post hoc test. p-Value <0.0001 for the difference in E. huxleyi and bacterial growth between all treatments, except for E. huxleyi growth in the treatments ‘+S. pontiacus’ compared to ‘+S. brevis’, which was not significant.Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.Emiliania huxleyi CCMP379 and bacterial abundances.
+**Figure 5.:** (a) Presence of benzoate transport and degradation genes in genomes of phytoplankton-associated Proteobacteria. Emiliania huxleyi-associated bacteria are denoted. Colored tiles depict the presence of the genes. Bacterial strains highlighted in bold possess genes for both transport and degradation of benzoate. Bacterial benzoate degradation pathways are elaborated in Figure 4—figure supplement 1. The full data of the presence of all query genes in the genomes of the bacteria is presented in Figure 5—source data 1. The query genes are listed in Key resources table. (b) Bacterial growth after 24 hr in minimal media with no carbon source or supplemented with 100 µM benzoate or succinate, as a sole carbon source, of Sulfitobacter D7 (yellow) and two additional Sulfitobacter strains (Sulfitobacter pontiacus DSM 10014 [green] and Sulfitobacter brevis DSM 11443 [blue]) that do not possess the genes required for benzoate utilization. Results represent average ± SD (n=3). Statistical differences were tested using two-way analysis of variance, followed by Tukey’s post-hoc test. * p-Value <0.05, ** p-value <0.01 *** p-value <0.0001. (c) Time course of E. huxleyi CCMP379 and bacterial abundance (left and right panels, respectively) in algal mono-cultures (gray) or during co-culturing with Sulfitobacter D7 (yellow), S. pontiacus (green), or S. brevis (blue). Results represent average ± SD (n=3). Statistical differences were tested using repeated-measures analysis of variance, followed by a Tukey post hoc test. p-Value <0.0001 for the difference in E. huxleyi and bacterial growth between all treatments, except for E. huxleyi growth in the treatments ‘+S. pontiacus’ compared to ‘+S. brevis’, which was not significant.
 
 Interestingly, there were several Sulfitobacter strains whose genome did not indicate benzoate utilization (Figure 5a). We assessed S. pontiacus DSM 10014 and S. brevis DSM 11443 for growth on benzoate as a sole carbon source in MM. As anticipated from the genome analysis, both strains did not grow on benzoate, while Sulfitobacter D7 did (Figure 5b). We also evaluated growth on succinate as sole carbon source and all three strains grew on it. Intriguingly, Sulfitobacter D7 grew significantly better on benzoate than on succinate, demonstrating that benzoate is more preferable as a carbon source.
 
@@ -81,9 +217,17 @@ To assess whether the ability to utilize benzoate by bacteria affects their inte
 
 To examine the role of benzoate in the DMSP-induced lifestyle switch of Sulfitobacter D7, we followed the dynamics of co-cultures to which we externally added benzoate and DMSP. As expected, addition of DMSP induced the bacterial lifestyle switch to pathogenicity resulting in a faster algal decline already at day 4, as compared to day 10 when no DMSP was added (Figure 6). Addition of only benzoate did not alter the dynamics of algal growth, but bacterial growth was enhanced at day 4, compared to the non-supplemented and DMSP-supplemented co-cultures (Figure 6c). This goes along with the observation of benzoate being a good carbon source for Sulfitobacter D7 growth (Figure 4c, Figure 5b). When we applied both benzoate and DMSP in equimolar concentrations, the algal cultures declined from day 8 onward, that is, the induction of pathogenicity by DMSP was delayed by 4 days, as compared to the DMSP addition in the absence of benzoate. This suggests that benzoate hinders the pathogenicity-inducing effect of DMSP. To further support this observation, we examined the interaction of Sulfitobacter D7 with a different E. huxleyi strain, CCMP2090, with which the bacterial lifestyle switch does not naturally occur (Figure 6—figure supplement 1). Only when we added external DMSP it led to the decline of E. huxleyi abundance (Figure 6—figure supplement 1), consistent with our previous findings (Barak-Gavish et al., 2018). Upon addition of both benzoate and DMSP, algal growth was not compromised, although Sulfitobacter D7 and DMSP were present at high concentrations (Figure 6—figure supplement 1). Intriguingly, bacterial abundance in the benzoate-added treatments was higher than in the pathogenicity-inducing DMSP treatment (Figure 6c, Figure 6—figure supplement 1), which demonstrates that the onset of pathogenicity is decoupled from bacterial density. Taken together, these results suggest that benzoate is important to maintain E. huxleyi-Sulfitobacter D7 coexistence and can hinder the onset of bacterial pathogenicity. This observation strengthens our conclusion from the transcriptomics analysis that DMSP signaling in Sulfitobacter D7 depends on additional alga-derived metabolites which affect the bacterial lifestyle switch during interaction with E. huxleyi.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig6-v1.jpg)
+
+**Figure 6.:** Time course of E. huxleyi CCMP379 and bacterial abundance (smooth and dashed lines, respectively) in algal mono-cultures (a) or during co-culturing with Sulfitobacter D7 (b-c). No bacterial growth was observed in algal mono-cultures. Cultures were supplemented at day 0 with 100 µM of DMSP (yellow), benzoate (benzo, green), DMSP and benzoate (blue), or none (gray). The presence of benzoate hindered the pathogenicity-inducing effect of DMSP. Results represent average ± SD (n=3). Statistical differences were tested using repeated-measures analysis of variance, followed by a Tukey post hoc test. p-Value <0.0001 for the difference in E. huxleyi growth in the treatment of ‘+D7+DMSP’ and ‘D7 +DMSP + Benzoate’ compared to all other treatments. p-Value <0.0001 for the differences in bacterial growth in the treatments ‘+D7+benzoate’ and ‘+D7+Benzoate + DMSP’ compared to only ‘+D7’.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Time course of E. huxleyi CCMP2090 and bacterial abundance (smooth and dashed lines, respectively) in algal mono-cultures (a) or during co-culturing with Sulfitobacter D7 (b-c). No bacterial growth was observed in algal mono-cultures. Cultures were supplemented at day 0 with 100 µM of dimethylsulfoniopropionate (DMSP; yellow), benzoate (benzo, green), DMSP and benzoate (blue), or none (gray). The presence of benzoate negated the pathogenicity-inducing effect of DMSP. Results represent average ± SD (n=3). p-value <0.0001 for the difference in E. huxleyi growth in the treatment of ‘+D7+DMSP’ compared to all other treatments. p-Value <0.05 for the differences in bacterial growth in the treatments ‘+D7+benzoate’ and ‘+D7+Benzoate + DMSP’ compared to only ‘+D7’.
+
 ## Discussion
 
-## Signaling role of DMSP and other algal metabolites in the lifestyle switch of Sulfitobacter D7
+### Signaling role of DMSP and other algal metabolites in the lifestyle switch of Sulfitobacter D7
 
 In this study, we aimed to unravel the molecular basis for the lifestyle switch from coexistence to pathogenicity in Sulfitobacter D7 during interaction with the bloom-forming alga E. huxleyi. We substantiated the signaling role of algal DMSP that mediates the shift toward pathogenicity by mapping the transcriptional profiles of Sulfitobacter D7 in response to DMSP and other algal metabolites. However, DMSP signaling in medium that lacked E. huxleyi-derived metabolites (i.e. MM +DMSP) had a different effect on Sulfitobacter D7 transcriptome. We propose that the signaling role of DMSP that mediates the coexistence to pathogenicity lifestyle switch in Sulfitobacter D7 depends on other infochemicals produced by E. huxleyi. DMSP is a ubiquitous infochemical produced by many phytoplankton species as well as some bacteria (Curson et al., 2017), making it a prevalent signaling molecule that mediates microbial interactions in the marine environment. Therefore, it is likely that other algal metabolites are involved in the recognition of the specific phytoplankter host by bacteria, thus ensuring specificity in DMSP signaling during alga-bacteria interactions. In natural environments, where many microbial species are present simultaneously, such a mechanism can ensure that bacteria will invest in altering gene expression and metabolic remodeling only when the right algal partners are present.
 
@@ -91,11 +235,11 @@ We revealed that the alga-derived aromatic compound benzoate plays a pivotal rol
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84400/elife-84400-fig7-v1.jpg)
 
-**Figure 7.:** Sulfitobacter D7 in response to Emiliania huxleyi-derived metabolites.During its interactions with E. huxleyi, Sulfitobacter D7 exhibits a lifestyle switch from coexistence to pathogenicity. In the coexistence phase, E. huxleyi secretes to the phycosphere various metabolites such as benzoate, dimethylsulfoniopropionate (DMSP), and other growth substrates, which bacteria can uptake and consume for growth. Based on the observation that benzoate hindered the pathogenicity-inducing effect of DMSP, we hypothesize that such energy-rich metabolic currencies hinder DMSP signaling in Sulfitobacter D7. When the algal physiological state is compromised, for example, stationary phase, the amount of available growth substrates decreases, due to bacterial consumption and less secretion by the alga. In this context, high concentration of algal DMSP acts as a signal that alters the transcriptional profiles of the bacterium and leads to high expression of pathogenicity-related genes, such as flagellar and transport genes, and yet unknown virulence factors that kill E. huxleyi cells. This leads to a surge of alga-derived growth substrates that are taken up efficiently by Sulfitobacter D7. The flagellum can mediate the dispersal of Sulfitobacter D7 and to forage for an alternative host.
+**Figure 7.:** During its interactions with E. huxleyi, Sulfitobacter D7 exhibits a lifestyle switch from coexistence to pathogenicity. In the coexistence phase, E. huxleyi secretes to the phycosphere various metabolites such as benzoate, dimethylsulfoniopropionate (DMSP), and other growth substrates, which bacteria can uptake and consume for growth. Based on the observation that benzoate hindered the pathogenicity-inducing effect of DMSP, we hypothesize that such energy-rich metabolic currencies hinder DMSP signaling in Sulfitobacter D7. When the algal physiological state is compromised, for example, stationary phase, the amount of available growth substrates decreases, due to bacterial consumption and less secretion by the alga. In this context, high concentration of algal DMSP acts as a signal that alters the transcriptional profiles of the bacterium and leads to high expression of pathogenicity-related genes, such as flagellar and transport genes, and yet unknown virulence factors that kill E. huxleyi cells. This leads to a surge of alga-derived growth substrates that are taken up efficiently by Sulfitobacter D7. The flagellum can mediate the dispersal of Sulfitobacter D7 and to forage for an alternative host.
 
 The ability to utilize benzoate is shared among bacterial strains that are associated with E. huxleyi in the natural environment and in cultures (Figure 5a; Green et al., 2015; Orata et al., 2016; Rosana et al., 2016; Vincent et al., 2021). Since benzoate can act as an antibacterial compound (Amin and Abolmaaty, 2020; Haque et al., 2005), we propose that secretion of benzoate by E. huxleyi can select for bacteria that specialize on this compound and is therefore important for the establishment of a coexistence phase. Similarly, the diatom Asterionellopsis glacialis produces two secondary metabolites that select for specific bacteria and affect their behavioral response (Shibl et al., 2020). Bacterial sensing of general phytoplankton-derived compounds (e.g. DMSP) together with additional more selective compounds (e.g. benzoate) can ensure the recognition of the algal host by the bacteria within the phycosphere. This can increase the specificity of an interaction and ensure fine-tuning of the behavior of microorganisms by regulating gene expression. This is especially relevant for DMSP that has diverse functions in bacteria (Barak-Gavish et al., 2018; Kessler et al., 2018; Miller et al., 2004; Miller and Belas, 2004; Seymour et al., 2010). Molecular mechanisms in bacteria that integrate information perceived by various chemical signals include catabolite repression and two-component systems, which can also play a role in regulating bacterial pathogenicity (Beier and Gross, 2006; Görke and Stülke, 2008).
 
-## The lifestyle switch of Sulfitobacter D7 from coexistence to pathogenicity
+### The lifestyle switch of Sulfitobacter D7 from coexistence to pathogenicity
 
 Our experimental setup demonstrated that Sulfitobacter D7 grown in pathogenicity-inducing media are in a different transcriptional state than in coexistence medium, which corresponds to the behavioral switch during co-culturing with E. huxleyi (Figure 1). Many transport systems were DE, mainly upregulated, when Sulfitobacter D7 was in pathogenic state compared to the coexistence state (Figure 3). Since bacteria often exert their pathogenicity as a means to access nutrients released from the host, it is likely that in this mode Sulfitobacter D7 will maximize uptake and assimilation of metabolites released by dying E. huxleyi cells. High expression of transporters for branched-chain amino acids, C4 carbohydrates, DMSP, taurine, and polyamines can facilitate the efficient uptake of these energy-rich metabolites (Figure 3, Figure 3—source data 1). Upregulation of transport genes for these metabolic currencies in response to DMSP was also demonstrated in R. pomeroyi DSS-3, a Roseobacter often used to study metabolic exchange between bacteria and phytoplankton (Bürgmann et al., 2007; Durham et al., 2015; Landa et al., 2017).
 
@@ -105,63 +249,248 @@ Upregulation of flagellar genes was also demonstrated during the mutualistic to 
 
 The mechanism of Sulfitobacter D7 pathogenicity against E. huxleyi remains to be discovered. The genome of Sulfitobacter D7 encodes numerous cellular machineries, such as type 2 secretion system (T2SS), Flp (fimbrial low-molecular-weight protein) pilus, and two type 4 secretion systems, which can potentially mediate cell-cell interactions and possibly bacterial virulence (Backert and Meyer, 2006; Cianciotto and White, 2017; Ku et al., 2018; Tomich et al., 2007). While the Flp pilus and T4SS are common features encoded in Roseobacter genomes, T2SS is less prevalent (Frank et al., 2015; Slightom and Buchan, 2009). This may hint for a unique mode of pathogenicity in Sulfitobacter D7 and requires further investigation.
 
-## Ecological context of bacterial lifestyle switches during algal blooms
+### Ecological context of bacterial lifestyle switches during algal blooms
 
 Bacterial lifestyle switches are evident in several model systems of phytoplankton-bacteria interactions; however, the ecological significance of such modes of interaction in the natural environment is elusive. In this study, we provide a contextual framework for the switch from coexistence to pathogenicity – metabolite depletion in the phycosphere. During a phytoplankton bloom, heterotrophic bacteria can support the growth of the algae and benefit from organic matter released to the phycosphere. As the bloom progresses, various factors, such as nutrient depletion, viral infection, and grazing, can compromise the algal population and its ability to provide essential metabolic currencies for optimal bacterial growth. We propose that bacteria can sense the host's physiological state, by infochemicals secreted from stressed algae, and switch their behavior to pathogenicity. This will result in algal cell death and bacterial proliferation, which could eventually contribute to the bloom demise. Therefore, phytoplankton-associated opportunistic bacterial pathogens constitute an underappreciated component in the regulation of algal blooms dynamics. Investigating the dynamic microscale interactions of such bacteria with phytoplankton and the metabolic crosstalk that mediates them can provide insights into their impact on large scale biogeochemical processes in the marine environment.
 
 ## Materials and methods
 
-## E. huxleyi cultures maintenance and co-culturing with bacteria
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Acinetobacter sp. strain ADP1)</td>
+      <td>BenK1,Benzoate transporter</td>
+      <td>Collier et al., 1997</td>
+      <td>AAC46425.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Pseudomonas putida KT2440)</td>
+      <td>BenK2,Benzoate transporter</td>
+      <td>Nishikawa et al., 2008</td>
+      <td>AAN68773.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Pseudomonas putida KT2440)</td>
+      <td>BenE1,Benzoate transporter</td>
+      <td>Nishikawa et al., 2008</td>
+      <td>AAN67649.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Pseudomonas putida KT2440)</td>
+      <td>BenE2,Benzoate transporter</td>
+      <td>Nishikawa et al., 2008</td>
+      <td>AAN68775.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Pseudomonas putida KT2440)</td>
+      <td>BenF,Benzoate transporter</td>
+      <td>Nishikawa et al., 2008</td>
+      <td>AAN68776.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(Acinetobacter sp. strain ADP1)</td>
+      <td>BenA,Benzoate 1,2-dioxygenase subunit alpha</td>
+      <td>Collier et al., 1998</td>
+      <td>AAC46436.2</td>
+      <td>Benzoate degradation pathway: Catechol</td>
+    </tr>
+    <tr>
+      <td>Gene(Acinetobacter sp. strain ADP1)</td>
+      <td>BenB,Benzoate 1,2-dioxygenase subunit beta</td>
+      <td>Collier et al., 1998</td>
+      <td>AAC46437.1</td>
+      <td>Benzoate degradation pathway: Catechol</td>
+    </tr>
+    <tr>
+      <td>Gene(Acinetobacter sp. strain ADP1)</td>
+      <td>BenC,Benzoate 1,2-dioxygenase electron transfer component</td>
+      <td>Collier et al., 1998</td>
+      <td>AAC46438.1</td>
+      <td>Benzoate degradation pathway: Catechol</td>
+    </tr>
+    <tr>
+      <td>Gene(Aspergillus niger)</td>
+      <td>BphA,Benzoate 4-monooxygenase</td>
+      <td>van Gorcom et al., 1990</td>
+      <td>P17549.1</td>
+      <td>Benzoate degradation pathway: Protocatechuate</td>
+    </tr>
+    <tr>
+      <td>Gene(Acinetobacter sp. strain ADP1)</td>
+      <td>PobA,4-hydroxybenzoate 3-monooxygenase</td>
+      <td>Brzostowicz et al., 2003</td>
+      <td>WP_004926674.1</td>
+      <td>Benzoate degradation pathway: Protocatechuate</td>
+    </tr>
+    <tr>
+      <td>Gene(Azoarcus evansii)</td>
+      <td>Benzoate CoA-ligase</td>
+      <td>Mohamed et al., 2001; Gescher et al., 2002</td>
+      <td>AAN39371.1</td>
+      <td>Benzoate degradation pathway: Benzoyl-CoA</td>
+    </tr>
+    <tr>
+      <td>Gene(Azoarcus evansii)</td>
+      <td>BoxA,Benzoyl-CoA oxygenase component A</td>
+      <td>Gescher et al., 2002</td>
+      <td>AAN39377.1</td>
+      <td>Benzoate degradation pathway: Benzoyl-CoA</td>
+    </tr>
+    <tr>
+      <td>Gene(Azoarcus evansii)</td>
+      <td>BoxB,Benzoyl-CoA oxygenase component B</td>
+      <td>Gescher et al., 2002</td>
+      <td>AAN39376.1</td>
+      <td>Benzoate degradation pathway: Benzoyl-CoA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Emiliania huxleyi)</td>
+      <td>CCMP379</td>
+      <td>National Center for Marine Algae (NCMA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Emiliania huxleyi)</td>
+      <td>CCMP2090</td>
+      <td>National Center for Marine Algae (NCMA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sulfitobacter D7)</td>
+      <td></td>
+      <td>Barak-Gavish et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Sulfitobacter pontiacus)</td>
+      <td>DSM 10014</td>
+      <td>The Leibniz Institute DSMZ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Sulfitobacter brevis)</td>
+      <td>DSM 11443</td>
+      <td>The Leibniz Institute DSMZ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(2-Carboxyethyl) dimethylsulfonium chloride 97%(DMSP)</td>
+      <td>Holland Moran</td>
+      <td>HC003BMH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium benzoate</td>
+      <td>Sigma-Aldrich</td>
+      <td>B3420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Development Core Team, 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Partek Genomics Suite software, v7.0</td>
+      <td>Partek Inc, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Heatmapper</td>
+      <td>Babicki et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>g:Profiler</td>
+      <td>Raudvere et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### E. huxleyi cultures maintenance and co-culturing with bacteria
 
 E. huxleyi strains were purchased from the National Center for Marine Algae and maintained in filtered sea water (FSW). CCMP379 was cultured in f/2 medium (-Si) (Guillard and Ryther, 1962), and CCMP2090 was cultured in k/2 medium (-Tris, -Si) (Keller et al., 1988). Cultures were incubated at 18°C with a 16:8 hr, light:dark illumination cycle. A light intensity of 100 µmol photons m–2 s–1 was provided by cool white LED lights. Algal cultures were kept in antibiotics to keep them axenic. Prior to inoculation of bacteria, the algal cultures were transferred at least three times to ensure that antibiotics were removed. We routinely checked for bacterial contamination in the algal cultures by flow cytometry. For all co-culturing experiments E. huxleyi cultures were inoculated at early exponential growth phase (4–8·105 cell mL–1) with 103 bacteria mL–1 at t=0 days. When noted, DMSP or benzoate was added at t=0 days at final concentration of 100 µM.
 
-## Enumeration of algae and bacteria abundances by flow cytometry
+### Enumeration of algae and bacteria abundances by flow cytometry
 
 Flow cytometry analyses were performed on Eclipse iCyt flow cytometer (Sony Biotechnology Inc, Champaign, IL, USA) equipped with 405 and 488 nm solid-state air-cooled lasers, and with standard optic filter set-up. E. huxleyi cells were identified by plotting the chlorophyll fluorescence (663–737 nm) against side scatter and were quantified by counting the high-chlorophyll events. For bacterial counts, samples were fixed with a final concentration of 0.5% glutaraldehyde for at least 30 min at 4°C, then plunged into liquid nitrogen and stored at −80°C until analysis. After thawing, samples were stained with SYBR gold (Invitrogen) that was diluted 1:10,000 in Tris–EDTA buffer, incubated for 20 min at 80°C, and cooled to room temperature. Samples were analyzed by flow cytometry (ex: 488 nm; em: 500–550 nm).
 
-## Bacterial growth media
+### Bacterial growth media
 
 The CM, Exp-CM and Stat-CM, were obtained from exponential and stationary E. huxleyi CCMP379 mono-cultures (Table 1), respectively, by gentle gravity filtration on Whatman glass microfiber GF/C filters (pore size of 1.2 µm). This method was chosen to prevent lysis of algal cells during the procedure and thus ensuring that only extracellular algae-derived metabolites, infochemicals, and other components will reside in the media. CM were subsequently filtered through 0.22 µm using Stericup vacuum filters. Exp-CM and Stat-CM were harvested on the same day of the experiment. When indicated, 100 µM DMSP was added to Exp-CM, herein Exp-CM +DMSP. This concentration mimics that present in the phycosphere of E. huxleyi in stationary phase (Barak-Gavish et al., 2018; Seymour et al., 2017). MM was based on artificial sea water (ASW) (Goyet and Poisson, 1989) supplemented with basal medium (-Tris) (containing essential nutrients) (Baumann and Baumann, 1981), vitamin mix (González et al., 1997), 0.5 mM NaNO3, and metal mix of k/2 medium (Keller et al., 1988). For the transcriptome experiment, MM were supplemented with 1 gr L–1 glycerol. When indicated, 100 µM DMSP was added to MM, herein MM +DMSP.
 
-## Bacterial inoculation into growth media and E. huxleyi cultures
+### Bacterial inoculation into growth media and E. huxleyi cultures
 
 Bacteria were inoculated from a glycerol stock (kept at –80°C) into marine broth (MB) (Difco 2216) or ½YTSS (2 g of yeast extract, 1.25 g of tryptone, and 20 g of sea salts [Sigma-Aldrich] dissolved in 1 liter of double distilled water) and grown over-night at 28°C, 160 rpm. Bacteria were washed three times in FSW or ASW by centrifugation (10,000 g, 1 min). Bacterial inocula were counted by flow cytometry and 104 bacteria mL–1 were inoculated to CM or MM, and 103 bacteria mL–1 were inoculated to E. huxleyi cultures.
 
-## Sulfitobacter D7 transcriptome
+### Sulfitobacter D7 transcriptome
 
-## Library preparation and sequencing
+#### Library preparation and sequencing
 
 Experimental setup is elaborated in Figure 1b. Samples for bacterial growth and RNA were taken at t=24 hr. Bacterial cell pellets were obtained from 120 mL (MM treatments) or 160 mL (CM treatments) cultures by two-step centrifugation: 10,000 g, 10 min followed by 14,000 g, 10 min, all at 4°C. Pellets were flash frozen in liquid nitrogen and stored at –80°C until further analysis. RNA extraction was carried out using the RNeasy Plant Mini Kit (Qiagen, Hilden, Germany). For disruption of cell pellets we used the OmniLyse lysis kit (Claremontbio). The rest of the RNA extraction protocol was according to manufacturer’s instruction. Library preparation was carried out according to the RNA-seq protocol developed by Avraham et al., 2016. Briefly, DNA was removed using TURBO DNase (Ambion), RNA was fragmented and phosphorylated (at the 3’ prime) using FastAP thermosensitive alkaline phosphatase (Thermo Scientific). RNA from each sample was ligated with unique RNA barcoded adaptors at the 3’, ensuring the strandedness of each transcript, using T4 RNA ligase 1 (NEB). RNA samples were pooled and treated with RiboZero (Gram-Negative Bacteria) kit (Illumina) following manufacturer’s instructions in order to remove ribosomal RNA. Samples were reverse transcribed using AffinityScript RT Enzyme (Agilent) to form cDNA and amplified by PCR. The libraries were sequenced at the Weizmann Institute of Science Core Facilities on an Illumina NextSeq500 high output v2 kit (paired end, 150 cycles).
 
-## Transcriptome analysis
+#### Transcriptome analysis
 
 Raw reads (64.5 million) were quality trimmed using Cutadapt (Martin, 2011) (-q 20 m 20) in addition to removal of adapters. Reads were mapped to Sulfitobacter D7 genome assembly (GCA_003611275.1) using Bowtie2 (Langmead and Salzberg, 2012) in end-to-end mode, and reads were counted on genes using HTseq, in the strict mode (Anders et al., 2015). Final reads per sample can be found in Figure 1—source data 4. Gene expression was quantified using DESeq2 (Love et al., 2014; Figure 1—source data 2). DE genes were selected as genes with adjusted p-value <0.05, and |fold change|>2, and basemean >10 (the average of the normalized count values, dividing by size factors, taken over all samples). Priciple component analysis and similarity between samples were calculated using DESeq2 and visualized using RStudio 3.5.0. Heatmaps of gene expression were calculated using the log-normalized expression values (rld), with row standardization (scaling the means of a row to zero, with standard deviation of 1), and visualized using Partek Genomics Suite software, v7.0 (Partek Inc, 2020), Heatmapper (Babicki et al., 2016), and Excel. The data has been deposited in NCBI’s Gene Expression Omnibus (GEO) and is available through GEO series accession number GSE193203.
 
-## Functional enrichment in KEGG pathways
+#### Functional enrichment in KEGG pathways
 
 DE genes in the comparisons Exp-CM +DMSP vs. Exp-CM, Stat-CM vs. Exp-CM, and MM +DMSP vs. MM were clustered using k-means analysis. For each cluster, enriched KEGG pathways (with Padj <0.01) were calculated by g:Profiler (Raudvere et al., 2019), using a customized reference which was constructed from Sulfitobacter D7 specific KEGG pathways.
 
-## Sulfitobacter D7 genome mining and manual annotation
+### Sulfitobacter D7 genome mining and manual annotation
 
 The automatic NCBI Prokaryotic Genome Annotation Pipeline was used for Sulfitobacter D7 genome functions prediction (Ku et al., 2018). We manually validated the function of genes related to DMSP metabolism, transport, benzoate degradation, and flagella assembly by cross examining their annotation using KEGG, COG, and IMG/M. For genes with no or inconsistent annotation, we also searched for functional domains using the Conserved Domain Database (CDD), and we ran BLAST using genes with known functions to validate the annotation.
 
-## Transport genes
+### Transport genes
 
 The automatic annotations of transport genes were manually validated by ensuring that the genes were annotated as such by at least two automatic annotation platforms and by CDD search. Since transport systems are organized in operon-like structures, we examined the genes adjacent to the transport genes and manually annotated these additional transport genes. The transporters presented in the heatmap (Figure 3) are the full transport systems that at least two of the genes in each system were DE. The Venn diagrams (Figure 3—figure supplement 1) contain only the transport genes that were significantly DE. The substrates for each transport system were inferred automatically, therefore, the exact substrates were not experimentally validated.
 
-## Benzoate degradation genes
+### Benzoate degradation genes
 
 Sulfitobacter D7 benzoate degradation pathway was reconstructed using the KEGG mapping tool (Kanehisa et al., 2022). All the genes in the catechol branch of benzoate degradation (Figure 4—figure supplement 1) were found, except Muconolactone isomerase CatC. For the visualization of the organization of the genetic locus of benzoate-related genes we utilized the IMG/M platform (Chen et al., 2017).
 
-## Flagellar genes
+### Flagellar genes
 
 We manually validated the annotation of all the flagella genes in Sulfitobacter D7 genome and found most of the genes, except for three: FliQ, FliJ, and FliD (Chevance and Hughes, 2008). For the visualization of the organization of the genetic locus of flagellar genes we utilized the IMG/M platform (Chen et al., 2017).
 
-## Bacterial motility assay
+### Bacterial motility assay
 
 Motility was assessed by examining the expansion of bacterial colonies plated on semi-solid agar (Wolfe and Berg, 1989). Semi-solid media of Exp-CM, Exp-CM +DMSP, and Stat-CM were prepared by mixing boiling sterile 3% agarose with CM, which was pre-heated to ~50°C, in a 1:9 ratio (final concentration of 0.3% agarose). Media was quickly distributed in six-well plates,~5 mL per plate, and was left to solidify for ~1 hr. Sulfitobacter D7 was pre-grown in liquid Exp-CM, Exp-CM +DMSP, and Stat-CM in order to induce the appropriate expression of flagellar genes. For control, bacteria were pre-grown in liquid ½MB, lacking algal DMSP and infochemicals. After 24 hr bacterial abundance was evaluated and the concentration of bacteria in each media was normalized to 2∙106 mL–1, to ensure that the difference in colony size would be indicative of motility and not abundance of bacteria. Bacteria grown in CM were plated on the corresponding semi-solid CM (0.3% agarose), and bacteria grown in ½MB were plated on each semi-solid CM. For plating, 1 µL of bacteria were pipetted in the center of each well containing semi-solid media, in 10–12 replicates per treatment. Colonies were visualized with ×2 magnification after 6 days using Nikon SMZ18 Steriomicroscope. Colonies measurements were performed using the Annotation and Measurements tool of the Nikon NIS-Elements Analysis D software.
 
-## Quantification of benzoate in the media of Sulfitobacter D7 mono-cultures
+### Quantification of benzoate in the media of Sulfitobacter D7 mono-cultures
 
 Sulfitobacter D7 was inoculated into MM supplemented with 100 µM benzoate in 500 mL volume in triplicates. For control, we also sampled uninoculated medium in triplicates. To quantify extracellular benzoate concentrations, bacterial cultures or uninoculated media were gently filtered, acidified, and led through solid-phase extraction (SPE) cartridges, as described in Kuhlisch et al., 2021 per sample, 50 mL culture was passed through 0.22 µm polyvinylidene difluoride (PVDF) filters, collected in glass Erlenmeyer flasks, and spiked with 5 µL benzoate-d5 (98%, Cambridge Isotope Laboratories, Tewsbury, MA, USA; 1.276 µg/µL in MeOH) as internal standard (IS; 1 µM final concentration). The filtrates were incubated for 30 min and then acidified to pH 2.0 using 10% HCl. Benzoate was extracted using hydrophilic-lipophilic balanced SPE cartridges (Oasis HLB, 200 mg, Waters, Milford, MA, USA) as follows: cartridges were conditioned (6 mL methanol), equilibrated (6 mL 0.01 N HCl), and loaded by gravity with the acidified samples (45 min). The cartridges were then washed (18 mL 0.01 N HCl), dried completely using a vacuum pump, and gravity-eluted with 2×2 mL methanol into 4 mL glass vials. Eluates were stored at –20°C overnight, dried under a flow of nitrogen at 0.5 mL/min and 30°C (TurboVap LV, Biotage, Uppsala, Sweden), and stored at –20°C until further processing. Glassware and chemically resistant equipment were used whenever possible and cleaned with HCl (1 or 10%) and Deconex 20 NS-x (Borer Chemie, Zuchwil, Switzerland) to reduce contaminations.
 
@@ -169,20 +498,20 @@ For LC-MS analysis, the dried extracts were thawed, re-dissolved in 300 µL meth
 
 An external calibration curve was processed in parallel to the biological samples. Aliquots of 100 mL ASW were spiked with 10 µL benzoate-d5 (1 µM final concentration) and benzoate standard solutions to reach final concentrations of 0.2, 1, 2, 10, 20, and 100 µM benzoate. Two blanks were prepared, one blank that was spiked only with the IS, and one blank lacking both IS and benzoate. Each sample was divided to duplicates of 50 mL and extracted as described above. After re-dissolving in 200 µL methanol:water (1:1, v:v), samples were injected subsequent to the biological samples. The peak areas of the [M-H]− ions for the IS (m/z 126.06) and benzoate (m/z 121.029) were extracted above a signal-to-noise threshold of 10 using TargetLynx (Version 4.2, Waters). The uniformly labeled aromatic ring of the IS slightly reduces its column retention (Figure 4—figure supplement 3). Analyte response (y) was calculated by dividing the area of benzoate by the IS, plotted against the benzoate concentration (x), and the slope and intercept for a linear regression calculated (y=0.4741 x+1.665, R2=0.99) (Figure 4—figure supplement 3). Quantification of benzoate in the biological samples was based on the analyte response in each sample and the calibration curve, with a limit of quantification of 200 nM.
 
-## Quantification of benzoate in the media of E. huxleyi-Sulfitobacter D7 co-cultures
+### Quantification of benzoate in the media of E. huxleyi-Sulfitobacter D7 co-cultures
 
 Sulfitobacter D7 was inoculated to E. huxleyi CCMP379 cultures in 440 mL volume. A total of 12 non-infected and 12 infected algal cultures were used, and for each timepoint, 3 replicates of non-infected and infected cultures were sampled entirely for benzoate quantification in the media. Three replicates of algal growth medium (FSW +F/2) were used as medium control. At T=0 days, only three replicates of non-infected cultures were sampled for benzoate quantification. Extracellular benzoate was extracted as described above with slight modifications. Briefly, culture aliquots of 400 mL were filtered gently (<0.4 bar under-pressure) over pre-combusted Whatman glass microfiber GF/A filters to remove algal cells, and subsequently over 0.22 µm PVDF filters to remove bacterial cells. Filtrates were spiked with 5 µL benzoate-d5 (125 nM final concentration), acidified, and metabolites extracted using SPE cartridges. Dried extracts were stored at –80°C until LC-MS analysis. For targeted benzoate analysis, the dried extracts were re-dissolved in 200 µL of 20 mM ammonium carbonate (pH 9.25) in acetonitrile (1:1, v:v) and immediately analyzed by LC-MS/MS. Chromatography was performed on an ACQUITY UPLC I-Class (Waters Corporation); 10 µl of the sample was injected onto a ACQUITY BEH Amide column 2.1 mm × 150 mm, 1.7 µm (Waters) kept at 35°C. A binary gradient was applied using mobile phase A containing 17% acetonitrile in 20 mM ammonium carbonate (pH 9.2), and mobile phase B containing acetonitrile. The gradient elution was performed at 0.3 mL/min with initial inlet conditions at 95% B during 0.5 min, then decreasing to 20% B over 2 min, followed by a column wash at 20% B for 0.5 min, and a return to initial conditions at 95% B over 0.5 min. The total run time was 6 min. A Xevo TQ-S Tandem MS (Waters, Wilmslow, UK) operating in ESI− was used for the detection and quantification of the benzoate using the following instrument conditions: capillary voltage 1.92 kV, source temperature 150°C, desolvation temperature 400°C, cone gas flow 150 L/hr, and desolvation gas flow 700 L/hr. Benzoate was detected using selected reaction monitoring acquisition mode with transitions 121>77 m/z for benzoate, 126>82 m/z for benzoate-d5, and 11 eV collision energy. The benzoate concentrations based on a 0–100 µM standard curve were calculated as described below.
 
 An external calibration curve was prepared by spiking aliquots of a 1 mM benzoate and 1 mM benzoate-d5 solution into 200 µL re-dissolving solution to reach final concentrations of 0.0125 µM, 0.025 µM, 0.0375 µM, 0.05 µM, 0.0625 µM, 0.075 µM, 0.0875 µM, and 0.1 µM benzoate. Two blanks were prepared as described above. Calibration curve samples were injected prior and subsequent to the biological samples. The peak areas of the fragment ions of the IS (m/z 82) and of benzoate (m/z 77) were extracted (Figure 4—figure supplement 3) using TargetLynx (Version 4.2, Waters). The analyte response was calculated as described above, and the slope for a linear regression calculated (y=0.0072 x, R2=0.99) (Figure 4—figure supplement 3). Quantification of benzoate in the medium samples was based on the analyte response in each sample, the calibration curve, and a 0.0005× dilution factor between the injected extract and the culture filtrates.
 
-## Prevalence of benzoate transport and catabolism genes in genomes of phytoplankton-associated bacteria
+### Prevalence of benzoate transport and catabolism genes in genomes of phytoplankton-associated bacteria
 
 Bacterial benzoate degradation pathways and the genes encoding for the metabolic enzymes were reconstructed with the use of MetaCyc (Caspi et al., 2014) and the KEGG Pathway database (Kanehisa and Goto, 2000; Figure 4—figure supplement 1). Selected genes, encoding for benzoate transporters and for the enzymes mediating the initial steps of benzoate metabolism in each pathway, were used to search for similar proteins in bacterial genomes using BLASTp. The list of these query genes, which were all previously experimentally validated, is found in the Key resources table. The target bacterial genomes were selected based on their known association with E. huxleyi and other phytoplankton species (Figure 5—source data 1). Positive hits had an E-value <0.005, identity >30%, and coverage >30. Hits with lower coverage and/or identity were considered as ‘Partial’. The results are summarized in Figure 5—source data 1.
 
-## Statistical analyses
+### Statistical analyses
 
 For the motility assay (Figure 2b) and bacterial growth on carbon sources (Figure 5b) we used two-way ANOVA, followed by Tukey’s post-hoc test, using the R-package ‘emmeans’. For benzoate consumption experiments (Figure 4c and d) we used a mixed effects model, with treatment and time as fixed effects, and replicate as a random effect, using the R packages ‘lme4’ and ‘lmerTest’. For the E. huxleyi and bacterial growth curves (Figure 5c and Figure 6) we used repeated-measures ANOVA, followed by a Tukey post hoc test, using the R package ‘emmeans’. All analyses were done using R, v. 4.1.2.
 
-## Figures preparation
+### Figures preparation
 
 Figures and illustrations were prepared using PowerPoint, Excel, and BioRender.com.

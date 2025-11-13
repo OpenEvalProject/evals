@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Since 2015, the World Health Organisation (WHO) recommends immediate initiation of antiretroviral therapy (ART) for all HIV-positive patients. Epidemiological evidence points to important health benefits of immediate ART initiation; however, the policy’s impact on the economic aspects of patients' lives remains unknown. We conducted a stepped-wedge cluster-randomised controlled trial in Eswatini to determine the causal impact of immediate ART initiation on patients’ individual- and household-level economic outcomes. Fourteen healthcare facilities were non-randomly matched into pairs and then randomly allocated to transition from the standard of care (ART eligibility at CD4 counts of <350 cells/mm3 until September 2016 and <500 cells/mm3 thereafter) to the ‘Early Initiation of ART for All’ (EAAA) intervention at one of seven timepoints. Patients, healthcare personnel, and outcome assessors remained unblinded. Data were collected via standardised paper-based surveys with HIV-positive adults who were neither pregnant nor breastfeeding. Outcomes were patients’ time use, employment status, household expenditures, and household living standards. A total sample of 3019 participants were interviewed over the duration of the study. The mean number of participants approached at each facility per time step varied from 4 to 112 participants. Using mixed-effects negative binomial regressions accounting for time trends and clustering at the level of the healthcare facility, we found no significant difference between study arms for any economic outcome. Specifically, the EAAA intervention had no significant effect on non-resting time use (RR = 1.00 [CI: 0.96, 1.05, p=0.93]) or income-generating time use (RR = 0.94, [CI: 0.73,1.20, p=0.61]). Employment and household expenditures decreased slightly but not significantly in the EAAA group, with risk ratios of 0.93 [CI: 0.82, 1.04, p=0.21] and 0.92 [CI: 0.79, 1.06, p=0.26], respectively. We also found no significant treatment effect on households’ asset ownership and living standards (RR = 0.96, [CI 0.92, 1.00, p=0.253]). Lastly, there was no evidence of heterogeneity in effect estimates by patients’ sex, age, education, timing of HIV diagnosis and ART initiation. Our findings do not provide evidence that should discourage further investments into scaling up immediate ART for all HIV patients. Funded by the Dutch Postcode Lottery in the Netherlands, Alexander von Humboldt-Stiftung (Humboldt-Stiftung), the Embassy of the Kingdom of the Netherlands in South Africa/Mozambique, British Columbia Centre of Excellence in Canada, Doctors Without Borders (MSF USA), National Center for Advancing Translational Sciences of the National Institutes of Health and Joachim Herz Foundation. NCT02909218 and NCT03789448 .
+Background:Since 2015, the World Health Organisation (WHO) recommends immediate initiation of antiretroviral therapy (ART) for all HIV-positive patients. Epidemiological evidence points to important health benefits of immediate ART initiation; however, the policy’s impact on the economic aspects of patients' lives remains unknown.Methods:We conducted a stepped-wedge cluster-randomised controlled trial in Eswatini to determine the causal impact of immediate ART initiation on patients’ individual- and household-level economic outcomes. Fourteen healthcare facilities were non-randomly matched into pairs and then randomly allocated to transition from the standard of care (ART eligibility at CD4 counts of <350 cells/mm3 until September 2016 and <500 cells/mm3 thereafter) to the ‘Early Initiation of ART for All’ (EAAA) intervention at one of seven timepoints. Patients, healthcare personnel, and outcome assessors remained unblinded. Data were collected via standardised paper-based surveys with HIV-positive adults who were neither pregnant nor breastfeeding. Outcomes were patients’ time use, employment status, household expenditures, and household living standards.Results:A total sample of 3019 participants were interviewed over the duration of the study. The mean number of participants approached at each facility per time step varied from 4 to 112 participants. Using mixed-effects negative binomial regressions accounting for time trends and clustering at the level of the healthcare facility, we found no significant difference between study arms for any economic outcome. Specifically, the EAAA intervention had no significant effect on non-resting time use (RR = 1.00 [CI: 0.96, 1.05, p=0.93]) or income-generating time use (RR = 0.94, [CI: 0.73,1.20, p=0.61]). Employment and household expenditures decreased slightly but not significantly in the EAAA group, with risk ratios of 0.93 [CI: 0.82, 1.04, p=0.21] and 0.92 [CI: 0.79, 1.06, p=0.26], respectively. We also found no significant treatment effect on households’ asset ownership and living standards (RR = 0.96, [CI 0.92, 1.00, p=0.253]). Lastly, there was no evidence of heterogeneity in effect estimates by patients’ sex, age, education, timing of HIV diagnosis and ART initiation.Conclusions:Our findings do not provide evidence that should discourage further investments into scaling up immediate ART for all HIV patients.Funding:Funded by the Dutch Postcode Lottery in the Netherlands, Alexander von Humboldt-Stiftung (Humboldt-Stiftung), the Embassy of the Kingdom of the Netherlands in South Africa/Mozambique, British Columbia Centre of Excellence in Canada, Doctors Without Borders (MSF USA), National Center for Advancing Translational Sciences of the National Institutes of Health and Joachim Herz Foundation.Clinical trial number:NCT02909218 and NCT03789448.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ To decide whether and how much governments and international organisations shoul
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 Fourteen healthcare facilities (‘clusters’) were consecutively enrolled into the Maximising ART for Better Health and Zero New HIV Infections (MaxART) stepped-wedge trial and 3019 participants were interviewed over the duration of the study. The mean number of participants approached at each facility and time step varied from 3.5 to 112 participants (see Figure 1).
 
@@ -54,15 +54,149 @@ Fourteen healthcare facilities (‘clusters’) were consecutively enrolled into
 
 Table 1 summarises sociodemographic information separately for two study samples. The full sample was composed of 3019 participants, sampled across 14 healthcare facilities. Participants enrolled into the EAAA intervention arm were on average aged 38.3 years (range: 18–85 years), 71.0% were female, 53.5% were married, and 56.0% had completed at least some secondary schooling. Participants in the standard of care group had similar characteristics: 74.3% were female, 56.6% married, and 56.0% had completed at least some secondary education.
 
+**Table 1.**
+ Sample characteristics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">Full study sample (N = 3019)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EAAA (N = 1868)</td>
+      <td>SoC (N = 1151)</td>
+    </tr>
+    <tr>
+      <td>Female, n (%)</td>
+      <td>1326 (71.0%)</td>
+      <td>855 (74.3%)</td>
+    </tr>
+    <tr>
+      <td>Age, mean (SD)</td>
+      <td>38.3 (11.8)</td>
+      <td>38.3 (11.8)</td>
+    </tr>
+    <tr>
+      <td>Education, n (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No formal schooling</td>
+      <td>356 (19.1%)</td>
+      <td>212 (18.6%)</td>
+    </tr>
+    <tr>
+      <td>Any primary schooling</td>
+      <td>400 (21.4%)</td>
+      <td>294 (25.5%)</td>
+    </tr>
+    <tr>
+      <td>Any secondary schooling</td>
+      <td>1112 (59.5%)</td>
+      <td>645 (56.0%)</td>
+    </tr>
+    <tr>
+      <td>Married, n (%)</td>
+      <td>1000 (53.5%)</td>
+      <td>651 (56.6%)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Random subsample with data on household expenditure and living standards (N = 1485)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EAAA (N = 930)</td>
+      <td>SoC (N = 555)</td>
+    </tr>
+    <tr>
+      <td>Female, n (%)</td>
+      <td>665 (71.5%)</td>
+      <td>417 (75.1%)</td>
+    </tr>
+    <tr>
+      <td>Age, mean (SD)</td>
+      <td>38.4 (11.9)</td>
+      <td>38.2 (12.1)</td>
+    </tr>
+    <tr>
+      <td>Education, n (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No formal schooling</td>
+      <td>175 (18.9%)</td>
+      <td>99 (17.9%)</td>
+    </tr>
+    <tr>
+      <td>Any primary schooling</td>
+      <td>192 (20.7%)</td>
+      <td>142 (25.6%)</td>
+    </tr>
+    <tr>
+      <td>Any secondary schooling</td>
+      <td>563 (60.5%)</td>
+      <td>314 (56.6%)</td>
+    </tr>
+    <tr>
+      <td>Married, n (%)</td>
+      <td>505 (54.3%)</td>
+      <td>316 (56.9%)</td>
+    </tr>
+    <tr>
+      <td>Number of household members &lt; 15 years, mean (SD)</td>
+      <td>2.44 (1.11)</td>
+      <td>2.58 (2.00)</td>
+    </tr>
+    <tr>
+      <td>Number of household members 15–60 years, mean (SD)</td>
+      <td>2.75 (2.24)</td>
+      <td>3.21 (2.22)</td>
+    </tr>
+    <tr>
+      <td>Number of household members &gt; 60 years, mean (SD)</td>
+      <td>0.35 (0.61)</td>
+      <td>0.45 (0.78)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Abbreviations: EAAA, SD = standard deviation._
+
 The random subset of participants with household-level data on household expenditures and living standards was composed of 1485 patients who were also sampled across all 14 healthcare facilities. Overall, sociodemographic characteristics were very similar to those of the full sample.
 
-## EAAA intervention impact on patient’s economic outcomes
+### EAAA intervention impact on patient’s economic outcomes
 
-## Time use
+#### Time use
 
 The intervention impacts on patient-level and household-level economic outcomes are presented in Figure 2. Histograms for all continuous outcome variables are presented in Figure 2—figure supplements 1–4. Participants in the EAAA group and in the standard of care group reported very similar levels of non-resting and income-generating time use. Non-resting time was approximately nine out of 24 hr in both study arms and the treatment effect was effectively null with an average marginal difference of only 0.6 min between groups (RR = 1.00, 95% CI: 0.96, 1.05, p=0.93). The treatment effect also remained precise and close to zero in alternative regression specifications, which included a random slope for time (see Supplementary file 1A). In addition, the results were similar when using a linear regression specification (β = 0.02, 95% CI: −0.36, 0.39, p=0.93, see Supplementary file 1G). Income-generating time was also similar between both groups (RR = 0.94, 95% CI: 0.73,1.20, p=0.61), translating into an average marginal difference of only 12.6 min between patients in the EAAA phase and patients in the standard of care phase. The difference was not statistically significant and remained similarly small in alternative specifications (see Supplementary file 1B).
 
-## Employment
+![Figure 2.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-v2.jpg)
+
+**Figure 2.:** Notes: Relative Risk presented for negative binomial mixed-effect regression with random intercept by healthcare facility (cluster) and a fixed effect for study period (Hussey and Hughes, 2007). All models control for respondent sex, age, marital status, and highest grade completed and were grand-mean centered. Parametric p-value obtained directly from the regression output; non-parametric p-value obtained from a permutation test with 1000 replications.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp4-v2.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp5-v2.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp6-v2.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp7-v2.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp8-v2.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig2-figsupp9-v2.jpg)
+
+#### Employment
 
 We observed a decline in general employment rates over the entire study period, from 0.64 (SD = 0.48) in study period 0 to 0.35 (SD = 0.48) in study period 7 (see Figure 3). The employment trend observed in our study population stands in contrast to the national employment rate during the same period, which remained constant at 77–78%. The difference in employment status between study groups was small and statistically insignificant (RR = 0.93, 95% CI: 0.82, 1.04, p=0.21, Figure 2). This finding remained robust across all alternative regression specifications (see Supplementary file 1C).
 
@@ -70,17 +204,17 @@ We observed a decline in general employment rates over the entire study period, 
 
 **Figure 3.:** Notes: Percent employed are the average adjusted predictions based on a logistic regression model with a time period fixed effect and a clinic-level random effect, interacting study period with trial arm, and controlling for patients’ age, sex, marital status, level of education, sex (binary), marital status (binary), and their level of education (continuous, specifying the highest grade completed). Period 0 and 7 are not shown because all participants interviewed in period 0 were part of the control phase and all participants interviewed in the last period were exposed to the intervention. The national total labour force participation rate is based on World Bank data and captures the proportion of the population of working age that is economically active during the reference period of 1 year.
 
-## EAAA intervention impact on household-level economic outcomes
+### EAAA intervention impact on household-level economic outcomes
 
-## Household expenditures
+#### Household expenditures
 
 Patients’ total past-month household expenditures were 10% lower in the EAAA intervention group but this difference was not statistically different from zero (RR = 0.92, 95% CI: 0.79, 1.06, p=0.26, see Figure 3). All expenses were reported in Lilangeni (SZL) and converted into US dollars adjusted for purchasing power parity (PPP) and inflation for reporting purposes. This corresponds to a reduction in the mean expected monthly expenses of 105.83 SZL (95% CI: −289.042 to 77.38498 SZL), or 20.47 PPP$ (95% CI: −55.93 $ to 14.97 $). Results remained virtually unchanged in alternative regression models (see Supplementary file 1D) or when imputing missing data using MICE (N = 1475) (see Supplementary file 1E).
 
-## Household living standards
+#### Household living standards
 
 Lastly, the EAAA intervention did not significantly affect patients’ living standards and ownership of household assets. From a total of 42 possible owned assets and housing quality indicators, counts of assets were very similar in both groups. Participants in the EAAA treatment group reported on average 0.71 indicators less than participants in the standard of care group (RR = 0.96, 95% CI 0.92, 1.00, p=0.253). In alternative regression models (Supplementary file 1F), linear regressions (Supplementary file 1G) and using an alternative principal-component-weighted outcome index (see Supplementary file 1H), we found similar null effects.
 
-## Heterogeneity in treatment effects
+### Heterogeneity in treatment effects
 
 Overall, causal random forests did not identify subgroups with effects that diverged significantly from the average treatment effect. Across outcomes, most heterogeneity was found along the variables (i) patients’ time on ART, (ii) number of months passed since patients’ HIV diagnosis, (iii) years of education completed, and (iv) age, whereas the importance metric for patients’ sex was very small, possibly due to an over-representation of women in our sample. The plots presented in Figure 2—figure supplement 5–9 depict heterogeneity in treatment effects along these four moderating variables. It appears that the program’s effect on most economic outcomes was slightly higher for patients with shorter rather than longer time on ART. However, it has to be cautioned that heterogeneity was not statistically significant for any of the four economic outcomes.
 
@@ -100,33 +234,211 @@ This study provides the first causal evidence on the effect of immediate ART ini
 
 The Maximising ART for Better Health and Zero New HIV Infections (MaxART) trial (Walsh et al., 2017) (NCT02909218) and the economic outcome analysis presented in here (NCT03789448) were pre-registered on ClinicalTrials.gov.
 
-## Study setting
+### Study setting
 
 The study was implemented in North-Western Eswatini (formerly ‘Swaziland’). 27.0% of the general population in Eswatini are HIV-positive; the highest HIV prevalence worldwide (Government of the Kingdom of Eswatini, 2017). The trial enrolled 14 government-managed health facilities located in the Hhohho region (see Figure 4). At the study’s outset in 2014, all health facilities provided comprehensive HIV care and treatment according to the national adult HIV treatment guidelines effective at the time, thus initiating ART according to prescribed CD4 count levels. According to the Annual HIV Program Report of 2014 (Kingdom of Swaziland, Ministry of Health, 2014), almost 60% of HIV-patients in the Hhohho region had been initiated on ART in the year prior to the trial roll-out.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58487/elife-58487-fig4-v2.jpg)
 
-## Stepped-wedge randomised trial design
+### Stepped-wedge randomised trial design
 
 Health facilities were allocated non-randomly into seven pairs based on their geographic proximity to avoid possible contamination and based on their facility catchment size to ensure that group sizes were roughly equal. Over the course of 3 years, each of the seven pairs was randomly assigned to one of seven sequences, which determined the point in time at which each facility shifted from the standard of care (control condition) to the Early Access to ART for All (EAAA) intervention (treatment condition) (see Table 2). Hence, in the first period, all facilities adhered to the national standard of care while in the last period, all facilities had adopted EAAA. The randomisation was carried out by the trial statisticians. No stratification was used. This was an open-label trial in which healthcare providers and patients were unblinded to the intervention itself. However, the timing of the transition was only revealed to healthcare providers six to four weeks prior to the start of EAAA implementation.
 
-## Control phase: standard of care
+**Table 2.**
+ Stepped-wedge trial design used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Healthcare facility</th>
+      <th>Sep - Dec2014</th>
+      <th>Jan - Apr 2015</th>
+      <th>May - Aug 2015</th>
+      <th>Sep - Dec 2015</th>
+      <th>Jan - Apr 2016</th>
+      <th>May - Aug 2016</th>
+      <th>Sep - Oct 2016</th>
+      <th>Oct 2016 - Aug 2017</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mshingishingini Nazarene</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Ntfonjeni</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Bulandzeni</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Ndzingeni</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Maguga</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Malandzela</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Pigg's Peak Hospital</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Peak Nazarene</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Herefords</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Ndvwabangeni Nazarene</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Sigangeni</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Siphocosini</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INTNT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Horo</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+    </tr>
+    <tr>
+      <td>Hhukwini</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>CONT</td>
+      <td>INT</td>
+    </tr>
+  </tbody>
+</table>
+
+_CONT indicates the control group phase and INT the treatment phase._
+
+### Control phase: standard of care
 
 In the standard of care phase, following national treatment guidelines effective at the time, ART eligibility was restricted to patients with CD4-cell counts of <350 cells/mm3 in the first 1.5 years of the study. In October 2016, the eligibility threshold was raised to CD4-cell counts < 500 cells/mm3. Eligible patients were typically initiated on Eswatini’s first-line ART regimen (Tenofovir (TDF) + Lamivudine (3TC) + Efavirenz (EFV)). Those with contraindications to this regimen were initiated on alternative regimens, including TDF + 3TC + Nevirapine (NVP) or Zidovudine (AZT) + 3TC + NVP (when EFV could not be used); Abacavir (ABC) + 3TC + EFV or AZT + 3TC + EFV (when TDF could not be used); ABC + 3TC + EFV or Stavudine (D4T) + 3TC + EFV (when AZT could not be used). Patients attended one private and one group counselling session prior to initiation. While same-day ART initiation was allowed according to the national Integrated HIV Management Guidelines (Ministry of Health, Kingdom of Swaziland, 2015), HIV diagnosis and ART initiation in the respective facilities were typically a few days apart.
 
-## Intervention phase: early access to ART for all (EAAA)
+### Intervention phase: early access to ART for all (EAAA)
 
 During the EAAA intervention phase, all patients who tested HIV-positive as well as patients enrolled in pre-ART care were offered immediate ART initiation, independent of their CD4-cell count. They received one counselling session and ART initiation on the same day and further monthly counselling after initiation. As in the standard of care, patients in the EAAA programme were initiated on Eswatini’s first-line treatment regimen or, if contraindicated, on the same alternative regimens detailed above.
 
-## Data collection
+### Data collection
 
 Data were collected via standardised paper-based questionnaires over eight time periods (baseline and seven transitions). In every period, a sample of all HIV-care patients in each of the enrolled healthcare facilities was randomly selected. Eligibility was constrained to patients who were HIV-positive and over the age of 18 years, and who were neither pregnant nor breastfeeding. Patients were eligible irrespective of whether ART initiation could take place on the same day of HIV diagnosis or a few days thereafter. For each facility, the study team randomly selected data collection days. On these days, the study team adopted the sampling strategy of selecting the next patient entering the consultation room. This strategy yields a representative sample if the sample size is sufficiently large and the order with which patients are seen by a clinician is random. Monte Carlo simulations have shown that this sampling strategy also tends to be more efficient and unbiased compared to simple and systematic random sampling, and does not underrepresent potentially healthier patients with shorter consultations as is the case when sampling those exiting the consultation room (Geldsetzer et al., 2018). Respondents gave verbal and written consent before completing the interview and were informed about their right to decline or withdraw their participation at any point in time. No prior sample size calculations were performed.
 
-## Outcomes
+### Outcomes
 
 We assessed the impact of the EAAA intervention on four economic outcomes. First, patients’ time use during the day prior to the interview was measured by collecting detailed information on hourly activities for a cycle of 24 hr. For our analysis, we specified two outcomes that are indicative of patients’ productivity levels: (i) ‘non-resting time’ to capture the total hours spent on activities other than sleeping and resting, and (ii) ‘income-generating time’ to capture the total hours spent on any income generation activities, which comprised formal employment, primary production activities in the informal sector, subsistence farming, and income generated from own businesses (i.e. from the sale of goods). The second outcome was patients’ current labour market participation, categorised as ‘employed’ if patients were working or engaged in subsistence farming (either part- or full-time), and categorised as ‘not employed’ if patients were unemployed, retired or taking sick or other leave. The third outcome was patients’ total past-month household expenditures on food- and non-food items, which was measured by asking each participant how much their household spends on 20 common expenditure items in a normal month (or, if the respondent preferred, in the past year) as well as on ‘other usual expenses’ and ‘large purchases or expenses in the last 12 months’ that were not mentioned in the list of common expenditure items. We opted for expenditure rather than income data because it is less affected by possible seasonal fluctuations in earnings and therefore better reflects a welfare level that households can maintain through consumption smoothing and informal borrowing (Sahn and Stifel, 2003; Filmer and Pritchett, 2001). The last outcome was household living standards, measured as an additive index counting the total number of realised housing quality indicators (12 items, e.g., drinking water inside the house, concrete walls, flush toilet, etc.) and assets owned (30 items, e.g., refrigerator, phone, TV, animals, etc.). In line with economic literature (Sahn and Stifel, 2003; Filmer and Pritchett, 2001), we also computed a principal-component-weighted index from the answers to these housing quality indicators and owned assets as an alternative metric to the additive index, reported in Supplementary file 1H. Information on time use and employment was captured for the full sample. In order to reduce the length of the survey, questions on household expenditures and household living standards were asked to every second participant who was interviewed.
 
-## Data analysis
+### Data analysis
 
 We estimated the intent-to-treat effect (ITT) by comparing patients interviewed in the standard of care phase to patients interviewed in the EAAA phase (see EXHIBIT 2). We used mixed-effects negative binomial regressions (showing the resulting risk ratios) to account for the skewed distribution of some outcome variables (income-generating time and household expenditures). For normally distributed outcome variables (non-resting time and living standards), we additionally provide results from mixed-effects linear regressions in supplementary tables. For the binary employment outcome, we also estimated risk ratios for ease of interpretation by utilising a modified poisson regression model with a robust error structure.
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03357.001 The robustness and limited plasticity of the master circadian clock in the suprachiasmatic nucleus (SCN) is attributed to strong intercellular communication among its constituent neurons. However, factors that specify this characteristic feature of the SCN are unknown. Here, we identified Lhx1 as a regulator of SCN coupling. A phase-shifting light pulse causes acute reduction in Lhx1 expression and of its target genes that participate in SCN coupling. Mice lacking Lhx1 in the SCN have intact circadian oscillators, but reduced levels of coupling factors. Consequently, the mice rapidly phase shift under a jet lag paradigm and their behavior rhythms gradually deteriorate under constant condition. Ex vivo recordings of the SCN from these mice showed rapid desynchronization of unit oscillators. Therefore, by regulating expression of genes mediating intercellular communication, Lhx1 imparts synchrony among SCN neurons and ensures consolidated rhythms of activity and rest that is resistant to photic noise. DOI: http://dx.doi.org/10.7554/eLife.03357.001
+The robustness and limited plasticity of the master circadian clock in the suprachiasmatic nucleus (SCN) is attributed to strong intercellular communication among its constituent neurons. However, factors that specify this characteristic feature of the SCN are unknown. Here, we identified Lhx1 as a regulator of SCN coupling. A phase-shifting light pulse causes acute reduction in Lhx1 expression and of its target genes that participate in SCN coupling. Mice lacking Lhx1 in the SCN have intact circadian oscillators, but reduced levels of coupling factors. Consequently, the mice rapidly phase shift under a jet lag paradigm and their behavior rhythms gradually deteriorate under constant condition. Ex vivo recordings of the SCN from these mice showed rapid desynchronization of unit oscillators. Therefore, by regulating expression of genes mediating intercellular communication, Lhx1 imparts synchrony among SCN neurons and ensures consolidated rhythms of activity and rest that is resistant to photic noise.
 
 ## Introduction
 
@@ -32,25 +32,25 @@ Here, using a combination of behavioral, genetic, and genomic tools, we vastly e
 
 ## Results
 
-## Light-regulated and circadian-controlled transcripts of the SCN
+### Light-regulated and circadian-controlled transcripts of the SCN
 
-To comprehensively identify circadian-, light-regulated, and SCN-enriched protein-coding transcripts in the adult SCN, following 2 weeks of entrainment to 12 hr light:12 hr dark (LD) cycles male C57BL6/J mice were transferred to constant darkness (DD), and the SCN was collected every 2 hr over 48 hr. Light at subjective night, but not during subjective day is known to cause a behavioral phase shift. To assess the gene expression effect of a phase-shifting pulse of light, a subset of mice were exposed to a 1 hr white light pulse delivered at 30 hr, 40 hr, and 46 hr after the onset of DD (
+To comprehensively identify circadian-, light-regulated, and SCN-enriched protein-coding transcripts in the adult SCN, following 2 weeks of entrainment to 12 hr light:12 hr dark (LD) cycles male C57BL6/J mice were transferred to constant darkness (DD), and the SCN was collected every 2 hr over 48 hr. Light at subjective night, but not during subjective day is known to cause a behavioral phase shift. To assess the gene expression effect of a phase-shifting pulse of light, a subset of mice were exposed to a 1 hr white light pulse delivered at 30 hr, 40 hr, and 46 hr after the onset of DD (Figure 1A, Figure1—figure supplement 1) representing subjective daytime (CT6), early evening (CT16), and late night (CT22). We discovered 1412 genes (Figure 1—figure supplement 1; Supplementary file 1) that show circadian oscillation in transcript abundance (pMMCβ <0.05, pFGT <0.05, and median temporal expression >100). Gene expression measured at 1 hr, 2 hr, and 4 hr after the beginning of the 1 hr light pulse revealed 508 probesets whose levels changed (up- or down-regulated) in response to at least one of the three light pulses (Figure 1A,B, Figure 1—figure supplement 1; Supplementary file 2A). However, only 84 (17%) were also rhythmic (Figure 1—figure supplement 1; Supplementary file 2B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig1-v2.jpg)
 
-**Figure 1.:** (A) Heatmap rendering of light-regulated SCN transcripts. For each time point, fold change between respective light treated and dark control was plotted. (B) Circadian gating of light-modulated transcripts. Cutoffs of two fold were set for up-regulation (blue) or suppression (red) after light pulse, and the number of probesets that satisfy each cutoff was plotted for each point. Quantitative RT-PCR (qRT-PCR) expression confirmation of genes detected as light-regulated by microarray. Examples of genes (C) induced or (D) repressed by light pulses at three different time points. (Mean +s.e.m., n = 4).DOI: http://dx.doi.org/10.7554/eLife.03357.003
+**Figure 1.:** (A) Heatmap rendering of light-regulated SCN transcripts. For each time point, fold change between respective light treated and dark control was plotted. (B) Circadian gating of light-modulated transcripts. Cutoffs of two fold were set for up-regulation (blue) or suppression (red) after light pulse, and the number of probesets that satisfy each cutoff was plotted for each point. Quantitative RT-PCR (qRT-PCR) expression confirmation of genes detected as light-regulated by microarray. Examples of genes (C) induced or (D) repressed by light pulses at three different time points. (Mean +s.e.m., n = 4).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Sampling schedule for the collection of SCN. C57BL/6J male mice were entrained to 12 hr light:12 hr darkness for 2–3 weeks and transferred to constant darkness. From Circadian Time (CT) 18, 30 hr after lights off, four mice at each time point were collected every 2 hr in dark over two complete days till CT64. From CT30, CT40, or CT46, one group of mice was exposed to 1 hr light, while the control group was maintained in dark, then both groups stayed in dark after 1 hr. SCNs were collected 1, 2, or 4 hr after the beginning of 1 hr light pulse. (B) Heatmap rendering of circadianly expressed transcripts in the mouse SCN. Each horizontal line represents one probeset from MOE430 high density array. (C) Venn diagram for the overlap of light-regulated and cycling transcripts in the SCN. Numbers shown are for probesets. (D) Venn diagram of light induced and suppressed transcripts showing that the light pulse at CT16 that causes maximal phase shift also affects the expression of a large number of SCN transcripts.DOI: http://dx.doi.org/10.7554/eLife.03357.004
+**Figure 1—figure supplement 1.:** (A) Sampling schedule for the collection of SCN. C57BL/6J male mice were entrained to 12 hr light:12 hr darkness for 2–3 weeks and transferred to constant darkness. From Circadian Time (CT) 18, 30 hr after lights off, four mice at each time point were collected every 2 hr in dark over two complete days till CT64. From CT30, CT40, or CT46, one group of mice was exposed to 1 hr light, while the control group was maintained in dark, then both groups stayed in dark after 1 hr. SCNs were collected 1, 2, or 4 hr after the beginning of 1 hr light pulse. (B) Heatmap rendering of circadianly expressed transcripts in the mouse SCN. Each horizontal line represents one probeset from MOE430 high density array. (C) Venn diagram for the overlap of light-regulated and cycling transcripts in the SCN. Numbers shown are for probesets. (D) Venn diagram of light induced and suppressed transcripts showing that the light pulse at CT16 that causes maximal phase shift also affects the expression of a large number of SCN transcripts.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** qRT-PCR quantification of (A) Per1, (B) Nr4a2, (C) Nr4a3, (D) Klf4, and (E) JunB mRNA in the SCN of dark reared or 2 hr after a 1-hr light pulse delivered at CT16 are shown. (Mean + s.e.m., n = 4). The adult rd mice show outer retina degeneration, yet light resets their circadian clock as effectively as of the WT mice (Foster et al., 1991). Opn4 mice lack melanopsin and their circadian clock shows an attenuated light-induced phase shift (Panda et al., 2002; −/−Ruby et al., 2002). Opn4−/−;rd mice lack rod, cone, and melanopsin photopigments and show no response to light (Panda et al. 2003). Opn4Cre/+;R26iDTR/+ mice treated with DT specifically lose melanopsin-expressing retinal ganglion cells and show no phase shifting effect of light (Hatori et al., 2008). All mice were dark reared for at least 7 days and their activity onset was used to calculate CT16.DOI: http://dx.doi.org/10.7554/eLife.03357.005
+**Figure 1—figure supplement 2.:** qRT-PCR quantification of (A) Per1, (B) Nr4a2, (C) Nr4a3, (D) Klf4, and (E) JunB mRNA in the SCN of dark reared or 2 hr after a 1-hr light pulse delivered at CT16 are shown. (Mean + s.e.m., n = 4). The adult rd mice show outer retina degeneration, yet light resets their circadian clock as effectively as of the WT mice (Foster et al., 1991). Opn4−/− mice lack melanopsin and their circadian clock shows an attenuated light-induced phase shift (Panda et al., 2002; Ruby et al., 2002). Opn4−/−;rd mice lack rod, cone, and melanopsin photopigments and show no response to light (Panda et al. 2003). Opn4Cre/+;R26iDTR/+ mice treated with DT specifically lose melanopsin-expressing retinal ganglion cells and show no phase shifting effect of light (Hatori et al., 2008). All mice were dark reared for at least 7 days and their activity onset was used to calculate CT16.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Criteria to find SCN-enriched genes among 83 mouse tissues revealed 230 probesets among which 13 were transcription factors. (B) Expression patterns of SCN-enriched transcripts in 83 mouse tissues. Except SCN, duplicate data sets were used for other 82 tissues. The value used for the SCN was the (normalized) median of all the circadian values (24 in total) for the given probeset. Affymetrix probeset IDs and raw data for each gene are shown in Supplementary file 3. (C) The SCN is the only tissue showing overlapping expression of Lhx1 and Rorα. Lhx1 (Affymetrix IDs 1421951_at and 1450428_at) and Rorα (1436325_at) in Figure 1—figure supplement 3C were extracted from Figure 1—figure supplement 3B.DOI: http://dx.doi.org/10.7554/eLife.03357.006
+**Figure 1—figure supplement 3.:** (A) Criteria to find SCN-enriched genes among 83 mouse tissues revealed 230 probesets among which 13 were transcription factors. (B) Expression patterns of SCN-enriched transcripts in 83 mouse tissues. Except SCN, duplicate data sets were used for other 82 tissues. The value used for the SCN was the (normalized) median of all the circadian values (24 in total) for the given probeset. Affymetrix probeset IDs and raw data for each gene are shown in Supplementary file 3. (C) The SCN is the only tissue showing overlapping expression of Lhx1 and Rorα. Lhx1 (Affymetrix IDs 1421951_at and 1450428_at) and Rorα (1436325_at) in Figure 1—figure supplement 3C were extracted from Figure 1—figure supplement 3B.
 
 We tested whether the number of light-modulated transcripts parallels the phase shifting effect of light. Light pulse delivered during subjective day (CT6) triggered changes in a small number of transcripts, while the same pulse at CT16 causes a large phase shift accompanied by a large number of transcripts changing >2 fold (Figure 1B, Figure 1—figure supplement 1; Supplementary file 2C). The magnitude of light modulation of transcripts also paralleled the known phase shifting effect of light in genetic models of light input perturbation. Compared to wild type (WT) C57BL6/J, the light response was unchanged in mice lacking rod/cone photoreceptors, attenuated in melanopsin (Opn4)-deficient mice and completely abolished in mice lacking all three photopigments or those with specific ablation of melanopsin expressing retinal ganglion cells (Opn4Cre/+;R26iDTR/+ + diphtheria toxin [DT]) (Figure 1—figure supplement 2). Overall, the light-induced transcriptional responses in the SCN closely correlate with the extent of light-induced behavioral phase shift (Hatori and Panda, 2010) and hence are informative of the mechanism and consequences of the phase shift.
 
@@ -58,65 +58,113 @@ The light-induced genes include the circadian clock components e.g., Per1, Per2,
 
 The data for circadian and light-dependent gene expression are also being made available in a user friendly searchable web interface at http://scn.salk.edu. The database can be queried using a gene symbol or a probeset identifier as the keyword.
 
-## Lhx1 is an SCN-enriched and light-modulated gene
+### Lhx1 is an SCN-enriched and light-modulated gene
 
 Since the tight intercellular coupling of circadian oscillators is largely an SCN specific phenomenon (Herzog 2007), we reasoned that light likely suppresses the expression of an SCN-enriched factor that coordinates intercellular communication. We employed three-step enrichment criteria comparing the transcriptome of the SCN with that of 82 other mouse tissues including 14 different neural tissues (Su et al., 2004) (Figure 1—figure supplement 3). This analysis identified 213 SCN-enriched (not SCN-exclusive) genes (Figure 1—figure supplement 3, Supplementary file 3), including Rorα, Rorβ, Vip, Grp, Rgs16, and Prokr2 which are known to play important roles in SCN function (Welsh et al., 2010; Doi et al., 2011; Kasukawa et al., 2011; VanDunk et al., 2011).
 
 Among the 13 SCN-enriched transcription factors discovered (Figure 1—figure supplement 3), Lhx1 mRNA was suppressed by light (Figure 1D), raising the possibility that it regulates the expression of SCN synchronizing agents and that the lack of Lhx1 might render the SCN prone to desynchrony. However, Lhx1 is a necessary factor for differentiation of several tissue types as Lhx1−/− embryos die ∼ E10 (Shawlot and Behringer, 1995). In the hypothalamus, Lhx1 expression begins at E11 and parallels that of Six6 (VanDunk et al., 2011), whose function is necessary for normal SCN development (Clark et al., 2013). Since Rorα expression is also SCN enriched (Figure 1—figure supplement 3) and its developmental expression follows Lhx1 expression in the SCN region, we generated RorαCre;Lhx1loxP mice for testing the role of Lhx1 in SCN function.
 
-## Loss of Lhx1 in the SCN affects circadian consolidation and light induced phase shifts of behavioral rhythms
+### Loss of Lhx1 in the SCN affects circadian consolidation and light induced phase shifts of behavioral rhythms
 
 The overlap between Rorα and Lhx1 expression in the adult brain is largely restricted to the SCN (Figure 1—figure supplement 3) and the dLGN (Chou et al., 2013). The Rorα/Lhx1 double positive dLGN neurons constitute the thalamocortical pathway for conveying visual information to the brain (Chou et al., 2013). Since this circuit is not implicated in circadian photoentrainment (Mure and Panda, 2012), we reasoned the RorαCre;Lhx1loxP mice will be appropriate for testing the role of Lhx1 in SCN.
 
 Rorα is an essential component of the cell autonomous circadian oscillator (Sato et al., 2004). Its mRNA becomes detectable from E15 onward (VanDunk et al., 2011). Therefore, in the early developmental stage between E11 and E15, Lhx1 is expected to be expressed in the RorαCre;Lhx1loxP double mutant mice, which would allow normal Lhx1 function (if any) during early SCN differentiation, while uncovering the post-developmental role of Lhx1 in SCN function.
 
-The
+The RorαCre mouse has an IRES;Cre cassette knocked-in downstream of the Rorα locus (Chou et al., 2013) which permits normal expression of Rorα and co-expression of Cre. RorαCre;R26R mice (Figure 2A and Figure 2—figure supplement 1) or RorαCre;Z/AP mice (Figure 2B and Figure 2—figure supplement 1) showed robust Cre-dependent LacZ or ALPP (alkaline phosphatase) expression in the SCN region of the hypothalamus. ALPP staining of RorαCre;Z/AP mice revealed uniform staining of SCN neurons along dorso-ventral and rostro-caudal axes (Figure 2—figure supplement 1). As opposed to the developmental and circadian dysfunction in Rorα mutant (Sato et al., 2004), the RorαCre allele did not compromise Rorα function as the RorαCre mice exhibited normal development and circadian activity rhythm in light–dark cycles and in constant darkness that are indistinguishable from those of wild-type mice (see below).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig2-v2.jpg)
 
-**Figure 2.:** Enriched expression of a Rorα-driven marker in the SCN in RorαCre;R26R mice. (A) Ventral view of a whole brain (magnified view on the right) of adult RorαCre;R26R shows LacZ staining of the SCN. (B) Coronal section through the mid-SCN region (scale bar, 1 mm) and the magnified view of the SCN (scale bar, 100 µm) showing LacZ expression or (C) alkaline phosphatase expression in RorαCre;Z/AP mice. (D) qRT-PCR estimate of Lhx1 expression in the SCN (mean +s.e.m, n = 5). (E) Normal SCN innervation of the retinal ganglion cells in the WT mice as revealed by monocular injection of CTB-conjugated fluorescent marker is intact in (F) Lhx1SCN−KO mice. A 1 hr light pulse at CT16 causes (G) upregulation of light-induced genes (Per1, Per2, cFos, JunB), while (H) the light-suppressed transcripts (Lhx1, Vip, Avpr1a) in the WT SCN show reduced expression in the Lhx1 mice. Mice were in DD for 2 days before the light pulse. Representative actograms of (SCN-KOI) Rorα, (Cre/CreJ) RorαCre/+;Lhx1, and (loxP/loxPK) RorαCre/Cre;Lhx1 mice subjected to 8 hr phase advance and 8 hr delay. (loxP/loxPI) Average (+s.e.m., n = 5–8) activity onset and (K) average (+s.e.m.) number of days to re-entrain to advance or delay in light onset in three genotypes. Color codes in L and M correspond to the labels in I–K.DOI: http://dx.doi.org/10.7554/eLife.03357.007
+**Figure 2.:** Enriched expression of a Rorα-driven marker in the SCN in RorαCre;R26R mice. (A) Ventral view of a whole brain (magnified view on the right) of adult RorαCre;R26R shows LacZ staining of the SCN. (B) Coronal section through the mid-SCN region (scale bar, 1 mm) and the magnified view of the SCN (scale bar, 100 µm) showing LacZ expression or (C) alkaline phosphatase expression in RorαCre;Z/AP mice. (D) qRT-PCR estimate of Lhx1 expression in the SCN (mean +s.e.m, n = 5). (E) Normal SCN innervation of the retinal ganglion cells in the WT mice as revealed by monocular injection of CTB-conjugated fluorescent marker is intact in (F) Lhx1SCN−KO mice. A 1 hr light pulse at CT16 causes (G) upregulation of light-induced genes (Per1, Per2, cFos, JunB), while (H) the light-suppressed transcripts (Lhx1, Vip, Avpr1a) in the WT SCN show reduced expression in the Lhx1SCN-KO mice. Mice were in DD for 2 days before the light pulse. Representative actograms of (I) RorαCre/Cre, (J) RorαCre/+;Lhx1loxP/loxP, and (K) RorαCre/Cre;Lhx1loxP/loxP mice subjected to 8 hr phase advance and 8 hr delay. (I) Average (+s.e.m., n = 5–8) activity onset and (K) average (+s.e.m.) number of days to re-entrain to advance or delay in light onset in three genotypes. Color codes in L and M correspond to the labels in I–K.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Serial coronal brain sections of adult. (A) RorαCre;R26R or (B) RorαCre;Z/AP mice showing LacZ or alkaline phosphatase staining in the SCN. Scale bar, 100 µm. (C) Serial coronal hypothalamic brain section of an adult RoraCre/Cre;Lhx1fl/fl mouse intra-ocularly injected with Cholera toxin B (CTB) conjugated Alexa Fluor 488 (green) or 594 (Red) showing normal innervation of the SCN.DOI: http://dx.doi.org/10.7554/eLife.03357.008
+**Figure 2—figure supplement 1.:** Serial coronal brain sections of adult. (A) RorαCre;R26R or (B) RorαCre;Z/AP mice showing LacZ or alkaline phosphatase staining in the SCN. Scale bar, 100 µm. (C) Serial coronal hypothalamic brain section of an adult RoraCre/Cre;Lhx1fl/fl mouse intra-ocularly injected with Cholera toxin B (CTB) conjugated Alexa Fluor 488 (green) or 594 (Red) showing normal innervation of the SCN.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A–F) Activity profiles and (G–L) Chi-squared periodograms of representative mice of indicated genotypes during LD cycles. The period length (H) is shown inside panels of (G–L). Respective actograms showing wheel-running activity during LD are shown in Figure 3. (A–FM) Quantitation of the amounts of RorαCre;Lhx1 wheel running activity. Activity counts in LD cycles (L; light, D; dark and T; total) were plotted. Error bars indicate standard error of the mean. Activity during light, activity during dark and the total daily activity among these three genotypes were not significantly different.loxPDOI: http://dx.doi.org/10.7554/eLife.03357.009
+**Figure 2—figure supplement 2.:** (A–F) Activity profiles and (G–L) Chi-squared periodograms of representative mice of indicated genotypes during LD cycles. The period length (H) is shown inside panels of (G–L). Respective actograms showing wheel-running activity during LD are shown in Figure 3A–F. (M) Quantitation of the amounts of RorαCre;Lhx1loxP wheel running activity. Activity counts in LD cycles (L; light, D; dark and T; total) were plotted. Error bars indicate standard error of the mean. Activity during light, activity during dark and the total daily activity among these three genotypes were not significantly different.
 
 A single copy of Cre in RorαCre/+:Lhx1loxP/loxP mice reduced Lhx1 mRNA levels by nearly 40%, while in RorαCre/Cre:Lhx1loxP/loxP (Lhx1SCN-KO) mice Lhx1 expression in the SCN is severely reduced (Figure 2D). The gross morphology of the SCN in these mice remains intact (Figure 2—figure supplement 1) suggesting that the conditional loss of Lhx1 post early development in the SCN does not severely affect its differentiation unlike the loss of Six3, Six6, or Math5 (Wee et al., 2002; VanDunk et al., 2011; Clark et al., 2013). The activity pattern of these mice entrains normally to an imposed LD cycle (Figure 2—figure supplement 2) implying functional innervation of the SCN by the mRGCs, which is known to occur postnatally (McNeill et al., 2011). Accordingly, anterograde labeling using a Cholera Toxin B conjugated fluorescent marker indicated normal innervation of the SCN by RGCs (Figure 2E,F and Figure 2—figure supplement 1).
 
 Light-induced upregulation of immediate early genes and clock components including c-Fos, JunB, Per1, and Per2 in the SCN of Lhx1SCN-KO mice was comparable to that in WT mice (Figure 2G). However, light suppressed transcripts involved in intercellular communication such as Vip and Avpr1a showed reduced basal expression under DD (Figure 2H). This acute induction of the phase-resetting branch of light input along with potentially weak intercellular coupling suggested that the Lhx1SCN-KO mice may be more susceptible to light-induced phase shifts. Accordingly, in response to an 8 hr phase advance or delay of the LD cycle, the activity onset of RorαCre/+;Lhx1loxP/loxP and RorαCre/Cre;Lhx1loxP/loxP mice readjusted much faster than the WT mice to the new LD regime irrespective of the direction of the shift (Figure 2I–L).
 
-Next, we tested the consequence of the potentially weak intercellular communication in the absence of light. Under constant darkness (DD), the circadian locomotor activity rhythms of the
+Next, we tested the consequence of the potentially weak intercellular communication in the absence of light. Under constant darkness (DD), the circadian locomotor activity rhythms of the Rorα+/+; Lhx1+/+, Rorα+/+;Lhx1loxP/loxP, RorαCre/+;Lhx1+/+, or RorαCre/Cre;Lhx1+/+ mice were comparable (Figure 3A–D, Table 1). The RorαCre/+;Lhx1loxP/loxP mice showed normal activity rhythm for up to 3 weeks under DD, after which the activity consolidation deteriorated with no apparent ∼24 hr rhythm (Figure 3E). The RorαCre/Cre;Lhx1loxP/loxP mice showed circadian activity rhythm for up to 4 days under constant darkness, after which they became arrhythmic (Figure 3F, Figure 3—figure supplement 1). The lack of circadian locomotor activity rhythm in Lhx1SCN-KO mice under DD does not result from the disruption of the cell autonomous circadian oscillator, since the median expression of core clock components Per1 and clock output gene Dbp largely remained equivalent in the SCN of Lhx1SCN-KO and wild-type cohorts (Figure 3G,H). Both transcripts showed a significantly dampened rhythm with reduced peak levels and increased expression at the trough, suggestive of oscillator desynchrony. On the other hand, transcripts participating in intercellular communication including Vip, Avpr1a, Rasd1, Pde7b, Creb3l1, and a cell matrix associated cell–cell interaction mediator Nov were significantly reduced in the Lhx1SCN-KO mice (Figure 3I).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig3-v2.jpg)
 
-**Figure 3.:** (A–F) Representative wheel running activity pattern over several days of LD followed by DD in wild type and mice lacking Lhx1 in the SCN. Double-plotted qRT-PCR quantification (average +s.e.m, n = 3–4 mice) of (G) Per1 and (H) Dbp in the SCN of DD adapted WT and Lhx1SCN−KO mice. (I) Average (+s.e.m. 8 time points every 3 hr over 24 hr) expression of several factors involved in intercellular communication or circadian clock in the SCN of dark adapted WT and Lhx1SCN−KO mice. (J) Average mRNA (+s.e.m., n = 3–6 mice, *p < 0.05) expression or (K) immunoreactivity of VIP is reduced in the SCN of Lhx1-deficient mice. (L) Transcriptional activation of mouse Vip promoter by mouse LHX1. pGL3-promoter vector was used as a control promoter vector. Values are mean +s.e.m, ANOVA **p<0.01, ***p<0.001 vs 0 ng (white bar).DOI: http://dx.doi.org/10.7554/eLife.03357.010
+**Figure 3.:** (A–F) Representative wheel running activity pattern over several days of LD followed by DD in wild type and mice lacking Lhx1 in the SCN. Double-plotted qRT-PCR quantification (average +s.e.m, n = 3–4 mice) of (G) Per1 and (H) Dbp in the SCN of DD adapted WT and Lhx1SCN−KO mice. (I) Average (+s.e.m. 8 time points every 3 hr over 24 hr) expression of several factors involved in intercellular communication or circadian clock in the SCN of dark adapted WT and Lhx1SCN−KO mice. (J) Average mRNA (+s.e.m., n = 3–6 mice, *p < 0.05) expression or (K) immunoreactivity of VIP is reduced in the SCN of Lhx1-deficient mice. (L) Transcriptional activation of mouse Vip promoter by mouse LHX1. pGL3-promoter vector was used as a control promoter vector. Values are mean +s.e.m, ANOVA **p<0.01, ***p<0.001 vs 0 ng (white bar).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A–F) Activity profiles and (G–L) Chi-squared periodograms of representative mice of indicated genotypes during DD cycles. The period length (H) is shown inside panels of (G–L). Respective actograms showing wheel-running activity during DD are shown in Figure 3A–F. The insets in Ea and Eb show activity profile during the first 2 weeks in DD and last week of DD when the mice were rhythmic and arrhythmic respectively. Similarly, the insets in Ka and Kb show the respective chi-square periodogram. Average period lengths are shown in Table 1.DOI: http://dx.doi.org/10.7554/eLife.03357.011
+**Figure 3—figure supplement 1.:** (A–F) Activity profiles and (G–L) Chi-squared periodograms of representative mice of indicated genotypes during DD cycles. The period length (H) is shown inside panels of (G–L). Respective actograms showing wheel-running activity during DD are shown in Figure 3A–F. The insets in Ea and Eb show activity profile during the first 2 weeks in DD and last week of DD when the mice were rhythmic and arrhythmic respectively. Similarly, the insets in Ka and Kb show the respective chi-square periodogram. Average period lengths are shown in Table 1.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Human Lhx1 activates Luciferase expression from Vip:Luc but not from SV40 promoter in a dose-dependent manner. (B) Amino acid sequence alignment of DNA binding region of LHX1 and LHX3 showing the N230 residue in mouse Lhx1 that is critical for normal transcriptional activation function of Lhx1.DOI: http://dx.doi.org/10.7554/eLife.03357.012
+**Figure 3—figure supplement 2.:** (A) Human Lhx1 activates Luciferase expression from Vip:Luc but not from SV40 promoter in a dose-dependent manner. (B) Amino acid sequence alignment of DNA binding region of LHX1 and LHX3 showing the N230 residue in mouse Lhx1 that is critical for normal transcriptional activation function of Lhx1.
 
-## Lhx1 regulates expression of Vip
+**Table 1.**
+ Circadian running wheel activity period length of various mouse strains under constant darkness (n = 7–22)
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Average (h)</th>
+      <th>SEM (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rora+/+;Lhx1+/+</td>
+      <td>23.78</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Rora+/+;Lhx1loxP/loxP</td>
+      <td>23.64</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>RoraCre/Cre;Lhx1+/+</td>
+      <td>23.40</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>RoraCre/+;Lhx1+/+</td>
+      <td>23.86</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>RoraCre/+;Lhx1loxP/loxP</td>
+      <td>23.51</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>RoraCre/Cre;Lhx1loxP/loxP</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mice showing arrhythmic activity were excluded from the analysis. (NA = Not Applicable)._
+
+### Lhx1 regulates expression of Vip
 
 Among the downregulated genes, the mRNA levels of Vip were undetectable in the Lhx1SCN−KO mice (Figure 3J), and VIP protein level was also reduced in the SCN (Figure 3K). Hence, we tested whether LHX1 regulates Vip expression. Transcription from a 1 kb promoter region of mouse Vip driving a luciferase reporter was activated by wild-type mouse and human Lhx1 in a dose-dependent manner (Figure 3L and Figure 3—figure supplement 2). Such transcriptional regulation was dependent on the DNA binding function of LHX1 because the LHX1N230S mutant failed to activate transcription from Vip:luc reporter (Figure 3L). This mutant (Figure 3—figure supplement 2) carries a missense mutation in a highly conserved asparagine residue known to disrupt DNA binding (Thaler et al., 2002). Furthermore, wild-type LHX1 also failed to activate transcription from SV40 promoter, supporting the idea that Vip expression is specifically activated by LHX1 and that this requires the DNA-binding activity of LHX1. Collectively, these results demonstrate that LHX1 regulates expression of Vip, which along with sufficient expression of other synchronizing agents maintains synchrony among SCN neurons.
 
-## Lhx1 mediates synchrony among SCN oscillator neurons
+### Lhx1 mediates synchrony among SCN oscillator neurons
 
-Coupling among SCN neurons supports synchronous oscillations of individual oscillators that otherwise show variation in intrinsic period lengths (
+Coupling among SCN neurons supports synchronous oscillations of individual oscillators that otherwise show variation in intrinsic period lengths (Aton et al., 2005). To directly test the role of Lhx1 in maintaining SCN synchrony, we recorded electrophysiological activity of SCN slices using a multielectrode array. SCNs of both WT and Lhx1SCN-KO mice showed no apparent difference in the firing frequency, supporting the notion that Lhx1SCN-KO has no discernible developmental defects in the SCN. The WT SCN from LD reared animals showed synchronous firing rhythm, as characterized by both robust oscillation of multiunit activity as well as synchrony of peak phase of activity among different channels. The Lhx1SCN-KO SCN, on the other hand, showed remarkable dampening of firing rhythm as well as phase dispersion on day 1 and became almost asynchronous within 3 days (Figure 4A–E). This parallels the timeline of emergence of behavioral arrhythmicity in Lhx1SCN-KO mice when they are released from LD to DD (Figure 3F). Similarly, in WT mice maintained in DD for 2 weeks, the SCN displayed circadian oscillation of the multi-unit activity with a similar peak phase among the different electrodes examined (Figure 4—figure supplement 1). In contrast, the slices from RorαCre/Cre;Lhx1loxP/loxP animals showed widely dispersed phases of the multi-unit activity peak, a finding coherent with the arrhythmic locomotor activity observed in these animals in DD (Figure 3A). Since VIP expression is severely reduced in the Lhx1SCN-KO mice, we tested if extrinsic supplementation of VIP can restore the synchrony of the SCN neurons. Daily application of VIP for 1 hr on SCN slices from DD adapted Lhx1SCN-KO mice restored the normal synchrony and waveforms of the SCN firing rhythm (Figure 4F,G). Finally, the gradual dampening of SCN multiunit activity and desynchrony in the LD-adapted SCN slice from Lhx1SCN-KO mouse can be reversed by the daily application of VIP (Figure 4H,I).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig4-v2.jpg)
 
-**Figure 4.:** (A) Average (+s.e.m.) normalized multiunit activity (MUA) recorded from representative SCN slices of LD-adapted WT (n = 40, black) and Lhx1SCN−KO (n = 12, orange) mice. Data were binned every 60 min. Representative normalized MUAs and peak phase of activity from WT SCN (B and C, n = 40) and Lhx1SCN−KO mouse (D and E, n = 19). For C and E, left and right panels are respectively for days 1 and 3. (F) Average MUA of a DD adapted Lhx1SCN−KO SCN that received 1 hr perfusion of VIP daily for up to 7 days. (G) Peak phases of activity are gradually synchronized over 7 days. (H) Representative MUA from the SCN of an LD-adapted Lhx1SCN−KO mouse over several days. During the first 4 days, the activity dampened, which was rescued by daily application of VIP. Down arrows in F and H indicate the time of VIP application. (I) Peak phases of activity in WT and Lhx1SCN−KO SCN at the end of 7 days are shown.DOI: http://dx.doi.org/10.7554/eLife.03357.014
+**Figure 4.:** (A) Average (+s.e.m.) normalized multiunit activity (MUA) recorded from representative SCN slices of LD-adapted WT (n = 40, black) and Lhx1SCN−KO (n = 12, orange) mice. Data were binned every 60 min. Representative normalized MUAs and peak phase of activity from WT SCN (B and C, n = 40) and Lhx1SCN−KO mouse (D and E, n = 19). For C and E, left and right panels are respectively for days 1 and 3. (F) Average MUA of a DD adapted Lhx1SCN−KO SCN that received 1 hr perfusion of VIP daily for up to 7 days. (G) Peak phases of activity are gradually synchronized over 7 days. (H) Representative MUA from the SCN of an LD-adapted Lhx1SCN−KO mouse over several days. During the first 4 days, the activity dampened, which was rescued by daily application of VIP. Down arrows in F and H indicate the time of VIP application. (I) Peak phases of activity in WT and Lhx1SCN−KO SCN at the end of 7 days are shown.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03357/elife-03357-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** SCN-KO (mean ± SEM).Peak time of multiunit activity from each channel shows relative synchrony in the WT mouse that is dispersed in the Lhx1SCN-KO mouse.DOI: http://dx.doi.org/10.7554/eLife.03357.015
+**Figure 4—figure supplement 1.:** Peak time of multiunit activity from each channel shows relative synchrony in the WT mouse that is dispersed in the Lhx1SCN-KO mouse.
 
 ## Discussion
 
@@ -132,25 +180,25 @@ In summary, we have discovered that Lhx1 is a master regulator of multiple facto
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animal experiments were carried out in accordance with the guidelines of the Institutional Animal Care and Use Committee of the Salk Institute. Mice were housed under 12 hr light: 12 hr dark (LD) cycles. Food and water were available ad libitum. C57BL/6J, C3H/HeJ strain (rd) carrying Pdebrd1 mutation, Cre-dependent lacZ reporter strain (R26R) (Soriano, 1999), and Cre-dependent human ALPP reporter strain (Z/AP) (Lobe et al., 1999) were obtained from the Jackson Laboratory. Opn4−/− mice (Panda et al., 2002b) were bred to rd/rd to generate rdrd;Opn4−/−. Both Opn4Cre and Opn4Cre;R26iDTR were described in Hatori et al. (2008). The floxed Lhx1 allele (Lhx1loxP) mice were originally generated in Kwan and Behringer (2002). RorαCre mouse was generated by knocking in an IRES;Cre cassette 3′ downstream of the Rorα locus (Chou et al., 2013). Both Lhx1loxP and RorαCre mice were back-crossed to C57BL/6J strain for at least eight generations.
 
-## DNA microarrays
+### DNA microarrays
 
 168 male C57BL/6J mice of 6 weeks of age were maintained for 3 weeks on a 12 hr light:12 hr dark cycle. For circadian gene expression profiling, after being placed in DD for 2 days, four animals were sacrificed every 2 hr, beginning at hour 30 of DD, which corresponds to CT18, for two complete 24 hr cycles (Figure 1A). For light-regulated gene profiling, mice were maintained in DD then exposed to 1 hr light at CT30, 40, or 46, while control (no light pulse) mice were left in dark. After 1 hr, all mice were returned to DD, and four animals each were collected at 1, 2, and 4 hr from the beginning of light exposure from each CT. Mice were sacrificed by cervical dislocation, and the optic nerves were cut under dim red light. The SCN was quickly dissected and four individual SCNs were pooled to be rapidly frozen on dry ice. Total RNA was extracted by RNeasy mini column (Qiagen, CA, USA). For each time point, 100 ng of total RNA was used as starting material for Affymetrix MOE430 high density arrays (Affymetrix, CA, USA). For RorαCre;Lhx1loxP mice, the SCNs were collected every 4 hr. Total RNA was processed for qRT-PCR analyses following standard protocols.
 
-## DNA microarray data analysis
+### DNA microarray data analysis
 
-## Identification of circadian transcriptome in the SCN
+#### Identification of circadian transcriptome in the SCN
 
 Data were analyzed by using COSOPT to identify the transcripts that cycle with a time period between 20 and 30 hr, as described previously (Panda et al., 2002a). To identify gene families that are overrepresented in the rhythmically expressing genes in the SCN, we used the DAVID pipeline (Dennis et al., 2003).
 
-## Identification of the light-regulated genes
+#### Identification of the light-regulated genes
 
 Average expression levels of individual probesets were compared between respective light and dark samples. Those showing a fold change of 2 or higher at any of the 9 time-points were further examined.
 
-## Identification of SCN-enriched genes
+#### Identification of SCN-enriched genes
 
 We used mouse tissue expression database (Su et al., 2004) to identify SCN-enriched transcripts. We focused on probesets that had much higher signal in the SCN (in terms of the median temporal expression) than the remaining 82 tissues (duplicate values for each tissue), 14 neural tissues (duplicate), and the hypothalamus. Mathematically, this is interpreted as a high standard deviation for the given probeset expression level in the SCN relative to other tissues. We thus defined two Z values to measure how many standard deviations away the SCN expression is relative to the remainder of the data set, as follows:
 
@@ -162,42 +210,42 @@ To provide a further layer of stringency, we performed hierarchical clustering o
 
 We shortlisted probe sets that had Z (all tissues) ≥ 1.63, Z (neural tissues) ≥ 1.44, and SCN/hypothalamus ≥6. Further stringency was imposed by the requirement that median temporal SCN expression value for the probeset must exceed 200. 230 probe sets meet these criteria. Notably, many of these had previously been described as SCN-specific genes (Welsh et al., 2010; Kasukawa et al., 2011) and thus validated our approach.
 
-## Quantitative RT-PCR (qRT-PCR)
+### Quantitative RT-PCR (qRT-PCR)
 
-## One hour light from CT40
+#### One hour light from CT40
 
 Opn4Cre/+;R26iDTR/+ and control Opn4+/+;R26+/+ mice were individually housed in a wheel running cage and maintained in 12:12 LD cycle. Mice were intraperitoneally injected with diphtheria toxin to ablate melanopsin-expressing RGCs in Opn4Cre/+;R26iDTR/+ mice as described (Hatori et al., 2008). Ablation of melanopsin RGCs was confirmed by the loss of light entrainment of circadian activity rhythms. In addition to these mice, rd/rd;Opn4−/−, Opn4−/− and rd/rd mice were maintained in 12:12 LD, then transferred to DD. Mice were exposed to 1 hr light from CT40 or kept in dark, and sacrificed to collect the SCNs at 1 hr from the beginning of light under light or dark.
 
-## Wild type and Opn4−/− mice under 1 hr light from CT30, 40, or 46
+#### Wild type and Opn4−/− mice under 1 hr light from CT30, 40, or 46
 
 C57BL/6J and Opn4−/− mice were maintained in LD, then transferred to DD. Mice were exposed to 1 hr light from CT30, 40, or 46 or kept in dark, and sacrificed to collect the SCNs at 0, 1, 2, or 4 hr from the beginning of light under light or dark.
 
-## Measurement of mRNA levels in RorαCre;Lhx1loxP mice
+#### Measurement of mRNA levels in RorαCre;Lhx1loxP mice
 
 RorαCre/Cre;Lhx1loxP/loxP and the control mice were kept in LD cycle, then transferred to DD. Mice were collected at CT18, 22, 26, 28, 30, 32, 36, and 40. For circadian gene expression, total RNA from each time point was subject to qRT-PCR. For non-oscillating transcripts, data from all timepoints were pooled to evaluate levels of expression.
 
-## qRT-PCR
+#### qRT-PCR
 
 Total RNA from an individual mouse SCN was extracted following RNeasy mini column protocols (Qiagen, CA, USA). cDNA synthesis was carried out with Superscript III (Invitrogen, CA, USA) or qScript cDNA SuperMix (Quanta Biosciences, MD, USA). qRT-PCR was carried out in experimental (at least) triplicates using Power SYBR Green reagent in AB7900HT 384-well system (Applied Biosystems, CA, USA). Primer sequence information is available upon request. Abundance was calculated by normalization to beta Actin (Actb).
 
-## Histology
+### Histology
 
 Procedures for alkaline phosphatase staining for RorαCre;Z/AP brain, X-gal staining for RoraCre;R26R brain, and anterograde tracing with fluorescent cholera toxin subunit B (CTB) have been described previously (Hatori et al., 2008; Chou et al., 2009; Brown et al., 2010).
 
-## Locomotor activity measurement
+### Locomotor activity measurement
 
 Daily locomotor activity of mice individually housed in wheel running cages was measured following standard methodology (Siepka and Takahashi, 2005). Typically, 6- to 10-week-old mice kept in cages were placed inside light tight boxes with independent illumination. During the light phase, the mice received ∼150 lux of white light from fluorescent light source. Wheel running activity in 5 min bins was continuously collected and later analyzed by ClockLab software (Actimetrics, Evanston, IL, USA). All routine animal husbandry care during the dark phase was performed under dim red light.
 
-## Multiunit activity recording of the SCN slices
+### Multiunit activity recording of the SCN slices
 
 Mice were sacrificed by cervical dislocation followed by rapid dissection. The brains were cooled down in an ice-cold ACSF solution (125 mM NaCl, 25 mM KCl, 1 mM MgCl2, 1.25 mM NaH2PO4, 2 mM CaCl2, 20 mM Glucose, 26 mM NaHCO3, Penicillin 5000 IU/ml, and Streptomycin 5000 µg/ml) saturated with 95% O2/5% CO2. Coronal slices (∼300 μm) were then prepared using a tissue chopper and trimmed to ∼10 mm2 slices containing both nuclei. Finally, the slices were transferred to the multi electrodes arrays (MEA). The MEA consists of a glass recording chamber, on the bottom of which are engraved 256 electrodes (10 μm in diameter, situated every 60 μm) and arranged in a 16 × 16 square grid (Multichannel Systems, Reutlingen, Germany). The chamber was continuously perfused with heated (35°C) and oxygenated ACSF-containing antibiotics. Extracellular electrical activity was continuously monitored (signal was acquired from all 256 channels, 10 kHz) and spikes crossing a threshold set at 3 times the standard deviation of the noise on each channel were recorded and stored for off-line analysis. Just prior to placing the MEA on the amplifier, a bright field picture of the slice position on the electrode was rapidly taken to assess SCN placement. The electrodes covering the SCN were then continuously recorded from 2 to 4 days. Channels displaying noise or monotonically decreasing activity were excluded from subsequent analysis. We recorded from animals housed for at least 2 weeks either in DD or LD (12/12) conditions. Animals were handled under dim red light until the optic nerve was cut. Data analysis and display were performed using NeuroExplorer (Plexon Denton, TX), Oriana (Kovach Computing Services, UK), and custom software written in MATLAB (MathWorks, Natick, MA). Peaks of firing were determined after smoothing of data (rloess, MATLAB) and fitting with a sinusoidal function.
 
 Daily administration of VIP was realized by switching the perfusion from the tank containing the medium described earlier to a tank containing the same medium supplemented with VIP (Calbiochem, EMD Millipore, MA) at the concentration of 25 nM for 1 hr.
 
-## Plasmid construction
+### Plasmid construction
 
 The coding regions corresponding to full-length mouse and human Lhx1 were amplified by PCR from pineal cDNA and subcloned into pcDNA3.1-TOPO (Invitrogen, CA, USA) to yield expression plasmids mouse Lhx1/pcDNA3.1 and human Lhx1/pcDNA3.1, respectively. Site-directed mutagenesis (Stratagene, CA, USA) was performed to construct mouse Lhx1/pcDNA3.1 to generate a point mutation changing asparagine (amino acid 230) to serine. A DNA fragment corresponding to ∼1 kb of mouse Vip promoter was amplified by PCR from mouse genomic DNA and cloned into pGL3 basic vector (Promega) to yield the Vip reporter vector.
 
-## Transcriptional assay
+### Transcriptional assay
 
 293T cells were cultured in DMEM supplemented with 10% FBS. The cells (40,000 cells) in 96-well plates were transfected by using TransIT-LT1 (Mirus Bio, WI, USA) with various amounts of expression plasmid (total amount was adjusted to 250 ng by adding empty vector pcDNA3.1), and 5 ng of firefly luciferase reporter plasmid. The cell lysates were prepared 46 hr after the transfection and subjected to dual-luciferase assay by luminometry (Promega, WI, USA).

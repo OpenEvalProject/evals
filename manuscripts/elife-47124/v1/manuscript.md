@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.47124.001 We are writing to reply to the comment by Pouwels et al., 2019 about our recent study (Olesen et al., 2018) on antibiotic use and antibiotic resistance.
+We are writing to reply to the comment by Pouwels et al., 2019 about our recent study (Olesen et al., 2018) on antibiotic use and antibiotic resistance.
 
 ## Introduction
 

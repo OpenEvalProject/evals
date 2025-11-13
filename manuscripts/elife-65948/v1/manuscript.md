@@ -28,7 +28,7 @@ Despite the important insights provided by both of these studies, we do not yet 
 
 ## Results
 
-## A null expectation for community assembly in mixed nutrient environments
+### A null expectation for community assembly in mixed nutrient environments
 
 To investigate whether communities assembled in pairs of nutrients can be predicted from those assembled in every single nutrient alone, we must first develop a quantitative null model that predicts community composition in a mixed nutrient environment in the case where each nutrient recruits species independently. Any deviation between the null model prediction and the observed (measured) composition reveals that nutrients are not acting independently, but rather ‘interact’ to shape community composition. This definition of an interaction as a deviation from a null model that assumes independent effects is commonplace in systems-level biology (Sanchez, 2019; Tekin et al., 2018).
 
@@ -40,31 +40,99 @@ In order to formulate the null expectation for independently acting nutrients, l
 
 Under the null model, the relative abundance of species i in a mix of nutrients 1 and 2 can be written as fi,12(null) = w1 fi,1 + w2 fi,2 where fi,1 and fi,2 are the relative abundances of i in nutrients 1 and 2, respectively, and w1 and w2 are the relative number of cells in nutrients 1 and 2 (Materials and methods). Any quantitative difference between the null model prediction and the observed composition quantifies an ‘interaction’ between nutrients. Accounting for the presence of such interactions, the model can be re-written as fi,12 = fi,12(null) + εi,12 where εi,12 represents the interaction between nutrients 1 and 2 (Figure 1B).
 
-## Experimental system
+### Experimental system
 
 Equipped with this null model, we can now ask to what extent the nutrients recruit species independently in mixed environments. To address this question, we followed a similar enrichment community approach to the one we have used in previous work for studying the self-assembly of replicate microbial communities in a single carbon source (Goldford et al., 2018; Estrela et al., 2020) (Materials and methods, Figure 2A). Briefly, habitats were initially inoculated from two different soil inocula. Communities were then grown in synthetic (M9) minimal media supplemented with either a single carbon source or a mixture of two carbon sources, and serially passaged to fresh medium every 48 hr for a total of 10 transfers (dilution factor = 125× ) (Figure 2A). The carbon source pairs consisted of a focal carbon source mixed at equal C-molar concentrations with one of eight additional carbon sources. We previously found that stable multi-species communities routinely assemble in a single carbon source (which is limiting under our conditions), and they converge at the family level in a manner that is largely governed by the carbon source supplied, while the genus or lower level composition is highly variable (Goldford et al., 2018). We chose glucose as the focal carbon source because we have previously carried out multiple assembly experiments in this nutrient (Goldford et al., 2018; Estrela et al., 2020). As the additional carbon sources, we chose nutrients that are simple and metabolically diverse (sugar vs acid, that contain a different number of atoms of carbon, and that enter metabolism at different points), namely ribose, fructose, cellobiose, and glycerol (i.e. a pentose, a hexose, a disaccharide, and a sugar alcohol) and fumarate, benzoate, glutamine, and glycine (two organic acids and two amino acids). All carbon sources were also used in single carbon source cultures.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of experimental design. Two different soil samples were inoculated in minimal M9 medium supplemented with either a single carbon source (CS1 or CS2) or a mixture of two carbon sources (CS1 + CS2) (three to four replicates each). Communities were propagated into fresh media every 48 hr for 10 transfers and then sequenced to assess community composition. Carbon source mixtures consisted of a focal carbon source (CS1; glucose or succinate) mixed with a second carbon source (CS2). (B, C) For each pair of carbon sources, we show the experimentally observed and predicted (by the null additive model) relative abundance of each family in the mixture. Any deviation from the identity line (predicted = observed) reveals an interaction effect. Only the four most abundant families are shown. Error bars represent mean ± SE.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Two soil samples were inoculated in minimal M9 medium supplemented with a single carbon source (three or four replicates each) and propagated into fresh media every 48 hr for 10 transfers (Materials and methods). Shown is the family-level taxonomic composition at Transfer 10 for inoculum 1 (top) and inoculum 2 (bottom). Families with a relative abundance lower than 0.01 are shown as ‘Other’.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Two soil samples were inoculated in minimal M9 medium supplemented with two carbon sources (glucose or succinate + another carbon source), and propagated into fresh media every 48 hr for 10 transfers (Materials and methods). There are three/four replicates per carbon source pair. Shown is the family-level taxonomic composition at Transfer 10 for the two inocula. Families with a relative abundance lower than 0.01 are shown as ‘Other’.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Shown is the same data as in Figure 2B (A) and Figure 2C (B) but displayed on a log–log scale so the datapoints at lower relative abundance are easier to visualize.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Shown is the observed vs predicted abundance for different taxonomic levels and focal carbon source (CS) (mean ± SE). Table shows the Pearson’s R and RMSE for each family-focal carbon source combination.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Total community biomass (OD620) at the end of the 48 hr incubation period at Transfer 10. There are four biological replicates per carbon source per inoculum, except for glycine with three replicates.
+
 Communities assembled in single sugars contained 5–24 exact sequence variants (ESVs), mainly belonging to the Enterobacteriaceae family (mean relative abundance ± SD of~0.98 ± 0.03), a sugar specialist (Figure 2—figure supplement 1). In contrast, communities assembled in organic acids exhibited a higher richness (12–36 ESVs), and unlike in sugars, Enterobacteriaceae were generally rare (mean ± SD ~ 0.06 ± 0.06). Instead, communities were dominated by respirative bacteria mainly belonging to the Pseudomonadaceae (mean ± SD ~ 0.51 ± 0.25), Moraxellaceae (mean ± SD ~ 0.18 ± 0.21), and Rhizobiaceae (mean ± SD ~ 0.11 ± 0.13) families (Figure 2—figure supplement 1). Because of the observed family-level convergence across carbon sources, which is consistent with previous studies (Goldford et al., 2018; Estrela et al., 2020; Lu et al., 2018), we focus our analysis below on family-level abundance.
 
-## The null model of independently acting nutrients explains a high fraction of the variation observed
+### The null model of independently acting nutrients explains a high fraction of the variation observed
 
 To investigate the predictive power of the null (additive) model, we compare the predicted and observed relative abundances of each family for each carbon source pair across all experiments. Our results show that the null model predicts reasonably well the family-level abundances on average (Pearson’s R = 0.95 and p<0.001; RMSE = 0.073, N = 223) (Figure 2B, Figure 2—figure supplements 2 and 3). To confirm that the strong predictive power of the null model is not an idiosyncrasy of using glucose as the focal carbon source in the pairs, we repeated the same experiment with succinate (an organic acid) as the focal carbon source. Although the correlation between observed and predicted abundance is lower than for glucose, the null additive model is still predictive (Pearson’s R = 0.87 and p<0.001; RMSE = 0.094; N = 257) (Figure 2B).
 
 This result seems to indicate that, at the family level, a simple model that assumes that nutrients act independently can predict community composition in a pair of nutrients (for an analysis of this point at the genus and ESV level, see Figure 2—figure supplement 4). However, when we looked at this more closely and broke down our results by carbon source and family, we found consistent and systematic deviations from the null model (Figure 2C). For example, across all succinate–sugar pairs, Enterobacteriaceae are significantly more abundant than predicted by the null model (one-tailed paired t-test, N = 8, p<0.05 based on 1000 permutations; see Materials and methods), while both Rhizobiaceae and Moraxellaceae are less abundant than predicted (one-tailed paired t-test, N = 8, p<0.05 based on 1000 permutations; see Materials and methods) (Figure 2C). The null ‘interaction-free’ model also predicts species abundance better in certain carbon source combinations (e.g. glucose + ribose) than in others (e.g. glucose + glutamine) (Figure 2C). The existence of systematic deviations from the null prediction reveals that some nutrient pairs do not recruit families independently, but instead ‘interact’ with each other to affect the abundance of specific families.
 
-## A simple dominance rule in mixed nutrient environments: sugars generally dominate organic acids
+### A simple dominance rule in mixed nutrient environments: sugars generally dominate organic acids
 
 To map the regularities in nutrient interactions observed, we next sought to characterize the nature of these interactions for each carbon source pair and every family. One helpful way of visualizing nutrient interactions is to draw the pairwise abundance landscape for each species and carbon source pair (Figure 3A). For instance, a species could be either more abundant in a pair of nutrients than it is in any of them independently (synergy). Or it could be less abundant than it is in any of the two (antagonism). Dominance is a less extreme interaction that can be visualized by the pushing of a species abundance toward the value observed in one of the two nutrients and away from the average, thus overriding the effect of the second available nutrient (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig3-v1.jpg)
+
+**Figure 3.:** (A) Detecting interactions and hierarchies of dominance between nutrients on microbial community composition. Drawing the single and pairwise abundance landscapes for each species allows us to visualise interactions between nutrients. Multiple types of interactions are possible, including dominance, synergy, and antagonism. Interactions occur when ε is significantly different from 0 (Materials and methods). Synergy (antagonism) occurs when the abundance in the mixture is greater (lower) than the abundances in any of the single nutrients independently (Materials and methods). Dominance occurs when the abundance in the mixture is closer or similar to the abundance in one of the singles. The landscape also allows us to identify which carbon source has a dominating effect within the pair. When ε > 0, the growth-promoting nutrient dominates and has an overriding effect in the community composition. In contrast, when ε < 0, the growth-repressing nutrient dominates. (B) Two examples of nutrient interactions (succinate + fructose and glucose + glutamine) exhibiting sugar dominance. Barplots show a representative replicate from one of the inocula (Figure 2—figure supplements 1–2). For instance, the landscape for succinate-fructose shows that fructose overrides the effect of succinate by promoting Enterobacteriaceae (E), and repressing Moraxellaceae (M) and Rhizobiaceae (R) (purple arrows), whereas no interaction effect is observed for Pseudomonadaceae (P). Error bars represent mean ± SD of the four replicates. (C) Dominance index for the eight sugar–acid pairs and the four dominant families. Filled circles show the mean ± SD of the two inocula × four replicates for each pair of nutrients, and open symbols show all eight independent replicates (different shapes for different inocula), except for glycine pairs where N = 6. Purple indicates that the sugar dominates while orange indicates that the acid dominates. Lighter purple and orange indicate dominance, while darker purple and orange indicate super-dominance (synergy or antagonism). An interaction occurs when the abundance is greater (ε > 0) or lower (ε < 0) in the carbon source mixture than predicted by the null model (one-tailed paired t-test, p<0.05, N = 8, based on 1000 permutations; Materials and methods). In gray are shown cases where there is no interaction, or when dominance is undefined because the two inocula exhibit opposite dominant nutrient (in which case δ is shown as both –δ and +δ). (D) Predicted vs observed family-level abundance. For each pair of carbon sources (CS), shown is the experimentally observed and predicted (by the null model) relative abundance of each family in the mixed carbon sources. Any deviation from the identity line (predicted = observed) is the interaction effect. The colors show whether the carbon source pairs are sugar–sugar (SS), acid–acid (AA), or sugar–acid (SA). Error bars represent mean ± SE. Table shows RMSE for each carbon source pair type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Interaction type for each pair of carbon source and family. An interaction between nutrients occurs when the abundance in the mixture is significantly greater or lower than predicted by the null additive model (one-tailed paired t-test, p<0.05 based on 1000 permutations; only cases where N ≥ 6 unique pairs are considered) (Materials and methods). Multiple types of nutrient interaction are possible: dominance, synergy, and antagonism. Synergy (antagonism) occurs when the abundance in the mixture is greater (lower) than the abundances in any of the single nutrients independently (Welch two sample t-test, p<0.05) (Materials and methods). Dominance occurs when the abundance in the mixture is closer or similar to the abundance in one of the singles. (B) Interaction type by carbon source pair type. AA: mixture of two acids; SS: mixture of two sugars; and SA: mixture of a sugar and an acid. (C) Interaction type shown for the four most abundant families and ‘other’ families grouped together.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** For each carbon source pair, the filled circles show the mean ± SD of N = 8 unique replicates (two inocula × four replicates each), and the open symbols show all eight replicates individually (except for glycine pairs where N = 6). The different shapes correspond to different inocula. When δ < 0, the focal carbon source (succinate or glucose) dominates. When δ > 0, the additional carbon source dominates (Materials and methods). Orange or purple corresponds to cases where nutrients interact, in which case there is dominance (or super-dominance). An interaction occurs when the abundance observed in the mixture is significantly greater (ε > 0) or lower (ε < 0) than predicted by the null additive model (one-tailed paired t-test, p<0.05, based on 1000 permutations; see Materials and methods). Gray corresponds to cases where nutrients do not interact or dominance is undefined because one carbon source dominates in one of the inocula and the paired carbon source dominates in the other inocula (in which case δ is shown as both −δ and +δ). Lighter orange or purple indicates dominance while darker orange or purple indicates super-dominance (synergy or antagonism) (Materials and methods). Only the four most dominant families are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Multiple types of nutrient interactions are possible, including dominance, synergy, and antagonism (Figure 3A). An interaction occurs when ε is significantly greater or lower than 0 (one-sided paired t-test, p<0.05 based on 1000 permutations, Materials and methods). Inocula are considered separately, and only cases where N ≥ 3 unique pairs are considered. Synergy (antagonism) occurs when the abundance in the mixture is greater (lower) than the abundances in any of the singles separately. Dominance occurs when the abundance in the mixture is closer or similar to one of the single abundances but not above or below any of the single abundances independently (Materials and methods). (B) Interaction type by carbon source pair type. AA: mixture of two acids; SS: mixture of two sugars; and SA: mixture of a sugar and an acid. (C) Interaction type is broken down by the 10 most abundant genera spanning the Enterobacteriaceae family (blue), Pseudomonadaceae (light purple), Moraxellaceae (dark purple), and Rhizobiaceae (orange) families. Note that Enterobacteriaceae.8 is a non-identified genus belonging to the Enterobacteriaceae family. The other genera are grouped together and shown as ‘other’.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** To determine the genus-level dominance, the two inocula are considered separately (different shapes) as the genera that are sampled in one inocula may not be sampled in the other inocula. Purple indicates that the sugar dominates while orange indicates that the acid dominates. Lighter purple and orange indicate dominance, while darker purple and orange indicate super-dominance (synergy or antagonism) (Materials and methods). No interaction is shown in gray. An interaction occurs when ε is significantly greater or lower than 0 (one-sided paired t-test, p<0.05 based on 1000 permutations, Materials and methods). Shown are the 10 most abundant genera (mean ± SD). Note that Enterobacteriaceae.8 is a non-identified genus of the Enterobacteriaceae family.
 
 When the interaction is positive (ε > 0), the dominant nutrient is the one where the family grew to a higher abundance. When the interaction is negative (ε < 0), the dominant nutrient is the one where the species grew less well. Mathematically, dominance occurs when |ε| > 0 and min(fi,1, fi,2) ≤ fi,12 ≤ max(fi,1, fi,2), while synergy and antagonism (forms of super-dominance) occur when |ε| > 0 and fi,12 > max(fi,1, fi,2) and fi,12 < min(fi,1, fi,2), respectively (Materials and methods). Figure 3B shows representative examples of dominant carbon source interactions. For instance, Moraxellaceae and Rhizobiaceae grow strongly on succinate, but they are not found in fructose. When fructose is mixed with succinate, both families drop dramatically in abundance, despite their high fitness in succinate alone. Interestingly, however, the dominance of fructose over succinate is not observed for all families: those two nutrients do not interact on Pseudomonadaceae, whose abundance is well predicted by the null model. Using this framework, we then systematically quantified the prevalence of dominance, antagonism, and synergy between nutrients for each family (Figure 3—figure supplement 1A). While 66% of the nutrient pair combinations exhibited no significant interaction, dominance was by far the most common interaction amongst those that interacted (75%, Figure 3—figure supplement 1A). It occurred predominantly in the sugar–acid pairs, and to a lesser extent in the acid–acid pairs, and only rarely in the sugar–sugar pairs (Figure 3—figure supplement 1B). This result strongly suggests that nutrient interactions are not random but do have a specific structure that is conserved at the family level (Figure 3—figure supplement 1C).
 
 To systematically characterize and quantify nutrient dominance, we developed a dominance index (δ) (Materials and methods). For visualization purposes, the dominance index for the sugar–acid pairs (we will discuss the acid–acid pairs later) is written as δi=−|ε12| when the sugar dominates and as δi=|ε12| when the acid dominates. If ε12 = 0, then δi=0. That is, in the absence of interaction between nutrients, there is no dominance. By plotting the dominance index for each pair of nutrients and each family, we observe a generic pattern of dominance of sugars over acids (Figure 3C). The families Moraxellaceae or Rhizobiaceae are recruited to the community by most organic acids in isolation, but they are not found in most sugar communities. When sugars and organic acids are mixed together, the sugar dominates and both families are at much lower abundances (by ~6-fold in the case of Moraxellaceae and ~114-fold in Rhizobiaceae) than expected by the null model, even though the organic acid where they thrived is present in the environment. Consistent with this pattern, we found that pairs of more-similar nutrients (a pair of sugars or a pair of organic acids) were significantly better predicted by the null model than mixed organic acid–sugar pairs (Figure 3D). No generic pattern of dominance was observed in the acid–acid mixtures (Figure 3—figure supplement 2). When we examine interactions and dominance at the genus level, we find that sugars do not exhibit the same dominance for all genera within the same family (Figure 3—figure supplements 3–4). This result is consistent with the convergence of community structure at the family level (despite substantial variation at lower levels of taxonomy), which we have reported for communities assembled in a single nutrient (Goldford et al., 2018; Estrela et al., 2020). Together, these results indicate that interactions between nutrients are not universal, but rather they are conserved at the family-level.
 
-## An extension of the null consumer-resource model with an asymmetry in nutrient benefits recapitulates the dominance pattern observed
+### An extension of the null consumer-resource model with an asymmetry in nutrient benefits recapitulates the dominance pattern observed
 
 Our findings pose intriguing questions about the mechanisms behind the nutrient interaction patterns we have observed. For instance, is it reasonable to expect that the additive null model should have worked as well as it did, and better at the family than at the species level? Why are pairs of more-similar nutrients better explained by the null model than pairs of more dissimilar nutrients? What may explain why nutrients dominate over others at the family level? And why do sugars generally dominate organic acids for most families?
 
 We have previously shown that many of the properties of our experimental enrichment communities reflect the generic emergent behavior of consumer-resource models (Goldford et al., 2018; Marsland et al., 2019), and subsequent work extended this finding to complex natural communities (Marsland et al., 2020a). We thus sought to ask whether our observations regarding the assembly of communities in pairs of resources are similarly reflecting a generic emergent property of consumer-resource models. To address this question, we followed the same procedure as we and others have done in previous work (Goldford et al., 2018; Marsland et al., 2020a; Marsland et al., 2020b; Serván and Allesina, 2020), and simulated the top-down assembly of microbial communities in pairs vs single nutrients using a recently developed Microbial Consumer Resource Model (MiCRM) (Goldford et al., 2018; Marsland et al., 2019; Marsland et al., 2020a) (see Materials and methods). The MiCRM differs from the classical MacArthur-Levins model (MacArthur, 1970) in that it includes metabolic cross-feeding in a manner that preserves thermodynamic balance. The model and the details of the simulations are described in the Materials and methods section. In brief, 200 species are seeded into each habitat at the start of a simulation. Each of these is represented by a different vector of resource uptake rates. These vectors are randomly sampled in a manner that captures the existence of two functional guilds, each of which specializes in a different group of resources (e.g. sugars vs organic acids) (Figure 4A). Members of the family specializing on sugars (i.e. the Enterobacteriaceae) have on average a higher uptake rate on each sugar whereas members of the family specializing on acids (i.e. the Pseudomonadaceae) have on average a higher uptake rate on each acid. The magnitude of specialization by each family on its preferred resource type is tuned by two parameters, qA and qS, which modulate the mean and variance of the probability distribution from which the uptake rates are sampled (see Materials and methods for more details). We note that this specialization is quantitative rather than discrete, as all species are assumed to be able to consume all of the resources (a point that is in general consistent with our experimental findings [Figure 4—figure supplement 1]). Communities are allowed to find a dynamical equilibrium, at which point we stop the simulation. In total, and in order to get to generic behavior, we generated 100 simulations each with a different random set of species (Materials and methods).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic illustrating different scenarios of nutrient preference. There are two families (FS and FA) and two resource classes (RS and RA). Without resource specialization, FS and FA have equal access to RS and RA. With symmetric specialization, each family prefers its own resource class with the same strength. With asymmetric specialization, one family (FS) has better access to its own resource class (RS) relative to that of the other family (FA) on its own resource class (RA). (B) A mechanistically explicit consumer-resource model that incorporates resource competition, resource specialization and nonspecific cross-feeding (Materials and methods) recovers the predicted additivity pattern at both the species (left) and family (right) level of taxonomic organization. The observed relative abundance of each species or family in 300 communities grown on a different pair of nutrients (100 AA, 100 SS, and 100 SA) is plotted against the abundance predicted from the same communities grown on each of the relevant single nutrients (S, A). Each family specializes equally on its preferred nutrient (qS = qA = 0.9) as in previous work (Marsland et al., 2020a). In Figure 4—figure supplement 4, we illustrate representative consumption matrices for different choices of qA and qS. (C) 22 strains were isolated from the assembled communities and their growth rates on minimal M9 media supplemented with one the 10 carbon sources were measured. qS represents the growth rate advantage of Enterobacteriaceae on sugars relative to the other dominant family (colored), while qA represents the growth rate advantage of the other family on the acids relative to Enterobacteriaceae (Materials and methods). When qS is positive, Enterobacteriaceae grow faster on the sugar than the other family, while when qS is negative, Enterobacteriaceae grow more slowly on the sugar than the other family. When qA is positive, the other family grows faster on the acid than Enterobacteriaceae, while when qA is negative, the other family grows more slowly on the acid than Enterobacteriaceae. Each dot corresponds to a sugar-acid pair for a Enterobacteriaceae-other family pair (n = 24). The growth rate advantage of Enterobacteriaceae on sugars is significantly greater than the growth rate advantage of the other families on acids (i.e. qS > qA, mean of differences = 0.069, paired t-test, n = 24, p-value<0.0001). (D) Here we repeat the same simulation as shown in (B), this time using different combinations of qA and qS (0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95). Heatmap shows the mean dominance level (δ) for different combinations of qA and qS. When δ < 0, the sugar dominates (purple); when δ > 0, the acid dominates (orange).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Twenty-two strains belonging to the four dominant families, namely Enterobacteriaceae (7), Pseudomonadaceae (5), Moraxellaceae (6), and Rhizobiaceae (4) were isolated from the self-assembled communities and their growth rate on the 10 carbon sources was measured (Materials and methods, Supplementary file 1b). The average growth rate is measured as the mean cell divisions from 0.5 hr to 16 hr of growth (three or four replicates each) (Materials and methods). Thus, this approach takes into account both lag and growth rate, two growth traits that are important in determining the competitive ability of a strain. We use the first 16 hr of growth rather than a longer time window to better assess growth rate on the supplied nutrient and avoid potential artifacts from growth on secretions. Significance level (p-value) is measured by comparing the average growth rate between Enterobacteriaceae (reference) and each other family (paired t-test, ****p<0.0001; ***p<0.001; **p<0.01; *p<0.1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Relative abundance of each species (A) or species grouped by family (B) in simulated communities grown in a mixture of nutrients plotted against the predicted relative abundance from simulated communities grown in single nutrients assuming that nutrients act independently (Materials and methods). Communities are colonized with n species, randomly sampled from a regional pool of 200 species, while keeping the number of families constant. When n = 200, all species are sampled. Decreasing n reduces the initial species variability of the community and also introduces stochastic colonization through the random sampling of the regional species pool. For each n, the result of 100 simulations for communities grown in three carbon source pairs is shown (1 SS pair, 1 AA pair, and 1 SA pair).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** In Figure 4B (right-hand panel), we performed consumer-resource model simulations and plotted the observed and predicted relative abundance of each family in 300 communities grown on a different pair of nutrients (100 AA, 100 SS, and 100 SA). In those simulations, each family is specialized on its preferred nutrient (qS = qA = 0.9). Here, we repeat these exact simulations for different degrees of resource specialization (qS = qA ∈ [0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95]). When qS = qA = 0.05, the two families are largely unspecialized whereas when qS = qA = 0.95 both families are largely specialized (Figure 4—figure supplement 4). The predictive accuracy of the null model is quantified using the RMSE calculated across n = 100 communities.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The schematics illustrate different scenarios of nutrient preference for two families (FS and FA) and two resource classes (RS and RA). Without resource specialization, FS and FA have equal access to RS and RA. With symmetric specialization, each family prefers its own resource class with the same strength. With asymmetric specialization, one family (FS) has better access to its own resource class (RS) relative to that of the other family (FA) on its own resource class (RA). (B) Consumption matrices for two families (FA and FS coloured in orange and purple respectively) in two resource classes (RS and RA). Each row corresponds to a different species (for visualization purposes we show 30 species per family) and each column corresponds to a different nutrient within a resource class (10 nutrients per resource class). The value ciα corresponds to the uptake rate of species i in nutrient α. Four nutrient preference patterns are illustrated. Without family-level nutrient preference (specialization), species from the two families have equal access to resources in A (qA = 0) and resources in S (qS = 0). When each family has a strong and quantitatively similar preference for its own resource class, there is symmetric specialization (qA = qS > 0). When family FA has a strong preference for its own resource class A but both families have equal access to resources in S, then qA > 0 and qS = 0. When family FS has a strong preference for its own resource class S but both families have equal access to resources in A, then qS > 0 and qA = 0.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/65948/elife-65948-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** We carried out flux-balance analysis using a genome-scale metabolic model of E. coli to determine if different carbon sources are likely to exhibit large differences in oxygen demand (Materials and methods). On the y-axis, we plot the oxygen exchange flux/carbon flux for each of the 10 carbon sources used in this study.
 
 A generic property of these simulations is that the species-level community composition on mixtures of two limiting nutrients is reasonably well described by the additive null model (Pearson’s R = 0.7 and p<0.001; RMSE = 0.097; N = 2440) (Figure 4B; Materials and methods), which is consistent with previous consumer-resource modelling work (Marsland et al., 2020a). In addition, when we group species by the functional groups they belong to (i.e. family), the predictive ability of the additive null model improves (Pearson’s R = 0.99 and p<0.001; RMSE = 0.03; N = 414) (Figure 4B), a point that is consistent with our experimental findings (Figure 2—figure supplement 4). This family-level additivity holds when communities are randomly colonized by a different set of species (Figure 4—figure supplement 2), suggesting that family-level additivity is robust to species-level taxonomic variability. The predictive accuracy of our null model is, however, influenced by the level of resource specialization. The less specialized (i.e. more generalist) the families are, the lower the predictive power of the null additive model (Figure 4—figure supplement 3).
 
@@ -86,33 +154,148 @@ The wealth of independent mechanisms that may contribute to nutrient dominance i
 
 ## Materials and methods
 
-## Null model for relative abundance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Glucose</td>
+      <td>VWR</td>
+      <td>0188–500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Cellobiose</td>
+      <td>Sigma</td>
+      <td>22150–10G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Fructose</td>
+      <td>Acros Organics</td>
+      <td>161355000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Ribose</td>
+      <td>Acros Organics</td>
+      <td>AC132361000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol (80%, w/v)</td>
+      <td>Teknova</td>
+      <td>G8797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Succinate hexahydrate</td>
+      <td>Alfa Aesar</td>
+      <td>419A3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium hydrogen fumarate</td>
+      <td>Alfa Aesar</td>
+      <td>B24683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium benzoate</td>
+      <td>Alfa Aesar</td>
+      <td>A15946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine 200 mM (29.23 mg/mL)</td>
+      <td>Sigma</td>
+      <td>G7513-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Sigma</td>
+      <td>G7126-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Development Core Team, 2017. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td>R version 3.4.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DADA2</td>
+      <td>Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJA, Holmes SP. DADA2: High-resolution sample inference from Illumina amplicon data. Nat Methods. 2016;13: 581–583.</td>
+      <td></td>
+      <td>Version 1.6.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Community simulator</td>
+      <td>Marsland R, Cui W, Goldford J, Mehta P. The Community Simulator: A Python package for microbial ecology. PLoS One. 2020;15: e0230430.</td>
+      <td></td>
+      <td>Version 1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COBRApy</td>
+      <td>Ebrahim A, Lerman JA, Palsson BO, Hyduke DR. COBRApy: COnstraints-Based Reconstruction and Analysis for Python. BMC Syst Biol. 2013;7: 74.</td>
+      <td>RRID:SCR_012096</td>
+      <td>Version 0.17.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Null model for relative abundance
 
 Let us consider a simple scenario of two co-cultures of species A and B growing together in two separate demes, each containing a single nutrient (labeled 1 and 2). The fractions of A and B in nutrient/deme one are fA,1 = nA,1 /(nA,1 + nB,1) and fB,1 = nB,1/(nA,1 + nB,1), respectively, and similarly, the fractions of A and B in nutrient/deme two are fA,2 = nA,2/(nA,2 + nB,2) and fB,2 = nB,2 /(nA,2 + nB,2) (where n is the total number of cells of species A or B). If we consider the two-deme system as a whole (i.e. if we pool together the amount of species in each nutrient/deme), the fractions of A and B in the mixture are given by: fA,12 = (nA,1 + nA,2)/(nA,1 + nB,1 + nA,2 + nB,2) and fB,12 = (nB,1 + nB,2)/(nA,1 + nB,1 + nA,2 + nB,2).
 
 We can define nt,1 = nA,1 + nB,1 and nt,2 = nA,2 + nB,2 as the total number of cells in the nutrient demes 1 and 2, respectively. We can thus write fA,12 = (nA,1 + nA,2)/(nt,1 + nt,2). Defining w1 = nt,1/(nt,1 + nt,2) and w2 = nt,2/(nt,1 + nt,2), it is straightforward to show that: fA,12 = w1 fA,1 + w2 fA,2. By the same reasoning, we find that fB,12 = w1 fB,1 + w2 fB,2.
 
-## Sample collection
+### Sample collection
 
 Soil samples were collected from two different natural sites in West Haven (CT, USA), with sterilized equipment, and placed into sterile bottles. Once in the lab, 5 g of each soil sample were then transferred to 250 mL flasks and soaked into 50 mL of sterile 1× phosphate buffer saline supplemented with 200 μg/mL cycloheximide (Sigma, C7698) to inhibit eukaryotic growth. The soil suspension was well mixed and allowed to sit for 48 hr at room temperature. After 48 hr, samples of the supernatant solution containing the ‘source’ soil microbiome were used as inocula for the experiment or stored at −80°C with 40% glycerol.
 
-## Preparation of media plates
+### Preparation of media plates
 
 Carbon source (CS) stock solutions (Supplementary file 1a) were prepared at 0.7 C-mol/L (10×) and sterilized through 0.22 µm filters (Millipore). Carbon sources were aliquoted into 96 deep-well plates (VWR) as single CS or mixed in pairs at 1:1 (vol:vol) and stored at −20°C. The carbon sources were adjusted to equal C-molar concentrations because carbon is the main limiting factor. To keep the total amount of carbon constant across all treatments, pairs contained half the amount of each carbon source compared to their respective single CS. Synthetic minimal growth media was prepared from concentrated stocks of M9 salts, MgSO4, CaCl2, and 0.07 C-mol/L (final concentration) of single or pairs of CS. The final pH of all growth media is shown in Supplementary file 1a.
 
-## Community assembly experiment
+### Community assembly experiment
 
 Starting inocula were obtained directly from the ‘source’ soil microbiome solution by inoculating 40 μL into 500 μL culture media prepared as indicated above. For each sample and carbon source, 4 μL of the culture medium was dispensed into fresh media plates containing the different single or pairs of CS in quadruplicate. Bacterial cultures were allowed to grow for 48 hr at 30°C in static broth in 96 deep-well plates (VWR). After 48 hr, each culture was homogenized by pipetting up and down 10 times before transferring 4 μL into 500 μL of fresh media, and cells were allowed to grow again. Cultures were passaged 10 times (~70 generations). OD620 was measured after 48 hr growth. Samples were frozen at −80°C with 40% glycerol.
 
-## DNA extraction, library preparation, and sequencing
+### DNA extraction, library preparation, and sequencing
 
 Samples were centrifuged for 40 min at 3500 rpm, and the pellet was stored at −80°C until DNA extraction. DNA extraction was performed with the DNeasy 96 Blood and Tissue kit for animal tissues (QIAGEN), as described in the kit protocol, including the pre-treatment step for Gram-positive bacteria. DNA concentration was quantified using the Quan-iTPicoGreen dsDNA Assay kit (Molecular Probes, Inc), and the samples were normalized to 5 ng/µL before sequencing. The 16S rRNA gene amplicon library preparation and sequencing were performed by Microbiome Insights, Vancouver, Canada (https://microbiomeinsights.com/). For the library preparation, PCR was done with dual-barcoded primers (Kozich et al., 2013), targeting the 16S V4 region, and the PCR were cleaned up and normalized using the high-throughput SequalPrep 96-well Plate Kit. Samples were sequenced on the Illumina MiSeq using the 300 bp paired-end kit v3.chemistry.
 
-## Taxonomy assignment
+### Taxonomy assignment
 
 The taxonomy assignment was performed as described in previous work (Estrela et al., 2020). Following sequencing, the raw sequencing reads were processed, including demultiplexing and removing the barcodes, indexes, and primers, using QIIME (version1.9, [Caporaso et al., 2010]), generating fastq files with the forward and reverse reads. DADA2 (version 1.6.0) was then used to infer ESVs (Callahan et al., 2016)​. Briefly, the forward and reverse reads were trimmed at position 240 and 160, respectively, and then merged with a minimum overlap of 100 bp. All other parameters were set to the DADA2 default values. Chimeras were removed using the ‘consensus’ method in DADA2. The taxonomy of each ESV was then assigned using the naïve Bayesian classifier method​ (Wang et al., 2007) and the Silva reference database version (Quast et al., 2013) as described in DADA2. The analysis was performed on samples rarefied to 10,779 reads.
 
-## Quantification of total abundances, interactions, and dominance
+### Quantification of total abundances, interactions, and dominance
 
 We used OD620 after the 48 hr growth cycle as a proxy for total population size (community biomass) (Figure 2—figure supplement 5). The predicted relative abundance of species i in a mix of nutrients 1 and 2 was then calculated as fi,12(null) = w1 fi,1 + w2 fi,2 where fi,1 and fi,2 are the relative abundances of i in nutrients 1 and 2, respectively, and w1 = (OD6201/(OD6201 +OD6202)) and w2 = (OD6202/(OD6201 +OD6202)). In Figures 2 and 3D, Figure 2—figure supplements 3–4, fi,12(null) is calculated as the mean of the two single carbon source-replicate pairwise combinations (N = 16). Pearson’s R was calculated using the R function ‘cor.test’ from the ‘stats’ package, and the RMSE was calculated using the ‘rmse’ function from the ‘Metrics’ package.
 
@@ -120,37 +303,57 @@ To determine whether an interaction between nutrients exists (i.e. ε ≠ fi,12�
 
 Once an interaction has been identified (i.e. |ε| > 0), we can determine the type of interaction formed (Figure 3A). Synergy and antagonism (which are forms of super-dominance) occur when fi,12 > max(fi,1, fi,2) and fi,12 < min(fi,1, fi,2), respectively, while dominance occurs when min(fi,1, fi,2) <= fi,12 <= max(fi,1, fi,2) (Welch two sample t-test, p<0.05). When ε > 0, the nutrient with greater abundance dominates; when ε < 0, the nutrient with lower abundance dominates. For visualization purposes, we developed a dominance index (δ). The dominance index for the sugar–acid pairs is written as δi = −|ε12| when the sugar dominates and as δi = |ε12| when the acid dominates. The dominance index for the sugar–sugar and acid–acid pairs is written as δi = −|ε12| when the focal carbon source (glucose or succinate) dominates and as δi = |ε12| when the additional carbon source dominates.
 
-## Isolation of strains
+### Isolation of strains
 
 Several communities (transfer 10) from different inocula and carbon sources were plated on chromogenic agar (HiCrome Universal differential Medium, Sigma) and grown for 48 hr at 30°C. Single colonies exhibiting distinct morphologies and/or colours were picked, streaked a second time on fresh chromogenic agar plates for purity, and grown for 48 hr at 30°C. A single colony was then picked from each plate and grown into Tryptic Soy Broth (TSB) for 48 hr at 30°C. The single-strain cultures were stored with 40% glycerol at −80°C. The isolated strains were sent for full-length 16S rRNA Sanger sequencing (Genewiz), and their taxonomy was assigned using the online RDP naïve Bayesian rRNA classifier version 2.11.
 
-## Growth rate estimation
+### Growth rate estimation
 
 Twenty-two isolated strains belonging to the four dominant families, namely Enterobacteriaceae (7), Pseudomonadaceae (5), Moraxellaceae (6), and Rhizobiaceae (4) (Supplementary file 1b), were streaked from frozen stock on chromogenic agar plates and grown for 48 hr at 30°C. For each strain, a single colony was pre-cultured in 500 µL TSB in a deepwell plate for 24 hr at 30°C. Each strain was then acclimated into the 10 single carbon sources (glucose, fructose, cellobiose, ribose, glycerol, succinate, fumarate, benzoate, glutamine, and glycine). For this, 2 µL of the grown pre-culture was inoculated into 500 µL of fresh minimal media with each carbon source at a concentration of 0.07 C-mol/l and grown for 48 hr at 30°C. The growth curve assay was then performed in a 384-well plate by inoculating 1 µL of the grown isolate culture on 100 µL of fresh media of the same carbon source as for the acclimation step (three to four replicates each). OD620 was read every 10 min for ~40 hr at 30°C. The average growth rate of each strain in each carbon source was calculated as ravg = log2(Nf/Ni)/(tf−ti) where Nf is the OD at 16 hr (ie. tf) and Ni is the OD at 0.5 hr (i.e. ti).
 
-## Growth rate asymmetry calculation
+### Growth rate asymmetry calculation
 
 The growth rate asymmetry on sugars (qS) is calculated as qS = ravg(E, S) − ravg(O, S) where ravg(E, S) is the mean average growth rate of Enterobacteriaceae on the sugar S, and ravg(O, S) is the mean average growth rate of one of the other dominant families (i.e. Pseudomonadaceae, Moraxellaceae, or Rhizobiaceae) on S. The growth rate asymmetry on organic acids (qA) is calculated as qA = ravg(O, A) − ravg(E, A) where ravg(O, A) is the mean average growth rate of one of the other dominant families (i.e. Pseudomonadaceae, Moraxellaceae, or Rhizobiaceae) on the organic acid A, and ravg(E, A) is the mean average growth rate of Enterobacteriaceae on A.
 
-## Microbial consumer-resource model
+### Microbial consumer-resource model
 
-Microbial community assembly is modeled using the Microbial Consumer Resource Model (MiCRM), with simulations implemented using Community Simulator, a freely available Python package (Marsland et al., 2020b). This model has been outlined extensively in previous work and has been shown to qualitatively reproduce ecological patterns across both natural (Goldford et al., 2018) and laboratory (Marsland et al., 2020a) microbiomes. Here we describe the exact equations simulated and parameters used in this paper. A more general description of this model is given elsewhere (Marsland et al., 2019; Marsland et al., 2020b). Our MiCRM simulations model the abundance Ni of n species and the abundance Rα of M resources in a well-mixed chemostat-like ecosystem with continuous resource flow. We focus on continuous resource flow for simplicity and because previous work has shown that the major qualitative features of the MiCRM are unaffected by periodic resource supply (as was the case in our experiments) (Marsland et al., 2020a). Species interact by uptake and release of resources into their environment. The dynamics of the system are governed by the following set of ordinary differential equations:(1)dNidt=Ni[∑α(1−l)Rαciα−m](2)dRαdt=Rα0-Rατ-∑jNjRαciα+∑j,βNjDα,βRβcjβl
+Microbial community assembly is modeled using the Microbial Consumer Resource Model (MiCRM), with simulations implemented using Community Simulator, a freely available Python package (Marsland et al., 2020b). This model has been outlined extensively in previous work and has been shown to qualitatively reproduce ecological patterns across both natural (Goldford et al., 2018) and laboratory (Marsland et al., 2020a) microbiomes. Here we describe the exact equations simulated and parameters used in this paper. A more general description of this model is given elsewhere (Marsland et al., 2019; Marsland et al., 2020b). Our MiCRM simulations model the abundance Ni of n species and the abundance Rα of M resources in a well-mixed chemostat-like ecosystem with continuous resource flow. We focus on continuous resource flow for simplicity and because previous work has shown that the major qualitative features of the MiCRM are unaffected by periodic resource supply (as was the case in our experiments) (Marsland et al., 2020a). Species interact by uptake and release of resources into their environment. The dynamics of the system are governed by the following set of ordinary differential equations:
 
-Here ciα is the uptake rate of resource α by species i, m is the minimal energy requirement for maintenance of species i, τ is the timescale for supply of external resources, Rα0 is the abundance of resource α supplied (i.e. the abundance in the media), l is the fraction of resource secreted as by-product, and Dα,β is the fraction of resource α secreted as by-product β. In line with previous work, the following parameters are kept constant for all simulations τ = 1, m = 1, and l = 0.5 (Goldford et al., 2018; Marsland et al., 2020a).
+$$
+\frac{dN_{i}}{dt}=N_{i}[\sum\alpha(1−l)R_{\alpha}c_{i\alpha}−m]
+$$
+
+
+
+$$
+\frac{dR_{\alpha}}{dt}=\frac{R_{\alpha}^{0}-R_{\alpha}^{}}{\tau}-\sumjN_{j}R_{\alpha}c_{i\alpha}+\sumj,\betaN_{j}D_{\alpha,\beta}R_{\beta}c_{j\beta}l
+$$
+
+Here ciα is the uptake rate of resource α by species i, m is the minimal energy requirement for maintenance of species i, τ is the timescale for supply of external resources, $R_{\alpha}^{0}$ is the abundance of resource α supplied (i.e. the abundance in the media), l is the fraction of resource secreted as by-product, and Dα,β is the fraction of resource α secreted as by-product β. In line with previous work, the following parameters are kept constant for all simulations τ = 1, m = 1, and l = 0.5 (Goldford et al., 2018; Marsland et al., 2020a).
 
 In the MiCRM, by-product production is encoded in the metabolic matrix D where each element Dα,β specifies the fraction of resource α secreted as by-product β. As in previous work, each column β in Dα,β is sampled from a Dirichlet distribution with concentration parameter dα,β=1/(sM) where s = 0.3 is a parameter that tunes the sparsity of the underlying metabolic network. The Dirichlet distribution ensures that each column sums to one so that the total secretion flux does not exceed the input flux. For simplicity we used a fixed concentration parameter and so are not assuming any underlying metabolic structure. The MiCRM also assumes that all species have the same D matrix, that is when growing on the same resource each species releases the same metabolic by-products.
 
-In our simulations, species differ solely in the uptake rate for different resources ciα where i is the species and α is the resource. Taxonomic specialization is introduced in the form of two families FA and FS that each have a preference for one of two resource classes A and S, respectively. Each ciα is sampled from a gamma distribution (to ensure positivity) whose mean <ciα> and variance var(ciα) depends on the family of i and the resource class of α. This means that all species are capable of metabolizing all resources. Specifically⟨ciα⟩={μcM(1+qA) if i∈FA and α∈AμcM(1−qA) if i∈FS and α∈AμcM(1+qS) if i∈FS and α∈SμcM(1−qS) if i∈FA and α∈Sandvar(ciα)={σc2M(1+qA) if i∈FA and α∈Aσc2M(1−qA) if i∈FS and α∈Aσc2M(1+qS) if i∈FS and α∈Sσc2M(1−qS) if i∈FA and α∈S
+In our simulations, species differ solely in the uptake rate for different resources ciα where i is the species and α is the resource. Taxonomic specialization is introduced in the form of two families FA and FS that each have a preference for one of two resource classes A and S, respectively. Each ciα is sampled from a gamma distribution (to ensure positivity) whose mean <ciα> and variance var(ciα) depends on the family of i and the resource class of α. This means that all species are capable of metabolizing all resources. Specifically
 
-μc = 10 determines the overall mean uptake rate and σc2 = 3 determines overall variance in uptake rate (these parameters are the default value in the Community Simulator package). Parameters qA and qS tune the relative advantage each specialist family has on its preferred resource. When qA = 1, only FA consumes resources in A whereas when qA = 0 both families have equal access to resources in A. Conversely, when qS = 1, only FS consumes resources in S whereas when qS = 0 both families have equal access to resources in S.
+$$
+⟨c_{i\alpha}⟩={\frac{\mu_{c}}{M}(1+q_{A}) if i\inF_{A} and \alpha\inA\frac{\mu_{c}}{M}(1−q_{A}) if i\inF_{S} and \alpha\inA\frac{\mu_{c}}{M}(1+q_{S}) if i\inF_{S} and \alpha\inS\frac{\mu_{c}}{M}(1−q_{S}) if i\inF_{A} and \alpha\inS
+$$
 
-For each simulation we consider 200 species (100 per family). Each community in one simulation is seeded with all 200 species. This means that there is no stochasticity in colonization (though see Figure 4—figure supplement 2 where this assumption is relaxed). We choose 200 species as this is within the range of the number of ESVs in a typical inoculum for our experiments (110–1290 ESVs, reported in Goldford et al., 2018). The initial abundances are all set to 1 for simplicity. In line with our experiments, either one or two resources are supplied in the media and the rest are generated as metabolic by-products. For simulations with a single supplied resource, Rα0  = 1000 if α is the supplied resource and 0 otherwise. For simulations with two supplied resources, Rα0  = 500 for each supplied resource and 0 otherwise. This ensures that the total amount of resources is kept constant as in our experiments. In total, we consider 20 resources in each simulation (with 10 resources in each resource class [A or S]) as this gives us communities with 7 ± 2 species (mean ± SD) at equilibrium, which is comparable to the diversity of our experimental communities.
+and
 
-In line with our experiments, each simulation consisted of three types of mixed-resource environments (one with two supplied resources in class RA, one with two supplied resources in class RS and one with one resource in class RA and one resource in class RS). We also included all four single resource environments needed to predict the mixes (i.e. two with the resources in class RA and two with the resources in class RS). Therefore, each simulation consisted of seven communities each in a different environment and all seeded with the same initial set of 200 species. The equilibrium for all seven communities was found using the SteadyState function in Community Simulator (Marsland et al., 2020b). Failed runs where the SteadyState function returned an error were removed from our analysis. In addition, for each simulation we tested that the SteadyState algorithm had truly converged to an equilibrium using the same approach as in Marsland et al., 2020a and removed all non-convergent runs (defined as a run for which |dln(Ni/dt)|>10−5). Including these runs would not have qualitatively changed our results.
+$$
+var(c_{i\alpha})={\frac{\sigma_{c}^{2}}{M}(1+q_{A}) if i\inF_{A} and \alpha\inA\frac{\sigma_{c}^{2}}{M}(1−q_{A}) if i\inF_{S} and \alpha\inA\frac{\sigma_{c}^{2}}{M}(1+q_{S}) if i\inF_{S} and \alpha\inS\frac{\sigma_{c}^{2}}{M}(1−q_{S}) if i\inF_{A} and \alpha\inS
+$$
+
+μc = 10 determines the overall mean uptake rate and $\sigma_{c}^{2}$ = 3 determines overall variance in uptake rate (these parameters are the default value in the Community Simulator package). Parameters qA and qS tune the relative advantage each specialist family has on its preferred resource. When qA = 1, only FA consumes resources in A whereas when qA = 0 both families have equal access to resources in A. Conversely, when qS = 1, only FS consumes resources in S whereas when qS = 0 both families have equal access to resources in S.
+
+For each simulation we consider 200 species (100 per family). Each community in one simulation is seeded with all 200 species. This means that there is no stochasticity in colonization (though see Figure 4—figure supplement 2 where this assumption is relaxed). We choose 200 species as this is within the range of the number of ESVs in a typical inoculum for our experiments (110–1290 ESVs, reported in Goldford et al., 2018). The initial abundances are all set to 1 for simplicity. In line with our experiments, either one or two resources are supplied in the media and the rest are generated as metabolic by-products. For simulations with a single supplied resource, $R_{\alpha}^{0}$ = 1000 if α is the supplied resource and 0 otherwise. For simulations with two supplied resources, $R_{\alpha}^{0}$ = 500 for each supplied resource and 0 otherwise. This ensures that the total amount of resources is kept constant as in our experiments. In total, we consider 20 resources in each simulation (with 10 resources in each resource class [A or S]) as this gives us communities with 7 ± 2 species (mean ± SD) at equilibrium, which is comparable to the diversity of our experimental communities.
+
+In line with our experiments, each simulation consisted of three types of mixed-resource environments (one with two supplied resources in class RA, one with two supplied resources in class RS and one with one resource in class RA and one resource in class RS). We also included all four single resource environments needed to predict the mixes (i.e. two with the resources in class RA and two with the resources in class RS). Therefore, each simulation consisted of seven communities each in a different environment and all seeded with the same initial set of 200 species. The equilibrium for all seven communities was found using the SteadyState function in Community Simulator (Marsland et al., 2020b). Failed runs where the SteadyState function returned an error were removed from our analysis. In addition, for each simulation we tested that the SteadyState algorithm had truly converged to an equilibrium using the same approach as in Marsland et al., 2020a and removed all non-convergent runs (defined as a run for which $|dln(N_{i}/dt)|>10^{−5}$). Including these runs would not have qualitatively changed our results.
 
 In the raw numerical output of the run, all species have non-zero abundances due to limits in numerical precision. A species was considered extinct if its abundance was less than 10−6, which was set by looking at a histogram of the raw output of our simulations. Once the extinct species were removed, we predicted the relative abundance of each species i in the mixture of nutrients using the same approach that had been used for the experimental data. To obtain a statistically robust sample size, we repeated this procedure for 100 replicate simulations, resampling all randomly generated parameters in each simulation (i.e. resampling all ciα and Dα,β as described above).
 
-## Flux balance analysis
+### Flux balance analysis
 
 We use FBA to estimate whether the different carbon sources were likely to result in large differences in oxygen demand. FBA is a widely used constraint-based modelling approach that allows us to predict metabolic fluxes through a stoichiometric metabolic network (assuming optimal growth and that cells are in a steady state) (Orth et al., 2010). For this analysis, we used a modified version of iJO1366 (see below), a high-quality genome scale-metabolic network of E. coli (Orth et al., 2011). FBA simulations were performed using the COBRApy Package (Ebrahim et al., 2013). We simulated the growth of E. coli on minimal synthetic media in aerobic conditions containing one of the 10 carbon sources used in our experiments (Figure 2A). These simulations were used to estimate the number of O2 molecules that would be consumed per carbon atom when growing on each of the 10 carbon sources (Figure 4—figure supplement 5). Except for benzoate, we found that all of the carbon sources exhibited similar predicted oxygen demands (0.25–0.34 O2/C). This does not rule out the possibility that the kinetics of growth and O2 uptake may contribute to increased O2 depletion in one carbon source compared to another, nor that the different taxa selected for by the different carbon sources might display differences in O2 uptake. Nonetheless, they do suggest that differences in oxygen stoichiometry are unlikely to be the main mechanism for dominance across all carbon sources.
 

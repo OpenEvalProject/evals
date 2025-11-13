@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.35774.001 Glutamate receptors are divided in two unrelated families: ionotropic (iGluR), driving synaptic transmission, and metabotropic (mGluR), which modulate synaptic strength. The present classification of GluRs is based on vertebrate proteins and has remained unchanged for over two decades. Here we report an exhaustive phylogenetic study of GluRs in metazoans. Importantly, we demonstrate that GluRs have followed different evolutionary histories in separated animal lineages. Our analysis reveals that the present organization of iGluRs into six classes does not capture the full complexity of their evolution. Instead, we propose an organization into four subfamilies and ten classes, four of which have never been previously described. Furthermore, we report a sister class to mGluR classes I-III, class IV. We show that many unreported proteins are expressed in the nervous system, and that new Epsilon receptors form functional ligand-gated ion channels. We propose an updated classification of glutamate receptors that includes our findings.
+Glutamate receptors are divided in two unrelated families: ionotropic (iGluR), driving synaptic transmission, and metabotropic (mGluR), which modulate synaptic strength. The present classification of GluRs is based on vertebrate proteins and has remained unchanged for over two decades. Here we report an exhaustive phylogenetic study of GluRs in metazoans. Importantly, we demonstrate that GluRs have followed different evolutionary histories in separated animal lineages. Our analysis reveals that the present organization of iGluRs into six classes does not capture the full complexity of their evolution. Instead, we propose an organization into four subfamilies and ten classes, four of which have never been previously described. Furthermore, we report a sister class to mGluR classes I-III, class IV. We show that many unreported proteins are expressed in the nervous system, and that new Epsilon receptors form functional ligand-gated ion channels. We propose an updated classification of glutamate receptors that includes our findings.
 
 ## Introduction
 
@@ -41,9 +41,33 @@ While the phylogeny of the two families of GluRs is well characterized in verteb
 
 ## Results
 
-## Phylogenetics of metazoan ionotropic glutamate receptors reveals four subfamilies, unreported classes and lineage-specific evolutionary dynamics
+### Phylogenetics of metazoan ionotropic glutamate receptors reveals four subfamilies, unreported classes and lineage-specific evolutionary dynamics
 
 We have performed a systematic phylogenetic study of iGluR evolution across the animal kingdom. To increase the confidence on iGluRs evolutionary history phylogenetic trees have been generated using two independent methods (Bayesian inference and Maximum-likelihood (ML), Figure 1 and Figure 1—figure supplement 1). Our analysis indicates that the family of iGluRs experienced key duplication events that define its present organization into four previously unreported subfamilies, of which two contain the extensively studied vertebrate classes. Assuming ctenophores as the sister group to all other animals (Moroz et al., 2014; Ryan et al., 2013), our data suggest that the three major duplication events leading to this four subfamilies occurred before the divergence of current animal phyla (see Figure 2 for a summary scheme of iGluRs evolution). The first of these duplications produced the separation of the Lambda subfamily, the second lead to divergence of the NMDA subfamily and the third to the split between Epsilon and AKDF subfamilies.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-v2.jpg)
+
+**Figure 1.:** Ionotropic glutamate receptor subfamilies are indicated in colored boxes at the right. Sequences belonging to the same class are highlighted together by dashed lines and the class name is also shown. Green circles highlight the three duplications occurred before the divergence of the ctenophore lineage that lead to these four subfamilies. Posterior probabilities are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. For unreported phylogenetic groups, names of proteins predicted to bind glycine or glutamate are highlighted in yellow or orange, respectively. Protein names from non-vertebrate species are composed of four parts: (i) ‘GluR#’, where # is a code denoting class or subfamily (A, AMPA; K, Kainate; F, Phi; D, Delta; Akdf, AKDF; E, Epsilon; N, NMDA and L, Lambda); (ii) a number, or range of numbers, denoting orthologous vertebrate protein(s), if any; (iii) a Greek letter to identify non-vertebrate paralogs, if any and (iv) a three-letter species code. iGluRs from A. thaliana were used as an outgroup. All information on species and proteins used is given in Figure 1—source data 2. Phylogenetic reconstruction was performed using Bayesian inference. The amino acid substitution model used was Vt + G + F, number of generations: 14269000, final standard deviation: 0.007016 and potential scale reduction factor (PSRF): 1.000. Scale bar denotes number of amino acid substitutions per site. Although the GluAkdf2_Tad protein localizes to the Delta class in this tree, we do not consider this molecule as a confident member of this class. This is because the statistical support provided by the Bayesian analysis is low and because the Maximum-likelihood analysis (see Figure 1—figure supplement 1) does not position this protein in the Delta branch.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ionotropic glutamate receptor subfamilies are indicated in colored boxes at the right. Sequences belonging to the same class are grouped together by dashed lines and the class name is also shown. Green circles highlight the three duplications occurred before the divergence of the ctenophore lineage that lead to these four subfamilies. Bootstrap values are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. For unreported phylogenetic groups, names of proteins predicted to bind glycine or glutamate are highlighted in yellow or orange, respectively. Protein names from non-vertebrate species are composed of four parts: (i) ‘GluR#’, where # is a code denoting class or subfamily (A, AMPA; K, Kainate; F, Phi; D, Delta; Akdf; AKDF; E, Epsilon; N, NMDA and L, Lambda); (ii) a number, or range of numbers, denoting orthologous vertebrate protein(s), if any; (iii) a Greek letter to identify non-vertebrate paralogs, if any and (iv) a three-letter species code. iGluRs from A. thaliana were used as an outgroup. All information on species and proteins used in this phylogeny is given in Figure 1—source data 2. Phylogenetic reconstruction was performed using Maximum-likelihood inference. The amino acid substitution model used was Vt + G + F. Branch support was obtained after 1000 iterations of ultrafast bootstrapping (Hoang et al., 2018). Scale bar denotes number of amino acid substitutions per site.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The alignment includes protein sequences from members of unreported phylogenetic groups, with the exception of Epsilon sequences from ctenophores, which have been described previously (Alberstein et al., 2015). It also includes representative sequences of AMPA, Kainate, Delta and NMDA1-3 classes. Phylogenetic subfamily or class name is indicated in the left. Unclassified non-bilateral proteins from porifers, placozoans and cnidarians from the AKDF subfamily are labeled as AKDF*. iGluR residues are shadowed as follows: red for acid residues and light blue and basic ones. The highly conserved ‘SYTANLAAF’ motif (at M3) and the M4 residues involved in tetramerization are highlighted by a black frame. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Residue numbers shown on top indicate the start and finish of each transmembrane helix. Protein numbering corresponds to mature rat GluA2 sequence. Figure was prepared with Jalview v2.10.4b1 (Waterhouse et al., 2009).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Three-dimensional model of the full-length GluE1 from B. lanceolatum. Secondary structure elements are shown with rainbow color-coding from N- to C-terminus (β-strands, arrows; α-helices, coils). The major amino-terminal, ligand-binding and transmembrane domains (ATD, LBD and TMD, respectively) are indicated. (b, c) Stereo plots of ligand-binding pockets (LBP) in Epsilon family members from amphioxus. Close-ups of the ligand binding site in (b) GluE1 from B. lanceolatum and (c) GluE7 from B. belcheri. Residues are shown as sticks, color-coded (carbon, magenta or orange, respectively; oxygen, red; and nitrogen, blue). (b) Bound glycine is color coded with carbon atoms in white; its Van-der-Waals shell is represented by a dotted surface. Hydrogen bonds between bound glycine and Arg485 are indicated as white dotted lines. For simplicity, only a few residues have been labeled. Note that glycine is perfectly accommodated inside the GluE1 LBP. This is restricted by the side chains of Pro655 and Trp704 (these side chains would collide with a bound glutamate, explaining the preference for the less bulky glycine), but also by that of a serine at position 653. (c) A putatively bound glutamic acid has been modeled in the LBP of GluE7. This is shown by a dotted surface representing its Van-der-Waals shell and solid spheres for its carbon, nitrogen and oxygen atoms. Note that GluE7 presents a bulky tyrosine at position 653 instead of the serine found in GluE1. The side chain from Tyr653 would essentially occupy the ligand-binding pocket of GluE7, leaving no space for any ligand. These structural features are fully in line with the results of electrophysiological experiments.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The alignment includes all protein sequences from unreported phylogenetic groups and representative sequences of AMPA, Kainate, Delta and NMDA receptor subunits. Unclassified non-bilateral proteins from porifers, placozoans and cnidarians from the AKDF subfamily are labeled as AKDF*. iGluR residues are shadowed as follows: yellow for cysteines and red and light blue for acid and basic residues, respectively. The characteristic insertion in the M1-M2 intracellular loop presented by Epsilon subunits is highlighted by a black frame. The Q/R (Q586) and the Q/R +4 sites, involved in calcium permeability and polyamines block of some AMPA and Kainate receptors, are indicated by a black frame. Protein numbering corresponds to mature rat GluA2 sequence. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Figure was prepared with Jalview v2.10.4b1 (Waterhouse et al., 2009).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Protein sequences shown belong to unreported phylogenetic groups (with the exception of Epsilons from ctenophores, which have been described previously [Alberstein et al., 2015]). Representative sequences for AMPA, Kainate, Delta and NMDA classes are also shown. Unclassified non-bilateral proteins from porifers, placozoans and cnidarians from the AKDF subfamily are labeled as AKDF*. Residue numbering is shown on top and corresponds to mature rat GluA2 sequence. Residues involved in agonist binding are highlighted by a black frame. Of these, residue 450 is involved in Van-der-Waals interactions with the α-carbon, residues 485 and 654 engage in electrostatic interactions with the α-carboxyl group, residues 478, 480 and 705 form interactions with the α-amino group and residues 653, 655 and 704 contact the amino acid side chain. iGluR residues are shadowed as follows: red for acid residues and light blue for basic ones. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Agonist selectivity is indicated at the right. Overall prediction is based on sequence similarity with vertebrate proteins, but in particular considers the following sequences: (Fonnum, 1984) similarity with the M. leidyi GluE13_Mle sequence (gene reference ML05909A), (Danbolt, 2001) similarity with H. sapiens GluN3A sequence, (Pascual-Anaya and D'Aniello, 2006) similarity with H. sapiens GluN1 sequence (Sobolevsky et al., 2009) similarity with AMPA receptor subunits sequence and (Conn and Pin, 1997) similarity with M. leidyi GluE7_Mle (gene reference ML032222a). Protein sequences with changes predicted to abolish binding to the α-amino (No α-NH2) or α-carboxyl (No α-COOH) group are also indicated. For some sequences a reliable prediction cannot be made, these are labeled as ‘Unknown’. Figure was prepared with Jalview v2.10.4b1 (Waterhouse et al., 2009).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig2-v2.jpg)
 
@@ -57,7 +81,15 @@ In bilaterians the AKDF subfamily diversified into the known AMPA, Kainate and
 
 Another example of a multiple lineage-specific event that occurred during animal evolution of iGluRs can be observed in the evolution of AMPA and Kainate proteins among protostomes. The general iGluRs phylogeny (Figure 1) suggests that ecdysozoan species have expanded their repertoire of Kainate subunits when compared with lophotrochozoans (e.g. mollusks, annelids), since C. teleta and L. gigantea only presents one and two genes coding for Kainate receptors, respectively. Contrarily, we found more AMPA subunits in lophotrochozoans than in ecdysozoan species. To investigate whether the two protostome lineages have alternatively expanded genes coding for AMPA or Kainate subunits we conducted a phylogenetic analysis of these two classes using eight species of ecdysozoans and seven of lophotrochozoans with well-characterized genomes (Figure 3 and Figure 3—figure supplement 1). Nematodes were left out of the analysis as they lack Kainate receptors (Brockie et al., 2001). This analysis retrieved 40 lophotrochozoan genes coding for AMPA subunits but only 15 coding for Kainates. The opposite scenario was observed in the genomes of ecdysozoan species, with 10 AMAP and 40 Kainate proteins,. Yet, among ecdysozoans the priapulid P. caudatus has two AMPA and two Kainate subunits, indicating that the expansion of Kainate receptors might be exclusive to arthropods. Overall the AMPA:Kainate ratio resulted to be around 1:4 in ecdysozoans and 4:1 in lophotrochozoans.
 
-## Sequence conservation and ligand specificity of unreported iGluR phylogenetic groups
+![Figure 3.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig3-v2.jpg)
+
+**Figure 3.:** Ionotropic glutamate receptors classes are indicated at the right. Posterior probabilities are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. Protein names from non-vertebrate species are composed of four parts: (i) ‘GluR#’, where # is a one letter code denoting class (A for AMPA and K for Kainate); (ii) a number, or range of numbers, denoting orthologous vertebrate protein(s), if any; (iii) a Greek letter to identify non-vertebrate paralogues, if any and (iv) a three-letter species code. GluN1s from chordates were used as an outgroup. All information on species and proteins used in this phylogeny is given in Figure 3—source data 2. Phylogenetic reconstruction was performed using Bayesian inference. The amino acid substitution model used was Vt + I + G, number of generations: 8868000, final standard deviation: 0.0072 and potential scale reduction factor (PSRF): 1.001. Scale bar denotes number of amino acid substitutions per site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Ionotropic glutamate receptors classes are indicated at the right. Bootstrap values are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. Protein names from non-vertebrate species are composed of four parts: (i) ‘GluR#’, where # is a one letter code denoting class (A for AMPA and K for Kainate); (ii) a number, or range of numbers, denoting orthologous vertebrate proteins(s), if any; (iii) a Greek letter to identify non-vertebrate paralogues, if any and (iv) a three-letter species code. GluN1s from chordates were used as outgroup. All information on species and proteins used in this phylogeny is given in Figure 3—source data 2. Phylogenetic reconstruction was performed using Maximum-likelihood inference. Amino acid substitution model: Vt + I + G. Branch support was obtained after 1000 iterations of ultrafast bootstrapping (Hoang et al., 2018). Scale bar denotes number of amino acid substitutions per site.
+
+### Sequence conservation and ligand specificity of unreported iGluR phylogenetic groups
 
 All proteins from unreported groups (i.e. subfamilies and classes) present well-conserved sequences in iGluR domains, including transmembrane domains or residues involved in receptor tetramerization (Figure 1—figure supplement 2 and Figure 1—source data 1). Three-dimensional (3D) models of two Epsilon subunits from amphioxus (GluE1 and GluE7) indicate that their general fold is well preserved (Figure 1—figure supplement 3a). The only noticeable distinction in proteins from these groups is an insertion in the intracellular loop between the first and second transmembrane domains in Epsilon proteins. This insertion is particularly distinct in ctenophore iGluRs, having been termed as the cysteine-rich loop (Alberstein et al., 2015) (Figure 1—figure supplement 4). We have also identified a sequence difference among Epsilon proteins. Ctenophore iGluRs have two cysteines that form a disulfide bond at loop 1 of the ligand binding domain (Alberstein et al., 2015), which are also present in NMDA proteins. Nevertheless, this element is absent from the remaining members of the Epsilon subfamily.
 
@@ -71,13 +103,25 @@ Interestingly, all unreported groups comprise glycine- and glutamate-specific iG
 
 Interestingly, the 22 proteins for which we could not confidently predict their ligand selectivity (Figure 1—figure supplement 5), present a limited number of residues occupying position 653 and 655, suggesting constrained evolution. Of these: (i) nine present residues with negative polarity at both positions, being candidates to bind glutamate, (ii) six present a Gly653 and a non-polar residue at position 655, and thus are candidates to bind glycine, (iii) five proteins, all from the Branchiostoma genus, present a tyrosine at position 653. A structural model of one of these receptors, GluE7 (Figure 1—figure supplement 3c), shows that a Tyr653 aromatic side chain would occupy the ligand-binding pocket, strongly suggesting that amino acid binding would be blocked. Finally, (iv) two proteins present a phenylalanine in either of the two positions and remain unclassified.
 
-## Epsilon and Phi iGluR proteins are highly expressed in the nervous system and traffic to the plasma membrane
+### Epsilon and Phi iGluR proteins are highly expressed in the nervous system and traffic to the plasma membrane
 
 We used quantitative PCR (qPCR) to investigate gene expression levels of all iGluR subunits identified in B. lanceolatum, including those from the Epsilon and Phi groups. All 24 B. lanceolatum iGluR subunits identified in silico were found expressed in amphioxus, with the exception of Grie5 (Figure 4a). Furthermore, they all showed a significantly higher expression in the nerve cord as compared to the whole body, suggesting tissue-enriched expression. While we observed low expression levels for Epsilon genes coding for subunits with a tyrosine at position 653 (Grie5-8), which according to the 3D model would block the ligand-binding pocket, the expression of Grif1-2, also presenting the same tyrosine, reach much higher levels, comparable to those of subunits from the Kainate, Delta or NMDA classes. Thus, the presence of a tyrosine at position 653 does not appear to be directly correlated with low expression levels.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig4-v2.jpg)
+
+**Figure 4.:** (a) iGluRs mRNA expression (mean and standard deviation) in Branchiostoma lanceolatum. Bars show average relative expression of B. lanceolatum (amphioxus) iGluR genes as determined by qPCR. Filled bars represent whole body and open bars nerve cord expression levels. Note that all genes show significantly enriched expression in the nerve chord relative to the whole body, with the exception of Grie5 (Student’s t-test, n = 3). Expression level in the nerve chord is compared across genes of the same class. Statistics: pair comparisons were done by Student’s t-test, n = 3, multiple comparisons were done by one-way ANOVA followed by Tukey’s Post-Hoc test, n = 3. Significance levels: ***p < 0.001, **p < 0.01 and *p < 0.05; ns, not significant. (i) AMPA class. (ii) Kainate class. (iii) Phi class. (iv) Delta class. (v) Epsilon subfamily. (vi) NMDA classes. (b) Multiple sequence alignment of iGluRs transmembrane region M4 containing residues involved in tetramerization, these are indicated by a black frame. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Sequences included are GluE1 and GluE7 from amphioxus and representatives of human iGluRs. (c) Immunoblot of chimeric GluE1 and GluE7, containing the signal peptide from rat GluA2, expressed in HEK293T cells. Proteins were detected using the immuno-tags (c-Myc and HA, respectively) located after the rat signal peptide. Protein extracts from non-transfected cells were loaded as negative controls. (d) Immunofluorescence of HEK293T cells expressing rat GluA2 (top), cMyc-tagged GluE1 (middle) or HA-tagged GluE7 (bottom). Both non-permeabilized and permeabilized conditions are shown. (e) Immunoblot of tetrameric rat GluA2, GluE1 and GluE7 expressed in HEK293T cells. Amphioxus proteins were detected using the immuno-tags (c-Myc and HA, respectively) located at the N-terminus of each sequence. Protein extracts from non-transfected cells were loaded as negative controls.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Immunofluorescence of non-permeabilized HEK293T cells transfected with an empty pIRES vector, which expresses EGFP (top), or a pIRES vector with the sequence from cMyc-tagged GluE1 (middle) or HA-tagged GluE7 (bottom). Left images show EGFP signal and right images show fluorescence corresponding to cMyc and HA. The lack of cMyc and Ha signal in non-permeabilized cells indicates that the protein is not trafficked to the plasma membrane. (b) Immunofluorescence of permeabilized HEK293T cells transfected with an empty pIRES vector, which expresses EGFP (top), or a pIRES vector with the sequence from cMyc-tagged GluE1 (middle) or HA-tagged GluE7 (bottom). Left images show EGFP signal and right images show fluorescence corresponding to cMyc and HA. (c) Immunoblot of a total extract of HEK293T cells expressing the wild-type form (without the signal peptide from rat GluA2) of the GluE1 protein during 48 hr. Extracts from transfected cells with an empty vector are used as negative controls. (d) Immunoblot of a total extract of HEK293T cells expressing during 48 hr the wild-type form of the GluE7 protein (without the signal peptide from rat GluA2). Extracts from transfected cells with an empty vector are used as negative control. (e) Above, N-terminal wild-type protein sequence of GluE1 from B. lanceolatum. Red shading indicates the sequence replaced by the rat GluA2 signal peptide and the c-Myc-tag. Below, modified sequence used for gene synthesis. The new sequence included the rat GluA2 signal peptide (in green) and the c-Myc-tag (in blue). A four residues spacer was inserted between them. (f) Above, N-terminal wild-type protein sequence of GluE7 from B. belcheri. Red shading indicates the sequence replaced by the rat GluA2 signal peptide and HA-tag. Below, modified sequence used for gene synthesis. The new sequence included the rat GluA2 signal peptide (in green) and the hemagglutinin tag (in yellow). A four residues spacer was inserted between them.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Primer sequences are included.
+
 Amphioxus genes coding for GluE1 and GluE7 were synthesized in vitro and transiently expressed in HEK293T cells for functional studies. Wild-type GluE1 and GluE7, which are not predicted to have a canonical signal peptide by SignalP 4.1 (Nielsen, 2017), expressed well but were not trafficked to the plasma membrane (Figure 4—figure supplement 1a–d), even though residues involved in tetramerization (Salussolia et al., 2013) are well conserved (Figure 4b). We thus synthesized new variants of these genes with the signal peptide from rat GluA2 (Figure 1—figure supplement 1cd). These constructs also expressed well (Figure 4c) and now were efficiently trafficked to the plasma membrane, as indicated by the staining observed in non-permeabilized cells (Figure 4d). Furthermore, analysis of receptor oligomerization, performed using non-denaturing gel electrophoresis and immunoblot, clearly indicates that both proteins form homotetramers in vitro (Figure 4e).
 
-## Ligand specificity and electrophysiological properties of Epsilon proteins from amphioxus
+### Ligand specificity and electrophysiological properties of Epsilon proteins from amphioxus
 
 We next investigated the gating properties of two Epsilon proteins from amphioxus, GluE1 and GluE7. The presence of a serine and a tryptophan at positions 653 and 704, respectively, suggested that GluE1 would bind glycine. Indeed, neither glutamate nor aspartate elicited a response in our experimental settings. Instead, glycine application was able to elicit an inward whole-cell current at a membrane potential of −60 mV (Figure 5a). Interestingly, the chemically related amino acids alanine and D-serine only generated very low responses, indicating a high selectivity of the GluE1 homotetramer for glycine.
 
@@ -89,9 +133,29 @@ The Epsilon receptor displayed a strong inward rectification, even in the absenc
 
 Finally, functional studies on receptors formed by GluE7 did not retrieve any positive results. None of the following amino acids: glutamate, aspartate, asparagine, glycine, alanine or D-serine elicited a response in our experimental system. We hypothesize that, as predicted by the 3D model, the presence of a tyrosine at position 653 renders a homomeric form of this receptor unable to function as an amino acid-gated ion channel.
 
-## Phylogenetics of metazoan metabotropic glutamate receptors reveals a sister group of classes I to III
+### Phylogenetics of metazoan metabotropic glutamate receptors reveals a sister group of classes I to III
 
 We next performed a phylogenetic study of metabotropic glutamate receptors (Figure 6 and Figure 6—figure supplement 1). This analysis has revealed that the three historical mGluR classes (I to III) have a sister group. Following the current nomenclature we have named this as class IV. The existence of this class had already been proposed on the bases of three insect proteins (Mitri et al., 2004). Yet, here we show that this class is actually present in all bilateral phyla, excluding vertebrates. Furthermore, we also show that class IV appeared together with classes I-III before radiation of bilateral lineages. We have identified clear orthologues to class I-IV in porifers, placozoans and cnidarians but not in ctenophores. These are organized into four classes, two from cnidarians, and one from placozoans and porifers (Figure 6). We have also identified non-bilaterian mGluRs that fall outside the above-mentioned classes. Unfortunately, the Bayesian and ML phylogenies do not agree on the exact organization of these early divergent mGluRs, except for the fact that they diverge prior to bilaterian classes. For this reason we have left these sequences unclassified. Whether these sequences belong to one, or even multiple classes that would have been lost in bilateral organisms is something that will require further investigation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig6-v2.jpg)
+
+**Figure 6.:** Identified metabotropic glutamate receptor classes from bilateral and non-bilateral organisms are indicated by colored boxes at the right. Dashed boxes further highlight individual classes from bilateral organism. Posterior probabilities are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. Protein names from non-vertebrate species are composed of four parts: (i) ‘mGluR’, followed by a number, or range of numbers, denoting orthologous vertebrate protein(s), if any (for Class IV and group I-II-III-IV proteins, the name is followed by the name of the class/group); (ii) a Greek letter to identify non-vertebrate paralogs, if any and (iv) a three-letter species code. GABA-B receptors from vertebrates were used as an outgroup. All information on species and proteins used in this phylogeny is given in Figure 6—source data 2. Phylogenetic reconstruction was performed using Bayesian inference. The amino acid substitution model used was WAG + I + G + F, number of generations: 5327000, final standard deviation: 0.004788 and potential scale reduction factor (PSRF): 1.001. Scale bar denotes number of amino acid substitutions per site.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Identified metabotropic glutamate receptor classes from bilateral and non-bilateral organisms are indicated by colored boxes at the right. Dashed boxes further highlight individual classes from bilateral organism. Bootstrap values are shown at tree nodes and protein names at the end of each branch. Tree branches are colored based on phylum, as indicated in the legend. Protein names from non-vertebrate species are composed of four parts: (i) ‘mGluR’, followed by a number, or range of numbers, denoting orthologous vertebrate protein(s), if any (for Class IV and group I-II-III-IV proteins, the name is followed by the name of the class/group); (ii) a Greek letter to identify non-vertebrate paralogs, if any and (iv) a three-letter species code. GABA-B receptors from vertebrates were used as outgroup. All information about species and proteins used in this phylogeny is given in Figure 6—source data 2. Phylogenetic reconstruction was performed using Maximum-likelihood inference. The amino acid substitution model used was: WAG + I + G + F. Branch support was obtained after 1000 iterations of ultrafast bootstrapping (Hoang et al., 2018). Scale bar denotes number of amino acid substitutions per site.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Multiple alignment of mGluR residues involved in ligand binding. Representative class I-III chordate proteins and all class IV sequences identified are included (with the only exception of mGluRClassIVβ_Ame as it is incomplete). Also, representative sequences from non-bilaterian groups of mGluRs are shown. Bilateral classes, non-bilateral classes orthologous to I-II-III-IV and unclassified proteins are labeled in the left. Class name is also indicated. Residue numbers are indicated on top and correspond to human mGluR1. Residues involved in agonist binding are highlighted by a black frame, these are: residues 165 and 168 that perform electrostatic interactions with the α-carboxyl group, residues 208, 236 and 318 that bind the α-amino group and residues 78 and 409 that contact the amino acid side chain. Acid residues are colored in red and basic residues in light blue. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Figure was prepared with Jalview v2.10.4b1 (Waterhouse et al., 2009). (b) Bars show average (and standard deviation) relative expression of Branchiostoma lanceolatum (amphioxus) mGluR genes as determined by qPCR. Filled bars represent whole body and open bars nerve cord expression levels. All genes show significantly enriched expression in the nerve chord relative to the whole body (Student’s t-test, n = 3). Expression level in the nerve chord is compared across all genes. Note that class IV genes show the highest expression. Statistics: one-way ANOVA followed by Tukey’s Post-Hoc test, n = 3. Significance levels: ***p < 0.001, **p < 0.01 and *p < 0.05; ns, not significant.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The alignment includes all protein sequences from class IV together with vertebrate and amphioxus representative sequences of class I-III. Representative sequences from non-bilaterian groups are also shown. Bilateral classes, non-bilateral classes orthologous to I-II-III-IV and unclassified proteins are labeled in the left. Class name is also indicated. Residue numbers are shown on top and correspond to human mGluR1. Higher amino acid conservation is represented by increasing intensity of blue background and by a bar chart at the bottom. Figure was prepared with Jalview v2.10.4b1 (Waterhouse et al., 2009).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/35774/elife-35774-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Primer sequences are included.
 
 Although all class IV proteins show well conserved sequences overall (Figure 6—figure supplement 2a, Figure 6—figure supplement 3 and Figure 6—source data 1), two residues critical for glutamate binding, Arg78 and Lys409, are non-conservatively replaced by non-polar or acidic residues in all class IV proteins identified (Figure 6—figure supplement 2a, residue numbering corresponds to human mGluR1). These changes are predicted to hamper glutamate binding and, indeed, functional studies of a class IV receptor from fruit fly indicated that it does not respond to this amino acid (Mitri et al., 2004). All class IV proteins would share this feature. On the other hand, residues involved in contacts with the amino acid backbone are well conserved (Figure 6—figure supplement 2a), suggesting that these proteins might bind an amino acid other than glutamate. Similarly, mGluR residues from most non-bilaterian sequences involved in binding the amino acid backbone are highly conserved. Among non-bilaterian proteins the residues involved in glutamate binding are only conserved in approximately half of the proteins from classes orthologous to I-II-III-IV. Finally, we investigated mGluRs expression in amphioxus following the same procedure described for iGluRs. All five amphioxus mGluRs showed an enriched expression in the nerve cord, including the two class IV genes. Noticeably, these two genes showed significantly higher expression levels than orthologues of vertebrate classes (Figure 6—figure supplement 2b).
 
@@ -117,41 +181,254 @@ Altogether, our phylogenetic analysis and experimental findings have uncovered t
 
 ## Materials and methods
 
-## Identification of genes coding for members of glutamate receptor families in metazoan genomes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat#: CRL-3216 RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesize)</td>
+      <td>pIRES2_EGFP</td>
+      <td>Addgene</td>
+      <td>Cat. #: 6029–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesize)</td>
+      <td>pICherryNeo</td>
+      <td>Addgene</td>
+      <td>Cat. #: 52119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesize)</td>
+      <td>Grie1 in pICherryNeo</td>
+      <td>Invitrogen GeneArt Gene Synthesis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesize)</td>
+      <td>Grie7 in pIRES2_EGFP</td>
+      <td>Invitrogen GeneArt Gene Synthesis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Branchiostoma  lanceolatum)</td>
+      <td>whole animal</td>
+      <td></td>
+      <td></td>
+      <td>Collected in the bay of Argelès- sur-Mer, France (latitude 42° 32' 53’ N and longitude 3° 03' 27’ E)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Branchiostoma  lanceolatum)</td>
+      <td>nerve chord</td>
+      <td></td>
+      <td></td>
+      <td>Collected in the bay of Argelès-sur- Mer, France (latitude 42° 32' 53’ N and longitude 3° 03' 27’ E)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-HA</td>
+      <td>Covance</td>
+      <td>Cat. #: MMS-101P RRID: AB_291259</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-c-Myc</td>
+      <td>Cell Signalling</td>
+      <td>Cat. #: 2272S RRID: AB_10692100</td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GluA2</td>
+      <td>Millipore</td>
+      <td>Cat. #: MAB397 RRID: AB_2113875</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 donkey anti- mouse IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A-31570 RRID: AB_2536180</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat anti -rabbit IgG</td>
+      <td>Life Technologies</td>
+      <td>Cat. #: A-21245 RRID: AB_2535813</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse</td>
+      <td>Li-cor</td>
+      <td>Cat. #: 926–32212 RRID: AB_621847</td>
+      <td>WB (1:7500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit</td>
+      <td>Li-cor</td>
+      <td>Cat. #: 926–68073 RRID: AB_10954442</td>
+      <td>WB (1:7500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Grie1 gene from B. Lanceolatum</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Grie7 gene from B. Belcheri</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Seqeucne corresponding with rat Gria2 signal peptide</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-dodecyl-α- maltopyranoside; DDM</td>
+      <td>Anatrace</td>
+      <td>Cat. #: D310HA</td>
+      <td>2% w/v</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuromatic</td>
+      <td>doi: 10.3389/ fninf.2018. 00014</td>
+      <td>RRID: SCR_004186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MrBayes 3.2.6</td>
+      <td>doi: 10.1093/sysbio/sys029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQTree</td>
+      <td>doi: 10.1093/molbev/msu300</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>doi: 10.1107/S0907444909042073</td>
+      <td>RRID: SCR_014226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MIFit</td>
+      <td>GitHub (Smith, 2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>doi: 10.1038/nmeth.2019</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CIPRES Science Gateway</td>
+      <td>doi: 10.1109/GCE.2010.5676129</td>
+      <td>RRID: SCR_008439</td>
+      <td>Free on-line super computing resource for evolutionary research</td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification of genes coding for members of glutamate receptor families in metazoan genomes
 
 Phylogenetic analysis were performed with sequences from at least two species from each of the following metazoan phyla: Porifera, Ctenophora, Placozoa, Cnidaria, Lophotrochozoa, Ecdysozoa, Hemichordata, Chordata and Vertebrata, with the exception of placozoans for which only one species is available. When possible, we chose slowly evolving species. The complete lists of species used for iGluR phylogenies are given in Figure 1—source data 2. Species used in the phylogeny of metabotropic glutamate receptors are listed in Figure 6—source data 2. Sponge sequences were taken from (Riesgo et al., 2014), B. lanceolatum sequences were retrieved from unpublished genomic and transcriptomic databases (access was kindly provided by the Mediterranean Amphioxus Genome Consortium), A. digitifera and P. flava sequences were obtained from the Marine Genomics Unit (Simakov et al., 2015; Shinzato et al., 2011) and P. bachei sequences from NeuroBase (Moroz et al., 2014).
 
 GluR sequences were identified using homology-based searches in a two-tier approach. Mouse glutamate receptors were used as search queries (iGluRs: Gria1-4; Grik1-5; Grid1-2, Grin1, Grin2A-D and Grin-3A-B; mGluRs: mGluR1-8). In a first search GluR homologs were identified using the BLASTP tool (Altschul et al., 1990) with default parameters. Subject sequences with an E-value below 0.05 were selected as candidate homologs. These were re-blasted against the NCBI database of ‘non-redundant protein sequences’ using the same BLAST tool. If the first hit obtained in the reciprocal BLAST was a glutamate receptor the sequence was included in the phylogenetic analysis. In a second stage the same mouse sequences were used to perform TBLASTN searches against genomic and, when available, transcriptomic databases. Subject sequences not identified in the first tear and having an E-value below 0.05 were selected as candidate homologs. These were re-blasted using BLASTX against the NCBI ‘non-redundant protein sequences’ database. Finally, if the first hit of this search was a glutamate receptor the sequence was also included in the phylogenetic analysis. Identified iGluR sequences in which less than four residues of the SYTANLAAF motif (Traynelis et al., 2010) were conserved were not considered for the final phylogenetic analysis. mGluR sequences lacking two or more of the seven transmembrane regions were also discarded. The complete reference lists of all iGluRs used in the final phylogeny are given in files Figure 1—source data 2. The reference list of metabotropic glutamate receptors is presented in Figure 6—source data 2. The alignments used for the phylogenetic analysis of iGluRs, mGluRs and AMPAs and Kainates from protostomes are provided in Figure 1—source data 3, Figure 3—source data 1 and Figure 6—source data 3.
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 The iGluR tree was constructed with 224 sequences identified in 26 non-vertebrate species (Figure 1—source data 2). The tree also included 18 iGluR sequences from vertebrates and two iGluR proteins from A. thaliana, used as an outgroup (Chiu et al., 2002). The phylogenetic analysis of AMPA and Kainate classes in protostomes was inferred using 110 sequences from 15 protostome species (Figure 3—source data 2) and 37 sequences from deuterostomes, of which 4 GluN1 proteins were used as an outgroup. The mGluR tree was constructed with 149 proteins from 29 non-vertebrate species, 38 mGluRs from vertebrate species and 10 sequences from vertebrate metabotropic GABA receptors, used as an outgroup (Figure 6—source data 2).
 
 Protein sequences were aligned with the MUSCLE algorithm (Edgar, 2004), included in the software package MEGA6 (Tamura et al., 2013) with default parameters. ProtTest v3.4.2 was used to establish the best evolutionary model (Darriba et al., 2011). Trees were constructed using MrBayes v3.2.6 (Ronquist et al., 2012) for Bayesian inference and IQ-TREE (Nguyen et al., 2015) for Maximum-likelihood analysis. For Bayesian inference phylogenies were stopped when standard deviation was below 0.01 and its value was fluctuating but not decreasing. Markov chain Monte Carlo (MCMC) was used to approximate the posterior probability of the Bayesian trees. Bayesian analyses included two independent MCMC runs, each using four parallel chains composed of three heated and one cold chain. Twenty-five % of initial trees were discarded as burn-in. Convergence was assessed when potential scale reduction factor (PSRF) value was between 1.002 and 1.000. In Maximum-likelihood analysis the starting tree was estimated using a neighbor-joining method and branch support was obtained after 1000 iterations of ultrafast bootstrapping (Hoang et al., 2018). Gene/protein names were given based on their position in the tree. Phylogenetic trees were rendered using FigTree (http://tree.bio.ed.ac.uk/software/figtree/). Phylogenetic calculations were performed at the IBB - UAB heterogeneous computer cluster ‘Celler’ and at the CIPRES science gateway (RRID: SCR_008439) (Miller et al., 2010).
 
-## Collection and housing of animals
+### Collection and housing of animals
 
 Branchiostoma lanceolatum adults were collected in the bay of Argelès-sur-Mer, France (latitude 42° 32’ 53’ N and longitude 3° 03’ 27’ E) with a specific permission delivered by the Prefect of Region Provence Alpes Côte d’Azur. B. lanceolatum is not a protected species. Animals were kept in tanks with seawater at 17°C under natural photoperiod.
 
-## RNA isolation, cDNA synthesis and quantitative gene expression (qPCR)
+### RNA isolation, cDNA synthesis and quantitative gene expression (qPCR)
 
 Adult amphioxus (B. lanceolatum) were anesthetized in 0.1% diethyl pyrocarbonate (DEPC; Sigma, D5758) PBS buffer. Animals were sacrificed by cutting the most anterior part of the body. The nerve chord was surgically extracted from the animal while submerged in DEPC-PBS using a magnifying glass. Individual nerve chords were snap frozen in liquid nitrogen and stored at −80°C until use. RNA was extracted from whole animals or from dissected nerve chords. Ten nerve chords were used for each RNA extraction, so that biological variability between individuals could be normalized. The tissue was homogenized in 1 mL of TRI Reagent (Sigma, T9424) using a Polytron homogenizer. Homogenates were transferred into an Eppendorf tube and incubated 5 min at room temperature (RT) before adding 100 µL of 1-bromo-3-cloropropane. Tubes were vigorously mixed by vortexing for 10–15 s, incubated 15 min at RT and centrifuged at 13000 rpm for 15 min at 4°C. RNA was precipitated from the aqueous phase with 500 µL of isopropanol and 20 µg of glycogen. Tubes were frozen for 1 hr at −80°C and then thawed, incubated at RT for 10 min and centrifuged at 13000 rpm for 10 min at 4°C. The RNA pellet was washed twice with 500 µL of 75% ethanol and air-dried. cDNA was synthesized from 0.5 µg of total RNA. One µL of Oligo(dT)15 (Promega), 1 µL of 10 mM dNTP mix (Biotools), RNA and DEPC distilled water were mixed in a PCR tube to a final volume of 14 µL. This mix was incubated at 65°C for 5 min in a T100 Thermal Cycler (BioRad). After cooling tubes on ice for 1 min, we added 4 µL of First Strand 5x buffer, 1 µL of 0.1 M DTT and 1 µL of SuperScript III (Invitrogen). Tubes were placed in a T100 Thermal Cycler (BioRad) with the following program: 60 min at 50°C, 15 min at 70°C. RNA expression levels were determined using qPCR and the GAPDH gene used as a reference. Primers used for qPCR analysis of iGluRs are in Figure 4—figure supplement 2 and those used for mGluR qPCR in Figure 6—figure supplement 4. qPCR data for iGluRs and mGluRs are given in Figure 4—source data 1 and Figure 6—source data 4, respectively.
 
 cDNA from nerve chord and whole body samples was diluted 1:10 for the glutamate receptor gene reactions, and 1:100 for the reference gene reaction. For each gene 2.5 µL of diluted cDNA were added to 5 μL of iTaq Universal SYBR Green Supermix (Bio-Rad), along with 0.5 µL of each primer and 1.5 µL of RNase free water. qPCR was run in a C1000 Touch thermocycler combined with the optic module CFX96. Three technical replicates were performed for all genes analyzed. Primer pairs were designed to detect the expression levels of each glutamate receptor (Figure 4—figure supplement 2 and Figure 6—figure supplement 4). B. belcheri glutamate receptor sequences were aligned with the genomic sequence of B. lanceolatum, and high identity fragments were used to design primers. All primers were 20–25 base pair long, had GC content over 40–45% and a Tm between 60–65°C. Primers were designed to obtain amplicons between 140–270 base pairs. Values of normalized expression were statistically analyzed using GraphPad Prism5. No outliers were identified and no data points were excluded. Comparisons between whole body and nerve chord expression levels were done with Student’s T-Test for unpaired samples or the Welch variant of the Student’s T-Test for samples with different variance. For multiple comparisons between the expression levels of genes belonging to the same class one-way ANOVA analysis was performed using Tukey’s Post-Hoc test.
 
-## Grie1 and Grie7 gene synthesis
+### Grie1 and Grie7 gene synthesis
 
 Grie1 and Grie7 genes were selected for transient expression in the mammalian cell line HEK293T. We prepared two constructs for each gene. We first introduced an immuno-tag in the N-terminus before the first element of secondary structure. For Grie1 we used the c-Myc tag, which was placed after residue 39, and for Grie7 we used the hemagglutinin (HA) tag introduced after residue 10 of the wild-type sequence. The second set of constructs prepared substituted the wild type N-terminal sequence for the signal peptide from rat GluA2 while maintaining the immuno-tags (Figure 4—figure supplement 1). Codon-optimized genes for expression in human cells were synthesized and cloned into pICherryNeo (Addgene, 52119) and pIRES2_EGFP (Addgene 6029–1) by the Invitrogen GeneArt Gene Synthesis service.
 
-## Cell line
+### Cell line
 
 All expression experiments were done with a mycoplasma-free HEK293T cell line kindly provided by Prof. F. Ciruela (Universitat de Barcelona) and purchased from the American Type Culture Collection (ATCC, CRL-3216, RRID: CVCL_0063). The ATCC has confirmed the identity of HEK293T by STR profiling (STR Profile; CSF1PO: 11,12; D13S317: 12,14; D16S539: 9,13; D5S818: 8,9; D7S820: 11; TH01: 7, 9.3; TPOX: 11; vWA: 16,19; Amelogenin: X). After the purchase of the cell line, mycoplasma tests are performed in the laboratory on every new defrosted aliquot. The kit used for mycoplasma detection is PlasmoTest (Invivogen, code: rep-pt1).
 
-## Expression of GluE1 and GluE7 in HEK293T cells and analysis of plasma membrane trafficking
+### Expression of GluE1 and GluE7 in HEK293T cells and analysis of plasma membrane trafficking
 
 HEK293T cells were maintained in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% FBS and 1% Antibotic-Antimycotic (Gibco) in a humidified incubator at 5% CO2 air and 37°C. The day before transfection, cells were plated onto poly-D-lysine coated coverslips in 6-well plates, to reach 60–80% confluence. HEK293T cells were transiently transfected with the following plasmids: empty pIRES2-EGFP, pIRES2-EGFP containing the Grie7_Bbe gene, empty pICherryNeo and pICherryNeo containing Grie1_Bla. Cells were transfected using 3 μg of polyethylenimine and 1 μg of plasmid DNA for each ml of non-supplemented DMEM. Cells were incubated 4–5 hr with transfection medium without supplementation, which was then removed and replaced by supplemented medium. Twenty-four hours after transfection the medium was removed and cells were washed 3 times with PBS. For surface receptor staining, cells were blocked in 2% BSA in PBS for 10 min at 37°C, and incubated for 25 min at 37°C with primary antibodies against HA (Covance, MMS-101P, RRID: AB_291259), c-Myc (Cell Signalling, 2272S, RRID: AB_10692100) or GluA2 (Millipore, MAB397, RRID: AB_2113875). HA and GluA2 antibodies were diluted 1:200 and c-Myc 1:100 in DMEM without supplementation. Cells were washed 3 times with PBS, fixed in 4% paraformaldehyde (PFA) for 15 min at RT, rinsed in PBS and incubated 1 hr at 37°C with secondary antibodies Alexa Fluor 555 donkey anti-mouse IgG (H + L) (A-31570, Invitrogen, RRID: AB_2536180) and Alexa Fluor 647 goat anti-rabbit IgG (H + L) highly cross-adsorbed (Life Technologies, A-21245, RRID: AB_2535813), diluted 1:1000 and 1:500 in PBS, respectively. Finally, coverslips were washed and mounted onto slides with Fluoroshield with DAPI (Sigma-Aldrich, F6057). For intracellular labeling cells were first fixed in 4% PFA for 15 min at RT, permeabilized with 0.2% Triton X-100 in PBS for 10 min, and finally blocked with PBS containing 2% BSA and 0.2% Triton X-100 for 20 min. Primary antibodies against HA (Covance, MMS-101P, RRID: AB_291259) and GluA2 (Millipore, MAB397, RRID: AB_2113875) were diluted 1:1000 and c-Myc (Cell Signalling, 2272S, RRID: AB_10692100) antibody was prepared at 1:100 in PBS. Incubation lasted 25 min at 37°C. Secondary antibody incubations and coverslip mounting were done in the same way as for non-permeabilized cells. Cells were examined using a confocal laser-scanning microscope (Zeiss LSM 700) with a 63x oil objective.
 
-## Western blot and native gel electrophoresis
+### Western blot and native gel electrophoresis
 
 HEK293T cells were grown in 6-well plates as described previously and transfected with plasmids expressing amphioxus GluE1, GluE7 or GluA2. Twenty-four hours after transfection cells were rinsed with PBS and the content of 4 wells was resuspended in solubilization buffer (PBS containing 2% N-dodecyl-α-maltopyranoside (DDM; D310HA, Anatrace) and the protease inhibitors mix cOmplete EDTA-free Protease Inhibitor Cocktail, Roche). Cell lysates were homogenized in a Dounce homogenizer in ice with 20 strokes and kept under orbital agitation for 1 hr at 4°C. Lysates were centrifuged at 89000xg in a Beckman TLA120.2 rotor for 40 min at 4°C. The supernatant containing solubilized membrane proteins was recovered in a new tube and stored at −20°C until used.
 
@@ -159,11 +436,11 @@ For native gel electrophoresis proteins were resolved in a Mini-PROTEAN TGX Gel 
 
 For denaturing gel electrophoresis (SDS-PAGE) protein lysates were denatured by adding loading sample buffer 10x (500 mM Tris-HCl pH 7.4, 20% SDS, 10% β-mercaptoethanol, 10% glycerol and 0.04% bromophenol blue), and incubated for 5 min at 95°C. Protein lysates were loaded in a 10% SDS- polyacrylamide gel and separated at a constant current (25 mA). Gels were transferred at a constant voltage of 100 V for 90 min in ice. Membranes were blocked for 1 hr with Odyssey Blocking Buffer in TBS, and incubated overnight at 4°C with the same primary antibodies at the same dilution as for native gels in TBS containing 0.1% Tween 20. After three 15 min washes in TTBS, membranes were incubated with secondary antibodies as above. Blots were analyzed in an Odyssey scanner.
 
-## 3D modeling of GluE1 and GluE7
+### 3D modeling of GluE1 and GluE7
 
 Models for full-length GluE1 and GluE7 were generated with RaptorX (Källberg et al., 2012) based on deposited three-dimensional crystal structures of the full-length AMPA-subtype ionotropic glutamate receptor from Rattus norvegicus, GluA2, bound to competitive antagonists (PDB codes 4U4G (Yelshanskaya et al., 2014) and 3KG2 (Sobolevsky et al., 2009), respectively). Models of their respective ligand binding domains were generated with SWISS-MODEL (Biasini et al., 2014) using the atomic-resolution crystal structure of the rat GluA2 LBD bound to glutamate as template (PDB code 4YU0). Model quality was assessed with MolProbity (http://molprobity.biochem.duke.edu/, RRID: SCR_014226). MolProbity scores for all models are given in Figure 1—source data 4. Models were inspected with MIFit (Smith, 2010) and figures were prepared with PyMOL (www.pymol.org).
 
-## Electrophysiology
+### Electrophysiology
 
 Cells were visualized with an inverted epifluorescence microscope (AxioVert A.1, Zeiss) and were constantly perfused at 22–25°C with an extracellular solution containing (in mM): 145 NaCl, 2.5 KCl, 2 CaCl2, 1 MgCl2, 10 HEPES and 10 glucose (pH = 7.42 with NaOH; 305 mOsm/Kg). Microelectrodes were filled with an intracellular solution containing (in mM): 145 CsCl, 2.5 NaCl, 1 Cs-EGTA, 4 MgATP, 10 HEPES (pH = 7.2 with CsOH; 295 mOsm/Kg). Electrodes were fabricated from borosilicate glass (1.5 mm o.d., 1.16 i.d., Harvard Apparatus) pulled with a P-97 horizontal puller (Sutter Instruments) and polished with a forge (MF-830, Narishige) to a final resistance of 2–4 MΩ. Currents were recorded with an Axopatch 200B amplifier filtered at 1 KHz and digitized at 5 KHz using Digidata 1440A interface with pClamp 10 software (Molecular Devices Corporation).
 

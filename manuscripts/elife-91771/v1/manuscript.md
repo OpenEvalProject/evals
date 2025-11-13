@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01ee9ar58 School of Psychology, University of Nottingham Nottingham United Kingdom
-2. https://ror.org/027m9bs27 Division of Informatics, Imaging and Data Science, School of Health Sciences, University of Manchester Manchester United Kingdom
-3. https://ror.org/013meh722 MRC Cognition and Brain Sciences Unit (CBU), University of Cambridge Cambridge United Kingdom
+1. School of Psychology, University of Nottingham Nottingham United Kingdom ([ROR:01ee9ar58](https://ror.org/01ee9ar58))
+2. Division of Informatics, Imaging and Data Science, School of Health Sciences, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+3. MRC Cognition and Brain Sciences Unit (CBU), University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -38,15 +38,33 @@ We acquired resting-state MRS for the left ATL and vertex followed by fMRI befor
 
 **Figure 1.:** (A) Experimental procedure. (B) An example of the semantic association task (left) and control task (right: pattern matching). Each trial starts with a fixation followed by stimuli, which have three items, a target on the top and two choices at the bottom. (C) The location of volume of interest (VOI) for MRS (left ATL and vertex) and a representative MRS spectrum with estimated peaks (right). Colour bar indicates the number of overlapping participants. NAA: N-acetylaspartate. (D) cTBS protocols. cTBS was applied over the left ATL and vertex as a control site. Each stimulation was delivered on different days with a week gap at least.
 
-## cTBS modulates regional GABA concentrations and task-related BOLD signal changes in the ATL
+### cTBS modulates regional GABA concentrations and task-related BOLD signal changes in the ATL
 
 E-field modelling of cTBS showed that, as intended, ATL cTBS stimulated the left ventrolateral ATL (Figure 2A). To investigate how cTBS modulates GABA concentrations, we quantified GABA/NAA and calculated the changes (POST– PRE). A 2×2 repeated measures analysis of variance (ANOVA) with stimulation (ATL vs. vertex) and VOI (ATL vs. vertex) as within subject factor was performed. There was a significant interaction effect between the stimulation and VOI (F1,16 = 4.57, p=0.048; Figure 2B). There was no significant main effect of the stimulation (F1,16 = 3.23, p=0.091) and VOI (F1,16 = 0.64, p=0.435). Planned paired t-tests revealed that ATL stimulation significantly increased GABA concentrations in the ATL compared to the control stimulation (t=1.86, p=0.040) and control site (t=2.07, p=0.027). There were no cTBS effects in the vertex VOI regardless of the stimulation (ps >0.23). It is noted that there was no significant cTBS effect in Glx (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-v1.jpg)
+
+**Figure 2.:** (A) ATL cTBS e-field modelling. (B) cTBS-induced regional GABA changes in the ATL. Red bar indicates the ATL stimulation and white bar indicates the control (vertex) stimulation. (C) fMRI results of the contrast of interest (semantic >control) in the ATL pre-stimulation session. (D) cTBS-induced ATL BOLD signal changes during a semantic and control task. White bars represent the pre-stimulation session, and grey bars represent the post-stimulation session. (E) The relationship between cTBS-induced GABA changes and BOLD signal changes in the ATL. (F) The results of task performance. A positive value of cTBS effect (Post – Pre) in IE suggests an inhibitory effect, indicating poorer performance after the stimulation. In contrast, a negative value denotes a facilitatory effect, signifying improved performance following the stimulation. Red bar indicates the ATL stimulation and white bar indicates the control (vertex) stimulation. Each individual is represented as a circle. * p<0.05, ** p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** We conducted a 2x2 x 2 repeated measure of ANOVA with a stimulation (ATL vs. vertex), session (PRE vs. POST), and VOI (ATL vs. vertex) as within subject factors. The results demonstrated a significant main effect of VOI (F1, 16 = 41.56, p<0.001; Figure 1). The other effects did not reach a significant level.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Red circles represent the average of the group. Error bars stand for standard errors.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig2-figsupp5-v1.jpg)
 
 fMRI results demonstrated that the semantic association task evoked increased activation in the ATL, prefrontal and posterior temporal cortex compared to the control task (Figure 2C, Figure 2—figure supplement 2 and Supplementary file 1). To examine the effects of cTBS, we performed ROI analysis using the same VOI in the ATL. Planned paired t-tests revealed that BOLD signal changes during semantic processing were significantly altered after ATL cTBS compared to the pre-stimulation (t=1.78, p=0.046) and the control stimulation (t=–2.11, p=0.025; Figure 2D).
 
 To investigate the effects of ATL cTBS, we conducted a partial correlation analysis between GABA changes (POST–PRE) and BOLD signal changes (POST– PRE), accounting for age and sex. We found a significant correlation between cTBS-induced GABA changes and BOLD signal changes in the ATL (r=–0.86, p<0.001). Individuals with greater increases in ATL GABA levels following ATL cTBS showed greater reductions in task-induced BOLD signal changes in the ATL. These results demonstrate that ATL cTBS modifies regional GABA concentrations, and the cTBS-induced changes in GABA levels are connected to individual-level changes in task-related fMRI signal.
 
-## cTBS disrupts semantic task performance, revealing substantial individual variability in responsiveness
+### cTBS disrupts semantic task performance, revealing substantial individual variability in responsiveness
 
 Participants’ performance was examined using a 2×2 repeated measures ANOVA with stimulation (ATL vs. vertex) and session (PRE vs. POST) as within-subject factors. There were no significant main effects and interactions on reaction time (RT) in the semantic task (Fs >0.19, ps >0.220). However, we found a significant main effect of session in the control task (F1, 15 = 20.21, p<0.001). Post hoc paired t-tests demonstrated that participants performed the task faster in the post-session compared to the pre-session, except in the semantic task after the ATL stimulation. The results showed that ATL cTBS attenuated the practice effects found in the control stimulation and control task. There were no significant effects in accuracy (Fs >0.01, ps >0.073). The results of accuracy and RT for each task were summarised in the Supplementary file 1 and Figure 2—figure supplement 3.
 
@@ -60,11 +78,19 @@ Moreover, we categorised participants based on changes in their semantic task pe
 
 A 2x2 ANOVA with session (PRE vs. POST) as a within- subject factor and with group (responders vs. non-responders) as a between-subject factor was conducted to investigate the effects of individual cTBS responsiveness on ATL GABA levels. The analysis revealed a significant main effect of session (F1, 14 = 39.906, p<0.001) and group (F1, 14 = 9.677, p=0.008). Post hoc paired t-tests revealed that both responders and non-responders showed increased GABA levels in the ATL following stimulation (responder: t=–3.885, p=0.002, non-responder: t=–4.831, p=0.001; Figure 3C). Post hoc t-tests further revealed a significant difference in ATL GABA levels between responders and non-responders in both pre-stimulation (t=2.816, p=0.007) and post-stimulation session (t=2.555, p=0.011; Figure 3C).
 
-## Regional GABA concentrations in the ATL play a crucial role in semantic memory
+### Regional GABA concentrations in the ATL play a crucial role in semantic memory
 
 In our prior study (Jung et al., 2017), ATL GABA levels were significantly and negatively correlated with ATL activity during semantic processing (Figure 4A). Here, we replicated our previous findings in a different cohort with the same research paradigm (pre-stimulation session). We conducted a single-voxel regression analysis with the individual’s GABA concentrations (ATL pre-stimulation session) as the regressor of the fMRI contrast of interest (semantic >control). The BOLD response in the ventral ATL was significantly and negatively correlated with the individual GABA levels in the ATL (MNI –42–6 –33, p SVC-FWE <0.05), overlapping with the results from our previous study (Jung et al., 2017; Figure 4A). The GABA-related region of the ventral ATL overlapped with the semantic coding hotspot from electrocorticograms (ECoG) data and direct cortical stimulation (Chen et al., 2016; Shimotake et al., 2015; Figure 4A). Furthermore, we found that individual GABA concentrations in the ATL were positively associated with semantic task performance (Figure 4B). We also confirmed this finding, demonstrating that individuals with more GABA in the ATL performed the semantic task better (higher accuracy; r=0.50, p=0.035; Figure 4B). It should be noted that individual GABA levels also significantly correlated with ATL activity and semantic task performance at the vertex stimulation session (Figure 4—figure supplement 1). There was no significant relationship between ATL GABA levels and RT during semantic processing (ps >0.44; Figure 4—figure supplement 2) and between ATL GABA levels and control task performance (Supplementary file 1). These results demonstrate that higher levels of cortical GABA in the ATL are associated with task-related regional activity as well as enhanced semantic function.
 
-## The inverted U-shaped function of ATL GABA concentrations in semantic processing
+![Figure 4.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig4-v1.jpg)
+
+**Figure 4.:** (A) Local maxima of the voxel-wise regression analysis of the contrast (semantic >control) with GABA concentrations in the ATL. (B) The relationship between individual GABA levels in the ATL and semantic task performance from our previous study (Jung et al., 2017) and current study (pre-stimulation session). (C) The ATL GABA function in relation to semantic performance. (D) The relationship between cTBS-induced changes in ATL GABA levels and semantic task performance. Dotted line represents the linear function between ATL GABA levels and semantic task performance. Coloured line represents the inverted U-shaped (quadratic) function between ATL GABA levels and semantic task performance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91771/elife-91771-fig4-figsupp2-v1.jpg)
+
+### The inverted U-shaped function of ATL GABA concentrations in semantic processing
 
 The pattern of correlation between GABAergic activity and semantic task accuracy observed in our previous study was replicated in an entirely new cohort in the current study. Next, we combined the two studies (N=37) in order to fully investigate the potential role of GABA in the ATL as a mechanistic link between ATL inhibitory GABAergic action and semantic task performance (accuracy). First, we tested the linear relationship between ATL GABA levels and semantic task performance. We confirmed our previous findings that individuals with higher GABA levels in the ATL showed better semantic task performance (R2=0.49, p<0.001; Figure 4C). Second, to test our hypothesis, we assumed that semantic performance follows an inverted U-shaped (quadratic) function with relation to ATL GABA concentrations. In other words, people who have low or excessive GABA levels in the ATL perform the semantic task relatively poorly. The results revealed that the inverted U-shaped function between ATL GABA and semantic performance was significant (R2=0.67, p<0.001; Figure 4C). To compare two different models, we calculated the Bayesian Information Criterion (BIC) as a measure of model fitness (Vrieze, 2012) and performed a partial F-test to determine whether there is a statistically significant difference between the two models. A best model fitness can be characterised by low BIC and high R2. The results showed a BIC value of 243.72 for the linear function and a value of 233.36 for the quadratic function. The results of F-tests revealed that the inverted U-shaped model provided a statistically significantly better fit than the linear model (F=15.60, p<0.001). The best-fitting model is therefore the inverted-U-shaped function of ATL GABA in semantic processing. There was no significant relationship between ATL GABA levels and RT during semantic processing (linear function R2=0.21, p=0.45, quadratic function: R2=0.17, p=0.21).
 
@@ -90,19 +116,92 @@ Our findings provide novel evidence of a direct link from neurochemical modulati
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SimNIBS 3.2</td>
+      <td>SimNIBS</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPM8</td>
+      <td>Statistical Parametric Mapping</td>
+      <td>RRID:SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>jMRUI5.1</td>
+      <td>jMRUI</td>
+      <td>RRID:SCR_021893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS, Version 25</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Magstim Super Rapid stimulator</td>
+      <td>MagStim</td>
+      <td>n/a</td>
+      <td>Transcranial Magnetic stimulation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3T Philips Achieva MRI</td>
+      <td>Philips</td>
+      <td>n/a</td>
+      <td>Magnetic Resonance Imaging Scanner</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Nineteen healthy English native speakers (9 females, mean age = 25.9 ± 5.8 years, age range: 19–38) participated in this study. The sample size was calculated based on a previous study (Jung and Lambon Ralph, 2016), which indicated that to achieve α=0.05, power = 80% for the critical interaction between TMS and task, then N≥17 was required. A participant completed one session (ATL stimulation) only. All participants were right-handed (Oldfield, 1971). All participants provided written informed consent to participate in the study and to publish the results. The study was conducted at the University of Manchester and approved by the ethics committee of the University of Manchester (REC ref:04/Q1405/66).
 
 To explore the role of GABA in semantic memory function, we used the data previously published (Jung et al., 2017). Data from twenty healthy, right-handed native English speakers were included (7 males, mean age = 23 ± 4 years, age range: 20–36).
 
-## Experimental design and procedure
+### Experimental design and procedure
 
 Participants were asked to visit two times for the study. In each visit, the target region was identified prior to the baseline scan. Participants had multimodal imaging (MRS and fMRI). Then, participants were removed from the scanner and cTBS was performed in a separate room. Following cTBS, participants were repositioned into the scanner and had the second multimodal imaging (Figure 1A).
 
 We used the same paradigm for the multimodal imaging from our previous study (Jung et al., 2017). During MRS, participants were asked to be relaxed with eyes open. Participants performed a semantic association decision task and pattern matching as a control task during fMRI scanning (Figure 1B). The semantic association decision task required a participant to choose which of two pictures at the bottom of the screen was more related in meaning to a probe picture presented on the top of the screen. The items for the semantic association task were from the Pyramids and Palm Tree test (Howard and Patterson, 1992) and Camel and Cactus test (Bozeat et al., 2000). Items for the pattern matching task were created by scrambling the pictures used in the semantic association task. In the pattern matching task, a participant was asked to identify which of two patterns at the bottom was visually identical to a probe pattern on the top (Figure 1B). Participants were required to press one of two buttons designating two choices in a trial. In each trial, there was a fixation for 500ms followed by the stimuli for 4500ms. A task block had four trials of each task. There were 9 blocks of each task interleaved (e.g. A-B-A-B) with a fixation for 4000ms during fMRI. Total scanning time was about 8 min. E-prime software (Psychology Software Tools Inc, Pittsburgh, USA) was used to display stimuli and to record responses.
 
-## Transcranial magnetic stimulation
+### Transcranial magnetic stimulation
 
 A Magstim Super Rapid stimulator (MagStim Company, Whitland, UK) with a Figure of eight coil (70 mm standard coil) was used to deliver cTBS over the left ATL or vertex with a week gap between the stimulation (Figure 1D). cTBS consisted of bursts containing 3 pulses at 50 Hz (Huang et al., 2005) and was applied at 80% of the resting motor threshold (RMT), which previously showed inhibitory effects on semantic processing in the ATL (Jung and Lambon Ralph, 2016). RMT was established for each individual, defined as the minimum intensity of stimulation required to produce twitches on 5 of 10 trials from the right first dorsal interosseous (FDI) muscle when the participant was at rest. The average stimulation intensity (80% RMT) was 49.2% ranging from 38% to 60%.
 
@@ -110,7 +209,7 @@ Previous rTMS studies targeted a lateral ATL site 10 mm posterior to the tempora
 
 SimNIBS 3.2 (Thielscher et al., 2015) was used to calculate the individual electric field of cTBS. The pipeline by Nielsen et al., 2018 was utilized to generate the individual head model consisting of five tissue types: grey matter (GM), white matter (WM), cerebrospinal fluid (CSF), skull, and scalp. Then, the fixed conductivity values implemented in SimNIBS were applied for each tissue type. The electric field interpolation was performed using Saturnino et al., 2019 and computed the electrical field at the centre of GM in the ATL and vertex. Finally, we averaged the individual electrical field for the ATL (Figure 2C) and vertex (Figure 2—figure supplement 4).
 
-## Magnetic resonance imaging acquisition
+### Magnetic resonance imaging acquisition
 
 A 3T Philips Achieva MRI scanner was used to acquire data with a 32-channel head coil with a SENSE factor of 2.5. Structural images were acquired using a magnetisation prepared rapid acquisition gradient echo (MPRAGE) sequence (TR = 8.4 ms, TE = 3.9 ms, slice thickness 0.9 mm, in-plane resolution 0.94 × 0.94 mm).
 
@@ -118,13 +217,13 @@ MRS data were acquired using the GABA-edited MEGA-PRESS sequence (Mullins et al.
 
 A dual-echo fMRI protocol developed by Halai et al., 2014 was employed to maximise signal-to-noise (SNR) in the ATL (TR = 2.8 s, TE = 12ms and 35ms, 42 slices, 96 × 96 matrix, 240 × 240 × 126 mm FOV, slice thickness 3 mm, in-plane resolution 2.5 × 2.5).
 
-## MRS analysis
+### MRS analysis
 
 Java-based magnetic resonance user’s interface (jMRUI5.1, EU project http://www.jmrui.eu/) (Naressi et al., 2001) was used to analyse MRS data. Raw data were corrected using the unsuppressed water signal from the same VOI, eddy current correction, a zero-order phasing of array coil spectra. Residual water was removed using Hankel-Lanczos singular value decomposition (Cabanes et al., 2001). Advanced Magnetic Resonance (AMARES; Laudadio et al., 2002) was used to quantify neurochemicals including GABA, glx, and NAA. The exclusion criteria for data were as follows: Cramér-Rao bounds >50%, water linewidths at full width at half maximum (FWHM) >20 Hz, and SNR <40. A subject was discarded from the analysis due to poor quality of MRS. GABA and glx values are reported as a ratio to NAA as we previously reported (Jung et al., 2017).
 
 Statistical Parametric Map (SPM8, http://www.fil.ion.ucl.ac.uk/spm/) was used to calculate the contributions of GM and WM to the VOI from the structural image. Then voxel registration was performed using custom-made scripts developed in MATLAB by Dr. Nia Goulden, which can be accessed at http://biu.bangor.ac.uk/projects.php.en. The calculation of tissue types within the VOI provided the percentage of each tissue type. As GABA levels are substantially higher (twofold) in the GM than WM (Jensen et al., 2005), we used GM as a covariate in the analysis. There was no significant difference in GM volume before and after the stimulation (ps >0.5) and a significant correlation between GM volumes before and after stimulation in both VOIs (ATL stimulation: r=0.75, p<0.001 in the ATL, r=0.67, p=0.003 in the vertex; Vertex stimulation: r=0.68, p=0.008 in the ATL, r=0.72, p<0.001). The results of tissue segmentation are summarised in Supplementary file 1.
 
-## fMRI analysis
+### fMRI analysis
 
 fMRI data were processed using SPM8. Dual gradient echo images were realigned, corrected for slice timing, and averaged using in-house MATLAB code developed by Halai et al., 2014. The EPI volumes were coregistered into the structural image, spatially normalised to the MNI template using DARTEL(diffeomorphic anatomical registration through an exponentiated lie algebra) toolbox (Ashburner, 2007), and smoothed with an 8 mm full-width half-maximum Gaussian filter.
 
@@ -134,7 +233,7 @@ Regions-of-interest (ROI) analysis was conducted using Marsbar (Brett et al., 20
 
 A voxel-wise simple regression analysis was conducted to identify the local maxima of voxels within the MRS ATL VOI correlating with its BOLD response with GABA levels in the contrast of interest (semantic >control). Local maxima of correlation were estimated on a voxel level, setting the threshold to p < 0.05 FWE after small-volume correction.
 
-## Statistical analysis
+### Statistical analysis
 
 For behavioural data, accuracy and reaction time (RT) were calculated for each individual. We computed the inverse efficiency (IE) score (RT/1-the proportion of error) to combine the accuracy and RT and calculated the cTBS effect (POST-PRE session). A 2×2 repeated measures ANOVA was conducted with stimulation (ATL vs. vertex) and task (semantic vs. control) as within-subject factors. Post hoc paired t-tests were conducted.
 

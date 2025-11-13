@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01s5ya894 Advanced MRI Section, Laboratory of Functional and Molecular Imaging, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
+1. Advanced MRI Section, Laboratory of Functional and Molecular Imaging, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01s5ya894](https://ror.org/01s5ya894))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ In addition, given that studies on sleep stage transitions have shown promising 
 
 ## Results
 
-## HMM brain states
+### HMM brain states
 
 To study brain activity representative of the entire Wake-NREM-REM-Wake sleep cycle, we analyzed data from concurrent whole-brain EEG-fMRI measurements on healthy, non-sleep-deprived participants (n=12, age 24±3.5, eight female) over two successive, entire nights of sleep (Moehlman et al., 2019). This data was acquired for an independent project that included eight randomly timed acoustical arousals to gauge sleep depth (Moehlman et al., 2019). PSG-based sleep staging was conducted by a sleep technologist, utilizing data from EEG, EMG, ECG, and EOG, following the criteria outlined by the AASM (Berry et al., 2020).
 
@@ -39,9 +39,37 @@ The HMM estimated from the night 2 data encompassed a collection of whole-brain 
 
 Furthermore, the HMM featured a transition probability matrix that detailed the likelihood of transitioning between every pair of states. Each state was accompanied by a state time course, delineating the specific time points (defined by the fMRI temporal resolution of 3 s) when the state was active. Notably, the HMM was constructed with 21 distinct states and was devoid of any prior knowledge regarding PSG staging during its estimation. For a comprehensive visual representation of the analytical process, please refer to Figure 1 (see the Methods section for a detailed explanation). Also, there is no HMM state that was participant-specific. That is, all 21 HMM states can be found in each participant’s fMRI time course.
 
-## HMM states show PSG stage specificity
+![Figure 1.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig1-v1.jpg)
+
+**Figure 1.:** (A) Participants slept inside a scanner from ~23:00 to ~07:00 for two consecutive nights, with concurrent EEG-fMRI recording. During each night, the fMRI experiments were intermittently disrupted by either acoustical arousals (eight random arousals) or spontaneous awakenings. Sleep stages and slow wave density were derived from EEG signals alone. (B) Hidden Markov model (HMM) was trained on the principal components of fMRI signals of night 2. Then the identified HMM states were generalized to night 1 fMRI signals. Finally, we studied the state-related variations in fMRI activation, FC patterns, and EEG measures. Notes: EEG, electroencephalographic; TR: repetition time; FC, functional connectivity; ROI, region of interest; PCA, principal component analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The error bars represent the standard error of the mean. Panel (A) free energy; Panel (B) maximum Occupancy (percentage); Panel (C) median Occupancy (percentage); Panel (D) Wilk’s Λ; Panel (E) mean Hidden Markov model (HMM) state Lifetime (TR, 3 s).
+
+### HMM states show PSG stage specificity
 
 The 21 brain states (see Figure 2B), identified solely from fMRI, exhibited a mixture of six PSG-based sleep stages: N1, N2, N3, REM, Wake, and an ‘Undefined’ stage for epochs that could not be confidently assigned to one of the four following sleep stages: N1-3 and REM.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig2-v1.jpg)
+
+**Figure 2.:** (A) Distribution of sleep stages for all 12 participants during night 2. (B) Distribution of sleep stages for 21 HMM states during night 2. (C) Distribution of sleep stages for all 12 participants during night 1. (D) Distribution of sleep stages for 21 HMM states during night 1. The Pearson correlation coefficient between sleep stage distributions of HMM states during night 2 and those during night 1 is 0.94, p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The error bars represent the standard error of the mean. Panel (A) slow wave density (the percentage of repetition time (TR) that had slow waves); Panel (B) variation in photoplethysmography (PPG) amplitude (z-score); Panel (C) variation in Respiratory Volume per Time (z-score); Panel (D) variation in Heart Rates; Panel (E) time within a functional MRI (fMRI) Run (TR, 3 s); Panel (F) time since experiment start (TR, 3 s).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The error bars represent the standard error of the mean. Panel (A) slow wave density (the percentage of repetition time (TR) that had slow waves); Panel (B) variation in photoplethysmography (PPG) amplitude (z-score); Panel (C) variation in respiratory volume per time (z-score); Panel (D) variation in heart rates; Panel (E) time within a functional MRI (fMRI) Run (TR, 3 s); Panel (F) time since experiment start (TR, 3 s).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The error bars represent the standard error of the mean.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The error bars represent the standard error of the mean.
 
 To investigate the relationship between HMM states and PSG-based sleep stages, we adopted a ‘winner-takes-all’ approach that assigned HMM states to the sleep stage where they most frequently occurred. Thirteen of the 21 brain states were most frequently associated with N2 sleep stages. HMM states 8 and 10 predominantly occurred during N3 sleep, while HMM states 6 and 19 were prevalent during REM sleep. HMM state 4 corresponded to the undefined sleep stage, and HMM states 13, 16, and 20 were primarily observed during Wake. Intriguingly, none of the HMM states were predominantly linked to N1 sleep. However, HMM state 11 was active for a comparable duration during both the N1 and N2 sleep stages. See Figure 2B.
 
@@ -49,11 +77,23 @@ In Figure 3—figure supplements 1 and 2, we plotted the time courses of two fMR
 
 The temporal characterization of these brain states enabled us to investigate the subtle details of brain dynamics within the traditional PSG-based sleep stages. The average duration, referred to as ‘Lifetime,’ of the HMM states varied from 8.7 to 36 s. Specifically, the mean Lifetime in states associated with N2 stages tended to be shorter compared to those linked to N3, REM, and Wake (with exceptions of state 13), as illustrated in Figure 3—figure supplement 3.
 
-## Sleep states as modules of HMM state transitions
+### Sleep states as modules of HMM state transitions
 
 The use of a data-driven approach empowered us to explore the temporal dynamics of HMM states, and enabled us to investigate whether the fMRI-driven HMM states reveal novel dimensions of the Wake-NREM-REM-Wake sleep cycle that are hidden from traditional PSG analyses. We examined the transition probabilities among HMM states, identifying modules of HMM states that exhibited more frequent transitions between each other than to other states (Stevner et al., 2019; Vidaurre et al., 2017).
 
 The transition probabilities of HMM brain states were organized into a 21×21 transition matrix. To explore the potential clustering of states with prevalent mutual transitions, a modularity analysis was performed on this matrix based solely on transition probabilities (see Methods section for details). As illustrated in Figure 3, this analysis identified five distinct transition modules, encompassing N3-, REM-, Wake-, and two different N2- modules. Importantly, this modularity analysis was conducted independently of PSG-based sleep stages. Interestingly, it revealed a natural clustering of states associated with the same sleep stages. For instance, two HMM states, 6 and 19, both linked to REM sleep, were grouped within the same module.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig3-v1.jpg)
+
+**Figure 3.:** Each row represents the transition probability of the current HMM state (y-axis) to other states (x-axis). Twenty-one HMM states were categorized into five modules (black boxes): from left to right, light-N2 module (states 5, 7, 9, 14, 15, 18, 21), N3 module (states 4, 8, 10), deep-N2 module (states 1, 2, 3, 12, 17), rapid eye movement (REM) module (states 6 and 19), and Wake module (states 11, 13, 16, 20). The pie chart under each state represents the sleep stage distribution for the state.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The HMM states are organized based on the results of modular analysis. The error bars represent the standard error of the mean.
 
 Twelve N2-related HMM states were divided into two separate modules. The first module is characterized as the light-N2 module, with higher transition probabilities to REM and Wake modules compared to the other module. The second module exhibited low transition probabilities to both the REM and Wake modules and is referred to as the deep-N2 module.
 
@@ -61,15 +101,31 @@ A similar duality was evident within the REM module. HMM state 19 displayed a no
 
 Within the Wake module, four HMM states were observed. State 11 was found to be linked to both N1 and N2 sleep stages, while the other three states (13, 16, and 20) were associated with the Wake stages. Further investigation revealed that state 13 typically occurred later in the night and later within an MRI run (see Figure 2—figure supplement 1E, F), suggesting it represents post-sleep wakefulness, whereas states 16 and 20 were pre-sleep wakefulness. State 13 also showed higher PPG variation, respiratory variation, and heart rates than states 16 and 20 (see Figure 2—figure supplement 1B–D). This observation was confirmed by the transition probability matrix, that only HMM state 13 has a lower chance of transition into N2- or N3 -related states, especially for the states within the light-N2 module, compared to HMM states 16 and 20.
 
-## HMM states generalize to night 1 fMRI data
+### HMM states generalize to night 1 fMRI data
 
 Next, to test the robustness of our HMM approach, we employed a semi-supervised learning approach to predict night 1 data based on the model trained on night 2 data. Specifically, we maintained state assignments from night 2 and applied the model to night 1. The resulting model indicated that despite having fewer REM and N3 stages during night 1 (See Figure 2A, C), there was a significant correlation between the sleep stage proportions of the HMM states for night 1 and those for night 2 (r=0.94, p<0.0001, see Figure 2B, D). Moreover, the physiological variables displayed similar patterns between night 1 and night 2 (see Figure 2—figure supplements 1 and 2).
 
-## fMRI activation and FC patterns of HMM states
+### fMRI activation and FC patterns of HMM states
 
 To investigate brain activity patterns specific to individual HMM states, we calculated the spatial fMRI activation map and FC pattern of each HMM state relative to the averages over all HMM states. Figure 4—figure supplement 1 showcases the mean fMRI activation for each state, while the associated FC patterns are depicted in Figure 4—figure supplement 2.
 
 For mean fMRI activation, Wake-related HMM state 20 demonstrated the classic opposite activation pattern between the default-mode network (DMN) and its anti-correlated networks (ACNs), see Figure 4 and Figure 4—figure supplement 1. In contrast, during sleep-related HMM states, e.g., states 8 and 10, DMN and FPN showed the same activation direction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig4-v1.jpg)
+
+**Figure 4.:** Bottom right panel: illustration of DMN (purple) and FPN (green) nodes. Note: DMN: Default Mode Network; FPN: Frontoparietal Network.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Notes: Un: Undefined Network; DMN: Default Mode Network; VIS: Visual Network; FPN: Frontoparietal Network; REW: Reward Network; DAN: Dorsal Attention Network; VAN: Ventral Attention Network; SAL: Salience Network; CON: Cingulo-Opercular Network; dSMN: Somatomotor Dorsal Network; lSMN: Somatomotor Lateral Network; AUD: Auditory Network; PMN: ParietoMedial Network; MTL: Medial Temporal Network; pHIP: Posterior Hippocampus; BG: Basal Ganglia; THAL: Thalamus; CB: Cerebellar Cortex.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** HMM states were color-coded based on modules (Green: light N2 module; Dark Blue: N3 module; Light Blue: deep N2 module; Orange: rapid eye movement (REM) module; Yellow: Wake Module). Notes: Y-axis from top to bottom or X-axis from left to right: Un: Undefined Network; DMN: Default Mode Network; VIS: Visual Network; FPN: Frontoparietal Network; REW: Reward Network; DAN: Dorsal Attention Network; VAN: Ventral Attention Network; SAL: Salience Network; CON: Cingulo-Opercular Network; dSMN: Somatomotor Dorsal Network; lSMN: Somatomotor Lateral Network; AUD: Auditory Network; PMN: ParietoMedial Network; MTL: Medial Temporal Network; pHIP: Posterior Hippocampus; BG: Basal Ganglia; THAL: Thalamus; CB: Cerebellar Cortex.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98739/elife-98739-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The color bar represents Pearson correlation coefficients. The figure depicts similar modules as the results of the modular analysis in Figure 3. For example, states within the Deep-N2 module (states 1, 2, 3, 12, and 17) are highly correlated to each other. These states also show a higher similarity with the N3 module compared to the states within the Light-N2 module (states 5, 7, 9, 18, 21, and 15, except for state 14, which might be due to high physiological variation associated with state 14, see Figure 2—figure supplements 1 and 2). Rapid eye movement (REM) states 6 and 19 correlated with each other. States within the Wake module (11, 13, 16, and 20) highly correlated with each other.
 
 For FC patterns, similar anti-correlated patterns were found (see Figure 4—figure supplement 2). In wake-related HMM states 16 and 20, the FCs between DMN and Salience Network (SAL)/Control Network (CON) were negative, while during N3-related HMM states 8 and 10, these FCs were positive.
 
@@ -77,13 +133,13 @@ As expected, the FC patterns between the Visual Network (VIS) and other sensory 
 
 When we correlated the FC patterns of each state to those of another state, the FC patterns of states that belong to the same module or are related to the same PSG-based sleep stages were highly correlated (similar to the modular results in Figure 3), see Figure 4—figure supplement 3.
 
-## Motion parameters with sleep stages
+### Motion parameters with sleep stages
 
 Averaged motion across six motion parameters decreased from wake to light sleep to deep sleep at night 2. For example, the mean (standard deviation) motion for each sleep stage is as follows, N1: 0.043 (0.37); N2: 0.039 (0.033); N3: 0.035 (0.031); REM: 0.035 (0.032); Wake: 0.057 (0.052).
 
 Similarly, the percentage of time points retained after censoring decreased from wake to light sleep to deep sleep at night 2. N1: 98.2%; N2: 99.2%; N3: 99.1%; REM: 98.7%; Wake 92.7%.
 
-## EEG spectral features across HMM states
+### EEG spectral features across HMM states
 
 We conducted spectral analysis for each TR and calculated the average power spectrum of Cz for each common EEG brainwave—Delta (0.5–4 Hz), Theta (4–8 Hz), Alpha (8–13 Hz), Beta (13–30 Hz), and Gamma (30–100 Hz)—across the 21 HMM states. See Figure 2—figure supplements 3 and 4 for night 2 and night 1 data, respectively. As expected, we found that N3-related states 8 and 10 had the highest Delta power on both nights. In addition, the Deep-N2 module had higher power in the Theta and Alpha bands compared to the Light-N2 module.
 
@@ -113,7 +169,7 @@ To summarize, we demonstrated how a data-driven analysis of an extensive sleep f
 
 ## Methods
 
-## Data acquisition and processing
+### Data acquisition and processing
 
 All the data used in this study followed approved human subjects research protocols approved by the National Institutes of Health Combined Neuroscience Institutional Review Board (USA, Protocol Number 16 N-0031), and informed consent was obtained from the participants. Data acquisition was conducted as part of a previously described sleep experiment (Moehlman et al., 2019), encompassing two consecutive nights of concurrent fMRI-EEG data collection while participants slept inside a 3T Siemens Prisma MRI scanner. To ensure a consistent sleep schedule, participants were instructed to adhere to regular sleep patterns for two weeks before the experiments, and compliance was verified with wearable devices. No sleep deprivation protocols were implemented during the course of the study.
 
@@ -123,7 +179,7 @@ Additionally, concurrent peripheral physiological measures were acquired, includ
 
 A total of 12 subjects (aged 18–35 years, including 8 females), out of 16 attempts, completed both nights of scanning (from 23:00 to 07:00 roughly). Throughout each night, the fMRI experiments were intermittently disrupted by either acoustically stimulated or spontaneous awakenings. As a consequence, a series of experimental runs was generated, with durations ranging from 5 min to 3 hr. Detailed fMRI, EEG, and peripheral physiological measures preprocessing steps can be found elsewhere (Moehlman et al., 2019; Picchioni et al., 2022). Briefly, a tailored version of the ‘afni_proc’ script in AFNI software was used (Cox, 1996), including outlier removal, detrend, RETRIOCOR (Glover et al., 2000), slice timing correction, motion correction, normalization, registration, global signal removal, and censoring (Euclidean Norm of the first difference of six motion parameters exceeded 0.3). Previous analysis of the same data indicated that motion during extended sleep scans is comparable to the motion observed in shorter resting-state scans (Moehlman et al., 2019). We also found that motion is lower during deep sleep compared to wake, see Results. The EEG signal underwent correction for MRI gradient and cardio-ballistic artifacts and was subsequently down-sampled to a rate of 250 Hz using the Analyzer software (Brain Vision, Morrisville, USA). The process of sleep scoring was carried out using a central electrode in 30 s epochs, in accordance with established criteria with standard filters, and channel references (Berry et al., 2020). ICA cleaning and slow wave auto-detection script were applied to EEG signals (Betta et al., 2021; Mensen et al., 2016; Riedner et al., 2007). Sleep score, slow wave density, and peripheral physiological measures were resampled into a 3 s resolution aligned with the BOLD signal.
 
-## HMM overview
+### HMM overview
 
 In pursuit of a data-driven approach to understanding the brain dynamics in the fMRI signals, we employed an HMM (Vidaurre et al., 2018; Vidaurre et al., 2017) to analyze timecourses extracted from 300 ROIs based on the Seitzman 300-ROI atlas (Seitzman et al., 2020). To prepare the data for analysis, we first standardized the participant-specific sets of 300 ROI timecourses (scaled to a mean of 0, and a standard deviation of 1), which were then concatenated across all participants. This standardization was performed separately for each night. This resulted in a data matrix with dimensions of 300 × (12 ×~5500) for each night, with approximately 5500 repetition time (TR), excluding breaks between runs and censored TR, accounting for 8 hr of scan time based on a 3 s TR.
 
@@ -131,7 +187,7 @@ The HMM inference process sought to find a sequence of recurring discrete states
 
 Given the high spatial dimensionality of fMRI data, we employed principal component analysis (PCA) to reduce the number of parameters in the decomposition process as a common practice. This not only improves the signal-to-noise ratio but also enhances the overall robustness of HMM results (Stevner et al., 2019; Vidaurre et al., 2018; Vidaurre et al., 2017). By selecting the top 13 principal components, we retained 40.7% of the signal variance, resulting in a data matrix with dimensions of 13 × (12 × ~5500). This matrix was then input into the HMM. For a more detailed overview of the analytical workflow, please refer to Figure 1.
 
-## Choice of the number of HMM states
+### Choice of the number of HMM states
 
 Our analysis involved running the HMM across a range of model orders, specifically spanning from 4 to 25. The assessment of each solution encompassed various summary statistics, with the most pertinent findings illustrated in Figure 1—figure supplement 1.
 
@@ -143,14 +199,14 @@ To assess the relationship between the fMRI-based HMM states and PSG-based sleep
 
 Taken together, we chose the model order K=21 as the number of HMM states. It should be noted that free energy is weighted most among those five model evaluation statistics.
 
-## Analysis and visualization of HMM transitions
+### Analysis and visualization of HMM transitions
 
 The transition probability matrix, a fundamental element explicitly modeled by HMM, exhibited a discernible structure characterized by subnetworks of HMM states that displayed more frequent transitions among themselves than to states external to their respective subnetworks. Essentially, this transition matrix could be viewed as a directed graph marked by a modular organization. This characteristic was effectively demonstrated by applying the transition matrix (depicted in Figure 3) to a modularity analysis. This modular analysis was performed using MATLAB functions sourced from the Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/Home; Rubinov and Sporns, 2010), which relies on Newman’s spectral community detection method (Leicht and Newman, 2008).
 
-## Visualizing mean fMRI activation maps and FC patterns of HMM states
+### Visualizing mean fMRI activation maps and FC patterns of HMM states
 
 The mean distributions and covariance matrices specific to each state were subsequently projected back onto the MNI space utilizing the mixing matrix derived from the PCA. We generated mean fMRI activation maps and FC patterns for every HMM state relative to the baseline averaged over all HMM states. For FC patterns, within- or between-network connectivities were calculated as the average Fisher-transformed functional connectivity between each pair of ROIs within or between networks. For visualization purposes, we grouped 300 ROIs into 14 networks based on the Seitzman Atlas (Seitzman et al., 2020). In addition, we assigned subcortical and cerebellar regions to the additional four Networks: Posterior hippocampus (pHIP, anterior hippocampus is included in MTL network), basal ganglia (BG), Thalamus (THAL), and Cerebellum (CB). Hence, a total of 18 networks were used.
 
-## Visualizing state timecourse of HMM states and its associations with PSG stages, PPG amplitude, and respiratory signals
+### Visualizing state timecourse of HMM states and its associations with PSG stages, PPG amplitude, and respiratory signals
 
 Two example runs have been shown in Figure 3—figure supplements 1 and 2. These two examples showed how the HMM state timecourse (top panel) contained fine-grained information compared to the traditional PSG-based sleep stages (second panel) and also associated with PPG (third panel) and respiratory signals (last panel).

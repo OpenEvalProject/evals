@@ -29,7 +29,7 @@
 
 ## Abstract
 
-Over-accumulation of oxalate in humans may lead to nephrolithiasis and nephrocalcinosis. Humans lack endogenous oxalate degradation pathways (ODP), but intestinal microbes can degrade oxalate using multiple ODPs and protect against its absorption. The exact oxalate-degrading taxa in the human microbiota and their ODP have not been described. We leverage multi-omics data (>3000 samples from >1000 subjects) to show that the human microbiota primarily uses the type II ODP, rather than type I. Furthermore, among the diverse ODP-encoding microbes, an oxalate autotroph, Oxalobacter formigenes , dominates this function transcriptionally. Patients with inflammatory bowel disease (IBD) frequently suffer from disrupted oxalate homeostasis and calcium oxalate nephrolithiasis. We show that the enteric oxalate level is elevated in IBD patients, with highest levels in Crohn’s disease (CD) patients with both ileal and colonic involvement consistent with known nephrolithiasis risk. We show that the microbiota ODP expression is reduced in IBD patients, which may contribute to the disrupted oxalate homeostasis. The specific changes in ODP expression by several important taxa suggest that they play distinct roles in IBD-induced nephrolithiasis risk. Lastly, we colonize mice that are maintained in the gnotobiotic facility with O. formigenes , using either a laboratory isolate or an isolate we cultured from human stools, and observed a significant reduction in host fecal and urine oxalate levels, supporting our in silico prediction of the importance of the microbiome, particularly O. formigenes in host oxalate homeostasis.
+Over-accumulation of oxalate in humans may lead to nephrolithiasis and nephrocalcinosis. Humans lack endogenous oxalate degradation pathways (ODP), but intestinal microbes can degrade oxalate using multiple ODPs and protect against its absorption. The exact oxalate-degrading taxa in the human microbiota and their ODP have not been described. We leverage multi-omics data (>3000 samples from >1000 subjects) to show that the human microbiota primarily uses the type II ODP, rather than type I. Furthermore, among the diverse ODP-encoding microbes, an oxalate autotroph, Oxalobacter formigenes, dominates this function transcriptionally. Patients with inflammatory bowel disease (IBD) frequently suffer from disrupted oxalate homeostasis and calcium oxalate nephrolithiasis. We show that the enteric oxalate level is elevated in IBD patients, with highest levels in Crohn’s disease (CD) patients with both ileal and colonic involvement consistent with known nephrolithiasis risk. We show that the microbiota ODP expression is reduced in IBD patients, which may contribute to the disrupted oxalate homeostasis. The specific changes in ODP expression by several important taxa suggest that they play distinct roles in IBD-induced nephrolithiasis risk. Lastly, we colonize mice that are maintained in the gnotobiotic facility with O. formigenes, using either a laboratory isolate or an isolate we cultured from human stools, and observed a significant reduction in host fecal and urine oxalate levels, supporting our in silico prediction of the importance of the microbiome, particularly O. formigenes in host oxalate homeostasis.
 
 ## Introduction
 
@@ -43,33 +43,85 @@ Inflammatory bowel disease (IBD) patients are at increased risk for oxalate toxi
 
 ## Results
 
-## Type I and type II microbial oxalate degradation pathways
+### Type I and type II microbial oxalate degradation pathways
 
 To determine the oxalate degradation pathways (ODPs) used by human gut bacteria, we curated all experimentally validated microbial ODP from literature review and database searches (see Materials and methods) (Allison et al., 1985; Anand et al., 2002; Blackmore and Quayle, 1970; Daniel et al., 2004; Dumas et al., 1993; Foster et al., 2012; Pierce et al., 2010). We classified those ODPs into two types based on their enzymatic mechanisms and co-factor requirements. Type I ODPs cleave the oxalate carbon-carbon (C-C) bond in a single step (Figure 1A). The two recognized type I enzymes, oxalate oxidase and oxalate decarboxylase, are indistinguishable at the amino acid level; therefore, we refer to them jointly as oxalate oxidase/decarboxylase (OXDD) (Figure 1A). Type II ODPs consists of two enzymatic reactions requiring coenzyme A as co-factor (Figure 1A). First, a coenzyme A molecule is added to oxalate to form oxalyl-CoA via enzymes including formyl-CoA transferase (FRC) (Figure 1A). In the second step, oxalyl-CoA decarboxylase (OXC) metabolizes oxalyl-CoA into CO2 and formyl-CoA (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schema of type I and type II ODP. Enzymes are annotated with corresponding KEGG IDs. OXDD, FRC, and OXC are the focus of the present study. (B). Cladogram of microbial genera that encode oxalate-degrading enzymes OXDD, FRC, and OXC. The three rings surrounding the cladogram indicate OXDD-, FRC-, or OXC-encoding genera, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Panels focus on OXDD (A), OXC (B), or FRC (C). The pairwise identity between any two protein homologs was calculated based on the multiple alignments using amino acid sequences, by Fitch, 1966 or identity distance matrix (see Materials and methods for details). The number of ODE homologs available for each class is indicated in parenthesis. Classes with >20 ODE are shown.
+
 Knowing the relevant oxalate degradation enzymes (ODEs), we then acquired all available protein homologs of the three ODE OXDD (n = 2836), FRC (n = 1947), and OXC (n = 1284), which enable homology search from UniProt Interpro (Mitchell et al., 2019; Mulder et al., 2005). By tracing the taxonomic origin of the genes encoding those homologs, we found that OXDD-coding taxa can be fungal or bacterial, whereas FRC- and OXC-coding taxa are strictly bacterial (Figure 1B). The frequent co-occurrence of FRC and OXC in individual genomes indicates encoding complete type II ODP (Figure 1B). As expected, OXDD, FRC, and OXC each are conserved within the same microbial class, but exhibit substantial divergence across classes (Figure 1—figure supplement 1). These data provide both a comprehensive inventory of ODPs and a reference set of ODP-encoding microbes, which enable analyses to elucidate those relevant to humans.
 
-## ODPs utilized by the gut microbiota of healthy humans
+### ODPs utilized by the gut microbiota of healthy humans
 
 Next, we asked whether those ODPs are encoded or expressed by microbes within the intestinal tract of healthy humans. To do so, we computationally examined the presence of the ODE within the gut metagenome and metatranscriptome from publicly available samples of healthy humans. From five studies, we analyzed a total of 2359 metagenome and 1053 transcriptome samples from 660 and 165 healthy individuals, respectively (Figure 2—figure supplement 1, Supplementary file 1a). After quality-filtering (see Materials and methods), the sequencing reads were aligned to the unique OXDD, FRC, and OXC homologous proteins we had identified, using DIAMOND Blastx (Buchfink et al., 2015). Alignment pairs with >90% identity were retained for downstream analyses. The alignment cutoff was based on the protein identity of the inter- and intra-species ODEs and determined to be robust for distinguishing ODEs originating from differing microbial species (Figure 2—figure supplement 2).
 
 We found that the majority of the healthy gut microbiomes include ODEs with at least one ODE detected in the metagenome of 607 (92%) of 660 subjects and the metatranscriptome of 132 (80%) of 165 subjects. In the metagenomes, the type II frc and oxc genes were more common (Figure 2A) and more abundant (Figure 2B) than the type I oxdd gene. Similarly, in metatranscriptomes, expressions of type II genes were more common and abundant (Figure 2C,D). Expression of oxdd was only detected in 10 (6%) of the 165 subjects, and the median RPKM was 2-log10 lower than those of frc or oxc (Figure 2C,D). Furthermore, frc and oxc – the coding genes of the two enzymes that catalyze the separate steps in type II PDP – were frequently co-expressed within the same microbiota, indicating expression of the complete type II ODPs (Figure 2—figure supplement 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig2-v2.jpg)
+
+**Figure 2.:** Prevalence (A) and abundance (B) of ODE in the fecal metagenome of five studies surveyed. Numbers written on the bottom bars indicate the numbers of subjects in whom the corresponding ODE is detected, and only those subjects were considered in (B). Prevalence (C) and abundance (D) of OXDD, FRC, and OXC in the fecal metatranscriptome of four studies surveyed. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, by proportion tests for (A) and (C), by multiple-adjusted Mann–Whitney tests for (B) and (C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The metabolic profile is assessed by the HUMAnN2 (Franzosa et al., 2018) pipeline using (see Materials and methods). The metabolic profiles for each subject are calculated by taking the mean measurements provided. The table shows the number of subjects who provided metagenomic (MTG ●) and metatranscriptomic (MTS ▲) data. See Supplementary file 1a for study information.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Panels focus on OXDD (A), OXC (B), or FRC (C). The pairwise protein identities were calculated based on amino acid sequence alignment (see Materials and methods for details). The number of ODE homologs available for each genus is indicated in parenthesis. The blastx identity cutoff 90% used in this study is indicated by the dashed line. Genera with >20 ODE homologs and genus Oxalobacter are shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Subjects with at least one ODE detected in the metatranscriptome are shown, with percent of total subjects displayed in panels, for each study, indicated in parentheses.
+
 These data indicate that microbes utilizing type II rather than type I ODPs predominate in the human intestine. Such finding is consistent in all studies, despite the differences in source populations and sample preparation methods (Supplementary file 1a). For the remaining analyses, we focused on the type II ODPs.
 
-## Microbial species that transcribe the type II ODPs in vivo
+### Microbial species that transcribe the type II ODPs in vivo
 
 Although multiple human commensal microbes are known to encode frc and oxc, whether they transcribe those genes in vivo has not been studied (Abratt and Reid, 2010; Cho et al., 2015; Fontenot et al., 2013; Mogna et al., 2014). We next characterized the microbial species transcribing these type II ODP genes in the microbiota of healthy humans. In the metagenomes of 660 individuals, oxc gene of multiple species, including Escherichia coli, O. formigenes, and several Muribaculaceae, Bifidobacterium, and Lactobacillus sp., was detected (Figure 3A, left); E. coli oxc was the most common (56% of subjects), followed by O. formigenes oxc (39% of subjects).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-v2.jpg)
+
+**Figure 3.:** (A) Abundance and prevalence of OXC of microbial species in the metagenome (left) or metatranscriptome (right) of 660 and 165 subjects. Box plots indicate the abundance of microbial OXC (log10 RPKM) among subjects in whom OXC is detected, and are generated with ggplot2 with outliers excluded. Bar plots indicate the prevalence of microbial oxc, with percentage annotated. Microbial species are ordered by the corresponding metagenomic OXC prevalence. A parallel analysis for FRC is shown in Figure 3—figure supplement 5. (B) Detection of OXC and FRC of microbial species in the subject-matched metagenome and metatranscriptome, by study. For each microbial ODE, the subjects are divided into four groups (shown in different colors) based on the co-detection of ODE in the matched metagenome and metatranscriptome, with percent (%) of which reflected. The fran Study, from which E. coli ODP was detected in all subjects, used a sample extraction method known to induce E. coli, as noted in their publication (Franzosa et al., 2014). (C) Population-level contribution of individual species to metagenomic (left) or metatranscriptomic (right) OXC. The population-level contribution of each species was calculated at a relative scale (see Materials and methods) and plotted. Raw values can be found in Supplementary file 1a. The 10 species that have the highest metagenomic or metatranscriptomic contribution are shown. A parallel analysis for FRC is shown in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Left and right panels focus on detection in metagenomic and metatranscriptomic data, respectively. (Follows legend of Figure 3A.)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** OXC and FRC of microbes in Figures 3A and 5 were used. Tsne is calculated with Rtsne v0.15 package in R. The OXC- and FRC-specific study effects are not significant, examined using PERMANOVA using 1000 permutations (p>0.1).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (Follows the legend for Figure 3A).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Follows the legend for Figure 3D.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Comparison of ODE detection using ShortBred and using Diamond in all samples (n = 5557) included in this present study. Each point represents the total abundance of FRC, OXC, or OXDD homologs in one individual. Mean measurements were used for study subjects who provided multiple samples. Statistics were generated using Spearman correlations. (B). Abundance and prevalence of FRC of microbial species in the metagenome (left) or metatranscriptome (right) of 660 and 165 subjects. Detection of FRC and OXC protein families by ShortBRED using default parameters. The text on the left indicates the centroid protein for each protein homolog. (B) FRC: All three O. formigenes FRCs (C3 × 9Y2, C3 × 762, and C3 × 2D4) are in a protein family that contains only that one enzyme (See New Supplement File 1 for the clustering centroid-member map). (C) OXC. Unlike results for FRC, no O. formigenes OXC homologs were detected.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Multiple alignment of 5 and the marker peptides. A total of 20 marker peptides (Marker_#1 - Marker_#20) with 16.5 amino acid (AA) median length were identified by ShortBRED-identify using default parameters. Peptides one AA apart were further merged (including the gap AA) into four long marker peptides #21–#24 with median length of 48.5 AA. (B,C) Prevalence (% subject positive) (B) and abundance (C) of merged marker peptides in metatranscriptomes, detected by ShortBRED. The shortest Marker #23 (17 AA) is not detected in any sample. Statistics were done compared to Healthy subjects as the reference for proportion tests (B) and Wilcoxon rank tests (C) with adjustment for multiple comparisons.
 
 In the metatranscriptomes of 167 individuals, oxc gene expression did not directly correlate with corresponding gene abundance or prevalence (Figure 3A, right). O. formigenes oxc expression was both most abundant and most prevalent (in 61% of subjects) in the metatranscriptomes (Figure 3A, right). Despite the detection of E. coli oxc in 56% of subjects, its transcript was present in only 12% of the subjects (Figure 3A). For Bifidobacterium and Lactobacillus species, for which oxalate degradation activity was reported in vitro and in animal models (Federici et al., 2004; Klimesova et al., 2015; Turroni et al., 2010), oxc expression was minimal (<5%) or not prevalent (Figure 3A right). The dichotomy between metagenomic and metatranscriptomic oxc was consistent across different studies (Figure 3—figure supplement 1, Figure 3—figure supplement 2), and also present for the other type II ODP gene frc (Figure 3—figure supplement 3).
 
 To more rigorously examine ODP expression by individual taxa, we further co-analyzed the presence of ODP genes and transcripts matched by subject (Figure 3B). O. formigenes frc and oxc were transcribed in nearly all subjects in whom the genes were detected, as well as in others in whom the gene was not detected, indicating that their expression is common in vivo (Figure 3B). The under-detection of O. formigenes ODP genes in the metagenomes may reflect the highly variable abundance of the organism, often below the lower detection limit using gene-based methods (Barnett et al., 2016; Guo et al., 2017; Kelly et al., 2011; PeBenito et al., 2019). In contrast, E. coli frc and oxc were expressed in only a few subjects even when the corresponding genes were detected metagenomically (Figure 3B). These data indicate that in vivo E. coli rarely transcribe ODP, a pathway used for defense against oxalate-induced stress (Fontenot et al., 2013). In total, these findings demonstrate that ODP transcription varies widely in individual hosts, and by species.
 
-## The contributions of individual species to the global microbiota ODP
+### The contributions of individual species to the global microbiota ODP
 
 We then assessed the impact of individual species on global ODP by quantifying their population-level contributions (see Materials and methods). The contribution of O. formigenes to ODP increased from 17% to 63% from the metagenomic to the metatranscriptomic level, greater than the transcriptomic contributions of all other species combined (Figure 3C, Supplementary file 1b). Conversely, the E. coli contribution to ODP was markedly reduced from the metagenomic (36%) to the metatranscriptomic (7%) level (Figure 3C). Other species had low but varied contributions (Figure 3C). A parallel pattern was observed for frc (Figure 3—figure supplement 4, Supplementary file 1c). With the low activity of non-O. formigenes species, network analysis did not yield significant species-species interactions related to oxc transcription (data not shown). In summary, we found that the type II ODP genes, frc and oxc, are encoded by multiple gut microbes, but O. formigenes dominated this pathway at the transcriptional level. These data provide a baseline for examining disease-associated changes.
 
-## Validation of ODP detection using ShortBRED
+### Validation of ODP detection using ShortBRED
 
 ShortBRED (Kaminski et al., 2015) is a tool for microbiome functional profiling, which clusters protein homologs into clusters, and identifies marker peptide for each cluster, thus potentially achieving high specificity. We reanalyzed all samples using ShortBRED to validate our bioinformatics findings (see Materials and methods). Based on ShortBRED, FRC and OXC were significantly more abundant and more prevalent than OXDD; their abundances were significantly correlated with our previous results (Figure 3—figure supplement 5A). Consistently, O. formigenes was the species with the highest transcriptional activity for FRC (Figure 3—figure supplement 5B). Specifically, each of the three O. formigenes FRC homologs (C3 × 9Y2, C3 × 762, and C3 × 2D4) are distinct from other homologs and from each other; thus, each formed a singleton family (Supplementary file 2) with unique peptide markers (Supplementary file 3). The three O. formigenes FRCs are the most commonly transcribed among FRCs encoded by any taxon. They are present in the metatranscriptome of 50, 52, and 41% of the tested subjects, respectively (Figure 3—figure supplement 5B, right), and also are among the most abundant (ranks 1, 2, and 5) among all FRC proteins (Figure 3—figure supplement 5B, right).
 
@@ -79,29 +131,63 @@ ShortBRED did not detect O. formigenes OXC in any sample. We reasoned that this 
 
 In summary, all of our major conclusions examined were confirmed with ShortBRED. The diamond-mapping method utilizes reference full length and relies on best alignment scores to assign reads with higher sensitivity, while ShortBRED uses unique regions of reference with higher specificity. Because of their different advantages, the two methods are complementary and both were used for downstream analyses.
 
-## Increased enteric oxalate levels and reduced microbial ODP expression in IBD patients
+### Increased enteric oxalate levels and reduced microbial ODP expression in IBD patients
 
 IBD patients, particularly patients suffering from CD, frequently have EH, with oxalate hyperabsorption and calcium oxalate nephrolithiasis (Corica and Romano, 2016; Liu and Nazzal, 2019; McConnell et al., 2002). Ulcerative colitis (UC), regardless of severity and location, is associated with stone formation (Cury et al., 2013), but ileocolonic CD is associated with greater nephrolithiasis risk than either ileal or colonic involvement alone (Cury et al., 2013). We hypothesized that oxalate degradation by the intestinal microbiome may be impaired in IBD patients, leading to more luminal oxalate in the host available for passive absorption.
 
 We tested this hypothesis, using the multi-omics data of IBD patients and healthy subjects from the iHMP-IBD study (Franzosa et al., 2019; Lloyd-Price et al., 2019). The patients were stratified by illness: UC (N = 30 subjects) and CD (N = 54), and the CD group was further divided into CD-L3 (N = 25), with ileocolonic phenotype at baseline and CD-nonL3 (N = 29) without, as defined by the L3 IBD Montreal classification (Satsangi et al., 2006). Consistent with the clinical nephrolithiasis risk, fecal oxalate relative abundances were elevated in both the UC (p=0.005) and CD (p=0.06) patients compared to healthy controls (Figure 4A). All of the CD risk was in the CD-L3 patients (p<0.001), and not in the non-CD-L3 patients, indicating that IBD location, particularly ileocolonic involvement, is key for EH risk (Figure 4A, Figure 4—figure supplement 1). The fecal oxalate levels were not clearly different in relation to disease activity (Damms and Bischoff, 2008; Jowett et al., 2001; Manz et al., 2012; Pathirana et al., 2018; Figure 4—figure supplement 2). We observed increased fecal oxalate in association with higher inflammation levels (fecal calprotectin > 50 µg/g) (Figure 4—figure supplement 2C); since our number of study subjects was small, this relationship needs to be examined with larger patient cohorts in future studies.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-v2.jpg)
+
+**Figure 4.:** (A). Stool oxalate relative abundance (log10) in healthy, UC, CD, CD-L3, or CD-nonL3 subjects from HMP-IBD study. Fecal oxalate relative abundance was determined from untargeted metabolomics data from the iHMP-IBD; measurements related to oxalate were selected and normalized against total metabolites (percent abundance of all observed metabolites) for analysis. L3 refers to the ileocolonic phenotype, according to the Montreal Classification at baseline. Data derived from iHMP-IBD untargeted metabolomics measurements. Prevalence (B) and abundance (C) of OXDD, FRC, and OXC in metatranscriptomes of healthy, UC, CD, or CD-L3 subjects. The 165 healthy controls are combined from four studies (AMP, US_men, fran, HMP2). *: p<0.05, **: p<0.01, ***: p<0.001, ****: p<0.0001 by multiple-adjusted Mann-Whitney tests in (A) and (C), by proportion test in (B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** ***p<0.001 by Mann–Whitney test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) 148 UC patients were divided into two groups based on SCCAI score above and below 4. (B) Subjects were divided based on whether or not fecal calprotection was >50 µg/g (Damms and Bischoff, 2008; Manz et al., 2012; Pathirana et al., 2018). The number of samples in each group is indicated under each box. (C) Spearman correlation between fecal calprotectin (µg/g) and fecal oxalate log10 relative abundance, in samples with calprotectin > 50. (D) Fecal calprotectin levels in association with O. formigenes status in 152 samples from 38 subjects enrolled in iHMP2, according to clinical diagnosis. The presence of O. formigenes was determined by whether O. formigenes frc or oxc was detected in the metagenome or metatranscriptome samples collected from the same subject during the same visit (matched accession ID). The number of samples in each group is indicated under each box. Statistics were done using Wilcoxon Rank Sum tests for (A), (B), and (D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The 165 healthy controls are combined from four studies (AMP, US_men, fran, HMP2). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 by multiple comparison adjusted proportion tests in (A) and Mann–Whitney tests in (B).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The x axis is the log10 abundance of total transcript, which determined by RPKM sum of all homologs in a metatranscriptome samples. The y axis shows the fecal oxalate log10 relative abundance. Spearman Rho and p values are shown.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Metagenomic prevalence (top) and abundance (bottom) of frc and oxc in healthy, UC, CD, and CD-L3 subjects. (B, C) Spearman correlation of fecal oxalate log10 relative abundance and total metagenomic frc (B) and oxc (C) abundance.
+
 The global transcripts of frc and oxc were reduced in the IBD patients compared to the controls in all four studies analyzed (Figure 4B, Figure 4—figure supplement 3). Expression of oxc was detected in 57% UC, 54% CD and 48% CD-L3 subjects, lower than the 71% in healthy individuals (Figure 4B). ODP expression was least impacted in the CD-nonL3 group (Figure 4B, Figure 4—figure supplement 3), in which the fecal oxalate increase was not observed (Figure 4A). The total transcripts of frc and oxc were also significantly lower in IBD patients (Figure 4C, Figure 4—figure supplement 3B) (p<0.001 for frc for all groups compared to healthy, p<0.01 for oxc in UC patients compared to healthy). We also observed that frc expression was significantly inversely correlated with oxalate relative abundance in the UC group (Figure 4—figure supplement 4A). The same inverse trend was marginally observed for oxc but was not statistically significant (Figure 4—figure supplement 4B); thus, this question will need to be examined in larger future cohorts. In contrast to reduced frc and oxc transcripts in IBD patients, the frc and oxc genes were significantly more abundant (Figure 4—figure supplement 5), indicating that the frc- and oxc-encoding taxa (e.g. Enterobascteriaceae) are enriched in the IBD gut but do not actively express ODP.
 
 Collectively, these data showing the reduction of ODP-associated transcripts in the IBD patient microbiota suggest their role in the elevated intestinal oxalate levels, and possibly increased susceptibility to nephrolithiasis.
 
-## Loss of O. formigenes and its ODP-associated transcripts in IBD patients
+### Loss of O. formigenes and its ODP-associated transcripts in IBD patients
 
 We next sought to identify the microbial species accounting for the reduced ODP transcripts in the IBD patients. E. coli and O. formigenes with the largest ODP contributions at the genomic and transcriptional level, respectively, were notable. Using gene and transcript jointly as markers, ODP expression by O. formigenes was detected in ~25% of UC and CD patients (Figure 5A), significantly less than in healthy persons (~70%), either when studies were combined (Figure 5A) or separate (Figure 3B). In contrast, E. coli ODP was detected in nearly all IBD subjects and was transcribed more frequently compared to healthy subjects (Figure 5A). Consistent with the low overall prevalence, transcripts for O. formigenes ODP expression were less abundant (lower RPKM values) in UC, CD, and in CD-L3 patients compared with controls (p<0.01 for all groups) (Figure 5B). In the IBD subjects, the observed O. formigenes ODP genes were always actively expressed (Figure 5A). Significantly elevated fecal calprotectin levels were observed when O. formigenes was absent in healthy individuals and in CD-L3 patients (Figure 4—figure supplement 2D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig5-v2.jpg)
 
-**Figure 5.:** (A) Detection of microbial OXC and FRC in the subject-matched metagenome and metatranscriptome from healthy subjects, UC, CD, or CD-L3 patients. For each species shown, the subjects are divided into one of four categories based on the co-detection of ODE in the matched metagenome and metatranscriptome. (B) Expression of microbial FRC and OXC in the metatranscriptomes of healthy subjects, UC, CD, or CD-L3 patients. Boxplot reflects the subjects, in whose metatranscriptome the corresponding enzyme is detected. *p<0.01, **<0.0001 by multiple-adjusted Mann–Whitney tests.Figure 5—source data 1.
+**Figure 5.:** (A) Detection of microbial OXC and FRC in the subject-matched metagenome and metatranscriptome from healthy subjects, UC, CD, or CD-L3 patients. For each species shown, the subjects are divided into one of four categories based on the co-detection of ODE in the matched metagenome and metatranscriptome. (B) Expression of microbial FRC and OXC in the metatranscriptomes of healthy subjects, UC, CD, or CD-L3 patients. Boxplot reflects the subjects, in whose metatranscriptome the corresponding enzyme is detected. *p<0.01, **<0.0001 by multiple-adjusted Mann–Whitney tests.
 
 In total, these data indicate that the absence of O. formigenes colonization or colonization below the level of detection is responsible for the reduction in global ODP transcripts. E. coli, and Lactobacillus and Bifidobacterium spp. use ODPs to defend against oxalate-induced acid stress; their upregulation in IBD appears secondary to the elevated oxalate levels present.
 
-## Effect on O. formigenes colonization on the host urinary and fecal oxalate levels
+### Effect on O. formigenes colonization on the host urinary and fecal oxalate levels
 
 To validate our bioinformatics prediction that O. formigenes is an important oxalate-degrading organism that can influence oxalate homeostasis in vivo, we examined whether the colonization of O. formigenes results in significant reduction in urinary oxalate in mice (Figure 6A). Mice from our gnotobiotic facility which had a total microbiota 2–3 log10 lower than conventional mice were fed with diet supplemented with 1% sodium oxalate and 0.5% calcium. The 1% dietary oxalate is lower than previous studies (Hatch et al., 2006; Hatch et al., 2011), in order to reduce chronic kidney damage described previously (Mulay et al., 2016b). This diet resulted in significant increase of oxalate (23.3% and 174.8% increase in fecal and urinary oxalate, respectively) compared to normal chow (data not shown). We then colonized these mice with either of two O. formigenes strains, including a widely studied lab strain (OXCC13) and a human O. formigenes isolate from the stool sample of a patient with primary hyperoxaluria type 1 (PH1) isolated as described (Allison et al., 1985). Continued colonization with each was established by qPCR (Figure 6—figure supplement 1). Using targeted oxalate assays, the O. formigenes-colonized mice had significantly lower urinary and fecal oxalate levels, compared to the non-colonized mice (Figure 6B–C); the values from the two measurements tended to correlate in individual mice (Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig6-v2.jpg)
+
+**Figure 6.:** (A) Study design of the mouse experiment. C57Bl/6 mice from our gnotobiotic facility were assigned to three groups. At days 0, 2, and 7, mice were gavaged (blue arrowheads) with O. formigenes strain OXCC13 (n = 5), O. formigenes freshly isolated from a primary hyperoxaluria type 1 (PH1) subject (n = 6), or O. formigenes culture medium alone (Media). Mice were fed with normal chow supplemented with 1% sodium oxalate and 0.5% calcium from day −5 until sacrifice. Urine was obtained from a 48 hr collection (one to two mice per pool) prior to sacrifice, and feces were collected at sacrifice (blue arrowhead). (B, C) Urinary and fecal oxalate in three mouse groups. Urinary oxalate normalized by creatinine in the 48 hr urine samples and fecal oxalate levels per gram of stool samples in the three experimental groups. *p<0.05, by Tukey’s multiple comparisons test. (D) Relationship between fecal and urinary oxalate. Correlation coefficient was computed using Spearman’s r.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63642/elife-63642-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The dashed line represents the lower limit of detection.
 
 In our model, fecal O. formigenes averaged ~5×106 by qPCR (Figure 6—figure supplement 1). In contrast, O. formigenes was below the detection limit (<102) in the jejunum and ileum of most mice (Figure 6—figure supplement 2). These data suggest that O. formigenes primarily colonizes and degrades oxalate in the host colon, which is known to be an important site for oxalate absorption.
 
@@ -129,56 +215,66 @@ In prior human studies, O. formigenes alone can effectively decrease host fecal 
 
 ## Materials and methods
 
-## Meta-omics data of the human microbiome
+### Meta-omics data of the human microbiome
 
 Metagenomic and metatranscriptomic data of healthy human subjects were collected from five and four studies, respectively (Abu-Ali et al., 2018; Ehrlich, 2011; Le Chatelier et al., 2013 Franzosa et al., 2014; Lloyd-Price et al., 2019; Petersen et al., 2017; Schirmer et al., 2018). Metagenomic and metatranscriptomic data of healthy humans and IBD subjects were collected from the iHMP-IBD study (Lloyd-Price et al., 2019). Each sample was cleaned by KneaData to remove low-quality reads and host-associated reads. The metabolic profiles of each sample were surveyed using HUMAnN2 v0.11.1 (Franzosa et al., 2018) under parameters --prescreen-threshold 0.01, --pathways-database metacyc_reactions_level4, metacyc_pathways_structured, and --protein-database uniref50, for the comparison in Figure 2—figure supplement 1. Fecal oxalate relative abundance was determined from untargeted metabolomics data from iHMP-IBD; measurements related to oxalate were selected and normalized against total metabolite (percent abundance of all observed metabolites) for analysis.
 
-## Homologous proteins of ODE
+### Homologous proteins of ODE
 
 The protein homolog families of OXDD, FRC, and OXC were characterized by UniProt Interpro (Mitchell et al., 2019; Mulder et al., 2005) (V70) in protein families IPR017774, IPR017659, and IPR017660, respectively. We acquired the taxonomic origin and amino acid sequences of 2699 OXDD, 1947 FRC, and 1284 OXC homologs. Protein homologs that are 100% identical were then removed, leaving 2519 OXDD, 1556 FRC, and 1037 OXC unique homologs, which were used as a reference database of ODEs for subsequent query against the meta’omics data. Oxalate oxidoreductase (Figure 1A), a recently discovered enzyme for which there only is limited information (Anand et al., 2002; Dumas et al., 1993; Grąz et al., 2016; Kumar et al., 2011; Svedruzić et al., 2007; Tanner et al., 2001), was not considered in this present study.
 
-## Pairwise identity between ODE protein homologs
+### Pairwise identity between ODE protein homologs
 
-Multiple sequence alignments were performed among the unique protein homologs separately, by muscle (Edgar, 2004) in seaview v4.7 (Gouy et al., 2010), and alignments were trimmed and imported into R. The pairwise alignment distance d was calculated using function dist.alignment in the seqinR package (Charif et al., 2005) based on identity or Fitch matrix (Fitch, 1966). The alignment distance d was subsequently converted to percent protein identity 100*(1−d2), following the documentation of dist.alignment.
+Multiple sequence alignments were performed among the unique protein homologs separately, by muscle (Edgar, 2004) in seaview v4.7 (Gouy et al., 2010), and alignments were trimmed and imported into R. The pairwise alignment distance $d$ was calculated using function dist.alignment in the seqinR package (Charif et al., 2005) based on identity or Fitch matrix (Fitch, 1966). The alignment distance $d$ was subsequently converted to percent protein identity $100*(1−d^{2})$, following the documentation of dist.alignment.
 
-## Detection of ODE in the meta-omics data
+### Detection of ODE in the meta-omics data
 
 We used two different approaches with complementary methodologies to ensure the conclusions are robust.
 
-## Population-level contribution to ODE
+### Population-level contribution to ODE
 
-The population-level contribution of a species to ODE was designed as a measurement to take both prevalence and abundance information into consideration. It is calculated for each ODE separately, based on their abundances (RPKM values). Using oxc as the example, suppose there are Moxc-coding species and N samples. In any given sample j, the contribution of species i to OXC, cij, is represented by its relative oxc abundance, calculated fromcij= zij/∑i=1Mzij where the zij denotes the RPKMoxc of species i in sample j. In this way, we normalize across samples with the total contribution in any OXC-positive samples fixed to 1, and to 0 in any OXC-negative samples.
+The population-level contribution of a species to ODE was designed as a measurement to take both prevalence and abundance information into consideration. It is calculated for each ODE separately, based on their abundances (RPKM values). Using oxc as the example, suppose there are $M$oxc-coding species and $N$ samples. In any given sample $j$, the contribution of species $i$ to OXC, $c_{ij}$, is represented by its relative oxc abundance, calculated from
 
-The population-level contribution of species i: Ci, can be subsequently calculated from summating contribution of species i in N samples, as followsCi = ∑j=1Ncij
+$$
+c_{ij}= z_{ij}/\sumi=1Mz_{ij} 
+$$
 
-Note that population-level contribution of species monotonically increases with sample size N. Therefore, it has been transformed to relative scale when being compared across different populations or different sample types (metagenome vs. metatranscriptome), such as in Figure 3C, Figure 3—figure supplement 4 and 12.
+where the $z_{ij}$ denotes the RPKMoxc of species $i$ in sample $j$. In this way, we normalize across samples with the total contribution in any OXC-positive samples fixed to 1, and to 0 in any OXC-negative samples.
 
-## BURRITO for linking function to taxa
+The population-level contribution of species $i$: $C_{i}$, can be subsequently calculated from summating contribution of species $i$ in $N$ samples, as follows
+
+$$
+C_{i} = \sumj=1Nc_{ij} 
+$$
+
+Note that population-level contribution of species monotonically increases with sample size $N$. Therefore, it has been transformed to relative scale when being compared across different populations or different sample types (metagenome vs. metatranscriptome), such as in Figure 3C, Figure 3—figure supplement 4 and 12.
+
+### BURRITO for linking function to taxa
 
 BURRITO (McNally et al., 2018) was used to deconvolve ODE genes into taxa at the species level. Taxonomic profiles of healthy metagenome (n = 2539 samples) were generated by Metaphlan2 (Truong et al., 2015) under default parameters. In each sample, RPKM of all FRC or OXC homologs were summed as total abundance of frc or oxc genes and then supplied to BURRITO. The genomic content file was derived from taxonomic annotation of protein homologs from UniProt Interpro. We assumed one copy of frc and oxc for each genome to minimize bias, as such information is not available for all species.
 
-## Network analysis
+### Network analysis
 
 A network analysis of oxc or frc expression from microbial species used SpiecEasi (Kurtz et al., 2015). The raw RPKM values were used, and networks were constructed under default parameters method='mb', sel.criterion='bstars', lambda.min.ratio = 2e-2, nlambda = 100, and pulsar.params=list(rep.num = 20, ncores = 2).
 
-## Code availability
+### Code availability
 
 Source code of the pipeline can be found on Github via https://github.com/ml3958/FindTaxaCtrbt (Liu, 2021; copy archived at swh:1:rev:13bbc4662f458bff327e348162bf51d875ed34d3). Downstream analysis scripts are available per request.
 
-## O. formigenes isolation and culturing
+### O. formigenes isolation and culturing
 
 O. formigenes strain PH1 was isolated from the stool sample of a primary hyperoxaluria patient using methods described in Allison et al., 1985. Both strains were cultured in defined oxalate broth as described (Allison et al., 1985), except that the concentration of oxalate is 50 mM. O. formigenes was cultured at 37°C in an anaerobic chamber before each mouse gavage.
 
-## O. formigenes colonization of mice
+### O. formigenes colonization of mice
 
 A total of 17 C57Bl/6 male mice maintained in our gnotobiotic facility were used. The median of mouse baseline microbiome 16S qPCR measurements was 2.6 × 105, which is significantly lower than that of SPF mice (usually 108 or 109 in our experiments, representing <0.1% of the absolute abundance). The taxa detected in the baseline samples (Supplementary file 1e) did not lead to colonization resistance to the introduced O. formigenes strains.
 
 At days 0, 2, and 7, mice were gavaged with 100 µl from a 24 hr growing culture of O. formigenes strain OXCC13 (n = 5), O. formigenes freshly isolated from a PH1 subject (n = 6), and O. formigenes culture medium alone (n = 6). Mice were fed normal chow supplemented with 1% sodium oxalate from study commencement (day −5) until mouse sacrifice at day 35. We did not perform an explicit power analysis since there is no previous data on our animal model and experimental conditions. We thought that five to six mice per group is a reasonable number of mice per group to show a significant change in urinary oxalate. Biological replicates are parallel measurements of biologically distinct samples that capture random biological variation, which may itself be a subject of study or a noise source. In each mouse group, we performed five to six biological replicates by gavaging material (culture media, growing culture of strain OXCC13 or PH1) into five to six mice.
 
-## DNA extraction and O. formigenes quantitative PCR
+### DNA extraction and O. formigenes quantitative PCR
 
 Murine fecal pellets or intestinal contents were collected and stored at −80°C until DNA was extracted, using the MoBio 96-well extraction kit, following the manufacturer’s instructions. We confirmed that mice were colonized with O. formigenes at sacrifice using qPCR of fecal samples (Figure S16). qPCR was used to quantitate the number of copies of the oxc mRNA using the LightCycler 480 SYBR Green I Master Mix and run using the LightCycler 480 system. Paired primers (forward 5′-TGT-TTG-TCG-GCA-TTC-CTA-TC-3′, reverse 5′-TTG-GGA-AGC-AGT-TGG-TGG-3′) were used under the conditions: 95°C for 10 min, followed by 40 cycles of: 95°C for 23 s, 63°C for 20 s, 70°C for 40 s, and a final 30 s at 40°C as described (Pebenito et al., 2019).
 
-## Fecal and urinary collections and oxalate measurements
+### Fecal and urinary collections and oxalate measurements
 
 Mice were housed (n = 1 or 2) in metabolic cages, and 48 hr collections (1–2 mice per urine pool) were made under mineral oil into vessels containing crystal thymol as a preservative. Urinary oxalate (mg/dl) and creatinine (mg/dl) concentrations were determined in acidified (HCl) samples collected from all mice over a 48 hr period by Litholink Corp (Chicago, IL). Fecal pellets were collected at the end of the urine collections. Fecal pellets were acidified using 2M HCl, vortexed for 20 min, and then centrifuged at 21,000 g at room temperature, and supernatant fecal water collected using described methods (Jiang et al., 2011). Fecal water oxalate was measured using an oxalate calorimetric assay (Abcam, ab196990, Cambridge, UK) per the manufacturer’s instructions. Technical replicates are repeated measurements of the same sample that represent independent measures of the random noise associated with protocols or equipment. Fecal oxalate and qPCR were measured in duplicates.

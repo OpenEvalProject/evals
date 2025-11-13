@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02e7b5302 School of Biological Sciences, Nanyang Technological University Singapore Singapore
+1. School of Biological Sciences, Nanyang Technological University Singapore Singapore ([ROR:02e7b5302](https://ror.org/02e7b5302))
 2. Medisix Therapeutics Singapore Singapore
 
 † Corresponding author
 
 ## Abstract
 
-How the intra-Golgi secretory transport works remains a mystery. The cisternal progression and the stable compartment models have been proposed and are under debate. Classic cisternal progression model posits that both the intra-Golgi transport and Golgi exit of secretory cargos should occur at a constant velocity dictated by the cisternal progression; furthermore, COPI-mediated intra-Golgi retrograde transport is essential for maintaining the Golgi organization. Leveraging our recently developed Golgi imaging tools in nocodazole-induced Golgi ministacks, we found that the intra-Golgi transport velocity of a secretory cargo decreases during their transition from the cis to the trans -side of the Golgi, and different cargos exhibit distinct velocities even within the same cisternae. We observed a vast variation in the Golgi residence times of different cargos. Remarkably, truncation of the luminal domain causes the Golgi residence time of Tac — a standard transmembrane secretory cargo without intra-Golgi recycling signals — to extend from 16 min to a notable 3.4 hr. Additionally, when COPI-mediated intra-Golgi retrograde transport was inhibited by brefeldin A, we found that nocodazole-induced Golgi can remain stacked for over 30–60 min. Therefore, our findings challenge the classical cisternal progression model and suggest the stable compartment nature of the Golgi.
+How the intra-Golgi secretory transport works remains a mystery. The cisternal progression and the stable compartment models have been proposed and are under debate. Classic cisternal progression model posits that both the intra-Golgi transport and Golgi exit of secretory cargos should occur at a constant velocity dictated by the cisternal progression; furthermore, COPI-mediated intra-Golgi retrograde transport is essential for maintaining the Golgi organization. Leveraging our recently developed Golgi imaging tools in nocodazole-induced Golgi ministacks, we found that the intra-Golgi transport velocity of a secretory cargo decreases during their transition from the cis to the trans-side of the Golgi, and different cargos exhibit distinct velocities even within the same cisternae. We observed a vast variation in the Golgi residence times of different cargos. Remarkably, truncation of the luminal domain causes the Golgi residence time of Tac — a standard transmembrane secretory cargo without intra-Golgi recycling signals — to extend from 16 min to a notable 3.4 hr. Additionally, when COPI-mediated intra-Golgi retrograde transport was inhibited by brefeldin A, we found that nocodazole-induced Golgi can remain stacked for over 30–60 min. Therefore, our findings challenge the classical cisternal progression model and suggest the stable compartment nature of the Golgi.
 
 ## Introduction
 
@@ -40,35 +40,378 @@ Here, we utilized past and newly acquired GLIM and Golgi residence time data to 
 
 ## Results
 
-## The intra-Golgi transport is not a motion with constant velocity
+### The intra-Golgi transport is not a motion with constant velocity
 
 The classic cisternal progression model postulates that the intra-Golgi transport velocity of a secretory cargo should remain constant. However, this prediction has not been directly tested due to the inherent challenge of measuring the intra-Golgi transport velocity. The advent of GLIM has allowed us to address this issue. In GLIM, briefly, HeLa cells expressing the RUSH secretory cargo (RUSH reporter) (Boncompain et al., 2012) and GalT-mCherry, a trans-Golgi marker containing amino acids 1–81 of B4GALT1, were initially treated with nocodazole. Subsequently, cells were chased in biotin with nocodazole and cycloheximide (a protein synthesis inhibitor) for various lengths of time (t) before immunofluorescence labeling for endogenous GM130, a cis-Golgi marker. Additionally, apart from SBP-GFP, a soluble secretory protein, and SBP-GFP-CD59 (Tie et al., 2016), a glycosylphosphatidylinositol-anchored protein, all RUSH reporters in this study are transmembrane proteins, including TNFα-SBP-GFP, TfR-SBP-GFP (Chen et al., 2017), SBP-GFP-CD8a-furin-WT (Tie et al., 2016), SBP-GFP-CD8a-furin-YA, SBP-GFP-CD8a-furin-AC (Tie et al., 2016), SBP-GFP-CD8a-furin-Y+AC (Tie et al., 2016), SBP-GFP-collagenX (Fourriere et al., 2019), SBP-GFP-Tac (Sun et al., 2020), SBP-GFP-Tac-TC (Sun et al., 2020), and SBP-GFP-E-cadherin (Boncompain et al., 2012). Except for TNFα-SBP-GFP and SBP-GFP, which uses Ii-streptavidin as the ER hook, all RUSH reporters employ signal sequence fused streptavidin-KDEL as their ER hook (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig1-v1.jpg)
+
+**Figure 1.:** (1) Streptavidin-KDEL (ER hook), (2) SBP-GFP-CD8a-furin-WT, (3) SBP-GFP-CD8a-furin-YA, (4) SBP-GFP-CD8a-furin-AC, (5) SBP-GFP-CD8a-furin-Y+AC, (6) SBP-GFP-CD59, (7) TfR-SBP-GFP, (8) SBP-GFP-E-cadherin, (9) SBP-GFP-collagenX, (10) SBP-GFP-Tac, (11) SBP-GFP-Tac-TC, (12) Ii-streptavidin (ER hook), (13) TNFα-SBP-GFP, and (14) SBP-GFP. ss, signal sequence. SBP, streptavidin binding peptide. (1) is the ER hook for RUSH reporters (2-11), while (12) is the ER Hook for the RUSH reporter (13-14). Key cytosolic amino acid motifs are indicated for furin cytosolic tail RUSH reporters. YA is YKGL, a tyrosine-based motif, to AKGL mutation, while AC is SDSEEDE, an acidic cluster sequence, to ADAAAAA mutation (Tie et al., 2016). Y+AC indicates mutations in both sites (Tie et al., 2016).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A diagram that illustrates the principle behind GLIM. In the Golgi ministack, three proteins, GM130 (endogenous, cis-Golgi marker), GalT-mCherry (transfected, trans-Golgi marker), and protein X (transfected or endogenous, Golgi protein of interest) are fluorescently labeled. The centers of fluorescence mass (centers) of the three proteins can be calculated. The Golgi axis is defined as the vector from the center of GM130 to that of GalT-mCherry. The distance from the center of GM130 to that of GalT-mCherry is denoted as d1, while the distance from the center of GM130 to that of protein X is dx. The LQ is then calculated as dx/d1. (B–E) An example that illustrates the study of intra-Golgi transport kinetics using the RUSH reporter (SBP-GFP-Tac) and GLIM. HeLa cells co-expressing SBP-GFP-Tac and GalT-mCherry were treated with nocodazole for 3 hr, followed by a biotin chase for various durations. Cells were then immunostained for endogenous GM130 and imaged using wide-field microscopy (B). Scale bar, 10 µm. The image acquired after 20 min biotin chase was selected to demonstrate the image processing for GLIM. The background-subtracted image is displayed in binary intensity to enhance the visualization of ministacks with varying intensities (C). Analyzable ministacks (outlined by yellow contours) were manually selected after intensity thresholding (D). A gallery of 31 analyzable ministacks from (D) and the corresponding LQ histogram (n=1 cell) are shown in (E) and (F), respectively. The LQ histogram of n=8 cells is shown in (G). (H–M) Assessing the Auto-GLIM tool. HeLa cells co-expressing GalT-mCherry and SBP-GFP-Tac-TC were treated with nocodazole for 3 hr, fixed, and immunostained for endogenous GM130. The image in (H) was acquired by wide-field microscopy. It is subjected to the Auto-GLIM tool with a frame of 72×72 pixels to detect the cell contour (marked by the yellow line) (I), conduct background subtraction (J), and select analyzable Golgi ministacks (marked by yellow lines) (K). Scale bar, 10 µm. The resulting histogram of LQs is shown in (L). We also acquired LQs using the conventional manual method (M), demonstrating strong agreement between the two approaches.
 
 We calculated the centers of mass as the positions of GM130, RUSH reporter, and GalT-mCherry within each analyzable Golgi ministack. The RUSH reporter’s Golgi localization quotient, or LQ, is calculated by dividing its distance from GM130 by GalT-mCherry’s distance from GM130 (Figure 1—figure supplement 1A–G). The LQ is a linear numerical metric to indicate a cargo’s axial localization within the Golgi, with a nanometer range of precision (Tie et al., 2017; Tie et al., 2016). We previously linearly defined regions of Golgi: ERES/ERGIC (LQ<–0.25), cis (–0.25≤LQ< 0.25), medial (0.25≤LQ<0.75), trans-Golgi (0.75≤LQ<1.25), and TGN (LQ≥1.25).
 
 To analyze the intra-Golgi transport kinetics of secretory cargos, we measured the LQs of RUSH reporters after various durations of biotin administration (chase). Most kinetic data were previously reported in HeLa cells (Tie et al., 2017; Tie et al., 2016) and re-analyzed here. Additionally, we generated new data and replicated specific measurements. GLIM involves laborious manual image analysis. To increase image analysis efficiency, we developed a software tool, Auto-GLIM, to automatically analyze ministack images and calculate LQs by using a deep learning algorithm (the manuscript will be published elsewhere). We found that Auto-GLIM can produce LQs similar to the conventional manual analysis method (Figure 1—figure supplement 1H–M) but requires much less user interaction, therefore, increasing our image analysis efficiency. We employed the Auto-GLIM tool to analyze the intra-Golgi transport of RUSH reporters, SBP-GFP-CD59 and SBP-GFP-Tac-TC, in HEK293T cells.
 
-Figure 2, Figure 2—figure supplement 1 illustrate that our LQ vs. t plots are highly reproducible. As previously reported, all LQ vs. t plots fit the following first-order exponential function (Equation 1) well with an adjusted R2 (adj. R2)≥0.85 (Figure 2, Figure 2—figure supplement 1A-T, left panels).(1)LQ=y0−Ae(−ln2tintrat)\begin{document}$$\displaystyle LQ=y_{0}- Ae^{\left (\frac{- ln2}{t_{intra}}t\right)}$$\end{document}
+Figure 2, Figure 2—figure supplement 1 illustrate that our LQ vs. t plots are highly reproducible. As previously reported, all LQ vs. t plots fit the following first-order exponential function (Equation 1) well with an adjusted R2 (adj. R2)≥0.85 (Figure 2, Figure 2—figure supplement 1A-T, left panels).
 
-In Equation 1, t represents chase time in minutes (biotin treatment starts at t=0); ln2 is the natural logarithm of 2; A is a constant; y0 represents the LQ of the Golgi exit site; tintra is the time that the cargo reaches half of the transport range and is hereafter referred to as the intra-Golgi transport time. Table 1 lists tintra, y0, and adj. R2 of each data set. We define the instantaneous intra-Golgi transport velocity as the derivative of LQ with respect to time, dLQ/dt, which measures the axial transport velocity of the center of mass of the synchronized cargo wave. It should also follow the first-order exponential function (Equation 2).(2)dLQdt=Aln2tintrae(−ln2tintrat)\begin{document}$$\displaystyle \frac{dLQ}{dt}=\frac{Aln2}{t_{intra}}e^{\left (\frac{- ln2}{t_{intra}}t\right)}$$\end{document}
+$$
+LQ=y_{0}−Ae^{(\frac{−ln2}{t_{intra}}t)}
+$$
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig2-v1.jpg)
+
+**Figure 2.:** HeLa or 293T cells transiently co-expressing individual RUSH reporter and GalT-mCherry were incubated with nocodazole for 3 hr. This was followed by a chase with nocodazole, cycloheximide, and biotin for variable time durations (t) before fixation and GM130 immunostaining. Except for TNFα-SBP-GFP, which uses Ii-streptavidin as the ER hook, all RUSH reporters employ signal sequence fused streptavidin-KDEL as their ER hook. Using Golgi localization by imaging centers of mass (GLIM), LQs for the RUSH reporters were then calculated and plotted. Each panel has an LQ vs. t plot on the left, with n (the number of analyzable Golgi ministacks), adj. R2, y0, and tintra indicated. Error bar, SEM. On the right side of each panel, the dLQ/dt vs. t plot represents the first-order derivative of its corresponding LQ vs. t plot on the left. ERES/ERGIC (LQ<–0.25), cis (–0.25≤LQ<0.25), medial (0.25≤LQ<0.75), trans-Golgi (0.75≤LQ<1.25), and TGN (1.25≤LQ) zones were color-shaded. The LQ vs. t plot in panel G was acquired in 293T cells and analyzed by the Auto-GLIM tool, while the rest are from our previous reports (see Table 1). Panels are arranged according to their RUSH reporters’ tintra means (see Table 1). See Figure 2-source data 1 for the raw data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** LQ vs. t plots in (A-D, G, J, and M-O) are generated in this study, while the rest are from our previous reports (see Table 1). See the legend of Figure 2 for details.
+
+In Equation 1, t represents chase time in minutes (biotin treatment starts at t=0); ln2 is the natural logarithm of 2; A is a constant; y0 represents the LQ of the Golgi exit site; tintra is the time that the cargo reaches half of the transport range and is hereafter referred to as the intra-Golgi transport time. Table 1 lists tintra, y0, and adj. R2 of each data set. We define the instantaneous intra-Golgi transport velocity as the derivative of LQ with respect to time, dLQ/dt, which measures the axial transport velocity of the center of mass of the synchronized cargo wave. It should also follow the first-order exponential function (Equation 2).
+
+$$
+\frac{dLQ}{dt}=\frac{Aln2}{t_{intra}}e^{(\frac{−ln2}{t_{intra}}t)}
+$$
+
+**Table 1.**
+ Intra-Golgi transport kinetics of secretory RUSH reporters in Golgi ministacks.See the legend of Figure 2 for details. #1–4 indicate independent replicates. All data were acquired from HeLa cells except for those labeled with ‘293T,’ which were acquired using 293T cells. Except for TNFα-SBP-GFP and SBP-GFP, which use Ii-streptavidin as the ER hook, all RUSH reporters employ signal sequence fused streptavidin-KDEL as their ER hook. Superscripts 1 and 2 indicate data were re-analyzed from previous publications, (Tie et al., 2016) and (Sun et al., 2020), respectively. WT, wild type. tintra (intra-Golgi transport time), y0, and adj. R2 was calculated by fitting measured LQ vs. time kinetics data to Equation 1. dLQ/dt (at LQ = 0.40) was calculated by Equation 3, and converted to nm/min by multiplying 274 nm per LQ unit. SD, standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RUSH reporter</th>
+      <th>tintra (min) Mean ±SD</th>
+      <th>tintra (min)</th>
+      <th>y0</th>
+      <th>Adj. R2</th>
+      <th>dLQ/dt (at LQ = 0.40)</th>
+      <th>dLQ/dt (at LQ = 0.40) (nm/min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SBP-GFP-CD59 #1 (293T)</td>
+      <td rowspan="3">5±4</td>
+      <td>0.4</td>
+      <td>0.66</td>
+      <td>0.94</td>
+      <td>0.244</td>
+      <td>66.7</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD59 #2 (293T)</td>
+      <td>7.3</td>
+      <td>0.63</td>
+      <td>0.92</td>
+      <td>0.022</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD59 #3 (293T)</td>
+      <td>6.8</td>
+      <td>0.79</td>
+      <td>0.85</td>
+      <td>0.040</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td>TNFα-SBP-GFP1</td>
+      <td>6.4</td>
+      <td>6.4</td>
+      <td>1.09</td>
+      <td>0.94</td>
+      <td>0.075</td>
+      <td>20.5</td>
+    </tr>
+    <tr>
+      <td>TfR-SBP-GFP</td>
+      <td>7</td>
+      <td>7.0</td>
+      <td>1.16</td>
+      <td>0.99</td>
+      <td>0.075</td>
+      <td>20.6</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-Y+AC #11</td>
+      <td rowspan="3">7±1</td>
+      <td>4.9</td>
+      <td>0.83</td>
+      <td>0.99</td>
+      <td>0.061</td>
+      <td>16.7</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-Y+AC #21</td>
+      <td>7.1</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.059</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-Y+AC #31</td>
+      <td>7.7</td>
+      <td>1.04</td>
+      <td>0.92</td>
+      <td>0.058</td>
+      <td>15.8</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac #12</td>
+      <td>7±2</td>
+      <td>6.0</td>
+      <td>0.86</td>
+      <td>0.98</td>
+      <td>0.053</td>
+      <td>14.6</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac #2</td>
+      <td></td>
+      <td>8.2</td>
+      <td>0.91</td>
+      <td>0.98</td>
+      <td>0.043</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-E-cadherin #11</td>
+      <td rowspan="3">8±1</td>
+      <td>7.6</td>
+      <td>0.98</td>
+      <td>0.99</td>
+      <td>0.053</td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-E-cadherin #21</td>
+      <td>8.7</td>
+      <td>1.15</td>
+      <td>0.96</td>
+      <td>0.060</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-E-cadherin #31</td>
+      <td>6.5</td>
+      <td>1.11</td>
+      <td>0.98</td>
+      <td>0.075</td>
+      <td>20.6</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-collagenX #1</td>
+      <td rowspan="3">8±1</td>
+      <td>9.0</td>
+      <td>1.00</td>
+      <td>0.94</td>
+      <td>0.046</td>
+      <td>12.7</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-collagenX #2</td>
+      <td>9.5</td>
+      <td>0.84</td>
+      <td>0.97</td>
+      <td>0.032</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-collagenX #3</td>
+      <td>6.9</td>
+      <td>0.91</td>
+      <td>0.97</td>
+      <td>0.051</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP</td>
+      <td>10.6</td>
+      <td>10.6</td>
+      <td>0.74</td>
+      <td>0.98</td>
+      <td>0.022</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-YA #11</td>
+      <td rowspan="3">11±5</td>
+      <td>5.9</td>
+      <td>1.49</td>
+      <td>0.98</td>
+      <td>0.13</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-YA #21</td>
+      <td>11.1</td>
+      <td>1.51</td>
+      <td>0.93</td>
+      <td>0.069</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-YA #31</td>
+      <td>16.3</td>
+      <td>1.48</td>
+      <td>0.95</td>
+      <td>0.046</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD591</td>
+      <td>13.0</td>
+      <td>13.0</td>
+      <td>1.03</td>
+      <td>0.97</td>
+      <td>0.034</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac-TC #1 (293T)</td>
+      <td rowspan="3">14.2±0.6</td>
+      <td>14.7</td>
+      <td>0.95</td>
+      <td>0.97</td>
+      <td>0.026</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac-TC #2 (293T)</td>
+      <td>14.3</td>
+      <td>1.00</td>
+      <td>0.98</td>
+      <td>0.029</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac-TC #3 (293T)</td>
+      <td>13.6</td>
+      <td>0.98</td>
+      <td>0.89</td>
+      <td>0.030</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac-TC #12</td>
+      <td rowspan="2">17±3</td>
+      <td>15.5</td>
+      <td>1.05</td>
+      <td>0.97</td>
+      <td>0.029</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-Tac-TC #2</td>
+      <td>19.1</td>
+      <td>1.16</td>
+      <td>0.94</td>
+      <td>0.028</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-WT #11</td>
+      <td rowspan="3">18±5</td>
+      <td>23.6</td>
+      <td>1.63</td>
+      <td>0.96</td>
+      <td>0.036</td>
+      <td>9.9</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-WT #21</td>
+      <td>18.7</td>
+      <td>1.58</td>
+      <td>0.97</td>
+      <td>0.044</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-WT #31</td>
+      <td>13.1</td>
+      <td>1.55</td>
+      <td>0.97</td>
+      <td>0.061</td>
+      <td>16.7</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-AC #11</td>
+      <td rowspan="4">21±5</td>
+      <td>17.9</td>
+      <td>1.73</td>
+      <td>0.99</td>
+      <td>0.052</td>
+      <td>14.1</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-AC #21</td>
+      <td>26.9</td>
+      <td>1.50</td>
+      <td>1.00</td>
+      <td>0.028</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-AC #31</td>
+      <td>23.2</td>
+      <td>1.58</td>
+      <td>0.96</td>
+      <td>0.035</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD8a-furin-AC #41</td>
+      <td>16.8</td>
+      <td>1.62</td>
+      <td>0.99</td>
+      <td>0.050</td>
+      <td>13.8</td>
+    </tr>
+  </tbody>
+</table>
 
 In this context, the intra-Golgi transport velocity is the highest when the cargo enters the secretory pathway (t=0). However, it is crucial to approach this extrapolation cautiously due to the lack of experimental data at t≤5 min, when a RUSH reporter’s high ER background and low Golgi signal make it challenging to select analyzable Golgi ministacks. It is evident that the dLQ/dt of all our RUSH reporters slows to zero as they transit across the Golgi stack to reach LQ = y0 at the trans-Golgi or TGN (Figure 2A-J, Figure 2—figure supplement 1A-T, right panels). At the trans-Golgi, we propose that RUSH reporters that do not target the TGN exit Golgi ministacks in carriers en route to the plasma membrane (Tie et al., 2018; Tie et al., 2016; Tie et al., 2022). Hence, the intra-Golgi transport velocity of a secretory cargo does not remain constant, contradicting the prediction of the classic cisternal progression model.
 
-## The intra-Golgi transport kinetics of collagenX, a cisternal rim partitioned secretory cargo, resemble those of conventional cargos
+### The intra-Golgi transport kinetics of collagenX, a cisternal rim partitioned secretory cargo, resemble those of conventional cargos
 
 CollagenX has been known to assemble into oligomers (Kwan et al., 1991). We previously reported that the collagenX RUSH reporter, SBP-GFP-collagenX, forms large aggregates containing ~190 copies (Tie et al., 2018). With an estimated mean size of ~40 nm, these aggregates are much smaller than FM4 aggregates and procollagen I (>300 nm) (Bonfanti et al., 1998; Volchuk et al., 2000) and, therefore, are not excluded from conventional transport vesicles, which typically have a size of 50–100 nm. However, our previous findings showed that while conventional secretory cargos partition to the cisternal interior during intra-Golgi transport, large cargos such as FM4 aggregates and collagenX preferentially localize to the cisternal rim (Tie et al., 2018), highlighting distinct intra-Golgi transport behavior for different cargo sizes. Hence, we asked if collagenX follows the same intra-Golgi transport kinetics as conventional secretory cargos.
 
 Using the RUSH assay, our LQ vs. t data demonstrated that the intra-Golgi transport of SBP-GFP-collagenX followed a first-order exponential function, with a tintra of 8±1 (mean ± SD, n=3) (Figure 3A–C; Table 1). SBP-GFP-collagenX exited at the trans-Golgi, with a y0 of 0.92±0.08 (mean ± SD, n=3). Additionally, the instantaneous intra-Golgi transport velocity (dLQ/dt) of SBP-GFP-collagenX also decreases in accordance with a first-order exponential function (Figure 3A–C; Table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) GLIM. HeLa cells transiently co-expressing the RUSH reporter, SBP-GFP-collagenX, and GalT-mCherry were imaged during biotin chase (t) and subjected to GLIM. See Figure 2 legend for details. (D) Side averaging. HeLa cells transiently co-expressing the RUSH reporter, SBP-GFP-collagenX, and GalT-mCherry were incubated with nocodazole for 3 hr. This was followed by a chase with nocodazole, cycloheximide, and biotin for variable time durations (t) before fixation and giantin immunostaining. Images were acquired using Airyscan microscopy and subjected to side averaging guided by giantin double puncta. Blue, red, and green horizontal lines represent the center of mass positions of giantin, GalT-mCherry, and SBP-GFP-collagenX, respectively. Scale bar, 200 nm. (E) The LQside vs. biotin chase time (t) plot shows the transition of SBP-GFP-collagenX from the cis to the trans-region of the Golgi ministack. LQside is an approximate metric corresponding to LQ (see Materials and methods). n, the number of ministacks quantified. Error bar, SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** See the legend of Figure 3D for details. Scale bar, 10 µm.
+
 Using side averaging, we visualized the synchronized traffic wave of SBP-GFP-collagenX as it transitioned across the ministack (Figure 3D-E, Figure 3—figure supplement 1). When passing through the medial and trans-Golgi regions at t=10 and 20 min after biotin chase, SBP-GFP-collagenX appeared as double puncta, supporting its cisternal rim localization (Figure 3D). 40 min after biotin chase, numerous SBP-GFP-collagenX-positive carriers were observed surrounding the trans-Golgi, indicating a process of Golgi exiting (Figure 3D). In summary, our findings demonstrated that cisternal rim partitioned large-sized secretory cargos might follow intra-Golgi transport kinetics similar to those of cisternal interior partitioned conventional secretory cargos.
 
-## Distinct intra-Golgi transport velocities for different cargos at the same cisternae
+### Distinct intra-Golgi transport velocities for different cargos at the same cisternae
 
-From Equations 1 and 2, we derive the following relationship (Equation 3):(3)dLQdt=ln2tintra(y0−LQ)\begin{document}$$\displaystyle  \frac{dLQ}{dt}=\frac{ln2}{t_{intra}}\left (y_{0}- LQ\right)$$\end{document}
+From Equations 1 and 2, we derive the following relationship (Equation 3):
+
+$$
+\frac{dLQ}{dt}=\frac{ln2}{t_{intra}}(y_{0}−LQ)
+$$
 
 In our previous work, through side-averaging, we determined that one LQ unit corresponds to 274 nm (Tie et al., 2022). Hence, we scaled Equation 3 by 274 nm to derive the instantaneous intra-Golgi transport velocity in nm/min. When plotting the instantaneous intra-Golgi transport velocity (nm/min) against the LQ for selected RUSH reporters, as seen in Figure 4A, we observed that different secretory cargos exhibit varied transport velocities even within the same cisternae or at the same LQ values. At LQ = 0.40, corresponding to the medial-Golgi region, our RUSH reporters' instantaneous intra-Golgi transport velocities are calculated in Table 1 according to Equation 3. For instance, instantaneous intra-Golgi transport velocities of SBP-GFP, SBP-GFP-Tac-TC, SBP-GFP-CD59, SBP-GFP-Tac, and TNFα-SBP-GFP are 6.1, 8.0, 9.2, 14.6, and 20.5 nm/min, respectively (Table 1). These findings highlighted that different secretory cargos possess distinct intra-Golgi transport velocities within the same Golgi cisternae, challenging the prediction made by the classic cisternal progression model.
 
-## Golgi residence times vary significantly among different secretory cargos
+![Figure 4.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig4-v1.jpg)
+
+**Figure 4.:** (A) Plots of dLQ/dt vs. LQ for selected RUSH reporters reveal diverse intra-Golgi transport velocities at the same cisternae. These plots were constructed based on Equation 3, using parameters from Table 1. Different regions within the Golgi — cis (–0.25≤LQ<0.25), medial (0.25≤LQ<0.75), trans-Golgi (0.75≤LQ<1.25), and TGN (1.25≤LQ) — are color-shaded for easier identification. To convert dLQ/dt to nm/min, we multiplied dLQ/dt by 274 nm per LQ unit. A dotted vertical line marks the LQ value of 0.40. (B) Modifying the classic cisternal progression model to explain the distinct intra-Golgi transport velocities at the same cisternae. According to this model, Golgi cisternae progress at a constant velocity (v). Direct-continuity-based anterograde transport could accelerate the intra-Golgi transport velocity (v + Δv), while the COPI-mediated retrograde transport could reduce it (v - Δv).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HeLa cells were transiently transfected to co-express RUSH reporter, SBP-GFP-CD59, and GalT-mCherry. Cells were incubated with biotin and cycloheximide at 20 °C to accumulate the RUSH reporter in the Golgi before live-cell imaging under a wide-field microscope at 37 °C. Only SBP-GFP-CD59 images are shown. (B) HeLa cells transiently co-expressing GFP-CD8a-TC and GalT-mCherry were treated with cycloheximide and imaged live under a wide-field microscope. Only GFP-CD8a-TC images are shown. In both (A) and (B), the total fluorescence intensity within the Golgi was quantified, normalized, and plotted against the time. Each intensity series was fitted to the first-order exponential function to calculate t1/2. Gray and red indicate individual and averaged time series, respectively. t1/2 is expressed as mean ± SEM. n, the number of quantified cells. Scale bar, 10 µm.
+
+### Golgi residence times vary significantly among different secretory cargos
 
 Once cargos transit through the Golgi stack, the classic cisternal progression model predicts that cargos depart the Golgi in a linear kinetics. However, studies have demonstrated that cargos exit the Golgi by following the first-order exponential kinetics (Hirschberg et al., 1998; Patterson et al., 2008; Sun et al., 2020). While we could apply a hypothetical rate-limiting step to the classic cisternal progression and stable compartment models to rationalize the exponential kinetics of cargo exit (Luini, 2011), the classic cisternal progression model encounters more significant challenges. First, the first-order exponential Golgi exit implies that clearing a synchronized wave of secretory cargo from the trans-cisternae would take an indefinite time, which is inconsistent with the transient nature of the trans-cisternae as described by the classic cisternal progression model. Second, since cargos are considered passive in the classic cisternal progression model, the exit kinetics, as measured by the Golgi residence times, should be the same across all secretory cargos.
 
@@ -76,7 +419,84 @@ The Golgi residence time is a cargo’s duration at the trans-Golgi cisternae be
 
 Our extensive measurement demonstrated that Golgi residence times of secretory cargos display a wide range of values (Table 2). For example, TNFα-SBP-GFP has a Golgi residence time of 6.0±0.4 min (mean ± SEM, n=73), one of the shortest, while SBP-GFP-CD59 has a Golgi residence time of 16±2 min (mean ± SEM, n=29) (Figure 4—figure supplement 1). Hence, our data suggest that different secretory cargos reside at the trans-Golgi cisternae for varying durations, contradicting predictions from the classic cisternal progression model.
 
-## Cargos exhibiting prolonged Golgi residence times suggest the trans-Golgi interior might be a stable domain
+**Table 2.**
+ Golgi residence times of transmembrane secretory cargos and Golgi glycosyltransferases in native Golgi (without nocodazole).Superscripts 1 and 2 indicate data were from previous publications, (Sun et al., 2020) and (Sun et al., 2021), respectively. The two RUSH reporters, SBP-GFP-CD59 and TNFα-SBP-GFP, employ signal sequence fused streptavidin-KDEL and Ii-streptavidin as the ER hook, respectively. n, the number of quantified cells; SEM, standard error of the mean.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transmembrane protein</th>
+      <th>Golgi residence time (t1/2)</th>
+      <th>n</th>
+      <th>SEM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TNFα-SBP-GFP1</td>
+      <td>6.0 min</td>
+      <td>73</td>
+      <td>0.4 min</td>
+    </tr>
+    <tr>
+      <td>GFP-CD8a1</td>
+      <td>7.8 min</td>
+      <td>26</td>
+      <td>0.7 min</td>
+    </tr>
+    <tr>
+      <td>TfR-GFP1</td>
+      <td>10 min</td>
+      <td>12</td>
+      <td>1 min</td>
+    </tr>
+    <tr>
+      <td>GFP-Tac1</td>
+      <td>16 min</td>
+      <td>45</td>
+      <td>2 min</td>
+    </tr>
+    <tr>
+      <td>SBP-GFP-CD59</td>
+      <td>16 min</td>
+      <td>29</td>
+      <td>2 min</td>
+    </tr>
+    <tr>
+      <td>GFP-Tac (5 A)1</td>
+      <td>47 min</td>
+      <td>57</td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td>GFP-CD8a-TC</td>
+      <td>66 min</td>
+      <td>19</td>
+      <td>7 min</td>
+    </tr>
+    <tr>
+      <td>GFP-Tac-TC1</td>
+      <td>3.4 h</td>
+      <td>22</td>
+      <td>0.3 h</td>
+    </tr>
+    <tr>
+      <td>MGAT2-GFP2</td>
+      <td>4.9 h</td>
+      <td>26</td>
+      <td>0.5 h</td>
+    </tr>
+    <tr>
+      <td>ST6GAL1-GFP1</td>
+      <td>5.3 h</td>
+      <td>21</td>
+      <td>0.6 h</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cargos exhibiting prolonged Golgi residence times suggest the trans-Golgi interior might be a stable domain
 
 The classic cisternal progression model could be modified to explain the diverse intra-Golgi transport kinetics. For example, accelerated anterograde or retrograde transport might be introduced on top of the basal cisternal progression to account for the wide range of intra-Golgi transport velocities and Golgi residence times we observed (Figure 4B). Accelerated anterograde transport mechanisms might include continuity-based direct diffusion across cisternae via heterologous cisternal connections (Beznoussenko et al., 2014; Marsh et al., 2004; Trucco et al., 2004). Hence, secretory cargo with such a mechanism would have a faster intra-Golgi transport velocity. This mechanism might explain the rapid and diverse intra-Golgi transport velocity of secretory cargos such as VSVG, insulin, albumin, and alpha1-antitrypsin (Beznoussenko et al., 2014; Marsh et al., 2004; Trucco et al., 2004). Similarly, active recruitment to exocytic carriers budding at the trans-Golgi possibly might shorten the Golgi residence time. On the other hand, COPI-coated carriers might facilitate retrograde intra-Golgi transport to counter the cisternal progression, accounting for the slow intra-Golgi transport velocity and prolonged Golgi residence time of cargos. Indeed, COPI has been known to maintain certain glycosyltransferases' Golgi retention by direct or indirect interactions (Ali et al., 2012; Eckert et al., 2014; Liu et al., 2018; Pereira et al., 2014; Rizzo et al., 2021; Schmitz et al., 2008; Tu et al., 2008). However, such a retrograde mechanism requires the interaction between secretory cargo and the COPI coat.
 
@@ -94,7 +514,7 @@ We found that VHH-anti-GFP-mCherry localized to the Golgi in a significant fract
 
 Therefore, we argue that GFP-Tac-TC and GFP-CD8a-TC might not have retrieval signals to facilitate their Golgi residence, although proving a protein does not possess a transport signal is challenging. Since the cisternal interior is continuous with the cisternal rim both in membrane and lumen, our findings suggest that the cisternal interior at the trans-Golgi might be a stable domain. In summary, our data implies that retention within the trans-side stable domain, rather than continuous retrieval to counter the cisternal progression (treadmilling), could be the primary mechanism for the long Golgi residence times of GFP-Tac-TC and GFP-CD8a-TC.
 
-## The Golgi maintains its stacked organization after 30 min BFA treatment
+### The Golgi maintains its stacked organization after 30 min BFA treatment
 
 COPI functions in the retrograde direction at the ER-Golgi interface and within the Golgi (Glick and Luini, 2011; Popoff et al., 2011; Rabouille and Klumperman, 2005). According to the classic cisternal progression model, COPI-mediated retrograde intra-Golgi transport recycles resident transmembrane proteins, such as glycosyltransferases and transport machinery components. This model predicts that upon the compromise of COPI, intra-Golgi recycling would stop, and the Golgi stack would continuously lose its materials and eventually disappear, depending on the cisternal progression rate. In addition to its retrograde role, COPI has also been documented to function in the anterograde ER-to-Golgi transport (Monetta et al., 2007; Weigel et al., 2021).
 
@@ -102,19 +522,27 @@ To test the role of COPI in the Golgi organization, we employed BFA, a small mol
 
 To address this, we studied the LQs of several Golgi markers following 30–60 min of BFA treatment (Figure 6A-E, Figure 6—figure supplement 1A and B). The fast dissociation of Arf1-GFP from Golgi ministacks confirmed the effectiveness of BFA (Figure 6—figure supplement 1A). We also observed that extended BFA treatment considerably reduced the number of intact Golgi ministacks. We measured the LQs of six transmembrane Golgi markers, GFP-golgin-84, GS15, ST6GAL1-GFP, TGN46, CD8a-furin, and CD8a-CI-M6PR (Figure 6A-F, Figure 6—figure supplement 1B). GS15’s LQ was monitored for 60 min, with the rest for 30 min. Strikingly, we observed that Golgi puncta are still stacked as all measured LQs exhibited a relative arrangement similar to those of the pre-BFA treatment (t=0 min) (Figure 6F). For example, LQs of ST6GAL1 and GS15 remained largely unchanged after 30 min BFA treatment. Although the LQ of golgin-84 increased from 0.2 to 0.4, it still remained between the LQs of GM130 and GS15. The stacked organization of BFA-treated ministacks was further confirmed by the side-averaging images of GM130, Giantin, GalT-mCherry, and CD8a-furin (Figure 6G and H).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig6-v1.jpg)
+
+**Figure 6.:** (A–E) HeLa cells transiently co-expressing GalT-mCherry and indicated GFP or CD8a-tagged Golgi proteins were incubated with nocodazole for 3 hr. This was followed by additional treatment with nocodazole and 5 µM BFA for variable durations before fixation. Endogenous TGN46 and GM130 was immunostained. Images were acquired by wide-field microscopy. Representative images at 0 and 30 min are shown. Scale bar, 10 µm. (F) LQs of different Golgi proteins were determined using Golgi localization by imaging centers of mass (GLIM). The dotted lines represent LQs for GM130 (LQ = 0.00) and GalT-mCherry (LQ = 1.00). n, the number of analyzed Golgi ministacks. (G–H) HeLa cells transiently expressing GalT-mCherry alone (G) or together with CD8a-furin (H) were incubated with nocodazole for 3 hr. This was followed by additional treatment with nocodazole and 5 µM BFA for variable durations before immunostaining endogenous giantin or GM130. After Airyscan imaging, images were subjected to side averaging. Horizontal color lines indicate centers of mass of corresponding side-averaged Golgi proteins. d(GM130-GalT-mCherry) and d(GalT-mCherry-CD8a-furin) in nm are plotted against the BFA treatment time in the right panels. n, the number of ministacks quantified. Error bar, SEM. Scale bar, 200 nm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98582/elife-98582-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Arf1 quickly dissociates from the Golgi under the treatment of nocodazole and BFA. HeLa cells transiently expressing Arf1-GFP and ST6GAL1-DMyc were treated with nocodazole for 3 hr. This was followed by additional treatment with nocodazole and 5 µM BFA for 5 min before fixation and immunostaining of Myc-tag and endogenous giantin. Images were acquired by Airyscan microscopy. (B) HeLa cells transiently expressing GalT-mCherry were treated with nocodazole for 3 hr. This was followed by additional treatment with nocodazole and 5 µM BFA for variable durations before fixation and immunostaining endogenous GS15 and GM130. Images were acquired by spinning disk confocal microscopy. Representative images at 0 and 60 min are shown. Scale bar, 10 µm.
+
 However, BFA treatment altered the physical dimensions of ministacks. We defined the distance between two Golgi markers as the distance between their Gaussian peak centers in the axial line intensity profile (see the Materials and methods). We observed the distance from GM130 to GalT-mCherry, d(GM130-GalT-mCherry), decreased from 300±10 nm (mean ± SEM, n=34)–190±30 (mean ± SEM, n=13) after 30 min of BFA treatment, indicating axial shrinkage of ministacks (Figure 6G). Furthermore, LQs of all three TGN markers, TGN46, CD8a-furin, and CD8a-CI-M6PR, decreased and approached that of the trans-Golgi, suggesting a collapse of the TGN (Figure 6F), possibly due to the dissociation of clathrin and its adaptor proteins. This collapse of the TGN was further supported by the side-averaging images, in which CD8a-furin gradually approached the trans-Golgi labeled by GalT-mCherry over time (Figure 6H). We found the distance from GalT-mCherry to CD8a-furin, d(GalT-mCherry-CD8a-furin), decreased from 200±20 nm (mean ± SEM, n=30)–100±30 nm (mean ± SEM, n=20) after 30 min of BFA treatment.
 
 Despite dramatic changes in the TGN and shrinkage of the axial length of the Golgi minitack, our data demonstrate that the Golgi maintains its stacked organization for at least 30–60 min, even in the absence of COPI-mediated intra-Golgi retrograde transport. Our findings suggest that the Golgi might not be a dynamic equilibrium between the cisternal progression and retrograde trafficking and argue for a by-default stable nature of the Golgi stack. It is worth noting that the cellular effect of BFA is complex and pleiotropic. For example, in addition to Arfs, it can inhibit lipid metabolic enzymes (De Matteis et al., 1994). So, the dissociation of COPI might not be the sole factor responsible for our observations.
 
 ## Discussion
 
-## Our data supports the rim progression model, a modified version of the stable compartment model
+### Our data supports the rim progression model, a modified version of the stable compartment model
 
 Previously, we discovered that Golgi glycosyltransferases tend to localize to the cisternal interior, while trafficking machinery components localize primarily to the cisternal rim (Tie et al., 2018). Combined with our current observations of differential intra-Golgi transport velocities among distinct secretory cargos (Figures 2—4, Figure 2—figure supplement 1) and the stable trans-Golgi interior localization of GFP-Tac-TC (Sun et al., 2020) and GFP-CD8a-TC (Figure 5B and Table 2), these findings support the modified version of the stable compartment model – the rim progression model (Lavieu et al., 2013; Pfeffer, 2010; Volchuk et al., 2000). This model explains the retention of Golgi glycosyltransferases in the cisternal interior, given that many do not recycle via COPI-coated vesicles (Liu et al., 2018) or possess a post-Golgi retrieval pathway (Sun et al., 2021). It also readily accounts for the diverse intra-Golgi transport velocities of secretory cargos by suggesting that each cargo type may have a different retention time within the stable cisternal interior domain.
 
 The Golgi glycosyltransferases at the cisternal interior might assemble a dense protein matrix based on fluorescence microscopy (Tie et al., 2018) and EM data (Engel et al., 2015). It is tempting to speculate that the enzyme matrix could provide the molecular basis for the stable cisternal interior domain and functionally mirror a gel-filtration chromatography matrix with a defined porosity. Hence, large secretory cargos, such as FM4 aggregates and collagenX, are excluded from the interior, where the enzyme matrix localizes, while small secretory cargos can enter and become kinetically trapped there. The progressive reduction in intra-Golgi transport of secretory cargo might result from the enzyme matrix’s retention at the trans-Golgi. As the secretory cargos progress along the Golgi stack from the cis to the trans-side, more and more cargos become temporarily retained in the trans-Golgi region, gradually reducing their overall intra-Golgi transport velocity. If the release or Golgi exit of these cargos from the enzyme matrix follows a constant probability per unit time, i.e., a first-order kinetics process, the rate of cargo exiting from the Golgi should follow the first-order exponential function. Since the mechanism underlying intra-Golgi transport kinetics reflects fundamental molecular and cellular processes of the Golgi, further experimental data are essential to rigorously test this hypothesis.
 
-## Limitations of the study
+### Limitations of the study
 
 We introduced new quantitative data on the intra-Golgi transport dynamics. However, our study has limitations. First, our approach relied on the overexpression of fluorescence protein-tagged cargos. The synchronized release of a large amount of cargo could significantly saturate and skew the intra-Golgi transport. Second, we utilized nocodazole-induced ministacks instead of the native Golgi to analyze the intra-Golgi transport, which could raise concerns about the impact of depolymerizing microtubules on the intra-Golgi transport and Golgi organization. Third, with the exception of furin and its mutants, all RUSH reporters used in this study are constitutive secretory cargos. As a result, the intra-Golgi transport dynamics observed here might not reflect those of regulated secretion, which involves the synchronized release of a large quantity of cargo in response to a specific signal.
 
@@ -122,7 +550,367 @@ Our findings suggest that the Golgi cisternal interior might be a stable domain,
 
 ## Materials and methods
 
-## DNA plasmids, antibodies, and small molecules
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa cell</td>
+      <td>ATCC</td>
+      <td>ATCC: CCL-2;RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T cell</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3216RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GM130 C-terminus (mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat#: 610822;RRID:AB_398141</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-giantin C-terminus (rabbit, polyclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 924302;RRID:AB_2565451</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8a (mouse, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:14-0086-80;RRID:AB_467092</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TGN46 (rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab50595;RRID:AB_2203289</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GS15 (mouse, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat#: 610960;RRID:AB_398273</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myc (mouse, monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-40;RRID:AB_627268</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor Plus 680 conjugateddonkey anti-mouse IgG (H+L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A10038;RRID:AB_11180593</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated goatanti-rabbit IgG (H+L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A21244;RRID:AB_2535814</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ii-streptavidin_ TNFα-SBP-GFP</td>
+      <td>PMID:22406856</td>
+      <td>RRID:Addgene_65280</td>
+      <td>A gift from F. Perez lab (Institut Curie)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-CD8a-Furin</td>
+      <td>PMID:26764092</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-CD8a-Furin-YA</td>
+      <td>PMID:26764092</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-CD8a-Furin-AC</td>
+      <td>PMID:26764092</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-CD8a-Furin-Y+AC</td>
+      <td>PMID:26764092</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-CD59</td>
+      <td>PMID:26764092</td>
+      <td>RRID:Addgene_222307</td>
+      <td>A gift from F. Perez lab (Institut Curie)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ TfR-SBP-GFP</td>
+      <td>PMID:28978644</td>
+      <td></td>
+      <td>A gift from Bonifacino’s lab (NIH)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-E-cadherin</td>
+      <td>PMID:22406856</td>
+      <td>RRID:Addgene_65286</td>
+      <td>A gift from F. Perez lab (Institut Curie)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-collagenX</td>
+      <td>PMID:31142554</td>
+      <td>RRID:Addgene_222305</td>
+      <td>A gift from F Perez lab (Institut Curie)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-Tac</td>
+      <td>PMID:32826314</td>
+      <td>RRID:Addgene_162505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ss-Strep-KDEL_ss-SBP-GFP-Tac-TC</td>
+      <td>PMID:32826314</td>
+      <td>RRID:Addgene_162506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ii-streptavidin_ ss-SBP-GFP</td>
+      <td>PMID:22406856</td>
+      <td>RRID:Addgene_65277</td>
+      <td>A gift from F. Perez lab (Institut Curie)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GalT-mCherry</td>
+      <td>PMID:26764092</td>
+      <td>RRID:Addgene_87327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-Tac</td>
+      <td>PMID:32826314</td>
+      <td>RRID:Addgene_162489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-Tac-TC</td>
+      <td>PMID:32826314</td>
+      <td>RRID:Addgene_162492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-CD8a</td>
+      <td>PMID:32826314</td>
+      <td></td>
+      <td>GFP-tagged CD8a</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-CD8a-TC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GFP-tagged transmembrane and cytosolic domain of CD8a</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MGAT1-GFP</td>
+      <td>PMID:34533190</td>
+      <td>RRID:Addgene_163647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MGAT2-GFP</td>
+      <td>PMID:34533190</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD8a-furin</td>
+      <td>PMID:24285343</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-Golgin84</td>
+      <td>PMID:12538640</td>
+      <td></td>
+      <td>A gift from M Lowe lab (University of Manchester)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ST6GAL1-GFP</td>
+      <td>PMID:34533190</td>
+      <td>RRID:Addgene_162500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD8a-CI-M6PR</td>
+      <td>PMID:24285343</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Arf1-GFP</td>
+      <td>PMID:16890159</td>
+      <td></td>
+      <td>A gift from FJM van Kuppeveld lab (Utrecht University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ST6GAL1-Dmyc</td>
+      <td>PMID:30499774</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Strep-Ii_VSVG-SBP-EGFP</td>
+      <td>PMID:22406856</td>
+      <td>RRID:Addgene_65300</td>
+      <td>Addgene plasmid #65300</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A (from Penicillium brefeldianum)</td>
+      <td>Life Technologies Holdings</td>
+      <td>Cat#:B7450</td>
+      <td>5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Merck</td>
+      <td>Cat#:487928</td>
+      <td>33 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>biotin</td>
+      <td>IBA</td>
+      <td>Cat#:2-1016-002</td>
+      <td>50 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:C1988</td>
+      <td>10 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td>For Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Calculation of the LQ</td>
+      <td>PMID:26764092; PMID:28829416</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Auto-GLIM</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To calculate LQ automatically(See Materials and Methods)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Translation_Rotation_Gaussian_Fitting</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To calculate the axial position Xcof Golgi protein withside view(See Figure 6—source code 1)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gyradius and intensity normalization</td>
+      <td>PMID:30499774</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Golgi mini-stack alignment</td>
+      <td>PMID:30499774</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Radial mean intensity profile</td>
+      <td>PMID:30499774</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>P1-Rotate_Resize_Normaliz</td>
+      <td>PMID:35467701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>P2-Resize_Add_Line</td>
+      <td>PMID:35467701</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA plasmids, antibodies, and small molecules
 
 To clone RUSH reporter, SBP-GFP, two PCRs were performed using li-Strep_ss-SBP-EGFP-Ecadherin (a gift plasmid from F. Perez) (Boncompain et al., 2012) and pEGFP-C1 (Clontech) as templates and the following primer pairs (Gat gca Ccc ggg agg cgc gcc atg and ctc ctc gcc ctt gct cac acc tgc agg tgg ttc acg) and (Cgt gaa cca cct gca ggt gtg agc aag ggc gag gag and Gat gca tct aga tta ctt gta cag ctc gtc cat), respectively. The mixture of the two purified PCR fragments was used as the template for the third round of PCR amplification using the first and the fourth primer listed above. The resulting PCR fragment was digested by XmaI and XbaI and ligated to XmaI and XbaI digested li-Strep_ss-SBP-EGFP-Ecadherin DNA plasmid. To clone GFP-CD8a-TC, the coding sequence of the TMD and cytosolic tail of CD8a was amplified by PCR using GFP-CD8a (Sun et al., 2020) as a template and the following primers, cag tgc ctc gag gac ttc gcc tgt gat atc ta and gac cgt gaa ttc TTA GAC GTA TCT CGC CGA AAG GCT G. The resulting PCR fragment was digested by EcoRI and XhoI and ligated to EcoRI and XhoI digested GFP-CD8a DNA plasmid.
 
@@ -130,23 +918,23 @@ ST6GAL1-GFP (ST-GFP) (Sun et al., 2020), CD8a-furin (Mahajan et al., 2013), CD8a
 
 Mouse monoclonal antibody anti-CD8a (OKT8) was from the hybridoma culture supernatant. Mouse monoclonal antibodies against GM130 (#610822) and GS15 (#610960) were purchased from BD Biosciences. Rabbit polyclonal antibody against TGN46 was from Abcam (#ab50595). Alexa Fluor 488, 594, and 647-conjugated goat anti-mouse or anti-rabbit secondary antibodies were purchased from Thermo Fisher Scientific.
 
-## Small molecules
+### Small molecules
 
 Nocodazole (#487928; working concentration: 33 μM), BFA (working concentration: 5 µM), and cycloheximide (working concentration: 10 μg/ml) were purchased from Merck, Life Technologies Holdings, and Sigma Aldrich, respectively.
 
-## Cell lines
+### Cell lines
 
 HeLa and 293T cell lines were obtained from the American Type Culture Collection (ATCC). Their identities were authenticated by Short Tandem Repeat analysis (ATCC), and they were routinely screened for mycoplasma contamination using DNA staining.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HeLa and 293T cells were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) to make it complete DMEM. For cell transfection, Lipofectamine 2000 (Thermo Fisher Scientific) was used per the manufacturer’s instructions. For BFA treatment, cells were treated with complete DMEM containing 5 µM BFA for the specified duration. For nocodazole treatment, cells were treated with complete DMEM containing 33 µM nocodazole for 3 hr to induce the formation of Golgi ministacks.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells for immunofluorescence were grown on No. 1.5 Φ12 mm glass coverslips. They were fixed using 4% paraformaldehyde in phosphate-buffered saline (PBS). Following a PBS wash to remove residual paraformaldehyde, any remaining paraformaldehyde within the cells was neutralized with 100 mM NH4Cl. The cells were then processed for immunofluorescence labeling by first incubating with mouse or rabbit primary antibodies, followed by Alexa Fluor 488, 594, and/or 647 conjugated goat anti-mouse or anti-rabbit secondary antibodies. Both primary and secondary antibodies were diluted in PBS containing 5% fetal bovine serum, 2% bovine serum albumin, and 0.1% saponin (Sigma-Aldrich). The labeled cells were mounted in the Mowiol mounting medium, composed of 12% Mowiol 4–88 (EMD Millipore), 30% glycerol, and 100 mM Tris pH 8.5. After the mounting medium had dried, the coverslips were sealed with nail polish and stored at –20 °C.
 
-## Acquiring LQs
+### Acquiring LQs
 
 To analyze LQs of intra-Golgi transport RUSH reporters, HeLa cells transiently co-expressing individual GFP-tagged RUSH reporter and GalT-mCherry were cultured in complete DMEM supplemented with 16 nM His-tagged streptavidin (in-house purified using Addgene #20860, a gift plasmid from A. Ting) (Howarth et al., 2006). Following a 3 hr nocodazole treatment, cells were chased with 50 μM biotin, 10 μg/ml cycloheximide, and 33 μM nocodazole for various durations before fixation.
 
@@ -156,30 +944,38 @@ The methodology for acquiring LQs through GLIM has been described in our previou
 
 In addition to the manual method mentioned above, we employed a newly developed software tool, Auto-GLIM (https://github.com/Chokyotager/AutoGLIM copy archived at Lam, 2025), to automatically analyze our ministack images. To this end, three-color images were acquired as described above. Three z-sections centered around the plane of interest were averaged (average z-projection) for beads and ministacks images. Automated background subtraction was performed using a deep learning segmentation model to first extract the cell contours, followed by a dual annealing optimization algorithm to perform background subtraction to extract the highest number of valid ROIs according to the criteria of GLIM (Tie et al., 2016). Final LQs were further subjected to analysis in OriginPro 2020.
 
-## Acquisition of Golgi residence times
+### Acquisition of Golgi residence times
 
 The methodology follows protocols previously described (Sun et al., 2021; Sun et al., 2020). Nocodazole was not used in these experiments. Briefly, HeLa cells on a Φ 35 mm glass-bottom Petri dish were transiently transfected to co-express a GFP-tagged reporter and GalT-mCherry. For RUSH reporters, cells were treated with 50 µM biotin at 20 °C for 2 hr to accumulate the reporter at the Golgi. Live imaging was performed in a CO2-independent medium (Thermo Fisher Scientific) with 10% FBS, 4 mM glutamine, and 10 µg/ml cycloheximide, using a wide-field microscope until the cellular GFP fluorescence at the Golgi nearly vanished. The resulting time-lapse images were segmented based on GalT-mCherry using Fiji. Total GFP fluorescence within the Golgi was quantified and fitted to the first-order exponential function y=y0+A1exp(-x/t1) in OriginPro 2020. Golgi residence time, t1/2, was calculated as 0.693*t1. We only included time-lapse data with adj. R2 ≥0.80 and acquisition length ≥1.33*t1/2.
 
-## VHH-anti-GFP-mCherry internalization assay
+### VHH-anti-GFP-mCherry internalization assay
 
 6x His-tagged VHH-anti-GFP-mCherry was purified as previously described (Sun et al., 2021; Sun et al., 2020). In the internalization assay, HeLa cells transiently expressing GFP-tagged reporters were continuously incubated with 5 µg/ml VHH-anti-GFP-mCherry at 37 °C for 8 hr. After washing, cells were fixed and imaged.
 
-## Microscopy for GLIM and Golgi residence time
+### Microscopy for GLIM and Golgi residence time
 
 Golgi residence times and most LQs were measured using a wide-field microscope based on Olympus IX83. The microscope featured a ×100 oil objective lens (NA 1.40), a motorized stage for sample positioning, and automated filter cubes to accommodate different fluorescence channels. Dichroic mirrors and filters were optimized for GFP/Alexa Fluor 488, mCherry/Alexa Fluor 594, and Alexa Fluor 647. Imaging was captured with an sCMOS (scientific complementary metal oxide semiconductor) camera (Neo) by Andor. A 200 W metal halide light source (Lumen Pro 200) by Prior Scientific provided illumination. Operational control and data collection were facilitated through Metamorph software by Molecular Devices. The image pixel size is 65 nm. The range of exposure time is 400–5000 ms for each channel.
 
 GS15 LQs during the BFA treatment time course were measured using a spinning disk confocal microscope system comprising Olympus IX81 equipped with a ×100 oil objective lens (NA 1.45), a piezo z stage, Yokogawa CSU-X1 spinning head, 50 mW solid state lasers (488, 561, and 640 nm)(Sapphire; Coherent Inc, Santa Clara, CA, United States), an electron multiplying charge-coupled device (Evolve; Photometrics, Tucson, AZ, United States), and filters optimized for GFP/Alexa fluor 488, mCherry/Alexa Fluor 594, and Alexa Fluor 647. The system was controlled by Metamorph software (Molecular Devices). The image pixel size is 89 nm. The range of exposure time is 200–500 ms for each channel.
 
-## Airyscan microscopy
+### Airyscan microscopy
 
 The Airyscan microscopy was performed using a Zeiss LSM710 confocal microscope, equipped with an Alpha Plan-Apochromat ×100 NA 1.46 objective and the Airyscan module (Carl Zeiss). The system operation was controlled by Zen software (Carl Zeiss). Three lines of laser lights were used: 488, 561, and 640 nm. The emission band was selected to optimize the capture of the emission light while minimizing channel crosstalk. For side averaging, images were acquired under ×63 objective (NA 1.40), zoomed in ×3.5 to achieve 45 nm pixel size using the SR mode. The pixel dwelling time is 1.16 µs. The raw images were processed by Airyscan Zen software.
 
-## Side averaging and en face averaging
+### Side averaging and en face averaging
 
-En face and side averaging were performed as described previously using Airyscan images (Tie et al., 2018; Tie et al., 2022). Ministacks with en face views were identified by giantin rings. They were subsequently normalized, expanded, and aligned with the center of the image, followed by averaging using Fiji. The radial mean intensity profile was acquired by Fiji macros (Tie et al., 2018). Ministacks with side views were identified by giantin double puncta and subjected to rotation, expansion, and normalization before averaging in Fiji (Tie et al., 2022). In a side average image, we define the axial position of a Golgi protein i as the y component of its center of mass coordinate, yi. In Figure 3E, LQside of SBP-GFP-collagenX is calculated as below.LQside=ySBP−GFP−collagenX−yGM130yGalT−mCherry−yGM130\begin{document}$$\displaystyle LQ^{side}=\frac{y_{SBP- GFP- collagenX}- y_{GM130}}{y_{GalT- mCherry}- y_{GM130}}$$\end{document}
+En face and side averaging were performed as described previously using Airyscan images (Tie et al., 2018; Tie et al., 2022). Ministacks with en face views were identified by giantin rings. They were subsequently normalized, expanded, and aligned with the center of the image, followed by averaging using Fiji. The radial mean intensity profile was acquired by Fiji macros (Tie et al., 2018). Ministacks with side views were identified by giantin double puncta and subjected to rotation, expansion, and normalization before averaging in Fiji (Tie et al., 2022). In a side average image, we define the axial position of a Golgi protein i as the y component of its center of mass coordinate, yi. In Figure 3E, LQside of SBP-GFP-collagenX is calculated as below.
+
+$$
+LQ^{side}=\frac{y_{SBP−GFP−collagenX}−y_{GM130}}{y_{GalT−mCherry}−y_{GM130}}
+$$
 
 ySBP-GFP-collagenX, yGM130, and yGalT-mCherry are axial positions of SBP-GFP-collagenX, GM130, and GalT-mCherry in their side average images, respectively. yGM130 and yGalT-mCherry were measured previously (Tie et al., 2022).
 
-In Figure 6G, the distance from GM130 to GalT-mCherry, d(GM130-GalT-mCherry), was measured from individual ministacks with side views. The axial line intensity profile of GM130 or GalT-mCherry was subjected to Gaussian fitting in OriginPro2020 (Analysis > Fitting > Non-Linear Curve Fit). The calculated Xc represents the axial position of each protein. d(GM130-GalT-mCherry) of each Golgi ministack is then calculated asdGM130−GalT−mCherry=XcGalT−mCherry−XcGM130\begin{document}$$\displaystyle d_{GM130- GalT- mCherry}=Xc_{GalT- mCherry}- Xc_{GM130}$$\end{document}
+In Figure 6G, the distance from GM130 to GalT-mCherry, d(GM130-GalT-mCherry), was measured from individual ministacks with side views. The axial line intensity profile of GM130 or GalT-mCherry was subjected to Gaussian fitting in OriginPro2020 (Analysis > Fitting > Non-Linear Curve Fit). The calculated Xc represents the axial position of each protein. d(GM130-GalT-mCherry) of each Golgi ministack is then calculated as
+
+$$
+d_{GM130−GalT−mCherry}=Xc_{GalT−mCherry}−Xc_{GM130}
+$$
 
 and subjected to statistical analysis. d(GalT-mCherry-CD8a-furin) in Figure 6H was calculated similarly.

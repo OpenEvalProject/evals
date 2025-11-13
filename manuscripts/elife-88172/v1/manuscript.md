@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Department of Psychology, McGill University Montréal Canada
-2. https://ror.org/04tsk2644 Department of Neurophysiology, Ruhr-University Bochum Bochum Germany
+1. Department of Psychology, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Department of Neurophysiology, Ruhr-University Bochum Bochum Germany ([ROR:04tsk2644](https://ror.org/04tsk2644))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ In this study, we aimed to shed light on the system mechanisms underlying the re
 
 ## Results
 
-## The effect of varying fear conditioning intensity on behavioral responses
+### The effect of varying fear conditioning intensity on behavioral responses
 
 In order to investigate fear memories of different intensities, animals underwent contextual fear conditioning (CFC) with either 2 (2S) or 10 foot shocks (10S). A control group, in which no shock was administered, was included to provide a baseline behavior (NS). After training, a series of behavioral tests were conducted to determine the characteristics of the resulting memory. One day after training, we assessed the intensity of fear responses triggered by the conditioned context (Test A), and on the following day, fear generalization in a novel context (Test B). In addition, changes in exploratory behavior were assessed in an open-field exploration test conducted 3 d after training.
 
@@ -50,7 +50,7 @@ Next, we investigated the effect of training intensity on the ability of memory 
 
 These data demonstrate that memories formed with 2- and 10-shock protocols exhibit significant differences at the behavioral level. Secondly, they show that 10-shock training creates maladaptive memories that trigger intense and generalized fear responses, are resistant to suppression by extinction, and are unable to flexibly change through reconsolidation.
 
-## Commonalities and differences in brain activation induced by recall of mild and strong fear memories
+### Commonalities and differences in brain activation induced by recall of mild and strong fear memories
 
 To investigate the neural mechanisms underlying the formation of mild and strong fear memories, we trained a new cohort of animals using the same CFC protocol as described in the previous experiments. We then performed immunohistochemistry (IHC) to count c-fos-expressing cells and measure brain activation during memory recall in 12 brain regions implicated with fear memory processes (Figure 2). Based on previous literature, we examined the following regions: the retrosplenial cortex (RSC), the infralimbic cortex (IL), the cingulate cortex area 1 and area 2 (Cg1 and Cg2), the dentate gyrus (DG) and the CA3 and CA1 hippocampal fields, the basolateral and central nuclei of the amygdala (BLA and CeA), and the paraventricular and the reuniens nuclei of the thalamus (PV and Re).
 
@@ -62,7 +62,7 @@ Similar to our first set of experiments, there was a significant difference in f
 
 In the c-fos analysis, the data were normalized to the average of the NS group (Figure 2C). ANOVA indicated a significant difference between groups in the following brain regions: RSC (F2,21 = 6.39, p=0.007), Re (F2,21 = 5.22, p=0.014), IL (F2,21 = 4.18, p=0.03), BLA (F2,21 = 14.9, p<0.0001), CeA (F2,21 = 22.8, p<0.0001), and PV (F2,21 = 12.9, p=0.0002). Tukey’s post hoc test was then performed to reveal pairwise differences between groups within each structure. In the RSC and Re, c-fos levels were higher than NS controls only in the 2S group (p=0.005 and p=0.01, respectively), while in the IL c-fos was reduced in the 10S group in comparison with the 2S group (p=0.03). Both 2S and 10S groups displayed higher c-fos levels than NS controls in the BLA (NS × 2S: p=0.003; NS × 10S: p<0.0001), CeA (NS × 2S: p=0.042; NS × 10 S: p=0.001), and PV (NS × 2 S: p=0.010 NS × 10S: p=0.0001). In addition, there was an increase in c-fos in the 10S group in comparison with the 2S group (p=0.0014). These results show that the retrieval of mild and strong fear memories triggers different patterns of brain activation across different brain regions.
 
-## Coordinated interregional brain activity is decreased during strong fear memory recall
+### Coordinated interregional brain activity is decreased during strong fear memory recall
 
 When the activity of a pair of brain regions varies together, it can be inferred that these regions are functionally coupled (Wheeler et al., 2013). To further understand the mechanisms underlying the recall of memories with varying levels of aversiveness, we investigated if there were changes in the coordinated activity between brain regions. Therefore, we assessed the synchrony in neuronal activation across brain regions by computing the Pearson correlations between all pairs of brain regions within each group (Figure 3A).
 
@@ -76,7 +76,7 @@ Next, we conducted the same analysis but compared the r values in collections of
 
 The results indicate that the level of coordinated activity between brain regions, as indicated by r values, changes during the recall of memories with varying levels of aversiveness. Compared to the re-exposure to a neutral context (NS group), the recall of a mild fear memory (2S group) was found to be associated with an increase in the level of coordinated activity across brain regions. However, this increase in coordinated activity was not observed during the recall of a severe fear memory (10S group).
 
-## Network-level changes in the brain underlie the intensity of fear memories
+### Network-level changes in the brain underlie the intensity of fear memories
 
 Having established that the levels of coordinated activity during recall vary according to the intensity of the memory, we employed graph theory to construct functional networks and gain a deeper understanding of the interactions between brain systems in each condition.
 
@@ -116,15 +116,15 @@ In summary, this study investigated the behavioral and neural differences during
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Male Sprague–Dawley rats (275–300 g at arrival; Charles River, Quebec, Canada) were housed in pairs in plastic cages in a temperature-controlled environment (21–23°C) with ad libitum access to food and water and maintained on a 12 hr light/dark cycle (lights on at 7:00 A.M.). All experiments were conducted during the light phase. In all experiments, animals were randomly assigned to each behavioral condition. Sample size estimates were determined based on effect sizes observed in previous reports using similar assays (Wang et al., 2009; Haubrich et al., 2020b), resulting in statistical power estimates between 70 and 90%. Each rat was handled for at least 5 d before the behavioral procedures. All procedures were approved by McGill’s Animal Care Committee (Animal Use Protocol #2000-4512) and complied with the Canadian Council on Animal Care guidelines.
 
-## Drugs
+### Drugs
 
 Anisomycin (150 mg/kg, i.p.; Sigma-Aldrich) was dissolved in equimolar HCl and sterile saline and had its pH adjusted to 7.5.
 
-## Contextual fear conditioning and behavioral testing
+### Contextual fear conditioning and behavioral testing
 
 The training session, which lasted 12 min in all groups, took place in transparent Plexiglas conditioning boxes enclosed in soundproofed chambers (30 × 25 × 30 cm; Coulbourn Instruments) with a fan on as background noise. Animals assigned to the 2-shocks group (2S) received 2 × 1 s × 1.0 mA foot shocks at the sixth and seventh minutes, while animals in the 10-shocks group (10S) received foot shocks every minute from the second to the eleventh minute. A stainless-steel grid floor provided the shocks.
 
@@ -132,11 +132,11 @@ The recall and extinction sessions were conducted in the same context as the fea
 
 The open-field test lasted 5 min and was conducted in a 1 m2 gray Pexiglass arena. Behavior was recorded by digital cameras and analyzed with the software EthoVision (Noldus, The Netherlands).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After 90 min of testing, rats were anesthetized and perfused with buffered saline followed by 4% paraformaldehyde (PFA). The brains were then collected, fixed in 4% PFA overnight, transferred to a 30% sucrose solution, and stored at 4°C until cryo-sectioning at 50 μm thickness. To measure c-fos expression, coronal brain slices were incubated in a blocking solution at room temperature for 1 hr (3% NGS, 0.3% Triton X-100) and then for 20 hr with anti-c-fos primary rabbit antibody (1:500, 226.003; Synaptic Systems, Göttingen, Germany). Sections were washed and incubated with anti-rabbit Alexa-488 secondary antibody (1:500, Jackson Immunoresearch, West Grove, PA) for 2 hr at room temperature. The sections were washed again and mounted on slides and immediately coverslipped with Fluoromount-G with DAPI (Thermo Fisher). Images were examined under fluorescence microscopy (Leica DM 5000 B) and c-fos-positive cells were counted bilaterally from at least two slices for each animal with ImageJ.
 
-## Statistics and networks generation
+### Statistics and networks generation
 
 To analyze the results of the behavioral tests and c-fos expression, we used two-tailed independent-samples t-test, one-way, two-way, or two-way repeated-measures ANOVA for data analysis. Tukey’s post hoc tests were further used to identify the specific differences that contributed to significant interactions. Type 1 error rate was set at 0.05.
 

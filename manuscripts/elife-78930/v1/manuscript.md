@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02f009v59 School of Psychological Sciences, University of Haifa Haifa Israel
-2. https://ror.org/02f009v59 Department of Cognitive Sciences, University of Haifa Haifa Israel
+1. School of Psychological Sciences, University of Haifa Haifa Israel ([ROR:02f009v59](https://ror.org/02f009v59))
+2. Department of Cognitive Sciences, University of Haifa Haifa Israel ([ROR:02f009v59](https://ror.org/02f009v59))
 
 † Corresponding author
 

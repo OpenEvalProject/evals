@@ -30,25 +30,241 @@ The MRI protocol in the UKBB includes multiple tissues and organs with the poten
 
 To address this issue, we trained models using deep learning on expert manual annotations, following preprocessing and quality control, to automatically segment key organs from the UKBB MRI data (Table 1 and Materials and methods). Additionally, we quantified fat and iron content where suitable acquisitions were available (Figure 1—figure supplement 1a, and Materials and methods). In total, we defined 11 Image Derived Phenotypes (IDPs): volume of the liver, pancreas, kidneys, spleen, lungs, VAT, and abdominal subcutaneous adipose tissue (ASAT), and fat and iron content of the liver and pancreas. By linking these traits to measures of risk factors, genetic variation, and disease outcomes, we are able to better characterise their role in disease risk.
 
+**Table 1.**
+ Study population characteristics.Age, BMI, and height rows give mean and SD for each population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">UK biobank cohort (at time of baseline visit)</th>
+      <th rowspan="2">Imaging cohort (at time of imaging visit)</th>
+      <th colspan="4">GWAS cohort (White British Ancestry and passing QC)</th>
+    </tr>
+    <tr>
+      <th>Organ volume (DIXON)</th>
+      <th>Pancreas volume</th>
+      <th>Pancreas fat and iron</th>
+      <th>Liver fat and iron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of participants</td>
+      <td>502,520</td>
+      <td>38,881*</td>
+      <td>32,860</td>
+      <td>31,758</td>
+      <td>25,617</td>
+      <td>32,858</td>
+    </tr>
+    <tr>
+      <td>% Female</td>
+      <td>54.4</td>
+      <td>51.8</td>
+      <td>51.5</td>
+      <td>51.4</td>
+      <td>51.2</td>
+      <td>51.5</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>56.5 (8.1)</td>
+      <td>63.7 (7.56)</td>
+      <td>63.9 (7.52)</td>
+      <td>63.8 (7.52)</td>
+      <td>64.2 (7.48)</td>
+      <td>63.9 (7.52)</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>27.4 (4.8)</td>
+      <td>26.5 (4.39)</td>
+      <td>26.5 (4.37)</td>
+      <td>26.5 (4.34)</td>
+      <td>26.5 (4.31)</td>
+      <td>26.5 (4.36)</td>
+    </tr>
+    <tr>
+      <td>Height (cm)</td>
+      <td>168 (9.28)</td>
+      <td>169 (9.3)</td>
+      <td>169 (9.26)</td>
+      <td>169 (9.25)</td>
+      <td>169 (9.26)</td>
+      <td>169 (9.26)</td>
+    </tr>
+    <tr>
+      <td>% White British Ancestry</td>
+      <td>81.5</td>
+      <td>81.5</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of imaging participants gives the number with at least one abdominal IDP successfully extracted._
+
 ## Results
 
 Table 1 characterises the study population compared to the entire imaging cohort. We were able to successfully extract IPDs from >99% of available scans for each modality (Table 1 and Supplementary file 1b).
 
-## Characterisation of IDPs in the UK biobank population
+### Characterisation of IDPs in the UK biobank population
 
 Previous studies have derived measures of VAT and ASAT, liver fat and iron in the UK Biobank from a subset of the scanned participants (McKay et al., 2018; West et al., 2016; Wilman et al., 2017). Our IDPs show a correlation of 0.87 (liver iron) to 1.0 (fat volume) (Materials and methods; Figure 1—figure supplement 1). The distribution of each organ-specific measure in the scanned population is summarised in Figure 1E,F and G and Table 2.
+
+**Table 2.**
+ Mean and standard deviations for 11 IDPs in our study, and number of independent GWAS associations found at study-wide significance (p<4.54e-9; see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Organ</th>
+      <th>Combined</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th># Study-wide significant GWAS hits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Volume (L)</td>
+      <td>VAT</td>
+      <td>3.92 (2.3)</td>
+      <td>2.78 (1.6)</td>
+      <td>5.14 (2.3)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ASAT</td>
+      <td>8.16 (4.1)</td>
+      <td>9.57 (4.3)</td>
+      <td>6.64 (3.2)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Lungs</td>
+      <td>2.67 (0.73)</td>
+      <td>2.32 (0.53)</td>
+      <td>3.03 (0.75)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Spleen</td>
+      <td>0.17 (0.072)</td>
+      <td>0.14 (0.054)</td>
+      <td>0.2 (0.078)</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>0.14 (0.03)</td>
+      <td>0.12 (0.023)</td>
+      <td>0.16 (0.028)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Pancreas</td>
+      <td>0.06 (0.018)</td>
+      <td>0.06 (0.016)</td>
+      <td>0.06 (0.019)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>1.38 (0.3)</td>
+      <td>1.28 (0.25)</td>
+      <td>1.49 (0.3)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fat (%)</td>
+      <td>Pancreas</td>
+      <td>10.41 (7.9)</td>
+      <td>8.34 (6.7)</td>
+      <td>12.6 (8.5)</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>5.06 (5)</td>
+      <td>4.43 (4.7)</td>
+      <td>5.73 (5.2)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Iron (mg/g)</td>
+      <td>Pancreas</td>
+      <td>0.77 (0.097)</td>
+      <td>0.8 (0.1)</td>
+      <td>0.75 (0.084)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>1.22 (0.26)</td>
+      <td>1.2 (0.24)</td>
+      <td>1.24 (0.28)</td>
+      <td>6*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Due to complex LD structure in this region, we were not able to finemap the HFE locus. We count two signals at this locus (rs1800562 and rs1799945)._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig1-v1.jpg)
+
+**Figure 1.:** (A) Example Dixon image before and after automated segmentation of ASAT, VAT, liver, lungs, left and right kidneys, and spleen. (B) Relationship between IDPs and age and sex within the UKBB. Each trait is standardised within sex, so that the y axis represents standard deviations, after adjustment for imaging centre and date. The trend is smoothed using a generalised additive model with smoothing splines for visualisation purposes. (C) Relationship between IDPs and scan time and sex within the UKBB. Each trait is standardised within sex, so that the y axis represents standard deviations, after adjustment for imaging centre and date. The trend is smoothed using a generalised additive model with smoothing splines for visualisation purposes. (D) Correlation between IDPs. Lower right triangle: Unadjusted correlation (except for imaging centre and date). Upper left triangle: Correlation after adjustment for age, sex, height, and BMI. (E-G) Histograms showing the distribution of the eleven IDPs in this study.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Correlation between multiple measurements of liver fat, liver iron, ASAT volume, and VAT volume in the UK Biobank. (B) Scatter plots showing the relationship between multiple measurements of liver fat, liver iron, ASAT volume, and VAT volume in the UK Biobank. ‘Combined’ refers to a combined IDEAL/multiecho measurement as described in the ‘multiecho pipeline’ section of the supplementary information.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Organ volume IDPs, split by imaging centre. (B) Fat IDPs, split by imaging centre. (C) Iron IDPs, split by imaging centre. (D) Relationship between scan date and IDPs.
 
 All IDPs, except liver fat, showed a statistically significant association with age after adjusting for imaging centre and date (Figure 1B), although the magnitudes of the changes are generally small (e.g. −8.8 ml or −0.03 s.d./year for liver volume, −27.7 ml or −0.0067 s.d./year for ASAT, and 24.3 ml or 0.011 s.d./year for VAT). Liver, pancreas, kidney, spleen, and ASAT volumes decreased, while VAT and lung volumes increased with age. Liver and pancreatic iron and pancreatic fat increase slightly with age. Several IDPs (volumes of liver, kidney, lung, and pancreas, as well as liver fat and iron) showed statistically significant evidence of heterogeneity in age-related changes between men and women. We found excess liver iron (>1.8 mg/g) in 3.22% of men and 1.75% of women.
 
 To explore diurnal variation, we investigated correlation between the imaging timestamp and IDPs. We find a decrease in liver volume during the day, with volume at 12 noon being on average 112 ml smaller than volume at 8 am, and a return to almost the original volume by 8 pm. This has previously been suggested in small ultrasound studies (n = 8) which indicated that liver volume is at its smallest between 12 and 2 pm, attributed to changes in hydration and glycogen content (Leung et al., 1986). We also observe smaller, but still statistically significant, associations between time of day and liver and pancreas iron, as well as ASAT, VAT, kidney, and lung volume. Although these changes appear to be physiological in nature, we are currently unable to rule out other potential sources of confounding, however unlikely (for example, different groups of participants being more likely to attend the scanning appointment at different times of day).
 
-## IDPs are associated with organ-specific disease outcomes
+#### IDPs are associated with organ-specific disease outcomes
 
 To assess which IDPs are associated with health-related outcomes, we defined a set of diseases based on inpatient hospital episode statistics (Materials and methods), and assessed the association between each IDP and disease diagnoses (Figure 2 and Supplementary file 1c). Although we were not able to evaluate cause and effect, we found evidence that IDPs reflect organ function and health from the association with disease outcomes.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-v1.jpg)
+
+**Figure 2.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at disease phenome-wide significance (dotted line, p=6.63e-05) and study-wide significance (dashed line, p=6.03e-06) after Bonferroni correction. Note that the PheCodes are not exclusive and have a hierarchical structure (for example, T1D and T2D are subtypes of Diabetes), so some diseases appear more than once in these plots. LL: Leukocytic leukaemia. CLL: Chronic leukocytic leakaemia. T1D: Type 1 diabetes. T2D: Type 2 diabetes. CKD: Chronic kidney disease.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at phenome-wide significance (dotted line, p=2.7e-05) and study-wide significance (dashed line, p=2.48e-06) after Bonferroni correction for the total number of measures. SHBG: Sex hormone binding globulin. MSCV: Mean sphered cell volume. MCH: Mean corpuscular haemoglobin. RC: Reticulocyte count. PDW: Platelet distribution width. ALT: alanine transaminase. ALP: Alkaline phosphatase. HLSRC: High light scatter reticulocyte count. GGT: Gamma glutamyl transferase.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at phenome-wide significance (dotted line, p=2.7e-05) and study-wide significance (dashed line, p=2.48e-06) after Bonferroni correction for the total number of measures.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at phenome-wide significance (dotted line, p=2.7e-05) and study-wide significance (dashed line, p=2.48e-06) after Bonferroni correction for the total number of measures.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at phenome-wide significance (dotted line, p=2.7e-05) and study-wide significance (dashed line, p=2.48e-06) after Bonferroni correction for the total number of measures.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The x-axis gives the effect size per standard deviation, and the y-axis -log10(p-value). The top three associations for each phenotype are labelled. Horizontal lines at phenome-wide significance (dotted line, p=2.7e-05) and study-wide significance (dashed line, p=2.48e-06) after Bonferroni correction for the total number of measures. FVC forced vital capacity. FEV1 Forced expiratory volume in 1 s. FF fat-free.
+
 Liver volume was significantly associated with chronic liver disease and cirrhosis (p=4.5e-06, beta = 0.389) as well as T2D (p=1.3e-92, beta = 0.73) and hypertension (p=3.9e-17, beta = 0.18). Kidney volume was associated with chronic kidney disease (CKD) (p=8.0e-23, beta = −1.0). Interestingly, pancreas volume was associated more strongly with Type 1 diabetes (T1D) (p=4.9e-21, beta = −0.77, approximate 95% confidence interval [−0.93,–0.608]), than T2D (p=1.1e-17, beta = −0.27, approximate 95% confidence interval [−0.332,–0.208]). In contrast pancreatic fat showed a small association with T2D (beta = 0.181, p=1.16e-07) and not with T1D (p=0.241). Lung volume was most strongly associated with tobacco use (p=1.8e-46, beta = 0.50) and disorders relating to chronic airway obstruction (COPD) (p=3.6e-35, beta = 0.61), with larger lung volume corresponding to a greater likelihood of respiratory disease diagnosis. Spleen volume was associated with myeloproliferative disease (p=2.2e-33, beta = 0.74), especially chronic lymphocytic leukaemia (p=9.9e-24, beta = 0.78). Liver fat was associated with T2D (p=1.4e-34, beta = 0.29). Liver iron was associated with T2D (p=3.1e-19, beta = −0.43) and iron deficiency anaemia (p=5.3e-12, beta = −0.44) VAT was associated with a wide range of cardiometabolic outcomes including hypertension (p=1e-49, beta = 0.39), T2D (p=8.1e-44, beta = 0.69), and lipid metabolism disorders (p=1.9e-33, beta = 0.42), while ASAT was only associated with cholelithiasis and cholecystitis (p=1.3e-08, beta = 0.38). This association remained statistically significant, after adjusting for VAT, counter to reports that only VAT is predictive of gallstones (Radmard et al., 2015). Overall, this supports the key role of VAT and liver fat in the development of metabolic syndrome.
 
-## IDPs are associated with organ-specific biomarkers, physiological measures, and behavioural traits
+#### IDPs are associated with organ-specific biomarkers, physiological measures, and behavioural traits
 
 To further explore the extent to which our IDPs reflect organ health, we assessed correlation between the IDPs and 87 biomarkers from blood, serum, and urine, chosen to reflect a range of health conditions (Materials and methods, Figure 2—figure supplement 1, Supplementary file 1d). We also investigated associations between IDPs and 352 lifestyle and exposure factors, 844 self-reported medical history factors, 500 physical and anthropometric measures, and 769 self-reported diet and exercise measures (Figure 2—figure supplements 3–5, Supplementary file 1d).
 
@@ -60,31 +276,57 @@ Consistent with previous reports (Harrison-Findik, 2007), we found that liver ir
 
 We found strong associations between increased lung volume and smoking status, tobacco smoking, COPD and lung disorders, wheeze, diagnosis of asthma and treatment for asthma, a decreased lung capacity as well as forced vital capacity (FVC) and forced expiratory volume in 1 s (FEV1)/FVC ratio (Figure 2—figure supplement 5). This is perhaps surprising in light of the age-related decreases in FEV1 and FVC; however, it has been shown that lung volume increases with both age and as a consequence of obstructive pulmonary diseases (Lutfi, 2017). Although lung volume estimated via MRI is not a widely used clinical measure, our data suggests it may be a biomarker of ageing-related respiratory complications.
 
-## Genetic architecture of abdominal IDPs
+### Genetic architecture of abdominal IDPs
 
 To explore the genetic architecture of the IDPs, we performed a genome-wide association study (GWAS) for each IDP of 9 million single-nucleotide polymorphisms (SNPs) in the approximately 30,000 individuals of white British ancestry (Bycroft et al., 2018; Materials and methods). We verified that the test statistics showed no overall inflation compared to the expectation by examining the intercept of linkage disequilibrium (LD) score regression (LDSC) (Bulik-Sullivan et al., 2015b; Supplementary file 1e). Utilising a generalised linear mixed model framework and SKAT-O test implemented in SAIGE-GENE (Zhou et al., 2020), we performed gene-based exome-wide association studies in the 11,134 participants with IDP and exome sequencing data. Test statistics were well calibrated and we found no study-wide significant associations (Figure 3—figure supplement 1). The number of individuals included in the analysis for each IDP is given in Table 1, together with the number of study-wide significant independent signals for each IDP.
 
-## Organ volume, fat, and iron are heritable
+#### Organ volume, fat, and iron are heritable
 
 For each IDP, we estimated SNP-heritability using the BOLT-REML model (Loh et al., 2015a; Materials and methods). All IDPs showed a significant heritable component, indicating that genetic variation contributes substantially to the variation between individuals (Figure 3A). Heritability is largely unaffected by the inclusion of height and BMI as additional covariates, indicating that it is not a function of overall body size.
 
-## Genetic correlation between abdominal IDPs
+![Figure 3.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heritability (point estimate and 95% confidence interval) for each IDP estimated using the BOLT-REML model. Y-axis: Adjusted for height and BMI. X-axis: Not adjusted for height and BMI. The three panels show volumes, fat, and iron respectively. (B) Genetic correlation between IDPs estimated using bivariate LD score regression. The size of the points is given by -log10(p), where p is the p-value of the genetic correlation between the traits. Upper left triangle: Adjusted for height and BMI. Lower right triangle: Not adjusted for height and BMI. (C) Manhattan plots showing genome-wide signals for all IDPs for volume (top panel), fat (middle panel), and iron concentration (lower panel). Horizontal lines at 5e-8 (blue dashed line, genome-wide significant association for a single trait) and 4.5e-9 (red dashed line, study-wide significant association). P-values are capped at 10e-50 for ease of display. The genes with closest transcription start site are labelled.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Left: Manhattan plot shows the association between each gene organised by genomic coordinates. Right: QQ-plot showing calibration of SKAT-O test statistics. λGC: Genomic control parameter for each trait. Blue dashed line indicates Bonferroni significance threshold genome-wide (p=7.4e-06). Red dashed line indicates overall study significance threshold (p=6.7e-07). (A) Volume of visceral fat (n = 11,069 samples) .(B) Volume of spleen (n = 11,134). (C) Volume of the lungs (n = 11,134). (D) Liver volume (n = 11,134). (E) Kidney volume (n = 11,134). (F) Abdominal subcutaneous fat (n = 11,134). One gene achieved genome-wide significance but not study wide significance (RRNAD1: pSKAT-O = 6.5e-06; betaburden = −0.08). (G) Pancreas volume (n = 11,093) (H) pancreas iron level (n = 5,525) (I) liver iron (n = 11,069) (J) pancreatic fat (n = 5525) (K) liver fat (n = 11,069).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Only IDPs and traits with statistically significant genetic correlation (p<1.61e-05 after Bonferroni correction for multiple testing) are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The top three enrichments for each phenotype passing a trait-wide significance threshold are labelled. Horizontal lines and trait-wide (dotted line) and study-wide (dashed line) significance after Bonferroni correction.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The top three enrichments for each phenotype passing a trait-wide significance threshold are labelled. Horizontal lines and trait-wide (dotted line) and study-wide (dashed line) significance after Bonferroni correction.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The top three enrichments for each phenotype passing a trait-wide significance threshold are labelled. Horizontal lines and trait-wide (dotted line) and study-wide (dashed line) significance after Bonferroni correction.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/65554/elife-65554-fig3-figsupp6-v1.jpg)
+
+#### Genetic correlation between abdominal IDPs
 
 To understand the extent to which genetic variation explains the correlation between traits, we used bivariate LD score regression (Bulik-Sullivan et al., 2015a) to estimate the genetic correlation between all 55 IDP pairs, with and without including height and BMI as covariates (Materials and methods). After Bonferroni correction, we found a statistically significant non-zero genetic correlation between 22 of the 55 unadjusted IDP-pairs traits (Figure 3B and Supplementary file 1f), the strongest (rg = 0.782, p=4.60e-137) between ASAT and VAT. There was substantial genetic correlation between VAT and liver fat (rg = 0.58, p=3.7e-38) and between VAT and pancreas fat (rg = 0.569, p=2.79e-16). We found a negative genetic correlation between pancreas volume and fat (rg = −0.45, p=2.1e-06), and between pancreas volume and iron (rg = −0.5, p=5.2e-05).
 
-## IDPs share a genetic basis with other physiological traits
+#### IDPs share a genetic basis with other physiological traits
 
 To identify traits with a shared genetic basis, we estimated genetic correlation between IDPs and 282 complex traits with a heritable component (Materials and methods). A total of 650 IDP-trait pairs showed evidence of nonzero genetic correlation; 347 of these involved with measures of size or body composition (Supplementary file 1g and Figure 3—figure supplement 2). We found substantial genetic correlation between ASAT volume and other measures of body fat, such as whole-body fat mass (rg = 0.94, p=3.2e-143) and between VAT and conventional surrogate markers such as waist circumference (rg = 0.75, p=1.6e-109). The strongest genetic correlation with lung volume was with FVC (rg = 0.7, p=3.1e-71), with FEV and height also significant. We also found more modest genetic correlation between organ volumes and biochemical measures, such as liver fat and ALT (rg = 0.5, p=4.5e-23), kidney volume and serum creatinine (rg = −0.4, p=3.9e-22), and liver iron and erythrocyte distribution width (rg = −0.33, p=2.1e-14).
 
-## Heritability is enriched in organ-specific cell types
+#### Heritability is enriched in organ-specific cell types
 
 In order to identify tissues or cell types contributing to the heritability of each trait, we used stratified LD score regression (Finucane et al., 2015) (Materials and methods). Liver fat showed evidence for enrichment in hepatocytes (p=4.20e-6) and liver tissue (p=2.2e-5), and pancreatic fat showed evidence for enrichment in pancreas tissue (smallest p=9.74e-5). Spleen volume showed enrichment in spleen cells (p=7.39e-10) and immune cell types including T cells, B cells, and natural killer cells, and neutrophils. VAT, ASAT, and lung volumes did not show evidence of significant heritability enrichment in any tissue or cell types (Figure 3—figure supplements 3–5).
 
-## Genome-wide significant associations
+### Genome-wide significant associations
 
 For each locus containing at least one variant exceeding the study-wide significance threshold, we used GCTA COJO (Yang et al., 2012) to identify likely independent signals, and map likely causal variants (Materials and methods, Supplementary file 1h). To better understand the biology of each signal, we explored traits likely to share the same underlying signal (colocalised signals) among 973 traits and 356 diseases measured in UKBB (Materials and methods, Supplementary file 1i), and gene expression in 49 tissues (Materials and methods, Supplementary file 1j).
 
-## Liver IDPs recapitulate known biology and point to new genes of interest
+#### Liver IDPs recapitulate known biology and point to new genes of interest
 
 The strongest association with liver volume (lead SNP rs4240624, p=2.1e-34, beta = −0.15), lies on chromosome 8, 175 kb from the nearest protein-coding gene, PPP1R3B. PPP1R3B is expressed in liver and skeletal muscle, and promotes hepatic glycogen biosynthesis (Mehta et al., 2017). Although this variant has been associated with attenuated signal on hepatic computed tomography (Stender et al., 2018); in our study, it was not associated with liver fat (p=0.007) or iron (p=0.001).
 
@@ -102,7 +344,7 @@ A region overlapping to MTTP with 67 variants in the 95% credible set was associ
 
 We replicate previously reported associations with liver iron at HFE (rs1800562 and rs1799945) and TMPRSS6 (Wilman et al., 2019), although we were unable to accurately finemap at the HLA locus. We found evidence for two independent additional signals on chromosome 2 between ASND1 and SLC40A1 (lead SNP rs7577758; conditional lead SNP rs115380467). SLC40A1 encodes ferroportin, a protein essential for iron homeostasis (Donovan et al., 2005) that enables absorption of dietary iron into the bloodstream. Mutations in SLC40A1 are associated with a form of haemochromatosis known as African Iron Overload (Mayr et al., 2011). This finding is consistent with a recent study which highlighted the role of hepcidin as a major regulator of hepatic iron storage (Wilman et al., 2019).
 
-## Novel associations with pancreas IDPs
+#### Novel associations with pancreas IDPs
 
 We identified 11 study-wide significant associations with pancreatic volume. None were coding or colocalised with the expression of protein-coding genes. Two signals (rs72802342, nearest gene CTRB2; rs744103, nearest gene ABO) colocalised with diabetic-related traits. This is consistent with our findings that T1D was associated with smaller pancreatic volume.
 
@@ -114,7 +356,7 @@ An association with pancreatic fat (lead SNP rs7405380) colocalises with the exp
 
 We identified signals at a locus on chromosome 1 containing FAF1 and CDKN2C (lead SNP rs775103516), and five other loci. In contrast to liver iron, where we identified strong signals at regions associated with ferroportin and hepcidin loci, we found no study-wide significant associations with pancreatic iron.
 
-## Novel associations with other organ volume IDPs
+#### Novel associations with other organ volume IDPs
 
 A locus on chromosome 2 was associated with average kidney volume. This signal colocalises with biomarkers of kidney function (cystatin C, creatinine, urate, and urea) and a SNP in the 95% credible set, rs807624, has previously been reported as associated with Wilms tumor (Turnbull et al., 2012), a pediatric kidney cancer rarely seen in patients over the age of five. However, this association raises the possibility that this locus plays a broader role in kidney structure and function in an adult population and warrants further study.
 
@@ -144,77 +386,77 @@ In conclusion, by systematically quantifying 11 IDPs covering several organs in 
 
 ## Materials and methods
 
-## Abdominal imaging data in UK biobank
+### Abdominal imaging data in UK biobank
 
 All abdominal scans were performed using a Siemens Aera 1.5T scanner (Syngo MR D13) (Siemens, Erlangen, Germany). We analysed four distinct groups of acquisitions: (1) the Dixon protocol with six separate series covering 1.1 m of the participants (neck-to-knees), (2) a high-resolution T1-weighted (T1w) 3D acquisition of the pancreas volume, (3a) a single-slice multi-echo acquisition sequence for liver fat and iron, and (3b) a single-slice multi-echo acquisition sequence for pancreas fat and iron. Additional details of the MRI protocol may be found elsewhere (Littlejohns et al., 2020). The protocol covers the neck-to-knee region, including organs such as the lungs outside the abdominal cavity. For consistency with the UK Biobank terminology, we used the term ‘abdominal’ throughout the text.
 
 The UK Biobank has approval from the North West Multi-centre Research Ethics Committee (MREC) to obtain and disseminate data and samples from the participants (http://www.ukbiobank.ac.uk/ethics/), and these ethical regulations cover the work in this study. Written informed consent was obtained from all participants.
 
-## Image preprocessing
+### Image preprocessing
 
 Analysis was performed on all available datasets as of December 2019, with 38,971 MRI datasets released by the UK Biobank, where a total of 100,000 datasets are the ultimate goal for the imaging sub-study. We focus here on four separate acquisitions, with one sequence being applied twice (once for the liver and once for the pancreas). The Dixon data were assembled into a single 3D volume for each participant using an automated fat-water swap detection and correction procedure. No additional preprocessing was necessary for the T1w 3D data for the pancreas. Proton density fat fraction (PDFF) and R2* were estimated from the single-slice multi-echo data for the liver and pancreas (Bydder et al., 2020b). The R2* values were converted into iron concentrations (McKay et al., 2018; Wood et al., 2005). More details on the preprocessing steps may be found in the Supplementary Text.
 
-## Manual annotation of abdominal structures for model training data
+### Manual annotation of abdominal structures for model training data
 
 For each organ, we defined a standard operating procedure and provided training to a team of radiographers, utilising MITK, a free open-source software system for development of interactive medical image processing software (mitk.org). All annotations were visually inspected at multiple stages by experienced analysts before use in modelling.
 
-## Segmentation of organs, for volume assessment, from Dixon data
+### Segmentation of organs, for volume assessment, from Dixon data
 
 We re-purposed an updated 3D iteration of the U-net architecture (Ronneberger et al., 2015) based on label-free segmentation from 3D microscopy (Ounkomol et al., 2018). Input voxels were encoded into five channels: fat, water, in-phase, out-of-phase, and body mask. The body mask indicated whether a given voxel was inside the body. To improve data efficiency, we pursued a multi-task approach (Zhang and Yang, 2021) and implemented aggressive data augmentation. We annotated multiple compartments and organs on the same individuals. Although not intrinsically novel, we are the first to scale this application to a very large UKBB imaging cohort. All weights are available to download (https://github.com/calico/ukbb-mri-sseg). This is the first time that segmentations for multiple major organs and compartments have been published on the UKBB dataset. Comparisons across datasets are also difficult because evaluation would be confounded by the specifics of how individuals are chosen, the conventions of annotation, and specifics of data acquisition or processing.
 
-## Abdominal subcutaneous adipose tissue (ASAT) and visceral adipose tissue (VAT)
+#### Abdominal subcutaneous adipose tissue (ASAT) and visceral adipose tissue (VAT)
 
 Two structures, the ‘body cavity’ and ‘abdominal cavity’, were segmented using neural-network based methods from the Dixon segmentation to estimate ASAT and VAT. For estimation of VAT, the abdominal cavity was used to isolate only tissue in the abdomen and pelvis. The fat channel was thresholded, small holes filled, and segmentations of abdominal organs (e.g. liver, spleen, kidneys) were removed to produce the final mask of VAT. For ASAT estimation, the body cavity was used to exclude all tissue internal to the body. A bounding box was computed based on the abdominal cavity, where the upper and lower bounds in the superior-inferior (z) direction were used to define the limits of the ASAT compartment.
 
-## Segmentation of the liver, for fat and iron content assessment, from single-slice data
+#### Segmentation of the liver, for fat and iron content assessment, from single-slice data
 
 To automatically segment livers on 2D liver acquisitions, we trained one 2D U-net model with standard data augmentations for IDEAL, and another model for GRE. During inference, we ensured high specificity, at the cost of recall, by ablating the foreground mask by 25%. We made this trade-off because it is critical to include only liver tissue in the downstream analysis. In addition we removed voxels with R2* values outside the physiological range [18.78, 68.9] (McKay et al., 2018). Final values were not sensitive to this filter.
 
-## Pancreas segmentation from T1w MRI (volume) and extraction (fat and iron content assessment), from single-slice data
+#### Pancreas segmentation from T1w MRI (volume) and extraction (fat and iron content assessment), from single-slice data
 
 We performed pancreas 3D segmentation on the high-resolution T1w 3D acquisition based on a recent iteration of the U-net architecture used in label-free microscopy (Ounkomol et al., 2018), using 123 manual annotations. Segmentation was not performed using the Dixon data since the pancreas has a complex morphology and benefited from improved contrast and resolution. The segmented volume was resampled to extract an equivalent 2D mask for the single-slice data (Basty et al., 2020).
 
-## Statistical analysis of IDPs
+### Statistical analysis of IDPs
 
 All statistical analyses were performed using R version 3.6.0.
 
-## Comparison with previous studies
+#### Comparison with previous studies
 
 We compared the values extracted in our study with those from previous studies, available from the following UK Biobank fields:
 
-## Relationship between age, scan time, and IDPs
+#### Relationship between age, scan time, and IDPs
 
 For fitting linear models, we used the R function 'lm'. For fitting smoothing splines, we used the 'splines' package. To determine whether a coefficient was statistically significant in a set of models, we adjusted the p-values for each coefficient using Bonferroni correction. We compared models with and without scan time using ANOVA.
 
 We looked for systematic differences between scanning centre, and trends by scan date (Figure 1—figure supplement 2). Because there were some minor differences unlikely to be of biological interest, we included scanning centre and scan date as covariates in all subsequent analyses.
 
-## Disease phenome defined from hospital records
+#### Disease phenome defined from hospital records
 
 We used the R package PheWAS (Carroll et al., 2014) to combine ICD10 codes (Field 41270) into distinct diseases or traits (PheCodes). The raw ICD10 codes were grouped into 1283 PheCodes; of these, 754 PheCodes had at least 20 cases for all IDPs dataset allowing for a meaningful regression model. For each IDP-PheCode pair, we performed a logistic regression adjusted for age, sex, height, and BMI, and imaging centre and imaging date, scan time, and self-reported ethnicity.
 
 We defined two Bonferroni-adjusted p-values: a single-trait value of 6.63e-5, and a study-wide value of 6.03e-6. As many of the diagnoses are correlated, we expect this threshold to be conservative.
 
-## Other traits
+#### Other traits
 
 We used the R package PHESANT (Millard et al., 2018) to generate an initial list of variables derived from raw data. We manually curated this list to remove variables related to procedural metrics (e.g. measurement date, time and duration; sample volume and quality), duplicates (e.g. data collected separately on a small number of participants during the pilot phase), and raw measures (e.g. individual components of the fluid intelligence score). This resulted in a total of 1824 traits. For each trait, we performed a regression (linear regression for quantitative traits, and logistic regression for binary traits) on the abdominal IDP, including imaging centre, imaging date, scan time, age, sex, BMI, and height, and self-reported ethnicity as covariates.
 
 We defined two Bonferroni-adjusted p-values: a single-trait value of 2.75e-5, and a study-wide value of 2.49e-6. As many traits are correlated, we expect this threshold to be conservative.
 
-## Genetics
+### Genetics
 
 We follow the methods described in a previous study (Sethi et al., 2020).
 
-## Genome-wide association study
+#### Genome-wide association study
 
 We used the UKBB imputed genotypes version 3 (Bycroft et al., 2018), excluding single nucleotide polymorphisms (SNPs) with minor allele frequency <1% and imputation quality <0.9. We included only participants who self-reported their ancestry as ‘White British’ and who clustered with this group in a principal components analysis (Bycroft et al., 2018). We excluded participants exhibiting sex chromosome aneuploidy, with a discrepancy between genetic and self-reported sex, heterozygosity and missingness outliers, and genotype call rate outliers (Bycroft et al., 2018). We used BOLT-LMM version 2.3.2 (Loh et al., 2015b) to conduct the genetic association study. To calculate the genotype-relatedness matrix, we followed the recommendation of the BOLT-LMM authors and used an LD-pruned (r2 <0.8) set of 574,316 SNPs extracted from the genotyped SNPs and a leave-one-chromosome-out (LOCO) approach to test association with each SNP. We included age at imaging visit, age squared, sex, imaging centre, scan date, scan time, and genotyping batch as fixed-effect covariates, and genetic relatedness derived from genotyped SNPs as a random effect to control for population structure and relatedness. The genomic control parameter, computed from an LD-pruned set of genotyped SNPs ranged from 1.02 to 1.09 across eleven IDPs (Supplementary file 1k and Figure 3—figure supplement 6). We verified that the test statistics showed no overall inflation compared to the expectation by examining the intercept of linkage disequilibrium (LD) score regression (LDSC) (Bulik-Sullivan et al., 2015b; Supplementary file 1e), suggesting that the slightly inflated GC parameter is likely due to the polygenicity of these traits, rather than residual confounding. In addition to the commonly-used genome-wide significance threshold of p=5e-8, we defined an additional study-wide significance threshold using Bonferroni correction for the number of traits, p=5e-8/11 = 4.5e-9. For this analysis and all other analyses using LDSC, we followed the recommendation of the developers and (i) removed variants with imputation quality (info) <0.9 because the info value is correlated with the LD score and could introduce bias, (ii) excluded the major histocompatibility complex (MHC) region due to the complexity of LD structure at this locus (GRCh37::6:28,477,797–33,448,354; see https://www.ncbi.nlm.nih.gov/grc/human/regions/MHC), and (ii) restricted to HapMap3 SNPs (Altshuler et al., 2010).
 
 For each IDP, we performed a secondary analysis with height and BMI as additional covariates.
 
-## Exome-wide association study
+#### Exome-wide association study
 
 Exome sequencing variant calls from the raw FE variant calling pipeline (Regier et al., 2018) were downloaded from the UK Biobank website (http://biobank.ctsu.ox.ac.uk/crystal/field.cgi?id=23160). QC was performed in PLINK v.1.90 using the following criteria: removal of samples with discordant sex (no self-reported sex provided, ambiguous genetic sex, or discordance between genetic and self-reported sex), sample-level missingness <0.02, European genetic ancestry as defined by the UK Biobank (Bycroft et al., 2018). Variant annotation was performed using VEP v100, filtered for rare (MAF <0.01) putative loss-of-function variants including predicted high-confidence loss-of-function variants, predicted using the LOFTEE plugin (Karczewski et al., 2020). A total of 11,134 samples and 11,939 genes were analysed in a generalised linear mixed model as implemented in SAIGE-GENE (Zhou et al., 2020). A filtering step of at least five loss-of-function carriers per gene was applied, resulting in 6745 genes. A kinship matrix was built in SAIGE off of a filtered set of array-genotyped variants (r2 <0.2, MAF ≥ 0.05, autosomal SNPs, exclusion of regions of long-range LD, HWE p>1e-10 in European population). Outcome variables were inverse normal transformed and regressed on gene carrier status, adjusted for genetic sex, age, age2, the first 10 principal components of genetic ancestry, scaled scan date, scaled scan time, and study centre as fixed effects and genetic relatedness as a random effects term.
 
-## Heritability estimation and enrichment
+#### Heritability estimation and enrichment
 
 We estimated the heritability of each trait using restricted maximum likelihood as implemented in BOLT version 2.3.2 (Loh, 2018).
 
@@ -222,33 +464,49 @@ To identify relevant tissues and cell types contributing to the heritability of 
 
 To enable visualisation, we grouped tissue/cell types into systems (e.g. ‘blood or immune’, ‘central nervous system’) as used in Finucane et al., 2018.
 
-## Genetic correlation
+#### Genetic correlation
 
 We computed genetic correlation between traits using bivariate LDSC (Bulik-Sullivan et al., 2015a).
 
-## Statistical fine-mapping
+#### Statistical fine-mapping
 
 We performed approximate conditional analysis using genome-wide complex trait analysis (GCTA) (Yang et al., 2012), considering all variants that passed quality control measures and were within 500 kb of a locus index variant. As a reference panel for LD calculations, we used genotypes from 5,000 UKBB participants (Bycroft et al., 2018) that were randomly selected after filtering for unrelated participants of white British ancestry. We excluded the major histocompatibility complex (MHC) region due to the complexity of LD structure at this locus (GRCh37::6:28,477,797–33,448,354; see https://www.ncbi.nlm.nih.gov/grc/human/regions/MHC). For each locus, we considered variants with genome-wide evidence of association (Pjoint <10–8) to be conditionally independent. We annotated each independent signal with the nearest known protein-coding gene using the OpenTargets genetics resource (May 2019 version).
 
-## Construction of genetic credible sets
+#### Construction of genetic credible sets
 
-For each distinct signal, we calculated credible sets (Maller et al., 2012) with 95% probability of containing at least one variant with a true effect size not equal to zero. We first computed the natural log approximate Bayes factor (Wakefield, 2007) Λj, for the j-th variant within the fine-mapping region:Λj=ln(VjVj+ω)ωβ22Vj(Vj+ω)where βj and Vj denote the estimated allelic effect (log odds ratio for case control studies) and corresponding variance. The parameter ω denotes the prior variance in allelic effects and is set to (0.2)2 for case control studies (Wakefield, 2007) and (0.15σ)2 for quantitative traits (Giambartolomei et al., 2014), where σ is the standard deviation of the phenotype estimated using the variance of coefficients (Var(βj)), minor allele frequency (fj), and sample size (nj; see the sdY.est function from the coloc R package):2njfj(1-fj)∼σ21Var(βj)-1
+For each distinct signal, we calculated credible sets (Maller et al., 2012) with 95% probability of containing at least one variant with a true effect size not equal to zero. We first computed the natural log approximate Bayes factor (Wakefield, 2007) Λj, for the j-th variant within the fine-mapping region:
 
-Here, σ2 is the coefficient of the regression, estimating σ such that σ=σ2.
+$$
+Λ_{j}=ln(\sqrt{\frac{V_{j}}{V_{j+\omega}}})\frac{\omega\beta^{2}}{2V_{j}(V_{j}+\omega)}
+$$
 
-We calculated the posterior probability, πj, that the j th variant is driving the association, given l variants in the region, by:πj=(1-γ)Λjl∑k=0lΛkwhere γ denotes the prior probability for no association at this locus and k indexes the variants in the region (with k = 0 allowing for the possibility of no association in the region). We set γ = 0.05 to control for the expected false discovery rate of 5%, since we used a threshold of P marginal <5×10−8 to identify loci for fine-mapping. To construct the credible set, we (i) sorted variants by increasing Bayes factors (natural log scale), (ii) included variants until the cumulative sum of the posterior probabilities was ≥ 1−c, where c corresponds to the credible set cutoff of 0.95.
+where βj and Vj denote the estimated allelic effect (log odds ratio for case control studies) and corresponding variance. The parameter ω denotes the prior variance in allelic effects and is set to (0.2)2 for case control studies (Wakefield, 2007) and (0.15σ)2 for quantitative traits (Giambartolomei et al., 2014), where σ is the standard deviation of the phenotype estimated using the variance of coefficients (Var(βj)), minor allele frequency (fj), and sample size (nj; see the sdY.est function from the coloc R package):
 
-## Colocalisation of independent signals
+$$
+2n_{j}f_{j}(1-f_{j})∼\sigma^{2}\frac{1}{Var(\beta_{j})}-1
+$$
+
+Here, σ2 is the coefficient of the regression, estimating σ such that $\sigma=\sqrt{\sigma^{2}}$.
+
+We calculated the posterior probability, πj, that the j th variant is driving the association, given l variants in the region, by:
+
+$$
+\pi_{j}=\frac{(1-\gamma)Λ_{j}}{l\sum_{k=0}^{l}Λ_{k}}
+$$
+
+where γ denotes the prior probability for no association at this locus and k indexes the variants in the region (with k = 0 allowing for the possibility of no association in the region). We set γ = 0.05 to control for the expected false discovery rate of 5%, since we used a threshold of P marginal <5×10−8 to identify loci for fine-mapping. To construct the credible set, we (i) sorted variants by increasing Bayes factors (natural log scale), (ii) included variants until the cumulative sum of the posterior probabilities was ≥ 1−c, where c corresponds to the credible set cutoff of 0.95.
+
+#### Colocalisation of independent signals
 
 To identify other traits potentially sharing the same underlying causal variant, we downloaded a catalog of summary statistics using the UK Biobank cohort from http://www.nealelab.is/uk-biobank (Version 2). For disease phenotypes, we additionally downloaded summary statistics computed using SAIGE (Zhou et al., 2018) from https://www.leelabsg.org/resources. After de-duplication, removal of biologically uninformative traits, and removal of traits with no genome-wide significant associations, we considered a total of 974 complex traits and, and 356 disease phenotypes. To identify potentially causal genes at each locus, additionally explored expression QTL data from GTEx (version 7, dbGaP accession number dbGaP accession number phs000424.v7.p2) to seek evidence for colocalisation with expression in one of 49 tissues.
 
 We performed colocalisation analysis using the coloc R package (Giambartolomei et al., 2014) using default priors and all variants within 500 kb of the index variant of each signal. Following previous studies (Guo et al., 2015), we considered two genetic signals to have strong evidence of colocalisation if PP3+PP4≥0.99 and PP4/PP3 ≥5.
 
-## Identifying other associations with our lead signals
+#### Identifying other associations with our lead signals
 
 In addition to the colocalisation analysis with UK Biobank traits, order to identify GWAS signals tagged by any of our associations from previous studies (not including the UK Biobank traits described above), we queried the Open Targets Genetics Resource (Carvalho-Silva et al., 2019), version 190505. We identified for studies where our lead variant was in LD (r > 0.7) with the lead SNP of a published study. We also searched for our lead SNPs in the NHGRI-EBI GWAS catalog (Buniello et al., 2019) in October 2020.
 
-## Code availability
+### Code availability
 
 MATLAB code to estimate the PDFF is available from Dr Mark Bydder at https://github.com/marcsous/pdff (Bydder, 2020a).
 

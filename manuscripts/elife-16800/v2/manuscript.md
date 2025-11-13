@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.16800.001 Open access, open data, open source and other open scholarship practices are growing in popularity and necessity. However, widespread adoption of these practices has not yet been achieved. One reason is that researchers are uncertain about how sharing their work will affect their careers. We review literature demonstrating that open research is associated with increases in citations, media attention, potential collaborators, job opportunities and funding opportunities. These findings are evidence that open research practices bring significant benefits to researchers relative to more traditional closed practices. DOI: http://dx.doi.org/10.7554/eLife.16800.001
+Open access, open data, open source and other open scholarship practices are growing in popularity and necessity. However, widespread adoption of these practices has not yet been achieved. One reason is that researchers are uncertain about how sharing their work will affect their careers. We review literature demonstrating that open research is associated with increases in citations, media attention, potential collaborators, job opportunities and funding opportunities. These findings are evidence that open research practices bring significant benefits to researchers relative to more traditional closed practices.
 
 ## Introduction
 
@@ -50,19 +50,19 @@ We take a researcher-centric approach in outlining the benefits of open research
 
 ## Publishing
 
-## Open publications get more citations
+### Open publications get more citations
 
-There is evidence that publishing openly is associated with higher citation rates (
+There is evidence that publishing openly is associated with higher citation rates (Hitchcock, 2016). For example, Eysenbach reported that articles published in the Proceedings of the National Academy of Sciences (PNAS) under their open access (OA) option were twice as likely to be cited within 4–10 months and nearly three times as likely to be cited 10–16 months after publication than non-OA articles published in the same journal (Eysenbach, 2006). Hajjem and colleagues studied over 1.3 million articles published in 10 different disciplines over a 12-year period and found that OA articles had a 36–172% advantage in citations over non-OA articles (Hajjem et al., 2006). While some controlled studies have failed to find a difference in citations between OA and non-OA articles or attribute differences to factors other than access (Davis, 2011; Davis et al., 2008; Frandsen, 2009a; Gaulé and Maystre, 2011; Lansingh and Carter, 2009), a larger number of studies confirm the OA citation advantage. Of 70 studies registered as of June 2016 in the Scholarly Publishing and Academic Resources Coalition (SPARC) Europe database of citation studies, 46 (66%) found an OA citation advantage, 17 (24%) found no advantage, and 7 (10%) were inconclusive (SPARC Europe, 2016). Numerical estimates of the citation advantage in two reviews range from -5% to 600% (Swan, 2010) and 25% to 250% (Wagner, 2010). The size of the advantage observed is often dependent on discipline (Figure 1). Importantly, the OA citation advantage can be conferred regardless of whether articles are published in fully OA journals, subscription journals with OA options (hybrid journals), or self-archived in open repositories (Eysenbach, 2006; Hajjem et al., 2006; Gargouri et al., 2010; Research Information Network, 2014; Wang et al., 2015; Swan, 2010; Wagner, 2010). Moreover, at least in some cases, the advantage is not explained by selection bias (i.e., authors deliberately posting their better work to open platforms), as openly archived articles receive a citation advantage regardless of whether archiving is initiated by the author or mandated by an institution or funder (Gargouri et al., 2010; Xia and Nakanishi, 2012).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16800/elife-16800-fig1-v2.jpg)
 
-**Figure 1.:** The relative citation rate (OA: non-OA) in 19 fields of research. This rate is defined as the mean citation rate of OA articles divided by the mean citation rate of non-OA articles. Multiple points for the same discipline indicate different estimates from the same study, or estimates from several studies. References by discipline: Agricultural studies (Kousha and Abdoli, 2010); Physics/astronomy (Gentil-Beccot et al., 2010; Harnad and Brody, 2004; Metcalfe, 2006); Medicine (Sahu et al., 2005; Xu et al., 2011); Computer science (Lawrence, 2001); Sociology/social sciences (Hajjem et al., 2006; Norris et al., 2008; Xu et al., 2011); Psychology (Hajjem et al., 2006); Political science (Hajjem et al., 2006; Antelman, 2004; Atchison and Bull, 2015); Management (Hajjem et al., 2006); Law (Donovan et al., 2015; Hajjem et al., 2006); Economics (Hajjem et al., 2006; McCabe and Snyder, 2015; Norris et al., 2008; Wohlrabe, 2014); Mathematics (Antelman, 2004; Davis and Fromerth, 2007; Norris et al., 2008); Health (Hajjem et al., 2006); Engineering (Antelman, 2004; Koler-Povh et al., 2014); Philosophy (Antelman, 2004); Education (Hajjem et al., 2006; Zawacki-Richter et al., 2010); Business (Hajjem et al., 2006; McCabe and Snyder, 2015); Communication studies (Zhang, 2006); Ecology (McCabe and Snyder, 2014; Norris et al., 2008); Biology (Frandsen, 2009b; Hajjem et al., 2006; McCabe and Snyder, 2014).DOI: http://dx.doi.org/10.7554/eLife.16800.002
+**Figure 1.:** The relative citation rate (OA: non-OA) in 19 fields of research. This rate is defined as the mean citation rate of OA articles divided by the mean citation rate of non-OA articles. Multiple points for the same discipline indicate different estimates from the same study, or estimates from several studies. References by discipline: Agricultural studies (Kousha and Abdoli, 2010); Physics/astronomy (Gentil-Beccot et al., 2010; Harnad and Brody, 2004; Metcalfe, 2006); Medicine (Sahu et al., 2005; Xu et al., 2011); Computer science (Lawrence, 2001); Sociology/social sciences (Hajjem et al., 2006; Norris et al., 2008; Xu et al., 2011); Psychology (Hajjem et al., 2006); Political science (Hajjem et al., 2006; Antelman, 2004; Atchison and Bull, 2015); Management (Hajjem et al., 2006); Law (Donovan et al., 2015; Hajjem et al., 2006); Economics (Hajjem et al., 2006; McCabe and Snyder, 2015; Norris et al., 2008; Wohlrabe, 2014); Mathematics (Antelman, 2004; Davis and Fromerth, 2007; Norris et al., 2008); Health (Hajjem et al., 2006); Engineering (Antelman, 2004; Koler-Povh et al., 2014); Philosophy (Antelman, 2004); Education (Hajjem et al., 2006; Zawacki-Richter et al., 2010); Business (Hajjem et al., 2006; McCabe and Snyder, 2015); Communication studies (Zhang, 2006); Ecology (McCabe and Snyder, 2014; Norris et al., 2008); Biology (Frandsen, 2009b; Hajjem et al., 2006; McCabe and Snyder, 2014).
 
-## Open publications get more media coverage
+### Open publications get more media coverage
 
 One way for researchers to gain visibility is for their publications to be shared on social media and covered by mainstream media outlets. There is evidence that publishing articles openly can help researchers get noticed. A study of over 2,000 articles published in Nature Communications showed that those published openly received nearly double the number of unique tweeters and Mendeley readers as closed-access articles (Adie, 2014a). A similar study of over 1,700 Nature Communications articles found that OA articles receive 2.5–4.4 times the number of page views, and garnered more social media attention via Twitter and Facebook than non-OA articles (Wang et al., 2015). There is tentative evidence that news coverage confers a citation advantage. For example, a small quasi-experimental 1991 study found that articles covered by the New York Times received up to 73% more citations that those not covered (Phillips et al., 1991). A 2003 correlational study supported these results, reporting higher citation rates for articles covered by the media (Kiernan, 2003).
 
-## Prestige and journal impact factor
+### Prestige and journal impact factor
 
 As Sydney Brenner wrote in 1995, ‘‘…what matters absolutely is the scientific content of a paper and…nothing will substitute for either knowing it or reading it’’ (Brenner, 1995). Unfortunately, academic institutions often rely on proxy metrics, like journal impact factor (IF), to quickly evaluate researchers’ work. The IF is a flawed metric that correlates poorly with the scientific quality of individual articles (Brembs et al., 2013; Neuberger and Counsell, 2002; PLOS Medicine Editors, 2006; Seglen, 1997). In fact, several of the present authors have signed the San Francisco Declaration on Research Assessment (SF-DORA) recommending IF not be used as a research evaluation metric (American Society for Cell Biology, 2013). However, until institutions cease using IF in evaluations, researchers will understandably be concerned about the IF of journals in which they publish. In author surveys, researchers repeatedly rank IF and associated journal reputation as among the most important factors they consider when deciding where to publish (Nature Publishing Group, 2015; Solomon, 2014). Researchers are also aware of the associated prestige that can accompany publication in high-IF journals such as Nature or Science. Thus, OA advocates should recognize and respect the pressures on researchers to select publishing outlets based, at least in part, on IF.
 
@@ -70,9 +70,9 @@ Fortunately, concerns about IF need not prevent researchers from publishing open
 
 In addition, many subscription-based high-IF journals offer authors the option to pay to make their articles openly accessible. While one can debate the long-term viability and merits of a model that allows publishers to effectively reap both reader-paid and author-paid charges (Björk, 2012), in the short term, researchers who wish to publish their articles openly in traditional journals can do so. Researchers can also publish in high-IF subscription journals and self-archive openly (see section "Publish where you want and archive openly"). We hope that in the next few years, use of IF as a metric will diminish or cease entirely, but in the meantime, researchers have options to publish openly while still meeting any IF-related evaluation and career advancement criteria.
 
-## Rigorous and transparent peer review
+### Rigorous and transparent peer review
 
-Unlike most subscription journals, several OA journals have open and transparent peer review processes. Journals such as PeerJ and Royal Society’s Open Science offer reviewers the opportunity to sign their reviews and offer authors the option to publish the full peer review history alongside their articles. In 2014, PeerJ reported that ∼40% of reviewers sign their reports and ∼80% of authors choose to make their review history public (PeerJ Staff, 2014). BioMed Central’s GigaScience, all the journals in BMC’s medical series, Copernicus journals, F1000Research, and MDPI’s Life require that reviewer reports be published, either as part of a prepublication review process, or subsequent to publication. Some studies suggest open peer review may produce reviews of higher quality, including better substantiated claims and more constructive criticisms, compared to closed review (Kowalczuk et al., 2013; Walsh et al., 2000). Additional studies have also argued that transparent peer review processes are linked to measures of quality (Wicherts, 2016). Other studies have reported no differences in the quality of open versus closed reviews (van Rooyen et al., 1999; van Rooyen et al., 2010). More research in this area is needed.
+Unlike most subscription journals, several OA journals have open and transparent peer review processes. Journals such as PeerJ and Royal Society’s Open Science offer reviewers the opportunity to sign their reviews and offer authors the option to publish the full peer review history alongside their articles. In 2014, PeerJ reported that $∼$40% of reviewers sign their reports and $∼$80% of authors choose to make their review history public (PeerJ Staff, 2014). BioMed Central’s GigaScience, all the journals in BMC’s medical series, Copernicus journals, F1000Research, and MDPI’s Life require that reviewer reports be published, either as part of a prepublication review process, or subsequent to publication. Some studies suggest open peer review may produce reviews of higher quality, including better substantiated claims and more constructive criticisms, compared to closed review (Kowalczuk et al., 2013; Walsh et al., 2000). Additional studies have also argued that transparent peer review processes are linked to measures of quality (Wicherts, 2016). Other studies have reported no differences in the quality of open versus closed reviews (van Rooyen et al., 1999; van Rooyen et al., 2010). More research in this area is needed.
 
 Unfortunately, the myth that OA journals have poor or non-existent peer review persists. This leads many to believe that OA journals are low quality and causes researchers to be concerned that publishing in these venues will be considered less prestigious in academic evaluations. To our knowledge, there has been no controlled study comparing peer review in OA versus subscription journals. Studies used by some to argue the weakness of peer review at OA journals, such as the John Bohannon ‘sting’ (Bohannon, 2013) in which a fake paper was accepted by several OA journals, have been widely criticized in the academic community for poor methodology, including not submitting to subscription journals for comparison (Joseph, 2013; Redhead, 2013). In fact, Bohannon admitted, ‘‘Some open-access journals that have been criticized for poor quality control provided the most rigorous peer review of all’’. He cites PLOS ONE as an example, saying it was the only journal to raise ethical concerns with his submitted work (Bohannon, 2013).
 
@@ -80,11 +80,152 @@ Subscription journals have not been immune to problems with peer review. In 2014
 
 Over time, we expect that transparency will help dispel the myth of poor peer review at OA journals, as researchers read reviews and confirm that the process is typically as rigorous as that of subscription journals. Authors can use open reviews to demonstrate to academic committees the rigorousness of the peer review process in venues where they publish, and highlight reviewer comments on the importance of their work. Researchers in their capacity as reviewers can also benefit from an open approach, as this allows them to get credit for this valuable service. Platforms like Publons let researchers create reviewer profiles to showcase their work (Publons, 2016).
 
-## Publish where you want and archive openly
+### Publish where you want and archive openly
 
 Some researchers may not see publishing in OA journals as a viable option, and may wish instead to publish in specific subscription journals seen as prestigious in their field. Importantly, there are ways to openly share work while still publishing in subscription journals.
 
-Preprints: Authors may provide open access to their papers by posting them as preprints prior to formal peer review and journal publication. Preprints servers are both free for authors to post and free for readers. Several archival preprint servers exist covering different subject areas (Table 1). (Note: The list in Table 1 is not all-inclusive; there are many other servers and institutional repositories that also accept preprints).10.7554/eLife.16800.003Table 1.Preprint servers and general repositories accepting preprints.DOI: http://dx.doi.org/10.7554/eLife.16800.003Preprint server or repository*Subject areasRepository open source?Public API?Can leave feedback?†Third party persistent ID?arXiv arxiv.orgphysics, mathematics, computer science, quantitative biology, quantitative finance, statisticsNoYesNoNo‡bioRxiv biorxiv.orgbiology, life sciencesNoNoYesYes (DOI)CERN document server cds.cern.chhigh-energy physicsYes (GPL)YesNoNoCogprints cogprints.orgpsychology, neuroscience, linguistics, computer science, philosophy, biologyNoYesNoNoEconStor econstor.eueconomicsNoYesNoYes (Handle)e-LiS eprints.rclis.orglibrary and information sciencesNo§YesNoYes (Handle)figshare figshare.comgeneral repository for all disciplinesNoYesYesYes (DOI)Munich Personal RePEc Archive mpra.ub.uni-muenchen.deeconomicsNo¶YesNoNoOpen Science Framework osf.iogeneral repository for all disciplinesYes (Apache 2)YesYesYes (DOI/ARK)PeerJ Preprints peerj.com/archives-preprintsbiological, life, medical, and computer sciencesNoYesYesYes (DOI)PhilSci Archive philsci-archive.pitt.eduphilosophy of scienceNo**YesNoNoSelf-Journal of Science www.sjscience.orggeneral repository for all disciplinesNoNoYesNoSocial Science Research Network ssrn.comsocial sciences and humanitiesNoNoYesYes (DOI)The Winnower thewinnower.comgeneral repository for all disciplinesNoNoYesYes (DOI)††Zenodo zenodo.orggeneral repository for all disciplinesYes (GPLv2)YesNoYes (DOI)* All these servers and repositories are indexed by Google Scholar.† Most, if not all, of those marked ’Yes’ require some type of login or registration to leave comments.‡ arXiv provides internally managed persistent identifiers.§ e-LiS is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.¶ MPRA is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.** PhilSci Archive is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.†† The Winnower charges a $25 fee to assign a DOI.
+Preprints: Authors may provide open access to their papers by posting them as preprints prior to formal peer review and journal publication. Preprints servers are both free for authors to post and free for readers. Several archival preprint servers exist covering different subject areas (Table 1). (Note: The list in Table 1 is not all-inclusive; there are many other servers and institutional repositories that also accept preprints).
+
+**Table 1.**
+ Preprint servers and general repositories accepting preprints.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Preprint server or repository*</th>
+      <th>Subject areas</th>
+      <th>Repository open source?</th>
+      <th>Public API?</th>
+      <th>Can leave feedback?†</th>
+      <th>Third party persistent ID?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>arXiv arxiv.org</td>
+      <td>physics, mathematics, computer science, quantitative biology, quantitative finance, statistics</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No‡</td>
+    </tr>
+    <tr>
+      <td>bioRxiv biorxiv.org</td>
+      <td>biology, life sciences</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes (DOI)</td>
+    </tr>
+    <tr>
+      <td>CERN document server cds.cern.ch</td>
+      <td>high-energy physics</td>
+      <td>Yes (GPL)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Cogprints cogprints.org</td>
+      <td>psychology, neuroscience, linguistics, computer science, philosophy, biology</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>EconStor econstor.eu</td>
+      <td>economics</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes (Handle)</td>
+    </tr>
+    <tr>
+      <td>e-LiS eprints.rclis.org</td>
+      <td>library and information sciences</td>
+      <td>No§</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes (Handle)</td>
+    </tr>
+    <tr>
+      <td>figshare figshare.com</td>
+      <td>general repository for all disciplines</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes (DOI)</td>
+    </tr>
+    <tr>
+      <td>Munich Personal RePEc Archive mpra.ub.uni-muenchen.de</td>
+      <td>economics</td>
+      <td>No¶</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Open Science Framework osf.io</td>
+      <td>general repository for all disciplines</td>
+      <td>Yes (Apache 2)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes (DOI/ARK)</td>
+    </tr>
+    <tr>
+      <td>PeerJ Preprints peerj.com/archives-preprints</td>
+      <td>biological, life, medical, and computer sciences</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes (DOI)</td>
+    </tr>
+    <tr>
+      <td>PhilSci Archive philsci-archive.pitt.edu</td>
+      <td>philosophy of science</td>
+      <td>No**</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Self-Journal of Science www.sjscience.org</td>
+      <td>general repository for all disciplines</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Social Science Research Network ssrn.com</td>
+      <td>social sciences and humanities</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes (DOI)</td>
+    </tr>
+    <tr>
+      <td>The Winnower thewinnower.com</td>
+      <td>general repository for all disciplines</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes (DOI)††</td>
+    </tr>
+    <tr>
+      <td>Zenodo zenodo.org</td>
+      <td>general repository for all disciplines</td>
+      <td>Yes (GPLv2)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes (DOI)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* All these servers and repositories are indexed by Google Scholar.† Most, if not all, of those marked ’Yes’ require some type of login or registration to leave comments.‡ arXiv provides internally managed persistent identifiers.§ e-LiS is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.¶ MPRA is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.** PhilSci Archive is built on open source software (EPrints), but the repository itself, including modifications to the code, plugins, etc. is not open source.†† The Winnower charges a $25 fee to assign a DOI._
 
 Many journals allow posting of preprints, including Science, Nature, and PNAS, as well as most OA journals. Journal preprint policies can be checked via Wikipedia (Wikipedia, 2016) and SHERPA/RoMEO (SHERPA/RoMEO, 2016). Of the over 2,000 publishers in the SHERPA/RoMEO database, 46% explicitly allow preprint posting. Preprints can be indexed in Google Scholar and cited in the literature, allowing authors to accrue citations while the paper is still in review. In one extreme case, one of the present authors (CTB) published a preprint that has received over 50 citations in three years (Brown et al., 2012), and was acknowledged in NIH grant reviews.
 
@@ -94,7 +235,7 @@ Postprints: Authors can also archive articles on open platforms after publicatio
 
 If the journal in which authors publish does not formally support self-archiving, authors can submit an author addendum that allows them to retain rights to post a copy of their article in an open repository. The Scholarly Publishing and Academic Resources Coalition (SPARC) provides a template addendum, as well as information on author rights (SPARC, 2016). The Scholar’s Copyright Addendum Engine helps authors generate a customized addendum to send to publishers (Science Commons, 2016). Not all publishers will accept author addenda, but some are willing to negotiate the terms of their publishing agreements.
 
-## Retain author rights and control reuse with open licenses
+### Retain author rights and control reuse with open licenses
 
 To make their findings known to the world, scientists have historically forfeited ownership of the products of their intellectual labor by signing over their copyrights or granting exclusive reuse rights to publishers. In contrast, authors publishing in OA journals retain nearly all rights to their manuscripts and materials. OA articles are typically published under Creative Commons (CC) licenses, which function within the legal framework of copyright law (Creative Commons, 2016). Under these licenses, authors retain copyright, and simply grant specific (non-exclusive) reuse rights to publishers, as well as other users. Moreover, CC licenses require attribution, which allows authors to receive credit for their work and accumulate citations. Licensors can specify that attribution include not just the name of the author(s) but also a link back to the original work. Authors submitting work to an OA journal should review its submission rules to learn what license(s) the journal permits authors to select.
 
@@ -102,41 +243,87 @@ If terms of a CC license are violated by a user, the licensor can revoke the lic
 
 An emerging and interesting development is the adoption of rights-retention open access policies (Harvard Open Access Project, 2016). To date, such policies have been adopted by at least 60 schools and institutions worldwide, including some in Canada, Iceland, Kenya, Saudi Arabia, and U.S. universities like Harvard (Harvard Library, Office for Scholary Communication, 2016) and MIT (MIT Libraries, Scholarly Publishing, 2016). These policies involve an agreement by the faculty to grant universities non-exclusive reuse rights on future published works. By putting such a policy in place prior to publication, faculty work can be openly archived without the need to negotiate with publishers to retain or recover rights; open is the default. We expect to see adoption of such policies grow in coming years.
 
-## Publish for low-cost or no-cost
+### Publish for low-cost or no-cost
 
 Researchers often cite high costs, primarily in the form of article processing charges (APCs), as a barrier to publishing in OA journals. While some publishers – subscription as well as OA – do charge steep fees (Lawson, 2016; Wellcome Trust, 2016c), many others charge nothing at all. In a 2014 study of 1,357 OA journals, 71% did not request any APC (West et al., 2014). A study of over 10,300 OA journals from 2011 to 2015 likewise found 71% did not charge (Crawford, 2016). Eigenfactor.org maintains a list of hundreds of no-fee OA journals across fields (Eigenfactor Project, 2016). Researchers can also search for no-cost OA journals using the Cofactor Journal Selector tool (Cofactor Ltd, 2016). Notable examples of OA journals which do not currently charge authors to publish include eLife, Royal Society’s Open Science, and all journals published by consortiums like Open Library of Humanities and SCOAP3. The Scientific Electronic Library Online (SciELO) and the Network of Scientific Journals in Latin America, the Caribbean, Spain, and Portugal (Redalyc), each host over 1,000 journals that provide free publishing for authors.
 
-Many other OA journals charge minimal fees, with the average APC around $665 USD (Crawford, 2016). At PeerJ, for example, a one-time membership fee of $199 USD allows an author to publish one article per year for life, subject to peer review. (Note: Since PeerJ requires the membership fee to be paid for each author up to 12 authors, the maximum cost of an article would be $2,388 USD. However, this is a one-time fee, after which subsequent articles for the same authors would be free.) Most Pensoft OA journals charge around €100–400 (∼$115–460 USD), while a select few are free. Ubiquity Press OA journals charge an average APC of £300 (∼$500 USD), with their open data and software metajournals charging £100 (∼$140 USD). Cogent’s OA journals all function on a flexible payment model, with authors paying only what they are able based on their financial resources. Importantly, most OA journals do not charge any additional fees for submission or color figures. These charges, as levied by many subscription publishers, can easily sum to hundreds or thousands of dollars (e.g. in Elsevier’s Neuron the first color figure is $1,000 USD, while each additional one is $275). Thus, publishing in OA journals need not be any more expensive than publishing in traditional journals, and in some cases, may cost less.
+Many other OA journals charge minimal fees, with the average APC around $665 USD (Crawford, 2016). At PeerJ, for example, a one-time membership fee of $199 USD allows an author to publish one article per year for life, subject to peer review. (Note: Since PeerJ requires the membership fee to be paid for each author up to 12 authors, the maximum cost of an article would be $2,388 USD. However, this is a one-time fee, after which subsequent articles for the same authors would be free.) Most Pensoft OA journals charge around €100–400 ($∼$$115–460 USD), while a select few are free. Ubiquity Press OA journals charge an average APC of £300 ($∼$$500 USD), with their open data and software metajournals charging £100 ($∼$$140 USD). Cogent’s OA journals all function on a flexible payment model, with authors paying only what they are able based on their financial resources. Importantly, most OA journals do not charge any additional fees for submission or color figures. These charges, as levied by many subscription publishers, can easily sum to hundreds or thousands of dollars (e.g. in Elsevier’s Neuron the first color figure is $1,000 USD, while each additional one is $275). Thus, publishing in OA journals need not be any more expensive than publishing in traditional journals, and in some cases, may cost less.
 
 The majority of OA publishers charging higher publication fees (e.g., PLOS or Frontiers, which typically charge upwards of $1,000 USD per manuscript) offer fee waivers upon request for authors with financial constraints. Policies vary by publisher, but frequently include automatic full waivers for authors from low-income countries, and partial waivers for those in lower-middle-income countries. Researchers in any country can request a partial or full waiver if they cannot pay. Some publishers, such as BioMed Central, F1000, Hindawi, and PeerJ, have membership programs through which institutions pay part or all of the APC for affiliated authors. Some institutions also have discretionary funds for OA publication fees. Increasingly, funders are providing OA publishing funds, or allowing researchers to write these funds into their grants. PLOS maintains a searchable list of both institutions and funders that support OA publication costs (Public Library of Science, 2016). Finally, as discussed previously in the section "Publish where you want and archive openly", researchers can make their work openly available for free by self-archiving preprints or postprints.
 
 ## Funding
 
-## Awards and special funding
+### Awards and special funding
 
-For academics in many fields, securing funding is essential to career development and success of their research program. In the last three years, new fellowships and awards for open research have been created by multiple organizations (Table 2). While there is no guarantee that these particular funding mechanisms will be maintained, they are a reflection of the changing norms in science, and illustrate the increasing opportunities to gain recognition and resources by sharing one’s work openly.10.7554/eLife.16800.004Table 2.Special funding opportunities for open research, training, and advocacy.DOI: http://dx.doi.org/10.7554/eLife.16800.004FundingDescriptionURLShuttleworth Foundation Fellowship Programfunding for researchers working openly on diverse problemsshuttleworthfoundation.org/fellows/Mozilla Fellowship for Sciencefunding for researchers interested in open data and open sourcewww.mozillascience.org/fellowsLeamer-Rosenthal Prizes for Open Social Science (UC Berkeley and John Templeton Foundation)rewards social scientists for open research and education practiceswww.bitss.org/prizes/leamer-rosenthal-prizes/OpenCon Travel Scholarship (Right to Research Coalition and SPARC)funding for students and early-career researchers to attend OpenCon, and receive training in open practices and advocacywww.opencon2016.org/Preregistration Challenge (Center for Open Science)prizes for researchers who publish the results of a preregistered studycos.io/prereg/Open Science Prize (Wellcome Trust, NIH, and HHMI)funding to develop services, tools, and platforms that will increase openness in biomedical researchwww.openscienceprize.org/
+For academics in many fields, securing funding is essential to career development and success of their research program. In the last three years, new fellowships and awards for open research have been created by multiple organizations (Table 2). While there is no guarantee that these particular funding mechanisms will be maintained, they are a reflection of the changing norms in science, and illustrate the increasing opportunities to gain recognition and resources by sharing one’s work openly.
 
-## Funder mandates on article and data sharing
+**Table 2.**
+ Special funding opportunities for open research, training, and advocacy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Funding</th>
+      <th>Description</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shuttleworth Foundation Fellowship Program</td>
+      <td>funding for researchers working openly on diverse problems</td>
+      <td>shuttleworthfoundation.org/fellows/</td>
+    </tr>
+    <tr>
+      <td>Mozilla Fellowship for Science</td>
+      <td>funding for researchers interested in open data and open source</td>
+      <td>www.mozillascience.org/fellows</td>
+    </tr>
+    <tr>
+      <td>Leamer-Rosenthal Prizes for Open Social Science (UC Berkeley and John Templeton Foundation)</td>
+      <td>rewards social scientists for open research and education practices</td>
+      <td>www.bitss.org/prizes/leamer-rosenthal-prizes/</td>
+    </tr>
+    <tr>
+      <td>OpenCon Travel Scholarship (Right to Research Coalition and SPARC)</td>
+      <td>funding for students and early-career researchers to attend OpenCon, and receive training in open practices and advocacy</td>
+      <td>www.opencon2016.org/</td>
+    </tr>
+    <tr>
+      <td>Preregistration Challenge (Center for Open Science)</td>
+      <td>prizes for researchers who publish the results of a preregistered study</td>
+      <td>cos.io/prereg/</td>
+    </tr>
+    <tr>
+      <td>Open Science Prize (Wellcome Trust, NIH, and HHMI)</td>
+      <td>funding to develop services, tools, and platforms that will increase openness in biomedical research</td>
+      <td>www.openscienceprize.org/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Funder mandates on article and data sharing
 
 Increasingly, funders are not only preferring but mandating open sharing of research. The United States National Institutes of Health (NIH) has been a leader in this respect. In 2008, the NIH implemented a public access policy, requiring that all articles arising from NIH-funded projects be deposited in the National Library of Medicine’s open repository, PubMed Central, within one year of publication (Rockey, 2012). NIH also requires that projects receiving $500K or more per year in direct costs include a data management plan that specifies how researchers will share their data (National Institutes of Health, 2003). NIH intends to extend its data sharing policy to a broader segment of its portfolio in the near future. Since 2011, the United States National Science Foundation (NSF) has also encouraged sharing data, software, and other research outputs (National Science Foundation, 2011). All NSF investigators are required to submit a plan, specifying data management and availability. In 2015, U.S. government agencies, including the NSF, Centers for Disease Control and Prevention (CDC), Department of Defense (DoD), National Aeronautics and Space Administration (NASA), and more announced plans to implement article and data sharing requirements in response to the White House Office of Science and Technology (OTSP) memo on public access (Holdren, 2013). A crowd-sourced effort has collected information on these agency policies and continues to be updated (Whitmire et al., 2015).
 
 Several governmental agencies and charitable foundations around the world have implemented even stronger open access mandates. For example, the Wellcome Trust’s policy states that articles from funded projects must be made openly available within six months of publication, and where it provides publishing fee support, specifically requires publication under a Creative Commons Attribution (CC BY) license (Wellcome Trust, 2016b). The Netherlands Organization for Scientific Research (NWO) requires that all manuscripts reporting results produced using public funds must be made immediately available (NWO, 2016). Similar policies are in place at CERN (CERN, 2014), the United Nations Educational, Scientific and Cultural Organization (UNESCO, 2013), and the Bill & Melinda Gates Foundation (Bill & Melinda Gates Foundation, 2015) among others, and are increasingly covering data sharing. Funders recognize that certain types of data, such as clinical records, are sensitive and require special safeguards to permit sharing while protecting patient privacy. The Expert Advisory Group on Data Access (EAGDA) was recently established as a collaboration between the Wellcome Trust, Cancer Research UK, the Economic and Social Research Council, and the Medical Research Council to advise funders on best practices for creating data sharing policies for human research (Wellcome Trust, 2016a).
 
-Researchers can check article and data sharing policies of funders in their country via SHERPA/JULIET (
+Researchers can check article and data sharing policies of funders in their country via SHERPA/JULIET (SHERPA/JULIET, 2016). BioSharing also maintains a searchable database of data management and sharing policies from both funders and publishers worldwide (Biosharing.org, 2016). Internationally, the number of open access policies has been steadily increasing over the last decade (Figure 2). Some funders, including the NIH and Wellcome Trust, have begun suspending or withholding funds if researchers do not meet their policy requirements (National Institutes of Health, 2012; Van Noorden, 2014; Wellcome Trust, 2012). Thus, researchers funded by a wide variety of sources will soon be not just encouraged but required to engage in open practices to receive and retain funding. Those already engaging in these practices will likely have a competitive advantage.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16800/elife-16800-fig2-v2.jpg)
 
-**Figure 2.:** The number of open access policies registered in ROARMAP (roarmap.eprints.org) has increased over the last decade. Data are broken down by type of organization: research organization (e.g., a university or research institution); funder; subunit of research organization (e.g. a library within a university); funder and research organization; multiple research organizations (e.g., an organization with multiple research centers, such as Max Planck Society). Figure used with permission from Stevan Harnad.DOI: http://dx.doi.org/10.7554/eLife.16800.005
+**Figure 2.:** The number of open access policies registered in ROARMAP (roarmap.eprints.org) has increased over the last decade. Data are broken down by type of organization: research organization (e.g., a university or research institution); funder; subunit of research organization (e.g. a library within a university); funder and research organization; multiple research organizations (e.g., an organization with multiple research centers, such as Max Planck Society). Figure used with permission from Stevan Harnad.
 
 ## Resource management and sharing
 
 In our researcher-centric approach, the rationale for data sharing based on funder mandates could be understood simply as ‘funders want you to share, so it is in your interest to do so’. That may be a compelling but dissatisfying reason to practice openly. Fortunately, there are other compelling reasons to share.
 
-## Documentation and reproducibility benefits
+### Documentation and reproducibility benefits
 
 First, submitting data and research materials to an independent repository ensures preservation and accessibility of that content in the future - both for one’s own access and for others. This is a particular benefit for responding to requests for data or materials by others. Preparation of research materials for sharing during the active phase of the project is much easier than reconstructing work from years earlier. Second, researchers who plan to release their data, software, and materials are likely to engage in behaviors that are easy to skip in the short-term but have substantial benefits in the long-term, such as clear documentation of the key products of the research. Besides direct benefits for oneself in facilitating later reuse, such practices increase the reproducibility of published findings and the ease with which other researchers can use, extend, and cite that work (Gorgolewski and Poldrack, 2016). Finally, sharing data and materials signals that researchers value transparency and have confidence in their own research.
 
-## Gain more citations and visibility by sharing data
+### Gain more citations and visibility by sharing data
 
 Data sharing also confers a citation advantage. Piwowar and Vision (2013) analyzed over 10,000 studies with gene expression microarray data published in 2001–2009, and found an overall 9% citation advantage for papers with shared data and advantages around 30% for older studies. Henneken and Accomazzi (2011) found a 20% citation advantage for astronomy articles that linked to open datasets. Dorch et al., 2015 found a 28–50% citation advantage for astrophysics articles, while Sears (2011) reported a 35% advantage for paleoceanography articles with publicly available data. Similar positive effects of data sharing have been described in the social sciences. Gleditsch et al., 2003 found that articles in the Journal of Peace Research offering data in any form – either through appendices, URLs, or contact addresses – were cited twice as frequently on average as articles with no data but otherwise equivalent author credentials and article variables. Studies with openly published code are also more likely to be cited than those that do not open their code (Vandewalle, 2012). In addition to more citations, Pienta et al., 2010 found that data sharing is associated with higher publication productivity. Across over 7,000 NSF and NIH awards, they reported that research projects with archived data produced a median of 10 publications, versus only 5 for projects without archived data.
 
@@ -146,13 +333,13 @@ In summary, data and software sharing benefits researchers both because it is co
 
 ## Career advancement
 
-## Find new projects and collaborators
+### Find new projects and collaborators
 
 Research collaborations are essential to advancing knowledge, but identifying and connecting with appropriate collaborators is not trivial. Open practices can make it easier for researchers to connect with one another by increasing the discoverability and visibility of one’s work, facilitating rapid access to novel data and software resources, and creating new opportunities to interact with and contribute to ongoing communal projects. For example, in 2011, one of the present authors (BAN) initiated a project to replicate a sample of studies to estimate the reproducibility of psychological science (Open Science Collaboration, 2012; Open Science Collaboration, 2014). Completing a meaningful number of replications in a single laboratory would have been difficult. Instead, the project idea was posted to a listserv as an open collaboration. Ultimately, more than 350 people contributed, with 270 earning co-authorship on the publication (Open Science Collaboration, 2015). Open collaboration enabled distribution of work and expertise among many researchers, and was essential for the project’s success. Other projects have used similar approaches to successfully carry out large-scale collaborative research (Klein et al., 2014).
 
 Similar principles are the core of the thriving open -source scientific software ecosystem. In many scientific fields, widely used state-of-the-art data processing and analysis packages are hosted and developed openly, allowing virtually anyone to contribute. Perhaps the paradigmatic example is the scikit-learn Python package for machine learning (Pedregosa et al., 2011), which, in the space of just over five years, has attracted over 500 unique contributors, 20,000 individual code contributions, and 2,500 article citations. Producing a comparable package using a traditional closed-source approach would likely not be feasible, and would, at the very least, have required a budget of tens of millions of dollars. While scikit-learn is clearly an outlier, hundreds of other open-source scientific packages that support much more domain-specific needs depend in a similar fashion on unsolicited community contributions e.g., the NIPY group of projects in neuroimaging (Gorgolewski et al., 2016). Importantly, such contributions not only result in new functionality from which the broader scientific community can benefit, but also regularly provide their respective authors with greater community recognition, and lead to new project and employment opportunities.
 
-## Institutional support of open research practices
+### Institutional support of open research practices
 
 Institutions are increasingly recognizing the limitations of journal-level metrics and exploring the potential benefits of article-level and alternative metrics in evaluating the contributions of specific research outputs. In 2013, the American Society for Cell Biology, along with a group of diverse stakeholders in academia, released the San Francisco Declaration on Research Assessment (SF-DORA) (American Society for Cell Biology, 2013). The declaration recommends that institutions cease using all journal-level metrics, including journal impact factor (IF), to evaluate research for promotion and tenure decisions, and focus instead on research content. Additional recommendations include recognizing data and software as valuable research products. As of March 2016, over 12,000 individuals and more than 600 organizations have signed SF-DORA in support of the recommendations, including universities from all over the world. The 2015 Higher Education Funding Council for England (HEFCE) report for The Research Excellence Framework (REF) – UK’s system for assessing research quality in higher education institutions – also rejects the use of IF and other journal metrics to evaluate researchers for hiring and promotion, and recommends institutions explore a variety of quantitative and qualitative indicators of research impact and ways to recognize sharing of diverse research outputs (Wilsdon et al., 2015).
 
@@ -160,7 +347,7 @@ Several U.S. institutions have passed resolutions explicitly recognizing open pr
 
 ## Discussion
 
-## Open questions
+### Open questions
 
 The emerging field of metascience provides some evidence about the value of open practices, but it is far from complete. There are many initiatives aimed at increasing open practices, and not yet enough published evidence about their effectiveness. For example, journals can offer badges to acknowledge open practices such as open data, open materials, and preregistration (Open Research Badges, 2016). Initial evidence from a single adopting journal, Psychological Science, and a sample of comparison journals suggests that this simple incentive increases data sharing rates from less than 3% to more than 38% (Kidwell et al., 2016). More research is needed across disciplines to follow up on this encouraging evidence. UCLA’s Knowledge Infrastructures project is an ongoing study that, among other objectives, is learning about data sharing practices and factors that discourage or promote sharing across four collaborative scientific projects (Borgman et al., 2015; Darch et al., 2015).
 
@@ -168,7 +355,7 @@ Open research advocates often cite reproducibility as one of the benefits of dat
 
 Preregistration of research designs and analysis plans is a proposed method to increase the credibility of reported research and a means to increase transparency of the research workflow. However, preregistration is rarely practiced outside of clinical trials where it is required by law in the U.S. and as a condition for publication in most journals that publish them. Research suggests that preregistration may counter some questionable practices, such as flexible definition of analytic models and outcome variables in order to find positive results (Kaplan and Irvin, 2015). Public registration also makes it possible to compare publications and registrations of the same study to identify cases in which outcomes were changed or unreported, as is the focus of the COMPare project based at the University of Oxford (COMPare, 2016). Similar efforts include the AllTrials project, run by an international team (AllTrials, 2016), and extending beyond just preregistration of planned studies to retroactive registration and transparent reporting for previously conducted clinical trials. Another example is the AsPredicted project, which is run by researchers at the University of Pennsylvania and University of California Berkeley, and offers preregistration services for any discipline (AsPredicted, 2016). To initiate similar research efforts in the basic and preclinical sciences, the Center for Open Science launched the Preregistration Challenge, offering one thousand $1,000 awards to researchers that publish the outcomes of preregistered research (Center for Open Science, 2016).
 
-## Openness as a continuum of practices
+### Openness as a continuum of practices
 
 While there are clear definitions and best practices for open access (Chan et al., 2002), open data (Open Knowledge, 2005; Murray-Rust et al., 2010), and open source (Open Source Initiative, 2007), openness is not ‘all-or-nothing’. Not all researchers are comfortable with the same level of sharing, and there are a variety of ways to be open (see Box 1). Openness can be thus defined by a continuum of practices, starting perhaps at the most basic level with openly self-archiving postprints and reaching perhaps the highest level with openly sharing grant proposals, research protocols, and data in real time. Fully open research is a long-term goal to strive towards, not a switch we should expect to flip overnight.
 

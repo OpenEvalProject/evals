@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.37673.001 The integrated stress response (ISR) is activated by diverse forms of cellular stress, including endoplasmic reticulum (ER) stress, and is associated with diseases. However, the molecular mechanism(s) whereby the ISR impacts on differentiation is incompletely understood. Here, we exploited a mouse model of Metaphyseal Chondrodysplasia type Schmid (MCDS) to provide insight into the impact of the ISR on cell fate. We show the protein kinase RNA-like ER kinase (PERK) pathway that mediates preferential synthesis of ATF4 and CHOP, dominates in causing dysplasia by reverting chondrocyte differentiation via ATF4-directed transactivation of Sox9 . Chondrocyte survival is enabled, cell autonomously, by CHOP and dual CHOP-ATF4 transactivation of Fgf21. Treatment of mutant mice with a chemical inhibitor of PERK signaling prevents the differentiation defects and ameliorates chondrodysplasia. By preventing aberrant differentiation, titrated inhibition of the ISR emerges as a rationale therapeutic strategy for stress-induced skeletal disorders.
+The integrated stress response (ISR) is activated by diverse forms of cellular stress, including endoplasmic reticulum (ER) stress, and is associated with diseases. However, the molecular mechanism(s) whereby the ISR impacts on differentiation is incompletely understood. Here, we exploited a mouse model of Metaphyseal Chondrodysplasia type Schmid (MCDS) to provide insight into the impact of the ISR on cell fate. We show the protein kinase RNA-like ER kinase (PERK) pathway that mediates preferential synthesis of ATF4 and CHOP, dominates in causing dysplasia by reverting chondrocyte differentiation via ATF4-directed transactivation of Sox9. Chondrocyte survival is enabled, cell autonomously, by CHOP and dual CHOP-ATF4 transactivation of Fgf21. Treatment of mutant mice with a chemical inhibitor of PERK signaling prevents the differentiation defects and ameliorates chondrodysplasia. By preventing aberrant differentiation, titrated inhibition of the ISR emerges as a rationale therapeutic strategy for stress-induced skeletal disorders.
 
 ## Introduction
 
@@ -47,45 +47,101 @@ The relative contribution of the arms of the UPR and its constituent components 
 
 ## Results
 
-## The ER stress-induced UPR disrupts global transcriptome patterns in the chondrodysplastic growth plate
+### The ER stress-induced UPR disrupts global transcriptome patterns in the chondrodysplastic growth plate
 
 The mammalian growth plate comprises four major sub-populations of chondrocytes: resting, proliferating (PC), prehypertrophic (pHC) and hypertrophic chondrocytes (HC). These chondrocytes have distinct morphologies and gene expression profiles governed by a precisely tuned gene regulatory network (Hojo et al., 2016). To investigate the effect of ER stress on the transcriptome of HCs, the proximal tibial growth plates from 10-day-old WT and 13del mice were fractionated into sub-populations representing proliferating (PZ), prehypertrophic (pHZ) and hypertrophic chondrocytes (HZ) (Figure 1A; Figure 1—figure supplement 1B). The wild-type HZ was fractionated into upper and lower zones (UHZ and LHZ) to capture early onset and late phases of hypertrophy. The 13del HZ was fractionated into three zones: upper (UHZ) corresponding to the early phase of UPR activation, middle (MHZ) where HC adaptation would be initiated, and lower (LHZ) where HC should fully adapt.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the rationale for fractionating the WT and 13del p10 growth plates into different chondrocyte populations. (B) Clustering analysis of differentially expressed genes in chondrocyte subpopulations in p10 WT and 13del proximal tibial growth plates. Expression levels were normalized from −0.5 (blue) to 0.5 (yellow). Four major clusters were identified. (C) The average expression levels (Log2 scale) of the genes in different clusters revealed significant expression pattern changes in 13del mice. (D–E) Genes in different clusters were functionally categorized using DAVID web tools. The enriched biological processes (D) and enriched pathways (E) were sequentially shown for Cluster I, II, III and IV. The values on the X-axis represented the Log10 (p-value−1). Each category with p-value <0.05 was considered as significantly enriched. (F) Enriched motifs on Cluster I genes were identified, using sequences of the promoter region (±2 kb from the TSS) for these genes. Motifs matched to the TFs in the UPR were shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of PERK signaling pathway activation under ER stress. (B) The rationale for fractionating the WT and 13del p10 growth plates into different chondrocyte populations, based on the expression patterns of chondrogenic markers (Col2a1, Ihh, Ppr, Col10a1 and Mmp13) and ER stress marker (Hspa5). (C) PERK signaling and XBP1S regulating ERAD signaling pathway are highly enriched in KEGG pathway of protein processing in the endoplasmic reticulum in Cluster I. Red stars indicate the mapped genes in this cluster.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Normalized microarray measurements of major components involved in PERK pathway (Atf4, Ddit3, Atf3, Ppp1r15a and Ero1l) in each zone of WT and 13del growth plates. (B) Histology (a, a’) and gene expression analysis of Atf4 (c, c’), Atf3 (d, d’), Ddit3 (e, e’) and Ero1l (f, f’) by radioactive in-situ hybridization on the wild-type and 13del growth plates at p10 stage (Bar = 200 μm). Hypertrophic chondrocytes are specifically marked by Col10a1 (b, b'). ER-stressed hypertrophic chondrocytes are marked by Hspa5 (g, g’). (C) In vivo validation of p-eIF2α (b, b’, c, c’), ATF4 (d, d’, e, e’), ATF3 (f, f’, g, g’), CHOP (h, h’, i, i’) and PPP1R15A (j, j’, k, k’) by immuno-staining on WT and 13del growth plates at P10 stage. Higher magnification of the boxed region was shown to demonstrate the differential expression of these factors and the positive staining cells were indicated by arrows. (Scale Bar = 200 μm).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Scheme of XBP1s (spliced form) overexpressing construct, together with FLAG-tag, for generation of FXbp1s transgenic mice. (B) Hematoxylin and eosin staining (a, a’, e, e’) and immunochemistry of COL10A1 (b, b’, f, f’), FLAG (c, c’, g, g’) and XBP1s (d, d', h, h') were applied to compare the growth plate phenotypes between WT and FXbp1s transgenic mice at P10 and 4 week stages. Higher magnification of the boxed region was shown to demonstrate the differential expression of FLAG and XBP1s and the positive staining cells were indicated by arrows. (Scale Bar = 100 μm) (C) Measurement of HZ length of WT and FXbp1s at p10 stage (n = 3). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. N.S.: p-value>0.05.
 
 We used k-means clustering (see Materials and methods) to categorize the gene expression patterns across different zones in wild-type and 13del growth plates into four clusters (Supplementary file 1). Genes (453) in Cluster I increased expression from PHZ to lower HZ specifically in 13del HC (Figure 1B and C). Ontological analyses show these differentially expressed genes are mainly involved in protein processing in the ER and the UPR (Figure 1D and E, Supplementary file 2 and 3). Genes in Clusters II (659) and III (314) showed highest expression in wild-type PZ and pHZ followed by progressive downregulation from pHZ to LHZ but were upregulated in 13del LHZ, reflecting UPR-induced changes in HC differentiation (Figure 1B and C). These genes included Sox9, Ppr, and Ihh, consistent with our previous report of re-expression of pre-hypertrophic markers (Tsang et al., 2007). Cluster IV genes (680) showed increasing expression from pHZ to LHZ in wild-type and can be defined as ‘hypertrophy characteristic’ genes. Consistent with a change in the HC de-differentiation state in 13del, these genes were down-regulated in 13del LHZ. The concomitant down-regulation of Cluster I stress response genes in 13del LHZ is consistent with the alleviation of the stress in the reprogrammed cells and an adapted state.
 
 We further compared our microarray dataset with the published data (Cameron et al., 2011) from another 2 MCDS mouse models, expressing a Col10a1 p.N617K mutation or an ER stress-inducing form of thyroglobulin (Tgcog) (Cameron et al., 2011). Overall, the gene expression changes detected in all datasets shared some degree of similarity, and 227 genes were commonly changed, showing the activation of ER stress signaling in the MCDS chondrocytes, up-regulation of genes such as Fgf21 and down-regulation of genes such as Ldb3. Differences were also found, and 473 genes were specifically changed in 13del, such as Apoa4 (up-regulated) and Atp2a1 (down-regulated) (Supplementary file 4). The differences from the published datasets may be due to the different mouse models, the time points analyzed (p14 versus 13del at p10), and also the methods of sampling the various chondrocyte populations. Those transcriptomes were derived from whole proliferative and hypertrophic zones, while ours were generated from precisely fractionated chondrocyte populations from the growth plate.
 
-## PERK-p-eIF2 signaling is the major contributor to chondrocyte adaptation to ER stress
+### PERK-p-eIF2 signaling is the major contributor to chondrocyte adaptation to ER stress
 
 We investigated the contributions of the UPR arms, PERK, IRE1, and ATF6 to the HC response to ER stress. By ontology and pathway analyses of Cluster I, we found enrichment of genes in the PERK pathway and IRE1-Xbp1S regulated ERAD, but not for ATF6 signaling (Figure 1D and E; Figure 1—figure supplement 1C; Supplementary file 2 and 3). Activation of PERK signaling in 13del HC was demonstrated by up-regulation of p-eIF2α and its downstream components (Atf4, Atf3, Ddit3, Ero1l and Ppp1r15a) (Figure 1—figure supplement 2A and C) which were validated by in-situ hybridization and immunostaining (Figure 1—figure supplement 2B and C). Using Motif enrichment analysis, we found that the binding motifs of CHOP (encoded by Ddit3) and ATF4 were highly enriched in Cluster I, but not those for Xbp1S or ATF6 (Figure 1F and Supplementary file 5). By interrogating ATF4 and CHOP ChIP-seq data (Han et al., 2013), we found significant over-representation of ATF4 (odds ratio = 2.87, p<0.0001) and CHOP (odds ratio = 4.33, p<0.0001) binding peaks associated with the genes from Cluster I but not for the other clusters (Supplementary file 6). Cluster I genes are therefore most likely to be directly regulated by UPR-associated transcription factors.
 
 Together, these data suggest a more prominent contribution of the PERK-p-eIF2 signaling pathway than that of Xbp1S, which is consistent with another MCDS mouse model study that found inactivation of Xbp1 in HCs did not alter the severity of dwarfism (Cameron et al., 2015b). To test this notion, we ectopically expressed Xbp1S in HCs in transgenic mice (Figure 1—figure supplement 3A). Overexpression of Xbp1S specifically in HCs did not affect the growth plate (Figure 1—figure supplement 3B and C).
 
-## ATF4 expression in hypertrophic chondrocytes reprogrammes differentiation
+### ATF4 expression in hypertrophic chondrocytes reprogrammes differentiation
 
 Apart from its role in the stress response, ATF4 is also required for chondrocyte differentiation through direct activation of Ihh (Wang et al., 2009). In the E14.5-E17.5 fetal growth plate, ATF4 is expressed in differentiating chondrocytes, with the highest expression in pHCs (Figure 2A). ATF4 expression in HCs progressively decreases after birth and by p10 levels are especially lowered in the LHZ (Figure 2A). Therefore, the chondrocyte differentiation defects in the MCDS model might be directly caused by ectopic overexpression of ATF4 in HCs, as a consequence of the preferential translation of Atf4 transcripts modulated by p-eIF2α.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig2-v1.jpg)
+
+**Figure 2.:** (A) Expression profiles of ATF4 (a–f) on the WT growth plates from E14.5 to P10 stages. Higher magnification of the boxed region (a'–f') was shown to demonstrate the differential expression of ATF4 and the positive cells were arrowed. (Scale Bar = 200 μm) (B) Scheme of Atf4 expressing vector. Atf4 cDNA is inserted after the ATG codon in exon 2 of the Col10a1-Bac followed by an IRES-Egfp cassette. (C) Radiographic analysis revealed the dwarfism and skeletal abnormality of C10-Atf4 mice at 4-month-old stage (n = 3). (D) Body lengths of the WT (n = 9) and C10-Atf4 (n = 7) littermates were monitored from birth to 30-week stage, and a consistent reduction of body length in C10-Atf4 mice was observed. (E) Abnormal proximal tibial growth plates with expanded HZ, delimited by dotted lines, were observed in C10-Atf4 mice by Alcian Blue staining. (Scale bar = 200 μm). (F) Ectopic expression of Atf4 in HCs was insufficient for ER stress response induction, indicated by in-situ hybridization of ER stress markers (Hspa5, Atf3 and Ddit3). (Scale bar = 200 μm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Expression specificity of the C10-Atf4 transgene was determined by EGFP visualization in developing growth plates (a), and validated by expression profiling of Egfp (a, c, e and g) and Atf4 (b, d, f and h) in C10-Atf4 growth plates at different stages (b). (Scale Bar = 200 μm) (C) FAST staining showing the shortening of axial skeleton in C10-Atf4 mice comparing to WT mice at P20 stage. (D) FAST staining showing the expansion of HZ in the growth plates of axial skeleton in C10-Atf4 mice comparing to WT mice at P20 stage. (E) Ectopic expression of ATF4 does not cause cell death (Scale Bar = 200 μm). (F) Comparison of cell proliferation in WT and C10-Atf4 growth plates by BrdU labeling assay. Mice at E15.5 (a and a’), E17.5 (b and b’) and P10 (c and c’) were injected with a single dose of BrdU and sacrificed 2 hr later for analyses.
+
 To assess the impact of ATF4 overexpression in HCs in the absence of ER stress, we generated a transgenic mouse model carrying a Col10-Bac-Atf4-IRES-Egfp transgene (hereafter referred to as C10-Atf4) (Figure 2B), in which ATF4 expression was driven by the highly HC-specific promoter of Col10a1 (Leung et al., 2011; Yang et al., 2014). We confirmed HC-specific expression of the C10-Atf4 transgene in the developing growth plates from fetal (E15.5) to adult (p20) stages (Figure 2—figure supplement 1A and B). Similar to 13del mice, adult C10-Atf4 transgenic mice were dwarfs, being approximately 20% shorter than wild-type littermates (Figure 2C and D). Histological analyses revealed growth plate abnormality in both the appendicular and axial skeleton. These defects are illustrated by the greater than three-fold expansion of the HZ of the tibia and vertebrae of C10-Atf4 mice (Figure 2E; Figure 2—figure supplement 1C and D). Interestingly, the HZ expansion is more severe in C10-Atf4 mice (threefold of WT) than that in 13del (2.5-fold of WT), which is paralleling to the expression level of ATF4. Although forced expression of ATF4 in fibroblasts was reported to decrease survival (Han et al., 2013), cell viability was not affected in C10-Atf4 mice (Figure 2—figure supplement 1E). Importantly, overexpression of ATF4 in HCs in the absence of ER stress did not induce transcription of the UPR-associated genes Hspa5 and Ddit3 (Figure 2F), although Atf3 was slightly upregulated (Han et al., 2013). Therefore, activation of ATF4 alone, in the absence of the ER stress response, is sufficient to alter HC differentiation, disturb endochondral ossification and cause skeletal abnormalities similar to those observed in 13del mice.
 
-## ATF4 reprograms chondrocyte hypertrophy by directly activating Sox9
+### ATF4 reprograms chondrocyte hypertrophy by directly activating Sox9
 
 In C10-Atf4 HCs, constitutive ATF4 activation down-regulated the expression of Col10a1 and led to persistent expression of prehypertrophic chondrocyte marker genes Sox9, Col2a1, Ppr and Ihh in the HZ (Figure 3A). However, BrdU-labeled HCs were not detectable in the C10-Atf4 HZ after 2 hr (Figure 2—figure supplement 1F), suggesting C10-Atf4 HCs did not appear to have progressed through the G1/S checkpoint. The sequential differentiation process in growth plate chondrocytes is tightly regulated by multiple chondrocyte-specific transcription factors that control the expression of cell type-specific genes and secreted growth factors (Hojo et al., 2016; Leung et al., 2011; Stricker et al., 2002; Koziel et al., 2005; Ionescu et al., 2012; Akiyama et al., 2002; Liu et al., 2017). We searched the published ER stress-associated ATF4 ChIP-Seq data (Han et al., 2013) for binding peaks in crucial chondrogenic transcription factor genes, including members of SOX, RUNX, MEF2, GLI and FOXA families. We found ATF4 binding peaks in the regulatory regions of Sox9, Sox5, Sox6, Runx2, Gli2 and Gli3. Amongst these, only the Sox genes were up-regulated in 13del middle and lower zones, but not Gli2 or Gli3 (Figure 3—figure supplement 1A and B), suggesting that the Sox family could be the targets of ATF4. Notably, overexpression of Sox9 in HCs resulted in an expansion of HZ and impaired terminal differentiation of HCs, similar to the phenotypes observed in C10-Atf4 mice (Hattori et al., 2010). Moreover, the expression pattern of SOX9 paralleled that of ATF4 in 13del and C10-Atf4 mice, raising the possibility of a direct interaction between these two factors as part of the molecular mechanism underlying the MCDS pathology.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ectopic expression of Atf4 in HCs leads to accumulation of premature chondrocytes in C10-Atf4 HZ, indicated by expression patterns of chondrogenic markers Col10a1 (a, a’, b, b’), Sox9 (c, c’, d, d’), Col2a1 (e, (e’, f, f’), Ppr (g, g’, h, h’) and Ihh (i, (i’, j, j’) (Scale bar = 200 μm). (B) Luciferase activities of reporters driven by Sox9 promoter with different lengths (pSox9-2.7K, pSox9-1.8K, and pSox9-0.8K) (i) or ATF4 putative binding sites mutants (pSox9-1.8M1, pSox9-1.8M2 and pSox9-1.8M3) (ii) responding to different dosages of ATF4 were measured in ATDC5 cells and results were presented as fold induction compared with mock-transfected cells from three independent experiments. Error bars were shown as S.D. and significance was determined by unpaired Two-tailed Student’s t-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005. (C) ChIP-PCR showed the direct binding of ATF4 to the putative motif on the Sox9 promoter in vivo, using the nuclear extracts from E15.5 WT and C10-Atf4 limb chondrocytes. Three independent experiments were performed and one presentative result was shown. An ATF4 ChIP-seq peak (dark triangle) around this region has been identified in ER-stressed MEF cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Presentation of ATF4 ChIP peaks on the regulatory region (±2 kb from TSS) of SOX, MEF2, RUNX, GLI and FOXA family members. The expression trend of these factors in WT and 13del chondrocytes was measured by normalized microarray expression profile. (B) Validation of the microarray expression of Gli2 and Gli3 by qRT-PCR.
 
 SOX9 is highly expressed in immature chondrocytes, transactivates critical cartilaginous matrix genes and regulates chondrocyte proliferation, differentiation and entry into hypertrophy (Leung et al., 2011; Akiyama et al., 2002; Liu et al., 2017; Bell et al., 1997; Dy et al., 2012). It is required for expression of SOX5 and SOX6, which cooperate with SOX9 to transactivate Col2a1 (Lefebvre et al., 1998; Liu and Lefebvre, 2015). We identified two putative C/EBP-ATF4 motifs, named A1 and A2, in the ATF4-binding peak in the Sox9 promoter region. By transfection assays in ATDC5 chondrocyte cells, we found ATF4 could transactivate luciferase reporters controlled by the Sox9 promoter (Figure 3B). Mutation of A1 and A2 respectively reduced or abolished ATF4 activation of the Sox9 reporters (Figure 3B). Anti-ATF4 ChIP-PCR assays, using nuclear extracts from E15.5 wild-type and C10-Atf4 limbs, demonstrated that ATF4 binds directly to the putative motif region on the Sox9 promoter in vivo (Figure 3C).
 
 We next assessed the contribution of ATF4 activation of Sox9 in reverting HC differentiation by conditionally inactivating Sox9 in C10-Atf4 HC, using HC-specific Col10a1-Cre (Yang et al., 2014) (Figure 4—figure supplement 1A). In the absence of Sox9, the expansion of HZ in C10-Atf4 mice was markedly reduced, and there were fewer cells expressing Col2a1 in the HZ (Figure 4A–C). Moreover, conditional inactivation of Sox9 in 13del mice decreased expression of Col2a1 and Ppr in HC, and the HZ expansion was considerably shortened (Figure 4D–F; Figure 4—figure supplement 1B and C). Deletion of Sox9 in wild-type HCs did not affect chondrocyte hypertrophy (Figure 4—figure supplement 1D). Collectively, these data suggest ER stress-induced overexpression of ATF4 reverts differentiation in 13del HC by direct activation of Sox9 in HCs, thereby perturbing chondrocyte hypertrophy.
 
-## CHOP plays an adaptive and pro-survival role in 13del HC
+![Figure 4.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig4-v1.jpg)
+
+**Figure 4.:** (A) Removal of Sox9 in C10-Atf4 HCs rescued growth plate abnormalities of C10-Atf4 mice at p10 stage, shown by histology (a, a’), expression analyses of SOX9 (b, b’, c, c’), Col2a1 (d, d’) and Col10a1 (e, e'). Higher magnification of the boxed region was shown to demonstrate the differential expression of SOX9 and the positive cells were indicated by arrows. (Scale bar = 200 μm). (B) Measurement of the HZ lengths of C10-Atf4 and C10-Atf4;Sox9C/C littermates (n = 5). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. (C) Quantification of Col2a1 positive cells in HZ of C10-Atf4 and C10-Atf4; Sox9C/C littermates (n = 5). For each mouse, the number of positive cells was counted and average on five non-adjacent sections. (D) Removal of Sox9 in 13del HCs rescued growth plate abnormalities of 13del mice at p10 stage (n = 5), shown by histology (a, a’), expression analyses of SOX9 (b, b’, c’, c’), Col2a1 (d, d’) and Col10a1 (e, e'). Higher magnification of the boxed region was shown to demonstrate the differential expression of SOX9 and the positive cells were arrowed. (Scale Bar = 200 μm). (E) Measurement of the HZ lengths of 13del and 13del;Sox9C/C littermates (n = 5). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. (F) Quantification of Col2a1 positive cells in HZ of 13del and 13del;Sox9C/C littermates (n = 5). For each mouse, the number of positive cells was counted and average on five non-adjacent sections. Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic diagram of the generation of C10-Atf4;Sox9C/C and 13del;Sox9C/C mice, by using HC-specific Col10a1-Cre. (B–C) Genetic inactivation of Sox9 in 13del HCs leads to reduced number of Ppr+ HCs at the p10 stage. (n = 5). For each mouse, the number of positive cells was counted and averaged on five non-adjacent sections. Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05. (D) Ablation of Sox9 in WT HCs does not cause any abnormality at p10 stage, shown by histology (a, a’) and expression profiles of Sox9 (b, b’), Col2a1 (c, c’), Ppr (d, d’) and Col10a1 (e, e’). (Scale Bar = 200 μm).
+
+### CHOP plays an adaptive and pro-survival role in 13del HC
 
 CHOP is another prominent transcription factor that was active in 13del HCs, revealed by bioinformatics analysis. It is preferentially expressed in the PERK signaling pathway, downstream of p-eIF2α and ATF4, which regulates protein synthesis via the PPP1R15A negative feedback loop and restores protein synthesis and induces oxidative stress via Ero1l (Han et al., 2013; Marciniak et al., 2004). Apart from that, overexpression of CHOP in the bone microenvironment in transgenic mice has been reported to impair osteoblastic function leading to osteopenia (Pereira et al., 2007), while CHOP null mice show retarded bone formation (Pereira et al., 2006), indicating its role in regulating osteoblast differentiation. Although CHOP is widely considered as a pro-apoptotic factor, it has context- and cell-type specific roles as an adaptive and pro-survival factor in several diseases (Pennuto et al., 2008; Southwood et al., 2002; Lu et al., 2014; Moreno et al., 2012). Forced expression of ATF4 and CHOP has been reported to increase cell death (Hartley et al., 2013). We, therefore, assessed the contribution of CHOP in the adaptation of 13del HCs.
 
 We found ablating CHOP encoding gene Ddit3 in 13del mice exacerbated the skeletal defects and growth plate phenotype. The 13del;Ddit3-/- mice displayed further tibial shortening (Figure 5A and B) with more significant (~20%) HZ expansion (Figure 5C and D), and increased the number of chondrocytes expressing immature chondrogenic markers SOX9, Col2a1 and Ppr in the HZ (Figure 5C and E). Strikingly, in contrast to 13del, there was increased apoptosis in 13del;Ddit3-/- HC, consistent with a pro-survival role for CHOP (Figure 5F and G).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) The tibia length is further shortened in 13del;Ddit3-/- mice at the p10 stage. The comparison was performed between 13del and 13del;Ddit3-/- littermates (n = 5). (C) Exacerbated growth plate abnormalities were observed in 13del mice with global loss of Ddit3 at p10 stage (n = 5), shown by histology (a, a’), expression analyses of Col10a1 (b, b’), SOX9 (c, c’, d, d’), Col2a1 (e, e’) and Ppr (f, f'). Higher magnification of the boxed region was shown to demonstrate the differential expression of SOX9 and the positive cells were indicated by arrows. (Scale Bar = 200 μm) (D) Measurement of the HZ lengths of 13del and 13del;Ddit3-/- littermates (n = 5). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. (E) Quantification of SOX9, Col2a1 and Ppr-positive cells in HZ of 13del and 13del;Ddit3 -/- littermates (n = 5). For each mouse, the number of positive cells was counted and average on five non-adjacent sections. (F–G) TUNEL assay revealed an increased number of apoptotic cells in 13del;Ddit3-/- HZ (n = 5). Arrows indicate TUNEL-positive cells. (Scale Bar = 200 μm). For each mouse, the number of positive cells was counted and average on five non-adjacent sections. Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic diagram of the generation of 13del;Ddit3-/- mice. (B) Normalized microarray measurements of PERK signaling components (Ddit3, Atf3, Ppp1r15a and Ero1l), Chaperone (Hspa5, Dnajb9, Dnajb11 and Canx) and ER stress sensors (Atf4, Xbp1 and Atf6) in WT, 13del and 13del;Ddit3-/- mice at the p10 stage.
+
 Our transcriptome analyses of fractionated 13del;Ddit3-/- growth plates revealed upregulation of molecular chaperones (Hspa5, Dnajb9, Dnajb11 and Canx) and ER stress sensors (Xbp1 and Atf4) in the MHZ and LHZ (Figure 5—figure supplement 1B), which further support the positive correlation between the phenotype severity and the expression level of ATF4. In contrast to the elevated stress level, the PERK signaling pathway was enfeebled, reflected by marked (>3.5 fold) down-regulation of CHOP targets Atf3, Ppp1r15a and Ero1l, indicating the phenotype severity reflected by aberrant cell differentiation is probably independent of those downstream factors. These results are in contrast to the pro-apoptotic role reported for CHOP in a mouse model of Pseudoachondroplasia caused by expression of misfolded COMP in proliferating and hypertrophic chondrocytes, where deleting CHOP reduced apoptosis but exacerbated growth plate chondrocyte disorganisation (Posey et al., 2012; Piróg et al., 2014). These differences may be due to variation in the responses of proliferating versus hypertrophic chondrocytes and/or the acuteness and duration of the ER stress. Therefore, CHOP aids in the cell adaptation to stress and mediates survival in13del HC, and it is important to identify pro-survival/anti apoptotic factor(s) downstream of CHOP.
 
-## ATF4 and CHOP mediate chondrocyte survival by activating Fgf21
+### ATF4 and CHOP mediate chondrocyte survival by activating Fgf21
 
 CHOP acts, not only downstream of ATF4 but also as its interacting partner in modulating ER stress targets (Han et al., 2013). To elucidate the pro-survival role of the PERK signaling pathway in 13del HC, we searched for target genes of CHOP and ATF4 in Cluster I (Supplementary file 6). We found Fgf21, a reported target of ATF4 (65), was the most upregulated gene in 13del HCs (Figure 6—figure supplement 1A and Supplementary file 1), which was confirmed by in-situ hybridization and immunoblotting (Figure 6A). Fgf21 has been reported to be similarly activated in ER-stressed chondrocytes (Cameron et al., 2011).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig6-v1.jpg)
+
+**Figure 6.:** (A) Significant activation of Fgf21 in 13del HCs at the p10 stage, revealed by in-situ hybridization (a, b) and western blot (c) (Scale Bar = 200 μm). (B) Ectopic expression of Atf4 (a, a’) is insufficient for Fgf21 (b, b’) induction in HCs (Scale Bar = 200 μm). (C) ChIP-PCR showed the binding of ATF4 and CHOP to the putative motif on the Fgf21 promoter under ER stress in NIH3T3 cells. (D) Normalized microarray measurement of Fgf21 in WT, 13del and 13del;Ddit3-/- chondrocytes. (E–F) FGF21 protects the 13del HCs from apoptosis in a dosage-dependent manner. Arrows indicate TUNEL-positive cells. The quantification of TUNEL positive cells was performed between littermates (n = 5). For each mouse, the number of positive cells was counted and averaged on five non-adjacent sections. (Scale Bar = 200 μm) Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Normalized microarray measurement of Fgf21 in 13del growth plate comparing with WT. (B) Fgf21 is significantly activated in response to Tunicamycin (Tm) in ATDC5, NIH3T3 and MEF cells, at indicated time points. The activation of Hspa5 indicates ER stress is triggered. (C) The expression level of Fgf21 in Tunicamycin-treated ATDC5, NIH3T3 and MEF was quantified via qRT-PCR, results were presented as fold induction compared with DMSO-treated cells from three independent experiments. (D) Luciferase activities of Fgf21 promoter reporter in response to Tunicamycin or DMSO treatment. Two putative ATF4 binding sites (A1 and A2) were predicted in the Fgf21 promoter region. Renilla luciferase activities of wild-type, deletion or mutated ATF4-binding sites responding to Tunicamycin or DMSO treatment for 24 hr were measured. Results were presented as fold induction compared with DMSO treated cells from three independent experiments. Error bars were shown as S.D. and significance was determined by unpaired Two-tailed Student’s t-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
 
 FGF21 is a hormone with roles in glucose and lipid metabolism (Kharitonenkov et al., 2005) and plays a survival role in response to diverse stressful conditions, such as amino acid deprivation, mitochondrial stress and ER stress-associated diseases such as diabetes, cardiovascular diseases (reviewed in [Gómez-Sámano et al., 2017; Kim and Lee, 2015; Salminen et al., 2017]). We found Fgf21 expression was effectively turned on (>100 fold increased expression) in response to treatment with the ER stress inducer tunicamycin in fibroblasts (NIH3T3 and MEF cells) and ATDC5 cells (Figure 6—figure supplement 1B and C).
 
@@ -93,9 +149,17 @@ We next tested the functional relevance of a reported C/EBP-ATF4 binding motif i
 
 We assessed whether FGF21 had a survival role in 13del HC by genetically ablating the gene (Figure 7—figure supplement 1A). Fgf21 null mice have normal growth plates and HC viability (Figure 7—figure supplement 1B and C). The HZ expansion in 13del;Fgf21-/- mice was comparable to that of 13del mice, and the reverted differentiation process was not affected (Figure 7—figure supplement 1D–F). However, we found increased apoptosis in the HZ of Fgf21-deficient 13del mice, and this protective effect of FGF21 is dosage dependent (Figure 7Aand B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) FGF21 protects the 13del HCs from apoptosis in a dosage-dependent manner. Arrows indicate TUNEL positive cells. The quantification of TUNEL-positive cells was performed between littermates (n = 5). For each mouse, the number of positive cells was counted and averaged on five non-adjacent sections (Scale Bar = 200 μm). (C) Schematic diagram of 13del;Col10a1Egfp/13del;Fgf21-/- chimera generation. In chimeric HZ, 13del HCs expressing Fgf21 (13del;Col10a1Egfp) can be distinguished from 13del;Fgf21-/- HCs by EGFP expression. (D) The number of TUNEL-positive cells was quantified in GFP+ and GFP negative HCs (n = 7). Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005. (E) The correlation between cell death and chimerism (indicated by the percentage of 13del-EGFP expressing cells in HZ) in 13del;Col10a1Egfp/13del;Fgf21-/- chimeras. (F) Boxed region (a) is shown to demonstrate the differential localization of EGFP and TUNEL signal in chimeric HZ. Higher magnification is shown in b-d. Immunostaining for FGF21 and TUNEL assays (e–h) were applied on the chimeric growth plate, showing the mutually exclusive location of FGF21 (green) and TUNEL signal (red).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic diagram of the generation of 13del;Fgf21-/- mice. (B) Ablation of Fgf21 from WT HCs does not affect the normal development of growth plate. (Scale Bar = 200 μm) (C) Ablation of Fgf21 from WT HCs does not affect the cell survival. (Scale Bar = 200 μm) (D–F) The growth plate of 13del;Fgf21-/- mice exhibited comparable phenotype to 13del mice, shown by histology (a, a’), expression analysis of Col10a1 (b, b’), Fgf21 (c, c’) and Ppr (d, d’), measurement of HZ lengths and quantification of Ppr-positive cells (n = 5). (Scale Bar = 200 μm) Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. N.S.: p-value>0.05.
+
 To determine whether the pro-survival role of FGF21 was cell autonomous or non-cell autonomous in 13del HCs, we tested the survival of 13del HCs carrying an Fgf21 null mutation, in mouse chimeras. We utilised compound mutants carrying the 13del transgene and a Col10a1Egfp allele [Egfp knocked into the Col10a1 gene (Yang et al., 2014)] so that all 13del HCs are marked by GFP expression. We created mouse chimeras by aggregating 13del;Col10a1Egfp and 13del;Fgf21-/- morulae (Figure 7C). In the ensuing chimeras, 13del HCs are marked by EGFP expression, and express Fgf21/FGF21. Mice with different degrees of 13del;Col10a1Egfp/13 del;Fgf21-/- chimerism, were analyzed for HC survival. Similarly as found with 13del;Fgf21-/- compound mutants, in 13del;Col10a1EGFP/13 del;Fgf21-/- chimeras, more 13del;Fgf21-/- HCs (non-EGFP+ HC population) underwent apoptosis, than the 13del; Col10a1Egfp HCs (GFP+ HC population) (Figure 7D). Moreover, there was a positive correlation between the contribution of13del;Col10a1Egfp HCs and the number of surviving cells in the HZ (Figure 7E), consistent with a protective role for FGF21 in the ER-stressed 13del HCs. Furthermore, we found that 13del;Fgf21-/- HCs adjacent to 13del;Col10a1Egfp HCs expressing Fgf21 still underwent apoptosis (Figure 7F). This inability of 13del;Col10a1Egfp to rescue 13del;Fgf21-/- HCs suggests that FGF21 protects HCs from apoptosis, cell autonomously.
 
-## ISRIB, an ISR p-eIF2α signaling inhibitor, can ameliorate 13del skeletal deformities
+### ISRIB, an ISR p-eIF2α signaling inhibitor, can ameliorate 13del skeletal deformities
 
 Upon ER stress, PERK phosphorylation of eIF2α is the critical upstream controlling point that triggers the p-eIF2α/ATF4/CHOP signaling pathway (Pakos‐-Zebrucka et al., 2016). Our data show that genetically ablating the essential transcription factor CHOP in the p-eIF2α signaling pathway as a strategy for rescuing the aberrant chondrocyte differentiation is imperfect, because of effects on cell survival and stress aggravation. Also, addressing the impact of transcription factor overexpression and cell-type specificity is required because ATF4 is essential for normal development. Therefore, it is necessary to identify a suitable entry point in the pathway which can be manipulated for protection or rescue from the deleterious effects of ER stress, without interfering with normal developmental function.
 
@@ -103,13 +167,37 @@ Recently, a small molecule, Integrated Stress Response InhiBitor (ISRIB) has bee
 
 We tested the potential of ISRIB to modify the chondrodysplasia phenotype by treating 13del and wild-type littermates with ISRIB (2.5 mg/kg) or vehicle twice daily by intraperitoneal injection from E13.5 (onset of expression of 13del) to postnatal day 20 (p20) (Figure 8A). In wild-type mice, ISRIB had no adverse effects on weight gain or body growth (Figure 8—figure supplement 1A and B). However, ISRIB markedly reduced the dwarfism of 13del mice from newborn to juvenile stages comparing to control group (Figure 8—figure supplement 1C). Radiographic analyses revealed treatment with ISRIB ameliorated the skeletal deformities at p20 (Figure 8B and C), including the length of tibia/femur and spine; tibia bowing (genu varum: the angle between proximal head and distal head of tibia); pelvic bone orientation (the angle between ilium and pubis), and coxa vara (narrowed angle between the proximal head and the shaft of the femur) (Figure 8B).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig8-v1.jpg)
+
+**Figure 8.:** (A) Schematic timeline of the ISRIB (2.5 mg/kg) or vehicle (0.5% DMSO in 0.9% saline) administration. The mice were administrated by intraperitoneal injection, starting from E13.5 to the p20 stage. The animals were harvested at indicated time-points. (B–C) Radiographic analyses revealed skeletal deformities of 13del mice were alleviated at p20 stage by ISRIB treatment (n = 3), including length of tibia, femur and spine (spine here indicated by the length of 7 continuous vertebrae consisting of the last sacral and six tail vertebrae), pelvic bone deformation (θ1: the angle between ilium and pubis), Coxa Vara (θ2: the angle between the proximal head and the shaft of the femur) and Genu Varum (θ3: the angle between proximal head and distal head of tibia). The skeletal phenotypes in vehicle- and ISRIB-treated 13del groups were compared, and the significance of changes was determined by one-way ANOVA test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005. (D–E) Rescue of growth plate abnormalities in 13del mice by the treatment of ISRIB at the p10 and p20 stages, shown by histology (a–a") and in vivo expression profiles of SOX9 (b–b” and c–c”), Col2a1 (d–d”) and Ppr (e–e''). Higher magnification of the boxed region was shown to demonstrate the differential expression of SOX9 and the positive cells were indicated by arrows. (Scale Bar = 200 μm). (F) Measurement of the HZ lengths of tested animals at p10 stage (n = 5) and p20 stage (n = 3). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. (G) Quantification of SOX9+, Col2a1 + and Ppr + cells in HZ of tested animals at p10 stage (n = 5) and p20 stage (n = 3). For each mouse, the number of positive cells was counted and average on five non-adjacent sections. Error bars were shown as S.D. and significance was determined by Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–B) Treatment of ISRIB (n = 12) does not affect the body weight gain or body length growth in wild-type mice, comparing to the treatment of vehicle (n = 18). (C) Body lengths of the vehicle-treated (n = 20) and ISRIB-treated (n = 16) 13del were monitored from birth to p20 stage, and significantly consistent improvement of body length in ISRIB-treated 13del mice was observed. Results are presented as the percentage of their WT littermates, and significance was determined two-tailed Mann-Whitney U test. *: p-value<0.05, **: p-value<0.005. (D) Histology of p10 growth plates was comparable between ISRIB- and vehicle-treated WT mice.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Rescue of the HZ expansion in the tail intervertebral disc (IVD) by the treatment ISRIB in 13del mice at p10 and p20 stages, shown by histology (Scale Bar = 200 μm). (B) HZ measurements of rostral and caudal growth plates of tail IVDs from tested animals at p10 (n = 5) and p20 stages (n = 3). The vertical length of the central part of the HZ from 10 different sections of each mouse was averaged. Error bars were shown as S.D. and significance was determined by Mann-Whitney U test. *: p-value<0.05, **: p-value<0.005. (C) Rescue of the growth plate deformities in tail IVD by the treatment of ISRIB in 13del mice, indicated by the reduced number of SOX9 (a–a", c–c") and Col2a1 (b–b”, d–d”) at p10 and p20 stages.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Schematic timeline of the ISRIB (2.5 mg/kg or 5 mg/kg) or vehicle (0.5% DMSO in 0.9% saline) administration. ISRIB or vehicle was administrated by intraperitoneal injection, starting from p0 to 4-week stage. The animals were harvested at indicated time-points. (B) Body lengths of the vehicle-treated WT (n = 7), vehicle- (n = 9), ISRIB (2.5 mg/kg)- (n = 5) and ISRIB (5 mg/kg)-treated (n = 8) 13del were monitored from birth to 4-week stage, and a significantly consistent improvement of body length in ISRIB (5 mg/kg)-treated 13del mice was observed. Results were presented as the percentage of their WT littermates. (C–D) Radiographic analyses revealed skeletal deformities of 13del mice were alleviated at 4-week stage by ISRIB treatment, including length of tibia, femur and spine (spine here indicated by the length of 7 continuous vertebrae consisting of the last sacral and six tail vertebrae), pelvic bone deformation (θ1: the angle between ilium and pubis), Coxa Vara (θ2: the angle between the proximal head and the shaft of the femur) and Genu Varum (θ3: the angle between proximal head and distal head of tibia). Data were collected from seven vehicle-treated WT mice, nine vehicle-treated, 5 ISRIB (2.5 mg/kg)-treated and 8 ISRIB (5 mg/kg)-treated 13del mice. The phenotypic changes in vehicle- and ISRIB-treated 13del groups were analyzed, and the significance of changes was determined by one-way ANOVA test. *: p-value<0.05, **: p-value<0.005, ***: p-value<0.0005.
+
 We found the HZ expansion in the limb growth plates of ISRIB-treated 13del mice was significantly reduced, and the numbers of SOX9+, Col2a1+ and Ppr+ cells in the HZs at p10 and p20 were diminished (Figure 8D–G). ISRIB with indicated dosage had no observable effect on the limb growth plates in wild-type mice (Figure 8—figure supplement 1D). ISRIB treatment in 13del mice also reduced the deformities in other growth plates such as in the axial skeleton, with reduced HZ expansion and decreased the number of Sox9+ and Col2a1+ premature cells in tail intervertebral disc growth plates (Figure 8—figure supplement 2A–C).
 
 Furthermore, the effectiveness of postnatal treatment of ISRIB in 13del MCDS was estimated by treating 13del and wild-type littermates with ISRIB (2.5 mg/kg or 5 mg/kg) or vehicle twice daily by intraperitoneal injection from newborn (p0) to 4-week stages (Figure 8—figure supplement 3A). Similarly, ISRIB ameliorated the dwarfism of 13del mice from newborn to 4-week stages in a dosage-dependent manner (Figure 8—figure supplement 3B), and ameliorated the skeletal deformities (Figure 8—figure supplement 3C and D), including the length of tibia/femur and spine; tibia bowing; pelvic bone orientation and coxa vara, revealed by radiographic analyses. Thus, without any apparent adverse effect, ISRIB corrected the molecular, histological, and skeletal defects in 13del mice.
 
-## The PERK-p-eIF2α signaling pathway is downregulated explicitly by treatment of ISRIB
+### The PERK-p-eIF2α signaling pathway is downregulated explicitly by treatment of ISRIB
 
 The impact of ISRIB on p-eIF2α signaling induced by ER stress in 13del HCs was further addressed. Consistent with the previous study (Sidrauski et al., 2013) that the activity of ISRIB is independent of eIF2α phosphorylation (Sekine et al., 2015; Sidrauski et al., 2015), the expression of p-eIF2α was not affected in ISRIB-treated 13del HCs (Figure 9A). Given the fact that translational regulation of ATF4 by p-eIF2α is central to the activation of PERK signaling, the protein expression level of ATF4 in p10 vehicle-treated WT, vehicle- and ISRIB-treated 13del HCs were examined via immunoblotting. As expected, ISRIB evidently inhibited the preferential translation of ATF4 in ER-stressed 13del HCs (Figure 9B). The proximal growth plates from above mentioned groups of mice were further fractionated into sub-populations (PC, pHC, UHC, MHC, and LHC), and the transcriptional expression levels of major components of p-eIF2α signaling (Atf4, Atf3, Ddit3 and Fgf21), Xbp1S and Hspa5 (Bip) were examined by qRT-PCR. Consistently, ISRIB treatment significantly downregulated the mRNA expression level of Atf3 and Ddit3 in 13del HCs, indicating the downstream signaling cascade of ATF4 were inhibited (Figure 9C), although the expression level of Atf4 was not affected. The expression patterns and levels of examined factors involved in the p-eIF2α signaling pathway were further validated via in-situ hybridization and immunostaining (Figure 9—figure supplement 1A and B). Notably, the expression of CHOP and FGF21 was significantly lowered but still detectable. On the other hand, the expression level of total Xbp1 (Xbp1T) and spliced Xbp1 (Xbp1S) in ISRIB-treated 13del HCs was comparable to vehicle-treated HCs, indicating IRE1/Xbp1 signaling was barely affected and confirmed the selectivity of ISRIB action (Figure 9C). Thus, the effects of ISRIB on ameliorating 13del MCDS phenotype is Xbp1S-independent, and it further supports the redundancy of IRE1/Xbp1 signaling in the pathogenesis of MCDS (Cameron et al., 2015b). Also, the transcriptional and translational expression levels of ER chaperone BiP(encoded by Hspa5) were relatively attenuated in ISRIB-treated 13del HCs (Figure 9B and C), consistent with previous studies showing that PERK-p-eIF2α signaling is required for the activation of BiP upon ER stress (Harding et al., 2000; Scheuner et al., 2001). Immunostaining with a 13DEL-specific antibody revealed the 13DEL mutant protein were intracellularly accumulated in ISRIB-treated 13del HCs (Figure 9—figure supplement 1C), indicating the production and/or degradation of the mutant protein was not affected. Interestingly, inhibition of p-eIF2α signaling by ISRIB at indicated dosage did not induce apoptosis (Figure 9—figure supplement 1D) in 13del HCs, with a lowered expression level of ATF4, CHOP and FGF21. This finding highlights the importance of level titration of these factors in the prevention of de-differentiation without causing the death of the stressed chondrocytes. Thus, the effects of ISRIB on ameliorating 13del MCDS phenotype depends explicitly on downregulating p-eIF2α modulated ATF4 induction and its downstream target SOX9.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig9-v1.jpg)
+
+**Figure 9.:** At p10 stage, the expression of p-eIF2α in ISRIB-treated 13del HC was not changed. Higher magnification of the boxed region was shown to demonstrate the expression of p-eIF2 clearly, and the positive staining cells were indicated by arrows. (Scale Bar = 200 μm) (B) The vehicle-treated WT, vehicle- and ISRIB-treated 13del p10 HZ were equally fractionated into two chondrocyte populations (UHC and LHC), and protein from each population was isolated. The protein expression level of ATF4 and ER stress sensor BiP were examined via western blot. Beta-actin was used as internal control. (C) The WT, vehicle- and ISRIB-treated 13del p10 growth plates were fractionated into different chondrocyte populations (PC, pHC, UHC, MHC and LHC), and total RNA from each population was isolated. The expression levels of Atf4, its downstream targets (Atf3, Ddit3, and Fgf21), ER stress sensor Hspa5, total Xbp1T and its active form Xbp1S were quantified via qRT-PCR, results were presented as fold induction compared with WT proliferating chondrocytes (PC) from five independent animals of each group. Error bars shown as S.D. and significance between vehicle- and ISRIB-treated HCs was determined Two-tailed Mann-Whitney U-test. *: p-value<0.05, **: p-value<0.005.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/37673/elife-37673-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) At p10, the transcripts of Atf4 (a–a”), Atf3 (b–b”), Ddit3 (c–c”), Ero1l (d–d”) and Fgf21 (e–e”) were down-regulated in HZ from ISRIB-treated 13del mice, while Hspa5 (f– f”) was not affected. (Scale Bar = 200 μm). (B) At p10, the protein level of ATF4 (a–b”), ATF3 (c–d”), CHOP (e–f”) and FGF21 (g–h”) were down-regulated in HZ from ISRIB-treated 13del mice. Higher magnification of the boxed region was shown to clearly demonstrate the differential expression of ATF4, ATF3, CHOP and FGF21, and the staining positive cells were indicated by arrows, respectively. (Scale Bar = 200 μm). (C) At p10, the expression of 13DEL mutant protein were detectable in ISRIB-treated 13del HZ. Higher magnification of the boxed region was shown to demonstrate the expression of 13DEL mutant protein clearly, and the positive staining cells were indicated by arrows (Scale Bar = 200 μm). (D) ISRIB treatment does not induce apoptosis in 13del mice. (Scale Bar = 200 μm).
 
 ## Discussion
 
@@ -145,7 +233,318 @@ The direct activation of Sox9 by ATF4, also may have broad implications for othe
 
 ## Materials and methods
 
-## Genetically modified mice and mutant analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>13del</td>
+      <td>PMID: 17298185</td>
+      <td></td>
+      <td>Maintained in F1 (C57BL/6 x CBA) background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C10-Atf4</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ddit3-/-</td>
+      <td>PMID: 9531536</td>
+      <td></td>
+      <td>Gift from Prof. David Ron’s lab (University of Cambridge, UK)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Fgf21-/-</td>
+      <td>PMID:19589869</td>
+      <td></td>
+      <td>Gift from Prof. Nobuyuki Itoh’s lab (University of Kyoto, Japan)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Col10a1Egfp</td>
+      <td>PMID:25092332</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sox9flox/flox</td>
+      <td>PMID:12414734</td>
+      <td></td>
+      <td>Gift from Prof. Andreas Schedl’s lab (Institute of Biology Valrose, France)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Col10a1Cre</td>
+      <td>PMID:25092332</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>ATDC5</td>
+      <td>RCB0565; PMID:8609176</td>
+      <td>Chisa Shukunami</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEF</td>
+      <td>Isolated from E13.5 mouse embryo (F1)</td>
+      <td></td>
+      <td>Mouse Embryonic Fibroblast</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH 3T3</td>
+      <td>ATCC CRL-1658</td>
+      <td></td>
+      <td>Mouse fibroblast suitable for transfection</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-2.7K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>2.7K Sox9 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-1.8K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.8K Sox9 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-0.8K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>0.8K Sox9 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-1.8M1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.8K Sox9 promoter with one mutated ATF4 binding site inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-1.8M2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.8K Sox9 promoter with one mutated ATF4 binding site inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSox9-1.8M3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.8K Sox9 promoter with two mutated ATF4 binding sites inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-Luc1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>2K Fgf21 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-Luc2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.2K Fgf21 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-Luc3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>0.8K Fgf21 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-Luc4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>0.4K Fgf21 promoter inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-M1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.2K Fgf21 promoter with one mutated ATF4 binding site inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-M2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.2K Fgf21 promoter with one mutated ATF4 binding site inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pFgf21-M3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>1.2K Fgf21 promoter with two mutated ATF4 binding site inserted into pGL3 basic vector (Promega)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATF4</td>
+      <td>sc-200</td>
+      <td>Santa Cruz</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CHOP</td>
+      <td>sc-575</td>
+      <td>Santa Cruz</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX9</td>
+      <td>AB5535</td>
+      <td>Millipore</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATF3</td>
+      <td>HPA001562</td>
+      <td>Sigma</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FGF21</td>
+      <td>42189</td>
+      <td>AIS</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PPP1R15A</td>
+      <td>sc-825</td>
+      <td>Santa Cruz</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BiP</td>
+      <td>ADI-SPA-826</td>
+      <td>ENZO</td>
+      <td>rabbit IgG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-beta Actin</td>
+      <td>A2228</td>
+      <td>Sigma</td>
+      <td>mouse IgG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit</td>
+      <td>12156792910</td>
+      <td>Roche</td>
+      <td>TUNEL assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay System</td>
+      <td>E1910</td>
+      <td>Promega</td>
+      <td>Luciferase assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BrdU staining kit</td>
+      <td>93–3943</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ISRIB</td>
+      <td>SML0843</td>
+      <td>Sigma</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RMA algorithm</td>
+      <td>R Bioconductor</td>
+      <td></td>
+      <td>Robust Multi-chip Average</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>k-Means Clustering algorithm</td>
+      <td>DOI: https://doi.org/10.1016/j.patrec.2009.09.011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene Ontology database</td>
+      <td>PMID:10802651</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER software package</td>
+      <td>PMID:20513432</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie program</td>
+      <td>PMID:19261174</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard toolkit of Broad Institute</td>
+      <td>https://tldrlegal.com/license/mit-license</td>
+      <td>MIT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td></td>
+      <td>GraphPad software</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetically modified mice and mutant analysis
 
 The 13del transgenic mice have been described previously (Tsang et al., 2007) and were maintained in F1 (C57BL/6 x CBA) background. The Ddit3 (Chop)-null mice (gift of David Ron) and Fgf21-null mice were reported previously (Zinszner et al., 1998; Hotta et al., 2009). The Sox9-flox mice were a gift from Andreas Schedl (Akiyama et al., 2002). A BAC transgene vector (Col10a1-Atf4-IRES-Egfp, abbreviated as C10-Atf4) was generated using the BAC clone RPCI23-194I3 (113), which carries the Col10a1 gene, and by inserting the coding region of Atf4 at the Col10a1 ATG codon in exon 2. Included in the transgene are 154 kb and 35 kb of 5′ and 3′ sequences, respectively, relative to Col10a1 exons. This BAC vector can recapitulate the expression pattern of Col10a1 (Yang et al., 2014). C10-Atf4 transgenic mice were generated by pronuclear injection into F1 C57/Bl6 x CBA zygotes and maintained in the same F1 background. The primers used for C10-Atf4 mouse genotyping were listed in Supplementary file 7. Animal care and experiments performed were in accordance with the protocols approved by the Committee on the Use of Live Animals in Teaching and Research of the University of Hong Kong.
 
@@ -153,68 +552,68 @@ Comparisons of 13del vs. 13del;Ddit3-/-, 13del vs. 13del;Sox9c/c, C10-Atf4 vs. C
 
 The 13del, Col10a1cre, Sox9flox/flox and Fgf21-/- were genotyped according to previous studies (Tsang et al., 2007; Yang et al., 2014; Akiyama et al., 2002; Hotta et al., 2009), respectively.
 
-## RNA preparation and microarray analysis
+### RNA preparation and microarray analysis
 
 The fractionation methodology was established as described previously (Tan et al., 2018). In brief, chondrocyte sub-populations in transverse sections of the proximal tibia of 10-day-old WT or 13del mouse were obtained by cryosectioning. 5-micron sections were prepared and pooled into fractions consisting of 10 sections per fraction to ensure separation of each cell type in the growth plate. Samples were dissolved in Trizol reagent (Invitrogen) for RNA extraction. To guide the sub-division of chondrocyte populations into zones, every 10th section was examined histologically and 10% of the RNA isolated from sections selected at regular intervals was used for the detection of known growth plate markers by RT-PCR analyses (Figure 1—figure supplement 1B).
 
 Total RNA was extracted and hybridized to Mouse Genome 430 2.0 Gene Chip (Affymetrix). Gene expression data for each sample in triplicate were normalized using Robust Multi-chip Average (RMA) algorithm in R Bioconductor package. The k-Means Clustering algorithm(Quackenbush, 2001; Jain, 2010) was used to identify the distinct expression patterns of genes in WT and 13del growth plates, which aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster. The Gene Ontology analysis was performed for each cluster of genes by using the Gene Ontology database (Ashburner et al., 2000) and the David Web Tools (Dennis et al., 2003).
 
-## HOMER motif discovery
+### HOMER motif discovery
 
 The DNA-binding motif enrichment analysis was performed by using HOMER software package (Heinz et al., 2010). The DNA sequences flanking the genes’ transcription start sites 2 kb up- and downstream were extracted from the mouse reference genome assembly (mm9). The HOMER, the TRANSFAC (Wingender et al., 1996) and the ISMARA (Balwierz et al., 2014) transcription factor databases were integrated to create the TF binding motif library for screening. The DNA sequences of the interrogated gene sets were compared with those extracted from the remainder gene sets to identify the differentially enriched DNA binding motifs and the TFs.
 
-## ChIP-sequencing data analysis
+### ChIP-sequencing data analysis
 
 The ATF4 and CHOP ChIP-sequencing datasets (Han et al., 2013) were downloaded from the GEO database (GSE35681). The DNA sequences were aligned to the mm9 mouse reference genome assembly with Bowtie program (Langmead et al., 2009). The analysis of coverage signal intensity and peak detection were performed by using Picard toolkit of Broad Institute (MIT) (https://tldrlegal.com/license/mit-license). The binding peaks located within 10 kb up or downstream of the TSS in each target gene were identified for statistical analysis in each cluster.
 
-## Histological and immunofluorescence analyses
+### Histological and immunofluorescence analyses
 
 Methods used were as described previously (Tsang et al., 2007). In brief, limbs were fixed in 4% PFA, followed by demineralization in 0.5M EDTA (pH 8.0) before embedding in paraffin. Slides were stained with Alcian Blue for cartilage matrix and Fast Red for nuclei. Immunofluorescence was performed using antibodies against ATF4 (sc-200, Santa Cruz), ATF3 (HPA001562, Sigma), CHOP (sc-575, Santa Cruz), PPP1R15A (sc-825, Santa Cruz), FGF21 (42189, AIS) and Sox9 (AB5535, Millipore).
 
-## FAST staining
+### FAST staining
 
 FAST staining referred to a multidye staining procedure using fast green, Alcian blue, Safranin-O, and tartrazine and was performed as described previously(Leung et al., 2009).
 
-## In-situ hybridization
+### In-situ hybridization
 
 In-situ hybridization was performed as previously described(Wai et al., 1998), using [35S]UTP-labeled ribopobes for Col10a1, Col2a1, Hspa5 (Bip), 13del(Tsang et al., 2007), Ihh (from A. McMahon), Sox9(Ng et al., 1997) and the PTHrP receptor (Ppr) (from H. Kronenberg). The probes for Atf4, Atf3, Ddit3 (Chop), Ero1l and Fgf21 were mouse cDNA fragments, generated by RT-PCR from growth plate total RNA. The primers used for probe synthesis were listed in Supplementary file 7.
 
-## Generation of 13del;Col10a1EgfpEgfp13 del;Fgf21-/- chimeras
+### Generation of 13del;Col10a1EgfpEgfp13 del;Fgf21-/- chimeras
 
 We utilized compound mutants carrying the 13del transgene and a Col10a1Egfp allele [Egfp knocked into the Col10a1 gene (Yang et al., 2014) so that all 13del HCs are marked by EGFP expression. We created mouse chimeras by aggregating morulae from 13del;Col10a1Egfp and 13del;Fgf21-/-mice. The chimeras (agouti/black) generated were genotyped for the different alleles by PCR. The HCs from 13del;Col10a1Egfp with FGF21 expression were visualized by EGFP or by immunostaining for EGFP on cryosectioned growth plates.
 
-## TUNEL assay and BrdU incorporation
+### TUNEL assay and BrdU incorporation
 
 Methods used are as described in Tsang et al. (2007). In brief, apoptotic cells in the growth plate of examined animals were detected by in situ terminal deoxynucleotidyltransferase deoxyuridine triphosphate nick end labeling (TUNEL) assay using the In Situ Cell Death Detection Kit (Roche) following the manufacturer’s instructions. Cell proliferation activity was analyzed using BrdU labeling assay. Mice were injected intraperitoneally with 200 μg of BrdU per gram of body weight two hours before sacrifice. Following fixation, BrdU in paraffin sections was detected using a BrdU Staining Kit (93–3943, Thermo Fisher).
 
-## Chromatin immunoprecipitation (ChIP) assay
+### Chromatin immunoprecipitation (ChIP) assay
 
 The protocol used for ChIP was adapted from the instructions of ChIP Assay Kit (Millipore). Cultured cells or limbs dissected from E15.5 WT and C10-Atf4 embryos were homogenized and crosslinked. DNA was sonicated and immunoprecipitated with rabbit anti-ATF4 (sc-200, Santa Cruz Biotechnology) or rabbit anti-CHOP (sc-575, Santa Cruz Biotechnology) antibody. The pull-down DNA was purified and analyzed by PCR.
 
-## Protein extraction and immunoblot analysis
+### Protein extraction and immunoblot analysis
 
 Cartilages isolated from the mice were pulverized in liquid nitrogen and then lysed with RIPA buffer. The lysate was subjected to SDS-PAGE under reducing conditions and probed with FGF21 and beta-actin antibody. For drug-treated animals, the proximal part of the tibia was embedded in RIPA buffer for cryosection. Transverse sections (5 μm thick) were cut and pooled into fractions consisting of 10 sections per fraction to ensure separation of each cell type in the growth plates before further lysed in RIPA. The lysate was subjected to SDS-PAGE under reducing conditions and probed with ATF4, BiP (ADI-SPA-826, Enzo) and beta-actin (A2228, Sigma) antibody.
 
-## Dual-luciferase reporter assay
+### Dual-luciferase reporter assay
 
 Luciferase assays were conducted using a dual luciferase reporter assay kit (Promega), according to the manufacturer’s protocol. Different promoter fragments of Sox9 or Fgf21 were cloned into a pGL3-basic vector (Promega) to drive the expression of firefly luciferase. ATDC5 (RCB0565, RIKEN, Wako, Japan) or NIH3T3 cells (ATCC CRL-1658) were plated at 2 × 104 cells/well in 24-well plates. After 18 hr incubation, the cells were transfected with tested constructs with Renilla luciferase vector, which served as an internal control. Data presented are ratios of Luc/Renilla activity from at least three different experiments, and each experiment was performed in triplicate for each DNA sample.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Quantitative PCR was performed using SYBR-Green master mixture according to the manufacturer's instruction (Takara). Appropriate amounts of cDNA (or DNA) and primers were mixed with distilled water up to 10 μl and combined with an equal amount of SYBR-Green master mixture. The reaction was run on the StepOne Real-Time PCR system (Applied Biosystems, A and B). The Ct (cycle threshold) is defined as the cycle number required for the fluorescent signal to cross the threshold. The relative expression levels of target genes are calculated by normalizing to the expression level of GAPDH using delta-delta-Ct (Relative expression level = 2^ - (Cttarget- CtGapdh)). The melting curve was also measured to detect the specificity of the primers. The primers used for qRT-PCR were listed in Supplementary file 7.
 
-## ISRIB treatments
+### ISRIB treatments
 
 ISRIB (SML0843, Sigma) was dissolved in DMSO to make a 5 mg/ml stock and stored at 4-degree. Animals were intraperitoneally injected with ISRIB (Di Prisco et al., 2014; Sidrauski et al., 2013) (2.5 mg/kg, freshly diluted in 0.9% saline) or vehicle (5% DMSO in saline) from E13.5 till p20 stage or from p0 till 4-week stage. The animals were collected at p10 and p20 stages for further analysis.
 
-## Radiography of mouse skeleton
+### Radiography of mouse skeleton
 
 Mice were anesthetized before radiography using digital Faxitron system (UltraFocus) at 20kVA for 5 s exposure.
 
-## Statistical analyses
+### Statistical analyses
 
 No statistical methods were used to predetermine sample size. Statistical methods used are detailed in the figure legends. We used two-tailed Mann-Whitney U-test to establish statistical significance in all mouse phenotypic analysis, unpaired Two-tailed Student’s t-test in the luciferase assay, and one-way ANOVA in the ISRIB-treatment studies, p<0.05 was considered statistically significant.
 
-## Data availability
+### Data availability
 
 All primary microarray data are deposited into Gene Expression Omnibus (GEO) website (Accession Number GSE99306). Source Data for all figures are provided with the paper and supplementary files.

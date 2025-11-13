@@ -41,85 +41,159 @@ Here, we propose a network model able to store and retrieve multiple independent
 
 In what follows we develop an analytical framework that allows to derive the dependence of important features of the dynamics, such as the replay speed and the asymmetry of the activity cluster, as a function of the relevant parameters of the model. We show with numerical simulations that the behavior of the model is robust with respect to its details, and depends weakly on the shape of the interactions. Finally, we estimate the storage capacity for dynamical memories and we find it to be of the same order of the capacity for static continuous attractors, and even higher in some regimes.
 
-## Modeling framework
+### Modeling framework
 
-## A mechanistic model for dynamic retrieval
+#### A mechanistic model for dynamic retrieval
 
-The model we consider is a continuous attractor neural network, with an additional anti-symmetric component in the connectivity strength. We consider a population of N neurons, with recurrent connectivity described by an interaction matrix Ji⁢j, whose entries represent the strength of the interaction between neuron i and j. The activity of each neuron is described by a positive real number Vi∈ℝ+ representing its instantaneous firing rate. The dynamic evolution of the network is regulated by the equations:(1)τ⁢∂⁡Vi∂⁡t+Vi=g⁢[(∑j≠iJi⁢j⁢Vj-h0)]+where […]+ is the threshold linear activation function(2)[x]+=x⁢θ⁢(x)with the gain g modulating the slope and the Heaviside step function θ⁢(…) setting to zero sub-threshold inputs. The first term on the right hand side of Equation 1 represent the excitatory inputs provided to neuron i from the rest of the network through recurrent connections. The threshold h0 and the gain g are global parameters that regulate the average activity and the sparsity of the activity pattern (Treves, 1990).
+The model we consider is a continuous attractor neural network, with an additional anti-symmetric component in the connectivity strength. We consider a population of $N$ neurons, with recurrent connectivity described by an interaction matrix $J_{i⁢j}$, whose entries represent the strength of the interaction between neuron $i$ and $j$. The activity of each neuron is described by a positive real number $V_{i}\inℝ^{+}$ representing its instantaneous firing rate. The dynamic evolution of the network is regulated by the equations:
 
-In numerical simulations, these parameters are dynamically adjusted at each time step to constrain the network to operate at a certain average activity (usually fixed to one without loss of generality) and at a certain sparsity f, defined as the fraction of active neuron at each time (see appendix A). The connectivity matrix J of the network encodes a map of a continuous parameter x→ spanning a low-dimensional manifold, e.g. the position in an environment. To do so, each neuron is assigned a preferential firing location x→i in the manifold to encode, and the strength of the interaction between pairs of neuron is given by a decreasing, symmetric function of the distance between their preferred firing locations(3)Ji⁢j∼KS⁢(|x→i-x→j|).
+$$
+\tau⁢\frac{\partial⁡V_{i}}{\partial⁡t}+V_{i}=g⁢[(\sumj\neqiJ_{i⁢j}⁢V_{j}-h_{0})]^{+}
+$$
 
-This shape of the interactions is a typical one in the framework of continuous attractor neural networks (Samsonovich and McNaughton, 1997; Battaglia and Treves, 1998; Tsodyks, 1999) and is thought to come from a time-averaged Hebbian plasticity rule: neurons with nearby firing fields will fire concurrently and strengthen their connections, while firing fields that are far apart will produce weak interactions. The symmetry of the function KS, usually called interaction kernel, ensures that the network reaches a static equilibrium, where the activity of the neurons represents a certain position in the manifold and, if not pushed, remains still.
+where $[…]^{+}$ is the threshold linear activation function
 
-## The shift mechanism
+$$
+[x]^{+}=x⁢\theta⁢(x)
+$$
 
-The assumption of symmetric interactions neglects any temporal structure in the learning phase. In case of learning a spatial map, for example, the order in which recruited neurons fire along a trajectory may produce an asymmetry in the interactions as a consequence of Spike Timing Dependent Plasticity (Markram et al., 1997), that requires the postsynaptic neuron to fire after the presynaptic one in order to strengthen the synapse. This phenomenon can be accounted for in the definition of the interaction kernel. Any asymmetric kernel can be decomposed in two contributions:(4)K⁢(|x→i-x→j|)=KS⁢(|x→i-x→j|)+γ⁢KA⁢(|x→i-x→j|)where KS is the usual symmetric component and KA is an anti-symmetric function (KA⁢(xi-xj)=-KA⁢(xj-xi)). The parameter γ regulates the relative strength of the two components. The presence of KA will generate a flow of activity along the direction of asymmetry: neuron i activates neuron j that, instead of reciprocating, will activate neurons downstream in the asymmetric direction. Mechanisms of this kind have been shown to produce a rigid shift of the encoded position along the manifold, without loss of coherence (Zhang, 1996; Burak and Fiete, 2009; Fuhs and Touretzky, 2006). In the quantitative analysis that follows we will concentrate, when not stated otherwise, on a kernel K with the exponential form(5)K⁢(|x→i-x→j|)=e-|x→i-x→j|+γ⁢sign⁢((x→i-x→j)⋅n→)⁢e-|x→i-x→j|/ξwhere n→ is a unit vector pointing in the – constant – direction along which the asymmetry is enforced, and ξ is the spatial scale of the asymmetric component, which is fixed to one where not explicitly stated otherwise. Moreover, we make the simplifying assumption of periodic boundary conditions on the manifold spanned by x→, such that the dynamics follows a periodic cycle. Both the kernel form and the periodic boundary conditions simplify the analytical description of the model, but are not a required feature of the model. In fact, all the results presented hold for a large class of interaction kernels, and the boundary conditions can be modified (e.g. with the introduction of interactions between different memories) without compromising the functionality of the network. Both points will be addressed in the analyses of the model in the next sections.
+with the gain $g$ modulating the slope and the Heaviside step function $\theta⁢(…)$ setting to zero sub-threshold inputs. The first term on the right hand side of Equation 1 represent the excitatory inputs provided to neuron $i$ from the rest of the network through recurrent connections. The threshold h0 and the gain $g$ are global parameters that regulate the average activity and the sparsity of the activity pattern (Treves, 1990).
+
+In numerical simulations, these parameters are dynamically adjusted at each time step to constrain the network to operate at a certain average activity (usually fixed to one without loss of generality) and at a certain sparsity $f$, defined as the fraction of active neuron at each time (see appendix A). The connectivity matrix $J$ of the network encodes a map of a continuous parameter $x→$ spanning a low-dimensional manifold, e.g. the position in an environment. To do so, each neuron is assigned a preferential firing location $x→_{i}$ in the manifold to encode, and the strength of the interaction between pairs of neuron is given by a decreasing, symmetric function of the distance between their preferred firing locations
+
+$$
+J_{i⁢j}∼K_{S}⁢(|x→_{i}-x→_{j}|).
+$$
+
+This shape of the interactions is a typical one in the framework of continuous attractor neural networks (Samsonovich and McNaughton, 1997; Battaglia and Treves, 1998; Tsodyks, 1999) and is thought to come from a time-averaged Hebbian plasticity rule: neurons with nearby firing fields will fire concurrently and strengthen their connections, while firing fields that are far apart will produce weak interactions. The symmetry of the function $K_{S}$, usually called interaction kernel, ensures that the network reaches a static equilibrium, where the activity of the neurons represents a certain position in the manifold and, if not pushed, remains still.
+
+#### The shift mechanism
+
+The assumption of symmetric interactions neglects any temporal structure in the learning phase. In case of learning a spatial map, for example, the order in which recruited neurons fire along a trajectory may produce an asymmetry in the interactions as a consequence of Spike Timing Dependent Plasticity (Markram et al., 1997), that requires the postsynaptic neuron to fire after the presynaptic one in order to strengthen the synapse. This phenomenon can be accounted for in the definition of the interaction kernel. Any asymmetric kernel can be decomposed in two contributions:
+
+$$
+K⁢(|x→_{i}-x→_{j}|)=K_{S}⁢(|x→_{i}-x→_{j}|)+\gamma⁢K_{A}⁢(|x→_{i}-x→_{j}|)
+$$
+
+where $K_{S}$ is the usual symmetric component and $K_{A}$ is an anti-symmetric function ($K_{A}⁢(x_{i}-x_{j})=-K_{A}⁢(x_{j}-x_{i})$). The parameter γ regulates the relative strength of the two components. The presence of $K_{A}$ will generate a flow of activity along the direction of asymmetry: neuron $i$ activates neuron $j$ that, instead of reciprocating, will activate neurons downstream in the asymmetric direction. Mechanisms of this kind have been shown to produce a rigid shift of the encoded position along the manifold, without loss of coherence (Zhang, 1996; Burak and Fiete, 2009; Fuhs and Touretzky, 2006). In the quantitative analysis that follows we will concentrate, when not stated otherwise, on a kernel $K$ with the exponential form
+
+$$
+K⁢(|x→_{i}-x→_{j}|)=e^{-|x→_{i}-x→_{j}|}+\gamma⁢sign⁢((x→_{i}-x→_{j})⋅n→)⁢e^{-|x→_{i}-x→_{j}|/ξ}
+$$
+
+where $n→$ is a unit vector pointing in the – constant – direction along which the asymmetry is enforced, and ξ is the spatial scale of the asymmetric component, which is fixed to one where not explicitly stated otherwise. Moreover, we make the simplifying assumption of periodic boundary conditions on the manifold spanned by $x→$, such that the dynamics follows a periodic cycle. Both the kernel form and the periodic boundary conditions simplify the analytical description of the model, but are not a required feature of the model. In fact, all the results presented hold for a large class of interaction kernels, and the boundary conditions can be modified (e.g. with the introduction of interactions between different memories) without compromising the functionality of the network. Both points will be addressed in the analyses of the model in the next sections.
 
 ## Results
 
-## Asymmetric recurrent connections produce dynamic retrieval
+### Asymmetric recurrent connections produce dynamic retrieval
 
-The spontaneous dynamics produced by the network is constrained to the low dimensional manifold codified in the connectivity matrix and spanned by the parameter x→. The short-range interactions and the uniform inhibition enforced by the firing threshold h0 produce a localized 'bump' of activity in the manifold. The presence of an asymmetry in the connection strengths prevents the system from remaining in a stationary equilibrium. Instead, it generates a steady flow of activity in the direction of the asymmetry.
+The spontaneous dynamics produced by the network is constrained to the low dimensional manifold codified in the connectivity matrix and spanned by the parameter $x→$. The short-range interactions and the uniform inhibition enforced by the firing threshold h0 produce a localized 'bump' of activity in the manifold. The presence of an asymmetry in the connection strengths prevents the system from remaining in a stationary equilibrium. Instead, it generates a steady flow of activity in the direction of the asymmetry.
 
-This flow is illustrated in Figure 2 (a),(b) and (c), obtained with numerical simulation of a network encoding a one-, two-, or three-dimensional manifold, respectively. In the simulation, each neuron is assigned to a preferential firing location xi→ in the manifold to encode, and the plots show the activity of the network organized according to this disposition. The activity of the population clusters in a bump around a certain position at each time point (t1, t2, and t3), and the bump shifts by effect of the asymmetric component of the interactions. In this way, the neural population collectively encodes an evolving coordinate on the manifold spanned by x→. The coherence of the representation is not affected by the presence of the asymmetric term: the movement of the activity bump happens without dissipation.
+This flow is illustrated in Figure 2 (a),(b) and (c), obtained with numerical simulation of a network encoding a one-, two-, or three-dimensional manifold, respectively. In the simulation, each neuron is assigned to a preferential firing location $x_{i}→$ in the manifold to encode, and the plots show the activity of the network organized according to this disposition. The activity of the population clusters in a bump around a certain position at each time point (t1, t2, and t3), and the bump shifts by effect of the asymmetric component of the interactions. In this way, the neural population collectively encodes an evolving coordinate on the manifold spanned by $x→$. The coherence of the representation is not affected by the presence of the asymmetric term: the movement of the activity bump happens without dissipation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69499/elife-69499-fig2-v1.jpg)
 
-**Figure 2.:** First row: each plot presents three snapshots of the network activity at three different times (t1, t2 and t3), for a system encoding a one dimensional (a), two dimensional (b) and three dimensional (c) manifold. In (c), activity is color-coded (blue represents low activity, red is high activity, silent neurons are not plotted for better readability). In all cases, the anti-symmetric component is oriented along the x axis. (d) Dependence of the speed on γ and . Dots are data from numerical simulations, full lines are the fitted curves. (fe) Retrieval of two crossing trajectories. Black arrows represent the two intersecting encoded trajectories, each parallel to one of the axis. Full colored lines show the trajectories actually followed by the center of mass of the activity from the same starting point. Blue curve: low γ, the activity switches trajectories when it reaches the crossing point. Orange curve: high γ, successful crossing. In both cases . The blue and the orange insets show the activity bumps in the corresponding cases; the top-right inset shows the dependence of the value ξ=10, required for crossing, on ξ.γ*
+**Figure 2.:** First row: each plot presents three snapshots of the network activity at three different times (t1, t2 and t3), for a system encoding a one dimensional (a), two dimensional (b) and three dimensional (c) manifold. In (c), activity is color-coded (blue represents low activity, red is high activity, silent neurons are not plotted for better readability). In all cases, the anti-symmetric component is oriented along the x axis. (d) Dependence of the speed on γ and $f$. Dots are data from numerical simulations, full lines are the fitted curves. (e) Retrieval of two crossing trajectories. Black arrows represent the two intersecting encoded trajectories, each parallel to one of the axis. Full colored lines show the trajectories actually followed by the center of mass of the activity from the same starting point. Blue curve: low γ, the activity switches trajectories when it reaches the crossing point. Orange curve: high γ, successful crossing. In both cases $ξ=10$. The blue and the orange insets show the activity bumps in the corresponding cases; the top-right inset shows the dependence of the value $\gamma^{*}$, required for crossing, on ξ.
 
-The speed of movement of the bump is modulated by the value of the parameter γ and by the sparsity level of the representation f, that is the fraction of neurons active at each given time during the dynamics. The dependence of the speed on these two parameters is illustrated in 2(d). Stronger asymmetry (high γ) produces a faster shift. Interestingly, the sparsity value f acts as a modulator of the influence of γ: sparser representations move more slowly than dense ones.
+The speed of movement of the bump is modulated by the value of the parameter γ and by the sparsity level of the representation $f$, that is the fraction of neurons active at each given time during the dynamics. The dependence of the speed on these two parameters is illustrated in 2(d). Stronger asymmetry (high γ) produces a faster shift. Interestingly, the sparsity value $f$ acts as a modulator of the influence of γ: sparser representations move more slowly than dense ones.
 
-While γ describes a feature of the synaptic interactions, determined during the learning phase and relatively fixed at the short timescales of retrieval, f can be instantaneously modulated during retrieval dynamics. A change in the gain or the excitability of the population can be used to produce dynamic retrieval at different speeds. Thus, the model predicts an interaction between the sparsity and the speed of the reactivation of a continuous memory sequence, with increased activity leading to faster replay. It is worth noting, however, that the direction of the dynamics is fixed with J: the model is able to retrieve either forward or backward sequences, but not alternate between them.
+While γ describes a feature of the synaptic interactions, determined during the learning phase and relatively fixed at the short timescales of retrieval, $f$ can be instantaneously modulated during retrieval dynamics. A change in the gain or the excitability of the population can be used to produce dynamic retrieval at different speeds. Thus, the model predicts an interaction between the sparsity and the speed of the reactivation of a continuous memory sequence, with increased activity leading to faster replay. It is worth noting, however, that the direction of the dynamics is fixed with $J$: the model is able to retrieve either forward or backward sequences, but not alternate between them.
 
-The dependence of the retrieval speed s on γ and f is well described by the approximate functional form(6)s⁢(γ,f)=A⁢γ⁢fb⁢γ+c⁢f+d⁢γ⁢f+e⁢γ⁢f2
+The dependence of the retrieval speed $s$ on γ and $f$ is well described by the approximate functional form
 
-This dependence is shown in 2(b), where the dots are the values obtained with numerical simulations and the full curves the fitted relationship. The full understanding of the nature of this functional form remains an open challenge for future analysis. As we will see in the next section, the analytical solution of the model yields the same form to describe the dependence of speed on γ and f, but a closed-form solution is still lacking.
+$$
+s⁢(\gamma,f)=\frac{A⁢\gamma⁢f}{b⁢\gamma+c⁢f+d⁢\gamma⁢f+e⁢\gamma⁢f^{2}}
+$$
 
-In the model presented, the asymmetry in the interactions is enforced uniformly along a single direction also for two- and three-dimensional manifolds, representing the case in which neural dynamics follows a forced trajectory along one dimension, but is free to move without energy costs along the others. However, the same mechanism can be used to produce one-dimensional trajectories embedded in low-dimensional manifolds, with the introduction of a positional dependence in the direction of the asymmetry (Blum and Abbott, 1996). In this case, an interesting problem is posed by the intersection of two trajectories embedded in the same manifold: is the network, during the retrieval of one trajectory, able to cross these intersections, or do they hinder dynamical retrieval? The investigation of the full phenomenology of position-dependent asymmetric kernels with intersecting trajectories is beyond the scope of the present work, but we present in Figure 2(e) a numerical study of a minimal version of this problem, with two orthogonal trajectories (Figure 2(e), black arrows) embedded in a 2D manifold and memorized simultaneously in the network. Notice that in this case the two trajectories are parallel to the main axis of the square environment, but they do not need to be: any pair of orthogonal trajectories will behave in the same manner. When the network is cued to retrieve the horizontal trajectory, the behavior at the intersection depends on the strength γ and scale ξ of the asymmetric component. At low γ, the dynamics spontaneously switch trajectory at the intersection (Figure 2(e), blue curve), while for γ sufficiently large the retrieval of the horizontal trajectory is successful (Figure 2(e), orange curve). The value γ* required for a successful crossing depends on the spatial scale ξ: larger ξ allow for crossing with lower values of γ, as shown in the top-right inset of Figure 2(e), in which γ*⁢(ξ) is plotted. Intuitively, the ability of the network to retrieve crossing trajectories depends on the shape of the activity bump, which needs to be sufficiently elongated in the direction of retrieval for the successful crossing of the intersection. The blue and orange insets of Figure 2(e) show the difference in shape of the bump in the case of a trajectory switch (blue) and successful crossing (orange).
+This dependence is shown in 2(b), where the dots are the values obtained with numerical simulations and the full curves the fitted relationship. The full understanding of the nature of this functional form remains an open challenge for future analysis. As we will see in the next section, the analytical solution of the model yields the same form to describe the dependence of speed on γ and $f$, but a closed-form solution is still lacking.
 
-## Analytical solution for the single manifold case
+In the model presented, the asymmetry in the interactions is enforced uniformly along a single direction also for two- and three-dimensional manifolds, representing the case in which neural dynamics follows a forced trajectory along one dimension, but is free to move without energy costs along the others. However, the same mechanism can be used to produce one-dimensional trajectories embedded in low-dimensional manifolds, with the introduction of a positional dependence in the direction of the asymmetry (Blum and Abbott, 1996). In this case, an interesting problem is posed by the intersection of two trajectories embedded in the same manifold: is the network, during the retrieval of one trajectory, able to cross these intersections, or do they hinder dynamical retrieval? The investigation of the full phenomenology of position-dependent asymmetric kernels with intersecting trajectories is beyond the scope of the present work, but we present in Figure 2(e) a numerical study of a minimal version of this problem, with two orthogonal trajectories (Figure 2(e), black arrows) embedded in a 2D manifold and memorized simultaneously in the network. Notice that in this case the two trajectories are parallel to the main axis of the square environment, but they do not need to be: any pair of orthogonal trajectories will behave in the same manner. When the network is cued to retrieve the horizontal trajectory, the behavior at the intersection depends on the strength γ and scale ξ of the asymmetric component. At low γ, the dynamics spontaneously switch trajectory at the intersection (Figure 2(e), blue curve), while for γ sufficiently large the retrieval of the horizontal trajectory is successful (Figure 2(e), orange curve). The value $\gamma^{*}$ required for a successful crossing depends on the spatial scale ξ: larger ξ allow for crossing with lower values of γ, as shown in the top-right inset of Figure 2(e), in which $\gamma^{*}⁢(ξ)$ is plotted. Intuitively, the ability of the network to retrieve crossing trajectories depends on the shape of the activity bump, which needs to be sufficiently elongated in the direction of retrieval for the successful crossing of the intersection. The blue and orange insets of Figure 2(e) show the difference in shape of the bump in the case of a trajectory switch (blue) and successful crossing (orange).
 
-The simplicity of continuous attractor models often allows to extract important computational principles from their analytical solution (Wu et al., 2008; Fung et al., 2010). In our case, the dynamic behavior of the system and its features can be fully described analytically with a generalization of the framework developed by Battaglia and Treves, 1998. For this purpose, it is easier to formulate the problem in the continuum, and describe the population activity {Vi} by its profile V⁢(x→) on the attractive manifold parametrized by the coordinate x→, and the dynamical evolution as a discrete step map, equivalent to Equation 1.(7)V⁢(x→,t+1)=g⁢[h⁢(x→,t)]+(8)h⁢(x→,t)=∫𝑑x→′⁢K⁢(x→-x→′)⁢V⁢(x→′,t)-h0
+### Analytical solution for the single manifold case
 
-The requirement of a rigid shift of population activity is then imposed by setting the activity at time t+1 to be equal at the activity at time t, but translated by an amount Δ⁢x→=τ⁢s⁢n→, proportional to the speed s of the shift and in the direction n→ of the asymmetry in the connections. The timescale τ sets the time unit in which the duration of the evolution is measured and does not have an impact on the behavior of the system.
+The simplicity of continuous attractor models often allows to extract important computational principles from their analytical solution (Wu et al., 2008; Fung et al., 2010). In our case, the dynamic behavior of the system and its features can be fully described analytically with a generalization of the framework developed by Battaglia and Treves, 1998. For this purpose, it is easier to formulate the problem in the continuum, and describe the population activity ${V_{i}}$ by its profile $V⁢(x→)$ on the attractive manifold parametrized by the coordinate $x→$, and the dynamical evolution as a discrete step map, equivalent to Equation 1.
 
-The activity profile V⁢(x→) is then found as the self-consistent solution to the integral equation(9)V⁢(x→+Δ⁢x→)=g⁢[∫𝑑x→′⁢K⁢(x→-x→′)⁢V⁢(x→′)-h0]+
+$$
+V⁢(x→,t+1)=g⁢[h⁢(x→,t)]^{+}
+$$
 
-Equation 9 is valid in general. We will focus here, for the explicit derivation (reported in appendix C), on the case of a one dimensional manifold with an exponential interaction kernel(10)K⁢(x-x′)=e-|x-x′|+γ⁢sign⁢(x-x′)⁢e-|x-x′|
 
-In this case, the activity bump will take the form:(11)V⁢(x)={C⁢ek1⁢x⁢cos⁡(k2⁢x)+g⁢θ1-2⁢gif -R≤x≤R0if -R>x⁢ or ⁢x>R
 
-The parameters k1=k1⁢(γ,s) and k2=k2⁢(γ,s) determine the properties of the solution and they depend on the values of γ and speed s=Δ⁢x/τ.
+$$
+h⁢(x→,t)=\int𝑑x→^{′}⁢K⁢(x→-x→^{′})⁢V⁢(x→^{′},t)-h_{0}
+$$
 
-k2 is related to the bump width by the relation(12)R=π2⁢k2where R is the point at which V⁢(x)=0. k1 is related to the asymmetry of the bump: in the limit case γ=0, s=0 (Figure 3(a), first column) k1=0, and we recover the cosine solution of the symmetric kernel case studied in Battaglia and Treves, 1998. Larger k1 values result in more and more asymmetric shapes (Figure 3(a), second and third columns).
+The requirement of a rigid shift of population activity is then imposed by setting the activity at time $t+1$ to be equal at the activity at time $t$, but translated by an amount $Δ⁢x→=\tau⁢s⁢n→$, proportional to the speed $s$ of the shift and in the direction $n→$ of the asymmetry in the connections. The timescale τ sets the time unit in which the duration of the evolution is measured and does not have an impact on the behavior of the system.
+
+The activity profile $V⁢(x→)$ is then found as the self-consistent solution to the integral equation
+
+$$
+V⁢(x→+Δ⁢x→)=g⁢[\int𝑑x→^{′}⁢K⁢(x→-x→^{′})⁢V⁢(x→^{′})-h_{0}]^{+}
+$$
+
+Equation 9 is valid in general. We will focus here, for the explicit derivation (reported in appendix C), on the case of a one dimensional manifold with an exponential interaction kernel
+
+$$
+K⁢(x-x^{′})=e^{-|x-x^{′}|}+\gamma⁢sign⁢(x-x^{′})⁢e^{-|x-x^{′}|}
+$$
+
+In this case, the activity bump will take the form:
+
+$$
+V⁢(x)={C⁢e^{k_{1}⁢x}⁢cos⁡(k_{2}⁢x)+\frac{g⁢\theta}{1-2⁢g}if -R\leqx\leqR0if -R>x⁢or ⁢x>R
+$$
+
+The parameters $k_{1}=k_{1}⁢(\gamma,s)$ and $k_{2}=k_{2}⁢(\gamma,s)$ determine the properties of the solution and they depend on the values of γ and speed $s=Δ⁢x/\tau$.
+
+k2 is related to the bump width by the relation
+
+$$
+R=\frac{\pi}{2⁢k_{2}}
+$$
+
+where $R$ is the point at which $V⁢(x)=0$. k1 is related to the asymmetry of the bump: in the limit case $\gamma=0$, $s=0$ (Figure 3(a), first column) $k_{1}=0$, and we recover the cosine solution of the symmetric kernel case studied in Battaglia and Treves, 1998. Larger k1 values result in more and more asymmetric shapes (Figure 3(a), second and third columns).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69499/elife-69499-fig3-v1.jpg)
 
-**Figure 3.:** (a) The shape of the bump for increasing values of γ. (b) Dependence of the sparsity  on the gain f of the network. (gc) Dependence of the speed of the shift on γ, at different values of sparsity. Dots show the numerical solution (note some numerical instability at low  and γ), full curves are the best fits.f
+**Figure 3.:** (a) The shape of the bump for increasing values of γ. (b) Dependence of the sparsity $f$ on the gain $g$ of the network. (c) Dependence of the speed of the shift on γ, at different values of sparsity. Dots show the numerical solution (note some numerical instability at low $f$ and γ), full curves are the best fits.
 
-From this analytical solution, we can determine the dependence of the speed s on the asymmetry strength γ and on the sparsity f=2⁢R/L (note that in the continuum case the fraction of active neurons is given by the ratio between the bump size 2⁢R and the manifold size L). The sparsity f is modulated by the value of the gain g, as shown in Figure 3(b): a larger gain in the transfer function corresponds to a sparser activity. The exact relation s⁢(γ,f) can be obtained from the numerical solution of a transcendental equation (see appendix C), and can be approximated with a functional shape analogous to the one used for the simulated network:(13)s⁢(γ,f)=A⁢γ⁢fb⁢γ+c⁢f+d⁢γ⁢f+e⁢γ⁢f2
+From this analytical solution, we can determine the dependence of the speed $s$ on the asymmetry strength γ and on the sparsity $f=2⁢R/L$ (note that in the continuum case the fraction of active neurons is given by the ratio between the bump size $2⁢R$ and the manifold size $L$). The sparsity $f$ is modulated by the value of the gain $g$, as shown in Figure 3(b): a larger gain in the transfer function corresponds to a sparser activity. The exact relation $s⁢(\gamma,f)$ can be obtained from the numerical solution of a transcendental equation (see appendix C), and can be approximated with a functional shape analogous to the one used for the simulated network:
+
+$$
+s⁢(\gamma,f)=\frac{A⁢\gamma⁢f}{b⁢\gamma+c⁢f+d⁢\gamma⁢f+e⁢\gamma⁢f^{2}}
+$$
 
 The full transcendental solution and the fitted curves are reported in Figure 3(c).
 
-## Dynamic retrieval is robust
+### Dynamic retrieval is robust
 
-The analytical solution of the model shows that the network performs dynamical retrieval for all values of the asymmetry strength γ, and that this parameter influences the retrieval speed and the shape of the activity bump. To further investigate the robustness of dynamical retrieval to parameter changes, we investigate with numerical simulations the behavior of the model with respect to another important parameter: the scale ξ of the anti-symmetric component. We run several dynamics of a network with interaction kernel given by(14)K⁢(d)=e-d+γ⁢sign⁢(d)⁢e-d/ξvarying the parameters γ and ξ and measuring the retrieval speed, the peak value of the activity bump and its skeweness. The joint effects of γ and ξ are shown in Figure 4. In the whole range of parameters analyzed, spanning four orders of magnitude for both parameters, the network was able to produce dynamic retrieval. γ and ξ affect the speed of the shift, the peak values of the activity distribution and the skewness of the activity bump, without hindering network functionality. Moreover, all these feature vary gradually and mildly with the parameters values, producing dynamical behavior qualitatively similar in the full parameter range. This analysis shows that dynamical retrieval does not require any fine tuning of network parameters, but relies on the assumption of an exponential shape for the interaction kernel. How robust is the behavior of the network to the details of the kernel shape?
+The analytical solution of the model shows that the network performs dynamical retrieval for all values of the asymmetry strength γ, and that this parameter influences the retrieval speed and the shape of the activity bump. To further investigate the robustness of dynamical retrieval to parameter changes, we investigate with numerical simulations the behavior of the model with respect to another important parameter: the scale ξ of the anti-symmetric component. We run several dynamics of a network with interaction kernel given by
+
+$$
+K⁢(d)=e^{-d}+\gamma⁢sign⁢(d)⁢e^{-d/ξ}
+$$
+
+varying the parameters γ and ξ and measuring the retrieval speed, the peak value of the activity bump and its skeweness. The joint effects of γ and ξ are shown in Figure 4. In the whole range of parameters analyzed, spanning four orders of magnitude for both parameters, the network was able to produce dynamic retrieval. γ and ξ affect the speed of the shift, the peak values of the activity distribution and the skewness of the activity bump, without hindering network functionality. Moreover, all these feature vary gradually and mildly with the parameters values, producing dynamical behavior qualitatively similar in the full parameter range. This analysis shows that dynamical retrieval does not require any fine tuning of network parameters, but relies on the assumption of an exponential shape for the interaction kernel. How robust is the behavior of the network to the details of the kernel shape?
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69499/elife-69499-fig4-v1.jpg)
 
-**Figure 4.:** Effect of the kernel strength γ and its spatial scale ξ, in the case of the exponential kernel  .(K⁢(d)=e-|d|+γ⁢sign⁢(d)⁢e-|d|/ξa) Retrieval speed (b) Peak value of the activity (c) Skewness of the activity bump.
+**Figure 4.:** Effect of the kernel strength γ and its spatial scale ξ, in the case of the exponential kernel $K⁢(d)=e^{-|d|}+\gamma⁢sign⁢(d)⁢e^{-|d|/ξ}$ .(a) Retrieval speed (b) Peak value of the activity (c) Skewness of the activity bump.
 
 We addressed this question by simulating the network dynamics with alternative kernel choices. We kept fixed the symmetric component, and explored three different anti-simmetric shapes: a gaussian-derivative shape (Figure 5a), a sinusoidal shape (Figure 5b) and a double step function (Figure 5c). Each of these simulations produced the same retrieval dynamics (a stable bump shifting at constant speed), the only effect of the kernel shape being on the details of the shape of the activity bump (Figure 5, bottom row). This shows that the dynamic retrieval mechanism, much like standard continuous attractors, is robust with respect to the precise shape of the interactions. Importantly, no particular relationship is required between the shape of the symmetric and the anti-symmetric components of the kernel.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69499/elife-69499-fig5-v1.jpg)
 
-**Figure 5.:** Three examples of dynamics with the same symmetric component and three different anti-symmetric components. Top row: shape of the anti-symmetric component . Bottom row: three snapshots of the retrieval dynamics for the corresponding KA. (KAa) Gaussian derivative; (b) Sinusoidal; (c) Anti-symmetric step function, .θ*=θ⁢(d)⁢θ⁢(1-d)-θ⁢(-d)⁢θ⁢(d-1)
+**Figure 5.:** Three examples of dynamics with the same symmetric component and three different anti-symmetric components. Top row: shape of the anti-symmetric component $K_{A}$. Bottom row: three snapshots of the retrieval dynamics for the corresponding $K_{A}$. (a) Gaussian derivative; (b) Sinusoidal; (c) Anti-symmetric step function, $\theta^{*}=\theta⁢(d)⁢\theta⁢(1-d)-\theta⁢(-d)⁢\theta⁢(d-1)$.
 
-## A dynamical memory: storing multiple manifolds
+### A dynamical memory: storing multiple manifolds
 
-We described in detail the behavior of a neural network with asymmetric connectivity in the case of a single manifold encoded in the synaptic connectivity. For the network to behave as an autoassociative memory, however, it needs to be able to store and dynamically retrieve multiple manifolds. This is possible if we construct the interaction matrix Ji⁢j as the sum of the contributions from p different, independently encoded manifolds:(15)Ji⁢j=1N⁢∑μ=1pK⁢(x→iμ-x→jμ)
+We described in detail the behavior of a neural network with asymmetric connectivity in the case of a single manifold encoded in the synaptic connectivity. For the network to behave as an autoassociative memory, however, it needs to be able to store and dynamically retrieve multiple manifolds. This is possible if we construct the interaction matrix $J_{i⁢j}$ as the sum of the contributions from $p$ different, independently encoded manifolds:
 
-Here, each xiμ represent the preferred firing location of neuron i in the manifold μ, and K is the same interaction kernel as in Equation 4, containing a symmetric and anti-symmetric component.
+$$
+J_{i⁢j}=\frac{1}{N}⁢\sum\mu=1pK⁢(x→_{i}^{\mu}-x→_{j}^{\mu})
+$$
+
+Here, each $x_{i}^{\mu}$ represent the preferred firing location of neuron $i$ in the manifold μ, and $K$ is the same interaction kernel as in Equation 4, containing a symmetric and anti-symmetric component.
 
 The resulting dynamics show multiple continuous attractors, corresponding to the stored manifolds. Given an initial configuration, the networks rapidly converges to the nearest (i.e. most correlated) attractor, forming a coherent bump that then moves along the manifold as a consequence of the asymmetric component of the connectivity. The same dynamics, if projected on the other unretrieved manifolds, appear as random noise. This is illustrated in Figure 6 obtained with numerical simulations of a network encoding three different manifolds (of dimension one in (a), dimension two in (b)), and dynamically retrieving the first one. How does this shifting activity bump relate to the activity of single cells? To clarify this aspect we simulated an electrophysiological recording from the dynamical retrieval of Figure 6(a). We selected a random subset of 15 of the 1000 cells of the network, and generated spike trains using a poisson point process with an instantaneous firing rate proportional to the activity level of each cell yielded by the retrieval dynamics at each time step, plus a small noise. With this procedure we obtain the spike trains of each cell, that we can visualize with a rasterplot (Figure 6c). We can sort the cells according to their firing field position on each of the three manifolds (if these were, e.g., linear tracks, this would correspond to sorting according to place field positions in each of the tracks). When ordered as in the retrieved manifold, the recorded cells show a structured pattern that is considered the hallmark of sequential activity in experimental studies (Figure 6c, first column). If the same spikes are ordered according to the unretrieved manifolds, the pattern is lost (Figure 6c, second and third column), indicating that the population activity is retrieving the dynamical structure of the first manifold specifically.
 
@@ -133,65 +207,155 @@ Multiple dynamic manifolds can be memorized and retrieved by the network, with d
 
 **Figure 7.:** (a) Multiple mainfolds with different velocity can be stored in a network with manifold-dependent asymmetric connectivity (b) The retrieved position at different timesteps during the retrieval dynamics of five different manifolds, stored in the same network, each with a different value of γ. (c) Manifolds memorized in the same network can be linked together (d) Sequential retrieval of five manifolds. Top row: overlap, measuring the overall coherence with the manifold, as a function of time. Bottom row: retrieved position in each manifold as a function of time.
 
-Different memories stored in the same neural population can interact with each other, building more retrieval schemes in which, for example, the retrieval of a memory cues the retrieval of another one. To investigate this possibility, we have incorporated in the model a mechanism for interaction between memories, in which the endpoint of a dynamical, one-dimensional manifold elicits the activation of the start point of a different one (see Appendix E). This results in the sequential retrieval of multiple memories, one after the other, as illustrated in Figure 7 (d). The top row shows the evolution in time of the overlaps mμ:(16)mμ⁢(t)=1N2⁢∑i,jKS⁢(xiμ-xjμ)⁢Vi⁢(t)⁢Vj⁢(t)
+Different memories stored in the same neural population can interact with each other, building more retrieval schemes in which, for example, the retrieval of a memory cues the retrieval of another one. To investigate this possibility, we have incorporated in the model a mechanism for interaction between memories, in which the endpoint of a dynamical, one-dimensional manifold elicits the activation of the start point of a different one (see Appendix E). This results in the sequential retrieval of multiple memories, one after the other, as illustrated in Figure 7 (d). The top row shows the evolution in time of the overlaps $m_{\mu}$:
 
-These order parameters quantify the coherence of the population activity V⁢(t) with each of the manifolds. Localized activity in manifold μ results in a large mμ, while a low mμ corresponds to an incoherent scattering of the activity. The network retrieves the manifolds in sequence, one at a time, following the instructed transitions encoded in its connectivity. The all-or-nothing behavior of the coherence parameters segments the continuous dynamics of the network into a sequence of discrete states.
+$$
+m_{\mu}⁢(t)=\frac{1}{N^{2}}⁢\sumi,jK_{S}⁢(x_{i}^{\mu}-x_{j}^{\mu})⁢V_{i}⁢(t)⁢V_{j}⁢(t)
+$$
 
-The bottom row shows the evolution of the retrieved position, given in each manifold by the center of mass:(17)<x>μ⁢(t)=1N⁢∑ixiμ⁢Vi⁢(t)
+These order parameters quantify the coherence of the population activity $V⁢(t)$ with each of the manifolds. Localized activity in manifold μ results in a large $m_{\mu}$, while a low $m_{\mu}$ corresponds to an incoherent scattering of the activity. The network retrieves the manifolds in sequence, one at a time, following the instructed transitions encoded in its connectivity. The all-or-nothing behavior of the coherence parameters segments the continuous dynamics of the network into a sequence of discrete states.
 
-The dynamic runs across the retrieved manifold, from its beginning to its end, then jumps to next one and repeats the process. Note that the position in each of the un-retrieved manifold fluctuates around L/2, as a consequence of the incoherence of the activity. Within each of the retrieved manifolds, the dynamic retains its continuous nature in the representation of the evolving position.
+The bottom row shows the evolution of the retrieved position, given in each manifold by the center of mass:
+
+$$
+<x>_{\mu}⁢(t)=\frac{1}{N}⁢\sumix_{i}^{\mu}⁢V_{i}⁢(t)
+$$
+
+The dynamic runs across the retrieved manifold, from its beginning to its end, then jumps to next one and repeats the process. Note that the position in each of the un-retrieved manifold fluctuates around $L/2$, as a consequence of the incoherence of the activity. Within each of the retrieved manifolds, the dynamic retains its continuous nature in the representation of the evolving position.
 
 This sequential dynamic goes beyond the simple cued retrieval of independent memories that is the focus of most autoassociative memory models, and provides an example of a hybrid computational system, encoding both continuous and discrete features.
 
 The interaction mechanism introduced here provides the opportunity to investigate the effect of more complex interactions than the simple memory chain presented here. We present here this first example as a proof of principle of the possibility of storing interacting dynamical memories, and will proceed to the investigation of more complex structures (e.g. interaction networks, probabilistic interactions, etc.) in future studies.
 
-## Storage capacity
+### Storage capacity
 
-The number of maps that can be stored and retrieved by an attractor network of this kind is typically proportional to the number of inputs per neuron C (Treves and Rolls, 1991). The memory load α=p/C crucially determines the behavior of the system: when α is increased above a certain threshold value αc, the network is not able to retrieve any of the stored memories, falling instead into a disordered state. Therefore it is the magnitude of αc, that is the storage capacity of the system, that determines how effectively it can operate as a memory. To estimate the storage capacity of dynamic continuous attractors, and to investigate how it is impacted by the presence of asymmetric connections, we proceed along two complementary paths.
+The number of maps that can be stored and retrieved by an attractor network of this kind is typically proportional to the number of inputs per neuron $C$ (Treves and Rolls, 1991). The memory load $\alpha=p/C$ crucially determines the behavior of the system: when α is increased above a certain threshold value $\alpha_{c}$, the network is not able to retrieve any of the stored memories, falling instead into a disordered state. Therefore it is the magnitude of $\alpha_{c}$, that is the storage capacity of the system, that determines how effectively it can operate as a memory. To estimate the storage capacity of dynamic continuous attractors, and to investigate how it is impacted by the presence of asymmetric connections, we proceed along two complementary paths.
 
-In the case a fully connected network, where the analytical tools developed for equilibrium systems are not applicable, we take advantage of the fact that numerical simulations can be effective for the estimation of the capacity, since the number of connections per neuron C (the relevant parameters in the definition of the storage capacity αc=p/C) coincides with the number of neurons, minus one. For a highly diluted system, on the other hand, the number of neurons is much larger than C, making the simulation of the system very difficult in practice. We then resort to an analytical formulation based on a signal-to-noise analysis (Battaglia and Treves, 1998), that exploits the vanishing correlations between inputs of different neurons in a highly diluted network, and does not require symmetry in the connectivity (Derrida et al., 1987). The quantification of the effect of loops in the dense connectivity regime, developed in Shiino and Fukai, 1992 and Roudi and Treves, 2004 for the case of static, discrete attractors, is beyond the scope of the present work and remains an interesting open direction.
+In the case a fully connected network, where the analytical tools developed for equilibrium systems are not applicable, we take advantage of the fact that numerical simulations can be effective for the estimation of the capacity, since the number of connections per neuron $C$ (the relevant parameters in the definition of the storage capacity $\alpha_{c}=p/C$) coincides with the number of neurons, minus one. For a highly diluted system, on the other hand, the number of neurons is much larger than $C$, making the simulation of the system very difficult in practice. We then resort to an analytical formulation based on a signal-to-noise analysis (Battaglia and Treves, 1998), that exploits the vanishing correlations between inputs of different neurons in a highly diluted network, and does not require symmetry in the connectivity (Derrida et al., 1987). The quantification of the effect of loops in the dense connectivity regime, developed in Shiino and Fukai, 1992 and Roudi and Treves, 2004 for the case of static, discrete attractors, is beyond the scope of the present work and remains an interesting open direction.
 
-In both the fully connected and the highly diluted case we study the dependence of the capacity on two important parameters: the map sparsity, that is the ratio between the width of the connectivity kernel (fixed to one without loss of generality) and the size L of the stored manifolds, and the asymmetry strength γ. Note that the map sparsity 1/L is different from the activity sparsity f: the former is a feature of the stored memories, that we will treat as a control parameter in the following analysis; the latter is a feature of the network dynamics, and its value will be fixed by an optimization procedure in the calculation of the maximal capacity.
+In both the fully connected and the highly diluted case we study the dependence of the capacity on two important parameters: the map sparsity, that is the ratio between the width of the connectivity kernel (fixed to one without loss of generality) and the size $L$ of the stored manifolds, and the asymmetry strength γ. Note that the map sparsity $1/L$ is different from the activity sparsity $f$: the former is a feature of the stored memories, that we will treat as a control parameter in the following analysis; the latter is a feature of the network dynamics, and its value will be fixed by an optimization procedure in the calculation of the maximal capacity.
 
-## Analytical calculation of the capacity in the highly diluted limit
+### Analytical calculation of the capacity in the highly diluted limit
 
-The signal-to-noise approach we follow, illustrated in details in Battaglia and Treves, 1998, involves writing the local field hi as the sum of two contributions: a signal term, due to the retrieved – ‘condensed’ – map, and a noise term consisting of the sum of the contributions of all the other, ‘uncondensed’ maps. In the diluted regime (C/N→0), these contributions are independent and can be summarized by a Gaussian term ρ⁢z, where z is a random variable with zero mean and unit variance. In the continuous limit, assuming without loss of generality that map μ=1 is retrieved, we can write:(18)h⁢(x1)=g⁢∫L𝑑x1⁣′⁢K⁢(x1-x1⁣′)⁢V⁢(x1⁣′)+ρ⁢z
+The signal-to-noise approach we follow, illustrated in details in Battaglia and Treves, 1998, involves writing the local field hi as the sum of two contributions: a signal term, due to the retrieved – ‘condensed’ – map, and a noise term consisting of the sum of the contributions of all the other, ‘uncondensed’ maps. In the diluted regime ($C/N→0$), these contributions are independent and can be summarized by a Gaussian term $ρ⁢z$, where $z$ is a random variable with zero mean and unit variance. In the continuous limit, assuming without loss of generality that map $\mu=1$ is retrieved, we can write:
 
-The noise will have variance:(19)ρ2=α⁢y⁢L2⁢⟨⟨K2⁢(x-x′)⟩⟩where L is the size of the map, ⟨⟨K2⁢(x-x′)⟩⟩ is the spatial variance of the kernel and(20)y=1N⁢∑iVi2is the average square activity.
+$$
+h⁢(x^{1})=g⁢\int_{L}𝑑x^{1⁣′}⁢K⁢(x^{1}-x^{1⁣′})⁢V⁢(x^{1⁣′})+ρ⁢z
+$$
 
-We can write the fixed point equation for the average activity profile m1⁢(x), incorporating the dynamic shift with an argument similar to the one made for the single map case:(21)m1⁢(x+Δ⁢x)=g⁢∫+D⁢z⁢(h⁢(x)-h0)where D⁢z=(e-z2/2/2⁢π)⁢d⁢z and ∫+f⁢(x)⁢𝑑x=∫f⁢(x)⁢θ⁢(x)⁢𝑑x. The average square activity y, entering the noise term, reads (22)y=g2L⁢∫𝑑x⁢∫+D⁢z⁢(h⁢(x)-h0)2
+The noise will have variance:
 
-Introducing the rescaled variables (23)w=-h0ρ(24)v⁢(x)=m1⁢(x)ρ
+$$
+ρ^{2}=\alpha⁢y⁢L^{2}⁢⟨⟨K^{2}⁢(x-x^{′})⟩⟩
+$$
 
-And the functions(25)𝒩⁢(x)=x⁢Φ⁢(x)+σ⁢(x)(26)ℳ⁢(x)=(1+x2)⁢Φ⁢(x)+x⁢σ⁢(x)where Φ⁢(x) and σ⁢(x) are the Gaussian cumulative and the Gaussian probability mass function respectively, we can rewrite the fixed-point equation as (27)v⁢(x+Δ⁢x)=g⁢𝒩⁢(∫𝑑x′⁢K⁢(x-x′)⁢v⁢(x′)+w)(28)y=ρ2⁢g2⁢∫d⁢xL⁢ℳ⁢(∫𝑑x′⁢K⁢(x-x′)⁢v⁢(x′)+w)
+where $L$ is the size of the map, $⟨⟨K^{2}⁢(x-x^{′})⟩⟩$ is the spatial variance of the kernel and
 
-Substituting Equation 28 in the expression for the noise variance 19 we obtain(29)1α=g2⁢L⁢⟨⟨K2⟩⟩⁢∫𝑑x⁢ℳ⁢(∫𝑑x′⁢K⁢(x-x′)⁢v⁢(x′)+w)
+$$
+y=\frac{1}{N}⁢\sumiV_{i}^{2}
+$$
 
-If we are able to solve Equation 27 for the rescaled activity profile v⁢(x), we can use Equation 29 to calculate α. We can then maximize α with respect to g and w: this yields the maximal value αc for which retrieval solutions can be found.
+is the average square activity.
 
-These equations are valid in general and have to be solved numerically. Here we present the results for the case of one-dimensional manifolds and interactions given by the exponential kernel of Equation 36. In this case, we have(30)⟨⟨K2⁢(x-x′)⟩⟩=(1+γ2)⁢⟨⟨KS2⁢(x-x′)⟩⟩.where KS⁢(x-x′)=e-|x-x′| is the symmetric component of the kernel. A simple approximation, illustrated in appendix F along with the detailed solution procedure, allows to decouple the dependence of αc on γ and L, with the former given by the spatial variance given by Equation 30 and the latter by the solution of Equations 27 and 29 in the γ=0 case. We therefore have:(31)αc⁢(L,γ)∼αc⁢(L,0)/(1+γ2)
+We can write the fixed point equation for the average activity profile $m^{1}⁢(x)$, incorporating the dynamic shift with an argument similar to the one made for the single map case:
 
-The storage capacity is plotted in Figure 8(a) as a function of γ and L.
+$$
+m^{1}⁢(x+Δ⁢x)=g⁢\int^{+}D⁢z⁢(h⁢(x)-h_{0})
+$$
+
+where $D⁢z=(e^{-z^{2}/2}/\sqrt{2⁢\pi})⁢d⁢z$ and $\int^{+}f⁢(x)⁢𝑑x=\intf⁢(x)⁢\theta⁢(x)⁢𝑑x$. The average square activity $y$, entering the noise term, reads 
+
+$$
+y=\frac{g^{2}}{L}⁢\int𝑑x⁢\int^{+}D⁢z⁢(h⁢(x)-h_{0})^{2}
+$$
+
+Introducing the rescaled variables 
+
+$$
+w=\frac{-h_{0}}{ρ}
+$$
+
+
+
+$$
+v⁢(x)=\frac{m^{1}⁢(x)}{ρ}
+$$
+
+And the functions
+
+$$
+𝒩⁢(x)=x⁢Φ⁢(x)+\sigma⁢(x)
+$$
+
+
+
+$$
+ℳ⁢(x)=(1+x^{2})⁢Φ⁢(x)+x⁢\sigma⁢(x)
+$$
+
+where $Φ⁢(x)$ and $\sigma⁢(x)$ are the Gaussian cumulative and the Gaussian probability mass function respectively, we can rewrite the fixed-point equation as 
+
+$$
+v⁢(x+Δ⁢x)=g⁢𝒩⁢(\int𝑑x^{′}⁢K⁢(x-x^{′})⁢v⁢(x^{′})+w)
+$$
+
+
+
+$$
+y=ρ^{2}⁢g^{2}⁢\int\frac{d⁢x}{L}⁢ℳ⁢(\int𝑑x^{′}⁢K⁢(x-x^{′})⁢v⁢(x^{′})+w)
+$$
+
+Substituting Equation 28 in the expression for the noise variance 19 we obtain
+
+$$
+\frac{1}{\alpha}=g^{2}⁢L⁢⟨⟨K^{2}⟩⟩⁢\int𝑑x⁢ℳ⁢(\int𝑑x^{′}⁢K⁢(x-x^{′})⁢v⁢(x^{′})+w)
+$$
+
+If we are able to solve Equation 27 for the rescaled activity profile $v⁢(x)$, we can use Equation 29 to calculate α. We can then maximize α with respect to $g$ and $w$: this yields the maximal value $\alpha_{c}$ for which retrieval solutions can be found.
+
+These equations are valid in general and have to be solved numerically. Here we present the results for the case of one-dimensional manifolds and interactions given by the exponential kernel of Equation 36. In this case, we have
+
+$$
+⟨⟨K^{2}⁢(x-x^{′})⟩⟩=(1+\gamma^{2})⁢⟨⟨K_{S}^{2}⁢(x-x^{′})⟩⟩.
+$$
+
+where $K_{S}⁢(x-x^{′})=e^{-|x-x^{′}|}$ is the symmetric component of the kernel. A simple approximation, illustrated in appendix F along with the detailed solution procedure, allows to decouple the dependence of $\alpha_{c}$ on γ and $L$, with the former given by the spatial variance given by Equation 30 and the latter by the solution of Equations 27 and 29 in the $\gamma=0$ case. We therefore have:
+
+$$
+\alpha_{c}⁢(L,\gamma)∼\alpha_{c}⁢(L,0)/(1+\gamma^{2})
+$$
+
+The storage capacity is plotted in Figure 8(a) as a function of γ and $L$.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/69499/elife-69499-fig8-v1.jpg)
 
-**Figure 8.:** (a) Storage capacity of a diluted network: dependence on γ and  (represented as 1/L). (l⁢o⁢g10⁢(1/L)b) Storage capacity of a fully connected network: non monotonic dependence of the capacity on γ. Retrieval / no retrieval phase transition for different values of γ, obtained from simulations with , N=1000 and NS=10, for 1D manifolds. Error bars show the standard error of the observed proportion of successful retrievals. The non-monotonic dependence of the capacity from γ can be appreciated here: the transition point moves toward the right with increasing γ up to L=10, then back to the left. (γ∼1c) Storage capacity of a fully connected network as a function of map sparsity  and asymmetry strength γ, for a one-dimensional and a two-dimensional dynamic continuous attractor.1/L
+**Figure 8.:** (a) Storage capacity of a diluted network: dependence on γ and $1/L$ (represented as $l⁢o⁢g_{10}⁢(1/L)$). (b) Storage capacity of a fully connected network: non monotonic dependence of the capacity on γ. Retrieval / no retrieval phase transition for different values of γ, obtained from simulations with $N=1000$, $N_{S}=10$ and $L=10$, for 1D manifolds. Error bars show the standard error of the observed proportion of successful retrievals. The non-monotonic dependence of the capacity from γ can be appreciated here: the transition point moves toward the right with increasing γ up to $\gamma∼1$, then back to the left. (c) Storage capacity of a fully connected network as a function of map sparsity $1/L$ and asymmetry strength γ, for a one-dimensional and a two-dimensional dynamic continuous attractor.
 
-For sparse maps and small values of the asymmetry, the capacity scales as(32)αc∼-1ln⁡(1/L)⁢(1+γ2)
+For sparse maps and small values of the asymmetry, the capacity scales as
 
-The scaling with 1/L is the same found by Battaglia and Treves, 1998 in the analysis of the symmetric case, as expected: for γ=0 the two models are equivalent.
+$$
+\alpha_{c}∼-\frac{1}{ln⁡(1/L)⁢(1+\gamma^{2})}
+$$
+
+The scaling with $1/L$ is the same found by Battaglia and Treves, 1998 in the analysis of the symmetric case, as expected: for $\gamma=0$ the two models are equivalent.
 
 The presence of asymmetry decreases the capacity, but does not have a catastrophic effect: the decrease is continuous and scales with a power of γ. There is therefore a wide range of values of asymmetry and map sparsity in which a large number of dynamic manifolds can be stored and retrieved.
 
-## Numerical estimation of the capacity for a fully connected network
+### Numerical estimation of the capacity for a fully connected network
 
-To estimate the storage capacity for a fully connected network, we proceed with numerical simulations. For a network of fixed size N, and for given γ, L and number of maps p, we run a number of simulations NS, letting the network evolve from a random initial configuration. We consider a simulation to have performed a successful retrieval if the global overlap (33)mμ=1N2⁢∑i≠jVi⁢Vj⁢KS⁢(xiμ-xjμ)that quantifies the coherence of the activity with map μ, is large for one map μ* (at least 95% of the overlap value obtained in the case of a single map) and low in all others maps μ≠μ*. We then define the retrieval probability as pr=NR/NS, where NR is the number of observed retrievals.
+To estimate the storage capacity for a fully connected network, we proceed with numerical simulations. For a network of fixed size $N$, and for given γ, $L$ and number of maps $p$, we run a number of simulations $N_{S}$, letting the network evolve from a random initial configuration. We consider a simulation to have performed a successful retrieval if the global overlap 
 
-We repeat the process varying the storage load, that is the number of stored manifolds p. As p is increased, the system reaches a transition point, at which the retrieval probability rapidly goes to zero. This transition is illustrated, for various values of γ, in Figure 8(b).
+$$
+m^{\mu}=\frac{1}{N^{2}}⁢\sumi\neqjV_{i}⁢V_{j}⁢K_{S}⁢(x_{i}^{\mu}-x_{j}^{\mu})
+$$
 
-The number of maps pc at which the probability reaches zero defines the storage capacity αc⁢(γ,L)=pc⁢(γ,L)/N. Repeating this procedure for a range of values of γ and L, we obtain the plots shown in Figure 8(c), for networks encoding one dimensional and two dimensional dynamical memories.
+that quantifies the coherence of the activity with map μ, is large for one map $\mu^{*}$ (at least 95% of the overlap value obtained in the case of a single map) and low in all others maps $\mu\neq\mu*$. We then define the retrieval probability as $p_{r}=N_{R}/N_{S}$, where $N_{R}$ is the number of observed retrievals.
 
-The first thing that can be noticed is that the network can store a large number of maps in the fully connected case as well, for a wide range of γ and L. A network with size in the order of ten thousand neurons could store from tens up to hundreds of dynamical memories.
+We repeat the process varying the storage load, that is the number of stored manifolds $p$. As $p$ is increased, the system reaches a transition point, at which the retrieval probability rapidly goes to zero. This transition is illustrated, for various values of γ, in Figure 8(b).
+
+The number of maps pc at which the probability reaches zero defines the storage capacity $\alpha_{c}⁢(\gamma,L)=p_{c}⁢(\gamma,L)/N$. Repeating this procedure for a range of values of γ and $L$, we obtain the plots shown in Figure 8(c), for networks encoding one dimensional and two dimensional dynamical memories.
+
+The first thing that can be noticed is that the network can store a large number of maps in the fully connected case as well, for a wide range of γ and $L$. A network with size in the order of ten thousand neurons could store from tens up to hundreds of dynamical memories.
 
 The capacity for one dimensional attractors is higher than the one for their two dimensional counterparts. This is in line with what was found for symmetric networks (Battaglia and Treves, 1998).
 

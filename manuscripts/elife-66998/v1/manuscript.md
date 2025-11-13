@@ -24,6 +24,18 @@ Organoids derived from pluripotent stem cells promise the solution to current ch
 
 Organ development is a complex process of orchestrated events of tissue specification, morphogenesis, and differentiation in specialized cell types. In vertebrates, retinal development is initiated during early neurulation, when the eye field is specified by the coordinated expression of eye field transcription factors Rx, Lhx2, Pax6, Six3, and Otx2 within the region of the anterior neural plate (Li et al., 1997; Loosli et al., 1999; Zuber et al., 2003). The first morphogenetic sign of retinal development is the formation of the optic vesicle (OV) that evaginates from the wall of the developing diencephalon (Figure 1a, 0–1 day post-fertilization [dpf]). Although the molecular mechanism of OV formation is not completely understood, studies performed in different vertebrate models indicate that the retinal-specific homeodomain transcription factor Rx is involved in this process (Loosli et al., 2003; Mathers et al., 1997; Medina-Martinez et al., 2009; Rembold et al., 2006; Stigloher et al., 2006). As one of the earliest genes indicative for the retinal lineage, Rx is expressed in the anterior neural plate and later in the neuroepithelium of the OV. In Rx3-null mutants of several vertebrate species, the OV fails to evaginate (Bailey et al., 2004; Loosli et al., 2003; Mathers et al., 1997; Voronina, 2003). Additionally, Rx3-deficient cells are excluded from OV domains in fish (Loosli et al., 2003) and embryonic mouse chimeras (Medina-Martinez et al., 2009), demonstrating the crucial role of Rx3 in early retina development and morphogenesis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig1-v1.jpg)
+
+**Figure 1.:** (a) Scheme representing stages and timing of the medaka fish retinal development. The retinal domain is indicated in green. Establishment of the eye field within the anterior neural plate is followed by the formation of optic vesicles at 1 day post-fertilization (dpf). Optic vesicle evagination is followed by the morphogenesis of a bi-layered optic cup formed by retina surrounded by retinal pigmented epithelium (RPE) and subsequent onset of retinal differentiation at 2 dpf. By 4 dpf, the major retinal cell types – retinal ganglion cells (yellow), amacrine cells (orange), bipolar cells (red), horizontal cells (cyan), and photoreceptor cells (blue) – are generated. (b) Schematic representation of aggregate generation, its timeline and culture conditions. At day 0, primary pluripotent cells were harvested from blastula-stage medaka embryos and re-aggregated in low binding U-shape 96-well plates. At day 1, the culture media was supplemented with Matrigel. At day 2, the aggregates were transferred to a low binding culture plate and maintained in 3D suspension culture conditions in DMEM/F12 media supplemented with 5% FBS, 5% FEE, and N2 supplement. The gross morphology of the aggregates was analyzed at days 1, 2, and 3. KSR, knockout serum replacement; FBS, fetal bovine serum; FEE, fish embryonic extract. (c) Dark-field images of a blastula-stage embryo, a blastula-derived cell suspension, and re-aggregated cells and the gross morphology of aggregates at days 1, 2, and 3 after re-aggregation. (d) Optical section showing aggregate organization at day 2 visualized by immunostaining against neuroepithelium-specific markers, N-cadherin (Ncad), and acetylated tubulin (AcTub), co-stained with DAPI nuclear stain. Scale bars: 100 and 50 μm (enlargement in (d)).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Bright-field images of day 1 aggregates derived from early morula (64–128 cells), late morula (256–512 cells), and early blastula (1000 cells). Scale bar: 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Virtual planes of four day 2 aggregates, stained with N-cadherin (Ncad) and DRAQ5 nuclear stain, showing the interior cellular composition using SPIM imaging. Scale bar: 100 μm.
+
 Soon after evagination, two major domains are being specified within the OV (Figure 1a, 2 dpf). The distal/ventral region expresses retina-specific genes, marking prospective retinal territory, while the dorsal/outer region expresses the transcription factor Otx2, marking prospective retinal pigmented epithelium (RPE) territory (Bovolenta et al., 1997; Fuhrmann, 2010; Hatakeyama et al., 2001; Hirashima et al., 2008). Following a precisely coordinated morphogenesis (Heermann et al., 2015), the OV further forms the two-layered optic cup: the outer layer giving rise to the RPE and the inner layer forming retina populated with mitotically active retinal progenitor cells (reviewed by Casey et al., 2021; Chow and Lang, 2001; Fuhrmann, 2010). Soon after optic cup formation, retinal progenitor cells start to differentiate into seven retinal cell types that together form the structure of the adult retina: retinal ganglion cells, amacrine cells, bipolar cells, Müller glia cells, horizontal cells, and (rod, cone) photoreceptors (Young, 1985; Figure 1a, 4 dpf).
 
 Although many aspects of retinal development are known, its mechanistic analysis in vivo is challenging due to the complex environment of an embryo, including signals from the surrounding tissues. Taking advantage of cell assembly into various organ-like structures, in vitro systems provide a unique opportunity to study the basic principles of organ formation. Already in the 1940s, experiments in amphibians showed that early embryonic tissues can assemble to form neuronal tissues when cultured under specific conditions (Simian and Bissell, 2017). Animal cap ectoderm of Ambystoma maculatum salamander embryos was shown to differentiate into forebrain and occasionally retinal tissues in the absence of inductive signals, when cultured in a simple saline solution (Barth, 1941; Holtfreter, 1944; Hurtado and De Robertis, 2007). More recently, mouse and human embryonic stem (ES) cells have been shown to form retinal tissue when aggregated and cultured under 3D suspension culture conditions (Eiraku et al., 2011; Kuwahara et al., 2015; Nakano et al., 2012). However, so far, the organoid field has been restricted to mammalian species, leaving the ability of ES cells derived from different species to assemble in retinal tissue unresolved.
@@ -34,17 +46,49 @@ Here, we demonstrate that primary embryonic pluripotent cells derived from medak
 
 ## Results
 
-## Generation of fish primary embryonic pluripotent cell-derived aggregates
+### Generation of fish primary embryonic pluripotent cell-derived aggregates
 
 Here, we used primary embryonic pluripotent cells derived from blastula-stage embryos of medaka (Oryzias latipes) as a source of pluripotent cells and established the conditions to generate the anterior neural structures, particularly retinal tissue. Previous studies performed with mouse and human ES cell aggregates have shown that low serum concentration in combination with 3D suspension culture support retinal specification and differentiation. In particular, the addition of extracellular matrix components such as laminin-rich Matrigel promotes retinal formation (Eiraku et al., 2011; Nakano et al., 2012). We dissociated blastula-stage embryos and used U-shaped low adhesive wells to re-aggregate 1000–2000 cells in basic media supplemented with 5% KSR (knockout serum replacement) (Figure 1b,c). The aggregation and compaction of cells was highly efficient (100%; n = ~1500 from 54 independent experiments) and resulted in a smooth and compacted morphology by day 1 (Figure 1c; Video 1). The potential of blastomeres to form aggregates was restricted to the blastula stage (1000–2000 cells) and cells derived from earlier developmental stages such as early and late morula failed to form stable aggregates or aggregated only partially (Figure 1—figure supplement 1). Thus, the exact time point of cell dissociation plays a decisive role for the success and efficiency of aggregation.
 
+![Video 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse imaging of medaka-derived blastula cells going through the process of aggregation and compaction. Imaging was performed with 30 min intervals on all aggregates (n = 30) in the batch. Scale bar: 100 μm.
+
 After 1 day of culture, media were supplemented with 2% Matrigel (Figure 1b). The aggregates then formed an organized and layered epithelium surrounding the aggregate from day 2 onward (Figure 1c) and the cells of the peripheral layer expressed neuroepithelial markers, for example, N-cadherin and acetylated tubulin, indicating that cells adopted neuroepithelial identity (Figure 1d, Figure 1—figure supplement 2). 3D imaging of aggregates at day 2 revealed a complex internal morphology, consisting of lumens and cells of neuroepithelial identity (Figure 1—figure supplement 2). Based on the higher order epithelial organization, we call the aggregates from day 2 on organoids.
 
-## Fish-derived organoids form retinal neuroepithelium under the control of Rx3
+### Fish-derived organoids form retinal neuroepithelium under the control of Rx3
 
 Retinal specification in vertebrates is governed by the action of retina-specific transcription factors such as Rx, Pax6, Six3, Sox2, Six6, and Lhx2 within the anterior neural plate (Li et al., 1997; Loosli et al., 1999; Zuber et al., 2003) and the formation of the OV neuroepithelium (Chow and Lang, 2001; Fuhrmann, 2010; Martinez-Morales et al., 2017). Rx genes, in teleosts represented by three paralogous genes (Rx1, Rx2, and Rx3), are the earliest genes expressed by the retinal lineage (Chuang et al., 1999; Deschet et al., 1999; Loosli et al., 2003; Loosli et al., 2001). To analyze the efficiency of retinal fate acquisition, we monitored the earliest expressed Rx paralogue, Rx3, and employed a transgenic reporter line (Rx3::H2B-GFP) in which nuclear GFP is expressed under the control of the Rx3 regulatory elements (Figure 2a,b; Rembold et al., 2006). Rx3::H2B-GFP drives the expression of H2B-GFP already in the anterior neural plate and is subsequently found in the neuroepithelium of the OV and prospective forebrain of fish embryos 1 dpf (Figure 2a). We addressed the onset of GFP expression in Rx3::H2B-GFP aggregates by time-lapse imaging over a time span of 18 hr post-aggregation (hpa) and compared it to corresponding Rx3::H2B-GFP embryos for reference (Figure 2c,d; Video 2). All aggregates started expressing GFP at 15.5 ± 0.36 hpa (n = 17) with GFP expression in control Rx3::H2B-GFP embryos starting at 13.5 ± 1.03 hr (n = 6) after the blastula stage (Figure 2c), corresponding to the onset of Rx3 expression at around 20 hrs post-fertilization (hpf) (Loosli et al., 2001). In comparison to the embryo, the organoids showed a delay of GFP expression of approximately 2–3 hr which corresponds to the time of re-aggregation (Video 1). This data shows that following our protocol, the re-aggregation of primary embryonic pluripotent cells results in an efficient acquisition of retinal fate.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig2-v1.jpg)
+
+**Figure 2.:** (a) Schematic representation of the Rx3::H2B-GFP transgenic construct and the corresponding expression domain of GFP in the optic vesicles of a developing medaka embryo at 1 dpf. (b) Scheme of organoid generation from Rx3::H2B-GFP transgenic fish. (c) Bright-field and fluorescence images of aggregates derived from Rx3::H2B-GFP transgenic fish at 0.5, 6, and 16 hpa. (d) Analysis of the onset of GFP expression in Rx3::H2B-GFP-derived fish embryos (n = 6) and organoids (n = 17). ***p<0.001. (e) Optical sections of day 1 (before the addition of Matrigel) and day 2 organoids derived from Rx3::H2B-GFP transgenic fish stained with antibodies against N-cadherin (Ncad) and GFP, co-stained with DAPI nuclear stain. (f) Generation of Rx3KO (Rx3saGFP) line – schematic representation of the Rx3 locus with integrated saGFP-OPT cassette. An open reading frame-adjusted gene trap cassette comprising a splice acceptor and a GFP sequence (saGFP) followed by a polyA and a strong terminator sequence derived from the ocean pout (OPT; STOP) were inserted into the Rx3 locus. (g) Scheme of organoid generation from Rx3-deficient single blastulae. (h) Bright-field and fluorescence images of phenotypes of Rx3saGFP/+(Rx3 +/- heterozygote) and Rx3saGFP/saGFP (Rx3 -/- homozygote) mutants at 1 dpf and corresponding organoids at day 2. dpf, days post-fertilization; hpa, hours post-aggregation; hpf, hours post-fertilization; wt, wild type. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic representation of primary embryonic pluripotent cell culture. Blastula-stage embryos were dissociated and cultured either under rocking suspension culture condition or as individual cells in wells of 96-well plates. (b) Overlay of bright-field and fluorescence images of cells derived from Rx3::H2B-GFP transgenic fish and cultured for 24 hr under rocking suspension culture conditions. Magnification shows three individual clusters of cells. Dashed line outlines the borders of an individual cluster. (c) Overlay of bright-field and fluorescence images of cells derived from Rx3::H2B-GFP transgenic fish cultured individually in wells of 96-well plates at time 0.5 hr (just about 30 min after dissociation and seeding) and 19 hr of the culture. Scale bars: 100 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Bright-field and fluorescence images of day 2 organoids derived from Rx3::H2B-GFP transgenic fish incubated with and without Matrigel from day 1 to day 2. Membrane stain (CellMask) shows the organization of the neuroepithelium. Scale bars: 100 and 50 μm (enlargement in detail of neuroepithelium).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Optical sections of embryonic heads (upper panel) and organoids (lower panel) stained with antibodies showing expression of Rx2, Sox2, and Lhx2 co-stained with DAPI nuclear stain. Dashed lines indicate optic vesicles in an embryo or neuroepithelium in an organoid. dpf, days post-fertilization. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Bright-field images of fish embryos 4 dpf showing the phenotypical consequence of cassette integration in the Rx3 locus. dpf, days post-fertilization. Scale bar: 100 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-video2.mp4.jpg)
+
+**Video 2.:** Time-lapse imaging of Rx3::H2B-GFP medaka-derived blastula cells going through the process of aggregation, compaction, and acquisition of retinal fate (GFP expression). Imaging was performed with 30 min intervals on all aggregates (n = 54). Scale bar: 100 μm.
+
 To address whether cell aggregation is a prerequisite for retinal specification or, alternatively, cells can acquire retinal fate autonomously, we followed the onset of Rx3 expression in individual blastula-stage cells. Rx3::H2B-GFP-derived primary embryonic pluripotent cells were cultured under suspension culture condition, that is, gentle rocking to prevent cell aggregation and analyzed for GFP expression 24 hr later (Figure 2—figure supplement 1a,b). Under those conditions, cells formed GFP-expressing clusters, indicating that cells acquired retinal fate even without aggregation. To further refine the analysis and address whether isolated single primary embryonic pluripotent cells give rise to GFP-expressing clusters, cells were cultured individually in the 96-well plate and imaged over time (Figure 2—figure supplement 1a,c; Video 3).
+
+![Video 3.](https://cdn.elifesciences.org/articles/66998/elife-66998-video3.mp4.jpg)
+
+**Video 3.:** Time-lapse imaging of medaka-derived blastula cells derived from Rx3::H2B-GFP transgenic fish. Imaging was performed with 30 min intervals. Scale bar: 100 μm.
 
 Also under those conditions, individual cells gave rise to GFP-expressing clones, showing that cells acquire retinal fate autonomously. Similar to GFP expression in aggregated primary embryonic pluripotent cells (Figure 2c,d; Video 2), single cell-derived clones started to express GFP at about 16 hr (Video 3), indicating that the onset of retinal fate is genetically timed and independent of cellular environment.
 
@@ -62,13 +106,29 @@ We next asked whether the spontaneous acquisition of retinal fate is generally a
 
 Zebrafish cells aggregated as efficiently as medaka cells and displayed an epithelial organization already by day 1 (Figure 3b). Considering the faster early development of zebrafish compared to medaka (Iwamatsu, 2004; Kimmel et al., 1995), we asked whether the difference in embryonic development impacts on the re-aggregation and subsequent differentiation of aggregates. We performed time-lapse imaging in zebrafish aggregates over 18 hpa and addressed the onset of retinal differentiation by Rx3-driven GFP expression. Aggregates generated from zebrafish embryos formed organoids that started expressing GFP at 9.75 ± 0.21 hpa (n = 15). As in medaka, the onset of Rx3 expression in the forming organoids was delayed by 2–3 hr in comparison to the corresponding Rx3::H2B-GFP reporter embryos (Figure 3c; Video 4) that started to express GFP at 7.88 ± 0.77 hr (n = 6) after the blastula stage. The cells followed their endogenous program consistently and were only delayed by the dissociation/aggregation procedure. Thus, the formation of a neuroepithelium in aggregates reflects the species-specific difference in the relative pace of development.
 
+![Video 4.](https://cdn.elifesciences.org/articles/66998/elife-66998-video4.mp4.jpg)
+
+**Video 4.:** Time-lapse imaging of Rx3::H2B-GFP zebrafish-derived blastula cells going through the process of aggregation, compaction, and acquisition of retinal fate (GFP expression). Imaging was performed with 30 min intervals. Scale bar: 100 μm.
+
 Rx3 reporters for retina formation (Rx3::H2B-GFP) displayed H2B-GFP expression in the developing retina at 1 dpf and aggregates formed organoids showing retinal identity as indicated by Rx3 expression in the outer cellular layer (Figure 3d) by day 1. This data shows that under the established conditions, fish primary embryonic pluripotent cells are guided to differentiate into a retinal neuroepithelium – a feature found over a wide evolutionary distant medaka and zebrafish, indicating a deep conservation of early retinal development irrespective of the embryonic environment.
 
-## Fish organoids form OV-like structures
+### Fish organoids form OV-like structures
 
 Since primary embryonic pluripotent cells from both, medaka and zebrafish, efficiently form retinal organoids, we subsequently focused our experiments on one organism – medaka.
 
 Development of a functional retina is accompanied by several morphological transitions that ultimately result in the formation of a functional retina. One of them is the formation of the OV. When organoids were generated by the aggregation of 1000–2000 cells (referred to as >1000 cells), the approximate number of cells in a single blastula, OV formation was not favored (Figure 4a) and instead these organoids formed a continuous neuroepithelium on their entire surface. This neuroepithelium expressed retina-specific markers (Rx2 and Rx3::H2B-GFP) all around the surface of organoid (Figure 4a–b) indicating the formation of a single retinal anlage. It has been previously reported that in some in vitro self-organizing systems, the number of interacting cells can generate a bias toward particular morphological processes (van den Brink et al., 2014; Fulton et al., 2020; Völkner et al., 2016). Thus, we reduced the cell-seeding density by 50%. Interestingly, those organoids (‘small organoids’, generated by the aggregation of <1000 cells) reproducibly displayed expression of Rx2 and Rx3 only in restricted regions (Figure 4a,b) reminiscent of the forming OV in vivo. While organoids generated by aggregation of >1000 cells established a single, uniform, domain of retinal neuroepithelium (n = 35/35), small organoids displayed a more complex and variable morphology, forming one to four isolated OV-like retinal domains (n = 92/123 one domain, n = 27/123 two domains, n = 3/123 three domains, and n = 1/123 four domains) (Figure 4c, Figure 4—figure supplements 1 and 2). The size of these isolated retinal domains in small organoids (154.5 ± 28.6 μm; n = 56) was reminiscent of the OVs in embryos at 1 dpf (162 ± 10.6 μm; n = 16) (Figure 4d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig4-v1.jpg)
+
+**Figure 4.:** (a) Fluorescence and bright-field images of day 2 organoids produced by aggregation of >1000 cells and <1000 cells stained with anti-Rx2 antibody. (b) Analysis of the area of Rx2 (wild-type organoids stained with anti-Rx2 antibody) and Rx3 (Rx3::H2B-GFP-derived organoids stained with anti-GFP antibody) expression area (% of total organoid area) in day 2 organoids. ****p<0.0001. (c) Number of organoids forming (1–4) individual retinal regions produced by aggregation of >1000 (n = 26 for Rx2, n = 9 for Rx3) and <1000 (n = 57 for Rx2, n = 66 for Rx3) cells from nine independent experiments. (d) Size, measured as largest circumference, of the optic vesicle of 1 dpf embryos and optic vesicle-like structures formed by day 2 organoids (n = 16 embryos, n = 56 aggregates from six independent experiments). ns, non-significant. (e) Bright-field and fluorescent images of day 2 Rx3::H2B-GFP organoids stained with anti-GFP antibody. Optical sections of an organoid (day 2) (n = 9/10) and an embryo (1 dpf) stained with anti-Rx2 and anti-Otx2 antibodies. (f) Maximal projection of day 2 organoids and 1 dpf embryo generated from Rx3::H2B-GFP transgenic or wild-type blastulae and stained with neural tissue-specific anti-Sox2 (n = 12/12) and anti-Otx2 (n = 10/10) antibodies, co-stained with anti-Rx2 and DAPI nuclear stain. hpa, hours post-aggregation; dpf, days post-fertilization. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Overlay of fluorescence and bright-field images of retinal organoids on day 2 generated from the Rx3::H2B-GFP reporter line formed by aggregation of <1000 primary embryonic pluripotent cells stained with anti-GFP antibody. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Fluorescence images, bright-field images, and their overlay of retinal organoids on day 2 generated from the Rx3::H2B-GFP reporter line formed by aggregation of <1000 primary embryonic pluripotent cells stained with anti-GFP antibody. Scale bar: 100 μm.
 
 Interestingly, retinal domains formed in small organoids displayed OV-like morphology with specifically localized expression of Rx2 and Otx2 transcription factors, marking prospective retinal and RPE territories respectively (Figure 4e) and indicating further compartmentalization of the organoid-derived OV.
 
@@ -80,11 +140,39 @@ To address the mode of OV formation in fish organoids, we employed live imaging 
 
 **Figure 5.:** (a) In vivo time-lapse images acquired with MuVi SPIM of optic vesicle-like structure evagination in Rx3::H2B-GFP retinal organoids. From top to bottom: maximal projection of quasi bright field, GFP, and tracks of exemplary cells. (b) Normalized velocity autocorrelation for all tracks (n = 4600; from two optic vesicles of one organoid). (c) Directional histogram of tracks (n = 4600; from two optic vesicles of one organoid) separated for inward and outward movements. hpa, hours post-aggregation; dpf, days post-fertilization. Scale bar: 100 μm.
 
+![Video 5.](https://cdn.elifesciences.org/articles/66998/elife-66998-video5.mp4.jpg)
+
+**Video 5.:** Time-lapse imaging of optic vesicle-like structure evagination in the medaka Rx3::H2B-GFP retinal organoid. Maximal projection of quasi bright field, GFP, and tracks of exemplary cells. Imaging was performed with 15 min intervals. Scale bar: 100 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/66998/elife-66998-video6.mp4.jpg)
+
+**Video 6.:** Time-lapse imaging of optic vesicle-like structure evagination in medaka Rx3::H2B-GFP retinal organoids. Maximal projection of GFP and tracks of exemplary cells. Imaging was performed with 15 min intervals. Scale bar: 100 μm.
+
 It is worth mentioning that the organization of retina-committed cells into the OV neuroepithelium is strictly dependent on the presence of extracellular matrix proteins as Rx3-expressing cells attempt but fail to form OV structures in the absence of Matrigel (Video 7). Consistently, laminin-1 (the main component of the Matrigel) is highly enriched specifically at the basal surface of the forming OV and has been reported to play an essential role in cell polarization and maintenance of neuroepithelial cell morphology during OV evagination (Ivanovitch et al., 2013).
 
-## Fish organoids show onset of retinal differentiation
+![Video 7.](https://cdn.elifesciences.org/articles/66998/elife-66998-video7.mp4.jpg)
+
+**Video 7.:** Time-lapse imaging of optic vesicle-like structure evagination in medaka Rx3::H2B-GFP retinal organoids in presence or absence of Matrigel (extracellular matrix component) shown as maximal projection of GFP and bright field. Imaging was performed with 30 min intervals. Scale bar: 100 μm.
+
+### Fish organoids show onset of retinal differentiation
 
 Retinal specification is followed by the process of differentiation which leads to the generation of seven retinal cell types (retinal ganglion cells, amacrine cells, horizontal cells, bipolar cells, rod and cone photoreceptors, and Müller glia cells) organized in three nuclear layers. One of the first hallmarks of retinal differentiation is the expression of the transcription factor Atoh7 (Brown et al., 1998; Del Bene et al., 2007; Kay et al., 2001). Atoh7-positive progenitors have been found to give rise to retinal ganglion cells, amacrine cells, horizontal and photoreceptor cells during fish retinal development (Poggi et al., 2005). We monitored Atoh7 expression in medaka-derived retinal organoids, using an Atoh7::EGFP transgenic line (Del Bene et al., 2007; Figure 6a–c). In embryos, EGFP expression was located specifically in the differentiating retina at 2 dpf (Figure 6c). Day 3 organoids generated from Atoh7::GFP blastulae (generated by the aggregation of <1000 cells) showed specific morphology with EGFP-negative non-retinal and EGFP-expressing retinal domains (Figure 6b; Video 8), indicating that the retinal differentiation program was successfully initiated. Furthermore, non-retinal regions proceeded through the process of neuronal differentiation as indicated by expression of HuC/D (Figure 6c; Video 8), a marker of early post-mitotic neurons (Good, 1995; Kim et al., 1996; Park et al., 2000).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig6-v1.jpg)
+
+**Figure 6.:** (a) Scheme of organoid generation from Atoh7::EGFP transgenic fish. (b) Fluorescent images of day 3 Atoh7::EGFP organoids (generated by aggregation of <1000 cells). (c) Optical sections and maximal projections showing EGFP expression in the eye of the developing embryo at 2 dpf and the retinal organoid at day 3 co-stained with antibody against HuC/D and DAPI. (d) Optical sections showing expression of HuC/D (amacrine and ganglion cells), Otx2 (bipolar and photoreceptor cells), and Prox1 (horizontal cells) in day 4 organoid. (e) Sketch of the arrangement of cellular layers in the organoid and the embryonic retina. dpf, days post-fertilization. Scale bar: 100 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Scheme of organoid generation from Atoh7::EGFP transgenic fish. (b) Bright-field and fluorescent images of day 3 Atoh7::EGFP organoids. (c) Optical sections of day 4 Atoh7::EGFP organoids co-stained with antibodies against HuC/D (amacrine and ganglion cells), Otx2 (bipolar and photoreceptor cells), and Prox1 (horizontal cells). Dashed lines indicate the retinal domain. Scale bar: 100 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66998/elife-66998-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Schematic representation of CHIR-99021 treatment. Day 1 aggregates were washed and incubated with Matrigel for 6 hr. Organoids were washed and incubated in media containing 5 μM CHIR-99021 or DMSO. (b) DMSO- and CHIR-99021-treated day 2 organoids and medaka embryonic eye (42 hr post-fertilization [hpf]) showing expression of retina- and RPE-specific transcription factors Rx2 and Otx2, respectively. (c) DMSO- (n = 6/6) and CHIR-99021-treated (n = 13/13) day 4 organoids, including section through CHIR-99021-treated organoid stained with anti-Otx2 antibody. Dashed lines indicate retinal or RPE domains. re, retina; le, lens; RPE, retinal pigmented epithelium. Scale bars: 100 μm, 50 μm in enlargements in b and in fish embryonic retina in b.
+
+![Video 8.](https://cdn.elifesciences.org/articles/66998/elife-66998-video8.mp4.jpg)
+
+**Video 8.:** 3D rendering of medaka Atoh7::EGFP day 3 organoid stained with anti-GFP (green), anti-β-catenin (cyan), and anti HuC/D (magenta) antibodies.
 
 Furthermore, retinal domains of day 4 organoids consisted of differentiating retinal neurons organized in multiple layers of cells differentiating toward amacrine and ganglion (expressing HuC/D) (Kay et al., 2001; Link et al., 2000; Park et al., 2000), photoreceptor and bipolar (expressing Otx2) (Fossat et al., 2007; Glubrecht et al., 2009; Koike et al., 2007; Nishida et al., 2003), as well as horizontal (expressing Prox1) (Dyer et al., 2003) cell lineages (Figure 6d). Interestingly, the arrangement of the respective cellular layers was inverted when compared to normal retinal organization (Figure 6e). This can be attributed to the morphological differences, particularly the OV to optic cup transition, between retinal morphogenesis in vivo and organoid. In organoids, retinal differentiation is initiated without the optic cup formation, most probably leading to the inverted retinal organization.
 
@@ -112,31 +200,377 @@ While the concept of evolutionary conservation allows to deduce fundamental mech
 
 ## Materials and methods
 
-## Fish handling and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Oryzia latipes)</td>
+      <td>rx3</td>
+      <td>Ensembl</td>
+      <td>ENSORLG00000027320</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Oryzia latipes)</td>
+      <td>Cab</td>
+      <td>Loosli et al., 2000</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB</td>
+      <td>ZIRC</td>
+      <td>ZFIN: ZBD-GENO-960809–7</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Oryzia latipes)</td>
+      <td>Atoh7::EGFP</td>
+      <td>Del Bene et al., 2007</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Oryzia latipes)</td>
+      <td>Rx3::H2B-GFP</td>
+      <td>Rembold et al., 2006</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Oryzia latipes)</td>
+      <td>Rx3saGFP</td>
+      <td>This study</td>
+      <td>–</td>
+      <td>Insertion of splice acceptor followed by GFP (saGFP) andocean pout polyA terminator (OPT) in the first intron of Rx3 gene</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Otx2 (polyclonal goat IgG)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#:AF1979 RRID:AB_2157172</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rx2 (polyclonal rabbit IgG)</td>
+      <td>In-house; Reinhardt et al., 2015</td>
+      <td>–</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lhx2 (polyclonal rabbit IgG)</td>
+      <td>GeneTex</td>
+      <td>Cat#:GTX129241 RRID:AB_2783558</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin (polyclonal rabbit IgG)</td>
+      <td>Abcam</td>
+      <td>Cat#:Ab6302 RRID:AB_305407</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated tubulin (monoclonal mouse IgG2b)</td>
+      <td>Merck</td>
+      <td>Cat#:T7451 RRID:AB_609894</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sox2 (polyclonal rabbit IgG)</td>
+      <td>GeneTex</td>
+      <td>Cat#:GTX124477 RRID:AB_11178063</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (polyclonal chicken IgY)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:A10262 RRID:AB_2534023</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-N-cadherin (monoclonal rabbit IgG)</td>
+      <td>Abcam</td>
+      <td>Cat#:ab76011 RRID:AB_1310479</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Prox1 (polyclonal rabbit IgG)</td>
+      <td>Merck</td>
+      <td>Cat#:AB5475 RRID:AB_177485</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HuC/HuD (monoclonal mouse IgG2b)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:A21271 RRID:AB_221448</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBT-RP2 (plasmid)</td>
+      <td>Clark et al., 2011</td>
+      <td>–</td>
+      <td>Ocean pout polyA terminator (OPT) sequence-carrying plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGEV_5_linker (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49285</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGDestSC-ATG (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49322</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGEV_4_linker (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49284</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGEV_7’_linker (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49293</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Rx3::H2B-GFP (plasmid)</td>
+      <td>Rembold et al., 2006</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGD(saGFP-OPT-MCS+2) (plasmid)</td>
+      <td>This study</td>
+      <td>–</td>
+      <td>Splice acceptor and GFP (saGFP); ocean pout polyA terminator (OPT) sequence-carrying plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rx3_F</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>TCCTTTTTAGACAAATGTGGCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFP_R</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GCTCGACCAGGATGGGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pDest_F</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>ATTACCGCCTTTGAGTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rx3_R</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GACAGGTATCCGGTAAGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rx3_T1</td>
+      <td>This study</td>
+      <td>sgRNA</td>
+      <td>AGCAGAGCGCGCAAAGAACC[AGG]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rx3_T2</td>
+      <td>This study</td>
+      <td>sgRNA</td>
+      <td>AGCGCGCAAAGAACCAGGCA[GGG]</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Q5 High-Fidelity DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat#:M0491L</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>I-SceI meganuclease</td>
+      <td>NEB</td>
+      <td>Cat#:R0694L</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>InnuPREP DOUBLEpure Kit</td>
+      <td>AnalyticJena</td>
+      <td>Cat#:845-KS-5050250</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR-99021</td>
+      <td>Merck</td>
+      <td>Cat#:SML1046</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious R8.1</td>
+      <td>Biomatters</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCTop</td>
+      <td>Stemmer et al., 2015</td>
+      <td>RRID:SCR_016890</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji distribution of ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hyper stack generator (Fiji plugin)</td>
+      <td>10.5281/zenodo.3368134</td>
+      <td>–</td>
+      <td>Generate hyperstack for images acquired with the Acquifer machine</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ElastixWrapper (Fiji plugin)</td>
+      <td>Tischer, 2019; Klein et al., 2010</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MSD analysis</td>
+      <td>Tinevez and Herbert, 2020</td>
+      <td>–</td>
+      <td>MATLAB script for MSD analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Directionality analysis</td>
+      <td>This studyhttps://github.com/VeneraW/DirectionalityANalysisOrganoids (copy archived atswh:1:rev:31a89aead3e83ac774e13c0161e44deafce58f05; Zilova, 2021)</td>
+      <td>–</td>
+      <td>MATLAB script for organoid directionality analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrackMate</td>
+      <td>Tinevez et al., 2017</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statannot package, Jupyter notebook</td>
+      <td>https://github.com/webermarcolivier/statannot, Weber, 2020</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>Cat#:356238</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DRAQ5</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:65-0880-92</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellMask</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:C10045</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tissue Freezing Media</td>
+      <td>Leica</td>
+      <td>Cat#:14020108926</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish handling and maintenance
 
 Medaka (O. latipes) and Zebrafish (D. rerio) stocks were maintained according to the local animal welfare standards (Tierschutzgesetz §11, Abs. 1, Nr. 1, husbandry permit AZ35-9185.64/BH, line generation permit number 35–9185.81/G-145/15 Wittbrodt). The following medaka lines were used in this study: Cab strain as a wild type (Loosli et al., 2000), Rx3::H2B-GFP (Rembold et al., 2006), Atoh7::EGFP (Del Bene et al., 2007), Rx3saGFP (this study). The following zebrafish lines were used in this study: AB zebrafish as a wild type (ZIRC, ZFIN: ZBD-GENO-960809–7).
 
-## Cloning of pGGD(saGFP-OPT-MCS) and generation of Rx3saGFP knock-in line
+### Cloning of pGGD(saGFP-OPT-MCS) and generation of Rx3saGFP knock-in line
 
 The ocean pout polyA terminator (OPT) sequence was released from plasmid pGBT-RP2 (Clark et al., 2011) via restriction digest with BfaI-FD (Thermo Fisher Scientific), ligated into pGGEV_5_linker (Addgene #49285), and fused into pGGDestSC-ATG (#49322 Addgene) using the Golden GATEway cloning system (Kirchmaier et al., 2013) and the following sequences: target site sequence of sgRNA GFP_T1 (Stemmer et al., 2015) inserted in pGGEV_1, a multiple cloning site in pGGEV_2, a strong AD splice acceptor (Centanin et al., 2011) fused with a GFP variant not targeted by sgRNA GFP_T1 (Stemmer et al., 2015) in pGGEV_3, pGGEV_4_linker (#49284 Addgene), a multiple cloning cassette in pGGEV_6 and pGGEV_7’_linker (#49293 Addgene). Adjustment of open reading frame following the splice acceptor was accomplished via Q5 (NEB, Cat#:M0491L) mutagenesis by inserting a single or two nucleotides (+1 or +2, respectively) to yield gene trap vectors for all three forward frames.
 
 sgRNA rx3_T1 (AGCAGAGCGCGCAAAGAACC[AGG], PAM in brackets) and rx3_T2 (AGCGCGCAAAGAACCAGGCA[GGG], PAM in brackets) were designed using CCTop and cloned and transcribed as described previously (Stemmer et al., 2015). The saGFP-OPT-MCS+2 cassette was inserted into the first intron of Rx3 by non-homologous end joining via microinjection into the cytoplasm of one cell stage medaka zygotes. Injection mix contained 15 ng/µl of each sgRNA rx3_T1, rx3_T2 and GFP_T1, 150 ng/µl Cas9 mRNA and 10 ng/µl pGGD(saGFP-OPT-MCS+2) in nuclease-free water. Embryos were raised and maintained at 28°C in 1× Embryo Rearing Medium (ERM, 17 mM NaCl, 40 mM KCl, 0.27 mM CaCl2, 0.66 mM MgSO4, 17 mM HEPES) and screened for ocular GFP expression 1 dpf on a Nikon SMZ18. Genotyping-PCR was performed with Q5 High-Fidelity DNA Polymerase (NEB) with 98°C initial denaturation for 2 min, followed by 30 cycles of 98°C denaturation for 20 s, 66°C annealing for 30 s, 72°C extension for 25 s. Primers used to amplify 5’ integration: Rx3_F 5’-TCCTTTTTAGACAAATGTGGCTCC, GFP_R 5’-GCTCGACCAGGATGGGCA; 3’ integration: pDest_F 5’-ATTACCGCCTTTGAGTGAGC, Rx3_R 5’-GACAGGTATCCGGTAAGCGG. Following gel electrophoresis, amplicons were gel-purified (InnuPrep, AnalyticJena), sequenced (Eurofins Genomics), and analyzed using Geneious R8.1 (Biomatters).
 
-## Injection in zebrafish embryos
+### Injection in zebrafish embryos
 
 Rx3::H2B-GFP DNA (10 ng/μl) was co-injected with Meganuclease (I-SceI) (NEB, Cat#:R0694L) and mCherry mRNA (10 ng/μl) into the cytoplasm of one cell stage zebrafish embryos as previously described (Thermes et al., 2002). Only morphologically intact and brightest mCherry expressing embryos were used for aggregate formation.
 
-## Generation of organoids
+### Generation of organoids
 
 For medaka, blastula-stage (6 hpf) embryos (Iwamatsu, 2004) were collected, dechorionated using hatching enzyme, and washed in ERM (17 mM NaCl, 40 mM KCl, 0.27 mM CaCl2, 0.66 mM MgSO4, 17 mM HEPES). Cell mass was separated from yolk, washed three times with sterile PBS (Thermo Fisher Scientific, Cat#:10010023), and dissociated by gentle pipetting with 200 μl pipet tip. Cell suspension was pelleted (180 × g for 3 min) and re-suspended in differentiation media: GMEM (Glasgow’s Minimal Essential Medium, Gibco Cat#:11710035), 5% KSR (Gibco Cat#:10828028), 0.1 mM non-essential amino acids, sodium pyruvate, 0.1 mM β-mercaptoethanol, 50 U/ml penicillin-streptomycin to desired cell density, that is, for aggregation of >1000 cells, 10–20 cells/µl and for aggregation of <1000 cells, 5–8 cells/µl. Cell suspension (100 μl per well – per single aggregate) was transferred to low binding 96-well plate (Nunclon Sphera U-Shaped Bottom Microplate, Thermo Fisher Scientific) and centrifugated (for 3 min at 180 × g) to speed up cell aggregation. The aggregates were incubated over night at 26°C in the incubator without CO2 control. The following day (day 1) aggregates were washed with differentiation media, transferred to fresh wells, and Matrigel (Corning, Cat#:356238) was added to the media to a final concentration of 2%. From day 1 onward, aggregates were incubated at 26°C and 5% CO2. Alternatively, when CO2 control was not possible, media was supplemented with 20 mM HEPES, pH=7.4. From day 2 onward, organoids were kept in DMEM/F12 supplemented with 5% FBS (Sigma Aldrich, Cat#:12103C), 5% FEE (fish embryonic extract) (https://zfin.org/zf_info/zfbook/chapt6.html), 20 mM HEPES pH=7.4, N2 supplement (Gibco, Cat#:17502048) and 50 U/ml penicillin-streptomycin.
 
 For zebrafish cell aggregation, blastula-stage embryos (at high stage) were processed according to the same protocol as for medaka but re-suspended in Leibowitz’s L-15 media (Gibco, Cat#:11415064) supplemented with 5% KSR and 50 U/ml penicillin-streptomycin. Matrigel (Corning, Cat#:356238) was added at 2 hpa.
 
-## Treatment of medaka organoids with GSK3 inhibitor CHIR-99021
+### Treatment of medaka organoids with GSK3 inhibitor CHIR-99021
 
 After 6 hr of incubation with Matrigel at 26°C, day 1 aggregates were washed and supplemented with differentiation media containing 5 μM CHIR-99021 (Merck, Cat#:SML1046) in DMSO or DMSO only and incubated till the point of analysis (day 2 or day 4).
 
-## Fluorescent labeling
+### Fluorescent labeling
 
 To stain the plasma membranes, organoids were incubated in CellMask Orange Plasma Membrane Stain (Thermo Fisher Scientific, Cat#:C10045; 1:1000) for 30 min at 26°C, washed and fixed in 4% PFA.
 
@@ -144,7 +578,7 @@ Immunohistochemistry was performed as previously described (Inoue and Wittbrodt,
 
 For whole-mount staining, fixed samples were heated in 50 mM Tris-HCl at 70°C for 15 min, permeabilized 15 min in acetone at –20°C, and blocked in 10% BSA in PTW for 1 hr. Samples were incubated with primary antibody (1:200) overnight (for Otx2 antibody incubation was prolonged to 3 days) at 4°C. The following antibodies were used: rabbit anti-Rx2 (Reinhardt et al., 2015), rabbit anti-Lhx2 (GeneTex, Cat#:GTX129241), rabbit anti-β-catenin (Abcam, Cat#:Ab6302), mouse anti-acetylated tubulin (Merck, Cat#:T7451), rabbit anti-Sox2 (GeneTex, Cat#:GTX124477), chicken anti-GFP (Thermo Fisher Scientific, Cat#:A10262), goat anti-Otx2 (R&D Systems, Cat#:AF1979), rabbit anti-N-cadherin (Abcam, Cat#:ab76011), rabbit anti-Prox1 (Merck, Cat#:AB5475), and mouse anti-HuC/D (Thermo Fisher Scientific, Cat#:A21271). Samples were washed six times 10 min in PTW, incubated with secondary antibody (1:750) (Invitrogen) with DAPI (1:500) or DRAQ5 (Thermo Fisher Scientific, Cat#:65-0880-92; 1:1000) nuclear stain overnight at 4°C and washed five times 10 min in PTW. All samples were mounted in 1% low melting agarose in PTW and imaged with Leica Sp8 confocal, Acquifer, SPIM microscopes.
 
-## Imaging
+### Imaging
 
 Fixed organoid and embryonic samples were imaged with Leica Sp8 confocal microscope. Gross morphology of embryos and organoids was assessed by Nikon SMZ18 and Leica DMi8 microscope.
 
@@ -156,7 +590,7 @@ Live imaging of Rx3::H2B-GFP-derived organoids (Video 5) was performed on the 16
 
 Live imaging of Rx3::H2B-GFP-derived organoids (Videos 6 and 7) was performed with Sp8 confocal microscope (Leica). Organoids were imaged from day 1 to day 2 at room temperature directly in low binding 96-well plate (Nunclon Sphera U-Shaped Bottom Microplate, Thermo Fisher Scientific). The volume of the organoids was acquired with 2.24 µm z step size using 488 nm excitation laser at 10% intensity in 30 min intervals.
 
-## Quantitative analysis
+### Quantitative analysis
 
 To analyze the dynamics of retinal cell fate acquisition, for each time point, a maximum projection for fluorescence and a single focused bright-field image were calculated using Fiji distribution of ImageJ (Schindelin et al., 2012) and hyper stack plugin for ACQUIFER machine (https://doi.org/10.5281/zenodo.3368134). The onset of GFP expression was determined by detection of maximum in first derivative of GFP expression. For better representation, the sum of fluorescence intensity for each time point was normalized from 0 to 1.
 

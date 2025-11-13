@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.09376.001 The organization and biophysical properties of the cytosol implicitly govern molecular interactions within cells. However, little is known about mechanisms by which cells regulate cytosolic properties and intracellular diffusion rates. Here, we demonstrate that the intracellular environment of budding yeast undertakes a startling transition upon glucose starvation in which macromolecular mobility is dramatically restricted, reducing the movement of both chromatin in the nucleus and mRNPs in the cytoplasm. This confinement cannot be explained by an ATP decrease or the physiological drop in intracellular pH. Rather, our results suggest that the regulation of diffusional mobility is induced by a reduction in cell volume and subsequent increase in molecular crowding which severely alters the biophysical properties of the intracellular environment. A similar response can be observed in fission yeast and bacteria. This reveals a novel mechanism by which cells globally alter their properties to establish a unique homeostasis during starvation. DOI: http://dx.doi.org/10.7554/eLife.09376.001
+The organization and biophysical properties of the cytosol implicitly govern molecular interactions within cells. However, little is known about mechanisms by which cells regulate cytosolic properties and intracellular diffusion rates. Here, we demonstrate that the intracellular environment of budding yeast undertakes a startling transition upon glucose starvation in which macromolecular mobility is dramatically restricted, reducing the movement of both chromatin in the nucleus and mRNPs in the cytoplasm. This confinement cannot be explained by an ATP decrease or the physiological drop in intracellular pH. Rather, our results suggest that the regulation of diffusional mobility is induced by a reduction in cell volume and subsequent increase in molecular crowding which severely alters the biophysical properties of the intracellular environment. A similar response can be observed in fission yeast and bacteria. This reveals a novel mechanism by which cells globally alter their properties to establish a unique homeostasis during starvation.
 
 ## Introduction
 
@@ -36,37 +36,289 @@ To better characterize the diffusional properties of eukaryotic cells, we have a
 
 ## Results
 
-## Glucose starvation limits macromolecular mobility in the nucleus and cytoplasm
+### Glucose starvation limits macromolecular mobility in the nucleus and cytoplasm
 
-To examine the effects of changes in growth conditions on nuclear chromatin dynamics in budding yeast, we analyzed the movement of various gene loci. LacO repeats were integrated at the
+To examine the effects of changes in growth conditions on nuclear chromatin dynamics in budding yeast, we analyzed the movement of various gene loci. LacO repeats were integrated at the POA1 locus on chromosome II, the URA3 locus on chromosome V, and on a centromeric plasmid (pLacO). Co-expression of LacI-GFP allowed us to visualize these three loci and track their mobility over minute-long sequences. Whereas several changes in growth conditions, including growth in different carbon sources or nitrogen starvation, had no obvious effect on chromatin mobility (data not shown), acute glucose starvation induced a dramatic cessation of chromatin movement (Figure 1A). This suggests that chromatin mobility is regulated by the presence of glucose.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig1-v2.jpg)
 
-**Figure 1.:** Figure 1—figure supplement 1).(A) Minute-long trajectories of the POA1 locus from both (+) glucose (blue) and (–) glucose (red) conditions projected on bright field images. Log-growing cells in (+) glucose were acutely starved for glucose, (–) glucose, for 30 min minutes prior to imaging. Scale bar: 4 µm. (B) Mean square displacement (MSD) curves for POA1 mobility. Upper panel: individual MSDs were averaged into an aggregate MSD for each condition. Error bars represent standard error of the mean (SEM). Lower panel: log-log MSD plot of the same data. (C) Log-log MSD plot of the pLacO plasmid during exponential growth and after acute glucose starvation. (D) Minute-long trajectories of GFA1 mRNPs from both (+) glucose (blue) and (–) glucose (red) conditions projected on bright field images. (E) Mean square displacement (MSD) curves for GFA1 mRNP mobility. Upper panel: individual MSDs were averaged into an aggregate MSD for each condition. Error bars represent SEM. Lower panel: log-log MSD plot of the same data. (F) Log-log MSD plot of the FBA1 mRNP during exponential growth and after acute glucose starvation. Dashed gray lines represent a slope of one to guide the eye.DOI: http://dx.doi.org/10.7554/eLife.09376.003
+**Figure 1.:** (A) Minute-long trajectories of the POA1 locus from both (+) glucose (blue) and (–) glucose (red) conditions projected on bright field images. Log-growing cells in (+) glucose were acutely starved for glucose, (–) glucose, for 30 min minutes prior to imaging. Scale bar: 4 µm. (B) Mean square displacement (MSD) curves for POA1 mobility. Upper panel: individual MSDs were averaged into an aggregate MSD for each condition. Error bars represent standard error of the mean (SEM). Lower panel: log-log MSD plot of the same data. (C) Log-log MSD plot of the pLacO plasmid during exponential growth and after acute glucose starvation. (D) Minute-long trajectories of GFA1 mRNPs from both (+) glucose (blue) and (–) glucose (red) conditions projected on bright field images. (E) Mean square displacement (MSD) curves for GFA1 mRNP mobility. Upper panel: individual MSDs were averaged into an aggregate MSD for each condition. Error bars represent SEM. Lower panel: log-log MSD plot of the same data. (F) Log-log MSD plot of the FBA1 mRNP during exponential growth and after acute glucose starvation. Dashed gray lines represent a slope of one to guide the eye.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** () Individual log-log MSD plots of POA1 loci in non-starved (left) and starved (right) cells. (AB) Individual log-log MSD plots of GFA1 mRNP particles in non-starved (left) and starved (right) cells. Dashed gray lines represent a slope of one to guide the eye.DOI: http://dx.doi.org/10.7554/eLife.09376.004
+**Figure 1—figure supplement 1.:** (A) Individual log-log MSD plots of POA1 loci in non-starved (left) and starved (right) cells. (B) Individual log-log MSD plots of GFA1 mRNP particles in non-starved (left) and starved (right) cells. Dashed gray lines represent a slope of one to guide the eye.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Log-log MSD plot of the URA3 locus during exponential growth and after acute starvation. (B) Log-log MSD plot of the GFA1 mRNP during exponential growth and quiescence (see 'Materials and methods'). (C) Log-log MSD plot of the FBA1 mRNP mobility during exponential growth and quiescence. Dashed gray lines represent a slope of one to guide the eye.DOI: http://dx.doi.org/10.7554/eLife.09376.005
+**Figure 1—figure supplement 2.:** (A) Log-log MSD plot of the URA3 locus during exponential growth and after acute starvation. (B) Log-log MSD plot of the GFA1 mRNP during exponential growth and quiescence (see 'Materials and methods'). (C) Log-log MSD plot of the FBA1 mRNP mobility during exponential growth and quiescence. Dashed gray lines represent a slope of one to guide the eye.
 
-To quantify the dramatic changes in chromatin mobility, we calculated ensemble-averaged mean square displacements (MSDs) for the chromatin loci (n = 183–1172 trajectories each) (Figure 1B and C; Figure 1—figure supplement 1A; Figure 1—figure supplement 2A). These plots express the magnitude of diffusion for a given particle, quantifying the average displacement per unit time and are used to compute their effective diffusion coefficients (Qian et al., 1991). We find that the confinement of chromatin upon glucose starvation (Figure 1B and C; Figure 1—figure supplement 2) leads to an approximately three-fold reduction of the apparent diffusion coefficient (K): for instance, KPOA1 decreased from 5.7 x 10–3 µm2/s to 2.3 x 10–3 µm2/s upon starvation (Table 1). The change in mobility at this time scale was not caused by a change in the anomaly of the diffusion process as the anomalous diffusion exponent (α), which is given by the slope of the curves in the MSD log-log plot, is not affected (see also Table 1).10.7554/eLife.09376.006Table 1.Effective diffusion coefficients (K; µm2/s) and anomalous diffusion exponents (α) for macromolecules in each condition.DOI: http://dx.doi.org/10.7554/eLife.09376.006Condition POA1 LocuspLacO Plasmid URA3 Locus GFA1 mRNP FBA1 mRNPKαKαKαKαKα(+) Glucose0.00570.690.00670.780.00760.650.04200.830.05010.85(-) Glucose0.00230.640.00210.800.00220.730.01310.770.01390.77(-) Glucose pH 7.40.00150.65--------0.01200.75----DMSO0.00590.560.00460.700.00600.610.04910.830.05410.83Nocodazole0.00400.480.00250.570.00460.510.03640.850.03970.85Latrunculin A0.00380.500.00240.630.00380.550.04760.820.05500.81Nocodazole + LatA0.00280.480.00140.490.00260.520.03030.810.03670.822 mM K+Sorbate0.00560.730.00510.800.00590.680.04020.820.02960.804 mM K+Sorbate0.00500.750.00440.720.00480.710.04060.780.02420.796 mM K+Sorbate0.00390.700.00180.660.00270.660.03780.760.02700.788 mM K+Sorbate0.00230.640.00120.610.00140.610.03400.760.01640.770.4 M NaCl0.00300.690.00260.75----0.01290.830.01460.850.6 M NaCl0.00120.600.00110.58----0.00470.830.00570.840.8 M NaCl0.00090.630.00110.63----0.00130.670.00160.77Quiescence------------0.00040.290.00150.680.02% Azide (Wash)0.00370.74--------0.02930.82----0.02% Azide (Spike)0.00120.67--------0.01550.81----
+To quantify the dramatic changes in chromatin mobility, we calculated ensemble-averaged mean square displacements (MSDs) for the chromatin loci (n = 183–1172 trajectories each) (Figure 1B and C; Figure 1—figure supplement 1A; Figure 1—figure supplement 2A). These plots express the magnitude of diffusion for a given particle, quantifying the average displacement per unit time and are used to compute their effective diffusion coefficients (Qian et al., 1991). We find that the confinement of chromatin upon glucose starvation (Figure 1B and C; Figure 1—figure supplement 2) leads to an approximately three-fold reduction of the apparent diffusion coefficient (K): for instance, KPOA1 decreased from 5.7 x 10–3 µm2/s to 2.3 x 10–3 µm2/s upon starvation (Table 1). The change in mobility at this time scale was not caused by a change in the anomaly of the diffusion process as the anomalous diffusion exponent (α), which is given by the slope of the curves in the MSD log-log plot, is not affected (see also Table 1).
+
+**Table 1.**
+ Effective diffusion coefficients (K; µm2/s) and anomalous diffusion exponents (α) for macromolecules in each condition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Condition</th>
+      <th colspan="2">POA1 Locus</th>
+      <th colspan="2">pLacO Plasmid</th>
+      <th colspan="2">URA3 Locus</th>
+      <th colspan="2">GFA1 mRNP</th>
+      <th colspan="2">FBA1 mRNP</th>
+    </tr>
+    <tr>
+      <th>K</th>
+      <th>α</th>
+      <th>K</th>
+      <th>α</th>
+      <th>K</th>
+      <th>α</th>
+      <th>K</th>
+      <th>α</th>
+      <th>K</th>
+      <th>α</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+) Glucose</td>
+      <td>0.0057</td>
+      <td>0.69</td>
+      <td>0.0067</td>
+      <td>0.78</td>
+      <td>0.0076</td>
+      <td>0.65</td>
+      <td>0.0420</td>
+      <td>0.83</td>
+      <td>0.0501</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>(-) Glucose</td>
+      <td>0.0023</td>
+      <td>0.64</td>
+      <td>0.0021</td>
+      <td>0.80</td>
+      <td>0.0022</td>
+      <td>0.73</td>
+      <td>0.0131</td>
+      <td>0.77</td>
+      <td>0.0139</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>(-) Glucose pH 7.4</td>
+      <td>0.0015</td>
+      <td>0.65</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0120</td>
+      <td>0.75</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>0.0059</td>
+      <td>0.56</td>
+      <td>0.0046</td>
+      <td>0.70</td>
+      <td>0.0060</td>
+      <td>0.61</td>
+      <td>0.0491</td>
+      <td>0.83</td>
+      <td>0.0541</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Nocodazole</td>
+      <td>0.0040</td>
+      <td>0.48</td>
+      <td>0.0025</td>
+      <td>0.57</td>
+      <td>0.0046</td>
+      <td>0.51</td>
+      <td>0.0364</td>
+      <td>0.85</td>
+      <td>0.0397</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>Latrunculin A</td>
+      <td>0.0038</td>
+      <td>0.50</td>
+      <td>0.0024</td>
+      <td>0.63</td>
+      <td>0.0038</td>
+      <td>0.55</td>
+      <td>0.0476</td>
+      <td>0.82</td>
+      <td>0.0550</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>Nocodazole + LatA</td>
+      <td>0.0028</td>
+      <td>0.48</td>
+      <td>0.0014</td>
+      <td>0.49</td>
+      <td>0.0026</td>
+      <td>0.52</td>
+      <td>0.0303</td>
+      <td>0.81</td>
+      <td>0.0367</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>2 mM K+Sorbate</td>
+      <td>0.0056</td>
+      <td>0.73</td>
+      <td>0.0051</td>
+      <td>0.80</td>
+      <td>0.0059</td>
+      <td>0.68</td>
+      <td>0.0402</td>
+      <td>0.82</td>
+      <td>0.0296</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>4 mM K+Sorbate</td>
+      <td>0.0050</td>
+      <td>0.75</td>
+      <td>0.0044</td>
+      <td>0.72</td>
+      <td>0.0048</td>
+      <td>0.71</td>
+      <td>0.0406</td>
+      <td>0.78</td>
+      <td>0.0242</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>6 mM K+Sorbate</td>
+      <td>0.0039</td>
+      <td>0.70</td>
+      <td>0.0018</td>
+      <td>0.66</td>
+      <td>0.0027</td>
+      <td>0.66</td>
+      <td>0.0378</td>
+      <td>0.76</td>
+      <td>0.0270</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>8 mM K+Sorbate</td>
+      <td>0.0023</td>
+      <td>0.64</td>
+      <td>0.0012</td>
+      <td>0.61</td>
+      <td>0.0014</td>
+      <td>0.61</td>
+      <td>0.0340</td>
+      <td>0.76</td>
+      <td>0.0164</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>0.4 M NaCl</td>
+      <td>0.0030</td>
+      <td>0.69</td>
+      <td>0.0026</td>
+      <td>0.75</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0129</td>
+      <td>0.83</td>
+      <td>0.0146</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>0.6 M NaCl</td>
+      <td>0.0012</td>
+      <td>0.60</td>
+      <td>0.0011</td>
+      <td>0.58</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0047</td>
+      <td>0.83</td>
+      <td>0.0057</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>0.8 M NaCl</td>
+      <td>0.0009</td>
+      <td>0.63</td>
+      <td>0.0011</td>
+      <td>0.63</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0013</td>
+      <td>0.67</td>
+      <td>0.0016</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Quiescence</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0004</td>
+      <td>0.29</td>
+      <td>0.0015</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>0.02% Azide (Wash)</td>
+      <td>0.0037</td>
+      <td>0.74</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0293</td>
+      <td>0.82</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>0.02% Azide (Spike)</td>
+      <td>0.0012</td>
+      <td>0.67</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>0.0155</td>
+      <td>0.81</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+</table>
 
 To analyze whether glucose starvation uniquely affects chromatin dynamics in the nucleus, or whether it also influences the mobility of other macromolecules, we imaged the movement of cytoplasmic mRNPs, which can be conveniently tracked as single particles (Shav-Tal et al., 2004). 24-PP7 stem-loops were integrated into the 3’ UTR of GFA1 and FBA1, essential genes involved in distinct processes (Lagorce et al., 2002; Schwelberger et al., 1989), and the movement of individual mRNPs was examined upon co-expression of the coat-binding protein, CP-PP7-3xYFP. Cumulative track projections revealed substantially higher mobility for mRNPs than chromosomal loci in glucose, which is expected given the significantly smaller size of mRNPs compared to chromosome fibers (Figure 1D) (Thompson et al. 2010; Zarnack and Feldbrügge, 2007). Yet, upon glucose starvation, GFA1 and FBA1 mRNPs also exhibited a dramatic reduction in their mobility (Figure 1E and F; Figure 1—figure supplement 1B). Removal of glucose led to a three- to four-fold decrease in the diffusion coefficient of both GFA1 (KGFA1reduced from 4.2 x 10–2 µm2/s to 1.3 x 10–2 µm2/s) and FBA1 (KFBA1reduced from 5.0 x 10–2 µm2/s to 1.4 x 10-2 µm2/s) mRNPs without affecting the anomalous exponent (α). These values are similar to the relative change that we observed in the diffusion of chromatin (Table 1). Depletion of glucose by growth into quiescence also confined the mobility of mRNPs; therefore, the effects we observe are not a consequence of our cell washes (Figure 1—figure supplement 2B and C). The decrease in mobility of both chromosomal loci and mRNP particles suggests that glucose starvation causes a confinement of macromolecules in the nucleus as well as the cytoplasm.
 
-## Starvation arrests cytoskeletal dynamics, which constrains chromatin mobility but has little effect on mRNPs
+### Starvation arrests cytoskeletal dynamics, which constrains chromatin mobility but has little effect on mRNPs
 
-To begin to understand the nature and mechanism of the starvation-induced reduction in chromatin and mRNP mobility, we first focused on the cytoskeleton. In eukaryotes, the movement of many macromolecules is directly influenced by the dynamics of the cytoskeleton. For instance, mRNPs can be actively transported by motor proteins along the cytoskeleton and both the actin cytoskeleton and microtubules were reported to influence chromatin dynamics (
+To begin to understand the nature and mechanism of the starvation-induced reduction in chromatin and mRNP mobility, we first focused on the cytoskeleton. In eukaryotes, the movement of many macromolecules is directly influenced by the dynamics of the cytoskeleton. For instance, mRNPs can be actively transported by motor proteins along the cytoskeleton and both the actin cytoskeleton and microtubules were reported to influence chromatin dynamics (Thompson et al., 2010; Heun et al., 2001; Koszul et al., 2008; Spagnol and Dahl, 2014; Spichal et al., 2016). Interestingly, actin filaments were also shown to rapidly depolymerize upon starvation (Uesono et al., 2004; Sagot et al., 2006). We therefore wanted to explore whether the starvation-induced confinement of macromolecular mobility resulted from changes in cytoskeletal dynamics. Indeed, our starvation condition lead to ablation of actin filaments in nearly all cells (Figure 2A) and a nearly four-fold reduction of microtubule elongation events in G1 cells as visualized by Tub1-GFP (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig2-v2.jpg)
 
-**Figure 2.:** Figure 2—figure supplement 1).(A) Quantification of filamentous actin during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Cells were fixed and stained with phalloidin. Z-stack projections were then processed and cells were classified based on the presence or absence of filamentous actin. Error bars are standard error for three biological replicates (n = 406–709 cells per replicate). (B) Average number of microtubule projections per G1 cell during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Error bars are standard deviation (SD) of the mean from three biological replicates (n = 10–1510-15 cells per replicate). The p-value for a two-tailed t-test for unpaired values assuming equal variance is shown. (C) Log-log MSD plot of the POA1 locus after treatment with nocodazole and/or latrunculin-A (LatA) for 20 min prior to imaging. (D) Log-log MSD plot of the GFA1 mRNP after treatment as described in (C). Dashed gray lines represent a slope of one to guide the eye.DOI: http://dx.doi.org/10.7554/eLife.09376.007
+**Figure 2.:** (A) Quantification of filamentous actin during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Cells were fixed and stained with phalloidin. Z-stack projections were then processed and cells were classified based on the presence or absence of filamentous actin. Error bars are standard error for three biological replicates (n = 406–709 cells per replicate). (B) Average number of microtubule projections per G1 cell during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Error bars are standard deviation (SD) of the mean from three biological replicates (n = 10–1510-15 cells per replicate). The p-value for a two-tailed t-test for unpaired values assuming equal variance is shown. (C) Log-log MSD plot of the POA1 locus after treatment with nocodazole and/or latrunculin-A (LatA) for 20 min prior to imaging. (D) Log-log MSD plot of the GFA1 mRNP after treatment as described in (C). Dashed gray lines represent a slope of one to guide the eye.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Log-log MSD plot of the FBA1 mRNP after treatment as described in Figure 2C. (B) Log-log MSD plot of the URA3 locus after treatment as described in Figure 2C. (C) Log-log MSD plot of the pLacO plasmid after treatment as described in Figure 2C. (D) Graphic depicting the quantification of intranuclear displacements between the PES4 locus (green) and the POA1 locus (red). (E) Log-log interchromosomal MSDs quantifying the displacement between POA1 and PES4 during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Images were acquired every 1.5 s for a total of 150 s, and the intranuclear displacements between the POA1 locus and the PES4 locus were tracked over time by determining the absolute distance between the two loci. (F) Log-log interchromosomal MSDs quantifying the displacement between POA1 and PES4 after inhibition of the cytoskeleton (nocodazole + LatA) and in a DMSO-treated control. Cells were treated as described in Figure 2C and imaged as in (E). Dashed gray lines represent a slope of one to guide the eye.DOI: http://dx.doi.org/10.7554/eLife.09376.008
+**Figure 2—figure supplement 1.:** (A) Log-log MSD plot of the FBA1 mRNP after treatment as described in Figure 2C. (B) Log-log MSD plot of the URA3 locus after treatment as described in Figure 2C. (C) Log-log MSD plot of the pLacO plasmid after treatment as described in Figure 2C. (D) Graphic depicting the quantification of intranuclear displacements between the PES4 locus (green) and the POA1 locus (red). (E) Log-log interchromosomal MSDs quantifying the displacement between POA1 and PES4 during logarithmic growth, (+) glucose, and after acute starvation, (–) glucose. Images were acquired every 1.5 s for a total of 150 s, and the intranuclear displacements between the POA1 locus and the PES4 locus were tracked over time by determining the absolute distance between the two loci. (F) Log-log interchromosomal MSDs quantifying the displacement between POA1 and PES4 after inhibition of the cytoskeleton (nocodazole + LatA) and in a DMSO-treated control. Cells were treated as described in Figure 2C and imaged as in (E). Dashed gray lines represent a slope of one to guide the eye.
 
 If the changes in the mobility of chromatin or mRNPs upon glucose withdrawal were due to the reduction of cytoskeletal dynamics, we would predict that drug-induced inhibition of actin and/or microtubule polymerization mimics the starvation response. In order to test this hypothesis, we treated cells with the actin depolymerizer, latrunculin A (LatA), and/or the microtubule depolymerizing drug, nocodazole (Ayscough et al., 1997; Jacobs et al., 1988). Indeed, treatment with either drug reduced chromatin movement, although the effect was insufficient to mimic the confinement of chromatin during starvation (Figure 2C; Figure 2—figure supplement 1). Concurrent treatments with LatA and nocodazole reduced chromatin mobility in an additive manner to substantially reduce chromatin mobility (Figure 2C; Figure 2—figure supplement 1). Moreover, log-log MSD plots indicate that the effect of inhibiting the cytoskeleton is most apparent at longer time intervals and may augment the anomalous behavior of chromatin motion (αPOA1-DMSO = 0.56 versus αPOA1-Noc+LatA = 0.48; Figure 2C; Figure 2—figure supplement 1; Table 1).
 
@@ -74,57 +326,57 @@ The actin and microtubule cytoskeleton could either act on chromatin itself or a
 
 In contrast to chromatin mobility, mRNP mobility was only moderately affected by perturbation of cytoskeletal dynamics (Figure 2D; Figure 2—figure supplement 1) suggesting that the mobility of the GFA1 and FBA1 mRNPs is largely independent of the cytoskeleton. Overall, our results show that glucose starvation restricts cytoskeleton-independent mobility as well as the mobility of macromolecules influenced by the cytoskeleton.
 
-## Reduction of ATP is insufficient to explain the macromolecular confinement
+### Reduction of ATP is insufficient to explain the macromolecular confinement
 
 Our results so far could be explained by two alternative models: 1) starvation impacts macromolecular diffusion through multiple, distinct mechanisms, or 2) a singular, starvation-induced pathway restricts the mobility of macromolecules, and leads to both the collapse of cytoskeletal dynamics and the restriction of mRNP mobility. The acute withdrawal of glucose in fermenting yeast cells is expected to have dramatic consequences on cellular physiology. For example, the cellular ATP concentration drops (Ashe et al., 2000) and the intracellular pH decreases in starved cells (Orij et al., 2009). We therefore tested whether these global changes in cellular physiology lead to the observed changes in macromolecular mobility.
 
-First, we investigated the changes in intracellular ATP concentration during starvation. Upon glucose starvation, the ATP concentration rapidly decreased by ~70%. Remarkably, after this initial drop, ATP levels were relatively stable at ~30% of the initial concentration for the remainder of the experiment (
+First, we investigated the changes in intracellular ATP concentration during starvation. Upon glucose starvation, the ATP concentration rapidly decreased by ~70%. Remarkably, after this initial drop, ATP levels were relatively stable at ~30% of the initial concentration for the remainder of the experiment (Figure 3A). Of note, the maintenance of this reduced ATP level required oxidative phosphorylation as the cellular ATP concentration quickly dropped to nearly undetectable levels when cells deficient in mitochondrial function were starved (cbp2∆; Shaw and Lewin, 1997) (Figure 3—figure supplement 1). In contrast, when cells washed in sugar-free medium were back-diluted into media containing glucose, ATP levels recovered to the initial concentration within 30. Thus, glucose starvation induces a rapid ~70% reduction of intracellular ATP levels in agreement with previously published results (Özalp et al., 2010).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig3-v2.jpg)
 
-**Figure 3.:** Figure 3—figure supplement 1).(A) Intracellular ATP concentrations of acutely glucose-starved yeast were back-diluted into media containing 2% dextrose (n = 2 experiments), 2% dextrose + 0.02% azide (n = 2 experiments), or maintained in (–) glucose media (n = 3 experiments). Intracellular ATP concentrations were determined using a luciferase-based ATP assay (Ashe et al., 2000) and normalized to pre-treatment levels. The zero min time point was taken immediately after back-dilution into the described media. Error bars represent SD. (B) Log-log MSD plot of the POA1 locus. Cells were treated with azide as described in (A). The azide treatment fails to replicate the confinement of glucose-starved cells from Figure 1B. (C) Log-log MSD plot of the GFA1 mRNP. Cells were treated with azide as described in (A). The azide treatment fails to replicate the confinement of glucose-starved cells from Figure 1E.DOI: http://dx.doi.org/10.7554/eLife.09376.009
+**Figure 3.:** (A) Intracellular ATP concentrations of acutely glucose-starved yeast were back-diluted into media containing 2% dextrose (n = 2 experiments), 2% dextrose + 0.02% azide (n = 2 experiments), or maintained in (–) glucose media (n = 3 experiments). Intracellular ATP concentrations were determined using a luciferase-based ATP assay (Ashe et al., 2000) and normalized to pre-treatment levels. The zero min time point was taken immediately after back-dilution into the described media. Error bars represent SD. (B) Log-log MSD plot of the POA1 locus. Cells were treated with azide as described in (A). The azide treatment fails to replicate the confinement of glucose-starved cells from Figure 1B. (C) Log-log MSD plot of the GFA1 mRNP. Cells were treated with azide as described in (A). The azide treatment fails to replicate the confinement of glucose-starved cells from Figure 1E.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Log-growing wild-type (WT) and cbp2∆ yeast cells were acutely starved for glucose and back-diluted into media containing 2% dextrose (WT) or maintained in (–) glucose media. Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after back-dilution into the described media. Error bars represent SD (n = 2 experiments).DOI: http://dx.doi.org/10.7554/eLife.09376.010
+**Figure 3—figure supplement 1.:** Log-growing wild-type (WT) and cbp2∆ yeast cells were acutely starved for glucose and back-diluted into media containing 2% dextrose (WT) or maintained in (–) glucose media. Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after back-dilution into the described media. Error bars represent SD (n = 2 experiments).
 
 To determine whether a ~70% reduction in intracellular ATP levels is sufficient to confine cytoskeleton-independent macromolecular mobility as well as mobility influenced by the cytoskeleton, we reproduced this decrease in ATP concentrations in the presence of glucose. This was achieved by back-diluting washed cells into glucose media containing 0.02% sodium azide (NaN3), an inhibitor of oxidative phosphorylation (Figure 3A). After 0.02% azide treatment, ATP levels dropped to the same level as in glucose-starved cells, but the mobility of chromatin and mRNPs did not decrease to the same degree as in starvation (Figure 3B and C). We therefore conclude that a ~70% reduction of intracellular ATP, as observed in glucose-depleted cells, is insufficient to fully explain the confinement of macromolecular mobility during glucose starvation.
 
-## Reduction of intracellular pH titrates macromolecular mobility but cannot explain starvation-induced macromolecular confinement
+### Reduction of intracellular pH titrates macromolecular mobility but cannot explain starvation-induced macromolecular confinement
 
-Next, we investigated the contribution of intracellular pH to macromolecular confinement upon starvation. The intracellular pH (pH
+Next, we investigated the contribution of intracellular pH to macromolecular confinement upon starvation. The intracellular pH (pHi) of budding yeast was reported to decrease from pH ~7.3 to pH ~6.4 in a time frame consistent with the observed confinement of macromolecular mobility upon glucose deprivation (Orij et al., 2009; Young et al., 2010). Using the pH-sensitive GFP analog, pHluorin, as a pHi biosensor (Miesenböck et al., 1998), we confirmed in our experimental conditions that glucose starvation causes a reduction in pHi from ~7.4 to ~6.4 (Figure 4A). We then manipulated intracellular proton concentrations by the addition of the weak acid potassium sorbate (K+Sorbate). K+Sorbate traverses the plasma membrane, releases a proton, and reduces pHi in a concentration-dependent manner (Bracey et al., 1998; Piper et al., 2001). Varying the extracellular concentration of K+Sorbate from 0 mM to 8 mM enabled us to titrate pHi from pH 7.4 to pH 5.9, thus covering more than the pHi range observed in cells grown either in (+) glucose or (–) glucose conditions, with little effect on intracellular ATP levels (Figure 4A and B). Remarkably, exposing cells to increasing concentrations of K+Sorbate induced macromolecular confinement, and both chromatin and mRNP mobility could be titrated with decreasing pHi (Figure 4C–F; Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig4-v2.jpg)
 
-**Figure 4.:** i) can reduce macromolecular mobility but cannot explain the confinement observed in glucose-starved cells (Figure 4—figure supplements 1 and 2).(A) Boxplots of the pHi of cells acutely starved for glucose or treated with varying concentrations of potassium sorbate (K+Sorbate). Log-growing yeast cells expressing phluorin (Miesenböck et al., 1998) were acutely starved of glucose or treated with K+Sorbate for 30 min before ratiometric imaging. Intracellular pH was then estimated from a calibration curve (see 'Materials and methods'; Figure 4—figure supplement 1). Values from three biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. (B) Intracellular ATP concentrations after treatment with either 2 mM or 8 mM K+Sorbate. Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n =2). (C) Log-log MSD plot of the POA1 locus after treatment with K+Sorbate as described in (A). (D) Log-log MSD plot of the GFA1 mRNP after treatment as described in (A). E) Log-log MSD plot of the pLacO plasmid after treatment as described in (A). (F) Log-log MSD plot of the FBA1 mRNP after treatment as described in (A). (G) Log-log MSD plot of the POA1 locus after acute glucose starvation into starvation media (SC) adjusted to pH 7.4. (H) Log-log MSD plot of the GFA1 mRNP after treatment as described in (G).DOI: http://dx.doi.org/10.7554/eLife.09376.011
+**Figure 4.:** (A) Boxplots of the pHi of cells acutely starved for glucose or treated with varying concentrations of potassium sorbate (K+Sorbate). Log-growing yeast cells expressing phluorin (Miesenböck et al., 1998) were acutely starved of glucose or treated with K+Sorbate for 30 min before ratiometric imaging. Intracellular pH was then estimated from a calibration curve (see 'Materials and methods'; Figure 4—figure supplement 1). Values from three biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. (B) Intracellular ATP concentrations after treatment with either 2 mM or 8 mM K+Sorbate. Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n =2). (C) Log-log MSD plot of the POA1 locus after treatment with K+Sorbate as described in (A). (D) Log-log MSD plot of the GFA1 mRNP after treatment as described in (A). E) Log-log MSD plot of the pLacO plasmid after treatment as described in (A). (F) Log-log MSD plot of the FBA1 mRNP after treatment as described in (A). (G) Log-log MSD plot of the POA1 locus after acute glucose starvation into starvation media (SC) adjusted to pH 7.4. (H) Log-log MSD plot of the GFA1 mRNP after treatment as described in (G).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** i) titrates macromolecular mobility.(A) Intracellular pH calibration curve (Orij et al., 2009) (see 'Materials and methods'). Error bars represent SD. (B) Log-log MSD plot of the URA3 locus. Cells were treated as described in Figure 4A.DOI: http://dx.doi.org/10.7554/eLife.09376.012
+**Figure 4—figure supplement 1.:** (A) Intracellular pH calibration curve (Orij et al., 2009) (see 'Materials and methods'). Error bars represent SD. (B) Log-log MSD plot of the URA3 locus. Cells were treated as described in Figure 4A.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Intracellular ATP concentrations after differing treatments with 0.02% sodium azide (‘wash’ versus ‘spike’) (see 'Materials and methods'). Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n = 2 experiments). (B) Boxplots of the intracellular pH of cells treated as in (A). Log-growing cells were treated as described with sodium azide for 30 min before ratiometric imaging. Values from three biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. Outliers (black circles) are defined as points further from the quartile-box than 1.5 times the length of the quartile-box. (C) Log-log MSD plot of the POA1 locus after each treatment described in (A) overlaid from Figure 1B. (D) Log-log MSD plot of the GFA1 mRNP after each treatment described in (A) overlaid from Figure 1E.DOI: http://dx.doi.org/10.7554/eLife.09376.013
+**Figure 4—figure supplement 2.:** (A) Intracellular ATP concentrations after differing treatments with 0.02% sodium azide (‘wash’ versus ‘spike’) (see 'Materials and methods'). Intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n = 2 experiments). (B) Boxplots of the intracellular pH of cells treated as in (A). Log-growing cells were treated as described with sodium azide for 30 min before ratiometric imaging. Values from three biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. Outliers (black circles) are defined as points further from the quartile-box than 1.5 times the length of the quartile-box. (C) Log-log MSD plot of the POA1 locus after each treatment described in (A) overlaid from Figure 1B. (D) Log-log MSD plot of the GFA1 mRNP after each treatment described in (A) overlaid from Figure 1E.
 
 Importantly, however, treatment with the highest concentration of K+Sorbate (8 mM) was necessary to fully recapitulate the starvation-induced confinement of both chromatin and mRNPs (Figure 4C–F). Under this condition, pHi dropped to 5.9, which is below the physiologically observed pHi of 6.4 in glucose-starved cells (Figure 4A). When pHi was lowered to 6.4 (by the addition of 2 mM K+Sorbate), the movement of both chromatin and mRNPs was only moderately reduced (Figure 4C–F). Furthermore, starvation in (–) glucose media adjusted to pH 7.4, which prevents a drop in intracellular pH (Dechant et al., 2010), failed to inhibit the confinement of chromatin and mRNPs upon glucose starvation (Figure 4G and H). Thus, the starvation-induced reduction of pHi is neither sufficient nor necessary and cannot fully explain the observed confinement of macromolecular mobility.
 
-## Starvation induces a reduction in cellular volume
+### Starvation induces a reduction in cellular volume
 
-In the course of our experiments, we found that the nuclear volume decreased upon glucose withdrawal (
+In the course of our experiments, we found that the nuclear volume decreased upon glucose withdrawal (Figure 5A). Since nuclear volume and cellular volume are generally tightly linked (Neumann and Nurse, 2007; Jorgenesen et al., 2002), we utilized a Coulter Counter to examine whether cell size changes upon glucose starvation. Indeed, the median cell volume decreased from 101.6 fL (σ = 54.6) in glucose to 86.1 fL (σ = 45.6) in starved cells, corresponding to a volume reduction of ~15% (Figure 5B). In addition, we observed that the yeast vacuole, an organelle involved in various processes including protein degradation and metabolite storage, swelled in size under glucose starvation conditions (Figure 5C). In non-starved cells, the vacuole-to-cell volume ratio was 0.25 ± 0.02, whereas for starved cells this ratio increased to 0.40 ± 0.01 (mean ± standard error for three independent experiments) (Figure 5D). In combination, this vacuolar volume expansion together with the decrease in total cell and nuclear volume, reduces the cytoplasmic space that is available for diffusing molecules upon glucose starvation by ~30% ('Materials and methods').
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig5-v2.jpg)
 
-**Figure 5.:** Figure 5—figure supplements 1 and 2).(A) Nuclear volume after acute glucose starvation. Histograms of nuclear volumes measured by reconstruction from three-dimensional image stacks using Imaris. The p-value resulting from a two-tailed t-test on the average volume in each condition (unpaired values assuming equal variance) is p<0.001. (B) Histograms of cell volumes of log-growing and acutely starved yeast cells. Log-growing cells, (+) glucose, were acutely starved of glucose, (–) glucose, and cell volume was measured using a Beckman Coulter Multisizer 3 (see 'Materials and methods'). Approximately 50,000 cells were measured for each condition. (C) Cytoplasmic free GFP (green) and vacuolar membrane protein Vph1-mCherry (magenta) fluorescence images. Scale bar: 10 μm. (D) Quantification of vacuole-to-cell volume ratio. Error bars represent standard errors about the mean (N = 3 independent experiments with > 55 cells per experiment). (E) Log-log MSD plot of the POA1 locus after treatment with increasing concentrations of NaCl. Cells were imaged approximately 10 min after hyperosmotic shock. (F) Log-log MSD plot of the GFA1 mRNP after treatment as described in (E).DOI: http://dx.doi.org/10.7554/eLife.09376.014
+**Figure 5.:** (A) Nuclear volume after acute glucose starvation. Histograms of nuclear volumes measured by reconstruction from three-dimensional image stacks using Imaris. The p-value resulting from a two-tailed t-test on the average volume in each condition (unpaired values assuming equal variance) is p<0.001. (B) Histograms of cell volumes of log-growing and acutely starved yeast cells. Log-growing cells, (+) glucose, were acutely starved of glucose, (–) glucose, and cell volume was measured using a Beckman Coulter Multisizer 3 (see 'Materials and methods'). Approximately 50,000 cells were measured for each condition. (C) Cytoplasmic free GFP (green) and vacuolar membrane protein Vph1-mCherry (magenta) fluorescence images. Scale bar: 10 μm. (D) Quantification of vacuole-to-cell volume ratio. Error bars represent standard errors about the mean (N = 3 independent experiments with > 55 cells per experiment). (E) Log-log MSD plot of the POA1 locus after treatment with increasing concentrations of NaCl. Cells were imaged approximately 10 min after hyperosmotic shock. (F) Log-log MSD plot of the GFA1 mRNP after treatment as described in (E).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Cells were treated with K+Sorbate as in Figure 4 and cell volume measured as in Figure 5B. (B) Cells were starved of glucose in either low or high pH (5.0 or 7.4) and cell volume was measured.DOI: http://dx.doi.org/10.7554/eLife.09376.015
+**Figure 5—figure supplement 1.:** (A) Cells were treated with K+Sorbate as in Figure 4 and cell volume measured as in Figure 5B. (B) Cells were starved of glucose in either low or high pH (5.0 or 7.4) and cell volume was measured.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Intracellular ATP concentrations after treatment with either 0.4 M or 0.8 M NaCl. Cells were treated as described in Figure 5E and intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n = 2 experiments). (B) Boxplots of intracellular pH after hyposmotic shock as described in Figure 5E. Cells were treated with hyperosmotic shock media for 10 min before ratiometric imaging. Values from two biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. Outliers (black circles) are defined as points further from the quartile-box than 1.5 times the length of the quartile-box. (C) Log-log MSD plot of the pLacO plasmid. Cells were treated as described in Figure 5E. (D) Log-log MSD plot of the FBA1 mRNP. Cells were treated as described in Figure 5E.DOI: http://dx.doi.org/10.7554/eLife.09376.016
+**Figure 5—figure supplement 2.:** (A) Intracellular ATP concentrations after treatment with either 0.4 M or 0.8 M NaCl. Cells were treated as described in Figure 5E and intracellular ATP concentrations were determined as in Figure 3A. The zero minute time point was taken immediately after each treatment. Error bars represent SD (n = 2 experiments). (B) Boxplots of intracellular pH after hyposmotic shock as described in Figure 5E. Cells were treated with hyperosmotic shock media for 10 min before ratiometric imaging. Values from two biological replicates were pooled and compiled into boxplots. Whiskers represent the minimum and maximum respectively. Outliers (black circles) are defined as points further from the quartile-box than 1.5 times the length of the quartile-box. (C) Log-log MSD plot of the pLacO plasmid. Cells were treated as described in Figure 5E. (D) Log-log MSD plot of the FBA1 mRNP. Cells were treated as described in Figure 5E.
 
-## A reduction in cellular volume is sufficient to confine macromolecular mobility
+### A reduction in cellular volume is sufficient to confine macromolecular mobility
 
 We hypothesized that such a large reduction of the accessible cellular volume may be sufficient to induce the observed macromolecular confinement, for example, by an increase in macromolecular crowding or changes in cellular viscosity (Luby-Phelps, 2000). If the hypothesis was correct that a decrease of cell volume was the singular response that confines macromolecular mobility, two predictions could be made: (1) lowering the pHi by the addition of K+Sorbate might induce a decrease in cellular volume since high concentrations of potassium sorbate can replicate the confinement of both chromatin and mRNPs during starvation, and (2) manipulation of cellular volumes, for example, by changes in osmolarity should recapitulate the effects of glucose starvation on cytoskeleton-independent mobility (mRNPs) and on mobility influenced by the cytoskeleton (chromatin).
 
@@ -132,31 +384,43 @@ To test our first prediction, we explored the effect of pHi changes on cell volu
 
 To further test our model, we manipulated the cellular volume by changing the extracellular osmolarity. We treated cells with increasing concentrations of NaCl and monitored the effects on chromatin and mRNPs. Notably, addition of NaCl had little effect on pHi or cellular ATP levels, allowing us to uncouple the effects of cell volume from these factors (Figure 5—figure supplement 2). As shown in Figure 5E and F and Figure 5—figure supplement 2C and D, both chromatin and mRNP mobility were progressively confined by increasing the magnitude of osmotic shock, consistent with recent results demonstrating that osmotic shock affects intracellular diffusion (Babazadeh et al., 2013; Miermont et al., 2013). Therefore, a reduction of cell volume is sufficient to explain the starvation-induced confinement of macromolecular mobility.
 
-## The reduction in volume leads to an increase in molecular crowding
+### The reduction in volume leads to an increase in molecular crowding
 
-We next explored how decreased cell volume could impede the movement of macromolecules. In the very densely packed environment of the cell, a reduction in the volume accessible to diffusing molecules can alter protein-protein interactions and induce complex phase changes such as liquid-to-gel-like or liquid-to-glass-like transitions (
+We next explored how decreased cell volume could impede the movement of macromolecules. In the very densely packed environment of the cell, a reduction in the volume accessible to diffusing molecules can alter protein-protein interactions and induce complex phase changes such as liquid-to-gel-like or liquid-to-glass-like transitions (Doliwa and Heurer, 1998; Weeks et al., 2000). To test whether glucose starvation causes an increase in molecular crowding, we examined whether the observed volume loss is compensated by a reduction in the total biomass of the cell. We performed lyophilization mass measurement experiments in which starved and non-starved yeast cells were freeze-dried to remove their water content, and their masses were measured and normalized against the total number of cells (Figure 6A). We saw no significant difference between the non-starved and starved samples (11.5 ± 0.5 pg/cell and 11.9 ± 0.4 pg/cell, respectively; mean ± standard deviation for three independent experiments). Importantly, yeast cells grown continuously in raffinose, which are known to be smaller than cells grown on glucose (Tyson et al., 1979) and thus served as a positive control, showed a 23% reduction in cell mass (8.9 pg/cell) compared to cells grown in glucose. Thus, acute glucose starvation does not induce a decrease in cell mass despite a significant reduction in the accessible cellular volume. This increase in mass density suggests that the intracellular environment experiences increased molecular crowding conditions, which may lead to broad changes in the material properties of the cell.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig6-v2.jpg)
 
-**Figure 6.:** Figure 6—figure supplements 1 and 2).(A) Dry mass measurements of non-starved and starved yeast. Yeast cells in normal glucose, glucose deprivation, and raffinose growth conditions were lyophilized, and their cellular dry masses were determined. Error bars represent standard deviations about the mean (N = 3 independent experiments for non-starved and starved conditions; N = 1 for raffinose growth condition). (B) AFM experiments measure a mean stiffness increase from 18 to 22 nN·μm-1 for non-starved and starved cells, respectively, along with an increase in cell-to-cell variability (Kolmogorov-Smirnov test, p = 0.013). Box plot: red line represents the mean, blue lines represent the 1st and 3rd quartiles, and whiskers represent the minimum and maximum values. Each data point represents the mean value of eight measurement cycles on a single cell (see 'Materials and methods'). (C) Mating pheromone-treated budding yeast cells (shmoos) remain elongated after starvation. Shmooed budding yeast cells prior to spheroplasting (left), non-starved shmooed spheroplasts (center), and starved shmooed spheroplasts (right). Scale bar: 10 μm. (D) Fission yeast cells remain elongated after starvation. Fission yeast cells prior to spheroplasting (left), non-starved spheroplasts (center), and starved spheroplasts (right). Scale bar: 10 μm. Spheroplasting efficiency in the experiments described in (B), (C), and (D) was equally efficient in starved and non-starved cells and assessed via lysis in water. (E) Histograms of cell volumes of log-growing wildtype E. coli after 30 min of treatment with 2 mM DNP or the solvent control (EtOH). Approximately 100,000 cells were measured in each condition using a Beckman Coulter Multisizer 3.DOI: http://dx.doi.org/10.7554/eLife.09376.017
+**Figure 6.:** (A) Dry mass measurements of non-starved and starved yeast. Yeast cells in normal glucose, glucose deprivation, and raffinose growth conditions were lyophilized, and their cellular dry masses were determined. Error bars represent standard deviations about the mean (N = 3 independent experiments for non-starved and starved conditions; N = 1 for raffinose growth condition). (B) AFM experiments measure a mean stiffness increase from 18 to 22 nN·μm-1 for non-starved and starved cells, respectively, along with an increase in cell-to-cell variability (Kolmogorov-Smirnov test, p = 0.013). Box plot: red line represents the mean, blue lines represent the 1st and 3rd quartiles, and whiskers represent the minimum and maximum values. Each data point represents the mean value of eight measurement cycles on a single cell (see 'Materials and methods'). (C) Mating pheromone-treated budding yeast cells (shmoos) remain elongated after starvation. Shmooed budding yeast cells prior to spheroplasting (left), non-starved shmooed spheroplasts (center), and starved shmooed spheroplasts (right). Scale bar: 10 μm. (D) Fission yeast cells remain elongated after starvation. Fission yeast cells prior to spheroplasting (left), non-starved spheroplasts (center), and starved spheroplasts (right). Scale bar: 10 μm. Spheroplasting efficiency in the experiments described in (B), (C), and (D) was equally efficient in starved and non-starved cells and assessed via lysis in water. (E) Histograms of cell volumes of log-growing wildtype E. coli after 30 min of treatment with 2 mM DNP or the solvent control (EtOH). Approximately 100,000 cells were measured in each condition using a Beckman Coulter Multisizer 3.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Both glucose-starved and non-starved budding yeast cells show an anti-correlation of cell stiffness with cell diameter. Linear fitting R2 value for non-starved cell data = 0.54; R2 value for starved cell data = 0.71. Each data point represents the mean value of eight measurement cycles on a single cell (see 'Materials and methods').DOI: http://dx.doi.org/10.7554/eLife.09376.018
+**Figure 6—figure supplement 1.:** Both glucose-starved and non-starved budding yeast cells show an anti-correlation of cell stiffness with cell diameter. Linear fitting R2 value for non-starved cell data = 0.54; R2 value for starved cell data = 0.71. Each data point represents the mean value of eight measurement cycles on a single cell (see 'Materials and methods').
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** Intracellular ATP concentrations of log-growing yeast were determined as in Figure 3A after treatment with latrunculin A or the solvent control DMSO. The zero minute time point was taken immediately after each treatment. Error bars represent SD from four biological replicates. p-Values shown are for a two-tailed t-test for unpaired values assuming equal variance.DOI: http://dx.doi.org/10.7554/eLife.09376.019
+**Figure 6—figure supplement 2.:** Intracellular ATP concentrations of log-growing yeast were determined as in Figure 3A after treatment with latrunculin A or the solvent control DMSO. The zero minute time point was taken immediately after each treatment. Error bars represent SD from four biological replicates. p-Values shown are for a two-tailed t-test for unpaired values assuming equal variance.
 
-## Glucose starvation affects the mechanical properties of budding yeast cells
+### Glucose starvation affects the mechanical properties of budding yeast cells
 
 To examine whether the starvation-induced changes in macromolecular mobility are accompanied by changes in the viscoelastic properties of cells we measured the effective stiffness of budding yeast upon acute glucose starvation using atomic force microscopy (AFM). Our setup used wedged AFM cantilevers for parallel plate compression to characterize yeast cell morphology. These live-cell micro-compression experiments provide measurements of cellular viscoelasticity and cell stiffness under various conditions (Stewart et al., 2013; Ramanathan et al., 2015). After removal of the cell wall, glucose-starved and non-starved yeast spheroplasts were subjected to AFM measurements. Force-response curves were recorded while compressing single cells and analysis showed that glucose starvation induced a change in the cells’ mechanical properties increasing their mean stiffness from 18 to 22 nN·µm–1 as well as increasing the cell-to-cell variability in stiffness (Figure 6B). Consistent with the cell size measurements described above (Figure 5B), these AFM experiments also suggest that starved yeast cells are smaller than the corresponding control cells and that there appears to be a negative correlation between cell size and stiffness (Figure 6—figure supplement 1).
 
-In a separate approach, we also investigated the rigidity of the cytoplasm by examining cell morphology after removal of the cell wall. Without an intact cell wall, the cytoplasmic turgor pressure causes the yeast spheroplast to ‘ball up’ into a sphere. Since budding yeast cells are naturally round to begin with, we treated cells with the mating pheromone α-factor to generate shmoos, mating projections that cause the cell to become substantially elongated. Spheroplasted shmooed cells which were not starved of glucose behaved as expected and formed spherical spheroplasts (Figure 6C, Video 1). Intriguingly, starved shmooed spheroplasts remained predominantly in an elongated form (~four-fold less spherical spheroplasts in starved versus non-starved conditions) (Figure 6C, Video 2). This resistance to the internal turgor pressure suggests that the starved yeast cytoplasm is significantly more rigid than that of non-starved yeast, consistent with our AFM measurements. Furthermore, this stiffening is reversible as re-addition of glucose to the starved spheroplasts returned them to a spherical form (Video 3), suggesting that sensory feedback pathways may exist to actively regulate this stiffening mechanism. Taken together our results demonstrate that budding yeast cells undergo dramatic biophysical changes upon acute glucose starvation affecting their viscoelastic properties in addition to their intracellular macromolecular diffusion.10.7554/eLife.09376.020Video 1.Spheroplasted budding yeast shmoos.DOI: http://dx.doi.org/10.7554/eLife.09376.02010.7554/eLife.09376.021Video 2.Spheroplasted starved budding yeast shmoos.DOI: http://dx.doi.org/10.7554/eLife.09376.02110.7554/eLife.09376.022Video 3.Re-addition of glucose to spheroplasted starved budding yeast shmoos.DOI: http://dx.doi.org/10.7554/eLife.09376.022
+In a separate approach, we also investigated the rigidity of the cytoplasm by examining cell morphology after removal of the cell wall. Without an intact cell wall, the cytoplasmic turgor pressure causes the yeast spheroplast to ‘ball up’ into a sphere. Since budding yeast cells are naturally round to begin with, we treated cells with the mating pheromone α-factor to generate shmoos, mating projections that cause the cell to become substantially elongated. Spheroplasted shmooed cells which were not starved of glucose behaved as expected and formed spherical spheroplasts (Figure 6C, Video 1). Intriguingly, starved shmooed spheroplasts remained predominantly in an elongated form (~four-fold less spherical spheroplasts in starved versus non-starved conditions) (Figure 6C, Video 2). This resistance to the internal turgor pressure suggests that the starved yeast cytoplasm is significantly more rigid than that of non-starved yeast, consistent with our AFM measurements. Furthermore, this stiffening is reversible as re-addition of glucose to the starved spheroplasts returned them to a spherical form (Video 3), suggesting that sensory feedback pathways may exist to actively regulate this stiffening mechanism. Taken together our results demonstrate that budding yeast cells undergo dramatic biophysical changes upon acute glucose starvation affecting their viscoelastic properties in addition to their intracellular macromolecular diffusion.
 
-## Changes in biophysical properties are a conserved starvation response
+![Video 1.](https://cdn.elifesciences.org/articles/09376/elife-09376-media1.mp4.jpg)
 
-To examine whether similar biophysical changes can also be observed in other unicellular eukaryotes upon glucose withdrawal, we monitored the starvation-response of the fission yeast, Schizosaccharomyces pombe. Budding and fission yeast separated evolutionarily several hundred million years ago, and they are as different from each other as either is from metazoans (Sipiczki, 2000). Since S. pombe is naturally rod-shaped, we performed analogous spheroplasting experiments as described in Figure 6C. Upon digestion of the cell wall, S. pombe cells round up and become spherical (Figure 6D, Video 4). Conversely, glucose-starved cells maintain their rod-shape, reminiscent of the shmooed budding yeast cells, again demonstrating that glucose-withdrawal leads to a remarkable stiffening of the cytoplasm (Figure 6D, Video 5). As for budding yeast, the stiffening is also reversible as addition of glucose to starved S. pombe spheroplasts returns them to a spherical shape (Video 6).10.7554/eLife.09376.023Video 4.Spheroplasted fission yeast.DOI: http://dx.doi.org/10.7554/eLife.09376.02310.7554/eLife.09376.024Video 5.Spheroplasted starved fission yeast.DOI: http://dx.doi.org/10.7554/eLife.09376.02410.7554/eLife.09376.025Video 6.Re-addition of glucose to spheroplasted starved fission yeast.DOI: http://dx.doi.org/10.7554/eLife.09376.025
+![Video 2.](https://cdn.elifesciences.org/articles/09376/elife-09376-media2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/09376/elife-09376-media3.mp4.jpg)
+
+### Changes in biophysical properties are a conserved starvation response
+
+To examine whether similar biophysical changes can also be observed in other unicellular eukaryotes upon glucose withdrawal, we monitored the starvation-response of the fission yeast, Schizosaccharomyces pombe. Budding and fission yeast separated evolutionarily several hundred million years ago, and they are as different from each other as either is from metazoans (Sipiczki, 2000). Since S. pombe is naturally rod-shaped, we performed analogous spheroplasting experiments as described in Figure 6C. Upon digestion of the cell wall, S. pombe cells round up and become spherical (Figure 6D, Video 4). Conversely, glucose-starved cells maintain their rod-shape, reminiscent of the shmooed budding yeast cells, again demonstrating that glucose-withdrawal leads to a remarkable stiffening of the cytoplasm (Figure 6D, Video 5). As for budding yeast, the stiffening is also reversible as addition of glucose to starved S. pombe spheroplasts returns them to a spherical shape (Video 6).
+
+![Video 4.](https://cdn.elifesciences.org/articles/09376/elife-09376-media4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/09376/elife-09376-media5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/09376/elife-09376-media6.mp4.jpg)
 
 It was recently reported that the bacterial cytoplasm has glass-like properties and can undergo liquid-like to solid-like transitions upon starvation or treatment with 2,4-Dinitrophenol (DNP), an uncoupler of oxidative phosphorylation (Parry et al., 2014). This condition results in confinement of macromolecules and disproportionally affects large particles above ~30 nm (Parry et al., 2014). The underlying mechanism for this cytoplasmic transition into a solid-like state in bacteria remains unexplored, but Parry et al. (2014) suggested that metabolic activity is needed to keep the bacterial cytoplasm fluid. Although the cytoplasmic organization of prokaryotic and eukaryotic cells have dramatic differences, the similarity between these observations in bacteria and our findings in yeast prompted us to test whether there is a common underlying mechanism and whether bacteria also use a reduction in cell volume to increase crowding and confine macromolecular mobility. Strikingly, a 30 min treatment of E.coli with 2 mM DNP caused a significant reduction in the volume of E.coli, inducing a ~9.5% modal volume contraction (SD = ± 4.1%) (Figure 6E). It should be noted, however, that the treatment utilized here, for technical reasons, is longer than the DNP-incubation time reported by Parry et al. (2014). Nevertheless, this result suggests that the reported liquid-to-solid like phase transition of the bacterial cytoplasm may also be triggered by cellular volume loss and suggests that the starvation-induced reduction of cell size could be a deeply conserved starvation response.
 
@@ -182,87 +446,212 @@ On the other hand, molecular crowding-enhanced aggregation and confined macromol
 
 ## Materials and methods
 
-## Strains and growth
+### Strains and growth
 
-Yeast strains used in this study are of the W303 strain-background, except for strains containing labeled mRNPs which are heterozygous diploids of W303 and S288c backgrounds. The E. coli strain utilized for volume measurements is wild type BW25113. Genotypes for every strain are listed in Table 2; plasmids are described in Table 3. Unless otherwise indicated, yeast cells were grown at room temperature in synthetic complete (SC) media at pH 5.0 (titrated with 1 M HCl) containing 2% dextrose (SCD). Specific dropout media was used to maintain plasmids when necessary. E. coli were grown at 30ºC in LB.10.7554/eLife.09376.026Table 2.Yeast strains used in this study.DOI: http://dx.doi.org/10.7554/eLife.09376.026StrainGenotypeSourceKWY165W303; MATa ura3-1 leu2-3 his3-11,15 trp1-1 ade2-1This StudyKWY1622W303; MATα ybr022w::256LacO::LEU2 his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1Green et al., 2012KWY3541KWY 1622, cbp2∆::KANMXThis StudyKWY3538W303; MATα his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1 256LacO::URA3This StudyKWY2848W303; MATα his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1 yel021w::128LacO::URA3This StudyKWY4586W303; MATa ybr022w::112TetO::URA3 yfr023w::256LacO::LEU2 his3::LacI-GFP_TetR-3XmCherry::HIS3This StudyKWY970KWY 165, ura3::pHIS-GFP-TUB1::URA3This StudyKWY3661W303; MATa pHluorin::URA3This StudyKWY4796W303; MATα trp1::dsRED-HDEL::TRP1 leu2::TetR-GFP::LEU2This StudyKWY4736W303 MATa/S288c MATα NDC1/ndc1::NDC1-tdTomato::KANMX GFA1/gfa1::GFA1-24PP7 3xYFP-PP7-CFP::HIS3This StudyKWY4737W303 MATa/S288c MATα NDC1/ndc1::NDC1-tdTomato::KANMX FBA1/fba1::FBA1-24PP7 3xYFP-PP7-CFP::HIS3This StudyKWY5112W303; MATa ura3-1 leu2-3 his3-11,15 trp1-1 ade2-1 VPH1::VPH1-mCherry::KANMX leu2::GFP::CaURA3This StudyKWY6241CAF13 (S. pombe wildtype)This StudyyYB5978S288c; MATa his3∆1 leu2∆0 ura3∆0 met15∆0 LYS2 ADE2 TRP1 bar1::kanMXCaudron and Barral, 201310.7554/eLife.09376.027Table 3.Plasmids used in this study.DOI: http://dx.doi.org/10.7554/eLife.09376.027PlasmidDescriptionSourcepKW2734pHMX-256LacO (CEN, URA3)This StudypKW2957pYES2-PACT1-pHluorin (CEN, URA3)Orij et al., 2009pKW544MET25pro-PP7-CP-3xYFP (CEN, HIS3)This Study
+Yeast strains used in this study are of the W303 strain-background, except for strains containing labeled mRNPs which are heterozygous diploids of W303 and S288c backgrounds. The E. coli strain utilized for volume measurements is wild type BW25113. Genotypes for every strain are listed in Table 2; plasmids are described in Table 3. Unless otherwise indicated, yeast cells were grown at room temperature in synthetic complete (SC) media at pH 5.0 (titrated with 1 M HCl) containing 2% dextrose (SCD). Specific dropout media was used to maintain plasmids when necessary. E. coli were grown at 30ºC in LB.
 
-## Imaging and particle tracking
+**Table 2.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KWY165</td>
+      <td>W303; MATa ura3-1 leu2-3 his3-11,15 trp1-1 ade2-1</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY1622</td>
+      <td>W303; MATα ybr022w::256LacO::LEU2 his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1</td>
+      <td>Green et al., 2012</td>
+    </tr>
+    <tr>
+      <td>KWY3541</td>
+      <td>KWY 1622, cbp2∆::KANMX</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY3538</td>
+      <td>W303; MATα his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1 256LacO::URA3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY2848</td>
+      <td>W303; MATα his3::LacI-GFP::HIS3 trp1::dsRED-HDEL::TRP1 yel021w::128LacO::URA3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY4586</td>
+      <td>W303; MATa ybr022w::112TetO::URA3 yfr023w::256LacO::LEU2 his3::LacI-GFP_TetR-3XmCherry::HIS3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY970</td>
+      <td>KWY 165, ura3::pHIS-GFP-TUB1::URA3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY3661</td>
+      <td>W303; MATa pHluorin::URA3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY4796</td>
+      <td>W303; MATα trp1::dsRED-HDEL::TRP1 leu2::TetR-GFP::LEU2</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY4736</td>
+      <td>W303 MATa/S288c MATα NDC1/ndc1::NDC1-tdTomato::KANMX GFA1/gfa1::GFA1-24PP7 3xYFP-PP7-CFP::HIS3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY4737</td>
+      <td>W303 MATa/S288c MATα NDC1/ndc1::NDC1-tdTomato::KANMX FBA1/fba1::FBA1-24PP7 3xYFP-PP7-CFP::HIS3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY5112</td>
+      <td>W303; MATa ura3-1 leu2-3 his3-11,15 trp1-1 ade2-1 VPH1::VPH1-mCherry::KANMX leu2::GFP::CaURA3</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>KWY6241</td>
+      <td>CAF13 (S. pombe wildtype)</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>yYB5978</td>
+      <td>S288c; MATa his3∆1 leu2∆0 ura3∆0 met15∆0 LYS2 ADE2 TRP1 bar1::kanMX</td>
+      <td>Caudron and Barral, 2013</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pKW2734</td>
+      <td>pHMX-256LacO (CEN, URA3)</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pKW2957</td>
+      <td>pYES2-PACT1-pHluorin (CEN, URA3)</td>
+      <td>Orij et al., 2009</td>
+    </tr>
+    <tr>
+      <td>pKW544</td>
+      <td>MET25pro-PP7-CP-3xYFP (CEN, HIS3)</td>
+      <td>This Study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Imaging and particle tracking
 
 Time-lapse epifluorescence imaging was performed using an inverted Nikon TE2000 microscope equipped with an Andor CCD camera, a motorized stage (Applied Scientific Instrumentation, Inc., Eugene, OR), 60x/1.49NA APO TIRF oil immersion objective, and controlled with Metamorph® software (Molecular Devices, LLC, Sunnyvale, CA). Cells were stabilized by coating the glass-bottom of MatTek® dishes (PG35G-1.5-14-C; MatTek Corporation, Ashland, MA) with 0.2% concanavalin A and aspirating the solution prior to adding 300 µL of OD600 0.2–0.3 cells. All imaging was performed at room temperature. Images for particle tracking were collected at a frame rate of 0.5 s for 60 s, unless otherwise indicated. Particles were tracked using custom MATLAB® (The MathWorks, Inc., Natick, MA) scripts based on the 2D feature finding and particle tracking software made available by Dr. Maria Kilfoil (Pelletier et al., 2009; http://people.umass.edu/kilfoil/downloads.html).
 
-## Quantification of macromolecular mobility
+### Quantification of macromolecular mobility
 
-An average mean square displacement (MSD) was calculated for each condition using the well-described equation:MSDτ=(r(t+τ)−rt)2
+An average mean square displacement (MSD) was calculated for each condition using the well-described equation:
+
+$$
+MSD\tau=(r_{(t+\tau)}−r_{t})^{2}
+$$
 
 Effective diffusion coefficients, K, were computed by finding the slope of the best-fit line between the first and tenth time points of the averaged MSD. The anomalous diffusion exponents of the log-log MSDs, α, were determined by fitting the first 40 time intervals of the averaged MSD to a power law.
 
-## Acute starvation
+### Acute starvation
 
 Five milliliters of cells grown in SCD media (OD600 = 0.4–0.7) were collected by centrifugation (3000 rpm) for 2 min. The supernatant was then removed and cells resuspended in 1 mL of SC media. Four additional wash steps followed, with two 2 min spins (6000 rpm) succeeded by two 1 min spins. The OD600 of the final cell suspension was determined and cells diluted into fresh SC or SCD media for analysis. Time-lapse epifluorescence imaging was performed 30 min after the wash.
 
-## Potassium sorbate treatments
+### Potassium sorbate treatments
 
 Logarithmic cells growing in SCD media (pH 5.0) were incubated with an appropriate concentration of a stock 20 mM K+Sorbate in SCD (pH 5.0) to give rise to the corresponding final concentration of K+Sorbate. Cells were treated for 30 min before imaging.
 
-## Sodium azide treatments
+### Sodium azide treatments
 
 All experiments involving sodium azide (NaN3) took place in SC or SCD media at pH ~5.8. Cells were treated with a final concentration of 0.02% NaN3 (in water) by two distinct protocols. In one treatment, sodium azide was directly added, or 'spiked', into a logarithmic culture. In the other, cells were first washed (via the acute starvation method) in SC media before being resuspended into SCD media containing 0.02% NaN3. This treatment is referred to as 'wash' and is the condition described in the main text.
 
-## Cytoskeleton perturbations
+### Cytoskeleton perturbations
 
 Cells were treated with either 15 µg/mL nocodazole (from a 1.5 mg/mL stock in DMSO; Sigma-Aldrich, St. Louis, MO), and/or 200 µM latrunculin A (from a 10 mM stock in DMSO; Sigma-Aldrich) for 20 min before imaging. This results in 3% DMSO as the control.
 
-## Osmotic shock
+### Osmotic shock
 
 Cells grown in SCD media (OD600 = 0.4–0.7) were collected by centrifugation (3000 rpm) for 2 min and resuspended in SCD media containing the appropriate concentration of NaCl (0.4, 0.6, or 0.8 M). Cells were then imaged after 10 min.
 
-## ATP measurements
+### ATP measurements
 
 The protocol employed was only marginally modified from Ashe et al. (2000). Briefly, 20 µL of sample (KWY1622 cells in culture) was added to 20 µL of 10% TCA and immediately vortexed for 1 min. Of the 40 µL solution, 10 µL was then added to 990 µL of ATP reaction buffer (25 mM HEPES, 2 mM EDTA, pH 7.75). After the time course, 50 µL of a luciferin/luciferase kit (ATP Determination Kit, Sensitive Assay; B-Bridge International, Inc., Cupertino, CA) was directly added to 50 µL of the buffered-ATP solutions and briefly mixed by pipetting the solutions in a Corning 96-well opaque white plate (Corning, Inc., Tewksbury, MA). Reactions took place in the dark for 10 min at room temperature. Luminescence was then measured using a Tecan Infinite 200 Pro microplatereader (Tecan Group Ltd., Männedorf, Switzerland) which was set for a 10 s integration time and no attenuation. Sample aliquots were taken at 0, 10, 30 and 60 min and standardized to a pre-treatment control. ATP concentrations were also corrected for OD600 at the beginning and end of each time course. ATP standards were used to generate a standard curve to insure linearity and estimate intracellular ATP concentrations.
 
-## CellASIC ONIX imaging of quiescent cells
+### CellASIC ONIX imaging of quiescent cells
 
 We utilized a CellASIC ONIX microfluidic profusion platform and accompanying microfluidic plates to track particles in quiescent cells (EMD Millipore, a division of Merck KGaA, Darmstadt, Germany). Quiescence was established by allowing cells to grow within the same SCD media for 7 days (Laporte et al., 2011). Seven-day-old media, collected from the culture by centrifuging 1mL of cells and harvesting the supernatant, was used as perfusion media in the microfluidic plate at a rate of 2 psi.
 
-## Cell volume measurements
+### Cell volume measurements
 
 Cell volume measurements were performed as described in Goranov et al. (2009). In short, 1 mL of cells (KWY4736) were briefly sonicated (1 s, 2X) and diluted (1:100) into Isoton II Dilutent (Beckman Coulter, Inc., Brea, CA) such that saturation levels fluctuated between 1–3% during measurements on a Beckman Coulter Multisizer 3. If oversaturation triggered warnings at any point, the run was terminated and sample repeated. The aperture was also cleaned and flushed between each run. For yeast, the particle count was set to 50,000 and for bacteria, 100,000.
 
-## Filamentous actin quantification
+### Filamentous actin quantification
 
 To quantify filamentous actin, KWY165 cells were fixed with formaldehyde at a final concentration of 4% for 15 min. Fixed cells were washed twice with potassium phosphate buffer and resuspended into PBS-BSA. Cells were then stained with Alexa Fluor 568-phalloidin (Invitrogen, Thermo Fisher Scientific, Waltham, MA) and Hoechst stain. Samples were incubated in the dark at room temperature for 1 hr and washed again with PBS-BSA prior to imaging (Laporte et al., 2011). Background was subtracted from z-stacks (0.15 µm steps over 3 µm) taken with a 100x/1.49NA APO TIRF oil immersion objective using a rolling ball radius of 1 pixel in ImageJ (NIH, Bathesda, MD). Maximal intensity projections were then blinded and cells classified based on the presence or absence of apparent filamentous or bundled actin.
 
-## Intracellular pH measurements
+### Intracellular pH measurements
 
 The phluorin calibration protocol was slightly adapted from Orij et al., (2009) to establish a standard curve. 50 µg/mL (in PBS) of digitonin was used to permeabilize cells for 10 min. After washing cells in PBS and placing them on ice, cells were then incubated in citric acid/Na2HPO4 buffer with pH values ranging from pH 5.0 to pH 8.0. phluorin emission intensity ratios were then calculated from calibration images (taken with a 100x/1.49NA APO TIRF oil immersion objective) using a custom script in ImageJ (NIH) and compared to the pH values of the corresponding buffer. The resulting curve was used to estimate experimental intracellular pH values generated from emission ratios produced from the same ImageJ script. The standard curve and all experiments were performed using KWY3661.
 
-## Nuclear volume measurements
+### Nuclear volume measurements
 
 Nuclear volume measurements were conducted on KWY4796 cells expressing TetR-GFP (and DsRed-HDEL). Cells were grown in complete synthetic medium with 2% dextrose overnight at 25ºC to OD 0.5–0.8. Cells were then treated as indicated and transferred to Nunc Lab-Tek chambers (Thermo Fisher Scientific) coated with concanavalin A at OD 0.2. To wash cells into different medium conditions, cells were pelleted at 6000 rpm in a table top centrifuge and washed four times with synthetic medium lacking dextrose and then resuspended in synthetic medium either lacking dextrose or supplemented with 2% dextrose. Three-dimensional stacks with 0.24 µm z stepping were acquired on a Zeiss Axio Observer Z1 spinning disk confocal microscope equipped with a motorized piezo stage (Applied Scientific Instrumentation, Inc.) and an EMCCD camera using a 100x 1.46 Oil, alpha Plan Apochromat objective. TetR-GFP was excited with a 488 nm laser line and scanned using a Quad Band 'RQFT' 405/488/568/647 dichroic and a 520/35 band pass emission filter. Image stacks were processed in Imaris (Bitplane AG, Zurich, Switzerland) to reconstruct nuclear volume.
 
-## Microtubule dynamics
+### Microtubule dynamics
 
 S. cerevisiae cells with GFP-Tub1 integrated at the URA3 locus were grown overnight to mid-log phase in SCD media (pH 5.0) and then treated by acute glucose starvation (as above). The cells were then adhered to Concanavalin A treated 384-well glass plates while maintaining the experimental condition. Cells were imaged by epifluorescence time-lapse microscopy for 20 min: a z-stack of five images, each 1 µm apart was acquired once every minute. The resulting images were processed by a maximum intensity projection and the number of microtubule elongation events per minute was manually scored by an experimental blinded to the sample identity.
 
-## Lyophilization mass measurements
+### Lyophilization mass measurements
 
 KWY165 yeast cells were grown in 400 mL synthetic complete + 2% dextrose (SCD) media and harvested during log-phase growth (OD600 ~ 0.8). Cells were spun down, supernatant removed, and cells re-suspended in 50 mL synthetic complete without dextrose (SC) media, and then repeated with two further wash steps. The sample was then finally re-suspended into 4 mL SC media. 2 mL were added to 48 mL SCD media, and 2 mL were added to 48 mL SC media. Both samples were incubated at 25°C for 30 min. Then the samples were spun down, supernatant removed, and cells re-suspended into 1 mL water, which was repeated two more times. After the final wash step, the supernatant was removed, and the cell pellet was lyophilized under 0.040 mbar pressure at -50°C for 24 hr using the Alpha 2–4 LDplus freeze-dryer (Martin Christ GmbH, Osterode am Harz, Germany). The dry mass of the cells were measured, and the cells were re-suspended in water and counted using a hemocytometer to determine the average mass per cell for both the non-starved and starved cells. For mass measurements with raffinose, the protocol was the same except dextrose was replaced with raffinose.
 
-## Vacuolar volume measurements
+### Vacuolar volume measurements
 
 KWY5112 cells expressing GFP and N-terminally tagged Vph1-mCherry were grown in SCD media and harvested during log-phase growth. The standard acute glucose starvation protocol was performed, and the cells were placed on concanavalin A-coated Lab-Tek chambered slides (Thermo Fisher Scientific Inc, Waltham, MA) and imaged on a spinning disk confocal microscope (Carl Zeiss AG, Jena, Germany). The entire cell volume was imaged using a z-stack (0.24 µm z-slice height) under 488 nm (GFP) and 561 nm (mCherry) laser excitation with a 100x α Plan-Apochromat objective. The z-stack images were segmented and the vacuolar and cellular volumes were computed using custom Python scripts.
 
-## Accessible cytoplasmic volume calculation
+### Accessible cytoplasmic volume calculation
 
-To calculate the change in accessible cytoplasmic volume after glucose starvation, the total cell shrinkage (15%), nuclear volume reduction (4.60 fL to 4.12 fL), and vacuolar volume expansion (25 to 40% of cellular volume) were taken into account. The accessible cytoplasmic volumes were computed using:ANS=CNS−VNS−NNSAS=CS−VS−NSCS=0.85·CNSVNS=0.25·CNSVS=0.40·CS
+To calculate the change in accessible cytoplasmic volume after glucose starvation, the total cell shrinkage (15%), nuclear volume reduction (4.60 fL to 4.12 fL), and vacuolar volume expansion (25 to 40% of cellular volume) were taken into account. The accessible cytoplasmic volumes were computed using:
+
+$$
+A_{NS}=C_{NS}−V_{NS}−N_{NS}A_{S}=C_{S}−V_{S}−N_{S}C_{S}=0.85·C_{NS}V_{NS}=0.25·C_{NS}V_{S}=0.40·C_{S}
+$$
 
 where A, C, V and N denote the accessible cytoplasmic volume, total cell volume, vacuolar volume, and nuclear volume, respectively, the subscripts NS and S denote the non-starved and starved conditions, and NNS = 4.60 fL and NS = 4.12 fL.
 
-## AFM cell stiffness assay
+### AFM cell stiffness assay
 
 For stiffness measurements of yeast cells an AFM (Cellhesion 200, JPK Instruments) was mounted on an inverted microscope (Observer.Z1, Zeiss). DIC images were recorded using a 40x/1.2 C-Apochromat water immersion objective (Zeiss). Tip-less cantilevers (NSC12/noAl, Mikromasch, 350 µm long, nominal spring constant 150 mN·m-1) were modified with PDMS (Sylgard 184, Dow Corning) wedges to correct for tilt angle of the cantilever and to be able to confine yeast cells between two parallel plates [Stewart et al., 2013]. KWY165 cells in log-phase growth were spheroplasted for 1 hr in 200 µg·mL-1 zymolyase 100T (Amsbio) in SCD plus 1 M sorbitol at 30°C. Spheroplasts were then either washed into SCD plus 1 M sorbitol (non-starved treatment) or SC plus 1 M sorbitol (starved treatment) for 1 hr at room temperature before plated onto concanavalin A-coated glass-bottomed Petri dishes (WPI). For each stiffness measurement, an isolated spheroplast was identified and DIC imaged. The image was used to determine the spheroplast diameter. Thereafter, the cantilever wedge was positioned ~20 µm above the spheroplast and lowered at 1 µm·s-1 until an upward force of 10 nN was recorded. The cantilever height was maintained for 10 s before the cantilever was raised 10 µm at 1 µm·s-1. The cantilever was then lowered onto the same cell, paused and raised successively for seven further cycles. The cantilever height and the force acting on the cantilever were recorded at 40 Hz. The slope (least-squares fit, nN·µm-1) of the data points between 3 and 7 nN of force of the downward phase of each cycle was determined. The mean of these slopes was used as the measure of spheroplast stiffness.
 
-## Spheroplasting assays
+### Spheroplasting assays
 
 For budding yeast cells, yYB5978 was grown overnight in YPD (1% yeast extract, 2% peptone, 2% dextrose) at 30°C and diluted to OD600 = 0.1 in 25 mL YPD. Two hours later, mating pheromone (α-factor, Sigma T-6901-1mg) was added at a concentration of 8 ng/mL in YPD containing 20 µg/mL casein as a blocking agent. After 4–5 hr, the shmooed cells were washed into either SCD or SC (for non-starved and starved conditions respectively) and incubated at room temperature for 1 hr. Cells were then spun down and resuspended into either SCD or SC containing 1 M sorbitol and 200 µg/mL zymolyase 100T (Amsbio). Cells were incubated at 30°C for 1 hr. Spheroplasting efficiency was examined upon cell lysis in water.
 

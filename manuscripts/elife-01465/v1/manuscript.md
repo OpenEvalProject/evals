@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.01465.001 Anatomically plausible networks of functionally inter-connected regions have been reliably demonstrated at rest, although the neurochemical basis of these ‘resting state networks’ is not well understood. In this study, we combined magnetic resonance spectroscopy (MRS) and resting state fMRI and demonstrated an inverse relationship between levels of the inhibitory neurotransmitter GABA within the primary motor cortex (M1) and the strength of functional connectivity across the resting motor network. This relationship was both neurochemically and anatomically specific. We then went on to show that anodal transcranial direct current stimulation (tDCS), an intervention previously shown to decrease GABA levels within M1, increased resting motor network connectivity. We therefore suggest that network-level functional connectivity within the motor system is related to the degree of inhibition in M1, a major node within the motor network, a finding in line with converging evidence from both simulation and empirical studies. DOI: http://dx.doi.org/10.7554/eLife.01465.001
+Anatomically plausible networks of functionally inter-connected regions have been reliably demonstrated at rest, although the neurochemical basis of these ‘resting state networks’ is not well understood. In this study, we combined magnetic resonance spectroscopy (MRS) and resting state fMRI and demonstrated an inverse relationship between levels of the inhibitory neurotransmitter GABA within the primary motor cortex (M1) and the strength of functional connectivity across the resting motor network. This relationship was both neurochemically and anatomically specific. We then went on to show that anodal transcranial direct current stimulation (tDCS), an intervention previously shown to decrease GABA levels within M1, increased resting motor network connectivity. We therefore suggest that network-level functional connectivity within the motor system is related to the degree of inhibition in M1, a major node within the motor network, a finding in line with converging evidence from both simulation and empirical studies.
 
 ## Introduction
 
@@ -37,27 +37,27 @@ Here, we carried out a series of experiments to address this hypothesis. In the 
 
 ## Results
 
-MR Spectroscopy data were acquired from the hand region of left primary motor cortex (M1) and all neurochemicals of interest were expressed as a ratio to N-acetyl aspartate (NAA) (
+MR Spectroscopy data were acquired from the hand region of left primary motor cortex (M1) and all neurochemicals of interest were expressed as a ratio to N-acetyl aspartate (NAA) (Stagg et al., 2009; see Figure 1 for representative spectra).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig1-v1.jpg)
 
-**Figure 1.:** (A) A subject with a high GABA:NAA ratio. (B) A subject with a low GABA:NAA ratio.DOI: http://dx.doi.org/10.7554/eLife.01465.003
+**Figure 1.:** (A) A subject with a high GABA:NAA ratio. (B) A subject with a low GABA:NAA ratio.
 
-We investigated resting functional connectivity using two different analysis approaches: independent component analysis (ICA) and seed-based correlation. For the ICA-based analysis approach, ICA was applied to group level resting fMRI data to define group level RSNs. Next, a standard dual-regression approach was used to regress these group level RSNs of interest against each individual subject’s data. This generates subject level maps of functional connectivity for each RSN of interest. Analysis focused on the motor network, the principal RSN containing M1 (
+We investigated resting functional connectivity using two different analysis approaches: independent component analysis (ICA) and seed-based correlation. For the ICA-based analysis approach, ICA was applied to group level resting fMRI data to define group level RSNs. Next, a standard dual-regression approach was used to regress these group level RSNs of interest against each individual subject’s data. This generates subject level maps of functional connectivity for each RSN of interest. Analysis focused on the motor network, the principal RSN containing M1 (Figure 2A). For the seed-based correlation analysis, we correlated the average resting BOLD timecourses between the left and right M1s as a simpler measure of functional connectivity between left M1, from where our GABA measurements were acquired, and another major network node. To investigate the anatomical specificity of the relationship between GABA and functional connectivity within the motor RSN we correlated the average resting BOLD timecourses between the left M1 and left dorsal premotor cortex (PMd).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig2-v1.jpg)
 
-**Figure 2.:** (A) Group mean motor resting state network. (B) Group mean default mode network. (C–E) Experiment 1: a significant relationship was demonstrated between M1-GABA and functional connectivity within the motor RSN (r = −0.71, p=0.01; C) but not between M1-Glx and motor network functional connectivity (D) nor between M1-GABA and functional connectivity within the DMN (E).DOI: http://dx.doi.org/10.7554/eLife.01465.004
+**Figure 2.:** (A) Group mean motor resting state network. (B) Group mean default mode network. (C–E) Experiment 1: a significant relationship was demonstrated between M1-GABA and functional connectivity within the motor RSN (r = −0.71, p=0.01; C) but not between M1-Glx and motor network functional connectivity (D) nor between M1-GABA and functional connectivity within the DMN (E).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) A significant inverse relationship between M1-GABA and functional connectivity within the motor RSN was again demonstrated (r = −0.569, p=0.02). This was both anatomically and neurochemically specific (anatomical specificity: M1-GABA-DMN correlation r = 0.23, p=0.37; M1-GABA-motor vs M1-GABA-DMN: Z = 2.61; p=0.01; neurochemical specificity: M1-Glx-motor RSN correlation: r = −0.406, p=0.11; M1-GABA-motor correlation with Glx covaried out: r = −0.45; p<0.05). (B) As in experiment 1, a significant inverse relationship between the degree of M1-M1 correlation and M1-GABA was found (r = −0.49, p=0.05).DOI: http://dx.doi.org/10.7554/eLife.01465.005
+**Figure 2—figure supplement 1.:** (A) A significant inverse relationship between M1-GABA and functional connectivity within the motor RSN was again demonstrated (r = −0.569, p=0.02). This was both anatomically and neurochemically specific (anatomical specificity: M1-GABA-DMN correlation r = 0.23, p=0.37; M1-GABA-motor vs M1-GABA-DMN: Z = 2.61; p=0.01; neurochemical specificity: M1-Glx-motor RSN correlation: r = −0.406, p=0.11; M1-GABA-motor correlation with Glx covaried out: r = −0.45; p<0.05). (B) As in experiment 1, a significant inverse relationship between the degree of M1-M1 correlation and M1-GABA was found (r = −0.49, p=0.05).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Experiment 3 found that the relationship between M1-GABA and the strength of functional connectivity within the motor RSN was maintained in healthy older adults (r = −0.69, p=0.037). Similarly to experiments 1 and 2 this relationship was both anatomically and neurochemically specific (anatomical specificity: M1-GABA-DMN correlation: r = 0.41, p=0.26; M1-GABA-motor vs M1-GABA-DMN: Z = 2.22; p=0.03; neurochemical specificity: M1-Glx-motor RSN correlation r = 0.13, p=0.73; M1-GABA-motor correlation with Glx covaried out: r = −0.79; p=0.04). (B) A significant relationship between the degree of M1-M1 correlation and M1-GABA was again found (r = −0.62, p=0.035).DOI: http://dx.doi.org/10.7554/eLife.01465.006
+**Figure 2—figure supplement 2.:** (A) Experiment 3 found that the relationship between M1-GABA and the strength of functional connectivity within the motor RSN was maintained in healthy older adults (r = −0.69, p=0.037). Similarly to experiments 1 and 2 this relationship was both anatomically and neurochemically specific (anatomical specificity: M1-GABA-DMN correlation: r = 0.41, p=0.26; M1-GABA-motor vs M1-GABA-DMN: Z = 2.22; p=0.03; neurochemical specificity: M1-Glx-motor RSN correlation r = 0.13, p=0.73; M1-GABA-motor correlation with Glx covaried out: r = −0.79; p=0.04). (B) A significant relationship between the degree of M1-M1 correlation and M1-GABA was again found (r = −0.62, p=0.035).
 
-## Experiment 1
+### Experiment 1
 
 Experiment 1 considered a cohort of 12 young, healthy subjects, of whom 11 had spectra of sufficient quality for inclusion. Using ICA, we demonstrated a significant inverse correlation between functional connectivity within the motor RSN and GABA concentration within M1 (M1-GABA) in healthy young volunteers (r = −0.71, p=0.01; Figure 2C).
 
@@ -65,27 +65,25 @@ To test the anatomical specificity of this result, we assessed the default mode 
 
 To test the neurochemical specificity of this result, we measured M1 glutamate (assessed via Glx, a composite measure of glutamate and glutamine). There was no significant correlation between motor RSN functional connectivity and M1-Glx (r = −0.35, p=0.36; Figure 2E), and the correlation between M1-GABA and motor RSN functional connectivity persisted when M1-Glx was co-varied out (r = −0.67, p=0.03).
 
-Additionally, using a seed-based correlation analysis, we demonstrated a significant inverse relationship between the degree of correlation between the two M1s and GABA concentration (r = −0.60, p=0.047;
+Additionally, using a seed-based correlation analysis, we demonstrated a significant inverse relationship between the degree of correlation between the two M1s and GABA concentration (r = −0.60, p=0.047; Figure 3A). There was a trend towards an inverse relationship between the degree of correlation between left M1 and left PMD and GABA concentration (r = −0.49, p=0.12; Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig3-v1.jpg)
 
-**Figure 3.:** Values shown are raw Pearson’s correlation coefficients for ease of display. As these are not normally distributed all statistical analyses were performed on log-transformed data (see ‘Materials and methods’). (A) Experiment 1 (r = −0.60, p=0.047). (B) Experiment 4: the correlation between left and right M1s was significantly increased after anodal tDCS (t(9) = 1.94, p=0.04).DOI: http://dx.doi.org/10.7554/eLife.01465.007
+**Figure 3.:** Values shown are raw Pearson’s correlation coefficients for ease of display. As these are not normally distributed all statistical analyses were performed on log-transformed data (see ‘Materials and methods’). (A) Experiment 1 (r = −0.60, p=0.047). (B) Experiment 4: the correlation between left and right M1s was significantly increased after anodal tDCS (t(9) = 1.94, p=0.04).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Experiment 1 (r = −0.49, p=0.12). (B) Experiment 2 (r = −0.40, p=0.11). (C) Experiment 3 (r = −0.67, p=0.02). (D) Experiment 4: the correlation between left and right M1s showed a trend towards an increase after anodal tDCS (t(9) = 1.87, p=0.09).DOI: http://dx.doi.org/10.7554/eLife.01465.008
+**Figure 3—figure supplement 1.:** (A) Experiment 1 (r = −0.49, p=0.12). (B) Experiment 2 (r = −0.40, p=0.11). (C) Experiment 3 (r = −0.67, p=0.02). (D) Experiment 4: the correlation between left and right M1s showed a trend towards an increase after anodal tDCS (t(9) = 1.87, p=0.09).
 
-## Experiments 2 and 3
+### Experiments 2 and 3
 
 We broadly replicated these findings in two further separate cohorts: once in a group of 16 young healthy subjects (experiment 2; see Figure 2—figure supplement 1) and one in a group of older adults (experiment 3; see Figure 2—figure supplement 2).
 
-## Experiment 4
+### Experiment 4
 
-Experiment 4 aimed to investigate whether decreasing GABA within M1 using anodal tDCS (
+Experiment 4 aimed to investigate whether decreasing GABA within M1 using anodal tDCS (Stagg et al., 2009; 2011a), increased functional connectivity within the motor RSN. We acquired resting fMRI data before and immediately after anodal tDCS applied to the left M1 in a separate group of 10 subjects. A significant increase in network functional connectivity after tDCS was observed in the motor RSN (pre: 20.7 ± 3.34, post: 26.7 ± 2.97; t(9) = 2.59, p=0.02; Figure 4). There was also a significant increase in the degree of M1-M1 correlation (t(9) = 1.94, p=0.04; Figure 3B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01465/elife-01465-fig4-v1.jpg)
-
-**Figure 4.:** DOI: http://dx.doi.org/10.7554/eLife.01465.009
 
 ## Discussion
 
@@ -107,43 +105,43 @@ Taken together, these findings relate RSN functional connectivity to local inhib
 
 All subjects gave their informed consent to participate in the study in accordance with local ethics committee approval (Experiments 1, 3 & 4: Oxfordshire REC A 06/Q1604/2; Experiment 2: East London REC 1 10/H0703/50). All subjects were right-handed and none had a history of any neurological or psychiatric disorder.
 
-## Experiment 1
+### Experiment 1
 
 12 volunteers (6 male; mean age 23 years [range 21–31 years]) participated. MR data were acquired on a 3T Siemens/Varian MRI System. MRS data was acquired using a 1 channel transmit/receive head-coil from a 2 × 2 × 2 cm voxel centred on the hand-knob area within the motor cortex in the left hemisphere. First, a standard PRESS sequence (TR = 3 s, TE = 68 ms) was used to acquire an unedited spectrum with 32 averages. Then, a MEGA-PRESS sequence (TR = 3 s, TE = 68 ms) was used, with 20 ms double-banded Gaussian inversion pulses for simultaneous spectral editing and water suppression; the water suppression band was set to a frequency of 4.7 ppm, the editing band alternated between 1.9 ppm and 7.5 ppm, to collect an edited spectrum with 256 averages.
 
 FMRI data were acquired on a separate day using the same scanner as above with a 4 channel receive head coil. 200 axial echo planar volumes were acquired (43 × 3 mm axial slices, TE = 28 ms, TR = 3000 ms, FOV = 192 × 192). Subjects lay at rest with their eyes open for the duration of the FMRI scan, and had performed no tasks prior to this data being acquired.
 
-## Experiment 2
+### Experiment 2
 
 MRS and fMRI data were acquired from 16 volunteers (2 male, mean age 24 years, [range 20–39 years]) on a 3T Siemens Verio in the same session using a 32 channel receive coil.
 
 MRS data were acquired as described in experiment 1, with 288 averages. Data were pre-processed using in-house scripts to combine data from each channel, remove motion corrupted signal averages and correct for frequency drifts during acquisition. 128 axial echo planar volumes of fMRI data were acquired (44 × 3 mm axial slices, TE = 30 ms TR = 2410 ms, FOV = 192 × 100).
 
-## Experiment 3
+### Experiment 3
 
 12 volunteers (6 male, mean age 61 years [range 45–72 years]) participated. MRS data were acquired on a 3T Siemens/Varian MRI System exactly as described in experiment 1. FMRI data were acquired on a 3T Siemens Trio system with a 12 channel receive head coil (60 vol, 35 × 3.8 mm axial slices, TE = 40 ms, TR = 2000 ms, FOV = 192 × 192).
 
-## Experiment 4
+### Experiment 4
 
 10 volunteers (3 male, mean age 22.7 years [range 21–24 years]) participated. FMRI data were acquired exactly as in Experiment 1, before and immediately after tDCS application, which was delivered while subjects lay supine in the MR scanner.
 
 tDCS electrodes (fitted with 5 kΩ resistors; Easycap, GmbH; Germany) were sited prior to entry into the scanner in a standard montage. The active electrode was placed over the left motor cortex, centered 5 cm lateral and 2 cm anterior to Cz. The reference electrode was placed on the right supraorbital ridge. As described previously (Stagg et al., 2009), high-chloride EEG paste was used as a conducting medium. Anodal, facilitatory, tDCS was delivered via a DC stimulator (Eldith GmbH; Germany), the current had a ramp-up time of 10 s, was held at 1 mA for 10 min and then ramped down over 10s.
 
-## MR data analysis
+### MR data analysis
 
-## MRS analysis
+#### MRS analysis
 
 MRS data analysis was performed using jMRUI v2.2 (http://www.mrui.uab.es/mrui/). Data were smoothed using a 2 Hz Lorentzian filter, and phased with respect to both the 0th and 1st order phase. NAA and Creatine line-widths were obtained from the non-edited PRESS acquisition using a non-linear least square fitting algorithm, and were used to constrain peak fitting for the GABA and glutamate/glutamine resonances. Any spectra with a NAA linewidth of >10Hz were rejected as being of insufficient quality (Stagg et al., 2009) (one subject from experiment 1 and three from experiment 3). Poor quality spectra may be caused by a number of factors including excessive motion. All neurotransmitter concentrations are given as a ratio to NAA and corrected for grey matter and white matter concentration as described previously using a T1-weighted high-resolution structural scan acquired immediately prior to the MRS acquisition (Stagg et al., 2009).
 
 We chose to use NAA as a reference as we wished to use a reference peak that was acquired simultaneously to our metabolites of interest. Due to our acquisition parameters in experiments 1 and 3, the only consistent reference was NAA. A simultaneously acquired reference peak is highly preferable to control for potential drifts in the spectra during acquisition.
 
-## FMRI analysis for resting state networks
+### FMRI analysis for resting state networks
 
 FMRI data processing was carried out using Multivariate Exploratory Linear Optimized Decomposition into Independent Components (MELODIC; version 3.10) part of FSL (FMRIB’s Software Library, www.fmrib.ox.ac.uk/fsl) (Smith et al., 2004; Beckmann et al., 2005; Jenkinson et al., 2012). Individual pre-statistics processing consisted of motion correction brain extraction; fieldmap-based EPI unwarping spatial smoothing using a Gaussian kernel of FWHM 6.0 mm and high-pass temporal filtering equivalent to 150.0 s (0.007 Hz). Functional data was aligned to structural images (within-subject) initially using linear registration (FMRIB’s Linear Image Registration Tool, FLIRT), then optimized using Boundary-Based Registration approach (Greve and Fischl, 2009). Structural images were transformed to standard space using a non-linear registration tool (FNIRT), and the resulting warp fields applied to the functional statistical summary images. Pre-processed functional data for each subject were temporally concatenated across subjects to create a single 4D dataset.
 
 Between-subject analysis was performed using a dual regression technique, as described previously (Filippini et al., 2009). Briefly, this approach consisted of three stages. First, the concatenated fMRI data set was decomposed using ICA into 25 components and RSNs of interest were identified using spatial correlations against previously defined maps (Beckmann et al., 2005). Next, the dual-regression approach was used to identify the subject-specific RSN maps. This process involved using all 25 components to perform a spatial regression against each separate fMRI data set and then using the resulting normalized time-course matrices to perform a temporal regression to estimate subject-specific maps that reflect the subject specific strength of functional connectivity. The resulting subject-specific RSN map was then masked by the group mean RSN map and the mean value within this region extracted for each subject, used as a measure of the strength of functional connectivity within the RSN. Motion is known to have complex effects on resting state connectivity on a subject-by-subject basis (Power et al., 2012), but effects of head motion are greatly ameliorated by the dual regression approach used here, compared against simpler single-regression-based analyses (Zuo et al., 2010).
 
-## FMRI analysis for seed-based correlations
+### FMRI analysis for seed-based correlations
 
 Data were preprocessed and registered to standard space as described above. For Experiments 1–3, the MRS voxel of interest each subject was registered to standard space to give a region of interest (ROI) for the left M1, and then flipped about the midline to give a ROI for the right M1. An ROI of the PMd was derived from a connectivity-based parcellation of the lateral premotor cortex (Tomassini et al., 2007), and was masked by the group mean RSN mask.
 

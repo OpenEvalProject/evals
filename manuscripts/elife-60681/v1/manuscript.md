@@ -31,7 +31,7 @@
 
 ## Abstract
 
-Piwi-interacting RNAs (piRNAs) play essential roles in silencing repetitive elements to promote fertility in metazoans. Studies in worms, flies, and mammals reveal that piRNAs are expressed in a sex-specific manner. However, the mechanisms underlying this sex-specific regulation are unknown. Here we identify SNPC-1.3, a male germline-enriched variant of a conserved subunit of the small nuclear RNA-activating protein complex, as a male-specific piRNA transcription factor in Caenorhabditis elegans . SNPC-1.3 colocalizes with the core piRNA transcription factor, SNPC-4, in nuclear foci of the male germline. Binding of SNPC-1.3 at male piRNA loci drives spermatogenic piRNA transcription and requires SNPC-4. Loss of snpc-1.3 leads to depletion of male piRNAs and defects in male-dependent fertility. Furthermore, TRA-1, a master regulator of sex determination, binds to the snpc-1.3 promoter and represses its expression during oogenesis. Loss of TRA-1 targeting causes ectopic expression of snpc-1.3 and male piRNAs during oogenesis. Thus, sexually dimorphic regulation of snpc-1.3 expression coordinates male and female piRNA expression during germline development.
+Piwi-interacting RNAs (piRNAs) play essential roles in silencing repetitive elements to promote fertility in metazoans. Studies in worms, flies, and mammals reveal that piRNAs are expressed in a sex-specific manner. However, the mechanisms underlying this sex-specific regulation are unknown. Here we identify SNPC-1.3, a male germline-enriched variant of a conserved subunit of the small nuclear RNA-activating protein complex, as a male-specific piRNA transcription factor in Caenorhabditis elegans. SNPC-1.3 colocalizes with the core piRNA transcription factor, SNPC-4, in nuclear foci of the male germline. Binding of SNPC-1.3 at male piRNA loci drives spermatogenic piRNA transcription and requires SNPC-4. Loss of snpc-1.3 leads to depletion of male piRNAs and defects in male-dependent fertility. Furthermore, TRA-1, a master regulator of sex determination, binds to the snpc-1.3 promoter and represses its expression during oogenesis. Loss of TRA-1 targeting causes ectopic expression of snpc-1.3 and male piRNAs during oogenesis. Thus, sexually dimorphic regulation of snpc-1.3 expression coordinates male and female piRNA expression during germline development.
 
 ## Introduction
 
@@ -49,47 +49,83 @@ Here, we demonstrate that SNPC-1.3, an ortholog of human SNAPC1, is required spe
 
 ## Results
 
-## SNPC-4 is a component of the core piRNA transcription complex that drives all piRNA expression
+### SNPC-4 is a component of the core piRNA transcription complex that drives all piRNA expression
 
 SNPC-4-specific foci are present in both male and female germ cell nuclei (Kasper et al., 2014), but the role of SNPC-4 in the male germline is not well understood. We hypothesized that SNPC-4 is required for piRNA biogenesis in both the male and female germline. To test this, we conditionally depleted the SNPC-4 protein using the auxin-inducible degradation system (Zhang et al., 2015a; Figure 1—figure supplement 1A). We added an auxin-inducible degron (AID) to the C-terminus of SNPC-4 using CRISPR/Cas9 genome engineering, and crossed this strain into worms expressing TIR1 under the germline promoter, sun-1. TIR1 is a plant-specific F-box protein that mediates the rapid degradation of C. elegans proteins tagged with an AID in the presence of the phytohormone auxin. Thus, addition of auxin to the snpc-4::aid; Psun-1::TIR1 strain is expected to degrade SNPC-4::AID, whereas strains with snpc-4::aid alone serve as a negative control; under these conditions, we examined a panel of spermatogenesis- and oogenesis-enriched piRNAs (Billi et al., 2013) during spermatogenesis and oogenesis. Unless otherwise stated, spermatogenesis and oogenesis stages will correspond to time points taken at 48 hr and 72 hr, respectively, post-L1 hatching at 20°C. Worms depleted of SNPC-4 showed decreased expression of both spermatogenesis- and oogenesis-enriched piRNAs during spermatogenesis and oogenesis time points, respectively (Figure 1A), confirming that SNPC-4 is a core piRNA transcription factor required for all piRNA expression.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig1-v1.jpg)
+
+**Figure 1.:** (A) SNPC-4 is required for both male and female piRNA expression. Taqman qPCR of male (left) and female (right) piRNAs normalized to U18 small nucleolar RNA in snpc-4::aid (denoted as ‘−’) and snpc-4::aid; Psun-1::TIR1 (denoted as ‘+’) worms. Both genotypes were placed on auxin, and collected during spermatogenesis (spe., 48 hr) and oogenesis (oog., 72 hr). Error bars: ± SD from two technical replicates. (B) Schematic highlights the conservation of SNAPc homologs from C. elegans, D. melanogaster, and H. sapiens and catalogs all SNPC-4 (orange) interacting partners from previous work (Weick et al., 2014; Weng et al., 2019) or from our own analysis. Known piRNA biogenesis factors (purple), SNPC-1 paralogs (green), and SNPC-3 paralogs (gray) are indicated. (C) SNPC-1.3 interacts with SNPC-4 in only him-8(-) mutants. Volcano plots showing enrichment values of IP of SNPC-4 over control (control: him-8(-) mutants for top panel or fem-1(-) mutants for bottom panel) and analogous significance values for proteins that co-purified with SNPC-4::3xFlag from (top) him-8(-) mutants or (bottom) fem-1(-) mutants (n = 2 biological replicates). piRNA biogenesis factors (purple), SNPC-1 paralogs (green), and SNPC-3 paralogs (dark gray) are labeled in (B). Although SNPC-3.1 and SNPC-3.2 are reported to have the same amino acid sequence, we have picked up differential peptide coverage in the fem-1(-) mutant for these two proteins and represented them as two different data points. (D) SNPC-4 interacts with SNPC-1.3. Anti-Flag immunoprecipitation of SNPC-4::3xFlag and western blot for SNPC-1.3::Ollas during spermatogenesis (spe.) and oogenesis (oog.). PRDE-1::Ollas was used as a positive control for interaction with SNPC-4::3xFlag (Kasper et al., 2014). γ-Tubulin was used as the loading control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SNPC-4::AID is substantially degraded at 250 µM auxin in the germline. Western blot of SNPC-4::AID::Ollas in worms placed on various auxin concentrations (0, 25, 50, 100, 250, 500, 1000 µM) for 1 hr. The germline promoter Psun-1 was used to drive expression of the A. thaliana TIR1. γ-Tubulin is the loading control. (B) Table showing the peptide counts of SNAPc homologs and piRNA biogenesis proteins from the first biological replicate in immunopurified samples of SNPC-4::3xFlag identified by mass spectrometry of immunopurified SNPC-4::3xFlag from fem-1(-) and him-8(-) strains. (C) Schematic of snpc-1.3 locus showing the location of the two different isoform-specific tags. (D) snpc-1.3a::3xflag strain has wild-type fertility at 25°C. Black bars indicate mean ± SD of n = 10 worms (wild type versus snpc-1.3(-) mutant **p≤0.005, Welch’s t-test). (E) snpc-1.3a::3xflag strain has wild-type levels of male and female piRNAs during spermatogenesis and oogenesis. 1.3(-) denotes snpc-1.3(-). 1.3a::3xflag denotes snpc-1.3a::3xflag. Error bars: ± SD from two technical replicates. (F) snpc-1.3b::3xflag strain has wild-type fertility at 25°C. Black bars indicate mean ± SD of n = 10 worms (wild type versus snpc-1.3(-) mutant ***p≤0.0001, Welch’s t-test). (G) snpc-1.3b::3xflag strain has wild-type levels of male and female piRNAs during spermatogenesis and oogenesis. 1.3(-) denotes snpc-1.3(-). 1.3b::3xflag denotes snpc-1.3b::3xflag. Error bars: ± SD from two technical replicates. (H) SNPC-1.3 interacts with SNPC-4. Reciprocal immunoprecipitation of Figure 1D. Anti-Flag immunoprecipitation of SNPC-1.3::3xFlag and western blot of SNPC-4::Ollas during spermatogenesis and oogenesis. γ-Tubulin is the loading control.
+
 Given that SNPC-4 activates transcription of piRNAs in both sexes, we hypothesized that sex-specific cofactors might associate with SNPC-4 to regulate sexually dimorphic piRNA expression. To test this hypothesis, we leveraged genetic backgrounds that masculinize or feminize the germline. Specifically, we used him-8(-) mutants, which have a higher incidence of males (∼30% males compared to <0.5% spontaneous males in the wild-type hermaphrodite population) (Hodgkin et al., 1979), and fem-1(-) mutants, which are completely feminized when grown at 25°C (Doniach and Hodgkin, 1984). We introduced a C-terminal 3xFlag tag sequence at the endogenous snpc-4 locus using CRISPR/Cas9 genome editing (Paix et al., 2015) and performed immunoprecipitation of SNPC-4::3xFlag followed by mass spectrometry. PRDE-1 and TOFU-5 co-purified with SNPC-4::3xFlag in both him-8(-) and fem-1(-) mutants, suggesting that these known piRNA biogenesis factors exist as a complex in both male and female germlines (Figure 1B,C, Figure 1—figure supplement 1B). While a single worm ortholog, SNPC-4, exists for human SNAPC4, the C. elegans genome encodes four homologs of human SNAPC1 (worm SNPC-1.1, -1.2, -1.3, and -1.5) and four homologs of human SNAPC3 (worm SNPC-3.1, -3.2, -3.3, and -3.4, Figure 1B; Li et al., 2004). From our mass spectrometry analysis, six of the eight C. elegans homologs of SNAPC1 and SNAPC3 co-purified with SNPC-4::3xFlag from both him-8(-) and fem-1(-) genetic backgrounds (Figure 1B,C). These results revealed that SNPC-4 interacts with both snRNA and piRNA transcriptional machinery.
 
-## SNPC-1.3 interacts with the core piRNA biogenesis factor SNPC-4 during spermatogenesis
+### SNPC-1.3 interacts with the core piRNA biogenesis factor SNPC-4 during spermatogenesis
 
 We also identified proteins that co-purified with SNPC-4::3xFlag from him-8(-), but not fem-1(-) mutants. We were particularly interested in SNPC-1.3 because of its homology to the mammalian SNAPC1 subunit of the snRNA transcription complex. We confirmed that SNPC-1.3 interacts with SNPC-4 by using CRISPR/Cas9 genome editing to generate an endogenously tagged snpc-1.3::ollas strain. We then crossed snpc-1.3::ollas into the snpc-4::3xflag strain and performed immunoprecipitation with anti-Flag antibodies. In agreement with the mass spectrometry data, SNPC-4::3xFlag and SNPC-1.3:Ollas interacted robustly during spermatogenesis. The interaction was detectable at a much lower level during oogenesis (Figure 1D). The reciprocal co-immunoprecipitation of SNPC-1.3::3xFlag followed by western blotting for SNPC-4::Ollas confirmed this biochemical interaction (Figure 1—figure supplement 1H), suggesting that SNPC-1.3 forms a complex with the previously characterized piRNA biogenesis factor SNPC-4.
 
-## SNPC-1.3 is enriched in the male germline
+### SNPC-1.3 is enriched in the male germline
 
 To determine whether SNPC-1.3 expression is restricted to the germline, we first examined snpc-1.3 mRNA levels during early spermatogenesis (36 hr post-L1 hatching) in worms fed glp-1 RNAi, which abrogates germline development. The mRNA of snpc-4, which is highly expressed in the germline (Kasper et al., 2014), was used as a control. Knockdown of glp-1 mRNA markedly reduced both snpc-1.3 and snpc-4 mRNAs. SNPC-1.3::3xFlag protein expression was also reduced in a glp-4 temperature-sensitive mutant, which fails to develop fully expanded germlines at 25°C (Beanan and Strome, 1992), suggesting that SNPC-1.3 is predominantly expressed in the germline (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig2-v1.jpg)
 
-**Figure 2.:** (A) SNPC-1.3 is predominantly germline-expressed. (Left) snpc-1.3 mRNA expression is reduced upon RNAi-mediated knockdown of glp-1 during early spermatogenesis (36 hr). The housekeeping gene eft-2 was used for normalization. Error bars: ± SD of two technical replicates. (Right) Western blot and quantification of SNPC-1.3::3xFlag in wild type, glp-4(-), and snpc-1.3(-) (no-Flag control) during spermatogenesis. Error bars: ± SD of two biological replicates. γ-Tubulin was used as the loading control. (B) SNPC-1.3 is more highly expressed in males. (Left) snpc-1.3 mRNA expression is dramatically enriched in him-8(-) males over fem-1(-) females during spermatogenesis, whereas snpc-4 mRNA expression shows no specific enrichment. eft-2 was used for normalization. Error bars: ± SD of two technical replicates. (Right) Western blot and quantification of SNPC-1.3::3xFlag in him-8(-) and fem-1(-). Error bars: ± SD of two biological replicates. γ-Tubulin was used as the loading control. (C) SNPC-1.3 colocalizes with SNPC-4 in the male germline. Dissected adult male (top) and hermaphrodite (bottom) germlines stained for DNA, SNPC-4::3xFlag (magenta) and SNPC-1.3::Ollas (green) in a N2 background. Yellow insets: transition zone. Blue insets: pachytene. Representative image of three biological replicates is shown (male, n = 21, 18, 15 and hermaphrodite, n = 18, 10, 10). Scale bar, 25 µm.Figure 2—source data 1.Figure 2A.Figure 2—source data 2.Figure 2A.Figure 2—source data 3.Figure 2B.Figure 2—source data 4.Figure 2B.
+**Figure 2.:** (A) SNPC-1.3 is predominantly germline-expressed. (Left) snpc-1.3 mRNA expression is reduced upon RNAi-mediated knockdown of glp-1 during early spermatogenesis (36 hr). The housekeeping gene eft-2 was used for normalization. Error bars: ± SD of two technical replicates. (Right) Western blot and quantification of SNPC-1.3::3xFlag in wild type, glp-4(-), and snpc-1.3(-) (no-Flag control) during spermatogenesis. Error bars: ± SD of two biological replicates. γ-Tubulin was used as the loading control. (B) SNPC-1.3 is more highly expressed in males. (Left) snpc-1.3 mRNA expression is dramatically enriched in him-8(-) males over fem-1(-) females during spermatogenesis, whereas snpc-4 mRNA expression shows no specific enrichment. eft-2 was used for normalization. Error bars: ± SD of two technical replicates. (Right) Western blot and quantification of SNPC-1.3::3xFlag in him-8(-) and fem-1(-). Error bars: ± SD of two biological replicates. γ-Tubulin was used as the loading control. (C) SNPC-1.3 colocalizes with SNPC-4 in the male germline. Dissected adult male (top) and hermaphrodite (bottom) germlines stained for DNA, SNPC-4::3xFlag (magenta) and SNPC-1.3::Ollas (green) in a N2 background. Yellow insets: transition zone. Blue insets: pachytene. Representative image of three biological replicates is shown (male, n = 21, 18, 15 and hermaphrodite, n = 18, 10, 10). Scale bar, 25 µm.
 
 To examine differential snpc-1.3 expression between the sexes, we measured snpc-1.3 mRNA levels in him-8(-) males and fem-1(-) females. The expression of snpc-1.3 mRNA was greatly enriched in him-8(-) relative to fem-1(-), while snpc-4 mRNA did not show any differential expression. At the protein level, SNPC-1.3::3xFlag was also highly enriched in males as compared to females by western blotting (Figure 2B).
 
 SNPC-4, along with other piRNA factors, such as PRDE-1, localize to one or two foci in each germline nuclei (Kasper et al., 2014; Weick et al., 2014; Weng et al., 2019). Given that SNPC-1.3 is present in a complex with SNPC-4 (Figure 1D), we hypothesized that SNPC-1.3 might show a similar localization pattern to these other piRNA factors. To examine the subcellular localization of SNPC-1.3, we performed immunofluorescence in snpc-4::3xflag; snpc-1.3::ollas adult males and hermaphrodites. In the male germline, SNPC-1.3::Ollas colocalized with SNPC-4::3xFlag in the same nuclear foci (Figure 2C). In contrast, no SNPC-1.3::Ollas signal was detected above background in hermaphrodites (Figure 2C). Taken together, these data indicate that SNPC-1.3 co-localizes with SNPC-4 specifically in the male germline.
 
-## SNPC-1.3 is required for transcription of male piRNAs
+### SNPC-1.3 is required for transcription of male piRNAs
 
 Given the prominent interaction between SNPC-1.3 and SNPC-4 in the male germline (Figure 1D), we hypothesized that SNPC-1.3 might be required for piRNA expression during spermatogenesis. To test this hypothesis, we generated a snpc-1.3 null allele by introducing mutations that result in a premature stop codon located eight amino acids away from the start codon at the snpc-1.3 locus. We examined spermatogenesis in hermaphrodites and him-8(-) males and examined oogenesis in adult hermaphrodites and fem-1(-) females. As a control, we analyzed the loss-of-function mutant of the C. elegans Piwi protein, prg-1(-), which almost completely lacked male and female piRNAs (Figure 3A), as expected. Levels of male piRNAs were dramatically reduced in snpc-1.3(-) hermaphrodites during spermatogenesis and in him-8(-); snpc-1.3(-) males, whereas female piRNAs were largely unaltered in snpc-1.3(-) adult hermaphrodites and in fem-1(-); snpc-1.3(-) females (Figure 3A,B). Unexpectedly, female piRNAs were also moderately upregulated by at least twofold in snpc-1.3(-) mutants undergoing spermatogenesis and in him-8(-); snpc-1.3(-) males. These findings suggest that, in addition to activating male piRNAs, SNPC-1.3 suppresses the expression of female piRNAs in the male germline, possibly by preferentially recruiting core factors such as SNPC-4 to male piRNA loci. As SNPC-4 is known to activate transcription of snRNAs as well as piRNAs (Kasper et al., 2014), we asked whether SNPC-1.3 is also required for transcribing snRNAs. To test this, we measured U1 snRNA levels in hermaphrodite adults after RNAi-mediated knockdown of snpc-1.3. In contrast to the reduction of U1 observed in snpc-4 RNAi, U1 levels were not significantly altered when snpc-1.3 was depleted (Figure 3—figure supplement 2A), suggesting that, unlike SNPC-4, SNPC-1.3 is likely specific to the transcription of male piRNAs and does not play a role in snRNA transcription.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig3-v1.jpg)
+
+**Figure 3.:** (A) snpc-1.3 is required for male piRNA expression (spe.) but is dispensable for female piRNA expression during oogenesis (oog.). Taqman qPCR and quantification of representative male (left) and female (right) piRNAs at spermatogenic and oogenic time points normalized to U18. Error bars: ± SD of two technical replicates. (B) him-8(-); snpc-1.3(-) mutant males exhibit severely impaired male piRNA expression and enhanced female piRNA expression. snpc-1.3 is not required for male or female piRNA expression in fem-1(-) females. Error bars: ± SD from two technical replicates. (C) piRNAs are differentially expressed during spermatogenesis (spe.) and oogenesis (oog.) in wild-type worms. (Top) Volcano plot showing piRNAs with ≥1.2 fold-change and FDR of ≤0.05 in 48 hr (spe.) versus 72 hr (oog.). piRNAs are colored according to male and female enrichment scores from Billi et al., 2013. (Bottom) Overlap of male piRNAs (spe.) in wild type at 48 hr with spermatogenesis-enriched and oogenesis-enriched piRNAs defined in Billi et al., 2013. (D) piRNAs depleted in snpc-1.3(-) comprise mostly of male piRNAs. (Top) Volcano plot shows piRNAs with ≥1.2 fold-change and FDR ≤ 0.05 in snpc-1.3(-) mutant versus wild type during spermatogenesis (spe.). piRNAs are colored according to male and female enrichment scores from Billi et al., 2013. (Bottom) Overlap of snpc-1.3-dependent piRNAs with spermatogenesis- and oogenesis-enriched piRNAs defined in Billi et al., 2013. (E) Male piRNAs that are depleted in snpc-1.3(-) have a conserved upstream motif with a strong 5′ C bias. (Top) Overlap of snpc-1.3-dependent piRNAs with male piRNAs shown in (C). (Bottom) Logo plot displays conserved motif upstream of each piRNA. Median position of the C-nucleotide of the identified motif, number of piRNAs, and associated E-value are listed. (F) Female piRNAs are upregulated in snpc-1.3(-) mutants during spermatogenesis. (Top) Overlap of piRNAs upregulated at 72 hr (oog.) with piRNAs enriched in snpc-1.3(-) at 48 hr (spe.). (Bottom) Logo plot displays conserved motif upstream of each piRNA. Median position of the C-nucleotide of the identified motif, number of piRNAs, and associated E-value are listed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Two independent workflows (method 1 and method 2) were applied for differential expression analysis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) SNPC-1.3 is not responsible for U1 snRNA transcription. U1 snRNA levels normalized to eft-2 upon knockdown of snpc-4 (control) and snpc-1.3. Knockdown of snpc-4, but not of snpc-1.3, results in a reduction in U1 levels. Error bars: ± SD of two technical replicates. (B) Mapped reads distributed by read length and 5′ nucleotide identity. (C) (Top) Volcano plot showing differential piRNA expression between spermatogenesis and oogenesis in wild-type worms. piRNAs are colored according to male and female enrichment scores from Billi et al., 2013. Analysis shown is from a second, independent small RNA-seq analysis workflow (method 2). (Bottom) Overlap of spermatogenesis-enriched piRNAs in wild type at 48 hr with male and female piRNAs defined in Billi et al., 2013. (D) (Top) Volcano plot showing differential piRNA expression between snpc-1.3(-) mutants versus wild type during spermatogenesis. piRNAs are colored by enrichment scores of male and female piRNAs defined in Billi et al., 2013. Analysis shown is from a second, independent small RNA-seq analysis workflow (method 2). (Bottom) Overlap of SNPC-1.3-dependent piRNAs in wild type at 48 hr with male and female piRNAs defined in Billi et al., 2013. (E) Most SNPC-1.3-dependent piRNAs overlap with spermatogenesis-enriched piRNAs (left) and are enriched for the upstream eight nt core motif showing a bias for (C) at the 5′ position (right).
 
 To extend these findings, we identified piRNAs enriched during spermatogenesis and oogenesis by small RNA-seq in wild-type worms. Using a 1.2-fold threshold and false discovery rate (FDR) of ≤0.05, a total of 6,368 of 14,714 piRNAs on chromosome IV were differentially expressed (Figure 3C; Figure 3—figure supplements 1 and 2C; Supplementary file 1). Among these, 4,060 piRNAs were upregulated during spermatogenesis (hereafter referred to as male piRNAs) and 2,308 piRNAs were upregulated during oogenesis, which we define as female piRNAs. We compared this dataset with our previous study that identified and categorized spermatogenesis- and oogenesis-enriched piRNAs, as well as piRNAs that were not statistically enriched (NE) either during oogenesis or spermatogenesis (Billi et al., 2013). Most male piRNAs identified in this study were also identified in our previous study (82%; 3,316/4,060; Figure 3C). Next, we investigated how loss of snpc-1.3 affects global piRNA expression by performing small RNA-seq in wild type versus snpc-1.3(-) mutants during spermatogenesis. We identified 3,601 piRNAs that were downregulated in a snpc-1.3(-) mutant compared to wild type (Figure 3D, Figure 3—figure supplement 2D, Supplementary file 2). Of these, 3,002 overlapped with spermatogenesis-enriched piRNAs identified in our previous study (Billi et al., 2013; Figure 3D). Additionally, 85% (3,452/4,060) of male piRNAs were depleted in snpc-1.3(-) mutants, suggesting that male piRNAs are regulated by SNPC-1.3 (Figure 3E, Figure 3—figure supplement 2E). Consistent with our Taqman analysis (Figure 3A,B), 73% (1,687/2,308) of oogenesis-enriched piRNAs identified in our study were significantly upregulated in snpc-1.3(-) mutants during spermatogenesis (Figure 3F).
 
 We next analyzed the genomic loci of male piRNAs and snpc-1.3-dependent piRNAs. As expected, the intersection of these two piRNA subsets displayed strong enrichment for the eight nt core motif and the 5′-most position of this core motif was enriched for cytosine (CNGTTTCA. Figure 3E; Figure 3—figure supplement 2E). In contrast, the core motif found upstream of female piRNAs upregulated upon loss of snpc-1.3 displayed a much weaker bias for the 5′ cytosine (Figure 3F). These observations validate our previous findings that male and female core motifs are distinct (Billi et al., 2013). Taken together, these data indicate that SNPC-1.3 is required for male piRNA expression.
 
-## SNPC-1.3 binds male piRNA loci in a SNPC-4-dependent manner
+### SNPC-1.3 binds male piRNA loci in a SNPC-4-dependent manner
 
 Given that SNPC-1.3 interacts with SNPC-4 and is required for expression of male piRNAs, we hypothesized that SNPC-1.3 might bind male piRNA loci in association with SNPC-4. To test this, we performed ChIP-qPCR to investigate SNPC-1.3 occupancy at regions of high piRNA density within the two large piRNA clusters on chromosome IV; an intergenic region lacking piRNAs served as a control. To determine whether SNPC-1.3 binding was dependent on SNPC-4, we again used the auxin-inducible degradation system to deplete SNPC-4 in the snpc-1.3::3xflag strain for 4 hr prior to our spermatogenesis time point. In the presence of SNPC-4 expression, SNPC-1.3 was enriched at both piRNA clusters, albeit to a lesser degree at the small cluster, and this enrichment was lost upon SNPC-4 depletion (Figure 4A, Figure 4—figure supplement 1A). These data indicate that SNPC-1.3 binds piRNA loci during spermatogenesis in a SNPC-4-dependent manner in vivo.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig4-v1.jpg)
+
+**Figure 4.:** (A) SNPC-1.3 binding at the piRNA clusters requires SNPC-4. SNPC-1.3::3xFlag binding normalized to input (mean ± SD of two technical replicates) on chromosome IV by ChIP-qPCR in N2, snpc-1.3::3xflag, and snpc-1.3::3xflag; snpc-4::aid::ollas, which undergoes TIR-1-mediated degradation by addition of auxin (snpc-4::aid). Top panel depicts the density of piRNAs on chromosome IV with piRNAs predominantly found in the small (4.5–7 Mb) and big (13.5–17.2 Mb) clusters. (B) SNPC-1.3 binding profiles across chromosome IV in N2, snpc-1.3::3xflag, and snpc-1.3::3xflag; snpc-4::aid. The locations of the two piRNAs clusters are highlighted. (C) SNPC-1.3 binding is enriched at piRNA clusters on chromosome IV. SNPC-1.3-bound regions are enriched within piRNA clusters compared to regions outside of the piRNA clusters on chromosome IV (****p≤0.0001, Wilcoxon rank sum test). The number of bins analyzed is listed in parentheses. (D) SNPC-1.3 enrichment at piRNA clusters is dependent on SNPC-4. SNPC-1.3-bound regions within piRNA clusters are depleted compared to regions outside of the piRNA clusters on chromosome IV upon loss of SNPC-4 (****p≤0.0001, Wilcoxon rank sum test). The number of bins analyzed is listed in parentheses. (E) Distribution of SNPC-1.3 reads (mean density ± standard error) around the 5′ nucleotide of mature piRNAs at the piRNA clusters. To resolve SNPC-1.3 binding between male and female piRNAs despite the high density of piRNAs, we selected 1 kb bins with all male (100), female (19), or non-enriched (279) piRNAs. Heat maps represent ChIP signal in 1 kb bins around the 5′ nucleotide of all 100 mature male piRNAs, ranked according to SNPC-1.3 signal. (F) Examples of SNPC-1.3 binding at two regions containing two male piRNA loci. Regions are anchored on the 5′ nucleotide of each mature male piRNA and show mean read density ± standard error.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SNPC-1.3 binding at the piRNA clusters requires SNPC-4. Two biological replicates of the experiment shown in Figure 4A. Top panel depicts the density of piRNAs on chromosome IV, showing piRNAs are predominantly found in a small (4.5–7 Mb) and big (13.5–17.2 Mb) clusters. SNPC-1.3::3xFlag binding normalized to input (mean ± SD of two technical replicates) on chromosome IV by ChIP-qPCR in N2, snpc-1.3::3xflag, and snpc-1.3::3xflag;snpc-4::aid. The locations of the two piRNAs clusters are highlighted. (B) SNPC-1.3 ChIP-seq analysis workflow. (C) Pairwise Pearson correlations between SNPC-1.3 ChIP-seq biological replicates. (D) Biological replicate of Figure 4B. The locations of the two piRNAs clusters are highlighted. (E) Biological replicate of enrichment profiles shown in Figure 4E. Distribution of SNPC-1.3 reads (mean density ± standard error) around the 5′ nucleotide of mature piRNAs at the piRNA clusters. To resolve SNPC-1.3 binding between male and female piRNAs despite the high density of piRNAs, we selected 1 kb bins with all male (135), female (20), or non-enriched (337) piRNAs. (F) SNPC-1.3 enrichment at piRNA clusters is dependent on SNPC-4. Biological replicate of Figure 4D. SNPC-1.3-bound regions within piRNA clusters are depleted compared to regions outside of the piRNA clusters on chromosome IV upon loss of SNPC-4 (****p≤0.0001, Wilcoxon rank sum test). The number of bins analyzed is listed in parentheses. (G) SNPC-1.3 binding is enriched at piRNA clusters on chromosome IV. Biological replicate of Figure 4C. Regions within piRNA clusters are enriched for SNPC-1.3 binding compared to regions outside of the piRNA clusters on chromosome IV (****p≤0.0001, Wilcoxon rank sum test). The number of bins analyzed is listed in parentheses. (H) Examples of SNPC-1.3 binding at two regions containing two male piRNA loci. Regions are anchored on the 5′ nucleotide of each mature male piRNA and show mean read density ± standard error. Biological replicate of Figure 4F.
 
 To examine the genome-wide binding profile of SNPC-1.3 and its dependency on SNPC-4, we performed ChIP-seq of N2, snpc-1.3::3xflag, and snpc-1.3::3xflag; snpc-4::aid; Psun-1::TIR1 worms during spermatogenesis (Figure 4—figure supplement 1B,C). Consistent with our ChIP-qPCR results, SNPC-1.3 binds piRNA clusters in a SNPC-4-dependent manner (Figure 4B, Figure 4—figure supplement 1D). By quantifying the SNPC-1.3 signal over consecutive, non-overlapping 1 kb bins across the entire genome, we identified 691 1 kb regions within the chromosome IV piRNA clusters that were enriched for SNPC-1.3 in snpc-1.3::3xflag compared to N2 (Figure 4C, Figure 4—figure supplement 1G). Relative to snpc-1.3::3xflag, worms depleted of SNPC-4 showed loss of SNPC-1.3 in 749 1 kb regions on chromosome IV piRNA clusters (Figure 4D, Figure 4—figure supplement 1F). Furthermore, SNPC-1.3 enrichment (p<2.2×10−16) and depletion (p<2.2×10−16) were specific to the piRNA clusters on chromosome IV, and more than half (393/691) of the SNPC-1.3-enriched regions in snpc-1.3::3xflag worms were depleted upon degradation of SNPC-4 (Figure 4C,D, Figure 4—figure supplement 1F,G).
 
 To determine whether SNPC-1.3 preferentially binds male piRNA loci, we characterized the SNPC-1.3 signal around individual 5′ nucleotides of mature piRNAs. Again, we classified piRNAs as male, female, or not significantly enriched (NE) in either sex, based on our small RNA-seq analysis in wild-type hermaphrodites during spermatogenesis and oogenesis (Figure 3C). SNPC-1.3 binding at male piRNA loci was most enriched just upstream of the piRNA 5′ nucleotide, which overlaps the conserved core motif (Figure 4E, Figure 4—figure supplement 1E). This binding profile was very distinct for 1 kb bins that contained only male piRNAs (Figure 4F, Figure 4—figure supplement 1H). Upon depletion of SNPC-4, this peak in male piRNAs was lost (Figure 4E, Figure 4—figure supplement 1E). Although the binding profiles for individual female piRNAs exhibited more variability, there was little evidence for SNPC-1.3 binding and dependency on SNPC-4 at female loci (Figure 4E, Figure 4—figure supplement 1E). Compared to the binding profile in male piRNA loci, SNPC-1.3 binding was observed to a lesser extent in non-enriched piRNAs (Figure 4E, Figure 4—figure supplement 1E). Taken together, these observations indicate that SNPC-1.3 requires the core piRNA factor SNPC-4 to bind the piRNA clusters during spermatogenesis.
 
-## TRA-1 represses snpc-1.3 and male piRNA expression during oogenesis
+### TRA-1 represses snpc-1.3 and male piRNA expression during oogenesis
 
 As male piRNA expression and SNPC-1.3 protein expression are largely restricted to the male germline, we asked how snpc-1.3 mRNA expression is regulated across development. C. elegans hermaphrodites produce sperm during the L4 stage and transition to producing oocytes as adults. To understand the mRNA expression profile of snpc-1.3 relative to snpc-4 and other developmentally regulated genes, we performed qRT-PCR across hermaphrodite development. snpc-4 mRNA is expressed at low levels during spermatogenesis, but dramatically increases during oogenesis (Figures 5A and 1D; Figure 1—figure supplement 1H). These data suggest that low levels of SNPC-4 are sufficient for activating male piRNA biogenesis during spermatogenesis. Consistent with SNPC-1.3 protein expression (Figure 1D), snpc-1.3 mRNA levels peak in L3 to early L4 stages, during spermatogenesis (Figure 5A). Given that snpc-1.3 expression across development is regulated at the mRNA level, we examined the sequences upstream of the snpc-1.3 coding region to identify potential cis-regulatory motifs. Less than 200 bp upstream of the snpc-1.3 start codon, we identified three consensus binding sites for TRA-1 (Figure 5B), a transcription factor that controls the transition from spermatogenesis to oogenesis (Berkseth et al., 2013; Clarke and Berg, 1998; Zarkower and Hodgkin, 1993).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig5-v1.jpg)
+
+**Figure 5.:** (A) snpc-1.3 mRNA levels peak during early spermatogenesis (spe.) while tra-1 mRNA levels are highest during oogenesis (oog.). qRT-PCR and quantification of snpc-1.3, snpc-4, and tra-1 mRNA normalized to eft-2 mRNA across hermaphrodite development. Time zero corresponds to the time when synchronized L1s were plated. Error bars: ± SD of two technical replicates. (B) TRA-1 binds to the snpc-1.3 promoter. Schematic of the three TRA-1 binding sites upstream of the snpc-1.3 locus in wild type (top). Site-specific mutations shown in red were made in one, two, or three of the TRA-1 binding sites (gray denotes the mutated motifs). (Bottom) TRA-1 binding is reduced in TRA-1 binding site mutants assayed by TRA-1 ChIP-seq. (C) TRA-1 represses snpc-1.3 mRNA expression during oogenesis. (Left) snpc-1.3 mRNA expression is drastically upregulated upon RNAi-mediated knockdown of tra-1 and (middle) in strains bearing mutations in two (2xtbs) or three (3xtbs) TRA-1 binding sites. Error bars indicate ± SD from two technical replicates. (Right) Western blot of SNCP-1.3::3xFlag expression driven under the wild-type and 2xtbs mutant promoter during spermatogenesis (spe.) (top) and oogenesis (oog.) (bottom). H3 was used as the loading control. (D) A subset of male piRNAs are ectopically expressed during oogenesis in snpc-1.3 (2xtbs) mutants. (Top) Volcano plot showing differential piRNA expression between snpc-1.3 (2xtbs) mutants versus wild type during oogenesis (oog.). piRNAs are colored by enrichment scores from Billi et al., 2013. (Bottom) Overlap of male piRNAs defined in Figure 3C with upregulated piRNAs in snpc-1.3 (2xtbs) mutants. (E) Mutations at two (2xtbs) or three (3xtbs) TRA-1 binding sites enhance male piRNA expression (top) but attenuate female piRNA expression (bottom) during oogenesis. Error bars indicate ± SD from two technical replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Male and female piRNA levels peak during spermatogenesis and oogenesis, respectively. Male piRNA levels are severely impaired but female piRNA expression is upregulated during hermaphrodite development in snpc-1.3 mutants. Taqman qPCR and quantification of male and female piRNAs across hermaphrodite development. Error bars: ± SD of two technical replicates. (B) Mapped reads distributed by read length and 5′ nucleotide identity of three biological replicates. (C) Principal component analysis (PCA) of piRNA expression based on rlog transformation of normalized counts. The scatter plot depicts the first two principal components. Percentage on each axis represents the percentage of variation accounted for by each principal component. (D) TRA-1 binds to the snpc-1.3 promoter. Biological replicate of Figure 5B. Schematic of the three TRA-1 binding sites upstream of the snpc-1.3 locus in wild type (top). (Bottom) TRA-1 binding is progressively reduced with the increase in number of TRA-1 binding sites mutated. (E) Pairwise Pearson correlations between TRA-1 ChIP-seq biological replicates.
 
 In the germline, TRA-1, a Gli family zinc-finger transcription factor, controls the sperm-to-oocyte decision by repressing both fog-1 and fog-3, which are required for controlling sexual cell fate (Berkseth et al., 2013; Chen and Ellis, 2000; Lamont and Kimble, 2007; Zarkower and Hodgkin, 1993). Loss-of-function tra-1 hermaphrodites exhibit masculinization of the female germline and develop phenotypically male-like traits (Hodgkin, 1987). We used RNAi to knock down tra-1 and observed significant ectopic upregulation of snpc-1.3 mRNA during oogenesis (Figure 5C). However, this upregulation of snpc-1.3 expression could be an indirect effect of masculinization of the germline. Therefore, to test whether TRA-1 directly regulates snpc-1.3, we generated strains harboring mutations at the three TRA-1 binding sites (tbs) in the endogenous snpc-1.3 promoter. Specifically, we mutated one (1xtbs), two (2xtbs), or all three (3xtbs) consensus TRA-1 binding motifs (Figure 5B). Disruption of the TRA-1 binding sites led to reduced TRA-1::3xFlag binding upstream of snpc-1.3 as revealed by ChIP-seq, with the 3xtbs mutant showing the greatest reduction of binding (Figure 5B, Figure 5—figure supplement 1D). In addition, snpc-1.3 mRNA levels were highly upregulated when multiple TRA-1 binding sites were mutagenized (Figure 5C), consistent with TRA-1 directly repressing snpc-1.3 transcription during oogenesis. To confirm that SNPC-1.3 protein expression was also elevated in TRA-1 binding site mutants, we used CRISPR/Cas9 engineering to add a C-terminal 3xFlag tag at the snpc-1.3 locus in snpc-1.3 (2xtbs) mutants. Indeed, SNPC-1.3::3xFlag showed increased expression in the snpc-1.3::3xFlag(2xtbs) mutant during spermatogenesis and especially oogenesis (Figure 5C). Taken together, these findings demonstrate TRA-1 binds to the snpc-1.3 promoter to repress its transcription during oogenesis.
 
@@ -97,9 +133,17 @@ Given that snpc-1.3 is robustly de-repressed during oogenesis in TRA-1 binding s
 
 Our data showed that female piRNAs are inappropriately upregulated during spermatogenesis upon loss of snpc-1.3 (Figure 3A). Consistent with this result, female piRNAs show reduced expression during oogenesis upon upregulation of SNPC-1.3 expression in snpc-1.3 (2xtbs) and snpc-1.3 (3xtbs) mutants compared to wild type (Figure 5E). We posit that SNPC-1.3 plays a direct role in activating male piRNA transcription, while indirectly limiting female piRNA transcription by sequestering core piRNA transcription factors to male piRNA loci.
 
-## SNPC-1.3 is critical for male fertility
+### SNPC-1.3 is critical for male fertility
 
 Given the global depletion of male piRNAs in snpc-1.3(-) mutants and the progressive fertility defects seen in prg-1(-) mutants (Batista et al., 2008; Wang and Reinke, 2008), we hypothesized that snpc-1.3(-) worms might also show fertility defects. Indeed, snpc-1.3(-) hermaphrodites exhibited significantly reduced fertility compared to wild type when grown at 25°C (Figure 6A). To address whether this decreased fertility was due to defects during spermatogenesis or oogenesis, we compared brood sizes from crosses of fem-1(-) females and him-8(-) males with or without snpc-1.3. Compared to him-8(-) males, him-8(-); snpc-1.3(-) males generated significantly smaller brood sizes when crossed with fem-1(-) females; in contrast, fem-1(-); snpc-1.3(-) and fem-1(-) females generated similar brood sizes when crossed with him-8(-) males (Figure 6B). As an orthogonal test, we crossed hermaphrodites to transgenic males expressing a fluorescent marker to facilitate counting of cross progeny. These transgenic males encode a reporter gene, Pcol-19::gfp, which drives GFP expression in the cuticle (Figure 6—figure supplement 1A). All Pcol-19::gfp; snpc-1.3(-) males produced fewer GFP+ progeny than wild-type Pcol-19::gfp males, whereas wild-type or snpc-1.3(-) hermaphrodites generated similar numbers of GFP+ progeny when crossed with wild-type Pcol-19::gfp males (Figure 6—figure supplement 1A). These results suggest that the reduced fertility of snpc-1.3(-) mutants likely reflect defects during spermatogenesis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig6-v1.jpg)
+
+**Figure 6.:** (A) snpc-1.3(-) hermaphrodites exhibit sterility at 25°C. Circles correspond to the number of viable progeny from singled hermaphrodites (n = 16). Black bars indicate mean ± SD. Statistical significance was assessed using Welch’s t-test (****p≤0.0001). (B) snpc-1.3 promotes male fertility but is dispensable for female fertility. (Left) Diagram illustrates crosses between strains for mating assays (1.3(-) denotes snpc-1.3(-)). (Right) snpc-1.3(-); him-8(-) males crossed to fem-1(-) females show severe fertility defects (Cross 3). snpc-1.3; fem-1(-) females crossed to him-8(-) males (Cross 2) show equivalent fertility similar to fem-1(-) females crossed to him-8(-) males (Cross 1). Circles correspond to the number of viable progeny from cross (n = 16). Black bars indicate mean ± SD. Statistical significance was assessed using Welch’s t-test (ns: not significant; ****p≤0.0001). (C) snpc-1.3(-) spermatids exhibit severe morphological defects. Images of pronase-treated sperm of wild-type, prg-1(-), snpc-1.3(-), and snpc-1.3 (2xtbs) males. (D) snpc-1.3(-) spermatids exhibit severe sperm maturation defects. (E) (Top) Images depicted at 3 min intervals of a sperm undergoing activation and maturation. Imaging of spermatid commenced ~3 min after pronase treatment. (Bottom) Graphical display of individual sperm tracked over time after pronase treatment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) snpc-1.3 is required in males, but not females, to promote fertility. (Left) Diagram illustrates crosses between strains for mating assays. Green worms represent Pcol-19::gfp males. (Right) snpc-1.3(-); Pcol-19::gfp males show diminished ability to rescue wild-type or snpc-1.3(-) hermaphrodites when compared to Pcol-19::gfp males. Circles correspond to the brood size of viable progeny from each mating (n = 16). Black bars indicate mean ± SD. Statistical significance was assessed using Welch’s t-test (ns: not significant; **p≤0.005; ****p≤0.0005). (B) snpc-1.3 (2xtbs) and snpc-1.3 (3xtbs) mutant hermaphrodites have decreased fertility at 25°C. Black bars indicate mean ± SD (n = 16). Statistical significance was assessed using Welch’s t-test (****p≤0.0001). (C) Multiple TRA-1 binding sites are conserved in C. elegans, C. brenneri, C. briggsae, and C. nigoni. Sequence alignment of snpc-1.3 homologs in other nematode species. Blue indicates sequences in TRA-1 binding motifs.
 
 To investigate the cause of snpc-1.3-dependent loss of male fertility, we examined spermiogenesis and sperm morphology in snpc-1.3(-) males. After meiotic differentiation in the male germline, male spermatids are induced by ejaculation and undergo spermiogenesis, a process that converts immature spermatids to motile sperm with a functioning pseudopod. Spermiogenesis can be induced in vitro by isolating spermatids directly from males and treating them with pronase (Shakes and Ward, 1989). Males lacking prg-1 still generate differentiated spermatids, but rarely produce normal pseudopodia upon activation (Figure 6C,D; Wang and Reinke, 2008). Similar to prg-1(-) mutants, snpc-1.3(-) spermatids were rarely able to form normal pseudopodia. In contrast, snpc-1.3 (3xtbs) sperm formed normal pseudopodia at a frequency similar to wild type (Figure 6C,D). In addition, many of the snpc-1.3(-) spermatids resembled sperm undergoing intermediate stages of spermiogenesis. Spermiogenesis, in vivo, starts off with spherical spermatids that enter into an intermediate stage characterized by the growth of spiky protrusions. This stage is then followed by fusion of the spiky protrusions into a motile pseudopod (Figure 6E). To understand the dynamics of snpc-1.3(-) sperm progression through spermiogenesis, we treated spermatids with pronase and observed each activated spermatid over time. Wild-type spermatids spent an average of 6.2 min ± 4.5 min in the intermediate state before polarization and pseudopod development. In contrast, snpc-1.3(-) spermatids occupied the intermediate state for a significantly shorter period of time (2.9 min ± 3.7 min, p<0.05; Student’s t-test) before forming pseudopods. By tracking each individual spermatid across spermiogenesis, we found most snpc-1.3(-) spermatids were unable to sustain pseudopod growth. While wild-type spermatids exhibited pseudopod growth and motility for an average of 24 min ± 10.35 min, snpc-1.3(-) spermatids sustained growth for a significantly shorter period of time (7.3 min ± 5.7 min, p<0.05; Student’s t-test) before becoming immotile (Figure 6E). These results indicate that spnc-1.3(-) males have defective spermatogenesis processes and exhibit similar fertility defects as prg-1(-) mutants.
 
@@ -109,9 +153,9 @@ Our data indicate that C. elegans SNPC-1.3, a human SNAPC1 ortholog, functions a
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60681/elife-60681-fig7-v1.jpg)
 
-**Figure 7.:** C.elegans sexual development. In wild-type worms, male and female piRNA expression peaks during spermatogenesis and oogenesis, respectively. (Top) In snpc-1.3(-) mutants, male piRNA expression is abrogated, and female piRNA expression is moderately enhanced across sexual development relative to wild type. In TRA-1 binding site mutants, snpc-1.3 expression is de-repressed causing ectopic upregulation of male piRNAs and moderate repression of female piRNA expression during oogenesis relative to wild type. (Bottom) During spermatogenesis, SNPC-1.3 interacts with SNPC-4 at male promoters to drive male piRNA transcription. During oogenesis, TRA-1 represses the transcription of snpc-1.3 which results in the suppression of male piRNA transcription, thus leading to enhanced transcription of female piRNAs.
+**Figure 7.:** elegans sexual development. In wild-type worms, male and female piRNA expression peaks during spermatogenesis and oogenesis, respectively. (Top) In snpc-1.3(-) mutants, male piRNA expression is abrogated, and female piRNA expression is moderately enhanced across sexual development relative to wild type. In TRA-1 binding site mutants, snpc-1.3 expression is de-repressed causing ectopic upregulation of male piRNAs and moderate repression of female piRNA expression during oogenesis relative to wild type. (Bottom) During spermatogenesis, SNPC-1.3 interacts with SNPC-4 at male promoters to drive male piRNA transcription. During oogenesis, TRA-1 represses the transcription of snpc-1.3 which results in the suppression of male piRNA transcription, thus leading to enhanced transcription of female piRNAs.
 
-## How is the expression of male and female piRNAs coordinated?
+### How is the expression of male and female piRNAs coordinated?
 
 Given its role as a putative male piRNA transcription factor, we expected that deletion of snpc-1.3 would result in loss of male piRNAs with no consequences to the expression of female piRNAs. However, loss of snpc-1.3 also results in increased female piRNA expression during spermatogenesis (Figure 3), whereas ectopic overexpression of snpc-1.3 during oogenesis leads to decreased female piRNA levels (Figure 5). Taken together, our findings suggest that transcription of male and female piRNAs is not completely separable from each other and that the balance in expression of the two piRNA subclasses may be dictated by the allocation of shared core transcription factors such as SNPC-4.
 
@@ -119,7 +163,7 @@ Similar to multiple gene classes activated by general transcription factors (Lev
 
 While the default specification of the core complex to female promoters presents perhaps the most parsimonious explanation underlying male and female piRNA expression, we cannot exclude the possibility that an additional female-specific trans-acting factor may direct the core piRNA complex to female promoters. If true, we speculate that the developmental expression of such a factor (low during spermatogenesis and high during oogenesis), coupled with the developmental expression of SNPC-1.3, would coordinate the differential expression of male and female piRNAs. During spermatogenesis, SNPC-1.3 is more highly expressed such that the core machinery would primarily be directed to male promoters. In contrast, during oogenesis, SNPC-1.3 expression is low, concomitant with elevated expression of a female factor to license transcription of female piRNAs. This model, where both factors are present during both spermatogenesis and oogenesis, but in different ratios, would also be consistent with our piRNA expression analysis in snpc-1.3 loss-of-function and overexpression mutants.
 
-## The piRNA pathway co-opts snRNA biogenesis machinery
+### The piRNA pathway co-opts snRNA biogenesis machinery
 
 Our work adds to a growing body of evidence that snRNA machinery has been hijacked at multiple stages in C. elegans piRNA biogenesis, including transcription (Kasper et al., 2014; Weng et al., 2019) and termination (Beltran et al., 2019). Investigating potential parallels between snRNA and piRNA biogenesis may provide useful clues into the role of SNPC-1.3 in the piRNA complex.
 
@@ -127,103 +171,778 @@ The minimal snRNA SNAP complex consists of a 1:1:1 heterotrimer of the subunits 
 
 Given that piRNAs have co-opted trans-acting factors from snRNA biogenesis (Kasper et al., 2014), it would not be surprising if piRNAs also co-evolved cis-regulatory elements for transcription factor binding from snRNA loci. Recently, Beltran et al., 2019 identified similarity between the 3′ end of PSEs of snRNA promoters and the eight nt piRNA core motif in nematodes. In addition, Pol II and Pol III transcription from snRNA promoters share a common PSE, but are distinguished by the presence of other unique motifs (Hung and Stumph, 2011). Correspondingly, the canonical Type I and less abundant Type II piRNAs can be discriminated by the presence or absence of the eight nt core motif, respectively. Factors such as TOFU-4 and TOFU-5 function in both Type I and II piRNA expression, whereas PRDE-1 is only required for Type I piRNAs (Kasper et al., 2014; Weng et al., 2019). Altogether, these observations highlight the importance of cis-regulatory elements in specifying the expression of snRNAs and piRNA classes. In addition to enrichment of cytosine at the 5′ position in the male core motif (Billi et al., 2013), we hypothesize that as-yet unidentified motifs may further discriminate male from female piRNA promoters. While we observed SNPC-1.3 binding to be enriched upstream of male piRNA loci (Figure 4), we cannot definitively conclude that SNPC-1.3 binds to the male-specific core motif, given the limitations of conventional ChIP-seq in resolving the SNPC-1.3 footprint. Identifying the factors that specifically bind the eight nt core motif and other potential cis-regulatory elements important for sex-specific piRNA expression will require further investigation.
 
-## What are the functions of male piRNAs in C. elegans?
+### What are the functions of male piRNAs in C. elegans?
 
 Our data suggest that SNPC-1.3 is essential for proper spermiogenesis (Figure 6). We hypothesize the global loss of male piRNAs in a snpc-1.3(-) mutant is responsible for the higher incidence of spermiogenesis arrest and subsequent loss in fertility, although it is possible that SNPC-1.3 may have other or additional effects on male fertility. Characterization of prg-1(-) mutants during spermiogenesis agree with our findings that loss of piRNAs in the male germline leads to acute defects directly responsible for fertility (Wang and Reinke, 2008). Since the initial discovery of piRNA function in the targeting and silencing of transposons in Drosophila (Vagin et al., 2006; Brennecke et al., 2007), analyses in other systems have revealed that piRNAs have acquired neofunctions at later points along the evolutionary time scale (Ozata et al., 2019).
 
 While it is estimated that as much as 45% of the human genome encodes for transposable elements (Lander et al., 2001), only 12% of C. elegans genome encodes such elements. Furthermore, nearly all of these regions are inactive in C. elegans (Bessereau, 2006). In contrast to Drosophila piRNAs that target and silence transposons with perfect complementarity (Brennecke et al., 2007), C. elegans piRNAs are thought to bind a broad range of endogenously expressed transcripts by partial complementarity (Ashe et al., 2012; Shen et al., 2018; Zhang et al., 2018). Together, these findings suggest that worm piRNAs function in capacities distinct from canonical transposon silencing. While a recent methodology used crosslinking, ligation, and sequencing of piRNA:target hybrids (CLASH) to determine that female piRNAs engage with almost every germline transcript (Shen et al., 2018), how female piRNAs select their targets has yet to be examined. Like piRNAs characterized in the female germline, male piRNAs may be interfacing with a broad range of targets to regulate gene expression for proper spermatogenesis. Loss of prg-1 in males causes the downregulation of a subset of spermatogenesis-specific genes (Wang and Reinke, 2008), suggesting male piRNAs serve a protective function for spermatogenic processes. The characterization of the in vivo landscape of male piRNA target selection using CLASH may provide insights into piRNA function during spermatogenesis.
 
-## Why are male piRNAs restricted from the female germline?
+### Why are male piRNAs restricted from the female germline?
 
 Sperm and oocytes pass epigenetic information such as noncoding RNAs to the next generation (Hammoud et al., 2014; Brykczynska et al., 2010; Tabuchi et al., 2018; Kaneshiro et al., 2019). Recent studies show maternal piRNAs trigger the production of endo-siRNAs, called 22G-RNAs for their 5′ bias for guanine and 22 nt length, to transmit an epigenetic memory of foreign versus endogenous elements to the next generation (Ashe et al., 2012; Buckley et al., 2012; Shirayama et al., 2012). We predict that misexpression of male piRNAs during oogenesis may perturb the native pool of female piRNAs necessary for appropriate recognition of self versus non-self elements. This may explain the decrease in fertility we observed in multiple TRA-1 binding site mutant hermaphrodites (Figure 6—figure supplement 1B). As snpc-1.3 (3xtbs) sperm do not seem to exhibit significant morphological defects (Figure 6), the fertility defects in the snpc-1.3 (3xtbs) mutants could be due to problems arising in oogenesis. However, based on our sequencing data in snpc-1.3 (2xtbs) mutants, we cannot distinguish whether fertility defects during oogenesis are due to upregulation of male piRNAs, downregulation of female piRNAs, a combination of the two, or misexpression of downstream endo-siRNAs triggered by piRNAs. Further study of snpc-1.3 gain-of-function mutants in oogenesis will enhance our understanding of the physiological consequences of expressing male piRNAs in the female germline.
 
-## The intersection between sex determination and sex specification of piRNA expression
+### The intersection between sex determination and sex specification of piRNA expression
 
 We speculate that gene duplication of the snpc-1 family of genes occurred early during nematode evolution and allowed for the acquisition of new functions by snpc-1 paralogs, specifically, from snRNA to piRNA biogenesis. At least two SNPC-1 paralogs are present within the distantly related nematode species, Plectus sambesii. Furthermore, we predict that co-opting SNPC-1 paralogs for piRNA biogenesis may have occurred in parallel with the evolution of the nematode sex determination pathway. TRA-1 is a sex determination factor that acts to repress male-promoting gene expression in female germ cells to promote female germ cell fate. While Drosophila sex determination utilizes different factors than C. elegans, further investigation into the conservation of TRA-1 shows that it is a common feature in at least the nematode lineage (Pires-daSilva and Sommer, 2004). Additionally, just as we have shown that TRA-1 represses snpc-1.3 in C. elegans (Figure 5), TRA-1 binding motifs GGG(A/T)GG are present in the putative upstream promoter regions of snpc-1.3 homologs identified in C. briggsae, C. brenneri, and C. nigoni (Figure 6—figure supplement 1C). Taken together, these analyses point to a conserved link between sex determination and piRNA biogenesis pathways among nematodes.
 
 In summary, our work reveals that SNPC-1.3 is specified to the male germline and is essential for male piRNA expression. We have identified SNPC-1.3 as a major target of TRA-1 repression in the female germline. Future studies will likely uncover additional factors required to coordinate the proper balance of sex-specific piRNAs required for proper germline development and animal fertility.
 
-## Contact for reagent and resource sharing
+### Contact for reagent and resource sharing
 
 More details about resources and reagents can be found in the Key Resources Table found in Materials and methods. Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, John K. Kim (jnkim@jhu.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 C. elegans strains were maintained at 20°C according to standard procedures (Brenner, 1974), unless otherwise stated. Bristol N2 was used as the wild-type strain. Except for RNAi and ChIP experiments, worms were fed E. coli strain OP50. Worms used for ChIP were fed E. coli strain HB101.
 
 ## Materials and methods
 
-## Generations of strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Flag</td>
+      <td>Sigma</td>
+      <td>F1804; RRID: AB_262044</td>
+      <td>Western – 1:1000; IF – 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-H3</td>
+      <td>Abcam</td>
+      <td>Ab12079; RRID: AB_298834</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-tubulin</td>
+      <td>Sigma–Aldrich</td>
+      <td>T1450; RRID:AB_261655</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit</td>
+      <td>Jackson Laboratories</td>
+      <td>111035045; RRID:AB_2337938</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep polyclonal anti-mouse</td>
+      <td>GE Healthcare</td>
+      <td>NA931; RRID:AB_772210</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Ollas</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-06713SS</td>
+      <td>Western – 1:8,000; IF – 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal donkey anti-rabbit, AlexaFluor 488</td>
+      <td>ThermoFisher</td>
+      <td>A-21208</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-mouse, AlexaFluor 555</td>
+      <td>ThermoFisher</td>
+      <td>A-21127</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-mouse IgG (IRDye 800 CW)</td>
+      <td>LI-COR Biosciences</td>
+      <td>925–32210; RRID:AB_621842</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-rabbit IgG (IRDye 680 RD)</td>
+      <td>LI-COR Biosciences</td>
+      <td>925–68071; RRID:AB_2721181</td>
+      <td>1:15,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>ThermoFisher</td>
+      <td>62248</td>
+      <td>0.5 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield with DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>H-1200; RRID:AB_2336790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Roche Blocking Buffer</td>
+      <td>Millipore Sigma</td>
+      <td>11096176001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Odyssey Blocking Buffer (TBS)</td>
+      <td>LI-COR Biosciences</td>
+      <td>927–50003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50</td>
+      <td>Shared Fermentation Facility, The Pennsylvania State University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HB101</td>
+      <td>Shared Fermentation Facility, The Pennsylvania State University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115 RNAi clones</td>
+      <td>Kamath and Ahringer, 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TriReagent</td>
+      <td>ThermoFisher</td>
+      <td>AM9738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Benzonase</td>
+      <td>Sigma–Aldrich</td>
+      <td>E1014</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNA 5′ Polyphosphatase</td>
+      <td>Illumina</td>
+      <td>RP8092H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multiscribe Reverse Transcriptase</td>
+      <td>ThermoFisher</td>
+      <td>4311235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Absolute Blue SYBR Green</td>
+      <td>ThermoFisher</td>
+      <td>AB4166B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dimethyl pimelimidate dihydrochloride</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>4693159001</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Purelink RNAse A</td>
+      <td>ThermoFisher</td>
+      <td>12091021</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pronase E</td>
+      <td>Sigma–Aldrich</td>
+      <td>7433–2</td>
+      <td>20 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TaqMan Universal PCR Master Mix, No AmpErase UNG</td>
+      <td>ThermoFisher</td>
+      <td>4324018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U18 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td>1764</td>
+      <td>TGGCAGTGATGATCACAAATCCGTGTTTCTGACAAGCGATTGACGATAGAAAACCGGCTGAGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-1848 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>UAAAGGCAGAAUUUUAUCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-2502 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>UGAAAUUGUAGUAGACUGCUG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-4807 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>UGGGUGAAUUCUGUCCCGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-1258 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>UAGACUUGAGUUAGAACGGUU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-3142 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>GUAGGGUCGUCUCUUGAGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>21UR-3766 TaqMan probe</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>UGGAAGCUUGAUGGAAAAUGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>NEBNext Multiplex Small RNA Library Prep Set for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7330S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Small RNA-seq data</td>
+      <td>This study</td>
+      <td>GEO: GSE152831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ChIP-seq data</td>
+      <td>This study</td>
+      <td>GEO: GSE152831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mass spec data</td>
+      <td>This study</td>
+      <td>GEO: GSE152831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>wild-type, Bristol isolate</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>prg-1(n4357) I</td>
+      <td>CGC</td>
+      <td>SX922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk27)[snpc-1.3(lof)] V</td>
+      <td>This study</td>
+      <td>QK171</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>fem-1(hc17) IV</td>
+      <td>CGC</td>
+      <td>BA17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>him-8(e1489) IV</td>
+      <td>CGC</td>
+      <td>CB1489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk28)[snpc-1.3 (1xtbs)] V</td>
+      <td>This study</td>
+      <td>QK172</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk29)[snpc-1.3 (2xtbs)] V</td>
+      <td>This study</td>
+      <td>QK173</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk30)[snpc-1.3 (3xtbs)] V</td>
+      <td>This study</td>
+      <td>QK174</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I</td>
+      <td>This study</td>
+      <td>QK175</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I; fem-1(hc17) IV</td>
+      <td>This study</td>
+      <td>QK176</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I; him-8(e1489) IV</td>
+      <td>This study</td>
+      <td>QK177</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk27)[snpc-1.3(lof)] V; fem-1(hc17) IV</td>
+      <td>This study</td>
+      <td>QK178</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk27)[snpc-1.3(lof)] V; him-8(e1489) IV</td>
+      <td>This study</td>
+      <td>QK179</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mals105[col-19::GFP] V</td>
+      <td>Xantha Karp lab</td>
+      <td>XV33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk27)[snpc-1.3(lof)] V; mals105 V</td>
+      <td>This study</td>
+      <td>QK180</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I, snpc-1.3(xk27)[snpc-1.3(lof)] V</td>
+      <td>This study</td>
+      <td>QK181</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk23) I [snpc-4::aid::ollas]</td>
+      <td>This study</td>
+      <td>QK162</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk23) I; unc-11(ed3) III; ieSi38 IV</td>
+      <td>This study</td>
+      <td>QK163</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-11(ed3) III; ieSi38 IV [sun-1p::TIR1::mRuby::sun-1 3' UTR + Crb-unc-119(+)] IV</td>
+      <td>CGC</td>
+      <td>CA1199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glp-4(bn2) I</td>
+      <td>CGC</td>
+      <td>SS104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk32)[snpc-1.3a::3xflag] V</td>
+      <td>This study</td>
+      <td>QK182</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glp-4(bn2) I; snpc-1.3(xk32)[snpc-1.3a::3xflag] V</td>
+      <td>This study</td>
+      <td>QK183</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk33)[snpc-1.3a::ollas] V</td>
+      <td>This study</td>
+      <td>QK184</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I, snpc-1.3(xk33)[snpc-1.3a::ollas] V</td>
+      <td>This study</td>
+      <td>QK185</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>prde-1(xk34)[prde-1::ollas] V</td>
+      <td>This study</td>
+      <td>QK186</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I; prde-1(xk34)[prde-1::ollas] V</td>
+      <td>This study</td>
+      <td>QK187</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk35)[snpc-4::ollas] I</td>
+      <td>This study</td>
+      <td>QK188</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk35)[snpc-4::ollas] I; snpc-1.3(xk32)[snpc-1.3a::3xflag] V</td>
+      <td>This study</td>
+      <td>QK189</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk31)[snpc-4::3xflag] I; snpc-1.3(xk29)[snpc-1.3 (2xtbs)] V</td>
+      <td>This study</td>
+      <td>QK190</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-4(xk23) I; unc-11(ed3) III; ieSi38 IV; snpc-1.3(xk32)[snpc-1.3a::3xflag] V</td>
+      <td>This study</td>
+      <td>QK191</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk36)[snpc-1.3a::3xflag(2xtbs)] V</td>
+      <td>This study</td>
+      <td>QK192</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tra-1(xk37)[3xflag::tra-1] III</td>
+      <td>This study</td>
+      <td>QK193</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tra-1(xk37)[3xflag::tra-1] III; snpc-1.3(xk28)[snpc-1.3 (1xtbs)] V</td>
+      <td>This study</td>
+      <td>QK194</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tra-1(xk37)[3xflag::tra-1] III; snpc-1.3(xk29)[snpc-1.3 (2xtbs)] V</td>
+      <td>This study</td>
+      <td>QK195</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tra-1(xk37)[3xflag::tra-1] III; snpc-1.3(xk30)[snpc-1.3 (3xtbs)] V</td>
+      <td>This study</td>
+      <td>QK196</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>snpc-1.3(xk38) [snpc-1.3b::3xflag] V</td>
+      <td>This study</td>
+      <td>QK197</td>
+      <td>For CRISPR/Cas9 reagents and methodology, see Supplementary file 4 and Method details.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bbmap 38.23</td>
+      <td>http://jgi.doe.gov/data-and-tools/bb-tools</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 1.1.1</td>
+      <td>Langmead et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 2.3.4.2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CASHX 2.3</td>
+      <td>Fahlgren et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools 3.3.1</td>
+      <td>Ramírez et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 1.18.1</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 1.26.0</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC 0.11.7</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://www.graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS 2.1.2</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME suite 5.1.1</td>
+      <td>Bailey et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio 3.4.1</td>
+      <td>https://www.rstudio.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools 1.9</td>
+      <td>Li et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Subread 1.6.3</td>
+      <td>Liao et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore! 0.5.0</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic 0.39</td>
+      <td>Bolger et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>ThermoFisher</td>
+      <td>10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads M280 sheep anti-mouse IgG</td>
+      <td>ThermoFisher</td>
+      <td>11202D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>ThermoFisher</td>
+      <td>18080085</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generations of strains
 
 CRISPR/Cas9-generated strains were created as described in Paix et al., 2015 and are listed in Supplementary file 4. crRNA and repair template sequences of CRISPR-generated strains are listed in Supplementary file 4. After initial phenotyping of snpc-1.3a::3xflag and snpc-1.3b::3xflag (Figure 1—figure supplement 1C−G), snpc-1.3a::3xflag was used for all subsequent experiments (and is referred to as snpc-1.3::3xflag).
 
-## RNAi assays
+### RNAi assays
 
 Bacterial RNAi clones were grown from the Ahringer RNAi library (Kamath and Ahringer, 2003). Synchronized L1 worms were plated on HT115 bacteria expressing dsRNA targeting the gene interest or L4440 empty vector as a negative control as previously described (Timmons and Fire, 1998). All RNAi experiments were performed at 20°C unless otherwise stated.
 
-## RNA extraction, library preparation, and sequencing
+### RNA extraction, library preparation, and sequencing
 
 After hypochlorite preparation and hatching in M9 buffer, snpc-4::aid::ollas and snpc-4::aid::ollas; Psun-1::TIR1 worms were transferred from NGM plates to plates containing 250 µM auxin 20 hr before collecting L4 and gravid worms, 48 hr and 72 hr after plating L1 worms at 20°C, respectively. Worms were collected in TriReagent (ThermoFisher Scientific) and subjected to three freeze–thaw cycles. Following addition of 1-bromo-3-chloropropane, the aqueous phase was then precipitated with isopropanol at −80°C for 2 hr. To pellet RNA, samples were spun at 21,000 × g for 30 min at 4°C. After three washes in 75% ethanol, the pellet was resuspended in water.
 
 RNA concentration and quality were measured using a TapeStation (Agilent Technologies). We size-selected small RNAs of 16-30 nt in length from 5 µg total RNA on 17% denaturing polyacrylamide gels. Small RNAs were treated with 5′ polyphosphatase (Illumina) to reduce 5′ triphosphate groups to monophosphates to enable 5′ adapter ligation. Small RNA-sequencing libraries were prepared using the NEBNext Multiplex Small RNA Library Prep Set for Illumina (NEB). Small RNA amplicons were size-selected on 10% polyacrylamide gels and quantified using qRT-PCR. Samples for each developmental time point were pooled into a single flow cell and single-end, 75 nt reads were generated on a NextSeq 500 (Illumina). An average of 42.01 million reads (range 33.05–50.39 million) was obtained for each library.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Taqman cDNA synthesis was performed as previously described (Weiser et al., 2017). Briefly, for quantification of piRNA levels, TaqMan small RNA probes were designed and synthesized by Applied Biosystems. All piRNA species assessed by qPCR were normalized to U18 small nucleolar RNA. Fifty nanograms of total RNA was used for cDNA synthesis. cDNA was synthesized by Multiscribe Reverse Transcriptase (Applied Biosystems) using the Eppendorf Mastercycler Pro S6325 (Eppendorf). Detection of small RNAs was performed using the TaqMan Universal PCR Master Mix and No AmpErase UNG (Applied Biosystems). For quantification of mRNA levels, cDNA was made using 500 ng of total RNA using Multiscribe Reverse Transcriptase (Applied Biosystems). For quantification of snRNA levels, cDNA was made using 250 ng of total RNA using SuperScript III Reverse Transcriptase (ThermoFisher). Assays for mRNA and snRNA levels were performed with Absolute Blue SYBR Green (ThermoFisher) and normalized to eft-2 using CFX63 Real Time System Thermocyclers (Bio-Rad). All qPCR primers used are listed in Supplementary file 4.
 
-## Covalent crosslinking of Dynabeads
+### Covalent crosslinking of Dynabeads
 
 Protein G Dynabeads (ThermoFisher Scientific, 1003D) were coupled to monoclonal mouse anti-FLAG antibody M2 (Sigma–Aldrich, F1804). After three washes in 1× PBST (0.1% Tween), Dynabeads were resuspended with 1× PBST with antibody, for a final concentration of 50 µg antibody per 100 µL beads. The antibody-bead mixture was nutated for 1 hr at room temperature. After three washes in 1× PBST and two washes in 0.2 M sodium borate pH 9.0, beads were nutated in 22 mM DMP (Sigma–Aldrich, D8388) in 0.2 M sodium borate for 30 min at room temperature. Following two washes in ethanolamine buffer (0.2 M ethanolamine, 0.2 M NaCl pH 8.5), beads were nutated for 1 hr at room temperature in the same buffer. Beads were placed into the same volume of ethanolamine buffer as the starting bead volume for storage at 4°C until use.
 
-## Immunoprecipitation for mass spectrometry, co-IP experiments, and expression
+### Immunoprecipitation for mass spectrometry, co-IP experiments, and expression
 
 For SNPC-4 IP mass spectrometry, synchronized populations of ~200,000,000 him-8(e1489) L4s and ~50,000,000 fem-1(hc17) females were grown at 25°C and collected on OP50. For co-IP experiments, ~500,000 L4 and ~250,000,000 gravid worms were grown and collected from OP50 plates. Due to low expression of SNPC-1.3 and appearance of background bands, samples examining SNPC-1.3 expression were subjected to immunoprecipitation before western blotting. For glp-4(bn2), him-8(e1489), and fem-1(hc17) temperature-shift experiments, worms were grown at 15°C before hypochlorite treatment to isolate embryos. Synchronized L1s were then transferred to 25°C. For SNPC-1.3 expression in males and females, snpc-1.3::3xflag; him-8(e1489) L4 worms and snpc-1.3::3xflag; fem-1(hc17) adult worms were collected.
 
 Unless otherwise stated, all samples for mass spectrometry, co-IP, and western blotting used in this study were subjected to the following procedure. After three washes in M9 and one wash in water, worms were frozen and ground using the Retsch MM400 ball mill homogenizer for two rounds of 1 min at 30 Hz. Frozen worm powder was resuspended in 1× lysis buffer used previously (Moissiard et al., 2014, 50 mM Tris–HCl pH 8.0, 150 mM NaCl, 5 mM MgCl2, 1 mM EGTA, 0.1% NP-40, 10% glycerol) and protease inhibitor cocktail (Roche). After Bradford assay (ThermoFisher Scientific), lysates were normalized using lysis buffer and protease inhibitor. Benzonase (Sigma–Aldrich, E1014) was added to a final concentration of 1 µL/mL of lysate and nutated for 10 min at 4°C. After centrifugation for 10 min at 4,000 x g, 1 mL of supernatant was added to 50 µL of crosslinked Dynabeads and nutated for 15 min at 4°C. Samples were then washed three times in 1× lysis buffer with protease inhibitors before 1 hr nutation in 50 µL of 2 mg/mL FLAG peptide (Sigma–Aldrich, F4799) diluted in 1× lysis buffer. Complete eluate, as well as 5% of crude lysate (after addition of benzonase), input, pellet, and post-IP samples, were added to 2× Novex Tris–glycine sodium dodecyl sulfate sample buffer (ThermoFisher Scientific, LC2676) to 1×. Samples were then subjected to western blotting as described below.
 
-## Western blotting
+### Western blotting
 
 Co-IP samples and SNPC-1.3::3xFlag westerns in snpc-1.3 tbs mutants were run on either 8–16% or 8% Novex WedgeWell Tris–glycine precast gels (ThermoFisher) and transferred to PVDF membrane (Millipore). Mouse anti-Flag, rat anti-Ollas, rabbit anti-gamma tubulin, and rabbit anti-H3 were used at 1:1000, 1:8000, 1:5000, and 1:15000, respectively. Anti-mouse and anti-rabbit (for tubulin) antibodies were used at 1:5,000. To blot for H3, anti-rabbit secondary was used at 1:15,000. Anti-rat antibodies were used at 1:8,000. Antibodies used were Sigma–Aldrich F1804 (mouse anti-Flag), Novus Biologicals NBP1-06713SS (rat anti-Ollas), Sigma–Aldrich T1450 (rabbit anti-gamma tubulin), Abcam ab1791 (rabbit anti-H3), GE Healthcare NA931 (sheep anti-mouse), and Jackson Laboratories 111035045 (goat anti-rabbit). Both high-sensitivity Amersham ECL Prime (GE Healthcare, RPN2232) (for SNPC-1.3 blotting) and regular sensitivity Pierce ECL (ThermoFisher, 32209) were used for exposure in a Bio-Rad ChemiDoc Touch system.
 
 For measuring SNPC-1.3 expression levels in various backgrounds, input (for normalization) and immunoprecipitation samples were run on 10% Novex WedgeWell Tris–glycine precast gels (ThermoFisher). Following transfer, the membrane was dried for 20 min at room temperature. The blot was then recharged in 100% methanol for 1 min, followed by a water rinse and a wash in TBS for 2 min. Blocking was performed in LI-COR Odyssey Blocking Buffer (TBS). Primary antibodies were 1:1,000 mouse anti-Flag (Sigma–Aldrich F1804) and 1:5,000 rabbit anti-gamma-Tubulin (Sigma–Aldrich T1450) in LI-COR Odyssey Blocking Buffer with 0.1% Tween. Washes were performed in TBST (TBS + 0.1% Tween). LI-COR IRDye 800CW goat anti-mouse IgG and 680RD goat anti-rabbit IgG were used at 1:15,000 in Odyssey Blocking Buffer with 0.1% Tween and 0.01% SDS. After three washes in TBST, the membranes were incubated in TBS before imaging in the LI-COR Odyssey Fc.
 
-## Mass spectrometry and analysis
+### Mass spectrometry and analysis
 
 Proteins were precipitated with 23% TCA and washed with acetone. Protein pellets solubilized in 8 M urea, 100 mM Tris pH 8.5, and reduced with 5 mM Tris (2-carboxyethyl)phosphine hydrochloride (Sigma–Aldrich, St. Louis, MO, product C4706) and alkylated with 55 mM 2-chloroacetamide (Fluka Analytical, product 22790). Proteins were digested for 18 hr at 37°C in 2 M urea 100 mM Tris pH 8.5, 1 mM CaCl2 with 2 µg trypsin (Promega, Madison, WI, product V5111). Single-phase analysis (in replicate) was performed using a Dionex 3000 pump and a Thermo LTQ Orbitrap Velos using an in-house built electrospray stage (Wolters et al., 2001). Protein and peptide identification and protein quantitation were done with Integrated Proteomics Pipeline, IP2 (Integrated Proteomics Applications, Inc, San Diego, CA; http://www.integratedproteomics.com/). Tandem mass spectra were extracted from raw files using RawConverter (He et al., 2015) with monoisotopic peak option and were searched against protein database release WS260 from WormBase, with FLAG-tagged SNPC-4, common contaminants and reversed sequences added, using ProLuCID (Peng et al., 2003; Xu et al., 2006). The search space included all fully tryptic and half-tryptic peptide candidates with a fixed modification of 57.02146 on C. Peptide candidates were filtered using DTASelect (Tabb et al., 2002).
 
 Using custom R scripts, average enrichment between SNPC-4::3xFlag and no-tag control immunoprecipitation experiments were calculated. For each experiment, enrichment was normalized by dividing the peptide count for each protein by the total peptide count. Adjusted p-values were calculated by applying the Bonferroni method using DESeq2 (Love et al., 2014). Although SNPC-3.1 and SNPC-3.2 are reported to have the same amino acid sequence, we have picked up differential peptide coverage in the fem-1(-) mutant for these two proteins and represented them as two different data points.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Adult gonads were dissected into egg buffer (25 mM HEPES pH 7.4, 118 mM NaCl, 48 mM KCl, 2 mM EDTA, 0.5 mM EGTA) with 30 mM sodium azide and 0.1% Tween-20, and fixed for 10 s in 1% formaldehyde in egg buffer followed by 1 min in 100% methanol at −20°C. All washing and staining was completed in suspension. Germlines were blocked in normal goat serum or 1× Roche blocking buffer in PBST (PBS + 0.2% Tween) for 30 min at room temperature. Primary mouse anti-Flag (Sigma F1804) and rat anti-Ollas (NBP1-06713SS) antibodies were used at 1:200 in blocking agent in PBST. AlexaFluor 555 goat anti-mouse and AlexaFluor 488 goat anti-rat secondary antibodies (ThermoFisher) were used at 1:400 in blocking agent in PBST. Germlines were stained with 0.5 µg/mL DAPI and then mounted in Vectashield with DAPI (Vector Laboratories H-1200). Images were acquired at 63x on a Zeiss LSM700 confocal microscope. Publication images were acquired at 100× on a GE DeltaVision microscope. Image processing was performed using SoftWoRx to collect 3D image stacks, deconvolve (enhanced ratio, 20 cycles), and compile into a maximum intensity projection. Composite images were stitched and colored in Fiji using the Stitching plugin (Preibisch et al., 2009).
 
-## Chromatin immunoprecipitation, library prep, and sequencing
+### Chromatin immunoprecipitation, library prep, and sequencing
 
 Worms were grown in liquid culture as previously described (Zanin et al., 2011). 250 µM auxin was added to snpc-1.3::3xflag; snpc-4::aid::ollas; Psun-1::TIR1 worms 4 hr before collection at 48 hr post-L1 at 20°C. After washing, the gut was cleared for 15 min by nutation in M9, followed by three washes in M9. Worms were live-crosslinked in 2.6% formaldehyde in water for 30 min at room temperature with nutation. Crosslinking was quenched with a final concentration of 125 mM glycine for 5 min with nutation. After three washes with water, worms were flash-frozen in liquid nitrogen. Frozen worm pellets were ground into powder using the Retsch MM40 ball mill homogenizer for 2 rounds of 1 min at 30 Hz. Frozen worm powder was resuspended in 1× RIPA buffer (1× PBS, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS) for 10 min at 4°C. Crosslinked chromatin was sonicated using a Diagenode Bioruptor Pico for three 3 min cycles, 30 s on/off. We nutated 10 µg of chromatin overnight at 4°C with 2 µg of Flag antibody (Sigma–Aldrich, F1804) and then for 1.5 hr with 50 µL mouse IgG Dynabeads (Invitrogen). Input amount was 10% of IP. Chromatin was de-crosslinked and extracted as described previously (Weiser et al., 2017). Individual input and IP samples of each genotype were processed for both sequencing and quantitative PCR.
 
 Libraries were prepared and multiplexed using the Ovation Ultralow Library Systems v2 (NuGEN Technologies) according to the manufacturer’s protocol. The Illumina HiSeq 4000 platform was used to generate 50 bp single-end reads for SNPC-1.3 ChIP-seq libraries. The NovaSeq 6000 platform was used to generate 50 bp paired-end reads for TRA-1 ChIP-seq libraries.
 
-## Quantitative PCR of ChIP samples
+### Quantitative PCR of ChIP samples
 
 ChIP DNA was eluted in 18 µL of 1× TE pH 8.0 and 2 µL of 20 mg/mL RNase A (Invitrogen, ThermoFisher Scientific). For a final reaction volume of 25 µL, each reaction consisted of final 1× Absolute Blue SYBR Green (ThermoFisher Scientific), 35 nM each of forward and reverse primer, and 2 µL ChIP eluate. Reactions were performed in technical duplicates in a Bio-Rad CF96 Real Time PCR thermal cycler.
 
-## Hermaphrodite fertility assays
+### Hermaphrodite fertility assays
 
 Gravid worms (previously maintained at 20°C) were subjected to hypochlorite treatment, and their progeny were plated onto NGM at 25°C (P0). At the L2 or L3 stage, worms were singled onto individual plates and their progeny (F1) counted.
 
-## Mating assays
+### Mating assays
 
 To test male-dependent rescue of fem-1(hc17) fertility, 10–12 hermaphrodites of each strain were grown at 20°C and embryos were isolated by allowing egg lay for 2 hr before removal. Embryos were shifted to 25°C, and upon reaching the L4 stage (24 hr), ten him-8(e1489) L4 males were transferred and mated with two fem-1(hc17) females. Brood size was quantified by counting when a majority of progeny had at least reached the young adult stage (about 3 days after transfer). To test the fertility of the hermaphrodites upon mating, 10–12 hermaphrodites of each strain were grown at 20°C and embryos were isolated after egg lay for 2 hr before removal. Embryos were shifted to 25°C and 1ten col-19(GFP+) L4-staged males (24 hr) were then transferred with a single hermaphrodite (36 hr), and the number of live cross progeny was counted after reaching adulthood. Brood size was quantified by counting when the majority of progeny had at least reached the young adult stage (about 3 days after transfer).
 
-## Sperm activation assay and imaging
+### Sperm activation assay and imaging
 
 To perform sperm activation assays, spermatids were dissected from adult males that were shifted to 25°C during the embryo stage, and isolated prior to sexual maturity (about 48 hr post-L1). Dissection was performed directly on glass slides in sperm medium (50 mM HEPES pH 7.8, 50 mM NaCl, 25 mM KCl, 5 mM CaCl2, and 1 mM MgSO4) supplemented with 20 μg/mL pronase E (Millipore Sigma). For the characterization of sperm morphology, sperm were imaged 30 min after the addition of pronase E. Individual sperm were manually categorized into two types: spermatids with normal pseudopods or spermatids with irregular or no pseudopods (Shakes and Ward, 1989). For Figure 6E,Z, stacks were imaged in 10 s intervals for 30 min and a representative in-focus stack was chosen at every 3 min interval. To characterize sperm activation dynamics, sperm were individually followed across 10 s intervals for 30 min, and the different stages of sperm activation were designated into four categories based on these morphological changes: (1) undifferentiated spermatid, (2) spiky intermediate characterized by the presence of spike growth, (3) growing or motile pseudopod by the presence of a pseudopod, and (4) immobile sperm when little movement was observed either in the sperm body or pseudopod for longer than 30 s. Statistical significance was assessed using Student’s t-test.
 
-## Quantitative and statistical analysis
+### Quantitative and statistical analysis
 
 Unless otherwise stated, all quantitative analyses are shown as mean with standard deviation represented as error bars. For qRT-PCR, fertility and mating assays, and western blot, at least two independent experiments were performed; one representative biological replicate is shown.
 
-## Small RNA-seq analysis
+### Small RNA-seq analysis
 
 Raw small RNA-seq reads were trimmed for Illumina adapters and quality (SLIDING WINDOW: 4:25) using Trimmomatic 0.39 (Bolger et al., 2014). Trimmed reads were then filtered using bbmap 38.23 (http://jgi.doe.gov/data-and-tools/bb-tools) to retain reads that were 15–30 nt in length. These filtered reads were aligned to the C. elegans WBcel235 (Cunningham et al., 2019) reference genome using Bowtie 1.1.1 (Langmead et al., 2009) with parameters -v 0 k 5 –best –strata –tryhard. Quality control of raw and aligned reads was performed using FastQC 0.11.7 (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/), SAMtools 1.9 (Li et al., 2009), and in-house Python and R scripts. Mapped reads were assigned to genomic features using featureCounts from Subread 1.6.3 (Liao et al., 2014), taking into account overlapping and multi-mapping reads (-O -M). Raw counts were normalized within DESeq2 1.26.0 (Love et al., 2014), and principal component analysis (PCA) was performed using the regularized log transform of normalized counts within DESeq2 (Figure 5—figure supplement 1C). In addition, we distributed mapped reads by size and 5′ nucleotide identity to verify the presence of small RNA species such as 22G-RNAs and 21U-RNAs (Figure 3—figure supplement 2B, Figure 5—figure supplement 1B).
 
@@ -233,7 +952,7 @@ For motif discovery, nucleotide sequences were extracted from the reference geno
 
 A second, independent small RNA-seq analysis workflow (described in Figure 3—figure supplement 1) was implemented to validate our results. Results produced from this analysis are provided in Figure 3—figure supplement 2. We parsed - small RNA sequences that were 16-30 nt from adapters. Reads with >3 nt falling below a quality score of Q30 were discarded. Reads were mapped to the C. elegans WS230 (Stein et al., 2001) reference genome using CASHX v. 2.3 (Fahlgren et al., 2009) allowing for 0 mismatches. Custom Perl, Awk, and R scripts were used to count features and to generate PCA and size distribution plots. Multi-mapping reads were assigned proportionally to each possible locus. Differential expression analysis was done using DESeq2 v. 1.18.1 (Love et al., 2014). A reporting threshold was set at an absolute value of log2(fold-change) ≥ 0.26 and a Benjamini–Hochberg-corrected p≤0.20.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 De-multiplexed raw ChIP-seq data in FASTQ format were trimmed for adapters and sequencing quality score > Q25 using Trim Galore! 0.5.0 (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) and aligned to C. elegans reference genome WBcel235 (Cunningham et al., 2019) using Bowtie2 2.3.4.2 (Langmead and Salzberg, 2012) with default parameters. Post-alignment filtering was then performed to remove PCR duplicates using the MarkDuplicates utility within Picard 2.22.1 (http://broadinstitute.github.io/picard/). In addition, SAMtools 1.9 was applied to remove unmapped reads and reads that mapped with MAPQ 30 but were not of primary alignment or failed sequence platform quality checks (SAMtools -F 1804 -q 30) (Li et al., 2009).
 
@@ -243,6 +962,6 @@ TRA-1 ChIP-seq peaks were called by callpeak within MACS 2.1.2 (Zhang et al., 20
 
 Reproducibility between SNPC-1.3 and TRA-1 ChIP-seq replicates (Figure 4—figure supplement 1C, Figure 5—figure supplement 1E) was assessed by applying deepTools bamCompare, as described above, and deepTools plotCorrelation to depict pairwise correlations between replicates and compute the Pearson correlation coefficient.
 
-## Data and software availability
+### Data and software availability
 
 The mass spectrometry, small RNA-seq, and ChIP-seq data have been deposited in NCBI under GEO accession number: GSE152831. Processed data and scripts used for analysis are available at https://github.com/starostikm/SNPC-1.3; Choi, 2021; copy archived at swh:1:rev:b23f652341d999150edf5ae9c8de72e9192b2843.

@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03bqmcz70 Institute of Environmental Sciences, Faculty of Biology, Jagiellonian University Cracow Poland
-2. https://ror.org/03bqmcz70 Doctoral School of Exact and Natural Sciences, Jagiellonian University Cracow Poland
+1. Institute of Environmental Sciences, Faculty of Biology, Jagiellonian University Cracow Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))
+2. Doctoral School of Exact and Natural Sciences, Jagiellonian University Cracow Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))
 
 † Corresponding author
 
@@ -27,7 +27,7 @@ Because the fitness architecture of complex organisms is particularly difficult 
 
 ## Results
 
-## Viability of monosomic strains
+### Viability of monosomic strains
 
 We began our study by inserting three markers into one chromosome within each homologous pair. These were two URA3 genes, each at the center of every arm, and one copy of kan near a centromere (Tutaj et al., 2022). Since its homolog was unmarked, mutants lacking the markers signaled a possible loss of the marked chromosome (‘Materials and methods’). We expected that such generated true monosomic strains (M1, M2,..., M16) would show visible growth defects, which we indeed observed, except for M1 (Figure 1A). The loss of markers and slow growth were only hints, and often turned out to be false when DNA sequencing revealed that the expected loss of an entire single chromosome did not occur, or that it did occur but was accompanied by other changes. Figure 1B shows isolates that passed the sequencing test. As shown in Figure 1C, small colonies formed by monosomic cells were regularly invaded by much larger ones. For each monosomic, dozens of the latter were re-streaked and found to reproduce the fast-growing phenotype almost universally. To prevent the monosomics from overgrowing by the fast-growers, we had to keep the cultures small, down to 5 µL of YPD medium in the case of M5 or M15. The cultures had to be replicated (in tens or hundreds) so that a sufficient number of those dominated by the slow-growing cells could still be found and replenished.
 
@@ -39,17 +39,17 @@ The procedure described above could not be completed for three chromosomes—VII
 
 In the wild, monosomic isolates have only been found for a few and the shortest chromosomes (Peter et al., 2018). Similar examples of monosomy have been detected in mutation-accumulation experiments (Sui et al., 2020; Zhu et al., 2014). It is uncertain whether these monosomies were simply tolerated, compensated by other changes, or conditionally adaptive in certain environments. There have been laboratory experiments suggesting that all monosomies can be induced in yeast, though indicated only by loss of heterozygosity at selected loci, but they may have been transient (Beach et al., 2017; Reid et al., 2008). We suggest that past work on yeast monosomy should be taken with a grain of salt and that future work should be properly planned. Colonies of putative monosomics may actually be diploids or aneuploids. Even if they were initially truly monosomic, they could easily have been overtaken by endoreduplications or other compensations for chromosome loss. This could happen even if a moderately sized colony was formed from an initially monosomic cell. Here, we combined the marker-based approach with genome-wide assays based on sequencing of DNA (reported above) and RNA (below) to confirm that nearly all yeast monosomics are viable.
 
-## Epistasis for fitness
+### Epistasis for fitness
 
 Before studying epistasis between multiple mutations, their individual effects must be known. With respect to yeast growth rate, virtually none of the single-gene deletions can increase it (Sliwa and Korona, 2005). About 1/5 of them stop growth altogether and another 1/5 slow it down detectably (Giaever et al., 2002). These estimates are based on homozygous or haploid strains under optimal laboratory conditions. Heterozygous deletions, again under good conditions, often show morphological changes, but their growth rate, that is, proliferative fitness, is rarely and only modestly affected (Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018). In ‘Materials and methods’, we explain how we selected 468 heterozygous single-deletion strains as potentially (haplo)insufficient for growth on the rich medium, YPD. We performed repeated growth rate measurements for single-deletion strains and compared them to a set of carefully selected control strains to make our estimates as accurate and reliable as possible. The doubling rates of individual heterozygous deletions were divided by that of the control to obtain relative doubling rates (rDRs) (Figure 2—source data 1). The frequency distribution of rDR is shown in Figure 2A. It shows that the negative effects of the deletions were undoubtedly present, although predictably small, a substantial fraction of them were in the range of bidirectional effects, most likely composed of phenotypic plasticity and measurement error. (The existence of phenotypic variation not attributable to gene deletions is revealed by the variation within a genetically homogeneous control.)
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig2-v1.jpg)
 
-**Figure 2.:** (A) Growth performance of heterozygous single-gene deletion strains tested in this study. Left: list of chromosomes with numbers of assayed deletion strains. Right: frequency distribution of rDR (doubling rate related to that of the control). (B) Growth performance of monosomics. Colored bars represent expected performance calculated as a sum of the single-gene effects per chromosome, rDRE = 1 + ∑d where i,d = irDR−1 (deviation from the control). Gray bars show the observed performance of monosomic strains, irDRM. White arrows mark the expected departure from wild-type fitness (expected genetic load), gray the observed one. Black arrows show the extent and direction of epistasis. Three monosomics were not included in these assays (see the main text).Figure 2—source data 1.Figure 2A and B.
+**Figure 2.:** (A) Growth performance of heterozygous single-gene deletion strains tested in this study. Left: list of chromosomes with numbers of assayed deletion strains. Right: frequency distribution of rDR (doubling rate related to that of the control). (B) Growth performance of monosomics. Colored bars represent expected performance calculated as a sum of the single-gene effects per chromosome, rDRE = 1 + ∑di, where di = rDRi−1 (deviation from the control). Gray bars show the observed performance of monosomic strains, rDRM. White arrows mark the expected departure from wild-type fitness (expected genetic load), gray the observed one. Black arrows show the extent and direction of epistasis. Three monosomics were not included in these assays (see the main text).
 
 Epistasis is absent when an effect of the gene variant does not depend on the genetic content of other loci. In the case of fitness, a non-neutral mutation corresponds to a proportional change in wild-type fitness (Crow and Kimura, 1970). The absence of epistasis means that the fitness quotient of a given mutation remains unchanged regardless of whether it is the only one present in an individual or accompanied by other fitness-affecting mutations. Accepting this postulate is equivalent to adopting a multiplicative model of fitness structure, in which the fitness of a genotype involving n loci is the product of n respective quotients. The model is additive for log-fitness because such a transformation turns a quotient into a deviation from one and a product of quotients into a sum of such deviations. Since we are working with a (log2) transformed measure of fitness, the deviation caused by an ith gene deletion is equal to di = rDRi − 1. The expected effect of multiple loci is the sum of all deviations involved, rDRE = 1 + ∑di. (Derivation provided in Appendix 2.) To predict how each of the 16 monosomic strains should perform, we summed the deviations caused by the individual deletions present on each chromosome (obtaining 16 values of rDRE). We summed both negative and positive values of d to account for non-genetic variation of estimates. We then compared the predicted values of rDRE with the corresponding values of rDRM, that is, estimates obtained experimentally for the actual monosomic strains (Figure 2—source data 1). Figure 2B shows the expected and obtained values of monosomics’ rDR, where epistasis is equal to the difference between them. The epistasis between multiple deleterious gene deletions turned out to be not only positive but also large, much larger than that observed for just pairs of deletions (Jasnos and Korona, 2007). Most strikingly, some monosomic strains were expected to have a negative doubling rate, that is, were predicted to be effectively lethal, but turned out to be able to proliferate. For several monosomics, and especially M4, most of the predicted mutational load was canceled out by epistasis. The contribution of epistasis to fitness seemed so large that it might be difficult to accept without a functional rationalization.
 
-## Transcriptome reaction
+### Transcriptome reaction
 
 Epistasis can be considered in a purely abstract way as a deviation from additivity/multiplicity. But it must have a biological explanation. Our attempt to find it began with the isolation and quantitative analysis of mRNA from the ancestral diploid strain and eight monosomic strains. (The selection was random. It nevertheless resulted in the inclusion of strains in which the level of epistasis was low, M1 and M8, or high, M2 and M16.) The first question was obvious: was the decrease in gene dosage compensated by increased expression? Figure 3A shows that there was no detectable increase in the average intensity of transcription on the monosomic chromosomes. These averages depend on hundreds of genes and would therefore be largely insensitive to increased expression of important but relatively few genes. In this experiment, we knew which genes would be most rewarding to upregulate, those that were most haploinsufficient, and could focus our attention on them. Figure 3B shows that the fitness effect of a single-gene deletion did not correlate with the expression of this gene in a monosomic strain. Thus, neither physical underrepresentation (single copy) nor functional importance (impact on growth) triggered an increase in expression of the genes on monosomic chromosomes: their mRNA level was halved on average, although individual genes could show either up- or downshifts.
 
@@ -60,6 +60,14 @@ Epistasis can be considered in a purely abstract way as a deviation from additiv
 Monosomy could have altered the expression of any genes, not just those on the affected chromosomes. We aimed to find any distinct and functionally interpretable patterns of adjustment that might explain how the functioning of monosomic strains was perturbed. We found multiple statistically significant up- and downregulations in the transcriptomes of each monosomic strain analyzed (Figure 4—source data 1). Both parallelisms and incongruencies between them were visible.
 
 Figure 4A shows the similarities. The translational apparatus of the cytosol was on average significantly and universally upregulated, as evidenced by transcripts encoding proteins that build both large (e.g., RPL28) and small (RPS29B) ribosomal subunits. Cytosolic proteolysis was downregulated (core proteasome component PRE6). In remarkable agreement, chaperones required to fold newly synthesized peptides were upregulated (SSB1/2), while those required to direct destabilized chains to degradation were downregulated (SSA1, HSP82, HSP104). Transcripts encoding mitochondrial proteins were generally less abundant, with a marked decrease in the expression of several genes encoding the electron transport chain (Figure 4—source data 1). In parallel, the expression of the antioxidant machinery was downregulated, especially that of a major ROS scavenger (SOD2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig4-v1.jpg)
+
+**Figure 4.:** Heat maps show monosomic mRNA frequencies divided by respective diploid (control) ones. (A) Gene Ontology categories selected to demonstrate similarities in transcriptional profiles of monosomic strains. (B) Regulons demonstrating differences in gene expression between monosomic strains. Expanded versions of all panels can be found in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Heat maps show monosomic mRNA frequencies divided by respective diploid (control) ones. (A) Gene Ontology categories selected to demonstrate similarities in transcriptional profiles of monosomic strains. (B) Regulons demonstrating differences in gene expression between monosomic strains.
 
 To find transcriptomic differences, we examined groups of genes, each responding to a known signal. This increased the chances of detecting statistical significance and functional divergence. In our experiment, all strains received identical external signals. Therefore, different expression patterns would indicate different internal perturbations. Indeed, as shown in Figure 4B, substantial variation was detected within several regulons: cAMP-PKA (glucose-activated signaling), NCR (nitrogen catabolism repression), GAAC (general amino acid control), and Msn2up (activation by a broad range of stresses). These differences underscore the significance of the above reported uniformity in the pattern of biosynthetic upregulation and proteolytic downregulation.
 
@@ -77,6 +85,237 @@ The advent of systems biology has raised hopes that the ‘statistical’ and �
 
 The simultaneous upregulation of genes encoding ribosomal proteins (RP) and downregulation of those encoding subunits of the proteasome was observed in all monosomic strains, providing a crucial insight into the functional response of the cell to monosomy. The absence of a single chromosome meant that several genes encoding the translational machinery that resided on it were halved in dosage, while dozens of others remained unaffected. The cell could not restore the required stoichiometry by overexpressing the affected genes. Favorable environmental conditions signaled that translation needed to be intensified, but functioning ribosomes were in short supply, resulting in seemingly indiscriminate overproduction of ribosomal proteins and withholding of degradation of both them and other cytosolic proteins. The response was inadequate and costly, but it should be seen as an attempt at ad hoc rebalancing rather than a prepared (evolved) response. This interpretation, strongly suggested by the transcriptomic data, appears even more plausible when analyzing the functional diversity of the 468 genes qualified as haploinsufficient. Table 1 shows that the diversity was ample: of the 100 Slim GO Biological Process categories, dozens could be linked to each chromosome-associated subset of deletions. However, there was a significant common motif. Processes involved in the ‘protein synthesis apparatus’ (our term) were most frequently represented. Their predicted damage was also particularly high, typically sufficient or exceeding that required to reduce the growth rate to the levels actually observed in monosomics. The biosynthetic perturbation was thus real, and its relationship to the observed transcriptomic response was likely causal, not merely coincidental.
 
+**Table 1.**
+ Yeast Slim GO Biological Process categories of the tested deletions and the predicted and observed relative doubling rate of the monosomic strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monosomic strain</th>
+      <th>M1</th>
+      <th>M2</th>
+      <th>M3</th>
+      <th>M8</th>
+      <th>M10</th>
+      <th>M11</th>
+      <th>M14</th>
+      <th>M16</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subsets of deletions mapping to chromosomes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of GO Slim Biological Process categories</td>
+      <td>25</td>
+      <td>47</td>
+      <td>11</td>
+      <td>27</td>
+      <td>39</td>
+      <td>33</td>
+      <td>34</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Number of unique genes</td>
+      <td>6</td>
+      <td>40</td>
+      <td>11</td>
+      <td>20</td>
+      <td>31</td>
+      <td>19</td>
+      <td>24</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of genes affecting categories constituting PSA (protein synthesis apparatus):</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rRNA processing</td>
+      <td>1</td>
+      <td>5</td>
+      <td>3</td>
+      <td>7</td>
+      <td>4</td>
+      <td>5</td>
+      <td>8</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Ribosome large subunit biogenesis</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Ribosome small subunit biogenesis</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Ribosomal assembly</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Ribosome subunit export from nucleus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Cytoplasmic translation</td>
+      <td>1</td>
+      <td>9</td>
+      <td></td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Translational initiation</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Regulation of translation</td>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number of unique PSA genes</td>
+      <td>1</td>
+      <td>13</td>
+      <td>5</td>
+      <td>8</td>
+      <td>10</td>
+      <td>7</td>
+      <td>12</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relative doubling rate (rDR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Predicted from the total load of deletions (Figure 2B)</td>
+      <td>0.85</td>
+      <td>–0.95</td>
+      <td>0.66</td>
+      <td>0.27</td>
+      <td>–0.82</td>
+      <td>–0.33</td>
+      <td>–0.04</td>
+      <td>–1.52</td>
+    </tr>
+    <tr>
+      <td>Predicted from the PSA deletions</td>
+      <td>0.95</td>
+      <td>0.37</td>
+      <td>0.78</td>
+      <td>0.63</td>
+      <td>0.22</td>
+      <td>0.49</td>
+      <td>0.22</td>
+      <td>–0.07</td>
+    </tr>
+    <tr>
+      <td>Observed in monosomic strains</td>
+      <td>0.96</td>
+      <td>0.60</td>
+      <td>0.63</td>
+      <td>0.61</td>
+      <td>0.49</td>
+      <td>0.60</td>
+      <td>0.63</td>
+      <td>0.58</td>
+    </tr>
+  </tbody>
+</table>
+
 Some of the other adaptations seen in the monosomal transcriptomes could also be related to the dominant effect of translational inefficiency. A signal to increase biosynthesis would mobilize fermentation and reduce oxidation, which would downregulate genes encoding ROS-scavenging proteins. The Mns2-mediated and other stress responses were apparently absent, contrary to previous reports (Sheltzer et al., 2012). The hallmarks of stress responses include decreased RP production and increased proteolysis (to remove destabilized proteins). Here, these two processes were driven in opposite directions, blurring the expected patterns. The non-homogeneity of the response in other regulons analyzed – cAMP-PKA, NCR, GAAC – means that functions other than ribosome assembly were severely affected, but differently, depending on the composition of genes made insufficient by the loss of a chromosome (see also Figure 4—source data 1). If there were so many different piecemeal responses, why was the uniform positive epistasis observed?
 
 A possible answer begins with the assumption that the cell is an aggregate of multiple functional modules (Hartwell et al., 1999). Our monosomic strains had many different modules that were negatively affected by partially inactivating mutations. These mutations did not interact with each other directly, but rather through the modules to which they belonged. Mutations that affected the most critical module(s) suppressed the negative effect of mutations that affected other, non-limiting modules. The latter were either less damaged or less needed under current conditions. The epiphenomenon of positive epistasis for fitness reflected the fact that not all mutations exerted their negative effects, at least not to the full extent. In our case, this is not just speculation, but rather the simplest and most prudent explanation linking growth rate and transcriptomic data. Our experimental system is special in a way: a microbial cell in which several modules have been compromised but exposed to favorable conditions and thus tested for the single capacity to grow rapidly. Although peculiar, the system is also instructive. Any unicellular organism is typically tested for only a few specific condition-dependent functions defining fitness, which are very different under, for example, growth or starvation. Similarly, the specialized cells of a complex organism are required to support only a few, and different, elements of life. The modularity of the cell helps us understand how so many partial genetic defects can be carried by so many different organisms without drastically reducing their fitness: rarely or never are all the defects really important.
@@ -85,35 +324,35 @@ Interactions within pairs of gene knockouts have received much attention (Costan
 
 ## Materials and methods
 
-## Single-gene deletion strains
+### Single-gene deletion strains
 
-## Selection of single-gene deletions with a possible effect of haploinsufficiency
+#### Selection of single-gene deletions with a possible effect of haploinsufficiency
 
 Deutschbauer et al. have assayed a complete collection of heterozygous single-gene deletion strains and identified a total of 184 genes, 98 essential and 86 non-essential, as haploinsufficient for growth in rich medium, YPD (Deutschbauer et al., 2005). We included this set of genes in the present study. Using a different technique, our group have previously tested all 1142 essential heterozygous single-gene deletions and 946 non-essential deletions selected as likely not neutral for growth (Marek and Korona, 2016). We reviewed the latter study and, using a false discovery rate of 0.15, accepted up to 404 genes, 256 essential and 148 non-essential, as potentially haploinsufficient. The two sets obtained in two different studies, 184 and 404, overlapped in 112 cases. The overlap was much higher than expected, 14.3, if the two sets were just random samples from among 5200 yeast genes. On the other hand, it was limited and suggested that new growth assays were desirable. The new assays are described below; they included all the unique strains identified in the two studies minus 5 that were not present in our current strain collections and another 3 that were dropped as superfluous for the orthogonal design of experimental blocks described below. (They were also the three least promising based on the earlier assays.) Figure 2—source data 1 lists the strains.
 
-## Control for single-deletion strains
+#### Control for single-deletion strains
 
 To correctly quantify the predictably small negative growth effects introduced by heterozygous single-deletion strains, an unbiased and accurate estimate of a wild-type phenotype is required. In the present study, we attempted to achieve this by using multiple strains as controls rather than a single strain. The reason for this was that the gene deletions used here were constructed over several years by several laboratories and then treated with repeated rounds of propagation, which could lead to genetic divergence. We felt it was risky to use one strain as a control for all the others. We looked for a group of strains that were indistinguishable in terms of growth rate, suggesting that they had not acquired genetic changes that affected this trait. In the case of non-essential genes, we searched the Saccharomyces Genome Database and found 25 ORFs originally labeled ‘dubious’, which are currently almost certainly spurious ORFs, located between other ORFs and no closer than 100 bp to their START or STOP codons. Heterozygous strains carrying deletions of these genes were tested for doubling rate in a manner specific to this study (described below). After repeated assays, 16 deletion strains that were closest to the medium growth performance and not statistically different from each other were selected as controls. Knowing that the non-essential and essential strains differ somewhat in their origin and subsequent handling (Brachmann et al., 1998), we decided to derive a separate set of control strains for the latter. We selected 32 essential genes that were in the very center of a single, strong, and narrow modal peak of the frequency distribution of estimates collected for the entire collection of heterozygous essentials (Marek and Korona, 2016). Again, after repeated tests of growth rate, 16 strains that were closest to the median and not different from each other were selected to serve as the final control for essential gene deletions. Control strains from both groups are listed in Figure 2—source data 1.
 
-## Monosomic strains
+### Monosomic strains
 
-## Parents of monosomic strains
+#### Parents of monosomic strains
 
 In an earlier study, we used 32 strains that had a counter-selectable marker (URA3) near the center of each of the 32 chromosome arms and a drug resistance marker (kan) near a centromere (Tutaj et al., 2022). Pairs of strains with the same centromere marker and the counter-selectable markers located on either the left or right arm of the same chromosome were mated with each other. The resulting diploids were sporulated and tetrads dissected to get triple-marked haploid genotypes, URA3-kan-URA3. The latter were mated with a standard BY haploid strain of the opposite mating type. In the final set of 16 diploid strains, each strain had one chromosome triple-marked while its homolog and the remaining 15 chromosome pairs were isogenic with the diploid strain BY4743.
 
-## Derivation and verification of monosomic strains
+#### Derivation and verification of monosomic strains
 
 The diploid strains with triple-marked chromosomes were grown overnight in synthetic complete medium (SC) and then 50–500 µL samples of the resulting cultures were plated on standard 5-fluoroorotic acid (5-FOA5-FOA) plates. Emerging colonies were transferred to new 5-FOA plates and YPD plates with 200 mg/mL geneticin. The goal was to identify variants that were able to grow on the 5-FOA plates but not on the geneticin plates, indicating that all three marker genes may have been lost along with an entire chromosome. Colonies identified in this way were often of different sizes, suggesting that they were genetically heterogeneous. The next criterion was to find variants that produced colonies that were visibly smaller than those of the parental strain, but rarely, though regularly, produced colonies similar to those of the parental strain. Such strains were grown in replicate small cultures (5–100 µL, depending on the monosomic strain), tested for negligible frequency of cells forming large colonies, and collected in larger samples that allowed isolation of DNA in quantities sufficient for next-generation sequencing. Monosomy was considered confirmed when the number of reads for the entire length of a single and expected chromosome was halved. Although simple, this protocol required multiple attempts for some chromosomes because few colonies tended to appear on the 5-FOA plates, most of them remained resistant to geneticin, and those that passed these two criteria did not show the required reversibility, that is, the tendency to occasionally return to normal growth in an apparent step. Even when all these phenotypic criteria were met, sequencing occasionally revealed genomes other than those of pure monosomic origin, that is, with the whole and only one chromosome removed. Nevertheless, once confirmed, the monosomic strains could have been reliably propagated on rich and synthetic media, including that containing 5-FOA, as long as the recurrent appearance of fast-growing colonies was monitored and counteracted.
 
-## Control for monosomic strains
+#### Control for monosomic strains
 
 The monosomic strains were all derived by us and the derivation involved our stock of haploid strains BY4741 and BY4742. These two were then crossed to produce a diploid BY4743 that lacked the URA3MX4 and kanMX4 cassettes and was used as a control in the growth assays of the monosomic strains.
 
-## Estimation of DR and rDR
+### Estimation of DR and rDR
 
 The collection of single-gene deletion strains was arrayed on six flat-bottomed 8 × 12-well titration plates with 150 µL aliquots per well. Within each plate, the first and last wells contained clean YPD medium, rows 3 and 10 contained control strains, and the deletion strains occupied the remainder of the plate. Plates were filled with either essential or non-essential deletions accompanied by the 16 control strains listed above. One plate contained both essential and non-essential deletions along with eight essential and eight non-essential control strains. Plates were inoculated at 1–5% from thawed samples and kept non-agitated at 30°C for 48 hr until they reached approximately similar densities of stationary phase cells. Such conditioned microcultures were used to inoculate plates with fresh YPD at 0.5% and maintained at 30°C with shaking at 1000 rpm. Cultures were analyzed for OD (600 nm) every 0.5 hr using a TECAN Infinity reader. Four independent replicates of measurements were performed, starting with independent conditionings. OD readings were used to calculate DR (doubling rate). To obtain the rDR (relative doubling rate), each DR estimate of an experimental strain was divided by the average DR of the control strains present on the same plate. In the case of the monosomic strains, the entire protocol was analogous except that all experimental and control strains were kept in one plate. Cultures of monosomic strains used in this assay were tested to contain less than 1% fast-growing cells at the time of OD measurements.
 
-## Analysis of DNA and RNA
+### Analysis of DNA and RNA
 
 The first step in preparation for both DNA and RNA analysis was to collect samples of monosomic cells that would be nearly free of the rapidly growing revertant cells. Individual monosomic strains were grown as replicate microcultures (5–100 µL) in YPD at 30°C to stationary phase. The latter were serially diluted and plated to test for the appearance of large colonies indicating the appearance of compensatory mutations. The microcultures in which more than 99% of the colonies were typical of a particular monosomic strain were pooled. Such tested stationary cultures of monosomic cells were directly used to extract DNA as template for high-coverage sequencing (PE 150, expected read depth ~80). The resulting reads were mapped along standard yeast chromosome sequences using bowtie2 (Langmead and Salzberg, 2012), along standard sequences of yeast chromosomes: Ensembl release 100, S. cerevisiae genome R64-1-1. Duplicate reads were marked with MarkDuplicates (Picard Toolkit 2019. Broad Institute, GitHub). Samtools (1.15.1) was used for BAM files sorting, indexing, and coverage analysis (Danecek et al., 2021).
 

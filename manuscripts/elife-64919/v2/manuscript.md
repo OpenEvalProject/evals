@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Postmitotic tissues are incapable of replacing damaged cells through proliferation, but need to rely on buffering mechanisms to prevent tissue disintegration. By constitutively activating the Ras/MAPK-pathway via Ras -overexpression in the postmitotic salivary glands (SGs) of V12 Drosophila larvae, we overrode the glands adaptability to growth signals and induced hypertrophy. The accompanied loss of tissue integrity, recognition by cellular immunity, and cell death are all buffered by blocking stress signaling through a genuine tissue-autonomous immune response. This novel, spatio-temporally tightly regulated mechanism relies on the inhibition of a feedback-loop in the JNK-pathway by the immune effector and antimicrobial peptide Drosomycin. While this interaction might allow growing SGs to cope with temporary stress, continuous Drosomycin expression in Ras -glands favors unrestricted hypertrophy. These findings indicate the necessity to refine therapeutic approaches that stimulate immune responses by acknowledging their possible, detrimental effects in damaged or stressed tissues. V12
+Postmitotic tissues are incapable of replacing damaged cells through proliferation, but need to rely on buffering mechanisms to prevent tissue disintegration. By constitutively activating the Ras/MAPK-pathway via RasV12-overexpression in the postmitotic salivary glands (SGs) of Drosophila larvae, we overrode the glands adaptability to growth signals and induced hypertrophy. The accompanied loss of tissue integrity, recognition by cellular immunity, and cell death are all buffered by blocking stress signaling through a genuine tissue-autonomous immune response. This novel, spatio-temporally tightly regulated mechanism relies on the inhibition of a feedback-loop in the JNK-pathway by the immune effector and antimicrobial peptide Drosomycin. While this interaction might allow growing SGs to cope with temporary stress, continuous Drosomycin expression in RasV12-glands favors unrestricted hypertrophy. These findings indicate the necessity to refine therapeutic approaches that stimulate immune responses by acknowledging their possible, detrimental effects in damaged or stressed tissues.
 
 ## Introduction
 
@@ -34,9 +34,17 @@ Here, we uncover a genuine tissue-autonomous immune response which directly regu
 
 ## Results
 
-## Local immune reaction accompanies RasV12-dependent hypertrophy
+### Local immune reaction accompanies RasV12-dependent hypertrophy
 
 In order to identify buffering mechanisms that compensate for continuous stress, we made use of our previously published hypertrophy model in the SGs of Drosophila larvae (Hauling et al., 2014). We expressed a dominant-active form of Ras, RasV12, across the entire secretory epithelium of SGs throughout larval development by using the BxMS1096 enhancer trap (Figure 1—figure supplement 1A,C for 96/120 hr after egg deposition, AED). To further enhance RasV12-dependent hypertrophy, we combined RasV12-expression with RNAi-mediated knockdown of the cell polarity gene lethal (2) giant larvae (lgl; Figure 1—figure supplement 1C–H; Jacob et al., 1987; Strand et al., 1994). Their individual and cooperative role in tumor formation in mitotic tissues has been well characterized (Bilder et al., 2000; Pagliarini and Xu, 2003; Herranz et al., 2016). Cell- and tissue-morphology was assessed using Phalloidin staining (Figure 1A; Figure 1—figure supplement 1A,C) and nuclear morphology by DAPI (Figure 1B–C; Figure 1—figure supplement 1C–F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig1-v2.jpg)
+
+**Figure 1.:** (A) RasV12-glands and controls stained with Phalloidin (red) to monitor tissue integrity at 96 hr and 120 hr after egg deposition (AED). (B) Nuclei stained with DAPI (white) to visualize nuclear volume and disintegration at 120 hr AED in RasV12-glands. (C) Nuclear volume as quantified by z-stacks of DAPI-stained salivary glands (SGs) at 96 hr and 120 hr AED and averaged per gland. (D) Comparative transcriptome analysis of RasV12- vs. w1118-glands. Differential expression quantified as beta statistic with q-values by Wald test. Significantly differentially expressed genes (log2(beta) ≥1; q-value ≤0.05) highlighted in yellow. (E) Upper: Whole larvae with DrsGFP reporter (green) expressing RasV12 in glands or controls at 96 hr AED. Lower: RasV12- and control-glands with DrsGFP reporter (green) stained for hemocytes (anti-Hemese, red). Proximal and distal gland parts are indicated by ‘PP’ and ‘DP’. (F) Hemocyte attachment measured as ln(Hemese-area)/ln(SG-area) and separated by time and gland part. Insets: (A/E Lower) DAPI, (E Upper) brightfield. Scalebars: (A-B, E Lower) 100 µm, (E Upper) 500 µm. Boxplots in (C, F): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Right: Schematic representation of deployed algorithm to measure fluorescene signals along all vertical axis perpendicular to the glands longitudinal axis. Left: mCD8::RFP;;RasV12- and mCD8::RFP-control glands stained with Phalloidin (green) to assess BxMS1096 driven, Phalloidin-normalized RFP-expression at 96 hr and 120 hr after egg deposition (AED) along the longitudinal gland axis (bottom). Signals averaged across n=x glands showed 86% of the signal intensity in proximal part (PP) compared to distal part (DP; right). (B) DrsGFP-reporter intensities along the longitudinal gland axis in RasV12- and w1118-control glands at 96 hr and 120 hr AED. (C) GFP (green) expression to validate continued BxMS1096-driven expression at 96 hr and 120 hr AED in both gland parts across all genotypes and Phalloidin (red) staining to trace tissue integrity. (D) Volume of DAPI-stained nuclei derived from SG z-stacks and averaged per gland. (E) Nuclear volume separated per gland into DP and PP. (F) SG nuclei stained with DAPI (white) to indicate nuclear size and disintegration. (G) Upper: Whole larvae carrying DrsGFP reporter (green). Lower: SGs with DrsGFP reporter signal (green) and stained hemocytes (anti-Hemese, red). (H) Attached hemocytes quantified as ln(Hemese-area)/ln(SG-area) separated for DP and PP. (I) DrsGFP-reporter signal in RasV12-glands at 144 hr AED. Insets: (A Left, C, G Lower, I) DAPI, (G Upper) brightfield. Scalebars: (A, C, F, G Lower) 100 µm, (G Upper) 500 µm. Boxplots in (D-E, H): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05). (C-D.,F-G.) w1118 and RasV12 data reused from Figure 1. (E) Separated nuclei measurements based on data in (D). (H) Separated hemocyte attachment measurements based on data in Figure 1F.
 
 At 96 hr AED, RasV12-expressing SG cells retained most of their normal morphology compared to w1118-control glands. However, their integrity and polarity were severely disrupted at 120 hr AED (Figure 1A; Figure 1—figure supplement 1C). Nuclei of RasV12-glands showed a continuous increase in volume at 96 hr and 120 hr AED (1.33 fold compared to w1118 controls at 96 hr AED; 5.66 fold at 120 hr AED; Figure 1C) and signs of nuclear disintegration at 120 hr AED implying the induction of programmed cell death (PCD; Figure 1B). Both loss of cell integrity and nuclear disintegration coincided temporarily (Figure 1A–B) and were exacerbated upon coexpression of l(2)glRNAi (Figure 1—figure supplement 1C–F). These results confirm our previous findings and demonstrate that continuous growth signaling in larval SGs leads to increased organ size accompanied with additional endocycles at 96 hr AED, both hallmarks of compensatory hypertrophy (Tamori and Deng, 2014). Furthermore, the additional, RasV12-induced endoreplications without obvious effect on tissue integrity imply an adaptability to excess growth signaling, whereas the subsequent collapse of nuclear integrity and cellular polarity at 120 hr AED delineate its limitations.
 
@@ -44,7 +52,7 @@ To characterize the mechanisms involved in the early phase of SG growth adaptati
 
 We next investigated whether the change in nuclear volume as a marker for growth adaptation follows a similar proximal-distal-divide as Drs-expression and hemocyte attachment (Figure 1—figure supplement 1E). Nuclei in the DP of the SG at 96 hr AED showed a moderate volume increase upon RasV12-expression compared to distal w1118-control nuclei. However, after 120 hr AED distal nuclei had undergone a drastic increase in nuclear volume (6.28 fold compared to distal w1118-control nuclei) while nuclei in the PP of the SG displayed only a moderate increase in size compared to w1118-control nuclei, that did not increase over time. This indicates that nuclei in the DP of RasV12-glands undergo more rounds of endoreplication than their proximal counterparts coinciding with the decline of Drs-expression and an increase in hemocyte attachment in this part. Moreover, this difference also explains the marginal reduction in BxMS1096-driven expression from DP to PP (Figure 1—figure supplement 1A; PP shows 86% of DP-expression level).
 
-## Dorsal-dependent Drs expression is part of a genuine tissue-autonomous immune response
+### Dorsal-dependent Drs expression is part of a genuine tissue-autonomous immune response
 
 As barrier epithelia, the lumen of the SG forms part of a continuum with the exterior, exposing them to extrinsic stimuli including nutritional cues and pathogens (Andrew et al., 2000). Since systemic infection can modulate tissue growth, we sought to clarify whether the observed local immune response in the gland epithelium fulfills the criteria of a genuine tissue-autonomous immune response or was rather embedded in a wider systemic immune response (Germani et al., 2018). Therefore, we eradicated the majority of putative systemic infections, food-derived signals and pathogens or bacterial contamination by raising larvae with RasV12-glands under sterile conditions, on minimal medium or by bleaching embryos (Figure 2—figure supplement 1A–A’’; Shaukat et al., 2015; Kenmoku et al., 2017; Asri et al., 2019). None of these changes diminished the Drs expression, strongly indicating that Drs is indeed induced in a bona fide tissue-autonomous manner as a response to RasV12-dependent hypertrophic growth (Figure 2—figure supplement 1A–A’’; Colombani et al., 2005; Mirth et al., 2014).
 
@@ -52,13 +60,41 @@ We further sought to identify the upstream factors controlling Drs expression. T
 
 In order to evaluate whether either Toll- or – as is the case for local infections – imd-signaling plays a role in Drs expression, we used the reproducible fluorescence pattern of the Drs-GFP reporter at 96 hr AED to assay RNAi-lines directed against canonical components of both pathways in RasV12-glands (Figure 2A; see ‘Materials and methods’ for scored phenotypes; Ferrandon et al., 1998; Tzou et al., 2000; Takehana et al., 2004; Wagner et al., 2009). Of the 11 tested RNAi-lines, most of which were previously published to cause phenotypes, only one targeting the NFκB-transcription factor Dorsal (dl) significantly reduced the fluorescence signal of the Drs-reporter (Figure 2A; Supplementary file 3). However, Drs expression is completely independent of the upstream modules of the two classical Drosophila immune pathways, Toll and imd.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig2-v2.jpg)
+
+**Figure 2.:** (A) Semi quantitative DrsGFP reporter assay to identify upstream effectors of Drs expression by RNAi in RasV12-glands. Schematic representation (left) of the Toll-/imd-pathways showing components with (green) and without an effect (red). The three distinguished phenotypes (right) were scored per replicate, means and standard deviations plotted (middle) and p-values for ‘None’-phenotype calculated via Dunn’s test based on Kruskal-Wallis rank sum test (***p<0.001, n.s. p≥0.05). Monitoring melanization in pupae (insets) confirmed RasV12-expression to avoid false positives (Hauling et al., 2014). (B) dl staining (red) and DrsGFP signal (green) in RasV12-glands with and without dl-knock-down. Dashed lines added to aid separating proximal part (PP) from distal part (DP). (C) In-situ hybridization for endogenous Drs in RasV12-glands hetero- or homozygous mutant for dl (dl15). Insets: (B) DAPI. Scalebars: (B–C) 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Larvae with RasV12-glands and DrsGFP reporter (green). (A) raised on plates with standard potatomash/molasses medium including stringent antibiotics cocktail, (A’) transferred immediately after hatching to germ- and yeast-extract free apple-agar supplemented with antibiotics or (A’’) after egg dechorionization were raised on sterile apple-agar including antibiotics. Scalebars: (A-A’’. Upper) 500 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) DrsGFP reporter assay with RNAi constructs against Caudal and Drifter in RasV12-glands. Sketched phenotypes (right) were scored, their mean and standard deviations plotted. Dunn’s test performed to evaluate significant differences in distribution of ‘None’-phenotype (*p<0.05, n.s. p≥0.05). (B) Upper: Schematic representation of the correlation assay. DAPI-signal defines nuclei location and volume used to subsequently accumulate fluorescence signals from nuclear DrsGFP-reporter and dl-staining. Lower: Scatterplot of associated dl- and Drs-signals per nucleus in proximal part (PP) or distal part (DP) across five glands at 96 hr after egg deposition (AED). Pearson correlation coefficient shown for all five samples. Lines with confidence intervals indicate linear regression for Drs- as a function of dl-signal per sample and gland compartment. (C) Endogenous Drs mRNA detected by in-situ hybridization in RasV12-glands with or without knocking down dl. (D) Complete set of experimental genotypes for Drs in-situ hybridization as shown in Figure 2C. including additional controls. (E) Drs in situ hybridization in 120-hr-old RasV12- and control-glands hetero- or homozygous mutant for Myd88 (Myd88KG03447). Scalebars: (C) 100 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Effect sizes of dlRNAi-knock-down on Drs-expression in proximal part (PP) and distal part (DP) compartments of and compared to RasV12-glands at 96 and 120 hr after egg deposition (AED). Mean of Drs-expression in RasV12-glands was set to '1’. Boxplots: lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. (B) Transcription factor binding site analysis in up- and down-regulated genesets of RasV12-, lglRNAi;RasV12-, and lglRNAi;RasV12-PP samples. Normalized enrichment scores represent statistical overrepresentation (NES >2) of transcription-factor-binding motifs in the six screened genesets. Cis-BP-derived motifs were sorted into the displayed transcription factor groups. NFκB- and jra- as well as Myb-, eg-, and br-motif groups were included as positive and negative examples. (C) DrsGFP-reporter-based assay including screened RNAi-lines targeting transcription factors identified in binding site analysis. three different phenotypes were scored (right) per genotype and their mean and standard deviation plotted. Dunn’s post-hoc test conducted on ‘None’-phenotype to validate significant differences (***p<0.001, n.s. p≥0.05). To avoid false positives, melanization was monitored in pupae (insets) to confirm RasV12-expression (Hauling et al., 2014). (D) Wider Drs-locus on ‘3L’- and ‘Dif/dl’-locus on ‘2L’-chromosome shown including outlines for gene loci encoded on plus and minus strands. Log-transformed motif scores are represented as a function of the motif’s location along the respective gene loci.
+
 The dl-Drs-relationship in RasV12-glands was further confirmed by the strong correlation of nuclear signals between dl-immunofluorescence and Drs-reporter intensities across PP and DP at 96 hr AED (Figure 2—figure supplement 2B; see ‘Materials and methods’). Moreover, at 96 hr AED dl was present in the entire secretory epithelium of both RasV12- and w1118-control glands. In contrast, at 120 hr AED its expression was solely confined to the PP (Figure 2B). This overlapped with the Drs-mRNA expression as determined by in situ hybridization (ISH; Figure 2—figure supplement 2C). Furthermore, both SG-specific knock-down or whole organism homozygous knock-out (dl15) of dl abolished the majority of Drs-expression in the DP of the gland at 96 hr AED and reduced it in the PP at both time points (Figure 2A–C; Figure 2—figure supplement 2C–D). On the contrary, RasV12-glands hetero- or homozygous mutant for Myd88 (Myd88KG03447) do not exhibit abolished Drs-mRNA-expression at 120 hr AED in line with our results from the reporter assay (Figure 2—figure supplement 2E).
 
 To assess the extent to which Drs relies on dl for its expression, we measured the effect size on Drs expression of the employed dlRNAi-construct in RasV12-glands (Figure 2—figure supplement 3A). A reduction of Drs-expression to 6% in the DP of 96-hr-old dlRNAi;RasV12- compared to RasV12-glands indicates not only a strong reliance for Drs on dl in this part at 96 hr, but also a high efficiency of the dlRNAi-construct. However, a less pronounced decrease of Drs-expression in the PP at 96 hr and 120 hr AED to 27% and 52% upon dlRNAi-coexpression implies the presence of additional Drs-regulating factors. Putative candidates for this Drs-regulating role were identified by screening transcription factor binding sites amongst the up- and downregulated genes in RasV12-glands and all other acquired transcriptomes (Figure 2—figure supplement 3B; see Figure 3 for lglRNAi;RasV12, lglRNAi;RasV12 – PP). Of the six identified candidates, only one RNAi-line targeting the transcription factor Mef2 significantly reduces the expression of Drs as assayed by DrsGFP-reporter signal at 96 hr AED (Figure 2—figure supplement 3C). This is further emphasised by clusters of putative Mef2-binding sites just downstream of the Drs-locus and in the 5’-ends of the Dif- and dl-loci, implying both direct and indirect regulatory potential on Drs-expression (Figure 2—figure supplement 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig3-v2.jpg)
+
+**Figure 3.:** (A) Common and specific genesets significantly upregulated (log2(beta) ≥1; q-value ≤0.05) in either RasV12, lglRNAi;RasV12, or lglRNAi;RasV12-PP compared to w1118-glands. (B) PCA including all transcriptome replicates of all sequenced genotypes. (C) Left: Comparative transcriptome analysis between proximal part (PP) of lglRNAi;RasV12- and entire w1118-glands. Significantly differentially expressed genes (log2(beta) ≥1; q-value ≤0.05) and genes belonging to GO-term ‘immune response’ (GO:0006955) highlighted in yellow and blue. Right: Gene expression in RasV12, lglRNAi;RasV12 or lglRNAi;RasV12-PP compared to w1118-glands for immune genes significantly upregulated in the PP. Blue arrows indicate strongest expression in the PP for the indicated genes between all three groups. Missing bars indicate absence of expression values in the RNAseq data. (D) GO term enrichment among significantly upregulated genes in RasV12-glands including terms related to activation of JNK (green) and immune responses (red). Numbers in bars indicate amount of upregulated genes belonging to associated GO term. (E) qPCR results for canonical JNK target genes (log2-transformed, fold-change over Rpl32) at 96 hr after egg deposition (AED). Lower/upper hinges of boxplots indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR and bar represents median. Significance evaluated by Student's t-tests (***p<0.001). (F) TREGFP1b reporter (green) signal in RasV12- and control-glands at 96 hr and 120 hr AED. Scalebar: 100 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic overview of protocol for preparing tissues analyzed by RNAseq. (B) Comparative GO term enrichment analysis for genes significantly upregulated in either RasV12- or lglRNAi;RasV12-glands. Terms associated with activation of JNK (green) or immune response (red) are highlighted. GO terms for RasV12 also shown in Figure 3D. (C) Expression of AMP genes in RasV12, lglRNAi;RasV12 or lglRNAi;RasV12-PP- in comparison to w1118-samples. Missing bars indicate absence of expression values in the RNAseq data. (D) AttD gene expression as determined by qPCR in separated proximal part (PP) and distal part (DP) of RasV12- and w1118-control glands at 96 hr and 120 hr after egg deposition (AED; log2-transformed, fold-change over Rpl32). Lower/upper hinges of boxplots indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Student's t-tests determine statistical significance (**p<0.01, n.s. p≥0.05). (E) CecA1-mRNA detected by in-situ hybridization in RasV12- and w1118-control glands at 96 hr and 120 hr AED upon coexpression of either a dlRNAi-knock-down or a CecA1-overexpression construct. (F) RasV12-, lglRNAi;RasV12- and w1118-control glands carrying the 10xStat92E-GFP reporter (green) at 96 hr and 144 hr AED (w1118-larvae pupate at 120 hr AED). Insets represent DAPI (white) staining. Scalebars: (E–F) 100 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Gene expression for canonical target genes measured by qPCR (log2-transformed, fold-change over Rpl32). Lower/upper hinges of boxplots indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR and bar represents median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05). Results for Mmp1, upd2 and upd3 in RasV12- and w1118-glands also presented in Figure 3E. (B) Activation of TREGFP1b reporter (green) used to evaluate induction of JNK-signaling at 96 hr and 120 hr after egg deposition (AED). RasV12 and w1118 images also presented in Figure 3F. Scalebar: 100 µm.
+
 Together, our results indicate that the spatio-temporal dynamics of Drs expression are strongly correlated to the decrease in endogenous dl expression, independent of canonical Toll- and imd-signaling. While dl expression is RasV12-independent, Drs is only expressed in the presence of dl during RasV12-induced hypertrophy. Alongside dl, Mef2 regulates Drs-activation emphasising the notion of non-canonical activation of this immune effector even further.
 
-## Hypertrophy in SGs induces parallel immune and stress responses
+### Hypertrophy in SGs induces parallel immune and stress responses
 
 Between 96 hr and 120 hr AED, the decrease in Drs-expression (Figure 1E; Figure 2B–C) is correlated with deterioration of tissue integrity (Figure 1A–B) in the DP of hypertrophic RasV12-glands. Thus, we hypothesized that the tissue-autonomous immune response revealed by Drs-expression aids in preventing the collapse of nuclear as well as cellular integrity until 96 hr AED in the DP and due to its prolonged expression in the PP until 120 hr AED and beyond (Figure 1—figure supplement 1I).
 
@@ -74,11 +110,19 @@ Importantly, we detected signatures of an activated JNK-cascade as well as cell 
 
 In summary, the transcriptome analysis confirms our findings that RasV12-overexpression induces a strong tissue-autonomous immune response in the PP of the SG, beyond sole Drs expression. In contrast, the DP shows a striking increase in JNK-signaling which correlates with decreasing Drs expression and cellular and nuclear disintegration at 120 hr AED, consistent with the described role of JNK target genes in PCD.
 
-## Drs overexpression and JNK inhibition prevent RasV12-induced tissue disintegration
+### Drs overexpression and JNK inhibition prevent RasV12-induced tissue disintegration
 
 The increase in JNK-signaling in the DP of the SG as revealed by our transcriptome analysis coincided in space and time with the downregulation of Drs suggesting an interaction between the tissue-autonomous immune response and the stress response.
 
 To test this assumption, we first overexpressed either Drs or a dominant negative form of the Drosophila Jun kinase jnk (basket) individually with RasV12 throughout the entire secretory epithelium of the SG (Figure 4A). Either Drs overexpression or JNK inhibition had a profound effect on the gland size, which was significantly increased at 120 hr AED, compared to RasV12 or UAS-dilution control mCD8::RFP;;RasV12 only (Figure 4B–C; Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig4-v2.jpg)
+
+**Figure 4.:** (A) Drs-specific in-situ hybridization identifies endogenous (RasV12, jnkDN;;RasV12) and exogenous (Drs, Drs,RasV12) Drs expression. (B) Collagen-GFP trap (vkgG00454, green) and Hemese staining (red) identify integrity of BM and hemocyte attachment to gland surface. Arrows indicate BM-free areas occupied and surrounded by hemocytes. Insets show DAPI (white) staining. (C) Size of salivary glands measured as outlined area in captured images of indicated genotypes at 96 hr and 120 hr after egg deposition (AED). (D) Hemocyte attachment at 96 hr and 120 hr AED represented as ln(Hemese-area)/ln(SG-area). (E) log2-transformed, Rpl32-normalized gene expression values for matrix metalloproteinases obtained by qPCR at 96 hr and 120 hr AED. (F) Hemocyte attachment at 120 hr AED in RasV12-glands hetero- and homozygous mutant for Mmp2 (Mmp2k00604). (G) Effect size of hetero- and homozygous mutant Mmp2-allele (Mmp2k00604) on hemocyte attachment to and compared to RasV12-glands. Mean of hemocyte attachment in RasV12-glands at 120 hr was set to ‘1’. (E) and (F) represent the same data points. Scalebars: (A–B) 100 µm. Boxplots in (C–G): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SG size as measured by outlining images of the 120 hr-old, experimental and control glands with the indicated genotypes. Lower/upper hinges of boxplots indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, n.s. p≥0.05). (B) Staining of BM via Collagen-GFP trap (green) and attached hemocytes via Hemese antibody (red) upon sole Mmp1- or Mmp2-overexpression. (C) w1118-control and RasV12-glands hetero- or homozygous for Mmp2 (Mmp2k00604) stained for attached hemocytes with anti-Hemese-antibody. Lower image row shows magnifications of the insets in the upper row. Filopodia (filled arrowheads) and lamellipodia (open arrowheads) indicate hemocyte activation on the surface of RasV12-, but not glands mutant for Mmp2. (D) H2DCF-staining (green) of live glands as general means to evaluate the presence of ROS at 96 hr and 120 hr after egg deposition (AED). Insets: (B–C) DAPI, (D) brightfield. Scalebars: (B, C. Upper, D) 100 µm, (C Lower) 50 µm.
 
 Importantly, despite this size increase, glands of both genotypes (i.e. Drs,RasV12 / jnkDN;;RasV12) showed no morphological abnormalities and resembled control w1118- much more than RasV12-glands (Figure 4A–B). Strikingly, jnkDN;;RasV12- and Drs,RasV12-glands were completely devoid of attached hemocytes (Figure 4B,D). Given the basement membrane’s (BM) role in directly regulating organ morphology, the rescue of the gland shape upon coexpression of either Drs or jnkDN with RasV12 pointed towards changes in the integrity of the BM (Ramos-Lewis and Page-McCaw, 2019). In addition, previous reports suggested that hemocytes are only recruited to tissue surfaces upon tissue disintegration and when the integrity of the BM is lost (Kim and Choe, 2014). To trace the BM we used an endogenous GFP-trap in the viking gene, which encodes one subunit of CollagenIV (Figure 4B). Both, in the presence of Drs or by inhibiting jnk, the BM remained a continuous sheet surrounding the entire gland, whereas the BM on the surface of RasV12-glands was clearly disrupted.
 
@@ -86,19 +130,43 @@ Matrix metalloproteinases (Mmps) are likely candidates for executing the disrupt
 
 Taken together, overexpression of Drs alone is sufficient to mimic the inhibition of the JNK-pathway in RasV12-glands: both lead to excess hypertrophic growth compared to RasV12-glands, but simultaneously prevent tissue disintegration and PCD. Prohibiting the disruption of the basal membrane reduces hemocyte recruitment and activation, thus preventing the cellular immune response from sensing hypertrophic growth. This in turn suggests that the endogenous Drs expression in RasV12-glands is seminal for maintaining nuclear and tissue integrity and thus part of the buffer mechanism to adapt to continuous growth signaling.
 
-## Drs inhibits JNK-signaling
+### Drs inhibits JNK-signaling
 
 The strong correlation between loss of Drs and the increase in JNK-signaling in the DP of RasV12-glands between 96 hr and 120 hr AED indicated an active interaction between Drs and the JNK-pathway, which prompted us to resolve their hierarchy by epistatic analysis.
 
 Coexpression of jnkDN with RasV12 did not deplete Drs in the PP of 120-hr-old glands, since neither the fluorescence signal of the Drs-GFP reporter nor staining for endogenous Drs-mRNA via ISH showed any effects (Figure 4A; Figure 5—figure supplement 1A). This excludes a direct regulation of Drs by JNK-signaling and also negates indirect reduction of Drs-expression in the DP due to JNK-induced PCD at 120 hr AED (see Figure 6 for more details). qPCR for Drs in RasV12- and jnkDN;RasV12-glands confirmed these results further (Figure 5—figure supplement 1B). In contrast, qPCR in hypertrophic RasV12-glands showed a significant reduction in expression of JNK target genes upon coexpression of Drs at 96 hr and 120 hr AED (Figure 5B; Figure 5—figure supplement 2C,D), which could not be reciprocated by coexpressing mCD8::RFP as a UAS-dilution control (Figure 5—figure supplement 3A) and which was in line with a decrease in activated jnk (Figure 5C,E; Figure 5—figure supplement 3B–C) and TRE-GFP1b signal in Drs,RasV12- compared to RasV12-glands (Figure 5B,D,F). Thus, the overexpression of the AMP Drs actively and tissue-autonomously inhibits the JNK-dependent stress response in hypertrophic RasV12-glands beyond 96 hr AED.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the JNK-pathway including read-outs (green) employed to track its activation. (B) qPCR results for canonical JNK-target genes (log2-transformed, fold-change over Rpl32) at 120 hr after egg deposition (AED). (C) Quantification of activated jnk by staining with phosphorylation-sensitive antibody normalized for the salivary gland (SG) size per gland at 120 hr AED. (D.) Quantification of TREGFP1b signal normalized for SG size per gland indicating JNK-dependent transcriptional activation at 120 hr AED. (E) Visualization of phosphorylated jnk in RasV12-glands with and without Drs-coexpression. (F) Distribution of TREGFP1b reporter signal in RasV12-glands in the presence or absence of coexpressed Drs. Insets: (E–F) DAPI. Scalebars: (E–F) 100 µm. Boxplots in (B–D): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) DrsGFP reporter (green) and Hemese antibody (red) used to detect endogenous Drs expression and attached hemocytes. Scalebar indicates 100 µm. (B) Expression of Drs and JNK-target genes as measured by qPCR (log2-transformed; normalized to Rpl32 expression) in RasV12-glands with and without inhibited JNK-pathway at 96 hr after egg deposition (AED). Boxplots comprise lower/upper hinges which inidcate 1st/3rd quartiles, whiskers with lengths equal to 1.5*IQR, red circle and bar representing mean and median. Significance levels evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Effect size of Drs-knock-down on Drs-expression in RasV12-glands. Mean RasV12-expression was set to ‘1’ separately at 96 hr and 120 hr after egg deposition (AED). (B) ISH with Drs-probe in RasV12-glands with or without coexpressed DrsRNAi-construct. (C–D) qPCR-derived expression values for Drs and JNK target genes in RasV12-glands with and without Drs-overexpression or Drs-knock-down at 96 hr AED and 120 hr AED (log2-transformed; normalized to Rpl32 expression). (E/G) RasV12-glands with in- (Drs) or decreased (DrsRNAi) Drs expression carrying TREGFP1b-reporter (green) to detect JNK-dependent transcriptional activation and corresponding quantifications of reporter signal normalized for SG size. (F/H) RasV12-glands with in- (Drs) or decreased (DrsRNAi) Drs expression stained for activated jnk with a phosphorylation sensitive antibody (pJnk, red) and corresponding quantifications of detected signal normalized for SG size. Insets: (G–H) DAPI. Scalebars: (B.,G-H.) 100 µm. Boxplots in (A, C-F): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05). Mmp1 and Mmp2 expression in (C–D) for w1118- and RasV12-glands also shown in Figure 4E. Images for w1118, RasV12, Drs, and Drs,RasV12 in (G–H) also presented in Figure 5E–F.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Expression values for Drs and JNK target genes as determined by qPCR for RasV12-glands coexpressing either Drs or mCD8::RFP as an UAS-dilution control at 96 hr and 120 hr after egg deposition (AED; log2-transformed; normalized to Rpl32 expression). (B–C.) Quantifications and prototypical representations of activated jnk assessed by anti-phosphoJNK-antibody staining and normalized for gland size in RasV12-glands coexpressing Drs or mCD8::RFP. Insets in (C) indicate DAPI (white) and the scalebar illiustrates 100 µm. Boxplots in (A–B): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05).
+
 In addition, we used an efficient RNAi-line against Drs, which in combination with RasV12 reduced Drs-expression significantly compared to its expression in RasV12-glands as shown by qPCR and ISH (Figure 5—figure supplement 2A–D; 8% residual Drs-expression at 96 hr and 4% at 120 hr in DrsRNAi;RasV12- compared to RasV12-glands). All significantly upregulated JNK-target genes in RasV12-glands apart from upd2 were further increased upon knockdown of Drs at 96 hr AED (Figure 5—figure supplement 2C). However, this effect ceased at 120 hr AED (Figure 5—figure supplement 2D) consistent with a lack of change in activated jnk (Figure 5—figure supplement 2F,H; Figure 5—figure supplement 3B–C) and TRE-GFP1b-signal (Figure 5—figure supplement 2E,G), as well as the canonical loss of Drs expression in the DP of RasV12-glands (Figure 1E). This result demonstrates that until 96 hr AED the endogenously expressed Drs has the same inhibitory effect on the JNK-pathway as the Drs-overexpression has at 120 hr AED.
 
-## Drs prevents cell death in RasV12-glands
+### Drs prevents cell death in RasV12-glands
 
 The capacity to induce apoptosis is a well-established function of the JNK-pathway in Drosophila (Uhlirova et al., 2005; Igaki et al., 2006; Enomoto et al., 2015; Uhlirova and Bohmann, 2006; Cordero et al., 2010). Combined with the identification of ‘cell death’ as a significantly enriched term in the GO-analysis, we hypothesized that the observed nuclear disintegration in RasV12-glands after 96 hr AED was a consequence of the JNK-dependent induction of PCD (Figure 1B–C; Figure 1D–F; Figure 3D; Figure 3—figure supplement 1B).
 
 In mitotic tissues, the apoptotic inducer head involution defective (hid) is inhibited by Ras/MAPK-signaling (Bergmann et al., 1998; Kurada and White, 1998). However, in RasV12-glands hid expression gradually increased from 96 hr to 120 hr AED coinciding with the increase in nuclear disintegration (Figure 6A). Coexpression of Drs with RasV12 significantly decreased hid expression at both time points, while Drs-knock-down in RasV12-glands increased hid expression even further already at 96 hr AED. Together with the reduction in hid expression upon JNK-inhibition in jnkDN;;RasV12-glands, Drs emerges as a negative regulator of the apoptotic inducer hid by inhibiting JNK-signaling (Figure 5—figure supplement 1B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig6-v2.jpg)
+
+**Figure 6.:** (A) Hid expression as measured by qPCR and plotted as log2-transformed values normalized to Rpl32-expression in RasV12-glands with in- (Drs) or decreased (DrsRNAi) Drs expression. (B) Schematic representation of the JNK-pathway including used methods of interference (green). (C) Nuclear volumina derived from z-stacks of DAPI-stained salivary glands (SGs) and averaged per gland at 96 hr and 120 hr after egg deposition (AED). (D) DAPI-stained (white) SG nuclei to indicate nuclear size and disintegration. (E–F) RasV12-glands with increased Drs expression stained with anti-CC3-antibody to detect Dronc activation (red) and corresponding quantifications of detected signal normalized for SG size. Insets in (E) show DAPI and scalebars in (D–E) represent 100 µm. Lower/upper hinges of boxplots in (A, C, F) indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student’s t-tests (***p<0.001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Quantifications and prototypical examples of RasV12-glands with in- (Drs) or decreased (DrsRNAi) Drs expression stained for activated Dronc (red) via the CC3-antibody, JNK-dependent transcriptional activation via the TREGFP1b reporter (green) and nuclei size and disintegration via DAPI (white). Arrows in magnified images point toward strong CC3-staining correlating with disintegrating nuclei. (C–D) CC3-staining (red) of RasV12-glands with coexpressed Drs or mCD8::RFP as a UAS-dilution control and corresponding quantifications. (E–F) Staining and quantification of CC3 to measure Dronc-activation upon hid-knock-down in RasV12-glands. All quantifications (A, C, E) of CC3-staining are normalized per gland for SG size. Insets: (B, D, F) DAPI. Scalebars: (B, D, F) 100 µm. Lower/upper hinges of boxplots in (A, C, E) indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01, *p<0.05, n.s. p≥0.05).
 
 To evaluate the induction of PCD in RasV12-glands, we either inhibited JNK-signaling at the level of jnk activation or coexpressed the caspase-inhibitor p35 with RasV12 and examined nuclear volume and integrity (Figure 6B–D). p35 inhibits Drice and thus blocks PCD at the level of effector caspase activation (Hay et al., 1994; Meier et al., 2000; Hawkins et al., 2000). While both interventions successfully blocked nuclear disintegration, the additional rounds of endoreplication as observed in RasV12-glands were not significantly suppressed (Figure 6C–D). Crucially, Drs-coexpression in RasV12-glands phenocopies the inhibition of JNK-signaling and effector caspases both in terms of restoring nuclear integrity as well as the persistence of excess endoreplications, in spite of a trend of overall nuclei size reduction similar to p35;RasV12-glands.
 
@@ -106,9 +174,17 @@ Last, to validate the inhibition of PCD by Drs, we monitored Dronc activity usin
 
 Taken together, we show that JNK-dependent induction of PCD is a consequence of the collapse in adaptation to RasV12-induced hypertrophy. Importantly, overexpression of Drs in RasV12-glands prevents PCD by blocking full JNK-activation. This is in contrast to recent observations where AMPs, including Drs, act pro-apoptically aiding in the elimination of tumor cells and limiting tumor size (Araki et al., 2019; Parvy et al., 2019).
 
-## Drs inhibits the JNK-feedback loop
+### Drs inhibits the JNK-feedback loop
 
 Various Drosophila models for tissue transformation have shed light on the functional separation of the JNK-pathway into an upstream kinase cascade leading to jnk-activation and a downstream feedback-loop converging again on jnk activation (Figure 7A; Fogarty et al., 2016; Pérez et al., 2017; Shlevkov and Morata, 2012; Muzzopappa et al., 2017).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of the JNK-feedback loop including levels of interference (blue) and used read-outs of its activity (green). hid-overexpressing glands with or without coexpressed Drs were quantified for (B) activated jnk via a phosphorylation sensitive antibody and (C) activated Dronc via the CC3-antibody. (D) Activated jnk (pJnk) was quantified and normalized to tissue size in RasV12-glands upon knockdown of Dronc. (E) Salivary glands solely overexpressing hid with or without Drs-coexpression were stained for activated jnk (green) and activated Dronc (red). (F) Activated jnk (red) was detected in RasV12-glands with or without Dronc-knock-down at 120 hr AED. Insets: (E–F) DAPI. Scalebars: (E–F) 100 µm. Boxplots in (B–D): lower/upper hinges indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001, **p<0.01).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) RasV12-glands with or without Dronc-knock-down were stained for activated jnk with a phosphorylation sensitive antibody at 120 hr after egg deposition (AED) and (B) the signal was quantified per SG and normalized for its size. Results for both RNAi-lines used, 23035/GD and 100424/KK, were consistent. Insets in (A) show DAPI and scalebar represents 100 µm. Lower/upper hinges of boxplots in (B) indicate 1st/3rd quartiles, whisker lengths equal 1.5*IQR, red circle and bar represent mean and median. Significance evaluated by Student's t-tests (***p<0.001).
 
 Our results revealed a negative regulatory impact of Drs on JNK-signaling in RasV12-glands, but did not determine which part of the pathway is targeted by Drs. To answer this question, we uncoupled the feedback loop from the upstream kinase cascade by solely overexpressing hid (Figure 7A). Irrespective of the differing models for the signal propagation downstream of Dronc, this initiator caspase remains seminal for establishing the actual feedback with jnk (Fogarty et al., 2016; Shlevkov and Morata, 2012). Thus, we stained glands for activated Dronc and jnk after a pulse of hid-overexpression during the larval wandering stage (Figure 7A). As expected, hid-expressing glands showed highly elevated levels of activated Dronc, but also jnk, which indicates the presence of feedback activation. Moreover, both phenotypes were reversed upon coexpression of Drs during the hid-expression pulse (Figure 7B–C,E).
 
@@ -116,21 +192,21 @@ To clarify that Drs operates in a similar fashion during RasV12-induced hypertro
 
 ## Discussion
 
-## Tissue-autonomous vs. cellular immune response mediated via JNK-signaling
+### Tissue-autonomous vs. cellular immune response mediated via JNK-signaling
 
 By overexpressing RasV12 in larval SGs, we made use of and overrode the gland’s ability to adapt to growth signals. Activating constitutive Ras/MAPK-signaling allowed us to identify local immune and stress responses as part of a buffering mechanism to compensate the accumulation of stress and decipher natural limits of growth adaptation (Hauling et al., 2014). Remarkably, in this context, the local immune response inhibits the parallel stress response, an effect that to our knowledge has not been described before. Central to this inhibition is the AMP Drs, which directly impinges on the JNK-pathway and thereby subsequently also on inducing PCD, a function completely opposite to previous observations in other tissues (Araki et al., 2019; Parvy et al., 2019). These results also indicate an unprecedented role for an AMP as a signal transducer enabling tissue-autonomous crosstalk between immune and stress pathways. Dependent on the extent of JNK-inhibition by the local, Drs-dependent immune response and thus the integrated decision of both on the state of the tissue’s homeostasis, the gland epithelium attracts hemocytes as part of a wider, cellular immune response. By virtue of inhibiting JNK-signaling, tissue-autonomous and cellular immune responses antagonize each other, a balance that determines continuous hypertrophic growth or its restriction (Figure 8). The latter has far reaching implications for therapeutic approaches that need to consider the adverse effects that stimulating immune responses might have on tissue growth after damage and under stress.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/64919/elife-64919-fig8-v2.jpg)
 
-**Figure 8.:** Ras-glands .V12dl-mediated Drs expression inhibits JNK activation in the entire Ras-gland until 96 hr after egg deposition (AED). At 120 hr AED, dl and thus Drs expression is reduced to the PP, derepressing full JNK-activation in the DP. Consequently, JNK-dependent expression of hid and Mmp2 participate in stimulating nuclear and tissue disintegration, which eventually leads to the interference with tissue growth and integrity by the cellular immune response.V12
+**Figure 8.:** dl-mediated Drs expression inhibits JNK activation in the entire RasV12-gland until 96 hr after egg deposition (AED). At 120 hr AED, dl and thus Drs expression is reduced to the PP, derepressing full JNK-activation in the DP. Consequently, JNK-dependent expression of hid and Mmp2 participate in stimulating nuclear and tissue disintegration, which eventually leads to the interference with tissue growth and integrity by the cellular immune response.
 
-## Drs is expressed as part of a genuine tissue-autonomous immune response
+### Drs is expressed as part of a genuine tissue-autonomous immune response
 
 The SGs of Drosophila larvae are an integral part of its gastrointestinal system and the lumen of the mature glands forms a continuum with the exterior. As such the glands are constantly exposed to microbial and pathogenic influences, which predestines them to act as a dedicated immunological barrier epithelium. However, raising larvae with RasV12-glands under strictly sterile conditions corroborated the authenticity of the immune response as tissue-autonomous and with high likelihood independent of exogenous or systemically distributed pathogenic stimuli. This is further emphasized by the dependency of Drs expression on the tissue-specific overexpression on RasV12 and tissue-autonomous manipulations (i.e. Drs or jnkDN overexpression) leading to the inhibition of JNK-activation and hemocyte recruitment. The activation of immune effectors in the absence of exogenous or endogenous pathogens is also consistent with the definition of sterile inflammation and aligns with finding in other models (Shaukat et al., 2015; Kenmoku et al., 2017; Asri et al., 2019). However, Drs is embedded into a wider spatio-temporally regulated activation of immune effectors and immune mechanisms providing immunocompetence to the PP until 120 hr AED and thus constituting a genuine immune response (Figure 3C–D; Figure 3—figure supplement 1B–C). Follow-up studies will determine the mode of their activation under physiological and sterile conditions and thus clarify their nature in the context of inflammation and immunity.
 
 Apart from dl and Mef2 neither the homeobox transcription factor Caudal as in the adult glands nor any other of the canonical members belonging to the Toll- and imd-pathway are involved in Drs expression (Hauling et al., 2014; Ferrandon et al., 1998; Ryu et al., 2004). Under wild-type conditions, dl is expressed throughout the entire gland epithelium until 96 hr AED, but only remains expressed in the PP at 120 hr AED (Figure 2B). This spatio-temporal expression pattern in turn determines to a large extent the expression of Drs in RasV12-glands essentially separating the gland at 120 hr AED into an immunocompetent duct-proximal and a stress-responsive duct-distal compartment (Figure 2B; Figure 2—figure supplement 3A; Figure 8). Due to the absence of Drs in the DP at 120 hr AED, stress-responsive JNK-signaling finally exceeds a critical threshold leading to elevated Mmp2- and hid-expression. This stimulates the onset of PCD and opening of the basal membrane as an important prerequisite for attachment of hemocytes that are subsequently recruited to the surface of the SGs (Figure 4B,D; Figure 8; Hauling et al., 2014). To the contrary, dl continues to induce Drs in the PP of RasV12-glands until 120 hr AED in line with the complete absence of hemocyte recruitment to this part of the gland (Figure 1F; Figure 1—figure supplement 1G–H). However, Drs becomes less dependent on dl between 96 hr and 120 hr AED. While its precise role in Drs-regulation especially in relation to dl remains to be elucidated, Mef2 might influence Drs-expression directly or indirectly parallel to ceasing dl-influence (Figure 2—figure supplement 3B–C).
 
-## Drosomycin impinges on JNK feedback activation
+### Drosomycin impinges on JNK feedback activation
 
 In depth analysis of wound regeneration and tumor formation has shed light on the intricate architecture of the JNK-pathway and its signal propagation (Santabárbara-Ruiz et al., 2015; Pinal et al., 2018). This has led to the discovery of feedback- or self-sustenance-loops as part of JNK-signaling (Fogarty et al., 2016; Pérez et al., 2017; Shlevkov and Morata, 2012; Muzzopappa et al., 2017). Similarly, several lines of evidence validated the existence of a complex quantitatively and qualitatively regulated activation of the JNK-pathway in RasV12-glands. In fact, the strong reduction of jnk activation upon knock-down of the initiator caspase Dronc in the RasV12-background at 120 hr AED indicates that a feedforward-loop is also part of the propagation of JNK-activation in hypertrophic glands (Figure 7D,F; Figure 7—figure supplement 1A–B). Consistently, even sole hid overexpression in SGs led to Dronc as well as jnk activation emphasizing the presence of this feedback-regulation as part of the JNK-pathway further (Figure 7B–C,E).
 
@@ -138,7 +214,7 @@ In general, feedback loops serve as a predestined platform to integrate addition
 
 Drs regulates the signal propagation of the intracellular module of the JNK-pathway and throughout our experiments only directly Drs-expressing cells prevented RasV12-induced cell disintegration and PCD. However, it remains an outstanding question whether Drs functions exclusively cell-autonomously and intracellularly or whether secreted Drs operates in an autocrine manner too. Clonal analysis and rescue experiments will serve this purpose in the future. Further work on the effector mechanism of Drs will also elucidate further details about the components of the JNK-feedback loop in- or directly regulated by Drs. This will also contribute to mapping the manifold modes of immune-stress-crosstalk in Drosophila and find general patterns among them beyond a sole dependency on the specific context.
 
-## Drs promotes hypertrophic growth and inhibits PCD
+### Drs promotes hypertrophic growth and inhibits PCD
 
 As our Drs,RasV12-experiments indicated, under conditions of continuous growth and therefore chronic stress induction, the ability to suppress the JNK-pathway in a Drs-dependent manner supports continuous, hypertrophic growth of RasV12-glands and the survival of the tissue. Moreover, a prolongation of Drs-expression beyond its endogenous decrease inhibits the induction of PCD and the recognition of the cellular immune response and thus renders the hypertrophic gland unchallenged.
 
@@ -146,7 +222,7 @@ In fact, while Ras/MAPK-signaling in mitotic tissues crucially suppresses apopto
 
 This differs fundamentally from the pro-apoptotic function of AMPs, which was recently described for two tumor models. In both, disc (discs large, dlg) (Parvy et al., 2019) and leukemic tumors (mxcmbn1) (Araki et al., 2019), AMPs were shown to target tumor cells and limit tumor size by inducing apoptosis. In addition to the differences between the tumorous tissues (i.e. proliferative discs and lymph glands), the fact that Drs is induced locally in SGs and acts tissue-autonomously may explain its different activities.
 
-## Hypertrophic SGs are a remarkable system to discover buffer mechanisms
+### Hypertrophic SGs are a remarkable system to discover buffer mechanisms
 
 Being incapable of cell proliferation, damaged postmitotic tissues cannot rely on regenerative cell plasticity like imaginal discs or stem cell-derived tissue regeneration as in the Drosophila adult midgut (Ohlstein and Spradling, 2006; Herrera et al., 2013; Herrera and Morata, 2014; Schuster and Smith-Bolton, 2015; Ahmed-de-Prado and Baonza, 2018). Instead, they need to cope with endogenous and exogenous influences via elaborate mechanisms to prevent or buffer detrimental consequences.
 
@@ -154,65 +230,831 @@ Here, we show that continued RasV12-expression in the larval SG overrides the de
 
 Thus, hypertrophic RasV12-glands constitute an outstanding system to study the involvement of tissue-autonomous immune and stress-induced responses to buffer deviation from homeostasis.
 
-## Immune surveillance theory
+### Immune surveillance theory
 
 According to the immune surveillance theory, the immune system has evolved to reduce the risk of somatic cells accumulating cancerous mutations (Burnet, 1957; Burnet, 1970). In order to reduce the danger of cell-transformation, cells express or expose molecules upon recognition of stress or damage during transformation. These markers are sensed by the immune system, which in turn eradicates the potentially harmful cells (Jung et al., 2012; Vantourout et al., 2014; Schmiedel and Mandelboim, 2018). Given the absence of exogenous or endogenous pathogenic agents, the activation of immune effectors (i.e. Drs) in the here presented system is most likely a consequence of sensing Danger or Damage Associated Molecular Patterns during hypertrophic gland overgrowth (Matzinger, 1994; Seong and Matzinger, 2004). However, the immune surveillance theory remains controversial, since tumor-associated inflammation was also shown to promote rather than suppress tumor growth (Balkwill and Mantovani, 2001; Mantovani et al., 2008). Our model bridges the gap between these two opposing views, since the effects of the tissue-autonomous and cellular immune responses appear to be antagonistic regarding the regulation of JNK-activation and thus ultimately PCD. In fact, only the integration of the various stress and immune mechanisms in hypertrophic RasV12-glands allows a concerted decision to eradicate a putatively dangerous cell via inducing PCD or not. Given the evolutionary conservation from insects to mammals of signaling pathways that govern growth control (Edgar, 2006), it is likely that mechanisms to detect and counteract a loss in regulation of these pathways, such as stress and immune pathways, are similarly conserved between both phyla.
 
 ## Materials and methods
 
-## Fly husbandry and stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dlRNAi</td>
+      <td>Bloomington</td>
+      <td>36650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-l(2)glRNAi</td>
+      <td>VDRC</td>
+      <td>109604/KK</td>
+      <td>Rives-Quinto et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-imdRNAi</td>
+      <td>VDRC</td>
+      <td>101834/KK</td>
+      <td>Bosch et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FaddRNAi</td>
+      <td>VDRC</td>
+      <td>100333/KK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-keyRNAi</td>
+      <td>VDRC</td>
+      <td>100257/KK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-RelRNAi</td>
+      <td>VDRC</td>
+      <td>108469/KK</td>
+      <td>Cammarata-Mouchtouris et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-spzRNAi</td>
+      <td>VDRC</td>
+      <td>105017/KK</td>
+      <td>Panettieri et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TlRNAi</td>
+      <td>VDRC</td>
+      <td>1000788/KK</td>
+      <td>Alpar et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cadRNAi</td>
+      <td>VDRC</td>
+      <td>49562/KK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Stat92ERNAi</td>
+      <td>VDRC</td>
+      <td>106980/KK</td>
+      <td>Recasens-Alvarez et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DroncRNAi</td>
+      <td>VDRC</td>
+      <td>100424/KK</td>
+      <td>Kale et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DroncRNAi</td>
+      <td>VDRC</td>
+      <td>23035/GD</td>
+      <td>Florentin and Arama, 2012</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Myd88RNAi</td>
+      <td>VDRC</td>
+      <td>25402/GD</td>
+      <td>Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-pllRNAi</td>
+      <td>VDRC</td>
+      <td>2889/GD</td>
+      <td>Wu et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DifRNAi</td>
+      <td>VDRC</td>
+      <td>30578/GD</td>
+      <td>Wu et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DifRNAi</td>
+      <td>VDRC</td>
+      <td>30579/GD</td>
+      <td>Wu et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DrsRNAi</td>
+      <td>VDRC</td>
+      <td>2703/GD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dfrRNAi</td>
+      <td>S. Certel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hidRNAi</td>
+      <td>VDRC</td>
+      <td>8269/GD</td>
+      <td>Nagata et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-foxoRNAi</td>
+      <td>VDRC</td>
+      <td>107786/KK</td>
+      <td>McLaughlin et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-grhRNAi</td>
+      <td>VDRC</td>
+      <td>33680/GD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mef2RNAi</td>
+      <td>Bloomington</td>
+      <td>38247</td>
+      <td>Zhao et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nrf2RNAi</td>
+      <td>VDRC</td>
+      <td>101235/KK</td>
+      <td>Brock et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nrf2RNAi</td>
+      <td>VDRC</td>
+      <td>108127/KK</td>
+      <td>Brock et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Sox14RNAi</td>
+      <td>VDRC</td>
+      <td>107146/KK</td>
+      <td>Wang et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DrsGFP</td>
+      <td>W.-J. Lee</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TRE-GFP1b</td>
+      <td>D. Bohmann</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Drs</td>
+      <td>B. Lemaitre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CecA1</td>
+      <td>B. Lemaitre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dl15</td>
+      <td>Y. Engström</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myd88KG03447</td>
+      <td>Y. Engström</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hid</td>
+      <td>M.Suzanne</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mmp2#4</td>
+      <td>A. Page-McCaw</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mmp1APM1037</td>
+      <td>A. Page-McCaw</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mmp1APM3099</td>
+      <td>A. Page-McCaw</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-RasV12</td>
+      <td>Bloomington</td>
+      <td>4847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>BxMS1096</td>
+      <td>Bloomington</td>
+      <td>8860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-jnkDN</td>
+      <td>Bloomington</td>
+      <td>6409</td>
+      <td>UAS-bskDN</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubP-Gal80ts</td>
+      <td>Bloomington</td>
+      <td>7108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mmp2k00604</td>
+      <td>Bloomington</td>
+      <td>10358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>10xStat92E-GFP</td>
+      <td>Bloomington</td>
+      <td>26197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-p35.H</td>
+      <td>Bloomington</td>
+      <td>5072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8::mRFP</td>
+      <td>Bloomington</td>
+      <td>27400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vkgG00454</td>
+      <td>Flytrap</td>
+      <td></td>
+      <td>Ref. 100; CollagenIV</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hemese (mouse monoclonal)</td>
+      <td>István Andó</td>
+      <td>H2</td>
+      <td>IF(1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pJNK (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:9255</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase 3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:9661</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dorsal (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>7A4-39</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgG-Alexa546 (goat polyclonal)</td>
+      <td>ThemoFisher Scientific</td>
+      <td>Cat#: A-11030</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-IgG-Alexa568 (goat polyclonal)</td>
+      <td>ThemoFisher Scientific</td>
+      <td>Cat#: A-11011</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Drs (cDNA clone)</td>
+      <td>DGRC</td>
+      <td>LP03851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CecA1 (cDNA clone)</td>
+      <td>DGRC</td>
+      <td>IP21250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligo(dT)16-primer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#:8080128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Drs_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gaggagggacgctccagt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Drs_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ttagcatccttcgcaccag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AttD_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gtttatggagcggtcaacg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AttD_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>tctggaagagattggcttgg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TIMP_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>aacagagcgtcatggcttca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TIMP_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>tcacaccaaaacaggtggca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>cgggtgatcgcttcaatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ctgcggtactcccgaaag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd2_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>aagttcctgccgaacatgac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd2_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>atccttgcggaacttgtactg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd3_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>actgggagaacacctgcaat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Upd3_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gcccgtttggttctgtagat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hid_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>tctacgagtgggtcaggatgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hid_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gcggatactggaagatttgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpr_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gatcaggcgactctgttgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpr_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>actgtgactcccgcaagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grim_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>atcgatgaccatgtcggagt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grim_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>cgcagagcgtagcagaagat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MMP1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gtttccaccaccacacagg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MMP1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gcagaggcgggtagatagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MMP2_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>tttcgatgcggacgagac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MMP2_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>gccacgttcagaaaattggt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUC_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>cgtcatcatcaacggcaat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUC_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>aggcggggtgtgtttctat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL32_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>cggatcgatatgcta</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL32_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>cgacgcactctgttg</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNase-free DNase I</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#:EN0521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SuperscriptIII</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#:18080-093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phalloidin-546</td>
+      <td>Molecular probes</td>
+      <td>Cat#:A22283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA SYBR FAST qPCR Master Mix (2x) kit</td>
+      <td>Kapa Biosystems; Sigma-Aldrich</td>
+      <td>KR0389, v9.13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAqueous-Micro Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#:AM1931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAqueous Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#:AM1912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Experion RNA StdSens Reagents and Supplies</td>
+      <td>Bio-Rad</td>
+      <td>Cat#:700-7154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Experion RNA StdSens Chips</td>
+      <td>Bio-Rad</td>
+      <td>Cat#:700-7153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vancomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:V2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:M3761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:N1876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:C1389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Hypochlorite solution</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#:10401841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Fiji contributors</td>
+      <td>v1.52n</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen software</td>
+      <td>Zeiss</td>
+      <td>Blue edition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td>v0.44.0</td>
+      <td>https://pachterlab.github.io/kallisto/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sleuth</td>
+      <td>Pimentel et al., 2017</td>
+      <td>v0.30.0</td>
+      <td>https://pachterlab.github.io/sleuth/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GOstats</td>
+      <td>Falcon and Gentleman, 2007</td>
+      <td>v2.48.0</td>
+      <td>https://github.com/Bioconductor/GOstats/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AnnotationDbi</td>
+      <td>Pagès et al., 2020</td>
+      <td>v1.44.0</td>
+      <td>https://github.com/Bioconductor/AnnotationDbi/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>org.Dm.eg.db</td>
+      <td>Carlson, 2019</td>
+      <td>v3.7.0</td>
+      <td>http://bioconductor.org/packages/org.Dm.eg.db/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNAseq_sg_ analysis.Rmd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/robertkrautz/sg_analysis/; Krautz, 2021; copy archived at swh:1:rev:82c91040d3434b215c04cfce11cf73f70300e099</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNAseq_motif_ enrichment.Rmd</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/robertkrautz/sg_analysis/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scanner.ijm</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/robertkrautz/sg_analysis/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RcisTarget</td>
+      <td>Aibar et al., 2017</td>
+      <td>v1.6.0</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/RcisTarget.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomaRt</td>
+      <td>Durinck et al., 2009</td>
+      <td>v2.42.1</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/biomaRt.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biostrings</td>
+      <td>Pàges et al., 2020</td>
+      <td>v2.54.0</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/Biostrings.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PWMEnrich</td>
+      <td>Stojnic and Diez, 2020</td>
+      <td>v4.22.0</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/PWMEnrich.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry and stocks
 
 All crosses were reared on standard potatomash/molasses medium under tempered conditions (see 'Staging') in a 12 hr dark/12 hr light-cycle. Drs-GFP (W.-J. Lee), UAS-dfrRNAi (S.Certel), TRE-GFP1b (D. Bohmann), UAS-Drs and USA-CecA1 (B. Lemaitre), dl15 and Myd88KG03447 (Y. Engström), UAS-hid (M.Suzanne), UAS-Mmp2#4, UAS-Mmp1APM1037, and UAS-Mmp1APM3099 (A. Page-McCaw) were kind gifts from the indicated donors. The following stocks were provided by the Bloomington Drosophila Stock Center: UAS-RasV12 (4847), BxMS1096 (8860), UAS-jnkDN (UAS-bskDN; 6409), tubP-Gal80ts (7108), Mmp2k00604 (10358), 10xStat92E-GFP (26197), UAS-p35.H (5072), and UAS-mCD8::mRFP (27400). RNAi-lines were sourced from the Bloomington Stock Center and the Vienna Drosophila Resource Center and are detailed in Supplementary file 3. The generation of the CollagenIV flytrap line vkgG00454 was described in Morin et al., 2001. Please, see Supplementary file 1 for a complete list of experimental crosses.
 
-## Staging
+### Staging
 
 Virgins were collected for 3–7 days before setting crosses. Initially, crosses were kept on standard food without antibiotics for 48 hr at 25°C. Eggs were collected for 6 hr (Immunohistochemistry and qPCR) or for 2 hr (RNASeq) at 25°C. When necessary, precollections were performed for 2 hr at 25°C prior to the actual collection. Egg collections were incubated for 24 hr at 29°C or for hid experiments 48 hr at 18°C and replicates of 24 hatched 1st instar larvae were afterwards transferred to vials with 3 ml standard food supplemented with Neomycin (0.1 mg·ml−1, Sigma-Aldrich, N1876), Vancomycin (0.1 mg·ml−1, Sigma-Aldrich, V2002), Metronidazol (0.1 mg·ml−1, Sigma-Aldrich, M3761) and Carbenicillin (0.1 mg·ml−1, Sigma-Aldrich, C1389). After incubation at 29°C for another 72 hr (96 hr AED) or 96 hr (120 hr AED), 3rd instar larvae were prepared for dissection or pictures were taken of whole larvae with a Leica MZ FLIII Fluorescence Stereomicroscope. For hid experiments, transferred larvae were incubated for 197 hr at 18°C, shifted to 29°C for 12 hr and finally dissected. To exclude microbial contamination and maintain germ-free conditions, BxGal4;;DrsGFP/UAS-RasV12-eggs were dechorionated with a 50% Sodium Hypochlorite solution (Fisher Scientific, 10401841) immediately after collection and transferred to vials with apple-agar supplemented with Nipagin, Propionic acid and the same antibiotics as above. Larvae were then analyzed at 24 hr and 48 hr AED.
 
-## Drs reporter assay
+### Drs reporter assay
 
 Replicates of Drosophila larvae (n = 24 larvae·replicate−1; N > 6 replicates) at 96 hr AED were screened for Drs-GFP reporter signals. Three phenotypes were distinguished: (1.) ‘Full’ SG pattern includes GFP signal across the entire PP and GFP+-cells with reduced intensity in the DP. (2.) ‘Partial’ SG is GFP+ throughout the PP, but less pronounced in DP with reduced signal intensity and fewer GFP+-cells. (3.) ‘None’ phenotype lacks signal throughout the entire gland. Distribution of phenotypes were scored per replicate and significance calculated for the ‘None’-phenotype via Dunn’s test after performing the Kruskal-Wallis rank sum test.
 
-## qPCR
+### qPCR
 
 Total RNA of dissected SGs was isolated with the RNAqueous-Micro Kit (ThermoFisher Scientific, AM1931) and from whole larvae with the RNAqueous Kit (ThermoFisher Scientific, AM1912) according to the instructors manual. Residual genomic DNA was digested with RNase-free DNaseI (ThermoFisher Scientific, EN0521) and cDNA reverse transcribed with SuperscriptIII (ThermoFisher Scientific, 18080–093) while using oligo(dT)16-primer (ThermoFisher Scientific, 8080128). Quality of all prepared totalRNA-extractions was evaluated on a 5 mM Guanidinium Thiocyanate-agarose gel, for optimization purposes on a BioRad Experion system (RNA StdSens Assay, 7007153, 7007154) and totalRNA for sequencing was run on a 2100 Bioanalyzer Instrument (Agilent Technologies, 5067–1511). qPCR reactions were set as technical triplicates with KAPA SYBR FAST qPCR Master Mix (KR0389, v9.13) including 200 nM final concentration of forward and reverse primers and run on a Rotor-Gene Q 2plex HRM machine (9001550). See supplementary file 2 for list of all used qPCR primers. The number of biological replicates acquired and assayed in the experiment represented in the individual figures are denoted underneath the respective graphs.
 
-## RNASeq library preparation and analysis
+### RNASeq library preparation and analysis
 
 To avoid variability and thus confounding influences among the various RNASeq sample groups, we controlled rigorously for age of female parents, larval density to avoid larval crowding, age differences as well as developmental age itself and bacterial influences by using axenic culture conditions. For each genotype, three biological replicates were dissected with 30 pairs of SGs for the three groups including whole glands and 60 pairs of PPs for the corresponding group to acquire 5 µg of total RNA. No power or sample size calculations were performed. Replicate numbers were determined by the available resources and funds.
 
 Poly(A)-containing mRNA molecules from totalRNA-samples were purified with oligo(dT)-magnetic beads, subsequently fragmented and cDNA synthesized with random primers using the TruSeq RNA Sample Preparation Kit v2. Adapter ligation and PCR-amplification precede cluster formation with a cBot cluster generation system. All samples were sequenced on a HiSeq 2500 Illumina Genome Sequencer as PE50. Reads were pseudoaligned with kallisto (v0.44.0) to a transcriptome index derived from all Drosophila transcript sequences of the dmel release r6.19. Subsequent analysis of transcript abundances was performed in R with sleuth (v0.30.0) including principal component analysis for dimensionality reduction, statistical and differential expression analysis based on the beta statistic derived from the wald test. Enriched gene ontology terms were identified by calculating hypergeometric p-values via the GOstats (v2.48.0) R package. Gene IDs were converted via the AnnotationDbi (v1.44.0) package and the reference provided with the org.Dm.eg.db (v3.7.0) database and geneset intersections visualized as UpSetR plot (v1.3.3). Please, see the accompanied R markdown (i.e. ‘RNAseq_sg_analysis.Rmd’) deposited on GitHub for details (https://github.com/robertkrautz/sg_analysis). The data is available under the accession number GSE138936 on the NCBI Gene Expression Omnibus.
 
-## Detection of enriched motifs and Mef2 visualization
+### Detection of enriched motifs and Mef2 visualization
 
 Significantly, differentially up- (i.e. q < 0.001 and b > 1) or downregulated (i.e. q < 0.001 and b < −1) genesets were determined for all three sample populations by subsetting q- and b-values as determined by sleuth with the latter indicating fold-change over expression in BxGal4>w1118-control crosses. The RcisTarget R package (v1.6.0) together with the accompanied file including all dm6 motif rankings (i.e. ‘dm6-5kb-upstream-full-tx-11species.mc8nr.feather’) were used for motif enrichment analysis in the various genesets and adding annotations. Enriched motifs were manually screened for functionally related motif groups (e.g. ‘NFkB’ with dl-, Dif-, Rel-relaetd motifs) and motifs plotted according to their affiliation to these groups.
 
 The sequence of the ‘dm6’ genome assembly was acquired as fasta-file from the Ensembl database and nucleotide sequence frequencies across the genome calculated via customized functions including all major chromosomes. In parallel, promoter sequences for all ‘dm6’ genes were collected via the biomaRt package (v2.42.1) and converted into a DNAStringSet with the Biostrings package (v2.54.0). A curated list of all ‘dm6’ transcription factor motifs as position probability matrices was obtained from the Cis-BP database and converted to position weight matrices (PWMs) with the help of the PWMEnrich R package (v4.22.0) by using the above cacluated nucleotide sequence frequencies. Based on these PWMs and all promoter sequences, background scores for all ‘dm6’ transcription factor motifs across all promoters of the ‘dm6’ genome were quantified. Sequences for the wider Drs-locus and the shared Dif-/dl-loci environments were obtained via biomaRt and the enrichment of the Mef2-motif ‘M08214_2.00_Mef2’ compared to all background scores was calculated via PWMEnrich. Mef2 motif enrichment scores were plotted as a function of the location of the detected motif in the screened loci (i.e. Dif/dl; Drs) with the help of the novel, devised function geom_bar_rastr(), which servers as an extension to the ggrastr R package. For details please follow the entire computational workflow as provided in ‘RNAseq_motif_enrichment.Rmd’ deposited on GitHub (https://github.com/robertkrautz/sg_analysis).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 PPs of staged larvae were inverted in PBS, unnecessary organs removed and samples fixed in 4% paraformaldehyde for 20 min. Subsequently, samples were washed three times for each 10 min in PBS or PBST (1% TritonX-100). Blocking was performed with 0.1% BSA in PBS (H2) or 5% BSA in PBST (anti-CC3, anti-pJNK and anti-dl). Samples were then incubated in primary antibodies dissolved in blocking buffer for 12 hr at 4°C or 1 hr at room temperature (RT). Primary antibodies comprised rabbit anti-cleaved caspase 3 (1:200, Cell Signalling Technology, 9661), mouse anti-pJNK (1:250, Cell Signalling Technology, 9255), mouse anti-dl (1:50, DSHB, 7A4), and mouse anti-Hemese (1:5; gift from István Andó). After washing as prior to blocking, secondary antibodies were applied together with DAPI (1:500; Sigma-Aldrich; D9542) and when necessary Alexa Fluor 546 Phalloidin (1:500, ThermoFisher Sceintific, A22283) in blocking buffer for 1 hr at RT. As secondary antibodies goat anti-Mouse-IgG-Alexa546 (H+L; 1:500; ThermoFisher Scientific; A-11030) and goat anti-Rabbit-IgG-Alexa568 (H+L; 1:500; ThermoFisher Scientific; A-11011) were employed. Final washing as prior to blocking preceded dissection of the samples in PBS and separation of SGs. Tissues were mounted in Fluoromount-G (SouthernBiotech) and analyzed with a Zeiss LSM780 confocal microscope. Images were extracted with Zen software (Blue edition) for further processing either in Adobe Photoshop CS5 Extended (v12.0.4 × 64) or Inkscape (v0.92).
 
-## ROS-staining
+### ROS-staining
 
 H2DCFDA (D399, Thermo Fisher Scientific) was reconstituted in DMSO just prior to the experiment. This stock solution was further diluted to 10 µM in PBS. Freshly dissected glands were incubated in the 10 µM- working solution for 30 min in the dark. Three 5-min wash steps in PBS ensured removal of excess H2DCFDA-dye. Glands were mounted with PBS and confocal pictures obtained with the Zeiss LSM780 microscope system.
 
-## Hemocyte- / pJNK- / CC3- quantification and size measurement
+### Hemocyte- / pJNK- / CC3- quantification and size measurement
 
 Pictures of stained glands were taken with a Zeiss Axioplan two microscope equipped with an ACHROPLAN ×4 lens and a Hamamatsu ORCA-ER camera (C4742-95). Images were extracted with AxioVision software (v40V 4.8.2.0) and analyzed with ImageJ. Cumulated area of hemocyte attachment, pJNK or CC3 fluorescence per SG or per SG part was filtered in the Red-channel and gland size determined by outlining glands, PPs or DPs with the 'Polygon selection'-tool. The distribution of hemocytes in Drosophila can be approximated by a natural logarithm, which required transformation of hemocyte attachment- and SG-areas before calculating ratios (Sorrentino, 2010). Normality across all samples of a particular genotype and where necessary separated by gland part (i.e. proximal or distal) or time (i.e. 96 hr and 120 hr AED) was evaluated with the Shapiro-Wilk-test and by bootstrapping via the fitdistrplus R package (v1.0.11). Significant differences between experimental groups were determined for pairwise comparisons via the Student’s t-test after validating un-/equal variance via the Bartlett’s test. Data and statistical analysis was performed in R. No power or sample size calculations were performed. All experiments were performed at least twice, while preparing and acquiring meaurements for all specimens and replicates of the respective experimental set-up. The amount of replicates was determined as a trade-off between reproducibility (maximum number) and feasibility of the experimental procedure to ensure same treatment and timing for all specimens. No measurements were categorized as outliers or excluded. Effect sizes were calculated by normalizing the effect and the reference samples by the mean of the reference samples, which anchors the reference mean at ‘1’ and reports all deviations from it in procent.
 
-## Nuclei volume
+### Nuclei volume
 
 Z-stacks of entire SGs were captured with a Zeiss LSM780 confocal microscope for DAPI signal. Obtained stacks were further processed in ImageJ via the '3D Objects Counter'-plugin (v2.0.1.). Proximal and distal compartments were defined with the 'Polygon selection'-tool. Transfer of the region of interest to all z-stack slices, signal thresholding, object identification and volume determination were integrated in a macro workflow. Data were plotted as average nucleus volume for all nuclei of individual glands or gland parts. Representative sections of individual z-stack slices showing the transition between proximal and distal compartments were cropped and added for illustration. Statistics were performed similar to the analysis of Hemocyte-, pJNK- and CC3- quantifications.
 
-## Drs-dl-correlation
+### Drs-dl-correlation
 
 BxGal4;;DrsGFP>RasV12-glands were stained for dl (mouse anti-dl-Ab; 1:50, DSHB, 7A4) and genomic DNA (DAPI), whereafter z-stacks were obtained on a Zeiss LSM780 confocal microscope. Proximal and distal gland compartments were delineated as regions of interest (ROI) in ImageJ with the ‘Polygon selection’-tool and nuclei therein defined via their DAPI-signal and the ‘3D Objects counter’-ImageJ plugin. Transfer of the 3D-nulei outlines across the dl- and Drs-channels via the ImageJ ‘RoiManager 3D’ (v3.96) allowed quantifying an accumulated intensity of the corresponding signals per nucleus. Data analysis was conducted in R including calculation of linear regression and Pearson coefficients for correlations between nuclei-wide Drs- and dl-signal for individual gland compartments and visualization of all nuclei data points after log10-normalization for all five screened samples.
 
-## Driver expression strength
+### Driver expression strength
 
 DrsGFP-reporter or Phalloidin-stained, GFP-glands were captured with the ‘Zeiss Axioplan two microscope / ACHROPLAN 4x lens / Hamamatsu ORCA-ER camera (C4742-95) / AxioVision software (v40V 4.8.2.0)’-system. ROIs were added manually to the imaged glands to outline their position in ImageJ with the ‘Polygon selections’-tool. Feret diameter and angle were measured to delineate the longitudinal axis of each gland. For each position along the longitudinal axis, the corresponding rectangular line region intersecting with the glands ROI is determined and the encapsulated average fluorescence intensity measured. This workflow is implemented as ImageJ-macro (i.e. ‘scanner.ijm’) for screening of entire picture batches and available on GitHub (https://github.com/robertkrautz/sg_analysis). The resulting data was further analyzed in R to bin and align measurements along the longitudinal axis. Measurements were further averaged and normalized per bin across all screened glands. Given the statistically limited amount of observations (i.e. 200–350 bins), a loess function was used for smoothing the mean during visualization as implemented in geom_smooth() (i.e. span = 0.05).
 
-## Probe synthesis and in situ hybdridization
+### Probe synthesis and in situ hybdridization
 
 cDNAs for the Drs (LP03851) and CecA1 (IP21250) loci were obtained from DGRC and plasmids transformed into DH5α according to the supplier’s instructions. Extracted plasmids were linearized (EcoRI 20 U/µl, 10x EcoRI buffer, BSA 20 mg/ml in ddH2O), purified with phenol:chloroform:isoamyl alcohol (24:24:1/125:24:1) and precipitated (3M sodium acetate, ice-cold 100% Ethanol) for 30 min. In vitro transcription (5x transcription buffer, 1 µg template DNA, 10x Digoxigenin-11-UTP rNTP; Roche; 11277073910, 20U Ribolock; Fermentes; EO0381, T7 polymerase; ThermoFisher Scientific; EP0111) was performed for 3 hr at 37°C. The remaining DNA template was digested with DNase I for 15 min at 37°C and digestion terminated with ammonium acetate (DEPC-H2O:7.8M NH4Ac:100% Ethanol – 1:0.5:3). The transcribed RNA was precipitated, purified and diluted in hybridization buffer (6.57 mg/ml Torula RNA; Sigma-Aldrich; R6625, 65% deionized formamide, 6.5x Saline sodium citrate [SSC], 65 µg/ml heparin, 0.1% Tween-20).
 

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.31486.001 Protein phase separation is implicated in formation of membraneless organelles, signaling puncta and the nuclear pore. Multivalent interactions of modular binding domains and their target motifs can drive phase separation. However, forces promoting the more common phase separation of intrinsically disordered regions are less understood, with suggested roles for multivalent cation-pi, pi-pi, and charge interactions and the hydrophobic effect. Known phase-separating proteins are enriched in pi-orbital containing residues and thus we analyzed pi-interactions in folded proteins. We found that pi-pi interactions involving non-aromatic groups are widespread, underestimated by force-fields used in structure calculations and correlated with solvation and lack of regular secondary structure, properties associated with disordered regions. We present a phase separation predictive algorithm based on pi interaction frequency, highlighting proteins involved in biomaterials and RNA processing.
+Protein phase separation is implicated in formation of membraneless organelles, signaling puncta and the nuclear pore. Multivalent interactions of modular binding domains and their target motifs can drive phase separation. However, forces promoting the more common phase separation of intrinsically disordered regions are less understood, with suggested roles for multivalent cation-pi, pi-pi, and charge interactions and the hydrophobic effect. Known phase-separating proteins are enriched in pi-orbital containing residues and thus we analyzed pi-interactions in folded proteins. We found that pi-pi interactions involving non-aromatic groups are widespread, underestimated by force-fields used in structure calculations and correlated with solvation and lack of regular secondary structure, properties associated with disordered regions. We present a phase separation predictive algorithm based on pi interaction frequency, highlighting proteins involved in biomaterials and RNA processing.
 
 ## Introduction
 
@@ -34,11 +34,23 @@ Given the high frequency of aromatic residues, arginine and glutamine in many ph
 
 ## Results
 
-## Prevalence of Pi contacts in the PDB
+### Prevalence of Pi contacts in the PDB
 
 To determine the frequency of pi-pi interactions and better understand their nature and physical properties, we performed a bioinformatics analysis of folded proteins. We searched the PDB for pi-pi interactions by measuring contact distances between planar surfaces and comparing planar orientations (see Materials and methods), choosing to focus on interactions involving pi-orbital planar surfaces as this category shows the most enrichment over expectations, both in terms of overall frequency (Appendix 1—figure 1) and in relation to resolution. Face-to-face planar pi-pi contacts were defined using a simple distance- and orientation-based metric designed to consistently capture this enrichment across diverse sp2-containing groups (Appendix 1—figure 1A,B,C).
 
 Our analysis was originally intended to explore the known interactions of aromatic sidechains with each other and with arginine, but in order to provide a control group we defined our contact parameters in a way that allowed us to treat all sp2 groups in the same fashion. In high-resolution (≤1.8 Å) and low R-factor (≤0.18) protein crystal structures (N = 5718), we found that planar pi-pi stacking interactions involving non-aromatic atoms outnumber aromatic-aromatic stacking interactions by approximately 13 to 1 (Figure 1A and Appendix 1—table 1) suggesting that, while aromatic sidechains may be enriched in stacking interactions relative to their frequency, there is a more general role for pi-contacts that involve non-aromatic atoms. The vast majority of planar pi-orbital contacts in proteins involve one of five non-aromatic sp2-hybridized sidechains or the peptide bond itself. Fully 36% of observed pi-pi stacking interactions do not involve an aromatic partner, with face-to-face planar contacts between different backbone peptide bonds occurring as often as aromatic face-to-face contacts (Figure 1A). Across the high-resolution set, we observe that 58% of heavy atoms are sp2, of which 10.5% are involved in pi-stacking. Furthermore, 28% of heavy atoms that are not directly involved in pi-stacking are found within van der Waals (VDW) contact distance (4.9 Å) of atoms that are. Thus, planar pi-pi interactions form a common feature of the protein chemical environment. Comparisons to previous work showing that aromatic-aromatic interactions in proteins are instead biased toward face-to-edge or parallel displaced geometries (Hunter et al., 1991; Martinez and Iverson, 2012) are complicated by the observations that VDW contacts between aromatic sidechains coincide with face-to-face pi-pi stacking to a third sp2-hybridized group 49% of the time, and that parallel displacement often accommodates an additional non-aromatic pi-contact to the same planar surface.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig1-v2.jpg)
+
+**Figure 1.:** (A) Average number of sp2 groups involved in planar pi-pi contacts per 100 protein residues binned by crystal structure resolution. Values are shown for contacts defined by the nature of the involved sp2 groups, with all groups in black, aromatic to non-aromatic sp2 in blue, non-aromatic to non-aromatic in pink, backbone to backbone in gray, and aromatic to aromatic in orange. Error bars show bootstrap SEM. (B) Planar pi-pi contact interaction frequencies for each residue type, with the average across all residue types shown as a red line, and (C) frequency of each residue type in contributing to planar pi-pi interactions, with bars showing overall frequency colored proportionally by the nature of the contact partners. Figure 1—source data 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** To examine relative contact enrichment, sidechain contacts to the backbone are normalized against the total number of contacts satisfying the same VDW criterion (two pairs of atoms within 4.9 Å), with comparison between (left) planar sp2 sidechain groups (for W, F, Y, H, R, Q, N, E and D) and (right) selected sp3 planar surfaces (for C, S, M, T, K, L, V, I). The sp3 planar surfaces were chosen as a control by taking sets of atoms describing exposed planar surfaces, as described in the Materials and methods. Comparing relative planar contact frequency, we observe the majority of sp2 sidechain types show clear enrichment relative to the sp3 controls.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Percentage of residues involved in planar contacts are shown in red, and percentage in any other non-planar VDW contact are shown in blue, with panels showing contacts by sidechain group (for panels A-F: R to R, R to K, H to R, H to K, Q to R, and Q to K). We observe that the increase in planar pi-pi contacts to arginine at higher resolution comes at the expense of non-planar VDW contacts (panels A, (C and E). In contrast, contacts made to an arbitrary surface plane at the end of lysine sidechains do not show this increase in planar orientation with resolution (panels B, D and F).
 
 Analysis of protein structures showed that the frequencies of planar pi interactions strongly correlate with the power of the experimental data to constrain the structure and with the fit to the data. We identified a linear relationship between contact frequencies and the resolution of crystal structures (Figure 1A). We identify a similar dependence of contact frequency on the relative number of sidechain-specific distance constraints in NMR structures (Appendix 1—figure 2A) and confirm that the dependence on resolution persists for identical sequences solved multiple times at different resolutions (Appendix 1—figure 2B). These data suggest that the relative importance of pi-pi interactions are underestimated in the force-fields that are used in the structure calculations and thus appear more frequently in structures that are heavily constrained by experimental observations. In addition, pi-pi contact frequencies for amino acid and other small sp2-containing ligands bound to proteins (including non-aromatic ligands) are higher than the frequencies observed for the same chemical group found within proteins, despite or perhaps because of their relative freedom of movement (Appendix 1—table 2).
 
@@ -52,17 +64,29 @@ Aromatic groups are known to have favorable interactions with other aromatics, w
 
 Modeling and analysis of protein structures typically involves the use of coarse-grained energy functions. To test the degree to which contact frequencies in solved structures derive from experimental constraints, rather than the force fields used, we explored how well planar pi interactions are captured by the simple energy functions used in certain protein modeling protocols. We examined a few different modeling protocols by either running available methods or downloading pre-computed datasets (see Materials and methods). In general, planar pi-pi contacts were lost during simulations (Appendix 1—figure 3A) and energy minimization (Appendix 1—figure 3B). In one older molecular dynamics simulation of folded proteins, made available for 100 proteins via Dynameomics (Kehl et al., 2008), 90% of the planar pi-pi contacts found in the starting structures were lost during simulation, with the majority being lost within the first few simulation steps. Similarly, modeling of the energetic effect of mutations, the ∆∆G of unfolding, using both FOLDX (Schymkowitz et al., 2005) and Rosetta (Kellogg et al., 2011), shows decreased prediction accuracy at positions involved in pi-contacts (Appendix 1—figure 3C-F), based on comparison to a reference set of ∆∆G measurements (Bava et al., 2004). These observed issues in modeling pi-contacts may be overcome by more recent and sophisticated energy functions, but our results are consistent with the inherent energetic importance of planar pi interactions, rather than their observation being due to simple force fields used in refining protein structures.
 
-## Enrichment of pi-pi contacts in catalytic, capping and RNA-binding sites
+### Enrichment of pi-pi contacts in catalytic, capping and RNA-binding sites
 
 For exploring the contribution of pi contacts to general structural and functional properties of proteins, we examined contact enrichment for sp2 groups found in a diverse range of interactions. We observe increased frequency of pi-pi contacts at positions with known catalytic function (Furnham et al., 2014), with enrichment of 1.87 ± 0.07 overall and 1.42 ± 0.07 when normalized by residue type (Appendix 1—table 3), with pi-pi contacts often playing a role in defining the geometry of the active site (Figure 2B) or forming networks of pi-pi contacts. We find that hydrogen bond frequency increases at sp2 sidechains involved in pi-contacts (Appendix 1—figure 4), and when sp2 groups hydrogen bond each other we observe increased frequencies of a third sp2 group being found in simultaneous pi-stacking to both the donor and acceptor groups of the hydrogen bond (Appendix 1—figure 1F and Figure 2C), suggesting potential cooperativity via the electrostatic and geometric stabilization of the bond. We also observe up to 20-fold enrichment at the ends of secondary structure elements, relative to the median backbone contact rate of 1.7%, with enriched positions often involving the last hydrogen bond made within a helix or at the end of a strand (Figure 2D and Appendix 1—figure 5), commonly placing them in the context of local capping motifs thought to stabilize secondary structure (Richardson and Richardson, 1988). Finally, we find that protein-RNA interactions typically involve pi-pi contacts, especially with arginine. A detailed description of these observations is included in Appendix 1.
 
-## Correlation of pi-pi contacts with solvation and lack of regular structure
+### Correlation of pi-pi contacts with solvation and lack of regular structure
 
 Interactions at the surface of a protein are typically in competition with solvent and their enthalphic contribution often decreases with solvent exposure, as for protein-protein hydrogen bonds (Efimov and Brazhnikov, 2003). Planar pi-pi interactions, in contrast, cannot be formed with water, but often involve groups with hydrogen bond acceptors and donors; thus, we predicted that the frequency of pi-pi interactions in proteins could be increased in more solvated environments. To test this, we identified high-resolution structures with an abundance of solved water and then counted the observed solvent interactions by the number of water oxygen atoms within a broad VDW contact radius (4.9 Å) to each residue. We saw an unambiguous positive correlation between the number of water contacts and the probability that a residue is involved in a planar pi-pi-contact, with a significant increase in average probability observed for each additional water contact (Figure 3A,B), climbing even as the average number of protein:protein VDW contacts declines. This relationship is true for the general case (unspecified residue identity) and is also individually true for each of the nine residues with pi orbital-containing sidechains. However, both the contact frequencies and the amino acid frequencies themselves increase with a greater dependence on solvation for non-aromatic residues, especially for the charged amino acids Arg, Glu and Asp, such that non-aromatic contacts become the dominant form of interaction at high solvation levels (Figure 3—figure supplement 1). The relative increase is highest for contacts involving sidechains of like-charge, especially arginine (Figure 3—figure supplement 2), suggesting that solvation plays a role in the strength of the interactions.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig3-v2.jpg)
+
+**Figure 3.:** (A) Contact frequency for sidechain groups (red) and backbone (blue) increases with the total number of solved water molecules within 4.9 Å of the residue, based on structures with >1 water oxygen per residue, including all molecules within 8 Å of the chain of interest, including symmetry partners. (B) Representative example of a pi-stacked sidechain in contact with 11 water molecules (PDB:4u98), showing how the interaction does not appear to compete with solvent. (C) Mean contact frequency vs. sequence distance from regular secondary structure and loop/turn regions. (D) Example of the range of interactions found >10 residues from helix/strand secondary structure (PDB:4b4h).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Effects of solvation, measured by the total number of water molecules within 4.9 Å of a given residue, on the overall frequency of different types of interactions, categorizing contacts by the identities of the solvent contact tested residue and its partner, where the solvated residue is listed first (green for aromatic to aromatic, blue for aromatic to non-aromatic, orange for non-aromatic to aromatic, and pink for non-aromatic to non-aromatic). Note that non-aromatic includes backbone interactions.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Water contacts are measured to residue A, and the percentage of pi-pi contacts per VDW contact is measured for all contacts from residue A to residue B. Panel A shows the change in percentage of pi-pi contacts per VDW contact by number of waters for each sidechain-sidechain interaction, with pi-contact enrichment with solvation being a consistent property of the majority of interactions involving at least one non-aromatic sidechain. Panels B-F show slope measurements for a selection of examples, Phe to Phe, Arg to Arg, Phe to Arg, Arg to Glu and Phe to Glu, respectively.
+
 Of relevance to intrinsically disordered protein regions that mediate interactions, we find that planar pi-pi interactions occur more often at positions with properties associated with disorder; they are more prevalent in proteins having overall less rigid secondary structure (with contacts for coil/loop/turn > strand > helix), especially disulfide bond containing proteins (Figure 2F), and in sequences that are locally enriched in residue types associated with backbone flexibility or breaking secondary structure (Gly, Ser, Thr, Pro) (Appendix 1—figure 6). Considering planar pi-pi contact frequencies as a function of the sequence position relative to secondary structure elements, we find that the frequency is highest in long loops, showing a sigmoidal relationship when transitioning from order to disorder that goes from 9.5% probability for residues >7 positions away from the closest loop/turn to 16% for residues >7 positions away from the closest helix/strand (Figure 3C,D).
 
-## Pi-pi contacts in protein interactions
+### Pi-pi contacts in protein interactions
 
 To test whether these interactions are compatible with the multivalent interactions involved in phase separation, we examined contact statistics for protein interactions, comparing sidechain pi-pi interaction frequencies within a chain to those between chains. We classified interfaces as sequence- or complex-specific (between different chains of a crystal structure) and opportunistic (at crystal packing interfaces). In both cases, we defined interface residues as those with sidechains having at least one VDW contact to any atom in a different chain. We found that both the overall contact frequencies at interface positions and local (<5 residue) contact frequencies remain similar to the frequencies observed at non-interface positions, but that there is a significant exchange of long-range (≥5 residue sequence separation) inter-chain to intra-chain contacts (Figure 4). This exchange is also observed for the residues in interfaces involved in crystal packing interaction, demonstrating that long-range planar pi interactions are not specific to particular protein folds, but are common features of protein-protein interactions. These results suggest that non-local pi-pi contact propensity could play a general role in mediating protein interactions, including those driving phase separation.
 
@@ -70,17 +94,29 @@ To test whether these interactions are compatible with the multivalent interacti
 
 **Figure 4.:** Contact frequencies are shown for the nine sp2-containing sidechain types, split into three bars based on interface proximity. From left to right, these bars are i) no other chain within 4.9 Å of any sidechain atom, ii) within 4.9 Å VDW contact distance of any atoms in a different chain within the unit cell of the crystal, iii) within 4.9 Å of any atoms in a chain from a neighboring unit cell, as determined by crystal symmetry data. Bars are colored by the proportion of total contacts contributed by three categories, bottom/black corresponding to local (sequence separation ≤4 residues) intrachain contacts, middle/blue to non-local intrachain contacts, and top/pink to interchain contacts, showing that overall contact frequencies and local contact frequencies remain similar and that the non-local contacts do not discriminate between intra and interchain.
 
-## Importance of pi-pi contacts for phase separation
+### Importance of pi-pi contacts for phase separation
 
 In our bioinformatics analyses, we identified a type of interaction, planar pi-pi, which is more prevalent for solvated residues, RNA-binding interactions and regions lacking regular secondary structure. These properties are also associated with the emerging functional class of intrinsically disordered phase-separating proteins that coalesce through fluid, multivalent interactions to form protein-dense cellular bodies or membraneless organelles involved in RNA processing (Mitrea and Kriwacki, 2016), the nuclear pore (Frey et al., 2006) and extracellular biological materials (Yeo et al., 2011). The currently known phase-separating proteins are diverse, both in sequence and function (Mitrea and Kriwacki, 2016; Chong and Forman-Kay, 2016), but many are enriched in motifs we can now associate with high planar pi-pi contact frequencies (i.e. Pro-Gly, Phe-Gly, Ser-Arg, Tyr-Gly and Arg-Gly repeats) (Mitrea and Kriwacki, 2016; Nott et al., 2015; Schmidt and Görlich, 2015).
 
 While phase separation of some proteins has been suggested to be driven by the potential for multivalent aromatic stacking and cation-pi interactions (Nott et al., 2015; Brangwynne et al., 2015), our observations show (i) that planar pi-pi interactions are a much more broadly distributed phenomenon in proteins than previously considered, especially in solvated protein regions, (ii) that aromatic residues are not required, (iii) that backbone pi groups make significant contributions, and (iv) that protein sequence can have distinct effects on both long-range contact propensity and local contact propensity. These led us to hypothesize that the number of pi orbitals available to make long-range multivalent contacts is an important feature in determining whether a disordered protein region can phase separate and, thus, that the sp2-hybridization of the arginine sidechain is more important to phase separation than its charge. We tested this hypothesis using the N-terminal 236 residues of Ddx4, an intrinsically disordered region that contains both Arg-Gly and Phe-Gly dipeptide sequences and that can phase separate (Nott et al., 2015). We removed pi-character while leaving charge intact by replacing all 24 Arg residues with Lys. Matching our expectation, this protein region fails to phase separate under the conditions characterized for the wild-type Ddx4 sequence, even at concentrations of 400 mg/ml, 200 times higher than the lowest concentration for which phase separation is observed for the wild type, and four times higher than observed for constructs with an equivalent mass change from mutating nine phenylalanine residues to alanine (Appendix 1—table 4). We note that arginine is likely key for the phase-separation, association and toxicity of C9orf72, which can encode Gly-Arg and Pro-Arg dipeptide repeat sequences (Lee et al., 2016).
 
-## Prediction of phase separation using pi-pi contacts
+### Prediction of phase separation using pi-pi contacts
 
 Given this supportive experimental evidence for the role of pi interactions in phase separation and our observation that opportunistic non-local pi interactions are commonly found at protein crystal contacts, we chose to test the importance of these interactions for phase separation by determining the degree to which it is possible to predict general phase separation behavior using solely the pi-pi contact propensity of a protein sequence. We recognize that multiple physical interactions can contribute to driving phase separation (Brangwynne et al., 2015), but our goal was not to predict subtle differences in phase separation propensity or quantitative phase diagrams. Instead, we aimed to merely classify proteins as having the potential to self-associate under particular biological conditions or not, as a test of our hypothesis of the involvement of planar pi interactions. In this exercise, we define phase-separating proteins as those that for presumed functional reasons self-associate in a way that is at least transiently reversible and dynamic, allowing for the protein to self-concentrate as a function of available protein concentration, temperature or other condition. This basic definition does not cover the complexity of the phase diagram, merely the ability to reversibly self-concentrate, and does not consider competing transitions, such as irreversible aggregation and precipitation, which have typically been selected against in the natural sequences on which the predictor is designed to be used.
 
 Using this definition, we applied a constrained training approach divided into two stages. In the first stage, we required accurate prediction of contact propensities for folded proteins, using sequence propensities for both local and non-local contacts. For this aim, we developed a statistical method for predicting the expected number of contacts given a protein sequence, using frequencies taken from the PDB, splitting observations by distinct residue pairs with varying sequence separation and applying a statistical comparison of the full list of pairs associated with a given sp2 group to calculate expectations (see Materials and methods). The reliability of these predictions against folded proteins is given in Figure 5A. We then predicted the number of pi-pi contacts for a list of 11 proteins containing IDRs that have been shown to be sufficient for phase separation behavior in vitro (Figure 5—source data 1A), finding that 8 out of the 11 have a predicted number of planar pi-pi contacts per residue in the 99th percentile relative to folded proteins found in the RCSB PDB (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig5-v2.jpg)
+
+**Figure 5.:** (A) Reliability plot showing average predicted and observed contact frequencies for percentile bins by pi-pi contact prediction for proteins in the PDB, with PDB sequences used for training in blue and the leave out set in red. Bars show SEM. (B) Highest number of contacts predicted, by window, for two phase separation predictor training sets and three test sets, for the unoptimized predictor. (C) Modified ROC curve showing the final predictor’s performance on three test sets vs. the human proteome, with the full set in pink (N = 62), the full set minus the insufficient for phase separation set shown in green (N = 44), and the sufficient for phase separation set in blue (N = 32). (D) Results for the final predictor (as for panel b) plotted with the predictor’s phase separation propensity scores (PScore). Data underlying B-D included in Figure 5—source data 1 and Figure 5—source data 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Disopred3 (Jones and Cozzetto, 2015) derived disorder predictions are shown on the y axis and PScores are shown on the x axis for four different test sets, (A) our PDB test set, representing a negative set for both phase separation and disorder, (B) a random sample of 4385 sequences from the human proteome, (C) the subset of the human proteome annotated as containing disorder in the Disprot database (Piovesan et al., 2017), representing a positive set for disorder, and (D) our full phase separation test set. Results are split into four categories separated by PScore = 4 and Disorder = 0.8, with the percentage of sequences in each category inset in blue. The majority of known phase-separating proteins are associated with disorder, and are predicted to be disordered, but sequences predicted to phase separate represent a small subset of both the known and the predicted disordered proteins.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Highest number of short-range backbone contacts predicted, by window, for the PDB test set, the human proteome, the set of disordered human proteins from Disprot, and the full phase separation test set (N = 121), where percentile ranges are shown in colored boxes. (B) Highest number of long-range backbone contacts predicted, as for panel a. (C) Results for the final predictor plotted with the predictor’s phase separation propensity scores (PScore). Prediction of long-range backbone contacts provides the majority of the discrimination seen in the final predictor.
 
 For the second stage, we developed a phase separation predictor that ranks sequences only by the weighted combinations of pi-contact frequency predictions, without any other interaction or observational data. We used a stochastic optimization approach to find optimal weights and sequence window normalizations for converting pi-contact frequency predictions into a score function able to discriminate known phase-separating proteins from sequences found in the PDB. The individual components weighted and normalized include: (i) short- and long-range contacts as defined by residue pair sequence separation ≤4 or >4, respectively, (ii) sidechain groups vs. the backbone peptide bond, (iii) absolute predicted frequency vs. normalized frequency compared to the specific group, and (iv) number of carbon atoms in the specific group. In constraining this stage of the test, we defined the fixed goal for optimization as the PDB normalized z-score difference between the highest scoring 1% of the PDB and the lowest scoring member of the phase separation training set. We then trained until reaching a plateau, and at that point we finalized the score, running a single validation test against a testing set of 62 proteins directly associated with phase separation in the literature. This testing set can be divided into three subsets by the nature of the evidence available: (i) sufficient for in vitro phase separation as a purified single component (which matches the training set), (ii) evidence of in vitro phase separation involving a multi-component system (e.g., phase separates on the addition of RNA), without evidence of independent phase separation, and (iii) direct evidence of in cell phase separation (where the protein itself has been labeled and dynamic exchange demonstrated by FRAP or similar methods) without evidence of in vitro phase separation or sufficiency.
 
@@ -92,7 +128,7 @@ When compared to the unweighted pi-contact predictions, the trained PScore confi
 
 We note that the optimization methodology used for developing our predictor, specifically training for discrimination against the PDB, was intended to exclude phase separation involving multivalent binding properties of folded proteins with multiple binding surfaces (Pierce et al., 2016; Marzahn et al., 2016) or multiple folded modular binding domains that interact with multiple linear sequence motifs (Li et al., 2012; Banjade and Rosen, 2014). Thus, we expect and find a lower success rate for prediction of phase separation of proteins using these mechanisms. We also note that the goal of the prediction experiment is to see whether observed phase separation can be predicted exclusively from contact probabilities as a test of the hypothesis that pi interactions are important for phase separation, but that our method uses probabilities found in the PDB, was trained on natural sequences, and was tested using sequences that are either found in nature or were designed based on sequences that are. The ability to predict contacts is expected to decrease for sequences not observed in nature and for sequences relying to a greater degree on other energetic contributions.
 
-## Mechanistic implications of the optimized phase separation predictor
+### Mechanistic implications of the optimized phase separation predictor
 
 In order to identify the contact features that play the largest role in the optimized predictor, we did a retrospective analysis testing the predictive power of different scoring algorithms produced during the training process, and explored potential mechanistic implications by testing the power of individual score components, grouping contact predictions into long-range vs. short-range and backbone vs. sidechain (Appendix 1—table 6). Our analysis shows that, while training did improve the predictor, a comparable result can be obtained by using only the long-range contact rate predictions for the peptide backbone (Figure 5—figure supplement 2, as further described in Appendix 1). This property significantly upweights the role of residues, especially Gly and Pro, that are associated with high overall backbone pi-pi contact frequencies and with lower short-range contact frequencies for local sidechain groups, and is especially important for predicting elastin-like proteins, which often have very few sp2-containing sidechains. Thus, these results highlight the increased availability of sp2 groups for non-local pi-interactions as a key driving force behind the phase separation predictions and is consistent with highly multivalent weak interactions leading to phase separation, both in non-polar structural proteins like elastin and highly charged RNA-binding proteins like FUS or Ddx4.
 
@@ -102,7 +138,7 @@ While the division of the predictor into two distinct protocols was used to avoi
 
 Both sequence similarity and compositional behavior can also be related to the bias toward disorder regions observed in phase-separating proteins. To characterize this, we again took the high and low PScore subsets of our set of 3501 human proteins predicted to have long disordered regions and then compared their sequence profiles. It has previously been observed that disordered proteins have a Shannon entropy (a measurement of sequence complexity) that is lower, but significantly overlapping with ordered proteins (Romero et al., 2001). We find here that the high PScore set has a Shannon entropy that is far lower than the range seen for low PScore disordered proteins, which have Shannon entropies that fall in the range observed for folded proteins (Appendix 1—figure 8C). Comparing our phase separation test set with the human disprot set we can confirm that this bias toward lower complexity sequences is observed in known phase-separating sequences.
 
-## Analysis and validation of predictions of phase separation
+### Analysis and validation of predictions of phase separation
 
 Given the favorable characteristics of our predictor, we investigated correlations of phase separation scores with protein interactions, various biological mechanisms that may regulate phase separation and gene ontology (GO) terms. The principle of sequences with high propensity for non-local pi-pi contact being more likely to self-associate implies that different proteins with high phase separation propensity scores would be more likely to interact with one another. By comparing score pairs from protein interactions taken from the I2D metadatabase (Niu et al., 2010), we confirm that high-scoring proteins and low-scoring proteins are both over two-fold more likely to interact with proteins of similar score, relative to expectations (Figure 6A). This holds true even when comparing interactions between largely hydrophobic or cytoskeletal proteins (such as elastin and collagen) and highly polar RNA-binding proteins (like Ddx4 and FUS).
 
@@ -120,9 +156,17 @@ Next, we compared our phase separation predictions to known localization or func
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig7-v2.jpg)
 
-**Figure 7.:** A), biological process (B), and molecular function (C).The color gradient shows the natural logarithm of the observed over expected ratio. Heatmaps show enrichment in vertebrate sequences across six defined score ranges, with the highest score range (PScore ≥4) labeled with human enrichment values calculated using PANTHER (see Materials and methods).
+**Figure 7.:** The color gradient shows the natural logarithm of the observed over expected ratio. Heatmaps show enrichment in vertebrate sequences across six defined score ranges, with the highest score range (PScore ≥4) labeled with human enrichment values calculated using PANTHER (see Materials and methods).
 
 Within the testing set, there exist some proteins which have not been shown to be capable of independent phase separation (Han et al., 2012), and which may associate with phase-separated bodies without sharing the same behavior. One of these, synaptic functional regulator FMR1 (El Fatimy et al., 2016), also known as fragile X syndrome protein FMRP, has a PScore of 4.7, and is involved in RNA binding, neurological development and regulation of translation, all GO terms enriched in high PScores. FMR1 is a multifunctional polyribosome-associated protein, which is highly expressed in the brain and in the testes, and is known to localize to granular bodies with two other proteins (FXR1 and FXR2) (El Fatimy et al., 2016) that are also predicted with high PScores (at 2.9 and 5.3). In order to validate that high PScore predicts sufficiency for phase separation and not associated properties like miscibility in the separated phases of other proteins, or other interactions with phase-separating proteins, we purified the highest scoring region (residues 445–632) and confirmed the ability to spontaneously undergo liquid phase separation at low temperature and high concentrations in physiological buffer conditions (Figure 8A). The concentration required for visual confirmation of liquid phase separation behavior is quite high, at 1 mM FMRP-LCR, but can be reduced through the use of crowding reagents (Figure 8—figure supplement 1A). To confirm the relevance of pi-character, we then replaced all 28 Arg residues with Lys, which resulted in a loss of phase separation behavior (Appendix 1—table 4).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig8-v2.jpg)
+
+**Figure 8.:** (A) Test tubes containing transparent or turbid solutions of 1 mM FMR1 C-terminus (residues 445–632) along with their corresponding DIC microscopy images taken at room temperature or 4°C, respectively. (B) 1 mM FMR1 C-terminus forms droplets exhibiting liquid fusion properties at 4°C. (C) 40 µM solutions of Human Cytalomegalovirus pAP along with corresponding microscopy images taken at room temperature or 80°C, respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/31486/elife-31486-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) 200 µM FMR1 C-terminus shows reversible droplet formation between 2°C and RT, (B) 220 µM engrailed-2 shows reversible droplet formation between 2°C and 35°C. DIC Images taken at 63x magnification, where shading reflects the differences in position relative to the focal plane of the free floating droplets. Scale shown as black bars sized to 10 µm.
 
 To test whether or not the predictor is applicable to sequences that do not share motifs or functions with any of our training set proteins, we did a manual search for predictions with sequence properties and functions dissimilar from the training set proteins and selected two proteins, human engrailed-2 (UID: P19622, PScore 5.0), a DNA-binding homeobox protein, and the pAP isoform of the Human cytomegalovirus capsid scaffolding protein (UID: P16753-2, PScore 3.8), a protein that plays an essential structural role in assembling the viral capsid, a novel function relative to those known to involve phase separation. Both sequences have little overlap with any of the sequence motifs found in our training set (Appendix 1—table 7), aside from general enrichment in glycine and proline residues. Experimentally, we observe reversible liquid phase separation of pAP protein with increasing temperature, with viscoelastic properties similar to the coacervation of elastins (Figure 8C). We did not observe phase separation of engrailed-2 under the same buffer conditions, even at 1 mM protein concentration, but did observe temperature-dependent liquid droplet formation in the presence of a crowding reagent (20 mg/ml ficol) (Figure 8—figure supplement 1B). While these observations do not represent a robust or comprehensive test of prediction quality, they do suggest that the predictions provide a useful tool for selecting natural proteins capable of self-sufficient liquid demixing.
 
@@ -142,13 +186,86 @@ In conclusion, we have shown that planar pi-pi interactions are more prevalent i
 
 ## Materials and methods
 
-## Analysis of pi-pi interactions
+**Key resources table**
 
-## Structures used for primary analysis
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-Ddx4 1-236</td>
+      <td>PMID 25747659</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for Ddx4 residues 1–236, sequence from UID: Q9NQI0-1 (uniprot identification)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-Ddx4 1-236(9FtoA)</td>
+      <td>PMID 25747659</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for Ddx4 residues 1–236, sequence from UID: Q9NQI0-1, 9 out of 14 phenylalanines mutated to alanine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-Ddx4 1-236(14FtoA)</td>
+      <td>PMID 28894006</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for Ddx4 residues 1–236, sequence from UID: Q9NQI0-1, all phenylalanines mutated to alanine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-Ddx4 1-236(RtoK)</td>
+      <td>PMID 28894006</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for Ddx4 residues 1–236, sequence from UID: Q9NQI0-1, all arginines mutated to lysine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-FMR1445-632</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for FMR1 residues 445–632, sequence from UID: Q06787-1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-FMR1445-632(RtoK)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for FMR1 residues 445–632, sequence from UID: Q06787-1, all arginines mutated to lysine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-pAPA341Q</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for SCAF isoform pAP, sequence from UID: P16753-2, alanine 341 mutated to glutamine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His-SUMO-EN2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression vector (His-Sumo tagged) for Engrailed-2, sequence from UID: P19622-1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis of pi-pi interactions
+
+#### Structures used for primary analysis
 
 Protein structures determined by X-ray crystallography were downloaded from the PDB based on lists compiled using the Pisces web server (Wang and Dunbrack, 2003), May 7 2015, which identified 23074 non-redundant chains based on cutoffs of <60%,<5.0, and <0.5 for sequence identity, resolution, and R-factor, respectively. For calculating statistics, high-resolution structures were defined as a subset of 5718 structures with resolution ≤1.8 and R-factor ≤0.18. For structures determined using distance restraints from nuclear magnetic resonance spectroscopy, we took the full list of 2949 PDBs with distance constraints available from the BMRB (Ulrich et al., 2008) database of converted restraints (DOCR) (Doreleijers et al., 2005) as of July 3rd, 2015.
 
-## Contact definition
+#### Contact definition
 
 To probe contact geometries we read each set of coordinates into custom python scripts, filtering input data by ignoring sp2 systems that lack any of the expected heavy atoms (<0.1%) and only taking the first set of coordinates when represented by multiple conformations. The sp2 systems were defined by atom names for each of nine sidechain groups (from W,F,Y,H,R,Q,N,E,D), the backbone peptide bond, and the C-terminal carboxyl group. Planar axes were defined as normal vectors by using the cross product method against defined lists of three sequential atoms. VDW contacts between sp2 groups were determined by the full set of heavy atom (C, N, O) distance measurements, using a threshold of ≤4.9 Å to define contacts. This represents the upper range of VDW contacts between sp2 groups (Appendix 1—figure 1E), because we intended to compare contact frequencies by data resolution and did not want to introduce arbitrary energetic cutoffs for atoms with potentially unreliable positions.
 
@@ -156,71 +273,71 @@ In analyzing the planar orientations of sp2 groups found in VDW contact, we foun
 
 Annotation data for the full non-redundant set of PDBs analyzed are included in files Figure 1—source data 1 and 2, and scripts for creating contact annotations from a PDB are included in supplemental file Source code 1.
 
-## Planar pi-pi contact frequency
+#### Planar pi-pi contact frequency
 
 Comprehensive lists of planar pi-pi contacts were computed for each chain and were stored in a database. Contact frequencies were calculated as the total number of observed contacts divided by the total number of residues considered. Residues were counted only for each non-redundant chain, and contacts include both the ones made within that chain and the ones that chain makes to any other chains present in the PDB (except when noted otherwise). Contacts to crystal symmetry partners were also measured but were kept separate and, except where specifically investigated to probe inter-chain contacts, were excluded from analysis based on the observation that VDW contacts made to symmetry partners can contain a small (<1%) population of extreme clashes (atoms <1 Å from one another).
 
-## Pi-contact frequency vs. resolution
+#### Pi-contact frequency vs. resolution
 
 PDBs were sorted into 77 non-overlapping bins first by exact resolution and then by rolling any bins with less than 100 PDBs into the next acceptable bin within 0.25 Å. This method rounds up the small populations of resolution values while retaining as much resolution information as possible. Correlation values and lines of best fit were estimated using linear regression (inherited from the scipy python package, version 0.12.1) against bin averages, with bins weighted by sample size.
 
-## Involvement of amino acid types in planar pi-pi contacts
+#### Involvement of amino acid types in planar pi-pi contacts
 
 In order to compare frequency of contacts involving all 20 common amino acids, we defined involvement based on the participation of any atom from that residue in a planar contact. For most sequence positions, this means at least one contact made to either one of the flanking peptide bonds or, for the nine amino acids that have them, the sidechain group. By this definition, backbone planar contacts involve both flanking residues.
 
-## Sp3controls
+#### Sp3controls
 
 To provide a prior expectation control for enrichment of planar pi-pi contacts, we took the terminal heavy-atom planar surfaces from fully sp3 hybridized sidechains, using the following PDB atom names to define each planar group: Leucine: CD1, CG, CD2; Valine: CG1, CB, CG2; Methionine: CE, SD, CG; Isoleucine: CD1, CG1, CB; Cysteine: SG, CB, CA; Serine: OG, CB, CA; Threonine: OG1, CB, CG2; and Lysine: NZ, CE, CD.
 
-## Small molecule datasets
+#### Small molecule datasets
 
 The PDB was screened for crystallographic structures containing either amino acids or other small molecules as free ligands, with the other small molecules being restricted to those that (1) are present in more than 100 structures, (2) have a single sp2 group, and (3) have all heavy atoms (C,N,O) falling within the sp2 plane. These structures were then filtered for resolution (≤3.0 Å) and redundancy (≤90% identity) by using the Pisces web server. Contact frequencies were determined across the full list of ligands in these non-redundant sets, with contacts to amino acid ligands being divided into backbone carboxyl and sidechain sp2 groups. As an internal control for amino acid contact frequencies, contact frequencies were determined for each amino acid based on the same set of structures used to define the ligand frequency. For sidechain groups, the controls are their direct equivalents found within the protein, and for the amino carboxyl groups, we used the protein C-terminal carboxyl groups as the control. Population statistics are summarized in Appendix 1—table 2.
 
-## Catalytic sites
+#### Catalytic sites
 
 We defined catalytic sites based on direct literature annotation as described in the Catalytic Site Atlas (Furnham et al., 2014), with 2914 residue positions identified over 928 protein structures. The full population of residues across the annotated chains was split into 40 bins according to identity and annotation status. Relative contact involvement frequencies, catalytic vs. non-catalytic, were obtained for each amino acid type. For each catalytic residue, we then identified the total number of VDW contacts made to any other residue, identified which VDW contacts fall into the subset defined by our pi-contact rules, and then, for the 2377 catalytic residues with at least one VDW contact to another catalytic residue, we computed the frequency of VDW contacts that are also pi-contacts.
 
-## External measurements and secondary structure
+#### External measurements and secondary structure
 
 Hydrogen bond data were calculated using PHENIX (Adams et al., 2010), with amino sidechains allowed to flip 180 deg to maximize the number of donor/acceptor pairs. DSSP (Kabsch and Sander, 1983) was used to define backbone secondary structures. Water contacts were defined by direct distance measurements, with the full set of water molecules, including symmetry partners, extracted using the SYMPEXP function from pymol (Schrodinger LLC, 2015). NMR restraints were obtained for 2949 structures from the Database Of Converted Restraints (Doreleijers et al., 2005). For defining short secondary structure motifs, we used the simplified one letter definitions provided by DSSP (‘H’, ‘B’, ‘E’, ‘G’, ‘I’, ‘T’, ‘S’, and ‘‘), in order to maintain adequate sample size when comparing enrichment across motifs. For comparing ordered and disordered residues, clear helices and strands (‘H’ for α-helix, ‘G’ for 310 helix, and ‘E’ for β-strand) were defined as the ordered assignments, representing regular secondary structure.
 
-## Predictor training and bioinformatics
+### Predictor training and bioinformatics
 
-## Pi-contact prediction for structures in the PDB
+#### Pi-contact prediction for structures in the PDB
 
 We trained a statistical potential for predicting pi-contact frequency from protein sequence for individual sp2 groups, with contacts split by sequence separation into short-range (≤4 residues apart) and long-range (≥5 residues apart, or different chains). We trained against an 80% random cut of the 17388 proteins in our non-redundant crystal structure subset of the PDB, leaving the remaining 20% as a testing set for a single final test of the predictor. The final predictor, covered in detail in Appendix 2, operates by first averaging the frequencies observed for sp2 groups found in specific sequence contexts (with context defined as all residues within 40 amino acids of a given residue) and then comparing the average values to the distributions observed for sp2 groups with the same sequence identity (with nine sequence identities for sidechain sp2 systems, and 400 distinct identities for the peptide backbone), where the final prediction is the contact frequency observed at matching positions in the PDB.
 
-## Phase separation prediction benchmark
+#### Phase separation prediction benchmark
 
 To develop a predictor for the phase separation propensity of a given protein sequence, we started by defining a set of 11 proteins which have been shown, in the literature, to phase separate in vitro as single purified components due to interactions involving intrinsically disordered regions of the protein. We also defined a leave out set of 62 proteins associated with phase separation in the literature by combining proteins matching three distinct criteria: ‘in vitro sufficient’ (N = 32), proteins satisfying the criteria used to select the test set, ‘in vitro insufficient’ (N = 18), proteins for which the literature contains evidence of in vitro phase separation in complex with other proteins or with RNA but phase separation as a single component not observed and ‘in cellulo associated’ (N = 12), proteins without in vitro characterization, but with evidence of phase separation in live cells, as determined both by localization to a known dynamic protein body and by a direct measurement of dynamic character, typically involving FRAP recovery of a fluorescent tag. These benchmark sets are included in supplemental file Figure 5—source data 1A,B and C.
 
 Over these datasets, we only found eight proteins less than 300 residues in length, with the smallest protein sequence observed (RBM3_HUMAN) being 157 residues long. To avoid extrapolating our predictions onto an unobserved class of proteins, we decided to restrict testing to sequences ≥140 residues in length. To define additional control and training sets, we applied this sequence cutoff to a series of datasets, including the PDB sets used for developing the pi-contact predictor, with 13388/17388 training set and 3406/4347 test set sequences retained after restricting by length ≥140, the UniProt human reference proteome (September 2016, 18582/21047 sequences used), and the subset of the human proteome with known disorder, as defined by the DISPROT database (Piovesan et al., 2017) (205/249 sequences).
 
-## Phase separation predictor training
+#### Phase separation predictor training
 
 The phase separation propensity predictor starts by inheriting a table of 8 pi-contact prediction values per sp2 group in the sequence, splitting contacts by i) short-range (≤4 sequence separation) vs. long-range (>4), sidechain vs. backbone, and absolute predicted frequency vs. relative difference from sp2 groups with the same identity (with nine sidechain sp2 groups and 400 backbone groups, split by their associated sequence). Sequences are then scored by a series of weighted sequence window averages. Weights, window length, and normalization parameters were refined using a stochastic optimization process to maximize the score difference between the lowest scoring member of our 11 member training set, and the average score of the highest scoring 1% of the PDB training set. A full training history and details of the final predictor are described in Appendix 2. AUC values at different stages of training the predictor are tabulated in Appendix 1—table 6. Standard error of the mean values for AUC calculations were estimated by bootstrap using sampling with replacement (10,000 iterations) against both the test and human sets.
 
 The final predictor consists of a single python script and associated database files, with the state at time of submission included in supplemental file Source code 1.
 
-## Proteome analysis
+#### Proteome analysis
 
 Phase separation scores for analyzed proteins were considered with respect to known interactions, and functional annotations, using the gene ontology database (release Oct-04–2016), UniProt’s Swiss-Prot and TREMBL sequence databases, including the reference proteome annotations, vertebrate protein sequence list, and variant splicing data (release 11-May-2016) (Magrane et al., 2011; Pundir et al., 2017; Huntley et al., 2015; Suzek et al., 2007), PTM data from PhosphoSitePlus (release Dec-16–2011) (Hornbeck et al., 2015), human protein-protein interactions collated under the Interologous Interactions Database (I2D) (version 2.9) (Brown and Jurisica, 2007), and background AP-MS detection rates from the Contaminant Repository for Affinity Purification Mass Spectrometry Database (CRAPome version 1.1) (Mellacheruvu et al., 2013).
 
 GO term enrichment data over the full range of propensity scores were analyzed against all proteins with UniProt codes contained within both the vertebrate reference sequences and the gene ontology database. Enrichment scores and p-values for individual GO terms were obtained for a defined four sigma cut against the human proteome by using PANTHER (Thomas et al., 2003; Mi et al., 2017; Mi et al., 2016) analysis.
 
-## Disorder prediction
+#### Disorder prediction
 
 Per residue disorder predictions were obtained using Disopred3.16 (Jones and Cozzetto, 2015) (standard command line and Refseq database) and IUPRED-Long (Dosztányi et al., 2005a; Dosztányi et al., 2005b) against the phase separation test and training sets, the PDB test set, the human Disprot set, and a random selection of 7397 sequences from the human proteome. To convert these into per-sequence scores for comparison to the PScore, we then used the optimized window averaging method developed during training of the predictor, where the window is defined as all residues within five sequence positions of the highest scoring sixty. These scores can be used to classify whether or not a given sequence has a number of disordered residues comparable to the length of a folded domain, either concentrated in a single large region or distributed throughout the sequence.
 
-## Sequence analysis
+#### Sequence analysis
 
 Sequence similarity to the proteins within the training set was measured by computing dipeptide sequence profiles (the frequencies of all 400 possible i,i + 1 amino acid combinations in a sequence), calculating block L1 distances between a query dipeptide profile and each of the training set profiles, and then returning the lowest observed distance. Comparison to the sequence similarity of direct homologs was observed against a set of 1100 sequences obtained via BLAST by using the phase separation training set sequences used as queries against the seq database (E = 0.0000001).
 
 Shannon entropy values were calculated for amino acid profiles of sequences by the standard equation (Shannon, 2001), and comparisons of high and low scoring disordered proteins were obtained from the subset of human sequences with Disopred3 predictions > 0.80, using the window averaging method described previously (N = 3501 out of 7397 sequences). High and low PScore sets were defined by PScore ≥4.0 (N = 310) and PScore <1.0 (N = 1044), corresponding to our standard phase separation confidence threshold and scores less than one standard deviation above the PDB average, respectively.
 
-## Experimental methods
+### Experimental methods
 
-## Protein expression and purification
+#### Protein expression and purification
 
 Ddx4: Constructs for Ddx4 1-236 wild type sequence (UID: Q9NQI0-1) and mutants were synthesized and subcloned into a pET Sumo vector (Genscript) to produce His-SUMO-Ddx41-236 (Nott et al., 2015), His-SUMO-Ddx41-236(9FtoA) (Nott et al., 2015), His-SUMO-Ddx41-236(14FtoA) (Brady et al., 2017), and His-SUMO-Ddx41-236(RtoK) (Brady et al., 2017). Protein was overexpressed in E. coli and purified as described previously (Nott et al., 2015). Phase separation was induced at 24°C by dialysis of a high concentration of Ddx4 in 20 mM Na2PO4, 1 M NaCl, 5 mM TCEP, pH 6.5 into a buffer containing 20 mM Na2PO4, 100 mM NaCl, 5 mM TCEP, pH 6.5. Concentrations were measured by spectrophotometry, using an extinction coefficient of 23950 M−1cm−1 at 280 nm.
 
@@ -230,12 +347,12 @@ pAP: His-SUMO-pAPA341Q (SCAF Isoform pAP from UID: P16753-2, with a single mutat
 
 Engrailed-2: The expression and purification steps of engrailed-2 (UID: P19622) from His-SUMO-EN2 were similar to the protocols used for FMR1, but with growth post-induction done for 4 hr at 25°C, and addition of a HiTrap SP XL (GE Healthcare) ion exchange chromatography step between the Ulp cleavage step and a Superdex 75 gel filtration step for removing His-SUMO by increasing NaCl concentration from 50 to 1000 mM in 50 mM NaPO4, 2 mM DTT at pH 7.4. Concentrations were determined from the absorbance at 280 nm using a molar extinction coefficient of 22460 M-1cm-1.
 
-## Phase separation test and differential interference contrast imagining
+#### Phase separation test and differential interference contrast imagining
 
 For Figure 8A, concentrated FMR1 protein samples were dialyzed against 20 mM NaPO4 pH 7.4 and 2 mM DTT overnight at 4°C and then diluted with the same buffer to the desired protein concentrations for imaging. Samples were incubated on ice for 5 min before placing them onto a glass cover slip. For Figure 8—figure supplement 1A, FMR1 protein samples were instead dialyzed against 100 mM NaCl, 20 mM NaPO4 pH 7.0 and 5 mM DTT, with 20 mg/ml ficol added prior to imaging.
 
 Concentrated pAP and engrailed-2 protein samples were dialyzed against 100 mM NaCl, 20 mM NaPO4 pH 7.0 and 5 mM DTT overnight at 4°C and then either diluted with the same buffer to the desired protein concentrations for imaging (pAP, Figure 8C) or with the addition of 20 mg/ml ficol (engrailed-2, Figure 8—figure supplement 1B). Droplet images were acquired using differential interference contrast with 40X, 63X or 100X objectives on either a Zeiss Axiovert 200M Epifluorescence microscope or a Zeiss Axio Observer. Temperatures were controlled using a PE100-ZAL inverted Peltier system from Linkam Scientific.
 
-## Statistical analysis
+### Statistical analysis
 
 Standard error estimated for measured population parameters was obtained by bootstrap analysis using random sampling with replacement, with 10,000 iterations. For measurements involving populations of features found within the PDB, we split observation data into dependent blocks by sampling against the list of PDBs used in calculating the parameter rather than by against the list of observed features. Statistics for many of these calculations are tabulated in Appendix 1—table 1. ROC curves were calculated as non-parametric step functions by empirical cumulative distributions, and AUC was estimated by direct measurement of the AUC, without smoothing. AUC values are tabulated in Appendix 1—table 6.

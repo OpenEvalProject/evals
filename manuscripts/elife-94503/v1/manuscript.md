@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/006e5kg04 Structural Biology Brussels, Vrije Universiteit Brussel Brussels Belgium
-2. https://ror.org/03e84cm85 VIB-VUB Center for Structural Biology, VIB Brussels Belgium
-3. https://ror.org/043j0f473 German Center for Neurodegenerative Diseases Tübingen Germany
-4. https://ror.org/03a1kwz48 Institute for Ophthalmic Research, Center for Ophthalmology, University of Tübingen Tübingen Germany
+1. Structural Biology Brussels, Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
+2. VIB-VUB Center for Structural Biology, VIB Brussels Belgium ([ROR:03e84cm85](https://ror.org/03e84cm85))
+3. German Center for Neurodegenerative Diseases Tübingen Germany ([ROR:043j0f473](https://ror.org/043j0f473))
+4. Institute for Ophthalmic Research, Center for Ophthalmology, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
 
 † Corresponding author
 
 ## Abstract
 
-Roco proteins entered the limelight after mutations in human LRRK2 were identified as a major cause of familial Parkinson’s disease. LRRK2 is a large and complex protein combining a GTPase and protein kinase activity, and disease mutations increase the kinase activity, while presumably decreasing the GTPase activity. Although a cross-communication between both catalytic activities has been suggested, the underlying mechanisms and the regulatory role of the GTPase domain remain unknown. Several structures of LRRK2 have been reported, but structures of Roco proteins in their activated GTP-bound state are lacking. Here, we use single-particle cryo-electron microscopy to solve the structure of a bacterial Roco protein (CtRoco) in its GTP-bound state, aided by two conformation-specific nanobodies: Nb Roco1 and Nb Roco2 . This structure presents CtRoco in an active monomeric state, featuring a very large GTP-induced conformational change using the LRR-Roc linker as a hinge. Furthermore, this structure shows how Nb Roco1 and Nb Roco2 collaborate to activate CtRoco in an allosteric way. Altogether, our data provide important new insights into the activation mechanism of Roco proteins, with relevance to LRRK2 regulation, and suggest new routes for the allosteric modulation of their GTPase activity.
+Roco proteins entered the limelight after mutations in human LRRK2 were identified as a major cause of familial Parkinson’s disease. LRRK2 is a large and complex protein combining a GTPase and protein kinase activity, and disease mutations increase the kinase activity, while presumably decreasing the GTPase activity. Although a cross-communication between both catalytic activities has been suggested, the underlying mechanisms and the regulatory role of the GTPase domain remain unknown. Several structures of LRRK2 have been reported, but structures of Roco proteins in their activated GTP-bound state are lacking. Here, we use single-particle cryo-electron microscopy to solve the structure of a bacterial Roco protein (CtRoco) in its GTP-bound state, aided by two conformation-specific nanobodies: NbRoco1 and NbRoco2. This structure presents CtRoco in an active monomeric state, featuring a very large GTP-induced conformational change using the LRR-Roc linker as a hinge. Furthermore, this structure shows how NbRoco1 and NbRoco2 collaborate to activate CtRoco in an allosteric way. Altogether, our data provide important new insights into the activation mechanism of Roco proteins, with relevance to LRRK2 regulation, and suggest new routes for the allosteric modulation of their GTPase activity.
 
 ## Introduction
 
@@ -37,15 +37,234 @@ Here we use single-particle cryo-EM to solve the structure of full-length CtRoco
 
 ## Results
 
-## Cryo-EM structures of nanobody-stabilized CtRoco in the GTP state reveal a monomeric ‘open’ conformation
+### Cryo-EM structures of nanobody-stabilized CtRoco in the GTP state reveal a monomeric ‘open’ conformation
 
 While we previously showed that CtRoco undergoes a dimer to monomer transition during its GTPase cycle (Deyaert et al., 2017b; Figure 1A), so far only an X-ray crystal structure of the nucleotide-free dimeric state of the protein is available. This structure shows CtRoco as a rather compact dimer where the LRR domains fold back on the Roc-COR domains (Figure 1B; Deyaert et al., 2019). Obtaining well-diffracting crystals of the GTP-bound CtRoco protein is most likely hampered by the high internal flexibility of the protein, as suggested by SAXS experiments (Deyaert et al., 2017b). To reduce this flexibility and stabilize the protein in the monomeric GTP-bound state, we reasoned we could make use of two conformation-specific Nbs (NbRoco1 and NbRoco2) that preferentially bind the CtRoco GTP state (Leemans et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the domain arrangement of CtRoco (top) and its anticipated conformational cycle linked to GTP binding and hydrolysis (bottom) (Deyaert et al., 2017b)⁠. (B) The previously published crystal structure of nucleotide-free CtRoco showing the protein as a compact homodimer, where the LRR domains fold back on the Roc-COR domains (PDB: 6hlu) (Deyaert et al., 2019)⁠. (C) NbRoco1 and NbRoco2 specifically bind to the CtRoco monomer in its ‘GTP state’ (top) (Leemans et al., 2020)⁠. The cryo-electron microscopy (cryo-EM) map of GTPγS-bound full-length CtRoco in complex with NbRoco1 and NbRoco2 at 7.7 Å resolution shows an elongated monomeric arrangement (bottom left). A composite map, obtained by superposing the individual cryo-EM maps focused on the C-terminal (3.9 Å) and N-terminal (3.6 Å) part of the protein, was generated (bottom right). This map is colored according to the corresponding domains and Nbs. (D) Final model of CtRoco-NbRoco1-NbRoco2 based on the maps shown in (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Flow chart of the cryo-EM data processing, including 2D and 3D classifications, focused map strategies and density map reconstructions. Local resolution maps, Fourier shell correlation (FSC) curves, particle distribution plots, and cryo-EM density maps are also shown. Unless otherwise stated, all analyses were performed using cryoSPARC v3.3. Details are provided in the ‘Materials and methods’ section.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Flow chart of the cryo-EM data processing, including 2D and 3D classifications and density map reconstructions. Local resolution map, Fourier shell correlation (FSC) curve, particle distribution plot, and cryo-EM density map are also shown. Unless otherwise stated, all analyses were performed using cryoSPARC v3.3. Details are provided in the ‘Materials and methods’ section.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) 2D classes from particles extracted in a box size of 384 Å. Only some of these classes display the full particle, most are centered on one half of the protein showing blurred density for the rest of the particle. (B) Selected classes displaying the pull particle. (C) 2D classes from particles selected for a focused map centered on the LRR domain, extracted in a box size of 243 Å. Blurred density for the rest of the particle is also visible. (D) 2D classes from particles selected for a focused map centered on the Roc-COR domains, extracted in a box size of 243 Å. Blurred density for the rest of the particle is also visible.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Map focused on the N-terminal (LRR) domain in complex with NbRoco2. The inset shows a zoom-in on the NbRoco2 binding region. (B) Mesh representation of the cryo-EM map around the nucleotide-binding region of the Roc domain (left) and around the bound GTPγS molecule (right). (C) Cryo-EM map around NbRoco1 in two orientations. The CDR loops are highlighted in brown (CDR1), green (CDR2), and magenta (CDR3).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Fourier shell correlation (FSC) plot of refined LRR-NbRoco2 model. The resolution at which the FSC curve drops below 0.5 is indicated. (B) FSC plot of refined Roc-COR-NbRoco1 model. The resolution at which the FSC curve drops below 0.5 is indicated.
+
 For cryo-EM sample and grid preparation, the nucleotide-free full-length CtRoco protein was incubated with an excess of the non-hydrolyzable GTP analog GTPγS and with either NbRoco1 (CtRoco-NbRoco1) or with both NbRoco1 and NbRoco2 (CtRoco-NbRoco1-NbRoco2), and the complexes were purified using size-exclusion chromatography (SEC). Cryo-EM data was collected for both complexes and map reconstructions of CtRoco-NbRoco1 and CtRoco-NbRoco1-NbRoco2 were refined to 8.3 Å and 7.7 Å, respectively (Figure 1C, Figure 1—figure supplements 1 and 2, Table 1). Both resulting maps clearly show CtRoco in a monomeric and elongated ‘open’ conformation, in contrast to the more globular dimeric ‘closed’ conformation previously observed in the nucleotide-free CtRoco crystal structure. Difficulties in aligning particles during data processing reflect the high flexibility of the N-terminal LRR domain vis-à-vis the C-terminal domains. This can be observed in the 2D classes from both data sets: while some display the full particle, most classes center on one half of the protein with the other half fading away as a result of flexibility. The majority of the 2D classes center on the N-terminal LRR domain and a few on the C-terminal Roc-COR domains (Figure 1—figure supplement 3). Similarly, 3D classification of the CtRoco-NbRoco1-NbRoco2 data set produced only one class representing a nearly full reconstruction, but multiple classes centering on the LRR domain with deficient density for the rest of the protein (Figure 1—figure supplement 1). Further refinement with particles that converged in visible density for both domains resulted in the rather low-resolution map reconstructions for the entire protein. To avoid these issues linked to inter-domain flexibility and increase the quality of the local reconstruction of each domain, we created focused maps from the CtRoco-NbRoco1-NbRoco2 data set by processing separately the N-terminal and the C-terminal centered classes, which produced map reconstructions with mean resolutions of 3.6 Å and 3.9 Å, respectively (Figure 1C, Figure 1—figure supplement 1, Table 1). These focused maps were used for all further interpretation and model building, and were finally fitted on the 7.7 Å map reconstruction of the (nearly) full protein reconstruction to create a composite map showing the relative orientation of these domains to each other (Figure 1C and D). This resulted in a good-quality interpretable map for the LRR domain bound to NbRoco2, with unambiguous density for most amino acid side chains on the LRR-NbRoco2 interface (Figure 1—figure supplement 4A). No density can be assigned to a peptide region linking the LRR domain to the Roc domain, in agreement with the flexible nature of this linker. The quality of the map for the C-terminal part of the protein is more variable. For the Roc domain, unambiguous density allowing side chain interpretation is observed for some parts of the domain, including parts of the region that interacts with NbRoco1. However, while the density for GTPγS and for a large part of the Switch 2 loop could be well interpreted (Figure 1—figure supplement 4B), the density is ambiguous in some regions around the GTP-binding pocket and absent for most of the Switch 1 loop. The map also allows us to unambiguously place NbRoco1, although it is generally of lower quality in this region. In particular, the CDR loops of NbRoco1 could be identified but hardly any side chains could be assigned (Figure 1—figure supplement 4C). Also for the CORA and CORB domains, the quality of the map is variably spread. No density is observed for C-terminal residues of CORB (a.a. 892–940), which are involved in CtRoco dimerization. This is in very good agreement with previous hydrogen-deuterium exchange (HDX) experiment showing that this region becomes highly flexible upon GTP-driven monomerization (Deyaert et al., 2019). Nevertheless, some weak density for this region can be observed in the full reconstruction map (Figure 1—figure supplement 1). Finally, no density is observed for the last 150 residues of CtRoco, although in the CtRoco-NbRoco1 map some additional density is observed that can account for the C-terminal region. This region is probably highly flexible and also needed to be removed to obtain diffracting crystals of the nucleotide-free CtRoco dimer (Deyaert et al., 2017a). Taken together, the GTPγS-bound CtRoco-NbRoco1-NbRoco2 structure clearly shows the protein in a monomeric and elongated ‘open’ conformation, allowing us to interpret the GTP-driven conformational changes, as well as the binding sites and the mechanism of allosteric activation of NbRoco1 and NbRoco2 (Figure 1D). Only data from CtRoco-NbRoco1-NbRoco2 were used for detailed analyses and will be discussed further.
 
-## GTP-mediated ‘activation’ of CtRoco induces large-scale conformational changes linked to monomerization
+**Table 1.**
+ Cryo-electron microscopy (cryo-EM) data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CtRoco-NbRoco1-NbRoco2</th>
+      <th>CtRoco-NbRoco1-NbRoco2 (LRR focused)</th>
+      <th>CtRoco-NbRoco1-NbRoco2 (Roc-COR focused)</th>
+      <th>CtRoco-NbRoco1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="3">CryoARM300</td>
+      <td>CryoARM300</td>
+    </tr>
+    <tr>
+      <td>Voltage (keV)</td>
+      <td colspan="3">300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="3">63</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Energy filter slit width</td>
+      <td colspan="3">20 eV</td>
+      <td>20 eV</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td colspan="3">Gatan K3</td>
+      <td>Gatan K3</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="3">× 60,000</td>
+      <td>× 60,000</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="3">1–3</td>
+      <td>1–3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å/pix)</td>
+      <td colspan="3">0.755</td>
+      <td>0.766</td>
+    </tr>
+    <tr>
+      <td>Number of movies</td>
+      <td colspan="3">7489</td>
+      <td>11,718</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td colspan="3">C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Final particles</td>
+      <td>48,333</td>
+      <td>160,925</td>
+      <td>38,260</td>
+      <td>99,460</td>
+    </tr>
+    <tr>
+      <td>Map mean resolution (Å)</td>
+      <td>7.7</td>
+      <td>3.6</td>
+      <td>3.9</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td colspan="5">Model refinement</td>
+    </tr>
+    <tr>
+      <td>Atoms</td>
+      <td></td>
+      <td>4038</td>
+      <td>3573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Bonds (RMSD)</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td></td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td></td>
+      <td>0.749</td>
+      <td>0.647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Validation</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td></td>
+      <td>13.09</td>
+      <td>12.94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td></td>
+      <td>0.7</td>
+      <td>0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td></td>
+      <td>2.15</td>
+      <td>2.18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td></td>
+      <td>88.57</td>
+      <td>89.78</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td></td>
+      <td>11.25</td>
+      <td>9.57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outlier (%)</td>
+      <td></td>
+      <td>0.18</td>
+      <td>0.65</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Mean B-factors</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td></td>
+      <td>45.93</td>
+      <td>37.13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td></td>
+      <td></td>
+      <td>39.20</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### GTP-mediated ‘activation’ of CtRoco induces large-scale conformational changes linked to monomerization
 
 A comparison of the current structure of monomeric GTPγS-bound CtRoco-NbRoco1-NbRoco2 with the previously solved structure of dimeric CtRoco in the nucleotide-free (NF) state (Deyaert et al., 2019) allows us to dissect in detail the conformational changes associated with CtRoco monomerization and activation. To achieve this, protomers of each structure were superposed using their Roc domains as a reference. The most prominent conformational change concerns the position of the LRR domain. In the GTPγS-bound structure, the LRR rotates away from the Roc-COR domains by about 135° (Figure 2A). The hinge point for this large movement is the linker region between the LRR and Roc domains, and in particular the so-called α0-helix that precedes the actual Roc domain. This helix is a conserved structural element of the Roco proteins, including LRRK2. In the inactive dimeric CtRoco, the α0-helix is structurally inserted between the LRR and CORA domains, forming hydrophobic and electrostatic interactions with both domains (Figure 2—figure supplement 1). However, upon GTPγS binding this helix detaches and becomes entirely solvent exposed, as such disrupting the interaction between the LRR and Roc-COR domains (Figure 2B). This observation is in good agreement with our earlier HDX data, which also suggested that the region connecting the LRR and Roc domain becomes solvent exposed in the GTP-bound monomer (Deyaert et al., 2019).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig2-v1.jpg)
+
+**Figure 2.:** (A) Superposition of a subunit of the nucleotide-free CtRoco dimer (labeled ‘NF’; beige) and the GTPγS-bound monomeric CtRoco-NbRoco1-NbRoco2 (labeled ‘GTP’, colored by domain). The Roc domains of both structures were used for the superposition. Nbs were removed in the representation of CtRoco-NbRoco1-NbRoco2 for clarity. The conformational change occurring in the LRR domain and α0-helix is indicated by an arrow. (B) Close-up view of the displacement of the LRR, α0-helix and CORA upon CtRoco activation. The position of CORA in the ‘GTP’ conformation is incompatible with the position of the α0-helix in the nucleotide-free conformation, providing a mechanism to relay conformational changes from Roc and CORA toward the α0-helix and LRR domain. The LRR, α0, and CORA of nucleotide-free and GTPγS-bound CtRoco are colored in different shades of yellow, orange, and blue, respectively. (C) Mesh representation of the cryo-electron microscopy (cryo-EM) map around the Switch 2 region and the preceding β-strand in the GTPγS-bound Roc domain. (D) Superposition of Roc domains and surrounding regions of nucleotide-free (beige) and GTPγS-bound CtRoco (colored according to domain). The conformation of the Switch 2 region in GTPγS-bound CtRoco would sterically clash with the ‘dimerization loop’ of the adjacent protomer of the nucleotide-free dimer, providing an initial trigger for nucleotide-induced monomerization. (E) Upon activation, the CORB domain of GTPγS-bound CtRoco (blue) displays a 30° rotational movement with regard to corresponding domain of nucleotide-free CtRoco (beige). The H554-Y558-Y804 triad (corresponding to N1437-R1441-Y1699 in LRRK2), located at the Roc-CORB interface, acts as a hinge point for this rotational movement. Left: view of a superposition using the Roc domain; right: view of a superposition using the CORB domain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Zoomed-in view of the α0-helix of nucleotide-free CtRoco (PDB: 6hlu), with the LRR, α0, Roc, and CORA domains colored in yellow, orange, red, and blue, respectively. Selected amino acids are shown as sticks with polar interactions indicated by black dashes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In the nucleotide-free CtRoco dimer, the position of the P-loop is stabilized by the dimer interface and dimerization loop. This P-loop conformation would interfere with nucleotide (GTP) binding. Upon GTPγS binding a change in P-loop conformation is observed, together with a rearrangement of the Switch 2 to a position that would sterically clash with the dimerization loop of the adjacent subunit (indicated with a red arrow). Together these rearrangements will trigger CtRoco monomerization. These conformational changes in Switch 2 can also be relayed to the LRR, α0-helix, and CORA regions through the C-terminal part of Switch 2 (indicated with a black arrow).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Superposition (on the Roc domain) of a GTPγS-bound CtRoco monomer (‘GTP’; colored by domain) on the nucleotide-free CtRoco dimer (‘NF’, beige). Only the CORB domain of the superposed subunit of nucleotide-free CtRoco is shown for clarity. The rotational movement of the CORB domain upon GTPγS binding would cause sterical clashes with the Roc domain of the adjacent protomer of nucleotide-free CtRoco (brick red), providing a mechanism for monomerization.
 
 A comparison of the Roc domains in the nucleotide-free and GTPγS-bound states reveals a number of conformational changes. A remarkable feature of the CtRoco dimer structure was the dimer-stabilized orientation of the P-loop, which would hamper direct nucleotide binding on the dimer (Figure 2—figure supplement 2). Correspondingly, in the current structure the P-loop changes orientation allowing GTPγS to bind, although the EM map does not allow unambiguous placement of the entire P-loop. Also the Switch 1 loop could not be fully modeled in our structure, presumably indicating some flexibility in this region despite the presence of a GTP analog. Interestingly, the Switch 1 loop harbors the site of the PD-analogous L487A mutation that leads to a stabilization of the CtRoco dimer with a concomitant decrease in GTPase activity (Deyaert et al., 2019)⁠. Unfortunately, an exact interpretation of this effect of the L487A mutation is hampered by the lack of a well-resolved Switch 1 loop. Another region of conformational change regards Switch 2. The EM map for this region and for the preceding interswitch β-strand is of reasonably good quality, allowing to model a large part of the backbone of Switch 2 (including the DxxG motif) (Figure 2C). Compared to the position of the nucleotide-free structure, the Switch 2 shifts to a position much closer to the P-loop that is not compatible with the dimeric arrangement of nucleotide-free CtRoco since it would sterically clash with the adjacent protomer (Figure 2D, Figure 2—figure supplement 2). Hence, those conformational changes in the P-loop and Switch 2 region could form an initial trigger for nucleotide-induced monomerization. A final important observation in the Roc domain concerns the very C-terminal part of Switch 2 (residues 520–533), which, in contrast to the main part of Switch 2, could not be modeled in the GTP-bound structure, potentially due to flexibility of this region in the new position of the Switch 2. However, in the nucleotide-free dimer structure this region of Switch 2 is structured and located at the interface of the Roc domain with the LRR-Roc linker and CORA (Figure 2—figure supplement 2). In this way, the conformational changes induced by GTPγS binding could be relayed via the Switch 2 toward the LRR and CORA domains, and vice versa.
 
@@ -53,7 +272,7 @@ In addition to the C-terminal dimerization part of CORB that becomes unstructure
 
 A comparison of the GTPγS-bound CtRoco monomer with the nucleotide-free dimer thus clearly provides several intertwined pathways linking GTP binding to monomerization and large-scale intra-subunit conformational changes.
 
-## NbRoco1 and NbRoco2 allosterically lock CtRoco in its active conformation
+### NbRoco1 and NbRoco2 allosterically lock CtRoco in its active conformation
 
 We previously showed that NbRoco1 binds CtRoco in a conformation-specific way, with the highest affinity for the GTP-bound state, while no binding was observed on the nucleotide-free CtRoco dimer. As a result, NbRoco1 shifts the CtRoco dimer–monomer equilibrium toward the monomeric state and increases the GTPase activity (Leemans et al., 2020). Albeit less pronounced, a similar specificity for the GTP-bound state of CtRoco is observed for NbRoco2. The current structure of GTPγS-bound CtRoco in complex with both NbRoco1 and NbRoco2 now reveals the mechanism underlying this conformational specificity.
 
@@ -61,23 +280,31 @@ NbRoco1 binds to CtRoco on the interface of the Roc and CORA domains and the hin
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig3-v1.jpg)
 
-**Figure 3.:** Roco1 and NbRoco2.(A) NbRoco1 binds at the interface of the Roc, CORA, and LRR domains, close to the α0-helix and the hinge region of the LRR movement. (B) Superposition of NbRoco1 on the conformation adopted by the nucleotide-free CtRoco shows considerable sterical clashes between the CDR1 and CDR3 regions of NbRoco1 and the LRR domain and α0-helix of nucleotide-free CtRoco (see inset). This provides a mechanism for the NbRoco1-mediated stabilization of CtRoco in its GTP-bound active conformation. (C) Superposition of NbRoco2 on the conformation adopted by the nucleotide-free CtRoco shows that the position of NbRoco2 in the curvature of the LRR domain is not compatible with the closed conformation of CtRoco, due to severe sterical clashes with the CORB domain.
+**Figure 3.:** (A) NbRoco1 binds at the interface of the Roc, CORA, and LRR domains, close to the α0-helix and the hinge region of the LRR movement. (B) Superposition of NbRoco1 on the conformation adopted by the nucleotide-free CtRoco shows considerable sterical clashes between the CDR1 and CDR3 regions of NbRoco1 and the LRR domain and α0-helix of nucleotide-free CtRoco (see inset). This provides a mechanism for the NbRoco1-mediated stabilization of CtRoco in its GTP-bound active conformation. (C) Superposition of NbRoco2 on the conformation adopted by the nucleotide-free CtRoco shows that the position of NbRoco2 in the curvature of the LRR domain is not compatible with the closed conformation of CtRoco, due to severe sterical clashes with the CORB domain.
 
 In the density map, NbRoco2 can easily be identified and placed on the concave side of the LRR domain (Figure 1—figure supplement 4A). The main interactions occur between the CDR2 loop and the first two repeats of the LRR domain, and, in particular, between the CDR3 loop and the central region of the LRR (repeats 5–10). From CDR1, only K27 seems to be involved in the binding by making interactions with E243 and Q245 in repeat 11 of the LRR domain. Apart from these contributions of the CDR loops, also framework residues of NbRoco2 are implicated in the interaction with CtRoco, with in particular its N-terminal and C-terminal β-strands interacting with the very C-terminal repeat of the LRR. When superposing the active and inactive conformations of CtRoco, one can immediately appreciate that the placement of NbRoco2 is incompatible with the LRR conformation in the inactive nucleotide-free state (Figure 3C). In the latter state, the LRR folds back on the COR domains and interacts with the CORB through its repeats 9–11. Hence, this provides a mechanism for the conformational specificity of NbRoco2. Nevertheless, we previously found that NbRoco2 does bind to nucleotide-free CtRoco, albeit with a lower affinity compared to the GTP state (Leemans et al., 2020). This indicates some flexibility in the position of the LRR domain, regardless of the CtRoco nucleotide state, with NbRoco2 playing a more subtle role in shifting the equilibrium toward the monomeric open conformation. The latter is in agreement with our observation that the elongated open CtRoco conformation is also observed as the main species in the CtRoco-NbRoco1 structure in the absence of NbRoco2 (Figure 1—figure supplement 2).
 
-## Crosslinking MS experiments confirm the Nb-binding sites and the induced conformational changes
+### Crosslinking MS experiments confirm the Nb-binding sites and the induced conformational changes
 
 To further complement and confirm our structural data, we subsequently used crosslinking mass spectrometry (CX-MS) to map the Nb-induced conformational changes in CtRoco, as well as the binding sites of NbRoco1 and NbRoco2. Hereto, we used the lysine-specific and CID-cleavable crosslinker disuccinimidyl sulfoxide (DSSO) (Kao et al., 2011). Considering the length of the DSSO spacer and the lysine side chains, the theoretical upper limit for the distance between the α carbon atoms of crosslinked lysines is ∼26 Å, while also taking protein dynamics into account leads to a cutoff distance of 35 Å, thus also allowing to draw inter- and intramolecular interactions within this resolution limit (Erzberger et al., 2014; Kao et al., 2011). CX-MS was applied to GTPγS-bound CtRoco either in the absence of Nbs, or bound to NbRoco1, NbRoco2 or both Nbs. Overall, the obtained crosslinking data for the proteins in solution correspond well with the cryo-EM structures and previous biochemical data. In the GTPγS-bound CtRoco protein, in the absence of Nbs, still a considerable number of crosslinks are observed between the LRR domain and the other CtRoco domains, illustrating the dynamical nature of this protein state, where the LRR most probably samples both the ‘open’ and ‘closed’ states (Figure 4A). The number of crosslinks between the LRR domain and the other protein domains is strongly decreased upon binding of either of the two Nbs, indicating that they stabilize the open conformation of CtRoco (Figure 4A–C). This is most prominent for NbRoco1 in agreement with the strong conformational specificity of this Nb. Interestingly, in the presence of both NbRoco1 and NbRoco2, all the crosslinks between the LRR and C-terminal domains are lost, suggesting an additive effect of both Nbs in stabilizing the CtRoco open conformation (Figure 4D). Also, multiple crosslinks between the Nbs and CtRoco, as well as between both Nbs, were found. According to the cryo-EM structure, NbRoco1 binds to the LRR-Roc interface, and crosslinks were accordingly observed between NbRoco1-K68 and residue K443 in the LRR-Roc (α0) linker region. NbRoco1-K68 also forms crosslinks with two lysines within the Roc domain (K583 and K611), and NbRoco1-K90 is crosslinked to K583 (Figure 4D, Figure 4—figure supplement 1). However, surprisingly, no crosslinks were observed between NbRoco2 and the LRR domain, while the cryo-EM structure and previous biochemical data unambiguously show binding to the LRR (Leemans et al., 2020). This can be explained by the compact folding of the LRR domain, which allows only very little rotational freedom for the lysine residues and causes a poor coverage by crosslinking data, as previously observed (Guaitoli et al., 2016).
 
-## NbRoco1 and NbRoco2 have a synergistic effect
+![Figure 4.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig4-v1.jpg)
+
+**Figure 4.:** (A) Intramolecular disuccinimidyl sulfoxide (DSSO)-crosslinks within GTPγS-bound CtRoco in the absence of nanobodies. (B) Effect of NbRoco1 on the intramolecular DSSO-crosslinks within GTPγS-bound CtRoco. The intermolecular crosslinks between CtRoco and NbRoco1 are also shown. (C) Effect of NbRoco2 on the intramolecular DSSO-crosslinks within GTPγS-bound CtRoco. The intermolecular crosslinks between CtRoco and NbRoco2 are also shown. (D) Effect of the combination of NbRoco1 and NbRoco2 on the intramolecular DSSO-crosslinks within GTPγS-bound CtRoco. The intermolecular crosslinks between CtRoco, NbRoco1, and NbRoco2 are also shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The intermolecular DSSO-crosslinks formed between NbRoco1 and CtRoco bound to GTPγS, NbRoco1, and NbRoco2 are indicated on the CtRoco-NbRoco1-NbRoco2 structure as dashes. Lysine side chains involved in crosslinking are shown as sticks (when modeled in the CtRoco-NbRoco1-NbRoco2 structure).
+
+### NbRoco1 and NbRoco2 have a synergistic effect
 
 While NbRoco1 and NbRoco2 both bind to CtRoco in a conformation-specific way, with preference for the monomeric GTP-bound conformation, this feature is most pronounced in NbRoco1 for which we previously could not detect any binding to the nucleotide-free CtRoco dimer (Leemans et al., 2020). The current cryo-EM structure shows that binding of NbRoco2 to nucleotide-free CtRoco must necessarily evoke a conformational change of the LRR. If this conformational change is relevant for the CtRoco activation mechanism and monomerization, we reasoned that binding of NbRoco2 might sufficiently weaken the CtRoco closed conformation to allow subsequent binding of NbRoco1. To test this hypothesis, we titrated FITC labeled NbRoco1 with increasing concentrations of nucleotide-free CtRoco that was pre-incubated with an excess of NbRoco2, and we followed the binding using fluorescence anisotropy measurements (Figure 5A). This shows that the presence of NbRoco2 enables NbRoco1 to bind to CtRoco in the absence of nucleotides, with a Kd = 4.6 ± 1.6 μM. Hence, this clearly demonstrates a synergistic effect of both Nbs in inducing conformational changes that drive CtRoco toward the active monomeric state.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94503/elife-94503-fig5-v1.jpg)
 
-**Figure 5.:** Roco1 and NbRoco2 have a synergistic effect on CtRoco activation that is potentiated by the bivalent nanobody construct NbR2-R1.(A) NbRoco2 enables the binding of NbRoco1 to the nucleotide-free CtRoco. The fluorescence anisotropy signal of the FITC-labeled NbRoco1 is monitored upon titration with increasing concentrations of nucleotide-free CtRoco in the presence of an excess of NbRoco2. The equilibrium dissociation constant (Kd ± standard error), obtained by fitting of triplicated data with a quadratic binding equation, is given. (B) NbR2-R1 has a threefold increased affinity toward nucleotide-free CtRoco in comparison to NbRoco2. FITC-labeled NbR2-R1 or NbRoco2 were titrated with nucleotide-free CtRoco, and fluorescence anisotropy data was analyzed as in (A). (C) Single turnover GTP (5 µM) hydrolysis rate of CtRoco-L487A (5 µM) in the absence of nanobodies (orange), or in the presence of either NbRoco1 (blue) or both NbRoco1 and NbRoco2 (green). (D) Single turnover GTP (5 µM) hydrolysis of CtRoco-L487A (5 µM) in the presence of NbR2-R1, all GTP was converted within the dead time (20 s) of the experiment.
+**Figure 5.:** (A) NbRoco2 enables the binding of NbRoco1 to the nucleotide-free CtRoco. The fluorescence anisotropy signal of the FITC-labeled NbRoco1 is monitored upon titration with increasing concentrations of nucleotide-free CtRoco in the presence of an excess of NbRoco2. The equilibrium dissociation constant (Kd ± standard error), obtained by fitting of triplicated data with a quadratic binding equation, is given. (B) NbR2-R1 has a threefold increased affinity toward nucleotide-free CtRoco in comparison to NbRoco2. FITC-labeled NbR2-R1 or NbRoco2 were titrated with nucleotide-free CtRoco, and fluorescence anisotropy data was analyzed as in (A). (C) Single turnover GTP (5 µM) hydrolysis rate of CtRoco-L487A (5 µM) in the absence of nanobodies (orange), or in the presence of either NbRoco1 (blue) or both NbRoco1 and NbRoco2 (green). (D) Single turnover GTP (5 µM) hydrolysis of CtRoco-L487A (5 µM) in the presence of NbR2-R1, all GTP was converted within the dead time (20 s) of the experiment.
 
-## A bivalent NbRoco1-NbRoco2 construct (NbR2-R1) acts as a strong activator of CtRoco
+### A bivalent NbRoco1-NbRoco2 construct (NbR2-R1) acts as a strong activator of CtRoco
 
 Considering the mutual synergistic effect of NbRoco1 and NbRoco2, we reasoned that a bivalent/bi-paratopic nanobody construct that covalently links NbRoco1 to NbRoco2 would further increase the affinity and avidity toward CtRoco. Based on our cryo-EM structure, we linked the C-terminal end of NbRoco2 to the N-terminus of NbRoco1 using a (GGGGS)3 linker, hence obtaining the bi-paratopic construct NbR2-R1. As could be expected, NbR2-R1 shows binding to nucleotide-free CtRoco with a Kd = 0.25 ± 0.05 μM (Figure 5B). This affinity of the bi-paratopic construct is threefold higher than that of NbRoco2 alone, and even 18-fold higher than that of NbRoco1 in the presence of an excess of NbRoco2. Thus, this clearly shows the cooperative effect of both Nbs in the bi-paratopic construct with regard to binding and inducing conformational changes in CtRoco.
 
@@ -101,7 +328,7 @@ In conclusion, this study provides important new structural insights into the me
 
 ## Materials and methods
 
-## Cloning of the bivalent nanobody construct
+### Cloning of the bivalent nanobody construct
 
 To generate the bivalent NbR2-R1, a gene construct was designed that fuses the NbRoco2 to the NbRoco1 open-reading frame with the following linker sequence:
 
@@ -109,19 +336,19 @@ To generate the bivalent NbR2-R1, a gene construct was designed that fuses the N
 
 The gene was synthesized and subcloned by GenScript Biotech (The Netherlands) in the pHEN29 vector, which adds the Sortase-recognition sequence LPETG at the C-terminus, allowing for Sortase A-mediated labeling. The plasmid was initially transformed in Escherichia coli DH5α cells and subsequently in WK6 cells for protein expression.
 
-## Protein expression and purification
+### Protein expression and purification
 
 CtRoco, CtRoco-L487A, NbRoco1, and NbRoco2 were expressed and purified as previously described (Leemans et al., 2020). In brief, CtRoco and CtRoco-L487A were produced with an N-terminal His-tag from the pProEX plasmid in an E. coli BL21(DE3) strain (genotype: F- hsdSB (rB- mB-) gal dcm (DE3) pLysS (CmR)). For purification, the protein was first subjected to a Ni2+-NTA immobilized metal affinity chromatography step, using a His-trap FF column. After elution, the protein was dialyzed against 20 mM HEPES/NaOH pH 7.5, 150 mM NaCl, 5% glycerol, 1 mM DTT, and 1 mM EDTA, which were added to the protein to disrupt Mg2+ and nucleotide binding. As a second purification step, an SEC on a Superdex 200 column (GE Healthcare) was performed using the same buffer. After gel filtration, 5 mM MgCl2 was added to the protein sample and analytical reversed-phase chromatography was used to confirm the complete removal of nucleotides, as described previously (Deyaert et al., 2017b). Samples were concentrated and flash frozen until use.
 
 NbRoco1 and NbRoco2 and NbR2-R1 were produced in E. coli WK6 cells (genotype: ∆(lac-proAB) galE strA/F’ lacIq lacZ∆M15 proA+B+) with either a C-terminal His-tag from a pMESy4 vector (for structural studies), or with a C-terminal Sortase-His-tag from a pHEN29 vector (for fluorescent labeling). After an osmotic shock to obtain the periplasmic fraction, an affinity purification step on Ni2+-NTA sepharose was performed followed by SEC on a Superdex 75 column equilibrated with the same buffer as used for the CtRoco protein.
 
-## Sample preparation and cryo-EM data acquisition
+### Sample preparation and cryo-EM data acquisition
 
 CtRoco was loaded with GTPγS by incubation with 0.5 mM of the nucleotide. Subsequently, the GTPγS-loaded protein was incubated with either NbRoco1 alone (CtRoco-NbRoco1) or with NbRoco1 and NbRoco2 (CtRoco-NbRoco1-NbRoco2) using a 2× molar excess of the Nbs. An SEC was performed using a Superdex200 column to separate the Nb excess from the complex, the sample was immediately supplemented again with an excess of GTPγS, and the concentration of the sample was adjusted to 0.08 mg/ml. Quantifoil (2/1) 300-mesh copper Holey grids were glow-discharged for 30 s to 1 min, and 3 μl of the complex was loaded on the grid and blotted for 1 s using Whatman paper, before being frozen in liquid ethane on a Cryoplunge3. Grids were stored in liquid nitrogen until use.
 
 Single-particle cryo-EM data were collected on a JEOL CryoARM300 transmission-electron microscope, operated at 300 kV, and at a nominal magnification of 60,000 and corresponding pixel size of 0.76  Å. The microscope contained an omega energy filter with a slit width set to 20 eV. The images were recorded using a K3 detector (Gatan) operating in correlative-double sampling (CDS) mode. Micrographs were recorded as movies of 60 frames using SerialEM v3.0.8. A total of 11,718 movies were collected for the CtRoco-NbRoco1 data set and 7489 movies were collected for the CtRoco-NbRoco1-NbRoco2 data set. Data collection statistics are reported in Table 1.
 
-## Image processing
+### Image processing
 
 Data were processed on the fly using Relion 3.1 (Zivanov et al., 2018) including gain normalization, motion correction, and calculation of dose-weighted averages with UCSF MotionCor2 (Zheng et al., 2017). Results were analyzed and curated in the first instance using the in-house script BXEMALYZER (Shkumatov et al., in preparation). The motion-corrected micrographs were imported into cryoSPARC v4.3 (Punjani et al., 2017) and CTF was calculated using Patch CTF.
 
@@ -129,18 +356,18 @@ For the CtRoco-NbRoco1 data set, particle picking was first performed using manu
 
 For the CtRoco-NbRoco1-NbRoco2 data set, particle picking was first performed with Topaz (Bepler et al., 2019), after import of the micrographs to cryoSPARC, using the pretrained model ResNet16 on a small set of 18 random images. Bad particles were removed by 2D classification and the rest were used to train a Topaz model, followed by picking using Topaz Extract on the full data set, which resulted in 716,919 particles extracted on a box size of 389 Å. After three rounds of 2D classification, 371,956 particles were selected. Selected particles were used for multiple ab initio reconstruction using six classes, followed by heterogeneous refinement of the six classes. These jobs yielded one class corresponding to the volume of CtRoco bound to both Nbs and two classes corresponding to good-quality volumes centered on the LRR domain but with little density for the other half of the molecule. The other three classes were also centered on the LRR domain but with overall bad quality. Homogeneous refinement of the class displaying a nearly full CtRoco protein bound to the two Nbs, followed by non-uniform refinement (Punjani et al., 2020), resulted in a 7.7 Å resolution map reconstruction from 48,333 particles. To obtain a focused map on the LRR half of the protein, the two classes centered on the LRR domain were merged, particles were re-extracted on a smaller box size of 243 Å, and, after homogeneous and non-uniform refinements, a map was obtained where only the LRR domain bound to NbRoco2 is visible with 3.6 Å resolution using 160,925 particles. To obtain a higher resolution map for the other half of the protein, spanning the Roc-COR and NbRoco1, a different approach was used: three 2D classes centered on the Roc-COR domains were selected and fed to a template picker job with the intention to pick this half of the particles only, and extracted on a box size of 243 Å. After extraction and three rounds of 2D classification, again only classes that were centered on the Roc-COR domains were selected for ab initio reconstruction using four classes followed by heterogeneous refinement. These yielded one good-quality volume and the particles in this class were then subjected to non-uniform refinement, yielding a map representing the Roc-COR domains and the NbRoco1. The overall resolution of the map was estimated at 3.9 Å using 38,260 particles (Figure 1—figure supplement 1).
 
-## Model building and refinement
+### Model building and refinement
 
 The focused maps containing either the LRR domain bound to NbRoco2 or the Roc-COR domain bound to NbRoco1 were improved by density modification with resolve_cryo_em (Terwilliger et al., 2020) in the PHENIX suit (version 1.20.1) (Adams et al., 2010), and used for model interpretation and refinement. Initial models of the individual CtRoco domains were taken from the nucleotide-free CtRoco structure (PDB: 6hlu). Nb models were generated using AlphaFold2 (Jumper et al., 2021). Initial rigid body fits were performed for each domain separately on UCSF ChimeraX 1.2 (Pettersen et al., 2021), followed by a flexible fitting in Coot 0.9.2 (Emsley et al., 2010), to fit the secondary structure features into density. Manual building and inspection was also done in Coot, and real-space refinement was performed with the phenix.real_space_refine program in PHENIX applying Ramachandran plot restraints. Model-versus-data fit was assessed by curves of the Fourier shell correlation (FSC) as a function of resolution using the refined models and the two half-maps of each focused volume (Figure 1—figure supplement 5). Finally, the focused maps and models were fitted into the lower resolution map of the entire protein in UCSF ChimeraX to obtain an overall interpretation of CtRoco-NbRoco1-NbRoco2. Figures containing molecular structures and volumes were prepared with UCSF ChimeraX and PyMOL (The PyMol Molecular Graphic System, version 2.4 Schrödinger, LLC, https://pymol.org/2/). Maps shown in the figures were improved with either Resolve or EMReady (He et al., 2023)⁠.
 
-## Chemical crosslinking mass spectrometry
+### Chemical crosslinking mass spectrometry
 
 CX-MS was performed as previously described (Singh et al., 2022). Briefly, the CtRoco concentration was adjusted to 8 µM in storage buffer. GTPγS-bound CtRoco was crosslinked with DSSO at a molar ratio of 1:50 (protein: crosslinker). In addition, GTPγS-bound CtRoco was mixed with either NbRoco1, NbRoco2 or both in a molar ratio 1:5 (CtRoco:Nb) before DSSO crosslinking (molar ratio 1:50). The reaction was carried on for 30 min at room temperature and stopped by adding 10 µl of 1 M Tris at pH 7.5. Proteins were precipitated by chloroform/methanol and subjected to tryptic proteolysis. The tryptic peptide solutions were cleaned up by C18-StageTips (Thermo Fisher) and the volume was reduced to approximately 10 µl in a SpeedVac. 40 µl SEC buffer (30% [vol/vol] acetonitrile, 0.1% TFA) was added to the desalted peptides. The entire volume of 50 µl was loaded onto the SEC column (Superdex Peptide column 3.2/300; Cytiva), which was mounted to an Äkta pure system (Cytiva) and equilibrated in SEC buffer. SEC was performed at a flow rate of 50 µl/min. The eluates were collected in 100 µl fractions. Vacuum-dried fractions (remaining volume of 2 µl to avoid complete dryness) containing the crosslinked peptides, were redissolved in a total volume of 10 µl 0.5% TFA, and analyzed individually on an Orbitrap Fusion mass spectrometer (Thermo Fisher) using the MS2_MS3 fragmentation method with the default settings (version 3.4, build 3072). MS1 scans were performed in the Orbitrap (FTMS, resolution = 60K) at an m/z range of 375–1500. MS2 was performed with CID (CE = 25%) and spectra were acquired in the Orbitrap (FTMS) at 30K resolution. The MS3 scans were performed with HCD (CE = 30%) and spectra were acquired in the linear ion trap. Resulting Thermo Raw files were analyzed with the MS2_MS3 workflow provided by in Proteome Discoverer 2.5 (build 2.5.0.400) using XlinkX (version 2.5).
 
-## Fluorescence anisotropy titrations
+### Fluorescence anisotropy titrations
 
 The affinity of NbRoco1, NbRoco2, and NbR2-R1 for CtRoco was determined using fluorescence anisotropy titrations, Nbs were labeled at their C-terminus with a FITC fluorophore using Sortase A-mediated labeling, as previously described (Leemans et al., 2020). Fluorescence anisotropy titrations with FITC-labeled Nbs and CtRoco were performed at 25°C using a Cary Eclipse spectrofluorometer (Agilent) equipped with polarizers and temperature control, at an excitation wavelength of 493 nm and emission wavelength of 516 nm. 50 nM FITC-labeled Nb was titrated with increasing amounts of CtRoco. The anisotropy signal was measured after a 2 min incubation period for each titration. All experiments were performed in triplicate. To obtain Kd values (± standard error), the data were fitted using the quadratic binding equation in GraphPad Prism 7.
 
-## Single-turnover kinetics
+### Single-turnover kinetics
 
 GTP hydrolysis rates were calculated under single-turnover conditions. 5 μM of CtRoco-L487A was incubated with 5 μM of GTP in the presence of 100 μM of the Nb of interest at 25°C. Samples were taken at different time points ranging from 0 to 180 min and the reaction was stopped by incubation at 95°C for 3 min. Samples were mixed with the same volume of HPLC buffer and 50 µl was injected on a reversed-phase C18 column (Phenomenex, Jupiter 5 mm) attached to an Alliance e2695 HPLC (Waters) using 100 mM KH2PO4 pH 6.4, 10 mM tetrabutylammonium bromide, 7.5% acetonitrile as the mobile phase. The 254 nm absorption peaks of GDP were converted to concentrations by using a standard curve, and GDP concentrations were plotted in function of time. All experiments were performed in triplicate and data were fitted on single-exponential equation using GraphPad Prism 7.

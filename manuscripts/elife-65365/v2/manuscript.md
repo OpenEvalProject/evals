@@ -21,7 +21,7 @@
 
 ## Abstract
 
-A novel variant of the SARS-CoV-2 virus carrying a point mutation in the Spike protein (D614G) has recently emerged and rapidly surpassed others in prevalence. This mutation is in linkage disequilibrium with an ORF1b protein variant (P314L), making it difficult to discern the functional significance of the Spike D614G mutation from population genetics alone. Here, we perform site-directed mutagenesis on wild-type human-codon-optimized Spike to introduce the D614G variant. Using multiple human cell lines, including human lung epithelial cells, we found that the lentiviral particles pseudotyped with Spike D614G are more effective at transducing cells than ones pseudotyped with wild-type Spike. The increased transduction with Spike D614G ranged from 1.3- to 2.4-fold in Caco-2 and Calu-3 cells expressing endogenous ACE2 and from 1.5- to 7.7-fold in A549 ACE2 and Huh7.5 ACE2 overexpressing ACE2. Furthermore, trans -complementation of SARS-CoV-2 virus with Spike D614G showed an increased infectivity in human cells. Although there is minimal difference in ACE2 receptor binding between the D614 and G614 Spike variants, the G614 variant is more resistant to proteolytic cleavage, suggesting a possible mechanism for the increased transduction.
+A novel variant of the SARS-CoV-2 virus carrying a point mutation in the Spike protein (D614G) has recently emerged and rapidly surpassed others in prevalence. This mutation is in linkage disequilibrium with an ORF1b protein variant (P314L), making it difficult to discern the functional significance of the Spike D614G mutation from population genetics alone. Here, we perform site-directed mutagenesis on wild-type human-codon-optimized Spike to introduce the D614G variant. Using multiple human cell lines, including human lung epithelial cells, we found that the lentiviral particles pseudotyped with Spike D614G are more effective at transducing cells than ones pseudotyped with wild-type Spike. The increased transduction with Spike D614G ranged from 1.3- to 2.4-fold in Caco-2 and Calu-3 cells expressing endogenous ACE2 and from 1.5- to 7.7-fold in A549ACE2 and Huh7.5ACE2 overexpressing ACE2. Furthermore, trans-complementation of SARS-CoV-2 virus with Spike D614G showed an increased infectivity in human cells. Although there is minimal difference in ACE2 receptor binding between the D614 and G614 Spike variants, the G614 variant is more resistant to proteolytic cleavage, suggesting a possible mechanism for the increased transduction.
 
 ## Introduction
 
@@ -39,15 +39,85 @@ The first sequenced SARS-CoV-2 isolate (GenBank accession MN908947.3) and the ma
 
 Given these findings, we wondered whether the G614 variant may confer some functional difference that impacts viral transmission or disease severity. To address this question, we used a pseudotyped lentiviral system similar to those developed previously for SARS-CoV-1 (Moore et al., 2004). Using site-directed mutagenesis and a full-length human-codon-optimized SARS-CoV-2 Spike coding sequence (Shang et al., 2020), we constructed EGFP-expressing lentiviruses either lacking an attachment protein or pseudotyped with D614 Spike or G614 Spike (Figure 2a). After production and purification of these viral particles, we transduced four human cell lines derived from lung (A549, Calu-3), liver (Huh7.5), and colon (Caco-2). Caco-2 and Calu-3 cells express endogenous angiotensin-converting enzyme 2 (ACE2) (Ren et al., 2006); for A549 and Huh7.5, we overexpressed ACE2 using a lentiviral construct (A549ACE2, Huh7.5ACE2). Others have observed increased S-virus transduction in cells that overexpress the ACE2 receptor (Li et al., 2003; Moore et al., 2004); we also found that S-virus is much more efficient at transducing human cell lines when the human ACE2 receptor is overexpressed (Figure 2—figure supplement 1a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic of EGFP lentivirus pseudotyped with SARS-CoV-2 Spike proteins (or no pseudotype) and quantification of EGFP fluorescence by flow cytometry. (b) Flow cytometry of A549ACE2 cells at 3 days post-transduction with 30 or 100 µL SARS-CoV-2 Spike-pseudotyped lentivirus. (c) Percent of EGFP+ cells at 3 days post-transduction with the indicated volume of virus and pseudotype in human liver Huh7.5ACE2 cells, lung A549ACE2 cells, colon Caco-2 cells, and lung Calu-3 cells (n = 3 replicates, error bars are s.e.m.). (d) The fold-change for each viral transduction of G614 Spike over D614 Spike in four cell lines (error bars are s.e.m.).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Percent of EGFP+ cells at 6 days post-transduction with 100 μL of supernatant SARS-CoV-2 Spike (D614) pseudotyped lentivirus and unpseudotyped lentivirus in human liver Huh7.5 with and without ACE2 overexpression. (b) Flow cytometry gating for GFP quantification. Cells were first gated by the forward and side scatter area to exclude debris and then doublets were excluded by gating on forward scatter area and width.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Relative quantification (ΔΔCt) of viral RNA from SARS-CoV-2 Spike-pseudotyped lentiviruses. The primers amplify the woodchuck hepatitis virus posttranscriptional regulatory element (WPRE) or the EGFP gene in the viral RNA genome.
+
 After transduction with four different viral volumes, we waited 3 days and then performed flow cytometry to measure GFP expression (Figure 2b, Figure 2—figure supplement 1b). We found in all four human cell lines at all viral doses that G614 S-virus resulted in a greater number of transduced cells than D614 S-virus (Figure 2c). Lentivirus lacking an attachment protein resulted in negligible transduction (Figure 2c). With the G614 Spike variant, the increase in viral transduction over the D614 variant ranged from 1.4- to 1.9-fold for Calu-3, 1.3- to 2.4-fold for Caco-2 colon, 1.8- to 4.6-fold for A549ACE2 lung, and 1.5- to 7.7-fold for Huh7.5ACE2 liver, depending on the specific dose of S-virus (Figure 2d). To control for any potential differences in viral titer, we also measured viral RNA content by qPCR. We observed only a small difference between D614- and G614-pseudotyped viruses using two independent primer sets (average of 7% higher viral titer for D614), which may result in a slight underestimation of the increase in transduction efficacy of the G614-pseudotyped virus (Figure 2—figure supplement 2).
 
 We next sought to understand the mechanism through which the G614 variant increases viral transduction of human cells. Like SARS-CoV-1, the SARS-CoV-2 Spike protein has both a receptor-binding domain and a hydrophobic fusion polypeptide that is used after binding the receptor (e.g. ACE2) to fuse the viral and host cell membranes (Heald-Sargent and Gallagher, 2012; Figure 3a). Initially, we hypothesized that the increased viral transduction of the G614 variant may be due to enhanced binding of the ACE2 receptor. To determine whether greater transduction efficiency results from increased affinity of Spike G614 to its receptor, we used bio-layer interferometry to measure the binding kinetics of the Spike protein S1 subunit, which contains the ACE2-binding site, with and without the variant. We observed similar binding profiles of soluble D614 and G614 Spike S1 subunit to immobilized hACE2 (Figure 3b,c). Binding was best represented by a 2:1 heterogeneous binding model, which reports two dissociation constants (KD): KD1 = 8.45 nM and KD2 = 127 nM for D614 variant, and KD1 = 18.0 nM and KD2 = 92.7 nM for G614 variant (Table 1). KD1 is consistent with previously published binding affinities of the Spike D614–ACE2 interaction (Walls et al., 2020; Yi et al., 2020) and is similar for the Spike G614 variant. This suggests our observed transduction phenotype is independent of Spike S1 subunit affinity for the ACE2 receptor.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig3-v2.jpg)
+
+**Figure 3.:** (a) Schematic diagram of SARS-CoV-2 Spike protein structure with the added C9 affinity tag on the C-terminus. Spike cleavage fragments S1, S2, and S2’ are also indicated. (b, c) Association and dissociation binding curves of Spike D614 (b) and Spike G614 (c) with hACE2. Blue curves represent Spike protein binding profiles at 200 nM, 100 nM, 50 nM, 25 nM, and 6.25 nM. Red curves represent the best global fit using a 2:1 heterogeneous ligand model. (d) Western blot of total protein lysate from HEK293FT cells after transfection with D614 Spike, G614 Spike, or mock transfection. (Upper) Detection of full-length Spike and cleavage fragments using an anti-C9 (rhodopsin) antibody. (Lower) Detection of GAPDH via anti-GAPDH antibody. (e) Fraction of cleaved (S2 + S2’) to uncleaved (full-length) fragments for Spike D614 and G614 (n = 4 replicates, error bars are s.e.m.). (f) Fold-change in cleavage between Spike variants (D614/G614) (n = 4 replicates, error bars are s.e.m.). (g) Western blot of boiled S-virus pseudotyped with D614 Spike or G614 Spike. (Upper) Detection of full-length Spike and cleavage fragments using an anti-C9 (rhodopsin) antibody. (Lower) Detection of p24 capsid protein via anti-24 antibody. (h) Fraction of cleaved (S2 + S2’) to uncleaved (full-length) fragments for Spike D614 and G614 on lentiviral particles (n = 4 replicates, error bars are s.e.m.). (i) Fold-change in cleavage between Spike variants on lentiviral particles (D614/G614) (n = 4 replicates, error bars are s.e.m.). *p≤0.05, ***p≤0.001. Significance testing was done with an unpaired two-tailed t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Spike D614 and Spike G614 protein incorporation rate into pseudotyped lentiviral particles was quantified by densitometry of total Spike expression (cleaved and uncleaved) normalized to expression of the lentiviral capsid protein p24. Significance testing was done with an unpaired two-tailed t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Predicted change in binding affinity for common HLA-A alleles (a) and common HLA-B alleles (b). Predictions were computed using the NetMHC software package.
+
+**Table 1.**
+ SARS-CoV-2 Spike D614 and G614 variants have comparable binding affinities for hACE2.Values of kinetics assay from bio-layer interferometry with purified Spike and ACE2. A 2:1 model yields two KD values as measured by Kdis/Kon for each binding process.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>KD1 (nM)</th>
+      <th>Kon1 (1/M * s)</th>
+      <th>Kdis1 (1/s)</th>
+      <th>KD2 (nM)</th>
+      <th>Kon2 (1/M * s)</th>
+      <th>Kdis2 (1/s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spike D614</td>
+      <td>8.45</td>
+      <td>3.51 × 104</td>
+      <td>2.96 × 10−4</td>
+      <td>127</td>
+      <td>1.59 × 105</td>
+      <td>2.01 × 10−2</td>
+    </tr>
+    <tr>
+      <td>Spike G614</td>
+      <td>18.0</td>
+      <td>4.25 × 104</td>
+      <td>7.67 × 10−4</td>
+      <td>92.7</td>
+      <td>2.22 × 105</td>
+      <td>2.06 × 10−2</td>
+    </tr>
+  </tbody>
+</table>
 
 In order for SARS-CoV-2 to enter cells, the Spike protein must be cleaved at two sites by host proteases. It is thought that Spike must first be cleaved into S1 and S2 fragments, which exposes another cleavage site (Bestle et al., 2020; Hoffmann et al., 2020). The second cleavage event (creating the S2’ fragment) is thought to enable membrane fusion with the host cell. We transfected both D614 and G614 Spike variants into human HEK293FT cells to see whether Spike cleavage might differ between these variants. Both constructs were tagged at their C-termini with a C9 tag to visualize full-length, S2, and S2’ fragments via western blot (Figure 3d). To measure cleavage, we quantified the ratio of cleaved Spike (S2 + S2’) to full-length Spike (Figure 3e). We found that the G614 variant is ~2.5 fold more resistant to cleavage in the host cell than the D614 variant in cells expressing Spike by transient transfection (Figure 3f). Next, we measured the ratio of cleaved to full-length Spike on Spike-pseudotyped lentiviral particles (Figure 3g,h). We found that virions with the G614 variant have less Spike cleavage compared to the D614 variant (~1.4-fold) (Figure 3i). This suggests that the increased transduction observed with G614 S-virus (Figure 2d) may be due to the greater fraction of uncleaved G614 Spike, which perhaps enable each newly-assembled virion to include more receptor-binding-capable Spike protein. Lastly, we quantified the total Spike protein (cleaved and uncleaved) in each S-virus and normalized it to the pseudovirus capsid protein p24 (Figure 3—figure supplement 1). We found no significant difference between Spike D614 and Spike G614 incorporation into pseudotyped lentiviral particles.
 
 Given the global efforts to develop a COVID-19 vaccine, we also sought to understand the impact of the Spike variant on immune responses. According to the World Health Organization, there are presently 174 COVID-19 vaccine candidates in preclinical development and 63 vaccine candidates in patient-enrolling clinical trials (https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines, accessed on January 26, 2021). Despite the tremendous diversity of vaccine formulations and delivery methods, many of them utilize Spike sequences (RNA or DNA) or peptides and were developed prior to the emergence of the G614 variant. Using epitope prediction for common HLA alleles (Andreatta and Nielsen, 2016), we found that the G614 variant can alter predicted MHC binding ( Figure 3-figure supplement 2). For example, the predicted binding for one high-affinity epitope decreased by nearly fourfold (58 nM for D614 versus 221 nM for G614 with HLA-A*02:01). Although full-length Spike protein likely can produce many immunogenic peptides, several vaccines use only portions of Spike (Lurie et al., 2020; Yu et al., 2020) and thus it may be better to adapt vaccine efforts to the D614 variant given its global spread.
 
 To understand whether the observed change in transduction efficiency that we found with our pseudotyped lentivirus also impacts full SARS-CoV-2 virus, we sought to develop an isogenic system for testing the Spike variant. Isolates from patient samples that carry the Spike variant also carry a linked mutation in ORF1b, which makes it challenging to perform this experiment in an isogenic fashion. In lieu of a reverse genetics system to generate a SARS-CoV-2 variant and building on the observation by several groups that most cell lines require ACE2 overexpression for efficient SARS-CoV-2 infection (Hoffmann et al., 2020; Ou et al., 2020; Shang et al., 2020; Ziegler et al., 2020), we developed a novel trans-complementation assay in which we co-transfect either D614 or G614 Spike along with human ACE2 into HEK293T cells (Figure 4a). Twenty-four hours later, these cells were infected with SARS-CoV-2 at a low multiplicity of infection (MOI): In this manner, only transfected cells, which express ACE2 (and one of the Spike variants), can be readily infected by SARS-CoV-2.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic diagram of trans-complementation assay to assess the impact of SARS-CoV-2 Spike variants in an isogenic fashion. Plasmids containing a single Spike variant and ACE2 are co-transfected into HEK293T cells and then, after 24 hr, are infected with SARS-CoV-2 (Isolate USA-WA1/2020). (b) Representative images of HEK293T cells infected with SARS-CoV-2 (multiplicity of infection [MOI]: 0.01) and fixed at the indicated time point post-infection. The cells were stained with DAPI (blue) and an antibody for SARS-CoV-2 nucleocapsid protein (red). (Top) Transfection of ACE2 and SARS-CoV-2 Spike D614 plasmids. (Bottom) Transfection of ACE2 and SARS-CoV-2 Spike G614 plasmids. Scale bar: 1 mm. (c, d) Percent of SARS-CoV-2-infected cells at 12, 18, or 24 hr post-infection as measured by immunocytochemistry for SARS-CoV-2 nucleocapsid (N) protein and quantification using an imaging cytometer. A MOI of 0.01 is in shown in (c) and a MOI of 0.1 is shown in (d). *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Significance testing was done with an unpaired two-tailed t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65365/elife-65365-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The regions shown in Figure 4b are representative sub-regions selected from the full images (entire well). The full images are shown here without any contrast adjustment for a single biological replicate (n = 6 replicate infections for each time point-MOI combination). DAPI (nuclei) are shown in blue, and SARS-CoV-2 nucleocapsid (N) protein is shown in red. Scale bar: 500 μm.
 
 We performed this experiment at two different MOIs (0.01 and 0.1) and measured differences in viral infection at 12, 18, and 24 hr post-infection (Figure 4b, Figure 4—figure supplement 1), as higher MOIs and longer infection periods may mask the contribution of transfected Spike in this assay. We found significant increases in infection with SARS-CoV-2 complemented with Spike G614 at all time points and all MOIs (Figure 4c,d). As a negative control, infected HEK293T cells without any prior transfection resulted in minimal SARS-CoV-2 infection (<1% in most cases). Using the trans-complementation assay, we have shown that introduction of just the Spike D614G point mutation increases infection using intact (replication-competent) SARS-CoV-2 virus.
 
@@ -63,62 +133,282 @@ Despite the emerging consensus the G614 results in faster viral spread (Korber 
 
 ## Materials and methods
 
-## SARS-CoV-2 genome analyses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>Cat # CCL-185 RRID:CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549ACE2</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293FT</td>
+      <td>Thermo</td>
+      <td>Cat # R70007 RRID:CVCL_6911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Huh-7.5</td>
+      <td>tenOever lab</td>
+      <td>RRID:CVCL_7927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Huh-7.5ACE2</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Caco-2</td>
+      <td>ATCC</td>
+      <td>Cat # HTB-37 RRID:CVCL_0025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Calu-3</td>
+      <td>tenOever Lab</td>
+      <td>Cat # HTB-55 RRID:CVCL_YZ47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat # 2118 RRID: AB_561053</td>
+      <td>(1:10,000), (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p24 (rabbit monoclonal)</td>
+      <td>Sino Biological</td>
+      <td>Cat # 11695-V08E RRID:N/A</td>
+      <td>(1:500), (10 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rhodopsin/C9 (mouse monoclonal)</td>
+      <td>Novus</td>
+      <td>Cat # NBP1-47602 RRID:AB_10010560</td>
+      <td>(1:1000), (5 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD donkey anti-rabbit</td>
+      <td>LI-COR</td>
+      <td>Cat # 926–68073; RRID:AB_10954442</td>
+      <td>(1:5000), (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW donkey anti-mouse</td>
+      <td>LI-COR</td>
+      <td>Cat # 926–32212; RRID: AB_621847</td>
+      <td>(1:5000), (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nucleocapsid (Human monoclonal)</td>
+      <td>Mount Sinai</td>
+      <td>Clone 1C7C7 RRID:N/A</td>
+      <td>Isolated by the Center for Therapeutic Antibody Discovery at the Icahn School of Medicine at Mount Sinai (1:1000), (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-SARS2-Spike</td>
+      <td>Addgene</td>
+      <td>Cat # 145032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-SARS2-Spike-D614G</td>
+      <td>This study Addgene</td>
+      <td>Cat # 166850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiEGFP</td>
+      <td>Addgene</td>
+      <td>Cat # 138152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Cat # 12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Spike protein D614</td>
+      <td>Sino Biological</td>
+      <td>Cat # 40591-V08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Spike protein G614</td>
+      <td>Sino Biological</td>
+      <td>Cat # 40591-V08H3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Cat # 12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 site-directed mutagenesis kit</td>
+      <td>NEB</td>
+      <td>Cat # E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna Universal One-step qPCR kit</td>
+      <td>NEB</td>
+      <td>Cat # E3005L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NextStrain</td>
+      <td>Hadfield et al., 2018</td>
+      <td></td>
+      <td>https://nextstrain.org/ncov</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10</td>
+      <td>BD Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Lab 6.1</td>
+      <td>BioRad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J 1.51</td>
+      <td>NIH/LOCI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NetMHC 4.0</td>
+      <td>Andreatta and Nielsen, 2016</td>
+      <td></td>
+      <td>http://www.cbs.dtu.dk/services/NetMHC/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SARS-CoV-2</td>
+      <td>CDC</td>
+      <td>Isolate USA-WA1/2020 (NR-52281)</td>
+      <td>Deposited by the Center for Disease Control and Prevention and obtained through BEI Resources, NIAID, NIH</td>
+    </tr>
+  </tbody>
+</table>
+
+### SARS-CoV-2 genome analyses
 
 For temporal tracking of D614G mutations in SARS-CoV-2 genomes, we used the Nextstrain analysis tool (https://nextstrain.org/ncov) with data obtained from GISAID (https://www.gisaid.org/) (Hadfield et al., 2018; Shu and McCauley, 2017). With the Nextstrain webtool, we visualized 3866 genomes using the ‘clock’ layout with sample coloring based on Spike 614 mutation status.
 
 All complete SARS-CoV-2 genomes submitted before June 2, 2020 were obtained from GISAID. We excluded genomes classified by GISAID as low coverage and downloaded the remaining 23,755 high-coverage genomes. To classify each genome as D614 or G614, we flanked the mutation site with 11 nt of surrounding sequence context on each side and identified genomes matching either mutation. For 1652 genomes, we could not identify the mutation site and excluded these from further analysis. For the remaining 22,103 genomes, we were able to uniquely classify them as D614 or G614. Case-fatality rate data was downloaded on June 3, 2020 from the Johns Hopkins Coronavirus Resource Center (https://coronavirus.jhu.edu/data/mortality). For accurate estimation of D614G prevalence, we only included countries with at least nine genomes in GISAID.
 
-## COVID-19 patient qPCR
+### COVID-19 patient qPCR
 
 Threshold cycle data and statistical test results for Sheffield quantitative PCR data from COVID-19 patients are from Korber et al., 2020. Threshold cycle data and statistical test results for University of Washington (UW) quantitative PCR data from COVID-19 patients are from Wagner et al., 2020 (https://github.com/blab/ncov-D614G). For the Sheffield study, the reported threshold cycle was the median in each group. For the UW study, the reported threshold cycle was the mean in each group. The reported p-values were computed by the respective study authors using the Wilcoxon rank sum test.
 
-## Cell culture
+### Cell culture
 
 A549 (RRID:CVCL_0023) cells were obtained from ATCC, HEK293FT (RRID:CVCL_6911) cells were obtained from Thermo Scientific, and Huh-7.5 (RRID:CVCL_7927), Calu-3 (RRID:CVCL_YZ47), and Caco-2 (RRID:CVCL_0025) were a kind gift of B. tenOever (Mt. Sinai). A549, HEK293FT, Huh7.5, and Caco-2 were cultured in D10 media: Dulbecco’s modified Eagle medium (DMEM) (Caisson Labs) supplemented with 10% Serum Plus II Medium Supplement (Sigma–Aldrich). Calu-3 were cultured in Eagle’s minimal essential medium (ThemoFisher) supplemented with 10% Serum Plus II Medium Supplement (Sigma–Aldrich). Cells were regularly passaged and tested for the presence of mycoplasma contamination (MycoAlert Plus Mycoplasma Detection Kit, Lonza).
 
-## Spike plasmid cloning and lentiviral production
+### Spike plasmid cloning and lentiviral production
 
 To express the D614 Spike, we used an existing cytomegalovirus (CMV)-driven SARS-CoV-2 plasmid (pcDNA3.1-SARS2-Spike, Addgene 145032) (Shang et al., 2020). To express the G614 Spike, we cloned pcDNA3.1-SARS2-SpikeD614G using the Q5 site-directed mutagenesis kit (NEB E0554S) and the following primers: 5′-CTGTACCAGGgCGTGAATTGCAC-3′ and 5′-CACGGCCACCTGGTTGCT-3′.
 
 To make Spike-pseudotyped lentivirus, we co-transfected a d2EGFP-containing transfer plasmid (Addgene 138152) with accessory plasmid psPAX2 (Addgene 12260) and the pseudotyping plasmid (or omitted the pseudotyping plasmid to produce no-pseudotype lentivirus). Briefly, for each virus, a T-225 flask of 80% confluent HEK293T cells (Thermo) was transfected in OptiMEM (Thermo) using 25 μg of the transfer plasmid, 20 μg psPAX2, 22 μg Spike plasmid, and 175 μL of linear polyethylenimine (1 mg/mL) (Polysciences). Six hours post-transfection media was replaced with fresh D10 media, DMEM (Caisson Labs) with 10% Serum Plus II Medium Supplement (Sigma–Aldrich), with 1% bovine serum albumin (Sigma) added to improve virus stability. After 60 hr, viral supernatants were harvested and centrifuged at 3,000 rpm at 4°C for 10 min to pellet cell debris and filtered using 45 μm PVDF filters (CellTreat). The supernatant was then ultracentrifuged for 2 hr at 100,000 g (Sorvall Lynx 6000), and the pellet was resuspended overnight at 4°C in phosphate-buffered saline (PBS) with 1% bovine serum albumin (BSA).
 
-## qPCR of Spike pseudoviruses
+### qPCR of Spike pseudoviruses
 
 Viral RNA was isolated from 100 mL of 100× concentrated Spike D614 or G614 pseudotyped lentiviruses using 500 mL Trizol (Thermo 15596026) and following the Zymo Direct-zol RNA MicroPrep kit protocol. RNA was eluted with 15 mL RNase-free water. The RNA was then diluted 1:50 and 2 mL was used to perform a one-step qPCR protocol using Luna Universal One-step qPCR kit (NEB). Two primer sets were used: 5′-CGCTATGTGGATACGCTGC-3′ and 5′-GCGAAAGTCCCGGAAAGGAG-3′ that amplify WPRE and 5′-CGTGCAGCTCGCCGACCAC-3′ and 5′-CTTGTACAGCTCGTCCATGCC-3′ that amplify EGFP. qPCR was performed following the Luna Universal One-step qPCR kit protocol on a ViiA 384-well qPCR machine.
 
-## Spike pseudovirus transductions
+### Spike pseudovirus transductions
 
 We plated 50,000 cells per well of a 48-well plate. The cells were transduced the following morning using the indicated pseudotyped lentiviral amounts plus media supplemented with polybrene 8 μg/mL to a final volume of 150 μL per well. The media was changed 8 hr post-transduction. The cells were analyzed by flow cytometry 72 hr post-transduction.
 
-## ACE2 lentiviral cloning and ACE2 stable cell line overexpression
+### ACE2 lentiviral cloning and ACE2 stable cell line overexpression
 
 To generate pLenti-ACE2-Hygro (Addgene 161758), we amplified human ACE2 (hACE2) from pcDNA3.1-ACE2 (Addgene 1786) and cloned it into a lentiviral transfer pLEX vector carrying the hygromycin resistance gene using Gibson Assembly Master Mix (NEB E2611L). A 2A epitope tag was added to hACE2 at the C-terminus. Huh7.5ACE2 and A549ACE2 cell lines were generated by lentiviral transduction of ACE2. The protocol for lentiviral production was the same as above except we used the common lentiviral pseudotype (VSV-g) using plasmid pMD2.G (Addgene 12259). Transduced cells were selected with hygromycin at 50 µg/mL for Huh7.5ACE2 and 500 µg/mL for A549ACE2 for 10 days before use.
 
-## Flow cytometry of transduced human cells
+### Flow cytometry of transduced human cells
 
 Cells were harvested and washed with Dulbecco’s phosphate-buffered saline (Caisson Labs) twice. Cell acquisition and sorting was performed using a Sony SH800S cell sorter with a 100 μm sorting chip. We used the following gating strategy: (1) We excluded the cell debris based on the forward and reverse scatter; (2) doublets were excluded. For all samples, we recorded at least 5000 cells that pass the gating criteria described above. Gates to determine GFP+ cells were set based on control GFP− cells, where the percent of GFP+ cells was set as <0.5% (background level). Flow cytometry analyses were performed using FloJo v10.
 
-## ACE2 binding kinetics using bio-layer interferometry
+### ACE2 binding kinetics using bio-layer interferometry
 
 The kinetics of the D614 and G614 Spike protein variants with hACE2 were analyzed using bio-layer interferometry on an Octet system (ForteBio, Octet RED96). Recombinant His-tagged and biotinylated human ACE2 protein (Sino Biological, Cat 10108-H08H-B) was immobilized on a Streptavidin (SA)-coated sensor. Loaded sensors were dipped into recombinant SARS-Cov-2 His-tagged Spike protein (D614 or D614G, Sino Biological, Cat # 40591-V08H and 40591-V08H3).
 
 All proteins were diluted in kinetics buffer (0.1% wt/vol BSA, 0.02% Tween-20 in 1× PBS). Sensors were equilibrated in kinetics buffer for 10 min at room temperature preceding data acquisition, and experiments were performed at 30℃. Prior to ligand load, a baseline level was established for 60 s. hACE2 was loaded onto the sensor at 2.5 μg/mL for 180 s, followed by a sensor wash (180 s) and a second baseline establishment (60 s) in kinetics buffer. Analyte in concentrations ranging from 200 nM to 6.25 nM was associated for 240 s and dissociated for 240 s. To determine KD values for each variant, a reference sensor with loaded ligand, but no analyte was subtracted from the data before fitting. Data was fit using a 2:1 heterogeneous ligand model from association and dissociation rates. The analysis was carried out with Octet ForteBio Analysis 9.0 software. Using a 2:1 model, two KDs were obtained. The higher affinity KDs are consistent with previously published values, and the second KD values may represent a small amount of non-specific binding.
 
-## Protein expression of ACE2 and Spike variants in human cells
+### Protein expression of ACE2 and Spike variants in human cells
 
 HEK293FT cells were transiently transfected with equal amounts of Spike or ACE2 vectors using PEI. Cells were collected 18–24 hr post-transfection with TrypLE (Thermo), washed twice with PBS (Caisson Labs), and lysed with TNE buffer (10 mM Tris–HCl, pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Nonidet P-40) supplemented with protease inhibitor cocktail (Bimake B14001) for 1 hr on a rotator at 4°C. Cells lysates were spun for 10 min at 10,000 g at 4°C, and protein concentration was determined using the BCA assay (Thermo 23227). Whole-cell lysates (10 μg protein per sample) or 5 μL of 100× concentrated Spike-pseudotyped lentiviral particles were denatured in Tris–glycine sodium dodecyl sulfate (SDS) sample buffer (Thermo LC2676) and loaded on a Novex 4–12% Tris–glycine gel (Thermo XP04122BOX). PageRuler pre-stained protein ladder (Thermo 26616) was used to determine the protein size. The gel was run in 1× Tris–glycine–SDS buffer (IBI Scientific IBI01160) for about 120 min at 120 V. Protein transfer was performed using nitrocellulose membrane (BioRad 1620112) using prechilled 1× Tris–glycine transfer buffer (Fisher LC3675) with 20% methanol for 100 min at 100 V. Membranes were blocked with 5% skim milk dissolved in PBST (1× PBS + 1% Tween 20) at room temperature for 1 hr. Primary antibody incubations were performed overnight at 4°C using the following antibodies: rabbit anti-GAPDH 14C10 (RRID: AB_561053) (0.1 μg/mL, Cell Signaling 2118S), rabbit p24 monoclonal antibody clone 002, which recognizes lentiviral capsid protein (1 μg/mL, Sino Biological 11695-V08E), and mouse anti-rhodopsin antibody clone 1D4 (RRID:AB_10010560) (1 μg/mL, Novus NBP1-47602), which recognizes the C9-tag added to the Spike proteins. Following the primary antibody, the blots were incubated with IRDye 680RD donkey anti-rabbit (AB_10954442) (0.2 μg/mL, LI-COR 926–68073) or with IRDye 800CW donkey anti-mouse (AB_621847) (0.2 μg/mL, LI-COR 926–32212) for 1 hr at room temperature. The blots were imaged using Odyssey CLx (LI-COR). Band intensity quantification was performed by first converting Odyssey multichannel TIFFs into 16-bit grayscale image (Fiji) and the then selecting lanes and bands in ImageLab 6.1 (BioRad). In ImageLab, background subtraction was applied uniformly across all lanes on the same gel.
 
-## Epitope prediction using NetMHC
+### Epitope prediction using NetMHC
 
 Since 9mer epitopes are most commonly presented by MHC receptors (Sarkizova et al., 2020), we constructed all possible 9mers surrounding the D/G 614 site in the Spike protein. We predicted binding affinities for five common HLA-A alleles and seven common HLA-B alleles using the NetMHC 4.0 prediction webserver (Andreatta and Nielsen, 2016) (http://www.cbs.dtu.dk/services/NetMHC/). For each peptide, we computed the difference in predicted affinity between the D614 and G614 variant using R/RStudio and visualized them using the pheatmap R package.
 
-## SARS-CoV-2 trans-complementation assay
+### SARS-CoV-2 trans-complementation assay
 
 SARS-related coronavirus 2 (SARS-CoV-2), Isolate USA-WA1/2020 (NR-52281) was deposited by the Center for Disease Control and Prevention and obtained through BEI Resources, NIAID, NIH. SARS-CoV-2 was propagated in Vero E6 cells in DMEM supplemented with 2% FBS, 4.5 g/L d-glucose, 4 mM l-glutamine, 10 mM non-essential amino acids, 1 mM sodium pyruvate, and 10 mM HEPES.
 
 For the trans-complementation assay, we co-transfected pcDNA3.1-SARS2-Spike or pcDNA3.1-SARS2-SpikeD614G (see above) with pcDNA3.1-ACE2 (Addgene 1786) at a 1:1 ratio (Spike: ACE2) using Lipofectamine 2000 (Thermo) as per the manufacturer’s protocol. At specified time points (12, 18, or 24 hr post-infection), cells were fixed using 5% formaldehyde and immunostained for nucleocapsid (N) protein (clone 1C7C7, Center for Therapeutic Antibody Discovery at the Icahn School of Medicine at Mount Sinai) with DAPI to stain nuclei. Full wells were imaged and quantified for SARS-CoV-2-infected cells using a Celigo imaging cytometer (Nexcelom Biosciences). All infections with SARS-CoV-2 were performed with six biological replicates.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis was performed using R/Rstudio 3.6.1 and GraphPad Prism 8 (GraphPad Software Inc). Specific statistical analysis methods are described in the figure legends where results are presented. Values were considered statistically significant for p-values below 0.05.

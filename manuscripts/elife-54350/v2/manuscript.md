@@ -27,7 +27,7 @@ Here we comprehensively examined the diversity of inhibitory neurons in the VCN 
 
 ## Results
 
-## Cell counts and soma size
+### Cell counts and soma size
 
 We used a well-characterized GlyT2-GFP transgenic mouse (Zeilhofer et al., 2005; Albrecht et al., 2014; Moore and Trussell, 2017) in order to study the prevalence of glycinergic cells in the VCN. The neuronal glycine transporter, GlyT2, is a reliable marker of glycinergic cells, and GFP is selectively expressed in >90% of glycinergic cells in the CN. To visualize all the glycinergic cells, we optically cleared whole CN (450–500 μm) using CUBIC-mount (Lee et al., 2016). Next, we imaged the entire CN, lateral to medial (Figure 1). Figure 1A shows a series of 50 μm thick image stacks of CN, lateral to medial. Not surprisingly, we observed a dense population of glycinergic cells in the DCN as described in previous studies (Oertel and Wu, 1989; Zhang and Oertel, 1993b; Zhang and Oertel, 1993a; Kuo et al., 2012; Apostolides and Trussell, 2014). Also apparent were thick tracts of glycinergic fibers that entered the dorsal part of VCN, presumably projections of the glycinergic tuberculoventral neurons (vertical cells) in the DCN (Figure 1A). There was an obvious lack of glycinergic cells in the octopus cell region of the posterior VCN, consistent with previous studies (Wickesberg and Oertel, 1988; Wickesberg et al., 1991). However, we found a large population of glycinergic cells distributed across the rest of the VCN. To obtain a global view of their distribution, the images were stitched and combined to create a 3D image of the entire CN (Figure 1Bi, ii). The high density of glycinergic cells throughout VCN was surprising, because D-stellate cells are thought to be sparse, and the only other known glycinergic cells are Golgi cells, which are present mainly in the granule cell layer overlying VCN (Ferragamo et al., 1998b; Irie et al., 2006; Yaeger and Trussell, 2015).
 
@@ -57,7 +57,7 @@ This conclusion was further probed by examining the distributions of small glyci
 
 **Figure 4.:** (A) 150 μm thick image stacks of optically cleared VCN from SST-tdTomato::GlyT2-GFP mouse showing GFP (i), tdTomato expressing cells (ii) and merge (iii). (B) An example area from VCN (inset, Aiii) showing large GFP (i) and tdTomato (ii) expressing cells colocalize (iii). (Biv-v) Only the double-labeled cells are shown and surfaces were rendered to measure soma size. (C) Soma size distribution of all the glycinergic GFP positive neurons. Inset, soma volumes of double-labeled cells (blue) compared to all GFP positive cells (green). Double-labeled cells were significantly larger than GFP-only cells (average soma volume, GFP only, 1826.55 ± 12.93 μm3 versus D-stellate cells, 4289.50 ± 98.29 μm3, n = 2 VCNs, two mice). However, numerically, the larger cells types composed only about 12% of all glycinergic neurons in VCN (GFP only, n = 3250 ± 55 versus. D-stellate cells, n = 380 ± 9). Dashed line shows the average soma size. Source data is available at https://doi.org/10.5061/dryad.69p8cz8xp. The spreadsheet Figure_4-Source_Data_1_cell_volume_SSt.xlsx contains all the raw volume data for the 2 CNs used for the quantitative analyses shown in Figure 4.
 
-## Axon-dendritic arbors of cell types
+### Axon-dendritic arbors of cell types
 
 To further confirm that the small glycinergic cells are a distinct population, we performed individual cell fills by patch clamping GFP-positive neurons with pipettes containing biocytin in the intracellular solution, and reconstructing the filled cells using Neurolucida (Figure 5). Large cells exhibited typical radiate morphology which have been described previously for D-stellate cells in the VCN (Oertel et al., 1990; Campagnola and Manis, 2014; Xie and Manis, 2014) (n = 6) (Figure 5A), and henceforth will be referred to as D-stellate cells. Unlike D-stellate cells, the small glycinergic cells had restricted axonal and dendritic arbors (n = 17) (Figure 5B). The spread of the axonal-dendritic field was quantified by measuring the longest and shortest axis of the reconstructed structures. The small glycinergic cells had significantly restricted branched processes compared with D-stellate cells (longest axis: D-stellate cells, 619.42 ± 45.78 μm versus small cells, 271.43 ± 26.27 μm, p<0.001, t-test; shorter axis: D-stellate cells, 435.62 ± 1.82 μm, n = 6 cells versus small cells, 148.60 ± 12.03 μm, n = 17, p<0.001, t-test) (Figure 5D). We also measured the volume and surface area under the axonal-dendritic field assessed by its convex hull, and found that the field encompassed by D-stellate cell processes had a larger volume and surface area than that of small glycinergic cells (Figure 5E and F). Moreover, the small cells showed significantly higher axonal-dendritic arborization closer to their somata as compared with large D-stellate cells (Sholl analysis, p=0.006, K-S test) (Figure 5F). Our morphological data indicate that smaller glycinergic cells are anatomically distinct from D-stellate cell types and provide further evidence that small glycinergic cells are a distinct class of inhibitory neuron. Finally, we compared the morphology of small glycinergic cells with excitatory T-stellate (planar) cells, defined as non-GFP containing, dendritic neurons with chopper firing properties (Figure 5C). We found that small glycinergic cells have a similar spread of the axonal-dendritic field in the longest axis but significantly larger spread in the shortest axis (longest axis: T-stellate cells, 237.03 ± 16.67 μm versus small cells, 271.43 ± 26.27 μm, p=0.33, t-test; shorter axis: T-stellate cells, 79.73 ± 13.68 μm versus small cells, 148.60 ± 12.03 μm, p<0.005, t-test) (Figure 5D). This suggests that small glycinergic cells are less planar than T-stellate cells. We also found that small glycinergic cells had more profusely branched arbors near their soma whereas T-stellate cells exhibited more branching at the end of dendrites, which is consistent with the previous studies (Rhode et al., 1983a; Oertel et al., 1990; Figure 5G, Sholl analysis, p<0.05, K-S test). These data confirm that small glycinergic cells are morphologically a distinct class of neuron in the VCN.
 
@@ -65,9 +65,83 @@ To further confirm that the small glycinergic cells are a distinct population, w
 
 **Figure 5.:** Biocytin filled neurons were reconstructed using Neurolucida. (A) D-stellate cells (large cells) exhibited typical radiate morphology whereas (B) the smaller glycinergic cells show restricted axonal and dendritic arbors. (C) T-stellate cells show tuffed dendritic arbors and occupy regions parallel to the isofrequency bands. (D) Spread of axonal-dendritic arbors was quantified by measuring the longest and shortest axis of the reconstructed structures. Smaller glycinergic cells had significantly restricted axonal-dendritic process compared with D-stellate cells (longest axis: D-stellate cells, 619.42 ± 45.78 μm versus. small cells, 271.43 ± 26.27 μm, p<0.001, t-test; shorter axis: D-stellate cells, 435.62 ± 1.82 μm, n = 6 cells versus small cells, 148.60 ± 12.03 μm, n = 17, p<0.001, t-test). In comparison to T-stellate cells, small glycinergic cells had similar spread of the axonal-dendritic field in the longest axis but occupied a significantly larger region in the shortest axis longest axis: T-stellate cells, 237.03 ± 16.67 μm versus small cells, 271.43 ± 26.27 μm, p<0.33, t-test; shorter axis: T-stellate cells, 79.73 ± 13.68 μm versus small cells, 148.60 ± 12.03 μm, p<0.005, t-test. D- and T-stellate cells had significantly larger volume (volume: D-stellate cells, 4.8 ± 1.2×106 μm3 versus small cells, 2.02 ± 0.69×106 μm3, p<0.001, t-test) (E) and surface area (D-stellate cells, 20.91 ± 1.07×103 μm2 versus small cells, 9.83 ± 2.71 × 103 μm2, p<0.01, t-test) (F) compared with the small glycinergic cells. (F) Sholl analysis showing that small cells had significantly higher branching closer to soma compared with D- and T-stellate cells (Sholl analysis, p<0.05, K-S test).
 
-## Intrinsic properties
+### Intrinsic properties
 
 Next, we studied the intrinsic electrical properties of the D-stellate and the small glycinergic cells in the VCN by targeting GFP positive cells from GlyT2-GFP mice for whole-cell recordings. D-stellate cells were identified based on their large soma size and dendrites, while the small cells had obviously smaller somata and less distinct dendrites. Representative responses to depolarizing and hyperpolarizing current injections are shown in Figure 6A,B. All cells showed sustained firing responses at weak-to-moderate depolarizing current steps; however, their responses to strong depolarizing current injections were more diverse (Figure 6A–B, top), particularly as regards the maintenance of spike amplitude during the response. Measurements of membrane properties, action potential shape, and firing properties were collected for all recorded glycinergic cells (Table 1). We used three parameters (action potential half-width, after-hyperpolarization [AHP] decay, and input resistance; see Materials and methods; Figure 6C–E, inset Figure 6F) to classify glycinergic cells into different clusters in order to probe for distinct inhibitory cell types (Figure 6F,G). The elbow method for estimating the optimal number of clusters (Figure 6G, inset) indicated the presence of two to three groupings of these cells. We then used K-means cluster analysis to divide the population of all the glycinergic cells into two groups (Figure 6F). Cluster analysis based on electrophysiology accurately separated 91.7% (11/12) of visually-identified D-stellate cells (red circles) from small cells (blue). However, the parameters used to classify the small cells were widely distributed which suggests there may be further subtypes among the small glycinergic cells. When we used a K-value of 3, the ‘small’ cells were further classified into two groups (Figure 6G, green versus blue circles). The high accuracy of the cluster method for classifying glycinergic cells suggest that small cell types may be solely identified based on the physiological membrane properties of the cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54350/elife-54350-fig6-v2.jpg)
+
+**Figure 6.:** Representative examples of D-stellate cells (A) and small glycinergic cell types (B) responding to current injections (+500 pA, +100 pA, and −300 pA). All cells showed sustained firing responses to +100 pA current injections. Small cells exhibited diverse spike amplitude adaptation in responses to strong (+500 pA) current steps (top, Bi-ii). (C–E) Histogram of AP halfwidth, AHP decay, and Rin (F) Classification of glycinergic cells based on the AP halfwidth, AHP decay, and Rin. The elbow method was used to calculate the optimal number of clusters (Panel 6G, inset [labels, Within cluster sum of squares (WCSS)]). Glycinergic cells are group into clusters based on K-means cluster analysis (K = 2) (red: D-stellate cells, blue: small cells, color gradient: front [dark] to back [light]). (G) K = 3 resulted in further classification of small cells into two sub clusters (blue and green). Arrow points to the D-stellate cell included in small cells when K = 3, i and ii represents small cells in blue and green clusters, respectively. Source data is available at https://doi.org/10.5061/dryad.69p8cz8xp. The spreadsheet Figure_6-Source_Data_1_intrinsic_properties.xlsx contains all the raw data used for the quantitative analyses shown in Figure 6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54350/elife-54350-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) AP halfwidth: action potential half width (response, average = 0.38 ± 0.03, n = 11 versus no response = 0.49 ± 0.06, n = 10, p=0.1264, t-test). (B) AHP decay: decay time of action potential afterhyperpolarization (response, average = 2.48 ± 0.63 versus no response = 1.82 ± 0.79, p=0.52). (C) Threshold: action potential threshold (response, average = −44.15 ± 1.16 versus no response = −43.24 ± 1.01, p=0.56). (D) AP AHP latency: action potential hyperpolarization latency from spike peak (response, average = 1.31 ± 0.24 versus no response = 2.27 ± 0.47, p=0.04). (E) Overshoot: peak of action potential positive to 0 mV (response, average = 20.36 ± 3.35 versus no response = 18.69 ± 4.33, p=0.76). (F) Undershoot: Peak of hyperpolarization from threshold (response, average = −17.63 ± 1.01 versus no response = −15.21 ± 1.39, p=0.17). (G) AP height: action potential amplitude from threshold to peak (response, average = 64.50 ± 2.86 versus no response = 61.93 ± 3.88, p=0.30).
+
+**Table 1.**
+ Membrane properties of the glycinergic cells in the VCN.Rin: Input resistance; AP height: action potential amplitude from threshold to peak; AP halfwidth: action potential width at half amplitude, measured between threshold and peak; AP AHP decay: voltage measured between peak of undershoot to Vm 1 ms later; AP AHP latency: action potential hyperpolarization latency; Rate of rise: rate of rise of action potential; Threshold: action potential threshold; Overshoot: peak of action potential from 0 mV; Undershoot: Peak of hyperpolarization from baseline; Firing rate: number of spikes/s. See the source data for Figure 6 available at https://doi.org/10.5061/dryad.69p8cz8xp.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>D-stellate</th>
+      <th>Small cell</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rin (MOhm)</td>
+      <td>114.87 ± 12.77</td>
+      <td>305.54 ± 16.93</td>
+    </tr>
+    <tr>
+      <td>AP height (mV)</td>
+      <td>70.14 ± 2.59</td>
+      <td>63.92 ± 1.60</td>
+    </tr>
+    <tr>
+      <td>AP halfwidth (ms)</td>
+      <td>0.31 ± 0.02</td>
+      <td>0.55 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>AP AHP (mV)</td>
+      <td>4.18 ± 0.62</td>
+      <td>1.55 ± 0.20</td>
+    </tr>
+    <tr>
+      <td>AP AHP latency (ms)</td>
+      <td>0.87 ± 0.10</td>
+      <td>1.81 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>Rate of rise (V/s)</td>
+      <td>317.67 ± 17.85</td>
+      <td>288.06 ± 14.71</td>
+    </tr>
+    <tr>
+      <td>Threshold (mV)</td>
+      <td>−45.57 ± 1.18</td>
+      <td>−43.46 ± 0.49</td>
+    </tr>
+    <tr>
+      <td>Overshoot (mV)</td>
+      <td>24.57 ± 3.05</td>
+      <td>20.46 ± 1.59</td>
+    </tr>
+    <tr>
+      <td>Undershoot (mV)</td>
+      <td>−17.79 ± 1.16</td>
+      <td>−14.03 ± 0.59</td>
+    </tr>
+    <tr>
+      <td>Firing rate (sp/s)</td>
+      <td>213.52 ± 17.31</td>
+      <td>225.72 ± 14.94</td>
+    </tr>
+  </tbody>
+</table>
 
 Many cells in the VCN, such as T-stellate cells (an excitatory principal neuron), exhibit ‘chopping’ responses to acoustic stimuli, such that the peristimulus time histograms of spiking show initial peaks of activity at regular intervals unrelated to the phase of the sound stimulus (Rhode et al., 1983b; Young et al., 1988; Blackburn and Sachs, 1989; Smith and Rhode, 1989; Oertel et al., 2011). No definitive in vivo recordings of small inhibitory cells in VCN have been reported. To test whether small cells have the capacity to generate such chopping responses, we recorded from the cells in vitro and applied repeated long depolarizing current steps (200 pA) (Figure 7A). The resulting peristimulus time histograms exhibited features that closely resembled in vivo ‘sustained’ chopper responses—with well-timed onset action potentials, and subsequent spikes which increasingly accumulated more temporal jitter throughout the duration of the current step, despite little to no adaptation in firing rate (Figure 7B–D, n = 26). This feature raises the possibility that these smaller neurons could give acoustic responses like those of principal cells, and possibly be mistaken for such cells in studies in which no other means for cell identification is used.
 
@@ -75,7 +149,7 @@ Many cells in the VCN, such as T-stellate cells (an excitatory principal neuron)
 
 **Figure 7.:** Representative example of a small glycinergic cell responding to +200 pA current injections (A) and electrical stimulation at 200 Hz (E). Raster (B, F), PSTH (C, G), and firing rate (D, H) of cell in A and E, respectively.
 
-## Synaptic connectivity
+### Synaptic connectivity
 
 ANFs are the primary source of excitation to the VCN. However, collaterals of principal cells could in theory provide some local excitation (Cao et al., 2019). To test whether the small cells receive ANF inputs, we electrically stimulated the AN root in the presence of strychnine and gabazine to block inhibitory synaptic inputs, and recorded excitatory responses from small GFP-positive cells. Trains of shocks applied to the AN root readily led to postsynaptic spikes that exhibited a chopping pattern similar to that seen with current injection, although often with a period of ‘extra’ spikes after the end of stimulation (Figure 7E–H; 6 of 6 neurons). In voltage clamp, AN root stimulation evoked excitatory postsynaptic currents (EPSCs) that grew in size with the strength of the shocks (Figure 8A), indicating multiple ANF inputs per postsynaptic cell. Varying stimulus strength indicated that each cell receives 3–5 ANF inputs (Figure 8A). The average maximal amplitude of EPSCs evoked with AN root stimulation was 385.7 ± 49.9 pA (n = 22). The EPSCs also showed fast kinetics (τ = 0.80 ± 0.07 ms, half-width = 0.91 ± 0.08 ms, n = 22) with short and consistent synaptic delays of less than 1 ms, consistent with the monosynaptic transmission.
 
@@ -111,7 +185,7 @@ Morphological and electrophysiological features provide an initial platform for 
 
 Although we have identified two major glycinergic interneuron populations, further studies may reveal additional diversity within the groups described in this paper. Our anatomical data show a variety of somatic, dendritic, and axonal morphologies within the L-stellate cell types. Electrophysiologically, L-stellate cell types display heterogeneity in their membrane properties, likely a consequence of diverse ion channel expression. We also found that only a subset of L-stellate cells was sensitive to the cholinergic agonist, carbachol. Previous studies have reported that medial olivocochlear axons may make synaptic contacts with T-stellate cells and small unidentified cells in the VCN (Benson and Brown, 1990; Benson et al., 1996; Fujino and Oertel, 2001; Oertel and Fujino, 2001; Mellott et al., 2011). In addition to major cholinergic projections from the superior olivary complex, a substantial cholinergic input into CN is also reported from the pedunculopontine tegmental nucleus (PPT) and the latero-dorsal tegmental nucleus (LDT) (Mellott et al., 2011; Schofield et al., 2011). Cholinergic inputs to CN have been proposed to improve frequency selectivity, improve sound detection, or improve speech in noisy backgrounds (Winslow and Sachs, 1987; Winslow and Sachs, 1988; Kawase et al., 1993; Fujino and Oertel, 2001; Mulders et al., 2002). As some L-stellate cells were activated by bath application of carbachol, this suggests that the L-stellate cells might also receive inputs from cholinergic sources. L-cells may provide feedforward inhibition to control the excitability of T-stellate cells and bushy cells thereby regulating the signal detection in a noisy background. Single-cell transcriptomic analysis will likely allow further definition of subpopulations of glycinergic interneurons in the VCN (Jiang et al., 2015; Cadwell et al., 2016; Fuzik et al., 2016; Shrestha et al., 2018; Sun et al., 2018).
 
-## Local inhibitory inputs in the VCN
+### Local inhibitory inputs in the VCN
 
 In comparison to D-stellate cells, L-stellate cells had smaller soma sizes and exhibited tightly branched axons and dendrites. These restricted dendritic and axonal processes suggest that L-stellate cells have narrow frequency-band receptive fields. This morphology is very different from the D-stellate cell, which has been termed the ‘wide-band inhibitor’ (Nelken and Young, 1994; Arnott et al., 2004). The potential for narrow band excitation of the L-stellate cells could provide a means for inhibition to excitatory cells in nearby isofrequency lamina in VCN. Indeed, when we activated the smaller L-stellate cells with carbachol, we recorded IPSCs from both bushy and T-stellate cells. This provides evidence that L-stellate cells could in principle mediate side-band inhibition. Inhibition has been proposed to improve tuning properties and temporal precision, and stabilizes neuronal firing responses to acoustic inputs (Gai and Carney, 2008; Keine and Rübsamen, 2015). Indeed, as the D-stellate cells are numerically a minority of the glycinergic VCN cell population compared to the L-stellate cells, we propose that the majority of local inhibitory inputs onto excitatory neurons could originate from L-stellate cells.
 
@@ -121,27 +195,254 @@ In addition to local glycinergic sources, VCN receives projecting glycinergic in
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>GlyT2-EGFP, Tg(Slc6a5-EGFP)1Uze</td>
+      <td>MGI, Zeilhofer et al., 2005</td>
+      <td>RRID:MGI:3835459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Sst-IRES-Cre, (Sst(tm2.1(cre)Zjh))</td>
+      <td>MGI and Jackson Laboratory</td>
+      <td>RRID:MGI_4838416 RRID:JAX_013044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa 26, synonyms Ai9(RCL-tdT)</td>
+      <td>Jackson Laboratory PMID:22446880</td>
+      <td>RRID:MGI_3809523 RRID:JAX_007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat# S8753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR-95531 hydrobromide</td>
+      <td>Tocris</td>
+      <td>Cat# 1262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Tocris</td>
+      <td>Cat# 1044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(+)-MK-801 hydrogen maleate</td>
+      <td>Sigma</td>
+      <td>Cat# M107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbachol (carbamoylcholine chloride)</td>
+      <td>Sigma</td>
+      <td>Cat# C4382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# B1592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1020 RRID:AB_10000240</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DsRed (Rabbit polyclonal)</td>
+      <td>Clontech</td>
+      <td>Cat# 632496 RRID:AB_10013483</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Glycine (Rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# Ab139 RRID:AB_90582</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Cy3 (Donkey polyclonal)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat# 711-165-152 RRID:AB_2307443</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken Alexa Fluor 488 (Donkey polyclonal)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat# 703-545-155 RRID:AB_2340375</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit Alexa Fluor 594 (Donkey polyclonal)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat# 711-585-152 RRID:AB_2340621</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrakis (N,N,N′,N′-tetrakis (2-hydroxypropyl) ethylenediamine)</td>
+      <td>Sigma</td>
+      <td>Cat# 122262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Red Retrobeads</td>
+      <td>LumaFluor. Inc</td>
+      <td>Red Retrobeads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 8</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>Rothman and Silver, 2018; DOI:10.3389</td>
+      <td>RRID:SCR_004186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axograph</td>
+      <td>Axograph</td>
+      <td>RRID:SCR_014284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Black</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institute of Health, ImageJ.net</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>Fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>Serif</td>
+      <td>RRID:SCR_016952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the Oregon Health and Science University’s Institutional Animal Care and Use Committee. GlyT2-GFP mice (Zeilhofer et al., 2005) and somatostatin (SST)-Cre tdTomato::GlyT2-GFP of either sex, postnatal days(P) 17–30 were used in this study. GlyT2-GFP mice were backcrossed into the C57BL/6J and maintained as heterozygous (Roberts et al., 2008). SST-tdTomato::GlyT2-GFP mice were generated as follows: Homozygous SST-IRES-Cre knock-in mice (Jackson Laboratory) were crossed with homozygous Ai9 (RCL-tdTomato) reporter mice (Jackson Laboratory), enabling SST-IRES-Cre-dependent expression of tdTomato. Offspring from the F1 generation (SST-IRES-Cre+/-, Ai9(RCL-tdTomato)+/-) were crossed with homozygous GlyT2-GFP mice, whose offspring will be referred to as SST-tdTomato::GlyT2-GFP. At 5 days postnatal, a fluorescent stereoscope (Leica Microsystems) was used to identify transgenic mice positive for either tdTomato or GFP.
 
-## Brain-slice preparation
+### Brain-slice preparation
 
 Animals were anesthetized with isoflurane and decapitated. The brain was quickly removed and placed into ice-cold sucrose cutting solution. Sucrose solution contained (in mM) 76 NaCl, 26 NaHCO3, 75 sucrose, 1.25 NaH2PO4, 2.5 KCl, 25 glucose, 7 MgCl2, and 0.5 CaCl2, bubbled with 95% O2: 5% CO2 (pH 7.8, 305 mOsm). Parasagittal slices of CN were cut at a slight angle from sagittal, to best preserve a straight projection of the AN (Ngodup et al., 2015). The slices of CN were cut at 220–300 μm in ice-cold sucrose solution on a vibratome (Leica VT1200S or Campden 7000smz-2). Slices were transferred into standard artificial cerebrospinal fluid (ACSF) containing (in mM) 125 NaCl, 26 NaHCO3, 1.25 NaH2PO4, 2.5 KCl, 20 glucose, 1 MgCl2, 1.5 CaCl2, 2 Na-pyruvate, and 0.4 Na L-ascorbate, bubbled with 95% O2:5% CO2 (pH 7.4, 300–310 mOsm). Slices recovered at 34°C for 40 min and were maintained at room temperature until recording.
 
-## Electrophysiology
+### Electrophysiology
 
 Slices were transferred to a recording chamber and perfused with standard ACSF (~34°C). Cells were viewed using an Olympus BX51WI microscope with a 60× objective, equipped with an infrared Dodt contrast, CCD camera (Retiga 2000R, QImaging), and fluorescence optics. In slices from GlyT2-GFP, glycinergic cells in the VCN were identified by their GFP expression. Recording pipettes were pulled from 1.5 mm OD, 0.84 mm ID borosilicate glass (WPI-1B150-F) to a resistance of 2–4 MΩ using a horizontal puller (Sutter Instrument P97). The internal recording solution contained in (mM) 113 K gluconate, 2.75 MgCl2, 1.75 MgSO4, 0.1 EGTA, 14 Tris2-phosphocreatine, 4 Na2-ATP, 0.3 Tris-GTP, 9 HEPES with pH adjusted to 7.25 with KOH, mOsm adjusted to 290 with sucrose (ECl−84 mV). For a few voltage-clamp experiments, we used an internal solution containing (in mM) 115 CsCl, 1 MgCl2, 4 Mg-ATP, 0.4 Tris-GTP, 5 EGTA, 14 Tris2-phosphocreatine, 4 Na2-ATP, 10 HEPES, 3 QX-314 (pH 7.2, 290 mOsm). Whole cell patch-clamp recordings were made using a Multiclamp 700B amplifier and pCLAMP 10 software (Molecular Devices). Signals were digitized at 20–40 kHz and filtered at 10 kHz by Digidata 1440A (Molecular Devices). In voltage clamp, cells were held at −70 mV, with access resistance 5‒20 MΩ compensated to 50–60%. In the current clamp, the resting membrane potential was maintained at −60 to −70 mV with bias current. To isolate excitatory postsynaptic currents, inhibitory synaptic blockers SR-95531 (10 μM) and strychnine (0.5 μM) were added to the bath solution whereas to isolate inhibitory currents, excitatory synaptic blockers NBQX (10 μM) and MK-801 (5 μM) were added to the bath solution. The AN root was stimulated with brief voltage pulses (100 μs) using a stimulus isolation unit (Iso-Flex, A.M.P.I) via a bipolar microelectrode placed in the nerve root.
 
-## Electrophysiological analysis
+### Electrophysiological analysis
 
 Spike waveforms were analyzed using Igor Pro 8. Threshold was defined as the voltage at 5% of the peak of the spike’s first derivative, measured after subtracting the baseline dV/dt generated by the neuron’s electronic charging. This method was found empirically to identify the visually identified spike ‘onset’ much more reliably than the oft-used peak of the 3rd derivative (Kuo et al., 2012). The latter method, when applied to diverse neurons in our dataset, often failed when the spike had a prominent initial segment ‘hump’ on the rising phase, or when the 3rd derivative was noisy. Spike overshoot was calculated as spike peak voltage relative to zero. Absolute amplitude of the spike was calculated from threshold to peak. Undershoot was the negative-most excursion of voltage, relative to threshold, and AHP latency was the time delay from spike peak to undershoot peak. Spike AHP was an arbitrary definition that measured the difference between voltage at the peak of the undershoot to the voltage one ms later. This time point captured well differences among neurons, since the D-stellate cells, and not the smaller cells, had extremely fast decaying AHPs. Membrane input resistance (Rin) was measured by injecting a small hyperpolarizing current in voltage clamp mode, Rin was calculated offline using Ohm’s law. Average spike rate was calculated in response to depolarizing 500 pA current injections.
 
-## Morphology
+### Morphology
 
 Morphological studies of individual cells were made by including 0.2‒0.4% biocytin (B1592, Molecular Probes) in the recording pipette solution. After loading each cell for 20 min, the recording electrode was slowly retracted, and the slice fixed overnight in 4% (w/v) buffered paraformaldehyde. After fixation, the slices were rinsed in PBS and stored for up to a week at 4°C in PBS until processing for biocytin labeling. To visualize biocytin labeling, the slices were permeabilized in 0.2% Triton X-100 solution (in PBS) for 2 hr at room temperature. Slices were incubated in 0.3% H2O2 for 30 min to quench endogenous peroxidase, rinsed with PBS, incubated in ABC reagent (Vector Laboratories) for 2 hr, rinsed with PBS, and then incubated for 3‒4 min in diaminobenzidine (DAB) solution containing 0.05 M Tris buffer, 10 mg/mL nickel ammonium sulfate, 50 mM imidazole, 1 mg (1 mg/100 μL) DAB, and 0.3% H2O2. Slices were then rinsed, mounted on glass slides, dehydrated in an ascending series of alcohols, delipidized in xylene, and cover slipped with Permount. DAB-stained cells were visualized with a Zeiss Axio Imager M2 using a 40× oil immersion objective and reconstructed using Neurolucida (MBF Bioscience). Analyses of dendritic and axonal processes were made in Neurolucida explorer.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For glycine labeling, mice were deeply anesthetized with isoflurane and perfused transcardially with 0.9% warm saline followed by a fixative containing 2% glutaraldehyde and 1% paraformaldehyde buffered in PBS. Brains were removed and post-fixed for 30‒60 min. Sagittal sections were cut at 50 μm thickness on a vibratome (Leica VT1000S). Slices were rinsed in PBS and then incubated in fresh 1% NaBH4 for 30 min to reduce autofluorescence from glutaraldehyde fixation. Slices were rinsed extensively in PBS.
 
@@ -149,22 +450,22 @@ For colabeling studies of SST-tdTomato and GlyT2-GFP-positive neurons, SST-tdTom
 
 All sections were then blocked in 2% bovine serum albumin (BSA), 2% fish gelatin, and permeabilized in 0.2% Triton X-100 in PBS for 2 hr at room temperature on a 2-D shaker table. Next, the sections were incubated in primary antibody solution containing: primary antibody, 2% BSA, 2% fish gelatin PBS with 0.2% Triton X-100 for 24‒48 hr at 4°C. The sections were then washed three times, 10-mins each, in PBS, and incubated in secondary antibody solution for 2 hr at room temperature or 24‒48 hr at 4°C on a shaker table. The following primary antibodies were used: 1:500 anti-glycine (Ab139, Millipore Sigma), 1:2000 chicken anti-GFP (GFP-1020, Aves Labs), and 1:1000 rabbit anti-DsRed (632496, Clontech). The following secondary antibodies were used: 1:500 Cy3-conjugated donkey anti-rabbit antibody (Jackson Immuno Research Labs), 1:500 donkey anti-chicken conjugated to Alexa Fluor 488 (703-545-155, Jackson Immuno Research Labs), and 1:400 donkey anti-rabbit conjugated to Alexa Fluor 594 (711-585-152, Jackson Immuno Research Labs). Sections were rinsed in PBS three times, 10 min for each rinse, and in a few cases, sections were subsequently incubated in 4% paraformaldehyde in PBS for 1 hr. Sections were then mounted on microscope slides and coverslipped with Fluoromount-G (Southern Biotech). Images were acquired using a Zeiss LSM 780 confocal microscope.
 
-## Thick tissue clearing
+### Thick tissue clearing
 
 Mice were deeply anesthetized with isoflurane, then perfused transcardially with 0.9% warm saline followed by 4% paraformaldehyde buffered in PBS. Brains were removed and post-fixed overnight at 4°C. The entire CN (450–500 μm) was cut from the brainstem using a vibratome (Leica VT1000S). Because the CN sits at the lateral edge of the brainstem, only a single cut was required to prepare the specimen. Samples were washed in 0.1 M PBS before clearing for 72 hr at room temperature on a shaker table with an accelerated ‘clear unobstructed brain imaging cocktail’ (CUBIC)-mount solution (Lee et al., 2016) containing sucrose (50%, w/v), urea (25%, w/v), and N,N,N′,N′-tetrakis (2-hydroxypropyl) ethylenediamine (25%, w/v) dissolved in 30 mL of dH2O. Once each sample was cleared and almost transparent, it was then mounted on a glass slide with 0.5 mm deep silicone spacers (EMS) in CUBIC-mount. The images were acquired within 24 hr to reduce volume changes in CUBIC-mount (10–20% increase in volume after incubation). The samples were imaged using a Zeiss LSM880 with Airyscan microscope with a 25× objective. Tiles and z-stack of whole CN were imaged at 5 μm step size with the exception of one sample where images were obtained at 2 μm step size. Images were post-processed and individual tiles were stitched together using Zeiss Zen Black software. Analysis of cell count and soma volume were quantified using Imaris software (Bitplane 12.1). For optimal processing of large file sizes, files were separated into 3–4 smaller files each containing (30 GB)~150 μm of CN for faster processing. The image stacks were further processed for background correction and normalization in Imaris. VCN was selected for quantification by drawing regions of interest around the VCN followed by applying a mask outside the region of interest. The dorsal border of the VCN was defined by the granule cell lamina, and the medial border by the absence of glycinergic somata (Muniak et al., 2013). For cell count quantification, we used the built-in ‘spot detection’ algorithm in Imaris in which the program places a ‘spot’ on the soma of each cell. The spots are used for counting of GFP positive cells in the VCN. Automatically detected spots were verified by the eye and corrected manually. To test the validity of the automated spot function, certain regions of VCN were manually counted and compared against the spot function. The spot function detected more than 95% of all cells present in that area. For volume measurements, we used the in-built ‘surface’ rendering function in Imaris. The program rendered 3D surfaces on the soma of GFP positive cells. Rendered surfaces were used to extract the volume statistics. Surfaces were also verified and corrected manually.
 
-## Colocalization assay
+### Colocalization assay
 
 For colocalization analysis of tdTomato with GFP in the VCN, images were obtained from CUBIC-cleared VCN of SST-tdTomato::GlyT2-GFP transgenic mice. Images were acquired at 5 μm steps with Zeiss LSM880 with Airyscan as described above. Images were post-processed and stitched using Zeiss Zen Black software. Images were analyzed using the ‘ImarisColoc’ function in Imaris. 150 μm thickness of VCN was processed separately. ImarisColoc function allows to process the overlap between the two-color channels in an image. Minimum threshold was selected for the two-color channels. A new channel was generated that only contained colocalized voxels. Next, we used the surface rendering program, which turns voxels into solid objects, which were used to measure the volumes on double-labeled cells.
 
-## Retrobead injections
+### Retrobead injections
 
 GlyT2-GFP mice were anesthetized with isoflurane and placed in a stereotaxic frame (David Kopf). Animal temperature was maintained near 37°C with a heating pad (T/pump Gaymar). The scalp was retracted, a portion of the skull above the left cerebellum was opened. VCN was located by stereotactic coordinates starting from the surface junction point of the inferior colliculus, cerebellar lobule IV-V, and simple lobule (0.7 mm lateral, 0.95 mm rostral, 4 mm depth). Glass capillaries (Wire Trol II, Drummond Scientific) were pulled on a horizontal puller (P-97, Sutter) and then beveled using a diamond lapping disc (0.5 μm grit, 3M DLF4XN_56611X) to an inside diameter of 20‒30 μm (Balmer and Trussell, 2019). Glass capillaries were advanced into the VCN with a microdrive (IVM-500, Scientifica) at a rate of 10 μm/s. 50 ‒100 nL of red retrobeads (LumaFluor Inc) was injected using a single axis manipulator (MO-10, Narishige) and pipette vice (Ronal). 5 min waiting periods were allowed before and after injections. The skin was sutured and mice were allowed to recover for 5‒6 days. After recovery, mice were deeply anesthetized with isoflurane and then perfused transcardially with 0.9% saline followed by 4% paraformaldehyde buffered in PBS. Brains were removed and post-fixed overnight at 4°C. Coronal sections were cut at 50 μm thickness on a vibratome (Leica VT1000S). Confocal images of the sections were acquired using a Zeiss LSM 780 confocal microscope. Images were analyzed using ImageJ.
 
-## Pharmacology
+### Pharmacology
 
 All drugs in the slice experiments were bath applied. Receptor antagonists used in this study included: NBQX (AMPA receptors: Sigma), MK-801 (NMDA receptors; Sigma), SR-95531 (GABAAR; Tocris), strychnine (glycine receptors; Sigma). Acetylcholine receptors were activated using the non-selective cholinergic agonist, carbamoylcholine chloride (carbachol) (Sigma).
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
 Electrophysiological data were analyzed using pClamp 10.4 software (Molecular Devices), Axograph, or IGOR Pro v6.3 or v8 (WaveMetrics) and NeuroMatic (Rothman and Silver, 2018). Figures were made using IGOR Pro, Affinity Designer, and Adobe Illustrator. Statistics were performed in IGOR Pro, Axograph, Python, Microsoft Excel, or Prism (GraphPad). For statistical analysis, groups were compared with paired or unpaired t-test. Cluster analysis was performed using sklearn.cluster.KMeans in Python and figures were made using matplotlib.pyplot. Error bars are represented as mean ± SEM unless otherwise stated.

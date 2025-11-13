@@ -33,31 +33,63 @@ To gain mechanistic insight into how UPF1 impinges upon the translation machiner
 
 ## Results
 
-## Decay fragments in ATPase-deficient UPF1 mutants derive downstream of the premature stop codon
+### Decay fragments in ATPase-deficient UPF1 mutants derive downstream of the premature stop codon
 
 We have shown previously that yeast cells expressing ATPase-deficient UPF1 (from the UPF1 DE572AA mutant allele) accumulate 3’ RNA decay fragments arising from nonsense-containing mRNA whose size is dependent upon and coincident with the position of the PTC (Serdar et al., 2016). The requirement for mRNA translation in fragment formation and their co-sedimentation with 80S monosomes established an association between these RNA intermediates and ribosomes, and supported the conclusion that ATP hydrolysis by UPF1 was required for efficient translation termination at premature stop codons (Serdar et al., 2016). To better understand the nature of this functional interaction between the core NMD factor and premature terminating ribosomes, we employed primer extension analysis to identify the 5’ terminus of the 3’ RNA decay fragments. Characterization of products derived from GFP reporter mRNA harboring a PTC at codon position 125 (i.e. GFPPTC125 mRNA) on high-resolution polyacrylamide gels revealed cDNA corresponding to full-length mRNA in both wild type and UPF1 ATPase mutants (Figure 1A, lane 1 and 2, respectively; FL). Additional shorter cDNA products were detected for UPF1 DE572AA mutant cells where 3’ RNA decay intermediates accumulate but not from wild-type cells. Strikingly, mapping of the termini of these shorter species revealed 5’ ends corresponding to positions 17 and 20 nucleotides downstream of the UAA premature termination codon (Figure 1A, +17 and +20). Based on our earlier observation that 3’ RNA decay fragments accrue as a result of a block in 5’ → 3’ exonucleolytic digestion catalyzed by XRN1 (Serdar et al., 2016), these data indicate that the impediment to complete degradation of the nonsense-containing mRNA is located downstream of the site of premature translation termination.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig1-v1.jpg)
+
+**Figure 1.:** (A) Primer extension analysis of GFPPTC125 mRNA from cells expressing either wild type (WT) or ATPase-deficient UPF1 (UPF1-DE572AA), or depleted for translation termination factor eRF1 (GAL1-SUP45). Full-length cDNAs (FL) and products from RNA decay intermediates are indicated relative to the position of the premature stop codon (UAA, in red). (B) Schematic representation of the predicted sites of ribosome stalling in eRF1-depleted cells (top) and cells expressing ATPase-deficient UPF1 (bottom).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot analysis of 3HA-SUP45 levels over time after inhibition of transcription (shift to growth in glucose). Protein levels relative to time zero and normalized to PAB1 shown. (B) Northern blot analysis of GFPPTC125 mRNA in wild type (WT), ATPase-deficient UPF1 mutants (DE), or eRF1-depleted cells (GAL-3HA-SUP45). Full-length mRNA (FL) and 3’ decay fragments (Frag) are indicated. Primer extension analysis of GFPPTC67 mRNA (C) and GFPPTC135 mRNA (D) from ATPase-deficient UPF1 (DE) mutants reveal 5’ ends of decay fragments downstream of the premature stop codon (UAA, in red).
 
 To confirm that the 5’ termini of the decay fragments identified by primer extension are representative of RNA intermediates that accumulate in vivo, primer extension analysis was performed on RNA from cells depleted for eukaryotic release factor 1 (eRF1), a deficiency of which leads to inefficient translation termination due to impaired stop codon recognition and ribosome stalling with the stop codon positioned within the aminoacyl tRNA acceptor site (A site) (Brown et al., 2015). Chromosomally-encoded SUP45 (encoding yeast eRF1) was placed under the control of a galactose-inducible promoter and expression inhibited by the growth of cells in media lacking galactose. Ten hours after inhibition of transcription, eRF1 levels were reduced to ~10% of steady-state (Figure 1—figure supplement 1A) and cells accumulated a 3’ RNA intermediate from GFPPTC125 mRNA comparable to that observed in the UPF1 ATPase mutant (Figure 1—figure supplement 1B). Analysis of primer extension products from these cells revealed full-length GFP cDNA and three additional products with 5’ ends mapping 17, 47, and 77 nucleotides upstream of the PTC (Figure 1A lane 3; GAL1-SUP45). These data are consistent with co-translational decay products accumulating as a consequence of ribosome stalling at the PTC in the absence of eRF1 and protection of 17 nucleotides of RNA upstream of the A site codon (Pelechano et al., 2015). Moreover, the cDNA products at −47 and −77 reveal a periodicity of 30 nucleotides, indicative of a queuing of ribosomes upstream of the one arrested during termination at the PTC (Figure 1B). These data confirm cDNA 5’ termini observed by primer extension analysis represent bona fide ends of 3’ RNA decay fragments accumulating in vivo and highlight that the impediment to complete degradation of the nonsense-containing mRNA is distinct between cells expressing ATPase-deficient UPF1 and those impaired for translation termination due to depletion of eRF1. Further, these findings signify that the failure of UPF1 to hydrolyze ATP does not preclude the function of release factors or cause stalling of ribosomes during translation termination at the PTC.
 
 The observation that 3’ RNA decay fragments in UPF1 ATPase mutants have 5’ ends downstream of the PTC was unanticipated. To confirm that this observation is not specific to GFPPTC125 mRNA, primer extension analysis was performed on RNA from cells expressing two additional nonsense-containing mRNAs that we showed previously also accumulate 3’ decay intermediates in UPF1 DE572AA mutant cells (Serdar et al., 2016). Strikingly, cDNA products from GFP transcripts with a PTC at codon 67 or 135 also revealed decay products with 5’ ends that map downstream of the premature termination codon (Figure 1—figure supplement 1C & D), although RNA intermediates from these reporters display greater heterogeneity and the distance of their 5’ termini from the PTC are different from each other and from GFPPTC125 mRNA.
 
-## 3’ RNA decay intermediates are ribosome bound
+### 3’ RNA decay intermediates are ribosome bound
 
 We previously showed that 3’ RNA decay fragments from PTC-containing mRNA in UPF1 ATPase mutants co-sediment with 80S monosomes in sucrose density gradients (i.e. polyribosome analysis), providing strong evidence that the intermediates were ribosome bound (Serdar et al., 2016). However, in light of our observation that the 5’ ends of these decay products map downstream of the PTC and the protein-coding region for this transcript, we performed affinity purification of ribosomes to determine whether a physical association between the 3’ decay fragments and the translational machinery could be demonstrated. Chromosomally-encoded small ribosomal protein gene RPS13 was epitope-tagged at the protein’s carboxy-terminus as previously described (Min et al., 2013) in cells harboring UPF1 DE572AA and the GFPPTC125 reporter. Immunoprecipitation of RPS13 from these cells recovered predominantly intact ribosomes as demonstrated by the presence of stoichiometric amounts of 25S and 18S ribosomal RNA in the recovered material (Figure 2—figure supplement 1A). Northern blot analysis for GFPPTC125 mRNA demonstrated co-precipitation of both full-length mRNA and the 3’ RNA decay fragment, dependent upon the tagged ribosomal protein and mutant UPF1 (Figure 2A, compare lanes 3, 6, and 9), establishing that the decay intermediate is indeed ribosome bound. Consistent with this result and that the 3’ RNA decay fragments associate with intact 80S ribosomes, immunoprecipitation of epitope-tagged large ribosomal protein RPL16a also co-purified the 3’ degradation intermediate (Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig2-v1.jpg)
+
+**Figure 2.:** (A) Northern blot analysis of GFPPTC125 mRNA co-immunopurified with untagged or epitope-tagged RPS13 (RPS13-HA) in cells deleted for UPF1 (upf1∆) or expressing the ATPase-deficient mutant, UPF1-DE572AA. Samples include input (In), supernatant (Sup) and immunopurified (IP) material; presence of 18S and 25S ribosomal RNA indicated. (B) Primer extension analysis of RNA samples from immunoprecipitation of RPS13-HA tagged ribosomes shown in (A). cDNA products from RNA decay intermediates are indicated relative to the position of the premature stop codon (UAA, in red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Agarose gel electrophoresis and ethidium bromide staining of material co-immunopurified with untagged or epitope-tagged RPS13 (RPS13-HA) in cells deleted for UPF1 (upf1∆) or expressing the ATPase-deficient mutant, UPF1-DE572AA. Samples include input (In), supernatant (Sup) and immunopurified (IP) material; presence of 18S and 25S ribosomal RNA indicated. (B) Agarose gel electrophoresis and ethidium bromide staining (top) and northern blot analysis of GFPPTC125 mRNA (bottom) on material co-immunopurified with epitope-tagged RPL16 (RPL16-ZZ) in cells deleted for UPF1 (∆) or expressing the ATPase-deficient mutant (DE). Full-length mRNA (FL) and 3’ decay fragments (Frag) indicated.
+
 To examine the 5’ termini of ribosome-bound 3’ RNA decay fragments, primer extension analysis was performed on RNA recovered by RPS13 immunopurification. Consistent with our observations using whole-cell RNA isolated from the UPF1 ATPase mutant, cDNA products from the precipitate also mapped 17 and 20 nucleotides downstream of the premature termination codon (Figure 2B, lane 6). These data corroborate our previous findings employing polyribosome analysis (Serdar et al., 2016) and demonstrate that the 3’ RNA decay fragments which accumulate when UPF1 fails to hydrolyze ATP are ribosome bound, thereby establishing that these ribosomes reside on the RNA downstream of the premature stop codon within the mRNA 3’ UTR (Figure 1B).
 
-## Ribosome association downstream of the PTC does not occur via canonical translation events
+### Ribosome association downstream of the PTC does not occur via canonical translation events
 
 To explain how the translation machinery associates with the 3’ RNA decay intermediates in the UPF1 ATPase mutant, we sought to determine whether ribosomes undergo either read through past the PTC or engage in translation re-initiation after termination at the nonsense codon. To facilitate the detection of a protein product translated from the mRNA 3’ UTR, nucleotides downstream of the PTC in GFPPTC125 were substituted with a sequence encoding an in-frame AUG codon and the 8 amino acid FLAG polypeptide (Figure 3A). The resulting GFPPTC125-FLAG reporter was introduced into cells and expression of an internally FLAG-tagged protein of ~27 kDa was monitored by western blot. Notably, translational read-through products were not detected from either wild-type cells or mutants deleted for UPF1 (i.e. upf1Δ), indicating efficient translation termination at the PTC in the presence of an active NMD pathway and in NMD-deficient cells lacking its core factor (Figure 3B, lanes 1 and 2). Moreover, in ATPase-deficient UPF1 mutants where ribosome-bound 3’ RNA decay intermediates accumulate, translation read-through products were also absent (Figure 3B, lane 3). In contrast, a 27 kDa GFP-FLAG peptide accumulated to high levels in control cells depleted for eRF1 (Figure 3B, lane 4), indicative of inefficient termination at the PTC in the absence of this factor and continued translational elongation in-frame beyond the nonsense codon to the natural GFP stop codon. Importantly, the GFPPTC125-FLAG reporter mRNA was confirmed to be efficiently translated in all four cell types as monitored by the accumulation of a truncated GFP polypeptide of 14 kDa (encoded by codons 1–125; Figure 3B, lanes 1–4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig3-v1.jpg)
+
+**Figure 3.:** (A) GFPPTC125 reporters encoding an internal FLAG epitope downstream of the PTC in each translational reading frame. Predicted products for translation of GFP mRNA to the PTC (14 kDa), read-through to the natural stop codon (27 kDa), or from reinitiation upstream of the FLAG sequence (13 kDa) are shown. (B) Western blot analysis for FLAG-tagged protein products (top) or GFP protein (bottom) from wild type (WT), UPF1 deletion cells (upf1Δ), UPF1 ATPase mutants (DE) and eRF1-depleted cells (GAL1-SUP45) expressing the GFPPTC125-FLAG reporters. Red asterisks indicate GFP polypeptides expected for translational read-through at the PTC for the three GFPPTC125-FLAG reporters; size disparity reflect differences in translation termination of these products due to +1 and +2 shifts in the reading frames. (C) Primer extension analysis of GFPPTC125 and GFPPTC125+1 mRNA from WT, upf1Δ, and UPF1 ATPase mutants (DE). GFPPTC125+1 mRNA harbors a single-nucleotide insertion immediately downstream of the PTC. (D) Primer extension analysis of GFPPTC125 mRNA harboring a second stop codon in each translational reading frame beginning either 10, 11, or 12 nucleotides downstream of the PTC.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Primer extension analysis of GFPPTC135 and GFPPTC135+1 mRNA from WT, upf1Δ, and UPF1 ATPase mutants (DE). GFPPTC125+1 mRNA harbors a single-nucleotide insertion immediately downstream of the PTC.
 
 To evaluate whether ribosomes associated with the RNA decay fragments are competent to re-initiate translation with the mRNA 3’ UTR, AUG-FLAG sequences were introduced also into the +1 and +2 frames downstream of the PTC in the GFPPTC125 reporter (Figure 3A). Protein analysis for GFP-FLAG peptides initiated at the downstream AUG in the 0, +1, or +2 reading frame failed to detect expression of a ~ 13 kDa peptide in any of the cells tested (Figure 3B, lanes 1–12), despite efficient translation of the upstream GFP protein coding sequence (Figure 3B). These analyses of GFPPTC125-FLAG reporters indicate that the ribosome-association of 3’ decay fragments observed in UPF1 ATPase mutants is not likely a consequence of translation read through and that 3’ UTR-associated ribosomes are unlikely competent to engage in translational re-initiation.
 
 To assess whether reading frame downstream of the PTC influences the nature of the 3’ decay fragments, a single nucleotide was inserted immediately downstream of the nonsense codon of PTC-containing GFP reporters and the 5’ termini of the decay intermediates in UPF1 DE572AA mutants mapped by primer extension. Critically, cDNA products from GFPPTC125+1 mRNA (Figure 3C, lane 6) and GFPPTC135+1 mRNA (Figure 3—figure supplement 1A, lane 6) were identical to that observed for the parental reporters, indicating that canonical translation and ribosome translocation into the GFP 3’ UTR is also unlikely to account for how ribosomes associate with these 3’ decay fragments. Supporting this notion, introduction of a second premature termination codon in any of the three reading frames beginning either 10, 11, or 12 nucleotides downstream of PTC125 also failed to alter the accumulation or nature of the 5’ termini of GFPPTC125 mRNA decay intermediates (Figure 3D, compare lanes 2 with 3–5).
 
-## 3’ UTR sequence context determines the nature of 3’ RNA decay intermediates
+### 3’ UTR sequence context determines the nature of 3’ RNA decay intermediates
 
 Examination of primer extension products for various nonsense-containing reporter mRNAs revealed that while the 5’ termini of the decay intermediates that accumulate in UPF1 ATPase mutant cells were invariably downstream of the PTC, the number and distance from the translation termination site differed (Figure 1A and Figure 1—figure supplement 1C and D). Given that the 3’ decay fragments accumulate as a result of an impediment in 5’ → 3’ exonucleolytic decay (Serdar et al., 2016), we were interested in understanding the nature of this blockage and how its position is determined for a given mRNA. We observed that the insertion of a single-nucleotide downstream of the PTC did not shift the position of the 5’ ends of the decay intermediates formed from GFPPTC125+1 mRNA suggesting that the impediment is not determined by a fixed distance downstream of the PTC. To evaluate this further, three or six nucleotides were either inserted or deleted downstream of the PTC in the GFPPTC125 reporter and the termini of the decay intermediates mapped by primer extension. Notably, neither lengthening nor shortening the region directly downstream of the PTC by these lengths altered the position of the 5’ ends of the decay intermediates (Figure 4A), demonstrating that the site of the block to 5’ → 3’ decay remained unchanged and that the nucleotide distance from the PTC is not the sole factor in determining how XRN1 progression is impeded.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of nucleotide insertions or deletions immediately downstream of the PTC in GFPPTC125 (top) and primer extension analysis of these reporter mRNAs from ATPase-deficient UPF1 mutants (bottom). (B) GFPPTC67 reporters lacking ~170 nt within an internal 3’ UTR region (GFPPTC67ΔB) or just downstream of the PTC (GFPPTC67ΔA) and primer extension analysis of these RNAs from UPF1 deletion cells (upf1Δ) or cells expressing wild type (WT) or ATPase-deficient UPF1 (DE). (C) Schematic representation of GFPPTC125 reporter mRNA and stalled ribosome whose 30 nt footprint would protect RNA from +17 to +46; predicted positions for the ribosome A, P, and E sites are indicated (top). Primer extension analysis of GFPPTC125 reporters in wild type, UPF1 deletion cells (upf1Δ), or UPF1 ATPase mutants (DE) and various GFPPTC125 mRNAs harboring single-nucleotide inversions (at positions indicated) from ATPase-deficient UPF1 cells. (D) Primer extension analysis of GFPPTC125 mRNAs deleted for nucleotides immediately downstream of PTC in UPF1 ATPase mutants.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Primer extension analysis of GFPPTC125 mRNA harboring a UAA, UAG, or UGA nonsense codon from ATPase-deficient UPF1 mutants. (B) Primer extension analysis of GFPPTC125 mRNA with mutations within GFP codon 124 as indicated.
 
 We next evaluated whether the 5’ terminus of the decay intermediates is dependent exclusively upon the RNA sequence downstream of the PTC. Two GFPPTC67 reporters were generated that harbor identical 5’ UTRs and protein-coding regions but with deletions within their 3’ UTRs that either maintained the sequence directly downstream of the PTC at codon 67 (i.e. GFPPTC67∆B) or juxtaposed sequences that would normally be present downstream of codon 125 (i.e. GFPPTC67∆A; Figure 4B, top). Primer extension products derived from these reporters in ATPase-deficient UPF1 cells revealed that the sequence downstream of the PTC indeed influences the nature and position of the 5’ termini of the decay intermediates. Notably, for GFPPTC67∆B mRNA, which contains a deletion internal in the 3’ UTR region distal to the PTC, the termini of the decay intermediates mirror that of the parental GFPPTC67 mRNA (compare Figure 4B left and Figure 1—figure supplement 1C). In contrast, deletion of a region immediately proximal to the PTC that introduce sequence originally downstream of GFP codon 125 leads to 3’ decay intermediates with termini identical to that of GFPPTC125 (compare Figure 4B right and Figure 1A). These data indicate that the blockage to 5’ → 3’ decay that gives rise to the 5’ ends of the decay intermediates is dependent specifically upon sequence context within the 3’ UTR proximal to the PTC.
 
@@ -67,9 +99,17 @@ To define the particular RNA context involved in promoting the accumulation of 3
 
 Based on our mutational analysis, we anticipated that if a ribosome was indeed stalled downstream of the PTC on our reporter mRNA at a location that would block 5’ → 3’ decay and protect to the +17 position (as illustrated in Figure 4C), that decreasing the distance between the nonsense codon and the stall site sufficiently would result in contact between the stalled ribosome and a ribosome terminating at the PTC, and potentially influence accumulation of the 3’ RNA decay fragments. As we had shown above, deletion of three or six nucleotides just downstream of the PTC did not alter the 5’ termini of the 3’ decay fragments as monitored by primer extension (Figure 4A). By contrast, deletion of nine nucleotides resulted in a modest reduction in the abundance of the decay fragment terminating at the +17 position, and deletion of 12 nucleotides caused complete loss in accumulation of this decay intermediate, while maintaining levels of the +20 fragment (Figure 4D). These data are consistent with the ability of a terminating ribosome with a footprint that extends 10 nt downstream of the last nucleotide of the premature stop codon (Ingolia et al., 2009; Pelechano et al., 2015) to collide with and displace a ribosome stalled downstream of the +17 position. Moreover, as would be expected for this configuration, deletion of greater than 12 nucleotides downstream of the PTC led to loss also of the +20 decay fragment (Figure 4D). Notably, disappearance of the +17 and +20 fragments did not correspond with accumulation of alternative decay fragments with 5’ ends at positions downstream of these sites, suggesting that in this context, the stalled ribosome is displaced upon collision with a terminating ribosome, and does not re-establish a stable interaction with the downstream RNA (Figure 4D). Analysis of our additional PTC-containing GFP reporters that show variability in sequence context and positioning of stall sites (Figure 1—figure supplement 1C and D) will be required to determine the generality of this observation and whether displaced 3’ UTR ribosomes can stall at secondary sites in different contexts.
 
-## UPF1 active site mutations alter termini of 3’ RNA decay fragments
+### UPF1 active site mutations alter termini of 3’ RNA decay fragments
 
 Using biochemically characterized mutants of yeast UPF1, we previously documented that 3’ RNA decay fragments from PTC-containing mRNA accumulate in cells expressing UPF1 which is capable of binding ATP but deficient in catalyzing its hydrolysis (i.e. DE572AA), and not mutants unable to bind ATP (i.e. K436E) (Serdar et al., 2016). To extend this observation, additional UPF1 mutants described in the literature as either deficient in in vitro ATP binding (R639A) or ATP hydrolysis (Q601A) activity (Cheng et al., 2007) were assessed for fragment formation. Consistent with our earlier findings, 3’ RNA decay fragments from GFPPTC125 mRNA were evident only in the ATPase-deficient UPF1 Q601A mutant and not the R639A mutant which has been reported to lack detectable ATP binding activity (Figure 5A). These findings emphasize allele-specific functional differences between UPF1 active site mutants that are likely due to structural changes predicted to occur during the cycle of ATP binding and hydrolysis (Cheng et al., 2007).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig5-v1.jpg)
+
+**Figure 5.:** Northern blot (A, C) and primer extension analysis (D) of GFPPTC125 mRNA from cells expressing either wild-type UPF1 or the indicated mutant allele with substitutions in the ATP binding pocket. Full-length mRNA (FL) and 3’ RNA decay fragments (Frag) are indicated. (B) Crystal structure of UPF1 in complex with RNA and ADP:AlF4- (PDB accession code 2XZL; Chakrabarti et al., 2011). RNA, ADP:AlF4- and Mg2+ are indicated in blue, orange, and cyan, respectively. Amino acid residues labeled green did not give rise to detectable 3’ RNA decay fragments from GFPPTC125 mRNA when mutated; residues in red accumulated 3’ RNA fragments when mutated.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57834/elife-57834-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) Northern blot analysis of CYH2 RNA from cells expressing the indicated allele of UPF1. NMD-sensitive CYH2 pre-mRNA and NMD-insensitive CYH2 mRNA are indicated and NMD activity calculated as the ratio of CYH2 pre-mRNA to mRNA. Experiments were performed in duplicate and representative images and quantifications are shown.
 
 To probe the allele-specific function of UPF1 mutants further, we introduced amino acid substitutions into residues within the binding pocket of UPF1 that by structural analysis are predicted to contact ATP (Chakrabarti et al., 2011; Figure 5B), including several positions that had already been subject to mutational analysis (i.e. D572, E573, and Q601). Substitution of alanine for tyrosine 638, valine 438 or glutamine 413, each of which interact with either the adenine and/or ribose moiety of bound ATP, failed to result in the accumulation of a 3’ RNA decay fragment from GFPPTC125 mRNA (Figure 5C, lanes 5, 11, and 13). Notably, mutation of these positions also did not impair NMD as measured by the ability of cells to reduced steady-state levels of the endogenous substrate, CYH2 pre-mRNA (Figure 5—figure supplement 1B), suggesting that, at least individually, these residues do not play essential roles in UPF1 function (including ATP binding). By contrast, substitution of residues that interact with the gamma phosphate of ATP or coordinate the active site Mg2+ ion and which are expected to contribute in catalysis and/or product release all gave rise to 3’ decay fragments on northern blots similar in size to that observed for the UPF1 DE572AA mutation (i.e. T437A, E769A, R801A, Q766K, and E769K; Figure 5B and Figure 5C, lanes 4, 6, 7, 14, and 15). Interestingly, while the majority of these mutations completely inactivated NMD, substitutions at Q766 and E769 lead to only partial impairment of NMD activity (Figure 5—figure supplement 1B), likely due to incomplete inhibition of ATP hydrolysis in these mutants. We noted that the intensities of 3’ RNA decay fragments differ in these mutants and in comparison to the DE572AA allele; however, these differences did not appear to correlate with NMD activity as measured by CYH2 pre-mRNA levels (Figure 5—figure supplement 1B). Finally, we introduced additional mutations into residues 572/573 and 601 formerly implicated in promoting ATP hydrolysis. Strikingly, in contrast to the alanine substitutions in the DE572AA mutation, introduction of either bulky lysines (DE572KK) or polar asparagine/glutamine (DE572NQ) failed to lead to 3’ RNA fragment accumulation (Figure 5C, lanes 8 and 9), despite these substitutions resulting in complete abrogation of NMD activity (Figure 5—figure supplement 1B). Contrary to this, introduction of lysine at position 601 leads to both a complete loss of NMD activity and a strong accumulation of the 3’ RNA fragment (Figure 5B, lane 10 and Figure 5—figure supplement 1B), similar to what we observe for the mutant in which alanine was introduced at this position (i.e. Q601A).
 
@@ -95,30 +135,159 @@ We provide evidence supporting a model in which ATPase-deficient UPF1 inhibits p
 
 ## Materials and methods
 
-## Yeast culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Wild type (WT)</td>
+      <td>Saccharomyces Genome Deletion Project</td>
+      <td></td>
+      <td>MATa, ura3, leu2, his3, met15</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (S. cerevisiae)</td>
+      <td>upf1Δ</td>
+      <td>Saccharomyces Genome Deletion Project</td>
+      <td></td>
+      <td>MATa, ura3, leu2, his3, met15, upf1::KanMX</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (S. cerevisiae)</td>
+      <td>Rpl16-ZZ</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa, ura3, leu2, his3, met15, upf1::KanMX, RPL16A-ZZ-HIS3</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (S. cerevisiae)</td>
+      <td>Rps13-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa, ura3, leu2, his3, met15, upf1::KanMX, RPS13-HA-HIS3</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (S. cerevisiae)</td>
+      <td>Sup45 depletion strain</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MATa, ura3, leu2, his3, met15, upf1::KanMX, HIS3-PGAL-3HA-SUP45</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>MMS-101P; RRID:AB_2314672</td>
+      <td>WB: (1:5,000) IP: (4 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TAP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>CAB1001; RRID:AB_10709700</td>
+      <td>IP: (4 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pab1 (Mouse monoclonal)</td>
+      <td>Encore Biotechnology</td>
+      <td>MCA-1G1; RRID:AB_2572370</td>
+      <td>WB: (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-HRP (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-2005; RRID:AB_631736</td>
+      <td>WB: (1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or Kit</td>
+      <td>Sequenase 2.0 DNA Sequencing Kit</td>
+      <td>Thermo Fisher</td>
+      <td>70771KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>GFPPTC67</td>
+      <td>This paper</td>
+      <td>pKB673</td>
+      <td>CEN; URA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>GFPPTC125</td>
+      <td>This paper</td>
+      <td>pKB674</td>
+      <td>CEN; URA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>GFPPTC135</td>
+      <td>This paper</td>
+      <td>pKB510</td>
+      <td>CEN; URA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>UPF1-WT</td>
+      <td>PMID:28008922</td>
+      <td>pKB556</td>
+      <td>CEN; URA3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>UPF1-DE572AA</td>
+      <td>PMID:28008922</td>
+      <td>pKB576</td>
+      <td>CEN; LEU2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT primer (GFPPTC125 primer extension analysis)</td>
+      <td>This paper</td>
+      <td>oKB132</td>
+      <td>GGGCAGATTGTGTGGACAGGTAATGGTTGTCTGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast culture
 
 A complete list of yeast strains used in this study is provided in Supplementary file 1. Yeast cultures were grown at 30°C with shaking at 250 RPM in synthetic medium supplemented with appropriate amino acids and either 2% glucose (SD) or 2% galactose and 1% sucrose (SGS).
 
-## Plasmid construction
+### Plasmid construction
 
 Plasmids were generated using standard molecular cloning techniques and by site-directed PCR mutagenesis. A complete list of plasmids and oligonucleotides used in this work is provided in Supplementary file 2 and Supplementary file 3, respectively.
 
-## RNA isolation and northern blot analysis
+### RNA isolation and northern blot analysis
 
 Yeast cultures (50 mL) were grown to mid-log phase and flash frozen on dry ice. Total cellular RNA was isolated from frozen cell pellets using glass bead disruption and phenol-chloroform extraction. 30 µg of RNA was analyzed on 1.4% agarose gels containing 5.92% formaldehyde. RNA was transferred to Hybond–N nylon membrane (GE Healthcare) and UV crosslinked. Membranes were washed in 0.1× SSC/0.1% SDS buffer before probing overnight with radiolabeled oligonucleotides.
 
-## Ribosome affinity purification
+### Ribosome affinity purification
 
 Cells expressing epitope-tagged RPL16A or RPS13 (Supplementary file 1 Table S1) were grown in 250 mL cultures to mid-log phase and flash frozen on dry ice. Cells were lysed at 4°C in polysome lysis buffer (10 mM Tris pH 7.4, 100 mM NaCl, 30 mM MgCl2, 1 mM DTT, 100 µg/mL cycloheximide) using glass bead disruption. Lysates were cleared by centrifugation at 2000 rpm for 2 min. About 10–20 OD600 units of cell lysate were incubated with either α-HA (Covance; MMS-101P) or α-TAP (Thermo Fisher; CAB1001) antibodies for 1 hr at 4°C with gentle rocking. Antibody-bound lysates were then incubated with Protein G Dynabeads (Thermo Fisher; 1004D) for an additional 60 min at 4°C. Beads were washed three times in IXA-100 buffer (50 mM Tris-HCl pH 7.5, 100 mM KCl, 12 mM Mg(OAc), 1 mM DTT, 100 µg/mL cycloheximide). RNA was eluted at 95°C in elution buffer (50 mM Tris-HCl pH 7.5, 0.5% SDS, 50 mM EDTA), phenol-chloroform extracted, and resuspended in LET buffer for northern blot or primer extension analysis.
 
-## Protein isolation and western blot analysis
+### Protein isolation and western blot analysis
 
 Yeast cultures (50 mL) were grown to mid-log phase and flash frozen on dry ice. Cell pellets were heated in 5 M urea for 2 min at 95°C and lysed by mechanical disruption with glass beads by vortexing for 5 min. Solution A (125 mM Tris-HCl, pH 6.8, 2% SDS) was added to lysates and samples vortexed for 1 min followed by heating to 95°C for 2 min. Glass beads and cellular debris were cleared from lysates by centrifugation at 13,200 RPM for 4 min. Equivalent units (OD260) of cell lysate in 1× SDS sample buffer (125 mM Tris-HCl, pH 6.8, 2% SDS, 100 mM DTT, 10% glycerol, 0.05% bromophenol blue) were separated on 7.5% Bis-Tris polyacrylamide gels by electrophoresis in 1× SDS running buffer (25 mM Tris base, 192 mM glycine, 0.1% SDS). Proteins were transferred to PVDF transfer membrane (Thermo Fisher) in 1× transfer buffer (25 mM Tris base, 192 mM glycine, 20% methanol) by electroblotting at 4°C for 2 hr at 250 mA. Membranes were blocked (5% milk powder in 1× TBS/0.1% Tween-20) overnight at 4°C and proteins detected by incubating with primary antibodies [mouse monoclonal ɑ-HA 1:5000 (Covance; MMS-101P) or mouse monoclonal ɑ-PAB1 1:10,000 (Encore Biotechnology; MCA-1G1)] and secondary antibodies [goat ɑ-mouse IgG HRP 1:5000 (Santa Cruz Biotechnology; sc-2005)] in blocking buffer for 1 hr at room temperature. Between incubations, membranes were washed with 1× TBS/0.1% Tween-20 three times each for 15 min. Signals were detected using chemiluminescence with Blue Ultra Autorad film (GeneMate).
 
-## Conditional depletion of SUP45
+### Conditional depletion of SUP45
 
 Yeast strains for depletion studies were constructed by placing chromosomally-encoded SUP45 under control of the GAL1 promoter using standard recombinant methods (Longtine et al., 1998). Briefly, a His3M × 6-PGAL1-3HA insertion cassette was PCR-amplified using Phusion High Fidelity DNA polymerase (NEB; M0530S) and gene-specific PCR primers (Supplementary file 3 Table S3). PCR products were run on 1% agarose gels, purified using Zymoclean Gel DNA Recovery Kits (Zymo Research; D4001), and transformed into wild type (yKB154), or upf1Δ (yKB146) yeast strains. For depletion experiments, cells were inoculated at an initial density of OD600 = 0.02 in SGS media and grown at 30°C for 12 hr, cells were then pelleted by centrifugation at 4000 RPM for 4 min, washed once in synthetic media without sugar, and resuspended in glucose-containing media (SD) to an OD600 = 0.1. Cultures were grown at 30°C for 10 hr and aliquots collected every 2 hr. The cell pelleted after centrifugation was flash frozen on dry ice for downstream protein analysis and reporter mRNA expression using western and northern blotting, respectively.
 
-## Primer extension analysis
+### Primer extension analysis
 
 Phenol-chloroform extracted total RNA was reverse transcribed using SuperscriptIII Reverse Transcriptase (Thermo Fisher; 18080051) and 32P end-labeled primers specific to each reporter mRNA (Supplementary file 3 Table S3). Dideoxy sequencing reactions were performed using the Sequenase 2.0 DNA Sequencing Kit (Thermo Fisher; 70771KT). Sequenase reactions were performed using the plasmid encoding the reporter mRNA (pKB674 for GFPPTC125) as a template and primed with the same 32P end-labeled primer as was used for reverse transcription (oKB132 for GFPPTC125 mRNA). Primer extension products and sequencing reactions were run on 6% PAGE-UREA denaturing gels that were fixed in 10% acetic acid/10% methanol solution for 15 min and dried under vacuum pressure before exposure to phosphor screens.

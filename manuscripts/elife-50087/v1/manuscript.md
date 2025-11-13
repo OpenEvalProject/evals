@@ -32,9 +32,25 @@ Here we studied the interplay of OCT4 and SOX2 in regulating chromatin accessibi
 
 ## Results
 
-## OCT4 and SOX2 regulate chromatin accessibility at mostly distinct loci
+### OCT4 and SOX2 regulate chromatin accessibility at mostly distinct loci
 
 OCT4 and SOX2 bind cooperatively to thousands of genomic locations in ES cells both independently and as a heterodimer on a composite OCT4::SOX2 motif. How OCT4 and SOX2 interplay to regulate chromatin accessibility in ES cells is not known. To address this question, we decided to determine genome-wide chromatin accessibility changes upon acute loss of OCT4 or SOX2. To deplete OCT4 and SOX2 from ES cells in an inducible manner, we took advantage of the ZHBTc4 (Niwa et al., 2000) and 2TS22C (Masui et al., 2007) mouse ES cell lines, in which a Tet-Off promoter regulates the expression of Pou5f1 (encoding OCT4) and Sox2, respectively (Figure 1A). While OCT4 is fully depleted after 24 hr of doxycycline (dox) (Niwa et al., 2000), SOX2 is not, likely due to its longer half-life (Masui et al., 2007). We determined SOX2 levels by immunofluorescence staining after 26 and 40 hr of dox treatment and found that residual SOX2 expression persisted after 26 hr but not 40 hr of dox treatment (Figure 1—figure supplement 1A). Importantly, despite its known role in regulating expression of OCT4 (Dunn et al., 2014; Strebinger et al., 2019), SOX2 depletion for 26 or 40 hr had only a minor impact on OCT4 levels (Figure 1—figure supplement 1A–B). In ZHBTc4 cells, as expected, 24 hr of dox treatment led to the complete depletion of OCT4 and only mildly affected SOX2 levels (Figure 1—figure supplement 1C–D). Therefore, changes in chromatin accessibility upon short-term SOX2 or OCT4 loss are unlikely to be confounded by changes in expression levels of OCT4 and SOX2, respectively.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental strategy to compare the effect of OCT4 and SOX2 depletion on chromatin accessibility. (B) Number of regions significantly changed in accessibility upon OCT4 (left) and SOX2 (right) depletion in distal (>1 kb from TSS) and promoter-proximal (≤1 kb from TSS) elements. (C) log2 fold-change values of accessibility between dox-treated and untreated cells upon OCT4/SOX2 depletion at OCT4/SOX2 binding sites with decreased accessibility. Loci are grouped into those significantly affected upon OCT4 depletion (OD), SOX2 depletion (SD), or depletion of either factor (CD). Each row corresponds to one individual locus, and each column to a different experimental condition. (D–E) Average RPKM-normalized ATAC-seq signal 2 kb around OD, CD, and SD loci upon SOX2 depletion (D) and OCT4 depletion (E). (F–G) Average RPKM-normalized H3K27ac ChIP-seq signal 2 kb around OD, CD, and SD loci upon SOX2 depletion (F) and OCT4 depletion (G). Statistics for (D–G) are available in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescence of 2TS22C cells stained for DNA (DAPI), OCT4, and SOX2 without dox treatment (left), and after 26 hr (middle), and 40 hr (right) of dox treatment. (B) Violin plot of background-subtracted log values of immunofluorescence signal in OCT4 (left) and SOX2 (right) channels upon SOX2 depletion. Control: n = 45’601 cells from four biological replicates including two technical replicates; 26 hr: n = 42’298 cells from three biological replicates including two technical replicates; 40 hr: n = 32’342 cells from two technical replicates. Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. (C) Immunofluorescence of ZHBTc4 cells stained for DNA (DAPI), OCT4, and SOX2 without dox treatment (left), and after 24 hr of dox treatment (right). (D) Violin plot of background-subtracted log values of immunofluorescence signal in OCT4 (left) and SOX2 (right) channels upon OCT4 depletion. Control: n = 26’119 cells from three biological replicates. 24 hr: n = 23’157 cells from three biological replicates. Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. (E) Correlation between the log2 fold-change values of accessibility upon OCT4 depletion in S2iL (x-axis) and SL (y-axis) at OCT4-bound sites. (F) Correlation between the log2 fold-change values of accessibility upon SOX2 depletion after 26 hr (x-axis) and 40 hr (y-axis) of dox treatment at SOX2 binding sites. Coefficient (R) and p-values are based on the Pearson correlation coefficient. Scale bars: 30 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Heatmaps of RPKM-normalized ATAC-seq and ChIP-seq binding profiles upon OCT4 (A) and SOX2 (B) depletion 5 kb around OCT4-regulated (A) and SOX2-regulated (B) loci. Each row represents one individual locus and each column represents one experimental condition.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Classification of all OCT4 and SOX2 binding sites into OD, CD, and SD loci as well as loci that were discarded due to differences in untreated cells between conditions or cell lines (Discarded), due to incongruent effect on accessibility after depletion in different conditions (Incongruent), and those that were increased in accessibility or unaffected by depletion. (B) ChromHMM signal enrichment at OD, CD, and SD loci as well as bound loci that were unaffected by depletion and loci not bound by OCT4 or SOX2.
 
 We performed ATAC-seq in ZHBTc4 cells without dox or with dox for 24 hr, and in 2TS22C cells without dox or with dox for 26 or 40 hr. We first compared chromatin accessibility changes between ZHBTc4 cells +/- dox for 24 hr in our culture conditions (serum + 2i + LIF (S2iL), see Materials and methods) to a previous dataset acquired with ZHBTc4 cells +/- dox for 24 hr but cultured in serum + LIF (SL) (King and Klose, 2017). The good correlation (Pearson’s R = 0.7) in chromatin accessibility changes at OCT4 binding sites between culture conditions (Figure 1—figure supplement 1E) prompted us to take advantage of both datasets for further analysis. We next compared changes in accessibility at SOX2 binding sites in the 2TS22C cell line treated for either 26 or 40 hr with dox, which also displayed a clear correlation (Pearson’s R = 0.61) (Figure 1—figure supplement 1F). We reasoned that the 26 hr dox dataset should be less prone to changes in accessibility due to indirect effects of prolonged SOX2 depletion than the 40 hr dox dataset, while the latter should be more sensitive to identify loci that are still accessible at low SOX2 concentrations. We thus called significantly affected loci using limma (Ritchie et al., 2015) (false discovery rate (FDR) < 0.05) and selected only those in which the direction of change (decrease or increase in accessibility) was the same for 26 hr vs 40 hr of dox treatment in 2TS22C cells, and likewise for SL vs S2iL in ZHBTc4 cells. In line with previous reports, loss of OCT4 led to decreased accessibility at 20’587 loci, most of which are distal regulatory elements (Figure 1B). Loss of SOX2 also led to decreased accessibility mainly at distal elements, but at fewer loci (7’874). We also found that loss of OCT4 led to a gain in accessibility at 20’209 loci, while 1’080 loci gained accessibility upon loss of SOX2 (Figure 1B). Loci that lost accessibility were highly enriched for OCT4 and SOX2 ChIP-seq binding while loci that gained accessibility were much less so (Figure 1—figure supplement 2A–B).
 
@@ -42,17 +58,49 @@ To compare the loci impacted by OCT4 vs SOX2 depletion, we next focused on all r
 
 Surprisingly, all groups were enriched for the binding of both OCT4 and SOX2 (Figure 2A). 89% of SD sites overlapped with an OCT4 peak and 65% of OD sites overlapped with a SOX2 peak. Therefore, differences in the regulation of chromatin accessibility at these loci cannot simply be explained by differential DNA binding of SOX2 and OCT4. OCT4 has been shown to regulate chromatin accessibility by recruitment of the BAF chromatin remodeling complex, including the BRG1 subunit (King and Klose, 2017). As SOX2 also interacts with BRG1 in vivo (Xu et al., 2018), we asked whether SOX2 regulates chromatin accessibility through BRG1 recruitment. We performed BRG1 ChIP-seq upon SOX2 depletion and reanalyzed ChIP-seq data of BRG1 upon OCT4 depletion (King and Klose, 2017). We found that loss of accessibility was accompanied by loss of BRG1 in all groups (Figure 2B–C). We also reanalyzed ATAC-seq data from cells in which BRG1 has been depleted (Ho et al., 2011; King and Klose, 2017) and found that all groups were dependent on BRG1 to maintain their accessibility (Figure 2—figure supplement 1A). This suggests that OCT4 and SOX2 can regulate chromatin accessibility independently of each other even at sites that are co-occupied and through the recruitment of BRG1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap of RPKM-normalized OCT4 and SOX2 ChIP-seq binding profiles in untreated ZHBTc4 cells 5 kb around OD, CD, and SD loci. Each row represents one individual locus. (B–C) Average RPKM-normalized BRG1 ChIP-seq signal 2 kb around OD, CD, and SD loci upon SOX2 depletion (B) and OCT4 depletion (C). (D–F) Frequency of overlap (bar) and enrichment p-values (white digits) of motifs at OD, CD, and SD loci as well as in background regions (BG) for the canonical OCT4::SOX2 motif (D), the OCT motif (E), and the SOX motif (F). (G–I) Relative enrichment values (bar) and p-values (white digits) for the closest genes in the OD, CD, and SD groups in the gene ontology sets PluriNetWork (G), ESC Pluripotency Pathways (H), and the KEGG gene set ‘Signaling pathways regulating pluripotency’ (I). (J–K) Average RPKM-normalized OCT4 (J) and SOX2 (K) ChIP-seq signal 2 kb around OD, CD, and SD loci upon SOX2 depletion (J) and OCT4 depletion (K). Statistics for (B–C), (J–K) are available in Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average ATAC-seq signal 2 kb around OD, CD, and SD loci in BRG1fl cells that were treated with tamoxifen (TAM) or left untreated. (B) Frequency of overlap (bar) and enrichment p-values (white digits) of the AP-2 motif 2 kb around OD, CD, and SD loci, and in background regions (BG). (C) Average ATAC-seq signal in TS cells 2 kb around OD, CD, and SD loci. (D) Average SOX2 ChIP-seq signal in TS cells 2 kb around OD, CD, and SD loci. (E) Percentage of the closest gene in the OD, CD, and SD groups as well as all other accessible regions (Other) whose nascent RNA levels are downregulated or upregulated upon 24 hr of OCT4 depletion. p-values: Fisher’s exact test. (F) Average ChIP-seq signal of ESRRB, NANOG, KLF4, and SALL4 in ES cells 2 kb around OD, CD, and SD loci. (G) Relative enrichment values (bar) and p-values (white digits) for the closest genes in the OD, CD, and SD groups, as well as loci upregulated upon SOX2 and OCT4 depletion, in the ‘Cell differentiation’ gene ontology set. (H) Average ChIP-seq signal of SOX2 2 kb around OD, CD, and SD loci in wt and PARP1 KO ES cells. Statistics for (A), (C–D), (F), (H) are available in Supplementary file 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Correlation between log2 fold-change values of accessibility (x-axis) and OCT4 binding (y-axis) upon SOX2 depletion in 2TS22C cells with dox treatment for 26 hr. Coefficient (R) and p-value are based on the Pearson correlation coefficient. (B–C) Average RPKM-normalized ATAC-seq signal 2 kb around OD (n = 3’730), CD (n = 1’463), and SD (n = 273) loci that overlap with a canonical OCT4::SOX2 motif upon SOX2 (B) and OCT4 (C) depletion. (D–E) Average RPKM-normalized OCT4 (D) and SOX2 (E) ChIP-seq signal 2 kb around OD, CD, and SD loci that overlap with a canonical OCT4::SOX2 motif upon SOX2 (D) and OCT4 (E) depletion. (F) Average RPKM-normalized ATAC-seq signal upon SOX2 depletion 2 kb around loci that display a significant increase in accessibility and SOX2 binding upon OCT4 depletion (n = 3’270). (G) Average RPKM-normalized BRG1 ChIP-seq signal upon OCT4 depletion 2 kb around loci that display a significant increase in accessibility and SOX2 binding upon OCT4 depletion. Statistics for (B–G) are available in Supplementary file 1.
+
 To understand which features distinguish OD, SD, and CD loci, we performed motif analysis on the underlying sequences. While both OD and CD loci were strongly enriched for the OCT4::SOX2 canonical motif and the OCT motif, SD loci were more enriched for the SOX motif (Figure 2D–F and Supplementary file 2). SD sites were also enriched for the AP-2 motif (Figure 2—figure supplement 1B). TFAP2C, a member of the AP-2 family, is known to regulate differentiation into trophoblast stem (TS) cells together with SOX2 (Adachi et al., 2013). Interestingly, when reanalyzing data from TS cells (Adachi et al., 2013; Ishiuchi et al., 2019) we found SD sites to be highly accessible and SOX2-bound compared to OD and CD loci (Figure 2—figure supplement 1C–D). Furthermore, SD loci were enriched near genes that increased in nascent mRNA expression upon loss of OCT4 (data from King and Klose, 2017) (Figure 2—figure supplement 1E), which by itself leads to TS cell differentiation (Adachi et al., 2013). In contrast, OD and CD loci were enriched near genes that decreased in nascent mRNA expression upon OCT4 depletion (Figure 2—figure supplement 1E). We next aimed to determine the enrichment of pluripotency-associated enhancers falling in the OD, SD, and CD groups. To this end, we checked for enrichment of the nearest gene in three gene ontology (GO) sets associated specifically with pluripotency. We found that these GO sets tended to be most highly enriched in genes near OD loci, although all groups were enriched in at least one of the GO sets (Figure 2G–I). We also analyzed the binding profiles of other pluripotency TFs (ESRRB, NANOG, KLF4, SALL4) (data from Aksoy et al., 2014; Chronis et al., 2017; Kim et al., 2018; Xiong et al., 2016) and found the highest enrichment in the CD group, although all these TFs bound to some extent to all groups of loci (Figure 2—figure supplement 1F). Notably, all groups were also enriched for the ‘cell differentiation’ GO term (Figure 2—figure supplement 1G), in line with the role of OCT4 and SOX2 in ES cell differentiation. Since SOX2 was shown to require PARP1 to bind to a subset of genomic regions in ES cells (Liu and Kraus, 2017), we asked whether PARP1 dependence could explain the differential regulation of chromatin accessibility between these groups. We thus reanalyzed data from wt and PARP1 knockout (KO) ES cells (Gao et al., 2009; Yang et al., 2004), and found a reduction of SOX2 binding in PARP1 KO cells at all groups of loci (Figure 2—figure supplement 1H). Thus, PARP1 dependence cannot explain the differential regulation of chromatin accessibility between OD, CD, and SD loci. Overall, these results indicate that OCT4 and SOX2 regulate partially independent sets of pluripotency and differentiation enhancers, with OCT4 having the largest influence on chromatin accessibility of pluripotency-associated regulatory elements.
 
-## Cooperative binding between OCT4 and SOX2 is mainly mediated indirectly through changes in chromatin accessibility
+### Cooperative binding between OCT4 and SOX2 is mainly mediated indirectly through changes in chromatin accessibility
 
 Several lines of evidence suggest that OCT4 and SOX2 exhibit cooperative DNA binding. In vitro electrophoretic mobility shift assays and fluorescence correlation spectroscopy experiments have shown that OCT4 and SOX2 display enhanced binding to the OCT4::SOX2 motif when binding together (Mistri et al., 2015; Mistri et al., 2018). While in vitro experiments reported OCT4-assisted binding on a purified nucleosomal template (Li et al., 2019), single-molecule imaging in live ES cells (Chen et al., 2014) and ChIP-seq analysis of OCT4 in the presence or absence of SOX2 in fibroblasts (Raccaud et al., 2019) have provided evidence that SOX2 assists OCT4 binding in vivo. However, while these experiments suggest that OCT4 and SOX2 can display direct cooperativity, the role this mechanism plays in their colocalization in the complex in vivo chromatin and nuclear environment is unclear. We reasoned that the independent regulation of chromatin accessibility by OCT4 and SOX2 at a large number of loci could result in indirect cooperativity, that is each TF could assist the binding of the other through increasing chromatin accessibility. In line with this hypothesis, it was previously shown that upon loss of OCT4, SOX2 binding loss is correlated to the loss in chromatin accessibility (King and Klose, 2017). However, since in vivo evidence points at a role for SOX2 in mediating cooperative OCT4 DNA-binding rather than vice versa (Chen et al., 2014; Raccaud et al., 2019), we interrogated the genome-wide binding of OCT4 upon loss of SOX2 using ChIP-seq in 2TS22C cells treated with dox for 26 hr. We found that changes in OCT4 binding were also highly correlated to changes in chromatin accessibility upon SOX2 loss (Pearson’s R = 0.77) (Figure 2—figure supplement 2A). We next analyzed OCT4 and SOX2 binding in the presence or absence of SOX2 and OCT4, respectively, at OD, CD, and SD loci. We found that OCT4 binding was only slightly decreased at OD sites in the absence of SOX2, while SOX2 binding at SD sites was mildly increased in the absence of OCT4 (Figure 2J–K). These findings were also consistent when narrowing down our analysis to sites containing a canonical OCT4::SOX2 motif, although SOX2 binding did not increase at these SD sites in the absence of OCT4 (Figure 2—figure supplement 2B–E). The slight loss of OCT4 binding at OD sites upon only minor changes in accessibility suggests that other mechanisms such as recruitment by SOX2 may play a role in the binding of OCT4, in line with SOX2 enhancing OCT4 binding (Figure 2J).
 
 Upon loss of its partner protein, OCT4 loses binding at 8’324 loci (of which 7’638 are called OCT4 peaks, representing 31% of OCT4 sites) and gains binding at 739 loci (of which 212 are called OCT4 peaks, representing 1% of OCT4 sites). Conversely, SOX2 loses binding at 6’892 loci (of which 5’302 are called SOX2 peaks, representing 29% of SOX2 sites) and gains binding at 4’136 loci (of which 983 are called SOX2 peaks, representing 5% of SOX2 sites). This indicates that the ability of OCT4 to occupy its specific binding sites is more impacted by the absence of SOX2 than vice-versa, and that SOX2 can get rerouted to new loci in the absence of OCT4. We further noticed that loci gaining accessibility upon loss of OCT4, which are enriched for differentiation terms (Figure 2—figure supplement 1G), also gained binding by SOX2 (see Figure 1—figure supplement 2A columns 6–7 bottom half) and were enriched for the SOX and AP-2 motifs (Supplementary file 2). 3’270 loci displayed a significant increase in both accessibility and SOX2 binding. Interestingly, these loci decreased their accessibility upon SOX2 loss (Figure 2—figure supplement 2F) and gained BRG1 occupancy concomitantly with OCT4 loss (Figure 2—figure supplement 2G), in line with SOX2 recruiting the BAF complex to promote chromatin opening. This may suggest that OCT4 sequesters SOX2 to OCT4-SOX2 sites, and upon OCT4 loss SOX2 is free to bind and increase the accessibility of differentiation-associated regulatory elements. Overall, these results indicate that cooperative binding of OCT4 and SOX2 in ES cells is mainly mediated indirectly through changes in chromatin accessibility. However, while SOX2 enhances OCT4 binding in general, the presence of OCT4 reroutes SOX2 to pluripotency loci.
 
-## OCT4 is required at the M-G1 transition to re-establish enhancer accessibility
+### OCT4 is required at the M-G1 transition to re-establish enhancer accessibility
 
 Transient depletion of OCT4 or SOX2 at the M-G1 transition has been shown to hinder pluripotency maintenance (Liu et al., 2017; Deluz et al., 2016), but the underlying mechanisms are not known. This time window coincides with enhancer reopening upon chromatin decompaction, but whether pioneer factors are involved in this process is not clear. As we found OCT4 to have the broadest influence on accessibility of pluripotency-associated loci, we focused on its role in regulating chromatin accessibility at the M-G1 transition. To allow near-complete loss of OCT4 at the M-G1 transition, we used ZHBTc4 cells constitutively expressing OCT4 fused to a SNAP-tag and a Cyclin B1 degron (mitotic degron; MD) or a mutated version thereof (MD*; Figure 3A), which have been described previously (Kadauke et al., 2012). Importantly, lower than wildtype levels of OCT4 have been shown to sustain or even enhance pluripotency (Karwacki-Neisius et al., 2013; Radzisheuskaya et al., 2013). We thus reasoned that OCT4 levels need to decrease below a certain threshold to impact chromatin accessibility of pluripotency regulatory elements. Furthermore, the MD strategy strongly decreases but does not fully eliminate the target protein (Deluz et al., 2016; Liu et al., 2017). We therefore expressed MD-OCT4 and MD*-OCT4 at lower than wildtype levels from the constitutively active but relatively weak PGK promoter. After lentiviral transduction of the constructs, we stained cells with the SNAP-Cell 647-SiR dye (Lukinavičius et al., 2013) and sorted for a narrow window of SNAP expression to obtain the same average level of OCT4 tagged with MD and MD* across the cell cycle, as described previously (Deluz et al., 2016) (Figure 3—figure supplement 1A). We also transduced cells to express YPet-MD in a constitutive manner, which allows for discrimination between cells in early G1 (YPet-negative) and late G1 phase (YPet-positive). In combination with Hoechst staining, this enables sorting cells in early G1 (EG1), late G1 (LG1), S, and late S/G2 (SG2) phase as described previously (Kadauke et al., 2012) (Figure 3—figure supplement 1B). SNAP-MD-OCT4 levels were correlated to YPet-MD levels in flow cytometry, indicating that OCT4 levels are restored in LG1 in MD-OCT4 cells (Figure 3—figure supplement 1C), as shown previously (Liu et al., 2017). In the absence of dox, these cell lines display no substantial difference in chromatin accessibility at OCT4-regulated loci (Figure 3—figure supplement 1D). When grown in the presence of dox, MD*-OCT4 cells maintain a higher fraction of dome-shaped colonies, higher alkaline phosphatase activity, higher expression of pluripotency markers and lower expression of differentiation markers (Figure 3—figure supplement 1E–G) than MD-OCT4 cells, as also shown previously (Liu et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental strategy used to assess the impact of OCT4 depletion at the M-G1 transition. (B–C) Genome browser tracks of RPKM-normalized accessibility profiles across the cell cycle for one locus that decreases (B) at chr11:6894809–6895533 and one that increases (C) at chr9:41247953–4124841 in accessibility upon transient OCT4 depletion in M-G1. (D) log2 fold-change values of accessibility between MD-OCT4 and MD*-OCT4 (control) cells in different cell cycle phases at all accessible OCT4-bound sites, grouped into four clusters by k-means clustering (see Materials and methods). Each line represents one locus. Red line: mean. (E) Frequency of overlap (bar) and enrichment p-values (white digits) of the canonical OCT4::SOX2 motif in the four clusters as well as in unbound regions. The color shows the number of identified OCT4::SOX2 motifs per region. (F) Average RPKM-normalized OCT4 ChIP-seq signal in untreated ZHBTc4 cells 2 kb around loci in the four clusters. Statistics are available in Supplementary file 1. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gate used to sort SNAP-MD-OCT4 (left) and SNAP-MD*-OCT4 (right) cells for the same average SNAP-Cell 647-SiR signal. Y-axis: Signal amplitude at 405 nm excitation and 526/52 nm emission (negative control). X-axis: Signal amplitude at 640 nm excitation and 671/30 nm emission (SNAP signal). (B) Example of a sorting experiment for different phases of the cell cycle in cells expressing YPet-MD and stained for Hoechst33258. Y-axis: Integrated signal at 488 nm excitation and 525/50 nm emission (YPet). X-axis: Signal amplitude at 355 nm excitation and 450/50 nm emission (Hoechst) (C) Correlation between YPet-MD and SNAP-MD-OCT4 expression in MD-OCT4 cells as measured by flow cytometry. Y-axis: Integrated signal at 640 nm excitation and 670/14 nm emission (SNAP). X-axis: Integrated signal at 488 nm excitation and 525/50 nm emission (YPet). (D) Violin plot of log2 fold-change values of accessibility between MD-OCT4 and MD*-OCT4 cells in significantly downregulated and upregulated loci (see Figure 1B) in unsorted cells in the absence of dox. Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. (E) Percentage of dome-shaped colonies as assessed by microscopy in the ZHBTc4 cell line upon dox treatment and with overexpression of SNAP-MD*-OCT4 or SNAP-MD-OCT4. n = 3 biological replicates; p-values: paired t-test. (F) Representative alkaline phosphatase staining from cells in (E). (G) Fold-change of expression levels of differentiation markers (Dlx3, Eomes and Esx1) and Nanog, measured by RT-qPCR in dox-treated versus untreated cells, in MD-OCT4 and MD*-OCT4 cells. Each sample is normalized to the expression of Rps9. n = 4 biological replicates; p-values: Mann-Whitney U. (H) Percentage of cells in EG1/LG1/S/SG2 phases as determined by flow cytometry in MD-OCT4 and MD*-OCT4 cells. n = 4 biological replicates; p-values: paired t-test. (I–J) Violin plot of log2 fold-change values of accessibility between MD-OCT4 and MD*-OCT4 cells in different cell cycle phases at significantly downregulated (I) and upregulated (J) loci (see Figure 1B). Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Violin plot of distance to closest TSS in the clusters from Figure 3D. Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. (B) Heatmap of ChIP-seq signal of H3K4me3, H3K4me1, and H3K27ac in wt ES cells 5 kb around regions in the clusters from Figure 3D. Each row corresponds to one individual locus. (C) Average log2 fold-change values of H3K27ac ChIP-seq signal between MD-OCT4 and MD*-OCT4 cells in the clusters from Figure 3D (including 500 bp flanking regions at each side) at different cell cycle phases. Statistics are available in Supplementary file 1. (D) Genome browser tracks of RPKM-normalized H3K27ac profiles across the cell cycle for a cluster one locus (chr11:6894809–6895533) that decreases in accessibility and H3K27ac upon transient OCT4 depletion in M-G1. (E) Heatmap of RPKM-normalized H3K27ac ChIP-seq signal 2 kb around regions in the clusters from Figure 3D in MD*-OCT4 (MD*) and MD-OCT4 (MD) cells at different cell cycle phases. Each row corresponds to one individual locus. (F) log2 fold-change values of H3K27ac ChIP-seq signal between MD-OCT4 and MD*-OCT4 cells in the clusters from Figure 3D (including 500 bp flanking regions at each side) at different cell cycle phases. Each row corresponds to one individual locus. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Percentage of the closest gene in the clusters from Figure 3D and at non-OCT4 bound accessible regions whose nascent RNA levels are downregulated or upregulated upon 24 hr of OCT4 depletion. p-values: Fisher’s exact test. (B) Relative enrichment values (Z-transformed –logP) for the closest genes in the clusters from Figure 3D and at non-OCT4 bound accessible regions, in all KEGG gene ontology sets with Z > 3, sorted by enrichment in cluster 1. (C) Percentage of loci in the clusters from Figure 3D and at non-OCT4 bound accessible regions overlapping typical enhancers (TE) and super-enhancers (SE) in mouse ES cells. (D) RPKM-normalized ATAC-seq signal in cells sorted for high and low endogenous OCT4 levels 2 kb around loci in the clusters from Figure 3D. Statistics are available in Supplementary file 1. (G) Percentage of loci in the clusters from Figure 3D overlapping OD, CD, and SD loci from Figure 1C.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Correlation between the log of normalized OCT4 ChIP-seq reads per bp (x-axis) and the log2 fold-change values of accessibility loss upon OCT4 depletion (y-axis) at all OCT4 binding sites in ZHBTc4 cells. (B) Correlation between the log of normalized OCT4 ChIP-seq reads per bp (x-axis) and the log of normalized ATAC-seq reads per bp (y-axis) at all OCT4 binding sites in ZHBTc4 cells. Coefficient (R) and p-values are based on the Pearson correlation coefficient. (C) Cluster predictions of regions in the test data based on a random forest model using mouse ES cell ChIP-seq data (see Materials and methods). The x‐axis shows the true cluster, and the y‐axis shows the fraction of regions predicted to belong to the clusters from Figure 3D (colors). (D) Average ChIP-seq signal of KLF4, KLF5, CHD4, SALL4, NANOG, ESRRB, MBD3, SOX2, DAX1, and TBX3 in ES cells 2 kb around regions in the clusters from Figure 3D. (E) Average ChIP-seq signal of CTCF and RAD21 in ES cells 2 kb around regions in the clusters from Figure 3D. Statistics for (D–E) are available in Supplementary file 1.
 
 To test whether depletion of OCT4 at the M-G1 transition affects chromatin accessibility, we treated cells with dox for 40 hr to ensure that all cells have gone through at least one cell division expressing only MD or MD*-tagged OCT4. Note that dox-treated cells had a longer G1 phase as compared to wt ES cells, as shown before to be a consequence of lower than wt OCT4 levels (Lee et al., 2010). However, there was only a minor, albeit statistically significant, difference in the proportion of cells in LG1 between MD-OCT4 and MD*-OCT4 (Figure 3—figure supplement 1H). We sorted cells in EG1, LG1, S, and SG2 phases, performed ATAC-seq, and compared the accessibility between MD-OCT4 and MD*-OCT4 cells at each cell cycle phase (Figure 3A). OCT4-regulated loci that increased or decreased in accessibility upon complete OCT4 depletion (see Figure 1B) were also affected by transient M-G1 degradation (Figure 3B–C, Figure 3—figure supplement 1I–J). This shows that OCT4 is required at the M-G1 transition to restore chromatin accessibility and that loci gaining accessibility upon OCT4 loss are also dynamically regulated by OCT4 levels.
 
@@ -66,17 +114,37 @@ As mentioned above, pluripotency was shown to be maintained at lower than wildty
 
 To understand the reason for the differential impact of transient OCT4 depletion on chromatin accessibility, we performed motif search analysis and compared OCT4 binding at the different clusters. We found a higher enrichment for the canonical OCT4::SOX2 motif (Figure 3E) and a higher OCT4 occupancy (Figure 3F) at cluster 1 loci. Consistently, cluster 1 contained mostly OD and CD loci identified above (Figure 3—figure supplement 3E). As high OCT4 binding was a signature of the loci most sensitive to transient OCT4 loss, we next aimed to determine the relationship between OCT4 binding and chromatin accessibility. We compared chromatin accessibility in ZHBTc4 cells in the presence or absence of OCT4 in conditions with matched OCT4 ChIP-seq and ATAC-seq data (King and Klose, 2017). The OCT4 ChIP-seq signal was correlated to loss of accessibility upon OCT4 depletion (Figure 3—figure supplement 4A) as shown previously, but also to chromatin accessibility in untreated cells (Figure 3—figure supplement 4B), indicating that strong OCT4 binding sites are both highly accessible and sensitive to OCT4 levels. We also found several other motifs that were differentially enriched between the clusters, including KLF, ESRRB, NANOG, and CTCF (Supplementary file 2). To systematically search for differential binding in the clusters, we looked for overlap with peak regions from 5’261 ChIP-seq datasets from mouse ES cells in the cistromeDB database (Mei et al., 2017), of which 3’628 showed overlap with at least one region in the clusters and were used for subsequent analysis. We trained a random forest model on the data to predict which cluster a region belonged to, based on the peaks it overlapped. This model performed better than random sampling (46.5% true positives compared to 25% expected by chance, Cohen's κ = 0.29) (Figure 3—figure supplement 4C), and we thus examined features used for prediction in the model to identify potential binding partners enriched in the clusters. As confirmation of the validity of the approach, the top parameters included OCT4, peaks from Dox-treated ZHBTc4 cells (e.g. SS18/SOX2/NANOG), and promoter marks (e.g. H3K4me3/H3K9ac/RPB2) (Supplementary file 3). We identified several factors associated with pluripotency enriched in clusters 1 and 3, including DAX1, SOX2, NANOG, and SALL4. We analyzed binding profiles of all factors described as related to pluripotency regulation in Dunn et al. (2014) and available in cistromeDB. We confirmed that all of these factors tended to be enriched in clusters 1 and 3, and in particular SALL4, NANOG, ESRRB, SOX2, and TBX3, which were most enriched in cluster 1 (Figure 3—figure supplement 4D) (data from Aksoy et al., 2014; Beck et al., 2014; Chronis et al., 2017; Deluz et al., 2016; Han et al., 2010; Kim et al., 2018; Stevens et al., 2017; Xiong et al., 2016). We also found a depletion of RAD21 (a Cohesin subunit) and CTCF in cluster 1, in line with the differential enrichment of the CTCF motif. Indeed, both RAD21 and CTCF, which are involved in the regulation of genome organization (Phillips-Cremins et al., 2013), were poorly bound in cluster 1 compared to the other clusters (Figure 3—figure supplement 4E) (data from Cattoglio et al., 2019). Taken together, these results reveal different classes of OCT4-bound loci that show different cell cycle accessibility dynamics upon OCT4 loss at the M-G1 transition, and that sites highly occupied by OCT4 and other pluripotency factors and lowly occupied by CTCF/Cohesin are particularly sensitive to OCT4 loss for the maintenance of their accessibility and H3K27 acetylation.
 
-## OCT4 is required throughout the cell cycle to maintain enhancer accessibility
+### OCT4 is required throughout the cell cycle to maintain enhancer accessibility
 
 We next asked whether OCT4 also plays a role in maintaining enhancer accessibility in other cell cycle phases. To do so, we generated a cell line allowing drug-inducible degradation of OCT4. Briefly, we used lentiviral vectors to constitutively express the Tir1 ubiquitin ligase (allowing Auxin-inducible ubiquitination and degradation of target proteins [Dharmasiri et al., 2005; Kepinski and Leyser, 2005]) and OCT4 fused to mCherry and an Auxin-inducible degron tag (Morawska and Ulrich, 2013; Nishimura et al., 2009) (mCherry-OCT4-AID) in ZHBTc4 cells (Figure 4A). To verify the functionality of this fusion protein, we transduced ZHBTc4 cells with a lentiviral vector allowing expression of mCherry-OCT4-AID under the control of the constitutive EF1α promoter. After sorting for mCherry-positive cells, we plated them at low density and cultured them for one week in the presence of dox to deplete endogenous OCT4 expression, as described previously in Strebinger et al. (2019). We found that these cells maintained their pluripotency, thus confirming the proper function of mCherry-OCT4-AID (Figure 4—figure supplement 1A-B). To ensure near-complete OCT4 depletion upon auxin treatment, we then generated a ZHBTc4 cell line in which OCT4-AID is constitutively expressed at low levels using the PGK promoter. We further expressed YPet-MD in this cell line to allow for cell sorting in different cell cycle phases, as described above. Upon addition of indole-3-acetic acid (IAA, also known as Auxin), the AID-tagged OCT4 displayed an exponential degradation profile with a half-life of 0.32 hr (Figure 4B). After IAA washout, OCT4 recovered to approximately half of the concentration before IAA treatment within 4.5 hr (Figure 4C), in line with the OCT4 protein half-life of ~4 hr (Alber et al., 2018).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental strategy used to assess the impact of OCT4 depletion and recovery at different cell cycle phases. (B) Red fluorescence (mCherry) signal in mCherry-OCT4-AID cells treated with IAA at t = 0 as measured by fluorescence microscopy. Gray lines: single cell traces; Black line: population average; Red line: exponential fit. Red text: half-life value derived from the exponential fit. n = 45 cells from one replicate (C) Red fluorescence (mCherry) signal in mCherry-OCT4-AID treated with IAA for 2.5 hr and then washed out at t = 0 as measured by fluorescence microscopy. Gray lines: single cell traces; Black line: population average. n = 45 cells from one replicate (D) Average log2 fold-change values of accessibility between IAA-treated and untreated OCT4-AID cells in the four clusters from Figure 3D at each cell cycle phase. (E) Average log2 fold-change values of accessibility between cells first treated with IAA and then washed out, compared to untreated OCT4-AID cells for the four clusters from Figure 3D at each cell cycle phase. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase. Statistics for (D–E) are available in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Ratio of the number of colonies with and without dox treatment, for wt ZHBTc4 cells (Control) and ZHBTc4 cells expressing mCherry-OCT4-AID after one week in culture. n = 3 biological replicates; p‐values: paired t-test. (B) Representative alkaline phosphatase staining from cells in (A). (C) Histogram of mCherry signal in untreated mCherry OCT4-AID cells and treated with IAA for 2 hr as well as mCherry-negative E14 ES cells as measured by flow cytometry. X-axis: Integrated signal at 561 nm excitation and 610/20 nm emission. Y-axis: Counts. (D–F) Fold-change of red fluorescence (mCherry) signal between treated and untreated mCherry-OCT4-AID cells as determined by flow cytometry in different cell cycle phases upon 2 hr IAA treatment (D), 0.5 hr IAA treatment (E), and after 2.5 hr IAA treatment followed by 4.5 hr of washout (F). n = 3 biological replicates; p-values: Mann-Whitney U. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Genome browser tracks of accessibility profiles of a cluster 1 locus at chr10:95455826–95456819 after IAA treatment. (B) Heatmap of RPKM-normalized ATAC-seq signal 2 kb around regions in the clusters from Figure 3D in untreated control cells (labeled ‘C’) and IAA-treated cells (labeled ‘I’) at different cell cycle phases in the clusters from Figure 3D. Each row corresponds to one individual locus. (C) Genome browser tracks of accessibility profiles of a cluster 1 locus at chr10:95455826–95456819 after IAA treatment followed by washout. (D) Heatmap of RPKM-normalized ATAC-seq signal 2 kb around regions in the clusters from Figure 3D in untreated control washed out cells (labeled ‘C’) and IAA-treated and washed out cells (labeled ‘W’) at different cell cycle phases in the clusters from Figure 3D. Each row corresponds to one individual locus. (E) log2 fold-change values of ATAC-seq signal between IAA-treated and untreated cells in the clusters from Figure 3D at different cell cycle phases upon 2 hr IAA treatment (labeled ‘I’) and 2.5 hr IAA treatment followed by 4.5 hr washout (labeled ‘W’). Each row corresponds to one individual locus. EG1: Early G1 phase; LG1: Late G1 phase; S: S phase; SG2: Late S and G2 phase.
 
 To verify that OCT4 degradation kinetics are similar across the cell cycle, we applied IAA for 0.5 hr (partial degradation) and 2 hr (full degradation) before analyzing the mCherry signal by flow cytometry. At 2 hr of treatment, mCherry levels were similar to those of mCherry-negative cells (Figure 4—figure supplement 1C). We observed highly similar changes in the mCherry signal across all cell cycle phases (Figure 4—figure supplement 1D–E), consistent with previous reports on the cell cycle-independence of Auxin-mediated protein degradation (Holland et al., 2012). OCT4 recovery after IAA washout was also very similar across the cell cycle (Figure 4—figure supplement 1F). After addition of dox for 24 hr to remove untagged OCT4, we treated cells with IAA or not for 2 hr, sorted for different cell cycle phases, and performed ATAC-seq (Figure 4A). The relative magnitude of change in accessibility in the different clusters was consistent with our mitotic degradation experiment (Figure 4D). Remarkably, the average loss of accessibility was very similar at all cell cycle phases in clusters 1–3 (Figure 4D, Figure 4—figure supplement 2A–B). This suggests that loci in clusters 1–3, and cluster 1 in particular, are sensitive to OCT4 throughout the cell cycle and not merely at the M-G1 transition.
 
 Next, we quantified the recovery of chromatin accessibility across the cell cycle. We treated OCT4-AID cells with dox for 24 hr, then with IAA or not for 2.5 hr, washed out the drug and incubated cells for 4.5 hr, sorted cells in different cell cycle phases and performed ATAC-seq (Figure 4A). While both cluster 1 and 2 recovered chromatin accessibility, cluster 3 loci did not (Figure 4E, Figure 4—figure supplement 2C–E), in line with their decrease of accessibility over the cell cycle upon OCT4 degradation at the M-G1 transition (see Figure 3D). Overall, these data show that the impact of OCT4 loss on chromatin accessibility is consistent across the cell cycle.
 
-## Dynamic relationship between OCT4 concentration and chromatin accessibility
+### Dynamic relationship between OCT4 concentration and chromatin accessibility
 
 We next aimed to quantify the dynamics of chromatin accessibility changes in response to OCT4 loss. Since residence times of OCT4 on specific DNA sites are in the second-range (Chen et al., 2014; Teves et al., 2016; Deluz et al., 2016), we reasoned that if continuous OCT4 re-binding is required to maintain chromatin accessibility, changes in chromatin accessibility and OCT4 concentration should occur in a quasi-synchronized manner. To test this hypothesis, we performed a time-course experiment by treating OCT4-AID cells with IAA for 0.5 hr, 1 hr, 2 hr, 3 hr, 4 hr, 6 hr, and 10 hr, and performed ATAC-seq at each time point. We took advantage of our clusters, which showed differential response to OCT4 loss at the M-G1 transition (see Figure 3D), and analyzed accessibility loss at these loci over time. At all OCT4-responsive clusters (1-3), accessibility loss was near-complete after 1 hr of IAA treatment (Figure 5A–B), in line with accessibility being highly dynamic with OCT4 levels. At 6 and 10 hr of treatment, cluster 4 sites that were insensitive to OCT4 degradation at the M-G1 transition started to lose accessibility, suggesting a broader and potentially indirect impact of OCT4 loss on chromatin accessibility (Figure 5A). We thus focused on the first 4 hr of OCT4 removal to estimate the kinetics of accessibility loss. We fitted a single-component exponential function including an offset to account for the residual ATAC-seq signal after OCT4 loss. At clusters 1–3, the half-life of accessibility loss was remarkably close to the half-life of OCT4-AID upon IAA treatment, that is around 0.5 hr (Figure 5C–E). We were unable to fit an exponential decay to cluster 4, as expected from its OCT4-independent chromatin accessibility regulation (Figure 5F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig5-v1.jpg)
+
+**Figure 5.:** (A) log2 fold-change values of accessibility compared to untreated cells in the four clusters from Figure 3D at different time points of IAA treatment. (B) Genome browser tracks of accessibility profiles upon treatment with IAA for different durations at a cluster 1 locus at chr3:137779908–137780687. (C–F) Violin plot of normalized ATAC-seq signal across different time points in cluster 1 (C), cluster 2 (D), cluster 3 (E), and cluster 4 (F). Dots: mean; Vertical lines: standard deviation; Red lines in C-E: exponential fit; Red text in C-E: half-life value derived from the exponential fit.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50087/elife-50087-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Violin plot of normalized ATAC-seq signal of sequencing reads 0–100 bp and 180–250 bp in length in untreated cells and 2 hr IAA-treated cells in cluster 1 (A), cluster 2 (B), cluster 3 (C), and cluster 4 (D). Dots: mean; Vertical lines: standard deviation; p-values: Mann-Whitney U. (E) Heatmap of RPKM-normalized ATAC-seq signal 2 kb around regions in the clusters from Figure 3D in untreated control cells (labeled ‘C’) and IAA-treated cells (labeled ‘I’) at different cell cycle phases in the clusters from Figure 3D using all sequencing reads, reads 0–100 bp in length, or reads 180–250 bp in length. Each row corresponds to one individual locus. (F–G) Relative pre-mRNA (F) and mRNA (G) levels in 2 hr IAA-treated cells compared to control cells of genes near regions in the clusters from Figure 3D. Each sample is normalized to the expression of Rps9. n = 5 biological replicates. Statistics for (F–G) are available in Supplementary file 1.
 
 To exclude that loss of chromatin accessibility simply reflects loss of TF binding, we separately analyzed the ATAC-seq signal of subnucleosomal reads (0–100 bp) and reads from single nucleosomes (180–250 bp). Both categories of reads displayed reduced accessibility after 2 hr of IAA treatment, in line with these being bona fide changes in accessibility (Figure 5—figure supplement 1A–E). To test if rapid changes in chromatin accessibility impact transcription of genes regulated by these loci, we extracted RNA after 2 hr of IAA treatment and performed RT-qPCR across intron-exon and exon-exon junctions to measure pre-mRNA levels and mRNA levels, respectively. We picked several genes where the closest OCT4 peak >1 kb from TSS was a locus from clusters 1–3 and for which nascent mRNA expression was downregulated upon 24 hr OCT4 depletion according to King and Klose (2017). For comparison, we also selected genes close to cluster 4 loci which were unaffected in expression after 24 hr of OCT4 depletion. All genes close to loci in clusters 1 and 2, and two out of five genes close to loci in cluster 3, showed a small decrease in pre-mRNA levels after OCT4 depletion, although only one gene (Myc) showed a statistically significant (p<0.05) change (Figure 5—figure supplement 1F and Supplementary file 1). In contrast, pre-mRNA levels of genes close to cluster 4 loci and mRNA (exon-exon) levels were generally unaffected, and one control gene (Cntln) displayed a significant increase in mRNA levels after OCT4 depletion (Figure 5—figure supplement 1F–G and Supplementary file 1). This indicates that rapid OCT4 depletion can impact transcription levels, particularly at genes close to loci regulated in accessibility by OCT4. In summary, these data suggest that regulation of enhancer accessibility and activity is extremely dynamic and requires the constant presence of OCT4.
 
@@ -94,72 +162,285 @@ Here we found that OCT4 is constantly required to maintain chromatin accessibili
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>ZHBTc4 ES cells</td>
+      <td>(Niwa et al., 2000)</td>
+      <td>RRID: CVCL_C715</td>
+      <td>OCT4 OFF cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>2TS22C ES cells</td>
+      <td>(Masui et al., 2007)</td>
+      <td>RRID: CVCL_E266</td>
+      <td>SOX2 OFF cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-BRG1</td>
+      <td>Abcam #ab110641</td>
+      <td>RRID: AB_10861578</td>
+      <td>ChIP (5 μg per 10 million cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-OCT4 monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_10547892</td>
+      <td>ChIP (20 μl per 10 million cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-H3K27ac polyclonal</td>
+      <td>Abcam #ab4729</td>
+      <td>RRID: AB_2118291</td>
+      <td>ChIP 2 μg/25 μg chromatin)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-OCT4 monoclonal</td>
+      <td>Santa Cruz #sc-5279</td>
+      <td>RRID: AB_628051</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SOX2 polyclonal</td>
+      <td>Thermo Fisher #48–1400</td>
+      <td>RRID: AB_2533841</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_12260</td>
+      <td>For lentiviral production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_12259</td>
+      <td>For lentiviral production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-PGK-YPet-MD</td>
+      <td>(Deluz et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-PGK-SNAP-MD-OCT4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate lentiviral particles for the MD-OCT4 cell line (see Figure 3A). Available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-PGK-SNAP-MD*-OCT4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate lentiviral particles for the MD*-OCT4 cell line (see Figure 3A). Available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLEX-mCherry-OCT4-AID</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to generate lentiviral particles for the OCT4-AID cell line (see Figure 4A). Available upon request</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FiJi</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td>RRID:SCR_002285</td>
+      <td>Version 2.0.0-rc-69/1.52 p</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>(Carpenter et al., 2006)</td>
+      <td>RRID:SCR_007358</td>
+      <td>Version 3.1.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>(Dobin et al., 2013)</td>
+      <td>RRID:SCR_015899</td>
+      <td>Version 2.6.1 c</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td>Broad Institute</td>
+      <td>RRID:SCR_006525</td>
+      <td>Version 2.8.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS</td>
+      <td>(Zhang et al., 2008)</td>
+      <td>RRID:SCR_013291</td>
+      <td>Version 2.1.1.20160309</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTools</td>
+      <td>(Quinlan and Hall, 2010)</td>
+      <td>RRID:SCR_006646</td>
+      <td>Version 2.26.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>(Robinson et al., 2010)</td>
+      <td>RRID:SCR_012802</td>
+      <td>Version 3.18.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>limma</td>
+      <td>(Ritchie et al., 2015)</td>
+      <td>RRID:SCR_010943</td>
+      <td>Version 3.32.10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>(Heinz et al., 2010)</td>
+      <td>RRID:SCR_010881</td>
+      <td>Version 4.10.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomaRt</td>
+      <td>(Durinck et al., 2005)</td>
+      <td>RRID:SCR_002987</td>
+      <td>Version 2.32.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>(Ramírez et al., 2016)</td>
+      <td>RRID:SCR_016366</td>
+      <td>Version 3.2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMTools</td>
+      <td>(Li et al., 2009)</td>
+      <td>RRID:SCR_002105</td>
+      <td>Version 1.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenomicRanges</td>
+      <td>(Lawrence et al., 2013)</td>
+      <td>RRID:SCR_000025</td>
+      <td>Version 1.28.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td></td>
+      <td>RRID:SCR_000432</td>
+      <td>Version 1.0.153</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>(Wickham, 2009)</td>
+      <td>RRID:SCR_014601</td>
+      <td>Version 3.2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Mouse ES cells were routinely cultured on cell culture-treated dishes coated with 0.1% gelatin (Sigma #G9391-100G) using the following culture medium: GMEM (Sigma #G5154-500ML) containing 10% ES-cell qualified fetal bovine serum (Gibco #16141–079), nonessential amino acids (Gibco #11140–050), 2 mM L-glutamine (Gibco #25030–024), sodium pyruvate (Sigma #S8636-100ML), 100 μM 2-mercaptoethanol (Sigma #63689–25 ML-F), penicillin and streptomycin (BioConcept #4–01 F00-H), in-house produced leukemia inhibitory factor (LIF), CHIR99021 (Merck #361559–5 MG) at 3 μM and PD184352 (Sigma #PZ0181-25MG) at 0.8 μM. Cells were passaged by trypsinization (Sigma #T4049-100ML) every two to three days. All cell lines used in this study were tested by Eurofins Genomics at the end of the study (August 2019) and found to be Mycoplasma-negative.
 
-## Lentiviral vector production
+### Lentiviral vector production
 
 Lentiviral vectors were produced by transfection of HEK 293 T cells with the envelope (psPAX2, Addgene #12260), packaging (pMD2.G, Addgene #12259) (Dull et al., 1998), and lentiviral construct of interest using Calcium Phosphate transfection, as described previously (Suter et al., 2006). Viral vectors were concentrated 120-fold by ultracentrifugation at 20’000 rpm for 90 min at 4°C. 50’000 cells in 1 ml of medium in a 24-well plate were transduced with 50 μl of concentrated lentiviral vector particles to generate stable cell lines.
 
 Cloning of overexpression constructs pLV-PGK-YPet-MD was derived from pLVTRE3G-SOX2-YPet-MD (Deluz et al., 2016) by amplification of YPet-MD and restriction cloning into pLV-rtTA3G-IRESBsd using AgeI and SalI. pLV-PGK-SNAP-MD-OCT4 and pLV-PGK-SNAP-MD*-OCT4 were derived by amplification of MD or MD* from SNAP-MD-SOX2 (Addgene #115687) and SNAP-MD*-SOX2 (Addgene #115688) (Deluz et al., 2016) and restriction cloning into pLVTRE3G-OCT4-YPet (Deluz et al., 2016) using SalI and XbaI. SNAP-MD-OCT4 and SNAP-MD*-OCT4 were further amplified and cloned by restriction cloning into pLV-rtTA3G-IRESBsd (Deluz et al., 2016) using AgeI and SalI. pLV-pCAGGS-Tir1-V5 was derived by amplification of pCAGGS-Tir1-V5 from pEN395 (Addgene #92141) (Nora et al., 2017) and In-fusion cloning into pLV-PGK-SOX2-SNAP-IRES-Hygro (Strebinger et al., 2019) digested using XhoI and XbaI restriction enzymes. pLEX-mCherry-OCT4-AID was derived by amplification of OCT4 from pLV-PGK-SNAP-MD-OCT4, AID 71–114 from pEN244 (Addgene #92140) (Nora et al., 2017), and mCherry from pLV-TRE3G-mCherry-PGK-Puro (Suter lab). mCherry and OCT4 were ligated using an XmaI restriction site and mCherry-OCT4 was cloned into the pLEX_305-C-dTAG backbone (Addgene #91798) (Nabet et al., 2018) using AgeI and NheI restriction sites. OCT4 was amplified and ligated to amplified AID 71–114 using a KpnI restriction site. The OCT4-AID fragment was cloned into the pLEX-mCherry-OCT4 vector using XmaI and MluI restriction sites. Note that this construct acquired a G161T mutation in the coding DNA sequence of OCT4, which gives rise to a G54V mutation in the OCT4 peptide sequence of mCherry-OCT4-AID. However, this is inconsequential since this construct is functional in maintaining pluripotency (Figure 4—figure supplement 1A–B).
 
-## Generation of stable cell lines
+### Generation of stable cell lines
 
 To generate MD-OCT4 cell lines, ZHBTc4 cells were transduced with SNAP-MD-OCT4 and SNAP-MD*-OCT4 lentiviral vector particles and sorted to display near-identical average SNAP levels (Figure 3—figure supplement 1A), subsequently transduced with PGK-YPet-MD lentiviral vector particles, and sorted to display near-identical average YPet-MD levels. To generate the OCT4-AID cell line, ZHBTc4 cells were transduced with pLV-pCAGGS-Tir1-V5 and pLEX-mCherry-OCT4-AID packaged lentiviral vectors (i.e Tir1-V5 and mCherry-OCT4-AID virus, respectively) and were selected with 2 μg/ml Puromycin (Thermo Fisher Scientific #A1113803) for 10 days. Subsequently, mCherry positive cells were sorted and transduced with PGK-YPet-MD lentiviral particles and sorted for YPet positive cells. Cells that displayed IAA-dependent degradation were selected by sorting a narrow window of mCherry-positive cells, followed by treatment with 500 nM IAA (Sigma #I5148-2G) for 1 hr, and sorting for mCherry-negative cells. All cell lines were maintained in medium without dox (Sigma #D3447-500MG) or IAA prior to experiments.
 
-## Treatment conditions
+### Treatment conditions
 
 Cells were seeded at a concentration of 9’000–18’000 cells per cm2 one day before the start of treatment. ZHBTc4 YPet-MD SNAP-MD-OCT4 and SNAP-MD*-OCT4 were treated with 1 mg/ml dox for 40 hr prior to cell sorting. ZHBTc4 YPet-MD TIR1-V5 mCherry-OCT4-AID cells were treated with 1 mg/ml dox for 24 hr before adding IAA. Dox was maintained throughout the experiment. Cells were treated with 500 nM IAA (or not for control) for 2 hr or treated with 500 nM IAA (or not for control) for 2.5 hr, washed five times with PBS with 2 min incubation, and placed back in medium containing 1 mg/ml dox for 4.5 hr. For the time course experiment, OCT4-AID cells were seeded in different wells of a 24-well plate and treated with dox for 24 hr before adding IAA. Dox was maintained throughout the experiment. IAA was added at different time points (with one well left untreated) prior to cell collection. All wells were collected at the same time and subjected to ATAC-seq as described below.
 
-## Cell cycle phase sorting
+### Cell cycle phase sorting
 
 Cells were trypsinized, resuspended in culture medium with 50 mM Hoechst33342 (Thermo Fisher Scientific #H3570), and incubated for 15 min at 37°C. Cells were then spun down, resuspended in cold PBS with 1% FBS, and sorted according to their YPet-MD and Hoechst profile (Figure 3—figure supplement 1B). Cells were sorted at 4°C into 1.5 ml Eppendorf tubes or 15 ml Falcon tubes containing a small amount of PBS with 1% FBS. Sorting for SNAP levels was done on a MoFlo Astrios (Beckman Coultier). All other sorting was done on a FACSAria II or a FACSAria Fusion (BD Biosciences).
 
-## ATAC-seq
+### ATAC-seq
 
 All ATAC-seq experiments were performed in biological duplicates except for IAA-treated mCherry-OCT4-AID cells sorted in EG1, LG1, and S phase where three replicates were performed. 50’000 cells were collected either directly after trypsinization or after sorting as described above and subjected to ATAC-seq as described previously (Buenrostro et al., 2013). All centrifugation steps were done at 800 g at 4°C. Briefly, cells were centrifuged for 5 min and washed with cold PBS, then centrifuged for 5 min and resuspended in cold lysis buffer (10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% NP-40), and centrifuged for 10 min. Subsequently, nuclei were resuspended in a solution of 0.5 mM Tn5 (in-house preparation according to Chen et al., 2017) in TAPS-DMF buffer (10 mM TAPS-NaOH, 5 mM Mgcl2, 10% DMF) and incubated for 30 min at 37°C. DNA was immediately purified using column purification (Zymo #D4004) and eluted in 10 ml nuclease-free H2O. Transposed DNA was amplified in a solution containing 1X NEBNextHigh Fidelity PCR Master Mix (NEB #M0541L), 0.5 μM of Ad1_noMX universal primer, 0.5 μM of Ad2.x indexing primer and 0.6x SYBR Green I (Thermo Fisher Scientific #S7585) using 72°C for 5 min, 98°C for 30 s, and 5 cycles of 98°C for 1 s, 63°C for 30 s, and 72°C for 60 s. 10 μl of amplified DNA was analyzed by qPCR to determine the total number of cycles to avoid amplification saturation and accordingly amplified with additional 3–7 cycles of 98°C for 10 s, 63°C for 30 s, and 72°C for 60 s. DNA was purified using column purification (Zymo #D4004) and size-selected by taking the unbound fraction of 0.55X AMPure XP beads (Beckman Coultier #A63880) followed by the bound fraction of 1.2X AMPure XP beads. Libraries were sequenced on an Illumina NextSeq 500 using 75 nucleotide read-length paired-end sequencing.
 
-## ChIP-seq
+### ChIP-seq
 
 All ChIP-seq experiments were performed in biological duplicates. Roughly 10 million cells per sample were collected after trypsinization and fixed with 2 mM disuccinimidyl glutarate (Thermo Fisher Scientific #20593) in PBS for 50 min at room temperature, spun down at 600 g for 5 min and washed once with PBS. Cells were then treated with 1% formaldehyde (Axon Lab #A0877,0500) for 10 min at room temperature and quenched with 200 mM Tris-HCl pH 8.0 for 10 min, washed with PBS and spun down. For ZHBTc4 YPet-MD SNAP-MD-OCT4 and SNAP-MD*-OCT4 cells, cells were subsequently resuspended in cold PBS with 1% FBS and at least 500’000 cells per cell cycle phase were sorted (see Cell cycle phase sorting section above). Fixed cell pellets were kept on ice and resuspended in LB1 (50 mM HEPES-KOH pH 7.4, 140 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 10% Glycerol, 0.5% NP-40, 0.25% Triton X-100), incubated 10 min at 4°C, spun down at 1700 g, and resuspended in LB1 a second time, spun down and resuspended in LB2 (10 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA), incubated for 10 min at 4°C, spun down and washed without disturbing the pellet three times with SDS shearing buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA, 0.15% SDS) and finally resuspended in SDS shearing buffer. All buffers contained Protease Inhibtor Cocktail (Sigma #P8340-1ML) at 1:100 dilution. Chromatin was sonicated for 20 min at 5% duty cycle, 140 W, 200 cycles on a Covaris E220 focused ultrasonicator. Sonicated chromatin was equilibrated to 1% Triton X-100 and 150 mM NaCl and incubated with each antibody overnight at 4°C. Antibodies used were anti-BRG1 (Abcam #ab110641) at 5 μg per 10 million cells, anti-OCT4 (Cell Signaling Technology #5677S) at 20 μl per 10 million cells, and anti-H3K27ac (Abcam #ab4729) at 2 μg/25 μg chromatin. Protein G Dynabeads (Thermo Fisher Scientific #10003D) were blocked with 5 mg/ml BSA in PBS, added to chromatin, and incubated at 4°C for 3 hr. Beads were washed twice with Low Salt wash buffer (10 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.15% SDS, 1 mM PMSF), once with High Salt wash buffer (10 mM Tris-HCl pH 8.0, 500 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.15% SDS, 1 mM PMSF), once with LiCl wash buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA, 0.5 mM EGTA, 250 mM LiCl, 1% NP40, 1% sodium deoxycholate, 1 mM PMSF), and finally with 1X TE (10 mM Tris pH 8.0, 1 mM EDTA) before being resuspended in ChIP Elution buffer (10 mM Tris pH 8.0, 1 mM EDTA, 1% SDS, 150 mM NaCl) with 400 ng/μl Proteinase K (Qiagen #19131) and reverse-crosslinked overnight at 65°C. DNA was purified using a MinElute PCR purification kit (Qiagen #28004) and libraries were prepared with the NEBNext Ultra II DNA Library Prep Kit (NEB #E7645S). Libraries were sequenced on an Illumina NextSeq 500 using 75-nucleotide read length paired-end sequencing.
 
-## Pluripotency assays and RT-qPCR
+### Pluripotency assays and RT-qPCR
 
 ZHBTc4 YPET-MD cells expressing SNAP-MD-OCT4 or SNAP-MD*-OCT4 or ZHBTc4 cells expressing mCherry-OCT4-AID from the EF1α promoter were plated at 400 cells per well in a 6-well plate with ES cell medium (see above) with 0 or 1 µg/ml dox and medium was refreshed every other day. At day 7, flat and dome-shaped colonies were scored according to morphology and counted (SNAP-MD-OCT4 and SNAP-MD*-OCT4) or total colonies were counted (mCherry-OCT4-AID) followed by alkaline phosphatase staining (Sigma #86R-1KT). For RT-qPCR experiments, cells were collected at day 7 (Figure 3—figure supplement 1G) or after 26 hr of dox treatment and 2 hr with or without IAA treatment (Figure 5—figure supplement 1F–G) and RNA was extracted using GenElute Mammalian Total RNA MiniPrep Kit (Sigma #RTN350). cDNA was synthesized using oligodT primers (Figure 3—figure supplement 1G) or random hexamers (Figure 5—figure supplement 1F–G) using SuperScript II Reverse Transcriptase (Thermo Fisher Scientific #18064014). qPCR was performed on a 7900HT (Applied Biosystems). The 2(-Ct) value of each primer pair was normalized to that of Rps9 in the same sample. Primers are listed in Supplementary file 4.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 2TS22C and ZHBTc4 cells were plated in a 96-well plate coated for 1 hr at 37°C with 1:25 diluted StemAdhere (Primorigen Biosciences #S2071-500UG), treated with 1 mg/ml dox for different durations and fixed with 2% formaldehyde for 30 min at room temperature, washed with PBS, permeabilized with PBS with 5% FBS and 0.5% Triton X-100 for 30 min at room temperature, and incubated with the primary antibody, anti-OCT4 C-10 (Santa Cruz #sc-5279) at 1:500 dilution and anti-SOX2 (ThermoFisher #48–1400) at 1:200 dilution, in PBS with 5% FBS and 0.1% Triton X-100 at 4°C overnight. After washing with PBS, cells were incubated with the secondary antibody, anti-Mouse IgG AF488 (Thermo Fisher Scientific #A28175) and anti-Rabbit IgG AF647 (Thermo Fisher Scientific #A27040) at 1:1000 dilution, in PBS with 5% FBS and 0.1% Triton X-100 for 60 min at room temperature, with 2 ng/ml DAPI (Thermo Fisher Scientific #62248) for 10 min at room temperature and subsequently washed and imaged on an IN Cell Analyzer 2200 (GE Healthcare). Images were background-subtracted using FiJi (Schindelin et al., 2012) with a rolling ball radius of 50 pixels and analyzed using CellProfiler (Carpenter et al., 2006). Nuclei were identified using the Watershed module on the DAPI channel, objects that were too large or too small were discarded, and the mean intensity in the OCT4 and SOX2 channels was measured within the identified nuclei.
 
-## Time-lapse microscopy
+### Time-lapse microscopy
 
 ZHBTc4 YPet-MD TIR1-V5 mCherry-OCT4-AID cells were plated in a 96-well plate coated for 1 hr at 37°C with 1:25 diluted StemAdhere (Primorigen Biosciences #S2071-500UG) in Phenol Red-free medium and imaged on an IN Cell Analyzer 2200 (GE Healthcare) using the TexasRed and Brightfield channels. Cells were treated with IAA or washed just prior to imaging. Images were background-subtracted using FiJi (Schindelin et al., 2012) with a rolling ball radius of 50 pixels and nuclei were tracked manually over time using the Manual Tracking plugin in FiJi in the Brightfield channel. The mean signal in 10 pixels around the tracked spot were measured in the TexasRed channel and the mean background signal at an equivalent sized spot free from cells (background) was subtracted at each time point.
 
-## Data analysis for ATAC-seq and ChIP-seq
+### Data analysis for ATAC-seq and ChIP-seq
 
 All sequencing libraries were aligned to the mm10 Mus musculus genome (GRCm38 release 87) with STAR 2.6.1c (Dobin et al., 2013) and duplicate reads were removed using Picard (Broad Institute). Reads not mapping to chromosomes 1–19, X, or Y were removed. Peaks were called with MACS 2.1.1.20160309 (Zhang et al., 2008) with settings ‘-f BAMPE -g mm’. For comparative analysis of ZHBTc4 and 2TS22C cells, all peaks from ZHBTc4 and 2TS22C ATAC-seq experiments were merged with BEDTools (Quinlan and Hall, 2010). For MD-OCT4 and OCT4-AID analyses, peaks from all ATAC-seq experiments of dox-treated cells in the corresponding cell lines were merged. For MD-OCT4 H3K27ac analysis, peak coordinates were expanded by 500 bp on both sides to account for the enrichment profile of H3K27ac. All peaks larger than 5 kb, overlapping peaks called in Input (no immunoprecipitation) samples from ES cells in S2iL (GSE89599) or SL (GSE87822), or overlapping blacklisted peaks (ENCODE Project Consortium, 2012) were removed. The HOMER2 (Heinz et al., 2010) functions makeTagDirectory and annotatePeaks.pl with settings ‘-noadj -len 0 -size given’ were used for read counting and count tables were loaded into RStudio. TMM Normalization was done with edgeR (Robinson et al., 2010) and analysis of differentially accessible regions was done with limma (Ritchie et al., 2015). Contrasts were designed as ~0+Condition+Replicate, where Condition specifies the cell line and treatment and Replicate the date of the experiment, to take into account the paired nature of the experiments. For comparing unpaired experiments, that is untreated ZHBTc4 vs 2TS22C cell lines or untreated ZHBTc4 in SL versus S2iL,~0+Condition was used. For Figure 3—figure supplement 4A–B, the mean of the TMM-normalized reads in the ChIP-seq and ATAC-seq replicates was divided by the nucleotide length of each region. For Figure 5C–F and Figure 5—figure supplement 1A–D, the mean of the TMM-normalized reads in the replicates was used. Replicate bam files were merged using SAMTools (Li et al., 2009) and converted to bigWig files using the deepTools 3.1.3 (Ramírez et al., 2016) function bamCoverage with settings ‘—normalizeUsing RPKM’. SAMTools and awk were used on merged bam files to spit reads into size classes. Average lineplots were generated using deepTools computeMatrix (with setting ‘reference-point’) and custom R code. Heatmaps were generated using the deepTools function plotHeatmap. Genome tracks were made in the UCSC genome browser (Kent et al., 2002). Plots were generated using ggplot2 (Wickham, 2009). Overlap between genomic regions was determined using GenomicRanges (Lawrence et al., 2013). Heatmaps of fold-changes were generated using ComplexHeatmap in R (Gu et al., 2016). Color schemes were taken from colorbrewer2.org and https://rpubs.com/Koundy/71792.
 
-## Motif analysis and gene ontology enrichment
+### Motif analysis and gene ontology enrichment
 
 The HOMER2 function findMotifsGenome.pl was used with the setting ‘-size given’ for motif searching. The most frequent known motif in target regions of a given class of known motifs (i.e. different versions of SOX and OCT motifs) was used. Background was calculated as the mean of HOMER-estimated background frequency in all groups/clusters. The HOMER2 function scanMotifGenomeWide.pl was used to determine the number of OCT4::SOX2 motifs per region (Figure 3E). For GO enrichment analysis, the closest Entrez gene entry TSS to each region was used, enrichment was calculated using the HOMER2 function findGO.pl with setting ‘mouse’, and -logP values within each category (e.g. KEGG) were Z-transformed. Gene names were converted between assemblies using biomaRt (Durinck et al., 2005). Only GO categories with a Z-score >3 are shown in the heatmap in Figure 3—figure supplement 3B, which was generated using pheatmap in R.
 
-## Random forest model
+### Random forest model
 
 The model was generated as described previously (Strebinger et al., 2019). Briefly, all peak files in the Mouse_Factor and Mouse_Histone categories in cistromeDB (Mei et al., 2017) were batch downloaded (http://cistrome.org/db) and for all peak files where the cell type was ‘Embryonic Stem Cell’ overlap with our cluster regions was determined using the BEDTools function intersect. Regions were randomly sampled from clusters 2–4 to contain the same number of regions as cluster 1 (n = 1’897). These were split into training (80%, n = 6’070) and test (20%, n = 1’518) regions. The function randomForest in R was used with the settings ‘formula = Cluster ~ ., mtry = 4, ntree = 2001’ on the training regions. The predict function in R was used with setting ‘type = "response"’ to use the model for predicting the clusters of the regions in the test data.
 
-## Published datasets
+### Published datasets
 
 Published data (see Supplementary file 5) were aligned and processed as described above. Processed bigWig files (see Supplementary file 5) were downloaded from GEO (Edgar et al., 2002) or cistromeDB (Mei et al., 2017). When necessary, peak files were converted to mm9 using liftOver (Hinrichs et al., 2006). OCT4 and SOX2 ChIP-seq peaks were derived from newly generated (2TS22C OCT4) and published (ZHBTc4 OCT4 and SOX2) (King and Klose, 2017) datasets as described above as well as from processed SOX2 ChIP-seq peaks from asynchronous E14 cells (GSE89599) (Deluz et al., 2016) and merged with BEDTools. Super-enhancers and typical enhancers were taken from Sabari et al. (2018) and converted to mm10 using liftOver. ChromHMM tracks from mouse ES cells were downloaded from https://github.com/guifengwei/ChromHMM_mESC_mm10 (Pintacuda et al., 2017). ATAC-seq data from OCT4 high and OCT4 low sorted cells were taken from a previous study (GSE126554) (Strebinger et al., 2019) and processed as described above, merging SHOH and SLOH samples into OCT4 high and SLOL and SHOL samples into OCT4 low.
 
-## K-means clustering
+### K-means clustering
 
 Clusters in Figure 3D were generated using the R function pheatmap with settings ‘clustering_distance_rows = "euclidean", kmeans_k = 4’ on a matrix containing the log2 fold-change values in accessibility between MD-OCT4 and MD*-OCT4 at each cell cycle phase (columns) at each OCT4-bound locus (rows). Clusters were ordered according to the lowest mean log2 fold-change in EG1.
 
-## Exponential curve fitting
+### Exponential curve fitting
 
 Exponential decays were fitted using the R function nls with the formula y ~ a*e(-b*x)+c where a, b, and c are constants. Half-life values were derived as log(2)/b.
 
-## Statistical analysis
+### Statistical analysis
 
 Distributions were tested for non-normality using the Shapiro-Wilk test and if p<0.05 for any of the samples a non-parametric (Mann-Whitney U, or Wilcoxon signed rank test if paired) test was used, otherwise a t-test was used. These were performed using two-tailed distributions and with unequal variance. In cases where comparison experiments were matched (e.g. treatment and control handled at the same time), paired testing was performed, except for non-parametric tests with n < 5 where the Wilcoxon signed rank test cannot give precise p-values. For average lineplots (e.g. Figure 1D), distributions of RPKM-normalized reads derived from deepTools matrices on merged bigWig files were compared at x = 0 (Peak center) except for H3K27ac ChIP-seq (Figure 1F–G) where comparisons were done at x = +/- 400 (Supplementary file 1). Fisher’s exact tests were performed on a 2 × 2 matrix with the number of regions in the category of interest and the total number of regions in the two comparison groups. Correlation p-values were generated using the stat_cor function in the ggpubr package in R.

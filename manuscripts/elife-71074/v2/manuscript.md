@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Attempts to minimize scarring remain among the most difficult challenges facing surgeons, despite the use of optimal wound closure techniques. Previously, we reported improved healing of dermal excisional wounds in circadian clock neuronal PAS domain 2 ( Npas2 )-null mice. In this study, we performed high-throughput drug screening to identify a compound that downregulates Npas2 activity. The hit compound (Dwn1) suppressed circadian Npas2 expression, increased murine dermal fibroblast cell migration, and decreased collagen synthesis in vitro. Based on the in vitro results, Dwn1 was topically applied to iatrogenic full-thickness dorsal cutaneous wounds in a murine model. The Dwn1-treated dermal wounds healed faster with favorable mechanical strength and developed less granulation tissue than the controls. The expression of type I collagen, Tgfβ1, and α-smooth muscle actin was significantly decreased in Dwn1-treated wounds, suggesting that hypertrophic scarring and myofibroblast differentiation are attenuated by Dwn1 treatment. NPAS2 may represent an important target for therapeutic approaches to optimal surgical wound management.
+Attempts to minimize scarring remain among the most difficult challenges facing surgeons, despite the use of optimal wound closure techniques. Previously, we reported improved healing of dermal excisional wounds in circadian clock neuronal PAS domain 2 (Npas2)-null mice. In this study, we performed high-throughput drug screening to identify a compound that downregulates Npas2 activity. The hit compound (Dwn1) suppressed circadian Npas2 expression, increased murine dermal fibroblast cell migration, and decreased collagen synthesis in vitro. Based on the in vitro results, Dwn1 was topically applied to iatrogenic full-thickness dorsal cutaneous wounds in a murine model. The Dwn1-treated dermal wounds healed faster with favorable mechanical strength and developed less granulation tissue than the controls. The expression of type I collagen, Tgfβ1, and α-smooth muscle actin was significantly decreased in Dwn1-treated wounds, suggesting that hypertrophic scarring and myofibroblast differentiation are attenuated by Dwn1 treatment. NPAS2 may represent an important target for therapeutic approaches to optimal surgical wound management.
 
 ## Introduction
 
@@ -42,11 +42,19 @@ In this study, we hypothesized that the therapeutic suppression of Npas2 potenti
 
 ## Results
 
-## Murine dorsal incisional wound model
+### Murine dorsal incisional wound model
 
 While the goal of closing a wound surgically with sutures or other material is to facilitate primary wound healing and yield the best functional and cosmetic outcome, unpredictable factors such as wound infection, dehiscence, or ‘spitting’ of sutures (Kim et al., 2018) can disrupt wound integrity and lead to healing by secondary intention. This process is characterized by the deposition of an excess of granulation tissue and leads to hypertrophic scarring (Azmat and Council, 2020). To evaluate the healing of a full-thickness dermal wound by secondary intention, we developed a modification of a previously described murine model (Ansell et al., 2014). Two parallel incisions were made on the dorsal skin of each experimental subject animal, and full-thickness dermis was excised to achieve bilateral defects with uniform dimensions. One suture was placed at the midpoint of each wound to approximate the wound edges, while the anterior and posterior margins of the wound remained separated. This model generated two zones in each incisional wound: the center zone, with suture-supported tissue approximation, and the open peripheral zones (Figure 1a). We used visual analog scale (VAS) scoring (Duncan et al., 2006) to validate the model. Each wound was evaluated on a daily basis using photographs of the surgical sites (Figure 1b). VAS values from the left- and right-side wounds remained comparable between sides, remaining at the moderate healing level until day 6, primarily due to the sustained open wound in the peripheral zones (Figure 1c). Hematoxylin-eosin (HE) and Masson’s trichrome (MT) staining showed divergent healing patterns in the central wound zones compared to the peripheral zones. The center zones showed good approximation of the wound edges, indicating successful healing by primary intention. In contrast, the peripheral zones formed larger beds of granulation tissue and demonstrated darker MT-stained collagen fibers in the dermis of the wound edges (Figure 1d). Quantitative scar index analysis (Zheng et al., 2011) showed significantly higher values in the peripheral zones than in the central zones (Figure 1e). Additionally, segmented color analysis of MT-stained sections (Figure 1—figure supplement 1) revealed that collagen fiber density was significantly higher in the peripheral zones than in the central zones (Figure 1f). The central zone wound underwent primary intention healing, while the peripheral zone of this model demonstrated secondary intention healing. Based on these observations, we are confident that the peripheral zone in our model is representative of dermal and subcutaneous wound healing and not the morpho-functional influences of deeper muscle layers that have been described in murine models (Zomer and Trentin, 2018). Our full-thickness incisional wound was limited to the panniculus carnosus (Figure 1d) to minimize the involvement of the muscle layers.
 
-## Identification of therapeutic compounds by high-throughput drug screening for Npas2 downregulation in dermal Fibroblasts
+![Figure 1.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of the animal model. Vertical wounds (10 × 1.5 mm2) on both the left and right sides were made with a double-bladed scalpel. One 5–0 nylon suture was placed at the center of the wound. (b) The visual analog scale (VAS) was scored every postoperative day until postoperative day 7 using gross images of the wounds (n = 5 per group). (c) Postoperative gross images of the wounds/scars with a ruler in units of mm. (d) Histological images of the center (left) and periphery (right) of wounds/scars on postoperative day 7. The upper two were stained with hematoxylin-eosin (HE). The lower two were stained with Masson’s trichrome (MT). Yellow dotted lines indicate granulation tissue. Scale bar is 1000 μm. (e) The scar index was evaluated using HE-stained slices, and a significantly higher scar index was obtained in peripheral sections than in center sections (n = 5 per group). (f) The percent area of fibrous tissue in the peripheral section was significantly higher than that in the central section (n = 5 for center sections, n = 4 for peripheral sections).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Histological image illustrating the measurement of four points of dermal thickness (D1, D2, D3, and D4). The yellow dotted line represents the scar area (S). The scar index was calculated by dividing the scar area by the average dermal thickness. (b) The original Masson’s trichrome staining image was divided into blue, green, and red channels. The red channel image was then subtracted from the blue channel, yielding an image representing the fibrous tissues contained within the wound.
+
+### Identification of therapeutic compounds by high-throughput drug screening for Npas2 downregulation in dermal Fibroblasts
 
 An HTS system was designed to identify compounds that modulate Npas2 expression using murine dermal fibroblasts engineered to carry the reporter gene LacZ in the Npas2 allele. We selected small molecule compounds from an FDA-approved drug library (1120 compounds). Reporter gene assays are widely used in HTS to identify compounds that modulate target gene expression (Siebring-van Olst and van Beusechem, 2018). In this study, we sought to identify small chemical compounds that downregulate Npas2 expression. However, we found that some hit compounds that suppressed Npas2 were false positives due to cytotoxicity that led to cell death or growth suppression.
 
@@ -56,9 +64,9 @@ The HTS data sets from both assays were subjected to in silico computation. Npas
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig2-v2.jpg)
 
-**Figure 2.:** Npas2 suppression in dermal fibroblasts in vitro.(a) A scatter plot of the high-throughput drug screening assay in vitro using the FDA-approved compound library at Molecular Screening Shared Resource (MSSR) at University of California Los Angeles (UCLA). A high absolute value of a negative Npas2 Z score indicates that Npas2 expression was highly downregulated (X axis). A high cell viability Z score indicates that fibroblasts had high viability (Y axis). A candidate compound (Dwn1) was selected based on the highest absolute value of the negative product of the Npas2 Z score and highest viability. (b) Circadian Npas2 expression in murine dermal fibroblasts treated with or without Dwn1 was evaluated (n = 3). The p value (0.0346) in the graph represents the subject of treatment. (c) The cell migration of murine dermal fibroblasts treated with Dwn1 was evaluated. The number of cells that migrated toward the central area was counted (n = 5). The p value (0.0045) in the graph represents the subject of treatment and time. (d) The cell migration of Npas2 knockout (KO) fibroblasts treated with Dwn1 was evaluated. The cell migration to the scratched area by Npas2 KO fibroblasts was not affected by Dwn1.Figure 2—source data 1.
+**Figure 2.:** (a) A scatter plot of the high-throughput drug screening assay in vitro using the FDA-approved compound library at Molecular Screening Shared Resource (MSSR) at University of California Los Angeles (UCLA). A high absolute value of a negative Npas2 Z score indicates that Npas2 expression was highly downregulated (X axis). A high cell viability Z score indicates that fibroblasts had high viability (Y axis). A candidate compound (Dwn1) was selected based on the highest absolute value of the negative product of the Npas2 Z score and highest viability. (b) Circadian Npas2 expression in murine dermal fibroblasts treated with or without Dwn1 was evaluated (n = 3). The p value (0.0346) in the graph represents the subject of treatment. (c) The cell migration of murine dermal fibroblasts treated with Dwn1 was evaluated. The number of cells that migrated toward the central area was counted (n = 5). The p value (0.0045) in the graph represents the subject of treatment and time. (d) The cell migration of Npas2 knockout (KO) fibroblasts treated with Dwn1 was evaluated. The cell migration to the scratched area by Npas2 KO fibroblasts was not affected by Dwn1.
 
-## Dwn1 downregulates murine dermal fibroblast Npas2 expression and increases cell migration in vitro
+### Dwn1 downregulates murine dermal fibroblast Npas2 expression and increases cell migration in vitro
 
 Based on our HTS results, the hit compound Dwn1 was used to study Npas2 circadian expression and fibroblast migration. The gene expression of Npas2 in murine dermal fibroblasts was evaluated every 6 hr for 48 hr following synchronization. Npas2 expression was suppressed by Dwn1 (two-way ANOVA: treatment p = 0.0346) (Figure 2b). However, the circadian pattern of Npas2 expression was not completely diminished (two-way ANOVA: treatment × time p = 0.2664).
 
@@ -66,31 +74,39 @@ The effect of Dwn1 on the migration ability of murine dermal fibroblasts was eva
 
 To test if the effect of Dwn1 required the Npas2 axis, we performed in vitro wound scratch assay using dermal fibroblasts derived from Npas2 KO mice (Figure 2d). The cell migration to the scratched area by Npas2 KO fibroblasts was faster than wild-type (WT) control fibroblasts but was not affected by Dwn1, suggesting that the Dwn1-induced Npas2 downregulation primarily influenced the increased fibroblast migration. Taken together, the therapeutic hit compound Dwn1 was validated for further evaluation in skin wound healing.
 
-## Dwn1 attenuated fibroblast collagen deposition in vitro
+### Dwn1 attenuated fibroblast collagen deposition in vitro
 
 Hypertrophic scarring is the clinical manifestation of a dermal fibroproliferative disorder characterized by excessive collagen deposition by fibroblasts. Normal skin and hypertrophic scars both contain collagen fibers composed of type I and type III collagen molecules; however, hypertrophic scars exhibit irregular organization of collagen bundles (Cuttle et al., 2005). Tissue-specific collagen fiber organization is regulated in part by the fibril-associated collagen with interrupted triple helices (FACIT) minor collagen species. Type XIV collagen is a FACIT molecule found in skin and plays an important role in functional dermal collagen fibrogenesis (Castagnola et al., 1992; Berthod et al., 1997). In this study, collagen deposition and collagen gene expression were evaluated in murine dermal fibroblasts treated with Dwn1. Ascorbic acid-mediated in vitro collagen synthesis was measured by picrosirius red staining. The treatment of dermal fibroblast cultures with Dwn1 significantly decreased collagen deposition (Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig3-v2.jpg)
 
-**Figure 3.:** (a) Gross and microscopic images of picrosirius red staining of murine dermal fibroblasts treated with various doses of Dwn1 on days 3 and 7. The right graph represents a quantitative measurement of picrosirius red. (n = 3) AA: L-ascorbic acid. OD: optical density. CTRL: fibroblasts treated with control medium without AA. (b) Gene expression of collagen type Iα1 (Col1a1), Iα2 (Col1a2), IIIα1 (Col3a1), and XIV (Col14a1) in fibroblasts treated with various doses of Dwn1 on days 3 and 7 (n = 3).Figure 3—source data 1.
+**Figure 3.:** (a) Gross and microscopic images of picrosirius red staining of murine dermal fibroblasts treated with various doses of Dwn1 on days 3 and 7. The right graph represents a quantitative measurement of picrosirius red. (n = 3) AA: L-ascorbic acid. OD: optical density. CTRL: fibroblasts treated with control medium without AA. (b) Gene expression of collagen type Iα1 (Col1a1), Iα2 (Col1a2), IIIα1 (Col3a1), and XIV (Col14a1) in fibroblasts treated with various doses of Dwn1 on days 3 and 7 (n = 3).
 
 The mechanism of the reduction in collagen deposition by Dwn1 was investigated by studying the expression of type I, III, and XIV collagen genes. The expression of Col1a1, Col1a2, and ColI3a1 was affected by Dwn1 supplementation (10 µM) (Figure 3b). Type I collagen is composed of two alpha-1 chains and one alpha-2 chain (Prockop and Kivirikko, 1995; Lu et al., 2019). Although Col1a1 gene expression was increased on day 7, a reduction in Col1a2 expression would predict a decrease in the formation of type I collagen heterotrimer. Type III collagen is a homotrimer of alpha-1 chains and occupies the center of type I collagen fibrils (Keene et al., 1987). We observed a decrease in Col3a1 expression in cultures treated with Dwn1, which may decrease overall collagen fiber synthesis. In contrast, the expression of Col14a1 was significantly increased by Dwn1 in a dose-dependent fashion (Figure 3b). Knowing that a lack of type XIV collagen contributes to the abnormally thick type I collagen fibrils in skin in null mutation models (Ansorge et al., 2009), the increased FACIT type XIV collagen synthesis induced by exposure to Dwn1 may limit collagen fiber thickness and normalize dermal collagen fiber organization.
 
-## Dwn1 accelerates murine dorsal incisional wound healing with minimal scarring
+### Dwn1 accelerates murine dorsal incisional wound healing with minimal scarring
 
 Murine dorsal incisional wounds were treated topically with vehicle (10% DMSO) or Dwn1 (30 µM dissolved in 10% DMSO) once a day throughout the observation period. One wound was excluded due to postoperative inflammation. Serial photographs depict wound closure at the peripheral zones of the incisional wounds in the Dwn1-treated group (Figure 4a). During the first 7 days, VAS scoring yielded scores at the moderate healing level (Figure 4b), similar to untreated controls without any significant difference (Figure 1b). By comparison, the VAS scores of the Dwn1-treated group gradually decreased, and the VAS time course profile was significantly different from that of the vehicle control (two-way ANOVA: treatment p = 0.0075). On day 14, there was no significant difference in VAS scores between the vehicle control and the Dwn1-treated group (t-test: p = 0.6889) (Figure 4b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig4-v2.jpg)
+
+**Figure 4.:** (a) Gross images on days 0, 2, 5, 7, and 14 (D0, D2, D5, D7, and D14, respectively) after the surgery and starting topical daily application of the vehicle (10% DMSO) or Dwn1 on the wounds. Veh: vehicle. (b) Visual analog scale (VAS) of the wounds treated with vehicle (n = 5) or Dwn1 (n = 6). During the first 7 days, the p value (0.0075) in the graph represents the subject of treatment. There was a significant effect on time (p < 0.0001). The interaction time and treatment had no significant effect (p = 0.3539). On day 14, there was no significant difference (p = 0.6889) in VAS scores between the vehicle control (n = 8) and the Dwn1-treated group (n = 4). (c) Histological images of peripheral wounds treated with vehicle or Dwn1 on day 7 postoperatively. Yellow dotted lines indicate granulation tissue. Left images were stained with hematoxylin-eosin (HE), and right images were stained with Masson’s trichrome (MT). Scale bar is 1000 μm. (d) The scar index of wounds treated with vehicle or Dwn1 was evaluated (n = 5). (e) The percentage area of fibrous tissue was evaluated using MT-stained slices (n = 5). (f) (Left) Representative force-displacement curve of a dermal strip. Inserted images represented the dermal strips at the beginning and termination of the tensile strength test. (Right) The maximum load to tear the dermal strip including the incisional wound at the center treated with vehicle or Dwn1. The tensile strength of Dwn1-treated dermal strips (n = 8) were significantly larger than vehicle-treated dermal strips on both 7 and 14 days after wounding.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** There was a significant difference between vehicle and intact skin (t-test, p = 0.0048), and the tensile strength in the vehicle control dermal wound (2.61 ± 0.91) was not significantly increased (t-test, p = 0.1418) from that on day 14 (2.04 ± 0.48) (Figure 4f).
 
 Histological cross-sections of the peripheral incisional wound zones demonstrated that smaller amounts of granulation tissue were formed in the Dwn1-treated group than in the vehicle group (Figure 4c). The scar index of Dwn1-treated wounds was significantly lower than that of vehicle-treated wounds (Figure 4d), indicating that granulation tissue formation was downregulated by Dwn1 treatment. Collagen fiber density within the granulation tissue bed and the wound edge dermis was also lower in Dwn1-treated wounds than in vehicle-treated wounds. The difference in the granulation tissue reached statistical significance (Figure 4e).
 
 We have devised a mechanical tensile strength test of murine dorsal incisional wounds. The vehicle control dermal wound tissue and the Dwn1-treated dermal wound tissue were harvested 7 and 14 days of healing and prepared as a standardized dermal strip including the incisional wound in the center. The maximum load (N) to tear the dermal strip was measured as the tensile strength of the wounds (Figure 4f, left). The vehicle-treated dermal wound showed minimal tensile strength at 7 days after wounding, which was increased in 14 days after wounding. By contrast, the tensile strength of Dwn1-treated dermal wound was significantly larger than vehicle control dermal wound on both 7 and 14 days after wounding. On day 14, the tensile strength of Dwn1-treated dermal wound nearly reached that of intact skin (Figure 4f, right). The vehicle control dermal wound was further examined for 21 days after wounding, which showed significantly less tensile strength than that of intact skin (t-test, p = 0.0048) (Figure 4—figure supplement 1). The tensile strength in the vehicle control dermal wound (2.61 ± 0.91) was not significantly increased from that on day 14 (2.04 ± 0.48) (t-test, p = 0.1418), suggesting that this murine dorsal incisional wound model reaches healing 14 days postoperatively, after which recovery of mechanical properties equivalent to intact skin is not expected.
 
-## Dwn1 attenuates collagen gene expression and myofibroblast-related gene expression in the wound edge dermis
+### Dwn1 attenuates collagen gene expression and myofibroblast-related gene expression in the wound edge dermis
 
 To examine lesion-specific gene expression within the incisional wound, granulation tissue (G) and wound edge dermal tissue (W) were separately isolated by laser capture microdissection (LCM) (Figure 5a). The isolated RNA was evaluated for the steady-state expression of collagen genes (Col1a1, Col1a2, Col3a1, and Col14a1). There was no significant difference in the gene expression of any of these collagen genes between the granulation tissue of Dwn1-treated and vehicle-treated wounds, although Dwn1 treatment minimized the size of granulation tissue, as noted above. The expression of Col1a1, Col1a2, and Col3a1 was suppressed in the wound edge dermis, while Col14a1 gene expression was maintained by Dwn1 treatment (Figure 5b).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71074/elife-71074-fig5-v2.jpg)
 
-**Figure 5.:** (a) A typical post-laser capture microdissection (LCM) image. Slides were briefly stained with hematoxylin and eosin before LCM. G: granulation tissue, W: wounded tissue. (b) Gene expression of collagen type Iα1 (Col1a1), Iα2 (Col1a2), IIIα1 (Col3a1), XIV (Col14a1), Tgfβ1, and α-SMA (Acta2) in granulation tissue (G) and wounded tissue (W) on day 7 postoperatively. Gapdh was used as an internal control. Gene expression of collagen type Iα1, Iα2, IIIα1, Tgfβ1, and α-SMA in the wounded tissue treated with Dwn1 was significantly increased versus those treated with the vehicle (n = 5 per group). (c) Immunohistochemical staining of α-SMA in wounds treated with vehicle or Dwn1 on postoperative day 7. Yellow dotted lines indicate granulation tissue. Scale bar is 100 μm.Figure 5—source data 1.
+**Figure 5.:** (a) A typical post-laser capture microdissection (LCM) image. Slides were briefly stained with hematoxylin and eosin before LCM. G: granulation tissue, W: wounded tissue. (b) Gene expression of collagen type Iα1 (Col1a1), Iα2 (Col1a2), IIIα1 (Col3a1), XIV (Col14a1), Tgfβ1, and α-SMA (Acta2) in granulation tissue (G) and wounded tissue (W) on day 7 postoperatively. Gapdh was used as an internal control. Gene expression of collagen type Iα1, Iα2, IIIα1, Tgfβ1, and α-SMA in the wounded tissue treated with Dwn1 was significantly increased versus those treated with the vehicle (n = 5 per group). (c) Immunohistochemical staining of α-SMA in wounds treated with vehicle or Dwn1 on postoperative day 7. Yellow dotted lines indicate granulation tissue. Scale bar is 100 μm.
 
 We also evaluated the expression of the myofibroblast-related genes Tgfb1 and smooth muscle α2 actin (α-SMA/Acta2). Dwn1 treatment significantly decreased the expression of Tgfb1 and Acta2 in the wound edge dermis, whereas no effect occurred in the granulation tissue. Immunohistochemical staining demonstrated abundant α-SMA-positive fibroblasts in the wound edge dermis of the vehicle control group. In contrast, Dwn1 treatment virtually eliminated α-SMA-positive fibroblasts (Figure 5c), suggesting that Dwn1 prevents myofibroblast differentiation. Collectively, the data supported the therapeutic effect of Dwn1 in the prevention of hypertrophic scar formation.
 
@@ -112,59 +128,167 @@ Our target molecule, NPAS2, is a basic-helix-loop-helix transcription factor dim
 
 Npas2 KO mice demonstrated a relatively limited alteration in circadian behaviors (Wu et al., 2010; Franken et al., 2006) and liver metabolism (O’Neil et al., 2013) and did not exhibit developmental and physiological abnormalities (Morinaga et al., 2019). NPAS2-BMAL1 dimers exhibit a high affinity for a cis-acting E-box sequence of not only circadian clock genes but also other clock-controlled genes (Takahashi, 2017). The mechanism by which the therapeutic suppression of NPAS2 improves surgical wound healing is currently unknown. Because the genetic and therapeutic suppression of Npas2 maintained dermal fibroblast-specific type XIV collagen expression and prevented myofibroblast differentiation, we speculate that increased NPAS2 may be involved in the cellular phenotype alteration leading to abnormal scar formation.
 
-## Conclusion
+### Conclusion
 
 This study demonstrated that the small molecule compound Dwn1, identified through HTS using Npas2 as the molecular target, enhanced wound healing in a murine incisional wound model. Dwn1 treatment reduced collagen deposition and accelerated wound closure. Our animal model was designed to mimic a less ideal surgical outcome in incisional wound healing, specifically the development of granulation tissue, which is the precursor to hypertrophic scarring. We identified a possible approach to the treatment of problematic wounds based on the role of the circadian clock in wound healing and the development of small molecule therapy for improved surgical wound outcomes.
 
 ## Materials and methods
 
-## Animal care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Dermal fibroblast (normal, Adult)</td>
+      <td>ATCC</td>
+      <td>CCD-1122Sk</td>
+      <td>RRID: CVCL_2360</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-α-SMA</td>
+      <td>Abcam</td>
+      <td>ab32575</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oris Pro Cell Migration Assay 384-well plate</td>
+      <td>Platypus Technologies</td>
+      <td>PRO384CMA1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Masson’s trichrome</td>
+      <td>Polysciences, Inc</td>
+      <td>25088–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Picrosirius red staining kit</td>
+      <td>Polysciences, Inc</td>
+      <td>24901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00801666_g1</td>
+      <td>Col1a1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00483888_m1</td>
+      <td>Col1a2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00802300_m1</td>
+      <td>Col3a1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00805269_m1</td>
+      <td>Col14a1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Scientific</td>
+      <td>Mm01178820_m1</td>
+      <td>Tgfb1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Taqman Gene Expression Assays</td>
+      <td>Scientific</td>
+      <td>Mm01546133_m1</td>
+      <td>Acta2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>http://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal care
 
 All protocols for animal experiments were approved by the University of California Los Angeles (UCLA) Animal Research Committee (ARC# 2003–009) and followed the Public Health Service Policy for the Humane Care and Use of Laboratory Animals and the UCLA Animal Care and Use guidelines. C57Bl/6J WT mice and Npas2 KO mice (B6.129S6-Npas2tm1Slm/J) (Jackson Laboratory) were used in this study. The animals were fed a regular rodent diet and were provided water ad libitum. They were maintained in regular housing conditions with 12 hr light/dark cycles in the Division of Laboratory Animal Medicine at UCLA. The sample size was set based on a previously published manuscript (Sasaki et al., 2020).
 
-## Murine dorsal incisional wound healing model
+### Murine dorsal incisional wound healing model
 
 Female WT mice (8–12 weeks of age, approximately 20–25 g) were used. General inhalation anesthesia was obtained using isoflurane (1182097, Henry Schein, Inc) delivered via vaporizer (Somni 19.1, Somni Scientific). The dorsal skin was shaved, and two parallel 10 × 1.5 mm2 full-thickness dermal wounds were created using a double-bladed scalpel (S1190D, DoWell Dental Products, Inc). A single 5-0 nylon stitch was placed at the midpoint of each dermal defect, creating partially open wounds that mimicked cutaneous surgical wounds without appropriate wound edge approximation (Figure 1a). Photographs and measurements of the wounds were taken every day for 1 week following surgery using a Nikon D40 digital single lens reflex (D-SLR) camera (Nikon, Inc, Tokyo, Japan).
 
-## VAS assessment of incisional wound healing
+### VAS assessment of incisional wound healing
 
 Gross visual wound assessments were performed by three examiners who were blinded to the type of treatment (control or experimental) each wound received. Sequential postoperative photographs of healing wounds were reviewed by three independent examiners. Scar severity was rated according to a VAS scoring system previously described for use in evaluating human dermal scars.(Tracy et al., 2016; Castagnola et al., 1992) The examiners were asked to assess the wounds on a scale, with a score of zero indicating a completely healed dermal wound and a score of 10 indicating very poor healing.
 
-## Histological Examination
+### Histological Examination
 
 All animals were euthanized on postoperative day number 7 using carbon dioxide inhalation. For each animal, the entire full-thickness dorsal dermal unit, including both incisional wounds, was harvested and immediately fixed with 10% neutral buffered formalin for 24 hr. Paraffin sections (4 µm) were made perpendicular to the incisional wounds and stained with standard HE or Masson’s trichrome (MT). The stained histological sections were examined under a microscope (LMD 7000, Leica Microsystems) equipped with a digital camera (DFC295, Leica Microsystems). Relevant images from the specimens were captured and analyzed using imaging software (Leica LMD software version 8.0.0.6043, Leica Microsystems).
 
-## Scar index analysis
+### Scar index analysis
 
 The total scar area of each wound was normalized to the average dermal thickness, as previously described (Zheng et al., 2011). The dermal thickness of each dermal section was recorded as the distance from the epidermal-dermal junction to the panniculus carnosus. Four points were used on each sample to calculate the average dermal thickness: two located 200 μm from either wound edge and two located 700 μm from either wound edge. Measurements were taken from the same site on each harvested wound specimen. Scar area was measured on all images. The scar index was calculated as the scar area (μm2) divided by the average dermal thickness (μm). (Figure 1—figure supplement 1a). Statistical analysis of the measured scar index values was performed using the Mann-Whitney test.
 
-## Quantitative analysis of collagen fiber density on MT-stained slides
+### Quantitative analysis of collagen fiber density on MT-stained slides
 
 Collagen deposition within wounds was quantified on images of MT-stained sections according to a previously reported method with minor modifications (Kubinova et al., 2017; Ying Chen and Xu, 2017). To evaluate each wound, we randomly selected two images: one from the area of granulation tissue and one from the wounded dermis. These images were obtained with a 40× objective lens using a microscope (Labophot-2, Nikon) equipped with a digital camera (AxioCam, Zeiss) and software (AxioVision Rel. version 4.7, Zeiss). Image analysis was performed using ImageJ (imagej.nih.gov). The split channels function was used to split the original RGB image into red, blue, and green channels. The red channel image was then subtracted from the blue channel image, and a standard threshold range was set for all specimens analyzed. Epithelial and subcutaneous layers and epithelial appendages such as hair follicles and sebaceous glands were eliminated manually. The percentage of collagen density in the tissue area was determined (Figure 1—figure supplement 1b). Statistical analysis was performed using the Mann-Whitney test.
 
-## High-throughput drug screening
+### High-throughput drug screening
 
 At the Molecular Screening Shared Resource (MSSR) at UCLA, a drug library of 1120 FDA-approved compounds was screened with two different assays to identify hit compounds with wound healing properties. First, hit compounds involved in the modulation of murine dermal fibroblast Npas2 expression were identified using HTS. Dermal fibroblasts were isolated from mice engineered to carry the LacZ reporter gene in the Npas2 allele. LacZ reporter gene activity has previously been shown to correlate accurately with endogenous Npas2 expression (Sasaki et al., 2020). The cells were cultured in growth medium containing Dulbecco’s modified Eagle’s medium (DMEM) (11995065, Life Technologies Corp.) with 10% fetal bovine serum (FBS) (1600004, Life Technologies Corp.) and 1% penicillin/streptomycin (15140122, Life Technologies Corp.). Each well in 384-well plates (781906, Greiner Bio-One) was filled with 25 μL of non-phenol red DMEM (31053036, Life Technologies Corp.) containing 10% FBS and 1% PS and 50 nL of FDA-approved compounds (final concentration: 1 μM) using a pin tool (Biomek FX, Beckman Coulter). Cells were added to each well (1500 cells/25 μL) and incubated at room temperature for 1 hr, followed by incubation at 37°C and 5% carbon dioxide for 48 hr. To measure Npas2-LacZ expression, β-galactosidase activity was measured using a Beta-Glo Assay System (E4720, Promega). The Npas2-LacZ expression data were uploaded to an online data analysis tool (CDD Vault, Collaborative Drug Discovery Inc), on which data were normalized and the Z-factor was calculated.
 
 Separately, the same compound library was screened for human dermal fibroblast migration. A commercially available human dermal fibroblast cell line (CCD-1122Sk, ATCC) (3000 cells/25 µL) was applied to an Oris Pro Cell Migration Assay 384-well plate (PRO384CMA1, Platypus Technologies), which contains a water-soluble biocompatible gel that creates a center cell-free detection zone for cell migration in each well. After the cells were plated, the plates were centrifuged at 200× g for 5 min. After 1 hr of incubation at room temperature for cell attachment, the compounds were added using a 250 nL pin tool and incubated at 37°C in a carbon dioxide incubator. After 48 hr of incubation, 25 µL of staining solution (Calcein-AM and Hoechst, Life Technologies Corp.) was added to each well. After another period of centrifugation at 200× g for 5 min, the plates were incubated for 20 min at room temperature, and each well was imaged by the Micro Confocal High-Content Imaging System (ImageXpress, Molecular Devices). The cells that migrated into the detection zone were counted using a customized computer program (CDD Vault, Collaborative Drug Discovery, Burlingame, CA), and the Z-factor was calculated.
 
-## Npas2 gene expression in murine dermal fibroblasts treated with Dwn1
+### Npas2 gene expression in murine dermal fibroblasts treated with Dwn1
 
 Primary dermal fibroblasts derived from WT mice were harvested as previously reported (Glass et al., 2013) and cultured as described above. Fibroblast cultures were treated with 10 μM Dwn1, a hit compound identified via the high-throughput drug screening process, to modulate Npas2 expression and fibroblast migration. After synchronization using 10 nM dexamethasone, total RNA from the fibroblasts cultured with 10 μM Dwn1 was extracted every 6 hr from hours 24 to 48 (RNeasy Plus Mini Kit, Qiagen), followed by cDNA synthesis (SuperScript VILO cDNA Synthesis Kit, Thermo Fisher Scientific). TaqMan-based qRT-PCR was performed using a primer/probe mix, Npas2 (Mm01239312_m1, Thermo Fisher Scientific), with mouse Gapdh endogenous control mix (4352339E, Thermo Fisher Scientific). Statistical analysis was performed by two-way ANOVA.
 
-## In vitro wound healing scratch assay
+### In vitro wound healing scratch assay
 
 Murine dermal fibroblasts derived from either WT or Npas2 KO mice were seeded into a six-well plate with or without 10 µM Dwn1 supplementation. After 2 hr, the cells were scratched with a 20 μL plastic pipette, and the debris was washed out with medium. The scratched regions were imaged every 12 hr by time-lapse photomicrography (LAX S, Leica Microsystems). The number of cells that migrated into the scratched regions was counted at hours 0, 12, 24, 36, and 48. Statistical analysis was performed by two-way ANOVA.
 
-## Collagen synthesis by murine dermal fibroblasts in vitro
+### Collagen synthesis by murine dermal fibroblasts in vitro
 
 Fibroblasts were cultured in growth medium and L-ascorbic acid 2-phosphate (Sigma-Aldrich Corp.) with either 0, 1, or 10 μM Dwn1 supplementation to evaluate collagen synthesis. Control fibroblast cultures were also performed using growth medium only. Picrosirius red staining was performed using a commercially available kit (24901, Polysciences, Inc) at day 3 and day 7, according to the manufacturer’s protocol. Gross images were acquired with a Nikon D40 D-SLR camera (Nikon, Inc, Tokyo, Japan). Collagen deposition was quantified by analyzing absorbance of 550 nm with a plate reader (SYNERGY H1, BioTek). Statistical analysis was performed by Dunnett’s multiple comparison test at each time point.
 
-## Collagen gene expression by murine dermal fibroblasts in vitro
+### Collagen gene expression by murine dermal fibroblasts in vitro
 
 The gene expression of collagen types I, III, and XIV was determined at day 3 and day 7 of culture. Using isolated RNA, TaqMan-based qRT-PCR was performed with primer/probe sets: Col1a1 (Mm00801666_g1), Col1a2 (Mm00483888_m1), Col3a1 (Mm00802300_m1), and Col14a1 (Mm00805269_m1). Gapdh was used as an internal control. Statistical analysis was performed by Dunnett’s multiple comparison test at each time point.
 
-## Evaluation of wound healing by Dwn1 using a murine dorsal incisional wound model
+### Evaluation of wound healing by Dwn1 using a murine dorsal incisional wound model
 
 Two parallel full-thickness dorsal incisional wounds were placed on female WT mice (8–12 weeks of age, approximately 20–25 g) as described above. Following surgery, 20 µL of 10% DMSO (Sigma-Aldrich Corp.) was applied every day to one wound as a control, and 20 µL of 30 µM Dwn1 dissolved in 10% DMSO was applied to the other wound. Standardized digital photographs and measurements of all wounds were taken daily postoperatively.
 
@@ -176,6 +300,6 @@ LCM of the dermal samples on formalin-fixed paraffin-embedded (FFPE) blocks was 
 
 To perform immunohistochemistry of α-SMA, histological sections were deparaffinized and rehydrated through graded ethanol. Endogenous peroxidase activity was blocked with 3% hydrogen peroxide in methanol for 10 min. Heat-induced antigen retrieval was carried out for all sections in AR6 buffer (AR6001KT, PerkinElmer), pH = 6.00, using a BioCare Decloaker at 95°C for 25 min. The slides were then stained with rabbit anti-α-SMA (ab32575, Abcam) at 1/500 dilution for 1 hr at room temperature. The signal was detected using the Dako Envision + System Labeled Polymer HRP anti rabbit (K4003, Agilent). All sections were visualized with the diaminobenzidine reaction and counterstained with hematoxylin. Images were acquired with a 2× objective lens from each slide using a microscope (Labophot-2, Nikon) equipped with a digital camera (AxioCam, Zeiss) and AxioVision Rel software, version 4.7 (Zeiss).
 
-## Statistical information
+### Statistical information
 
 In vitro experiments were performed in biological triplicate. For biological replicates, each experiment was performed with two technical replicates. All raw data are represented in the graphs, unless otherwise specified in each section. Statistical analyses were performed as described above for each separate experiment.

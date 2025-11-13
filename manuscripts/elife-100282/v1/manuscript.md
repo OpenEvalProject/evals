@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02mpq6x41 Department of Chemistry, University of Illinois Chicago Chicago United States
-2. https://ror.org/02mpq6x41 Department of Physics, University of Illinois Chicago Chicago United States
+1. Department of Chemistry, University of Illinois Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
+2. Department of Physics, University of Illinois Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
 
 † Corresponding author
 
 ## Abstract
 
-The low-complexity domain of hnRNPA1 (A1-LCD) phase separates in a salt-dependent manner. Unlike many intrinsically disordered proteins (IDPs) whose phase separation is suppressed by increasing salt concentrations, the phase separation of A1-LCD is promoted by >100 mM NaCl. To investigate the atypical salt effect on A1-LCD phase separation, we carried out all-atom molecular dynamics simulations of systems comprising multiple A1-LCD chains at NaCl concentrations from 50 to 1000 mM NaCl. The ions occupy first shell as well as more distant sites around the IDP chains, with Arg sidechains and backbone carbonyls the favored partners of Cl – and Na + , respectively. They play two direct roles in driving A1-LCD condensation. The first is to neutralize the high net charge of the protein (+9) by an excess of bound Cl – over Na + ; the second is to bridge between A1-LCD chains, thereby fortifying the intermolecular interaction networks in the dense phase. At high concentrations, NaCl also indirectly strengthens π–π, cation–π, and amino–π interactions, by drawing water away from the interaction partners. Therefore, at low salt, A1-LCD is prevented from phase separation by net charge repulsion; at intermediate concentrations, NaCl neutralizes enough of the net charge while also bridging IDP chains to drive phase separation. This drive becomes even stronger at high salt due to strengthened π-type interactions. Based on this understanding, four classes of salt dependence of IDP phase separation can be predicted from amino-acid composition.
+The low-complexity domain of hnRNPA1 (A1-LCD) phase separates in a salt-dependent manner. Unlike many intrinsically disordered proteins (IDPs) whose phase separation is suppressed by increasing salt concentrations, the phase separation of A1-LCD is promoted by >100 mM NaCl. To investigate the atypical salt effect on A1-LCD phase separation, we carried out all-atom molecular dynamics simulations of systems comprising multiple A1-LCD chains at NaCl concentrations from 50 to 1000 mM NaCl. The ions occupy first shell as well as more distant sites around the IDP chains, with Arg sidechains and backbone carbonyls the favored partners of Cl– and Na+, respectively. They play two direct roles in driving A1-LCD condensation. The first is to neutralize the high net charge of the protein (+9) by an excess of bound Cl– over Na+; the second is to bridge between A1-LCD chains, thereby fortifying the intermolecular interaction networks in the dense phase. At high concentrations, NaCl also indirectly strengthens π–π, cation–π, and amino–π interactions, by drawing water away from the interaction partners. Therefore, at low salt, A1-LCD is prevented from phase separation by net charge repulsion; at intermediate concentrations, NaCl neutralizes enough of the net charge while also bridging IDP chains to drive phase separation. This drive becomes even stronger at high salt due to strengthened π-type interactions. Based on this understanding, four classes of salt dependence of IDP phase separation can be predicted from amino-acid composition.
 
 ## Introduction
 
@@ -31,39 +31,67 @@ Here, we study salt effects on A1-LCD condensation by all-atom MD simulations. T
 
 ## Results
 
-## Salt condenses A1-LCD and increases inter-chain interactions
+### Salt condenses A1-LCD and increases inter-chain interactions
 
 The 131-residue A1-LCD is comprised mostly of Gly and Ser (51 and 22, respectively), followed by 18 aromatic residues (11 Phe and 7 Tyr), 17 residues with sidechain amides (13 Asn and 4 Gln), and 15 charged residues (10 Arg, 2 Lys, and 3 Asp), with a large net charge of +9 (Figure 1A). Using initial conformations of A1-LCD from the previous single-copy simulations (Dey et al., 2022), we built an 8-copy model for the dense phase (with an initial concentration of 3.5 mM) at five NaCl concentrations ranging from 50 to 1000 mM (Figure 1B). This initial concentration is close to the measured concentration at the critical point (Martin et al., 2020), thereby facilitating the comparison between low salt (where phase separation does not occur) and high salt (where phase separation does occur). Each system was simulated in four replicates for 1.5 μs each. All the results reported here are averages over the four replicate simulations. From the same initial configuration with very few inter-chain contacts, the systems maintain the initial loose configuration at 50 mM NaCl (Figure 1C) but condense noticeably at 1000 mM NaCl (Figure 1D). At low salt, the protein chains have a tendency to fill the simulation box, occasionally spanning the entire box in one or two of the three orthogonal directions and exhibiting larger-scale reconfiguration based on root-mean-square-fluctuation (RMSF) calculation (Figure 1—figure supplement 1). In contrast, at high salt, the chains aggregate into an ellipsoidal particle, with the RMSF reduced by 27%.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig1-v1.jpg)
+
+**Figure 1.:** (A) Amino-acid sequence. (B) First frame and (C, D) a frame at 1000 ns from 1.5-μs simulations of the 8-chain systems at low and high salt. In all figures, Cl– or Na+ ions are represented by green and magenta spheres, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Error bars represent standard deviations among four replicate simulations.
 
 We also quantified the contrast between low and high salt by calculating Dmax, the maximum side length of the rectangular box that parallels the simulation box and circumscribes the multi-chain system. The Dmax values are close to the initial value (~150 Å) at low salt (50 mM NaCl), but decrease to ~135 Å at intermediate salt (150 and 300 mM NaCl) and further to ~120 Å at high salt (500 and 1000 mM NaCl; Figure 2A). Overall, the systems show a lack of condensation at low salt, and growing condensation on going to intermediate and high salt. Modeling the condensed particle as an ellipsoid with the principal diameters given by the maximum dimensions in the three orthogonal directions, we can estimate its concentration to be 23 mM, which is similar to the measured concentration in the dense phase (Martin et al., 2020). A small part of the reason for the growing condensation is the compaction of the individual chains. The average radius of gyration (Rg) shows a decreasing trend with increasing salt (Figure 2B), which matches the experimental data (Martin et al., 2021). Correspondingly, the average number of intrachain contacts per residue increases slightly, by 5%, when the salt concentration is increased from 50 to 1000 mM (Figure 2C). However, the main driver of the condensation is inter-chain interactions, with inter-chain contacts per residue increasing by 23% over the same salt range. Clearly, high salt induces A1-LCD condensation, with an increased number of interactions between protein chains. Below we present the molecular mechanisms for these effects.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig2-v1.jpg)
 
-**Figure 2.:** (A) Dmax values, averaged over four replicates, as a function of simulation time. (B) Radii of gyration (Rg) from small-angle X-ray scattering (Martin et al., 2021) and from molecular dynamics (MD) simulations. Dotted curves are drawn to guide the eye. (C) Average number of inter- or intrachain contacts per residue at each salt concentration. Dashed lines are drawn to show trends. Error bars represent standard deviations among four replicate simulations.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Dmax values, averaged over four replicates, as a function of simulation time. (B) Radii of gyration (Rg) from small-angle X-ray scattering (Martin et al., 2021) and from molecular dynamics (MD) simulations. Dotted curves are drawn to guide the eye. (C) Average number of inter- or intrachain contacts per residue at each salt concentration. Dashed lines are drawn to show trends. Error bars represent standard deviations among four replicate simulations.
 
-## Ions selectively bind to backbone and sidechain sites to neutralize the net charge of A1-LCD
+### Ions selectively bind to backbone and sidechain sites to neutralize the net charge of A1-LCD
 
 The large net charge of A1-LCD implies significant electrostatic repulsion between chains. Potentially salt ions can neutralize the net charge. To investigate ion–protein binding, we calculated radial distribution functions (RDFs) of Cl– and Na+ around polar groups of A1-LCD. At 1000 mM NaCl, the RDFs of Cl– show a strong 1st peak at 3.2 Å around Arg and Lys sidechain nitrogens and a moderate 1st peak around the Gln and Asn sidechain nitrogens and the Ser sidechain oxygen (Figure 3—figure supplement 1A). Each Arg sidechain often coordinates two Cl– ions simultaneously, but each Lys sidechain coordinates only one Cl– ion. A 2nd peak, at ~5 Å, is also observed around Arg and Lys sidechain nitrogens. Of the remaining polar groups, only the Cl– RDFs around the Tyr sidechain oxygen and the backbone nitrogen show a weak 1st peak (Figure 3—figure supplement 1B). We used cutoffs of 4 and 6.4 Å, respectively, to define 1st- and 2nd-shell Cl– binding. On a per-residue basis, Arg and Lys sidechains coordinate the most 1st-shell Cl– ions, reaching ~0.25 ions per residue (Figure 3A, left panel). In comparison, each Gln, Asn, or Ser residue, on average, coordinates ~0.05 Cl– ions. Given the large numbers of Arg and Ser residues in the A1-LCD sequence, these two residue types coordinate the most 1st-shell Cl– ions, 21.5 and 8.4, respectively, in the 8-chain system at 1000 mM NaCl. Although the RDF around backbone nitrogens has only a weak 1st peak, given their large number (131 per chain), they actually coordinate 13.4, or the second most 1st-shell Cl– ions. Among these 13.4 Cl– ions, 55% are coordinated with Gly residues. A large part of this high percentage is due to the enrichment of Gly (39% of all residues) in the A1-LCD sequence, but Gly is additionally favored for its lack of sidechain, which allows the close approach of ions to the backbone.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig3-v1.jpg)
+
+**Figure 3.:** (A) Number of 1st-shell ions, with (darker colors; tick marks on the left vertical axis) and without (lighter colors; tick marks on the right vertical axis) normalization by the number of residues of a given amino-acid type, at 1000 mM NaCl. (B) Total number of 1st-shell only or 1st- and 2nd-shell ions. (C) Net charge of the system with 1st- and 2nd-shell ions included. Error bars represent standard deviations among four replicate simulations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Groups having radial distribution function (RDF) values > or close to 1. (B) Other groups. Two vertical lines indicate cutoff distances for 1st- and 2nd-shell coordination. Insets show the approach of RDFs to 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Groups having radial distribution function (RDF) values >1. (B) Other groups. Two vertical lines indicate cutoff distances for 1st- and 2nd-shell coordination. Insets show the approach of RDFs to 1.
 
 Na+ shows a very strong preference for the Asp carboxyl in 1st-shell coordination, with a peak RDF value of 9.2 at 2.2 Å (Figure 3—figure supplement 2A). Each Asp sidechain carboxyl typically coordinates a single Na+ ion, usually in a bifurcated geometry. In addition, Na+ shows a strong preference in 1st-shell coordination with Asn and Gln sidechain amide oxygens and the backbone carbonyl oxygen as well as a moderate preference with the Ser sidechain oxygen. A 2nd peak, at ~4.2 Å, is also observed in the Na+ RDF around the Asp carboxyl. Of the remaining polar groups, only a weak 1st peak is seen in the RDF around the Tyr sidechain oxygen (Figure 3—figure supplement 2B). We used cutoffs of 3 and 5.4 Å, respectively, to define 1st- and 2nd-shell Na+ binding. On a per-residue basis, the Asp sidechain coordinates the most 1st-shell Na+ ions, reaching 0.17 ions per residue (Figure 3A, right panel). The per-residue Na+ ion number reduces to ~0.06 for Asn and Gln sidechain oxygens and further to ~0.03 for the backbone oxygen and Ser sidechain oxygen. Again, due to their large number, backbone oxygens coordinate a very large number, 27.9, of 1st-shell Na+ in the 8-chain system at 1000 mM NaCl. This number dwarfs the counterparts for sidechains, the largest of which are 7.4, 4.1, and 4.3 respectively, for Asn, Asp, and Ser. For coordination with the backbone, similar to the case with Cl–, 55% of the 27.9 Na+ ions involve Gly residues, again reflecting the fact that this amino acid allows the close approach of ions to the backbone. Overall, the largest number of 1st-shell Cl– ions are coordinated with Arg sidechains but the largest number of 1st-shell Na+ ions are coordinated with backbone carbonyls. Whereas each Arg sidechain often coordinates two Cl– ions, multiple backbone carbonyls often coordinate a single Na+ ion, with at least two backbone carbonyl partners for 30.6 of the 64.1 bound Na+ ions (1st- and 2nd-shell).
 
 In Figure 3B, we display the total numbers of 1st-shell Cl– and Na+ ions in the 8-chain systems as a function of NaCl concentration. Both the 1st-shell Cl– and Na+ ions increase with increasing NaCl concentration, and Cl– ions always outnumber Na+ ions. The difference remains almost constant, with around 10 more 1st-shell Cl– ions than 1st-shell Na+ ions. This difference is not enough to neutralize the total charge, +72, on the protein chains. However, when 2nd-shell ions are also included, the excess of bound Cl– ions over bound Na+ ions grows quickly with increasing NaCl concentration. Correspondingly, the net charge of the system reduces to zero at 1000 mM NaCl (Figure 3C). Net charge repulsion explains why the chains maintain their initial loose configuration in the simulations at 50 mM NaCl (Figure 1C) and the observed absence of phase separation at this low salt concentration (Martin et al., 2021). At high salt, the protein net charge is completely neutralized by 1st- and 2nd-shell ions; hence the protein chains condense (Figure 1D) and phase separation was readily observed (Martin et al., 2021).
 
-## Ions act as bridges between protein chains to drive condensation
+### Ions act as bridges between protein chains to drive condensation
 
 In addition to charge neutralization, we suspected that ions could also fortify intermolecular interactions by bridging between protein chains, similar to the role played by ATP molecules in driving phase separation of positively charged IDPs (Kota et al., 2024). Indeed, we found that Cl– has a tendency to bind with Arg and other sidechains from multiple chains and likewise, Na+ has a tendency to bind with backbone carbonyls and sidechain oxygens from multiple chains (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig4-v1.jpg)
 
-**Figure 4.:** (A) Examples of chain bridging by Cl– and Na+; Cl− ions are coordinated by Arg and other sidechains whereas Na+ ions are coordinated by both backbone carbonyls (including from Gly) and sidechain oxygens. (B) Average number of Cl– or Na+ ions engaged in bridging between A1-LCD chains. (C) Average number of ions bound in 1st- and 2nd-shell sites lined by a given number of A1-LCD chains. Error bars represent standard deviations among four replicate simulations.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Examples of chain bridging by Cl– and Na+; Cl− ions are coordinated by Arg and other sidechains whereas Na+ ions are coordinated by both backbone carbonyls (including from Gly) and sidechain oxygens. (B) Average number of Cl– or Na+ ions engaged in bridging between A1-LCD chains. (C) Average number of ions bound in 1st- and 2nd-shell sites lined by a given number of A1-LCD chains. Error bars represent standard deviations among four replicate simulations.
 
 To quantify this tendency, we calculated the number of bridging Cl– or Na+ ions, i.e., those that bind (both 1st- and 2nd-shell) to residues on more than one A1-LCD chain (Figure 4B). Close to 20% of all 1st- and 2nd-shell ions bridge between A1-LCD chains. For both Cl– and Na+, the average number of bridging ions increases with increasing salt, but the pace of increase is much greater for Na+ than for Cl–, commensurate with the trend shown by the total number of bound ions of each type (Figure 3B). The number of bridging ions is 4.7 for Cl– and only 0.5 for Na+ in the 8-chain system at 50 mM NaCl, and increases to 26.6 and 10.9, respectively, at 1000 mM NaCl. The greater fold change of bridging Na+ ions (23-fold, vs 6-fold for Cl–) is also apparent when we break the bridging ions according to the number of A1-LCD chains being bridged (Figure 4C). For Cl–, the curves plotting the ion count against the number of bridged chains are close to each other among the different NaCl concentrations, but the counterparts for Na+ are more spread out.
 
 These disparate effects of salt concentration on chain bridging by Cl– and Na+ can be explained by the difference in coordination properties between the two ion types presented above. Cl– strongly prefers Arg sidechains and, even at low salt, occupies a large number of sites lined by them, of which ~20% are bridging sites. However, there is a relatively limited supply of Arg sidechains (a total of 80 in the 8-chain system) and hence the fold change in bridging Cl– ions upon salt increase is somewhat tempered. In contrast, although Na+ prefers Asp sidechains, there are very few of those in the system; instead, Na+ predominantly binds to backbone carbonyls. As the latter binding is relatively weak, the number of bridging Na+ ions is very small at low salt. However, since there is a large supply of backbone carbonyls (a total of 1048 in the 8-chain system), at high salt, Na+ ions bind to a portion of these backbone carbonyls and bridge A1-LCD chains. Of the total 10.9 Na+ bridging ions, 6.4 do so through backbone carbonyls of at least two chains. Consequently, at low salt, chain bridging is dominated by Cl– (Na+ only 9% of bridging ions), but at high salt, Na+ becomes more even (30% of bridging ions) with Cl– in bridging A1-LCD chains. An important reason for the latter is Na+ coordination by backbone carbonyls, especially those of Gly residues (Figure 4A).
 
-## Salt also contributes to condensation indirectly by strengthening π-type interactions
+### Salt also contributes to condensation indirectly by strengthening π-type interactions
 
 As noted above, the number of inter-chain interactions increases by 23% when the NaCl concentration increases from 50 mM to 1000 mM. While this result could be accounted for by the two direct salt effects presented so far, that is, charge neutralization and chain bridging, which act to condense A1-LCD, there are additional factors. A breakdown of inter-chain sidechain interactions into different types reveals that when the salt concentration is increased from 50 to 1000 mM, the number of salt bridges per chain remains nearly constant, while the numbers of cation-π, π-π, and amino-π interactions increase by 17%, 26%, and 39%, respectively (Figure 5A). That is, as A1-LCD is condensed at high salt, there is an overall increase in inter-chain interactions, but this increase is limited to π-types of interactions and excludes salt bridges. At increasing salt, more π-types of interactions are formed while no new salt bridges are formed, suggesting a strengthening of the former interactions.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig5-v1.jpg)
+
+**Figure 5.:** (A) Number of inter-chain contacts per chain for each interaction type. Bars from left to right correspond to increasing salt concentrations (50, 150, 300, 500, and 1000 mM). Dashed lines are drawn to show trends. Error bars represent standard deviations among four replicate simulations. (B) An inter-chain salt bridge, with ion coordination by the partner sidechains. (C) An inter-chain π–π interaction, free of ion coordination. (D) Schematic showing a π–π interaction facilitated by high salt, via drawing water away from the interaction partners. (E) Radial distribution functions of water around Tyr residues that interact with Phe, Arg, Lys, Gln, and Asn. Lower values at high salt demonstrate water withdrawal. Inset shows radial distribution functions approaching 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100282/elife-100282-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) RDFs centered on the Tyr 6-carbon ring that forms cation–π, π–π, and amino–π interactions. (D) RDFs centered on Asp oxygens that form salt bridges. Insets show the approach of RDFs to 1.
 
 The apparent null effect of salt on salt bridge formation can be attributed to the canceling of two opposing effects: chain condensation by the direct effects of salt may potentially shorten the distances between salt-bridge partners and thereby strengthen salt bridges but competition of ions with the salt-bridge partners for coordination (Figure 3—figure supplements 1A and 2A) may potentially weaken salt bridges. Indeed, at 1000 mM NaCl, cationic and anionic partners in a salt bridge are often found to also coordinate Cl– and Na+, respectively (Figure 5B). In comparison, one partner in cation–π interactions and both partners in π–π and amino–π interactions have limited abilities to coordinate with ions, so the effects from ion competition are tempered.
 
@@ -81,6 +109,255 @@ The present work puts us in a position to paint a unified picture of salt depend
 
 **Figure 6.:** (A) Salt dependences of liquid–liquid phase separation (LLPS). (B) Charge–charge and π-type interactions and their regulation by salt. (a) Significant charge–charge attraction. (b) Screening of charge-charge attraction by salt. (c) Strengthening of π-type interactions by high salt. (d) Repulsion due to high net charge. (C) Distinctions of the four classes of salt dependence by three determinants: charged content (Chg), net charge (Net), and aromatic content (Aro).
 
+**Table 1.**
+ Correlation between class of salt dependence and amino-acid composition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Length</th>
+      <th>Charges (+/−/net)*</th>
+      <th>Aromatic†</th>
+      <th>Salt (mM)</th>
+      <th>Ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Screening</td>
+    </tr>
+    <tr>
+      <td>FIB-1</td>
+      <td>352</td>
+      <td>55‡/34/21</td>
+      <td>24</td>
+      <td>NaCl 50–250</td>
+      <td>Berry et al., 2015</td>
+    </tr>
+    <tr>
+      <td>PolyQ</td>
+      <td>729</td>
+      <td>38/34/4</td>
+      <td>35</td>
+      <td>NaCl 0–150</td>
+      <td>Zhang et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Ddx4</td>
+      <td>236</td>
+      <td>32/36/–4</td>
+      <td>22</td>
+      <td>NaCl 100–500</td>
+      <td>Brady et al., 2017</td>
+    </tr>
+    <tr>
+      <td>HP1α</td>
+      <td>206</td>
+      <td>33/41/–8</td>
+      <td>14</td>
+      <td>NaCl 25–150</td>
+      <td>Strom et al., 2017</td>
+    </tr>
+    <tr>
+      <td>LAF-1</td>
+      <td>708</td>
+      <td>86/88/–2</td>
+      <td>55</td>
+      <td>NaCl 125–400</td>
+      <td>Wei et al., 2017</td>
+    </tr>
+    <tr>
+      <td>LAF-1 RGG</td>
+      <td>191</td>
+      <td>28/22/6</td>
+      <td>14</td>
+      <td>NaCl 125–300</td>
+      <td>Wei et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Oleo30G</td>
+      <td>139</td>
+      <td>15/12/3</td>
+      <td>7</td>
+      <td>NaCl 35–280</td>
+      <td>Reed and Hammer, 2018</td>
+    </tr>
+    <tr>
+      <td>FMRP-LCD</td>
+      <td>188</td>
+      <td>37/28¶/9</td>
+      <td>6</td>
+      <td>NaCl 0–150</td>
+      <td>Tsang et al., 2019</td>
+    </tr>
+    <tr>
+      <td>hnRNPA1</td>
+      <td>314</td>
+      <td>42/34/8</td>
+      <td>33</td>
+      <td>NaCl 50–300</td>
+      <td>Martin et al., 2021</td>
+    </tr>
+    <tr>
+      <td>pY-Caprin1§</td>
+      <td>103</td>
+      <td>16/17/–1</td>
+      <td>4</td>
+      <td>NaCl 100–500</td>
+      <td>Lin et al., 2024</td>
+    </tr>
+    <tr>
+      <td colspan="6">Reentrant</td>
+    </tr>
+    <tr>
+      <td>FUS</td>
+      <td>526</td>
+      <td>51/37/14</td>
+      <td>52</td>
+      <td>KCl 50–2700</td>
+      <td>Krainer et al., 2021</td>
+    </tr>
+    <tr>
+      <td>TDP-43</td>
+      <td>414</td>
+      <td>40/44/–4</td>
+      <td>36</td>
+      <td>KCl 50–2700</td>
+      <td>Krainer et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Brd4</td>
+      <td>1362</td>
+      <td>175/150/25</td>
+      <td>48</td>
+      <td>KCl 50–2150</td>
+      <td>Krainer et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Sox2</td>
+      <td>317</td>
+      <td>34/21/13</td>
+      <td>19</td>
+      <td>KCl 50–2150</td>
+      <td>Krainer et al., 2021</td>
+    </tr>
+    <tr>
+      <td>A11</td>
+      <td>505</td>
+      <td>51/50/1</td>
+      <td>41</td>
+      <td>NaCl 22.5–500</td>
+      <td>Krainer et al., 2021</td>
+    </tr>
+    <tr>
+      <td colspan="6">High net change</td>
+    </tr>
+    <tr>
+      <td>A1-LCD</td>
+      <td>131</td>
+      <td>12/3/9</td>
+      <td>18</td>
+      <td>NaCl 50–300</td>
+      <td>Martin et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Lysozyme¶</td>
+      <td>129</td>
+      <td>17/9/8</td>
+      <td>12</td>
+      <td>NaCl 514–1198</td>
+      <td>Muschol and Rosenberger, 1997</td>
+    </tr>
+    <tr>
+      <td>RMFP-1</td>
+      <td>121</td>
+      <td>24/0/24</td>
+      <td>24</td>
+      <td>NaCl 100–500</td>
+      <td>Kim et al., 2017</td>
+    </tr>
+    <tr>
+      <td>UBQLN2</td>
+      <td>624</td>
+      <td>31/40/–9</td>
+      <td>22</td>
+      <td>NaCl 100–300</td>
+      <td>Dao et al., 2018</td>
+    </tr>
+    <tr>
+      <td>UBQLN2 (450-624)</td>
+      <td>175</td>
+      <td>4/8/–4</td>
+      <td>5</td>
+      <td>NaCl 50–200</td>
+      <td>Dao et al., 2018</td>
+    </tr>
+    <tr>
+      <td>TDP43-LCD (pH 4)</td>
+      <td>148</td>
+      <td>14**/3/11</td>
+      <td>12</td>
+      <td>NaCl 0–300</td>
+      <td>Babinchak et al., 2019</td>
+    </tr>
+    <tr>
+      <td>HBP-2 (pH 5.5)</td>
+      <td>193</td>
+      <td>30**/13/17</td>
+      <td>20</td>
+      <td>NaCl 50–500</td>
+      <td>Le Ferrand et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Caprin1</td>
+      <td>103</td>
+      <td>16/3/13</td>
+      <td>11</td>
+      <td>NaCl 0–2000</td>
+      <td>Wong et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Prp-LCD</td>
+      <td>122</td>
+      <td>11/1/10</td>
+      <td>11</td>
+      <td>NaCl 150–750</td>
+      <td>Agarwal et al., 2021</td>
+    </tr>
+    <tr>
+      <td>RLP38</td>
+      <td>120</td>
+      <td>12/8/4</td>
+      <td>8</td>
+      <td>NaCl 0–2000</td>
+      <td>Otis and Sharpe, 2022</td>
+    </tr>
+    <tr>
+      <td colspan="6">Low net charge</td>
+    </tr>
+    <tr>
+      <td>FUS-LCD</td>
+      <td>136</td>
+      <td>0/2/–2</td>
+      <td>20</td>
+      <td>NaCl 0–250</td>
+      <td>Burke et al., 2015</td>
+    </tr>
+    <tr>
+      <td>TDP43-LCD (pH 7)</td>
+      <td>148</td>
+      <td>8/3 / 5</td>
+      <td>12</td>
+      <td>NaCl 0–300</td>
+      <td>Babinchak et al., 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Charges are listed as the number of positively (R and K, including H when specifically indicated) or negatively (D and E) charged residues or net charge.†Aromatic residues are W, Y, and F.‡Single-domain folded protein.§Phosphorylated Y was assigned a charge of −2 and assumed to be no longer an aromatic residue.¶High contents of charged residues, net charges, and aromatic residues are indicated by bold letters, with thresholds at 20%, 6%, and 8%, respectively, when measured as percentages of the sequence length.**H is treated as positively charged at the low pH condition._
+
 We can not only rationalize the four distinct classes of salt dependence but also start to predict them from the amino-acid composition of the protein (Figure 6C and Table 1). The foregoing physical understanding suggests three determinants of salt dependence class: (1) the total number of charged residues, which determines the contribution of electrostatic interactions to the drive for phase separation and the importance of salt screening; (2) the net charge, which determines the magnitude of net charge repulsion; and (3) the total number of aromatic residues, which determines whether phase separation reemerges at high salt. We predict that the screening class occurs when the charged content is high but the net charge and aromatic content are low (Figure 6C). The other three classes of salt dependence all require a high aromatic content. For the reentrant class, the increase in aromatic content is the only difference from the screening class. For the high net charge class, the net charge obviously has to be high, but that could also mean at least a moderately high charged content. Finally, the low net charge class is predicted when the net charge is low but no bias is required of the charged content. The amino-acid compositional data in Table 1 validate these predictions. For example, of the 17 proteins in the classes of salt dependence that call for a high aromatic content, 12 (or 71%) actually have this feature (aromatic content >an 8% threshold). In contrast, of the 10 proteins in the class of salt dependence (i.e., ‘screening’) that calls for a low aromatic content, only 2 (or 20%) have an aromatic content above the threshold. In the latter two cases it remains to be tested whether phase separation would reemerge at much higher salt (and thereby resulting in a reclassification to reentrant). Likewise, of the 10 proteins in the class of salt dependence (i.e., ‘high net charge’) that calls for a high net charge, 7 (or 70%) actually have this feature (net charge >a 6% threshold). In contrast, of the 17 proteins in the classes of salt dependence that call for a low net charge, none has a net charge above the threshold. Lastly, of the 15 proteins in the classes of salt dependence that call for a high charge content, 11 (or 73%) actually have this feature (charged content >a 20% threshold). In comparison, of the 12 proteins in the classes of salt dependence that do not require a high charge content, only 2 (or 17%) have a charge content above the threshold.
 
 Two of the proteins included in Table 1 are Caprin1 and its phosphorylated variant pY-Caprin1. Caprin1’s phase separation required 500 mM NaCl and was promoted by higher salt (Wong et al., 2020), and thus behaved as if in the high net charge class of salt dependence (Figure 6A, third panel). In contrast, pY-Caprin1’s phase separation was suppressed by salt (Lin et al., 2024), behaving as if in the screening class (Figure 6A, first panel). Our amino-acid composition-based predictor correctly places both proteins in these respective classes (Table 1), with Caprin1’s sequence possessing both a high net charge and a high aromatic content whereas pY-Caprin1’s sequence possessing a high level of charged residues. The disparate salt dependences of these two proteins were also correctly captured by both analytical theory and coarse-grained simulations (Lin et al., 2024). The simulations also showed the dominance of Cl– over Na+ in partitioning into the dense phase of Caprin1, similar to our all-atom simulations of A1-LCD (Figure 3B); both Caprin1 and A1-LCD have a high net positive charge.
@@ -91,13 +368,13 @@ To conclude, salts regulate intermolecular interactions in biomolecular condensa
 
 ## Methods
 
-## MD simulations
+### MD simulations
 
 MD simulations were performed using AMBER (Case et al., 2018) with ff14SB force field (Maier et al., 2015) for the protein and TIP4P-D for water (Piana et al., 2015). The initial configuration of the 8-chain system was constructed using A1-LCD conformations from previous single-copy simulations (Dey et al., 2022). Specifically, 4 copies with different conformations were placed in a rectangular box, positioned with minimal inter-chain contacts within 3.5 Å. This 4-copy subsystem was duplicated to form the initial configuration of the 8-chain system (Figure 1B). The protein chains were solvated in a box with dimensions of 182 Å × 146 Å × 164 Å. For each desired salt concentration (50, 150, 300, 500, or 1000 mM), an appropriate number of water molecules were randomly selected and replaced with Cl– and Na+ ions; excess Cl– was added to neutralize the system. The total number of atoms was ~500,000 for the 8-chain system at each salt concentration.
 
 After energy minimization in sander (2000 steps of steepest descent and 3000 steps of conjugate gradient), each system was heated to 300 K over 100 ps with a 1 fs timestep, under constant NVT using the Langevin thermostat (Pastor et al., 1988) with a 3.0 ps–1 damping constant. The simulation was then continued in four replicates at constant NPT for 1.5 µs with a 2 fs timestep. The final dimensions were stabilized at ~174 Å × 140 Å × 157 Å. Pressure was regulated using the Berendsen barostat (Berendsen et al., 1984) with a coupling constant of 2.0 ps. All simulations were run on GPUs using pmemd.cuda (Salomon-Ferrer et al., 2013). Bond lengths involving hydrogens were constrained using the SHAKE algorithm (Ryckaert et al., 1977). Long-range electrostatic interactions were treated by the particle mesh Ewald method (Essmann et al., 1995). A cutoff distance of 10 Å was used for the nonbonded interactions. Frames were saved every 200 ps and the last 500 ns was used for analysis.
 
-## Data analysis
+### Data analysis
 
 Dmax was calculated using the minmax function in VMD (Humphrey et al., 1996). The differences between the maximum and minimum values of x, y, and z coordinates of all protein atoms were obtained; the largest of the three difference values was taken as Dmax. To avoid issues with periodic boundary conditions, this calculation was repeated eight times, each time the simulation box was centered on one of the A1-LCD chains. The smallest of the 8 Dmax values is reported in Figure 2A. Radius of gyration (Rg) for each chain was calculated using the radgyr function in CPPTRAJ (Roe and Cheatham, 2013) and then averaged over the eight chains in each simulation (Figure 2B). For inter- and intrachain contacts per residue (Figure 2C), the number of other residues in contact with a given residue was found using the distance mask function in CPPTRAJ with a cutoff of 6 Å between heavy atoms. Again, to avoid issues with the periodic boundary conditions, each chain was centered individually before inter- and intrachain contacts were calculated for each residue within that chain. In the case of intrachain contacts, the two nearest neighboring residues of a given residue were excluded as contact partners. Inter-chain contacts per chain (Figure 5A) were found in a similar way using only sidechain heavy atoms, and were broken into interaction types based on the residue types of the interaction partners. Interaction types were defined as follows: salt bridges were between Arg/Lys and Asp, cation-π interactions were between Arg/Lys and Tyr/Phe, amino-π interactions were between Asn/Gln and Tyr/Phe, and π–π interactions were between a Tyr/Phe and another Tyr/Phe. To characterize chain reconfiguration, the RMSFs of the chains were calculated separately and then averaged over the 8 chains (Figure 1—figure supplement 1).
 

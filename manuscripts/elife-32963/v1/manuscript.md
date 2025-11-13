@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.32963.001 Most transcription factors (TFs) can bind to a population of sequences closely related to a single optimal site. However, some TFs can bind to two distinct sequences that represent two local optima in the Gibbs free energy of binding (ΔG). To determine the molecular mechanism behind this effect, we solved the structures of human HOXB13 and CDX2 bound to their two optimal DNA sequences, CAATAAA and TCGTAAA. Thermodynamic analyses by isothermal titration calorimetry revealed that both sites were bound with similar ΔG. However, the interaction with the CAA sequence was driven by change in enthalpy (ΔH), whereas the TCG site was bound with similar affinity due to smaller loss of entropy (ΔS). This thermodynamic mechanism that leads to at least two local optima likely affects many macromolecular interactions, as ΔG depends on two partially independent variables ΔH and ΔS according to the central equation of thermodynamics, ΔG = ΔH - TΔS.
+Most transcription factors (TFs) can bind to a population of sequences closely related to a single optimal site. However, some TFs can bind to two distinct sequences that represent two local optima in the Gibbs free energy of binding (ΔG). To determine the molecular mechanism behind this effect, we solved the structures of human HOXB13 and CDX2 bound to their two optimal DNA sequences, CAATAAA and TCGTAAA. Thermodynamic analyses by isothermal titration calorimetry revealed that both sites were bound with similar ΔG. However, the interaction with the CAA sequence was driven by change in enthalpy (ΔH), whereas the TCG site was bound with similar affinity due to smaller loss of entropy (ΔS). This thermodynamic mechanism that leads to at least two local optima likely affects many macromolecular interactions, as ΔG depends on two partially independent variables ΔH and ΔS according to the central equation of thermodynamics, ΔG = ΔH - TΔS.
 
 ## Introduction
 
@@ -40,19 +40,43 @@ This analysis, together with thermodynamic measurements of HOXB13, CDX2 and two 
 
 ## Results and discussion
 
-## Modeling the binding of many TFs requires more than one PWM model
+### Modeling the binding of many TFs requires more than one PWM model
 
 Many TFs have been reported to display multiple specificity. These include many biologically important transcription factors such as the MYF family of basic helix-loop helix factors (Yin et al., 2017), the nuclear receptor HNF4A (Badis et al., 2009), and the homeodomain proteins BARHL2, CDX1 and HOXB13 (Jolma et al., 2013; Jolma et al., 2015; Nitta et al., 2015; Zuo et al., 2017). Analysis of enrichment of subsequences by MYF6, BARHL2, CDX1 and HOXB13 in SELEX reveals that a single PWM model cannot describe the binding affinity of these factors to DNA (Figure 1A–D). Each of these factors has more than one locally optimal sequence. All sequences between these optima have lower affinity and enrich less in SELEX than the optimal sequences. Therefore, more than one positionally independent position weight matrix (PWM) model is required for describing their affinity towards DNA (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-v1.jpg)
+
+**Figure 1.:** (A) MYF6 (this study); (B) BARHL2 (this study); (C) HOXB13 (Yin et al., 2017); (D) CDX1 (Yin et al., 2017). Note that single PWM models (top) fail to describe sequence specificity towards different sequences shown in the bar graphs (middle). For example, a single PWM model for HOXB13 (panel C, top) predicts near-equal affinities towards sequences TCG and TCA at the position of the bracket, and lower affinity towards CAA. Analysis of the counts of the subsequences (middle), instead, reveals that the TCA sequence is bound more weakly than the two most preferred sequences TCG and CAA. Counts for local maxima (dark blue) and related sequences that differ from the maxima by one or more base substitutions are also shown (light blue). The bars between the maxima represent sequences that can be obtained from both maximal sequences and have the highest count between the maxima. Bottom of each figure: Two distinct models that can represent the binding specificity of the TFs, the divergent bases are indicated by shading. For clarity, the PWM for the MYF6 optima that contains both AA and AC dinucleotide flanks (middle dark blue bar in A) is not shown. (E) Sequences representing the highest (blue line) and lowest (red line) affinity sequences between the two optimal HOXB13 sequences. y-axis: counts for 8-mer sequences containing the indicated trinucleotide followed by TAAA. (F) Epistasis in HOXB13-DNA binding. The effect of individual mutations (single mutants) to the optimal sequence TCGTAAAA (top) are relatively severe, with binding decreasing by more than 70% in all cases (observed binding). However, combinations of the mutations (double mutants) do not decrease HOXB13 binding in a multiplicative manner (compare predicted and observed binding). A multiplicative model predicts that combining all three substitutions would abolish binding, but instead the CAA site is bound more strongly than any other mutant (triple mutant).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The superposition of HOXB13-DNACAA complex (red) with: (A) HOXA9:PBX1-DNA complex (HOXA9 is in cyan, PBX1 is green, PDB entry 1PUF); (B) with HOXB1:PBX1-DNA complex (HOXB1 is in cyan, PBX1 is in green, PDB entry 1B72); (C) with HOXA13-DNA complex (HOXA13 is in orange, PDB entry 2LD5). The corresponding DNA sequences are presented under pictures. (D) The sequence alignment of Hox proteins with known structures. The numbering corresponds to HOXB13. Three helices are labeled on the top and highlighted with light pink. The residues involved in interactions are highlighted in grey. The residues involved in interaction in HOXB13 are colored red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Structural representation of two of three residues found mutated in single prostate cancer families, Gly-216-Cys and Arg-229-Gly. The mutated residues are presented in ball-and-stick style and highlighted with orange rings. Note that the first mutation Gly-216-Cys belonging to the N-termini of HOXB13 DBD can affect the interactions forming by protein in narrow minor groove. The other mutation Arg-229-Gly is located at the beginning of helix one and because glycine residue is known as ‘helix-breaker’ the mutation can affect the interaction between N-termini with DNA as well as the interaction between two helixes. (B) Sequence alignment of posterior members of HOX family. The cancer mutations found in HOXB13 are colored red. Light red columns highlight the residues involved in interactions with DNA. The numbering corresponds to HOXB13.
+
 Combinations of mutations affecting the optimal sites of these TFs display extremely strong epistatic effects. For example, the effect of mutating three first bases of the optimal HOXB13 motif TCGTAAAA is more than 400-fold smaller than what is expected from the individual single mutants (Figure 1E,F), and the generated CAATAAAA site binds to HOXB13 with almost the same affinity as the initial unmutated sequence.
 
-## Structural analysis of HOXB13 and CDX2 bound to DNATCG and DNACAA
+### Structural analysis of HOXB13 and CDX2 bound to DNATCG and DNACAA
 
 To understand the molecular basis of the epistatic effect, we decided to solve the structure of HOXB13 and CDX2 bound to their two optimal sequences. These proteins are related, but diverged significantly in primary sequence, showing 43% identity at amino-acid level (Figure 1—figure supplements 1 and 2). For structural analysis, the DNA-binding domains (DBD) of HOXB13 (the 75 amino-acids from Asp-209 to Pro-283) and CDX2 (the residues Arg-154 – Gln-256) were expressed in E.coli, purified and crystallized bound to synthetic 19 or 18 bp double stranded DNA fragments containing the CTCGTAAA/GTCGTAAA (DNATCG) or CCAATAAA/GCAATAAA (DNACAA) motifs, respectively. These core sequences were obtained by PBM (Berger et al., 2008) and HT-SELEX (Jolma et al., 2013), and validated by ChIP-seq experiments (Yin et al., 2017), and represent the two distinct binding sites of HOXB13 and CDX2 (Figure 2). The structures were solved using molecular replacement at resolutions 3.2 and 2.2 Å for HOXB13, and 2.57 and 2.95 Å for CDX2, respectively.
 
 All complexes displayed a high overall similarity to HOXB13 bound to methylated DNA (Yin et al., 2017), and to the previously known DNA-bound HOX protein structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Zhang et al., 2011) (Figure 2; Figure 1—figure supplement 1). Two parts of both HOXB13 and CDX2 DBDs interact with DNA: the recognition helix α3, which tightly packs into the major groove, and the N-terminal tail interacting with the minor groove (Figure 2A,C). The residue Gly-84 that is affected by a coding variant that is strongly implicated in prostate cancer was not included in our construct; two other residues mutated in single prostate cancer families (Ewing et al., 2012) were predicted to destabilize the protein (R229G), or its interaction with DNA (G216C) (Figure 1—figure supplement 2).
 
 The core interactions between both HOXB13 and CDX2 DBDs and DNA are similar to those known from earlier structures (Hovde et al., 2001; Joshi et al., 2007; LaRonde-LeBlanc and Wolberger, 2003; Passner et al., 1999; Piper et al., 1999; Yin et al., 2017; Zhang et al., 2011). The TAAA sequence characteristic of the posterior homeodomains is recognized by a combination of a direct hydrogen bond to the A10 base opposite of the T, and an insertion of the N-terminal basic amino-acids to the narrow minor groove induced by the stretch of four As. The overall protein structure in the four complexes is highly similar, showing only minor differences in the conformation of the N-termini, due to the replacement of basic Arg-217 of HOXB13 with the negatively charged Asp-187 in CDX2 (Figure 2A, B, C, D; Figure 1—figure supplement 2B). The most remarkable difference between the complexes is in the conformation of DNA of the HOXB13-DNATCG complex at the position of the divergent bases (Figure 2A,C; Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-v1.jpg)
+
+**Figure 2.:** (A) The view of superposition of HOXB13 (wheat) bound to DNATCG and HOXB13 (red) bound to DNACAA (rmsd = 0.813 Å on 57 residues). The respective DNAs are in blue and green. The dissimilar base pairs are presented as ball-and-stick models and colored as the proteins, DNATCG is wheat and DNACAA is red. Note the different bending of the DNA backbone at these positions (orange). (B) Schematic representation of interactions formed between HOXB13 DBD and the two different DNAs: left panel shows the interactions between HOXB13 and the primary binding site (DNATCG) and right panel represents the interactions of HOXB13 with the secondary site (DNACAA), respectively. Dashed lines represent interaction with backbone phosphates and deoxyribose and solid lines interactions with the bases. The protein residues belonging to the HOXB13-DNATCG and HOXB13-DNACAA structures are colored wheat and red, respectively. The divergent parts of the DNA sequences are highlighted by a light green box. Note that the TCG site lacks direct contacts to the DNA bases, whereas the CAA site is recognized by direct contacts by Gln-265 and Ile-262. Most other contacts are similar in both structures. The four As of the TAAAA sequence are recognized by the N-terminal amino-acids interacting with the DNA backbone via the minor groove, whereas the T is recognized by a bidentate interaction formed between its complementary adenine A10 and the side chain of asparagine Asn-266. Two hydrogen bonds are formed between nitrogen atoms N6 and N7 from adenine base and oxygen and nitrogen atoms of the Asn-266 side chain. This adenine-specific asparagine is totally conserved in the HOX family. (C) Superposition of CDX2 (cyan) bound to DNATCG and CDX2 (magenta) bound to DNACAA (rmsd = 0.270 Å on 64 residues). The respective DNAs are in blue and green. The dissimilar base pairs are presented as ball-and-stick models and colored as the proteins, DNATCG is green and DNACAA is blue. Note the different bending of the DNA backbone at these positions (orange). (D) Schematic representation of interactions formed between CDX2 DBD and the two different DNAs. (E) Structural interpretation of mutations that change the specificity of HOXB13: the mutations changing Ccaa/Ctcg to Gcaa/Gtcg are shown in a small box and, as a close view, on the left panel, and mutations, which switch the preferences of HOXB13 from CTCG to CCAA, are shown in big box and, as a close view, on the right panel. The mutations are presented in structural alignment of HOXB13 (red), HOXA9 (blue, PDB entry 1PUF) and CDX2 (pink) bound to DNA. Note the unique mutation of Lys (small box), which is conserved in all known HOXes, to Thr in HOXB13 allows HOXB13 to accept any base pair in the position before TCG/CAA. The left panel is representing the close view to the interactions formed by Lys in HOXA9 and CDX2. Long aliphatic chain of Lys increases the hydrophobicity of this part of protein-DNA interface, pushing out the water molecules. Dashed line indicates water-mediated interaction between the ε-Amino group of Lys and the N7 and O6 of the guanine base at the Gtcg sequence. The right panel is representing the close view of triple mutation in the loop connecting helix 1 and helix 2: Lys-239/Met, Phe-240/Tyr and Ile-241/Leu; and single mutation of Lys-272/Arg. Those mutations are expected to change the hydrogen bond network between the protein and DNA and lead to a preference towards the more rigid, more B-shaped DNACAA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Pairwise comparisons of DNATCG (wheat) and DNACAA (red); (B) Helicoidal parameters for HOXB13-DNATCG (blue) and HOXB13-DNACAA (green). Top: Helical twist; Middle top: shift (squares) and slide (circles); Middle bottom: X- (squares) and Y-displacements (circles); Bottom: Minor groove width (squares) and major groove depth (circles). The most pronounced differences are found for the TCGT and CAAT positions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sequence alignment of HOXB13 with other HOXes. Secondary structure (alpha-helixes) of HOXB13 is highlighed in cyan. (B) The pairwise alignment; note that in addition to single mutations there are combined mutations and replacement of Helix 3 (DNA-binding helix) to corresponding helix of other HOXes (highlighted in yellow). The numbering on the top of the sequences is HOXB13 numbering.
 
 To quantitate the shape of the DNA in the protein binding region we determined the helicoidal parameters using the program Curves+ (Lavery et al., 2009), and found that the most prominent differences between the two complexes were in twist, shift, slide, X- and Y-displacement, minor groove width, and major groove depth at the positions of the divergent CAA and TCG sequences (Figure 2—figure supplement 1B). The DNATCG backbone is bent towards the major groove, facilitating contact with Arg-258 of the recognition helix with the DNA backbone. The corresponding contact (Arg-228 to backbone) is also observed in both CDX2 structures. In contrast, the DNACAA backbone is bent towards the minor groove, leading to a contact with N-terminal Arg-217 and Lys-218 (Figure 2B; Figure 3). Instead of contacting the DNA backbone, Arg-258 assumes an alternative conformation in which it turns inside of the major groove, forming a water-mediated contact with Gln-265. The Gln-265, in turn, recognizes C6’ via a direct hydrogen bond. In addition, the CAA sequence is recognized by a hydrophobic interaction between Ile-262 and the T11 methyl group. In CDX2 complexes the DNA bend in CDX2-DNATCG is slightly smaller due to the replacement of Thr-261 with Lys-231 which does not allow the alternative conformation of Arg-228. The other contacts in the CDX2-DNA complexes are very similar to those listed for HOXB13-DNAs.
 
@@ -64,19 +88,35 @@ In order to understand the role of individual residues in binding of specific DN
 
 Analysis of the mutation data together with the structures revealed that amino-acids involved in the protein-DNA interface formation cannot fully explain the specificity preferences of HOXB13 and CDX2. The lack of direct interactions between protein and DNA in this region instead suggests that the specificity would be conferred in part by bridging water-molecules located at the protein-DNA interface.
 
-## Role of water molecules in the protein-DNA interface
+### Role of water molecules in the protein-DNA interface
 
 The main difference between the complexes with DNACAA and DNATCG is revealed by analysis of the bridging water molecules. The HOXB13-DNACAA structure (2.2 Å) contains chains of water molecules that interact with both HOXB13 amino-acids and each of the DNA bases in the CAA sequence (Figure 4A–C). In contrast, no water molecules are visible in the HOXB13-DNATCG structure, despite the 3.2 Å resolution that should allow identification of strongly bound water molecules. Consistently, only few water molecules were found in the CDX2-DNATCG complex. A relatively large solvent channel (6.4 Å in smallest diameter) exists between the α3 helix of HOXB13 and DNATCG (Figure 4D) while this space is occupied by well-defined water-net including Arg-258 in HOXB13-DNACAA structure (Figure 4—figure supplement 1A). The electron density in this region of HOXB13-DNATCG structure is low (σ < 0.5), similar to that found in the surrounding solvent, indicating that the water-molecules in this region are highly mobile. Thus, the optimal binding of HOXB13 to the CAA sequence can be rationalized by the visible interactions that contribute to the enthalpy of binding (∆H). In contrast, no such interactions can be identified that could explain the preference of HOXB13 to the TCG trinucleotide. The absence of ordered solvent molecules, and the lower resolution of the HOXB13-DNATCG structure is consistent with the possibility that the TCG sequence is preferred because it represents a relatively disordered, high entropy state. In complex of CDX2-DNATCG with high resolution (2.57 Å) the water molecules were well visible but they did not form the corresponding water-chains (Figure 4E,F) supporting the idea of entropically driven binding. The channel is not as clearly visible from one side of the CDX2-DNATCG complex because of the presence of Lys-231 instead of Thr-261. The long side chain of Lys-231 does not allow Arg-228 (corresponded to Arg-258 in HOXB13) to change its conformation easily. Together, Arg-228 and Lys-231 close the entry of the channel from this side but the other end of the channel is open and well visible in CDX2-DNATCG (Figure 4—figure supplement 1B,C).
 
-## Thermodynamic features of the protein-DNA interactions
+![Figure 4.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of water-mediated interactions between amino-acids (red typeface) of HOXB13 and DNA bases in the HOXB13-DNACAA structure. Different water chains are indicated with different shades of blue. Thick dashed lines represent interactions formed between water molecules and bases or amino acids; thin dashed lines represent contacts formed between water molecules, and solid blue line indicates the direct interaction between A10 and Asn-266. Note that all of the base positions in the CAA sequence (boxes) are recognized via direct or water-mediated hydrogen bonds. (B) Structural representation of the network of interactions schematically presented in (A). Note the three water chains colored by slightly varied blue color. The amino acids and bases involved in interactions are presented as stick models. (C) Close view to the different conformations of amino-acids observed in HOXB13-DNATCG and HOXB13-DNACAA structures. Note that the conformations of the key amino-acids Gln-265 and Arg-258 that interact with the water network in HOXB13-DNACAA (amino-acids in red, DNA carbons in green) are not suitable for interacting with the network in HOXB13-DNATCG (amino-acids and DNA carbons in wheat). (D) Surface representation of protein-DNA interface of HOXB13-DNATCG complex. Relatively large channel between the protein and DNA that goes through the protein-DNA interface (white) lend support to the presence of mobile water molecules in this region. TCG-bases are colored by atoms: carbon atoms are yellow; oxygen atoms are red and nitrogen atoms are blue. (E) Schematic representation of water-mediated interactions between amino-acids (cyan typeface) of CDX2 and DNA bases in the CDX2-DNATCG structure. Different water chains are indicated with different shades of red. Thick dashed lines represent interactions formed between water molecules and bases or amino acids; thin dashed lines represent contacts formed between water molecules, and solid red line indicates the direct interaction between A10 and Asn-236. Note that only the position of the GC pair is recognized (boxes) via water-mediated hydrogen bonds. (F) Structural representation of the network of interactions schematically presented in (E). Note the three water chains colored by varied red-pink color. The amino acids and bases involved in interactions are presented as stick models.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The large channel between the protein and DNA presented in HOXB13:DNATCG complex (Figure 4D) is not presented in HOXB13:DNACAA (A) and CDX2:DNACAA (B), although it is very well visible on one side in the structure of CDX2:DNATCG (C) supporting the idea of the presence of mobile water molecules in this region. The color code is corresponding to the color code kept through the main figures of the paper: HOXB13:DNACAA is red, CDX2:DNACAA is magenta and CDX2:DNATCG is cyan. The TCG/CAA bases are colored by atoms: carbon atoms are yellow; nitrogen atoms are blue and oxygen atoms are red.
+
+### Thermodynamic features of the protein-DNA interactions
 
 We next performed molecular dynamics simulations and free energy perturbation calculations to probe the behavior of water molecules in the protein-DNA interface for the two optimal sequences for HOXB13. The relative free energy (Hansson et al., 1998) estimates for the affinities of HOXB13 for the two DNA sequences obtained from the simulations indicate that both sequences are bound with similar affinities (ΔΔG = - 0.1 kcal/mol). Analysis of the mobility of water molecules at the protein-DNA interface revealed that, while there is a similar number of water molecules in both systems, the waters at the HOXB13-DNATCG interface are more mobile (Figure 5—figure supplement 1), consistent with a model where this complex has higher entropy than the HOXB13-DNACAA complex.
 
 To more directly test if the two states are driven by enthalpy and entropy, we measured these thermodynamic parameters using isothermal titration calorimetry (ITC). ITC directly measures the heat of binding (ΔH) and Kd of the binding reaction. Conversion of the Kd to ΔG then allows the inference of the entropy of binding (ΔS) from the data. The measured thermodynamic parameters for the TCG site were very similar to those we reported previously (Yin et al., 2017). Comparison of the parameters for the TCG and CAA sites revealed that consistent with SELEX (Jolma et al., 2013) and molecular modeling data, the ΔG values for both sequences were similar. However, as predicted, the CAA site displayed much higher change in enthalpy, and larger loss of entropy compared to those of the TCG site (Figure 5A,B, Supplementary file 1). These results indicate that HOXB13 binding to one optimal site, CAA, is driven by enthalpy, whereas strong binding to the other, TCG, is due to a lower loss of entropy.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig5-v1.jpg)
+
+**Figure 5.:** The optimal sequences with higher enthalpic contribution to binding are presented on the left side (A, C, E, G) and the reactions with higher entropic contribution are presented on the right side (B, D, F, H). Note that for each protein both DNAs are bound with similar ΔG. The top panels of the ITC figures represent raw data; the bottom panels show the integrated heat of the binding reaction. The red line represents the best fit to the data, according to the model that assumes a single set of identical sites. The determined changes of enthalpy and calculated losses of entropy are shown on the bottom panel. The changes of Gibbs free energy, ∆G=∆H-T∆S, are also calculated and presented on the bottom panel of each isotherm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32963/elife-32963-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Histogram showing the distribution of lifetimes of water bridges between the protein and the DNA for the HOXB13-DNATCG and HOXB13-DNACAA systems. The histogram is constructed by calculating the duration of each water bridge with 50 ps resolution from the molecular dynamics simulations; a water bridge is considered to exist when a water molecule is simultaneously hydrogen-bonded to one of the protein residues 255–272 and one of the DNA base pairs 5'-T(6)TTTACGAG(14)−3'.
+
 To test if the identified mechanism is general to other cases of multiple specificity, we used ITC to determine the thermodynamic parameters for CDX2 and two other TFs, the MYF family TF MYF5 and the homeodomain protein BARHL2, both of which can optimally bind to two distinct sequence populations. Analysis of the data confirmed that in both cases, the ΔG values for the two optimally bound sequences were similar, whereas the relative contributions of entropy and enthalpy to the binding were strikingly different (Figure 5C–H). These results suggest that the ability of some TFs to bind to two distinct sequences with high affinity can be caused by the presence of both an enthalpic and an entropic optima.
 
-## Conclusions
+### Conclusions
 
 In drug development, multiple optimal compounds can often be found that bind to a particular target molecule (Klebe, 2015). However, biological macromolecules are composed of a small set of relatively large monomers, and thus populate the shape-space more sparsely than synthetic small molecules, which can be modified at the level of single atoms. Therefore, the finding that TFs can bind to two distinct DNA sequences with equal affinity was unexpected (Badis et al., 2009; Jolma et al., 2013) and has been controversial in the field. Our initial hypothesis was that the two optimal states could be due to an ability of the TF to adopt two distinct conformational states, or due to a similarity of the shapes of the two distinct DNA sequences (Kalodimos et al., 2002; Nakagawa et al., 2013; Párraga et al., 1998). To address these hypotheses, we solved the structure of HOXB13, a central transcription factor involved in both development (Economides and Capecchi, 2003; Krumlauf, 1994; Nolte et al., 2015) and tumorigenesis (Ewing et al., 2012; Huang and Cai, 2014; Pomerantz et al., 2015) bound to its two optimal DNA sequences. Surprisingly, the conformational differences between the HOXB13 proteins in the two structures were minor. Similarly, the two CDX2-DNA structures also displayed very similar overall conformations. In addition, the shape and charge-distribution of the optimally bound DNA sequences were not similar to each other. Thus, the structural analysis failed to support either the dual protein conformation or the DNA shape similarity models. Instead, thermodynamic analyses of HOXB13, CDX2, BARHL2 and MYF5 revealed that the two optimal states were bound because of their distinct effects on enthalpy and entropy, principally caused by differential stability of the water network at the protein-DNA interface. We also failed to find mutations in HOXB13 that would specifically abolish binding to one of the DNA sites. This finding is consistent with the thermodynamic model presented, as both TCG and CAA are bound by the same conformation of the HOXB13 protein, using the same contacting amino-acids (even when the contacts can occur via water or be direct).
 
@@ -94,28 +134,237 @@ Our results and the underlying theory suggest that the ability of TFs to bind to
 
 ## Materials and methods
 
-## Protein expression, purification and crystallization
+### Protein expression, purification and crystallization
 
 Expression and purification of the DNA-binding domain fragment of human HOXB13 (residues 209–283) as well as CDX2 (residues 184–256) were performed as described in Refs. (Savitsky et al., 2010) and (Yin et al., 2017). The DNA fragments used in crystallization were obtained as single strand oligos (Eurofins), and annealed in 20 mM HEPES (pH 7.5) containing 150 mM NaCl and 0.5 mM Tris (2-carboxyethyl) phosphine (TCEP) and 5% glycerol. For each complex, the purified and concentrated protein was first mixed with a solution of annealed DNA duplex at a molar ratio 1:1.2 and after one hour on ice subjected to the crystallization trials. The crystallization conditions for all complexes were optimized using an in house developed crystal screening kit of different PEGs. Complexes were crystalized in sitting drops by vapor diffusion technique from solution containing 50 mM Tris buffer (pH 8.0), 100 mM MgCl2, 150 mM KCl, 8% of PEG (400) and different concentrations of various PEGs. PEG (3350) was used at 14% for HOXB13-DNATCG and 21–27% (w/v) of polyethylene glycol monomethyl ether (PEGmme (5000)) was used in crystallizations of HOXB13 with DNACAA and CDX2 with both DNAs. The data sets were collected at ESRF from a single crystal on beam-lines ID29 (HOXB13-DNATCG) and ID23-1 (HOXB13-DNACAA, and both CDX2 complexes), at 100 K using the reservoir solution as cryo-protectant. The data collection strategy was optimized with the program BEST (Bourenkov and Popov, 2006). Data were integrated with the program XDS (Kabsch, 2010) and scaled with SCALA (Murshudov et al., 2011; Winn et al., 2011). Statistics of data collection are presented in Table 1.
 
-## Structure determination and refinement
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HOXB13-DNATCG</th>
+      <th>HOXB13-DNACAA</th>
+      <th>CDX2-DNATCG</th>
+      <th>CDX2-DNACAA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9724</td>
+      <td>0.9724</td>
+      <td>0.9724</td>
+      <td>0.9724</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>46.29–3.2 (3.31–3.2)</td>
+      <td>45.95–2.19 (2.27–2.19)</td>
+      <td>43.23–2.57 (2.66–2.57)</td>
+      <td>55.96–2.95 (3.13–2.95)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 2 2 21</td>
+      <td>P 1 2 1</td>
+      <td>C 1 2 1</td>
+      <td>I 1 2 1</td>
+    </tr>
+    <tr>
+      <td>Unit cell (Å, °)</td>
+      <td>52.62 52.52 389.33; 90 90 90</td>
+      <td>77.35 57.92 101.28; 90 101.57 90</td>
+      <td>127.95 46.49 68.89; 90 113.27 90</td>
+      <td>70.25 46.69 128.63; 90 101.40 90</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>86877 (3476)</td>
+      <td>241614 (21747)</td>
+      <td>19575 (1958)</td>
+      <td>27018 (4003)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>17526 (1361)</td>
+      <td>44125 (3912)</td>
+      <td>12095 (1197)</td>
+      <td>8802 (1264)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>4.2 (3.3)</td>
+      <td>5.5 (5.6)</td>
+      <td>1.6 (1.6)</td>
+      <td>3.2 (3.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>93.0 (90.4)</td>
+      <td>97.42 (87.37)</td>
+      <td>99.5 (100)</td>
+      <td>96.6 (90.5)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>7.91 (0.10)</td>
+      <td>8.11 (1.10)</td>
+      <td>8.47 (2.77)</td>
+      <td>7.5 (1.1)</td>
+    </tr>
+    <tr>
+      <td>R-merge</td>
+      <td>0.085 (4.59)</td>
+      <td>0.12 (1.21)</td>
+      <td>0.13 (5.49)</td>
+      <td>0.071 (7.24)</td>
+    </tr>
+    <tr>
+      <td>R-meas</td>
+      <td>0.09</td>
+      <td>0.13</td>
+      <td>0.08</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.99 (0.72)</td>
+      <td>0.99 (0.71)</td>
+      <td>0.99 (0.80)</td>
+      <td>0.99 (0.61)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-work</td>
+      <td>0.21</td>
+      <td>0.25 (0.37)</td>
+      <td>0.22</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>R-free</td>
+      <td>0.28</td>
+      <td>0.29 (0.35)</td>
+      <td>0.29</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Number of non-hydrogen atoms</td>
+      <td>5197</td>
+      <td>5591</td>
+      <td>2841</td>
+      <td>2783</td>
+    </tr>
+    <tr>
+      <td>macromolecule</td>
+      <td>5172</td>
+      <td>5072</td>
+      <td>2748</td>
+      <td>2717</td>
+    </tr>
+    <tr>
+      <td>water</td>
+      <td>8</td>
+      <td>519</td>
+      <td>93</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>242</td>
+      <td>274</td>
+      <td>144</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <td>RMS (bonds)</td>
+      <td>0.025</td>
+      <td>0.011</td>
+      <td>0.018</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>RMS (angles)</td>
+      <td>2.03</td>
+      <td>1.26</td>
+      <td>2.11</td>
+      <td>1.83</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>93</td>
+      <td>97</td>
+      <td>97.8</td>
+      <td>99.3</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>1.7</td>
+      <td>0.41</td>
+      <td>1.43</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>10.51</td>
+      <td>5.31</td>
+      <td>4.42</td>
+      <td>6.43</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>124.40</td>
+      <td>41.70</td>
+      <td>30.54</td>
+      <td>74.75</td>
+    </tr>
+    <tr>
+      <td>macromolecule</td>
+      <td>124.70</td>
+      <td>42.10</td>
+      <td>29.30</td>
+      <td>74.41</td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistics for the highest-resolution shell are shown in parentheses._
+
+### Structure determination and refinement
 
 All structures were solved by molecular replacement using program Phaser (McCoy et al., 2007) as implemented in Phenix (Adams et al., 2010) and CCP4 (Winn et al., 2011) with the structure of HOXA9 (pdb entry 1PUF) as a search model for HOXB13 and structure of CDX2-DNAmeth (pdb entry 5LTY) as a search model for CDX. After the positioning of protein, the density of DNA was clear and the molecule was built manually using COOT (Emsley et al., 2010). The rigid body refinement with REFMAC5 was followed by restrain refinement with REFMAC5, as implemented in CCP4 (Winn et al., 2011) and Phenix.refine (Afonine et al., 2012). The manual rebuilding of the model was done using COOT. The refinement statistics are presented in Table 1. The first seven amino acids from N-termini and the last seven from C-termini were found disordered and were not built in the maps. The end base pairs of the DNA in HOXB13-DNATCG structure were also found slightly disordered but it was possible to build them to the maps. Figures showing structural representations were prepared using PyMOL (Schrödinger, 2015).
 
-## HT-SELEX and motif analysis
+### HT-SELEX and motif analysis
 
 MYF6 and BARHL2 HT-SELEX experiments were performed essentially as described in (Yin et al., 2017). The PWM models were generated from cycles 3, 3, 4 and 2 of new MYF6 and BARHL2 HT-SELEX reads, and published HT-SELEX reads for HOXB13 (Yin et al., 2017) and CDX1 (Methyl-HT-SELEX; Yin et al., 2017), respectively, using the multinomial (setting = 1) method (Jolma et al., 2010) with the following seeds: HOXB13 single PWM: NCYMRTAAAAN, TCG: NCTCGTAAAAN, CAA: NCCAATAAAAN; CDX1 single PWM: GYMRTAAAA, TCG: GTCGTAAAA, CAA: GCAATAAAA; MYF6 single PWM: NRWCAGCTGWYN, AA...TT flank: NAACAGCTGTTN, GT...AC flank: NGTCAGCTGACN; BARHL2 single PWM: NSYTAAWYGNYN, TT: NSYTAATTGNYN, AC: NSYTAAACGKYN.
 
-## Molecular dynamics
+### Molecular dynamics
 
 Molecular dynamics simulations were performed for HOXB13 complexed with either DNATCG or DNACAA; the DNA sequence used in the simulations contained nucleotides G5 – C18 from the crystal structure. The CHARMM 36 forcefield (Best et al., 2012; Foloppe and MacKerell, Jr., 2000; Hart et al., 2012; MacKerell et al., 1998; MacKerell et al., 2004) and CHARMM program (Brooks et al., 2009), with the CHARMM interface to OpenMM (Friedrichs et al., 2009) to allow the use of NVIDIA graphical processing units (GPUs), were used for all simulations. The starting structure was placed in a cubic solvent box with 8 nm side length containing water (Jorgensen et al., 1983) and 0.15 M NaCl; Na+ ions were then added to neutralize the system. After energy minimization to relax initial strain the systems were heated from 100 K to 300 K over 0.1 ns followed by 0.3 ns simulation at constant pressure (1 bar) and constant temperature (300 K), with soft harmonic positional restraints on the protein and DNA atoms. For each complex 3 × 0.8 µs production runs were performed using the GPU, with the pressure and temperature maintained at 1 bar and 300 K, respectively, and without the positional restraints. Particle mesh Ewald summation was used to treat the long range electrostatic interactions, using a sixth order cubic spline interpolation for the charge distribution on the 0.1 nm spaced grid points, kappa = 0.34. The same 0.9 nm cutoff was used for both the direct space part of the PME and for the van der Waals interactions, which were switched to zero from 0.8 nm to 0.9 nm, and the non-bond list was generated with a 1.1 nm cutoff. SHAKE (Ryckaert et al., 1977) was used to keep the lengths of all covalent X-H bonds fixed, allowing a time-step of 2 fs.
 
 In the free energy perturbation calculations (Zwanzig, 1954) we changed the three base pairs in the TCG sequence into those of the CAA sequence using a total of 43 intermediate states, where the order of change was: turn off charges, change Lennard-Jones parameters, turn on charges. In each state, a 10 ns equilibration was followed by 10 ns production. The free energies were calculated using the Bennett Acceptance Ratio method (Bennett, 1976).
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 The ITC experiments were carried similarly to described in Ref. (Yin et al., 2017). Briefly, an ITC200 microcalorimeter (MicroCal Inc., Northampton, Massachusetts, USA) in PSF (Protein Science Facility at Karolinska Institute, Sweden) was used to measure binding isotherms of DNAs by direct titration of protein to the cell containing DNA. The measurements were taken at 25°C. Both protein and DNA were prepared in a buffer containing 20 mM HEPES pH 7.5, 300 mM NaCl, 10% glycerol and 2 mM Tris (2-carboxyethyl) phosphine (TCEP). To measure binding affinity, a solution of 0.15 mM protein was titrated to 0.012–0.016 mM solution of DNA. A total of 23 injections were made with 240 s between injections. Each experiment was repeated three times for the reliability of the results. All data were evaluated using the OriginPro 7.0 software package (Microcal) supplied with the calorimeter. The apparent binding constant Kd, binding enthalpy ∆H and stoichiometry n, together with their corresponding standard deviation (s.d.), were determined by a nonlinear least square fit of the data to standard equations for the binding using a model for one set of independent and identical binding sites as implemented in the package. The entropy and free energy of binding were obtained from the relation ∆G = -RTlnKd = ∆H-T∆S.
 
-## Accession codes
+### Accession codes
 
 The atomic coordinates and diffraction data have been deposited to Protein Data Bank with the accession codes 5EDN and 5EEA, for HOXB13-DNATCG and HOXB13-DNACAA, respectively and 6ES3 and 6ES2 for CDX2-DNATCG and CDX2-DNACAA, respectively. All sequence reads are deposited to the European Nucleotide Archive with the study accession number: PRJEB20652

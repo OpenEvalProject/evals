@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Department of Neuroscience and Developmental Biology, Vienna Biocenter, University of Vienna Vienna Austria
-2. https://ror.org/04khwmr87 Research Institute of Molecular Pathology, Vienna Biocenter Vienna Austria
+1. Department of Neuroscience and Developmental Biology, Vienna Biocenter, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+2. Research Institute of Molecular Pathology, Vienna Biocenter Vienna Austria ([ROR:04khwmr87](https://ror.org/04khwmr87))
 
 † Corresponding author
 

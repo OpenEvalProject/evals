@@ -17,18 +17,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00t9vx427 Children's Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas United States
-2. https://ror.org/00t9vx427 Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States
-3. https://ror.org/05byvp690 Harold C. Simmons Comprehensive Cancer Center, University of Texas Southwestern Medical Center Dallas United States
-4. https://ror.org/00t9vx427 Advanced Imaging Research Center, University of Texas Southwestern Medical Center Dallas United States
-5. https://ror.org/00t9vx427 Department of Pediatrics, University of Texas Southwestern Medical Center Dallas United States
-6. https://ror.org/006w34k90 Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States
+1. Children's Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+2. Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+3. Harold C. Simmons Comprehensive Cancer Center, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+4. Advanced Imaging Research Center, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+5. Department of Pediatrics, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+6. Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
 ## Abstract
 
-Mitochondrial electron transport chain (ETC) dysfunction due to mutations in the nuclear or mitochondrial genome is a common cause of metabolic disease in humans and displays striking tissue specificity depending on the affected gene. The mechanisms underlying tissue-specific phenotypes are not understood. Complex I (cI) is classically considered the entry point for electrons into the ETC, and in vitro experiments indicate that cI is required for basal respiration and maintenance of the NAD + /NADH ratio, an indicator of cellular redox status. This finding has largely not been tested in vivo. Here, we report that mitochondrial complex I is dispensable for homeostasis of the adult mouse liver; animals with hepatocyte-specific loss of cI function display no overt phenotypes or signs of liver damage, and maintain liver function, redox and oxygen status. Further analysis of cI-deficient livers did not reveal significant proteomic or metabolic changes, indicating little to no compensation is required in the setting of complex I loss. In contrast, complex IV (cIV) dysfunction in adult hepatocytes results in decreased liver function, impaired oxygen handling, steatosis, and liver damage, accompanied by significant metabolomic and proteomic perturbations. Our results support a model whereby complex I loss is tolerated in the mouse liver because hepatocytes use alternative electron donors to fuel the mitochondrial ETC.
+Mitochondrial electron transport chain (ETC) dysfunction due to mutations in the nuclear or mitochondrial genome is a common cause of metabolic disease in humans and displays striking tissue specificity depending on the affected gene. The mechanisms underlying tissue-specific phenotypes are not understood. Complex I (cI) is classically considered the entry point for electrons into the ETC, and in vitro experiments indicate that cI is required for basal respiration and maintenance of the NAD+/NADH ratio, an indicator of cellular redox status. This finding has largely not been tested in vivo. Here, we report that mitochondrial complex I is dispensable for homeostasis of the adult mouse liver; animals with hepatocyte-specific loss of cI function display no overt phenotypes or signs of liver damage, and maintain liver function, redox and oxygen status. Further analysis of cI-deficient livers did not reveal significant proteomic or metabolic changes, indicating little to no compensation is required in the setting of complex I loss. In contrast, complex IV (cIV) dysfunction in adult hepatocytes results in decreased liver function, impaired oxygen handling, steatosis, and liver damage, accompanied by significant metabolomic and proteomic perturbations. Our results support a model whereby complex I loss is tolerated in the mouse liver because hepatocytes use alternative electron donors to fuel the mitochondrial ETC.
 
 ## Introduction
 
@@ -42,13 +42,41 @@ Here, we report that deletion of the core subunit, Ndufa9, results in complete l
 
 ## Results
 
-## Mitochondrial complex I function is dispensable for homeostasis of adult murine hepatocytes
+### Mitochondrial complex I function is dispensable for homeostasis of adult murine hepatocytes
 
 To understand how liver cells respond to loss of complex I, we made use of a conditional allele of the core subunit Ndufa9. Ndufa9 deletion in cultured mouse embryonic fibroblasts results in loss of mitochondrial respiratory function, as well as a significant drop in the NAD+/NADH ratio (Figure 1—figure supplement 1A, B), indicating that Ndufa9 is critical for redox status in these cultured cells. We deleted Ndufa9 in livers of adult mice, making use of adeno-associated virus 8 (AAV8)-mediated Cre recombination driven by the liver specific Serpina7 promoter in Ndufa9flox/flox animals (see Materials and methods). Ndufa9flox/flox adult animals were injected with control AAV8-GFP virus (hereafter ‘Ndufa9f/f’) or AAV8-Cre virus (hereafter ‘Ndufa9-/-’). At 4 weeks post-AAV administration, AAV-Cre injected animals exhibited loss of Ndufa9 mRNA and protein in hepatocytes (Figure 1A and B), as well as loss of complex I activity in mitochondrial lysates (Figure 1C). Thus, our experimental model results in severe inhibition of complex I function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ndufa9 mRNA levels (relative to β2-microglobulin; normalized) in isolated hepatocytes of the indicated genotype, assessed by qRT-PCR. n=3 animals per group. The same color scheme is used throughout this figure. (B) Ndufa9 protein levels in isolated hepatocytes of the indicated genotype, assessed by Western blot. β2-microglobulin levels are shown as a loading control. MW markers are indicated in kDa. (C) Complex I activity measurements from livers of the indicated genotype. n=3 animals per group. (D) Representative images of gross liver anatomy in animals of the indicated genotype. Scale bar: 0.5 cm. (E) Representative histology (H&E, Oil Red O, PAS staining) images of liver cross sections from animals of the indicated genotype. Scale bar: 50 μm. (F) Liver weight (normalized to body weight) from mice of the indicated genotype. n=4–5 animals per group. (G) Fasting plasma glucose levels in mice of the indicated genotype. n=12–14 animals per group. (H) Circulating plasma markers (total protein, albumin, and total bilirubin) of liver function in mice of the indicated genotype. n=3–5 animals per group. (I) Plasma markers (ALT and AST) of liver damage in mice of the indicated genotype. n=4–5 mice per group. All data were collected at 4 weeks post AAV-administration. Statistical significance was assessed using two-tailed t-test (A,C,G,H,I) or Mann-Whitney (F,H) tests with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Full gel images are provided in Figure 1—source data 1. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Oxygen consumption rates in Ndufa9f/f and Ndufa9-/- mouse embryonic fibroblasts (MEFs). n=22–24 wells per group. The same color scheme is used throughout this figure. (B) Normalized NAD+ / NADH ratios in MEFs of the indicated genotype. n=3 wells per group. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative histology (H&E, Oil Red O, PAS staining) images of liver cross sections from animals of the indicated genotype at 2 weeks post-AAV administration. Scale bar: 50 μm. (B) Liver weight / body weight ratios in animals of the indicated genotype. n=4 mice per group. The same color scheme is used throughout this figure. (C) Fasting plasma glucose levels in mice of the indicated genotype. n=4 mice per group. (D) Circulating plasma markers (total protein, albumin, and total bilirubin) of liver function in mice of the indicated genotype. n=4 animals per group. (E) Plasma markers (ALT and AST levels) of liver damage in mice of the indicated genotype. n=4 mice per group. Statistical significance was assessed using two-tailed t-test (B,C,D,E). All data in this figure were collected at 2 weeks post AAV-administration. All data represent mean +/-standard deviation from biological replicates, unless noted otherwise. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative histology (H&E, Oil Red O, PAS staining) images of liver cross-sections from animals of the indicated genotype at eight weeks post-AAV administration. Scale bar: 50 μm. (B) Fasting plasma glucose levels in mice of the indicated genotype. n=4 mice per group. The same color scheme is used throughout this figure. (C) Circulating plasma markers (total protein, albumin, and total bilirubin) of liver function in mice of the indicated genotype. n=4 animals per group. (D) Plasma markers (ALT and AST levels) of liver damage in mice of the indicated genotype. n=4 mice per group. All data in this figure were collected at 8 weeks post AAV-administration. Statistical significance was assessed using two-tailed t-test (B,C,D). All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 3.
 
 At 4 weeks post-AAV administration, Ndufa9-/- livers displayed no differences in gross physiology (Figure 1D) or liver/body weight ratio (Figure 1F). Histological analysis of liver sections revealed no significant pathology (H&E), including no evidence of steatosis (Oil Red O staining) or glycogen loss (PAS staining) (Figure 1E). Liver function was maintained in Ndufa9-/- livers as indicated by unaltered levels of fasting blood glucose (Figure 1G) and circulating indicators of liver function and damage (Figure 1H, I). Similar results were observed in mice at 2 weeks post-AAV injection (Figure 1—figure supplement 2) and 8 weeks post-AAV injection (Figure 1—figure supplement 3). Thus, complex I loss is well-tolerated in adult mouse hepatocytes under homeostatic conditions, with no discernable effects on tissue function, or evidence of tissue damage.
 
 Measurement of steady-state ATP levels did not reveal any changes in complex-I-deficient livers (Figure 2A). Complex I inhibition is often associated with elevated reactive oxygen species (Li et al., 2003; Fato et al., 2009). In Ndufa9-/- livers, we observed a small, but not statistically significant, decrease in the reduced to oxidized glutathione (GSH / GSSG) ratio, indicating that oxidative stress is not significantly induced in the setting of cI loss (Figure 2B). Surprisingly, we did not observe altered NAD+/NADH or NADPH/NADP+ ratios in Ndufa9-/- liver (Figure 2C). We additionally examined compartment-specific redox status by calculating pyruvate / lactate and acetoacetate / β-hydroxybutyrate ratios, which are indicative of cytosolic and mitochondrial redox status respectively, neither compartment display evidence of altered redox status (Figure 2D). A recent report suggests that circulating α-hydroxybutyrate levels serves as a marker of hepatic redox stress (Goodman et al., 2020). Ndufa9-/- animals did not display alterations in tissue or plasma α-hydroxybutyrate levels (Figure 2E). Thus, complex I function is not required for maintenance of hepatic redox status, in contrast to its well-established role in cultured cells (Figure 1—figure supplement 1A, B; Sullivan et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig2-v2.jpg)
+
+**Figure 2.:** (A) ATP levels from livers of the indicated genotype. n=3 mice per group. The same color scheme is used throughout this figure. (B) Reduced glutathione to oxidized glutathione ratio (GSH/GSSG) in livers of the indicated genotype, as a proxy of oxidative stress. n=8–9 mice per group. (C) NAD+/NADH and NADPH/NADP+ ratios in livers of the indicated genotype. n=6 mice per group. (D) Normalized cytosolic (pyruvate / lactate) and mitochondrial (acetoacetate / β−hydroxybutyrate) redox ratios in livers of the indicated genotype. n=6 mice per group. (E) Tissue and plasma α−hydroxybutyrate levels in animals of the indicated genotype. n=4–6 mice per group. (F) Unsupervised hierarchical clustering of protein abundances in Ndufa9f/f and Ndufa9-/- livers, depicted as a heatmap of z-scores. (G) Volcano plot of protein abundances changes in Ndufa9-/- vs. Ndufa9f/f livers, based on proteomics analysis. Log2(Fold change) is plotted against the –log10(adjusted p-value) for each protein. Significantly changing proteins (log2(Fold change)>1 or < –1; Adjusted p-val <0.05) are colored black, and mitochondrial proteins are colored red. n=6 mice per group. (H) Volcano plot of abundances for mitochondrial ETC proteins in Ndufa9-/- vs. Ndufa9f/f livers, based on proteomics analysis. (I) Levels of mitochondrial proteins (PC, pyruvate carboxylase, and Tomm20) in livers of the indicated genotype, as assessed by western blot. Actin levels are shown as a loading control. MW markers are indicated in kDa. (J) Relative amounts of Tomm20 and PC in livers of the indicated genotype, relative to actin levels. n=4 animals per group. (K) Mitochondrial genome (mtDNA) to nuclear genome (nDNA) ratios in livers of the indicated genotype. n=8–9 mice per group. (L) Unsupervised hierarchical clustering of liver metabolite abundances in Ndufa9f/f and Ndufa9-/- livers, depicted as a heatmap of z-scores. (M) Volcano plot of metabolite abundance changes in Ndufa9-/- vs. Ndufa9f/f livers, based on metabolomics analysis. Log2(Fold change) is potted against the –log10(adjusted p-value) for each metabolite. Significantly changing metabolites (log2(Fold change)>1 or < –1; Adjusted p-val <0.05) are colored black. TMP, Thiamine monophosphate. n=6 mice per group. (N) Relative abundances of mitochondrial TCA cycle and related metabolites from livers of the indicated genotype. n=6 mice per group. All data were collected at 4 weeks post AAV-administration. Statistical significance was assessed using two-tailed t-test (A,C,D,E,J,K,N) or Mann-Whitney (B) with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Full gel images are provided in Figure 2—source data 1. Numerical data for individual panels are provided in Supplementary file 1 and Supplementary file 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plot of protein abundances changes in Ndufa9-/- vs. Ndufa9f/f livers, based on proteomics analysis of enriched mitochondria. Mitochondrial proteins (based on MitoCarta 3.0) are shown. Log2(fold change) is plotted against the –log10(adjusted p-value) for each protein. Significantly changing proteins (log2(fold change)>1 or < –1; Adjusted p-val <0.05) are colored black. n=3 mice per group; 4 weeks post-AAV administration. (B) Volcano plot of abundances for mitochondrial ETC proteins in mitochondria purified from Ndufa9-/- vs. Ndufa9f/f livers, based on proteomics analysis. Numerical data for individual panels are provided in Supplementary file 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative immunofluorescent images of liver sections at 20 x (left; scale bar 50 μm) and 63 x (right; scale bar 5 μm) of the indicated genotype. TOMM20 (mitochondrial) staining is indicated in red; nuclear staining (DAPI) is indicated in blue. Data was collected at 4 weeks post-AAV administration.
 
 To examine potential compensatory mechanisms that may be enabled in the setting of complex I inhibition, we assessed changes in the proteome and metabolome, comparing Ndufa9f/f and Ndufa9-/- whole livers. At 4 weeks post-AAV, our proteomics analysis detected 3001 proteins with high confidence; however, only 11 proteins were significantly upregulated (log2(fold change)>1, p-val <0.05), and 23 proteins were significantly downregulated (log2(fold change) < –1; p-val <0.05) (Supplementary file 1). Unsupervised hierarchical clustering was unable to distinguish proteomes from Ndufa9f/f and Ndufa9-/- livers (Figure 2F). Of the downregulated proteins, the majority were components of complex I (Figure 2G and H; Supplementary file 1), consistent with destabilization of cI in the setting of Ndufa9 subunit loss. We did not observe loss of components from other ETC complexes (Figure 2H). Among upregulated proteins, there were a small number of mitochondrial proteins impacting translation (Mrpl52, Mrpl42), electron transport (Cox6a1), and metabolism (Shmt2, Ldhd, Dlat) (Figure 2G; Supplementary file 1). The small number of abundance changes (outside of complex I components) suggests that the proteome is not drastically changing in response to complex I loss; however, our analysis is only sampling a portion of the total cellular proteome, and it is possible that we are missing some key regulatory proteins in reaction to complex I loss. To further profile the response in Ndufa9-/- livers, we enriched liver lysates for mitochondrial fractions followed by proteomics (Figure 2—figure supplement 1). With this method, we were able to detect 738 mitochondrial proteins, which accounts for ~64% of the total mitochondrial proteome (Supplementary file 1). We observed significant changes (|log2(fold change)|>1, Adjusted p-val <0.05) in only a small fraction of the mitochondrial proteome (46 proteins;~6% of detected mitochondrial proteins) (Figure 2—figure supplement 1A). Complex I subunits tended to be decreased in abundance, and we did not observe significant changes in most subunits of the other complexes (Figure 2—figure supplement 1B). We observed statistically significant upregulation of some select components of mitochondrial protein import (TOMM5, TIMM9, TIMM10B) and transcription/translation (MRPS33, MTRES1; Figure 2—figure supplement 1A). In addition, we did not detect significant changes in total mitochondrial content in Ndufa9-/- livers, as indicated by measurement of mitochondrial genome and protein content or immunofluorescence (Figure 2I–K, Figure 2—figure supplement 2).
 
@@ -56,15 +84,67 @@ To assess whether complex I – deficient livers maintained functionality via me
 
 In culture, complex I is required for recycling of NADH to NAD+ in order to maintain glycolytic and TCA cycle activity (Lesner et al., 2020). We therefore assessed glucose contribution to glycolytic and TCA cycle metabolites via steady-state euglycemic infusions of [U-13C]glucose (Figure 3A and B). In these experiments, glucose can contribute to TCA cycle metabolites via glycolysis, PDH (pyruvate dehydrogenase), and PC (pyruvate carboxylase) activity; in addition, extrahepatic production of lactate can be metabolized by the liver and contribute to both TCA cycle metabolites and glycolytic intermediates via gluconeogenic pathways (Figure 3A). Infusion of 13C uniformly labeled glucose allows us to assess the contribution of glucose-derived carbons to liver metabolites by measuring the fraction of unlabeled (m+0) metabolite, as well as the fraction of each possible labeled species (m+1, m+2, m+3, …) in which one or more carbons were derived from the labeled glucose molecule. We observed no significant differences in the hepatic enrichment of infused labeled glucose between wild-type and Ndufa9-/- livers (Figure 3C). In addition, contribution of glucose-derived carbons to glycolytic and TCA cycle intermediates were unaltered (Figure 3—figure supplement 1A), suggesting no substantial changes in glucose handling. As labeling from glucose can be significantly scrambled in vivo and livers exhibit low PDH activity (Cappel et al., 2019; Merritt et al., 2011), we also assessed total enrichment (e.g. 1-(m+0)), which revealed no significant differences (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of potential fates of glucose and lactate within central carbon metabolism. Carbon atoms are indicated with circles for each compound. G1P, glucose-1-phosphate; 3 PG, 3-phosphoglycerate; 2 PG, 2-phosphoglycerate; PEP, phosphoenolpyruvate; pyr, pyruvate; lac, lactate; acCoA, acetyl-CoA; OAA, oxaloacetate; glu, glutamate; αkg, αketoglutarate. (B) Plasma enrichment of m+6 glucose during steady-state infusions of [U-13C]glucose. n=3 animals per group. The same color scheme is used throughout this figure. (C) Steady-state liver enrichment of m+6 glucose in animals of the indicated genotype. n=3 animals per group. (D) Labeled fractions (1-(m+0)) of the indicated metabolites, relative to liver glucose m+6 enrichment. n=3 animals per group. (E) Schematic of MRI experiments. Anesthetized animals were challenged to breath room air, followed by 100% O2, followed by MR imaging to measure perfusion (in room air), and blood and tissue oxygenation in each condition. (F) Perfusion values (reported as institutional units (I.U.)) based on arterial spin labeling in animals of the indicated genotype. n=3–4 animals per group. (G) Relative (%) changes in hepatic T2* following exposure to 100% O2 in animals of the indicated genotype. n=3–4 animals per group. (H) Representative heatmaps of T1 apparent values (T1app) in livers, overlaid on T1-weighted MR images. (I) Representative distribution of T1app values in an animal of each genotype breathing room air, followed by 100% O2. (J) Average hepatic T1app values in animals of the indicated genotype, breathing room air followed by 100% O2. n=3–4 animals per group. (K) Average regional changes in T1 (ΔT1) in animals of the indicated genotype. n=3–4 animals per group. All data were collected at 4 weeks post AAV-administration. Statistical significance was assessed using two-tailed t-test (C,D,F,G,K) or Mann-Whitney (I) with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 1 and Supplementary file 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mass isotopomer distributions in liver tissue from [U-13C]glucose infusions in animals of the indicated genotype. n=3 animals per group; 4 weeks post-AAV administration. Statistical significance was assessed using t-tests (A) with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 1.
+
 In the conventional view of the mitochondrial ETC, electrons from NADH are transferred via complex I to drive coenzyme Q reduction and O2 consumption via complexes III and IV (Figure 3A). In cultured cells, complex I is the major route of electron entry into the ETC, and inhibition of complex I dramatically lowers cellular oxygen consumption (Figure 1—figure supplement 1A). Our above results suggest this scenario may not be true during hepatic homeostasis. We therefore made use of magnetic resonance imaging (MRI) to assess blood and tissue oxygenation in vivo (Figure 3E–K). Oxygen-sensitive MRI measurements provide a non-invasive method to interrogate changes in oxygen levels in vivo in the absence of a reporter agent. Specifically, the paramagnetic properties of dissolved oxygen within tissue accelerate the decay of longitudinal magnetization of water protons, termed the TOLD (Tissue-Oxygenation-Level-Dependent) effect (Hallac et al., 2014). The decay of longitudinal magnetization is characterized by the decay constant (or longitudinal relaxation time) T1. Thus, increased tissue oxygen levels result in decreased T1 values. Similarly, the unpaired electrons of iron in deoxyhemoglobin allow it to act as a strong paramagnetic agent which accelerates the decay of transverse magnetization in the blood (characterized by the transverse relaxation time T2*), termed the BOLD (Blood-Oxygen-Level-Dependent) effect (Wengler et al., 2019). In this manner, relative increases in T2* values are indicative of decreased deoxyhemoglobin concentration (i.e., an increased blood oxygenation state). We reasoned that by following hepatic T1 levels in response to increased blood oxygen delivery, we could assess the mitochondria’s ability to process this excess oxygen. In these experiments, we controlled for differences in tissue perfusion by measuring tissue perfusion using an arterial spin labeling (ASL) method (Kim and Tsekos, 1997). Here, the magnetization of water protons flowing through the slice of interest is labeled by a radio frequency pulse in such a way that they can be distinguished from that of the stationary tissue. The difference in magnetization between the stationary and flowing water protons is related to blood perfusion through a simple two compartment model of tissue, by which the perfusion is quantified (see Materials and methods).
 
 Ndufa9f/f and Ndufa9-/- littermates were challenged with room air, followed by 100% oxygen, and T1 and T2* relaxation parameters were sequentially assessed (Figure 3E). Based on arterial spin labeling (Kim and Tsekos, 1997), we did not observe changes in liver perfusion between the two genotypes (Figure 3F). BOLD (Blood-oxygen-level dependent) measurements (T2*) are dependent on the concentration of deoxyhemoglobin (Wengler et al., 2019; Barash et al., 2007), and we observed significant increases in T2* in both Ndufa9f/f and Ndufa9-/- animals, indicating increased blood oxygen in the setting of 100% O2 (Figure 3G). TOLD (Tissue-oxygen-level dependent) measurements (based on T1 relaxation) are dependent on the dissolved oxygen concentration; with increased tissue oxygen content, T1 parameters are expected to decrease (Hallac et al., 2014). In wild-type livers, we observed no significant decreases in the average hepatic T1 in response to 100% O2 (Figure 3H, I, J), consistent with previous measurements in human livers (Tadamura et al., 1997). This suggests that when challenged with increased blood O2 delivery, wild-type mouse liver is able to compensate and maintain steady state O2 levels, potentially through increased tissue oxygen consumption. Similar to Ndufa9f/f livers, Ndufa9-/- livers also did not exhibit significant decreases in the average T1 parameter, indicating that tissue oxygen levels are maintained in the absence of complex I function (Figure 3H–J). We also assessed T1 changes locally by aligning images (ΔT1); as above, we did not observe significant decreases in the average ΔT1 in either Ndufa9f/f or Ndufa9-/- livers (Figure 3K). Thus, based on tissue oxygen levels in response to a hyperoxic challenge, Ndufa9-/- livers do not have a measurable change in oxygen consumption as compared with wild-type livers. Altogether, the above results indicate that complex I is largely dispensable for oxygen status and homeostatic function in the adult mouse liver, without signs of significant metabolic or proteomic compensation.
 
-## Mitochondrial complex IV is required in adult hepatocytes
+### Mitochondrial complex IV is required in adult hepatocytes
 
 To further explore a role for the mitochondrial ETC in hepatic function, we examined the requirement for complex IV, making use of a Cox10flox allele (Diaz et al., 2005). Cox10 is an assembly factor of complex IV, and Cox10 deletion in skeletal muscle is associated with diminished cIV activity accompanied by myopathy (Diaz et al., 2005). A previous report utilizing this allele in combination with the liver-specific Albumin-Cre transgenic reporter revealed partially penetrant phenotypes dependent on the transgene dosage (Diaz et al., 2008), suggesting that the mitochondrial ETC is required for liver development. Thus, we made use of AAV-delivery of Cre recombinase to Cox10f/f animals to investigate its role in the adult liver. Similar to above, we injected Cox10f/f animals with AAV-GFP or AAV-Cre and characterized liver physiology at 4 and 8 weeks post-injection. At 4 weeks post-injection, AAV-Cre injected animals (hereafter, ‘Cox10-/-’) demonstrated significant reductions in Cox10 mRNA and protein (Figure 4A and B) and complex IV activity (Figure 4C). By 8 weeks post-AAV administration, Cox10-/- livers were grossly enlarged and pale in color, as compared with wild-type livers (Figure 4D and F). Histological analysis of liver sections revealed signs of lipid accumulation indicating hepatic steatosis (Oil Red O staining), as well as decreased glycogen accumulation (PAS staining) (Figure 4E). Fasting glucose levels were decreased in animals with Cox10-/- livers (Figure 4G). To directly probe gluconeogenesis, fasted mice were challenged with a [U-13C]-lactate/pyruvate tolerance test; animals with Cox10-/- livers were unresponsive as compared with wild-type animals (Figure 4H, I, Figure 4—figure supplement 1A). Additional plasma indicators of liver function were diminished in Cox10-/- animals, including decreased plasma total protein and increased plasma bilirubin (Figure 4J). We also observed significant elevations in ALT and AST, indicators of liver damage (Figure 4K). Thus, in contrast to loss of complex I, the loss of complex IV in adult hepatocytes is associated with hepatic steatosis, diminished liver function and evidence of liver damage.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cox10 mRNA levels (relative to β2-microglobulin; normalized) in livers of the indicated genotype, assessed by qRT-PCR at 4 weeks post-AAV administration. n=4–5 animals per group. The same color scheme is used throughout this figure. (B) Cox10 protein levels in livers of the indicated genotype, assessed by Western blot at 4 weeks post AAV-administration. β2-microglobulin levels are shown as a loading control. MW markers are indicated in kDa. (C) Complex IV activity (pmol O2 consumed / min) in isolated mitochondria supplemented with ascorbate/TMPD substrates from livers of the indicated genotype, assessed at 4 weeks post AAV-administration. n=5–6 animals per group. (D) Representative images of gross liver anatomy in animals of the indicated genotype at 8 weeks post AAV-administration. Scale bar: 0.5 cm. (E) Representative histology (H&E, Oil Red O, PAS staining) images of liver cross sections from animals of the indicated genotype at 8 weeks post-AAV administration. Scale bar: 50 μm. (F) Liver weight (normalized to body weight) from mice of the indicated genotype at 8 weeks post-AAV administration. n=7 animals per group. (G) Fasting plasma glucose levels in mice of the indicated genotype at 8 weeks post-AAV administration. n=6–7 animals per group. (H) Relative changes in plasma glucose following a lactate/pyruvate tolerance test in mice of the indicated genotype at 8 weeks post-AAV administration. n=4–5 mice per group. (I) Fractional gluconeogenesis (plasma) in animals of the indicated genotype, measured via pyruvate/lactate tolerance test at 8 weeks post-AAV administration. n=4–5 animals per group. (J) Circulating plasma markers (total protein, albumin, and total bilirubin) of liver function in mice of the indicated genotype at 8 weeks post-AAV administration. n=5 animals per group. (K) Plasma markers (ALT and AST) of liver damage in mice of the indicated genotype at 8 weeks post-AAV administration. n=5 mice per group. Statistical significance was assessed using two-way ANOVA (H), t-test (C,F,G,I,J,K) or Mann-Whitney (A,K) tests with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Full gel images are provided in Figure 4—source data 1. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mass isotopomer distributions related to lactate/pyruvate tolerance test (Figure 4H, I), for plasma lactate and glucose. n=4–5 mice per group; 8 weeks post-AAV administration. Numerical data for individual panels are provided in Supplementary file 2.
+
 Despite the fatty livers and diminished function, Cox10-/- animals exhibited no survival deficits even 8 weeks after AAV administration, and we did not detect changes in steady state ATP levels in liver tissue (Figure 5A). Cox10-/- livers exhibited a small, but not statistically significant, trend towards increased oxidative stress (lowering of the GSH / GSSG ratio) (Figure 5B). In contrast to cI-deficient livers, cIV deficiency significantly impacted the redox status of the cell, as measured by the NAD+ / NADH ratio (Figure 5C). We observed altered ratios of both pyruvate / lactate and acetoacetate / β-hydroxybutyrate, indicating impaired redox status in both the cytosol and mitochondrial compartments (Figure 5D). Interestingly, tissue α-hydroxybutyrate levels were decreased in Cox10-/- livers, and plasma α-hydroxybutyrate levels were not significantly affected (Figure 5E). Thus, impairment of mitochondrial complex IV has both biochemical and functional consequences in the adult liver and is required for maintenance of cellular redox status.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-v2.jpg)
+
+**Figure 5.:** (A) ATP levels in livers of the indicated genotype. n=3 animals per group. The same color scheme is used throughout this figure. (B) Reduced glutathione to oxidized glutathione ratio (GSH:GSSG) in livers of the indicated genotype, as a proxy of oxidative stress. n=5–6 mice per group. (C) NAD+/NADH and NADPH/NADP+ ratios in livers of the indicated genotype. n=5–6 mice per group. (D) Normalized cytosolic (pyruvate / lactate) and mitochondrial (acetoacetate / β−hydroxybutyrate) redox ratios in livers of the indicated genotype. n=5–6 mice per group. (E) Normalized tissue and plasma α−hydroxybutyrate levels in animals of the indicated genotype. n=4–5 mice per group. (F) Unsupervised hierarchical clustering of protein abundances in Cox10f/f and Cox10-/- livers, depicted as a heatmap of z-scores. (G) Volcano plot of protein abundances changes in Cox10-/- vs. Cox10f/f livers, based on proteomics analysis. Log2(Fold change) is plotted against the –log10(adjusted p-value) for each protein. Significantly changing proteins (log2(Fold change)>1 or < –1; Adjusted p-val <0.05) are colored dark gray; of these, mitochondria-localized proteins are colored red. n=5–6 mice per group. (H) Volcano plot of abundances for mitochondrial ETC proteins in Cox10-/- vs. Cox10f/f livers, based on proteomics analysis. (I) Levels of mitochondrial proteins (PC, pyruvate carboxylase, and Tomm20) in livers of the indicated genotype, as assessed by western blot. Actin levels are shown as a loading control. MW markers are indicated in kDa. (J) Relative amounts of Tomm20 and PC in livers of the indicated genotype, relative to actin levels. n=4 animals per group. (K) Mitochondrial genome (mtDNA) to nuclear genome (nDNA) ratios in livers of the indicated genotype. n=9 mice per group. (L) Unsupervised hierarchical clustering of metabolite abundances in Cox10f/f and Cox10-/- livers, depicted as a heatmap of z-scores. (M) Volcano plot of metabolite abundance changes in Cox10-/- vs. Cox10f/f livers, based on metabolomics analysis. Log2(Fold change) is potted against the –log10(adjusted p-value) for each metabolite. Significantly changing metabolites (log2(Fold change)>1 or < –1; Adjusted p-val <0.05) are colored black. n=5–6 mice per group. (N) Relative abundances of mitochondrial TCA cycle and related metabolites from livers of the indicated genotype. n=5–6 mice per group. All data in this figure were collected at 8 weeks post AAV-administration. Statistical significance was assessed using t-test (A,B,C,D,E,J,K,N), or Mann-Whitney (C,E) tests with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Full gel images are provided in Figure 5—source data 1. Numerical data for individual panels are provided in Supplementary file 2 and Supplementary file 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Significantly enriched biological pathways (FDR <0.05) from gene ontology analysis of all upregulated proteins (log2(fold change)>1; p-value <0.05) in Cox10-/- livers, based on proteomic analysis at 8 weeks post-AAV administration. Pathways annotated under Biological Processes (Direct), Cellular Components (Direct) and Molecular Function (Direct) are shown. Red arrows highlight pathways related to mitochondrial proteins. (B) Same as (A), but for mitochondrial upregulated proteins. The top enriched pathways are shown from Supplementary file 2. (C) Same as (A), but for non-mitochondrial upregulated proteins. Numerical data for individual panels are provided in Supplementary file 2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Significantly enriched biological pathways (FDR <0.05) from gene ontology analysis of all downregulated proteins (log2(fold change) < –1; p-value <0.05) in Cox10-/- livers, based on proteomic analysis at 8 weeks post-AAV administration. Blue arrows highlight pathways related to lipid/fatty acid metabolism. (B) Same as (A), but for mitochondrial downregulated proteins. (C) Same as (A), but for non-mitochondrial downregulated proteins. Numerical data for individual panels are provided in Supplementary file 2.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Volcano plot of protein abundances changes in Cox10-/- vs. Cox10f/f livers, based on proteomics analysis of enriched mitochondria. Mitochondrial proteins (based on MitoCarta 3.0) are shown. Log2(fold change) is plotted against the –log10(adjusted p-value) for each protein. Significantly changing proteins (log2(fold change)>1 or < –1; Adjusted p-val <0.05) are colored black. n=3 mice per group; 8 weeks post-AAV administration. (B) Volcano plot of abundances for mitochondrial ETC proteins in mitochondria purified from Cox10-/- vs. Cox10f/f livers, based on proteomics analysis. Numerical data for individual panels are provided in Supplementary file 2.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Relative abundance of cholate species in livers of the indicated genotype. n=4–6 mice per group; 8 weeks post-AAV administration. (B) Relative abundance of electron acceptors/donors from livers of the indicated genotype. n=4–6 mice per group; 8 weeks post-AAV administration. BH4, tetrahydrobiopterin. Statistical significance was assessed using t-tests (A,B) with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Left, volcano plot of identified proteins from the Fatty Acid Synthesis (GO:0006633) pathway, based on proteomics performed on Cox10-/- vs. Cox10f/f livers at 8 weeks post-AAV administration. Significantly up or downregulated proteins are indicated in black. Right, GSEA of pathway components; the normalized enrichment score (NES) and nominal p-value are indicated. (B) Same as (A), but for the Fatty Acid Oxidation (GO:0019395) pathway. (C) Schematic of fatty acid synthesis and oxidation pathways surrounding acyl-carnitine species. Metabolites are listed in lower case, proteins are listed in upper case. Each protein or metabolite is color coded on whether it was detected and/or significantly changed between Cox10-/- and Cox10f/f livers. For mitochondrial proteins, we classified proteins based on whether they were significantly up or downregulated in either the whole cell lysate or enriched mitochondrial dataset. Rate-limiting enzymes are indicated in boxes. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (A) Left, volcano plot of identified proteins from the Bile Acid Metabolic Process (GO:0008206) pathway, based on proteomics performed on Cox10-/- vs. Cox10f/f livers at 8 weeks post-AAV administration. Significantly up or downregulated proteins are indicated in black. Right, GSEA of pathway components; the normalized enrichment score (NES) and nominal p-value are indicated. (B) Schematic of bile acid metabolic pathways. Metabolites are listed in lower case, proteins are listed in upper case. Each protein or metabolite is color coded on whether it was detected and/or significantly changed between Cox10-/- and Cox10f/f livers. For mitochondrial proteins, we classified proteins based on whether they were significantly up or downregulated in either the whole cell lysate or enriched mitochondrial dataset. ABCB11 refers to the transporter which exports bile acids from hepatocytes into the biliary duct. Rate-limiting enzymes are indicated in boxes. d-cholate, deoxycholate. l-cholate, lithocholate. ud-cholate, ursodeoxycholate. cd-cholate, chenodeoxycholate. m-cholate, muricholate. g-cholate, glycocholate. t-cholate, taurocholate. gcd-cholate, glycochenodeoxycholate. tcd-cholate, taurochenodeoxycholate. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** (A) Left, volcano plot of identified proteins from the Oxidoreductase (GO:0016491) pathway, based on proteomics performed on Cox10-/- vs. Cox10f/f livers at 8 weeks post-AAV administration. Significantly up or downregulated proteins are indicated in black. Right, GSEA of pathway components; the normalized enrichment score (NES) and nominal p-value are indicated. (B) Schematic of pyruvate metabolic pathways. Metabolites are listed in lower case, proteins are listed in upper case. Each protein or metabolite is color coded on whether it was detected and/or significantly changed between Cox10-/- and Cox10f/f livers. For mitochondrial proteins, we classified proteins based on whether they were significantly up or downregulated in either the whole cell lysate or enriched mitochondrial dataset. Rate-limiting enzymes are indicated in boxes. oaa, oxaloacetate. pep, phosphoenolpyruvate. ac-coa, acetyl-CoA. (C) Schematic of transsulfuration pathway producing α-ketobutyrate (akb) and α-hydroxybutyrate (ahb). Same color scheme and notation as (B). prop-coa, propionyl-CoA. (D) Schematic of ketone body metabolic pathway. Same color scheme and notation as (B). acac-coa, acetoacetyl-CoA. acac, acetoacetate. bhb, β-hydroxybutyrate. (E) Schematic of ascorbate metabolism. Same color scheme and notation as (B). dha, dihydroascorbate. (F) Schematic of tetrahydrobiopterin (bh4) synthesis and metabolic pathways. Same color scheme and notation as (B). gtp, guanosine triphosphate. 7,8-dhntp, 7,8-dihydroneopterin triphosphate. 6p-thbp, 6-pyrovoyl-tetrahydrobiopterin. bh2, dihydrobiopterin. q-dhbp, quinonoid dihydrobiopterin. Numerical data for individual panels are provided in Supplementary file 3.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig5-figsupp8-v2.jpg)
+
+**Figure 5—figure supplement 8.:** Representative immunofluorescent images of liver sections at 20 x (left; scale bar 50 μm) and 63 x (right; scale bar 5 μm) of the indicated genotype. TOMM20 (mitochondrial) staining is indicated in red; nuclear staining (DAPI) is indicated in blue. Data was collected at 8 weeks post-AAV administration.
 
 To probe the effects of complex IV loss in mammalian liver, we assessed proteome changes by label-free proteomics (Figure 5F, Supplementary file 2). Unsupervised hierarchical clustering was able to separate proteomes between Cox10f/f and Cox10-/- livers (Figure 5F). A large number of proteins were significantly up-regulated (log2(Fold Change)>1; p-value <0.05), and this group was enriched (209 out of 319) for proteins that localize to mitochondria (Figure 5G (red dots), Supplementary file 2). Gene ontology analysis of all upregulated proteins revealed enrichment of a large number of mitochondrial pathways in all three categories (Biological Processes (BP), Cellular Components (CC), and Molecular Functions (MF)) (Supplementary file 2, Figure 5—figure supplement 1A (red arrows)). Consistent with this, there were significant increases in total mitochondrial content in Cox10-/- livers, as measured by both mitochondrial genome and protein content (Figure 5I–K; Figure 5—figure supplement 8). Gene ontology analysis of mitochondrial proteins indicated enrichment of several gene groups, including electron transport, TCA cycle, translation, and ATP synthesis (Supplementary file 2, Figure 5—figure supplement 1B). A separate analysis focused on non-mitochondrial proteins that were upregulated did not reveal many pathways that were significantly enriched (FDR <0.05), with the single exception of the cornified envelope cellular component pathway, which included various genes implicated in cell damage and death processes [e.g. S100A9 (Ghavami et al., 2010; Ghavami et al., 2008), LGALS3 (Mazurek et al., 2012), NCL (Kobayashi et al., 2012; Goldstein et al., 2013; Yang et al., 2002), HSPB1 (Singh et al., 2017)] (Supplementary file 2, Figure 5—figure supplement 1C), and may potentially be related to the hepatic damage observed in this animal model (Figure 4K).
 
@@ -78,9 +158,17 @@ We similarly examined proteomic changes in genes involved in bile acid metabolis
 
 Downregulated metabolites were enriched for several electron carriers, including pyruvate, ascorbate and tetrahydrobiopterin (Figure 5M, Figure 5—figure supplement 4B). Pyruvate can exchange electrons with NAD(H), while ascorbate and THBP are potent antioxidants which can exchange electrons with metal ions and hydroxyradical species (Traber and Stevens, 2011; Kojima et al., 1995). Thus, inhibition of the mitochondrial ETC via Cox10 removal may influence redox balance in multiple species. To assess related proteomic changes, we investigated alterations in genes of the oxidoreductase family, a large family related to transfer of electrons between many potential substrates (GO: 0016491; 787 members). Overall, oxidoreductase enzymes trended to be upregulated in Cox10-/- livers, largely driven by mitochondrial-localized proteins, and we did identify a number of enzymes related to pyruvate, ascorbate and THBP metabolism as significantly altered in response to hepatic complex IV loss (Figure 5—figure supplement 7A). The overall pathway enrichment did not reach statistical significance. Focusing on each electron carrier in isolation did reveal some interesting trends. Pyruvate has a number of potential metabolic fates, and we did observe upregulation of components of the PDH complex (PDHA1, PDHB, PDHX, DLAT, DLD) which could potentially deplete pyruvate via conversion into acetyl-CoA (Figure 5—figure supplement 7B). Similarly, we observed significant upregulation of BCKDHA and BCKDHB, which potentially serve to deplete the electron carrier α-hydroxybutyrate; in addition, the rate-limiting enzyme of this transsulfuration pathway (CBS) was significantly downregulated (Figure 5—figure supplement 7C). The ketone metabolites acetoacetate and β-hydroxybutyrate were significantly depleted in Cox10-/- livers; however, we did not observe significant changes in the ketone body-related enzymes detected in our dataset, including the rate-limiting synthesis enzymes HMGCS1 and HMGCS2 (Figure 5—figure supplement 7D). With respect to ascorbate metabolism, the majority of related enzymes were not detected in our experiment, including the rate-limiting synthesis enzyme GULO (Figure 5—figure supplement 7E). Lastly, we detected a significant decrease in the BH4 (tetrahydrobiopterin) recycling enzyme QDPR, consistent with the downregulation of BH4 levels. The rate-limiting synthesis enzyme, GCH1, was not detected. To summarize, the precise reasons for changes in the levels of these electron carriers is not clear at this stage; however, it is possible that proteome changes in response to complex IV loss may be contributing to these alterations.
 
-## Complex IV inhibition blocks electron entry from the electron transfer flavoprotein (ETF) complex
+### Complex IV inhibition blocks electron entry from the electron transfer flavoprotein (ETF) complex
 
 In cultured cells, Complex IV is the major source of oxygen consumption. To examine its role in vivo, we performed magnetic resonance imaging in Cox10f/f and Cox10-/- animals as described above (Figure 3E). Based on arterial spin labeling measurements, we observed no alterations in perfusion of Cox10-/- livers (Figure 6A). In addition, BOLD (T2*) measurements indicated significant increases in blood oxygen content in both genotypes in response to 100% O2, based on increases in the T2* relaxation time (Figure 6B). Similar to above results, Cox10f/f (wild-type) livers did not display increases in tissue oxygen levels, based on TOLD imaging and average T1 parameters (Figure 6C–E). In contrast, Cox10-/- livers displayed significant decreases in average T1 relaxation times in response to a 100% O2 challenge, indicating increased dissolved oxygen levels in affected liver tissue (Figure 6C–E). A regional assessment of changes in T1 (ΔT1) also indicated decreased T1 parameters in Cox10-/-, but not Cox10f/f livers (Figure 6F). Thus, Cox10-/- livers are deficient in maintaining oxygen levels in response to increased blood O2 delivery, consistent with decreased oxygen consumption in the setting of cIV deficiency.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig6-v2.jpg)
+
+**Figure 6.:** (A) Perfusion values (reported as institutional units (I.U.)) based on arterial spin labeling in animals of the indicated genotype at 4 weeks post-AAV administration. n=3 animals per group. The same color scheme is used throughout this figure. (B) Relative (%) changes in hepatic T2* following exposure to 100% O2 in animals of the indicated genotype at 4 weeks post-AAV administration. n=3 animals per group. (C) Representative heatmaps of T1 apparent values (T1app) in livers, overlaid on T1-weighted MR images. (D) Representative distribution of T1app values in an animal of each genotype breathing room air, followed by 100% O2. (E) Average hepatic T1app values in animals of the indicated genotype, breathing room air followed by 100% O2. n=3 animals per group; 4 weeks post-AAV administration. (F) Average regional changes in T1 (ΔT1) in animals of the indicated genotype. n=3 animals per group; 4 weeks post-AAV administration. (G) Plasma enrichment of m+6 glucose during steady-state infusions of [U-13C]glucose. n=3 animals per group; 4 weeks post-AAV administration. (H) Steady-state liver enrichment of m+6 glucose in animals of the indicated genotype. n=3 animals per group; 4 weeks post-AAV administration. (I) Labeled fractions (1-(m+0)) of the indicated metabolites, relative to liver glucose m+6 enrichment. n=3 animals per group; 4 weeks post-AAV administration. (J) Schematic of potential electron sources for mitochondrial ETC. CoQ, ubiquinone; GPD2, mitochondrial glycerol-3-phosphate dehydrogenase; DHODH, dihydroorotate dehydrogenase. ETF, electron transfer flavoprotein complex. DHAP, dihydroxyacetone phosphate. (K) Relative abundance of electron donors in livers of the indicated genotype at 8 weeks post-AAV administration. n=4–6 mice per group. (L) Relative abundance of acylcarnitine metabolites in livers of the indicated genotype. n=5–6 mice per group at 8 weeks post-AAV administration. (M) Relative β-hydroxybutyrate levels in livers of the indicated genotype at 8 weeks post-AAV administration. n=4–5 mice per group. (N) Relative glutarate levels in livers of the indicated genotype at 8 weeks post-AAV administration. n=5–6 mice per group. Statistical significance was assessed using t-test (A,B,E,F,H,I,K,L,M,N) or Mann-Whitney (D) tests with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 2 and Supplementary file 3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80919/elife-80919-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mass isotopomer distributions in liver tissue from [U-13C]glucose infusions of the indicated genotype. n=3 animals per group; 4 weeks post-AAV administration. Statistical significance was assessed using t-tests (A) with adjustments for multiple comparisons. All data represent mean +/-standard deviation from biological replicates. Numerical data for individual panels are provided in Supplementary file 2.
 
 The contrast in the tissue oxygen status between Ndufa9-/- and Cox10-/- livers suggests that complex I is not a significant electron donor to the hepatic ETC, at least under homeostatic conditions. If complex I was a major electron source, we would expect that depletion of complex IV might result in altered glucose utilization in the mitochondria. We therefore performed steady-state euglycemic infusions of [U-13C]glucose in Cox10f/f and Cox10-/- animals (Figure 6G). Similar to Ndufa9-/- animals, we did not observe altered glucose handling in Cox10-/- animals (Figure 6H, I; Figure 6—figure supplement 1A), suggesting that complex I activity is low and glucose utilization in the mitochondria is not sensitive to ETC function.
 
@@ -100,19 +188,177 @@ Our results therefore indicate the complex I is dispensable in the adult murine 
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Cox10f/f</td>
+      <td>The Jackson Laboratory</td>
+      <td>024697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Ndufa9f/f</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV.TBG.PI.eGFP.WPRE.bGH (AAV-GFP)</td>
+      <td>Addgene</td>
+      <td>105535</td>
+      <td>Adeno-associated virus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV.TBG.PI.Cre.rBG (AAV-Cre)</td>
+      <td>Addgene</td>
+      <td>107787</td>
+      <td>Adeno-associated virus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tom20 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>11802</td>
+      <td>WB, 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PC (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>16588</td>
+      <td>WB, 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βActin (mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>66009</td>
+      <td>WB, 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ndufa9 (mouse monoclonal)</td>
+      <td>ThermoScientific</td>
+      <td>459100</td>
+      <td>WB, 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β2microglobulin (rabbit monoclonal)</td>
+      <td>ThermoScientific</td>
+      <td>701250</td>
+      <td>WB,:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cox10 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab84053</td>
+      <td>WB,:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Complex I Enzyme Activity Microplate Assay Kit (Colorimetric)</td>
+      <td>Abcam</td>
+      <td>ab109721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ATP Colorimetric/Fluorometric Assay Kit</td>
+      <td>Biovision</td>
+      <td>K354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Deproteinizing Sample Preparation Kit</td>
+      <td>Biovision</td>
+      <td>K808</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna Universal One-Step RT-qPCR kit</td>
+      <td>New England Biolabs</td>
+      <td>E3005S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC Protein Assay</td>
+      <td>Biorad</td>
+      <td>5000112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]glucose</td>
+      <td>Cambridge Isotopes Laboratories</td>
+      <td>CLM-1396</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]lactate</td>
+      <td>Cambridge Isotopes Laboratories</td>
+      <td>CLM-1579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[U-13C]pyruvate</td>
+      <td>Cambridge Isotopes Laboratories</td>
+      <td>CLM-2440</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Most chemicals and reagents including antimycin A (A8674), carbonyl cyanide 3-chlorophenylhydrazone [CCCP (C2759)], EGTA (E3889), glutamate (49621), glycerol (G5516), hematoxylin (GHS132), HEPES (H4034), magnesium chloride (208337), malate (240176), D-mannitol (M4125), NAD+ (N8285), NADP+ (N8160), NADH (N6785), NADPH (N9960),15N5-AMP (900382), Orotic acid (O2750), L-Dihydroorotic acid (D7128), Oil Red O (O0625), periodic acid (P7875), PEG 400 (91893), potassium chloride (P9541), rotenone (R8875), sodium chloride (S9888), sodium lactate (L7022), sodium phosphate monobasic (RDD007), sodium pyruvate (P2256), sucrose (S0389), N,N,N′,N′-Tetramethyl-p-phenylenediamine [TMPD (T7394)] were purchased from Sigma-Aldrich. HPLC-grade acetonitrile (A955), formic acid (A117), methanol (A456), and water (W6) were purchased from Fisher Scientific. Eosin Y (SE23) and Tris base (BP301) was purchased from Fisher Scientific. GSH (G597951), GSSG (G597970), 13C2;15N GSH (G597952), and 13C4;15N2 GSSG (G597972) were purchased from Toronto Research Chemicals. [U-13C] lactate (CLM-1579), [U-13C] pyruvate (CLM-2440), [U-13C] glucose (CLM-1396) were purchased from Cambridge Isotope Laboratories. Schiff’s Reagent was purchased from Electron Microscopy Sciences (26052–06). pAAV.TBG.PI.eGFP.WPRE.bGH (AAV-GFP) and pAAV.TBG.PI.Cre.rBG (AAV-Cre) were a gift from James M. Wilson (Addgene viral prep #105535-AAV8 and #107787-AAV8). Antibodies used: Tom20 (Proteintech, 11802), Pyruvate carboxylase (Proteintech, 16588), Actin (Proteintech, 66009), Ndufa9 (ThermoScientific, 459100), β2-microgobulin (ThermoScientific, 701250), Cox10 (Abcam, ab84053).
 
-## Mice
+### Mice
 
 The Cox10f/f mice (strain 024697) were purchased from The Jackson Laboratory and were maintained on a C57BL6 background. The Ndufa9f/f mice were obtained from David McFadden (UT Southwestern) and were on a C57BL6 background; generation of these mice are described here (Wang et al., 2022). All mice were housed in the Animal Resource Center at University of Texas Southwestern Medical Center under a 12 hr light-dark cycle and fed ad libitum. Prior to all experiments, mice were fasted for 16–18 hr over night (unless otherwise indicated). All mouse experiments were performed according to protocols approved by the Institutional Animal Care and Use Committee (IACUC) at University of Texas Southwestern Medical Center. Both male and female mice were used in all experiments; if sex differences were not present, both male and female mice were analyzed together. For genotyping, the following primers were used:
 
 For AAV injections, virus was prepared in dilution buffer [NaCl (136 mM), KCl (5 mM), MgCl2 (1 mM), Tris (10 mM, pH 7.4), and glycerol (10%)] and injected into the retroorbital vein at 5x1010 GC per mouse.
 
-## Mitochondrial ETC activity measurements
+### Mitochondrial ETC activity measurements
 
 Oxygen consumption rates (OCR) were measured using a Seahorse XFe96 Analyzer (Agilent Technologies) based on a previously published protocol (Rogers et al., 2011). Liver tissue was homogenized with 40 strokes of a dounce homogenizer in mitochondrial isolation buffer [HEPES (5 mM), sucrose (70 mM), mannitol (220 mM), MgCl2 (5 mM), KH2PO4 (10 mM), and EGTA (1 mM), pH 7.2]. Mitochondria were isolated via differential centrifugation: First nuclei and cell debris were removed by isolating supernatant after five spins at 600 g; and enriched mitochondria were then pelleted with a 10,000 g spin. Five μg of mitochondria were plated in an XFe96 well plate on ice, spun at 4700 RPM (Beckman Coulter S6096) for 2 min at 4 °C. Mitochondria were then supplemented with media containing isolation buffer with complex IV substrates to probe respiration. At the times indicated, ADP (final concentration 4 mM), oligomycin (2 µM), CCCP (2 µM), and either antimycin A (4 µM) or sodium azide (40 mM) was injected.
+
+<table>
+  <thead>
+    <tr>
+      <th>No substrate</th>
+      <th>Isolation buffer (IB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complex IV</td>
+      <td>IB with ascorbate (10 mM)+TMPD (100 uM)+antimycin A (2 uM)</td>
+    </tr>
+  </tbody>
+</table>
 
 For mouse embryonic fibroblast experiments, Ndufa9f/f and Ndufa9-/- MEFS were obtained as previously described (Wang et al., 2022). Briefly, E13.5 embryos were collected from Ndufa9f/f pregnant females, minced and digested with trypsin for 45 min at 37 °C. Digested embryos were cultured in DMEM (Sigma-Aldrich, D6429) supplemented with 10%FBS, 1% penicillin/streptomycin, and immortalized with a lentiCRISPRv2 lentivirus expressing sgRNA targeting Trp53. Immortalized MEFs were subsequently transduced with Ad5-CMV-EGFP or Ad5-CMV-CreEGP adenovirus (University of Iowa Viral Vector Core), followed by culturing in the above media supplemented with 1 mM sodium pyruvate and 100 μg/ml uridine. GFP + cells were sorted by flow-cytometry to obtain purified Ndufa9f/f and Ndufa9-/- cells, which were then verified by genotyping and western blot analysis, as previously reported (Wang et al., 2022). For oxygen consumption measurements, Ndufa9f/f and Ndufa9-/- cells were plated overnight and exchanged into Seahorse assay buffer and measurements started. Mitochondrial oxygen consumption rates (mito-OCR) were calculated by subtracting non-mitochondrial respiration from baseline respiration.
 
@@ -120,19 +366,58 @@ Complex I activity measurements were performed using an immunocapture absorbance
 
 ATP measurements were carried out with an ATP Colorimetric/Fluorometric assay kit (K-354, BioVision Inc). Approximately 10 mg of tissue were isolated from snap frozen mouse livers that had been stored at –80 °C. Tissues were homogenized in 100 μl of ATP assay buffer and were rapidly deproteinized by PCA precipitation (K-808, BioVision Inc). Ten μl of deproteinized sample were diluted with 40 μl of ATP assay buffer and loaded in duplicate into a clear bottom 96 well plate. A total of 50 μl of developer solution was added to each well and the plate was incubated for 30 min at room temperature protected from light. The endpoint OD570 of sample wells was measured on a Spectramax iD3 spectrometer (SpectraMax, Molecular Devices) and the total amount of ATP was determined from a standard curve constructed with 0–10  nmol ATP. Reported values are normalized by tissue weight.
 
-## qRT-PCR and qPCR measurements
+### qRT-PCR and qPCR measurements
 
 Genomic DNA was isolated by ethanol precipitation and RNA was isolated from tissue using RNeasy Mini kits (Qiagen). Samples were run using the Luna Universal One-Step RT-qPCR Kit (New England Biolabs) on a CFX384 (Bio-Rad).
 
-## Histology of liver tissue
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Primer Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Cox10</td>
+      <td>F: AGGGTCAGCATCACCAATAC</td>
+    </tr>
+    <tr>
+      <td>R: GGAGACACTTACCAGCATCAA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ndufa9</td>
+      <td>F: GGAGACACTTACCAGCATCAA</td>
+    </tr>
+    <tr>
+      <td>R: CCTCCTTTCCCGTGAGGTA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">mtDNA(ND2 mtDNA)</td>
+      <td>F: CCTATCACCCTTGCCATCAT</td>
+    </tr>
+    <tr>
+      <td>R: GAGGCTGTTGCTTGTGTGAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">nDNA(Pecam1)</td>
+      <td>F: ATGGAAAGCCTGCCATCATG</td>
+    </tr>
+    <tr>
+      <td>R: TCCTTGTTGTTCAGCATCAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Histology of liver tissue
 
 Fresh tissue was fixed overnight in 10% neutral buffered formalin, rinsed with 30% sucrose in PBS, and paraffin embedded. Ten micron sections were cut and placed on slides at –20 °C until staining. Sections were stained by either haemotoxylin and eosin, Oil Red O, or periodic acid Schiff base (PAS) and visualized under ×20 magnification on an Olympus IX83 microscope and processed with ImageJ (NIH).
 
-## Plasma analysis
+### Plasma analysis
 
 Blood was collected on ice with heparin and centrifuged at 5000xg for 10 min to obtain plasma. Plasma levels of alanine aminotransferase, albumin, aspartate aminotransferase, glucose, lactate, total bilirubin, and total protein were measured using a VITROS 250 Microslide at the UT Southwestern Metabolic Phenotyping Core.
 
-## GSH/GSSG and NAD(P)(H) quantitation
+### GSH/GSSG and NAD(P)(H) quantitation
 
 For glutathione quantitation, 20 mg of frozen tissue was treated with 300 μL of 80% methanol with 0.1% formic acid and homogenized on ice. The samples were freeze-thawed, centrifuged to remove protein, and the supernatant was dried. Dried samples were reconstituted in 1 mL water with 0.1% formic acid, diluted, spiked with internal labeled standards, and analyzed as previously described (Ubellacker et al., 2020; Tasdogan et al., 2020).
 
@@ -140,7 +425,7 @@ NAD(P)+/NAD(P)H was measured as previously described (Lu et al., 2018). Briefly,
 
 For MEFs, cells were plated in six-well dishes and allowed to adhere overnight; the following day cells were at ~80% confluence. Media was removed, cells were rinsed with ice cold saline, and metabolites were collected by scraping cells in dry ice-cold 80% methanol / 20% water with an internal standard (series of 13 C, 15N-labeled amino acids). Metabolite extracts were stored at –80 °C overnight and centrifuged the following day to remove debris. Raw AUC values were obtained using MultiQuant and TIC values for normalization were obtained using Analyst (SCIEX software for MS analysis).
 
-## Proteomics analysis of liver tissue
+### Proteomics analysis of liver tissue
 
 Protein homogenates were prepared from either whole liver tissues or enriched mitochondria. For whole liver tissue, approximately 100 mg of tissue were isolated from snap frozen mouse livers that had been stored at –80 °C. Tissue was homogenized in 500 μl PBS supplemented with protease inhibitors (Thermo Fisher, 78425) and protein concentrations were quantitated (DC Protein assay, Biorad). A total of 50 μg of each sample was solubilized in 1% SDS, 50 mM Tris pH 8.0 at a concentration of 5 mg/ml, run on a 4–20% Mini-PROTEAN TGX precast protein gel (BioRad) into the top of the resolving portion of the gel, stained with Coomassie Blue, and destained. For enriched mitochondria, approximately 100 mg of liver tissue was homogenized with 40 strokes of a dounce homogenizer in mitochondrial isolation buffer [HEPES (5 mM), sucrose (70 mM), mannitol (220 mM), MgCl2 (5 mM), KH2PO4 (10 mM), and EGTA (1 mM), pH 7.2] supplemented with protease inhibitors (ThermoFisher, 78425). Mitochondria were isolated via differential centrifugation: First nuclei and cell debris were removed by isolating supernatant after five spins at 600 g; and enriched mitochondria were then pelleted with a 10,000 g spin. Protein concentrations were quantitated (DC protein assay, BioRad), and 50 μg of each sample was solubilized in 1% SDS, 50 mM Tris pH 8.0 at a concentration of 5 mg/ml. Samples were run on a 4–20% Mini-PROTEAN TGX precast protein gel (BioRad) into the top of the resolving portion of the gel, stained with Coomassie Blue, and destained.
 
@@ -148,11 +433,11 @@ Samples were analyzed at the UT Southwestern Proteomics Core. Gel slices were cu
 
 Raw MS data files were analyzed using Proteome Discoverer v2.4 SP1 (Thermo), with peptide identification performed using Sequest HT searching against the mouse protein database from UniProt (downloaded January 2022; 17,062 sequences) assuming a trypsin digestion (cleavage after Lys and Arg except when immediately followed by Pro). Fragment and precursor tolerances of 10 ppm and 0.6 Da were specified, and three missed cleavages were allowed. Carbamidomethylation of Cys was set as a fixed modification, with oxidation of Met set as a variable modification. The false-discovery rate (FDR) cutoff was 1% for all peptides and all PSMs were validated with the Percoloator node within Proteome Discoverer. PSMs found in only a subset of samples were re-searched to identify peptides based on retention time and mass. Protein abundance was quantitated based on the total ion count for all identified peptides in each sample and only proteins notated with FDR <1% were considered. Protein abundances were normalized after log2 transform according to previously published protocols using Microsoft Excel 2019 (Aguilan et al., 2020): First, abundance values were log2 transformed, then each sample was normalized by the average abundance and data distribution width. Missing values were imputed as random values centered around 2.5 standard deviations below the mean abundance value. For samples with >4 replicates, Shapiro-Wilk tests were performed to test for normal distributions. If samples were not normally distributed, Mann-Whitney tests were used to calculate p-values. For normally distributed data, F-tests were used to assess equal variance, followed by two-tailed homoscedastic (or heteroscedastic) tests to calculate p-values. Unsupervised hierarchical clustering was performed on z-score transformed values in MATLAB (Mathworks, Inc). Mitochondrial-localized proteins were classified based on their presence in MitoCarta3.0 (Calvo et al., 2016). Significantly up and downregulated proteins were identified based on log2(fold change)>1 or<1 (respectively) and p-value <0.05. Gene ontology analysis on up or downregulated proteins was performed using DAVID (https://david-d.ncifcrf.gov/home.jsp); for each analysis, the complete list of detected proteins was used as a background, and pathways from Biological Processes, Cellular Components and Molecular Function (All and Direct) were assessed. Pathways with a FDR <0.05 are reported in Supplementary file 2. Gene set enrichment analysis was performed using GSEA software (Subramanian et al., 2005; Mootha et al., 2003) using the following gene-ontology pathways: GO:0006633 (Fatty Acid Synthesis), GO:0019395 (Fatty Acid Oxidation), GO:0008206 (Bile Acid Metabolic Process), GO:0016491 (Oxidoreductase Activity).
 
-## In vivo isotope tracing
+### In vivo isotope tracing
 
 All in vivo isotope tracing experiments were performed in conscious mice after overnight fasting, based on previously published protocols (Faubert et al., 2021; Davidson et al., 2016). On the morning of the experiment, catheters (Braintree Scientific MRE-KIT 025) were surgically implanted into the right external jugular vein of mice. For steady state euglycemic infusion of [U-13C]glucose, a total dose of 8 g/kg body mass (dissolved in 1000 μl saline) was continuously infused at 2.5 μl min–1 (total infusion time of 3 hr). At the end of the infusion, mice were euthanized and tissue was immediately harvested, snap frozen in liquid N2, and stored at –80 °C prior to GC-MS analysis.
 
-## Metabolomics analysis
+### Metabolomics analysis
 
 Flash frozen liver tissue (20 mg) was pulverized with a mortar and pestle on liquid nitrogen (H37260-0100, Bel-Art Products), 80% methanol was added, and samples subjected to three freeze-thaw cycles. For plasma, 20 μL was extracted with 0.2 mL cold acetone. Protein was removed by centrifugation and supernatant dried (SpeedVac, ThermoFisher).
 
@@ -160,30 +445,34 @@ Data acquisition was performed by reverse-phase chromatography on a 1290 UHPLC l
 
 GC-MS analysis was used to quantitate α-hydroxybutyrate and α-ketobutyrate, as well as measure mass isotopomer distributions for the lactate/pyruvate tolerance test and [U-13C]glucose infusions. Dried metabolites were derivatized to form methoxime-TBDMS adducts by incubating with 1% methoxyamine hydrochloride (Sigma-Aldrich) in pyridine at 70 °C for 15 min followed by addition of N-tert-Butyldimethylsiyl-N-methyltrifluoroacetamide (MTBSTFA, Sigma-Aldrich) for 1 hr. Derivatized samples were analyzed using an Agilent Technologies 7890B gas chromatographer with a HP-5MS 5% phenyl methyl Silox column (Agilent) coupled to an Agilent Technologies 5977 A mass spectrometer. The observed distributions of mass isotopologues were corrected for natural abundance (Fernandez et al., 1996).
 
-## Lactate/pyruvate tolerance test
+### Lactate/pyruvate tolerance test
 
-Lactate/Pyruvate tolerance tests were performed as previously described (Cappel et al., 2019). Briefly, mice were fasted for 16 hr overnight and given an IP injection of a 1.5 mg/g of a 10:1 sodium lactate: sodium pyruvate solution. 40% of the sodium lactate and sodium pyruvate were [U-13C] sodium lactate and [U-13C] sodium pyruvate. Blood glucose was measured 0, 10, 20, and 30 min post injection using a blood glucometer (Contour Next) and lactate was measured using a lactate meter (Nova Biomedical Lactate Plus). Fractional gluconeogenesis (GNG) was determined as previously described (Kelleher, 1999), using the following formula:GNG=(M1glucose+M2glucose+M3glucose)/(2∗M0lactate∗(M1lactate+M2lactate+M3lactate))
+Lactate/Pyruvate tolerance tests were performed as previously described (Cappel et al., 2019). Briefly, mice were fasted for 16 hr overnight and given an IP injection of a 1.5 mg/g of a 10:1 sodium lactate: sodium pyruvate solution. 40% of the sodium lactate and sodium pyruvate were [U-13C] sodium lactate and [U-13C] sodium pyruvate. Blood glucose was measured 0, 10, 20, and 30 min post injection using a blood glucometer (Contour Next) and lactate was measured using a lactate meter (Nova Biomedical Lactate Plus). Fractional gluconeogenesis (GNG) was determined as previously described (Kelleher, 1999), using the following formula:
+
+$$
+GNG=(M1_{glucose}+M2_{glucose}+M3_{glucose})/(2∗M0_{lactate}∗(M1_{lactate}+M2_{lactate}+M3_{lactate}))
+$$
 
 where Mx represents the fractional enrichment of the m+x species for the indicated metabolite.
 
-## Magnetic resonance imaging experiments
+### Magnetic resonance imaging experiments
 
 Experiments were performed on mice at 4 weeks post-AAV administration. MR imaging was performed on a 7T pre-clinical scanner (Bruker Biospec, Germany) using a 40 mm Millipede radio frequency coil for transmitting and receiving. Mice were anesthetized with 1.5–2.5% Isoflurane. Mice breathed medical air (21% O2) delivered via a nose cone, in the baseline acquisition and then the gas was switched to 100% O2 (Airgas, Radnor Township, PA, USA). The gas flow rate was set to 400 ml/min. A pneumonic sensor placed on the abdomen was used for respiratory monitoring and prospective triggering (SA Instruments, Stony Brook, NY). The animal’s ambient temperature was maintained at 28 °C using an MR Compatible Small Rodent Air Heater System (SA Instruments, Stony Brook, NY). For a given animal, the breathing rate was maintained at 40 ± 5 bpm by varying the Isoflurane levels by ± 0.5%. At each breathing challenge, images were acquired to generate T1 and T2* maps of the liver in the coronal plane.
 
-## T1 method
+#### T1 method
 
-A respiratory triggered, radio frequency spoiled, flow compensated cine gradient echo method (FLASH) was used. To suppress the motion artifacts from cardiac motion, a saturation pulse was applied to the thoracic region. Two cines (number of frames =65) were acquired with two different flip angles (α=5° and 20°). A steady state signal was achieved after 55 frames. Frames 55–65 were averaged to improve the signal-to-noise ratio. Pixel-by-pixel apparent (uncorrected for B1 inhomogeneity) T1 maps were calculated using the averaged signal intensities (S) according to Helms et al., 2008, Sα= -2TRT1Sα+const. Cine FLASH parameters were: TR/TE =10ms/2.3ms, FOV =40 x 40 mm2, matrix =128 x 128, NEX =1, slice thickness =1 mm, number of segments =1, number of frames =65, in-plane resolution =0.3 mm x 0.3 mm.
+A respiratory triggered, radio frequency spoiled, flow compensated cine gradient echo method (FLASH) was used. To suppress the motion artifacts from cardiac motion, a saturation pulse was applied to the thoracic region. Two cines (number of frames =65) were acquired with two different flip angles (α=5° and 20°). A steady state signal was achieved after 55 frames. Frames 55–65 were averaged to improve the signal-to-noise ratio. Pixel-by-pixel apparent (uncorrected for B1 inhomogeneity) T1 maps were calculated using the averaged signal intensities (S) according to Helms et al., 2008, $S\alpha= -2\frac{TR}{T1}\frac{S}{\alpha}+const$. Cine FLASH parameters were: TR/TE =10ms/2.3ms, FOV =40 x 40 mm2, matrix =128 x 128, NEX =1, slice thickness =1 mm, number of segments =1, number of frames =65, in-plane resolution =0.3 mm x 0.3 mm.
 
-Using the apparent T1 maps, and noting that any spatial dependencies due to B1 inhomogeneity are canceled out in relative measures, a map of the actual T1 difference between the gas challenges (Air vs. 100 %O2) was calculated as: ∆T1=100*(T1O2-T1air)/T1air . The mean relative ∆T1 of the liver was calculated in a manually segmented liver region. Pixels representing blood vessels were automatically excluded from this region by thresholding to mean of liver T1 tissue ±2 × standard deviations. The mean of liver T1 was calculated from a region of interest that did not include blood vessels.
+Using the apparent T1 maps, and noting that any spatial dependencies due to B1 inhomogeneity are canceled out in relative measures, a map of the actual T1 difference between the gas challenges (Air vs. 100 %O2) was calculated as: $\DeltaT1=100*(T1_{O2}-T1_{air})/T1_{air}$ . The mean relative $\DeltaT1$ of the liver was calculated in a manually segmented liver region. Pixels representing blood vessels were automatically excluded from this region by thresholding to mean of liver T1 tissue ±2 × standard deviations. The mean of liver T1 was calculated from a region of interest that did not include blood vessels.
 
-## T2* method
+#### T2* method
 
-A respiratory triggered, bipolar-multi gradient echo (MGE) sequence was used. Sixteen echoes from positive gradients were acquired at 2.5ms intervals. The scan plane geometry and the orientation was identical to that of the T1 method. MGE parameters were: TR = 300ms, TE = 2.5 ms – 47.5 ms, NEX = 4. T2* maps were generated by non-linear least square fitting the echo signals (s) to an exponential model: A*e-B*TE+C. The mean relative ∆T2* was calculated as similar to ∆T1.
+A respiratory triggered, bipolar-multi gradient echo (MGE) sequence was used. Sixteen echoes from positive gradients were acquired at 2.5ms intervals. The scan plane geometry and the orientation was identical to that of the T1 method. MGE parameters were: TR = 300ms, TE = 2.5 ms – 47.5 ms, NEX = 4. T2* maps were generated by non-linear least square fitting the echo signals (s) to an exponential model: $A*e^{-B*TE}+C$. The mean relative $\DeltaT2^{*}$ was calculated as similar to $\DeltaT1$.
 
-## Perfusion method
+#### Perfusion method
 
 FAIR arterial spin labeling technique was used to calculate the liver perfusion in a single-slice in the axial plane during the session where mice breathed medical air (21% O2). The FAIR sequence was a multi-echo spin-echo with a 13.6ms inversion pulse. A slice select inversion with an inversion slab of 4 mm was followed by a global inversion. The inversion time was set to 2000ms. A reference image was acquired without the inversion pulse. Other imaging parameter were: TR = 10 s, FOV = 30 x 25 mm2, matrix = 128 x 64, NEX = 1, slice thickness = 1 mm, echo train length = 8. A pixel wise perfusion map was constructed as described previously (Kim and Tsekos, 1997).
 
-## Statistical analyses
+### Statistical analyses
 
 All data represent mean and standard deviations from biological replicates. No statistical tests were used to predetermine sample size. Animals were randomly allocated into experimental groups. No blinding or masking of samples was performed. Data sets for each group of measurement was tested for normality using the Shapiro-Wilk test. If the data was not normally distributed, the data was log-transformed and retested for normality. For normally-distributed data, groups were compared using the two-tailed Student’s t-test (for two groups), or one-way ANOVA or two-way ANOVA (>2 groups), followed by Tukey’s or Dunnett’s test for multiple comparisons. For data that was not normally distributed, we used non-parametric testing (Mann-Whitney or Kolmogorov-Smirnov tests for two groups and Kruskal-Wallis test for multiple groups), followed by Dunn’s multiple comparisons adjustment. For metabolomics and proteomics data sets, abundances were compared by multiple t-tests, followed by Bonferroni correction of p-values. Proteomics and metabolomics analysis were performed once using biological replicates (individual mice); for other experiments, multiple (two to four) independent experiments with biological replicates (individual mice) were performed for reported data, and the number of biological replicates are indicated in the figures. No data were excluded.

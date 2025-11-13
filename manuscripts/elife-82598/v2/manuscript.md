@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Biomedical Engineering, University of Michigan Ann Arbor United States
-2. https://ror.org/00jmfr291 Department of Electrical Engineering and Computer Science, University of Michigan Ann Arbor United States
-3. https://ror.org/00jmfr291 Department of Robotics, University of Michigan Ann Arbor United States
-4. https://ror.org/00jmfr291 Department of Neurosurgery, University of Michigan Medical School Ann Arbor United States
-5. https://ror.org/00jmfr291 Section of Plastic Surgery, Department of Surgery, University of Michigan Ann Arbor United States
+1. Department of Biomedical Engineering, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Department of Electrical Engineering and Computer Science, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Department of Robotics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Neurosurgery, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Section of Plastic Surgery, Department of Surgery, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ In this study, we investigate how well the decoding of finger movements from int
 
 ## Results
 
-## Context changes alter muscle activations and neural activity
+### Context changes alter muscle activations and neural activity
 
 We are ultimately interested in understanding the impact of context changes, such as wrist flexion or spring resistance, on BMI decoding performance. In the virtual finger movement task (Figure 1A), the monkey moves their fingers within a manipulandum in order to move virtual fingers on a screen in front of them. Cortical spiking activity is recorded during these movements. The monkeys perform center-out and back movements in which they individuate index and middle-ring-small (MRS) finger groups to make one of eight movements (Figure 1B) starting from rest, hold the target, then return to rest. In some versions of the task the monkeys performed these movements with all fingers held together for 1-degree-of-freedom (1-DOF, Figure 1B bottom). Monkey N additionally had eight chronic electromyography (EMG) leads implanted in muscles of the hand and wrist (see Methods, Table 2) which were recorded from during manipulandum control trials. During the BMI task, a Kalman filter (KF) model is trained to relate cortical activity to finger movements, and the monkey controls the virtual hand with their brain activity through this model. We first asked whether introducing context changes during the manipulandum controlled virtual finger movement task causes any change in behavior, muscle activation, or neural channel activation. Our first manipulations were the addition of torsional springs or the static flexion of the wrist by 23 degrees (Figure 1C), referred to as the spring and wrist contexts, respectively, during the 1-DOF center-out task. The torsional springs resist flexion such that more force is required to flex the fingers but less force is required to extend the fingers.
 
@@ -61,7 +61,58 @@ In contrast, during the same 1-DOF task, muscle activations change substantially
 
 After establishing that context had a large effect on muscle activity with a relatively small effect on finger kinematics, we next evaluated whether neural activity changed due to the addition of springs or altered wrist posture. For each neural channel we recorded two features, the threshold crossing firing rate (TCFR) and spiking band power (SBP). SBP is a low-power feature that has been previously shown to be well correlated with the firing rate of the largest amplitude unit (Nason et al., 2020), often enabling us to identify more tuned channels. For both Monkey N and Monkey W, we evaluated how many channels were tuned to movement and how many of these tuned channels modulated activity with context change. Tuning and context modulation were determined by regressing finger kinematics with channel activity and channel activity multiplied by a dummy variable for context, as described in the Methods, one channel at a time. Regression coefficients were tested for significance with a t-test, a significant channel activity coefficient indicated that channel was tuned, and a significant dummy variable coefficient indicated that context modulated the channel’s tuning. The results are included in Table 1. The SBP feature resulted in an average of 86.9 and 28 tuned channels of 96 for Monkey N and Monkey W, respectively, while TCFR resulted in an average of 36.7 and 11.8 tuned channels of 96 for Monkey N and Monkey W, respectively. An average of 24.4% of the tuned TCFR channels and 37.7% of the tuned SBP channels significantly changed activity with the wrist context and an average of 56.8% of the tuned TCFR channels and 52.3% of the tuned SBP channels significantly changed activity with the spring context. As both features had a similar proportion of tuned channels that were modulated by context changes, we opted to use SBP as the primary feature for the subsequent analyses in order to increase the number of tuned channels available for analysis.
 
-## Decoding neural activity across task context
+**Table 1.**
+ The number of channels tuned to any movement using two features (threshold crossing firing rate [TCFR] and spiking band power [SBP]) and the percentage of tuned channels that showed a significant change in neural feature between normal trials and trials in the tested context for four types of experimental sessions (Monkey N or Monkey W with the spring or wrist context).Standard deviation (SD) is calculated across sessions of the same type and n is the number of sessions of that type which is indicated in the first column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">TCFR</th>
+      <th colspan="2">SBP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Tuned channels</td>
+      <td>% Context modulated channels</td>
+      <td>Tuned channels</td>
+      <td>% Context modulated channels</td>
+    </tr>
+    <tr>
+      <td>Monkey N spring days (n=3)</td>
+      <td>38.3 (SD = 4.0)</td>
+      <td>47.0% (SD = 2.8)</td>
+      <td>89.3 (SD = 2.1)</td>
+      <td>61.7% (SD = 12.0)</td>
+    </tr>
+    <tr>
+      <td>Monkey N wrist days (n=2)</td>
+      <td>35.0 (SD = 1.4)</td>
+      <td>43.1% (SD = 9.8)</td>
+      <td>84.5 (SD = 7.8)</td>
+      <td>54.4% (SD = 0.8)</td>
+    </tr>
+    <tr>
+      <td>Monkey W spring days (n=3)</td>
+      <td>12.0 (SD = 1.0)</td>
+      <td>66.5% (SD = 2.8)</td>
+      <td>35.0 (SD = 6.9)</td>
+      <td>42.8% (SD = 7.1)</td>
+    </tr>
+    <tr>
+      <td>Monkey W wrist days (n=2)</td>
+      <td>11.5 (SD = 3.5)</td>
+      <td>5.6% (SD = 7.9)</td>
+      <td>21.0 (SD = 5.7)</td>
+      <td>20.9% (SD = 4.5)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Decoding neural activity across task context
 
 After confirming that these context changes had large impacts on muscle activation (Figure 2) and affected many channels of neural activity (Table 1), we next asked how this will impact the ability to decode intended movements for BMI applications. Typically, BMIs use linear models to relate neural firing rates to the desired control variable (Ajiboye et al., 2017; Nason et al., 2021; Wodlinger et al., 2015). Given the work showing that task changes similar to those tested here can alter how motor cortex linearly encodes muscle activations during different wrist movements across tasks (Naufel et al., 2019), we next ask if the same is true for individuated finger movements. To test this, we recorded kinematics for both monkeys and muscle activations for Monkey N during the 2-DOF task and then trained linear models with data from normal trials to predict muscle activations or kinematics in unseen normal trials or other context trials.
 
@@ -79,9 +130,21 @@ We next asked whether this dramatic increase in prediction error is driven by a 
 
 Kinematics are used as a control signal in BMI applications more frequently than muscle activation so we next examined the error in predicting finger position and velocity across contexts. Figure 4A shows trial-averaged predictions for each target from training a linear model on normal trials and predicting normal trials or spring trials for an example session with Monkey N. In both index and MRS flexion predictions, we observed the off-context predictions to be worse than the normal trial predictions. Predictions during the spring trials often showed a bias towards flexion. We measured changes in prediction accuracies on three days for each context – spring, wrist, and both – for Monkey N, and one additional day with each context for Monkey W (Figure 4B, Figure 4C). All context changes resulted in significantly higher prediction MSE (paired t-test, p<1e-4), averaging 68.2% for finger position and 11.4% for finger velocity. All context changes also resulted in small but significant decreases in prediction correlation (paired t-test, p<1e-4), averaging -18.6% for finger position and -12.8% for finger velocity. The smaller change in the correlation of position predictions indicates that much of the prediction error is coming from offsets or magnitude differences in the predictions.
 
-## Changing task context has small effects on online BMI performance
+### Changing task context has small effects on online BMI performance
 
 Based on these offline prediction results, we might expect that in a real-time BMI when cortical activity is controlling the virtual hand, a model trained on normal trials will be more difficult to use when controlling a virtual hand in a new context. We investigated this by training either a KF or a ReFIT Kalman filter (RFKF), as done previously by Nason et al., 2021, and having the monkey control the virtual hand with the model while we applied context changes to this virtual task. Briefly, the KFs are standard position/velocity KFs that update virtual finger position by integrating the predicted finger velocity in the current time step. We introduced context changes in two separate ways. First, we added springs, a static wrist flexion, or both to the manipulandum and had the monkey control the virtual hand with an RFKF trained on normal trials. Second, we trained different KFs using training data collected in different contexts and had the monkeys use the KFs in the online task without any context changes applied to the manipulandum. Due to the quality of recorded neural signals, Monkey W controlled only 1-DOF online while Monkey N controlled 2-DOF online.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig5-v2.jpg)
+
+**Figure 5.:** (A) Example online session in which both the spring and the wrist context are tested. Each dot indicates acquisition time of one trial, each grouping of dots is a series of trials before the context was changed. Red bars and numbers above each grouping illustrate the median acquisition time (in seconds) for that series of trials. (B) Change in performance metrics between normal online trials and online trials with the context change indicated by the bar color in the manipulandum. Each bar indicates one session where off-context online trials are compared to the normal online trials immediately before and after them. Error bars indicate 99% confidence interval in performance metric change. Dashed line separates Monkey N sessions from Monkey W sessions. (C) Average acquisition time during the first five trials each time online trials were started, split between normal trials and trials with context changes applied to the hand (off-context). Acquisition times were z-scored within a series of trials in the same context. Red lines indicate the median. (D) Neural activity patterns for one example session. Neural activity patterns are velocity predictions at the time point of peak brain-machine interface (BMI) movement using a single linear regression model trained on normal offline trials. Each dot indicates the readout velocity for one trial using the same linear model but for either a normal trial (black) or an off-context trial (red). Larger open circles indicate the centroid of velocity readouts for trials to one of eight target directions split by normal and off-context trials. Shaded areas bound patterns for all trials excluding trials outside the 95th percentile of index or middle-ring-small (MRS) velocities.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Colors represent the type of context change (yellow – wrist, blue – springs, red – both wrist and springs), and shape indicates which monkey the session was with. Dotted line indicates equal hand-decode correlation in both types of trial.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** This was trained on normal trials offline and evaluated on neural data during online trials at the time point of peak movement. The change is between trials during normal online control and trials with a context changed added during online control. One dot indicates the two-sample t-score of this change calculated using all trials of one type (blue – flexion, red – extension, or black – split) in one session for Monkey N (top) or Monkey W (bottom). A change greater than 0 indicates a larger magnitude during the off-context trials, that is pushing harder.
 
 We first tested whether online BMI performance changed when using a standard RFKF with context changes added to the manipulandum, referred to as the manipulandum context change BMI experiments. One RFKF model could be tested on multiple context changes in a single session. For example, Figure 5A shows the acquisition times during an experimental session where two contexts, spring and wrist, were tested in sets of separate trials. Figure 5B summarizes the changes in online performance over six experimental sessions for Monkey N and four sessions for Monkey W. During these 10 sessions the context changes were tested 15 times: four times for the wrist context, seven times for the spring context, and four times for the combined wrist and spring context. Each bar compares the performance during one of the 15 tests between normal trials and one off-context condition in a session when using the same model for both. In two of these tests with Monkey N (one spring and one combined wrist and spring), random target presentation was used instead of center-out to increase task difficulty. Ultimately, both monkeys reached the same levels of performance despite added context changes to the manipulandum. Of the 15 tests, only one test resulted in a significant change in at least one of the performance metrics (p<0.01, two-sample t-test). In this case, Monkey N using the RFKF while his wrist was flexed resulted in a 13.0% increase in time to target (p=6.7e-3), the equivalent of 86 ms. This overall lack of change was somewhat surprising since the offline decoding results had greater prediction error. The expectation was that when the monkey moved their hand along with the BMI task, the performance would be impacted due to the context change. However, the data show that the monkeys made small adjustments to how their hand moved with the online task (Figure 5—figure supplement 1).
 
@@ -91,11 +154,23 @@ To help explain this minimal change in online performance, we examined the monke
 
 In a second online experiment, referred to as the two decoder BMI experiments, the monkeys alternated between using two KFs: one trained on normal trials and another trained on off-context trials. In this paradigm the context change is added to the model used in closed loop BMI so that it directly impacts BMI control. Monkeys N and W performed these tests on 9 and 6 separate days, respectively. On each day, two decoders were trained in order to compare one context change. Figure 6A shows an example session alternating between a decoder trained on normal trials and a decoder trained on wrist trials. Figure 6B shows the performance changes for 15 sessions with five, six, and four sessions testing the wrist, spring, and combined wrist and spring contexts, respectively. In 15 sessions, this experiment revealed small but significant changes in at least one performance metric for 11 sessions (Figure 6B, p<0.01, two-sample t-test) although only two sessions had worse online performance for all three metrics. The significant decreases in performance averaged 32.6% for time to target, 46.5% for orbit time, and 8.5% for path efficiency, with the combined context having the largest effect.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig6-v2.jpg)
+
+**Figure 6.:** (A) Example online session in which the wrist context was tested. Each dot indicates acquisition time of one trial, and each grouping of dots is a series of trials before the context was changed. Red bars and numbers above each grouping illustrate the median acquisition time (in seconds) for that series of trials. (B) Change in performance metrics between normal online trials and online trials with the context change indicated by the bar color. Each bar represents one session where off-context online trials are compared to the normal online trials immediately before and after them. Error bars indicate 99% confidence interval in performance metric change. The dashed line separates Monkey N sessions from Monkey W sessions. (C) Average acquisition time during the first five trials each time online trials were started, split between trials performed with the model trained on normal trials and the model trained on off-context trials. Acquisition times were z-scored within a series of trials with the same model. Red lines indicate the median. (D) Neural activity patterns for one example session. Neural activity patterns are velocity predictions at the time point of peak brain-machine interface (BMI) movement using a single linear regression model trained on normal offline trials. Each dot indicates the readout velocity for one trial using the same linear model but for either a normal trial (black) or an off-context trial (red). Larger open circles indicate the centroid of velocity readouts for trials to one of eight target directions split by normal vs off-context trials. Shaded areas bound patterns for all trials excluding trials outside the 95th percentile of index or middle-ring-small (MRS) velocities.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Each Kalman filter was evaluated on all online trials in a session. One point indicates the correlation between these predictions with both Kalman filters used in one session.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82598/elife-82598-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** This was trained on normal trials offline and evaluated on neural data during online trials at the time point of peak movement. The change is between trials during normal online control and trials with a context changed added during online control. One dot indicates the two-sample t-score of this change calculated using all trials of one type (blue – flexion, red – extension, or black – split) in one session for Monkey N (top) or Monkey W (bottom). A change greater than 0 indicates a larger magnitude during the off-context trials, that is pushing harder. White asterisks indicate significant changes.
+
 We compared the acquisition time in the first five trials while using the normal decoder or an off-context decoder (Figure 6C). Normal and off-context trials on average did not show different relative performance in the first five trials. Similar to Figure 5C, Monkey N had higher acquisition times in the first five trials (p=0.008, one-sample Kolmogorov-Smirnov test) that is the same between using the normal model and off-context models (p=0.99, two-sample Kolmogorov-Smirnov test). Monkey W once again did not show a significant initial adaptation (p=0.17, one-sample Kolmogorov-Smirnov test) which was the same between using the normal model and off-context models (p=0.5, two-sample Kolmogorov-Smirnov test). This indicates that for both monkeys, adapting to the off-context decoder was as difficult as adapting to the normal decoder.
 
 As the off-context online performance was worse in many of the two decoder BMI sessions, we next asked if this BMI task required more adaptation than when context changes were added to the manipulandum. As done previously, we calculated neural activity patterns, that is velocity readouts from neural activity for each online trial. These patterns were calculated using one linear regression model trained on the normal context offline training trials from the same session. Ultimately, observed adaptation was a small effect, likely due to very high correlations between the velocity decodes with both KFs (Figure 6—figure supplement 1). Neural activity patterns for an example session for Monkey N with the median change in acquisition time are shown in Figure 6D. Neural activity patterns for trials using the normal model are represented in black and patterns for trials using the off-context model are represented in red. While the overall repertoire of neural activation patterns largely overlaps, we saw small shifts in the centroids of patterns for individual targets. These shifts in this session included higher velocity for flexion and smaller velocities for extension in the off-context trials. A shift toward higher velocities suggests that the monkey was ‘pushing’ harder during those trials. When comparing these centroids in all sessions the shifts along the target direction were generally larger for these two decoder sessions than the manipulandum context changing sessions (Figure 5—figure supplement 2, Figure 6—figure supplement 2). Additionally, across the 15 sessions there was a trend that if the monkey had to push harder, that would happen during flexion trials (Figure 6—figure supplement 2), all three significant increases (two-sample t-test with 5% false discovery rate correction) were for flexion targets. Altogether, this indicates a small trend that the monkeys would re-aim during off-context flexion trials in the two decoder sessions by aiming for a target further from center (i.e. pushing harder).
 
-## Context shifts population neural activity
+### Context shifts population neural activity
 
 To help explain how the monkeys were able to adjust to different contexts during the online task, we further examined changes in neural activity during the offline task in different contexts. First, we ask if there are any obvious trends in how the channel activity changes during simple 1-DOF movements, for example increasing neural activation when flexion requires more muscle activation. In one experimental session, Monkey N performed the 1-DOF task normally as well as in the wrist, spring, and rubber band contexts. The rubber bands altered the required muscle activations for the task in the same way as the springs, however to a larger extent, and as such were only used in this 1-DOF task. In two additional sessions, Monkey W performed the 1-DOF task normally as well as in the wrist context in one session and spring context in the other session. Figure 7A shows trial-averaged neural activation traces from two example modulated channels, one from each monkey, both comparing the activation during spring trials and normal trials. We found that neural channels showed a mix of changes with context. For example, Monkey W’s channel 12 was activated more compared to normal for spring flexion targets (blue solid), similar to the muscle activations of the finger flexors. However, other example channels like Monkey N’s channel 90 show less neural activation during movement in the spring contexts for both flexion and extension targets.
 
@@ -141,23 +216,66 @@ Nonlinear models could also improve predictions of intended muscle activation or
 
 All procedures were approved by the University of Michigan Institutional Animal Care and Use Committee (protocol numbers PRO00010076 and PRO00008138).
 
-## Implants
+### Implants
 
 We implanted two male rhesus macaques (Monkey N age 8–9, Monkey W age 8–9) with Utah microelectrode arrays (Blackrock Microsystems, Salt Lake City, UT, USA) in the hand area of precentral gyrus, as described previously (Irwin et al., 2017; Nason et al., 2021; Vaskov et al., 2018). Two monkeys were chosen to ensure results are consistent between subjects. Monkey N was implanted with two 64-channel arrays in right hemisphere primary motor cortex and Monkey W was also implanted with two 96-channel arrays in right hemisphere primary motor cortex. Channels from both of Monkey N’s motor cortex arrays and from Monkey W’s lateral motor cortex array were used in this study, for a total of 96 channels from each monkey for analysis. The number of channels simultaneously recorded was limited to 96 due to the available recording hardware. Monkey N was between 511 and 1168 days post-cortical implant and Monkey W was between 254 and 411 days post-cortical implant during data collection.
 
 Monkey N was also implanted with chronic bipolar intramuscular EMG recording electrodes (Synapse Biomedical, Inc, Oberlin, OH, USA) in a separate surgery as described previously (Nason et al., 2021). The list of muscles targeted along with their function are included in Table 2. Briefly, muscles were accessed via dorsal and ventral incisions on the left forearm and specific muscles were surgically identified with the assistance of intraoperative stimulation. Bipolar electrodes were inserted and sutured into the muscle belly near the point of innervation and then tunneled over the elbow and shoulder to an interscapular exit site. The percutaneous electrodes were connected to a 16-channel PermaLoc connector. Monkey N was between 120 and 496 days post-EMG electrode implant for all EMG data collected.
 
-## Feature extraction
+**Table 2.**
+ List of muscles targeted during surgery with their associated function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Muscle</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extensor indicis proprius (EIP)</td>
+      <td>Index finger extensor</td>
+    </tr>
+    <tr>
+      <td>Flexor digitorum profundus, targeting MRS (FDP)</td>
+      <td>Finger flexor</td>
+    </tr>
+    <tr>
+      <td>Extensor digitorum communis (EDC)</td>
+      <td>Finger extensor</td>
+    </tr>
+    <tr>
+      <td>Extensor carpi radialis brevis (ECRB)</td>
+      <td>Wrist extensor</td>
+    </tr>
+    <tr>
+      <td>Flexor carpi ulnaris (FCU)</td>
+      <td>Wrist flexor/adductor</td>
+    </tr>
+    <tr>
+      <td>Flexor carpi radialis (FCR)</td>
+      <td>Wrist flexor</td>
+    </tr>
+    <tr>
+      <td>Flexor digitorum profundus, targeting index, proximal and distal sites (FDPip, FDPid)</td>
+      <td>Index finger flexor</td>
+    </tr>
+  </tbody>
+</table>
+
+### Feature extraction
 
 (TCFR and SBP) were recorded in real time during experiments using the Cerebus neural signal processor (Blackrock Microsystems). Threshold crossings were acquired by configuring the Cerebus to threshold each channel at –4.5 times the signal root-mean-square. For each threshold crossing, spike snippets were sent to a computer running xPC Target version 2012b (Mathworks) which saved the channel and time for each threshold crossing. SBP is an estimate of power in the 300–1000 Hz frequency band and was acquired by configuring the Cerebus to bandpass filter the raw signals to 300–1000 Hz using the Digital Filter Editor feature in the Central Software Suite version 6.5.4 (Blackrock Microsystems), then sample at 2 kHz. The filtered 2 kHz recording was then sent to the computer running xPC Target, which rectified and summed the samples on each channel received in each 1 ms iteration and counted the quantity of samples received each 1 ms so that SBP could later be averaged within longer time bins. Both the threshold crossings and SBP were saved by xPC synchronized with other real-time experimental information. Artifacts were removed for TCFR by removing threshold crossing times if 20 or more channels had threshold crossings in the same millisecond. Features were binned into non-overlapping bins of length 32 ms for online and offline decoding, or bins with a length of 20 ms for calculating tuning and comparing features across trials. SBP is summed for every 1 ms in the time bin and then divided by the total number of raw 2 kHz samples in the bin. For TCFR the spike counts are summed within a bin and then divided by the bin size to get a threshold crossing rate.
 
 EMG from Monkey N’s eight bipolar electrodes was recorded for later offline synchronization. The percutaneous PermaLoc connector was connected to a CerePlex Direct (CPD) via a 64-channel splitter box and CerePlex A (Blackrock Microsystems) which converted the signals to the digital domain with unity gain. The CPD was configured to record 16 channels of raw signal at 10 kHz and for each bipolar pair the electrode implanted further inside the muscle was software referenced to the second electrode. These eight bipolar referenced channels are used in analyses. To synchronize EMG offline, we used the Sync Pulse functionality in Central to create unique pulses that were recorded by both the Cerebus and CPD and could later be used to align the Cerebus and CPD recordings. For offline analysis, muscle activations are estimated from the 10 kHz EMG recording by filtering with a second-order Butterworth bandpass filter between 100 and 500 Hz and then taking the mean absolute value of the filtered signal during every binning period.
 
-## Experimental setup
+### Experimental setup
 
 During experiments the monkeys performed a virtual finger task while motor cortex activity and optionally arm muscle activity were recorded as described. Similar to previously described experiments (Irwin et al., 2017; Nason et al., 2021; Vaskov et al., 2018), we used xPC Target to coordinate the experiment in real time. The xPC Target computer acquired and stored task parameters and neural features in real time, coordinated target presentation, acquired finger positions from the flex sensors on each finger group (FS-L-0073-103-ST, Spectra Symbol, Salt Lake City, UT, USA), and sent finger positions and target locations to a computer simulating movements of a virtual monkey hand (MusculoSkeletal Modeling Software) (Davoodi et al., 2007). For online experiments, the xPC Target computer also binned threshold crossings and SBP in customizable bin sizes and evaluated the decoder model to predict finger positions in real time using an RFKF (see details below).
 
-## Behavioral task
+### Behavioral task
 
 Monkeys N and W were trained to acquire virtual targets by moving their physical fingers in a manipulandum to control virtual fingers on a screen in front of them. All sessions took place in a shielded chamber with the monkey’s head fixed and arms restrained at their side with elbows bent 90 degrees and hands resting on a table in front of them. The left hand was placed in a manipulandum described previously (Nason et al., 2021), with openings separating the index finger and the MRS finger group (Figure 1C). The monkeys were trained to move the index finger independently of the MRS finger group (Figure 1B), that is 2-DOF, although in some trials they moved both finger groups as 1-DOF. Each trial began with spherical targets appearing for each active finger group with each target occupying 15% of the full range of motion of the fingers. In the 1-DOF task the target was presented to the index finger.
 
@@ -165,43 +283,53 @@ Target presentation followed a center-out-and-back pattern with every other targ
 
 Task context was altered through four potential task alterations. One alteration was the addition of torsional springs to both finger groups (180 degree deflection angle, 0.028 in or 0.04 in wire diameter, Gardner Spring Inc, Tulsa, OK, USA), referred to as the ‘spring context’. The second alteration was the rotation of the manipulandum by 23 degrees in the flexion direction, referred to as the ‘wrist context’. A third alteration was introduced by attaching rubber bands from the back of the manipulandum to the door for each finger group, thereby resisting flexion, referred to as the ‘rubber band context’. A last alteration was addition of torsional springs and the rotation of the manipulandum by 23 degrees at the same time, referred to as the ‘both context’. Trials performed with one of these alterations are referred to as ‘off-context’ trials, while trials performed without alterations are referred to as ‘normal’ trials. As the index finger alone is much weaker than the MRS finger group, the index finger used a smaller spring when applicable. The added springs increased the force required for full flexion by 9.5 N (for MRS) and 3.3 N (for index), while the rubber bands increased the force required for full flexion by 16.5 N. The rubber band context was only done by Monkey N and in a 1-DOF task due to task difficulty. For reference, full flexion required approximately 1.3 N of force without the springs or bands.
 
-## Comparison of kinematics and muscle activation between contexts
+### Comparison of kinematics and muscle activation between contexts
 
 Three representative sessions for both Monkey N and Monkey W, 1 day for each context – spring or wrist – were used to compare kinematics across contexts. During data collection, normal trials and off-context trials were interleaved by alternating context type every 175–350 trials in order to control for changes in behavior over time. During these representative days, there was an average of 1134 normal trials and 1118 off-context trials per day for Monkey N and 526 normal trials and 504 off-context trials per day for Monkey W. To compute how finger velocity changed between normal trials and off-context trials, the peak velocity of finger movements was found for every trial. For every trial, the recorded finger flexions were downsampled to 20 ms and filtered with a second-order Savitzky-Golay FIR filter. Finger velocity was estimated from the downsampled and filtered finger positions and maximum finger speeds were found. The peak movement time was taken at the time of the largest peak in speed after trial start. Trials were then split by context and target direction (flexion vs. extension), and a two-sample t-test was used to compare peak speeds and compute a 99% confidence interval, once for flexion targets and again for extension targets. Comparisons were made only between trials to the same target, leaving about 281 trials per group and 129 trials per group for each comparison for Monkey N and Monkey W, respectively.
 
 The same sessions for Monkey N used to compare kinematics were also used to compare muscle activations. The recorded EMG was filtered and the mean absolute value was taken in 20 ms bins as described previously. Binned muscle activations were then smoothed with a 100 ms Gaussian kernel. One value was obtained for every trial by taking the average muscle activation in a 420 ms window around peak movement, including 10 bins before peak movement, the bin that included peak movement, and 10 bins after peak movement. These muscle activation values were grouped by context and target, then compared with a two-sample t-test.
 
-## Computation of neural tuning and context modulation
+### Computation of neural tuning and context modulation
 
 During five representative experiments for each monkey, three that tested the spring context and two that tested the wrist context, we calculated the number of channels that were significantly modulated by any finger movement and the number of channels with a change in activity between normal trials and off-context trials. During these sessions, the monkeys performed the task with all fingers moving together (1-DOF), in a center-out task as described, to targets at either plus or minus 40% from center. Trials that were unsuccessful and trials following unsuccessful trials were removed. Unsuccessful trials were rare, often only occurring on the first or last trial of a block of trials. There was an average of 1072 normal trials and 747 off-context trials for Monkey N and 544 normal trials and 387 off-context trials for Monkey W were used during these sessions.
 
-Channel tuning and context modulation was calculated with both the SBP features and TCFR features. On each day, features and kinematics were averaged into non-overlapping 20 ms bins, data from normal trials and off-context trials were concatenated together, and the SBP and TCFR were each normalized to zero mean and unit standard deviation. An optimal lag was calculated for each channel by maximizing the L2-norm of regression coefficients between a feature and finger position and velocity. Features at that optimal lag were then regressed with finger position and velocity one at a time with an added effect for context following these equations:Xn=[x^ncx^n]Y=B+XnWn
+Channel tuning and context modulation was calculated with both the SBP features and TCFR features. On each day, features and kinematics were averaged into non-overlapping 20 ms bins, data from normal trials and off-context trials were concatenated together, and the SBP and TCFR were each normalized to zero mean and unit standard deviation. An optimal lag was calculated for each channel by maximizing the L2-norm of regression coefficients between a feature and finger position and velocity. Features at that optimal lag were then regressed with finger position and velocity one at a time with an added effect for context following these equations:
 
-where x^n is the T × 1 vector containing T bins of channel SBP or TCFR for channel n, c is an indicator variable that equals one if that sample was during an off-context trial or zero otherwise, Y is a T × 2 matrix containing finger position and velocity, B is the trained linear offset, and Wn is the 2×2 matrix of trained weights relating channel n’s activity to finger position and velocity. A channel was called tuned if the regression coefficient between the neural feature and either finger position or velocity, that is w1,1 or w1,2, were significantly different from zero, via a t-test on the regression coefficient. A channel was also called context modulated if either coefficient in the second row of Wn, which includes the effect of context, was significantly different from zero, also via a t-test, indicating a different slope relating neural activity and kinematics between normal trials and off-context trials. False discovery rate correction was applied to each session at a level of 0.1%.
+$$
+X_{n}=[x^_{n}cx^_{n}]
+$$
+
+
+
+$$
+Y=B+X_{n}W_{n}
+$$
+
+where $x^_{n}$ is the T × 1 vector containing T bins of channel SBP or TCFR for channel n, c is an indicator variable that equals one if that sample was during an off-context trial or zero otherwise, Y is a T × 2 matrix containing finger position and velocity, B is the trained linear offset, and Wn is the 2×2 matrix of trained weights relating channel n’s activity to finger position and velocity. A channel was called tuned if the regression coefficient between the neural feature and either finger position or velocity, that is w1,1 or w1,2, were significantly different from zero, via a t-test on the regression coefficient. A channel was also called context modulated if either coefficient in the second row of Wn, which includes the effect of context, was significantly different from zero, also via a t-test, indicating a different slope relating neural activity and kinematics between normal trials and off-context trials. False discovery rate correction was applied to each session at a level of 0.1%.
 
 To quantify the change in neural activity between contexts as in Figure 7, we used one representative session for Monkey N in which trials were done in the normal, spring, wrist, and rubber band contexts. An additional two representative sessions for Monkey W were used, one session comparing normal and spring trials and another session comparing normal and wrist trials, both performed with 1-DOF movements and with targets to 40% flexion or extension from rest only. Tuned channels were calculated as previously described using the SBP feature. For every trial, the SBP was binned into 20 ms bins and then smoothed with a 100 ms Gaussian kernel. Then the average activity in a window spanning 200 ms before and 200 ms after the bin containing peak movement was calculated for each tuned channel. The trials were then split by context and by target, and the trial SBP values were compared between contexts with a two-sample t-test.
 
-## Offline predictions
+### Offline predictions
 
 Data from nine sessions with Monkey N, three for each context (springs, wrist, and both), were used for offline muscle activation and kinematic predictions, and three sessions for Monkey W, one for each context, were used for offline kinematic predictions. During these sessions, both monkeys performed the 2-DOF center-out task. Blocks of normal trials and off-context trials were interleaved by alternating context in order to control for changes in neural activity over time. Trials that were unsuccessful were removed before analysis. There was an average of 803 normal trials and 470 off-context trials for Monkey N and 737 normal trials and 329 off-context trials for Monkey W. To account for changes in monkey motivation, sessions chosen were those with consistent prediction accuracy between early and late normal trials within a session. These sessions spanned 165 days starting 792 days post-cortical array implant and 120 days post-EMG electrode implant for Monkey N, and 63 days starting 285 days post-cortical array implant for Monkey W.
 
 In each session, SBP and muscle activations or kinematics were binned into 32 ms bins and features were concatenated across trials of the same context. The SBP channels were masked to those with an average TCFR greater than 1 Hz across a session and 12 bins of history from each of these channels were used as additional features. Ridge regression relating SBP to muscle activations or kinematics was trained on normal trials and then tested on both normal trials and off-context trials with 10-fold cross-validation. To do this, the normal trials were split into 10 folds with an equivalent number of bins in each fold, a model was trained on nine folds, and then tested on the left-out fold as well as on data from off-context trials. We used two metrics to evaluate prediction accuracy. First we used the Pearson correlation coefficient between the predicted and measured muscle activations or kinematics to establish how well the predictions are linearly correlated with measurements. The second metric was MSE normalized by the variance of the measured data (MSE). Normalizing by the variance allows for better comparison across test datasets as they may have different variances. In this formulation, the MSE is the fraction of unexplained variance or one minus the variance accounted for or coefficient of determination used in previous studies (Fagg et al., 2009; Naufel et al., 2019). Values greater than one indicate that the predictions are introducing variance compared to the worst possible least-squares predictor, that is predicting the mean.
 
-## Online decoding
+### Online decoding
 
 We used either a KF or an RFKF (Gilja et al., 2012) to predict intended finger movements for all BMI experiments, as done previously (Irwin et al., 2017; Nason et al., 2021; Vaskov et al., 2018). We performed two types of online experiments. In the first experiments, an RFKF was trained on normal trials and then used during trials with context changes in the manipulandum or without any additions to the manipulandum. To train the model, monkeys first performed at least 300 trials of center-out manipulandum control with 750 ms hold time. Using these trials, we trained a position/velocity KF which the monkeys used online for at least 200 trials, with a 32 ms update rate and a 500 ms hold time. To use the KF, virtual finger position was updated by integrating the predicted velocity in the current time step to update the previous step’s finger position. An RFKF was then trained, as done previously (Nason et al., 2021), by rotating incorrect velocities during online control with the KF to be toward the intended target represented in a two-dimensional space, setting finger velocity equal to zero when in the correct target, and then retraining regression coefficient matrices. The RFKF was used online for blocks of 100–200 trials with different context changes applied to the manipulandum, alternating between normal trials and other contexts. Multiple contexts could be tested in one session during these experiments by switching out the context manipulations present in the manipulandum.
 
 In the second set of online experiments, two KFs were trained in one session and then used alternatingly in online control without any changes present in the manipulandum. During these sessions, the monkeys first performed at least 300 trials of center-out manipulandum control, followed by another 300 or more trials of center-out manipulandum control with a context change present. One model was trained using each set of trials. The monkeys then used these models in online control for sets of 100–200 trials, and then the models were alternated. Hold times and update rates were kept consistent between types of experiments and sessions.
 
-## Online performance measures
+### Online performance measures
 
 We estimated online performance with acquisition time, time to target, orbiting time, and path efficiency. Acquisition time was measured as the total time from target presentation to the end of the trial minus the hold time, therefore ending with the target being successfully acquired. Time to target was taken as the time from target presentation to the first time where all fingers with targets were in their targets. Orbiting time was then calculated as the time from all fingers first reaching their targets to the end of the trial minus the hold time. Trials where the fingers reached the targets and never left therefore had an orbiting time of 0 ms. Failed trials were excluded when comparing online performance between context but not for evaluating the monkeys adaptation within the first five trials. Path efficiency was calculated as the ratio of the shortest distance between the fingers’ starting positions and the target positions projected onto a two-dimensional space, to the length of the path traveled by the fingers.
 
-## Online neural activity patterns
+### Online neural activity patterns
 
 To visualize neural activity during online trials, the normal offline training trials used to train the KF were used to train a new linear readout between neural activity and finger velocities. Neural activity from these trials was binned in 50 ms intervals, then neural activity in the current bin and the five most recent bins were regressed with the finger velocities during these trials to obtain one set of weights for that session. This model was then used to predict velocities from neural activity during the online trials. The predictions at the time point in the trial with the peak online velocity toward the target during the online trial were taken as the online neural activity patterns. To compare neural activity patterns across multiple targets in multiple sessions, the neural activity patterns for each trial were projected onto the target direction for each trial to obtain one ‘pushing magnitude’, or the velocity magnitude that they were pushing toward the target direction. Pushing magnitudes were collected for each trial, separated for flexion trials (IF, MF, IF+MF), extension trials (IE, ME, IE+ME), and split trials (IF+ME, IE+MF), and then the pushing magnitudes for each set of trials were compared between normal trials and off-context trials using a two-sample t-test.
 
-## Dimensionality reduction
+### Dimensionality reduction
 
 To investigate changes in population neural activity due to changes in context, two sessions of 1-DOF center-out trials with targets of 40% flexion or extension from rest were used for each monkey. For Monkey N, both sessions included trials where the task was performed in the normal, spring, rubber band, and wrist contexts. For Monkey W, one session included trials in the normal and spring contexts, and the other session included trials in the normal and wrist contexts. SBP was binned into 20 ms bins, masked to only include channels with TCFR greater than 1 Hz, and then for each trial a time frame 400 ms before to 740 ms after the bin containing peak movement was taken from each trial. The neural activity for trials within a single context was concatenated and averaged across trials with the same context and target forming an N × T × D data structure for each context, where N is the number of channels, T is the number of bins per trial used, and D is the number of targets. Neural data was then concatenated across targets to form an N × (T*D) matrix and then we used PCA to calculate a manifold for each context, keeping the top 16 components for Monkey N and eight components for Monkey W, which explained 86% of variance on average. Principal angles were found between the manifolds following methods used previously (Björck and Golub, 1973; Gallego et al., 2018). These principal angles are the minimal angles required to align the manifolds and serve as a measure for how well aligned two manifolds are. As a control, two sets of 50 trials were taken from the normal trials and used to calculate two manifolds in the same way. The principal angles between these manifolds were then calculated. The sampling and angle calculations were repeated 100 times to obtain a control distribution of principal angles.
 

@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Department of Molecular Biosciences, Northwestern University Evanston United States
+1. Department of Molecular Biosciences, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -32,31 +32,316 @@ Here, we have addressed this challenge using the auxin-inducible degron (AID) sy
 
 ## Results
 
-## Dynein is localized to acentrosomal spindles and is required for pole focusing
+### Dynein is localized to acentrosomal spindles and is required for pole focusing
 
 Since dynein is required for multiple cellular processes in C. elegans, full RNAi-mediated depletion of this protein causes developmental defects. Thus, previous studies of dynein in oocytes have relied on partial depletion (Yang et al., 2005; Ellefson and McNally, 2009; Ellefson and McNally, 2011; Muscat et al., 2015; McNally et al., 2016; Laband et al., 2017). In an attempt to achieve more complete depletion without affecting worm development, we sought to rapidly deplete dynein from adult worms using the AID system. For this, we utilized a strain in which the heavy chain of dynein, DHC-1, was tagged at the endogenous locus with both GFP and a degron tag; this strain also expressed the ubiquitin ligase TIR1 using the sun-1 promoter to enable auxin-mediated degradation of DHC-1 specifically in the germline (Zhang et al., 2015; Figure 1A; we refer to this strain as ‘Dynein AID’). This strain appears superficially wild type, with no noticeable effects on worm development, brood size, or percent of male progeny, suggesting that the GFP and degron tags are not affecting dynein function in the absence of auxin (Zhang et al., 2015). With this system, we are able to deplete dynein on a shorter timescale than RNAi, allowing us to assess the effects of dynein depletion on spindle assembly and maintenance without affecting prior processes. To validate that this strain worked for efficient DHC-1 depletion, we first performed ‘long-term’ auxin-mediated depletion, growing adult worms on auxin-containing plates for 4 hr (Figure 1A). We then imaged one-cell-stage mitotic embryos using immunofluorescence (IF) and looked for canonical dynein depletion phenotypes, such as failure to separate centrosomes and improper mitotic spindle positioning (Gönczy et al., 1999; Nguyen-Ngoc et al., 2007; Kiyomitsu and Cheeseman, 2013). After a 4 hr incubation of adult Dynein AID worms on auxin-containing plates, we observed clear defects in centrosome separation and spindle positioning along the A-P axis and dynein was undetectable (22/22 mitotic embryos) (Figure 1B), confirming strong depletion in embryos under conditions where germline and worm development are not affected.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic representation of the Dynein auxin-inducible degron (AID) system for DHC-1 depletion in the C. elegans germ line. Methodologies for all three auxin treatments used in this study are depicted. (B) Immunofluorescence (IF) imaging of one-cell mitotically dividing embryos shows that auxin treatment causes efficient dynein depletion and canonical mitotic spindle defects (n = 22). Shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). (C) IF imaging of oocyte spindles in the Dynein AID strain shows that dynein is localized to the spindle, with increasing enrichment at acentrosomal poles at the anaphase transition; shown are tubulin (green), DNA (blue), dynein (red), and ASPM-1 (not shown in merge). Cortex is represented by the dashed line. (D) Representative images of oocyte spindles (GFP::tubulin and GFP::histone) in germline counting and corresponding quantifications; auxin treatment leads to splayed poles and spindle rotation defects. Cortex is represented by the dashed line. (E) IF imaging of Dynein AID conditions showing effects of 4 hr auxin treatment on metaphase (second row) and anaphase (bottom row); shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). ASPM-1 labeling supports initial observations of splayed poles seen in germline counting. (F) Quantifications of IF imaging shown in (E); meiotic spindles have significantly splayed poles upon auxin treatment. All scale bars = 2.5 µm. Controls for exposure to auxin plates can be found in Figure 1—figure supplement 1. Further experimentation with dynein mislocalization through aspm-1(RNAi) or lin-5(RNAi) can be found in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Representative images of spindles (left side) assessed using germline imaging from a worm strain expressing GFP::tubulin, GFP::histone, and TIR1, but lacking degron-tagged DHC-1 (referred to as TIR1 control). Adult worms were either untreated or left on auxin plates for 4 hr, identical to our long-term Dynein auxin-inducible degron (AID) protocol. Three positions in the germline were analyzed to determine if auxin alone had adverse effects on spindle morphology; we observed no change in spindle phenotypes between control and auxin-treated worms. Cortex is represented by the dashed line. All scale bars = 2.5 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative images of spindles counted in germline imaging from the Dynein AID strain expressing GFP::tubulin and GFP::histone. In both aspm-1(RNAi) and lin-5(RNAi) conditions, splaying of acentrosomal poles can be observed in the +1 position. We also observed improper spindle rotation during anaphase, consistent with prior studies. Quantification of both aspm-1(RNAi) and lin-5(RNAi) revealed a drastic increase in unfocused poles at the +1 position and demonstrated similar ratios of unfocused poles as those seen in Dynein AID germline counting. Cortex is represented by the dashed line. (B) Immunofluorescence (IF) imaging of embryos from Dynein AID worms following either aspm-1(RNAi) or lin-5(RNAi); shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). ASPM-1 labeling further supports splaying of acentrosomal poles. Concurrent dynein depletion (rows 2, 4) does not appear to exacerbate the spindle defects observed in either aspm-1(RNAi) or lin-5(RNAi) alone. All scale bars = 2.5 μm.
+
 To further validate the Dynein AID strain, we assessed the localization of tagged dynein throughout oocyte meiosis and found that the pattern was consistent with previous studies (Figure 1C; Ellefson and McNally, 2009; van der Voet et al., 2009; Ellefson and McNally, 2011; Crowder et al., 2015). Dynein was weakly associated with forming and bipolar spindles with a slight enrichment at acentrosomal poles, labeled by the microtubule minus end marker ASPM-1, and then became strongly enriched at poles during early anaphase; this enrichment decreased by late anaphase, with a population that was retained near the cortex. Live imaging corroborated our fixed imaging (Video 1, n = 3) and also made clearer a population of dynein at kinetochores, as has been shown in other live imaging studies (McNally et al., 2016; Danlasky et al., 2020).
+
+![Video 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-video1.mp4.jpg)
+
+**Video 1.:** Shows an oocyte expressing mCherry::tubulin, dissected into a control Meiosis Medium solution. DHC-1::degron::GFP localization can be seen at spindle poles during metaphase, alongside faint localization to kinetochores. Localization is consistent across all oocytes filmed (n = 3). Time elapsed shown in min:s. Scale bar = 5 μm.
 
 Given this initial validation, we created a Dynein AID strain that also expressed GFP::tubulin and GFP::histone and then assessed the effects of dynein depletion in oocytes by quantifying spindle morphology in intact worms (Figure 1D, Table 1). This ‘germline counting’ method takes advantage of the fact that the C. elegans germline is arranged in a production-line fashion (Wolff et al., 2022). Oocytes are fertilized in the –1 position of the germline, and then oocyte spindles assemble as the newly fertilized embryo moves through the spermatheca and into the +1 position (Wolff et al., 2016). Under control conditions, bipolar oocyte spindles with focused poles are prevalent by the time the embryo reaches the +1 position (Figure 1D; Wolff et al., 2022). However, following 4 hr of auxin treatment, most spindles had splayed poles; a majority of spindles displayed microtubule bundles that did not come together at a single focused point on either side of the chromosomes (84/121, 69.4%), similar to what was observed following depletion of dynactin component DNC-1 in a previous study (Crowder et al., 2015). Imaging of ASPM-1 confirmed this phenotype at a percentage similar to that observed using germline counting (39/54, 72.2%); following a 4 hr auxin treatment, microtubule minus ends lacked coalesced points between the ends of microtubule bundles (Figure 1E and F, Table 2). Moreover, we also saw defects in spindle rotation in anaphase (Figure 1D and E), consistent with previous studies (Ellefson and McNally, 2009; van der Voet et al., 2009; Ellefson and McNally, 2011; Crowder et al., 2015). To confirm that these defects were not caused by nonspecific effects of auxin, we performed germline counting in a ‘TIR1 control’ strain that contained all of the same transgenes but lacked degron-tagged DHC-1. In this strain, there was no significant difference between control and auxin-treated worms at any position in the germline, and all stages of spindle assembly appeared identical (Figure 1—figure supplement 1, Table 3). These findings confirm the prediction that dynein is required for pole focusing during spindle assembly in oocytes and validate the use of the Dynein AID strain to study dynein in oocytes and embryos.
 
-## Delocalization of dynein from spindle poles has similar effects as Dynein AID depletion
+**Table 1.**
+ Exact numbers and percentages from germline counting experiment, to assess effects of dynein depletion on oocyte spindle assembly (corresponds to Figure 1D).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Treatment</th>
+      <th>MT cage</th>
+      <th>Unfocused</th>
+      <th>Focused</th>
+      <th>Anaphase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">–1 position</td>
+      <td>No auxin</td>
+      <td>60/70 (85.7%)</td>
+      <td>10/70 (14.3%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>47/54 (87.0%)</td>
+      <td>7/54 (13.0%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spermatheca</td>
+      <td>No auxin</td>
+      <td>N/A</td>
+      <td>54/60 (90.0%)</td>
+      <td>6/60 (10.0%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>N/A</td>
+      <td>63/66 (95.5%)</td>
+      <td>3/66 (4.5%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">+ 1 position</td>
+      <td>No auxin</td>
+      <td>N/A</td>
+      <td>8/160 (5.0%)</td>
+      <td>97/160 (60.6%)</td>
+      <td>55/160 (34.4%)</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>N/A</td>
+      <td>84/121 (69.4%)</td>
+      <td>8/121 (6.6%)</td>
+      <td>29/121 (24.0%)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Exact numbers and percentages from quantification of IF images, to validate the phenotypes observed in germline counting (corresponds to Figure 1F).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th>Focused poles</th>
+      <th>Unfocused poles</th>
+      <th>Anaphases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No Auxin</td>
+      <td>35/60 (58.3%)</td>
+      <td>3/60 (5.0%)</td>
+      <td>22/60 (36.7%)</td>
+    </tr>
+    <tr>
+      <td>With Auxin</td>
+      <td>3/54 (5.6%)</td>
+      <td>39/54 (72.2%)</td>
+      <td>12/54 (22.2%)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Exact numbers and percentages from germline counting experiment, to assess effects of auxin treatment on oocyte spindle assembly in a strain that does not contain degron-tagged dynein (corresponds to Figure 1—figure supplement 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Treatment</th>
+      <th>MT cage</th>
+      <th>Unfocused</th>
+      <th>Focused</th>
+      <th>Anaphase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">–1 position</td>
+      <td>No auxin</td>
+      <td>135/146 (92.5%)</td>
+      <td>11/146 (7.5%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>137/152 (90.1%)</td>
+      <td>15/152 (9.9%)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spermatheca</td>
+      <td>No auxin</td>
+      <td>N/A</td>
+      <td>204/222 (91.9%)</td>
+      <td>18/222 (8.1%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>N/A</td>
+      <td>226/245 (92.2%)</td>
+      <td>19/245 (7.8%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">+ 1 position</td>
+      <td>No auxin</td>
+      <td>N/A</td>
+      <td>22/452 (4.9%)</td>
+      <td>284/452 (62.8%)</td>
+      <td>146/452 (32.3%)</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>N/A</td>
+      <td>26/435 (6.0%)</td>
+      <td>271/435 (62.3%)</td>
+      <td>138/435 (31.7%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Delocalization of dynein from spindle poles has similar effects as Dynein AID depletion
 
 The fact that dynein normally localizes to acentrosomal poles and depletion caused pole splaying suggests that dynein’s localization is critical to its function in spindle pole formation. To test this hypothesis, we sought to delocalize dynein from poles by depleting two known dynein regulators, ASPM-1 and LIN-5 (NuMA). The MAP NuMA has been shown to direct cytoplasmic dynein to microtubule minus ends to promote pole focusing during mitosis (Elting et al., 2014; Hueschen et al., 2017), and the C. elegans homolog of NuMA, LIN-5, has been shown to target dynein to spindle poles in oocytes to promote spindle rotation (van der Voet et al., 2009). Additionally, ASPM-1 is required to properly target LIN-5 to acentrosomal poles, placing it upstream of both LIN-5 and DHC-1 (van der Voet et al., 2009). Therefore, we depleted either LIN-5 or ASPM-1 and utilized germline counting to compare oocyte spindle morphologies to Dynein AID (Figure 1—figure supplement 2A, Table 4). The frequency of pole splaying was nearly identical between these two RNAi conditions and long-term Dynein AID (167/261, 64%, and 364/521, 69.9%, for the +1 position in lin-5 and aspm-1 RNAi, respectively, compared to 84/121, 69.4% for Dynein AID); this quantification was in agreement with previous observations of spindle morphology following aspm-1(RNAi) or lin-5(RNAi) (van der Voet et al., 2009; Wignall and Villeneuve, 2009; Connolly et al., 2014; Laband et al., 2017).
 
+**Table 4.**
+ Exact numbers and percentages from germline counting experiment, to compare spindle morphologies of lin-5/aspm-1(RNAi) to dynein AID experiments (corresponds to Figure 1—figure supplement 2A).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Condition</th>
+      <th>Focused poles</th>
+      <th>Unfocused poles</th>
+      <th>Anaphases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Spermatheca</td>
+      <td>control (RNAi)</td>
+      <td>7/103 (6.8%)</td>
+      <td>96/103 (93.2%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>lin-5 (RNAi)</td>
+      <td>7/135 (5.2%)</td>
+      <td>128/135 (94.8%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>aspm-1 (RNAi)</td>
+      <td>9/202 (4.5%)</td>
+      <td>193/202 (95.5%)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="3">+ 1 position</td>
+      <td>control (RNAi)</td>
+      <td>124/191 (64.9%)</td>
+      <td>9/191 (4.7%)</td>
+      <td>58/191 (30.4%)</td>
+    </tr>
+    <tr>
+      <td>lin-5 (RNAi)</td>
+      <td>12/261 (4.6%)</td>
+      <td>167/261 (64.0%)</td>
+      <td>82/261 (31.4%)</td>
+    </tr>
+    <tr>
+      <td>aspm-1(RNAi)</td>
+      <td>18/521 (3.5%)</td>
+      <td>364/521 (69.9%)</td>
+      <td>139/521 (26.6%)</td>
+    </tr>
+  </tbody>
+</table>
+
 To determine if the pole splaying observed following LIN-5 and ASPM-1 depletion was mostly a consequence of dynein mislocalization, we combined these RNAi conditions with Dynein AID depletion (Figure 1—figure supplement 2B). Treatment with auxin to remove dynein did not exacerbate the pole defects of either aspm-1(RNAi) or lin-5(RNAi), nor present any new phenotypes that were not present in the RNAi conditions alone, except for removing the kinetochore population of dynein (pole defects were consistent in 37/37 lin-5(RNAi) and 56/56 aspm-1(RNAi) oocyte spindles treated with auxin). These results confirm that dynein’s localization to poles is necessary for its role in pole coalescence during spindle assembly.
 
-## Dynein is required throughout meiosis to maintain focused poles
+### Dynein is required throughout meiosis to maintain focused poles
 
 After corroborating that dynein was required to focus acentrosomal poles during spindle assembly, we next sought to determine whether dynein was required to maintain focused poles by performing more rapid depletion (‘short-term AID,’ Figure 1A). We therefore arrested oocytes in metaphase I to enrich for pre-formed spindles (by depleting anaphase-promoting complex component EMB-30; Furuta et al., 2000), soaked worms in auxin for 25–30 min to deplete dynein, and then performed IF. Under these conditions, nearly all spindles had severely splayed poles (Figure 2A and B); we measured the widths of the spindle equator and the poles and found an approximately 50% increase in the pole to equator ratio upon auxin treatment. Despite this pole splaying, microtubule bundles retained lateral associations with the chromosomes, resulting in a spindle that was still bipolar but more rectangular than wild-type spindles. Notably, we observed these same phenotypes in the absence of emb-30(RNAi), demonstrating that they are not dependent on the metaphase arrest (Figure 2A and B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig2-v3.jpg)
+
+**Figure 2.:** (A) Immunofluorescence (IF) imaging of oocyte spindles in control or metaphase I-arrest (emb-30(RNAi)) conditions; shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). Acentrosomal poles become unfocused upon acute dynein depletion. Scale bars = 2.5 µm. (B) Quantification of the ratio between the width of the spindle equator and the width of the spindle poles shows that addition of auxin causes nearly all spindle poles to unfocus and splay, both with and without the metaphase arrest. Statistical significance between means of pole splaying was determined via a two-tailed t-test for unarrested and arrested conditions, with a p-value of <2.2 × 10–16 for both. Further quantification of changes in spindle length and microtubule minus end distribution upon auxin treatment can be seen in Figure 2—figure supplement 1A and B. (C) Ex utero live imaging of metaphase-arrested spindles; vehicle-treated control oocytes are shown on the left, auxin-treated oocytes are shown on the right. Addition of auxin causes rapid depletion of dynein (labeled with GFP, bottom row) and dynamic splaying of both spindle poles (shown using mCherry::tubulin, top row; arrowheads). Time elapsed shown in min:s. Scale bars = 5 µm. (D) Ex utero live imaging of metaphase-arrested spindles, shown using GFP::tubulin and GFP::histone; addition of auxin (bottom row) causes dynamic splaying of poles (arrowheads) but does not grossly disrupt chromosome alignment; vehicle-treated control oocytes are shown on the top row. Time elapsed shown in min:s. Scale bars = 5 µm. Controls for effects of auxin alone in ex utero imaging can be seen in Figure 2—figure supplement 2. Additional ex utero imaging of unarrested oocytes treated with auxin can be seen in Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Representative immunofluorescence (IF) images showing the phenotype of acute dynein depletion from control spindles (A) or metaphase-arrested (emb-30(RNAi)) spindles (B) in Dynein auxin-inducible degron (AID) worms; shown are microtubules (green), DNA (blue), and ASPM-1 (red). Dashed rectangles represent ROI used for linescan measurements (4 μm tall × 12 or 14 μm wide). Quantifications of fluorescence intensity across the length of the spindle demonstrate that dynein depletion leads to considerably more uniform and dispersed ASPM-1 localization. All images used for linescan analysis were also measured for pole-to-pole spindle length, and these measurements were plotted in corresponding boxplots (boxes represent first quartile, median, and third quartile). Upon addition of auxin, the spindle is significantly longer. All scale bars = 2.5 μm. Statistical significance between means of spindle length was determined via a two-tailed t-test for unarrested and arrested conditions, with a p-value of <2.2 × 10–16 for both.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative timelapses of metaphase-arrested spindles in oocytes expressing GFP::tubulin, GFP::histone, TIR1, but lacking degron-tagged DHC-1 (referred to as TIR1 control). Oocytes were treated to the same ex utero live imaging protocol used in our acute Dynein auxin-inducible degron (AID) experiments and dissected into either control Meiosis Medium or Meiosis Medium containing auxin. The addition of auxin alone does not appear to have any effect on spindle morphology or organization. Time elapsed shown in min:s. Scale bars = 5 µm. (B) Quantifications of spindle length in timelapses shown in (A); both individual traces and average change of spindle length are displayed. No significant change in spindle length was observed between control and auxin-treated oocytes. For average change plots, shaded area represents the standard deviation between timelapses in that condition. (C) Quantifications of pole splaying ratio (r) in timelapses shown in (A); both individual traces and average change of pole splaying ratio are displayed. No significant change in this ratio was observed between control and auxin-treated oocytes. For average change plots, shaded area represents the standard deviation between timelapses in that condition.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Repeats of ex utero live imaging in Figure 2D, but with unarrested oocytes (two examples per condition). Splaying of spindle poles (arrowheads) is identical to splaying observed in metaphase-arrested spindles (Figure 2C and D). We also observed spindle rotation defects and lagging chromosomes in anaphase, consistent with prior studies. Time elapsed shown in min:s. t = 0 is defined as the start of meiosis II; oocytes where the first polar body had been extruded but where the meiosis II spindle had not yet formed were selected for imaging. Scale bars = 5 µm.
 
 During this analysis, we also noticed that while ASPM-1 remained localized to dynein-depleted poles it appeared more dispersed throughout the spindle; this suggests a decrease in poleward transport of microtubule minus ends, as has been reported in dynein-depleted mitotic spindles (Hueschen et al., 2017). To quantify this phenotype, we performed linescans to measure ASPM-1 levels across the spindle. While ASPM-1 localizes to two major peaks that define the poles of wild-type spindles, it was more diffusely localized across the entire length of the spindle following dynein depletion (Figure 2—figure supplement 1). Moreover, we also measured the pole-to-pole lengths of these spindles and found that both unarrested and metaphase-arrested spindles were significantly longer (~3.5 μm) after short-term Dynein AID depletion (Figure 2—figure supplement 1). These data suggest that dynein not only promotes focusing of microtubule minus ends into discrete poles, but also provides an inward force that maintains spindle length.
 
 To confirm these results and to assess the dynamics of pole splaying, we coupled rapid dynein depletion with live imaging by dissecting metaphase-arrested oocytes directly into auxin solution and then immediately filming (‘acute AID’; Figure 1A). We generated a Dynein AID strain expressing mCherry::tubulin so that we could visualize the spindle while dynein, tagged with GFP, was being depleted. In the absence of auxin, there was no noticeable change in dynein localization or brightness throughout the imaging time frame (Figure 2C, Video 2, n = 4). In contrast, when oocytes were dissected into auxin, dynein appeared depleted from meiotic spindles within roughly 3 min and acentrosomal poles began to splay (Figure 2C, Video 3, n = 4). Splaying occurred at both poles (Figure 2C, arrowheads) and spindle length increased over time. To visualize the movement and alignment of chromosomes during this process, we repeated this experiment in our GFP::tubulin and GFP::histone Dynein AID strain (Figure 2D, Video 4, n = 7). As before, metaphase-arrested spindles were quickly disrupted upon dissection into auxin solution (Video 5, n = 8); poles began to splay (Figure 2D, arrowheads) and spindles again lengthened. Despite these changes, microtubule bundles were able to remain associated with chromosomes and the spindles maintained bipolarity.
 
+![Video 2.](https://cdn.elifesciences.org/articles/72872/elife-72872-video2.mp4.jpg)
+
+**Video 2.:** Shows a metaphase-arrested (emb-30(RNAi)) oocyte expressing mCherry::tubulin (top), dissected into control Meiosis Medium solution. DHC-1::degron::GFP (bottom) is clearly localized to spindle poles and faintly seen at kinetochores and spindle morphology does not change during the imaging timeframe in the absence of auxin. Corresponds to Figure 2C. Results are consistent across all oocytes filmed (n = 4). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/72872/elife-72872-video3.mp4.jpg)
+
+**Video 3.:** Shows a metaphase-arrested (emb-30(RNAi)) oocyte expressing mCherry::tubulin (top), dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. Once dissected into auxin solution, rapid depletion of DHC-1::degron::GFP (bottom) is evident within 3 min, at which point spindle poles begin to unfocus and splay apart. Corresponds to Figure 2C. Phenotypes are consistent across all oocytes filmed (n = 4). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/72872/elife-72872-video4.mp4.jpg)
+
+**Video 4.:** Shows a metaphase-arrested oocyte expressing GFP::tubulin and GFP::histone in the Dynein AID strain (where DHC-1 is degron-tagged and TIR1 is expressed in the germ line), dissected into control Meiosis Medium solution. No major changes in spindle length or shape occur, and chromosomes are stably aligned in the spindle center. Corresponds to Figure 2D. Phenotypes are consistent across all oocytes filmed (n = 7). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/72872/elife-72872-video5.mp4.jpg)
+
+**Video 5.:** Shows a metaphase-arrested oocyte expressing GFP::tubulin and GFP::histone in the Dynein AID strain (where DHC-1 is degron-tagged and TIR1 is expressed in the germ line), dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. Upon dissection into auxin solution, rapid and dynamic splaying of acentrosomal poles occurs alongside a notable increase in spindle length, but microtubule bundles and chromosomes stay associated and aligned along a single axis. Corresponds to Figure 2D. Phenotypes are consistent across all oocytes filmed (n = 8). Time elapsed shown in min:s. Scale bar = 5 μm.
+
 To ensure that these phenotypes were not caused by auxin itself having nonspecific effects on dissected oocytes, we performed analogous live imaging experiments in our TIR1 control strain (lacking degron-tagged DHC-1) to assess the effects of auxin treatment in the absence of dynein depletion. Neither untreated nor auxin-treated oocytes exhibited significant changes to either spindle length or pole to equator ratio (n = 5 for each condition); we compared both individual traces and average change from baseline for both of these parameters (Figure 2—figure supplement 2, Videos 6 and 7). Additionally, we repeated these experiments without emb-30(RNAi) and saw the same pole defects in the absence of the metaphase arrest (Figure 2—figure supplement 3, Videos 8–11). These auxin-treated oocytes progressed through anaphase despite pole splaying, albeit with lagging chromosomes, as has been observed previously following dynein depletion (Muscat et al., 2015; McNally et al., 2016). Moreover, there were defects in spindle rotation (n = 9), consistent with prior studies (Ellefson and McNally, 2009; van der Voet et al., 2009; Ellefson and McNally, 2011; Crowder et al., 2015). Altogether, these data demonstrate that dynein is not only required to focus poles during meiotic spindle assembly, but is also required to maintain the integrity of acentrosomal poles once they have been established.
 
-## Removal of dynein from monopolar spindles causes catastrophic breakdown of spindle architecture
+![Video 6.](https://cdn.elifesciences.org/articles/72872/elife-72872-video6.mp4.jpg)
+
+**Video 6.:** Shows a metaphase-arrested oocyte expressing GFP::tubulin and GFP::histone in the TIR1 control strain (that contains TIR1 but lacks a degron tag on DHC-1). Dissection into control Meiosis Medium yields no significant change in spindle length or organization. Notably, the spindle appears identical to those observed in control oocytes containing GFP-tagged DHC-1. Corresponds to Figure 2—figure supplement 2A. Phenotypes are consistent across all oocytes filmed (n = 5). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/72872/elife-72872-video7.mp4.jpg)
+
+**Video 7.:** Shows a metaphase-arrested oocyte expressing GFP::tubulin and GFP::histone in the TIR1 control strain (that contains TIR1 but lacks a degron tag on DHC-1). Dissection into Meiosis Medium containing 100 μM auxin yields no significant change in spindle length or organization, demonstrating that auxin addition itself is not responsible for phenotypes observed in our acute Dynein auxin-inducible degron (AID) imaging. Corresponds to Figure 2—figure supplement 2A. Phenotypes are consistent across all oocytes filmed (n = 5). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 8.](https://cdn.elifesciences.org/articles/72872/elife-72872-video8.mp4.jpg)
+
+**Video 8.:** Shows an unarrested oocyte expressing GFP::tubulin and GFP::histone, dissected into control Meiosis Medium solution. After one round of segregation, a second bipolar spindle is formed, rotates perpendicular to the cortex, and successfully extrudes a second polar body. Corresponds to the movie in row 1 of Figure 2—figure supplement 3. Phenotypes are consistent across all oocytes filmed (n = 8). t = 0 is set to onset of meiosis II. Time elapsed shown in min:s. Scale bar = 5μm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/72872/elife-72872-video9.mp4.jpg)
+
+**Video 9.:** Another example of an unarrested oocyte expressing GFP::tubulin and GFP::histone, dissected into control Meiosis Medium solution. After one round of segregation, a second bipolar spindle is formed, rotates perpendicular to the cortex, and successfully extrudes a second polar body. Corresponds to the movie in row 2 of Figure 2—figure supplement 3. Phenotypes are consistent across all oocytes filmed (n = 8). t = 0 is set to onset of meiosis II. Time elapsed shown in (min):(sec). Scale bar = 5 μm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/72872/elife-72872-video10.mp4.jpg)
+
+**Video 10.:** Shows an unarrested oocyte expressing GFP::tubulin and GFP::histone, dissected into Meiosis Medium containing 100μM auxin to deplete dynein. A spindle tries to form in the absence of dynein, leading to dynamic and unfocused poles. Anaphase segregation still occurs, albeit with a failure in spindle rotation. Corresponds to the movie in row 3 of Figure 2—figure supplement 3. Phenotypes are consistent across all oocytes filmed (n = 9). t = 0 is set to onset of meiosis II. Time elapsed shown in min:s. Scale bar = 5μm.
+
+![Video 11.](https://cdn.elifesciences.org/articles/72872/elife-72872-video11.mp4.jpg)
+
+**Video 11.:** Another example of an unarrested oocyte expressing GFP::tubulin and GFP::histone, dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. A spindle tries to form in the absence of dynein, leading to dynamic and unfocused poles. Anaphase segregation still occurs, albeit with a failure in spindle rotation. Corresponds to the movie in row 4 of Figure 2—figure supplement 3. Phenotypes are consistent across all oocytes filmed (n = 9). t = 0 is set to onset of meiosis II. Time elapsed shown in (min):(sec). Scale bar = 5 μm
+
+### Removal of dynein from monopolar spindles causes catastrophic breakdown of spindle architecture
 
 Despite the pole splaying observed following dynein depletion, spindle microtubules remained aligned along the same axis and bipolarity was not lost. Therefore, we hypothesized that microtubule bundles in the central region imparted stability to the entire spindle. To test this directly, we sought to deplete dynein from a monopolar spindle, generated by depleting the kinesin-12 motor KLP-18; these structures have a single focused pole and therefore no area of microtubule overlap that could theoretically stabilize the structure if the single pole is disrupted (Wignall and Villeneuve, 2009). Previously, we found that partial dynein RNAi on a monopolar spindle led to chromosomes moving a substantial distance away from the center of intact monopoles (Muscat et al., 2015); the AID approach now allows us to revisit these results without limiting the amount of dynein depletion to avoid developmental defects.
 
@@ -66,25 +351,77 @@ First, we performed long-term Dynein AID in worms treated with klp-18(RNAi) and 
 
 **Figure 3.:** (A) Representative images of klp-18(RNAi) oocyte spindles (GFP::tubulin and GFP::histone) in germline counting and corresponding quantifications; dynein depletion leads to dissolution of monopoles, releasing chromosomes with associated microtubule bundles into the cytoplasm. Scale bars = 2.5 μm (B) Immunofluorescence (IF) imaging of monopole breakdown after dynein depletion; shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). Chromosomes released into the cytoplasm retain lateral microtubule associations (zooms). Scale bars = 2.5 μm; note that the +Auxin images are zoomed out more since chromosomes are more dispersed following monopole breakdown and a larger region needed to be imaged.
 
+**Table 5.**
+ Exact numbers and percentages from germline counting experiment, to assess effects of dynein depletion on monopolar spindles (corresponds to Figure 3A).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Treatment</th>
+      <th>Monopolar</th>
+      <th>Breakdown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">klp-18 (RNAi)</td>
+      <td>No auxin</td>
+      <td>119/119 (100.0%)</td>
+      <td>0/119 (0.0%)</td>
+    </tr>
+    <tr>
+      <td>With auxin</td>
+      <td>9/125 (7.2%)</td>
+      <td>116/125 (92.8%)</td>
+    </tr>
+  </tbody>
+</table>
+
 We observed the same phenotype using acute dynein depletion coupled with live ex utero imaging; when oocytes containing monopolar spindles were dissected into auxin, we observed rapid breakdown of the monopole on a timescale similar to that required for dynein depletion from bipolar spindles (Figure 4A and B, Video 12 and Video 13, n = 5). As the monopolar spindle began to fragment, microtubule bundles remained associated with individual chromosomes via lateral associations (Figure 4A, arrowheads), as seen in fixed imaging (Figure 3B). These results demonstrate an essential role for dynein in maintaining pole integrity and suggest that in the case of dynein depletion from bipolar spindles the intact overlap zone stabilizes the spindle even though poles are completely disrupted.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig4-v3.jpg)
 
-**Figure 4.:** (A) Ex utero live imaging of oocytes expressing GFP::tubulin and GFP::histone in control and klp-18(RNAi) conditions. In the control (top row), a monopolar spindle forms and then chromosomes move back towards the monopole in anaphase, as previously described (Muscat et al., 2015). Addition of auxin to acutely deplete dynein (row 2) leads to rapid breakdown of monopolar spindles. Intriguingly, individualized chromosomes undergo an anaphase-like segregation post-breakdown (zooms, row 3). Microtubule bundles remain laterally associated with chromosomes (arrowheads) prior to anaphase-like segregation. Time elapsed shown in min:s. Scale bars = 5 µm. (B) Another example of acute auxin treatment, to remove dynein, from an oocyte expressing GFP::tubulin and GFP::histone in klp-18(RNAi) conditions; after breakdown of the monopole and reorganization of microtubules (arrowheads), individual chromosomes are able to undergo synchronized anaphase-like segregation. Time elapsed shown in min:s. Scale bars = 5 µm. (C) Quantification of timelapses from control anaphases (the Dynein auxin-inducible degron [AID] strain without auxin), anaphases following dynein depletion (the Dynein AID strain with auxin), and miniature anaphases. Each timelapse was synchronized to initiation of anaphase A, and the distance between the center of each chromosome was measured at each 15 s timepoint. For each condition, the number of timelapses used is represented by n, and the shaded area around each average line represents the SEM. Note that for the mini anaphase condition, though we used five movies, we measured multiple mini anaphases in each (total anaphases = 35). Miniature anaphases do not exhibit significant differences in segregation rates or distances to wild-type anaphase spindles, but do not reach distances of dynein depletions alone.Figure 4—source data 1.Figure 4C is provided.The chromosome segregation distances (in μm) for each timepoint are shown for control spindles (control(RNAi) without auxin), dynein-depleted spindles (control(RNAi) with auxin), and mini spindles (klp-18(RNAi) with auxin). The compiled data is in the first tab, and raw data for each condition is listed in separate tabs.
+**Figure 4.:** (A) Ex utero live imaging of oocytes expressing GFP::tubulin and GFP::histone in control and klp-18(RNAi) conditions. In the control (top row), a monopolar spindle forms and then chromosomes move back towards the monopole in anaphase, as previously described (Muscat et al., 2015). Addition of auxin to acutely deplete dynein (row 2) leads to rapid breakdown of monopolar spindles. Intriguingly, individualized chromosomes undergo an anaphase-like segregation post-breakdown (zooms, row 3). Microtubule bundles remain laterally associated with chromosomes (arrowheads) prior to anaphase-like segregation. Time elapsed shown in min:s. Scale bars = 5 µm. (B) Another example of acute auxin treatment, to remove dynein, from an oocyte expressing GFP::tubulin and GFP::histone in klp-18(RNAi) conditions; after breakdown of the monopole and reorganization of microtubules (arrowheads), individual chromosomes are able to undergo synchronized anaphase-like segregation. Time elapsed shown in min:s. Scale bars = 5 µm. (C) Quantification of timelapses from control anaphases (the Dynein auxin-inducible degron [AID] strain without auxin), anaphases following dynein depletion (the Dynein AID strain with auxin), and miniature anaphases. Each timelapse was synchronized to initiation of anaphase A, and the distance between the center of each chromosome was measured at each 15 s timepoint. For each condition, the number of timelapses used is represented by n, and the shaded area around each average line represents the SEM. Note that for the mini anaphase condition, though we used five movies, we measured multiple mini anaphases in each (total anaphases = 35). Miniature anaphases do not exhibit significant differences in segregation rates or distances to wild-type anaphase spindles, but do not reach distances of dynein depletions alone.
 
-## Individualized chromosomes can undergo an anaphase-like segregation in the absence of KLP-18 and dynein
+![Video 12.](https://cdn.elifesciences.org/articles/72872/elife-72872-video12.mp4.jpg)
+
+**Video 12.:** Shown is an oocyte from the Dynein AID strain expressing GFP::tubulin and GFP::histone following klp-18(RNAi) to generate monopolar spindles, dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. Upon dissection into auxin solution, the monopole quickly dissolves, leading to ejection of individual chromosomes (with laterally associated microtubule bundles) into the cytoplasm, followed by a synchronous anaphase-like segregation event. Corresponds to Figure 4A. Phenotypes are consistent across all oocytes filmed (n = 5). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 13.](https://cdn.elifesciences.org/articles/72872/elife-72872-video13.mp4.jpg)
+
+**Video 13.:** Another example of a Dynein AID oocyte expressing GFP::tubulin and GFP::histone following klp-18(RNAi), dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. In this example, reorganization of local microtubule bundles around individual chromosomes can be observed after breakdown of the monopolar spindle. Shortly after reorganization of these microtubules, anaphase-like segregation occurs synchronously across all chromosomes. Corresponds to Figure 4B. Phenotypes are consistent across all oocytes filmed (n = 5). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+### Individualized chromosomes can undergo an anaphase-like segregation in the absence of KLP-18 and dynein
 
 In addition to demonstrating the dynamics of monopole breakdown, our live imaging of acute dynein depletion from monopolar spindles revealed an intriguing phenotype. These experiments were not done using metaphase arrest, so in the absence of auxin, chromosomes extended outward from the monopole towards microtubule plus ends, and then moved back towards the monopole during anaphase (Figure 4A, Video 14, n = 6), as has been described previously (Muscat et al., 2015). In auxin-treated oocytes, as filming continued past the full breakdown of the monopole, we were surprised to see that each individual chromosome began to segregate (Figure 4A and B, Videos 12 and 13, n = 5). This segregation was incredibly striking as it occurred synchronously across the oocyte and each set of separating chromosomes exhibited distinct bidirectional movement, reminiscent of normal chromosome segregation. The fact that we observed these anaphase-like movements in the absence of both KLP-18 and dynein suggests that neither motor is absolutely required for chromosome segregation in oocytes.
+
+![Video 14.](https://cdn.elifesciences.org/articles/72872/elife-72872-video14.mp4.jpg)
+
+**Video 14.:** Shows an oocyte expressing GFP::tubulin and GFP::histone following klp-18(RNAi), dissected into a Meiosis Medium control solution. Chromosomes extend outward towards microtubule plus ends forming a monopolar spindle during metaphase, but retract towards the minus ends during anaphase. Corresponds to Figure 4A. Phenotypes are consistent across all oocytes filmed (n = 6). Time elapsed shown in min:s. Scale bar = 5 μm.
 
 To assess whether these segregations were similar to normal anaphases, we first quantified the segregation distances of individual chromosomes and compared them to both wild-type and dynein-depleted anaphases (Figure 4C). Chromosomes on dynein-depleted klp-18(RNAi) mini anaphase spindles segregated to a similar final distance as wild-type spindles (~5 µm for both wild-type and mini anaphases). However, mini anaphases did not appear to segregate as far as dynein-depleted bipolar anaphases, where KLP-18 was not depleted (~6.5 µm). This observation raises the possibility that, even though chromosomes can segregate without KLP-18, this motor may normally contribute to anaphase spindle elongation through microtubule sliding. This contribution has been difficult to test in previous studies due to the monopolar spindle phenotype that is quickly generated upon removal of KLP-18 (Wolff et al., 2021), which prevents normal anaphase segregation from occurring.
 
 To further characterize these segregations, we performed fixed imaging to generate higher-resolution images. This analysis revealed that the mini anaphases have key hallmarks of normal anaphase spindles; when chromosomes were still close together, we observed lateral microtubule bundles running alongside the separating chromosomes (Figure 5, ‘early anaphase’), and as chromosomes segregated further and spindle length increased, microtubules were largely localized between chromosomes (Figure 5, ‘late anaphase’). This suggests that, like normal anaphase spindles, these mini spindles undergo morphological changes and anaphase-B-like spindle elongation as they drive chromosomes apart.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig5-v3.jpg)
+
+**Figure 5.:** Immunofluorescence (IF) imaging of miniature anaphases at multiple chromosome segregation distances, representing various stages of anaphase; shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). For each stage, a zoomed-out view is shown (top row), as well as a zoom of particular mini anaphase spindles (bottom row). Segregation events closely resemble different stages of anaphase A and anaphase B. Scale bars = 2.5 µm. Further characterization of miniature anaphases via localization of SUMO and separase can be found in Figure 5—figure supplement 1 and Figure 5—figure supplement 2, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Immunofluorescence (IF) imaging of oocytes from control and klp-18(RNAi) conditions; shown are tubulin (green), DNA (blue), SUMO (red), and ASPM-1 (not shown in merge). SUMO is localized to a ring complex that forms around chromosomes and then is released from chromosomes in anaphase in the presence or absence of dynein (rows 1–4; 25/25 metaphases, 22/22 anaphases). SUMO remains localized to the ring complex before and after monopole breakdown (rows 5, 6; 18/18 monopoles, 13/13 breakdowns) and can clearly be seen localized between separating chromosomes in miniature anaphases (row 7; 15/15 mini anaphases). Cortex is represented by the dashed line. Scale bars = 2.5 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Immunofluorescence (IF) imaging of oocytes in klp-18(RNAi) conditions; shown are tubulin (green), DNA (blue), separase (SEP-1) (red), and dynein (not shown in merge). After monopolar breakdown, separase can be seen localized to kinetochores (rows 1 and 2; 46/46 breakdowns); this localization changes to the ring complex at the initiation of anaphase (rows 3 and 4; 22/22 early anaphases). In later stages of anaphase in these miniature spindles, separase localization is no longer apparent (rows 5 and 6; 13/13 late anaphases). These localization patterns are identical to the localization of separase in metaphase and anaphase of wild-type oocytes. Scale bars = 2.5 µm.
+
 Additionally, we used fixed imaging to assess the localization of other proteins that are present during normal anaphase. First, we imaged the ring complex (RC), a collection of proteins that forms a ring around the center of each chromosome in oocytes. RCs aid in chromosome congression (Wignall and Villeneuve, 2009; Muscat et al., 2015; Pelisch et al., 2017; Hollis et al., 2020) and then are released from chromosomes during anaphase; they remain as a ring between segregating chromosomes and then are disassembled as anaphase progresses (Dumont et al., 2010; Muscat et al., 2015; Davis-Roca et al., 2017; Pelisch et al., 2017; Davis-Roca et al., 2018; Pelisch et al., 2019). To assess RC behavior, we imaged SUMO, a post-translational modification found in the RC (Pelisch et al., 2017). In control and dynein depletion conditions, SUMO-marked RCs were removed from chromosomes during anaphase and remained between segregating chromosomes, as expected (Figure 5—figure supplement 1). During monopolar spindle breakdown, SUMO localized to RCs as individual chromosomes detached from the dissolving monopole. In mini anaphases, SUMO marked a singular disassembling RC between each segregating chromosome pair (93/93 oocytes observed), congruent with the normal behavior of RCs in anaphase.
 
 Next, we assessed SEP-1 (separase), a protease that cleaves a component of the cohesin complex, enabling homologous chromosomes (meiosis I) and sister chromatids (meiosis II) to separate (Siomos et al., 2001; Kudo et al., 2006). During wild-type meiosis, SEP-1 localizes to kinetochores in metaphase and relocalizes to RCs at anaphase onset; by the end of anaphase, SEP-1 is no longer detectable on the anaphase spindle (Muscat et al., 2015; Davis-Roca et al., 2017). We observed this same pattern when assessing monopolar breakdowns following klp-18(RNAi) and short-term Dynein AID. After monopole breakdown, SEP-1 relocalized from kinetochores to RCs, and then was absent from each mini spindle in late anaphase (81/81 oocytes observed) (Figure 5—figure supplement 2). Taken together, these data demonstrate that miniature spindles recapitulate the key aspects of normal anaphase progression.
 
-## Microtubules can reorganize into mini bipolar spindles in the absence of dynein and KLP-18
+### Microtubules can reorganize into mini bipolar spindles in the absence of dynein and KLP-18
 
 The fact that we observed chromosome segregation with hallmarks of normal anaphase led us to hypothesize that some local microtubule reorganization must be occurring after monopole breakdown; without a bipolar distribution of microtubule minus ends, it should not be possible for chromosomes to move away from each other in the manner we observed. Therefore, while all microtubule minus ends are together in the monopole before dynein depletion, we speculated that these microtubules may reorganize into a bipolar structure around each chromosome following monopole breakdown. In order to better characterize this possible reorganization, we assessed the localization of ASPM-1 as a marker of microtubule minus ends. On a few occasions (n = 3 oocytes), we were able to capture what appeared to be a transitional period, indicating that reorganization was occurring; ASPM-1 could be seen on both sides of these mini spindles, with minor enrichment towards areas resembling spindle poles (Figure 6A). Note that while ASPM-1 also appeared to localize on chromosomes in these experiments, this has been previously shown to be nonspecific cross-reactivity of this particular antibody (Wignall and Villeneuve, 2009).
 
@@ -94,27 +431,74 @@ The fact that we observed chromosome segregation with hallmarks of normal anapha
 
 This imaging suggested that microtubules might reorganize into a mini bipolar spindle with overlapping antiparallel microtubules in the center, which could facilitate chromosome segregation. To test this idea, we assessed the localization of a well-studied spindle protein, the PRC1 homolog SPD-1. SPD-1 localizes to the anaphase spindle midzone in oocytes, marking a region of antiparallel microtubule overlap (Hattersley et al., 2016; Gigant et al., 2017; Mullen et al., 2017; Figure 6B, row 2), and we found that SPD-1 was also at this location in the absence of dynein (Figure 6B, row 4). In intact and disassembling monopoles, SPD-1 was not localized to microtubules as it only associates with the spindle in anaphase. However, once chromosomes had been ejected into the cytoplasm, SPD-1 could be clearly observed between segregating chromosomes (Figure 6B, bottom row, 122/122 oocytes observed), demonstrating that the mini anaphase spindles have a region of antiparallel microtubule overlap in the center.
 
-## The kinesin-5 family motor BMK-1 provides an outward sorting force that allows spindle reorganization in the absence of KLP-18 and dynein
+### The kinesin-5 family motor BMK-1 provides an outward sorting force that allows spindle reorganization in the absence of KLP-18 and dynein
 
 Our discovery that microtubules were able to reorganize around dispersed chromosomes and establish a region of antiparallel overlap at the center of each mini spindle suggested the presence of an activity that can sort microtubules and re-establish bipolarity in the absence of KLP-18 and dynein. We saw this condition as a unique opportunity to probe for redundant motor forces that may be present in a normal meiotic spindle, but would otherwise be masked by the presence of the forces provided by KLP-18 and dynein. One strong candidate was the sole kinesin-5 family motor in C. elegans, BMK-1 (Bishop et al., 2005). Kinesin-5 motors have essential roles in establishing spindle bipolarity in many organisms (reviewed in Mann and Wadsworth, 2019), but loss of BMK-1 has not been reported to have major phenotypes in C. elegans; BMK-1 depletion has no effects on spindle morphology in either oocytes or embryos (Bishop et al., 2005) and only minor effects on chromosome segregation rates (Saunders et al., 2007; Laband et al., 2017). We therefore hypothesized that BMK-1 could be providing a supplementary outward sorting force that is normally masked by the contributions of KLP-18.
 
 To probe this hypothesis, we first sought to confirm the localization of BMK-1 on meiotic spindles and to test if this motor was localized to microtubules under monopole breakdown conditions. BMK-1 was broadly associated with bipolar metaphase and anaphase spindles in both control and dynein-depletion conditions (Figure 7A). In intact monopolar spindles, BMK-1 also localized to microtubules. Importantly, when we depleted dynein and induced monopole breakdown, BMK-1 still localized to microtubules (Figure 7A, zooms), placing it in a location where it could contribute to microtubule reorganization (150/150 oocytes observed).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig7-v3.jpg)
+
+**Figure 7.:** (A) Immunofluorescence (IF) imaging of oocytes in either control or klp-18(RNAi) conditions in the Dynein auxin-inducible degron (AID) strain in the presence and absence of short-term auxin treatment; shown are tubulin (green), DNA (blue), BMK-1 (red), and dynein (not shown in merge). BMK-1 is localized to spindle microtubules in all conditions (52/52 metaphases, 43/43 anaphases), including following monopolar spindle breakdown (40/40 monopoles and breakdowns) and in mini anaphases (15/15 mini anaphases). Cortex is represented by the dashed line. Scale bars = 2.5 µm. (B) IF imaging of embryos following klp-18(RNAi) in the Dynein AID strain lacking functional BMK-1 (bmk-1(ok391)); shown are tubulin (green), DNA (blue), ASPM-1 (red), and dynein (not shown in merge). Following monopolar spindle breakdown in the presence of auxin (rows 2, 3), embryos do not contain miniature anaphases and lack chromosome segregation. Scale bars = 2.5 µm. (C) Quantifications of images shown in (B) compared to wild-type (WT) embryos; monopolar spindles still break down, but no miniature anaphases are observed in embryos lacking BMK-1 function. (D) Ex utero live imaging of GFP::tubulin and GFP::histone following acute auxin treatment to remove dynein in klp-18(RNAi); bmk-1(syb3914) conditions; miniature anaphases do not form in the absence of BMK-1. Time elapsed shown in min:s. Scale bars = 5 µm. Validation of bmk-1 mutants via IF imaging can be seen in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** IF imaging of embryos containing either the bmk-1(ok391) deletion allele (A) or the bmk-1(syb3914) deletion allele (B); shown are tubulin (green), DNA (blue), BMK-1 (red), and dynein (not shown in merge). No BMK-1 localization can be observed in either mutant in control(RNAi) or klp-18(RNAi) conditions in the presence or absence of auxin. Cortex is represented by dashed line. Scale bars = 2.5 μm.
+
 To test if BMK-1 was necessary for the formation of miniature anaphases, we utilized two bmk-1 mutants: (1) a previously characterized allele, bmk-1(ok391), that introduces a premature stop codon in the motor domain (Bishop et al., 2005), and (2) a new deletion of the entire bmk-1 locus generated using CRISPR-Cas9 (bmk-1(syb3914)). To validate these deletions, we utilized IF imaging with an α-BMK-1 antibody and confirmed that BMK-1 was no longer present on the meiotic spindle in either mutant (no BMK-1 staining in 71/71 oocytes observed) (Figure 7—figure supplement 1). We then generated monopolar spindles, performed short-term Dynein AID, and performed IF in the bmk-1(ok391) background. Under these conditions, we were unable to observe any mini anaphase spindles (0/164 oocytes), even though monopole breakdown still occurred (Figure 7B and C, Table 6). This suggested that removal of BMK-1 function abolished microtubule reorganization and prevented chromosome segregation. To confirm this result, we generated a version of our Dynein AID live imaging strain (expressing GFP::tubulin and GFP::histone to visualize the spindle) containing the bmk-1(syb3914) deletion and performed acute dynein depletion coupled with ex utero imaging to determine if mini anaphases could still form. In klp-18(RNAi), bmk-1(syb3914) worms in the absence of auxin, monopolar spindles formed and then chromosomes moved back towards the pole in a manner indistinguishable from normal monopolar anaphase (Video 15, n = 4). When auxin was added to deplete dynein, monopolar spindles broke down as expected and individual chromosomes remained associated with microtubule bundles. However, as time elapsed, there were no signs of segregation, microtubule density decreased, and chromosomes remained in the cytoplasm with no discernible anaphase spindles forming (Figure 7D, Video 16, n = 3). These data support the hypothesis that BMK-1 provides outward sorting force on microtubules during oocyte meiosis, redundant to the forces produced by KLP-18.
+
+**Table 6.**
+ Exact numbers and percentages from quantification of IF images, to determine if the removal of functional BMK-1 prevents the formation of miniature anaphases in KLP-18/dynein-depleted oocytes (corresponds to Figure 7C).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Treatment</th>
+      <th>Breakdown</th>
+      <th>Mini anaphases</th>
+      <th>No segregation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">klp-18 (RNAi)</td>
+      <td>bmk-1 (WT)</td>
+      <td>82/130 (63.1%)</td>
+      <td>43/130 (33.1%)</td>
+      <td>5/130 (3.8%)</td>
+    </tr>
+    <tr>
+      <td>bmk-1 (ok391)</td>
+      <td>111/164 (67.7%)</td>
+      <td>0/164 (0.0%)</td>
+      <td>53/164 (32.3%)</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 15.](https://cdn.elifesciences.org/articles/72872/elife-72872-video15.mp4.jpg)
+
+**Video 15.:** Shows a Dynein AID; bmk-1(syb3914) oocyte expressing GFP::tubulin and GFP::histone following klp-18(RNAi) to generate monopolar spindles, dissected into control Meiosis Medium solution. Without functional BMK-1 or KLP-18, monopolar spindles can form and monopolar anaphase still occurs, with chromosomes moving outwards in metaphase and back towards the monopole in anaphase. Phenotypes are consistent across all oocytes filmed (n = 4). Time elapsed shown in min:s. Scale bar = 5 μm.
+
+![Video 16.](https://cdn.elifesciences.org/articles/72872/elife-72872-video16.mp4.jpg)
+
+**Video 16.:** Shows a Dynein AID; bmk-1(syb3914) oocyte expressing GFP::tubulin and GFP::histone following klp-18(RNAi) dissected into Meiosis Medium containing 100 μM auxin to deplete dynein. Without functional BMK-1, formation of miniature bipolar anaphases does not occur after the breakdown of the monopolar spindle. Corresponds to Figure 6D. Phenotypes are consistent across all oocytes filmed (n = 3). Time elapsed shown in min:s. Scale bar = 5 μm.
 
 ## Discussion
 
-## Contributions of dynein to oocyte meiosis
+### Contributions of dynein to oocyte meiosis
 
 Collectively, these data have contributed to a more complete model for how acentrosomal spindles are assembled and stabilized during oocyte meiosis (Figure 8). Dynein activity is required throughout the meiotic divisions to establish and maintain focused poles, and its removal via acute AID generated spindle defects within minutes. Dynein depletion increased the length of bipolar oocyte spindles and led to increased dispersion of microtubule minus ends across the spindle. When performing these depletions on a monopolar spindle, the monopole completely broke apart and microtubule bundles were ejected into the cytoplasm. Together, these findings demonstrate that dynein is required to stitch minus ends together into a stable pole structure.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/72872/elife-72872-fig8-v3.jpg)
 
-**Figure 8.:** C. elegans oocyte meiosis.Chromosomes (blue), microtubules (green), and microtubule minus ends (red). Dynein is required throughout the meiotic divisions to maintain focused acentrosomal poles. If removed from stable bipolar spindles (top) using short-term depletions, poles rapidly unfocus and splay, leading to the same phenotype as long-term depletions. Dynein depletion from monopolar spindles (bottom) ejects individual chromosomes and associated microtubule bundles into the cytoplasm. BMK-1 is able to provide an outward sorting force in the absence of KLP-18 and dynein, enabling reorganization of microtubules into a miniature anaphase spindle, promoting chromosome segregation. In the absence of BMK-1, these miniature anaphases cannot form and anaphase-like segregations no longer occur.
+**Figure 8.:** Chromosomes (blue), microtubules (green), and microtubule minus ends (red). Dynein is required throughout the meiotic divisions to maintain focused acentrosomal poles. If removed from stable bipolar spindles (top) using short-term depletions, poles rapidly unfocus and splay, leading to the same phenotype as long-term depletions. Dynein depletion from monopolar spindles (bottom) ejects individual chromosomes and associated microtubule bundles into the cytoplasm. BMK-1 is able to provide an outward sorting force in the absence of KLP-18 and dynein, enabling reorganization of microtubules into a miniature anaphase spindle, promoting chromosome segregation. In the absence of BMK-1, these miniature anaphases cannot form and anaphase-like segregations no longer occur.
 
 Remarkably, we also found that after the monopole disassembled, microtubules were able to reorganize into a ‘miniature’ spindle; chromosomes then segregated on these spindles in the absence of dynein. This finding seemingly contradicts one of our previous studies, where we proposed that dynein could drive chromosomes towards poles along laterally associated microtubule bundles, representing a type of ‘anaphase A’ segregation mechanism (Muscat et al., 2015). Dynein was a good candidate for such a role since we found that it provided chromosomes with a minus-end-directed force prior to anaphase, and we observed lagging chromosomes in anaphase following dynein inhibition (Muscat et al., 2015); lagging chromosomes upon dynein depletion have also been reported by others (McNally et al., 2016) and were observed in the current study (Figure 2—figure supplement 3). However, since chromosome movement was not completely blocked following dynein inhibition, when we proposed our original model we speculated that other mechanisms, such as spindle elongation, might also contribute to segregation (Muscat et al., 2015). Indeed, in subsequent years it has become clear that this anaphase-B-like mechanism is the major driver of chromosome segregation in C. elegans oocytes, and that anaphase A chromosome-to-pole movement provides only a minor contribution (McNally et al., 2016; Laband et al., 2017). Given these follow-up studies, it is now clear that if dynein plays a role in chromosome segregation, its contribution is redundant with other, more dominant, mechanisms; this would explain why most chromosomes were able to move poleward following dynein inhibition in our original study and in subsequent studies by other labs (Muscat et al., 2015; McNally et al., 2016; Laband et al., 2017; Danlasky et al., 2020). This updated view is also consistent with the results of our current study; in our Dynein AID depletions, unarrested bipolar spindles progress through anaphase and mini spindles formed following klp-18(RNAi) also undergo anaphase-like segregation, reaching comparable segregation distances to that of normal anaphase spindles. Interestingly, our studies also revealed that anaphase-B-like spindle elongation can occur in the absence of KLP-18. Although it is possible that KLP-18 may contribute to outward sliding of microtubules during wild-type anaphase, our work shows that this motor is not absolutely required for anaphase spindle elongation and demonstrates that there must be other factors that can perform this function.
 
-## Multiple motors cooperate in C. elegans oocyte meiosis to effectively form and stabilize an acentrosomal bipolar spindle
+### Multiple motors cooperate in C. elegans oocyte meiosis to effectively form and stabilize an acentrosomal bipolar spindle
 
 Our work also accentuates the importance of balanced forces within a bipolar meiotic spindle; we found that loss of dynein activity had strong phenotypes that manifested rapidly, within 2 min of auxin treatment. Notably, acute dynein depletion caused spindle lengthening, suggesting that dynein may normally provide an inward force on the spindle, as has been demonstrated in previous studies of mitosis (Ferenz et al., 2009; van Heesbeen et al., 2014). Recently, our lab also demonstrated that inactivation of KLP-18 in stable, bipolar spindles caused spindle shortening followed by collapse of microtubule minus ends into a monopolar spindle (Wolff et al., 2021). This collapse is due to a loss of the outward force provided by KLP-18, theoretically enabling the inward force provided by dynein to dominate and highlighting how quickly an imbalance of these motor forces can lead to gross defects in spindle organization. In the current study, removing dynein from oocytes that already lacked KLP-18 resulted in a catastrophic breakdown of the monopolar spindle, releasing individual chromosomes into the cytoplasm. Going forward, it would be interesting to acutely remove these proteins at the same time to see whether oocyte spindles are able to maintain bipolarity and directly test whether these motors antagonize each other in C. elegans.
 
@@ -122,7 +506,7 @@ While KLP-18/kinesin-12 provides the major outward force in C. elegans oocyte me
 
 While this work has expanded our understanding of the role BMK-1 plays in C. elegans oocyte meiosis, further experimentation will be valuable for understanding the exact mechanism of BMK-1 function in the context of a normal, bipolar meiotic spindle. Biophysical assays to determine motor walking speed and force generation would help frame how much BMK-1 actually contributes in comparison to other meiotic motors such as KLP-18. Also, since kinesin-5 activity is known to be regulated in other systems by kinases and protein-protein interactions (reviewed in Mann and Wadsworth, 2019), it would be beneficial to determine if BMK-1 has any interacting partners that provide some regulation of function. Aurora B kinase (AIR-2) has been shown to be required for BMK-1 spindle localization and AIR-2 can phosphorylate BMK-1 in vitro (Bishop et al., 2005) implicating AIR-2 in BMK-1 regulation. Inhibition of AIR-2’s kinase activity also leads to collapsed oocyte spindles (Divekar et al., 2021a), consistent with a role for AIR-2 in regulating spindle force generation. However, it is likely that other factors also regulate BMK-1. Finally, another interesting question is whether BMK-1 acts to reorganize the existing microtubule bundles that remain chromosome-associated following monopole breakdown or whether chromatin-mediated microtubule nucleation also plays a role in miniature spindle formation, as it does in many systems during acentrosomal spindle assembly (Meunier and Vernos, 2016; Radford et al., 2017).
 
-## Different acentrosomal pole proteins have distinct roles in pole coalescence and stability
+### Different acentrosomal pole proteins have distinct roles in pole coalescence and stability
 
 Our analysis of ASPM-1 and LIN-5 provides further evidence that these proteins are directly influencing acentrosomal pole organization and stability by directing cytoplasmic dynein localization. In either aspm-1 or lin-5 RNAi, spindle phenotypes were nearly identical to those seen in Dynein AID experimentation, and co-depletion of dynein did not worsen those phenotypes. The shared phenotype across depletions of these proteins suggests that these pole proteins function in a single pathway; this provides some credence to the concept that acentrosomal poles could contain a cross-linked network of interacting pole proteins that provide cohesion and stability. However, recent work from our lab has made it clear that not all pole protein depletions yield the same defects in spindle bipolarity. Acute depletion of ZYG-9, a homolog of the microtubule polymerase XMAP215, disrupts spindle integrity in a manner that does not resemble Dynein AID depletions. While dynein depletion splays spindle poles, microtubule bundles appear to remain stable and unperturbed, generating a rectangular spindle that can still progress through meiosis (albeit with spindle rotation defects). However, acute ZYG-9 depletion leads to a unstable multipolar spindle with defects in the middle of the spindle as well as at the poles, suggesting a broader role of ZYG-9 (Mullen et al., 2022).
 
@@ -130,9 +514,61 @@ From these recent studies, it is clear that multiple groups of proteins are requ
 
 ## Materials and methods
 
-## C. elegans strains used
+### C. elegans strains used
 
-## Generation of C. elegans strains
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA1215</td>
+      <td>dhc-1::degron::GFP; Psun-1::TIR1::mRuby</td>
+      <td>dhc-1(ie28[dhc-1::degron::GFP]) I; ieSi38 IV</td>
+    </tr>
+    <tr>
+      <td>PHX3914</td>
+      <td>dhc-1::degron::GFP; Psun-1::TIR1::mRuby; GFP::H2B; GFP::tubulin; Δbmk-1</td>
+      <td>dhc-1(ie28[dhc-1::degron::GFP]) I; unc-119(ed3) III; ruIs32[unc-119(+) pie-1::gfp::h2b] III; ruIs57[unc-119(+) pie-1::GFP::tubulin]; ieSi38 IV; bmk-1(syb3914) V</td>
+    </tr>
+    <tr>
+      <td>SMW22</td>
+      <td>Psun-1::TIR1::mRuby; mCherry::tubulin</td>
+      <td>unc-119(ed3) III; weIs21 [pJA138 (pie-1::mCherry::tubulin::pie-1)]; ieSi38 IV</td>
+    </tr>
+    <tr>
+      <td>SMW31</td>
+      <td>Psun-1::TIR1::mRuby; GFP::H2B; GFP::tubulin</td>
+      <td>unc-119(ed3) III; ruIs32[unc-119(+) pie-1::gfp::h2b] III; ruIs57[unc-119(+) pie-1::GFP::tubulin]; ieSi38 IV</td>
+    </tr>
+    <tr>
+      <td>SMW46</td>
+      <td>dhc-1::degron::GFP; Psun-1::TIR1::mRuby; GFP::H2B; GFP::tubulin</td>
+      <td>dhc-1(ie28[dhc-1::degron::GFP]) I; unc-119(ed3) III; ruIs32[unc-119(+) pie-1::gfp::h2b] III; ruIs57[unc-119(+) pie-1::GFP::tubulin]; ieSi38 IV</td>
+    </tr>
+    <tr>
+      <td>SMW47</td>
+      <td>dhc-1::degron::GFP; Psun-1::TIR1::mRuby; bmk-1(ok391)</td>
+      <td>dhc-1(ie28[dhc-1::degron::GFP]) I; ieSi38 IV; bmk-1(ok391) V</td>
+    </tr>
+    <tr>
+      <td>SMW48</td>
+      <td>dhc-1::degron::GFP; Psun-1::TIR1::mRuby mCherry::tubulin</td>
+      <td>dhc-1(ie28[dhc-1::degron::GFP]) I; weIs21 [pJA138 (pie-1::mCherry::tub::pie-1)]; ieSi38 IV</td>
+    </tr>
+    <tr>
+      <td>SV1005</td>
+      <td>bmk-1(ok391)</td>
+      <td>bmk-1(ok391) V</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of C. elegans strains
 
 CA1215 was generated via CRISPR/Cas9 editing of the endogenous dhc-1 locus (Zhang et al., 2015).
 
@@ -148,47 +584,47 @@ SMW47: Crossed males of CA1215 with SV1005 hermaphrodites
 
 SMW48: Crossed males of CA1215 with SMW22 hermaphrodites
 
-## RNAi feeding
+### RNAi feeding
 
 Our RNAi protocol is described in detail in Wolff et al., 2022. Briefly, from an RNAi library (Kamath et al., 2003), individual RNAi clones were picked and grown overnight at 37°C in LB with 100 μg/mL ampicillin. Overnight cultures were spun down, resuspended, and plated on nematode growth medium (NGM) plates containing 100 μg/mL ampicillin and 1 mM IPTG. Plates were dried in a dark space overnight at 22°C; at the same time, worms were synchronized for experimentation via bleaching of gravid adults, collecting remaining embryos, and plating on foodless plates to hatch overnight. The next day, newly hatched L1 worms were transferred to appropriate RNAi plates and grown to adulthood at 15°C for 5–6 days. In specific experiments utilizing lin-5(RNAi) or aspm-1(RNAi), L1 worms were plated on empty vector (EV) L440 control RNAi plates for 2–3 days, then transferred to lin-5(RNAi) or aspm-1(RNAi) plates 72 hr prior to fixation.
 
-## Immunofluorescence and antibodies
+### Immunofluorescence and antibodies
 
 Our IF protocol is described in detail in Wolff et al., 2022. Briefly, adult worms, grown on either EV control RNAi or experimental RNAi, were picked into a 10 μL drop of Meiosis Medium (0.5 mg/mL Inulin, 25 mM HEPES, and 20% FBS in Leibovitz’s L-15 Media) (Laband et al., 2018) in the center of a poly-L-lysine-coated glass slide. Worms were dissected, then fixed via freeze cracking and plunging into –20°C MeOH as described in Oegema et al., 2001. Oocytes and embryos were fixed for 40–45 min, rehydrated in PBS, and blocked in AbDil (PBS with 4% BSA, 0.1% Triton-X-100, 0.02% NaN3) overnight at 4°C. Primary antibodies were diluted in AbDil and incubated with sample overnight at 4°C. The following day, the samples were moved to room temperature and rinsed three times in PBST (PBS with 0.1% Triton-X-100), then incubated with secondary antibodies (diluted in PBST) for 2 hr. Next, the samples were washed three times in PBST again and incubated with mouse anti-α-Tubulin-FITC (diluted in PBST) for 2 hr. Again, the samples were washed three times in PBST, then incubated with Hoescht (1:1000 in PBST) for 15 min. Finally, the samples were washed two times in PBST, mounted in 0.5% p-phenylenediamine, 20 mM Tris-Cl, pH 8.8, 90% glycerol, then sealed with nail polish and stored at 4°C.
 
 The primary antibodies used in this study were rabbit-α-ASPM-1 (1:5000, gift from Arshad Desai), rabbit-α-BMK-1 (1:250, gift from Jill Schumacher), mouse-α-Tubulin-FITC (1:500, DM1α, Sigma), mouse-α-GFP (1:250, 3E6, Invitrogen), mouse-α-SUMO (1:500, gift from Federico Pelisch), rabbit anti-SEP-1 (1:250, gift of Andy Golden), and rabbit-α-SPD-1 (Mullen et al., 2017). All rabbit and mouse Alexa Fluor secondary antibodies (Invitrogen) were used at 1:500.
 
-## Ex utero live imaging
+### Ex utero live imaging
 
 Fifteen adult worms, grown on either control RNAi or experimental RNAi, were picked into a 10 μL drop of Meiosis Medium (described above) in the center of a custom-made apparatus for live imaging (Laband et al., 2018; Divekar et al., 2021b). All worms were quickly dissected, and an eyelash pick was used to push remaining worm bodies to the outside of the drop, leaving only the oocytes and embryos in the center to avoid disruption from worm movement during the imaging process. Vaseline was laid in a ring around the drop through a syringe, and a 18 × 18 mm #1 coverslip was laid on top of the Vaseline ring, sealing the drop. This sealed slide was moved immediately to the spinning disk stage and inverted, allowing oocytes and embryos to float down to the surface of the coverslip and be subsequently imaged. For movies of unarrested spindles, we looked for embryos that had extruded the first polar body but where the meiosis II spindle had not yet formed; thus t = 0 was synchronized to the onset of meiosis II. For experiments involving emb-30(RNAi), t = 0 was defined as the first frame that we were able to capture after finding a bipolar spindle to image. For these experiments, we did not image spindles that exhibited hallmarks of prolonged metaphase arrest when they were dissected (e.g., stretching of chromosomes and widening of the spindle midzone) to avoid artifacts arising from the metaphase-arrest condition.
 
-## Microscopy
+### Microscopy
 
 All fixed imaging was performed on a DeltaVision Core deconvolution microscope with a 100x objective (NA = 1.4) (Applied Precision). This microscope is housed in the Northwestern University Biological Imaging Facility supported by the NU Office for Research. Image stacks were obtained at 0.2 μm z-steps and deconvolved using SoftWoRx (Applied Precision). All IF images in this study were deconvolved and displayed as full maximum intensity projections of data stacks encompassing the entire spindle structure (typically ~4–6 μm).
 
 All live imaging was performed using a spinning disk confocal microscope with a 63x HC PL APO 1.40 NA objective lens. A spinning disk confocal unit (CSU-X1; Yokogawa Electric Corporation) attached to an inverted microscope (Leica DMI6000 SD) and a Spectral Applied Imaging laser merge ILE3030 and a back-thinned electron-multiplying charge-coupled device (EMCCD) camera (Photometrics Evolve 521 Delta) were used for image acquisition. The microscope and attached devices were controlled using Metamorph Image Series Environment software (Molecular Devices). Typically, 10–15 z-stacks at 1 μm increments were taken every 15–30 s at room temperature. Images were processed using ImageJ; images are shown as maximum intensity projections of the entire spindle structure. The spinning disk microscope is housed in the Northwestern University Biological Imaging Facility supported by the NU Office for Research.
 
-## Auxin treatment
+### Auxin treatment
 
 Auxin treatments were performed using three different methods (long term, short term, and acute); further details and diagrams of these methods can be found in Divekar et al., 2021b.
 
-## Long-term AID
+#### Long-term AID
 
 Standard NGM RNAi plates were prepared, but 500 mM auxin (dissolved in 100% EtOH) was added to a final concentration of 1 mM prior to pouring 6 cm plates. These plates were kept in a dark room to solidify and dry. For long-term auxin experiments, auxin plates were seeded with the desired RNAi culture, incubated overnight to induce dsRNA production, and put at 4°C until needed. In order to achieve a 4 hr auxin treatment, adult worms were grown on separate RNAi plates that did not contain auxin (poured and seeded in parallel with the auxin plates), then transferred to auxin-containing plates 4 hr prior to EtOH fixation or dissection and IF.
 
-## Short-term AID
+#### Short-term AID
 
 A solution of Meiosis Medium containing 1 mM auxin was prepared from a 200 mM auxin stock (dissolved in 100% EtOH) and kept on ice. Adult worms were picked into 10 μL drops of Medium + auxin, and then the slides were placed inside a custom-made humidity chamber to avoid evaporation of the drop. Following incubation for the desired time (30–45 min), worms were dissected and subjected to the standard IF protocol described above.
 
-## Acute AID
+#### Acute AID
 
 For acute auxin treatments coupled with ex utero live imaging, a solution of Meiosis Medium containing 100 μM auxin was made from a 200 mM auxin stock (dissolved in 100% EtOH). Adult worms were picked into 10 μL drops of Medium + auxin and immediately dissected on a custom-made live imaging slide apparatus (as described in the ex utero imaging section). Slides were moved quickly to the spinning disk microscope, and acquisition was started as soon as an oocyte could be found.
 
-## Ethanol fixation for germline counting
+### Ethanol fixation for germline counting
 
 Ethanol fixation and germline counting methods are described in more detail in Wolff et al., 2022. Briefly, SMW46 worms were subjected to EV control RNAi (or klp-18(RNAi)), utilizing methods described above, and were grown to adulthood over 5 days. 4 hr prior to fixation, worms were either transferred to EV control RNAi (with 1 mM auxin) or left on their original RNAi plates. For each biological replicate, ~40 adults were picked off their respective plates into a 10 μL drop of M9 on a standard glass slide, and a small piece of Whatman paper was used to absorb excess M9, with care being used to avoid pulling worms onto filter paper. Once worms had formed a tight cluster with little residual M9, a 10 μL drop of 100% EtOH was quickly pipetted onto the worms. Within seconds, worms became rigid and straight; once the first EtOH drop had dried, another 10 μL drop was applied and allowed to completely dry. After the third drop was added and dried, a 10 μL drop of 50% Vectashield Mounting Media (Vector Laboratories H-1000) and 50% M9 was placed onto the worms, and a 18 × 18 mm coverslip was gently placed on top. Excess media was aspirated away, slides were sealed with nail polish, and stored at 4°C (typically imaged within a week of fixation).
 
-## Data analysis
+### Data analysis
 
 Figure 1D: Quantifications were made by viewing whole Dynein AID worms expressing GFP::tubulin and GFP::histone and observing three positions in each worm (–1 position, Spermatheca, + 1 position) in both gonad arms. When spindle morphology was clear enough to confidently categorize, spindles were then counted into one of four categories (Microtubule Cage, Unfocused, Focused, Anaphase). The number of spindles counted across all slides (n) is placed above each respective location and condition. Each bar comprises counts from at least four biological replicates. Exact numbers used to generate the graph are given in Table 1.
 

@@ -38,7 +38,7 @@ Here we present a new method for the metabolomic analysis of rare stem cell and 
 
 ## Results
 
-## Chromatography and mass spectrometry
+### Chromatography and mass spectrometry
 
 In order to significantly increase the numbers of metabolites we detected in small numbers of flow cytometrically isolated cells, we re-examined the chromatography and mass spectrometry approaches we used. A key limitation is discriminating the low levels of metabolites present in small numbers of cells from background signals. Background reflects contamination from various sources as well as the co-association of salts with organic compounds in mass spectrometers to generate organic salt clusters (matrix ions) that obscure the detection of metabolites. We reasoned we could improve the signal to noise ratio in low abundance samples and reduce interference by matrix ions by transitioning to a mass spectrometer with higher mass resolving power.
 
@@ -48,9 +48,17 @@ We also wondered if a hydrophilic interaction liquid chromatography (HILIC) syst
 
 When we ran high abundance samples either by reverse phase or HILIC we identified hundreds of metabolites by spectral database matching and manual peak review (data not shown). However, the improved metabolite separation and peak quality we observed with HILIC yielded more high confidence identifications of metabolites via spectral database matching alone (Figure 1A). HILIC also enabled the detection of early-eluting lipid metabolites, which were not detected using reverse phase chromatography. They were well-resolved chromatographically (Figure 1—figure supplement 1A–D) and were detected within the linear range of the mass spectrometer (Figure 1—figure supplement 1E–H). Finally, HILIC eliminated the requirement for sample drying, which can alter the levels of certain metabolites and increase contamination (Lu et al., 2017). We thus selected HILIC for further method development.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig1-v2.jpg)
+
+**Figure 1.:** (A) The number of metabolites identified with high confidence spectral database matching in whole bone marrow (WBM) samples after HILIC or reverse phase chromatography (n = 3 replicates per group from one experiment). (B) Average peak intensities in sheath fluid background samples after drying with a standard vacuum concentrator, a vacuum concentrator in a positive pressure HEPA-filtered clean hood, or with no drying (n = 5 replicates per treatment from one experiment). (C) Number of metabolites significantly above sheath fluid background in 10,000 sorted WBM cells after drying with a standard vacuum concentrator, a vacuum concentrator in a clean hood, or with no drying (n = 5 replicates per treatment from one experiment). The threshold for statistical significance relative to background or other samples was always set at fold change >2 and false discovery rate (FDR) < 0.05, unless otherwise indicated. (D) Metabolites detected in 100,000 WBM cells extracted with 80% acetonitrile in water (ACN), 80% methanol in water (MeOH), or 40% ACN plus 40% MeOH in water (Mix) (n = 3 replicates per treatment from one experiment). (E) Overlap in metabolites detected with each extraction solvent (n = 3 replicates per treatment from one experiment). (F) Number of metabolites significantly above background in 10,000 WBM cells sorted using a 70 or 100 μm nozzle, and 0.5× or 1.0× phosphate buffered saline (PBS) sheath fluid (n = 5 replicates per treatment in each of three independent experiments; the metabolites that significantly differed between 0.5× PBS versus 1× PBS sheath fluid are listed in Figure 1—source data 2, Supplementary Table 1). (G) Number of metabolites significantly above background in 10,000 sorted WBM cells or 10,000–100,000 pipetted WBM cells (n = 5 replicates per treatment in each of three independent experiments). (H–K): (H) Principal component analysis of 10,000 sorted or pipetted HNT-34 AML (AML) cells or DND-41 T-ALL (ALL) cells (one experiment with n = 8 replicates per treatment; the metabolites that significantly differed between sorted and pipetted AML cells and between sorted and pipetted ALL cells are shown in Figure 1—source data 3, Supplementary Table 2 and Figure 1—source data 4, Supplementary Table 3). Figure 1—source data 8 shows the raw metabolomics data for the comparison of AML to ALL cells. (I) Metabolites that significantly changed between AML and ALL cells in sorted versus pipetted samples (listed in Figure 1—source data 5, Supplementary Table 4). (J, K) Correlation between log2 fold changes (in AML versus ALL cells) in sorted versus pipetted samples for all detected metabolites (J) and metabolites that significantly differed between sorted AML and ALL cells (K). (L–P): (L) Number of metabolites above background in 10,000 pipetted WBM cell samples at various times after the death of the mouse (one experiment with n = 5 replicates per time point). (M) Number of metabolites that significantly increased or decreased at each time point relative to the 5 min time point (the metabolites are listed in Figure 1—source data 6, Supplementary Table 5). (N–P) Log2-transformed (N), non-transformed (O), and non-transformed intensity values for metabolites <1×108 (P) in the 5 versus 120 min samples. The statistical significance of differences between treatments was assessed using a paired t-test (A), a Kolmogorov–Smirnov test (B) followed by Holm–Sidak’s multiple comparisons adjustment, repeated measures one-way ANOVA followed by Tukey’s (D) or Dunnett’s (G) multiple comparisons adjustment, repeated measures two-way ANOVA followed by Sidak’s multiple comparisons adjustment (F), or Spearman correlation analysis (J, K, N–P). All statistical tests were two-sided. Data represent mean ± SD. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Representative chromatograms for (A) phosphatidylcholine (PC [36:2]), (B) phosphatidylethanolamine (PE [38:6]), (C) lysophosphatidylcholine (Lyso-PC [18:0]), and (D) lysophosphatidylethanolamine (Lyso-PE [20:4]). (E–H) Standard curves of isotopically labeled lipids from four classes of lipids we detected (black) and the corresponding endogenous lipid (red) for (E) phosphatidylcholine, (F) phosphatidylethanolamine, (G) lysophosphatidylcholine, and (H) lysophosphatidylethanolamine (n = 3 replicates, data represent mean ± SD).
+
 We also fundamentally changed our approach to data analysis. To determine which metabolites were detected in low abundance samples we created a list of metabolites with known masses and chromatographic retention times from the analysis of high abundance samples. We first used unbiased metabolite identification software (Compound Discoverer) to compare experimentally observed mass spectra with annotated spectrum libraries to identify 571 metabolites. We confirmed the identities of each metabolite in the library by reviewing the MS2 spectra for each metabolite. We confirmed the retention times and mass spectra for over 450 metabolites in the library by running chemical standards. This library was used to determine how many metabolites were detected in low abundance samples by manually analyzing chromatographic peaks derived from extracts of 100,000 WBM cells. This resulted in a low abundance library containing 283 detectable metabolites that was used for manual metabolite quantitation in low abundance samples. This manual approach was more time consuming but more accurate than relying upon automated peak-calling algorithms, which often failed to accurately integrate LC-MS peaks from low-abundance samples.
 
-## Reducing sources of contamination
+### Reducing sources of contamination
 
 Background signals arose from the staining medium in which we suspended the cells, the flow cytometer sheath fluid, the solvent we used to extract metabolites from the sorted cells, and the drying and reconstitution of samples prior to liquid chromatography/mass spectrometry (LC-MS) (Agathocleous et al., 2017). While these very low levels of background would be negligible when analyzing high abundance samples, they did interfere with the ability to detect some metabolites in low abundance samples.
 
@@ -58,11 +66,11 @@ When performing reverse phase separation, metabolites were extracted using 80% m
 
 To test if we could detect more metabolites above background in low abundance samples if we did not dry and reconstitute, we sorted samples of 10,000 WBM cells, along with sheath fluid negative controls, and processed the samples side-by-side either with drying in a standard vacuum concentrator, with drying in a new vacuum concentrator in a HEPA-filtered PCR hood, or without drying. We detected 98, 123, or 130 metabolites significantly above sheath fluid background (always fold change >2 and false discovery rate [FDR] < 0.05) in the samples dried in a standard vacuum concentrator, a HEPA-filtered vacuum concentrator, or undried, respectively (Figure 1C). We thus detected more metabolites above background in low abundance samples if we avoided sample drying and incorporated this approach into the method.
 
-## Acetonitrile extraction
+### Acetonitrile extraction
 
 Metabolites are most commonly extracted from cells using miscible aqueous-organic solvents, with the elimination of proteins, non-soluble components, and cellular debris by centrifugation. Different metabolites require different solvents for extraction (Rabinowitz and Kimball, 2007). To test different solvents, we extracted metabolites from 100,000 pipetted WBM cells using 80% methanol in water, 40:40:20 acetonitrile:methanol:water, or 80% acetonitrile in water. Using HILIC and orbitrap mass spectrometry we detected an average of 317 metabolites in samples extracted with 80% acetonitrile and 266 or 273 metabolites in samples extracted with 80% methanol or 40:40:20 methanol:acetonitrile:water, respectively (Figure 1D). While we observed considerable overlap in the metabolites detected using each solvent, 80% acetonitrile yielded a number of metabolites that were not detected using the other solvents (Figure 1E). We thus selected 80% acetonitrile for further method development.
 
-## Ion suppression and cell numbers
+### Ion suppression and cell numbers
 
 Ion suppression of metabolite signals can occur as a result of the salt in the phosphate buffered saline (PBS) sheath fluid used for flow cytometric sorting: 1–3 nl of sheath fluid is sorted along with each cell depending on whether a 70 µm or 100 µm nozzle is used. Flow cytometry sheath fluid must contain salt to electrostatically charge droplets for sorting; sorting more cells also sorts more salt. When using reverse phase chromatography, we reduced ion suppression by using 0.5× PBS sheath fluid and a 70 μm nozzle in four-way purity sort mode to minimize droplet volume (Agathocleous et al., 2017). After changing to HILIC, we retested whether 0.5× PBS or the 70 μm nozzle affected the number of metabolites we detected from 10,000 WBM cells. Sorting with the 70 μm nozzle increased the number of metabolites we could detect above sheath fluid background as compared to the 100 μm nozzle, regardless of PBS concentration (Figure 1F). We found no significant difference in the number of metabolites detected above background using 0.5× (157 ± 2) versus 1.0× (149 ± 9) PBS (Figure 1F).
 
@@ -70,7 +78,7 @@ We found 18 metabolites that significantly differed among samples sorted with 0.
 
 Next we tested if the number of metabolites we detected above background increased with increasing numbers of cells. We pipetted 10,000, 20,000, 30,000, 50,000, or 100,000 WBM cells (in equal volumes of HBSS buffer) directly into 80% acetonitrile and quantitated metabolites. The number of metabolites detected above sheath fluid background increased significantly with increasing numbers of cells, from 157 ± 4 metabolites in 10,000 cells to 222 ± 9 metabolites in 100,000 cells (Figure 1G). In the same experiment, we detected an average of 155 ± 2 metabolites from 10,000 flow cytometrically sorted WBM cells (Figure 1G). We thus detected similar numbers of metabolites in flow cytometrically sorted and unsorted samples.
 
-## Effect of flow cytometry on metabolite levels
+### Effect of flow cytometry on metabolite levels
 
 To determine if metabolic differences between cells are preserved during cell sorting using the methods described above, we sorted or pipetted 10,000 HNT-34 AML cells or 10,000 DND-41 T-ALL cells into 80% acetonitrile. We detected 143–167 metabolites above background in each sample. Principal component analysis revealed differences between sorted and pipetted AML cells (Figure 1H; see the list of metabolites in Figure 1—source data 3, Supplementary Table 2) whereas differences among sorted and pipetted ALL cells were subtle (Figure 1H; see the list of metabolites in Figure 1—source data 4, Supplementary Table 3). Forty-three metabolites significantly differed between sorted and pipetted AML cells while 19 metabolites differed between sorted and pipetted ALL cells (fold change >2 and FDR < 0.05). Pathway enrichment analysis revealed that metabolites that differed between sorted and pipetted AML cells were significantly enriched in ‘cysteine and methionine metabolism’. No pathways were significantly enriched among metabolites that differed between sorted and pipetted ALL cells.
 
@@ -78,25 +86,45 @@ Irrespective of whether cells were sorted or pipetted, similar differences were 
 
 To more systematically assess the similarity of pipetted and sorted samples, we plotted log2-transformed fold change values between AML and ALL cells for all metabolites above background in sorted versus pipetted samples (Figure 1J). The slope of the regression was near 1 (y = 0.96 × –0.06) and the correlation was strong for most metabolites (Spearman correlation coefficient, r = 0.81). When we restricted the analysis to metabolites that significantly differed between sorted AML and ALL cells (fold change >2, FDR < 0.05), the correlation was even stronger (y = 0.95 × – 0.15; r = 0.92; Figure 1K). While the levels of some metabolites did change during sorting, most metabolites strongly correlated in sorted and unsorted samples.
 
-## Effect of time on metabolite levels
+### Effect of time on metabolite levels
 
 It typically took up to 2 hr to sort HSCs into acetonitrile, starting from when the mice were killed. We wondered to what extent metabolite levels changed over time during cell isolation. To test this, we quickly flushed bone marrow from the long bones and made single cell suspensions in HBSS that we kept on ice. We pipetted 10,000 cell aliquots of WBM cells into acetonitrile at 5, 15, 30, 60, 120, 180, and 240 min after killing the mice then performed metabolomic analysis on each sample. At all time points, we detected 170–179 metabolites above sheath fluid background (Figure 1L). Relative to the samples collected at 5 min, only two metabolites significantly changed (fold change >2 and FDR < 0.05) in the samples collected at 15 min (Figure 1M). The number of metabolites that significantly changed increased over time, but most of the changes occurred by 120 min (Figure 1M; see the list of metabolites that changed over time in Figure 1—source data 6, Supplementary Table 5). The only metabolic pathway that was significantly enriched among metabolites that changed over time was ‘purine metabolism’ as purines were enriched in samples that incubated longer on ice. Thus, some metabolites did change over time but these represented less than 20% of detected metabolites.
 
 To more broadly assess the similarity of the samples over time, we plotted log2-transformed values for all detected metabolites in 5 min versus 120 min samples (Figure 1N). The slope of the regression was near 1 (y = 0.97 × +0.62) and the correlation was strong, r = 0.98. We also plotted non-transformed values for all detected metabolites in 5 min versus 120 min samples, observing a similarly high correlation (Figure 1O). Finally, to most clearly show the differences between 5 and 120 min samples, we plotted only metabolites with signal intensity <1 × 108 (Figure 1P). Again, the slope of the regression was near 1 (y = 0.95 × +1.1 × 106) and the correlation was strong, r = 0.97. Thus, most metabolite intensity values strongly correlated among samples that incubated on ice for different periods of time. However, some metabolic changes may occur within seconds of harvesting a tissue (Lu et al., 2017) in a way that was not reflected in this experiment as the 5 min time point was the earliest at which a bone marrow cell suspension could be reliably obtained.
 
-## Effect of cell suspension buffer on metabolite levels
+### Effect of cell suspension buffer on metabolite levels
 
 We typically prepare hematopoietic cell suspensions using HBSS, which contains glucose. To test if this affected metabolite levels, we prepared bone marrow cell suspensions in HBSS or PBS then sorted 10,000 cells for metabolomic analysis. We detected 150–162 metabolites above background in these samples but only five significantly differed between cells isolated from HBSS versus PBS suspended samples (Figure 1—source data 7, Supplementary Table 6). The metabolite that most differed between these samples was glucose, which was substantially enriched in cells isolated from HBSS. Pathway enrichment analysis did not detect any pathways enriched among the metabolites that differed among HBSS and PBS samples. Therefore, the presence of glucose in the cell suspension buffer did affect glucose levels in the sorted cells but had little effect on the levels of other metabolites.
 
-## Metabolomic profiling of HSC/multipotent progenitors (MPPs)
+### Metabolomic profiling of HSC/multipotent progenitors (MPPs)
 
 To assess the metabolite profile of HSCs/MPPs we sorted 10,000 cell aliquots of CD48-Lineage-Sca1+c-kit+ cells and WBM cells. CD48-Lineage-Sca1+c-kit+ cells represent 0.05% of WBM cells and are a very highly enriched for HSCs and MPPs (Oguro et al., 2013). The metabolite profiles of HSCs and MPPs are extremely similar (Agathocleous et al., 2017). We detected 160 ± 15 metabolites above sheath fluid background in HSCs/MPPs and 147 ± 15 in WBM (Figure 2A). A total of 78 metabolites significantly differed in abundance between HSCs/MPPs and WBM cells (fold change >2 and FDR < 0.05; the metabolites are listed in Figure 2—source data 2, Supplementary Table 1). Of these, 51 differed by at least 2.5-fold (Figure 2B). Of the 16 metabolites that Agathocleous et al., 2017 found to significantly differ between HSCs/MPPs and WBM cells, 13 also significantly differed, in the same direction, using the new method (Figure 2—figure supplement 1). The other three metabolites either were not detected using the new method or could not be quantitated accurately due to extraction conditions. Thus, the new method detected most of the metabolic differences between HSC/MPPs and WBM cells observed by Agathocleous et al., 2017, while also detecting 65 additional differences.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig2-v2.jpg)
+
+**Figure 2.:** (A) Metabolites significantly above background in 10,000 sorted HSC/MPPs or WBM cells (n = 3–7 replicates per treatment in each of four independent experiments; fold change >2 and false discovery rate [FDR] < 0.05). (B) Metabolites that were significantly depleted (left) or enriched (right) in HSC/MPPs as compared to WBM cells (fold change >2.5, FDR < 0.01; all metabolites with fold change >2.0 and FDR < 0.05 are listed in Figure 2—source data 2, Supplementary Table 1). Data in (A) represent mean ± SD. A comparison of these differences to those observed by Agathocleous et al., 2017 between HSCs and WBM cells is shown in Figure 2—figure supplement 1and a summary of the differences in lipid species is shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Metabolites identified by Agathocleous et al. as (A) enriched or (B) depleted in HSC/MPPs as compared to WBM cells and the results obtained for the same metabolites in the current study (data are from Figure 2).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of glycerophospholipid metabolism and (B) list of phosphatidylcholines (PC), phosphatidylethanolamines (PE), phosphatidylserines (PS), Lyso-PCs, and Lyso-PEs detected in 10,000 HSCs/MPPs or WBM cells by our method. Red metabolites were enriched in HSC/MPPs and blue metabolites were depleted in HSC/MPPs. Purple metabolites were detected but not significantly changed. Black metabolites were not detected (n = 11 replicates per cell population from a total of four independent experiments).
 
 Pathway enrichment analysis found only one pathway that was significantly enriched (FDR < 0.01): 10 of 36 metabolites in the murine KEGG ‘glycerophospholipid metabolism’ pathway significantly differed in abundance between HSC/MPPs and WBM cells. HSCs were enriched for many components of the Kennedy (cytidine diphosphate-choline) pathway (Li and Vance, 2008; Kennedy and Weiss, 1956), including choline, choline phosphate, CDP-choline, ethanolamine phosphate, glycerophosphorylcholine, glycerophosphorylethanolamine, and many phosphatidylcholines (PC), phosphatidylethanolamines (PE), lysophosphatidylcholines (Lyso-PC), and lysophosphatidylethanolamines (Lyso-PE) (Figure 2—figure supplement 2B). Acetylcholine and several phosphatidylserine (PS) species were depleted in HSC/MPPs as compared to WBM (Figure 2—figure supplement 2B). These results raise the possibility that glycerophospholipid synthesis is activated in HSC/MPPs relative to WBM; however, additional studies will be required in the future to test this. The prominence of phospholipids among the differences between HSCs/MPPs and WBM cells illustrates the ability of the new method to detect differences not detected by prior methods.
 
 To determine whether metabolic perturbations in HSCs in vivo can be detected by this method, we treated mice for 3 days with methotrexate. Methotrexate inhibits dihydrofolate reductase (DHFR) and AICAR transaminase (ATIC), steps in de novo purine biosynthesis (Baggott et al., 1986). Methotrexate treatment did not significantly affect bone marrow cellularity or the frequencies of HSCs, MPPs, or LSK cells in the bone marrow (Figure 3A–D). Methotrexate treatment also did not significantly affect the reconstituting potential of WBM cells upon competitive transplantation into irradiated mice (Figure 3E). Metabolomic analysis of 10,000 HSC/MPPs from the bone marrow of methotrexate-treated and control mice revealed that the only pathway that was significantly enriched among the metabolites that differed was ‘purine metabolism’. While methotrexate would also be expected to alter folate metabolism, folate species are very difficult to detect by metabolomics (Zheng et al., 2018; Chen et al., 2017) and are not detected by our method. Given that methotrexate inhibits ATIC, AICAR levels would be expected to increase after methotrexate treatment (Cronstein et al., 1993; Baggott et al., 1986; Allegra et al., 1985). Consistent with this, AICAR levels were 88-fold higher in HSCs/MPPs from methotrexate-treated as compared to control mice (Figure 3F). The method was thus capable of detecting expected metabolic perturbations in HSCs in vivo.
 
-## Metabolomic profiling of circulating cancer cells
+![Figure 3.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Bone marrow cellularity (A) and the frequencies of CD150+CD48-Lin-Sca1+c-kit+ HSCs (B), CD150-CD48-Lin-Sca1+c-kit+multipotent progenitors (MPPs) (C), and Lin-Sca1+c-kit+ cells (D) in femurs and tibias from mice treated with methotrexate or vehicle control (n = 5 mice per treatment from two independent experiments). (E) Percentage of nucleated blood cells that were donor-derived after competitive transplantation of bone marrow cells from methotrexate-treated versus control mice into irradiated recipients (two independent experiments). (F) AICAR levels in HSC/MPPs from mice treated with methotrexate or vehicle (11 control samples and 9 MTX samples from four independent experiments). (G) Metabolites detected above background in primary tumor cells or circulating melanoma cells (n = 3 or four replicates per treatment in one experiment; fold change >2 and false discovery rate [FDR] < 0.05). (H–K) Levels of the purines inosine monophosphate (IMP) (H), xanthosine monophosphate (XMP) (I), guanosine monophosphate (GMP) (J), and adenosine monophosphate (AMP) (K) in primary tumor and circulating melanoma cells. Statistical significance was assessed by t-test (A), repeated measures two-way ANOVA (B–D), or mixed effects analysis (E) followed by Sidak’s multiple comparisons adjustment. All tests were two-sided. Data represent mean ± SD. The flow cytometry gates used to isolate each cell population are shown in Figure 3—figure supplement 1. All of the metabolites that differed between circulating melanoma cells and subcutaneous tumor cells are listed in Figure 3—source data 2, Supplementary table 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flow cytometry gating strategies for isolating CD150+CD48-Lin-Sca1+c-kit+ hematopoietic stem cells (HSCs; 0.0057% of bone marrow cells), CD150-CD48-Lin-Sca1+c-kit+multipotent progenitors (MPPs; 0.0047% of bone marrow cells), and Lin-Sca1+c-kit+ cells (0.19% of bone marrow cells). (B) Flow cytometry gating strategy for isolating live HLA+DsRed+mTer119-mCD45-mCD31- human melanoma cells from mechanically dissociated subcutaneous tumors from xenografted NSG mice (all melanomas were tagged with stable DsRed expression). (C) Flow cytometry gating strategy for isolating live HLA+DsRed+mTer119-mCD45-mCD31- circulating melanoma cells from the blood of xenografted NSG mice.
+
+### Metabolomic profiling of circulating cancer cells
 
 To test if the method is broadly applicable, we tested if we could detect metabolic differences between circulating melanoma cells from the blood and the primary subcutaneous tumors from which they arose. When efficiently metastasizing human melanomas are subcutaneously transplanted into NSG mice they spontaneously metastasize, giving rise to rare circulating melanoma cells in the blood, lymph, and metastatic tumors (Piskounova et al., 2015; Tasdogan et al., 2020; Ubellacker et al., 2020). We subcutaneously transplanted M405 patient-derived melanoma cells into NSG mice. When the subcutaneous tumors reached 2.5 cm in diameter, we isolated 10,000 cell aliquots of melanoma cells by flow cytometry from mechanically dissociated subcutaneous tumors as well as from the blood of the same mice. We pooled blood from 6 to 10 mice per sample to isolate 10,000 circulating melanoma cells.
 
@@ -108,7 +136,7 @@ The method for metabolomic analysis of rare cells described in this study signif
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61980/elife-61980-fig4-v2.jpg)
 
-**Figure 4.:** (A) Overview of the method. (B) Metabolites detected above background in 10,000 HSCs/multipotent progenitors (MPPs) in this study (green numbers, 159 metabolites total) as compared to our prior study using a different method (Agathocleous et al., 2017) (blue numbers, 57 metabolites total). These data are from one experiment, representative of four independent experiments. Metabolites detected above background were calculated by comparing three whole bone marrow (WBM) or three HSC/MPP samples to three sheath fluid blanks (fold change >2, false discovery rate [FDR] < 0.05).  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Overview of the method. (B) Metabolites detected above background in 10,000 HSCs/multipotent progenitors (MPPs) in this study (green numbers, 159 metabolites total) as compared to our prior study using a different method (Agathocleous et al., 2017) (blue numbers, 57 metabolites total). These data are from one experiment, representative of four independent experiments. Metabolites detected above background were calculated by comparing three whole bone marrow (WBM) or three HSC/MPP samples to three sheath fluid blanks (fold change >2, false discovery rate [FDR] < 0.05).
 
 Cells can undergo metabolic changes upon removal from their in vivo environment (Lau et al., 2020). This is a particular problem when cells are enzymatically dissociated as they exchange metabolites with the dissociation medium, or when cells are sorted into buffers that require additional processing steps before cell lysis and metabolite extraction (Lau et al., 2020; Binek et al., 2019; Llufrio et al., 2018). To avoid changes in metabolites during cell processing, we worked quickly and kept the cells cold from the time they left the animal until they were sorted into acetonitrile. Cellular metabolism is immediately quenched by sorting into cold acetonitrile. The levels of most metabolites strongly correlated in sorted and unsorted samples (Figure 1H–K). Some metabolites exhibited changes over time during cell processing (Figure 1M) but the levels of most metabolites strongly correlated in samples at 5 and 120 min after removal from the mouse (Figure 1N–P). Therefore, most metabolite levels were not significantly changed by cell preparation and sorting, at least beyond 5 min after the mouse was killed. However, some metabolite levels might change less than a minute after the removal of cells from their normal physiological environment in a way that would not have been detected in our experiments (Lu et al., 2017). If so, it will not be possible to quantitate these metabolites in flow cytometrically isolated cells.
 
@@ -122,33 +150,351 @@ We observed differences in the abundance of glycerophospholipids between HSCs/MP
 
 ## Materials and methods
 
-## Isolation of hematopoietic cells for metabolomics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate Buffered Saline Tablet</td>
+      <td>Sigma</td>
+      <td>Cat# P4417-100TAB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol, Optima grade for LC/MS</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# A456-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile, Optima Grade for LCMS</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# A955-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MeOH, Optima Grade for LCMS</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# A456-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Water, Optima Grade for LCMS</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# W6-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>LS magnetic enrichment columns</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-042-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MidiMACS separator</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-042-301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Plastic microfuge tube opener</td>
+      <td>USA Scientific</td>
+      <td>Cat# 1400–1508</td>
+      <td>For minimizing metabolite contamination when opening microfuge tubes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse B220, clone: RA3-6B2 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–0452 U500, RRID:AB_2621690</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse Gr-1, clone: RB6-8C5 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–5931 U500, RRID:AB_2621721</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse Terr119, clone: TER-119 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–5921 U500, RRID:AB_2621720</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD2, clone: RM2-5 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–0021 T100, RRID:AB_2621657</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD3, clone: 17A2 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–0032 U100, RRID:AB_2621660</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD5, clone: 53–7.3 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100606, RRID:AB_312735</td>
+      <td>Dilution: 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD8α, clone: 53–6.7 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–0081 U500, RRID:AB_2621671</td>
+      <td>Dilution 1:400 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-e780 anti-mouse c-kit, clone: 2B8 (rat monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>Cat# 47-1171-82, RRID:AB_1272177</td>
+      <td>Dilution: 1:200 For bone marrow HSC isolation by flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 anti-mouse Sca-1, clone: D7 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108124, RRID:AB_893615</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD48, clone: HM48-1 (Armenian hamster monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>Cat# 17-0481-82, RRID:AB_469408</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD150, clone: TC15-12F12.2 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115904, RRID:AB_313683</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-Mouse CD45, clone: 30-F11 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 20–0451 U100, RRID:AB_2621573</td>
+      <td>Dilution 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-Mouse CD31 (PECAM-1), clone: 390 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 102410, RRID:AB_312905</td>
+      <td>Dilution 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-Mouse Ter119, clone: Ter119 (rat monoclonal)</td>
+      <td>Tonbo</td>
+      <td>Cat# 20–5921 U100, RRID:AB_2621609</td>
+      <td>Dilution 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-Human HLA-A, B, C, clone: G46-2.6 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555552, RRID:AB_395935</td>
+      <td>Dilution 1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse c-Kit, conjugated to para-magnetic beads, clone: 3C11 (rat monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-091-224, RRID:AB_2753213</td>
+      <td>(60 µl) 60 µl beads per3 × 108 whole bone marrow cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD45, conjugated to para-magnetic beads, clone: 30-F11 (rat monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>Cat# 130-052-301, RRID:AB_2877061</td>
+      <td>(3 µl) 3 µl beads per1 × 106 whole bone marrow cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D8417-10mg</td>
+      <td>1 µg/ml for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human – HNT-34 AML cell line</td>
+      <td>Provided by Jian Xu’s Laboratory at Children’s Research Institute at UT Southwestern Medical Center. Original source: DSMZ</td>
+      <td>ACC 600, RRID: CVCL_2071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human DND-41 cell line</td>
+      <td>Provided by Jian Xu’s Laboratory at Children’s Research Institute at UT Southwestern Medical Center. Original source: Hui Feng, M.D./Ph.D.; Boston University</td>
+      <td>RRID: CVCL_2022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human melanoma xenograft M405</td>
+      <td>Sci Trans Med 4:159ra PMCID:PMC4501487</td>
+      <td>M405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>NOD.CB17-Prkdcscid Il2rgtm1Wjl/Szj (NSG) mice</td>
+      <td>Jackson laboratories</td>
+      <td>005557, RRID:IMSR_JAX:005557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>C57BL/Ka Thy1.1 mice</td>
+      <td>Derived from Henry Kaplan’s laboratory at Stanford University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZIC-pHILIC column (2.1 × 150, 5 μm)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# 1504600001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Omics Data Analyzer (ODA)</td>
+      <td>This manuscript</td>
+      <td>https://git.biohpc.swmed.edu/CRI/ODA</td>
+      <td>See Materials and methods, section ‘Statistical analysis of metabolomics data’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism V8.3</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo V10.7.1</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Freestyle V1.5</td>
+      <td>Thermo Scientific</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trace Finder V4.0</td>
+      <td>Thermo Scientific</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Compound Discoverer V3.1</td>
+      <td>Thermo Scientific</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic Acid Optima</td>
+      <td>Fisher</td>
+      <td>Cat# A11750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium acetate, Optima</td>
+      <td>Fisher</td>
+      <td>Cat# A11450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium hydroxide, Optima</td>
+      <td>Fisher scientific</td>
+      <td>Cat# A470-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methotrexate</td>
+      <td>Selleck Chem</td>
+      <td>Cat# S1210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SplashMix</td>
+      <td>Avanti</td>
+      <td>Cat# 330707</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation of hematopoietic cells for metabolomics
 
 Bone marrow cells were collected quickly and maintained at 0–4°C throughout the staining and isolation procedure to minimize metabolic changes. Mice were euthanized by cervical dislocation. Bones were rapidly dissected and stored on ice in HBSS without Mg2+ and Ca2+ (HBSS, Corning). Muscle was stripped from the bones, then they were crushed in 2.5 ml of HBSS using a pre-cooled mortar and pestle, on ice. Bone marrow cells were filtered through a 40 µm strainer into a 50 ml conical tube. The cells were then stained with fluorochrome-conjugated antibodies against B220 (FITC, Tonbo), Gr-1 (FITC, Tonbo), Ter119 (FITC, Tonbo), CD2 (FITC, Tonbo), CD3 (FITC, Tonbo), CD5 (FITC, BioLegend), CD8 (FITC, Tonbo), c-kit (APC-eFluor780, eBiosciences), Sca-1 (PerCP-Cy5.5, BioLegend), CD48 (APC, eBiosciences), and CD150 (PE, BioLegend) for 30 min on ice. Beginning 10 min before adding the antibodies and continuing after the antibodies had been added, para-magnetic beads conjugated to anti-c-kit antibodies (Miltenyi) were added to the cells to facilitate pre-enrichment of c-kit+ cells in samples from which HSCs were sorted. To ensure that WBM cells were processed in the same way, these samples were enriched by positive selection of para-magnetic beads bound to anti-CD45 antibodies (Miltenyi). Positive selection was performed in the cold room at 4°C using a QuadroMACS manual separator (Miltenyi) and LS Columns (Miltenyi). Cells were eluted from columns in 2 ml of HBSS, centrifuged for 5 min at 300 × g, and resuspended in HBSS with 4’,6-diamidino-2-phenylindole (DAPI, 1 µg/ml, Sigma) for flow cytometry. The gating strategy for the isolation of HSCs/MPPs is depicted in Figure 3—figure supplement 1A.
 
-## Isolation of melanoma cells for metabolomics
+### Isolation of melanoma cells for metabolomics
 
 Mice were transplanted subcutaneously with human melanoma cells and the cells were allowed to spontaneously metastasize until the subcutaneous tumors reached 2.5 cm. At this point, single cell suspensions were obtained by dissociating tumors mechanically with a scalpel on ice followed by gentle trituration. Cells were filtered through a 40 μm strainer to generate a single cell suspension. Blood was collected from mice by cardiac puncture with a syringe pretreated with citrate–dextrose solution (Santa Cruz).
 
 Subcutaneous tumor and blood specimens were first incubated on ice for 10 min with ammonium-chloride-potassium (ACK) lysing buffer to eliminate red blood cells. The cells were washed with PBS and then stained with antibodies prior to flow cytometry. All antibody staining was performed for 20 min on ice, followed by washing with PBS and centrifuging at 200 × g for 5 min. Cells were stained with directly conjugated antibodies against mouse CD45 (APC, Tonbo Biosciences), mouse CD31 (APC, Biolegend), mouse Ter119 (APC, Tonbo Biosciences), and human HLA-A, -B, -C (G46-2.6-FITC, BD Biosciences). Human melanoma cells were isolated as cells that were positive for HLA and DsRed (melanoma cells were tagged with constitutive DsRed before subcutaneous transplantation), and negative for mouse endothelial (CD31) and hematopoietic markers (CD45 and Ter119). Cells were washed with PBS and resuspended in DAPI (1 μg/ml, Sigma) to eliminate dead cells from sorts and analyses. The flow cytometry gating strategies for the isolation of primary tumor cells and circulating melanoma cells are depicted in Figure 3—figure supplement 1B and C.
 
-## Cell lines
+### Cell lines
 
 Human HNT-34 (DSMZ Cat # ACC 600, RRID: CVCL_2071) and Human DND-41 (Hui Feng, M.D./Ph.D.; Boston University, RRID: CVCL_2022) cell lines were provided by Jian Xu’s laboratory at Children’s Research Institute at UT Southwestern. To confirm the identity of these cell lines, we performed qRT-PCR and western blot analyses of several leukemia signature genes (Ng et al., 2016). We also performed RNA-seq and whole genome sequencing and compared the results with previous studies. All cell lines tested negative for mycoplasma contamination using the Lonza MycoAlert kit (Lonza # LT07-118). No cell lines used in this study were found in the database of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee (ICLAC) or the National Center for Biotechnology Information (NCBI) BioSample.
 
-## Sorting versus pipetting of cultured cells for metabolomics
+### Sorting versus pipetting of cultured cells for metabolomics
 
 HNT-34 AML cells and DND-41 T-ALL cells were cultured non-adherently in RPMI with 10% fetal bovine serum and 1% penicillin/streptomycin. Cells were maintained at a density of 5 × 105 cells/ml, and cultured at 37°C with 5% CO2. AML or ALL cells were removed from the incubator and centrifuged at 4°C to pellet the cells, then resuspended in ice-cold PBS and centrifuged again, before being resuspended in ice cold PBS at a density of 1 × 106 cells/ml. Ten microliters of the AML or ALL cell suspension was then pipetted into 40 µl of 100% acetonitrile to create a final metabolite extract of 10,000 cells in 50 µl 80% acetonitrile (10 min total processing time). Ten thousand AML or ALL cells from the same cell suspensions were also sorted into 40 µl of 100% acetonitrile to create a final metabolite extract of 10,000 cells in 50 µl of 80% acetonitrile (30–60 min processing time). The cells were kept ice cold before and during sorting.
 
-## Flow cytometer preparation
+### Flow cytometer preparation
 
 Flow cytometers were thoroughly cleaned before sorting low abundance samples to minimize background. All flow cytometry was performed using a FACSAria II or a FACSAria Fusion (BD Biosciences). The fluidics shutdown protocols were performed using 80% ethanol before each sort. A clean, metabolomics-dedicated FACSAria sheath tank was rinsed with ultrapure water several times to reduce contamination, before being filled with 4 l of 0.5× PBS made from tablets (Sigma) dissolved in ultrapure water. The metabolomics sheath tank was connected to the sorter using a dedicated 0.22 µm filter. The fluidics startup protocol was performed using freshly made 0.5× PBS sheath fluid. The sorter was configured to use a 70 µm nozzle but before the nozzle was inserted two cycles of clean flow cell protocols were performed with Windex. The sheath fluid was then run through the flow cytometer without a nozzle for 5 min to flush Windex and any remaining debris from the flow cell. At the same time, the 70 µm nozzle was sonicated for 5 min to remove contamination and debris, and the cleanliness of the nozzle was confirmed by microscopy. The sheath fluid stream was turned off and the sort chamber was cleaned with a lint-free wipe and cotton swabs. The nozzle was then inserted and the stream was turned on. The sample line was cleaned again by running a 5 ml sample tube of Windex for 5 min, followed by ultrapure water for 5 min. Four-way purity sort mode was used to minimize droplet size. The cell sample, the sorting chamber, and the collection tube adapter were all maintained at 4°C during sorting.
 
-## Sorting cells for metabolomics
+### Sorting cells for metabolomics
 
 The Eppendorf tubes into which cells were sorted were loaded with 40 µl of 100% acetonitrile (Optima, Fisher Scientific) or methanol (Optima, Fisher Scientific) before sorting. We used a freshly opened bag of clean Eppendorf tubes (USA Scientific) and filtered pipette tips. The Eppendorf tubes were maintained at −20°C until just prior to sorting. Cell samples were filtered through a 40 µm strainer before sorting. The flow rate was minimized to reduce shear stress. Just before sorting, the Eppendorf tubes were opened using a clean microfuge tube opener (USA Scientific) to avoid contamination. After sorting, the tubes were sealed, vortexed, and centrifuged briefly to collect all the liquid in the bottom of the tube, and placed on dry ice. Metabolites were extracted by vortexing again for 1 min at high speed, followed by centrifugation at 17,000 × g for 15 min at 4°C. The supernatant was transferred to auto-sampler vials with low volume inserts and analyzed immediately by LC-MS (see details below).
 
-## Liquid chromatography and mass spectrometry
+### Liquid chromatography and mass spectrometry
 
 Liquid chromatography was performed with a Vanquish Flex UHPLC (Thermo Scientific). The reverse phase method used a Waters HSS C18 column (2.1 × 150 mm, 1.7 μm) with a binary solvent gradient. Mobile phase A was water with 0.1% formic acid and mobile phase B was acetonitrile with 0.1% formic acid. Gradient separation proceeded as follows: from 0 to 5 min, 0% B; from 5 min to 45 min mobile phase B was ramped linearly from 0% to 100%; from 45 min to 52 min, mobile phase B was held at 100%; from 52 to 52.1 min, mobile phase B was ramped linearly to 0%; from 52.1 to 60 min, mobile phase B was held at 0%. Throughout the course of the method, the solvent flow rate was kept to 100 μl/min and column temperature was held at 30°C.
 
@@ -158,29 +504,29 @@ All mass spectrometry data were acquired using a Thermo Scientific (Bremen, Germ
 
 Instrument performance was evaluated before each experiment by analyzing a quality control sample, 20 µl of freshly obtained rat serum. We compared peak areas of individual metabolites and the total number of metabolites detected in the control sample with control samples run in prior experiments. If the peak area values and total metabolite identifications fell outside of 1 standard deviation from the historical average, the instrument was cleaned to re-optimize sensitivity.
 
-## Metabolite library development
+### Metabolite library development
 
 To develop the metabolite library we used to analyze samples, we acquired LC-MS/MS data from high abundance samples using a data dependent MS/MS method. Metabolites were identified in an unbiased fashion using Compound Discoverer 3.0 (ThermoScientific). Metabolites were added to the initial library only if they met the following criteria. First, chromatographic peaks had to align in all samples, and peak intensity had to increase with cell number. Second, precursor mass accuracy had to be within 5 ppm of theoretical mass, with an naturally occurring isotope pattern that matched that predicted by the chemical formula. Third, the MS/MS product ion spectra had to either match an annotated database (mzCloud, Human Metabolome Data Base, Lipid Maps, and ChemSpider) or had to be confirmed by analysis of chemical standards. This process yielded a 590 metabolite library with known masses and chromatographic retention times. This library was imported into the manual peak review software Trace Finder 4.1 (ThermoScientific) for manual peak integration of all low abundance LC-MS data. To narrow this list of 590 metabolites to the metabolites that might be detected in 10,000 sorted cells, we determined which of the 590 metabolites were observed in 100,000 WBM cells. We found 289 metabolites that were detected in 100,000 WBM cells. This 289 metabolite library was used for manual analyses of LC-MS data from low abundance samples. When additional metabolites were observed in new experiments they were added to the library.
 
-## Melanoma specimens
+### Melanoma specimens
 
 Melanoma specimens were obtained with informed consent from all patients according to protocols approved by the Institutional Review Board (IRB) of the University of Michigan Medical School (IRBMED approvals HUM00050754 and HUM00050085 Quintana et al., 2012) and the University of Texas Southwestern Medical Center (IRB approval 102010–051). Materials used in the manuscript are available, though there are restrictions imposed by IRB requirements and institutional policy on the sharing of materials from patients.
 
-## Mouse studies and xenograft assays
+### Mouse studies and xenograft assays
 
 All mouse experiments complied with all relevant ethical regulations and were performed according to protocols approved by the Institutional Animal Care and Use Committee at the University of Texas Southwestern Medical Center (protocols 2016–101360 and 2019–102632). For all experiments, mice were kept on normal chow and fed ad libitum. The mice used in all experiments were 8–12-week-old C57BL/Ka mice, with the exception of melanoma studies, which were subcutaneously xenografted into 4–8-week-old NOD.CB17-Prkdcscid Il2rgtm1Wjl/SzJ (NSG) mice. Both male and female mice were used. For melanoma experiments, the maximum permitted tumor diameter was 2.5 cm. Subcutaneous tumor diameters were measured weekly with calipers until any tumor in the mouse cohort reached 2.5 cm in its largest diameter. At that point, all mice in the cohort were killed, per approved protocol, for analysis of subcutaneous tumors and circulating melanoma cells. For each replicate, subcutaneous tumors and circulating melanoma cells were pooled from 6 to 10 mice.
 
-## Methotrexate treatment
+### Methotrexate treatment
 
 Eight- to twelve-week old C57BL/Ka mice were intraperitoneally injected daily with methotrexate (1.25 mg/kg/day) or DMSO control, for 3 days. Mice were sacrificed by cervical dislocation 2 hr after the final methotrexate dose and bone marrow cells were collected for analysis.
 
-## Statistical analysis of metabolomic data
+### Statistical analysis of metabolomic data
 
 We developed an R tool for the analysis of metabolite LC-MS peak intensity data. The data were visualized using multiple methods, including violin-box plots, histograms, clustered heatmaps, principle component analysis, and correlation plots to assess data quality and identify batch effects. To assess the statistical significance of differences in metabolite levels between samples we used R’s generalized linear models (GLM) (Dobson and Barnett, 2018) function with the Gaussian distribution on log-transformed data. To compare metabolite levels in cell samples to sheath fluid samples we used GLM with log2(x+1)-transformed, non-normalized data. Metabolites with fold change >2 and FDR < 0.05 were considered above background. To assess the statistical significance of differences in metabolite levels between two types of cells, we normalized the cell samples using the relative log expression (RLE) method (Anders and Huber, 2010), and log2-transformed the normalized data. For all comparisons between samples, we used the half-minimum imputation to replace zero values with half of the minimum nonzero value for each metabolite, and used R’s GLM method. To adjust for multiple comparisons we used the FDR method. For comparisons between different cell samples, we used fold change >2 and FDR < 0.05 as cutoffs for statistical significance. When samples (such as HSCs and WBM cells) were from the same mice we used pairing as an independent variable in the GLM. When batch effects were observed, we used batch as an independent variable in the GLM. R packages used by this tool include stats, openxlsx, data.table, gtools, matrixStats, cplm, ggplot2, cowplot, pheatmap, ggcorrplot, eulerr, and GGally.
 
 The metabolomics data analysis tool can be downloaded from https://git.biohpc.swmed.edu/CRI/ODA for academic use. This tool includes an ODA.R script file, an accompanying Excel data template file, and example analyses. The script can be run from Linux/MacIntosh Terminal or Windows PowerShell using the Rscript command followed by the Excel input file name and the Excel output file name. R with the Rscript command (version 3.5.1 or later is recommended) and internet access are required to run this tool as other R packages must be auto-downloaded by the tool. Data should be entered into the Excel template and parameters for analysis selected. First-time users should read the instructions in the data template. The analysis reports and figures are saved together in the Excel output file. Figures are also saved in a folder in the .png and .ps formats. Example analysis results are provided to illustrate typical analysis settings and their outputs.
 
-## Assessing statistical significance
+### Assessing statistical significance
 
 Mice were allocated to experiments randomly and samples processed in an arbitrary order, but formal randomization techniques were not used. Prior to analyzing the statistical significance of differences among treatments, we tested whether the data were normally distributed and whether variance was similar among treatments. To test for normal distribution, we performed the Shapiro–Wilk test when 3 ≤ n < 20 or the D'Agostino Omnibus test when n ≥ 20. To test if variability significantly differed among treatments, we performed F-tests (for experiments with two treatments) or Levene’s median tests (for more than two treatments). When the data significantly deviated from normality or variability significantly differed among treatments, we log2-transformed the data and tested again for normality and variability. If the transformed data did not significantly deviate from normality and equal variability, we performed parametric tests on the transformed data. Fold change data were always log2-transformed.
 

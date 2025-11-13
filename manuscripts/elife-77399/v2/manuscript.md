@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/057jrqr44 Department of Psychology, University of East London London United Kingdom
-2. https://ror.org/0220mzb33 Institute of Psychiatry, Psychology & Neuroscience, King's College London London United Kingdom
-3. https://ror.org/02rx3b187 Université Grenoble Alpes Grenoble France
+1. Department of Psychology, University of East London London United Kingdom ([ROR:057jrqr44](https://ror.org/057jrqr44))
+2. Institute of Psychiatry, Psychology & Neuroscience, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+3. Université Grenoble Alpes Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
 
 † Corresponding author
 
@@ -44,11 +44,11 @@ We had two main research questions. First, are caregiver and infant vocalisation
 
 Our results section is in two parts. In part 1, we analyse individual and cross-dyadic arousal changes relative to all vocalisations obtained in our data. In part 2, we subdivide vocalisations into cries and speech-like vocalisations; and, in Appendix 1, by additionally subdividing vocalisations based on vocal intensity and affective valence, manually rated by trained coders (Appendix 1 sections 2.5–2.6).
 
-## Part 1 – All vocalisations
+### Part 1 – All vocalisations
 
 Our first research question was: are caregiver and infant vocalisations as inflexible with regard to arousal as those documented in non-human primates? To examine this, we conducted three analyses. First, as a preliminary analysis, we examine how vocalisations are clustered together in time. Second, we examine caregivers’ and infants’ arousal levels around vocalisations, using three approaches: (1) average arousal levels around vocalisations; (2) vocalisation likelihood around arousal peaks; and (3) Receiver Operator Characteristic (ROC) curves. Third, we examine arousal around vocalisations subdivided by the partner’s arousal at the time of the vocalisation.
 
-## Temporal clustering
+#### Temporal clustering
 
 To examine whether infants and caregivers produce clusters of vocalisations simultaneously, we performed the following analysis. For each vocalisation, we estimated the likelihood of another vocalisation occurring both before and after that vocalisation. See Figure 1a, which shows as an example the likelihood of a subsequent infant vocalisation occurring 1–3 min after an initial infant vocalisation. To compare the observed probabilities with chance we performed a control analysis in which we inserted random ‘non-vocalisation’ events into the data and repeated the analysis relative to these ‘non-vocalisations’, and compared the ‘real’ and ‘control’ datasets using a Mann-Whitney U test. We then repeated this analysis across multiple time windows from 20 min before the vocalisation to 20 min after. We also repeated it across multiple contrasts, looking both within an individual (e.g. infant vocalisations relative to infant vocalisations) and across a dyad (e.g. infant vocalisations relative to adult vocalisations). Multiple comparisons were corrected for using permutation-based clustering analysis (described Appendix 1 section 1.9).
 
@@ -68,11 +68,11 @@ Analysis 1 - average arousal levels around vocalisations. Figure 2a shows histog
 
 Analysis 2 - vocalisation likelihood around arousal peaks. Conversely, we also examined the likelihood of vocalisations occurring around peaks in arousal. We identified the moments when the infants’ and the caregivers’ z-scored arousal levels exceeded the top 10% most elevated values observed for that participant that day (Figure 2c and e). Appendix 1 section 2.4 shows the same analysis repeated with different threshold levels (5% and 20%). We then examined the likelihood of vocalisations occurring during the time windows around arousal peaks, and compared this with control data generated in the same way as described in section 1.1. Significance was calculated by performing Mann Whitney U tests and correcting for multiple comparisons using a permutation-based clustering analysis (see Appendix 1 section 1.9). Significant increases in vocalisation likelihood were observed only when we examined the likelihood of infant vocalisations around infant arousal peaks, and when we examined the likelihood of adult vocalisations around infant arousal peaks. Note that this latter finding was not significant when other threshold values were used instead (see Appendix 1 section 2.4). No significant increases in vocalisation likelihood were observed relative to adult arousal peaks. Overall, these results confirm that infant arousal peaks are associated with an increased vocalisation likelihood in both infants and (to a lesser extent) adults, but that peaks in adult arousal are not associated with increased vocalisation likelihood (a marker of greater vocal functional flexibility).
 
-## Analysis 3
+#### Analysis 3
 
 As a further test of whether arousal levels predict vocalisation likelihood differently in infants and adults, we employed a signal detection framework based on the ROC (see Figure 2d). Each dataset was systematically thresholded at all possible values from its minimum to maximum value. At each threshold, each epoch was individually classified either as a True Positive (above-threshold arousal, vocalisation present) or a False Positive (above-threshold arousal, vocalisation absent). If the systematic thresholding produced as many false alarms as hits, then the feature dimension could not be said to aid in predicting vocalisation likelihood. Following calculation of the ROC curves, the Area Under the Curve (AUC) was calculated: a higher AUC indicates that the feature dimension is more predictive. AUC values were calculated per participant and compared with a chance value of 0.5 using the non-parametric Mann-Whitney U test. Results indicated that the infant arousal was significantly predictive of infant vocalisation likelihood (p<0.001), but that other relationships were not. This is again consistent with the idea that infants’ vocalisations are inflexibly related to their arousal.
 
-## Arousal around vocalisations subdivided by partner arousal at the time of vocalisation
+#### Arousal around vocalisations subdivided by partner arousal at the time of vocalisation
 
 Our final method for examining how contingent infant and caregivers’ vocalisations are on arousal levels across the dyad was to subdivide all vocalisations by the partner’s arousal at the time of the vocalisation. Figure 3a shows caregiver arousal relative to infant vocalisations (i.e. the same as the purple line from Figure 2b), but subdivided using a quartile split by infant arousal at the time of the vocalisation. Figure 3b shows infant arousal relative to caregiver vocalisation.
 
@@ -82,17 +82,17 @@ Our final method for examining how contingent infant and caregivers’ vocalisat
 
 To estimate whether caregivers showed larger arousal changes to high arousal infant vocalisations, we performed a one-way ANOVA repeatedly for each time bin and used a permutation-based temporal clustering analysis to correct for multiple comparisons (see section 1.9). Significant effects were found (P<0.01) such that increased caregiver arousal was observed during the time periods 2–6 min and 10–14 min after high arousal infant vocalisations (Figure 3a). For infant arousal, the opposite finding was observed: high arousal caregiver vocalisations were accompanied by increased infant arousal during the period 10–6 min before the caregiver vocalisation (Figure 3b). Overall, these results suggest that high arousal infant vocalisations are followed by subsequent increases in caregiver arousal, and that high arousal caregiver vocalisations are preceded by increases in infant arousal.
 
-## Control analyses
+#### Control analyses
 
 Overall, results thus far suggest that infants’ vocalisations are contingent on their arousal state, whereas adults’ vocalisations are independent of arousal. However, we also considered two possible alternative explanations for this finding. The first is that it may be because vocalisations are more likely to occur while the participants are in physical positions associated with increased arousal. To examine this possibility, we conducted an additional analysis in which we performed video coding to examine infants’ physical position while vocalising (Appendix 1 section 2.2). In brief, this analysis suggested that 49% of infant vocalisations occurred while the infant was freely moving; 33% occurred while they were free but stationary; 7% while strapped sitting; 11% while carried. For adult vocalisations, 44% occurred while the infant was freely moving; 33% while free stationary; 10% while strapped sitting; 12% while carried. Overall when we examined how arousal levels differed by physical position we found no evidence that arousal increases around vocalisations are attributable to changes in physical position.
 
 The second possibility is that arousal increases around vocalisations may be attributable to the physical act of vocalising itself. This may seem unlikely given that we also observed increases in infant arousal relative to caregiver vocalisations (Figure 2b). Yet, because we also observed that caregiver and infant vocalisations occur in clusters (Figure 1b), it remained possible that vocalising itself increased infant arousal in these periods. To address this, we conducted a more fine-grained analysis on a different dataset in which we continuously recorded vocalisations and arousal in 11-month-old infants and their caregivers during two 5-min tabletop interactions (see Appendix 1 section 2.3). The timings and durations of vocalisations were coded to an accuracy of 20 Hz (i.e. 50 ms), and our findings examine heart rate changes on a much finer time-scale (1 sample per second compared with 1 sample per minute for the main analyses). Overall our results suggested that, in a seated tabletop interaction, caregivers showed no change in arousal relative either to vocalisations either from themselves or their partner (the infant). Infants showed non-significant increases in arousal relative to their own vocalisations, which started to increase 5 s before a vocalisation and returned to baseline 20 s after. No changes in infant arousal were observed relative to caregiver vocalisations. The fact that arousal levels start to increase before a vocalisation suggests, consistent with animal research (Borjon et al., 2016), that it is unlikely that arousal changes around vocalisations are purely attributable to the physical act of vocalising itself. The fact that no changes were observed in caregiver arousal around caregiver vocalisations is also consistent with this conclusion.
 
-## Arousal stability and arousal coupling around vocalisations
+#### Arousal stability and arousal coupling around vocalisations
 
 Our second research question was: do spontaneously occurring vocalisations during the day co-occur with specific patterns of arousal, arousal synchrony and arousal co-regulation? To address this we performed the calculation described in the Methods and illustrated in Figure 6.
 
-## Arousal stability
+##### Arousal stability
 
 Arousal stability was indexed by calculating the auto-correlation in infant and caregiver arousal. No significant changes in infant and caregiver arousal stability were observed relative to adult vocalisations (Figure 4a and e). By contrast, infant vocalisations were associated with decreased arousal stability in infants (Figure 4b), and increased arousal stability in adults (Figure 4f), in the time windows prior to the event. These findings differ markedly, however, when we subdivide infant vocalisations into cries and speech-like vocalisations, as shown in part 2.
 
@@ -100,23 +100,23 @@ Arousal stability was indexed by calculating the auto-correlation in infant and 
 
 **Figure 4.:** (a) Infant arousal stability relative to caregiver vocalisations; (b) infant arousal stability relative to infant vocalisations; (c) infant arousal stability relative to infant cries; (d) infant arousal stability relative to infant speech-like vocalisations; (e) caregiver arousal stability relative to caregiver vocalisations; (f) caregiver arousal stability relative to infant vocalisations; (g) caregiver arousal stability relative to infant cries; (h) caregiver arousal stability relative to infant speech-like vocalisations; (i) infant-caregiver arousal coupling relative to caregiver vocalisations; (j) infant-caregiver arousal coupling relative to infant vocalisations; (k) infant-caregiver arousal coupling relative to infant cries; (l) infant-caregiver arousal coupling relative to infant speech-like vocalisations. Black shows the real data; grey shows the control data. Error bars show the standard errors based on an N of 82 for a-h and 74 for i-l. Sections highlighted in red indicate areas of significant difference between real and control data after correction for multiple comparisons using a permutation-based temporal clustering procedure.
 
-## Arousal coupling
+##### Arousal coupling
 
 To measure arousal coupling we calculated the cross-correlation in infant-caregiver arousal, as described in the Methods and illustrated in Figure 8. Results suggested that significantly increased infant-caregiver arousal coupling was observed in the time windows following an adult vocalisation. For infant vocalisations, the same directional effect was observed but results were not significant. These findings again differ markedly when we subdivide infant vocalisations into cries and speech-like vocalisations, as shown in part 2.
 
-## Part 2 – Infant vocalisations subdivided by vocalisation type
+### Part 2 – Infant vocalisations subdivided by vocalisation type
 
 The findings described in part 1 indicate that 12-month-old infants’ vocalisations are contingent on their arousal state, whereas adults’ vocalisations are independent of arousal. However, there may be important differences between cries and speech-like vocalisations or protophones, which have been argued to already be used flexibly by infants during infancy (Oller et al., 2013). To further test our first research question, therefore, we examined whether different types of vocalisation, such as cries and speech-like sounds, show different patterns of association with arousal. To examine this, we recorded arousal changes relative to vocalisations subdivided by infant vocalisation type, differentiating between cries and speech-like vocalisations (see Methods).
 
-## Temporal clustering
+#### Temporal clustering
 
 To examine whether infants and caregivers produce clusters of vocalisations differently as a function of vocal type, we performed the same analysis as described for part 1, this time splitting cries and speech-like vocalisations. A significant increase in the likelihood of another infant vocalisation occurring was observed from –20 min to +20 min after each infant speech-like vocalisation. For cries, a significantly increased likelihood of a subsequent vocalisation was observed for all time intervals from –20 min to +16 min. For caregiver vocalisations following infant speech-like vocalisations, significant differences from the control were observed from –4 min to +12; for caregiver vocalisations following infant cries, from –4 min to +8 min. Overall, these results suggest that in naturalistic data, vocalisations occur in clusters around both speech-like vocalisations and cries, which is inconsistent with previous reports based on laboratory recordings which suggested that infants often produce speech-like vocalisations that are not directed to social partners (Long et al., 2020).
 
-## Arousal around vocalisations
+#### Arousal around vocalisations
 
 To examine how arousal levels changed relative to cries and speech-like vocalisations, we performed the same three analyses as described for part 1.
 
-## Analysis 1 - average arousal levels around vocalisations
+##### Analysis 1 - average arousal levels around vocalisations
 
 The peak arousal (Time 0) at the time of the vocalisation was z-score.56 for cries and.41 for speech-like vocalisations, which for both categories was significantly higher than chance (both ps <0.001) (Figure 5c). A separate Mann-Whitney U test indicated arousal at the time of the vocalisation was significantly higher for cries than for speech-like vocalisations (p<0.01). However, arousal levels after the vocalisation regress to baseline levels more rapidly following cries than following speech-like vocalisations (Figure 5d). For speech-like vocalisations, significant increases in infant arousal were observed from –20 min to +20 min after (Figure 5c); for cries, significant increases in infant arousal were observed from –20 min to 10 min after. Significant increases in caregiver arousal were observed around infant cries (from –1 to +2 min) but not infant speech-like vocalisations.
 
@@ -124,31 +124,31 @@ The peak arousal (Time 0) at the time of the vocalisation was z-score.56 for cri
 
 **Figure 5.:** (a) Likelihood of infant and caregiver vocalisations during the time period before and after known infant vocalisations. (b) Likelihood of infant cries and speech-like vocalisations during the time period relative to infant 90th centile arousal peaks. (c) Change in arousal levels relative to vocalisations. Shaded areas show the standard errors based on an N of 82. For all plots, coloured rectangles indicate time windows in which real >control after correction for multiple comparisons using a permutation-based temporal clustering procedure. (d) Plot showing same data as 5 c, but showing pre- vs post-vocalisation differences in arousal around cries and speech-like vocalisations. Values above 0 indicate that post vocalisation arousal >pre vocalisation arousal. (e) Receiver Operating Characteristic (ROC) Area Under the Curve (AUC) results. 0.5 shows a chance result. Error bars show the between-participant standard error of the means based on an N of 82. * indicates significant difference from chance p<0.05, * indicates significant difference from chance p<0.05, using the Mann-Whitney U test.
 
-## Analysis 2 - vocalisation likelihood around arousal peaks
+##### Analysis 2 - vocalisation likelihood around arousal peaks
 
 Conversely, we also found that both cries and speech-like vocalisations are significantly more likely to occur during the time periods around infant arousal peaks, defined as the top 10% most elevated values observed for that participant that day (Figure 5b). Speech-like vocalisations were significantly more likely to occur from 3 min before to 5 min are infant arousal peaks. Cries were more likely to occur up to 3 min following an infant arousal peak.
 
-## Analysis 3 – ROC curves
+##### Analysis 3 – ROC curves
 
 Results indicated that the infant arousal was significantly predictive of infant cries and speech-like vocalisations (both ps <0.001), but that caregiver arousal was not significantly predictive of either vocalisation type (Figure 5e).
 
 Overall, these results suggest that both cries and speech-like vocalisations are associated with increases in infant arousal, but that infant arousal at the time of the vocalisation is higher for cries than speech-like vocalisations. However, speech-like vocalisations lead to more long-lasting increases in arousal. Adults show arousal changes to cries but not infant speech-like vocalisations.
 
-## Arousal stability and arousal coupling around vocalisations
+### Arousal stability and arousal coupling around vocalisations
 
 Our final analyses return to research question 2, subdividing infant vocalisations into cries and speech-like vocalisations. Our aim was to answer the question: do spontaneously occurring cries and speech-like vocalisations during the day co-occur with specific patterns of arousal, arousal synchrony and arousal co-regulation?
 
-## Arousal stability
+#### Arousal stability
 
 Infant cries were accompanied by reduced infant arousal stability in infants in the time window prior to the event (Figure 4c), and increased caregiver arousal stability in the time window following the event (Figure 4g). No changes were observed around infant speech-like vocalisations.
 
-## Arousal coupling
+#### Arousal coupling
 
 For cries, increased caregiver-infant arousal cross-correlations were observed in the time windows following a cry (Figure 4k). No changes were observed for speech-like vocalisations.
 
 Overall, these results suggest that infant cries are accompanied by decreased infant arousal stability prior to the vocalisation and increased caregiver-child arousal coupling after the vocalisation; no effects are observed for infant speech-like vocalisations. These results suggest that there are differentiations between cries and speech-like vocalisations with respects to arousal co-regulation across the dyad.
 
-## Additional analysis: infants’ vocal affects and caregivers’ vocal types
+### Additional analysis: infants’ vocal affects and caregivers’ vocal types
 
 In Appendix 1 we present additional analyses to further investigate our second research question, which is to examine how different types of vocalisation play different roles in arousal co-regulation across the infant-caregiver dyad. To do this, we subdivided infant and caregiver vocalisations by vocalisation affect, intensity and type, on the basis of a manual rating of the data by trained coders (Appendix 1 sections 2.5, 2.6). Note that the vocalisations identified as negative mostly corresponded to cries (98%), and positive vocalisations mostly included protophones, with a mixture of quasi-resonant vowel (20%), fully-resonant vowel (21%), marginal syllable (9.6%), and canonical syllable (33%). First, we examined infant vocal affects as a function of valenceFig S8a, S8c and intensity (see Appendix 1 section Supplementary analyses for part 2 – arousal by infant vocalisation affect and intensity). Our results suggest that larger infant arousal changes are observed relative to negative affect, and high-intensity vocalisations, which as we report above mostly correspond to cries.
 
@@ -182,11 +182,11 @@ Overall, our data show that there is a functional dissociation between speech-li
 
 ## Materials and methods
 
-## Experimental participant details
+### Experimental participant details
 
 The project was approved by the Research Ethics Committee at the University of East London (Approval number: EXP 1617 04). Informed consent, and intent to publish, were obtained in the usual manner. Participants were recruited from the London, Essex, Hertfordshire and Cambridge regions of the UK. In total, 91 infant-caregiver dyads were recruited to participate in the study, of whom usable autonomic data were recorded from 82. Of these, usable paired autonomic data (from both caregiver and child) were obtained from 74 participants. Further details, including exclusion criteria, and detailed demographic details on the sample, are given in Appendix 1 section 1.1. The sample size was selected following power calculations presented in the original funding application ES/N017560/1. Of note, we excluded families in which the primary day-time care was performed by the male caregiver, because the numbers were insufficient to provide an adequately gender-matched sample. All participating caregivers were, therefore, female. Participants received £30 in gift vouchers as a token of gratitude for participation, split over two visits.
 
-## Experimental method details
+### Experimental method details
 
 Participating caregivers were invited to select a day during which they would be spending the entire day with their child but which was otherwise, as far as possible, typical for them and their child. The researcher visited the participants’ homes in the morning (c. 7.30 - 10am) to fit the equipment, and returned later (c. 4 - 7pm) to pick it up. The mean (std) recording time per day was 7.3 (1.4) hr.
 
@@ -200,17 +200,17 @@ The equipment consisted of two wearable layers, for both infant and caregiver (s
 
 At the start and end of each recording session, before the devices were inserted into the clothes worn by the participants, the researchers synchronised the two devices by holding them on top of one another and moving them sharply from side to side, once per second for 10 consecutive seconds. Post hoc trained coders identified the timings of these movements in the accelerometer data from each device independently. This information was used to synchronise the two recording devices.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Autonomic data parsing and calculation of the autonomic composite measure
+#### Autonomic data parsing and calculation of the autonomic composite measure
 
 Further details on the parsing of the heart rate (Appendix 1 section 1.2), heart rate variability (Appendix 1 section 1.3), and actigraphy (Appendix 1 section 1.4) are given in Appendix 1. In Appendix 1 section 1.5 we present our motivation for collapsing these three measures into a single composite measure of autonomic arousal (Figure S3). In section 1.6 we present a description of how the autocorrelation was removed from the arousal data.
 
-## Home/Awake coding
+#### Home/Awake coding
 
 Our preliminary analyses suggested that infants tended to be strapped-in to either a buggy or car seat for much of the time that they were outdoors, which strongly influenced their autonomic data. For this reason, all of the analyses presented in the paper only include data segments in which the dyad was at home and the infant was awake. A description of how these segments were identified are given in Appendix 1 (section 1.7). Following these exclusions, the mean (std) total amount of data available per dyad was 3.7 (1.7) hr, corresponding to 221.5 (102.4) 60 second epochs per dyad.
 
-## Vocal coding
+#### Vocal coding
 
 The microphone recorded a 5 s snapshot of the auditory environment every 60 s. Post hoc, trained coders identified samples in which the infant or caregiver was vocalising, and the following codings were applied. For each coding scheme, consistency of rating between coders was achieved through discussions and joint coding sessions based on an ersatz dataset, before the actual dataset were coded. All coders were blind to study design and hypothesised study outcome.
 
@@ -220,27 +220,27 @@ Infant data. (i) vocalisation type. A morphological coding scheme (Oller et al.,
 
 Adult data. (i) vocalisation type. A trained coder listened to vocalisations one by one and categorised them into the following categories: Imperative, Question, Praise, Singing, Imitation of Baby Vocalisation, Laughter, Reassurance, Sighing, Storytelling. These were then further collapsed into four supraordinate categories: Positive (Singing, Laughter); Stimulating (Question); Intrusive/negative affect (Imperative, Sighing); Sensitive (Praise, Imitation of Baby Vocalisation, Reassurance, Storytelling). Overall, 14% of vocalisations were Positive; 30% were Stimulating; 41% were Intrusive; 15% were Praise. In addition, (ii) vocal affect and (iii) vocal intensity were coded in the same way as for the infant data. In order to assess inter-rater reliability, 24% of the sample was double coded; Cohen’s kappa was 0.60, which is considered acceptable (McHugh, 2012).
 
-## Physical positions while vocalising
+#### Physical positions while vocalising
 
 We also ascertained the physical position of our participants while vocalising (Appendix 1 section 1.8).
 
-## Permutation-based temporal clustering analyses
+#### Permutation-based temporal clustering analyses
 
 To estimate the significance of time-series relationships, a permutation-based temporal clustering approach was used. This procedure, which is adapted from neuroimaging (Maris and Oostenveld, 2007; Maris, 2012), allows us to estimate the probability of temporally contiguous relationships being observed in our results, a fact that standard approaches to correcting for multiple comparisons fail to account for (Maris, 2012) (see also Oakes et al., 2013). See further details in Appendix 1 section 1.9.
 
-## ROC analyses
+#### ROC analyses
 
 In order to assess the selection of visual features we employed a signal detection framework based on the Receiver Operator Characteristic (ROC). This analyses the degree to which arousal levels predict the timings of vocalisations relative to the timings of randomly sampled comparison samples, epoch by epoch. See Results section and (Fawcett, 2006) for more details.
 
-## Arousal stability
+#### Arousal stability
 
 Arousal stability was measured by calculating the auto-correlation in infant and caregiver arousal, considered separately. The auto-correlation was calculated using the Matlab function nanautocorr.m, written by Fabio Oriani. Only the first lag term was reported as previous analyses have shown that autocorrelation data show a strong first order autoregressive tendency (Wass et al., 2016).
 
-## Arousal coupling
+#### Arousal coupling
 
 Arousal coupling was measured by calculating the zero-lag cross-correlation between infant and caregiver arousal. The cross-correlation was calculated by first applying a linear detrend to each measure independently and then calculating the Spearman’s correlation between the infant and caregiver arousal data within that window.
 
-## Moving window analyses
+#### Moving window analyses
 
 To estimate how stability and coupling changed relative to vocalisations, we used a moving window analysis (see Figure 8). Arousal data were downsampled to 1-min epochs (0.016 Hz) (which was the sampling frequency of our microphone data). The size of the moving window was set arbitrarily at 10 epochs, with a shift of 5 epochs between windows. We excerpted the stability and coupling values around each individual vocalisation, and averaged these across all vocalisations.
 
@@ -248,6 +248,6 @@ To estimate how stability and coupling changed relative to vocalisations, we use
 
 **Figure 8.:** Arousal data were downsampled to 1 min epochs (corresponding to the sampling frequency of the microphone data). The windowed auto- and cross-correlation was then calculated, using a window size of 10 epochs, which shifted 5 epochs between windows. The average change in auto- and cross-correlation relative to vocalisations was then calculated.
 
-## Control analysis
+#### Control analysis
 
 Participant by participant, for each vocalisation that was observed, a random ‘non-vocalisation’ moment was selected as a moment during the day when the dyad was at home and the infant was awake but no vocalisation occurred. The same moving window analysis described above was then repeated to examine change relative to this ‘non-vocalisation event’. The same procedure was repeated 1000 times and the results averaged. Real and observed data were compared using the permutation-based temporal clustering analyses described above.

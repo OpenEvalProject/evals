@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Bioinformatics and Systems Biology Graduate Program, University of California, San Diego La Jolla United States
-2. https://ror.org/01wjejq96 Department of Biomedical Systems Informatics and Brain Korea 21 PLUS Project for Medical Science, Yonsei University College of Medicine Seoul Republic of Korea
-3. https://ror.org/0168r3w48 Department of Computer Science and Engineering, University of California, San Diego La Jolla United States
-4. https://ror.org/00f54p054 Center for Personal Dynamic Regulomes, Stanford University Stanford United States
-5. https://ror.org/00f54p054 Department of Genetics, Stanford University Stanford United States
-6. https://ror.org/00f54p054 Howard Hughes Medical Institute, Stanford University Stanford United States
-7. https://ror.org/05byvp690 Children’s Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas United States
-8. https://ror.org/00f54p054 Sarafan Chemistry, Engineering, and Medicine for Human Health (Sarafan ChEM-H), Stanford University Stanford United States
-9. https://ror.org/00f54p054 Department of Pathology, Stanford University School of Medicine Stanford United States
-10. https://ror.org/0168r3w48 Halıcıoğlu Data Science Institute, University of California, San Diego La Jolla United States
+1. Bioinformatics and Systems Biology Graduate Program, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Department of Biomedical Systems Informatics and Brain Korea 21 PLUS Project for Medical Science, Yonsei University College of Medicine Seoul Republic of Korea ([ROR:01wjejq96](https://ror.org/01wjejq96))
+3. Department of Computer Science and Engineering, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Center for Personal Dynamic Regulomes, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Department of Genetics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+6. Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+7. Children’s Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+8. Sarafan Chemistry, Engineering, and Medicine for Human Health (Sarafan ChEM-H), Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+9. Department of Pathology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+10. Halıcıoğlu Data Science Institute, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
@@ -39,13 +39,37 @@ The recent development of computational tools that enable the detection of ecDNA
 
 A recent analysis utilized the tools AmpliconArchitect and AmpliconClassifier on 1921 tumors from TCGA to suggest that ecDNA prevalence ranges from 0–59.6% across multiple tumor tissue subtypes (Kim et al., 2020). Using AmpliconClassifier (AC), the analysis classified tumor samples into five subtypes: ecDNA(+), Breakage Fusion Bridge (BFB), complex non-cyclic, linear, and no-amplification. However, due to limitations imposed by short-read sequencing, AC may classify some ecDNA(+) structures as complex non-cyclic when breakpoints are missed. Second, BFB cycles can give rise to ecDNA formation, making discernment of the two modes of amplification difficult. To limit false-negative ecDNA classifications in the ecDNA(-) set, we treated samples with only a linear or no-amplification status as ecDNA(-), removing complex non-cyclic and BFB(+) samples from the analysis. In order to understand the transcriptional programs active in maintaining ecDNA, we selected 870 samples from 14 tumor types with at least three ecDNA(+) samples each, and compared the gene expression data of the resulting 234 ecDNA(+) and 636 ecDNA(-) samples (Supplementary file 1B).
 
-## Machine learning identifies candidate genes for ecDNA maintenance
+### Machine learning identifies candidate genes for ecDNA maintenance
 
 In lieu of identifying genes that are highly differentially expressed between ecDNA(+) and ecDNA(-) samples but driven by a small subset of cases (e.g. gene A in Figure 1—figure supplement 1), we sought to identify genes (e.g. gene B) whose expression level was predictive of ecDNA presence. We assumed that genes that were persistently over-expressed or under-expressed in ecDNA(+) samples relative to ecDNA(-) samples were more likely to be involved in ecDNA biogenesis or maintenance, or in mediating the cellular response to the presence of ecDNA.
 
 To identify a minimal set of genes whose expression values were consistently predictive of ecDNA presence, we used Boruta, (Kursa and Rudnicki, 2010) an automated feature selection algorithm (Figure 1A and Methods). Given the unequal representation of ecDNA(+) and ecDNA(-) samples within each of the 14 tumor types, we performed Boruta on 200 datasets, each consisting of a random selection of 80% of the 870 samples (Figure 1A), and chose the criterion of a gene being labeled as a Boruta gene in at least 10 of the 200 trials to be selected for downstream analysis. The Boruta analysis identified a set of 408 genes with persistent differential expression, hereafter denoted as the Core gene set.
 
-## Extending the core set with co-expressed genes
+![Figure 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-v1.jpg)
+
+**Figure 1.:** (A) The feature selection algorithm, Boruta, was applied to 200 datasets of randomly selected subsets consisting of 80% of all samples. Genes selected by Boruta in at least 10 of the 200 trials were identified as the Core set of genes (408) that were predictive of ecDNA presence. (B) Identification of highly co-expressed and stable gene clusters using pvclust expanded the Core set by an additional 235 genes to the final list of 643 CorEx genes. (C) Out of 354 clusters, the majority (344) of clusters contained one or two Core genes. (D) Most clusters were small, with only seven clusters containing more than 10 genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A differentially expressed gene (e.g. gene A) may have a higher log-fold change (LFC) value than that of a CorEx gene (e.g. gene B), but may not be persistently over- or under-expressed in ecDNA(+) samples. Therefore, no expression value cut-off can be used to separate ecDNA(+) samples from ecDNA(-) samples using gene A expression. In contrast, gene B expression can separate the two classes perfectly.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Pvclust identified 354 highly co-expressed clusters where members are selected in at least 10 out of 200 Boruta trials as a cluster. Of the 354 clusters, two did not contain any Core genes, 281 only contained Core genes, and 71 contained at least one Core and one co-expressed gene.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Cluster #74 contains a Core gene, RAE1, and a co-expressed gene, CSTF1. Cluster #3 contains nine Core genes and 12 co-expressed genes.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Of the 870 TCGA samples (234 ecDNA(+), 636 ecDNA(-)), 701 samples (174 ecDNA(+), 527 ecDNA(-)) were assigned a consensus measurement of purity estimation (CPE) by Aran et al., 2015. (A) ecDNA(-) samples have slightly lower purity than ecDNA(+) samples (MWU p-value 0.0036). (B) For samples with high tumor purity (CPE ≥0.8, n=287), the expression directionality of CorEx genes (i.e. based on the Mann-Whitney U test) was highly correlated with that of all samples (n=870). Among the 275 genes that had a higher expression in the ecDNA(+) samples of all samples, 243 genes also had a higher expression in the ecDNA(+) samples of high tumor purity samples (red dots). Among the 284 genes that had a lower expression in the ecDNA(+) samples of all samples, 181 genes also had a lower expression in the ecDNA(+) samples of high tumor purity samples (blue dots). Together, 424 of 559 (75.8%) CorEx genes with significant directionality were in agreement between all samples and samples with high tumor purity.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Of the 187 GO terms (turquoise) that were enriched by 262 up-regulated CorEx genes using 10 out of 200 Boruta trials as the selection criteria, 93 terms (49.7%) were enriched for each cut-off criteria, and 155 terms (82.9%) were enriched in at least 5 of the 8 cut-off criteria (dark blue). A minimum degree of three was required when using the python UpSet plot function (upsetplot v0.8.0).
+
+### Extending the core set with co-expressed genes
 
 We note that the Core gene set is not a comprehensive list of discriminatory genes, using a toy example. Consider gene ‘B,’ a member of the core gene set, and another gene, ‘C,’ whose expression values across all samples are nearly identical to the expression values of core gene B. The Boruta analysis would not need to assign gene C to the core set in addition to gene B, because adding both genes incurs the same predictive power as adding one. However, either, or both genes may play an important functional role. To correct this, we ran pvclust (Suzuki and Shimodaira, 2006) to cluster all gene expression values, and to identify stable clusters using multiscale bootstrap resampling (Figure 1B; Methods). We used an approximately unbiased (AU) confidence value of 0.95 to select the most highly co-expressed gene clusters. An AU confidence value of 0.95 represents the rejection of the null hypothesis that a group of genes fails to form a stable cluster at a significance level of 0.05. Recomputing the number of Boruta trials that members of a cluster were selected in, we selected clusters that appeared in at least 10 of the 200 Boruta trials (Methods). This resulted in the selection of 354 recurring clusters (Supplementary file 1C).
 
@@ -53,9 +77,29 @@ Notably, among the 354 clusters, only two clusters (with 14 total genes) did not
 
 Summarizing, the 354 clusters contained 643 genes, which included 408 Core genes and 235 additional genes (Figure 1B). Together, we define these genes as the CorEx (Core + co-expressed) genes (Supplementary file 1A). To address the concern that the selection of CorEx genes based on bulk RNA-seq expression data could be confounded by tumor purity, we utilized a composite tumor purity score (CPE) (Aran et al., 2015), and observed that the ecDNA(-) samples had slightly (but significantly) lower purity than ecDNA(+) samples (p-value 0.0036; Figure 1—figure supplement 4). This is consistent with reduced detection of ecDNA in less pure samples. However, lower sensitivity of ecDNA detection would reduce the strength of the signal but not result in false positives. Indeed, when we compared the significance of CorEx gene directionality in highly pure samples (tumor purity≥0.8; n=287) versus all samples (n=870), we found a significant correlation (Figure 1—figure supplement 4), indicating the robustness of the CorEx set. The remaining manuscript investigates the functional properties of these genes.
 
-## CorEx genes are better predictors of ecDNA status compared to other gene sets
+### CorEx genes are better predictors of ecDNA status compared to other gene sets
 
 We validated the relevance of CorEx genes in ecDNA presence by running cross-validation experiments (Figure 2A; Methods) to test the predictive power of CorEx gene expression in determining the ecDNA status of the sample. For comparisons, we used three other gene lists. The first list was a randomly chosen gene subset of identical size. For the second list, we performed a differential expression analysis using DESeq2 (Love et al., 2014) and picked the 643 most significantly differentially expressed genes in terms of the absolute value of their shrunken log-fold change estimate (LFC; Methods). Using the sign of the LFC value as the determinant for directionality, 240 of these genes were up-regulated, while 403 were down-regulated. Notably, only 86 of these Top-|LFC| genes overlapped with the CorEx gene set (Supplementary file 1F; Figure 2—figure supplement 1). For the third list, we used a generalized linear model (GLM) to predict 3012 genes whose expression levels were significantly associated with sample ecDNA status using a logit function after controlling for tumor subtype (Methods). Together, the three additional gene lists were denoted as random, Top-|LFC|, and GLM.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cross-validation experiments validating the predictive value of CorEx genes. Precision denotes the fraction of predicted samples that were truly ecDNA(+). Recall refers to the fraction of ecDNA(+) samples that were predicted correctly. (B) For precision windows of width 0.1 and a value of at least 0.5, recall values were plotted as boxplots. The interquartile ranges for CorEx and Core genes overlap, suggesting similar predictive power. CorEx genes have higher predictive rates compared to the top 643 differentially expressed genes based on logarithmic fold changes from a DESeq2 analysis (Top-|LFC| genes), 3012 significant genes selected from a generalized linear model (GLM), and 643 randomly selected genes. (C) CorEx genes were consistently up- or down-regulated in ecDNA(+) samples across tumor types, with the exception of Sarcoma (SARC). Approximately unbiased (AU) p-values from multiscale bootstrap resampling are shown at the dendrogram branches. (D) Of the 643 Top-|LFC| genes, 240 were up-regulated while 403 were down-regulated in ecDNA(+) samples. Of the CorEx genes, 325 were up-regulated while 318 were down-regulated. The absolute log-fold change (LFC) values of the Top-|LFC| gene set was significantly greater than that of the CorEx genes (p-value 1.83e-158). (E) The normalized gene expression values of the CorEx genes were significantly higher than that of the Top-|LFC| gene set (p-value <2e-308). ***p-value <0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** 86 CorEx genes are part of the 643 Top-|LFC| gene set.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cross-validation experiments validating the predictive value of CorEx genes. Precision denotes the fraction of predicted samples that were truly ecDNA(+). Recall refers to the fraction of ecDNA(+) samples that were predicted correctly. CorEx genes have similar predictive value to Core genes. (B) CorEx genes have higher predictive rates compared to 643 randomly selected genes and the top 643 differentially expressed genes based on logarithmic fold changes from a DESeq2 analysis (Top-|LFC| genes).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Core genes are also consistently up- or down-regulated in ecDNA(+) samples across tumor types, with the exception of Sarcoma (SARC), similar to CorEx genes (Figure 2C). AU p-values from multiscale bootstrap resampling are shown at the dendrogram branches.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) PNMT normalized gene expression in ecDNA(+) vs. ecDNA(-) samples. (B) ITLN1 normalized gene expression in ecDNA(+) vs. ecDNA(-) samples. In both cases, their up-regulation in ecDNA(+) samples is explained by their presence on a region with somatic, focal copy number amplification.
 
 For cross-validation tests, we performed multiple random 80–20 splits of the samples to generate 200 training and test data-sets (Figure 2A). For each training-test data-set, a Random Forest method was used to train the predictability of the five gene lists (Methods) on the training data, and the predictive performance was tested on the test data. Expectedly, none of the gene lists was a great predictor of ecDNA status of a sample (Figure 2B, Figure 2—figure supplement 2). Nevertheless, the average of the area under the precision-recall curve (AUPRC) was higher for CorEx and Core genes (0.48 and 0.5), relative to GLM and Top-|LFC| (mean AUPRC: 0.43 each). For precision values of at least 0.7, the CorEx genes had significantly higher recall than Top-|LFC| genes (Mann-Whitney U-test p-value 4.8e-21) or GLM genes (p-value 8.5e-20). In turn, the Top-|LFC| and GLM genes were more predictive than random (mean AUPRC: 0.36). Expectedly, the predictive performance did not change when switching between Core genes and CorEx genes, because each of the non-core genes in the CorEx list had an expression pattern similar to at least one Core gene (Figure 2B, Figure 2—figure supplement 2).
 
@@ -63,15 +107,23 @@ To test the persistence of CorEx genes across tumor types, we re-computed Cliff�
 
 The Top-|LFC| genes were also different from the CorEx genes by other metrics. Not surprisingly, the log-fold change (LFC) values of the top-|LFC| genes were higher than the LFC values of the CorEx genes (Figure 2D, MWU p-value 1.83e-158). However, much of the LFC change was due to the very low expression of the top-|LFC| genes in either ecDNA(+), or ecDNA(-) samples. In fact, the CorEx genes had higher expression in both ecDNA(+) and ecDNA(-) samples compared to the Differentially Expressed (DE) genes (Figure 2E, MWU p-value <2e-308). While the absolute log fold-change in expressions of CorEx genes between ecDNA(+) and ecDNA(-) samples was not that high (median: 0.30, mean: 0.41), it was persistent across all samples (variance: 0.14, standard deviation: 0.37).
 
-For example, the genes ITLN1 and PNMT had the second and eighth-highest absolute LFC values of 3.92 and 2.89 in the top-|LFC| list. However, their normalized expression values in most ecDNA(+) samples were low. ITLN1 had a normalized RSEM expression value ≤8 (21st percentile) in 210/234 ecDNA(+) samples. Similarly, the normalized RSEM expression value of PNMT in 223/234 ecDNA(+) samples was less than 8.5 (rank percentile: 41.1%). For PNMT, the differential expression was mediated by 11 ecDNA(+) samples having an expression value ≥11, and 5 of the 11 samples contained PNMT on an ecDNA amplicon (Figure 2—figure supplement 4). Similarly, three samples with high RSEM contained ITLN1 on an amplicon (Figure 2—figure supplement 4), partly accounting for the high |LFC| value. In contrast, the CorEx gene, RAE1, had a high normalized expression value in both ecDNA(+) and ecDNA(-) samples (average 9.72, rank percentile 74.3%), with a small but persistent LFC value of 0.33.
+For example, the genes ITLN1 and PNMT had the second and eighth-highest absolute LFC values of 3.92 and 2.89 in the top-|LFC| list. However, their normalized expression values in most ecDNA(+) samples were low. ITLN1 had a normalized RSEM expression value $\leq8$ (21st percentile) in 210/234 ecDNA(+) samples. Similarly, the normalized RSEM expression value of PNMT in 223/234 ecDNA(+) samples was less than 8.5 (rank percentile: 41.1%). For PNMT, the differential expression was mediated by 11 ecDNA(+) samples having an expression value ≥11, and 5 of the 11 samples contained PNMT on an ecDNA amplicon (Figure 2—figure supplement 4). Similarly, three samples with high RSEM contained ITLN1 on an amplicon (Figure 2—figure supplement 4), partly accounting for the high |LFC| value. In contrast, the CorEx gene, RAE1, had a high normalized expression value in both ecDNA(+) and ecDNA(-) samples (average 9.72, rank percentile 74.3%), with a small but persistent LFC value of 0.33.
 
 The results confirm our intuition that differential expression can arise due to multiple reasons, including low expression of the gene in a majority of samples, or the copy number amplification of a gene in a few samples. In contrast, the CorEx genes were selected based on persistent over- or under-expression in ecDNA(+) samples.
 
-## CorEx genes primarily up-regulate three biological processes: Cell cycle, cell division, and DNA damage response
+### CorEx genes primarily up-regulate three biological processes: Cell cycle, cell division, and DNA damage response
 
 To identify enriched biological processes specific to either up-regulated or down-regulated genes in ecDNA(+) samples, we combined two metrics of effect size, Cliff’s delta (Cliff, 1993; Cliff, 1996), and log fold change Love et al., 2014 to determine the directionality of CorEx genes (Supplementary file 1G; Methods). The two effect size metrics were mostly in agreement in terms of directionality. Of the 7288 genes that passed the negligible effect size thresholds in both metrics, only 14 were not in concordance. This more stringent approach, in comparison to a simple directionality based on the sign of a single effect size value, was applied given that enrichment analysis on gene sets is dependent on not only the number of up- or down-regulated genes but also the degree of overlap with genes under a specific biological process term (Methods). Using this approach, among the 643 CorEx genes, 262 genes were found to be up-regulated in ecDNA(+), while 271 were found to be down-regulated (Supplementary file 1A; Methods). 110 genes did not make the effect size cut-off. The numbers were similar for the 408 Core genes, with 190 up-regulated, 196 down-regulated, and 22 genes not making the cut-off.
 
 We performed enrichment analysis on gene sets to identify the Gene Ontology (GO) biological processes that are enriched in CorEx genes (Methods). Briefly, we applied a one-sided Fisher’s exact test using gene sets from MSigDB (Subramanian et al., 2005; Liberzon et al., 2011; Liberzon et al., 2015), using a false discovery rate of 5% (Benjamini-Hochberg procedure). The UP-regulated genes enriched 187 Biological processes (Supplementary file 1H). Note that the GO-biological process (BP) terms are not independent, because of their hierarchical organization, and sharing of genes across different GO terms. Therefore, we used an approach similar to that used in DAVID Huang et al., 2007 to cluster the biological processes enriched by the UP-regulated genes into 11 broad categories (Supplementary file 1I; Figure 3—figure supplement 1; Methods). The 11 categories were assigned a name using manual inspection of the constituent GO terms, or called ‘Other.’ The 11 categories (including ‘Other’) are shown in a waterfall plot to explain the contribution of each gene to a category (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig3-v1.jpg)
+
+**Figure 3.:** (A) Gene Ontology (GO) biological processes enriched in up-regulated genes were clustered into 11 broad categories. The horizontal barplot represents the number of GO biological processes belonging to each of the 11 broad categories, while the vertical barplot represents the number of broad categories that a specific GO biological process belongs to. (B) Genes up- or down-regulated in processes involved in major double-strand break (DSB) damage repair pathways. Many critical genes in the classical non-homologous end-joining (c-NHEJ) pathway were down-regulated in ecDNA(+) samples relative to ecDNA(-) samples.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 187 enriched Gene Ontology Biological Process (GOBP) terms represented by 169 up-regulated CorEx genes. The enriched biological processes cluster into 11 categories, which in turn can be grouped into cell-cycle regulation, Mitotic cell division, double-strand break DNA Damage response, and the HOX gene cluster.
 
 The 10 categories included expected participation of biological processes involved in (a) cell-cycle regulation (Mitotic/Meiotic Cell Cycle, G1/S, G2/M) (b) cell-division (Spindle Organization, Cell Division, Chromosome Condensation, Chromosome Segregation), (c) DNA Damage response (DNA Repair), and (d) the HOX Gene cluster. Indeed, one of the largest clusters, cluster #3, containing 9 Core genes and 12 co-expressed genes, was enriched in GO-BP terms related to the cell cycle (Supplementary file 1J). Notably, the enriched categories also included a role for the HOX genes with 17 members of the HOX family up-regulated in ecDNA(+) cancers (Supplementary file 1I). Many recent reports have associated HOX genes with cancer, including an association with their phenotypic ‘hallmarks’ (Feng et al., 2021). Genes involved in angiogenesis (HOXA2, HOXC5), genome instability (HOXC5, HOXC11), deregulating cellular energetics (HOXA4, HOXC5), and metastasis (HOXA2) were all up-regulated in ecDNA(+) cancers.
 
@@ -79,7 +131,7 @@ While the Meiotic cell-cycle was also enriched, only seven genes were allocated 
 
 Taken together, the 11 biological process categories explain 165 of the 262 up-regulated CorEx genes, and suggest that mitotic cell-division, cell cycle regulation, and DNA damage response are the three broad categories of biological processes up-regulated to ensure ecDNA presence, along with an up-regulation of genes in the HOX cluster.
 
-## CorEx genes up-regulate specific double-strand break repair pathways
+### CorEx genes up-regulate specific double-strand break repair pathways
 
 The 16 enriched DNA damage response GO terms contained the terms ‘double-strand break repair’ and ‘recombination,’ but none contained the terms ‘single-strand,’ ‘nucleotide-excision,’ or ‘mismatch-repair’ (Supplementary file 1I), suggesting that the CorEx genes are largely composed of genes involved in multiple double-strand breaks (DSB) repair pathways, which include classical non-homologous end-joining (c-NHEJ), Alternative end-joining (Alt-EJ), single-strand annealing (SSA), or homology-directed repair (HDR) (Chang et al., 2017).
 
@@ -89,9 +141,21 @@ The expression of key genes in these pathways raises the possibility of an incre
 
 TP53BP1 is key to blocking resection and promoting the c-NHEJ pathway choice, but is displaced by BRCA1 and the MRN complex to initiate resection in the broken strands Daley and Sung, 2014; Fouquin et al., 2017. BRCA1 was significantly up-regulated in ecDNA(+) samples (Figure 3B), while TP53BP-1 was significantly down-regulated (MWU p-value 0.016), although with negligible effect size (Supplementary file 1L). Supporting the role of alternative pathway choice for DDR, key genes in the Alt-EJ pathway, including PARP-1, DNA polymerase θ (POLQ), LIG1, LIG3, and FEN1 were all significantly up-regulated in ecDNA(+) samples. Homology directed repair is the preferred pathway when a sister chromatid is available to act as a template. HDR is initiated by additional and extensive resection. The genes BLM, EXO1, RPA1, and RPA3 which promote additional resection, as well as BRCA1, BRCA2, RAD51, and others that support HDR were all found to be significantly up-regulated. We can conclude that the specific pathway choice for DSB repair in ecDNA(+) may have enhanced dependence on alt-EJ and homology-directed repair pathways.
 
-## CorEx genes primarily down-regulate immune system processes
+### CorEx genes primarily down-regulate immune system processes
 
 Using a methodology similar to the analysis of the up-regulated genes, the down-regulated genes enriched 73 GO terms (Supplementary file 1O), and could be clustered into seven broad categories, including ‘Other’ (Figure 4A; Supplementary file 1P; Figure 4—figure supplement 1). Surprisingly, all categories were immunomodulatory. The most enriched broad category contained 75 CorEx genes relating to the Lymphocyte activation pathway. It included genes enriching ‘T-cell activation’ (28 CorEx genes; p-value 2.58e-05), and ‘Positive regulation of cell-cell adhesion’ (16 CorEx genes; p-value 4.49e-03). Other down-regulated pathways included Cytokine activation, especially for genes in the IL-12 pathway (six CorEx genes, p-value 7.17e-03), TNF super-family (12 CorEx genes, p-value 7.24e-03), and Inflammation, including, for example, down-regulation of Toll-like receptor 2 signaling (four CorEx genes, p-value 4.49e-03). Finally, the broad category of Leukocyte chemotaxis was also enriched among the down-regulated genes. The chemotaxis genes include many chemokines and their receptors involved in the trafficking of T cells to the site of the tumor. The remaining down-regulated genes included four fucosyltransferases, and the category marked ‘Other.’ FUT2 silencing is associated with reduced adhesion and increased metastatic potential (He et al., 2023). Notably, the category marked ‘Other’ was dominated by genes in NF-κB pathway regulation (14 CorEx genes, p-value 2.28e-02).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig4-v1.jpg)
+
+**Figure 4.:** (A) Gene Ontology (GO) biological processes enriched in down-regulated genes were clustered into seven broad categories. The horizontal barplot represents the number of GO biological processes belonging to each of the seven broad categories, while the vertical barplot represents the number of broad categories that a specific GO biological process belongs to. (B) Four of these categories map to steps in the cancer-immunity cycle. CorEx genes in three of the four categories were significantly down-regulated compared to all genes (Fisher’s exact test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** 73 enriched GOBP terms represented by 119 down-regulated CorEx genes. The enriched biological processes can be clustered into 7 categories, 6 of which are related to immune response, suggesting a broad-based deregulation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** TME sub-typing of The Cancer Genome Atlas (TCGA) samples classified as ecDNA(+) or ecDNA(-) (Amplicon Classifier ver. 0.4.9) based on the immune subtypes provided by Thorsson et al., 2018.
 
 NF-κB signaling represents a prototypical, proinflammatory pathway (Lawrence, 2009) with multiple roles, including apoptosis. Specifically, 8 of the 14 down-regulated genes involved caspase activation (Supplementary file 1Q), representing the pro-apoptotic arm of NF-κB signaling. A parallel pathway for sensing endogenous ligands secreted in cell death and cancer is mediated by Toll-like receptor (TLR) proteins (Urban-Wojciuk et al., 2019). Remarkably, all ten TLRs were significantly down-regulated in ecDNA(+) tumors. They included TLRs expressed on the cell membrane that bind lipids and proteins as well as TLRs expressed on endosomal membranes that bind DNA. The CorEx down-regulated genes also included many involved in TLR signaling, such as TLR3, CYBA, LYN, and TIRAP.
 
@@ -99,13 +163,37 @@ Four of the seven broad categories mapped to facets of the cancer immune cycle (
 
 As the RNA data were bulk-sequenced, transcripts were sampled from tumor cells and cells from the tumor microenvironment. Thorsson et al., 2018 mined immune cell expression signatures to identify six immune subtypes: wound healing (C1), IFN-γ dominant (C2), inflammatory (C3), lymphocyte depleted (C4), immunologically quiet (C5), and TGF-β dominant (C6). A recent study analyzing the tumor microenvironment (TME) of ecDNA(+) vs. ecDNA(-) samples in seven tumor subtypes revealed an association of ecDNA presence with immune evasion (Wu et al., 2022). Our results (Figure 4—figure supplement 2), which used an updated version of the classification method for these ecDNA(+) samples, were broadly consistent with those from the Wu et al., 2022. study. Our results suggested an increase in C1 and C2 subtypes and a depletion of C3 and C6 between ecDNA(+) and ecDNA(-) categories (p-value 3.96e-03, Chi-squared test). Notably, the C3 (inflammatory) subtype is associated with lower levels of somatic copy number alterations, and C6 with high lymphocyte infiltration, while C1 is associated with elevated levels of angiogenic genes. These are consistent with our findings of increased somatic copy numbers, increased expression of angiogenic genes on ecDNA(+) samples, and reduced lymphocyte infiltration.
 
-## ecDNA(+) samples carry a higher mutational burden relative to ecDNA(-) samples
+### ecDNA(+) samples carry a higher mutational burden relative to ecDNA(-) samples
 
 In order to understand if the change in the transcriptional program was driven by mutations to the genes, we checked if ecDNA(+) samples have differential levels of mutation relative to ecDNA(-). Intriguingly, we found that the total mutation burden was significantly higher in ecDNA(+) samples relative to ecDNA(-) samples (Figure 5A). The result was significant also when mutations were limited to deleterious substitutions as measured by SIFT or PolyPhen2, and high-impact insertions and deletions (Figure 5—figure supplement 1). However, when controlling for cancer type, only glioblastoma (GBM; lower mutations in ecDNA(+)), low-grade gliomas (LGG; higher mutations in ecDNA(+)), and uterine corpus endometrial carcinoma (UCEC; lower mutations in ecDNA(+)) continued to show differential total mutational burden (Figure 5—figure supplement 2). Of note, we did not examine the impact of a hypermutator phenotype, which could lead to high tumor mutation burden in tumors with mismatch repair deficiencies. Next, we tested if specific genes were differentially mutated between the two classes (Figure 5B). For deleterious/high-impact mutations, TP53 was the only gene whose mutational patterns were significantly higher in ecDNA(+) compared to ecDNA(-) (OR 2.67, Bonferroni adjusted p-value 4.22e-07). BRAF mutations, however, were more common in ecDNA(-) samples and were significant to an adjusted p-value <0.1 (OR 0.27). The excess of TP53 mutations in ecDNA(+) samples provides additional support to the hypothesis that mutations in DNA damage response or cell cycle checkpoints are important for ecDNA presence. Other genes that are differentially mutated with nominal significance (unadjusted p-value <0.005) are shown in Supplementary file 1R.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-v1.jpg)
+
+**Figure 5.:** (A) Total mutation burden of ecDNA(+) and ecDNA(-) samples. ecDNA(+) samples have significantly higher mutation burden than the ecDNA(-) samples (p-value <0.0001, Mann Whitney test). (B) Odds ratios of differentially mutated genes in ecDNA(+) and ecDNA(-) (p-value <0.005). The size of the dot indicates whether the corresponding gene belongs to the Cancer Gene Census (CGC) or not (Non-CGC). Only TP53 and BRAF showed significance at the level of FDR <0.1 (Benjamini-Hochberg).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Mutation burden of ecDNA(+) and ecDNA(-) calculated only with damaging mutations (deleterious SNVs predicted with SIFT or PolyPhen2, frameshift INDELs).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Only mutation burdens of glioblastoma (GBM), low-grade gliomas (LGG), and uterine corpus endometrial carcinoma (UCEC) were significantly different between ecDNA(+) and ecDNA(-).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Performance evaluation of the best XGBoost model selected by HyperOpt.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** PCA result performed with a binary mutational matrix of all mutated genes.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/88895/elife-88895-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** The activities of SBS signatures 1–60 in ecDNA(+) (orange) and ecDNA(-) (blue) samples (A) measured across 1440 TCGA samples and (B) separated by tumor types with at least one ecDNA(+) sample each. Activity refers to the estimated relative contribution of a specific mutational signature, and is calculated as follows: (number of variants that are attributed to a specific signature in a group)/(total number of variants in a group).
+
 We also tested if a collection of gene mutations could predict ecDNA status using XGBoost (Chen and Guestrin, 2016), which uses an adaptive boosting of ‘weak classifiers’ to predict class. Here, each mutated gene was treated as a weak classifier of ecDNA status. However, the two classes could not be separated with high accuracy (Figure 5—figure supplement 3). An unsupervised principal component analysis did not separate the two classes either. Only the first principal component explained a significant proportion (14%) of the total variance (Figure 5—figure supplement 4) and did not separate the bulk of the samples. Finally, we recapitulated earlier findings that ecDNA(+) samples enrich for APOBEC activity through the presence of the mutation signatures SBS2 and SBS13 (Bergstrom et al., 2022; Hadi et al., 2020; Figure 5—figure supplement 5). The enrichment in TP53 mutations was also consistent with previous findings (Luebeck et al., 2023). On balance, however, collections of gene mutations did not distinguish ecDNA(+) samples from ecDNA(-) samples, at least at a pan-cancer level, in contrast to the gene expression data.
 
-## Persistently occurring genes in ecDNA(+) samples may represent potential vulnerabilities
+### Persistently occurring genes in ecDNA(+) samples may represent potential vulnerabilities
 
 Any CorEx gene is either a Core gene that was selected as a feature in at least 5% of 200 Boruta trials, or be highly co-expressed with a Core gene. Because the selection criterion of 5% is arbitrary, we also tested robustness with eight other cut-offs ranging from 5-of-200–200-of-200 Boruta trials. The number of CorEx genes expectedly decreases with more stringent cut-offs. However, of the 187 GO terms that were enriched by 262 CorEx UP-genes using 10 of 200 Boruta trials as the selection criteria, 93 terms (49.7%) were enriched for each cut-off (Figure 1—figure supplement 5), and 155 terms (82.9%) were enriched in at least 5 of the 8 cut-off criteria. Given that our subsequent analyses utilized the hierarchy of GO terms and identified four GO-categories enriched by UP-regulated genes, the conclusions would hold regardless of the specific cut-off.
 
@@ -131,15 +219,81 @@ These results suggest that cancer cells that contain ecDNA have profound alterat
 
 ## Methods
 
-## TCGA sample ecDNA status classification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amplicon Classifier</td>
+      <td>https://github.com/jluebeck/AmpliconClassifier; Luebeck et al., 2024</td>
+      <td>v0.4.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Boruta</td>
+      <td>https://github.com/scikit-learn-contrib/boruta_py; Homola et al., 2024</td>
+      <td>6.21.2021</td>
+      <td>Modified to allow for early termination based on stagnant tentative counts.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cliff’s delta</td>
+      <td>https://github.com/neilernst/cliffsDelta: copy archived at Ernst, 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td>v1.36.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>generalized linear model</td>
+      <td>glm() function in R stats package</td>
+      <td>v4.2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pvclust</td>
+      <td>https://github.com/shimo-lab/pvclust; Suzuki et al., 2019</td>
+      <td>v2.2–0</td>
+      <td>Suzuki and Shimodaira, 2006</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CorEx</td>
+      <td>https://github.com/miinslin/ecDNA_Gene_Expression, copy archived at Lin, 2024</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### TCGA sample ecDNA status classification
 
 Amplicon Classifier (version 0.4.9, https://github.com/jluebeck/AmpliconClassifier) classified amplicons detected in 1,921 TCGA samples into five sub-types: ecDNA, BFB, complex non-cyclic, linear, and no-amplification. When classifying a sample with multiple amplicons, the order of preference is as follows: ecDNA, BFB, complex non-cyclic, linear, and no-amplification. Given the challenges of detecting ecDNA from short read data, and to avoid possible false-negative ecDNA classifications, samples with a BFB or complex non-cyclic status which were not called ecDNA(+), were removed from the analysis. We treated samples with the linear amplification and no-amplification classifications as ecDNA(-). Of the 1921 samples, 1535 samples classified as ecDNA(+) and ecDNA(-) had RNA-seq data, including 1406 primary solid tumor samples, 95 tumor metastasis samples, and 34 primary blood-derived cancer – peripheral blood samples. Removing metastases results in a total of 1440 samples, including 243 ecDNA(+) and 1197 ecDNA(-) samples. While the set of 1440 samples represented 24 tumor types, ten of these tumor types had insufficient numbers of ecDNA(+) samples, including four tumor types with no ecDNA(+) samples. To prevent the 561 ecDNA(-) samples representing these tumors from skewing the analysis, we removed 570 samples representing tumor types with less than three ecDNA(+) samples. This resulted in a total of 870 samples representing 14 tumor types, of which 234 were classified as ecDNA(+) and 636 were classified as ecDNA(-).
 
-## Gene expression datasets
+### Gene expression datasets
 
 Gene expression data for 32 studies part of the TCGA Pan-cancer Atlas was downloaded from cBioPortal (01.05.2021) (https://www.cbioportal.org/). The cBioPortal ‘data_RNA_Seq_v2_expression_median.txt’ data is sourced from the file ‘EB ++AdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv’ (synapse id: syn4976363). Briefly, the matrices contain batch-corrected values of the upper-quartile (UQ) normalized RSEM estimated counts data from Broad firehose (tumor.uncv2.mRNAseq_RSEM_all.txt). Missing values due to the batch effect correction process were imputed using K-nearest neighbors (KNN). For each tumor type, values were imputed based on gene vectors under the assumption that genes are similarly expressed between samples of the same tumor type. For genes with less than 60% of samples with missing values, values were imputed using the logarithmic (base 2) of the gene expression value plus one, and subsequently back-transformed when writing the imputed matrices to file. The resulting gene expression matrix used for the Boruta analysis described below consisted of 870 TCGA samples and 16,309 protein-coding genes (based on ‘hgnc_complete_set.txt’ downloaded from HGNC on 7.24.2018). To generate a RSEM raw counts matrix for the DESeq2 analysis described below, mRNAseq_Preprocess.Level_3 data was downloaded from Broad Firehose (tumor.uncv2.mRNAseq_raw_counts.txt).
 
-## Boruta analysis
+### Boruta analysis
 
 To identify a minimal set of genes whose expression values were predictive of the sample being ecDNA(+), we used Boruta (Kursa and Rudnicki, 2010), an automated feature selection algorithm that utilizes multiple iterations of the random forest classifier to determine the statistical significance of selected features. The algorithm is terminated when all features are categorized as ‘confirmed’ or ‘rejected,’ or until the user-defined number of iterations is reached. In our modified version of the BorutaPy python package (6.21.2021; https://github.com/scikit-learn-contrib/boruta_py), we set the maximum number of iterations to 400, a stagnant count maximum of 5, and a tentative count minimum of 50. This translates to the termination of Boruta if 400 iterations are reached, or if the tentative count (features that have yet to be ‘confirmed’ or ‘rejected’) falls to or below 50 and these tentative features remain tentative for five iterations.
 
@@ -147,23 +301,23 @@ While we use a standard implementation of Boruta, the method is briefly describe
 
 In order to evaluate the ability of selected features in predicting the ecDNA status of a tumor sample, we left out 20% of ecDNA(+) and 20% of ecDNA(-) samples for the hold-out testing dataset in the evaluation procedure described below, and performed Boruta on the gene expression matrix consisting of the remaining 80% of samples. However, due to the unequal representation of ecDNA(+) and ecDNA(-) samples within each of the tumor subtypes, we opted to generate 200 training (80%) and testing (20%) datasets to decrease the bias that may be introduced during random sampling. For each of the 200 datasets, a Boruta analysis was performed on the 80% training data. Features categorized as ‘confirmed’ were considered as Boruta genes for that specific trial. Of the 941 Boruta genes combined across the 200 trials, 408 genes were present in at least 10 of the 200 Boruta trials, and subsequently defined as the Core set of genes in downstream analyses.
 
-## Highly co-expressed genes
+### Highly co-expressed genes
 
 To identify genes co-expressed with the core set of Boruta genes, hierarchical clustering of the 16,309 genes was performed using the R package pvclust (Suzuki and Shimodaira, 2006) (ver. 2.2–0; dist.method=correlation, method = ward.D2, nboot = 1000). A total of 843 significant clusters (AU >0.95) with at least one Boruta gene were selected, consisting of 1375 genes. To obtain the final list of CorEx genes, we apply a minimal count of 10 trials for the gene or 10 trials for the cluster of genes seen in 200 Boruta trials. A cluster is determined to be seen in a Boruta trial if at least one of its members is selected in the trial. This results in 354 clusters, with a total number of 643 genes, of which 408 are Core genes.
 
-## Evaluation of CorEx genes
+### Evaluation of CorEx genes
 
 To evaluate a set of genes, G, as predictive of ecDNA presence in tumor samples, we performed cross-validation and hyper-parameter tuning on each of the 80% training datasets, and evaluated the final model on the corresponding hold-out 20% testing dataset using the scikit-learn package. Specifically, the gene expression matrix for cross-validation and hyper-parameter tuning consisted of m samples from the training dataset and n genes from set G. RandomizedSearchCV (n_iter = 50, cv = 5, scoring = f1) was first used to narrow down a wide range of hyper-parameters for the random forest classifier (RandomForestClassifier, class_weight=’balanced_subsample’), and GridSearchCV (cv = StratifiedKFold(n_splits = 5, shuffle = True), scoring = f1) was then used to test every combination of a smaller range of hyper-parameters given the best parameters from RandomizedSearchCV. The hyper-parameters tuned (initial values) include the number of trees in the forest (n_estimators: np.linspace(100, 2000, num = 10)), the maximum depth of the tree (max_depth: None, np.linspace(10, 100, num = 10)), the minimum number of samples required to split an internal node (min_samples_split: (2, 5, 10)), and the minimum number of samples required to be at a leaf node (min_samples_leaf: (1, 2, 4)). The best estimator from the GridSearchCV hyper-parameter tuning was then evaluated on the 20% testing dataset, where the gene expression matrix consisted of m samples from the testing dataset and n genes from set G. Performing this procedure on each of the 200 training/testing datasets resulted in 200 data points for each of the three metrics computed using sklearn.metrics: precision_score, recall_score, and average_precision_score (AUPR).
 
 We performed this procedure on the following sets of genes, G: the 408 Core genes, 408 randomly selected genes, the 643 CorEx genes, 643 randomly selected genes, a set of 643 most differentially expressed genes based on the absolute log-fold change estimates from a conventional DE analysis using DESeq2 (Love et al., 2014) as described below, and the set of 3012 significant genes from the GLM analysis described below.
 
-## Generalized linear model (GLM) analysis
+### Generalized linear model (GLM) analysis
 
-We tested each of the 16,309 genes independently in a separate logistic regression model using the glm() function in the R stats package (v4.2.0), and retained genes that were significant (p-value 0.01). Specifically, the model was defined as glm(y∼gj+t, data = M, family = binomial(link = 'logit')), where y is the response vector where  yi =1 if sample i∈{1,...,870} is ecDNA(+) and yi =0 otherwise, gj is the vector of expression values for gene j∈{1,...,16309} in samples i∈{1,...,870}, t is the covariate vector representing the tumor subtypes of samples i∈{1,...,870}, and M is the data matrix containing values of gene expression, tumor subtype, and ecDNA status for all samples. The equation for the binomial logistic regression described above is formulated as log(p1-p)=β0+β1X1+...+βkXk , where p is the probability that the dependent variable y is 1, X are the independent variables, and β are the coefficients of the model. In this case, k=1 represents the independent variable gene j and k=2 represents the tumor subtype covariate t. Of the 16,309 genes tested independently, 3012 genes were significant at p-value <0.01.
+We tested each of the 16,309 genes independently in a separate logistic regression model using the glm() function in the R stats package (v4.2.0), and retained genes that were significant (p-value 0.01). Specifically, the model was defined as glm($y∼g_{j}+t$, data = $M$, family = binomial(link = 'logit')), where y is the response vector where  $y_{i}$ =1 if sample $i\in{1,...,870}$ is ecDNA(+) and yi =0 otherwise, $g_{j}$ is the vector of expression values for gene $j\in{1,...,16309}$ in samples $i\in{1,...,870}$, t is the covariate vector representing the tumor subtypes of samples $i\in{1,...,870}$, and $M$ is the data matrix containing values of gene expression, tumor subtype, and ecDNA status for all samples. The equation for the binomial logistic regression described above is formulated as $log(\frac{p}{1-p})=\beta_{0}+\beta_{1}X_{1}+...+\beta_{k}X_{k}$ , where p is the probability that the dependent variable y is 1, $X$ are the independent variables, and $\beta$ are the coefficients of the model. In this case, k=1 represents the independent variable gene j and k=2 represents the tumor subtype covariate t. Of the 16,309 genes tested independently, 3012 genes were significant at p-value <0.01.
 
-## Default DE analysis
+### Default DE analysis
 
-We performed a default DESeq2 (Love et al., 2014) (R package, ver. 1.36.0) analysis to obtain shrunken maximum a posteriori (MAP) log-fold change estimates for effect size (i.e. LFC). Specifically, to obtain (i) LFC effect size values per gene for integration with its Cliff’s delta effect size value when determining if a gene is up- or down-regulated in ecDNA(+) samples, and (ii) a list of n top-ranked genes by absolute value of the LFC (with application of an adjusted p-value <0.05 cutoff and LFC threshold of log21.1=0.13) for use in comparison against genes selected as important in the prediction of ecDNA in samples. For comparisons against Core genes, n is set to 408, and for comparisons against CorEx genes, n, is set to 643.
+We performed a default DESeq2 (Love et al., 2014) (R package, ver. 1.36.0) analysis to obtain shrunken maximum a posteriori (MAP) log-fold change estimates for effect size (i.e. LFC). Specifically, to obtain (i) LFC effect size values per gene for integration with its Cliff’s delta effect size value when determining if a gene is up- or down-regulated in ecDNA(+) samples, and (ii) a list of n top-ranked genes by absolute value of the LFC (with application of an adjusted p-value <0.05 cutoff and LFC threshold of $log_{2}1.1=0.13$) for use in comparison against genes selected as important in the prediction of ecDNA in samples. For comparisons against Core genes, n is set to 408, and for comparisons against CorEx genes, n, is set to 643.
 
 To obtain the LFC effect size metric between ecDNA(+) vs. ecDNA(-) samples for each gene’s expression, we fed as input to DESeq2 a matrix of raw RSEM estimated counts. To take into account batch effects, we included the center and platform information of samples, downloaded from synapse id syn4976363 (EB ++GeneExpAnnotation.tsv), in the design of the DESeq object:
 
@@ -171,7 +325,7 @@ DESeq_object <- DESeqDataSetFromMatrix(countData =
 AC_0_4_9_TCGA_matrix, colData = coldata, design =
 ~batch + condition)
 
-To compute results, the lfcThreshold was set to log2(1.1) for an accurate computation of p-values and the contrast set to c(‘condition,’ ‘ecDNA(+),’ ‘ecDNA(-)’) to obtain the logarithmic fold change of the form ecDNA+ecDNA- . By setting the lfcThreshold, the null hypothesis tested is that LFC≤θ, where θ=(1.1) , and the alternative hypothesis is that |LFC|>θ. A log21.1 value is chosen as the minimal value/negligible effect size threshold as it represents a 10% fold-change, and anything below this fold-change would likely not be of biological interest (McCarthy and Smyth, 2009). The specific commands run are as follows:
+To compute results, the lfcThreshold was set to $log_{2}(1.1)$ for an accurate computation of p-values and the contrast set to c(‘condition,’ ‘ecDNA(+),’ ‘ecDNA(-)’) to obtain the logarithmic fold change of the form $\frac{ecDNA+}{ecDNA-}$ . By setting the lfcThreshold, the null hypothesis tested is that $LFC\leq\theta$, where $\theta=(1.1)$ , and the alternative hypothesis is that $|LFC|>\theta$. A $log_{2}1.1$ value is chosen as the minimal value/negligible effect size threshold as it represents a 10% fold-change, and anything below this fold-change would likely not be of biological interest (McCarthy and Smyth, 2009). The specific commands run are as follows:
 
 DESeq_object$condition <- relevel(DESeq_object$condition, ref = 
 "Non_ecDNA")
@@ -184,31 +338,80 @@ To obtain the shrunken MAP log-fold change estimates, we used the lfcShrink func
 lfcShrink(DESeq_object, lfcThreshold = log2(1.1), 
 coef="condition_ecDNA_vs_Non_ecDNA", type="apeglm")
 
-## Up- or down-regulated genes in ecDNA(+) samples
+### Up- or down-regulated genes in ecDNA(+) samples
 
 To categorize genes as ‘up-’ or ‘down-’ regulated in ecDNA(+) samples, we integrated two effect size metrics, Cliff’s delta (d) (Cliff, 1993; Cliff, 1996) and the DESeq2 shrunken MAPlog-fold change estimate (LFC Love et al., 2014). Effect size is a measure of the magnitude of deviation from the null hypothesis, and unlike p-values, has the advantage of not being impacted by sample size (Romano et al., 2006). This property is especially useful when comparing effect size values of a gene between tests where sample sizes differ. Comparing p-values between such tests would be invalid.
 
-Cliff’s delta, d, is a non-parametric measure of the separation between two distributions and ranges from –1 to 1. Given two distributions, X={i1,i2,…,im} and Y={j1,j2,…,jn}, comparisons are made between each of m values in X and n values in Y. Cliff’s delta is computed as d=#(i>j)−#(i<j)mn , where #(i>j) is the number of times a member of X is greater than a member of Y, and #(i<j) is the number of times a member of X is less than a member of Y (Cliff, 1993). A negative d indicates that values in Y tend to be higher than X, while a positive d indicates that values in X tend to be higher than Y. The magnitude of the effect size of Cliff’s delta can be separated into four levels: |d|<0.147 for negligible effects, 0.147≤|d|<0.33 for small effects, 0.33≤|d|<0.474 for medium effects, and d≥0.474 for large effects (Romano et al., 2006). The python package used to compute Cliff’s delta values can be accessed at https://github.com/neilernst/cliffsDelta (copy archived at Ernst, 2021). The input values used to compute Cliff’s delta are log-transformed normalized gene expression values plus one as described in the ‘Gene expression datasets’ section of methods.
+Cliff’s delta, d, is a non-parametric measure of the separation between two distributions and ranges from –1 to 1. Given two distributions, $X={i_{1},i_{2},…,i_{m}}$ and $Y={j_{1},j_{2},…,j_{n}}$, comparisons are made between each of m values in $X$ and n values in $Y$. Cliff’s delta is computed as $d=\frac{#(i>j)−#(i<j)}{mn}$ , where $#(i>j)$ is the number of times a member of X is greater than a member of Y, and $#(i<j)$ is the number of times a member of X is less than a member of Y (Cliff, 1993). A negative d indicates that values in Y tend to be higher than X, while a positive d indicates that values in X tend to be higher than Y. The magnitude of the effect size of Cliff’s delta can be separated into four levels: $|d|<0.147$ for negligible effects, $0.147\leq|d|<0.33$ for small effects, $0.33\leq|d|<0.474$ for medium effects, and $d\geq0.474$ for large effects (Romano et al., 2006). The python package used to compute Cliff’s delta values can be accessed at https://github.com/neilernst/cliffsDelta (copy archived at Ernst, 2021). The input values used to compute Cliff’s delta are log-transformed normalized gene expression values plus one as described in the ‘Gene expression datasets’ section of methods.
 
-The DESeq2 LFC is computed as described above. To allow integration of the Cliff’s delta effect size with the DESeq2 LFC, we also separated the LFC values into four levels: |LFC|<log2(1.1) for negligible effects, log2(1.1)≤|LFC|<log2(1.5) for small effects, log2(1.5)≤|LFC|<log2(2) or medium effects, and LFC≥log2(2) for large effects.
+The DESeq2 LFC is computed as described above. To allow integration of the Cliff’s delta effect size with the DESeq2 LFC, we also separated the LFC values into four levels: $|LFC|<log_{2}(1.1)$ for negligible effects, $log_{2}(1.1)\leq|LFC|<log_{2}(1.5)$ for small effects, $log_{2}(1.5)\leq|LFC|<log_{2}(2)$ or medium effects, and $LFC\geqlog_{2}(2)$ for large effects.
 
-For each gene, g, whether the gene is up-regulated or down-regulated in ecDNA(+) samples is determined by the signage and magnitude of its effect sizes dg and LFCg . The initial criteria for dg and LFCg to be used as a determinant in the direction of a gene is for it to have a magnitude larger than that of a negligible effect. If the signage of dg and LFCg are both positive, gene g is considered up-regulated in ecDNA(+). If only a single value has a magnitude larger than the negligible effect threshold (e.g, dg>0 and LFCg=-0.1), gene g is considered up-regulated in ecDNA(+). In the case of conflicting signages between the two values, the effect size with a larger magnitude takes precedence. For example, if dg=-0.2 and LFCg=0.847, given that dg has a small negative effect and LFCg has a large positive effect, gene g is considered up-regulated in ecDNA(+) samples.
+For each gene, g, whether the gene is up-regulated or down-regulated in ecDNA(+) samples is determined by the signage and magnitude of its effect sizes $d_{g}$ and $LFC_{g}$ . The initial criteria for $d_{g}$ and $LFC_{g}$ to be used as a determinant in the direction of a gene is for it to have a magnitude larger than that of a negligible effect. If the signage of $d_{g}$ and $LFC_{g}$ are both positive, gene g is considered up-regulated in ecDNA(+). If only a single value has a magnitude larger than the negligible effect threshold (e.g, $d_{g}>0$ and $LFC_{g}=-0.1$), gene g is considered up-regulated in ecDNA(+). In the case of conflicting signages between the two values, the effect size with a larger magnitude takes precedence. For example, if $d_{g}=-0.2$ and $LFC_{g}=0.847$, given that $d_{g}$ has a small negative effect and $LFC_{g}$ has a large positive effect, gene g is considered up-regulated in ecDNA(+) samples.
 
-## Tumor heatmap
+### Tumor heatmap
 
 A Cliff’s delta effect size matrix representing 643 CorEx genes was generated to compare TCGA with tumor expression patterns. For each of the 11 tumor types with at least 10 ecDNA(+) and at least 10 ecDNA(-) samples, we re-computed Cliff’s delta. Using a Fisher’s exact test (fisher_exact function from the scipy.stats python package; alternative hypothesis: two-sided), we tested the null-hypothesis of whether the up- and down- directionality of CorEx genes in TCGA vs. each tumor were independent of each other. The contingency table is as below. The directionality of a gene (up or down) was based solely on the signage of the gene’s Cliff’s delta effect size value.
 
-## Gene ontology (GO) enrichment analysis
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2"></th>
+      <th colspan="2">Tumor</th>
+    </tr>
+    <tr>
+      <th>UP</th>
+      <th>DOWN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">TCGA</td>
+      <td>UP</td>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>DOWN</td>
+      <td>c</td>
+      <td>d</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene ontology (GO) enrichment analysis
 
 To identify Gene Ontology Biological Process (GOBP) terms that were enriched in either the set of down-regulated or up-regulated CorEx genes, we applied one-sided Fisher’s exact tests (alternative=‘greater;’ scipy.stats python package) on 2x2 contingency tables for each GOBP term. Specifically, in the contingency table below, N is the total number of genes in the universe (i.e. 16 k for the number of genes measured in the RNAseq data), n is the number of DE genes (either up- or down-regulated in ecDNA(+) samples), m is the number of genes belonging to the GOBP term as defined by gene sets from MSigDB (c5.go.bp.v7.5.1.entrez), and k is the number of DE genes that belong to the GOBP term. The false discovery rate was controlled at 5% and adjusted p-values were computed using the Benjamini-Hochberg procedure (fdr correction from python statsmodels package). A final set of GOBP terms with adjusted p-value <0.05 was used for downstream analysis.
 
-## Clustering gene sets
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>DE</th>
+      <th>Non-DE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inside GOBP term</td>
+      <td>k</td>
+      <td>m-k</td>
+    </tr>
+    <tr>
+      <td>Outside GOBP term</td>
+      <td>n-k</td>
+      <td>N+k-n-m</td>
+    </tr>
+  </tbody>
+</table>
 
-To cluster enriched gene sets into categories for visualization purposes, Cohen’s kappa coefficient (python sklearn cohen_kappa_score) was used to determine term-term ‘connectivity’ (agreement of term-term pairs) – an approach described in the DAVID paper (Huang et al., 2007). Given a r×c binary matrix, where enriched GOBP terms are rows, CorEx genes are columns, and values are 1 if a CorEx gene is part of the GOBP term or 0 otherwise, kappa scores were computed between each pair of terms, where term ti∈t and i={1,2,3,….n}: Kappa_Score(tx,ty), where x∈i and y ∈i.
+### Clustering gene sets
 
-Each term, ti , formed an initial seeding group, gi , where a term tx is part of gi if Kappa_Score(ti,tx)≥scorethreshold. If at least 50% of term-term pairs in gi have a Kappa_Score≥scorethreshold, the initial seeding group gi is retained for the next step. The second criteria ensures that terms within the same seeding group have strong interconnectivity. An iterative merging of seeding groups then follows: groups sharing p% or more members are merged. The representative term for each group was determined as the member with the highest interconnectivity score with other members of the group. After the automatic grouping process, a manual inspection leads to the merging of outliers or smaller groups into representative groups. We used a kappa score threshold of 0.5, and a condition of ≥25% of shared members when merging for the down-regulated genes, and a kappa score threshold of 0.6 and a condition of p≥50% of shared members when merging for the up-regulated genes.
+To cluster enriched gene sets into categories for visualization purposes, Cohen’s kappa coefficient (python sklearn cohen_kappa_score) was used to determine term-term ‘connectivity’ (agreement of term-term pairs) – an approach described in the DAVID paper (Huang et al., 2007). Given a $r\timesc$ binary matrix, where enriched GOBP terms are rows, CorEx genes are columns, and values are 1 if a CorEx gene is part of the GOBP term or 0 otherwise, kappa scores were computed between each pair of terms, where term $t_{i}\int$ and $i={1,2,3,….n}$: $Kappa_Score(t_{x},t_{y})$, where $x\ini$ and y $\ini$.
 
-## DDR pathway genes
+Each term, $t_{i}$ , formed an initial seeding group, $g_{i}$ , where a term $t_{x}$ is part of $g_{i}$ if $Kappa_Score(t_{i},t_{x})\geqscorethreshold$. If at least 50% of term-term pairs in $g_{i}$ have a $Kappa_Score\geqscorethreshold$, the initial seeding group $g_{i}$ is retained for the next step. The second criteria ensures that terms within the same seeding group have strong interconnectivity. An iterative merging of seeding groups then follows: groups sharing p% or more members are merged. The representative term for each group was determined as the member with the highest interconnectivity score with other members of the group. After the automatic grouping process, a manual inspection leads to the merging of outliers or smaller groups into representative groups. We used a kappa score threshold of 0.5, and a condition of ≥25% of shared members when merging for the down-regulated genes, and a kappa score threshold of 0.6 and a condition of p≥50% of shared members when merging for the up-regulated genes.
+
+### DDR pathway genes
 
 We hand-curated 88 genes for double-stranded break DNA damage repair pathways (a-EJ, HR, c-NHEJ, SSA) via an extensive literature search, and added an additional 51 genes from the following MSigDB (c5.go.bp.v2022.1.Hs.entrez.gmt) GO biological process terms: GO:0097680 (double-strand break repair via classical nonhomologous end joining), GO:0097681 (double-strand break repair via alternative nonhomologous end joining), GO:1905168 (positive regulation of double-strand break repair via homologous recombination), and GO:0045002 (double strand break repair via single-strand annealing). This resulted in a final list of 129 genes. The directionality of the genes, as either up- or down-regulated in ecDNA(+) samples, is based on the full set of 1440 samples, consisting of 243 ecDNA(+) and 1197 ecDNA(-) samples representing 24 tumor types (Supplementary file 1M; Supplementary file 1N).
 
@@ -216,30 +419,130 @@ To test whether the number of genes passing our effect size thresholds for all g
 
 Contingency table:
 
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>UP</th>
+      <th>DOWN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All genes</td>
+      <td>5256</td>
+      <td>5251</td>
+    </tr>
+    <tr>
+      <td>Pathway</td>
+      <td>c</td>
+      <td>d</td>
+    </tr>
+  </tbody>
+</table>
+
 Pathway values:
 
-## Physical presence on amplicons
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>c</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c-NHEJ</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Alt-EJ</td>
+      <td>11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HR</td>
+      <td>46</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>SSA</td>
+      <td>11</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Physical presence on amplicons
 
 To determine the physical presence of a gene on an amplicon, gene coordinates listed in the gene annotations file GRCh37/human_hg19_september_2011/Genes_July_2010_hg19.gff, downloaded from the AA repo on 3/21/2022, were mapped to amplicon genomic intervals (bed files). A gene is determined to be physically present on an amplicon if its genomic coordinates are fully encompassed within the amplicon genomic intervals.
 
-## Mutational analysis
+### Mutational analysis
 
-We pulled the list of mutations from the open-access version of the MC3 dataset (https://ellrottlab.org/project/mc3/), and then investigated differences between ecDNA(+) and ecDNA(-) samples. Synonymous mutations were excluded when calculating the mutation burden. For the differentially mutated gene analysis, only damaging mutations were selected by using snpEff (Cingolani et al., 2012) annotation which was originally included in the MC3 dataset. First, mutations annotated as HIGH in the IMPACT column were selected to obtain frameshift INDELs and stop gain SNVs. Next, mutations predicted to be damaging by SIFT (Ng and Henikoff, 2003) and PolyPhen2 (Adzhubei et al., 2013), were selected to obtain damaging missense mutations. Finally, we generated 2-by-2 contingency tables for each gene with cells a, b, c, and d representing the number of individuals with and without damaging mutations in ecDNA(+) and (-) tumors. The odds ratios were computed as OR=adbc , where a is the number of individuals in ecDNA(+) with the mutation, b is the number of individuals in ecDNA(+) without the mutation, c is the number of individuals in ecDNA(-) with the mutation, and d is the number of individuals in ecDNA(-) without the mutation. To determine if a gene contained mutations that were implicated in cancer, we checked genes against the Cancer Gene Census (CGC) database (v97) (Sondka et al., 2018), marking genes in the database as CGC and those that were not as non-CGC.
+We pulled the list of mutations from the open-access version of the MC3 dataset (https://ellrottlab.org/project/mc3/), and then investigated differences between ecDNA(+) and ecDNA(-) samples. Synonymous mutations were excluded when calculating the mutation burden. For the differentially mutated gene analysis, only damaging mutations were selected by using snpEff (Cingolani et al., 2012) annotation which was originally included in the MC3 dataset. First, mutations annotated as HIGH in the IMPACT column were selected to obtain frameshift INDELs and stop gain SNVs. Next, mutations predicted to be damaging by SIFT (Ng and Henikoff, 2003) and PolyPhen2 (Adzhubei et al., 2013), were selected to obtain damaging missense mutations. Finally, we generated 2-by-2 contingency tables for each gene with cells a, b, c, and d representing the number of individuals with and without damaging mutations in ecDNA(+) and (-) tumors. The odds ratios were computed as $OR=\frac{ad}{bc}$ , where a is the number of individuals in ecDNA(+) with the mutation, b is the number of individuals in ecDNA(+) without the mutation, c is the number of individuals in ecDNA(-) with the mutation, and d is the number of individuals in ecDNA(-) without the mutation. To determine if a gene contained mutations that were implicated in cancer, we checked genes against the Cancer Gene Census (CGC) database (v97) (Sondka et al., 2018), marking genes in the database as CGC and those that were not as non-CGC.
 
-## Classification with mutational status
+### Classification with mutational status
 
 First, we created a binary matrix representing whether a gene is damaged or not, from the MC3 damaging mutation set described as above. Then we divided the whole matrix into 80% of the training set and 20% of the test set. Hyperopt was applied to the training set to select the best parameters for the XGBoost (Chen and Guestrin, 2016) model. The optimal parameters estimated by Hyperopt (eta = 0.1, max_depth = 6, min_child_weight = 3.0, scale_pos_weight = 4.9) were input to the XGBoost model, and the ecDNA status of each sample were also input as an answer set. The performance of the model was checked by inputting the 20% test set to the model and comparing the output result with the answer. Principal component analysis was also performed with the same mutational matrix as above, using the scikit.learn package.
 
-## Ranking of CorEx genes
+### Ranking of CorEx genes
 
 To rank CorEx genes by importance, we computed harmonic mean rank values based on three categories: (a) the average Gini importance statistic or mean decrease impurity (MDI) MDI (feature importance) values extracted from the trained random forest models on 200 training sets during the evaluation method described above, (b) the number of Boruta trials (out of 200) that a gene is selected in, rounded to 2-digits, and (c) the number of Boruta trials (out of 200) that a gene is selected in when counting by cluster, rounded to 2-digits. The ranks for each category are adjusted separately so that genes with the same value share the same rank value. For example, if using the Boruta trial count as the rank value:
 
-The harmonic mean rank is defined as:harmonicmeanrank=31a+1b+1c
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Trial count</th>
+      <th>Round (Trial count /10.0)</th>
+      <th>Rank</th>
+      <th>Adjusted rank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene A</td>
+      <td>200</td>
+      <td>20</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Gene B</td>
+      <td>200</td>
+      <td>20</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Gene C</td>
+      <td>200</td>
+      <td>20</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Gene D</td>
+      <td>187</td>
+      <td>19</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
-## Tumor immune subtype
+The harmonic mean rank is defined as:
+
+$$
+harmonicmeanrank=\frac{3}{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}}
+$$
+
+### Tumor immune subtype
 
 We classified ecDNA(+) and ecDNA(-) samples into the six immune subtype categories (Thorsson et al., 2018) provided in Table S6 from Bagaev et al., 2021.
 
-## Impact of tumor purity on CorEx gene expression
+### Impact of tumor purity on CorEx gene expression
 
-To investigate the effects of the presence of non-cancer tissue (impurity) in bulk RNA-seq samples on the analyses performed in this study, we utilized the consensus measurement of purity estimations (CPE) for TCGA samples from a publication by Aran et al., 2015. Of the 870 TCGA samples (234 ecDNA(+), 636 ecDNA(-)) with gene expression (RNA-seq) data, 701 samples (174 ecDNA(+), 527 ecDNA(-)) were assigned a CPE value by Aran et al.,. To determine if the presence of undetected ecDNA in ecDNA(-) samples would confound the results by reducing the discriminating power of genes, we measured the expression directionality of CorEx genes in all samples (n=870) versus samples which had a high tumor purity (CPE ≥0.8, n=287). Specifically, p-values were obtained by performing Mann-Whitney U rank tests (scipy.stats python package) on gene expression values of ecDNA(+) and ecDNA(-) samples for both the 870 TCGA samples and 287 TCGA samples with high tumor purity. Genes with a significantly (p-value ≤0.05) higher expression in ecDNA(+) samples (alternative=‘greater’) were labeled as ‘UP,’ while genes with a significantly lower expression in ecDNA(+) samples (alternative=‘less’) were labeled as ‘DOWN.’ To generate a plot that compared the gene directionality of all samples vs. high-purity samples using p-values, a function F was applied to p-values. Specifically, F(p)=d⋅log10(p), where p is the p-value and d=1 if directionality is ‘DOWN’ and d=-1 if directionality is ‘UP.’
+To investigate the effects of the presence of non-cancer tissue (impurity) in bulk RNA-seq samples on the analyses performed in this study, we utilized the consensus measurement of purity estimations (CPE) for TCGA samples from a publication by Aran et al., 2015. Of the 870 TCGA samples (234 ecDNA(+), 636 ecDNA(-)) with gene expression (RNA-seq) data, 701 samples (174 ecDNA(+), 527 ecDNA(-)) were assigned a CPE value by Aran et al.,. To determine if the presence of undetected ecDNA in ecDNA(-) samples would confound the results by reducing the discriminating power of genes, we measured the expression directionality of CorEx genes in all samples (n=870) versus samples which had a high tumor purity (CPE ≥0.8, n=287). Specifically, p-values were obtained by performing Mann-Whitney U rank tests (scipy.stats python package) on gene expression values of ecDNA(+) and ecDNA(-) samples for both the 870 TCGA samples and 287 TCGA samples with high tumor purity. Genes with a significantly (p-value ≤0.05) higher expression in ecDNA(+) samples (alternative=‘greater’) were labeled as ‘UP,’ while genes with a significantly lower expression in ecDNA(+) samples (alternative=‘less’) were labeled as ‘DOWN.’ To generate a plot that compared the gene directionality of all samples vs. high-purity samples using p-values, a function F was applied to p-values. Specifically, $F(p)=d⋅log_{10}(p)$, where p is the p-value and $d=1$ if directionality is ‘DOWN’ and $d=-1$ if directionality is ‘UP.’

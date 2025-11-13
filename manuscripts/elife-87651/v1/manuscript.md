@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/024mrxd33 School of Biomedical Sciences, University of Leeds Leeds United Kingdom
+1. School of Biomedical Sciences, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
 
 † Corresponding author
 
 ## Abstract
 
-The muscle synergy is a guiding concept in motor control research that relies on the general notion of muscles ‘ working together ’ towards task performance. However, although the synergy concept has provided valuable insights into motor coordination, muscle interactions have not been fully characterised with respect to task performance. Here, we address this research gap by proposing a novel perspective to the muscle synergy that assigns specific functional roles to muscle couplings by characterising their task-relevance. Our novel perspective provides nuance to the muscle synergy concept, demonstrating how muscular interactions can ‘ work together ’ in different ways: (1) irrespective of the task at hand but also (2) redundantly or (3) complementarily towards common task-goals. To establish this perspective, we leverage information- and network-theory and dimensionality reduction methods to include discrete and continuous task parameters directly during muscle synergy extraction. Specifically, we introduce co-information as a measure of the task-relevance of muscle interactions and use it to categorise such interactions as task-irrelevant (present across tasks), redundant (shared task information), or synergistic (different task information). To demonstrate these types of interactions in real data, we firstly apply the framework in a simple way, revealing its added functional and physiological relevance with respect to current approaches. We then apply the framework to large-scale datasets and extract generalizable and scale-invariant representations consisting of subnetworks of synchronised muscle couplings and distinct temporal patterns. The representations effectively capture the functional interplay between task end-goals and biomechanical affordances and the concurrent processing of functionally similar and complementary task information. The proposed framework unifies the capabilities of current approaches in capturing distinct motor features while providing novel insights and research opportunities through a nuanced perspective to the muscle synergy.
+The muscle synergy is a guiding concept in motor control research that relies on the general notion of muscles ‘working together’ towards task performance. However, although the synergy concept has provided valuable insights into motor coordination, muscle interactions have not been fully characterised with respect to task performance. Here, we address this research gap by proposing a novel perspective to the muscle synergy that assigns specific functional roles to muscle couplings by characterising their task-relevance. Our novel perspective provides nuance to the muscle synergy concept, demonstrating how muscular interactions can ‘work together’ in different ways: (1) irrespective of the task at hand but also (2) redundantly or (3) complementarily towards common task-goals. To establish this perspective, we leverage information- and network-theory and dimensionality reduction methods to include discrete and continuous task parameters directly during muscle synergy extraction. Specifically, we introduce co-information as a measure of the task-relevance of muscle interactions and use it to categorise such interactions as task-irrelevant (present across tasks), redundant (shared task information), or synergistic (different task information). To demonstrate these types of interactions in real data, we firstly apply the framework in a simple way, revealing its added functional and physiological relevance with respect to current approaches. We then apply the framework to large-scale datasets and extract generalizable and scale-invariant representations consisting of subnetworks of synchronised muscle couplings and distinct temporal patterns. The representations effectively capture the functional interplay between task end-goals and biomechanical affordances and the concurrent processing of functionally similar and complementary task information. The proposed framework unifies the capabilities of current approaches in capturing distinct motor features while providing novel insights and research opportunities through a nuanced perspective to the muscle synergy.
 
 ## Introduction
 
@@ -23,11 +23,11 @@ In Ó’ Reilly and Delis, 2022, we considered, key limitations among current ap
 
 Further to the above, in its currently defined state, the muscle synergy concept describes the role of common neural drives to functional muscle groupings working redundantly towards a common task-goal (Bruton and O’Dwyer, 2018; Bizzi and Cheung, 2013; Berret et al., 2019; Latash, 2008; Cheung and Seki, 2021). However, recent influential works have highlighted several other important mechanisms involved in this low-dimensional control strategy that are not well recognised by the muscle synergy concept (Ronzano et al., 2021; Hug et al., 2021; Hug et al., 2023; Alessandro et al., 2020; Valero-Cuevas et al., 2009; Nazarpour et al., 2012; Todorov and Jordan, 2002; d’Avella and Bizzi, 2005; Cheung et al., 2005). Such insights include the partitioning of motor variability by the nervous system into task-relevant and -irrelevant spaces and the cooperation between functionally distinct muscle groupings in the form of cross-module functional connectivities. These observations highlight the need for a refinement of the muscle synergy concept to comprehensively describe diverse muscle interactions during movement, including their partitioning into task-relevant and -irrelevant spaces and the characterisation of their functional roles.
 
-We thus motivate the development of a more nuanced perspective to the muscle synergy concept and the general notion of ‘working together’ that comprehensively describes the muscle interactions underlying motor behaviour. To do so, we propose an information-theoretic approach (based on the NIF pipeline) that characterises the contributions of muscle couplings to task performance. In other words, we frame the notion of ‘working together’ in more specific terms of shared information between pairs of spatiotemporal muscle activations ([mx,my] Figure 1.3a) (red and green sets, respectively) and a corresponding task parameter (τ) (blue set) (see Venn diagrams in Figure 1.3b). Among current approaches to muscle synergy analysis, the shared information between muscles (yellow and white areas in Figure 1.1a) is quantified, using dimensionality reduction, as common patterns of variability. These common patterns are essentially task-agnostic and may contain patterns of variability (1) present in specific tasks (i.e. task-relevant white shaded area in Figure 1.1a as well as 2) shared across tasks (i.e. task-irrelevant, yellow shaded area in Figure 1.1a). Our proposed approach dissects patterns of muscle variability in space, time, and across trials in terms of their task-relevance and functional similarity in a generalizable manner using MI (Figure 1.3a–c). This enables us to decompose muscle activations into muscle pair–task parameter couplings and characterise their combined functional roles. We can then extract low-dimensional representations of these muscle couplings, that is muscle networks with specific spatial and temporal signatures, across participants and tasks (Figure 1.3c).
+We thus motivate the development of a more nuanced perspective to the muscle synergy concept and the general notion of ‘working together’ that comprehensively describes the muscle interactions underlying motor behaviour. To do so, we propose an information-theoretic approach (based on the NIF pipeline) that characterises the contributions of muscle couplings to task performance. In other words, we frame the notion of ‘working together’ in more specific terms of shared information between pairs of spatiotemporal muscle activations ($[m_{x},m_{y}]$ Figure 1.3a) (red and green sets, respectively) and a corresponding task parameter ($\tau$) (blue set) (see Venn diagrams in Figure 1.3b). Among current approaches to muscle synergy analysis, the shared information between muscles (yellow and white areas in Figure 1.1a) is quantified, using dimensionality reduction, as common patterns of variability. These common patterns are essentially task-agnostic and may contain patterns of variability (1) present in specific tasks (i.e. task-relevant white shaded area in Figure 1.1a as well as 2) shared across tasks (i.e. task-irrelevant, yellow shaded area in Figure 1.1a). Our proposed approach dissects patterns of muscle variability in space, time, and across trials in terms of their task-relevance and functional similarity in a generalizable manner using MI (Figure 1.3a–c). This enables us to decompose muscle activations into muscle pair–task parameter couplings and characterise their combined functional roles. We can then extract low-dimensional representations of these muscle couplings, that is muscle networks with specific spatial and temporal signatures, across participants and tasks (Figure 1.3c).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig1-v1.jpg)
 
-**Figure 1.:** (1.1a, b) We propose a novel approach to mapping muscle couplings to the task space. Among current muscle synergy analysis approaches, muscle couplings are quantified in isolation of the task solely using dimensionality reduction. Using our approach, the functional characteristics of muscle interactions can be quantified in terms of the similarity of their encoded task information. We do so by determining the coupling between  and a corresponding task parameter ([mx,my]) using mutual information (MI). From this perspective, task-redundant muscle couplings (pink shaded area in pink-orange intersection) represent muscles cooperating towards similar task-goals, while task-synergistic muscle couplings (orange shaded area in pink-orange intersection) encapsulate the task information provided by a muscle pairing acting towards complementary task-goals. Muscle couplings present across tasks (i.e. task-irrelevant) are quantified by conditioning the MI between τ pairs with respect to [mx,my] (yellow intersection). (τ1.2) A description of redundant and synergistic interactions. (a) Net redundant interactions are defined by a greater amount of information generated by the sum of individual observation of  and mx (my) than their simultaneous observation ([mx+my]). ([mx,my]b) In a net synergistic interaction,  provides more information than [mx,my]. ([mx+my]1.3a, c) An overview of the approach. Spatiotemporal muscle activation samples are extracted across trials from large-scale electromyographic (EMG) datasets and concatenated into vectors, forming  pairs.The derived muscle couplings are then run through the network information framework (NIF) pipeline ([mx,my]Ó’ Reilly and Delis, 2022), producing low-dimensional, multiplexed space–time muscle networks.
+**Figure 1.:** (1.1a, b) We propose a novel approach to mapping muscle couplings to the task space. Among current muscle synergy analysis approaches, muscle couplings are quantified in isolation of the task solely using dimensionality reduction. Using our approach, the functional characteristics of muscle interactions can be quantified in terms of the similarity of their encoded task information. We do so by determining the coupling between $[m_{x},m_{y}]$ and a corresponding task parameter ($\tau$) using mutual information (MI). From this perspective, task-redundant muscle couplings (pink shaded area in pink-orange intersection) represent muscles cooperating towards similar task-goals, while task-synergistic muscle couplings (orange shaded area in pink-orange intersection) encapsulate the task information provided by a muscle pairing acting towards complementary task-goals. Muscle couplings present across tasks (i.e. task-irrelevant) are quantified by conditioning the MI between $[m_{x},m_{y}]$ pairs with respect to $\tau$ (yellow intersection). (1.2) A description of redundant and synergistic interactions. (a) Net redundant interactions are defined by a greater amount of information generated by the sum of individual observation of $m_{x}$ and $m_{y}$ ($[m_{x}+m_{y}]$) than their simultaneous observation ($[m_{x},m_{y}]$). (b) In a net synergistic interaction, $[m_{x},m_{y}]$ provides more information than $[m_{x}+m_{y}]$. (1.3a, c) An overview of the approach. Spatiotemporal muscle activation samples are extracted across trials from large-scale electromyographic (EMG) datasets and concatenated into vectors, forming $[m_{x},m_{y}]$ pairs.The derived muscle couplings are then run through the network information framework (NIF) pipeline (Ó’ Reilly and Delis, 2022), producing low-dimensional, multiplexed space–time muscle networks.
 
 Crucially, using this novel framework, we can separately quantify the task-irrelevant (i.e. muscle interactions present across tasks) information conveyed by a muscle coupling (yellow intersection in Figure 1.1b) from the task-relevant information (pink-and-orange shaded area in Figure 1.1b). These task-relevant interactions can be either sub-additive/redundant (i.e. the muscle coupling provides less information about the task compared to the sum of the individual muscle patterns) or super-additive/synergistic (i.e. the muscle coupling conveys more task information than the sum of individual muscle-task encodings). Conceptually, the information a muscle interaction provides is considered redundant when all the information can essentially be found in one of the muscles (pink shaded area Figure 1.2a). This redundant task information thus reveals a functional similarity between muscle activations. Alternatively, we can also identify muscles that act synergistically towards complementary task-goals, meaning their variations provide different information about a motor behaviour. A key, quantifiable attribute of this complementary interaction is the emergent task information (synergy) they provide when considered together (orange shaded area Figure 1.2b). From this novel perspective, muscle activations can ‘work together’ not just similarly towards a common task-goal but also complementarily towards different aspects of motor behaviour and concurrently towards objectives functionally irrelevant to overt task performance, thus providing a comprehensive view of the muscle interactions governing coordinated movement.
 
@@ -35,17 +35,17 @@ To illustrate this novel conceptual and analytical framework, we conducted two e
 
 ## Results
 
-Our primary aim here is to characterise muscle synergies in task space by quantifying the contributions of muscle couplings to task performance. To achieve this, we essentially reverse the analytical approach typically used in muscle synergy studies (i.e. muscle groupings are identified and inferences then made about their functional roles) (Turpin et al., 2021). More specifically, we firstly identify functional couplings between paired muscle activations by evaluating their task-relevance and then extracting representative patterns of such couplings using dimensionality reduction methods. This enables us to distinguish task-irrelevant from task-relevant muscle couplings. Of the muscle couplings that demonstrate task-relevance, we can then characterise their functional roles as either redundant or synergistic. Figures 2 and 3 illustrates a simulation to facilitate interpretations of what informational redundancy and synergy mean when applied to muscle activities in the context of task performance. Redundant task information is generated when mx and my carry identical predictive information about τ. This is distinct from current muscle synergy analysis which would consider mx and my to share information about τ if their magnitudes are equivalent. Here, τ is always L when mx is on and when my is off and R when vice versa. Thus, all the task information can be found in either mx or my alone, generating 1 bit of redundant information. Synergistic task information on the other hand is predictive task information generated only when observing both mx and my together. In the simple example shown, τ can be L when both mx and my are active or inactive. However, we can see that when both muscles are active or inactive then τ is L. Thus, no predictive task information is provided by either mx or my alone but the full 1 bit of information available is generated when observing both muscles together .
+Our primary aim here is to characterise muscle synergies in task space by quantifying the contributions of muscle couplings to task performance. To achieve this, we essentially reverse the analytical approach typically used in muscle synergy studies (i.e. muscle groupings are identified and inferences then made about their functional roles) (Turpin et al., 2021). More specifically, we firstly identify functional couplings between paired muscle activations by evaluating their task-relevance and then extracting representative patterns of such couplings using dimensionality reduction methods. This enables us to distinguish task-irrelevant from task-relevant muscle couplings. Of the muscle couplings that demonstrate task-relevance, we can then characterise their functional roles as either redundant or synergistic. Figures 2 and 3 illustrates a simulation to facilitate interpretations of what informational redundancy and synergy mean when applied to muscle activities in the context of task performance. Redundant task information is generated when $m_{x}$ and $m_{y}$ carry identical predictive information about $\tau$. This is distinct from current muscle synergy analysis which would consider $m_{x}$ and $m_{y}$ to share information about $\tau$ if their magnitudes are equivalent. Here, $\tau$ is always L when $m_{x}$ is on and when $m_{y}$ is off and R when vice versa. Thus, all the task information can be found in either $m_{x}$ or $m_{y}$ alone, generating 1 bit of redundant information. Synergistic task information on the other hand is predictive task information generated only when observing both $m_{x}$ and $m_{y}$ together. In the simple example shown, $\tau$ can be L when both $m_{x}$ and $m_{y}$ are active or inactive. However, we can see that when both muscles are active or inactive then $\tau$ is L. Thus, no predictive task information is provided by either $m_{x}$ or $m_{y}$ alone but the full 1 bit of information available is generated when observing both muscles together .
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig2-v1.jpg)
 
-**Figure 2.:** Four observations of a given muscle pair ( and mx) that can fall into two equiprobable on and off activation states and a corresponding task parameter (my) describing left (L) or right (R) movement direction. Observing either τ or mx in the redundancy example gives 1 bit of information while observing both my and mx together in the synergy example gives 1 bit of information.my
+**Figure 2.:** Four observations of a given muscle pair ($m_{x}$ and $m_{y}$) that can fall into two equiprobable on and off activation states and a corresponding task parameter ($\tau$) describing left (L) or right (R) movement direction. Observing either $m_{x}$ or $m_{y}$ in the redundancy example gives 1 bit of information while observing both $m_{x}$ and $m_{y}$ together in the synergy example gives 1 bit of information.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig3-v1.jpg)
 
-**Figure 3.:** (A) Large-scale datasets of electromyographic (EMG) signals are captured while participants perform various motor tasks (Delis et al., 2014; Hilt et al., 2018; Camargo et al., 2021). (B) The mutual information (MI) between all unique muscle-timepoint vector ( combinations with respect to a corresponding task parameter ([mx,my])) is determined (τInce et al., 2017), forming a network of functional connectivities. (C) These adjacency matrices are then analysed in terms of statistical significance and modular structure using percolation theory (Ó’ Reilly and Delis, 2022). (D) The optimal spatial and temporal model-ranks are determined using generalised, consensus-based network community detection methods (Blondel et al., 2008; Mucha et al., 2010; Lancichinetti and Fortunato, 2012; Rubinov and Sporns, 2010). (E) The optimal model-ranks are used as input parameters for dimensionality reduction, where space–time muscle networks along with their underlying activation coefficients are concurrently extracted (Delis et al., 2014).
+**Figure 3.:** (A) Large-scale datasets of electromyographic (EMG) signals are captured while participants perform various motor tasks (Delis et al., 2014; Hilt et al., 2018; Camargo et al., 2021). (B) The mutual information (MI) between all unique muscle-timepoint vector ($[m_{x},m_{y}])$ combinations with respect to a corresponding task parameter ($\tau$) is determined (Ince et al., 2017), forming a network of functional connectivities. (C) These adjacency matrices are then analysed in terms of statistical significance and modular structure using percolation theory (Ó’ Reilly and Delis, 2022). (D) The optimal spatial and temporal model-ranks are determined using generalised, consensus-based network community detection methods (Blondel et al., 2008; Mucha et al., 2010; Lancichinetti and Fortunato, 2012; Rubinov and Sporns, 2010). (E) The optimal model-ranks are used as input parameters for dimensionality reduction, where space–time muscle networks along with their underlying activation coefficients are concurrently extracted (Delis et al., 2014).
 
-## Building on current approaches to muscle synergy analysis
+### Building on current approaches to muscle synergy analysis
 
 Current approaches to muscle synergy analysis based on non-negative matrix factorisation (NMF) have a proven use case in the extraction of functionally and physiologically relevant motor patterns (Bruton and O’Dwyer, 2018; Alessandro et al., 2013; Funato et al., 2022; Scano et al., 2022; Buongiorno et al., 2020). To demonstrate that the proposed framework adds to this current utility, here we firstly provide a simple example output from the proposed and current approaches (see Figure 5A–D). This example was derived from the EMG recordings of a single trial of a participant walking on level ground in the counter-clockwise direction around the circuit depicted in Figure 4C, Camargo et al., 2021. For the proposed approach, the muscle couplings were determined with respect to a single, continuous task parameter, the heel kinematic marker in the anterior–posterior direction. For the application of the current approach, we applied the spatial muscle synergy model across the same single-trial EMG recordings (Tresch et al., 1999), extracting one component.
 
@@ -67,13 +67,13 @@ Next, to demonstrate the additional physiological relevance the proposed methodo
 
 **Figure 6.:** From dataset 4 (Averta et al., 2021), we took the electromyographic (EMG) signals and WRBA kinematic from 20 post-stroke and 25 healthy participants. We extracted a single normative reference of healthy controls task-redundant muscle couplings with respect to WRBA (a.1) and a corresponding normative reference using NMF only (a.2). We then extracted a single component from each post-stroke participant and compared them individually with the corresponding normative reference, computing distance values (1 r) (b, c). We finally determined the predictive relationship of these distance values with a measure of upper-extremity motor impairment derived from the Fugl-Meyer assessment (FMA-UE) (d).
 
-To briefly summarise the results, the distance of post-stroke participants from healthy controls was found to be predictive of motor impairment for the proposed approach (β = −8.52 ± 2.2, p = 0.0012) but not the NMF-based approach (β = 1.4 ± 1.39, p = 0.33). This finding suggests, intuitively, that the proposed approach captures redundant muscle couplings that support robust motor control and that deviations from this normative pattern of motor redundancy are linearly related to the degree of impairment. Importantly, this result was obtained using only one randomly selected trial for each participant. This simple example conveys the physiologically relevant targeted insights that can be generated from the proposed framework. Although current approaches have demonstrated significant linear relationships with motor impairment (Clark et al., 2010; Schwartz et al., 2016; Steele et al., 2015), these assessments generally rely on large numbers of trials and participants and do not point to specific underlying muscle interactions as provided here.
+To briefly summarise the results, the distance of post-stroke participants from healthy controls was found to be predictive of motor impairment for the proposed approach ($\beta$ = −8.52 ± 2.2, p = 0.0012) but not the NMF-based approach ($\beta$ = 1.4 ± 1.39, p = 0.33). This finding suggests, intuitively, that the proposed approach captures redundant muscle couplings that support robust motor control and that deviations from this normative pattern of motor redundancy are linearly related to the degree of impairment. Importantly, this result was obtained using only one randomly selected trial for each participant. This simple example conveys the physiologically relevant targeted insights that can be generated from the proposed framework. Although current approaches have demonstrated significant linear relationships with motor impairment (Clark et al., 2010; Schwartz et al., 2016; Steele et al., 2015), these assessments generally rely on large numbers of trials and participants and do not point to specific underlying muscle interactions as provided here.
 
 Together, through two example applications, we have demonstrated attributes of the proposed methodology that provide novel capabilities to current muscle synergy analysis. In the following, we sequentially present in more detail the three types of muscular interactions in the spatiotemporal domain across three datasets and then show the robustness of the approach and its outputs.
 
-## Representations of motor behaviour in muscle couplings
+### Representations of motor behaviour in muscle couplings
 
-To begin, we derived pairs of muscle activation vectors [mx,my] from benchmark datasets of human participants executing naturalistic movements, namely arm reaching (dataset 1), whole-body point-to-point reaching (dataset 2), and various locomotion modes (dataset 3) (Delis et al., 2014; Hilt et al., 2018; Camargo et al., 2021; Averta et al., 2021) (see Figure 4 for the experimental design of each dataset and ‘Materials and methods’ for an outline of the experimental setups and EMG data pre-processing) (Figure 3A). For datasets 1 and 2, we determine the MI between [mx,my] vectors with respect to several discrete task parameters representing specific task attributes (e.g. reaching direction, speed, etc.), while for dataset 3 we determined the task-relevant and -irrelevant muscles couplings in an assumption-free way by quantifying them with respect to all available kinematic, dynamic, and inertial motion unit (IMU) features.
+To begin, we derived pairs of muscle activation vectors $[m_{x},m_{y}]$ from benchmark datasets of human participants executing naturalistic movements, namely arm reaching (dataset 1), whole-body point-to-point reaching (dataset 2), and various locomotion modes (dataset 3) (Delis et al., 2014; Hilt et al., 2018; Camargo et al., 2021; Averta et al., 2021) (see Figure 4 for the experimental design of each dataset and ‘Materials and methods’ for an outline of the experimental setups and EMG data pre-processing) (Figure 3A). For datasets 1 and 2, we determine the MI between $[m_{x},m_{y}]$ vectors with respect to several discrete task parameters representing specific task attributes (e.g. reaching direction, speed, etc.), while for dataset 3 we determined the task-relevant and -irrelevant muscles couplings in an assumption-free way by quantifying them with respect to all available kinematic, dynamic, and inertial motion unit (IMU) features.
 
 Having extracted the muscle pair-task interdependencies representing a specific intersection in Figure 1.1b, we next sought to find a parsimonious representation of motor behaviour that is consistent across tasks and participants for datasets 1–3 (Figure 3E; Ó’ Reilly and Delis, 2022; Delis et al., 2014). To produce this sparse, low-dimensional representation, we undertook the following intermediary steps:
 
@@ -83,37 +83,257 @@ To empirically determine the number of components to extract in a parameter-free
 
 By optimising a modularity-maximising cost-function (Newman and Girvan, 2004; Magnani et al., 2022), the community detection protocols we employed consistently identified three spatial (S1–S3) and two temporal (T1–T2) modules as representative of the underlying task-redundant, -synergistic, and -irrelevant informational dynamics. Following their extraction, we further analysed the spatial networks from each dataset in terms of their submodular structure by applying network-theoretic tools (Blondel et al., 2008; Rubinov and Sporns, 2010; Benzi and Klymko, 2013). In doing so, we identified subnetworks within each spatial network and interesting patterns of network centrality, that is the relative importance of a node in a network. The spatial and temporal networks of each dataset output are illustrated in panels A and B (Figure 7; Figure 8; Figure 9; Figure 10; Figure 11; Figure 12) of the following sections. They are accompanied by human body models where node colour and size indicate subnetwork community affiliation and network centrality, respectively (Makarov et al., 2015). The networks we extracted operate in parallel within spatial and temporal domains while having an all-to-all correspondence across domains, that is any spatial component can be combined with any temporal component via a task-specific coefficient (illustrated in panel C for dataset 1 and 2 outputs and in the supplementary materials for dataset 3) (Delis et al., 2014). Unlike similar muscle synergy extraction approaches, dimensionality reduction in the NIF pipeline does not seek to approximate the variance of recorded EMG data but to identify sets of muscles that share the same type of interaction. Thus, the multiplexing coefficients extracted in this framework are instead interpreted as the participant- and task-specific scaling of information overlap.
 
-## Task-irrelevant muscle couplings
+![Figure 7.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig7-v1.jpg)
 
-To quantify the task-irrelevant contributions of muscular interactions to motor behaviour, we conditioned the MI between [mx,my] with respect to τ (see ‘Materials and methods’) (Ince et al., 2017). This conditioning effectively removes the task-relevant information, leaving information produced by pairwise muscle variations that are task-indiscriminative. Following a run through the NIF pipeline (Figure 3; Ó’ Reilly and Delis, 2022), the output from datasets 2 and 3 are presented in Figures 7 and 8, respectively, while the output from dataset 1 is presented in Figure 7—figure supplement 1. The task-irrelevant space–time muscle networks we extracted from datasets 1 and 2 shared several structural features with their task-agnostic counterparts extracted in the preliminary study (Ó’ Reilly and Delis, 2022), supporting recent work showing that functional muscle network structure are heavily influenced by task-irrelevant factors such as anatomical constraints (Kerkman et al., 2018). The functional connectivities identified here captured known contributions of spatiotemporal muscular interactions to aspects of motor behaviour common across tasks and participants which we outline briefly here.
+**Figure 7.:** (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013). (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig8-v1.jpg)
+
+**Figure 8.:** Activation coefficients are presented in supplementary material 1, indicating their task parameter-specific scaling averaged across participants in the dynamic, inertial motion unit (IMU), and kinematic spaces. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Dynamic, inertial motion unit (IMU), and kinematic data were captured from the bilateral lower limbs while 17 participants performed various locomotion modes (i.e. stair ascents/descents, ramp inclines/declines, and level-ground walking). The spatial components (A) are supported by corresponding human body models and underneath by their temporal networks (B). To the right in (C), the activation coefficients are averaged across participants.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig9-v1.jpg)
+
+**Figure 9.:** (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013). (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig10-v1.jpg)
+
+**Figure 10.:** Activation coefficients are presented in supplementary material 1, indicating their task parameter-specific scaling averaged across participants in the dynamic, inertial motion unit (IMU), and kinematic spaces. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Dynamic, inertial motion unit (IMU), and kinematic data were captured from the bilateral lower limbs while 17 participants performed various locomotion modes (i.e. stair ascents/descents, ramp inclines/declines, and level-ground walking). Activation coefficients are averaged across participants.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig11-v1.jpg)
+
+**Figure 11.:** (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013). (Panel C) Activation coefficients are presented to the right of the networks, indicating their task parameter-specific scaling averaged across participants.
+
+![Figure 12.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig12-v1.jpg)
+
+**Figure 12.:** Activation coefficients are presented in supplementary material 1, indicating their task parameter-specific scaling averaged across participants in the dynamic, inertial motion unit (IMU), and kinematic spaces. Human body models accompanying each spatial network illustrate their respective submodular structure with node colour and size and edge width indicating community affiliation (Blondel et al., 2008), network centrality and connection strength, respectively (Makarov et al., 2015; Benzi and Klymko, 2013).
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** Dynamic, inertial motion unit (IMU), and kinematic data were captured from the bilateral lower limbs while 17 participants performed various locomotion modes (i.e. stair ascents/descents, ramp inclines/declines, and level-ground walking). Activation coefficients are averaged across participants.
+
+### Task-irrelevant muscle couplings
+
+To quantify the task-irrelevant contributions of muscular interactions to motor behaviour, we conditioned the MI between $[m_{x},m_{y}]$ with respect to $\tau$ (see ‘Materials and methods’) (Ince et al., 2017). This conditioning effectively removes the task-relevant information, leaving information produced by pairwise muscle variations that are task-indiscriminative. Following a run through the NIF pipeline (Figure 3; Ó’ Reilly and Delis, 2022), the output from datasets 2 and 3 are presented in Figures 7 and 8, respectively, while the output from dataset 1 is presented in Figure 7—figure supplement 1. The task-irrelevant space–time muscle networks we extracted from datasets 1 and 2 shared several structural features with their task-agnostic counterparts extracted in the preliminary study (Ó’ Reilly and Delis, 2022), supporting recent work showing that functional muscle network structure are heavily influenced by task-irrelevant factors such as anatomical constraints (Kerkman et al., 2018). The functional connectivities identified here captured known contributions of spatiotemporal muscular interactions to aspects of motor behaviour common across tasks and participants which we outline briefly here.
 
 The temporal networks from datasets 1 and 2 captured mostly co-activations from movement onset – mid-movement and movement cessation, indicating that some co-contraction mechanisms were consistently task-irrelevant across trials. The temporal networks for dataset 2 were more diffuse compared to dataset 1, probably reflecting the more variable role of passive forces in generating movements to different heights captured in this dataset’s experimental design (Hilt et al., 2018; Hardesty et al., 2020). Furthermore, this co-contraction mechanism was more parsimoniously represented as a single network in dataset 3 (T1 in Figure 8B), where passive forces in contrast likely played a consistently resistive role during locomotion. Interestingly, T1 for dataset 3 corresponded equivalently high for all three task spaces when corresponding with S2 which consisted of upper-leg extensors (see Figure 8—figure supplement 1). Muscle couplings indicative of agonist–antagonist pairings were also identified as separate subnetworks in S3 of dataset 3 (Figure 8A). More specifically, their functional segregation appeared to be based on their distinct functional roles in forward propulsion (red nodes) and deceleration (blue nodes) during the mid-stance phase of gait, as indicated by the prominent correspondence with T2 across task spaces (see Figure 8—figure supplement 1). This finding reflects the consistent agonistic and antagonistic contributions of muscular interactions across locomotive tasks.
 
 The gross motor function of muscle couplings was another characteristic of task-irrelevant muscle couplings that pervaded across the datasets analysed here. For instance, AD had a central role in S2 of dataset 1 while also displaying a unique pattern of connectivity with tibial musculature in S3 of dataset 2. Similarly, GlutM had a central role in S1 of dataset 3 (Figure 8A). We further found a common pattern of task-irrelevant connectivity in S2 across datasets, namely the musculature about a hinge joint (elbow in datasets 1 and 2, knee in dataset 3) coupled with proximal shoulder or hip musculature, indicative of their biomechanical affordances. Finally, the passive, left arm was connected with the tibial musculature of S3 in dataset 2 (green nodes Figure 7A). To probe the underlying function of this connectivity in the left arm, we inspected the original EMG signals. We observed periodic, tonic activations across tasks, reflective of reciprocal inhibition of contralateral limb musculature that enables unilateral movement (Cincotta and Ziemann, 2008).
 
-## Task-redundant muscle couplings
+### Task-redundant muscle couplings
 
-To characterise the functional role of task-relevant muscle couplings, we employed a higher-order information-theoretic concept known as co-information (co-I) (Ince et al., 2017; McGill, 1954; Schyns et al., 2020). This metric quantifies the MI between three random variables and may take on positive values (net synergistic) and negative values (net redundant) (see Figure 13 of ‘Materials and methods’). Co-I quantifies the task-relevant information shared between [mx,my] independently of the information generated by task-irrelevant muscular interactions. In doing so, it also defines the functional relationship between [mx,my] overall as redundant or complementary. Following the quantification of co-I for all [mx,my] and corresponding τ (pink area in orange-and-pink intersection Figure 1.3B), we parsed the negative values indicating redundancy into a separate matrix and rectified them. In Figures 9 and 10, we illustrate the output following the extraction of task-redundant space–time muscle networks from datasets 2 and 3 across tasks and participants, respectively, while the output for dataset 1 is presented in Figure 9—figure supplement 1. In the co-I formulation, task-redundant muscle couplings can be interpreted as muscle couplings that overall shared a common task-relevant functional role. For example, with reference to Figure 9 here, muscles in the networks presented in S1 (Figure 9A) carry redundant information about the movement endpoint (Figure 9C) with the temporal profile T1 (Figure 9B) whereas S3 (Figure 9A) contains muscle networks carrying redundant information about the starting point (Figure 9C) with the same temporal profile T1 (Figure 9B).
+To characterise the functional role of task-relevant muscle couplings, we employed a higher-order information-theoretic concept known as co-information (co-I) (Ince et al., 2017; McGill, 1954; Schyns et al., 2020). This metric quantifies the MI between three random variables and may take on positive values (net synergistic) and negative values (net redundant) (see Figure 13 of ‘Materials and methods’). Co-I quantifies the task-relevant information shared between $[m_{x},m_{y}]$ independently of the information generated by task-irrelevant muscular interactions. In doing so, it also defines the functional relationship between $[m_{x},m_{y}]$ overall as redundant or complementary. Following the quantification of co-I for all $[m_{x},m_{y}]$ and corresponding $\tau$ (pink area in orange-and-pink intersection Figure 1.3B), we parsed the negative values indicating redundancy into a separate matrix and rectified them. In Figures 9 and 10, we illustrate the output following the extraction of task-redundant space–time muscle networks from datasets 2 and 3 across tasks and participants, respectively, while the output for dataset 1 is presented in Figure 9—figure supplement 1. In the co-I formulation, task-redundant muscle couplings can be interpreted as muscle couplings that overall shared a common task-relevant functional role. For example, with reference to Figure 9 here, muscles in the networks presented in S1 (Figure 9A) carry redundant information about the movement endpoint (Figure 9C) with the temporal profile T1 (Figure 9B) whereas S3 (Figure 9A) contains muscle networks carrying redundant information about the starting point (Figure 9C) with the same temporal profile T1 (Figure 9B).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/87651/elife-87651-fig13-v1.jpg)
 
-**Figure 13.:** in τ and mx when observed separately and the information shared with my when they are observed together.τThe adjacency matrices show how this calculation is carried out for all unique  combinations. Redundant and synergistic muscle couplings are then separated into two equivalently sized networks. The accompanying colour bars indicate the values present in the adjacency matrix.[mx,my]
+**Figure 13.:** Co-information (Co-I) determines the difference between the sum total information shared with $\tau$ in $m_{x}$ and $m_{y}$ when observed separately and the information shared with $\tau$ when they are observed together.The adjacency matrices show how this calculation is carried out for all unique $[m_{x},m_{y}]$ combinations. Redundant and synergistic muscle couplings are then separated into two equivalently sized networks. The accompanying colour bars indicate the values present in the adjacency matrix.
 
 Both dataset 1 (Figure 9—figure supplement 1) and dataset 3 (Figure 10) outputs display similar patterns of muscle couplings at the same spatial scale of an individual, task-relevant limbs’ musculature, with an emphasis on the coupling of specific muscles with all other muscles. For dataset 1, FE, BI, and BR displayed this integrative pattern across S1–S3, respectively, while BF, TA, and ST demonstrated this pattern in dataset 3 also. The muscle networks encapsulated several functionally interpretable couplings such as the agonist–antagonist pairings of the BI and TM of S2 (dataset 1, Figure 9—figure supplement 1A) and the task redundancy of ankle dorsi-flexors, and knee/hip flexors during sloped walking for example in S2 of dataset 3 (Figure 10A; Pickle et al., 2016). The functional interpretation of these muscle connectivity patterns was in line with the extracted task-specific activations. For instance, S2 of dataset 1 was modulated most prominently by reaching direction when corresponding with T2, commensurate with the biomechanical affordances of this upper-arm muscle network. Furthermore, S2 of dataset 3 was specifically modulated by the right-thigh kinematic marker along the y-axis (up–down direction) for both T1 and T2 (see Figure 10—figure supplement 1). The centrality of task-redundant muscle couplings in datasets 1 and 3 suggests particular muscle activations drive the task-specific variations in the reaching arm and stepping leg muscle activities towards a common behavioural goal. It is also worth noting that the magnitude of these functional connectivity patterns appeared to be proportional to anatomical distance, as evidenced by the magnitude of connection strengths, a finding supportive of previous related research (Kerkman et al., 2018).
 
 Meanwhile at the greater spatial scale of dataset 2 (Figure 9A), task-redundant muscle couplings were anatomically compartmentalised to the upper- and lower-body. This functional segregation was emphasised at the subnetwork level also, where the upper- and lower-body musculature of S3 for instance formed distinct submodules (blue and red nodes). Amongst the task-specific activations in dataset 2, S1 carried redundant task information about endpoint target, -height, and up–down direction when corresponding with T1. T2 for dataset 2 on the other hand contained mostly temporally proximal dependencies along the diagonal, suggestive of co-contraction mechanisms, which became more diffuse near movement cessation. These endpoint trajectory and co-contraction related temporal patterns were qualitatively similar to T1 and T2 of both datasets 1 and 3, respectively (see Figure 10 and Figure 9—figure supplement 1, respectively).
 
-## Task-synergistic muscle couplings
+### Task-synergistic muscle couplings
 
-Similarly, we isolated task-synergistic muscle couplings by parsing, instead, the positive co-I values from the computations conducted across all [mx,my] and corresponding τ into a sparse matrix where all redundant couplings were set to zero (see Figure 13 of ‘Materials and methods’). Task-synergistic muscle couplings here can be interpreted as a [mx,my] pair that provide complementary (i.e. functionally dissimilar) task information, thus more information is gained by observing [mx,my] together rather than separately (orange area in orange-and-pink intersection Figure 1.3B). In Figures 11 and 12, we illustrate the task-synergistic space–time muscle networks from datasets 2 and 3, respectively (dataset 1 output is presented in Figure 11—figure supplement 1).
+Similarly, we isolated task-synergistic muscle couplings by parsing, instead, the positive co-I values from the computations conducted across all $[m_{x},m_{y}]$ and corresponding $\tau$ into a sparse matrix where all redundant couplings were set to zero (see Figure 13 of ‘Materials and methods’). Task-synergistic muscle couplings here can be interpreted as a $[m_{x},m_{y}]$ pair that provide complementary (i.e. functionally dissimilar) task information, thus more information is gained by observing $[m_{x},m_{y}]$ together rather than separately (orange area in orange-and-pink intersection Figure 1.3B). In Figures 11 and 12, we illustrate the task-synergistic space–time muscle networks from datasets 2 and 3, respectively (dataset 1 output is presented in Figure 11—figure supplement 1).
 
 Across datasets, muscle networks could be characterised by the transmission of complementary task information between functionally specialised muscle groups, many of which were identified among the task-redundant representations (Figures 9 and 10 and Figure 9—figure supplement 1). The most obvious example of this is the S3 synergist muscle network of dataset 2 (Figure 11), which captures the complementary interaction between task-redundant submodules identified previously (S3, Figure 9). A particularly consistent structural feature was the emphasis of an individual muscles’ connectivity with all other muscles which was evident among synergistic couplings in dataset 3 (see VM, VL, and RF of S1, GR, TA, and SO of S2, and GlutM of S3 in Figure 12A). This structural similarity demonstrates that parallel and synchronous exchanges of redundant and synergistic task information underlie task-specific variations across trials (e.g. S3 of dataset 2 in Figure 9A and Figure 11A). Interestingly, despite the similarity between the redundant and synergistic muscle networks, the way they are combined to encode task information differs depending on the type of interaction (synergistic vs. redundant, e.g. panel C of Figure 11 in comparison to panel C of Figure 9).
 
 Concerning the temporal activations of these networks, the task-synergistic structure of dataset 2 (Figure 11B) was also relatively unchanged compared to the task-redundant structure (Figure 9B). This suggests that the task end-goal- and co-contraction-related mechanisms provided both redundant and synergistic task information concurrently during whole-body reaching movements. In contrast, a different view of synergistic information exchange is provided in datasets 1 and 3 (Figure 11—figure supplement 1 and Figure 12, respectively), where T1 and T2 consist of more idiosyncratic activations that together appear to reflect the task end-goal-related patterns found elsewhere. More specifically, in both datasets we found two distinct patterns of task end-goal-related activity where early and late timepoints during movement initiation operated in parallel to provide complementary task information (see Figure 12B and Figure 11—figure supplement 1).
 
-## Generalisability of the extracted space–time muscle networks
+### Generalisability of the extracted space–time muscle networks
 
 To ascertain the generalisability of the extracted representations presented here beyond any subset of the input data, we conducted a similarity analysis through a leave-n-out cross validation procedure. In more detail, we compared the space–time networks extracted from the full dataset (illustrated in Figures 4—9 and corresponding supplementary materials) to the networks extracted from a subset of the data (see ‘Materials and methods’). Across datasets, a high level of concordance was found on average (~0.9 correlation, see Table 1). This trend was evident across all datasets and for task-redundant, -synergistic, and -irrelevant spatial and temporal networks. Dataset 1 and 2 findings demonstrate that the extracted networks are generalisable beyond any individual participant or task. Dataset 3 results go further by demonstrating that the extracted patterns are generalizable beyond any randomly selected and randomly sized subset of the input data. The highest correlations on average were consistently among temporal networks, replicating previous findings (Ó’ Reilly and Delis, 2022; Delis et al., 2018b; Brambilla et al., 2022). Although the spatial networks demonstrated a lower average correlation, this was substantially higher compared to previous applications of datasets 1 and 2 (Ó’ Reilly and Delis, 2022; Delis et al., 2014; Delis et al., 2018b), suggesting that the inclusion of task parameters here captures the inter-participant differences more effectively. When comparing representations extracted from each continuous task space in dataset 3, kinematic features consistently had the highest average correlation and lowest variability compared to dynamic and IMU feature spaces. These findings support our change in the interpretation of the extracted activation coefficients away from conventional approaches where representational biases towards particular participants and/or tasks are inferred.
+
+**Table 1.**
+ A summary table illustrating the findings from an examination of the generalisability of the muscle networks extracted from each dataset.The spatial and temporal representations extracted from the full input data in each muscle-task information subspace were compared using Pearson’s correlation against functionally similar representations extracted from a subset of the input data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Dataset 1</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">Spatial</td>
+      <td colspan="2">Temporal</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Participants</td>
+      <td>Tasks</td>
+      <td>Participants</td>
+      <td>Tasks</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-redundant</td>
+      <td></td>
+      <td>0.95 ± 0.23</td>
+      <td>0.89 ± 0.28</td>
+      <td>0.98 ± 0.19</td>
+      <td>0.89 ± 0.27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-synergistic</td>
+      <td></td>
+      <td>0.95 ± 0.23</td>
+      <td>0.73 ± 0.26</td>
+      <td>0.98 ± 0.19</td>
+      <td>0.91 ± 0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-irrelevant</td>
+      <td></td>
+      <td>0.84 ± 0.1</td>
+      <td>0.85 ± 0.1</td>
+      <td>0.79 ± 0.15</td>
+      <td>0.95 ± 0.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="4">Dataset 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">Spatial</td>
+      <td colspan="2">Temporal</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Participants</td>
+      <td>Tasks</td>
+      <td>Participants</td>
+      <td>Tasks</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-redundant</td>
+      <td></td>
+      <td>0.82 ± 0.42</td>
+      <td>0.94 ± 0.27</td>
+      <td>0.99 ± 0.03</td>
+      <td>0.96 ± 0.28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-synergistic</td>
+      <td></td>
+      <td>0.79 ± 0.37</td>
+      <td>0.96 ± 0.25</td>
+      <td>0.92 ± 0.3</td>
+      <td>0.99 ± 0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Task-irrelevant</td>
+      <td></td>
+      <td>0.84 ± 0.15</td>
+      <td>0.99 ± 0.01</td>
+      <td>0.93 ± 0.1</td>
+      <td>0.99 ± 0.06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Dataset 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">Spatial</td>
+      <td colspan="3">Temporal</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kinematics</td>
+      <td>Dynamics</td>
+      <td>IMU</td>
+      <td>Kinematics</td>
+      <td>Dynamics</td>
+      <td>IMU</td>
+    </tr>
+    <tr>
+      <td>Task-redundant</td>
+      <td>0.92 ± 0.28</td>
+      <td>0.91 ± 0.32</td>
+      <td>0.86 ± 0.31</td>
+      <td>0.93 ± 0.21</td>
+      <td>0.92 ± 0.24</td>
+      <td>0.87 ± 0.29</td>
+    </tr>
+    <tr>
+      <td>Task-synergistic</td>
+      <td>0.97 ± 0.16</td>
+      <td>0.9 ± 0.27</td>
+      <td>0.96 ± 0.19</td>
+      <td>0.99 ± 0.04</td>
+      <td>0.98 ± 0.13</td>
+      <td>0.95 ± 0.18</td>
+    </tr>
+    <tr>
+      <td>Task-irrelevant</td>
+      <td>0.9 ± 0.34</td>
+      <td>0.83 ± 0.37</td>
+      <td>0.8 ± 0.33</td>
+      <td>0.99 ± 0.04</td>
+      <td>0.98 ± 0.1</td>
+      <td>0.97 ± 0.15</td>
+    </tr>
+  </tbody>
+</table>
 
 To further probe how the underlying assumption of an all-to-all correspondence between spatial and temporal representations made by sNM3F influenced the generalisability of the extracted networks, we compared its performance to non-negative Canonical-Polyadic (CP) tensor decomposition, which assumes an opposing one-to-one correspondence between components. We found that although CP has demonstrated a considerable capacity to de-mix neural data into simplified and interpretable low-dimensional components (Williams et al., 2018), its application here resulted in poor generalisability of the extracted patterns (~0.5 correlation on average). This finding suggests that the all-to-all correspondence implemented by sNM3F identifies a more generalizable representation and should be favourably considered in future applications of this framework.
 
@@ -133,35 +353,65 @@ In sum, this study introduced a novel perspective to the muscle synergy concept 
 
 ## Materials and methods
 
-## Quantifying muscle couplings in the task space
+### Quantifying muscle couplings in the task space
 
-To quantify muscle couplings we used MI, a non-linear measure of dependence that captures any type of relationship between random variables. Here to estimate MI, we used a Gaussian copula-based approximation (Ince et al., 2017). This semi-parametric estimator exploits the equivalence between MI and the negative entropy of the empirical copula (c), a function that maps a multivariate set (e.g. [mx, my] representing activities of muscles X and Y) to their joint distribution (Equation 1.1; Ince et al., 2017).(1.1)I(mx;my)=−H(c)
+To quantify muscle couplings we used MI, a non-linear measure of dependence that captures any type of relationship between random variables. Here to estimate MI, we used a Gaussian copula-based approximation (Ince et al., 2017). This semi-parametric estimator exploits the equivalence between MI and the negative entropy of the empirical copula ($c$), a function that maps a multivariate set (e.g. [mx, my] representing activities of muscles X and Y) to their joint distribution (Equation 1.1; Ince et al., 2017).
 
-Thus, to determine task-irrelevant muscle couplings (I(mx,my|τ)), we conditioned the negative entropy of the empirical copula for [mx,my] with respect to a task variable τ (Equation 1.2). As mentioned, [mx,my] are continuous vectors composed of individual muscle amplitudes at specific timepoints across trials while τ is a corresponding discrete (e.g. movement direction for datasets 1 and 2) or continuous (e.g. movement kinematics in dataset 3) task parameter. For discrete task variables, τ takes one value for each trial and the MI is calculated across trials using a Gaussian mixture model (Ince et al., 2017). In the case of continuous task variables, τ varies in time within a specific trial. Thus, we compute MI at each timepoint t using the muscle activity mx(t) and the task variable value τ(t) at this time point using a closed-form parametric estimator (Ince et al., 2017).(1.2)I(mx;my|τ)= −H(c|τ)
+$$
+I(m_{x};m_{y})=−H(c)
+$$
 
-To evaluate the task-relevance of the identified muscle couplings, we used a higher-order information-theoretic measure known as co-I (Equation 1.3; Figure 11), which quantifies the relationship between three random variables, here [mx,my], and τ. Co-I implements the inclusion–exclusion principle of combinatorics (McGill, 1954), whereby the sum of MIs between individual m vectors and τ (I(mx;τ)+ I(my;τ)) is compared against their composite MI (Imx,my;τ) as follows:(1.3)−I(mx;my;τ)= I(mx;τ)+ I(my;τ)−I([mx,my];τ)
+Thus, to determine task-irrelevant muscle couplings ($I(m_{x},m_{y}|\tau)$), we conditioned the negative entropy of the empirical copula for $[m_{x},m_{y}]$ with respect to a task variable $\tau$ (Equation 1.2). As mentioned, $[m_{x},m_{y}]$ are continuous vectors composed of individual muscle amplitudes at specific timepoints across trials while $\tau$ is a corresponding discrete (e.g. movement direction for datasets 1 and 2) or continuous (e.g. movement kinematics in dataset 3) task parameter. For discrete task variables, $\tau$ takes one value for each trial and the MI is calculated across trials using a Gaussian mixture model (Ince et al., 2017). In the case of continuous task variables, $\tau$ varies in time within a specific trial. Thus, we compute MI at each timepoint t using the muscle activity $m_{x}(t)$ and the task variable value $\tau(t)$ at this time point using a closed-form parametric estimator (Ince et al., 2017).
 
-Negative Imx;my;τ corresponds to a net redundant coupling between [mx,my] about τ while positive Imx;my;τ indicates a net synergy. To analyse these distinct couplings separately, we parsed redundant and synergistic Imx;my;τ into two equivalently sized matrices and rectified the redundant couplings to make them suitable for non-negative dimensionality reduction.
+$$
+I(m_{x};m_{y}|\tau)= −H(c|\tau)
+$$
 
-Then, to produce a multiplexed view of the muscular interactions across trials, we iterated these MI computations over all unique combinations of [mx,my] and τ. The resulting MI estimates collectively form A, a symmetric adjacency matrix (i.e. ATA=I) that represents the functional connectivities between all muscle activations (Figure 10). When repeated across all available task variables τ and participants, A is of dimension [No.ofmusclepairs ×No.oftimepointpairs×[No.ofτ×No.ofparticipants]]. Thus, by applying network-theoretic statistical tools to A, we can identify functional modules carrying the same type of (redundant/synergistic) task information (Figure 2B).
+To evaluate the task-relevance of the identified muscle couplings, we used a higher-order information-theoretic measure known as co-I (Equation 1.3; Figure 11), which quantifies the relationship between three random variables, here $[m_{x},m_{y}]$, and $\tau$. Co-I implements the inclusion–exclusion principle of combinatorics (McGill, 1954), whereby the sum of MIs between individual $m$ vectors and $\tau$ ($I(m_{x};\tau)+ I(m_{y};\tau)$) is compared against their composite MI ($Im_{x},m_{y};\tau$) as follows:
 
-## Estimating statistical significance of muscle couplings
+$$
+−I(m_{x};m_{y};\tau)= I(m_{x};\tau)+ I(m_{y};\tau)−I([m_{x},m_{y}];\tau)
+$$
 
-To isolate statistically significant dependencies, we applied a modified percolation analysis to each A (Gallos et al., 2012). This method sparsifies functional connectivities in A with respect to its percolation threshold (Pc). Pc is a critical value that specifies the probability of a nodes’ occupation in A with respect to the networks size. In random networks, a ‘giant component’ comprised of long-range connections exists above Pc but disappears as Pc tends to zero (Bunde and Havlin, 2012), while it is thought that living systems optimise adaptability by fluctuating around Pc in a state of self-organised criticality (Bak et al., 1987). Preliminary testing of this method showed it to be at least equivalent to permutation-testing each MI value in the network and thus, much more computationally efficient. Pc was therefore iteratively specified for each layer of A relative to equivalently sized random networks and utilised to remove insignificant network edges up to a stopping-point where this giant component begins to become affected (Figure 3C). This procedure was carried out for each layer of A separately configured as muscle-wise couplings across temporal scales (i.e. a 3D tensor of dimension [No.ofmuscle]×[No.ofmuscle]×[No.oftimepointpairings×No.ofτ×No.ofparticipants]) and vice versa as timepoint-wise couplings across spatial scales (Figure 3D). The separate sparsification of each individual network layer in both alternative network configurations produced discrepancies in the output, as some connections were found to be significant in only one domain. To ameliorate this discrepancy, we employed a conservative heuristic where dependencies must be significant in both space and time to be included in the final input matrix for dimensionality reduction. Thus, the sparsified input matrices to dimensionality reduction were comprised of significant spatiotemporal task-redundant, -synergistic, or -irrelevant muscle couplings.
+Negative $Im_{x};m_{y};\tau$ corresponds to a net redundant coupling between $[m_{x},m_{y}]$ about $\tau$ while positive $Im_{x};m_{y};\tau$ indicates a net synergy. To analyse these distinct couplings separately, we parsed redundant and synergistic $Im_{x};m_{y};\tau$ into two equivalently sized matrices and rectified the redundant couplings to make them suitable for non-negative dimensionality reduction.
 
-## Model-rank specification
+Then, to produce a multiplexed view of the muscular interactions across trials, we iterated these MI computations over all unique combinations of $[m_{x},m_{y}]$ and $\tau$. The resulting MI estimates collectively form $A$, a symmetric adjacency matrix (i.e. $A^{T}A=I$) that represents the functional connectivities between all muscle activations (Figure 10). When repeated across all available task variables $\tau$ and participants, $A$ is of dimension $[No.ofmusclepairs \timesNo.oftimepointpairs\times[No.of\tau\timesNo.ofparticipants]]$. Thus, by applying network-theoretic statistical tools to $A$, we can identify functional modules carrying the same type of (redundant/synergistic) task information (Figure 2B).
 
-To determine the optimal number of modules to extract, we implemented two alternative community detection algorithms generalised to multiplex networks (Blondel et al., 2008; Mucha et al., 2010; Didier et al., 2018). Both forms seek to optimise a modularity criterion known as the Q-statistic that quantifies the proportion of within-community network edges compared to what would be expected from a network consisting of random connections (Newman and Girvan, 2004). More specifically, for a particular division of a single layer network (Equation 2.1), let  δ(gi,gj)=1 if nodes i and j belong to the same group (g) and 0 otherwise and Aij be the number of edges between nodes i and j. The equivalent of Aij from a randomised network (Pij) is expected to be kikj2m (Newman–Girvan null model) (Newman and Girvan, 2004), where ki and kj are the node degrees and m=12∑ijAij . The typical output of the Q-statistic is found within the range [0,1] with 1 indicating maximum modularity (Newman and Girvan, 2004).(2.1)Qmonolayer= 14m∑ij(Aij− Pij)δ(gi,gj)
+### Estimating statistical significance of muscle couplings
 
-In its generalised multilayer form, the Q-statistic is given an additional term to consider couplings between layers l and r with intra- and inter-layer resolution parameters γ and ω (Equation 2.2). Here, μ is the total edge weight across the network and γ and ω were set to 1 in the current study for classical modularity (Mucha et al., 2010), thus removing the need for any hyperparameter tuning.(2.2)Qmultilayer= 12μ ∑ijlr[(Aijl− γlPijl)δlr+ δijωjlr]δ(gil,gjr)
+To isolate statistically significant dependencies, we applied a modified percolation analysis to each $A$ (Gallos et al., 2012). This method sparsifies functional connectivities in $A$ with respect to its percolation threshold ($P_{c}$). $P_{c}$ is a critical value that specifies the probability of a nodes’ occupation in $A$ with respect to the networks size. In random networks, a ‘giant component’ comprised of long-range connections exists above $P_{c}$ but disappears as $P_{c}$ tends to zero (Bunde and Havlin, 2012), while it is thought that living systems optimise adaptability by fluctuating around $P_{c}$ in a state of self-organised criticality (Bak et al., 1987). Preliminary testing of this method showed it to be at least equivalent to permutation-testing each MI value in the network and thus, much more computationally efficient. $P_{c}$ was therefore iteratively specified for each layer of $A$ relative to equivalently sized random networks and utilised to remove insignificant network edges up to a stopping-point where this giant component begins to become affected (Figure 3C). This procedure was carried out for each layer of $A$ separately configured as muscle-wise couplings across temporal scales (i.e. a 3D tensor of dimension $[No.ofmuscle]\times[No.ofmuscle]\times[No.oftimepointpairings\timesNo.of\tau\timesNo.ofparticipants]$) and vice versa as timepoint-wise couplings across spatial scales (Figure 3D). The separate sparsification of each individual network layer in both alternative network configurations produced discrepancies in the output, as some connections were found to be significant in only one domain. To ameliorate this discrepancy, we employed a conservative heuristic where dependencies must be significant in both space and time to be included in the final input matrix for dimensionality reduction. Thus, the sparsified input matrices to dimensionality reduction were comprised of significant spatiotemporal task-redundant, -synergistic, or -irrelevant muscle couplings.
 
-We chose to implement two complementary model-rank specification approaches to address limitations related to stochasticity and scalability present in the multilayer formulation and the inability to consider inter-layer dependencies present in the mono-layer formulation (Hug et al., 2023; Magnani et al., 2022). To apply these algorithms to our data, we grouped the set of A into multiplex networks configured with respect to spatial or temporal scales (Figure 3D). We then applied these algorithms to both space–time network configurations for individual participant/tasks. This procedure generated a binary adjacency matrix from the resulting community partition vector in each case where 1 indicated the nodes belonged to the same community and 0 otherwise (Didier et al., 2018). Following a consensus-based approach (Lancichinetti and Fortunato, 2012), we then grouped these binary adjacency matrices into a new multiplex network and re-applied the two alternative community detection algorithms to find an optimal spatial and temporal model-rank (Lancichinetti and Fortunato, 2012).
+### Model-rank specification
 
-## Extraction of low-dimensional representations
+To determine the optimal number of modules to extract, we implemented two alternative community detection algorithms generalised to multiplex networks (Blondel et al., 2008; Mucha et al., 2010; Didier et al., 2018). Both forms seek to optimise a modularity criterion known as the Q-statistic that quantifies the proportion of within-community network edges compared to what would be expected from a network consisting of random connections (Newman and Girvan, 2004). More specifically, for a particular division of a single layer network (Equation 2.1), let  $\delta(g_{i},g_{j})$=1 if nodes $i$ and $j$ belong to the same group ($g$) and 0 otherwise and $A_{ij}$ be the number of edges between nodes $i$ and $j$. The equivalent of $A_{ij}$ from a randomised network ($P_{ij}$) is expected to be $\frac{k_{i}k_{j}}{2m}$ (Newman–Girvan null model) (Newman and Girvan, 2004), where $k_{i}$ and $k_{j}$ are the node degrees and $m=\frac{1}{2}\sumijA_{ij}$ . The typical output of the Q-statistic is found within the range [0,1] with 1 indicating maximum modularity (Newman and Girvan, 2004).
 
-Following the specification of an optimal model-rank in the spatial and temporal domains, we used these values as input parameters into dimensionality reduction (Figure 3E). To extract a low-dimensional representation of motor behaviour across muscle couplings, we applied a sample-based non-negative matrix tri-factorisation method (sNM3F) with additional orthogonality constraints to the matrices consisting of vectorised and concatenated A (Delis et al., 2014). More specifically, we decomposed the input three-mode tensor A of dimension [K = No. of unique muscle pairs (m) × (L = No. of time-sample pairs (t) × No. of participants + tasks)] into a set of spatial (V) and temporal (W) factors and the participant- and task-specific weighting coefficients (S) reflecting the amount of information carried by each combination of spatial–temporal factors for each participant and task parameter (Equation 3.1). In Equation 3.2, this factorisation is also illustrated in vector sum notation for a single participant and task variable:(3.1)A≈WSV(3.2)((m1t1)⋯(m1tL)⋮⋱⋮(mKt1)⋯(mKtL))≈  (wit1…witL) ⋅(sv1w1…svjw1sv1wi…svjwi). (vjm1⋮vjmK) + residuals
+$$
+Q_{monolayer}= \frac{1}{4m}\sumij(A_{ij}− P_{ij})\delta(g_{i},g_{j}) 
+$$
 
-## Examining the generalisability of extracted representations
+In its generalised multilayer form, the Q-statistic is given an additional term to consider couplings between layers $l$ and $r$ with intra- and inter-layer resolution parameters $\gamma$ and $\omega$ (Equation 2.2). Here, μ is the total edge weight across the network and $\gamma$ and $\omega$ were set to 1 in the current study for classical modularity (Mucha et al., 2010), thus removing the need for any hyperparameter tuning.
+
+$$
+Q_{multilayer}= \frac{1}{2\mu} \sumijlr[(A_{ijl}− \gamma_{l}P_{ijl})\delta_{lr}+ \delta_{ij}\omega_{jlr}]\delta(g_{il},g_{jr}) 
+$$
+
+We chose to implement two complementary model-rank specification approaches to address limitations related to stochasticity and scalability present in the multilayer formulation and the inability to consider inter-layer dependencies present in the mono-layer formulation (Hug et al., 2023; Magnani et al., 2022). To apply these algorithms to our data, we grouped the set of $A$ into multiplex networks configured with respect to spatial or temporal scales (Figure 3D). We then applied these algorithms to both space–time network configurations for individual participant/tasks. This procedure generated a binary adjacency matrix from the resulting community partition vector in each case where 1 indicated the nodes belonged to the same community and 0 otherwise (Didier et al., 2018). Following a consensus-based approach (Lancichinetti and Fortunato, 2012), we then grouped these binary adjacency matrices into a new multiplex network and re-applied the two alternative community detection algorithms to find an optimal spatial and temporal model-rank (Lancichinetti and Fortunato, 2012).
+
+### Extraction of low-dimensional representations
+
+Following the specification of an optimal model-rank in the spatial and temporal domains, we used these values as input parameters into dimensionality reduction (Figure 3E). To extract a low-dimensional representation of motor behaviour across muscle couplings, we applied a sample-based non-negative matrix tri-factorisation method (sNM3F) with additional orthogonality constraints to the matrices consisting of vectorised and concatenated $A$ (Delis et al., 2014). More specifically, we decomposed the input three-mode tensor $A$ of dimension [K = No. of unique muscle pairs ($m$) × (L = No. of time-sample pairs ($t$) × No. of participants + tasks)] into a set of spatial ($V$) and temporal ($W$) factors and the participant- and task-specific weighting coefficients ($S$) reflecting the amount of information carried by each combination of spatial–temporal factors for each participant and task parameter (Equation 3.1). In Equation 3.2, this factorisation is also illustrated in vector sum notation for a single participant and task variable:
+
+$$
+A≈WSV
+$$
+
+
+
+$$
+((m^{1}t^{1})⋯(m^{1}t^{L})⋮⋱⋮(m^{K}t^{1})⋯(m^{K}t^{L}))≈  (w_{i}^{t^{1}}…w_{i}^{t^{L}}) ⋅(s_{v_{1}}^{w^{1}}…s_{v_{j}}^{w^{1}}s_{v_{1}}^{w^{i}}…s_{v_{j}}^{w^{i}}). (v_{j}^{m^{1}}⋮v_{j}^{m^{K}}) + residuals
+$$
+
+### Examining the generalisability of extracted representations
 
 To determine the generalisability of the extracted space–time muscle networks, we implemented a representational similarity analysis where we compared representations extracted from the full datasets 1–3 to equivalent networks extracted from a subset of the respective datasets. We computed the similarity between pairs of representations using Pearson’s correlation.
 
@@ -169,13 +419,17 @@ For datasets 1 and 2 (see below), we removed from the input data an individual p
 
 For dataset 3 (see below), due to the greater number of participants and task parameters, we implemented a more stringent examination. More specifically, we firstly extracted representations from each task space individually and, using these representations as a reference, compared them against functionally similar outputs after removing randomly sized portions of randomly selected vectors in the input data (up to the no. of column vectors − 1). We repeated this procedure for 50 iterations, and computed summary statistics by converting the coefficients to Fisher’s Z values, computing the average and standard deviation, and then reverting these values back to correlation coefficients.
 
-## Subnetwork analysis
+### Subnetwork analysis
 
-To illustrate the relative importance of individual muscles within each network, we determined the total communicability (Ci) of individual nodes (i) in each network (A). Ci is defined as the row-wise sum of all matrix exponentials (e) in the adjacency matrix (A) that consider the number of walks between each pair of nodes i and j (Equation 4.1; Benzi and Klymko, 2013; Estrada and Hatano, 2008):(4.1)C(i)= ∑j=1N[eA]ij
+To illustrate the relative importance of individual muscles within each network, we determined the total communicability ($Ci$) of individual nodes ($i$) in each network ($A$). $Ci$ is defined as the row-wise sum of all matrix exponentials ($e$) in the adjacency matrix ($A$) that consider the number of walks between each pair of nodes $i$ and $j$ (Equation 4.1; Benzi and Klymko, 2013; Estrada and Hatano, 2008):
+
+$$
+C(i)= \sumj=1N[e^{A}]_{ij}
+$$
 
 To emphasise salient functional connectivities in the spatial networks, we sparsified all dependencies with a below average network communicability and illustrated the output on the accompanying human body models (Makarov et al., 2015; Estrada and Hatano, 2008). To uncover salient subnetwork structures consisting of more closely functionally related muscle activations, we applied the monolayer community detection algorithm in Equation 2.1 to the extracted spatial networks (Blondel et al., 2008; Rubinov and Sporns, 2010).
 
-## Data acquisition and processing
+### Data acquisition and processing
 
 To illustrate our framework, we applied it to three datasets of EMG signals recorded during different motor tasks. In dataset 1 (Figure 4A), 7 adult participants (age: 27 ± 2 years, height: 1.77 ± 0.03 m) performed table-top point-to-point reaching movements in both forward and backwards directions and at fast and slow speeds while the activity of nine muscles on the preferred right, reaching arm (finger extensors (FE), brachioradialis (BR), biceps brachii (BI), medial-triceps (TM), lateral-triceps (TL), anterior deltoid (AD), posterior deltoid (PD), pectoralis major (PE), latissimus dorsi (LD)) were captured for a total of 640 trials per participant (Delis et al., 2014). To enable the quantification of shared information across muscles with respect to specific task attributes, we formulated four discrete task parameters of length equal to the number of trials executed. These discrete variables represented the trial-to-trial variation in reaching direction (fwd vs. bwd), speed (high vs. low), and reaching target [P1–P8] (Figure 3A).
 

@@ -32,9 +32,17 @@ To elucidate the functional essentiality of the proliferation-associated, and di
 
 ## Results
 
-## Designing a sgRNA library that targets human tRNA gene families
+### Designing a sgRNA library that targets human tRNA gene families
 
 In this study, we aimed at perturbing diverse human tRNA genes and to then examine the manipulation effects on various cellular phenotypes. tRNA genes appear as isodecoder gene families, that are sets of tRNA genes that share the same anticodon identity. In the human genome, tRNA families can consist of up to dozens of members, with diverse degrees of sequence similarities in the tRNA molecule outside of the anticodon itself. This situation poses a major challenge in targeting the members of each tRNA family with CRISPR-based genomic editing. While designing the sequences of the sgRNAs to edit each tRNA gene family, we attempted to target as many as possible members of the family. In our library design we used a single sgRNA per family, choosing the one that maximizes coverage across family members (Figure 1A). Yet, due to sequence divergence among family members, in some families we could at best target a portion of the members, those with full or high complementarity to the sgRNA sequence (Figure 1A and B, Figure 1—figure supplement 1A). We noticed that the chosen sgRNAs, those that target most of the tRNA family members, are complementary to the functional elements along the tRNA molecule, particularly the internal promoters A and B Boxes and the anticodon (Figure 1A and C, Figure 1—figure supplement 1B). Inevitably though in many tRNA families some members had mismatches relative to their sgRNA sequence, which suggest that these tRNA genes might not be targeted by the chosen sgRNA (Figure 1—figure supplement 1A). Indeed, by deep-sequencing of the tRNA pool in WT HeLa cells, we found that the members that were fully matched to their respective sgRNA in each tRNA family tended to be significantly more highly expressed than those that due to sequence divergence may evade targeting (Figure 1D, Wilcoxon rank-sum test, p<10−4). This result is in line with classical and more recent observations that consistently show that the rate of evolution of genes, and tRNAs in particular, correlates with expression level (Akashi and Gojobori, 2002; Thornlow, 2018). The practical and desired implication of this correlation between expression level and conservation (and hence CRISPR-based targetability in this experiment) means that although for some tRNA families we targeted only a portion of the members, we often targeted the more conserved ones, that tend to be more highly expressed, and that might hence contribute more to the functional tRNA pool.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig1-v2.jpg)
+
+**Figure 1.:** (A) A schema illustrating the sgRNA design for tRNA targeting. The hypothetical tRNA-aa1 family (blue tRNA genes) is targeted by the light-blue sgRNA. Three out of the four tRNA genes (light blue tRNA genes) are fully match to the sgRNA sequence, while the fourth gene has sequence dissimilarities (dark blue tRNA gene), thus predicted not to be targeted by the sgRNA. The hypothetical tRNA-aa2 family (bordeaux tRNA genes) is not predicted to be targeted by the light-blue sgRNA, due to lack of complementarity between the sequences. In addition, the sgRNAs are designed to target functional sequence regions along the tRNA gene to maximize the manipulation effect on the targeted tRNA. (B) A bar plot representing the sequence similarity of the tRNA genes to the corresponding sgRNAs. Each bar denotes a tRNA family in the human genome, overall, 19 out of the 46 tRNA families and one (AsnATT) out of two pseudo tRNA families were targeted. The y-axis denotes the fraction of CRISPR-targeted tRNA genes for each tRNA family (considering only tRNA genes with tRNA score >50, except of the pseudogene AsnATT tRNA family which consists of two genes with tRNA score <50 (colored in pink) [Lowe and Chan, 2016]). The colors in the bars describe the variety of sequence similarity of the tRNA family to the sgRNA sequence (full match in green, one mismatch in purple and two or more mismatches in orange). The tRNA identity is colored according to the differentiation (blue)/proliferation (red)/others (black) classification. (C) A histogram of the location of the sgRNA sequences along the tRNA genes. The x-axis depicts the nucleotide position along the tRNA, with the A box, B box, and the anticodon loop marked. The y-axis depicts the number of sgRNAs that are complementary to each nucleotide. (D) A violin plot describing the distribution of expression levels, in WT HeLa cells, of perfectly matched and non-perfectly matched tRNA genes to their corresponding sgRNAs. The expression of each tRNA family in HeLa cells was calculated by the sum expression of the tRNA genes, averaged over two biological repeats. The distributions are significantly different, -Wilcoxon rank-sum test, p<10−4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A rose chart representing the tRNA targets of the sgRNA library. For each sgRNA (presented in the outmost circle), the tRNA families that are considered as potential targets (both ON-targets and OFF-targets) are detailed in the middle circle. The bars in the innermost circle indicate, for each tRNA family, the fraction of genes with 0 mismatches (blue) one mismatch (green) two mismatches (orange) and three mismatches (Bordeaux). (B) A table representing various parameters of the sgRNA library. The sgRNA parameters include the score for each sgRNA as well as the editing position. The sgRNA score was determined using CHOP-CHOP, a CRISPR web toolbox (Montague et al., 2014). Also given information regarding the anticodon position and the distance between the editing site and the anticodon. (C) A table describing potential OFF-targets in protein coding genes. For each sgRNA, several parameters are mentioned for each OFF- target gene: the identity of the sgRNA, the OFF-target gene name, number of mismatches relative to the sgRNA sequence, total number of exons and the exon number in which the target site is located.
 
 Another challenge in applying a CRISPR-based genomic editing of tRNAs is their non-protein coding nature. When exploiting CRISPR-Cas9 based editing on protein coding genes, most of the disruptive effects result from out-of-frame Indel mutations upon repair. Yet, in non-coding genes, the effect of Indels on functionality are less trivial due to lack of a reading frame (Ho et al., 2015). However, the tRNA gene includes sequence elements that are critical for the functionality, such as the anticodon loop or the two internal promoter boxes. During the sgRNA library design, we attempted to direct the sgRNAs to the functional sequence elements of the tRNA (Figure 1A and C, Figure 1—figure supplement 1B), so that potentially near-by Indels would be maximally perturbing. A point in favor of our approach is that tRNAs are among the shortest RNAs in the human transcriptome, hence Indels, of even a few bases, constitute a significant portion of the molecule and may thus disrupt the secondary structure of the molecule, hence reducing functionality of the mature tRNA.
 
@@ -42,41 +50,85 @@ A last challenge in this sgRNA library design is the potential for off-target ef
 
 In total we have targeted 19 out of 46 families of human tRNA genes, of which nine that constitute the ‘proliferation-tRNAs’, 10 that constitute the ‘differentiation tRNAs’ (Gingold et al., 2014). In addition, we targeted one pseudo-tRNA family, AsnATT.
 
-## Genomic editing of proliferation-tRNAs results in negative selection and a global change of the tRNA pool in HeLa cells
+### Genomic editing of proliferation-tRNAs results in negative selection and a global change of the tRNA pool in HeLa cells
 
 The ‘proliferation-tRNAs’ were previously defined as tRNAs that are induced in cancer and other proliferating cells in comparison to other ‘differentiation-tRNAs’ that are induced in differentiated tissues and in non-dividing cells (Gingold et al., 2014). To test whether these two sets of tRNAs have a differential essentiality in proliferation or in response to cell arresting signals, we first set to validate that tRNA targeting by the CRISPR system results in expression perturbation of the targeted tRNAs. To examine this, we chose to CRISPR-target four tRNAs in HeLa cells - two proliferation-tRNAs, LeuTAG and ArgTCG, and two differentiation-tRNAs, ProCGG and SerCGA. Since all tRNA isodecoder genes of these four tRNA families are perfectly complementary to their respective sgRNA sequences, they are predicted to be fully targeted by the CRISPR system (Figure 1B, Figure 1—figure supplement 1A). We transduced HeLa cells expressing an inducible Cas9 (i.e. iCas9) with each of the four sgRNAs, separately and independently. Following antibiotic selection, we induced the iCas9 gene by adding Doxycycline to the cell’s media for 12 days. To estimate the change in expression of the targeted tRNAs over time, we performed RNA sequencing of the mature tRNAs in each cell population in four time points along the iCas9 induction. Lastly, we calculated the fold-change in expression of the CRISPR-targeted tRNAs in treated cells relative to the WT cells (see Materials and methods).
 
 The expression level of the CRISPR-targeted tRNAs reduced up to twofold compared to WT HeLa cells, an indication for the effectiveness of the genomic editing to reduce the expression of tRNAs (Figure 2A, bars marked with orange arrows). Yet, we noticed that for each CRISPR-targeted tRNA, the maximum reduction in the expression level was reached at a different day following the iCas9 induction. In particular, LeuTAG and ProCGG were maximally repressed already at day 4, while only at day 8 ArgTCG and SerCGA reached to the lowest expression level (Figure 2A). We then tested the expression pattern of each CRISPR-targeted tRNA throughout the iCas9 induction for each treated population. For LeuTAG, ProCGG and SerCGA, we found a similar pattern, that is a decrease in expression level, followed by a gradual recovery to basal levels (Figure 2A. LeuTAG day 4 vs. day 12, t-test, p=0.05; ArgTCG day 8 vs. day 12, t-test, p=ns; ProCGG day 4 vs. day 12, t-test, p=0.05; SerCGA day 8 vs. day 12, t-test, p=ns). However, even at day 12 of the iCas9 induction, the expression level of SerCGA remained low (Figure 2A). These differences between the tRNAs suggest that cells with CRISPR-edited SerCGA genes have a higher fitness relative to WT cells compare to CRISPR-edited LeuTAG and ProCGG genes. To test this hypothesis, for each targeted tRNA, we determined the fraction of CRISPR-edited tRNAs by computing the ratio between the number of reads corresponding to the CRISPR-edited tRNAs and the total tRNA reads, both at the genomic level (by DNA sequencing [Figure 2—figure supplement 1A]) and at the RNA level (from the RNA sequencing [Figure 2—figure supplement 1B]). At both levels, we found that for each targeted tRNA (except of ArgTCG), the dynamics of the targeted tRNA fraction along the iCas9 induction reflected the expression level. An increase in the CRISPR-edited tRNA reads in the first 4–8 days of the iCas9 induction is followed by an increase of the intact tRNA reads on the expense of the CRISPR-edited tRNA reads (Figure 2—figure supplement 1A–B). Together, the observed dynamics suggest that most CRISPR editing occurs in the first 4 to 8 days (Yuen et al., 2017), and it is then followed by a competition between cells with various types and extents of editing. The cell competition results in a decline in the edited form of the CRISPR-targeted tRNAs that reflects selection against edited tRNA cells. The negative selection appears to be most pronounced for LeuTAG and ProCGG edited cells, suggesting that these tRNAs are essential in proliferative HeLa cells. Conversely, cells with CRISPR-edited SerCGA genes had only a minor disadvantage and mainly continued to propagate in the population along with their un-edited counterparts. Moreover, these results propose that ProCGG tRNA, despite its original designation as a differentiation-tRNA, might have an essential role in proliferation of HeLa cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bar plots describing the tRNA expression dynamics along the iCas9 induction for each CRISPR-targeted tRNA. The y-axis depicts the fold-change (log2) in the tRNA expression of the CRISPR-targeted tRNA in the treated cells relative to WT cells, summed over all gene members of the CRISPR-targeted tRNA family. Each bar represents a time point during the iCas9 induction (n = 2) and the error bars depicts the standard errors. The orange arrows point on the maximized expression reduction of the CRISPR-targeted tRNA during the iCas9 induction. The two left plots describe the proliferation edited tRNA families and the two left plots describe the differentiation edited tRNA families. * indicates p<0.05 and ns indicates non-significant p-value of two-sample T-tests comparing between the sample with the highest expression reduction and the last time point. (B) A scatter plot of the correlation between the number of mismatches of the CRISPR-targeted tRNAs (both ON-target and OFF-targets) relative to the corresponding sgRNA sequence and their change in expression in CRISPR-targeted HeLa cells (Pearson correlation, r = 0.87, p<10−4). Each dot represents a tRNA gene family with a potential to be targeted by a sgRNA (with 0–3 mismatches), while the sgRNA is indicated by the color. The ON-targets have 0 mismatch, while OFF-targets consists between 1–3 mismatches. The y-axis depicts the fold-change (log2) in the tRNA expression of the potential targets in the CRISPR-treated HeLa cells relative to WT HeLa cells, averaged over two biological repeats. (C) A heat map representing the differential expression of the cellular tRNA pool in CRISPR-targeted tRNA cells. Each column represents a cell population with CRISPR-targeted tRNA family, and each row represents a tRNA isodecoder, grouped by their type (proliferation-red/differentiation-blue/other-black). The color code depicts the fold-change (log2) in tRNA expression in the CRISPR-targeted tRNA sample at day8 of the iCas9 induction relative to the WT sample at the same day, averaged over two biological repeats. The expression level of the ON-target tRNA in each sample is marked in black square. The dendrogram represents the hierarchical clustering of the different CRISPR-targeted tRNA samples based on changes in tRNA expression profile.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bar plots describing the changes in the fraction of edited tRNA reads from genomic tRNA sequencing (B) Bar plots describing the changes in the fraction of edited tRNA reads from mature tRNA sequencing. Each bar represents a time point during the iCas9 induction (n = 2), error bars depicts standard errors. The two left plots describe the proliferation CRISPR-targeted tRNA samples and the two left plots describe the differentiation CRISPR-targeted tRNA samples. ** indicates p<0.01, * indicates p<0.05 and ns indicates non-significant p-value of two-sample T-tests comparing between the sample with the highest fraction of edited tRNA reads and the last time point.
+
 We next turned to address the above-mentioned concern, some sgRNAs may affect other partially complementary tRNAs’ expression. We focused on the four tRNAs, LeuTAG, ArgTCG, ProCGG and SerCGA, and their corresponding sgRNAs in HeLa cells. Comparing the sequence of each of 4 sgRNAs against each human tRNA gene allows us to define for each sgRNA it’s perfectly –matching ON-target and also OFF-targets with either 1, 2, or three nucleotide mismatches. Sequencing the entire tRNA pool at the RNA level under each sgRNA allowed us to assess the effects of the three levels of -mismatches on tRNA expression. We found maximal reduction for ON-targets that gradually recovered to WT levels with extent of mismatch at OFF-targets. In particular we see a positive linear correlation between the number of mismatches and the logarithm reduction in tRNA expression (Figure 2B, regression model, tRNA expression as a linear function of number of mismatches, had a slope of 0.5 and intercept of −1.3; Pearson correlation, r = 0.87, p<10−4). Compared to expression reduction of ON-targets, the reduction in expression level was already lower for OFF targets with one mismatch, and much lower, even non-existing for OFF targets with two or more mismatches.
 
 In addition to changes in the expression levels of the CRISPR-targeted tRNAs themselves, the tRNA pool in cells may feature a more complex response following the reduction of each of the individually targeted tRNAs. Such cellular response would be reflected in expression changes of other tRNAs that were not CRISPR-targeted directly or in-directly as OFF-targets. We, therefore, monitored, in HeLa cells, the change in the expression levels of all tRNAs in each of the four individually manipulated tRNA populations throughout iCas9 induction. We found that the tRNA pool does respond to genomic editing of individual tRNAs, either by induction or repression of other tRNAs, by factors as high as 2 to 4 relative to WT HeLa cells (Figure 2C). Further, the tRNA pool responded similarly in the CRISPR-targeting of the three tRNAs that proved to be the most essential in the above experiment, namely ProCGG, ArgTCG, and LeuTAG (Figure 2A, Figure 2—figure supplement 1A–B). In contrast, the response to the targeting of SerCGA, which is relatively less essential in HeLa cells, was mild also at the expression of the tRNA pool level, and it resembled the tRNA pool of WT cells (Figure 2C). When examining the type of tRNAs which are differentially expressed in either ProCGG, ArgTCG, and LeuTAG-targeted cells, we observed that most of the up-regulated tRNAs belong to the proliferation-tRNA group, while most of the down-regulated tRNAs belong to the differentiation-tRNA group (Figure 2C). The other tRNAs, those that do not belong to the proliferation or differentiation-tRNA sets, showed a mixed pattern that was characterized with either up or down expression regulation (Figure 2C). These results suggest that the tRNA pool in HeLa cells is responsive to the reduction of essential tRNAs. In particular, proliferation-tRNAs are preferentially up-regulated, whereas differentiation-tRNAs are mostly down-regulated following expression manipulation of essential tRNAs.
 
-## Proliferation-tRNAs are more essential than differentiation-tRNAs for cellular growth of HeLa cells
+### Proliferation-tRNAs are more essential than differentiation-tRNAs for cellular growth of HeLa cells
 
 As we validated that CRISPR-iCas9 is a suitable system to perturb the tRNA expression level, we conducted a CRISPR- targeted tRNA variants competition experiment among our designed library of 20 sgRNAs, to evaluate how reduction in tRNA levels affects the proliferation of HeLa cells. We transduced HeLa-iCas9 cells with the sgRNA library in a way in which each cell in the population expresses a single sgRNA type, and induced the iCas9 gene for 14 days (Figure 3A). To evaluate the growth dynamics of each of the CRISPR-targeted tRNA variants among the competing cells in the population, we deep-sequenced the genomic region encoding for the sgRNAs in five time points during the iCas9 induction. Then, we estimated the relative fitness of each CRISPR-targeted tRNA variant by calculating the fold-change of the sgRNA frequency in each time point relative to day 0 (before iCas9 induction) (Figure 3A, see Materials and methods). Beginning from day 7 of the competition, we observed a strong difference in relative sgRNA frequency between the CRISPR-targeted tRNA groups, with some CRISPR mutants declining in frequency by 2 orders of magnitude already at day 7, and by 3 orders of magnitude at day 14 relative to day 0 (Figure 3B). Many of the targeted proliferation-tRNA variants showed a sharp decline in frequency in the pooled population, while many of the targeted differentiation-tRNA variants showed relatively mild change in frequency (Figure 3B). This is a clear indication that on average as a group, the proliferation-tRNAs are more essential for HeLa cells. Assuming an unperturbed doubling time of about one day for this cell line, a decline in frequency of some of the proliferation-tRNAs by a factor of ~4000 compared to the total targeted population, obtained over 14 days, indicates almost complete arrest of cell doublings or cell death immediately upon iCas9 activation. CRISPR-targeting of the pseudo tRNA AsnATT, a very lowly expressed tRNA in HeLa cells (undetected in tRNA sequencing), elevated the relative frequency of the cells that carried its sgRNA, indicating very small contribution to fitness (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig3-v2.jpg)
+
+**Figure 3.:** (A) The experimental design. We designed a CRISPR-sgRNA library, in which each sgRNA targets specific tRNA gene family. Overall, we targeted nine proliferation-tRNAs, 10 differentiation- tRNAs and one pseudo tRNA family. Following cloning of the sgRNAs into a lenti-plasmid, we produced a lenti-viral pool that contained the entire sgRNA pool. Then, we transduced human cell lines (HeLa, WI38 fast and WI38 slow) expressing an inducible Cas9 with the lenti-viral sgRNA pool. We performed a CRISPR-edited tRNA cell competition by induction of the iCas9 in parallel to antibiotic selection (two biological repeats for each cell line). The iCas9 induction continued for 14 days, during which we sampled the heterogonous population every 3–4 days. Lastly, we deep-sequenced the sgRNAs in each sample, to evaluate the growth dynamics of the targeted-tRNA cells. (B) A heat map representation of the relative fitness of CRISPR-targeted tRNA variants in HeLa cells. Each row represents a CRISPR-targeted tRNA variant, colored according to the tRNA classification (proliferation-tRNAs in red, differentiation-tRNAs in blue and pseudo tRNA in black). Each column represents a time point during the iCas9 induction. The color code depicts a proxy of each row’s relative fitness - fold-change (log2) of the sgRNA read frequency in each time point relative to the sgRNA read frequency in day 0 of the iCas9 induction (see Materials and methods). The values were averaged over two biological repeats. (C) A scatter plot of the correlation between the expression of tRNAs in WT HeLa cells and their relative fitness upon CRISPR-targeting (regression model, relative fitness as a linear function of tRNA expression, had a slope of −219.5 and intercept of 0.26; Pearson correlation, r = −0.71, p<10−3). Expression levels for each targeted tRNA families is summed over all isodecoder genes of the family and is averaged over two biological repeats. Observed relative fitness of the CRISPR-targeted tRNA cells is shown given frequency of each tRNA family in day 7 of the competition. The colors and numbers denote the tRNA group. (D) Shown here is the estimated real relative fitness (log2) of each tRNA-targeted HeLa cells based on the observed relative fitness (log2), using a linear equation system. The observed and estimated real essentiality are correlated (regression model, estimated real relative fitness as a linear function of observed relative fitness, had a slope of 1.19 and intercept of 0.37; Pearson correlation, r = 0.93, p<10−5). The color code depicts the fraction of isodecoder genes of each ON-target tRNA family with full complementarity to the respective sgRNA. tRNA numbering in sub figures C and D is identical to those presented in sub figure B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparisons of (A) tRNA expression level in WT cells, (B) targeting efficiency, and (C) relative fitness between targeted proliferation and differentiation-tRNAs in HeLa cells. Each dot depicts a single tRNA family. Wilcoxon rank-sum test was conducted to examine significance of difference between the distributions (* indicates p<0.05, ns indicates non- significant p value).
+
 We were further interested in revealing whether the expression levels of each of the tRNA in WT HeLa cells can explain the effect on their relative fitness upon CRISPR-targeting. We found a negative correlation between the expression levels of each of the CRISPR-targeted tRNAs in WT HeLa cells and the relative fitness of their CRISPR-edited tRNA variants, indicating higher essentiality of highly expressed tRNA (Figure 3C, regression model, relative fitness as a linear function of tRNA expression, had a slope of −219.5 and intercept of 0.26; Pearson correlation, r = −0.71, p<10−3). This is in line with observations made in evolutionary biology showing that highly expressed genes tend to be more essential than lowly expressed ones (Krylov et al., 2003). We next wanted to examine if the higher essentiality of the proliferation-tRNAs could be explained by their being more highly expressed or targeted more efficiently than the differentiation-tRNAs in HeLa cells. Yet we found no significant difference in the distribution of expression level between the proliferation and differentiation-tRNAs in WT HeLa cells (Figure 3—figure supplement 1A, Wilcoxon rank-sum test, p=ns), or in the targeting efficiency, namely the fraction of tRNA genes with full complementarity to their respective sgRNA, between the proliferation and differentiation- tRNAs (Figure 3—figure supplement 1B, Wilcoxon rank-sum test, p=ns). These results indicate that the higher essentiality of the proliferation-tRNAs (Figure 3C, Figure 3—figure supplement 1C, Wilcoxon rank-sum test, p<0.05) cannot be explained by mere expression level or targeting efficiency differences between the proliferation and differentiation-tRNAs.
 
-The relative fitness of CRISPR-targeted HeLa variants, assessed in the competition experiment, might be influenced by contributions of OFF-targeted tRNAs. We thus aimed to better approximate the real relative fitness contribution of each tRNA family from the observed fitness contribution of that family, and the extent of OFF-targeting. Assuming a linear model, in which fitness effects accumulate additively and not synergistically between ON and OFF-targeted tRNAs, we could then solve the following linear system of equations:O¯=M*R¯
+The relative fitness of CRISPR-targeted HeLa variants, assessed in the competition experiment, might be influenced by contributions of OFF-targeted tRNAs. We thus aimed to better approximate the real relative fitness contribution of each tRNA family from the observed fitness contribution of that family, and the extent of OFF-targeting. Assuming a linear model, in which fitness effects accumulate additively and not synergistically between ON and OFF-targeted tRNAs, we could then solve the following linear system of equations:
 
-Where O¯ is the vector of observed fitness contribution of each of the 20 ON-targeted tRNAs, M is a squared 20 × 20 matrix whose ij-th element depicts the estimated reduction expression of family of tRNAi by the sgRNA designed against family of tRNAj, and R¯ is the estimated real fitness contribution of each tRNA family, for which we aim to solve. The M matrix elements are evaluated from sequence similarity and estimated reduction of the tRNA expression at each level of mismatch (based on Figure 2B). For more details, see ‘Material and methods’. Solving for the vector R¯ reveals high correlation with the observed values O¯ (Figure 3D, regression model, estimated real relative fitness as a linear function of observed relative fitness, had a slope of 1.19 and intercept of 0.37; Pearson correlation, r = 0.93, p<10−5), attesting to the quality of the sgRNA designs which indeed maximized coverage of ON-targeting of families while minimizing OFF- targeting. Nonetheless we did observe, for some tRNAs, deviations in which the observed essentiality was either over or under estimated. Yet. Since the observed relative fitness did typically not change much we remained with these observed values for the rest of the analyses presented in this work.
+$$
+O¯=M*R¯
+$$
 
-## The response to CRISPR-targeting of tRNAs is dependent on the cell line origin and the growth rate
+Where $O¯$ is the vector of observed fitness contribution of each of the 20 ON-targeted tRNAs, M is a squared 20 × 20 matrix whose ij-th element depicts the estimated reduction expression of family of tRNAi by the sgRNA designed against family of tRNAj, and $R¯$ is the estimated real fitness contribution of each tRNA family, for which we aim to solve. The M matrix elements are evaluated from sequence similarity and estimated reduction of the tRNA expression at each level of mismatch (based on Figure 2B). For more details, see ‘Material and methods’. Solving for the vector $R¯$ reveals high correlation with the observed values $O¯$ (Figure 3D, regression model, estimated real relative fitness as a linear function of observed relative fitness, had a slope of 1.19 and intercept of 0.37; Pearson correlation, r = 0.93, p<10−5), attesting to the quality of the sgRNA designs which indeed maximized coverage of ON-targeting of families while minimizing OFF- targeting. Nonetheless we did observe, for some tRNAs, deviations in which the observed essentiality was either over or under estimated. Yet. Since the observed relative fitness did typically not change much we remained with these observed values for the rest of the analyses presented in this work.
+
+### The response to CRISPR-targeting of tRNAs is dependent on the cell line origin and the growth rate
 
 We next moved to examine the essentiality of the various tRNAs in more slow-growing cell lines. We looked for at least two human cell lines of similar origin that yet manifest different growth rates. We chose two fibroblasts cell lines that were both derived from the same original fibroblast cell line, WI38, in a serial passaging process (Milyavsky et al., 2003). An early and late time point along the serial passaging process yielded respectively the ‘WI38 slow’ cell line and the ‘WI38 fast’ cell line, whose doubling times are around ~72 hr and ~24 hr, respectively (compared to HeLa’s ~ 20 hr). We applied the sgRNA library in WI38 fast iCas9 and WI38 slow iCas9 cell lines, and performed a cell competition assay between the different tRNA-targeted variants in each of the two cell lines, as was done for HeLa cells. Note that the selection marker for sgRNA-transduced cells was Puromycin, while WI38-derived cell lines have acquired resistance to Puromycin during their original immortalization process (Milyavsky et al., 2003). Yet, this did not hinder our analyses since sequencing the sgRNAs enabled us to examine only the cells that did harbor the sgRNA plasmid. We deep-sequenced the genomic region encoding for the sgRNAs at different time points during the competition, and used it to estimate the relative fitness of each edited tRNA variant for each cell line at day 7 of the competition.
 
 We examined the correlation between the relative fitness of different CRISPR-targeted tRNA variants in HeLa, WI38 fast and WI38 slow cell lines. Overall, tRNAs tended to show similar relative fitness values in all cell lines (Figure 4 and Figure 4—figure supplements 1–2; Person correlation, HeLa vs WI38 slow: r = 0.54, p<0.05; WI38 fast vs WI38 slow: r = 0.81, p<10−4; HeLa vs WI38 fast: r = 0.76, p<10−4). Yet, a more detailed comparison revealed differences between the cell lines. Comparing tRNA essentiality in WI38 slow cells and HeLa cells, that is the slowest to the fastest cell lines in this collection, revealed a marked difference in tRNA essentiality (Figure 4A). While HeLa cells were more sensitive to CRISPR-targeting of most of the proliferation-tRNAs but only mildly sensitive to differentiation-tRNA targeting, WI38 slow cells showed enhanced sensitivity to CRISPR-targeting of differentiation- tRNAs, and much lower sensitivity to targeting of proliferation-tRNAs (Figure 4A, regression model, proliferation-tRNA-targeted WI38 slow cells as a linear function of proliferation-tRNA- targeted HeLa cells, had a slope of 0.79 and intercept of 1.4; differentiation-tRNA-targeted WI38 slow cells as a linear function of differentiation-tRNA-targeted HeLa cells, had a slope of 2.35 and intercept of −1.82). When comparing WI38 slow to WI38 fast cells (Figure 4B), we observed that most tRNA targeting affected the cell’s fitness similarly in the two cell lines, yet, three CRISPR-targeted tRNA variants differed in fitness (Figure 4B, regression model, proliferation-tRNA- targeted WI38 slow cells as a linear function of proliferation-tRNA-targeted WI38 fast cells, had a slope of 0.5 and intercept of 0.07; differentiation-tRNA-targeted WI38 slow cells as a linear function of differentiation-tRNA-targeted WI38 fast cells, had a slope of 1.1 and intercept of −0.26). Two of the three are proliferation-tRNAs that showed lower fitness in WI38 fast cells than in WI38 slow cells, and the third is a differentiation-tRNA that was more essential in the WI38 slow cells. We also observed higher sensitivity of WI38 fast cells to differentiation-tRNA-editing compared to HeLa cells, although the difference was less pronounced than the effect of differentiation-tRNA-editing in WI38 slow (Figure 4C, regression model, proliferation-tRNA-targeted WI38 fast cells as a linear function of proliferation-tRNA-targeted HeLa cells, had a slope of 1.5 and intercept of 2.5; differentiation-tRNA-targeted WI38 fast cells as a linear function of differentiation-tRNA-targeted HeLa cells, had a slope of 1.5 and intercept of −1.9).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig4-v2.jpg)
+
+**Figure 4.:** (A-C) Scatter plots that indicate the correlation between the relative fitness (log2) of the edited tRNA cells between all pairwise combinations of three cell lines (Person correlation, (A) HeLa vs WI38 Slow: r = 0.54, p<0.05; (B) WI38 Fast vs WI38 Slow: r = 0.81, p<10−4; (C) HeLa vs WI38 Fast: r = 0.76, p<10−4). The relative fitness of each CRISPR-targeted tRNA variant in each cell lines was determined based on day 7 of the cell competition, and was averaged over two biological repeats. (D) Hierarchical clustering of the tested cell lines based on the tRNA pool expression in WT cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-C) Scatter plots representing the correlation between the relative fitness of the CRISPR-targeted tRNA variants in different days along the cell competition (days 4, 7, 10, and 14). The colors depict the tRNA family (red-proliferation-tRNAs; blue-differentiation-tRNAs; black-pseudo tRNA). The correlation coefficient r and p-values are detailed for each scatter plot. (A) HeLa cells (B) WI38 fast cells (C) WI38 slow cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Continue from Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Scatter plots representing the correlation between expression levels of the tRNA pool in WT WI38 fast, WI38 slow and HeLa cells, averaged over two biological repeats. Each dot is a tRNA family, while the expression is summed over all tRNA isodecoders that belong to the tRNA family (RPM), in log2. The colors depict the group of the tRNA family (red-proliferation-tRNAs; blue-differentiation-tRNAs; grey-other tRNAs). The Pearson correlation coefficient r and p-values are detailed for each scatter plot. (B) The maximal fraction of the edited tRNA genes from the total tRNA reads in tRNA-targeted WI38 fast and HeLa cells. For each cell line and sgRNA, the maximal fraction of targeted tRNAs was reached in a specific day of the iCas9 induction (LeuTAG, WI38 fast - day 8; LeuTAG, HeLa - day 4; SerCGA, WI38 fast - day 4, SerCGA, HeLa - day 8).
+
 To explore the possibility that the differences in essentiality of specific tRNAs detected in different cell types are due to potential differences in their expression levels in these cells, we sequenced the tRNA pool in WT cells in all cell lines. Cell line clustering based on the tRNA expression shows higher similarity between the WI38-derived cell lines than to HeLa cells (Figure 4D), although by and large the expression level of the different tRNA families is highly correlated between the cell lines, with correlation values ranging from 1 < R < 0.92 (Figure 4—figure supplement 3A). This analysis suggests that tRNA essentiality in different cell lines cannot be explained simply by differences in expression level. We further tested whether iCas9 targeting levels differ between different cell lines. For that, we sequenced the genomic regions of tRNA genes belonging to two tRNA families, LeuTAG and SerCGA, in both WI38 fast cells and HeLa cells transduced with the corresponding sgRNAs. We found that the fraction of edited tRNA genes in WI38 fast cells was about three times lower than in HeLa cells (Figure 4—figure supplement 3B). This could be explained by lower efficiency of the CRISPR system in WI38 fast cells (Lino et al., 2018), or a higher sensitivity of these cells to genomic editing which results in loss of edited cells from the population (Haapaniemi et al., 2018; Ihry et al., 2018). Regardless to the exact reason, differences in targeting efficiency between the cell lines may affect the absolute fitness values calculated for each cell line and hence the slopes of the regression lines presented in Figure 4. Yet our main results, namely the ranking of essentiality of tRNAs within a cell line are immune from such potential caveat, and we can indeed determine changes in relative essentiality of different tRNAs in the different cell lines. These results indicate that tRNA essentiality depends both on cell origin and on the proliferation status of the cell. In particular, the more proliferative cells show a higher essentiality of the proliferation-tRNAs, while slower cell lines’ fitness depend more on differentiation-tRNAs. Cellular origin appears relevant too – although the WI38 slow and fast cells differ markedly in doubling time, their essentiality profile is almost identical across most tRNAs.
 
-## The transition from proliferative to cell cycle arrest state requires a unique set of tRNA families
+### The transition from proliferative to cell cycle arrest state requires a unique set of tRNA families
 
 Having established the differential roles of tRNAs for cellular proliferation, we turned to examine their essentiality in response to cell cycle arresting conditions. We focused on two distinct cell cycle arrest states, quiescence and senescence, which are reversible and irreversible G0 states, respectively.
 
 To assess the role of tRNAs in entering these arrested states, we expressed the tRNA-CRISPR library described in Figure 1 and Figure 3A in WI38 fast iCas9 cells. Besides the CRISPR system, we expressed in those cells a mCherry gene downstream to an endogenous promoter of human p21 (p21p-mCherry), a known marker for arrested cells. The p21 protein is a cyclin-dependent kinase inhibitor that promotes the entrance to cell cycle arrest. p21 is a primary mediator of the p53 pathway in response to DNA damage, which results in the loss of proliferation potential and induction of senescence (Abbas and Dutta, 2009; Rufini et al., 2013). In addition, studies have shown that high p21 expression is essential for the transition to the quiescence state (Perucca et al., 2009; Overton et al., 2014).
 
 We stably introduced a p21p-mCherry construct into WI38 fast iCas9 cells, followed by the creation of a clonal population that originated from a single cell. Then, we transduced the sgRNA library into the clonal WI38 fast iCas9 and p21p-mCherry cells. After that, we applied antibiotics selection, followed by induction of the iCas9 for 3 days to allow editing of the tRNA genes while minimizing selection based on the relative fitness of each cell in the culture. Then, we split the transduced population into three populations that were each allowed to grow continuously, yet under different conditions (see Materials and methods). Quiescence was induced by growing the cells in a serum-free medium (Figure 5A, ‘Q’ population). Senescence was induced by Etoposide at a sub-lethal concentration (Figure 5A, ‘S’ population). The untreated population continued to grow in normal conditions (Figure 5A, ‘U’ population). After 2 days under treatment, we measured the mCherry levels (normalized to the cell size, using the forward scatter (FSC) measure) of each of the three populations using a flow cytometer. We observed a significant difference in the mCherry/FSC distributions between the three populations (Figure 5A, Wilcoxon rank-sum test, untreated vs quiescence: p<10−4, untreated vs senescence: p<10−4, quiescence vs senescence: p<10−4), indicating differences in the regulation of p21 expression in response to the different types of arrest signals. The senescent population showed the widest distribution, with the highest mCherry/FSC value (Figure 5A). As expected, the untreated population showed the tightest distribution, with the lowest mCherry/FSC value (Figure 5A). The histogram of the quiescence population is similar to that of the untreated, with a small shift towards the higher mCherry/FSC values (Figure 5A). Cell cycle analysis of the treated and untreated populations revealed that cells under serum starvation arrested in G1 state, were cells treated with low dosage of Etoposide arrested in G2 state (Figure 5—figure supplement 1A) . We further found that Etoposide- treated cells up- regulate SASP (Senescence-Associated Secretory Phenotype) genes 1 week following the Etoposidetreatment. (Figure 5—figure supplement 1B) These results indicate that serum starvation and low dosage of Etoposide indeed triggered the WI38 fast cells to enter into quiescence and senescence state, respectively.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig5-v2.jpg)
+
+**Figure 5.:** (A) A multiplexed assay for tRNA essentiality for growth arrest signals. The tRNA-sgRNA library was transduced into WI38 fast cells that express iCas9 under doxy inducible promoter and mCherry gene under the endogenous promoter of human p21. After the induction of iCas9, we split the cell population (ancestor sample) into three populations, each treated with different conditions to stimulate the entrance to a cell cycle arrest state. After 2 days, we measured the mCherry/FSC levels of each population using FACS. The distributions of the three populations, based on the mCherry/FSC are shown in the middle (U - untreated; Q - quiescence; S - senescence). Then, each population was sorted according to the mCherry/FSC ratio, while sampling the top and bottom 5% of each population (High bin-labeled in green; Low bin-labeled in purple). Then, we extracted the genomic DNA of each sample and deep sequenced the sgRNAs, looking for enriched and depleted sgRNAs (relative to the ancestor sample). (B) Hierarchical clustering of the sorted samples and the sgRNAs based on the averaged changes (two biological repeats) in the sgRNA read count of each sorted sample normalized to the ancestor sample (log2). The lower table depicts the mean mCherry level and the mean mCherry/FSC ratio of each sorted population, based on the FACS measurements. (C) A scatter plot comparing the essentiality of tRNAs to cellular proliferation and enterance into cell arrest in WI38 fast cells. (regression model, sgRNA abundancy in high p21-mCherry cells as a linear function of the relative fitness of tRNA-targeted WI38 fast cells, had a slope of −0.38 and intercept of −1.47; Pearson correlation, r = −0.45, p<0.05). Colors of tRNA families are as in previous Figures. (D) A box plot presenting the fraction of cells expressing high mCherry levels (>1700 relative fluorescence intensity (arbitrary units)) in each CRISPR-targeted tRNA variant (three biological repeats). The control sample is expressing a random sgRNA with no target sequence in the human genome. The number in parentheses on the x-axis denotes the number of the targeted tRNA family genes, as in subfigure C. A two-sample t-test was conducted to compare each sample to the control. * indicates p<0.05; ** indicates p<0.01. (E) A heat map summarizing the essentiality of each tRNA to different cell lines and proliferation states. Each row represents a tRNA family, classified to proliferation (red), differentiation (blue), or pseudo (black) tRNAs. Each column represents a cell line or condition. The color code depicts the essentiality of the tRNA. The essentiality is the (log2) fold-change in sgRNA read count in each experiment (as described in; Figure 4A Figure 4B; Figure 4C and subfigure C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58461/elife-58461-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell cycle analysis of arrest-triggered cell populations. Each stacked bar represents a population that was untreated or treated to trigger entering into a cell cycle arrest state (i.e. serum starvation to induce quiescence, and low dosage of Etoposide to induce senescence) for 48 hr. In each bar, the percentage of cells at different cell cycle phases is shown. The results are averaged over two biological repeats. (B) Relative mRNA expression of senescence markers. mRNA expression of Il6 and Il8 in each sample is normalized to the expression of GAPDH, and presented as fold-change to the averaged expression of untreated samples (n = 2, error bars represent standard errors).
 
 We could then progress towards a multiplexed assay for the essentiality of each of the 20 CRISPR-targeted tRNAs for responding to the signal and carrying out a program for cell arrest. Since this assay did not include the cell competition phase, we were able to accurately assess the differences in sgRNA abundance between untreated and arrest-triggered cells, which infer on tRNA essentiality for entering into a non-dividing state. We reasoned that cells with CRISPR-targeted tRNAs that are important for the transition from the base condition to a non-dividing state are likely to be underrepresented in the population of responding cells, that is cells with high p21p-mCherry levels. We have thus sorted each of the three populations based on the mCherry/FSC values, and sampled cells from the top and bottom 5% of each of the respective populations (i.e. High (‘H’) and Low (‘L’) bins, respectively, Figure 5A). We hypothesized that the high mCherry/FSC samples will be enriched with responding cells, while the low mCherry/FSC samples will be enriched with non-responding cells (Figure 5A). To determine tRNA essentiality, we sequenced the genomic region of the sgRNAs in each sorted sample and calculated the sgRNA abundance (Figure 5A). We examined the diversity of the sgRNA read count in each sorted population of the different treatments, normalized to the sgRNA read count of the ancestor sample (the edited tRNA cell population, without any treatment). We thus obtained the normalized abundancy profile of 20 tRNAs at six samples (three conditions, times high and low mCherry level for each). To assess the similarity of tRNA abundancy profiles of the six samples we used two-way hierarchical clustering of the samples and the tRNAs (Figure 5B). Clustering samples across the 20 CRISPR-targeted tRNAs shows two main clusters (Figure 5B). One cluster consists of all high mCherry/FSC samples from all three treatments (called, U-H, Q-H and S-H), as well as senescence low mCherry/FSC sample (i.e. S-L), suggesting that in the senescence treatment, even the Low mCherry/FSC cells, S-L sample, contains responding cells. The second cluster contains the two low mCherry/FSC samples from the untreated and quiescence populations (i.e. U-L and Q-L). Upon clustering the 20 CRISPR-targeted tRNAs across the samples we could detect some tRNAs that appear essential for entry into the arrested state (Figure 5B). Interestingly, these tRNAs do not belong consistently to either the proliferation-tRNA or differentiation-tRNA sets. Yet, overall, same tRNAs tend to be more essential for both entries to quiescence and senescence.
 
@@ -100,7 +152,304 @@ Changes in the expression of tRNAs in cancer are well established. Furthermore, 
 
 ## Materials and methods
 
-## SgRNA design and cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Dh5α</td>
+      <td>Thermo- Fisher</td>
+      <td>18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa-iCas9</td>
+      <td>George Church’s lab (Harvard Medical school)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>WI38 fast</td>
+      <td>Milyavsky et al., 2003 Moshe Oren’s lab (Weizmann Institute)</td>
+      <td></td>
+      <td>Referred to as WI-38/hTERTfast, 484</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>WI38 slow</td>
+      <td>Milyavsky et al., 2003 Moshe Oren’s lab (Weizmann Institute)</td>
+      <td></td>
+      <td>Referred to as WI-38/hTERTslow, 48 PDL</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pB-Cas9 andpB-support vector</td>
+      <td>George Church’s lab (Harvard Medical school)</td>
+      <td></td>
+      <td>iCas9 plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LentiGuide-Puro</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_52963</td>
+      <td>sgRNA plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PMD2.G</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td>Lenti-virus packaging plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12260</td>
+      <td>Lenti-virus packaging plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p21p-mCherry-NLS</td>
+      <td>Plasmid bank of the Weizmann Institute</td>
+      <td>2280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Reverse-transcription-DNA primer</td>
+      <td>Mordret et al., 2019</td>
+      <td></td>
+      <td>CACGACGCTCTTCCGATCTT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Reverse-transcription-RNA primer</td>
+      <td>Mordret et al., 2019</td>
+      <td></td>
+      <td>rArGrArUrCrGrGrArArGrArGrCrGrUrCrGrUrG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>3’-ligation adaptor</td>
+      <td>Mordret et al., 2019</td>
+      <td></td>
+      <td>AGATCGGAAGAGCACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>E. coli-tyr-tRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>R3143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>S. cerevisia-phe-tRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>R4018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAseq_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTTACCGTAACTTGAAAGTATTTCGATTTCTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAseq_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTTTTCAAGTTGATAACGGACTAGCCTTATTTTAAC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGIRT-III</td>
+      <td>InGex</td>
+      <td>5073018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PEG virus precipitation kit</td>
+      <td>BioVision</td>
+      <td>K904-50/200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>NEB</td>
+      <td>E2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin miRNA kit</td>
+      <td>Macherey-Nagal</td>
+      <td>740971.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink genomic DNA mini kit</td>
+      <td>Invitrogene</td>
+      <td>K182000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AB high-capacity cDNA reverse-transcription kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etoposide</td>
+      <td>Sigma-Aldrich</td>
+      <td>33419-42-0</td>
+      <td>2.5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>58-58-2</td>
+      <td>2 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>InvivoGen</td>
+      <td>BLL-38-02A</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>10592-13-9</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin</td>
+      <td>Thermo Fisher</td>
+      <td>10687010</td>
+      <td>200 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaluza</td>
+      <td>beckman</td>
+      <td>RRID:SCR_016182</td>
+      <td>Flow cytometry analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software v10.2 (Tree Star)</td>
+      <td>BD biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td>Flow cytometry analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>homerTool</td>
+      <td>Duttke et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BedTools-coverage count</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>RRID:SCR_011841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPResso</td>
+      <td>Pinello et al., 2016</td>
+      <td>https://github.com/pinellolab/CRISPResso2.git</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vsearch</td>
+      <td>Rognes et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agencourt AMPure XP</td>
+      <td>Beckman Coulter</td>
+      <td>A63881</td>
+      <td>SPRI-beads</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>abcam</td>
+      <td>ab228551</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads myOne SILANE</td>
+      <td>life Technologies</td>
+      <td>37002D</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### SgRNA design and cloning
 
 sgRNA candidates targeting various tRNA families were designed by providing tRNA sequences to ‘http://chopchop.cbu.uib.no/’ (Montague et al., 2014). For each tRNA family, analyses were done for each of its unique sequences in the human genome. Then, a single sgRNA was chosen for each tRNA family that was predicted to target the maximum number of genomic copies and that had the highest sgRNA score, according to the sgRNA design tool. The list of sgRNA sequences is presented in Figure 1—source data 1.
 
@@ -108,7 +457,7 @@ For each sgRNA, the predicted off-target list was downloaded from the sgRNA desi
 
 ‘Restriction-free’ cloning was performed to create sgRNA plasmids for targeting tRNA families. For each sgRNA sequence, long primers were ordered and used as megaprimers. The PCR reaction was conducted using iProof master mix (X2) (Bio-Rad; 172–5310), 10 µM of Forward and Reverse primers and 50 ng of lenti-sgRNA plasmid (Addgene; 52963) in a 50 µl total volume reaction, for 12 cycles, annealing: Tm = 60°C for 20 s, elongation: 72°C for 10 min. To eliminate the original plasmid, PCR products were incubated with 1 µl DpnI enzyme (NEB; R0176S) for 1 hr at 37°C, and then 20 min at 80°C for inactivation. Following the DpnI treatment, plasmids were transformed into DH5α competent bacteria (Thermo Fisher; 18265017) using standard heat shock transformation technique (Sambrook and Russell, 2001). To find recombinant plasmid, plasmids were purified Wizard Plus SV Minipreps DNA Purification (Promega; A1330) from ampicillin resistant colonies and subjected to Sanger sequencing. Primer used for the validation sequencing is TTAGGCAGGGATATTCACCA. For massive plasmid purification, NucleoBond Xtra Midi kit (Macherey-Nagel; 740412.50) was used.
 
-## Cell culture
+### Cell culture
 
 293 T cells (ATCC; CRL-3216) were grown in DMEM high glucose medium (Biological Industries; 01-052-1A) supplemented with 10% FBS, 1% penicillin/streptomycin (P/S) and 1% L-Glutamine.
 
@@ -120,45 +469,66 @@ The identity of all cell lines was authenticated by morphology check and growth 
 
 For iCas9 plasmid selection, 200 µg/ml Hygromycin (Thermo Fisher; 10687010) were added to the medium and refreshed every 2 days. For sgRNA plasmid selection, 2 µg/ml Puromycin (Sigma-Aldrich; 58-58-2) were added to the medium of HeLa cells (Figures 2–4). For sgRNA plasmid selection in fitness assay performed on WI38 slow and fast cell lines (Figure 4), 2 µg/ml Puromycin were added to the medium, although these cell lines had already Puromycin resistance acquired in their original immortalization process (the primary WI38 cells were immortalized using stable expression of pBabe-hTERT-puro [Milyavsky et al., 2003]). 10 µg/ml Blasticidin (InvivoGen; BLL-38-02A) was added to the medium of WI38 fast for sgRNA plasmid selection in proliferation assay (Figure 4—figure supplement 3B) and in cell cycle arrest treatment assay (Figure 5). For stable transduction, the medium containing antibiotics was refreshed every 2 days, for all cell lines. For iCas9 induction, 1 µg/ml Doxycycline (Sigma-Aldrich; 10592-13-9) was added to the medium and refreshed every 2 days.
 
-## Generation of stable cell lines
+### Generation of stable cell lines
 
-## Generation of iCas9 carrying cell lines
+#### Generation of iCas9 carrying cell lines
 
 HeLa cells carrying iCas9 were generously provided by Prof. George Church (Harvard Medical School).
 
 WI38 slow and WI38 fast were seeded onto 10 cm plates such that cell confluence will be approximately 70% the next day. 5 µg of iCas9 vector pB-Cas9 and pB-support vector, kindly given by Prof. George Church lab were transfected to cells with fresh MEM-EAGLE medium (5 ml) and 15 µl of Poly-jet transfection reagent (SignaGen; SL100688). After 4 hr, the medium was replaced with a fresh MEM-EAGLE medium. Five days after the transfection, MEM medium containing 200 µg/ml Hygromycin was added to the transfected cells, refreshed every day for approximately one month, until single colonies have emerged. The cell populations that served for the following experiments originated from those single colonies.
 
-## Generation of iCas9 cells with sgRNA plasmids
+#### Generation of iCas9 cells with sgRNA plasmids
 
-## Step 1 - viral vector production
+##### Step 1 - viral vector production
 
 A 10 cm plates were covered with ~2 ml Poly-L-Lysine (Sigma; P4707) and then 293T cells (ATCC; CRL-3216) were seeded onto the covered 10 cm plates such that cell confluence will be approximately 70% the next day. A day after, 2.5 µg of PMD2.G (Addgene; 12259) and 10.3 µg psPAX2 (addgene;12260) packaging vectors were co-transfected with 7.7 µg of the appropriate sgRNA plasmids using 40 µl of jetPEI (Polyplus; 101–10N) in DMEM high glucose medium (5 ml). Note that for the pooled sgRNA experiments, the sgRNA plasmids containing the different sgRNA were added in equal amounts. After 48 and 72 hr, virus-containing medium was collected and centrifuged for 15 min at 3200 g, 4°C. Supernatant was collected to a new tube, and 1.25 ml PEG solution from PEG virus precipitation kit (BioVision; K904-50/200) was added. The virus-containing tube was stored in 4°C for at least 12 hr (over-night). Virus-contained tubes were centrifuged for 30 min at 3200 g, 4°C. Supernatant was removed and the virus pellet was suspended with 100 µl virus resuspension solution from PEG virus precipitation kit.
 
-## Step 2 – cell transduction
+##### Step 2 – cell transduction
 
 WI38 Slow, WI38 Fast and HeLa cells were seeded onto 10 cm plates cells such that cell confluence will be approximately 50% the next day. On the day of transduction (24 hr after cell seeding), medium was replaced with 5 µg/ml Poly-Brene (Sigma; TR-1003) contained medium (5 ml). Suspended viruses were added to each plate according to the calibrated titer load (MOI ~0.3).
 
-## Generation of WI38 fast iCas9 cell lines carrying p21p-mCherry
+#### Generation of WI38 fast iCas9 cell lines carrying p21p-mCherry
 
 A plasmid based on p21-mCherry-3NLS backbone (originally created by Prof. Moshe Oren’s lab, purchased from the plasmid bank (#2280) of the Weizmann Institute) was used as a vector. The fragment containing human p21 promoter– mCherry-3NLS in this plasmid was replaced by the U6 region of lenti-sgRNA plasmid (Addgene; 52963) and the antibiotic resistance gene was replaced from BSD to Neo gene using Gibson Assembly cloning (Gibson Assembly Master Mix, NEB; E2611). After validation of the recombinant plasmid, it was extracted and packed into lenti-viruses. WI38 fast-iCas9 cells were transduced with the lenti-viruses as described above. After a week of G418 selection (500 μg/ml, Sigma; 108321-42-2), the cells were sorted using Flow cytometer into single cells and seeded in 96 well plate containing condition media. Flow cytometry analysis was performed on a BD FACSAria Fusion instrument (BD Immunocytometry Systems) equipped with 488-, 405-, 561-, and 640-nm lasers, using a 100 μm nozzle, controlled by BD FACS Diva software v8.0.1 (BD Biosciences). Further analysis was performed using FlowJo software v10.2 (Tree Star). mCherry was detected by excitation at 561 nm and collection of emission using 600 LP and 610/20 BP filters. Single cells were grown for ~3 weeks until single clones appeared in the plate. The single clone that showed the highest p21-mCherry delta between arrest-treated condition and untreated condition was chosen for the following experiments.
 
-## Measuring tRNA expression levels and editing gene variants of CRISPR-targeted tRNAs (Figure 2, Figure 2—figure supplement 1, Figure 3C, Figure 3—figure supplement 1A, Figure 4D, Figure 4—figure supplement 3A-B)
+### Measuring tRNA expression levels and editing gene variants of CRISPR-targeted tRNAs (Figure 2, Figure 2—figure supplement 1, Figure 3C, Figure 3—figure supplement 1A, Figure 4D, Figure 4—figure supplement 3A-B)
 
-## Experimental procedure
+#### Experimental procedure
 
 48 hr after transduction with lentiviruses containing a single sgRNA plasmids, the cell’s media was replaced with antibiotics-containing medium (2 µg/ml Puromycin) and refreshed every 2 days for 7 days in total, to allow selection of transduced cells. Then, cells were grown for additional 12 days in medium contained both 2 µg/ml Puromycin and 1 µg/ml doxycycline, to continue selection and for iCas9 induction, respectively. During the time course, the cells were diluted every 2 days in a ratio of 1:2.5. Cell samples were taken every 4 days and frozen at −80°C. In addition, cells without sgRNA (referred as WT cells) were grown with doxycycline and sampled as described above.
 
-## Mature tRNA sequencing-library preparation and data processing
+#### Mature tRNA sequencing-library preparation and data processing
 
 tRNA sequencing protocol was adapted from Zheng et al., 2015 with minor modifications. Small and large RNA were extracted from frozen samples using NucleoSpin miRNA kit (Macherey-Nagel; 740971.50). 1 µg of RNA was mixed with 0.025 pmole of tRNA standards (E. coli-tyr-tRNA (Sigma-Aldrich; R3143) and S.cerevisia-phe-tRNA at ratio of 1:8 (Sigma-Aldrich; R4018)). Reverse transcription was done using TGIRT-III Enzyme (InGex; 5073018), using the primers described below. 3’ adaptor was ligated to the cDNA using T4 ligase (NEB; M0202S). The cDNA was purified using Dynabeads myOne SILANE (Life Technologies; 37002D) after each step. The library was amplified using NEBNext High-Fidelity 2X PCR Master Mix (NEB; M0541S) and cleaned using SPRI-beads (Agencourt AMPure XP, Beckman Coulter; A63881), with left-side size selection protocol. Samples were pooled and sequenced using a 75 bp single read output run using MiniSeq high output reagent kit (Ilumina; FC-420–1001).
 
-Primer namePrimer sequenceReverse-transcription-DNA5’-CACGACGCTCTTCCGATCTT −3’Reverse-transcription-RNA5’-rArGrArUrCrGrGrArArGrArGrCrGrUrCrGrUrG-3’3’-ligation adaptor5’-AGATCGGAAGAGCACA-3’
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reverse-transcription-DNA</td>
+      <td>5’-CACGACGCTCTTCCGATCTT −3’</td>
+    </tr>
+    <tr>
+      <td>Reverse-transcription-RNA</td>
+      <td>5’-rArGrArUrCrGrGrArArGrArGrCrGrUrCrGrUrG-3’</td>
+    </tr>
+    <tr>
+      <td>3’-ligation adaptor</td>
+      <td>5’-AGATCGGAAGAGCACA-3’</td>
+    </tr>
+  </tbody>
+</table>
 
 Read were trimmed using homerTool (Duttke et al., 2019). Alignment was done to the genome and mature tRNA using Bowtie2 (Langmead and Salzberg, 2012) with parameters – very-sensitive-local. Read aligned with equal alignment score to the genome and mature tRNA were annotated as mature tRNA. Reads aligned to multiple tRNA genes were randomly assigned when mapping to identical anticodon, and discarded from the analysis if aligned to different anticodon. Read count was done using BedTools-coverage count (Quinlan and Hall, 2010). Variant calling for detection of mutation and indels was done using samtools (Li et al., 2009) command ‘mpileup’ with the parameters: ‘-A -q1 -d100000’.
 
 The fold-change in tRNA expression for each tRNA isoacceptor was calculated as follows: each tRNA read count was normalized to the total reads per sample. Then, the normalized read counts for each tRNA isoacceptor were summed up over all tRNA genes of the tRNA family in each sample (treated and WT cells) and in each time point along the iCas9 induction. Then, a ratio of the summed read count between the treated and WT samples was calculated for each time point. This procedure was done for each of the two biological repeats which were then averaged. The fraction of edited tRNA reads was calculated as follow: for each tRNA isoacceptor, the number of aligned reads with Indel mutations around the editing site were summed up for all tRNA genes within an isoacceptor family, and normalized to the sum of maximum coverage for all tRNA genes in the vicinity of the Indel mutations. Then, a ratio of the fraction of edited reads between the treated and WT samples was calculated for each time point.
 
-## Genomic tRNA sequencing – library preparation and data processing
+### Genomic tRNA sequencing – library preparation and data processing
 
 Genomic DNA was purified from frozen cell samples of the single sgRNA transduced HeLa and WI38 fast cells (four sgRNAs and no sgRNA sample in each of the four time points) using PureLink genomic DNA mini kit (Invitrogene; K182000) and used as template for PCR to amplify specifically the tRNA isodecoder genes of the CRISPR-targeted tRNAs in the population. PCR reaction was conducted using KAPA HiFi HotStart ReadyMixPCR (X2) (kapabiosystems; KK2601), 10 µM of each primer and 100 ng of genomic DNA in a 60 µl total volume reaction, for 25 cycles. Primers and annealing temperatures are listed (Figure 2—source data 1). After PCR validation using agarose gel, the PCR product was purified with SPRI-beads using left-side size selection protocol in which the PCR product and beads were mixed at 1:1.5 ratio. Then, each sample was barcoded with a different Illumina barcode while the Forward primer was fixed and the reverse primer included the different barcodes. The barcoding PCR reaction was conducted using KAPA HiFi HotStart ReadyMixPCR Kit (X2), 10 µM of Illumina primers and 0.35–0.7 ng of PCR product in a 10 µl total volume reaction, for 15 cycles. Additional clean-up step was performed using SPRI-beads with left-side size selection protocol in which the PCR product and beads were mixed at 1:1.5 ratio. Samples were pooled in equal amounts and sequenced using a 75 bp single read output run using MiniSeq high output reagent kit (Ilumina; FC-420–1001).
 
@@ -166,13 +536,13 @@ After reads were trimmed using Cutadapt (Martin, 2011), we used CRISPResso (Pine
 
 The fraction of edited tRNA reads was calculated as follows: for each tRNA isoacceptor, the number of edited reads were summed up for all tRNA genes within the family, and normalized to the sum of aligned reads (edited and WT reads). Then, a ratio of the fraction of edited reads between the treated and WT samples was calculated for each time point.
 
-## Evaluating the relative fitness of tRNA-targeted variants – pooled sgRNAs (Figures 3–4)
+### Evaluating the relative fitness of tRNA-targeted variants – pooled sgRNAs (Figures 3–4)
 
-## Experimental procedure
+#### Experimental procedure
 
 48 hr after transduction with lentiviruses containing the pooled sgRNA plasmids, the cell’s media was replaced with antibiotics-containing medium, to allow selection of infected cells (2 µg/ml Puromycin). Following 24 hr of selection, cells were grown for 14 days in medium contained both 2 µg/ml Puromycin and 1 µg/ml doxycycline, for selection and iCas9 induction, respectively. During the time course, cells were diluted every 2 days in a ratio of 1:2.5. Cell samples were taken every 3 or 4 days and frozen at −80°C.
 
-## sgRNA sequencing-library preparation and data processing
+#### sgRNA sequencing-library preparation and data processing
 
 Genomic DNA was purified from frozen cells samples of the sgRNA competition experiment using PureLink genomic DNA mini kit and used as templates for PCR to amplify specifically the sgRNAs in the population. PCR reaction was conducted using iProof master mix (X2), 10 µM of each primer and 20 ng of genomic DNA in a 50 µl total volume reaction, for 26 cycles, Tm = 64°C. The primers used to amplify the sgRNA region were:
 
@@ -182,34 +552,42 @@ De-multiplexed data was received in the form of FASTQ files split into samples. 
 
 The relative fitness of each CRISPR-targeted tRNA variant was estimated by calculating the fold-change of the sgRNA frequency in each time point relative to day 0 (before adding Doxycycline). We chose to explore the relative fitness of the tRNA-targeted variants based on relative frequency of their sgRNAs at day 7 (relative to day 0), due to the dynamics of the cell population composition along the iCas9 induction. In the early days of the induction, the iCas9 activity does not reach saturation (Yuen et al., 2017), thus the cell population is dominated by partially CRISPR-edited cells. In the late days of the iCas9 induction, the less fit CRISPR-targeted tRNA cells might be eliminated from the population due to a negative selection, a process that can result in lower frequency of the tRNA-edited cells. Nonetheless, the relative fitness estimated by the different days of the competition is highly correlated (Figure 4—figure supplement 1A-B, 2C).
 
-In an attempt to account for OFF-targeting of tRNAs by sgRNAs, we solve the system of linear equations so as to retrieve estimated ‘real’ relative fitness values, R, from the sequencing – based observed relative fitness values, O, given the estimated expression reduction matrix M of targeted tRNAs as a result of CRISPR targeting by each sgRNA:O¯=M*R¯
+In an attempt to account for OFF-targeting of tRNAs by sgRNAs, we solve the system of linear equations so as to retrieve estimated ‘real’ relative fitness values, R, from the sequencing – based observed relative fitness values, O, given the estimated expression reduction matrix M of targeted tRNAs as a result of CRISPR targeting by each sgRNA:
 
-The entries of the estimated expression reduction matrix M are computed as the weighted targeting efficiency of each targeted tRNA family per sgRNA. The weighted targeting efficiency of tRNAi by sgRNAj is calculated as follows:coeffij=∑ps*fijs
+$$
+O¯=M*R¯
+$$
+
+The entries of the estimated expression reduction matrix M are computed as the weighted targeting efficiency of each targeted tRNA family per sgRNA. The weighted targeting efficiency of tRNAi by sgRNAj is calculated as follows:
+
+$$
+coeff_{ij}=\sump_{s}*f_{ijs}
+$$
 
 Where ps is expression penalty denoting relative expression level reduction at any level of mismatch level s, where s is either 0, 1, 2, or 3 mismatches. The respective penalties, as deduced from mean expression reductions at each mismatch level (Figure 2B) are 1, 0.5, 0.2, and 0. These penalties are further multiplied by the fraction of tRNAi family that has s mismatches relative to sgRNA against tRNAj family. Summation is done over all types of mismatches per tRNA family and per sgRNA.
 
 The underlying assumptions and constraints of this model are:
 
-## Evaluating the essentiality of edited-tRNA variants for entering into cell cycle arrest state – (Figure 5)
+### Evaluating the essentiality of edited-tRNA variants for entering into cell cycle arrest state – (Figure 5)
 
-## Experimental procedure
+#### Experimental procedure
 
 Clonal WI38 fast iCas9 + p21p-mCherry cells were transduced with the sgRNA library as described above. After 6 days of antibiotics selection (10 µg/ml Blasticidin), the iCas9 was induced using 1 µg/ml doxycycline for 3 days (ancestor sample). Then, the cells were split into three populations. One population continued to grow in normal conditions (untreated sample). The second population was grown with serum-free media - 0% FCS (quiescence sample). The third population was grown with media containing 2.5 µM Etoposide (Sigma-Aldrich; 33419-42-0) (senescence sample). After 2 days of treatment, the cells were sorted using Flow cytometer according to the mCherry/FSC levels, while sorting the top and bottom 5% of the population. FACS parameters are identical to that described in ‘stable cell line generation’ section.
 
-## sgRNA sequencing – library preparation and data processing
+#### sgRNA sequencing – library preparation and data processing
 
 From each sorted population, as well as ancestor sample, genomic DNA was extract using PureLink genomic DNA mini kit and used as templates for PCR to amplify specifically the sgRNAs in the population. PCR reaction was conducted using 2X KAPA HiFi HotStart ReadyMix, 10 µM of each primer and 20 ng of genomic DNA extracted from the samples in a 50 µl total volume reaction, for 20 cycles, Tm = 58°C. We used shifted primers to increase library complexity. PCR products were purified with SPRI-beads using left-side size selection protocol in which the PCR product and beads were mixed at 1:1.5 ratio. The barcoding PCR and final PCR clean-up was done as described for the genomic tRNA library preparation. Samples were pooled and sequenced using a 75 bp single read output run using MiniSeq high output reagent kit (Ilumina; FC-420–1001).
 
 Reads were trimmed using Cutadapt and then clustered into unique sequences using vsearch (Rognes et al., 2016). Each unique read was then aligned to the matched sgRNA sequence, allowing up to two mismatches. Finally, we stored all sgRNA types and their frequency in each sample.
 
-## Cell-cycle analysis (Figure 5—figure supplement 1A)
+### Cell-cycle analysis (Figure 5—figure supplement 1A)
 
 WI38 fast cells treated with arrest-triggering conditions (described above) were incubated with 10 ug/ml of Hoechst 33342 (abcam; ab228551) for 45 min at 37°C for DNA staining. The cells were analyzed by FACS as described in ‘stable cell line generation’. Cell cycle analysis was done using Kaluza software (RRID:SCR_016182).
 
-## Evaluating the essentiality of edited tRNA variants for entering into cell cycle arrest state – single sgRNAs (Figure 5D)
+### Evaluating the essentiality of edited tRNA variants for entering into cell cycle arrest state – single sgRNAs (Figure 5D)
 
 Clonal WI38 fast iCas9 + p21p-mCherry cells were transduced with single sgRNAs as described above. After 6 days of antibiotics selection (10 µg/ml Blasticidin), the iCas9 was induced using 1 µg/ml doxycycline for 3 days. Then, the mCherry levels of each cell line were analyzed using Attune Flow Cytometer and the analysis was done using Kaluza software.
 
-## qPCR of SASP molecules (Figure 5—figure supplement 1B)
+### qPCR of SASP molecules (Figure 5—figure supplement 1B)
 
 Relative mRNA expression of SASP genes was measured in tRNA-targeted WI38 fast iCas9 + p21p-mCherry cell line exposed to three different treatments: untreated cells; cells after 48 hr with 2.5 µM Etoposide; cells after one week post Etoposide treatment. First, total RNA was extracted from the samples using TriZol. DNAse (Invitrogen; AM1907)-treated RNA was used as template for cDNA preparation, using AB high-capacity cDNA reverse-transcription kit (Applied Biosystems; 4368814). mRNA expression of SASP genes was then determined using quantitative RT-PCR with light cycler 480 SYBR I master kit (Roche Applied Science) and the LightCycler 480 system (Roche Applied Science), according to the manufacturer’s instructions.

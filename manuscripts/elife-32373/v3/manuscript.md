@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.32373.001 Most neurogenesis in the mammalian brain is completed embryonically, but in certain areas the production of neurons continues throughout postnatal life. The functional properties of mature postnatally generated neurons often match those of their embryonically produced counterparts. However, we show here that in the olfactory bulb (OB), embryonic and postnatal neurogenesis produce functionally distinct subpopulations of dopaminergic (DA) neurons. We define two subclasses of OB DA neuron by the presence or absence of a key subcellular specialisation: the axon initial segment (AIS). Large AIS-positive axon-bearing DA neurons are exclusively produced during early embryonic stages, leaving small anaxonic AIS-negative cells as the only DA subtype generated via adult neurogenesis. These populations are functionally distinct: large DA cells are more excitable, yet display weaker and – for certain long-latency or inhibitory events – more broadly tuned responses to odorant stimuli. Embryonic and postnatal neurogenesis can therefore generate distinct neuronal subclasses, placing important constraints on the functional roles of adult-born neurons in sensory processing.
+Most neurogenesis in the mammalian brain is completed embryonically, but in certain areas the production of neurons continues throughout postnatal life. The functional properties of mature postnatally generated neurons often match those of their embryonically produced counterparts. However, we show here that in the olfactory bulb (OB), embryonic and postnatal neurogenesis produce functionally distinct subpopulations of dopaminergic (DA) neurons. We define two subclasses of OB DA neuron by the presence or absence of a key subcellular specialisation: the axon initial segment (AIS). Large AIS-positive axon-bearing DA neurons are exclusively produced during early embryonic stages, leaving small anaxonic AIS-negative cells as the only DA subtype generated via adult neurogenesis. These populations are functionally distinct: large DA cells are more excitable, yet display weaker and – for certain long-latency or inhibitory events – more broadly tuned responses to odorant stimuli. Embryonic and postnatal neurogenesis can therefore generate distinct neuronal subclasses, placing important constraints on the functional roles of adult-born neurons in sensory processing.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Here, we build on previous work in vitro (Chand et al., 2015), to show that diff
 
 ## Results
 
-## The axon initial segment is only present in a distinct subset of DA cell
+### The axon initial segment is only present in a distinct subset of DA cell
 
 To investigate the presence of an axon initial segment (AIS) in DA cells we performed immunohistochemistry on fixed slices of the olfactory bulb of juvenile (P28) wild-type C57/Bl6 mice. We identified DA cells by labelling them with an antibody against tyrosine hydroxylase (TH), the rate-limiting enzyme in the biosynthesis of dopamine. For AIS identification we stained for ankyrin-G, the master AIS organising molecule (AnkG, Figure 1A) (Hedstrom et al., 2008; Jenkins et al., 2015; Zhou et al., 1998). While for most TH-positive cells we could not detect AnkG label on any of their processes, we identified a subset of large DA neurons that possessed a clear AnkG-positive AIS (Figure 1A, middle and right panel; Kosaka et al., 2008). Like their midbrain DA (González-Cabrera et al., 2017; Meza et al., 2018) and cultured (Chand et al., 2015) counterparts, the AISs of OB DA neurons were often thin, short and located rather distally away from the soma. Along with the dense and highly interwoven meshwork of TH-positive processes in the glomerular layer (GL), this made AIS-positive cells difficult to identify. Nevertheless, a lower-bound estimate (see Materials and methods) suggests they comprise at least 2.5% of the overall OB DA population.
 
@@ -46,7 +46,7 @@ Soma size quantification revealed these AIS-containing DA neurons to be morpholo
 
 These large, AIS-positive DA neurons are also located in a specific sub-region of the GL. Dividing the GL into four sub-laminae (Figure 1A; see Materials and methods) revealed the overall TH-positive population to be concentrated in the mid-GL (Figure 1C). AIS-positive DA neurons, however, were mostly found in the lower portions of the GL towards the external plexiform layer (EPL) border, with very little presence in the upper or mid-GL (Figure 1C; Liberia et al., 2012); effect of sub-lamina ×cell type in two-way repeated-measures ANOVA, F3,66 = 35.47, p<0.0001; post-hoc Sidak’s test between cell types, upper-GL, p=0.014; mid-GL, p<0.0001; lower-GL, p<0.0001; EPL border, p=0.98; n = 24 slices from N = 3 mice).
 
-## AIS-lacking DA neurons are anaxonic
+### AIS-lacking DA neurons are anaxonic
 
 The AIS is crucial for the maintenance of axo-dendritic neuronal polarity (Hedstrom et al., 2008), and is often employed as an indicator of axonal identity (e.g. Watanabe et al., 2012), so does the absence of an AIS in the majority of small DA neurons mean that these cells do not possess an axon? Addressing this question required us to be able to identify and follow all of a given cell’s individual processes. We therefore achieved sparse label of individual OB DA neurons, either by injecting floxed GFP-encoding viruses (either AAV or RV::dio) in embryos or neonates from VGAT-Cre or DAT-Cre reporter lines, or by electroporating GFP-encoding plasmid DNA in wild-type neonates (see Materials and methods). The dopaminergic phenotype of the infected neurons was confirmed by immunohistochemical label for TH. We then adopted a dual strategy for axon identification.
 
@@ -56,7 +56,7 @@ First – as a positive control – we confirmed that while the AnkG-positive pr
 
 **Figure 2.:** (A) Example image of a DA cell in a wild-type mouse stained for TH (blue), AnkG (magenta) and the axonal marker TRIM-46 (green). Asterisks indicate soma position; lines indicate the emergence of the axonal process from the soma; triangles indicate AIS start and end positions. (B) Example image of an anaxonic DA cell in a DAT-Cre mouse injected at E12 with rv::dio-GFP, stained for TH (blue) and TRIM-46 (magenta). Asterisks indicate soma position; triangle shows a TRIM-46- and TH-positive process belonging to a neighbouring, non-GFP-expressing cell. (C) Example image of an AIS-containing DA cell in a DAT-Cre mouse injected at E12 with rv::dio-GFP, stained for TH (blue), MAP-2 (orange) and AnkG (grey). Asterisks indicate soma position; triangles indicate AIS start and end positions; numbers and arrows indicate the three main processes emerging from the soma. Note that MAP-2 fluorescence in the axon (process 1) ends when AnkG fluorescence begins. (D) Left: Maximum intensity projection image of an anaxonic DA cell in a wild-type mouse electroporated with GFP at P1, stained for TH (blue) and MAP-2 (orange). The asterisks indicates soma position; numbers and arrows indicate the three main processes emerging from the soma. Right: panels 1–3 show single z-plane images of each dendritic process, visualised with GFP plus MAP-2 label (top) or TH plus MAP-2 label (bottom). Note that all processes are positive for all three markers.
 
-## Broader dendritic branching in AIS-positive DA neurons
+### Broader dendritic branching in AIS-positive DA neurons
 
 Sparse labelling of individual OB DA neurons also allowed us to investigate their dendritic morphology (Figure 3A), and this again revealed clear differences between AIS-positive and AIS-negative subtypes. Small, anaxonic DA neurons had limited dendritic arborisations that ramified across a small region of the glomerular layer (Figure 3B,C,E,F). By contrast, the dendrites of large, axon-bearing DA cells were much more broadly spread (Figure 3D,E,F). Despite considerable cell-to-cell morphological variability within each sub-class (Figure 3E,F), quantitative Sholl analysis (see Materials and methods) revealed highly significant cell-type differences on multiple dendritic parameters (Table 1; Figure 3E; effect of cell type in mixed model ANOVA analysis of Sholl distributions, F1,36 = 5.30, p=0.027). This is all the more striking given the thin OB slices necessary for AnkG label, and the likely resulting underestimation of glomerular layer ramification by AIS-positive DA neurons.
 
@@ -64,7 +64,75 @@ Sparse labelling of individual OB DA neurons also allowed us to investigate thei
 
 **Figure 3.:** (A) Schematic representation of the experimental strategy adopted to achieve sparse labelling of DA cells: P1-2 neonates or E12 embryos from VGAT-Cre or DAT-Cre lines were injected with floxed AAV-YFP or rv:: dio-GFP viruses. Tissue was collected for analysis at P28. (B–C) Example images of OB DA cells sparsely labelled with GFP (green), co-stained for TH (blue). GL, glomerular layer; EPL, external plexiform layer. AIS-negative DA cells ramify their dendrites narrowly. (D) Example image of a GFP-labelled, AIS-positive DA cell which ramifies more broadly, co-stained for TH (blue) and AnkG (magenta). Right: zoomed insets showing GFP, TH and/or AnkG label; line indicates axon start; triangles show AIS start and end positions. (E) Sholl plots of branching patterns for reconstructed DA neurons without (black, n = 14) and with (magenta, n = 9) an AIS. Data points are mean ± SEM; effect of cell type in mixed model ANOVA; *p<0.05; for further quantifications see Table 1. (F) Morphological reconstructions of 23 sufficiently sparsely-labelled DA neurons without (top) and with (bottom) an AIS. Approximate AIS location is indicated with a magenta square.
 
-## AIS-positive DA neurons are exclusively born during early embryonic development, but anaxonic DA cells continue to undergo postnatal and adult neurogenesis
+**Table 1.**
+ Morphological properties of AIS-negative and AIS-positive DA neurons.Mean values ± SEM of morphological properties for sparsely labelled AIS-negative (n = 14) and AIS-positive (n = 9) DA cells. Statistical differences between groups (AIS-negative vs AIS-positive) were calculated with a Student’s t test for normally distributed data (‘t’; with Welch correction ‘tW’) or with a Mann–Whitney test for non-normally distributed data (‘MW’). Bold type indicates statistically different measures. Morphological reconstructions and average Sholl plots are presented in Figure 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Morphological properties</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>AIS-negative (mean ± sem)</th>
+      <th>AIS-positive (mean ± sem)</th>
+      <th>Test type, p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Soma area (μm2)</td>
+      <td>70.49 ± 2.71</td>
+      <td>139.00 ± 17.16</td>
+      <td>tW, 0.003</td>
+    </tr>
+    <tr>
+      <td>Distance of soma from nerve layer (μm)</td>
+      <td>75.07 ± 12.79</td>
+      <td>141.60 ± 31.38</td>
+      <td>MW, 0.02</td>
+    </tr>
+    <tr>
+      <td>Number of primary dendrites</td>
+      <td>3.14 ± 0.23</td>
+      <td>3.44 ± 0.29</td>
+      <td>t, 0.43</td>
+    </tr>
+    <tr>
+      <td>Length of primary dendrites (μm)</td>
+      <td>12.14 ± 2.97</td>
+      <td>26.13 ± 5.23</td>
+      <td>MW, 0.01</td>
+    </tr>
+    <tr>
+      <td>Area under Sholl curve (μm)</td>
+      <td>338.60 ± 42.58</td>
+      <td>871.10 ± 167.20</td>
+      <td>tW, 0.01</td>
+    </tr>
+    <tr>
+      <td>Furthest intersection (μm)</td>
+      <td>77.86 ± 8.23</td>
+      <td>148.30 ± 13.94</td>
+      <td>t, 0.0001</td>
+    </tr>
+    <tr>
+      <td>Maximum no. of intersections</td>
+      <td>8.36 ± 0.68</td>
+      <td>12.56 ± 1.68</td>
+      <td>tW, 0.04</td>
+    </tr>
+    <tr>
+      <td>Radius for maximum no. of intersections (μm)</td>
+      <td>36.16 ± 4.45</td>
+      <td>80.00 ± 13.97</td>
+      <td>tW, 0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+### AIS-positive DA neurons are exclusively born during early embryonic development, but anaxonic DA cells continue to undergo postnatal and adult neurogenesis
 
 Glomerular layer interneurons in the OB, including TH-positive DA neurons, belong to the highly restricted group of neuronal types capable of regenerating throughout life via adult neurogenesis (Betarbet et al., 1996; Bonzano et al., 2016; De Marchis et al., 2007; Winner et al., 2002). This prolonged neurogenic capacity is often considered to be a universal and hallmark feature of these inhibitory interneurons (e.g. Liu et al., 2013). However, data from birthdating experiments suggest that – at least on the basis of soma size – OB DA neurons are not homogeneous in their time of generation (Kosaka and Kosaka, 2009). This prompted us to ask whether the two morphological subtypes of AIS-positive and AIS-negative OB DA neuron also differ developmentally.
 
@@ -96,19 +164,164 @@ To address the second question concerning the longevity of AIS-positive DA neuro
 
 **Figure 7.:** (A) Schematic representation of the experimental strategy: pregnant wild-type mice were injected with a single dose of BrdU at E12. Tissue was collected from their offspring when they reached 6 months of age and compared with data collected from littermates perfused at 1 month of age (data shown in Figure 6C). (B) Left: Low-magnification example image of 6-month-old tissue stained with antibodies against BrdU (green), TH (blue) and the AIS marker pIκBα (magenta). GL, glomerular layer; EPL, external plexiform layer; asterisk indicates an E12-6mo BrdU+/TH+ DA cell; dashed line indicates the inset magnified on the right. Right: magnified example image of an E12-6mo BrdU+/TH+/pIκBα+cell; solid line indicates axon start; arrows show AIS start and end positions. (C) Soma area distribution of E12-6mo BrdU+/TH+ DA cells (dark red, n = 78, N = 4), overlaid on the soma area distribution of E12-1mo BrdU+/TH+ DA cells (dashed light red line; see Figure 4C). (D) Soma area of E12-6mo BrdU+/TH+/pIκBα+ DA cells. Empty circles represent individual AIS-positive neurons, dark red lines show mean ± SEM (102 ± 4 μm2; n = 71, N = 4). (E) Mean ± SEM percentage of AIS-positive E12-BrdU+/TH+ DA cells in tissue from 1-month-old (light red, 25%; n = 100, N = 3) and 6-month-old (dark red, 91%; n = 78, N = 4) mice.
 
-## AIS-positive DA neurons possess distinct intrinsic functional properties
+### AIS-positive DA neurons possess distinct intrinsic functional properties
 
 Our morphological and developmental analyses revealed a clear distinction between - on the one hand – embryonically born, large and widely branching DA neurons with an axon and AIS, and – on the other – lifelong-generated, small and locally ramifying anaxonic DA cells that do not have an AIS. But do these marked ontological and structural differences also translate into functional heterogeneity? To test this hypothesis, we first performed whole-cell current-clamp electrophysiological recordings on DA neurons in acute ex vivo OB slices.
 
 We visualised DA neurons by crossing the dopaminergic reporter line DAT-Cre (Bäckman et al., 2006) with a floxed tdTomato (tdT) reporter line (Madisen et al., 2010). In the resulting DAT-tdT mice, the majority of TH+ DA cells also expressed tdT (90 ± 4% of all TH+ neurons were also tdT+; n = 369, N = 3; Figure 8A). The rare TH+ neurons that lacked tdT fluorescence tended to be large (Figure 8B), suggesting that while our genetic labelling strategy comprehensively identified small, anaxonic DA neurons, it under-represented the large, AIS-positive DA subtype. Indeed, co-label for AnkG revealed that only 67% of TH+/AIS+ DA neurons also expressed tdT (Figure 8B,C). However, tdT expression did not appear to reveal any further subdivision amongst the large, AIS-positive DA cells, because we found no difference in soma size between TH+/AIS+/tdT+ and TH+/AIS+/tdT- neurons (tdT+, mean ± SEM 118 ± 10 µm2; tdT-, 126 ± 5 µm2; Welch’s corrected t21.12 = 0.66, p=0.52). So, although DAT-tdT mice do not comprehensively reveal all bulbar DA neurons, visually targeting tdT-positive cells for electrophysiological recordings (Figure 8C) still enables functional comparisons to be made between AIS-positive and AIS-negative DA cell types.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/32373/elife-32373-fig8-v3.jpg)
+
+**Figure 8.:** (A) Example image of a fixed, 50 µm OB slice from a P28 DAT-tdT (red) mouse, immunostained with an anti-TH antibody (blue). While most TH-positive neurons exhibit red tdT fluorescence, some are tdT-negative (arrows). (B) Soma size distributions of all DAT-tdT-positive cells (red), and of DA neurons that are DAT-tdT-negative but TH-positive (blue). Inset: percentages of AIS-positive/TH-positive DA cells that are either tdT-positive or –negative (n = 50, N = 5). (C) Example image of a DAT-tdT-labelled DA cell (red) stained with the axonal marker TRIM-46 (green) and the AIS marker AnkG (greyscale). Asterisks indicate the soma; line indicates axon start; arrows indicate start and end position of the TRIM (green) and AnkG (white) label. (D) Schematic representation of the experimental strategy for whole-cell recordings: acute 300 µm OB slices were obtained from P21-35 DAT-tdT mice, and tdT-positive DA cells of either subtype were targeted for whole-cell patch-clamp recording. (E) Example current-clamp traces of single APs fired by monophasic (AIS-negative, black, n = 15) and biphasic (AIS-positive, magenta, n = 11) DAT-tdTomato neurons. Left: action potentials fired to threshold 10 ms somatic current injection. Right: phase plane plots of the spikes shown on the left. Arrow points to the AIS-dependent first action potential phase. (F) Quantification of soma area (t-test; ***p=0.0006), current threshold (Welch-corrected t-test; *p=0.017), and onset rapidness (Welch-corrected t-test; *p=0.035) in monophasic and biphasic cells. Empty circles show values from individual cells, filled circles show mean ± SEM. (G) Top: Example current-clamp traces of multiple APs fired in response to a 300pA/500 ms somatic current injection in monophasic and biphasic cells. Bottom: input-output curve of injected current density versus mean ± SEM spike number for each group. (H). Quantification of input-output slope (t-test; *p=0.044), and of the maximum number of action potentials fired by each cell over the whole range of injected current intensities (t-test; **p=0.0092). Empty circles show values from individual cells; filled circles show mean ± SEM. (I) Classification of DAT-tdT neurons based on values obtained from whole-cell recordings. Each circle shows one cell, plotted according to its primary and secondary PCA component scores (these components accounted for 92% and 7% of the variance in the data, respectively). Filled circles show cells correctly classified by k-means analysis; open circles show the few cells (3/26 overall) that were incorrectly classified.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32373/elife-32373-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Example current-clamp traces of phase plane plots of single APs fired by monophasic (AIS-negative, black, top) and biphasic (AIS-positive, magenta, bottom) DAT-tdTomato neurons. Dashed box indicates the AIS-dependent first action potential phase, which is shown at higher detail on the right and fitted with two methods. The ratio between the errors of the linear fit (green) and the exponential fit (red) is indicated near the trace. (B) Quantification of soma area (t-test; p=0.04), voltage threshold (t-test; p=0.046), onset rapidness (Mann-Withney test; p=0.003), rheobase (t-test; p=0.039) and first spike delay (t-test; p=0.0431) in monophasic and biphasic cells. Empty circles show values from individual cells, filled circles show mean ± SEM; *p<0.05; **p<0.01. (C) Input-output curve of injected current density versus mean ±SEM spike number for each group.
+
 Post-recording survival of bulbar DA cells for morphological or immunohistochemical analysis is notoriously difficult (A. Pignatelli, personal communication); this meant that we could not classify our recorded neurons as AIS-positive or AIS-negative on the basis of AnkG staining. Instead, we relied on a functional indicator of AIS presence: non-somatic action potential (AP) initiation. In phase-plane plots of single spikes fired in response to 10 ms somatic current injection, the site of AP generation can be inferred from the shape of the initial, rising component of the spike waveform (Bean, 2007; Chand et al., 2015; Coombs et al., 1957; Jenerick, 1963; Khaliq et al., 2003; Shu et al., 2007). While a smooth, monophasic phase plane plot is indicative of AP initiation at the somatic recording site, cells that initiate spikes at a distance from the electrode location – almost always at the AIS (Bender and Trussell, 2012; Coombs et al., 1957; Foust et al., 2010; Kole et al., 2007; Palmer and Stuart, 2006) - display a distinctive biphasic, or ‘double-bumped’ phase plane plot waveform (Figure 8E). We therefore divided our recorded DAT-tdT+ cells into monophasic and biphasic groups (see Materials and methods; Figure 8—figure supplement 1), which should be largely representative of AIS-negative and AIS-positive DA neurons, respectively. Indeed, we found that biphasic neurons were significantly larger than their monophasic counterparts (Figure 8F; Table 2; [Chand et al., 2015]).
+
+**Table 2.**
+ Intrinsic electrophysiological properties of DAT-tdTomato neurons.Mean values ± SEM of passive, action potential and repetitive firing properties for monophasic (putative AIS-negative, n = 15) and biphasic (putative AIS-positive, n = 11) DAT-tdTomato cells. Statistical differences between groups (monophasic vs biphasic) were calculated with a Student’s t test for normally-distributed data (‘t’) or with a Mann–Whitney test for non-normally distributed data (‘MW’). Bold type indicates statistically different measures, for which individual data points and example traces are presented in Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Intrinsic electrophysiological properties</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Monophasic (mean ± sem)</th>
+      <th>Biphasic (mean ± sem)</th>
+      <th>Test type, p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Passive properties</td>
+    </tr>
+    <tr>
+      <td>Soma area (μm2)</td>
+      <td>57 ± 4.8</td>
+      <td>89 ± 6.8</td>
+      <td>t,&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Membrane capacitance (pF)</td>
+      <td>19 ± 2</td>
+      <td>22 ± 2</td>
+      <td>t, 0.39</td>
+    </tr>
+    <tr>
+      <td>Resting membrane potential (mV)</td>
+      <td>−78 ± 1.9</td>
+      <td>−74 ± 2.9</td>
+      <td>MW, 0.31</td>
+    </tr>
+    <tr>
+      <td>Input Resistance (MΩ)</td>
+      <td>960 ± 272</td>
+      <td>572 ± 115</td>
+      <td>MW, 0.13</td>
+    </tr>
+    <tr>
+      <td colspan="4">Action potential properties</td>
+    </tr>
+    <tr>
+      <td>Threshold (pA/pF)</td>
+      <td>7.5 ± 1.0</td>
+      <td>4.6 ± 0.4</td>
+      <td>t, 0.02</td>
+    </tr>
+    <tr>
+      <td>Threshold (mV)</td>
+      <td>−30 ± 1.0</td>
+      <td>−33 ± 1.0</td>
+      <td>t, 0.13</td>
+    </tr>
+    <tr>
+      <td>Max voltage reached (mV)</td>
+      <td>19 ± 2.4</td>
+      <td>18 ± 4.0</td>
+      <td>t, 0.80</td>
+    </tr>
+    <tr>
+      <td>Peak amplitude (mV)</td>
+      <td>49 ± 2.2</td>
+      <td>50 ± 4.4</td>
+      <td>t, 0.79</td>
+    </tr>
+    <tr>
+      <td>Width at half-height (ms)</td>
+      <td>0.55 ± 0.03</td>
+      <td>0.50 ± 0.04</td>
+      <td>t, 0.37</td>
+    </tr>
+    <tr>
+      <td>Rate of rise (max dV/dt) (mV/ms)</td>
+      <td>230 ± 16</td>
+      <td>251 ± 31</td>
+      <td>t, 0.53</td>
+    </tr>
+    <tr>
+      <td>Onset rapidness (1/ms)</td>
+      <td>3.95 ± 0.28</td>
+      <td>8.22 ± 1.66</td>
+      <td>t, 0.03</td>
+    </tr>
+    <tr>
+      <td>After hyper polarization AHP (mV)</td>
+      <td>−54 ± 1.4</td>
+      <td>−55 ± 1.5</td>
+      <td>t, 0.72</td>
+    </tr>
+    <tr>
+      <td>AHP relative to threshold (mV)</td>
+      <td>25 ± 1.3</td>
+      <td>24 ± 1.3</td>
+      <td>t, 0.95</td>
+    </tr>
+    <tr>
+      <td colspan="4">Repetitive firing properties</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA/pF)</td>
+      <td>3.6 ± 1.0</td>
+      <td>1.7 ± 0.8</td>
+      <td>MW, 0.28</td>
+    </tr>
+    <tr>
+      <td>Max number of action potentials</td>
+      <td>10 ± 2</td>
+      <td>21 ± 4</td>
+      <td>t, 0.01</td>
+    </tr>
+    <tr>
+      <td>First action potential delay (ms)</td>
+      <td>168 ± 38</td>
+      <td>273 ± 45</td>
+      <td>t, 0.08</td>
+    </tr>
+    <tr>
+      <td>Inter-spike interval CV</td>
+      <td>0.28 ± 0.04</td>
+      <td>0.24 ± 0.03</td>
+      <td>t, 0.46</td>
+    </tr>
+    <tr>
+      <td>Slope of input/output curve (Hz/(pA/pF))</td>
+      <td>1.85 ± 0.54</td>
+      <td>3.53 ± 0.48</td>
+      <td>t, 0.04</td>
+    </tr>
+  </tbody>
+</table>
 
 We also identified several differences in intrinsic excitability between monophasic and biphasic DAT-tdT cells. Biphasic neurons generated single APs in response to lower amplitude somatic current injection, and initiated those APs more rapidly (Figure 8F; Table 2). When induced to fire repeatedly in response to longer lasting 500 ms somatic current injections of increasing intensity, biphasic cells displayed a linear input-output curve. Conversely, monophasic cells could not produce such a linear increase in spike number and soon reached a firing plateau (Figure 8G). This resulted in monophasic cells having a significantly lower slope of their input-output curve, and a significantly lower maximum number of fired APs (Figure 8H; Table 2). While these differences in intrinsic excitability are certainly consistent with reported functional characteristics of AIS-positive versus AIS-negative neurons (Chand et al., 2015; Zhou et al., 1998; Zonta et al., 2011), we cannot rule out contributions from other, non-AIS-dependent factors (Baranauskas et al., 2013; Eyal et al., 2014; Pignatelli et al., 2009). Nevertheless, and regardless of their underlying cause, these physiological differences point to significantly greater intrinsic excitability in the biphasic, presumptive AIS-possessing DA subpopulation.
 
 Finally, we asked whether the above measures from our whole-cell recordings could be reliably used to classify DAT-tdT neurons as belonging to either the biphasic/AIS-positive or the monophasic/AIS-negative subtype. Applying principal component analysis (PCA; see Materials and methods) to the five variables that differed significantly between mono- and biphasic DA cells generated primary and secondary component scores for each neuron that, when plotted against each other, revealed clear clustering by cell type (Figure 8I). Furthermore, using a k-means classification approach with the same data (see Materials and methods) we were able to assign our recorded cells to either the mono- or biphasic group with 85% accuracy. This suggests that, although there is considerable overlap in the functional properties of different subclasses of OB DA neuron, when taken together those properties reveal a significant distinction between putative AIS-positive and putative AIS-negative cell types.
 
-## Large, putative AIS+ DA neurons respond more weakly yet are more broadly tuned to odour stimuli
+### Large, putative AIS+ DA neurons respond more weakly yet are more broadly tuned to odour stimuli
 
 We next asked whether the morphological and physiological differences between the two subtypes of OB DA neuron are associated with distinct sensory response properties in vivo. Do different types of OB DA cell respond differently to olfactory stimuli?
 
@@ -116,13 +329,21 @@ To address this question, we employed a conditional mouse line in which the Cre-
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/32373/elife-32373-fig9-v3.jpg)
 
-**Figure 9.:** (A) Schematic representation of the experimental strategy for in vivo recordings: adult DAT-GCaMP6s mice (anaesthetised with ketamine/xylazine) were presented with a panel of eight odours. Resulting changes in GCaMP fluorescence in DA neurons were imaged through a cranial window positioned over the OB. (B) Example field of view of the deeper part of the glomerular layer used for image acquisition (sum intensity projection of time axis, enhanced contrast). Fields of view were selected so as to contain both ‘big’ (soma area >99 μm2, putatively AIS-positive; magenta arrow) and ‘small’ (soma area <70 μm2, putatively AIS-negative; green arrow) DA neuron types. (C) Representative examples of the three categories of Δf/f GCaMP responses that we observed in the dataset. Deflections from baseline were considered events when they exceeded a threshold (horizontal dashed line) set at three times the baseline standard deviation. Excitatory responses occurred either quickly after odour presentation (early excitatory responses,[↑]; recorded in 52% of cells) or on a later timeframe (late excitatory responses, ; recorded in 22% of cells). The early/late cut-off value was 6 s (vertical dashed line; see Materials and methods). Approximately a fifth of all cells also showed supra threshold negative deflection from baseline (inhibitory responses [↓]; present in 25% of cells). Green circle indicates absolute maximum or minimum value (peak) and green line shows the mean of the 3 s around the peak; yellow line indicates the 3 s of baseline prior to odour presentation (blue box). ([↗]D) Time of peak frequency plot for excitatory (red) and inhibitory (blue) events occurring after 3 s odour presentation (blue bar). The vertical dashed line indicates the cut-off value for early (≤6 s) and late (>6 s) excitatory responses. (E) Left: Raw fluorescence traces of early-excitatory, late-excitatory and inhibitory responses to three repeated presentations of a 3 s odour stimulus (blue box). Right: Mean Δf/f response over the three repeats, after background subtraction and bleach correction. Grey shading indicates standard deviation (SD). (F) Mean ±SEM coefficient of variation (CV) of peak time over the three odour presentations for early excitatory, late excitatory and inhibitory responses. Wilcoxon test vs. 1; ***p<0.001. (G) Mean ± SEM amplitude z-score value (mean of the two smallest responses out of the three odour repeats) for early excitatory, late excitatory and inhibitory responses. Wilcoxon test vs. 1; ***p<0.001. (H) Percentage of small (putative AIS-negative) and big (putative AIS-positive) cells in each mouse that showed at least one early excitatory (left), late excitatory (middle) or inhibitory (right) response. Colour-coding indicates the 13 mice that were imaged. Wilcoxon paired rank test; *p<0.05.
+**Figure 9.:** (A) Schematic representation of the experimental strategy for in vivo recordings: adult DAT-GCaMP6s mice (anaesthetised with ketamine/xylazine) were presented with a panel of eight odours. Resulting changes in GCaMP fluorescence in DA neurons were imaged through a cranial window positioned over the OB. (B) Example field of view of the deeper part of the glomerular layer used for image acquisition (sum intensity projection of time axis, enhanced contrast). Fields of view were selected so as to contain both ‘big’ (soma area >99 μm2, putatively AIS-positive; magenta arrow) and ‘small’ (soma area <70 μm2, putatively AIS-negative; green arrow) DA neuron types. (C) Representative examples of the three categories of Δf/f GCaMP responses that we observed in the dataset. Deflections from baseline were considered events when they exceeded a threshold (horizontal dashed line) set at three times the baseline standard deviation. Excitatory responses occurred either quickly after odour presentation (early excitatory responses,[↑]; recorded in 52% of cells) or on a later timeframe (late excitatory responses, $[↗]$; recorded in 22% of cells). The early/late cut-off value was 6 s (vertical dashed line; see Materials and methods). Approximately a fifth of all cells also showed supra threshold negative deflection from baseline (inhibitory responses [↓]; present in 25% of cells). Green circle indicates absolute maximum or minimum value (peak) and green line shows the mean of the 3 s around the peak; yellow line indicates the 3 s of baseline prior to odour presentation (blue box). (D) Time of peak frequency plot for excitatory (red) and inhibitory (blue) events occurring after 3 s odour presentation (blue bar). The vertical dashed line indicates the cut-off value for early (≤6 s) and late (>6 s) excitatory responses. (E) Left: Raw fluorescence traces of early-excitatory, late-excitatory and inhibitory responses to three repeated presentations of a 3 s odour stimulus (blue box). Right: Mean Δf/f response over the three repeats, after background subtraction and bleach correction. Grey shading indicates standard deviation (SD). (F) Mean ±SEM coefficient of variation (CV) of peak time over the three odour presentations for early excitatory, late excitatory and inhibitory responses. Wilcoxon test vs. 1; ***p<0.001. (G) Mean ± SEM amplitude z-score value (mean of the two smallest responses out of the three odour repeats) for early excitatory, late excitatory and inhibitory responses. Wilcoxon test vs. 1; ***p<0.001. (H) Percentage of small (putative AIS-negative) and big (putative AIS-positive) cells in each mouse that showed at least one early excitatory (left), late excitatory (middle) or inhibitory (right) response. Colour-coding indicates the 13 mice that were imaged. Wilcoxon paired rank test; *p<0.05.
 
 We then analysed the odorant response properties of small/putative AIS-negative (n = 594) and big/putative AIS-positive (n = 622) GCaMP+ cells imaged in 13 mice. It immediately became apparent that different forms of odour-evoked responses could occur in these neurons. In many cases, a given odorant stimulus produced a relatively rapid increase in GCaMP fluorescence that then decayed back towards baseline – these responses, which we termed ‘early excitatory’ events, were the most prevalent form of odour-evoked signal in our DAT-GCaMP neurons (at least one early excitatory response was observed in 631/1216 = 52% of cells). In other cases, stimuli produced an increase in GCaMP intensity that had a delayed onset and peaked late in a given recording sweep – these ‘late excitatory’ events were readily and objectively distinguishable from early excitatory events (see Materials and methods; Figure 9C,D) and were less frequent in our sample (245/1216 = 20% of cells had at least one late excitatory response). Finally, we observed reasonably common examples of decreased GCaMP fluorescence upon odorant presentation. These ‘inhibitory’ events (at least one seen in 296/1216 = 24% of cells) usually had delayed onset, and were perhaps detectable because of the characteristically high spontaneous activity levels in OB DA neurons (Chand et al., 2015; Pignatelli et al., 2005; Puopolo et al., 2005). Although both late excitatory and inhibitory response types were unusual in their long peak latencies (but see similar long-latency excitatory responses in OB DA cells in Banerjee et al., 2015), their Figure 2B), and although they were more variable than early excitatory responses (Figure 9E,F,G), analysis of responses to individual stimulus presentations revealed them nevertheless to be reliable odour-evoked events. Peak latencies for all response types had coefficients of variation that were significantly less than one, indicative of non-random event timing across individual stimulus repeats (Figure 9F; early excitatory, mean ±SEM 0.28 ± 0.0063, Wilcoxon test vs 1, W = −198733, p<0.0001; late excitatory 0.40 ± 0.017, W = −29773, p<0.0001; inhibitory 0.38 ± 0.015, W = −42085, p<0.0001). In addition, no response type was generated by spurious, one-off fluctuations in fluorescence – mean amplitudes for the two stimulus repeats that produced the weakest responses were still significantly greater than one standard deviation above baseline (Figure 9G; early excitatory, mean ±SEM 5.38 ± 0.26, Wilcoxon test vs 1, W = 198036, p<0.0001; late excitatory 2.29 ± 0.20, W = 17963, p<0.0001; inhibitory 1.28 ± 0.060, W = 12954, p<0.0001). Crucially, neither of these measures of response reliability differed between small and big DA neurons, showing that late excitatory and inhibitory events were not only reliable per se, but were also just as reliable in both cell types (peak time CV, late excitatory, fixed effect of cell-type in multilevel ANOVA, F1,232 = 1.89, p=0.17; inhibitory, F1,289 = 0.12, p=0.75; mean amplitude of 2 weakest responses, late excitatory, F1,212 = 0.83, p=0.36; inhibitory, F1,177 = 0.19, p=0.67). Most response types occurred in isolation, although we did see some examples of combined excitatory-inhibitory responses (at least one seen in 76/1216 = 6% of cells). Overall, 817/1216 = 67% of imaged DAT-GCaMP+ cells displayed at least one response type evoked by at least one of the eight odour stimuli we used.
 
 All forms of odorant-evoked GCaMP response were observed in both big and small OB DA cell types. There were, however, some significant differences in their relative prevalence in the two neuronal populations. Paired, within-animal comparisons for the three major response types across the 13 mice in our sample revealed no significant differences in the proportions of small vs big DA neurons that displayed at least one odorant-evoked fast excitatory (Figure 9H; small cells, mean ±SEM 46 ± 7%; big cells 51 ± 6%; paired t-test, t12 = 1.10, p=0.29), or slow excitatory (Figure 9H; small cells, 19 ± 3%; big cells 23 ± 3%; paired t-test, t12 = 1.15, p=0.27) response. However, we did see a significantly higher proportion of inhibitory-responding neurons amongst the big cell population (Figure 9H; small cells, 16 ± 4%; big cells 26 ± 6%; Wilcoxon test, W13 = 62, p=0.012).
 
 To interrogate sensory stimulus selectivity further, we calculated a simple ‘tuning index’ (TI) for each response type in each cell, from the sum of all stimuli producing a significant change in GCaMP fluorescence (see Materials and methods). Cells with higher TI values responded to more odorants in our 8-stimulus panel. Although we acknowledge that this cannot represent a comprehensive description of tuning across all of odour space, this measure nevertheless allowed us to detect differences in response selectivity to a select group of odorant stimuli known to activate broad regions of the dorsal OB (Livneh et al., 2014; Rokni et al., 2014). In line with previous observations (Banerjee et al., 2015), we observed broad representations of odours in the responses of OB DA neurons (Figure 10A). The mean TI value for all excitatory responses (early + late combined) was 1.99 across all neurons in our sample, rising to 3.29 within the subset of neurons that displayed at least one excitatory response. Overall, this broad tuning was shared by both big and small OB DA sub-populations. However, we did observe significant cell-type-dependent differences in odour selectivity for particular response types. Importantly, we found only very weak correlations between TI measures calculated for the three major forms of odour-evoked response (early excitatory vs late excitatory, Spearman r = 0.018, p=0.53; early excitatory vs inhibitory, r = 0.13, p<0.0001; late excitatory vs inhibitory, r = 0.030, p=0.30; n = 1216 in all cases), suggesting that TI values for early excitatory, late excitatory and inhibitory events represent rather independent measures of tuning for distinct types of response produced by glomerular layer circuitry. To compare these TI measures between cell types, we needed powerful statistical tests that could leverage the large numbers of imaged neurons in our dataset whilst accounting for significant across-animal variability (see Materials and methods; Figure 10B,C). We therefore employed multilevel ANOVA analyses, where TI values from individual cells were compared between small versus big cell populations nested in animal subjects (see Materials and methods; [Aarts et al., 2014]). Using this approach, we found no effect of cell type on early excitatory TI values (Figure 10B; fixed effect of cell-type in multilevel ANOVA, F1,1180 = 2.04, p=0.15). For the most prevalent form of odour-evoked response, then, tuning was strikingly similar in small and big OB dopaminergic neurons. For both late excitatory and inhibitory response types, though, the effect of cell type on TI was significant (Figure 10B; late excitatory, F1,1214 = 5.58, p=0.018; inhibitory, F1,1143 = 6.92, p=0.009), with big cells possessing consistently larger TI values on a mouse-by-mouse basis. When responding to odorant stimuli with late excitatory or inhibitory events, therefore, big OB DA cells are significantly more broadly tuned than their small-soma neighbours.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/32373/elife-32373-fig10-v3.jpg)
+
+**Figure 10.:** (A) Example Δf/f GCaMP responses to the eight odours (rows, 3 s stimulus timing is indicated by blue shaded bars) for three big and three small example cells (columns; soma areas are indicated below the responses) imaged in the same mouse. Significant responses are indicated as: ↑ early excitatory, $[↗]$ late excitatory, ↓ inhibitory. (B) Mean values of odour tuning indices for early excitatory (left), late excitatory (middle) and inhibitory responses (right) measured in small and big cells. Coloured dots indicate mean values for each cell type from each of the 13 imaged mice. The grayscale colour of the connecting lines indicates the number of recorded cells for each mouse (scale below). Cell-type effect in multilevel ANOVA; n.s., non-significant; *p<0.05; **p<0.01. (C) Similar to B. Median values of odour peak intensity for early excitatory (left), late excitatory (middle) and inhibitory responses (right). Cell-type effect in multilevel ANOVA; *p<0.05; ***p<0.0001.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/32373/elife-32373-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Example mean traces of late-latency excitatory and inhibitory responses that returned to baseline within the imaging timeframe (10.5 s after stimulus onset). Blue box shows stimulus timing; dotted line shows baseline Δf/f; blue line indicates exponential fit to the first 10 points from the peak only (partial); magenta line indicates exponential fit plotted to the whole trace from the peak (full). Values for the difference between the two decay constants from the fits displayed for each trace. (B) Mean ± SEM differences between decay constants from whole-trace fit (full) and first-10-points fit (partial) for each response type (late excitatory n = 14; inhibitory n = 44; Wilcoxon test vs. 0, late excitatory p=0.50; inhibitory p=0.17). (C) Example mean traces of late-latency excitatory and inhibitory responses whose decay could be estimated with an exponential fit to the first ten points following the response peak (blue line). Decay constants are shown for each trace. (D) Mean ± SEM partial fit decay constants for small and big cell late excitatory and inhibitory response types (late excitatory, fixed effect of cell type in multilevel ANOVA, F1,98 = 0.32, p=0.57; inhibitory, F1,113 = 0.078, p=0.78).
 
 Could this broader tuning in big OB DA neurons be explained by larger, more readily detectable odour-evoked responses in this cell type? Actually, measures of event amplitudes revealed the opposite to be the case: big cells had significantly weaker responses to odorant stimuli, a highly significant effect that held across all response types (Figure 10C; early excitatory, fixed effect of cell-type in multilevel ANOVA, F1,626 = 6.58, p=0.011; late excitatory, F1,244 = 4.50, p=0.035; inhibitory, F1,295 = 32.69, p<0.0001). Despite their higher intrinsic excitability (Figure 8), big, putative AIS+ DA neurons therefore do not display stronger responses to sensory stimuli in vivo. This unexpected effect may be because of fundamental differences between sensory stimulation in vivo versus direct electrical stimulation in vitro, or it may be due to cell-type differences in synaptic connectivity, or in the modulation of intrinsic properties in the intact OB. Additionally, it could be related to another feature of in vivo GCaMP activity: baseline fluorescence. Resting fluorescence was significantly higher in big cells (fixed effect of cell-type in multilevel ANOVA, F1,658 = 12.00, p=0.001), while baseline noise was significantly lower in this cell type (F1,1211 = 41.84, p<0.0001), and both measures, especially noise, correlated strongly with all response amplitude measures (baseline fluorescence vs early excitatory amplitude, Spearman r = −0.49, p<0.0001, n = 612; vs late excitatory amplitude, r = −0.44, p<0.0001, n = 235; vs inhibitory amplitude, r = −0.58, p<0.0001, n = 282; baseline noise vs early excitatory amplitude, r = 0.67, p<0.0001, n = 631; vs late excitatory amplitude, r = 0.72, p<0.0001, n = 245; vs inhibitory amplitude, r = 0.83, p<0.0001, n = 296). The increased buffering capacity associated with higher resting GCaMP levels (Svoboda et al., 1999) could therefore lead to dampened response amplitudes in big cells. Additionally, lower spontaneous fluctuations in resting activity could allow big OB DA neurons to significantly respond to odorant stimuli with lower amplitude events. However, these cell-type distinctions in baseline activity cannot account for the differences in response selectivity between big and small cell populations (Figure 10B). Not only did we see identical big versus small cell selectivity for early excitatory events when baseline differences might be expected to influence tuning across all response types, we also observed only weak and inconsistent correlations with the different TI measures for both baseline fluorescence and noise (baseline fluorescence vs early excitatory TI, Spearman r = −0.05, p=0.07; vs late excitatory TI, r = 0.15, p<0.0001; vs inhibitory TI, r = 0.13, p<0.0001; n = 1164 in all cases; baseline noise vs early excitatory TI, r = 0.075, p=0.0085; vs late excitatory TI, r = −0.20, p<0.0001; vs inhibitory TI, r = −0.17, p<0.0001; n = 1216 in all cases). Finally, we wondered whether the prolonged timecourse and therefore truncated response profiles of late excitatory and inhibitory responses (e.g. Figure 9C, Figure 10A) might have contributed to the functional differences observed for these event types between big and small OB dopaminergic cells. However, accurate estimates of decay kinetics found no cell-type differences in either response type (see Materials and methods, Figure 10—figure supplement 1).
 
@@ -132,7 +353,7 @@ Overall in terms of odorant response properties, therefore, big/putative AIS-pos
 
 Our results demonstrate the existence of two subtypes of OB DA neurons with distinct morphological, developmental and – crucially – functional characteristics. The majority of DA cells are small, locally projecting, anaxonic neurons which fire low numbers of somatic action potentials; they are continuously generated and turned over throughout life, and have stronger odorant-evoked responses that for certain event types are more narrowly tuned. Conversely, a minority of DA cells are large, wide-branching and equipped with an axon and an AIS, from which they generate high-frequency discharges of action potentials. These AIS-positive DA cells are born exclusively during early embryonic development and persist throughout life; their high excitability is nevertheless associated with weaker sensory-evoked responses in vivo, some types of which are more broadly tuned to odorant stimuli.
 
-## Cell-type identity and functional diversity in neuronal circuits
+### Cell-type identity and functional diversity in neuronal circuits
 
 An absolutely crucial step in understanding information processing in any neuronal network is to build an accurate classification of its component parts (Zeng and Sanes, 2017). Cell-type identity – as determined by ontology, gene expression, morphology, connectivity, and/or physiology – is intimately linked to the functional role that any neuron can play in a given circuit. It is therefore no surprise that in recent attempts to model realistic network operations, a great deal of effort has been spent delineating just how many component parts those networks contain. In different regions of the mammalian brain, we now have comprehensive descriptions of cell-type diversity with regards to, for instance, gene expression (e.g. Romanov et al., 2017; Tasic et al., 2016; Zeisel et al., 2015), neuronal morphology (e.g. Cerminara et al., 2015; Parekh and Ascoli, 2015), synaptic connectivity (e.g. Morgan et al., 2016), and sensory response properties (e.g. Baden et al., 2016), as well as combinatorial cellular-level identification schemes that multiplex several levels of description (e.g. Fuzik et al., 2016; Markram et al., 2015; Sanes and Masland, 2015). These studies show that broad cell-type distinctions must be supplemented by fine-scale subdivisions within different cell types in order to fully understand network function. Such classification schemes are no less vital in our understanding of information processing in olfactory bulb circuits, where a uniquely modular topographic organisation of sensory inputs, coupled with the constant remodelling associated with both peripheral and central adult neurogenesis, promises novel insight into the way the brain interprets and adapts to the outside world.
 
@@ -142,7 +363,7 @@ Two major differing approaches to classifying OB DA neurons are currently under 
 
 This lack of agreement has led to some studies simply grouping all DA neurons into a single neurochemically or genetically defined class (e.g. Banerjee et al., 2015). We agree that the dopaminergic-GABAergic phenotype of these cells is one of their most striking characteristics, defining them as a distinct population of OB interneurons. Moreover, we found here that on many measures the sensory response characteristics of the overall bulbar dopaminergic population are rather homogeneous (Figures 9 and 10). However, failing to identify important DA subclasses can produce issues in the interpretation of their functional roles within OB networks. The division we observe here may help to clarify matters substantially, and actually appears to fit reasonably well with both of the alternative schemes already proposed. On the one hand, AIS-positive, large OB DA neurons share many features with the ‘polyglomerular’ (Kiyokage et al., 2010) and ‘IJGA’ (Kosaka and Kosaka, 2011; Kosaka and Kosaka, 2016) classes. On the other hand, AIS-negative, small OB DA cells have much in common with the ‘oligoglomerular’ (Kiyokage et al., 2010) and ‘DA-PGC’ (Kosaka and Kosaka, 2011; Kosaka and Kosaka, 2016) subtypes. The AIS-negative class also shares important morphological features with a population of DAT-expressing ‘clasping SACs’ identified by recent live imaging of intracellular fills in acute OB slices (Bywalez et al., 2016), whose distinct dendritic architecture and predominantly juxtaglomerular arborisations would appear to separate them from classically-defined PGCs (Kosaka and Kosaka, 2016; Pinching and Powell, 1971). Most importantly, while soma size and dendritic spread are continuous variables that do not permit simple sub-group identification, the presence or absence of an axon is a discrete feature that should allow for cleaner classification. Indeed, segregating OB DA neurons based on axonal criteria has enabled important functional distinctions to be identified between subgroups (Figure 8; [Chand et al., 2015]) that were not evident from previous divisions based on continuous measures (Pignatelli and Belluzzi, 2017; Pignatelli et al., 2005). Finally, in terms of nomenclature, we certainly feel that ‘SAC’ is a misleading term for all OB DA neurons, unless it is acknowledged that in some cells the axon in question is so short as to be non-existent. Perhaps, a simple distinction between ‘axonic’ and ‘anaxonic’ OB DA neurons will prove both clear and useful, although whether those subgroups represent forms of classically-defined PGC, SAC or other cell types can remain a matter for debate.
 
-## Functional roles of axonic vs anaxonic DA neurons in sensory processing networks
+### Functional roles of axonic vs anaxonic DA neurons in sensory processing networks
 
 The existence of two distinct subgroups of DA neurons raises the obvious question: how might these two subpopulations contribute to sensory processing? In the GL, inhibitory signalling can be either intraglomerular or interglomerular in nature – acting within the circuitry of an individual glomerulus, or acting between different glomeruli, respectively. Both AIS-positive and AIS-negative DA subtypes possess dendritic processes that ramify within the glomerular neuropil (Figure 3), so, assuming that the release of GABA and/or dopamine occurs from these dendrites in both cell types (Borisovska et al., 2013; Kiyokage et al., 2017; Vaaga et al., 2017, but see Liberia et al., 2012), both subpopulations have the potential to contribute to intraglomerular inhibition. This includes GABA and/or dopamine inhibiting release probability at OSN presynaptic terminals via the activation of GABAB and D2 receptors, respectively (Ennis et al., 2001; Hsia et al., 1999; Korshunov et al., 2017; McGann, 2013; Vaaga et al., 2017). Local GABA release can also provide a brake on recurrent excitatory glomerular networks (Gire and Schoppa, 2009; Murphy et al., 2005; Najac et al., 2011), as well as effecting auto-disinhibition at high input strengths (Parsa et al., 2015). By acting at the levels of both input terminals and projection neuron dendrites, intraglomerular inhibition produced by both subtypes of OB DA neuron may subserve highly local gain control, potentially acting as a high-pass temporal and contrast filter to facilitate the detection of strong odorant stimuli (e.g. Banerjee et al., 2015; Cavarretta et al., 2016; Cleland and Sethupathy, 2006; Gire and Schoppa, 2009; Korshunov et al., 2017).
 
@@ -150,7 +371,7 @@ Interglomerular inhibition, by contrast, would appear to be restricted solely to
 
 Finally, there might also be a significant developmental component to the relative functional contributions of axonic vs anaxonic OB DA neurons. Early in postnatal development, when neuronal activity contributes to the refinement of both OSN terminals (Yu et al., 2004; Zou et al., 2004) and projection neuron dendrites (Lin et al., 2000; Matsutani and Yamamoto, 2000) to individual glomeruli, the large, interglomerular-projecting AIS-positive DA cell type is relatively more numerous (Figure 6B). Maybe these inhibitory interneurons play a crucial role in co-ordinating odour-evoked and/or spontaneous activity across the glomerular layer at these early ages, allowing distinct activity patterns to drive anatomical segregation at the individual glomerulus level.
 
-## A distinct role for functional plasticity in postnatally generated neurons?
+### A distinct role for functional plasticity in postnatally generated neurons?
 
 Perhaps the most remarkable difference between the two axonic and anaxonic DA subtypes is that only the latter is generated throughout adult life. This observation is in agreement with a more general trend of adult-born neurons in the olfactory bulb, where neither PGCs nor granule cells possess an axon (Lledo et al., 2006). A recently observed small cohort of adult-born cortical neurons is also anaxonic (Le Magueresse et al., 2011). In fact, with the notable exception of hippocampal dentate granule cells, it appears that all CNS neurons constitutively born during adulthood are anaxonic, contributing purely to local network activity by releasing neurotransmitter from their dendrites. Indeed, one may speculate that it is simpler for a newly generated neuron to insert itself in a pre-existing network without having to extend and connect a far-reaching axonal process. Accordingly, the large, axonic OB DA cells that do need to form such extensive connections are born only during early development at the same time that other projection neurons are populating the bulb (Treloar et al., 2010).
 
@@ -158,15 +379,283 @@ What is the evolutionary advantage for maintaining continuous neurogenesis of an
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J mice</td>
+      <td>Charles River</td>
+      <td>Strain code 027</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>DAT-Cre, B6.SJL-Slc6a3tm1.1(cre)Bkmn/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax stock 006660</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>VGAT-Cre, Slc32a1tm2(cre)Lowl/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax stock 016962</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>flex-tdTomato, B6.Cg–Gt(ROSA)26Sortm9(CAG-tdTomato)Hze,</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax stock 007909</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>flex-GCaMP6s animals, Ai96; B6;129S6-Gt(ROSA)26Sortm96(CAG-GCaMP6s)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax stock 024106</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Adeno-associated virus)</td>
+      <td>AAV9.EF1a.ChR2-YFP lox/lox virus</td>
+      <td>Penn Vector Core, USA</td>
+      <td>AV-9-PV1522,</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (retrovirus)</td>
+      <td>floxed rv::dio-GFPlox/lox</td>
+      <td>Oscar Marin</td>
+      <td>Ciceri et al., 2013 Nat Neuroscience 16(9):1199–210</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal Anti-Tyrosine Hydroxylase, raised in Rabbit; use 1:500</td>
+      <td>Millipore</td>
+      <td>catalogue number AB152; RRID:AB_390204</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal Anti-Tyrosine Hydroxylase, raised in mouse; use 1:500</td>
+      <td>Millipore</td>
+      <td>clone (LNC1) - catalog number MAB318; RRID: AB_2313764</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal Anti-Tyrosine Hydroxylase, raised in chicken; use 1:250</td>
+      <td>Abcam</td>
+      <td>catalog number ab76442; RRID:AB_1524535</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal anti-Ankyrin-G IgG2a, raised in mouse; use 1:500</td>
+      <td>Neuromab</td>
+      <td>clone (106/36) - catalog number75–146; RRID: AB_10673030</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal anti-Ankyrin-G IgG2b, raised in mouse; use 1:500</td>
+      <td>Neuromab</td>
+      <td>clone (106/65) - catalog number75–147; RRID: AB_10675130</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal anti-Ankyrin-G IgG1, raised in mouse; use 1:500</td>
+      <td>Neuromab</td>
+      <td>clone (106/20) - catalog number75–187; RRID:AB_10674433</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal Phospho-IκBα (Ser32) (14D4), raised in rabbit; use 1:1000</td>
+      <td>Cell Signaling Technology</td>
+      <td>catalog number 2859; RRID:AB_561111</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal Anti-TRIM46, raised in rabbit; use 1:500</td>
+      <td>Gift from Casper Hoogenraad</td>
+      <td>van Beuningen et al. (2015) Neuron. 88:1208–1226</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal anti-MAP-2, raised in mouse; use 1:500</td>
+      <td>Gift from Phillip Gordon-Weeks</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>monoclonal anti-chemical BrdU, raised in Rat; use 1:200</td>
+      <td>Serotec</td>
+      <td>clone BU1/75 (ICR1)- catalog number OBT0030; RRID:AB_609568</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal anti-GFP, raised in chicken; use 1:2000</td>
+      <td>Abcam</td>
+      <td>catalog number ab13970; RRID:AB_300798</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal anti-GFP, raised in guinea pig; use 1:500</td>
+      <td>Synaptic Systems</td>
+      <td>catalog 132 005; RRID:AB_11042617</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin</td>
+      <td>Alfa Aesar</td>
+      <td>CAS A16198</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PIPES</td>
+      <td>Sigma</td>
+      <td>CAS P6757</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2′-deoxyuridine</td>
+      <td>Sigma</td>
+      <td>CAS 59143</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10436</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl Propionate</td>
+      <td>Sigma</td>
+      <td>CAS 81988</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl Butyrate</td>
+      <td>Sigma</td>
+      <td>CAS 246093</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl Valerate</td>
+      <td>Sigma</td>
+      <td>CAS 290866</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexanal</td>
+      <td>Sigma</td>
+      <td>CAS 115606</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl Tiglate</td>
+      <td>Penta</td>
+      <td>CAS 13–73400</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valeraldehyde</td>
+      <td>Sigma</td>
+      <td>CAS 110132</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propyl Acetate</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>CAS A0044</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentyl Acetate</td>
+      <td>Sigma</td>
+      <td>CAS 109549</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diethyl Phthalate</td>
+      <td>Sigma</td>
+      <td>CAS 84662</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software (Fiji)</td>
+      <td>NIH; Schneider et al. (2012)</td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClampFit 10.4</td>
+      <td>pClamp</td>
+      <td>Molecular Devices; RRID:SCR_011323</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5.3</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vaa3D</td>
+      <td>Allen Institute for Brain Science</td>
+      <td>RRID:SCR_002609</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IBM SPSS Statistics</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Unless otherwise stated, we used mice of either gender, and housed them under a 12 hr light-dark cycle in an environmentally controlled room with free access to water and food. Wild-type C57/Bl6 mice (Charles River) were used either as experimental animals, or to back-cross each generation of transgenic animals. The founders of our transgenic mouse lines – DAT-Cre (B6.SJL-Slc6a3tm1.1(cre)Bkmn/J, Jax stock 006660), VGAT-Cre (Slc32a1tm2(cre)Lowl/J, Jax stock 016962), flex-tdTomato (B6.Cg–Gt(ROSA)26Sortm9(CAG-tdTomato)Hze, Jax stock 007909), and flex-GCaMP6s animals (Ai96; B6;129S6-Gt(ROSA)26Sortm96(CAG-GCaMP6s)Hze/J, Jax stock 024106) – were purchased from Jackson Laboratories. If not stated otherwise, all experiments were performed at postnatal day (P) 28. All experiments were performed under the auspices of UK Home Office personal and project licences held by the authors, or were within institutional (Harvard University Institutional Animal Care and Use Committee) and USA national guidelines.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were anaesthetised with an overdose of pentobarbital and then perfused with 20 mL PBS with heparin (20 units.mL−1), followed by 20 mL of 1% paraformaldehyde (PFA; in 3% sucrose, 60 mM PIPES, 25 mM HEPES, 5 mM EGTA, and 1 mM MgCl2). The olfactory bulbs were dissected and post-fixed in 1% PFA for 2–7 d, then embedded in 5% agarose and sliced at 50 µm using a vibratome (VT1000S, Leica). Free-floating slices were washed with PBS and incubated in 5% normal goat serum (NGS) in PBS/Triton/azide (0.25% triton, 0.02% azide) for 2 hr at room temperature. They were then incubated in primary antibody solution (in PBS/Triton/azide) for 2 days at 4°C. The primary antibodies used and their respective concentrations are indicated in the key resources table. Slices were then washed three times for 5 min with PBS, before being incubated in secondary antibody solution (species-appropriate Life Technologies Alexa Fluor-conjugated; 1:1000 in PBS/Triton/azide) for 3 hr at room temperature. After washing in PBS, slices were incubated in 0.2% sudan black in 70% ethanol at room temperature for 3 min to minimise autofluorescence, and then mounted on glass slides (Menzel-Gläser) with MOWIOL-488 (Calbiochem). Unless stated otherwise, all reagents were purchased from Sigma.
 
-## Birth-dating and sparse labelling
+### Birth-dating and sparse labelling
 
 To birth-date neurons, we injected mice with a saline-based solution containing 50 mM bromodeoxyuridine (BrdU, Sigma) and 17.5 mM NaOH. Pregnant C57/BL6 female mice received one single intraperitoneal injection of this solution (0.075 ml/g) on the relevant gestational day; pregnancy start date (E0) was investigated twice daily and confirmed by the presence of a vaginal plug. Injected mothers and offspring were transcardially perfused on the relevant day, as detailed above. To permit BrdU detection, slices were first incubated in 2 M HCl for 30 min at 37°C, washed thoroughly and then processed for immunohistochemistry as described above.
 
@@ -176,7 +665,7 @@ Injections in embryos were performed with an injector and a 30.5 ga needle throu
 
 Injections in neonates were performed in a semi-stereotaxic frame using a Hamilton syringe and a borosilicate glass capillary (GC100-15, Harvard Apparatus). For electroporation, after the injection of 2 µl of GFP in the lateral ventricle, five 50 ms-0.15 A electrical pulses were delivered at 1 Hz with plate electrodes (10 mm diameter, Nepagene, Japan) oriented in such a way to drive the current dorso-ventrally.
 
-## Fixed-tissue imaging and analysis
+### Fixed-tissue imaging and analysis
 
 All images were acquired with a laser scanning confocal microscope (Zeiss LSM 710) using appropriate excitation and emission filters, a pinhole of 1 AU and a 40x oil immersion objective. Laser power and gain were set to either prevent signal saturation in channels imaged for localisation analyses, or to permit clear delineation of neuronal processes in channels imaged for neurite identification (e.g. TH, GFP).
 
@@ -184,7 +673,7 @@ In ex vivo tissue, for branching patterns and reconstructions, images were taken
 
 The density of AIS-positive DA neurons at P28 was calculated as follows. First, the average density of TH-positive cells per cubic millimetre of GL was calculated by manually counting cells and measuring GL area in medium-magnification stacks (~43,000 cells / mm3; 40x objective, zoom 1; n = 14 slices, N = 3 mice). Second, the total volume of tissue used to identify a total of 297 AIS- and TH-positive cells was estimated by manually drawing GL area profiles in low-magnification images (~0.28 mm3; 5x objective; n = 81, N = 9) and multiplying by the slice thickness (50 µm). The estimated number of TH-positive cells in this volume (~11,801) was then calculated by multiplying GL volume by the previously defined average TH-positive density per cubic millimetre. Finally, the AIS-positive/TH-positive cell percentage was calculated by dividing the total number of identified AIS-positive/TH-positive cells (297) by the estimated number of TH-positive cells present in the analysed volume. In P0 tissue, the proportion of axon-bearing DA neurons was calculated by manually counting the number of TH-positive cells in 20 stacks (n = 239, N = 2), and confirming with TRIM-46 co-label the subset of those with an axonal process (n = 14).
 
-## Acute slice electrophysiology
+### Acute slice electrophysiology
 
 P21-35 DATCre-tdTomato mice were decapitated under isoflurane anaesthesia, and the OB was removed and transferred into ice-cold slicing medium containing (in mM): 240 sucrose, 5 KCl, 1.25 Na2HPO4, 2 MgSO4, 1 CaCl2, 26 NaHCO3 and 10 D-Glucose, bubbled with 95%O2 and 5% CO2. Horizontal slices (300 µm thick) of the olfactory bulb were cut using a vibratome (VT1000S, Leica) and maintained in ACSF containing (in mM): 124 NaCl, 2.5 KCl, 1.25 Na2HPO4, 2 MgSO4, 2 CaCl2, 26 NaHCO3 and 15 D-Glucose, bubbled with 95% O2 and 5% CO2 for >1 hr before experiments began.
 
@@ -196,7 +685,7 @@ Exported traces were analysed using either ClampFit (pClamp10, Molecular Devices
 
 For quantification of AP properties, voltage threshold was taken as the potential at which dV/dt first passed 10 V/s. Onset rapidness was taken from the slope of a linear fit to the phase plane plot at voltage threshold. Spike width was measured at the midpoint between voltage threshold and maximum voltage. Rheobase and afterhyperpolarisation values were both measured from responses to 500 ms current injection, the latter from the local voltage minimum after the first spike fired at rheobase. Input-output curves were constructed by simply counting the number of spikes fired at each level of injected current density.
 
-## In vivo imaging
+### In vivo imaging
 
 Thirteen DATCre-GCaMP6s mice (either gender, age 4–10 months) were anaesthetised with a mixture of ketamine (100 mg/kg) and xylazine (10 mg/kg), placed in a stereotaxic apparatus and equipped with a cranial window over the olfactory bulbs using a sterile 3 mm biopsy punch (Integra Miltex). A custom-built titanium head plate was secured to their skull with adhesive luting cement (C and B Metabond, Parkell). A coverslip (3 mm, Warner Instruments) was placed over the cranial window and tissue adhesive (3M Vetbond) was used to secure the coverslip to the bone. The mice were allowed a minimum of a week to recover from surgery before the first imaging session. Prior to each imaging session the mice were newly anaesthetised with a mixture of ketamine (100 mg/kg) and xylazine (10 mg/kg) and secured in a custom-built microscope as described previously (Kapoor et al., 2016). Mice were given a maximum of one booster injection of anaesthesia per session, and were never imaged on consecutive days. GCaMP was excited and imaged via a water immersion objective (20x, 0.95 NA, Olympus; sterile saline was used as the fluid for the immersion objective) at 927 nm using a Ti:sapphire laser (Chameleon Ultra, Coherent) with 140 fs pulse width and 80 MHz repetition rate. Image acquisition, scanning, and stimulus delivery were controlled by custom-written software in LabVIEW (National Instruments). Eight odors were individually delivered via a custom-built olfactometer (Kapoor et al., 2016). The odour panel included: methyl propionate (Sigma, 81988), methyl butyrate (Sigma, 246093), ethyl valerate (Sigma, 290866), hexanal (Sigma, 115606), methyl tiglate (Penta, 13–73400), valeraldehyde (Sigma, 110132), propyl acetate (Tokyo Chemical Industry, A0044), and pentyl acetate (Sigma, 109549). All odours were diluted in diethyl phthalate solvent (Sigma-Aldrich, St. Louis, Missouri, United States) at 2% v/v.
 
@@ -208,6 +697,6 @@ Excitatory responses displayed a clear bimodal distribution of peak timepoints (
 
 To estimate response decay constants for late excitatory and inhibitory responses, we started by identifying a subset of cells whose long-latency responses returned to baseline within the timeframe of our 18 s imaging sweep (late excitatory, n = 14; inhibitory, n = 44). In these cells, we compared the decay constants produced by a single exponential fit to either the 2.5 s immediately following the response peak (=10 timepoints at 4 Hz sample rate), or to the entire post-peak response profile. We found that fitting just the 2.5 s from the response peak produced accurate decay constant estimates – the differences between partial and full fits were small, and were not significantly different from zero for either response type (Figure 10—figure supplement 1A,B; late excitatory mean ±SEM - 3.35 ± 2.26 s, Wilcoxon test vs 0, W = −21, p=0.50; inhibitory, −0.41 ± 0.72 s, W = 221, p=0.17). Importantly, there was also no difference in the accuracy of this estimation in big versus small OB DA cells (late excitatory, fixed effect of cell type in multilevel ANOVA, F1,9 = 0.92, p=0.36; inhibitory, F1,41 = 1.22, p=0.28). We were then able to estimate decay constants in a larger subset of cells whose long-latency responses peaked at least 2.5 s before the end of our imaging sweeps. This subset comprised 42% and 44% of all cells with late excitatory and inhibitory responses, respectively, proportions that did not differ between cell types (late excitatory, small cells, 42/105; big cells, 60/140, Fisher’s exact test, p=0.70; inhibitory, small cells 66/152, big cells 63/144, p>0.99). We found slow decay constants of approximately 8–11 s for both late excitatory and inhibitory response types, but no difference in decay kinetics between big and small OB DA cells (Figure 10—figure supplement 1C,D; late excitatory, fixed effect of cell type in multilevel ANOVA, F1,98 = 0.32, p=0.57; inhibitory, F1,113 = 0.078, p=0.78). Importantly, although making up only ~40% of the total population of responding cells, the subsample of neurons for which we could accurately estimate decay kinetics was representative of our sample as a whole, with no significant differences observed between decay-estimated and decay-non-estimated cells on a wide range of measures (t-test or Mann-Whitney as appropriate within small and big cell subpopulations, Bonferroni-corrected p>0.05 for soma area, baseline fluorescence, baseline noise, and response amplitude).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out using Prism (Graphpad), Matlab (Mathworks) or SPSS (IBM). Sample distributions were assessed for normality with the D’Agostino and Pearson omnibus test, and parametric or non-parametric tests carried out accordingly. α values were set to 0.05, and all comparisons were two-tailed. Principal component analysis (PCA) and k-means classification on electrophysiological data were performed (Matlab functions ‘pca.m’ and ‘kmeans_lpo.m’, respectively) on the five variables that differed significantly between monophasic and biphasic DAT-tdT neurons. All were normally distributed except onset rapidness, which was rendered normal by logarithmic transform. Results of the k-means analysis were validated with a ‘leave-one-out’ protocol, which revealed cell-type classification to be robust to the removal of any one cell from the dataset. For multilevel analyses of in vivo GCaMP data, distributions of baseline noise and response amplitude measures were rendered normal by logarithmic transform, and outliers – defined as any value with an absolute z-score >3 – were removed (Aarts et al., 2014); a single outlier was removed from each dataset, representing <0.5% of each sample). These parameters were then analysed using linear mixed models (SPSS) with mouse as the subject variable. Tuning index data could not be rendered normal by any standard transforms, so were analysed using generalised linear mixed models with a negative binomial target distribution (accounting for >90% of sample variance; SPSS) and mouse as the subject variable. Dummy variable analysis revealed significant intracluster correlations in all cases, stressing the importance of nesting cell-by-cell data on individual mouse subjects (Aarts et al., 2014). Due to the non-normal nature of tuning index distributions, and the rarity of observing multiple different response types in any given single neuron, PCA was not attempted on our GCaMP data.

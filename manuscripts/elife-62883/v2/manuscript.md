@@ -51,7 +51,7 @@ We do not assume ex ante that compromised bone strength per se is the only cause
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 Tsimane are semi-sedentary forager-horticulturalists inhabiting >90 villages in lowland Bolivia. Villages are usually located along rivers or other water sources (e.g. lagoons) and are composed of dispersed clusters of kin-related households. The household is the basic economic unit for production and consumption, and most daily coordination is confined to the nuclear and extended family. Tsimane hunt with a diverse toolkit that can include any/all of the following: rifle or shotgun (but guns and ammunition are often unavailable), bow and arrow, machete, slingshot and trap, and sometimes assistance from tracking dogs (Gurven et al., 2006). On average, men hunt about once every week or two; hunting is more common during the wet season and in interior forest villages. The average hunt lasts 8.4 hr and covers 17.9 km (Trumble et al., 2014) and often involves carrying animal carcasses long distances. Tsimane women occasionally hunt, much less often than men, and use different strategies (e.g. women rarely use firearms) with lower return rates . Because of women’s relatively infrequent participation in hunting, we focus here only on men’s hunting behavior. Fishing typically occurs in rivers, streams, or lagoons and involves use of hook-and-line, bow and arrow, machete, plant poison, and/or net. Single-day fishing and hunting activities are mostly solitary or in pairs with siblings, sons, in-laws, or age-mates. Entire families sometimes go on multi-day fishing and hunting trips that can last from 2 days to several months. Food sharing is widespread within extended families, but also limited in scope across families. Kinship and relative need largely determine the magnitude and direction of food transfers (Gurven et al., 2012; Hooper et al., 2015).
 
@@ -59,27 +59,27 @@ Much of the protein and fat consumed by Tsimane come from hunting and fishing (K
 
 Physical strength peaks in the mid-to-late 20s, then declines thereafter, reaching ~60% of maximum adult capacity by age 70 (Gurven et al., 2006). Impaired musculoskeletal function is not uncommon among Tsimane adults (see Figure 3H in Gurven et al., 2020a). BMD estimates from the axial and appendicular skeleton – particularly from sites rich in trabecular bone (i.e. thoracic vertebrae, calcaneus, and distal radius) – suggest that osteoporosis is not uncommon, especially for post-menopausal women (Stieglitz et al., 2015a; Stieglitz et al., 2016; Stieglitz et al., 2017; Stieglitz et al., 2019). Early and rapid reproduction may contribute to women’s skeletal fragility later in life. Compared to more sedentary Los Angeles matched controls, age-standardized prevalence of thoracic vertebral body fracture is two times higher for Tsimane women and 3.3 times higher for men using directly comparable CT methods (Stieglitz et al., 2019). For adults aged 50+, 38% experience some movement restriction (e.g. during flexion or extension), most commonly in the dorsolumbar, hip, knee, or shoulder regions. Nearly 70% of adults aged 50+ are also clinically diagnosed with some condition of the musculoskeletal system and connective tissue (i.e. codes M00–M99 using the International Classification of Diseases version 10) by Tsimane Health and Life History Project (THLHP) physicians. By age 70 most adults report at least some physical discomfort during activities of daily living (e.g. bathing).
 
-## Study design and participants
+### Study design and participants
 
 The Tsimane thoracic CT sample used to measure thoracic vertebral body BMD and fracture presence and severity includes all individuals who met the inclusion criteria of self-identifying as Tsimane and who were aged 40+ at study enrollment (mean ± SD age = 55.9 ± 9.9, age range: 41–91 years, 48% female, n = 493) (see Appendix for additional details and Appendix 1—table 1 for descriptives of study variables). This CT sample is thought to be representative of all Tsimane aged 40+ years . Younger adults (<40 years old) were excluded because CT scans were performed as part of a broader project on atherosclerosis, including arterial plaque formation, which is usually negligible at younger ages for physically active adults. No Tsimane were excluded based on any health condition that can affect BMD or fracture risk.
 
 Institutional IRB approval was granted by UNM (HRRC # 07–157) and UCSB (# 3-16-0766), as was informed consent at three levels: (1) Tsimane government that oversees research projects, (2) village leadership, and (3) study participants.
 
-## Thoracic CT
+### Thoracic CT
 
 Thoracic CT scans were performed at the Hospital Presidente German Busch in Trinidad, Bolivia using a 16-detector row scanner (GE Brightspeed, Milwaukee, WI, USA). A licensed radiology technician acquired a single non-contrast thoracic scan, which was supervised and reviewed by at least one of the HORUS study team cardiologists and radiologists with whom we collaborate to study cardiovascular functioning (Kaplan et al., 2017). Breath-hold instructions were given in the Tsimane language to minimize respiratory motion artifact and misregistration. CT settings were as follows: 250 ms exposure, 2.5 mm slice thickness, 0.5 s rotation speed, 120 kVp, and 40 mA (see Kaplan et al., 2017; Stieglitz et al., 2019 for additional details).
 
-## Thoracic vertebral body BMD
+### Thoracic vertebral body BMD
 
 CT-derived vertebral body BMD estimates are highly accurate and strongly positively correlated (Pearson r’s > 0.9) with ash weight of dry bone (Ho et al., 1990; Reinbold et al., 1991). Thoracic vertebral body BMD was measured manually in each of three consecutive vertebrae (T7–T10 range) by a radiologist with 20+ years of experience (see Appendix for additional details). Lumbar vertebrae were not assessed as they did not appear in the CT image field of view. BMD measurement started at the level of the section that contained the left main coronary artery (LMCA) caudally (beginning at either T7 or T8, depending on the origin of the LMCA). The LMCA was set as the reference site to allow reproducible detection of a spinal level; because the LMCA is covered in 100% of images and the field of view can be completely reconstructed, it is an optimal reference point to locate the starting measurement level. The LMCA has previously been found to originate at T7 about as frequently as T8 (Budoff et al., 2010).
 
 The region of interest was located around the center of the vertebral body, with the edges 2–3 mm from the vertebral shell. This distance ensured that vertebral body BMD measurements excluded the cortical bone of the vertebral shell. For each vertebra, the radiologist manually positioned a circular region of interest while demarcating cortical from trabecular bone based on visual inspection. Any area with large vessels, bone island fractures, and calcified herniated disks were excluded as much as possible from the region of interest with use of the manual free tracing protocol. Mean BMD for the three consecutive thoracic vertebrae was then calculated. This CT-derived thoracic vertebral body BMD measure is strongly positively correlated (Pearson r’s > 0.9) with CT-derived lumbar vertebral body BMD measures (Budoff et al., 2012). CT-derived BMD estimates can be obtained with and without calibration phantoms. Phantomless BMD estimates correlate strongly (Pearson r = 0.99) with standard phantom-based CT BMD estimates (Budoff et al., 2013). Hounsfield units were converted to BMD (mg/cm3) using a calibration phantom of known density, or a scanner-specific mean calibration factor for the T7–T10 vertebrae from scans performed without the phantom.
 
-## Thoracic vertebral body fracture
+### Thoracic vertebral body fracture
 
 For each participant the radiologist also classified seven vertebrae (T6–T12) according to Genant’s semi-quantitative technique (GST) (Genant et al., 1993). While there is no consensus regarding the radiologic definition of vertebral fracture, the GST provides highly reproducible diagnosis of fractures and is currently the most widely used clinical technique for identifying and diagnosing fracture (Shepherd et al., 2015). Based on visual inspection, each vertebra is rated according to severity of loss of vertebral height and other qualitative features, including alterations in shape and configuration of the vertebra relative to adjacent vertebrae and expected normal appearances. Each vertebra is classified into one of five categories: normal (grade 0); mild fracture (grade 1; approximately 20–25% reduction in anterior, middle, and/or posterior vertebral height, and a 10–20% reduction in projected vertebral area); moderate fracture (grade 2; 25–40% reduction in any height and a 20–40% reduction in area); and severe fracture (grade 3; >40% reduction in any height and area). A grade 0.5 indicates borderline deformed vertebra (<20% reduction in any height) that is not considered to be a definitive fracture (see Appendix for additional details). Each participant is assigned one summary grade measure of all seven vertebrae. Participants with >1 vertebral deformity are classified according to their most severe deformity. Participants are considered to present fracture if any vertebral body is graded at least mildly deformed (i.e. grade ≥1); participants are considered to present no fracture if graded 0 or 0.5. Given lower observer agreement for mild fractures (the most common) relative to moderate and severe fractures (Lentle et al., 2018), we repeated some analyses using a more conservative fracture definition (i.e. grade ≥2). Unless otherwise noted we report results using the former definition.
 
-## Subsistence involvement and hunting productivity losses
+### Subsistence involvement and hunting productivity losses
 
 A few days or weeks before traveling from their home villages to Trinidad for CT scanning, participants received in their villages a medical exam from a Bolivian physician and bilingual (Spanish–Tsimane) physician assistant from the THLHP. During the medical exam, participants were asked whether they continued or completely ceased involvement in routine subsistence tasks (e.g. ‘Do you still hunt? Have you hunted in the past few months, or have you stopped hunting altogether?’). Participants were queried about the following four tasks: hunting (men only), tree chopping (men only), weaving (women only), and ability to walk an entire day (both sexes) (also see Stieglitz et al., 2015b). Other subsistence tasks (e.g. fishing and collecting fruit) were omitted due to time constraints during data collection. Women were not queried about hunting or tree chopping (nor were men about weaving) because they rarely participate in these tasks (Gurven et al., 2009). We were able to minimize assignment of ‘false negatives’ (i.e. coding capable participant i as ceasing task j due to a temporary illness which only inhibited i’s involvement in j in the shorter but not longer term) by cross-checking participant response stability over time using repeated measures from medical exams performed in other project years (before and in a few cases after CT scanning; 98% of CT study participants received at least one medical exam in other [i.e. non-CT scanning] project years [mean ± SD number of medical exams/participant = 4 ± 2, min = 1, max = 8]). Responses were generally stable within individuals over time, resulting in very few false negatives for a given task. If a participant reported ceasing a given task in a given year, the physician then asked whether cessation resulted from specific functional limitations related to sensory perception (e.g. difficulty seeing or hearing), endurance (e.g. feeling tired or weak), and mobility limitations (e.g. hip problems).
 
@@ -87,11 +87,11 @@ Estimates of Tsimane age-specific daily caloric production (total and task-spec
 
 To estimate men's hunting productivity losses associated with fracture and lower BMD, we multiply men’s average age-specific daily hunting production by the probability that men still hunt at a given age. This probability that men still hunt is modeled using binary logistic regression with the following covariates: age (years), fracture status (yes/no), and BMD (mg/cm3; also see Appendix). This probability thus serves as a multiplier adjusting men’s average daily hunting production for disability associated with fracture and lower BMD. To determine productivity loss we take the difference in estimated hunting kcals/day at each age for a given fracture and/or BMD value. For example, if a 40-year-old produces 2000 hunting kcals/day, and if the probability that a 40-year-old without fracture still hunts is 0.99 (vs. 0.85 for a 40-year-old with fracture), then the predicted hunting production is 1980 kcals/day for a 40-year-old without fracture (i.e. 2000 × 0.99), and 1700 kcals/day for a 40-year-old with fracture (i.e. 2000 × 0.85; productivity loss = 280 hunting kcals/day). Similarly, if a 50-year-old produces 1800 hunting kcals/day, and if the probability that a 50-year-old without fracture still hunts is 0.9 (vs. 0.75 for a 50-year-old with fracture), then the predicted hunting production is 1620 kcals/day for a 50-year-old without fracture and 1350 kcals/day for a 50-year-old with fracture (productivity loss = 270 hunting kcals/day; that is, 10 fewer daily lost kcals compared to age 40). We assume that hunting return rates (i.e. kcals/hr hunting) are identical for men regardless of fracture status or BMD. Since we do not assume reduced hunting efficiency for men with fracture or lower BMD, the productivity losses reported here may be conservative, and result entirely from complete hunting cessation. This hunting productivity loss is our estimate of the economic cost associated with compromised bone strength. We estimate this cost in two ways: (1) daily loss at age x, as in the prior example of a 40- and 50 year-old; and (2) expected cumulative future losses from age x onward, where future losses are discounted by mortality. Conceptually, this latter value is similar to Fisher’s reproductive value (expected future reproduction at each age) but substitutes age-specific fertility with age-specific caloric production from hunting, given Tsimane population age structure and men’s mortality rates (Gurven et al., 2012).
 
-## Socio-demographics and anthropometrics
+### Socio-demographics and anthropometrics
 
 Birth years were assigned based on a combination of methods described elsewhere (see Appendix for additional details). Height and weight were measured during THLHP medical exams using a Seca portable stadiometer and Tanita scale. The scale uses bioelectrical impedance to estimate body fat percentage using proprietary estimation equations. Using weight and percent body fat we calculated fat mass (weight × percent body fat) and fat-free mass (weight − fat mass).
 
-## Data analysis
+### Data analysis
 
 In descriptive analyses we report fracture prevalence for each sex and test for effects of age and BMD on fracture risk using log-binomial generalized linear models. Chi-squared tests are used to compare the differences in subsistence participation (e.g. whether continuing or completely ceasing hunting or tree chopping) by fracture status. Binary logistic regression is used to model the probability of subsistence task cessation as a function of fracture status and BMD after adjusting for age. We use stepwise regression with fracture status included first, and then BMD, and we compare models based on Akaike information criterion (AIC). False discovery rate (FDR) q-values were computed using the R package ‘qvalue’ to account for the multiple testing burden across different subsistence tasks. Parameter estimates are reported as odds ratios (ORs) or predicted probabilities.
 
@@ -99,9 +99,9 @@ We apply several indirect methods for assessing reverse causality, whereby ceasi
 
 ## Results
 
-## Descriptives: thoracic vertebral body fracture prevalence and covariation with age and thoracic vertebral body BMD
+### Descriptives: thoracic vertebral body fracture prevalence and covariation with age and thoracic vertebral body BMD
 
-## Men
+#### Men
 
 Prevalence of any thoracic vertebral body fracture (i.e. grade ≥1; including mild, moderate, or severe) for men aged 40+ years is 36% (95% CI: 30–42) (Figure 2). Using a more conservative fracture definition (i.e. grade ≥2; including only moderate or severe), men’s prevalence is 11% (95% CI: 7–15). Neither men’s age nor thoracic vertebral body BMD is significantly associated with fracture risk (Figure 2), regardless of fracture grade.
 
@@ -109,7 +109,7 @@ Prevalence of any thoracic vertebral body fracture (i.e. grade ≥1; including 
 
 **Figure 2.:** The shaded region shows ±1 SE, and jittered data points represent fracture status. Bottom: scatterplot of thoracic vertebral body bone mineral density (BMD) by age and fracture status, including linear regression lines for each fracture status. N = 256 men.
 
-## Women
+#### Women
 
 Prevalence of any grade 1 fracture for women aged 40+ years is 19% (95% CI: 14–24) (Figure 3). Women’s grade 2 fracture prevalence is 7% (95% CI: 4–10). Women’s age does not significantly predict fracture risk in univariate models, regardless of fracture grade. BMD is inversely associated with women’s fracture risk after adjusting for age (grade 1: adjusted relative riskBMD per SD increase=0.49, 95% CI: 0.34–0.72, p<0.001; grade 2: adjusted relative riskBMD per SD increase=0.25, 95% CI: 0.11–0.57, p=0.001; see Figure 3); in both of these models that include BMD as a covariate, age is inversely and significantly associated with fracture risk.
 
@@ -117,13 +117,68 @@ Prevalence of any grade 1 fracture for women aged 40+ years is 19% (95% CI: 14�
 
 **Figure 3.:** The shaded region shows ±1 SE, and jittered data points represent fracture status. Bottom: scatterplot of thoracic vertebral body bone mineral density (BMD) by age and fracture status, including linear regression lines for each fracture status. N = 237 women.
 
-## Hunting cessation is associated with thoracic vertebral body fracture and, albeit weakly, with lower BMD
+### Hunting cessation is associated with thoracic vertebral body fracture and, albeit weakly, with lower BMD
 
 Thirty-eight percent of men with fracture (grade ≥1) ceased hunting, compared to 13% with no fracture (Table 1). Results are similar using a more conservative fracture definition (i.e. grade ≥2; see Appendix 1—table 2; subsequently we only present results where fracture grade ≥1). After adjusting for age, odds of hunting cessation are 7.3 times greater (95% CI: 3.3–17.6, p<0.001, FDR q < 0.001, n = 256) for men with vs. without fracture (Appendix 1—table 3: Model 1). The association between odds of hunting cessation and fracture increases slightly (adjusted ORFracture = 7.4) after also including thoracic vertebral body BMD as a covariate (adjusted ORBMD per SD=0.62, 95% CI: 0.38–0.99, p=0.054, FDR q = 0.161, Appendix 1—table 3: Model 2).
 
-## Hunting cessation associated with thoracic vertebral body fracture and lower BMD generates substantial productivity losses
+**Table 1.**
+ Percentage of men (95% CI) who completely ceased hunting by age and thoracic vertebral body fracture status.
 
-## Fracture
+
+<table>
+  <thead>
+    <tr>
+      <th>Age category (years)</th>
+      <th>% ceased hunting with fracture</th>
+      <th>N</th>
+      <th>% ceased hunting without fracture</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>40–49</td>
+      <td>8^ (&lt;1–19)</td>
+      <td>26</td>
+      <td>0 (-----)</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>33*** (17–50)</td>
+      <td>36</td>
+      <td>4 (&lt;1–9)</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>50^ (24–76)</td>
+      <td>18</td>
+      <td>27 (12–42)</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>70+</td>
+      <td>100* (-----)</td>
+      <td>12†</td>
+      <td>63 (36–89)</td>
+      <td>16‡</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>38*** (28–48)</td>
+      <td>92</td>
+      <td>13 (8–19)</td>
+      <td>164</td>
+    </tr>
+  </tbody>
+</table>
+
+_^p≤0.1, *p≤0.05, **p≤0.01, ***p≤0.001 (χ² or Fisher’s Exact Test [vs. no fracture]).†Max age = 83 years (mean ± SD = 75 ± 4).‡Max age = 81 years (mean ± SD = 74 ± 3)._
+
+### Hunting cessation associated with thoracic vertebral body fracture and lower BMD generates substantial productivity losses
+
+#### Fracture
 
 Figure 4 shows men’s age-specific hunting productivity by fracture status (see Appendix 1—table 4 for production values and additional details). Men with fracture under-produce to a lesser extent at younger vs. older ages because of high hunting participation rates by younger men regardless of fracture status (Table 1 and Appendix 1—table 2). As hunting cessation becomes increasingly likely with age, particularly for men with fracture, daily productivity losses associated with fracture (i.e. the hunting productivity differential for men with vs. without fracture) increase until age 61, when men with fracture produce 481 fewer hunting kcals/day than men without fracture (1007 vs. 526 kcals/day, respectively). This loss of 481 kcals/day – the equivalent of 120 g of protein (or 53 g of fat) – represents 19% of the mean daily per-capita energy intake for a Tsimane man that age (2592 kcals), and 52% of the mean intake from protein and fat (919 kcals). By comparison, this loss of 481 hunting kcals/day at age 61 exceeds daily fishing production at that age by 171 kcals (based on men’s observed age-specific daily fishing production [see Materials and methods and Figure 4]). Daily hunting productivity losses associated with fracture exceed fishing productivity for 14 years, from ages 55 to 68 (by 29–171 kcals/day). In this same age range, based on observed age-specific return rates and time allocation, to wholly offset hunting productivity losses a Tsimane man would have to fish an additional 51–76 min/day (e.g. from an observed 49 to an expected 125 fishing min/day at age 61 [an increase of 155%]; assuming identical fishing return rates regardless of fracture status and BMD; see Materials and methods). As men’s hunting participation rates decline with age regardless of fracture status, hunting productivity losses associated with fracture also decline, reaching zero by age 75 (when hunting returns reach zero; Figure 4).
 
@@ -133,7 +188,7 @@ Figure 4 shows men’s age-specific hunting productivity by fracture status (see
 
 Figure 4 also shows expected cumulative future productivity over the rest of life from a specific age onward, discounted by mortality. Future productivity losses associated with fracture (i.e. the hunting productivity differential for men with vs. without fracture) peak at age 40, when men with fracture can expect to lose 1.15 million kcals over their remaining life; at that age, this loss represents 14% of men’s total future hunting production (8.49 million kcals). Future hunting productivity losses associated with fracture exceed future fishing productivity for 16 years, from ages 49 to 64 (by 2–32% [or 4772–96,419 expected cumulative future kcals]; Figure 4). In this same age range, based on the maximum observed fishing return rate (420 kcals/hr at age 49) and observed age-specific time allocation (e.g. 53 fishing min/day at age 49), to wholly offset future hunting productivity losses associated with fracture a Tsimane man would have to fish an additional 258–1780 hr (i.e. 324–2012 additional future fishing days). Here we applied the maximum observed return rate to derive a conservative estimate. If instead we apply the minimum rate (360 kcals/hr at age 64), then to wholly offset future hunting productivity losses associated with fracture a man would have to fish an additional 302–2076 hr (i.e. 378–2347 additional future fishing days).
 
-## Lower BMD
+#### Lower BMD
 
 We now estimate additional productivity losses (again expressed as the hunting productivity differential) associated with having lower BMD. Losses are greatest for men with fracture and lower BMD vs. men without fracture and higher BMD (Figure 5; see Appendix 1—table 5 for production values and additional details). In this case, peak losses at a given age (age 60: 650 kcals/day – the equivalent of 163 g of protein [or 72 g of fat]) represent 25% of the mean daily per-capita energy intake for a Tsimane man that age and 70% of the mean intake from protein and fat. By comparison, this loss of 650 hunting kcals/day at age 60 exceeds daily fishing production at that age by 333 kcals (based on men’s observed age-specific daily fishing production [see Materials and methods]). Hunting productivity losses for men with fracture and lower BMD (vs. men without fracture and higher BMD) exceed fishing productivity for 21 years, from ages 50 to 70 (by 33–335 kcals/day). In this same age range, based on observed age-specific return rates and time allocation, to wholly offset hunting productivity losses a Tsimane man would have to fish an additional 54–102 min/day (e.g. from an observed 49 to an expected 151 fishing min/day at age 60 [an increase of 205%]; assuming identical fishing return rates regardless of fracture status and BMD; see Materials and methods). Hunting productivity losses are smallest for men without fracture and higher vs. lower BMD (max = 136 kcals/day at age 65; Figure 5).
 
@@ -143,21 +198,186 @@ We now estimate additional productivity losses (again expressed as the hunting p
 
 Expected cumulative future losses are also greatest for men with fracture and lower BMD vs. men without fracture and higher BMD (Figure 5). At the peak (age 40) the former are expected to produce 1.88 million fewer future hunting kcals than the latter. At that age this loss represents 22% of men’s total future hunting production. Future hunting productivity losses for men with fracture and lower BMD vs. men without fracture and higher BMD exceed future fishing productivity for 28 years, from ages 40 to 67 (by 0.1–81% [or 1193–383,902 expected cumulative future kcals]). In this same age range, based on the maximum observed fishing return rate and observed age-specific time allocation, to wholly offset future hunting productivity losses a Tsimane man would have to fish an additional 160–4443 hr (i.e. 207–4849 additional future fishing days). Here, again, we applied the maximum observed return rate to derive a conservative estimate. If instead we apply the minimum rate, then to wholly offset future hunting productivity losses a man would have to fish an additional 202–5594 hr (i.e. 261–6105 additional future fishing days).
 
-## Tree chopping cessation is associated with thoracic vertebral body fracture but not lower BMD
+### Tree chopping cessation is associated with thoracic vertebral body fracture but not lower BMD
 
 Forty-six percent of men with fracture ceased chopping trees, compared to 21% with no fracture (Table 2). After adjusting for age, odds of tree chopping cessation are 6.9 times greater (95% CI: 3.1–16.6, p<0.001, FDR q < 0.001, n = 256) for men with vs. without fracture (Appendix 1—table 6: Model 1). The association between odds of tree chopping cessation and fracture weakens slightly (adjusted ORFracture = 6.8) after also including thoracic vertebral body BMD as a covariate, which is not associated with tree chopping cessation (adjusted ORBMD per SD=0.75, 95% CI: 0.47–1.16, p=0.204, FDR q = 0.306, Appendix 1—table 6: Model 2).
 
-## Weaving cessation is not associated with thoracic vertebral body fracture but is associated, albeit weakly, with lower BMD
+**Table 2.**
+ Percentage of men (95% CI) who completely ceased tree chopping by age and thoracic vertebral body fracture status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age category (years)</th>
+      <th>% ceased tree chopping with fracture</th>
+      <th>N</th>
+      <th>% ceased tree chopping without fracture</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>40–49</td>
+      <td>15** (1–30)</td>
+      <td>26</td>
+      <td>0 (-----)</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>39*** (22–56)</td>
+      <td>36</td>
+      <td>4 (&lt;1–9)</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>67 (43–91)</td>
+      <td>18</td>
+      <td>54 (37–71)</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>70+</td>
+      <td>100 (-----)</td>
+      <td>12†</td>
+      <td>81 (60–100)</td>
+      <td>16‡</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>46*** (35–56)</td>
+      <td>92</td>
+      <td>21 (15–28)</td>
+      <td>164</td>
+    </tr>
+  </tbody>
+</table>
+
+_^p≤0.1, *p≤0.05, **p≤0.01, ***p≤0.001 (χ² or Fisher’s Exact Test [vs. no fracture]).†Max age = 83 years (mean ± SD = 75 ± 4).‡Max age = 81 years (mean ± SD = 74 ± 3)._
+
+### Weaving cessation is not associated with thoracic vertebral body fracture but is associated, albeit weakly, with lower BMD
 
 Twenty percent of women with fracture ceased weaving, compared to 13% with no fracture (Table 3). After adjusting for age, odds of weaving cessation are not significantly associated with fracture (adjusted ORFracture = 2.2, 95% CI: 0.8–6.4, p=0.129, FDR q = 0.172, n = 237, Appendix 1—table 7: Model 1). Weaving is the only task examined for which fracture is not associated with compromised participation. Adding BMD as a covariate further weakens the association between fracture and weaving cessation (adjusted ORFracture = 1.8; adjusted ORBMD per SD=0.51, 95% CI: 0.23–1.05, p=0.079, FDR q = 0.158; Appendix 1—table 7: Model 2).
 
+**Table 3.**
+ Percentage of women (95% CI) who completely ceased weaving by age and thoracic vertebral body fracture status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age category (years)</th>
+      <th>% ceased weaving with fracture</th>
+      <th>N</th>
+      <th>% ceased weaving without fracture</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>40–49</td>
+      <td>0 (-----)</td>
+      <td>11</td>
+      <td>0 (-----)</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>14 (&lt;1–29)</td>
+      <td>22</td>
+      <td>5 (&lt;1–11)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>33 (&lt;1–72)</td>
+      <td>9</td>
+      <td>24 (10–39)</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>70+</td>
+      <td>75 (&lt;1–100)</td>
+      <td>4†</td>
+      <td>55 (32–77)</td>
+      <td>22‡</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>20 (8–31)</td>
+      <td>46</td>
+      <td>13 (8–17)</td>
+      <td>191</td>
+    </tr>
+  </tbody>
+</table>
+
+_^p≤0.1, *p≤0.05, **p≤0.01, ***p≤0.001 (χ² or Fisher’s Exact Test [vs. no fracture]).†Max age = 91 years (mean ± SD = 80 ± 9).‡Max age = 91 years (mean ± SD = 77 ± 6)._
+
 Regardless of fracture status or BMD, all women who stopped weaving reported experiencing problems in all bodily regions (i.e. hip, back, and hands) mentioned by the physician during medical exams, and nearly all of these women also reported visual impairment (Appendix 1—table 8).
 
-## Restricted day range is associated with thoracic vertebral body fracture and, albeit weakly, with lower BMD
+### Restricted day range is associated with thoracic vertebral body fracture and, albeit weakly, with lower BMD
 
 Sixty-nine percent of adults with fracture are unable to walk a full day, compared to 38% with no fracture (Table 4). After adjusting for age and sex, odds of inability to walk all day are 8.2 times greater (95% CI: 4.8–14.5, p<0.001, FDR q < 0.001, n = 493) for adults with vs. without fracture (Appendix 1—table 9: Model 1). The association between odds of inability to walk all day and fracture weakens slightly (adjusted ORFracture = 7.8) after also including thoracic vertebral body BMD as a covariate (adjusted ORBMD per SD=0.77, 95% CI: 0.57–1.03, p=0.082, FDR q = 0.109, Appendix 1—table 9: Model 2).
 
-## Suggestive evidence of fracture preceding task cessation, rather than the reverse
+**Table 4.**
+ Percentage of adults (95% CI) who are unable to walk a full day by age and thoracic vertebral body fracture status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age category (years)</th>
+      <th>% unable to walk all day with fracture</th>
+      <th>N</th>
+      <th>% unable to walk all day without fracture</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>40–49</td>
+      <td>49*** (32–66)</td>
+      <td>37</td>
+      <td>19 (12–26)</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>64*** (51–77)</td>
+      <td>58</td>
+      <td>27 (19–35)</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>89** (76–100)</td>
+      <td>27</td>
+      <td>64 (52–75)</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>70+</td>
+      <td>100^ (-----)</td>
+      <td>16†</td>
+      <td>84 (72–96)</td>
+      <td>38‡</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>69*** (61–77)</td>
+      <td>138</td>
+      <td>38 (33–43)</td>
+      <td>355</td>
+    </tr>
+  </tbody>
+</table>
+
+_^p≤0.1, *p≤0.05, **p≤0.01, ***p≤0.001 (χ² or Fisher’s Exact Test [vs. no fracture]).†Max age = 91 years (mean ± SD = 76 ± 6).‡Max age = 91 years (mean ± SD = 76 ± 5)._
+
+### Suggestive evidence of fracture preceding task cessation, rather than the reverse
 
 Men with fracture are more likely than men without fracture to report mobility limitations due to hip problems as a reason for hunting and tree chopping cessation (Appendix 1—tables 10 and 11). This is noteworthy because among men who ceased hunting and tree chopping, men with fracture are younger, on average, than men without fracture, and all else equal one expects younger men to be less likely than older men to report hip problems (for men ceasing hunting: mean age by fracture status = 63 vs. 68; for men ceasing tree chopping: mean age = 62 vs. 68). Consistent with their younger age, men with fracture are less likely than men without fracture, albeit not significantly, to report problems with endurance (i.e. feeling weak and tiring easily) or sensory processing (i.e. auditory and visual) as reasons for hunting cessation (Appendix 1—table 10). It is thus less likely that men with fractures are in poorer condition more generally, and more likely that fractures contributed to the mobility complaints that led men to stop hunting and tree chopping. As with hunting and tree chopping, among adults who are unable to walk all day, those with fracture are younger than those without fracture (mean age = 59 vs. 62) (there are no differences by fracture status in self-reported reasons for inability to walk all day [see Appendix 1—table 12]).
 
@@ -185,7 +405,7 @@ Our estimates of the ways in which Tsimane with compromised bone strength may co
 
 The extent to which our results generalize across time and space depends on various considerations including age profiles of production, rates of mortality and senescence, and subsistence ecology (e.g. reliance on hunted versus other foods). Fertility patterns are not explicitly considered in the present study, but they can influence both somatic condition, particularly for women (Jasienska, 2020; Ryan et al., 2018; Stieglitz et al., 2015a; Stieglitz et al., 2019; Ziomkiewicz et al., 2016), and economic productivity (Hooper et al., 2015; Kramer, 2005). Extensive longevity may be a novel life history feature of modern H. sapiens that was absent among prior hominin species; extant hunter-gatherers with relatively minimal acculturation exhibit a modal adult lifespan of 68–78 years (Gurven and Kaplan, 2007). It is thus possible that our estimates of disability-related productivity loss are more relevant for understanding lifeways of past hominin populations with more similar life histories as modern H. sapiens and perhaps some archaic humans (e.g. H. heidelbergensis), but less applicable to Lower Paleolithic and earlier hominins with shorter adult lifespans. Whether lifespans were too short for some fossil hominins to expect significant post-reproductive longevity is vigorously debated (see Gurven and Kaplan, 2007; Hawkes, 2003; Hill et al., 2007 and references therein). One study using dental-wear seriation and relative macro-age categories (ratio of old to young) demonstrated an increase in the relative presence of older adults from Australopithecines to early Homo and Early Upper Paleolithic humans (Caspari and Lee, 2004; but see Hawkes and O'Connell, 2005; Minichillo, 2005). Re-estimation of several paleo-mortality curves based on hazard analysis and maximum likelihood methods shows a life course pattern more similar to that of modern human hunter-gatherers than previous methods (Konigsberg and Herrmann, 2006). Development of reliable paleo-demographic reconstructions of hominin life histories (e.g. see DeWitte and Stojanowski, 2015) are critical for determining generalizability of the results presented here. Moreover, disability-related productivity losses could change based on variation in ancestral hominin vertebral morphology that can affect interpretation of fracture results using Genant’s semi-quantitative technique (Trinkaus, 2018).
 
-## Conclusion
+### Conclusion
 
 In comparative cross-species perspective, modern human life histories are characterized by delayed peak foraging efficiency (e.g. Kaplan, 1994; Kaplan, 1997; Koster et al., 2020; Walker et al., 2002), complex cooperative strategies to produce and rear altricial, slow-growing offspring (e.g. Hawkes, 2003; Kaplan et al., 1985; Richerson and Boyd, 2008; Wood and Marlowe, 2013), low adult mortality rate (e.g. Hill et al., 2001; Wood et al., 2017), and long post-reproductive lifespan (e.g. Gurven and Kaplan, 2007; Hawkes et al., 1998; Kaplan et al., 2010). Resource transfers from older to younger generations help mitigate risk of production deficits in a skill- and strength-based extractive foraging niche (Gurven et al., 2012; Hawkes et al., 1998; Hooper et al., 2015; Kaplan et al., 2010). In this paper we considered energetic deficits associated with compromised bone strength, which may have been a source of disability and constrained economic productivity and resource transfers for extended periods throughout much of human history (Bailey, 1991; Gurven et al., 2000; Lambert and Welker, 2017; Sugiyama, 2004). While we provide suggestive evidence of a causal relationship between bone properties and functional disability, changes in bone strength may reflect a combination of earlier life factors (e.g. trauma and activity levels) or other senescent processes.
 

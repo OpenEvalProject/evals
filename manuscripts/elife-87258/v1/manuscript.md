@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02aee5m12 Key Laboratory of Molecular and Developmental Biology, Institute of Genetics and Developmental Biology, University of Chinese Academy of Sciences, Chinese Academy of Sciences Beijing China
-2. https://ror.org/00se2k293 Institute of Neuroscience, National Yang Ming Chiao Tung University Taipei Taiwan
-3. https://ror.org/00se2k293 Brain Research Center, National Yang Ming Chiao Tung University Taipei Taiwan
+1. Key Laboratory of Molecular and Developmental Biology, Institute of Genetics and Developmental Biology, University of Chinese Academy of Sciences, Chinese Academy of Sciences Beijing China ([ROR:02aee5m12](https://ror.org/02aee5m12))
+2. Institute of Neuroscience, National Yang Ming Chiao Tung University Taipei Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
+3. Brain Research Center, National Yang Ming Chiao Tung University Taipei Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
 
 † Corresponding author
 
 ## Abstract
 
-Traumatic brain injury (TBI) caused by external mechanical forces is a major health burden worldwide, but the underlying mechanism in glia remains largely unclear. We report herein that Drosophila adults exhibit a defective blood–brain barrier, elevated innate immune responses, and astrocyte swelling upon consecutive strikes with a high-impact trauma device. RNA sequencing (RNA-seq) analysis of these astrocytes revealed upregulated expression of genes encoding PDGF and VEGF receptor-related (Pvr, a receptor tyrosine kinase), adaptor protein complex 1 (AP-1 , a transcription factor complex of the c-Jun N-terminal kinase pathway) composed of Jun-related antigen (Jra) and kayak (kay), and matrix metalloproteinase 1 (Mmp1) following TBI. Interestingly, Pvr is both required and sufficient for AP-1 and Mmp1 upregulation, while knockdown of AP-1 expression in the background of Pvr overexpression in astrocytes rescued Mmp1 upregulation upon TBI, indicating that Pvr acts as the upstream receptor for the downstream AP-1–Mmp1 transduction. Moreover, dynamin-associated endocytosis was found to be an important regulatory step in downregulating Pvr signaling. Our results identify a new Pvr–AP-1–Mmp1 signaling pathway in astrocytes in response to TBI, providing potential targets for developing new therapeutic strategies for TBI.
+Traumatic brain injury (TBI) caused by external mechanical forces is a major health burden worldwide, but the underlying mechanism in glia remains largely unclear. We report herein that Drosophila adults exhibit a defective blood–brain barrier, elevated innate immune responses, and astrocyte swelling upon consecutive strikes with a high-impact trauma device. RNA sequencing (RNA-seq) analysis of these astrocytes revealed upregulated expression of genes encoding PDGF and VEGF receptor-related (Pvr, a receptor tyrosine kinase), adaptor protein complex 1 (AP-1, a transcription factor complex of the c-Jun N-terminal kinase pathway) composed of Jun-related antigen (Jra) and kayak (kay), and matrix metalloproteinase 1 (Mmp1) following TBI. Interestingly, Pvr is both required and sufficient for AP-1 and Mmp1 upregulation, while knockdown of AP-1 expression in the background of Pvr overexpression in astrocytes rescued Mmp1 upregulation upon TBI, indicating that Pvr acts as the upstream receptor for the downstream AP-1–Mmp1 transduction. Moreover, dynamin-associated endocytosis was found to be an important regulatory step in downregulating Pvr signaling. Our results identify a new Pvr–AP-1–Mmp1 signaling pathway in astrocytes in response to TBI, providing potential targets for developing new therapeutic strategies for TBI.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Previous studies have implicated a role for ENG, Draper pathway, and the innate 
 
 ## Results
 
-## TBI is induced in Drosophila adults by a HIT device
+### TBI is induced in Drosophila adults by a HIT device
 
 To analyze how brains respond to TBI, we applied consecutive strikes to adult flies using a HIT device to induce brain injury as described previously (Katzenberger et al., 2015). To quantify the degree of injury, we analyzed the mortality index at 24 hr after TBI (MI24), defined as the percentage of dead over the total flies tested. Consistent with a previous report (Anonymous, 2013), MI24 of 3-day-old adult flies was 20 ± 3.18% after four HIT strikes (Figure 1A). MI24 after six strikes was 71.88 ± 7.44%, suggesting that increasing the number of strikes results in a higher MI24 rate (Figure 1A). Given that TBI has been shown to disrupt the formation of the BBB in mammals and flies and blood–eye barrier (BEB) in flies (Rodríguez-Baeza et al., 2003; Sangiorgi et al., 2013; Katzenberger et al., 2015; Saikumar et al., 2020), we examined BBB/BEB integrity 2 hr after injecting tetramethylrhodamine-conjugated dextran (molecular weight = 10,000 Da) into adult fly abdominal segments (Bainton et al., 2005). The dye crossed the barrier and penetrated the retina and brain, indicating that both BBB and BEB were disrupted after HIT strikes (Figure 1B−G). The percentage of flies exhibiting dextran-permeable BBB increased as the number of strikes increased from 0 to 6, with six strikes resulting in severe BBB disruption (Figure 1G) but maintaining a moderate viability providing enough samples for phenotypic analysis. Based on these results, six HIT strikes administered at 5 min intervals were applied to induce TBI throughout the present study.
 
@@ -41,11 +41,11 @@ To analyze how brains respond to TBI, we applied consecutive strikes to adult fl
 
 In addition to disruption of BBB/BEB integrity, we also analyzed TBI-induced secondary damage such as local and systemic immune responses. Given that Toll and immune deficiency (Imd) are the two crucial innate immune response pathways in Drosophila (Valanne et al., 2011), and their common downstream genes encode antimicrobial peptides (AMPs) that protect flies from TBI injury (van Alphen et al., 2022), we analyzed the expression of AMPs in adult fly brains at different time points after TBI. As shown by the real-time reverse transcriptase-polymerase chain reaction (RT-qPCR) results, expression of the AMP genes AttC, DiptB, and Mtk was significantly upregulated at 1 hr and reached a peak at 4 hr after injury (Figure 1H), consistent with previous reports (Barekat et al., 2016; Anonymous, 2013). Taken together, these results suggest that HIT strikes induce TBI reflected by BBB/BEB disruption and elevated expression of innate immune response genes.
 
-## TBI induces neuronal but not glial apoptosis in adult fly brains
+### TBI induces neuronal but not glial apoptosis in adult fly brains
 
 Given that neurons and glia have been shown to undergo cell death during both primary and secondary injury responses upon TBI in humans (Ng and Lee, 2019), we performed immunostaining with an antibody against Death caspase-1 (Dcp-1), the homolog of human caspase-3, to detect apoptotic cells in our TBI model. Interestingly, the number of Dcp-1+ puncta was significantly increased in adult fly brains at 24 hr after TBI (Figure 1I and J), with a 2.47-fold increase compared to the number in uninjured controls (Figure 1K). Furthermore, we found that almost all Dcp-1+ puncta were co-localized with Elav rather than Repo, suggesting that neurons but not glia are apoptotic (Figure 1L−M''). These results suggest that, as in mammals, TBI also induces neuronal apoptosis in fruit flies.
 
-## TBI leads to astrocyte activation
+### TBI leads to astrocyte activation
 
 In addition to the TBI-induced neuronal apoptosis mentioned above, glial cells also become reactive after nervous system injury (Burda and Sofroniew, 2014). It has been shown that ENG phagocytose neuronal debris upon axotomy (Doherty et al., 2009), but whether astrocytes respond to TBI remains unknown. To explore the potential role of astrocytes in the TBI response, R86E01-GAL4 (Kremer et al., 2017), an astrocyte-specific driver, was used to express UAS-mCD8::GFP to label astrocyte plasma membrane. In uninjured fly brains, GFP intensities in the cell bodies and processes of astrocytes were widely distributed throughout the brain (Figure 2A and D). While no significant change in GFP intensity was detected in brains at 4 hr after TBI (Figure 2B and D), the GFP intensity was significantly increased and the cell bodies of astrocytes were significantly enlarged at 24 hr after TBI in the central brain region, especially in the antennal lobes (ALs) (Figure 2C and D). Of note, these results were not affected by the presence of one or two UAS transgenes as the efficiency of R86E01-GAL4 in driving the expression of either was comparable as shown by the similar GFP levels (Figure 2A−C, I, and J).
 
@@ -57,19 +57,129 @@ In mammals, the hallmarks of astrocyte activation are hypertrophy of astrocytes 
 
 Axotomy induces expression of injury-related proteins such as extracellular proteases the matrix metalloprotease (MMP) (Purice et al., 2017). In addition to the morphological changes in astrocytes, we observed upregulated expression of Mmp1 in TBI-treated brains (Figure 2I−J’’, M−N’’, and Q). These Mmp1+ signals were colocalized with membrane-bound mCD8::GFP driven by the astrocytes-specific driver R86E01-GAL4 or ENG-specific driver R56F03-GAL4 (Figure 2K, L, O and P), with a more dominant expression in ENG. These results suggest that Mmp1 might be produced from both types of glia after TBI.
 
-## Transcriptional profiling of astrocytes in adult flies reveals elevated expression of injury-related genes upon TBI
+### Transcriptional profiling of astrocytes in adult flies reveals elevated expression of injury-related genes upon TBI
 
 To further investigate how astrocytes respond to TBI, we analyzed transcriptional changes in astrocytes by RNA-seq (Figure 3A). Due to the tiny soma and morphological complexity, the analysis of a purified population of glial cells has been difficult and technically challenging. We have optimized a protocol for purifying astrocytes from adult Drosophila of R86E01-Gal4>UAS-Redstinger by FACS (see details in ‘Materials and methods’). As FACS removes most cell masses and RFP-negative cells, the remaining RFP+ cells are mostly viable, as shown by MitoTracker staining, and purity was 92.96% (RFP+ and MitoTracker+ cells/total cells) in uninjured brains (Figure 3—figure supplement 1A–C’). Further analysis of the RNA-seq data showed that the astrocyte markers Eaat1 (110359 reads) and alrm (186413 reads) were highly expressed, while nSyb, a neuronal marker, was hardly detected (125 reads) at 4 hr after TBI, verifying the purity of FACS-sorted astrocytes. A principal component analysis (PCA) revealed that the variance between different groups (no injury vs. 4 hr and 24 hr after injury) was greater than the variance within groups (Figure 3—figure supplement 1D). From analysis of five biological replicates for each time point (no injury, 4 hr, and 24 hr after injury), we obtained 539 million reads (an average of 36 million reads per sample) and aligned the RNA-seq reads to the Drosophila genome. We found that 93.67 ± 0.89% of reads mapped to the Drosophila genome (dm6 version). Using a cutoff of ≥2-fold differential expression (adj. p-value<0.01, Benjamini–Hochberg procedure), we identified 522 and 357 genes with altered expression at 4 hr (416 upregulated and 106 downregulated) and 24 hr (229 upregulated and 128 downregulated) after injury, respectively (Figure 3B−D; Supplementary file 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig3-v1.jpg)
+
+**Figure 3.:** (A) After dissection, Drosophila brains were disrupted and the cell suspension was subjected to fluorescence-activated cell sorting (FACS). Astrocyte cDNAs were amplified by the Smart-seq2 method and a cDNA library was constructed. A subset of upregulated genes from RNA-seq screening was validated by quantitative real-time PCR. (B, C) Volcano plots of the gene expression analysis; 522 differentially expressed genes (416 upregulated, 106 downregulated) in astrocytes were detected at 4 hr after injury (B), and 357 differentially expressed genes (229 upregulated, 129 downregulated) in astrocytes were detected at 24 hr after injury (C). The threshold for differential expression was set at log2FC = 1 with an adj. p<0.01. FC = fold change; adj. = adjusted (for multiple comparisons by the Benjamin–Hochberg procedure). (D) Heatmap of the expression of a small set of representative genes, including draper, Jra, and kay, previously identified as essential factors during glial clearance of severed axons. (E) Quantitative real-time PCR validation of a subset of upregulated genes from RNA-seq screening. Error bars represent SEM. Results are means ± SEM (*p<0.05, **p<0.01, and ***p<0.001 by Student’s t-tests).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) To discriminate between healthy and damaged or dying cells, side scatter (SSC-A, log) and forward scatter (FSC-A, log) were plotted. Higher SSC-A signals indicate increased granularity and therefore likely dying cells. Thus, one should define the sorting gate as the population with the lower SSC-A signal (P1). (P2) Exclude cell clusters by sorting only events with a low FSC width (FSC-W) versus similar area (FSC-A) signal to get exact single cell. (P3) To gate for RFP+ cells, plotted the signal from the excitation of cells with the 568-nm laser (PE-Texas Red-A, log) against the signal from the SSC-A. The population with the higher PE-Texas Red-A signal was the candidate cells cluster. The strategy for FACS is shown on the lower-right corner. (B–C') A population of cells with strong RFP signal was purified from adult flies of R86E01-Gal4>UAS-Redstinger. (B, B') Confocal images of representative astrocytes before and after sorting by FACS. Scale bar = 50 μm. (C, C') As cell-permeant MitoTracker labels mitochondria of live cells, cells after FACS both labeled by RFP and MitoTracker. Scale bar = 10 μm. (D) A principal component analysis of all biological replicates (uninjured versus injured) revealing genes expressed at absolute value of logarithmic fold change (log2FC) > 1.0.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Scatterplot showing GO functional enrichment results for differentially expressed genes of astrocytes in the brain at 4 hr (A) and 24 hr (B) after injury, p<0.01.
+
 Gene Ontology (GO) analysis of these upregulated genes revealed that a significant proportion were associated with endosomal transport, actin cytoskeleton, and wound healing (Figure 3—figure supplement 2). Furthermore, we detected upregulated expression of components functioning in the innate immune response after TBI. For instance, expression of the components Relish and Dif of the Toll and Imd pathways was upregulated in astrocytes after TBI (Figure 3D), in agreement with a previous finding that Relish is necessary for TBI-induced secondary injuries (Swanson et al., 2020). In addition, expression of injury-related genes including chic, Jra, kay, rl, Cad96Ca, Idgf4, Stam, draper, Pvr, spict, Mmp1 and NijA, and receptor genes including Pvr, draper, AdoR, PGRP-SA, and NimA were upregulated in astrocytes at 4 hr or 24 hr after injury (Supplementary file 3). A set of endocytic trafficking genes was also identified, including Arpc1, Arpc2, cpa, cpb, Stam, and Chmp1. Subsequent RT-qPCR experiments confirmed the upregulation of all six genes tested at 4 hr and/or 24 hr after TBI (Figure 3E), supporting the robustness of the RNA-seq analysis. As a control, the astrocytes-specific alrm gene showed no upregulation upon TBI by RT-qPCR and RNA-seq. Taken together, these findings validate the approach of RNA-seq transcription profiling in detecting genes functionally related to injury responses in astrocytes following TBI.
 
-## Pvr and AP-1 are required for the upregulation of Mmp1 after TBI
+### Pvr and AP-1 are required for the upregulation of Mmp1 after TBI
 
 Among the candidates exhibiting upregulated expression in astrocytes upon TBI, three receptors (Pvr, AdoR, and Draper), all acting upstream of and activating the JNK pathway (Ishimaru et al., 2004; Macdonald et al., 2013; Poernbacher and Vincent, 2018), emerged as new factors with uncharacterized functions in astrocytes (Figure 3D). The Drosophila RNA interference (RNAi) Screening Center Integrative Ortholog Prediction Tool identified orthologs of these three receptors, subunits of transcriptional factor AP-1 (composed of Jra and kay) of the JNK pathway, Mmp1, and endocytic trafficking genes in mouse and human (Table 1; Hu et al., 2011). These proteins mediate essential injury responses in vertebrates (Borea et al., 2016; Motz and Coukos, 2013; Shi et al., 2021). To examine a potential role of the receptors and their downstream signaling components in astrocytes after TBI, we quantified the immunostaining intensity of these proteins from projected images of the whole brain (including 20–30 slices with 1 µm per slice). As our RNA-seq analysis revealed elevated expression of JNK-related injury genes such as AP-1 and Mmp1 (Figure 3D, Table 1), we analyzed the expression of Mmp1, a transcriptional target of AP-1 (Purice et al., 2017), as a readout for the activity of JNK signaling in response to TBI. We found that upregulated Mmp1 expression induced by TBI was potently suppressed by knocking down the expression of Pvr, Jra, or kay (Figure 4A−D, F), indicating that Mmp1 upregulation is mediated by Pvr and AP-1, and predominantly occurs in astrocytes. We note that the location and intensity of Mmp1 signals are variable among different individuals (Figure 4), probably because the brain damage caused by HIT is not stereotypical.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig4-v1.jpg)
+
+**Figure 4.:** (A–F) Knockdown of Pvr, Jra, or kay by R86E01-Gal4-driven RNAi in astrocytes suppresses Mmp1 upregulation after TBI. Scale bar = 100 μm. All images are projections of 25–30 μm immunostaining slices (one image per 1 μm slice). Arrows show Mmp1 signals. (F) Quantification of Mmp1 intensity in different genotypes. Results are means ± SEM (*p<0.05 by Student’s t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B'') Fly brains showing TRE-RFP expression before and 24 hr after TBI. (C–F'') overexpression of Jra or kay in astrocytes shows no apparent changes of RFP and Mmp1 staining signals compared with control flies with or without brain injury (TRE-dsRed/UAS-Jra or kay; R86E01-Gal4/+). Scale bar = 100 μm. (G, H) Knockdown of AdoR in astrocytes inhibits the expression of Mmp1 after TBI. However, Knockdown of AdoR in astrocytes does not inhibit the expression of dsRed. (I, J) Quantification of Mmp1 and dsRed intensity before and after injury in different genotypes. Data are present as means ± SEM; *p<0.05, **p<0.01, ***p<0.001 by Student’s t-tests.
+
+**Table 1.**
+ Upregulated genes related to receptors and endocytosis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genes in Drosophila</th>
+      <th>Conserved genes in mouse</th>
+      <th>Conserved genes in human</th>
+      <th>4 hr after injury(FC)</th>
+      <th>24 hr after injury (FC)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pvr</td>
+      <td>pdgfr/vegfr</td>
+      <td>VEGFR</td>
+      <td>13.83</td>
+      <td>2.79</td>
+    </tr>
+    <tr>
+      <td>AdoR</td>
+      <td>Adora2a</td>
+      <td>ADORA2B</td>
+      <td>37.53</td>
+      <td>7.73</td>
+    </tr>
+    <tr>
+      <td>Mmp1</td>
+      <td>Mmp14</td>
+      <td>MMP14</td>
+      <td>26.35</td>
+      <td>4.79</td>
+    </tr>
+    <tr>
+      <td>Jra</td>
+      <td>Jun</td>
+      <td>JUN</td>
+      <td>3.58</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td>kay</td>
+      <td>FOSL2</td>
+      <td>FOS</td>
+      <td>6.23</td>
+      <td>1.77</td>
+    </tr>
+    <tr>
+      <td>cpa</td>
+      <td>Capza2</td>
+      <td>CAPZA1</td>
+      <td>3.43</td>
+      <td>1.72</td>
+    </tr>
+    <tr>
+      <td>cpb</td>
+      <td>Capzb</td>
+      <td>CAPZB</td>
+      <td>2.01</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Stam</td>
+      <td>Stam2</td>
+      <td>STAM</td>
+      <td>2.14</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <td>Chmp1</td>
+      <td>Chmp1b</td>
+      <td>CHMP1B</td>
+      <td>2.16</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Vps24</td>
+      <td>Chmp3</td>
+      <td>CHMP3</td>
+      <td>2.11</td>
+      <td>0.87</td>
+    </tr>
+  </tbody>
+</table>
+
+_FC: fold change._
+
 Even though flies with Draper knockdown in astrocytes exhibited high mortality, analysis of escapers indicated that Mmp1 upregulation upon TBI was not completely inhibited by Draper knockdown (Figure 4E and F). Knockdown of the other receptor AdoR in astrocytes caused a weak inhibition of AP-1 and Mmp1 upregulation (Figure 4—figure supplement 1A–A'', G–H'', I and J); TRE-dsRed that expresses the red fluorescent protein dsRed under the control of 4×AP-1 motifs (Chatterjee and Bohmann, 2012) was used as a reporter for AP-1 activity. As Pvr showed the strongest regulation on Mmp1 expression among the three receptors (Figure 4, Figure 4—figure supplement 1), we focused on the potential role of Pvr in astrocytes following TBI in the present study. It is noteworthy to mention that although Draper expression was upregulated upon axotomy (MacDonald et al., 2006) and TBI (Figure 3D), inhibiting Draper expression in astrocytes did not suppress the Mmp1 upregulation after TBI (Figure 4E and F). Taken together, these results suggest that Pvr, but not Draper, and AP-1 are required for upregulated Mmp1 in astrocytes after TBI.
 
-## Pvr positively regulates AP-1 signaling and Mmp1 expression in astrocytes after TBI
+### Pvr positively regulates AP-1 signaling and Mmp1 expression in astrocytes after TBI
 
 We next investigated the genetic pathway by which Pvr functions in astrocytes in response to TBI. We examined the activity of AP-1 using the in vivo reporter TRE-dsRed (Chatterjee and Bohmann, 2012). In uninjured brains, we detected low TRE-dsRed levels, suggesting a basal AP-1 activity (Figure 5A–A''). Similar to Mmp1, TRE-dsRed levels were robustly upregulated at 24 hr after TBI, suggesting activation of JNK/AP-1 signaling (Figure 5B–B''). Importantly, TBI-induced expression of TRE-dsRed and Mmp1 was suppressed or further upregulated when inhibiting or overexpressing Pvr expression in astrocytes, respectively (Figure 5C−F''). Overexpression of Jra or kay alone did not affect expression of TRE-dsRed or Mmp1 (Figure 4—figure supplement 1A–F'', I and J), suggesting that overexpressing a single subunit of the AP-1 complex is not sufficient to upregulate AP-1 activity. While Pvr overexpression caused an increase in TRE-dsRed and Mmp1 expression levels, Jra or kay RNAi knockdown in the background of Pvr overexpression suppressed the increase (Figure 5G–L), indicating that Jra and kay act downstream of Pvr to mediate the injury response upon TBI. These results together show that Pvr is a receptor acting upstream of AP-1 signaling that promotes Mmp1 expression during the injury response in astrocytes (Figure 5M).
 
@@ -77,13 +187,13 @@ We next investigated the genetic pathway by which Pvr functions in astrocytes in
 
 **Figure 5.:** (A−B'') Adult brains showing increased TRE-dsRed (an AP-1 reporter) expression at 24 hr after TBI. (C−D'') Overexpression of Pvr in astrocytes leads to upregulated dsREd expression compared with control flies. Scale bar = 100 μm. (E−F'') Knockdown of Pvr in astrocytes causes downregulation of dsRed expression compared with control flies after TBI. (G−H'') Overexpression of Pvr and knockdown of Jra at the same time in astrocytes causes downregulation of dsRed and Mmp1 after TBI compared with controls. (I−J'') Overexpression of Pvr and knockdown of kay in astrocytes at the same time causes downregulation of dsRed and Mmp1 after TBI compared with controls. (K, L) Quantification of Mmp1 (K) and dsRed (L) intensity. Results are means ± SEM. **p<0.01, ***p<0.001, Student’s t-tests.
 
-## Disruption of endocytosis and endocytic trafficking enhances Pvr, AP-1, and Mmp1 upregulation upon TBI
+### Disruption of endocytosis and endocytic trafficking enhances Pvr, AP-1, and Mmp1 upregulation upon TBI
 
 How was the Pvr signaling induced by TBI regulated? It has been shown that VEGFR2 endocytosis proceeds in a clathrin-dependent manner (Simons et al., 2016). During clathrin-dependent endocytosis, scission needs Cdc42-interacting protein 4 (Cip4) to recruit dynamin and Wiskott–Aldrich syndrome protein (WASp), the activator of the Arp2/3 complex that mediates actin polymerization and promotes the movement of newly formed clathrin-coated vesicles (Brüser and Bogdan, 2017). VEGFRs are transmembrane RTKs that are activated when they locate at the cell membrane (Simons et al., 2016). We first investigated whether endocytosis is involved in Pvr signaling upon TBI. Shibire (shi) encodes a GTPase called dynamin that is responsible for fission of the vesicle from the membrane (van der Bliek and Meyerowitz, 1991). We analyzed the effect of endocytosis on Pvr signaling by blocking the activity of dynamin with a temperature-sensitive mutant, shits, in astrocytes. Interestingly, both Pvr (Figure 6A, B and E) and TRE-dsRed (Figure 6C, D and F) intensities were increased at 4 hr after TBI when dynamin activity was blocked at the non-permissive 32°C. As a control, expression of nLacZ under the same conditions as mutated dynamin did not exhibit a significant difference in the intensities of Pvr and TRE-dsRed at the permissive 23°C and the non-permissive 32°C after TBI (Figure 6A, B, E and F). These results suggest that Pvr signaling is facilitated when endocytosis is blocked.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87258/elife-87258-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Representative Pvr immunostaining (green), dsRed (magenta), and β-gal intensity (gray) in control animals (TRE-dsRed;R86E01-Gal4>UAS-nLacZ) at 4 hr after TBI. All images are projections of 25–30 μm immunostaining slices (one image per 1 μm slice). (C, D) Representative Pvr immunostaining (green), dsRed (magenta), and Mmp1 intensity (gray) in shi-expressing animals (TRE-dsRed;R86E01-Gal4>tsUAS-shi) at 4 hr after TBI. For thermogenetic inactivation of dynamin, flies after TBI were incubated at intermittent temperature at 32°C (32°C for 30 min, and then back to 23°C for 30 min, for four rounds, 4 hr in total) until dissection. (tsE, F) Quantification of Pvr and dsRed intensity in different genotypes. Results are means ± SEM (*p<0.05).
+**Figure 6.:** (A, B) Representative Pvr immunostaining (green), dsRed (magenta), and β-gal intensity (gray) in control animals (TRE-dsRed;R86E01-Gal4>UAS-nLacZ) at 4 hr after TBI. All images are projections of 25–30 μm immunostaining slices (one image per 1 μm slice). (C, D) Representative Pvr immunostaining (green), dsRed (magenta), and Mmp1 intensity (gray) in shits-expressing animals (TRE-dsRed;R86E01-Gal4>UAS-shits) at 4 hr after TBI. For thermogenetic inactivation of dynamin, flies after TBI were incubated at intermittent temperature at 32°C (32°C for 30 min, and then back to 23°C for 30 min, for four rounds, 4 hr in total) until dissection. (E, F) Quantification of Pvr and dsRed intensity in different genotypes. Results are means ± SEM (*p<0.05).
 
 In addition to Pvr, results from our transcription profiling analysis also revealed upregulation of the expression of actin dynamics and endocytic trafficking genes including Arpc2, cpa, and cpb following TBI (Supplementary files 1 and 2). To explore whether endocytic trafficking genes are involved in the injury response in astrocytes, we analyzed Mmp1 and TRE-dsRed expression when inhibiting the expression of Arpc2, cpa, or cpb. Interestingly, TBI-induced Mmp1 levels were further increased after knockdown of each of the three (Figure 7A–D and O); consistently, TRE-dsRed expression was also increased after knockdown of cpa or cpb (Figure 7H–K and P). These results indicate that genes involved in endocytosis and endocytic trafficking normally inhibit induction of AP-1 and Mmp1 by TBI in astrocytes.
 
@@ -113,46 +223,46 @@ Considering the importance of VEGF signaling in a variety of cellular processes,
 
 ## Materials and methods
 
-## Drosophila stocks and husbandry
+### Drosophila stocks and husbandry
 
 Flies were maintained on standard cornmeal medium at 25°C otherwise indicated. The following Drosophila strains were used: w1118, UAS-mCD8::GFP, R86E01-Gal4 (#45914; Bloomington), R54F03-Gal4 (#39157; Bloomington), UAS-Redstinger (#8547; Bloomington), UAS-Jra (#7216; Bloomington), UAS-kay (#7213; Bloomington), UAS-Pvr (#58429; Bloomington), UAS-nLacZ (#3955, Bloomington), PCNA-GFP (#25749; Bloomington) (Thacker et al., 2003), and TRE-dsRed (Chatterjee and Bohmann, 2012). UAS-draper-RNAi, UAS-Pvr-RNAi, UAS-Jra-RNAi, UAS-kay-RNAi, UAS-Arpc2-RNAi, UAS-cpa-RNAi, UAS-cpb-RNAi, UAS-Stam-RNAi, UAS-Vps24-RNAi, and UAS-Chmp1-RNAi flies were obtained from Tsinghua Fly Center (https://thfc.zzbd.org/en). yw UAS-CD8::GFP hs-FLP; tubP-Gal80 FRT-40A/CyO; alrm-Gal4 UAS-CD8::GFP UAS-Dcr2/TM6 Tb Hu (alrm-Gal4 is a specific driver in astrocytes [Doherty et al., 2009], a gift from Oren Schuldiner) and FRT-40A (a gift from Liqun Luo) were used for MARCM analysis of astrocytes. UAS-shibirets1 (Pfeiffer et al., 2012) was provided by Y. Zhong at Tsinghua University.
 
-## TBI assay
+### TBI assay
 
 Construction and use of the HIT device were described previously (Anonymous, 2013). Deflection of the spring to 90° was the standard angle for strike. Mortality index at 24 hr (MI24) was determined by analyzing at least 120 flies (20 flies for each test).
 
-## Dye penetration assay
+### Dye penetration assay
 
 Dye penetration experiments were performed as previously described (Bainton et al., 2005). 10 kD Texas red-conjugated dextran (Molecular Probes) at 2.5 mM was injected into the soft tissue between two abdominal segments of the exoskeleton of flies with and without TBI. Flies were allowed to recover in fresh food tubes and photographed 2 hr later on a Zeiss microscope to detect the integrity of BEB. To detect the integrity of BBB, fly brains were dissected at 2 hr after injection and examined under an Olympus FluoView FV1000 microscope.
 
-## MARCM analysis
+### MARCM analysis
 
 MARCM analysis in astrocytes was carried out largely following previous publications (Jia et al., 2019; Lee and Luo, 1999). Specifically, newly laid eggs were collected for a 4–5 hr interval and cultured at 18°C. Clones were induced by heat shock at 24 hr after larval hatching in a 37°C water bath for 15 min and flies were raised at 25°C after heat shock until immunohistochemistry analysis of adult brain.
 
-## Immunohistochemistry analysis and confocal microscopy
+### Immunohistochemistry analysis and confocal microscopy
 
 Brain tissues were dissected out from adult after specific treatments. Fixation and staining of adult brains were performed as previously described (Jia et al., 2019). Brains were mounted on slides in Vectashield mounting media (Vector Labs). Primary antibodies were used at the following dilutions: chicken anti-GFP (ab13970, Abcam) at 1:1000, mouse anti-Repo (8D12, DSHB) at 1:100, mouse anti-Elav (9F8A9, DSHB) at 1:100, mouse anti-Mmp1 (3A6B4, 3B8D12, and 5H7B11, DSHB) each at 1:20 for all three antibodies, rabbit anti-Pvr (McDonald et al., 2003) at 1:1000, rabbit anti-Dcp-1 (Asp216, Cell Signaling Technology [CST]) at 1:100, rabbit anti-pH3 (06–570, Millipore) at 1:1000, and mouse anti-β-gal (40-1a, DSHB) at 1:100. All secondary antibodies (Alexa Fluor 488, 568, or 633 labeled; Molecular Probes) were used at a dilution of 1:1000. The nuclei dye To-Pro-3 Iodide (T3605, Thermo Fisher) was also used at a dilution of 1:1000. The cell-permeant MitoTracker (M22426, Thermo Fisher) was used at a concentration of 100 nM. For soma diameter analysis, we measured the average of long and short axes of astrocytes. All images were collected using an Olympus FV1000 laser scanning confocal microscope and processed with ImageJ. Serial images of 25–30 μm (one image per 1 μm slice) were projected for presentation and statistical analysis.
 
-## Astrocyte preparation for RNA-seq analysis
+### Astrocyte preparation for RNA-seq analysis
 
 Flies were collected at 3 days after eclosion and treated with TBI. Brains from adult flies (R86E01-Gal4/UAS-Redstinger) with no injury, 4 hr after injury, and 24 hr after injury were dissected out in freshly prepared adult hemolymph saline (AHS) buffer, as previously described (Yang et al., 2016). Briefly, a total of ∼50 brains for each group was immediately transferred to an Eppendorf tube (1.5 mL) containing 200 µL AHS with Pronase (1 mg/mL; P5147, Sigma-Aldrich) and Dispase (1 mg/mL; LS02104, Worthington Biochemical Corporation). After tissue digestion for 30 min at 25°C, the enzyme medium was removed, followed by two brief, gentle washes with fresh AHS containing 2% PBS. Brain samples were then triturated by gently pipetting in 1 mL AHS through four fire-polished Pasteur pipettes with descending pore sizes (400 μm, 300 μm, 200 μm, and 100 μm) for a total of ∼20 min. Next, the dissociated cells were centrifuged for 10 min at 100 × g and the AHS was replaced with the same buffer to minimize any RNA content released from damaged cells during the trituration process. Finally, dissociated tissues were filtered through 45 μm filter and then put on ice. FACS sorting was performed according to the following gating procedure with 70 μm nozzle by BD FACS Aria: (1) an initial SSC-A/FSC-A gate to minimize debris; (2) an SSC-A/pe-Texa Ted-A gate to choose only red fluorescence positive cells. At this step, 1600 cells were sorted directly into ice-cold cell lysis buffer (oligo-dT30VN primer, ribonuclease inhibitor, dNTP mix) and stored at –80°C until all samples were ready for RNA extraction and cDNA amplification.
 
-## cDNA library preparation
+### cDNA library preparation
 
 A total of five biological replicates were collected for each condition (no injury, 4 hr after injury, and 24 hr after injury). Cell samples were sent to the Anoroad Company for RNA extraction. An Oligo-dT primer was introduced to the reverse transcription reaction for first-strand cDNA synthesis, followed by PCR amplification to enrich the cDNA and magbeads purification step was used to purify the products. Briefly, Smart-Seq2 method was used to amplify cDNA. Concentration and integrity of cDNA were assessed using Qubit 3.0 Flurometer (Life Technologies) and Agilent 2100 Bioanalyzer (Agilent Technologies) to ensure the cDNA length was around 1–2 kbp. After quality control, 40 ng cDNA was used to be fragmented at 350 bp by Bioruptor Sonication System (Diagenode Inc). To construct Illumina library, end repair, 3’ ends A-tailing, adaptor ligation, PCR amplification, and library validation were performed. PerkinElmer LabChip GX Touch and Step OnePlus Real-Time PCR System were used for library quality inspection. Qualified libraries were loaded on Illumina Hiseq platform for PE150 sequencing.
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 A total of 539 million reads (average 35.9 million reads per sample) was obtained. The fastq data were first processed with Trimmomatic (Bolger et al., 2014) to remove Illumina adaptor. The remaining data was aligned against the UCSC D. melanogaster genome (dm6) using Hisat2 (Anonymous, 2013; Kim et al., 2019; Pertea et al., 2016) with the annotation file of the same version. On average, 92% of the initial reads were mapped to dm6. HTSeq was used to calculate the raw read counts of genes for each sample. DESeq2 (Love et al., 2014) was used to normalize the data. Transcripts were considered as significantly differentially expressed if their adjusted p-values were less than 0.01 (p<0.01) by the Benjamini–Hochberg method. Following normalization of the data, DESeq2 was used to perform pairwise comparisons between the control and experimental groups using parametric tests. Genes with absolute value of logarithmic fold change (log2FC) > 1.0 were qualified for the final set of DEGs. Volcano plots and heatmap were constructed for visualization of the resulting expression intensity data following the identification of DEGs and RNA-seq data normalization by the adjusted pvalue calculations.
 
-## Quantitative reverse transcription-PCR analysis
+### Quantitative reverse transcription-PCR analysis
 
 RT-qPCR was performed largely based on previous protocols (Zhao et al., 2020). Flies were treated with the same conditions as the RNA-seq experiment.RNA for AMPs analysis was extracted from whole fly brains by TriZol. RNA for confirming RNA-seq findings was isolated from more than 10,000 astrocytes sorted by FACS using the PicoPure RNA isolation kit (KIT0204, Life Technologies). cDNA was generated with SuperScript III First-Strand Synthesis SuperMix (11752250, Invitrogen). For each gene, at least three pairs of qPCR primers were screened by standard curve analysis, and the best primer pairs were chosen based on their efficiency and specificity. Real-time qPCR was carried out by KAPA Library Quantification Kit (KR0389, KAPA Biosystems). Primer sequences are provided in Supplementary file 1.
 
-## Thermogenetic inhibition of endocytosis
+### Thermogenetic inhibition of endocytosis
 
 For inhibition of endocytosis in astrocytes using UAS-Shits, crosses were reared and treated by HIT device at 23°C to avoid unintended inactivation. For thermogenetic inactivation, flies after TBI underwent intermittent temperature treatment at 32°C (32°C for 30 min, and then back to 23°C for 30 min, for four rounds, 4 hr in total) until dissection.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical comparisons were performed using GraphPad Prism software, with significance indicated by ∗∗∗p≤0.001, ∗∗p≤0.01, ∗p≤0.05, and ns, p>0.05. One-way ANOVA was used to compare multiple group means. Student’s t-tests were used for statistical comparisons between the two groups.

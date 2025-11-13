@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02dgjyy92 Department of Physiology and Biophysics, University of Miami Miami United States
-2. https://ror.org/05ynxx418 Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden
-3. https://ror.org/03rmrcq20 Department of Anesthesiology, Pharmacology and Therapeutics, University of British Columbia Vancouver Canada
-4. https://ror.org/04ycpbx82 School of Life Sciences, University of Westminster London United Kingdom
-5. https://ror.org/03yjb2x39 Department of Biological Sciences and Centre for Molecular Simulation, University of Calgary Calgary Canada
+1. Department of Physiology and Biophysics, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+2. Department of Biomedical and Clinical Sciences, Linköping University Linköping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))
+3. Department of Anesthesiology, Pharmacology and Therapeutics, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+4. School of Life Sciences, University of Westminster London United Kingdom ([ROR:04ycpbx82](https://ror.org/04ycpbx82))
+5. Department of Biological Sciences and Centre for Molecular Simulation, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ The voltage-gated K+ channel KCNQ1, also referred to as Kv7.1, is expressed in t
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig1-v1.jpg)
 
-**Figure 1.:** (A) (Black) Prolonged QT interval in the ECG is due to, for example, loss-of-function mutations of KCNQ1/KCNE1 channels that generate the IKs current that normally contributes to the repolarizing phase of the ventricular action potential (AP). (Red) PUFAs are potent activators of KCNQ1/KCNE1 channels that can restore the normal functioning of the channel and restore the AP duration and the QT interval. (B) Representative current traces of KCNQ1/KCNE1 in 0 μM and 20 μM of Lin-Glycine. Voltage protocol on top. (C) Conductance versus voltage curves from tail currents (measured at arrows in B). Channel activation by PUFA results in two main effects: a shift of the voltage dependence of activation (ΔV0.5) and an increase in the channel maximum conductance (ΔGmax). (D) KCNQ1 transmembrane topology. Residues mutated in this study are labeled. (E) KCNQ1 top view (PDB: 6UZZ) with PUFA binding sites: Site I, at the voltage sensor domain (VSD); and Site II, at the pore domain. The four subunits are shown in four different colors. (F) Cartoon of PUFA mechanism of action. Site I, top panel. Electrostatic interactions between PUFA head groups and positively charged residues in S4 facilitate channel activation by stabilizing the outward state of S4. Site II, bottom panel. PUFA interaction with residues in the pore domain facilitates the increase in the maximum channel conductance.Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) (Black) Prolonged QT interval in the ECG is due to, for example, loss-of-function mutations of KCNQ1/KCNE1 channels that generate the IKs current that normally contributes to the repolarizing phase of the ventricular action potential (AP). (Red) PUFAs are potent activators of KCNQ1/KCNE1 channels that can restore the normal functioning of the channel and restore the AP duration and the QT interval. (B) Representative current traces of KCNQ1/KCNE1 in 0 μM and 20 μM of Lin-Glycine. Voltage protocol on top. (C) Conductance versus voltage curves from tail currents (measured at arrows in B). Channel activation by PUFA results in two main effects: a shift of the voltage dependence of activation (ΔV0.5) and an increase in the channel maximum conductance (ΔGmax). (D) KCNQ1 transmembrane topology. Residues mutated in this study are labeled. (E) KCNQ1 top view (PDB: 6UZZ) with PUFA binding sites: Site I, at the voltage sensor domain (VSD); and Site II, at the pore domain. The four subunits are shown in four different colors. (F) Cartoon of PUFA mechanism of action. Site I, top panel. Electrostatic interactions between PUFA head groups and positively charged residues in S4 facilitate channel activation by stabilizing the outward state of S4. Site II, bottom panel. PUFA interaction with residues in the pore domain facilitates the increase in the maximum channel conductance.
 
 Like other Kv channels, KCNQ1 has a typical tetrameric structure of four α-subunits. Each α-subunit is composed of six transmembrane segments, with S1-S4 forming the voltage sensor domain (VSD) and S5-S6 forming the pore domain (PD) (Figure 1D). However, the KCNQ1/KCNE1 channel complex has a very small single-channel conductance and a very low open probability compared to other Kv channels (Werry et al., 2013). The mechanisms behind the small conductance and low open probability are not understood.
 
@@ -46,25 +46,85 @@ Although previous studies have shown the importance of K326 for PUFA in increasi
 
 ## Results
 
-## Lin-Glycine drastically increases the chance of KCNQ1/KCNE1 channel opening
+### Lin-Glycine drastically increases the chance of KCNQ1/KCNE1 channel opening
 
 Lin-Glycine has been shown to increase the Gmax in whole-oocyte recordings of KCNQ1/KCNE1 channels 2.5-fold (Bohannon et al., 2020). To better understand how Lin-Glycine increases Gmax, we here extended our analysis to the single-channel level to study the behavior of KCNQ1/KCNE1 in the absence and presence of Lin-Glycine (20 µM) (Figure 2). Representative traces (Figure 2A and B) and all points histograms (Figure 2C and D) suggest that there is no change in single-channel conductance between KCNQ1/KCNE1 in control and with Lin-Glycine. This shows that the Gmax effect is not due to an increase in the single-channel conductance. However, Lin-Glycine caused a decrease in the latency to first opening (in control, 1.78 ± 0.36 s, n = 41 sweeps and after 20 µM Lin-Glycine, 1.03 ± 0.05 s, n = 99 sweeps; p=0.0025) and an increase in the number of non-empty sweeps (Figure 2—figure supplement 1). In control, there are a high number of empty sweeps as shown before for KCNQ1/KCNE1 channels (Werry et al., 2013). The average current during the single-channel sweeps was increased by 2.3 ± 0.33 times (n = 4 patches, p=0.006) by the application of Lin-Glycine (Figure 2E). The number of non-empty sweeps increased 2.85-fold (2.85 ± 0.85, n = 200 sweeps from four patches; p=0.001), going from a total of 41/200 non-empty sweeps in control to 99/200 when Lin-Glycine was applied. In contrast, once the channel opens, it seems to behave very similarly in control and Lin-Glycine because, in non-empty sweeps, the open probability (Po) in the last second of the traces was almost identical between control and Lin-Glycine conditions (Po = 0.78 ± 0.02 [n = 8 sweeps] in control vs 0.87 ± 0.04 [n = 8 sweeps] in Lin-Glycine) (Figure 2F). This high open probability was maintained in control conditions even for longer depolarizing voltage pulses, as if once the channels had opened they stayed open for the remaining of the voltage steps (Figure 2—figure supplement 2). The 2.85-fold increase in the number of non-empty sweeps is very similar to the Gmax increase seen in macroscopic currents.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Ten consecutive traces of KCNQ1/KCNE1 in (A) control and (B) in the presence of Lin-Glycine (20 μM). (Top) Protocol used for the recordings. (C, D). All-point amplitude histogram of 50 consecutive traces in (C) control and (D) Lin-Glycine. Note no change in the single-channel current amplitude; however, an increase in the number of sweeps with channel opening is observed. Note that there were at least two channels in this patch. Different sweeps were assigned different colors to better visualize different types of channel behaviors. Note panels (A–D) are all from the same patch. (E) Average currents of 100 sweeps in control and Lin-Glycine. (F) All-point histogram of the last second of non-empty sweeps in control and in Lin-Glycine. We estimated the open probability from the all-point amplitude histogram by Po = Sum (iN/(iestimateNtotal)), where N is the number of points for a specific current i in the histogram, iestimate = 0.4 pA from the peak of the histogram, and Ntotal = 10,000 is the total number of points in the last second of the trace. p=0.78 ± 0.02 (n = 8 sweeps) and p=0.87 ± 0.04 (n = 8 sweeps) for Control and Lin-Glycine, respectively, from the same patch.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Ten consecutive traces of KCNQ1/KCNE1in response to 20-s-long voltage steps in control solutions. (Top) Protocol used for the recordings. (B) Average currents of 57 sweeps in control solution.
+
 The decrease in first latency is most likely due to an effect of Lin-Glycine on Site I in the VSD and related to the shift in voltage dependence caused by Lin-Glycine. In contrast, the increase in the number of non-empty sweeps is most likely an effect on Site II in the pore and related to the Gmax effect. We conclude that the Gmax effect of Lin-Glycine on KCNQ1/KCNE1 is mainly due to an increase in the Po by increasing the number of non-empty sweeps.
 
-## Crevice residues affect PUFA ability to increase Gmax
+### Crevice residues affect PUFA ability to increase Gmax
 
 It was previously shown that PUFAs binding at Site II electrostatically interact with the positively charged residue K326, located just outside the selectivity filter (Liin et al., 2018). We tested whether another residue very close to K326, the aspartic acid at position 301, is important for the PUFA interaction at Site II. Electrophysiological analysis revealed that when KCNQ1_WT/KCNE1 was mutated to KCNQ1_D301E/KCNE1, the ΔV0.5 was shifted similarly to the WT channel (Figure 3—figure supplement 1) but a dramatic decrease of the Gmax effect of Lin-Glycine was observed, showing the importance of this residue for PUFAs interaction at Site II (Figure 3A–C). However, it is not clear how PUFA binding at Site II increases Gmax.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) KCNQ1_D301E/KCNE1 representative current traces (A) in 0 μM of Lin-Glycine. (B) After perfusion of 20 μM of Lin-Glycine. (C) Gmax/Gmax0 for KCNQ1/KCNE1 channels and KCNQ1_D301E /KCNE1 channels. Gmax/Gmax0 was significantly reduced for the D301E mutation compared to WT channels (p=0.0018, n = 4 oocytes). Student’s t-test was used to conduct statistical analysis. (D–F) Structures of crevice between S5 and S6 in KCNQ1 with S4 activated (S4 up) (D, E) and S4 resting (S4 down) (F). Residues that surround the crevice from S6 shown in blue (K326, T327, S330, V334) and from the pore helix and S5 in red (D301, A300, L303, F270). Remaining KCNQ1 residues shown in light gray. On the left is shown the location of the crevice in KCNQ1 (top) side view and (bottom) top view. (D) In MD simulations (Yazdi et al., 2021), linoleic acid (LIN: gold color) fits in a narrow crevice present in the cryoEM structure of activated state KCNQ1. (E) Same view as in (D) but without LIN. (F) In the cryoEM structure with S4 in the resting state, the crevice between K326 and D301 is too narrow to fit LIN.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** A similar shift in the voltage dependence of activation was found for KCNQ1_D301E/KCNE1 and KCNQ1/KCNE1 after perfusion of several concentrations of Lin-Glycine. Comparisons at 20 μM of Lin-Glycine revealed no significant difference between the effect seen in KCNQ1/KCNE1 and KCNQ1_D301E (p=0.52; n = 3 oocytes).
+
 In our previous MD simulations (Yazdi et al., 2021) based on the cryoEM structure of KCNQ1 with S4 in the activated state, PUFA binds to residues K326 and D301 at Site II that delimit a narrow crevice (Figure 3D and E), where PUFA could fit with both the head and the tail (Figure 3D and E). However, in the recent cryoEM structure of KCNQ1 with S4 in the resting state (Mandala and MacKinnon, 2023) the crevice between K326 and D301 is now so narrow that PUFA seems unable to fit into it (Figure 3F). In addition, there are large rearrangements in the selectivity filter when comparing the cryoEM structures with S4 activated (PDB: 8SIK) and S4 resting (PDB: 8SIN) (Figure 4). We have made a video showing the changes and the reorganization of the pore between these two structures (Video 1). The conformation of the pore significantly varies between what seems like a conductive (PDB: 8SIK) and a non-conductive (PDB: 8SIN) state of the channel. For example, in the structure with S4 in the resting state, Y315 and D317 have swung outward and left their positions in which they made hydrogen bonds with two tryptophans, W305 and W304, respectively. Y315 belongs to the K+ channels signature sequence, a stretch of eight amino acids including TXXTXGYG, highly conserved among K+ channels of different families and D317 is just next to this sequence (Sansom et al., 2002; Heginbotham et al., 1994). W304 and W305 belong to the aromatic ring cuff (Figure 4C and D) that has been suggested to be important for the stability of the open state of the selectivity filter in Kv channels (Doyle et al., 1998; Larsson and Elinder, 2000).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-v1.jpg)
+
+**Figure 4.:** (A) Selectivity filter of KCNQ1 with S4 activated (S4 up; PDB: 8SIK). Distances between D317 and W304 and between T309 and Y315 are short enough to form hydrogen bonds (dashed lines). (B) Selectivity filter of KCNQ1 with S4 in resting state (S4 down; PDB: 8SIN). Distances between D317 and W304 and between T309 and Y315 are too long for hydrogen bonds (dashed lines). Only two subunits are shown for clarity. (C, D). Aromatic cuff in KCNQ1 with (C) S4 activated and (D) resting S4. Note how P320 (red) moves away from its position in between W304 and W305 from two different subunits in the S4 down conformation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Each vector (shown in orange) starts from the position of a given atom in the up state (PDB ID 8SIK) and points to the position of the same atom in the down state (PDB ID 8SIN). (A) Displacement of the Ca atoms of residues 298–341 is shown in orange if greater than 2 Å. The side chain of such residues is shown as sticks. (B) Displacement of the side chains of residues 298–341. The side chain of residues W304, W305, T309, I313, Y315, D317, K318, V319, P320, K326 are highlighted as sticks and atoms are colored based on the atomic displacement values. Scale bar is in Å. In (A, B), for clarity, only one monomer of the up state of KCNQ1 is shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Displacement of the Ca atoms of residues 298–341 is shown if greater than 2 Å. (A) Displacement of atoms (Å) before the selectivity filter; (B) residues of the selectivity filter; and (C) residues located just outside the selectivity filter region.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) In Shaker, P450 sits in between the two tryptophan and stabilizes the aromatic ring cuff. (B) In contrast, in KCNQ1 the P320 is positioned further outward and away from the two tryptophan, generating a looser arrangement of the aromatic ring cuff.
+
+![Video 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-video1.mp4.jpg)
+
+**Video 1.:** Interpolation between the cryoEM structures of Kv7.1 with S4 in the activated conformation (PDB 8SIK) and S4 in the resting conformation (PDB SIN) showing the position of residues W304, W305, T309, Y315, and D317 that are important for the stability of the selectivity filter in related Kv channels. Dashed lines between residues proposed to make hydrogen bonds in Kv channels.
 
 In addition, P320, which in the structure with an activated S4 sits in between W304 and W305 from two subunits (Figure 4C), has also swung outward in the structure with S4 in the resting state and exposed a gap between W304 and W305 in the aromatic cuff (Figure 4D, see also Video 2). The homologous proline in other Kv channels sits between the two tryptophans and stabilizes the aromatic ring cuff. Figure 4—figure supplements 1 and 2 show the extent of the movement for each residue in the selectivity filter and nearby regions between the two conformations.
 
+![Video 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-video2.mp4.jpg)
+
+**Video 2.:** Interpolation between the cryoEM structures of Kv7.1 with S4 in the activated conformation (PDB 8SIK) and S4 in the resting conformation (PDB SIN) showing the position of the aromatic cuff residues W304, W305, and P320 (red) that are important for the stability of the selectivity filter in related Kv channels.
+
 Based on our single-channel data with many empty sweeps, we propose the hypothesis that the KCNQ1 selectivity filter is inherently unstable and transitions between the two conformations – one conductive state that generates the non-empty sweeps and one non-conductive state that generates the empty sweeps in the single-channel data. We further propose that PUFA binding to residues at Site II stabilizes and promotes the conductive state of the pore. If PUFA binding to K326 and D301 promotes a series of interactions that stabilize the pore, then residues at the upper part of the selectivity filter, such as Y315 and D317, might be involved in those interactions that promote an open-conductive conformation of the channel.
 
-## Residues that stabilize the selectivity filter are necessary for the Gmax effect
+### Residues that stabilize the selectivity filter are necessary for the Gmax effect
 
 If our pore stability hypothesis is correct, we should see altered effects of Lin-Glycine on Gmax when residues important for the PUFA-promoted open-conductive conformation are mutated. We therefore made the mutations Y315F and D317E in KCNQ1. We tested Lin-Glycine on KCNQ1_Y315F/KCNE1 and KCNQ1_D317E/KCNE1 channels and compared the Gmax effect to that of the WT channel. The effect of Lin-Glycine was reduced on both mutant channels, with a particularly dramatic decrease for Y315F (Figure 5A). For KCNQ1_Y315F/KCNE1, we compared the effect on the voltage dependence of activation (ΔV0.5) and we observed a similar effect as for the WT channel (Figure 5—figure supplement 1), with both showing an ~–25 mV shift. We also tested the Y315F mutation at the single-channel level. As expected, Lin-Glycine did not increase the number of non-empty sweeps in KCNQ1_Y315F/KCNE1 channels (52/478 [10.9 % from three patches] of traces were non-empty in control and 44/533 [8.3% from three patches] of traces were non-empty in Lin-Gly) (Figure 6, Figure 6—figure supplement 1). The mutation Y315F reduced the single-channel current slightly from I = 0.4 pA in wildtype to I = 0.3 pA in the Y315F mutation (Figure 6C and D). The current average of all traces showed no increase in average current by Lin-Glycine (Figure 6E). This data shows that Y315 and D317 are necessary for the ability of Lin-Glycine to increase Gmax. Conductance vs voltage curves (G–V) for WT and mutant channels are shown in Figure 5—figure supplement 2.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-v1.jpg)
+
+**Figure 5.:** (A) Gmax/Gmax0 values obtained for KCNQ1_WT/KCNE1 channel (black) and mutant channels. KCNQ1_Y315F/KCNE1 (red), KCNQ1_D317D/KCNE1 (blue), KCNQ1_T309S/KCNE1 (green), and KCNQ1_P320L/KCNE1 (purple), the Gmax/Gmax0 is significantly reduced (p<0.0001 n = 4 oocytes). One-way ANOVA with Dunnett’s post hoc multiple-comparisons test was used for statistical analysis. (B) Gmax/Gmax0 values for KCNQ1_T312C/KCNE1 and KCNQ1_I313S/KCNE1 (p=0.14 and p=0.10, respectively) (n = 3 oocytes). One-way ANOVA with Dunnett’s post hoc multiple-comparisons test was used for statistical analysis. (C, D) Top view and side view of KCNQ1 channel with mutated residues highlighted.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** A similar effect in shifting the voltage dependence of activation was found for KCNQ1_Y315F/KCNE1 and KCNQ1/KCNE1 after perfusion of several concentrations of Lin-Glycine. Comparisons at 20 μM of Lin-Glycine revealed no significant difference between the effect seen in KCNQ1/KCNE1 and KCNQ1_Y315F (p=0.7435; n = 4 oocytes).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** GV curves in control (black) and after perfusion of 20 μM of Lin-Gly (red) for (A) KCNQ1_D301E/KCNE1, (B) KCNQ1_Y315F/KCNE1, (C) KCNQ1_P320L/KCNE1, (D) KCNQ1_T309S/KCNE1, (E) KCNQ1_D317E/KCNE1, (F) KCNQ1_I313S/KCNE1, and (G) KCNQ1_T312S/KCNE1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Ten consecutive traces of KCNQ1_Y315F/KCNE1 in (A) control and (B) in the presence of 20 μM Lin-Glycine. (Top) Protocol used for the recordings. (C, D) All-point amplitude histogram of 50 consecutive traces in (C) control and (D) Lin-Glycine. The single-channel current amplitude was reduced to 0.3 pA compared to 0.4 pA for WT KCNQ1/KCNE1 (Figure 2C and D). Note that there were at least two channels in this patch. (E) Average currents of 478 sweeps in control and 533 sweeps in Lin-Glycine. Note that panels (A–D) were all from the same patch.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig6-figsupp1-v1.jpg)
 
 We also found that another residue in the pore helix, T309, was important for the Gmax effect of Lin-Glycine. The homologous residue in the Shaker channel was earlier suggested to be important for the stabilization of the selectivity filter by hydrogen bonding to one of the tryptophans in the aromatic ring (Pless et al., 2013). We generated the mutant channel KCNQ1_T309S/KCNE1 and measured the effect of Lin-Glycine. As shown in Figure 5, the effect of Lin-Glycine on Gmax of the KCNQ1/KCNE1 mutant channel was noticeably reduced compared to the WT channel showing that this residue contributes to the Gmax effect (Figure 5A). We also tested the involvement of proline, which makes up a part of the aromatic cuff in the activated state of the channel (Figure 4C) by creating the mutant channel KCNQ1_P320L/KCNE1 and found a significant reduction of the Gmax effect for this mutant (Figure 5A). All these data suggest that mutations of residues at the outer portion of the selectivity filter do affect the Gmax increase by Lin-Glycine. These data are consistent with our hypothesis that PUFAs increase the Gmax by affecting interactions that stabilize the selectivity filter.
 
@@ -90,25 +150,33 @@ Our single-channel data show that the KCNQ1/KCNE1 switches slowly (>10 s) betwee
 
 ## Materials and methods
 
-## Molecular biology
+### Molecular biology
 
 KCNQ1 (UniProt: P51787) and KCNE1 (UniProt: P15382) cRNA were transcribed using the mMessage mMachine T7 kit (Ambion). KCNQ1 was co-expressed with KCNE1 subunit, following a 3:1, weight:weight (Q1:E1) cRNA ratio to make up the KCNQ1/KCNE1 currents. Site-directed mutagenesis was performed using the QuikChange II XL Mutagenesis Kit (QIAGEN Sciences) for mutations in KCNQ1. Primer sequences for mutagenesis are (mutated residues are shown in bold and altered bases are in capital letters):
 
 50 ng of complementary RNA was injected into defolliculated Xenopus laevis oocytes (Ecocyte Bioscience, Austin; Xenopus 1 Corp, Dexter) for channel expression. After RNA injection, cells were incubated for 24–96 hr in standard ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 5 mM HEPES), 1 M sodium pyruvate and penicillin (10,000 units)-streptomycin (10 mg/ml in 0.9% NaCl; pH 7.5) at 16°C before experiments.
 
-## Two-electrode voltage clamp
+### Two-electrode voltage clamp
 
 KCNQ1/KCNE1 currents were recorded using the two-electrode voltage clamp technique. The recording chamber was filled with ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, and 5 mM HEPES; pH 7.5). Pipettes were filled with 3 M KCl. PUFA Lin-Glycine was purchased from Cayman Chemicals (Ann Arbor, MI), kept in stock of 100 mM with ethanol at –20°C and diluted in ND96 solution the day of the experiments. Electrophysiological recordings were acquired using Clampex 10.7 software (Axon, pClamp, Molecular Devices). Lin-Glycine was perfused into the recording chamber in a pre-application step until reaching steady state, followed by an (I–V) protocol to measure the current–voltage relationship before and after perfusion. During PUFA application, cells were held at –80 mV and depolarization from –80 mV to 0 mV (5 s) was applied every 30 s, before stepping to –40 mV and then back to – 80 mV. In the I–V protocol, a hyperpolarized step from –80 mV to –140 mV is applied before 20 mV voltage steps from –100 mV to +60 mV. Tail currents are recorded at –20 mV before returning to holding potential.
 
-## Single channel recordings
+### Single channel recordings
 
 Single-channel currents were recorded from transiently transfected mouse ltk- fibroblast cells (LM cells) using 1.5 μl Lipofectamine 2000 (Thermo Fisher Scientific). LM cells were bought from ATCC (Manassas, VA: ATTC number CCL-1.3; lot number 63734321) who authenticated them (STR profiling) and confirmed that the cell lines tested negative for mycoplasma contamination. Cells were transfected with 1.5 μg of pcDNA3 containing a linked KCNE1-KCNQ1 construct (Murray et al., 2016) to ensure fully KCNE1-saturated complexes, in addition to a plasmid containing green fluorescent protein to identify transfected cells. Cells were recorded from 24 to 48 hr after transfection using an Axopatch 200B amplifier, a Digidata 1440A and pClamp10 software (Molecular Devices, San Jose, CA). The bath solution contained (in mM) 135 KCl, 1 MgCl2, 1 CaCl2, 10 HEPES, 10 dextrose (pH 7.4 with KOH). The pipette solution contained (in mM) 6 NaCl, 129 MES, 1 MgCl2, 5 KCl, 1 CaCl2, 10 HEPES (pH 7.4 with NaOH). Pipettes were pulled from thick-walled borosilicate glass (Sutter Instruments, Novato, CA) using a linear multistage electrode puller (Sutter Instruments), fire polished and coated with Sylgard (Dow Corning, Midland, MI). Electrode resistance was between 40 and 80 MΩ after polishing. Currents were sampled at 10 kHz, low-pass filtered at 2 kHz at acquisition and subsequently digitally filtered at 200 Hz for presentation and analysis. Data were collected using cell-attached patch configuration to minimize disruption to the patch and avoid rundown problems due to the loss of PIP2. Lin-Glycine was solubilized in DMSO and added directly to the bath. Only patches that were largely free of endogenous currents and had few channels, such that there were several blank sweeps to average for use for leak subtraction, were analyzed.
 
-## Data analysis
+### Data analysis
 
-To measure the conductance vs voltage (G–V) curve, KCNQ1/KCNE1 tail currents were measured at –20 mV and obtained values were plotted against the activation voltages and fitted to a Boltzmann function:G(V)=Gmin+(Gmax−Gmin)/{1+exp[−(V−V50)]/s}
+To measure the conductance vs voltage (G–V) curve, KCNQ1/KCNE1 tail currents were measured at –20 mV and obtained values were plotted against the activation voltages and fitted to a Boltzmann function:
 
-where Gmin is the minimal conductance, Gmax is the maximal conductance, V50 the midpoint (which describes the voltage at which the conductance is half the maximal conductance established from the fit), and s is the slope of the curve in mV. The difference in Gmax effect, before and after application of Lin-Glycine in each oocyte, is used as a measure of the change in maximal conductance. To understand the concentration dependence of LIN-Glycine effect on Gmax, the following concentration–response curve was fitted to the data:Gmax/Gmax0=1+B/[1+(PUFA50/[PUFA])H]
+$$
+G(V)=Gmin+(Gmax−Gmin)/{1+exp[−(V−V_{50})]/s}
+$$
+
+where Gmin is the minimal conductance, Gmax is the maximal conductance, V50 the midpoint (which describes the voltage at which the conductance is half the maximal conductance established from the fit), and s is the slope of the curve in mV. The difference in Gmax effect, before and after application of Lin-Glycine in each oocyte, is used as a measure of the change in maximal conductance. To understand the concentration dependence of LIN-Glycine effect on Gmax, the following concentration–response curve was fitted to the data:
+
+$$
+G_{max}/G_{max}^{0}=1+B/[1+(PUFA_{50}/[PUFA])^{H}]
+$$
 
 where B is the maximum relative increase in Gmax {(Gmax - Gmax0)/Gmax0}, PUFA50 the PUFA concentration needed to cause 50% of the maximal effect, and H is the Hill coefficient. Average values are expressed as mean ± SEM and n represents the number of experiments (unless specified).
 
@@ -116,6 +184,6 @@ Statistical analysis was conducted using GraphPad Prism 8 (GraphPad Software, Bo
 
 Data were analyzed using Clampfit 10.7 (pCLAMP), Origin Pro (OriginLab Corporation), and GraphPad Prism 8 software (GraphPad Software).
 
-## Material availability
+### Material availability
 
 Materials (e.g., DNA of Kv7.1 mutants) are available under reasonable requests from scientists. Data is available as Data Source files.

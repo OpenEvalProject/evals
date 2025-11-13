@@ -31,17 +31,25 @@ To answer this question we used LitCOVID, a literature hub curated by the Nation
 
 The most prominently tagged genes up to this point are: Angiotensin-converting enzyme 2, which serves as receptor for SARS-CoV-2 to enter cells (Hoffmann et al., 2020); C-reactive protein, a serum marker for inflammation (Sproston and Ashworth, 2018); and Interleukin 6, a mediator of systemic inflammatory responses (Kang et al., 2019). They account for 10.8%, 9.7%, and 4.5% of the total research on human protein-coding genes within the COVID-19 literature, respectively (see Methods). Gene Ontology Enrichment analysis of the human protein-coding genes tagged in the COVID-19 literature finds them enriched for annotations on immune response (false-discovery rate <10−66), inflammatory response (false-discovery rate <10−65), and defense response to virus (false-discovery rate <10−31) (Supplementary file 1). These two observations would thus suggest that the choice of host genes tagged in the COVID-19 literature is biologically grounded and in accord with current knowledge about respiratory viruses.
 
-## Most host genes identified by genome-wide studies have not been pursued
+### Most host genes identified by genome-wide studies have not been pursued
 
 Genome-wide datasets provide another window on SARS-CoV-2 infection. As genome-wide approaches circumvent research patterns that may have been pre-established within the scientific literature (Haynes et al., 2018; Nelson et al., 2015; Stoeger et al., 2018), they might identify additional genes implicated in COVID-19. RNA-sequencing (RNA-seq) was used recently to identify 1726 host genes that change the expression of their transcripts in the lungs of COVID-19 patients at an adjusted p-value<0.05 (Blanco-Melo et al., 2020). Affinity-purification mass spectrometry (Aff-MS) was used to identify 293 host proteins following the pulldown of exogenously expressed SARS-CoV-2 proteins (Gordon et al., 2020). Using genome-wide association studies (GWAS), the Host Genetics Initiative identified 52 genes through their association at a P-value of 10−5 or lower in one of three comparisons: COVID-19 vs lab or self-reported negative; hospitalized COVID-19 patients vs population; or very severe respiratory COVID-19 vs population (COVID-19 Host Genetics Initiative, 2020a; Ellinghaus et al., 2020). 15 genes were identified in two comparisons and one gene, Leucine zipper transcription factor-like protein 1 (LZTFL1), was identified in all three comparisons (Supplementary file 2). Using a pooled CRISPR screen to affect SARS-CoV-2 induced cell death in African green monkey cells, Wei et al. identified 41 genes, which we mapped to their human homologs using BioMart (Wei et al., 2020; see Methods). 48 genes are identified in two of the four different genome-wide datasets (Supplementary file 3), but no gene is identified in more than two.
 
 However, an analysis of the COVID-19 literature reveals that most (56%–71%) of the genes identified in these four datasets have not yet been tagged in the COVID-19 literature (Figure 1A). Thus, the genes identified by the four genome-wide datasets are 10–25% more likely to have been tagged than a randomly chosen gene because we also observe that 19% of all human protein-coding genes have been tagged at least once in the COVID-19 literature. Similarly, the fraction of tagged genes only increases by 0–7% if we include preprints (Figure 1—figure supplement 1). We conclude that many genes identified by genome-wide datasets on COVID-19 have not been investigated yet in more detail in the context of COVID-19.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig1-v1.jpg)
+
+**Figure 1.:** (A) Share of identified genes, which are ignored (never tagged, blue) or tagged (at least once) within the COVID-19 literature. (B) Share of tagged genes identified by a single (orange) or multiple (maroon) genome-wide datasets. P-values are calculated via Fisher’s exact test. n is the number of genes. (C) Share of tagged genes identified by a single (orange) or multiple (maroon) GWAS comparisons. P-values are calculated via Fisher’s exact test. n is the number of genes. (D) Non-COVID-19 publications measured for any human protein-coding gene (ocher, any) and those occurring in the COVID-19 literature (ocher, COV19) and genes identified in A (colors as in A). Notches indicate 95% confidence interval of the median. P-values are calculated via Mann-Whitney U test. Exceeded percentiles indicates percentiles of all genes exceeded by the median gene of the genes in an individual boxplot. n.c. marks non-computable P-values that approximate 0. (E) As D, but for year of initial publication on the gene. Dashed lines indicate limit of visualized values. Some genes had their first publication before or afterwards.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Share of identified genes, which are ignored (never tagged, blue) or tagged at least once (red) within the COVID-19 literature after additionally including genes occurring in abstracts of preprints.
+
 At the same time, we observe that genes, which have been identified by multiple of the four distinct genome-wide datasets (Figure 1B), or multiple GWAS comparisons (Figure 1C), are more likely to have been tagged in the COVID-19 literature. This, reassuringly, demonstrates that research into COVID-19 host genes enriches for host genes identified by multiple different lines of support – particularly if there exists support from human genome-wide association studies.
 
 Yet, overall, genes identified by multiple genome-wide datasets remain only a minority of all identified genes (2%), and many of them are still ignored in the COVID-19 literature (52%) (Supplementary file 2), suggesting that research into SARS-CoV-2 host genes might be missing important pieces of the puzzle.
 
-## Tagged host genes follow pre-established research patterns
+### Tagged host genes follow pre-established research patterns
 
 A possible explanation for the relative lack of interest in the additional genes implicated in SARS-CoV-2 infection by these genome-wide datasets is that research on COVID-19 is constrained by pre-established research patterns (Chu and Evans, 2018). Briefly, we know that knowledge on human genes is heavily skewed toward a subset of genes (Gans et al., 2008; Gillis and Pavlidis, 2013; Hoffmann and Valencia, 2003; Oprea et al., 2018; Su and Hogenesch, 2007) that were being investigated prior to the Human Genome Project (Edwards et al., 2011; Grueneberg et al., 2008; Stoeger et al., 2018). As a result, if assessing their importance through genetic loss-of-function intolerance or findings of GWAS (Haynes et al., 2018; Stoeger et al., 2018), the most frequently investigated protein-coding genes tend to be only marginally more important to human physiology and disease than a random selection of genes.
 
@@ -53,13 +61,21 @@ Next we return to our earlier observation on the majority of the implicated host
 
 Before the COVID-19 pandemic it had been shown that the literature is skewed toward a subset of genes that were being investigated prior to the productive phase of the Human Genome Project. These features include the fraction of organs with detectable transcript expression, the length of the genes, the hydrophobicity of the coded proteins, their loss-of-function insensitivity, and studies on orthologous genes in model organisms (Stoeger et al., 2018). We decided to explore if the genes tagged in the COVID-19 literature had been studied before the pandemic, and found that they had occurred earlier (Figure 1E), with many also first being studied before the productive phase of the Human Genome Project (NHGRI, 2003). Similarly, the host genes identified by the four genome-wide datasets that are ignored in the COVID-19 literature first appeared in the non-COVID-19 literature after the host genes that are tagged in the COVID-19 literature (Figure 1E).
 
-## Trends over time
+### Trends over time
 
 The COVID-19 pandemic has ravaged for less than a year, which is a short period of time compared to most research projects. Thus, we might not yet be observing research addressing poorly-studied implicated host genes because not sufficient time has passed for research to catch up to the new information.
 
 To anticipate the near future, we follow the occurrence of genes in the COVID-19 literature over time. Based on our insight that ignored host genes have not been studied more than other genes in the non-COVID-19 literature (Figure 1D), we separate genes into two classes: genes that are among the 50% top-studied human protein-coding genes in the non-COVID-19 literature, and genes that are among the 50% least-studied human protein-coding genes. The second class holds 35% of the genes identified by RNA-seq, 33% of the genes identified by Aff-MS, 29% of the genes identified by GWAS, and 24% of the genes identified by CRISPR. If research is catching up to the new knowledge, we would expect to see the fraction of the COVID-19 literature addressing the 50% least-studied human protein-coding genes to increase over time.
 
 When focusing on the genes that are among the 50% top-studied human protein-coding genes, we observe their occurrence in the COVID-19 literature to increase steadily. Extrapolating from the observed trends, we anticipate that it will take around one year till nearly all genes of this class will have been tagged at least once within the COVID-19 literature (Figure 2A). When focusing on the genes that are among the 50% least-studied human protein-coding genes, we too observe their occurrence in the COVID-19 literature to increase steadily over time (Figure 2B). As for each of the four genome-wide datasets the increase is, however, slower than for the 50% most studied protein-coding genes, we project that multiple years could pass until each gene of the 50% least-studied human protein-coding genes will have been tagged at least once within the COVID-19 literature.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig2-v1.jpg)
+
+**Figure 2.:** Percentage of genes with indicated levels of support by the four genome-wide studies which have been tagged at least once in the COVID-19 literature. (A) Analysis restricted to the 50% of genes with highest number of publications in non-COVID-19 literature. (B) Analysis restricted to the 50% of genes with the lowest number of publications in the non-COVID-19 literature. (C) Cumulative share of literature on human protein-coding genes tagged in the COVID-19 literature. Top 20% indicates the 20% of genes that occur the most in the non-COVID-19 literature. Gene rank refers to the order of human protein-coding genes. The gene with the most publication equivalents would be have rank 1. Yellow area indicates share of literature accounted for by the top 20% genes. (D) Share of COVID-19 literature accounted for by the 20% of genes that had occurred the most in the COVID-19 literature by a given date. (E) Number of distinct human protein coding genes that have been tagged in the literature by a given date. (F) Share of COVID-19 literature accounted for by first 100 genes to be tagged in the COVID-19 literature by a given date.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61981/elife-61981-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gini Coefficient within COVID-19 literature until indicated day (green dots). (B) As Figure 2D but considering individual months (ochre dots). (C) As Figure 2F but considering individual months (purple dots). Note that September is the last month shown as October had been indexed incompletely within the most recent release of the database providing publication dates of for the COVID-19 literature.
 
 Pursuing this observation further, we turn to the entire COVID-19 literature. Notably, 83% of all human protein-coding genes tagged in the COVID-19 literature have not been identified by any of the four genome-wide datasets. Further, the different genome-wide datasets together only account for 26% of the COVID-19 literature (RNA-seq: 11.7%, Aff-MS: 2.4%, GWAS: 0.5%, CRISPR: 11.1%) (see Methods).
 
@@ -71,7 +87,7 @@ Interestingly, we also observe that the share of the COVID-19 literature, which 
 
 One possible reason for why some genes are tagged more than others in the COVID-19 literature could be that compared to other genes they are more important in the context of COVID-19. To probe this hypothesis, we consider groups of genes and the four different genome-wide datasets. When contrasting the 100 initially tagged genes against the other genes tagged in the COVID-19 literature, we reassuringly find that the 100 initially tagged genes are 29% more likely to have been identified by one of these four datasets (Supplementary file 4). However, they are on average tagged 2993% more (Supplementary file 4). If we contrast the 20% top-tagged genes against the other tagged genes, we find them to be 3% less likely to have been identified by one of the four genome-wide datasets, while they on average are tagged 3512% more (Supplementary file 4). Cumulatively, this suggests that the present focus of the COVID-19 literature on a restricted subset of genes cannot be explained by those genes having been identified by genome-wide datasets reporting on transcriptomic changes, protein interactions, genetic associations and loss-of-function perturbations.
 
-## Study limitations
+### Study limitations
 
 Our study has several important limitations. First, we cannot say whether a gene tagged in the COVID-19 literature is truly investigated for its potential role in COVID-19. Second, we cannot yet assess how important individual genes are in COVID-19. Third, and despite our projections, it remains formally unclear, whether the findings reported in this manuscript will hold in the upcoming months as more genome-wide datasets will become available and researchers will have had sufficient time for follow-up studies. For instance, there might already be research initiatives specifically targeted toward the ignored COVID-19 host genes.
 
@@ -95,42 +111,42 @@ In the hopes of prompting greater investigation into implicated host genes, we l
 
 ## Methods
 
-## COVID-19 literature
+### COVID-19 literature
 
 We downloaded LitCOVID from https://ftp.ncbi.nlm.nih.gov/pub/lu/LitCovid/ on 2020-10-16 and parsed the contained json file for the presence of concepts annotated as genes. For studies annotated with proteins, we used their PubMed identifiers, to query MEDLINE on 2020-10-16 via their efetch API. Subsequently we parsed the MEDLINE entries via pubmed_parser 2.2 (https://github.com/titipata/pubmed_parser; Achakulvisut et al., 2020). We then excluded publications carrying at least one of the following publication types: Review, Comment, Editorial, Meta-Analysis, Systematic Review, News, Published Erratum, Historical Article, Interview, Retracted Publication, Retraction of Publication, Webcast, Expression of Concern or Portrait. Further we excluded publications whose abstract contain either the phrase ‘this review’ or the phrase ‘this perspective’. We considered genes tagged within LitCOVID in the annotated TITLE, INTRO, ABSTRACT or RESULTS sections.
 
-## Research intensity within COVID-19 literature
+### Research intensity within COVID-19 literature
 
 We measured the research intensity directed toward individual implicated host genes in units of publication equivalents. Each gene tagged within a publication accrues the publication equivalent of number of tags to the gene in that publication divided by total number of tags to any gene in that publication. For example, if a study tags two different genes, and the first gene is tagged three times, whereas the second gene is only tagged once, the first gene would accrue 0.75 publication equivalents, and the second gene would accrue 0.25 publication equivalents. We expressed the share of literature covered by an individual human protein-coding gene as the sum of its publication equivalents over the sum of all publication equivalents of human protein-coding genes. We excluded the studies of Blanco-Melo et al., 2020 and Gordon et al., 2020 which report the RNA-seq and Aff-MS datasets, respectively.
 
-## Gene ontology enrichment analysis
+### Gene ontology enrichment analysis
 
 We used the Database for Annotation, Visualization and Integrated Discovery, version 6.8 (Huang et al., 2009).
 
-## Data processing and filtering
+### Data processing and filtering
 
 For CRISPR we considered the African green monkey genes reported in Figure 1D of Jin Wei et al., 2020. To map African green monkey to human genes, we used BioMart’s (Haider et al., 2009) April 2020 release. We used the genetic polymorphisms reported in the 2020-09-30 release of the Host Genetics Initiative (COVID-19 Host Genetics Initiative, 2020b) and mapped them to human genes through the Ensembl Variant Effect Predictor (McLaren et al., 2016), using the Ensembl release 101. For RNA-seq we only considered comparisons flagged with ‘ok’ by the authors (Blanco-Melo et al., 2020). For Aff-MS we used the data as provided by BioGRID (Chatr-Aryamontri et al., 2017), version 3.5.186 (https://downloads.thebiogrid.org/BioGRID).
 
 We obtained the list of human protein-coding genes from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz in June 2020.
 
-## Occurrence of genes in preprints
+### Occurrence of genes in preprints
 
 We obtained manuscripts abstracts from dimension.ai’s collection of COVID-19 related publications, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34; dimension.ai, 2020), and subsequently select manuscripts listing medRxiv or bioRxiv or arXiv as their source. Next, we matched each word against the gene symbols as downloaded from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz in June 2020.
 
 We excluded the following gene symbols as within the abstracts they would match abbreviations that did not refer to genes: AFM, AIR, AN, APC, APP, AR, ARC, ATM, BCR, BED, BID, CCNC, CFD, CHM, COPD, COPE, CP, CPE, CS, DBI, DCT, ENG, GAN, GC, HP, HPA, HPD, HPO, HR, IDS, IMPACT, IV, KIT, MCC, MET, MICE, MMD, MS, MS2, NHS, NM, NPS, NSF, NTS, PIP, POLL, REST, SEA, SET, SHE, SI, SPR, STS, TAT, TRAP, WAS.
 
-## Non-COVID-19 literature
+### Non-COVID-19 literature
 
 We downloaded gene2pubmed from https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz in early 2017. MEDLINE, containing publication dates and publication types was downloaded from https://www.nlm.nih.gov/databases/download/pubmed_medline.html, and maintained in a local copy of their database in early 2017. We restricted the analysis to research publications published prior 2016.
 
-## Temporal profiles
+### Temporal profiles
 
 We obtained publication dates from dimension.ai’s collection of COVID-19 publications, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34). We excluded publications dating to January 1st, 2020 – the day linked to the most publications. Manual inspection revealed that the date of January 1st2020 was assigned to publications lacking a concrete 2020 publication date.
 
-## Occurrence within clinical trials
+### Occurrence within clinical trials
 
 We obtained interventions within clinical trials from dimension.ai’s collection of COVID-19 related clinical trials, release 34 (https://dimensions.figshare.com/articles/dataset/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063/34; dimension.ai, 2020). We performed a case-insensitive match against drug names and drug synonyms contained within DrugBank, version 5.1.5 (https://www.drugbank.ca). Next we used DrugBank’s mapping between drugs and the targets of their pharmaceutical action and used the accompanying gene symbol to identify genes.
 
-## Identification of research laboratories
+### Identification of research laboratories
 
 We used disambiguated authorship identifiers from Web of Science and considered the last author of each publication as the laboratory.

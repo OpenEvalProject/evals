@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03cpe7c52 MindScope Program, Allen Institute Seattle United States
-2. https://ror.org/00wjc7c48 Department of Biomedical and Clinical Sciences “L. Sacco”, University of Milan Milan Italy
+1. MindScope Program, Allen Institute Seattle United States ([ROR:03cpe7c52](https://ror.org/03cpe7c52))
+2. Department of Biomedical and Clinical Sciences “L. Sacco”, University of Milan Milan Italy ([ROR:00wjc7c48](https://ror.org/00wjc7c48))
 
 † Corresponding author
 
@@ -33,9 +33,21 @@ To investigate how cortico-cortical and cortico-thalamic activity influences the
 
 ## Results
 
-## Global evoked responses are modulated by the depth of the cortical stimulation site
+### Global evoked responses are modulated by the depth of the cortical stimulation site
 
 We recorded global EEG-like neural signals using a multi-electrode surface array on the skull, but below the scalp (Jonak et al., 2018; Land et al., 2019), in head-fixed mice. The multi-electrode array consisted of 30 electrodes situated over primary and secondary motor, somatosensory, visual, and retrosplenial areas in both hemispheres (Figure 1A). We used an average reference montage that removed signals common to all EEG electrodes (see Methods). We inserted a bipolar wire electrode intra-cortically to repeatedly deliver a single electrical current pulse into the cortex and measured the evoked potentials with the EEG array (Figure 1B and C). The current pulses were biphasic (200 μs/phase) with an amplitude between 10 and 100 μA (details in Figure 1C inset). Stimulation artifacts in the EEG signals were reduced by replacing the signal between 0 and +2 ms following each stimulus with the signal between –2 and 0 ms; this was done to all traces in all trials during an offline, signal pre-processing step. All subsequent analyses of the ERP (the trial-averaged EEG response) exclude the signal between –2 and +2 ms. During the experiment, we closely observed the animal for signs of electrically evoked motor twitches and chose lower stimulation amplitudes if we observed any.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the 30-channel surface array (yellow circles) implanted on top of the skull over major brain areas: motor, somatosensory, retrosplenial, and visual areas (schematic created using brainrender; Claudi et al., 2021). The circular, platinum EEG electrodes are 500 μm in diameter. The three light blue circles correspond to the locations of the three acute craniotomies to place up to three Neuropixels probes and the bipolar stimulating electrode. The schematic also shows two skull screws over the cerebellum that serve as the reference and the ground for the EEG signals. (B) Histological image of a coronal brain slice showing the location of the bipolar stimulating electrode (with tips in secondary motor area [MOs], layer 5; red dashed line) and one of the Neuropixels probes (spanning layers of motor and anterior cingulate areas; blue dashed line) with fluorescent dyes (that appear red and green in the image). (C) Evoked responses from each of the 30 EEG electrodes from the awake, head-fixed mouse from –0.2 to +0.8 s following the electrical stimulus (vertical green line marks the onset time). Traces are arranged in the approximate orientation of the EEG array over the skull surface. Traces in black and gray represent signals that did and did not pass a quality control step, respectively. The red star and blue circles mark the approximate insertion point of the bipolar stimulating electrode and the Neuropixels probes, respectively. Inset: Single current pulses were biphasic (200 μs/phase), charge-balanced, and cathodic-first, with a current amplitude between 10 and 100 μA. (D) Event-related potential (ERP; –0.3 to +1.1 s around stimulus onset) with all EEG electrode traces superimposed (butterfly plots). Each of the four panels represents data from a different stimulated area and depth: top and bottom left – superficial and deep layer (same as in panel C) MOs stimulation in the same subject; top and bottom right – superficial and deep layer primary somatosensory area (SSp) stimulation in a different subject. The dashed vertical line indicates the duration of the evoked signal; the marker above matches with the marker representing the value in panels E and F. The ‘baseline σ’ indicates the SD (in μV) over all electrodes during the 2 s preceding the stimulus. (E) Duration of the ERPs for all subjects based on the stimulation depth: superficial (N=12) vs. deep (N=18). (F) Normalized magnitude of the ERPs for all subjects based on the stimulation depth: superficial (N=12) vs. deep (N=18). For further details, see method ‘ERP duration and magnitude’ and Figure 1—figure supplement 1. Boxplots show median (orange line), 25th, and 75th percentiles; whiskers extend from the box by 1.5× the inter-quartile range (IQR). Student’s two-tailed t-test; * weak evidence to reject null hypothesis (0.05>p>0.01), ** strong evidence to reject null hypothesis (0.01>p>0.001), and *** very strong evidence to reject null hypothesis (0.001>p).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Butterfly plot of the event-related potential (ERP; –0.3 to +1.1 s around stimulus onset, green vertical line) from deep stimulation in MOs (black lines). The global field power (magenta line) is calculated as the standard deviation of voltage values across all electrodes at each time sample. Same example as shown in Figure 1C and D, bottom left. (B) The global field power (baseline z-score; –0.3 to +1.1 s around stimulus onset) from panel A. The duration of the evoked response is measured by the length of time the global field power remains above a threshold of three SDs above the baseline mean (z=3 SD, represented by the horizontal, black, dashed line) in the response window from stimulus onset to +2 s after. The duration of this example is 1.01 s, represented by the vertical, dashed, blue line. The magnitude of the evoked response is measured by the AUC of the z-scored global field power above the threshold (z=3 SD) in the response window from stimulus onset to +2 s after. The magnitude of this example is 11.13 SD∙s, represented by the gray shaded region.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Butterfly plot of the event-related potential (ERP; –0.2 to +0.4 s around stimulus onset, green vertical line) from deep stimulation in MOs. Dashed vertical blue lines indicate the time of the spatial interpolation below. Same example as shown in Figure 1C and D bottom left. (B) The spatial interpolation of the instantaneous voltage across the surface of the mouse brain sampled by the EEG electrodes. Black circles and gray x-marks represent electrodes that did and did not pass a quality control step, respectively. The white band running across cortex represents the transition between the two polarities of the EEG signals.
 
 To understand how the features of the ERP depend on the location of the electrical stimulation, we varied both the area and the depth (or cortical layer) of the stimulating electrode. We stimulated in the secondary motor area (MOs) or in the primary somatosensory area (SSp) in layer 2/3 (superficial: 0.41±0.04 mm below the brain surface) or in layer 5/6 (deep: 1.06±0.05 mm below the brain surface; Figure 1D). We found that regardless of area, when we stimulated layer 5/6 during the awake period, we usually observed two prominent peaks in the ERP: an initial response around 25 ms and a secondary peak at around 180 ms post-stimulation (Figure 1C and D).
 
@@ -43,7 +55,7 @@ The early component was preserved, whereas the second, late component was not ev
 
 The amplitude of the first peak in the ERP decays systematically when moving away from the stimulation site until it eventually flips its sign, most likely reflecting volume conduction (Figure 1—figure supplement 2). The magnitude and polarity of the second component likewise changes continuously but in a different pattern, suggesting a different mechanistic origin.
 
-## The spiking response pattern of the stimulated cortex echoes the ERP
+### The spiking response pattern of the stimulated cortex echoes the ERP
 
 In addition to recording EEG signals, we simultaneously collected data from up to three Neuropixels probes – linear silicon probes with a 10 mm long non-tapered shank with 384 simultaneously recorded electrodes capable of capturing LFP and action potentials (Jun et al., 2017). The Neuropixels probes were placed in such a manner as to record from cortex (motor MO, anterior cingulate ACA, somatosensory SS, and visual VIS) and sensorimotor-related thalamic nuclei (SM-TH, Figure 2A), see full list of thalamic nuclei in the Methods section (Guo et al., 2017; Harris et al., 2019; Hooks et al., 2013). The Neuropixels probes were inserted approximately perpendicular to the cortical surface. This allowed us to observe the LFP and the spiking activity of hundreds of individual cortical and thalamic neurons. From the LFP, we inferred the current source density (CSD) using a computational method that assumes an ohmic conductive medium, constant extracellular conductivity (0.3 S/m), and homogeneous in-plane neuronal activity, with the boundary condition of zero current outside the sampled area (Freeman and Nicholson, 1975; Mitzdorf, 1985).
 
@@ -57,7 +69,7 @@ Stimulating superficial MOs evoked a local spike, LFP and CSD response, followed
 
 Stimulating deep MOs evoked a robust change in LFP and CSD, accompanied by spiking activity reflective of the two components in the ERP (Figure 2B right): an initial excitation within 25 ms (peak population firing rate 38.1±4.2 Hz), followed by quiescence (duration 125.0±5.5 ms) and a longer period of strong excitation (peak population firing rate 7.9±0.7 Hz; Figure 2C, right). This cortical response pattern was quite stereotyped – an initial excitation, followed by an off period and a strong rebound excitation – and was also observed in SM-TH (Figure 2F, right). We seldom observed this pattern for superficial stimulation (Figure 2C, left). Indeed, on average, about three times more cortical neurons respond significantly to deep than to superficial stimulation (Figure 4A and D).
 
-## Global ERPs are associated with widespread evoked cortical activity
+### Global ERPs are associated with widespread evoked cortical activity
 
 Intrigued by the apparent lack of firing in non-stimulated cortical regions, we quantified the evoked magnitude of the LFP, CSD, and spiking in response to superficial and deep stimulation (note that our magnitude metric accounts for both reductions as well as increases and is calculated as the integral of the z-score relative to background; see method “LFP, CSD, and population spiking magnitude”; Figure 3A–C). The magnitude of the LFP near the stimulation site is greater than background activity (54.0 SD∙s in MO) and decays with distance from the stimulation site (18.0 SD∙s in VIS; Figure 3A). Because the LFP reflects the summation of local presynaptic activity as well as volume conduction from more distant current sources (Kajikawa and Schroeder, 2011), we examined the CSD responses, which minimize the effect of volume conduction and emphasize local current flows. The magnitude of the CSD shows a similar pattern: large in the stimulated cortex (51.4 SD∙s in MO) and smaller at more distant sites (4.8 SD∙s in VIS), though the response is larger than baseline in both (Figure 3B). Yet while we see robust evoked firing of cortical neurons (30.9 SD∙s in MO) close to the stimulation electrode, changes in firing are often much smaller in distant regions (1.8 SD∙s in VIS; Figure 3C).
 
@@ -73,6 +85,14 @@ Together, these data show that cortical stimulation evoked widespread changes in
 
 To further investigate the evoked neural spiking across both stimulated and non-stimulated areas, we computed the percentage of modulated (significantly increased or decreased spiking relative to the pre-stimulus baseline) RS neurons per subject in three temporal windows following the stimulus: 2–25 ms (initial excitation), 25–150 ms (off period), and 150–300 ms (rebound excitation; Figure 4). The three temporal windows were chosen to match the stereotyped firing patterns, which align with maximum peaks in the ERPs and the period in between (Figure 1—figure supplement 2). We separately analyzed FS neurons and found they behave like RS neurons (Figure 4—figure supplement 1); therefore, further analyses focus only on RS neurons.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig4-v1.jpg)
+
+**Figure 4.:** (A) Fraction of regular spiking (RS) neurons per cortical area in each subject that exhibit a significantly increased (red upward triangle) or decreased (blue downward triangle) response in the first 25 ms for superficial stimulation. Fraction of RS neurons that exhibit a significant increase or decrease (B) 25–150 ms or (C) 150–300 ms following the stimulus. (D–F) Same as panels A–C but for deep stimulation. Panels A–C are derived from 870 RS neurons from stimulated cortex and 4110 RS neurons from non-stimulated cortical regions in N=7 mice and panels D–F from 2559 RS neurons from stimulated cortex and 9363 RS neurons from non-stimulated cortical regions in N=17 mice. Boxplots show median (orange line), 25th, and 75th percentiles; whiskers extend from the box by 1.5× the IQR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Normalized firing rate, reported as a z-score of the average, pre-stimulus firing rate, of fast spiking (FS) neurons recorded by the Neuropixels probes targeting cortical areas of interest (left: superficial MOs stimulation; right: deep MOs stimulation). The number of neurons (n) in each area is included along the y-axis. (B) Fraction of FS neurons that exhibit a significantly increased (red upward triangle) or decreased (blue downward triangle) response in the first 25 ms for mice that received superficial stimulation. (C) Fraction of FS neurons that exhibit a significantly increased or decreased response 25–150 ms following the stimulus. (D) Fraction of FS neurons that exhibit a significantly increased or decreased response 150–300 ms following the stimulus. (E–G) Same as panels B–D but for subjects that received deep stimulation. Data from experiments with superficial cortical stimulation (180 FS neurons from stimulated cortex and 585 FS neurons from non-stimulated cortical regions in N=7 mice) and with deep cortical stimulation (387 FS neurons from stimulated cortex and 1422 FS neurons from non-stimulated cortical regions in N=16 mice). Boxplots show median (orange line), 25th, and 75th percentiles; whiskers extend from the box by 1.5× the IQR.
+
 During the initial excitation, the fraction of activated (significantly increased spiking relative to baseline) neurons was always higher in the stimulated cortex than other cortical areas, for both superficial and deep stimulation. The fraction of activated neurons in non-stimulated ipsilateral cortical regions was only marginally above zero (Figure 4A and D). Indeed, across all 24 animals, only an average of 0.5% (minimum 0% and maximum 2.6%) of the neurons was modulated in the initial excitation, compared to an average of 17.8% (minimum 0% and maximum 83.3%) in stimulated cortex.
 
 Next, we quantified the fraction of modulated RS neurons in the off period between 25 and 150 ms, capturing the period between the two large ERP amplitude components (present with deep stimulation; Figure 1—figure supplement 2). There were very few neurons with increased spiking, regardless of stimulation depth and area (mean 0.4%, minimum 0%, and maximum 2.8%; Figure 4B and E). In contrast, spiking in 18/22 subjects was significantly reduced from baseline following either superficial or deep stimulation. Interestingly, some non-stimulated areas showed decreased spiking but only in response to deep stimulation (mean 10.1%, minimum 0%, and maximum 55.7%).
@@ -81,7 +101,7 @@ The final temporal window we considered was the rebound excitation window betwee
 
 To summarize, deep cortical stimulation is more likely to significantly modulate single neurons outside of the stimulated cortical area. This largely consisted of decreases in firing in the 25–150 ms window and mixed increases and decreases in firing during the 150–300 ms window (Figure 4F).
 
-## CTC interactions underlie features of the ERPs
+### CTC interactions underlie features of the ERPs
 
 The striking triphasic cortical spiking pattern for deep stimulation is replicated in the associated thalamic nuclei that are connected to the stimulated cortical area (here, SM-TH; Guo et al., 2017; Harris et al., 2019; Hooks et al., 2013; bottom right in Figure 2F), though shifted in time. Specifically, we observed a brief excitation (peak population firing rate 22.3±3.2 Hz), a 74.6±15.5 ms long period of suppression, followed by rebound excitation (peak population firing rate 14.7±1.0 Hz). This is not the case when stimulating superficial layers (Figure 2F, bottom left).
 
@@ -97,7 +117,19 @@ We hypothesized that deep stimulation elicits spiking in cortico-thalamic projec
 
 Similarly, the CSD analysis generated results supporting our initial hypothesis. Thalamic bursts powerfully activate cortical neurons (Borden et al., 2022; Nestvogel and McCormick, 2022; Ramcharan et al., 2005; Sherman, 1996) via synaptic activity that can be captured by the inferred CSD. We observed a pronounced current sink near the border of layers 2/3 and 5 in MOs (near the deep stimulation site) that coincided with the timing of the thalamic rebound burst (~180 ms). This was consistent across subjects (N=9, Wilcoxon signed-rank test, p<0.05; Figure 6A). We also analyzed the correlation between the ERP and laminar CSD on a trial-by-trial basis and found that the EEG signals correlated more strongly with CSD of deep compared to superficial layers (Figure 6—figure supplement 1). To further investigate the relationship between thalamic bursting, cortical spiking, and the ERP, we computed the correlation between these metrics in the rebound window (75–300 ms after stimulus onset) on a trial-by-trial basis for each subject. The fraction of bursting SM-TH neurons was correlated with the cortical population firing rate (8/13 mice with a significant correlation [p<0.05], mean Pearson r value: 0.4±0.04; Figure 6B). The cortical population firing rate was likewise correlated with the magnitude of the second, late component in the ERP (9/13 mice with a significant correlation [p<0.05], mean Pearson r value: 0.5±0.04; Figure 6C). Additionally, the late component in the ERP was significantly correlated with the fraction of bursting SM-TH neurons (13/13 mice with a significant correlation [p<0.05], mean Pearson r value: 0.5±0.07; Figure 6—figure supplement 2A), much more so than it was correlated with the SM-TH population firing rate (Figure 6—figure supplement 2B). These important observations link micro-scale dynamics (cellular thalamic bursting) with a macro-scale read-out (cortical EEG).
 
-## Behavioral states modulate the ERP and the cortico-thalamic interactions
+![Figure 6.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig6-v1.jpg)
+
+**Figure 6.:** (A) Population level (N=9) current source density (CSD) analysis of MOs after deep MOs stimulation (sinks blue and sources red). The black traces outline the areas with significant and consistent responses across subjects (Wilcoxon signed-rank test, p<0.05). (B) Left: Pearson correlation between fraction of somatomotor-related thalamic (SM-TH) neurons that burst and peak cortical population firing rate on a trial-by-trial basis for one mouse (same subject as in Figure 1D bottom left). Right: Same as left, computed for all (N=13) mice with deep stimulation; the black circle represents the subject from the left panel, green circles represent subjects with a significant correlation (p<0.05), and yellow squares represent subjects with a non-significant correlation. (C) Left: Pearson correlation between peak amplitude of the second, late component in the event-related potential (ERP) and peak cortical population firing rate on a trial-by-trial basis for one example mouse (as in panel B). Right: Same as left, computed for all subjects with deep stimulation (N=13), represented as in panel B. Boxplots show median (green line), 25th, and 75th percentiles; whiskers extend from the box by 1.5× the IQR. * Weak evidence to reject null hypothesis (0.05>p>0.01), ** strong evidence to reject null hypothesis (0.01>p>0.001), and *** very strong evidence to reject null hypothesis (0.001>p).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Time-resolved correlation of EEG with layer-specific CSD power (traces color coded by layers) at single trial level across all subjects (N=9 mice): (A) Pearson correlation and (B) Spearman correlation.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84630/elife-84630-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Left: Pearson correlation between the peak amplitude of the second, late component in the ERP and the fraction of SM-TH neurons that burst on a trial-by-trial basis for one example mouse (same subject as in Figure 1D bottom left). Right: Same as left, computed for all subjects with deep stimulation (N=12 mice), green circles represent subjects with a significant correlation (p<0.05). (B) Left: Pearson correlation between the peak amplitude of the second, late component in the ERP and the peak SM-TH population firing rate on a trial-by-trial basis for one example mouse. Right: The correlation value (Pearson r) for all subjects with deep stimulation (N=12 mice), green circles represent subjects with a significant correlation (p<0.05) and yellow squares represent subjects with a non-significant correlation. Boxplots show median (green line), 25th, and 75th percentiles; whiskers extend from the box by 1.5× the IQR. * Weak evidence to reject null hypothesis (0.05>p>0.01), ** strong evidence to reject null hypothesis (0.01>p>0.001), and *** very strong evidence to reject null hypothesis (0.001>p).
+
+### Behavioral states modulate the ERP and the cortico-thalamic interactions
 
 To study differences between the evoked responses across conscious and unconscious states, we performed experiments in mice that were awake and subsequently anesthetized. At the start of an experiment, we delivered up to 120 single electrical pulses while the mouse was awake, free to rest or run on a freely moving wheel. Next, we induced anesthesia with isoflurane via inhalation. Once the mouse reached a stable level of unconsciousness (no reaction to an alcohol swab placed in front of the nose; 4.0±0.3 min after induction onset at 5% isoflurane concentration), we delivered the same set of electrical stimuli.
 
@@ -113,7 +145,7 @@ The median first spike latencies for cortical and thalamic populations were the 
 
 Thus, thalamic activity preceded cortical activity during the rebound excitation in both quiet and active wakefulness. However, during quiet wakefulness, the rebound was characterized by thalamic burst firing, which correlated with increased cortical spiking and higher ERP magnitudes (Figure 6).
 
-## Thalamo-cortical interactions affect perturbational complexity in head-fixed mice
+### Thalamo-cortical interactions affect perturbational complexity in head-fixed mice
 
 The differences of ERPs across behavioral states, reflecting differences in the cortico-cortical and cortico-thalamic interactions as described above, resulted in significant changes in complexity across states (Figure 8A). To quantify complexity, we used an algorithm that quantifies the number of state transitions for each principal component in the ERP (PCI, state-transition [PCIST]; Comolatti et al., 2019). Like the PCI, this metric distinguishes conscious from unconscious states in a variety of human volunteers and patients with disorders of consciousness (Comolatti et al., 2019) as well as rodents (Arena et al., 2021; Cavelli et al., 2022); unlike PCI, PCIST does not require source modeling and is not upper-bounded by one. When PCIST is high, signals are both spatially and temporally differentiated. When it is low, signals are highly correlated across space and time or very small relative to the pre-stimulus signal. We found that PCIST was higher during the awake state than during the isoflurane-anesthetized state in all subjects (N=31; awake PCIST 45.5±3.6; anesthetized PCIST 16.5±2.4; paired t-test, p=2.508E-11; Figure 8B).
 
@@ -131,7 +163,7 @@ To test whether PCIST recovered to baseline after anesthesia, we repeated the sa
 
 We recorded brain-wide, multi-scale, evoked EEG, LFP, and single neuron responses to cortical electrical stimulation in head-fixed mice that were awake and, subsequently, anesthetized with isoflurane. We found that CTC interactions drive the long-lasting ERPs elicited by deep cortical stimulation during quiet wakefulness. The thalamic rebound response is characterized by thalamic burst firing that temporally coincides and is correlated with the second, late component in the ERP. Furthermore, the CTC interactions are modulated by the behavioral state of the animal, which is mirrored in the ERP.
 
-## Electrically evoked spiking pattern depends on the depth of stimulation
+### Electrically evoked spiking pattern depends on the depth of stimulation
 
 Electrical stimulation of superficial layers results in a brief excitation followed by 44.3±16.4 ms of silence in local cortical neurons only (without any detected involvement of the thalamus). This pattern has been seen in different species (Butovas et al., 2006; Butovas and Schwarz, 2003; Cavelli et al., 2022; Chung and Ferster, 1998; Contreras and Steriade, 1995; Douglas and Martin, 1991; Grenier et al., 1998; Hao et al., 2016; Kara et al., 2002; Logothetis et al., 2010; Sombeck et al., 2022; Vyazovskiy et al., 2013) and is reminiscent of the bi-stability (a state characterized by spontaneous alternation between bouts of activity and periods of silence) reported in deep sleep and in unconscious patients following a brief stimulation (Hill and Tononi, 2005; Pigorini et al., 2015; Rosanova et al., 2018; Timofeev et al., 2001; Usami et al., 2015).
 
@@ -141,7 +173,7 @@ Given the direct projections from deep pyramidal neurons to thalamic regions (Ha
 
 Evoked thalamic bursting consistently preceded cortical rebound spiking by 37.0 ms (on average, Figure 5F), comparable to the latency described by Grenier et al., 1998. The occurrence of bursts is compatible with these being thalamic relay neurons that excite their cortical targets (Guo et al., 2017; Sherman, 2001). Numerous previous studies have shown that thalamic relay neurons exhibit spontaneous bursting during anesthesia (Contreras and Steriade, 1995; Grenier et al., 1998; Swadlow and Gusev, 2001), NREM sleep (Domich et al., 1986; Halassa et al., 2011; Urbain et al., 2019), drowsiness (Stoelzel et al., 2009; Swadlow and Gusev, 2001), and wakefulness (Nestvogel and McCormick, 2022; Urbain et al., 2015). In our hands, thalamic relay neurons exhibit evoked rebound bursting during quiet wakefulness, but not during running or isoflurane anesthesia. This is consistent with findings showing that thalamic hyperpolarization and low-threshold Ca2+ spike-bursting coincides with movement offset in mice (Nestvogel and McCormick, 2022). Likewise, some anesthetics decrease the probability of thalamic bursts; specifically, isoflurane has been shown to shunt the low-threshold Ca2+ spikes and, therefore, the associated bursting (Ries and Puil, 1999; this does not rule out additional cortical effects of isoflurane, e.g. Bharioke et al., 2022). Therefore, our finding does not contradict results from other studies reporting evoked thalamic bursting in unconscious states, such as anesthesia via pentobarbital or ketamine/xylazine (Contreras and Steriade, 1995; Grenier et al., 1998) and NREM sleep (Urbain et al., 2019), which are likely to affect thalamic neurons in different ways compared to isoflurane.
 
-## Thalamo-cortical dynamics modulate perturbational complexity in mice
+### Thalamo-cortical dynamics modulate perturbational complexity in mice
 
 The behavioral state of the mouse strongly affects the underlying neural activity (Figure 7). Running and isoflurane anesthesia modulate the excitability of the network in opposing directions. Cortical firing rates during quiet wakefulness, 3.3±0.2 Hz, increase to 5.0±0.5 Hz for active wakefulness and decrease to 1.1±0.2 Hz during anesthesia (Figure 7E left); likewise in SM-TH, where baseline rates increase from 9.4±1.5 Hz during quiet wakefulness to 16.8±1.6 Hz during active wakefulness and drop to 0.8±0.4 Hz during anesthesia (Figure 7E right). Conversely, the median probability of electrically evoked thalamic bursting decreases from its baseline during quiet wakefulness of 9.5% ([10.0–23.7 IQR] to effectively zero for both active wakefulness [0–7.4 IQR] and anesthesia [0–0.2 IQR]). While we cannot conclusively rule out that mice were asleep during the quiet wakefulness periods we analyzed, we believe they were likely to be awake because the experiments were performed during the dark phase of the light/dark cycle when they are less likely to enter a sleep state (Franken et al., 1999), and the mice did not undergo specific training to promote drowsiness or sleep.
 
@@ -151,7 +183,7 @@ ERPs are associated with higher PCIST values during awake than during isoflurane
 
 The last decade has witnessed the emergence of the mouse as a model organism to study the neuronal correlates of consciousness (Aru et al., 2020; Bharioke et al., 2022; Koch et al., 2016; Larkum, 2013; Sachidhanandam et al., 2013; Suzuki and Larkum, 2020). These studies point to the critical role of layer 5 pyramidal neurons, as well as cortico-cortical feedback to apical dendrites of infragranular pyramidal neurons. Although the present study was not designed with a classical perceived vs. non-perceived paradigm in mind (Koch et al., 2016), our finding of shorter and less complex ERPs and a reduced effectiveness of the CTC circuit during isoflurane anesthesia is certainly compatible with such results. To understand the extent to which our results generalize, it would be important to apply the PCI method to a diversity of different anesthetics in mice (e.g. Arena et al., 2021; Bharioke et al., 2022; Cavelli et al., 2022) and investigate the role of thalamic bursting and CTC activity in relation to large scale EEG dynamics in such states.
 
-## Thalamic-mediated local neural responses underlie global ERP in distant cortical regions
+### Thalamic-mediated local neural responses underlie global ERP in distant cortical regions
 
 Based on the presence of dense intercortical connections between areas (from neurons in layers 2/3–6; Harris et al., 2019), we expected that cortical stimulation during quiet wakefulness would directly elicit synaptic and spiking activity in other cortical sites outside the stimulated area. We observed large-amplitude evoked activity in the EEG and LFP in ipsilateral cortical regions close (0.5–1 mm) and up to 5 mm away from the stimulated site (Figures 2 and 3; Buzsáki et al., 2012; Kajikawa and Schroeder, 2011), consistent with complex evoked LFP responses in distal ipsilateral and contralateral cortical sites in response to electrical and optogenetic stimulation in rodents (Cavelli et al., 2022).
 
@@ -159,7 +191,7 @@ Given that the LFP reflects volume conduction and not only local activity (Buzs�
 
 The effects of electrical microstimulation are thought to be predominantly mediated by activation of axons (Gustafsson and Jankowska, 1976; Hao et al., 2016; Histed et al., 2009; Nowak and Bullier, 1998; Tehovnik et al., 2006). Therefore, the stronger evoked responses to deep stimulation could be due to activation of layers 5 and 6 cortico-thalamic cells via direct activation of axons that primarily terminate in thalamic regions (Figure 5), consistent with the literature suggesting that subcortical projecting, myelinated axons are more excitable than non-myelinated horizontal fibers within the cortex (Tehovnik and Slocum, 2013). Because most of the modulation in non-stimulated cortical regions occurs in the late time windows (25–300 ms after stimulation onset; Figure 4F), and the CSD analysis shows consistent sources/sinks across subjects only for late times (Figure 6A), we speculate that involvement of non-stimulated cortical areas is due to bursting in common thalamic projections and underscores the role of the CTC loop in perturbational complexity.
 
-## Limitations and benefits of studying ERPs in mice
+### Limitations and benefits of studying ERPs in mice
 
 There are qualitative differences between the ERPs we observed in mice and those in people (Casali et al., 2013; Comolatti et al., 2019; Ferrarelli et al., 2010; Massimini et al., 2005): most importantly, the two robust components (at 25 and 180 ms post-stimulation) in the ERPs from mice in quiet wakefulness are not apparent in human TMS-evoked EEG. Of course, there are several key differences between the brains of these two species, the most important being the three orders of magnitude difference in volume and number of neurons. The mouse brain is roughly 0.5 cm3 and contains 71 million neurons, whereas the human brain is closer to 1200 cm3 with 86 billion neurons (Herculano-Houzel et al., 2006; von Bartheld et al., 2016; Walløe et al., 2014). The smooth mouse neocortex is 0.8–1 mm thick, with 14 million neurons, whereas the highly folded human neocortex is 2.5–3.0 mm thick with 16 billion neurons (Herculano-Houzel et al., 2006; Walløe et al., 2014). Recently, Bakken et al., 2021 published a comprehensive comparative analysis of cell types across human, marmoset, and mouse cortex. A key difference they highlight is more layer 2/3 intratelencephalic neurons in primates compared to mice, whereas layer 5 extratelencephalic and layer 6 corticothalamic neurons were significantly more common in mice. This is consistent with our findings that show pronounced cortico-thalamic activation and little evidence of wide-spread cortico-cortical activation in mice.
 
@@ -171,13 +203,13 @@ Despite these differences, this study led to novel and unexpected results linkin
 
 Experimental procedures closely followed those described in Siegle et al., 2021. A summary of these methods and details of procedures that differ are provided below.
 
-## Mice
+### Mice
 
 Mice were maintained in the Allen Institute animal facility and used in accordance with protocols approved by the Allen Institute’s Institutional Animal Care and Use Committee under protocols 1703 and 2003. All experiments used C57BL/6J wild-type mice (N=37). Male and female wild-type C57BL/6J mice were purchased from Jackson Laboratories (JAX stock #000664) at postnatal day 28, and they were 9–28 weeks old at the time of all in vivo electrophysiological recordings.
 
 After surgery, all mice were single-housed and maintained on a reverse 12 hr light cycle in a shared facility with room temperatures between 20 and 22°C and humidity between 30 and 70%. All experiments were performed during the dark cycle. Mice had ad libitum access to food and water.
 
-## Surgical procedures and habituation
+### Surgical procedures and habituation
 
 Each mouse went through the following order of procedures prior to the day of the experiment: (1) an initial sterile surgery to implant an EEG array and a titanium headframe for head-fixed electrophysiological experiments in vivo; (2) 5 days of recovery time post-surgery; (3) at least 3 weeks of habituation to head-fixation; (4) a second sterile surgery to perform small craniotomies to allow for insertion of the stimulating electrode and Neuropixels probes.
 
@@ -187,109 +219,109 @@ The initial surgery was performed on healthy mice that ranged in age from 5 to 2
 
 Following habituation and up to 1 day before the recording, mice underwent the second surgical procedure. Under a microscope, the skull was exposed by drilling through the outer layer of Metabond then removing the Kwik-Cast and a small portion of the EEG polymer substrate, carefully avoiding damage to the EEG contacts. Up to three small craniotomies (less than 0.5 mm in diameter) were drilled to allow access to the brain regions of interest for the subsequent experiment. A small piece of artificial cerebrospinal fluid (ACSF)-soaked gel-foam sponge was positioned on top of each craniotomy and Kwik-Cast was used to seal it. A 3D-printed plastic well was also fixed to the existing Metabond around the craniotomies.
 
-## In-vivo recording and stimulation
+### In-vivo recording and stimulation
 
 The day of the experiment, the mouse was placed on the running wheel and fixed to the headframe clamp with two set screws. Next, the thin layer of Kwik-Cast was removed to expose the craniotomies, and abundant ACSF was added on top of the skull to prevent the exposed brain tissue from drying out. A 3D-printed cone was lowered to prevent the mouse’s tail from contacting the probes, and a black panel was placed over the front of the rig, placing the mouse in complete darkness.
 
-## EEG recording
+### EEG recording
 
 All 30 EEG electrodes were connected to a 32-channel head-stage (RHD 32ch, Intan Technologies, Los Angeles, CA, USA) controlled by an Open Ephys acquisition board (Siegle et al., 2017). EEG signals were sampled at 2.5 kHz with a low-frequency cutoff of 0.1 Hz and digitized with 16-bit resolution. Each circular, platinum electrode on the EEG array had a diameter of 500 μm and an impedance of 0.01 MΩ (impedance measured by the manufacturer). All subjects had a skull screw implanted over the right cerebellum (penetrating the skull but not the dura) that served as electrical ground. One of the following served as a common reference electrode for the EEG signals: a 0.7×0.7 mm square platinum surface electrode above the left cerebellum, a skull screw implanted over the right olfactory bulb, or a skull screw implanted over the left cerebellum.
 
-## Neuropixels recording
+### Neuropixels recording
 
 In a subset of mice (N=26/37), simultaneous recordings from the EEG array and multiple Neuropixels probes (Jun et al., 2017) were performed. These experiments used Neuropixels 3a prototypes or standard Neuropixels 1.0 probes configured to record from the 384 electrodes closest to the tip of the probe. The signals from each recording site were split in hardware into a spike band (30 kHz sampling rate, 500 Hz high-pass filter, 500× gain) and an LFP band (2.5 kHz sampling rate, 1000 Hz low-pass filter, 250× gain), and data was acquired using the Open Ephys GUI (Siegle et al., 2017). Each probe was either connected to a dedicated field-programmable gate array streaming data over Ethernet (Neuropixels 3a) or a PXIe card inside a National Instruments chassis (Neuropixels 1.0).
 
 The reference connection on the Neuropixels probes was permanently soldered to ground using a silver wire, and all recordings were made using either an external reference configuration (Neuropixels 3a) or a tip reference configuration (Neuropixels 1.0). All Neuropixels head-stage grounds, which were contiguous with the probe grounds, were connected in parallel to animal ground – a 32 AWG silver wire (A-M Systems, Sequim, Washington) placed in the ACSF on top of the craniotomies.
 
-## Neuropixels insertion
+### Neuropixels insertion
 
 During the acute electrophysiological experiment, up to three Neuropixels probes were inserted targeting motor (MO), anterior cingulate (ACA), somatosensory (SS), visual (VIS), and thalamic nuclei. We restricted our analysis of thalamic nuclei to those that had strong projections to and/or from motor and somatosensory areas (Guo et al., 2017; Harris et al., 2019): anteroventral (AV), central lateral (CL), mediodorsal (MD), posterior (PO), reticular (RT), ventral anterior-lateral (VAL), ventral posterolateral (VPL), ventral posteromedial (VPM), and ventral medial (VM). We refer to these collectively as the somatomotor-related thalamic nuclei (SM-TH), disregarding the distinction between first and higher order thalamic regions.
 
 The probe insertion process followed the steps detailed by Siegle et al., 2021. Briefly, each probe was individually inserted into the brain using a three-axis micromanipulator (New Scale Technologies, Victor, NY, USA) at a rate of 200 μm per min to a depth of 3.5 mm or less in the brain. After the probes reached their targets, they were allowed to settle for 10–15 min before starting the experiment. Before insertion, all Neuropixels probes were coated with a fluorescent dye (Vybrant DiI/DiO/DiD, ThermoFisher Scientific, Waltham, MA, USA) by repeatedly immersing them in a well filled with the dye and removing each probe slowly allowing the dye to dry on the surface.
 
-## Behavioral data and synchronization
+### Behavioral data and synchronization
 
 The angular position of the running wheel and the synchronization signal for the electrical stimulus were acquired by a dedicated computer with a National Instruments card acquiring digital inputs at 100 kHz, which was considered the master clock. A 32-bit digital ‘barcode’ was sent with an Arduino Uno (DEV-11021, SparkFun Electronics, Niwot, CO, USA) every 30 s to synchronize all devices with the neural data from the EEG array and the Neuropixels probes. Details regarding the post-hoc data synchronization using the barcodes are described by Siegle et al., 2021.
 
-## Cortical stimulation
+### Cortical stimulation
 
 Electrical stimulation was delivered through a custom bipolar platinum-iridium stereotrode (Microprobes for Life Science, Gaithersburg, MD, USA) consisting of two parallel monopolar electrodes (50 kΩ impedance) with a vertical offset of 300 µm between the two tips. During each stage of the experiment, up to 120 biphasic, charge-balanced, cathodic-first current pulses (200 μs per phase, 3.5–4.5 s inter-stimulus interval) were delivered at three different current intensities (360 pulses total). The current intensities were chosen for each animal while it was awake before starting the experiment based on the following criteria: (1) the electrical pulse did not evoke any visible twitches and (2) the medium current elicited visible averaged evoked responses for most of the EEG electrodes (n>15) defined as three SDs above baseline for at least 100 ms following the stimulus onset.
 
 The stimulation electrode was acutely inserted using a three-axis micromanipulator, like the Neuropixels probes. We targeted four locations for stimulation: MOs, layer 2/3 (N=10 mice, 0.37±0.04 mm below the brain surface); MOs, layer 5/6 (N=11 mice, 1.15±0.06 mm below the brain surface); SSp, layer 2/3 (N=8 mice, 0.47±0.06 mm below the brain surface); and SSp, layer 5/6 (N=11 mice, 0.92±0.05 mm below the brain surface). Some mice received stimulation in multiple locations (N=10). Before insertion, the stimulation electrode was coated with a fluorescent dye, like the Neuropixels probes.
 
-## Experimental timeline
+### Experimental timeline
 
 The paired EEG/Neuropixels recordings were acute, lasting 2–3 hr. At the beginning, awake head-fixed mice (free to run on or rest on the running wheel) were exposed to electrical stimuli after 5 min of baseline recording without stimulation. After the awake session, mice were anesthetized via inhaled isoflurane (5% induction) delivered through a small tube placed in front of the mouse’s nose. Once a surgical level of anesthesia was reached, the animal was maintained unconscious by keeping the isoflurane level at 1–1.5%. The unconscious state was verified by lack of reaction to noxious stimuli such as toe or tail pinch and alcohol pad close to the nose of the animal. The EEG signals were also continuously monitored to avoid the burst suppression mode indicative of very deep anesthesia (Purdon et al., 2015). Then the same electrical stimuli session was repeated. While under anesthesia, we recorded the precise concentration of isoflurane delivered over time, in addition to the data streams listed above. Finally, the isoflurane was turned off and the mouse recovered. In a subset of mice (N=16), the electrical stimuli were delivered for a third (and sometimes a fourth) time during the recovery period. The resulting dataset allowed a direct comparison of the evoked neural responses across different brain states (quiet wakefulness, running, anesthetized, recovery).
 
-## Probe removal and cleaning
+### Probe removal and cleaning
 
 Upon completion of the experiment, probes were retracted from the brain at a rate of 1 mm/s. The craniotomies were protected with a small piece of ACSF-soaked gel-foam sponge and a thin layer of Kwik-Cast before mice were removed from head fixation and returned to their home cages overnight. The probes and the stimulating electrode were immersed in a well of 1% Tergazyme for around 2–6 hr to remove residual tissue, and then rinsed in purified water.
 
-## Quality control for the EEG experiments
+### Quality control for the EEG experiments
 
-## Overall EEG signal quality
+#### Overall EEG signal quality
 
 Before the experiment, the EEG signals were tested by exposing the animal to visual flashes and evaluating the signal-to-noise ratio of the EEG evoked responses. Animals with low signal-to-noise ratio, high levels of 60 Hz noise, or large movement artifacts were not used for the experiment (8 mice).
 
-## EEG stimulation artifact
+#### EEG stimulation artifact
 
 If more than half of the EEG channels over the course of the experiment showed large stimulation artifacts lasting for hundreds of milliseconds after the stimulation onset, the session was excluded (8 sessions across 6 mice). In total, out of 37 implanted mice, 23 were included in the study.
 
-## Ex vivo imaging and localization of electrodes
+### Ex vivo imaging and localization of electrodes
 
 After the experiment, mice were deeply anesthetized (5% isoflurane) and perfused with 4% paraformaldehyde. The brains were preserved in 4% paraformaldehyde for 48 hr, rinsed with 1× PBS, and stored at 4°C in PBS. The brains were then processed in one of two ways: brains were sliced into 100 µm coronal sections using a vibratome (Leica VT1000S) and imaged with a fluorescent microscope (Olympus VS110/120) at 10× magnification, or whole brains were imaged using serial two-photon tomography (Oh et al., 2014; Ragan et al., 2012).
 
 Images of the 100 µm coronal sections were aligned to the Allen Institute Common Coordinate Framework (CCFv3) following the process detailed by McBride et al., 2023 and images from serial two-photon tomography were aligned to the CCFv3 following the process detailed by Oh et al., 2014. Fluorescent tracks corresponding to the location of the Neuropixels probes and the stimulation electrode were manually identified in the aligned images. Because each CCFv3 coordinate corresponds to a unique brain region, the precision of brain region assignments is determined by the resolution of the CCFv3, which was 25 µm per pixel. For each Neuropixels probe, the locations of major structural boundaries along the track was manually aligned with the physiology data (Liu et al., 2021; Siegle et al., 2021). Then each recording channel along the Neuropixels probe (and associated neurons) was assigned to a unique CCFv3 structure. Other studies have reported better than 0.1 mm accuracy for electrode localization following similar methods (Liu et al., 2021).
 
-## Data processing
+### Data processing
 
-## Stimulus artifact masking
+#### Stimulus artifact masking
 
 In all recordings, we observed short latency voltage transients time-locked to the stimulus. Though the stimulus had a total duration of 0.4 ms, artifacts sometimes lasted up to 2 ms. To mask the artifact, the raw signal from –2 to 0 ms was copied, reversed, and replaced the 0 to 2 ms artifact window. The same masking procedure was used across all electrophysiology data types.
 
-## EEG
+#### EEG
 
 After artifact masking, EEG recordings were visually inspected to identify electrodes containing noise artifacts or remaining large and long stimulation artifacts. These were excluded from further analysis, leaving an average of 23±4 artifact-free electrodes out of 30 for each subject. EEG signals from all good electrodes were re-referenced to the common average across electrodes and bandpass filtered from 0.1 to 100 Hz (Butterworth filter, third order). Finally, the continuous EEG signals were segmented into epochs from –2 to +2 s from stimulus onset and saved for further analysis.
 
-## Neuropixels LFP
+#### Neuropixels LFP
 
 After artifact masking, LFP signals were down sampled from 2.5 kHz to 1.25 kHz after applying an anti-aliasing filter. The signals were then high pass filtered (Butterworth filter, first order) and re-referenced to the median signal from electrodes that were in the ACSF above the brain surface (to remove common signal from the tip reference electrode). Finally, the continuous LFP signals were segmented into epochs from –2 to +2 s from stimulus onset and saved for further analysis.
 
-## Neuropixels CSD
+#### Neuropixels CSD
 
 The preprocessed LFP epochs underwent an automatic channel rejection based on Chebyshev’s inequality, iteratively interpolating any channel whose amplitude instantaneously exceeded ±7 SDs with respect to the others (Russo et al., 2021). The cleaned LFP voltages were smoothed in the time (window = 8 ms) and space domain (first smoothing window = 26 channels; second smoothing window = 4 channels). The CSD was calculated as the second spatial derivative (Mitzdorf, 1985) from the cleaned, smoothed LFP signals. The CSD formulation employed assumes an ohmic conductive medium, constant extracellular conductivity (σ=0.3 S/m), and homogeneous in-plane neuronal activity, with the boundary condition of zero current outside the sampled area.
 
-## Spike sorting
+#### Spike sorting
 
 After applying the artifact masking to the raw spike band data, it was pre-processed and spike-sorted using Kilosort 2.0 (Stringer et al., 2019) as described by Siegle et al., 2021. After spike sorting, any spikes that occurred during the artifact window (0 to +2 ms from stimulus onset) were removed from further analysis. High quality units were identified for further analysis using metrics described by Siegle et al., 2021. We classified RS and FS neurons (putative pyramidal and inhibitory neurons, respectively) based on their spike waveform duration (RS duration >0.4 ms; FS duration ≤0.4 ms Barthó et al., 2004; Bortone et al., 2014; Bruno and Simons, 2002; Jia et al., 2019; Niell and Stryker, 2008; Sirota et al., 2008).
 
-## Data analysis
+### Data analysis
 
-## EEG event-related potentials (ERPs)
+#### EEG event-related potentials (ERPs)
 
 Across each experiment, trials were classified by the behavioral state of the animal: quiet wakefulness, if the mouse’s speed (measured by the wheel’s angular velocity) was equal to 0 cm/s from –0.5 to +0.5 s from the stimulus onset; running, if the mouse’s speed was greater than 0 cm/s; anesthetized, when the mouse was unconscious; and recovery, after the isoflurane delivery was discontinued. ERPs associated with a given state were then compiled by averaging all EEG traces assigned to that state.
 
-## ERP magnitude and duration
+#### ERP magnitude and duration
 
 To quantify the ERP metrics, the trial-averaged EEG signals (–2 to +2 s after stimulus onset) were used to calculate the global field power (global mean field power) by taking the SD across all channels for every time point (Cohen, 2014; Esser et al., 2006; Lehmann and Skrandies, 1980). Next, the z-score of the global field power was computed relative to baseline values (−2–0 s). The duration of the response was measured as the length of time the global field power (z-score) was greater than 3 SDs above baseline (z=3) in the response window (0 to +2 s). The magnitude of the response was calculated by integrating under the global field power (z-score) but above z=3 in the response window and dividing it by the area under the baseline window (see Figure 1—figure supplement 2).
 
-## LFP, CSD, and population spiking magnitude
+#### LFP, CSD, and population spiking magnitude
 
 To quantify the magnitude of the evoked LFP and CSD response, the spatial average of the rectified, trial averaged signals for all channels in the respective cortical region, all layers except for layer 1. Then the AUC was calculated for the post-stimulus period (0 to +0.5 s) of the grand average (z-score of the baseline). A similar procedure was used for the population spiking, except the signals used were single neuron spike density functions. For all data types, the magnitude of the background activity was determined using a permutation test to shuffle the event onset time per trial (n=1000 shuffles), thus creating a distribution of null values representing the AUC of the background activity. The response magnitude was then calculated by subtracting the mean of the onset-shuffled values and dividing by the SD.
 
-## Significantly modulated neurons
+#### Significantly modulated neurons
 
 The fraction of neurons modulated by the electrical stimulation was quantified following the method detailed by McBride et al., 2023. Briefly, for each neuron, pre- and post-stimulus spikes were counted on a trial-by-trial basis for the specified windows: 2–25 ms, 25–150 ms, and 150–300 ms. The duration of the window was always matched for pre- and post-stimulus. Then a Wilcoxon signed-rank test was performed on the trial-wise pre- and post-stimulus spike counts to obtain a p-value. The p-values obtained for all RS neurons in all areas of interest were corrected using the Benjamini-Hochberg correction with the false discovery rate set at 0.05. Neurons with an adjusted p-value<0.05 were considered significantly modulated. They were labeled as ‘increased’ or ‘decreased’ based on whether their spike count increased or decreased, respectively, in the post-stimulus window relative to the pre-stimulus window on average.
 
-## Population CSD
+#### Population CSD
 
 To compare CSD across mice, we transformed each CSD trace to a homogeneous space (10 bins per layer) through a non-linear transform. Significantly consistent activations were assessed through a Wilcoxon signed-rank test (threshold p<0.05). Isolated significant bins (i.e. not surrounded by significant bins in both space and time) were removed.
 
-## PCI, state-transition
+#### PCI, state-transition
 
 PCIST was used to evaluate the spatiotemporal complexity of the EEG ERPs for each brain state (Comolatti et al., 2019). PCIST was computed using the code available at https://github.com/renzocom/PCIst (Comolatti, 2021), and the parameters were set as follows: baseline window = (–0.8, –0.002) s; response window = (0.002, 0.8) s; minimum SNR = 1.6; maximum variance = 99%; and the parameter k=1.2. In all calculations, the number of trials per state within subject was matched.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed in Python. All data was tested for normality using the Shapiro-Wilk test from the SciPy package (scipy.stats.shapiro). For normally distributed datasets, we used the unpaired t-test (scipy.stats.ttest_ind) or the paired t-test (scipy.stats.ttest_rel). For non-parametric datasets, we used the Mann-Whitney U test (scipy.stats.mannwhitneyu) or the Wilcoxon signed-rank test (scipy.stats.wilcoxon). All comparisons using t-tests are two-sided. Statistical comparisons between multiple groups were performed using both parametric (ANOVA) and non-parametric (Friedman) tests with post-hoc, pairwise comparisons corrected for multiple comparisons using Benjamini-Hochberg false discovery rate. Correlational analyses were performed using Pearson correlation coefficients.
 

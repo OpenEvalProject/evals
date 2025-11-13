@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.35738.001 HIV-1 accesses the nuclear DNA of interphase cells via a poorly defined process involving functional interactions between the capsid protein (CA) and nucleoporins (Nups). Here, we show that HIV-1 CA can bind multiple Nups, and that both natural and manipulated variation in Nup levels impacts HIV-1 infection in a manner that is strikingly dependent on cell-type, cell-cycle, and cyclophilin A (CypA). We also show that Nups mediate the function of the antiviral protein MX2, and that MX2 can variably inhibit non-viral NLS function. Remarkably, both enhancing and inhibiting effects of cyclophilin A and MX2 on various HIV-1 CA mutants could be induced or abolished by manipulating levels of the Nup93 subcomplex, the Nup62 subcomplex, NUP88, NUP214, RANBP2, or NUP153. Our findings suggest that several Nup-dependent ‘pathways’ are variably exploited by HIV-1 to target host DNA in a cell-type, cell-cycle, CypA and CA-sequence dependent manner, and are differentially inhibited by MX2.
+HIV-1 accesses the nuclear DNA of interphase cells via a poorly defined process involving functional interactions between the capsid protein (CA) and nucleoporins (Nups). Here, we show that HIV-1 CA can bind multiple Nups, and that both natural and manipulated variation in Nup levels impacts HIV-1 infection in a manner that is strikingly dependent on cell-type, cell-cycle, and cyclophilin A (CypA). We also show that Nups mediate the function of the antiviral protein MX2, and that MX2 can variably inhibit non-viral NLS function. Remarkably, both enhancing and inhibiting effects of cyclophilin A and MX2 on various HIV-1 CA mutants could be induced or abolished by manipulating levels of the Nup93 subcomplex, the Nup62 subcomplex, NUP88, NUP214, RANBP2, or NUP153. Our findings suggest that several Nup-dependent ‘pathways’ are variably exploited by HIV-1 to target host DNA in a cell-type, cell-cycle, CypA and CA-sequence dependent manner, and are differentially inhibited by MX2.
 
 ## Introduction
 
@@ -39,9 +39,23 @@ Here, we explore the functional interactions between HIV-1 CA, Nups, MX2, and Cy
 
 ## Results
 
-## HIV-1 infectivity and MX2 antiviral potency is influenced in complex ways by cell-type, cell-cycle, CypA, and viral capsid sequence
+### HIV-1 infectivity and MX2 antiviral potency is influenced in complex ways by cell-type, cell-cycle, CypA, and viral capsid sequence
 
 For initial experiments to simultaneously assess the role of cell-type, CypA and cell-cycle in HIV-1 infection and its inhibition by MX2, we generated HeLa and HT1080 cell lines that expressed MX2 in a doxycycline-inducible manner and challenged these cells with HIV-1WT, derivatives encoding CA mutations (some of which had been selected for MX2-resistance), and other lentiviruses (Figure 1 and Figure 1—figure supplements 1 and 2). Cells were also treated with aphidicolin prior to infection to arrest the cell-cycle, and/or the CypA inhibitor CsA at the time of infection to abolish CypA:CA interactions. In a third cell line (HOS), MX2 was not well expressed using the inducible vector and therefore only effects of cell-cycle and CypA:CA interaction on infection were measured therein (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig1-v2.jpg)
+
+**Figure 1.:** Wild-type (WT) or CA-mutant HIV-1-GFP reporter virus infection of dividing or non-dividing (aphidicolin treated) HeLa or HT1080 cells expressing doxycycline-inducible MX2 in the presence (white bars) or absence (black bars) of pretreatment with doxycycline (Dox) and the presence or absence of CsA. Titers are represented as mean +sem of infectious units per pg of reverse transcriptase (RT), n ≥ 3 technical replicates, representative of five independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Infection of dividing or non-dividing (aphidicolin treated) HeLa or HT1080 cells expressing doxycycline-inducible MX2 in the presence (white bars) or absence (black bars) of pretreatment with doxycycline (Dox) and the presence or absence of CsA with various GFP reporter viruses. Titers are represented as mean +sem of infectious units per pg of reverse transcriptase (RT) or infectious units per ml (for FIV and EIAV), n ≥ 3 technical replicates, representative of five independent experiments. FIV, feline immunodeficiency virus; EIAV, equine infectious anemia virus.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** WT, CA-mutant HIV-1, or HIV-2-GFP reporter virus infection of dividing or non-dividing (aphidicolin treated) HOS cells expressing doxycycline-inducible MX2 in the presence or absence of CsA. Titers are represented as mean +sem of infectious units per pg of reverse transcriptase (RT), n = 3 technical replicates, representative of four independent experiments.
 
 For HIV-1WT, MX2 antiviral potency was enhanced by growth-arrest in HeLa cells, similar to our previous findings in HOS and K562 cells (Kane et al., 2013). However, growth-arrest caused only a marginal increase in MX2 potency in HT1080 cells. As expected from previous work (Hatziioannou et al., 2005; Sokolskaja et al., 2004), HIV-1WT was largely unaffected by CsA addition in HeLa cells but its infectivity was reduced upon CsA addition in both HT1080 and HOS cells (Figure 1 and Figure 1—figure supplement 3). CsA addition abolished the anti-viral activity of MX2 in both HeLa and HT1080 cells, suggesting that MX2 is active only against CypA bound or modified HIV-1WT capsids in these contexts.
 
@@ -57,19 +71,43 @@ A particularly striking phenotype was observed with the HIV-1N57S CA mutant, whi
 
 These experiments demonstrate that MX2 and CypA can either inhibit or enhance HIV-1 infection. Their effects clearly varied in a cell-type, cell-cycle and CA-sequence dependent manner. Thus, both the viral capsid, and some feature of the cellular environment that varies in the aforementioned cell lines, presumably other cellular factor(s), determine whether MX2 and CypA inhibit or enhance HIV-1 infection.
 
-## Variation in Nup expression among cell types
+### Variation in Nup expression among cell types
 
 Both CA sequence and CypA have been reported to affect the requirement for particular Nups during HIV-1 infection (Matreyek and Engelman, 2011; 2013). Moreover, MX2 localizes to nuclear pores and appears to act at the nuclear entry step of HIV-1 infection. Mutants of MX2 have also been reported to broadly affect nuclear import (King et al., 2004). For these reasons and because the nuclear envelope fragments during cell division, we next considered whether the varied effects of CA sequence, MX2, CypA, cell-type and cell-cycle on HIV-1 infection might be mediated through Nups or NTRs.
 
 To begin to examine whether Nups or NTRs might govern the differential effects of the aforementioned factors on HIV-1 infection, we examined the levels of each Nup and a subset of NTRs in a panel of cell lines, including a number of T-cell derived, monocyte derived, and adherent cell lines commonly utilized in HIV-1 research. Certain Nups (SEH1, GLE1, and NUP214) that we were unable to detect by western blotting were excluded from this analysis. We found several striking differences in the levels of individual Nups among this panel of cell lines (Figure 2 and Figure 2—figure supplement 1). For example, the monocytic THP-1 and U937 cells expressed lower levels of almost all Nups than other cell lines, suggesting that they may have fewer nuclear pores. Additionally, HT1080 cells did not express detectable levels of NUP210. We also found that natural target cells of HIV-1 infection, namely primary CD4+ T cells and macrophages exhibited differences in nucleoporin expression levels (Figure 2—figure supplements 2 and 3). For example, dramatically higher levels of NUP37 were found in primary macrophages as compared to MT4, THP-1, and primary CD4+ T cells, while lower levels of NUP210 were present in macrophages. The appearance of unanticipated anti-Nup antibody reactive species in some cell lines and in primary cells suggested potential differences in the expression of alternative isoforms of several Nups (Figure 2 and Figure 2—figure supplement 2). However, this cannot be definitely determined without more extensive investigation, as non-specific binding by the Nup-specific antibodies may underlie this variability. These results are consistent with previous studies reporting cell-type dependent differences in Nup expression (D'Angelo et al., 2009; Gomez-Cavazos and Hetzer, 2015; Lowe et al., 2015; Lupu et al., 2008; Ori et al., 2013) and suggest that marked compositional heterogeneity of NPCs occurs between cell types. Alternatively, it is possible that the fraction of each Nup protein that is associated with nuclear pores varies with cell type. In such a scenario the capsids could interact with Nups in the cytoplasm, and both the NPC-associated and cytoplasmic forms of a given Nup could have an effect on viral infection. In any case, variation in Nup levels has the potential to affect HIV-1 infection and its modulation by cell-cycle, CypA, and MX2.
 
-## Multiple Nups bind HIV-1 CA tubes in vitro
+![Figure 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot analysis of expression of Nups (color-coded by subcomplex as indicated in panel B), selected NTRs, and CPSF6 in T cell (MT4, CEM X174, Jurkat, SupT1, H9), adherent cell (HeLa, HOS, HT1080, 293T), or monocytic cell (THP-1, K-562, U937) lines. Where with multiple bands were detected, arrowheads indicate the band whose migration most closely matched the predicted molecular weight of the Nup/NTR. The indicated bands were utilized for quantification in Figure 2—figure supplement 1, and correspond to the band highlighted in Figure 5. Each well was loaded with 10 μL of lysate containing 104 cells. Each blot represents one of at least three replicates produced from two or three separately generated cell lysates. (B) Schematic representation of the nuclear pore complex listing individual members of each subcomplex, color-coded to correspond to the labels for the western blot in panel (A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Heat map representing Nup, selected NTRs, and CPSF6 protein levels in T cell (MT4, CEM X174, Jurkat, SupT1, ) adherent cell (HeLa, HOS, HT1080, 293T), or monocytic cell (THP-1, K-562, U937) lines (color-coded by subcomplex as in Figure 2) from the individual blots shown in Figure 2 (n = 1). Heat maps are normalized for each protein such that the highest expressing cell line is assigned a value of 1.0 (black), while undetectable expression is assigned a zero value (white). (B) Heat map representing protein levels from the blots shown in Figure 2 normalized to LAMIN B1 expression (determined by dividing Nup/NTR expression by LAMIN B1 expression and assigning the maximum for each Nup/NTR a value of 1.0).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Western blot analysis of expression of Nups, selected NTRs, and CPSF6 in MT4, THP-1, primary CD4+ T cells, and macrophages from two donors (color coded by subcomplex as in Figure 2B). Arrowheads indicate the band whose migration most closely matched predicted molecular weight of the Nup/NTR. The indicated bands were utilized for quantification in Figure 2—figure supplement 2 and correspond to the band highlighted in Figure 5. Each blot represents one of at least two replicates.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Heat map representing Nup, selected NTRs, and CPSF6 protein levels in MT4, THP-1, primary CD4+ T cells, and macrophages from two donors (color coded by subcomplex as in Figure 2) from the individual blots shown in Figure 2—figure supplement 2 (n = 1). Heat maps are normalized for each protein such that the highest expressing cell line is assigned a value of 1.0 (black), while undetectable expression is assigned a zero value (white). (B) Heat map representing protein levels from the blots shown in Figure 2—figure supplement 2 normalized to LAMIN B1 expression (determined by dividing Nup/NTR expression by LAMIN B1 expression and assigning the maximum for each Nup/NTR a value of 1.0).
+
+### Multiple Nups bind HIV-1 CA tubes in vitro
 
 Nups have been found to interact with the HIV-1 CA in genetic assays, and NUP153 and NUP98 have been shown to bind to assembled CA-nucleocapsid (NC) tubes in vitro (Di Nunzio et al., 2013; Matreyek et al., 2013). In order to monitor binding interactions between CA tubes and Nups, we tested binding to CA nanotubes assembled in high salt, as done previously for CypA (Liu et al., 2016). These viral capsid-mimics were then incubated with lysates of HeLa cells, which contained matching NaCl concentrations to maintain the integrity of CA tubes during the binding assay. Subsequent centrifugation allowed us to separate CA tubes together with cognate binding partners in pelleted fractions from unbound cellular proteins and monomeric CA in supernatants (Figure 3 and Figure 3—figure supplement 1A). Indeed, comparison of unbound versus bound fractions revealed that the vast majority of cellular proteins were not pulled-down by CA tubes (Figure 3—figure supplement 1A). Additionally, the failure of CA tubes containing the N74D mutation to bind to CPSF6 (Figure 3—figure supplement 1B) further indicates that the assay detects specific protein-protein interactions. We used western blot assays to test for interactions between CA tubes and CA tube binding partners (CPSF6 and MX2) as well as representative Nups (NUP107, NUP133, NUP155, NUP62, RANBP2, NUP88, NUP153)
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig3-v2.jpg)
+
+**Figure 3.:** (A) CA tubes were assembled in vitro and incubated with lysates of HeLa cells without (lanes 1–5) or with (lanes 6–10) Dox dependent expression of MX2. The reaction mixtures were subjected to centrifugation to separate pulled-down (or bound) fractions from supernatant (unbound) proteins. Lanes 1 and 6: cellular lysates; Lanes 2 and 7: supernatants from control experiments without CA tubes; Lanes 3 and 8: supernatants after incubating cellular lysates with CA tubes; Lanes 4 and 9: pulled-down fractions from control experiments in the absence of CA tubes; Lanes 5 and 10: proteins bound to CA tubes. Bands shown in each blot correspond to those indicated in Figure 2. Representative of two independent experiments. (B) Schematic representation of the nuclear pore complex listing individual members of each subcomplex tested in (A).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Coomassie stained SDS-PAGE image for pull-down experiments with in vitro assembled CA tubes and HeLa cell lysates. Lanes 1–10 correspond to those in Figure 3. In addition, molecular weight markers are shown. Representative of two independent experiments. (B) WT and N74D CA tubes were assembled in vitro and incubated with lysates of HeLa cells without (lanes 1–7) or with (lanes 9–15) Dox dependent expression of MX2. The reaction mixtures were subjected to centrifugation to separate pulled-down (or bound) fractions from supernatant (unbound) proteins. Lanes 1 and 9: cellular lysates; Lanes 2 and 10: supernatants from control experiments without CA tubes; Lanes 3 and 11: supernatants after incubating cellular lysates with WT CA tubes; Lanes 4 and 12: supernatants after incubating cellular lysates with N74D CA tubes; Lanes 5 and 13: pulled-down fractions from control experiments in the absence of CA tubes; Lanes 6 and 14: CPSF6 bound to WT CA tubes; Lanes 7 and 15: No CPSF6 bound to N74D CA tubes. Representative of two independent experiments.
+
 Notably, CPSF6 was detected in the CA-tube bound fractions (lane 5 Figure 3) and, in fact, was entirely depleted from the cellular lysates by WT CA tubes (compare lanes 2 and 3, Figure 3). Similarly, almost complete depletion from cell lysates was observed for NUP62, NUP88, and NUP153, suggesting that these proteins are tightly bound to the CA tubes. RANBP2 was also bound to CA tubes, but a significant fraction of this protein remained in the unbound supernatant. It should be noted that there are numerous interactions between individual Nups; therefore, binding to CA tubes by individual Nups in this assay may not necessarily reflect direct binding in all cases. Nevertheless, not all Nups interacted with CA tubes, as little or no binding was detected for NUP107, NUP133, and NUP155. Finally, expression of MX2 following doxycycline addition also confirmed a robust interaction between MX2 and the viral CA tubes (lane 10, Figure 3). MX2 expression did not detectably affect the interaction between Nups and CA tubes (compare lanes 5 and 10, Figure 3). However, because the CA tubes are in large excess in this assay, this finding does not exclude the possibility that MX2 could inhibit infection by competitively inhibiting interactions between CA and Nups.
 
-## Effects of depleting individual Nups on NPC integrity
+### Effects of depleting individual Nups on NPC integrity
 
 We next sought to determine the importance of Nups and NTRs on HIV-1 infection and the antiviral activity of MX2 in variable cell contexts. To accomplish this, we used a panel of siRNAs targeting human Nups and NTRs, as well as CPSF6 and MX2 as controls (Figure 4A–B). We used HeLa, HT1080, and HOS cells in these experiments because (i) there were notable differences between them in the effects of cell cycle, CsA and CA mutations on HIV-1 infection (Figure 1 and Figure 1—figure supplements 2 and 3) and (ii) siRNA transfection and knockdown was efficient in these cells. Cells were transfected with siRNAs before being split into replicate wells for MX2 induction (doxycycline treatment) and growth arrest (aphidicolin treatment). The cells in one replicate well were subjected to western blot analysis to confirm that knockdown efficiency was the same for each condition in each experiment. Overall, Nup and NTR depletion was efficient in all cell lines, including under conditions of growth arrest, with a few exceptions (Figure 5 and Figure 5—figure supplements 1–6). Nups whose protein levels were not reduced to <30% of control levels following siRNA transfection were excluded from subsequent analyses.
 
@@ -77,13 +115,133 @@ We next sought to determine the importance of Nups and NTRs on HIV-1 infection a
 
 **Figure 4.:** (A) Schematic representation of the nuclear pore complex and genes included in siRNA library color coded by subcomplex. (*NUP98 is listed as a member of Nup107 subcomplex, however. NUP98 and NUP96 are produced following autoproteolytic cleavage of a polyprotein precursor (Fontoura et al., 1999; Rosenblum and Blobel, 1999), the siRNA used herein targets both Nups). Importins/nuclear transport receptors (NTRs) included in the siRNA library are listed in black. Also included, siRNA targeting MX2 or CPSF6 and a non-targeting control siRNA. (B) Experimental strategy to investigate the roles of Nups and NTRs involved in HIV-1 infection, MX2 subcellular localization, and anti-viral activity of MX2. For a detailed description, refer to the Materials and methods.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-v2.jpg)
+
+**Figure 5.:** Heat map representing Nup and NTR protein levels (color coded by subcomplex as in Figure 4A and according to the included schematic) in dividing (top) and non-dividing (bottom) HeLa cells 64 hr after transfection with the indicated siRNA. Protein levels are expressed as ratios of Nup/NTR expression:LAMIN B1 expression, based on the blots shown in Figure 5—figure supplement 3 and 4 normalized to control siRNA transfected cells that were assigned a value of 1.0 (black). Reduced expression is indicated in gray-white, with no detectable expression assigned a zero value (white). Red boxes highlight corresponding antibody-siRNA pairs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Heat map representing protein levels of Nups or NTRs (color coded by subcomplex as in Figure 4A) in dividing (top) and non-dividing (bottom) HT1080 cells 64 hr after transfection with the indicated siRNA. Protein levels are expressed as ratios of Nup/NTR expression:LAMIN B1 expression, based on the blots shown in Figure 5—figure supplement 5, normalized to control siRNA transfected cells that were assigned a value of 1.0 (black). Reduced expression is indicated in gray-white, with no detectable expression assigned a zero value (white). Red boxes highlight corresponding antibody-siRNA pairs.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Heat map representing protein levels of Nups or NTRs (color coded by subcomplex as in Figure 4A) in dividing (top) and non-dividing (bottom) HOS cells 64 hr after transfection with the indicated siRNA. Protein levels are expressed as ratios of Nup/NTR expression:LAMIN B1 expression, based on the blots shown in Figure 5—figure supplement 6, normalized to control siRNA transfected cells that were assigned a value of 1.0 (black). Reduced expression is indicated in gray-white, with no detectable expression assigned a zero value (white). Red boxes highlight corresponding antibody-siRNA pairs.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Western blot analysis of Nup and NTR expression levels in HeLa cells stably transduced with doxycycline-inducible MX2 64 hr after transfection with the indicated siRNA color coded by subcomplex as in Figure 4A. Red boxes highlight lanes for corresponding antibody-siRNA pairs. Bands for each Nup/NTR correspond to those indicated in Figure 2. Each blot was generated from an experiment in which the effect of siRNA knockdown on the subcellular localization of MX2 and Nups, as well as on WT HIV-1 infection was similar to that shown below. The complete array of blots was conducted once, although randomly selected blotting experiments carried out in triplicate (approximately 10), as well as infectivity data indicated both consistent levels of knockdown and pleiotropic effects across experiments.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Western blot analysis of Nup and NTR expression levels in growth arrested (aphidicolin treated) HeLa cells stably transduced with doxycycline-inducible MX2 64 hr after transfection with the indicated siRNA color coded by subcomplex as in Figure 4A. Red boxes highlight lanes for corresponding antibody-siRNA pairs. Bands for each Nup/NTR correspond to those indicated in Figure 2. Each blot is generated from an experiment in which the effect of siRNA knockdown on WT HIV-1 infection was similar to that shown in . The complete array of blots was conducted once, although randomly selected blotting experiments carried out in triplicate (approximately 10), as well as infectivity data indicated both consistent levels of knockdown and pleiotropic effects across experiments.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Western blot analysis of Nup and NTR expression levels in A) dividing and B) non-dividing (aphidicolin treated) HT1080 cells stably transduced with doxycycline-inducible MX2 64 hr after transfection with the indicated siRNA color coded by subcomplex as in Figure 4A. Red boxes highlight lanes for corresponding antibody-siRNA pairs. (n/a – not tested since HT1080 cells do not express NUP210, see Figure 2—figure supplement 1). Bands for each blot correspond to those indicated in Figure 2. Each blot was generated from an experiment in which the effect of siRNA knockdown on the subcellular localization of MX2 and Nups, as well as on WT HIV-1 infection was similar to that shown below. The complete array of blots was conducted once, although blotting experiments carried out in triplicate (approximately 5), as well as infectivity data indicated both consistent levels of knockdown and pleiotropic effects across experiments.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Western blot analysis of Nup and NTR expression levels in A) dividing and B) non-dividing (aphidicolin treated) HOS cells 64 hr after transfection with the indicated siRNA color coded by subcomplex as in Figure 4A. Red boxes highlight lanes for corresponding antibody-siRNA pairs. Bands for each blot correspond to those indicated in Figure 2. Each blot was generated from an experiment in which the effect of siRNA knockdown on WT HIV-1 infection was similar to that shown below. The complete array of blots was conducted once, although blotting experiments carried out in triplicate (approximately 5), as well as infectivity data indicated both consistent levels of knockdown and pleiotropic effects across experiments.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** Cell-cycle profile of HOS cells 64 hr after transfection with the indicated siRNA or following aphidicolin treatment, color coded by subcomplex as in Figure 4A. DNA content was determined by flow cytometry following staining with the DNA dye DRAQ5. For each plot, 3000–12000 events were collected. Representative of two independent experiments. 2N and 4N DNA content are indicated for the Control siRNA transfected sample.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig5-figsupp8-v2.jpg)
+
+**Figure 5—figure supplement 8.:** Cell-cycle profile of HeLa cells 64 hr after transfection with the indicated siRNA or following aphidicolin treatment, color coded by subcomplex as in Figure 4A. DNA content was determined by flow cytometry following staining with the DNA dye propidium iodide (PI). For each plot, 3000–12000 events per sample were collected. Representative of two independent experiments. 2N and 4N DNA content are indicated for the Control siRNA transfected sample.
+
 To monitor potential pleiotropic effects following Nup depletions we examined the levels of Nups other than the one targeted by each specific siRNA. In the case of HeLa cells this analysis was done for all Nups for which antibodies were available. In the case of HT1080 and HOS cells, we monitored pleiotropic effects on Nups in the same subcomplex as the siRNA target. For the purposes of this analysis, the Nup93 subcomplex, the Nup62 subcomplex, the transmembrane subcomplexes, as well as the cytoplasmic and nuclear basket Nups were considered separate subcomplexes. We found quite dramatic changes in the levels of Nups other than the targeted Nup that varied depending on cell-type and cell-cycle (Figure 5 and Figure 5—figure supplements 1–6). The widespread pleiotropic effects of Nup or NTR depletion likely reflect the remarkable complexity of nuclear pore structure and formation, and the tight transcriptional, post-transcriptional, and post-translational controls of Nup expression levels [reviewed in (Doucet and Hetzer, 2010). We additionally assessed the impact of Nup or NTR depletion on cellular physiology by DNA content mediated cell-cycle analysis in HOS and HeLa cells (HT1080 cells were not amenable to reproducible measurements of DNA content) (Figure 5—figure supplements 7 and 8). While a few Nup/NTR depletions affected the cell-cycle profile, decreasing the proportion of cells in G2 (in particular NUP93, NUP205, and KPNB1), and decreased the overall levels of nucleoporins, most knockdowns did not affect the cell cycle, and none caused complete growth arrest, suggesting that at least at the time of infection, cell physiology was not grossly disrupted by Nup/NTR depletion, in most cases.
 
 We also determined whether the recruitment of several representative Nups to the NPC was altered upon knockdown of each individual Nup. Specifically, the localizations of NUP153, RANBP2, NUP98, NUP62 and NUP214 were assessed following siRNA knockdown of all Nups in HeLa and/or HT1080 cells (Figure 6 and Figure 6—figure supplements 1–14). These Nups were chosen for assessment as representatives of the majority of the NPC subcomplexes, and based on the availability of antibodies that worked well in immunofluorescence assays.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-v2.jpg)
+
+**Figure 6.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoechst-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Summary of the localization of Nups, MX2-RFP, CPSF6-RFP, or NLS-GFP-LacZ fusions upon siRNA transfection of HeLa or HT1080 cells shown in Figure 6, and Figure 6—figure supplements 1–18. Aberrant localization following siRNA transfection in ≥~80% of cells is indicated by an ‘x’ and normal localization is indicated by a dot.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP153 (green), RANBP2 (purple), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP62 (green), and Hoechst-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP62 (green), and Hoechst-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP214 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 10.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp10-v2.jpg)
+
+**Figure 6—figure supplement 10.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP214 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 11.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp11-v2.jpg)
+
+**Figure 6—figure supplement 11.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing CPSF6-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP98 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 12.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp12-v2.jpg)
+
+**Figure 6—figure supplement 12.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing CPSF6-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP98 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 13.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp13-v2.jpg)
+
+**Figure 6—figure supplement 13.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing CPSF6-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP98 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 10 μm. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 14.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp14-v2.jpg)
+
+**Figure 6—figure supplement 14.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing CPSF6-RFP (red, stably transduced with a doxycycline inducible vector), immunoflourescently stained NUP98 (green), and Hoescht-stained DNA. Cells were fixed and stained 64 hr after transfection with the indicated siRNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 15.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp15-v2.jpg)
+
+**Figure 6—figure supplement 15.:** HeLa cells stably transduced with SV40 NLS-GFP-LacZ fusion protein (green) and doxycycline-inducible MX2-RFP in the absence of doxycycline fixed and stained with Hoescht 64 hr after transfection with the indicated siRNA. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 16.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp16-v2.jpg)
+
+**Figure 6—figure supplement 16.:** HeLa cells stably transduced with SV40 NLS-GFP-LacZ fusion protein (green) and doxycycline-inducible MX2-RFP in the absence of doxycycline fixed and stained with Hoescht 64 hr after transfection with the indicated siRNA. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 17.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp17-v2.jpg)
+
+**Figure 6—figure supplement 17.:** HeLa cells stably transduced with MX2(N25)-GFP-LacZ fusion protein (green) and doxycycline-inducible MX2-RFP in the absence of doxycycline fixed and stained with Hoescht 64 hr after transfection with the indicated siRNA. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 18.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp18-v2.jpg)
+
+**Figure 6—figure supplement 18.:** HeLa cells stably transduced with MX2(N25)-GFP-LacZ fusion protein (green) and doxycycline-inducible MX2-RFP in the absence of doxycycline fixed and stained with Hoescht 64 hr after transfection with the indicated siRNA. Representative of two independent experiments, with at least three images acquired per experiment.
+
+![Figure 6—figure supplement 19.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp19-v2.jpg)
+
+**Figure 6—figure supplement 19.:** Deconvolution microscopic images (single optical sections) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector). Representative of three independent experiments, with at least three images acquired per experiment. (A) Immunoflourescently stained NUP98 (green), NUP133 (purple), and Hoescht-stained DNA. Top- early- mitotic cell with condensed chromatin; bottom- late-mitotic cell with separating chromosomes. (B) Immunoflourescently stained RANBP2 (top, middle-green; bottom-purple), NUP153 (top, middle-purple; bottom-green), and Hoescht-stained DNA. Top- early- mitotic cell with condensed chromatin; middle and bottom- late-mitotic cells with separating chromosomes.
+
+![Figure 6—figure supplement 20.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig6-figsupp20-v2.jpg)
+
+**Figure 6—figure supplement 20.:** Deconvolution microscopic images (single optical sections) of HT1080 cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector). Representative of three independent experiments, with at least three images acquired per experiment. (A) Immunoflourescently stained NUP98 (green), NUP133 (purple), and Hoescht-stained DNA. Top- early- mitotic cell with condensed chromatin; bottom- late-mitotic cell with separating chromosomes. (B) Immunoflourescently stained RANBP2 (top-green; middle, bottom-purple), NUP153 (top-purple; middle, bottom-green), and Hoescht-stained DNA. Cells in anaphase through telophase/cytokinesis from top to bottom.
+
 The effects of Nup knockdown on the localization of other Nups were diverse. Strikingly, NUP153 remained localized at the nuclear envelope following knockdown of each of the other Nups. This finding is likely a reflection of the fact that NUP153 recruitment to the nuclear envelope is an early event during nuclear pore formation, and its incorporation into the nuclear envelope is not therefore expected to be dependent on other Nups (Figure 6 and Figure 6—figure supplements 1–6) (Bodoor et al., 1999; Vollmer et al., 2015). In contrast, several Nup siRNA knockdowns caused mislocalization of RANBP2, NUP214, NUP62, and/or NUP98 (Figure 6, Figure 6—figure supplements 1–14). Depletion of the Nups known to participate in the early stages of NPC formation (e.g. ELYS and NUP153), or those known to form the structural scaffold of the nuclear pore complex (e.g. NUP107 and NUP133), or those with the clear effects on cell viability (e.g. NUP93 and NUP205), had the most obvious and pervasive effects on the localization of other Nups. Conversely, the knockdown of several Nups (e.g. NUP188, NUP214, and NUP88) had no effect on the apparent localization of the other Nups, despite having clear effects on their protein levels. This finding suggests that some Nups are destabilized in the absence of their NPC binding partners. Importantly, the aforementioned results highlight the pleiotropic effects associated with the depletion of some individual Nups (e.g. NUP153) and indicate that cautious interpretation of targeted Nup knockdown or knockout experiments in general is warranted. In general, the knockdown of an individual Nup often changed the level of other Nups and the composition of NPCs in ways that were not easily predicted.
 
-## Effects of depleting individual Nups on NLS function
+### Effects of depleting individual Nups on NLS function
 
 To assess nuclear pore function under conditions of Nup knockdown, we generated cell lines expressing GFP-LacZ fusion proteins appended with one of two different NLS sequences. As expected, the unmodified GFP-LacZ fusion was excluded from the nucleus, while a GFP-LacZ appended with a canonical SV40 large T-antigen NLS appeared almost entirely localized to the nucleus (Figure 6—figure supplements 15 and 16). When appended to GFP-LacZ, the N-terminal 25 amino acids of MX2 acted as an NLS, and caused MX2(25)NLS-GFP-LacZ to localize to the interior of the nucleus (Figure 6—figure supplements 17 and 18). Interestingly, the nuclear interior localization of MX2(25)NLS-GFP-LacZ contrasted with the nuclear pore localization of MX2 itself, and with the nuclear pore localization of MX2(25)-Mx1 (Goujon et al., 2014), suggesting that some property of MX2 and MX1 confers nuclear pore entrapment on a signal that would direct transport of an otherwise inert cargo to the nuclear interior.
 
@@ -91,7 +249,7 @@ Depletion of Nups and NTRs revealed that most perturbations allowed residual nuc
 
 These experiments indicate that at least some nuclear pores survive and retain transport activity following the knockdown of most individual Nups. Moreover, nuclear transport driven by two different NLS sequences exhibited marked differences in sensitivity to perturbation by siRNA-mediated alterations of Nup or NTR levels.
 
-## Nup composition or conformation controls NPC recruitment of MX2
+### Nup composition or conformation controls NPC recruitment of MX2
 
 Because individual Nup depletions could affect recruitment of other Nups as well as NPC function, we next determined whether the Nup depletions affected recruitment of MX2 to the NPC. To accomplish this, we used a doxycycline-inducible C-terminally tagged MX2-tagRFP expression construct. Additionally, because perturbation of nuclear transport has been shown to cause relocalization of CPSF6 and reveal a mis-localization dependent antiviral activity (De Iaco et al., 2013; Fricke et al., 2013; Hori et al., 2013; Lee et al., 2010; Price et al., 2012), we also monitored the localization of CPSF6-RFP in the same way. In control siRNA treated cells, the MX2-RFP fusion was concentrated at the nuclear envelope (Figure 6), and the CPSF6-RFP fusion was found only within the nuclear interior in most cells (Figure 6—figure supplements 11–14). However, cytoplasmic localization of CPSF6 was observed in some (~5%) control siRNA treated cells (Figure 6—figure supplement 14), indicating that CPSF6 may not be confined to the nucleus at all times. Moreover, MX2 sometimes appeared in small aggregates in the cytoplasm of unmanipulated HT1080 cells, in addition to localizing at the nuclear envelope (Figure 6—figure supplement 4).
 
@@ -103,19 +261,59 @@ Because the recruitment of MX2 to NPCs was clearly dependent on certain Nups, we
 
 Although we were not able to resolve individual nuclear pores via immunofluorescence, we could observe differences in the co-localization of MX2 with a number of Nups in interphase cells (Figure 7A and Figure 7—figure supplements 1–3). In particular, the MX2-RFP fusion was most strongly co-localized with NUP98, NUP133, NUP62, RANBP2, NUP88, NUP214, NUP153, and NUP50, but showed significantly less co-localization with NUP85, ELYS, and NUP35. These differences were also reflected in the co-localization of Nups with one another (Figure 7B and Figure 7—figure supplements 1–3). For example, NUP98, NUP133, NUP153, NUP214, RANBP2, and NUP62 colocalized well with each other and less well with ELYS, NUP35, and NUP85. These findings could be explained by varied composition of individual nuclear pores, and/or new pores assembling during interphase, in which some, but not all Nups are present within a nascent NPC. The details of interphase NPC assembly are not fully understood, but a number of important features distinguish interphase and mitotic NPC assembly (see discussion). It is therefore conceivable that nuclear pores at various stages of formation could be observed within a single cell, and possible that pores formed during interphase could be compositionally or conformationally distinct from those formed post-mitosis. It is also possible that the apparent heterogeneity in NPC observed in immunofluorescence reflects the occlusion of Nup antibody epitopes in a subset of NPCs. Epitopes could be inaccessible to antibodies as a result of conformational variability (such as during transport or pore formation) and may therefore not actually be reflective of compositional differences. In either case, these results suggest that NPC heterogeneity, in some form, affects the recruitment of MX2.
 
-## Variable effects of Nup and NTR depletions on HIV-1 infection
+![Figure 7.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig7-v2.jpg)
+
+**Figure 7.:** (A) Pearson’s coefficient for co-localization of MX2 with indicated Nups and (B) Nups with one another of deconvolution microscopic images of HeLa cells expressing MX2-RFP and immunoflourescently stained with Nups (color coded as in Figure 4A). Each data point represents an individual cell and the horizontal bar is the mean (n ≥ 6). For NUP98, RANBP2, and NUP153, triangles and circles in A) represent cells stained with secondary antibodies coupled to different flourophores (AlexaFlour-488 and AlexaFlour-647).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Deconvolution microscopic images (single optical sections approximately coincident with the dorsal surface of the nucleus) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector). Immunoflourescently stained (A) NUP98 (green), ELYS (blue); (B) NUP98 (green), NUP133 (blue); (C) NUP153 (green), NUP98 (blue). Green pseudocolored images were stained with AlexaFlour-488 secondary, blue pseudocolored images were stained with AlexaFlour-647 secondary. Scale bar = 10 μM. Representative of three independent experiments, with at least four images acquired per experiment.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Deconvolution microscopic images (single optical sections approximately coincident with the dorsal surface of the nucleus) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector). Immunoflourescently stained (D) stained NUP153 (green), RANBP2 (blue); (E) NUP214 (green), NUP153 (blue); (F) NUP62 (green), RANBP2 (blue). Green pseudocolored images were stained with AlexaFlour-488 secondary (or NUP62-FITC conjugated primary), blue pseudocolored images were stained with AlexaFlour-647 secondary. Scale bar = 10 μM. Representative of three independent experiments, with at least four images acquired per experiment.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Deconvolution microscopic images (single optical sections approximately coincident with the dorsal surface of the nucleus) of HeLa cells expressing MX2-RFP (red, stably transduced with a doxycycline inducible vector). Immunoflourescently stained (G) NUP62 (green), NUP35 (blue); (H) NUP35 (green), NUP88 (blue); (I) NUP85 (green), NUP50 (blue). Green pseudocolored images were stained with AlexaFlour-488 secondary (or NUP62-FITC conjugated primary), blue pseudocolored images were stained with AlexaFlour-647 secondary. Scale bar = 10 μM. Representative of three independent experiments, with at least four images acquired per experiment.
+
+### Variable effects of Nup and NTR depletions on HIV-1 infection
 
 To determine the effects of NPC perturbation on HIV-1 infection and MX2 activity, cells in which each individual Nup had been targeted with an siRNA were infected with a GFP-reporter virus. Depletion of a number of Nups affected HIV-1WT infectivity, particularly in dividing HeLa cells (Figure 8A top). Indeed, with the notable exceptions of RANBP2 and NUP153, Nup depletions generally had a smaller effect on HIV-1WT infection in non-dividing as compared to dividing HeLa cells (Figure 8A). A possible explanation for this could be the reduced pleiotropic effects of Nup depletion in non-dividing HeLa cells (Figure 5), due to the absence of cell division. Nevertheless, most knockdowns had significant effects on the levels of multiple Nups in both dividing and non-dividing cells. The effect of Nup depletion on HIV-1 infection did not always correlate with CA binding; for example, NUP62 knock-down had little effect on HIV-1 infectivity, despite a strong interaction with the CA tubes, while Nup107 bound only weakly to CA tubes (Figure 3), although its depletion did inhibit HIV-1 infection (Figure 8), presumably through effects on other Nups or perturbation of the overall structure of the NPC.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-v2.jpg)
+
+**Figure 8.:** (A) Infectivity of HIV-1 GFP reporter virus in dividing (top) and non-dividing (bottom) HeLa cells stably transduced with doxycycline-inducible MX2 in the presence (open circles) or absence (filled circles) of doxycycline 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Middle, summary of localization of MX2 from immunoflouresence images in Figure 6. Aberrant localization following siRNA transfection in ≥~80% of cells is indicated by an ‘x’ and normal localization is indicated by a dot. Titers are mean ±sem, n = 3 technical replicates, representative of four independent experiments. (B) Infectivity of HIV-1 GFP reporter virus in dividing (top) and non-dividing (bottom) HT1080 cells stably transduced with doxycycline-inducible MX2 in the presence (open triangles) or absence (filled triangles) of doxycycline. Cells were infected 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Middle, summary of localization of MX2 from immunoflouresence images in Figure 6. Aberrant MX2 localization following siRNA transfection in ≥~80% of cells is indicated by an ‘x’ and normal localization is indicated by a dot. Titers are mean ±sem, n = 3 technical replicates, representative of three independent experiments. n/a – not included due to insufficient knockdown (NUP37, RAE1) or not expressed (NUP210). (C) Schematic representation of the nuclear pore complex and target genes included in siRNA library color coded by subcomplex, as in Figure 4A.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Infectivity of HIV-1 GFP reporter virus in dividing (top) and non-dividing (bottom) HOS cells 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ±sem, n = 3 technical replicates, representative of three independent experiments.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Deconvolution microscopic images (single optical sections) of immunoflourescently stained myc-tagged ARFAPTIN2 or MX2(N91)-ARFAPTIN2 fusion proteins (green), NUP98 (red), and DAPI-stained DNA. Optical sections are approximately through the center of the vertical dimension on the nucleus. Scale bar = 5 μm. (B–C) Western blot analysis of ARFAPTIN2 fusion protein expression (α-myc and α-LAMIN B1) in B) HeLa or C) HT1080 cells in the presence or absence of doxycycline. (D) Infection of HeLa cells stably transduced with doxycycline-inducible ARFAPTIN2 myc-tagged fusion proteins with various GFP reporter viruses in the presence (white bars) or absence (black bars) of doxycycline. Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Infection of HeLa cells stably transduced with doxycycline-inducible arfaptin2 myc-tagged fusion proteins with various GFP reporter viruses in the presence (white bars) or absence (black bars) of doxycycline. Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments. (B) Infectivity of HIV-1 N57S mutant GFP reporter virus in HT1080 cells stably transduced with arfaptin2 fusion proteins in the presence (white bars) or absence (black bars) of doxycycline and the presence or absence of CsA. Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments. (C) Infectivity of HIV-1-GFP reporter virus in dividing or non-dividing (aphidicolin treated) HeLa cells stably transduced with doxycycline-inducible arfaptin2 or MX2(N91)-arfaptin2 in the presence (open circles) or absence (filled circles) of doxycycline. Titers are mean ± sem, n = 3 technical replicates and are representative of three independent experiments. (D) Infectivity of HIV-1 GFP reporter virus in growth arrested (aphidicolin treated) HeLa cells stably transduced with doxycycline-inducible MX2(N91)-ARFAPTIN2 in the presence (open circles) or absence (filled circles) of doxycycline. Cells were infected 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Infectivity of (A) HIV-2 or (B) SIVmac GFP reporter virus in HeLa cells stably transduced with doxycycline-inducible MX2 in the presence (open circles) or absence (filled circles) of doxycycline. Cells were infected 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** Infectivity of (A) EIAV or (B-D) FIV GFP reporter virus in (A-B) HeLa or (C) HT1080 cells stably transduced with doxycycline-inducible MX2 in the presence (open symbols) or absence (filled symbols) of doxycycline, or (D) HOS cells. Cells were infected 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments. n/a – not included due to insufficient knockdown (NUP37, RAE1) or not expressed (NUP210).
+
 Comparison of the effects of Nup depletion on HIV-1 infection in HeLa, HT1080, and HOS cells revealed several notable differences, despite similar knockdown efficiencies (Figure 8 and Figure 8—figure supplement 1). Overall, HIV-1 appeared less sensitive to Nup depletion in HT1080 cells than in HeLa and HOS cells. Notably, the widely reported effects of RANBP2 and NUP153 on HIV-1 infection of HeLa cells (Figure 8A) were less evident in HT1080 cells (Figure 8B). Moreover, the larger effects of Nup depletion in dividing versus non-dividing HeLa cells were not observed in either HT1080 or HOS cells. In fact, several Nup depletions (NUP205, NUP62, NUP54, and NUPL1) had larger effects on HIV-1 infection in non-dividing as compared to dividing HOS cells (Figure 8—figure supplement 1).
 
-## Nups are required for MX2 antiviral activity
+### Nups are required for MX2 antiviral activity
 
 A number of Nup depletions caused reduction in the anti-viral activity of MX2. Some depletions affected both the infectivity of HIV-1, and the antiviral activity of MX2 while other depletions did not reduce HIV-1 infectivity but did reduce MX2 activity. Curiously, there was not a clear correlation between whether a knockdown caused apparent perturbation of the subcellular localization of MX2 and whether it caused loss of antiviral activity (Figure 8A).
 
 In HeLa cells, the effects of Nup depletion on the antiviral activity of MX2 were more pronounced in non-dividing compared to dividing cells (Figure 8A). Moreover, some Nup depletions (SEH1, NUP85, NUP160, SEC13, NUP98, NUP107, ELYS/ACHTF1, NUP93, NUP205, NUP88, and NUP214) that reduced both HIV-1 infection and MX2 activity in dividing HeLa cells, affected MX2 activity but not HIV-1 infection in non-dividing HeLa cells. A number of differences were evident in the Nup requirements for MX2 activity in HeLa and HT1080 cells. This was despite the fact that both cell lines exhibit similar Nup requirements for the subcellular localization of MX2 (Figures 6 and 8). Specifically, some Nup depletions that reduced the antiviral activity of MX2 in HeLa cells, did not affect its activity in HT1080 cells. Moreover, several Nup/NTR depletions (e.g. NUP155, NUP54, NUPL1, RANBP2, NUP153, and KPNB1) resulted in a dramatic increase in MX2 antiviral activity, specifically in non-dividing HT1080 cells, while having no effect or diminishing activity in HeLa cells. Overall, both HIV-1 infection and MX2 activity were affected by Nup perturbation, and these effects were clearly cell-type and cell-cycle dependent.
 
-## Distinct Nup requirements for the antiviral activity of an MX2 amino-terminal domain fused to heterologous protein
+### Distinct Nup requirements for the antiviral activity of an MX2 amino-terminal domain fused to heterologous protein
 
 Analyses of interspecies chimeric proteins have revealed that sequences near the MX2 N-terminus dictate anti-viral specificity (Busnadiego et al., 2014; Goujon et al., 2015), suggesting that this domain is responsible for binding to the HIV-1 capsid. Additionally, the MX2 N-terminus contains the NLS and is required for MX2 targeting to nuclear pores. The N-terminal 91 amino acids of MX2, that contain both the specificity determinants and the NLS, have been shown to confer anti-HIV-1 activity when transferred to proteins that form multimers (MX1 and FV1), but do not normally possess anti-HIV-1 activity (Goujon et al., 2015, 2014).
 
@@ -125,15 +323,23 @@ HIV-1WT was inhibited by MX2(N91)-ARFAPTIN2 and by a positive control CypA-ARFAP
 
 Notably, the requirements for Nups/NTRs in the antiviral activity of MX2(N91)- ARFAPTIN2 differed from those for MX2. Inhibition of HIV-1 by MX2(N91)- ARFAPTIN2 was reduced by some Nup depletions, but depletion of several other Nup/NTRs that impaired MX2 activity (e.g. NUP107, NUP153, and TNPO1; Figure 8A) did not affect MX2(N91)- ARFAPTIN2 activity (Figure 8—figure supplement 3C). These observations suggest that MX2(N91)-ARFAPTIN2 occluded access of HIV-1 to nuclear DNA in an at least partly different manner to the authentic MX2 protein. Potentially these disparities could be due to differences in subcellular localization, or the result of distinctive interactions with NPC components.
 
-## Distinct Nup requirements for infection and MX2 activity in the context of lentiviruses other than HIV-1
+### Distinct Nup requirements for infection and MX2 activity in the context of lentiviruses other than HIV-1
 
 Since the sensitivities of the primate lentiviruses, HIV-2 and SIVmac, and the nonprimate lentiviruses, EIAV and FIV, to MX2 are distinct from HIV-1, we also investigated how Nup depletion altered their infectivity and susceptibility to MX2 activity. HIV-2 and SIVmac infection were inhibited by many Nup depletions and both were modestly sensitive to depletions of a number of Nups that did not affect HIV-1 infection (e.g. NUP155, TPR, NUP62, NUP54, NUPL1 (Figure 8—figure supplement 4). The MX2 sensitivity of HIV-2 and SIVmac was also differently affected by certain Nup depletions (e.g. NUP88, NUP214) as compared to HIV-1 (Figure 8—figure supplement 4).
 
 Nup depletions generally had lesser effects on EIAV and FIV infection of HeLa cells as compared to primate lentiviruses (Figure 8—figure supplement 5A–B). Importantly, the reduced sensitivity of these viruses to Nup depletion indicates that sensitivity of the primate lentiviruses, HIV-1, HIV-2, and SIVmac (Figure 8, Figure 8—figure supplement 4) was not merely the result of non-specific effects on cell viability or physiology, but more likely due to selective effects on nucleocytoplasmic trafficking. Surprisingly, some Nup depletions that targeted members of the Nup62 subcomplex (NUP62, NUP54, NUPL1) increased FIV infection in HeLa cells. The majority of Nup depletions had little effect on MX2 resistance of FIV or EIAV, but some depletions marginally sensitized EIAV or FIV to inhibition by MX2 in HeLa cells (NUP205, NUP155, NUP54, NUPL1, KPNB1) (Figure 8—figure supplement 5A–B). FIV infectivity and MX2 resistance were also unaffected by most Nup depletions in HT1080 cells, but a small number of knockdowns (NUP93, NUP205, NUP160) were significantly deleterious to FIV infection in HOS cells (Figure 8—figure supplement 5C–D). These results highlight differences among lentiviruses in their Nup requirements for infection of human cells. However, these findings should not necessarily be interpreted as revealing the Nup requirements of FIV and EIAV in their natural hosts. The apparent resistance of FIV and EIAV to Nup depletion in human cells could reflect an inability to engage preferred Nups in human cells due to sequence differences from their natural hosts.
 
-## Effects of Nup and NTR depletions on the infectivity, and MX2 and CypA sensitivity of HIV-1 CA mutants
+### Effects of Nup and NTR depletions on the infectivity, and MX2 and CypA sensitivity of HIV-1 CA mutants
 
 Because the effects of CA mutation on HIV-1 infection and MX2 sensitivity varied with cell-type, we next investigated the effects of Nup depletion on selected HIV-1 CA mutants. Overall, there was substantial variability in the effects of Nup depletion on infection by CA mutants, as well as differential effects on CA mutants across the three cell lines (Figure 9 and Figure 9—figure supplement 1).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig9-v2.jpg)
+
+**Figure 9.:** Infectivity of HIV-1 CA mutant GFP reporter viruses in HeLa or HT1080 cells stably transduced with doxycycline-inducible MX2 in the presence (open symbols) or absence (filled symbols) of doxycycline, 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ± sem, n ≥ 3 technical replicates, representative of three independent experiments. n/a – not included due to insufficient knockdown (NUP37, RAE1) or not expressed (NUP210).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Infectivity of HIV-1 CA mutant GFP reporter viruses in HOS cells or HT1080 cells stably transduced with doxycycline-inducible MX2 in the presence (open symbols) or absence (filled symbols) of doxycycline. Cells were infected 64 hr after transfection with siRNA (color coded by subcomplex as in Figure 4A). Titers are mean ± sem, n = 3 technical replicates, representative of three independent experiments. n/a – not included due to insufficient knockdown (NUP37, RAE1) or not expressed (NUP210).
 
 The cell cycle-dependent CA mutant, HIV-1N57S' should access target cell chromosomal DNA selectively during cell division and is therefore not expected to require intact nuclear pores for infection. However, HIV-1N57S was highly dependent upon certain Nups (Figure 9A and Figure 9—figure supplement 1A and B). Indeed, the HIV-1N57S mutant was sensitive to depletion of NUP133, particularly in HeLa cells, while WT virus was not affected by this perturbation (Figures 8A and 9A). Conversely, in several cases, the CA mutants exhibited reduced sensitivity to Nup depletion compared to the WT virus, particularly in HeLa cells. Note that these CA mutants exhibited reduced infectiousness compared to the WT virus, and so their reduced sensitivity to Nup depletion could reflect an inability to exploit Nups in the same way as HIV-1WT rather than acquisition of the ability to use alternative pathways. Consistent with the idea that HIV-1 CA mutants fail to exploit Nups in the same way as HIV1WT, the HIV-1T210K, HIV-1A92E, and HIV-1N57S CA mutants that were partially or completely resistant to MX2 in dividing HeLa cells, remained largely unaffected by MX2 upon Nup/NTR depletion in dividing HeLa cells (Figure 9A,B and D). Conversely, the HIV-1A92E CA mutant that exhibits HIV1WT levels of infectivity in HT1080 cells was sensitive to MX2 in HT1080 cells. This MX2 sensitivity was reduced by some Nup/NTR depletions (e.g. NUP93, NUP88, NUP214) (Figure 9C). Finally, the modest increase of HIV-1G89V infectivity exerted by MX2 could be either amplified by some Nup depletions (e.g. NUP88, NUP214) or diminished by other Nup depletions (e.g. NUP54, NUPL1, RANBP2) (Figure 9E–F).
 
@@ -153,7 +359,7 @@ Infection by HIV-1N57S was strongly inhibited by CsA in HT1080 cells (Figure 1) 
 
 Overall, the positive and negative effects of CypA and MX2 on HIV-1 infection were clearly dependent on Nups. Moreover, there was significant overlap in the identity of Nups and NTRs that mediate MX2 and CypA effects on HIV-1 infection.
 
-## MX2 can inhibit nuclear transport of nonviral cargos in an import pathway dependent manner
+### MX2 can inhibit nuclear transport of nonviral cargos in an import pathway dependent manner
 
 The variable effects of Nup perturbation on infection by HIV-1WT and CA according to cell-line, cell-cycle and CsA treatment seemed inconsistent with the notion that HIV-1 exploits a single pathway (as defined by a particular set of Nups) to access host DNA. Moreover, different NLS sequences exhibited different Nup requirements (Figure 6—figure supplements 1 and 15–18) suggesting that different nuclear entry pathways have distinct dependencies on a given set of Nups. These findings, coupled with the fact that MX2 preferentially colocalized with certain Nups (Figure 7), led us to explore the hypothesis that MX2 preferentially inhibits specific nuclear import pathways, in particular those favored by HIV-1.
 
@@ -162,6 +368,65 @@ Therefore, we next tested whether MX2 could disrupt specific cellular nuclear im
 ![Figure 12.](https://cdn.elifesciences.org/articles/35738/elife-35738-fig12-v2.jpg)
 
 **Figure 12.:** (A) HeLa cells stably transduced with vectors expressing the indicated NLS-GFP-LacZ fusion protein (green) and doxycycline-inducible MX2-RFP, were untreated or treated with doxycycline to induce MX2-RFP prior to being fixed and stained with Hoechst. Representative of three independent experiments, with at least three images acquired per experiment. (B) Schematic representing NLS-GFP-LacZ fusion location in the presence or absence of MX2-RFP (indicated in red).
+
+**Table 1.**
+ Nuclear localization signals fused to GFP-LacZ
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parent protein</th>
+      <th>NLS-type</th>
+      <th>Reference(s)</th>
+      <th>Cloning method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SV40 Large T Antigen</td>
+      <td>Monopartite class 1</td>
+      <td>(Mattaj and Englmeier, 1998)</td>
+      <td>oligonucleotide annealing</td>
+    </tr>
+    <tr>
+      <td>C-MYC</td>
+      <td>Monopartite class 2</td>
+      <td>(Kosugi et al., 2009)</td>
+      <td>oligonucleotide annealing</td>
+    </tr>
+    <tr>
+      <td>DDX21</td>
+      <td>Monopartite class 3</td>
+      <td>(Kosugi et al., 2009)</td>
+      <td>oligonucleotide annealing</td>
+    </tr>
+    <tr>
+      <td>Nucleoplasmin</td>
+      <td>Bipartite</td>
+      <td>(Mattaj and Englmeier, 1998)</td>
+      <td>oligonucleotide annealing</td>
+    </tr>
+    <tr>
+      <td>HNRNP K (KNS)</td>
+      <td>n/a</td>
+      <td>(Michael et al., 1997)</td>
+      <td>PCR amplification</td>
+    </tr>
+    <tr>
+      <td>HTLV-1 Rex</td>
+      <td>n/a</td>
+      <td>(Siomi et al., 1988; Slamon et al., 1988)</td>
+      <td>oligonucleotide annealing</td>
+    </tr>
+    <tr>
+      <td>MX2</td>
+      <td>n/a</td>
+      <td>(Melén et al., 1996)</td>
+      <td>PCR amplification</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -183,7 +448,7 @@ The crystal structure of MX2 reveals that it forms an extended antiparallel dime
 
 A subset of Nup depletions exhibited particularly interesting or complex effects on HIV-1 infection. Their effects on cell-type, cell-cycle, viral CA, and CypA dependent phenotypes in viral infection and MX2 activity suggest that their levels, or their presence in individual NPCs, play key direct or indirect roles in determining the availability of pathways by which HIV-1 accesses the nucleus and/or target cell chromatin.
 
-## NUP155 and the Nup93 complex
+### NUP155 and the Nup93 complex
 
 NUP155 is part of the Nup93 subcomplex that contains NUP93, NUP205, NUP155, NUP188, and NUP35 (Figure 4A). Structural analyses of human and C. thermophilum nuclear pores indicate that NUP155 exists both buried within the inner ring of the nuclear pore, and as a link between the inner and outer rings, where it is exposed in the bridge between the two rings (Kosinski et al., 2016; Lin et al., 2016). Multiple structural conformations of the C. thermophilum homologue of NUP155 (NUP170) have been observed (Lin et al., 2016), raising the possibility that differences in NUP155 conformation could underlie structural heterogeneity among individual nuclear pores. Interestingly, the relative levels of individual components of the Nup93 complex varied among cell lines. For example, NUP155 protein levels were low in T-cell and myeloid cell lines compared to the adherent cells. These findings suggest that the composition of the Nup93 complex is variable among cell types. NUP155 depletion had little effect on the levels of other Nups, but likely causes changes in nuclear pore composition, as its depletion induced clear mislocalization of NUP62, NUP214, and RANBP2.
 
@@ -193,7 +458,7 @@ Perturbation of the NUP155 and the Nup93 complex also impacted the effect of CA 
 
 Overall, manipulations of NUP155 and other Nup93 subcomplex components recapitulated, abolished, or otherwise modified several of the key cell-type- and CA-dependent differences in the effects of CypA and MX2 on HIV-1 infection. These results suggest that the Nup93 subcomplex is a key regulator of the functional interaction between the HIV-1 CA and the nuclear pore complex, and that variation in the composition of this complex among cell types or during the cell cycle could underlie several of the discrepant effects of CA mutations, CypA, and MX2 on HIV-1 infection.
 
-## The Nup62 complex
+### The Nup62 complex
 
 The Nup62 subcomplex in the central channel of the pore consists of NUP62, NUP54, and NUP58 (NUPL1). Little sequence similarity is evident among orthologous members of the Nup62 complex in evolutionarily divergent species, but its overall structure is well conserved, as are multiple interactions among the components (Chug et al., 2014; Stuwe et al., 2015). Additional interactions anchor the Nup62 subcomplex to the nuclear pore scaffold and regulate transport (Chug et al., 2015; Knockenhauer and Schwartz, 2016; Yoshimura et al., 2013). The Nup62 complex forms an elongated, rigid structure, with FG domains extending into the channel of the pore forming a barrier on an elastic anchor that may allow for long-range movements to accommodate large cargos (Chug et al., 2015).
 
@@ -205,7 +470,7 @@ That manipulation of the Nup62 complex had both positive and negative effects on
 
 Structural analysis indicates that the NUP62 complex forms an elongated, rigid structure, with FG domains extending into the channel of the pore forming a barrier on an elastic anchor that may allow for long-range movements to accommodate large cargos (Chug et al., 2015). One possibility is that MX2 affects the movement of this trimeric complex within the channel of the pore, or the allosteric interactions between the Nup62 complex members (Koh and Blobel, 2015a) thereby altering CA interactions with the NPC.
 
-## RANBP2
+### RANBP2
 
 RANBP2 encodes multiple domains, including several FG repeats, four Ran-binding domains, a SUMO E3-ligase domain, a RANGAP interacting domain, and a CypA homology domain (Knockenhauer and Schwartz, 2016). It is the major component of the filaments on the cytoplasmic face of the NPC and has been implicated in a number of cellular activities other than nuclear import (Chatel and Fahrenkrog, 2012). While RANBP2 has previously been reported to enhance HIV-1 infection, the domains required and the mechanism by which RANBP2 facilitates HIV-1 infection remain controversial (Dharan et al., 2016; Di Nunzio et al., 2012; Meehan et al., 2014; Schaller et al., 2011; Zhang et al., 2010)(reviewed in (Matreyek and Engelman, 2013). In agreement with previous reports, we found that RANBP2 knockdown inhibited HIV-1WT infection of HeLa cells. In HT1080 and HOS cells however, effects of RANBP2 knockdown on HIV-1WT were more modest (3-fold) (Figure 8 and Figure 8—figure supplement 1).
 
@@ -215,7 +480,7 @@ RANBP2 depletion changed some, but not all, of the effects of CypA on HIV-1 infe
 
 A recent report has also implicated RANBP2 in stabilization of the structure of the cytoplasmic ring of the Nup107 (Y) complex, adding an essential scaffolding function to this protein, which thereby affects the local conformation of the scaffold of the pore (von Appen et al., 2015). As a dynamic interactor with the NPC, it is then conceivable that in addition to direct interactions with the viral CA, RANBP2-dependent conformational changes create heterogeneity in NPCs that influence the interaction between the viral CA, MX2, and Nups.
 
-## NUP88 and NUP214
+### NUP88 and NUP214
 
 NUP88 is localized to the cytoplasmic face of the NPC and forms a stable, interdependent subcomplex with NUP214 (Fornerod et al., 1997). Accordingly, depletion of either NUP88 or NUP214 dramatically reduced levels of NUP88 and NUP214, as measured by western blotting or immunofluorescence (Figure 5 and Figure 6—figure supplement 9 ) NUP88 and NUP214 have been reported to mediate attachment of RANBP2 to the NPC (Bernad et al., 2004). However, no mislocalization of RANBP2 or any of other Nups tested was observed upon NUP88 or NUP214 depletion (Figure 6—figure supplements 1–14). Nevertheless, perturbation of RANBP2-NUP88 interactions could potentially affect the overall configuration of nuclear pores.
 
@@ -223,7 +488,7 @@ Effects of NUP88 and NUP214 depletion on HIV-1 infection and MX2 activity were g
 
 NUP88 and NUP214 were not required for the localization of MX2 at the NPC but depletion of these proteins reduced the antiviral activity of MX2 against HIV-1WT in both HeLa and HT1080 cells, irrespective of the cell cycle (Figure 8). However, MX2 activity against HIV-2 or SIVmac was unaffected. In the case of HIV-1G89V, whose infection was inhibited by NUP88 and NUP214 depletion in HeLa cells, expression of MX2 completely restored infection (Figure 9E–F). Thus, altering nuclear pore composition via NUP88/214 depletion clearly modified the effect of MX2 on infection in a CA dependent manner, but had little effect on the action of CsA/CypA. While not required for HIV-1WT infection, NUP88/214 could play a direct role, as NUP88 bound to CA tubes and was depleted from cell lysates following incubation with CA tubes.
 
-## NUP153
+### NUP153
 
 NUP153 is one of three Nups that form the basket-like structure that extends from the NPC into the nuclear interior. NUP153 directly interacts with the Nup107 complex, and is essential both for NPC formation during interphase, and for the recruitment of several Nups upon mitotic exit (Burke and Ellenberg, 2002; Vollmer et al., 2015). NUP153 was unique among the Nups examined in that it remained localized to the nuclear envelope following depletion of any other Nup (Figure 6 and Figure 6—figure supplements 1–6). This finding is consistent with the notion that NUP153 is the first Nup recruited to the chromosomes during late anaphase (Bodoor et al., 1999), and directly recruited to the inner nuclear membrane during interphase (Vollmer et al., 2015). This lack of dependence on other Nups further suggests that NUP153 helps to initiate the formation of nuclear pores. In addition to interactions with the NPC scaffold, NUP153 directly interacts with Ran, as well as with transport receptors, including TNPO1 (Nakielny et al., 1999). NUP153 may therefore facilitate nuclear import cycles by accelerating the dissociation of cargo-transport receptor complexes. Interestingly, NUP153 interaction with the NPC is dynamic; it shuttles and/or extends between the nuclear and cytoplasmic faces of the NPC (Nakielny et al., 1999) and is only transiently associated with a given NPC (Rabut et al., 2004b).
 
@@ -235,7 +500,7 @@ The effects of NUP153 depletion on HIV-1 infection in CsA treated cells were als
 
 The increased antiviral activity of MX2 upon depletion of some Nups, specifically in non-dividing HT1080 cells, along with the importance of NUP153 in initiating interphase NPC formation suggest the possibility that some depletions preferentially deplete nascent pores. Existing pores, while smaller in number, may retain function but may be more readily occupied by MX2. Likewise, perhaps differences in the fraction of NPCs that are assembled in interphase could underlie the cell-type dependent differences in MX2 activity observed in in non-dividing cells.
 
-## CPSF6 and TNPO3
+### CPSF6 and TNPO3
 
 TNPO3 is a nuclear import factor for serine-arginine-rich (SR) proteins involved in RNA splicing (Lai et al., 2001). TNPO3 was identified as a potential HIV-1 cofactor in genome-wide RNAi screens, and then later reported to directly bind the viral integrase and CA in vitro (reviewed in (Matreyek and Engelman, 2013). More recent studies indicate that the effect of TNPO3 depletion on HIV-1 infection is mediated by redistribution of the SR protein CPSF6 from the nucleus to the cytoplasm (De Iaco et al., 2013; Fricke et al., 2013). CPSF6 directly interacts with the viral CA via the same binding pocket as NUP153 (Lee et al., 2010; Matreyek et al., 2013; Price et al., 2012), and when re-localized to the cytoplasm, inhibits HIV-1 infection (Lee et al., 2010). Although CPSF6 depletion does not significantly affect HIV-1WT infection in vitro (Lee et al., 2010), selective pressure appears to maintain CPSF6-CA interactions in vivo (Henning et al., 2014; Saito et al., 2016). Several potential explanations for maintenance of CPSF6-CA interactions have been proposed, including promoting interactions with other host factors such as NUP153 and RANBP2 (Henning et al., 2014; Price et al., 2012), evasion of cytosolic immune sensors (Rasaiyaah et al., 2013), and the targeting of integration to transcriptionally active chromatin (Rasheedi et al., 2016; Sowd et al., 2016).
 
@@ -245,7 +510,7 @@ While CPSF6 depletion has little effect on WT HIV-1 infection in these in vitro 
 
 The effects of CPSF6 on HIV-1N57S mutant were surprising given that studies indicate that N57 is critical for interaction with CPSF6 (Matreyek et al., 2013; Price et al., 2012). Furthermore, since NUP153 binds CA in this pocket, it was expected that HIV-1N57S would be NUP153-independent, as has been shown for HIV-1N57A in HOS cells (Matreyek et al., 2013). However, while HIV-1N57S infection was indeed largely insensitive to NUP153 depletion in HOS and HT1080 cells, HIV-1WT and HIV-1N57S were equivalently sensitive to NUP153 knockdown in HeLa cells (Figure 8A, Figure 8—figure supplement 1, Figure 9, and Figure 9—figure supplement 1). Collectively, these data suggest that NUP153 or CPSF6 might have roles in HIV-1 infection beyond their interactions with their binding pocket in CA.
 
-## KPNB1
+### KPNB1
 
 Depletion of KPNB1 had pleitropic effects in the levels of other Nups, and also appeared to cause growth arrest (Figure 5—figure supplements 7 and 8). Despite the pleiotropic effects, KPNB1 depletion only moderately inhibited HIV-1 infection in HeLa cells, in a manner that was accentuated by aphidicolin treatment. KPNB1 depletion had a smaller effect on HIV-1WT infection in HT1080 cells but caused a large accentuation of MX2 activity. Indeed HIV-1 infection was inhibited by ~200 fold in non-dividing HT1080 cells depleted of KPNB1. Notably, depletion of KPNB1 slightly sensitized EIAV and FIV to MX2. HIV-1N57S was strikingly inhibited by KPNB1 depletion, and the ability of MX2 to reverse CypA induced inhibition of HIV-1N57S infection was abolished by KPNB1 depletion (Figure 8, Figure 8—figure supplement 5, Figure 9A, Figure 9—figure supplement 1B–C, and Figure 11C). KPNB1 has been shown to interact with NUPL1 (NUP58) and NUP153, thereby affecting the conformation of the Nup62 complex in the central channel and altering the permeability of the pore in a Ran-dependent manner (Koh and Blobel, 2015b; Lowe et al., 2015). These reports in combination with our findings suggest the possibility that depletion of KPNB1 could alter the structure of the NPC in a cell-type dependent manner.
 
@@ -253,7 +518,7 @@ Exploration of the utilization of cellular machinery by viruses and the mechanis
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 The LKO-derived tetracycline-inducible lentiviral expression vector was modified from the previously described pLKO.dCMV.TetO/R (pLKOΔ) (Busnadiego et al., 2014). The unique NotI site in pLKOΔ-MycHsMX2-IP was destroyed and the myc-tag and MX2 ORF were removed and replaced with an SfiI-EcoRI-NotI-SfiI multiple cloning site by oligonucleotide annealing using NheI and EcoRV sites. pLKOΔ-blasti was constructed by transfer of a unique XmaI/NotI fragment (containing sequences for the internal ribosome entry site [IRES] and blasticidin-resistance cassette) from CSIB (Kane et al., 2013) into pLKOΔ replacing the IRES and puromycin-resistance cassette. Untagged MX2 was then inserted into pLKOΔ vector using SfiI.
 
@@ -265,42 +530,522 @@ NLS-GFP-LacZ fusions were expressed using an LHCX based retroviral vector (Invit
 
 An HIV-1 GFP reporter virus containing the N74D capsid mutation (HIV-1N74D) was generated by overlap PCR and insertion into pNHGCapNM as described previously (Rihn et al., 2013) using NotI and MluI sites with the following primers: CapNM 5’-GTA AGA AAA AGG CAC AGC AAG CGG CCG CTG-3’ and 5’-CTT GGC TCA TTG CTT CAG CCA AAA CGC GTG-3’; N74D 5’-GTT AAA AGA GAC CAT CGA TGA GGA AGC TGC AG-3’ and 5’-CTG CAG CTT CCT CAT CGA TGG TCT CTT TTA AC-3’.
 
-## Cell lines
+### Cell lines
 
 The adherent human HEK 293T (CVCL_0063), HeLa (CVCL_0030)HOS (CVCL_0312), and HT1080 (CVCL_0317) cell lines were maintained in Dulbecco’s Modified Eagles Medium (DMEM) with 10% fetal calf serum (FCS) and gentamicin. The suspension T cell [MT4 (CVCL_2632), CEM X174 (CVCL_X615), SupT1(CVCL_1714), Jurkat (CVCL_0367), H9(CVCL_1240)] and monocytic cell [THP-1 (CVCL_0006), K-562 (CVCL_0004), U937 (CVCL_0007)] lines were maintained in Roswell Park Memorial Institute Medium (RPMI) with 10% FCS and gentamicin. All cells were purchased from ATCC or provided by the NIH AIDS Reagent Program (MT4 and CEM X174) and were assumed to authenticated by their supplier and were not further characterized. Cells were monitored for retroviral contamination by SYBR-Green based PCR RT assay. Mycoplasma testing was not specifically performed, but many cell lines were used in immunofluorescence assays with Hoechst staining that would have revealed the presence of mycoplasma. Derivatives of HeLa and HT1080 cells containing doxycycline-inducible MX2, or fusion proteins were generated by transduction with LKO-derived lentiviral vectors (Busnadiego et al., 2014) followed by selection in 1 μg ml−1 puromycin or 5 μg ml−1 blasticidin (Sigma-Aldrich). Vector stocks for transduction were generated by co-transfection of 293 T cells with a VSV-G expression plasmid, an HIV-1NL4-3 Gag-Pol expression plasmid, and a CSIB or LKO-derived vector, or an MLV Gag-Pol expression plasmid and an LHCX-derived vector using polyethyleneimine (PolySciences). Expression was induced in pLKO transduced cell lines through an overnight treatment with 500 ng/ml doxycycline hyclate (Sigma-Aldrich) prior to challenge with retroviruses or retroviral vectors.
 
-## Primary cell isolation
+### Primary cell isolation
 
 Human peripheral blood mononuclear cells were isolated from blood by gradient centrifugation in Lymphocyte Separation Medium (Corning). For macrophage isolation, 108 cells/dish were plated in 10 cm dishes in serum free RPMI (Gibco) for four hours, followed by aspiration to remove non-adherent cells and replacement of medium with 10% FCS supplemented with 100 ng/ml GMCSF (Gibco) for 72 hr (media was replaced once at 24 hr). For CD4+ T cell isolation, 3 × 106 cell/mls were grown in RPMI medium supplemented with 10% FCS and 50 u/ml IL-2 (PreproTech) for 72 hr followed by purification with the Human CD4+ T cell Enrichment Kit (Stem Cell Technologies). Cells were lysed in NuPage LDS buffer (Novex), and the appropriate dilutions for western blotting were determined by comparison of LAMIN B1 levels between MT4, THP-1, and primary cell lysates.
 
-## Viruses
+### Viruses
 
 All viruses were generated by transfection of 293 T cells using using polyethyleneimine (PolySciences). GFP reporter proviral plasmids HIV-1NL4-3ΔEnv-GFP (HIV-1, HIV-1G89V, HIV-1A92E, and G94D CA mutants (Hatziioannou et al., 2004)), NHGCapNM (wild-type, HIV-1N57S, HIV-1N74D, G208R, and HIV-1T210K CA mutants (this investigation and (Rihn et al., 2013)), HIV-2RODΔEnv-GFP, SIVMACΔEnv-GFP (Hatziioannou et al., 2003) 10 μg of proviral plasmid was co-transfected with 1 μg of VSV-G expression plasmid. For MLV, EIAV, and FIV, three plasmid vector systems (Kemler et al., 2002; Mitrophanous et al., 1999; Neil et al., 2001; Soneoka et al., 1995) were also used to generate GFP reporter viruses, whereby 5 μg of Gag-Pol, 5 μg of packeagable genome, and 1 μg of VSV-G expression plasmids were co-transfected. Levels of reverse transcriptase in viral stocks were quantified using a one-step SYBR-Green based PCR RT assay as previously described (Del Prete et al., 2017; Pizzato et al., 2009).
 
-## Infection assays
+### Infection assays
 
 Infectivity was measured in HOS, HeLa, or HT1080 cells seeded in 96-well plates at 5 × 103 cells per well and inoculated with serial-dilutions of VSV-G pseudotyped GFP reporter viruses in the presence of 4 μg ml−1 polybrene (Sigma-Aldrich). Two days post-infection, cells were trypsinized and fixed in 2% paraformaldehyde. For experiments in which infection of dividing and non-dividing cells was compared, cells were treated with 1 μg ml−1aphidicolin (Sigma-Aldrich) for 16 hr before infection. Where indicated, cyclosporine A (Sandoz) was added to the cultures at the time of infection at 5 μM. Infected cells (%GFP positive of viable cells) were enumerated by FACS analysis using a CyFlow cytometer (Partec) coupled to a Hypercyte Autosampler (Intellicyt).
 
-## RNA interference
+### RNA interference
 
 HOS, HeLa, or HT1080 cells were reverse transfected with 25 pmol of siRNA (Table 2; SMARTpool, Dharmacon) using Lipofectamine RNAiMax (Invitrogen) at a concentration of 3 × 104 cells/ml in 6- or 12-well plates. Non-transfected cells, transfection reagent alone, and non-targeting siRNA were used as controls, no significant difference in viral infectivity or MX2-restriction was observed for each of these controls, as such, for each experiment, only the non-targeting siRNA control is shown. 48 hr after transfection, cells were trypsinized, diluted 1:2.5 and re-plated in 24- or 96-well plates and treated with doxycycline and/or aphidicolin followed by infection with GFP reporter viruses, fixation for immunofluorescence, or lysis for western blotting 16 hr later (See Figure 4A).
 
-## Western blotting
+**Table 2.**
+ ON-TARGET SMARTpool siRNA utilized in this investigation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAAS</td>
+      <td>8086</td>
+    </tr>
+    <tr>
+      <td>AHCTF1</td>
+      <td>25909</td>
+    </tr>
+    <tr>
+      <td>CPSF6</td>
+      <td>11052</td>
+    </tr>
+    <tr>
+      <td>GLE1</td>
+      <td>2733</td>
+    </tr>
+    <tr>
+      <td>IPO11</td>
+      <td>51194</td>
+    </tr>
+    <tr>
+      <td>IPO13</td>
+      <td>9670</td>
+    </tr>
+    <tr>
+      <td>IPO4</td>
+      <td>79711</td>
+    </tr>
+    <tr>
+      <td>IPO5</td>
+      <td>3843</td>
+    </tr>
+    <tr>
+      <td>IPO7</td>
+      <td>10527</td>
+    </tr>
+    <tr>
+      <td>IPO8</td>
+      <td>10526</td>
+    </tr>
+    <tr>
+      <td>IPO9</td>
+      <td>55705</td>
+    </tr>
+    <tr>
+      <td>KPNA1</td>
+      <td>3836</td>
+    </tr>
+    <tr>
+      <td>KPNA2</td>
+      <td>3838</td>
+    </tr>
+    <tr>
+      <td>KPNA3</td>
+      <td>3839</td>
+    </tr>
+    <tr>
+      <td>KPNA4</td>
+      <td>3840</td>
+    </tr>
+    <tr>
+      <td>KPNA5</td>
+      <td>3841</td>
+    </tr>
+    <tr>
+      <td>KPNA6</td>
+      <td>23633</td>
+    </tr>
+    <tr>
+      <td>KPNB1</td>
+      <td>3837</td>
+    </tr>
+    <tr>
+      <td>MX2</td>
+      <td>4600</td>
+    </tr>
+    <tr>
+      <td>NDC1</td>
+      <td>55706</td>
+    </tr>
+    <tr>
+      <td>NUP107</td>
+      <td>57122</td>
+    </tr>
+    <tr>
+      <td>NUP133</td>
+      <td>55746</td>
+    </tr>
+    <tr>
+      <td>NUP153</td>
+      <td>9972</td>
+    </tr>
+    <tr>
+      <td>NUP155</td>
+      <td>9631</td>
+    </tr>
+    <tr>
+      <td>NUP160</td>
+      <td>23279</td>
+    </tr>
+    <tr>
+      <td>NUP188</td>
+      <td>23511</td>
+    </tr>
+    <tr>
+      <td>NUP205</td>
+      <td>23165</td>
+    </tr>
+    <tr>
+      <td>NUP210</td>
+      <td>23225</td>
+    </tr>
+    <tr>
+      <td>NUP214</td>
+      <td>8021</td>
+    </tr>
+    <tr>
+      <td>NUP35</td>
+      <td>129401</td>
+    </tr>
+    <tr>
+      <td>NUP37</td>
+      <td>79023</td>
+    </tr>
+    <tr>
+      <td>NUP43</td>
+      <td>348995</td>
+    </tr>
+    <tr>
+      <td>NUP50</td>
+      <td>10762</td>
+    </tr>
+    <tr>
+      <td>NUP54</td>
+      <td>53371</td>
+    </tr>
+    <tr>
+      <td>NUP62</td>
+      <td>23636</td>
+    </tr>
+    <tr>
+      <td>NUP85</td>
+      <td>79902</td>
+    </tr>
+    <tr>
+      <td>NUP88</td>
+      <td>4927</td>
+    </tr>
+    <tr>
+      <td>NUP93</td>
+      <td>9688</td>
+    </tr>
+    <tr>
+      <td>NUP98</td>
+      <td>4928</td>
+    </tr>
+    <tr>
+      <td>NUPL1</td>
+      <td>9818</td>
+    </tr>
+    <tr>
+      <td>POM121</td>
+      <td>9883</td>
+    </tr>
+    <tr>
+      <td>RAE1</td>
+      <td>8480</td>
+    </tr>
+    <tr>
+      <td>RANBP2</td>
+      <td>5903</td>
+    </tr>
+    <tr>
+      <td>SEC13</td>
+      <td>6396</td>
+    </tr>
+    <tr>
+      <td>SEH1L</td>
+      <td>81929</td>
+    </tr>
+    <tr>
+      <td>TNPO1</td>
+      <td>3842</td>
+    </tr>
+    <tr>
+      <td>TNPO2</td>
+      <td>30000</td>
+    </tr>
+    <tr>
+      <td>TNPO3</td>
+      <td>23534</td>
+    </tr>
+    <tr>
+      <td>TPR</td>
+      <td>7175</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blotting
 
 Cell suspensions were lysed in NuPage LDS (Novex) or SDS sample buffer, followed by sonication, and separated by electrophoresis on NuPage 4–12% Bis-Tris gels or 3–8% Tris-Acetate gels (Novex) and blotted onto polyvinylidene fluoride (PDVF, BioRad Laboratories) or nitrocellulose (GE Healthcare). Membranes were incubated with the antibodies listed in Table 3, followed by incubation with goat anti-rabbit-HRP or goat anti-mouse-HRP secondary antibodies (Jackson ImmunoResearch) or goat-anti-mouse IRDye680RD or IRDye800CW (LI-COR Biosciences). SeeBlue and HiMark Pre-stained Protein Standards (Thermo Fisher) were used for Bis-Tris and Tris-Acetate gels respectively. Blots were developed with SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Scientific) and imaged/quantified on a C-Digit or LI-COR Odyssey scanner (LI-COR Biosciences).
 
-## Cell-cycle profile analysis
+**Table 3.**
+ Antibodies utilized in this investigation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reactivity</th>
+      <th>Species</th>
+      <th>Company</th>
+      <th>Catalog number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALADIN</td>
+      <td>rabbit</td>
+      <td>Novus Biologicals</td>
+      <td>NBP2-21596</td>
+    </tr>
+    <tr>
+      <td>CPSF6</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>15489–1-AP</td>
+    </tr>
+    <tr>
+      <td>CPSF6</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab175237</td>
+    </tr>
+    <tr>
+      <td>ELYS</td>
+      <td>mouse</td>
+      <td>Abcam</td>
+      <td>ab53540</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>mouse</td>
+      <td>Santa Cruz</td>
+      <td>sc-32233</td>
+    </tr>
+    <tr>
+      <td>KPNA1</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>18137–1-AP</td>
+    </tr>
+    <tr>
+      <td>KPNA2</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab84440</td>
+    </tr>
+    <tr>
+      <td>LAMIN B1</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab133741</td>
+    </tr>
+    <tr>
+      <td>MX2</td>
+      <td>rabbit</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-8108</td>
+    </tr>
+    <tr>
+      <td>MYCtag</td>
+      <td>mouse</td>
+      <td>Millipore</td>
+      <td>05–724</td>
+    </tr>
+    <tr>
+      <td>NDC1</td>
+      <td>rabbit</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-91603</td>
+    </tr>
+    <tr>
+      <td>NUP107</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab73290</td>
+    </tr>
+    <tr>
+      <td>NUP133</td>
+      <td>mouse</td>
+      <td>Santa Cruz</td>
+      <td>376763</td>
+    </tr>
+    <tr>
+      <td>NUP153</td>
+      <td>mouse</td>
+      <td>Abcam</td>
+      <td>ab24700</td>
+    </tr>
+    <tr>
+      <td>NUP155</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab157104</td>
+    </tr>
+    <tr>
+      <td>NUP160</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab74147</td>
+    </tr>
+    <tr>
+      <td>NUP188</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab86601</td>
+    </tr>
+    <tr>
+      <td>NUP205</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab157090</td>
+    </tr>
+    <tr>
+      <td>NUP210</td>
+      <td>rabbit</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-93336</td>
+    </tr>
+    <tr>
+      <td>NUP214</td>
+      <td>rabbit</td>
+      <td>Bethyl Labs</td>
+      <td>IHC-00103</td>
+    </tr>
+    <tr>
+      <td>NUP35</td>
+      <td>rabbit</td>
+      <td>Bethyl Labs</td>
+      <td>A301-781A</td>
+    </tr>
+    <tr>
+      <td>NUP37</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab201161</td>
+    </tr>
+    <tr>
+      <td>NUP43</td>
+      <td>rabbit</td>
+      <td>Bethyl Labs</td>
+      <td>A303-976A</td>
+    </tr>
+    <tr>
+      <td>NUP50</td>
+      <td>rabbit</td>
+      <td>Bethyl Labs</td>
+      <td>A301-783A</td>
+    </tr>
+    <tr>
+      <td>NUP54</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>16232–1 AP</td>
+    </tr>
+    <tr>
+      <td>NUP62</td>
+      <td>mouse</td>
+      <td>BD Biosciences</td>
+      <td>610498</td>
+    </tr>
+    <tr>
+      <td>NUP62</td>
+      <td>mouse FITC-conjugated</td>
+      <td>BD Biosciences</td>
+      <td>611962</td>
+    </tr>
+    <tr>
+      <td>NUP85</td>
+      <td>mouse</td>
+      <td>Santa Cruz</td>
+      <td>376111</td>
+    </tr>
+    <tr>
+      <td>NUP88</td>
+      <td>mouse</td>
+      <td>BD Biosciences</td>
+      <td>611896</td>
+    </tr>
+    <tr>
+      <td>NUP93</td>
+      <td>mouse</td>
+      <td>Abcam</td>
+      <td>ab53750</td>
+    </tr>
+    <tr>
+      <td>NUP98</td>
+      <td>rabbit</td>
+      <td>Cell Signaling</td>
+      <td>C39A3</td>
+    </tr>
+    <tr>
+      <td>NUPL1</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>19907–1-AP</td>
+    </tr>
+    <tr>
+      <td>HIV-1 p24</td>
+      <td>mouse</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>182-H12-5C</td>
+    </tr>
+    <tr>
+      <td>POM121</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab190015</td>
+    </tr>
+    <tr>
+      <td>POM121</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>15645–1-AP</td>
+    </tr>
+    <tr>
+      <td>RAE1</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab124783</td>
+    </tr>
+    <tr>
+      <td>RANBP2</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>ab64276</td>
+    </tr>
+    <tr>
+      <td>SEC13</td>
+      <td>rabbit</td>
+      <td>ProteinTech</td>
+      <td>15397</td>
+    </tr>
+    <tr>
+      <td>TNPO1</td>
+      <td>mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>WH0003842M1</td>
+    </tr>
+    <tr>
+      <td>TNPO3</td>
+      <td>mouse</td>
+      <td>Abcam</td>
+      <td>ab54353</td>
+    </tr>
+    <tr>
+      <td>TPR</td>
+      <td>rabbit</td>
+      <td>Abcam</td>
+      <td>wh000717m1</td>
+    </tr>
+    <tr>
+      <td>TUBULIN</td>
+      <td>mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6074</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell-cycle profile analysis
 
 Cell-cycle profiles of HeLa and HOS cells were determined 64 hr post-siRNA transfection, or 16 hr post aphidicolin treatment. HT1080 cells were not amenable to reproducible DNA content staining and were not included in this assay. Cells were trypsinized and fixed in ice cold 70% ethanol followed by staining with FxCycle PI/RNase Staining Solution (Thermo Scientific) or 20 μM DRAQ5 Fluorescent Probe Solution (Thermo Scientific). DNA content was then determined by FACS analysis using an Attune cytometer (Thermo Scientfic) coupled to an autosampler.
 
-## Microscopy
+### Microscopy
 
 HeLa or HT1080 cells stably transduced with doxycycline-inducible expression vectors [MX2-tagRFP, CPSF6-tagRFP, ARFAPTIN2-myc, or MX2(N91)-ARFAPTIN2-myc] were seeded onto 24-well gelatin-coated glass-bottomed dishes and treated with 500 ng/ml doxycycline 16 hr prior to fixation with 4% paraformaldehyde or −20°C methanol. Cells were then permeabilized with 0.5%Triton X-100 (and 0.05%SDS in some cases) (Thermo Scientific) and immunostained with the indicated antibodies followed by goat anti-mouse or goat anti-rabbit Alexa 488 or Alexa 647 secondary antibodies (Molecular Probes). DNA was stained with Hoescht 33342 (Thermo Scientific). Cells were visualized by deconvolution microscopy as described previously (Jouvenet et al., 2006) or on an EVOS digital microscope [NLS-GFP-LacZ fusions only (Electron Microscopy Sciences)]. Image generation and co-localization analysis were completed with the Imaris software suite (Bitplate). Pearson’s coefficient values were derived by analysis of 3-dimensional image reconstructions of the nuclear surface for 8–12 individual cells.
 
-## CA-binding assay with HIV-1 CA tubes
+### CA-binding assay with HIV-1 CA tubes
 
 CA tubes were assembled as described (Cortines et al., 2011; Larue et al., 2012) by incubating the purified protein in a high-salt buffer (25 mM Tris-HCl, pH 8; 2M NaCl; 10 mM β-mercaptoethanol) for ~12 hr. HeLa cells were cultivated with or without 500 ng/µl doxycycline for a minimum of 16 hr. The cells were then lysed for pull-down experiments by adding passive lysis buffer (Promega) supplemented with protease inhibitor cocktail (Roche). NaCl concentration in lysates was adjusted to 2M and lysates were centrifuged at 13,000 x g for 2 min at 4°C. Then the supernatant of the cell lysates were added to the preformed CA tubes and incubated at 4°C for 2 hr. Following centrifugation at 13,000 x g for 2 min at 4°C, the supernatant was saved and the pellet was washed three times with the high-salt buffer. NuPage LDS Sample buffer (Thermo Fisher) supplemented with 50 mM DTT was added to all the samples including pulled-down and unbound fractions and subjected to SDS-PAGE. The proteins of interest were detected by immunoblotting using respective antibodies.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was determined using Excel (two-tailed t test). Where appropriate (eg. comparison of doxycycline treated and untreated samples infected with the same virus dilution), a paired t test was utilized. For comparison of infectivity data in Nup and NTR siRNA transfected cells, viral titers were converted to a percentage of control siRNA transfected cells before application of statistical tests. For comparison of MX2 activity (or CsA effects), viral titers were converted to a fold change in MX2 activity (or CsA effect) as compared to control siRNA transfected cells. a complete set of statistical analyses of all quantitative data in the manuscript is given in Supplemental file 1

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00j9c2840 Department of Immunology, Oslo University Hospital Oslo Norway
+1. Department of Immunology, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
 
 † Corresponding author
 

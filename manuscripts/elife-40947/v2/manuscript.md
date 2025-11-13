@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.40947.001 Extensive transcriptional alterations are observed in cancer, many of which activate core biological processes established in unicellular organisms or suppress differentiation pathways formed in metazoans. Through rigorous, integrative analysis of genomics data from a range of solid tumors, we show many transcriptional changes in tumors are tied to mutations disrupting regulatory interactions between unicellular and multicellular genes within human gene regulatory networks (GRNs). Recurrent point mutations were enriched in regulator genes linking unicellular and multicellular subnetworks, while copy-number alterations affected downstream target genes in distinctly unicellular and multicellular regions of the GRN. Our results depict drivers of tumourigenesis as genes that created key regulatory links during the evolution of early multicellular life, whose dysfunction creates widespread dysregulation of primitive elements of the GRN. Several genes we identified as important in this process were associated with drug response, demonstrating the potential clinical value of our approach.
+Extensive transcriptional alterations are observed in cancer, many of which activate core biological processes established in unicellular organisms or suppress differentiation pathways formed in metazoans. Through rigorous, integrative analysis of genomics data from a range of solid tumors, we show many transcriptional changes in tumors are tied to mutations disrupting regulatory interactions between unicellular and multicellular genes within human gene regulatory networks (GRNs). Recurrent point mutations were enriched in regulator genes linking unicellular and multicellular subnetworks, while copy-number alterations affected downstream target genes in distinctly unicellular and multicellular regions of the GRN. Our results depict drivers of tumourigenesis as genes that created key regulatory links during the evolution of early multicellular life, whose dysfunction creates widespread dysregulation of primitive elements of the GRN. Several genes we identified as important in this process were associated with drug response, demonstrating the potential clinical value of our approach.
 
 ## Introduction
 
@@ -33,11 +33,51 @@ Here, we elucidate how mutational heterogeneity across tumors results in common 
 
 ## Results
 
-## Early metazoan genes are enriched with point mutations and copy-number aberrations acquired during tumourigenesis
+### Early metazoan genes are enriched with point mutations and copy-number aberrations acquired during tumourigenesis
 
 We investigated the association between the evolutionary ages of genes and the frequency of copy-number aberrations (CNAs) and point mutations across tumor cohorts (The Cancer Genome Atlas Network, 2017a; The Cancer Genome Atlas Network, 2017b). We collected CNA and point mutation data from 10256 and 9926 patients, respectively, from The Cancer Genome Atlas across 30 tumor types (see Materials and methods). We selected a subset of genes that were consistently amplified or deleted in at least 10% of patients of each tumor cohort, and genes with either missense or loss-of-function (LoF) mutations in at least three patients and with a higher rate of occurrence than synonymous mutations (Figure 1—figure supplement 1) (see Materials and methods). Human genes were classified by their evolutionary age using phylostratigraphy (Domazet-Loso and Tautz, 2010), resulting in 16 phylogenetic groups (phylostrata) (Figure 1—figure supplement 2), ranging from genes found in unicellular ancestors (Phylostrata 1–3) (6,719 UC genes), to genes found in early metazoans (Phylostrata 4–9) (7,939 EM genes), and mammal-specific genes (Phylostrata 10–16) (2,660 MM genes) (Figure 1—figure supplement 3) (Trigos et al., 2017).
 
 We calculated the fraction of genes in each phylostratum with recurrent CNAs and point mutations, accounting for differences in CNA and mutation rates between tumor cohorts by ranking each phylostratum by the fraction of genes altered (Figure 1A,B). We found an increasing trend of enrichment of CNAs starting from the earliest UC genes (phylostratum 1), but peaking in EM genes (phylostrata 4–8), with EM genes being the most enriched with both amplifications and deletions across tumors. A high proportion of tumor types (14/30 tumor types for amplifications and 27/30 tumor types for deletions) had at least 3 EM phylostrata in the top five most recurrently altered phylostrata. In contrast, recurrent CNAs were consistently depleted from MM genes (phylostratum 10 onwards), indicating a lack selection for CNAs in younger genes. The decreasing enrichment trend along the phylostrata was significant for amplifications in 20/30 tumor types, and for deletions in 27/30 tumor types (Jonckheere-Terpstra tests Benjamini-Hochberg adjusted p<0.05). Similar results were obtained using recurrent gains/losses as defined by Gistic2, as the one used by Gistic2 (see Materials and methods, Figure 1—figure supplement 4), which employs a rigorous probabilistic model to identify recurrent CNAs. Among the recurrently amplified and deleted EM genes are well-known cancer genes. Examples include the EGFR oncogene, recurrently amplified in more than 10% of patients in 19/30 of the studied tumor types and having emerged together with bilaterians (Phylostratum 6), and the tumor suppressor TP53 which also dates back to early metazoan ancestors (Phylostratum 5) and is found recurrently deleted in an average of 12.73% of patients across all tumor types studied. In contrast to the patterns obtained for genes with recurrent CNAs, genes not recurrently copy-numbered altered (frequency <0.10 across patients) were not enriched in EM genes, but were often enriched in MM genes (Figure 1—figure supplements 5 and 6). An exception is TNFRSF17 (also known as BCMA, BCM), a mammal-specific gene involved in immune system processes that was amplified in >10% of BRCA, ACC, KIRP, THCA, PRAD and KIRC patients. TNFRSF17 has classically been associated with lymphomas (Laâbi et al., 1992) and has oncogenic properties (Coquery and Erickson, 2012; Zhao et al., 2008). Overall, our results suggest that EM genes are specifically preferentially under selection for recurrent CNAs across patients.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fraction of amplified (left) and deleted (right) genes across phylostrata. EM genes are preferentially copy-number altered across tumor types, whereas MM genes are depleted. (B) Fraction of genes with missense (left) and LoF (right) mutations across phylostrata. Late UC genes and EM genes are enriched in missense and LoF mutations across tumor types, whereas MM genes consistently have the lowest fraction of genes with point mutations. The fractions rank from 1 (phylostratum with the highest fraction of mutated genes) to rank 16 (phylostratum with the lowest fraction of mutated genes). The line is a trendline calculated using a loess smoothing function. (C) Proportion of differentially expressed point-mutated EM genes across all tumor types compared to UC (one-sided Wilcoxon p=0.031) and MM genes (p=3.78×10−6). (D) Presence of genes of each phylostratum at different fractions of chromosome altered by amplifications. Older genes are preferentially located in regions with focal alterations, whereas younger, MM genes are located in regions with broader changes, suggesting stronger selection for the CNA of UC and EM genes (increasing trend adj. p<0.05). (E) Summary enrichment results of recurrent point mutations and CNAs in phylostrata across tumors. The size of the point corresponds to the level of enrichment (rank). The largest enrichment occurs in EM genes, with some enrichment of UC genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Known cancer genes (derived from the Cancer Census database) have a higher ratio that other genes, indicating that this metric captures genes more likely to be drivers. Only genes with missense or LoF mutations in at least three patients were kept. The number of genes with missense and LoF mutations is shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Genes assigned to earlier phylostrata (smaller numbers) are more ancient as they are across multiple phylogenetic groups of the tree of life, whereas genes assigned to later phylostrata (larger numbers) evolved more recently and are only found in specific phologenetic groups.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Genes were assigned to phylostratum based on the age of the most ancient ancestor with an ortholog of the gene using phylostratigraphy. 38.80% (6719) of human genes are of UC origin (red), 45.84% (7939) are of EM origin (green) and 15.36% (2660) are of MM origin (blue).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Fraction of amplified, (B) deleted and point mutated (C) genes across phylostrata. At least 3 of the top five most recurrently affected phylostrata by amplifications were EM in 26/29 tumor types. Enrichment was also obtained for deletions (28/29 tumor types) and point mutations (14/23 tumor types), indicating that recurrently copy-number altered or mutated genes are EM genes. (D) Summary enrichment results of recurrent point mutations and CNAs in phylostrata across tumors. The size of the point corresponds to the level of enrichment (rank). The largest enrichment occurs in EM genes, with some enrichment of UC genes. The x-axis correspond to the phylostrata defined in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** We calculated the fraction of genes with non-recurrent amplifications of all genes with amplification. Although most mutated genes were non-recurrent across phylostrata, mutated MM genes are particularly non-recurrent (increasing trend). Red strip = UC phylostrata, green strip-EM phylostrata, blue strip = MM phylostrata. Note that dips in phylostratum 16 in results from the small number of genes belonging to these groups and strong selection for the amplification of the chromosomes where the genes are located. For example, only four genes of phylostratum 16 are amplified in BRCA, 2 of which are recurrently amplified. These genes are located on chromosome 17, which is recurrently amplified due to the presence of ERBB2, a common oncogene in breast cancer.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** We calculated the fraction of genes with non-recurrent deletions of all genes with deletions. Although most mutated genes were non-recurrent across phylostrata, mutated MM genes are particularly non-recurrent (increasing trend). Red strip = UC phylostrata, green strip-EM phylostrata, blue strip = MM phylostrata.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** We calculated the fraction of genes with non-recurrent missense mutations of all genes with missense mutations. Although most mutated genes were non-recurrent across phylostrata, mutated MM genes are particularly non-recurrent (increasing trend). Red strip = UC phylostrata, green strip-EM phylostrata, blue strip = MM phylostrata.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** We calculated the fraction of genes with non-recurrent loss-of-function mutations of all genes with loss-of-function mutations. Although most mutated genes were non-recurrent across phylostrata, mutated MM genes are particularly non-recurrent (increasing trend). Red strip = UC phylostrata, green strip-EM phylostrata, blue strip = MM phylostrata.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** The overall increasing trend across chromosomes and tumor types indicated that earlier genes tend to be located in more focal region of copy-number changes, whereas later genes tend to be located in regions of broad aberrations. There is an evident steep increase for MM genes in chrosomoes 1, 2, 3, 5, 7 (for amplifications), 13, 17 (for deletions) and 22 (for both amplifications and deletions).
 
 A similar enrichment of recurrent mutations in EM genes was identified for point mutations (Supplementary file 1). We found an increasing trend of enrichment of point mutations beginning at genes that date back to later unicellular ancestors (phylostratum 2), but peaking in early metazoan genes across tumors, with genes dating to the earliest metazoans (phylostratum 4) being the most enriched (Figure 1B, Figure 1—figure supplement 4C). In tumor types where ≥ 5 phylostrata had recurrent missense (23 overall) or LoF mutations (14 overall), at least three of the five phylostrata most enriched for missense or LoF mutations were EM in 15/23 tumor types and 11/14 tumor types, respectively. In contrast, MM genes were consistently depleted of recurrent point mutations. The decreasing trend of enrichment associated with gene age was significant in the majority of tumor types for both missense (18/23) and LoF (12/14) mutations (Jonckheere-Terpstra tests Benjamini-Hochberg adjusted p<0.05). In contrast, this enrichment pattern was not observed for non-recurrently point-mutated genes (Figure 1—figure supplements 7 and 8).
 
@@ -47,11 +87,39 @@ We also investigated the association between gene age and signatures of selectio
 
 Our results indicate a preferential recurrent alteration by both CNAs and point mutations of EM genes across tumor types (Figure 1E, Figure 1—figure supplement 4D), suggesting that disruption of these genes by genetic changes likely provides an advantage in the development of multiple tumor types, whereas mutations in genes that evolved later in metazoan evolution, namely MM genes, are unlikely to be playing a significant role.
 
-## Point mutations and CNAs acquired during tumor development differentially affect the human regulatory network
+### Point mutations and CNAs acquired during tumor development differentially affect the human regulatory network
 
 The observed enrichment patterns across cancer types suggested alteration of EM genes provides a selective advantage to tumors. Known cancer drivers are mostly of EM origin (Domazet-Loso and Tautz, 2010) and are highly interconnected in human molecular networks (Cheng et al., 2014), suggesting EM genes hold regulatory roles with important pleiotropic effects in cancer (Trigos et al., 2018). Since important innovations required for the regulation of transcriptional networks from unicellular ancestors evolved in early metazoan species, we investigated whether this could be evidenced in the current structure of the human gene regulatory network (GRN). The GRN was obtained by subsetting the network from PathwayCommons (Cerami et al., 2011; Pathway Commons, 2017) to include only edges annotated with control-of-expression.
 
 Given the directed nature of the GRN, regulator genes can be distinguished from downstream target genes (Figure 2A). As expected, many more genes act as targets (12,812) than as regulators (1,370), indicating the presence of key regulatory hubs regulating a multitude of target genes. We found that over half (56.42%) of regulators in the GRN were EM genes, whereas only 37.88% and 5.69% were UC and MM genes, indicating an enrichment of EM genes as regulators (Fisher enrichment test p=6.48×10−6) (Figure 2B). Focusing on the genes with key regulatory roles, we investigated regulators with at least 10 downstream targets (out-degree >= 10), which correspond to the upper quantile of the distribution of out-degree across all regulators (Figure 2—figure supplement 1). We found that 65.12% of these master regulators were EM genes, whereas only 28.49% and 6.40% were UC and MM genes, respectively, indicating that key master regulators with the largest pleiotropic effects in the network were mostly EM genes. This structure of the GRN substantially differed from general protein-protein interaction (PPI) networks (e.g. (Cerami et al., 2011; Chatr-Aryamontri et al., 2017; Li et al., 2017)) where UC genes are usually the most connected (Figure 2—figure supplement 2), suggesting specific evolutionary processes shaping the GRN resulted in key regulatory roles for EM genes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram of a GRN distinguishing regulator and target genes. The number of outgoing edges from a regulator corresponds to its out-degree, whereas the number of incoming edges to a target gene is denoted by its in-degree. (B) Percentage of regulators of each age. Regulators are enriched in early metazoan genes (Fisher enrichment test p=6.48×10−6), with over half being EM (56.42%). (C) Average number of incoming edges for targets of each age. EM genes are also among the mostly highly regulated genes, with an average of 8.76 regulators controlling their activity, compared to 6.59 and 4.54 regulating UC and MM downstream target genes. (D) GRN diagram. EM genes (green) are highly interconnected, acting as master regulators and highly regulated targets. (E) Fraction of mutated regulator and target genes by each mutation type. A greater proportion of regulators are affected by recurrent point mutations than CNAs (0.20 vs 0.12; left), whereas the opposite trend is observed for targets (Wilcoxon test p=2.95×10−5). (F) Ratio of out-degree/in-degree (log2) of genes with mutations. EM genes are strongly biased toward a preferential regulatory role when point mutated, whereas the CNAs of EM genes preferentially occurs in those with a strong downstream target role. Points represent the median values for each tumor type and bars represent the range between the upper and lower quantiles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Genes in the upperquantile of the distribution (log10 out-degree greater or equal than 1) were selected as master regulators.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Although in protein-protein interaction networks (PahtwayCommons, Biogrid and WebIM) UC genes are the most highly connected, in the GRN EM genes are more likely to be hubs. The normalized degree was obtained by dividing the degree of genes by the median values of each database. The PathwayCommons network was obtained by excluding edges related to metabolites and chemicals, as well as those annotated as ‘controls-expression-of’. The decreasing trend of the association between degree and gene age was significant for the PathwayCommons, Biogrid and WebIM databases (Jonckheere-Terpstra Benjamini-Hochberg adjusted p-value<10−16), but not for the GRN (p-value=0.338). In the GRN, EM genes tend to have a higher degree than UC and MM genes (Wilcoxon test p-value for each case <10−16).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** EM genes tended to have a greater in-degree than UC and MM genes (Wilcoxon test p<2.2×10−16 in both cases), indicating these genes are highly regulated.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Genes with point mutations, especially LoF mutations, affect a higher fraction of regulators than genes with amplifications or deletions (Wilcoxon p for LoF mutations = 1.10×10−7, for missense mutations = 1.73×10−4). In contrast, genes with amplifications and deletions affect a higher fraction of target genes than genes with point mutations (p=3.54×10−6 for amplifications and p=4.08×10−6 for deletions).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Recurrent point mtuations were derived using MutSig2CV, and significant driver CNAs by Gistic. Point mutations affected a higher fraction of regulators (mean fraction altered = 0.44) than CNAs (0.10) in all of tumor types with at least three recurrent point mutations or CNAs (Wilcoxon test p=1.84×10−11). In contrast, CNAs were more likely to affect downstream target genes without a regulatory role than regulators (Wilcoxon test p=1.84×10−11) (mean fraction altered = 0.90 for CNAs, 0.56 for point mutations). This dichotomy was even more pronounced in somatic mutations that were recurrent in at least 7 of the 30 tumor types. Whereas only 10.66% of genes with recurrent CNAs across tumors were regulators, this number was seven times larger (73.33%) for genes with point mutations. In contrast, 89.34% of CNAs recurrent across tumors affected downstream target genes, but only 26.67% of point mutations affected targets.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** EM genes with point mutations held the strongest regulatory role across tumors (median ratio = 1.88), whereas UC and MM genes with point mutations did less so (median ratio = 1.33 and 0.27, respectively). In contrast, EM genes with CNAs were the strongest skewed toward being highly regulated downstream targets (median ratio = 0.41), even compared to UC and MM genes with CNAs (median ratio UC = 0.50 and MM = 0.42). Points represent the median values for each tumor type and bars represent the range between the upper and lower quantiles.
 
 Additionally, EM genes were the most highly regulated downstream genes in the GRN, measured by the number of incoming edges (in-degree), with EM genes having an average of 8.76 incoming edges, compared to only 6.59 and 4.54 in UC and MM downstream target genes (Wilcoxon test p<2.2×10−16 in both cases) (Figure 2C, Figure 2—figure supplement 3). The enrichment of EM genes as both regulators and highly regulated downstream targets in the GRN indicates that gene regulation in humans is predominantly under control of EM genes (Figure 2D). Therefore, we hypothesized that the preference of somatic mutations in EM genes might stem from their key regulatory roles in the human GRN.
 
@@ -63,9 +131,25 @@ The complex regulatory interactions in the GRN result in many genes having a dua
 
 Although there is a recurrent selection across tumor cohorts for the somatic mutation of EM genes, our results reveal that selection for point mutations and CNAs differentially disrupt the GRN. EM hub genes with key regulatory roles were preferentially disrupted by point mutations, indicating that few point mutations in key regulators are more likely to create large disruptions across the GRN. In contrast, downstream target genes were preferentially affected by recurrent CNAs, and are therefore more likely to have a localized effect.
 
-## Point mutations disrupt the regulation between UC and EM genes
+### Point mutations disrupt the regulation between UC and EM genes
 
 A main characteristic of cancer development is the loss of coordination in expression between UC and MC genes together with overexpression of UC genes and downregulation of MC genes (Trigos et al., 2017), suggesting a compartmentalization of the GRN into UC and MC gene network regions interconnected by key regulatory links that get disrupted by mutations during cancer development (Trigos et al., 2018) (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig3-v2.jpg)
+
+**Figure 3.:** (A) Classification of regulators by the age of their downstream targets. UC-t regulators mostly regulate UC genes, EM-t regulators EM genes, and UC/EM-i regulators are at the interface of UC and EM genes. (B) (Lower panel) Percentage of UC, EM and MM target genes in regulators. (Upper panel) Distribution of recurrent point mutations (dark grey) and CNAs (light grey) across regulators. UC/EM-i regulators are enriched in point mutations. (C) Fraction of regulators with point mutations, CNAs and those non-recurrently altered. More than 85% of regulators affected by point mutations are UC/EM-i regulators. The fraction of regulators of each class affected by CNAs is similar to those not affected by recurrent mutations, indicating a lack of preferential alteration of a particular regulator class by CNAs. (D) Effect of point mutations in regulators on the expression of downstream targets. Point mutations with a high downstream effect (>5% differentially expressed targets) are more likely to be UC/EM-i regulators of EM origin. Low impact mutations (<5% differentially expressed targets) affect a higher proportion of regulators of a UC origin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) (Lower panel) Percentage of UC, EM and MM target genes in regulators. (Upper panel) Distribution of recurrent point mutations (dark grey) and CNAs (light grey) across regulators. UC/EM-i regulators are enriched in point mutations. (B) Fraction of regulators with point mutations, CNAs and those non-recurrently altered. The majority of regulators with recurrent point mutations were UC/EM-i (81.82%), whereas this percentage was only 34.14% and 31.33% for regulators affected by CNAs or not recurrently mutated across tumor cohorts. Additionally, only a small subset of point-mutated regulators were UC-t (9.09%) EM-t (9.09%). This indicates preference for the point mutation of UC/EM-i regulators.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mutated UC-t and EM-t regulators were preferentially affected by CNAs (10/10 mutated UC-t regulators, 33/34 mutated EM-t regulators), whereas UC/EM-i regulators had the highest proportion of regulators affected by point mutations (6/21, 28.57%).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Point mutations with a high impact (>5% differentially expressed downstream genes) are more likely to affect EM genes, rather than those with a limited downstream effect (<5%). The prevalence was calculated as the ratio of number of EM regulators over the number of UC regulators in each category. The log10 values were calculated to normalize to zero.
 
 To distinguish these UC and EM network regions, we calculated the percentage of downstream UC and EM target genes for each regulator, and classified individual regulators as preferentially regulating UC targets (>2/3 UC genes) (UC-t regulators), EM targets (>2/3 EM genes) (EM-t regulators), MM targets (>2/3 MM genes) or being at the interface of UC and EM targets by regulating a mix of UC and EM downstream targets (>1/10 UC and EM genes) (UC/EM-i regulators) (Figure 3B, main panel, Supplementary file 3). We excluded regulators that primarily controlled mammalian genes from further analysis, as they only accounted for 2.04% of all regulators. Regulators not meeting any of the above criteria were also excluded (10.36%). UC-t regulators mostly dated back to UC ancestors (50.81%, Fisher test p=0.021) while both EM-t regulators (56.68%, Fisher test p=0.0011) and UC/EM-i regulators (61.73%, Fisher test p=0.00022) were mostly comprised of EM genes.
 
@@ -75,11 +159,31 @@ To examine the functional downstream effects of point mutations in regulators, w
 
 Overall, our results suggest that the recurrence across tumor cohorts of point mutations in EM regulators is tied with transcriptional disturbances of the regulation between UC and EM genes in the GRN, making them potential gene drivers. Multiple known cancer genes were found among UC/EM-i regulators, including RB1, PIK3CA, SMAD4, NF1 TP53, TERT and MDM4. Functional enrichment analysis revealed that these regulators are involved in multiple signaling pathways, such as receptor tyrosine kinases, MAPK and PI3K-Akt signaling, but they are also involved in a diversity of other processes such as mitochondrial biogenesis and lipid metabolism (Supplementary file 4). Investigation of the pathways associated with UC/EM-i regulators revealed that their point mutation often had a significant effect on pathway expression levels (Supplementary file 5). Point mutation of well-studied genes such as p53 affected the expression of pathways such as MAPK signaling, p53 signaling, WNT, apoptosis, cell cycle across 18 tumor types; mutations in PTEN with changes in expression of p53 signaling in six tumor types, PIK3CA affecting the expression of multiple pathways such as ERBB signaling, MTOR, JAK-STAT, and VEGF signaling across 10 cancer types; and point mutations in SMAD4 in colon cancer affected WNT signaling. We also found other understudied effects. For example, mutation of EP300 was associated with differences in expression of cell cycle and JAK-STAT pathways in bladder, endometrial, cervical and endocervical cancers. Point mutation of PIK3R1 affected ERBB, MTOR and JAK-STAT signaling. Intriguingly, our analysis pointed to other other EM UC/EM-i regulator genes with mutational frequencies and percentage of differentially expressed downstream targets similar to known cancer genes. Many of these genes, including KEAP1, HNF1A, NFE2L2 and LRRK2, have implied roles in cancer but no strong mechanistic links to date (Figure 5; Discussion).
 
-## CNAs directly regulate the expression of UC and EM downstream targets in the GRN
+### CNAs directly regulate the expression of UC and EM downstream targets in the GRN
 
 While somatic mutation of regulators could provide a major selective advantage via simultaneous dysregulation of a multitude of downstream target genes, where and when such mutations occur is largely based on stochastic events during tumor development. An alternate and complementary mechanism for disrupting conserved regions of the GRN without mutation of master regulators would be direct mutation of downstream target genes, as suggested by our finding that CNAs predominantly affected target genes of the GRN (Figure 2E–F).
 
 To investigate the contribution of CNAs to the disruption of the regulatory links between UC and EM genes, we calculated the fraction of downstream targets with CNAs for each regulator in each individual patient. To exclude possible redundant mechanisms resulting from CNAs in both regulators and targets, we only included in the analysis samples where the regulator was copy-number normal (CNN). We found that only a small fraction of downstream target genes of UC/EM-i regulators were CNA (median = 0.11), whereas a significantly larger fraction of downstream target genes of UC-t and EM-t regulators were affected (median = 0.25 and 0.33, respectively) (p=3.91×10−8 and p=8.42×10−27 comparing the fraction of CNA targets of UC/EM-i with that of UC-t and EM-t regulators, respectively) (Figure 4A). This indicates that CNAs preferentially affect target genes of UC-t and EM-t regulators, rather than directly disrupting the regulatory links at the interface of UC and EM regions of the GRN.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig4-v2.jpg)
+
+**Figure 4.:** (A) Fraction of downstream targets with CNAs in regulators. Targets of UC-t and EM-t regulators are more likely to be affected by CNAs than targets of UC/EM-i regulators. (B) Percentage of differentially expressed target genes with amplifications. UC and EM target genes are more likely to be upregulated after amplifications compared to younger, mammal-specific genes (Jonckheere-Terpstra decreasing trend test p-value: 0.0028). A similar trend is found for the downregulation of deleted genes (Figure 4—figure supplement 2). (C) Median percentage of differentially expressed CNA genes per regulator class across tumors. Amplified and deleted target genes of UC-t regulators are more likely to be differentially expressed (median 78.27% and 75.00%, respectively), whereas few CNA target genes of UC/EM-i regulators are DE (median 21.05% and 23.33%, respectively). Deleted targets of EM-t regulators are more likely to be downregulated (50.00%) than amplifications are upregulated (33.33%). No preference is evident for targets of UC/EM-i regulators. (D) Fraction of target genes with CNAs when their regulators are CNA or CNN. A higher fraction of target genes are CNA when UC-t and EM-t regulators are CNN than when they are CNA (Wilcoxon test p=1.36×10−7 and p=1.11×10−42, respectively), indicating a preference for the alteration of targets of these regulators. However, UC/EM-i regulators display the opposite trend, although not significant. (E) Difference in the fraction of downstream targets altered by CNAs when their regulators are CNN or CNA. Values less than 0 indicate a higher fraction of CNA targets when the regulator is CNN. This trend is evident across UC-t regulators (71.70%) and EM-t regulators (71.30%), but not for UC/EM-i regulators (28.72%).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** We calculated the difference in the percentage of differentially expressed targets and regulators that were CNA. Values greater than 0 indicate a higher percentage of differentially expressed targets than regulators. The trend is evident for amplifications in all tumor types, and for deletions in 64.64% of the tumor types.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** UC and EM target genes are more likely to be upregulated after amplifications and downregulated after deletions compared to younger, mammalian-specific genes. Jonckheere-Terpstra decreasing trend test: amplifications p-value: 0.0028, deletions p-value: 0.0021.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Copy-number normal (CNN) regulators have a higher fraction of targets with CNAs than CNA regulators (Wilcoxon one-sided p-value=4.10×10−29).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** A higher fraction of CNA targets with a CNN regulator is observed for UC-t and EM-t regulators, but not for UC/EM-i regulators, regardless of regulator age. However, the opposite trend is more pronounced in UC/EM-i regulators of early metazoan origin.
 
 We hypothesized the preferential of CNAs in targets genes of UC-t and EM-t regulators would be associated with the direct transcriptional modulation of genes by CNAs. To test this, we calculated the expression fold-change in tumor samples with respect to their paired normal samples, and used Wilcoxon tests to compare fold-change values in samples where the gene was CNA and those where the gene was CNN. We found a higher percentage of target genes than regulators were differentially expressed after amplifications across all tumor types, and for deletions in 64.64% of tumors types, indicating that CNAs more strongly influence the expression of target genes than regulator genes (Figure 4—figure supplement 1). Specifically, UC target genes showed the largest changes in expression after CNAs (median values across tumor types: 7.80% upregulated after amplifications, 7.48% downregulated after deletions), followed by EM genes (4.45% and 4.79%, respectively), and lastly MM genes (2.46% and 1.62%) (Figure 4B, Figure 4—figure supplement 2) (Jonckheere-Terpstra decreasing trend test: amplifications p-value: 0.0028, deletions p-value: 0.0021), indicating that UC and EM targets are more susceptible to changes in expression after CNA.
 
@@ -91,11 +195,43 @@ We next investigated how the copy-number status of regulator (CNA or CNN) was as
 
 Here we found that CNAs are a widespread mechanism of dysregulation of UC and EM target genes, directly modulating the expression of targets of UC-t and EM-t regulators. The effect of CNAs on the GRN is therefore distinct to the disruption by point mutations of the regulatory links between UC and EM genes, but are also important drivers of large transcriptional disturbances in tumors.
 
-## UC/EM-i regulators are important drivers of tumourigenesis and influence drug sensitivity
+### UC/EM-i regulators are important drivers of tumourigenesis and influence drug sensitivity
 
 UC/EM-i were found to be preferentially targeted by point mutations and are likely to be key points of vulnerability to cancer development given their regulatory role modulating UC and EM genes (Trigos et al., 2018). Therefore, we investigated these regulators as potential drivers of tumourigenesis and their role in determining drug response.
 
 We compiled a set of known cancer drivers from the Cancer Census COSMIC database (Forbes et al., 2017). These genes were enriched in EM genes (Fisher test p=0.0015, 57.36% EM genes, 39.58% UC genes and 3.06% MM genes). 36.71% of the known cancer genes were regulators and were enriched in UC/EM-i regulators (46.88%, Fisher test p=0.0043), but depleted in UC-t (p=0.83) and EM-t regulators (p=0.95) (Figure 5A), supporting modulation of regulation between UC and EM genes is a common effect of cancer drivers. Furthermore, investigating drivers identified from multi-region sequencing data (Caravagna et al., 2018) in individual patients of non-small-cell lung cancers (Jamal-Hanjani et al., 2017) and breast cancers (Yates et al., 2015) revealed that 90.91% of lung cancer patients and 70.83% of breast cancer patients had at least one UC/EM-t regulator identified as a clonally mutated driver (Figure 5—figure supplement 1), supporting a fundamental role of the mutation of these regulators in cancer development.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-v2.jpg)
+
+**Figure 5.:** (A) Fraction of known cancer drivers of each regulator class. While only 33% of regulators are UC/EM-i, 47% of cancer drivers are UC/EM-i regulators, indicating an enrichment of this regulator class in genes involved in cancer development. (B) Enrichment of regulators to which cancer cell lines are dependent, as demonstrated by gene knockout. Dependency of cancer cell lines to regulators is associated with regulator class, with an enrichment of UC-t and UC/EM-i regulators and a depletion of EM-t regulators. (C) Difference in cell line regulator dependency associated with mutational status. Most cells increase their dependency to specific regulators with point mutations or amplifications, indicating that the mutation of these genes are important for cancer cell survival. This is especially true for UC/EM-i regulators (55%, pie chart). Only regulators with a difference in the median dependency of at least 0.2 are shown. Asterisks denote regulators with significantly different dependency scores between cell lines where the gene was point mutated and non-point-mutated, and the rest those that were significantly different between cell lines where the gene was amplified and non-amplified. (D) Correlation between the probability of cell line dependency to UC/EM-i regulators and the IC50 of drugs. (Top left) Expected association between the dependency to the IGF1R regulator and the sensitivity to the IGF1R- inhibitor, BMS-536924. (Top right) Cell lines dependent to ILK show a greater sensitivity to the B-catenin pathway inhibitor (XAV939). (Bottom row) Cell lines dependent on PPRC1 showed increased sensitivity to mTOR inhibitors (temsirolimus) and RNA helicase A inhibitors (YK-4–279).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** A high prevalence of UC/EM-i regulators as clonal drivers across lung cancer and breast cancer patients is observed, with a significant enrichment (p=1.16×10−11) of UC/EM-i regulators among clonal driver genes with point mutations in the TRACERx dataset.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The knockout of regulators generally reveals a low probability of dependency (the highest point of the distributions is close to 0). However, the knockout of a small number of regulators reveal a high probability of dependency (inset).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Regardless of the cutoff used, UC-t and UC/EM-i regulators are enriched (odds ratio >0) in regulators with high dependency.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** We selected correlations < −0.25 and with a p-value<0.05 as significant.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Only significant (p<0.05) Spearman correlations (<−0.25) were selected, which are cases where an increased dependency to the regulator was associated greater drug sensitivity at lower concentrations (lower IC50).
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** The red line indicates the genes whose probability of dependency is significantly correlated (correlation <0.25 and p<0.05) with the IC50 of the drug.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/40947/elife-40947-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** Drug sensitivity to dactolisib, docetaxel, temsirolimus and YK-4–279 is correlated with PPRC1 dependency across cells lines of multiple tissue types. The red line indicates a strong correlation of at lest −0.25.
 
 We further investigated the importance of these regulators to cancer development, we used the dependency scores from CRISPR-Cas9 essentiality screens of 364 solid-tumor tissue cell lines from the Avana CRISPR-Cas9 genome-scale knockout dataset made available by Project Achilles and the Cancer Dependency Map project (Meyers et al., 2017; Broad Institute, 2018b). A high probability of dependency indicates a gene is essential for proliferation of a given cell line (Figure 5—figure supplement 2) (for further details, see Meyers et al., 2017). We calculated the odds ratio (OR) of each regulator type having a large effect on cell line proliferation (probability of dependency >= 0.95), with OR greater than one indicating increased likelihood of a high dependency (Figure 5B, Figure 5—figure supplement 3). As expected, we found most cell lines were highly dependent on UC-t regulators (OR >1 in 96.98% of cell lines), likely due to their role in regulating fundamental functions required for cell survival. However, we also found that 92.86% cancer cell lines were highly dependent on UC/EM-i regulators (OR consistently greater than 1), indicating these regulators are fundamental for cancer cell survival. In contrast, cancer cell lines were not nearly as dependent on EM-t regulators for their proliferation (OR >1 in only 0.55% of cell lines), indicating dysregulation of EM processes might contribute to tumourigenesis, but not be sufficient by themselves. These results suggest that UC/EM-i regulators are indispensible for cancer cell line proliferation.
 
@@ -123,15 +259,15 @@ This study provides comprehensive evidence that both the frequency and types of 
 
 ## Materials and methods
 
-## Gene ages
+### Gene ages
 
 The evolutionary ages of genes were obtained from previously published work (Trigos et al., 2017). Phylostratigraphy (Domazet-Loso et al., 2007) was used to map human genes onto a phylogenetic tree of 16 phylostrata, spanning genes found across all organisms (Phylostratum 1) to those specific to humans (Phylostratum 16). Human genes with orthologs in primitive unicellular species were assigned to older phylostrata (phylostrata 1–3) and referred to as unicellular (UC) genes, those with orthologs in early metazoan species (phylostrata 4–9) are referred to as early metazoan (EM) genes, and those assigned to phylostrata 10–16 are considered to be mammal-specific (MM) genes.
 
-## Tumor types included in analysis
+### Tumor types included in analysis
 
 We included in our analysis all 30 solid cancer types available from TCGA GDAC for which there was CNA and point mutation data available. These were: Adrenocortical carcinoma (ACC), Bladder urothelial carcinoma (BLCA), Breast invasive carcinoma (BRCA), Cervical and endocervical cancers (CESC), Cholangiocarcinoma (CHOL), Colon adenocarcinoma (COAD), Esophageal carcinoma (ESCA), Glioblastoma multiforme (GBM), Head and Neck squamous cell carcinoma (HNSC), Kidney Chromophobe (KICH), Kidney renal clear cell carcinoma (KIRC), Kidney renal papillary cell carcinoma (KIRP), Brain Lower Grade Glioma (LGG), Liver hepatocellular carcinoma (LIHC), Lung adenocarcinoma (LUAD), Lung squamous cell carcinoma (LUSC), Ovarian serous cystadenocarcinoma (OV), Pancreatic adenocarcinoma (PAAD), Pheochromocytoma and Paraganglioma (PCPG), Prostate adenocarcinoma (PRAD), Rectum adenocarcinoma (READ), Sarcoma (SARC), Skin Cutaneous Melanoma (SKCM), Stomach adenocarcinoma (STAD), Testicular Germ Cell Tumors (TGCT), Thyroid carcinoma (THCA), Thymoma (THYM), Uterine Corpus Endometrial Carcinoma (UCEC), Uterine Carcinosarcoma (UCS), Uveal Melanoma (UVM) (The Cancer Genome Atlas Network, 2017b).
 
-## Point mutation data
+### Point mutation data
 
 We obtained somatic point mutation data from the Genomic Data Commons Data Portal (https://portal.gdc.cancer.gov/) for all tumor types available. We selected the intersect of variants called by MuSE (Fan et al., 2016), MuTect2 (Cibulskis et al., 2013), VarScan2 (Koboldt et al., 2012) and SomaticSniper (Larson et al., 2012) by The Cancer Genome Atlas. We excluded variants found in ExAC, 1000 genomes, and only included variants from canonical transcripts not found in the last exon. We also excluded genes with large number of known false positives based on previous studies (Lawrence et al., 2013b), namely titin, mucins, ryanodine receptors, dyneins, PCLO, cub- and sushi-domain proteins, neurexins, contactins, PARK2 and olfactory receptors.
 
@@ -139,23 +275,35 @@ Point mutations were classified as a synonymous mutation, missense mutation (mis
 
 We also obtained a list of recurrently point-mutated genes derived using MutSig2CV (Lawrence et al., 2013b) from Broad TCGA GDAC Firehose, using the firehose_get functionality (version 0.4.13). Genes with a q value less than 0.05 were considered significant.
 
-## Copy-number aberration data
+### Copy-number aberration data
 
 We obtained copy-number aberration (CNA) data from the Genomic Data Commons Data Portal (https://portal.gdc.cancer.gov/) obtained with SNP arrays (The Cancer Genome Atlas Network, 2017a). Only chromosome regions with at least 10 probes were considered. GenomicRanges (Lawrence et al., 2013a) was used to assign chromosome regions to genes. Those with positive segment means were considered to be amplifications, and the rest deletions. A gene was considered amplified or deleted only in cases where genes were covered entirely by a region with a CNA. Amplifications were assigned the maximum segment mean and deletions the minimum, and only CNAs with a segment mean in the top 0.90 quantile were included in the analysis.
 
 We also obtained a list significantly CNAs genes derived using Gistic2 (Mermel et al., 2011) available from Broad TCGA GDAC Firehose, using the firehose_get functionality (version 0.4.13). Only genes with a confidence of 0.99 and that were in the CNA region were considered.
 
-## Enrichment of recurrent point mutations and CNAs in phylostrata
+### Enrichment of recurrent point mutations and CNAs in phylostrata
 
 We defined a gene as having recurrent point mutations if there were at least three patients across a particular tumor cohort with missense or LoF mutations in this gene. To account for the background mutation rate of the gene, only genes with a larger number of patients with missense or LoF mutations than with synonymous mutations were considered. We selected recurrent CNAs as those that were amplified or deleted genes in at least 10% of the patients. Note that these procedures were followed for each tumor type independently.
 
-We calculated the fraction of CNA or point mutated genes in each phylostratum for each tumor type as follows:FractionofgenesalteredPhyi=NRecurrentiNiwhere NRecurrenti corresponds to the number of genes with a recurrent genetic alteration in phylostratum i, and Ni the total number of genes in phylostratum i.
+We calculated the fraction of CNA or point mutated genes in each phylostratum for each tumor type as follows:
+
+$$
+Fractionofgenesaltered_{Phy_{i}}=\frac{N_{Recurrent_{i}}}{N_{i}}
+$$
+
+where $N_{Recurrent_{i}}$ corresponds to the number of genes with a recurrent genetic alteration in phylostratum i, and $N_{i}$ the total number of genes in phylostratum i.
 
 To account for differences in ranges between tumor types, we ranked the phylostrata by the fraction of genes altered, ranging from 1 (most altered) to 16 (least altered).
 
-To compare the trends of recurrent with non-recurrent alterations, we calculated the fraction of altered genes in each phylostratum that were non-recurrent.Fractionofnon−recurrentgenesalteredPhyi=NNon−recurrentiNNon−recurrenti+NRecurrentiwhere NNon-recurrenti corresponds to the number of genes with a non-recurrent genetic alteration in phylostratum i, and NRecurrenti the number of genes with recurrent alterations in phylostratum i.
+To compare the trends of recurrent with non-recurrent alterations, we calculated the fraction of altered genes in each phylostratum that were non-recurrent.
 
-## Gene expression analysis of mutated genes
+$$
+Fractionofnon−recurrentgenesaltered_{Phy_{i}}=\frac{N_{Non−recurrent_{i}}}{N_{Non−recurrent_{i}}+N_{Recurrent_{i}}}
+$$
+
+where $N_{Non-recurrent_{i}}$ corresponds to the number of genes with a non-recurrent genetic alteration in phylostratum i, and $N_{Recurrent_{i}}$ the number of genes with recurrent alterations in phylostratum i.
+
+### Gene expression analysis of mutated genes
 
 RNAseq gene expression data from the tumor samples and the corresponding normal samples were obtained from The Cancer Genome Atlas (The Cancer Genome Atlas Network, 2015). To determine how the mutational status of a gene affected its expression, we compared the expression of each gene with missense mutations in at least three patients or LoF mutations in at least three patients in the tumor type cohort against their levels in patients where the gene was unmodified. One-sided Wilcoxon tests were used to determine whether a gene was significantly over or underexpressed in patients where the gene was mutated, using a p-value cut-off of 0.05. We subsequently calculated the ratio of the number of up- and downregulated genes in each phylostratum.
 
@@ -163,13 +311,13 @@ We performed a similar procedure to calculate the effect of point mutations in r
 
 The magnitude of the downstream effect of mutating regulators was classified as low (<5% down downstream targets affected), moderate (5–20%) or high (>20%) impact. We defined the prevalence of EM genes as regulators as the ratio of the number of EM regulators over the number of UC regulators. The log10 values were calculated to normalize to zero.
 
-## Signatures of selection in chromosomes
+### Signatures of selection in chromosomes
 
 We defined the fraction of copy-number aberrant chromosome for each patient and chromosome as the ratio of the number of genes affected by amplifications or deletions and the total number of genes in the chromosome. To associate this chromosomal context with evolutionary ages of genes, we determined the presence or absence of genes of a specific phylostratum in the copy-number aberrant chromosome regions of each patient. The information was aggregated across patients by averaging the fraction of chromosome altered for each chromosome and phylostratum. Genes in shorter CNA regions (smaller fraction) were considered to be under stronger, focal selection, whereas CNAs in genes found in longer CNA regions (larger fraction) were considered to result from broad amplifications or deletions.
 
 We defined focally amplified or deleted genes as those in which their chromosomal context was in the upper quantile (0.25) of the distribution of the mean fraction of copy-number aberrant chromosome across patients for each chromosome.
 
-## Gene regulatory network analyses
+### Gene regulatory network analyses
 
 We obtained a human gene regulatory network (GRN) from PathwayCommons (version 9) (Cerami et al., 2011; Pathway Commons, 2017) by selecting pairs of genes connected by an edge of the type ‘control-expression-of’, resulting in a directed network with 95,651 edges. We defined regulator genes as those with at least one downstream target.
 
@@ -177,7 +325,7 @@ We defined ‘out-degree’ as the number of outgoing edges of a regulator, repr
 
 We also obtained protein-protein (PPI) networks of humans from PathwayCommons (Cerami et al., 2011) version 9, BioGRID (Chatr-Aryamontri et al., 2017) version 3.4.152 and the InWeb_IM network (Li et al., 2017). Only nodes and edges corresponding to genes and links between two genes were considered. Since these networks are undirected, we only calculated the degree of a gene as the total number of edges associated with the gene.
 
-## Classification of regulators by the evolutionary ages of their downstream targets
+### Classification of regulators by the evolutionary ages of their downstream targets
 
 Regulators were classified as UC-t, EM-t, MM-t or UC/EM-i regulators based on the ages of their target genes, independently of the evolutionary age of the regulator. First, we calculated the percentage of downstream UC, EM and MM target genes for each regulator. A regulator was classified as UC-t if more than 2/3 of its targets were UC genes, as EM-t if more than 2/3 of its targets were EM genes, or MM-t if more than 2/3 if its targets were MM. Regulators that did not meet the above criteria, but at least 1/10 of their target genes were UC genes or EM genes, and less than 1/10 were MM genes, were classified as UC/EM-i regulators.
 
@@ -185,17 +333,17 @@ Functional enrichment of UC/EM-i regulators was performed using the R package of
 
 We compared the effect of point mutations on the level of the expression of pathways they are involved in by calculating the ssGSEA scores (Barbie et al., 2009) using GSVA (version 1.20.0) (Hänzelmann et al., 2013) of KEGG pathways available in the Molecular Signatures Database from the Broad Institute (v6.2) (Liberzon et al., 2011; Subramanian et al., 2005) and performing Wilcoxon test with Benjamini-Hochberg correction. Pathways that did not include an UC/EM-i regulator or referred to generic disease pathways were excluded from the analysis. Only pathways with an adjusted p-value less than 0.05 were considered significant.
 
-## CNA in regulators and targets
+### CNA in regulators and targets
 
 To determine whether the copy-number status of a regulator was associated with the fraction of downstream CNA targets, we calculated the fraction of downstream CNA targets for each regulator in each patient. We compared the fraction of CNA downstream target genes when regulators were CNA and CNN for each patient, and used Wilcoxon tests to determine if there were significant differences in these fractions between patients where the regulator was CNA or CNN. We only considered regulators that were CNA and CNN in at least three patients across all tumor cohorts, and had at least two targets. p-Values were corrected for multiple testing using Benjamini-Hochberg correction.
 
 A summary fraction of CNA targets was obtained for each regulator by calculating the median across patients, and we calculated the difference in percentage of targets with CNAs by subtracting the fraction of targets when the regulator was CNA minus the fraction when the regulator was CNN.
 
-## Gene expression analyses of CNA targets and regulators
+### Gene expression analyses of CNA targets and regulators
 
 RNAseq gene expression data from the tumor samples and the corresponding normal samples were obtained from The Cancer Genome Atlas. We evaluated the effect of CNAs on gene expression by calculating the expression fold-change between matched tumor and normal samples for each gene, and comparing the fold-changes of samples where the gene was CNA and where it was CNN using one-sided Wilcoxon tests. Only genes that were amplified or deleted in at least three samples were considered. Benjamini-Hochberg correction was used for correction for multiple testing. Note that due to the poor overlap between patient gene expression data for tumor and matched normal samples and CNA values, data presented is only of a subset of the 30 tumor types. We next calculated the percentage of significantly over or underexpressed amplified or deleted UC, EM and MM target genes, respectively. We calculated the percentage of differentially expressed CNA targets as the ratio between the number of differentially expressed CNA targets of each regulator and the total number of CNA target genes multiplied by 100. We subsequently calculated the median percentage of differentially expressed CNA targets for each regulator class in each tumor type, and Wilcoxon tests were calculated to determine significant differences.
 
-## Cancer cell line gene knockout, mutation and IC50 values
+### Cancer cell line gene knockout, mutation and IC50 values
 
 Scores of the probability of dependency to genes across 364 solid-tumor tissue cell lines were obtained from the Avana CRISPR-Cas9 genome-scale knockout dataset generated by Project Achilles and the Cancer Dependency Map project (18Q1 version) (https://portals.broadinstitute.org/achilles; Trigos et al., 2018). We excluded all cell lines from haematopoietic and lymphoid tissues. A cell line was considered to be dependent on a regulator if its probability of dependency was greater than 0.95. The enrichment of a regulator class among the regulators to which cancer cell lines were dependent was determined using the odds ratio.
 
@@ -203,6 +351,6 @@ Mutation and CNA information of cell lines was obtained from the Cancer Cell Lin
 
 IC50 values of cancer cell lines after treatment with 250 cancer drugs were obtained from the Genomics of Drug Sensitivity in Cancer database (version 17, release 6) (Yang et al., 2013) (https://www.cancerrxgene.org/; Genomics of Drug Sensitivity in Cancer Consortium, 2016). We calculated the Spearman correlation of IC50 values with dependency scores from the Avana CRISPR-Cas9 databases. We only considered negative correlations < −0.25 and with a adjusted p-values after Benjamini and Hochberg correction <0.05, since we were interested in cell lines with high dependency to a regulator and that showed greater drug sensitivity at lower concentrations.
 
-## Code availability
+### Code availability
 
 R code to perform all analyses and generate all figures is available at https://github.com/cancer-evolution/Evolutionary-analysis-of-somatic-mutations-in-cancer (Trigo, 2019; copy archived at https://github.com/elifesciences-publications/Evolutionary-analysis-of-somatic-mutations-in-cancer).

@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/057jrqr44 Department of Psychology, University of East London London United Kingdom
-2. https://ror.org/014p6mg26 Centre National de la Recherche Scientifique, Laboratoire de Psychologie et NeuroCognition, Université Grenoble Alpes Grenoble France
+1. Department of Psychology, University of East London London United Kingdom ([ROR:057jrqr44](https://ror.org/057jrqr44))
+2. Centre National de la Recherche Scientifique, Laboratoire de Psychologie et NeuroCognition, Université Grenoble Alpes Grenoble France ([ROR:014p6mg26](https://ror.org/014p6mg26))
 
 † Corresponding author
 
@@ -65,7 +65,7 @@ In the second section of part 3, we examined saliency in the caregiver’s speec
 
 The results section is divided into three parts. In part 1, we first conduct descriptive statistics of infant attention durations, and test for oscillatory structures in caregiver and infant attention. Then, in part 2, we examine whether endogenous infant neural activity forwards-predicts fluctuations in infant attention, and/or reactively changes in the time after the onset of an object-directed attention episode. In part 3, we assess whether modulations in caregiver gaze and vocal behaviour forwards-predict fluctuations in infant attention, and/or reactively change in the time after infants shift their attention towards a new object.
 
-## Part 1 - Oscillatory structures in caregiver and infant attention
+### Part 1 - Oscillatory structures in caregiver and infant attention
 
 First, as descriptive statistics, we report on the frequency distribution of caregiver and infant attention durations towards objects, the partner, and periods of off-task attention, dividing attention durations into 100ms bins. Histograms showing the distribution of caregiver and infant attention durations towards objects, partners, and non-targets are displayed in Figure 1; Figure 2a. In both distributions the mode is greater than the minimum value, consistent with previous observations that attention shifting is periodic (Saez de Urabain et al., 2017). The caregivers’ distribution is also more left-skewed compared to the infants’ distribution, reflecting the shorter and more frequent attention durations by the caregiver c.f (Wass et al., 2018b; Yu and Smith, 2012). Finally, consistent with previous reports (Yu and Smith, 2013), caregivers tended to look towards their partner more frequently than infants, with infants attending most frequently to the objects (Figure 2a).
 
@@ -85,11 +85,11 @@ Finally, we replicated previous analyses (Takahashi et al., 2013) to explore whe
 
 In summary, oscillatory mechanisms appear to govern both caregiver and infant attention durations; with infant attention durations centring around 1–2 s in length, and adults around 200–500ms. The cross-correlation analysis, however, suggested that caregiver and infant attention shifts do not act as coupled oscillators across the dyad (Figure 2c).
 
-## Part 2 - Does endogenous neural activity forwards-predict infant attention, or reactively change following the onset of a new infant attention episode?
+### Part 2 - Does endogenous neural activity forwards-predict infant attention, or reactively change following the onset of a new infant attention episode?
 
 In this section, we investigate the association between infant endogenous oscillatory neural activity and infant attention durations, considering both forwards-predictive associations and reactive changes in infants’ endogenous oscillatory activity after the onset of object-directed attention episodes. See Materials and methods section Infant EEG artifact rejection and pre-processing for details of our EEG pre-processing pipeline, including a description of the specially designed and automatic movement artifact rejection procedures.
 
-## Forwards predictive association between infant attention and infant theta activity
+#### Forwards predictive association between infant attention and infant theta activity
 
 To examine whether infant endogenous neural activity significantly forwards-predicted infant attentiveness, we calculated a cross-correlation between the continuous infant attention duration time-series (see Figure 1d), including all infant attention episodes to objects, the partner and looks elsewhere, and infant theta activity. Figure 3a shows the results of the cross-correlation analysis. This analysis revealed a significant, positive association between the two variables at time-lags ranging from –2 to +6 s (p=0.004).
 
@@ -99,21 +99,21 @@ To examine whether infant endogenous neural activity significantly forwards-pred
 
 This indicates that infant theta power significantly forwards-predicted infant attention durations at lags up to 2 s, as well as that infant attention durations significantly forwards-predicted infant theta at lags of up to 6 s. Interpreting the exact time intervals over which a cross-correlation is significant is challenging due to the auto-correlation in the data (Clifford et al., 1989; Pickup, 2014), but there are two points of significance here. The first is the fact that the peak cross-correlation is observed not at time 0 but at time t+1.5 s (i.e. between looking behaviour at time t and theta power at time t+1.5 s). The second is that the significance window is asymmetric around time 0. Neither of these points can be attributable to residual auto-correlation. Overall, then, we can conclude that there is a temporally specific association between infant attention durations and theta power; and that attention durations forwards-predict theta power more than vice versa.
 
-## Reactive change in infant theta activity following look onset
+#### Reactive change in infant theta activity following look onset
 
 In addition to the continuous cross-correlation analysis, including all infant looks, we conducted two further analyses to investigate the association between theta activity and the duration of infant attention episodes towards objects. First, we calculated a linear mixed effects model to examine the association between the lengths of infant object attention episodes and average theta activity during that episode. The model predicted infant attention durations from infant theta activity, as a fixed effect, including participant as a random factor (see Materials and methods for more detail). This showed a significant, positive association between the two variables (β=0.33; p<0.001); scatter plot between the two variables is shown in Figure 3b. This indicates that higher average theta power across the attention episode associates with longer attention durations. Second, we explored dynamic change in theta activity relative to the onset of infant attention episodes towards objects. The modulation analysis (Figure 3c), examining average infant theta activity during each third of a continuous look, showed that there was little change in infant theta activity over the duration of infant attention episodes, for any duration time-bin: a series of Wilcoxon signed rank tests indicated decreases in infant theta activity for attention episodes lasting 1–3 s, but this did not survive Benjamini-Hochberg correction.
 
-## Summary
+#### Summary
 
 In summary, there is a temporally specific association between infant attention durations and theta power, with attention durations forwards-predicting theta power more than vice versa (Figure 3a). Longer object attention episodes are associated with increased average theta activity over the length of the episode (Figure 3b), but little dynamical change in theta activity is observed over the course of an object-directed attention episode.
 
-## Part 3 - Does caregiver behaviour forwards-predict infant attention, or reactively change following the onset of a new infant attention episode?
+### Part 3 - Does caregiver behaviour forwards-predict infant attention, or reactively change following the onset of a new infant attention episode?
 
 First, we examine whether caregiver gaze behaviour associates with infant attentiveness. Second, we examine whether caregiver vocal behaviour associates with infant attentiveness, focusing on the rate of change of caregiver F0 as an index of auditory salience. In each case, we examine both forwards-predictive associations between caregiver behaviour and infant attention, and reactive changes in caregiver behaviour relative to the onsets of infant attention episodes towards objects.
 
-## Caregiver gaze behaviour
+#### Caregiver gaze behaviour
 
-## Forwards-predictive associations between infant attention durations and caregiver attention durations
+##### Forwards-predictive associations between infant attention durations and caregiver attention durations
 
 To examine whether caregiver attention forwards-predicts infant attentiveness, we conducted cross-correlation analyses between the continuous infant and caregiver attention durations (see Figure 1d). In order to test whether any association between infant attentiveness and caregiver attentiveness was independent of the association between infant attentiveness and their endogenous oscillatory neural activity shown in Figure 3a, we also repeated these analyses relative to infant theta activity. Results are reported in Figure 4. The cross-correlation between caregiver and infant attention durations peaks after lag zero (t+2.5 s), but cluster-based permutation analysis revealed no significant clusters of time points, although one cluster verged on significance (p=0.10). The cross-correlation function between caregiver attention durations and infant theta activity revealed a similar pattern (Figure 4b), peaking in the period after time 0, and the cluster-based permutation analysis revealed a significant cluster ranging from –1–5 s (p=0.012). Although it is likely that the association between caregiver attention durations and infant theta shown in Figure 4b is mediated by the association between caregiver attention durations and infant attention durations shown in Figure 4a, the latter association is significant whereas the former is not. As for the analyses described in part 2, the exact time window over which the cross-correlation is significant cannot be interpreted due to autocorrelation in the data; but the fact that the peak cross-correlation is observed, again, at t+1.5 s, and that the significance window is asymmetric around time 0, both indicate that, overall, infant theta predicts caregiver attention durations more than vice versa.
 
@@ -121,7 +121,7 @@ To examine whether caregiver attention forwards-predicts infant attentiveness, w
 
 **Figure 4.:** Black lines show the Pearson cross-correlation between two variables; coloured shaded areas indicate the SEM. Black horizontal lines show significant clusters of time lags (*p<0.05). (a) Infant and caregiver continuous attention durations (N=66). Cluster based permutation analysis revealed no significant clusters of time points, although one cluster verged on significance (p=0.10). (b) Infant theta activity and caregiver continuous attention durations (N=60). Cluster-based permutation analysis indicated one significant cluster ranging from –1–5 s (p=0.012).
 
-## Reactive change in caregiver look durations following infant look onset
+##### Reactive change in caregiver look durations following infant look onset
 
 To examine reactive change in caregiver attention to objects following the onsets of infant attention episodes to objects, we time-locked caregiver attention durations to infant attention onsets towards objects. Figure 5a shows changes in caregiver attention durations around the onset of infant attention towards an object. Cluster-based permutation analysis revealed a significant cluster of time points 0–4 s post attention onset (p=0.009), indicating that caregiver attention durations significantly decreased after the onset of a new infant attention episode. Figure 5b shows the same event-related analysis subdivided by infant attention duration. This revealed that the decrease in caregiver attention durations after infant attention onsets was significant for attention episodes lasting over 3 s.
 
@@ -131,15 +131,15 @@ To examine reactive change in caregiver attention to objects following the onset
 
 To investigate how caregiver behaviour changed over the course of infant object looks, we next employed the same modulation analysis as described in part 2, computing differences in mean caregiver attention durations between 3 equal-spaced chunks over the course of an infant object look. This analysis revealed that, in contrast to the first 4 s of an infant attention episode during which caregiver attention durations decreased, caregiver attention durations actually significantly increased over the course of the entire attention episode, with a Wilcoxon signed ranks test indicating a significant difference between the first chunk of an attention episode and the third (Figure 5c). Dividing infant attention durations into log-spaced bins again revealed that this effect was driven by attention episodes lasting over 3 s (Figure 5d). Finally, we computed a linear mixed effect model to examine the association between infant object attention durations and caregiver object attention durations. The model predicted infant attention durations from caregiver attention durations, as a fixed effect, including participant as a random factor. Corresponding to the modulation analyses reported above, when we averaged over the course of the entire infant object attention episode, we found that longer infant object attention durations associated with longer average caregiver attention durations (β=0.16, p<0.001). Figure 5e shows the scatter plot of the association between infant look durations and averaged caregiver look durations over the length of each individual infant look duration.
 
-## Summary
+##### Summary
 
 In summary, both the continuous and event-related analyses revealed that caregivers dynamically adapted their gaze behaviour in response to changes in infant attentiveness during the interaction. Infant theta activity significantly forwards-predicted caregiver attention durations, suggesting that caregivers dynamically adapt their behaviour according to infant engagement (Figure 4b). Caregiver attention durations to objects decreased around the start of a new infant attention episode (Figure 5a), but overall, longer infant attention durations associated with longer attention durations by the caregiver towards objects (Figure 5e). These analyses demonstrate immediate, reactive, change in caregiver behaviour at the onset of infant attention towards an object, as well as slower-changing modulations in their behaviour over the length of an attention episode.
 
-## Caregiver vocal behaviour
+### Caregiver vocal behaviour
 
 Next, we used an identical analysis approach to examine forwards-predictive and reactive associations between infant attention and caregiver vocal behaviours. Here, we concentrate on the rate of change in F0 as a marker of auditory saliency in the caregiver’s voice. In additional analyses presented in the Appendix, we also examine caregiver vocal durations, and caregiver amplitude modulations (Appendix 1—figure 2 and Appendix 1—figure 3).
 
-## Forwards-predictive associations between infant look durations and caregiver vocal behaviour
+#### Forwards-predictive associations between infant look durations and caregiver vocal behaviour
 
 First, we computed the cross-correlations between rate of change of caregiver F0, infant attention durations, and infant endogenous neural activity. Results are shown in Figure 6. Cluster-based permutation analysis revealed that the time-lagged associations between infant attention and rate of change in caregiver F0 did not exceed chance (Figure 6a). To test whether there was any direct influence of caregiver behaviour on modulations in infant endogenous neural activity, the same analyses were subsequently repeated relative to infant theta activity (Figure 6b): cluster-based permutation analysis again suggested no significant association between rate of change in caregiver F0 and infant theta activity. The same analyses are presented relative to caregiver vocal durations and amplitude modulations in Appendix 1—figure 2, which showed a similar pattern of results.
 
@@ -147,7 +147,7 @@ First, we computed the cross-correlations between rate of change of caregiver F0
 
 **Figure 6.:** Black lines show the Pearson cross-correlation between two variables; coloured shaded areas indicate the SEM. Black horizontal lines show significant clusters of time lags (*p<0.05). (a) Rate of change in caregiver F0 and continuous infant attention durations (N=51). (b) Rate of change in caregiver F0 and infant theta activity (N=46).
 
-## Reactive change in caregiver vocal behaviour following infant look onset
+#### Reactive change in caregiver vocal behaviour following infant look onset
 
 To examine whether caregivers reactively adapted their vocal behaviour to changes in infant attention, we repeated the same analysis presented in section Reactive change in caregiver look durations following infant look onset, with rate of change of caregiver F0 as the dependent variable. The event-related analysis revealed no increase in the rate of change in caregiver F0 relative to infant attention onsets: cluster-based permutation analysis revealed no change above chance levels (Figure 7b). This suggests that modulations in caregiver’s speech were not immediately reactive to infant attention onsets towards objects. Over the length of individual attention episodes towards objects, however, linear mixed effects models, predicting infant attention durations from caregiver F0, with participant as a random factor, revealed that longer object looks associated with a greater rate of change in caregiver F0 (β=0.13; p<0.001; Figure 7a), and, for looks lasting between 3 and 10 s, caregivers decreased the rate of change in the fundamental frequency of their voice, over the course of a look (Figure 7c and d). The exact same analysis relative to caregiver vocal durations and amplitude modulations showed a similar pattern of findings, which is presented in Appendix 1—figure 3.
 
@@ -155,7 +155,7 @@ To examine whether caregivers reactively adapted their vocal behaviour to change
 
 **Figure 7.:** (a) Scatter plot of the association between infant attention durations and rate of change in caregiver F0. A linear mixed effects model revealed a significant positive association between the two variables (β=0.13; p<0.001 [Spearman’s r=0.09, p<0.001; Pearson’s r=0.14, p<0.001]), (b) Event related analysis examining reactive change in caregiver F0 in the time after the onset of an infant object look. Black line indicates the average across participants; coloured shaded area indicates SEM. (c) Modulation analysis: each bar shows the median for each chunk across participants; errors bars show the SEM. Wilcoxon signed ranks tests explored significant differences between attention chunks (*p<0.05), (d) Same as (c), binned by infant attention durations. N=51 for all analyses.
 
-## Summary
+### Summary
 
 In summary, longer infant object look durations associated with a greater rate of change in caregiver F0, overall. Caregiver vocal behaviour showed no event-related change relative to infant attention onsets towards objects, but longer attention durations were associated with a decrease in the rate of change in F0.
 
@@ -191,17 +191,17 @@ Overall, our findings suggest that infant attention in early interaction is asym
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Ninety-four caregiver-infant dyads took part in this study. The final overall sample with usable, coded, gaze data was 66 (17 infants were excluded due to recording error or equipment failure, 4 infants were excluded for fussiness and 6 infants were excluded due to poor quality EEG data, and limited coding resources). Of the infants with usable gaze data, 51 had additional vocal data (15 excluded due to recording error/equipment failure). Of those with gaze data, 60 infants had usable EEG data (a further 6 excluded due to noisy EEG data -see artifact rejection section below). All usable data sets available for each separate analysis were used in the results reported below (e.g. infants with gaze and EEG data but no vocal data are included in analyses exploring the association between infant EEG and gaze). The sample size was selected following power calculations presented in the original funding application (RPG-2018–281). The mean age of the final overall sample (n=66) was 11.18 months (SD = 1.27); 33 females, 30 males. All caregivers were female. See Appendix 1—table 1 for further demographic information. Participants were recruited through baby groups and Childrens’ Centers in the Boroughs of Newham and Tower Hamlets, as well as through online platforms such as Facebook, Twitter and Instagram. Written informed consent was obtained from all participants before taking part in the study, and consent to publish was obtained for all identifiable images used. All experimental procedures were reviewed and approved by the University of East London Ethics Committee (Approval number: ETH1819-0141).
 
-## Experimental set-up
+### Experimental set-up
 
 Parents and infants were seated facing each other on opposite sides of a 65 cm wide table. Infants were seated in a high-chair, within easy reach of the toys (see Figure 1b). The shared toy play comprised two sections, with a different set of toys in each section, each lasting ~5 min each. Two different sets of three small, age-appropriate toys were used in each section; this number was chosen to encourage caregiver and infant attention to move between the objects, whilst leaving the table uncluttered enough for caregiver and infant gaze behaviour to be accurately recorded cf. (Yu and Smith, 2013).
 
 At the beginning of the play session, a researcher placed the toys on the table, in the same order for each participant, and asked the caregiver to play with their infant just as they would at home. Both researchers stayed behind a screen out of view of caregiver and infant, except for the short break between play sessions. The mean length of joint toy play recorded for play section 1 was 297.28 s (SD = 54.93) and 323.18 s (SD = 83.45) for play section 2.
 
-## Equipment
+### Equipment
 
 EEG signals were recorded using a 32-chanel BioSemi gel-based ActiveTwo system with a sampling rate of 512 Hz with no online filtering using Actiview Software. The interaction was filmed using three Canon LEGRIA HF R806 camcorders recording at 50 fps. Parent and infant vocalisations were also recorded throughout the play session, using a ZOOM H4n Pro Handy Recorder and Sennheiner EW 112P G4-R receiver.
 
@@ -209,15 +209,15 @@ Two cameras faced the infant: one placed on the left of the caregiver, and one o
 
 Caregiver and infant cameras were synchronised to the EEG via radio frequency (RF) receiver LED boxes attached to each camera. The RF boxes simultaneously received trigger signals from a single source (computer running MATLAB) at the beginning of each play section, and concurrently emitted light impulses, visible in each camera. Microphone data was synchronised with the infants’ video stream via a xylophone tone recorded in the infant camera and both microphones, which was hand identified in the recordings by trained coders. All systems were extensively tested and found to be free of latency and drift between EEG, camera and microphone to an accuracy of +/-20ms.
 
-## Video coding
+### Video coding
 
 The visual attention of caregiver and infant was manually coded using custom-built MATLAB scripts that provided a zoomed-in image of parent and infant faces (see Figure 1b). Scripts used to code the gaze behaviours of caregivers and infants are available on Zenodo (Wass, 2024). Coders indicated the start frame (i.e. to the closest 20ms, at 50fps) that caregiver or infant looked to one of the three objects, to their partner, or looked away from the objects or their partner (i.e. became inattentive). Partner attention epsiodes included all looks to the partner’s face; looks to any other parts of the body or the cap were coded as inattentive. Periods where the researcher was within camera frame were marked as uncodable, as well as instances where the caregiver or infant gaze was blocked or obscured by an object, or their eyes were outside the camera frame. Video coding was completed by two coders, who were trained by the first author. Inter-rater reliability analysis on 10% of coded interactions (conducted on either play section 1 or play section 2), dividing data into 20ms bins, indicated strong reliability between coders (kappa = 0.9 for caregiver coding and kappa = 0.8 for infant coding).
 
-## Vocalisation coding
+### Vocalisation coding
 
 The onset and offset times of caregiver and infant vocalisations were identified using an automatic detector. The algorithm detected voiced segments and compared the volume and fundamental frequency detected in each recorded channel to infer the probable speaker (caregiver vs. infant). Identification of the onset and offset times of the detector then underwent a secondary analysis by trained coders, who identified misidentification of utterances by the automatic decoder, as well as classifying the speaker for each vocalisation. As the decoder did not accurately identify onset and offset times of caregiver and infant during co-vocalisations, and, as these vocalisations could not be included in analyses of the spectral properties of caregiver vocalisations, these were excluded from all analyses. The mean percentage of caregiver vocalisations that were co-vocalisations was less than 20%: 19.43 (SD = 12.36; a box plot across all participants is presented in Appendix 1—figure 4). In a previous analysis conducted on a sub-sample of the data, we have shown that there is no significant change in infant vocalisations, relative to the onset of infant attention episodes, and their vocal beahviour did not distinguish between moments that they either led or followed their partners’ attention during the interaction. It is therefore unlikely that inclusion of co-vocalisations in the current analyses would affect the main findings, time-locking caregiver vocalisations to infant attention.
 
-## Infant EEG artifact rejection and pre-processing
+### Infant EEG artifact rejection and pre-processing
 
 A fully automatic artifact rejection procedure including ICA was adopted, following procedures from commonly used toolboxes for EEG pre-processing in adults (Bigdely-Shamlo et al., 2015; Mullen, 2012) and infants (Debnath et al., 2020; Gabard-Durnam et al., 2018), and optimised and tested for use with our naturalistic infant EEG data (Georgieva et al., 2020; Marriott Haresign et al., 2022). This was composed of the following steps: first, EEG data were high-pass filtered at 1 Hz (FIR filter with a Hamming window applied: order 3381 and 0.25/25% transition slope, passband edge of 1 Hz and a cut-off frequency at –6 dB of 0.75 Hz). Although there is debate over the appropriateness of high pass filters when measuring ERPs (see Widmann and Schröger, 2012), previous work suggests that this approach obtains the best possible ICA decomposition with our data (Dimigen, 2020; Marriott Haresign et al., 2021). Second, line noise was eliminated using the EEGLAB (Bigdely-Shamlo et al., 2015) function clean_line.m (Mullen, 2012).
 
@@ -227,25 +227,25 @@ Sixth, the data were low-pass filtered at 20 Hz, again using an FIR filter with 
 
 Data collected from the entire course of the play session (including play section 1 and play section two, as well as two further 5-min interactions) were then concatenated and ICAs were computed on the continuous data using the EEGLAB function runica.m. After ICA rejection, data from each play section were re-split.
 
-## Pre-processing of continuous variables
+### Pre-processing of continuous variables
 
 Prior to conducting our main analyses, all primary variables of interest were converted into continuous variables, in order to perform time-lagged and event-locked methods of analysis, relative to infant attention (see Figure 1d). All continuous variables were down sampled to match the sampling rate of the video cameras (50 Hz).
 
-## Infant theta activity over fronto-central electrodes
+#### Infant theta activity over fronto-central electrodes
 
 First, missing data points were excluded from the continuous time-series. Where one or more of the fronto-central electrodes of an individual infant exceeded 100uV for more than 15% of the interaction, the infant’s continuous theta time-series was excluded from analyses. Next, time-frequency decomposition was conducted via continuous morlet wavelet analysis to extract EEG activity occurring at frequencies ranging from 1 to 16 Hz. Specifically, the EEG signal at each channel was convolved with Gaussian-windowed complex sine-waves, ranging from 1 to 16 Hz, in linearly spaced intervals. The width of the guassian was set to 7 cycles. Power was subsequently extracted as the absolute value squared, resulting from the complex signal. After decomposition, to get rid of edge artifacts caused by convolution, the first and last 500ms of the time series were treated as missing data points. Missing data points were then re-inserted into the continuous variable as blank values, and the 500ms before and after these chunks of data also excluded. For each time point, for each frequency, power was expressed as relative power (i.e. the total power at that frequency, divided by the total power over all frequencies). EEG activity was then averaged over frequencies ranging from 3 to 6 Hz, and averaged over fronto-central electrodes (AF3, AF4, FC1, FC2, F3, F4, Fz; see Figure 1). This electrode cluster was chosen based on previous infant literature (Braithwaite et al., 2020). This continuous, one-dimensional variable was then downsampled from 512 to 50 Hz by taking the median theta activity for every 10 samples of data, and, in each second, taking an extra 1 sample for 3 time points and an extra 2 samples for 1 time point. The spacing of these added samples was shuffled for each second of data.
 
-## Continuous attention durations
+#### Continuous attention durations
 
 An attention episode was defined as a discrete period of attention towards one of the play objects on the table, or to the partner. The end of each attention episode was defined as the moment where the participant first looked away from the target towards another object, towards the partner, or towards another location that was not either the object or the partner (coded as non-target attention). See Figure 1d for an example. Parts of the caregiver/infant gaze coded as uncodable were treated as missing data points, as well as the looks occurring in the time just before and after (in order to account for the fact that we do not know how long these looks last).
 
 For the analyses in parts 2 and 3, which examine the associations between attention durations and other measures, we recoded each look based on the duration in seconds of that look. The durations of each look were then used to produce a continuous look duration variable, irrespective of whether that look was towards the object, partner, or non-target (see Figure 1d). These analyses examine therefore the associations between the durations of attention episodes and, respectively, endogenous infant neural activity (part 2) and caregiver behaviour (part 3).
 
-## Binary attention durations
+#### Binary attention durations
 
 For the analyses in part 1, which examine the temporal oscillatory patterns of attention shifts, we recoded each look alternatively as a 0 or 1 from the first look of the interaction to the last (see Figure 1d). These analyses examine therefore the temporal inter-dependencies between attention durations (within an individual and across the dyad), irrespective of where the attention is directed.
 
-## Rate of change in the fundamental frequency (F0) of the caregiver’s voice
+#### Rate of change in the fundamental frequency (F0) of the caregiver’s voice
 
 The fundamental frequency of the caregiver’s voice was extracted using Praat (Borsema and Weenik, 2019), with floor and ceiling parameters set between 75 and 600 Hz. Caregiver fundamental frequency was placed into the continuous variable only where the coder had identified that section of speech as the caregiver speaking, so that infant vocalisations were not included in the analysis. Due to the caregiver being within variable distance of their microphones, some clipping was identified in a sample of the microphone recordings. A stringent clipping identification algorithm was used (see Appendix 1: clipping identification algorithm and Appendix 1—figure 5) to remove parts of the microphone data where clipping occurred (Hansen et al., 2021). Vocalisations where any clipping was identified were set to missing data points. Interactions with more than 30% missing vocalisations were excluded from the analyses. Statistics on the number of vocalisations excluded on this basis is presented in Appendix 1—figure 5. Co-vocalisations were set to missing data points.
 
@@ -253,11 +253,11 @@ Next, unvoiced sounds and periods between vocalisations were interpolated, using
 
 See Appendix 1 for a description of the computation of caregiver vocal durations and amplitude modulations.
 
-## Analysis procedures
+### Analysis procedures
 
-## Procedures for part 1
+#### Procedures for part 1
 
-## Partial autocorrelation function
+##### Partial autocorrelation function
 
 The partial auto-correlation function (PACF) of the caregiver and infant gaze time series was computed separately, over a range of time intervals, from 100 to 1000ms. First, the gaze time series was converted to a continuous binary variable, with either a 1 or 0 inserted into the time series for the duration of each attention episode, alternated for each consecutive look. The PACF was then computed by fitting an ordinary least squares regression model, at time-lags ranging from 0 to 10 s, in 100ms intervals, controlling for all previous time-lags on each iteration. This analysis was repeated at intervals of 200, 500, and 1000ms.
 
@@ -265,7 +265,7 @@ Shuffled time series
 
 To investigate whether the shape of the PACF reflected the temporal distribution of infant/caregiver attention episodes or more simply the frequency distribution (i.e. infant/caregiver attention episodes frequently last a similar length Brookshire, 2022), we conducted a permutation procedure, whereby, for each infant, their attention duration time series was shuffled randomly in time to produce a binary gaze time series of shuffled attention durations. The PACF was then computed for this time series in exactly the same way described above. This procedure was subsequently repeated 100 times for each participant, before averaging over all permutations and participants.
 
-## Binary cross-correlation
+##### Binary cross-correlation
 
 Computation
 
@@ -279,37 +279,37 @@ Significance testing
 
 A cluster-based permutation approach was used to investigate whether the binary cross correlation differed significantly from the Poisson baseline distribution over any time-period. This approach controls for family-wise error rate using a non-parametric Monte Carlo method (Maris and Oostenveld, 2007). First, the cross-correlation at each time lag in the observed data was compared with the Poisson baseline distribution at that time lag, and values falling above the 97.5th centile and below the 2.5th centile were accepted as significant (corresponding to a significance level of 0.05). Next, to examine the likelihood of clusters of significant time points in the observed data occurring by chance, a cluster-threshold was computed using a leave-on-out procedure with the Poisson baselines. On each iteration, one baseline was compared with the 99 other baselines, and significant time-points identified using the same method described above. The largest cluster found on each iteration was identified to create a random permutation distribution of cluster sizes. The clusters identified in the observed data were then compared with this permutation distribution of maximum cluster sizes, and clusters falling above the 95th centile were considered significant (corresponding to a significance level of 0.05).
 
-## Procedures for parts 2 and 3
+### Procedures for parts 2 and 3
 
-## Cross-correlation analyses
+#### Cross-correlation analyses
 
 Cross-correlations were computed between continuous infant attention durations, the continuous caregiver variables and infant theta activity. All analyses for the continuous caregiver variables were subsequently repeated relative to infant theta activity.
 
-## Computation
+##### Computation
 
 First, the time series of each variable were log transformed, and outliers falling 2 inter-quartile ranges above the upper quartile and two inter-quartile ranges below the lower quartile removed. A detrend was then applied to each variable; linear and quadratic bivariate polynomials were fit to each transformed time-series, and the residuals of the model of best fit computed. The cross-correlation between the two variables was then computed at lags –30 to +30 s in 500ms intervals. The zero-lagged cross-correlation was first computed between the two variables using a Pearson correlation. The caregiver’s time series (or infant theta activity where this was computed relative to infant attention durations) was then moved backwards in time (to compute negative lag correlations), or forwards in time (to compute positive lag correlations), and the Pearson correlation computed between the two time-series at each 500ms interval. In this way, we estimated how the association between the two variables changed with increasing time lags. The cross-correlations at each time-lag were then averaged over the two interactions for each participant, and then averaged over all participants.
 
-## Significance testing
+##### Significance testing
 
 A cluster-based permutation approach was used to investigate whether the time-lagged cross correlation differed significantly from chance over any time period. This approach controls for family-wise error rate using a non-parametric Monte Carlo method (Maris and Oostenveld, 2007). To create a random permutation distribution at each time-lag, each participant was randomly paired with another participant, through a process of derangement, and the cross-correlation between the caregiver and infant variables computed, and averaged over participants in exactly the same way described above. This procedure was then repeated 1000 times, resulting in a random permutation distribution at each time lag. Next, the cross-correlation at each time lag in the observed data was compared with the permutation distribution at that time lag, and values falling above the 97.5th centile and below the 2.5th centile were accepted as significant (corresponding to a significance level of 0.05). To examine the likelihood of clusters of significant time points in the observed data occurring by chance, a cluster-threshold was computed using a leave-on-out procedure on the permutation data. On each iteration, one permutation was compared with the 999 other permutations, and significant time-points identified using the same method described above. The largest cluster found on each iteration was identified to create a random permutation distribution of cluster sizes. The clusters identified in the observed data were then compared with this permutation distribution of maximum cluster sizes, and clusters falling above the 95th centile were considered significant (corresponding to a significance level of 0.05). See Appendix 1—figure 6 for an example of an observed data time series plotted against its permutation distribution.
 
-## Linear mixed effect models
+### Linear mixed effect models
 
 Linear mixed effect models were used to investigate the association between caregiver behaviour, infant theta activity and infant attention durations. First, for each participant, for each object attention episode, the continuous caregiver behavioural variable (or infant theta activity) was averaged over the length of the infant attention episode, to obtain one value per infant attention duration. Next, each variable was log-transformed, and outliers 2 inter-quartile ranges above the upper quartile and two inter-quartile ranges below the lower quartile removed. Finally, linear mixed effects models were fitted, with caregiver behaviour, or infant theta activity as the fixed effect, and infant attention durations as the response variable, using the fitlme function in MATLAB. To control for between-participant variability in infants’ average attention durations (Suarez-Rivera et al., 2019), random intercepts were specified for participants, as well as uncorrelated by-participant random slopes, to control for differences between participants in the strength of the effect of caregiver behaviours on infant look durations (Brown, 2021; Gelman and Hill, 2006).
 
-## Attention onset event-related analysis
+### Attention onset event-related analysis
 
-## Computation
+#### Computation
 
 Before event-locking the continuous variables to infant attention, the continuous variable (caregiver behaviour / infant theta activity) was log-transformed, and outliers removed, applying a similar procedure to that described above. First, the frame of the onset of each infant object look, as well as the duration of that look was extracted from the infant gaze time series. Next, for each continuous variable, the frames occurring five seconds before and five seconds after the onset of each infant look were extracted from the continuous time series. Given the fact that we were interested in how caregiver behaviour changed around the onset of an attention episode, where the infant shifted gaze again in the 5 s time period after attention onset, the values in the continuous caregiver variable were set to missing data points. The continuous frames occurring before and after each look were then averaged over looks, for each interaction, resulting in an averaged continuous variable along the time dimension. These values were then averaged over interactions for each participant, before averaging over all participants.
 
 In order to explore the possibility that the length of the infant attention episode might affect how the caregiver’s behaviour changed around the onset of that episode, exactly the same analysis was repeated on attention durations of different lengths, in 5 log-spaced intervals, ranging from 0 to the longest attention episode identified across the datasets (118 s).
 
-## Significance testing
+#### Significance testing
 
 Significance testing followed exactly the same procedures outlined in the cross-correlation analysis section.
 
-## Modulation during attention episodes
+### Modulation during attention episodes
 
 For this analysis, all continuous data variables (caregiver behaviour / infant theta activity) were log transformed and outliers removed (see above). Then, for each infant object look, the continuous caregiver behaviour / infant theta activity was extracted over the length of that attention episode, and divided into 3 equal-spaced chunks. The continuous data variable occurring in the first half of each chunk was then averaged for each attention episode, before being averaged over all episodes for that interaction. Averaged chunks from play section 1 and play section 2 were then averaged together for each participant, and the mean over all participants, for each chunk, computed. A series of Wilcoxon Signed ranks tests assessed whether the chunks differed to each other, compared to that which would be expected by chance. The Benjamini-Hochberg false discovery rate procedure was applied to correct for multiple comparisons (p<0.05; Benjamini and Hochberg, 1995).
 

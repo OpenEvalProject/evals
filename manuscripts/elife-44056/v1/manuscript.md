@@ -58,7 +58,7 @@
 
 ## Abstract
 
-10.7554/eLife.44056.001 Adolescence is a common time for initiation of alcohol use and development of alcohol use disorders. The present study investigates neuroanatomical predictors for trajectories of future alcohol use based on a novel voxel-wise whole-brain structural equation modeling framework. In 1814 healthy adolescents of the IMAGEN sample, the Alcohol Use Disorder Identification Test (AUDIT) was acquired at three measurement occasions across five years. Based on a two-part latent growth curve model, we conducted whole-brain analyses on structural MRI data at age 14, predicting change in alcohol use score over time. Higher grey-matter volumes in the caudate nucleus and the left cerebellum at age 14 years were predictive of stronger increase in alcohol use score over 5 years. The study is the first to demonstrate the feasibility of running separate voxel-wise structural equation models thereby opening new avenues for data analysis in brain imaging.
+Adolescence is a common time for initiation of alcohol use and development of alcohol use disorders. The present study investigates neuroanatomical predictors for trajectories of future alcohol use based on a novel voxel-wise whole-brain structural equation modeling framework. In 1814 healthy adolescents of the IMAGEN sample, the Alcohol Use Disorder Identification Test (AUDIT) was acquired at three measurement occasions across five years. Based on a two-part latent growth curve model, we conducted whole-brain analyses on structural MRI data at age 14, predicting change in alcohol use score over time. Higher grey-matter volumes in the caudate nucleus and the left cerebellum at age 14 years were predictive of stronger increase in alcohol use score over 5 years. The study is the first to demonstrate the feasibility of running separate voxel-wise structural equation models thereby opening new avenues for data analysis in brain imaging.
 
 ## Introduction
 
@@ -76,11 +76,223 @@ We started the analyses with estimating the two-part latent growth curve model o
 
 **Figure 1.:** Upper row: data from original scale (Sum Score), zeros are shown in black and indicate non-drinking individuals. Middle row: Transformation of data into consumer and non-consumer without fine-grading of alcohol use scores. Bottom row: Alcohol use score (AUDIT Sum-Score) for individuals who drink at all. Note that to enhance readability of the figure, sum-scales (upper and bottom row) are truncated at a score of 20.
 
+**Table 1.**
+ Severity of alcohol use at three measurement occasions according to AUDIT.*
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Baseline n** = 1794 (100%)</th>
+      <th>Follow-up 1 n = 1439 (100%)</th>
+      <th>Follow-up 2 n = 1284 (100%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No use at all</td>
+      <td>855 (47.7%)</td>
+      <td>255 (17.7%)</td>
+      <td>95 (7.4%)</td>
+    </tr>
+    <tr>
+      <td>Unproblematic use</td>
+      <td>872 (48.7%)</td>
+      <td>961 (66.7%)</td>
+      <td>823 (64.1%)</td>
+    </tr>
+    <tr>
+      <td>Medium level of alcohol problems</td>
+      <td>64 (3.6%)</td>
+      <td>218 (15.3%)</td>
+      <td>329 (10.7%)</td>
+    </tr>
+    <tr>
+      <td>High level of alcohol problems</td>
+      <td>2 (0.1%)</td>
+      <td>4 (0.3%)</td>
+      <td>28 (2.2%)</td>
+    </tr>
+    <tr>
+      <td>Indicating dependence</td>
+      <td>1 (0.1%)</td>
+      <td>1 (0.1%)</td>
+      <td>9 (0.9%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Note: Categorization is based on the interpretation guideline of the World Health Organization: Cut-offs scores are: 0–7 = unproblematic use, 8–15: simple advice focused on the reduction of hazardous drinking warranted, 16–19: brief counseling and continued monitoring warranted, above 20: further diagnostic for alcohol dependence strongly warranted.**Note: 20 individuals had missing data, in total adding up to 1814._
+
 In the discrete part of the model, a linear growth model demonstrated better fit to alcohol use vs. non-use than an intercept-only model, Δχ2 (Koob and Kreek, 2007) (3, N = 1814)=653.63, p<0.001. Inclusion of a quadratic growth factor did not improve model fit, Δχ2 (Koob and Kreek, 2007) (1, N = 1814)=−0.74, p=0.390, therefore we refrained from a quadratic growth factor.
 
 In the continuous part of the model, a linear growth model likewise demonstrated a better fit to alcohol use scores than an intercept-only model, Δχ2 (Koob and Kreek, 2007)(3, N = 1814)=860.58, p<0.001. Inclusion of a quadratic growth factor did not improve model fit, Δχ2 (Koob and Kreek, 2007)(1, N = 1814)=−0.58, p=0.450. Therefore, we accepted the model with intercept and a linear growth factor on the clinical data as our working model. We then added the nuisance covariates age, sex, scanner and total brain volume to the model by predicting the slope of the continuous part of the model (no matter whether the regression paths were significant or not), since it is common practice in neuroimaging studies to control for these nuisance variables. The final model on the clinical data, not yet including the brain data (since this varied for each voxel of the brain) demonstrated an acceptable model fit, χ2 = 444, df = 65, RMSEA = 0.057, CFI = 0.785, SRMR = 0.065.
 
 Concerning the latent intercept and slope for both parts of the model, intercepts were significantly different from zero and variances of the intercepts for both parts of the model were significant, suggesting significant interindividual heterogeneity around the estimated mean level of alcohol drinking use vs. non-use and the alcohol use score at age 14 (for estimates see Table 2). The covariance between the intercepts of the two parts of the model was 0.124, p<0.001, indicating that adolescents with a higher propensity to engage in alcohol drinking also engaged in it more frequently and vice versa.
+
+**Table 2.**
+ Estimated parameters in probability of use vs. non-use and alcohol use score with nuisance variables on the clinical data (not yet including brain data)
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Intercept</th>
+      <th colspan="2">Slope</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>SE</th>
+      <th>Estimate</th>
+      <th>SE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Part 1: Prevalence of alcohol drinking (use vs. non-use)=discrete part of the model</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>0.568**</td>
+      <td>0.011</td>
+      <td>0.188**</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Variance</td>
+      <td>0.090**</td>
+      <td>0.009</td>
+      <td>0.024**</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td colspan="5">Part 2: Alcohol use score of AUDIT = continuous part of the model</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>0.693**</td>
+      <td>0.037</td>
+      <td>0.498</td>
+      <td>0.642</td>
+    </tr>
+    <tr>
+      <td>Variance</td>
+      <td>0.618**</td>
+      <td>0.087</td>
+      <td>0.218**</td>
+      <td>0.046</td>
+    </tr>
+    <tr>
+      <td colspan="5">Regression onto Part two slope</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td>−0.183**</td>
+      <td>0.046</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td>−0.000</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>TBV</td>
+      <td></td>
+      <td></td>
+      <td>0.000*</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Site_London</td>
+      <td></td>
+      <td></td>
+      <td>0.410*</td>
+      <td>0.163</td>
+    </tr>
+    <tr>
+      <td>Site_Nottingham</td>
+      <td></td>
+      <td></td>
+      <td>0.368*</td>
+      <td>0.161</td>
+    </tr>
+    <tr>
+      <td>Site_Dublin</td>
+      <td></td>
+      <td></td>
+      <td>0.517*</td>
+      <td>0.167</td>
+    </tr>
+    <tr>
+      <td>Site_Berlin</td>
+      <td></td>
+      <td></td>
+      <td>0.091</td>
+      <td>0.170</td>
+    </tr>
+    <tr>
+      <td>Site_Hamburg</td>
+      <td></td>
+      <td></td>
+      <td>0.122</td>
+      <td>0.162</td>
+    </tr>
+    <tr>
+      <td>Site_Mannheim</td>
+      <td></td>
+      <td></td>
+      <td>0.038</td>
+      <td>0.163</td>
+    </tr>
+    <tr>
+      <td>Site_Paris</td>
+      <td></td>
+      <td></td>
+      <td>0.079</td>
+      <td>0.163</td>
+    </tr>
+    <tr>
+      <td>Site_Dresden</td>
+      <td></td>
+      <td></td>
+      <td>−0.044</td>
+      <td>0.163</td>
+    </tr>
+    <tr>
+      <td colspan="5">Covariances</td>
+    </tr>
+    <tr>
+      <td>Covariance between intercept and slope in Part 1</td>
+      <td>−0.033**</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Covariance between intercept and slope in Part 2</td>
+      <td>−0.078</td>
+      <td>0.050</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Covariance between the intercepts of Part 1 and Part 2</td>
+      <td>0.124**</td>
+      <td>0.012</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < 0.05 , **p<0.001, SE = standard error, TBV = total brain volume_
 
 Turning to the growth parameters, for the continuous part of the model the estimated mean of the slope was not significantly different from zero, indicating that, on average, no change in drinking habits emerged over time. However, the variance was significantly different from zero, indicating interindividual differences in change of drinking behaviour between participants. For the discrete part of the model both the mean and the variance of the slope were significantly different from zero, indicating change on average as well as interindividually. The positive mean of the slope indicated an increasing propensity for drinking across time. Intercept and slope covaried significantly (−0.033, p<0.001) within the discrete part of the model, however, numerically the correlation coefficient was so small that we do not think the association necessitates in-depth interpretation. No significant correlation emerged between intercept and slope for the continuous part of the model, indicating that a relation between alcohol use score at age 14 and change in this behavior was not captured in our model.
 
@@ -100,11 +312,11 @@ The goal of the present study was to unravel structural brain predictors at age 
 
 Since we were most interested in early brain-predictors of the intraindividual changes of alcohol use scores we computed a separate SEM for each brain voxel acquired at baseline (age 14 years). To obtain a brain map we plotted the resulting statistics of the regression path between brain and changes in alcohol use score back into brain space where we observed that higher grey matter volume in bilateral caudate nucleus and in left cerebellum was associated with a stronger increase (slope) in alcohol use scores. No associations were observed between grey matter brain data and the slope or intercept of the dichotomous use vs. non-use or the intercept of the continuous part of the model, nor in the white matter of the brain.
 
-## Neurodevelopmental changes in caudate and cerebellum
+### Neurodevelopmental changes in caudate and cerebellum
 
 The direction of the association, namely between increase in alcohol use scores and higher brain volume is remarkable, since it may reflect a disturbance of brain development during adolescence. Caudate and cerebellum have been described as undergoing changes over the lifetime that resemble an inverted U-shape in gray matter volume that peaks during adolescence (Durston et al., 2001; Brenhouse and Andersen, 2011). However, on a longitudinal data set the changes of caudate over the course of adolescence were the smallest in comparison to other subcortical brain structures with caudate, putamen and nucleus accumbens peaking at earlier ages than amygdala and hippocampus (Goddings et al., 2014). In tendency females seem to show a peak around age 11 years and males seem to show a decrease in caudate volume over adolescence (Goddings et al., 2014; Brain Development Cooperative Group, 2012). The pattern of changes in the cerebellum seem less clear with one study reporting decreases across adolescence (Ostby et al., 2009) and another showing an inverse U-shape pattern with a peak around 15 years of age (Brain Development Cooperative Group, 2012). However, the literature on age related changes in brain volume during adolescence does not help to solve the question whether our observed effects reflect a deceleration of pruning in bilateral caudate and cerebellum or an overproduction that surpasses the normal overproduction of synapses.
 
-## Caudate nucleus and cerebellum as a predictor of alcohol problems
+### Caudate nucleus and cerebellum as a predictor of alcohol problems
 
 The present finding of a predictive value of bilateral caudate volume for the trajectory of alcohol use during adolescence fits nicely to previous studies in search of brain structural predictors of drinking.
 
@@ -114,43 +326,43 @@ Other studies focussed on activation of the striatum, for example during an fMR
 
 Of note, it is very interesting that the cluster in caudate nucleus and cerebellum found to be predictive of the future changes in alcohol use scores were not related to the mean level of alcohol use scores in each individual, since we observe no significant regions in the analysis where the latent intercept of the continuous part of the model predicts the respective brain voxels. This indicates that the grey matter volume in caudate nucleus and cerebellum has a value in predicting changes, but not the average alcohol use in general at the timepoint analysed. On the basis of the present analyses, one might argue that preventive measures at this age should focus on the development of alcohol use rather than on drinking habits at the age of 14, as the results suggest that specific characteristics of those brain regions prepare the ground for future alcohol consumption.
 
-## Prediction of the start of alcohol drinking
+### Prediction of the start of alcohol drinking
 
 The fact that the brain-based prediction of the latent slope of the dichotomous part of the model showed no significant resulting clusters indicates that, using the presented methods, brain data is not indicative for the prognosis when individuals start drinking. In this sense, the present results could be regarded as in line with a previous publication from the IMAGEN data set (Whelan et al., 2014) in which it was shown that brain information (at age 14 years) added only moderately in the prediction of binge drinking at age 16 years. Moreover, rather unspecific brain measures have been added in the analyses, namely overall regional grey matter volume and the ratio of grey and white matter volume. In a different data set (Squeglia et al., 2017), likewise only diffuse regions added to the prediction of initiation of alcohol use during adolescence. This later observation makes the prediction of the changes in alcohol use scores over time from very distinct brain regions the more remarkable. While we learned from previous studies that brain characteristics might not be the key factor in explaining the start of alcohol consumption in adolescence, we learn from the present study that brain structural characteristics are of relevance when considering the development of alcohol use in adolescence.
 
-## Caudate nucleus and psychiatric disease
+### Caudate nucleus and psychiatric disease
 
 Interestingly, a recent meta-analysis on brain imaging studies focussing on brain structural alterations across psychiatric disorders has revealed consistency in increases within bilateral striatum when comparing psychiatric patients to controls (Goodkind et al., 2015). From this meta-analysis on cross-sectional data, it is unclear whether these striatal increases in psychiatric patients were already present during adolescence or whether they occurred around disease onset or over the course of the disease. But it is interesting that the direction of the effect and the localisation bear resemblance to the results of our study, although we focussed on trajectories of alcohol use which were, for most of the participants, far from the actual diagnosis of alcohol addiction.
 
-## Novel methodological approach: whole-brain structural equation modeling
+### Novel methodological approach: whole-brain structural equation modeling
 
 To our knowledge up to now structural equation modeling on brain imaging data has been conducted solely based on data derived from regions of interest (ROIs) (Kievit et al., 2014; Kühn et al., 2017; McArdle et al., 2004; Raz et al., 2005). However, this has the strong disadvantage that the obtained results are restricted to the regions selected for the analysis at hand. The present study demonstrates the feasibility of running separate structural equation models for each and every voxel of the brain and therefore plot the voxel-wise results of structural equation models back into brain space. This approach is not restricted to growth curve models but can be applied to all models in an SEM context. It can for example also be applied to measurement models, in order to relate brain structure or function not only to a separate task performance measure but rather to the latent factor representing the shared variance of a set of different performance measures from the same cognitive domain. This offers a new avenue of structural equation modeling on neuroimaging data in an unbiased, comprehensive way.
 
-## Conclusion
+### Conclusion
 
 The present study revealed structural brain predictors (at 14 years of age) of the trajectory of alcohol use scores between the age of 14 and 19 years. A two-part latent growth curve model was utilized to decompose the semicontinuous AUDIT outcome measure into a dichotomous use vs. non-use and a continuous alcohol use scale part. We predicted the slope of use vs. non-use and of alcohol use scores by voxel-wise grey and white matter probability maps at baseline. To obtain brain maps as a result, we plotted the statistics of the regression path between brain and slope back into brain space. We observed that higher grey matter volume in bilateral caudate nucleus and in left cerebellum at age 14 years was associated with a stronger increase in alcohol use scores. This finding fits well to previous studies pointing at an association between increases in striatum and psychiatric disease. Potentially this is due to neurodevelopmental interindividual differences since adolescence is a period of brain structural in- and decreases. Our finding may reflect a deceleration of pruning or an overproduction that surpasses the normal developmental overproduction of synapses. Future research with repeated neuroimaging measurements is needed to solve this neurodevelopmental question.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We used data of 1794 healthy 14-year-old adolescents (mean age = 14.4, SD = 0.45 years; 54% males) who were recruited within the scope of the IMAGEN project, a European multi-centre genetic-neuroimaging study in adolescence (Schumann et al., 2010). The selection of the participants was based on the fact that structural imaging data at age of 14 years was present. At the time of analyses reported here (age 14 years), retest data at age 16–17 years was present for 1439 participants (mean age = 16.6, SD = 0.64 years; 55% males) and at age 19 years for 1284 participants (mean age = 19.0, SD = 0.77 years; 53% males). Written informed consent was obtained from all participants as well as from their legal guardians. The adolescents were recruited from secondary schools. The study was approved by all local ethics committees separately (in Germany this was accomplished by the medical ethics committee of the University of Heidelberg, reference number: 2007-024N-MA) and approved by the head teachers of the respective schools. Participants with a medical condition or neurological disorders were excluded. All participating subjects were assessed by means of self-rating and two external ratings (by their parents and a psychiatrist specialized in pediatrics) based on ICD-10 as well as DSM-IV (The Development and Well-Being Assessment Interview, DAWBA; Goodman et al., 2000).
 
-## Questionnaire
+### Questionnaire
 
 We administered the Alcohol Use Disorder Identification Test (AUDIT, Babor and Higgins-Biddle, 2001) at Baseline (age 14 years), Follow-up 1 (age 16–17 years) and Follow-up 2 (age 19 years) to identify alcohol use. We computed the total score by adding the scores of all 10 items.
 
-## Scanning procedure
+### Scanning procedure
 
 Structural MRI was performed on 3 Tesla scanners from three manufacturers (Siemens: five sites; Philips: two sites; and General Electric: two sites). The details of the entire MR protocol are described elsewhere (Schumann et al., 2010). In this study, we used the T1-weighted images. These high-resolution anatomical MRIs were obtained using a three-dimensional magnetization prepared gradient-echo (MPRAGE) sequence based on the ADNI protocol (http://adni.loni.usc.edu/methods/documents/mri-protocols/; modified for the IMAGEN study to give a 1.1 × 1.1 × 1.1 mm3 voxel size).
 
-## Voxel-based morphometry
+### Voxel-based morphometry
 
 For the present report, structural MR data of 2072 adolescents were available. We excluded all participants where the image quality was suboptimal, most likely due to movement. The visual quality control was carried out by 10 independent raters.
 
 Structural data acquired at age 14 years was preprocessed by means of the VBM8 toolbox (http://dbm.neuro.uni-jena.de/vbm.html) and SPM8 (http://www.fil.ion.ucl.ac.uk/spm) with default parameters. The VBM8 toolbox involves bias correction, tissue classification and affine registration. The affine registered grey matter (GM) and white matter (WM) segmentations were used to build a customized DARTEL (diffeomorphic anatomical registration through exponentiated lie algebra) template. Then warped GM and WM segments were created. Modulation was applied in order to preserve the volume of a particular tissue within a voxel by multiplying voxel values in the segmented images by the Jacobian determinants derived from the spatial normalization step. In effect, the analysis of modulated data tests for regional differences in the absolute amount (volume) of GM/WM. Images were smoothed with a FWHM (full-width at half maximum) kernel of 8 mm.
 
-## Structural equation modelling
+### Structural equation modelling
 
 Analyses were conducted within a structural equation modeling (SEM) framework using MPlus and R. We implemented a two-part latent growth curve model (Muthen, 2001; Olsen and Schafer, 2001) since the AUDIT scores were zero inflated. In a two-part latent growth curve model, zeros are valid values with its own meaning and not just proxies for missingness. Information that is contained by zeros and the specific values of the non-zeros is qualitatively different and might even be differentially influenced by covariates (cf., Olsen and Schafer, 2001). In a two-part latent growth curve model, the presence or absence of a behavior and, if present, the manifestation of a specific behavior can be modeled simultaneously in one model. In our study, the original distribution of the alcohol use variable (AUDIT-score) was decomposed into two parts (see Figure 1). Then, each was modeled by separate, but correlated, growth functions (see Figure 2). For the discrete part of the model scores of zero were separated from the rest of the distribution by creating a binary indicator variable that distinguished any positive alcohol use score (=1) from nouse (=0) (lower part of Figure 2). For the continuous part of the model, the continuous indicator variables representing the AUDIT score, given that it was above zero, were used (upper part of Figure 2). In this latter part of the model, substance non-use within each time point was treated as missing data, following standard assumptions of data missing at random (MAR; Little and Rubin, 1987). In that way participants who did not drink alcohol throughout the study contributed little information to the growth parameter estimates, but all information to alcohol use was used to estimate the growth parameters. We used Maximum Likelihood estimator for our analyses.
 

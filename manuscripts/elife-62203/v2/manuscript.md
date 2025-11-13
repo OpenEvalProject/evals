@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Despite the requirement for Scleraxis -lineage (Scx Lin ) cells during tendon development, the function of Scx Lin cells during adult tendon repair, post-natal growth, and adult homeostasis have not been defined. Therefore, we inducibly depleted Scx Lin cells (ScxLin DTR ) prior to tendon injury and repair surgery and hypothesized that ScxLin DTR mice would exhibit functionally deficient healing compared to wild-type littermates. Surprisingly, depletion of Scx Lin cells resulted in increased biomechanical properties without impairments in gliding function at 28 days post-repair, indicative of regeneration. RNA sequencing of day 28 post-repair tendons highlighted differences in matrix-related genes, cell motility, cytoskeletal organization, and metabolism. We also utilized ScxLin DTR mice to define the effects on post-natal tendon growth and adult tendon homeostasis and discovered that adult Scx Lin cell depletion resulted in altered tendon collagen fibril diameter, density, and dispersion. Collectively, these findings enhance our fundamental understanding of tendon cell localization, function, and fate during healing, growth, and homeostasis.
+Despite the requirement for Scleraxis-lineage (ScxLin) cells during tendon development, the function of ScxLin cells during adult tendon repair, post-natal growth, and adult homeostasis have not been defined. Therefore, we inducibly depleted ScxLin cells (ScxLinDTR) prior to tendon injury and repair surgery and hypothesized that ScxLinDTR mice would exhibit functionally deficient healing compared to wild-type littermates. Surprisingly, depletion of ScxLin cells resulted in increased biomechanical properties without impairments in gliding function at 28 days post-repair, indicative of regeneration. RNA sequencing of day 28 post-repair tendons highlighted differences in matrix-related genes, cell motility, cytoskeletal organization, and metabolism. We also utilized ScxLinDTR mice to define the effects on post-natal tendon growth and adult tendon homeostasis and discovered that adult ScxLin cell depletion resulted in altered tendon collagen fibril diameter, density, and dispersion. Collectively, these findings enhance our fundamental understanding of tendon cell localization, function, and fate during healing, growth, and homeostasis.
 
 ## Introduction
 
@@ -34,69 +34,1747 @@ In the present study, we hypothesized that ScxLin tendon cells would be required
 
 ## Results
 
-## Successful ablation of Scleraxis-lineage tendon cells using diphtheria toxin receptor mouse model
+### Successful ablation of Scleraxis-lineage tendon cells using diphtheria toxin receptor mouse model
 
 To determine the feasibility of depleting tendon cells using Scx-Cre; Rosa-DTRLSL (ScxLinDTR) mice (Figure 1A), diphtheria toxin (DT) was administered into the right hind paw for 5 consecutive days. Ten days after the final DT injection, both the injected and contralateral control hind paws were harvested (Figure 1B). This approach resulted in 57% depletion of tendon cells in uninjured ScxLinDTR FDL tendons relative to WT control littermates (p<0.0001) (Figure 1C and D). Tendon cell number was unaffected in the contralateral FDL, indicating that local DT injections did not induce cell death in locations other than the targeted hind paw (Figure 1C and D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig1-v2.jpg)
+
+**Figure 1.:** (A) To deplete ScxLin cells, Scx-Cre mice were crossed to the diphtheria toxin receptor mouse (ScxLinDTR). (B) Mice received five hind paw injections of DT and were harvested 10 days after the final injection. (C) Sections from injected and contralateral (CL) hind paws from WT and ScxLinDTR mice were stained with DAPI, and total DAPI+ cells within the tendon (white outline) were quantified (D). (E) To determine the depletion efficiency specifically of ScxLin cells, Scx-Cre; Rosa-DTRLSL; Rosa-Ai9 and Scx-Cre; Rosa-Ai9 reporter mice were given local, daily DT injections for 5 consecutive days and hind paws were harvested 24 and 38 days after the last injection (F) These are the contralateral control tendons from the mice in Figure 4 that underwent tendon injury and repair. (G) Hind paws from ScxLinAi9 and ScxLinAi9DTR were probed for Red Fluorescent Protein (RFP; Ai9) expression and counterstained with the nuclear dye DAPI. (H) Total tendon cell density (DAPI+), total ScxLinAi9+ cell density and the percentage of ScxLinAi9 cells (ScxLinAi9+ cells/ DAPI+ cells) were quantified in ScxLinAi9 and ScxLinAi9DTR tendons and demonstrate a significant reduction of ScxLinAi9 cells in ScxLinAi9DTR relative to ScxLinAi9 WT controls. N = 3–4 per genotype. Two-way ANOVA with Sidak’s multiple comparisons test used to assess statistical significance of tendon cell ablation between hind paw (injected with DT or contralateral) and genotype (ScxLinAi9 and ScxLinAi9DTR at 24 and 38 days). * indicates p<0.05 for the indicated comparison, ** indicates p<0.01 for indicated comparison, **** indicates p<0.0001 relative to all other groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** WT and ScxLinDTR hind paws were harvested uninjured 10 days following final DT injection and stained for either Scx (A–C) or S100a4 (D–F). Quantification of Scx+ cells normalized to either total area (B) or both area and total cell number (C). Quantification of S100a4+ cells normalized to either total area (E) or both area and total cell number (F). N = 3 per genotype. Statistical significance between genotypes determined using Student’s t-test when data was normal (B, E, F) or Mann-Whitney test when data not normal (C). * indicative of p<0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Assessment of apoptosis (Cleaved Caspase 3, A), proliferation (PCNA, B), and Inflammation (F4/80, macrophages, C) for WT and ScxLinDTR uninjured tendons. Tendon outlined by white dotted line. Nuclei stained with DAPI. Examples of positive stain indicated by yellow arrows. N = 3 per genotype.
 
 To better understand how this depletion regimen specifically effects ScxLin cells we used Scx-Cre; Rosa-DTALSL; Rosa-Ai9 reporter mice (ScxLinAi9DTR) (Figure 1E). Samples were harvested at 24 and 38 days post-depletion (Figure 1F). At 24 days post-depletion, there was a 58.9% reduction in total tendon cells in uninjured ScxLinAi9DTR FDL tendons relative to WT control littermates (p<0.0105) and a 68.48% depletion of ScxLinAi9 cells in ScxLinAi9DTR FDL tendons relative to WT ScxLinAi9 controls (p<0.0068) (Figure 1G and H). At 38 days post-depletion, total tendon cells were reduced by 60.42% (p<0.0091), and ScxLinAi9 cells were reduced by 73.65% relative to ScxLinAi9 WT controls (p<0.0045) (Figure 1G and H). No significant differences in total tendon cell depletion efficiency (p<0.9935) and ScxLinAi9 cell depletion efficiency (p<0.9359) were found between D24 and D38 post-depletion timepoints.
 
 To understand how ScxLinDTR affected previously established tendon cell sub-populations (Best and Loiselle, 2019), we evaluated active Scx and S100a4 expression in ScxLinDTR and WT uninjured flexor tendons 10 days following the final DT injection. The number of Scx+ cells was significantly reduced in the ScxLinDTR tendons relative to WT littermates, as expected (p=0.0448) (Figure 1—figure supplement 1A &B). Similarly, when Scx+ cells were normalized to total cell count, there was a trending reduction of Scx+ cells in ScxLinDTR tendons compared to WT (p=0.1000) (Figure 1—figure supplement 1C). ScxLinDTR tendons had a trending decrease in S100a4+ cells relative to WT littermates (p=0.0941) (Figure 1—figure supplement 1D &E). Interestingly, when S100a4+ cells were normalized to total cell count, there was no significant or trending difference between groups (p=0.3525), suggesting some remaining tendon cells may begin expressing S100a4 following ScxLincell depletion (Figure 1—figure supplement 1F). ScxLinDTR tendons exhibited a small number of apoptotic cells peripheral to, but not within, the tendon suggesting that a 10-day DT washout period was sufficient for all tendon-specific DT-induced cell death to occur (Figure 1—figure supplement 2A). Both ScxLinDTR and WT littermates exhibited PCNA+ cells within the muscle, but not within then tendon, and ScxLinDTR exhibited a few PCNA+ cells within the tendon that were not present in WT (Figure 1—figure supplement 2B). ScxLinDTR tendons exhibited more F4/80+ macrophages peripheral to the tendon, potentially due to macrophage recruitment to the tendon to clean up apoptotic tendon cell debris (Figure 1—figure supplement 2C).
 
-## Ablation of Scleraxis-lineage cells results in significantly increased biomechanical properties by day 28 post repair while not affecting gliding function
+### Ablation of Scleraxis-lineage cells results in significantly increased biomechanical properties by day 28 post repair while not affecting gliding function
 
 To define the functional effects of ScxLin cell depletion on tendon healing, mice received five local DT injections to deplete ScxLin cells followed by FDL repair 10 days following the final injection (Figure 2A). A trending improvement in MTP Range of Motion (ROM) in ScxLinDTR repairs was observed at day 14, relative to WT littermates (WT vs ScxLinDTR, p=0.0711), but this trend was absent by day 28 post-repair (Figure 2B). ScxLinDTR healing tendons did not significantly differ in gliding resistance at either day 14 or 28 post-repair (Figure 2C). While biomechanical properties were not altered between groups at day 14, both stiffness and maximum load at failure were significantly increased in ScxLinDTR healing tendons relative to wildtype littermates at day 28 post-repair (Stiffness: WT: 6.48 ± 0.75, ScxLinDTR: 11.22 ± 1.83, p=0.0237; Maximum load at failure: WT: 1.54 ± 0.17, ScxLinDTR: 2.44 ± 0.24, p=0.0061) (Figure 2D and E). Between days 14 and 28, WT tendon stiffness increased by 39.06% while ScxLinDTR stiffness increased by 109.33%, and WT tendon maximum load at failure increased by 52.48% while ScxLinDTR maximum load at failure increased by 162.37%, indicating that ScxLinDTR repairs heal at an accelerated rate relative to wild-type littermates.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig2-v2.jpg)
 
-**Figure 2.:** DTR tendons heal with significantly increased biomechanical properties.Mice received five hind paw injections of DT on consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14- and 28 days post-repair (A). Measurement of metatarsophalangeal (MTP) joint flexion angle (B), gliding resistance (C), stiffness (D), and maximum load at failure (E) of WT and ScxLinDTR repaired tendons. N = 9–12 per genotype per timepoint. Students t-test used to assess statistical significance between genotypes at a given timepoint. * indicative of p<0.05, ** indicative of p<0.01.
+**Figure 2.:** Mice received five hind paw injections of DT on consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14- and 28 days post-repair (A). Measurement of metatarsophalangeal (MTP) joint flexion angle (B), gliding resistance (C), stiffness (D), and maximum load at failure (E) of WT and ScxLinDTR repaired tendons. N = 9–12 per genotype per timepoint. Students t-test used to assess statistical significance between genotypes at a given timepoint. * indicative of p<0.05, ** indicative of p<0.01.
 
-## Scleraxis-lineage cells are not required for the formation of a bridging collagen matrix during tendon healing
+### Scleraxis-lineage cells are not required for the formation of a bridging collagen matrix during tendon healing
 
 We have previously demonstrated that a cellular bridge corresponds to a region of bridging collagen matrix in the scar tissue (Best and Loiselle, 2019). While there were no apparent differences in tissue morphology between groups at days 14 or 28 post-repair (Figure 3B), we wanted to determine if tendon cell depletion prevented formation of the collagen bridge. Masson’s trichrome staining revealed presence of bridging collagen through the scar in both groups at days 14 and 28, indicating that depletion of ScxLin tendon cells does not prevent formation of the bridging collagen matrix (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig3-v2.jpg)
 
-**Figure 3.:** Lin cell depletion does not disrupt formation of a bridging collagen matrix.Mice received five hindpaw injections of DT on consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14 and 28 days post-repair (A). Alcian blue/hematoxylin and Orange G stain utilized to assess overall morphology (B). Masson’s trichrome stain used to visualize collagen content and organization (C). Tendon is outlined by white dotted line and scar tissue by yellow dotted line. Black boxes indicate location of higher magnification images. Boundaries of bridging collagen indicated by black arrows. N = 4 genotype per timepoint. Suture indicated by *.
+**Figure 3.:** Mice received five hindpaw injections of DT on consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14 and 28 days post-repair (A). Alcian blue/hematoxylin and Orange G stain utilized to assess overall morphology (B). Masson’s trichrome stain used to visualize collagen content and organization (C). Tendon is outlined by white dotted line and scar tissue by yellow dotted line. Black boxes indicate location of higher magnification images. Boundaries of bridging collagen indicated by black arrows. N = 4 genotype per timepoint. Suture indicated by *.
 
-## ScxLin cell depletion results in a significant lower Scxlin+ cells during tendon healing
+### ScxLin cell depletion results in a significant lower Scxlin+ cells during tendon healing
 
 To better understand how depletion of ScxLin cells prior to injury and repair affected ScxLin cell density during healing, we traced ScxLinAi9 cells at D14 and D28 post-injury (Figure 4A) No significant differences in ScxLinAi9 cells were detected between WT (ScxLinAi9) and ScxLinAi9DTR (p=0.3115) at D14 post-surgery (Figure 4B,C). In contrast, at D28 post-surgery, a significant decrease in ScxLinAi9 cells was observed in ScxLinAi9DTR repairs (p<0.0034) relative to WT repairs (Figure 4B,D). Collectively, these data suggest that depletion of ScxLinAi9 cells prior to injury does not alter the overall ScxLinAi9 content at D14, possibly due to additional labeling of cells that express Scx following injury. In contrast, by D28 the effects of depleting ScxLinAi9 cells prior to tendon injury is manifested in changes in both ScxLinAi9 content (Figure 4B,D,E) and phenotypic differences (Figure 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig4-v2.jpg)
 
-**Figure 4.:** Lin cell depletion results in time-dependent changes in ScxLinAi9 cell presence during tendon healing.(A) Mice received hind paw injections of DT on 5 consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14 and 28 days post-repair. (B) Immunofluorescence for RFP (Ai9) in WT ScxLinAi9 and ScxLinAi9DTR tendon repairs at 14 and 28 days post-repair to define changes in ScxLinAi9 contribution following ScxLin cell depletion. Quantification of ScxLinAi9+ area in ScxLinAi9 WT repairs and ScxLinAi9DTR repairs at (C) D14 and (D) D28 post-surgery. Nuclei were stained with DAPI. N = 4 per genotype. Student’s t-test used to assess statistical significance between genotypes at a given timepoint. **indicates p<0.01. (E) Proposed model of the time-dependent contributions of ScxLinAi9 cells to the tendon healing process. During adult tendon homeostasis ScxLinAi9 cells are the predominant tenocyte population and ScxLinAi9DTR results in depletion of ~60% of these cells. Red cells indicate ScxLinAi9 cells that were present in the tendon when depletion was initiated. We hypothesize that no differences in the proportion of ScxLinAi9 cells is observed at D14 (concomitant with a lack of functional phenotypic differences) due to the predominance and functions of other cell populations, including those that express Scx in response to injury and are therefore labeled as ScxLin (blue cells). In contrast, we hypothesize that by D28 the contribution of ‘new’ ScxLin cells (blue cells) has waned, and that the ScxLinAi9 cells that were present in the tendon during adult tendon homeostasis (red cells) are now the predominant tenocyte population and exert their functions at this time as suggested by functional differences between WT and ScxLinDTR at this time. This schematic was made using http://www.biorender.com.
+**Figure 4.:** (A) Mice received hind paw injections of DT on 5 consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14 and 28 days post-repair. (B) Immunofluorescence for RFP (Ai9) in WT ScxLinAi9 and ScxLinAi9DTR tendon repairs at 14 and 28 days post-repair to define changes in ScxLinAi9 contribution following ScxLin cell depletion. Quantification of ScxLinAi9+ area in ScxLinAi9 WT repairs and ScxLinAi9DTR repairs at (C) D14 and (D) D28 post-surgery. Nuclei were stained with DAPI. N = 4 per genotype. Student’s t-test used to assess statistical significance between genotypes at a given timepoint. **indicates p<0.01. (E) Proposed model of the time-dependent contributions of ScxLinAi9 cells to the tendon healing process. During adult tendon homeostasis ScxLinAi9 cells are the predominant tenocyte population and ScxLinAi9DTR results in depletion of ~60% of these cells. Red cells indicate ScxLinAi9 cells that were present in the tendon when depletion was initiated. We hypothesize that no differences in the proportion of ScxLinAi9 cells is observed at D14 (concomitant with a lack of functional phenotypic differences) due to the predominance and functions of other cell populations, including those that express Scx in response to injury and are therefore labeled as ScxLin (blue cells). In contrast, we hypothesize that by D28 the contribution of ‘new’ ScxLin cells (blue cells) has waned, and that the ScxLinAi9 cells that were present in the tendon during adult tendon homeostasis (red cells) are now the predominant tenocyte population and exert their functions at this time as suggested by functional differences between WT and ScxLinDTR at this time. This schematic was made using http://www.biorender.com.
 
-## ScxLin depletion enhances myofibroblast content during tendon healing
+### ScxLin depletion enhances myofibroblast content during tendon healing
 
 We have previously demonstrated that elevated F4/80+ macrophages and αSMA+ myofibroblasts are associated with increased tendon maximum load at failure (Best et al., 2019). No significant differences in F4/80+ macrophages were detected between genotypes at either day 14 or 28 post-repair (Figure 5B). While αSMA+ myofibroblasts were not significantly altered at day 14 (D14: WT vs DTR, p=0.3790), ScxLinDTR healing tendons had significantly increased levels of αSMA+ myofibroblasts relative to wildtype littermates at D28 (p=0.0188) (Figure 5C). We have previously demonstrated that S100a4 is an important molecule that can influence tendon biomechanical properties and gliding function during healing (Ackerman et al., 2019). No differences in S100a4+ cells were observed in ScxLinDTR, relative to WT at either day 14 or 28 post-repair (Figure 5D). Thus, αSMA+ myofibroblasts are the most likely candidate driving the increased biomechanical properties seen in ScxLinDTR healing tendon, of the cell populations investigated, consistent with their roles in with matrix deposition, organization, and contraction. To demonstrate both the specificity of the αSMA+ myofibroblast response to injury and that this tendon injury and repair model does not induce degeneration of the proximal/ distal ends of the tendon due to altered loading, we examined αSMA expression adjacent to the repair site. No αSMA staining was observed in the proximal/distal native tendon away from the repair site at D14 or D28 (Figure 5—figure supplement 1).
 
-## Identification of differentially expressed genes following ScxLin depletion
+![Figure 5.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig5-v2.jpg)
+
+**Figure 5.:** Mice received five hindpaw injections of DT on consecutive days, underwent flexor tendon repair surgery 10 days after the final DT injection, and were harvested at 14 and 28 days post-repair (A). Immunofluorescence of WT and ScxLinDTR repair tendons 14 and 28 days post-repair to assess F4/80+ macrophages (B), αSMA+ myofibroblasts (C), and S100a4+ cells (D). Tendon is outlined by white dotted line and scar tissue by yellow dotted line. Green boxes indicate location of higher magnification images. Examples of positive stain indicated by white arrows, while examples of auto-fluorescent blood cells and α-SMA+ blood vessels indicated by green arrows. Quantification of F4/80 (A’ and A’’), αSMA (B’ and B’’), and S100a4 (C’ and C’’) fluorescence. N = 4 per genotype per timepoint. Student’s t-test used to assess statistical significance between genotypes at a given timepoint, except for D28 F4/80 and S100a4 which required a Mann-Whitney test. * indicates p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** To demonstrate that the myotendinous release, which is incorporated as part of the surgical procedure to decrease the risk of repair rupture, does not lead to tendon degeneration, αSMA staining adjacent to the repair site was examined. An absence of αSMA was observed proximal/ distal to the repair site (yellow bracket). Tendon stubs are outlined in white. N = 4 per genotype per timepoint.
+
+### Identification of differentially expressed genes following ScxLin depletion
 
 To further investigate the mechanisms driving altered biomechanical properties of healing ScxLinDTR tendons, bulk RNAseq analysis was conducted on days 14 and 28 post-repair samples from ScxLinDTR and WT. A total of three biological replicates per genotype per timepoint were submitted for analysis. At 14 days post-repair, 47 genes were up-regulated, and 313 genes were down-regulated in ScxLinDTR relative to WT (Figure 6A,B). At 28 days post-repair, 1237 genes were up-regulated, and 1296 genes were down-regulated in ScxLinDTR relative to WT (Figure 6C,D). Based on both the low number of differentially expressed genes (DEGs) and the lack of mechanical phenotype at D14 between WT and ScxLinDTR (Figure 2), our primary RNAseq analyses were focused on day 28.
 
-## ScxLin depletion drives differential expression of matrix-related gene expression
+![Figure 6.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig6-v2.jpg)
+
+**Figure 6.:** Representation of differentially expressed genes (DEGs) at 14 (A, B) and 28 (C, D) days post-repair. Volcano plots (A, C) depict significantly upregulated DEGs as red dots and significantly downregulated DEGs as green dots. DEGs are consider significant when the multiple test corrected (adjusted) p-value is < 0.05. The dotted line represents the unadjusted p-value of 0.05. Heat maps (B, D) depict all significant DEGs, with the data representing the regularized log transformation of the normalized count data.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Based on the RNAseq data we examined the spatial localization of specific ECM components Decorin, Thbs4 and Mfap5 at D28 post-surgery. Sections were stained with the nuclear dye DAPI. N = 4 per genotype.
+
+### ScxLin depletion drives differential expression of matrix-related gene expression
 
 The day 28 dataset was analyzed using ingenuity pathway analysis (IPA) software. We hypothesized that a change in the matrix composition could be driving the altered biomechanical properties detected at day 28 post-repair in ScxLinDTR animals, possibly driven by the elevated myofibroblast content. To examine the biological effects of ScxLin cell depletion at the transcriptional level, downstream effects analysis was performed by utilizing the core analysis in IPA where activation states were assigned for biological processes with p-value<0.05 and z-score > 2 (Table 1). Included in the significantly increased disease and function annotations was ‘Fibrosis’ (p=3.37E-07, Z = 2.397, Table 1). As we have already demonstrated that depletion of ScxLin cells is not driving increased fibrotic healing (Figure 2B,C), we then examined if the significantly increased ‘Fibrotic’ annotation was indicative of altered expression of specific matrix-associated genes. Utilizing the comprehensive review of the matrisome by Hynes and Naba, 2012, genes coding for collagens, proteoglycans, basement membrane proteins, and glycoproteins were compiled and examined (Table 2). Many matrix-related genes were significantly increased in ScxLinDTR repairs relative to WT littermates at day 28 post-repair (ex. Col1a2, Col3a1, Col8a1, Epyc, Thbs4, complete list in Table 2), while other matrix components were significantly decreased (ex. Col6a4, Col9a1, Fras1, complete list in Table 2). To both validate the RNAseq data and to define the spatial localization of different matrix components, we performed immunofluorescence for Decorin (Dcn), Thbs4 and Mfap5. Both the staining intensity and staining extent of Dcn, Thbs4 and Mfap5 were substantially increased in D28 ScxLinDTR repairs, relative to WT (Figure 6—figure supplement 1), consistent with the increases in these matrix components identified by RNAseq (Table 2).
 
-## Effects on cell motility, cytoskeletal organization, metabolism, and oxidative stress identified in ScxLinDTR repair tendons
+**Table 1.**
+ Ingenuity pathway analysis downstream effects - Disease and Functions.Table of all disease and function annotations marked as significant (p<0.05 and ABS(Z-score)>2) using IPA core analysis for ScxLinDTR vs WT at day 28 post-repair.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Disease or function annotation</th>
+      <th>p-value</th>
+      <th>Activation state</th>
+      <th>Z-Score</th>
+    </tr>
+    <tr>
+      <th>Down-Regulated</th>
+      <th>Contractility of skeletal muscle</th>
+      <th>4.96E-16</th>
+      <th>Decreased</th>
+      <th>−3.595</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Abnormal bone density</td>
+      <td>0.000000572</td>
+      <td>Decreased</td>
+      <td>−3.299</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Contractility of muscle</td>
+      <td>8.91E-16</td>
+      <td>Decreased</td>
+      <td>−2.636</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intestinal cancer</td>
+      <td>6.76E-46</td>
+      <td>Decreased</td>
+      <td>−2.561</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bleeding</td>
+      <td>0.00000075</td>
+      <td>Decreased</td>
+      <td>−2.424</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Malignant neoplasm of large intestine</td>
+      <td>8.42E-46</td>
+      <td>Decreased</td>
+      <td>−2.343</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Colorectal cancer</td>
+      <td>6.67E-23</td>
+      <td>Decreased</td>
+      <td>−2.343</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Large intestine neoplasm</td>
+      <td>2.97E-46</td>
+      <td>Decreased</td>
+      <td>−2.256</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Colorectal tumor</td>
+      <td>1.28E-23</td>
+      <td>Decreased</td>
+      <td>−2.256</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Function of muscle</td>
+      <td>6.93E-14</td>
+      <td>Decreased</td>
+      <td>−2.245</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Consumption of oxygen</td>
+      <td>0.000000942</td>
+      <td>Decreased</td>
+      <td>−2.237</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Function of skeletal muscle</td>
+      <td>1.59E-08</td>
+      <td>Decreased</td>
+      <td>−2.186</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intestinal tumor</td>
+      <td>9.72E-47</td>
+      <td>Decreased</td>
+      <td>−2.144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Development of lung carcinoma</td>
+      <td>0.000000663</td>
+      <td>Decreased</td>
+      <td>−2.012</td>
+    </tr>
+    <tr>
+      <td>Up-regulated</td>
+      <td>Cell movement</td>
+      <td>4.98E-22</td>
+      <td>Increased</td>
+      <td>4.735</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Migration of cells</td>
+      <td>6.44E-17</td>
+      <td>Increased</td>
+      <td>4.733</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of tumor cell lines</td>
+      <td>8.66E-10</td>
+      <td>Increased</td>
+      <td>4.343</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Reorganization of cytoskeleton</td>
+      <td>0.000000218</td>
+      <td>Increased</td>
+      <td>4.296</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Migration of tumor cell lines</td>
+      <td>0.00000032</td>
+      <td>Increased</td>
+      <td>4.162</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Engulfment of cells</td>
+      <td>1.05E-09</td>
+      <td>Increased</td>
+      <td>4.057</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Endocytosis</td>
+      <td>1.2E-11</td>
+      <td>Increased</td>
+      <td>3.821</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Leukocyte migration</td>
+      <td>4.37E-09</td>
+      <td>Increased</td>
+      <td>3.821</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of blood cells</td>
+      <td>4.04E-09</td>
+      <td>Increased</td>
+      <td>3.818</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Homing of cells</td>
+      <td>0.00000055</td>
+      <td>Increased</td>
+      <td>3.792</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Formation of cellular protrusions</td>
+      <td>1.53E-14</td>
+      <td>Increased</td>
+      <td>3.669</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Glucose metabolism disorder</td>
+      <td>5.46E-10</td>
+      <td>Increased</td>
+      <td>3.516</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Invasion of cells</td>
+      <td>9.21E-08</td>
+      <td>Increased</td>
+      <td>3.396</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Organization of cytoplasm</td>
+      <td>3.25E-26</td>
+      <td>Increased</td>
+      <td>3.384</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Organization of cytoskeleton</td>
+      <td>2.94E-20</td>
+      <td>Increased</td>
+      <td>3.384</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of leukocytes</td>
+      <td>7.74E-08</td>
+      <td>Increased</td>
+      <td>3.38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Endocytosis by eukaryotic cells</td>
+      <td>1.16E-08</td>
+      <td>Increased</td>
+      <td>3.371</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Engulfment of tumor cell lines</td>
+      <td>0.00000031</td>
+      <td>Increased</td>
+      <td>3.348</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Proliferation of neuronal cells</td>
+      <td>3.67E-09</td>
+      <td>Increased</td>
+      <td>3.313</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Metabolism of carbohydrate</td>
+      <td>1.94E-13</td>
+      <td>Increased</td>
+      <td>3.285</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Formation of lamellipodia</td>
+      <td>0.000000932</td>
+      <td>Increased</td>
+      <td>3.121</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of breast cancer cell lines</td>
+      <td>0.000000603</td>
+      <td>Increased</td>
+      <td>3.103</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of fibroblast cell lines</td>
+      <td>3.42E-08</td>
+      <td>Increased</td>
+      <td>3.083</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Growth of neurites</td>
+      <td>6.25E-09</td>
+      <td>Increased</td>
+      <td>2.981</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Microtubule dynamics</td>
+      <td>5.21E-18</td>
+      <td>Increased</td>
+      <td>2.974</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell spreading</td>
+      <td>3.31E-11</td>
+      <td>Increased</td>
+      <td>2.875</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Formation of filopodia</td>
+      <td>0.000000177</td>
+      <td>Increased</td>
+      <td>2.873</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cell movement of connective tissue cells</td>
+      <td>0.000000415</td>
+      <td>Increased</td>
+      <td>2.792</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Concentration of lipid</td>
+      <td>3.14E-08</td>
+      <td>Increased</td>
+      <td>2.779</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Progressive neurological disorder</td>
+      <td>6.74E-10</td>
+      <td>Increased</td>
+      <td>2.671</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Outgrowth of neurites</td>
+      <td>7.31E-08</td>
+      <td>Increased</td>
+      <td>2.662</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Production of reactive oxygen species</td>
+      <td>6.22E-12</td>
+      <td>Increased</td>
+      <td>2.625</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quantity of macropinosomes</td>
+      <td>0.000000865</td>
+      <td>Increased</td>
+      <td>2.621</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neuromuscular disease</td>
+      <td>1.47E-15</td>
+      <td>Increased</td>
+      <td>2.619</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Progressive myopathy</td>
+      <td>1.28E-11</td>
+      <td>Increased</td>
+      <td>2.611</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Synthesis of carbohydrate</td>
+      <td>0.000000499</td>
+      <td>Increased</td>
+      <td>2.553</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Outgrowth of cells</td>
+      <td>0.000000025</td>
+      <td>Increased</td>
+      <td>2.52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Advanced malignant tumor</td>
+      <td>0.000000208</td>
+      <td>Increased</td>
+      <td>2.517</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Differentiation of connective tissue cells</td>
+      <td>1.48E-09</td>
+      <td>Increased</td>
+      <td>2.512</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Secondary tumor</td>
+      <td>0.000000643</td>
+      <td>Increased</td>
+      <td>2.461</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Arrhythmia</td>
+      <td>2.14E-08</td>
+      <td>Increased</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fibrosis</td>
+      <td>0.000000337</td>
+      <td>Increased</td>
+      <td>2.397</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Extension of cellular protrusions</td>
+      <td>0.00000098</td>
+      <td>Increased</td>
+      <td>2.371</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Invasive tumor</td>
+      <td>2.47E-08</td>
+      <td>Increased</td>
+      <td>2.345</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Synthesis of reactive oxygen species</td>
+      <td>3.6E-14</td>
+      <td>Increased</td>
+      <td>2.312</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Organization of actin cytoskeleton</td>
+      <td>4.37E-08</td>
+      <td>Increased</td>
+      <td>2.298</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Disassembly of filaments</td>
+      <td>0.000000544</td>
+      <td>Increased</td>
+      <td>2.27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Metabolism of reactive oxygen species</td>
+      <td>2.61E-15</td>
+      <td>Increased</td>
+      <td>2.269</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cancer of cells</td>
+      <td>9.31E-14</td>
+      <td>Increased</td>
+      <td>2.254</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Response of tumor cell lines</td>
+      <td>2.31E-08</td>
+      <td>Increased</td>
+      <td>2.231</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Morphogenesis of neurons</td>
+      <td>1.44E-12</td>
+      <td>Increased</td>
+      <td>2.224</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neuritogenesis</td>
+      <td>1.86E-12</td>
+      <td>Increased</td>
+      <td>2.224</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neoplasia of cells</td>
+      <td>1.76E-16</td>
+      <td>Increased</td>
+      <td>2.221</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quantity of metal</td>
+      <td>0.0000002</td>
+      <td>Increased</td>
+      <td>2.198</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ruffling</td>
+      <td>0.000000297</td>
+      <td>Increased</td>
+      <td>2.157</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tubulation of cells</td>
+      <td>0.00000126</td>
+      <td>Increased</td>
+      <td>2.132</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Angiogenesis</td>
+      <td>4.02E-15</td>
+      <td>Increased</td>
+      <td>2.109</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hereditary myopathy</td>
+      <td>1.58E-23</td>
+      <td>Increased</td>
+      <td>2.104</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dystrophy of muscle</td>
+      <td>1.85E-11</td>
+      <td>Increased</td>
+      <td>2.104</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Development of vasculature</td>
+      <td>2.67E-16</td>
+      <td>Increased</td>
+      <td>2.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Growth of axons</td>
+      <td>0.000000724</td>
+      <td>Increased</td>
+      <td>2.017</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Migration of fibroblast cell lines</td>
+      <td>0.000000461</td>
+      <td>Increased</td>
+      <td>2.002</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Regulation of matrix components in ScxLinDTR healing tendons at day 28.Expression level, fold change, and adjusted p-value of key matrix-related genes in ScxLinDTR tendons vs WT at day 28 post-repair generated from bulk RNA-seq. Orange color indicative of increased expression and blue color indicative of decreased expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>BaseMean</th>
+      <th>Fold change (Log2)</th>
+      <th>p-adj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Collagens</td>
+    </tr>
+    <tr>
+      <td>Col1a1</td>
+      <td>742982.883</td>
+      <td>0.275</td>
+      <td>0.117206</td>
+    </tr>
+    <tr>
+      <td>Col1a2</td>
+      <td>720257.233</td>
+      <td>0.359</td>
+      <td>0.033355</td>
+    </tr>
+    <tr>
+      <td>Col2a1</td>
+      <td>461.965</td>
+      <td>0.176</td>
+      <td>0.700754</td>
+    </tr>
+    <tr>
+      <td>Col3a1</td>
+      <td>748380.28</td>
+      <td>0.645</td>
+      <td>0.005567</td>
+    </tr>
+    <tr>
+      <td>Col4a1</td>
+      <td>35181.773</td>
+      <td>0.17</td>
+      <td>0.559295</td>
+    </tr>
+    <tr>
+      <td>Col4a2</td>
+      <td>31627.065</td>
+      <td>0.265</td>
+      <td>0.206116</td>
+    </tr>
+    <tr>
+      <td>Col4a3</td>
+      <td>49.144</td>
+      <td>−0.009</td>
+      <td>0.988635</td>
+    </tr>
+    <tr>
+      <td>Col4a4</td>
+      <td>143.52</td>
+      <td>0.232</td>
+      <td>0.589161</td>
+    </tr>
+    <tr>
+      <td>Col4a5</td>
+      <td>284.059</td>
+      <td>0.372</td>
+      <td>0.440755</td>
+    </tr>
+    <tr>
+      <td>Col4a6</td>
+      <td>52.693</td>
+      <td>−0.093</td>
+      <td>0.904823</td>
+    </tr>
+    <tr>
+      <td>Col5a1</td>
+      <td>118821.857</td>
+      <td>0.495</td>
+      <td>0.031814</td>
+    </tr>
+    <tr>
+      <td>Col5a2</td>
+      <td>105087.042</td>
+      <td>0.46</td>
+      <td>0.092164</td>
+    </tr>
+    <tr>
+      <td>Col5a3</td>
+      <td>35303.666</td>
+      <td>0.418</td>
+      <td>0.06355</td>
+    </tr>
+    <tr>
+      <td>Col6a1</td>
+      <td>122410.423</td>
+      <td>0.406</td>
+      <td>0.00366</td>
+    </tr>
+    <tr>
+      <td>Col6a2</td>
+      <td>122396.322</td>
+      <td>0.455</td>
+      <td>0.003183</td>
+    </tr>
+    <tr>
+      <td>Col6a3</td>
+      <td>55660.629</td>
+      <td>0.545</td>
+      <td>0.021485</td>
+    </tr>
+    <tr>
+      <td>Col6a4</td>
+      <td>33.599</td>
+      <td>−0.879</td>
+      <td>0.0385</td>
+    </tr>
+    <tr>
+      <td>Col6a5</td>
+      <td>72.046</td>
+      <td>0.599</td>
+      <td>0.286724</td>
+    </tr>
+    <tr>
+      <td>Col6a6</td>
+      <td>51.234</td>
+      <td>−0.07</td>
+      <td>0.901424</td>
+    </tr>
+    <tr>
+      <td>Col7a1</td>
+      <td>2215.503</td>
+      <td>−0.532</td>
+      <td>0.06829</td>
+    </tr>
+    <tr>
+      <td>Col8a1</td>
+      <td>6553.562</td>
+      <td>0.983</td>
+      <td>0.025451</td>
+    </tr>
+    <tr>
+      <td>Col8a2</td>
+      <td>4787.689</td>
+      <td>−0.128</td>
+      <td>0.727708</td>
+    </tr>
+    <tr>
+      <td>Col9a1</td>
+      <td>390.971</td>
+      <td>−1.328</td>
+      <td>0.000857</td>
+    </tr>
+    <tr>
+      <td>Col9a2</td>
+      <td>50.18</td>
+      <td>−0.071</td>
+      <td>0.911757</td>
+    </tr>
+    <tr>
+      <td>Col9a3</td>
+      <td>52.911</td>
+      <td>0.177</td>
+      <td>0.713852</td>
+    </tr>
+    <tr>
+      <td>Col10a1</td>
+      <td>4.585</td>
+      <td>0.254</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Col11a1</td>
+      <td>13080.117</td>
+      <td>−0.239</td>
+      <td>0.496276</td>
+    </tr>
+    <tr>
+      <td>Col11a2</td>
+      <td>1974.589</td>
+      <td>−0.671</td>
+      <td>0.028981</td>
+    </tr>
+    <tr>
+      <td>Col12a1</td>
+      <td>34791.768</td>
+      <td>−0.204</td>
+      <td>0.545342</td>
+    </tr>
+    <tr>
+      <td>Col13a1</td>
+      <td>308.833</td>
+      <td>−0.085</td>
+      <td>0.853468</td>
+    </tr>
+    <tr>
+      <td>Col14a1</td>
+      <td>7279.653</td>
+      <td>0.693</td>
+      <td>0.00124</td>
+    </tr>
+    <tr>
+      <td>Col15a1</td>
+      <td>8889.517</td>
+      <td>0.385</td>
+      <td>0.296359</td>
+    </tr>
+    <tr>
+      <td>Col16a1</td>
+      <td>24279.347</td>
+      <td>0.237</td>
+      <td>0.252556</td>
+    </tr>
+    <tr>
+      <td>Col17a1</td>
+      <td>269.42</td>
+      <td>0.002</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Col18a1</td>
+      <td>14754.886</td>
+      <td>0.391</td>
+      <td>0.169961</td>
+    </tr>
+    <tr>
+      <td>Col19a1</td>
+      <td>4.738</td>
+      <td>0.133</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Col20a1</td>
+      <td>438.526</td>
+      <td>−0.7</td>
+      <td>0.060808</td>
+    </tr>
+    <tr>
+      <td>Col22a1</td>
+      <td>2064</td>
+      <td>−0.797</td>
+      <td>0.022217</td>
+    </tr>
+    <tr>
+      <td>Col23a1</td>
+      <td>4457.185</td>
+      <td>−0.636</td>
+      <td>0.025351</td>
+    </tr>
+    <tr>
+      <td>Col24a1</td>
+      <td>966.961</td>
+      <td>−0.35</td>
+      <td>0.047102</td>
+    </tr>
+    <tr>
+      <td>Col25a1</td>
+      <td>118.033</td>
+      <td>0.022</td>
+      <td>0.975523</td>
+    </tr>
+    <tr>
+      <td>Col26a1</td>
+      <td>78.9</td>
+      <td>0.371</td>
+      <td>0.475453</td>
+    </tr>
+    <tr>
+      <td>Col27a1</td>
+      <td>4062.784</td>
+      <td>0.406</td>
+      <td>0.253217</td>
+    </tr>
+    <tr>
+      <td>Col28a1</td>
+      <td>579.441</td>
+      <td>0.291</td>
+      <td>0.653743</td>
+    </tr>
+    <tr>
+      <td colspan="4">ECM proteoglycans</td>
+    </tr>
+    <tr>
+      <td>Hspg2</td>
+      <td>47213.867</td>
+      <td>0.248</td>
+      <td>0.108795</td>
+    </tr>
+    <tr>
+      <td>Aspn</td>
+      <td>19143.191</td>
+      <td>0.839</td>
+      <td>0.007556</td>
+    </tr>
+    <tr>
+      <td>Bgn</td>
+      <td>151131.153</td>
+      <td>0.251</td>
+      <td>0.256881</td>
+    </tr>
+    <tr>
+      <td>Dcn</td>
+      <td>95817.718</td>
+      <td>0.654</td>
+      <td>1.26E-05</td>
+    </tr>
+    <tr>
+      <td>Fmod</td>
+      <td>132295.748</td>
+      <td>0.172</td>
+      <td>0.683103</td>
+    </tr>
+    <tr>
+      <td>Kera</td>
+      <td>5207.231</td>
+      <td>0.522</td>
+      <td>0.154489</td>
+    </tr>
+    <tr>
+      <td>Lum</td>
+      <td>43114.099</td>
+      <td>0.353</td>
+      <td>0.130133</td>
+    </tr>
+    <tr>
+      <td>Omd</td>
+      <td>65.324</td>
+      <td>0.56</td>
+      <td>0.151367</td>
+    </tr>
+    <tr>
+      <td>Prelp</td>
+      <td>18853.124</td>
+      <td>0.381</td>
+      <td>0.057946</td>
+    </tr>
+    <tr>
+      <td>Epyc</td>
+      <td>133.935</td>
+      <td>1.187</td>
+      <td>0.003793</td>
+    </tr>
+    <tr>
+      <td>Ogn</td>
+      <td>5228.656</td>
+      <td>0.636</td>
+      <td>0.004079</td>
+    </tr>
+    <tr>
+      <td>Optc</td>
+      <td>30.193</td>
+      <td>0.042</td>
+      <td>0.957221</td>
+    </tr>
+    <tr>
+      <td>Chad</td>
+      <td>2558.426</td>
+      <td>−0.133</td>
+      <td>0.813626</td>
+    </tr>
+    <tr>
+      <td>Chadl</td>
+      <td>146.381</td>
+      <td>0.377</td>
+      <td>0.295306</td>
+    </tr>
+    <tr>
+      <td>Nyx</td>
+      <td>21.048</td>
+      <td>0.443</td>
+      <td>0.360179</td>
+    </tr>
+    <tr>
+      <td>Podn</td>
+      <td>1763.369</td>
+      <td>0.432</td>
+      <td>0.131578</td>
+    </tr>
+    <tr>
+      <td>Podnl1</td>
+      <td>216.612</td>
+      <td>−0.087</td>
+      <td>0.872241</td>
+    </tr>
+    <tr>
+      <td>Acan</td>
+      <td>8738.435</td>
+      <td>−0.407</td>
+      <td>0.194754</td>
+    </tr>
+    <tr>
+      <td>Bcan</td>
+      <td>125.867</td>
+      <td>−0.764</td>
+      <td>0.014902</td>
+    </tr>
+    <tr>
+      <td>Ncan</td>
+      <td>1.472</td>
+      <td>−0.047</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Vcan</td>
+      <td>5214.463</td>
+      <td>0.431</td>
+      <td>0.165678</td>
+    </tr>
+    <tr>
+      <td>Hapln1</td>
+      <td>109.201</td>
+      <td>0.036</td>
+      <td>0.955062</td>
+    </tr>
+    <tr>
+      <td>Hapln2</td>
+      <td>8.84</td>
+      <td>−0.024</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Hapln3</td>
+      <td>31.92</td>
+      <td>0.039</td>
+      <td>0.949531</td>
+    </tr>
+    <tr>
+      <td>Hapln4</td>
+      <td>128.699</td>
+      <td>0.053</td>
+      <td>0.926101</td>
+    </tr>
+    <tr>
+      <td>Prg2</td>
+      <td>2.717</td>
+      <td>−0.083</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Spock1</td>
+      <td>12.387</td>
+      <td>0.674</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Spock2</td>
+      <td>621.489</td>
+      <td>0.027</td>
+      <td>0.956371</td>
+    </tr>
+    <tr>
+      <td>Spock3</td>
+      <td>34.16</td>
+      <td>−0.034</td>
+      <td>0.963822</td>
+    </tr>
+    <tr>
+      <td>Prg4</td>
+      <td>26463.024</td>
+      <td>−0.191</td>
+      <td>0.759532</td>
+    </tr>
+    <tr>
+      <td>Srgn</td>
+      <td>1500.611</td>
+      <td>−0.08</td>
+      <td>0.843956</td>
+    </tr>
+    <tr>
+      <td>Impg2</td>
+      <td>49.211</td>
+      <td>−0.196</td>
+      <td>0.676547</td>
+    </tr>
+    <tr>
+      <td>Esm1</td>
+      <td>120.466</td>
+      <td>−0.02</td>
+      <td>0.971642</td>
+    </tr>
+    <tr>
+      <td colspan="4">Basement membrane components</td>
+    </tr>
+    <tr>
+      <td>Lama1</td>
+      <td>3.29</td>
+      <td>−0.445</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Lama2</td>
+      <td>3430.887</td>
+      <td>0.361</td>
+      <td>0.201711</td>
+    </tr>
+    <tr>
+      <td>Lama3</td>
+      <td>104.957</td>
+      <td>−0.303</td>
+      <td>0.484039</td>
+    </tr>
+    <tr>
+      <td>Lama4</td>
+      <td>7706.819</td>
+      <td>0.34</td>
+      <td>0.081572</td>
+    </tr>
+    <tr>
+      <td>Lama5</td>
+      <td>3390.382</td>
+      <td>−0.237</td>
+      <td>0.430648</td>
+    </tr>
+    <tr>
+      <td>Lamb1</td>
+      <td>11272.507</td>
+      <td>0.236</td>
+      <td>0.389409</td>
+    </tr>
+    <tr>
+      <td>Lamb2</td>
+      <td>13730.5</td>
+      <td>0.343</td>
+      <td>0.092701</td>
+    </tr>
+    <tr>
+      <td>Lamb3</td>
+      <td>77.394</td>
+      <td>−0.06</td>
+      <td>0.924993</td>
+    </tr>
+    <tr>
+      <td>Lamc1</td>
+      <td>15292.13</td>
+      <td>0.313</td>
+      <td>0.119095</td>
+    </tr>
+    <tr>
+      <td>Lamc2</td>
+      <td>424.266</td>
+      <td>0.393</td>
+      <td>0.064032</td>
+    </tr>
+    <tr>
+      <td>Lamc3</td>
+      <td>21.597</td>
+      <td>0.093</td>
+      <td>0.886633</td>
+    </tr>
+    <tr>
+      <td>Nid1</td>
+      <td>12717.306</td>
+      <td>0.539</td>
+      <td>0.02301</td>
+    </tr>
+    <tr>
+      <td>Nid2</td>
+      <td>2799.817</td>
+      <td>0.179</td>
+      <td>0.586124</td>
+    </tr>
+    <tr>
+      <td>Colq</td>
+      <td>358.747</td>
+      <td>−0.379</td>
+      <td>0.341156</td>
+    </tr>
+    <tr>
+      <td colspan="4">Major ECM glycoproteins</td>
+    </tr>
+    <tr>
+      <td>Eln</td>
+      <td>17607.464</td>
+      <td>0.518</td>
+      <td>0.270402</td>
+    </tr>
+    <tr>
+      <td>Emilin1</td>
+      <td>6960.539</td>
+      <td>0.124</td>
+      <td>0.684821</td>
+    </tr>
+    <tr>
+      <td>Emilin2</td>
+      <td>4405.463</td>
+      <td>0.512</td>
+      <td>0.061758</td>
+    </tr>
+    <tr>
+      <td>Emilin3</td>
+      <td>595.356</td>
+      <td>0.857</td>
+      <td>0.005562</td>
+    </tr>
+    <tr>
+      <td>Emid1</td>
+      <td>550.685</td>
+      <td>0.252</td>
+      <td>0.631487</td>
+    </tr>
+    <tr>
+      <td>Fbln1</td>
+      <td>2214.023</td>
+      <td>0.23</td>
+      <td>0.320082</td>
+    </tr>
+    <tr>
+      <td>Fbln2</td>
+      <td>48333.486</td>
+      <td>0.127</td>
+      <td>0.615495</td>
+    </tr>
+    <tr>
+      <td>Fbln5</td>
+      <td>2725.675</td>
+      <td>0.326</td>
+      <td>0.023116</td>
+    </tr>
+    <tr>
+      <td>Fbln7</td>
+      <td>4562.409</td>
+      <td>0.784</td>
+      <td>0.00233</td>
+    </tr>
+    <tr>
+      <td>Efemp1</td>
+      <td>1308.939</td>
+      <td>0.543</td>
+      <td>0.077648</td>
+    </tr>
+    <tr>
+      <td>Efemp2</td>
+      <td>4858.991</td>
+      <td>0.222</td>
+      <td>0.11327</td>
+    </tr>
+    <tr>
+      <td>Fbn1</td>
+      <td>36959.196</td>
+      <td>0.668</td>
+      <td>0.005087</td>
+    </tr>
+    <tr>
+      <td>Fbn2</td>
+      <td>2856.248</td>
+      <td>−0.008</td>
+      <td>0.983466</td>
+    </tr>
+    <tr>
+      <td>Fn1</td>
+      <td>510510.053</td>
+      <td>0.307</td>
+      <td>0.223595</td>
+    </tr>
+    <tr>
+      <td>Fras1</td>
+      <td>430.729</td>
+      <td>−0.837</td>
+      <td>0.013797</td>
+    </tr>
+    <tr>
+      <td>Gldn</td>
+      <td>464.82</td>
+      <td>0.424</td>
+      <td>0.390168</td>
+    </tr>
+    <tr>
+      <td>Hmcn1</td>
+      <td>1034.806</td>
+      <td>0.589</td>
+      <td>0.036404</td>
+    </tr>
+    <tr>
+      <td>Hmcn2</td>
+      <td>6034.922</td>
+      <td>0.252</td>
+      <td>0.456036</td>
+    </tr>
+    <tr>
+      <td>Ibsp</td>
+      <td>2.365</td>
+      <td>−0.125</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Matn1</td>
+      <td>0.671</td>
+      <td>0.074</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Matn2</td>
+      <td>6213.381</td>
+      <td>0.503</td>
+      <td>0.015668</td>
+    </tr>
+    <tr>
+      <td>Matn3</td>
+      <td>201.369</td>
+      <td>−0.581</td>
+      <td>0.155595</td>
+    </tr>
+    <tr>
+      <td>Matn4</td>
+      <td>2796.498</td>
+      <td>−0.245</td>
+      <td>0.6134</td>
+    </tr>
+    <tr>
+      <td>Mfap1a</td>
+      <td>536.887</td>
+      <td>0.101</td>
+      <td>0.639732</td>
+    </tr>
+    <tr>
+      <td>Mfap1b</td>
+      <td>398.958</td>
+      <td>0.03</td>
+      <td>0.902813</td>
+    </tr>
+    <tr>
+      <td>Mfap2</td>
+      <td>3608.727</td>
+      <td>0.465</td>
+      <td>0.013072</td>
+    </tr>
+    <tr>
+      <td>Mfap3</td>
+      <td>1213.924</td>
+      <td>0.119</td>
+      <td>0.519005</td>
+    </tr>
+    <tr>
+      <td>Mfap4</td>
+      <td>4217.93</td>
+      <td>0.4</td>
+      <td>0.210242</td>
+    </tr>
+    <tr>
+      <td>Mfap5</td>
+      <td>14548.008</td>
+      <td>0.753</td>
+      <td>5.34E-05</td>
+    </tr>
+    <tr>
+      <td>Mmrn1</td>
+      <td>439.183</td>
+      <td>0.492</td>
+      <td>0.262418</td>
+    </tr>
+    <tr>
+      <td>Mmrn2</td>
+      <td>1557.776</td>
+      <td>−0.201</td>
+      <td>0.519886</td>
+    </tr>
+    <tr>
+      <td>Npnt</td>
+      <td>1084.388</td>
+      <td>−0.453</td>
+      <td>0.209896</td>
+    </tr>
+    <tr>
+      <td>Papln</td>
+      <td>16.561</td>
+      <td>−0.122</td>
+      <td>0.859483</td>
+    </tr>
+    <tr>
+      <td>Postn</td>
+      <td>102294.871</td>
+      <td>0.591</td>
+      <td>0.048873</td>
+    </tr>
+    <tr>
+      <td>Sparc</td>
+      <td>331616.177</td>
+      <td>0.479</td>
+      <td>0.000296</td>
+    </tr>
+    <tr>
+      <td>Sparcl1</td>
+      <td>12872.967</td>
+      <td>−0.027</td>
+      <td>0.959288</td>
+    </tr>
+    <tr>
+      <td>Spp1</td>
+      <td>29368.724</td>
+      <td>0.234</td>
+      <td>0.637831</td>
+    </tr>
+    <tr>
+      <td>Srpx2</td>
+      <td>5778.794</td>
+      <td>0.362</td>
+      <td>0.077229</td>
+    </tr>
+    <tr>
+      <td>Tnc</td>
+      <td>28609.297</td>
+      <td>0.378</td>
+      <td>0.326135</td>
+    </tr>
+    <tr>
+      <td>Tnn</td>
+      <td>5098.501</td>
+      <td>−0.623</td>
+      <td>0.126873</td>
+    </tr>
+    <tr>
+      <td>Tnr</td>
+      <td>19.271</td>
+      <td>0.482</td>
+      <td>0.385953</td>
+    </tr>
+    <tr>
+      <td>Tnxa</td>
+      <td>6.323</td>
+      <td>0.944</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Tnxb</td>
+      <td>18888.425</td>
+      <td>0.781</td>
+      <td>0.015263</td>
+    </tr>
+    <tr>
+      <td>Thbs1</td>
+      <td>14477.798</td>
+      <td>0.49</td>
+      <td>0.099587</td>
+    </tr>
+    <tr>
+      <td>Thbs2</td>
+      <td>36613.787</td>
+      <td>0.39</td>
+      <td>0.149809</td>
+    </tr>
+    <tr>
+      <td>Thbs3</td>
+      <td>17595.855</td>
+      <td>0.267</td>
+      <td>0.193149</td>
+    </tr>
+    <tr>
+      <td>Thbs4</td>
+      <td>203095.542</td>
+      <td>0.841</td>
+      <td>5.69E-05</td>
+    </tr>
+    <tr>
+      <td>Comp</td>
+      <td>35501.759</td>
+      <td>0.293</td>
+      <td>0.10314</td>
+    </tr>
+  </tbody>
+</table>
+
+### Effects on cell motility, cytoskeletal organization, metabolism, and oxidative stress identified in ScxLinDTR repair tendons
 
 Utilizing the downstream effects analysis described above (Table 1), we next examined other significantly altered biological functions in ScxLinDTR tendon repairs relative to WT. The inhibited pathways indicated decreased contractility and function of muscle (ex. ‘Contractility of skeletal muscle,’ p=4.96E-16, Z = −3.595) and decreased oxygen consumption (‘Consumption of Oxygen,’ p=9.42E-07, Z = −2.237) in ScxLinDTR tendons relative to wildtype controls at day 28 post-repair (Table 1). While only 14 disease and function annotations were found to be inhibited, 62 annotations were found to be significantly activated. Interestingly, in addition to ‘Fibrosis,’ the activated biological pathways indicated increased cell movement and migration (ex. ‘Migration of cells,’ p=6.44E-17, Z = 4.733), reorganization of the cytoskeletal network (ex. ‘Organization of cytoskeleton,’ p=2.94E-20, Z = 3.384), metabolism disorders (ex. ‘Glucose metabolism disorder,’ p=5.46E-10, Z = 3.516), and production of reactive oxygen species (ex. ‘Production of reactive oxygen species,’ p=6.22E-12, Z = 2.625) (Table 1).
 
-## Differentially enriched canonical pathways following ScxLin cell depletion prior to flexor tendon repair
+### Differentially enriched canonical pathways following ScxLin cell depletion prior to flexor tendon repair
 
 To better understand signaling cascades that could be driving alterations in ScxLinDTR healing, enriched canonical pathways were identified using IPA core analysis. Nineteen canonical pathways were identified, where 13 were positively enriched (activated) and 6 were negatively enriched (inhibited/suppressed) (Figure 7, Table 3). Consistent with the metabolism disorders identified from the downstream effects analysis (Table 2), canonical pathways related to metabolism were negatively enriched (ex. ‘Oxidative Phosphorylation,’ -log(p)=7.6, Z = −5.303; additional pathways provided in Figure 7 and Table 3). Additionally, calcium signaling was found to be negatively enriched (‘Calcium Signaling,’ -log(p)=5.72, Z = −2.335) (Figure 7 and Table 3).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig7-v2.jpg)
 
-**Figure 7.:** DTR healing tendons at day 28 post-repair.Ingenuity pathway analysis was utilized to determine positively and negatively significantly enriched pathways in ScxLinDTR healing tendons at day 28 post-repair. Canonical pathways were considered significant if p<0.05 and ABS(Z-score)>2. The orange color indicates pathways that are significantly, positively enriched (‘activated’), while the blue color indicates significantly, negatively enriched (‘inhibited’) pathways. The orange dotted line represents -log (1.3)=0.05, indicating the p-value cut-off.
+**Figure 7.:** Ingenuity pathway analysis was utilized to determine positively and negatively significantly enriched pathways in ScxLinDTR healing tendons at day 28 post-repair. Canonical pathways were considered significant if p<0.05 and ABS(Z-score)>2. The orange color indicates pathways that are significantly, positively enriched (‘activated’), while the blue color indicates significantly, negatively enriched (‘inhibited’) pathways. The orange dotted line represents -log (1.3)=0.05, indicating the p-value cut-off.
+
+**Table 3.**
+ Ingenuity pathway analysis canonical pathways.All enriched pathways marked as significant (-log(p-value)>1.3 and ABS(Z-score)>2) using IPA core analysis for ScxLinDTR vs WT at day 28 post-repair.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Canonical pathway</th>
+      <th>-log(p)</th>
+      <th>Z-Score</th>
+    </tr>
+    <tr>
+      <th>Negatively enriched</th>
+      <th>Oxidative phosphorylation</th>
+      <th>7.6</th>
+      <th>−5.303</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>TCA Cycle II (Eukaryotic)</td>
+      <td>5.96</td>
+      <td>−3.464</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>White Adipose Tissue Browning Pathway</td>
+      <td>3.23</td>
+      <td>−2.353</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Calcium Signaling</td>
+      <td>5.72</td>
+      <td>−2.335</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Glycolysis I</td>
+      <td>4.63</td>
+      <td>−2.111</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gluconeogenesis I</td>
+      <td>4.63</td>
+      <td>−2.111</td>
+    </tr>
+    <tr>
+      <td>Positively enriched</td>
+      <td>Ephrin Receptor Signaling</td>
+      <td>6.13</td>
+      <td>3.888</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rac Signaling</td>
+      <td>3.85</td>
+      <td>3.674</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Actin Nucleation by ARP-WASP Complex</td>
+      <td>5.16</td>
+      <td>3.441</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes</td>
+      <td>3.77</td>
+      <td>3.411</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Remodeling of Epithelial Adherens Junctions</td>
+      <td>6.23</td>
+      <td>3.162</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Regulation of Actin-based Motility by Rho</td>
+      <td>5.75</td>
+      <td>3.128</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sphingosine-1-phosphate Signaling</td>
+      <td>3.94</td>
+      <td>2.711</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ephrin B Signaling</td>
+      <td>3.09</td>
+      <td>2.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RhoA Signaling</td>
+      <td>3.97</td>
+      <td>2.502</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Glioma Invasiveness Signaling</td>
+      <td>2.13</td>
+      <td>2.496</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fMLP Signaling in Neutrophils</td>
+      <td>4.44</td>
+      <td>2.449</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Actin Cytoskeleton Signaling</td>
+      <td>7.86</td>
+      <td>2.214</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Production of Nitric Oxide and Reactive Oxygen Species in Macrophages</td>
+      <td>2.01</td>
+      <td>2.117</td>
+    </tr>
+  </tbody>
+</table>
 
 Consistent with reorganization of the cytoskeletal network identified from the downstream effects analysis (Table 2), numerous canonical pathways related to actin nucleation and polymerization were positively enriched (Figure 7 and Table 3). These include ‘Rac Signaling’ (-log(p)=3.85, Z = 3.674), ‘RhoA Signaling’ (-log (p) = 3.97, Z = 2.502), and ‘Ephrin B Signaling’ (-log(p)=3.09, Z = 2.53). Other pathways that are significantly enriched in ScxLinDTR day 28 post-repair tendons include, but are not limited to, ‘sphingosine-1-phosphate signaling’ (-log(p)=3.94, Z = 2.711) and ‘production of nitric oxide and reactive oxygen species in macrophages’ (-log(p)=2.01, Z = 2.117) (Figure 7 and Table 3).
 
-## Identification of possible upstream regulators driving altered ScxLinDTR flexor tendon healing
+### Identification of possible upstream regulators driving altered ScxLinDTR flexor tendon healing
 
 To identify key molecules that may be driving ScxLinDTR tendon healing at day 28 post-repair, predicted upstream regulators were identified using IPA core analysis. Eight possible activated upstream regulators and four inhibited upstream regulators were identified (Table 4). The eight activated regulators included the calcium-binding protein S100a4, peptidase F2, receptors BTNL2 and F2R, transcription factors EBF2 and SOX2, the kinase NTRK2, and growth factor FGF2. The four inhibited regulators included enzyme LDHB and transcription factors FOXO4, MEF2C, and SMYD1.
 
-## Ablation of ScxLin tendon cells does not significantly affect tendon post-natal growth 3 months post-ablation
+**Table 4.**
+ Ingenuity pathway analysis upstream regulators.All possible upstream regulators where expression log ratio > 0.5, ABS(Z-score)>2, p-value<0.05, and agreement between predicted activation state and directionality of regulator’s gene expression, compiled using IPA core analysis for ScxLinDTR vs WT at day 28 post-repair.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Upstream regulator</th>
+      <th>Expression log ratio</th>
+      <th>Predicted activation state</th>
+      <th>Activation Z-score</th>
+      <th>p-value of overlap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Activated in ScxLinDTR</td>
+    </tr>
+    <tr>
+      <td>S100A4</td>
+      <td>0.518</td>
+      <td>Activated</td>
+      <td>2.946</td>
+      <td>0.00456</td>
+    </tr>
+    <tr>
+      <td>F2</td>
+      <td>0.533</td>
+      <td>Activated</td>
+      <td>2.606</td>
+      <td>0.000134</td>
+    </tr>
+    <tr>
+      <td>BTNL2</td>
+      <td>0.805</td>
+      <td>Activated</td>
+      <td>2.324</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>EBF2</td>
+      <td>0.657</td>
+      <td>Activated</td>
+      <td>2.223</td>
+      <td>0.000738</td>
+    </tr>
+    <tr>
+      <td>F2R</td>
+      <td>0.599</td>
+      <td>Activated</td>
+      <td>2.22</td>
+      <td>0.0243</td>
+    </tr>
+    <tr>
+      <td>NTRK2</td>
+      <td>0.608</td>
+      <td>Activated</td>
+      <td>2.137</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>1.138</td>
+      <td>Activated</td>
+      <td>2.071</td>
+      <td>0.0000143</td>
+    </tr>
+    <tr>
+      <td>FGF2</td>
+      <td>0.544</td>
+      <td>Activated</td>
+      <td>2.017</td>
+      <td>0.000393</td>
+    </tr>
+    <tr>
+      <td colspan="5">Inhibited in ScxLinDTR</td>
+    </tr>
+    <tr>
+      <td>FOXO4</td>
+      <td>−0.501</td>
+      <td>Inhibited</td>
+      <td>−2.697</td>
+      <td>0.0236</td>
+    </tr>
+    <tr>
+      <td>MEF2C</td>
+      <td>−0.905</td>
+      <td>Inhibited</td>
+      <td>−2.577</td>
+      <td>3.06E-08</td>
+    </tr>
+    <tr>
+      <td>SMYD1</td>
+      <td>−0.836</td>
+      <td>Inhibited</td>
+      <td>−2.219</td>
+      <td>2.63E-12</td>
+    </tr>
+    <tr>
+      <td>LDHB</td>
+      <td>−0.609</td>
+      <td>Inhibited</td>
+      <td>−2.219</td>
+      <td>0.000241</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ablation of ScxLin tendon cells does not significantly affect tendon post-natal growth 3 months post-ablation
 
 In addition to roles in tendon healing, Scx expression is required for appropriate tendon development and growth processes (Murchison et al., 2007; Gumucio et al., 2020). However, the role of Scx+ cells during post-natal growth and adult homeostasis have not been evaluated. Local injection of DT into pre-pubescent mice (3–4 weeks old) resulted in 55% depletion of tendon cells in uninjured ScxLinDTR FDL tendons relative to WT littermates (p=0.0007) (Figure 8A–C). To assess the requirement for tendon cells in post-natal growth, pre-pubescent mice who were still undergoing periods of rapid growth were injected with DT and harvested at the 3 month timepoint (ScxLinDTR,3weeks) (Figure 8D). ScxLinDTR,3weeks tendons did not exhibit an influx of F4/80+ macrophages or tendon cell differentiation into αSMA+ myofibroblasts in either genotype (Figure 8E); however, ScxLinDTR mice had a 42.5% decreased tendon cell number relative to WT littermates (p=0.0454) demonstrating that the tendon cell environment was not repopulated following depletion (Figure 8E and F). There were no significant changes in MTP range of motion, gliding resistance, stiffness, or maximum load at failure between groups (Figure 8G–J). Second harmonic generation revealed no significant differences in collagen fibril dispersion between genotypes (Figure 8K and L). Taken together, these data suggest that ScxLin cells are not required for early post-natal tendon growth.
 
@@ -104,9 +1782,21 @@ In addition to roles in tendon healing, Scx expression is required for appropria
 
 **Figure 8.:** Pre-pubescent mice (3–4 weeks old) received five hindpaw injections of DT and were harvested 10 days after the final injection to assess tendon cell depletion (ScxLinDTR) (A). Hindpaw sections from both WT and ScxLinDTR hindpaws (B). Quantification of WT and ScxLinDTR,3weeks tendon cell number in pre-pubescent mice (C). To assess effects of tendon cell depletion on post-natal tendon growth, mice received five hindpaw injections of DT on consecutive days at 3–4 weeks of age and were harvested uninjured 3 months later for biomechanical, gliding, and histological evaluation (ScxLinDTR,3weeks) (D). Co-immunofluorescence of F4/80 (macrophages) and αSMA (myofibroblasts) in uninjured WT and ScxLinDTR,3weeks tendons (E). Quantification of WT and ScxLinDTR,3weeks tendon cell number (F). Measurement of metatarsophalangeal (MTP) joint flexion angle (G), gliding resistance (H), stiffness (I), and maximum load at failure (J) of WT and ScxLinDTR,3weeks uninjured tendons. N = 7–10 per genotype. Second harmonic generation (K) and quantification (L) of collagen fibril dispersion of WT and ScxLinDTR,3weeks. N = 3 per genotype. Nuclei stained with DAPI. Tendon is outlined by white dotted lines. Student’s t-test used to assess statistical significance between genotypes. * indicates p<0.05, *** indicates p<0.001.
 
-## Ablation of ScxLin tendon cells significantly affected tendon homeostasis 3 months post-depletion
+### Ablation of ScxLin tendon cells significantly affected tendon homeostasis 3 months post-depletion
 
 To assess the requirement for ScxLin tendon cells in maintaining adult tendon homeostasis, 10–12 week-old WT and ScxLinDTR mice were injected with DT to induce cell death and harvested after 3 months (ScxLinDTR,10weeks) (Figure 9A). ScxLinDTR,10weeks mice had a 62.3% decrease in tendon cell number relative to WT littermates (p<0.0001)(Figure 9B and C), demonstrating that tendon cell number had not rebounded in the three months since initial depletion (Figure 1). Interestingly, we consistently observed a significant accumulation of unidentified cells on the top and bottom regions of ScxLinDTR,10weeks tendons (Figure 9B). Quantification of the cellular density revealed a significant increase on the top (p<0.0001) and bottom (p<0.01) regions of the ScxLinDTR,10 weeks compared to WT littermates (Figure 9D). ScxLinDTR,10weeks tendons did not exhibit an influx of F4/80+ macrophages or tendon cell differentiation into αSMA+ myofibroblasts in either genotype (Figure 9E). Functionally, there were no significant changes in tendon gliding function or biomechanical properties between genotypes after 3 months (Figure 9F–I). However, second harmonic generation imaging revealed a significant increase in overall collagen fibril dispersion in ScxLinDTR,10weeks relative to WT littermates (WT: 8.327 degrees ± 0.39, ScxLinDTR,10weeks: 9.815 degrees ± 0.53, p=0.0393) (Figure 9J and K). Based on the spatial changes in cellularity (Figure 9D), we also quantified fibril dispersion in a more spatially specific manner (top, middle and bottom thirds of the tendon) (Figure 9—figure supplement 1A–D). Interestingly, the top third of ScxLinDTR,10weeks tendons showed a significant increase in dispersion compared to all regions of WT (Figure 9—figure supplement 1E). These data suggest a potential relationship between the increased cellularity and fibril dispersion levels on the top region of the ScxLinDTR FTs.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig9-v2.jpg)
+
+**Figure 9.:** Mice received five hindpaw injections of DT on consecutive days at 10–12 weeks of age and were harvested uninjured 3 months later for biomechanical, gliding, and histological evaluation (ScxLinDTR,10weeks) (A). Cellularity was assessed using DAPI (B) and quantified (C) 3 months after ScxLin cell depletion. H and E staining was used to better define the hypercellular regions near the tendon epitenon. Cell density was quantified at the top and bottom boundaries of the tendon (D). N = 7 per genotype. Co-immunofluorescence of F4/80 (macrophages) and αSMA (myofibroblasts) in uninjured WT and ScxLinDTR tendons (E). N = 3 per genotype. Measurement of metatarsophalangeal (MTP) joint flexion angle (F), gliding resistance (G), stiffness (H), and maximum load at failure (I) of WT and ScxLinDTR,10weeks uninjured tendons. N = 9–12 per genotype. Second harmonic generation (SHG) (J) and quantification (K) of collagen fibril dispersion of WT and ScxLinDTR,10weeks. N = 7–8 per genotype. Nuclei stained with DAPI. Tendon is outlined by white dotted lines. Student’s t-test used to assess statistical significance between genotypes. * indicates p<0.05.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Representative SHG images of collagen fibrils (A, B) and cell nuclei (C, D). Quantification of spatial collagen fibril dispersion on the top, middle, and bottom regions of WT and ScxLinDTR FTs at 3 months post-depletion (E). N = 6 per genotype. Two-way ANOVA used to assess statistical significance between genotypes and tendon regions. *indicates p<0.05.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/62203/elife-62203-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Representative TEM images of the WT and ScxLinDTR FTs at 3 months post-depletion (A, B). Collagen fibril diameter histogram demonstrates an increase in the median fibril diameter in DTR D90 FTs compared to WT (C). Collagen fibril diameter of the WT and DTR D90 FTs with boxplot whiskers spanning data between the 5th and 95th percentiles; data outside this range are plotted as individual points (D). Collagen fibril density of the WT and DTR D90 FTs (E). Collagen fibril irregularity of the WT and DTR D90 FTs (F). N = 4 for WT and N = 3 for DTR D90. Student’s t-test used to assess statistical significance between genotypes. ****indicates p<0.0001.
 
 Given these changes in collagen alignment, we further assessed the ECM structure using TEM. (Figure 9—figure supplement 2A and B). Collagen fibril diameter distribution was substantially altered between WT (median = 147.95, Q1 = 118.73, Q3 = 179.45) and ScxLinDTR,10weeks (median = 213.41, Q1 = 167.49, Q3 = 261.91) (Figure 9—figure supplement 2C). Collagen fibril diameter of ScxLinDTR,10weeks increased by 30.67% compared to WT (p<0.0001) (Figure 9—figure supplement 2D). The collagen fibril density of ScxLinDTR,10weeks decreased by 48.72% compared to WT (p<0.0001) (Figure 9—figure supplement 2E). Finally, both the WT and the ScxLinDTR,10weeks groups exhibited similar levels of fibril irregularity (p=0.9023) (Figure 9—figure supplement 1F).
 
@@ -130,46 +1820,203 @@ Altogether, these data demonstrate that ScxLin cell depletion is beneficial for 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Scx-Cre</td>
+      <td>Dr. Ronen Schweitzer</td>
+      <td>MGI:5317938</td>
+      <td>Referred to as ScxLinin manuscript</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6-Gt(ROSA)26Sortm1(HBEGF)Awai/J (Rosa-DTRLSL)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007900 RRID:IMSR_JAX:007900</td>
+      <td>Referred to as ScxLinDTRin manuscript</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (ROSA-Ai9)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007909 RRID:IMSR_JAX:007909</td>
+      <td>Referred to as ScxLinAi9or ScxLinAi9DTR in manuscript</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SCXA (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab58655 RRID:AB_882467</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S100a4 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab197896 RRID:AB_2728774</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase 3 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Catalog #: 9661 RRID:AB_2341188</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab29 RRID:AB_303394</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Catalog #: sc-26643 RRID:AB_2098331</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-THBS4 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab263898</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MFAP5 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab203828</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Decorin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog #: ab175404</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha-SMA-Cy3 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: C6198 RRID:AB_476856</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha-SMA-FITC (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: F3777 RRID:AB_476977</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamine Red-X (RRX) AffiniPure F(ab')₂ Fragment Donkey Anti-Rabbit IgG (H+L) (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog #: 711-296-152</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 AffiniPure F(ab')₂ Fragment Donkey Anti-Goat IgG (H+L) (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog #: 705-546-147 RRID:AB_2340430</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamine Red-X (RRX) AffiniPure F(ab')₂ Fragment Donkey Anti-Mouse IgG (H+L) (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Catalog #: 715-296-150 RRID:AB_2340834</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>Diphtheria Toxin (DT)</td>
+      <td>Millipore Sigma</td>
+      <td>D0564-1MG</td>
+      <td>20 ng DT / injection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>Version 7.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>OlyVIA software</td>
+      <td>Olympus (https://www.olympus-lifescience.com/en/support/downloads/)</td>
+      <td>Version 2.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Scx-Cre mice were generously provided by Dr. Ronen Schweitzer. ROSA-Ai9F/F (#007909), and Rosa-DTRLSL (#007900) mice were obtained from the Jackson Laboratory (Bar Harbor, ME, USA). ROSA-Ai9LSL mice express Tomato red fluorescence in the presence of Cre-mediated recombination (Madisen et al., 2010). Scx-Cre mice were crossed to ROSA-Ai9F/F mice to label Scx lineage cells (ScxLin). Diphtheria toxin receptor (DTRLSL) mice can be utilized to temporally ablate cell populations driven by a non-inducible Cre driver (Buch et al., 2005). In short, expression of the diphtheria toxin receptor is inhibited prior to Cre-mediated recombination due to the presence of a STOP cassette flanked by loxp site (Loxp-STOP-Loxp; LSL). Following Cre-mediated recombination the STOP cassette is deleted, resulting in expression of DT receptor, in this case specifically on ScxLin cells. As such, administration of diphtheria toxin (DT) to these mice results in targeted cell death of ScxLin cells. Scx-Cre mice were crossed to DTRLSL animals to generate a model of ScxLin tendon cell depletion (ScxLinDTR) and Scx-Cre-; DTRLSL littermates were used as wild-type (WT) controls. To simultaneously deplete and visualize ScxLin tendon cells, Scx-Cre; Ai9F/F mice were crossed to the DTRLSL to generate a model of Scx-Cre+; Ai9F/+; DTRF/+ littermates (ScxLinAi9DTR) and Scx-Cre+; Ai9F/+; DTR+/+ (ScxLinAi9)were used as WT to visualize ScxLinAi9 cells without depletion. All mouse studies were performed with 10–12 week-old male and female mice except where otherwise noted (Figure 7 3–4-week-old male and female mice). All mouse work (injections, surgeries, harvests) were performed in the morning. Mice were kept in a 12 hr light/dark cycle.
 
-## Flexor tendon repair
+### Flexor tendon repair
 
 Complete transection and repair of the murine flexor digitorum longus (FDL) tendon was performed as previously described (Ackerman and Loiselle, 2016). Mice received a 15–20 μg injection of sustained-release buprenorphine. Mice were anesthetized with Ketamine (60 mg/kg) and Xylazine (4 mg/kg). To reduce chances of rupture at the repair site, the FDL tendon was first transected at the myotendinous junction and the skin was closed with a 5–0 suture. This MTJ transection results in a transient decrease in tendon loading, with progressive reintegration of the MTJ observed by D7-10 post-surgery. As shown by the absence of αSMA staining in the uninjured tendon adjacent to the repair (Figure 5—figure supplement 1), this transient alteration in loading does not induce a widespread tendon response such as degeneration, remodeling, or cellular activation. Next, a small incision was made to the posterior surface of the right hind paw, the FDL tendon was isolated from surrounding tissue and completely transected. The tendon was repaired using 8–0 suture and the skin was closed with a 5–0 suture. Animals resumed prior cage activity, food intake, and water consumption immediately following surgery.
 
-## Quantification of tendon cell depletion and ScxLincells
+### Quantification of tendon cell depletion and ScxLincells
 
 ScxLinDTR mice were injected with 20 ng of diphtheria toxin (DT) for five consecutive days (100 ng total DT). Uninjured hind paws were harvested 10 days after the final injection for frozen sectioning. ScxLin hind paws were harvested uninjured hind paws were fixed in 10% NBF for 24 hr, decalcified in 14% EDTA for four days, and processed in 30% sucrose to cryo-protect the tissue. Samples were embedded using Cryomatrix (Thermo Fisher Scientific, Waltham, MA, USA) and sectioned into 8 mm sagittal sections using an established cryotape-transfer method (Dyment et al., 2016). Sections were stained with DAPI to visualize nuclei and imaged using a VS120 Virtual Slide Microscope (Olympus, Waltham, MA). Using Image J, a region of interest (ROI) was drawn around the tendon and an area was obtained. For ScxLinDTR and WT littermate mice, nuclei within the ROI were manually counted and total nuclei number was normalized to area. For ScxLin mice, fluorescent cells in uninjured sections were manually counted and ScxLin+ cells reported as a percentage of total cells counted in each section. An n = 3–4 (adult mice) or n = 3–5 (young mice) was used for quantification.
 
-## Paraffin histology and immunofluorescence
+### Paraffin histology and immunofluorescence
 
 ScxLinDTR hind paws were harvested 10 days after the final DT injection for homeostasis studies, and at 14- and 28 days post-repair. Additionally, uninjured ScxLinDTR hind paws from adult (10–12 weeks) and pre-pubescent (3–4 weeks) mice were harvested 3 months following the final DT injection to assess effects of tendon cell depletion on tendon growth and homeostasis. Hind paws were fixed in 10% neutral buffered formalin (NBF) at room temperature for 72 hr and were subsequently decalcified in Webb Jee EDTA (pH 7.2–7.4) for 7 days at room temperature, processed, and embedded in paraffin. Three-micron sagittal sections were utilized for analysis, except for the 3 month study which were cut at 5-µm to facilitate SHG imaging. ScxLinDTR repair sections were stained with Alcian blue/hematoxylin and Orange G (ABHOG) or Hematoxylin and eosin (H and E) to assess tissue morphology and cellularity, and Masson’s Trichrome to assess collagen deposition. For immunofluorescent staining, sections were stained with Cleaved Caspase 3 (1:100, Cat#: 9661, Cell Signaling, Danvers, MA), PCNA (1:100, Cat#:ab29, Abcam, Cambridge, MA), F4/80 (1:500, Cat#: sc-26643, Santa Cruz, Dallas, TX), α-SMA-CY3 (1:200, Cat#: C6198, Sigma Life Sciences, St. Louis, MO), α-SMA-FITC (1:500, Cat#: F3777, Sigma Life Sciences, St. Louis, MO), S100a4 (1:2000, Cat#: ab197896, Abcam, Cambridge, MA), SCXA (1:500, ab58655, Abcam, Cambridge, MA), Decorin (1:250, Cat # ab175404, Abcam), Thbs4 (1:250, Cat # ab263898, Abcam), Mfap5 (1: 2000, Cat # ab203828, Abcam), or tdTomato (1:500, Cat#: AB8181, SICGEN, Cantanhede, Portugal). Sections were counterstained with the nuclear DAPI stain and imaged with a VS120 Virtual Slide Microscope (Olympus, Waltham, MA).
 
-## Quantification of fluorescence
+### Quantification of fluorescence
 
 Fluorescent images scanned by the virtual slide scanner were quantified using Visiopharm image analysis software v.6.7.0.2590 (Visiopharm, Hørsholm, Denmark). Automatic segmentation via a threshold classifier was utilized to define and quantify specific cell populations based on fluorescence. An ROI was drawn to encapsulate both the scar tissue and tendon stubs. The area of fluorescent signal was determined and normalized to the total ROI area to determine percentages of each cell type. An n = 4 was used for quantification. Three samples were utilized for quantification of Scx+ and S100a4+ cells in uninjured ScxLinDTR hind paws 10 days after the final DT injection. Fluorescent cells were manually counted within an ROI and normalized to either the ROI area or to both the ROI area and total cell number.
 
-## Quantitative assessment of gliding function and biomechanical properties
+### Quantitative assessment of gliding function and biomechanical properties
 
 Gliding function of uninjured and repaired ScxLinDTR tendons was assessed as previously described (Hasslund et al., 2008). Hindlimbs were harvested at the knee-joint and the FDL tendon was disconnected at the myotendinous junction. The FDL tendon was secured between two pieces of tape using superglue and the tendon was loaded incrementally with small weights ranging from 0 to 19 g. Images were captured unloaded and after each load and measurements of the flexion angle of the metatarsophalangeal (MTP) joint were made using Image J. Gliding resistance was derived from the changes in MTP flexion angle over the range of applied loads. An increase in Gliding Resistance and decrease in MTP Flexion Angle is associated with restricted range of motion and increased scar tissue. After conclusion of gliding testing, the FDL tendon was released from the tarsal tunnel while the proximal end of the tendon and the toes of the hind paw were secured into an Instron 8841 uniaxial testing system (Instron Corporation, Norwood, MA). The tendon was loaded until failure at a rate of 30 mm/minute. Seven to 12 samples per genotype per time-point were assessed.
 
-## RNA extraction, next-generation sequencing, and data analysis for RNA-Seq
+### RNA extraction, next-generation sequencing, and data analysis for RNA-Seq
 
 Tendons (three samples per genotype per time point) were harvested at 14- and 28 days post-repair and flash frozen in liquid nitrogen. Total RNA was isolated using the Bullet Blender (Next Advance) to homogenize the tissue. The RNA was isolated from the resulting extract using Trizol (Life Technologies, Carlsbad, CA) and the RNeasy Plus Micro Kit (Qiagen, Valencia, CA) per manufacturer’s recommendations. The total RNA concentration was determined with the NanoDrop 1000 spectrophotometer (NanoDrop, Wilmington, DE) and RNA quality assessed with the Agilent Bioanalyzer (Agilent, Santa Clara, CA). The RNA integrity number (RIN) for all harvested samples was 8.4 ± 0.85 (mean ± standard deviation). The TruSeq Stranded mRNA Sample Preparation Kit (Illumina, San Diego, CA) was used for next-generation sequencing library construction per manufacturer’s protocols. Briefly, mRNA was purified from 200 ng total RNA with oligo-dT magnetic beads and fragmented. First-strand cDNA synthesis was performed with random hexamer priming followed by second-strand cDNA synthesis using dUTP incorporation for strand marking. End repair and 3` adenylation was then performed on the double-stranded cDNA. Illumina adaptors were ligated to both ends of the cDNA and amplified with PCR primers specific to the adaptor sequences to generate cDNA amplicons of approximately 200–500 bp in size. The amplified libraries were hybridized to the Illumina flow cell and single end reads were generated for each sample using Illumina NovaSeq6000. The generated reads were demultiplexed using bcl2fastq version 2.19.0. Data cleaning and quality control was accomplished using FastP version 0.20.0. Read quantification was accomplished using subread-1.6.4 package (featureCounts). Data normalization and differential expression analysis of ScxLinDTR relative to WT at a given time point was performed using DESeq2-1.22.1 with an adjusted p-value threshold of 0.05 on each set of raw expression measures. The ‘lfcShrink’ method was applied, which moderates log2 fold-changes for lowly expressed genes. DeSeq2 data was uploaded to Qiagen’s ingenuity pathway analysis (IPA, http://www.ingenuity.com) and submitted to core analysis. Canonical pathways, upstream regulators, and downstream disease and functions were deemed biologically and statistically significant when the calculated ABS(z-score)>2 and p-value<0.05. Additionally, imposed upon the upstream regulator data was an expression log ratio cut-off of 0.5, and agreement between predicted activation state and directionality of expression log ratio. The data consists of three biological replicates per genotype per timepoint. The data generated in this study have been uploaded to the Gene Expression Omnibus under accession number GSE156157.
 
-## Second harmonic generation two-photon confocal imaging
+### Second harmonic generation two-photon confocal imaging
 
 Five-micron paraffin sections of WT and ScxLinDTR hind paws were utilized for second harmonic generation (SHG) imaging. Sections were scanned with a Spectra-Physics MaiTai HP DeepSee Ti:Sapphire Laser, tuned to 1000 nm, under 25x magnification, with a 2.5X optical zoom, with a step size of 0.25 μm. 3D projections of image stacks were generated using the 3D-Project macro in ImageJ and analyzed for collagen fibril uniformity using the Directionality macro. The Directionality macro utilizes Fourier transform analysis to derive spatial orientation of image stacks. Three to 10 samples per genotype were used to quantify overall collagen fibril dispersion for pre-pubescent studies, while sections were analyzed from 7 to 8 mice per genotype for the adult homeostasis studies. To quantify spatial dispersion in adult samples, each image stack was divided into equal thirds (top, middle, and bottom), and dispersion was calculated within each region using Directionality macro as above. N = 6 per genotype per age group were used to quantify the spatial collagen fibril dispersion.
 
-## Transmission electron microscopy imaging and analysis
+### Transmission electron microscopy imaging and analysis
 
 FDL tendons were isolated (N = 4 for WT; N = 3 for ScxLinDTR,10weeks) and fixed in Glutaraldehyde Sodium Cacodylate fixative. One-micron axial sections were cut and stained with Toluidine blue. One-micron sections were then trimmed to 70 nm and stained with uranyl acetate and lead citrate. Sections were placed on grids for imaging on a Hitachi 7650 Analytical TEM. Three non-overlapping images were taken from mid-substance of each tendon at ×40,000 magnification. For measurement of fibril diameter, a region of interest (ROI) was determined within each image so that a minimum of 80 fibrils could be measured. Diameters were measured along the y-axis. The perimeter and the area of the collagen fibrils were quantified. The radii based on the calculated perimeter and area were quantified. The ratio of these two radii represent a measure of fibril roundness (fibril irregularity factor; FIF). An FIF different than one suggest that the fibril is not a perfect circle.
 
-## Statistical analysis and animal stratification
+### Statistical analysis and animal stratification
 
 Experimental N determined based on previously published work (Best and Loiselle, 2019; Best et al., 2019). Quantitative data was analyzed via GraphPad Prism and is presented as mean ± standard error of the mean (SEM). Either a student’s t-test or two-way analysis of variance (ANOVA) with Sidak’s multiple comparisons test was used to analyze data when data was normal. A Mann-Whitney test was utilized when data was not distributed normally [Scx+ cells normalized to area and total cell number (Figure 1—figure supplement 1C), D28 F4/80 and S100a4 immunofluorescence (Figure 4)]. GraphPad Prism was used to detect outlier data points (ROUT method, Q-value = 1%) and no outliers were found. Mice were randomly selected for specific experimental outcome metrics prior to surgery and quantitative data (ex. fluorescence quantification, gliding, and biomechanical properties) were analyzed in a blinded manner. For all experiments, an N = 1 represents one mouse. p values ≤ 0.05 were considered significant. * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, **** indicates p<0.0001.
 
-## Study approval
+### Study approval
 
 This study was carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All animal procedures described were approved by the University Committee on Animal Research (UCAR) at the University of Rochester Medical Center.

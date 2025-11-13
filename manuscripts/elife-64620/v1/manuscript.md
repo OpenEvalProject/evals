@@ -35,7 +35,7 @@ To determine whether this hypothesized correspondence between valence biases in 
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Participants (N = 62) ages 8–27 (M = 17.63, SD = 5.76) completed a risk-sensitive RL task (Niv et al., 2012). In this task, participants learned, through trial and error, the values and probabilities associated with probabilistic and deterministic ‘point machines’ (Figure 1A and B). On each trial (183 trials), participants made a free (two-choice options) or forced (single-choice option) selection of a point machine. Within free-choice trials, ‘risky’ trials presented a pair consisting of one probabilistic and one deterministic option, where neither option strictly dominated the other and evidence of individuals’ subjective values was revealed by their choices. On ‘test’ trials, in which one option dominated the other, we could assess objectively the accuracy of participants’ learning. We presented feedback (number of points) from each choice on a ‘ticket’ that also displayed a trial-unique picture of an object. A subsequent memory test allowed us to explore the interaction between choice outcomes and memory encoding across age (Figure 1C).
 
@@ -43,19 +43,19 @@ Participants (N = 62) ages 8–27 (M = 17.63, SD = 5.76) completed a risk-sensit
 
 **Figure 1.:** (A) Schematic of the structure of a trial in the risk-sensitive reinforcement learning task. (B) The probabilities and point values associated with each of five ‘point machines’ (colors were counterbalanced). (C) Example memory trial.
 
-## Test trial performance
+#### Test trial performance
 
 To ensure that participants learned the probabilities and outcomes associated with each machine, we first examined performance on test trials, in which one option dominated the other. Test trial accuracy significantly improved across the task (generalized linear mixed-effects model: z = 8.56, p<0.001, OR = 2.03, 95% CI [1.72, 2.38]), with accuracy improving from a mean of 0.63 in the first block to means of 0.80 and 0.84 in blocks 2 and 3, respectively. There was no main effect of age (z = 0.51, p=0.612, OR = 1.06, 95% CI [0.86, 1.30]) or interaction between age and trial number (z = 0.22, p=0.830, OR = 1.02, 95% CI [0.87, 1.19]; Appendix 1—figure 1A). These results suggest that accuracy on this coarse measure of value learning did not change with age in our task.
 
-## Explicit reports
+#### Explicit reports
 
 Following the learning task, we probed participants’ explicit knowledge about the point machines. Consistent with participants’ high accuracy on test trials, accuracy was also high on participants’ reports of whether each point machine was probabilistic or deterministic (M = 0.85) and for the point values associated with each machine (M = 0.84). Linear regressions suggested that performance on these explicit accuracy metrics did not vary with linear age (probabilistic/deterministic response accuracy by age: b = –0.02, 95% CI [–0.06, 0.03], t(60) = –0.88, p=0.382, f2 = 0.01, 95% CI [0, 0.13]; point value response accuracy by age: b = 0.02, 95% CI [–0.04, 0.07], t(60) = 0.65, p=0.516, f2 = 0.01, 95% CI [0, 0.11]).
 
-## Response time
+#### Response time
 
 We explored whether response time (RT) varied with age during the learning task. We found a significant interaction between age and trial number (linear mixed-effects model: t(11279) = –2.10, p=0.036, b = –0.02, 95% CI [–0.04, 0]) predicting log-transformed RT. Although RT did not differ by age early in the experiment, older participants responded faster than younger participants by the end of the experiment.
 
-## Decision-making
+#### Decision-making
 
 Importantly, in our task, there were two pairs of machines in which both probabilistic and deterministic options yielded the same EV (i.e., 100% 20 points and 50/50% 0/40 points; 100% 40 points and 50/50% 0/80 points). A primary goal of this study was to examine participants’ tendency to choose probabilistic versus deterministic machines when EV was equivalent. On these equal-EV risk trials, participants chose the probabilistic option on 37% of trials (SD = 21%). This value was significantly lower than 50% (one-sample t-test: t(61) = 4.87, p<0.001, d = 0.62, 95% CI [0.37, 0.95]), suggesting that, despite exhibiting heterogeneity in risk preferences, participants as a group were generally risk averse.
 
@@ -65,7 +65,7 @@ Next, we tested whether choices of the probabilistic machines, compared to choic
 
 **Figure 2.:** Probabilistic (i.e., risky) choices by age on trials in which the risky and safe machines had equal expected value (EV). Data points depict the mean percentage of trials where each participant selected the probabilistic choice option as a function of age. The regression line is from a linear regression including linear and quadratic age terms (significant quadratic effect of age: b = 0.06, 95% CI [0, 0.12], t(59) = 2.14, p=0.036, f2 = .08, 95% CI [0, 0.29], N = 62). Shaded region represents 95% CIs for estimates.
 
-## Reinforcement learning modeling
+#### Reinforcement learning modeling
 
 To better understand the learning processes underlying individuals’ decision-making, we compared the fit of four RL models to participants’ choice behavior. The first was a temporal difference (TD) model with one learning rate (α). The second was a risk-sensitive temporal difference (RSTD) model with separate learning rates for better-than-expected (α+) and worse-than-expected (α-) outcomes, allowing us to index valence biases in learning. The third model included four learning rates (FourLR), with separate α+ and α- for free and forced choices, as past studies have found learning may differ as a function of agency (Chambon et al., 2020; Cockburn et al., 2014). Finally, the fourth model was a Utility model, which transforms outcome values into utilities with an exponential subjective utility function with a free parameter (ρ) capturing individual risk preferences (Pratt, 1964), updated value estimates using a single learning rate. For all models, machine values were transformed to range from 0 to 1, and values were initialized at 0.5 (equivalent to 40 points). A softmax function with an additional parameter β was used to convert the relative estimated values of the two machines into a probability of choosing each machine presented for maximum likelihood estimation.
 
@@ -81,11 +81,11 @@ We computed an asymmetry index (AI) for each participant, which reflects the rel
 
 Prior work has found that valence biases tend to be positive in free choices, but neutral or negative in forced choices (Chambon et al., 2020; Cockburn et al., 2014). While model comparison indicated that the FourLR model did not provide the best account of participants' learning process, we nonetheless conducted an exploratory analysis in which we used parameter estimates from the FourLR model to test whether learning asymmetries varied as a function of agency in our study. While the α+ and AI were both higher for free compared to forced trials, median AIs were negative for both free and forced choices (see Appendix 1 for full results; Appendix 1—figure 12).
 
-## Memory performance
+#### Memory performance
 
 Next, we examined accuracy during the surprise memory test for images that were presented with choice outcomes. Participants correctly identified 54% (SD = 14%) of images presented alongside choice feedback (i.e., Hits) and incorrectly indicated that 24% (SD = 15%) of foil images had been presented during the choice task (False Alarms). Mean d′ was 0.93 (SD = 0.48). Hit rate did not significantly change with linear or quadratic age (ps>0.14). However, false alarm rate significantly increased with linear age (linear regression: b = 0.04, 95% CI [0.00; 0.08], t(60) = 2.14, p=0.037, f2 = 0.08, 95% CI [0, 0.28]; Appendix 1—figure 3A). There was a marginal linear decrease in d′ with age (linear regression: b = –0.11, 95% CI [–0.23, 0.01], t(60) = 1.84, p=0.070, f2 = 0.06, 95% CI [0, 0.24]; Appendix 1—figure 3B), suggesting that adults performed slightly worse on the memory test than younger participants.
 
-## Influence of choice context on memory
+#### Influence of choice context on memory
 
 We next tested whether the decision context in which images were presented influenced memory encoding. To explore this possibility, we first tested whether participants preferentially remembered images presented with outcomes of probabilistic versus deterministic machines. Participants were significantly more likely to remember pictures presented following a choice that yielded probabilistic rather than deterministic outcomes (probabilistic: M = 0.56, SD = 0.15; deterministic: M = 0.52, SD = 0.15; t(61) = 3.08, p=0.003, d = 0.39, 95% CI [0.13, 0.65]). This result suggests that pictures were better remembered when they followed the choice of a machine that consistently generated prediction errors (PEs), which may reflect preferential allocation of attention toward outcomes of uncertain choices (Dayan et al., 2000; Pearce and Hall, 1980).
 
@@ -101,7 +101,7 @@ To test whether differences in memory for outcomes of deterministic versus proba
 
 Finally, we tested for effects of agency — whether an image coincided with the outcome of a free or forced choice — on memory performance. We did not find a significant main effect of agency on memory, and agency did not significantly modulate the AI × PE magnitude × PE valence interaction effect (see Appendix 1 for full results; Appendix 1—figure 13).
 
-## Self-reported risk taking
+#### Self-reported risk taking
 
 One possible explanation for our unexpected u-shaped relationship between age and risk preferences in our choice task is that the adolescents in our sample might have been atypically risk averse. To investigate this possibility, we examined the relation between age and self-reported risk taking to the Domain-Specific Risk Taking (DOSPERT) scale (Blais and Weber, 2006). A linear regression model including quadratic age was a better fit than the model including linear age alone (F(1,59) = 9.55, p=0.003). Specifically, consistent with prior reports of increased self-reported risk taking in adolescents, we found a significant inverted u-shaped quadratic age pattern (Figure 5, b = –0.42, 95% CI [-0.69, –0.15], t(59) = –3.09, p=0.003, f2 = 0.16, 95% CI [0.02, 0.44]). There was not a significant linear age pattern in self-reported risk taking (b = 0.15, 95% CI [–0.09, 0.39], t(59) = 1.27, p=0.208, f2 = 0.04, 95% CI [0, 0.20]). A two-lines regression analysis indicated that risk taking increased until age 15.29 (b = 0.23, z = 2.20, p=0.028) and decreased thereafter (b = –0.09, z = –2.03, p=0.042). Despite the fact that both choices in our task and self-report risk taking exhibited nonlinear age-related changes, there was not a significant correlation between DOSPERT score and risk taking in the task (r = –0.12, 95% CI [–0.36, 0.13], t(60) = –0.95, p=0.347).
 
@@ -109,7 +109,7 @@ One possible explanation for our unexpected u-shaped relationship between age an
 
 **Figure 5.:** Self-reported risk taking on the Domain-Specific Risk Taking (DOSPERT) scale changed nonlinearly with age (linear regression: b = –0.42, 95% CI [–0.69,–0.15], t(59) = –3.09, p=0.003, f2 = 0.16, 95% CI [0.02, 0.44], N = 62). Shaded region represents 95% CIs for estimates.
 
-## Experiment 2
+### Experiment 2
 
 Next, we assessed the generalizability of the observed effect of valence biases in learning on memory by conducting a reanalysis of a previously published independent dataset from a study that used a different experimental task in an adult sample (Rouhani et al., 2018). Notably, results from this study suggested that unsigned PEs (i.e., PEs of greater magnitude, whether negative or positive) facilitated subsequent memory, but no signed effect was observed. Here, we examined whether signed valence-specific effects might be evident when we account for individual differences in valence biases in learning.
 
@@ -147,13 +147,13 @@ Adolescence is conventionally viewed as a period of heightened reward-seeking, b
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Participants
+#### Participants
 
 Sixty-two participants ages 8–27 years were included in our final sample (mean age = 17.63, SD = 5.76, 32 females). Nine additional participants completed the study but were removed from the sample due to poor task performance (described further below). This sample size is consistent with prior studies that used age as a continuous predictor and have found significant age differences in decision-making (e.g., Decker et al., 2015; Potter et al., 2017; van den Bos et al., 2015). All participants had no previous diagnosis of a learning disorder, no current psychiatric medication use, and normal color vision according to self- or parent report.
 
-## Risk-sensitive RL task
+#### Risk-sensitive RL task
 
 In the present study, participants completed a risk-sensitive RL task adapted from Niv et al., 2012 in which participants learned, through trial and error, the values and probabilities associated with five ‘point machines’ (Figure 1A). Three machines were deterministic and gave their respective payoffs 100% of the time (Figure 1B). Two machines were probabilistic (or risky) and gave their respective payoffs 50% of the time and zero points the other 50% (Figure 1B). Importantly, EV could be deconfounded from risk as there were two pairs of machines in which both probabilistic and deterministic options yielded the same EV (i.e., 100% 20 points and 50/50% 0/40 points; 100% 40 points and 50/50% 0/80 points). We presented each choice outcome on a ‘ticket’ that also displayed a trial-unique picture of an object. A subsequent memory test allowed us to explore the interaction between choice outcomes and memory encoding across age. The task was programmed in MATLAB Version R2017a (The MathWorks, Inc, Natick, MA).
 
@@ -165,59 +165,225 @@ After completing the choice task, participants were probed for their explicit me
 
 Next, participants completed a surprise memory test, in which all 183 images presented during the task and 183 novel images were presented in random order (Figure 1C). Images corresponding to the few choice trials that were missed due to slow responses were recategorized as novel. Ratings were on a scale from 1 (definitely saw during the task) to 4 (definitely did not see during the task), and participants had unlimited time to indicate their responses. All images were obtained from the Bank of Standardized Stimuli (BOSS; Brodeur et al., 2010; Brodeur et al., 2014) and were selected to be familiar and nameable for the age range in our sample. For each participant, half of the set of photos was randomly chosen to be presented during the task and half were assigned to be novel images for the memory test.
 
-## Self-reported risk taking
+#### Self-reported risk taking
 
 To assess the predictive validity of our findings for real-world risk taking, participants completed the DOSPERT scale (Blais and Weber, 2006). The DOSPERT indexes participants’ likelihood of taking risks in five domains: monetary, health and safety, recreational, ethical, and social. We computed the mean self-reported likelihood of risk taking across all behaviors on the DOSPERT as a measure of real-world risk taking. Age-appropriate variants of the DOSPERT were administered to children (8–12 years old), adolescents (13–17 years old), and adults (ages 18 and older) (Barkley-Levenson et al., 2013; Somerville et al., 2017; van Duijvenvoorde et al., 2016).
 
-## Reasoning assessment
+#### Reasoning assessment
 
 We administered the Vocabulary and Matrix Reasoning sections of the Wechsler Abbreviated Scale of Intelligence (WASI; Wechsler, 2011), which index verbal cognition and abstract reasoning, to ensure that these measures were not confounded with age within our sample. WASI scores did not vary by linear or quadratic age (ps>.2). Thus, we did not include this measure in subsequent analyses.
 
-## Procedure
+#### Procedure
 
 Participants first provided informed consent (adults) or assent and parental consent (children and adolescents). Next, participants completed the risk-sensitive RL task and memory test, followed by the DOSPERT questionnaire and the WASI. Participants were paid $15 for completing the experiment, which lasted approximately 1 hr. Although participants were told that an additional bonus payment would be based on the number of points they earned in the risk-sensitive RL task, all participants received the same $5 bonus payment. The study protocol was approved by the New York University Institutional Review Board.
 
-## Analyses
+#### Analyses
 
-## Reinforcement-learning models
+##### Reinforcement-learning models
 
 Four RL models were fit to participants’ choices in the task.
 
-## TD model
+###### TD model
 
 We fit a TD learning model (Sutton and Barto, 1998), in which the estimated value of choosing a given machine (QM) is updated on each trial (t) according to the following function: QM(t + 1) = QM(t) + α * δ(t), in which δ(t) = r(t) – QM(t) is the prediction error, representing how much better or worse the reward outcome (r) is than the estimated value of that machine. δ is scaled by a learning rate α, a free parameter that is estimated separately for each participant.
 
-## RSTD model
+###### RSTD model
 
 The RSTD model is similar to the TD model but includes two separate learning rates for prediction errors of different signs. Specifically, when δ is positive, the value of the chosen machine is updated according to the equation: QM(t + 1) = QM(t) + α+ * δ(t). When δ is negative, the chosen machine’s value is updated as QM(t + 1) = QM(t) + α- * δ(t). Including two learning rates allows the model to be sensitive to the risk preferences revealed by participants’ choices across the probabilistic and deterministic (‘risky versus safe’) choice pairs in the paradigm (Niv et al., 2012). For a given individual, if α+ is greater than α-, Q-values of the machines with variable outcomes will be greater than those of deterministic machines with equal EV, and the individual will be more likely to make risk-seeking choices. Conversely if α- is greater than α+, the Q-values of the risky machines will be lower than their EVs, making risk-averse choices more likely. To index the relative difference between α+ and α-, we computed an AI as AI = (α+ - α-)/(α+ + α-), where an AI > 0 reflects greater weighting of positive relative to negative prediction errors, whereas an AI < 0 reflects greater relative weighting of negative prediction errors (Niv et al., 2012).
 
-## FourLR model
+###### FourLR model
 
 In our task, participants made both free and forced choices. Past research suggests that valence biases in learning may differ as a function of choice agency (Chambon et al., 2020; Cockburn et al., 2014). To test this possibility, we assessed the fit of a FourLR model, which was the same as the RSTD model except that it included four learning rates instead of two, with separate α+ and α- parameters for free and forced choices.
 
-## Utility model
+###### Utility model
 
 As a further point of comparison with the TD, RSTD, and FourLR models, we estimated a utility model that employed the same value update equation as the TD model, QM(t + 1) = QM(t) + α * δ(t). However, δ was defined according to the equation δ(t) = r(t)ρ – QM(t), in which the reward outcome is exponentially transformed by ρ, which represents the curvature of each individual’s subjective utility function (Pratt, 1964). ρ < 1 corresponds to a concave utility function, which yields risk aversion as a result of diminishing sensitivity to returns (Tversky and Kahneman, 1992). In contrast, ρ > 1 corresponds to a convex utility function that yields risk-seeking behavior.
 
 In all models, Q-values were converted to probabilities of choosing each option in a trial using the softmax rule, PM1 = eβ*Q(t)M1/(eβ*Q(t)M1+ eβ*Q(t)M2), where PM1 is the predicted probability of choosing Machine 1, with the inverse temperature parameter β capturing how sensitive an individual’s choices are to the difference in value between the two machines. Notably, outcomes of the forced trials were included in the value updating step for each model. However, forced trials were not included in the modeling stage in which learned values are passed through the softmax function to determine choice probabilities as there was only a single-choice option on these trials.
 
-## Model fitting
+### Model fitting
 
 Prior to model fitting, outcome values were rescaled between 0 and 1, with 1 representing the maximum possible point outcome (80). We fit all RL models for each participant via maximum a posteriori estimation in MATLAB using the optimization function fminunc. Q-values were initialized at 0.5 (equivalent to 40 points). Bounds and priors for each of the parameters are listed in Table 1. There was no linear or quadratic relationship between BIC and age in any of the models (all ps>0.1).
 
-## Parameter and model recovery
+**Table 1.**
+ Bounds, priors, and recoverability for parameters in each model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Parameter</th>
+      <th>Bounds</th>
+      <th>Prior</th>
+      <th>Recoverability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TD</td>
+      <td>α</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β</td>
+      <td>0.000001, 30</td>
+      <td>Gamma(2,3)</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>RSTD</td>
+      <td>α+</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>α-</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β</td>
+      <td>0.000001, 30</td>
+      <td>Gamma(2,3)</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>FourLR</td>
+      <td>α+ free</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>α- free</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>α+ forced</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>α- forced</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β</td>
+      <td>0.000001, 30</td>
+      <td>Gamma(2,3)</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Utility</td>
+      <td>α</td>
+      <td>0,1</td>
+      <td>Beta(2,2)</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>β</td>
+      <td>0.000001, 30</td>
+      <td>Gamma(2,3)</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ρ</td>
+      <td>0, 2.5</td>
+      <td>Gamma(1.5,1.5)</td>
+      <td>0.88</td>
+    </tr>
+  </tbody>
+</table>
+
+_Priors for α and β were based on those used in Niv et al., 2012.TD, temporal difference; RSTD, risk-sensitive temporal difference; LR, learning rate._
+
+### Parameter and model recovery
 
 For each model, we simulated data for 10,000 subjects with values of each parameter drawn randomly and uniformly from the range of possible parameter values. Next, we fit the simulated data using the same model. We tested for recoverability of model parameters by correlating the parameter that generated the data with the parameters produced through model fitting. These correlations are displayed in Table 1. All parameters for TD, RSTD, FourLR, and Utility models showed high recoverability.
 
 To examine the identifiability of the TD, RSTD, FourLR, and Utility models, we generated simulated data using each model and fit all four of the models, including those that were not used to generate the data to each simulated dataset (e.g., we fit all the TD-generated subjects with the TD model as well as the RSTD, FourLR, and Utility models). We then used BIC, a quality-of-fit metric that penalizes models for additional parameters, to assess whether the generating model was also the best-fitting model for each subject. Recoverability was reasonable for all models except the least-parsimonious FourLR model (Table 2). Aside from the subjects generated by the FourLR model, for all pairwise comparisons between generating and comparison models, the majority of simulated subjects were best fit by the generating model. The RSTD-simulated subjects who were better fit by the TD model were those who had less extreme AI values (Appendix 1—figure 7), and thus could be more parsimoniously captured by a model with a single learning rate. We also found that RSTD model parameters were reasonably well recovered across the range of AI observed in our empirical sample (see Appendix 1—figure 8).
 
+**Table 2.**
+ Model recovery.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Comparison model</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>TD</th>
+      <th>RSTD</th>
+      <th>FourLR</th>
+      <th>Utility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Generating model</td>
+      <td>TD</td>
+      <td>-</td>
+      <td>0.98</td>
+      <td>1.00</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>RSTD</td>
+      <td>0.57</td>
+      <td>-</td>
+      <td>0.99</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>FourLR</td>
+      <td>0.50</td>
+      <td>0.31</td>
+      <td>-</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Utility</td>
+      <td>0.58</td>
+      <td>0.76</td>
+      <td>0.99</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_TD, temporal difference; RSTD, risk-sensitive temporal difference; LR, learning rate._
+
 Values in this table indicate the proportion of participants simulated by the generating model who are best fit by the generating model in a pairwise comparison with each alternative model.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed in R version 4.0.2 (R Development Core Team, 2016) with a two-tailed alpha threshold of p<0.05. For tests of trial-wise effects, we ran linear mixed-effects regression (lmer) or generalized linear mixed-effects regression (glmer) models (lme4 package; Bates et al., 2015), which included participant as a random effect, and estimated random intercepts and slopes for each fixed effect. We used the ‘bobyqa’ optimizer with 1 million iterations. Trial number was included in lmer and glmer regression models. All independent variables were z-scored. We began with this maximal model, which converged for all analyses except one, for which we systematically reduced the complexity of the model until it converged (Barr et al., 2013; see Appendix 1). In RT analyses, we removed responses that were less than 0.2 s (n = 22, out of 11,309 total trials, with a maximum of 9 for one participant) and log-transformed RT prior to running regressions. To test for linear effects of age, we included z-scored age in regression models. Potential quadratic age effects were assessed by adding a squared z-scored age term in a regression model. We used the anova function to arbitrate between these regression models and report only linear age effects if the addition of quadratic age did not significantly improve model fit. To probe whether a quadratic age effect qualifies as u-shaped, we used the two-lines approach (Simonsohn, 2018), which algorithmically determines a break point in the distribution and tests whether regression lines on either side of the break point have significant slopes with opposite signs.
 
-## Reporting
+### Reporting
 
 For one-way and paired t-tests, we report t-statistics, p-values, and Cohen’s d with 95% confidence intervals (CIs; using the function cohens_d in the rstatix package [one-way t-test] or the effectsize package [paired t-test]).
 
@@ -225,7 +391,7 @@ For linear regressions, we report unstandardized regression coefficients, t-stat
 
 For multilevel models, we report test statistics (t for linear mixed-effects models and z for generalized linear mixed-effects models), p-values, and unstandardized effect sizes with 95% CIs (unstandardized coefficients for linear mixed-effects models, and odds ratios for generalized linear mixed-effects models).
 
-## Experiment 2
+### Experiment 2
 
 Next, we looked for evidence that valence biases in learning influence memory in a previously published independent dataset (Rouhani et al., 2018). Notably, results from this study suggested that unsigned PEs (i.e., PEs of greater magnitude whether negative or positive) facilitate subsequent memory, but no signed effect was observed. Here, we examined whether signed valence-specific effects might be evident when we account for individual differences in learning.
 

@@ -51,19 +51,230 @@ To address these important questions regarding the interindividual variability i
 
 ## Results
 
-## Descriptive statistics of the groups identified by hierarchical clustering
+### Descriptive statistics of the groups identified by hierarchical clustering
 
 The agglomerative hierarchical procedure resulted in the identification of 3 clusters; three clusters were found to be optimal by 14 R statistical indices (from over 30 that were used to assess the quality of the classification). Hereafter, we will refer to these clusters as groups varying in their ‘language organization’. These three clusters were labeled according to their task-induced mean asymmetries: a first cluster including 125 participants with strong leftward asymmetries in the three language tasks was named strong typical (TYP_STRONG; see Table 1 and Figure 1), a second cluster of 132 participants exhibiting moderate leftward asymmetry was labeled mild typical (TYP_MILD), while the third cluster included the remaining 30 participants showing rightward mean asymmetry in the three tasks was labeled atypical (ATYP). Whenever needed, the TYP_STRONG and TYP_MILD groups were pooled and referred to as the TYP group.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig1-v2.jpg)
 
-**Figure 1.:** The first row depicts the location of the 18 hROIs constituting the SENT_CORE network (left) and the 3 hROIs constituting SENT_HUBS (right). Atypicals (ATYP), typicals with moderate asymmetries (TYP_MILD) and typicals with strong asymmetries (TYP_STRONG) correspond to the three groups resulting from multitask and multimodal hierarchical agglomerative clustering. (PRODSENT-WORD: red, LISNSENT-WORD: green and READSENT-WORD: blue).Figure 1—source data 1.Figure 1.Figure 1—source data 2.Figure 1 data source file.
+**Figure 1.:** The first row depicts the location of the 18 hROIs constituting the SENT_CORE network (left) and the 3 hROIs constituting SENT_HUBS (right). Atypicals (ATYP), typicals with moderate asymmetries (TYP_MILD) and typicals with strong asymmetries (TYP_STRONG) correspond to the three groups resulting from multitask and multimodal hierarchical agglomerative clustering. (PRODSENT-WORD: red, LISNSENT-WORD: green and READSENT-WORD: blue).
 
-## Task performance
+**Table 1.**
+ Characteristics of the three groups after hierarchical clustering on the variables that served at the classification and also on absolute values of task-induced asymmetries.SENT_CORE network asymmetry (left minus right) was calculated as the volumetric mean of the 18 hROIs in each contrast while hub asymmetry was calculated as the volumetric mean of the 3 hROIs classified as hubs in 145 right-handers (RH)(inferior frontal gyrus: F3t, and two regions of the superior temporal sulcus: STS3 and STS4). mIHHC corresponds to the averaged resting-state Inter Hemispheric Homotopic Correlation across the 18hROIs composing SENT_CORE (Rs_mIHHC). Resting-state Degree Connectivity (Rs_DC) was calculated in the SENT_CORE network in each hemisphere. Mean Rs_DC corresponds to the mean of the left and right SENT_CORE Rs_DC. The standard deviations are between brackets.Table 1—source data 1.Data source for Table 1.Table 1—source data 2.Detailed information concerning the Table 1 data source file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TYP_STRONG N = 125</th>
+      <th>TYP_MILD N = 132</th>
+      <th>ATYP N = 30</th>
+    </tr>
+    <tr>
+      <th>Task-induced variables</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SENT_CORE asymmetry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRODSENT-WORD</td>
+      <td>0.557 (0.17)</td>
+      <td>0.296 (0.12)</td>
+      <td>−0.114 (0.19)</td>
+    </tr>
+    <tr>
+      <td>LISNSENT-WORD</td>
+      <td>0.299 (0.13)</td>
+      <td>0.167 (0.09)</td>
+      <td>−0.155 (0.17)</td>
+    </tr>
+    <tr>
+      <td>READSENT-WORD</td>
+      <td>0.351 (0.18)</td>
+      <td>0.217 (0.14)</td>
+      <td>−0.177 (0.15)</td>
+    </tr>
+    <tr>
+      <td>SENT_HUBS asymmetry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRODSENT-WORD</td>
+      <td>0.80 (0.23)</td>
+      <td>0.391 (0.18)</td>
+      <td>−0.119 (0.30)</td>
+    </tr>
+    <tr>
+      <td>LISNSENT-WORD</td>
+      <td>0.42 (0.19)</td>
+      <td>0.210 (0.15)</td>
+      <td>−0.291 (0.28)</td>
+    </tr>
+    <tr>
+      <td>READSENT-WORD</td>
+      <td>0.51 (0.29)</td>
+      <td>0.287 (0.23)</td>
+      <td>−0.358 (0.30)</td>
+    </tr>
+    <tr>
+      <td>SENT_CORE absolute asymmetry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRODSENT-WORD</td>
+      <td>0.557 (0.17)</td>
+      <td>0.295 (0.12)</td>
+      <td>0.190 (0.12)</td>
+    </tr>
+    <tr>
+      <td>LISNSENT-WORD</td>
+      <td>0.300 (0.12)</td>
+      <td>0.168 (0.08)</td>
+      <td>0.169 (0.12)</td>
+    </tr>
+    <tr>
+      <td>READSENT-WORD</td>
+      <td>0.351 (0.18)</td>
+      <td>0.221 (0.13)</td>
+      <td>0.189 (0.13)</td>
+    </tr>
+    <tr>
+      <td>SENT_HUBS absolute asymmetry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PRODSENT-WORD</td>
+      <td>0.803 (0.23)</td>
+      <td>0.393 (0.17)</td>
+      <td>0.250 (0.20)</td>
+    </tr>
+    <tr>
+      <td>LISNSENT-WORD</td>
+      <td>0.430 (0.19)</td>
+      <td>0.214 (0.14)</td>
+      <td>0.318 (0.25)</td>
+    </tr>
+    <tr>
+      <td>READSENT-WORD</td>
+      <td>0.515 (0.30)</td>
+      <td>0.307 (0.20)</td>
+      <td>0.370 (0.28)</td>
+    </tr>
+    <tr>
+      <td>Resting-state variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rs_mIHHC</td>
+      <td>0.571 (0.07)</td>
+      <td>0.578 (0.07)</td>
+      <td>0.610 (0.06)</td>
+    </tr>
+    <tr>
+      <td>mean Rs_DC</td>
+      <td>8.670 (1.42)</td>
+      <td>7.949 (1.24)</td>
+      <td>9.460 (1.60)</td>
+    </tr>
+    <tr>
+      <td>Rs_DC asymmetry</td>
+      <td>0.500 (0.77)</td>
+      <td>0.478 (0.64)</td>
+      <td>−0167 (0.78)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Task performance
 
 Response time in each of the three tasks did not depend on ‘language organization’ (Table 2), when age, handedness and sex were taken into account (all p>0.49). The mean number of words generated per sentence was 12.4 (SD = 2.0), was also independent of ‘language organization’ classification, when age, handedness and sex were taken into account (p=0.97). Note that the average number of recalled sentences was 9.42 (SD = 0.96) for a maximum of 10.
 
-## Demography and handedness
+**Table 2.**
+ Measures related to task execution in the three groups varying in hemispheric lateralization.Mean (SD) of response times and self-reports of task difficulty rated on a 1 to 5 scale are shown for each fMRI run (Sentence production: PROD, sentence listening: LISN, sentence reading: READ). In addition, sample mean (SD) of the average number of words per sentence recalled during the debriefing of the PROD run is shown.Table 2—source data 1.Data source for Table 2.Table 2—source data 2.Detailed information concerning the Table 2 data source file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TYP_STRONG N = 125</th>
+      <th>TYP_MILD N = 132</th>
+      <th>ATYP N = 30</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Task difficulty</td>
+    </tr>
+    <tr>
+      <td>LISN</td>
+      <td>1.12 (0.40)</td>
+      <td>1.14 (0.45)</td>
+      <td>1.25 (0.80)</td>
+    </tr>
+    <tr>
+      <td>READ</td>
+      <td>1.17 (0.40)</td>
+      <td>1.23 (0.55)</td>
+      <td>1.20 (0.43)</td>
+    </tr>
+    <tr>
+      <td>PROD</td>
+      <td>2.74 (1.07)</td>
+      <td>2.69 (1.06)</td>
+      <td>2.88 (1.10)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Response time (ms)</td>
+    </tr>
+    <tr>
+      <td>LISN</td>
+      <td>388.8 (134)</td>
+      <td>386.3 (126)</td>
+      <td>396.9 (96)</td>
+    </tr>
+    <tr>
+      <td>READ</td>
+      <td>3733.3 (579)</td>
+      <td>3731.8 (560)</td>
+      <td>3755.8 (552)</td>
+    </tr>
+    <tr>
+      <td>PROD</td>
+      <td>5600.0 (850)</td>
+      <td>5631.2 (968)</td>
+      <td>5645.5 (1095)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Number of words per sentence</td>
+    </tr>
+    <tr>
+      <td>PROD</td>
+      <td>12.36 (2.03)</td>
+      <td>12.37 (1.87)</td>
+      <td>12.36 (2.55)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Demography and handedness
 
 A significant difference was observed in the proportion of left-handers among the 3 ‘language organization’ groups (p=0.0007) due to a larger proportion of left-handers in the ATYP (83.3%) than in either the TYP_MILD (49.3%) or TYP_STRONG (46.4%) groups. The differences in the proportion of left-handers were significant between the ATYP and TYP_MILD groups (p=0.0007) and ATYP and TYP_STRONG groups (p=0.0001), while no difference was observed between the TYP_MILD and TYP_STRONG groups (p=0.48).
 
@@ -71,7 +282,7 @@ The proportion of women differed among the three groups (p=0.006, chi-square tes
 
 Note that there were no significant differences in age or cultural levels between the three groups (p>0.29 in both cases).
 
-## Profile of task-induced lateralization according to ‘language organization’
+### Profile of task-induced lateralization according to ‘language organization’
 
 A significant ‘task’ by ‘language organization’ interaction on the absolute values of task-induced asymmetry was found for both the SENT_CORE and the SENT_HUBS set of regions of interest (ROIs) (MANOVA analyses, p<10−4 for both cases; see Figure 1 and Table 1). Indeed, in contrast to the two other groups, the ATYP group did not show any difference in asymmetry across the language tasks in either SENT_CORE (all p>0.99) or SENT_HUBS (p>0.83). In contrast, there were significant differences between tasks for both the TYP_STRONG or TYP_MILD groups in both SENT_CORE and SENT_HUBS, with a stronger asymmetry during the PRODSENT-WORD than during the READSENT-WORD task (all p<0.001), with the asymmetry during the latter being larger than that during the LISNSENT-WORD task (all p<0.017). Note that the ‘task’ main effect was significant for both SENT_CORE and SENT_HUBS (p<10−4).
 
@@ -79,7 +290,7 @@ There was a significant ‘language organization’ by ‘handedness’ interact
 
 There was no main effect of ‘handedness’ on the absolute values of asymmetries with SENT_HUBS (p=0.94), but there was a significant effect with SENT_CORE (p=0.0023). Finally, there was no significant ‘language organization’ by ‘handedness’ by ‘task’ triple interaction (SENT_CORE: p=0.29; SENT_HUBS: p=0.57).
 
-## Intrinsic connectivity
+### Intrinsic connectivity
 
 In contrast to previous findings, there was no ‘handedness’ main effect or ‘handedness’ by ‘language organization’ interaction on any of the SENT_CORE intrahemispheric and interhemispheric intrinsic connectivity variables (p>0.52).
 
@@ -93,11 +304,11 @@ Inspection of the right and left Rs_DC values in the three groups showed two dif
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig2-v2.jpg)
 
-**Figure 2.:** Right (green) and left (red) values of the mean resting-state degree connectivity (Rs_DC) of SENT_CORE in the three groups. Significant leftward DC asymmetry is only present in TYP groups (Tukey’s HSD test p<10−4, N TYP_MILD = 132, N TYP_STRONG = 125) and right Rs_DC is higher in the ATYP group (N = 30) than in the TYP_STRONG and TYP_MILD groups (p<10−4, Tukey’s HSD test). Error bars correspond to the 95% confidence intervals.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2 data source file.
+**Figure 2.:** Right (green) and left (red) values of the mean resting-state degree connectivity (Rs_DC) of SENT_CORE in the three groups. Significant leftward DC asymmetry is only present in TYP groups (Tukey’s HSD test p<10−4, N TYP_MILD = 132, N TYP_STRONG = 125) and right Rs_DC is higher in the ATYP group (N = 30) than in the TYP_STRONG and TYP_MILD groups (p<10−4, Tukey’s HSD test). Error bars correspond to the 95% confidence intervals.
 
-## Dissociations in asymmetry direction across tasks
+### Dissociations in asymmetry direction across tasks
 
-## Descriptive statistics
+#### Descriptive statistics
 
 Twenty-three individuals exhibited dissociation in their asymmetries induced by the three language tasks. These 23 individuals will be referred to as ‘CROSSED’ and the others as ‘CONGRUENT’. The occurrence of CROSSED individuals within each lateralization group was higher in the ATYP group (N = 12, 40%) than in either the TYP_MILD (N = 9, 6.82%, p<10−4) or TYP_STRONG (N = 2, 1.6% p<10−4) groups, while the difference in the occurrence of dissociation between the TYP_MILD and TYP_STRONG groups failed to reach significance (p=0.057).
 
@@ -107,13 +318,13 @@ Dissociations in the CROSSED_ATYP individuals mostly corresponded to leftward as
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig3-v2.jpg)
 
-**Figure 3.:** Individual values of left minus right blood oxygen level-dependent (BOLD) asymmetries measured during PRODSENT-WORD (red), LISNSENT-WORD (green) and READSENT-WORD (blue) in SENT_CORE regions (top) and in SENT_HUBS (bottom). The red dotted line corresponds to the arbitrary threshold of 0.05 in asymmetry strength that was applied to define a rightward asymmetry.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3 data source file.
+**Figure 3.:** Individual values of left minus right blood oxygen level-dependent (BOLD) asymmetries measured during PRODSENT-WORD (red), LISNSENT-WORD (green) and READSENT-WORD (blue) in SENT_CORE regions (top) and in SENT_HUBS (bottom). The red dotted line corresponds to the arbitrary threshold of 0.05 in asymmetry strength that was applied to define a rightward asymmetry.
 
 The picture was very different for dissociations in TYP_MILD individuals who were characterized by small rightward asymmetries mainly observed with READSENT-WORD (only one participant had a strong negative asymmetry with READSENT-WORD in SENT_HUBS). Finally, the two dissociations observed in the TYP_STRONG group were very weak negative asymmetries during LISNSENT-WORD regardless of the considered set of ROIs (see Figure 3).
 
 There was a main effect of ‘dissociation’ on the task-induced strength of asymmetry restricting the analysis to the ATYP and TYP_MILD groups, where DISSOCIATED had lower asymmetry strength than CONGRUENT in both SENT_CORE and SENT_HUBS (both p<0.013), without any interaction with”task’ or”language organization’ (all p>0.20).
 
-## Dissociation and resting-state organization
+#### Dissociation and resting-state organization
 
 Considering the TYP individuals as a single group because they did not show any difference in Rs_DC (i.e. the TYP_MILD and TYP_STRONG groups were merged), there was a significant ‘language organization’ by ‘dissociation’ interaction on the mean Rs_DC value (p=0.049) due, in particular, to significantly higher mean Rs_DC in the CROSSED_ATYP individuals than in the CROSSED and CONGRUENT TYP individuals (p<0.0027, for all post hoc tests corrected for multiple comparisons). The CONGRUENT_ATYP individuals did not differ from the CROSSED or CONGRUENT TYP individuals (all p>0.15), and there was no difference between the CROSSED_TYP and CONGRUENT_TYP individuals (p=0.92). Note that there was no ‘dissociation’ main effect (all p>0.18) and no ‘language organization’ by ‘dissociation’ by ‘side’ interaction (p interaction = 0.60).
 
@@ -121,41 +332,212 @@ In contrast, there was a significant ‘language organization’ by ‘dissociat
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig4-v2.jpg)
 
-**Figure 4.:** The estimated mean interhemispheric homotopic correlation expressed as the Fisher z-transformation of Rs_mIHHC is higher in the CROSSED atypicals group (N = 12) than in the TYP group (merging TYP_MILD and TYP_STRONG, N CROSSED = 11, N CONGRUENT = 246), regarding of whether they are CONGRUENT or CROSSED (both p<0.016, Tukey’s HSD test).Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4 data source file.
+**Figure 4.:** The estimated mean interhemispheric homotopic correlation expressed as the Fisher z-transformation of Rs_mIHHC is higher in the CROSSED atypicals group (N = 12) than in the TYP group (merging TYP_MILD and TYP_STRONG, N CROSSED = 11, N CONGRUENT = 246), regarding of whether they are CONGRUENT or CROSSED (both p<0.016, Tukey’s HSD test).
 
-## Hemispheric anatomical asymmetries and corpus callosum volume
+#### Hemispheric anatomical asymmetries and corpus callosum volume
 
 The tissue compartment values for the four groups (TYP or ATYP by CROSSED or CONGRUENT) are provided in Table 3. Repeated measures MANCOVA of the GMasym and WMasym residuals (after adjusting these variables for sex, handedness, age, and total intracranial volume) showed a significant main effect of ‘language organization’ (p=0.02). Post hoc t-tests showed that both GMasym and WMasym were smaller in the ATYP group than in the TYP group (p=0.03). There was no effect of ‘dissociation’ (p=0.99) and no significant ‘language organization’ by ‘dissociation’ interaction (p=0.36). There was no interaction between ‘tissue compartment’ (gray or white matter) and ‘language organization’ (p=0.92) or between ‘tissue compartment’ and ‘dissociation’ (p=0.26), and there was no ‘tissue compartment’ by ‘language organization’ by ‘dissociation’ triple interaction (p=0.15).
 
+**Table 3.**
+ Gray and white matter hemispheric volumes and their left minus right asymmetry (mean and (SD), in cc) as well as midsagittal corpus callosum volume (mean and (SD), in cc), in subgroups of individuals according to their multitask multimodal hierarchical classification and the absence/presence of dissociated task-related functional asymmetries.TYP: participants classified with multitask multimodal hierarchical classification as either TYP_STRONG or TYP_MILD, that is showing TYP left functional lateralization; ATYP: participants classified with multitask multimodal hierarchical classification as ATYPICAL, that is showing atypical right functional lateralization. CROSSED: participants with at least one dissociation of functional lateralization among the three language tasks; CONGRUENT: participants with no dissociation.Table 3—source data 1.Data source for Table 3.Table 3—source data 2.Detailed information concerning the Table 3 data source file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">TYP</th>
+      <th colspan="2">ATYP</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Congruent N = 246</th>
+      <th>Crossed N = 11</th>
+      <th>Congruent N = 18</th>
+      <th>Crossed N = 12</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Gray Matter</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left</td>
+      <td>327.00 (32)</td>
+      <td>337.59 (47)</td>
+      <td>337.42 (35)</td>
+      <td>317.30 (16)</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>315.64 (32)</td>
+      <td>325.72 (48)</td>
+      <td>327.77 (33)</td>
+      <td>306.48 (15)</td>
+    </tr>
+    <tr>
+      <td>Asymmetries</td>
+      <td>11.35 (4.00)</td>
+      <td>11.87 (4.50)</td>
+      <td>9.65 (5.03)</td>
+      <td>10.82 (3.82)</td>
+    </tr>
+    <tr>
+      <td colspan="4">White Matter</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left</td>
+      <td>216.67 (26)</td>
+      <td>221.92 (36)</td>
+      <td>222.43 (26)</td>
+      <td>208.61 (15)</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>213.38 (25)</td>
+      <td>217.82 (35)</td>
+      <td>220.22 (25)</td>
+      <td>206.38 (14)</td>
+    </tr>
+    <tr>
+      <td>Asymmetries</td>
+      <td>3.33 (2.19)</td>
+      <td>4.11 (1.74)</td>
+      <td>2.22 (2.41)</td>
+      <td>2.23 (2.03)</td>
+    </tr>
+    <tr>
+      <td>Corpus Callosum</td>
+      <td>5.31 (0.85)</td>
+      <td>5.21 (0.67)</td>
+      <td>5.45 (0.90)</td>
+      <td>5.48 (0.74)</td>
+    </tr>
+  </tbody>
+</table>
+
 ANOVA of the CCvol residuals (after adjustment for the same covariates as for GMasym and WMasym) showed a significant ‘language organization’ by ‘dissociation’ interaction (p=0.049). Post hoc analyses showed that the CROSSED_ATYP individuals had a larger CCvol volume than the CROSSED_TYP individuals (uncorrected post hoc t-test: p=0.037, HSD correction: p=0.16; see Table 1).
 
-## Cognitive abilities
+### Cognitive abilities
 
-## Results of principal component analysis (PCA) of the 11 scores on the verbal and visuospatial tests
+#### Results of principal component analysis (PCA) of the 11 scores on the verbal and visuospatial tests
 
 The average scores for the 11 completed tests are presented for each group in Table 4. PCA applied to the residuals of the scores (after adjustment for age, sex, cultural level and handedness) uncovered four components that explained 49% of the total variance. The first component, which we will refer to as spatial (SPA), aggregated residuals of the mental rotation test, the Corsi block test, the maze test, and the Raven matrices (loadings: 0.62, 0.39, 0.60, and 0.68, respectively). The second component, labeled phonological (PHONO), mainly included the pseudoword and rhyming test residuals (loadings: 0.48 and 0.72, respectively) and, marginally, the vocabulary test (loading: 0.36). The third component was mostly an auditory verbal memory component (MEM), including the auditory verbal word and pseudoword learning test residuals (loadings: 0.77 and 0.49, respectively). The fourth component was a verbal component (VERB) including all the verbal test residuals except those of the two learning tests, with the strongest loading being for the verb fluency test (0.64) and comparable loadings for each of the others (reading span test: 0.34, listening span test: 0.31, and vocabulary test: 0.31).
 
-## Cognitive skills and language organization
+**Table 4.**
+ Mean (SD, in cc) of scores at the different tests of the cognitive battery in the three groups differing in their language organization as defined by a multitask multimodal hierarchical classification.Table 4—source data 1.Data source for Table 4.Table 4—source data 2.Detailed information concerning the Table 4 data source file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TYP_STRONG N = 125</th>
+      <th>TYP_MILD N = 132</th>
+      <th>ATYP N = 30</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Verbal tests</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rey: word learning</td>
+      <td>65.98 (7.57)</td>
+      <td>65.07 (7.51)</td>
+      <td>64.73 (7.57)</td>
+    </tr>
+    <tr>
+      <td>Pseudo-words learning</td>
+      <td>36.52 (10.44)</td>
+      <td>34.64 (11.16)</td>
+      <td>34.47 (9.68)</td>
+    </tr>
+    <tr>
+      <td>Verbal fluency</td>
+      <td>48.19 (9.82)</td>
+      <td>46.55 (10.01)</td>
+      <td>47.63 (8.85)</td>
+    </tr>
+    <tr>
+      <td>Reading span test</td>
+      <td>4.07 (1.08)</td>
+      <td>3.91 (1.11)</td>
+      <td>4.25 (1.11)</td>
+    </tr>
+    <tr>
+      <td>Listening span test</td>
+      <td>4.85 (1.06)</td>
+      <td>4.57 (1.14)</td>
+      <td>4.63 (1.21)</td>
+    </tr>
+    <tr>
+      <td>Vocabulary</td>
+      <td>28.39 (3.78)</td>
+      <td>27.80 (3.74)</td>
+      <td>28.07 (4.42)</td>
+    </tr>
+    <tr>
+      <td>Rhyming</td>
+      <td>68.38 (4.56)</td>
+      <td>67.17 (6.11)</td>
+      <td>65.93 (5.62)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Visuo-spatial tests</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mental Rotation Test</td>
+      <td>11.08 (4.27)</td>
+      <td>10.70 (4.60)</td>
+      <td>10.17 (4.63)</td>
+    </tr>
+    <tr>
+      <td>Corsi block</td>
+      <td>5.99 (1.06)</td>
+      <td>5.72 (1.04)</td>
+      <td>5.73 (0.94)</td>
+    </tr>
+    <tr>
+      <td>Maze</td>
+      <td>6.68 (2.66)</td>
+      <td>6.09 (2.32)</td>
+      <td>4.42 (2.39)</td>
+    </tr>
+    <tr>
+      <td>Raven matrix</td>
+      <td>111.78 (9.70)</td>
+      <td>109.82 (10.47)</td>
+      <td>106.00 (9.48)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Cognitive skills and language organization
 
 Repeated measures MANOVA of the four PCA components (SPA, MEM, PHONO, and VERB) revealed a significant ‘language organization’ by ‘cognitive component’ interaction (p=0.0003; Figure 5), while the ‘language organization’ main effect was not significant (p=0.21).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig5-v2.jpg)
 
-**Figure 5.:** The color code for the components is as follows: SPA: blue, MEM: red, PHONO: light orange, and VERB: green. Error bars represent 95% confidence intervals.Figure 5—source data 1.Figure 5.Figure 5—source data 2.Figure 5 data source file.
+**Figure 5.:** The color code for the components is as follows: SPA: blue, MEM: red, PHONO: light orange, and VERB: green. Error bars represent 95% confidence intervals.
 
 Post hoc analyses showed that the ‘language organization’ by ‘cognitive component’ interaction was due to the difference in variation in SPA and MEM. The SPA scores were significantly higher in the TYP_STRONG group than in the two other groups, but the scores were not significantly different between the latter (TYP_STRONG: 0.29 ± 0.15; TYP_MILD: −0.19 ± 0.14; ATYP: −0.41 ± 0.29; uncorrected p<0.0063; TYP_MILD vs. ATYP, p=0.39). Meanwhile, the MEM scores were significantly lower in the ATYP group than in the two other groups (ATYP: −0.57 ± 0.23; TYP_MILD: 0.19 ± 0.11; TYP_STRONG: 0.05 ± 0.11; p<0.043). In addition, there was no effect of the ‘language organization’ on the other two verbal components, namely, VERB and PHONO (p>0.18 and p>0.13, respectively).
 
 Finally, there was no relationship between dissociations and cognitive performance in either the ATYP or TYP_MILD individuals (p=0.17).
 
-## Comparison of different classifications for language lateralization
+#### Comparison of different classifications for language lateralization
 
 We compared the outcome of the present multitask multimodal hierarchical classification applied to the sample of 287 participants to those previously obtained with two different classifications based on the PRODSENT-WORD contrast only; these classifications included (1) a Gaussian mixture modeling of the HFLI observed for this contrast (Mazoyer et al., 2014) and (2) support vector machine classification of each hemisphere dominance based on the pattern of its voxels in the PRODSENT-WORD contrast maps (Zago et al., 2017). The outcomes of the multitask multimodal hierarchical classification, Gaussian mixture modeling, and support vector machine classifications applied to the same sample of 287 participants are presented in Figure 6.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58722/elife-58722-fig6-v2.jpg)
 
-**Figure 6.:** Mazoyer et al., 2014) and Support Vector Machine (Zago et al., 2017) classification in the right (SVM-R) and left hemisphere (SVM-L).Each line corresponds to a participant with the following color code: red for multitask multimodal hierarchical classification-atypical (ATYP), blue for multitask multimodal hierarchical classification-TYP_MILD, and green for multitask multimodal hierarchical classification-TYP_STRONG. The Gaussian mixture modeling method identified each individual as either strong_atypical (SA), ambilateral (AMB), or typical (TYP). identified the voxel-based pattern of each hemisphere of an individual as either dominant (DOM) or nondominant (NON DOM).Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6 data source file.
+**Figure 6.:** Each line corresponds to a participant with the following color code: red for multitask multimodal hierarchical classification-atypical (ATYP), blue for multitask multimodal hierarchical classification-TYP_MILD, and green for multitask multimodal hierarchical classification-TYP_STRONG. The Gaussian mixture modeling method identified each individual as either strong_atypical (SA), ambilateral (AMB), or typical (TYP). identified the voxel-based pattern of each hemisphere of an individual as either dominant (DOM) or nondominant (NON DOM).
 
-## Multitask multimodal hierarchical classification vs. Gaussian mixture modeling
+#### Multitask multimodal hierarchical classification vs. Gaussian mixture modeling
 
 There was a high concordance of classification of typicals with the two methods (98% of Gaussian mixture modeling typicals were classified as TYP_MILD or TYP_STRONG).
 
@@ -165,17 +547,17 @@ The multitask multimodal hierarchical classification did not individualize any c
 
 Note that whereas all Gaussian mixture modeling-SA were left-handers, 5 among the 135 right-handers (3.7%) were classified as atypical with multitask multimodal hierarchical classification: two among these were dissociated with leftward lateralization during language production in SENT_CORE and the SENT_HUBS, leaving only three right-handers with atyical organization in the three tasks (2%). These three right-handers were not classified as strong-atypical by Gaussian mixture modeling but rather as ambilaterals because their HFLI for PRODSENT-WORD, albeit negative, was above the threshold (−50) used for segregating strong atypicals from ambilaterals.
 
-## Multitask multimodal hierarchical classification vs. support vector machine
+#### Multitask multimodal hierarchical classification vs. support vector machine
 
 Seventeen of the 30 atypical individuals as defined by multitask multimodal hierarchical classification (57%) had a right-hemisphere labeled dominant by support vector machine. Conversely, the multitask multimodal hierarchical classification atypical cluster aggregated 77% of the 22 participants labeled as having a dominant right hemisphere. One should also note that 41% (7 among 17) of these right-hemisphere dominant ATYP individuals also had a left dominant hemisphere (i.e. were codominant), whereas the ATYP cluster aggregated 77% of the 12 participants labeled as having a codominant hemisphere. Notably, the eight ambilaterals as defined by Gaussian mixture modeling left-handers classified as having a dominant right-hemisphere pattern were classified as atypical by multitask multimodal hierarchical classification (Zago et al., 2017).
 
-## Summary of the results
+### Summary of the results
 
 In a sample of 287 healthy adults that included over 50% left-handers, a hierarchical classification based both on language task-induced asymmetries and on resting-state organization within the SENT_CORE network identified three clusters of individuals with different intra- and interhemispheric organization for sentence processing. Two clusters of similar sizes aggregated 257 (90% of the sample) leftward lateralized individuals. The 132 TYP_STRONG individuals (of which 46.4% were left-handers) were highly leftward lateralized for both task-induced asymmetry and intrahemispheric intrinsic connectivity, while showing low interhemispheric connectivity. This pattern of language organization was associated with strong leftward asymmetry of gray and white matter hemispheric volumes and with high visuospatial performance. The 125 TYP_MILD individuals (including 50.7% left-handers) differed from the TYP_STRONG individuals by their moderate leftward task-induced asymmetries, lower left hemisphere degree of connectivity and larger interhemispheric homotopic connectivity. The moderate leftward language organization in the TYP_MILD individuals was more frequent in women and was associated with a larger occurrence of dissociations than in the TYP_STRONG individuals (7% compared to 1.6%). Visuospatial cognitive abilities were lower in the TYP_MILD group than in the TYP_STRONG group. The third (ATYP) cluster of 30 individuals included the highest proportion of left-handers (83%). Mean asymmetry in the ATYP group was rightward lateralized during the three language tasks, with a striking lack of differences in asymmetry strengths across tasks, in contrast to the two groups of typicals. Organization at rest in the ATYP group was marked by bilateral high intrahemispheric connectivity and strong interhemispheric connectivity. Such a low hemispheric specialization pattern was associated with a high occurrence of dissociations among the functional asymmetries in the three language tasks (40%), lower leftward asymmetries of gray and white matter hemispheric volumes, and when dissociated, larger corpus callosum volumes. Finally, the ATYP cluster showed lower verbal memory abilities than the two other clusters. Comparison of the present classification to previous classifications based only on PRODSENT-WORD revealed the importance of the multitask approach conjointly with resting-state measures of Rs_DC in the language network to segregate the atypicals within the individuals with low PRODSENT-WORD hemispheric asymmetries.
 
 ## Discussion
 
-## A multimodal multitask classification provides an enhanced definition of atypical language organization
+### A multimodal multitask classification provides an enhanced definition of atypical language organization
 
 Compared to the high consistency of the classification of individuals having typical language organization, the definition of atypicality for language lateralization based on neuroimaging investigations is complex, and the type of brain organization supporting language functions in atypical individuals is still not comprehensively understood.
 
@@ -189,7 +571,7 @@ The fact that 80% of the ATYP individuals were left-handed is consistent with pr
 
 Finally, the present classification sheds some light on the brain organization for language in individuals as defined by the support vector machine approach (Zago et al., 2017). Actually, the ATYP cluster aggregated 77% of the 22 participants labeled as having a right dominant hemisphere by support vector machine. This is very consistent with the high Rs_DC found for the right SENT_CORE network of the ATYP individuals. One should also note that 41% (7 among 17) of these right-hemisphere dominant ATYP individuals also had a dominant left hemisphere (i.e. were codominant), whereas the ATYP cluster aggregated 77% of the 12 participants labeled as having a codominant hemisphere. This strong association between atypicality and codominance is also consistent with the finding that ATYP individuals were characterized by high bilateral connectivity of their SENT_CORE network, which is likely to reduce the bias toward the dominance of a given hemisphere and attest to a more bilateral organization for language.
 
-## Organization of intrinsic connectivity in atypical individuals: although they show rightward task-induced asymmetries, their left hemisphere is also wired for language
+### Organization of intrinsic connectivity in atypical individuals: although they show rightward task-induced asymmetries, their left hemisphere is also wired for language
 
 In a previous study, we noted that the 10 left-handers with strong rightward HFLI exhibited a pattern of regional asymmetries that was the reverse of the pattern observed in typical individuals (Tzourio-Mazoyer et al., 2016), a result in line with cortical stimulation findings suggesting that individuals shifting their dominant hemisphere actually have a reverse regional organization (Chang et al., 2011; Drane et al., 2012). The present study results, although consistent with this view in terms of task-induced asymmetries, demonstrated that, by contrast, the SENT_CORE network intrinsic connectivity properties of ATYP individuals did not mirror those of individuals with leftward task-induced asymmetries. Although the mean of the group was strongly rightward asymmetrical in the three tasks, the ATYP individuals showed high and symmetrical Rs_DC values, meaning that the SENT_CORE network was highly connected in both hemispheres, and it is remarkable that their left hemisphere Rs_DC value was not different from that of the TYP_STRONG individuals, whereas their right hemisphere Rs_DC value was higher than that of the TYP_STRONG individuals (Figure 7). The ATYP individuals thus had a significantly larger mean Rs_DC value of SENT_CORE in both hemispheres, making them highly connected individuals and suggesting that their left hemisphere could be organized in a way similar to that of the TYP individuals, that is as a potentially dominant hemisphere for language. In addition, the ATYP individuals showed the highest interhemispheric connectivity across SENT_CORE homotopic areas, constituting a highly efficient network for sentence processing that straddled the two hemispheres. The fact that even in individuals shifting their task-induced lateralization to the right, the left hemisphere is wired for high-order language processing leads to the hypothesis that the left hemisphere is the language hemisphere by default.
 
@@ -201,13 +583,13 @@ A trace of how ATYP individuals overcome the left hemisphere default-mode organi
 
 The pattern of ATYP individual network intrinsic organization is thus a networking of both hemispheres profiled for the processing of high-order language, combined with strong anatomical and functional underpinning of interhemispheric interactions as evidenced by higher correlations across homotopic regions of SENT_CORE and larger corpus callosum in the DISSOCIATED_ATYP individuals. The ATYP group also showed a more bilateral anatomical organization with decreased leftward gray and white matter hemispheric asymmetries likely to result in more flexibility in the side hosting the different language tasks and therefore allowing dissociations. In fact, the ATYP group hosted the largest proportion of participants showing dissociations and thus relying on one or the other hemisphere as the dominant hemisphere depending on the language component, which may be related to their stronger interhemispheric connectivity. Such a hypothesis was partly confirmed by the comparison of individuals with dissociations in the three groups that demonstrated that CROSSED ATYP individuals had significantly higher interhemispheric connectivity and more variation in the strength of asymmetries when DISSOCIATED than the two other groups. These strong between-task differences in asymmetry strengths reflect an important shift in hemispheric control, which were particularly seen between PRODSENT-WORD and the two other tasks underpinned by the strong interhemispheric connectivity allowing for cooperation across the bilaterally located task-dependent dominant language networks.
 
-## Two types of leftward organization for language, with an overrepresentation of women but not of left-handers in mildly lateralized typical individuals
+### Two types of leftward organization for language, with an overrepresentation of women but not of left-handers in mildly lateralized typical individuals
 
 The present segregation of leftward lateralized individuals in the two groups is consistent with the two Gaussian components of the PRODSENT-WORD HFLI distribution in typical individuals observed in our previous work (Mazoyer et al., 2014). However, these two Gaussian components showed too much overlap to allow a clear separation of the two groups of typical individuals. One original observation of the present study is thus the evidence of differences in terms of functional connectivity between two groups of typical individuals. Although leftward lateralized and showing the same gradient of asymmetry across the three tasks, the TYP_MILD individuals exhibited significant particularities in their inter- and intrahemispheric—although typical—intrinsic connectivity organization with lower asymmetries of task-induced activations but also lower Rs_DC and higher Rs_mIHHC within SENT_CORE. In other words, their decreased strength in task-induced functional asymmetries was associated with an intra- vs. interhemispheric intrinsic connectivity pattern showing less differentiation across hemispheres together with increased connection between them. Such a pattern of looser hemispheric specialization for language in the TYP_MILD group is consistent with a higher occurrence of dissociations than in the TYP_STRONG group, although those dissociations were of moderate intensity and mainly observed for the reading task.
 
 The proportion of women was larger in the TYP_MILD cluster (58%) than in either of the two other clusters (38% in the TYP_STRONG and 50% in the ATYP clusters), as well as in the whole sample (49%), consistent with previous reports of reduced language lateralization in women (Levy and Reid, 1978; McGlone and Davidson, 1973). Interestingly, gender differences in cluster constitution in the present work were present only in the two groups of typicals but not in the ATYP group. Such a subtle association between sex and language lateralization may explain the inconsistency in the reports of a sex effect in hemispheric specialization for language (Sommer et al., 2004) since, in contrast to handedness, it is not associated with the occurrence of critical changes in language lateralization. Actually, the proportion of left-handers was not increased in the TYP_MILD group (compared to the TYP_STRONG group), confirming that the relationship between handedness and language lateralization is better grounded in the large occurrence of left-handers among rightward lateralized individuals rather than by a decreased lateralization for language in left-handers (Mazoyer et al., 2014).
 
-## Dissociations of lateralization across language components are of different natures in typical and atypical individuals with a particular status for the lateralization of reading
+### Dissociations of lateralization across language components are of different natures in typical and atypical individuals with a particular status for the lateralization of reading
 
 Dissociations were detected with higher sensitivity when considering the SENT_HUBS hROIs rather than the whole set of SENT_CORE area ROIs. This is the reason why we considered a participant dissociated if they had opposed asymmetry across tasks on either one or both variables.
 
@@ -221,31 +603,31 @@ The picture was very different for ATYP individuals, whose predominant dissociat
 
 The more frequent rightward lateralization during LISN than during PROD in the ATYP left-handers was consistent with the observation of Hécaen of a high occurrence of production deficits after left-hemisphere lesions in left-handers, while comprehension deficits were rare (Hécaen et al., 1981). Such a dissociation corresponds to that of action vs. perception as defined by Fuster, 2009, with sentence reading and listening being colateralized. It is remarkable that, when compared to both TYP groups, the ATYP group showed a decrease in (absolute value) asymmetry strength that was larger for production than for the other tasks, leading to an absence of a difference between the asymmetries in production, listening, and reading. Such a diminished asymmetry during production is striking because of the link existing between hand preference and language production, with both functions being on the action side and being localized in close frontal areas. One should have expected left-handers to have stronger rightward asymmetry during language production than during the other tasks in relation to their left-hand dominance. This was not the case, even when considering only the CONGRUENT_ATYP individuals. However, handedness was associated with a stronger mean rightward asymmetry in the left-handed ATYP individuals and stronger leftward asymmetry in the right-handed TYP_STRONG individuals, independent of the task, as if the hemisphere controlling the dominant hand is a slight attractor for language lateralization. This modest effect of handedness is consistent with the observation that patients who had suffered from right plexus brachial injury at birth, therefore disabled in the use of their right hand, present a shifting of their language production asymmetries toward the right hemisphere, although without a complete shift (Auer et al., 2009).
 
-## Are different language organizations associated with differences in cognitive abilities?
+### Are different language organizations associated with differences in cognitive abilities?
 
 Better visuospatial performance was present in the TYP_STRONG individuals, who had the largest between-hemisphere differences and lower interhemispheric connectivity. Such a result suggests that the better spatial abilities reported in RHright-handers in a meta-analysis (Somers et al., 2015b) might have been related to the fact that the TYP_STRONG group hosted the highest proportion of right-handers. The present results suggest that strong leftward lateralization of both language task-induced and resting-state connectivity asymmetries in the core language network is associated with better visuospatial performance, as if less involvement of the right hemisphere in sentence processing was facilitating visuospatial processing. Such an observation can be viewed as an argument in favor of the ‘crowding effect’ theory stating that an optimal split of functions across the two hemispheres facilitates cognitive functioning (review in Vingerhoets, 2019). Of course, further exploration of the relationships between the different aspects of visuospatial cognitive abilities and the strength of both leftward lateralization for language and rightward lateralization for visuospatial functions, as well as their interindividual variability, is needed to confirm this hypothesis.
 
 Decreased verbal memory abilities in the ATYP group suggest that the reorganization occurring on top of the language organization by default in this group is at the cost of suboptimal cognitive functioning, while mild, although leftward, lateralization for language appears to be as efficient for language processing as strong leftward lateralization. Considering that the ATYP group included 15 of the ambilateral individuals defined in Mazoyer et al., 2014, the present observation is consistent with those of Mellet et al reporting lower performance in ambilaterals (Mellet et al., 2014b) concerning both verbal memory and visuospatial abilities.
 
-## Conclusions
+### Conclusions
 
 The joint investigation of language task-induced asymmetries and intrinsic connectivity strength in the sentence-processing supramodal network, showed that individuals with atypical rightward language lateralization do not rely on an organization that simply mirrors that of typical leftward lateralized individuals but rather is associated with a loose hemispheric specialization for language. The fact that these individuals had lower leftward gross macroscopical hemispheric anatomy than typical individuals suggests that such organization was supported, at least in part, by early developmental events resulting from a different trajectory or from the occurrence of plastic changes. Support for the hypothesis of the early establishment of this atypical organization comes from the coinvestigation of the lateralization of production and comprehension with reading. In atypicals, dissociations were observed between sentence production and comprehension (whether read or listened to), two functions known to be tightly coupled and early developing. By contrast, the rare dissociations found in typicals occurred for reading, a later acquired competence. Moreover, atypical organization occurring mainly in left-handers has a cost in terms of language abilities with less efficient verbal memory. Finally, the present results argue for multitask measures of language lateralization for evaluating hemispheric specialization for language in individuals with low lateralization for language production, especially if they are left-handed.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 The study sample was part of the BIL and GIN database that has been fully described elsewhere (Mazoyer et al., 2016). Briefly, 287 healthy participants of the BIL and GIN (150 left-handed, 140 women, 72 left-handed women) who completed the fMRI battery, including several language tasks and a resting-state acquisition, were included in the present work. The sample mean age was 25.8 years (SD = 6.5 years). The mean educational level of the participants was 15.6 years corresponding to almost 5 years education after the French baccalaureate (SD = 2.3 years).
 
 For each participant, we recorded self-reported handedness and manual preference (MP) strength assessed with the Edinburgh inventory (Oldfield, 1971). Left-handed participants had an Edinburgh score of −63.2 (SD = 39.9).
 
-## Participants’ cognitive evaluation
+### Participants’ cognitive evaluation
 
 Participants’ verbal abilities were evaluated with the following battery of seven tests: (1) a supraspan recall test of an 18-word-list (Van der Elst et al., 2005) for verbal memory evaluation; (2) a supraspan recall test of a list of 15 pseudo-words for verbal memory evaluation with minimal semantic associations; (3) a verb generation test for semantic verbal fluency exploration; (4) a synonym finding test for estimating vocabulary extent Binois and Pichot, 1956; (5) a listening span test based on spoken sentences; (6) a reading span test based on read sentences for verbal working memory assessment (Daneman and Carpenter, 1980; Desmette et al., 1995) and (7) a rhyming test on 80 visually presented pairs of pseudo-words for evaluation of graphophonemic conversion ability.
 
 Visuospatial abilities were assessed with the following four tests: (1) The Mental Rotation Test (MRT), which estimates the ability to rotate and spatially manipulate mental images Vandenberg and Kuse, 1978; (2) the Corsi Block test, which evaluates visuospatial short-term memory abilities Della Sala et al., 1999; (3) a home-made 3D maze test for evaluating topographic orientation skills; and (4) the Raven matrix for assessing non-verbal reasoning.
 
-## Language tasks completed during fMRI
+### Language tasks completed during fMRI
 
 The language fMRI paradigm has been fully described elsewhere (Labache et al., 2019). In short, three fMRI runs were completed by the participants, each including a sentence-level task and a word-list reference task corresponding to randomized alternation of event-related trials. Within each trial, the participant was shown for 1 s either a line drawing (taken from the ‘Le Petit Nicolas’ comic strip series) or a scrambled drawing, that was immediately followed by a central fixation crosshair. While fixating the cross, the participant performed either the sentence task or the word-list reference task.
 
@@ -255,13 +637,13 @@ During the listening run (LISN), whenever a Petit Nicolas line drawing was displ
 
 During the reading run (READ), like in the two other tasks, whenever a line drawing was displayed, the subject was instructed to read a sentence based on the outline drawing. When a scrambled drawing was displayed, he/she was instructed to read the list of months, days of the week and/or seasons.
 
-## Task execution and performance
+### Task execution and performance
 
 The response times corresponding to the end of the sentence production, sentence listening and sentence reading were recorded for each participant during the fMRI session, and right after the fMRI session, the participants were asked to rate the difficulty of each of the tasks on a 5-level scale (1:easy to 5:very difficult). For the production run, each participant was asked to recall and write down, whenever possible, the sentence he/she elaborated when presented with each image, the average number of words per (recalled) sentence being then computed.
 
-## Image acquisition and processing
+### Image acquisition and processing
 
-## Image acquisition
+#### Image acquisition
 
 Imaging was performed on a Philips Achieva 3 Tesla MRI scanner (Philips, Erlangen, The Netherlands).
 
@@ -271,39 +653,39 @@ Language task-related functional volumes were acquired using a T2*-weighted echo
 
 Resting-state functional volumes (N = 240) were acquired as a single 8 min long run using the same T2*-weighted EPI sequence. Immediately prior to scanning, the participants were instructed to ‘keep their eyes closed, to relax, to refrain from moving, to stay awake and to let their thoughts come and go’.
 
-## Processing of structural images
+#### Processing of structural images
 
 For each participant, (1) the T2*-FFE volume was rigidly registered to the T1-MRI; (2) the T1-MRI was segmented into three brain tissue classes (gray matter, white matter, and cerebrospinal fluid) and normalized to the BIL and GIN template including 301 volunteers from the BIL and GIN database using the SPM12 ‘segment’ procedure (http://www.fil.ion.ucl.ac.uk/spm/) with otherwise default parameters. Whole volumes of these three compartments were extracted and brain volume calculated as their sum. In addition, hemispheric volumes (left and right) of gray and white matter were extracted to compute their asymmetries (Table 3).
 
 A semi-automated in-house corpus callosum segmentation procedure was then applied to extract individual masks of corpus callosum obtained from 10 consecutive mid-sagittal slices of 1 mm width on individual white matter maps in the MNI stereotactic space. An additional processing step to remove the fornix, which was sometimes segmented and connected along with the corpus callosum, was added. Quality control of corpus callosum segmentation was achieved by visual inspection of all slices, and, when needed, manual corrections for minor segmentation error was applied using FSL software. Each individual corpus callosum mask was then applied to each participant’s normalized and modulated white matter partition images to estimate individual corpus callosum volume (Table 3).
 
-## Pre-processing of task-related and resting-state functional volumes
+#### Pre-processing of task-related and resting-state functional volumes
 
 Functional data were corrected for slice timing differences. To correct for subject motion during the runs, all T2*-weighted volumes were realigned using a 6-parameter rigid-body registration. The EPI-BOLD scans were then registered rigidly to the structural T2*-FFE image. The combination of all registration matrices allowed for warping the EPI-BOLD functional scans from the subject acquisition space to the standard space (2 × 2 × 2 mm3 sampling size) with a single interpolation.
 
 Time series of BOLD signal variations in white matter and cerebrospinal fluid (individual average time series of voxels that belonged to each tissue class) as well as temporal linear trends were removed from the rs-fMRI data series using a regression analysis. Additionally, rs-fMRI data were bandpass filtered (0.01 Hz - 0.1 Hz) using a least-squares linear-phase finite impulse response filter design.
 
-## Language task-fMRI processing
+### Language task-fMRI processing
 
-## Language task contrast maps
+#### Language task contrast maps
 
 Statistical parametric mapping (SPM12, http://www.fil.ion.ucl.ac.uk/spm/) was used for processing the task-related fMRI data. First, a 6 mm full width at half maximum (FWHM) gaussian filter was applied to volumes acquired during each run. For each participant, differences between BOLD signal volumes corresponding to sentence and list belonging to the same run were computed, namely sentence minus word-list production (PRODSENT-WORD), sentence minus word-list reading (READSENT-WORD), and sentence minus word-list listening (LISNSENT-WORD).
 
-## Regions of interest analysis using the SENSAAS atlas
+#### Regions of interest analysis using the SENSAAS atlas
 
 BOLD signal variations during the three language tasks and resting-state and their asymmetries were then computed for the set of 18 pairs of homotopic frontal and temporal regions of interests (hROIs) that we previously identified in the subgroup of 144 right-handers as constituting a core network of language areas (SENT_CORE, Figure 1 [Labache et al., 2019]). These 18 hROI-pairs were selected as activated and leftward asymmetrical in these same three tasks and as constituting at rest a network with strong positive correlations across the hROIS. Note that SENT_CORE areas contain the antero-posterior high-order language areas, consistent with language meta-analyses of healthy individuals (Price, 2010; Price, 2012; Vigneau et al., 2006), including three intrinsic connectivity hubs corresponding to the inferior frontal gyrus (F3t) and two regions of the superior temporal sulcus (STS: STS3 and STS4 Figure 1).
 
 Here, for each participant, each of the three contrast maps, and each of these 18 hROIs, left and right BOLD signal variations were computed by averaging the contrast BOLD values of all voxels located within the hROI volume. Then, for each participant and each contrast map, mean left and right BOLD variations and asymmetry for the whole network were also computed as a weighted (by volume) average of the corresponding 18 hROIs values (SENT_CORE), as well as the mean of the three hubs (SENT_HUBS).
 
-## Resting-state organization of SENT_CORE network
+#### Resting-state organization of SENT_CORE network
 
 For each individual and each hROI composing the SENT_CORE network, we computed a degree centrality (Rs_DC) in each hemisphere. The Rs_DC in each participant and each hROI of each hemisphere was calculated as the sum of the positive correlations existing between one hROI and all the other hROIs of the SENT_CORE network. Rs_DC values were then averaged across the 18 hROIs of the same hemisphere and the resulting left and right averaged Rs_DC values were summed and divided by two so as to provide a SENT_CORE intra-hemispheric Rs_DC characterizing the strength of within hemisphere intrinsic connectivity for this network. We also computed the left minus right difference of the averaged Rs_DC values as a measure of the asymmetry in intra-hemispheric connectivity strengths for the SENT_CORE network.
 
 Interhemispheric connectivity strength was estimated in each individual by the average across the 18 hROIs pairs constituting the SENT_CORE network of the z-transformed intrinsic correlation coefficient between homotopic ROIs (mean Inter-Hemispheric Homotopic Correlations, Rs_mIHHC).
 
-## Statistical analysis
+### Statistical analysis
 
-## Identification of groups of individuals with different brain organization for language through hierarchical clustering
+#### Identification of groups of individuals with different brain organization for language through hierarchical clustering
 
 In a previous work (Mazoyer et al., 2014), we have shown that the distribution of lateralization for sentence production, although of continuous nature, could be used to classify individuals into three discrete categories. So, we believe it was justified to try to categorize individuals taking into account not solely production but reading, listening and resting-state, as well. It is important to realize that we did not a priori decide that the number of categories for this multivariate classification would be 3 (as it was when using production only). Rather, the optimal number of clusters for this multivariate classification was obtained using a fully unsupervised methodology and a combination of 30 statistical criteria (see below).
 
@@ -317,21 +699,21 @@ These nine variables were standardized before being jointly entered into an aggl
 
 Hierarchical classification was completed with R (R version 3.5.1; R Development Core Team, 2013), while other statistical analyses were performed using JMP15 (http://www.jmp.com, SAS Institute Inc, 2018).
 
-## Identification of individuals with dissociations of lateralization across tasks
+#### Identification of individuals with dissociations of lateralization across tasks
 
 In a second step, we identified individuals exhibiting at least one dissociation in their lateralization among the three language tasks, which means those who exhibited SENT_CORE functional asymmetries larger than 0.05 in amplitude in the opposite direction in one task compared to the others. We also searched for individuals exhibiting a dissociation in their SENT_HUB asymmetries, which led to the definition of two categories of individuals: 1. those exhibiting a dissociation for either SENT_CORE or SENT_HUB or both, who were named ‘CROSSED’; 2. those showing either leftward lateralization for all tasks for both SENT_CORE and SENT_HUBS or right lateralization for all tasks for both SENT_CORE and SENT_HUBS, who were named ‘CONGRUENT’.
 
 Pearson's chi-square tests were conducted to compare the proportion of ‘dissociation’ across the clusters identified by the classification.
 
-## Characterization of the groups provided by the classification with different brain organization of the language network
+### Characterization of the groups provided by the classification with different brain organization of the language network
 
-## Task performance, demography and handedness
+#### Task performance, demography and handedness
 
 To ensure that potential differences in the asymmetries measured during the language tasks were not related to group differences in task execution time that was recorded during the task-induced fMRI session, response times were compared across ‘language organization’ groups (corresponding to the clusters of the hierarchical classification) taking into account sex, age, and brain volume. In addition, within each ‘language organization’ group, we compared the groups of ‘CONGRUENT’ and ‘CROSSED’ individuals.
 
 The different ‘language organization’ groups were compared with variables known to be associated with variability in language lateralization, namely, handedness, sex, age, and brain volume. To complete these analyses, Pearson's chi-square tests were applied for discrete variables (handedness and sex) and ANOVA with Tukey's HSD post hoc tests for continuous variables (age and brain volume).
 
-## Task-induced and resting-state organization of the SENT_CORE network in groups varying in their language network organization
+#### Task-induced and resting-state organization of the SENT_CORE network in groups varying in their language network organization
 
 We first comprehensively described the different types of organization of the sentence networks in the groups issued from the hierarchical classification.
 
@@ -345,7 +727,7 @@ Finally, using repeated measures MANOVA, we searched whether there was a differe
 
 All post hoc analyses were conducted using Tukey's HSD test for multiple comparisons.
 
-## Anatomical variables
+#### Anatomical variables
 
 To investigate the brain structural differences in groups with different functional organization of language lateralization, we compared corpus callosum volume (CCvol) and asymmetries (left minus right) in gray matter (GMasym) and white matter (WMasym) hemispheric volumes. In this analysis, ‘CROSSED’ or ‘CONGRUENT’ was studied in interaction with the ‘language organization’ main effect restricted to two factors (‘TYP’ and ‘ATYP’).
 
@@ -353,7 +735,7 @@ First, to take into account variables that were found to covary with GMasym, WMa
 
 The residuals of CCvol were entered in ANOVA searching for an effect of a ‘language organization’ main effect restricted to two factors (‘TYP’ and ‘ATYP’), an effect of dissociation with two factors (‘CROSSED’ or ‘CONGRUENT’) and their interaction.
 
-## Cognitive variables
+#### Cognitive variables
 
 First, we performed a multiple linear regression analysis of the scores of the 11 tests of the cognitive battery, including sex, manual preference, age, education level and total intracranial volume as predictors since these variables have been shown to partly explain the variance in these scores (Mellet et al., 2014a). Residuals of the 11 regression analyses were then entered into PCA with a promax rotation. We used the scree criterion to determine the number of components to be retained.
 
@@ -361,7 +743,7 @@ The ‘language organization’ groups were compared with regard to their cognit
 
 Post hoc analyses were conducted using uncorrected Student’s t-tests.
 
-## Comparison of the different classifications for language lateralization
+### Comparison of the different classifications for language lateralization
 
 We also compared the present classification based on a multitask and multimodal approach to two other classifications that were previously applied to the same group of individuals, namely, the Gaussian mixture modeling classification on the HFLI obtained with the PRODSENT_WORD contrast (Mazoyer et al., 2014) and an support vector machine approach applied at the voxel level, allowing us to classify the dominant and nondominant hemispheres of each participant according to their spatial pattern of activation during PRODSENT_WORD (Zago et al., 2017).
 

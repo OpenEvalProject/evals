@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.32814.001 Despite their potential interplay, multiple routes of many disease transmissions are often investigated separately. As a unifying framework for understanding parasite spread through interdependent transmission paths, we present the ‘ecomultiplex’ model, where the multiple transmission paths among a diverse community of interacting hosts are represented as a spatially explicit multiplex network. We adopt this framework for designing and testing potential control strategies for Trypanosoma cruzi spread in two empirical host communities. We show that the ecomultiplex model is an efficient and low data-demanding method to identify which species enhances parasite spread and should thus be a target for control strategies. We also find that the interplay between predator-prey and host-parasite interactions leads to a phenomenon of parasite amplification, in which top predators facilitate T. cruzi spread, offering a mechanistic interpretation of previous empirical findings. Our approach can provide novel insights in understanding and controlling parasite spreading in real-world complex systems.
+Despite their potential interplay, multiple routes of many disease transmissions are often investigated separately. As a unifying framework for understanding parasite spread through interdependent transmission paths, we present the ‘ecomultiplex’ model, where the multiple transmission paths among a diverse community of interacting hosts are represented as a spatially explicit multiplex network. We adopt this framework for designing and testing potential control strategies for Trypanosoma cruzi spread in two empirical host communities. We show that the ecomultiplex model is an efficient and low data-demanding method to identify which species enhances parasite spread and should thus be a target for control strategies. We also find that the interplay between predator-prey and host-parasite interactions leads to a phenomenon of parasite amplification, in which top predators facilitate T. cruzi spread, offering a mechanistic interpretation of previous empirical findings. Our approach can provide novel insights in understanding and controlling parasite spreading in real-world complex systems.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ The ecomultiplex framework is general in the sense that it can include many ecol
 
 ## Results
 
-## Network analysis
+### Network analysis
 
 We start our analysis by investigating the layout of ecological interactions in Canastra and Pantanal (Figure 2a,b) obtained from animal diets and parasite infection rates (see also Appendix 1). Multiplex cartography for both Canastra and Pantanal (Figure 2c,d) shows that vectors are: (i) more connected and (ii) distribute their links more equally across the ecomultiplex layers than other species. Hence, vectors can get more easily infected in one layer and spread the parasite on another layer with equal likelihood. Hence, the cartography confirms that vectors facilitate parasite spread through their interactions. The local network structure around vectors in Canastra and Pantanal (Figure 2a,b) shows that vector colonies are in the Centre of star-like topologies on both layers. These results confirm that kissing bug vector species are pivotal for parasite spread, promoting it on both the food web and the vectorial layer. Although parasite diffusion can be hampered by removing vector colonies from the environment (Yamagata and Nakagawa, 2006), these immunisation strategies are not stable as vector reintroduction can happen shortly after elimination (Funk et al., 2013). Hence, we focus on immunisation strategies considering vectors’ centrality in the ecomultiplex networks but immunising other species.
 
@@ -50,19 +50,19 @@ We start our analysis by investigating the layout of ecological interactions in 
 
 **Figure 2.:** (a) and (b) Food web layer and vectorial layer in Canastra (left) and Pantanal (right) biomes. Predators are highlighted in blue, preys in orange and the vectors in green. Interactions involving the insect are highlighted in red. Interactions involving other species are reported for completeness in blue. (c–f): Multiplex cartography of the Canastra ecomultiplex network with 10% (c) and 25% (e) of total groups as vectors. Multiplex cartography of the Pantanal ecomultiplex network with 10% (d) and 25% (f) of total groups as vectors. The red line separates hub nodes, i.e. the most connected nodes within the 95th percentile of the total degree distribution. The cartography highlights the average trends of species: blue for predators, orange for preys, and green for vectors. As evident from (a–e), vectors have higher total degree in the ecosystem and tend to distribute more equally their links across both the multiplex layers than all other species. Vectors are therefore pivotal in the ecosystem.
 
-## Immunisation strategies
+### Immunisation strategies
 
-As expected, immunising species with the highest parasite infection rate (Hemoculture) is the best strategy for hampering parasite spread for both Canastra and Pantanal (Figure 3). This epidemiological strategy slows down parasite spread by almost 30% in Canastra and 26% in Pantanal when the parasite spreads mainly on the food-web layer (pv=0.1) (Figure 3). Immunising species interacting with vectors on the vectorial layer (an ecomultiplex strategy) also performs better than random. The difference between the epidemiological and the ecomultiplex strategies is present only at low vector frequencies (fv=0.1) in both Canastra (Figure 3a) and Pantanal Figure 3c) but vanishes when fv=0.25 and pv>0.2 (Figure 3b,d).
+As expected, immunising species with the highest parasite infection rate (Hemoculture) is the best strategy for hampering parasite spread for both Canastra and Pantanal (Figure 3). This epidemiological strategy slows down parasite spread by almost 30% in Canastra and 26% in Pantanal when the parasite spreads mainly on the food-web layer ($p_{v}=0.1$) (Figure 3). Immunising species interacting with vectors on the vectorial layer (an ecomultiplex strategy) also performs better than random. The difference between the epidemiological and the ecomultiplex strategies is present only at low vector frequencies ($f_{v}=0.1$) in both Canastra (Figure 3a) and Pantanal Figure 3c) but vanishes when $f_{v}=0.25$ and $p_{v}>0.2$ (Figure 3b,d).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig3-v2.jpg)
 
 **Figure 3.:** The infection time increase plotted on the y-axis is defined in Immunisation Strategies (Methods and Materials). An increase of +0.3 indicates that the infection time in a given immunisation scenario was 30% higher than in the reference case of random immunisation.
 
-In Canastra, when 10% of the animal groups are vector colonies (Figure 3a), biological immunisation strategies are equivalent to immunising species at random. The performance of biological immunisation changes dramatically when vector colonies become more frequent (Figure 3b). Immunising large mammals decreases by 12% the global infection time when pv=0.1, suggesting that large mammals do not facilitate parasite transmission in the model. Immunising all the Didelphidae species leads to similar results (Figure 3b). Modest increases in infection time are reported for immunising Cricetidae species when pv=0.2 (Figure 3b). Immunising species feeding on the vector (insectivores) is equivalent to random immunisation (sign Test, p-values>0.1).
+In Canastra, when 10% of the animal groups are vector colonies (Figure 3a), biological immunisation strategies are equivalent to immunising species at random. The performance of biological immunisation changes dramatically when vector colonies become more frequent (Figure 3b). Immunising large mammals decreases by 12% the global infection time when $p_{v}=0.1$, suggesting that large mammals do not facilitate parasite transmission in the model. Immunising all the Didelphidae species leads to similar results (Figure 3b). Modest increases in infection time are reported for immunising Cricetidae species when $p_{v}=0.2$ (Figure 3b). Immunising species feeding on the vector (insectivores) is equivalent to random immunisation (sign Test, p-values$>0.1$).
 
-In Pantanal, immunising parasitised mammals, parasitised Didelphidae and species with the highest infection rates (Hemoculture 3) are at least two times more effective in slowing down parasite spread compared to other strategies (Figure 3c,d). Contrary to what happens in Canastra, when fv=0.1 and the parasite spreads mainly on the food web (p≤0.2), immunising parasitised Didelphidae hampers parasite diffusion more than immunising all parasitised mammals (sign Test, p-value<0.01) (Figure 3c). Immunising insectivores or large mammals is equivalent to random immunisation (Figure 3c). Immunising Cricetidae species always performs worse than random immunisation (Figure 3c,d).
+In Pantanal, immunising parasitised mammals, parasitised Didelphidae and species with the highest infection rates (Hemoculture 3) are at least two times more effective in slowing down parasite spread compared to other strategies (Figure 3c,d). Contrary to what happens in Canastra, when $f_{v}=0.1$ and the parasite spreads mainly on the food web ($p\leq0.2$), immunising parasitised Didelphidae hampers parasite diffusion more than immunising all parasitised mammals (sign Test, p-value$<0.01$) (Figure 3c). Immunising insectivores or large mammals is equivalent to random immunisation (Figure 3c). Immunising Cricetidae species always performs worse than random immunisation (Figure 3c,d).
 
-## Top predators can lead to parasite amplification
+### Top predators can lead to parasite amplification
 
 In Canastra, the strategy Hemoculture three includes also immunising one species of top predator, the Leopardus pardalis (ocelot) (see Appendix 7—figure 1). We compare the performances of Hemoculture three against another immunisation strategy where instead of the ocelot we immunise another top predator, the Chrysocyon brachyurus (maned wolf), which had negative T. cruzi infection rate in this area (Rocha et al., 2013). In general, top predators are related to parasite transmission control in natural environments (Wobeser, 2013) so we did not expected differences between different predators.
 
@@ -70,7 +70,7 @@ Instead, results from Figure 4 indicate a drastic increase of global infection t
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/32814/elife-32814-fig4-v2.jpg)
 
-**Figure 4.:** Leopardus pardalis (hemoculture - H 3 No Leopardus).The other top predator is the maned wolf (Chrysocyon brachiurus).
+**Figure 4.:** The other top predator is the maned wolf (Chrysocyon brachiurus).
 
 ## Discussion
 
@@ -90,42 +90,103 @@ We assume that parasite spread is happening at much faster rates compared to oth
 
 ## Materials and methods
 
-## Ecological multiplex network model
+### Ecological multiplex network model
 
-The ‘ecomultiplex’ model describes an ecological community interacting in a spatially explicit ecosystem, see Figure 1, using the novel framework of multiplex networks. Each layer of the ecomultiplex network represents a different route of parasite transmission: (i) food-web interactions and (ii) contaminative interactions mediated by vectors. These infection routes give rise to a multiplex network of two layers where nodes represent groups of individuals of a given species, that is animal groups. Links on the food-web layer are directed to predator species and represent predator-prey interactions. Links on the vectorial layer are undirected and represent insect vector blood meals. Distance among animal groups determines possible interactions: only groups sharing a spatial portion of their home range can interact with each other. We fixed the home range of all animal groups as a circle of radius r=0.03 over a unitary squared space and studied a total of N=10000 animal groups, please see Appendix 3 and[67] for more details regarding the network construction. The small value of r has been tuned in order to keep the ecomultiplex network connected (De Domenico et al., 2013) so that the parasite can infect the whole ecomultiplex network.
+The ‘ecomultiplex’ model describes an ecological community interacting in a spatially explicit ecosystem, see Figure 1, using the novel framework of multiplex networks. Each layer of the ecomultiplex network represents a different route of parasite transmission: (i) food-web interactions and (ii) contaminative interactions mediated by vectors. These infection routes give rise to a multiplex network of two layers where nodes represent groups of individuals of a given species, that is animal groups. Links on the food-web layer are directed to predator species and represent predator-prey interactions. Links on the vectorial layer are undirected and represent insect vector blood meals. Distance among animal groups determines possible interactions: only groups sharing a spatial portion of their home range can interact with each other. We fixed the home range of all animal groups as a circle of radius $r=0.03$ over a unitary squared space and studied a total of $N=10000$ animal groups, please see Appendix 3 and[67] for more details regarding the network construction. The small value of $r$ has been tuned in order to keep the ecomultiplex network connected (De Domenico et al., 2013) so that the parasite can infect the whole ecomultiplex network.
 
-## Ecological data: trophic interactions and body masses
+### Ecological data: trophic interactions and body masses
 
 Different community structures may affect parasite transmission dynamics. We used data from two communities that differed in species composition and interactions (Appendix 1). Predator-prey and vector-host interactions in the ecomultiplex network are based on ecological data related to T. cruzi infection in wild hosts within two different areas: Canastra, a tropical savannah in South-Eastern Brazil (Rocha et al., 2013) and Pantanal, a vast floodplain in Midwest Brazil (Herrera et al., 2011). Both places hold a highly diverse host communities which differ in the structure of interactions, particularly in the vectorial transmission layer (See Appendix 2 for further details).
 
 Trophic interactions in the food web are assigned according to literature data about animals’ diets (AdA et al., 2002; VdN, 2007; Cavalcanti, 2010; de Melo Amboni MP, 2007; dos Santos, 2012; Reis et al., 2006; Rocha, 2006) (Appendix 1). Since kissing bugs function as a single ecological unit and previous T. cruzi epidemiological models treat the vectors as a single compartment (Kribs-Zaleta, 2006; Kribs-Zaleta, 2010), all vector species are grouped as one functional group. Species infection rate is used to estimate the contaminative interactions in the vectorial layer (Rocha et al., 2013; Herrera et al., 2011). Positive parasitological diagnostics for T. cruzi (hemoculture) are used as a proxy for connections on the vectorial layer, since only individuals with positive parasitaemia (i.e. with high parasite loads in their blood) are able to transmit the parasite (Jansen et al., 2015). Body masses of host species represent averages over several available references (Herrera et al., 2011; Myers et al., 2008; Reis et al., 2006; Bonvicino et al., 2008; Schofield, 1994).
 
-## Mathematical formulation for group frequencies
+### Mathematical formulation for group frequencies
 
-Geographical proximity and biological features regulate link creation in the ecomultiplex model. Species biological features, in particular body masses, regulate the frequency of animal groups (which are all mammals, except for vectors). Previous study Jetz et al. (2004) showed that the density ni−1 of individuals of the same species i having the species average body mass mi follows the metabolic scaling:(1)ni−1=β−1Ri−1mi3/4where Ri is the species-specific energy supply rate and β a constant expressing species metabolism. The above equation comes from metabolic theory and can be used for determining the scaling relationship between body mass mi and frequency fi of animal groups (rather than animal individual) for species i, depending on the frequency of vector colonies fv (Appendix 3):(2)fi=(1−fv)mi−1/4∑j=1 mj−1/4.
+Geographical proximity and biological features regulate link creation in the ecomultiplex model. Species biological features, in particular body masses, regulate the frequency of animal groups (which are all mammals, except for vectors). Previous study Jetz et al. (2004) showed that the density $n_{i}^{−1}$ of individuals of the same species $i$ having the species average body mass $m_{i}$ follows the metabolic scaling:
 
-As a consequence of metabolic theory, the frequencies of animal groups in our ecomultiplex model scale as a power-law of body mass with exponent −1/4 rather than −3/4 (which is the scaling exponent for individuals rather than groups). We explicitly leave fv as a free parameter of the model in order to investigate the influence of the frequency of vector colonies on parasite spreading.
+$$
+n_{i}^{−1}=\beta^{−1}R_{i}^{−1}m_{i}^{3/4}
+$$
 
-## Metrics for multiplex network analysis
+where $R_{i}$ is the species-specific energy supply rate and $\beta$ a constant expressing species metabolism. The above equation comes from metabolic theory and can be used for determining the scaling relationship between body mass $m_{i}$ and frequency $f_{i}$ of animal groups (rather than animal individual) for species $i$, depending on the frequency of vector colonies $f_{v}$ (Appendix 3):
+
+$$
+f_{i}=(1−f_{v})\frac{m_{i}^{−1/4}}{\sum_{j=1} m_{j}^{−1/4}}.
+$$
+
+As a consequence of metabolic theory, the frequencies of animal groups in our ecomultiplex model scale as a power-law of body mass with exponent $−1/4$ rather than $−3/4$ (which is the scaling exponent for individuals rather than groups). We explicitly leave $f_{v}$ as a free parameter of the model in order to investigate the influence of the frequency of vector colonies on parasite spreading.
+
+### Metrics for multiplex network analysis
 
 We investigate the structure of a given ecomultiplex network through the concept of multiplex cartography (Battiston et al., 2014), see also Appendix 5 for the definition of multiplex cartography. In our case, the cartography describes how individual groups engage into trophic interactions on the ecomultiplex structure by considering: (i) the total number K of trophic interactions an animal group is involved in and (ii) the ratio U of uniform link distribution across layers, which ranges between 0 (all the links of a group are focused in one layer) and 1 (all links of a node are uniformly distributed across layers). The higher K, the more an animal group interacts with other groups. The higher U the more an animal group will engage in feeding and vectorial interactions with the same frequency. The multiplex cartography for Canastra and Pantanal is reported and discussed in Appendix 5.
 
-## Susceptible-Infected model on the ecological multiplex network
+### Susceptible-Infected model on the ecological multiplex network
 
-As explained in the introduction, we focus on parasites causing lifelong infections in wild hosts. Hence, parasite spread is simulated as a Susceptible-Infected (SI) process (Hastings and Gross, 2012): Animal groups are susceptible or infectious. We assume that parasite transmission among animal groups happens considerably faster than both (i) group creation or extinction and (ii) parasite transmission within groups, so that fixed numbers of hosts and vectors can be considered, as in previous works (Keeling and Rohani, 2008; Legros and Bonhoeffer, 2016). At each time step, the parasite can spread from an infected group to another one along a connection either in the vectorial (with probability pv) or food-web (with probability 1−pv) layer. We consider pv as a free parameter called vectorial layer importance, that is the rate at which transmission occurs through the consumption of blood by vectors rather than predator-prey interactions. We assume that all the species have the same probability of getting infected, since the group gets infected if it interacts with an infected group. However, the transmission rate is the outcome of the probability of infection, species groups frequency in the environment and the interactions in the ecomultiplex. We characterise globally the SI dynamics by defining the infection time t∗ as the minimum time necessary for the parasite to reach its maximum spread within the networked ecosystem (Stella et al., 2016). The infection starts from a small circle of radius 0.03 in the middle of the unitary space infecting all animal groups within that area. Initial conditions are randomised over different simulations.
+As explained in the introduction, we focus on parasites causing lifelong infections in wild hosts. Hence, parasite spread is simulated as a Susceptible-Infected (SI) process (Hastings and Gross, 2012): Animal groups are susceptible or infectious. We assume that parasite transmission among animal groups happens considerably faster than both (i) group creation or extinction and (ii) parasite transmission within groups, so that fixed numbers of hosts and vectors can be considered, as in previous works (Keeling and Rohani, 2008; Legros and Bonhoeffer, 2016). At each time step, the parasite can spread from an infected group to another one along a connection either in the vectorial (with probability $p_{v}$) or food-web (with probability $1−p_{v}$) layer. We consider $p_{v}$ as a free parameter called vectorial layer importance, that is the rate at which transmission occurs through the consumption of blood by vectors rather than predator-prey interactions. We assume that all the species have the same probability of getting infected, since the group gets infected if it interacts with an infected group. However, the transmission rate is the outcome of the probability of infection, species groups frequency in the environment and the interactions in the ecomultiplex. We characterise globally the SI dynamics by defining the infection time $t^{∗}$ as the minimum time necessary for the parasite to reach its maximum spread within the networked ecosystem (Stella et al., 2016). The infection starts from a small circle of radius 0.03 in the middle of the unitary space infecting all animal groups within that area. Initial conditions are randomised over different simulations.
 
-## Immunisation strategies
+### Immunisation strategies
 
-Immunisation strategies provide information on how species influence parasite spread: immunising species that facilitate parasite spreading should increase the global infection time t∗ compared to immunising random species. We focus on immunising only 10% of animal groups in ecomultiplex networks with 10000 nodes, in either high (fv=0.25) or low vector frequency scenarios (fv=0.1). By immunising groups at random in ecomultiplex networks with N= 10000 nodes, we identify φ = 1000 as the minimum number of groups/nodes that have to be immunised in order to observe increases in t∗compared to random immunisation with a significance level of 5%. Immunised groups are selected according to three categories of immunisation strategies (Table 1):
+Immunisation strategies provide information on how species influence parasite spread: immunising species that facilitate parasite spreading should increase the global infection time $t^{∗}$ compared to immunising random species. We focus on immunising only $10%$ of animal groups in ecomultiplex networks with $10000$ nodes, in either high ($f_{v}=0.25$) or low vector frequency scenarios ($f_{v}=0.1$). By immunising groups at random in ecomultiplex networks with N= 10000 nodes, we identify φ = 1000 as the minimum number of groups/nodes that have to be immunised in order to observe increases in t∗compared to random immunisation with a significance level of 5%. Immunised groups are selected according to three categories of immunisation strategies (Table 1):
 
-We define the infection time increase Δts as the normalised difference between the median infection time ts when ϕ=1000 nodes are immunised according to the strategy s and the median infection time tr when the same number of nodes is immunised uniformly at random among all animal groups, Δts=ts−trtr. Infection times are averages sampled from 500 simulated replicates. Differences are always tested at 95% confidence level.
+**Table 1.**
+ Immunisation types, names and targets of the strategies we tested (Appendix 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Immunisation type</th>
+      <th>Strategy name</th>
+      <th>Strategy targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Ecomultiplex Topological Features</td>
+      <td>Insectivores</td>
+      <td>Species feeding on the vector in a food-web</td>
+    </tr>
+    <tr>
+      <td>Parasitised Didelphidae</td>
+      <td>Didelphidae contaminated by the vector on a vectorial layer</td>
+    </tr>
+    <tr>
+      <td>Parasitised Mammals</td>
+      <td>All species contaminated by the vector on a vectorial layer</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Taxonomic/morphological features</td>
+      <td>All Cricetidae</td>
+      <td>All Cricetidae</td>
+    </tr>
+    <tr>
+      <td>All Didelphidae</td>
+      <td>All Didelphidae</td>
+    </tr>
+    <tr>
+      <td>Large Mammals</td>
+      <td>All species with a body mass &gt; 1 kg</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Epidemiological Features</td>
+      <td>Hemoculture N</td>
+      <td>The N species with the highest likelihood of being found infected with the parasite in field work (see Appendix 1).</td>
+    </tr>
+    <tr>
+      <td>Serology N</td>
+      <td>The N species with the highest likelihood of having been infected with the parasite during their life time (see Appendix 1).</td>
+    </tr>
+  </tbody>
+</table>
+
+We define the infection time increase $Δt_{s}$ as the normalised difference between the median infection time $t_{s}$ when $ϕ=1000$ nodes are immunised according to the strategy $s$ and the median infection time $t_{r}$ when the same number of nodes is immunised uniformly at random among all animal groups, $Δt_{s}=\frac{t_{s}−t_{r}}{t_{r}}$. Infection times are averages sampled from 500 simulated replicates. Differences are always tested at 95% confidence level.
 
 Positive increases imply that the immunisation strategy slowed down the parasite in reaching its maximum spread over the whole ecosystem more than random immunisation. Negative increases imply that random immunisation performs better than the given immunisation strategy in hampering parasite diffusion.
 
-## Model inputs, parameters used and model outputs
+### Model inputs, parameters used and model outputs
 
 Summing up, the ecomultiplex model adopts the following parameters (Appendix 4):
 
 The ecomultiplex model also considers the following ecological data as inputs:
 
-As outputs the model produces the dynamics of parasite spreading. The total number Ninf of infected animal groups was found to be constant across different immunisation strategies, vectorial probabilities pv and ecosystems, Ninf=8700±100 or Ninf≈(97±1)% of susceptible hosts, in terms of model outputs we focus on the time necessary for the parasite to reach its maximum spread, that is, on the global infection time.
+As outputs the model produces the dynamics of parasite spreading. The total number $N_{inf}$ of infected animal groups was found to be constant across different immunisation strategies, vectorial probabilities $p_{v}$ and ecosystems, $N_{inf}=8700\pm100$ or $N_{inf}≈(97\pm1)%$ of susceptible hosts, in terms of model outputs we focus on the time necessary for the parasite to reach its maximum spread, that is, on the global infection time.

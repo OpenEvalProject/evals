@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02kkvpp62 Department of Neurology, TUM School of Medicine and Health, Technical University of Munich (TUM) Munich Germany
-2. https://ror.org/02kkvpp62 TUM-Neuroimaging Center, TUM School of Medicine and Health, TUM Munich Germany
-3. https://ror.org/02kkvpp62 Center for Interdisciplinary Pain Medicine, TUM School of Medicine and Health, TUM Munich Germany
-4. https://ror.org/02kkvpp62 Department of Psychosomatic Medicine and Psychotherapy, School of Medicine and Health, TUM Munich Germany
-5. https://ror.org/00pd74e08 Institute for Biomagnetism and Biosignalanalysis, University of Münster Münster Germany
+1. Department of Neurology, TUM School of Medicine and Health, Technical University of Munich (TUM) Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+2. TUM-Neuroimaging Center, TUM School of Medicine and Health, TUM Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+3. Center for Interdisciplinary Pain Medicine, TUM School of Medicine and Health, TUM Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+4. Department of Psychosomatic Medicine and Psychotherapy, School of Medicine and Health, TUM Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+5. Institute for Biomagnetism and Biosignalanalysis, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
 
 † Corresponding author
 
@@ -34,6 +34,14 @@ Human and animal studies have revealed structural and functional changes in an e
 
 Recently, novel electroencephalography (EEG) measures have been proposed as non-invasive proxies for E/I with high translational potential (Ahmad et al., 2022). Specifically, the aperiodic exponent of the EEG power spectrum has been highlighted as a measure of the E/I ratio (Gao et al., 2017; Lombardi et al., 2017). The power spectrum of EEG signals (Figure 1) typically features narrow band peaks over a power distribution following a 1/fχ shape, with power decreasing linearly as frequency increases on a log-log scale (Buzsáki and Draguhn, 2004; Miller et al., 2009). Traditional EEG analyses have focused on oscillatory activity (peaks in the power spectrum) and activity at specific frequency bands. However, recent studies have highlighted the physiological significance of the power spectrum’s aperiodic (1/fχ) component (Donoghue et al., 2020; Lendner et al., 2020; Ostlund et al., 2021; Tröndle et al., 2022). In particular, the slope of the aperiodic component, given by the aperiodic exponent (χ), has been linked to the E/I balance. Higher exponents (steeper spectra) indicate a shift toward inhibition, and lower exponents toward excitation (Gao et al., 2017; Lendner et al., 2020). Moreover, E/I disruptions have been proposed as a common feature underlying different neuropsychiatric disorders (Ahmad et al., 2022; Sohal and Rubenstein, 2019). Accordingly, first EEG studies assessing the aperiodic component in several brain disorders have revealed changes in schizophrenia (Molina et al., 2020), ADHD (Ostlund et al., 2021; Robertson et al., 2019), and Alzheimer’s disease (Martínez-Cañada et al., 2023).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101727/elife-101727-fig1-v1.jpg)
+
+**Figure 1.:** The upper panel states the research questions and sketches their accompanying results from the two pre-registered analyses and their complementing multiverse analyses. The lower panel illustrates the pre-registered approach to estimate E/I non-invasively with EEG. We reconstructed the time series at one hundred spatial points in source space and summarized the medial prefrontal cortex (mPFC) activity (Q1 and Q2) by averaging power spectra in this region. We then estimated the aperiodic activity of the average power spectrum. The aperiodic exponent (the slope of the aperiodic activity in log-log space) is the proposed proxy for E/I, with high aperiodic exponents indicating low E/I ratio. Figure 1—figure supplement 1 shows the grand averaged power spectra in the mPFC.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101727/elife-101727-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Power spectra derived from source-reconstructed signals were averaged for each group of participants at the four source locations of the atlas comprising the medial prefrontal cortex.
+
 In the present study, we characterized the E/I balance in people with chronic pain non-invasively. To this end, we analyzed the aperiodic component of resting-state EEG recordings in a large cohort of people with chronic pain (N=149), compared it to healthy participants (N=115), and related it to pain intensity. We hypothesized that changes in the aperiodic exponent would particularly occur in the medial prefrontal cortex (mPFC), as this is a central hub for pain processing and E/I imbalances have been observed in this area (Bliss et al., 2016; Kummer et al., 2020; Shiers and Price, 2020; Tan and Kuner, 2021). We complemented this region-of-interest analysis with a whole-brain analysis of the aperiodic component. Furthermore, we investigated aperiodic exponents in subtypes of chronic pain.
 
 The current study rigorously pursued open and reproducible science practices. We pre-registered the study (https://osf.io/xshmy), performed blind analyses with Bayesian hypothesis testing, and made all data and code openly available (Hardwicke and Wagenmakers, 2023; MacCoun and Perlmutter, 2015; Wagenmakers et al., 2018). Additionally, we conducted a multiverse analysis to assess the robustness of the results across different analytical choices (Simonsohn et al., 2020; Steegen et al., 2016). This is particularly relevant as aperiodic activity is an emerging metric for which the influence of several methodological decisions is not fully clear.
@@ -48,7 +56,66 @@ We investigated the research questions in a two-step approach. We first estimate
 
 We identified five methodological decisions that could influence the estimation of aperiodic activity, each with two or three equally valid parameter settings (Table 1, Methods). The combination of all these parameter settings yielded 48 different specifications, including the specification of the pre-registered analyses. Thus, in each multiverse analysis, we estimated the aperiodic exponent in 48 different ways and repeated the corresponding pre-registered analysis. The result is a specification curve, depicting in the x-axis the specifications, sorted by increased effect size, in the y-axis the effect size, and color-coded the degree of evidence (BF10). We also quantified how likely the observed specification curve was, compared to a null distribution of curves indicating no effect with three inference tests (Simonsohn et al., 2020). We performed multiverse analyses for research questions Q1 and Q2. We did not perform multiverse analysis for Q3, as it would yield a higher number of results than what can be statistically addressed and presented (please refer to Methods).
 
-## How does aperiodic activity in the mPFC relate to chronic pain?
+**Table 1.**
+ Analytical decisions and parameters investigated in the multiverse analysis.Parameters in italics are the ones used in the pre-registered analysis. In total 48 different combinations of parameters (specifications) were investigated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analytical decision</th>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Epoch length</td>
+      <td>2 s</td>
+      <td rowspan="2">Length of the epochs in seconds. Epoch length affects the frequency resolution of the power spectrum. ‘2 s’ implies a frequency resolution of 0.5 Hz, ‘5 s’ of 0.2 Hz.</td>
+    </tr>
+    <tr>
+      <td>5 s</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Taper</td>
+      <td>dpss</td>
+      <td rowspan="2">Method to estimate the power spectrum. ‘Dpss’ performs frequency analysis with multiple dpss tapers and 1 Hz spectral smoothing. ‘Hanning’ performs frequency analysis with a single hanning taper.</td>
+    </tr>
+    <tr>
+      <td>hanning</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Avg. psd</td>
+      <td>yes</td>
+      <td rowspan="2">Method to summarize aperiodic activity on the mPFC. ‘Yes’ averages the power spectra of all the source locations encompassing the mPFC and derives the aperiodic exponent from this average. ‘No’ models the power spectrum for each location and averages aperiodic parameters obtained from each power spectra.</td>
+    </tr>
+    <tr>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Fooof range</td>
+      <td>2–40 Hz</td>
+      <td rowspan="3">Frequency range in which to model the power spectrum. ‘2–40 Hz’ is the pre-set value of the ‘spectparam algorithm’ (Donoghue et al., 2020). ’40–60’ is the original setting of Gao et al., 2017. ‘1–100’ includes the whole power spectrum.</td>
+    </tr>
+    <tr>
+      <td>40–60 Hz</td>
+    </tr>
+    <tr>
+      <td>1–100 Hz</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fooof knee</td>
+      <td>no</td>
+      <td rowspan="2">Parameter that controls the bend of the model of aperiodic activity. ‘No’ omits the estimation of the knee. ‘Yes’ models the knee.</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+### How does aperiodic activity in the mPFC relate to chronic pain?
 
 We first compared the aperiodic exponents in the mPFC between the entire sample of 149 people with chronic pain and 115 healthy participants. We controlled the potential confound of age in aperiodic exponents by regressing age out from all the studied variables. Average aperiodic exponents before age correction were 1.10±0.16 (mean ± std) for the healthy participants and 1.10±0.18 for the participants with chronic pain. The results provided moderate evidence against a difference between groups (Figure 2A, Cohen’s d=–0.011, BF10=0.136, Bayesian two-sided independent samples t-test). The specification curve analysis confirmed this finding (Figure 2B). All specifications indicated moderate evidence against a difference in aperiodic exponents between groups (all BF10 <0.22). Statistical inference on the specification curve indicated that the curve was not significantly different from a null distribution of specification curves (pmedian = 0.89, pshare = 1, paggregate = 0.95, please refer to the Methods for a description of the test statistics). Thus, both pre-defined and multiverse analysis provided robust evidence against a difference in aperiodic exponents in the mPFC between healthy participants and people with chronic pain.
 
@@ -58,9 +125,21 @@ We first compared the aperiodic exponents in the mPFC between the entire sample 
 
 Next, we correlated the aperiodic exponents in the mPFC of people with chronic pain with their average pain intensity. The results provided moderate evidence against a correlation (Figure 3A, Pearson’s R=0.006, BF10=0.103, Bayesian correlation test). The specification curve analysis confirmed this result (Figure 3B). All specifications indicated moderate evidence against a correlation between pain ratings and aperiodic exponents (all BF10 <0.26). Statistical inference on the specification curve indicated that the curve was not significantly different from a null distribution of specification curves (pmedian = 0.63, pshare = 1, paggregate = 0.74). Apart from the aperiodic exponent, the aperiodic offset is another parameter estimated when computing the aperiodic component. The aperiodic offset has a less clear physiological interpretation than the aperiodic exponent. Nevertheless, we also investigated whether it was altered in the mPFC in people with chronic pain or was related to pain intensity (Figure 3—figure supplement 1). We found moderate evidence against a difference in aperiodic offsets between people with chronic pain and healthy participants (Cohen’s d=–0.03, BF10=0.14). Furthermore, we found moderate evidence against a correlation between aperiodic offsets and average pain ratings (R=0.06, BF10=0.14). Moreover, we exploratively investigated the effects of age on aperiodic exponents in the mPFC in our dataset. The results are shown in Figure 3—figure supplement 2.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/101727/elife-101727-fig3-v1.jpg)
+
+**Figure 3.:** (A) Pre-defined analysis. The scatter plot represents the aperiodic exponent and average pain intensity ratings. Age was regressed out from both variables to perform a partial correlation. Grey lines indicate the linear regression slope (solid line) and the 95% confidence interval (dashed lines). Bayes Factor (BF) was obtained from a Bayesian linear correlation performed on the residuals. (B) Multiverse analysis including the specification curve panel with Pearson’s correlation coefficients (R) as effect size, the specifications panel, and the inference panel as in Figure 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101727/elife-101727-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Apart from the aperiodic exponent, the aperiodic offset is another parameter estimated when computing the aperiodic component. The aperiodic offset has a less clear physiological interpretation than the aperiodic exponent. Nevertheless, we also investigated whether it was altered in the mPFC in people with chronic pain or was related to pain intensity. Left panel: raincloud plots represent the aperiodic offsets of individual participants corrected for age. Bayes Factor (BF) was derived from a two-sided independent samples Bayesian t-test comparing the offsets of the two groups. Right panel: the scatter plot represents the aperiodic offsets and pain intensity ratings of people with chronic pain corrected for age. Grey lines indicate the linear regression slope (solid line) and the confidence interval (dashed lines). Bayes Factor (BF) was obtained from a Bayesian linear correlation between aperiodic offsets and pain intensity in people with chronic pain. We found moderate evidence against a difference in aperiodic offsets between people with chronic pain and healthy participants (Cohen’s d=–0.03, BF10=0.14). Furthermore, we found moderate evidence against a correlation between aperiodic offsets and average pain ratings (R=0.06, BF10=0.14).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101727/elife-101727-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** We controlled for age effects by regressing out age from the aperiodic exponent, and pain ratings in all analyses. Previous literature has observed a negative relationship between aperiodic activity and age during maturation, mainly in the occipital area and in young participants (Hill et al., 2022; Tröndle et al., 2022; Turner et al., 2023). Thus, exploratively, we investigated the effects of age on aperiodic exponents in the mPFC in our dataset. We performed a Bayesian correlation between age and aperiodic exponents in the mPFC for all participants with the same parameters used in the pre-defined analyses. (A) Analysis according to the pre-defined settings for estimating aperiodic activity. The scatter plot represents the aperiodic exponent (y axis) and age (x axis). Grey lines indicate the linear regression slope (solid line) and the 95% confidence interval (dashed lines). Bayes Factor (BF) was obtained from a Bayesian linear correlation. The results show inconclusive evidence for a negative correlation between age and aperiodic exponents (R=–0.15, BF10=1.76). (B) Multiverse analysis. The upper panel visualizes the specification curve, which indicates the effect size (y axis) and evidence (color coded) for each specification (x axis). Specifications are ordered by effect size. A vertical bar indicates the specification of the pre-defined settings. The color scale’s upper and lower limits indicate strong evidence for and against a difference between groups. The middle panel further describes the parameters of each specification, with vertical bars indicating the parameters selected in each methodological decision (Table 1). The lower panel visualizes inference on the specification curve. In purple, the original specification curve is depicted. In grey, the null distribution of specification curves derived from 500 randomized curves is represented by the median curve (solid grey line) and 2.5th and 97.5th percentile curves (dashed lines). Intuitively, if the original curve lies between the 2.5th and 97.5th percentile curves, it is not significantly different from the null distribution of specification curves. Surprisingly, the Specification Curve Analysis revealed very strong evidence for a negative correlation in specifications 1–6 and a positive correlation in specifications 41–48. Statistical inference on the specification curve indicated that the curve was significantly different from a null distribution of specification curves (pmedian = 0.06, pshare = 0.006, paggregate = 0.002). Both ranges were associated with specific parameters of the ‘spectparam’ algorithm. This indicates that the set of parameters used to estimate the aperiodic exponent greatly impacts the existence and direction of a correlation between aperiodic exponents and age. Thus, further brain maturation studies interested in aperiodic activity should consider this. In our particular case, this analysis confirmed the necessity of controlling for age when studying aperiodic activity in chronic pain.
+
 In summary, we found evidence against a difference in aperiodic activity in the mPFC between healthy participants and a diverse cohort of people with chronic pain. We also found evidence against a correlation between aperiodic exponents and pain intensity in people with chronic pain. Multiverse analyses confirmed the robustness of these findings across different analytical parameters.
 
-## How does aperiodic activity in the mPFC relate to different types of chronic pain?
+### How does aperiodic activity in the mPFC relate to different types of chronic pain?
 
 The sample of people with chronic pain included participants with different types of chronic pain. Thus, effects specific to certain subtypes of pain might have been missed. Therefore, we repeated pre-registered and multiverse analyses for the two largest clinical subgroups, people with Chronic Back Pain (CBP, N=80) and people with Chronic Widespread Pain (CWP, N=33). We randomly drew a subsample of healthy participants of equal size for each subgroup, matched in age, gender, and dataset to which they belonged (see Methods). Average aperiodic exponents before age correction were 1.11±0.19 for the people with CBP and 1.02±0.13 for the people with CWP.
 
@@ -78,7 +157,7 @@ In people with CWP (Figure 5), we found inconclusive evidence regarding a differ
 
 In summary, we found moderate evidence against altered aperiodic exponents in the mPFC and against a correlation between aperiodic exponents and pain intensity in people with chronic back pain. However, we found inconclusive evidence for the role of aperiodic exponents in the mPFC in people with chronic widespread pain.
 
-## How does aperiodic activity beyond the mPFC relate to chronic pain?
+### How does aperiodic activity beyond the mPFC relate to chronic pain?
 
 So far, we focused on the medial prefrontal cortex due to previous evidence for its relevance to chronic pain (Bliss et al., 2016; Kummer et al., 2020; Shiers and Price, 2020; Tan and Kuner, 2021). However, pain is a network phenomenon involving multiple brain areas. We, therefore, extended our analyses beyond the mPFC and investigated aperiodic exponents at a whole-brain level (Figure 6).
 
@@ -114,19 +193,19 @@ In conclusion, our study did not find a relationship between the aperiodic compo
 
 ## Methods
 
-## Study design
+### Study design
 
 We investigated the relationship between E/I and pain using three public datasets acquired at the PainLabMunich, Technical University of Munich, Germany. The datasets included resting-state EEG data and clinical and demographic variables of 151 people with chronic pain and 115 healthy participants. Two datasets were already published and were re-analyzed. The third dataset was not analyzed so far and has been made publicly available for this project (https://osf.io/qgfma/). As each dataset was initially acquired for a different project, the EEG recording paradigm and the collected clinical and demographic variables slightly differed between datasets. We refer the reader to the original publications for further details regarding inclusion/exclusion criteria of participants, administered questionnaires, and technical characteristics of the EEG recordings (Heitmann et al., 2022; May et al., 2019; Ta Dinh et al., 2019; Tiemann et al., 2012).
 
 This study was pre-registered in OSF Registries on 11 May 2023 (https://osf.io/xshmy) as a secondary data pre-registration. In the pre-registration, we hypothesized (1) differences in aperiodic activity in the mPFC between people with chronic pain and healthy participants and (2) a relationship between aperiodic activity in the mPFC and pain in people with chronic pain. We performed these two pre-registered analyses for our three research questions (Figure 1). We complemented each pre-registered analysis with a multiverse analysis to check the robustness of the results across different methodological decisions.
 
-## Participants
+### Participants
 
 Dataset 1 contains cross-sectional data of 101 people with different chronic pain conditions and 88 healthy participants. The participants were recorded in three different cohorts. The first one included 20 people with chronic widespread pain and 22 healthy participants (Tiemann et al., 2012). The second one contained 34 people with chronic back pain (May et al., 2019). The third one contained 47 people with different types of chronic pain and 66 healthy participants (Ta Dinh et al., 2019). Dataset 2 is a longitudinal dataset comprising 50 participants with different types of chronic pain who underwent multimodal pain therapy (Heitmann et al., 2022). Only the first session (‘baseline’) is analyzed in the present study. Dataset 3 has not been previously analyzed or published and includes 27 healthy participants.
 
 The gender ratio of both groups was similar (people with chronic pain: 98 females and 53 males, healthy: 74 females and 41 males). The total sample included participants of a wide age range (people with chronic pain: 86–18, healthy: 79–18) but mostly white men and women who were currently pursuing or previously acquired higher education. Thus, the study sample constitutes a specific sample not necessarily representative of Germany or any region.
 
-## Data acquisition
+### Data acquisition
 
 During data acquisition sessions, participants first completed clinical and demographic questionnaires. Then, brain activity was recorded using EEG during the resting state, i.e., participants were asked to stay relaxed and wakeful without doing any particular task.
 
@@ -134,7 +213,7 @@ EEG data was recorded with 64 pasive electrodes in the standard 10/20 positions 
 
 The following demographic and clinical variables were used in this study: (1) Age of the participant at the recording date in years. (2) Average pain intensity, defined as the average pain intensity during the past four weeks obtained with a numerical rating scale from the PainDetect questionnaire (0=no pain, 10=maximum pain). In the Chronic Widespread Pain subset of Dataset 1 (N=20), this information was not available, and the variable ‘current pain at the time of the recording’ was used instead (0=no pain, 10=maximum pain). (3) Clinical diagnosis.
 
-## Data gathering, blinding, and preprocessing
+### Data gathering, blinding, and preprocessing
 
 The three datasets were merged into one, and participants’ IDs were randomly reassigned in the form sub-XXX, where XXX indicated a number between 001 and 266. In this way, researchers were blinded to the initial dataset to which the participant belonged. One participant in Dataset 2 was excluded because they had already been included in Dataset 1. Another participant of Dataset 2 was excluded due to technical problems during the recording. Therefore, the final sample size was 149 people with chronic pain and 115 healthy participants.
 
@@ -144,27 +223,31 @@ EEG data was automatically preprocessed in MATLAB (Mathworks, Natick, MA), with 
 
 For subgroup analyses (Research Question 2), we defined two subgroups based on the clinical diagnosis: people with Chronic Back Pain (CBP, N=80) and people with Chronic Widespread Pain (CWP, N=33). To perform these analyses, we randomly drew a subsample of healthy participants of equal size for each subgroup, matched in age, gender, and dataset to which they belonged following an iterative process. An initial random sample of healthy participants containing the same number of participants per initial study as the people with chronic pain subgroup was chosen. Then differences in age and gender between the samples were tested with Bayesian independent samples t-tests. If moderate evidence in favor of the null hypothesis was observed (BF <0.33) in both age and gender, the healthy sample was kept. If not, a different random sample of healthy participants was chosen, and the procedure was repeated.
 
-## Aperiodic component computation
+### Aperiodic component computation
 
 The aperiodic component is a recent measure of brain activity. Thus, how different analytical choices impact its calculation has not yet been characterized. For that reason, we performed the analyses using a two-step approach. First, we conducted the pre-registered analyses, for which we had pre-defined the steps and parameters to estimate the aperiodic activity. Second, we performed a multiverse analysis to investigate the robustness of the results across different methodological ways of computing the aperiodic activity.
 
 Specifically, we performed a specification curve analysis (Simonsohn et al., 2020) in which we first identified a set of specifications, i.e., equally valid analytical options to estimate aperiodic activity. We then estimated aperiodic activity, performed the pre-defined statistical test for each specification, and visualized the results in a specification curve. We conducted three inference tests on the specification curve to assess its statistical significance (see Statistical Analyses). In Table 1, we list all the analytical decisions and their parameters, and describe their potential influence on the estimation of the aperiodic activity. The combination of all these analytical options yielded 48 different specifications, including the approach of the pre-registered analysis.
 
-## Source localization
+#### Source localization
 
 To spatially localize brain activity, we performed a source reconstruction of the preprocessed, segmented, and band-passed filtered signals. We projected the data to source space using an array-gain Linear Constrained Minimum Variance (LCMV) beamformer. As a source model, we used the centroid regions of the 100-parcel version of the Schaefer atlas with 17 networks (Schaefer et al., 2018; Yeo et al., 2011). The lead field was built using a realistically shaped volume conduction model based on the Montreal Neurological Institute (MNI) template available in FieldTrip (standard_bem.mat) and the source model. Spatial filters were constructed with the covariance matrices of the band-pass filtered data and the described lead fields. A 5% regularization parameter was set to account for rank deficiencies in the covariance matrix. The dipole orientation was fixed to the direction of the maximum variance following the most recent recommendations (Westner et al., 2022).
 
 We defined our primary region of interest, the medial prefrontal cortex, as all the parcels from the above-mentioned version of the Schaefer atlas labeled medial prefrontal cortex (‘PFCm’), medial posterior prefrontal cortex (‘PFCmp’), and anterior cingulate cortex (‘Cinga’). Four parcels comprised the mPFC by this definition (Figure 1).
 
-## Power spectrum computation
+#### Power spectrum computation
 
 We reconstructed the virtual time series at each source location using the spatial filter and band-pass filtered sensor-level data. Power at each source location was then calculated between 1 and 100 Hz with a Fast Fourier Transform using the Fieldtrip function ft_freqanalysis and the ‘mtmfft’ method. We used Slepian multitapers with +/-1 Hz frequency smoothing for the pre-registered analyses. Average power spectra values are visualized in Supp. Fig. 3. For other specifications of the multiverse analysis, we used a single Hanning taper (Table 1).
 
 To investigate aperiodic activity in the mPFC, we constructed a representative power spectrum of this region by averaging the power spectra of the four source locations that defined the mPFC. This representative power spectrum of the mPFC was used later to model aperiodic activity. We investigated an alternative way to summarize mPFC activity in the multiverse analysis by estimating aperiodic activity for each source location and then averaging aperiodic parameters in the mPFC, i.e., the aperiodic exponent (Table 1).
 
-## Power spectrum parametrization
+#### Power spectrum parametrization
 
-Power spectra were parametrized into periodic and aperiodic components with a re-implementation in MATLAB of the ‘spectparam’ algorithm, formally known as FOOOF (Donoghue et al., 2020). The algorithm was reimplemented to integrate it with the multiverse analyses computation. The power spectrum was modeled in the log-log scale as a sum of an aperiodic component and N oscillatory peaks, each modeled individually by a Gaussian function. The aperiodic component, L, was modeled using a Lorentzian function.L(F)=b−log(k+Fχ)
+Power spectra were parametrized into periodic and aperiodic components with a re-implementation in MATLAB of the ‘spectparam’ algorithm, formally known as FOOOF (Donoghue et al., 2020). The algorithm was reimplemented to integrate it with the multiverse analyses computation. The power spectrum was modeled in the log-log scale as a sum of an aperiodic component and N oscillatory peaks, each modeled individually by a Gaussian function. The aperiodic component, L, was modeled using a Lorentzian function.
+
+$$
+L(F)=b−log(k+F^{χ})
+$$
 
 Here, b denotes the aperiodic offset, k the ‘knee’ parameter, which controls for the kink in the aperiodic component, F frequency, and χ the aperiodic exponent. The power spectrum model with parameters b, k, and χ was fitted to the data in an iterative procedure as in Donoghue et al., 2020 using non-linear least squares solvers implemented with the Matlab ‘lsqcurvefit’ function.
 
@@ -172,13 +255,13 @@ For the pre-registered analyses, we modeled the power spectrum using the setting
 
 Additionally, we extracted two measures of goodness of fit of the modeled power spectra: the mean average error (MAE) and the explained variance (R2). With the pre-registered settings, the power spectra of all participants could be satisfactorily modeled (MAE = 0.03 ± 0.01, R2=0.98 ± 0.01 [mean ± std]). Thus, no participant was excluded based on a poor model fit. In the multiverse analysis, in the eight specifications in which the power spectrum was modeled between 40 and 60 Hz and the knee parameter was estimated, the fitting algorithm did not converge in a minority of participants. These participants were excluded in the statistical analysis of the respective specification. The maximum number of discarded participants in a specification was 39.
 
-## Statistical analyses
+### Statistical analyses
 
-## Effect size
+#### Effect size
 
 In the context of pre-registration, we conducted a sensitivity analysis in G*power (Faul et al., 2007) to determine the effect size detectable with a two-tailed independent samples t-test. With our pre-defined sample size, given that the data had already been acquired, an α error probability of 0.05, and a statistical power of 0.95, we could detect medium effect sizes (Cohen’s d=0.44).
 
-## Statistical models
+#### Statistical models
 
 We investigated two main topics in our three research questions. First, we investigated whether the aperiodic component differs between people with chronic pain and healthy participants. Second, we explored the relationship between the aperiodic exponent and pain intensity in people with chronic pain. To control for age effects, we used linear regression models to remove the influence of age from aperiodic exponents and pain intensity ratings. Thus, all statistical tests were performed on the residuals obtained from the regression models.
 
@@ -188,7 +271,7 @@ Research question 3 investigated aperiodic activity at the whole-brain level. To
 
 We implemented the statistical tests in R (R Development Core Team, 2021) using the package ‘BayesFactor’ for the Bayesian tests and ‘specr’ for the visualization of the specification curve.
 
-## Inference criteria
+#### Inference criteria
 
 For research questions 1 and 2, statistical inference of the pre-defined analyses was based on Bayes Factors (BF10) obtained from each statistical test. Moderate evidence favoring the alternative hypothesis was inferred if BF10 >3, inconclusive evidence if 1/3 < BF10<3, and moderate evidence favoring the null hypothesis if BF10 <1/3. Bayes factors larger than 10 or smaller than 1/10 were considered strong evidence in favor or against the alternative hypothesis, respectively.
 
@@ -196,7 +279,7 @@ In the multiverse analysis, we integrated the statistical evidence from all the 
 
 For research question 3, we inferred statistical significance if the FDR-adjusted p-values were lower than 0.05.
 
-## Deviations from the pre-registration
+#### Deviations from the pre-registration
 
 During the pre-registration of research question 1, we proposed to perform a Bayesian ANCOVA with group (people with chronic pain/healthy) as a fixed factor and age as a covariate in JASP. However, it was impossible to perform this test programmatically for all specifications during the multiverse analysis. Therefore, we switched to independent samples t-tests, available in the R package ‘BayesFactor’ on age-corrected aperiodic exponents.
 

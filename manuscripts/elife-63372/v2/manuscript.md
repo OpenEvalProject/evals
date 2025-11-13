@@ -29,15 +29,23 @@ In the present study, we used the SVLT, and several variations on the basic task
 
 ## Results
 
-## SVLT: effects of reward magnitude on consummatory behavior
+### SVLT: effects of reward magnitude on consummatory behavior
 
 The SVLT (Amarante et al., 2017; Figure 1a) was used to assess reward encoding across the MFC and OFC as 12 rats experienced shifts in reward value defined by differences in sucrose concentration or fluid volume. Shifts in concentration were between 16% and 4% sucrose in a volume of 30 μL. Shifts in volume were between 30 and 10 μL containing 16% sucrose. Concentrations and volumes alternated over periods of 30 s (Figure 1b, left). Local field potential (LFP) activity was recorded from 16-channel multi-electrode arrays in the MFC in 10 of the 12 rats and OFC in 6 of the 12 rats (recording locations are shown in Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig1-v2.jpg)
+
+**Figure 1.:** (a) In the shifting values licking task, rats received access to one of two values of reward, with rewards alternating every 30 s. (b) Manipulation of reward value by changing either concentration or volume. (c) Types of behavioral licking measurements recorded in all licking tasks. (d,e,f) Rats licked more (d), faster (e), and over longer bouts (f) for the high concentration and large volume rewards. Single asterisk (*) denotes p < 0.05; double asterisk (**) denotes p < 0.001. Error bars represent 95% confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Locations of all electrodes plotted in the horizontal plane. (a) Medial frontal cortex (MFC) (n = 10 rats; 160 electrodes) electrode arrays were localized around area 32 (A32D) and M2 (FrA) from 1 to 3 mm ventral from the brain’s surface. (b) Orbital frontal cortex (OFC) (n = 6 rats; 96 electrodes) electrode arrays were localized around agranular insular (AI) and lateral orbital (LO) areas of OFC from 4.7 to 5.1 mm ventral from the brain’s surface. Reconstructions were plotted over atlas figures from Paxinos and Watson’s The Rat Brain in Stereotaxic Coordinates, 7th edition (2013).
 
 Several measures of licking behavior varied with sucrose concentration or fluid volume: lick counts, inter-lick intervals, lick rate, and bout duration (Figure 1c). All rats licked more for the high concentration reward compared to the low concentration reward (paired t-test; t(11)=10.76, p < 0.001) (Figure 1d). Rats also licked at a faster rate for the high concentration reward compared to the low concentration reward (paired t-test; t(11)=6.347, p < 0.001) (Figure 1e). Additionally, rats had increased bout durations when licking for the high concentration reward compared to the low concentration reward (paired t-test: t(11)=2.943, p = 0.013) (Figure 1f). There was no difference in variability of high or low concentration licks: the coefficient of variation for inter-lick intervals was the same (paired t-test: t(9)=0.864, p = 0.41).
 
 Rats behaved similarly when consuming the high concentration and large volume rewards. In volume manipulation sessions, rats emitted more licks for the large reward than the small reward (paired t-test; t(11)=4.99, p < 0.001). However, this difference in lick counts was less robust than the difference in high and low concentration rewards during concentration manipulation sessions (Figure 1d). Rats licked at a faster rate for large rewards compared to small volume rewards (paired t-test; t(11)=6.311, p < 0.001) (Figure 1e), and licking bouts were longer for large rewards compared to bouts to consume small rewards (Figure 1f), (paired t-test; t(11)=2.569, p = 0.027).
 
-## SVLT: coherent fluctuations in the theta range in the MFC and OFC
+### SVLT: coherent fluctuations in the theta range in the MFC and OFC
 
 LFPs in the MFC (N = 56) and OFC (N = 64) from four rats with arrays implanted in both cortical areas were recorded during the standard SVLT. The LFPs were analyzed with cross-correlation and a spectral method called directed coherence to assess the extent of coordinated fluctuations between the cortical regions (Figure 2a). Data from all rats tested with both shifts in sucrose concentration and fluid volume were used for this analysis. One of the rats had 16 LFPs recorded in each area (256 pairs). Two rats had 14 LFPs in MFC and 16 in OFC (224 pairs). The fourth rat had 12 LFPs in MFC and 16 in OFC (192 pairs). Data from a total of 896 electrode pairs were analyzed. As shown in Figure 2b, LFPs from both areas showed frank fluctuations during periods of sustained licking (bouts). Standard (non-directional) coherence for the LFPs peaked around a value of 0.6 near the licking frequency (Figure 2c). By measuring cross-correlation over a range of lags (time domain directionality), we found evidence for near zero-lag correlations. (This analysis is done in the time domain and does not account for frequency-specific directional influences.)
 
@@ -49,7 +57,7 @@ Directed coherence values at the licking frequency were larger for MFC leading O
 
 To further examine the role of spatial location on directed coherence, we denoted the locations of the recordings along the arrays as rostral or caudal (i.e. for each linear array with eight electrodes, the four most rostral electrodes were denoted as rostral and the rest as caudal). An example of directed coherence over frequencies up to 30 Hz for the rostral and caudal sites (Figure 2b) is shown in Figure 2g. Directed coherence was larger for the direction MFC → OFC for most rostral electrode in the MFC and both the rostral and caudal electrodes in the OFC. The caudal electrode in the MFC had larger directed coherence for the direction MFC → OFC for the caudal, but not the rostral, electrode in OFC. A group summary of these findings, at the licking frequency, is shown in Figure 2h. Here, the locations of the electrodes was further split as medial and lateral, and differences in directed coherence were apparent for rostral and caudal sites in the MFC and medial sites in the OFC (right half of the plot). Directed coherence was equivocal for rostral and caudal sites in the MFC and lateral sites in the OFC (left half of the plot). Based on anatomical mapping of the arrays, the medial and lateral sites in the OFC were associated with the deep and superficial layers of the cortex, respectively. These findings suggest cross-laminar differences in the timing of the LFP fluctuations, with the rostral part of the MFC ‘driving’ fluctuations in the deep layers of the OFC, and possibly serving as feedback from the MFC to the OFC (Gabbott et al., 2003).
 
-## SVLT: lick entrainment in MFC and OFC tracks reward magnitude
+### SVLT: lick entrainment in MFC and OFC tracks reward magnitude
 
 We next aimed to determine if there were electrophysiological differences in MFC and OFC during access to the different types of rewards. Lick-field coherence (using methods originally developed for spike-field coherence in the Neurospec library for MATLAB, Halliday et al., 1995). LFPs from both areas were coherent with licks at the licking frequency, and not at higher harmonic frequencies of licking (Figure 3a). Coherence levels were higher for licks that delivered high-value fluid (concentration and volume) compared to low-value fluid in MFC (paired t-test; concentration: t(95)=39.972, p < 0.001; volume: t(95)=11.643, p < 0.001) and OFC (paired t-test: concentration: t(91)=17.386, p < 0.001; volume: t(91)=18.970, p < 0.001) (Figure 3a, b). Furthermore, coherence was higher for high-value licks in the concentration shift sessions compared to the volume shift sessions in MFC (paired t-test; t(95)=6.901, p < 0.001), but not the OFC (paired t-test; t(91)=-0.401, p = 0.688). Phase angles at the licking frequency are shown in Figure 3c. With lick-field coherence ranging between 0 and 0.5, this analysis suggests that the LFP fluctuations at the licking frequency are only partially accounted for by the animals’ licking behavior and the extent of entrainment differs between cortical areas (larger in MFC) and is sensitive to reward value (larger for higher value fluid).
 
@@ -59,19 +67,35 @@ We next aimed to determine if there were electrophysiological differences in MFC
 
 Three additional measurements of LFP activity were examined: amplitude (as measured by the size of event-related potentials (ERP); Figure 4—figure supplement 1a), spectral power (as measured by event-related spectral power (ERSP); Figure 4—figure supplement 1b), and phase (as measured by inter-trial coherence (ITC), Figure 4—figure supplement 1c). Similar to results from lick-field coherence, we found lick-entrained activity in MFC and OFC that varied with both differences in sucrose concentration and fluid volume (Figure 4). ERPs showed evidence for time-locked rhythmic fluctuations in LFPs from both cortical areas (Figure 4b and f). Both cortical areas showed elevated ITC between 4 and 8 Hz for licks that delivered the high concentration liquid sucrose but not the low concentration sucrose (Figure 4c and g). That is, the phase angles of the LFP fluctuations at the times of licks were more consistent when rats consumed the high concentration fluid compared to the low concentration fluid. This result was observed in all rats that were tested (dark blue lines in Figure 4d and h) (MFC: F(1,278)=443, p < 0.001; OFC: F(1,177)=77.31, p < 0.001; one-way ANOVAs with an error term for within-subject variation). Analysis of phase coherence (Figure 4—figure supplement 1d) and event-related power (Figure 4—figure supplement 1e) revealed effects solely in the 4–8 Hz (theta) frequency range.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig4-v2.jpg)
+
+**Figure 4.:** (a,e) Rats were implanted with a 2 × 8 electrode array in either MFC (a) or OFC (e); representative coronal sections are shown. (b,f) Event-related potentials during concentration and volume manipulation sessions in the shifting values licking task for MFC (b) and OFC (f). (c,g) Spectral inter-trial coherence (ITC) time-frequency plots revealed strong phase locking during licks for the high concentration and large volume (left sides) rewards in both MFC (c) and OFC (g). Plots are from one electrode from one individual animal. ITC is consistently strongest around 4–8 Hz. (d,h) Grouped data from all rats in both concentration and volume sessions in MFC (d) and OFC (h) showed strongest ITC during licks for the high-value reward. Double asterisk (**) denotes p < 0.001. Error bars represent 95% confidence intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Event-related potentials (ERPs) were recorded around licks (time 0) after LFP activity was filtered and z-scored. Peak-to-peak analysis was performed on the ERP centered around each lick with a +1 inter-lick interval (ILI) window to calculate the amplitude size (red limits = maximum minus the minimum amplitude of the ERP). (b,c) Spectral measures of power (b) and phase (c). Grouped statistics were based on the mean maximum event-related spectral power (ERSP) and inter-trial phase coherence (ITC) value from 2 to 12 Hz and around +1 ILI (gray window). Vertical lines denote the rat’s average ILIs. Horizontal line denotes the rat’s median lick rate. (d) Maximum ITC values over frequencies from 0 to 100 Hz from all 16 MFC electrodes from one example rat. (e) Maximum ERSP measures over frequencies from 0 to 100 Hz in all 16 MFC electrodes from one example rat.
+
 To assess differences in power, we used a peak-to-peak analysis of ERPs during licks for the high-value and low-value rewards. The measure calculates the difference in the maximum and minimum ERP amplitude using a window centered around each lick. The size of the window was twice each rat’s median inter-lick interval. LFPs in MFC showed increased amplitudes for high concentration rewards, as opposed to low concentration rewards (one-way ANOVA: F(1,278)=34.19, p < 0.001). Figure 4b shows MFC ERPs for high and low concentration rewards of an example rat. This effect was not significant in OFC ERPs, as seen in Figure 4f (F(1,177)=0.557, p = 0.456). We also measured ERSP, and although there was a decrease in MFC power from licks for the high to low concentration rewards specifically in the 4–8 Hz range (F(1,278)=18.72, p < 0.001; one-way ANOVA), post hoc testing revealed no relevant significance between high and low concentration licks (p = 0.413). There was no major difference in ERSP measures in OFC (F(1,177)=0.039, p = 0.843).
 
 In sessions with shifts in fluid volume, ERPs in MFC or OFC did not distinguish between large versus small volume rewards (MFC: F(1,216)=0.865, p = 0.354; OFC: (F(1,179)=1.876, p = 0.173); one-way ANOVAs (Figure 4b and f, bottom). There was no major difference in ERSP during licks for large or small rewards in MFC or OFC (MFC: F(1,216)=0.877, p = 0.35; OFC: F(1,179)=1.76, p = 0.186); one-way ANOVAs). However, in both MFC and OFC, rats showed similar 4–8 Hz phase locking for large rewards (Figure 4c and g, bottom), closely resembling what we observed with high concentration rewards (Figure 4c and g top). Phase locking was significantly increased for small rewards (MFC: F(1,216)=138.5, p < 0.001; OFC: F(1,179)=280.8, p < 0.001; one-way ANOVA) and was observed in all rats that were tested (light blue lines in Figure 4d and h).
 
 These findings suggest that LFP activity in both MFC and OFC similarly encodes aspects of preferred versus less preferred reward options; 4–8 Hz phase locking was strongest for both the high concentration and large volume rewards, which may be evidence that the animal is acting within a preferred state with the goal of obtaining their most ‘valued’ reward. These findings provided further evidence suggesting that the entrainment of neural activity in MFC and OFC to the lick cycle tracks reward magnitude.
 
-## Blocked-interleaved task: engagement in and the vigor of licking vary with reward expectation
+### Blocked-interleaved task: engagement in and the vigor of licking vary with reward expectation
 
 The same group of 12 rats were subsequently tested in an adjusted version of the SVLT, which will be referred to as the blocked-interleaved task (Figure 5a). In the first 3 min of the task, that is, the ‘blocked’ phase, rats behaviorally showed their typical differentiation of high versus low concentration rewards by emitting more licks for the high concentration reward (Figure 5b, left), and licked at a faster rate (Figure 5c, left). However, this pattern changed when the rewards were randomly presented in the ‘interleaved’ part of the task. With a randomly interleaved reward presentation, rats licked nearly equally for high and low concentration rewards (Figure 5b, right; see also Figure 5—figure supplement 1). We performed a two-way ANOVA on the number of licks by each lick type (high or low concentration) and portion of the task (blocked or interleaved). There was a significant interaction between concentration of reward and the blocked or interleaved portion of the task (F(1,33)=24.51, p < 0.001). Post hoc analyses revealed that while there was a significant difference in high and low concentration licks during the blocked portion (p < 0.001), there was no difference between high and low concentration licks during the interleaved portion of the task (p = 0.98). These findings suggest that shifting from blocked to interleaved presentations of the two rewards increased the animals’ engagement in licking for the lower value fluid.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig5-v2.jpg)
+
+**Figure 5.:** (a) Rats participated in a modification of the shifting values licking task, called the blocked-interleaved task, in which they received alternating access to high and low concentrations of liquid sucrose for 3 min and then received interleaved (and thus unpredictable) presentations of the two levels of sucrose for the rest of the session. (b) Total licks emitted, a measure of task engagement, for both high and low concentration rewards during the blocked and interleaved portion of the task. Rats licked less for both rewards when rewards were randomly interleaved. (c) Lick rate, a measure of response vigor, was similar for both rewards in the interleaved, but not blocked, portion of the task. Asterisk denotes p < 0.05. Error bars represent 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sessions were split into sequential 30 s windows and the various measures of licking behavior were plotted. An example from one of the rats is shown here. The plots in panel a depict high- and low-value licks per block, and the dashed line is the mean number of high-value licks over all blocks. The plots in panel b show licking frequency for the high- and low-value fluids, and the dashed line is the median licking rate for the high-value fluid over all blocks. There was a clear breakpoint in licks emitted and the licking frequency at the transition from blocked to interleaved presentations of the rewards (vertical dashed line). Licking frequency was lower when rats licked for the lower value fluid when it was presented in the blocked part of the test sessions, and then increased to the same frequency as when they licked for the higher value fluid in the interleaved part of the test sessions. Total licks were higher for the higher value fluid when it was presented in blocks compared to the interleaved part of the session. Licks for the lower value fluid increased starting from the onset of the interleaved part of the session.
+
 Additionally, there was a significant difference in lick rate by each lick type and portion of the task (F(1,33)=23.13, p < 0.001; two-way ANOVA) (Figure 5c). Post hoc analyses revealed that rats licked significantly faster for high versus low concentration rewards during the blocked portion (p < 0.005). Lick rates for high versus low concentration licks during the interleaved part of the task were not significantly different (p = 0.99). Notably, lick rate during access to either high concentration (p = 0.005) or low concentration (p = 0.002) rewards during the interleaved portion was significantly increased from lick rate during access to the low concentration reward in the blocked portion of the task. These changes in lick rate were not accounted for by the changes in lick counts reported above (Spearman’s rank correlation: 0.44242, p = 0.20042) and suggest that shifting from blocked to interleaved presentations of the two rewards increased the vigor with which the rats licked for the lower value fluid.
 
-## Blocked-interleaved task: MFC rhythmicity tracks response vigor
+### Blocked-interleaved task: MFC rhythmicity tracks response vigor
 
 Having established that the blocked-interleaved task can reveal effects of reward expectation on task engagement and response vigor, we next examined how neural activity in the MFC and OFC varies with these behavioral measures. We assessed changes in lick-entrained ERPs and their amplitudes (Figure 6a and d), ERSP, and ITC (phase locking) (Figure 6b,c and e,f). LFPs in MFC and OFC showed strong 4–8 Hz phase locking during licks for the high concentration rewards in the blocked phase of the task (Figure 6b and f). We performed a two-way ANOVA on maximum ITC values (Figure 6c and e) from LFPs in both MFC and OFC for each rat and each electrode channel with interaction terms for lick type (high or low concentration reward) and portion of the task (blocked or interleaved reward access), and found a significant interaction of lick type by portion of the task (MFC: F(1,572)=10.45, p = 0.001; OFC: F(1,363)=12.119, p < 0.001). Post hoc analyses revealed that while there was a significant difference in phase locking of licks for high versus low concentration in the blocked portion (MFC: p < 0.001; OFC: p < 0.036), there was no difference in phase locking of licks for high versus low concentration rewards in the interleaved portion of the task (MFC: p = 0.999; OFC: p = 0.973).
 
@@ -95,7 +119,7 @@ In OFC, ITC values (Figure 7d) did not match either the total-lick (Figure 7a) o
 
 Together with the results summarized in Figure 6, these findings from post hoc testing in Figure 7 provide evidence that MFC and OFC encode different aspects of licking and reward value. There was a clear match between the pattern of lick entrainment in the MFC, but not the OFC, with the animals’ licking rates. The correspondence between lick entrainment in MFC and the animals’ lick rates provides support for the idea that neural activity in MFC is sensitive to response vigor. By contrast, OFC might be involved in more general aspects of motivation, for example, to lick or not (reward evaluation) based on reward magnitude or the predictability of the environment.
 
-## Three reward task: behavioral evidence for effects of relative reward value
+### Three reward task: behavioral evidence for effects of relative reward value
 
 The previous experiments assessed comparison of two levels of rewards (either high/low concentration or large/small volume) in the SVLT. After finding behavioral and electrophysiological differences between two rewards, we aimed to investigate how animals process reward with contexts involving three different rewards. In this experiment, we assessed if rats process rewards in a relative manner or in an absolute manner by implementing a third intermediate (8% wt/vol sucrose concentration) reward.
 
@@ -109,7 +133,7 @@ Licking varied with both reward value and block, that is, low versus intermediat
 
 There was a more subtle effect for differences in bout duration across the different rewards (F(3,33)=5.333, p = 0.004; two-way ANOVA) (Figure 8c). Post hoc analyses revealed no significant difference in bout duration for the 4% versus 8% in block 1 (p = 0.098), yet there was a significant decrease in bout durations during access to the 8% versus 16% in block 2 (p = 0.023). Bout durations during access to the intermediate 8% reward in block 1 versus block 2 were not different (p = 0.20). While there was a significant effect of lick type on lick rate (F(3,33)=10.59, p < 0.001; two-way ANOVA), post hoc analyses revealed no major differences in lick rate of the licks for rewards in block 1 (p = 0.17) or block 2 (p = 0.31) (Figure 8d), nor for the lick rate for 8% licks in block 1 versus block 2 (p = 0.76).
 
-## Three reward task: neural activity does not reflect relative reward value encoding
+### Three reward task: neural activity does not reflect relative reward value encoding
 
 The behavioral measures summarized above established that the three reward task can reveal effects of relative value comparisons. We next analyzed electrophysiological signals from MFC and OFC (Figure 9) to determine if they tracked the animals’ behavior in the task, and might encode relative differences in value, or some other aspect of value, such as the absolute differences between the three rewards. We found a significant difference between ITC values for the three different rewards in both MFC and OFC (MFC: F(3,627)=154.4, p < 0.001; OFC: F(3,363)=13.29, p < 0.001; two-way ANOVAs). Tukey post hoc analyses revealed a difference in ITC values between intermediate and low licks in block 1 (MFC: p < 0.001; OFC: p = 0.003), and a difference in ITCs between high and intermediate licks in block 2 for MFC only (MFC: p < 0.005; OFC: p = 0.313)(Figure 9b, c and e,f). There was no difference between ITC values from intermediate (8%) block 1 and intermediate block 2 licks in both regions (MFC: p = 0.881; OFC: p = 0.705). There was a significant difference between MFC ITC values for block 1 intermediate (8%) licks and block 2 high (16%) licks (p = 0.028), as well as a significant difference between MFC ITC values for block 1 low (4%) licks and block 2 intermediate (8%) licks (p < 0.001). Signals from the OFC did not differ across these conditions.
 
@@ -121,13 +145,25 @@ Peak-to-peak amplitude analysis of the three reward task revealed a significant 
 
 The ITC findings, at least in MFC, support the idea that the ‘higher value’ and ‘lower value’ rewards in each context are being encoded differently across contexts. They indicate that MFC might instead encode absolute reward value instead of relative reward value. Qualitatively, the ITC values in MFC seem to have the same pattern as the lick rate (Figure 10), similar to how MFC values reflected lick rate in the blocked-interleaved task. However, post hoc statistical testing revealed important differences. For example, the ITC in MFC differed significantly for high- versus low-value rewards in both blocks 1 and 2, but lick rate did not. Importantly, post hoc analyses revealed a significant difference in ITC values in MFC for every reward combination except for the intermediate block 1 and intermediate block 2 rewards, which reflects our operational definition for absolute encoding of value (see Figure 10—figure supplement 1a, b).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig10-v2.jpg)
+
+**Figure 10.:** (a,b) Behavioral measures replotted with significance bars for each combination reward. MFC inter-trial coherences (ITCs) (c) did not show the exact same pattern as lick rate, which is different from Figure 5. OFC ITCs (d) did not look like total licks or lick rate. Asterisk denotes p < 0.05. Error bars represent 95% confidence intervals.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (a) If rewards are processed in an absolute manner, we expected to see a graded expression (in lick counts, lick rate, bout duration, or inter-trial coherence [ITC] values) of reward value where the high (16%) concentration reward expression is greatest, followed by equal expression of the intermediate (8%) reward and then low expression of the low (4%) concentration reward. (b) If rewards are processed in a relative manner, we expected to see a comparative process of rewards, where the ‘high value’ (8% in block 1 or 16% in block 2) are processed similarly, and the focus is on the comparison within each block or context. (c) An alternative hypothesis which incorporates a combination of relative and absolute processing of reward value, with partially mixed results of each process in a and b.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/63372/elife-63372-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** In the third block of the three reward task, rats received access to 16% and 4% sucrose. In this block, licks for 16% sucrose can be compared against licks for both 4% and 8%, and likewise the licks for 8% sucrose can be compared against licks for 4% and 16%. The goal was to attempt to examine if medial frontal cortex (MFC) or orbital frontal cortex (OFC) indeed tracked value in an absolute manner. Overall, rats greatly decreased the number of licks emitted for the 4% sucrose during block 3 and therefore we could not examine their subsequent electrophysiological findings. However, almost all rats (n = 8 in MFC, and n = 5 in OFC) emitted at least the minimum criteria of licks for 16% sucrose. Behaviorally, rats emitted more licks for the high-value (16%) sucrose in block 3 as opposed to licks for the low-value (4%) sucrose in block 3 (p < 0.005), although there was no difference in total licks emitted for block 3 high-value versus block 2 intermediate value. There was a significant decrease in the block 3 high-value licks as opposed to block 2 high-value licks (p < 0.001). Lick rate was also re-analyzed including block 3 high-value licks, but lick rate for low-value (4%) licks could not be analyzed due to a low number of licks not passing criteria. Lick rate for block 3 high-value licks were not significantly different from block 2 high-value licks (p = 0.99), nor from block 2 intermediate licks (p = 0.83). Statistics for MFC: block 3 high-value inter-trial coherences (ITCs) (95% CI: 0.716, 0.757) were not significantly different from block 2 high-value ITCs (p = 0.113) (95% CI: 0.671, 0.715). Block 3 high-value ITCs were significantly increased from both intermediate (8%) value ITCs in block 1 (95% CI: 0.619, 0.672) and block 2 (95% CI: 0.610, 0.658) (p < 0.001 for both). These findings support the hypothesis of MFC possibly encoding reward value in an absolute manner. Statistics for OFC: block 3 high-value ITCs (95% CI: 0.540, 0.611) were not significantly different from block 2 high-value ITCs (p = 0.789) (95% CI: 0.497, 0.580). Block 3 high-value ITCs were significantly increased from block 2 intermediate-value ITCs (p = 0.025) (95% CI for intermediate block 2: 0.450, 0.535), but block 3 high-value ITCs were not significantly different from block 1 intermediate ITCs (block 1 intermediate 95% CI: 0.505, 0.584). The other comparisons (block 2 intermediate versus block 2 high value) were not significant (p = 0.339).
+
 The encoding of value was less clear based on ITC measures from the OFC. These values did not directly match the licking behavior (in either rate, total licks, or bout duration) (compare Figure 10 with Figure 8d), and did not show clear evidence for either absolute or relative encoding of reward. Instead, the results from Figure 10D indicate that OFC might instead encode reward value in a mixed absolute/relative manner (as in Figure 10—figure supplement 1 and Figure 10—figure supplement 2). However, these findings should be interpreted in the light of uneven sampling between areas, with fewer recordings done in the OFC. It is therefore possible that our results are underpowered for the OFC and new experiments could reveal an alternative interpretation.
 
 ## Discussion
 
 We investigated the role of MFC and OFC in processing reward information as rats participated in various consummatory licking tasks. Rats process and express changes in reward size in roughly the same manner as with reward concentration, both behaviorally and electrophysiologically. LFP activity in both MFC and OFC is sensitive to changes in reward type (both volume and concentration). Our results reveal context-dependent value signals in both regions through randomly presented rewards and by introducing a third reward in the task. Behaviorally, rats show evidence for a relative expression of rewards, while neural activity in MFC and OFC did not reflect relative encoding of reward. Together, our findings suggest that rats sample rewards and commit to consuming a given reward when they are able to predict its value, and this behavior is coupled to neural activity in MFC and OFC that encode both the value of the reward and the animal’s consummatory strategy. The subtle differences between the two regions follow the hypothesis that these areas provide different roles during consummatory behavior. We additionally provide evidence for MFC representing action-outcome relationships, as MFC ITC activity is more strongly correlated to the action of licking and may signal information about the ‘value of the action’.
 
-## Rhythmic activity and reward processing
+### Rhythmic activity and reward processing
 
 Similar to our previous studies (Horst and Laubach, 2013; Amarante et al., 2017), neural activity was entrained to the lick cycle across all tasks in both MFC and OFC. Entrainment was strongest for the high-value reward (either of size or sweetness) and varied with the animals consummatory strategy (persistently lick a highly preferred option or sample fluid and wait for better option). Previous studies have viewed this rhythmic activity as being driven by the act of licking, as rats naturally lick at 6–7 Hz (Travers et al., 1997; Weijnen, 1998; Horst and Laubach, 2013). However, the activity cannot be explained solely by licking, as there are instances where phase locking and behavior do not show the same pattern (e.g. the blocked-interleaved experiment), and the variety of studies reported here and in Amarante et al., 2017, suggest a higher order role for rhythmic activity in the control of consummatory behavior.
 
@@ -137,11 +173,11 @@ Furthermore, using directed coherence to examine directional influences of recor
 
 We propose a functional interpretation of these signals based on findings on ‘medial frontal theta’ (Cavanagh and Frank, 2014) in other types of behavioral tasks. There have been several proposals for the role of frontal theta in information processing. One idea is that the rhythm acts to break up sensory information into temporal chunks (Uchida and Mainen, 2003), and is related to the notion of a global oscillatory signal to synchronize neural activity across multiple brain structures throughout the taste-reward circuit (Gutierrez and Simon, 2013). Another idea is that frontal theta acts as an action monitoring signal (Cavanagh et al., 2012; Narayanan et al., 2013; Laubach et al., 2015), which can be generated through simple recurrent spiking network models (Bekolay et al., 2014). Finally, instead representing a specific function, frontal theta may act as a convenient ‘language’ for distant brain regions to exchange information with each other (Womelsdorf et al., 2010). Our general findings contribute to this literature by suggesting that frontal theta acts as a value signal to guide consummatory behavior, which is the ultimate consequence of many goal-directed actions in natural environments.
 
-## A common code for reward magnitude
+### A common code for reward magnitude
 
 A major finding in the present study (Figures 3 and 4) was the similar electrophysiological signals in MFC and OFC are associated with the consumption of high and low concentration liquid sucrose rewards and large and small volume rewards. Although other studies have found either decreases (Kaplan et al., 2001) or increases in behavior with increases in concentration and volume rewards in the same study (Hulse et al., 1960; Collier and Myers, 1961; Collier and Willis, 1961), these studies did not investigate the electrophysiological correlates of consuming rewards. Our study is the first to show a generalized ‘value signal’ in the frontal cortex that scales with increased size and increased concentration of liquid sucrose. These signals might underlie the computation of a common currency (Montague and Berns, 2002; Levy and Glimcher, 2011; Levy and Glimcher, 2012; Strait et al., 2014) for the amount of nutrient available in a given food item and contribute to value-guided control of consumption.
 
-## Evidence for the contextual control of consumption
+### Evidence for the contextual control of consumption
 
 In the blocked-interleaved task (Figure 5A), rats who licked more, longer, and faster for the high concentration reward when rewards were blocked did not continue to do so during interleaved portion of the task (Figure 5B–C). Instead, they licked nearly equally for the high and low concentration solutions, a result that is suggestive of the loss of positive contrast effects for the higher value fluid that is commonly found in the blocked design (Parent et al., 2015a). Despite these differences in behavior, the rats’ LFPs in MFC and OFC showed high levels of lick-entrained activity, essentially equal to that found during consumption of the higher value fluid in the blocked part of the session.
 
@@ -153,7 +189,7 @@ Our electrophysiological results support theories of absolute reward value (Hull
 
 Notably, in several instances we found a mismatch of behavioral output and corresponding magnitude of neural activity. This was evident in the blocked-interleaved task, where MFC and OFC ITCs did not reflect total licks emitted, as well as in the three reward task where MFC and OFC ITCs did not reflect total licks or lick rate. This is in opposition to the SVLT, where MFC and OFC activity directly matched behavioral output of licks, lick rate, and bout duration. These findings reveal the importance of recording careful behavioral output with electrophysiological recordings, and it remains an open discussion on the mechanisms behind correlative behavior versus diverging behavioral output from neural activity.
 
-## Functional interpretations of phase entrainment
+### Functional interpretations of phase entrainment
 
 The original observation that suggested phase locking of licks to MFC field potentials was reported in Horst and Laubach, 2013. Peri-event plots of LFPs around the times of licks revealed ERPs. The nature of ERPs has been researched extensively in the EEG literature. A leading view is that ERPs arise from a synchronization of the phase of an ongoing rhythm and/or from the superposition of inputs to the region of cortex near the electrode (e.g. Klimesch et al., 2007; Sauseng et al., 2007). Evidence for phase locking near the licking frequency can be found in Figures 1 and 3 in Amarante et al., 2017, with some exceptions being at slightly higher frequencies, for example, Figure 8E in that study. By contrast, LFP power is typically tonic in the range of delta (<4 Hz) and the animals’ licking frequency mostly showed only minor changes in power (1,3Figure 1 and 3 in Amarante et al., 2017). Furthermore, in another experiment with periodic reinforcement, we reported that phase but not power varied reinforcement (Figure 7, Amarante et al., 2017). These findings suggest that phase, not power, has a relationship with reinforced licking behavior, and the same determinants for phase locking likely apply to the results reported here.
 
@@ -163,55 +199,156 @@ Our finding of zero-lag correlation across frequencies (Figure 2D) further sugge
 
 It is not clear from our studies if the reduction in entrainment when low-value rewards are available is an active or passive process. For example, it is possible that some active input to the MFC and OFC denotes the temporal context (e.g. dopamine, hippocampus), enhancing entrainment when the higher value option is available. Alternatively, signals from sensorimotor regions of the frontal cortex, which sit in between the MFC and OFC, the oral sensory and motor cortices (Yoshida et al., 2009), might be reduced during periods with less intense licking, leading to a passive reduction in overall frontal lick entrainment. Future studies are needed to address these neural mechanisms of licking-related synchrony in the rodent frontal cortex.
 
-## Differences in reward signaling between MFC and OFC
+### Differences in reward signaling between MFC and OFC
 
 The electrophysiological results from the blocked-interleaved task and three reward task suggest that MFC and OFC, while showing similar results overall, may be contributing to processing reward information in different ways. It is important to note that due to a smaller sample size of OFC recordings, the less clear findings in OFC may indeed require further future experiments. However, our findings do follow previous work on subtle differences of these areas. In accord with a previous theory on proposed MFC and OFC functions (Balleine and Dickinson, 1998; Balleine and Dickinson, 2000; Schoenbaum et al., 2009; Sul et al., 2011; Passingham and Wise, 2012), MFC activity may be acting to maintain and optimize licking behavior in an action-centric manner, as reflected in measures such as the licking rate, a measure associated with vigor and sensitive to inactivation of the same cortical area in a progressive ratio licking task (Swanson et al., 2019). By contrast, OFC activity generally reflected differences in reward value, perhaps due to the different sensory properties of the fluids (Gutierrez et al., 2006), and was not sensitive to licking rate (vigor) or task engagement (total licks).
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Sprague-Dawley, Long-Evans</td>
+      <td>Charles River, Envigo</td>
+      <td>NA</td>
+      <td>Rat (male)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Precision Syringe Pump Controller</td>
+      <td>https://doi.org/10.1523/ENEURO.0240-19.2019</td>
+      <td>SCR_021493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Med-PC</td>
+      <td>MedAssociates</td>
+      <td>SCR_012156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNU Octave</td>
+      <td>https://www.gnu.org/software/octave/</td>
+      <td>SCR_014398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>https://www.r-project.org/</td>
+      <td>SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroExplorer</td>
+      <td>https://www.neuroexplorer.com/</td>
+      <td>SCR_001818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatPlotLib</td>
+      <td>https://matplotlib.org/</td>
+      <td>SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IPython</td>
+      <td>https://ipython.org/</td>
+      <td>SCR_001658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter</td>
+      <td>https://jupyter.org/</td>
+      <td>SCR_018416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seaborn</td>
+      <td>https://seaborn.pydata.org/</td>
+      <td>SCR_018132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EEGLab</td>
+      <td>https://sccn.ucsd.edu/eeglab/index.php</td>
+      <td>SCR_007292</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All procedures carried out in this set of experiments were approved by the Animal Care and Use Committee at American University (Washington, DC). Procedures conformed to the standards of the National Institutes of Health Guide for the Care and Use of Laboratory Animals. All efforts were taken to minimize the number of animals used and to reduce pain and suffering.
 
-## Animals
+### Animals
 
 Male Long-Evans and Sprague-Dawley rats weighing between 300 and 325 g were used in these studies (Charles River, Envigo). As relatively few animals were used, we did not investigate sex differences in reward processing in this study. Sex differences among rats are well known for how liquid sucrose is consumed (e.g. Sclafani et al., 1987) and classic studies of incentive contrast (e.g. Flaherty and Rowan, 1986), which led to the design of the behavioral procedures used here, were mostly carried out using male rats. As such, we cannot comment on sex differences or how reward value is encoded in the frontal cortex of female rats. These important topics require further study.
 
 Rats were given 1 week to acclimate with daily handling prior to behavioral training and surgery and were then kept with regulated access to food to maintain 90% of their free-feeding body weight. They were given ~18 g of standard rat chow each day in the evenings following experiments. Rats were single housed in their home cages in a 12 hr light/dark cycle colony room, with experiments occurring during the light cycle. A total of 12 rats had a 2 × 8 microwire array implanted into either the MFC (N = 6), the OFC (N = 2), or one array in each area contralaterally (N = 4). Arrays consisted of 16 blunt-cut 50 µm tungsten (Tucker-Davis Technologies) or stainless steel (Microprobes) wires, separated by 250 µm within each row and 500 µm between rows. In vitro impedances for the microwires were ~150 kΩ.
 
-## Surgeries
+### Surgeries
 
 Animals had full access to food and water in the days prior to surgery. Stereotaxic surgery was performed using standard methods. Briefly, animals were lightly anesthetized with isoflurane (2.5% for ~2 min), and were then injected intraperitoneally with ketamine (100 mg/kg) and dexdomitor (0.25 mg/kg) to maintain a surgical plane of anesthesia. The skull was exposed, and craniotomies were made above the implant locations. Microwire arrays were lowered into MFC (coordinates from bregma AP: +3.2 mm; ML: +1.0 mm; DV: –1.2 mm from the surface of the brain, at a 12-degree posterior angle; Paxinos and Watson, 2013) or into OFC (AP: +3.2 mm, ML: +4.0 mm, DV: –4.0 mm; Paxinos and Watson, 2013). The part of the MFC studied here is also called ‘medial prefrontal cortex’ in many rodent studies and the region is thought to be homologous to the rostral ACC of primates (Laubach et al., 2018). Four skull screws were placed along the edges of the skull and a ground wire was secured in the intracranial space above the posterior cerebral cortex. Electrode arrays were connected to a head-stage cable and modified Plexon preamplifier during surgery, and recordings were made to assess neural activity during array placement. Craniotomies were sealed using cyanocrylate (Slo-Zap) and an accelerator (Zip Kicker), and methyl methacrylate dental cement (AM Systems) was applied and affixed to the skull via the skull screws. Animals were given a reversal agent for dexdomitor (Antisedan, 0.25 mg/mL, s.c.), and Carprofen (5 mg/kg, s.c.) was administered for postoperative analgesia. Animals recovered from surgery in their home cages for at least 1 week with full food and water, and were weighed and monitored daily for 1 week after surgery.
 
-## Behavioral apparatus
+### Behavioral apparatus
 
 Rats were trained in operant chambers housed within a sound-attenuating external chamber (Med Associates; St. Albans, VT). Operant chambers contained a custom-made glass drinking spout that was connected to multiple fluid lines allowing for multiple fluids to be consumed at the same location. The spout was centered on one side of the operant chamber wall at a height of 6.5 cm from the chamber floor. Tygon tubing connected to the back of the drinking spout administered the fluid from a 60 cc syringe hooked up to either a PHM-100 pump (Med Associates) for standard experiments or to a customized open-source syringe pump controller (Amarante et al., 2019) that is programmed by a teensy microcontroller to deliver different volumes of fluid with the same delivery time from one central syringe pump. A ‘light-pipe’ lickometer (Med Associates) detected licks via an LED photobeam, and each lick triggered the pump to deliver roughly 30 μL per 0.5 s. Behavioral protocols were run though Med-PC version IV (Med Associates), and behavioral data was sent via TTL pulses from the Med-PC software to the Plexon recording system.
 
-## Shifting values licking task
+### Shifting values licking task
 
 The operant licking task used here is similar to those previously described (Parent et al., 2015a; Parent et al., 2015b; Amarante et al., 2017). Briefly, rats were placed in the operant chamber for 30 min, where they were solely required to lick at the drinking spout to obtain a liquid sucrose reward. Licks to the light-pipe lickometer would trigger the syringe pump to deliver liquid sucrose over 0.5 s. In other words, the first lick to the spout triggers the pump and reward is then delivered for 0.5 s, where any lick within that 0.5 s window would also be rewarded. The next lick after 0.5 s would subsequently trigger the pump to turn on again for 0.5 s. Every 30 s, the reward alternated between high (16% wt/vol) and low (4% wt/vol) concentrations of liquid sucrose, delivered in a volume of 30 μL. In volume manipulation sessions, the reward alternated between a large (27.85 μL) and small volume (9.28 μL) of 16% liquid sucrose. Rewards were delivered over a period of 0.5 s for all levels of concentration and volume using a custom-made syringe pump (Amarante et al., 2019). The animal’s licking behavior was constantly recorded throughout the test sessions.
 
-## Blocked versus randomly interleaved licking task
+### Blocked versus randomly interleaved licking task
 
 The SVLT was altered to allow for comparison of blocked versus interleaved presentations of reward values. The first 3 min of the task consisted of the standard SVLT, with 30 s blocks of either the high or low concentration sucrose rewards delivered exclusively during the block. After 3 min, the rewards were presented in a pseudo-random order (e.g. high, high, low, high, low, low, high) for the rest of the test session. With rewards interleaved, rats were unaware of which reward would be delivered next. Behavioral and neural data were only analyzed from the first 6 min of each test session. We focused on manipulating sucrose concentration, and not fluid volume, in this task variation, as concentration differences provided the most effects of reward value on licking behavior (see Figure 1D).
 
-## Three reward licking task
+### Three reward licking task
 
 The SVLT was modified, using a third intermediate concentration of sucrose (8% wt/vol) to assess if reward value influenced behavior and neuronal activity in a relative or absolute manner. In the first 3 min of each session, rats received either the intermediate (8%) or low (4%) concentration of sucrose, with the two rewards delivered over alternating 30 s periods as in the SVLT. After 3 min, the rewards switched to the high (16%) and intermediate (8%) concentrations, and alternated between those concentrations for the rest of the session. Behavioral and neural data were only analyzed from the first 6 min of each test session.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Electrophysiological recordings were made using a Plexon Multichannel Acquisition Processor (MAP; Plexon; Dallas, TX). LFPs were sampled on all electrodes and recorded continuously throughout the behavioral testing sessions using the Plexon system via National Instruments A/D card (PCI-DIO-32HS). The sampling rate was 1 kHz. The head-stage filters (Plexon) were at 0.5 Hz and 5.9 kHz. Electrodes with unstable signals or prominent peaks at 60 Hz in plots of power spectral density were excluded from quantitative analysis.
 
-## Histology
+### Histology
 
 After all experiments were completed, rats were deeply anesthetized via an intraperitoneal injection of Euthasol (100 mg/kg) and then transcardially perfused using 4% paraformaldehyde in phosphate-buffered saline. Brains were cryoprotected with a 20% sucrose and 10% glycerol mixture and then sectioned horizontally on a freezing microtome. The slices were mounted on gelatin-subbed slides and stained for Nissl substance with thionin.
 
-## Data analysis: software and statistics
+### Data analysis: software and statistics
 
 All data were analyzed using GNU Octave (https://www.gnu.org/software/octave/), Python (Anaconda distribution: https://www.continuum.io/), and R (https://www.r-project.org/). Analyses were run as Jupyter notebooks (http://jupyter.org/). Computer code used in this study is available upon request from the corresponding author.
 
 Statistical testing was performed in R. Paired t-tests were used throughout the study and one- or two-way ANOVA (with the error term due to subject) were used to compare data for both behavior and electrophysiological measures (maximum power and maximum ITC) for high- and low-value licks, blocked versus interleaved licks, and high-intermediate-low licks. For significant ANOVAs, the error term was removed and Tukey’s post hoc tests were performed on significant interaction terms for multiple comparisons. Descriptive statistics are reported as mean ± SEM, unless noted otherwise.
 
-## Data analysis: behavior
+### Data analysis: behavior
 
 All rats were first run for at least five standard sessions in the standard SVLT with differences in concentration (16% and 4% wt/vol). Rats have been shown to acquire incentive contrast effects in the SVLT after this duration of training (Parent et al., 2015a). For the blocked-interleaved and three reward tasks, rats were tested after extensive experience in the SVLT and after two ‘training’ sessions with the blocked-interleaved and three reward designs. The electrophysiological recordings reported here were from the animals’ third session in each task.
 
@@ -223,7 +360,7 @@ In some experiments, imbalances were apparent in measures of total licks and lic
 
 Total licks and lick rate are therefore distinct measures and will not always be coupled, especially because licks occur in bursts. Rats strongly engage when the higher value fluid is available in the blocked condition and alternatively will lick more sporadically and will default to sampling the fluid and not maintain engagement when the low-value fluid is available. However, the rate of the licks, in said bouts or bursts, was higher overall during the interleaved parts of the tests sessions. Why this happened is not clear, but one interpretation is that rats are not suppressing or sampling the options anymore in the interleaved portion but are instead maintaining engagement in the task during the interleaved portion of the task when reward identity is unpredictable.
 
-## Data analysis: LFPs
+### Data analysis: LFPs
 
 Electrophysiological data were first analyzed in NeuroExplorer (http://www.neuroexplorer.com/), to check for artifacts and spectral integrity. Subsequent processing was done using signal processing routines in GNU Octave. Analysis of LFPs used functions from the EEGLab toolbox (Delorme and Makeig, 2004) (ERSP and ITC) and the signal processing toolbox in GNU Octave (the peak-to-peak function was used to measure event-related amplitude). Circular statistics were calculated using the circular library for R. Graphical plots of data were made using the matplotlib and seaborn library for Python. Analyses were typically conducted in Jupyter notebooks, and interactions between Python, R, and Octave were implemented using the rpy2 and oct2py libraries for Python.
 

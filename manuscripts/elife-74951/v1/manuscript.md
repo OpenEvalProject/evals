@@ -33,11 +33,11 @@ As part of the global effort to address the pandemic caused by the SARS-CoV-2 vi
 
 ## Results
 
-## The designation of Michalovich et al. as a “Healthy Control” for differential expression analysis
+### The designation of Michalovich et al. as a “Healthy Control” for differential expression analysis
 
 Fitzgerald and Jamieson have criticized our results based on the fact that the control group is (1) not free of comorbidities, and (2) "not representative of the American population". In accordance with eLife’s transparent reporting procedures, we list group allocation as “Cases were those individuals diagnosed with COVID-19, controls were from a separate study in which participants were not diagnosed with any viral infection”. Our goal of the analysis was to test for differences in the expression of genes in the coagulation pathway in response to infection from the SARS-CoV-2 virus. Most of the BALF samples in Michalovich et al. harbored comorbidities such as asthma, nicotine dependence, and obesity. Of the 40 control samples, three were reported to be free of these comorbidities (putatively 'healthy'). We find the criticisms raised are not warranted for the following reasons:
 
-## Dissimilar library preparation methods of Michalovich et al. (transcriptomic) and Zhou et al. (total RNA) are not comparable
+### Dissimilar library preparation methods of Michalovich et al. (transcriptomic) and Zhou et al. (total RNA) are not comparable
 
 Fitzgerald and Jamieson state that dissimilar library preparation methods of Michalovich et al. (Transcriptomic) and Zhou et al. (Total RNA) are not comparable. Library preparation for the case and control samples was different for the two studies. Michalovich et al. used a polyA enrichment method, which removes most ribosomal RNA (rRNA), and for the 9 cases, total RNA that includes rRNA was prepared. However, the assumption that this makes the samples non-comparable is flawed. Previous work in the field of RNA-Seq analysis has developed tools and techniques to mitigate sources of technical variation, such as library preparation (Risso et al., 2014). Our analysis leveraged TMM normalized counts for the differential analysis, implemented in edgeR. Fitzgerald and Jamieson raise concerns about our differential analysis based on the findings of Zhao et al., 2020. However, Zhao et al. focused on TPM and did not discuss more robust normalization protocols such as TMM or RLE, and thus may not be applicable in this case. To address the concerns of Fitzgerald and Jamieson, we re-calculated log-fold change of the differentially expressed genes from our analysis after removing rRNA counts from the CLC Genomics output. Furthermore, we accounted for factors (k = 1) of putative technical variation using the RUVSeq R package thereby producing an adjusted log-fold change (Risso et al., 2014). As one can see in Figure 1, the log-fold change with rRNA and the adjusted log-fold change without rRNA are highly correlated (R2 ~0.99954).
 
@@ -45,7 +45,7 @@ Fitzgerald and Jamieson state that dissimilar library preparation methods of Mic
 
 In addition, keeping all non-COVID-19 controls helps to resolve the issue where a gene is observed in COVID-19 samples but has few reads in the controls.
 
-## Insufficient read depth of samples from Zhou et al.
+### Insufficient read depth of samples from Zhou et al.
 
 Fitzgerald and Jamieson state that COVID-19 BALF samples contain insufficient read depth. We acknowledge that there exist “generally accepted rules” for read depth, etc. in the field of transcriptome analysis, and these guidelines are important to adhere to wherever possible. The nine BALF samples used in our analysis were taken from severely ill patients in Wuhan China in an attempt to identify the as-yet-unidentified pathogen causing their symptoms and were not prepared in conjunction with control samples. The low read-depth of the nine BALF samples resulted in high false-positive (off-target) counts due to the presence of Alu elements in some of the transcripts, which can be seen in the read mapping files (Figure 2). To account for this, and to reduce inflation or deflation of expression levels, we used highly stringent mapping parameters in CLC Genomics Workbench. The default parameters for this algorithm are to score a “match” for a read if at least 0.80 of the fragment matches the gene and if the similarity is 0.8 or greater. Instead, to reduce off-target mapping, we used the much more conservative approach of 0.95 length and 0.95 similarity match.
 

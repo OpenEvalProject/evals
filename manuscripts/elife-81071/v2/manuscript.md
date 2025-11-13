@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, Physiological Laboratory, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/041kmwe10 Department of Bioengineering, Imperial College London London United Kingdom
-3. https://ror.org/05hs6h993 Department of Physiology, Michigan State University East Lansing United States
+1. Department of Physiology, Development and Neuroscience, Physiological Laboratory, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Department of Bioengineering, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+3. Department of Physiology, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
 
 † Corresponding author
 
@@ -31,19 +31,19 @@ We investigated the effect of action potential bursts on synaptic plasticity in 
 
 ## Results
 
-## Reactivation during dopaminergic modulation induces LTP
+### Reactivation during dopaminergic modulation induces LTP
 
 To investigate the effect of burst reactivation of individual postsynaptic CA1 cells during dopaminergic modulation, we monitored the synaptic weights of afferent synapses that had previously undergone a spike timing-dependent synaptic priming protocol. For this, we used whole-cell recording of CA1 pyramidal neurons in mouse hippocampal slices (Figure 1A). To be able to distinguish between conventional LTP and reactivation-induced LTP, we used a priming protocol that induces synaptic depression (Andrade-Talavera et al., 2016). Single postsynaptic action potentials followed by presynaptic input stimulation (post-before-pre protocol, Δt = –20 ms) led to input-specific synaptic depression in the test pathway (t-LTD; 61% ± 11% vs 100%, t(9) = 3.7, p=0.005, n=10; Figure 1B and F). Application of DA alone, without resuming synaptic stimulation after this pairing protocol, did not affect the depression (53% ± 7% vs 100%, t(5) = 7.0, p=0.0009, n=6; Figure 1C and F blue trace). Strikingly, postsynaptic action potential bursts (5–6 APs) in the presence of DA, 10 min after the pairing protocol, triggered an immediate induction of synaptic potentiation (135% ± 14.9% vs 100%, t(8) = 2.4, p=0.044, n=9; Figure 1D and F red trace). Burst stimulation alone, in the absence of DA, did not prevent synaptic depression (72% ± 12% vs 100%, t(6) = 2.5, p=0.048, n=7; Figure 1E and F black trace). This result suggests that the pairing protocol sets an eligibility trace allowing activated synapses to be selectively altered minutes later by reactivation of the postsynaptic neuron in the presence of DA. To our knowledge, these are the longest-lasting synaptic eligibility traces reported in the brain.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig1-v2.jpg)
 
-**Figure 1.:** (A), Schematic of the experimental paradigm (top) and setup (bottom).↓=6 action potential bursts; Whole-cell recording in CA1 stratum pyramidale; electrical stimulation electrodes in stratum radiatum. Plasticity was induced in one pathway (Paired pathway), and a second pathway was used for stability control and for confirmation of input specificity (Control pathway). Normalized EPSP slopes were averaged and plotted as a function of time. (B), Post-before pre-pairing protocol leads to input-specific synaptic depression. Pairing protocol (Δt = –20 ms) induces t-LTD (black trace) and does not affect synaptic weights in control pathway (gray trace). (C), DA application after a post-before-pre pairing protocol (Δt = –20 ms) does not prevent t-LTD (+DA –Burst, blue trace) and does not affect synaptic weights in control pathway (gray trace). (D), Application of DA together with action potential bursts of the postsynaptic cell (indicated by black arrow) induces synaptic potentiation after a post-before-pre pairing protocol (Δt = –20 ms) (+DA +Burst, red trace) and does not affect synaptic weights in control pathway (gray trace). (E), The same protocol, without application of DA, leads to synaptic depression (–DA +Burst, black trace) and does not affect synaptic weights in control pathway (gray trace). (F), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.Figure 1—source data 1.
+**Figure 1.:** (A), Schematic of the experimental paradigm (top) and setup (bottom).↓=6 action potential bursts; Whole-cell recording in CA1 stratum pyramidale; electrical stimulation electrodes in stratum radiatum. Plasticity was induced in one pathway (Paired pathway), and a second pathway was used for stability control and for confirmation of input specificity (Control pathway). Normalized EPSP slopes were averaged and plotted as a function of time. (B), Post-before pre-pairing protocol leads to input-specific synaptic depression. Pairing protocol (Δt = –20 ms) induces t-LTD (black trace) and does not affect synaptic weights in control pathway (gray trace). (C), DA application after a post-before-pre pairing protocol (Δt = –20 ms) does not prevent t-LTD (+DA –Burst, blue trace) and does not affect synaptic weights in control pathway (gray trace). (D), Application of DA together with action potential bursts of the postsynaptic cell (indicated by black arrow) induces synaptic potentiation after a post-before-pre pairing protocol (Δt = –20 ms) (+DA +Burst, red trace) and does not affect synaptic weights in control pathway (gray trace). (E), The same protocol, without application of DA, leads to synaptic depression (–DA +Burst, black trace) and does not affect synaptic weights in control pathway (gray trace). (F), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.
 
 We next investigated the requirements for setting the eligibility trace. First, we found that synaptic potentiation was indeed not observed without prior spike pairing (93% ± 8% vs 100%, t(6) = 0.84, p=0.43, n=7; Figure 2A). Induction of hippocampal t-LTD requires metabotropic glutamate receptors (mGluRs; Andrade-Talavera et al., 2016). To investigate whether LTD or mGluR signaling is required for burst-induced potentiation, we applied the mGluR antagonist MPEP throughout the recording. This blocked t-LTD (94% ± 6% vs 100%, t(6) = 0.95, p=0.38, n=7; Figure 2B and C, blue; vs control t-LTD 69% ± 7%, n=7; t(11.5) = 2.67, p=0.02; Figure 2B and C, black) but burst-induced potentiation was intact (131% ± 10% vs 100%, t(6) = 3.07, p=0.021, n=7; Figure 2B and C, red), suggesting that setting the eligibility trace by spike pairing is distinct from the signaling mechanism that mediates t-LTD.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig2-v2.jpg)
 
-**Figure 2.:** (A), Application of DA and burst stimulation, but without pairing protocol, does not induce potentiation. (B), Post-before-pre pairing protocol (Δt = –20 ms) leads to synaptic depression (t-LTD) (black trace), which is blocked by MPEP (blue trace). MPEP does not block DA- and burst-induced potentiation (red trace). (C), Summary of results. (D), Application of AP5 during pairing blocks DA- and burst-induced potentiation. (E), Postsynaptic intracellular MK801 (iMK801) does not block t-LTD (blue trace) but blocks DA- and burst-induced potentiation (red trace). (F), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.Figure 2—source data 1.
+**Figure 2.:** (A), Application of DA and burst stimulation, but without pairing protocol, does not induce potentiation. (B), Post-before-pre pairing protocol (Δt = –20 ms) leads to synaptic depression (t-LTD) (black trace), which is blocked by MPEP (blue trace). MPEP does not block DA- and burst-induced potentiation (red trace). (C), Summary of results. (D), Application of AP5 during pairing blocks DA- and burst-induced potentiation. (E), Postsynaptic intracellular MK801 (iMK801) does not block t-LTD (blue trace) but blocks DA- and burst-induced potentiation (red trace). (F), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.
 
 Many forms of hippocampal plasticity require NMDA receptors (NMDARs; Shipton and Paulsen, 2014). We, therefore, asked if activation of NMDARs during the pairing protocol is required for the synaptic eligibility trace to be set. We found that application of the NMDAR antagonist d-AP5 during pairing (Δt = –20 ms) abolished both t-LTD and the subsequent burst-induced potentiation, resulting in no change of synaptic weights (100% ± 9% vs 100%, t(6) = 0.043, p=0.97, n=7; Figure 2D and F). We then investigated whether specifically postsynaptic NMDARs are required for the eligibility trace. Loading the postsynaptic cell with the NMDAR channel blocker MK801 through the recording pipette did not affect t-LTD (68% ± 7% vs 100%, t(5) = 4.77, p=0.005, n=6; Figure 2E and F) but completely abolished burst-induced potentiation, leaving synaptic depression instead (61% ± 10% vs 100%, t(6) = 3.85, p=0.0084, n=6; Figure 2E and F). These results show a double dissociation between t-LTD induced by mGluR and non-postsynaptic NMDAR signaling and the eligibility trace for reactivation-induced potentiation set by postsynaptic ionotropic NMDARs.
 
@@ -51,37 +51,61 @@ We next investigated the mechanism that induces synaptic potentiation during bur
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig3-v2.jpg)
 
-**Figure 3.:** Normalized EPSP slopes were averaged and plotted as a function of time. (A), Application of AP5 after pairing does not prevent DA- and burst-induced potentiation. (B), Application of nimodipine during the burst prevents DA- and burst-induced potentiation leaving synaptic depression. (C), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.Figure 3—source data 1.
+**Figure 3.:** Normalized EPSP slopes were averaged and plotted as a function of time. (A), Application of AP5 after pairing does not prevent DA- and burst-induced potentiation. (B), Application of nimodipine during the burst prevents DA- and burst-induced potentiation leaving synaptic depression. (C), Summary of results. All traces show an EPSP before (1) and 40 min after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.
 
-## Signaling pathway mediating reactivation-induced LTP
+### Signaling pathway mediating reactivation-induced LTP
 
 These findings suggest that coincident DA signaling and postsynaptic Ca2+ increase enable the potentiation of previously primed synapses. Searching for a potential coincidence detector for DA and intracellular Ca2+, we focused on adenylyl cyclases (ACs). They are activated by Gs-coupled dopamine D1/D5 receptor stimulation (Neve et al., 2004), and subtypes AC1 and AC8 are additionally Ca2+- stimulated (Wayman et al., 1994; Watson et al., 2000; Ferguson and Storm, 2004). To investigate whether AC subtypes AC1 and/or AC8 are involved in the form of plasticity described here, we tested the induction protocol in AC1/AC8 double knockout (AC DKO) mice (Wong et al., 1999). When postsynaptic burst stimulation in the presence of DA was applied after a negative pairing protocol (Δt = –20 ms; Figure 4Ai) in slices from AC DKO mice, the conversion to potentiation was absent and significantly different from DA- and burst-induced potentiation in slices from wildtype mice (AC DKO, 90% ± 8%, n=6 vs WT, 132% ± 11%, n=8; t(12) = 2.8, p=0.015; Figure 4Bi and Biii), revealing a role for AC1/AC8 as coincidence detector for DA- and Ca2+-induced potentiation. In contrast, conventional, DA-independent t-LTP induced by a pre-before-post pairing protocol (Δt = +10 ms; Figure 4Aii) showed significant potentiation comparable to that seen in wildtype mice (AC DKO, 150% ± 19% vs 100%, t(5) = 2.6, p=0.049, n=6; WT, 163% ± 14% vs 100%, t(9) = 4.4, p=0.0015, n=10; Figure 4Bii and Biii).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig4-v2.jpg)
 
-**Figure 4.:** Schematics show the difference between the three induction protocols. Normalized EPSP slopes were averaged and plotted as a function of time. (Ai), DA and burst stimulation after a post-before-pre pairing protocol (Δt = –20 ms) induces potentiation. (Aii), A pre-before-post pairing protocol induces t-LTP (Δt = +10 ms). (B), AC DKO mice do not show DA-dependent plasticity with postsynaptic bursts (Bi) but shows conventional t-LTP (Bii). Summary of results (Biii). (C), Postsynaptic application of protein kinase inhibitor-(6-22)-amide (PKI) prevents DA-dependent plasticity with postsynaptic bursts (Ci) but leaves conventional t-LTP intact (Cii). Summary of results (Ciii). All traces show an EPSP before (1) and 40 minutes after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.Figure 4—source data 1.
+**Figure 4.:** Schematics show the difference between the three induction protocols. Normalized EPSP slopes were averaged and plotted as a function of time. (Ai), DA and burst stimulation after a post-before-pre pairing protocol (Δt = –20 ms) induces potentiation. (Aii), A pre-before-post pairing protocol induces t-LTP (Δt = +10 ms). (B), AC DKO mice do not show DA-dependent plasticity with postsynaptic bursts (Bi) but shows conventional t-LTP (Bii). Summary of results (Biii). (C), Postsynaptic application of protein kinase inhibitor-(6-22)-amide (PKI) prevents DA-dependent plasticity with postsynaptic bursts (Ci) but leaves conventional t-LTP intact (Cii). Summary of results (Ciii). All traces show an EPSP before (1) and 40 minutes after pairing (2). Plots show averages of normalized EPSP slopes ± SEM.
 
 AC activation produces an increase in cyclic adenosine monophosphate (cAMP) which activates protein kinase A (PKA; Sassone-Corsi, 2012). To test whether this signaling cascade is required for reactivation-induced potentiation, we loaded the postsynaptic cell with a PKA blocker, protein kinase inhibitor-(6-22)-amide, through the recording pipette. In this configuration burst stimulation in the presence of DA after the post-before-pre protocol failed to induce synaptic potentiation (69% ± 13% vs 100%, t(5) = 2.4, p=0.064, n=6; Figure 4Ci and Ciii). In contrast, conventional pre-before-post pairing induced significant potentiation, albeit of somewhat reduced magnitude (137% ± 14% vs 100%, t(5) = 2.63, p=0.0463, n=6; Figure 4Cii and Ciii).
 
 The requirement of DA and PKA for burst-induced potentiation is shared with late-phase LTP (Frey et al., 1990; Frey et al., 1993), which requires protein synthesis (Frey et al., 1988). We therefore investigated whether the burst-induced rapid potentiation also requires protein synthesis by delivering the protein synthesis inhibitor anisomycin (AM) to the postsynaptic cell through the recording pipette. We found that, with anisomycin, burst stimulation in the presence of DA no longer induced conversion to potentiation but left a synaptic depression instead, which was significantly different from vehicle control (AM, 52% ± 11% vs 100%, t(5) = 4.5, p=0.0062, n=6; Figure 5Ai and Aiii, red; vs vehicle, 128% ± 17%, n=5; t(9) = 3.9, p=0.0033; Figure 5Ai and Aiii, green). In contrast, conventional t-LTP induced by pre-before-post pairing was unaffected by anisomycin (161% ± 20% vs 100%, t(5) = 3.0, p=0.029, n=6; Figure 5Aii and Aiii, black). Furthermore, the post-before-pre pairing protocol induced t-LTD under these conditions (65% ± 6% vs 100%, t(5) = 5.9, p=0.0019, n=6; Figure 5Aii and Aiii, gray). We confirmed that postsynaptically applied anisomycin did not affect synaptic responses in baseline conditions (95% ± 9.7% vs 100%, t(6) = 0.56, p=0.59, n=7; Figure 5—figure supplement 1A). Furthermore, we compared action potential properties during pairing in cells with anisomycin to cells loaded with vehicle controls. Spike amplitude (AM 112 mV ± 3 mV, Vehicle 111 mV ± 3 mV) and spike width (AM 3.3 ms ± 0.2 ms, Vehicle 3.3 ms ± 0.2 ms) showed no significant differences (amplitude t(10) = 0.09050, p=0.92; width t(10) = 0.1134, p=0.91; Figure 5—figure supplement 1B, C).
 
-## Burst-dependent plasticity increases specificity in reinforcement learning models
+![Figure 5.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig5-v2.jpg)
 
-These experimental results show that, after a priming event, burst reactivation in the presence of DA induces a rapid form of protein synthesis-dependent LTP. This mechanism would ensure that only salient neuronal activity induces long-term changes in the network. We implemented this synaptic learning rule in a computational model to explore how such plasticity would control learning in a feedforward artificial neural network resembling hippocampal CA1. The learning rule states that the change in synaptic weights Δw between input and output neurons (inp→o) depends on an eligibility trace e (set during the initial priming event), the reinforcement signal (dopamine d), and reactivation (bursting activity b).(1)∆winp→o=αLTPedb
+**Figure 5.:** (A), Postsynaptic anisomycin prevents DA-dependent plasticity with postsynaptic burst stimulation (Ai), but leaves conventional t-LTD (Aii, gray trace) and t-LTP (black trace) intact. Summary of results (Aiii). All traces show an EPSP before (1) and 40 min after (2) pairing. Plots show averages of normalized EPSP slopes ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A), Stable baseline in presence of postsynaptic anisomycin and summary of result. Traces show an EPSP at the start of the recording (1) and 60 min later (2). Plot shows averages of normalized EPSP slopes ± SEM. (B), No significant change in spike amplitude with anisomycin compared to vehicle control. (C), No significant change in spike width with anisomycin compared to vehicle control.
+
+### Burst-dependent plasticity increases specificity in reinforcement learning models
+
+These experimental results show that, after a priming event, burst reactivation in the presence of DA induces a rapid form of protein synthesis-dependent LTP. This mechanism would ensure that only salient neuronal activity induces long-term changes in the network. We implemented this synaptic learning rule in a computational model to explore how such plasticity would control learning in a feedforward artificial neural network resembling hippocampal CA1. The learning rule states that the change in synaptic weights $Δw$ between input and output neurons ($inp→o$) depends on an eligibility trace e (set during the initial priming event), the reinforcement signal (dopamine d), and reactivation (bursting activity b).
+
+$$
+\Deltaw_{inp→o}=\alpha_{LTP}edb_{}
+$$
 
 The parameter αLTP is the learning rate. When there is no DA or bursts during the trial, the rule is updated to result in depression proportional to the eligibility trace with a learning rate αLTD (see Methods). When using a standard reinforcement learning (RL) rule, which does not depend on burst reactivation, all previously primed synapses are potentiated after receiving the DA signal (Figure 6A). Thus, the global neuromodulatory signal in traditional RL models provides limited information. In contrast, when applying the burst-dependent learning rule (Equation 1) to the network, in which potentiation of primed synapses depends on both the reward signal and reactivation, a selected subset of inputs becomes potentiated, while inputs on non-reactivated neurons remain depressed (gray) (Figure 6B). During DA modulation, information is allocated to primed synapses by reactivation of the postsynaptic neuron, and the broader computational implications of this learning rule depend on the control of postsynaptic neuronal bursting activity. First, it is possible that neurons are recruited to a new memory trace based on their relative neuronal excitability before the training session as suggested by the memory allocation hypothesis (Yiu et al., 2014). According to this scenario, the most excitable cells would be the most likely to show action potential bursts during reactivation and, therefore, show synaptic potentiation. Alternatively, there is evidence for replay of prioritized experience (Igata et al., 2021), suggesting that cells encoding the most salient events preceding the reward would reactivate, and thereby determine which set of cells would show potentiation during reward (Figure 6B). Assuming prioritized experience reflects experience relevant to the reward, this could help credit assignment in the network. In addition, because of the exclusive requirement of postsynaptic activity for potentiation to occur, this mechanism offers another intriguing possibility, namely that other inputs active at the reward location carries additional information about the nature of the reward, e.g., food, or the reward location, such as the presence of specific landmarks, which could elicit postsynaptic bursting activity. Under this hypothesis, neuronal reactivation would serve to associate a specific outcome to the priming event. When different instructive inputs induce bursting each in distinct subsets of neurons during reward, selective increases in synaptic weights would not only enable the encoding of reward but also distinguish between different rewards (Figure 7A). Finally, we explore how the learning rule performs in a network supervised by feedback synaptic input to strengthen synapses onto specific neurons encoding reward-related features. By allowing feedback input to assign which part of the network is responding, the burst-dependent learning rule enables the network to selectively learn relevant information (Figure 7B), resulting in potentiation of those synapses (magenta and cyan in Figure 7Biii) that are active temporally separated, but less when simultaneous active (Figure 7Biv). This provides a mechanism to associate temporally separated, reward-relevant information in a neuronal network. The burst-dependent learning rule provides the network with a gating mechanism for memory allocation to an engram. Thus, burst-induced plasticity reduces the number of neurons encoding the reward location and other reward-related information, increasing the specificity of synaptic memory in a neuronal network.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig6-v2.jpg)
 
-**Figure 6.:** (Ai-iii), Standard reinforcement learning rule shows reward associating inputs 1–10 (blue) with potentiation of all synaptic weights (blue). (Bi-iii), Burst-dependent potentiation reduces the number of neurons encoding the memory, leading to potentiation of synapses exclusively onto the most excitable burst-firing neurons 3, 6 (blue).Figure 6—source data 1.
+**Figure 6.:** (Ai-iii), Standard reinforcement learning rule shows reward associating inputs 1–10 (blue) with potentiation of all synaptic weights (blue). (Bi-iii), Burst-dependent potentiation reduces the number of neurons encoding the memory, leading to potentiation of synapses exclusively onto the most excitable burst-firing neurons 3, 6 (blue).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig7-v2.jpg)
 
-**Figure 7.:** (Ai-iii), Instructive RL rule allows two inputs that code for different information to store the memory in separate sets of neurons, thus encoding not only the reward, but also other reward-relevant features 3, 6 (magenta, cyan). (Bi-ii), A supervised network enables burst-eliciting feedback synaptic input to assign credit to select synapses in the network to encode a desired reward identity. (Biii) Time-dependent lateral inhibition at the output neurons suppress non-relevant information. When only one of the inputs is active, the animal can learn two different memories over time in neurons 3, 6 (magenta, cyan). (Biv) When both inputs are active at the same time they compete with each other, and synapses onto these neurons (magenta, cyan) are less potentiated.Figure 7—source data 1.
+**Figure 7.:** (Ai-iii), Instructive RL rule allows two inputs that code for different information to store the memory in separate sets of neurons, thus encoding not only the reward, but also other reward-relevant features 3, 6 (magenta, cyan). (Bi-ii), A supervised network enables burst-eliciting feedback synaptic input to assign credit to select synapses in the network to encode a desired reward identity. (Biii) Time-dependent lateral inhibition at the output neurons suppress non-relevant information. When only one of the inputs is active, the animal can learn two different memories over time in neurons 3, 6 (magenta, cyan). (Biv) When both inputs are active at the same time they compete with each other, and synapses onto these neurons (magenta, cyan) are less potentiated.
 
-## Increased calcium responses and spatial information in reactivated CA1 place cells
+### Increased calcium responses and spatial information in reactivated CA1 place cells
 
 Based on these results we predicted that, when an animal navigates toward a reward, the previously reactivated hippocampal neurons would be more strongly activated than non-reactivated neurons. To test this prediction, we monitored calcium transients in hippocampal excitatory cells with a head-mounted microscope (Ghosh et al., 2011) while mice navigated on a ‘cheeseboard’ maze (Dupret et al., 2010) with two reward locations, one new to the animal and one previously learnt (Figure 8A). We defined neuronal reactivation as activity during immobility in neurons previously active during locomotion. Cells that were active when mice moved towards the reward locations were classified as reactivated at reward if they were active again during immobility when mice consumed reward (Foster and Wilson, 2006; O’Neill et al., 2006; Csicsvari et al., 2007) and non-reactivated if no further calcium event was detected after they had reached the reward. Of the cells that were active on the maze in a given trial, 44 ± 1% were reactivated at either or both of the reward locations. There was no detectable difference between the number of cells reactivating at the previously learnt or new reward location (Figure 8B). Less frequent were the reactivations during immobility at non-rewarded locations where 15 ± 2% of cells reactivated (Figure 8B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig8-v2.jpg)
+
+**Figure 8.:** (A), Running path of a mouse (left) and calcium traces of example cells (right) in a representative single trial. Mice ran toward two reward locations: one previously learned (R1) and one new (R2). Calcium traces for two cells that reactivated at the reward location and two that did not. Arrows mark reactivations. Vertical line marks time of arrival at R2. (B), Percentage of cells that reactivated at one or both of the reward locations or other locations. Points mark percentage in single trials. Box-and-whisker plots: median, 25 and 75th percentile, and extreme values. n=444 trials. (C), Traces centered on activity peaks for two example cells: one that reactivated at the new reward location in trial 1 (top) and one that did not reactivate in any of the trials (bottom). (D), Histogram of activity peaks normalized to maximum AUC value compared between cells that reactivated for the first time in the preceding trial and cells that did not reactivate in any of the trials. Triangles mark mean values. Permutation tests for repeated measures ANOVA, model for reactivations at the reward locations: significant effect of trial (F(6, 96)=4.51, p<0.001) and reactivation (F(1,16) = 10.15, p=0.006), model for reactivations at non-rewarded locations: significant effect of trial (F(6, 96)=7.85, p=0.001) and non-significant of reactivation (F(1, 16)=0.56, p=0.47). n=6785 cell trials from 1405 cells. (E), The duration from activity during locomotion to the time of first reactivation did not correlate with activity peaks in the following trial, suggesting a long-lasting eligibility trace.(F), Mean calcium peak in each trial for cells that reactivated in trial 1 or trial 4 compared to cells that did not reactivate in any trial. Ribbons extend +/- 1 SEM. Cells that reactivated in trial 1 had significantly higher normalized calcium peaks in all trials. Cells that reactivated for the first time in trial 4 had significantly higher normalized calcium peaks in trials 4, 5, 7 and 8 but not in trial 6 and trials before the reactivation. Permutation t-tests with Benjamini-Hochberg correction for multiple comparisons and between-animal random effects. n=6721 cell trials from 681 reactivated in trial 1 cells, n=769 from 96 reactivated in trial 4 cells, and n=5980 from non-reactivated 607 cells. **p<0.01.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A), Regardless of the cell event rates, the activity peaks were larger in the reactivated cells than in cells that did not reactivate that day. The comparison was performed on four cell groups defined by the quartile ranges (Q1–4) in the event rate distribution shown in the leftmost histogram. The histogram counts the trial event rates per cell. The four histograms to the right compare activity peaks within each quartile range. Calcium peaks in the cells reactivated for the first time in the previous trial are compared with the calcium peaks of non-reactivated cells, the quartiles are assigned based on the event rate in the trial prior. Triangles mark mean values. Permutation test for repeated measures ANOVA: effect of reactivation: F(1, 16)=7.54, p=0.02; effect of quartile: F(3, 48)=6.48, p=0.002. n=6785 cell trials from 1405 cells. (B) Percentage of cells that had a given calcium peak shown per trial. Cells are grouped by the trial of their first reactivation. In all cell groups, a large percentage of cells decreased calcium peaks in late trials. A larger percentage of the reactivated than non-reactivated cells maintained high peak values. (C), Histogram of normalized activity peaks in place cells and other cells compared between the cells reactivated for the first time in the preceding trial and the cells not reactivated in any of the trials. Triangles mark mean values. Permutation test for repeated measures ANOVA: non-significant interaction between cell type (place cell vs other cell) and reactivation (F(1,16) = 0.11, p=0.75, n=6785 cell trials from 1405 cells). (D), Activity peaks as a function of trial compared between place cells and other cells. Cells whose first reactivation happened in the same trial are grouped together. Ribbons extend +– 1 SEM. The effect of reactivation in trial 1 or in trial 4 was not significantly different for place cells and other cells in any of the trials after the reactivation (non-significant interaction between the cell type and reactivation). Permutation t-tests with Benjamini-Hochberg correction for multiple comparisons and between-animal random effects. n=4261 cell trials from place cells reactivated in trial 1 and n=2460 from other cells, n=507 from place cells reactivated in trial 4 and n=262 from other cells, n=2,409 for non-reactivated place cells and n=3571 from other cells.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/81071/elife-81071-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A), Examples of CA1 place cells and changes in their activity from early (trials 1–4) to late learning trials (trials 5–8) after the cells were reactivated at the reward location in trial 4. Locations of calcium events marked with a red dot are overlaid over mouse movement paths; place maps are shown below. Reward locations are marked with grey circles. Gray background represents locations unsampled by the mouse. (B), Histogram of the ratios between place map peaks in the late over early learning trials. The ratios are compared between the cells reactivated for the first time in the trial 4 or later and the cells not reactivated at any of the trials. Triangles mark mean values. Effect of reactivation: F(1, 16)=11.3, p=0.008. (C), As in (B) but for change in spatial information of place cells from early to late trials. Effect of reactivation: F(1, 16)=4.4, p=0.048. (D), The duration from activity during locomotion to the time of first reactivation did not correlate with the later change in spatial information. (E), As in (B) but for correlation between place maps for early and late trials. Effect of reactivation: F(1, 16)=0.29, p=0.59. Permutation tests for repeated measures ANOVA. n=194 reactivated and n=306 non-reactivated place cells. **p<0.01, *p<0.05.
 
 To compare the strength of neuronal activation, we measured area-under-curve (AUC) of calcium events occurring before and after the reactivation (Figure 8C). Cells with the largest activity peaks during locomotion were the most likely to reactivate at the reward location. Following their first reactivation, they had larger activity peaks than the previously non-reactivated cells (0.54 ± 0.01 vs 0.42 ± 0.01 of the cell’s max AUC, F(1,16) = 10.12, p=0.006, Figure 8D). The effect on activity peaks was specific to reward locations, and reactivation at other locations did not affect activity peaks in the following trials (F(1, 16)=0.56, p=0.47, Figure 8D). The effect of reactivation was independent of the cell event rates: of two cell groups with matching event rates in a given trial, the one whose cells were reactivated at reward for the first time, had larger peaks in the following trial (F(1, 16)=7.54, p=0.02, Figure 8—figure supplement 1A). The effect of reactivation at reward had two other similarities with the synaptic plasticity experiments: a long-lasting eligibility trace and persistence of the change. To test the first, we confirmed that the activity peaks in the trial following the reactivation did not correlate with the time from the activity during locomotion to the reactivation (Figure 8E). To test the persistence of the change, we confirmed that the reactivated cells maintained higher calcium activity peaks than non-reactivated cells throughout the later trials (Figure 8F, Figure 8—figure supplement 1B). Typically, the peaks during locomotion increased in the trial immediately before the first reactivation at reward (Figure 8—figure supplement 1B), suggesting that more excited cells are the ones that undergo the change. The calcium activity peaks we report could be affected by photobleaching of the GCaMP6f sensor. As the reactivated cells were more active than non-reactivated cells (Figure 8—figure supplement 1A), we would expect them to be more affected by photobleaching, but nevertheless, the magnitude of their calcium transients remained higher than in the non-reactivated cells.
 
@@ -109,75 +133,207 @@ The hippocampus receives dopaminergic input from two main sources, the ventral t
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type C57BL/6 J, Mus musculus</td>
+      <td>Harlan, Bicester, UK or Central Animal Facility, Physiological Laboratory, Cambridge University</td>
+      <td></td>
+      <td>Age range used for slice preparation: 12–19 days. Females and males were used.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Adenylate cyclase double knock-out (AC DKO), C57BL/6 J,Mus musculus</td>
+      <td>Mouse line generated by Hongbing Wang and imported from Michigan State University, MI, US</td>
+      <td></td>
+      <td>Age range used for slice preparation: 12–19 days. Females and males were used.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Thy1 – GCaMP6f, C57BL/6 J, Mus musculus</td>
+      <td>JaxRef: Dana et al., 2014</td>
+      <td>024276</td>
+      <td>Only males were used.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine hydrochloride</td>
+      <td>Sigma–Aldrich</td>
+      <td>H8502</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Tocris Bioscience</td>
+      <td>0106</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nimodipine</td>
+      <td>Tocris Bioscience</td>
+      <td>0600/100</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PKA inhibitor fragment (6-22) amide</td>
+      <td>Tocris Bioscience</td>
+      <td>1904/1</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Tocris Bioscience</td>
+      <td>1290/10</td>
+      <td>0.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK801</td>
+      <td>Tocris Bioscience</td>
+      <td>0924</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6.37</td>
+      <td>WaveMetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.2.0 (435)</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab R2021a</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CaImAn software (version 1.8.5, Python)</td>
+      <td>Giovannucci et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Experimental procedures and animal use were performed in accordance with UK Home Office regulations of the UK Animals (Scientific Procedures) Act 1986 and Amendment Regulations 2012, following ethical review by the University of Cambridge Animal Welfare and Ethical Review Body (AWERB). All animal procedures were authorized under Personal and Project licences held by the authors.
 
 Mice were housed on a 12 hr light/dark cycle at 19–23 °C and were provided with food and water ad libitum. Experiments were carried out on wildtype C57BL/6 J mice (Harlan, Bicester, UK or Central Animal Facility, Physiological Laboratory, Cambridge University), and adenylate cyclase double knockout (AC DKO) mice, which have the genes for both AC1 and AC8 deleted globally. This mouse line was generated as described previously25 and was imported from Michigan State University, MI, US. For in vivo experiments, seven adult males Thy1 – GCaMP6f transgenic mice were used (Dana et al., 2014) (Jax: 024276). Mice were housed with 2–4 cage-mates in cages with running wheels.
 
-## Electrophysiology
+### Electrophysiology
 
-## Slice preparation
+#### Slice preparation
 
 Mice of both sexes at postnatal day (P) 12–19 were used in this study. Mice were anesthetized with isoflurane (4% isoflurane in oxygen) and decapitated. The brain was rapidly removed and immersed in ice-cold artificial cerebrospinal fluid (ACSF) containing (in mM): 126 NaCl, 3 KCl, 26.4 NaH2CO3, 1.25 NaH2PO4, 2 MgSO4, 2 CaCl2, and 10 glucose (pH 7.2, 270–290 mOsm/L). The ACSF solution was continuously bubbled with carbogen gas (95% O2, 5% CO2). Horizontal slices (350 μm thick) were sectioned with a vibrating microtome (Leica VT 1200 S, Leica Biosystems, Wetzlar, Germany). The slices were then incubated for at least 60 min in ACSF at room temperature in a submerged-style storage chamber before recording. Slices were used for 1–7 hr following sectioning.
 
-## Whole-cell patch clamp recording
+#### Whole-cell patch clamp recording
 
 For recordings, individual slices were transferred to an immersion-type recording chamber and perfused with ACSF (2 ml/min) at 24–26 °C. Neurons were visualized and selected using infrared differential interference contrast (DIC) microscopy using a 40 X water-immersion objective. The hippocampal subfields were visually identified and whole-cell patch-clamp recordings were performed on CA1 pyramidal neurons. For stimulation of Schaffer collaterals, monopolar stimulation electrodes were placed in stratum radiatum. Test and control pathway electrodes were placed at the same distance (>100 µm) from and either side of the recorded neuron. Patch pipettes (pipette resistance 4–7 MΩ) were pulled from borosilicate glass capillaries (0.68 mm inner diameter, 1.2 mm outer diameter) using a P-97 Flaming/Brown micropipette puller (Sutter Instruments Co., Novato, California, USA). Pipettes were filled with a solution containing (mM): 110 potassium gluconate, 4 NaCl, 40 HEPES, 2 ATP-Mg, 0.3 GTP (pH 7.2–7.3, 270–285 mOsm/L). The liquid junction potential was not corrected.
 
 All experiments were performed in current-clamp mode. Cells were accepted for the experiment if their resting membrane potential was between −55 and −70 mV. The membrane potential was held at −70 mV throughout the recording by direct current application via the recording electrode. Before the start of each recording, all cells were tested for regular spiking responses to positive current steps—characteristic of pyramidal neurons.
 
-## Stimulation protocol
+#### Stimulation protocol
 
 Excitatory postsynaptic potentials (EPSPs) were evoked alternately in two input pathways (test and control) by direct current pulses at 0.2 Hz (stimulus duration 50 μs) through metal stimulation electrodes. Control pathways were used in all experiments to ensure stability control (not always shown). The stimulation intensity was adjusted (100 μA– 500 µA) to evoke an EPSP with peak amplitude between 3 and 8 mV. After a stable EPSP baseline period of at least 10 min, STDP was induced in the test pathway by repeated pairings of single evoked EPSPs and single postsynaptic action potential elicited with the minimum somatic current pulse (1–1.8 nA, 3ms) via the recording electrode. Pairings were repeated 100 times at 0.2 Hz. Spike-timing intervals (Δt in ms) were measured between the onset of the EPSP and the onset of the action potential.
 
 Alternate stimulation of EPSPs was resumed immediately after the pairing protocol and monitored for at least 40 min. For the burst stimulation protocol, stimulation of EPSPs was not resumed for an additional 10 min, and at the end of that period, six bursts, each of five action potentials at 50 Hz, were elicited with an inter-burst interval of 0.1 Hz by somatic current pulses (1.8 nA, 10 ms) via the recording electrode. In a subset of experiments, only five bursts were applied, which led to potentiation of a similar magnitude. Immediately after the bursts, stimulation of EPSPs was resumed and monitored for at least 30 min, however, a small subset of recordings were stopped at 28 min. Presynaptic stimulation frequency to evoke EPSPs remained constant throughout the experiment. The unpaired pathway served to verify input-specificity and as a stability control. The burst stimulation protocol is summarized in Figure 1a (top).
 
-## Drugs
+#### Drugs
 
 Drugs were bath-applied to the whole slice through the perfusion system by dilution of concentrated stock solutions (prepared in water or DMSO) in ACSF, or by adding the drugs to the patch pipette solution when it was applied intracellularly to the postsynaptic cell only. If the drug was not water-soluble, vehicle control experiments were carried out. For each set of recordings, interleaved control and drug conditions were carried out and were pseudorandomly chosen. The following drugs were used in this study: 100 μM dopamine hydrochloride (Sigma–Aldrich, Dorset, United Kingdom), 100 μM D-AP5 (Tocris Bioscience, Bristol, United Kingdom), 10 µM nimodipine (Tocris Bioscience), 1 µM PKA inhibitor fragment (6-22) amide (Tocris Bioscience), 0.5 mM anisomycin (stock solution in EtOH; Tocris Bioscience), and 1 mM MK801 (Tocris Bioscience).
 
-## Data acquisition and data analysis of slice recordings
+#### Data acquisition and data analysis of slice recordings
 
 Data were collected using an Axon Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, California, USA) and filtered at 2 kHz. Data were acquired and digitized at 5 kHz using an Instrutech ITC-18 A/D interface board (Instrutech, Port Washington, New York, USA) and custom-made acquisition procedures in Igor Pro (WaveMetrics, Lake Oswego, Oregon, USA).
 
 All experiments were carried out in current clamp (‘bridge’) mode, and only cells with an initial series resistance between 9 and 16 MΩ were included. Series resistance was compensated for by adjusting the bridge balance, and data were discarded if series resistance changed by more than 30%. Offline analyses were done using custom-made procedures in Igor Pro. EPSP slopes were measured on the rising phase of the EPSP as a linear fit between the time points corresponding to 25–30% and 70–75% of the peak amplitude. For statistical analysis, the mean EPSP slope per minute of the recording was calculated from 12 consecutive sweeps and normalized to the baseline (each data point in source data files is the mean of 12 averaged EPSPs). Normalized EPSP slopes from the last 5 min of the baseline (immediately before pairing) and from the last 5 min of the recording were averaged. The magnitude of plasticity, as an indicator of change in synaptic weights, was defined as the average EPSP slope after pairing expressed as a percentage of the average EPSP slope during baseline.
 
-## Statistical analysis of slice recordings
+#### Statistical analysis of slice recordings
 
 Statistical comparisons were performed using one-sample two-tailed, paired two-tailed, or unpaired two-tailed Student’s t-test, with a significance level of α=0.05. Data are presented as mean ± SEM. Significance levels are indicated by *p<0.05, **p<0.01, ***p<0.001. All datasets passed the test for normality using the Shapiro-Wilk test (α=0.05).
 
-## Computational modeling
+### Computational modeling
 
-We simulated a set of n=10 output neurons, which each received input from 10 input neurons. When an instructive input was added, output neurons additionally received input from two out of 10 instructive neurons. Each output neuron projected uniquely onto one readout neuron which again projected back to the output neuron in a one-to-one mapping. Each output neuron was modeled as an Integrate-and-Fire neuron and 100 trials were simulated, where the voltage v is described byτvdvdt=−v+winp→oIinp+winst→oIinst+wread→oIread+Iintrinsic
+We simulated a set of n=10 output neurons, which each received input from 10 input neurons. When an instructive input was added, output neurons additionally received input from two out of 10 instructive neurons. Each output neuron projected uniquely onto one readout neuron which again projected back to the output neuron in a one-to-one mapping. Each output neuron was modeled as an Integrate-and-Fire neuron and 100 trials were simulated, where the voltage v is described by
 
-where τv=10ms is the membrane time constant, Iinp are the spike trains of the input neurons, Iinst are the spike trains from the instructive neurons, Iread are the spike trains from the read-out neurons, winp→o are the weights from the input to the output neurons, winst→o=1/N are the weights from the instructive neurons to the output neurons, and wread→o=1 are the weights from the readout to the output neurons. In addition, each neuron was receiving an intrinsic current Iintrinsic=αintrinsicη, where η is simply white noise drawn from a uniform distribution between 0 and 1 and αintrinsic is the magnitude of the current (αintrinsic was applied to all neurons in Figure 6B, while in the other configurations no intrinsic current was applied). When the voltage crosses the firing threshold = 0.4, the neuron is reset to the resting potential v=0. Each read-out neuron was also modeled as an Integrate-and-Fire neuronτvdvreaddt=−vread+wo→readIo+I
+$$
+\tau_{v}\frac{dv}{dt}=−v+w_{inp→o}I_{inp}+w_{inst→o}I_{inst}+w_{read→o}I_{read}+I_{intrinsic}
+$$
 
-where Io are the spike-trains of the output neurons, wo→read = 1/N are the weights from the output to the readout neurons, and I are the spike trains from the supervised neurons. Similarly, if the voltage crossed the firing threshold = 0.4, the neurons emit a spike and the voltage is reset to 0. winp→o were plastic under the following rule. Every time the input neurons are firing (at tpre), they are leaving a trace xpre, τSTDPdxpredt=-xpre+δt-tpre, where τSTDP=10ms is the trace time constant. Similarly, every time the output neuron spikes (at tpost), it is leaving a trace xpost,τSTDPdxpostdt=-xpost+δt-tpost .
+where $\tau_{v}=10ms$ is the membrane time constant, $I_{inp}$ are the spike trains of the input neurons, $I_{inst}$ are the spike trains from the instructive neurons, $I_{read}$ are the spike trains from the read-out neurons, $w_{inp→o}$ are the weights from the input to the output neurons, $w_{inst→o}=1/N$ are the weights from the instructive neurons to the output neurons, and $w_{read→o}=1$ are the weights from the readout to the output neurons. In addition, each neuron was receiving an intrinsic current $I_{intrinsic}=\alpha_{intrinsic}η$, where $η$ is simply white noise drawn from a uniform distribution between 0 and 1 and $\alpha_{intrinsic}$ is the magnitude of the current ($\alpha_{intrinsic}$ was applied to all neurons in Figure 6B, while in the other configurations no intrinsic current was applied). When the voltage crosses the firing threshold = 0.4, the neuron is reset to the resting potential v=0. Each read-out neuron was also modeled as an Integrate-and-Fire neuron
 
-The eligibility trace e is described asτededt=−e+xprexpost
+$$
+\tau_{v}\frac{dv_{read}}{dt}=−v_{read}+w_{o→read}I_{o}+I_{}
+$$
 
-where τe=10 min is the eligibility time constant. This value was based on the experimental protocol, where burst reactivation was applied 10 min after priming. The winp→o are potentiated if there is an eligibility trace together with dopamine and a postsynaptic burst:winp→o=αLTPdeb
+where $I_{o}$ are the spike-trains of the output neurons, $w_{o→read}$ = $1/N$ are the weights from the output to the readout neurons, and $I_{}$ are the spike trains from the supervised neurons. Similarly, if the voltage crossed the firing threshold = 0.4, the neurons emit a spike and the voltage is reset to 0. $w_{inp→o}$ were plastic under the following rule. Every time the input neurons are firing (at $t^{pre}$), they are leaving a trace $x^{pre},$ $\tau_{STDP}\frac{dx^{pre}}{dt}=-x^{pre}+\deltat-t^{pre},$ where $\tau_{STDP}=10ms$ is the trace time constant. Similarly, every time the output neuron spikes (at $t^{post}$), it is leaving a trace $x^{post},$$\tau_{STDP}\frac{dx^{post}}{dt}=-x^{post}+\deltat-t^{post}$ .
 
-where αLTP=0.0002 is the learning rate, d=0 if there is no dopamine, and d=1 if there is dopamine.
+The eligibility trace e is described as
 
-The postsynaptic burst b is detected as follows. We first computed a trace xburst asτburstdxburstdt=−xburst+δ(t−tpost),
+$$
+\tau_{e}\frac{de}{dt}=−e+x^{pre}x^{post}
+$$
 
-where τburst=5ms is the burst time constant. We set b=1 if xburst>burstthreshold , to 0 otherwise, with  burstthreshold = 1.1. If there was no dopamine nor bursts during the whole trial, then the updated rule resulted in a depressionwinp→o=αLTDe
+where $\tau_{e}=10$ min is the eligibility time constant. This value was based on the experimental protocol, where burst reactivation was applied 10 min after priming. The $w_{inp→o}$ are potentiated if there is an eligibility trace together with dopamine and a postsynaptic burst:
 
-where αLTD=αLTP /500 is the learning rate for the depression. Weights are bound to stay positive. The weights winp→o are initialized to 1 /N. We simulated the network for 2 s in Figure 6 and 2.5 s in Figure 7. The input neurons were firing Poisson statistics at 20 Hz for the first 500 ms of the trial (pairing phase). Dopamine was present during the last 500 ms of the trials in Figure 6 and the last 1 s in Figure 7. The network was simulated for 100 trials (error bars are standard deviations).
+$$
+w_{inp→o}=\alpha_{LTP}deb
+$$
 
-In Figure 6A, a standard reinforcement learning rule was used: winp→o=winp→o+αRLde, where αRL=αLTP /50. In Figure 6B, a burst dependent rule was used. Output neurons 3 and 6 had an increased excitability. We modeled that by decreasing the firing threshold to 0.25. All neurons also received an intrinsic current with αintrinsic=0.06 during the last 500 ms of each trial. In Figure 7A, the instructive neuron 3 fired Poisson statistics at 500 Hz from time 1.5–2 s and the instructive neuron 6 fired Poisson statistics at 500 Hz from time 2–2.5 s. In Figure 7B ii/iii, the read-out neuron 3 received additional Poisson inputs at 60 Hz from time 1.5–2 s and the read-out neuron 6 from time 2–2.5 s. For Figure 7B iv, however, the read-out neurons 3 and 6 received their additional Poisson inputs at the same time, from 1.5–2.5 s. In Figure 7B, we added lateral inhibition, where each read-out neuron received an inhibitory filtered version (with a time constant of 50 ms) of the spike trains of other read-out neurons, with weights of –1 /N (without self-connection).
+where $\alpha_{LTP}=0.0002$ is the learning rate, d=0 if there is no dopamine, and d=1 if there is dopamine.
 
-## Behavior
+The postsynaptic burst b is detected as follows. We first computed a trace $x^{burst}$ as
 
-## Surgery
+$$
+\tau_{burst}\frac{dx^{burst}}{dt}=−x^{burst}+\delta(t−t^{post}),
+$$
+
+where $\tau_{burst}=5ms$ is the burst time constant. We set b=1 if $x^{burst}>burst_{threshold}$ , to 0 otherwise, with  $burst_{threshold}$ = 1.1. If there was no dopamine nor bursts during the whole trial, then the updated rule resulted in a depression
+
+$$
+w_{inp→o}=\alpha_{LTD}e
+$$
+
+where $\alpha_{LTD}=\alpha_{LTP}$ /500 is the learning rate for the depression. Weights are bound to stay positive. The weights $w_{inp→o}$ are initialized to 1 /N. We simulated the network for 2 s in Figure 6 and 2.5 s in Figure 7. The input neurons were firing Poisson statistics at 20 Hz for the first 500 ms of the trial (pairing phase). Dopamine was present during the last 500 ms of the trials in Figure 6 and the last 1 s in Figure 7. The network was simulated for 100 trials (error bars are standard deviations).
+
+In Figure 6A, a standard reinforcement learning rule was used: $w_{inp→o}=w_{inp→o}+\alpha_{RL}de$, where $\alpha_{RL}=\alpha_{LTP}$ /50. In Figure 6B, a burst dependent rule was used. Output neurons 3 and 6 had an increased excitability. We modeled that by decreasing the firing threshold to 0.25. All neurons also received an intrinsic current with $\alpha_{intrinsic}=0.06$ during the last 500 ms of each trial. In Figure 7A, the instructive neuron 3 fired Poisson statistics at 500 Hz from time 1.5–2 s and the instructive neuron 6 fired Poisson statistics at 500 Hz from time 2–2.5 s. In Figure 7B ii/iii, the read-out neuron 3 received additional Poisson inputs at 60 Hz from time 1.5–2 s and the read-out neuron 6 from time 2–2.5 s. For Figure 7B iv, however, the read-out neurons 3 and 6 received their additional Poisson inputs at the same time, from 1.5–2.5 s. In Figure 7B, we added lateral inhibition, where each read-out neuron received an inhibitory filtered version (with a time constant of 50 ms) of the spike trains of other read-out neurons, with weights of –1 /N (without self-connection).
+
+### Behavior
+
+#### Surgery
 
 Mice underwent two surgeries: the first one to implant a GRIN lens directly above the cells of interest, and the other to fix an aluminum baseplate above the GRIN lens for later attachment of the miniature microscope. The procedures followed the protocol described before by Resendez et al., 2016. Surgeries were carried out following minimal standard for aseptic surgery. Analgesic (Meloxicam, 2 mg.kg-1 intraperitoneal) was administered 30 min prior to surgery. Mice were anesthetized with isoflurane (5% induction, 1–2% maintenance, Abbott Ltd, Maidenhead, UK) mixed with oxygen as carrier gas (flow rate 1.0–2.0 L.min-1) and placed in a stereotaxic frame (David Kopf Instruments, Tujunga, CA, USA). The skull was exposed by making skin incision and Bregma and Lambda were aligned horizontally. A 1.5–2 mm-wide craniotomy was drilled above the implantation site. The brain tissue above the implantation site was aspirated. Buffered ACSF was applied throughout the aspiration to prevent desiccation of the tissue. A GRIN lens (1 mm diameter, 4.3 mm length, 0.4 pitch, 0.50 numerical aperture, Grintech) was stereotaxically lowered at coordinates –1.75 AP, 1.75 ML, 1.35–1.40 DV (in mm from Bregma) and fixed to the skull surface with ultraviolet-light curable glue (Loctite 4305) and further fixed with dental adhesive (Metabond, Sun Medical) and dental acrylic cement (Simplex Rapid, Kemdent). A metal head bar was attached to the cranium using dental acrylic cement for head-fixing the animal during the microscope mounting.
 
 If the GCaMP6f expression was visible in the implanted mouse, 4 weeks later the animals were anesthetized for the purpose of attaching a baseplate for the microscope above the top of the GRIN lens. The baseplate was cemented into place and the miniscope was unlocked and detached from the baseplate.
 
-## Behavioral learning task
+#### Behavioral learning task
 
 The mice performed a rewarded spatial navigation task on a round-shaped maze (cheeseboard maze; Dupret et al., 2010). The 120 cm diameter cheeseboard had a total of 177 evenly spaced wells. The rewarded wells were baited with ∼100 μL of condensed milk mixed 1:1 with water.
 
@@ -185,7 +341,7 @@ For the first three days, the mice foraged for rewards baited in randomly select
 
 The trials were recorded with an overhead webcam video camera. The video was recorded at 24 Hz frame rate. The mice body location was tracked with DeepLabCut software (Mathis et al., 2018), a custom-written software was written to map the mouse coordinates to relative location on the maze. The extracted tracks were smoothed with a Gaussian kernel. Periods of running were identified when velocity of the mouse smoothed with a moving average 0.5 s window exceeded 4 cm/s. Immobility was defined as periods of not running that exceeded a duration of 0.5 s.
 
-## Calcium imaging
+#### Calcium imaging
 
 CaImAn software (version 1.8.5, Python) was used to motion-correct any movements between the calcium imaging frames, identify the cells and extract their fluorescence signal from the video recordings (Giovannucci et al., 2019). The method for the cell and signal detection is based on constrained non-negative matrix factorization (CNMF-E; Pnevmatikakis et al., 2016)⁠. CaImAn extracted background-subtracted calcium fluorescence values and the deconvolved the signal. The deconvolved signal can be interpreted as a scaled probability of a neuron being active. The calcium imaging videos recorded in the same-day trials were concatenated and motion-corrected to a common template frame. Signal extraction and further processing were performed on the resulting long video, allowing to detect the cells and signal present across the trials. To improve the computational performance, the video frames were cropped to a rectangle containing the regions of interest, and the video width and height were downsampled by a factor of 2.
 
@@ -193,18 +349,22 @@ The identified putative cells were automatically filtered using CaImAn. The resu
 
 The deconvolved trace was time binned, averaging the values in 200 ms bins. A calcium event was detected whenever the cell‘s deconvolved signal crossed 20% of its day-maximum value. A cell was classified as active during locomotion if it had at least one calcium event. A cell was classified as reactivated if it had at least one calcium event during immobility period and it was active during preceding locomotion. If during the immobility period mice were located within 6 cm of the reward, the reactivation was classified as reactivation at reward, otherwise as reactivation at non-rewarded location. Activity peaks were quantified by their area-under-curve (AUC) which was calculated as a convolution of the preprocessed calcium signal with a 2-s-long flat kernel. The preprocessing of calcium signal subtracted the cell’s median value and truncated the values below 0, so that only the above-median calcium signal is integrated in the AUC calculation. We excluded any samples from cells whose maximum value AUC in a given trial did not exceed 0.
 
-## Place cell detection and analysis
+#### Place cell detection and analysis
 
 To assess how spatial locations modulated activity of a cell, we considered periods of running as described in the 'Behavioral learning task' section and calculated place maps — mean neural activity per spatial bin. The total activity inside 6×6 cm bins was summed from the smoothed deconvolved signal. The mean neural activity in the spatial bin was then calculated as a ratio of the total activity to the total occupancy in the bin after both maps were smoothed across the space using a 2D Gaussian kernel with σ=12 cm. The place map was filtered to include spatial bins with total occupancy that exceeded 1 s (5 time bins, thresholded on unsmoothed total occupancy).
 
-Spatial information of a cell‘s activity was calculated using the place map values. Spatial information (Markus et al., 1994) was defined as:SpatialInformation=∑i=1Npiλiλ¯log2(λiλ¯)
+Spatial information of a cell‘s activity was calculated using the place map values. Spatial information (Markus et al., 1994) was defined as:
 
-where λ¯ represents the mean value of the neural signal, pi represents probability of the occupancy of the i-th bin, and λi represents its mean neural activity. Dividing by λ¯ ensures the metric is independent of the cell‘s average activity. The units of spatial information calculated on calcium fluorescence can be reported as bits per action potential (Climer and Dombeck, 2021). However, because the actual action potentials were not measured, we report them as arbitrary units.
+$$
+SpatialInformation=\sumi=1Np_{i}\frac{\lambda_{i}}{\lambda¯}log_{2}(\frac{\lambda_{i}}{\lambda¯})
+$$
+
+where $\lambda¯$ represents the mean value of the neural signal, $p_{i}$ represents probability of the occupancy of the i-th bin, and $\lambda_{i}$ represents its mean neural activity. Dividing by $\lambda¯$ ensures the metric is independent of the cell‘s average activity. The units of spatial information calculated on calcium fluorescence can be reported as bits per action potential (Climer and Dombeck, 2021). However, because the actual action potentials were not measured, we report them as arbitrary units.
 
 Spatial information was compared to the value expected by chance. The chance level was calculated by circularly shifting the activity with regards to the actual location. For each cell, the activity was circularly shifted within the trial by a time offset chosen randomly (minimum offset of 10 s). If the cell‘s spatial information exceeded 95% values calculated on 1000 random shifts of its activity, it was defined as a place cell.
 
 A limited number of neuronal responses sampled per spatial bin can lead to an upward bias in the estimated spatial information (Treves and Panzeri, 1995). To correct this bias, we subtracted its estimated value from the estimated spatial information. The bias was estimated as the mean spatial information from the time-shifting procedure used for place cell detection. This procedure does not require binning of the neuronal responses from the calcium imaging as required by analytical estimation (Panzeri et al., 2007), and has been used previously to estimate mutual information bias (Akrami et al., 2018).
 
-## Statistical testing of in vivo results
+#### Statistical testing of in vivo results
 
 To compare the activity peaks between the reactivated and non-reactivated cells throughout the day, we used permutation tests for repeated measures ANOVA (Figure 8E, Figure 8—figure supplement 1A,B, Figure 8—figure supplement 2). The ANOVA modeled fixed effects of trial ordinal and reactivation and random effects of within animal-session factors. Significance level was set to α=0.05. To compare the effect of reactivation in each trial on cells grouped by the trial of their first activation, we used permutation t-tests (Figure 8F, Figure 8—figure supplement 1C). Multiple comparisons were corrected with Benjamini-Hochberg method with the type I error rate set to 0.05. The permutations were restricted to within animal-session permutations. Both ANOVA and t-test statistics were computed based on and 10,000 permutations using ‘permuco‘ R package. Statistical analysis was performed in R version 3.6.3.

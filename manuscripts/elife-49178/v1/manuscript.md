@@ -47,9 +47,17 @@ We acutely treated myoblasts and myotubes with inhibitors of complex I (piericid
 
 We next performed RNA-sequencing to profile global gene expression changes following 10 hr of treatment, roughly corresponding to the duration of the myoblast cell cycle. Principal component analysis (PCA) of the combined data from myoblasts and myotubes suggested marked differences in their response to mitochondrial inhibition but the strongest trend was the fundamental distinction between the cell states (Figure 1D). We therefore proceeded to analyze the results separately for myoblasts and for myotubes.
 
-## Mechanistically distinct inhibitors of mitochondria trigger the ISR in myoblasts
+### Mechanistically distinct inhibitors of mitochondria trigger the ISR in myoblasts
 
 PCA of myoblast gene expression revealed a dominant first principal component (PC1; 57% of the variance) along which inhibited cells progressed, with piericidin and antimycin exerting a more pronounced effect than oligomycin (Figure 2A; Supplementary file 1). To gain insight into genes driving variation along PC1, we subjected the 500 genes with the most positive weights (upregulated along PC1) and, separately, the 500 genes with the most negative weights (downregulated) to cis-regulatory analysis (Janky et al., 2014) (Materials and methods). We also performed gene set enrichment analysis (GSEA) (Mootha et al., 2003; Subramanian et al., 2005) of REACTOME pathways (Croft et al., 2014) using PC1 weights as the gene ranks (Materials and methods).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig2-v1.jpg)
+
+**Figure 2.:** (A) PCA of gene expression levels derived from RNA-seq in myoblasts treated with inhibitors for 10 hr. N = 3 (same samples as in Figure 1D). Pier, piericidin; Anti, antimycin; Oligo, oligomycin. Detailed results are provided in Supplementary file 1. (B) Enriched features in the promoters of the 500 genes with the most positive PC1 weights and the 500 genes with the most negative weights, based on iRegulon analysis of transcription factor binding motifs and ChIP-seq peaks. TF, transcription factor; NES, normalized enrichment score; # Targets, number of gene targets. Detailed results are provided in Supplementary file 2. (C) Gene set enrichment analysis of REACTOME pathways using PC1 weights as the gene ranks. Detailed results are provided in Figure 2—source data 1. (D) Volcano plot relating each gene’s PC1 weight (x-axis) and jackstraw P-value for significance of association with PC1 (y-axis). (E) Fold-change from DMSO derived from RNA-seq for representative ATF4/DDIT3 target genes strongly upregulated along PC1 (Atf3, activating transcription factor 3; Gdf15, growth/differentiation factor 15; Ddit3, DNA damage-inducible transcript 3). Mean ± SD. (F) Fold-change from DMSO derived from RNA-seq for representative cell cycle pathway genes (Ccne1, G1/S-specific cyclin-E1; Tk1, thymidine kinase, cytosolic) and a cholesterol pathway gene (Idi1, isopentenyl-diphosphate delta isomerase 1) strongly downregulated along PC1. Mean ± SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of mean expression fold-changes derived from RNA-seq for upregulated ATF4/DDIT3 target genes most associated with PC1 (jackstraw p-value<0.0001). Atf4 was also included. Data was min-max normalized such that in each row, the treatment that elicited the maximum upregulation from the DMSO baseline was assigned the value one and the remaining treatments were assigned the fraction of the maximum upregulation they elicited. Rows (genes) were then hierarchically clustered based on Pearson correlation using Ward agglomeration. The first three branching points in the dendrogram define Groups 1–3, as referenced in the main text. Genes in red are used throughout this manuscript as markers of the ISR. See also Supplementary file 1. (B) Western blot of ATF4 and (p-)eIF2α in myoblasts treated for 6 hr as indicated. Pier, piericidin; Anti, antimycin; Oligo, oligomycin.
 
 Both approaches converged on activation of the ISR as a major trend driving gene expression following inhibitor treatments. Cis-regulatory analysis identified binding motifs for the ISR master regulator ATF4 as the most enriched in promoters of genes upregulated along PC1 (Figure 2B; Supplementary file 2), while GSEA highlighted pathways typically upregulated as part of the ISR, including cytosolic tRNA synthetases and translation factors, amino acid transport and biosynthesis genes, and additional ISR regulators (Harding et al., 2003; Han et al., 2013; Figure 2C).
 
@@ -59,9 +67,17 @@ We generated a volcano plot relating each gene’s magnitude and significance of
 
 A large fraction of ISR target genes displayed the gradation of induction with the different inhibitors reflected along PC1, that is antimycin > piericidin > oligomycin (Group 1 in Figure 2—figure supplement 1A). Other targets, however, showed comparable induction across the inhibitors (Group 2) and a minority even showed the reverse gradation (Group 3). These patterns suggest complex cross-regulation of some ISR targets and underscore the non-equivalence of different modes of mitochondrial dysfunction. Nevertheless, the transcriptional signatures we observed were accompanied in all cases by eIF2α phosphorylation and ATF4 protein accumulation (Figure 2—figure supplement 1B).
 
-## Oxidizing cytosolic NADH/NAD+ is sufficient to ablate ISR activation by complex I inhibition in myoblasts
+### Oxidizing cytosolic NADH/NAD+ is sufficient to ablate ISR activation by complex I inhibition in myoblasts
 
 In myoblasts, complex I or complex III inhibition triggered the ISR more potently than ATP synthase inhibition. We therefore reasoned that a decrease in ATP levels due to breakdown of OXPHOS was less likely to play the operative role in ISR activation, whereas impaired NADH oxidation (‘reductive stress’) presented a more compelling candidate. To explore this possibility, we generated myoblasts expressing LbNOX, a bacterial water-forming NADH oxidase that directly converts NADH to NAD+ independent of the ETC (Titov et al., 2016; Figure 3A, Figure 3—figure supplement 1A). We also generated cells expressing mitoLbNOX, a variant of LbNOX targeted to the mitochondrial matrix (Titov et al., 2016; Figure 3A, Figure 3—figure supplement 1A). Finally, we generated cells expressing NDI1, a piericidin-resistant yeast protein that substitutes for complex I in transferring electrons from NADH to coenzyme Q (CoQ) and thus facilitates both continued NADH oxidation and ATP synthesis by OXPHOS (Titov et al., 2016; De Vries et al., 1992; Seo et al., 1998; Seo et al., 2000; Figure 3B, Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of localization and activity of LbNOX and mitoLbNOX. IMS, intermembrane space. (B) Schematic of localization and activity of NDI1. (C) NADH/NAD+ in extracts of cells expressing luciferase (control), LbNOX, mitoLbNOX or NDI1 and treated with inhibitors for 1 hr. Data is normalized to DMSO in control cells. Mean ± SD, N = 5–6 from two experiments. Welch’s t-test (two-tailed) was used to compare each pair of treatments within control cells, as well as each treatment in the other cells with its equivalent in control cells (significance notations with no connecting lines), followed by Holm’s correction for multiple testing. (D) Media [lactate]/[pyruvate] following 2 hr treatments in control, LbNOX, mitoLbNOX or NDI1 cells. Data is normalized to DMSO in control cells. Mean ± SD, N = 5–6 from three experiments. Statistical analysis as in C. (E) qPCR of Ddit3 following 10 hr treatments in control, LbNOX, mitoLbNOX or NDI1 cells. Data is presented as fold-change from DMSO in control cells. Mean ± SD, N = 5–6 from two experiments. Statistical analysis as in C on the ΔΔCt values. (F) PCA of gene expression levels derived from RNA-seq in control, LbNOX, mitoLbNOX or NDI1 cells following 10 hr treatments, as indicated. Detailed results are provided in Supplementary files 1 and 2. (G) Fold-change from DMSO derived from RNA-seq for Atf3 and Ddit3 in control and LbNOX cells treated for 48 hr with chloramphenicol (CAP) in the presence of uridine. Mean ± SD, N = 2. (H) qPCR of Atf4 and Trp53inp1 in control and LbNOX cells following 10 hr antimycin treatment, with or without uridine (uri). Data is presented as fold-change from DMSO in control cells without uridine. Mean ± SD, N = 2. ns, p>0.05; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Oxygen consumption rate (OCR) of control, LbNOX, mitoLbNOX or NDI1 cells sequentially treated with piericidin and antimycin. Mean ± SD, N = 4–5. (B) Peak intensities of glycerol 3-phosphate and succinate in extracts of control cells treated with inhibitors for 1 hr. Data is normalized to DMSO. Mean ± SD, N = 3.
 
 We confirmed that complex I or complex III inhibition elevated whole-cell NADH/NAD+, which primarily reflects the mitochondrial ratio (Titov et al., 2016; Sies, 1982; Eng et al., 1989), more so than ATP synthase inhibition (Figure 3C), consistent with leak respiration in the latter case. The increase in whole-cell NADH/NAD+ was prevented in all cases by mitoLbNOX, as expected, whereas LbNOX provided only limited relief given the smaller cytosolic contribution to the whole-cell signal.
 
@@ -73,15 +89,23 @@ Strikingly, LbNOX expression was sufficient to almost completely ablate ISR acti
 
 We performed RNA-sequencing to ascertain the global effects of maintaining compartment-specific NADH oxidation during inhibitor treatments. PCA of the combined data from control myoblasts (shown in Figure 2) and myoblasts expressing LbNOX, mitoLbNOX or NDI1 recapitulated a first principal component driven by the ISR and proliferative gene expression. The effects following inhibitor treatments were broadly in line with the results for Ddit3. During complex I inhibition (red), oxidizing the cytosol with LbNOX (square), or the matrix and the cytosol with mitoLbNOX (triangle), was almost as effective in preventing gene expression changes along PC1 as fully maintaining OXPHOS with NDI1 (diamond) (Figure 3F; Supplementary file 1). Thus, impaired NADH oxidation was the primary trigger of ISR-related gene expression in myoblasts and correcting the NADH imbalance in the cytosol was sufficient to prevent this, which was also evident following 48 hr of inhibiting mitochondrial protein synthesis with chloramphenicol (Figure 3G).
 
-## Oxidizing cytosolic NADH/NAD+ during complex III inhibition in myoblasts promotes a p53 response that ablates the ISR
+### Oxidizing cytosolic NADH/NAD+ during complex III inhibition in myoblasts promotes a p53 response that ablates the ISR
 
 Inhibition of complex III, like complex I, leads to an increased NADH/NAD+ ratio, and oxidizing the cytosol using LbNOX similarly negated gene expression changes along PC1 during complex III inhibition (yellow; Figure 3F). However, it also triggered an orthogonal signature along PC2. Cis-regulatory analysis of the 500 genes with the most positive PC2 weights highlighted p53 as a possible regulator of this signature (Materials and methods; Supplementary file 2). Indeed, canonical p53 effectors such as Cdkn1a and Trp53inp1 were among the top 50 genes.
 
 Complex III dysfunction has been shown to activate p53 due to a pyrimidine deficiency that results from inability of dihydroorotate dehydrogenase (DHODH) to donate electrons to CoQ (Khutornenko et al., 2010). p53 activation downregulated Atf4 in this setting and shut down ISR gene expression (Evstafieva et al., 2014). Given these observations, we compared the Atf4 and Trp53inp1 transcripts following antimycin treatment. As before, control cells activated the ISR but not p53 while LbNOX cells activated a p53 response that inhibited Atf4 (Figure 3H). p53 activation in LbNOX cells was prevented by adding uridine to compensate for the pyrimidine deficiency, in which case ISR gene expression was not fully ablated. Thus, p53 activation following complex III inhibition was dependent on an oxidized cytosolic NADH/NAD+ ratio and required to fully ablate the ISR.
 
-## Complex I inhibition in myoblasts activates the eIF2α kinase GCN2 due to an asparagine deficiency
+### Complex I inhibition in myoblasts activates the eIF2α kinase GCN2 due to an asparagine deficiency
 
 We focused our mechanistic investigation on the functional consequence of complex I inhibition that triggered the ISR, as the response was most effectively blunted by oxidizing cytosolic NADH in this case. One possibility was that glycolysis was inhibited by elevated cytosolic NADH/NAD+, limiting the cells’ ability to defend their adenylate energy charge in the absence of OXPHOS. Using lactate secretion as a proxy for glycolytic flux, we found that LbNOX did modestly stimulate glycolysis (Figure 4A, Figure 4—figure supplement 1A). However, this did not translate into an improved energy charge, and in fact, the opposite was true (Figure 4B, Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig4-v1.jpg)
+
+**Figure 4.:** (A) Secreted [lactate] following 2 hr piericidin treatment in control (Ctrl), LbNOX (Lb) or NDI1 cells. Data is normalized to DMSO (-) separately for each cell line. Mean ± SD, N = 6 from three experiments (same samples as in Figure 3D). Welch’s t-test (two-tailed) was used to compare control with LbNOX and NDI1 cells, followed by Holm’s correction for multiple testing. (B) Adenylate energy charge following 1 hr piericidin treatment in control, LbNOX or NDI1 cells. Mean ± SD, N = 5–6 from two experiments. The Games-Howell test was used to make all pairwise comparisons. Notations with no connecting lines relate to the equivalent treatment in control cells. (C) Fold-change (x-axis) and statistical significance (y-axis) of metabolite differential abundance following 1 hr piericidin treatment in extracts of control or LbNOX cells. N = 3. P-Ser, phosphoserine; Asp, aspartate; Asn, asparagine; Cit, citrate; Suc, succinate; αKG, α-ketoglutarate; IMP, inosine monophosphate; AICAR, 5-aminoimidazole-4-carboxamide ribonucleotide; R5P, ribose 5-phosphate; G3P/DHAP, glyceraldehyde 3-phosphate and/or dihydroxyacetone phosphate; P-Cr, phosphocreatine; Pro, proline. Detailed results are provided in Figure 4—source data 1. (D) Intracellular [aspartate] following 1 hr piericidin treatment in control or LbNOX cells. Data is normalized to DMSO in control cells. Mean ± SD, N = 6 from two experiments (includes samples shown in C). The Games-Howell test was used for all pairwise comparisons. (E) Peak intensity of intracellular asparagine following 1 hr piericidin treatment in control cells, with or without aspartate, and in LbNOX cells. Data is normalized to DMSO in control cells. Mean ± SD, N = 6 from two experiments. The Games-Howell test was used for all pairwise comparisons. (F) qPCR of Ddit3 following 10 hr piericidin treatment in control cells, with or without aspartate, and in LbNOX cells. Data is presented as fold-change from DMSO in control cells. Mean ± SD, N = 8 from three experiments. The Games-Howell test was used to make all pairwise comparisons of ΔΔCt values. (G) Media [lactate]/[pyruvate] following 2 hr piericidin treatment, with or without aspartate, in control cells. Data is normalized to DMSO without aspartate. Mean ± SD, N = 6 from three experiments. Welch’s t-test (two-tailed) was used to compare each treatment with and without aspartate, followed by Holm’s correction. (H) Proliferative rate (doublings in 24 hr) of control cells, with or without aspartate, and of LbNOX cells following piericidin treatment. Data is normalized to DMSO in control cells. Mean ± SD, N = 5–6 from three experiments. The Games-Howell test was used for all pairwise comparisons. (I) qPCR of Atf3 following 10 hr pyruvate withdrawal, with or without aspartate, in Ndufa9-KO C2C12 myoblasts. Data is presented as fold-change from the condition with pyruvate (+). Mean ± SD, N = 3. (J) qPCR of GDF15 following 10 hr piericidin treatment, with or without pyruvate or aspartate, in primary human skeletal myoblasts. Data is presented as fold-change from DMSO. Mean ± SD, N = 3. (K) qPCR of Atf3 following 10 hr piericidin or tunicamycin (Tuni) treatment, with or without GCN2iB, in control cells. Data is presented as fold-change from DMSO. Mean ± SD, N = 6-7. Welch’s t-test (two-tailed) was used to compare each treatment with and without GCN2iB, followed by Holm’s correction. (L) Western blot of (p-)GCN2, ATF4 and (p-)eIF2α following 6 hr piericidin treatment in the indicated conditions in LbNOX cells. LbNOX expression was induced only where indicated. (M) qPCR of Atf3 and Gdf15 in the same cells and conditions shown in L. Data is presented as fold-change from DMSO. Mean ± SD, N = 2–3. GiB, GCN2iB. (N) Model for ISR activation by complex I inhibition in myoblasts. ns, p>0.05; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Secreted [lactate] following 2 hr inhibitor treatments in control or LbNOX cells. Data is normalized to DMSO separately in each cell line. Mean ± SD, N = 6 from three experiments (expanded version of Figure 4A). (B) Adenylate energy charge following 1 hr treatments in control or LbNOX cells. Mean ± SD, N = 5–6 from two experiments (expanded version of Figure 4B). (C) Scatter plot of intracellular metabolite fold-changes between piericidin and DMSO in control cells (x-axis) or LbNOX cells (y-axis). N = 3 replicates (same data as in Figure 4C). (D) Intracellular [aspartate] following 1 hr treatments in control or LbNOX cells. Mean ± SD, N = 6 from two experiments (expanded version of Figure 4D). (E) Peak intensity of intracellular asparagine following 1 hr treatments in control or LbNOX cells. Mean ± SD, N = 6 from two experiments (expanded version of Figure 4E). (F)-(I) qPCR of ISR-related transcripts following 10 hr treatments, with or without aspartate, in control cells. Data is presented as fold-change from DMSO without aspartate. Mean ± SD, N = 3. Ppp1r15a, protein phosphatase 1 regulatory subunit 15A. (J) qPCR of Atf3 following 10 hr piericidin treatment, with or without pyruvate or aspartate, in primary mouse embryonic fibroblasts. Data is presented as fold-change from DMSO (-). Mean ± SD, N = 3. (K) qPCR of Atf3 following 10 hr piericidin or tunicamycin treatment, with or without aspartate, GCN2iB or the PERK inhibitor GSK2656157, in control cells. Data is presented as fold-change from DMSO. Mean ± SD, N = 3. (L) Ratio of p-eIF2α to total eIF2α, measured by western blot, following 6 hr piericidin treatment in LbNOX cells. LbNOX expression was induced only where indicated. Data is normalized separately in each blot to the DMSO-treated sample not expressing LbNOX. Mean ± SD, N = 4 from four experiments. A one-sample t-test was used to examine whether the mean of DMSO-treated samples expressing LbNOX differed from 1, and Welch’s t-test (two-tailed, paired by blot) was used to compare the piericidin-treated samples with and without LbNOX expression. Holm’s correction was then applied. ns, p>0.05; **, p<0.01.
 
 Another possibility was that elevated mitochondrial and cytosolic NADH/NAD+ depleted a critical nutrient, which then triggered the ISR. We performed intracellular metabolite profiling on control cells or LbNOX cells acutely treated with piericidin (Figure 4C, Figure 4—figure supplement 1C). The amino acids aspartate and its derivative asparagine, alongside related TCA cycle intermediates, emerged among the top metabolites depleted by piericidin in a manner responsive to oxidizing the cytosol. This result is consistent with the contribution to aspartate synthesis of the mitochondrial and cytosolic NAD+-linked malate dehydrogenase (MDH) reactions that yield its precursor, oxaloacetate (Birsoy et al., 2015; Sullivan et al., 2015; Chen et al., 2016). Absolute quantification confirmed a ~ 16 fold drop in aspartate within 1 hr of piericidin treatment in control cells compared with only a 2.5-fold drop in LbNOX cells (Figure 4D, Figure 4—figure supplement 1D).
 
@@ -93,15 +117,23 @@ Finally, we wished to examine how GCN2 sensed the amino acid deficiency. Using a
 
 The effects of the same interventions on eIF2α phosphorylation, the event downstream of GCN2 activation, were notably less pronounced, especially given the narrow dynamic range of this signal. We observed clear attenuation of eIF2α phosphorylation upon piericidin treatment in the case of LbNOX expression, though the rescue was still incomplete (Figure 4L, Figure 4—figure supplement 1L). ATF4 protein levels largely tracked the degree of GCN2 activation (Figure 4L) and this was reflected at the level of transcriptional ISR targets at the same time-point (Figure 4M). GCN2iB completely prevented ATF4 protein accumulation despite some residual eIF2α phosphorylation (Figure 4L), suggesting GCN2 was required to attain the threshold phosphorylation level that elicits ATF4 translation. Collectively, these experiments indicate that in myoblasts, the rise in the NADH/NAD+ ratio is a major driver of ISR-related gene expression following complex I inhibition, as it limits biosynthesis of aspartate, depletes asparagine and activates GCN2 (Figure 4N).
 
-## ATP synthase inhibition potently triggers the ISR in myotubes while ETC inhibition neither depletes asparagine nor activates the response
+### ATP synthase inhibition potently triggers the ISR in myotubes while ETC inhibition neither depletes asparagine nor activates the response
 
 We next examined the effects of inhibitor treatments in myotubes. In contrast to myoblasts, myotubes only experienced significant gene expression changes upon ATP synthase inhibition (PC1; 50% of the variance) (Figure 5A; Supplementary file 1), driven once more by ISR activation (Figure 5B), whereas ETC inhibition had little effect. The shift in the pattern of ISR activation was already evident as soon as 24 hr after the switch to low serum, when cells are largely post-mitotic but far from differentiated (Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig5-v1.jpg)
+
+**Figure 5.:** (A) PCA of gene expression levels derived from RNA-seq in myotubes treated with inhibitors for 10 hr. N = 3 (same samples as in Figure 1D). Detailed results are provided in Supplementary file 1. (B) qPCR of Ddit3 following 10 hr treatments in myotubes. Data is presented as fold-change from DMSO. Mean ± SD, N = 6 from two experiments. The Games-Howell test was used for all pairwise comparisons of ΔΔCt values. (C) NADH/NAD+ in myotube extracts following 1 hr treatments. Data is normalized to DMSO. Mean ± SD, N = 8 from two experiments. The Games-Howell test was used for all pairwise comparisons. (D) Media [lactate]/[pyruvate] following 2 hr treatments in myotubes expressing GFP, LbNOX or mitoLbNOX using adenoviral transduction. Data is normalized to DMSO in GFP. Mean ± SD, N = 6 from three experiments. Welch’s t-test (two-tailed) was used to compare each pair of treatments within GFP cells, as well as each treatment in the other cells with its equivalent in GFP cells (significance notations with no connecting lines), followed by Holm’s correction for multiple testing. (E) Secreted [lactate] following 2 hr treatments in myotubes. Data is normalized to DMSO. Mean ± SD, N = 6 from three experiments (same samples as in D). (F) Adenylate energy charge following 1 hr treatments in myotubes. Mean ± SD, N = 7–8 from two experiments. The Games-Howell test was used for all pairwise comparisons. (G) Intracellular [aspartate] following 1 hr treatments in myotubes. Data is normalized to DMSO. Mean ± SD, N = 7–8 from two experiments. The Games-Howell test was used for all pairwise comparisons. (H) Peak intensity of intracellular asparagine following 1 hr treatments in myotubes. Data is normalized to DMSO. Mean ± SD, N = 8 from two experiments. The Games-Howell test was used for all pairwise comparisons. (I) Fold-change from DMSO derived from RNA-seq for Atf3, Ddit3 and Gdf15 in myotubes treated for 10 hr with oligomycin alone, or in combination with piericidin, BAM15 or 5% O2. Mean ± SD, N = 3. See also Supplementary file 1. (J) Model for ISR activation by ATP synthase inhibition in myotubes. ns, p>0.05; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49178/elife-49178-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) qPCR of Ddit3 following 10 hr inhibitor treatments in C2C12 myoblasts, post-mitotic cells and myotubes. Data is normalized to DMSO separately in each panel. Mean ± SD, N = 3 (myoblast samples are a subset of those previously shown in Figure 3E and myotube samples are a subset of those previously shown in Figure 5B). (B) qPCR of Ddit3 in myotubes treated for 48 hr with chloramphenicol (CAP). Data is presented as fold-change from DMSO. Mean ± SD, N = 5–6. (C) qPCR of Ddit3 in myotubes treated for 10 hr with DMSO or oligomycin in the presence of the indicated concentration of BAM15. Data is normalized to DMSO (-) with no BAM15. Mean ± SD, N = 2. (D) qPCR of Ddit3 in myotubes expressing GFP or LbNOX (Lb) and treated with oligomycin for 10 hr. Data is normalized to DMSO (-) in GFP. Mean ± SD, N = 3. Welch’s t-test (two-tailed) was used to compare oligomycin-treated samples expressing GFP and LbNOX. ns, p>0.05. See also Supplementary file 1. (E) qPCR of GDF15 in primary human myotubes treated for 10 hr with oligomycin alone, in combination with piericidin or in combination with BAM15. Data is presented as fold-change from DMSO. Mean ± SD, N = 3–6.
 
 To interrogate why myotubes did not trigger the ISR upon ETC inhibition, we again measured compartment-specific NADH/NAD+. Myotubes did experience a significant increase in both the mitochondrial and the cytosolic ratio during ETC inhibition (Figure 5C,D). However, the ratios were not tightly linked, as in myoblasts. The severity of NADH imbalance across the inhibitors was discordant between the compartments and oxidizing mitochondrial NADH with mitoLbNOX failed to oxidize cytosolic NADH/NAD+. These results suggest myotubes did not rely on complex I to oxidize cytosolic reducing equivalents via the malate-aspartate shuttle. Rather, cytosolic NADH/NAD+ likely increased due to activation of glycolysis, evidenced by a ~ 75% rise in lactate secretion (Figure 5E), that was triggered by the drop in the energy charge regardless of the specific inhibitor used (Figure 5F). The glycerol-3-phosphate shuttle, which is uniquely sensitive to antimycin, remained operative (Figure 5D).
 
 We next wondered how the altered metabolic state of myotubes impacted the fate of the amino acids aspartate and asparagine, whose depletion triggered the ISR in myoblasts. Despite elevated mitochondrial and cytosolic NADH/NAD+, complex I or complex III inhibition caused only a modest decrease (2-fold and 4-fold, respectively) in intracellular aspartate whereas ATP synthase inhibition even led to a slight accumulation (Figure 5G). None of the treatments depleted asparagine, which in fact accumulated (Figure 5H), possibly reflecting elevated cytosolic aspartate as asparagine synthesis occurs in the cytosol. The absence of asparagine deficiency likely explains why myotubes do not activate the ISR when complex I or complex III is inhibited. Myotubes also failed to trigger the ISR after mitochondrial protein synthesis was blocked for 48 hr (Figure 5—figure supplement 1B).
 
-## ISR activation by ATP synthase inhibition in myotubes is related to mitochondrial inner-membrane hyperpolarization
+### ISR activation by ATP synthase inhibition in myotubes is related to mitochondrial inner-membrane hyperpolarization
 
 We next explored why ATP synthase inhibition activates the ISR in myotubes. Inhibition of complex I, complex III or ATP synthase all acutely impair NADH oxidation and OXPHOS but their effects on mitochondrial membrane potential are distinct. Only ATP synthase inhibition is associated with inner-membrane hyperpolarization. To test whether this phenomenon was responsible for ISR activation, we treated myotubes with oligomycin in combination with piericidin, which prevents hyperpolarization by eliminating residual ETC activity and proton pumping. We also treated with oligomycin after pre-conditioning in mild hypoxia (5% O2), which dampens residual ETC activity by shunting pyruvate flux away from the TCA cycle (Papandreou et al., 2006; Wheaton and Chandel, 2011; Semenza, 2011). Alternatively, we treated with oligomycin in combination with a mild dose of BAM15 to directly depolarize the inner-membrane (Kenwood et al., 2014). All three interventions significantly attenuated the ISR (Figure 5I, Figure 5—figure supplement 1C; Supplementary file 1), whereas LbNOX expression did not (Figure 5—figure supplement 1D; Supplementary file 1), implicating hyperpolarization as the key factor in the signal relay (Figure 5J). Similar results were obtained in primary human myotubes (Figure 5—figure supplement 1E). Intriguingly, a higher dose of BAM15 triggered the ISR on its own, suggesting perturbation to membrane potential in either direction was sensed (Figure 5—figure supplement 1C).
 
@@ -129,7 +161,395 @@ Our study demonstrates that multiple paths connect mitochondrial dysfunction to
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>CRL-1772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Ndufa9-knockout C2C12</td>
+      <td>PMID:27622560</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Primary mouse embryonic fibroblasts (MEF)</td>
+      <td>Lonza</td>
+      <td>M-FB-481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Primary human skeletal myoblasts (HSkM)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Doxycycline-inducible luciferase (pLVX-TRE3G-Luc)</td>
+      <td>Takara Bio (formerly Clontech)</td>
+      <td>Sold as part of 631187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Doxycycline-inducible LbNOX</td>
+      <td>PMID:27124460</td>
+      <td></td>
+      <td>Available without inducible system on Addgene (#75285)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Doxycycline-inducible mitoLbNOX</td>
+      <td>PMID:27124460</td>
+      <td></td>
+      <td>Available without inducible system on Addgene (#74448)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Doxycycline-inducible Saccharomyces cerevisiae NDI1</td>
+      <td>PMID:27124460</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human adenovirus type5 expressing eGFP</td>
+      <td>Vector Biolabs</td>
+      <td>1060-HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human adenovirus type5 expressing eGFP and LbNOX</td>
+      <td>Vector Biolabs (PMID:27124460)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human adenovirus type5 expressing eGFP and mitoLbNOX</td>
+      <td>Vector Biolabs (PMID:27124460)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s Modified Eagle’s Medium (DMEM), 4 mM L-Glutamine, no glucose, no sodium pyruvate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11966–025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dialyzed fetal bovine serum (dFBS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26400–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dialyzed horse serum</td>
+      <td>Valley Biomedical</td>
+      <td>AS3053-DI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Horse serum, New Zealand origin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>16050–130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)-Glucose solution</td>
+      <td>Sigma</td>
+      <td>G8769</td>
+      <td>Working concentration 10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma</td>
+      <td>D9891</td>
+      <td>300 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Piericidin A</td>
+      <td>Santa Cruz</td>
+      <td>Sc-202287</td>
+      <td>0.5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin A</td>
+      <td>Sigma</td>
+      <td>A8674</td>
+      <td>0.5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin A</td>
+      <td>Sigma</td>
+      <td>75351</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAM15</td>
+      <td>TimTec</td>
+      <td>ST056388</td>
+      <td>0.5 μM (or as indicated)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloramphenicol</td>
+      <td>Sigma</td>
+      <td>C0378</td>
+      <td>20 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tunicamycin</td>
+      <td>Sigma</td>
+      <td>T7765</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Aspartic acid</td>
+      <td>Sigma</td>
+      <td>A9256</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Asparagine monohydrate</td>
+      <td>Sigma</td>
+      <td>A8381</td>
+      <td>0.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11360–070</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine</td>
+      <td>Sigma</td>
+      <td>U3003</td>
+      <td>200 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GCN2iB</td>
+      <td>Acme Bioscience (PMID:30061420)</td>
+      <td></td>
+      <td>0.5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK2656157</td>
+      <td>Cayman Chemical</td>
+      <td>17372</td>
+      <td>0.25 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium DL-Lactate-3,3,3-d3</td>
+      <td>CDN Isotopes</td>
+      <td>D6556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate-13C3</td>
+      <td>Sigma</td>
+      <td>490717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine-15N5 5′-Monophosphate</td>
+      <td>Sigma</td>
+      <td>900382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine-13C5 5’-Diphosphate</td>
+      <td>Toronto Research Chemicals</td>
+      <td>A281697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine-13C10 5′-Triphosphate</td>
+      <td>Sigma</td>
+      <td>710695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Aspartic acid-1,4-13C2</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>CLM-4455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formic acid, LC/MS grade</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A117-50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium hydrogen carbonate, LC/MS grade</td>
+      <td>Sigma</td>
+      <td>5.33005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan gene expression master mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>4369514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ubr3 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm01328979_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Atf3 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00476033_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ddit3 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm01135937_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Atf4 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00515325_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gdf15 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00442228_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ppp1r15a mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm01205601_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trp53inp1 mouse TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Mm00458142_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TBP human TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00427620_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GDF15 human TaqMan probe</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Hs00171132_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GCN2 (rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3302</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-GCN2 (Thr899) (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab75836</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATF4 (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>11815</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eIF2α (mouse, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2103</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-eIF2α (Ser51) (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3597</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (mouse, monoclonal)</td>
+      <td>Sigma</td>
+      <td>A4700</td>
+      <td>1:3000 dilution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 C2C12 cells were obtained from ATCC (CRL-1772) and cell identity was authenticated by successful differentiation into myotubes and by RNA sequencing. The cells were used as-is for differentiation and were also infected with lentiviruses to generate stable cell lines expressing luciferase (control), LbNOX, mitoLbNOX or NDI1 under a doxycycline-inducible promoter (TRE3G; Clontech, CA), as previously described (Titov et al., 2016). Ndufa9-knockout C2C12 cells were previously generated using CRISPR/Cas9 (Vafai et al., 2016). Primary mouse embryonic fibroblasts were obtained from Lonza (Morristown, NJ; M-FB-481) and primary human skeletal myoblasts from Thermo Fisher Scientific (San Jose, CA; A11440). Cells were kept in a 37C, 5% CO2 incubator, except where otherwise indicated. Periodic testing for Mycoplasma was performed and was negative.
 
@@ -139,7 +559,7 @@ Doxycycline-inducible myoblasts were cultured in media supplemented to 10% dialy
 
 C2C12 myoblasts intended for differentiation were grown in media supplemented to 20% dFBS and kept sparse until seeded for experiments. When seeded cells had grown to confluence, they were switched to media supplemented to 2% dialyzed horse serum (Valley Biomedical, Winchester, VA; AS3053-DI) to induce differentiation. Human myoblasts intended for differentiation were seeded immediately after thaw directly at a confluent density in media supplemented to 2% horse serum, New Zealand origin (Thermo Fisher Scientific; 16050–130).
 
-## Cell treatments for RNA isolation
+### Cell treatments for RNA isolation
 
 Doxycycline-inducible C2C12 myoblasts were seeded for most treatments at 20,000 cells per well in 24-well plates with 0.5 ml/well of media without selection antibiotics. Only 2,000 cells per well were seeded for chloramphenicol treatment. Approximately 3 hr after initial seeding, an additional 0.5 ml/well of media supplemented with doxycycline (Sigma; D9891; dissolved in water) was dispensed to induce protein expression, such that the final concentration was 300 ng/ml.
 
@@ -159,7 +579,7 @@ Human myoblasts intended for differentiation were seeded directly at a confluent
 
 Treatments intended for RNA isolation lasted 10 hr, except where otherwise indicated. At the end of the treatment, cells were lysed in 150 μl/well buffer RLT from the RNeasy kit (Qiagen, Germantown, MD; 74106). The lysates were immediately frozen at −80C until RNA isolation. RNA isolation was performed using the RNeasy kit or RNeasy96 kit (Qiagen; 74181) following the manufacturer’s protocol.
 
-## RNA sequencing and data analysis
+### RNA sequencing and data analysis
 
 The integrity of RNA intended for sequencing was assayed using Agilent Bioanalyzer 2100 or Advanced Analytical Fragment Analyzer. All tested RNA samples yielded optimal (10) or near optimal (>9) RIN/RQN values. 50 ng RNA per sample were submitted for preparation of sequencing libraries at the Broad Technology Labs based on the Smart-seq2 method (Picelli et al., 2014). The protocol included selection for polyadenylated RNA and was not strand-specific. Libraries were sequenced on two flow-cells of an Illumina NextSeq 500 instrument, generating 2 × 37 bp paired-end reads. Demultiplexed sequencing data has been deposited in the NCBI Gene Expression Omnibus (GEO) database under accession GSE132234.
 
@@ -171,11 +591,11 @@ Cis-regulatory analysis was performed with iRegulon (Janky et al., 2014) (v. 1.3
 
 Gene set enrichment analysis (GSEA) (Subramanian et al., 2005) was performed for REACTOME (Croft et al., 2014) pathways with a minimal size of 15 genes and a maximal size of 1000 genes. The input consisted of all genes with a PC1 jackstraw p-value<0.01 and pre-ranked by their PC1 weights. The gene list was converted to the equivalent human genes since REACTOME pathways are defined for human genes. GSEA was run using the fgseaMultilevel function in the R package fgsea (Sergushichev, 2016). The output was subset to pathways with a Benjamini-Hochberg corrected p-value<0.05. The overlap in leading edge genes between each pair of pathways was calculated and the overlap matrix was hierarchically clustered based on Euclidean distance with complete linkage. The clustering guided manual selection of minimally redundant, representative gene sets to include in the visualization (Figure 2C).
 
-## qPCR
+### qPCR
 
 Isolated RNA was annealed to random primers (Thermo Fisher Scientific; 48190–011) for 5 min at 70C, then reverse transcribed for 1 hr at 37C using M-MLV reverse transcriptase (Promega, Madison, WI; M1705) in the presence of RNase inhibitor (Thermo Fisher Scientific; 10777–019). The resulting cDNA was subjected to qPCR using TaqMan gene expression master mix (Thermo Fisher Scientific; 4369514) and TaqMan gene expression probes (see Key Resources Table for details) on a CFX96 instrument (Bio-Rad, Hercules, CA). Raw amplification cycle data was produced by the accompanying analysis software using default parameters. Cycle differences between tested conditions and the baseline condition were normalized against the reference gene Ubr3 (for mouse samples) or TBP (for human samples), yielding ΔΔCt. Fold-changes were calculated as 2-ΔΔCt, but statistical testing was performed on the underlying ΔΔCt values.
 
-## [Lactate] and [pyruvate] in spent media
+### [Lactate] and [pyruvate] in spent media
 
 Cells were cultured and treated in the same way as for RNA isolation, except the final treatment media volume for myoblasts was 0.5 ml/well. 100 μl of the media in each well was collected 2 hr after the start of treatment and immediately frozen at −80C.
 
@@ -185,7 +605,7 @@ Media samples were separated using an Xbridge amide column (2.1 × 100 mm, 2.5 �
 
 Absolute concentrations for lactate and pyruvate were obtained based on a standard curve and used to report media [lactate]/[pyruvate] ratios and secreted [lactate]. For myoblasts, secreted [lactate] values were adjusted within each (transgene X treatment) combination based on the median [pyruvate] value, to account for variation in cell number.
 
-## Cell extract metabolite profiling
+### Cell extract metabolite profiling
 
 Doxycycline-inducible myoblasts were seeded at 200,000 cells per dish in 6 cm dishes with 4 ml/dish of media without selection antibiotics. Approximately 3 hr later, 2 ml/dish were removed and replaced with 2 ml/dish of media containing doxycycline (final concentration 300 ng/ml). 24 hr after doxycycline addition, the media was fully replaced with 3 ml/dish fresh media (including doxycycline). 2 hr after the media replenishment, 1.5 ml/dish was removed and replaced with 1.5 ml/dish of media containing inhibitors at 2x the final concentrations, which were the same as described for RNA isolation.
 
@@ -197,15 +617,15 @@ Extracted samples were separated using a ZIC pHILIC column (2.1 × 150 mm, 5 μm
 
 Progenesis QI software (Waters) was used to perform peak picking, peak alignment across samples, deconvolution of adduct peaks, peak intensity integration and intensity normalization across samples. An in-house metabolite retention time library of reference standards was used to identify the peaks based on accurate mass within a two ppm tolerance window and retention time within a 0.25 min tolerance window. Metabolite differential abundance analysis upon inhibitor treatment was performed on log2-transformed intensities using the R package limma. P-values are based on a moderated t-statistic.
 
-The whole-cell NADH/NAD+ ratio was calculated based on peak intensities. Absolute concentrations for AMP, ADP, ATP and aspartate were obtained based on a standard curve. The adenylate energy charge was calculated as: ATP+12ADPATP+ADP+AMP.
+The whole-cell NADH/NAD+ ratio was calculated based on peak intensities. Absolute concentrations for AMP, ADP, ATP and aspartate were obtained based on a standard curve. The adenylate energy charge was calculated as: $\frac{ATP+\frac{1}{2}ADP}{ATP+ADP+AMP}$.
 
-## Oxygen consumption rate (OCR) measurements
+### Oxygen consumption rate (OCR) measurements
 
 Doxycycline-inducible myoblasts were seeded at 15,000 cells per well in Seahorse 24-well cell culture microplates with 0.5 ml/well of media without selection antibiotics. 24 hr later, the media was replenished including doxycycline at a final concentration of 300 ng/ml. 24 hr after doxycycline addition, the media was replaced with 0.5 ml/well of the same media formulation except containing 25 mM HEPES-KOH instead of sodium bicarbonate. The cells were placed for 1 hr into a non-CO2 controlled 37C incubator and then transferred to the XF24 Extracellular Flux Analyzer for OCR measurement. Each measurement was performed over 4 min after a 2 min mix and a 2 min wait. Inhibitors were introduced into the wells from the XF24 ports in 50 μl of media to the same final concentrations as described above for RNA isolation.
 
 For myotube OCR measurement, myoblasts were seeded at 25,000 cells per well, became confluent within 24 hr and differentiated in low-serum media for 4 days. The rest of the protocol was as described above except the media volume in each well during the assay was 1 ml.
 
-## Western blotting
+### Western blotting
 
 Doxycycline-inducible LbNOX cells were seeded at 200,000 cells per dish in 6 cm dishes with 4 ml/dish of media without selection antibiotics. Approximately 3 hr later, 2 ml/dish were removed and replaced with 2 ml/dish of fresh media supplemented with either water, to avoid LbNOX expression, or doxycycline at a final concentration of 300 ng/ml, to induce expression. Inhibitor treatments were started 24 hr after water or doxycycline addition with complete replacement of the media (still including 300 ng/ml doxycycline where needed).
 
@@ -215,6 +635,6 @@ When lysates were thawed, protein concentration was determined in the RIPA lysat
 
 To probe the complete ISR pathway on the same membrane, as in Figure 4L, the membrane was first probed overnight at 4C with an anti-GCN2 antibody (rabbit, polyclonal; Cell Signaling Technology; 3302) at a dilution of 1:500 in Intercept T20 TBS antibody diluent (LI-COR Biosciences; 927–65001). The following day, the membrane was washed three times with TBST for 5 min each and then incubated for 1 hr at room temperature (RT) with IRDye 800CW goat anti-rabbit IgG secondary antibody (LI-COR Biosciences; 926–32211) at a dilution of 1:10,000 in the antibody diluent. The membrane was again washed 3 times for 5 min each and then scanned for infrared signal on the Odyssey imaging system (LI-COR Biosciences). The membrane was then incubated for 15 min at RT with Restore western blot stripping buffer (Thermo Fisher Scientific; 21059), blocked for 30 min and probed overnight at 4C with an anti-Phospho-GCN2 (Thr899) antibody (rabbit, monoclonal; Abcam; ab75836) at a dilution of 1:500. The following day, the membrane was washed, incubated with anti-rabbit secondary antibody and imaged. After this, the membrane was probed for 2 hr at RT with an anti-ATF4 antibody (rabbit, monoclonal; Cell Signaling Technology; 11815) at a dilution of 1:500 along with an anti-Actin antibody (mouse, monoclonal; Sigma; A4700) at a dilution of 1:3000. The membrane was then washed, incubated with both the anti-rabbit secondary antibody and an IRDye 680RD goat anti-mouse IgG secondary antibody (LI-COR Biosciences; 926–68070) at a dilution of 1:10,000 and imaged. The membrane was then probed overnight at 4C with an anti-phospho-eIF2α (Ser51) antibody (rabbit, monoclonal; Cell Signaling Technology; 3597) at a dilution of 1:500. The next day, the membrane was washed, incubated with anti-rabbit secondary antibody and imaged. Finally, the membrane was probed for 2 hr at RT with an anti-eIF2α antibody (mouse, monoclonal; Cell Signaling Technology; 2103) at a dilution of 1:500, washed, incubated with anti-mouse secondary antibody and imaged. Thus, the exact same bands were probed for both total- and phospho-eIF2α, and the corresponding signals obtained at separate wavelengths. Note, when GCN2 was not examined, as in Figure 2B, the procedure began directly with probing for ATF4 and Actin. Band intensities were quantified using Image Studio Lite (LI-COR Biosciences).
 
-## Cell proliferation
+### Cell proliferation
 
 Doxycycline-inducible myoblasts were seeded at 5,000 cells per well in 24-well plates with 0.5 ml/well of media without selection antibiotics. Approximately 3 hr later, an additional 0.5 ml/well of media supplemented with doxycycline was dispensed in each well, such that the final concentration was 300 ng/ml. Inhibitor treatments were started 24 hr later with complete replacement of the media (still including 300 ng/ml doxycycline). Baseline counts for each condition were collected immediately after the start of treatment from separate wells. Final counts were collected 24 hr after the start of treatment. Counts were obtained using a Z2 Coulter Particle Count and Size Analyzer (Beckman Coulter, Brea, CA). The proliferative rate was calculated as the number of cell doublings between final and baseline counts.

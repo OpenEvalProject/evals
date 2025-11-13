@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03yghzc09 Department of Psychology, Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom
-2. https://ror.org/056d84691 Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden
+1. Department of Psychology, Faculty of Health and Life Sciences, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+2. Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ The demonstration that neural representations of other’s distress are positive
 
 ## Results
 
-## Helping decisions did not vary based on threat imminence or threat level
+### Helping decisions did not vary based on threat imminence or threat level
 
 Using Generalized Linear Mixed Models (GLMMs), we found no significant effect of either threat imminence (β=0.017, se=0.014, t=1.24, p=0.218), threat level (β=−0.068, se=0.053, t=−1.282, p=0.205), nor a threat imminence*level interaction (β=−0.099, se=0.019, t=−0.497, p=0.622) on the percentage of helping decisions throughout the task (Figure 2A). Despite the lack of group-level effects of threat imminence (which were predicted based on previous work; Vieira et al., 2020), individual data showed that the number of participants helping more during imminent than distal threats was objectively higher (n=27) than those helping more during distal (n=11), or the same amount during imminent and distal (n=11) (Figure 2B). Note that these differences are descriptive, and no statistical inference was performed.
 
@@ -50,13 +50,13 @@ Also, to account for the possibility that decisions varied throughout the experi
 
 Finally, in line with previous work (Vieira et al., 2020), analysis of reaction times showed individuals made faster decisions during imminent versus distal trials (β=−173.30, se=12.09, t=−14.33, p<0.0001), and for shock versus safe trials (β[1 shock]=−43.26, se=12.76, t=−3.39, p=0.001; β[2 shock]=−53.35, se=13.43, t=−3.97, p=0.0002), with no significant threat imminence*level interaction (Figure 2C).
 
-## Participants were sensitive to variations in the co-participant’s distress, threat imminence, and threat level (manipulation check)
+### Participants were sensitive to variations in the co-participant’s distress, threat imminence, and threat level (manipulation check)
 
 After the scan, participants were asked to re-watch all clips of the co-participant during the scan, and rate the level of ‘discomfort, anxiety or uneasiness’ they thought he was experiencing in each clip. Of note, these clips were shown without the threat cues (see Figure 1B) that were also present during the scan, in order to isolate the response to distress and threat. Results showed participants rated the distress of the co-participant being significantly higher during imminent than distal clips (β=0.418, se=0.089, t=4.676, p<0.0001), and progressively higher across the three levels of threat (1 Sh: β=0.279, se=0.077, t=3.611, p=0.0005; 2 Sh: β=0.559, se=0.081, t=6.853, p<0.0001; reference class was safe). No significant threat level*imminence interaction was found (Figure 2F). These results suggest the video clips used in the scan successfully portrayed subtle variations in cues of distress by the co-participant.
 
 Participants also presented isolated images of the threat cues used during the scanning task (namely, the green, yellow, and red circles, both in the distal and imminent positions; Figure 1B), and asked to rate how threatened they felt themselves when they saw those visual cues during the scan. Results showed participants rated threat stimuli as more threatening (1 Sh: β=2.255, se=0.297, t=7.598, p<0.0001; 2 Sh: β=3.92, se=0.297, t=13.89, p<0.0001; reference class was safe; Figure 2G). Additionally, imminent cues were rated as more threatening, but only for 1 shock and 2 shocks, and not for safe trials (imminence*1 Sh: β=0.894, se=0.420, t=2.129, p=0.034.; imminence*2 Sh: β=0.936, se=0.420, t=2.23, p=0.027).
 
-## Neural responses
+### Neural responses
 
 Analysis of brain responses focused on a liberally defined set of brain regions that integrate the brain’s defensive system, namely the vmPFC and vlPFC/IFG (Mobbs et al., 2009; Mobbs et al., 2010; Wendt et al., 2017), the hippocampus (Qi et al., 2018), the insula (Mobbs et al., 2010; Wendt et al., 2017), the ACC (Mobbs et al., 2009; Mobbs et al., 2010), the amygdala (Terburg et al., 2018; Mobbs et al., 2009), and the midbrain (Qi et al., 2018; Mobbs et al., 2009; Mobbs et al., 2010; Wendt et al., 2017; Mobbs et al., 2007; Figure 3). The full size of the brain mask used included 23,269 voxels (186,152 mm3).
 
@@ -64,7 +64,7 @@ Analysis of brain responses focused on a liberally defined set of brain regions 
 
 **Figure 3.:** ACC, anterior cingulate cortex; ROI, region of interest.
 
-## Multivariate and univariate differentiation of threat imminence and level in the defensive circuitry
+#### Multivariate and univariate differentiation of threat imminence and level in the defensive circuitry
 
 We performed a support vector machine regression to identify sites in which activation patterns were linearly associated with increasing threat level (i.e., from safe, to 1 shock and 2 shocks). As predicted, results showed that throughout the defensive circuitry (i.e., amygdala, insula, ACC, hipoccampus, and regions within the orbitofrontal cortex) multivariate activation tracked with threat level (FWE<0.05, k>10; Figure 4B).
 
@@ -74,11 +74,462 @@ We performed a support vector machine regression to identify sites in which acti
 
 Additionally, to identify brain regions with differential average activation to the imminence of threatening stimuli specifically, we ran a univariate threat imminence (distal, imminent) by threat level (safe, 1 shock, and 2 shocks) ANOVA. Brain regions displaying a significant threat imminence by threat level interaction included the bilateral insula, OFC and IFG and ACC (Table 1; Figure 4D). In shock trials (both 1 shock and 2 shocks), the bilateral insula and ACC presented higher activation for distal compared to imminent threats, whereas the bilateral IFG and right OFC showed higher activation in imminent compared to distal threats (full ANOVA results in Appendix 1—table 1). These results were opposite to our predictions that brain regions previously implicated in reactive fear circuits (i.e., insula and ACC) would be more active during imminent threats, and regions implicated in cognitive fear circuits (i.e., IFG and OFC) during distal threats. Finally, using a Searchlight cross-classification algorithm (12-mm-radius sphere), we also identified brain sites in which multivariate patterns were distinguishable between distal and imminent threats. We found that multivariate patterns in the bilateral insula and dorsal medial prefrontal gyrus dissociated between distal and imminent threats (FWE<0.05, k>10; Figure 4A).
 
-## Greater engagement of reactive fear circuits led to helping
+**Table 1.**
+ Multivariate results based on threat imminence (distal—imminent) and level (safe, 1 shock, 2 shocks; FWE<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Searchlight distal versus Imminent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>R/L</td>
+      <td>k</td>
+      <td>x, y, z</td>
+      <td>T</td>
+      <td>BA</td>
+    </tr>
+    <tr>
+      <td>Insula, superior temporal gyrus</td>
+      <td>R</td>
+      <td>40</td>
+      <td>46, –4, –8</td>
+      <td>7.43</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>L</td>
+      <td>17</td>
+      <td>–46, 2, –4</td>
+      <td>6.64</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>18</td>
+      <td>–42, 4, 8</td>
+      <td>7.15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medial prefrontal cortex</td>
+      <td>R</td>
+      <td>20</td>
+      <td>10, 48, 28</td>
+      <td>7.13</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td colspan="6">SVM regression SF – 1 SH – 2SH</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>R</td>
+      <td>12</td>
+      <td>24, –10, –20</td>
+      <td>7.56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>R</td>
+      <td>25</td>
+      <td>42, –8, –8</td>
+      <td>8.34</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Rolandic operculum</td>
+      <td>R</td>
+      <td>139</td>
+      <td>52, 0, 0</td>
+      <td>7.12</td>
+      <td>22, 47</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus, amygdala</td>
+      <td>R</td>
+      <td>11</td>
+      <td>38, 2, –24</td>
+      <td>7.73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>L</td>
+      <td>37</td>
+      <td>–24, 4, –24</td>
+      <td>7.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rectus</td>
+      <td>R</td>
+      <td>12</td>
+      <td>6, 30, –24</td>
+      <td>7.07</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate</td>
+      <td>R</td>
+      <td>13</td>
+      <td>8, 38, 8</td>
+      <td>7.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Middle orbital frontal gyrus</td>
+      <td>R</td>
+      <td>42</td>
+      <td>32, 44, –14</td>
+      <td>7.32</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Middle orbital frontal gyrus</td>
+      <td>L</td>
+      <td>11</td>
+      <td>–4, 48, –10</td>
+      <td>6.75</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>44</td>
+      <td>–28, 54, –10</td>
+      <td>7.59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>41</td>
+      <td>40, 56, –4</td>
+      <td>7.18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Superior frontal orbital gyrus</td>
+      <td>R</td>
+      <td>19</td>
+      <td>16, 54, –14</td>
+      <td>6.78</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Medial frontal gyrus</td>
+      <td>R</td>
+      <td>30</td>
+      <td>6, 58, –8</td>
+      <td>6.97</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="6">Searchlight help during distal versus imminent threats</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R</td>
+      <td>29</td>
+      <td>36, –8, –16</td>
+      <td>8.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>R</td>
+      <td>21</td>
+      <td>50, 4, –2</td>
+      <td>7.01</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>R</td>
+      <td>23</td>
+      <td>32, 14, 14</td>
+      <td>7.18</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Inferior frontal gyrus</td>
+      <td>L</td>
+      <td>207</td>
+      <td>–48, 20, –6</td>
+      <td>8.81</td>
+      <td>47, 38, 22, 13, 45</td>
+    </tr>
+    <tr>
+      <td>Mid cingulate, dorsal anterior cingulate</td>
+      <td>R</td>
+      <td>43</td>
+      <td>2, 22, 30</td>
+      <td>7.25</td>
+      <td>32, 9, 24, 6</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>L</td>
+      <td>45</td>
+      <td>–32, 26, 0</td>
+      <td>7.83</td>
+      <td>47, 13, 45</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate</td>
+      <td>R</td>
+      <td>53</td>
+      <td>10, 40, 8</td>
+      <td>7.92</td>
+      <td>32, 10</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Greater engagement of reactive fear circuits led to helping
 
 To test our prediction that higher engagement of reactive fear circuits would lead to helping, we performed a decision type (help, not help) by threat imminence (distal, imminent) ANOVA, and focused on brain regions displaying a significant interaction between the two (which would indicate activation differences when making decisions under distal and imminent threat). Of note, due to the reduced number of not helping trials, ‘no help’ decisions in this analysis included not only threat trials in which participants did not help, but also responses made in safe trials (details in Materials and methods). Results showed a significant interaction in the midbrain PAG, bilateral insula, right hippocampus, dorsal ACC, OFC, and vmPFC, which was driven by the distal condition (Table 2; Figure 4E; Appendix 1—table 2). Indeed, during distal threats, higher activation in the hippocampus, vmPFC, and OFC was followed by decisions not to help, whereas higher activation in the dACC, PAG, and insula led to helping decisions.
 
+**Table 2.**
+ Results of the univariate ANOVAS (FWE<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="10">Univariate threat level*imminence interaction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">R/L</td>
+      <td>k</td>
+      <td colspan="2">x, y, z</td>
+      <td colspan="2">F</td>
+      <td colspan="2">BA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td colspan="2">R</td>
+      <td>768</td>
+      <td colspan="2">38, 20, 6</td>
+      <td colspan="2">28.14</td>
+      <td colspan="2">13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td colspan="2">L</td>
+      <td>521</td>
+      <td colspan="2">–30, 24, –4</td>
+      <td colspan="2">20.58</td>
+      <td colspan="2">13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IFG, OFC</td>
+      <td colspan="2">L</td>
+      <td>593</td>
+      <td colspan="2">–40, 32, –16</td>
+      <td colspan="2">23.72</td>
+      <td colspan="2">11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OFC</td>
+      <td colspan="2">R</td>
+      <td>407</td>
+      <td colspan="2">8, 32, –20</td>
+      <td colspan="2">23.43</td>
+      <td colspan="2">11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACC</td>
+      <td colspan="2">R</td>
+      <td>278</td>
+      <td colspan="2">4, 32, 20</td>
+      <td colspan="2">18.29</td>
+      <td colspan="2">24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OFC, IFG</td>
+      <td colspan="2">R</td>
+      <td>52</td>
+      <td colspan="2">34, 40, –12</td>
+      <td colspan="2">13.18</td>
+      <td colspan="2">11, 47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="11">Type of decision*imminence interaction</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R/L</td>
+      <td colspan="3">k</td>
+      <td colspan="2">x, y, z</td>
+      <td colspan="2">F</td>
+      <td colspan="2">BA</td>
+    </tr>
+    <tr>
+      <td>Midbrain</td>
+      <td></td>
+      <td colspan="3">60</td>
+      <td colspan="2">2, –32, –4</td>
+      <td colspan="2">16.85</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>R</td>
+      <td colspan="3">192</td>
+      <td colspan="2">38, –16, –2</td>
+      <td colspan="2">20.62</td>
+      <td colspan="2">13, 47, 22, 44, 6, 45, 21</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>R</td>
+      <td colspan="3">38</td>
+      <td colspan="2">30, –14, –20</td>
+      <td colspan="2">15.03</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>L</td>
+      <td colspan="3">595</td>
+      <td colspan="2">−36, –8, –4</td>
+      <td colspan="2">18.68</td>
+      <td colspan="2">13, 22, 44, 6, 47, 45</td>
+    </tr>
+    <tr>
+      <td>Dorsal anterior cingulate</td>
+      <td>L</td>
+      <td colspan="3">151</td>
+      <td colspan="2">–2, 14, 30</td>
+      <td colspan="2">16.13</td>
+      <td colspan="2">24, 6, 32, 5, 4</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>R</td>
+      <td colspan="3">748</td>
+      <td colspan="2">30, 20, –8</td>
+      <td colspan="2">18.18</td>
+      <td colspan="2">47, 13, 22, 44, 6, 45, 21</td>
+    </tr>
+    <tr>
+      <td>Inferior frontal/orbital gyrus</td>
+      <td>L</td>
+      <td colspan="3">46</td>
+      <td colspan="2">–34, 36, –10</td>
+      <td colspan="2">11.47</td>
+      <td colspan="2">11</td>
+    </tr>
+    <tr>
+      <td>Rectus, ventral medial frontal gyrus</td>
+      <td>L</td>
+      <td colspan="3">238</td>
+      <td colspan="2">0, 46, –20</td>
+      <td colspan="2">19.94</td>
+      <td colspan="2">11, 10, 25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 One limitation of this analysis is that it conflated responses made during safe trials and no help responses. It could be argued that these represent fundamentally different types of decisions. To overcome this limitation, we also performed a parametric modulator analysis, in which we used a GLM that included a parametric modulator for decisions made in shock trials (0 if no help and 1 if helped). This analysis allowed us to model all threat imminence and level conditions, but only assign parametric modulators to those in which a subsequent help or no help decision was made (i.e., distal 1 shock, distal 2 shocks, imminent 1 shock, and imminent 2 shocks). The disadvantage of this approach is that only participants with at least 1 ‘no help trial’ trial per condition were included (N=28). Results of the parametric modulator analysis were consistent with those of the ANOVA (Table 3), in that we only found significant modulation of brain activation by subsequent decision during distal threats. Activation of bilateral insula was increased before helping decisions (distal 2 shocks), and activation of the vmPFC was increased before not helping decisions (distal 1 shock and distal 2 shocks).
+
+**Table 3.**
+ Results of the parametric modulation analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Distal 1 shock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>R/L</td>
+      <td>k</td>
+      <td>x, y, z</td>
+      <td>T</td>
+      <td>BA</td>
+    </tr>
+    <tr>
+      <td>(Neg) vmPFC, rectus</td>
+      <td>L</td>
+      <td>125</td>
+      <td>–4, 30, –22</td>
+      <td>6.55</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td colspan="6">Distal 2 shocks</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R/L</td>
+      <td>k</td>
+      <td>x, y, z</td>
+      <td>T</td>
+      <td>BA</td>
+    </tr>
+    <tr>
+      <td>(Pos) Insula</td>
+      <td>R</td>
+      <td>110</td>
+      <td>44, 2, 4</td>
+      <td>5.76</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>(Pos) Insula</td>
+      <td>L</td>
+      <td>150</td>
+      <td>–38, 0, 8</td>
+      <td>5.56</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>(Neg) vmPFC, medial frontal orb</td>
+      <td>L</td>
+      <td>64</td>
+      <td>–4, 54, –12</td>
+      <td>5.13</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
 
 Following reviewer suggestions, we also estimated a first-level model that separated help, no help and safe decisions as a function of threat imminence and level, using a Bayesian approach (details in Materials and methods). The Bayesian first-level analysis was followed by model comparison (using random effects) on the target regions of interest (ROIs) that revealed significant results across the two frequentist analyses (i.e., insula and vmPFC). Using a probability threshold of 0.75 (corresponding to a BF of around 8) (Rosa et al., 2010), in the bilateral insula results indicated stronger evidence for the distal ‘help’ models (distal 1 shock and distal 2 shocks). In the bilateral vmPFC, results indicated stronger evidence across ‘no help’ models (distal 1 shock, distal 2 shocks, imminent 1 shock, and imminent 2 shocks) (Figure 5).
 
@@ -88,7 +539,7 @@ Following reviewer suggestions, we also estimated a first-level model that separ
 
 We additionally ran a Searchlight analysis to localize dissociable neural patterns guiding decisions under distal and imminent threats. Results showed that, prior to helping decisions, patterns of activation in the insula, hippocampus and dorsal cingulate were distinguishable between distal and imminent threats (FWE<0.05, k>10; Figure 4C).
 
-## Neural representations of threat promoted helping
+#### Neural representations of threat promoted helping
 
 One of our goals was to determine whether helping decisions were predominantly driven by the response to another person’s distress, by one’s own defensive state, or by both. To this end, we performed an ROI-based RSA (Diedrichsen and Kriegeskorte, 2017). This analysis was done separately for imminent and distal trials, and comprised three steps (see Figure 5 and Materials and methods for details). First, we computed neural representational dissimilarity matrices (RDMs) that reflected trial-by-trial variation in activation patterns throughout the scanning task. Second, we used post-scan ratings to construct behavioral RDMs that reflected, respectively, between-trial differences in perceived distress experienced by the co-participant, and between-trial differences in how threatened the participant felt themselves during the scan. Finally, in the third step, we estimated the second-order similarity between neural and behavioral RDMs. This similarity metric allowed us to assess, for each ROI, whether trial-by-trial multivoxel patterns during the scan primarily represented the co-participant’s distress, or the threat to oneself. Importantly, it allowed us to determine whether and to what degree neural representations of other’s distress and of threat to the self were associated with helping behavior. Based on the second-order similarity between neural and behavioral RDMs, we found no evidence for any of the ROIs that neural activity predominantly represented other’s distress or threat to self (Appendix 1—table 5). However, results showed that, regardless of threat imminence, the similarity between neural and threat RDMs in the left amygdala (β=4.41, se=1.35, t=3.27, p=0.006) and left insula (β=2.46, se=0.97, t=2.53, p=0.047) was positively associated with helping behavior (Figure 6; Appendix 1—table 3). In other words, the more strongly these brain regions, especially the amygdala, represented the threat to oneself, the more frequently the participant decided to help.
 
@@ -100,13 +551,13 @@ One of our goals was to determine whether helping decisions were predominantly d
 
 Our overarching goal with this study was to determine how one’s own defensive responses influence decisions to help others under threat. Our findings strongly suggested that neural circuits that coordinate fast avoidance responses from self-directed threats (reactive fear circuits) (Mobbs et al., 2020) also underlie the protection of others in dangerous situations. More, the extent to which key defensive regions (amygdala and insula) represent the threat to the self (and not others’ distress) predicts more frequent helping decisions.
 
-## Reactive fear circuits promote both self- and -other defence
+### Reactive fear circuits promote both self- and -other defence
 
 Previous work has shown that increased imminence of an other-directed threat facilitates helping behavior, suggesting that the same way threat imminence triggers active avoidance (i.e., fight or flight) from self-directed threats, it may promote defensive helping when others are under threat (Vieira et al., 2020). Here, we examined the neural basis of this effect. We found that multivoxel activation within the defensive circuitry (i.e., amygdala, ACC, insula, hippocampus, and OFC) tracked with the level of threat. Also, we found dissociable local patterns of activation prior to helping as a function of threat imminence within the insula, hippocampus, and dorsal ACC. These findings are consistent with previous work highlighting the role of the hippocampus and dACC as key regions optimizing escape decisions within cognitive and reactive fear circuits, respectively (Qi et al., 2018). Importantly, we found that average activation within several regions of the defensive circuitry, namely the in the PAG, insula, hippocampus, dACC, OFC, and vmPFC, differed between trials leading up to helping or not helping decisions. Specifically, consistent with our predictions, activation in the insula, ACC, and PAG was higher before decisions to help, whereas activation in the hippocampus, vmPFC, and OFC was higher prior to decisions not to help. Therefore, although overall we did not find higher frequency of helping decisions under imminent than distal threat, our results suggest that greater engagement of reactive fear circuits facilitated helping behavior. Our failure to replicate prior behavioral effects of threat imminence could have been due to a difference in how participants were instructed (here, we instructed individuals to balance helping and not helping decisions) and/or statistical power (the previous study had a larger sample defined based on power calculations, N=98). The task instructions, in particular, used may have induced specific metacognitive processes that directly affected the behavioral decisions, and are virtually impossible to quantify. In any case, the present results are in line with prior findings in that they suggest that acute defensive states coordinated by reactive fear circuits promote helping under threat (Vieira et al., 2020). Of note, the differential activation of cognitive and reactive fear circuits based on the subsequent decision (help vs. not help) was only found when decisions were made under distal threat (i.e., when responses were prompted in the beginning of the trial). Also, contrary to our predictions, when comparing the average activation during distal and imminent threats independently of the decision, we found that the bilateral insula and ACC were more active during distal relative to imminent threats, whereas the bilateral IFG and OFC were more active during imminent threats. These results are opposite to those from prior studies that manipulated the imminence of self-directed threats (Mobbs et al., 2009; Wendt et al., 2017; Mobbs et al., 2007; Meyer et al., 2019). It is possible, however, that the disparity between our and previous findings is due to methodological reasons and does not reflect true differences in the processing of self- versus other-directed threats. For instance, in previous work only avoidance responses were made, whereas in our paradigm both help and no help decisions were possible (perhaps more analogous to an approach and avoidance option). Importantly, in our paradigm, every trial started with a distal threat (the circle was static on the left) that always evolved into an imminent threat (the circle would move to the right, and the shock would be administered at the end of the trial). This may have made the threat overly predictable (especially given the high number of trials required for fMRI), engaging reactive fear circuits to a greater extent during the distal phase of the trial.
 
 Nonetheless, our results obtained in a paradigm wherein the threat was directed at another person (the co-participant) were overall consistent with previous fMRI research investigating neural responses to self-directed threats as a function of imminence, suggesting a parallel between responses to self- and other-directed threats. This self-other parallel has been demonstrated in other threat-related processes, such as learning (Olsson et al., 2020). Importantly, in line with previous demonstrations that acute defensive states may promote prosocial outcomes (Vieira et al., 2020), we found that greater engagement of reactive fear circuits may facilitate helping of others in a threatening situation.
 
-## The neural representation of threat to the self predicts helping
+### The neural representation of threat to the self predicts helping
 
 To decide whether to help another person in a dangerous situation, one must consider not only their distress, but also the threat in the environment. Here, we determined how the representations of another’s distress and of threat guide behavior. To do so, we collected ratings of both the co-participant’s distress, and of how threatened the participant felt during the scan. Crucially, these ratings were obtained after the scan, allowing us to obtain a behavioral metric of how participants independently represented another person’s distress and the threat value of the situation. Although collecting these ratings during the scan would have provided a more direct measure of the neural representation of other’s distress and threat, it would have also have increased scanning time considerably and potentially compromised data quality as a result of fatigue. Performing these ratings after the scan was consistent with previous approaches (Parkinson et al., 2014) and enabled us to avoid explicitly priming participants to consider those distress and threat cues during the scan, which could have influenced their behavior and neural responses. Using behavioral representations of distress and threat, we assessed the extent to which each brain region in the defensive circuitry represented those cues, and its association with helping decisions. We found no indication that any of our ROIs predominantly represented the other’s distress or the threat to own self. However, our results showed that, regardless of threat imminence, the more the left amygdala and left insula represented the threat to oneself, the more participants decided to help.
 
@@ -120,11 +571,11 @@ In summary, our results point to a parallel between responses to self- and other
 
 This study has been pre-registered (https://osf.io/yvufn) and any deviations from the pre-registration are justified in the Appendix. Data and code will be made available at the OSF project page (https://osf.io/9cuva).
 
-## Participants
+### Participants
 
 Forty-nine healthy volunteers (M=24.29, SD=4.78) participated in the experiment. Participants were recruited via flyers posted on- and off-campus, and local online recruitment systems. All participants were right-handed, had normal or corrected-to-normal vision, and were screened for history of psychiatric or neurological diagnoses, current medication, brain injuries, and substance abuse. Participants provided informed consent prior to the experiment, and were compensated for their participation. This work was approved by the Swedish Ethics Board (Etikprövningsmyndigheten).
 
-## fMRI helping under threat task
+### fMRI helping under threat task
 
 In each testing session, a participant and a confederate (henceforth, co-participant) were informed the experiment comprised two parts (only one of those parts involved an MRI scan), which would be randomly assigned to each one by flipping a coin. Participant and co-participant were then accompanied to separate testing rooms (the actual participant was taken to the MRI area) and did not interact again during the experiment (details about testing procedures, post-task questionnaires, and debriefing are available in the Appendix).
 
@@ -136,19 +587,19 @@ Safe trials followed an identical structure, with response slides presented at d
 
 The task included 144 trials split into 8 functional runs (approx. 8 min). Each run comprised 18 trials, 9 distal and 9 imminent, and 6 of each threat level (resulting in 24 trials per condition, in total). Distal and imminent trials were presented in blocks, and the order of blocks was in each run. Within each block, safe, moderate threat, and high threat trials were randomized. The order of functional runs was randomized across participants. The task was programmed and delivered using E-prime 3.0 (Psychology Software Tools, Inc, https://www.pstnet.com).
 
-## Ratings
+### Ratings
 
 After the scan, participants were taken to a different testing room and asked to complete a follow-up task. Here, all video clips showed during the scanning task were presented to participants, in random order. Participants were informed that these had been recorded during the scan, and that their task now was to, for each clip, rate the level of distress, anxiety or concern they perceived in the co-participant, on a 9-point scale. Participants also presented images of the visual cues at distal (left side of the screen) and imminent positions (right side of the screen), and asked to rate on a 9-point scale how threatened they felt during the scan, whenever they saw those images (Figure 1B). Ratings of distress and threat were presented in separate blocks, and the order was randomized.
 
-## fMRI acquisition and preprocessing
+### fMRI acquisition and preprocessing
 
 Participants were scanned in a single session at the Stockholm University Brain Imaging Center (SUBIC), using a 3T Siemens scanner with a 64-channel head coil. First, a high-resolution T1-weighted anatomical scan was obtained (TR=2300 ms, TE=2.98 ms; FoV=256 mm, flip angle=9°, and 192 axial slices of 1 mm isovoxels), followed by 8 functional runs, of about 8 min each. Functional images were acquired with an echo-planar T2*-weighted imaging sequence with whole-brain coverage while participants performed the fMRI task (TR=1920 ms, TE=30 ms, FoV=192 mm, flip angle=70°, 62 interleaved slices of 2 mm isovoxels, and acceleration factor of 2).
 
 Preprocessing of fMRI data was done using SPM12 (Wellcome Trust Centre for Neuroimaging; https://www.fil.ion.ucl.ac.uk), and included slice timing correction, realignment to the volume acquired immediately before the anatomical scan (i.e., the first image of the first functional sequence) using six-parameter rigid-body transformations (translation M=0.02 mm, min=−0.4, max=0.6; rotation M=0.0006 mm, min=0.02, max=0.008), coregistration with the structural data, normalization to standard space using the Montreal Neurological Institute (MNI) template with a voxel size of 2×2×2 mm3, and smoothing using a Gaussian kernel with an isotropic full-width-half-maximum of 4 mm (Gardumi et al., 2016; Hendriks et al., 2017). Finally, a high-pass filter with a cutoff of 128 s was applied to remove slow signal drifts.
 
-## Statistical analysis
+### Statistical analysis
 
-## Behavioral data
+#### Behavioral data
 
 Behavioral data was in general analyzed using GLMMs, an approach that accounts for variation in the dependent variable that is explained by random sampling of, for instance, participant or trial number (random effects), in addition to the independent variables (fixed effects). Mixed-effects approaches have further been proposed to increase the generalizability of research findings to other individuals and stimuli (Yarkoni, 2020).
 
@@ -156,9 +607,9 @@ Our main behavioral variable was helping behavior, which was operationalized as 
 
 Reaction times were averaged per condition, and analyzed in a GLMM with threat imminence, threat level, and imminence by level interaction as fixed effects, and the subject as a random effect (intercept and slope). Similarly, post-task ratings of other’s distress and threat to self were analyzed in a GLMM with threat imminence, threat level, and imminence by level interaction as fixed effects, and the subject as a random effect (intercept and slope).
 
-## Imaging data
+#### Imaging data
 
-## First-level analysis
+##### First-level analysis
 
 First-level analysis was performed in SPM12 and was based on the general linear model. Time-series of each voxel were normalized by dividing the signal intensity of a given voxel at each point by the mean signal intensity of that voxel for each run and multiplying it by 100. Resulting regression coefficients thus represent a percent signal change from the mean. Regressors were created by convolving the train of stimulus events with a canonical hemodynamic response function. Three different GLMs were estimated based on the goal of the analysis. For assessing differences based on threat imminence and level, six regressors of interest were modeled corresponding to the time window of the visual threat cue (distal safe, distal 1 shock, distal 2 shocks, imminent safe, imminent 1 shock, and imminent 2 shocks). These regressors were defined based on the position of the threat cue on the screen (static=distal; approaching=imminent), and not relative to when the participant made a decision. In addition, eight regressors of no interest were added in the model, corresponding to the time window of the response and the outcome, plus the six motion parameters estimated during realignment.
 
@@ -166,21 +617,21 @@ To assess differences in neural response based on the type of decision, another 
 
 Finally, a fourth model was created to enable subsequent trial-by-trial RSA, wherein one regressor was estimated for each individual trial, modelling the time window of the threat cue.
 
-## Regions of interest
+##### Regions of interest
 
 Given our focus on defensive brain circuitry, our analysis targeted pre-specified ROIs that were anatomically defined, including the left and right amygdala, left and right hippocampus, left and right insula, midbrain, left and right ACC, left and right vmPFC, and left and right vlPFC (Figure 3). ROIs were defined on the Wake Forest University (WFU) Pickatlas toolbox (http://www.fmri.wfubmc.edu/cms/software; Maldjian et al., 2003).
 
-## Multivoxel pattern analysis and support vector regression
+##### Multivoxel pattern analysis and support vector regression
 
 Beta values derived from first-level analyses were used in multivariate analyses, including multivoxel pattern analysis (MVPA) searchlight, support vector regression (SVR), and RSA. Spatially distributed patterns of activation across voxels can reveal distinguishable neural responses between experimental conditions even in the absence of significant average activation differences in single voxels, making multivariate approaches more sensitive than conventional univariate analysis (Formisano et al., 2008).
 
 To identify local activation patterns that distinguish between distal and imminent threats, we used an MVPA Searchlight implemented in The Decoding Toolbox (TDT). A spherical searchlight (radius 12 mm) was moved throughout each participant’s data and, at each searchlight center, a support vector machine algorithm was trained to discriminate activation patterns in response to distal and imminent threats. Training was done iteratively on each 7 functional runs and tested on the 8th (leave-one-out cross-validation). Resulting percentage score at each voxel for participant was calculated and displayed in individual accuracy maps. Accuracy maps were then analyzed at the group level in a one-sample t test implemented in SPM12. A similar approach was taken to the identification of local activation patterns that discriminated helping decisions during distal and imminent threats. Additionally, an SVR was used to identify local patterns that showed a continuous linear association with threat level (safe, 1 shock, and 2 shocks). As for the classification searchlight, individual accuracy maps were analyzed at the group level in a one-sample t test. Group results were thresholded at voxelwise FWE<0.05 and only clusters with more than 10 voxels were further considered.
 
-## Univariate analysis
+##### Univariate analysis
 
 We also performed GLM-based univariate analyses. We analyzed BOLD signal to the threat cues, regardless of decision, in a threat imminence (distal and imminent) by threat level (safe, 1 shock, and 2 shocks) repeated-measures ANOVA. We also analyzed BOLD signal to threat cues prior to the decision in a decision type (help and not help) by threat imminence (distal and imminent) ANOVA. Full results for these analyses are available in . Finally, we performed a One-sample t test on parametric modulator contrast images to identify brain regions wherein average activation during the threat was modulated by subsequent decision. Univariate analysis results were first thresholded at p<0.001 uncorrected. With this threshold, clusters with more than 10 voxels were significant with FWE-corrected p<0.05.
 
-## Representational similarity analysis
+##### Representational similarity analysis
 
 One of the goals of the study was to characterize representations of other’s distress and of threat to oneself by defensive regions, and determine its relation to helping behavior. RSA was done separately for imminent and distal trials, and comprised three steps (Figure 7). On the first step, we modeled each trial in the first-level analysis (in SPM12), in order to estimate one beta coefficient per trial. Then, for each ROI, we extracted betas from each voxel in each trial to estimate the correlation of beta-values (expressed in r values) between all voxels per trial. Resulting r values were used to construct a representational similarity matrix across all trials that reflects the correlation between all voxels in each trial. This matrix was then transformed (1−r) to reflect dissimilarity instead of similarity (RDM). On the second step, distress ratings provided after the scan on the unique video clips shown in each trial were used to construct a dissimilarity matrix that reflects the difference in perceived distress of the co-participant between trials (expressed in Euclidean distances). Post-scan threat level ratings were used in an identical manner to construct a dissimilarity matrix that reflects between-trial differences in how threatened the participant felt during the scan. Finally, on the third step, we estimated the second-order similarity (kendall’s τ) between neural and behavioral RDMs. In a nutshell, this similarity metric allowed us to assess, for each ROI, whether trial-by-trial multivoxel patterns during the scan represented the co-participant’s distress and the threat to oneself. Importantly, it allowed us to determine whether neural representations of other’s distress and of threat to oneself were associated with helping behavior. To do so, second-order similarity values were entered in a linear model predicting average helping percentage during the scan. Predictors in this model were the similarity between neural and threat RDM, the similarity between neural and distress RDM, as well as threat imminence. Thirteen linear models were estimated, one for each ROI (i.e., left and right amygdala, left and right hippocampus, left and right insula, midbrain, left and right ACC, left and right vmPFC, and left and right vlPFC). False discovery rate (FDR) correction was applied to adjust the p value of all coefficient estimates, across all 13 models. FDR-corrected p values below α=0.05 were considered significant. Beta value extraction was performed in Matlab, and all remaining steps and analyses of the RSA were performed through custom-made scripts in R (code available at https://osf.io/nb6cf/).
 

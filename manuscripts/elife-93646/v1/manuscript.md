@@ -12,20 +12,20 @@
 
 ### Affiliations
 
-1. https://ror.org/021ft0n22 Experimental Otology Group, InnerEarLab, Department of Otolaryngology, University Medical Center Göttingen Göttingen Germany
-2. https://ror.org/03av75f26 Auditory Neuroscience Group, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-3. https://ror.org/021ft0n22 Auditory Systems Physiology Group, Institute for Auditory Neuroscience, InnerEarLab, University Medical Center Göttingen Göttingen Germany
-4. https://ror.org/01y9bpm73 Collaborative Research Center 889, University of Göttingen Göttingen Germany
-5. https://ror.org/021ft0n22 Functional Auditory Genomics, Institute for Auditory Neuroscience, University Medical Center Göttingen Göttingen Germany
-6. https://ror.org/021ft0n22 Institute for Auditory Neuroscience and InnerEarLab, University Medical Center Göttingen Göttingen Germany
-7. https://ror.org/02f99v835 Restorative Cochlear Genomics Group, Auditory Neuroscience and Optogenetics Laboratory, German Primate Cente Göttingen Germany
-8. https://ror.org/01y9bpm73 Multiscale Bioimaging Cluster of Excellence (MBExC), University of Göttingen Göttingen Germany
+1. Experimental Otology Group, InnerEarLab, Department of Otolaryngology, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+2. Auditory Neuroscience Group, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+3. Auditory Systems Physiology Group, Institute for Auditory Neuroscience, InnerEarLab, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+4. Collaborative Research Center 889, University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+5. Functional Auditory Genomics, Institute for Auditory Neuroscience, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+6. Institute for Auditory Neuroscience and InnerEarLab, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+7. Restorative Cochlear Genomics Group, Auditory Neuroscience and Optogenetics Laboratory, German Primate Cente Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
+8. Multiscale Bioimaging Cluster of Excellence (MBExC), University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
 
 † Corresponding author
 
 ## Abstract
 
-To encode continuous sound stimuli, the inner hair cell (IHC) ribbon synapses utilize calcium-binding proteins (CaBPs), which reduce the inactivation of their Ca V 1.3 calcium channels. Mutations in the CABP2 gene underlie non-syndromic autosomal recessive hearing loss DFNB93. Besides CaBP2, the structurally related CaBP1 is highly abundant in the IHCs. Here, we investigated how the two CaBPs cooperatively regulate IHC synaptic function. In Cabp1/2 double-knockout mice, we find strongly enhanced Ca V 1.3 inactivation, slowed recovery from inactivation and impaired sustained exocytosis. Already mild IHC activation further reduces the availability of channels to trigger synaptic transmission and may effectively silence synapses. Spontaneous and sound-evoked responses of spiral ganglion neurons in vivo are strikingly reduced and strongly depend on stimulation rates. Transgenic expression of CaBP2 leads to substantial recovery of IHC synaptic function and hearing sensitivity. We conclude that CaBP1 and 2 act together to suppress voltage- and calcium-dependent inactivation of IHC Ca V 1.3 channels in order to support sufficient rate of exocytosis and enable fast, temporally precise and indefatigable sound encoding.
+To encode continuous sound stimuli, the inner hair cell (IHC) ribbon synapses utilize calcium-binding proteins (CaBPs), which reduce the inactivation of their CaV1.3 calcium channels. Mutations in the CABP2 gene underlie non-syndromic autosomal recessive hearing loss DFNB93. Besides CaBP2, the structurally related CaBP1 is highly abundant in the IHCs. Here, we investigated how the two CaBPs cooperatively regulate IHC synaptic function. In Cabp1/2 double-knockout mice, we find strongly enhanced CaV1.3 inactivation, slowed recovery from inactivation and impaired sustained exocytosis. Already mild IHC activation further reduces the availability of channels to trigger synaptic transmission and may effectively silence synapses. Spontaneous and sound-evoked responses of spiral ganglion neurons in vivo are strikingly reduced and strongly depend on stimulation rates. Transgenic expression of CaBP2 leads to substantial recovery of IHC synaptic function and hearing sensitivity. We conclude that CaBP1 and 2 act together to suppress voltage- and calcium-dependent inactivation of IHC CaV1.3 channels in order to support sufficient rate of exocytosis and enable fast, temporally precise and indefatigable sound encoding.
 
 ## Introduction
 
@@ -33,9 +33,17 @@ Calcium influx through voltage-gated calcium channels (CaVs) is a pivotal initia
 
 ## Results
 
-## Pronounced VDI and CDI of CaV1.3 channels in CaBP1/2-deficient IHCs
+### Pronounced VDI and CDI of CaV1.3 channels in CaBP1/2-deficient IHCs
 
 CaBP1 and 2 show high expression levels in the organ of Corti (Yang et al., 2016), where they may modulate voltage-gated CaV1.3 channels at the IHC ribbon synapses (Figure 1A). Deletion of CaBP2 results in an early-onset, progressive hearing impairment in the KO mouse model and moderate to severe hearing impairment, DFNB93, in affected human patients (Picher, 2017; Koohiyan, 2019; Schrauwen et al., 2012). Loss of CaBP1 in mice, on the other hand, leaves hearing unperturbed in the first few months after birth (Yang et al., 2018). Since these proteins show a high degree of homology (Haeseleer et al., 2000), it is plausible that they possess similar features and are partially redundant, at least initially. Therefore, we were interested in understanding their cumulative impact on the function of hair cells and hearing. For this, we analyzed the phenotype of the Cabp1/2-DKO animals and tested the extent of functional rescue following the transgenic expression of CaBP2 (Figure 1—figure supplement 1A) in the ears of the DKO mice.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the IHC and one of its several ribbon synapses. CaBPs and CaM modulate voltage-gated calcium channels at the IHC ribbon synapses to shape the presynaptic Ca2+ signal. (B) Peak normalized Ca2+ currents after a 500-ms depolarization step to the maximum current potential in the apical IHCs of WT and Cabp1/2-DKO animals. Note a pronounced inactivation of the Ca2+ current in the absence of CaBP1 and 2 and partial recovery upon Cabp2 gene replacement. (C) The fraction of the remaining Ca2+ current after a 500-ms depolarization step is depicted for different mouse models acquired at comparable conditions (room temperature, 2 mM extracellular [Ca2+]). The histogram combines the results of this study (Cabp1/2-DKO) with previously published data on CaBP1 (Yang et al., 2018) and CaBP2 (Picher, 2017). The WT data combines pooled data from the current study and controls as obtained previously (Yang et al., 2018). Note that the recordings from Cabp2-KO animals were acquired at the lower apex to mid-cochlear tonotopic positions as the phenotype in the apex (low-frequency positions investigated otherwise) is mild (Picher, 2017). (D) Ca2+ currents upon a train of 10-ms long depolarization steps normalized to the amplitude of the first pulse. (E) Ca2+-current–voltage relationships show slightly reduced amplitudes in the IHCs of the Cabp1/2-DKO animals transduced with the PHP.eB-Cabp2. (F) Activation curves were calculated with Boltzmann fits. Note a significant difference (asterisks,p < 0.0001, Student’s t-test) in the half-voltage activation (V0.5) and slope in the CaBP1/2-deficient IHCs and the persistence of the voltage shift upon re-expression of CaBP2 (inserts). See main text for the p values. Data in B and D–F was acquired in 1.3 mM, data in C in 2 mM [Ca]2+.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The viral vector contains a hCMV/HBA (human cytomegalovirus immediate early enhancer, human beta actin promotor) hybrid promotor to drive strong expression of CaBP2 and a P2A sequence for bicistronic expression of the reporter gene eGFP. The Woodchuck Hepatitis Virus Posttranslational Regulatory Element (WPRE) and the bovine growth hormone (bGH) polyadenylation sequence were included in the construct to enhance transcription and improve the stability of the transcript. (B) Absolute Ca2+ currents after a 500-ms depolarization step to the maximum current potential in the apical inner hair cells (IHCs) of WT and Cabp1/2-DKO animals. (C) Peak calcium current and the corresponding fraction of inactivation after a 500-ms depolarization to the maximum current potential. Note no correlation between peak calcium current and fraction of inactivation, as is typically observed for large enough current amplitudes. (D) The fraction of the remaining Ca2+ current after a 500-ms depolarization step is depicted for different mouse models and conditions. The histogram combines the results of this study (Cabp1/2-DKO; 1.3 mM [Ca2+]: n = 41, 2 mM [Ca2+]: n = 13) with previously published data on CaBP1 (n = 20), CaBP2 acquired at physiological conditions (n = 14) and at room temperature (n = 14). The WT data in 2 mM extracellular [Ca2+] (white bars) combines pooled data from the current study and controls as obtained previously (n = 17). For WT data acquired at RT and 1.3 mM [Ca2+] n = 17 and for physiological conditions n = 8. Note that the recordings from Cabp2-KO animals were acquired at the lower apex to mid-cochlear tonotopic positions as the phenotype in the apex (low-frequency positions investigated otherwise) is mild. Asterisks represent statistical significance as compared to the corresponding controls (the results taken from the afore-mentioned publications and current analysis).
 
 To investigate possible synergistic functions of the two major IHC CaBPs, we first measured Ca2+ currents in the IHCs of 3- to 4-week-old Cabp1/2-DKO and WT animals in the presence of 1.3 mM extracellular [Ca2+]. Employing 500-ms long depolarization steps to maximal Ca2+-current potential (−25 to –15 mV) revealed pronounced inactivation of CaV1.3 channels in the DKO IHCs (Figure 1B). This was significantly stronger when compared to the inactivation observed in the IHCs of Cabp1 or Cabp2 single KOs in similar conditions (Figure 1C; Yang et al., 2018; Picher, 2017; Oestreicher et al., 2021), and even when comparing to data from 5-week-old Cabp2 KO mice obtained at physiological temperature (Figure 1—figure supplement 1D), further substantiating the evidence of severity and early onset of the DKO phenotype.
 
@@ -45,15 +53,15 @@ To further investigate the nature of the enhanced CaV1.3 inactivation, we record
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig2-v1.jpg)
 
-**Figure 2.:** 2+-dependent inactivation (VDI and CDI) are enhanced after deletion of Cabp1 and Cabp2.(A, B) Peak normalized Ca2+ and Ba2+ currents in WT and CaBP1/2-deficient inner hair cells (IHCs) recorded in the extracellular solution containing 2 mM of the respective divalent cation. The two types of inactivation were calculated as depicted. (C) VDI and CDI were both significantly enhanced in the IHCs of Cabp1/2-DKO animals (asterisks; Student’s t-test, p < 0.0001).
+**Figure 2.:** (A, B) Peak normalized Ca2+ and Ba2+ currents in WT and CaBP1/2-deficient inner hair cells (IHCs) recorded in the extracellular solution containing 2 mM of the respective divalent cation. The two types of inactivation were calculated as depicted. (C) VDI and CDI were both significantly enhanced in the IHCs of Cabp1/2-DKO animals (asterisks; Student’s t-test, p < 0.0001).
 
-## Impaired synaptic transmission in the IHCs lacking CaBP1 and 2
+### Impaired synaptic transmission in the IHCs lacking CaBP1 and 2
 
 Since Ca2+ influx through CaV1.3 channels triggers IHC neurotransmission we next investigated how the prominent inactivation affects exocytosis in the CaBP1/2-deficient IHCs. Exocytosis was probed by recordings of membrane capacitance (Figure 3). In response to short stimuli [primarily recruiting the readily releasable pool (RRP) of vesicles], increases in capacitance were comparable, while long stimuli (reporting sustained exocytosis) evoked significantly smaller responses in the CaBP1/2-deficient IHCs (Figure 3A, B). These results are in line with the observation of comparable peak Ca2+-current amplitudes but reduced calcium charge transfer (QCa) for stimulus durations above 50 ms. However, calculating exocytosis efficiency revealed that the reduction in sustained exocytosis cannot completely be explained by the diminished Ca2+ influx (Figure 3C). This suggests an additional impairment in exo- or endocytic processes, the underlying mechanism of which is currently unknown. Transgenic expression of CaBP2 largely restored the efficiency of exocytosis, indicating that the impairment as observed in the IHCs of DKOs is related to the absence of the CaBPs. Such exocytosis defect was not observed in Cabp2-KOs, suggesting that when IHCs are held at hyperpolarized potential at RT, CaBP1 provides sufficient compensation to obscure the synaptic phenotype (Picher, 2017; Oestreicher et al., 2021).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig3-v1.jpg)
 
-**Figure 3.:** QCa) can be partially rescued by Cabp2-transgene expression.(A) Capacitance increments with the corresponding QCa were probed by different depolarization durations from a holding potential of –85 mV (unpaired t-tests with Welch correction). CaBP1/2-deficient inner hair cells (IHCs) showed significant impairment of the sustained exocytosis (p < 0.05 for 20 ms, and <0.001 for 100- and 200-ms step, respectively) and reduced cumulative Ca2+ influx (p < 0.005 for the longest two pulses) as compared to WT controls (black asterisks). AAV-mediated delivery of Cabp2 improved IHC synaptic function as compared to non-injected Cabp1/2-DKO controls (p < 0.01 for ΔCm upon 100- and 200-ms step, and p < 0.05 for QCa upon 200-ms step; green asterisks). (B) Representative Ca2+-current traces and corresponding membrane capacitance changes upon 100-ms long depolarization steps to the peak Ca2+-current potential. (C) Note a reduced efficiency of Ca2+-dependent exocytosis (p < 0.005 for the two longest test pulses; black asterisks), which can be efficiently rescued by intracochlear delivery of PHP.eB-Cabp2 (p < 0.01 and 0.05 for 100- and 200-ms pulse, respectively; green asterisks). (D) Capacitance measurements at a holding potential of –55 mV reveal an aggravation of the phenotype by additional activation of calcium channels between the test pulses (p < 0.01 for 50 ms, and p < 0.005 for 20-, 100-, and 200-ms pulse) and a further discrepancy between the QCa of WT and CaBP1/2-deficient IHCs (2–10 ms: p < 0.05; 20–200 ms: p < 0.001). Also in these recording conditions, the IHCs from Cabp2-injected Cabp1/2-DKO animals showed increased QCa (20–200 ms: p < 0.05) and exocytosis (100–200 ms: p < 0.005) as compared to non-injected controls. (E) Capacitance increments and the corresponding QCa upon 100-ms depolarization steps as recorded in different conditions. Note worsening of the phenotype with increasing IHC activation between the test pulses.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** (A) Capacitance increments with the corresponding QCa were probed by different depolarization durations from a holding potential of –85 mV (unpaired t-tests with Welch correction). CaBP1/2-deficient inner hair cells (IHCs) showed significant impairment of the sustained exocytosis (p < 0.05 for 20 ms, and <0.001 for 100- and 200-ms step, respectively) and reduced cumulative Ca2+ influx (p < 0.005 for the longest two pulses) as compared to WT controls (black asterisks). AAV-mediated delivery of Cabp2 improved IHC synaptic function as compared to non-injected Cabp1/2-DKO controls (p < 0.01 for ΔCm upon 100- and 200-ms step, and p < 0.05 for QCa upon 200-ms step; green asterisks). (B) Representative Ca2+-current traces and corresponding membrane capacitance changes upon 100-ms long depolarization steps to the peak Ca2+-current potential. (C) Note a reduced efficiency of Ca2+-dependent exocytosis (p < 0.005 for the two longest test pulses; black asterisks), which can be efficiently rescued by intracochlear delivery of PHP.eB-Cabp2 (p < 0.01 and 0.05 for 100- and 200-ms pulse, respectively; green asterisks). (D) Capacitance measurements at a holding potential of –55 mV reveal an aggravation of the phenotype by additional activation of calcium channels between the test pulses (p < 0.01 for 50 ms, and p < 0.005 for 20-, 100-, and 200-ms pulse) and a further discrepancy between the QCa of WT and CaBP1/2-deficient IHCs (2–10 ms: p < 0.05; 20–200 ms: p < 0.001). Also in these recording conditions, the IHCs from Cabp2-injected Cabp1/2-DKO animals showed increased QCa (20–200 ms: p < 0.05) and exocytosis (100–200 ms: p < 0.005) as compared to non-injected controls. (E) Capacitance increments and the corresponding QCa upon 100-ms depolarization steps as recorded in different conditions. Note worsening of the phenotype with increasing IHC activation between the test pulses.
 
 Next, we have reasoned that holding a cell at a relatively hyperpolarized potential of –85 mV as typically utilized in patch-clamp recordings may not reveal the synaptic phenotype in its severity. We thus performed additional sets of experiments (Figure 3D, E), in which the cells were held at either –65 or –55 mV, closer to the suggested resting potential of IHCs (Russell and Sellick, 1983; Dierich et al., 2020; Oliver et al., 2003). Raising the holding voltage to –55 mV resulted in a significant reduction in the maximal Ca2+ currents, which was more pronounced in the CaBP1/2-deficient IHCs as compared to controls (60 ± 4% vs 25 ± 4% reduction in DKO and WT IHCs, respectively; p < 0.005, Student’s t-test). Consequently, further discrepancy between the QCa in IHCs of WT and DKO animals was observed (p < 0.001), which in DKO animals resulted in a complete loss of sustained exocytosis (Figure 3D; p < 0.005). The latter was well restored upon AAV-mediated transgenic expression of CaBP2 (p < 0.05), which also reduced the amount of calcium channel inactivation (38 ± 8% reduction in the maximal Ca2+ current as well as a partial recovery of QCa as compared to Cabp1/2-DKO IHCs; p < 0.05). Rapid voltage oscillations during capacitance recordings may additionally activate calcium channels prior to the depolarizing step. We thus reduced the sine wave amplitude, which resulted in an intermediate phenotype, indicating pronounced activity-dependent deterioration of synaptic function in the absence of CaBPs (Figure 3E). We propose that in vivo in the absence of CaBP1 and 2 a large fraction of IHC CaV1.3 channels are in a state of prolonged inactivation. This does not support sufficient RRP exocytosis (Figure 3D) to sustain sensory coding during ongoing stimulation of IHCs.
 
@@ -61,21 +69,101 @@ Lastly, we asked whether the deletion of CaBP1 and 2 affects the speed of recove
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig4-v1.jpg)
 
-**Figure 4.:** 2+ currents is affected in CaBP1/2-deficient inner hair cells (IHCs).(A) Ca2+ currents were probed by 5-ms long depolarization steps to the maximum current potential. An initial test pulse was followed by a conditioning stimulus (a 500-ms depolarization step or a 120-s long sine wave). Subsequently, Ca2+ currents were tested at various time points to assess the recovery of Ca2+-current amplitudes. (A') Example Ca2+-current recording using a 500-ms long depolarization step as a conditioning stimulus. (A'') Representative Ca2+-current traces in WT and CaBP1/2-deficient IHCs at different time points after a 500-ms long conditioning stimulus. Ca2+-current amplitudes normalized to the amplitude of the pre-conditioning test pulse up to 150 s after a 500-ms depolarization step (B) or a 2-min long sine wave stimulus (C). The inserts show the initial 20 s after the conditioning stimulus. The data were fitted by a single or double exponential function (fit parameters in Table 1). Note stronger inactivation in the Cabp1/2-DKO IHCs and delayed recovery of Ca2+ currents after the presentation of a long sine wave and a partial recovery upon viral gene transfer of Cabp2. Recovery upon a 500-ms pulse compared to the 2-min long sine wave stimulus was much faster. Surprisingly, in these conditions recovery of calcium currents was slowest in hair cells with virus-mediated re-expression of CaBP2.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Ca2+ currents were probed by 5-ms long depolarization steps to the maximum current potential. An initial test pulse was followed by a conditioning stimulus (a 500-ms depolarization step or a 120-s long sine wave). Subsequently, Ca2+ currents were tested at various time points to assess the recovery of Ca2+-current amplitudes. (A') Example Ca2+-current recording using a 500-ms long depolarization step as a conditioning stimulus. (A'') Representative Ca2+-current traces in WT and CaBP1/2-deficient IHCs at different time points after a 500-ms long conditioning stimulus. Ca2+-current amplitudes normalized to the amplitude of the pre-conditioning test pulse up to 150 s after a 500-ms depolarization step (B) or a 2-min long sine wave stimulus (C). The inserts show the initial 20 s after the conditioning stimulus. The data were fitted by a single or double exponential function (fit parameters in Table 1). Note stronger inactivation in the Cabp1/2-DKO IHCs and delayed recovery of Ca2+ currents after the presentation of a long sine wave and a partial recovery upon viral gene transfer of Cabp2. Recovery upon a 500-ms pulse compared to the 2-min long sine wave stimulus was much faster. Surprisingly, in these conditions recovery of calcium currents was slowest in hair cells with virus-mediated re-expression of CaBP2.
 
-## Altered synaptic morphology in Cabp1/2-DKO mice
+**Table 1.**
+ Ca2+-current recovery fit parameters.The data was fitted with the single or the double exponential with the following equations: y(t) = y0 − A1 × exp(−(t/τ1)) and y(t) = y0 − A1 × exp(−(t/τ1)) − A2 × exp(−(t/τ2)), where y(t) represents the peak current amplitude at the time t after the end of conditioning pulse (either 500-ms depolarization or 2-min sine wave) given in % of the initial pre-conditioning peak current amplitude (100 × Ipost/Ipre). While current recovery upon 500-ms depolarization in the inner hair cells (IHCs) of WT and DKO animals could be well fitted by a single exponential, the data obtained in the injected DKO animals required a double exponential fitting. Upon 2-min sine wave, the current recovery in DKO IHCs (both, injected and non-injected group) also required fitting with a double exponential function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">500-ms depolarization</th>
+      <th colspan="5">2-min sine wave</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test group</td>
+      <td>A1 (%)</td>
+      <td>τ1(s)</td>
+      <td>A2(%)</td>
+      <td>τ2(s)</td>
+      <td>y0(%)</td>
+      <td>A1(%)</td>
+      <td>τ1(s)</td>
+      <td>A2(%)</td>
+      <td>τ2(s)</td>
+      <td>y0(%)</td>
+    </tr>
+    <tr>
+      <td>DKO</td>
+      <td>65</td>
+      <td>0.62</td>
+      <td>-</td>
+      <td>-</td>
+      <td>99</td>
+      <td>19</td>
+      <td>1.36</td>
+      <td>21</td>
+      <td>19.41</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>28</td>
+      <td>0.75</td>
+      <td>-</td>
+      <td>-</td>
+      <td>100</td>
+      <td>24</td>
+      <td>3.83</td>
+      <td>-</td>
+      <td>-</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>DKO + PHP.eB-Cabp2</td>
+      <td>22</td>
+      <td>0.47</td>
+      <td>14</td>
+      <td>3.87</td>
+      <td>99</td>
+      <td>13</td>
+      <td>1.88</td>
+      <td>18</td>
+      <td>11.56</td>
+      <td>99</td>
+    </tr>
+  </tbody>
+</table>
+
+### Altered synaptic morphology in Cabp1/2-DKO mice
 
 Immunolabeling of the organs of Corti indicated normal presynaptic CaV1.3 clustering with no apparent change in size or shape of the clusters (Figures 5A), and comparable abundance of ribbon synapses in the apical IHCs of WT and DKO animals (12.9 ± 0.2 vs 12.8 ± 0.8, respectively; Figure 5B) at 3 weeks of age. However, the intensities of pre- (RibeyeA/CtBP2) and postsynaptic (Homer1) immunofluorescent puncta were increased in the CaBP1/2-deficient IHCs as compared to age-matched controls, processed in parallel (Figure 5G). A similar alteration in the synaptic size was observed in some other synaptic mutants as well as upon noise trauma (Eckrich et al., 2019; Kim et al., 2019), but not in Cabp2 single KOs (Picher, 2017), which show significantly less impaired presynaptic Ca2+ signaling. This data is in line with compensatory postsynaptic changes in conditions of no or very little postsynaptic activity, possibly governed through adaptive changes in the postsynaptic elements.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig5-v1.jpg)
 
-**Figure 5.:** Cabp1/2-DKO inner hair cells (IHCs).(A) CaV1.3-immunofluorescence appeared normal in Cabp1/2-DKO-mice. Scale bars: 5 µm. (B) Ribbon synapse immunostainings using RibeyeA as a presynaptic and Homer1 as a postsynaptic marker. Ribbon synapses were identified as juxtaposed pre- (RibeyeA/CtBP2) and postsynaptic (Homer1 or, in some organs, GluA3) immunofluorescent spots. (C) SK2-immunofluorescence was absent from the majority of IHCs in 3-week-old animals, but prominent in immature cochleae of 1-week-old animals and together with synapsin 1 labeled direct synaptic contacts from the efferent fibers to the IHCs. Occasionally, however rarely, isolated SK2 immunofluorescent spots were still detected in close proximity to the synapsin marker in the IHCs of 3-week-old DKO animals (arrows). (D) Expression of SK2 beyond the second postnatal week was also observed in some WT IHCs (arrows). (E, F) BK clusters at 3 weeks of age appeared smaller in the non-treated animals, and less so in the ears of PHP.eB-Cabp2-injected Cabp1/2-DKO animals. This difference became even stronger at 14 weeks of age. Scale bars are 10 µm if not stated otherwise. Note that myosin VIIa or parvalbumin-alpha (PV) were used as IHC markers. (G) A significantly higher immunofluorescence intensity was observed for pre- (RibeyeA or CtBP2) and postsynaptic (Homer1) markers in Cabp1/2-DKO mice (analysis of 614 and 441 immunospots from WT and Cabp1/2-DKO organs of Corti, respectively; N = 5 for both genotypes; asterisks; Wilcoxon rank-sum test, p < 0.005). (H) The volume of BK-channel immunofluorescent spots around the neck of the IHCs was significantly smaller in DKO IHCs (asterisk, Student’s t-test p < 0.0001, N = 6 organs per genotype).Figure 5—source data 1.Figure 5G.Figure 5—source data 2.Figure 5H.
+**Figure 5.:** (A) CaV1.3-immunofluorescence appeared normal in Cabp1/2-DKO-mice. Scale bars: 5 µm. (B) Ribbon synapse immunostainings using RibeyeA as a presynaptic and Homer1 as a postsynaptic marker. Ribbon synapses were identified as juxtaposed pre- (RibeyeA/CtBP2) and postsynaptic (Homer1 or, in some organs, GluA3) immunofluorescent spots. (C) SK2-immunofluorescence was absent from the majority of IHCs in 3-week-old animals, but prominent in immature cochleae of 1-week-old animals and together with synapsin 1 labeled direct synaptic contacts from the efferent fibers to the IHCs. Occasionally, however rarely, isolated SK2 immunofluorescent spots were still detected in close proximity to the synapsin marker in the IHCs of 3-week-old DKO animals (arrows). (D) Expression of SK2 beyond the second postnatal week was also observed in some WT IHCs (arrows). (E, F) BK clusters at 3 weeks of age appeared smaller in the non-treated animals, and less so in the ears of PHP.eB-Cabp2-injected Cabp1/2-DKO animals. This difference became even stronger at 14 weeks of age. Scale bars are 10 µm if not stated otherwise. Note that myosin VIIa or parvalbumin-alpha (PV) were used as IHC markers. (G) A significantly higher immunofluorescence intensity was observed for pre- (RibeyeA or CtBP2) and postsynaptic (Homer1) markers in Cabp1/2-DKO mice (analysis of 614 and 441 immunospots from WT and Cabp1/2-DKO organs of Corti, respectively; N = 5 for both genotypes; asterisks; Wilcoxon rank-sum test, p < 0.005). (H) The volume of BK-channel immunofluorescent spots around the neck of the IHCs was significantly smaller in DKO IHCs (asterisk, Student’s t-test p < 0.0001, N = 6 organs per genotype).
 
 As earlier studies of CaV1.3 channelopathies demonstrated a lag or stop in IHC development (Eckrich et al., 2019; Brandt et al., 2003; Neef et al., 2009) we next examined the expression of small- (SK) and large-conductance Ca2+-activated potassium channels (BK) in the IHCs at different ages (Figure 5C–F). As expected for normal maturation, the SK2 puncta were mostly absent from DKO IHCs by 3 weeks of age and the BK puncta underwent a typical transition from a spotty appearance throughout the cell membrane to the patches at the IHC necks (Figure 5F). However, by 3 weeks and more obviously later on, the BK channel clusters appeared smaller in the DKO IHCs as compared to controls, which could be partially reversed by virally mediated expression of CaBP2 (Figure 5E). Using Imaris, we analyzed the respective ‘volumes’ of BK-cluster immunofluorescence in the IHC neck region from ca. 4-week-old mice. This analysis revealed significantly smaller (Figure 5H; Student’s t-test, p < 0.0001, N = 6 organs per genotype) and fewer clusters in DKO IHCs. This was also obvious when comparing the cumulative ‘volume’ of BK-cluster immunofluorescence per IHC, which was significantly higher in WT IHCs, indicating higher abundance of BK channels (14.2 ± 2.1 vs 6.6 ± 1.1 µm3 per IHC, Student’s t-test, p < 0.01). We hypothesize that CaBPs may directly (e.g. as transcription factors) regulate BK expression, a notion that needs to be tested in the future. Alternatively, the effects may be more indirect, as they are common in mutants with impaired intracellular Ca2+ signaling (Eckrich et al., 2019; Brandt et al., 2003; Neef et al., 2009).
 
-## Severe hearing impairment in mice deficient in CaBP1 and CaBP2
+### Severe hearing impairment in mice deficient in CaBP1 and CaBP2
 
 Hearing was assessed by measuring auditory brainstem responses (ABRs; Figure 6, Figure 6—figure supplement 1). Already in young (3- to 4-week-old) Cabp1/2-DKO animals, ABR thresholds were highly elevated, with tone bursts up to a maximum intensity of 90 dB SPL barely eliciting any ABR response. Click responses were better preserved (thresholds of 59 ± 2 dB SPL in DKO (N = 9) vs 30 ± 2 dB SPL in WT (N = 8) mice) but greatly reduced in amplitude (Figure 6—figure supplement 1A, B). At 7–13 weeks of age, further worsening of the click thresholds was observed (68 ± 5 dB SPL in DKO vs 30 ± 1 dB SPL in WT mice; N = 7 for both). Upon 80 dB SPL click stimulation, no sizable ABR wave I was detected in average traces of DKO animals at either age tested (Figure 6—figure supplement 1B), suggesting reduced and/or desynchronized spiking of spiral ganglion neurons (SGNs). Like in other mouse mutants with defects in the IHC synapse (Khimich et al., 2005; Strenzke et al., 2016), the later ABR peaks were better preserved, indicating partially preserved activation of neurons of the auditory brainstem. To assess cochlear amplification by the outer hair cells, we recorded distortion product otoacoustic emissions (DPOAEs). While OAEs were so far only detectable in some of the younger DFNB93 patients (Picher, 2017; Bharadwaj et al., 2014), mouse work corroborates the notion of at least initially intact cochlear amplification in the absence of CaBP2 (Yang et al., 2018; Picher, 2017; Oestreicher et al., 2021). Our results suggest that cochlear amplification is largely preserved also in DKO animals (Figure 6—figure supplement 1C–F). In about half of the DKO animals in both age groups, the DPOAEs were normal. In the other half, they were reduced in amplitude but still detectable (Figure 6—figure supplement 1E, F), which may suggest partially hampered cochlear amplification in a subset of DKO animals.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig6-v1.jpg)
+
+**Figure 6.:** (A) Significant improvement of ABR thresholds in the injected ears of 3- to 4-week-old Cabp1/2-DKO animals for all tone burst frequencies tested as well as 20-Hz-click stimulus (asterisks, see Table in Supplementary file 1 for the p values). (B) Average click-evoked responses to an 80-dB 20-Hz-click stimulus. (C) A strong recovery of the amplitude of the ABR wave I (asterisks, Tukey’s multicomparison test; p ≤ 0.0001 for DKO vs WT or vs injected DKO) upon Cabp2-transgene expression.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) ABR thresholds to tone burst and click stimulation show an age-progressive pantonal severe hearing loss in Cabp1/2-DKO mice (asterisks: Šidak’s multicomparison tests for tone burst, Student’s t tests for clicks; p ≤ 0.0001). When thresholds exceeded 90 dB for the tone burst stimulation, they were assigned a value of 100 dB for calculation of the mean and SEM. (B) Grand averages of ABR waveforms to 80 dB click stimuli presented at a rate of 20 Hz show a strong decrease in ABR amplitudes in Cabp1/2-DKO mice at 3–4 weeks of age. At age 7–13 weeks, there are only minimal responses remaining, which are dominated by a delayed wave IV. The ABR wave peaks are labeled by roman numbers. Wave I is preceded by the summating potential (SP). (C, D) An increase in DPOAE thresholds was observed in some Cabp1/2-DKO mice, and was significant at the age of 7–13 weeks (p < 0.002, two-way ANOVA). However, note that even at 7–13 weeks of age some Cabp1/2-DKO mutants retained seemingly normal DPOAE thresholds. DPOAE thresholds exceeding 70 dB were extrapolated from amplitude growth functions. DPOAE amplitude growth functions for different primary tone frequency combinations at the age of 3–4 weeks (E) and 7–13 weeks (F). The two datasets (E, F) were acquired at different setups calibrated with different artificial mouse ear couplers, resulting in different absolute amplitudes. Light colored lines depict average noise floor level.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative images of the organ of Corti of the cochlea immunostained with antibodies against parvalbumin-alpha as a hair cell marker and eGFP. Note a strong eGFP immunofluorescence detected along the entire tonotopic length of the injected and, to a lesser degree, contralateral non-injected cochlea. Scale bar: 200 µm. (B) eGFP immunofluorescence at each tonotopic position in the injected and contralateral non-injected ears. In both ears, but particularly on the contralateral side, lower eGFP expression in inner hair cells (IHCs) was observed toward the cochlear base. (C) A strong recovery of the summated ABR waves I–IV (asterisks, Tukey’s multicomparison test; p < 0.0001 for DKO vs WT or vs injected DKO) upon Cabp2-transgene expression. (D) ABR waves in the Cabp1/2-DKO animals are delayed. Intracochlear injection of PHP.eB-Cabp2 leads to partial recovery of the wave I latency (asterisks demonstrate significant differences, for statistical comparisons, see Table in Supplementary file 1). (E) A representative image of a dissected organ of Corti and the corresponding frequency map (tonotopic frequencies in kHz, magenta).
 
 Transgenic expression of CaBP2 led to significant improvement of the IHC CaV1.3 function and synaptic exocytosis (Figures 1—4), we thus next asked, how this may influence the hearing of the animals. As previously observed (Oestreicher et al., 2021), unilateral injection of the PHP.eB-Cabp2-eGFP resulted in strong eGFP immunofluorescence signal in the vast majority of hair cells and elsewhere (Figure 6—figure supplement 2A, B, E). Transgenic expression of CaBP2 in DKO animals led to significantly improved hearing with lower ABR thresholds, increased click-evoked ABR amplitudes, and shortened wave I latency (Figure 6, Figure 6—figure supplement 2C, D).
 
@@ -83,7 +171,7 @@ Finally, we studied sound encoding by inspecting sound-induced spiking responses
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93646/elife-93646-fig7-v1.jpg)
 
-**Figure 7.:** Cabp1/2-DKO mice.Single neuron responses to sound stimulation in vivo in the region of the auditory nerve of Cabp1/2-DKO mice were extremely scarce. (A) WT poststimulus time histograms of spiral ganglion neurons (SGNs) to 50 ms suprathreshold tone or noise burst stimuli presented at a rate of 5 Hz showed a very high sound onset rate gradually adapting to a sustained rate persisting throughout the stimulus duration. Spike rates were much lower in the mutants. (B) Applying a lower stimulus rate of 0.5 Hz partially restored sound onset responses in Cabp1/2-DKOs, highlighting the enhanced strength of adaptation. WT and mutant neurons sustained their adapted spiking response throughout the longer 500 ms stimulus used in these recordings. For direct comparison, the average 5 Hz poststimulus time histograms from the same neurons are shown. (C) Correlations of peak and adapted rates for different stimulus rates. (D) Peak rates for different stimulus rates/interstimulus intervals in WT SGNs strongly increase between 10 and 5 Hz, while in DKOs a longer period of silence is required to observe such difference. (E) Cabp1/2-DKO neurons had lower spontaneous spike rates than WT SGNs.Figure 7—source code 1.
+**Figure 7.:** Single neuron responses to sound stimulation in vivo in the region of the auditory nerve of Cabp1/2-DKO mice were extremely scarce. (A) WT poststimulus time histograms of spiral ganglion neurons (SGNs) to 50 ms suprathreshold tone or noise burst stimuli presented at a rate of 5 Hz showed a very high sound onset rate gradually adapting to a sustained rate persisting throughout the stimulus duration. Spike rates were much lower in the mutants. (B) Applying a lower stimulus rate of 0.5 Hz partially restored sound onset responses in Cabp1/2-DKOs, highlighting the enhanced strength of adaptation. WT and mutant neurons sustained their adapted spiking response throughout the longer 500 ms stimulus used in these recordings. For direct comparison, the average 5 Hz poststimulus time histograms from the same neurons are shown. (C) Correlations of peak and adapted rates for different stimulus rates. (D) Peak rates for different stimulus rates/interstimulus intervals in WT SGNs strongly increase between 10 and 5 Hz, while in DKOs a longer period of silence is required to observe such difference. (E) Cabp1/2-DKO neurons had lower spontaneous spike rates than WT SGNs.
 
 DKO responses greatly improved when we lowered the stimulus repetition rate to 0.5 Hz, and plateaued at 0.2 Hz (Figure 7C, D). We hypothesize that in DKO SGNs, recovery of CaV1.3 channels after a silent interval in the range of 1–2 s is the limiting factor for determining the maximal SGN spiking rate at the sound onset. This may be further contributed by potentially slowed re-supply of synaptic vesicles, as suggested by reduced efficiency of sustained exocytosis in the CaBP1/2-deficient IHCs (see Figure 3). In contrast, in WT SGNs, the maximal spike rates are mostly recovered after a silent interval of 150 ms, which may be mostly limited by vesicle replenishment at the IHC ribbon synapse (Strenzke et al., 2016; Pangrsic et al., 2010). During a 5-Hz sound stimulation, the strength of adaptation was greatly enhanced (peak to adapted ratio 12.5 ± 3.0 vs WT 3.4 ± 0.2; p < 0.00001, Wilcoxon rank-sum test) whereas the time constant of adaptation was unchanged 7.9 ± 2.0 ms in DKO compared to 6.9 ± 0.4 ms in WT (p = 0.5, Wilcoxon rank-sum test). However, for the longer 500 ms tone bursts used in the 0.5 Hz stimulation dataset, it becomes obvious that despite the strong adaptation, DKO neurons are still able to sustain spiking at a low rate throughout the stimulation (Figure 7B). DKOs also showed reduced spontaneous spiking activity (Figure 7E), which supports the hypothesis that already in the absence of sound stimulation over tens of seconds a considerable fraction of calcium channels may be in steady-state inactivation.
 
@@ -95,7 +183,7 @@ In summary, sound responses of DKO SGNs and cochlear nucleus neurons showed a dr
 
 In this study, we examined the effects of genetic disruption of the two major CaBPs expressed in the cochlea. In the IHCs of CaBP1/2-deficient animals, we found largely inactivated Ca2+ currents with prolonged recovery from inactivation upon mild oscillatory stimulation, which did not support sufficient neurotransmission for proper sound encoding. The extent of channel inactivation and impairment of IHC synaptic exocytosis aggravated with the extent of IHC stimulation. Similarly, SGN action potential rates in vivo declined at increased sound stimulation rates and displayed very strong adaptation upon stimulation, going along with impaired sustained IHC exocytosis. The impairment was significantly stronger as compared to the phenotype in the absence of CaBP2 alone. This suggests that under in vivo conditions the roles of CaBP1 and 2 are partially overlapping.
 
-## Function and expression profile of CaBPs in the cochlea
+### Function and expression profile of CaBPs in the cochlea
 
 The murine cochlea shows strong expression of CaBP1 and 2, while the levels of CaBP4 and 5 seem negligible (Yang et al., 2016; Jean et al., 2023; Xu et al., 2022). Among the three putative splice isoforms of CaBP2 differing in the N-terminal aminoacid sequence, the alternative long isoform, termed CaBP2-alt, may be the most abundant splice variant in the IHCs, as suggested by in situ hybridization (Yang et al., 2016), while SGNs seem to express none. So far our gene-rescue experiments were conducted with the conventional L-isoform only, which however shows strong inhibition of CaV1.3 inactivation in the HEK cells as well as IHCs (Picher, 2017; Oestreicher et al., 2021). Alternative splicing also generates three CaBP1 variants (Yang et al., 2016). The alternative long variant caldendrin is primarily expressed in the SGNs or the surrounding glia cells, while weak expression of CaBP1-S/-L (as judged by the mRNA production) was detected in hair cells (Yang et al., 2016). Our DKO model lacks all splice isoforms of both CaBPs. Since Cabp1 KO animals show normal hearing several weeks after birth, and CaBP2 is absent from SGNs, we interpret the hearing impairment of the Cabp1/2 DKO animals to be primarily due to defects of hair cell function and judge contribution by SGN dysfunction as rather unlikely, at least in the early postnatal weeks.
 
@@ -103,7 +191,7 @@ The ABR thresholds of Cabp1 KO animals are normal at 4 weeks of age, but deterio
 
 Our results reveal that the amount of CaV1.3 inactivation increases dramatically when IHCs lack both major CaBPs. This suggests that the sole loss of either CaBP1 or 2, can be largely compensated by the other of the two CaBP members. Yet, the loss of CaBP2 alone still results in progressive hearing impairment in mice and DFNB93 in humans. The inability of CaBP1 to fully replace CaBP2 in the CaBP2-deficient IHCs may stem from either too low concentration of CaBP1 (and other CaBPs), or from distinct properties of the two proteins (enabling CaBP2 to exert more potent suppression of CaV1.3 inactivation, e.g. VDI, or potentially performing additional, yet unidentified cellular function). Interestingly, even the overexpression of CaBP2 did not completely rescue the hearing phenotype of DKO animals. Future experiments involving overexpression of CaBP1 (and possibly CaBP1-2 molecular chimeras) in Cabp2 SKO and/or Cabp1/2 DKO animals together with further biophysical interaction studies are required to gain a better understanding of the potentially distinct functions performed by the two major CaBPs in the hair cells.
 
-## CaBPs as the regulators of IHC synaptic transmission
+### CaBPs as the regulators of IHC synaptic transmission
 
 Previously, patch-clamp recordings surprisingly revealed normal whole-cell exocytosis in CaBP2-deficient IHCs despite enhanced inactivation of calcium channels (Picher, 2017), and no obvious defects in the CaBP1-deficient IHCs (Yang et al., 2018). In contrast, IHCs deficient in both, CaBP1 and 2, displayed strongly impaired exocytosis. Transgenic overexpression of CaBP2 in IHCs resulted in a partial recovery of the Ca2+ influx and an even better recovery of exocytosis. Together, these results corroborate the hypothesis of the role of CaBPs in preventing extensive steady-state inactivation of CaV1.3 channels to support sufficient synaptic exocytosis for proper sound encoding (Picher, 2017). The lack of CaBP1 and 2 seems to impair sustained exocytosis and efficiency of exocytosis beyond the levels that could be attributed to reduced QCa. This became particularly apparent when the IHCs were challenged by higher holding potentials in combination with large sine wave amplitudes during capacitance measurements, which we assume to partially deplete the pool of RRP vesicles. At present, it is not clear how CaBPs may directly affect the exocytosis, for example by influencing the coupling of the CaV1.3 channels and synaptic vesicles or potentially affecting the expression levels of other synaptic proteins that mediate synaptic vesicle replenishment. In this respect, it is worth noting that CaBP1 and 2 have been reported to modulate CaMKII activity (Haeseleer et al., 2000), which in turn may through phosphorylation modify the Ca2+ affinity of otoferlin C2 domains (Meese et al., 2017). In the future, it is thus essential to investigate if CaBPs regulate the function of otoferlin and thus synaptic processes. Furthermore, other members of the CaBP/CaM family have been suggested to interact with synaptic proteins and/or be involved in the regulation of synaptic vesicle cycle: CaM in endocytosis (Wu et al., 2009), CaBP5 in priming via interaction with Munc18-1 (Sokal and Haeseleer, 2011), CaBP1 via inhibition of IP3 receptors (Haynes et al., 2004; Kasri et al., 2004). An important challenge for future studies is to identify further CaBP(2)-interaction partners and possible functions beyond modulation of calcium channels.
 
@@ -111,44 +199,320 @@ The recovery of CaV1.3 channels from inactivation upon prolonged milder stimulat
 
 From our in vitro recordings at higher holding potential or upon prolonged stimulation with small voltage oscillations we predict that in vivo a noteworthy proportion of CaV1.3 channels may be effectively inactivated and not available for mediating IHC synaptic transmission. This could explain the low experimental yield, the low ‘spontaneous’ spiking rates of the SGNs and lower sound-evoked spike rates with higher thresholds. Similarly, thresholds may be high for tone bursts in the ABR measurements due to high proportion of inactivated channels upon stimuli at high repetition rate used for these recordings (20–40 Hz repetition rate for click and tone burst stimulation, respectively). We believe that any sound stimulation and potentially even spontaneous activity may effectively silence DKO synapses. As expected, longer interstimulus intervals may allow a larger proportion of channels to recover between stimuli, increasing the onset rates of SGN spiking while decreasing the first spike latency and jitter. Still, high-intensity stimulation had to be used in the DKO animals to evoke an increase in SGN spiking. It is possible that spontaneous activity and/or our routines used to determine the SGN characteristic frequency inactivate a majority of IHC CaV1.3 channels thus not allowing reliable assessment of the characteristic frequency. In addition to CaV1.3 channel inactivation, other factors may contribute to low hearing sensitivity, such as possible impairment of synaptic vesicle replenishment, or IHC mechanotransduction, and, in some cases, impaired cochlear amplification. A complete lack of BK channels was shown to affect the IHC resting potential, receptor potential amplitude and timing, and consequently the timing and frequency of spiking in the SGNs (Oliver et al., 2006). Lower expression of BK channels is not expected to significantly affect hearing thresholds, at least initially (Rüttiger et al., 2004; Maison et al., 2013; Pyott et al., 2007), and thus likely does not contribute to the hearing defect of the Cabp1/2 DKO animals. However, at advanced ages, the effects described above may combine with the lack of CaBPs to additionally desynchronize already scarce spikes in the auditory nerve fibers.
 
-## Clinical implications for the diagnosis and treatment of DFNB93
+### Clinical implications for the diagnosis and treatment of DFNB93
 
 The SGN sound encoding phenotype in Cabp2-KO mice was surprisingly mild compared to the deficits observed in DFNB93 patients (Picher, 2017; Schrauwen et al., 2012): SGN thresholds and evoked spike rates were only minimally affected (Picher, 2017). Given the strong recovery phenotype in the DKO we now consider the possibility that synaptic activity in response to everyday sounds could already inactivate calcium channels and reduce SGN spiking. In this case, communication in daily life would be more strongly impaired than audiometric data obtained in a soundproof chamber, especially when short stimuli separated by silent intervals are used. In mild cases, a gap detection test may be used to assess auditory fatigue. Based on our data, we further predict that patients that have a stronger channel inactivation phenotype might not benefit much from sound amplification by hearing aids. Instead, they should use technologies that improve the signal to noise ratio (e.g. noise cancellation, directional microphones, and wireless transmitters). An alternative or additional future treatment approach may be gene therapy. In our hands, re-expression of CaBP2 by genetic treatment partially restored CaV1.3 properties, IHC exocytosis and consequently ABR wave amplitudes and thresholds. This successful viral rescue supports the view that a reversible inactivation of IHC CaV1.3 currents is the main mechanism of hearing loss in CaBP-related deafness, which can be targeted by gene therapy in the future.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cabp1-KO</td>
+      <td>Kim et al., 2014</td>
+      <td>RRID:MGI:5780462</td>
+      <td>A KO of Cabp1 used for cross-breeding to obtain Cabp1/2-DKO animals</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cabp2LacZ/LacZ</td>
+      <td>Picher, 2017</td>
+      <td>RRID:MGI:6155766</td>
+      <td>A KO of Cabp2 used for cross-breeding to obtain Cabp1/2-DKO animals</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PHP.eB viral capsid</td>
+      <td>Addgene plasmid</td>
+      <td>#103005</td>
+      <td>Gift of V. Gradinaru</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Encoding CaBP2-L</td>
+      <td>NCBI ReferenceSequence</td>
+      <td>NP_038906.2</td>
+      <td>Long isoform of mouse CaBP2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myosin VIIa (Mouse monoclonal)</td>
+      <td>Santa CruzBiotechnology</td>
+      <td>Cat#: sc-74516, RRID:AB_2148626</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Kca1.1(Rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat#: APC-021, RRID:AB_2313725</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SK2(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P0483, RRID:AB_260860</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CaV1.3(Rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat#: ACC-005RRID:AB_2039775</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CtBP2(Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 612044, RRID:AB_399431</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Homer1(Chicken polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 160006, RRID:AB_2631222</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Synapsin1/2(Guinea pig polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 106004,RRID:AB_1106784</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RibeyeA(Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 192103, RRID:AB_2086775</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-parvalbumin-α(Guinea pig polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#: 195004,RRID:AB_2156476</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GluA3(Goat polyclonal)</td>
+      <td>Santa CruzBiotechnology</td>
+      <td>Cat#: sc-7612,RRID:AB_2113895</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP(Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab13970, RRID:AB_300798</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-11039, RRID:AB_2534096</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-11008, RRID:AB_143165</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea pig Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-11073, RRID:AB_2534117</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 568 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-11011, RRID:AB_143157</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken Alexa Fluor 568 (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab175711, RRID:AB_2827757</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-21236, RRID:AB_2535805</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 633 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-21136, RRID:AB_2535775</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea pig Alexa Fluor 633 (Goat polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-21105, RRID:AB_2535757</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 488 (Donkey polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-21202, RRID:AB_141607</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat Alexa Fluor 568 (Donkey polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-11057, RRID:AB_2534104</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 647 (Donkey polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>Cat#: A-31573, RRID:AB_2536183</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchers Power Tools</td>
+      <td>Igor Pro XOP(http://www3.mpibpc.mpg.de/groups/neher/index.php?page=software)</td>
+      <td>RRID:SCR_001950SCR_001950</td>
+      <td>Analysis of patch-clamp data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>http://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td>Image assembly</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris, Bitplane</td>
+      <td>http://www.bitplane.com/imaris/imaris</td>
+      <td>RRID:SCR_007370</td>
+      <td>Image assembly and analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>https://www.microsoft.com/en-gb/</td>
+      <td>RRID:SCR_016137</td>
+      <td>Dataoverviews, algorithm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td>Image assembly</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism, GraphPad Software</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistical analyses and graphs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro 6,Wavemetrics</td>
+      <td>http://www.wavemetrics.com/products/igorpro/igorpro.htm</td>
+      <td>RRID:SCR_000325</td>
+      <td>Data analyses, statistical analyses, and graphs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB, Mathworks</td>
+      <td>http://www.mathworks.com/products/matlab/</td>
+      <td>RRID:SCR_001622SCR_001622</td>
+      <td>Data analyses, statistical analyses, and graphs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster, HEKA, Harvard Bioscience</td>
+      <td>https://www.heka.com/index.html</td>
+      <td>-</td>
+      <td>Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioSig, TDT</td>
+      <td>https://www.tdt.com/components/software/</td>
+      <td>RRID:SCR_008428</td>
+      <td>Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iMSPECTOR,Abberrior Instruments</td>
+      <td>https://abberior.rocks/superresolution-confocal-systems/software/</td>
+      <td>RRID:SCR_015249</td>
+      <td>Data acquisition</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 For the generation of the Cabp1/Cabp2-double-knockout (Cabp1/2-DKO) line, CaBP2LacZ/LacZ mice, carrying LacZ trapping cassette in place of the exons 3 and 4 (Picher, 2017), were crossbred with Cabp1 KO mice (Kim et al., 2014) and maintained on a C57/Bl6 background. Mice of both sexes from 3 to 13 weeks were used for electrophysiological and systems physiology recordings. All experiments complied with the national animal care guidelines and were approved by the University of Göttingen Board for animal welfare and the animal welfare office of the state of Lower Saxony (AZ 33.19-42502-04-19/3134 and AZ 33.19-42502-04-19/3133).
 
-## Systems physiology recordings: ABR and DPOAE
+### Systems physiology recordings: ABR and DPOAE
 
 Prior to the experiments mice were weighed and anesthetized via intraperitoneal injections of ketamine (125 µg/g) and xylazine (2.5 µg/g). Recordings were obtained in a custom-made soundproof box with a Tucker-Davis (TDT) BioSig System II/BioSig software (Tucker-Davis Technologies, Alachua, FL). Body temperature was maintained using a heating pad (37°C) and ECG was monitored continuously. For ABR recordings, subcutaneous needles were placed at the vertex, the ipsilateral pinna and at the lower back. Using a JBL2402 speaker in free-field configuration, tone bursts (10 ms plateau, 1 ms cos2 rise/fall) or clicks of 0.03 ms were ipsilaterally presented at 40 Hz for tone bursts or 20 Hz for clicks. ABR traces were amplified 50000-fold, band-pass filtered between 400 Hz and 4 kHz (NeuroAmp) and averaged from 1300 repetitions sampled at 50 kHz for 20 ms. Thresholds were defined in stacked waveforms as the lowest stimulus intensity (dB SPL) at which a reproducible waveform could be visually detected with a 10-dB precision. Wave I amplitudes were measured peak-to-trough. DPOAEs were measured using a custom-written MATLAB (MathWorks) routine. Two primary tones f1 and f2 (ratio f1/f2 = 1.2, level difference f2 = f1 + 10 dB) were presented via two speakers (MF-1, TDT) and a custom-made ear probe containing an MKE-2 microphone (Sennheiser). Stimulus duration was 16 ms and f2 levels varied from 10 to 70 dB SPL in 10 dB steps. The microphone signal was amplified (DMX 6Fire; Terratec (young animals), or UAC-2; Zoom (older animals)) and digitized (TDT System III). DPOAE amplitude was analyzed at 2 × f2 − f1 using custom-written MATLAB software (MathWorks) with fast Fourier transformation. DPOAE thresholds were determined as responses that exceeded –18 dB SPL in young and –4 dB SPL in older animals. Experimental data with obvious technical abnormalities (higher noise floor, inappropriate selection of frequency/intensity combinations) was excluded.
 
-## Auditory nerve fiber recordings
+### Auditory nerve fiber recordings
 
 Mice were anesthetized by injection of xylazine (5 mg/kg), urethane (1.32 mg/kg), and buprenorphine (0.1 mg/kg) i.p., tracheotomized, and placed in a stereotactic apparatus. The left occipital bone and the cerebellum were partially removed to visualize the left superior semicircular canal. The latter served as a landmark to navigate a glass microelectrode through the cochlear nucleus, aiming at the location where the auditory nerve leaves the internal auditory canal and enters the cochlear nucleus. 85 or 90 dB broadband noise bursts (ScanSpeak, Avisoft Bioacoustics) were used as search stimuli to identify neurons that displayed sound-driven spiking activity. They were characterized by spontaneous rate and frequency tuning and the responses to tone bursts at the characteristic frequency, 30 dB above the threshold, as previously described (Strenzke et al., 2016). In the majority of sound-responsive DKO neurons, thresholds were so high and tuning so broad that neither the automated tuning curve algorithm nor systematic or manual changes in sound frequency elicited frequency-specific responses. In these cases, we either chose a subjective ‘best frequency’ or used white noise burst stimulation at 85 dB.
 
-## Patch-clamp recordings
+### Patch-clamp recordings
 
 For patch-clamp recordings, the apical coils of 3- to 4-week-old animals were dissected in HEPES (2-[4-(2-hydroxyethyl)-1-piperazinyl]ethanesulfonic acid)-Hanks solution containing (in mM): 10 HEPES, 5.35 KCl, 141.7 NaCl, 0.5 MgSO4, 1 MgCl2, 11.1 D-glucose and 3.42 L-glutamine. pH was adjusted to 7.2. IHCs of the ~6 kHz tonotopical region were investigated using the perforated patch configuration. The pipette solution contained (in mM): 130 Cs-gluconate, 10 Tetraethylammonium-Cl, 10 4-AP, 1 MgCl2, 10 HEPES, 300 mg/ml amphotericin B, pH 7.2–290 mOsm. The bath solution was composed of (in mM): 111 NaCl, 35 TEA-Cl, 2.8 KCl, 1 CsCl, 1 MgCl2, 10 NaOH–HEPES, 11.3 D-glucose, and 1.3 or 2 CaCl2 or BaCl2 (pH 7.2, 300–310 mOsm). When the bath solution contained 2 mM BaCl2/CaCl2, NaCl was adjusted to 110 mM. The bath solution was supplemented by the SK2 channel blocker apamin (100 nM; Peptanova, Germany) freshly on the day of the experiment. Recordings were performed at room temperature using an EPC-9 amplifier (Heka-Germany) controlled by Pulse software. Currents were leak-corrected using a p/10 protocol, sampled at 50 kHz and corrected offline for the liquid junction potential (–15 mV). IHCs were patched at a holding potential of –85 mV (in a subset of experiments, –65 and –55 mV) and stimulated with depolarizations to the peak Ca2+-current potential. Changes in membrane capacitance were monitored by applying a 2-kHz-sine wave with an amplitude of 35 mV. In a subset of experiments, the amplitude was reduced to 15 mV to diminish possible stimulation of the cells caused by the sine wave. Recordings with leak currents exceeding –50 pA, series resistance above 34 MΩ and unstable recordings were excluded from analysis. VDI and CDI were calculated as follows: VDI = 1 − IBa_500/IBa_initial and CDI = 1 − (ICa_500/I Ca_initial)/(IBa_500/IBa_initial), where IBa_500 and ICa_500 represent whole-cell Ba2+ and Ca2+ currents 500 ms after beginning of depolarization, and IBa_initial and ICa_initial correspond to the initial, peak currents with the respective divalent cations (Tadross et al., 2010).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Apical coils (6–8 kHz tonotopical region) of the organ of Corti were fixed with 4% (vol/vol) formaldehyde in phosphate-buffered saline (PBS) on ice. After incubation for 1 hr at room temperature in goat serum dilution buffer [16% (vol/vol) normal goat serum, 450 mM NaCl, 0.6% Triton X-100, 20 mM phosphate buffer (pH 7.4)], the explants were incubated in primary antibodies over night at 4°C. The following antibodies were used: chicken anti-Homer1 (1:200, Synaptic Systems), mouse anti-Myosin VIIa (1:200, Santa Cruz), guinea pig anti-Synapsin1/2 (1:200, Synaptic Systems), rabbit anti-RibeyeA (1:200, Synaptic Systems), guinea pig anti-parvalbumin-α (1:200; Synaptic Systems), rabbit anti-BK (1:200; Alomone), rabbit anti-SK2 (1:200; Sigma), mouse anti-CtBP2 (1:200; BD Biosciences), goat anti-GluA3 (1:200; Santa Cruz), rabbit-anti-CaV1.3 (1:100; Alomone), and chicken anti-GFP (1:200, Abcam). The explants were then incubated with secondary AlexaFluor-labeled antibodies (1:200; Molecular Probes/Thermo Fischer, Abcam) for 1 hr at room temperature, washed three times in PBS and mounted. Confocal images were acquired with an Abberrior Instruments Expert Line STED microscope using a 1.4 NA ×100 oil immersion objective. ImageJ software (NIH) was employed to analyze 2D confocal stacks and generate maximum projections. Volumetric synapse and BK-cluster immunofluorescence analysis ran on Imaris (Bitplane, Zurich, Switzerland) paired with a custom-written Matlab software (Ohn et al., 2016; Neef et al., 2018).
 
-## Molecular biology and AAV vector production
+### Molecular biology and AAV vector production
 
 The construct containing the long isoform of mouse CaBP2 (CaBP2-L; NCBI Reference Sequence: NP_038906.2) and eGFP is depicted in Figure 1—figure supplement 1A. AAV9-PHP.eB particles were generated using our standard AAV purification procedure previously described in more detail in Huet and Rankovic, 2021. In brief, triple transfection of HEK-293T cells was performed using pHelper plasmid (TaKaRa/Clontech), the trans-plasmid providing viral capsid PHP.eB (a generous gift from Viviana Gradinaru, Addgene plasmid #103005) and the cis-plasmid providing hCMV/HBA_wtCaBP2-P2A-eGFP. PHP.eB viral particles were harvested from the medium 72 hr after, and from cells and the medium 120 hr after transfection. Precipitation was done with 40% polyethylene glycol 8000 (Acros Organics, Germany) in 500 mM NaCl for 2 hr at 4°C. Both, precipitate and cells were lysed in high salt buffer (500 mM NaCl, 2 mM MgCl2, 40 mM Tris–HCl, pH 8.0) and non-viral DNA was degraded using salt-activated nuclease (SAN, Arcticzymes, USA). The cell lysates were clarified by centrifugation at 2000 × g for 10 min and then purified over iodixanol (Optiprep, Axis Shield, Norway) step gradients (15, 25, 40, and 60%) at 350,000 × g for 2.25 hr (Grieger et al., 2006; Zolotukhin et al., 1999). Finally, viral particles were concentrated using Amicon filters (EMD, UFC910024) and formulated in sterile PBS supplemented with 0.001% Pluronic F-68 (Gibco, Germany). Virus titer was 8.2 × 1012 genome copies/ml measured by determining the number of DNase I resistant genome copies using qPCR (StepOne, Applied Biosystems) and AAV titration kit (TaKaRa/Clontech). The purity of viruses was routinely checked by silver staining (Pierce, Germany) after gel electrophoresis (NovexTM 4–12% Tris-Glycine, Thermo Fisher Scientific).
 
-## Virus injections
+### Virus injections
 
 Mice were injected at postnatal day 6 using the round window approach as described in earlier studies (Rankovic et al., 2020). In brief, anesthesia was established with isoflurane (5% for induction, 2–3% for maintenance, frequent testing of the absence of hind-limb withdrawal reflex). For analgesia, buprenorphine (0.1 mg/kg, 30 min before surgery) and carprofen (5 mg/kg, during and 1 day after surgery) were applied subcutaneously and Xylocain (10 mg spray) locally. Body temperature was maintained by a custom-built heating blanket. Following a retro-auricular approach, the facial nerve was exposed to determine where to puncture the cartilaginous bulla with the injection pipette and target the scala tympani where virus suspension (1–1.5 μl, corresponding to 0.82–1.23 × 1010 AAV particles) was injected. Following injection, the endogenous tissue was relocated and the surgical situs closed by suturing the skin. Two to three weeks later, the injected mice were used for hearing tests, in vitro electrophysiology and immunohistochemistry of the cochleae.
 
-## Data analysis
+### Data analysis
 
 Data were analyzed using Igor Pro Software (Wavemetrics), GraphPad PRISM (GraphPad Software, Inc), Matlab (Mathworks), and Imaris (Bitplane). Mean membrane capacitance changes and calcium current estimates present grand averages calculated from the mean estimates of individual IHCs. All data are presented as mean ± SEM. For the analysis of half-max Ca2+ current (Vhalf) and activation constant (kact), current–voltage traces were transformed into an activation function (ICa = gmax(V − Vrev)), which was subsequently fitted by a Boltzmann function: 1/(1 + exp((V0.5 − V)/kact)). Gmax describes the maximum conductance, V the holding potential and Vrev the reversal potential. Data were tested for randomness, normality (Jaque–Bera test), equality of variances (F-test) and finally compared for statistical significance by performing Student’s t-test for normally distributed data of equal variance or else by the Wilcoxon rank-sum test. Systems physiology data were tested for significance using ANOVA with Tukey’s or Šidak’s multicomparisons tests. For each dataset, sample sizes were decided according to typical sizes in the respective fields (e.g. systems or cell electrophysiology, and immunohistochemistry of ribbon synapses). Respective sections, figures, or figure legends report the number of biological replicates (n), animal numbers (N), and the statistical tests used.
 
-## Materials availability statement
+### Materials availability statement
 
 Research materials and biological reagents used in this MS are reported in the Materials and Methods section. The custom routines and scripts used in the MS are provided as Source Codes or within data source files. Custom routines for analysis of patch-clamp data (IVs, inactivation, exocytosis, recovery from inactivation) are available within source files: Figure 1—source data 1, Figure 1—source data 2, Figure 3—source data 2, and Figure 4—source data 1. Other source codes: MATLAB scripts for DPOAE analysis (related to Figure 6—figure supplement 1), single unit recordings (related to Figure 6), and GFP expression analysis (related to Figure 6—figure supplement 2). Further source codes are provided: Figure 6—figure supplement 1—source code 1 (MATLAB scripts for analysis of DPOAE traces), Figure 6—figure supplement 2—source code 1 (MATLAB scripts for analysis of GFP immunofluorescent signals) and (MATLAB scripts for analysis of SU data).

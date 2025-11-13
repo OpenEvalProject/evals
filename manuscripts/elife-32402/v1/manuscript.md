@@ -46,6 +46,289 @@ The extent to which such reports have misled the cancer research community is un
 
 Having described a few of the factors that challenge our ability to validate targets, let’s consider the case of MELK. This leucine zipper-containing serine/threonine kinase was first reported 20 years ago as a new member of the AMP kinase family whose expression is increased in pre-implantation mouse embryos, implicating MELK in early development (Heyer et al., 1997). In 2005, MELK was first implicated in cancer in a study that reported elevated levels of MELK RNA expression in many human tumors and in a mouse colorectal cancer model, and demonstrated that MELK-targeted RNA-interference inhibited proliferation in cultured human cancer cell lines and also in a xenograft tumor model (Gray et al., 2005). Since that initial article, there have been another 32 articles that specifically implicate MELK as a therapeutic target in human cancer (see column 1 in Table 1), including an article by Wang et al. that was published in eLife in 2014 (Wang et al., 2014).
 
+**Table 1.**
+ Articles suggesting a link between MELK and human cancers.The 33 articles listed in column 1 of this table suggest that MELK has a role in a variety of human cancers, which makes in a candidate therapeutic target for cancer drugs. Columns 2–5 indicate which articles reported certain kinds of evidence to make the link between MELK and cancer, column 6 indicates the studies that used a MELK inhibitor called OTS167 (which is currently undergoing clinical trials). However, three recent papers (Lin et al., 2017; Huang et al., 2017; Giuliano et al., 2018) suggest that MELK should not be considered as a candidate therapeutic target.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Articles reporting that MELK expression is up-regulated in various human cancers</th>
+      <th>Articles reporting an association between increased MELK expression and poor clinical prognosis</th>
+      <th>Articles reporting efficacy of MELK-targeted RNAi in cancer cell lines and/or xenograft tumor models</th>
+      <th>Articles reporting efficacy with small-molecule inhibitors of MELK in cancer cell lines and/or xenograft tumor models</th>
+      <th>Articles that made use of the MELK inhibitor OTS167 (also known as OTSSP167)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gray et al. (2005)</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lin et al. (2007)</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Marie et al. (2008)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nakano et al. (2008)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nakano et al. (2009)</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pickard et al. (2009)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hebbard et al. (2010)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Choi and Ku (2011)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chung et al. (2012)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Gu et al. (2013)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kuner et al. (2013)</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minata et al. (2014)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wang et al. (2014)</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Du et al. (2014)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alachkar et al. (2014)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Beke et al. (2015)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Li et al. (2016)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Inoue et al. (2016)</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Chung et al. (2016)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Kato et al. (2016)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Touré et al., 2016</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wang et al. (2016)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Stefka et al. (2016)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Xia et al. (2016)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Speers et al., 2016</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Hiwatashi et al., 2016</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kohler et al. (2017)</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Simon et al. (2017)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Edupuganti et al. (2017)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liu et al., 2017</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Matsuda et al. (2017)</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bolomsky et al., 2017</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Janostiak et al., 2017</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
+
 Of those 33 MELK-cancer publications, 20 articles describe studies indicating that MELK expression is up-regulated (mostly based on RNA levels) in various human cancers, including ovarian, breast, NSCLC, SCLC, AML, prostate, pancreas, gastric, renal, astrocytoma, glioma, medulloblastoma, colorectal, liver, and rectal cancers (see column 2 in Table 1). Fifteen of the published MELK expression studies also report an association between increased MELK expression and poor clinical prognosis (see column 3 in Table 1). Significantly, 23 of the published MELK studies report efficacy of MELK-targeted RNAi in cancer cell lines and/or xenograft tumor models, thereby directly implicating MELK function in cancer cell proliferation or tumorigenic potential (see column 4 in Table 1). Consistent with those findings, 19 published studies describe efficacy with small-molecule inhibitors of the MELK kinase in cancer cell lines and/or tumor xenografts (see column 5 in Table 1). Notably, 15 of those studies made use of the MELK inhibitor OTS167 (also known as OTSSP167) that is currently being evaluated in human clinical trials, presumably prompted by many of these published pre-clinical findings (see column 6 in Table 1). In aggregate, these published studies would seem to make a compelling case for a likely role for MELK in a variety of human cancers.
 
 However, in March 2017, in an article published in eLife, researchers at the Cold Spring Harbor Laboratory (CSHL) and Stony Brook University reported that they had used CRISPR/Cas9 technology to delete MELK in 13 different human cancer cell lines of various tissue origins, and that they had observed in no significant effects on proliferation (Lin et al., 2017). Notably, this analysis included several triple-negative breast cancer cell lines that, according to the 2014 eLife article by Wang et al., were MELK-dependent (based on the observed consequences of RNAi-induced MELK depletion). Lin et al. also noted that in several published whole-genome, unbiased RNAi studies to identify genes required by cancer cells, MELK dependency was never observed. Furthermore, they observed that cancer cells depleted of MELK by CRISPR editing were found to retain sensitivity to the MELK kinase inhibitor OTS167. This led Lin et al. to conclude that the observed cytotoxicity following OTS167 treatment reflected off-target, MELK-independent mechanisms, thus implying that the ongoing clinical development of OTS167 as a MELK-targeted therapeutic may be misguided. Notably, three other relatively recent publications have similarly concluded that OTS167 is likely to exhibit MELK-independent cytotoxic activity (Huang et al., 2017; Simon et al., 2017; Ji et al., 2016).

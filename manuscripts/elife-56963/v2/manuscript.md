@@ -41,7 +41,7 @@ To address this issue, here we applied curvature based alignment (abbreviated as
 
 We obtained cytoarchitectonically labeled temporal cortical areas and postmortem MR images of 10 brains (volumetrically aligned (rigid body) to the Colin27 space) used in the JuBrain cytoarchitectonic Atlas (Amunts and Zilles, 2015). The cytoarchitectonically labeled areas were TE 1.0, TE 1.1, and TE 1.2 from Morosan et al., 2001, TE 2.1 and TE 2.2 from Clarke and Morosan, 2012, TE three from Morosan et al., 2005, and STS one and STS two from Zachlod et al., 2020. In order to perform cortex based alignment, the white matter - gray matter boundary was segmented in all 10 postmortem brains. To obtain this segmentation, we have used a combination of image filtering techniques and a histogram-based segmentation approach (Gulban et al., 2018b), which reduced the amount of required manual corrections (see Materials and methods section). Cortical surfaces were reconstructed to perform three different types of group alignment methods. These methods were rigid body (i.e. considering surface sampling [compared to volumentric alignment] and rigid body registration), CBA and CBA with anatomical priors (CBA+; including the anterior Heschl’s Gyrus, the superior temporal gyrus, the superior temporal sulcus, and the middle temporal gyrus as anatomical priors). We additionally compared these surface approaches to the original volumetric alignment in the Colin27 space. We have validated the performance of these methods by comparing the overlap between cytoarchitectonic areas across individuals. We subsequently used CBA+ to create superior temporal cortical group maps of in vivo MRI (at 7T) measurements and to align them to the probabilistic cytoarchitectonic atlas.
 
-## Comparison between alignment methods
+### Comparison between alignment methods
 
 Figure 1 rows 1 and 3 show the averaged curvature maps after alignment with each of the surface approaches we used (i.e. rigid only that linearly coregisters the surfaces, standard CBA, and CBA tailored to the temporal lobe [CBA+]). In the temporal lobe, the increased sharpness of the average curvature maps indicates the improved correspondence of the macro-anatomical features in CBA and CBA+ compared to the rigid only alignment. Especially in the right hemisphere (third row in Figure 1), an improvement of CBA+ over standard CBA is noticeable at the level of the Heschl’s Gyrus (indicated by a red circle). The improvement in alignment of the macro-anatomical features in the temporal lobes (left and right) is also visible when considering the folded average meshes of the ten brains in the postmortem dataset (i.e. average folded meshes, Figure 1 rows 2 and 4). In absence of large macro-anatomical differences across the individuals, improved alignment should increase the 3D complexity (e.g. gyri and sulci appearing very clearly distinguishable) of the average folded mesh. Cortical curvature-based alignment procedures, however, may be affected when individual cortical macro-anatomy strongly deviates from the average morphology. In the postmortem sample, we analyzed, we observed macro-anatomical variations across hemispheres of two types. First, following the characterization described in Kim et al., 2000; Da Costa et al., 2011, the number of Heschl’s Gyri varied. In particular, we observed 1, 1.5 and 2 Heschl’s Gyri in [5, 4, and 1, respectively] right hemispheres and [6, 2, and 2, respectively] left hemispheres. Second, we observed the presence of three hemispheres (one right and two left ones) whose single Heschl’s Gyrus was continuous at the anterior part of the anterior temporal convolution, resulting in a split superior temporal gyrus (i.e. interrupted by an intermediate sulcus between the anterior and posterior part with respect to the location of the Heschl’s Gyrus - Figure 13 lower right panel). This rare morphological pattern was first described in Heschl, 1878 and was reported to occur % 10 of all brains inspected by Richard L. Heschl (110 of 1087 brains). It was 1̃eight times more likely to occur on the left hemisphere in comparison to right (also see Rademacher et al., 1993), for another reference to Heschl’s work in English). As expected, the tailored alignment we developed here results in a more prominently defined Heschl’s Gyrus in the average mesh, resulting from the correct alignment of the anterior Heschl’s Gyrus across individual hemispheres. In the split superior temporal gyrus cases, we defined the gyrus as continuous (i.e. bridging the intermediate sulcus). While this definition did not compromise the alignment of the anterior Heschl’s Gyrus, the impact of the approach we followed in the alignment of regions in proximity to the intermediate sulcus would require a larger sample on which to evaluate alignment separately according to this macro-anatomical variation (i.e. aligning separately individuals with a split/continuous superior temporal gyrus).
 
@@ -85,9 +85,975 @@ To better understand the differences between methods and quantitatively compare 
 
 **Figure 9.:** The histograms are normalized by the number of vertices per area. The x-axis represents the probability value (an overlap from 1 out of 10 [left] to 10 out of 10 participants [right]). The ideal co-registration method should show less left skewed distribution. CBA+ shows the lowest skew toward the left in comparison to other methods.
 
-## Aligning in vivo group measures to the probabilistic postmortem areas
+**Table 1.**
+ DICE coefficients computed for each area using a leave-one-subject out approach for the areas in left hemispheres.Using rigid body alignment, CBA, or CBA+, the surface area of each area from the left-out subject is compared to an atlas obtained from the remaining nine subjects. The atlas in this case is constructed by considering the vertices that overlap in at least four out of the nine subjects.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RIGID</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std. Dev.</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.23</td>
+      <td>0.47</td>
+      <td>0.42</td>
+      <td>0.36</td>
+      <td>0.40</td>
+      <td>0.00</td>
+      <td>0.43</td>
+      <td>0.45</td>
+      <td>0.02</td>
+      <td>0.12</td>
+      <td>0.29</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.50</td>
+      <td>0.71</td>
+      <td>0.54</td>
+      <td>0.62</td>
+      <td>0.62</td>
+      <td>0.09</td>
+      <td>0.67</td>
+      <td>0.49</td>
+      <td>0.33</td>
+      <td>0.15</td>
+      <td>0.47</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.03</td>
+      <td>0.40</td>
+      <td>0.02</td>
+      <td>0.25</td>
+      <td>0.43</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.18</td>
+      <td>0.23</td>
+      <td>0.00</td>
+      <td>0.15</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.56</td>
+      <td>0.42</td>
+      <td>0.43</td>
+      <td>0.49</td>
+      <td>0.70</td>
+      <td>0.00</td>
+      <td>0.34</td>
+      <td>0.40</td>
+      <td>0.22</td>
+      <td>0.22</td>
+      <td>0.38</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.36</td>
+      <td>0.49</td>
+      <td>0.57</td>
+      <td>0.64</td>
+      <td>0.57</td>
+      <td>0.49</td>
+      <td>0.62</td>
+      <td>0.55</td>
+      <td>0.10</td>
+      <td>0.09</td>
+      <td>0.45</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.26</td>
+      <td>0.11</td>
+      <td>0.08</td>
+      <td>0.23</td>
+      <td>0.35</td>
+      <td>0.01</td>
+      <td>0.20</td>
+      <td>0.35</td>
+      <td>0.15</td>
+      <td>0.27</td>
+      <td>0.20</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.57</td>
+      <td>0.41</td>
+      <td>0.61</td>
+      <td>0.54</td>
+      <td>0.64</td>
+      <td>0.27</td>
+      <td>0.34</td>
+      <td>0.40</td>
+      <td>0.70</td>
+      <td>0.64</td>
+      <td>0.51</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.54</td>
+      <td>0.41</td>
+      <td>0.65</td>
+      <td>0.45</td>
+      <td>0.69</td>
+      <td>0.43</td>
+      <td>0.29</td>
+      <td>0.57</td>
+      <td>0.61</td>
+      <td>0.54</td>
+      <td>0.52</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CBA</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std. Dev.</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.22</td>
+      <td>0.62</td>
+      <td>0.65</td>
+      <td>0.61</td>
+      <td>0.57</td>
+      <td>0.03</td>
+      <td>0.39</td>
+      <td>0.30</td>
+      <td>0.25</td>
+      <td>0.59</td>
+      <td>0.42</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.57</td>
+      <td>0.75</td>
+      <td>0.57</td>
+      <td>0.70</td>
+      <td>0.66</td>
+      <td>0.25</td>
+      <td>0.73</td>
+      <td>0.35</td>
+      <td>0.36</td>
+      <td>0.46</td>
+      <td>0.54</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.01</td>
+      <td>0.04</td>
+      <td>0.25</td>
+      <td>0.22</td>
+      <td>0.14</td>
+      <td>0.11</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.24</td>
+      <td>0.18</td>
+      <td>0.12</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.82</td>
+      <td>0.54</td>
+      <td>0.56</td>
+      <td>0.61</td>
+      <td>0.84</td>
+      <td>0.00</td>
+      <td>0.35</td>
+      <td>0.21</td>
+      <td>0.58</td>
+      <td>0.70</td>
+      <td>0.52</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.46</td>
+      <td>0.60</td>
+      <td>0.65</td>
+      <td>0.75</td>
+      <td>0.67</td>
+      <td>0.68</td>
+      <td>0.68</td>
+      <td>0.57</td>
+      <td>0.19</td>
+      <td>0.27</td>
+      <td>0.55</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.59</td>
+      <td>0.34</td>
+      <td>0.62</td>
+      <td>0.56</td>
+      <td>0.59</td>
+      <td>0.34</td>
+      <td>0.30</td>
+      <td>0.60</td>
+      <td>0.46</td>
+      <td>0.51</td>
+      <td>0.49</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.68</td>
+      <td>0.58</td>
+      <td>0.72</td>
+      <td>0.57</td>
+      <td>0.69</td>
+      <td>0.41</td>
+      <td>0.35</td>
+      <td>0.45</td>
+      <td>0.75</td>
+      <td>0.68</td>
+      <td>0.59</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.59</td>
+      <td>0.47</td>
+      <td>0.72</td>
+      <td>0.47</td>
+      <td>0.66</td>
+      <td>0.53</td>
+      <td>0.22</td>
+      <td>0.53</td>
+      <td>0.53</td>
+      <td>0.52</td>
+      <td>0.52</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CBA+</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.18</td>
+      <td>0.74</td>
+      <td>0.61</td>
+      <td>0.49</td>
+      <td>0.66</td>
+      <td>0.68</td>
+      <td>0.50</td>
+      <td>0.65</td>
+      <td>0.45</td>
+      <td>0.59</td>
+      <td>0.56</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.65</td>
+      <td>0.71</td>
+      <td>0.58</td>
+      <td>0.62</td>
+      <td>0.68</td>
+      <td>0.65</td>
+      <td>0.72</td>
+      <td>0.72</td>
+      <td>0.64</td>
+      <td>0.40</td>
+      <td>0.64</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.38</td>
+      <td>0.24</td>
+      <td>0.42</td>
+      <td>0.52</td>
+      <td>0.66</td>
+      <td>0.60</td>
+      <td>0.09</td>
+      <td>0.58</td>
+      <td>0.55</td>
+      <td>0.60</td>
+      <td>0.47</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.69</td>
+      <td>0.55</td>
+      <td>0.53</td>
+      <td>0.61</td>
+      <td>0.78</td>
+      <td>0.42</td>
+      <td>0.40</td>
+      <td>0.55</td>
+      <td>0.61</td>
+      <td>0.61</td>
+      <td>0.57</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.48</td>
+      <td>0.66</td>
+      <td>0.62</td>
+      <td>0.67</td>
+      <td>0.69</td>
+      <td>0.71</td>
+      <td>0.67</td>
+      <td>0.68</td>
+      <td>0.37</td>
+      <td>0.23</td>
+      <td>0.58</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.60</td>
+      <td>0.39</td>
+      <td>0.62</td>
+      <td>0.65</td>
+      <td>0.58</td>
+      <td>0.64</td>
+      <td>0.34</td>
+      <td>0.53</td>
+      <td>0.58</td>
+      <td>0.38</td>
+      <td>0.53</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.76</td>
+      <td>0.82</td>
+      <td>0.75</td>
+      <td>0.52</td>
+      <td>0.66</td>
+      <td>0.56</td>
+      <td>0.35</td>
+      <td>0.49</td>
+      <td>0.79</td>
+      <td>0.68</td>
+      <td>0.64</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.71</td>
+      <td>0.65</td>
+      <td>0.79</td>
+      <td>0.64</td>
+      <td>0.68</td>
+      <td>0.59</td>
+      <td>0.33</td>
+      <td>0.54</td>
+      <td>0.68</td>
+      <td>0.68</td>
+      <td>0.63</td>
+      <td>0.13</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ DICE coefficients computed for each area using a leave-one-subject out approach for the areas in right hemispheres.Using rigid body alignment, CBA, or CBA+, the surface area of each area from the left-out subject is compared to an atlas obtained from the remaining nine subjects. The atlas in this case is constructed by considering the vertices that overlap in at least four out of the nine subjects.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RIGID</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std. Dev.</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.08</td>
+      <td>0.58</td>
+      <td>0.09</td>
+      <td>0.32</td>
+      <td>0.25</td>
+      <td>0.56</td>
+      <td>0.44</td>
+      <td>0.31</td>
+      <td>0.25</td>
+      <td>0.09</td>
+      <td>0.30</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.56</td>
+      <td>0.57</td>
+      <td>0.34</td>
+      <td>0.36</td>
+      <td>0.06</td>
+      <td>0.51</td>
+      <td>0.51</td>
+      <td>0.55</td>
+      <td>0.34</td>
+      <td>0.18</td>
+      <td>0.40</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.25</td>
+      <td>0.24</td>
+      <td>0.18</td>
+      <td>0.00</td>
+      <td>0.13</td>
+      <td>0.14</td>
+      <td>0.00</td>
+      <td>0.10</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.20</td>
+      <td>0.38</td>
+      <td>0.37</td>
+      <td>0.36</td>
+      <td>0.52</td>
+      <td>0.49</td>
+      <td>0.52</td>
+      <td>0.34</td>
+      <td>0.18</td>
+      <td>0.12</td>
+      <td>0.35</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.64</td>
+      <td>0.46</td>
+      <td>0.71</td>
+      <td>0.65</td>
+      <td>0.64</td>
+      <td>0.65</td>
+      <td>0.65</td>
+      <td>0.51</td>
+      <td>0.30</td>
+      <td>0.30</td>
+      <td>0.55</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.29</td>
+      <td>0.16</td>
+      <td>0.30</td>
+      <td>0.35</td>
+      <td>0.48</td>
+      <td>0.53</td>
+      <td>0.42</td>
+      <td>0.29</td>
+      <td>0.42</td>
+      <td>0.48</td>
+      <td>0.37</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.76</td>
+      <td>0.54</td>
+      <td>0.58</td>
+      <td>0.59</td>
+      <td>0.16</td>
+      <td>0.64</td>
+      <td>0.57</td>
+      <td>0.59</td>
+      <td>0.68</td>
+      <td>0.29</td>
+      <td>0.54</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.62</td>
+      <td>0.35</td>
+      <td>0.72</td>
+      <td>0.58</td>
+      <td>0.15</td>
+      <td>0.68</td>
+      <td>0.58</td>
+      <td>0.54</td>
+      <td>0.74</td>
+      <td>0.42</td>
+      <td>0.54</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CBA</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std. Dev.</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.29</td>
+      <td>0.72</td>
+      <td>0.47</td>
+      <td>0.39</td>
+      <td>0.42</td>
+      <td>0.60</td>
+      <td>0.61</td>
+      <td>0.20</td>
+      <td>0.12</td>
+      <td>0.00</td>
+      <td>0.38</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.66</td>
+      <td>0.58</td>
+      <td>0.47</td>
+      <td>0.47</td>
+      <td>0.26</td>
+      <td>0.63</td>
+      <td>0.56</td>
+      <td>0.48</td>
+      <td>0.30</td>
+      <td>0.14</td>
+      <td>0.46</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.16</td>
+      <td>0.15</td>
+      <td>0.12</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.09</td>
+      <td>0.03</td>
+      <td>0.07</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.47</td>
+      <td>0.54</td>
+      <td>0.72</td>
+      <td>0.32</td>
+      <td>0.58</td>
+      <td>0.59</td>
+      <td>0.67</td>
+      <td>0.22</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.41</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.70</td>
+      <td>0.45</td>
+      <td>0.77</td>
+      <td>0.70</td>
+      <td>0.65</td>
+      <td>0.67</td>
+      <td>0.66</td>
+      <td>0.53</td>
+      <td>0.24</td>
+      <td>0.28</td>
+      <td>0.56</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.56</td>
+      <td>0.39</td>
+      <td>0.49</td>
+      <td>0.42</td>
+      <td>0.47</td>
+      <td>0.69</td>
+      <td>0.44</td>
+      <td>0.25</td>
+      <td>0.51</td>
+      <td>0.51</td>
+      <td>0.47</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.84</td>
+      <td>0.76</td>
+      <td>0.68</td>
+      <td>0.63</td>
+      <td>0.09</td>
+      <td>0.67</td>
+      <td>0.63</td>
+      <td>0.76</td>
+      <td>0.79</td>
+      <td>0.33</td>
+      <td>0.62</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.71</td>
+      <td>0.54</td>
+      <td>0.74</td>
+      <td>0.53</td>
+      <td>0.10</td>
+      <td>0.64</td>
+      <td>0.65</td>
+      <td>0.77</td>
+      <td>0.76</td>
+      <td>0.43</td>
+      <td>0.59</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CBA+</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Sub-01</td>
+      <td>Sub-03</td>
+      <td>Sub-04</td>
+      <td>Sub-05</td>
+      <td>Sub-06</td>
+      <td>Sub-07</td>
+      <td>Sub-08</td>
+      <td>Sub-09</td>
+      <td>Sub-10</td>
+      <td>Sub-13</td>
+      <td>Mean</td>
+      <td>Std</td>
+    </tr>
+    <tr>
+      <td>Te 1.0</td>
+      <td>0.54</td>
+      <td>0.68</td>
+      <td>0.60</td>
+      <td>0.32</td>
+      <td>0.62</td>
+      <td>0.66</td>
+      <td>0.70</td>
+      <td>0.64</td>
+      <td>0.55</td>
+      <td>0.51</td>
+      <td>0.58</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 1.1</td>
+      <td>0.77</td>
+      <td>0.71</td>
+      <td>0.60</td>
+      <td>0.40</td>
+      <td>0.66</td>
+      <td>0.68</td>
+      <td>0.57</td>
+      <td>0.71</td>
+      <td>0.66</td>
+      <td>0.64</td>
+      <td>0.64</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Te 1.2</td>
+      <td>0.45</td>
+      <td>0.58</td>
+      <td>0.47</td>
+      <td>0.21</td>
+      <td>0.60</td>
+      <td>0.57</td>
+      <td>0.30</td>
+      <td>0.33</td>
+      <td>0.48</td>
+      <td>0.35</td>
+      <td>0.43</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Te 2.1</td>
+      <td>0.66</td>
+      <td>0.66</td>
+      <td>0.82</td>
+      <td>0.48</td>
+      <td>0.75</td>
+      <td>0.68</td>
+      <td>0.76</td>
+      <td>0.67</td>
+      <td>0.63</td>
+      <td>0.50</td>
+      <td>0.66</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 2.2</td>
+      <td>0.74</td>
+      <td>0.47</td>
+      <td>0.73</td>
+      <td>0.72</td>
+      <td>0.65</td>
+      <td>0.67</td>
+      <td>0.66</td>
+      <td>0.70</td>
+      <td>0.47</td>
+      <td>0.49</td>
+      <td>0.63</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Te 3</td>
+      <td>0.57</td>
+      <td>0.55</td>
+      <td>0.50</td>
+      <td>0.44</td>
+      <td>0.47</td>
+      <td>0.70</td>
+      <td>0.48</td>
+      <td>0.62</td>
+      <td>0.61</td>
+      <td>0.65</td>
+      <td>0.56</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Te 4</td>
+      <td>0.82</td>
+      <td>0.83</td>
+      <td>0.64</td>
+      <td>0.70</td>
+      <td>0.25</td>
+      <td>0.67</td>
+      <td>0.66</td>
+      <td>0.78</td>
+      <td>0.77</td>
+      <td>0.37</td>
+      <td>0.65</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Te 5</td>
+      <td>0.75</td>
+      <td>0.82</td>
+      <td>0.77</td>
+      <td>0.61</td>
+      <td>0.39</td>
+      <td>0.63</td>
+      <td>0.76</td>
+      <td>0.82</td>
+      <td>0.60</td>
+      <td>0.53</td>
+      <td>0.67</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
+
+### Aligning in vivo group measures to the probabilistic postmortem areas
 
 An atlas of probabilistic cytoarchitectonically defined areas has been previously used to analyze in vivo functional and anatomical data (see e.g. Dick et al., 2012). Here, we demonstrate the use of CBA+ and the improved version of the cytoarchitectonic atlas to this end. In particular, we aligned in vivo data collected at 7 Tesla to the CBA+ aligned postmortem cytoarchitectonic atlas. We considered only the areas in the superior temporal cortex (Te1.0, Te1.1, Te1.2, Te2.1, Te2.2 and Te3) as they were consistently included in the imaged field of view in the in vivo dataset. First, we used CBA+ to produce an average morphology for the in vivo data. This alignment allowed us to derive group level maps based on the available anatomical and functional data. In particular, anatomical MRI data (0.7 mm isotropic) were used to derive intra cortical contrast related to myelin from the division of T1w and T2*w data. In addition, functional MRI data (1.1 mm isotropic) collected by presenting natural sounds and analyzed with an fMRI encoding approach (Moerel et al., 2012), were used to derive tonotopic maps (see Figure 10 - Supplement Figures to Figure 10 report all the individual maps). Second, using CBA+, we aligned the average morphology of the in vivo data to the cytoarchitectonic atlas. This allowed us to project cytoarchitectonic parcels on the in vivo maps and evaluate their relationship.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-v2.jpg)
+
+**Figure 10.:** The cytoarchitectonic areas are delineated with black lines. The myelination index is computed from the division of T1w and T2*w data. Tonotopy reflects the voxel-wise frequency preference estimated with fMRI encoding from the response to natural sound stimuli. All measures are sampled on the middle gray matter surfaces.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Relation between the in vivo MRI measures of the left hemisphere and the multi-modal MRI-based parcellation. The multi-modal MRI-based parcellation from Glasser et al., 2016 is delineated with black lines. The myelination index is computed from the division of T1w and T2*w data. Tonotopy reflects the voxel-wise frequency preference estimated with fMRI encoding from the response to natural sound stimuli. All measures are sampled on the middle gray matter surfaces.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** Subject 01, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp3-v2.jpg)
+
+**Figure 10—figure supplement 3.:** Subject 02, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 4.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp4-v2.jpg)
+
+**Figure 10—figure supplement 4.:** Subject 03, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 5.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp5-v2.jpg)
+
+**Figure 10—figure supplement 5.:** Subject 05, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 6.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp6-v2.jpg)
+
+**Figure 10—figure supplement 6.:** Subject 06, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 7.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp7-v2.jpg)
+
+**Figure 10—figure supplement 7.:** Subject 07, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 8.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp8-v2.jpg)
+
+**Figure 10—figure supplement 8.:** Subject 08, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 9.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp9-v2.jpg)
+
+**Figure 10—figure supplement 9.:** Subject 09, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 10.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp10-v2.jpg)
+
+**Figure 10—figure supplement 10.:** Subject 10, relation between in vivo MRI measures and the cytoarchitectonic atlas.
+
+![Figure 10—figure supplement 11.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig10-figsupp11-v2.jpg)
+
+**Figure 10—figure supplement 11.:** Subject 11, relation between in vivo MRI measures and the cytoarchitectonic atlas.
 
 Intra cortical contrast related to myelin highlights the (medial) Heschl’s Gyrus as the most myelinated region in the temporal cortex (see Figure 10). Across cytoarchitectonic areas, Te1.0 shows the highest myelination contrast. Myelin related contrast is also high in the most medial portion of Heschl’s Gyrus (Te1.1) and gradually decreases when moving away from Heschl’s Gyrus.
 
@@ -95,7 +1061,7 @@ The average tonotopic pattern highlights the Heschl’s Gyrus as, for the most p
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig11-v2.jpg)
 
-**Figure 11.:** Morosan et al., 2001; Morosan et al., 2005 and multi-modal MRI-based labels (Glasser et al., 2016).Areas on Heschl’s Gyrus differ between the two atlases.
+**Figure 11.:** Areas on Heschl’s Gyrus differ between the two atlases.
 
 ## Discussion
 
@@ -119,35 +1085,75 @@ In conclusion, here we show that an alignment procedure tailored to the superior
 
 ## Materials and methods
 
-## Postmortem data
+### Postmortem data
 
 We used the cytoarchitectonically labeled temporal cortical areas of the 10 brains used in Morosan et al., 2001; Zachlod et al., 2020. The labeled areas were Te1.0, Te1.1, Te1.2, Te2.1, Te2.2 (Morosan et al., 2001), Te3 (Morosan et al., 2005), STS1, STS2 (Zachlod et al., 2020). All brains were linearly registered to Colin27 space (Evans et al., 2012) at 1 mm isotropic resolution, which was the starting point for all further analyses.
 
-## Cortical segmentation
+#### Cortical segmentation
 
 In order to perform CBA, the white matter - gray matter boundary was segmented in all 10 postmortem brains. The anatomical image quality was insufficient to employ fully automatic segmentation methods. To mitigate this issue, we employed a spatial filter that was applied to an upsampled version of the data (to 0.5 mm isotropic). This spatial filter was tailored to exploit the structure tensor field derived from the images. Our implementation of this procedure -that mostly follows Weickert, 1998; Mirebeau et al., 2015- included the following steps:
 
-1. Smoothing the image for spatial regularization(1)v^=Kσ*v.where * indicates convolution and K is a Gaussian kernel with standard deviation defined by σ. Here we have opted for σ=1.
+1. Smoothing the image for spatial regularization
 
-2. Computing the gradients of the image to obtain a vector field (we have used central differences)(2)gradient⁢(v^)=v→.
+$$
+v^=K_{\sigma}*v.
+$$
 
-3. Generating a structure tensor field by using the self outer product:(3)S=v→⋅v→T.
+where * indicates convolution and K is a Gaussian kernel with standard deviation defined by σ. Here we have opted for $\sigma=1$.
 
-4. Decomposing (using eigen decomposition) the structure tensor field:(4)eig(S)→e→1,e→2,e→3(eigenvectors)andλ1,λ2,λ3(eigenvalues).
+2. Computing the gradients of the image to obtain a vector field (we have used central differences)
 
-Note that the eigen vectors are sorted according to eigen values λ1>λ2>λ3.
+$$
+gradient⁢(v^)=v→.
+$$
 
-5. Using eigen values to derive a vector field:(5)intensity=λ_1+λ_2+λ_3,range=(λ_1−λ_3)/intensity,W=|(|range−0.5|+0.5)−intensity|.
+3. Generating a structure tensor field by using the self outer product:
 
-Here we wanted to enhance prolate ellipsoid tensors (also called surfels, surface elements, λ1>λ2≈λ3) more than isotropic structure tensors (λ1≈λ2≈λ3) and oblate ellipsoid tensor (also called curvels, curve elements like tubes, λ1≈λ2>λ3).
+$$
+S=v→⋅v→^{T}.
+$$
 
-6. Generating a diffusion tensor field from weighted eigen vectors:(6)(w⋅e)=D.
+4. Decomposing (using eigen decomposition) the structure tensor field:
 
-7. Smoothing the diffusion tensor field.(7)D^=Kρ*Dwhere * indicates convolution and K is a 3D Gaussian kernel with σ standard deviation. Here, we have used ρ=1. A higher value would enhance features at a larger spatial scale.
+$$
+eig(S)→e→_{1},e→_{2},e→_{3}(eigenvectors)and\lambda_{1},\lambda_{2},\lambda_{3}(eigenvalues).
+$$
 
-8. Computing a vector field (the flux field) using the diffusion tensor field and eigen vectors (Di is a tensor 3×3; v→i is a vector 1×3):(8)f→=D^⋅v→.
+Note that the eigen vectors are sorted according to eigen values $\lambda_{1}>\lambda_{2}>\lambda_{3}$.
 
-9. Updating the image (f→i is a vector; vi is a scalar):(9)vnew=v+divergence⁢(f→).
+5. Using eigen values to derive a vector field:
+
+$$
+intensity=\lambda_1+\lambda_2+\lambda_3,range=(\lambda_1−\lambda_3)/intensity,W=|(|range−0.5|+0.5)−intensity|.
+$$
+
+Here we wanted to enhance prolate ellipsoid tensors (also called surfels, surface elements, $\lambda_{1}>\lambda_{2}≈\lambda_{3}$) more than isotropic structure tensors ($\lambda_{1}≈\lambda_{2}≈\lambda_{3}$) and oblate ellipsoid tensor (also called curvels, curve elements like tubes, $\lambda_{1}≈\lambda_{2}>\lambda_{3}$).
+
+6. Generating a diffusion tensor field from weighted eigen vectors:
+
+$$
+(w⋅e)=D.
+$$
+
+7. Smoothing the diffusion tensor field.
+
+$$
+D^=K_{ρ}*D
+$$
+
+where * indicates convolution and K is a 3D Gaussian kernel with σ standard deviation. Here, we have used $ρ=1$. A higher value would enhance features at a larger spatial scale.
+
+8. Computing a vector field (the flux field) using the diffusion tensor field and eigen vectors ($D_{i}$ is a tensor $3\times3$; $v→_{i}$ is a vector $1\times3$):
+
+$$
+f→=D^⋅v→.
+$$
+
+9. Updating the image ($f→_{i}$ is a vector; $v_{i}$ is a scalar):
+
+$$
+v_{new}=v+divergence⁢(f→).
+$$
 
 10. Repeating all steps until the desired number of iterations is reached (each iteration diffuses the image more and the diffusion is non-linear and anisotropic).
 
@@ -157,7 +1163,7 @@ For segmenting the postmortem data, here we iterated this process 40 times. This
 
 **Figure 12.:** Blue arrows point to locations where local contrast is sharpened.
 
-## Cortical surface reconstruction
+#### Cortical surface reconstruction
 
 After filtering the images, we generated an initial white matter segmentation using intensity-gradient magnitude joint 2D histograms (Gulban et al., 2018b). This initial segmentation was corrected in two stages. First, manual corrections were performed by O.F.G using both enhanced and un-enhanced anatomical images (around 8 hr of manual work per brain). Second, after splitting left and right hemispheres, we generated surfaces as triangular meshes using the marching cubes method (as implemented in BrainVoyager 21.4, Goebel, 2012) and decimating the total amount of vertices to 200,000 (with approximately equal edge lengths). The surfaces were visually checked for bridges and holes and problematic areas were corrected until the Euler characteristic of each surface became 2 (i.e. topologically identical to a sphere). Figure 13 shows the morphological variation across the postmortem brains on the superior temporal cortex.
 
@@ -165,23 +1171,23 @@ After filtering the images, we generated an initial white matter segmentation us
 
 **Figure 13.:** Anterior Heschl’s Gyrus is indicated as the gyrus between white dots. The bottom right side shows the rare occurrence of a split superior temporal gyrus (Heschl, 1878) in contrast to a typical superior temporal gyrus from the side view.
 
-## Cortical surface alignment
+#### Cortical surface alignment
 
 The prepared surfaces were inflated to an approximate sphere and mapped onto a high-density spherical mesh (163842 vertices). Prior to CBA, the meshes were aligned using a spherical rigid body method to minimize curvature differences across subjects (see Figure 1 left column). CBA was performed in two different ways. First, we non linearly registered the surfaces of each hemisphere across brains using standard cortex based alignment (i.e. minimizing curvature differences across individuals in a coarse to fine manner [Frost and Goebel, 2012]). Second, to tailor the alignment to the superior temporal cortices (left and right separately), we delineated four macro-anatomical landmarks: 1) the anterior Heschl’s Gyrus; 2) the superior temporal gyrus; 3) the superior temporal sulcus and 3) the middle temporal gyrus (see Figure 13 and Figure 14). Each of the landmarks was defined on an inflated representation of the hemisphere by identifying major landmark points and drawing a line segment between them that took into account the local curvature (i.e. minimizing the geodesic distance between the landmarks identifying each line). In particular, we defined the anterior Heschl’s Gyrus by drawing a line segment between the most medial tip of the gyrus to the most lateral point where it merges with the superior temporal gyrus. We have drawn superior temporal gyrus, superior temporal sulcus, and medial temporal gyrus as three (mostly) parallel lines along posterior to anterior direction. A tutorial describing how these anatomical priors are drawn together with several related resources is available at: https://github.com/ofgulban/cortical-auditory-atlas. These landmarks were used as additional information to determine the cost that is minimized during curvature based non-linear alignment in our tailored approach (i.e. CBA+). As for the standard surface alignment, CBA+ was performed across four spatial scales (from very smooth to slightly smooth curvature maps). Note that the procedure smooths both the global curvature map and the local landmark definitions (i.e. creates smooth maps from the landmarks). Apart from improving overall alignment (Frost and Goebel, 2012; Tardif et al., 2015), this procedure improves the robustness of the approach to the variability in landmark definition across users. Both CBA and CBA+ were performed using dynamic group averaging. The surface alignment yielded a mapping between each individual to a group average brain, each consisting of the same number of vertices.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/56963/elife-56963-fig14-v2.jpg)
 
-**Figure 14.:** Morosan et al., 2001; Morosan et al., 2005; Zachlod et al., 2020 sampled on the inflated cortical surfaces for each individual brain in the postmortem dataset.Anterior Heschl’s Gyrus, superior temporal gyrus (STG), superior temporal sulcus (STS), and middle temporal gyrus (MTG) are indicated as line drawings.
+**Figure 14.:** Anterior Heschl’s Gyrus, superior temporal gyrus (STG), superior temporal sulcus (STS), and middle temporal gyrus (MTG) are indicated as line drawings.
 
 To evaluate the effect of alignment, we computed the overlap across individuals for each of the cytoarchitectonic areas. We compared our tailored alignment procedure to the original volumetric Colin27 alignment (Evans et al., 2012), spherical rigid body alignment, and non-linear standard cortex based alignment (see Figure 14).
 
-## In vivo data
+### In vivo data
 
-## MRI acquisition
+#### MRI acquisition
 
 We have used the dataset (This dataset is available at: https://openneuro.org/datasets/ds001942/versions/1.2.0) described in Sitek et al., 2019. This dataset includes: (I) T1 weighted (T1w), proton density weighted (PDw) and T2* weighted (T2*w) anatomical images collected (using a modified MPRAGE sequence) at a resolution of 0.7 mm isotropic (whole brain); (II) functional images at collected at a resolution of 1.1 mm isotropic (partial coverage, coronal-oblique slab, multi-band factor = 2; GRAPPA = 3) in response to the presentation of natural sounds (168 natural sounds; 24 runs divided in four cross validation splits of 18 training and 6 testing runs each (126 training sounds and 42 testing sounds per split).
 
-## Cortical segmentation and alignment
+#### Cortical segmentation and alignment
 
 Segmentations of both the white matter - gray matter interface and outer gray matter (also called gray matter - cerebrospinal fluid interface) were done following BrainVoyager 2.8.4’s advanced segmentation pipeline (Kemper et al., 2018) and using the automatic bridge removal tool (Kriegeskorte and Goebel, 2001). Manual corrections were done in ITK-SNAP (Yushkevich et al., 2006). All follow-up analyses were performed by sampling (anatomical and functional) data onto the middle gray matter surfaces (defined using the equidistant methods [Waehnert et al., 2014; Kemper et al., 2018] by the combination of inner and outer gray matter surfaces). This allowed us to minimize partial voluming with white matter, cerebrospinal fluid or superficial vessels. These surfaces can be seen for each individual in Figure 15.
 
@@ -191,11 +1197,11 @@ Segmentations of both the white matter - gray matter interface and outer gray ma
 
 The middle gray matter surfaces of all individuals were aligned using the procedure tailored to the superior temporal plane described above (CBA+). The resulting group average mesh from the in vivo dataset was aligned to the average postmortem mesh following the same procedure. This allowed us to overlay probabilistic cytoarchitectonic areas onto the in vivo group average cortical surfaces and sample functional and anatomical data within each area.
 
-## Myelination maps
+#### Myelination maps
 
 The processing steps followed to create myelination maps were similar to De Martino et al., 2015. T1w images were divided by T2*w (T1w/T2*w) and the resulting division image was masked by the cortical gray matter segmentation. A histogram-based adaptive percentile threshold (based on iterative deceleration of percentile differences) on the T1w/T2*w image was used to discard voxels with extreme intensities corresponding to vessels and regions in which the T2*w data were of insufficient quality. Maps were rescaled to range between 0 and 100. This step was necessary to match intensity ranges across subjects since we did not have quantitative measures. Values in the middle gray matter of the rescaled maps were sampled onto the surface mesh.
 
-## Tonotopy maps
+#### Tonotopy maps
 
 The functional data were preprocessed using BrainvoyagerQX v2.8.4 (Goebel, 2012). Slice-scan-time correction, motion correction, temporal high-pass filtering (GLM-Fourier, six sines/cosines) and temporal smoothing (Gaussian, kernel width of two acquisition volumes [i.e. 5.2 s]) were applied. Default options in BrainvoyagerQX v2.8.4 were used aside from the explicitly stated values. The functional images were then distortion corrected using the opposite phase encoding direction images using FSL-TOPUP (Andersson et al., 2003) as implemented in Smith et al., 2004. The conversion between Brainvoyager file types to NIfTI, which was required to perform distortion correction, was done using Neuroelf version 1.1 (release candidate 2) (http://neuroelf.net/ in Matlab version 2016a).
 

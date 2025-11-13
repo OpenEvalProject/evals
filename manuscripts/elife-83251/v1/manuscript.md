@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/043j0f473 German Center for Neurodegenerative Diseases (DZNE Berlin) Berlin Germany
+1. German Center for Neurodegenerative Diseases (DZNE Berlin) Berlin Germany ([ROR:043j0f473](https://ror.org/043j0f473))
 
 † Corresponding author
 

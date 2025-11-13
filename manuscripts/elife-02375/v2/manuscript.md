@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.02375.001 Superelongation complexes (SECs) are essential for transcription elongation of many human genes, including the integrated HIV-1 genome. At the HIV-1 promoter, the viral Tat protein binds simultaneously to the nascent TAR RNA and the CycT1 subunit of the P-TEFb kinase in a SEC. To understand the preferential recruitment of SECs by Tat and TAR, we determined the crystal structure of a quaternary complex containing Tat, P-TEFb, and the SEC scaffold, AFF4. Tat and AFF4 fold on the surface of CycT1 and interact directly. Interface mutations in the AFF4 homolog AFF1 reduced Tat–AFF1 affinity in vivo and Tat-dependent transcription from the HIV promoter. AFF4 binding in the presence of Tat partially orders the CycT1 Tat–TAR recognition motif and increases the affinity of Tat-P-TEFb for TAR 30-fold. These studies indicate that AFF4 acts as a two-step filter to increase the selectivity of Tat and TAR for SECs over P-TEFb alone. DOI: http://dx.doi.org/10.7554/eLife.02375.001
+Superelongation complexes (SECs) are essential for transcription elongation of many human genes, including the integrated HIV-1 genome. At the HIV-1 promoter, the viral Tat protein binds simultaneously to the nascent TAR RNA and the CycT1 subunit of the P-TEFb kinase in a SEC. To understand the preferential recruitment of SECs by Tat and TAR, we determined the crystal structure of a quaternary complex containing Tat, P-TEFb, and the SEC scaffold, AFF4. Tat and AFF4 fold on the surface of CycT1 and interact directly. Interface mutations in the AFF4 homolog AFF1 reduced Tat–AFF1 affinity in vivo and Tat-dependent transcription from the HIV promoter. AFF4 binding in the presence of Tat partially orders the CycT1 Tat–TAR recognition motif and increases the affinity of Tat-P-TEFb for TAR 30-fold. These studies indicate that AFF4 acts as a two-step filter to increase the selectivity of Tat and TAR for SECs over P-TEFb alone.
 
 ## Introduction
 
@@ -32,23 +32,158 @@ To better understand the structural basis for the critical role of AFF1/4 in HIV
 
 ## Results
 
-The 2–73 fragment of the SEC scaffold protein, AFF4, binds with high affinity to P-TEFb and increases P-TEFb affinity for Tat 11-fold (
+The 2–73 fragment of the SEC scaffold protein, AFF4, binds with high affinity to P-TEFb and increases P-TEFb affinity for Tat 11-fold (Chou et al., 2013; Schulze-Gahmen et al., 2013). To define the structural basis for the increased affinity of the AFF4-P-TEFb complex for Tat, we determined the crystal structure of the quaternary complex of P-TEFb with AFF42–73 and Tat1–57. The Tat 1–57 fragment is a minimal construct with high transcriptional activation (Garcia et al., 1988). The structure was determined using X-ray data to 3.0-Å resolution (R/Rfree = 0.206/0.232; Figure 1A, Table 1) with three complexes in the asymmetric unit (a.u.).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig1-v2.jpg)
 
-**Figure 1.:** (A) Tat-AFF4-P-TEFb ribbon diagram (left) showing interactions between Tat (red) and AFF4 (blue) bound to the CycT1 (yellow) subunit of P-TEFb. AFF4 helix 0 is bound to the CDK9 (cyan) subunit, and adenosine (spheres) is modeled in the CDK9 ATP binding pocket. The close-up view (right) obtained by horizontal and vertical 45° rotations of the left hand figure shows similar Tat–AFF4 (red/dark red-blue/light blue) interactions in independent complexes. CycT1 (yellow/green) TRM residues adopt different structures in different crystal environments. The upper of the two Zn2+ ions (gray spheres) anchors the CycT1 TRM. (B) Surface representation of the binding pocket for Tat K28 in the Tat–AFF4 (red-blue) interface. The CycT1 TRM (yellow ribbon) with the fewest crystal contacts is shown. The TRM interacts with a hybrid interface including AFF4 and Tat.DOI: http://dx.doi.org/10.7554/eLife.02375.003
+**Figure 1.:** (A) Tat-AFF4-P-TEFb ribbon diagram (left) showing interactions between Tat (red) and AFF4 (blue) bound to the CycT1 (yellow) subunit of P-TEFb. AFF4 helix 0 is bound to the CDK9 (cyan) subunit, and adenosine (spheres) is modeled in the CDK9 ATP binding pocket. The close-up view (right) obtained by horizontal and vertical 45° rotations of the left hand figure shows similar Tat–AFF4 (red/dark red-blue/light blue) interactions in independent complexes. CycT1 (yellow/green) TRM residues adopt different structures in different crystal environments. The upper of the two Zn2+ ions (gray spheres) anchors the CycT1 TRM. (B) Surface representation of the binding pocket for Tat K28 in the Tat–AFF4 (red-blue) interface. The CycT1 TRM (yellow ribbon) with the fewest crystal contacts is shown. The TRM interacts with a hybrid interface including AFF4 and Tat.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) In the two dyad-related complexes, CDK9 (gray sticks) molecules from adjacent complexes make contacts with the C-terminal end of the CycT1 (yellow) TRM, as well as AFF4 (blue). (B) In the third complex, the neighboring CDK9 (gray sticks) interacts with the N-terminus of the CycT1 (green) TRM. The C-terminal residues of the TRM are exposed to solvent.DOI: http://dx.doi.org/10.7554/eLife.02375.004
+**Figure 1—figure supplement 1.:** (A) In the two dyad-related complexes, CDK9 (gray sticks) molecules from adjacent complexes make contacts with the C-terminal end of the CycT1 (yellow) TRM, as well as AFF4 (blue). (B) In the third complex, the neighboring CDK9 (gray sticks) interacts with the N-terminus of the CycT1 (green) TRM. The C-terminal residues of the TRM are exposed to solvent.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** The methionine side chain binds in a pocket formed by Tat (red) and CycT1 (yellow).DOI: http://dx.doi.org/10.7554/eLife.02375.005
+**Figure 1—figure supplement 2.:** The methionine side chain binds in a pocket formed by Tat (red) and CycT1 (yellow).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Disordered regions (gray rectangles), α helices (blue springs) and the short β strand (black arrow) are indicated. Helix H0 in AFF4 is only observed in two out of three molecules in the a.u.DOI: http://dx.doi.org/10.7554/eLife.02375.006
+**Figure 1—figure supplement 3.:** Disordered regions (gray rectangles), α helices (blue springs) and the short β strand (black arrow) are indicated. Helix H0 in AFF4 is only observed in two out of three molecules in the a.u.
+
+**Table 1.**
+ X-ray data collection and refinement statistics for P-TEFb-Tat-AFF4
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P6522</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions: a, b, c</td>
+      <td>184.91, 184.91, 360.40</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>50.0–3.0 (3.05–3.0)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections*</td>
+      <td>73,424 (3589)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)*</td>
+      <td>12.8 (0.9)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)*</td>
+      <td>22.2 (&gt;100)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)*, I/sigI≥3</td>
+      <td>8.4 (18.9)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)†</td>
+      <td>7.6 (87.9)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 high resolution shell</td>
+      <td>0.553</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>24.2 (23.8)</td>
+    </tr>
+    <tr>
+      <td>Temperature (K)</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Mosaicity (°)</td>
+      <td>0.23–0.39</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>49.0–3.0</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>73,297</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree*</td>
+      <td>0.206/0.232 (0.316/0.335)</td>
+    </tr>
+    <tr>
+      <td>No. atoms/B-factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CDK9, molecule 1, 2, 3</td>
+      <td>2560 (75.4), 2521 (90.9), 2572 (88.5)</td>
+    </tr>
+    <tr>
+      <td>Cyclin T1, molecule 1, 2, 3</td>
+      <td>2061 (79.4), 2053 (85.8), 2058 (97.8)</td>
+    </tr>
+    <tr>
+      <td>AFF434-66, molecule 1, 2, 3</td>
+      <td>438 (85.0), 268 (115.7), 422 (92.3)</td>
+    </tr>
+    <tr>
+      <td>Tat</td>
+      <td>390 (79.1), 384 (78.0), 390 (102.7)</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>37 (58.7)</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.0035</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.811</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot‡</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.0</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.36</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.66</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest resolution shell.†Rp.i.m. is the precision-indicating merging R factor, which is related to the traditional Rsym but provides a better estimate of data quality (Weiss and Hilgenfeld, 1997; Weiss et al., 1998).‡Values from MOLPROBITY (Chen et al., 2009)._
 
 Two complexes related by a non-crystallographic two-fold rotation axis are nearly identical, while the third complex shows small differences due to different crystal contacts (Figure 1—figure supplement 1). For example, only the two dyad-related complexes show electron density for AFF4 helix 0 (residues 4–21, Figure 1A and Figure 1—figure supplement 3), which packs against αE and αI of the CDK9 subunit in the same complex and AFF4 35–39 from the two-fold-related complex in the a.u. Almost identical interactions between AFF4 helix 0 and CDK9 were observed in one out of three assemblies in the AFF4-P-TEFb structure (Schulze-Gahmen et al., 2013), in addition to crystal contacts between helix 0 and a crystallographically related CDK9 subunit. This recurrence of the same helical structure in different crystal environments suggests that AFF4 residues 4–21 prefer a helical conformation. The function of helix 0, however, remains in doubt because mutational effects on transcription do not match the AFF4 contacts in the interface, and stabilization of helix 0 depends on crystal packing (Schulze-Gahmen et al., 2013). We will focus on features shared among all complexes and point out differences when they are relevant for the discussion.
 
@@ -56,39 +191,39 @@ Tat binds in an extended conformation to AFF4-P-TEFb, with minor changes from th
 
 AFF4 residues 34- to 69-fold on the CycT1 surface, making multiple direct contacts with Tat K28, F32, and E2 (Figure 1) and burying Tat M1. The average size of the Tat–AFF4 interface is 305 Å2 on Tat and 330 Å2 on AFF4. The interactions between AFF4 and Tat are mostly hydrophobic and van der Waals contacts, but also include hydrogen bonds on each end of the interaction site (Figure 1A). The nexus of the Tat–AFF4 interface, Tat K28, is partially buried in a hydrophobic pocket formed by the side chains of AFF4 M62, F65, and Tat F32, and the main chain of AFF4 helix 2, residues 59–63. The Tat K28 side-chain amino group forms a hydrogen bond with the AFF4 E61 main-chain carbonyl at the pocket edge facing the solvent (Figure 1A). In addition, the Tat E2 side chain is positioned to form a hydrogen bond with the AFF4 D68 main-chain amide. The CycT1 TRM forms another side of the K28 pocket (Figure 1B).
 
-Although AFF4 contains similar secondary structural elements observed in the absence of Tat (
+Although AFF4 contains similar secondary structural elements observed in the absence of Tat (Schulze-Gahmen et al., 2013), coupled shifts occur to avoid collisions with Tat (Figure 2). Backbone RMS deviations in AFF4 residues 34–66 excluding the variable loop 43–45 range from 1.6 Å to 2.2 Å between AFF4-P-TEFb complexes with and without Tat. In contrast, RMS deviations for the same AFF4 residues of different complexes in the a. u. range from 0.32 Å to 0.58 Å. While AFF4 residues 34–40 coincide in the presence and absence of Tat, AFF4 helix 1 (residues 48–55) is shifted along the helix axis. This change positions AFF4 M55 to make contacts with L252 in the CycT1 TRM region (Figure 2A). AFF4 helix 2 (residues 58–66) is shifted away from the bound Tat and closer to the CycT1 surface formed by helices H2′, H3′ and the H3′–H4′ loop. This movement leads to the formation of additional hydrogen bonds between AFF4 and CycT1 in the Tat-AFF4-P-TEFb complex compared to the AFF4-P-TEFb complex. As a consequence of the shifts in the AFF4 backbone, unfavorable close contacts between AFF4 and Tat are avoided (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig2-v2.jpg)
 
-**Figure 2.:** (A) Superposition of the AFF4-P-TEFb complex (PDB ID 4IMY, pastel colors) and Tat-AFF4-P-TEFb (red, blue, yellow) on the CycT1 subunit shows coupled shifts of the two AFF4 helices. AFF4 helices 1 and 2 shift away from Tat, thereby avoiding close contacts between Tat and helix 2. (B) Superposition of AFF4-P-TEFb (PDB ID 4IMY, AFF4 light blue), Tat-P-TEFb (PDB ID 3MI9, Tat pastel-red), and Tat-AFF4-P-TEFb (Tat red, AFF4 blue, CycT1 green) on the CycT1 subunit. CycT1 of AFF4-P-TEFb and Tat-P-TEFb is omitted to emphasize the changes in AFF4. The AFF4 backbone shifts 1–2 Å in the presence of Tat, while the Tat conformation displays only small changes associated with AFF4 binding. Side chains undergo only small conformational changes.DOI: http://dx.doi.org/10.7554/eLife.02375.008
+**Figure 2.:** (A) Superposition of the AFF4-P-TEFb complex (PDB ID 4IMY, pastel colors) and Tat-AFF4-P-TEFb (red, blue, yellow) on the CycT1 subunit shows coupled shifts of the two AFF4 helices. AFF4 helices 1 and 2 shift away from Tat, thereby avoiding close contacts between Tat and helix 2. (B) Superposition of AFF4-P-TEFb (PDB ID 4IMY, AFF4 light blue), Tat-P-TEFb (PDB ID 3MI9, Tat pastel-red), and Tat-AFF4-P-TEFb (Tat red, AFF4 blue, CycT1 green) on the CycT1 subunit. CycT1 of AFF4-P-TEFb and Tat-P-TEFb is omitted to emphasize the changes in AFF4. The AFF4 backbone shifts 1–2 Å in the presence of Tat, while the Tat conformation displays only small changes associated with AFF4 binding. Side chains undergo only small conformational changes.
 
-In contrast to the Tat-P-TEFb complex, in which the CycT1 TRM is disordered between residues 253 and 260, this functionally important segment is ordered in two conformations in the Tat-AFF4-P-TEFb complex (
+In contrast to the Tat-P-TEFb complex, in which the CycT1 TRM is disordered between residues 253 and 260, this functionally important segment is ordered in two conformations in the Tat-AFF4-P-TEFb complex (Figures 1, 3). In all three complexes in the a.u., P249 and N250 at the beginning of the TRM make multiple contacts with the main chain atoms at the C-terminal end of Tat helix 35–44. In addition, CycT1 L252 forms hydrophobic interactions with AFF4 M55 in all three complexes. The TRM structures start to diverge at this point. CycT1 residues 253–259 loop over Tat helix 28–33 in two conformations that converge at CycT1 C261 (Figure 3A, Figure 3—figure supplement 1). In the dyad-related complexes, the CycT1 TRM makes crystal contacts that include W258, R259, and A260, but in the third complex, the crystal contacts are restricted to the side chain of R251. In all complexes, W256 makes buried contacts with AFF4. Basic residues such as K253, R254, R259, and the polar N257, on the other hand, show continuous main-chain electron density but the exposed side chains are disordered. C261 binds the shared Tat Zn2+ ion in all three complexes. The presence of multiple conformations and relatively weak electron density for the TRM loop residues 253–260 indicates that this region is conformationally restrained but still quite flexible after Tat and AFF4 binding. These results suggest that in the presence of Tat, AFF4 partially orders the TRM (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig3-v2.jpg)
 
-**Figure 3.:** (A) Ribbon diagram of two distinct TRM conformations observed in the Tat-AFF4-P-TEFb crystal structure (red, blue, yellow/dark red, light blue, green). Zn2+ ions are shown as gray spheres. (B) Surface representation of Tat-AFF4-CycT1 interactions. The three subunits intertwine, thereby stabilizing the TRM conformation in the hybrid interface.DOI: http://dx.doi.org/10.7554/eLife.02375.009
+**Figure 3.:** (A) Ribbon diagram of two distinct TRM conformations observed in the Tat-AFF4-P-TEFb crystal structure (red, blue, yellow/dark red, light blue, green). Zn2+ ions are shown as gray spheres. (B) Surface representation of Tat-AFF4-CycT1 interactions. The three subunits intertwine, thereby stabilizing the TRM conformation in the hybrid interface.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** 2Fo-Fc map (1.0 σ) for Tat (red) and CycT1 TRM (green) is shown for a dyad-related complex. Residues of the CycT1 TRM were omitted from the model used for molecular replacement and subsequently built into the omit electron density.DOI: http://dx.doi.org/10.7554/eLife.02375.010
+**Figure 3—figure supplement 1.:** 2Fo-Fc map (1.0 σ) for Tat (red) and CycT1 TRM (green) is shown for a dyad-related complex. Residues of the CycT1 TRM were omitted from the model used for molecular replacement and subsequently built into the omit electron density.
 
-The structure of the Tat-AFF4-P-TEFb complex points to AFF4 M62 and F65 as the major Tat-interacting residues. To test the contribution of the Tat–AFF4 interface to Tat-dependent transcription, we measured the effect of alanine substitutions on SEC recruitment and Tat-dependent HIV-1 transcription. These assays were performed with the AFF1 scaffold protein, because Tat has a stronger effect on HIV transcription with AFF1 than with AFF4 (
+The structure of the Tat-AFF4-P-TEFb complex points to AFF4 M62 and F65 as the major Tat-interacting residues. To test the contribution of the Tat–AFF4 interface to Tat-dependent transcription, we measured the effect of alanine substitutions on SEC recruitment and Tat-dependent HIV-1 transcription. These assays were performed with the AFF1 scaffold protein, because Tat has a stronger effect on HIV transcription with AFF1 than with AFF4 (He et al., 2010; Lu et al., 2014). AFF1 mutants V67A and F70A (corresponding to M62A and F65A in AFF4) were ectopically expressed in HeLa cells in the absence or presence of Tat(C22G), a mutation in the Zn2+ ion coordination site required for WT Tat activity (Garber et al., 1998). The Tat(C22G) mutation increases the dependence on AFF1 for efficient transactivation (Lu et al., 2014). Immunoprecipitation of tagged WT AFF1, as well as the V67A, F70A, and V67A/F70A variants, efficiently co-precipitated CDK9 and CycT1 (Figure 4A). In contrast, Tat(C22G) failed to co-precipitate P-TEFb (Figure 4B, lanes 1 & 2). This lack of binding was rescued by co-expressing WT AFF1 but not the three AFF1 alanine variants, V67A, F70A, and V67A/F70A (Figure 4B). These results suggest that AFF1 V67 and F70 are important for interactions between the scaffold and Tat. In turn, this interface stabilizes the AFF1-CycT1 association, as suggested by the Tat-AFF4-P-TEFb structure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig4-v2.jpg)
 
-**Figure 4.:** (A) Nuclear extracts (NE) were prepared from HeLa cells expressing the truncated Flag-tagged AFF1 protein (residues 1–308). Anti-Flag immunoprecipitates (IP) from the NE were examined by Western blotting (WB) for the indicated proteins. (B) Nuclear extracts were prepared from HeLa cells co-expressing Flag-tagged Tat(C22G) and haemagglutinin (HA)-tagged truncated AFF1. Anti-Flag IPs were analyzed as in A. (C) HeLa-based NH1 cells containing the intergrated HIV-1 LTR-luciferase reporter gene were transfected with the Tat(C22G)- and/or AFF1-expressing construct as labeled. Luciferase activities were measured in cell extracts, with the level of activity detected in cells transfected with an empty vector (−) set to 1. The error bars represent mean ± SD from three independent measurements.DOI: http://dx.doi.org/10.7554/eLife.02375.011
+**Figure 4.:** (A) Nuclear extracts (NE) were prepared from HeLa cells expressing the truncated Flag-tagged AFF1 protein (residues 1–308). Anti-Flag immunoprecipitates (IP) from the NE were examined by Western blotting (WB) for the indicated proteins. (B) Nuclear extracts were prepared from HeLa cells co-expressing Flag-tagged Tat(C22G) and haemagglutinin (HA)-tagged truncated AFF1. Anti-Flag IPs were analyzed as in A. (C) HeLa-based NH1 cells containing the intergrated HIV-1 LTR-luciferase reporter gene were transfected with the Tat(C22G)- and/or AFF1-expressing construct as labeled. Luciferase activities were measured in cell extracts, with the level of activity detected in cells transfected with an empty vector (−) set to 1. The error bars represent mean ± SD from three independent measurements.
 
 The effects of changes in the Tat–AFF1 interface on Tat-dependent HIV transcription were measured using a HIV LTR-driven luciferase reporter system in HeLa-derived NH1 cells (He et al. 2010) that can express Tat(C22G). Although Tat(C22G) barely activated HIV transcription by itself (1.9-fold), this mutant strongly synergized with WT AFF1 to stimulate transcription to a much higher level (89-fold). Ectopic expression of WT AFF1 by itself only increased Tat-independent luciferase expression 13-fold (Figure 4C). In contrast, the AFF1 single (V67A and F70A) and double (V67A/F70A) alanine mutants showed significantly reduced cooperation with Tat(C22G) in activating HIV transcription compared to WT AFF1 (Figure 4C). Thus, the Tat–AFF4 interface is critical not only to enhance the binding of Tat to CycT1, but also to stimulate Tat-dependent HIV transcription.
 
-The Tat–TAR recognition motif of CycT1 is essential for high affinity binding of P-TEFb-Tat to TAR (
+The Tat–TAR recognition motif of CycT1 is essential for high affinity binding of P-TEFb-Tat to TAR (Garber et al., 1998). This critical segment (CycT1 250-264) at the C-terminal end of the cyclin domain interacts directly with TAR, as judged by RNA–protein cross-linking studies (Richter et al., 2002). Since AFF4 binds close to the TRM in the Tat-AFF4-P-TEFb structure, we investigated the effect of AFF4 on TAR binding. Electrophoretic mobility shift assays (EMSA) revealed unexpectedly that AFF4 fragments 32–67, 2–73, and 2–98 each increased the affinity of TAR for the Tat-P-TEFb complex by 30-fold (Figure 5A). It is unlikely that AFF4 directly contributes to TAR binding, since the AFF4-P-TEFb complex does not show any binding to TAR by itself. Instead, the Tat-AFF4-P-TEFb structure provides evidence that AFF4 binding in the presence of Tat restricts the conformational freedom of the CycT1 TRM region and positions this region for TAR interaction (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig5-v2.jpg)
 
-**Figure 5.:** (A) Electrophoretic mobility shift assays with 32P-labeled TAR and increasing concentrations of Tat-P-TEFb, or Tat-P-TEFb + AFF432–67, Tat-P-TEFb + AFF42–73, Tat-P-TEFb + AFF42–98. Control assays (bottom right) with P-TEFb and AFF42–73 showed no shifts for TAR. Half of TAR was shifted with 35–40 nM Tat-P-TEFb complex. In the presence of excess AFF4 fragments 32–67, 2–73, or 2–98, 50% of TAR was shifted by 1.1 nM Tat-AFF4-P-TEFb complex. (B) Calculated electrostatic surface potential of Tat-AFF4-CycT1 centered on the CycT1 TRM. The ribbon diagram (right) is in the same orientation as the surface representation (left). This orientation converts into the orientation in Figure 1A by consecutive rotations around y (70°) and z (−35°). CDK9 was omitted from the surface figure (left) to focus on the TAR interaction region. Solvent-exposed CycT1 residues K253, R254, N257, W258, R259, and Tat R49, which have no side-chain electron density, were modeled in the most common orientation. The electrostatic potential, calculated using APBS (Baker et al., 2001) was applied to color the solvent excluded surface of Tat-AFF4-CycT1 in Chimera (Pettersen et al., 2004) from −5 kbTe−1 (red) to +5 kbTe−1 (blue). CycT1 residues were labeled in black, Tat residues in red. The TRM region forms a positively charged patch on the SEC surface close to the disordered Tat ARM, which follows Tat R49.DOI: http://dx.doi.org/10.7554/eLife.02375.012
+**Figure 5.:** (A) Electrophoretic mobility shift assays with 32P-labeled TAR and increasing concentrations of Tat-P-TEFb, or Tat-P-TEFb + AFF432–67, Tat-P-TEFb + AFF42–73, Tat-P-TEFb + AFF42–98. Control assays (bottom right) with P-TEFb and AFF42–73 showed no shifts for TAR. Half of TAR was shifted with 35–40 nM Tat-P-TEFb complex. In the presence of excess AFF4 fragments 32–67, 2–73, or 2–98, 50% of TAR was shifted by 1.1 nM Tat-AFF4-P-TEFb complex. (B) Calculated electrostatic surface potential of Tat-AFF4-CycT1 centered on the CycT1 TRM. The ribbon diagram (right) is in the same orientation as the surface representation (left). This orientation converts into the orientation in Figure 1A by consecutive rotations around y (70°) and z (−35°). CDK9 was omitted from the surface figure (left) to focus on the TAR interaction region. Solvent-exposed CycT1 residues K253, R254, N257, W258, R259, and Tat R49, which have no side-chain electron density, were modeled in the most common orientation. The electrostatic potential, calculated using APBS (Baker et al., 2001) was applied to color the solvent excluded surface of Tat-AFF4-CycT1 in Chimera (Pettersen et al., 2004) from −5 kbTe−1 (red) to +5 kbTe−1 (blue). CycT1 residues were labeled in black, Tat residues in red. The TRM region forms a positively charged patch on the SEC surface close to the disordered Tat ARM, which follows Tat R49.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/02375/elife-02375-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** The positively charged CycT1 TRM is positioned close to the predicted location of the Tat ARM, which binds to bases in the TAR bulge (U23–U25) (Weeks and Crothers, 1991). Considering that the CycT1 TRM is interacting with the TAR loop region (C30–A35) (Richter et al., 2002), we manually placed the solution structure of TAR-arginimide (PDB ID 1ARJ) onto the Tat-AFF4-P-TEFb model so that the TAR bulge neighbors the Tat ARM region and the TAR loop contacts the CycT1 TRM. The dimensions of the components match well. The color scheme for the SEC is the same as in previous figures. The TAR phosphate backbone is shown in orange with bases in blue. TAR bases important for binding to Tat or CycT1 are drawn in magenta.DOI: http://dx.doi.org/10.7554/eLife.02375.013
+**Figure 5—figure supplement 1.:** The positively charged CycT1 TRM is positioned close to the predicted location of the Tat ARM, which binds to bases in the TAR bulge (U23–U25) (Weeks and Crothers, 1991). Considering that the CycT1 TRM is interacting with the TAR loop region (C30–A35) (Richter et al., 2002), we manually placed the solution structure of TAR-arginimide (PDB ID 1ARJ) onto the Tat-AFF4-P-TEFb model so that the TAR bulge neighbors the Tat ARM region and the TAR loop contacts the CycT1 TRM. The dimensions of the components match well. The color scheme for the SEC is the same as in previous figures. The TAR phosphate backbone is shown in orange with bases in blue. TAR bases important for binding to Tat or CycT1 are drawn in magenta.
 
 ## Discussion
 
@@ -106,19 +241,19 @@ These results show that AFF4 contributes to the selective recruitment of SECs by
 
 ## Materials and methods
 
-## Protein expression
+### Protein expression
 
 P-TEFb and TAT-P-TEFb were expressed in High5 insect cells using recombinant baculovirus infections. We co-expressed human CDK9 1–330 and human cyclin T1 1–264 with and without HIV-1 Tat 1–57. Baculovirus generation and High5 cell infections were described in detail previously (Schulze-Gahmen et al., 2013). AFF4 fragments 2–73 and 2–98 with an N-terminal TEV-protease-cleavable His-tag were expressed in E. coli (Schulze-Gahmen et al., 2013).
 
-## Purification of the Tat-AFF4-P-TEFb complex
+### Purification of the Tat-AFF4-P-TEFb complex
 
 Tat-P-TEFb and AFF42-73 were purified separately following procedures described recently (Schulze-Gahmen et al., 2013). Tat-P-TEFb and AFF42–73 were combined at a 1:1.4 (mol/mol) ratio, concentrated to 0.6 ml, and injected onto an analytical Superdex S200 size exclusion column equilibrated with 25 mM Na-HEPES pH 7.4, 0.2 M NaCl and 1 mM DTT. The center fractions of the eluted four-protein peak were used for crystallization.
 
-## TAR RNA
+### TAR RNA
 
 A synthetic TAR fragment encompassing nucleotides 18–44 was purchased from IDT (San Diego, CA, USA). The RNA was annealed at 0.1 mg/ml in 20 mM Na HEPES pH 7.3, 100 mM KCl, 3 mM MgCl2. Best results were obtained by heating the RNA at 75°C for 2 min, followed by rapid cooling on ice. The purity of the RNA, analyzed by denaturing and native 10% polyacrylamide gel electrophoresis, was at least 95%.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 The purified Tat-AFF4-P-TEFb complex was combined with refolded synthetic TAR in a 1.1-fold molar excess. MgCl2 was added to a 3 mM final concentration. The protein–RNA complex was concentrated in an Amicon Ultra filter with a 30 kDa cutoff to about 10 mg/ml protein concentration. The presence of TAR was confirmed on silver-stained polyacrylamide gels.
 
@@ -130,19 +265,19 @@ The structure was determined by molecular replacement with PHENIX (Adams et al.,
 
 Although the crystallization experiments were set up with Tat-AFF4-P-TEFb-TAR complex, we did not find electron density for TAR RNA, nor was there room for TAR in the crystal lattice. The high-salt conditions of the crystallization probably dissociated the TAR RNA from the protein complex. In the final model, density was missing for residues 1–7 and 89–96 in CDK9 mol1 and mol2, and residues 1–7 and 92–95 in CDK9 mol3. Density was also absent for residues 1–6 and 262–264 in all three CycT1 molecules, and residues 50–57 in all three Tat molecules. For AFF4 mol1 (mol3) density for residues 2, 22–32, 70–73 (2–3, 22–33, 70–73) was missing, while AFF4 mol2 was missing density for residues 2–33 and 70–73. The ATP binding pocket of CDK9 contained extra density although ATP was not included in the crystallization. The density was modeled as adenosine.
 
-## Structure analysis
+### Structure analysis
 
 Least squares fitting of protein structures were performed with Coot (Emsley and Cowtan, 2004) and the program ProFit by Dr A Martin from University College London. Profit uses the McLachlan fitting algorithm (McLachlan, 1982). Potential hydrogen bonds were identified with the program CONTACT in CCP4 (Winn et al., 2011) and manually inspected.
 
-## Co-immunoprecipitation assay
+### Co-immunoprecipitation assay
 
 The assay was performed as described (He et al., 2010). Briefly, nuclear extracts prepared from HeLa cells transfected with the indicated expression constructs were incubated with anti-Flag or anti-HA agarose beads (Sigma, St. Louis, MO) for 2 hr before extensive washing and elution.
 
-## Luciferase assay
+### Luciferase assay
 
 The HeLa-based NH1 cell line containing an integrated HIV-1 LTR-luciferase reporter construct (He et al., 2010) was transfected with the indicated expression constructs. At 48 hr post transfection, total cell lysates were prepared from approximately 106 cells per sample and luciferase activity was measured.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 Refolded synthetic TAR (nucleotides 18–44) was radioactively labeled with 32P-γ–ATP using T4-polynucleotide kinase. A 10-µl reaction was prepared with 200 nM TAR, 0.3 mCi 32P-γ–ATP (7000 Ci/mmol, MP Biomedicals, Sohon, OH), and 10 units of T4-polynucleotide kinase (New England BioLabs, Ipswich, MA) in 70 mM Tris/HCl pH7.6, 10 mM MgCl2, 2 mM DTT. After incubating at 37°C for 1 hr, 25 µl of annealing buffer (20 mM Na HEPES pH 7.3, 100 mM KCl, 3 mM MgCl2) were added to the reaction. The mixture was purified twice over Illustra G25 spin columns (GE Healthcare, Piscataway, NJ) to remove free nucleotides. The purified labeled TAR was diluted to 10 nM (3000–5000 cpm/ µl) with annealing buffer for storage and use in EMSAs.
 

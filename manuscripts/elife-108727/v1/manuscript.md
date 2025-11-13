@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03xez1567 Salk Institute for Biological Studies La Jolla United States
+1. Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
 
 † Corresponding author
 

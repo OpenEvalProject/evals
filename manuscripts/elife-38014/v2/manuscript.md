@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.38014.001 Translation and mRNA degradation are intimately connected, yet the mechanisms that link them are not fully understood. Here, we studied these mechanisms in embryonic stem cells (ESCs). Transcripts showed a wide range of stabilities, which correlated with their relative translation levels and that did not change during early ESC differentiation. The protein DHH1 links translation to mRNA stability in yeast; however, loss of the mammalian homolog, DDX6, in ESCs did not disrupt the correlation across transcripts. Instead, the loss of DDX6 led to upregulated translation of microRNA targets, without concurrent changes in mRNA stability. The Ddx6 knockout cells were phenotypically and molecularly similar to cells lacking all microRNAs ( Dgcr8 knockout ESCs). These data show that the loss of DDX6 can separate the two canonical functions of microRNAs: translational repression and transcript destabilization. Furthermore, these data uncover a central role for translational repression independent of transcript destabilization in defining the downstream consequences of microRNA loss.
+Translation and mRNA degradation are intimately connected, yet the mechanisms that link them are not fully understood. Here, we studied these mechanisms in embryonic stem cells (ESCs). Transcripts showed a wide range of stabilities, which correlated with their relative translation levels and that did not change during early ESC differentiation. The protein DHH1 links translation to mRNA stability in yeast; however, loss of the mammalian homolog, DDX6, in ESCs did not disrupt the correlation across transcripts. Instead, the loss of DDX6 led to upregulated translation of microRNA targets, without concurrent changes in mRNA stability. The Ddx6 knockout cells were phenotypically and molecularly similar to cells lacking all microRNAs (Dgcr8 knockout ESCs). These data show that the loss of DDX6 can separate the two canonical functions of microRNAs: translational repression and transcript destabilization. Furthermore, these data uncover a central role for translational repression independent of transcript destabilization in defining the downstream consequences of microRNA loss.
 
 ## Introduction
 
@@ -31,9 +31,17 @@ Here, we sought to understand how mRNA stability changes are linked to translati
 
 ## Results
 
-## Transcriptional changes drive expression changes during the ESC to EpiLC transition
+### Transcriptional changes drive expression changes during the ESC to EpiLC transition
 
 Previous work suggested that up to 70% of the molecular changes that occur during early ESC differentiation are due to post-transcriptional events (Lu et al., 2009). In that work, differentiation was induced by expressing a shRNA to Nanog in ESCs grown in LIF. These conditions are associated with a heterogeneous population of cells (Ivanova et al., 2006). To revisit this question, we turned to a reporter system and an optimized differentiation protocol that enables the homogenous differentiation of naive ESCs to formative epiblast like cells (EpiLC), which is representative of the transition from the pre- to post-implantation epiblast in vivo (Chen et al., 2018; Krishnakumar et al., 2016; Parchem et al., 2014) (Figure 1A). Using this system, we characterized the changes in mRNA expression, mRNA stability, and translation that occur during the transition. RNA-Seq showed 1890 genes significantly upregulated and 1532 genes significantly downregulated during the ESC to EpiLC transition (Figure 1B and F). Known naive markers were downregulated, while known primed markers were upregulated confirming robust differentiation (Figure 1—figure supplement 1A) (Boroviak et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig1-v2.jpg)
+
+**Figure 1.:** (A) Flow cytometry of the transition from naive embryonic stem cells (ESCs) (miR-302 GFP-, miR-290 mCherry+) to primed epiblast-like cells (EpiLCs) (miR-302 GFP+, miR-290 mCherry+). (B) MA plot of mRNA changes during the ESC to EpiLC transition. Significant changes are shown as red dots (Adjusted p value < 0.05 and |log2 fold change| > 1) in B, C, E. Dashed lines indicated a twofold change. (C) MA plot of mRNA stability changes during the ESC to EpiLC transition. (D) Correlation between changes in nascent transcription (4sU-labeled mRNA) and changes in mRNA levels during the ESC to EpiLC transition. The p value was calculated with correlation significance test. (E) MA plot of translational efficiency (TE) changes during the ESC to EpiLC transition. (F) The number of significant increases or decreases in transcription, mRNA levels, mRNA stability, and translational efficiency during the ESC to EpiLC transition. n = 3 for each ESC and EpiLC seq experiment. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Change in expression of key naive and primed genes during the ESC to EpiLC transition based on RNA-Seq. Error bars represent 95% confidence interval. (B) Relative mRNA stability of candidate genes based on the ratio of mRNA/4sU. Error bars represent 95% confidence interval. (C) Validation of 4sU-Seq measured mRNA stabilities with RT-qPCR time course after blocking transcription with Actinomycin D. Values are normalized to 18S rRNA and their 0 hr timepoint. n = 3 for wild-type and n = 6 (3 replicates of each Ddx6 KO line), error bars are standard deviation. (D) Spearman correlation of log2(counts per million) of ESC and EpiLC RNA-Seq and 4sU-Seq replicates. (E) Ribosome profiling shows characteristic phasing for ribosome protected footprints. (F) Spearman correlation of log2(counts per million) of ESC and EpiLC RNA-Seq and ribosome protected footprint (RPF) replicates.
 
 To separate the contribution of transcription versus mRNA stability to changing mRNA levels during the ESC to EpiLC transition, we used metabolic labeling with 4-thiouridine (4sU) (Dölken et al., 2008; Rabani et al., 2011; Windhager et al., 2012). To measure transcription, nascent transcripts were labeled with a 30-min 4sU pulse, biotinylated, pulled down with streptavidin, and sequenced (4sU-Seq). To measure mRNA stability, total RNA-Seq was performed in parallel and the ratio of nascent RNA to total RNA was used to calculate relative stabilities for each gene (Rabani et al., 2011). To validate these findings, a subset of genes spanning a range of stabilities were measured using an alternative method where transcription was blocked with actinomycin D and mRNA levels followed over a time course by RT-qPCR (Figure 1—figure supplement 1B and C). The relative stabilities predicted by the two approaches were highly correlated. Given that the 4sU-Seq approach avoids the secondary effects associated with blocking all transcription, we used those data for genome-wide analysis (Bensaude, 2011; Lugowski et al., 2018). Surprisingly, the 4sU/total mRNA data showed very few changes in mRNA stability between the ESC and EpiLC states (Figure 1C and F). This lack of changes was not because of noise among the replicates, as biological replicates were well correlated (Figure 1—figure supplement 1D).
 
@@ -41,9 +49,17 @@ The general lack of changes in mRNA stability suggested that transcription is th
 
 Next, we asked whether changes in translation play an important role in the ESC to EpiLC transition. To measure translation of all genes, we performed ribosome profiling to collect Ribosome Protected Footprints (RPFs) and matched total mRNA (Ingolia et al., 2011). As expected, RPFs showed a strong three nucleotide phasing of reads that was not present in the mRNA samples, confirming the quality of the data (Figure 1—figure supplement 1E). We calculated translation using the ratio of RPF/mRNA, also known as translational efficiency (Ingolia et al., 2011). Global analysis showed very few changes in translational efficiencies between the ESC and EpiLC states (Figure 1E and F). Biological replicates were well correlated showing that the overall lack of changes is not due to noise between the replicates (Figure 1—figure supplement 1F). Therefore, like mRNA stability, there are few changes in translational efficiency in early ESC differentiation.
 
-## There is a wide range of RNA stabilities which are positively correlated with translation in ESCs
+### There is a wide range of RNA stabilities which are positively correlated with translation in ESCs
 
 Although there were minimal changes in mRNA stability during the ESC to EpiLC transition, there was a wide range of mRNA stabilities within ESCs. For example, between the 25th and 75th percentile of mRNA stability, there was a 3.2-fold difference in stability and between the top and bottom 1% of mRNA stability there was over a 64-fold difference (Figure 2A). To identify features that explain the range of mRNA stabilities observed, we performed multiple linear regression taking into account the following features that previous studies implicated in affecting mRNA stability: 3’ UTR length, 5’ UTR length, CDS length, 3’ UTR GC content, 5’ UTR GC content, CDS GC content, AU-rich elements (ARE), miRNA-binding sites, number of exons in the transcript, and upstream ORFs (Chan and Mugler, 2017; Cheng et al., 2017; Sharova et al., 2009). Combined, these features explained 25% of the variation in mRNA stability. To identify which features had the greatest impact on stability, we analyzed the correlation between each individual feature and mRNA stability (Figure 2B). 3’ UTR length had the greatest impact and was negatively correlated with mRNA stability (Spearman’s rho −0.3; p<2.22*10−16) (Figure 2C). To validate the impact of 3’ UTRs on mRNA stability, we used a dual reporter system that contains a control GFP for normalization and a RFP with a cloned endogenous 3’ UTR from 12 representative genes (Figure 2D) (Chaudhury et al., 2014). Flow cytometry analysis of cells expressing the reporter showed that the RFP/GFP ratio correlated well with the mRNA stability of the matching endogenous genes as measured by 4sU-Seq (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig2-v2.jpg)
+
+**Figure 2.:** (A) The distribution of mRNA stabilities in ESCs. Dashed lines divide bottom 1%, middle 50%, and top 1% of the data. (B) The correlation between sequence features and mRNA stability in ESCs. uORFs (upstream open-reading frames), ARE (AU Rich Elements). (C) The correlation between 3’ UTR length (log10) and mRNA stability in ESCs. (D) (Top) Schematic of dual reporter system to test endogenous 3’ UTRs. (Bottom) Normalized median RFP/GFP ratios versus mRNA stability for endogenous genes as measured by 4sU-Seq. Clusters of dots indicate an endogenous 3’ UTR, individual dots within a cluster represent biological replicates (n = 3). (E) RNA stability of long non-coding RNAs (lncRNAs) compared to protein-coding RNAs. The p value was calculated using the Mann–Whitney test. (F) Comparison between mRNA stability and translation level (high polysome/monosome ratio) in ESCs. The p value calculated with correlation significance test. n = 3. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) mRNA stability of ESCC miRNA targets compared to all mRNAs. The p value was calculated using the Mann–Whitney test. (B) Polysome trace showing monosome, low polysome, and high polysome fractions collected for RNA-Seq. (C) Translation level of long non-coding RNAs (lncRNAs) compared to protein coding RNAs. The p value calculated with Mann-Whitney test. (D) Comparison between mRNA stability and translational efficiency in ESCs. The p value calculated with correlation significance test. n = 3. (E) Boxplots showing the codon usage frequency in the top and bottom 20% of genes in terms of stability. Codons are ordered along the X-axis based on the median codon usage in unstable - median codon usage in stable. * indicates p<0.05 calculated using the Mann–Whitney test followed by Bonferroni correction.
 
 MiRNAs are one regulatory factor that bind to the 3’ UTR of target mRNAs and recruit a complex of proteins that then destabilize the transcripts (Fabian and Sonenberg, 2012; Jonas and Izaurralde, 2015). In ESCs, the embryonic stem-cell-enriched cell cycle (ESCC) family of miRNAs represent a predominant fraction of all miRNAs in ESCs (Greve et al., 2013; Houbaviy et al., 2003; Marson et al., 2008). As expected, ESCC miRNA targets as a group were significantly less stable than all genes (p<2.22*10−16, Mann-Whitney test) (Figure 2—figure supplement 1A). However, a large number of ESCC targets were still in the top 50% of the most stable genes (Figure 2—figure supplement 1A). These data suggest that, while miRNAs are strong destabilizers, they can only explain a small portion of the large range of mRNA stabilities seen in the cells.
 
@@ -51,13 +67,21 @@ Interestingly, analysis of the 4sU-Seq data showed that long non-coding RNAs (ln
 
 Recent reports suggest that differential codon usage is a central mechanism in linking translation to mRNA stability (Bazzini et al., 2016; Chan and Mugler, 2017; Cheng et al., 2017; Mishima and Tomari, 2016; Presnyak et al., 2015). Therefore, we considered the possibility that codon optimality is a driving force in the wide range of mRNA stabilities. Codon optimality is driven in part through tRNA abundance, which is cell type specific in mammals and can alter translation and mRNA stability in a cell-type-specific manner (Gingold et al., 2014; Goodarzi et al., 2016). Unfortunately, tRNA abundance data does not exist for ESCs. Instead, we evaluated the frequency of codon usage between mRNAs with differing stabilities. This analysis uncovered small, but significant, differences in codon usage frequency between mRNAs in the top and bottom 20% of stabilities (Figure 2—figure supplement 1E). Therefore, codon optimality may in part explain the link between translation levels and mRNA stability.
 
-## DDX6 regulates proliferation and morphology of ESCs
+### DDX6 regulates proliferation and morphology of ESCs
 
 In yeast, the protein DHH1 has been shown to link translation to mRNA stability through codon optimality (Radhakrishnan et al., 2016). The mammalian homolog of DHH1, DDX6, has been shown to associate with both the mRNA decapping and deadenylation complex, also consistent with a potential link between mRNA stability and translation (Chen et al., 2014; Mathys et al., 2014; Rouya et al., 2014). Therefore, we next asked whether DDX6 may provide a mechanistic link for the relationship between translation and mRNA stability in ESCs. To investigate the function of DDX6 in ESCs, we produced Ddx6 knockout (Ddx6 KO) clones using CRISPR-Cas9. Sanger sequencing confirmed a single nucleotide insertion in one clone and a large deletion in a second clone, both of which produce a premature stop (Figure 3—figure supplement 1A). Western blot confirmed the absence of DDX6 protein in both clones (Figure 3A). We repeated the 4sU-Seq and polysome profiling in Ddx6 KO and matched wild-type cells to measure changes in mRNA stability and translation levels. 4sU-Seq and total RNA-Seq showed that while there was a minimal reduction of nascent Ddx6 mRNA, there was a drastic loss of mature Ddx6 mRNA in the Ddx6 KO cells (Figure 3B). This destabilization is consistent with nonsense-mediated decay and further validates the 4sU-Seq assay for assessing changes in mRNA stability.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blot of DDX6 in two Ddx6 knockout (KO) lines. GAPDH and ACTIN were used as loading controls. (B) Ddx6 counts per million (CPM) in nascent mRNA (4sU) or mRNA in wild-type (WT) and Ddx6 KO cells. n = 3 for wild-type, n = 4 for Ddx6 KO (2 replicates of each Ddx6 KO line) (C) Expression of pluripotency genes in Ddx6 KO ESCs based on RNA-Seq. Error bars represent 95% confidence interval. (D) Brightfield images of wild-type and Ddx6 KO ESCs. Images taken at 20X. (E) DDX6 staining in wild-type ESCs. Images taken at 20X. (F) P-body staining against DCP1a in wild-type and Ddx6 KO ESCs. Images taken at 20X. (G) Growth curves of wild-type and Ddx6 KO ESCs in ESC maintenance conditions (LIF/2i). n = 6 for wild-type cells, n = 12 for Ddx6 KO (six replicates of each Ddx6 KO line). * indicates p<0.05 using a t-test, error bars are standard deviation. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sanger sequencing showing deletion and insertion at the beginning of exon seven to generate two Ddx6 KO clones.
+
 The loss of DDX6 had little impact on the expression of pluripotency markers (Figure 3C). However, there were striking morphological changes in the cells (Figure 3D). Unlike wild-type ESCs which form tight domed colonies, Ddx6 KO cells grew in a jagged, dispersed monolayer (Figure 3D). DDX6 localized to discrete punctate in the wild-type cells consistent with P-body localization, as previously reported (Figure 3E) (Ernoult-Lange et al., 2012; Hubstenberger et al., 2017; Minshall et al., 2009; Presnyak and Coller, 2013). Interestingly, the loss of DDX6 resulted in an abnormal distribution of the P-body marker DCP1a (Figure 3F). DDX6 loss also led to a reduction in proliferation in self-renewal culture conditions (Figure 3G). Together, these data show an important role for DDX6 in the formation and/or maintenance of P-bodies and in retaining normal cell morphology and proliferation.
 
-## DDX6 separates miRNA-induced translational repression from RNA degradation
+### DDX6 separates miRNA-induced translational repression from RNA degradation
 
 Since yeast DHH1 destabilizes lowly translated transcripts enriched in non-optimal codons, we expected that lowly translated genes might be stabilized in Ddx6 KO ESCs (Radhakrishnan et al., 2016). However, there was minimal correlation between mRNA stability changes in Ddx6 KO ESCs and wild-type translation levels (Spearman’s rho −0.11; p<2.22*10−16) (Figure 4—figure supplement 1A). The stabilized transcripts were not specifically enriched within the lowly translated transcripts and instead they occurred across all levels of translation. These data suggested that DDX6 does not link mRNA stability with translation levels across all genes. Next, we defined a set of codons as suboptimal based on their enrichment in unstable genes in wild-type ESCs and asked whether they are enriched among genes that are stabilized in Ddx6 KO cells (Figure 2—figure supplement 1E). There was no enrichment (Figure 4—figure supplement 1B). Further comparing changes in median codon frequency in stable versus unstable transcripts in wild-type cells with changes in median codon frequency in stabilized versus unstabilized transcripts in Ddx6 KO cells showed no correlation (Figure 4—figure supplement 1C). Species-specific tRNA adaptation index (stAI) provides an alternative metric of codon optimality. The stAI metric takes into account tRNA copy number and a tRNA’s ability to wobble base pair with different codons (Radhakrishnan et al., 2016; Sabi and Tuller, 2014). We calculated stAI values for mouse and asked if they could predict changes in transcript stability associated with DDX6 loss. In contrast to the yeast homolog, transcripts stabilized upon DDX6 loss did not correlate with low stAI values (Figure 4—figure supplement 1D). These data show that unlike yeast DHH1, the primary function of mammalian DDX6 is not to link codon optimality with transcript stability.
 
@@ -65,11 +89,27 @@ Several aspects of the Ddx6 KO phenotype, including the cell morphology changes 
 
 The ESCC family of miRNAs represent a predominant fraction of all miRNAs in ESCs (Greve et al., 2013; Houbaviy et al., 2003; Marson et al., 2008; Melton et al., 2010; Wang et al., 2008). They share the ‘AAGUGC’ seed sequence and thus have common downstream targets. Furthermore, re-introduction of a single member of the ESCC family of miRNAs can revert Dgcr8 KO cells to a molecular phenotype highly similar to wild-type ESCs (Gambardella et al., 2017; Melton et al., 2010; Wang et al., 2008). Therefore, we chose to focus on the consequence of DGCR8 loss and DDX6 loss on these targets. As expected, the ESCC targets are stabilized relative to all genes in the Dgcr8 KO cells (Figure 4A). However, these same targets showed little change in mRNA stability in the Ddx6 KO cells (Figure 4B). Therefore, DDX6 does not appear to play a major role in transcript destabilization downstream of miRNAs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) mRNA stability or translation level changes of ESCC miRNA targets versus all mRNAs. The p value was calculated with Mann-Whitney test. A/B) mRNA stability changes in Dgcr8 KO (A) or Ddx6 KO (B) cells. n = 3 for wild-type, n = 4 for Ddx6 KO (2 replicates of each Ddx6 KO line), n = 3 for Dgcr8 KO. C/D) Translation level changes in Dgcr8 KO (C) or Ddx6 KO (D) cells. n = 3 for each genotype. (E) Translation level changes of individual ESCC miRNA targets in Dgcr8 KO and Ddx6 KO ESCs. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mRNA stability changes in Ddx6 KO cells versus wild-type translation level. (B) Boxplots showing the codon usage frequency in the top and bottom 20% of mRNA stability changes in Ddx6 KO for unstable genes as defined in Figure 2—figure supplement 1E. * indicates p<0.05 calculated using the Mann–Whitney test followed by Bonferroni correction. (C) Difference in median codon frequency between stable and unstable transcripts in wild-type cells versus difference in median codon frequency between top and bottom Ddx6 KO mRNA stability changes. (D) mRNA stability changes in Ddx6 KO cells versus species-specific tRNA adaptation index (tAI) scores for each gene.
+
 The loss of DGCR8 also resulted in an increase in the translation levels of ESCC miRNA targets independent of its effect on stability, consistent with miRNAs both inhibiting translation and destabilizing transcripts (Figure 4C). In contrast to the stability data, the loss of DDX6 had a similar impact as the loss of DGCR8 on the translation levels of ESCC targets (Figure 4D). Indeed, Dgcr8 KO and Ddx6 KO affected the translation levels of individual targets to a similar extent (Figure 4E). These data show that DDX6 is an essential effector for miRNA-driven translational repression, but not mRNA destabilization. As such, DDX6 separates the two main functions of miRNAs showing that miRNA-driven translational repression and transcript destabilization are not dependent on one another.
 
-## Translational repression alone underlies many of the downstream molecular changes associated with miRNA loss
+### Translational repression alone underlies many of the downstream molecular changes associated with miRNA loss
 
 Whether translational repression or mRNA destabilization is the predominant effect of miRNAs is controversial as it is difficult to separate the two (Iwakawa and Tomari, 2015; Jonas and Izaurralde, 2015). Given that the Ddx6 KO cells retained mRNA destabilization, while losing translational repression of miRNA targets, we asked how well derepression of translation matches the downstream consequences of losing all miRNAs. Since the Ddx6 KO and Dgcr8 KO cells have partially overlapping phenotypes, we compared global changes in mRNA stability, mRNA levels, and translation levels. Strikingly, while there was little correlation in changes in mRNA stability, changes in both mRNA and translation levels were well correlated (Figure 5). Nascent transcriptional changes between Ddx6 KO and Dgcr8 KO measured by 4sU-Seq are also well correlated (Figure 5—figure supplement 1A) showing that the correlation in mRNA changes is due to transcriptional changes, likely secondary to the direct effects of Ddx6 and Dgcr8 loss on the translation of transcriptional regulators. These data show that translational repression alone can explain much of a miRNA’s function in ESCs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison between mRNA stability changes in Dgcr8 KO versus Ddx6 KO cells. n = 3 for wild-type, n = 4 for Ddx6 KO (2 replicates of each Ddx6 KO line), n = 3 for Dgcr8 KO. (B) Comparison between translation level changes in Dgcr8 KO versus Ddx6 KO cells. n = 3 for each genotype. (C) Comparison between mRNA changes in Dgcr8 KO versus Ddx6 KO cells. The p value was calculated with correlation significance test. (D) Summary schematic comparing Dgcr8 KO cells to Ddx6 KO cells. Dgcr8 KO leads to the loss of both translational repression and mRNA destabilization of miRNA targets, while Ddx6 KO only leads to the loss of translational repression of miRNA targets. mRNA stability is measured as the ratio of mRNA/4sU reads, changes in translation level are measured as the ratio of polysome/monosome reads, protein level changes are not directly measured but are predicted based on mRNA stability and translation level changes. Changes in translation level alone in Ddx6 KO cells produce similar phenotypes and global molecular changes to Dgcr8 KO cells. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38014/elife-38014-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison between changes in nascent transcription (4sU-Seq) in Dgcr8 KO versus Ddx6 KO cells. n = 3 for wild-type, n = 4 for Ddx6 KO (2 replicates of each Ddx6 KO line), n = 3 for Dgcr8 KO. The p value was calculated with correlation significance test.
 
 ## Discussion
 
@@ -87,92 +127,414 @@ Surprisingly, the loss of DGCR8 and DDX6 produce similar downstream consequences
 
 ## Materials and methods
 
-## Gene accession
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mouse)</td>
+      <td>Ddx6</td>
+      <td>NA</td>
+      <td>Ensembl: ENSMUSG00000032097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mouse)</td>
+      <td>Dgcr8</td>
+      <td>NA</td>
+      <td>Ensembl: ENSMUSG00000022718</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>WT (V6.5) embryonic stem cell</td>
+      <td>PMID: 11331774; Novus Biologicals</td>
+      <td>NBP1-41162</td>
+      <td>V6.5 mouse embryonic stem cell line from the Jaenisch lab, maintained in the Blelloch lab. Also available commercially from Novus Biologicals.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Dgcr8 KO embryonic stem cell</td>
+      <td>PMID: 17259983; Novus Biologicals</td>
+      <td>NBA1-19349</td>
+      <td>Dgcr8 KO mouse embryonic stem cell line previously generated in the Blelloch lab. Also available commercially from Novus Biologicals.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Ddx6 KO embryonic stem cell</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Ddx6 KO mouse embryonic stem cell line generated via CRISPR-Cas9 in the Blelloch lab from V6.5 parental cell line.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>miR290-mCherry and miR302-GFP reporter V6.5 embryonic stem cell</td>
+      <td>PMID: 26212322</td>
+      <td>N/A</td>
+      <td>Mouse embryonic stem cell line used for differentiation in Figure 1. Previously generated in the Blelloch lab.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DDX6</td>
+      <td>Bethyl Lab</td>
+      <td>A300-460A-T</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC 25778</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ACTIN</td>
+      <td>Sigma</td>
+      <td>A4700</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti DCP1</td>
+      <td>Abcam</td>
+      <td>ab47811</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP (PX458) plasmid</td>
+      <td>Addgene</td>
+      <td>48138</td>
+      <td>Used to generate DDX6 KO lines.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBUTR(piggyBac-based 3' UnTranslated Region Reporter) plasmid</td>
+      <td>PMID: 24753411</td>
+      <td>N/A</td>
+      <td>Used for 3' UTR reporter experiments.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CATGTGGTGATCGCTACCCC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>DDX6 KO guide sequence</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ribo-Zero Gold kit</td>
+      <td>Illumina</td>
+      <td>MRZG126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Stranded RNA-Seq</td>
+      <td>KAPA</td>
+      <td>KK8400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HyperPrep Stranded RNA-Seq</td>
+      <td>KAPA</td>
+      <td>KK8540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lexogen QuantSeq 3' FWD</td>
+      <td>Lexogen</td>
+      <td>015.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Ribosome-Profiling</td>
+      <td>Illumina</td>
+      <td>RPHMR12126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-thioruridine (4sU)</td>
+      <td>Sigma</td>
+      <td>T4509-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>C4859-1ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Fisher Scientific</td>
+      <td>BP6065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEK inhibitor PD0325901</td>
+      <td>Peprotech</td>
+      <td>3911091</td>
+      <td>For naïve ESC culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK3 inhibitor CHIR99021</td>
+      <td>Peprotech</td>
+      <td>2520691</td>
+      <td>For naïve ESC culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin Dynabeads</td>
+      <td>Invitrogen</td>
+      <td>65305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt version 1.14</td>
+      <td>DOI:10.14806/ej.17.1.200</td>
+      <td>RRID:SCR_011841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR version 2.5.3a</td>
+      <td>PMID: 23104886</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gencode M14 annotation</td>
+      <td>N/A</td>
+      <td>https://www.gencodegenes.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Limma version 3.32.10</td>
+      <td>PMID: 25605792</td>
+      <td>RRID:SCR_010943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 3.4.2</td>
+      <td>R Core Team</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2 version 2.2.1</td>
+      <td>H. Wickham</td>
+      <td>RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts version 1.5.3</td>
+      <td>PMID: 24227677</td>
+      <td>RRID:SCR_012919</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene accession
 
 The accession number for the sequencing data reported in this paper is GEO: GSE112767.
 
-## 4sU-Sequencing
+### 4sU-Sequencing
 
 Samples were labeled with 500 uM 4-thiouridine (4sU) (Sigma) for 30 min then extracted with TRIzol (Invitrogen) and split into two groups. rRNA was depleted from Total RNA using the Ribo-Zero Gold kit (Illumina). 80 ug of RNA was biotinylated according to the following protocol Rädle et al. (2013). Biotinylated 4sU RNA was isolated and washed using M-270 Streptavidin Dynabeads (Invitrogen), eluted with 100 mM DTT, and cleaned up with RNeasy minelute columns (Qiagen).
 
 Libraries were generated with the KAPA Stranded RNA-Seq or Stranded HyperPrep library prep kit (Kapa) and sequenced with single-end 50 bp reads. Additional rounds of Ddx6 KO and matched wild-type 4sU samples were sequenced with paired-end reads and counts were merged with single end reads.
 
-## Cell culture and differentiation
+### Cell culture and differentiation
 
 ESCs were grown in Knockout DMEM (Invitrogen) supplemented with 15% Fetal Bovine Serum, LIF and 2i (Peprotech PD0325901 and CHIR99021). In order to generate EpiLCs, 400,000 ESCs were plated in a 15 cm plate; 24 hr later LIF/2i media was removed, cells were washed with PBS, and EpiLCs were collected ~56 hr later (Krishnakumar et al., 2016). Cells were tested to be free of mycoplasma.
 
-## Quant Seq
+### Quant Seq
 
 QuantSeq 3’ end counting was used for polysome profiling samples as well as matched wild-type, Ddx6 KO, and Dgcr8 KO mRNA samples (Figure 5C). RNA was isolated using RNeasy Micro kits (Qiagen). RNA-Seq libraries were generated using the QuantSeq 3’ FWD kit (Lexogen) and sequenced with single-end 50 bp reads.
 
-## Ribosome profiling
+### Ribosome profiling
 
 ESCs and EpiLCs were grown as above. Ribosome profiling libraries were generated using the TruSeq Ribosome Profiling kit (Illumina) and sequenced with single-end 50 bp reads. Three nucleotide periodicity of ribosome profiling reads was checked using RiboTaper (Calviello et al., 2016). Adapters were trimmed using cutadapt version 1.14 with the following settings: --minimum-length 26 --maximum-length 32 for the ribosome protected fragments or --minimum-length 32 for the total RNA. Adapter sequence used for trimming: AGATCGGAAGAGCACACGTCT. Reads were mapped with STAR version 2.5.3a to the mm10/Gencode M14 genome with the following settings: --outFilterMultimapNmax 1 --outFilterMismatchNoverReadLmax 0.05 --seedSearchStartLmax 13 --winAnchorMultimapNmax 200.
 
-## Polysome profiling
+### Polysome profiling
 
 Two plates of 6 million V6.5 ESCs were seeded in a 15 cm plate 48 hr prior to collection (Eggan et al., 2001). Cells were incubated with 100 ug/ml cycloheximide (Sigma) for 2 min and then moved to ice. Cells were washed and scraped in PBS with cycloheximide, spun down, and then lysed. Lysate was loaded onto a 10–50% sucrose gradient and centrifuged at 35,000 RPM for 3 hr. Gradients were collected on a gradient station (Biocomp). For each sample, the monosome, low polysome (2–4 ribosomes), and high polysome (4 + ribosomes were collected). RNA was extracted from gradient fractions with TRIzol LS (Invitrogen) and concentrated with the Zymo Clean and Concentrator-5 kit (Zymo) prior to library preparation with the QuantSeq 3’ FWD kit (Lexogen).
 
-## Western blot
+### Western blot
 
 Cells were collected in RIPA buffer with Protease Inhibitor Cocktail (Roche). Protein was run on a 4–15% gel (Bio-Rad) then transferred onto a PVDF membrane. Membranes were blocked with Odyssey blocking buffer, blotted with primary and secondary antibodies, and then imaged on the Odyssey imaging system (LI-COR). Antibodies: DDX6 1:1000 (A300-460A-T), GAPDH 1:1000 (SC 25778), ACTIN 1:1000 (A4700).
 
-## Actinomycin D RT-qPCR
+### Actinomycin D RT-qPCR
 
 Cells were treated with 5 ug/ml Actinomycin D (Fisher Scientific). 0, 2, 4, 6, 8, and 12 hr after treatment, RNA was collected in TRIzol (Invitrogen). Reverse transcription was performed with the Maxima first strand synthesis kit (Thermo Scientific). qPCR was then performed with the SensiFAST SYBR Hi-ROX kit (Bioline) on an ABI 7900HT 384-well PCR machine. Each sample was normalized to 18S rRNA and its 0 hr time point.
 
-## Cell count
+### Cell count
 
 50,000 cells were plated in multiple wells of a six well on day 0. On days 1, 2, and 3, cells were trypsinized and counted with a TC20 (Bio-rad). Day 2 and day 3 counts were normalized to the day 1 count.
 
-## Imaging
+### Imaging
 
 Cells were fixed with 4% PFA 10 min at room temperature. Cells were blocked with 2% BSA and 1% goat serum in PBST. Cells were incubated with primary antibody for 1 hr at room temperature (Dcp1 abcam (ab47811) antibody 1:800 or DDX6 A300-460A) antibody 1:250). Cells were incubated with goat 488 secondary for 1 hr at room temperature. Cells were then imaged on a Leica inverted fluorescence microscope.
 
-## Generation of Ddx6 KO ESCs
+### Generation of Ddx6 KO ESCs
 
 Ddx6 KO lines were generated using the protocol from (Ran et al., 2013). A guide RNA (CATGTGGTGATCGCTACCCC) was cloned into PX458, transfected into ESCs using Fugene 6, and then GFP-positive cells were sorted at clonal density. Clones were genotyped with the following primers (Fwd: CATTGCCCAGATTGAAGACA and Rvs: TCCTGACTGGCCTGAAACTT) and verified by western blot. Two different knockout clones were picked and used for all subsequent analysis.
 
-## Species-specific tRNA adaptation index calculation
+### Species-specific tRNA adaptation index calculation
 
 For each gene, the CDS region from the Gencode M14 annotation was used. Species-specific tRNA adaptation index (sTAI) values for each gene were calculated with stAIcalc (Sabi et al., 2017).
 
-## Calculation of codon usage
+### Calculation of codon usage
 
 For each gene, the APPRIS principle isoform was used to calculate codon usage frequency. To analyze differences in codon usage between stable and unstable genes, codon usage frequency was calculated for genes in the top 20% (stable) and bottom 20% (unstable) in terms of wild-type mRNA stability. For codon usage frequency for mRNA stability changes in Ddx6 KO cells, we first filtered for genes in the bottom 20% of wild-type stability as defined above. Within those genes, we took the top 20% (top) and bottom 20% (bottom) of mRNA stability changes in Ddx6 KO ESCs and calculated codon usage frequency within each group. Significant differences in codon frequency were calculated using the Mann–Whitney test followed by Bonferroni correction. For the comparison between codon usage frequency in wild-type versus Ddx6 KO, we took the median codon usage frequency in stable - the median codon usage frequency in unstable for each codon and compared it to the Ddx6 KO median codon usage frequency in the bottom group - median codon usage frequency in the top group, using groups as defined above.
 
-## Analysis software
+### Analysis software
 
 For all samples, adapters were trimmed with Cutadapt version 1.14 (Martin, 2011) with the following options: -m 20 -a ‘A{18}’ -a ‘T{18}’ -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC. Reads were mapped with STAR version 2.5.3a (Dobin et al., 2013) to the mm10/Gencode M14 genome with the following settings: --outFilterMultimapNmax 1 --outFilterMismatchNoverReadLmax 0.05 --seedSearchStartLmax 25 --winAnchorMultimapNmax 100. Reads were counted with featureCounts version 1.5.3 (Liao et al., 2014) using the Gencode M14 annotation with rRNA annotations removed with the following settings: -s. Differential expression was carried out with limma version 3.32.10 (Ritchie et al., 2015) and R version 3.4.2. Genes with a low number of reads were filtered out: a gene must have at least three counts per million across at least three replicates to be included for differential expression. For samples with multiple comparisons, a linear model was used for each condition in limma taking into account assay type (e.g. 4sU versus total RNA) and cell type (e.g. KO versus wild-type); significant changes in stability or translation are based on the interaction term. All downstream analyses were performed in R version 3.4.2 and plotted with ggplot2 version 2.2.1.
 
-## Polysome profiling analysis
+### Polysome profiling analysis
 
 RNA-Seq from the monosome, low polysome (2–4 ribosomes), and high polysome (4 + ribosomes were collected) fractions was mapped as above. Translation level was defined as the ratio of the high polysome counts divided by the monosome counts. For KO versus wild-type analysis, a linear model was used for each condition in limma and significant changes in translation are based on the interaction term.
 
-## 4sU-Seq analysis
+### 4sU-Seq analysis
 
-By measuring transcription rate and steady state mRNA levels, it is possible to infer the relative degradation rate (Rabani et al., 2011). It is assumed that across the population of cells there is no change in mRNA levels over time for a given state. Therefore, changes mRNA levels can be modeled by their production rate α and degradation rate β.dmRNA/dt = α - β[mRNA] ≈ 0
+By measuring transcription rate and steady state mRNA levels, it is possible to infer the relative degradation rate (Rabani et al., 2011). It is assumed that across the population of cells there is no change in mRNA levels over time for a given state. Therefore, changes mRNA levels can be modeled by their production rate $\alpha$ and degradation rate $\beta$.
 
-Solving for this equation, degradation rates can be calculated using a production rate (in this case nascent RNA transcription as measured by 4sU incorporation) and the concentration of total mRNA in the cell (as measured by total RNA-Seq).α/[mRNA] ≈ β
+$$
+dmRNA/dt=\alpha-\beta[mRNA]≈0
+$$
+
+Solving for this equation, degradation rates can be calculated using a production rate (in this case nascent RNA transcription as measured by 4sU incorporation) and the concentration of total mRNA in the cell (as measured by total RNA-Seq).
+
+$$
+\alpha/[mRNA]≈\beta
+$$
 
 For KO versus wild-type analysis, a linear model was used for each condition in limma and significant changes in stability are based on the interaction term.
 
-## Analysis of features regulating RNA stability
+### Analysis of features regulating RNA stability
 
 For each gene with multiple isoforms, the APPRIS principle isoform was used. APPRIS data were downloaded on 10/30/2017. Log10(feature lengths), GC %, and log10(number of exons) were calculated in R version 3.4.2. Upstream open-reading frames were defined as the number of ATG sequences in the 5’ UTR. AU-rich elements were defined as the number of UAUUUAU sequences in the 3’ UTR. miRNA sites were defined as below. Each of these features and mRNA stability were used in a multiple linear regression using the lm function in R version 3.4.2. Additionally, the Spearman correlation was calculated between each feature and mRNA stability.
 
-## microRNA targets
+### microRNA targets
 
 Conserved microRNA targets were downloaded from Targetscan mouse release 7.1. This list was filtered for genes that are targeted by the miR-291–3 p/294–3 p/295–3 p/302–3 p family yielding 765 target genes.
 
-## 3’ UTR analysis
+### 3’ UTR analysis
 
 For each gene, the APPRIS principle isoform was used to calculate log10 (3’ UTR length). Log10(3’ UTR length) was then compared to log2 relative mRNA stability.
 
-## 3’ UTR reporters
+### 3’ UTR reporters
 
 Endogenous 3’ UTRs from the following genes were amplified from ESC cDNA: ENSMUSG00000021583, ENSMUSG00000029580, ENSMUSG00000043716, ENSMUSG00000010342, ENSMUSG00000021665, ENSMUSG00000024406, ENSMUSG00000052911, ENSMUSG00000058056, ENSMUSG00000020105, ENSMUSG00000026003, ENSMUSG00000020038, ENSMUSG00000025521, ENSMUSG00000031503. Genes were cloned into the pBUTR (piggyBac-based 3′ UnTranslated Region reporter) using gateway cloning as outlined in Chaudhury et al. (2014). Reporters were transfected into ESCs using Fugene 6 (Promega). Cells were treated with Genenticin to enrich for transfected cells. Cells were analyzed on an LSRII (BD). RFP+/GFP+ cells were gated in FlowJo and median RFP/GFP ratios were calculated. RFP/GFP ratios were standardized between days to accounts for differences in laser power.
 
-## Primers
+### Primers
 
-GeneForwardReverseGapdhAGGTCGGTGTGAACGGATTTGTGTAGACCATGTAGTTGAGGTCANanogAACCAAAGGATGAAGTGCAAGCGGTCCAAGTTGGGTTGGTCCAAGTCTZfp42CTCCTGCACACAGAAGAAAGCCACTGATCCGCAAACACCFgf5CCTTGCGACCCAGGAGCTTACCGTCTGTGGTTTCTGTTGAGGOtx2CAACTTGCCAGAATCCAGGGGGCCTCACTTTGTTCTGACCBakgctgacatgtttgctgatgggatcagctcgggcactttagDdx6 qPCRACTATACTCCGCTACTTTCCCTCTGGCGCTCCGTTACATATG18SGTGGAGCGATTTGTCTGGTTCGCTGAGCCAGTCAGTGTAGMycNAGTGTGTCTGTTCCAGCTACTGTTCATCTTCCTCCTCGTCATCCPgap1AGTACCCCGAGTACCAGAAAATTCGAACTTGCTTATAGCTTCCAGImpactGTGAAGAAATCGAAGCAATGGCGGTACTCACTTGGCAACATCACyr61AACGAGGACTGCAGCAAAACTTCTGACTGAGCTCTGCAGATCAmotl2AGGGACAATGAGCGATTGCAGCCTCACGCTTGGAAGAGGTDdx6 GenotypingCATTGCCCAGATTGAAGACATCCTGACTGGCCTGAAACTT
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gapdh</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+      <td>TGTAGACCATGTAGTTGAGGTCA</td>
+    </tr>
+    <tr>
+      <td>Nanog</td>
+      <td>AACCAAAGGATGAAGTGCAAGCGG</td>
+      <td>TCCAAGTTGGGTTGGTCCAAGTCT</td>
+    </tr>
+    <tr>
+      <td>Zfp42</td>
+      <td>CTCCTGCACACAGAAGAAAGC</td>
+      <td>CACTGATCCGCAAACACC</td>
+    </tr>
+    <tr>
+      <td>Fgf5</td>
+      <td>CCTTGCGACCCAGGAGCTTA</td>
+      <td>CCGTCTGTGGTTTCTGTTGAGG</td>
+    </tr>
+    <tr>
+      <td>Otx2</td>
+      <td>CAACTTGCCAGAATCCAGGG</td>
+      <td>GGCCTCACTTTGTTCTGACC</td>
+    </tr>
+    <tr>
+      <td>Bak</td>
+      <td>gctgacatgtttgctgatgg</td>
+      <td>gatcagctcgggcactttag</td>
+    </tr>
+    <tr>
+      <td>Ddx6 qPCR</td>
+      <td>ACTATACTCCGCTACTTTCCCTC</td>
+      <td>TGGCGCTCCGTTACATATG</td>
+    </tr>
+    <tr>
+      <td>18S</td>
+      <td>GTGGAGCGATTTGTCTGGTT</td>
+      <td>CGCTGAGCCAGTCAGTGTAG</td>
+    </tr>
+    <tr>
+      <td>MycN</td>
+      <td>AGTGTGTCTGTTCCAGCTACTG</td>
+      <td>TTCATCTTCCTCCTCGTCATCC</td>
+    </tr>
+    <tr>
+      <td>Pgap1</td>
+      <td>AGTACCCCGAGTACCAGAAAAT</td>
+      <td>TCGAACTTGCTTATAGCTTCCAG</td>
+    </tr>
+    <tr>
+      <td>Impact</td>
+      <td>GTGAAGAAATCGAAGCAATGGC</td>
+      <td>GGTACTCACTTGGCAACATCA</td>
+    </tr>
+    <tr>
+      <td>Cyr61</td>
+      <td>AACGAGGACTGCAGCAAAAC</td>
+      <td>TTCTGACTGAGCTCTGCAGATC</td>
+    </tr>
+    <tr>
+      <td>Amotl2</td>
+      <td>AGGGACAATGAGCGATTGCAG</td>
+      <td>CCTCACGCTTGGAAGAGGT</td>
+    </tr>
+    <tr>
+      <td>Ddx6 Genotyping</td>
+      <td>CATTGCCCAGATTGAAGACA</td>
+      <td>TCCTGACTGGCCTGAAACTT</td>
+    </tr>
+  </tbody>
+</table>

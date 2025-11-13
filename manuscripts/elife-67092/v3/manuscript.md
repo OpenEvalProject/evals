@@ -23,7 +23,7 @@
 
 ## Abstract
 
-T cells use their T cell receptors (TCRs) to discriminate between lower-affinity self and higher-affinity non-self peptides presented on major histocompatibility complex (pMHC) antigens. Although the discriminatory power of the TCR is widely believed to be near-perfect, technical difficulties have hampered efforts to precisely quantify it. Here, we describe a method for measuring very low TCR/pMHC affinities and use it to measure the discriminatory power of the TCR and the factors affecting it. We find that TCR discrimination, although enhanced compared with conventional cell-surface receptors, is imperfect: primary human T cells can respond to pMHC with affinities as low as K D ∼ 1 mM. The kinetic proofreading mechanism fit our data, providing the first estimates of both the time delay (2.8 s) and number of biochemical steps (2.67) that are consistent with the extraordinary sensitivity of antigen recognition. Our findings explain why self pMHC frequently induce autoimmune diseases and anti-tumour responses, and suggest ways to modify TCR discrimination.
+T cells use their T cell receptors (TCRs) to discriminate between lower-affinity self and higher-affinity non-self peptides presented on major histocompatibility complex (pMHC) antigens. Although the discriminatory power of the TCR is widely believed to be near-perfect, technical difficulties have hampered efforts to precisely quantify it. Here, we describe a method for measuring very low TCR/pMHC affinities and use it to measure the discriminatory power of the TCR and the factors affecting it. We find that TCR discrimination, although enhanced compared with conventional cell-surface receptors, is imperfect: primary human T cells can respond to pMHC with affinities as low as KD ∼ 1 mM. The kinetic proofreading mechanism fit our data, providing the first estimates of both the time delay (2.8 s) and number of biochemical steps (2.67) that are consistent with the extraordinary sensitivity of antigen recognition. Our findings explain why self pMHC frequently induce autoimmune diseases and anti-tumour responses, and suggest ways to modify TCR discrimination.
 
 ## Introduction
 
@@ -37,13 +37,13 @@ Here, we introduce a new SPR protocol that can accurately determine ultra-low TC
 
 ## Results
 
-## Measurements of ultra-low TCR/pMHC affinities at 37°C
+### Measurements of ultra-low TCR/pMHC affinities at 37°C
 
 To assess discrimination, we first generated ligands to the anti-tumour 1G4 (Chen et al., 2005) and anti-viral A6 (Garboczi et al., 1996) TCRs recognising peptides on HLA-A*02:01. The standard SPR protocol is based on injecting the TCR at increasing concentrations over a pMHC-coated surface (Figure 1A and B) with the resulting steady-state binding response plotted over the TCR concentration (Figure 1C). This curve is fitted by a two-parameter Hill function to determine Bmax (the maximum response when all pMHCs are bound by TCR) and the KD, which is the TCR concentration where binding is half the Bmax. Therefore, an accurate determination of KD requires an accurate determination of Bmax.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig1-v3.jpg)
 
-**Figure 1.:** (A–C) Comparison of 1G4 TCR binding to a higher (left panels, NYE 9V) and lower (right panels, NYE 5F) affinity pMHC. (A) Schematic comparing TCR and W6/32 binding. (B) Example SPR sensograms showing injections of different TCR concentrations followed by the W6/32 antibody. (C) Steady-state binding response from (B) over the TCR concentration (filled circles) fitted to determine KD when Bmax is either fitted (standard method) or constrained (new method). Bmax obtained from either method is indicated for the high-affinity pMHC. For the low-affinity pMHC, the Bmax is out of the axes range (251 and 1671 RU for Bmax fitted and Bmax constrained, respectively). (D) Empirical standard curve relating W6/32 binding to fitted Bmax obtained using higher-affinity interactions. Immobilisation levels of NYE 9V are indicated showing that both W6/32 binding and fitted Bmax depend on the amount of pMHC immobilised. Although immobilisation levels are related to Bmax, they cannot be used directly because of variations in the fraction of inactive pMHC across different protein preparations (e.g. MHC that binds to the chip surface and hence contributes to immobilisation but is unfolded and cannot bind the TCR). Therefore, W6/32 binding provides an accurate proxy for the amount of active pMHC on the chip surface. (E) Correlation of KDs obtained using the fitted and constrained methods. Each dot represents an individual measurement (n = 132; 61 for 1G4 TCR, 71 for A6 TCR). (F) Coefficient of variation for higher- (<100 μM) or lower-affinity (>100 μM) interactions. (G) Selected pMHC panel for A6 TCR. (H) Selected pMHC panel for 1G4 TCR. Mean values with SDs of KDs are indicated in bars and ligands used for functional experiments in the main text are coloured. Data in (A) and (B) was double-referenced. The high- and low-affinity examples originate from different experiments.Figure 1—source data 1.Figure 1.Figure 1—source data 2.Ds with the indicated method for the 1G4 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments.Figure 1—source data 3.Ds with the indicated method for the A6 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments. N/A: not applicable.
+**Figure 1.:** (A–C) Comparison of 1G4 TCR binding to a higher (left panels, NYE 9V) and lower (right panels, NYE 5F) affinity pMHC. (A) Schematic comparing TCR and W6/32 binding. (B) Example SPR sensograms showing injections of different TCR concentrations followed by the W6/32 antibody. (C) Steady-state binding response from (B) over the TCR concentration (filled circles) fitted to determine KD when Bmax is either fitted (standard method) or constrained (new method). Bmax obtained from either method is indicated for the high-affinity pMHC. For the low-affinity pMHC, the Bmax is out of the axes range (251 and 1671 RU for Bmax fitted and Bmax constrained, respectively). (D) Empirical standard curve relating W6/32 binding to fitted Bmax obtained using higher-affinity interactions. Immobilisation levels of NYE 9V are indicated showing that both W6/32 binding and fitted Bmax depend on the amount of pMHC immobilised. Although immobilisation levels are related to Bmax, they cannot be used directly because of variations in the fraction of inactive pMHC across different protein preparations (e.g. MHC that binds to the chip surface and hence contributes to immobilisation but is unfolded and cannot bind the TCR). Therefore, W6/32 binding provides an accurate proxy for the amount of active pMHC on the chip surface. (E) Correlation of KDs obtained using the fitted and constrained methods. Each dot represents an individual measurement (n = 132; 61 for 1G4 TCR, 71 for A6 TCR). (F) Coefficient of variation for higher- (<100 μM) or lower-affinity (>100 μM) interactions. (G) Selected pMHC panel for A6 TCR. (H) Selected pMHC panel for 1G4 TCR. Mean values with SDs of KDs are indicated in bars and ligands used for functional experiments in the main text are coloured. Data in (A) and (B) was double-referenced. The high- and low-affinity examples originate from different experiments.
 
 In the case of the 1G4 TCR binding to its cognate NY-ESO-1 peptide, this protocol produces KD ≈ 7 μM (Figure 1A–C, left column). However, the binding response curves do not saturate for lower-affinity pMHCs (Figure 1A–C, right column). Because of this, the fitted Bmax and therefore the fitted KD may not be accurate. Saturating the binding curves by increasing the TCR concentration is limited by the tendency of soluble recombinant proteins, including the TCR, to accumulate aggregates at high concentrations, which precludes accurate SPR measurements.
 
@@ -53,55 +53,115 @@ We next fitted KD values for 132 interactions using the standard method where Bm
 
 We next used the new SPR method to accurately measure ultra-low affinities in order to identify panels of pMHCs that spanned the full physiological affinity range required to quantitate TCR discrimination (Figure 1G and H).
 
-## Primary human T cells do not display a sharp affinity threshold and respond to ultra-low-affinity antigens
+### Primary human T cells do not display a sharp affinity threshold and respond to ultra-low-affinity antigens
 
 To quantify discrimination, we introduced the 1G4 TCR into quiescent naïve or memory CD8+ T cells and then co-cultured them with autologous monocyte-derived dendritic cells (moDCs) pulsed with each peptide (Figure 2A). Using surface CD69 as a marker for T cell activation, we found that lowering the affinity gradually reduced the response without the sharp affinity threshold suggested by near-perfect discrimination and, remarkably, responses were seen to ultra-low-affinity peptides, such as NYE 5F (KD = 1309 μM; see Figure 2B and C). To rule out preferential loading and/or stability of ultra-low-affinity peptides, we pulsed the TAP-deficient T2 cell lines with all peptides and found similar HLA upregulation, suggesting comparable loading and stability (Figure 2—figure supplement 1). We defined pMHC potency as the concentration of peptide required to reach 15% activation (P15) in order to include lower-affinity pMHCs and found that it produced excellent correlations with KD (Figure 2D and E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig2-v3.jpg)
+
+**Figure 2.:** (A) Protocol for producing quiescent primary human naïve and memory CD8+ T cells interacting with autologous monocyte-derived dendritic cells as APCs. (B, C) Example dose-responses for naïve and memory T cells. Potency (P15) is determined by the concentration of peptide eliciting 15% activation. (D, E) Examples of potency vs. KD fitted with a power law. Fold-change in KD and in potency derived from fits is shown. (F) Experimental protocol for producing primary human CD8+ T cell blasts interacting with the glioblastoma cell line U87 as APCs. (G, H) Example dose-responses and (I, J) potency vs. KD plots for T cell blasts expressing the indicated TCR. (KL) Comparison of the fitted discrimination power (α) and fitted sensitivity ($C$). Shown are means with each dot representing an independent experiment (n = 3–6). (K) In grey the result of a statistical test vs. 1 is shown (p<0.0001 for naïve, memory and pooled, p=0.0002 for U87/1G4, p=0.0009 for U87/A6). 95% CI for pooled α in K is 1.9–2.1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example of upregulation of HLA-A2 on T2 cells over different peptides pulsing concentrations. (B) Summary EC50s of loading on T2 cells. Shown are means with standard deviation. Pooled log-transformed data from three independent experiments were compared using a repeated-measure one-way ANOVA with Geisser–Greenhouse correction.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Affinity of the A6 TCR for the panel of Tax-related peptide, as measured by surface plasmon resonance. Shown are means with SD (the mean is also shown as a number within the bar). (B) Activation of A6-expressing CD8+ T cell blasts by U87 APCs pulsed with the indicated concentration of Tax-related peptides. (C) Binding of the indicated pMHC tetramers to A6- versus 1G4-transduced CD8+ T cell blasts, as measured by flow cytometry. (D) Measurement by flow cytometry of cell surface expression of CD3 and TCR $\alpha⁢\beta$ by CD8+ T cell blasts following transduction with the indicated TCR into TCR $\alpha⁢\beta$-KO Jurkats. (E) Relative expression of TCR $\alpha⁢\beta$ using the data in (E), gated on CD3+ cells.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Dose-response for secretion of IL2 into the supernatant. Dotted line indicates 10% activation threshold (P10). (B) A plot of potency obtained from (A) over affinity showing the power law fit. Lower-affinity antigens that did not induce detectable IL2 (NYE 5Y and 5F) are not included in the plot. (C) Geometric mean of discrimination power (α). Plate data and APC data compared each by an independent ordinary one-way ANOVA. pMHC vs APCs compared by ordinary one-way ANOVA. All tests were performed on log-transformed data. (D, E) Geometric mean sensitivity measure ($C$) for stimulation with (D) immobilised ligands or (E) APC co-culture.
+
 We observed similar results with T cell blasts (Figure 2F and G), which serve as an in vitro model for effector T cells and are commonly used in adoptive cell therapy. To independently corroborate discrimination with a second TCR, we used A6-expressing T cell blasts and again found a graded response (Figure 2H). However, potency for all pMHCs was lower and, therefore, responses were only observed for higher-affinity peptides with KD < 100 μM (Figure 2H, Figure 2—figure supplement 2A and B), which we attribute to the much lower expression of the A6 TCR (Figure 2—figure supplement 2C and D). Nonetheless, potency correlated with affinity (Figure 2I and J).
 
-In order to quantify discrimination and sensitivity, we fitted the following power law to the data,P15=10C×(KD)α
+In order to quantify discrimination and sensitivity, we fitted the following power law to the data,
 
-where C measures antigen sensitivity (y-intercept on the log-log plot) as the potency of a pMHC with KD = 1 μM (lower C values indicate higher sensitivity), and α measures the discrimination power (slope on the log-log plot) as it quantifies the ability of a surface receptor to amplify changes in ligand affinity into potentially larger changes in ligand potency. Mechanistically, a receptor occupancy model, where the response is proportional to the concentration of receptor/ligand complexes, produces α=1 (termed baseline discrimination as there is no amplification) whereas additional mechanisms are required to produce α§gt;1 (termed enhanced discrimination). We observed enhanced discrimination powers (1.8–2.1) that were similar for naïve, memory, and blasted T cells and for both the 1G4 and A6 TCRs (Figure 2K), and when using IL-2 as a measure of T cell activation (Figure 2—figure supplement 3A-C). Despite these similar discrimination powers, we observed large ∼1000-fold variation in antigen sensitivity (Figure 2L).
+$$
+P_{15}=10^{C}\times(K_{D})^{\alpha}
+$$
+
+where $C$ measures antigen sensitivity (y-intercept on the log-log plot) as the potency of a pMHC with KD = 1 μM (lower $C$ values indicate higher sensitivity), and α measures the discrimination power (slope on the log-log plot) as it quantifies the ability of a surface receptor to amplify changes in ligand affinity into potentially larger changes in ligand potency. Mechanistically, a receptor occupancy model, where the response is proportional to the concentration of receptor/ligand complexes, produces $\alpha=1$ (termed baseline discrimination as there is no amplification) whereas additional mechanisms are required to produce $\alpha§gt;1$ (termed enhanced discrimination). We observed enhanced discrimination powers (1.8–2.1) that were similar for naïve, memory, and blasted T cells and for both the 1G4 and A6 TCRs (Figure 2K), and when using IL-2 as a measure of T cell activation (Figure 2—figure supplement 3A-C). Despite these similar discrimination powers, we observed large ∼1000-fold variation in antigen sensitivity (Figure 2L).
 
 Taken together, while we found that the discriminatory power of the TCR was enhanced above baseline, we did not observe the previously reported sharp affinity threshold indicative of near-perfect discrimination.
 
-## Systematic analysis reveals that the discriminatory power of the TCR is imperfect
+### Systematic analysis reveals that the discriminatory power of the TCR is imperfect
 
-Since α is a dimensionless measure of discrimination, we used it to compare the discriminatory power measured in this study with the apparently near-perfect discrimination suggested by earlier studies. We began by analysing the original three murine TCRs (Figure 3A–C). In the case of the OT-I TCR (Figure 3A), the T cell response was measured by target cell killing (Hogquist et al., 1995), and we defined potency as the peptide concentration producing 10% lysis (P10) in order to include the E1 peptide variant. The original binding data was provided in a subsequent study (Alam et al., 1999). A plot of potency over KD revealed a very large discriminatory power (α=10.5), which reflects their finding that the E1 peptide variant had a 5×106-fold lower potency despite apparently having only a 3.5-fold lower affinity compared to the wild-type OVA peptide. We found similar large values of α (12, 18, and >5.1) for OT-I when using functional data from other studies (Alam et al., 1996; Altan-Bonnet and Germain, 2005; Figure 3—source data 1 ID 1–4).
+Since α is a dimensionless measure of discrimination, we used it to compare the discriminatory power measured in this study with the apparently near-perfect discrimination suggested by earlier studies. We began by analysing the original three murine TCRs (Figure 3A–C). In the case of the OT-I TCR (Figure 3A), the T cell response was measured by target cell killing (Hogquist et al., 1995), and we defined potency as the peptide concentration producing 10% lysis (P10) in order to include the E1 peptide variant. The original binding data was provided in a subsequent study (Alam et al., 1999). A plot of potency over KD revealed a very large discriminatory power ($\alpha=10.5$), which reflects their finding that the E1 peptide variant had a $5\times10^{6}$-fold lower potency despite apparently having only a 3.5-fold lower affinity compared to the wild-type OVA peptide. We found similar large values of α (12, 18, and >5.1) for OT-I when using functional data from other studies (Alam et al., 1996; Altan-Bonnet and Germain, 2005; Figure 3—source data 1 ID 1–4).
 
-Similar to OT-I, the original data for the 3.L2 (Kersh and Allen, 1996; Kersh et al., 1998b) and 2B4 (Lyons et al., 1996) TCRs also produced large powers (Figure 3B and C). In the case of 3.L2, we plotted potency over koff instead of KD because kon was different between pMHCs (Kersh et al., 1998b; Figure 3B, bottom). Because of the small number of data points for these TCRs, the correlation plots used to determine α only reached statistical significance (p<0.05) for the 3.L2 TCR. Notwithstanding this limitation, this analysis supports the conclusions of these early mouse studies that TCR discrimination was near-perfect, with α∼9 (see below).
+![Figure 3.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig3-v3.jpg)
 
-The OT-I, 3.L2, and 2B4 transgenic mice continue to be instrumental in studies of T cell immunity, and as such, substantial data has been generated relating to these TCRs over the years, including new TCR/pMHC binding measurements. Revised SPR data for OT-I revealed no binding for the E1 peptide variant (Stepanek et al., 2014), and therefore, we could not use the original potency data. To produce an estimate of α for OT-I, we combined measurements of antigen potency (Daniels et al., 2006) and binding (Stepanek et al., 2014) that were now available for four peptides and found an appreciably lower discrimination power of 2.1 (Figure 3D). In the case of the 3.L2 TCR, revised SPR data for the original four peptide variants showed a wider variation in KD than originally reported (Hong et al., 2015). We re-plotted the original potency data over the revised KD value (as koff was not available for all peptides) and found a lower power of 3.2 (Figure 3E). Similarly, re-plotting the 2B4 TCR potency data over revised binding data (Wu et al., 2002) produced a lower discrimination power of 2.8 (Figure 3F). Although this calculation included only two data points, we identified two additional studies with 4–5 data points (Birnbaum et al., 2014; Newell et al., 2011) that also produced lower powers of 2.3 and 0.95 for 2B4 (Figure 3—source data 1 ID 18 and 19).
+**Figure 3.:** (A–H) T cell dose-responses and potency/affinity plots for (A–C) the original murine TCR data, revised analysis of the original murine TCRs using (D) new functional and binding data or (E, F) only new binding data, and examples of other (G) murine and (H) human TCRs. The highest affinity peptide (KD < 1 μM) for the 1E6 TCR was excluded because it saturated the response and would have artificially lowered the fitted α (see Materials and methods for inclusion and exclusion criteria). IDs: 2 [A], 11 [B], 14 [C], 5 [D], 13 [E], 17 [F], 23 [G], and 42 [F]. (I) Comparison of discrimination powers with mean and 95% CI (combined data includes revised OTI, 3.L2, and 2B4 and other mouse and human data). (J) Discrimination powers shown in (I) parsed into each TCR. (K) Comparison between CD4+ and CD8+ T cells. (L) Comparison between different T cell responses. (M) Comparison between conditions with and without the CD4/CD8 co-receptors. (N) Comparison as in (M) but for paired data (where both conditions were present in the same study). (O) Comparison between the use of APCs or artificial plate surfaces to present antigens. Combined data is used in (K, L), (M) (+ co-receptor), and (O) (APC data).
 
-Thus, estimates of discrimination powers of the OT-I, 3.L2, and 2B4 TCRs based on the early binding data were much higher (mean value of α∼9) than those obtained when using more recent binding data (mean value of α=2.2) (Figure 3I), with the revised estimate being similar to the values obtained in this study for two TCRs (Figure 2K). This strongly suggests that discrepancies between the original mouse TCR data suggesting near-perfect discrimination (α∼9) and our human TCR data suggesting imperfect discrimination (α=2.0) is a consequence of issues with the original SPR measurements.
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig3-figsupp1-v3.jpg)
 
-Since many other mouse and human TCRs have been characterised over the past two decades, we used our approach to quantitate their discrimination powers. To be included in this study, a pMHC dose-response stimulation had to have been performed so that a measure of ligand potency could be determined and monomeric TCR/pMHC binding data (KD or koff) also had to be available. We used studies that relied on different peptides that bound a single TCR, studies that relied on multiple TCRs that bound the same peptide, or studies that relied on a combination of both. We generated 51 potency plots (Figure 3—figure supplement 2 and Figure 3—figure supplement 3) and extracted the discrimination power (Figure 3—source data 1 ID 20–70). As representative examples, we show the mouse B3K506 TCR (Figure 3G) and the human 1E6 TCR (Figure 3H). Strikingly, analysis of these TCRs, and other mouse and human TCRs (Figure 3J), produced discrimination powers that were also significantly lower than those produced using the original mouse TCR data (Figure 3I). The variability across studies was not unexpected because they were not designed to accurately estimate α. Variability may be a result of the limited KD range and/or issues with estimating lower affinities. Nonetheless, combining all TCR data with the exception of the original mouse TCR data produced α=2.0 (95% CI of 1.5–2.4), in excellent agreement with our measurements. Therefore, a 5-fold decrease in affinity can be compensated for by a 25-fold increase in antigen concentration for the TCR (α=2). While this is higher than the fivefold increase in concentration required by baseline discrimination (α=1), it is far lower than the unattainable 2-million-fold increase in concentration required by near-perfect discrimination (α=9). Taken together, this shows that the discriminatory power of the TCR is imperfect but enhanced above baseline.
+**Figure 3—figure supplement 1.:** Each panel is linked by an ID to an entry in Figure 3—source data 1 and a paragraph in Appendix 1.
 
-## Factors affecting the discriminatory power of T cells
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Each panel is linked by an ID to an entry in Figure 3—source data 1 and a paragraph in Appendix 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Each panel is linked by an ID to an entry in Figure 3—source data 1 and a paragraph in Appendix 1.
+
+Similar to OT-I, the original data for the 3.L2 (Kersh and Allen, 1996; Kersh et al., 1998b) and 2B4 (Lyons et al., 1996) TCRs also produced large powers (Figure 3B and C). In the case of 3.L2, we plotted potency over $k$off instead of KD because $k$on was different between pMHCs (Kersh et al., 1998b; Figure 3B, bottom). Because of the small number of data points for these TCRs, the correlation plots used to determine α only reached statistical significance (p<0.05) for the 3.L2 TCR. Notwithstanding this limitation, this analysis supports the conclusions of these early mouse studies that TCR discrimination was near-perfect, with $\alpha∼9$ (see below).
+
+The OT-I, 3.L2, and 2B4 transgenic mice continue to be instrumental in studies of T cell immunity, and as such, substantial data has been generated relating to these TCRs over the years, including new TCR/pMHC binding measurements. Revised SPR data for OT-I revealed no binding for the E1 peptide variant (Stepanek et al., 2014), and therefore, we could not use the original potency data. To produce an estimate of α for OT-I, we combined measurements of antigen potency (Daniels et al., 2006) and binding (Stepanek et al., 2014) that were now available for four peptides and found an appreciably lower discrimination power of 2.1 (Figure 3D). In the case of the 3.L2 TCR, revised SPR data for the original four peptide variants showed a wider variation in KD than originally reported (Hong et al., 2015). We re-plotted the original potency data over the revised KD value (as $k$off was not available for all peptides) and found a lower power of 3.2 (Figure 3E). Similarly, re-plotting the 2B4 TCR potency data over revised binding data (Wu et al., 2002) produced a lower discrimination power of 2.8 (Figure 3F). Although this calculation included only two data points, we identified two additional studies with 4–5 data points (Birnbaum et al., 2014; Newell et al., 2011) that also produced lower powers of 2.3 and 0.95 for 2B4 (Figure 3—source data 1 ID 18 and 19).
+
+Thus, estimates of discrimination powers of the OT-I, 3.L2, and 2B4 TCRs based on the early binding data were much higher (mean value of $\alpha∼9$) than those obtained when using more recent binding data (mean value of $\alpha=2.2$) (Figure 3I), with the revised estimate being similar to the values obtained in this study for two TCRs (Figure 2K). This strongly suggests that discrepancies between the original mouse TCR data suggesting near-perfect discrimination ($\alpha∼9$) and our human TCR data suggesting imperfect discrimination ($\alpha=2.0$) is a consequence of issues with the original SPR measurements.
+
+Since many other mouse and human TCRs have been characterised over the past two decades, we used our approach to quantitate their discrimination powers. To be included in this study, a pMHC dose-response stimulation had to have been performed so that a measure of ligand potency could be determined and monomeric TCR/pMHC binding data (KD or $k$off) also had to be available. We used studies that relied on different peptides that bound a single TCR, studies that relied on multiple TCRs that bound the same peptide, or studies that relied on a combination of both. We generated 51 potency plots (Figure 3—figure supplement 2 and Figure 3—figure supplement 3) and extracted the discrimination power (Figure 3—source data 1 ID 20–70). As representative examples, we show the mouse B3K506 TCR (Figure 3G) and the human 1E6 TCR (Figure 3H). Strikingly, analysis of these TCRs, and other mouse and human TCRs (Figure 3J), produced discrimination powers that were also significantly lower than those produced using the original mouse TCR data (Figure 3I). The variability across studies was not unexpected because they were not designed to accurately estimate α. Variability may be a result of the limited KD range and/or issues with estimating lower affinities. Nonetheless, combining all TCR data with the exception of the original mouse TCR data produced $\alpha=2.0$ (95% CI of 1.5–2.4), in excellent agreement with our measurements. Therefore, a 5-fold decrease in affinity can be compensated for by a 25-fold increase in antigen concentration for the TCR ($\alpha=2$). While this is higher than the fivefold increase in concentration required by baseline discrimination ($\alpha=1$), it is far lower than the unattainable 2-million-fold increase in concentration required by near-perfect discrimination ($\alpha=9$). Taken together, this shows that the discriminatory power of the TCR is imperfect but enhanced above baseline.
+
+### Factors affecting the discriminatory power of T cells
 
 We next investigated factors that might affect the TCR discriminatory power. Using the literature data, we found no significant differences between CD4+ or CD8+ T cells (Figure 3K) or across different T cell responses (Figure 3L), which is consistent with a TCR proximal mechanism for discrimination. When we analysed studies where CD4/CD8 co-receptor binding was abolished (Lo et al., 2019; Laugel et al., 2007; Burrows et al., 2010), we found a significant increase in the discrimination power (Figure 3M and N), suggesting that the well-established role of co-receptors in increasing T cell sensitivity to antigen is accompanied by a decrease in discriminatory power.
 
 We also identified studies where the antigen was presented on artificial surfaces in isolation (e.g. recombinant pMHC immobilised on plates; Aleksic et al., 2010; Dushek et al., 2011; Lever et al., 2016; Abu-Shah et al., 2020) and found that α decreased significantly from 2.0 on APCs to 0.93 on these surfaces (Figure 3O). Using our 1G4 T cell blasts, we confirmed that the discrimination power decreased from 2.0 when antigen was presented on APCs to 1.1 when presented as recombinant pMHC on plates (Figure 4A,B,D,F). This suggested that other factors, beyond TCR/pMHC, may be required for enhanced discrimination.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig4-v3.jpg)
+
+**Figure 4.:** (A) Protocol for stimulation of CD8+ T cell blasts with plate-bound recombinant ligands. (B, C) Example dose-response curve for 1G4 T cell blasts stimulated with (B) peptides presented on major histocompatibility complex (pMHC) alone or (C) in combination with CD58 or ICAM1. (D, E) Potency derived from dose-response curves over KD showing the power function fit (D) with pMHC alone or (E) in combination with CD58 or ICAM1. (F) Comparison of the fitted discrimination power (α) and (G) fitted sensitivity ($C$). Shown are geometric means with each dot representing an independent experiment (n = 4–5). (F) In grey the result of a statistical test vs. 1 is shown (p=0.09 for pMHC, p=0.002 for CD58 and ICAM1, p=0.0002 for U87/1G4).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Example dose-dependent for downregulation of TCR and its acceleration by engagement of CD2 by CD58 or LFA-1 by ICAM1. P60 is defined as the dose required to induce 40% downregulation. Normalised to pMHC-alone data. (B) Summary effect of CD2 or LFA-1 on TCR downregulation. Each dot represents an individual experiment. Statistics by repeated-measures one-way ANOVA (with Geisser–Greenhouse correction) of log-transformed data (n = 4) with Dunnett’s multiple comparison test.
+
 We hypothesised that co-signalling receptors CD2 and LFA-1 may be such factors because of their role in increasing ligand potency (Bachmann et al., 1997; Bachmann et al., 1999). Indeed, addition of recombinant ICAM1 (a ligand of LFA-1) or CD58 (the ligand to CD2) increased TCR downregulation (Figure 4—figure supplement 1) and antigen potency (Figure 4C) in this experimental system, consistent with previous reports using APCs (Bachmann et al., 1997; Bachmann et al., 1999). The potency plots highlighted that the 164-fold variation in KD was now amplified into a >1,600-fold variation in potency (Figure 4E) compared to only 414-fold when antigen was presented in isolation (Figure 4D). This is reflected in the discrimination power, which increased from 1.1 to >1.5 (Figure 4F). We noted that the 100-fold increase in antigen sensitivity is appreciably larger than previous reports (Bachmann et al., 1997; Bachmann et al., 1999) and likely reflects the reductionist system we have used where other co-signalling receptors cannot compensate (Figure 4G). These observations were reproduced using IL-2 as a measure of T cell activation (Figure 2—figure supplement 3). Therefore, engagement of the co-signalling receptors CD2 and LFA-1 enhances not only antigen sensitivity but also discrimination.
 
-## The kinetic proofreading mechanism explains the discriminatory power of T cells
+### The kinetic proofreading mechanism explains the discriminatory power of T cells
 
-The KP mechanism proposes that a sequence of biochemical steps between initial pMHC binding (step 0) and TCR signalling (step N) introduces a proofreading time delay that tightly couples TCR signalling to the koff (or equivalently to KD if kon does not vary appreciably) of TCR/pMHC interactions (Figure 5A). Despite being introduced more than 20 years ago (McKeithan, 1995) and underlying all models of T cell activation (Lever et al., 2014), there are no estimates for two crucial parameters in the model, namely the number of steps and the time delay for T cells discriminating antigens using APCs.
+The KP mechanism proposes that a sequence of biochemical steps between initial pMHC binding (step 0) and TCR signalling (step N) introduces a proofreading time delay that tightly couples TCR signalling to the $k$off (or equivalently to KD if $k$on does not vary appreciably) of TCR/pMHC interactions (Figure 5A). Despite being introduced more than 20 years ago (McKeithan, 1995) and underlying all models of T cell activation (Lever et al., 2014), there are no estimates for two crucial parameters in the model, namely the number of steps and the time delay for T cells discriminating antigens using APCs.
 
-To determine the KP parameters, we fit the model simultaneously to all 1G4 potency data from the plate experiments (27 parameters fitted to 12 experiments with a total of 89 data points) or all 1G4 potency data from the APC experiments (37 parameters fitted to 17 experiments with a total of 126 data points). In both fits, we found excellent agreement (e.g. Figure 5B, Figure 5—figure supplement 1A-B) and, importantly, the fit method showed that N and kp could be uniquely determined (Figure 5—figure supplement 1C-H). The value of kp was related to the KD value where potency saturated (i.e. showed no or modest changes as KD decreased) whereas the value of N was the slope at much larger KD values (Figure 5B). Accurately determining both parameters required potency data spanning saturation to near-complete loss of responses, which can only be achieved by having a wide range of pMHC affinities down to very low affinities (high KD). We found an unexpectedly small number of biochemical steps when fitting the APC data (2.67) and a similar value when independently fitting the plate data (Figure 5C). The fitted kp values were similar within the APC experiments but generally smaller than the plate experiments (Figure 5D), and because a similar number of steps was observed in both, this translated to the time delay which was longer on APCs (Figure 5E). Therefore, the higher discrimination power observed on APCs compared to the plate (Figure 4F) is a result of a longer time delay produced not by more steps but rather a slower rate for each step. This made conceptual sense because the number of steps is constrained by the signalling architecture whereas the rate of each step can be regulated. We combined the similar KP parameters for the APC data to provide an average time delay of τKP=2.8 s using N=2.67 (Figure 5F).
+![Figure 5.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig5-v3.jpg)
+
+**Figure 5.:** (A) Schematic of the KP model. The KP time delay between initial binding (step 0) and signalling (step N) is $\tau_{K⁢P}=N/k_{p}$. (B) Example fit of the KP model to data generated using CD8+ blasts stimulated with peptides presented on major histocompatibility complex (pMHC) + ICAM1 showing that the fitted kp is near the KD threshold where potency saturates and $N$ is the slope away from this saturation point. (C) The fitted number of steps (median with min/max) was a global shared parameter for all plate or APC experiments. (D) The fitted KP rate was a local parameter for individual experiments. (E) The KP time delay calculated from N in (C) and individual $k_{p}$ values in (D). (F) Pooled 1G4 APC data are used to compute means of kp and $\tau_{KP}$ of 1.0 (95% CI: 0.7–1.2) and 2.8 (95% CI: 2.2–3.6), respectively. (G, H) Binary heatmaps showing when sensitivity (red) and discrimination (blue) are achieved for the indicated discrimination power. Results shown using stochastic simulations (dots) or deterministic calculations (continuous colours).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Examples of (A) plate and (B) APC potency data (dots) fitted with the KP model (lines). (C–H) The ABC-SMC method provides a distribution of all parameters that are consistent with the high-quality fits presented in (A) and (B). (C–F) Distribution of locally fitted parameters reveals that the proofreading rate (kp) and the sensitivity parameter ($\lambda^$) can be uniquely determined for each (C, E) plate experiment and (D, F) APC experiment. (G, H) Distribution of globally fitted parameters reveals that the number of KP steps (N) can be uniquely determined but that two additional parameters (γ, $\delta^$) cannot be uniquely determined as they do not exhibit peaked distributions for (G) plate experiments and (H) APC experiments.
+
+To determine the KP parameters, we fit the model simultaneously to all 1G4 potency data from the plate experiments (27 parameters fitted to 12 experiments with a total of 89 data points) or all 1G4 potency data from the APC experiments (37 parameters fitted to 17 experiments with a total of 126 data points). In both fits, we found excellent agreement (e.g. Figure 5B, Figure 5—figure supplement 1A-B) and, importantly, the fit method showed that $N$ and kp could be uniquely determined (Figure 5—figure supplement 1C-H). The value of kp was related to the KD value where potency saturated (i.e. showed no or modest changes as KD decreased) whereas the value of $N$ was the slope at much larger KD values (Figure 5B). Accurately determining both parameters required potency data spanning saturation to near-complete loss of responses, which can only be achieved by having a wide range of pMHC affinities down to very low affinities (high KD). We found an unexpectedly small number of biochemical steps when fitting the APC data (2.67) and a similar value when independently fitting the plate data (Figure 5C). The fitted kp values were similar within the APC experiments but generally smaller than the plate experiments (Figure 5D), and because a similar number of steps was observed in both, this translated to the time delay which was longer on APCs (Figure 5E). Therefore, the higher discrimination power observed on APCs compared to the plate (Figure 4F) is a result of a longer time delay produced not by more steps but rather a slower rate for each step. This made conceptual sense because the number of steps is constrained by the signalling architecture whereas the rate of each step can be regulated. We combined the similar KP parameters for the APC data to provide an average time delay of $\tau_{KP}=2.8$ s using $N=2.67$ (Figure 5F).
 
 Although the KP mechanism can explain our discrimination data, it has been previously argued that it cannot simultaneously explain the observed high sensitivity of the TCR for antigen (Altan-Bonnet and Germain, 2005; Dushek and Dushek and van der Merwe, 2014; Chakraborty and Weiss, 2014). We systematically varied the KP model parameters and determined whether discrimination and/or sensitivity were achieved for different levels of discrimination (Figure 5G and H). As in previous reports, we found that the KP mechanism could not simultaneously achieve sensitivity and near-perfect discrimination (Figure 5G). However, it readily achieved sensitivity and the revised imperfect discrimination that we now report, and interestingly, the 2.67 steps that we determined appear to be near the minimum number required to achieve this (Figure 5H). This may reflect the importance of maintaining a very short time delay so that antigen recognition can proceed rapidly allowing individual T cells to rapidly scan many APCs (Altan-Bonnet and Germain, 2005; Dushek and Dushek and van der Merwe, 2014; Chakraborty and Weiss, 2014).
 
-## The discriminatory power of the TCR is higher than conventional surface receptors
+### The discriminatory power of the TCR is higher than conventional surface receptors
 
-Our finding that the discriminatory power of the TCR is only modestly enhanced above baseline raises the important question of whether it is unique in its ligand discrimination abilities. To answer this question, we identified studies that allowed us to estimate the discrimination power for cytokine receptors, receptor-tyrosine-kinases (RTKs), G-protein coupled receptors (GPCRs), chimeric antigen receptors (CARs), and B cell receptors (BCRs) (Figure 6A–E). Out of 30 calculations, we found 21 significant correlations between potency and KD (or koff) that allowed us to estimate α (Figure 6—source data 1). We found that the discrimination powers of cytokine receptors, RTKs, GPCRs, and CARs were all at or below 1, and as a group, their discrimination powers were significantly lower than the TCR (Figure 6F). We identified only a single study for the BCR that could be used to compute α and report a preliminary discrimination power of 1.3, which is intermediate between the TCR and other receptors. Therefore, the TCR appears to be unique in its enhanced ligand discriminatory powers.
+Our finding that the discriminatory power of the TCR is only modestly enhanced above baseline raises the important question of whether it is unique in its ligand discrimination abilities. To answer this question, we identified studies that allowed us to estimate the discrimination power for cytokine receptors, receptor-tyrosine-kinases (RTKs), G-protein coupled receptors (GPCRs), chimeric antigen receptors (CARs), and B cell receptors (BCRs) (Figure 6A–E). Out of 30 calculations, we found 21 significant correlations between potency and KD (or $k$off) that allowed us to estimate α (Figure 6—source data 1). We found that the discrimination powers of cytokine receptors, RTKs, GPCRs, and CARs were all at or below 1, and as a group, their discrimination powers were significantly lower than the TCR (Figure 6F). We identified only a single study for the BCR that could be used to compute α and report a preliminary discrimination power of 1.3, which is intermediate between the TCR and other receptors. Therefore, the TCR appears to be unique in its enhanced ligand discriminatory powers.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig6-v3.jpg)
+
+**Figure 6.:** (A–E) Representative dose-response (left column) and potency over KD or $k$off (right column) for the indicated surface receptor. IDs: 5 [A], 15 [B], 20 [C], 25 [D], 29 [E]. (F) Discrimination powers for the indicated receptor. Data for the TCR as in Figure 3I (combined data).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67092/elife-67092-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Each panel is linked by an ID to an entry in Figure 6—source data 1 and a paragraph in Appendix 1.
 
 ## Discussion
 
 In contrast to the prevailing view that the TCR exhibits near-perfect discrimination, we have shown here that the discriminatory power of the TCR is imperfect and that it is able to respond to ultra-low-affinity antigens. Our estimates of TCR discrimination were facilitated by the development of a revised SPR method to accurately measure TCR/pMHC affinities.
 
-The KP mechanism was able to explain both the high antigen sensitivity and the discrimination power of the TCR. This was achieved by a few steps (2.67) and a short proofreading time delay (2.8 s). This time delay is at the shorter end of the value estimated using pMHC tetramers (8 s with 95% CI: 3–19 s) (Yousefi et al., 2019) and consistent with the 4 s time delay between pMHC binding and LAT phosphorylation (Huse et al., 2007). The small number of steps is reasonable because, although the TCR complex undergoes a large number of biochemical modifications (Chakraborty and Weiss, 2014), only those that must be sequential contribute. It follows that multiple ITAMs acting in parallel would not extend the proofreading chain. In support of this, the number of steps we estimate here for the TCR with 10 ITAMs is the same as the number recently reported for a CAR with 6 ITAMs (2.7±0.5) (Tischer and Weiner, 2019).
+The KP mechanism was able to explain both the high antigen sensitivity and the discrimination power of the TCR. This was achieved by a few steps (2.67) and a short proofreading time delay (2.8 s). This time delay is at the shorter end of the value estimated using pMHC tetramers (8 s with 95% CI: 3–19 s) (Yousefi et al., 2019) and consistent with the 4 s time delay between pMHC binding and LAT phosphorylation (Huse et al., 2007). The small number of steps is reasonable because, although the TCR complex undergoes a large number of biochemical modifications (Chakraborty and Weiss, 2014), only those that must be sequential contribute. It follows that multiple ITAMs acting in parallel would not extend the proofreading chain. In support of this, the number of steps we estimate here for the TCR with 10 ITAMs is the same as the number recently reported for a CAR with 6 ITAMs ($2.7\pm0.5$) (Tischer and Weiner, 2019).
 
 The finding that the number of KP steps is fractional (2.67) may suggest that at least one intermediate proofreading step is not instantly reversible. For example, a proofreading chain with three steps where the first step can be sustained after ligand unbinding would generate a population of TCRs that required only two steps before productive signalling. Depending on the relative concentration of this TCR population, the apparent number of steps can be between 3 and 2. Therefore, the fractional number of steps that we have observed suggests that one (or more) KP step may be sustained upon pMHC unbinding, which may represent the time delay between pMHC unbinding and the dephosphorylation of the TCR signalling complex and/or the unbinding of ZAP70 (Wang et al., 2010; Goyette et al., 2020).
 
@@ -113,11 +173,399 @@ We found that the basic KP mechanism was sufficient to accurately capture antige
 
 To study discrimination, we have introduced the discriminatory power (α) because it can quantify discrimination, independently from antigen sensitivity, from experimental studies. Previously, the term specificity has been used to refer to this discriminatory concept (Altan-Bonnet and Germain, 2005; Francois et al., 2013; Dushek and Dushek and van der Merwe, 2014; Ganti et al., 2020). However, specificity is also commonly used to mean the opposite of promiscuity (i.e. the ability of T cells to respond to many different peptides). To avoid ambiguity, we suggest that specificity and promiscuity are used to refer to the tolerance of peptide sequence diversity while discrimination is used to refer to the tolerance of changes in TCR/pMHC binding parameters. Using this terminology, our analysis suggests that co-receptors decrease the discriminatory power of the TCR (Figure 3M and N) and published data has demonstrated that co-receptors can increase the promiscuity of the TCR (Wooldridge et al., 2010).
 
-The imperfect discriminatory power of the TCR has important functional consequences. Under the assumption of near-perfect TCR discrimination, T cell-mediated autoimmunity is often viewed as a defect in thymic-negative selection and/or peripheral tolerance mechanisms (Yin et al., 2012). However, with an imperfect discriminatory power of α=2, the 10–100-fold lower affinity reported for autoreactive TCRs binding their self antigens (Yin et al., 2012; Bridgeman et al., 2012) means that they can become activated if their self antigens increase in expression by 100–10,000-fold. This suggests that T cell autoimmunity can arise by inappropriate increases in expression of self antigens, and such increases have recently been implicated in T cell-mediated autoimmunity (Korem Kohanim et al., 2020; Wang et al., 2020). T cells also have important roles in eliminating tumour cells but their therapeutic use is often limited by toxicities to lower-affinity off-tumour antigens (e.g. Cameron et al., 2013). The factors we have identified that control antigen discrimination, together with the proposed mechanisms that can generate near-perfect discrimination (Chan et al., 2003; Altan-Bonnet and Germain, 2005; Francois et al., 2013; Dushek and van der Merwe, 2014; Ganti et al., 2020), may enable the engineering of T cells with improved discriminatory powers that selectively reduce responses to lower-affinity off-tumour antigens.
+The imperfect discriminatory power of the TCR has important functional consequences. Under the assumption of near-perfect TCR discrimination, T cell-mediated autoimmunity is often viewed as a defect in thymic-negative selection and/or peripheral tolerance mechanisms (Yin et al., 2012). However, with an imperfect discriminatory power of $\alpha=2$, the 10–100-fold lower affinity reported for autoreactive TCRs binding their self antigens (Yin et al., 2012; Bridgeman et al., 2012) means that they can become activated if their self antigens increase in expression by 100–10,000-fold. This suggests that T cell autoimmunity can arise by inappropriate increases in expression of self antigens, and such increases have recently been implicated in T cell-mediated autoimmunity (Korem Kohanim et al., 2020; Wang et al., 2020). T cells also have important roles in eliminating tumour cells but their therapeutic use is often limited by toxicities to lower-affinity off-tumour antigens (e.g. Cameron et al., 2013). The factors we have identified that control antigen discrimination, together with the proposed mechanisms that can generate near-perfect discrimination (Chan et al., 2003; Altan-Bonnet and Germain, 2005; Francois et al., 2013; Dushek and van der Merwe, 2014; Ganti et al., 2020), may enable the engineering of T cells with improved discriminatory powers that selectively reduce responses to lower-affinity off-tumour antigens.
 
 ## Materials and methods
 
-## Protein production
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U87</td>
+      <td>Vincenzo Cerundolo</td>
+      <td></td>
+      <td>University of Oxford, UK</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Freestyle 293 F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_D603</td>
+      <td>For protein production by transient transfection.</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Lenti-X 293T</td>
+      <td>Takara Bio</td>
+      <td>RRID:CVCL_4401</td>
+      <td>For production of lentivirus.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTT3-ecdCD58</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for production of recombinant, soluble CD58 through transient transfection of mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTT3-ecdICAM1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for production of recombinant, soluble ICAM1 through transient transfection of mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pTT3-BirA-FLAG</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_64395</td>
+      <td>Plasmid for in-flask biotinylation by co-transfection. Bushell et al., 2008.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD69 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314839; RRID:AB_528869; RRID:AB_2561909; RRID:AB_528871</td>
+      <td>Colours: FITC, AF488, BV421, AF647; dilution: (1:200); clone: FN50.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD45 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2561357; RRID:AB_2563466</td>
+      <td>Colours: BV421, BV711; dilution: (1:200); clone: HI30.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HLA-A2 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2721523; RRID:AB_1877227</td>
+      <td>Colours: BV421, PE; dilution: (1:100–1:200); clone: BB7.2.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human TruStain Fc block</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2818986</td>
+      <td>Dilution: (1:100).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>W6/32</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314871</td>
+      <td>Unconjugated; for SPR; lot: B233942.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLEX-A6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral transfer plasmid based on pLEX307. See Supplementary file 1 for insert sequence.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHR-1G4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral transfer plasmid with EF1α promoter for transduction of the 1G4 TCR into T cells. See Supplementary file 1 for insert sequence.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>A6α</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Soluble A6 alpha chain for production in Escherichia coli and in vitro refolding. See Supplementary file 2 for insert sequence.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>A6β-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Soluble A6 beta chain for production in E. coli and in vitro refolding. See Supplementary file 2 for insert sequence.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>1G4α</td>
+      <td>Aleksic et al., 2010</td>
+      <td></td>
+      <td>Soluble 1G4 alpha chain for production in E. coli and in vitro refolding.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>1G4β</td>
+      <td>Aleksic et al., 2010</td>
+      <td></td>
+      <td>Soluble 1G4 beta chain for production in E. coli and in vitro refolding.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>1G4β</td>
+      <td>Abu-Shah et al., 2019</td>
+      <td></td>
+      <td>For mRNA electroporation.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>1G4α</td>
+      <td>Abu-Shah et al., 2019</td>
+      <td></td>
+      <td>For mRNA electroporation.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD3ζ</td>
+      <td>Abu-Shah et al., 2019</td>
+      <td></td>
+      <td>For mRNA electroporation.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HLA-A*02:01 heavy chain</td>
+      <td>Aleksic et al., 2010</td>
+      <td></td>
+      <td>Soluble MHC heavy chain for production in E. coli and in vitro refolding.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>β2M</td>
+      <td>Aleksic et al., 2010</td>
+      <td></td>
+      <td>beta-2 microglobulin for production in E. coli and in vitro refolding.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Retronectin</td>
+      <td>Takara Bio</td>
+      <td>T100B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-PE</td>
+      <td>Biolegend</td>
+      <td>405245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Biotinylated BSA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>29130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>434301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide ligands</td>
+      <td>Peptide Protein Research</td>
+      <td></td>
+      <td>See Figure 1—source data for details.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Refolded recombinant pMHCs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expressed in E. coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL2</td>
+      <td>PeproTech</td>
+      <td>200-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL4</td>
+      <td>PeproTech</td>
+      <td>200-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TNF</td>
+      <td>PeproTech</td>
+      <td>300-01A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IFNγ</td>
+      <td>R&amp;D Systems</td>
+      <td>285-IF-100/CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GM-CSF</td>
+      <td>Immunotools</td>
+      <td>11343127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL1β</td>
+      <td>R&amp;D Systems</td>
+      <td>201-LB-025/CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RosetteSep Human CD8+ T Cell Enrichment Cocktail</td>
+      <td>STEMCELL Technologies</td>
+      <td>15063</td>
+      <td>Isolation kits used to enrich for human immune cells from blood.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RosetteSep Human Monocyte Enrichment Cocktail</td>
+      <td>STEMCELL Technologies</td>
+      <td>15068</td>
+      <td>Isolation kits used to enrich for human immune cells from blood.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human Memory CD8+ T Cell Enrichment Kit</td>
+      <td>STEMCELL Technologies</td>
+      <td>19159</td>
+      <td>Isolation kits used to enrich for human immune cells from blood.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human NaÃ¯ve CD8+ T Cell Isolation Kit II</td>
+      <td>STEMCELL Technologies</td>
+      <td>17968</td>
+      <td>Isolation kits used to enrich for human immune cells from blood.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 ULTRA Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1345</td>
+      <td>Prepare in vitro RNA transcripts.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAclear Transcription Clean-Up Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1908</td>
+      <td>Isolate in vitro RNA transcripts.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amine coupling kit</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>BR100050</td>
+      <td>For immobilisation of protein on SPR chip.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-2 Human Uncoated ELISA Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88-7025-77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PGE2</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6532</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>65-0865-14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CD3/CD28 Human T-activator dynabeads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11132D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-tremeGENE HP</td>
+      <td>Sigma-Aldrich</td>
+      <td>6366546001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zombie Fixable viability kit</td>
+      <td>Biolegend</td>
+      <td>423107; 423105</td>
+      <td>Colours: UV, NIR; dilution: 1:1000.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>Data fitting and statistics.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td>Model fitting.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96 Well SensoPlate</td>
+      <td>Greiner</td>
+      <td>655892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tetramers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Made with NYE 9V or Tax WT and commercial streptavidin-PE.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CM5 sensor chips</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein production
 
 Class I pMHCs were refolded as previously described (Achour et al., 1999). Human HLA-A*0201 heavy chain (UniProt residues 25–298) with a C-terminal AviTag/BirA recognition sequence and human beta-2 microgolublin were expressed in Escherichia coli and isolated from inclusion bodies. Trimer was refolded by consecutively adding peptide, β2M, and heavy chain into refolding buffer and incubating for 2–3 days at 4°C. Protein was filtered, concentrated using centrifugal filters, biotinylated (BirA biotin-protein ligase bulk reaction kit [Avidity, USA]), and purified by size exclusion chromatography (Superdex 75 column [GE Healthcare]) in HBS-EP (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.005% v/v Tween20). Purified protein was aliquoted and stored at –80°C until use. Soluble α and β subunits of 1G4 and A6 TCRs were produced in E. coli, isolated from inclusion bodies, refolded in vitro, and purified using size exclusion chromatography in HBS-EP, as described previously (Aleksic et al., 2010).
 
@@ -125,39 +573,39 @@ Soluble extracellular domain (ECD) of human CD58 (UniProt residues 29–204 or 2
 
 Biotinylation levels of pMHC and accessory ligands were routinely tested by gel shift on SDS-PAGE upon addition of saturating amounts of streptavidin.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
-TCR–pMHC interactions were analysed on a Biacore T200 instrument (GE Healthcare Life Sciences) at 37°C and a flow rate of 10 μl/min. Running buffer was HBS-EP. Streptavidin was coupled to CM5 sensor chips using an amino coupling kit (GE Healthcare Life Sciences) to near saturation, typically 10,000–12,000 response units (RU). Biotinylated pMHCs (47 kDa) were injected into the experimental flow cells (FCs) for different lengths of time to produce desired immobilisation levels (typically 500–1500 RU), which were matched as closely as feasible in each chip. Usually, FC1 was as a reference for FC2–FC4. Biotinylated CD58 ECD (24 kDa + ∼25 kDa glycosylation) was immobilised in FC1 at a level matching those of pMHCs. In some experiments, another FC was used as a reference. Excess streptavidin was blocked with two 40 s injections of 250 μM biotin (Avidity). Before injections of soluble 1G4 or A6 α⁢β TCR (51 kDa), the chip surface was conditioned with eight injections of the running buffer. Dilution series of TCRs were injected simultaneously in all FCs; the duration of injections (30–70 s) was the same for conditioning and TCR injections. After every 2–3 TCR injections, buffer was injected to generate data for double referencing. After the final TCR injection and an additional buffer injection, W6/32 antibody (10 μg/ml; Biolegend; lot: B233942) was injected for 10 min.
+TCR–pMHC interactions were analysed on a Biacore T200 instrument (GE Healthcare Life Sciences) at 37°C and a flow rate of 10 μl/min. Running buffer was HBS-EP. Streptavidin was coupled to CM5 sensor chips using an amino coupling kit (GE Healthcare Life Sciences) to near saturation, typically 10,000–12,000 response units (RU). Biotinylated pMHCs (47 kDa) were injected into the experimental flow cells (FCs) for different lengths of time to produce desired immobilisation levels (typically 500–1500 RU), which were matched as closely as feasible in each chip. Usually, FC1 was as a reference for FC2–FC4. Biotinylated CD58 ECD (24 kDa + ∼25 kDa glycosylation) was immobilised in FC1 at a level matching those of pMHCs. In some experiments, another FC was used as a reference. Excess streptavidin was blocked with two 40 s injections of 250 μM biotin (Avidity). Before injections of soluble 1G4 or A6 $\alpha⁢\beta$ TCR (51 kDa), the chip surface was conditioned with eight injections of the running buffer. Dilution series of TCRs were injected simultaneously in all FCs; the duration of injections (30–70 s) was the same for conditioning and TCR injections. After every 2–3 TCR injections, buffer was injected to generate data for double referencing. After the final TCR injection and an additional buffer injection, W6/32 antibody (10 μg/ml; Biolegend; lot: B233942) was injected for 10 min.
 
-TCR steady-state binding was measured >10 s post-injection. In addition to subtracting the signal from the reference FC with immobilised CD58 (single referencing), all TCR binding data was double referenced (Myszka, 1999) versus the average of the closest buffer injections before and after TCR injection. This allows to exclude small differences in signal between flow cells (e.g. drifts). TCR binding versus TCR concentration was fitted with the following model: B=Bm⁢a⁢x*[T⁢C⁢R]/(KD+[T⁢C⁢R]), where B is the response/binding, Bmax the maximal binding (this parameter is either kept free or is fixed with the W6/32-derived Bmax), and [T⁢C⁢R] the injected TCR concentration. Maximal W6/32 binding (Rmax) was used to generate the empirical standard curve and to infer the Bmax of TCRs from the standard curve. Rmax was derived by fitting the W6/32 binding data after double referencing with the following, empirically chosen, model: R=Rm⁢a⁢x*t/(Kt+t), where t is time (s), R the sensogram response after single referencing, and Kt a nuisance parameter. The empirical standard curve only contained data where the ratio of the highest concentration of TCR to the fitted KD value (obtained using the standard method with Bmax fitted) was 2.5 or more. This threshold ensured that the binding response curves saturated so that only accurate measurements of Bmax were included. All interactions were fit using both the fitted and constrained Bmax method (Figure 1E). For constrained KD above 20 μM, we reported the constrained KD, otherwise we use the Bmax fitted KD. SPR data was analysed using GraphPad Prism 8 (GraphPad software) or using a custom Python script (Python v3.7 and lmfit v0.9.13).
+TCR steady-state binding was measured >10 s post-injection. In addition to subtracting the signal from the reference FC with immobilised CD58 (single referencing), all TCR binding data was double referenced (Myszka, 1999) versus the average of the closest buffer injections before and after TCR injection. This allows to exclude small differences in signal between flow cells (e.g. drifts). TCR binding versus TCR concentration was fitted with the following model: $B=B_{m⁢a⁢x}*[T⁢C⁢R]/(K_{D}+[T⁢C⁢R])$, where $B$ is the response/binding, Bmax the maximal binding (this parameter is either kept free or is fixed with the W6/32-derived Bmax), and $[T⁢C⁢R]$ the injected TCR concentration. Maximal W6/32 binding (Rmax) was used to generate the empirical standard curve and to infer the Bmax of TCRs from the standard curve. Rmax was derived by fitting the W6/32 binding data after double referencing with the following, empirically chosen, model: $R=R_{m⁢a⁢x}*t/(K_{t}+t)$, where $t$ is time (s), $R$ the sensogram response after single referencing, and $K_{t}$ a nuisance parameter. The empirical standard curve only contained data where the ratio of the highest concentration of TCR to the fitted KD value (obtained using the standard method with Bmax fitted) was 2.5 or more. This threshold ensured that the binding response curves saturated so that only accurate measurements of Bmax were included. All interactions were fit using both the fitted and constrained Bmax method (Figure 1E). For constrained KD above 20 μM, we reported the constrained KD, otherwise we use the Bmax fitted KD. SPR data was analysed using GraphPad Prism 8 (GraphPad software) or using a custom Python script (Python v3.7 and lmfit v0.9.13).
 
-## Co-culture of naïve and memory T cells
+### Co-culture of naïve and memory T cells
 
 The assay was performed as previously described (Abu-Shah et al., 2019). Naïve and memory T cells were isolated from anonymised HLA-A2+ leukocyte cones obtained from the NHS Blood and Transplantation service at Oxford University Hospitals by (REC 11/H0711/7), using EasySep Human naïve CD8+ T Cell Isolation Kit (STEMCELL) and EasySep Human Memory CD8+ T Cell Enrichment Kit (STEMCELL), respectively. Cells were washed 3× with Opti-MEM serum-free medium (Thermo Fisher) and 2.5–5.0 Mio cells were resuspended at a density of 25 Mio/ml. Suspension was mixed with 5 μg/Mio cells of 1G4α, 1G4β, and CD3ζ each, and 100–200 μl suspension was transferred into a BTX Cuvette Plus electroporation cuvette (2 mm gap; Harvard Bioscience). Electroporation was performed using a BTX ECM 830 Square Wave Electroporation System (Harvard Bioscience) at 300 V, 2 ms. T cells were used 24 hr after electroporation. 1G4 TCR contained an engineered cysteine (αT48C and βS57C) to reduce mispairing (Cohen et al., 2007).
 
 Autologous monocytes were enriched from the same blood product using RosetteSep Human Monocyte Enrichment Cocktail (Stemcell), cultured at 1–2 Mio/ml in 12-well plates in the presence of 50 ng/ml IL4 (PeproTech) and 100 ng/ml GM-CSF (Immunotools) for 24 hr to induce differentiation. Maturation into moDCs was induced by adding 1 μM PGE2 (Sigma Aldrich), 10 ng/ml IL1β (Biotechne), 20 ng/ml IFNγ, and 50 ng/ml TNF (PeproTech) for an additional 24 hr. MoDCs (50,000/well) were loaded for 60–90 min at 37°C with peptide and labelled with Cell Trace Violet (Thermo Fisher) to distinguish them from T cells prior to co-culturing with 50,000 T cells/well in a 96-well plate for 24 hr. T cell activation was assessed by flow cytometry and testing culture supernatant for cytokines using ELISAs.
 
-## T cell blasts
+### T cell blasts
 
 All cell culture of human T cells was done using complete RPMI (10% FCS, 1% penicillin/streptomycin) at 37°C, 5% CO2. T cells were isolated from whole blood from healthy donors or leukocyte cones purchased from the NHS Blood and Transplantation service at the John Radcliffe Hospital. For whole blood donations, a maximum of 50 ml was collected by a trained phlebotomist after informed consent had been given. This project has been approved by the Medical Sciences Inter-Divisional Research Ethics Committee of the University of Oxford (R51997/RE001), and all samples were anonymised in compliance with the Data Protection Act.
 
 For plate stimulations and experiments with U87 target cells, CD8+ T cells were isolated using RosetteSep Human CD8+ enrichment cocktail (STEMCELL) at 6 μl/ml for whole blood or 150 μl/ml for leukocyte cones. After 20 min incubation at room temperature, blood cone samples were diluted 3.125-fold with PBS, while whole blood samples were used directly. Samples were layered on Ficoll Paque Plus (GE) at a 0.8:1.0 Ficoll:sample ratio and spun at 1200 g for 20–30 min at room temperature. Buffy coats were collected, washed twice, counted, and cells were resuspended in complete RMPI with 50 U/ml IL2 (PeproTech) and CD3/CD28 Human T-activator dynabeads (Thermo Fisher) at a 1:1 bead:cell ratio. Aliquots of 1 Mio cells in 1 ml medium were grown overnight in 12- or 24-well plates (either TC-treated or coated with 5 μg/cm2 retronectin [Takara Bio]) and then transduced with VSV-pseudotyped lentivirus encoding for either the 1G4 or the A6 TCR. After 2 days (4 days after transduction), 1 ml of medium was exchanged, and IL2 was added to a final concentration of 50 U/ml. Beads were magnetically removed at day 5 post-transduction, and T cells from thereon were resuspended at 1 Mio/ml with 50 U/ml IL2 every other day. For functional experiments, T cells were used between 10 and 16 days after transduction.
 
-## Lentivirus production
+### Lentivirus production
 
 HEK 293T or Lenti-X 293T (Takara) were seeded in complete DMEM in 6-well plate to reach 60–80% confluency after 1 day. Cells were either transfected with 0.95 μg pRSV-Rev, 0.37 μg pVSV-G (pMD2.G), 0.95 μg pGAG (pMDLg/pRRE), and 0.8 μg of pLEX-A6 or pHR-1G4 with 9 μl X-tremeGENE nine or HP (both Roche). Lentiviral supernatant was harvested after 20–30 hr and filtered through a 0.45 μm cellulose acetate filter. In an updated version, LentiX cells were transfected with 0.25 μg pRSV-Rev, 0.53 μg pGAG, 0.35 μg pVSV-G, and 0.8 μg transfer plasmid using 5.8 μl X-tremeGENE HP. Medium was replaced after 12–18 hr, and supernatant harvested as above after 30–40 hr. Supernatant from one well of a 6-well plate was used to transduce 1 Mio T cells. Sequence for the A6 TCR lacked one natural cysteine per chain and included engineered cysteines (αT48C and βS57C) to reduce the formation of mixed TCR dimers with endogenous TCR (Cohen et al., 2007). The 1G4 TCR was expressed from the WT sequences without engineered cysteines.
 
-## Co-culture of T cell blasts
+### Co-culture of T cell blasts
 
 For co-culture experiments with U87 (a kind gift of Vincenzo Cerundolo, University of Oxford), 30,000 target cells were seeded in a TC-coated 96-well F-bottom plate and incubated overnight. Peptides were diluted in complete DMEM (10% FCS, 1% penicillin/streptomycin) to their final concentration and incubated with U87 cells for 1–2 hr at 37°C. Peptide-containing medium was removed and 60,000 TCR-transduced primary human CD8+ T cell blasts were added, spun for 2 min at 50 g, and incubated for 5 hr at 37 °C. At the end of the experiment, 10 mM EDTA was added and cells were detached by vigorous pipetting. Cells were stained for flow cytometry and analysed immediately, or fixed and stored for up to 1 day before running. Supernatants were saved for cytokine ELISAs.
 
-## Plate stimulation
+### Plate stimulation
 
 Glass-bottom Sensoplates (96-well; Greiner) were washed with 1 M HCl/70% EtOH, thoroughly rinsed twice with PBS, and coated overnight at 4°C with 100 μl/well of 1 mg/ml biotinylated BSA (Thermo Fisher) in PBS. Plates were washed with PBS twice and incubated for at least 1 hr with 20 μg/ml streptavidin (Thermo Fisher) in 1% BSA/PBS at room temperature. Plates were washed again with PBS and biotinylated pMHC (in-house) was added for at least 1 hr at room temperature or overnight at 4°C. Plates were emptied and accessory ligand (CD58 or ICAM1, in-house) or PBS was added for the same duration as above. Upon completion, plates were washed once and stored for up to 1 day in PBS at 4°C.
 
 For stimulation, T cells were counted, washed once to remove excess IL2, and 75,000 cells in 180–200 μl complete RMPI were dispensed per well. Cells were briefly spun down at 50 g to settle to the bottom and subsequently incubated for 4 hr at 37°C. At the end of the experiment, 10 mM EDTA was added and cells were detached by vigorous pipetting. Cells were stained for flow cytometry and analysed immediately, or fixed and stored for up to 1 day. Supernatants were saved for cytokine ELISAs.
 
-## Peptides and loading
+### Peptides and loading
 
 We used peptide ligands that were either described previously (Aleksic et al., 2010; Lever et al., 2016; Ding et al., 1998; Ding et al., 1999; Gagnon et al., 2006; Borbulevych et al., 2009; Borbulevych et al., 2011) or designed by us based on the published crystal structures of these TCRs in complex with MHC (1G4: PDB 2BNQ, A6: PDB 1AO7).
 
@@ -165,110 +613,222 @@ Peptides were synthesised at a purity of >95% (Peptide Protein Research, UK). Ta
 
 Loading efficiency was evaluated by pulsing T2 cells for 1–2 hr at 37°C with a titration of peptides. Loading was assessed as upregulation of HLA-A2 (clone: BB7.2; Biolegend) by flow cytometry.
 
-## Flow cytometry
+### Flow cytometry
 
 Tetramers were produced in-house using refolded monomeric, biotinylated pMHC, and streptavidin-PE (Biolegend) at a 1:4 molar ratio. Streptavidin-PE was added in 10 steps and incubated for 10 min while shaking at room temperature. Insoluble proteins were removed by brief centrifugation at 13,000 g and 0.05–0.1% sodium azide added for preservation. Tetramers were kept for up to 3 months at 4°C. Cells were stained for CD69 with clones FN50 (Biolegend). Staining for CD45 (clone HI30; Biolegend) was used to distinguish target and effector cells in co-culture assays with U87 cells. Cell viability staining was routinely performed for plate stimulations and U87 co-culture using fixable violet or near-infrared viability dyes (Zombie UV fixable viability kit [Biolegend], Zombie NIR fixable viability kit [Biolegend], eBioscience fixable viability dye eFluor 780 [Invitrogen]). Samples were analysed using a BD X-20 flow cytometer, and data analysis was performed using FlowJo v10 (BD Biosciences).
 
-## ELISAs
+### ELISAs
 
 Human IL-2 Ready-SET Go! ELISA kit (eBioscience/Invitrogen) or Human TNF alpha ELISA Ready-SET-Go! (eBioscience/Invitrogen) and Nunc MaxiSorp 96-well plates (Thermo Fisher) were used according to the manufacturer's instructions to test appropriately diluted (commonly 4–30-fold) T cell supernatant for secretion of IL2 or TNF.
 
-## TCR expression
+### TCR expression
 
-TCR α⁢β- KO Jurkat E6.1 cells (a kind gift of Edward Jenkins) were transduced with 1G4 or A6 lentivirus, and TCR expression was measured by staining for CD3 (clone: UCHT1; Biolegend) and TCR α⁢β (clone IP26; Biolegend).
+TCR $\alpha⁢\beta$- KO Jurkat E6.1 cells (a kind gift of Edward Jenkins) were transduced with 1G4 or A6 lentivirus, and TCR expression was measured by staining for CD3 (clone: UCHT1; Biolegend) and TCR $\alpha⁢\beta$ (clone IP26; Biolegend).
 
-## Data analysis
+### Data analysis
 
-Quantitative analysis of antigen discrimination was performed by first fitting dose-response data with a four-parameter sigmoidal model on a linear scale in Python v3.7 and lmfit v0.9.13 using Levenbergâ€“Marquardt:R⁢(x)=Em⁢i⁢n+Em⁢a⁢x-Em⁢i⁢n1+(E⁢C50x)H
+Quantitative analysis of antigen discrimination was performed by first fitting dose-response data with a four-parameter sigmoidal model on a linear scale in Python v3.7 and lmfit v0.9.13 using Levenbergâ€“Marquardt:
 
-where x refers to the peptide concentration used to pulse the target cells (in μM) or the amount of pMHC used to coat the well of a plate (in ng/well). The curve produced by this fit was used to interpolate potency as the concentration of antigen required to induce activation of 15% for CD69 (P15) and 10% for IL2 (P10). These percentages were chosen based on noise levels and to include lower-affinity antigens in the potency plots. Potency values exceeding doses used for pulsing or coating were excluded from the analysis (i.e. no extrapolated data was included in the analysis).
+$$
+R⁢(x)=E_{m⁢i⁢n}+\frac{E_{m⁢a⁢x}-E_{m⁢i⁢n}}{1+(\frac{E⁢C_{50}}{x})^{H}}
+$$
 
-To determine the discrimination power α, we fitted the power law in log-space to our data:P15′=C+α⁢KD′
+where $x$ refers to the peptide concentration used to pulse the target cells (in μM) or the amount of pMHC used to coat the well of a plate (in ng/well). The curve produced by this fit was used to interpolate potency as the concentration of antigen required to induce activation of 15% for CD69 (P15) and 10% for IL2 (P10). These percentages were chosen based on noise levels and to include lower-affinity antigens in the potency plots. Potency values exceeding doses used for pulsing or coating were excluded from the analysis (i.e. no extrapolated data was included in the analysis).
 
-where P15′=log10⁡(P15) and KD′=log10⁡(KD). All data analysis was performed using GraphPad Prism (GraphPad Software), if not stated otherwise.
+To determine the discrimination power α, we fitted the power law in log-space to our data:
 
-## Kinetic proofreading: fitting to data
+$$
+P_{15}^{′}=C+\alpha⁢K_{D}^{′}
+$$
 
-## Deriving the expression for ligand potency
+where $P_{15}^{′}=log_{10}⁡(P_{15})$ and $K_{D}^{′}=log_{10}⁡(K_{D})$. All data analysis was performed using GraphPad Prism (GraphPad Software), if not stated otherwise.
 
-A pMHC ligand L can bind with a TCR R to create a complex C0 at a rate kon. In order for this complex to initiate TCR signalling, it undergoes a series of N steps. We denote by Ci a TCR/pMHC complex in the ith KP step. A complex Ci becomes a complex Ci+1 with rate kp, for 0≤i≤N-1. At any KP step the pMHC ligand can unbind with rate koff. Let L⁢(t), R⁢(t), and Ci⁢(t) be the concentration of ligand, receptor, and complex in the ith KP step at time t, respectively. The system of ordinary differential equations that govern the temporal evolution of the concentrations is given by(1a)dL(t)dt=koff∑i=0NCi(t)−konL(t)R(t)(1b)dR(t)dt=koff∑i=0NCi(t)−konL(t)R(t)(1c)dC0(t)dt=konL(t)R(t)−(koff+kp)C0(t)(1d)dCi(t)dt=kpCi−1(t)−(koff+kp)Ci(t),for 1≤i≤N−1,(1e)dC0(t)dt=konL(t)R(t)−(koff+kp)C0(t).
+### Kinetic proofreading: fitting to data
 
-Let the initial number of pMHC ligands and TCRs be L0 and R0, respectively. We then define the total number of complexes at time t as Ctot⁢(t)=∑i=0NCi⁢(t) and note the two conservation equations, L0=L⁢(t)+Ctot⁢(t) and R0=R⁢(t)+Ctot⁢(t). Solving the steady-state equations arising from setting the time derivatives in Equation 1 to zero, and substituting in the conservation equations we find that(2)CN=(1+koffkp)−NCtot,
+#### Deriving the expression for ligand potency
 
-where(3)Ctot=L0+R0+koffkon−(L0+R0+koffkon)2−4L0R02.
+A pMHC ligand $L$ can bind with a TCR $R$ to create a complex C0 at a rate $k_{on}$. In order for this complex to initiate TCR signalling, it undergoes a series of $N$ steps. We denote by $C_{i}$ a TCR/pMHC complex in the ith KP step. A complex $C_{i}$ becomes a complex $C_{i+1}$ with rate kp, for $0\leqi\leqN-1$. At any KP step the pMHC ligand can unbind with rate $k_{off}$. Let $L⁢(t)$, $R⁢(t)$, and $C_{i}⁢(t)$ be the concentration of ligand, receptor, and complex in the ith KP step at time $t$, respectively. The system of ordinary differential equations that govern the temporal evolution of the concentrations is given by
 
-The expression in Equation 2 determines the concentration of actively signalling TCR/pMHC complexes CN for a given number of ligands L0. To fit this model to the potency data, we are interested in calculating the concentration of pMHC ligand required to initiate T cell activation for different TCR/pMHC binding parameters. We first introduce a few convenient rescalings and redefinitions. We define x=L0/R0 to be the potency of ligand concentration relative to the total number of receptors and let λ=CN/R0 be a threshold parameter that dictates how much CN complex is needed to activate a T cell response relative to the total number of receptors. Thus Equation 2 can be rewritten as(4)2λ(1+koffkp)N=1+x+koffR0kon−(1+x+koffR0kon)2−4x.
+$$
+\frac{dL(t)}{dt}=k_{off}\sumi=0NC_{i}(t)−k_{on}L(t)R(t)
+$$
 
-The experimental measurements of potency do not directly correspond to the potency x in our model as the exact number of ligand and receptor is unknown. Therefore, we introduce a constant of proportionality γ into our model such that x→γ⁢x. Similarly, the ratio koff/kon is a measure of ligand affinity and is directly proportional to the experimental KD values, thus we introduce a second constant of proportionality δ such that koff/(R0⁢kon)→δ⁢KD, where we absorb the constant R0 into the new parameter. With these adjustments, Equation 4 becomes(5)2λ(1+koffkp)N=1+γx+δKD−(1+γx+δKD)2−4γx.
 
-Upon rearranging Equation 5, we find that(6)−(1+γx+δKD)2−4γx=2λ(1+koffkp)N−(1+γx+δKD),
 
-we then square (squaring both sides will not introduce a false solution so long as λ⁢(1+koff⁢kp)N§lt;1) both sides of Equation 6 and find the following expression for the potency:(7)x=λ(1+koffkp)Nγ[1−δKDλ(1+koffkp)N−1].
+$$
+\frac{dR(t)}{dt}=k_{off}\sumi=0NC_{i}(t)−k_{on}L(t)R(t)
+$$
 
-## Fitting the potency expression using ABC-SMC parameter estimation
 
-We used the Approximate Bayesian Computation-Sequential Monte Carlo (ABC-SMC) algorithm to determine the distribution of KP model parameters that fit the experimental data. Our KP model has five parameters, N, kp, λ, γ, and δ. We fit the model parameters to the plate and the cell data separately. For both the plate and the cell data, we fit N, γ, and δ as a global parameter shared amongst all experimental repeats. The parameters kp and λ are fitted locally for each repeat. We fit the potency equation to the experimental data in log space, and as such the log expression for potency, ρ⁢(N,kp,λ^,γ,δ^), calculated from Equation 7 is given by(8)ρ(N,kp,λ^,γ,δ^;KD)=log10⁡(λ^)+Nlog10⁡(1+koffkp)+log10⁡(1−δ^KDλ^(1+koffkp)N−1γ),
 
-where λ^=λ/γ and δ^=δ/γ. These rescalings ensure that the parameters are orthogonal and thus parameter space can be searched efficiently. The fast kinetics of the low-affinity pMHCs precluded direct measurements of koff, and instead, we noted that on-rates exhibit small variations between pMHCs that differ by few amino acids (Aleksic et al., 2010; Lever et al., 2016). Therefore, we estimated koff using KD and a fixed kon of 0.0447 μM-1s-1 taken as the average kon of NYE 9C, 9V, 3A, 3I, 3M, 3Y, and 6V previously measured at 37°C (Aleksic et al., 2010).
+$$
+\frac{dC_{0}(t)}{dt}=k_{on}L(t)R(t)−(k_{off}+k_{p})C_{0}(t)
+$$
 
-We chose uniform prior distributions in log space for each parameter except N, where a uniform prior in linear space was used. This allows for efficient search through parameter space over many orders of magnitude. The priors for the plate data are as follows:(9a)N∼⁢Unif⁢(0,4),(9b)log10⁡(kp)∼⁢Unif⁢(-1,1),(9c)log10⁡(λ^)∼⁢Unif⁢(-4,1),(9d)log10⁡(γ)∼⁢Unif⁢(-6,-4),(9e)log10⁡(δ^)∼⁢Unif⁢(-7,-5),
 
-where the priors for the cell data are the same other than for λ^ where log10⁡(λ^)∼Unif⁢(-6,-3).
 
-Recall that we fit the parameters N, γ, and δ^ globally and λ^ and kp are fitted locally. For the plate data, this results in 27 parameters to fit whilst for the cell data there are 37 parameters. Let Θ=(N,γ,δ^,kp→,λ^→) be the vector of parameters to fit such that the ith entry of the vectors kp→ and λ^→ correspond to the local parameters for the ith experiment. Then let KD→i be the vector of experimentally measured KD values, and P→i be the vector of potency measurements for the ith experiment. These vectors differ in length and so we denote by di the number of data points in the ith experiment. We measure the similarity between the KP model and the experimental results via the following distance function:(10)D⁢(Θ)=∑i=1I∑j=1di(ρ⁢(N,[kp→]i,λ^i,γ,δ^;[KD→i]j)-log10⁡([P→i]j))2,
+$$
+\frac{dC_{i}(t)}{dt}=k_{p}C_{i−1}(t)−(k_{off}+k_{p})C_{i}(t),for 1\leqi\leqN−1,
+$$
 
-where I denotes the total number of experiments, I=12 and I=17 for the plate and cell data, respectively.
 
-To perform a randomised search through the parameter space, we employed the following Metropolis–Hastings algorithm. We sample an initial parameter set Θ0 from the prior distributions detailed above. Let Θcurr denote the current set of parameters which initially is Θ0. A candidate set of parameters, Θcand, is found by adding a random perturbation to Θcurr. The perturbation is achieved by adding a uniform random shift to each parameter in Θcurr independently. The range of the uniform random shift is [-0.005,0.005] multiplied by the width of the prior. For example, we perturb the N parameter by adding a random uniform shift in the interval [-0.02,0.02]. If the parameter falls outside the bounds in the prior distribution, it is reflected symmetrically back within the bounds. We then have to decide whether to accept or reject the candidate set of parameters. If D⁢(Θcand)§lt;D⁢(Θcurr), then we accept the parameters as they share a greater similarity with the experimental data and set Θcurr=Θcand. Otherwise we only accept the candidate parameters with probability exp⁡(-(D⁢(Θcand)-D⁢(Θcurr))/ξ), where ξ is a parameter that controls how likely accepting a set of parameters with a higher distance function is. The value of ξ is reduced as the algorithm gets closer to a set of parameters that minimises the distance function. Initially ξ=10 but is subsequently reduced to {1,0.1,0.01,0.005,0.001} when the distance function of the candidate set of parameters first reaches {50,30,20,18,17.5} for the plate data and {100,75,50,40,35} for the cell data. The algorithm continues until it reaches a final set of parameters that has a distance less than 11.08 or 39.2 for the plate and cell data, respectively. For both the plate and cell data, we performed this algorithm 1000 times to capture the distribution of parameter values that fit the experimental data.
+
+$$
+\frac{dC_{0}(t)}{dt}=k_{on}L(t)R(t)−(k_{off}+k_{p})C_{0}(t).
+$$
+
+Let the initial number of pMHC ligands and TCRs be L0 and R0, respectively. We then define the total number of complexes at time $t$ as $C_{tot}⁢(t)=\sum_{i=0}^{N}C_{i}⁢(t)$ and note the two conservation equations, $L_{0}=L⁢(t)+C_{tot}⁢(t)$ and $R_{0}=R⁢(t)+C_{tot}⁢(t)$. Solving the steady-state equations arising from setting the time derivatives in Equation 1 to zero, and substituting in the conservation equations we find that
+
+$$
+C_{N}=(1+\frac{k_{off}}{k_{p}})^{−N}C_{tot},
+$$
+
+where
+
+$$
+C_{tot}=\frac{L_{0}+R_{0}+\frac{k_{off}}{k_{on}}−\sqrt{(L_{0}+R_{0}+\frac{k_{off}}{k_{on}})^{2}−4L_{0}R_{0}}}{2}.
+$$
+
+The expression in Equation 2 determines the concentration of actively signalling TCR/pMHC complexes $C_{N}$ for a given number of ligands L0. To fit this model to the potency data, we are interested in calculating the concentration of pMHC ligand required to initiate T cell activation for different TCR/pMHC binding parameters. We first introduce a few convenient rescalings and redefinitions. We define $x=L_{0}/R_{0}$ to be the potency of ligand concentration relative to the total number of receptors and let $\lambda=C_{N}/R_{0}$ be a threshold parameter that dictates how much $C_{N}$ complex is needed to activate a T cell response relative to the total number of receptors. Thus Equation 2 can be rewritten as
+
+$$
+2\lambda(1+\frac{k_{off}}{k_{p}})^{N}=1+x+\frac{k_{off}}{R_{0}k_{on}}−\sqrt{(1+x+\frac{k_{off}}{R_{0}k_{on}})^{2}−4x}.
+$$
+
+The experimental measurements of potency do not directly correspond to the potency $x$ in our model as the exact number of ligand and receptor is unknown. Therefore, we introduce a constant of proportionality γ into our model such that $x→\gamma⁢x$. Similarly, the ratio $k_{off}/k_{on}$ is a measure of ligand affinity and is directly proportional to the experimental KD values, thus we introduce a second constant of proportionality δ such that $k_{off}/(R_{0}⁢k_{on})→\delta⁢K_{D}$, where we absorb the constant R0 into the new parameter. With these adjustments, Equation 4 becomes
+
+$$
+2\lambda(1+\frac{k_{off}}{k_{p}})^{N}=1+\gammax+\deltaK_{D}−\sqrt{(1+\gammax+\deltaK_{D})^{2}−4\gammax}.
+$$
+
+Upon rearranging Equation 5, we find that
+
+$$
+−\sqrt{(1+\gammax+\deltaK_{D})^{2}−4\gammax}=2\lambda(1+\frac{k_{off}}{k_{p}})^{N}−(1+\gammax+\deltaK_{D}),
+$$
+
+we then square (squaring both sides will not introduce a false solution so long as $\lambda⁢(1+k_{off}⁢k_{p})^{N}§lt;1$) both sides of Equation 6 and find the following expression for the potency:
+
+$$
+x=\frac{\lambda(1+\frac{k_{off}}{k_{p}})^{N}}{\gamma}[1−\frac{\deltaK_{D}}{\lambda(1+\frac{k_{off}}{k_{p}})^{N}−1}].
+$$
+
+#### Fitting the potency expression using ABC-SMC parameter estimation
+
+We used the Approximate Bayesian Computation-Sequential Monte Carlo (ABC-SMC) algorithm to determine the distribution of KP model parameters that fit the experimental data. Our KP model has five parameters, $N$, kp, λ, γ, and δ. We fit the model parameters to the plate and the cell data separately. For both the plate and the cell data, we fit $N$, γ, and δ as a global parameter shared amongst all experimental repeats. The parameters kp and λ are fitted locally for each repeat. We fit the potency equation to the experimental data in log space, and as such the log expression for potency, $ρ⁢(N,k_{p},\lambda^,\gamma,\delta^)$, calculated from Equation 7 is given by
+
+$$
+ρ(N,k_{p},\lambda^,\gamma,\delta^;K_{D})=log_{10}⁡(\lambda^)+Nlog_{10}⁡(1+\frac{k_{off}}{k_{p}})+log_{10}⁡(1−\frac{\delta^K_{D}}{\lambda^(1+\frac{k_{off}}{k_{p}})^{N}−\frac{1}{\gamma}}),
+$$
+
+where $\lambda^=\lambda/\gamma$ and $\delta^=\delta/\gamma$. These rescalings ensure that the parameters are orthogonal and thus parameter space can be searched efficiently. The fast kinetics of the low-affinity pMHCs precluded direct measurements of $k$off, and instead, we noted that on-rates exhibit small variations between pMHCs that differ by few amino acids (Aleksic et al., 2010; Lever et al., 2016). Therefore, we estimated $k$off using KD and a fixed $k$on of 0.0447 μM-1s-1 taken as the average $k$on of NYE 9C, 9V, 3A, 3I, 3M, 3Y, and 6V previously measured at 37°C (Aleksic et al., 2010).
+
+We chose uniform prior distributions in log space for each parameter except $N$, where a uniform prior in linear space was used. This allows for efficient search through parameter space over many orders of magnitude. The priors for the plate data are as follows:
+
+$$
+N∼⁢Unif⁢(0,4),
+$$
+
+
+
+$$
+log_{10}⁡(k_{p})∼⁢Unif⁢(-1,1),
+$$
+
+
+
+$$
+log_{10}⁡(\lambda^)∼⁢Unif⁢(-4,1),
+$$
+
+
+
+$$
+log_{10}⁡(\gamma)∼⁢Unif⁢(-6,-4),
+$$
+
+
+
+$$
+log_{10}⁡(\delta^)∼⁢Unif⁢(-7,-5),
+$$
+
+where the priors for the cell data are the same other than for $\lambda^$ where $log_{10}⁡(\lambda^)∼Unif⁢(-6,-3)$.
+
+Recall that we fit the parameters $N$, γ, and $\delta^$ globally and $\lambda^$ and kp are fitted locally. For the plate data, this results in 27 parameters to fit whilst for the cell data there are 37 parameters. Let $Θ=(N,\gamma,\delta^,k_{p}→,\lambda^→)$ be the vector of parameters to fit such that the ith entry of the vectors $k_{p}→$ and $\lambda^→$ correspond to the local parameters for the ith experiment. Then let $K_{D}→^{i}$ be the vector of experimentally measured KD values, and $P→^{i}$ be the vector of potency measurements for the ith experiment. These vectors differ in length and so we denote by di the number of data points in the ith experiment. We measure the similarity between the KP model and the experimental results via the following distance function:
+
+$$
+D⁢(Θ)=\sumi=1I\sumj=1d_{i}(ρ⁢(N,[k_{p}→]_{i},\lambda^_{i},\gamma,\delta^;[K_{D}→^{i}]_{j})-log_{10}⁡([P→^{i}]_{j}))^{2},
+$$
+
+where $I$ denotes the total number of experiments, $I=12$ and $I=17$ for the plate and cell data, respectively.
+
+To perform a randomised search through the parameter space, we employed the following Metropolis–Hastings algorithm. We sample an initial parameter set $Θ_{0}$ from the prior distributions detailed above. Let $Θ_{curr}$ denote the current set of parameters which initially is $Θ_{0}$. A candidate set of parameters, $Θ_{cand}$, is found by adding a random perturbation to $Θ_{curr}$. The perturbation is achieved by adding a uniform random shift to each parameter in $Θ_{curr}$ independently. The range of the uniform random shift is $[-0.005,0.005]$ multiplied by the width of the prior. For example, we perturb the $N$ parameter by adding a random uniform shift in the interval $[-0.02,0.02]$. If the parameter falls outside the bounds in the prior distribution, it is reflected symmetrically back within the bounds. We then have to decide whether to accept or reject the candidate set of parameters. If $D⁢(Θ_{cand})§lt;D⁢(Θ_{curr})$, then we accept the parameters as they share a greater similarity with the experimental data and set $Θ_{curr}=Θ_{cand}$. Otherwise we only accept the candidate parameters with probability $exp⁡(-(D⁢(Θ_{cand})-D⁢(Θ_{curr}))/ξ)$, where ξ is a parameter that controls how likely accepting a set of parameters with a higher distance function is. The value of ξ is reduced as the algorithm gets closer to a set of parameters that minimises the distance function. Initially $ξ=10$ but is subsequently reduced to ${1,0.1,0.01,0.005,0.001}$ when the distance function of the candidate set of parameters first reaches ${50,30,20,18,17.5}$ for the plate data and ${100,75,50,40,35}$ for the cell data. The algorithm continues until it reaches a final set of parameters that has a distance less than 11.08 or 39.2 for the plate and cell data, respectively. For both the plate and cell data, we performed this algorithm 1000 times to capture the distribution of parameter values that fit the experimental data.
 
 The ABC-SMC algorithm described above was implemented with custom C++ code (Apple LLVM version 7.0.0, clang-700.1.76). The distributions of the parameters are presented in Figure 5—figure supplement 1.
 
-## Kinetic proofreading: binary heatmaps of discrimination and sensitivity
+### Kinetic proofreading: binary heatmaps of discrimination and sensitivity
 
-We defined measures of sensitivity and discrimination in order to test whether the KP mechanism can explain both for different KP model parameters. Recall that λ is the minimum threshold concentration of productively signalling TCR/pMHC complexes in the Nth step. To determine TCR sensitivity, we require that the number of productively signalling TCRs is above the threshold for a single agonist pMHC with the highest affinity KD;1=koff;1/kon. From Equation 3, we can make the approximation Ctotal≈min⁡(L0,R0) when L0+R0≫KD;1. Then, noting that min⁡(1,R0)=1 and using Equation 2 we can write the sensitivity requirement as the following inequality:(11)CN=(1+konKD;1kp)−N>λ.
+We defined measures of sensitivity and discrimination in order to test whether the KP mechanism can explain both for different KP model parameters. Recall that λ is the minimum threshold concentration of productively signalling TCR/pMHC complexes in the Nth step. To determine TCR sensitivity, we require that the number of productively signalling TCRs is above the threshold for a single agonist pMHC with the highest affinity $K_{D;1}=k_{off;1}/k_{on}$. From Equation 3, we can make the approximation $C_{total}≈min⁡(L_{0},R_{0})$ when $L_{0}+R_{0}≫K_{D;1}$. Then, noting that $min⁡(1,R_{0})=1$ and using Equation 2 we can write the sensitivity requirement as the following inequality:
 
-To determine TCR discrimination, we determined whether the number of productively signalling TCRs was below the same threshold λ for a pMHC that was expressed at 10,000-fold higher concentration but bound with a Δ-fold lower affinity. With our empirical equation for the discrimination power (P=10C⁢KDα), we can calculate the potency P for a given ligand affinity. Assuming KD is proportional to koff and P is a ligand concentration needed to activate the TCR L0, we can rewrite the equation as L0=10C⁢ko⁢f⁢fα. The difference in potency between the ligand interaction with the higher affinity KD;1 and a ligand with lower affinity KD;2 is hence:(12)L0;2L0;1=(koff;2koff;1)α
+$$
+C_{N}=(1+\frac{k_{on}K_{D;1}}{k_{p}})^{−N}>\lambda.
+$$
 
-As we require L0;1 to be 1 to fulfil the sensitivity constrain, the equation simplifies to L0;2=Δα with Δ being the difference in affinity between the two ligands. Hence, a ligand with Δ-fold lower-affinity than the higher-affinity ligand will need a concentration of L0;2 ligands for activation. For the discrimination constraint, we require that a ligand with Δ-fold lower affinity than the highest affinity ligand needs L0;2 or more ligands to overcome the threshold of activation. The discrimination requirement can be written as the following inequality:(13)CN=min(L0;2,R0)(1+ΔkonKD;1kp)−N<λ.
+To determine TCR discrimination, we determined whether the number of productively signalling TCRs was below the same threshold λ for a pMHC that was expressed at 10,000-fold higher concentration but bound with a $Δ$-fold lower affinity. With our empirical equation for the discrimination power ($P=10^{C}⁢K_{D}^{\alpha}$), we can calculate the potency $P$ for a given ligand affinity. Assuming KD is proportional to $k$off and $P$ is a ligand concentration needed to activate the TCR L0, we can rewrite the equation as $L_{0}=10^{C}⁢k_{o⁢f⁢f}^{\alpha}$. The difference in potency between the ligand interaction with the higher affinity $K_{D;1}$ and a ligand with lower affinity $K_{D;2}$ is hence:
+
+$$
+\frac{L_{0;2}}{L_{0;1}}=(\frac{k_{off;2}}{k_{off;1}})^{\alpha}
+$$
+
+As we require $L_{0;1}$ to be 1 to fulfil the sensitivity constrain, the equation simplifies to $L_{0;2}=Δ^{\alpha}$ with $Δ$ being the difference in affinity between the two ligands. Hence, a ligand with $Δ$-fold lower-affinity than the higher-affinity ligand will need a concentration of $L_{0;2}$ ligands for activation. For the discrimination constraint, we require that a ligand with $Δ$-fold lower affinity than the highest affinity ligand needs $L_{0;2}$ or more ligands to overcome the threshold of activation. The discrimination requirement can be written as the following inequality:
+
+$$
+C_{N}=min(L_{0;2},R_{0})(1+Δ\frac{k_{on}K_{D;1}}{k_{p}})^{−N}<\lambda.
+$$
 
 Both of these constraints must be fulfilled simultaneously for a given set of KP parameters in order for the kinetic proofreading model to explain both sensitivity and discrimination.
 
-For the simulation of the KP model (Figure 5G–I), we choose Δ such that L0;2=10,000 according to ΔA=100001/α. Given that the number of TCRs is R0∼30,000, choosing ΔL§lt;R0 means that the receptors are not saturated with ligands and potency varies linearly with affinity. The final discrimination constraint function is as follows:(14)CN=10000(1+100001/αkonKD;1kp)−N<λ.
+For the simulation of the KP model (Figure 5G–I), we choose $Δ$ such that $L_{0;2}=10,000$ according to $Δ_{A}=10000^{1/\alpha}$. Given that the number of TCRs is $R_{0}∼30,000$, choosing $Δ_{L}§lt;R_{0}$ means that the receptors are not saturated with ligands and potency varies linearly with affinity. The final discrimination constraint function is as follows:
 
-In addition to using the deterministic KP model, we also calculated these sensitivity and discrimination measures using discrete stochastic simulations. We varied N and τ=1/kp. For each pair of parameters (N,τ), we simulate 250 realisations of the kinetic proofreading model using a standard Gillespie algorithm until a termination time of t=100 s, which is sufficient in order for the model to have reached a steady state. From this ensemble, an average number of receptors in the final (Nth) proofreading step, ⟨CN⟩, is calculated. This ensemble average is compared to the threshold for activation λ=0.1.
+$$
+C_{N}=10000(1+10000^{1/\alpha}\frac{k_{on}K_{D;1}}{k_{p}})^{−N}<\lambda.
+$$
 
-Testing for both sensitivity and discrimination for each parameter pair (N,τ) requires simulating the model in two different scenarios. The first scenario is with a single ligand and unit dissociation rate, that is, koff=1. If the ensemble average ⟨CN⟩§gt;0.1, then the parameter pair (N,τ) observes sensitivity and is shown as a red asterisk in the panels in Figure 5G–I. For discrimination, we increase the number of ligands to ΔL=10000 and decreased the affinity of the ligand by ΔA=100001/α,that is, koff=100001/α. If the average number of receptors ⟨CN⟩§lt;0.1, then discrimination is observed, and the parameter pair (N,τ) is shown as a blue square in Figure 5G–I. Parameter pairs that are shown with both a red asterisk and a blue square observe both sensitivity and discrimination. All stochastic simulations were performed with custom Julia code using the package DifferentialEquations.jl.
+In addition to using the deterministic KP model, we also calculated these sensitivity and discrimination measures using discrete stochastic simulations. We varied $N$ and $\tau=1/k_{p}$. For each pair of parameters $(N,\tau)$, we simulate 250 realisations of the kinetic proofreading model using a standard Gillespie algorithm until a termination time of $t=100$ s, which is sufficient in order for the model to have reached a steady state. From this ensemble, an average number of receptors in the final (Nth) proofreading step, $⟨C_{N}⟩$, is calculated. This ensemble average is compared to the threshold for activation $\lambda=0.1$.
 
-## Analysis of the discriminatory power for TCRs from published studies
+Testing for both sensitivity and discrimination for each parameter pair $(N,\tau)$ requires simulating the model in two different scenarios. The first scenario is with a single ligand and unit dissociation rate, that is, $k_{off}=1$. If the ensemble average $⟨C_{N}⟩§gt;0.1$, then the parameter pair $(N,\tau)$ observes sensitivity and is shown as a red asterisk in the panels in Figure 5G–I. For discrimination, we increase the number of ligands to $Δ_{L}=10000$ and decreased the affinity of the ligand by $Δ_{A}=10000^{1/\alpha}$,that is, $k_{off}=10000^{1/\alpha}$. If the average number of receptors $⟨C_{N}⟩§lt;0.1$, then discrimination is observed, and the parameter pair $(N,\tau)$ is shown as a blue square in Figure 5G–I. Parameter pairs that are shown with both a red asterisk and a blue square observe both sensitivity and discrimination. All stochastic simulations were performed with custom Julia code using the package DifferentialEquations.jl.
+
+### Analysis of the discriminatory power for TCRs from published studies
 
 Figure 3—source data 1 provides information on each calculation of α and specific details on the source of data underlying each calculation (see Appendix 1).
 
-The broad method was to obtain a measure of ligand potency from each study. If provided by the study, this was often an EC50, which is the concentration of ligand eliciting 50% of the maximum response. If not explicitly provided, we estimated ligand potency as PX, which was defined by the concentration of ligand that produced X response. To do this, we drew a horizontal line at X on a provided dose-response graph and estimated the ligand concentration where the data intercepted the horizontal line. The disadvantage with this method is that ligand potency was estimated based on the single representative graph provided in the study.
+The broad method was to obtain a measure of ligand potency from each study. If provided by the study, this was often an EC50, which is the concentration of ligand eliciting 50% of the maximum response. If not explicitly provided, we estimated ligand potency as $P_{X}$, which was defined by the concentration of ligand that produced $X$ response. To do this, we drew a horizontal line at $X$ on a provided dose-response graph and estimated the ligand concentration where the data intercepted the horizontal line. The disadvantage with this method is that ligand potency was estimated based on the single representative graph provided in the study.
 
 Each study often contained or cited a study that contained estimates of KD or koff for the specific TCR/pMHC interactions used in the study. We only included studies where monomeric SPR binding data was available to avoid multimeric binding parameters (e.g. when using tetramers). However, when analysing discrimination by other non-TCR receptors, we included binding data from various methods (e.g. SPR, radio labelled ligands) provided they were monomeric measurements. The use of SPR is important for weak interactions, such as TCR/pMHC, but various methods are available for higher-affinity interactions.
 
-The plot of potency over KD or koff was fit using linear regression on log-transformed axes. We reported the slope of the fit (i.e. the discrimination power, α), the goodness-of-fit measure (R2), and the p-value for the null hypothesis that the slope is zero (i.e. α=0). We defined significance using the threshold of p=0.05. We found that the calculated α was robust to the precise definition of ligand potency so that the same slope was produced when using a different response threshold (e.g. 0.25 or 0.75 instead of the commonly used value of 0.5, not shown).
+The plot of potency over KD or $k$off was fit using linear regression on log-transformed axes. We reported the slope of the fit (i.e. the discrimination power, α), the goodness-of-fit measure ($R^{2}$), and the p-value for the null hypothesis that the slope is zero (i.e. $\alpha=0$). We defined significance using the threshold of p=0.05. We found that the calculated α was robust to the precise definition of ligand potency so that the same slope was produced when using a different response threshold (e.g. 0.25 or 0.75 instead of the commonly used value of 0.5, not shown).
 
 A subset of the data relied on engineered high-affinity TCR/pMHC interactions. It has been observed that increasing the affinity beyond a threshold does not improve ligand potency (Irving et al., 2012; Lever et al., 2016). To avoid underestimating the discrimination power, we found that globally removing data where KD < 1 μM avoided entering this saturation regime (with a single exception, see ID 58–61 in Supplementary information and Figure 3—figure supplement 3). Similarly, to avoid over-estimating α, we did not include data where the potency was extrapolated (i.e. when EC50 values were larger than the highest ligand concentration tested). Some studies provided multiple measures of T cell responses, and in this case, we produced potency plots for each response and hence were able to obtain multiple estimates of α.
 
-We only included discrimination powers in final comparisons (Figures 3I–O–6F) that were statistically significant (p§lt;0.05) with the exception of the original and revised mouse TCR data (Figure 3I) because only few data were available. We found more studies that performed functional experiments on the original mouse TCRs compared to those that measured binding, and therefore to avoid introducing a potential bias in the analysis, we included only a single calculated α for each independent SPR measurement. In the case of the original mouse TCR data, we included four calculations of α (Figure 3—source data 1, ID 1, 2, 11, 14), and in the case of the revised mouse TCR data, we included six calculations of α (Figure 3—source data 1, ID 5, 13, 15, 17, 18, 19). We also note that discrimination powers obtained using artificial conditions, when antigen was presented on plates as recombinant protein or when presented on APCs but co-receptors were blocked, were not included in aggregated analyses (Figures 3I–O–6F).
+We only included discrimination powers in final comparisons (Figures 3I–O–6F) that were statistically significant ($p§lt;0.05$) with the exception of the original and revised mouse TCR data (Figure 3I) because only few data were available. We found more studies that performed functional experiments on the original mouse TCRs compared to those that measured binding, and therefore to avoid introducing a potential bias in the analysis, we included only a single calculated α for each independent SPR measurement. In the case of the original mouse TCR data, we included four calculations of α (Figure 3—source data 1, ID 1, 2, 11, 14), and in the case of the revised mouse TCR data, we included six calculations of α (Figure 3—source data 1, ID 5, 13, 15, 17, 18, 19). We also note that discrimination powers obtained using artificial conditions, when antigen was presented on plates as recombinant protein or when presented on APCs but co-receptors were blocked, were not included in aggregated analyses (Figures 3I–O–6F).
 
-## Analysis of the discriminatory power for other surface receptors from published studies
+### Analysis of the discriminatory power for other surface receptors from published studies
 
 Figure 6—source data 1 provides information on each calculation of α and specific details on the source of data underlying each calculation (see Appendix 1).
 
 The general method was similar to that used for the TCR (see previous section). We provide specific information on the analysis of each receptor family below.
 
-Cytokine receptors transduce signals by ligand-induced dimerisation of receptor subunits. We identified five studies that produced ligands with mutations that modified binding to either one or both receptor subunits and either reported potency or provided dose-response curves from which potency can be extracted (Levin et al., 2012; Moraga et al., 2015; Thomas et al., 2011a; Mendoza et al., 2017; Martinez-Fabregas et al., 2019). As an example, Moraga et al. generated IL-13 variants with mutations that resulted in a broad range of affinities to the IL-13Rα1 subunit but maintained the wild-type interface, and hence the same affinity, to the IL-4Rα subunit (Moraga et al., 2015). By measuring cellular responses, such as upregulation of CD86 on monocytes, dose-response curves were generated for each IL-13 variant, allowing us to determine ligand potency. We observed a significant correlation between potency and KD (Figure 6A). We repeated the analysis for each study (Figure 6—source data 1 ID 1–13). In studies that included ligands with mutations to both receptor interfaces, we plotted potency over the product of the dissociation constants to each interface since this serves as an estimate of the overall affinity (i.e. KD1×KD2). Collating these studies revealed a mean discrimination power of α=0.66 (Figure 6F).
+Cytokine receptors transduce signals by ligand-induced dimerisation of receptor subunits. We identified five studies that produced ligands with mutations that modified binding to either one or both receptor subunits and either reported potency or provided dose-response curves from which potency can be extracted (Levin et al., 2012; Moraga et al., 2015; Thomas et al., 2011a; Mendoza et al., 2017; Martinez-Fabregas et al., 2019). As an example, Moraga et al. generated IL-13 variants with mutations that resulted in a broad range of affinities to the IL-13Rα1 subunit but maintained the wild-type interface, and hence the same affinity, to the IL-4Rα subunit (Moraga et al., 2015). By measuring cellular responses, such as upregulation of CD86 on monocytes, dose-response curves were generated for each IL-13 variant, allowing us to determine ligand potency. We observed a significant correlation between potency and KD (Figure 6A). We repeated the analysis for each study (Figure 6—source data 1 ID 1–13). In studies that included ligands with mutations to both receptor interfaces, we plotted potency over the product of the dissociation constants to each interface since this serves as an estimate of the overall affinity (i.e. $K_{D}^{1}\timesK_{D}^{2}$). Collating these studies revealed a mean discrimination power of $\alpha=0.66$ (Figure 6F).
 
-Like cytokine receptors, RTKs transduce signals by ligand-induced dimerisation. We identified two potential studies to include in the analysis (Ho et al., 2017; Reddy et al., 1996). Ho et al. generated stem cell factor (SCF) ligand variants to the RTK c-Kit (Ho et al., 2017). SCF induces c-Kit dimersation by binding to c-Kit with one interface and binding to another SCF with a different interface generating SCF/c-Kit homodimers. Four SCF variants were used in detailed dose-response assays measuring phosphorylation of ERK (Figure 6B, left) and AKT (not shown here). Given that the SCF variants included mutations impacting both c-Kit binding and SCF homodimerisation, we plotted potency over the product of the dissociation constants for each interface finding a significant correlation for ERK (Figure 6B, right) and AKT (Figure 6—figure supplement 1 ID 16) with discrimination powers of 0.83 and 0.88, respectively. A significant correlation was not observed for the second study using EGFR (Figure 6—source data 1 ID 14), and therefore, we estimated the mean for RTK based on the c-Kit data to be α=0.86 (Figure 6F).
+Like cytokine receptors, RTKs transduce signals by ligand-induced dimerisation. We identified two potential studies to include in the analysis (Ho et al., 2017; Reddy et al., 1996). Ho et al. generated stem cell factor (SCF) ligand variants to the RTK c-Kit (Ho et al., 2017). SCF induces c-Kit dimersation by binding to c-Kit with one interface and binding to another SCF with a different interface generating SCF/c-Kit homodimers. Four SCF variants were used in detailed dose-response assays measuring phosphorylation of ERK (Figure 6B, left) and AKT (not shown here). Given that the SCF variants included mutations impacting both c-Kit binding and SCF homodimerisation, we plotted potency over the product of the dissociation constants for each interface finding a significant correlation for ERK (Figure 6B, right) and AKT (Figure 6—figure supplement 1 ID 16) with discrimination powers of 0.83 and 0.88, respectively. A significant correlation was not observed for the second study using EGFR (Figure 6—source data 1 ID 14), and therefore, we estimated the mean for RTK based on the c-Kit data to be $\alpha=0.86$ (Figure 6F).
 
-Although multiple ligands for a given GPCR have been described, they often bind at different GPCR sites to stabilise different receptor conformations and hence transduce qualitatively different signals. Therefore, ligand affinity may not correlate to functional potency. Instead, we focused on identifying studies that used ligands that were confirmed to bind to the same interface with different affinities. As an example, Sykes et al. used seven agonists to the muscarinic M3 receptor and confirmed they all bound to the same interface using a binding competition assay (Sykes et al., 2009). Using titrations of each ligand, they examined the binding of GTPγS to CHO-M3 membrane as a measure of response (Figure 6C, left). Plotting ligand agonist potency over KD produced a significant correlation with a discrimination power of α=0.55 (Figure 6C, right). We found a similar discrimination power when using a different measure of response (Ca2+ mobilisation from CHO-M3 cells) from the same study, and moreover, similar discrimination powers in other studies investigating the A2A receptor (Guo et al., 2012) and the chemokine receptors CXCR4 (Guyon et al., 2013) and CXCR3 (Heise et al., 2005; Figure 6—source data 1 ID 17–24). Collating these studies revealed a mean discrimination power of α=0.76 (Figure 6F).
+Although multiple ligands for a given GPCR have been described, they often bind at different GPCR sites to stabilise different receptor conformations and hence transduce qualitatively different signals. Therefore, ligand affinity may not correlate to functional potency. Instead, we focused on identifying studies that used ligands that were confirmed to bind to the same interface with different affinities. As an example, Sykes et al. used seven agonists to the muscarinic M3 receptor and confirmed they all bound to the same interface using a binding competition assay (Sykes et al., 2009). Using titrations of each ligand, they examined the binding of GTPγS to CHO-M3 membrane as a measure of response (Figure 6C, left). Plotting ligand agonist potency over KD produced a significant correlation with a discrimination power of $\alpha=0.55$ (Figure 6C, right). We found a similar discrimination power when using a different measure of response (Ca2+ mobilisation from CHO-M3 cells) from the same study, and moreover, similar discrimination powers in other studies investigating the A2A receptor (Guo et al., 2012) and the chemokine receptors CXCR4 (Guyon et al., 2013) and CXCR3 (Heise et al., 2005; Figure 6—source data 1 ID 17–24). Collating these studies revealed a mean discrimination power of $\alpha=0.76$ (Figure 6F).
 
-Chimeric antigen receptors (CARs) are therapeutic receptors often expressed in T cells that fuse an extracellular antigen recognition domain to an intracellular signalling domain (often the ζ-chain from the TCR). Chmielewski et al. generated a panel of CARs that bind the ErbB2 receptor (target antigen) with different affinities (Chmielewski et al., 2004). CAR-T cells were stimulated with a titration of recombinant ErbB2, and their ability to produce the cytokine IFNγ was used to measure T cell responses (Figure 6D, left). We found a significant correlation between potency and KD with a discrimination power of α=0.52 (Figure 6D, right). Similar results were observed using a different ErbB2 CAR (Liu et al., 2015) and a DNA-based CAR (Taylor et al., 2017; Figure 6—source data 1 ID 25–28). Together, we found a mean discrimination power of α=0.94 (Figure 6F).
+Chimeric antigen receptors (CARs) are therapeutic receptors often expressed in T cells that fuse an extracellular antigen recognition domain to an intracellular signalling domain (often the ζ-chain from the TCR). Chmielewski et al. generated a panel of CARs that bind the ErbB2 receptor (target antigen) with different affinities (Chmielewski et al., 2004). CAR-T cells were stimulated with a titration of recombinant ErbB2, and their ability to produce the cytokine IFNγ was used to measure T cell responses (Figure 6D, left). We found a significant correlation between potency and KD with a discrimination power of $\alpha=0.52$ (Figure 6D, right). Similar results were observed using a different ErbB2 CAR (Liu et al., 2015) and a DNA-based CAR (Taylor et al., 2017; Figure 6—source data 1 ID 25–28). Together, we found a mean discrimination power of $\alpha=0.94$ (Figure 6F).
 
-Lastly, antigen discrimination has also been reported for the BCR, which shares many structural and functional features with the TCR. Although several studies have investigated BCR ligand discrimination, we identified only a single study with the requisite dose-response curves to quantify discrimination. Batista et al. used two lysozyme-specific BCRs (HyHEL10 and D1.3) to perform dose-response curves to wild-type or mutated lysozyme variants measuring the production of the cytokine IL-2 (Figure 6E, left; Batista and Neuberger, 1998). We estimated potency directly from the dose-response curves and found a significant correlation with koff (Figure 6E, right). We found the discrimination power for both HyHEL10 and D1.3 BCRs to be > 1 (mean of α=1.3, Figure 6F).
+Lastly, antigen discrimination has also been reported for the BCR, which shares many structural and functional features with the TCR. Although several studies have investigated BCR ligand discrimination, we identified only a single study with the requisite dose-response curves to quantify discrimination. Batista et al. used two lysozyme-specific BCRs (HyHEL10 and D1.3) to perform dose-response curves to wild-type or mutated lysozyme variants measuring the production of the cytokine IL-2 (Figure 6E, left; Batista and Neuberger, 1998). We estimated potency directly from the dose-response curves and found a significant correlation with $k$off (Figure 6E, right). We found the discrimination power for both HyHEL10 and D1.3 BCRs to be > 1 (mean of $\alpha=1.3$, Figure 6F).
 
-## Statistical analyses
+### Statistical analyses
 
-All statistics on discrimination power and sensitivity were performed on log-transformed data, unless stated otherwise. In Figure 1F, data was compared using a Kruskal–Wallis test with Dunn’s multiple comparison. In Figure 2K, conditions were compared with a one-way ANOVA and each condition was compared to α=1 with an independent one-sample Student’s t-test; and in Figure 2L, the 1G4 data was compared with an ordinary one-way ANOVA and all data was compared using a second ordinary one-way ANOVA with Sidak’s multiple comparison for a pairwise test. In Figure 3, all comparisons were performed using parametric one-way ANOVA and/or multiple t-tests (with the stated correction for multiple comparisons) on log-transformed data. In Figure 4F, plate data was compared using repeated-measure one-way ANOVA (Geisser–Greenhouse corrected) with Sidak’s comparison for the indicated pairwise comparison. CD58 and ICAM1 were compared to U87 co-culture data using ordinary one-way ANOVA. Each condition was compared to α=1 using an independent one-sample Student’s t-test. In Figure 4G, comparison using repeated-measure one-way ANOVA (Geisser–Greenhouse corrected). In Figure 5D, plate data compared using a repeated-measure one-way ANOVA (Geisser–Greenhouse corrected) and APC data and APC vs. plate data was compared using each an ordinary one-way ANOVA. In Figure 6F, a one-way ANOVA compares other receptors and a t-test compares other receptors to the TCR.
+All statistics on discrimination power and sensitivity were performed on log-transformed data, unless stated otherwise. In Figure 1F, data was compared using a Kruskal–Wallis test with Dunn’s multiple comparison. In Figure 2K, conditions were compared with a one-way ANOVA and each condition was compared to $\alpha=1$ with an independent one-sample Student’s t-test; and in Figure 2L, the 1G4 data was compared with an ordinary one-way ANOVA and all data was compared using a second ordinary one-way ANOVA with Sidak’s multiple comparison for a pairwise test. In Figure 3, all comparisons were performed using parametric one-way ANOVA and/or multiple t-tests (with the stated correction for multiple comparisons) on log-transformed data. In Figure 4F, plate data was compared using repeated-measure one-way ANOVA (Geisser–Greenhouse corrected) with Sidak’s comparison for the indicated pairwise comparison. CD58 and ICAM1 were compared to U87 co-culture data using ordinary one-way ANOVA. Each condition was compared to $\alpha=1$ using an independent one-sample Student’s t-test. In Figure 4G, comparison using repeated-measure one-way ANOVA (Geisser–Greenhouse corrected). In Figure 5D, plate data compared using a repeated-measure one-way ANOVA (Geisser–Greenhouse corrected) and APC data and APC vs. plate data was compared using each an ordinary one-way ANOVA. In Figure 6F, a one-way ANOVA compares other receptors and a t-test compares other receptors to the TCR.

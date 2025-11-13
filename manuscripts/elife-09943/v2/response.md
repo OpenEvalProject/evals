@@ -95,11 +95,9 @@ See Essential Revision Point #2. These experiments have now been included. Compl
 
 Please see Essential Revision Point #3, where these points have been addressed.4) The SeMeCo's seem to show convergence towards a stable state (with a defined and complex ratio of different auxotrophic mutants). Are we sure that this is indeed a stable state? And why do not all prototrophs disappear? Would it be worth letting some communities grow much longer to see what happens in the long term?
 
-We have conducted a stability experiment for a SeMeCo community over a period of ~100 generations. As expected for a living ecological system, it is not 100% identical over this long period, but the variation is in the range not larger ~ 10% and restabilizes (Author response image 1).10.7554/eLife.09943.024Author response image 1.Stability of SeMeCo colony over time.Starting from a SeMeCo micro-colony on minimal media, a giant colony was established and composition was followed by replica plating for 90 generations. Biomass gain is calculated starting from the single cell.DOI: http://dx.doi.org/10.7554/eLife.09943.024
+We have conducted a stability experiment for a SeMeCo community over a period of ~100 generations. As expected for a living ecological system, it is not 100% identical over this long period, but the variation is in the range not larger ~ 10% and restabilizes (Author response image 1).10.7554/eLife.09943.024Author response image 1.Stability of SeMeCo colony over time.Starting from a SeMeCo micro-colony on minimal media, a giant colony was established and composition was followed by replica plating for 90 generations. Biomass gain is calculated starting from the single cell.
 
 Starting from a SeMeCo micro-colony on minimal media, a giant colony was established and composition was followed by replica plating for 90 generations. Biomass gain is calculated starting from the single cell.
-
-DOI: http://dx.doi.org/10.7554/eLife.09943.024
 
 Reviewer #3:
 

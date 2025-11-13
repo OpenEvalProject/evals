@@ -33,9 +33,17 @@ This study tested the hypothesis that the natural ITD statistics are encoded by 
 
 ITD statistics, specifically, the derivative (rate of change) of the mean ITD over azimuth (ITDrc) and the standard deviation of ITD over time (ITDv) were estimated from human HRTFs and models of cochlear filters. We first tested whether these ITD statistics predict human spatial discrimination thresholds measured under free-field sound stimulation from previously published datasets (Mills, 1958) and from data collected using tests specifically designed for measuring ITD discrimination through sounds delivered by earphones. Next, we used EEG and mismatch negativity signals (MMN) to address the question of whether these natural ITD statistics influence ITD deviance detection. Finally, we evaluated the compatibility of ITD statistics with the classic neural models for coding ITD.
 
-## ITD statistics estimated from human HRTFs and properties of cochlear filters
+### ITD statistics estimated from human HRTFs and properties of cochlear filters
 
 To test the hypothesis that natural ITD statistics influence the neural code underlying sound localization, we estimated ITDrc and ITDv in sounds reaching the ears of human subjects. The method for estimating the ITD mean and standard deviation (Figure 1A), which was applied across locations and frequencies, included: (1) Impulse responses obtained from publicly available human HRTF databases (Listen HRTF database; 51 subjects) were convolved with acoustic signals, which results in modulation of ongoing phase and gain that depends on both frequency and sound direction; (2) Sound signals were filtered using models of human cochlear filters (Glasberg and Moore, 1990; (3) Instantaneous phase and interaural phase difference (IPD) was extracted from the resulting signals; (4) The mean and standard deviation of instantaneous IPD was computed and converted to ITD to estimate ITD mean and ITD standard deviation over time, at each azimuth and frequency, across subjects (Figure 1B)); and (5) ITDrc was calculated as the derivative of mean ITD over azimuth and ITDv was calculated as the standard deviation of ITD over time.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51927/elife-51927-fig1-v2.jpg)
+
+**Figure 1.:** (A) Estimation of ITD mean and standard deviation over time in broadband signals filtered by human head-related impulse responses (HRIRs) and modeled cochlear filters. (1) Example HRIRs from sound emitted from speakers located at −15 degrees and recorded with microphones positioned in each ear (obtained from a publicly available LISTEN dataset). Traces show example impulse responses in the right (red) and left (blue). (2) A broadband signal was convolved with HRIRs from right (red) and left (blue) ears for each direction. (3) Convolved signals were then filtered using parameters analogous to human cochlear filters. Example of signal passed through a cochlear filter with a frequency band centered on 1000 Hz for the left (blue) and right (red) ears. (4) The instantaneous phase of the resulting signals on the left and right ears was computed. Top, instantaneous phase over time for the left (blue) and right (red) signals shown in 3. Bottom, instantaneous phase differences (IPD, in radians) and instantaneous time differences (ITD, in microseconds) between left and right signals. (5) Histogram of instantaneous IPD and ITD, illustrating their variability over time for the example signal shown in 3. (B) ITD mean (left) and standard deviation (right) over time, as a function of frequency and azimuth. Plots represent median values across subjects (N = 51), fit by spline curves, and color coded for each frequency. The derivative of the curves on the left was used to calculate ITD rate of change (ITDrc) across azimuth. The ITD variability (ITDv) was computed as the standard deviation of the ITD distribution over time. (C) Left, information of ITD cues as a function of frequency and azimuth, quantified by the median square root of ITD Fisher information (√FIITD) across subjects (azimuth was converted to ITD to obtain the estimate of the ITD statistics as a function of frequency and ITD, matching the stimulus metrics and model parameters used in our study). √FIITD statistic closely approximates ITDrc/ITDv. Right, the interquartile range of √FIITD across subjects shows low inter-individual variability. Black lines on each panel indicate the π-limit across frequency, beyond which ITD cues become ambiguous for narrowband sounds. (D) This study tests the hypothesis that over evolutionary and/or ontogenetic time scales the human brain became adapted to natural ITD statistics, such that stimuli that are more informative about sound source location would be distinctively encoded.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51927/elife-51927-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ITDrc (left) and ITDv (right) as a function of ITDs corresponding to azimuth locations from −90° to 90°, averaged across subjects, for three example signals: a 500 Hz tone (yellow) and two signals combining 500 Hz and 523 Hz (red), and 500 Hz and 723 Hz (blue). 523 Hz and 723 Hz were chosen to demonstrate the effect of combining signals lying, respectively, within and outside the bandwidth of a cochlear filter with a center frequency of 500 Hz. The ITD statistics were estimated using the same method described in Figure 1, by convolving each of these signals with impulse responses from the left and right ears, then filtering using parameters analogous to human cochlear at 500 Hz center frequency. This procedure was applied across all other locations and subjects in the reported dataset. Note that ITDrc is similar for the three signals, indicating no significant effect of frequency interference on this statistic. However, while ITDv is near zero across azimuth locations for 500 Hz alone (yellow) and 500 + 723 Hz (blue), it increases from front to periphery when neighboring frequencies within a single cochlear filter are combined (500 + 523 Hz; red). Hence, unlike ITDrc, ITDv depends on interference between neighboring frequencies within cochlear filter ranges. (B) ITD statistics are consistent across broadband signals. ITDrc (left) and ITDv (right) computed using white noise (the broadband noise used to estimate ITD statistics in Figure 1) and a distinct broadband signal (first second of the chorus section of the popular song Alive, by Pearl Jam; bottom) displayed similar patterns. (C) ITD statistics are consistent across acoustic environments. ITDrc (left) and ITDv (right) computed from impulse responses recorded in human-head shaped manikins inside two different types of environment - anechoic chambers (top) and reverberant office spaces (bottom). We used the first 2.5 ms of impulse responses (corresponding mostly to the direct click reaching the ears, avoiding echo components in the reverberant office).
 
 The ITDrc and ITDv statistics were combined to compute the Fisher information in ITD at each location and frequency. Estimation theory has shown that the square root of Fisher information relates to discrimination threholds (Abbott and Dayan, 1999; Brown et al., 2018). Thus, the square root of ITD Fisher information (√FIITD) was the ITD statistic used in this study (see Methods section for details), which closely approximates the ITDrc/ITDv ratio, computed at each location and frequency (Figure 1C-left). √FIITD displayed low variability across individuals (Figure 1C-right), indicating it constitutes a statistic that is largely invariant across human subjects.
 
@@ -47,7 +55,7 @@ Across-trial ITD variability induced by concurrent sounds was reported by Cazett
 
 In the current study, we hypothesized that the neural representation of ITD is influenced by natural ITD statistics so that ITD perception is predicted by natural √FIITD (Figure 1D). To test this hypothesis, we investigated the √FIITD prediction accuracy of ITD discrimination performance and novelty detection. Finally, we evaluated the consistency between ITD statistics and frameworks proposed in two classical neural models for ITD coding.
 
-## Prediction of spatial discrimination thresholds from ITD statistics
+### Prediction of spatial discrimination thresholds from ITD statistics
 
 A central hypothesis tested by this study was that a neural code adapted to natural ITD statistics influences ITD-change discriminability (dITD) thresholds even under conditions where ongoing stimulus statistics are constant across frequency and locations (Figure 2A).
 
@@ -63,7 +71,7 @@ Additionally in the current study, to test ITD-change discrimination thresholds 
 
 We computed the average dichotic dITD thresholds across participants and quantified the Spearman correlation between them and ITD statistics estimated in our study. When all frequency conditions were analyzed, average dichotic dITD thresholds showed moderate correlation with ITDrc (Figure 2C-middle) and √FIITD (Figure 2C-right). This was particularly influenced by low correlation for dITD thresholds for 250 Hz tones. Higher thresholds for this frequency have previously been reported (Brughera et al., 2013). Exclusion of this frequency substantially improved √FIITD’s prediction accuracy (Figure 2C-right), suggesting that dITD thresholds at 250 Hz may be determined by additional parameters not addressed by the ITD statistics investigated in our study. Comparing the prediction accuracy of these statistics using linear mixed-effects models (Materials and methods) resulted in the same outcome as the Spearman correlation analysis. This provides further support for the hypothesis that both ITDrc and ITDv statistics, combined in √FIITD, influence the ITD neural code underlying discrimination thresholds.
 
-## Neural code underlying deviance detection is adapted to ITD statistics
+### Neural code underlying deviance detection is adapted to ITD statistics
 
 A further investigation to support the idea that ITD statistics are correlated with auditory spatial perception was conducted by testing the ability to detect spatial deviants from a standard sound location in space. To test this, we measured the mismatch negativity (MMN) component of event-related brain potentials (ERPs) (Näätänen et al., 1978) for sounds coming from standard (repeated) and deviant (sporadic) spatial locations. MMNs are observable when a sequence of standard stimuli is unexpectedly interrupted by a low probability stimulus, without the listener making an overt response (Näätänen et al., 1978; Pakarinen et al., 2007; Sussman, 2007; Sussman et al., 2014; Figure 3A-left). Thus, the MMN signals provide a direct brain measure of discriminability that does not require training subjects to perform behavioral tasks. The MMN signal is displayed by subtracting the mean ERP response elicited by the standard stimuli from the mean ERP elicited by deviant stimuli. The amplitude of the MMN indexes discriminability between standard and deviant sounds. The larger the tone features separation between standard and deviant stimuli, or the larger the perceived difference between standard and deviant, the more negative the MMN amplitude (Deouell et al., 2006; Sams et al., 1985; Pakarinen et al., 2007; Tiitinen et al., 1994). Thus, MMN was used to test whether natural ITD statistics influence the magnitude of ITD deviance detection (Figure 3B).
 
@@ -73,11 +81,17 @@ A further investigation to support the idea that ITD statistics are correlated w
 
 A set of ITD and frequency conditions was selected and presented to 33 normal-hearing adults in order to sample critical ranges drawn from the HRTF analysis (Materials and methods). Frequencies of 400, 550, 600 and 650 Hz were chosen because ITDrc and ITDv changed as a function of azimuth in a manner that could maximize the difference in prediction accuracy across ITD statistics. Frequencies lower than 400 Hz were not tested because of observed distortion in the sound stimulation system, while frequencies above 650 Hz were excluded to avoid phase ambiguity confounds. MMN signals were measured separately across participants and conditions. The averaged peak amplitude of MMN was used to quantify the subject’s capacity to discriminate between ITDs of the standard and deviant. The characteristic fronto-central scalp topography of the MMN responses were observed (Giard et al., 1990; Figure 3B-right).
 
-We then examined the prediction accuracy of MMN amplitude of model equations relying on the absolute difference between the ITDs of standard and deviant stimuli adjusted by the weighted sum of ITD statistics of standard and deviant stimuli. The equation we used to test the prediction of MMN amplitude by √FIITD was:MMNpeak ∼|ITDd−ITDs|(wsFIITD s+(1−ws)FIITD d),where ITDs and ITDd are the ITD of standard and deviant, ws and 1-ws are the relative weights of the standard and deviant, and √FIITDs and √FIITDd are the estimated √FIITD values corresponding to the frequency and ITD of the standard and deviant stimuli.
+We then examined the prediction accuracy of MMN amplitude of model equations relying on the absolute difference between the ITDs of standard and deviant stimuli adjusted by the weighted sum of ITD statistics of standard and deviant stimuli. The equation we used to test the prediction of MMN amplitude by √FIITD was:
+
+$$
+MMNpeak ∼|ITD_{d}−ITD_{s}|(w_{s}\sqrt{F}I_{ITD s}+(1−w_{s})\sqrt{F}I_{ITD d}),
+$$
+
+where ITDs and ITDd are the ITD of standard and deviant, ws and 1-ws are the relative weights of the standard and deviant, and √FIITDs and √FIITDd are the estimated √FIITD values corresponding to the frequency and ITD of the standard and deviant stimuli.
 
 Figure 3C—left shows the Spearman correlation between each of the predictors’ output and the amplitude of MMN peaks (averaged across subjects) as a function of the weight of the standard. The highest correlation was found when multiplying the ITD difference between standard and deviant by √FIITD, and assigning 80% wt to the standard and 20% to the deviant (Figure 3C-middle). Prediction accuracy of model equations using linear mixed-effect models (Materials and methods) yielded the same results as the Spearman correlation analysis. Figure 3C-right shows that conditions with higher weighted √FIITD display larger changes in MMN amplitude as a function of difference between ITD of deviant and standard than conditions with low weighted √FIITD. The good prediction of MMN by the model relying on √FIITD further supports the idea that combined ITDrc and ITDv are critical in auditory spatial perception.
 
-## Classic neural models of ITD discriminability are consistent with a representation of ITD statistics
+### Classic neural models of ITD discriminability are consistent with a representation of ITD statistics
 
 Two classic models of neural coding underlying discriminability of azimuth positions in acoustic space based on ITD (Stern and Colburn, 1978; Harper and McAlpine, 2004) were used to examine the potential link between the brain representation of sensory statistics and perceptual functions. The model by Stern and Colburn, 1978 postulated an increased density of pairs of fibers underlying tuning to ITDs near the midline, under a labeled-line code framework, as the basis for increased ITD discriminability in the front (Figure 4A). This density distribution showed high correlation with √FIITD (Figure 4A) and prediction accuracy of the experimental data of dITD thresholds and ITD deviant detection. Additionally, the density distribution of the model was adjusted to match ITD statistics (Figure 4B) by defining the density of cells tuned to each ITD as a linear transformation of √FIITD. The Stern and Colburn, 1978 model required only minor changes to the density distribution originally proposed to represent the √FIITD pattern. This indicates that this seminal model, which explains multiple experimental findings, is consistent with a density distribution of ITD tuning influenced by the natural ITD statistics.
 
@@ -109,43 +123,101 @@ In sum, we found evidence that natural ITD statistics are correlated with audito
 
 ## Materials and methods
 
-## HRTF measurement
+### HRTF measurement
 
 The dataset used in this study consisted of head-related impulse responses collected at the Institute for Research and Coordination in Acoustics/Music (IRCAM) from 2002 to 2003, available to the public at the LISTEN HRTF website http://recherche.ircam.fr/equipes/salles/listen. The procedure was performed inside an anechoic room with walls that absorbed sound waves above 75 Hz. The pulse signals were played by TANNOY 600 speakers facing the subjects, at a distance of 1.95 m from the center of the head. Subjects were seated on an adjustable rotating chair with a position sensor placed on the top of the head, allowing recording only when the position was correct. The impulse sounds were collected with a pair of small Knowles FG3329 microphones, calibrated using a BandK 4149 microphone. These small microphones were mounted on a silicon structure, which occluded the ear canals of the subjects, avoiding resonance and placing the microphone sensor at the entrance of the ear canal. The signal captured by the microphones was driven to a custom-made amplifier with 40 dB gain, and recorded using an RME sound card interface with Max/MSP real time library which deconvolved the microphone signal.
 
-## HRTF analysis
+### HRTF analysis
 
-HRTF data from 51 subjects were included in the analysis (Figure 1). Head-related impulse responses (h) for the left (L) and right (R) ears corresponding to speaker locations at 0-degree in elevation and −90 to 90 degrees in azimuth (θ) were denoted as a function of time, hL,θ (t) and hR,θ(t). The azimuth in the database was sampled in 15-degree steps. Impulse responses were convolved with a white noise signal of 1 s duration s(t) to model the signals (x) received at the left and right ears:xLt=hL,θ(t)*s(t)xR(t)=hR,θ(t)∗s(t)where * denotes convolution.
+HRTF data from 51 subjects were included in the analysis (Figure 1). Head-related impulse responses (h) for the left (L) and right (R) ears corresponding to speaker locations at 0-degree in elevation and −90 to 90 degrees in azimuth (θ) were denoted as a function of time, hL,θ (t) and hR,θ(t). The azimuth in the database was sampled in 15-degree steps. Impulse responses were convolved with a white noise signal of 1 s duration s(t) to model the signals (x) received at the left and right ears:
 
-This procedure transfers temporal and level effects of the filtering properties of the head to the convolved signal. These convolved signals were filtered by narrow-band filters modeling cochlear processing, using the gamma-tone filter bank from Malcolm Slaney’s Auditory Toolbox, available in (https://engineering.purdue.edu/~malcolm/interval/1998-010). Gamma-tone filters are described in the following cochlear impulse response equation,g(t;fk)=t3e−tτkcos⁡(2πfkt)U(t),where U(t) is the unit step function and the center frequencies of the filters (fk) ranged from 250 to 1250 Hz in 5 Hz steps. These center frequencies are within the range where ITD is a primary spatial binaural cue (Rayleigh and Xii, 1907) and also correspond with the frequency range of thresholds estimated by Mills, 1958. The time constants (tk) were chosen such that the bandwidth of these filters matched the estimated bandwidth of human cochlear filters (Glasberg and Moore, 1990).
+$$
+x_{L}t=h_{L,\theta}(t)*s(t)
+$$
 
-The outputs of the gamma-tone filter bank on the left (yL(t;fk)) and right (yR(t;fk)) sides were computed by convolving left- and right-ear input signals with gamma-tone filters,yLt;fk=gt;fk*xL(t)yRt;fk=gt;fk*xRt.
 
-Instantaneous phase was then computed for these output signals using the Signal Processing Toolbox (Mathworks). The instantaneous phase was computed as the phase (argument; arg) of the analytic representation of the signal,θLt;fk=arg⁡{yLt;fk+iy^Lt;fk}θRt;fk=arg⁡{yRt;fk+iy^Rt;fk}where y is the signal and ŷ is its Hilbert transform.
 
-For each azimuth (θ) and frequency range (fk), we then calculated the instantaneous interaural phase difference (IPD) over time,IPDt;fk=θRt;fk-θLt;fkwhere IPD(t;fk) is in radians.
+$$
+x_{R}(t)=h_{R,\theta}(t)∗s(t)
+$$
+
+where * denotes convolution.
+
+This procedure transfers temporal and level effects of the filtering properties of the head to the convolved signal. These convolved signals were filtered by narrow-band filters modeling cochlear processing, using the gamma-tone filter bank from Malcolm Slaney’s Auditory Toolbox, available in (https://engineering.purdue.edu/~malcolm/interval/1998-010). Gamma-tone filters are described in the following cochlear impulse response equation,
+
+$$
+g(t;f_{k})=t^{3}e^{−\frac{t}{\tau_{k}}}cos⁡(2\pif_{k}t)U(t),
+$$
+
+where U(t) is the unit step function and the center frequencies of the filters (fk) ranged from 250 to 1250 Hz in 5 Hz steps. These center frequencies are within the range where ITD is a primary spatial binaural cue (Rayleigh and Xii, 1907) and also correspond with the frequency range of thresholds estimated by Mills, 1958. The time constants (tk) were chosen such that the bandwidth of these filters matched the estimated bandwidth of human cochlear filters (Glasberg and Moore, 1990).
+
+The outputs of the gamma-tone filter bank on the left (yL(t;fk)) and right (yR(t;fk)) sides were computed by convolving left- and right-ear input signals with gamma-tone filters,
+
+$$
+y_{L}t;f_{k}=gt;f_{k}*x_{L}(t)
+$$
+
+
+
+$$
+y_{R}t;f_{k}=gt;f_{k}*x_{R}t.
+$$
+
+Instantaneous phase was then computed for these output signals using the Signal Processing Toolbox (Mathworks). The instantaneous phase was computed as the phase (argument; arg) of the analytic representation of the signal,
+
+$$
+\theta_{L}t;f_{k}=arg⁡{y_{L}t;f_{k}+iy^_{L}t;f_{k}}
+$$
+
+
+
+$$
+\theta_{R}t;f_{k}=arg⁡{y_{R}t;f_{k}+iy^_{R}t;f_{k}}
+$$
+
+where y is the signal and ŷ is its Hilbert transform.
+
+For each azimuth (θ) and frequency range (fk), we then calculated the instantaneous interaural phase difference (IPD) over time,
+
+$$
+IPDt;f_{k}=\theta_{R}t;f_{k}-\theta_{L}t;f_{k}
+$$
+
+where IPD(t;fk) is in radians.
 
 The circular mean and standard deviation of the instantaneous IPD over time was then computed. To avoid the ITD rate of change being corrupted by artificial values caused by phase ambiguity, we unwrapped (MATLAB function) the mean IPD over azimuth, and subtracted the value 2π repeatedly (from all IPD values jointly) until the IPDs corresponding to midline locations returned to the value before the shift. Finally, the circular mean and standard deviation of IPD was converted to ITD (in µs) using the following equation:
 
-ITD=106IPD2πf.
+$ITD=\frac{10^{6}IPD}{2\pif}$.
 
 All the HRTF analysis steps described above are shown in Figure 1A. The mean ITD across azimuth was interpolated using a cubic spline (Figure 1B-left), and the rate of change of ITD across azimuth (ITDrc) was calculated as the derivative of this curve. The standard deviation of ITD (ITDv) was interpolated using the same method (Figure 1B-right) and the derivative of ITDv was calculated as the derivative of this curve.
 
-We next combined the ITDrc and ITDv in a single quantity that is related to the discriminability of sound locations using ITD. The discriminability of a stimulus θ based on a measurement m(θ) is often described in terms of the Fisher informationFI(θ)=−E[∂2∂θ2logp(m|θ)|θ],where p(m|θ) is the conditional probability of the measurement given the stimulus. In our analysis, θ refers to azimuth location, while m(θ) is the ITD computed from the output of the left and right cochlear filters at a given frequency which is used to infer the stimulus.
+We next combined the ITDrc and ITDv in a single quantity that is related to the discriminability of sound locations using ITD. The discriminability of a stimulus θ based on a measurement m(θ) is often described in terms of the Fisher information
 
-We also assume that the conditional probability of ITD given azimuth p(ITD|θ) is a Gaussian distribution with mean μ(θ) and standard deviation σ(θ). Substituting the Gaussian conditional probability p(ITD|θ) into the definition of the Fisher information (Abbott and Dayan, 1999), the formula reduces toFI(θ)=(μ′(θ)σ(θ))2+2(σ′(θ)σ(θ))2,where μ'(θ) is the ITD rate of change (ITDrc), σ(θ) is the standard deviation of ITD (ITDv) and σ'(θ) is the derivative of the standard deviation of ITD (ITDv') with respect to azimuth. Discrimination thresholds have been shown to be proportional to the square root of the Fisher information (Abbott and Dayan, 1999), therefore we computed the square root of the ITD Fisher information (√FIITD).
+$$
+FI(\theta)=−E[\frac{∂^{2}}{∂\theta^{2}}logp(m|\theta)|\theta],
+$$
+
+where p(m|θ) is the conditional probability of the measurement given the stimulus. In our analysis, θ refers to azimuth location, while m(θ) is the ITD computed from the output of the left and right cochlear filters at a given frequency which is used to infer the stimulus.
+
+We also assume that the conditional probability of ITD given azimuth p(ITD|θ) is a Gaussian distribution with mean μ(θ) and standard deviation σ(θ). Substituting the Gaussian conditional probability p(ITD|θ) into the definition of the Fisher information (Abbott and Dayan, 1999), the formula reduces to
+
+$$
+FI(\theta)=(\frac{\mu^{′}(\theta)}{\sigma(\theta)})^{2}+2(\frac{\sigma^{′}(\theta)}{\sigma(\theta)})^{2},
+$$
+
+where μ'(θ) is the ITD rate of change (ITDrc), σ(θ) is the standard deviation of ITD (ITDv) and σ'(θ) is the derivative of the standard deviation of ITD (ITDv') with respect to azimuth. Discrimination thresholds have been shown to be proportional to the square root of the Fisher information (Abbott and Dayan, 1999), therefore we computed the square root of the ITD Fisher information (√FIITD).
 
 The second term in the equation, which is often absent in calculations of Fisher information, is included in our analysis because the standard deviation of ITD changes with direction. Note that when the derivative of standard deviation σ'(θ) is zero, the square root of the Fisher information simplifies to μ'(θ)/σ(θ), the same as ITDrc/ITDv. This first term in the equation is conceptually similar to the d-prime metric; however, while d-prime is the subtraction of two means divided by the standard deviation, this part of the equation is the derivative of the mean divided by the standard deviation.
 
 Finally, azimuth was converted to ITD (using the relationship between azimuth vs. ITD determined from the HRTFs), obtaining an estimate of the ITD statistics across frequency and ITD. The ITD statistics were computed for each subject, then the median and interquartile range of them was computed for each combination of azimuth and frequency across subjects (Figure 1C).
 
-## Estimation of spatial discriminability thresholds from previously published datasets (Mills, 1958)
+### Estimation of spatial discriminability thresholds from previously published datasets (Mills, 1958)
 
 Human spatial discriminability thresholds were estimated in the classic Mills, 1958 study. Data collection for this study was performed inside an anechoic room with a movable speaker, which delivered tones of different frequencies. The three participants were blindfolded and had their heads fixed by a clamp mounted on the chair on which they were sitting. In each trial, a 1 s duration ‘reference azimuth’ tone was played first, and 1 s after, the same signal played again after the speaker was moved slightly to the left or to the right. Subjects reported the left or right change using an interface box. Psychometric functions were obtained plotting the proportion of judgments to the left and to the right against the angle between reference and test locations. The azimuth changes leading to 75% responses to the right and to the left were estimated by linear interpolation. The threshold angle for discriminating a change was estimated by dividing the distance between these values by 2.
 
 To convert azimuth to ITD, Mills, 1958 used binaural microphones placed inside a dummy-head ears. The ITD corresponding to the reference azimuth and the IPD corresponding to the threshold azimuth change were measured visually from signal traces using an oscilloscope. Threshold IPDs vs. reference ITDs were plotted in a logarithmic Y-axis vs. linear X-axis scale and linear curves were fit to the data. For the current study, we extracted data points of threshold dIPD across reference ITD and frequency from Mills, 1958. Threshold dIPD was converted to threshold dITD (using the same equation described in the HRTF analysis section).
 
-## Estimation of spatial ITD discriminability thresholds
+### Estimation of spatial ITD discriminability thresholds
 
 A test was designed to estimate detection thresholds of changes in stimulus ITD (dITD) across specific frequencies of interest for this study. Healthy adult subjects were included in the sample (N = 24; 12 females and 12 males; mean age 28.0 ± 8.6; five left-handed and 19 right-handed; 19 from São Paulo and five from New York). After the procedure was described to the subjects, they provided written informed consent. The protocol was approved by the Ethics Committee of Universidade Federal do ABC and by the Internal Review Board of the Albert Einstein College of Medicine, where the study was conducted. There were no distinct groups in the experiment. All subjects had no reported history of neurological disorders or hearing impairments.
 
@@ -159,13 +231,13 @@ Ongoing estimation of dITD thresholds was conducted from trial 1 of each block, 
 
 For estimating threshold dITDs, an ROC classifier was computed over the 25 trials of each condition for each subject. The threshold was estimated by averaging the subset of possible thresholds within the 1 to 200 µs range that jointly maximized the number of correct (hit) responses and minimized false positive (type II error) ones. This optimization was obtained by selecting candidate dITD thresholds within a minimum euclidean distance from the perfect discrimination (i.e. 100% hit rate and 0% type II error rate) yielded by the ROC analysis. The ROC classifier was robust enough to estimate consistent dITD thresholds to all conditions from all subjects (Figure 2C-left). The threshold within 1–200 µs range estimated by the sigmoid fitting method were significantly correlated with those estimated by the ROC classifier (rPearson = 0.85).
 
-## Prediction of spatial discriminability thresholds by ITD statistics
+### Prediction of spatial discriminability thresholds by ITD statistics
 
 An initial analysis of the ranked (Spearman’s) correlation coefficients was performed for the relationship between the threshold dITD averaged across subjects and the ITD statistics of the reference ITD (middle and right plots of Figure 2C). Spearman’s correlations, which were computed from averages of dITD thresholds over subjects across multiple conditions (N number of combinations of reference ITD and frequency), were used to assess the monotonicity of this relationship. Since the N in this analysis reflects the number of conditions, not the number of subjects, the standard statistical power analysis does not apply. Accordingly, p-values were not computed for this correlation analysis.
 
 Additional analysis for the selection of dITD thresholds’ best predictors was performed using linear mixed-effect models (LMM; Magezi, 2015), classifying ITD statistics across stimulus conditions as ‘fixed factor’ and participants as ‘random factor’. LMM analysis assumes linearity between measures and predictors, then we inspected whether the relationship between dITD thresholds and each of the predictors was linear. Although relationships were mostly linear, some were best fitted by a power function. In these cases, we applied the standard method for achieving linearity by log-transforming both predictors and dITD thresholds. Linear regressions of the relationship between the multiple log-transformed dITD thresholds collected from each subject and log-transformed ITD statistics were performed, and Akaike Information Criterion (AIC) computed. The AIC analysis was used to compare the performance of each model, relying on both the number of model parameters and sample size (i.e. number of subjects) as a metric of goodness of fit; the lowest AIC corresponds to the best model. Since AIC is a relative quantity (i.e. the actual value brings no information alone), we normalized the AIC values by subtracting the minimum AIC observed for that behavioral measure (dAIC), which corresponds to the information loss compared to the best available model. Models with dAIC between 0 and 2 were considered equally good in their prediction capacity. Sample sizes were made several times higher than the number of parameters of our models to ensure samples were sufficiently large.
 
-## Collection and analysis of the mismatch negativity (MMN) component
+### Collection and analysis of the mismatch negativity (MMN) component
 
 Healthy adult participants were included in the sample (N = 33, 16 females; 17 males; mean age 29.5 ± 4.8; all right-handed). After the procedure was described to the subjects, they provided written informed consent. The protocol was approved by the Institutional Review Board of the Albert Einstein College of Medicine, where the study was conducted. All subjects had no reported history of neurological disorders and passed a bilateral hearing screening (20 dB HL or better at 500, 1000, 2000, and 4000 Hz).
 
@@ -179,11 +251,11 @@ To measure the MMN, EEG signals from each subject were processed as follows: (1)
 
 Grand-averages of ERPs recorded at FZ electrodes were computed for standard and deviant trials across all subjects and conditions; for estimating the MMN topography, the signal from each electrode in the time bin of the peak MMN was averaged across subjects and conditions (Figure 3A-right).
 
-## Prediction of MMN by ITD statistics
+### Prediction of MMN by ITD statistics
 
 An initial analysis of the ranked (Spearman) correlation coefficients was performed for the relationship between the MMN peak amplitude averaged across subjects and the absolute ITD difference between standard and deviant stimuli, multiplied by the weighted sum of ITD statistics estimated for both standard and deviant stimuli (Figure 3C-left). Additional LMM analysis (described in “Prediction of spatial discriminability thresholds by ITD statistics'' section) was used to compare performance across predictors of MMN peak amplitude. LMM analysis was conducted on MMN peak as the dependent variable, absolute ITD difference multiplied by the weighted sum of ITD statistics as ‘fixed’ factor and participant as ‘random’ factor. Since the relationship between MMN data and predictors followed a power function, it was linearized using log transformation in both measures. No outliers were detected or excluded. The AIC method was used for comparing the models (described in “Prediction of spatial discriminability thresholds by ITD statistics'' section).
 
-## Neural models
+### Neural models
 
 Two seminal models (Stern and Colburn, 1978; Harper and McAlpine, 2004) addressing discriminability of azimuth positions in acoustic space based on ITD were used to examine the potential link between the brain representation of sensory statistics and perceptual functions.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.01030.001 Regulation of macromolecular interactions by phosphorylation is crucial in signaling networks. In the spindle assembly checkpoint (SAC), which enables errorless chromosome segregation, phosphorylation promotes recruitment of SAC proteins to tensionless kinetochores. The SAC kinase Mps1 phosphorylates multiple Met-Glu-Leu-Thr (MELT) motifs on the kinetochore subunit Spc105/Knl1. The phosphorylated MELT motifs (MELT P ) then promote recruitment of downstream signaling components. How MELT P motifs are recognized is unclear. In this study, we report that Bub3, a 7-bladed β-propeller, is the MELT P reader. It contains an exceptionally well-conserved interface that docks the MELT P sequence on the side of the β-propeller in a previously unknown binding mode. Mutations targeting the Bub3 interface prevent kinetochore recruitment of the SAC kinase Bub1. Crucially, they also cause a checkpoint defect, showing that recognition of phosphorylated targets by Bub3 is required for checkpoint signaling. Our data provide the first detailed mechanistic insight into how phosphorylation promotes recruitment of checkpoint proteins to kinetochores. DOI: http://dx.doi.org/10.7554/eLife.01030.001
+Regulation of macromolecular interactions by phosphorylation is crucial in signaling networks. In the spindle assembly checkpoint (SAC), which enables errorless chromosome segregation, phosphorylation promotes recruitment of SAC proteins to tensionless kinetochores. The SAC kinase Mps1 phosphorylates multiple Met-Glu-Leu-Thr (MELT) motifs on the kinetochore subunit Spc105/Knl1. The phosphorylated MELT motifs (MELTP) then promote recruitment of downstream signaling components. How MELTP motifs are recognized is unclear. In this study, we report that Bub3, a 7-bladed β-propeller, is the MELTP reader. It contains an exceptionally well-conserved interface that docks the MELTP sequence on the side of the β-propeller in a previously unknown binding mode. Mutations targeting the Bub3 interface prevent kinetochore recruitment of the SAC kinase Bub1. Crucially, they also cause a checkpoint defect, showing that recognition of phosphorylated targets by Bub3 is required for checkpoint signaling. Our data provide the first detailed mechanistic insight into how phosphorylation promotes recruitment of checkpoint proteins to kinetochores.
 
 ## Introduction
 
@@ -31,15 +31,15 @@ Phosphorylation plays a crucial role also in the spindle assembly checkpoint (SA
 
 Work in Saccharomyces cerevisiae originally identified several checkpoint components, including Bub1, Bub3, Mad1, Mad2, Mad3/BubR1, and Mps1 (Hoyt et al., 1991; Li and Murray, 1991; Hardwick et al., 1996), which were later found to be de facto ubiquitous in eukaryotes. Within this group, Bub1 and Mps1 are protein kinases. Together with all additional known checkpoint components, Bub1 and Mps1 become highly enriched at kinetochores between mitotic prophase and early prometaphase. Kinetochores are large protein assemblies, built on chromosomal loci known as centromeres. They bind directly to spindle microtubules to ensure the equational and reductional division of chromosomes during mitosis and meiosis, respectively (Santaguida and Musacchio, 2009). The dynamic interplay between kinetochore attachment to microtubules and checkpoint control is crucial for life in metazoans, but it remains disappointingly poorly understood.
 
-Among the targets of the Mps1 kinase activity is a kinetochore protein named Spc105/Knl1 (also known as Spc7, Blinkin, CASC5 in different organisms) (
+Among the targets of the Mps1 kinase activity is a kinetochore protein named Spc105/Knl1 (also known as Spc7, Blinkin, CASC5 in different organisms) (London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012). Spc105/Knl1 is the largest subunit of a 10-subunit assembly, the KMN network, which is believed to provide the main site of attachment of kinetochores to microtubules (Figure 1A,B) (reviewed in Santaguida and Musacchio, 2009). Within Spc105/Knl1, Mps1 phosphorylates at least a subset of an array of motifs that are generally referred to as ‘MELT’ and that conform to the consensus M-[E/D]-[L/I/V/M]-T (Figure 1C; we indicate as MELTP the phosphorylated form of a MELT motif). The presence of multiple MELT repeats is an essentially invariant feature of Spc105/Knl1 in evolution (Cheeseman et al., 2004).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig1-v1.jpg)
 
-**Figure 1.:** P motifs.(A) Schematic description of the domain and motif organization of the main players discussed in this paper. (B) The KMN network (shown in different tones of blue) consists of the Ndc80 complex (NDC80-C), the Mis12 complex (MIS12-C, also known as MIND complex), and Spc105/Knl1 (which also associates with Ydr532cp/Zwint, not shown here). Mps1 phosphorylates the MELT repeats of Spc105/Knl1 to promote the recruitment of the Bub1–Bub3 complex. A Bub3-binding domain of Bub1 is shown in orange. (C) Sequence of MELT repeats in Spc105/Knl1 of S. cerevisiae. Arrowheads indicate MELT repeats previously shown to be phosphorylated by Mps1 in vitro (London et al., 2012). The MELT motifs are shown in red. (D) Purified Bub3, Bub1289–359–Bub3, and mutants thereof discussed in the text were separated by SDS-PAGE after purification. (E) Isothermal titration calorimetry (ITC) analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide corresponding to the phosphorylated version of the second MELTP peptide (MELT2P) shown in C. (F) ITC analysis, with the unphosphorylation version of the same peptide (MELT2), shows no binding.DOI: http://dx.doi.org/10.7554/eLife.01030.003
+**Figure 1.:** (A) Schematic description of the domain and motif organization of the main players discussed in this paper. (B) The KMN network (shown in different tones of blue) consists of the Ndc80 complex (NDC80-C), the Mis12 complex (MIS12-C, also known as MIND complex), and Spc105/Knl1 (which also associates with Ydr532cp/Zwint, not shown here). Mps1 phosphorylates the MELT repeats of Spc105/Knl1 to promote the recruitment of the Bub1–Bub3 complex. A Bub3-binding domain of Bub1 is shown in orange. (C) Sequence of MELT repeats in Spc105/Knl1 of S. cerevisiae. Arrowheads indicate MELT repeats previously shown to be phosphorylated by Mps1 in vitro (London et al., 2012). The MELT motifs are shown in red. (D) Purified Bub3, Bub1289–359–Bub3, and mutants thereof discussed in the text were separated by SDS-PAGE after purification. (E) Isothermal titration calorimetry (ITC) analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide corresponding to the phosphorylated version of the second MELTP peptide (MELT2P) shown in C. (F) ITC analysis, with the unphosphorylation version of the same peptide (MELT2), shows no binding.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Isothermal titration calorimetry (ITC) analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide corresponding to the fourth MELTP peptide shown in Figure 1C. (B) ITC analysis with the unphosphorylation version of the same peptide shows no binding. (C) ITC analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide with sequence GGGPATPPKKAKKL, which encompasses a segment of histone H1 that is phosphorylated by cyclin-dependent kinase activity.DOI: http://dx.doi.org/10.7554/eLife.01030.004
+**Figure 1—figure supplement 1.:** (A) Isothermal titration calorimetry (ITC) analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide corresponding to the fourth MELTP peptide shown in Figure 1C. (B) ITC analysis with the unphosphorylation version of the same peptide shows no binding. (C) ITC analysis of the interaction of Bub1289–359–Bub3 with a synthetic peptide with sequence GGGPATPPKKAKKL, which encompasses a segment of histone H1 that is phosphorylated by cyclin-dependent kinase activity.
 
 How the phosphorylation on MELT motifs is interpreted by downstream components of the checkpoint pathway is unclear. Bub1 and Bub3, a 7-bladed WD40-repeat β-propeller that is constitutively bound to Bub1 (Figure 1A), are robustly recruited to Spc105/Knl1 when the MELT repeats are phosphorylated (London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012), in line with previous observations linking Mps1 kinase activity to kinetochore recruitment of Bub1 and Bub3 (Vanoosthuyse et al., 2004; Vigneron et al., 2004; Kiyomitsu et al., 2007, 2011; Pagliuca et al., 2009; Schittenhelm et al., 2009; Maciejowski et al., 2010; Santaguida et al., 2010; Ito et al., 2011; Storchová et al., 2011; Heinrich et al., 2012). However, whether Bub1 and Bub3 are sufficient for a tight interaction with MELTP repeats is currently unknown, and so is, therefore, the identity of the binding site for MELTP (Figure 1B).
 
@@ -47,7 +47,7 @@ Here, we show that Bub3 binds directly and with high affinity to MELTP motifs. T
 
 ## Results
 
-## Reconstitution and quantitative analysis of the interaction of Bub1–Bub3 with P-MELT
+### Reconstitution and quantitative analysis of the interaction of Bub1–Bub3 with P-MELT
 
 Bub1 binds Bub3 through a conserved Bub3-binding domain (Taylor and McKeon, 1997) that is often also referred to as GLEBS motif (Bailer et al., 1998; Wang et al., 2001) (Figure 1A). The Bub3-binding domain of Bub1 is necessary for kinetochore recruitment of Bub1. When expressed in isolation in human cells, this region of Bub1 is sufficient to mediate robust kinetochore recruitment of Bub1, albeit at partly reduced levels compared to constructs that also include the N-terminal TPR domain of Bub1 (Taylor and McKeon, 1997; Vanoosthuyse et al., 2004; Klebig et al., 2009; Krenn et al., 2012). The minimal region of human Bub1, capable of mediating kinetochore targeting, consists of residues 209–270 (equivalent to residues 289–359 of Bub1 in S. cerevisiae). Additional deletions of this segment prevent kinetochore binding (Krenn et al., 2012). Because the minimal kinetochore recruitment domain of Bub1 coincides with the Bub3-binding domain, and because it is known that Bub1 and Bub3 reinforce each other in kinetochore localization (Taylor and McKeon, 1997; Taylor et al., 1998; Sharp-Baker and Chen, 2001; Millband and Hardwick, 2002; Gillett et al., 2004; Kadura et al., 2004; Vanoosthuyse et al., 2004; Rischitor et al., 2006; Logarinho et al., 2008; Klebig et al., 2009; Windecker et al., 2009; Krenn et al., 2012; London et al., 2012; Shepperd et al., 2012; Yamagishi et al., 2012), it is expected that Bub1 and Bub3 cooperate in the mechanism of kinetochore recruitment.
 
@@ -55,93 +55,229 @@ In vitro reconstitution with recombinant purified material is often crucial to a
 
 We generated recombinant ScBub1289–359–Bub3 (where the Bub1 segment is equivalent to the minimal kinetochore targeting region of human Bub1 [Krenn et al., 2012]) by bacterial co-expression and purified it to homogeneity (Figure 1D). To assess whether Bub1–Bub3 binds directly to MELTP sequences, we tested its ability to bind MELT sequences in quantitative isothermal titration calorimetry (ITC) binding experiments. 19-residue synthetic peptides encompassing the sequences of the second and fourth MELTP motifs of Spc105/Knl1 (indicated as MELT2 and MELT4, respectively), each flanked by four and eleven residues on the N- and C-terminal ends, respectively, were tested (Figure 1C). ScBub1289–359-Bub3 bound the MELT2P and MELT4P peptides with dissociation constants (KD) of 200 nM (Figure 1E) and 1.3 µM, respectively (Figure 1—figure supplement 1). Remarkably, no binding was observed with the non-phosphorylated versions of the MELT2 and MELT4 peptides (Figure 1F and Figure 1—figure supplement 1), indicating exquisite selectivity for the phosphorylated MELT motifs. Conversely, Bub3 did not show any binding affinity for an unrelated phospho-peptide (Figure 1—figure supplement 1). Thus, ScBub1289–359–Bub3 is sufficient for the reconstitution of tight interactions with two MELTP peptides in vitro that recapitulate a salient feature of this interaction, its dependency on phosphorylation.
 
-## Structural analysis of the ScBub1289–359-Bub3-MELTP ternary complex
+### Structural analysis of the ScBub1289–359-Bub3-MELTP ternary complex
 
-We crystallized the ScBub1
+We crystallized the ScBub1289–359–Bub3-MELT2P ternary complex and determined its structure by X-ray crystallography to a resolution of 1.9 Å by molecular replacement with ScBub1315–356–Bub3 as a search model (PDB ID 2I3S; Larsen et al., 2007) (Figure 2A–B). The model extends to the two ternary complexes in the asymmetric unit and was refined to a ‘free’ R-factor (Rfree) of 19.2%, with excellent stereochemical parameters (Table 1). The two trimers in the asymmetric unit are very similar, and their salient features can be described essentially equivalently.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig2-v1.jpg)
 
-**Figure 2.:** (A) Top view of the Bub1289–359–Bub3-MELTP ternary complex. N and C indicate the N- and C-terminus, respectively. (B) Side view of the ternary complex. (C) Sequence alignment of Bub3 from the indicated species. The presented alignment was extracted from a much larger alignment consisting of more than 40 Bub3 sequences from distant eukaryotes (Vleugel et al., 2012). The indicated levels of conservation were derived from the larger alignment. Green asterisks indicate residues predicted, on structural ground, to be important for the stability of the Bub3 propeller. Orange asterisks point to residues that interact with Bub1. Red asterisks point to residues that interact with the MELTP peptide. Black asterisks point to conserved residues of uncertain function. BL = blade. (D) Mapping of secondary structure elements on the sequence of the Bub3-binding domain of Bub1.DOI: http://dx.doi.org/10.7554/eLife.01030.005
+**Figure 2.:** (A) Top view of the Bub1289–359–Bub3-MELTP ternary complex. N and C indicate the N- and C-terminus, respectively. (B) Side view of the ternary complex. (C) Sequence alignment of Bub3 from the indicated species. The presented alignment was extracted from a much larger alignment consisting of more than 40 Bub3 sequences from distant eukaryotes (Vleugel et al., 2012). The indicated levels of conservation were derived from the larger alignment. Green asterisks indicate residues predicted, on structural ground, to be important for the stability of the Bub3 propeller. Orange asterisks point to residues that interact with Bub1. Red asterisks point to residues that interact with the MELTP peptide. Black asterisks point to conserved residues of uncertain function. BL = blade. (D) Mapping of secondary structure elements on the sequence of the Bub3-binding domain of Bub1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Cartoon representations of the Bub1–Bub3-MELTP complex (the MELT peptide was omitted for clarity) shows that the β1 strand of the Bub3-binding domain of Bub1 pairs with the β2 strand in the ‘roof’ domain. (B) Crystal structure of the Bub1315–356:Bub3 complex from Saccharomyces cerevisiae (Larsen et al., 2007). The region corresponding to the β1 strand was absent from this construct (see panel E). (C) Crystal structure of the Mad3354–401:Bub3 complex (Larsen et al., 2007). Also in this case, the sequence encoding the β1 strand was missing. (D) Crystal structure of the Nup98-Rae1 complex shows a striking similarity with the Bub1–Bub3 structure. A sequence alignment for the Rae1 and Bub3 sequences is shown in Figure 2C. (E) Sequence alignment of GLEBS motifs is included in the different crystal structures.DOI: http://dx.doi.org/10.7554/eLife.01030.006
+**Figure 2—figure supplement 1.:** (A) Cartoon representations of the Bub1–Bub3-MELTP complex (the MELT peptide was omitted for clarity) shows that the β1 strand of the Bub3-binding domain of Bub1 pairs with the β2 strand in the ‘roof’ domain. (B) Crystal structure of the Bub1315–356:Bub3 complex from Saccharomyces cerevisiae (Larsen et al., 2007). The region corresponding to the β1 strand was absent from this construct (see panel E). (C) Crystal structure of the Mad3354–401:Bub3 complex (Larsen et al., 2007). Also in this case, the sequence encoding the β1 strand was missing. (D) Crystal structure of the Nup98-Rae1 complex shows a striking similarity with the Bub1–Bub3 structure. A sequence alignment for the Rae1 and Bub3 sequences is shown in Figure 2C. (E) Sequence alignment of GLEBS motifs is included in the different crystal structures.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) The panel shows the region around chain C. (B) The panel shows the region around chain F. In both cases, maps were calculated with Fourier coefficients 2mF0-DFc and contoured to 1.5σ, and clipped to limit the map to the region around the respective chain.DOI: http://dx.doi.org/10.7554/eLife.01030.007
+**Figure 2—figure supplement 2.:** (A) The panel shows the region around chain C. (B) The panel shows the region around chain F. In both cases, maps were calculated with Fourier coefficients 2mF0-DFc and contoured to 1.5σ, and clipped to limit the map to the region around the respective chain.
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>46.8–1.95 (2–1.95)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Unit cell</td>
+      <td>a = 138.7; b = 57.9; c = 118.7; α = 90 β = 102.5 γ = 90 α = γ = 90° β = 102.5°</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>438568</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>66488</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.6 (6.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.70 (88.81)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma (I)</td>
+      <td>14.15 (3.09)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>26.16</td>
+    </tr>
+    <tr>
+      <td>Rsym</td>
+      <td>0.069 (1.023)</td>
+    </tr>
+    <tr>
+      <td>CC(1/2)*</td>
+      <td>99.9 (87.3)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>R-factor</td>
+      <td>0.1726 (0.2552)</td>
+    </tr>
+    <tr>
+      <td>R-free</td>
+      <td>0.1916 (0.2864)</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>6412</td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>6052</td>
+    </tr>
+    <tr>
+      <td>Metal ions</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>775</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>36.40</td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>36.00</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>42.20</td>
+    </tr>
+    <tr>
+      <td colspan="2">Geometry</td>
+    </tr>
+    <tr>
+      <td>RMS (angles, Å)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>RMS (bonds, °)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MolProbity score†</td>
+      <td>1.29 (99th percentile)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistics for the highest-resolution shell are shown in parentheses.*Percentage of correlation between intensities from random half-datasets (Karplus and Diederichs, 2012).†MolProbity score combines the clashscore, rotamer, and Ramachandran evaluations into a single score, normalized to be on the same scale as X-ray resolution (Chen et al., 2010)._
 
 Each blade of the 7-bladed Bub3 β-propeller consists of four β-strands, with the innermost and outermost strands referred to as βA and βD, respectively. Most intra- and inter-blade loops in Bub3 are short, giving rise to a rather regular toroid. The two notable exceptions are the βD5-βA6 and βB7-βC7 loops (Figure 2A–C), both of which interact extensively with Bub1. As shown previously (Larsen et al., 2007), Bub1 meanders on the top surface of the Bub3 β-propeller (defined as the surface that contains the βD–βA loops that connect consecutive blades). The fragment of ScBub1 contained in our crystals, however, is 29 residues longer (residues 289–315) at its N-terminus relative to the one previously co-crystallized with ScBub3 (Larsen et al., 2007) (Figure 2—figure supplement 1). Residues in this extension contribute to the formation of a β-hairpin (β1-β2, Figure 2A and 2D), which pairs, via β2, with a β-hairpin within the extended βD5-βA6 loop of Bub3. Together, the β-hairpins from Bub1 and Bub3 form a joint 4-stranded β-sheet that creates a ‘roof’ on the MELTP peptide.
 
-## The Bub3 propeller binds MELTP and defines a novel interaction mode
+### The Bub3 propeller binds MELTP and defines a novel interaction mode
 
-Bub3 plays a dominant role at the interface with the MELT2
+Bub3 plays a dominant role at the interface with the MELT2P peptide (Figures 2 and 3). The latter (for which there is excellent electron density between residues 166–176 [Figure 2—figure supplement 2]) docks on blades 4–6 of the Bub3 β-propeller, with its main chain oriented almost orthogonally to the vertical axis of the propeller’s toroid. This docking mode, which is unprecedented in β-propeller-peptide interactions (Figure 3—figure supplements 1 and 2), is accompanied by the formation of at least five hydrogen bonds between the main chain atoms of the peptide and of the βD-strands of blades five and six and of the βD4-βA5 loop (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig3-v1.jpg)
 
-**Figure 3.:** P.(A) The MELTP peptide (here shown with carbon atoms in light gray color) orients transversally to the blades but its main chain amide and carbonyl groups form several hydrogen bonds with the main chain of the outermost strands of three consecutive blades, blades four to six. (B) Details of the interaction around MELTP sequence. The boxed regions are enlarged in panels C and D. (E–H) Surface representation of sequence conservation (resulting from the alignment discussed in the legend of Figure 2C) shows a dramatic concentration at the interface with MELTP.DOI: http://dx.doi.org/10.7554/eLife.01030.009
+**Figure 3.:** (A) The MELTP peptide (here shown with carbon atoms in light gray color) orients transversally to the blades but its main chain amide and carbonyl groups form several hydrogen bonds with the main chain of the outermost strands of three consecutive blades, blades four to six. (B) Details of the interaction around MELTP sequence. The boxed regions are enlarged in panels C and D. (E–H) Surface representation of sequence conservation (resulting from the alignment discussed in the legend of Figure 2C) shows a dramatic concentration at the interface with MELTP.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A–H) We manually scanned the PDB for β-propeller structures in complex with peptide ligands. Each interaction is shown with a side and a top view. The molecular species involved and the corresponding PDB code are indicated. Of note, the Cdc4-Skp1-Cyclin E complex contains a phosphorylated Cyclin E peptide. It binds to the top of the Cdc4 β-propeller domain, not on the side as in Bub3.DOI: http://dx.doi.org/10.7554/eLife.01030.010
+**Figure 3—figure supplement 1.:** (A–H) We manually scanned the PDB for β-propeller structures in complex with peptide ligands. Each interaction is shown with a side and a top view. The molecular species involved and the corresponding PDB code are indicated. Of note, the Cdc4-Skp1-Cyclin E complex contains a phosphorylated Cyclin E peptide. It binds to the top of the Cdc4 β-propeller domain, not on the side as in Bub3.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** (A and B) Top and side view of the Fbw7/Skp1/Cyclin E2P complex. The di-phosphorylated peptide is accommodated on a binding site that involves the top surface of the 8-bladed WD40 β-propeller domain of Fbw7 (Hao et al., 2007). (C and D) Top and side view of the β-TrCP/Skp1/β-catenin2P complex. Also in this case, a di-phosphorylated peptide is accommodated on a binding site that involves the top surface of the 7-bladed β-propeller domain of β-TrCP (Wu et al., 2003). The scale of figures in panels B and D is smaller in comparison to the models in A and C.DOI: http://dx.doi.org/10.7554/eLife.01030.011
+**Figure 3—figure supplement 2.:** (A and B) Top and side view of the Fbw7/Skp1/Cyclin E2P complex. The di-phosphorylated peptide is accommodated on a binding site that involves the top surface of the 8-bladed WD40 β-propeller domain of Fbw7 (Hao et al., 2007). (C and D) Top and side view of the β-TrCP/Skp1/β-catenin2P complex. Also in this case, a di-phosphorylated peptide is accommodated on a binding site that involves the top surface of the 7-bladed β-propeller domain of β-TrCP (Wu et al., 2003). The scale of figures in panels B and D is smaller in comparison to the models in A and C.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** P interface.(A) The charge distribution around the MELTP binding site of Bub3 is shown to be highly positive. The electrostatic potential at the surface (in units of Volts) was displayed within boundaries of −1.0 to 1.0. (B) A close-up of the MELT-binding region boxed in A.DOI: http://dx.doi.org/10.7554/eLife.01030.012
+**Figure 3—figure supplement 3.:** (A) The charge distribution around the MELTP binding site of Bub3 is shown to be highly positive. The electrostatic potential at the surface (in units of Volts) was displayed within boundaries of −1.0 to 1.0. (B) A close-up of the MELT-binding region boxed in A.
 
 The side chains of the MEMTP motif are also extensively involved in the interaction with Bub3. The binding site on Bub3 is essentially bipartite, with a highly hydrophobic ‘south’ interface interacting with the hydrophobic side chains of Met169MELT and Met171MELT, and a highly positively charged ‘north’ interface contacting the acidic side chains of Glu170MELT and P-Thr172MELT (Figure 3B) Specifically, at the south end, the side chains of Met169MELT and of Met171MELT are embedded in a deep hydrophobic pocket lined up by the side chains of Phe236Bub3, Phe238Bub3, Trp278Bub3, and by the aliphatic portion of the side chain of Arg283Bub3 (Figure 3C). At the north end, the side chains of Glu170MELT and P-Thr172MELT face Arg217Bub3, Arg239Bub3, and Arg242Bub3, which are therefore ideally positioned to compensate the negative charge of the phosphopeptide (Figure 3D, Figure 3—figure supplement 3) and are at the core of a complex network of hydrogen bonds that also engages Glu317Bub1. Within this array of residues, Arg242Bub3, in the βD5-βA6 loop, faces Glu170MELT and has additional stabilizing effects on the side chains of Arg217Bub3 and Arg239Bub3, which face P-Thr172MELT (Figure 3D). Taken together, these interactions explain the positive discrimination by Bub1289–359–Bub3 for phosphorylated versions of the MELT peptides. Finally, at the ‘west’ end of the binding site, the aromatic side chain of Phe175MELT2 (+3 position relative to P-Thr) stacks against the side chain of Lys193Bub3, which is held in position by the side chain of Tyr194Bub3 (not shown). Both Bub3 residues are exposed and invariable in evolution (Figure 2C), suggesting that they play an important functional role, but there is no strong preference for phenylalanine or other hydrophobic residues in the sequence of MELT repeats at the +3 position (Figure 1C). It is also possible that Lys193Bub3 and Tyr194Bub3 are required to stabilize the interaction with Bub1, whose Ile309Bub1, Ile319Bub1, and Phe323Bub1 are in direct van der Waals contact with the side chain of Tyr194Bub3 (not shown).
 
-## Mutations on Bub1–Bub3 affect interaction with MELTP in vitro
+### Mutations on Bub1–Bub3 affect interaction with MELTP in vitro
 
 A plot of sequence conservation on the surface of the Bub1–Bub3 complex (Figure 3E–H) shows an extreme concentration of conserved residues at the interface with the Spc105/Knl1 peptide. The level of conservation at this site even exceeds the conservation of Bub1-binding residues (Figure 2C). Thus, binding to phosphorylated sequences is a crucial property of Bub3. Overall, the pattern of sequence conservation strongly suggests that binding to MELTP and Bub1 might be the only two widely conserved functions of Bub3.
 
 Because the presence of a phosphate on Thr172Spc105/Knl1 is essential for high-affinity binding of ScBub1289–359–Bub3 to MELTP peptides (Figure 1), we concentrated our mutational analysis on two residues that are directly implicated in the recognition of the peptide’s phospho-threonine, Arg217Bub3 and Arg239Bub3. Positively charged residues are invariant at these positions of the Bub3 alignment (Figure 2C). We generated single or double alanine mutants of Arg217Bub3 and Arg239Bub3 in the context of ScBub1289–359–Bub3 and tested their binding affinity for the MELT2P peptide by ITC. Importantly, the mutant complexes were expressed and purified essentially like the wild type complex and did not suffer obvious losses of stability (Figure 1D).
 
-Replacement of Arg217 or Arg239 with alanine caused a 13- to 25-fold reduction in the binding affinity for the MELT2
+Replacement of Arg217 or Arg239 with alanine caused a 13- to 25-fold reduction in the binding affinity for the MELT2P peptide, with KDs of 2.7 µM and 5 µM for the R217A and R239A mutants (Figure 4A,B), respectively, compared with 200 nM for the wild type interaction (Figure 1E). Thus, neither arginine side chain is completely indispensable for binding, but each is required for high-affinity binding. When the mutations were combined in the Bub3R217A–R239A double mutant, no significant residual binding to the MELTP peptide was observed (Figure 4C). Collectively, the mutational analysis is in line with the observation that the binding of ScBub1289–359–Bub3 to the MELT2P peptide is exquisitely phosphorylation-sensitive.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig4-v1.jpg)
 
-**Figure 4.:** (A) ITC analysis of the interaction of Bub1289–359–Bub3R217A with a synthetic peptide encompassing the MELT2P sequence. (B–D) ITC experiments with the MELT2P peptide and Bub1289–359–Bub3R239A, Bub1289–359–Bub3R217A–R239A double mutant, and Bub3, respectively. (E) Close-up of the MELTP binding site indicating possible roles of the Bub3-binding motif of Bub1. The amino acid sequence of the Bub3-binding domain of Bub1 is reported in Figure 2D. (F) ITC experiment with the MELT2P peptide and the Bub1289–359–R314A–Bub3 complex.DOI: http://dx.doi.org/10.7554/eLife.01030.013
+**Figure 4.:** (A) ITC analysis of the interaction of Bub1289–359–Bub3R217A with a synthetic peptide encompassing the MELT2P sequence. (B–D) ITC experiments with the MELT2P peptide and Bub1289–359–Bub3R239A, Bub1289–359–Bub3R217A–R239A double mutant, and Bub3, respectively. (E) Close-up of the MELTP binding site indicating possible roles of the Bub3-binding motif of Bub1. The amino acid sequence of the Bub3-binding domain of Bub1 is reported in Figure 2D. (F) ITC experiment with the MELT2P peptide and the Bub1289–359–R314A–Bub3 complex.
 
-## Role of Bub1
+### Role of Bub1
 
 The majority of residues involved in the interaction with the MELTP motifs of Spc105/Knl1 are located in Bub3, indicating that the latter plays the prominent role in kinetochore recruitment of Bub1. However, as already anticipated in the Introduction, several lines of evidence indicate that Bub1 contributes to this interaction (Discussion). To test this possibility formally, we measured the binding of purified Bub3 (Figure 1D) to the MELT2P peptide in the absence of Bub1. Remarkably, we observed a 10-fold reduction in the binding affinity of Bub3 for the MELT2P peptide (KD = 2 µM; Figure 4D) compared to the Bub1–Bub3 complex (Figure 1E), indicating that Bub1 does indeed positively contribute to the interaction.
 
 Such function of Bub1 is probably exerted primarily through its structuring effects on the 4-stranded β-sheet ‘roof’ that dominates the peptide-binding region of Bub3 and which restrains the position of the positively charged residues in the ‘north’ area of the MELTP-binding site (Figure 4E). Additionally, we observe that Arg314Bub1, in the β1-β2 loop, contributes to the interaction with the phosphate group of P-Thr172Spc105/Knl1 (the interaction, however, is only observed in one of the two complexes in the asymmetric unit, and in proximity of a crystal contact) and is therefore directly engaged in the interaction with the MELT2P peptide. In ITC measurements, we observed a ∼fourfold reduction in the binding affinity of the Bub3-Bub1R314A mutant for the MELT2P peptide, in agreement with a role of Arg314Bub1 is in the interaction of the Bub1-Bub3 complex with MELT2P (Figure 4F). Similarly, Bub3–Bub1R314A bound the MELT4P with ∼threefold decreased affinity compared to wild type Bub3–Bub1 (data not shown).
 
-## Effect of Bub3 mutations on Bub3 and Bub1 localization to kinetochores
+### Effect of Bub3 mutations on Bub3 and Bub1 localization to kinetochores
 
 Next, we asked if mutations in Bub3 that prevent its interaction with MELT2P motifs in vitro also affected its recruitment to kinetochores. To this end, we inserted three copies in tandem of the coding sequence for mCherry in frame at the 3′ end of the coding sequence of S. cerevisiae BUB3 or of the bub3R217A–R239A mutant. The transgenes were inserted at the TRP1 locus of a bub3Δ strain. The resulting strains were viable and expressed similar levels of wild type or mutant Bub3 (Figure 5—figure supplement 1).
 
-To assess if the Bub3-mCherry localized to kinetochores, we tested its co-localization with Mtw1, a subunit of the MIS12 kinetochore complex (MIS12-C, also known as MIND complex,
+To assess if the Bub3-mCherry localized to kinetochores, we tested its co-localization with Mtw1, a subunit of the MIS12 kinetochore complex (MIS12-C, also known as MIND complex, Figure 1B). Unsynchronized S. cerevisiae cells expressing tagged versions of Bub3 and of the kinetochore subunit Mtw1 (Bub3-mCherry and Mtw1-GFP) were imaged in a flow cell by wide-field fluorescence microscopy. Bub3-mCherry appeared to co-localize with Mtw1 shortly before budding and until approximately metaphase (Figure 5A, Video 1), in agreement with a previous study (Gillett et al., 2004). This behavior of Bub3-mCherry was formalized, for each video frame, through computation of a ‘localization index’ whose peaks coincide with kinetochore recruitment (Figure 5B, ‘Materials and methods’, Figure 5—figure supplement 2 for details). Thus, as shown previously (Gillett et al., 2004), Bub3-mCherry localizes to kinetochores during each cell cycle in unperturbed S. cerevisiae cells. In contrast to Bub3-mCherry, Bub3R217A–R239A-mCherry never co-localized with Mtw1-GFP during the cell cycle, indicative of defective kinetochore recruitment (Figure 5C–D, Video 2). This behavior of Bub3R217A–R239A-mCherry agrees with the inability of the recombinant Bub3 mutant to interact with phosphorylated MELT repeats in vitro (Figure 4C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig5-v1.jpg)
 
-**Figure 5.:** (A) Live S. cerevisiae cells expressing wild type Bub3-mCherry and Mtw1-GFP where filmed to assess kinetochore localization of the fluorescent proteins (Video 1). Selected frames are shown. (B) A localization index was calculated as discussed in ‘Materials and Methods’. High values of the index indicate recruitment of Bub3-mCherry to kinetochores. (C) As in panel A, but using cells expressing Bub3R217A–R239A-mCherry. (D) Localization index for Bub3R217A–R239A-mCherry. The localization index for the Bub3 mutant fluctuates around the value of 3.7, which we identify as corresponding to ‘perfect delocalization’ (‘Materials and methods’). (E) Selected frames from Video 3 demonstrating kinetochore localization of Bub3-mCherry and Bub1–GFP. (F) Peaks in the localization index indicate the timing of kinetochore recruitment of Bub3-mCherry and Bub1–GFP during subsequent cell cycles. Red and blue curves report localization of Bub3-mCherry and Bub1–GFP, respectively. The time of initiation of budding is marked by black squares. The diagram extends to three budding events. There is excellent correlation of the Bub1 and Bub3 signal, indicative of co-localization. (G) Bub3R217A–R239A-mCherry does not localize to kinetochores (Video 2). Bub1–GFP fails to localize to kinetochores in Bub3R217A–R239A-mCherry cells (selected frames from Video 4), in agreement with the role of Bub3 in kinetochore recruitment of Bub1 (Gillett et al., 2004). (H) The localization index for Bub3R217A–R239A-mCherry and Bub1–GFP is flat, close the numerical value corresponding to delocalization in wild type cells.DOI: http://dx.doi.org/10.7554/eLife.01030.014
+**Figure 5.:** (A) Live S. cerevisiae cells expressing wild type Bub3-mCherry and Mtw1-GFP where filmed to assess kinetochore localization of the fluorescent proteins (Video 1). Selected frames are shown. (B) A localization index was calculated as discussed in ‘Materials and Methods’. High values of the index indicate recruitment of Bub3-mCherry to kinetochores. (C) As in panel A, but using cells expressing Bub3R217A–R239A-mCherry. (D) Localization index for Bub3R217A–R239A-mCherry. The localization index for the Bub3 mutant fluctuates around the value of 3.7, which we identify as corresponding to ‘perfect delocalization’ (‘Materials and methods’). (E) Selected frames from Video 3 demonstrating kinetochore localization of Bub3-mCherry and Bub1–GFP. (F) Peaks in the localization index indicate the timing of kinetochore recruitment of Bub3-mCherry and Bub1–GFP during subsequent cell cycles. Red and blue curves report localization of Bub3-mCherry and Bub1–GFP, respectively. The time of initiation of budding is marked by black squares. The diagram extends to three budding events. There is excellent correlation of the Bub1 and Bub3 signal, indicative of co-localization. (G) Bub3R217A–R239A-mCherry does not localize to kinetochores (Video 2). Bub1–GFP fails to localize to kinetochores in Bub3R217A–R239A-mCherry cells (selected frames from Video 4), in agreement with the role of Bub3 in kinetochore recruitment of Bub1 (Gillett et al., 2004). (H) The localization index for Bub3R217A–R239A-mCherry and Bub1–GFP is flat, close the numerical value corresponding to delocalization in wild type cells.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Saccharomyces cerevisiae’s cells.Western blotting of total cell lysates with an anti-mCherry antibody was used to detect the expression of the Bub3-mCherry construct in bub3Δ cells. TCA extracts where carried out according to (Mariani et al., 2012). Pgk1 was used as loading control.DOI: http://dx.doi.org/10.7554/eLife.01030.015
+**Figure 5—figure supplement 1.:** Western blotting of total cell lysates with an anti-mCherry antibody was used to detect the expression of the Bub3-mCherry construct in bub3Δ cells. TCA extracts where carried out according to (Mariani et al., 2012). Pgk1 was used as loading control.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) The overall intensity distribution for a diffuse fluorescent protein describes a Gaussian. In this case, the localization index defined in ‘Materials and methods’ adopts a value of ∼3.7. (B) When the fluorescent protein is kinetochore-localized, the distribution is skewed-Gaussian, with a more extended right tail. In this case, our measure for localization is larger than ∼3.7. When the localization index assumes values that are significantly higher than ∼3.7, we observed the fluorescent protein to be localized to kinetochores, as confirmed by co-localization with Mtw1 (Figure 5). (C–E) distribution of maxima (C), minima (D), and standard deviation (E) of the localization index of Bub3wt-mCherry or Bub3R217A–R239A-mCherry over an entire cell cycle (i.e., the time between two budding events).DOI: http://dx.doi.org/10.7554/eLife.01030.016
+**Figure 5—figure supplement 2.:** (A) The overall intensity distribution for a diffuse fluorescent protein describes a Gaussian. In this case, the localization index defined in ‘Materials and methods’ adopts a value of ∼3.7. (B) When the fluorescent protein is kinetochore-localized, the distribution is skewed-Gaussian, with a more extended right tail. In this case, our measure for localization is larger than ∼3.7. When the localization index assumes values that are significantly higher than ∼3.7, we observed the fluorescent protein to be localized to kinetochores, as confirmed by co-localization with Mtw1 (Figure 5). (C–E) distribution of maxima (C), minima (D), and standard deviation (E) of the localization index of Bub3wt-mCherry or Bub3R217A–R239A-mCherry over an entire cell cycle (i.e., the time between two budding events).
 
-Collectively, these results indicate that the integrity of the MELTP binding site of Bub3 is essential for its kinetochore recruitment. Because Bub1 interacts with Bub3, we asked if its pattern of kinetochore localization was similar to that of Bub3-mCherry (Figure 5E, Video 3). Indeed, the kinetochore localization indexes for Bub3-mCherry and of a Bub1–GFP construct peaked at the same time (Figure 5F). Thus, also Bub1–GFP localizes to kinetochores during an unperturbed cell cycle in S. cerevisiae.10.7554/eLife.01030.019Video 3.Localization of Bub1-GFP (left) and Bub3wt-mCherry (right) in replicating S. cerevisiae’s cells.DOI: http://dx.doi.org/10.7554/eLife.01030.019
+![Video 1.](https://cdn.elifesciences.org/articles/01030/elife-01030-media1.avi.jpg)
 
-Next, we tested if Bub1–GFP localized to kinetochores in cells expressing Bub3R217A–R239A-mCherry in bub3Δ cells. Kinetochore localization of Bub1–GFP was completely suppressed in these cells (Video 4, Figure 5G), and the kinetochore localization index was correspondingly flat (Figure 5H). In summary, these observations provide a clear demonstration of the fact that the interaction of Bub3 with MELTP motifs is crucial for the kinetochore recruitment of the Bub1–Bub3 complex.10.7554/eLife.01030.020Video 4.Diffuse localization of Bub1–GFP (left) in replicating S. cerevisiae’s cells expressing Bub3 R217A–R239A-mCherry (right).DOI: http://dx.doi.org/10.7554/eLife.01030.020
+![Video 2.](https://cdn.elifesciences.org/articles/01030/elife-01030-media2.avi.jpg)
 
-## Bub3 mutations disrupt the spindle assembly checkpoint
+Collectively, these results indicate that the integrity of the MELTP binding site of Bub3 is essential for its kinetochore recruitment. Because Bub1 interacts with Bub3, we asked if its pattern of kinetochore localization was similar to that of Bub3-mCherry (Figure 5E, Video 3). Indeed, the kinetochore localization indexes for Bub3-mCherry and of a Bub1–GFP construct peaked at the same time (Figure 5F). Thus, also Bub1–GFP localizes to kinetochores during an unperturbed cell cycle in S. cerevisiae.
 
-Next, we asked if the mutations in Bub3 that affect Spc105/Knl1 binding in vitro or in vivo also affect the ability of
+![Video 3.](https://cdn.elifesciences.org/articles/01030/elife-01030-media3.avi.jpg)
+
+Next, we tested if Bub1–GFP localized to kinetochores in cells expressing Bub3R217A–R239A-mCherry in bub3Δ cells. Kinetochore localization of Bub1–GFP was completely suppressed in these cells (Video 4, Figure 5G), and the kinetochore localization index was correspondingly flat (Figure 5H). In summary, these observations provide a clear demonstration of the fact that the interaction of Bub3 with MELTP motifs is crucial for the kinetochore recruitment of the Bub1–Bub3 complex.
+
+![Video 4.](https://cdn.elifesciences.org/articles/01030/elife-01030-media4.avi.jpg)
+
+### Bub3 mutations disrupt the spindle assembly checkpoint
+
+Next, we asked if the mutations in Bub3 that affect Spc105/Knl1 binding in vitro or in vivo also affect the ability of S. cerevisiae cells to activate the spindle checkpoint. Cells arrested in G1 with α-factor were released in the cell cycle in the presence of nocodazole to activate the spindle checkpoint. To assess checkpoint proficiency, we monitored the ability of cells to arrest in mitosis and to prevent re-replication, as well as lack of rebudding. Wild type cells and bub3Δ expressing Bub3-mCherry cells completed DNA replication at ∼60 min after release from the G1 block in nocodazole and arrested as budded cells with 2C DNA content (Figure 6, panels A, C and E), indicative of a functional SAC. Conversely, bub3Δ cells and bub3Δ expressing Bub3R217A–R239A-mCherry cells were unable to arrest, re-replicated their DNA, and re-budded, indicative of a disrupted SAC (Figure 6, panels B, D and E). These observations demonstrate that the spindle checkpoint is disrupted when the ability of Bub3 to interact with MELTP sequences is impaired.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01030/elife-01030-fig6-v1.jpg)
 
-**Figure 6.:** (A) G1-arrested wild type S. cerevisiae cells were released in the cell cycle in the presence of nocodazole. FACS analysis at the indicated time points shows that cells first undergo DNA replication and subsequently arrest with 2C DNA content, indicative of mitotic checkpoint arrest. (B) bub3Δ cells are checkpoint deficient, fail to arrest, and re-replicate they DNA. (C) A functional checkpoint is re-established upon expression of wild type Bub3 in bub3Δ cells. (D) Bub3R217A–R239A is unable to restore a functional checkpoint when expressed in bub3Δ cells. Panels A–D report experiments that were carried out at the same time and at least twice. (E) Re-budding in the presence of nocodazole was taken as an independent indication of checkpoint deficiency. Wild type cells, and bub3Δ cells reconstituted with wild type Bub3 were able to maintain the checkpoint arrest and did not re-bud during the time of observation. Conversely, bub3Δ cells and cells reconstituted with Bub3R217A–R239A re-budded, indicative of checkpoint failure. (F) The binding affinity of Bub1–Bub3 for individual MELTP is high. This predicts that multiple Bub1–Bub3 complexes may become bound to a single Spc105/Knl1 molecule. Mad3/BubR1 requires Bub1 for kinetochore recruitment, indicating that it is not able to target autonomously to kinetochores. Because Mad3/BubR1 is, like Bub1, constitutively bound to Bub3, it is plausible that Mad3/BubR1 suppresses the MELTP-binding activity of Bub3. Whether this occurs, and how, are purely speculative at this time.DOI: http://dx.doi.org/10.7554/eLife.01030.021
+**Figure 6.:** (A) G1-arrested wild type S. cerevisiae cells were released in the cell cycle in the presence of nocodazole. FACS analysis at the indicated time points shows that cells first undergo DNA replication and subsequently arrest with 2C DNA content, indicative of mitotic checkpoint arrest. (B) bub3Δ cells are checkpoint deficient, fail to arrest, and re-replicate they DNA. (C) A functional checkpoint is re-established upon expression of wild type Bub3 in bub3Δ cells. (D) Bub3R217A–R239A is unable to restore a functional checkpoint when expressed in bub3Δ cells. Panels A–D report experiments that were carried out at the same time and at least twice. (E) Re-budding in the presence of nocodazole was taken as an independent indication of checkpoint deficiency. Wild type cells, and bub3Δ cells reconstituted with wild type Bub3 were able to maintain the checkpoint arrest and did not re-bud during the time of observation. Conversely, bub3Δ cells and cells reconstituted with Bub3R217A–R239A re-budded, indicative of checkpoint failure. (F) The binding affinity of Bub1–Bub3 for individual MELTP is high. This predicts that multiple Bub1–Bub3 complexes may become bound to a single Spc105/Knl1 molecule. Mad3/BubR1 requires Bub1 for kinetochore recruitment, indicating that it is not able to target autonomously to kinetochores. Because Mad3/BubR1 is, like Bub1, constitutively bound to Bub3, it is plausible that Mad3/BubR1 suppresses the MELTP-binding activity of Bub3. Whether this occurs, and how, are purely speculative at this time.
 
 ## Discussion
 
@@ -163,35 +299,86 @@ The high affinity of the Bub1–Bub3 complex for MELTP sequences might explain w
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 cDNA sequences coding for S. cerevisiae Bub1289–359 and for full length Bub3 were subcloned in the first and second cassettes of pGEX-6P-2rbs vector (Ciferri et al., 2005). In this construct, the cDNA encoding Bub1289–359 was sub-cloned in frame with the gene encoding GST and a cleavage site for PreScission protease, and was translated from the first ribosome-binding site (rbs). Untagged Bub3 was subcloned downstream of the second rbs in the same vector. Expression was carried out in BL21 DE3 plysS cells in LB medium by auto-induction with 0.3% lactose at 18°C for approximately 16 hr. Cells were harvested by centrifugation and resuspended in Buffer A (20 mM Tris pH 7.5, 300 mM NaCl, 10% Glycerol, 1 mM DTE, 1 mM EDTA pH 8.0, 1 mM PMSF) typically at a dilution of 3 ml lysis buffer per ml of bacterial pellet. Cells were lysed by sonication, and the lysates were cleared by centrifugation at 75000 × g for 45 min. The resulting clear supernatant was incubated with gentle rotation with 1/50 (vol/vol) of GSH-sepharose slurry (GE Healthcare) for 1–2 hr at 4°C. Beads were washed with 150 vol of Buffer A. To elute the Bub1–Bub3 complex from beads, GST-PreScission protease (0.02 mg/mg of protein target) was added for 16 hr at 4°C. The eluate was concentrated on Amicon Ultra Centrifugal Filters MwCO 3000 (Merck Millipore, Billerica, MA) and further purified by size exclusion chromatography (SEC) on a Superdex 75 16/60 column using GF buffer (20 mM Tris pH 7.5, 150 mM NaCl, 1 mM DTE). The complex eluted in a single peak with apparently stoichiometric amounts of Bub1289–359 and Bub3 and was subsequently concentrated to ∼10 mg/ml for crystallization or to 2–4 mg/ml for ITC experiments. The MELT2P (sequence DPTSMEM{PTHR}EVFPRSIRQKN), MELT2 (DPTSMEMTEVFPRSIRQKN), MELT4P (DTVEGEPIDL{PTHR}EYESKPYVPN), and MELT4 (DTVEGEPIDLTEYESKPYVPN) peptides (95% purity) were custom made by GeneScript (Piscataway, NJ). Histone H1-derived phosphorylated peptide (GGGPA{pTHR}PKKAKKL, 95% purity) was purchased from AnaSpec (Catalog number 61741).
 
-## ITC measurements
+### ITC measurements
 
 Binding isotherm was measured at 25°C by isothermal titration calorimetry on a MicroCal ITC200 device (GE Healthcare, Piscataway, NJ). All samples were extensively dialysed into fresh GF buffer (20 mM Tris pH7.5, 150 mM NaCl, 1 mM DTE). In each titration, the Bub1289–359–Bub3 in the cell (at a 30 µM concentration) was titrated with thirty-five 2-µl injections (at 90 s intervals) of the indicated synthetic MELTP peptides (at a concentration of 400 µM). The injections were continued beyond saturation levels to allow for determination of heats of ligand dilution. Data were fitted by least-square procedures to a single-site binding model using ORIGIN 5.0 software package (MicroCal, Northampton, MA).
 
-## Strains, media and reagents
+### Strains, media and reagents
 
-All yeast strains (Table 2) were derivatives of, or were backcrossed at least three times to, W303 (ade2-1, trp1-1, leu2-3, 112, his3-11, 15, ura3, ssd1). Cells were grown in YEP medium (1% yeast extract, 2% bactopeptone, 50 mg/l adenine) supplemented with 2% glucose (YEPD). α-factor and nocodazole were used at 3 µg/ml and 15 µg/ml, respectively. 150 minutes after α-factor release, nocodazole was re-added to the cultures at 7.5 µg/ml. Synchronization experiments were carried out at 30°C.10.7554/eLife.01030.022Table 2.Strains used in this study (all in W303 background)DOI: http://dx.doi.org/10.7554/eLife.01030.022NameRelevant genotypeyAC1MATayAC411MATa, bub3::LEU2yAC1990MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1yAC2036MATa, bub3::LEU2 trp1::BUB3R239A-3Cherry::TRP1yAC2048MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1yAC2072MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1, MTW1-GFP::TRP1yAC2110MATa, bub3::LEU2 trp1::BUB3-3Cherry::TRP1, MTW1-GFP::TRP1yAC2090MATa, bub3::LEU2 trp1::BUB3-3Cherry::TRP1, BUB1-GFP::TRP1yAC2091MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1, BUB1-GFP::TRP1
+All yeast strains (Table 2) were derivatives of, or were backcrossed at least three times to, W303 (ade2-1, trp1-1, leu2-3, 112, his3-11, 15, ura3, ssd1). Cells were grown in YEP medium (1% yeast extract, 2% bactopeptone, 50 mg/l adenine) supplemented with 2% glucose (YEPD). α-factor and nocodazole were used at 3 µg/ml and 15 µg/ml, respectively. 150 minutes after α-factor release, nocodazole was re-added to the cultures at 7.5 µg/ml. Synchronization experiments were carried out at 30°C.
 
-## Plasmid constructions and genetic manipulations
+**Table 2.**
+ Strains used in this study (all in W303 background)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Relevant genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>yAC1</td>
+      <td>MATa</td>
+    </tr>
+    <tr>
+      <td>yAC411</td>
+      <td>MATa, bub3::LEU2</td>
+    </tr>
+    <tr>
+      <td>yAC1990</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2036</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3R239A-3Cherry::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2048</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2072</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1, MTW1-GFP::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2110</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3-3Cherry::TRP1, MTW1-GFP::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2090</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3-3Cherry::TRP1, BUB1-GFP::TRP1</td>
+    </tr>
+    <tr>
+      <td>yAC2091</td>
+      <td>MATa, bub3::LEU2 trp1::BUB3R127A/R239A-3Cherry::TRP1, BUB1-GFP::TRP1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid constructions and genetic manipulations
 
 To obtain strains expressing Bub3-mCherry or Bub3R127A–R239A-mCherry, plasmids AC122 and AC125 were created by subcloning in Yiplac204 cDNA fragments encoding wild type Bub3 or the double mutant (with 250 bp upstream of ATG and 200 bp downstream of the stop codon). The Bub3 sequences were fused to three copies of mCherry that had been amplified from pCM79-pFA6a::3mcherry::hphNT1 (Maeder et al., 2007). The plasmids were integrated at the TRP1 locus by digestion with Bsu36I, and the copy number of the integrated plasmids was verified by Southern blotting.
 
-## Flow cytometry and other techniques
+### Flow cytometry and other techniques
 
 Flow cytometric DNA quantitation was performed on a Becton-Dickinson (Franklin Lakes, NJ) FACScalibur device and analysed with CellQuest software. Kinetics of re-budding was scored on ethanol-fixed cells.
 
-## Live cell imaging
+### Live cell imaging
 
 Time lapse videos were performed at 30°C using CELLASIC microfluidic chambers and recorded using a Delta Vision Elite imaging system (Applied Precision, Issaquah, WA) based on an IX71 inverted microscope (Olympus, Shinjuku, Tokyo, Japan) with a CoolSNAP HQ2 camera (Photometrics, Tucson, AZ) and a UPlanApo 60 × (1.4 NA) oil immersion objective (Olympus).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Prior to crystallization, the Bub1289–359–Bub3 complex was mixed at a 1:2 ratio with a synthetic Spc105/Knl1 phosphopeptide (sequence DPTSMEM{TP}EVFPRSIRQKN, with N-terminal amide and C-terminal acetyl groups) and subjected to crystallization by the sitting drop method with a Mosquito nanodrop dispenser. Initial crystals were obtained with the G9 condition of Qiagen (Venlo, The Netherlands) PACT Suite screen (0.2 M K/Na tartrate, 0.1 M Bis Tris propane pH 7.5, 20% PEG 3350) and did not require further optimization. The crystals grew to a typical size of ∼50 µm in each direction. X-ray diffraction data were collected at the PXII–X10SA beamline at the Swiss Light Source (SLS) (Villigen, Switzerland) and processed using XDS (Kabsch, 2010). Due to anisotropic diffraction, the data were subject to anisotropy correction using the UCLA diffraction anisotropy server (Strong et al., 2006). Model refinement against the corrected data resulted in final maps of significantly better quality compared to maps obtained with uncorrected data. Initial phases were obtained by the molecular replacement method, which was carried out using the program PHASER (McCoy et al., 2007) and the structure of S. cerevisiae Bub3–Bub1 (PDB ID 2I3S) (Larsen et al., 2007) as a search model. Two copies of the Bub3–Bub1 dimer were placed in the asymmetric unit. Model building and refinement were carried out using Coot (Emsley et al., 2010) and phenix.refine from the PHENIX suite (Adams et al., 2010), respectively. The final model contains two Bub3 monomers (including residues 1–223 and 233–340 in chain A and residues 1–223 and 234–340 for chain D), two Bub1 fragments (including residues 302–311 and 314–347 for chain B and residues 309–347 for chain E), and two Spc105/Knl1 MELTP peptides (including residues 165–176 in chain C and residues 166–177 in chain F). Simulated annealing composite omit maps were produced using phenix.autobuild (Terwilliger et al., 2008). Figures were generated using either CCP4MG (McNicholas et al., 2011) or Pymol (Schrödinger LLC, Portland, OR). The final model and the structure factor amplitudes have been submitted to the Protein Data Bank under the accession numbers 4bl0 and r4bl0sf, respectively.
 
-## Localization index
+### Localization index
 
 Segmentation and fluorescence analysis for single cell images was performed with software written in MATLAB. For the segmentation and tracking of yeast cells, we used the program ‘phyloCell’, written by Gilles Charvin (unpublished results). To quantify the localization of proteins, we focused on the brightest pixels within each segmented area (i.e., within each cell). We observed that the area where the brightest pixels are typically localized amounts to roughly 1% of the area of the whole cell. Therefore, to compute an index for localization, we calculated the average of the brightest 1% of pixels. The value of this average depends on properties of the overall intensity distribution. When confronting two Gaussian distributions of pixel intensities, it is expected that the value of the average of the brightest intensity will be higher for the distribution whose mean intensity is higher or alternatively, for distributions with similar mean intensity, for the distribution whose standard deviation is higher. To correct for these factors, we used the following measure to quantify localization:
 

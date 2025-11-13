@@ -32,15 +32,160 @@ Although this family of established (or presumed) ion channels represents one of
 
 ## Results
 
-## Screening and assessment of candidate GRLs in unicellular eukaryotes
+### Screening and assessment of candidate GRLs in unicellular eukaryotes
 
 We used diverse insect ORs and GRs, other animal GRLs and plant DUF3537 families as sequence queries in BLAST searches of protein and genomic sequence databases of unicellular organisms (see Materials and methods). Significant hits were subjected to further assessment to exclude spurious similarities, retaining those that fulfilled most or all of the following criteria: (i) reciprocal BLAST using a candidate sequence as query identified a known GRL or DUF3537 member as a top hit (or no significant similarity to other protein families); (ii) ~ 350–500 amino acids long, similar to GRLs/DUF3537 proteins; (iii) predicted seven TM domains; (iv) intracellular N-terminus; (v) longer intracellular loops than extracellular loops (a feature of the insect receptors [Otaki and Yamamoto, 2003; Robertson, 2015]). These analyses identified 17 sequences from Fungi, Protista and unicellular Plantae (Table 1 and Figure 1), described in more detail below.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top: cryo-EM structure of Apocrypta bakeri ORCO (AbakORCO) (PDB 6C70 [Butterwick et al., 2018]); only two subunits of the homotetrameric structure are visualized. Bottom: Schematic of the membrane topology of AbakORCO (adapted from Butterwick et al., 2018), colored as in the cryo-EM structure. The white asterisk marks a helical segment that forms part of a membrane re-entrant loop in the N-terminal region. TM domain seven is divided into a cytoplasmic segment (7a) and a membrane-spanning segment (7b). (B) TM domain and topology predictions of the previously described and newly-recognized GRLs and DUF3537 proteins (Dmel, Drosophila melanogaster; Skow, Saccoglossus kowalevskii; Spur, Strongylocentrotus purpuratus; Nvec, Nematostella vectensis; Atha, Arabidopsis thaliana; see Table 1 for other species abbreviations and sequence accessions). Each plot represents the posterior probabilities of transmembrane helix and inside/outside cellular location along the protein sequence, adapted from the output of TMHMM Server v2 (Krogh et al., 2001). In several sequences an extra transmembrane segment near the N-terminus is predicted (marked by a white asterisk in the N-best prediction above the plot); this may represent the re-entrant loop helical region observed in ORCO, rather than a transmembrane region; in at least one case (SpurGRL1) the designation of this region as a TM domain, leads to an atypical (and presumably incorrect) prediction of an extracellular N-terminus. Conversely, in a subset of proteins individual TM domains are not predicted (notably TM7, black asterisks above the N-best plot), which is likely due to subthreshold predictions for TM domainsin these regions. In NvecGRL1, the long TM4 helix (which projects into the intracellular space in ORCO [Butterwick et al., 2018]) is mis-predicted as two TM domains (dashed red line). Independent membrane topology predictions for unicellular species’ GRLs were obtained using TOPCONs (Supplementary file 2), with largely consistent results.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A probability similarity matrix representing the quality of pairwise alignments of the HMMs constructed from the protein sequences indicated in the corresponding rows and columns. The similarity matrix was clustered over its rows and columns using UPGMA hierarchical clustering.
+
+**Table 1.**
+ Candidate GRLs in unicellular eukaryotes.Protein sequences are provided in Supplementary file 1. Protein nomenclature is provisional and does not imply orthology between species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Kingdom</th>
+      <th>Phylum</th>
+      <th>Species</th>
+      <th>Isolate</th>
+      <th>Alternative name</th>
+      <th>Common name</th>
+      <th>Provisional protein name</th>
+      <th>Accession/version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Fungi</td>
+      <td rowspan="2">Chytridiomycota</td>
+      <td>Spizellomyces punctatus</td>
+      <td>DAOM BR117</td>
+      <td></td>
+      <td>chytrid fungus</td>
+      <td>SpunGRL1</td>
+      <td>XP_016607089.1</td>
+    </tr>
+    <tr>
+      <td>Spizellomyces palustris</td>
+      <td>CBS 455.65</td>
+      <td>Phlyctochytrium palustre</td>
+      <td>chytrid fungus</td>
+      <td>SpalGRL1</td>
+      <td>TPX68946.1</td>
+    </tr>
+    <tr>
+      <td rowspan="13">Protista</td>
+      <td>Amoebozoa</td>
+      <td>Protostelium aurantium var. fungivorum</td>
+      <td>-</td>
+      <td>Planoprotostelium fungivorum</td>
+      <td>-</td>
+      <td>PfunGRL1</td>
+      <td>PRP89608.1</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Apusozoa</td>
+      <td rowspan="6">Thecamonas trahens</td>
+      <td rowspan="6">ATCC 50062</td>
+      <td rowspan="6">Amastigomonas trahens</td>
+      <td rowspan="6">zooflagellate</td>
+      <td>TtraGRL1</td>
+      <td>XP_013761079.1</td>
+    </tr>
+    <tr>
+      <td>TtraGRL2</td>
+      <td>XP_013753662.1</td>
+    </tr>
+    <tr>
+      <td>TtraGRL3</td>
+      <td>XP_013759733.1 (trimmed)</td>
+    </tr>
+    <tr>
+      <td>TtraGRL4</td>
+      <td>XP_013759396.1</td>
+    </tr>
+    <tr>
+      <td>TtraGRL5</td>
+      <td>XP_013757274.1</td>
+    </tr>
+    <tr>
+      <td>TtraGRL6</td>
+      <td>XP_013755387.1</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Incertae sedis/Chromerdia (superphylum: Alveolata)</td>
+      <td rowspan="6">Vitrella brassicaformis</td>
+      <td rowspan="6">CCMP3315</td>
+      <td rowspan="6">-</td>
+      <td rowspan="6">chromerid</td>
+      <td>VbraGRL1</td>
+      <td>CEM13019.1</td>
+    </tr>
+    <tr>
+      <td>VbraGRL2</td>
+      <td>CEL93132.1</td>
+    </tr>
+    <tr>
+      <td>VbraGRL3</td>
+      <td>CEM19221.1</td>
+    </tr>
+    <tr>
+      <td>VbraGRL4</td>
+      <td>CEM01650.1</td>
+    </tr>
+    <tr>
+      <td>VbraGRL5</td>
+      <td>CEM10760.1</td>
+    </tr>
+    <tr>
+      <td>VbraGRL6</td>
+      <td>CEM25255.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Plantae</td>
+      <td rowspan="2">Chlorophyta</td>
+      <td>Chloropicon primus</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>CpriGRL1</td>
+      <td>QDZ19318.1</td>
+    </tr>
+    <tr>
+      <td>Micromonas pusilla</td>
+      <td>CCMP1545</td>
+      <td>Chromulina pusilla</td>
+      <td></td>
+      <td>MpusGRL1</td>
+      <td>XP_003054778.1</td>
+    </tr>
+  </tbody>
+</table>
 
 To further assess these candidate homologs (which we refer to as GRLs hereafter), we used their sequences to build and compare Hidden Markov Models (HMMs) using HHblits (Remmert et al., 2012), a remote homology detection tool that is more sensitive than BLAST (Steinegger et al., 2019) (see Materials and methods). We constructed HMMs for candidate GRLs, as well as a representative set of animal GRLs and DUF3537 proteins. Each HMM was used as a query to perform all-versus-all alignments. A similarity matrix comparing these alignments was compiled by parsing the probabilities of each alignment (Figure 1—figure supplement 1). As expected, alignments of HMMs seeded by animal and plant proteins each form clusters of high probability similarity, although we also detected similarity between these clusters, indicative of homology. Importantly, HMMs of all new candidate sequences display significant similarity to those of multiple animal and/or plant proteins. Some candidates clustered more closely with the animal sequences, while others displayed similar probabilities with both animal and plant proteins, an observation consistent with phylogenetic analyses presented below.
 
 We also examined the candidate homologs for the only known primary sequence feature of animal GRLs, a short motif located in the C-terminal half of TM7: (T/S)Yhhhhh(Q/K/E)(F/L/M), where h denotes a hydrophobic amino acid (Robertson, 2015). This motif is diagnostic, but not definitive: many insect tuning ORs (as well as some GRs/GRLs) have divergent amino acids at some or all four positions (Robertson, 2019; Scott et al., 2001). Structural and functional analyses of a subset of residues of this motif in ORCO indicates that the TY residues form part of the interaction interface between subunits (Figure 2A), and that their mutation is detrimental to function in some, but not all, combinations of subunits (Butterwick et al., 2018; Nakagawa et al., 2012). The terminal L residue of the motif is part of the channel gate (Figure 2A), and its mutation alters ion permeation selectivity (Butterwick et al., 2018). These observations suggest that divergence from the GRL motif in a given protein could be compatible with a conserved function as an ion channel, albeit with different complex assembly and biophysical properties. Bearing these observations in mind, candidate GRLs were inspected for this motif, as described below (Figure 2B). Finally, the corresponding genes were examined for the existence of the 3’ introns characteristic of the animal genes (Robertson, 2015; Saina et al., 2015); this analysis was ultimately uninformative because of the scarcity of introns in most of these organisms (Roy and Gilbert, 2006; Figure 2B).
 
-## Candidate GRLs from unicellular eukaryotes
+![Figure 2.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-v2.jpg)
+
+**Figure 2.:** (A) Side and top views of the cryo-EM structure of the ORCO homotetramer (Butterwick et al., 2018), in which the TM7 motif amino acid side chains are shown in stick format and colored red or orange. The region in the dashed blue box, representing the extracellular entrance to the ion channel pore, is shown in a magnified view on the far right. (B) Multiple sequence alignment of the C-terminal region (encompassing TM7) of unicellular eukaryotic GRLs and selected animal GRLs and plant DUF3537 proteins. Tadh, Trichoplax adhaerens; other species abbreviations are defined in Figure 1 and Table 1. The TM7 motif consensus amino acids (and conservative substitutions) are indicated below the alignment; h indicates a hydrophobic amino acid. Red dashed lines on the alignment indicate positions of predicted introns within the corresponding transcripts. Intron locations are generally conserved within sequences from different Kingdoms, but not between Kingdoms; many Protista sequences do not have introns in this region. (C) Maximum likelihood phylogenetic tree of unicellular eukaryotic GRLs, and selected animal GRLs and plant DUF3537 proteins, with aBayes branch support values. Although the tree is represented as rooted, the rooting is highly uncertain. Protein labels are in black for animals, orange for fungi, blue for protists and green for plants. The scale bar represents one substitution per site.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Multiple sequence alignment of the GRL proteins illustrated in Figure 1. The approximate positions of the TM domains and the N-terminal re-entrant loop (asterisk) are indicated above the alignment.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Maximum likelihood phylogenetic tree of unicellular eukaryotic GRLs, and selected animal GRLs and plant DUF3537 proteins, with aBayes branch support values. Although the tree is represented as rooted, the rooting is highly uncertain. Protein labels are in black for animals, orange for fungi, blue for protists and green for plants. The scale bar represents one substitution per site.
+
+### Candidate GRLs from unicellular eukaryotes
 
 The fungal kingdom is thought to be the closest relative to Animalia (Baldauf and Palmer, 1993). A single candidate GRL was identified in two fungi, Spizellomyces punctatus (Russ et al., 2016) and Spizellomyces palustris (van de Vossenberg et al., 2019). The fungal proteins exhibit the secondary structural features of GRLs (Figure 1), but only one of the four positions of the TM7 motif is conserved (Figure 2B). A 3’ intron is not in the same position of the characteristic last intron of animal GRL genes (Figure 2B). Both of these species are chytrids, an early diverging lineage of fungi that retains some features of the last common opisthokont ancestor of animals and fungi (Medina and Buchler, 2020). Chytrids have diverse lifestyles, but are notable for their reproduction via zoospores, which use a motile cilium to swim or crawl.
 
@@ -48,19 +193,19 @@ Taxonomic classification of many single-celled eukaryotes remains unresolved, an
 
 DUF3537 domain proteins are widely (and possibly universally) encoded in higher plant genomes, typically comprising small families of 4–12 members (Benton, 2015). Single proteins were also found in unicellular plants (‘green algae’), including the marine microalgae Chloropicon primus (Lemieux et al., 2019) and Micromonas pusilla (van Baren et al., 2016; Worden et al., 2009). As for higher plant sequences, the TM7 motif is largely unrecognizable. The relationship between DUF3537 proteins and the GRL superfamily may have been overlooked earlier because protein alignments are impeded by the longer length of several intracellular loops (IL) of the plant proteins, notably IL3 in all DUF3537 proteins, and IL2 in the green algal proteins (~200 residues in the C. primus homolog) (Figure 1B). We note that ORCO is also distinguished from other insect ORs and GRs by an additional ~60–70 amino acids in IL2 (Benton et al., 2006), a region that contributes to channel regulation (Bahk and Jones, 2016; Mukunda et al., 2014).
 
-## Phylogenetic analysis of candidate GRLs
+### Phylogenetic analysis of candidate GRLs
 
 The candidate GRLs are extremely divergent in primary sequence: pairwise alignment of the new proposed family members, together with representative animal and plant proteins, reveal as little as 10% amino acid identity. While this divergence does not preclude their definition as homologs – insect OR families themselves have an average of only ~20% amino acid identity (Butterwick et al., 2018) – it makes it difficult to infer homology from sequence alone, and hinders confident multiprotein alignment. Indeed, an alignment of these 17 sequences, together with selected animal GRLs and plant DUF3537 proteins highlights the absence of any universally conserved residues, beyond the hydrophobic regions predicted to be TM domains (Figure 2—figure supplement 1). These TM regions are most confidently aligned in the C-terminal halves of the proteins, with substantial variation in loop lengths fragmenting the N-terminal halves (Figure 2—figure supplement 1). This pattern of conservation along the protein length is characteristic of insect OR/GR families (Robertson, 2015; Robertson, 2019; Saina et al., 2015), which might reflect the role of the N-terminal half in ligand-recognition (and commensurate higher divergence between proteins) and the C-terminal half in mediating subunit interactions and forming the ion channel pore (Butterwick et al., 2018).
 
 To gain an initial idea of the phylogeny of these proteins, we inferred a maximum likelihood tree (Figure 2C). As expected, the animal and plant/algal proteins form distinct clades. The sets of GRLs of V. brassicaformis and T. trahens GRLs segregate into two lineages, one of which (comprising VbraGRL1/2 and TtraGRL1/2/3) is more closely related to animal GRLs, while the others are more distantly related; this distinction matches observations from the alignments of HMMs derived from these sequences (Figure 1—figure supplement 1). Low branch support does not allow for a confident placement of the fungal GRLs; they could group with either of the two protist lineages. All of these observations are consistently held if the tree is inferred from trimmed alignments (Figure 2—figure supplement 2).
 
-## Common three-dimensional structural predictions of GRLs and DUF3537 proteins
+### Common three-dimensional structural predictions of GRLs and DUF3537 proteins
 
 To obtain further evidence supporting the homology of these proteins, we performed ab initio structure predictions of animal GRLs (including AbakORCO as control), plant DUF3537 proteins and unicellular eukaryotic GRLs, using the transform-restrained Rosetta (trRosetta) algorithm (Yang et al., 2020). Most query sequences successfully seeded a multisequence alignment to permit extraction of co-evolutionary couplings, generation of inter-residue contact maps and prediction of three-dimensional models (Figure 3A–B, Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f). The contact maps predicted consistent patterns of anti-parallel packing of TM helices (Figure 3A). Concordantly, the top-predicted models were qualitatively similar to the AbakORCO cryo-EM structure (Figure 3B), particularly in the transmembrane core of these models (Figure 3B). Importantly, the consistent helical packing of GRLs and DUF3537 proteins is fundamentally different to an unrelated seven TM protein, the Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1), which – despite sharing the same membrane orientation as GRLs – displays an arrangement of helices that is convergent with that of GPCRs (Hopf et al., 2015; Vasiliauskaité-Brooks et al., 2017; Figure 3B). We confirmed these observations first by heuristic searches of the Protein Data Bank (PDB) with Dali (Holm and Rosenström, 2010): strikingly, essentially all models identified the AbakORCO cryo-EM structure as the top hit (Supplementary file 7; outputs of Dali searches are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f). Second, quantitative pairwise comparisons of selected structures using both Dali and TM-align (Zhang and Skolnick, 2005) indicated that all family members are likely to adopt the same global protein fold, while displaying only random structural similarity to our negative control HsapAdipoR1 (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62507/elife-62507-fig3-v2.jpg)
 
-**Figure 3.:** Ab initio structural predictions of GRLs and DUF3537 proteins.(A) Inter-residue contact maps from trRosetta analysis of the indicated proteins. The axes represent the indices along the primary sequence; the positions of the predicted TM domains are shown in the schematics. The representation is mirror-symmetric along the diagonal; in one half ‘lines’ of contacts perpendicular to the diagonal of the map support the existence of anti-parallel alpha-helical transmembrane packing arrangements. Most pairs of predicted anti-parallel TMs are conserved across the proteins, despite variation in the length of loops between TM domains, supporting a globally similar packing of TM helices. The output of trRosetta analyses for these and other proteins is summarized in Supplementary file 7 and complete datasets are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f). (B) Side and top views of experimentally-determined (AbakORCO (PDB 6C70 chain A)) and Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1; PDB 5LXG chain A [Vasiliauskaité-Brooks et al., 2017]) or the top trRosetta protein model of GRL and DUF3537 proteins. All GRL/DUF3537 proteins have a similar predicted global packing of TM domains (which is particularly evident in the top view in which the seven TM domains are labelled), despite variation in lengths of the loops and N-terminal regions (colored in dark blue). By contrast, HsapAdipoR1 has a fundamentally different arrangement of TM domains. The dashed ovals on the AbakORCO model highlight the extracellular loop 2 (EL2) and intracellular loop 2 (IL2) regions that were not visualized in the ORCO cryo-EM structure (Butterwick et al., 2018). (C) Quantitative pairwise comparisons of the structures shown in (B) using TM-align (Zhang and Skolnick, 2005) and Dali (Holm and Rosenström, 2010). TM-scores of 0.0–0.30 indicate random structural similarity; TM-scores of 0.5–1.00 indicate that the two proteins adopt generally the same fold (1.00 represents a perfect match). Dali Z-scores of <2 indicate spurious similarity. In both cases, these quantitative cut-offs are not stringent, and must be used as a guide in combination with other criteria (e.g., evidence for homology based upon primary sequence comparisons). The two half-matrices are colored using different scales.
+**Figure 3.:** (A) Inter-residue contact maps from trRosetta analysis of the indicated proteins. The axes represent the indices along the primary sequence; the positions of the predicted TM domains are shown in the schematics. The representation is mirror-symmetric along the diagonal; in one half ‘lines’ of contacts perpendicular to the diagonal of the map support the existence of anti-parallel alpha-helical transmembrane packing arrangements. Most pairs of predicted anti-parallel TMs are conserved across the proteins, despite variation in the length of loops between TM domains, supporting a globally similar packing of TM helices. The output of trRosetta analyses for these and other proteins is summarized in Supplementary file 7 and complete datasets are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f). (B) Side and top views of experimentally-determined (AbakORCO (PDB 6C70 chain A)) and Homo sapiens Adiponectin Receptor 1 (HsapAdipoR1; PDB 5LXG chain A [Vasiliauskaité-Brooks et al., 2017]) or the top trRosetta protein model of GRL and DUF3537 proteins. All GRL/DUF3537 proteins have a similar predicted global packing of TM domains (which is particularly evident in the top view in which the seven TM domains are labelled), despite variation in lengths of the loops and N-terminal regions (colored in dark blue). By contrast, HsapAdipoR1 has a fundamentally different arrangement of TM domains. The dashed ovals on the AbakORCO model highlight the extracellular loop 2 (EL2) and intracellular loop 2 (IL2) regions that were not visualized in the ORCO cryo-EM structure (Butterwick et al., 2018). (C) Quantitative pairwise comparisons of the structures shown in (B) using TM-align (Zhang and Skolnick, 2005) and Dali (Holm and Rosenström, 2010). TM-scores of 0.0–0.30 indicate random structural similarity; TM-scores of 0.5–1.00 indicate that the two proteins adopt generally the same fold (1.00 represents a perfect match). Dali Z-scores of <2 indicate spurious similarity. In both cases, these quantitative cut-offs are not stringent, and must be used as a guide in combination with other criteria (e.g., evidence for homology based upon primary sequence comparisons). The two half-matrices are colored using different scales.
 
 We extended this analysis by generating protein models with an independent algorithm, RaptorX (Källberg et al., 2012), and assessing these using Dali PDB searches. Where reliable models were generated (excluding those resulting from multisequence alignments consisting of only a few proteins), AbakORCO was again repeatedly identified as the top hit for animal and unicellular eukaryotic GRLs and plant DUF3537 proteins (Supplementary file 7; full outputs of modeling are provided in the Dryad repository doi:10.5061/dryad.s7h44j15f).
 
@@ -78,7 +223,7 @@ While functional studies remain a future challenge, the recognition of their exi
 
 ## Materials and methods
 
-## Identification and assessment of candidate GRL homologs
+### Identification and assessment of candidate GRL homologs
 
 Candidate GRL sequences from unicellular eukaryotes were initially identified by searches of the GenBank RefSeq non-redundant protein sequence database (which includes sequences from 573 protozoan and 13,970 fungal species). The iterative search algorithms PSI-BLAST (Altschul et al., 1997) and DELTA-BLAST (Boratyn et al., 2012) were used, with a range of divergent animal GRLs (Pfam 7tm_6 (PF02949) and 7tm_7 domain (PF08395)) and plant DUF3537 proteins (PF12056) as queries. To avoid convergence onto hits from Animalia or Plantae, sequences from Metazoa (taxid:33208) or Viridiplantae (taxid:33090) were generally excluded from the search set. We retrieved sequences that had a query coverage of >50% and an E-value of <0.05. Sequences were subject to initial assessment based on their fulfillment of most or all of the following properties: (i) reciprocal BLASTP (or PSI-BLAST) with the candidate as query of Metazoan and Plantae datasets identified a known GRL or DUF3537 sequence as a top hit and/or no significant similarity to other protein families (e.g., distinct types of ion channels or transporters); (ii) the candidate sequence is ~350–500 amino acids long, similar to the vast majority of GRLs and DUF3537 proteins (the TtraGRL3 accession (XP_013759733.1) is 1014 amino acids but this was reannotated to 440 amino acids by trimming a large C-terminal region, which is encoded by the exon of a 3’ gene); (iii) the candidate sequence is predicted to contain seven TM domains, an intracellular N-terminus, and generally longer intracellular loops than extracellular loops (as described for insect ORs [Otaki and Yamamoto, 2003]; note this analysis was published before recognition of the inverted topology of the insect proteins). Membrane topology predictions were made with both the TMHMM Server v2.0 (Krogh et al., 2001; Figure 1B) and TOPCONS (Bernsel et al., 2009; Supplementary file 2). As described previously for Arthropoda ORs/GRs and animal GRLs (Saina et al., 2015), TM domains are not always reliably predicted, so visual inspection of the output plots was essential to recognize hydrophobic regions that fell below the threshold for TM domain assignment. Conversely, an N-terminal helical region that forms a re-entrant loop in ORCO (Butterwick et al., 2018) was often mispredicted to be a TM domain (see Figure 1B legend).
 
@@ -88,11 +233,11 @@ To obtain further evidence for homology between the identified sequences, HMMs w
 
 Intron positions were identified by analysis of the predicted gene structure of the coding sequence of each GRL, which was obtained from the corresponding GeneID page for each GenBank Accession.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 The multiprotein alignment was built with MAFFT v7.310 (option ‘linsi’) (Katoh and Standley, 2013), and a maximum likelihood tree was inferred with IQTree v.2.0.6 (Minh et al., 2020) with aBayes branch support values (Anisimova et al., 2011). Alignment trimming for Figure 2—figure supplement 2 was performed with trimAl (option ‘gappyout’) (Capella-Gutierrez et al., 2009). Raw untrimmed and trimmed sequence alignments are provided in Supplementary files 5–6. Alignments were visualized in Jalview 2.9.0b2 (Waterhouse et al., 2009) and trees in phylo.io (Robinson et al., 2016).
 
-## Protein structure prediction
+### Protein structure prediction
 
 Ab initio protein structure prediction was performed using trRosetta (https://yanglab.nankai.edu.cn/trRosetta/) (Yang et al., 2020) and RaptorX (http://raptorx.uchicago.edu/ContactMap/) (Källberg et al., 2012). For both algorithms, individual sequences of unicellular eukaryotic GRLs, plant DUF3537 proteins and selected animal GRLs were provided as queries. The complete outputs of the analyses are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f), and summarized in Supplementary file 7. Models predicted for sequences that only seeded multiprotein sequence alignments containing very few (<15) sequences or, for trRosetta models, those with an ‘estimated TM-score’ of <0.17 (Yang et al., 2020) (indicating spurious structural models [Yang et al., 2020; Zhang and Skolnick, 2004]), were not analyzed further. The top predicted models from trRosetta (model 1) and RaptorX (the model with the lowest estimated RMSD) were used in heuristic Protein Data Bank (PDB) searches with Dali (Holm and Rosenström, 2010). The top hits of these searches are shown in Supplementary file 7 and full search results are provided in the Dryad repository (doi:10.5061/dryad.s7h44j15f).
 

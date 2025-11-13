@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00trqv719 Division of Endocrinology, Diabetes and Metabolism, University of Rochester Medical Center Rochester United States
+1. Division of Endocrinology, Diabetes and Metabolism, University of Rochester Medical Center Rochester United States ([ROR:00trqv719](https://ror.org/00trqv719))
 
 † Corresponding author
 

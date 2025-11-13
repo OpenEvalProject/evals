@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.42906.001 Rotavirus genome replication and assembly take place in cytoplasmic electron dense inclusions termed viroplasms (VPs). Previous conventional optical microscopy studies observing the intracellular distribution of rotavirus proteins and their organization in VPs have lacked molecular-scale spatial resolution, due to inherent spatial resolution constraints. In this work we employed super-resolution microscopy to reveal the nanometric-scale organization of VPs formed during rotavirus infection, and quantitatively describe the structural organization of seven viral proteins within and around the VPs. The observed viral components are spatially organized as five concentric layers, in which NSP5 localizes at the center of the VPs, surrounded by a layer of NSP2 and NSP4 proteins, followed by an intermediate zone comprised of the VP1, VP2, VP6. In the outermost zone, we observed a ring of VP4 and finally a layer of VP7. These findings show that rotavirus VPs are highly organized organelles.
+Rotavirus genome replication and assembly take place in cytoplasmic electron dense inclusions termed viroplasms (VPs). Previous conventional optical microscopy studies observing the intracellular distribution of rotavirus proteins and their organization in VPs have lacked molecular-scale spatial resolution, due to inherent spatial resolution constraints. In this work we employed super-resolution microscopy to reveal the nanometric-scale organization of VPs formed during rotavirus infection, and quantitatively describe the structural organization of seven viral proteins within and around the VPs. The observed viral components are spatially organized as five concentric layers, in which NSP5 localizes at the center of the VPs, surrounded by a layer of NSP2 and NSP4 proteins, followed by an intermediate zone comprised of the VP1, VP2, VP6. In the outermost zone, we observed a ring of VP4 and finally a layer of VP7. These findings show that rotavirus VPs are highly organized organelles.
 
 ## Introduction
 
@@ -36,37 +36,37 @@ The viral non-structural proteins NSP2 and NSP5 serve a nucleation role that is 
 
 ## Results
 
-## Qualitative analysis of VP morphology and structure through SRM
+### Qualitative analysis of VP morphology and structure through SRM
 
-Rotavirus VPs are complex signaling hubs composed of viral and cellular proteins, packed together with viral RNAs. By TEM, they roughly resemble circular electrodense structures whose internal components lack an obvious degree of spatial organization (Altenburg et al., 1980; Eichwald et al., 2012). In this work, we determined the relative spatial distribution of VPs components by immunofluorescence and SRM in MA104 cells infected with the rhesus rotavirus strain RRV at 6 hr post-infection (hpi), using protein-specific antibodies. Due to their important role as nucleating factors during VP biogenesis, we selected either NSP2 or NSP5 as spatial relative reference for the distribution of the VP1, VP2 and VP6 proteins. VPs were optically sectioned through total internal reflection fluorescence microscopy (TIRF), with an excitation depth of field restricted to 200 n⁢m from the coverslip. This approach avoids excitation of fluorophores marking structural components located away from this plane, that is towards the inner cellular milieu. Additionally, NSP2 was also co-immunostained with the viral outer layer protein VP4 as well as with the ER resident proteins NSP4 and VP7, all of which have been reported to form separate ring-like structures that closely associate with VPs (González et al., 2000). In order to gain more insight into the morphogenesis of rotavirus, we analyzed the distribution of both VP7 monomers (VP7-Mon) and trimers (VP7-Tri) since this protein is assembled into virus particles in the latter form (Kabcenell et al., 1988). The nanoscale distribution of VPs was then analyzed through 3B-SRM, with improvements in the technique, developed in the present work, to solve nanoscopic structures (‘Stochastic model fitted for 3B super resolution microscopy’Appendix 1). By different methods of analysis VPs exhibit roughly a circular shape (Figure 1A–E). However, unlike the diffraction-limited image (Figure 1B), in super-resolution microscopy structural details of VP are appreciated, like the different layer distributions of viral components with respect to NSP2 (Figure 1C–E). In addition to VPs, by diffraction-limited TIRF microscopy we detected in the cytoplasm several small and dispersed puncta of fluorescence (Figure 1B), and in these images it is also sometimes possible to differentiate the distribution of NSP2 from that of VP4, a closely viroplasm-associated viral protein (see also González et al., 2000); in this case, VP4 is detected as a ring-like structure that surrounds the VP. Nevertheless, the small size of the VPs effectively precludes measurement of component distribution for the majority of its structural elements, as their separation is below the spatial resolution of typical optical microscopes. In contrast, images obtained by 3B-SRM do allow the study of the relative distribution of the VP components (Figure 1C–E). In the case of SRM images of VP4 (Figure 1C), we observed that this protein forms a ring-like structure that does not colocalize with NSP2, and also ribbon-like projections that extend towards the cytoplasm, details that were not apparent in images captured with conventional fluorescence microscopy (Figure 1B). Additionally, we observed that the small puncta of proteins detected in the cytoplasm were in fact ribbon-like structures composed of various viral proteins that may represent different organization forms of the viroplasmic proteins (Figure 1C). In this regard, it is interesting to note that both NSP2 and VP4 have been reported to have at least two different intracellular distributions (González et al., 2000; Nejmeddine et al., 2000; Criglar et al., 2014). An examination of 3B-SRM images of VPs (Figure 1C–E) revealed that the viral components form ring like structures within the VPs and are arrayed as rather discrete concentric layers. As seen in Figure 1C–E, we find that although the structural proteins VP1, VP2 and VP6 partially overlap in position with NSP2, the bulk of the proteins form separate and distinct layers. Also, the monomeric as well as the trimeric forms of VP7 are clearly distinguished from NSP2, forming an outer ring. Of interest, the spatial distribution of NSP4 colocalized with that of NSP2, an unexpected result since, as mentioned, NSP4 is an ER integral membrane protein (see the Discussion section), and as such it was expected to colocalize with VP7 rather than with an internal viroplasmic protein (Petrie et al., 1984). With regard to NSP5, it was observed distributed inside the ring formed by NSP2 (Figure 1E).
+Rotavirus VPs are complex signaling hubs composed of viral and cellular proteins, packed together with viral RNAs. By TEM, they roughly resemble circular electrodense structures whose internal components lack an obvious degree of spatial organization (Altenburg et al., 1980; Eichwald et al., 2012). In this work, we determined the relative spatial distribution of VPs components by immunofluorescence and SRM in MA104 cells infected with the rhesus rotavirus strain RRV at 6 hr post-infection (hpi), using protein-specific antibodies. Due to their important role as nucleating factors during VP biogenesis, we selected either NSP2 or NSP5 as spatial relative reference for the distribution of the VP1, VP2 and VP6 proteins. VPs were optically sectioned through total internal reflection fluorescence microscopy (TIRF), with an excitation depth of field restricted to 200 $n⁢m$ from the coverslip. This approach avoids excitation of fluorophores marking structural components located away from this plane, that is towards the inner cellular milieu. Additionally, NSP2 was also co-immunostained with the viral outer layer protein VP4 as well as with the ER resident proteins NSP4 and VP7, all of which have been reported to form separate ring-like structures that closely associate with VPs (González et al., 2000). In order to gain more insight into the morphogenesis of rotavirus, we analyzed the distribution of both VP7 monomers (VP7-Mon) and trimers (VP7-Tri) since this protein is assembled into virus particles in the latter form (Kabcenell et al., 1988). The nanoscale distribution of VPs was then analyzed through 3B-SRM, with improvements in the technique, developed in the present work, to solve nanoscopic structures (‘Stochastic model fitted for 3B super resolution microscopy’Appendix 1). By different methods of analysis VPs exhibit roughly a circular shape (Figure 1A–E). However, unlike the diffraction-limited image (Figure 1B), in super-resolution microscopy structural details of VP are appreciated, like the different layer distributions of viral components with respect to NSP2 (Figure 1C–E). In addition to VPs, by diffraction-limited TIRF microscopy we detected in the cytoplasm several small and dispersed puncta of fluorescence (Figure 1B), and in these images it is also sometimes possible to differentiate the distribution of NSP2 from that of VP4, a closely viroplasm-associated viral protein (see also González et al., 2000); in this case, VP4 is detected as a ring-like structure that surrounds the VP. Nevertheless, the small size of the VPs effectively precludes measurement of component distribution for the majority of its structural elements, as their separation is below the spatial resolution of typical optical microscopes. In contrast, images obtained by 3B-SRM do allow the study of the relative distribution of the VP components (Figure 1C–E). In the case of SRM images of VP4 (Figure 1C), we observed that this protein forms a ring-like structure that does not colocalize with NSP2, and also ribbon-like projections that extend towards the cytoplasm, details that were not apparent in images captured with conventional fluorescence microscopy (Figure 1B). Additionally, we observed that the small puncta of proteins detected in the cytoplasm were in fact ribbon-like structures composed of various viral proteins that may represent different organization forms of the viroplasmic proteins (Figure 1C). In this regard, it is interesting to note that both NSP2 and VP4 have been reported to have at least two different intracellular distributions (González et al., 2000; Nejmeddine et al., 2000; Criglar et al., 2014). An examination of 3B-SRM images of VPs (Figure 1C–E) revealed that the viral components form ring like structures within the VPs and are arrayed as rather discrete concentric layers. As seen in Figure 1C–E, we find that although the structural proteins VP1, VP2 and VP6 partially overlap in position with NSP2, the bulk of the proteins form separate and distinct layers. Also, the monomeric as well as the trimeric forms of VP7 are clearly distinguished from NSP2, forming an outer ring. Of interest, the spatial distribution of NSP4 colocalized with that of NSP2, an unexpected result since, as mentioned, NSP4 is an ER integral membrane protein (see the Discussion section), and as such it was expected to colocalize with VP7 rather than with an internal viroplasmic protein (Petrie et al., 1984). With regard to NSP5, it was observed distributed inside the ring formed by NSP2 (Figure 1E).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/42906/elife-42906-fig1-v2.jpg)
 
 **Figure 1.:** RRV-infected MA104 cells (6hpi) were fixed and processed for transmission electron microscopy or immunofluorescence microscopy. (A) Transmission electron microscopy of a VP (identified by the dotted white ellipse). (B) Diffraction-limited image of VPs (white arrows). (C) 3B-SRM image reconstructed from B. (D–E) 3B-SRM images of individual VPs labeled with different antibodies (see Methods).
 
-## Quantitative characterization of VPs structure by a novel segmentation algorithm
+### Quantitative characterization of VPs structure by a novel segmentation algorithm
 
-A qualitative analysis of the distribution of the VP components through 3B-SRM suggested that these are arranged as concentric spherical shells; thus, we set out to quantitatively validate the circularity of the VP shape. For this, we developed a segmentation algorithm based on a least squares approach, which we called ‘Viroplasm Direct Least Squares Fitting Circumference’ (VP-DLSFC) (see ‘Segmentation Algorithm’ in Appendix 1), to measure the spatial distribution of the components within individual VPs by adjusting concentric circumferences. This method is automatic, deterministic, easy to implement, and has a linear computational complexity. The performance of VP-DLSFC was tested on approximately 40,000 ‘ground truth’ (GT) synthetic images, showing a high robustness to noise and partial occlusion scenarios. Additionally, we compared our method with two other alternative methods (Gander et al., 1994), and our approach displayed an improved performance (see ‘Algorithm Validation’ in Appendix 1). Based on this new algorithm, we find that the mean radius of the NSP5 distribution was smaller than that of NSP2, suggesting that NSP5 is located in the innermost section, as a component of the core of VPs (Figure 2A). On the other hand, the distribution of the structural proteins VP1, VP2 and VP6 exhibit slightly larger mean radii than that of NSP2, and are thus primarily localized in a zone surrounding NSP2. Continuing further towards the outer regions of the VP, we observed a region occupied by the spike protein VP4. Finally, the two different forms of VP7 (VP7-Mon and VP7-Tri) were located together, close to the most external region of the VPs (Figure 2A). The distribution of the glycoprotein NSP4 showed a similar mean radius to that of NSP2 (around 0.4⁢μ⁢m) suggesting, as described above, that these two proteins are located in the same structural layer of the VP (Figure 2A).
+A qualitative analysis of the distribution of the VP components through 3B-SRM suggested that these are arranged as concentric spherical shells; thus, we set out to quantitatively validate the circularity of the VP shape. For this, we developed a segmentation algorithm based on a least squares approach, which we called ‘Viroplasm Direct Least Squares Fitting Circumference’ (VP-DLSFC) (see ‘Segmentation Algorithm’ in Appendix 1), to measure the spatial distribution of the components within individual VPs by adjusting concentric circumferences. This method is automatic, deterministic, easy to implement, and has a linear computational complexity. The performance of VP-DLSFC was tested on approximately 40,000 ‘ground truth’ (GT) synthetic images, showing a high robustness to noise and partial occlusion scenarios. Additionally, we compared our method with two other alternative methods (Gander et al., 1994), and our approach displayed an improved performance (see ‘Algorithm Validation’ in Appendix 1). Based on this new algorithm, we find that the mean radius of the NSP5 distribution was smaller than that of NSP2, suggesting that NSP5 is located in the innermost section, as a component of the core of VPs (Figure 2A). On the other hand, the distribution of the structural proteins VP1, VP2 and VP6 exhibit slightly larger mean radii than that of NSP2, and are thus primarily localized in a zone surrounding NSP2. Continuing further towards the outer regions of the VP, we observed a region occupied by the spike protein VP4. Finally, the two different forms of VP7 (VP7-Mon and VP7-Tri) were located together, close to the most external region of the VPs (Figure 2A). The distribution of the glycoprotein NSP4 showed a similar mean radius to that of NSP2 (around $0.4⁢\mu⁢m$) suggesting, as described above, that these two proteins are located in the same structural layer of the VP (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/42906/elife-42906-fig2-v2.jpg)
 
 **Figure 2.:** (A) Boxplot for the radius of the fitting circumferences. In each experimental condition we plot two boxes, the red box is for the radius of NSP2 (reference protein), and the blue box represents the radius of the accompanying VP components (names in x-axis). (B) Boxplot and results of the Mann-Whitney hypothesis test for the distance between each viral element and NSP2. Each combination of the Mann-Whitney test is linked by a line, and the result of the test it is above the line. Note that this test reports significant differences between the distribution of the distance to NSP2 of two different VP components. (C) Distance of VP1 and VP2 to NSP2 and result of the Mann-Whitney test. Because the distributions of NSP2 in combination with VP1 and VP2 are statistically different to the other NSP2 distributions (see Appendix 1—figure 7B), we show these two cases independently in this exploratory analysis. (D) Hierarchically clustered heatmap for the standard deviation of the distance to NSP2, the mean distance to NSP2, the mean radius of NSP2, and the mean radius of the accompanying protein layers, NSP5, NSP4, VP6, VP4, and VP7.
 
-In order to confirm our preliminary observations and clarify the nanoscopic organization of the VPs, we evaluated the relative separation between NSP2 and each accompanying protein. Again, the results show a remarkable degree of organization in the structure of the VP (Figure 2B). As predicted from Figure 2A, we found that NSP5 is located in the internal part of the VP, in close proximity (≈0.05⁢μ⁢m) to the area occupied by proteins NSP2 and NSP4, which themselves show the closest association. After the NSP2-NSP4 region, VP6 occupies a middle region at ≈0.05⁢μ⁢m from NSP2, followed by the VP4 protein, which were located at a distance of ≈0.18⁢μ⁢m. Finally, the VP7-Mon and VP7-Tri were situated at ≈0.38⁢μ⁢m from NSP2 (Figure 2B). A Mann-Whitney test showed that the distances of the various viral components in relation to NSP2 were significantly different (Figure 2B), suggesting that they are situated in specific areas of the VPs. The two forms of VP7 were located at the same distance to NSP2, suggesting that the formation of trimers of VP7 takes place at the ER membrane, where the VP7 monomers should also be located. Note that in Figure 2B the relative distance of VP1 and VP2 to NSP2 was not included, since the radii obtained for NSP2 in these two combinations were significantly smaller than those found when it was determined in combination with the other VP components (see ‘Supplementary Exploratory Analysis’). In addition to this, we found no significant differences between the distance of both VP1 and VP2 to NSP2 (Figure 2C). Nonetheless, based on the inferential analysis, we could place these two proteins in the same layer as VP6 (see below).
+In order to confirm our preliminary observations and clarify the nanoscopic organization of the VPs, we evaluated the relative separation between NSP2 and each accompanying protein. Again, the results show a remarkable degree of organization in the structure of the VP (Figure 2B). As predicted from Figure 2A, we found that NSP5 is located in the internal part of the VP, in close proximity ($≈0.05⁢\mu⁢m$) to the area occupied by proteins NSP2 and NSP4, which themselves show the closest association. After the NSP2-NSP4 region, VP6 occupies a middle region at $≈0.05⁢\mu⁢m$ from NSP2, followed by the VP4 protein, which were located at a distance of $≈0.18⁢\mu⁢m$. Finally, the VP7-Mon and VP7-Tri were situated at $≈0.38⁢\mu⁢m$ from NSP2 (Figure 2B). A Mann-Whitney test showed that the distances of the various viral components in relation to NSP2 were significantly different (Figure 2B), suggesting that they are situated in specific areas of the VPs. The two forms of VP7 were located at the same distance to NSP2, suggesting that the formation of trimers of VP7 takes place at the ER membrane, where the VP7 monomers should also be located. Note that in Figure 2B the relative distance of VP1 and VP2 to NSP2 was not included, since the radii obtained for NSP2 in these two combinations were significantly smaller than those found when it was determined in combination with the other VP components (see ‘Supplementary Exploratory Analysis’). In addition to this, we found no significant differences between the distance of both VP1 and VP2 to NSP2 (Figure 2C). Nonetheless, based on the inferential analysis, we could place these two proteins in the same layer as VP6 (see below).
 
 Next, through a hierarchical cluster analysis, we studied the relationship between the components of the VP, taking into account multiple variables at the same time, like the mean distance to NSP2 [‘Mean(Dist)”], the standard deviation of the distance to NSP2 [‘Std(Dist)”], the mean radius of NSP2 [‘Mean(NSP2)”], and the radii of the other proteins [‘Mean(Other)”] (Figure 2D). Note that the proteins within a cluster should be as similar as possible and proteins in one cluster should be as dissimilar as possible from proteins in another. Because our variables are related with the distance to NSP2 and the radii of the proteins, this is a no-parametric analysis that should provide evidence about the spatial distribution/order of the viral proteins into the VP. As we are considering the distance to NSP2, VP1 and VP2 were not included in this analysis. The first level of the hierarchical agglomerative cluster (Figure 2D, left) partitioned the VPs and the surrounding proteins in five clusters, composed by NSP4, NSP5, VP6, VP4 and {VP7-Mon, VP7-Tri}, which suggest that these five proteins compose different layers of the VP. The second agglomerative level merged into the same group the proteins NSP4 and NSP5, meanwhile VP6 and VP4 continue as independent clusters, which indicate that NSP5 and NSP4 are closer to each other than to VP6 and VP4 in the VP. In the third level, VP6 and VP4 are clustered in the same group, and as consequence are more related between them than with the others viral proteins. The subsequent groups in the clustering analysis indicate that VP7 remains as an independent layer with respect to the other proteins. Based on this analysis, the viral proteins seem to be highly organized, with VP7 conforming the most external layer, while NSP5, NSP4, VP6 and VP4 are distributed very close but as independent layers. The clusters between NSP5-NSP4 and VP6-VP4 suggest that these two pairs of proteins (in each cluster) conform continuous layers in the VP.
 
-## The relative spatial organization of VPs is maintained regardless their size
+### The relative spatial organization of VPs is maintained regardless their size
 
-The scatterplot between the radius of the spatial distribution of NSP2 (independent variable, x-axis) and the radius of the distribution of other viral components (response variable, y-axis) showed a strong linear relationship (Figure 3A). The distribution of NSP5 grows 0.87⁢μ⁢m for each 1⁢μ⁢m increase in the radius of NSP2 (slope interpretation), whereas the radius of the distribution of NSP4 increases 0.99⁢μ⁢m (Figure 3B). These findings indicate that NSP5 is distributed in a proportionally smaller region than NSP2 regardless of the absolute size of the VP, supporting our observation that NSP5 is a constituent of the core of the VP. Moreover, the fact that the increase in the radius of the fitted distribution of NSP4 is directly proportional to the same parameter measured for NSP2 supports the idea that these proteins are both constituents of a putative second layer. VP1, VP2 and VP6 exhibit similar slopes which diverge between 0.03 and 0.05 μm (Figure 3B and Appendix 1—table 6); thus, these results confirm that VP1, VP2 and VP6 are components of the same layer in the VPs which, from the data in Figure 3, is located just after the layer of NSP2 and NSP4. Finally, as noted in our quantitative analysis, VP4 and VP7 form consecutive external layers with a slope of 1.39 and 1.94 μm, respectively (Figure 3B and Appendix 1—table 6). These findings indicate that the spatial distribution of the viral components in the VPs and in the surrounding areas is conserved regardless of their absolute size, and also form the basis of a predictive model, where, for a given radius of distribution of NSP2, it is possible to predict the radii of the remaining VP components (NSP5, NSP4, VP1, VP2, VP6) and of VP4 and VP7 proteins. This predictive model is available as a web app at https://yasel.shinyapps.io/Nanoscale_organization_of_rotavirus_replication_machineries/. The mathematical details and the residual analysis that validate these linear models are available in the Appendix 1, section ‘Linear dependency between the viral components’, Appendix 1—table 6 and Appendix 1—figure 9.
+The scatterplot between the radius of the spatial distribution of NSP2 (independent variable, x-axis) and the radius of the distribution of other viral components (response variable, y-axis) showed a strong linear relationship (Figure 3A). The distribution of NSP5 grows $0.87⁢\mu⁢m$ for each $1⁢\mu⁢m$ increase in the radius of NSP2 (slope interpretation), whereas the radius of the distribution of NSP4 increases $0.99⁢\mu⁢m$ (Figure 3B). These findings indicate that NSP5 is distributed in a proportionally smaller region than NSP2 regardless of the absolute size of the VP, supporting our observation that NSP5 is a constituent of the core of the VP. Moreover, the fact that the increase in the radius of the fitted distribution of NSP4 is directly proportional to the same parameter measured for NSP2 supports the idea that these proteins are both constituents of a putative second layer. VP1, VP2 and VP6 exhibit similar slopes which diverge between 0.03 and 0.05 μm (Figure 3B and Appendix 1—table 6); thus, these results confirm that VP1, VP2 and VP6 are components of the same layer in the VPs which, from the data in Figure 3, is located just after the layer of NSP2 and NSP4. Finally, as noted in our quantitative analysis, VP4 and VP7 form consecutive external layers with a slope of 1.39 and 1.94 μm, respectively (Figure 3B and Appendix 1—table 6). These findings indicate that the spatial distribution of the viral components in the VPs and in the surrounding areas is conserved regardless of their absolute size, and also form the basis of a predictive model, where, for a given radius of distribution of NSP2, it is possible to predict the radii of the remaining VP components (NSP5, NSP4, VP1, VP2, VP6) and of VP4 and VP7 proteins. This predictive model is available as a web app at https://yasel.shinyapps.io/Nanoscale_organization_of_rotavirus_replication_machineries/. The mathematical details and the residual analysis that validate these linear models are available in the Appendix 1, section ‘Linear dependency between the viral components’, Appendix 1—table 6 and Appendix 1—figure 9.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/42906/elife-42906-fig3-v2.jpg)
 
 **Figure 3.:** (A) Simple linear regression analyses for each component combination (eight subpanels). In all subpanels, the x-axis represents the radius of the distributions of NSP2, and the y-axis the radius of the distribution of the accompanying VP component. The 95% confidence interval, marked in grey, is imperceptible due to goodness of fit of the linear regression (solid line). (B) Slope and confidence interval for each linear regression model (dependent variables in x-axis). The slopes values were shown under each confidence interval.
 
-## The structural organization of VPs is independent of the reference protein chosen for pairwise comparison
+### The structural organization of VPs is independent of the reference protein chosen for pairwise comparison
 
-In order to confirm the observed structural organization of VPs, we analyzed two more experimental conditions in which we chose a different reference protein for pairwise comparisons. The first was based on the distribution of NSP5 and its comparison with the relative localizations of VP6 and VP4, and the second considered NSP4 as the reference protein to compare with the distribution of VP6. We found that both analyses produced an identical structural organization for the VPs, with a comparative localization error of approximately 0.05⁢μ⁢m between models (close to the effective resolution limit of the 3B algorithm; see ‘NSP5 and NSP4 as reference proteins’ in Appendix 1). An extensive quantitative validation regarding the congruence between the NSP2, NSP5 and NSP4 models is available in the Appendix 1.
+In order to confirm the observed structural organization of VPs, we analyzed two more experimental conditions in which we chose a different reference protein for pairwise comparisons. The first was based on the distribution of NSP5 and its comparison with the relative localizations of VP6 and VP4, and the second considered NSP4 as the reference protein to compare with the distribution of VP6. We found that both analyses produced an identical structural organization for the VPs, with a comparative localization error of approximately $0.05⁢\mu⁢m$ between models (close to the effective resolution limit of the 3B algorithm; see ‘NSP5 and NSP4 as reference proteins’ in Appendix 1). An extensive quantitative validation regarding the congruence between the NSP2, NSP5 and NSP4 models is available in the Appendix 1.
 
 Based on our extensive quantitative, descriptive and inferential statistical analyses, we propose that the VP and the surrounding viral proteins form an ordered biological structure composed of at least five concentric layers organized as depicted in Figure 4. In this structure, NSP5 constitutes the innermost layer, followed by a {NSP2-NSP4} layer. Then, there is a layer composed by {VP1-VP2-VP6} and two consecutive external layers formed by VP4 and VP7. The different layers of proteins are most likely highly porous to allow the entry of positive-sense single-stranded viral RNA (+RNA) during genome replication and also of the antibodies used for VP staining.
 
@@ -102,30 +102,159 @@ Finally, we found that VP4 and VP7 conform independent layers just external to t
 
 ## Materials and methods
 
-## Cell and virus
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Virus strain (Rhesus rotavirus)</td>
+      <td>RRV</td>
+      <td>Harry B. Greenberg, Stanford University.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>MA014 cells</td>
+      <td>American Type Culture Collection</td>
+      <td>ATCC:CRL-2378.1; RRID:CVCL_3846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody 3A8</td>
+      <td>Harry B. Greenberg, Stanford University.</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody 2G4</td>
+      <td>Harry B. Greenberg, Stanford University. PMID: 2431540</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody 255/60</td>
+      <td>Harry B. Greenberg, Stanford University. PMID: 6185436</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody M60</td>
+      <td>Harry B. Greenberg, Stanford University. PMID: 2431540</td>
+      <td></td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody 159</td>
+      <td>Harry B. Greenberg, Stanford University. PMID: 2431540</td>
+      <td></td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal antibody VP1</td>
+      <td>Our Laboratory.</td>
+      <td>RRID:AB_2802095</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal antibody NSP2</td>
+      <td>Our Laboratory. PMID: 9645203</td>
+      <td>RRID:AB_2802096</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody NSP2</td>
+      <td>Our Laboratory. PMID: 9645203</td>
+      <td>RRID:AB_2802097</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody NSP4</td>
+      <td>Our Laboratory. PMID: 18385250</td>
+      <td>RRID:AB_2802094</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody NSP5</td>
+      <td>Our Laboratory. PMID: 9645203</td>
+      <td>RRID:AB_2802098</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Development Core Team, 2017. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td>Version 3.4.4 (2018-03-15)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MATLAB and Statistics Toolbox Release 2018b, The MathWorks, Inc, Natick, Massachusetts, United States.</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VP-DLSFC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Segmentation Algorithm’ in Appendix 1.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell and virus
 
 The rhesus monkey kidney epithelial cell line MA104 (ATCC) was grown in Dulbecco’s Modified Eagle Medium-Reduced Serum (DMEM-RS) (Thermo-Scientific HyClone, Logan, UT) supplemented with 5% heat-inactivated fetal bovine serum (FBS) (Biowest, Kansas City, MO) at 37°C in a 5% CO2 atmosphere. The cells were confirmed to be free of mycoplasm by testing with the INTRON Mycoplasma PCR Detection Kit (#25234). Rhesus rotavirus (RRV) was obtained from H. B. Greenberg (Stanford University, Stanford, Calif.) and propagated in MA104 cells as described previously (Pando et al., 2002). Prior to infection, RRV was activated with trypsin (10 μg/ml; Gibco, Life Technologies, Carlsbad, CA) for 30 min at 37°C.
 
-## Antibodies
+### Antibodies
 
 Monoclonal antibodies (MAbs) to VP2(3A8), VP4 (2G4), VP6 (255/60), VP7 (60) and VP7 (159) were kindly provided by H. B. Greenberg (Stanford University, Stanford, CA) (Shaw et al., 1986; Greenberg et al., 1983). The rabbit polyclonal sera to NSP2, NSP4 and NSP5, and the mouse polyclonal serum to NSP2 were produced in our laboratory (González et al., 1998). The hyperimmune serum to NSP4 (C-239) was generated in our laboratory by immunizing New Zealand white rabbits with a recombinant protein expressed in E. coli with a histidine-tail, representing the carboxy-terminal end (amino acids 120 to 175) of the rhesus rotavirus RRV NSP4 protein; see also Maruri-Avidal et al. (2008), in which this serum was used. The hyperimmune serum to VP1 was also generated in our laboratory by immunizing BALB/c mice with a recombinant protein expressed in E. coli with a histidine-tail, representing amino acids 227 to 539 of the rhesus rotavirus RRV VP1 protein. Goat anti-mouse Alexa-488- and Goat anti-rabbit Alexa-568-conjugated secondary antibodies were purchased from Molecular Probes (Eugene, Oreg.).
 
-## Immunofluorescence
+### Immunofluorescence
 
-MA104 cells grown on glass coverslips were infected with rotavirus RRV at a multiplicity of infection (MOI) of 1. Six hours post infection, the cells were fixed with and processed for immunofluorescence as described (Silva-Ayala et al., 2013). Finally, the coverslips were mounted onto the center of glass slides with storm solution (1.5% glucose oxidase +100 mM β-mercaptoethanol) to induce the blinking of the fluorophores (Dempsey et al., 2011; Heilemann et al., 2009).
+MA104 cells grown on glass coverslips were infected with rotavirus RRV at a multiplicity of infection (MOI) of 1. Six hours post infection, the cells were fixed with and processed for immunofluorescence as described (Silva-Ayala et al., 2013). Finally, the coverslips were mounted onto the center of glass slides with storm solution (1.5% glucose oxidase $+100$ mM $\beta$-mercaptoethanol) to induce the blinking of the fluorophores (Dempsey et al., 2011; Heilemann et al., 2009).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
-Cells grown in 75-c⁢m2 flasks were infected with rotavirus RRV at an MOI of 3 as described above. Six hours postinfection the cells were fixed in 2.5% glutaraldehyde-0.1 M cacodylate (pH 7.2), postfixed with 1% osmium tetroxide, and embedded in Epon 812 resin. The ultrathin sections obtained were stained with 2% uranyl acetate-1% lead citrate (Reynolds mix). The grids were examined with a Zeiss EM-900 electron microscope at 80 kV.
+Cells grown in 75-$c⁢m^{2}$ flasks were infected with rotavirus RRV at an MOI of 3 as described above. Six hours postinfection the cells were fixed in 2.5% glutaraldehyde-0.1 M cacodylate (pH 7.2), postfixed with 1% osmium tetroxide, and embedded in Epon 812 resin. The ultrathin sections obtained were stained with 2% uranyl acetate-1% lead citrate (Reynolds mix). The grids were examined with a Zeiss EM-900 electron microscope at 80 kV.
 
-## Set up of the optical microscope
+### Set up of the optical microscope
 
-All super-resolution imaging measurements were performed on an Olympus IX-81 inverted microscope configured for total internal reflection fluorescence (TIRF) excitation (Olympus, cellTIRFTM Illuminator). The critical angle was set up such that the evanescence field had a penetration depth of ~200 nm (Xcellence software v1.2, Olympus soft imaging solution GMBH). The samples were continuously illuminated using excitation sources depending on the fluorophore in use. Alexa Fluor 488 and Alexa Fluor 568 dyes were excited with a 488 nm or 568 nm diode-pumped solid-state laser, respectively. Beam selection and modulation of laser intensities were controlled via Xcellence software v.1.2. A full multiband laser cube set was used to discriminate the selected light sources (LF 405/488/561/635 A-OMF, Bright Line; Semrock). Fluorescence was collected using an Olympus UApo N 100⁢x/1.49 numerical aperture, oil-immersion objective lens, with an extra 1.6x intermediate magnification lens. All movies were recorded onto a 128 × 128-pixel region of an electron-multiplying charge coupled device (EMCCD) camera (iXon 897, Model No: DU-897E-CS0-#BV; Andor) at 100 nm per pixel, and within a 50 ms interval (300 images per fluorescent excitation).
+All super-resolution imaging measurements were performed on an Olympus IX-81 inverted microscope configured for total internal reflection fluorescence (TIRF) excitation (Olympus, cellTIRFTM Illuminator). The critical angle was set up such that the evanescence field had a penetration depth of ~200 nm (Xcellence software v1.2, Olympus soft imaging solution GMBH). The samples were continuously illuminated using excitation sources depending on the fluorophore in use. Alexa Fluor 488 and Alexa Fluor 568 dyes were excited with a 488 nm or 568 nm diode-pumped solid-state laser, respectively. Beam selection and modulation of laser intensities were controlled via Xcellence software v.1.2. A full multiband laser cube set was used to discriminate the selected light sources (LF 405/488/561/635 A-OMF, Bright Line; Semrock). Fluorescence was collected using an Olympus UApo N $100⁢x/1.49$ numerical aperture, oil-immersion objective lens, with an extra 1.6x intermediate magnification lens. All movies were recorded onto a 128 × 128-pixel region of an electron-multiplying charge coupled device (EMCCD) camera (iXon 897, Model No: DU-897E-CS0-#BV; Andor) at 100 nm per pixel, and within a 50 ms interval (300 images per fluorescent excitation).
 
-## Bayesian analysis of the blinking and bleaching
+### Bayesian analysis of the blinking and bleaching
 
 Sub-diffraction images were derived from the Bayesian analysis of the stochastic Blinking and Bleaching of Alexa Fluor 488 dye (Cox et al., 2011). For each super-resolution reconstruction, 300 images were acquired at 20 frames per second with an exposure time of 50 ms at full laser power, spreading the bleaching of the sample over the length of the entire acquisition time. The maximum laser power coming out of the optical fiber measured at the back focal plane of the objective lens, for the 488 nm laser line, was 23.1 mW. The image sequences were analyzed with the 3B algorithm considering a pixel size of 100 nm and a full width half maximum of the point spread function of 270 nm (for Alexa Fluor 488), measured experimentally with 0.17 μm fluorescent beads (PS-SpeckTM Microscope Point Source Kit, Molecular Probes, Inc). All other parameters were set up using default values. The 3B analysis was run over 200 iterations, as recommended by the authors in Cox et al. (2011), and the final super-resolution reconstruction was created at a pixel size of 10 nm with the ImageJ plugin for 3B analysis (Rosten et al., 2013), using parallel computing as described in Hernández et al. (2016). The resolution increase observed in our imaging set up by 3B analysis was up to five times below the Abbe’s limit (~50 nm). The resolution provided by 3B was improved by computing the photo-physical properties of Alexa Fluor 488, and Alexa Fluor 568 dyes, which were provided to 3B algorithm, as an input parameter which encompass the probability transition matrix between fluorophore’s states. The method was validated with 40 nm gattapaint nanorules (PAINT 40RG, gattaquant, Inc) labeled with ATTO 655/ATTO 542 dyes (see ‘3B Algorithm’ in Appendix 1).
 
-## Code and statistical analysis
+### Code and statistical analysis
 
 The segmentation algorithm (VPs-DLSFC) was developed in Matlab R2018a (9.4.0.813654) software. A detailed explanation of each the developed methods is available in Appendix 1. Statistical analysis were performed using R version 3.4.4 (2018-03-15) software. All the codes are available at https://github.com/Yasel88/Nanoscale_organization_of_rotavirus_replication_machineries (Garcés Suárez, 2019; copy archived at https://github.com/elifesciences-publications/Nanoscale_organization_of_rotavirus_replication_machineries).

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/032000t02 Division for Biochemistry of Joint and Connective Tissue Diseases, Department of Orthopedics, University of Ulm Ulm Germany
+1. Division for Biochemistry of Joint and Connective Tissue Diseases, Department of Orthopedics, University of Ulm Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))
 
 † Corresponding author
 
@@ -27,7 +27,7 @@ Here, we provide first evidence of enhanced CSV on senescent hAC. CSV was associ
 
 ## Results
 
-## CSV and SA markers are increased in chondrocytes from highly degenerated or traumatized cartilage
+### CSV and SA markers are increased in chondrocytes from highly degenerated or traumatized cartilage
 
 In order to investigate the incidence of chondrosenescence and CSV-positive cells in OA, we compared hAC isolated from macroscopically intact (OARSI grade ≤1) and highly degenerated human cartilage tissue (OARSI grade ≥3) derived from the same patient. Exemplary characterization of the corresponding tissues using Saf-O staining confirmed clear differences regarding the proteoglycan content, structural surface integrity, and cellularity between macroscopically intact and highly degenerated tissue (Figure 1a and b). mRNA levels of CDKN1A and CDKN2A were significantly enhanced in OARSI grade ≥3 as compared to OARSI grade ≤1 tissue, while that of SIRT1 was decreased (Figure 1c). SIRT1 has been described as an essential negative regulator in cellular senescence and was found to protect chondrocytes against IL-17-induced senescence (Lee et al., 2019; Wang et al., 2021).
 
@@ -39,7 +39,7 @@ Moreover, SA-β-galactosidase (SA-β-gal) and CSV were significantly higher in i
 
 Our ex vivo human cartilage trauma model is suitable to study injury-induced oxidative stress, cell death, and degenerative processes (Riegger and Brenner, 2020; Riegger and Brenner, 2019; Riegger et al., 2016). Since ROS and cellular damage, in general, have been described as crucial triggers in chondrosenescence (Jeon et al., 2018; Jeon et al., 2017), we investigated the expression of SA markers and CSV on hAC after ex vivo traumatization. Seven days after traumatization, we could histologically confirm structural and cellular alteration of the formerly macroscopically intact cartilage, similarly to that of highly degenerated samples (Figure 1i). The traumatized tissue exhibited fissures in the surface, proteoglycan loss, hypocellularity, and cluster formation – altogether typical hallmarks of OA (Riegger et al., 2018b; Riegger et al., 2018a; Lotz et al., 2010). Moreover, the expression pattern of CDKN1A, CDKN2A, and SIRT1 in traumatized cartilage explants was comparable to that in OARSI grade ≥3 tissue (Figure 1j–l). While mRNA levels of CDKN1A remained elevated over 14 days after cartilage trauma, that of CDKN2A and SIRT1 were largely restored to the control levels by time. Moreover, CSV was significantly higher on hAC derived from traumatized cartilage as compared to donor-matched hAC from unimpacted tissue (Figure 1m).
 
-## Doxo-mediated SIPS enhances CSV levels on hAC
+### Doxo-mediated SIPS enhances CSV levels on hAC
 
 To verify that CSV was associated with a senescent phenotype of hAC, we used our Doxo-based in vitro model to induce SIPS in isolated hAC (Kang et al., 2019; Kirsch et al., 2022). As expected, Doxo treatment resulted in enhanced SA marker expression as well as SA-β-gal activity (Figure 2a and b), which was accompanied by a significant increase in CSV (Figure 2c and d).
 
@@ -53,7 +53,7 @@ To visualize enhanced CSV levels on Doxo-treated hAC and further investigate whe
 
 Immunofluorescence staining of intracellular vimentin revealed that Doxo-treated chondrocytes exhibited an abnormal vimentin arrangement, characterized by increased vimentin bundling, or a (nearly) complete loss of vimentin (Figure 2j). Correlation analysis between CSV-positivity and relative mRNA levels of VIM confirmed a negative association between the gene expression and translocation of vimentin (Figure 2k). These findings indicate that the disruption of the vimentin network might be connected to a SIPS-like phenotype and CSV expression.
 
-## Knockdown of CDKN2A cannot completely reverse but attenuate CSV and SA marker expression
+### Knockdown of CDKN2A cannot completely reverse but attenuate CSV and SA marker expression
 
 The CDKN2A gene encodes for p14ARF and p16INK4A, which are crucial regulators in cell cycle arrest and consequent senescence. As described above, both CSV and CDKN2A expression were similarly enhanced in OA as well as after cartilage trauma or Doxo stimulation. Therefore, we assumed a connection between CDKN2A-mediated senescence and CSV-positivity.
 
@@ -63,7 +63,7 @@ As siRNA-mediated silencing of CDKN2A was previously described to result in a re
 
 **Figure 3.:** (a) Outline of the transfection regime. (b–d) siRNA-mediated knockdown of CDKN2A was confirmed by means of (b) quantitative real-time PCR (qRT-PCR) (n=8) and (c) by means of immunofluorescence; scale bar: 25 µm, (d) including quantification of the corrected total cell fluorescence (CTCF) values relative to siNC (n=4). (e) mRNA levels of SA markers, including CDKN1A, CXCL1, MMP13, IL6, and IL8 normalized on untransfected controls (n≥5). (f) Mitotic activity and proliferation, respectively, was determined by means of an alamarBlue assay performed at different time points (3 days, 5 days, 7 days). (g) Exemplary senescence-associated-β-galactosidase (SA-β-gal) staining and (h) corresponding quantification of the SA-β-gal activity in human articular chondrocyte (hAC) after transfection (n=6); scale bar: 50 µm. (i) CSV-positivity of hAC was assessed by means of cytometric analysis (n=8). (j) Correlation analysis of CDKN2A mRNA levels and CSV-positivity in hAC from different experiments. Data are presented as box plots with median, whiskers min to max; or column bars with mean, scanning electron microscopy (SEM). Statistics: (b), (d), (h), and (i) were analyzed by a paired two-tailed t test; (e) and (f) were analyzed by means of a multiple t test; (j) was analyzed by a Pearson correlation analysis. Each data point represents an independent biological replicate (n).
 
-## Knockdown of VIM results in enhanced CSV-positivity and a SIPS-like phenotype in hAC
+### Knockdown of VIM results in enhanced CSV-positivity and a SIPS-like phenotype in hAC
 
 Overexpression of vimentin was found to induce a senescence-like morphology in fibroblasts, characterized by a flattened and enlarged cell shape (Nishio et al., 2001). However, disruption of the vimentin network has been associated with a decline in chondrogenic characteristics and an OA phenotype in chondrocytes (Blain et al., 2006). As we assumed a connection between alterations in the intracellular vimentin network and CSV, we performed an siRNA-mediated knockdown of VIM in hAC.
 
@@ -77,7 +77,7 @@ Interestingly, CSV was significantly enhanced after knockdown of VIM (Figure 4l 
 
 Therefore, we assumed that chondrosenescence and consequent increase of CSV can be attributed to the disturbance of the intracellular vimentin network and subsequent oxidative stress.
 
-## Collapse of the vimentin network is associated with enhanced CSV-positivity and a SIPS-like phenotype in hAC
+### Collapse of the vimentin network is associated with enhanced CSV-positivity and a SIPS-like phenotype in hAC
 
 To further confirm our assumption that disturbance of the vimentin network results in chondrocyte senescence and vimentin dislocation to the membrane, we investigated if direct disruption of the vimentin network by simvastatin (Sim) might increase CSV and promote SIPS. According to Trogden et al., 2018, who previously described the effects of Sim on the intermediate filament in adrenal carcinoma SW13 cells, we observed a reorganization of intracellular vimentin. Co-staining with phalloidin confirmed that Sim had only minor effect on the actin cytoskeleton but resulted in a strong condensation of vimentin filaments, which were selectively located in close proximity to the nuclei (Figure 5a). Similar to the phenotype observed after siRNA-mediated VIM knockdown, the vimentin ‘cage’ around the nucleus was collapsed, resulting in smaller size and elliptical shape of the nuclei (Figure 5a). Sim-treated hAC further exhibited enhanced levels of CSV (Figure 5b and c), cytoplasmatic and mitochondrial ROS (Figure 5d–f), and SA-β-gal activity (Figure 5g, h). Accumulation of mitochondrial ROS might be explained by the fact that some cytoskeletal components, and in particular vimentin, play a crucial role in mitochondrial morphology and function (Tolstonog et al., 2001; Mado et al., 2019).
 
@@ -87,7 +87,7 @@ To further confirm our assumption that disturbance of the vimentin network resul
 
 Overall, these results support the assumption that CSV on hAC is triggered by breakdown or structural alteration of the intracellular vimentin network and subsequent cellular stress and senescence.
 
-## CSV is associated with chondrocyte plasticity and osteogenic differentiation in vitro
+### CSV is associated with chondrocyte plasticity and osteogenic differentiation in vitro
 
 Chondrocytes are known to rapidly lose their chondrogenic phenotype and undergo SA alterations in 2D culture (Lee et al., 2019). Dedifferentiated chondrocytes at passages ≥4 are characterized by enhanced levels of stem cell-associated markers (Fickert et al., 2004; Barbero et al., 2003), augmented cellular plasticity, and tri-linear differentiation capacities (Barbero et al., 2003; Caron et al., 2012; Varela-Eirín et al., 2018). Interestingly, Varela-Eirín et al. described increasing levels of CD105 and CD166 during in vitro expansion of chondrocytes as indicator of an immature phenotype with high cellular plasticity but also SA characteristics (Varela-Eirín et al., 2018).
 
@@ -95,7 +95,7 @@ Consequently, we evaluated CSV levels on hAC during in vitro expansion and its a
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91453/elife-91453-fig6-v2.jpg)
 
-**Figure 6.:** (a) Correlation analysis between passage number and percentage of CSV-positive cells (determined by means of flow cytometry). Analysis includes n=18 different donors, some donors were measured at various passages. (b) Exemplary images of immunocytochemistry staining against CSV on human articular chondrocyte (hAC) at low (P1) and high (P4) passage. (c) Correlation analysis between percentage of CSV-positive and CD105 (green; n=26) or CD166-positive (purple; n=16) hAC; surface markers were determined by means of flow cytometry. (d) hAC were cultured in basal, osteogenic (ODM; turquoise), or chondrogenic (CDM; pink) medium for 28 days. Afterward, one half of the cells were further cultured for 14 days in basal medium at sub-confluence (=ex-ODM and ex-CDM). Percentage of CSV-positive cells was determined via flow cytometry before differentiation (t), directly after differentiation at day 28 (basal, ODM, CDM), or after further expansion at basal conditions at day 42 (ex-ODM, ex-CDM); n≥5. (0e) Percentage of CSV-positive cells in isolated hAC (n=3 and n=6), bm-MSC (n=3), and chondrogenic stem progenitor cell (CSPC) (n=6) was determined by flow cytometry; bm-MSC and CSPC, respectively, were compared to passage-matching hAC. (f) Matrix calcification (Ca2+ deposition) was quantified via Alizarin red staining 28 days after osteogenic differentiation of hAC (n=7). Alizarin red concentrations were correlated with the percentage of CSV-positive cells in the corresponding donor, which was determined by flow cytometry. (g) Exemplary images of safranin-O-stained hAC pellets after chondrogenic differentiation for 28 days; images of three independent donors with increasing CSV-positivity (from left to right) are shown. Glycosaminoglycans appear in red and imply production of hyaline cartilage. Size of the pellet is considered as indicator of matrix production and successful chondrogenesis. Statistics: (a,c,f) were analyzed by a Pearson correlation analysis; (d,e) were analyzed by means of a one-way ANOVA, including a Sidak post hoc test.
+**Figure 6.:** (a) Correlation analysis between passage number and percentage of CSV-positive cells (determined by means of flow cytometry). Analysis includes n=18 different donors, some donors were measured at various passages. (b) Exemplary images of immunocytochemistry staining against CSV on human articular chondrocyte (hAC) at low (P1) and high (P4) passage. (c) Correlation analysis between percentage of CSV-positive and CD105 (green; n=26) or CD166-positive (purple; n=16) hAC; surface markers were determined by means of flow cytometry. (d) hAC were cultured in basal, osteogenic (ODM; turquoise), or chondrogenic (CDM; pink) medium for 28 days. Afterward, one half of the cells were further cultured for 14 days in basal medium at sub-confluence (=ex-ODM and ex-CDM). Percentage of CSV-positive cells was determined via flow cytometry before differentiation (t0), directly after differentiation at day 28 (basal, ODM, CDM), or after further expansion at basal conditions at day 42 (ex-ODM, ex-CDM); n≥5. (e) Percentage of CSV-positive cells in isolated hAC (n=3 and n=6), bm-MSC (n=3), and chondrogenic stem progenitor cell (CSPC) (n=6) was determined by flow cytometry; bm-MSC and CSPC, respectively, were compared to passage-matching hAC. (f) Matrix calcification (Ca2+ deposition) was quantified via Alizarin red staining 28 days after osteogenic differentiation of hAC (n=7). Alizarin red concentrations were correlated with the percentage of CSV-positive cells in the corresponding donor, which was determined by flow cytometry. (g) Exemplary images of safranin-O-stained hAC pellets after chondrogenic differentiation for 28 days; images of three independent donors with increasing CSV-positivity (from left to right) are shown. Glycosaminoglycans appear in red and imply production of hyaline cartilage. Size of the pellet is considered as indicator of matrix production and successful chondrogenesis. Statistics: (a,c,f) were analyzed by a Pearson correlation analysis; (d,e) were analyzed by means of a one-way ANOVA, including a Sidak post hoc test.
 
 To further investigate the role of CSV as a potential marker of cellular plasticity in hAC, dedifferentiated chondrocytes (passages 4–5) were re-differentiated into osteogenic or chondrogenic lineage for 28 days, which was confirmed by expression analysis of corresponding markers and exemplary staining (Supplementary file 1). CSV levels were significantly diminished after differentiation, while subsequent culturing at basal conditions and sub-confluent density restored CSV (Figure 6d) and decreased osteogenic as well as chondrogenic markers (Supplementary file 1-Figure S3a,b,d,e). Additional mRNA analysis confirmed the dynamics of CD105 and CD166 as well as VIM expression during the differentiation experiment, and lower mRNA levels of VIM in dedifferentiated chondrocytes (Supplementary file 1-Figure S4a-c), reinforcing the assumption that VIM gene expression is inversive to the presentation of CSV.
 
@@ -103,7 +103,7 @@ Since CSV correlated with stem-like markers, we wondered whether CSV might be a 
 
 Altogether these findings suggest that an increased level of CSV on hAC is associated with an enhanced cellular plasticity but decreased chondrogenic capacities.
 
-## High CSV levels are associated with enhanced plastic adherence
+### High CSV levels are associated with enhanced plastic adherence
 
 Vimentin is known to contribute to integrin-mediated cell adhesion and binding to ECM components, respectively (Bhattacharya et al., 2009). Interestingly, we observed that the adhesion of hAC on culture plates increased with higher CSV levels. Accordingly, cells detached within 20 min upon EDTA exposure had significantly lower CSV levels as compared to the cells, which remained on the plates (Figure 7a). By means of an adherence assay, it could be confirmed that donors with low CSV-positivity (below 14%) detached significantly faster as compared to that with CSV levels of 16% and higher (Figure 7b). Subsequent correlation analysis revealed a significant association between the CSV-positivity and adherence (Figure 7c). A similar outcome was obtained by using the cancer cell lines HeLa (low CSV) and SaOs-II (high CSV) (Supplementary file 1). Further investigation regarding the adhesion of hAC to different ECM components demonstrated a significant association between CSV levels and binding affinity to fibronectin and vitronectin, while no association was found in case of tenascin (Figure 7d) or Collagen I, II, and IV (Figure 7e) as determined by means of an ECM cell adhesion array. Interestingly, knockdown of vimentin, which induced cellular stress and enhanced CSV levels as described above, significantly increased the gene expression of αV, α5, and β1 integrin subunits in hAC (Figure 7f).
 
@@ -135,54 +135,54 @@ In sum, our study provides first evidence of CSV as a novel surface marker of ph
 
 ## Materials and methods
 
-## Isolation and cultivation of hAC and CSPC
+### Isolation and cultivation of hAC and CSPC
 
 hAC were enzymatically isolated from human cartilage with either OARSI grade ≥3 (highly degenerated) or OARSI grade ≤1 (macroscopically intact) (Waldstein et al., 2016). In short, full-thickness cartilage was minced and digested for 45 min with 0.2% pronase (Sigma-Aldrich) and overnight with 0.025% collagenase (Sigma-Aldrich). CSPC were isolated by outgrowth of the migratory active cells from intact human cartilage by as previously described (Riegger et al., 2018b).
 
 Cells were cultured in serum-containing chondrocyte (=basal) medium (1:1 DMEM 1 g/L glucose/Ham’s F12, 10% FBS, 0.5% penicillin/streptomycin, 2 mM L-glutamine, and 10 μg/mL 2-phospho-L-ascorbic acid trisodium salt) and split at a confluence of 80%.
 
-## Cartilage explant preparation, cultivation, and impact loading
+### Cartilage explant preparation, cultivation, and impact loading
 
 Full-thickness cartilage explants (Ø=6 mm) from macroscopically intact tissue (OARSI score ≤1) were harvested and cultivated in chondrocyte medium for 24 hr in an incubator (37°C, 5% CO2, 95% humidity). Afterward, the explants were subjected to a single impact load of 0.59 J using a drop-tower model as previously described (Riegger and Brenner, 2019; Riegger et al., 2016; Riegger et al., 2018a) and further cultivated under serum-free conditions (DMEM, 1% sodium pyruvate, 0.5% L-glutamine, 1% non-essential amino acids, 0.5% penicillin/streptomycin, 10 μg/mL 2-phospho-L-ascorbic acid trisodium salt, and 0.1% insulin-transferrin-sodium selenite).
 
-## Stimulation of isolated hAC
+### Stimulation of isolated hAC
 
 SIPS was induced by stimulation with 0.1 µM Doxo (Selleckchem, S1208) for 10 days (Kirsch et al., 2022). Activated Sim was applied for 20 hr at a concentration of 10 µM. Induction of apoptosis was attained by stimulation with cycloheximide (10 µg/mL; Selleckchem, S7418) and TNF (10 ng/mL; Peprotech, 300-01A) as previously reported (Riegger and Brenner, 2019). All stimulations were performed in serum-reduced chondrocyte medium (5% FBS).
 
-## alamarBlue assay (cytotoxicity/cell proliferation assay)
+### alamarBlue assay (cytotoxicity/cell proliferation assay)
 
 Quantitative measurement of cell proliferation/cytotoxicity was attained by means of an alamarBlue assay (Bio-Rad, Munich, Germany). Cells were incubated for 3 hr in a 5% alamarBlue solution (in DMEM) at 37°C. Fluorescence intensities were detected at 550 nm excitation and 590 nm emission by using the multimode microplate reader Infinite M200 Pro (Tecan Austria GmbH Groedig, Austria). Blank values (5% alamarBlue solution in empty well) were subtracted from measured values. Results were calculated relative to unstimulated cells.
 
-## Flow cytometric analysis
+### Flow cytometric analysis
 
 To analyze surface markers on freshly isolated hAC, cartilage tissue was directly digested by means of collagenase overnight, without pronase. In case of cultured hAC, cells were detached with PBS-buffered EDTA (5 mM). hAC were stained with anti-CSV (clone 84-1, abnova, #H00007431-MF08) or IgG2bκ isotype control (BD Pharmingen) for 40 min. A minimum of 2×104 cells was analyzed on a Becton Dickinson FACSCalibur flow cytometer (BD Biosciences) with dual-laser technology using the corresponding software CellQuest version 5.2.1. A maximum of 1% isotype control-positive cells was accepted. Cancer cell lines HeLa (low CSV levels; mean: 11.8%±4.2) and SaOs-II (mediate/high CSV levels; mean: 34.4%±8.8) were used to validate the anti-CSV antibody and the staining protocol (Supplementary file 1). While CVS was found to be degraded by trypsin and accutase treatment, no influence was observed in case of collagenase relative to EDTA (Supplementary file 1).
 
-## SA-β-gal staining and activity assay
+### SA-β-gal staining and activity assay
 
 SA-β-gal staining was performed using an SA-β-gal staining kit according to the manufacturer’s protocol (Cell Signaling Technology, Danvers, MA, USA). In short, cells were seeded on chamber slides (5000 cells/cm2). Cells were fixed in a 2% formaldehyde and 0.2% glutaraldehyde solution for 15 min. After washing with PBS, cells were stained overnight in an X-gal staining solution at 37°C (dry incubator; low CO2).
 
 In case of the SA-β-gal activity assay, a fluorometric cellular senescence assay kit was used according to the manufacturer’s protocol (Cell Biolabs Inc, San Diego, CA, USA). In short, cells were seeded on a 96-well plate (5000 cells per well). The next day, cells were lysed using the cell lysis buffer and centrifuged. The supernatants of the cell lysates were mixed with the assay buffer and incubated for 2 hr at 37°C in the dark. After stopping the reaction using the stop solution, fluorescence was measured on a black bottom 96-well plate at 360 nm excitation and 465 nm emission using an infinite M200 PRO TECAN reader.
 
-## siRNA-mediated knockdown of CDKN2A or VIM
+### siRNA-mediated knockdown of CDKN2A or VIM
 
 Adherent hAC were incubated in a digest solution containing 1 mg/mL collagenase, 1 mg/mL protease, and 40 U/mL hyaluronidase to increase siRNA transfection efficacy. Detached cells were counted and seeded at a density of 20,000 cells/cm2. Silencer Select siRNA (Thermo Fisher Scientific) against CDKN2A (ID: s218; targeting both p16INK4a and the related transcript p14ARF), VIM (ID: s14800), or Silencer Negative Control siRNA was diluted in Lipofectamine P3000 (Thermo Fisher Scientific) and added to the cells at a final concentration of 5 pmol/μL in serum-free Opti-MEM (Thermo Fisher Scientific; 31985062) without antibiotics. After 4 hr at 37°C, transfection medium was removed and serum-containing chondrocyte medium was added. After 72 hr, hAC were trypsinized, counted, and seeded as mentioned above. The next day, transfection was repeated in adherence. This protocol allows a consistent silencing over 7 days.
 
-## DCFDA and MitoSOX assay
+### DCFDA and MitoSOX assay
 
 Detection of cytoplasmatic and mitochondrial ROS levels was performed by means of a commercial DCFDA/H2DCFDA – Cellular ROS Assay Kit (abcam, ab113851) and MitoSOX Red Mitochondrial Superoxide Indicator (Invitrogen, Thermo Fisher Scientific, M36008), according to the manufacturer’s instructions.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 For total RNA isolation, cryopreserved cartilage explants were pulverized with a microdismembrator S (B. Braun Biotech, Melsungen, Germany). Subsequently, RNA was isolated using a Lipid Tissue Mini Kit (QIAGEN, Hilden, Germany). In case of isolated cells, mRNA of least 50,000 cells was isolated using a RNeasy Mini Kit (QIAGEN). RNA was reverse transcribed with Superscript II (Thermo Fisher) and used for qRT-PCR analysis (StepOne-PlusTM Real-Time PCR System, Applied Biosystems, Darmstadt, Germany). Relative expression levels were calculated using the ∆∆Ct method, except of correlation analysis depicted in Figures 2j–4n—4, in which the ∆Ct method was required. GAPDH, HPRT1, and TMEM199 served as housekeeping genes. TMEM199 has previously been described as appropriate endogenous control to study gene expression in senescent chondrocytes (Kuwahara et al., 2020), while GAPDH or HPRT1 are the most commonly used housekeeping genes in studies on chondrosenescence.
 
-## Immunocytochemistry/fluorescence staining
+### Immunocytochemistry/fluorescence staining
 
 Isolated cells were fixed with formalin, blocked for 1 hr at 37°C, and stained with anti-CSV (clone 84-1, abnova, H00007431-MF08 or H00007431-MB08), anti-VIM (clone EPR3776, abcam, ab185030), and anti-CDKN2A (abcam, ab108349) for 2 hr at RT. In case of intracellular staining, cells were permeabilized with 0.1% PBS-Tween 20. Unconjugated anti-CDKN2A was further incubated with a biotinylated link antibody (DAKO), followed by iFluor568-conjugated avidin (ATT Bioquest), each for 20 min at RT. In case of immunocytochemistry, anti-CSV H00007431-MB08 was incubated as described above, followed by further incubated with strepavidin-bound HRP (DAKO) for 20 min each. After addition of AEC substrate for 15 min, nuclei were counterstained with hematoxylin.
 
-## In vitro differentiation
+### In vitro differentiation
 
 For chondrogenic differentiation, chondrocytes were cultivated for 28 days in CDM (DMEM 4.5 g/L glucose and Ham’s F12 (1:1), 100 U/mL penicillin/streptomycin, 40 ng/mL L-proline, 2 mM L-glutamine, 1 mM Na-pyruvate, 0.1 µM dexamethasone, 50 μg/mL ascorbic acid, 10 μL/mL ITS [Sigma-Aldrich], 10 ng/mL rhTGF-β3 [Peprotech], 10 ng/mL rhBMP6 [Peprotech]) under serum-reduced (in case of 2D culture; 1% FSC) or serum-free (in case of pellet culture) conditions as previously described (Riegger et al., 2018b). For osteogenic differentiation, chondrocytes were cultured for 28 days in ODM (DMEM 1 g/L glucose, 10% FBS, 100 U/mL penicillin/streptomycin, 2 mM L-glutamine, 0.1 µM dexamethasone, 0.2 mM ascorbic acid, and 10 mM β-glycerophosphate).
 
-## Statistical analysis
+### Statistical analysis
 
 Experiments were analyzed using GraphPad Prism8 (GraphPad Software, Inc, La Jolla, CA, USA). Data sets with n≥5 were tested for outliers by means of the Grubbs outlier test. Outliers were not included in statistical analyses. Each data point represents an independent biological replicate (donor); technical replicates were not performed. Significance level was set to α=0.05. Information about the statistical analysis applied is provided in the corresponding figure legends.

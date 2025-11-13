@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05f950310 Laboratorium voor Neuro- en Psychofysiologie, The Leuven Brain Institute Leuven Belgium
-2. https://ror.org/0220mzb33 Faculty of Life Sciences and Medicine, King's College London London United Kingdom
+1. Laboratorium voor Neuro- en Psychofysiologie, The Leuven Brain Institute Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+2. Faculty of Life Sciences and Medicine, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
 
 † Corresponding author
 
@@ -28,7 +28,7 @@ We sought answers to the aforementioned questions by recording single-neuron act
 
 We recorded single-unit activity in parietal area PFG of two monkeys during sTMS in 90 experimental sessions. Across these sessions, a total of 86 neurons (51 neurons in monkey Y; 35 in monkey A) showed a significant increase in their firing rate in response to sTMS, and were further recorded before and after cTBS during passive fixation.
 
-## Effect of cTBS on individual neurons
+### Effect of cTBS on individual neurons
 
 Before applying cTBS, we tested the excitability of each neuron using sTMS administered at light onset above the object (Figure 1).
 
@@ -48,11 +48,67 @@ The second example neuron also responded to sTMS before we applied cTBS (Figure 
 
 **Figure 3.:** (A) Spike rate of an example neuron with immediate reduced excitability after cTBS (rows 2–4). A stronger reduction, accompanied by a significant decrease of the baseline activity appeared later (40 min post-cTBS; row 4), continuing until the end of the session (60 min post-cTBS; row 7). Same conventions as in Figure 2. (B) Waveforms of the example neuron. Voltage graph showing the overlapped spike waveforms extracted from six consecutive trials (represented in different colors), recorded at two different time intervals (upper panel: pre-cTBS; lower panel: 60 min post-cTBS). cTBS, continuous theta-burst stimulation.
 
-## Population analysis
+### Population analysis
 
 Because the results were highly comparable in the two animals, we pooled all neurons recorded, but we also provide statistics for each animal separately (see Figure 4—figure supplement 1). In the first 10 min post-cTBS, almost half of the PFG neurons (43%; 39% in monkey Y and 49% in monkey A) showed a significant (two-sided Wilcoxon rank sum test p<0.05) change in their sTMS response (either hypo- or hyperexcitability). However, the proportion of neurons in which cTBS affected the sTMS response gradually increased over time, such that in the 60 min post-cTBS interval, virtually all neurons (85/86) were significantly affected by cTBS (Table 1; with Bonferroni correction, the proportions of affected neurons grew from 24% at 10 min post-cTBS to 62% at 60 min post-cTBS). Similarly, cTBS induced an immediate and significant change in the baseline activity (i.e., the spike rate before sTMS) in about one third of the neurons (34%, two-sided Wilcoxon rank sum test p<0.05), which reached its maximum 1 hr post-cTBS (93% of the neurons, Table 1). Overall, 21% of the neurons showed an effect both in the sTMS response and the baseline activity in the first 10 min post-cTBS, compared to 83% of the neurons showing a combined effect 1 hr post-cTBS.
 
+**Table 1.**
+ Proportions of neurons with a cTBS effect in different time epochs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>10 min post-cTBS</th>
+      <th>20 min post-cTBS</th>
+      <th>40 min post-cTBS</th>
+      <th>60 min post-cTBS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sTMS effect</td>
+      <td>43% (37/86)*24% (21/86)Y: 20/51; A: 17/35*Y: 9/51; A: 12/35</td>
+      <td>53% (46/86)*33% (28/86)Y: 23/51; A: 23/35*Y: 14/51; A: 14/35</td>
+      <td>86% (74/86)*57% (49/86)Y: 43/51; A: 31/35*Y: 26/51; A: 23/35</td>
+      <td>99% (85/86)*62% (53/86)Y: 50/51; A: 35/35*Y: 29/51; A: 24/35</td>
+    </tr>
+    <tr>
+      <td>Baseline effect</td>
+      <td>34% (29/86)*22% (19/86)Y: 17/51; A: 12/35*Y: 12/51; A: 7/35</td>
+      <td>50% (43/86)*33% (28/86)Y: 24/51; A: 19/35*Y: 18/51; A: 10/35</td>
+      <td>77% (66/86)*44% (38/86)Y: 40/51; A: 26/35*Y: 24/51; A: 14/35</td>
+      <td>93% (80/86)*50% (43/86)Y: 48/51; A: 32/35*Y: 30/51; A: 13/35</td>
+    </tr>
+    <tr>
+      <td>Hyperexcitability in sTMS response</td>
+      <td>10% (9/86)*3% (3/86)Y: 6/51; A: 3/35*Y: 2/51; A: 1/35</td>
+      <td>10% (9/86)*7% (6/86)Y: 6/51; A: 3/35*Y: 4/51; A: 2/35</td>
+      <td>19% (16/86)*15% (13/86)Y: 10/51; A: 6/35*Y: 8/51; A: 5/35</td>
+      <td>28% (24/86)*23% (20/86)Y: 15/51; A: 9/35*Y: 12/51; A: 8/35</td>
+    </tr>
+    <tr>
+      <td>Hyperexcitability in baseline activity</td>
+      <td>*10% (9/86)6% (5/86)Y: 5/51; A: 4/35*Y: 3/51; A: 2/35</td>
+      <td>*12% (10/86)10% (9/86)Y: 5/51; A: 5/35*Y: 5/51; A: 4/35</td>
+      <td>*15% (13/86)13% (11/86)Y: 8/51; A: 5/35*Y: 7/51; A: 4/35</td>
+      <td>*24% (21/86)21% (18/86)Y: 13/51; A: 8/35*Y: 11/51; A: 7/35</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results on the Wilcoxon test without Bonferroni correction calculated for 10’ intervals.*Results on the Wilcoxon test with Bonferroni correction calculated for 10’ intervals._
+
 On average, cTBS significantly reduced the neuronal excitability assessed with sTMS, an effect that grew over the standard 1 hr post-cTBS period (Figure 4 and Figure 4—figure supplement 1). In the first 10 min interval post-cTBS, the average sTMS response was 24% lower than pre-cTBS (z=2.11, p=0.03, r=0.16), and this reduction peaked and plateaued 30–50 min post-cTBS (32% reduction). Similarly, the reduction in the average baseline activity induced by cTBS emerged already in the first 20 min post-cTBS (by 14%; z=1.42, p=0.04, r=0.15), became more apparent 40 min post-cTBS (28% reduction, z=3.23, p=0.001, r=0.25), and recovered partially at 60 min post-cTBS (20% reduction, two-sided Wilcoxon rank sum tests comparing the pre-cTBS cell response with that measured at 40 min post-cTBS; for the two animals at 40 min: z=2.66, p=0.01, r=0.26 for monkey Y and z=1.86, p=0.06, r=0.22 for monkey A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65536/elife-65536-fig4-v1.jpg)
+
+**Figure 4.:** Average sTMS responses for all neurons at different time periods post-cTBS (green) compared to pre-cTBS (black), when sTMS was applied at light onset during passive fixation. Shading displays ±the standard error across neurons (N=86). The red, dashed line indicates the sTMS pulse, aligned to light onset. The asterisks specify the statistical significance (two-sided Wilcoxon rank sum test; *p≤0.05; **p≤0.01) for changes in both the baseline activity (red) and the sTMS-evoked response (black). cTBS, continuous theta-burst stimulation; sTMS, single-pulse transcranial magnetic stimulation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65536/elife-65536-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Average spike rate of the sTMS response averaged across all neurons recorded in monkey Y at different time periods post-cTBS (blue) compared to pre-cTBS (black), when sTMS was applied at light onset during passive fixation. Shading displays ±the standard error (N=51). The red, dashed line indicates the sTMS pulse, aligned to light onset. The asterisks specify the statistical strength (two-sided Wilcoxon rank sum test; *p≤0.05; **p≤0.01) for changes in both the baseline activity (red) and the sTMS-evoked response (black). (B) Equivalent graph for monkey A (N=35), plotting the average spike rate of the sTMS response recorded at different time periods post-cTBS (magenta) compared to pre-cTBS (black). Same conventions as in (A).
 
 The cTBS effect was highly similar in both animals (maximum 32% reduction in sTMS response in monkey Y, and 29% reduction in sTMS response in monkey A), but the timing of the effect differed slightly, since the maximum reduction appeared at 30 min post-cTBS in monkey Y and at 40 min post-cTBS in monkey A (Figure 4—figure supplement 1).
 
@@ -62,6 +118,53 @@ To investigate whether the cTBS effect on the neuronal sTMS response and the cTB
 
 **Figure 5.:** Average response difference between the pre- and post-cTBS period plotted against the difference in the baseline activity pre- versus post-cTBS, at six consecutive, 10 min intervals post-cTBS. Each gray line indicates the least squares line (best fit). For every panel, each colored dot represents a PFG neuron. Light green dots reflect neurons showing a statistically significant (two-sided Wilcoxon rank sum test p≤0.05) change in both their sTMS and baseline response (either hypo- or hyperexcitability) post-cTBS. Dark green dots indicate neurons without statistically significant effect (two-sided Wilcoxon rank sum test p>0.05). cTBS, continuous theta-burst stimulation; sTMS, single-pulse transcranial magnetic stimulation.
 
+**Table 2.**
+ Correlations between the sTMS-evoked and the baseline effect with confidence intervals in different time epochs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>95% CI</th>
+      <th>+10′</th>
+      <th>+20′</th>
+      <th>+30′</th>
+      <th>+40′</th>
+      <th>+50′</th>
+      <th>+60′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lower bound</td>
+      <td>0.51</td>
+      <td>0.69</td>
+      <td>0.70</td>
+      <td>0.69</td>
+      <td>0.67</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>0.66</td>
+      <td>0.79</td>
+      <td>0.80</td>
+      <td>0.79</td>
+      <td>0.77</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Upper bound</td>
+      <td>0.76</td>
+      <td>0.86</td>
+      <td>0.86</td>
+      <td>0.86</td>
+      <td>0.85</td>
+      <td>0.68</td>
+    </tr>
+  </tbody>
+</table>
+
 Figure 5 also illustrates that, although cTBS in general reduced neuronal excitability (53% of the neurons showed hypoexcitation in all time epochs post-cTBS), transient phases of hyperexcitability were not uncommon in our neuronal population. Overall, almost half of the neurons (47%) were hyperexcitable in at least one interval post-cTBS (Table 1). The large majority of these neurons (91%) were initially less excitable followed by an epoch of hyperexcitability, as the example neuron in Figure 2B. However, in a small number of neurons, hyperexcitability appeared immediately after cTBS, either as the only effect throughout the entire recording session (6%) or followed by hypoexcitability after a variable time interval (10–40 min, 3%). Significant increases in baseline activity were also not uncommon, since 44% of the neurons showed hyperexcitability in at least one epoch post-cTBS (Table 1).
 
 cTBS may not only influence the average neuronal response to sTMS, but also the spike timing, that is, the variability of the interspike intervals. We could not detect any significant effect of cTBS on the variance to mean ratio (the Fano factor) of the neurons, nor on the distribution of the interspike intervals (ISIs, data not shown). However, the power spectrum of the spike trains changed significantly after cTBS, both in the stimulation and in no-stimulation trials (Figure 6). In every epoch post-cTBS, the power in the low frequencies (below 5 Hz) was significantly reduced compared to pre-cTBS. Thus, cTBS also induced changes in the low-frequency oscillatory activity of parietal neurons.
@@ -70,7 +173,7 @@ cTBS may not only influence the average neuronal response to sTMS, but also the 
 
 **Figure 6.:** Spectral power of the single-unit activity in both the no-stimulation (left panel) and stimulation (sTMS) trials (right panel), divided in 10 min intervals pre- and post-cTBS. Each color line indicates a different time interval. The shading in the graph represents ±the standard error. cTBS, continuous theta-burst stimulation; sTMS, single-pulse transcranial magnetic stimulation.
 
-## Effect of cTBS on task-related neural activity
+### Effect of cTBS on task-related neural activity
 
 Since a motor task may cause small movements of the electrode and since we wanted to give priority to the stability of the neural recordings, we chose to use a passive fixation task for the recordings, in which the monkeys were required to simply fixate an object illuminated in front of them to obtain a fluid reward. Despite the absence of a grasping movement, a subset of the neurons we recorded in PFG showed significant task-related activity (i.e., object responses) after light onset (N=18). The presence of object responses allowed us to test the effect of cTBS on neuronal excitability without applying sTMS. To capture all task-related responses, we tested the effect of cTBS in two intervals, an early (0–80 ms after light onset) and a late interval (100–500 ms after light onset) and analyzed the response difference in the 40 ms around the maximal response. The later task-related activity (100–500 ms after light onset) differed significantly compared to the pre-cTBS epoch in every epoch from 30 to 60 min post-cTBS, whereas the early interval after light onset did not show a significant difference in any epoch post-cTBS (Wilcoxon signed rank test, Figure 7A). When probed with sTMS, this subpopulation of task-related neurons behaved similar to the rest of the population, since the neuronal excitability was significantly reduced at 30 min post-cTBS (Figure 7B). Overall, cTBS also induced a reduction in task-related activity in parietal neurons, comparable to the effects observed with sTMS.
 
@@ -78,7 +181,7 @@ Since a motor task may cause small movements of the electrode and since we wante
 
 **Figure 7.:** (A) Pre (black)- versus post-cTBS (green) activity in no-stimulation (sTMS) trials at two different response intervals (30 and 60 min post-cTBS). Shading displays ±the standard error across neurons (N=18). The red, dashed line indicates the onset and offset of the first interval analyzed (early interval: 20–100 ms after light onset); the black, dashed line delimits the second interval of analysis (late: 120–500 ms after light onset). The blue asterisks specify the statistical significance (two-sided Wilcoxon signed rank test; *p≤0.05). (B) Response of the same neuronal subpopulation during sTMS trials. Shading displays ±the standard error (N=18). The red, dashed line indicates the sTMS pulse, aligned to light onset. The asterisks specify the statistical significance (two-sided Wilcoxon rank sum test; *p≤0.05). cTBS, continuous theta-burst stimulation; sTMS, single-pulse transcranial magnetic stimulation.
 
-## Effect of cTBS on neuronal excitability beyond 1 hr
+### Effect of cTBS on neuronal excitability beyond 1 hr
 
 Our standard recording time was 1 hr after cTBS (plus approximately 20 min of recordings pre-cTBS). However, in a subpopulation of neurons (N=34; Figure 8A), we could test the effect of cTBS on neuronal excitability for up to 90 min post-cTBS. Because neurons can be lost in the course of such a long time interval due to small brain movements, we only included units which the signal-to-noise ratio was at least 5:1 for the entire duration of the recording session, and we compared the spike waveforms pre- and post-cTBS to verify that the neuron was still present (see example spike waveforms in Figure 8B). Even 90 min after cTBS, most neurons (18/34, 53%) showed significantly reduced sTMS responses compared to pre-cTBS, and the average normalized sTMS-evoked response was significantly reduced at this late time period post-cTBS (z=1.99, p=0.02, r=0.24). Moreover, we also detected a significant reduction in neuronal activity after the sTMS-evoked burst (in the interval 200–500 ms after sTMS; z=−2.58, p=0.01, r=–0.32). A smaller subset of neurons (N=15) was monitored for up to 2 hr post-cTBS, but again no recovery was detectable in this subpopulation (data not shown). Thus, the cTBS-induced reduction in neuronal excitability is very prolonged and may not recover for several hours post-cTBS.
 
@@ -112,15 +215,15 @@ Investigating the neural effects of non-invasive brain stimulation techniques re
 
 ## Materials and methods
 
-## Subjects and surgical procedures
+### Subjects and surgical procedures
 
 Two adult male rhesus monkeys (Macaca mulatta; monkey Y, 12 kg; monkey A, 8 kg) were trained to sit in a primate chair. A head post (Crist Instruments) was then implanted on the skull with ceramic screws and dental acrylic. For this and all other surgical protocols, monkeys were kept under propofol anesthesia (10 mg/kg/hr) and strict aseptic conditions. All experimental procedures were performed in accordance with the NIH’s Guide for the Care and Use of Laboratory Animals and the EU Directive 2010/63/EU, and approved by the Ethical Committee at KU Leuven (project number P220/2014). Intensive training in passive fixation and visually guided grasping (VGG) began after 6 weeks of recovery. Once the monkeys had achieved an adequate level of performance, a craniotomy was made, guided by anatomical magnetic resonance imaging (MRI), over area PFG of the right hemisphere. An exhaustive description of this protocol has been detailed elsewhere (Romero et al., 2019). The recording chamber was implanted at a 45° angle with respect to the vertical, allowing oblique penetrations into the parietal convexity (Figure 1A). To confirm the recording positions, glass capillaries were filled with a 2% copper sulfate solution and inserted into a recording grid at five different locations during structural MRI (slice thickness: 0.6 mm). Two guiding rods were precisely fixed to the skull with dental acrylic based on the calculated stereotactic coordinates, allowing a highly reproducible positioning of the TMS coil across sessions. With these rods in place, the coil was kept at an angle of approximately 90° with respect to the recording chamber, inducing a posterior-anterior (PA) current over PFG. To estimate the center of stimulation, we used anatomical MRI and computed tomography (CT scan) to build 3D printed models of the skull and implant (Figure 1B). Based on the MR-CT co-registered images, we calculated that the TMS coil was placed approximately at a distance of 15 mm from (above) the parietal convexity.
 
-## Stimulation protocol
+### Stimulation protocol
 
 For this study, we combined two different TMS protocols: sTMS and cTBS. We performed extracellular recordings before and after cTBS to investigate the changes in neuronal excitability, assessed with sTMS during passive fixation.
 
-## cTBS effect on individual neurons: electrophysiological recordings
+### cTBS effect on individual neurons: electrophysiological recordings
 
 To optimize the stability of the recordings (total duration 1–3 hr per neuron), the animals performed a passive fixation task while sitting upright with their head fixed. With this setup, a single object (large sphere; diameter: 35 mm) was placed on a frontal plate, located 30 cm away from the animal. In the beginning of the trial, the monkeys remained in total darkness for a variable time period (intertrial interval: 2000–3000). Next, a red laser was projected at the base of the object, indicating the fixation point. If the animal maintained fixation inside an electronically-defined window (±2.5° around the fixation point) for 500 ms, the object was illuminated (light onset) until the end of the trial (1300 ms). Whenever the monkey maintained a stable eye fixation, it received a drop of juice as reward.
 
@@ -134,7 +237,7 @@ We verified that the stimulation intensity we used was appropriate (i.e., suffic
 
 We recorded single-unit activity in PFG using tungsten microelectrodes (impedance: 1 MΩ at 1 kHz; FHC, USA) inserted through the dura by means of a 23-gauge stainless steel guide tube and a hydraulic microdrive (FHC). Following the artifact reduction strategy proposed by Mueller et al., 2014, we used diodes and serial low-gain amplification to clip the artifact generated by the magnetic pulses, which prevented amplifier saturation. For this, we modified a regular BAK Electronics preamplifier (Model A-1; BAK Electronics, USA) by connecting two leakage diodes (BAS45A) anti-parallel between the signal lines and ground before each stage of amplification. The initial front-end of the headstage remained unmodified to maintain the high-input impedance. With these settings, the duration of the evoked TMS artifact in our signal ranged from 8 to 12 ms (Romero et al., 2019). Neural activity was amplified and filtered (300–5000 Hz) following a standard recording protocol for spike detection. Using a dual time-window discriminator (LabVIEW and custom-built software), we isolated individual neurons and the TMS artifact, which was detected online and subtracted from the neural data. In addition, we recorded the entire raw signal (after filtering) for further analyses. Finally, we monitored the right eye position using an infrared-based camera system (Eye Link II, SR Research, Canada) sampling the pupil position at 500 Hz.
 
-## Data analysis
+### Data analysis
 
 All data analyses were performed in MATLAB (MathWorks, MA; code availability: DRYAD database). For the high- and low-stimulation trials of experiment 1, the neural activity was aligned on the sTMS pulse delivered at light onset. Also, for comparison, the no-stimulation trials were aligned on the same time bin. Net neural responses were then calculated as the average firing rate recorded after sTMS minus the baseline (spike rate calculated from the mean activity of the cell in the 800 ms interval preceding TMS).
 

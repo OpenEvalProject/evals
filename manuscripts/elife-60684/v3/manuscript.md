@@ -35,21 +35,123 @@ Attempts to exogenously express and record from PC-1 and/or PC-2 in whole cell r
 
 ## Results
 
-## PC-1 and PC-2 form functional channels in the plasma membrane
+### PC-1 and PC-2 form functional channels in the plasma membrane
 
 Because robust assays to investigate the heteromeric polycystin complex are lacking, we developed an assay system to determine the contribution of PC-1 family members to polycystin function. We were able to target PC-1 to the plasma membrane of HEK293 cells (Figure 1B) and mIMCD3 cells (Figure 1—figure supplement 1E) by replacing its endogenous signal peptide with a strong Ig κ-chain secretion sequence followed by an HA tag (sPC-1; Figure 1A, Table 1; Salehi-Najafabadi et al., 2017; Zhu et al., 2011). The HA tag allowed us to quantify sPC-1 plasma membrane expression by measuring surface staining following addition of anti-HA antibodies to non-permeabilized cells. Co-expression of sPC-1 and PC-2 resulted in strong HA surface staining, whereas expression of sPC-1 alone resulted in only marginal surface staining, in both HEK293 cells (Figure 1B and C) and IMCD3 cells (Figure 1—figure supplement 1D and E). Co-expression of PC-2 and PC-1 with an extracellular HA tag but without the endogenous leader sequence (HAPC-1) failed to generate comparable HA surface staining, supporting the notion that an Ig κ-secretion sequence promotes membrane localization of the complex (Figure 1B). To test whether PC-2 facilitates sPC-1 membrane localization by promoting ER exit or by co-migration to the plasma membrane, we inserted a FLAG epitope into the extracellular tetragonal opening for polycystins (TOP) domain of PC-2 (PC-2FLAG) (Figure 1—figure supplement 1A, Table 1). Robust surface HA and FLAG staining only occurred when both sPC-1 and PC-2FLAG were co-expressed, suggesting that they are shuttled simultaneously to the plasma membrane (Figure 1—figure supplement 1B and C). Similarly, co-expression of sPC-1 with PC-2 containing a recently in an oocyte expression system characterized gain of function mutation of PC-2 (PC-2F604P, Table 1; Arif Pavel et al., 2016) resulted in comparable HA surface expression (Figure 1B and C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig1-v3.jpg)
+
+**Figure 1.:** (A) Illustration of PC-1 and PC-2F604P topology highlighting extracellular HA and secretion sequence (indicated with an s prefix) in PC-1. (B) Expression and immunostaining of HEK293 cells transfected with sPC-1/PC-2, HAPC-1/PC-2 with endogenous leader sequence, sPC-1/PC-2F604P, and sPC-1 alone. Left column, representative images of HA surface staining (see methods). Middle column, total staining for PC-2 or PC-1. Right column, merged images. Scale bar: 10 μm. (C) Quantification of relative anti-HA surface staining shown in B. ***: p<0.0001. (D) Representative currents from each construct recorded in the whole cell patch clamp configuration in response to voltage step pulses (left). (E) Whole-cell I-V relationship of sPC-1/PC-2F604P (n = 6, red) and PC-1/PC-2F604P (n = 10, white). Arrow indicates the expanded view of I-V relationship between membrane potentials of −50 mV and +50 mV. (F) Current densities for sPC-1/PC-2F604P, HAPC-1/PC-2F604P, sPC-1/PC-2, and PC-2F604P alone at +100 mV. (G) Relative open probability of sPC-1/PC-2F604P at −80 mV calculated using a Boltzmann distribution fitted to I/Imin of tail current amplitudes, black line (n = 6, red). (H) Top view of the human PC-1/PC-2 polycystin complex using pymol (Su et al., 2018). Positively charged R4100, R4107, and H4111 are highlighted in red and displayed in stick shape (top). Side view of selectivity filter showing the location of three positively charged amino acids on PC-1 TM-11 (bottom). (I) Representative whole cell currents of sPC-1pore/PC-2F604P. (J) I-V relationship of sPC-1/PC-2F604P (n = 6, red) and sPC-1pore/PC-2F604P (n = 6, blue). Arrow indicates the expanded view of I-V relationship between −50 mV and +50 mV. Current densities of sPC-1/PC-2F604P and sPC-1pore/PC-2F604P were compared at +100 mV holding potential. (K) Relative open probability analysis of sPC-1/PC-2F604P (n = 6, red) and sPC-1pore/PC-2F604P (n = 6, blue) during a −80 mV tail pulse. Statistical significance is indicated by the background. ***p<0.001 (dark gray), **p<0.01 (gray), *p<0.05 (light gray). Statistical analysis was computed using student t-test unpaired one-pair.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Illustration of PC-1 and PC-2 with extracellular HA (magenta) and Flag tag (green), respectively. (B) Representative images of PC-1ΔNT/PC-2Flag, HAPC-1/PC-2Flag, sPC-1/PC-2Flag, and PC-2Flag surface expression in HEK 293 cells. Live HEK293 cells were labeled with anti-Flag and anti-HA (only top row) antibodies. After fixation and permeabilization, cells were labeled with anti-PC-2 antibody. (C) Quantification of relative mean fluorescence intensity of anti-Flag staining for constructs shown in B. (D) Quantification of relative mean fluorescence intensity for anti-HA antibody-labeled plasma membrane in the absence of primary cilium of mIMCD-3 cells. (E) Images of PC-1ΔNT/PC-2Flag, sPC-1/PC-2, and sPC-1L3/PC-2 transfected mIMCD-3 cells. Live cells were stained with anti-Flag (top row) or anti-HA antibody (second row form top) and cilia labeled using anti acetylated tubulin after permeabilization. PC-1ΔNT/PC-2Flag, sPC-1/PC-2, andsPC-1L3-PC-2 enrich in primary cilia when present.
+
+**Table 1.**
+ Constructs used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct name</th>
+      <th>Protein tag</th>
+      <th>Mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sPC-1/PC-2F604P</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1</td>
+      <td>F604P in PC-2</td>
+    </tr>
+    <tr>
+      <td>PC-1/PC-2F604P</td>
+      <td>HA tag at 5’ end of PC-1</td>
+      <td>F604P in PC-2</td>
+    </tr>
+    <tr>
+      <td>sPC-1/PC-2</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1</td>
+      <td>wild type PC-2</td>
+    </tr>
+    <tr>
+      <td>sPC-1/PC-2FLAG</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1, FLAG insertion in PC-2 TOP domain (pos. 904):…PSNGT-DYKDDDK-SFIFY…</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PC-2F604P</td>
+      <td>-</td>
+      <td>F604P in PC-2</td>
+    </tr>
+    <tr>
+      <td>sPC-1pore/PC-2F604P</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1</td>
+      <td>R4100G, R4107G, H4111G in PC-1 F604P in PC-2</td>
+    </tr>
+    <tr>
+      <td>PC-1ΔNT/PC-2</td>
+      <td>HA tag (P2Y12)</td>
+      <td>Substitution of PC-1 N-terminus adjacent to TM-1 (position 9184) with P2Y12 N-terminus. (HA_P2Y12_mypydvpdyaqavdnltsapgntslctrdykitq)-(vrfvfp…_PC-1)</td>
+    </tr>
+    <tr>
+      <td>PC-1ΔNT/PC-2F604P</td>
+      <td>HA tag (P2Y12)</td>
+      <td>Substitution of PC-1 N-terminus with P2Y12 N-terminus F604P in PC-2</td>
+    </tr>
+    <tr>
+      <td>sPC-1L3/PC-2</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of mPC-1L3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>sPC-1L31NT/PC-2</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1 N-terminus</td>
+      <td>Substitution of mPC-1L3 N-terminus with hPC-1 N-terminus at GPS cleavage (hPC-1…CLTR-HLTFFSS…mPC-1L3)</td>
+    </tr>
+    <tr>
+      <td>sPC-11L3NT/PC-2</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1L3 N-terminus</td>
+      <td>Substitution of hPC-1 N-terminus with 1-1052aa of mPC-1L3 at GPS cleavage (mPC-1L3…QCLCD-HLTAFGA…hPC-1)</td>
+    </tr>
+    <tr>
+      <td>sPC-11L3CTL/PC-2F604P</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1</td>
+      <td>Replacement of PC-1 C-type lectin domain (407-547aa) with C-type lectin domain of PC-1L3 (30-150aa)</td>
+    </tr>
+    <tr>
+      <td>sPC-1L31CTL/PC-2F604P</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1L3</td>
+      <td>Replacement of PC-1L3 C-type lectin domain (30-138aa) with C-type lectin domain of PC-1 (415-535aa)</td>
+    </tr>
+    <tr>
+      <td>sPC-1/PC-2F604PN375Q</td>
+      <td>κ-IgG signal peptide and HA tag at 5’ end of PC-1 N-terminus</td>
+      <td>F604P in PC-2, N375Q in PC-2</td>
+    </tr>
+  </tbody>
+</table>
 
 Having established robust plasma membrane expression of sPC-1/PC-2 and sPC-1/PC-2F604P, we asked whether these proteins form functional channels using whole cell patch clamp recordings. Interestingly, only sPC-1/PC-2F604P produced constitutively active, outward rectifying currents (122.6 ± 23.0 pA/pF at +100 mV, n = 7) with a half-maximal activation voltage of +112.5 mV (Figure 1D, E and G). sPC-1/PC-2 (5.1 ± 1.0 pA/pF, n = 11), HAPC-1/PC-2F604P (5.0 ± 2.3 pA/pF, n = 15) and PC-2F604P alone (6.4 ± 2.1 pA/pF, n = 12) yielded negligible currents at +100 mV (Figure 1F). To investigate the functional contribution of PC-1 to heteromeric polycystin complexes, we mutated three positively charged amino acids in the putative ion permeation pathway to the small, uncharged amino acid glycine (R4100G, R4107G, and H4111G) in order to facilitate cation permeation (sPC-1pore; Figure 1H, Table 1). In combination with PC-2F604P, currents of 71.1 ± 5.4 pA/pF (n = 6) were generated at +180 mV (sPC-1pore/PC-2F604P; Figure 1I). Although the recorded current density was ~50 pA/pF smaller than for sPC-1/PC-2F604P (Figure 1J), the relative open probability at −100 mV was higher (0.3 ± 0.0 for sPC-1pore/PC-2F604P; 0.1 ± 0.0 for sPC-1/PC-2F604P), suggesting that the pore mutant resides in a more open state (Figure 1K).
 
 Collectively, these results demonstrate that PC-1/PC-2 subunits form a functional channel when reconstituted in mammalian cells and support the notion that PC-1 subunits form part of the core channel complex.
 
-## The PC-1 N-terminus is essential for polycystin complex activation
+### The PC-1 N-terminus is essential for polycystin complex activation
 
 We sought to determine whether PC-1 subunits are involved in the regulation of the polycystin complex by investigating the functional role of the N-terminal domain. We reasoned that the N-terminus must be a critical determinant of polycystin function because ADPKD-causing mutations occur with high frequency in this region and therefore investigated a family member with a divergent N-terminus, PC-1L3 (Figure 2A and Figure 2—figure supplement 1A). Substitution of PC-1L3’s signal peptide with the κ IgG secretion sequence (sPC-1L3, Table 1) resulted in strong surface HA staining when co-expressed with PC-2 or PC-2F604P (Figure 2B and D). However, we were unable to record convincing currents in sPC-1L3/PC-2F604P-transfected HEK cells (3.5 ± 0.0 pA/pF, n = 12), suggesting that, although present in the plasma membrane, the complex is inactive (Figure 2C). To determine the structural domains in PC-1 subunits that are required for channel activation, we generated chimeras between PC-1 and PC-1L3: the N-terminus of PC-1 fused to the 11-TM core of PC-1L3 preceding the GPS cleavage site (sPC-1L31NT) and the opposing arrangement (sPC-11L3NT) (Figure 2A, Table 1). We also substituted the entire PC-1 N-terminus with the 26 amino acid-long N-terminus of the P2Y12 receptor and an extracellular HA tag (PC-1ΔNT, Table 1); a modification known to increase surface expression of GPCRs without impairing functionality (Liberles and Buck, 2006; Liebscher et al., 2015).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic diagram illustrating topology of PC-1 (blue) and PC-1L3 (yellow), including PC-1ΔNT (top), PC-1 N-terminal chimeras (top), and PC-1L3 N-terminal chimeras (bottom). (B) Immunostaining of HEK293 cells transfected with indicated chimera. Left, representative images of anti-HA surface staining. Middle, total staining for PC-2. Right, merged images. Scale bar: 10 μm. (C) Representative whole cell current traces of each construct obtained from the voltage step pulses shown in Figure 1D. (D) Quantification of anti-HA surface staining of each construct shown in (B). ***p<0.001. (E) I-V relationships for N-terminal chimeras sPC-1L31NT/PC-2F604P (n = 5, purple), sPC-11L3CTL/PC-2F604P (n = 10, light blue) and sPC-1L3/PC-2F604P (n = 12, orange). (F) Relative open probabilities for sPC-1L31NT/PC-2F604P (n = 5, purple) and sPC-1/PC-2F604P (n = 6, red, dataset from Figure 1E) obtained during tail pulses at −80 mV. Statistical significance is indicated by the background. ***p<0.001 (dark gray), **p<0.01 (gray), *p<0.05 (light gray). Statistical analysis was computed using student t-test unpaired one-pair. (G) I-V relationships for sPC-1/PC-2F604P (n = 6, red), sPC-1L31CTL/PC-2F604P (n = 5, green), and sPC-1L3/PC-2F604P (n = 12, black).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic domain illustration of PC-1 and PC-1L3 comparing the organization of adhesion domains within the ectodomain and 11 TM domains. Sequence alignment for the pore region from human PC-1 and PC-1L3. Uniprot IDs are 98161 for hPC-1 and Q7Z443 for hPC-1L3, respectively. The sequences were aligned using Mega6 (Tamura et al., 2013). * indicates 100% conserved amino acid residues. (B) Adhesion domains present in NTF25-853 and the number and location of ADPKD-causing mutations reported to date (18 mutations have been reported for the CTL domain [Dong et al., 2019]). Sequence alignment of the CTL domain from human PC-1 and PC-1L3. (C) Table of relevant PC-1 N-terminal domains. (D) Coomassie blue staining for purified PC-1 N-terminal fragments separated by SDS-PAGE in a 20% polyacrylamide gel and visualized. Alexa-647 labeling may cause the PC-1 263–535 fragment to have weaker and slightly smeared staining. (E) Size exclusion chromatography analysis of unlabeled 24–535 fragments.
+
 All chimeras localized to the plasma membrane when co-expressed with PC-2F604P (Figure 2B and D). PC-1ΔNT resulted in the strongest surface staining, likely due to the smaller size of this protein. Of the three chimeras, only sPC-1L31NT/PC-2F604P generated small but appreciable outward currents (35.9 ± 12.9 pA/pF, n = 5). Currents in cells expressing sPC-11L3NT/PC-2F604P (9.1 ± 1.9 pA/pF, n = 10) and PC-1ΔNT/PC-2F604P (7.6 ± 1.5 pA/pF, n = 10) were negligible (Figure 2C and E). Furthermore, the relative open probability of the sPC-1L31NT/PC-2F604P chimera at −100 mV (0.44 ± 0.0) was ~four-fold higher than sPC-1/PC-2F604P (0.1 ± 0.0) and similar to that for sPC-1pore/PC-2F604P (0.3 ± 0.0) (Figure 2F). Interestingly, the predicted ion permeation region of PC-1L3 does not contain the positively charged amino acids found in PC-1, offering a possible explanation for the greater open probability observed in the sPC-1L31NT/PC-2F604P chimeras (Figure 2—figure supplement 1A). In terms of channel regulation, these results support the hypothesis that the N-terminus of PC-1 is a key determinant of polycystin complex activation.
 
-## Polycystin activation depends on CTL and TOP domains
+### Polycystin activation depends on CTL and TOP domains
 
 To gain a more detailed understanding of the role played by the N-terminus in polycystin complex activation, we replaced smaller regions of the PC-1L3 N-terminus with those from PC-1. One chimera replaced the 108 AA CTL domain of PC-1L3 with the CTL of PC-1 (sPC-1L31CTL; Figure 2A, Table 1). sPC-1L31CTL/PC-2F604P generated robust outward currents (87.5 ± 9.0 pA/pF, n = 5) (Figure 2C and G) whereas the inverse chimera (sPC-11L3CTL) produced only minimal currents (9.1 ± 1.9 pA/pF, n = 10). These data strongly suggest that the PC-1 CTL domain is essential to activate the polycystin complex.
 
@@ -65,21 +167,33 @@ Next, we asked how the extracellular CTL domain in PC-1 might regulate activati
 
 **Figure 4.:** (A) Location of carbohydrates (yellow mesh) bound to N375 in the TOP domain of the PC-2 channel (protein data bank ID: 5T4D). Right, expanded view of carbohydrate binding to N375 site. (B) Quantification of anti-HA surface staining of sPC-1/PC-2F604P and sPC-1/PC-2F604PN375Q compared to untransfected cells. ***p<0.001. (C) Immunostaining of HEK293 cells transfected with sPC-1/PC-2F604PN375Q. Scale bar: 10 μm. (D) Representative whole cell current traces of sPC-1/PC-2F604PN375Q. (E) I-V relationships for sPC-1/PC-2F604PN375Q (n = 11, orange) and sPC-1/PC-2F604P (n = 6, red, dataset from Figure 1E).
 
-## N-terminal PC-1 fragments activate ciliary polycystin complexes
+### N-terminal PC-1 fragments activate ciliary polycystin complexes
 
 Although the results so far strongly suggest that the PC-1 CTL domain is critical for activating heterologous polycystin complexes, native polycystin complexes reside in the specialized membranes of primary cilia (Liu et al., 2018; Kleene and Kleene, 2017; Vien et al., 2020). We, therefore, investigated whether the PC-1 N-terminus is able to activate polycystin complexes in the cilia of polarized mouse epithelial (mIMCD-3) cells using excised ciliary membrane patch clamp recordings (Figure 5—figure supplement 1B). Without any NTFs, we readily detected single channel openings at potentials more positive than +60 mV and more negative than −80 mV (Figure 5A) in 7 out of 38 cilia. After ablating PC-1 expression in mIMCD3 cells using CRISPR/CAS9 (Figure 5—figure supplement 1A) ciliary channels remained readily detectable in 4 of 13 cilia (Figure 5B), in agreement with previous reports (Liu et al., 2018). In addition, single channel conductance was comparable between wt mIMCD3 (γ = 79.5 ± 0.1 pS) and PC-1 knockout cilia (γ = 82.3 ± 0.0 pS) (Figure 5—figure supplements 1G, H, 2A and B). However, we noted that the open probability of channels at negative membrane potentials in PC-1 knock out primary cilia (0.58 ± 0.01) was higher than in wt IMCD3 cilia (0.08 ± 0.01) (Figure 5G). These data suggest that PC-2 forms a homomeric complex in the absence of PC-1 subunits with a higher open probability than that of PC-1/PC-2 heteromers. The results also support the idea that PC-1 subunits impede cation flux across the membrane, in agreement with our PC-1 pore mutant data (Figure 1I–K). Ablation of PC-2 expression using CRISPR/CAS9 rendered primary cilia electrically silent (n = 11), confirming that PC-2 subunits are an essential component of polycystin channels (Figure 5C; Liu et al., 2018; Kleene and Kleene, 2017).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig5-v3.jpg)
+
+**Figure 5.:** (A, B, C) Excised ciliary inside-out patch clamp recordings of channels from mIMCD-3 cells (left), PC-1 knockout mIMCD-3 cells (middle), and PC-2 knockout mIMCD-3 cells (right). (D) Single channel patch clamp recordings at −100 mV in cell attached configuration for sPC-1/PC-2F604P (top) and excised inside-out ciliary patches for mIMCD-3, mIMCD-3 with addition of NTF263-535 in pipette solution, and PC-1 knockout cells (rows 2–4, respectively). (E) Open time histogram of channel openings at −100 mV holding potential. (F) Time constants of open time distributions in E obtained using one decay equation, *p<0.05 (n = 7/38 for mIMCD-3 cilia, n = 4/13 for PC-1 KO, n = 4/23 for mIMCD-3 cilia + NTF263-535, and n = 6 for sPC-1/PC-2F604P). (G) Absolute open probabilities for recordings shown in A, B, and C, **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot with rat monoclonal E8 antibody directed against C-terminal fragment (CTF) of PC-1 confirms a lack of PC-1 protein in both Pkd1 CRISPR knockout IMCD3 lines (A1 and C2) when compared to a Wt control which shows both full length (FL) and CTF bands. * denotes a nonspecific band. (B) Differential interference contrast (DIC) images of the mIMCD-3 ciliary-attached patch configuration. The glass pipette is sealed to the primary cilium expressing Arl13B-EGFP (green). (C) Single channel recordings at +100 mV holding potential for sPC-1/PC-2F604P (cell attached, top), and wt mIMCD-3, wt mIMCD-3 with addition of NTF263-535, and PC-1 knockout (ciliary recordings, rows 2–4, respectively). (D) Open time histogram of channel opening events at +100 mV holding potentials. (E) Time constant, and (F) absolute open probabilities for recordings shown in B (n = 4, for all conditions), *p<0.05, **p<0.01, ***p<0.001. (G, H) Amplitudes obtained from excised ciliary patch clamp recording of PC-1 knockout cells (n = 3, red) and mIMCD-3 cilia (n = 5, blue). Conductance (ϒ) was fitted to a linear equation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) All-points amplitude histogram of excised ciliary patch clamp recordings for mIMCD-3 cilia (blue) and PC-1 knockout cilia (red), respectively. Amplitudes for mIMCD-3 cilia were obtained at +100 mV, +80 mV, +60 mV depolarizing membrane potentials and −80 mV and −100 mV hyperpolarizing membrane potentials. Amplitudes for PC-1 knockout cilia were obtained at +100 mV, +80 mV, +60 mV, +40 mV depolarizing membrane potentials and −40 mV, −60 mV, −80 mV, −100 mV hyperpolarizing membrane potentials.
 
 To test whether NTFs can activate the native polycystin complex, we recorded single channels in inside out patches pulled from primary cilia in the presence of 0.7 μg/mL (equal to ~50 nM final concentration) of NTF263-535 in the recording pipette. Although the percentage of electrically active cilia (n = 4/13) remained largely unaffected, NTF263-535 increased the probability of single channels openings by ~five-fold and significantly prolonged the duration of channel openings at negative membrane potentials (Figure 5E–G).
 
 Collectively, these findings demonstrate that PC-2 subunits are essential for functional polycystin channels in primary cilia, that PC-1 subunits also participate in the native heteromeric complex, and that NTF263-535 can activate this complex under physiological conditions.
 
-## NTF263-535 activates Ca2+ influx into primary cilia
+### NTF263-535 activates Ca2+ influx into primary cilia
 
 Having established that NTF263-535 can activate ciliary polycystin channels, we asked whether it could also trigger Ca2+ entry through the channel. We initially attempted single channel recordings from mIMCD-3 wt cilia under conditions in which Ca2+ is the sole charge carrier (see Materials and methods). We were unable to measure currents, even at very negative membrane potentials (−140 mV) (Figure 6A), in agreement with previously published results (Liu et al., 2018). Surprisingly, however, the application of NTF263-535 revealed channel openings close to physiological membrane potentials (Figure 6B). Single channel conductance was smaller when using Ca2+ instead of Na+ and K+ as the charge carrier (47.5 pS, Figure 6C). Voltage-dependent open probability and open time remained unchanged (Figure 6D and E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60684/elife-60684-fig6-v3.jpg)
 
-**Figure 6.:** 263-535 activates Ca2+ influx into primary cilia.(A) Excised inside-out patch single channel recordings of mIMCD-3 cilia with 2 mM CaCl2 and 10 mM HEPES in pipette solution at membrane potentials between −60 mV and −120 mV. (B) Excised inside-out patch single channel recordings from mIMCD-3 cilia with 0.7 µg/mL of NTF263-535 in the pipette. Membrane potentials held between −60 mV and −120 mV. (C) I-V relationship obtained from ciliary excised patch clamp recordings from mIMCD-3 cilia with NTF263-535 (n = 3/16). Red line indicates linear fitting. (D) Absolute open probabilities obtained at membrane potentials between −60 mV and −120 mV (n = 3/16). (E) Open time histogram of channel opening events after NTF263-535 application at −100 and 120 mV. Small bar graph indicates time constants obtained from one decay fits of the histogram (n = 3/16). (F) Representative TIRF images after addition of 50 nM NTF263-535 to mIMCD-3 cells stably expressing Arl13B-scarlet-GCaMP6. GCaMP images are pseudo-colored based on pixel intensity. Scale bar: 5 µm. (G) Representative traces of changes in fluorescence (ΔF/F) during TIRFM imaging. Image acquisition every 250 ms. (H) Quantification of maximum peak area of fluorescence (ΔF/F*s) for control, PC-2 knock out cells + NTF263-535, wt mIMCD3 cilia + boiled NTF263-535, and wt mIMCD3 cilia + NTF263-535. (I) Quantification of number of calcium spikes observed in TIRFM imaging for control, PC-2 knock out cells + NTF263-535, wt mIMCD3 cilia + boiled NTF263-535, and wt mIMCD3 cilia + NTF263-535. Quantification is from three independent experiments, **p<0.01.
+**Figure 6.:** (A) Excised inside-out patch single channel recordings of mIMCD-3 cilia with 2 mM CaCl2 and 10 mM HEPES in pipette solution at membrane potentials between −60 mV and −120 mV. (B) Excised inside-out patch single channel recordings from mIMCD-3 cilia with 0.7 µg/mL of NTF263-535 in the pipette. Membrane potentials held between −60 mV and −120 mV. (C) I-V relationship obtained from ciliary excised patch clamp recordings from mIMCD-3 cilia with NTF263-535 (n = 3/16). Red line indicates linear fitting. (D) Absolute open probabilities obtained at membrane potentials between −60 mV and −120 mV (n = 3/16). (E) Open time histogram of channel opening events after NTF263-535 application at −100 and 120 mV. Small bar graph indicates time constants obtained from one decay fits of the histogram (n = 3/16). (F) Representative TIRF images after addition of 50 nM NTF263-535 to mIMCD-3 cells stably expressing Arl13B-scarlet-GCaMP6. GCaMP images are pseudo-colored based on pixel intensity. Scale bar: 5 µm. (G) Representative traces of changes in fluorescence (ΔF/F) during TIRFM imaging. Image acquisition every 250 ms. (H) Quantification of maximum peak area of fluorescence (ΔF/F*s) for control, PC-2 knock out cells + NTF263-535, wt mIMCD3 cilia + boiled NTF263-535, and wt mIMCD3 cilia + NTF263-535. (I) Quantification of number of calcium spikes observed in TIRFM imaging for control, PC-2 knock out cells + NTF263-535, wt mIMCD3 cilia + boiled NTF263-535, and wt mIMCD3 cilia + NTF263-535. Quantification is from three independent experiments, **p<0.01.
 
 We subsequently tested whether NTF263-535 can also induce changes in ciliary Ca2+ concentration ([Ca2+]cilium) using an improvement to our recently-published ciliary ratiometric Ca2+ sensors (Delling et al., 2016; Delling et al., 2013). We fused mScarlet and GCaMP6s to Arl13b (Arl13b-sca-G6) and stably expressed the construct in both wt and PC-2 knockout mIMCD-3 cells. Cells growing on the bottom side of transwell inserts were imaged using TIRF microscopy (TIRFM) to detect localized changes in [Ca2+]cilium (Ishikawa and Marshall, 2015). Application of NTF263-535 generated multiple rapid spike-like elevations of [Ca2+]cilium (ΔF/F > 0.35, n = 35 cilia) whereas untreated cells (n = 22) and cells treated with boiled NTF263-535 (n = 28) did not exhibit such fluctuations (Figure 6F and G). In addition, NTF263-535 did not elicit [Ca2+]cilium fluctuations in PC-2 knockout cells (n = 15; Figure 6H and I). These results show that polycystin channels conduct Ca2+ when activated by NTF263-535.
 
@@ -87,7 +201,7 @@ We subsequently tested whether NTF263-535 can also induce changes in ciliary Ca2
 
 We have demonstrated that PC-1 and related family members form a functional ion channel with PC-2. These heteromeric complexes exhibit distinct biophysical properties, suggesting that PC-1 members are critical for adjusting the electrical excitability of primary cilia in response to the local environment. By expressing membrane-targeted PC-1 or PC-1L3 with PC-2 in mammalian cells, we show that the PC-1 N-terminus is essential for the activation of complexes containing PC-2 subunits, including those carrying the gain of function mutation F604P. More specifically, we show that the CTL domain within the N-terminus of PC-1 is essential for channel activation and that it might function by interacting with the TOP domain of PC-2. In cilia, we provide evidence that an N-terminal fragment containing the CTL domain is sufficient to activate endogenous Ca2+-permeable polycystin channels and elevate [Ca2+]cilium. Thus, we suggest a novel autoregulation mechanism in which the N-terminus of PC-1 activates the channel it is attached to or channels on adjacent cilia following cleavage to become a soluble ligand.
 
-## The PC-1 ectodomain is critical for polycystin complex activation
+### The PC-1 ectodomain is critical for polycystin complex activation
 
 Our data identify PC-1’s CTL domain as an essential component for polycystin activation. Interestingly, the CTL domain is a hotspot for ADPKD-causing mutations (Dong et al., 2019), supporting the critical importance of this domain (Figure 2—figure supplement 1B). Although C-type lectins are the most diverse family of mammalian carbohydrate-binding proteins (Keller and Rademacher, 2020), little is known about the function of the CTL motif within PC-1 (Sandford et al., 1997), but it has been reported to bind to carbohydrates in a calcium-dependent manner (Weston et al., 2001). All PC-1 family members except PC-1L1 contain an N-terminal CTL, yet PC-1L3 CTL fails to activate the complex. Because the CTL amino acid sequence diverges between different PC-1s, we speculate that each binds to different carbohydrates. It is worth noting that other domains within the N-terminus are also implied in cell-cell recognition, including leucine-rich repeats (LRRs), cell wall integrity and stress response component (WSC), and REJ domain. Future studies addressing the specificity and mechanism of CTL binding, especially to carbohydrate moieties, will be of interest.
 
@@ -97,13 +211,13 @@ Both PC-1 and PC-2 have a large extracellular TOP domain, which contains promine
 
 **Figure 7.:** PC-1 N-terminus may either activate the channel as a soluble ligand or remain tethered to the channel complex and undergo intermolecular binding to TOP domains on neighboring channels. Channel activity can be different in the presence of N-terminal fragments of PC-1.
 
-## Plasma membrane-targeted polycystins recapitulate biophysical features of ciliary currents
+### Plasma membrane-targeted polycystins recapitulate biophysical features of ciliary currents
 
 Signal peptides are cleaved from the nascent polypeptide early in the biosynthetic pathway, thus sPC-1, which is ectopically targeted to the plasma membrane, closely resembles wt PC-1 (Salehi-Najafabadi et al., 2017). Likewise, the effective membrane targeting sequence found in the N-terminus of P2Y12 has been successfully used to target adhesion GPCRs to the plasma membrane without compromising functionality (Liebscher et al., 2015). The PC-2 F604P mutant has recently been characterized as a gain of function mutant in a Xenopus oocyte overexpression model (Arif Pavel et al., 2016). It is thought that the F604P substitution within S5 induces conformational changes in the S4-S5 linker (Zheng et al., 2018) that lock PC-2 in an open state. Indeed, proline substitutions in the S5 segment of several other TRP family members result in constitutive channel activity (Grimm et al., 2007; Xu et al., 2007; Zhou et al., 2017). A careful comparison of our ciliary recordings of endogenous polycystin channels with membrane-targeted polycystins reveals that both channel populations exhibit comparable biophysical characteristics, lending weight to the effectiveness of our plasma membrane expression system for studying polycystins.
 
 Our results are in agreement with previous reports of channel activity in the ciliary membrane of renal epithelial cells (Liu et al., 2018; Kleene and Kleene, 2017; DeCaen et al., 2013; Flannery et al., 2015). Because no measurable electrical activity remains in mIMCD-3 cells following CRISPR ablation of PC-2, we confirm that the PC-2 subunit is an indispensable component of ciliary currents in kidney epithelial cells (Liu et al., 2018; Kleene and Kleene, 2017). We also find that primary cilia of mIMCD-3 cells still contain functional channels after CRISPR ablation of PC-1. We speculate that currents recorded from PC-1 knockout cilia are due to homotetrameric PC-2 channels, although we cannot exclude a contribution from other PC-2-containing heteromeric channels such as PC-1L1/PC-2, PC-1L3/PC-2, or PC-2/TRPM3 (Field et al., 2011; DeCaen et al., 2013; Flannery et al., 2015; Bai et al., 2008; Kleene et al., 2019; Zhang et al., 2013). We noted two striking differences between channels in wt and PC-1 knockout mIMCD-3 cilia at voltages close to the resting membrane potential (DeCaen et al., 2013). First, the native PC-1/PC-2 heteromeric channel in wt cilia showed very short channel openings compared to the presumably homotetrameric PC-2 channel, supporting the hypothesis raised by cryo-EM data that PC-1 reduces ion flux (Su et al., 2018). Second, wt IMCD-3 cilia were electrically silent between membrane potentials of −60 mV and +40 mV whereas channels in PC-1 knockout cilia opened at −40 mV.
 
-## The PC-1 N-terminus likely underlies the molecular mechanism of chemosensation
+### The PC-1 N-terminus likely underlies the molecular mechanism of chemosensation
 
 In our experiments, soluble fragments containing the CTL motif not only restore channel function in polycystin complexes lacking the PC-1 N-terminus but also lengthen the open time duration of endogenous polycystins at negative membrane potentials. This strongly suggests that the PC-1 N-terminus is an agonist for polycystin activation. Our results provide the first insights into why ADPKD-causing mutations are enriched within both CTL and GAIN domains, the latter of which is critical for proteolytic processing and subsequent shedding of the CTL-containing ectodomain. Our results show that soluble fragments of PC-1 potentiate endogenous polycystin channels that already contain one PC-1 N-terminus. Given the predicted three PC-2:1 PC-1 stoichiometry of the heteromeric polycystin complex, we hypothesize that possibly all three PC-2 TOP domains need to be simultaneously engaged by CTL domains in order to trigger a concerted conformational change in their respective voltage sensor-like domains and therefore full channel activation. Alternatively, the tethered PC-1 N-terminus in a native heteromeric polycystin complex may be sterically constrained to participate in intramolecular interactions with its core complex, and thus might engage in intermolecular interactions, either between polycystin complexes on one cilium or as a cilia-cilia proximity sensor.
 
@@ -113,40 +227,221 @@ Our data reveal that activation of endogenous polycystins by N-terminal fragment
 
 ## Materials and methods
 
-## Molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hPKD1</td>
+      <td>GenBank</td>
+      <td>L33243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hPKD2</td>
+      <td>GenBank</td>
+      <td>NM_000297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>mPKD1-L3</td>
+      <td>GenBank</td>
+      <td>NM_001286454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hArl13b</td>
+      <td>GenBank</td>
+      <td>NM_182896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>mIMCD3</td>
+      <td>ATCC</td>
+      <td>CRL-2123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>mIMCD3 PC-1 ko</td>
+      <td>This paper</td>
+      <td>Derived from CRL-2123</td>
+      <td>CRISPR-CAS9 ablated PC-1 expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>mIMCD3 PC-2 ko</td>
+      <td>From Dr Steven Kleene, University of Cincinnati PMC5283891</td>
+      <td>Derived from CRL-2123</td>
+      <td>CRISPR-CAS9 ablated PC-2 expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse)</td>
+      <td>Anti-FLAG (M2)</td>
+      <td>Sigma Aldrich</td>
+      <td>F3165-1MG</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody (rat)</td>
+      <td>Anti-HA</td>
+      <td>Roche</td>
+      <td>11867423001</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>Anti-Acetylated tubulin (K40)</td>
+      <td>Cell signalling</td>
+      <td>5335 s</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse)</td>
+      <td>Anti-PC-2 (YCE2)</td>
+      <td>Santa Cruz</td>
+      <td>YCE2 SC-47734</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (rat)</td>
+      <td>Anti-PC-1 (E8)</td>
+      <td>Baltimore PKD center</td>
+      <td>E8</td>
+      <td>(1 µg/mL western blot)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRE3G-Bi</td>
+      <td>Takara Bio</td>
+      <td>Cat # 631337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>PC-1 NTF 24–852</td>
+      <td>This paper</td>
+      <td>Amplified from L33243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>PC-1 NTF 263–535</td>
+      <td>This paper</td>
+      <td>Amplified from L33243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM10</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit10.6</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Höchst 33342</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>1:10.000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology
 
 hArl13B-EGFP was described previously. Arl13b-scarlet-GCaMP6s is an updated version of our previously characterized ciliary Ca2+ sensor Arl13b-mCherry-GECO1.2 in which mcherry and GECO1.2 have been replaced with mScarlet and GCaMP6s, respectively. κ IgG HA-PC-1L3 (sPC-1L3) has been described previously (Salehi-Najafabadi et al., 2017). sPC-1 was generated by using a unique BglII site within hPKD1 to replace the endogenous signal peptide with the 12 aa k IgG leader sequence followed by HA tag using PCR amplification and Gibson assembly (NEB). HAPC-1 was generated by inserting an HA tag between the predicted endogenous signal peptide and mature polypeptide chain following the same protocol. For the construction of FLAG-PC-2, several positions within the extracellular domains of PC-2 with negatively charged amino acids were tested. We identified one region at position 372 that tolerated the insertion of the FLAG sequence, based on surface trafficking. Chimera constructs of PC-1 and PC-1L3 were generated by substituting the ectodomain at the GPS cleavage site with the corresponding orthologue using PCR and Gibson assembly. All PC-1 and PC-2 combinations were cloned into pTRE3G-Bi vector (Takara Bio). The MCSI site was used for PC-1 variants while the MCSII site was used for PC-2 variants. This ensured simultaneous translation of PC-1 and PC-2 from the same plasmid. All DNA sequences were confirmed by sequencing (ELIM Bio).
 
-## Antibodies
+### Antibodies
 
 Rabbit anti-acetylated tubulin (K40)(D20G3) Cell Signaling Technology (5335 s); rat anti-hemaglutinin (HA), Roche (11867423001); mouse anti-FLAG M2, Sigma-Aldrich (F3165-1MG); rat anti PC1 antibody (E8) (Baltimore PKD core center); mouse anti PC2 (YCE2) antibody, Santa Cruz Biotechnology (SC-47734).
 
-## Immunocytochemistry and confocal microscopy
+### Immunocytochemistry and confocal microscopy
 
 Cells were fixed with 4% formaldehyde, permeabilized with 0.2% Triton X-100, and blocked by 2% FBS, 2% BSA, and 0.2% fish gelatin in PBS. Cells were labeled with the indicated antibody and secondary goat anti-rabbit, anti-rat or anti-mouse fluorescently labeled IgG (Thermo Fisher) and Hoechst 33342 (Thermo Fisher). Confocal images were obtained using a Nikon spinning disk with a 63× oil immersion, 1.2 N.A. objective, or a 100× oil immersion, 1.4 N.A. objective at the UCSF Nikon Imaging Core. Images were further processed using ImageJ (NIH).
 
-## Cell culture and quantification of plasma membrane PC-1 and PC-2
+### Cell culture and quantification of plasma membrane PC-1 and PC-2
 
 Tet inducible mIMCD3 and HEK293 cells were generated from parental lines (obtained from ATCC) according to the manufacture’s protocol (Takara Bio). HEK or IMCD3 cells expressing the tet activator were transiently co-transfected with the indicated pTRE3G-Bi vector (Takara Bio) and the EGFP vector using Lipofectamine LTX for mIMCD3 or Lipofectamine2000 for HEK293 (Thermo Fisher). Surface trafficking of PC-1 and PC-2 was measured by quantifying the amount of anti-HA or anti-FLAG antibody bound to the plasma membrane, respectively. 24 hr after transfection 1 ug/mL doxycycline was added and cells were incubated for an additional 24 hr. For surface staining, adherent live cells were incubated with opti-MEM containing either anti-HA antibody (1:100) or anti-FLAG antibody (1:100) for 20 min at room temperature to avoid internalization of antibodies. Cells were washed twice with opti-MEM and fixed with 4% PFA. After incubation with blocking buffer, cells were labeled with secondary goat anti-rat or goat anti-mouse antibodies conjugated to Alexa 647. Several Z stacks of indicated groups were acquired using identical settings and 647 fluorescence was quantified on all GFP positive cells using ImageJ. This approach allowed an unbiased quantification of membrane inserted HA. In addition, expression of the proteins was confirmed in total staining using permeabilized cells. mIMCD3 cells with ablated PC-2 expression were described previously (Kleene and Kleene, 2017). Cells were tested for mycoplasma contamination regularly (Lonza). Data are representative of at least three independent experiments.
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings were performed using a multiclamp 200B (Axon Instruments), digitized using a digidata 1324A (Axon Instruments) and recorded using pClamp software (Axon Instruments). Whole cell configuration patch clamp data were filtered at 1 kHz and sampled at 10 kHz. Unless stated otherwise, the voltage step pulse was applied from −100 mV to 180 mV in 20 mV increments during 150 ms and holding potential was given at −60 mV. For the voltage ramp pulse, the same range of voltage steps was applied with 500 ms duration. The resistances of pipettes for whole cell and ciliary patch clamp were 6–8 MΩ and 18–24 MΩ, respectively. The tip of the pipette was further polished using Narishige MF-830 microforge equipped with a 100× Nikon objective. For patch clamp experiment, the extracellular solution consisted of (mM): 145 Na-gluconate, 5 KCl, 2 CaCl2, 5 MgCl2, 10 HEPES, and adjusted to pH 7.4 using NaOH. The intracellular solution was used as follows: 90 NaMES, 10 NaCl, 2 MgCl2, 10 HEPES, 5 EGTA, 100 nM free calcium adjusted by CaCl2, and adjusted to pH 7.4 using NaOH. The free calcium was calculated using CaBuf software (G.Droogmans, Leuven, Belgium). For calcium permeability test, the extracellular solution consisted of (mM): 2 mM CaCl2 and 10 HEPES adjusted to pH 7.4 using Trizma base and adjusted to 295mOsm using mannitol. The intracellular solution consisted of (mM): 10 HEPES and 1 EGTA adjusted to pH 7.4 Trizma base.
 
-## Statistical and data analysis for electrophysiology
+### Statistical and data analysis for electrophysiology
 
 Ciliary excised patch clamp data and whole cell configuration patch clamp were analyzed with Clampfit10.6 (Axon Instruments/Molecular Devices), Origin8 (Originlab), and Prism10.0 (Graphpad). Data are shown as mean ± SEM, and n represents independent experiments for the number of tested cells in electrophysiology. For relative open probability of sPC-1-PC-2F604P, the data obtained at −80 mV tail pulse were fitted to a Boltzmann distribution using Origin8 (Originlab).
 
-P o(V) = P-100 +(P+180−P-100 )/(1+exp[(V 1/2 −V)/κ]) where P-100 and P+180 are the open probabilities of the channel at the most negative potential (−100 mV) and the most positive potential (+180 mV), respectively. V indicates the membrane potential, V1/2 is the half-maximal activation potential, and κ is the slope factor. For single channel open probability, Popen was calculated by:Popen=toT,where the total time that the channel presented in the open state and T is the total observation time. If a patch contains more than one of the same type of channel, Popen was computed by:Popen=toNT,where, N indicates the number of channels in the patch. We used the following equation to populate data.To=∑Lto,where, L indicates the level of the channel opening. The absolute probability of the channel being open NPo is computed by:NPo=ToTo+Tc,where, Tc indicates the total closed time
+P o(V) = P-100 +(P+180−P-100 )/(1+exp[(V 1/2 −V)/κ]) where P-100 and P+180 are the open probabilities of the channel at the most negative potential (−100 mV) and the most positive potential (+180 mV), respectively. V indicates the membrane potential, V1/2 is the half-maximal activation potential, and κ is the slope factor. For single channel open probability, Popen was calculated by:
 
-## Ca2+-imaging in primary cilia
+$$
+Popen=\frac{to}{T},
+$$
+
+where the total time that the channel presented in the open state and T is the total observation time. If a patch contains more than one of the same type of channel, Popen was computed by:
+
+$$
+Popen=\frac{to}{NT},
+$$
+
+where, N indicates the number of channels in the patch. We used the following equation to populate data.
+
+$$
+To=\sumLto,
+$$
+
+where, L indicates the level of the channel opening. The absolute probability of the channel being open NPo is computed by:
+
+$$
+NPo=\frac{To}{To+Tc},
+$$
+
+where, Tc indicates the total closed time
+
+### Ca2+-imaging in primary cilia
 
 IMCD3 cells expressing Arl13b-mScarlet-GCaMP6 in primary cilia were imaged as described previously (Ishikawa and Marshall, 2015). In brief, cells were grown in the bottom side of 24 mm transwell insert with 8 um mesh size allowing rapid exchange of fluids across the membrane. Cilia were observed under an inverted Nikon microscope equipped with an TIRF imaging setup. Images were acquired 1 min after applying 1 μg/mL PC-1 NTF into the transwell. This assay allowed fast imaging along the entire length of the cilium. In most cases, cilia were localized by 561 nm (mScarlet) excitation and imaged in 488 nm (GCaMP6) and using the full CCD chip (200 ms exposure; five fps). Fluorescence was quantified and processed using ImageJ and Python.
 
-## Expression of N-terminal fragments of PC-1
+### Expression of N-terminal fragments of PC-1
 
 Constructs were designed to produce various PC-1 N-terminal fragments as secreted proteins in HEK293S GnT1-/- cells using the BacMam expression system. In brief, the endogenous signal sequence of PC-1 was replaced with the strong IgG kappa leader peptide followed by either a M1-FLAG epitope or a maltose-binding protein fusion that allows for affinity purification using anti-M1 Flag antibody or amylose resin, respectively. HEK293S GnT1-/- cells were transduced with baculoviruses when cell density reaches 1 – 2 × 106 cells/mL. Sodium butyrate was added to at a final concentration of 5 mM to enhance protein expression 8–12 hr post-transduction. Temperature was reduced to 30°C and the supernatant was harvested 5 days post-transduction. Various PC-1 N-terminal fragments were purified by affinity chromatography whereby secreted PC-1 fragments were captured by passing supernatant through affinity resins using gravity. The purified PC-1 fragments were then exchanged to a buffer containing 20 mM HEPES, 150 mM NaCl, pH 7.4 via extensive dialysis at 4C. PC-1 N-terminal fragments were then flash-frozen in liquid nitrogen and stored as aliquots at −80°C until use.
 
-## Data analysis
+### Data analysis
 
 Group data are presented as mean ± SEM. Statistical comparisons were made using unpaired student t-tests for electrophysiology and quantification of surface expression. The Mann-Whitney U-test was used for comparing peak area of Ca2+ signals and Fisher’s exact test was used for comparing # of Ca2+ peaks (Prism). Statistical significance is denoted with an asterisk (*p<0.05; **p<0.01).

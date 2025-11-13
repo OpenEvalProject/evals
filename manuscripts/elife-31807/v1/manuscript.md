@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.31807.001 Intermediate filaments (IF) are a major component of the metazoan cytoskeleton and are essential for normal cell morphology, motility, and signal transduction. Dysregulation of IFs causes a wide range of human diseases, including skin disorders, cardiomyopathies, lipodystrophy, and neuropathy. Despite this pathophysiological significance, how cells regulate IF structure, dynamics, and function remains poorly understood. Here, we show that site-specific modification of the prototypical IF protein vimentin with O-linked β- N -acetylglucosamine (O-GlcNAc) mediates its homotypic protein-protein interactions and is required in human cells for IF morphology and cell migration. In addition, we show that the intracellular pathogen Chlamydia trachomatis , which remodels the host IF cytoskeleton during infection, requires specific vimentin glycosylation sites and O-GlcNAc transferase activity to maintain its replicative niche. Our results provide new insight into the biochemical and cell biological functions of vimentin O-GlcNAcylation, and may have broad implications for our understanding of the regulation of IF proteins in general.
+Intermediate filaments (IF) are a major component of the metazoan cytoskeleton and are essential for normal cell morphology, motility, and signal transduction. Dysregulation of IFs causes a wide range of human diseases, including skin disorders, cardiomyopathies, lipodystrophy, and neuropathy. Despite this pathophysiological significance, how cells regulate IF structure, dynamics, and function remains poorly understood. Here, we show that site-specific modification of the prototypical IF protein vimentin with O-linked β-N-acetylglucosamine (O-GlcNAc) mediates its homotypic protein-protein interactions and is required in human cells for IF morphology and cell migration. In addition, we show that the intracellular pathogen Chlamydia trachomatis, which remodels the host IF cytoskeleton during infection, requires specific vimentin glycosylation sites and O-GlcNAc transferase activity to maintain its replicative niche. Our results provide new insight into the biochemical and cell biological functions of vimentin O-GlcNAcylation, and may have broad implications for our understanding of the regulation of IF proteins in general.
 
 ## Introduction
 
@@ -34,6 +34,18 @@ IFs participate in many cellular processes, including maintenance of cell shape,
 Despite this broad pathophysiological significance, the regulation of IF cytoskeleton morphology, dynamics, and signaling functions remains incompletely understood. Several recent lines of evidence indicate that post-translational modifications (PTMs) are an important mode of IF regulation, and indeed all IFs are subject to extensive PTMs, including phosphorylation, ubiquitination, sumoylation, acetylation, farnesylation, and glycosylation (Snider and Omary, 2014). However, in most cases, the functional impact of these PTMs on IF structure and function is poorly characterized.
 
 To better understand the dynamic regulation of the IF cytoskeleton, we focused on O-linked β-N-acetylglucosamine (O-GlcNAc), an intracellular form of protein glycosylation that reversibly decorates serine and threonine residues on thousands of nuclear, cytoplasmic, and mitochondrial proteins. In mammals, O-GlcNAc is added by O-GlcNAc transferase (OGT) and removed by O-GlcNAcase (OGA) (Figure 1A) (Hanover et al., 2010; Hart et al., 2011; Hart, 2014). O-GlcNAc cycling controls many processes, including nutrient sensing, cell cycle progression, and apoptosis (Hanover et al., 2010; Hart et al., 2011), and is essential, as genetic ablation of OGT or OGA is lethal in mice (Shafi et al., 2000; Keembiyehetty et al., 2015; Yang et al., 2012). In addition, aberrant O-GlcNAc cycling is implicated in numerous human diseases, including cancer (Hart et al., 2011; Ma and Vosseller, 2013; Yi et al., 2012; Singh et al., 2015), diabetes (Vaidyanathan and Wells, 2014; Hardivillé and Hart, 2014; Ma and Hart, 2013), cardiac dysfunction (Erickson et al., 2013; Erickson, 2014; Dassanayaka and Jones, 2014; Darley-Usmar et al., 2012), and neurodegeneration (Yuzwa et al., 2012; Vaidyanathan et al., 2014; Yuzwa and Vocadlo, 2014; Zhu et al., 2014).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig1-v1.jpg)
+
+**Figure 1.:** (A) O-GlcNAc transferase (OGT) uses the nucleotide-sugar donor UDP-GlcNAc to add O-GlcNAc to protein substrates. O-GlcNAcase (OGA) removes O-GlcNAc moieties. 5SGlcNAc and Thiamet-G are specific small molecule inhibitors of OGT and OGA, respectively. (B) 293T cells were treated with DMSO vehicle or GlcNDAz (48 hr) and UV light (or not) as indicated, and lysates were prepared in denaturing buffer and analyzed by IB. O-GlcNAc-mediated protein-protein interactions manifest as high molecular weight GlcNDAz-crosslinked complexes (labeled). Heavily glycosylated nucleoporin-62 is a positive control, whereas unglycosylated tubulin is a negative control. Vimentin IB was performed with the D21H3 antibody. (C) 293T cells were transfected with OGT-myc or OGA-myc constructs, as indicated, and subjected to GlcNDAz crosslinking as above. Crosslinked and uncrosslinked endogenous vimentin species were detected in lysates made in denaturing buffer by IB (D21H3 antibody). (D) 293T cells were subjected to GlcNDAz crosslinking as above. Then, soluble (disassembled) and insoluble (assembled) vimentin populations were separated by differential extraction, as described (Herrmann et al., 2004). Low, low ionic strength buffer. High, high dil., high ionic strength buffer (loaded both as-is and diluted, as recommended (Herrmann et al., 2004)). 8M urea extracts fully assembled IFs. Crosslinked and uncrosslinked vimentin species were detected by IB (D21H3 antibody). (E) 293T cells were treated with GlcNDAz for 48 hr, treated with 1% IDPN or DMSO vehicle for 30 min, and exposed to UV. Then, cells were subjected to differential extraction, as above, and analyzed by IB (D21H3 antibody). Note that the uncrosslinked vimentin band appears in the 8M urea fraction of IDPN-treated cells because IDPN treatment collapses vimentin IFs into insoluble aggregates (see Figure 1—figure supplement 1G) (Durham, 1986).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 293T cells transfected with vimentin-myc-6xHis were treated with DMSO vehicle or GlcNDAz for 24 hr, treated with vehicle, 100 µM 5SGlcNAc, or 50 µM Thiamet-G for an additional 24 hr, and then UV-crosslinked. Lysates were analyzed by fluorescent IB (V9 antibody). Nucleoporin-62 is a positive control for GlcNDAz crosslinking. GAPDH is a loading control. (B) 293T cells transfected with vimentin-myc-6xHis were treated with DMSO vehicle or GlcNDAz (48 hr) and UV light (or not) as indicated. Lysates were analyzed by IB (D21H3 antibody). Vimentin-myc-6xHis and endogenous vimentin crosslink similarly. (C) 293T cells were transfected with vimentin-myc-6xHis for 48 hr, treated with DMSO vehicle or GlcNDAz as in Figure 1, and UV-crosslinked. Crosslinked and uncrosslinked vimentin populations were purified from lysates by tandem anti-myc IP and nickel affinity chromatography. Crosslinks were visualized by colloidal Coomassie stain (left) and IB (D21H3 antibody) (right). (D) Peptide coverage map from GlcNDAz-crosslinked complexes of vimentin purified in (C). Found peptides are highlighted in yellow. (E) Top protein IDs from vimentin crosslinks. Full proteomics results are available for download as a Scaffold (.sf3) file on the eLife web site (Figure 1—source data 1). Free software to view Scaffold files is available at http://www.proteomesoftware.com/products/scaffold/download/. (F) 293T cells were GlcNDAz-crosslinked as in (A) and subjected to differential extraction as in Figure 1D (left). Then, the 8M urea fractions from DMSO or GlcNDAz samples were divided, half of each sample was exchanged into non-denaturing IP buffer, and samples were analyzed by vimentin IB (V9 antibody) (right). (G) HeLa cells were treated with DMSO vehicle or 1% IDPN for 1 hr, fixed, stained for vimentin (D21H3 antibody), and analyzed by confocal microscopy. (H) 293T cells were treated with DMSO (vehicle) or GlcNDAz for 48 hr and UV light as indicated. Lysates were normalized for protein amount and analyzed by fluorescent IB (V9 antibody). n = 4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 293T cells were GlcNDAz-crosslinked as in Figure 1 and extracted in non-denaturing buffer. Cell lysates were normalized to 1 mg/ml, mock-treated or treated with lambda phosphatase for 1 hr at 30°C, and analyzed by IB (D21H3 antibody). An anti-phospho-Akt substrate IB serves as a control for successful dephosphorylation.
 
 Interestingly, numerous IF proteins are O-GlcNAcylated (King and Hounsell, 1989; Chou et al., 1992). For example, keratin-18 glycosylation is required for the recruitment and activation of the pro-survival kinase Akt, and mice expressing an unglycosylatable keratin-18 mutant are sensitized to chemical injury of the liver and pancreas (Ku et al., 2010; Ku et al., 1996). Several neurofilament proteins are also glycosylated, especially in axons, and neurofilament-M O-GlcNAcylation is reduced in both human Alzheimer’s disease patients and a rat model of amyotrophic lateral sclerosis, suggesting a potential role for dysregulated IF glycosylation in neurodegeneration (Dong et al., 1996; Dong et al., 1993; Lüdemann et al., 2005; Deng et al., 2008; Cheung and Hart, 2008). Finally, vimentin is O-GlcNAcylated on several sites, primarily in its head domain (Slawson et al., 2008; Wang et al., 2007). Changes in vimentin glycosylation have been observed in models of differentiating adipocytes (Ishihara et al., 2010) and neurons (Farach and Galileo, 2008), and a recent study observed a correlation between vimentin O-GlcNAcylation and the invasive potential of cholangiocarcinoma (Phoomak et al., 2017), implicating glycosylation changes in both the physiological and pathological functions of vimentin. These studies suggest that O-GlcNAcylation is a prominent mode of IF regulation in homeostasis and disease alike. Nevertheless, the mechanistic and functional impacts of O-GlcNAcylation on IF proteins remain largely unexplored.
 
@@ -53,7 +65,35 @@ In vivo, vimentin exists in a range of assembly states, from soluble tetramers a
 
 The Hart lab previously mapped several glycosylation sites on vimentin’s flexible head domain (Slawson et al., 2008; Wang et al., 2007). We used these results to identify vimentin O-GlcNAc sites that contribute to its homotypic, glycosylation-mediated interactions. We mutated each reported O-GlcNAcylation site to alanine and screened these constructs in the GlcNDAz crosslinking assay (Figure 2). Mutation of several individual residues, including T33, S34, and S39, reduced vimentin crosslinking, while mutation of S49 abolished all detectable crosslinks. Because of the dramatic reduction of crosslinking in the S49A mutant, we measured the fraction of total vimentin glycosylation occurring at S49. We transfected cells with vector, WT or S49A vimentin and then labeled them with GalNAz, an azide-bearing unnatural monosaccharide that we have described previously as a metabolic reporter of O-GlcNAcylation (Boyce et al., 2011; Palaniappan et al., 2013; Chen et al., 2017). S49A mutant vimentin exhibited ~80% the GalNAz signal of WT (Figure 2—figure supplement 1), suggesting that approximately one-fifth of vimentin glycosylation occurs on S49 under these conditions. Together, these results suggest that robust and site-specific O-GlcNAcylation in the vimentin head domain mediates homotypic protein-protein interactions within IFs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig2-v1.jpg)
+
+**Figure 2.:** 293T cells were transfected with GFP only (control) or WT or mutant vimentin-myc-6xHis constructs as indicated for 24 hr, subjected to GlcNDAz crosslinking, and analyzed by IB. Tubulin is a loading control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** 293T cells were transfected with vimentin-myc-6xHis constructs as indicated for 24 hr and then treated with vehicle only or 100 µM GalNAz for an additional 24 hr. Lysates were subjected to click reactions with an alkyne-Cy5 probe followed by anti-myc IP, and were analyzed by SDS-PAGE and fluorescence scanning.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** 293T cells were transfected with vector or WT or mutant vimentin-myc-6xHis constructs as indicated for 24 hr, subjected to GlcNDAz crosslinking, and analyzed by IB (D21H3 antibody). Tubulin is a loading control.
+
 We next tested whether O-GlcNAc-mediated interactions influence vimentin IF structure or function in live human cells. We used CRISPR/Cas9 methods to delete endogenous vimentin from two different human cell lines, selected single cell-derived clones, and confirmed the absence of vimentin mRNA and protein (Figure 3—figure supplement 1A,B). Then, we stably reconstituted individual vimentin−/− clones with WT or unglycosylatable point-mutant versions of a well-characterized vimentin-mEmerald fusion protein (Mendez et al., 2010; Yoon et al., 1998; Helfand et al., 2011; Hookway et al., 2015) to permit live-cell visualization of IFs. We verified that vimentin-mEmerald was expressed at uniform levels comparable to endogenous vimentin (Figure 3—figure supplement 1C,D), and that the mEmerald signal precisely coincided with anti-vimentin immunofluorescence in cells expressing both endogenous vimentin and vimentin-mEmerald (Figure 3—figure supplement 3E). These results confirmed that the vimentin-mEmerald construct is a faithful proxy for the untagged protein in this system. In our panels of vimentin-mEmerald-reconstituted cells, we included Y117L, a point-mutation in the rod domain that blocks vimentin assembly beyond the ULF stage (Meier et al., 2009), as a positive control for IF disruption. We used fluorescence-activated cell sorting, IB and fluorescence microscopy to ensure equal expression of the various WT and mutant vimentin-mEmerald transgenes across reconstituted vimentin−/− cell lines (Figure 3A, Figure 3—figure supplements 1D and 2A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig3-v1.jpg)
+
+**Figure 3.:** (A) A vimentin−/− HeLa clone was stably transduced with empty vector (control) or expression constructs encoding WT or mutant vimentin-mEmerald and then imaged by laser scanning confocal fluorescence microscopy. (B) Vimentin-reconstituted HeLa cells were imaged as in (A) and cells were scored for filaments or puncta (≥400 cells per genotype). Differences in both filament and puncta measurements are significant across all genotype comparisons (***p<0.001, Student’s t-test) except for S49A and S49E, which are indistinguishable from each other.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Successful CRISPR/Cas9-mediated deletion of vimentin was verified by actin-normalized qPCR (A) and IB (D21H3 antibody) (B). mRNA from WT and vimentin knockout mouse embryonic fibroblasts (MEFs) serve as positive and negative controls for the qPCR assay in (A). Single vimentin−/− clones (HeLa, sgRNA 1 clone 4; 293T, sgRNA 3 clone 4) were used to construct vimentin-reconstituted cell lines. (C) Parental (i.e., un-manipulated) HeLa cells (control) and vimentin−/− HeLa cells reconstituted with either empty vector or WT vimentin-mEmerald were lysed and analyzed by fluorescent anti-vimentin IB (V9 antibody) (left). Quantification of the fluorescence intensities (right) demonstrates that vimentin-mEmerald expression level is indistinguishable from that of endogenous vimentin. n = 2. n.s., not significant, Student’s t-test. (D) Vimentin−/− HeLa cells reconstituted with empty vector (control) or WT or mutant vimentin-mEmerald constructs were sorted by flow cytometry to obtain the top one-third of mEmerald-expressing cells and then used in all subsequent experiments. (E) Parental HeLa cells were transfected with empty vector or WT vimentin-mEmerald for 24 hr, fixed, permeabilized, and imaged for total vimentin (D21H3 antibody immunofluorescence) and vimentin-mEmerald (mEmerald tag fluorescence).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A vimentin−/−293T clone was stably transduced with empty vector (control) or expression constructs encoding WT or mutant vimentin-mEmerald and was imaged by laser scanning confocal fluorescence microscopy. (B) Vimentin IF assembly state was quantified by imaging as in (A) and scoring assembled and disassembled vimentin in each cell (≥400 cells per genotype). Differences in both filament and puncta measurements are significant across all genotype comparisons (***p<0.001, Student’s t-test) except for S49A and S49E, which are indistinguishable from each other.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** 293T cells were transfected with vimentin-myc-6xHis constructs as indicated and treated with either vehicle (DMSO) or 12 µM MG132 for 13 hr. Lysates were analyzed by fluorescent IB (V9 antibody for vimentin).
 
 Cells reconstituted with WT vimentin-mEmerald exhibited canonical IF morphology, whereas the Y117L-expressing cells lacked assembled filaments and instead displayed punctate structures consistent with ULFs (Figure 3A,B, Figure 3—figure supplement 2A,B). These results indicate that our reconstituted cell systems recapitulate the previously reported characteristics of WT and Y117L vimentin (Meier et al., 2009; Helfand et al., 2011; Robert et al., 2014). We also observed dramatic alterations in vimentin IF organization in several unglycosylatable point-mutants. For example, the S34A mutant, which had an intermediate phenotype in our crosslinking assay (Figure 2), displayed a partial defect in IF formation, with both punctate and filamentous fluorescence detected (Figure 3A, Figure 3—figure supplement 2A). Interestingly, the S49A mutant, which lacked detectable O-GlcNAc-mediated interactions in the GlcNDAz assay (Figure 2), exhibited a significant reduction of assembled IFs in live cells, displaying a higher proportion of punctate vimentin fluorescence as compared to WT (Figure 3A,B, Figure 3—figure supplement 2A,B). Importantly, the S49A mutation had no impact on vimentin stability (Figure 3—figure supplement 3), further ruling out an effect of vimentin expression level in this system.
 
@@ -63,15 +103,35 @@ We next investigated whether vimentin O-GlcNAcylation is required for known func
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig4-v1.jpg)
 
-**Figure 4.:** Vimentin−/− HeLa cells reconstituted with empty vector or WT, S49A or Y117L vimentin-mEmerald expression constructs were serum-starved for 72 hr, treated with either vehicle control (DMSO), 100 µM 5SGlcNAc or 50 µM Thiamet-G for 6 hr, and then assayed by Transwell migration using 10% fetal bovine serum as a chemoattractant (or no serum, ‘Control’). Migrated cells were stained with crystal violet and four fields of view were imaged and counted for each of four biological replicates. The WT DMSO serum-stimulated sample was defined as maximum migration and used to normalize all data. Serum-stimulated migration is impaired in cells lacking vimentin or expressing mutant vimentin. 5SGlcNAc and Thiamet-G each inhibit migration in cells expressing WT vimentin, but have no effect on cells lacking vimentin or expressing mutant vimentin. n = 4, ***p<0.001, **p=0.006, n.s. not significant, ANOVA followed by Student’s t-test. For simplicity, only selected statistical comparisons are indicated on the graph. Please see Figure 4—source data 1 for comprehensive statistical comparisons.10.7554/eLife.31807.015Figure 4—source data 1.(A) Migration data were first compared by analysis of variance (ANOVA) using JMP software. The results of the ANOVA, as well as the effect test, are displayed. (B) Pairwise t-tests for all combinations of data points were performed. Level and –Level indicate the sample and the sample it is being compared to, respectively. The calculated difference, standard error, and upper and lower confidence levels (CL) are shown, as well as the p value for each t-test. (C) Comprehensive comparison of all samples and conditions. Any two samples that do not share a letter in column two are statistically significantly different from each other.
+**Figure 4.:** Vimentin−/− HeLa cells reconstituted with empty vector or WT, S49A or Y117L vimentin-mEmerald expression constructs were serum-starved for 72 hr, treated with either vehicle control (DMSO), 100 µM 5SGlcNAc or 50 µM Thiamet-G for 6 hr, and then assayed by Transwell migration using 10% fetal bovine serum as a chemoattractant (or no serum, ‘Control’). Migrated cells were stained with crystal violet and four fields of view were imaged and counted for each of four biological replicates. The WT DMSO serum-stimulated sample was defined as maximum migration and used to normalize all data. Serum-stimulated migration is impaired in cells lacking vimentin or expressing mutant vimentin. 5SGlcNAc and Thiamet-G each inhibit migration in cells expressing WT vimentin, but have no effect on cells lacking vimentin or expressing mutant vimentin. n = 4, ***p<0.001, **p=0.006, n.s. not significant, ANOVA followed by Student’s t-test. For simplicity, only selected statistical comparisons are indicated on the graph. Please see Figure 4—source data 1 for comprehensive statistical comparisons.
 
 Several intracellular pathogens co-opt the IF cytoskeleton to stabilize the large membrane-bound vacuoles in which they replicate, presumably by providing structural scaffolds (Geisler and Leube, 2016; Mak and Brüggemann, 2016). For example, we previously showed that the obligate intracellular pathogen Chlamydia trachomatis recruits a meshwork of vimentin IFs to its vacuolar ‘inclusion’ compartment, stabilizing its replicative niche and shielding bacterial components from the host’s cytoplasmic innate immune surveillance machinery (Kumar and Valdivia, 2008; Jorgensen et al., 2011; Snavely et al., 2014; Bednar et al., 2011). The molecular mechanisms of Chlamydia-induced vimentin recruitment and reorganization are incompletely understood. To examine the potential role of vimentin O-GlcNAcylation in these processes, we treated HeLa cells reconstituted with WT vimentin-mEmerald with vehicle control, 5SGlcNAc or Thiamet-G, infected them with Chlamydia, and visualized pathogen-containing inclusions and vimentin IFs by fluorescence microscopy (Figure 5A, Figure 5—figure supplement 1). We found that 5SGlcNAc treatment inhibited the formation of a vimentin meshwork around the inclusion, consistent with a requirement for vimentin glycosylation in IF remodeling during Chlamydia infection (Figure 5A). 5SGlcNAc treatment reduced the average size of the inclusions in infected cells and increased the number of extra-inclusion bacteria (Figure 5B), demonstrating that OGT activity is required for inclusion expansion and integrity. Thiamet-G treatment had little effect in these assays, likely because basal levels of O-GlcNAcylation are already sufficient for optimal Chlamydia replication (Figure 5, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig5-v1.jpg)
+
+**Figure 5.:** (A) HeLa cells reconstituted with WT vimentin-mEmerald were infected with Chlamydia for ten hours and treated with DMSO vehicle or 50 µM 5SGlcNAc for an additional 20 hr. Cells were fixed and immunostained for MOMP (to mark individual bacteria) and cap1 (to mark the inclusion membrane), along with vimentin-mEmerald imaging. Representative images are shown. Arrows indicate extra-inclusion bacteria. (B) Quantification of inclusion area and number of extra-inclusion bacteria from images in (A). n = 60, ***p<0.001, Welch’s t-test. (C) Reconstituted HeLa cell lines were infected with Chlamydia for 30 hr and then fixed, stained, and imaged as in (A). Representative images are shown. (D) Quantification of inclusion area from images in (C). n ≥ 54, ***p<0.001, Welch’s t-test. n.s., not significant. (E) HeLa cells reconstituted with empty vector were infected with Chlamydia, treated with DMSO vehicle or 50 µM 5SGlcNAc, and fixed and stained as in (A). Inclusion size (top; n = 20, p=0.21, Student’s t-test) and extra-inclusional bacteria (bottom; n = 28, p=0.42, Student’s t-test) were quantified. n.s., not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** HeLa cells reconstituted with WT (n = 36), S49A (n = 40) or Y117L (n = 34) vimentin-mEmerald were infected with Chlamydia for 10 hr and treated with DMSO vehicle or 50 µM Thiamet-G for an additional 20 hr. Cells were fixed and stained for cap1 and MOMP. Inclusion area was quantified and plotted as in Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** HeLa cells reconstituted with WT, S49A or Y117L vimentin-mEmerald were infected with Chlamydia (MOI = 0.5) for 30 hr, lysed, and analyzed by anti-GFP (mEmerald tag), tubulin, and MOMP IB, as indicated.
 
 We next tested whether O-GlcNAcylation of vimentin itself is required for inclusion integrity. We infected vimentin-reconstituted HeLa cell lines with Chlamydia and visualized vimentin IFs and bacteria by fluorescence microscopy. Compared to WT vimentin-expressing cells, cells expressing either the S49A or Y117L mutant vimentin displayed reduced IF recruitment to the inclusions, smaller average inclusion size, and larger numbers of bacteria escaping into the cytoplasm (Figure 5C,D). These data suggest that the site-specific glycosylation of vimentin itself is required for IF remodeling during Chlamydia infection. To further test this hypothesis, we infected empty vector-reconstituted vimentin−/− cells with Chlamydia in the presence or absence of 5SGlcNAc. In contrast to our observations with cells expressing WT vimentin (Figure 5A,B), 5SGlcNAc had no impact on Chlamydia inclusion size or extra-inclusion bacteria in cells lacking vimentin, indicating that vimentin, but not other host- or pathogen-encoded targets, is required for the effects of 5SGlcNAc in this context (Figure 5E). We concluded that both OGT activity and vimentin glycosylation sites are required for IF reorganization during Chlamydia infection, and are co-opted by this pathogen to promote inclusion integrity and growth.
 
 ## Discussion
 
 The IF cytoskeleton plays critical roles in both physiological and pathological processes, but how cells regulate IF structure and function remains poorly understood. We provide evidence that site-specific glycosylation of the vimentin head domain regulates its homotypic association in human cells, and is required for both IF morphology and cell migration (Figure 6). In addition, site-specific O-GlcNAcylation of vimentin is exploited by an intracellular pathogen to promote its own replication, underlining the importance of IF dynamics in disease states. Because many IF proteins are O-GlcNAc-modified (King and Hounsell, 1989; Chou et al., 1992; Ku et al., 2010; Dong et al., 1996; Dong et al., 1993; Lüdemann et al., 2005; Deng et al., 2008; Cheung and Hart, 2008; Slawson et al., 2008; Wang et al., 2007; Srikanth et al., 2010; Kakade et al., 2016; Tao et al., 2006), our results may provide new insight into the regulation of both vimentin in particular and the IF cytoskeleton in general.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig6-v1.jpg)
+
+**Figure 6.:** Our data suggest a model wherein glycosylation of the N-terminal vimentin head domain (red), particularly on S49, promotes homotypic vimentin-vimentin interactions, and assembly and/or maintenance of mature IFs under both homeostatic and Chlamydia infection conditions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31807/elife-31807-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Human vimentin S49 is conserved across several vertebrate vimentin orthologs. (B) S49 is conserved in human desmin but not peripherin or glial fibrillary acidic protein (GFAP), the other type III IF proteins.
 
 Early evidence for vimentin glycosylation was reported nearly twenty-five years ago (Shikhman et al., 1993) and confirmed with sophisticated MS methods thirteen years later (Slawson et al., 2008; Wang et al., 2007). However, the biochemical and cellular effects of this modification have remained largely uncharacterized. Through GlcNDAz crosslinking (Figure 2) and live-cell imaging (Figure 3, Figure 3—figure supplement 2), we determined that the vimentin glycosylation sites S34, S39 and especially S49 are required for normal homotypic vimentin-vimentin interactions and for IF morphology in live human cells. These O-GlcNAc-mediated interactions likely occur within assembled IFs and not smaller oligomeric states (Figure 1D,E). It is well established that portions of the vimentin head domain are required for filament assembly (Eriksson et al., 2004), and that head domain PTMs (especially phosphorylation) govern IF dynamics in vivo (Helfand et al., 2011; Eriksson et al., 2004; Chou et al., 1990; Eriksson et al., 1992; Sihag et al., 2007; Goto et al., 2002; Chan et al., 2002). Our results are consistent with this general model of regulated filament assembly/disassembly through head domain PTMs (Figure 6). Interestingly, however, internal deletion mutations within the head domain demonstrate that S49 itself is not required for vimentin filament formation in vitro or in vivo (Shoeman et al., 2002). Therefore, we propose that the phenotypes observed in the S49A vimentin mutant are caused by a loss of PTM regulation, rather than simply a requirement for serine at that site.
 
@@ -91,21 +151,262 @@ In conclusion, we have shown that site-specific glycosylation of vimentin mediat
 
 ## Materials and methods
 
-## Chemicals and enzymes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (HeLa)</td>
+      <td>vimentin -/-</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (293T/17)</td>
+      <td>293T vimentin -/-</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (HeLa)</td>
+      <td>HeLa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (293T/17)</td>
+      <td>293T/UAP1</td>
+      <td>PMCID: PMC3323966</td>
+      <td></td>
+      <td>Stably expressing AGX1(F383G)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-O-GlcNAc RL2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: sc-59624</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-myc 9E10</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: sc-40</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: T6074</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-nucleoporin-62</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences: 610498</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-vimentin D21H3</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling: 5741</td>
+      <td>1:1,000; 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-vimentin V9</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: V6389</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ThermoFisher: A11122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG</td>
+      <td>Southern Biotechnology</td>
+      <td>Southern Biotech: 4030-05</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG</td>
+      <td>Southern Biotechnology</td>
+      <td>Southern Biotech: 1030-05</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse k light chain</td>
+      <td>Southern Biotechnology</td>
+      <td>Southern Biotech: 1050-05</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L) Alexa Fluor 594 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: A-11012</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG (H+L) Alexa Fluor 594 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: A-11005</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG (H+L) IRDye 800CW conjugate</td>
+      <td>Li-Cor</td>
+      <td>Li-Cor: 925-32211</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG (H+L) IRDye 800CW conjugate</td>
+      <td>Li-Cor</td>
+      <td>Li-Cor: 925-32210</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-vimentin-N-18</td>
+      <td>Addgene</td>
+      <td>Addgene: 54301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti CMV/TO Hygro DEST</td>
+      <td></td>
+      <td>Addgene plasmid: 17291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti CMV Neo DEST (705-1)</td>
+      <td></td>
+      <td>Addgene plasmid: 17392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-vimentin-N-18/ pLenti6 CMV Neo</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-vimentin-N-18/ pLenti6 CMV Hygro</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiamet-G</td>
+      <td>Duke Small Molecule Synthesis Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac45SGlcNAc</td>
+      <td>Benjamin Swarts, Central Michigan University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Advansta ECL</td>
+      <td>Advansta</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>vimentin sgRNA</td>
+      <td>Duke Functional Genomics Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>vimentin sgRNA</td>
+      <td>Duke Functional Genomics Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>vimentin sgRNA</td>
+      <td>Duke Functional Genomics Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (virus)</td>
+      <td>Cas9 Lentivirus</td>
+      <td>Duke Functional Genomics Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pENTR Directional TOPO cloning kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II Enzyme</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:11791100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals and enzymes
 
 Thiamet-G was synthesized as described (Yuzwa et al., 2008) by the Duke Small Molecule Synthesis Facility (DSMSF). Ac45SGlcNAc was synthesized as described (Gloster et al., 2011) and was a gift of Benjamin Swarts, Central Michigan University. Ac3GlcNDAz-1P(Ac-SATE)2 was synthesized in-house or by the DSMSF as described (Yu et al., 2012). All other chemicals were purchased from Sigma unless otherwise noted. Lambda phosphatase was purchased from New England Biolabs.
 
-## Mammalian cells and cell culture
+### Mammalian cells and cell culture
 
 Cells were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 100 units/ml penicillin and 100 µg/ml streptomycin and kept at 37°C with 5% CO2. Cell lines were obtained from ATCC or the Duke Cell Culture Facility. In all cases, authenticity was verified using morphology, karyotyping, and PCR-based approaches (e.g., short tandem repeat profiling) and tested negative for Mycoplasma (PCR test) by the vendor at the time of purchase. HeLa and 293T cells were selected because they are well-established model systems for the human IF cytoskeleton and Chlamydia infection.
 
-## GlcNDAz crosslinking
+### GlcNDAz crosslinking
 
 O-GlcNAc-mediated protein crosslinking was performed essentially as described (Yu et al., 2012). Briefly, Ac3GlcNDAz-1P(Ac-SATE)2 (GlcNDAz precursor) was added to a final concentration of 100 µM to the culture medium of 293T cells stably expressing AGX1(F383G) (Yu et al., 2012). DMSO served as the vehicle control treatment. Dishes were incubated in the dark for 24 hr, dosed again with GlcNDAz precursor, and incubated for an additional 24 hr.
 
 To crosslink and harvest, dishes were placed on ice and washed carefully twice with 10 ml of cold phosphate-buffered saline (PBS) twice. With dishes still on ice, 4 ml of cold PBS were added, lids were removed, and plates were exposed to 365 nm UV light for 20 min. Then, cells were resuspended in PBS by scraping and/or pipetting, pelleted by centrifugation, and lysed in either 8 M urea for IB, or IP buffer (150 mM NaCl, 20 mM Tris pH 7.4, 1% Triton X-100, 0.1% SDS) for IPs.
 
-## Immunoblotting (IB)
+### Immunoblotting (IB)
 
 The concentrations of protein samples were obtained via bicinchoninic acid (BCA) assay according to the manufacturer’s instructions (Thermo) and protein concentration was normalized across all samples within each experiment. One-third the volume of 4X SDS-PAGE loading buffer was added and the sample was heated to 95°C for 3 min (except in the case of samples prepared in 8 M urea). Samples were then loaded onto a polyacrylamide gel and run at 165 V.
 
@@ -113,39 +414,39 @@ Unless otherwise noted, IBs detection was performed by enhanced chemiluminescenc
 
 For quantitative fluorescent IBs, samples were separated by SDS-PAGE, electroblotted onto nitrocellulose membranes, blocked and probed as described above. The following secondary antibodies were used: Goat anti-rabbit IgG (H + L) Alexa Fluor 594 conjugate (Thermo Fisher Scientific A-11012), goat anti-mouse IgG (H + L) Alexa Fluor 594 conjugate (Thermo Fisher Scientific A-11005), goat anti-rabbit IgG (H + L) IRDye 800CW conjugate (Li-Cor, 925–32211), goat anti-mouse IgG (H + L) IRDye 800CW conjugate (Li-Cor, 925–32210). Blots were washed in TBST and scanned and analyzed on a Li-Cor Odyssey imaging system.
 
-## Plasmid construction
+### Plasmid construction
 
 The sequence of human vimentin isoform 1 was amplified using PCR and the following primers: Forward: 5’ cgcggatccgccaccatgtccaccaggtccgtg 3’; Reverse: 5’ cgtctagattcaaggtcatcgtgatgctga 3’. The resulting PCR product and pcDNA3.1(+)/myc-His A vector (Invitrogen) were digested with BamHI and XbaI (New England Biolabs) and the vector treated with calf intestinal alkaline phosphatase (New England Biolabs) according to the manufacturer’s instructions. PCR product and vector were mixed in a 3:1 molar ratio and incubated with T4 DNA ligase (New England Biolabs) in the provided buffer for 1 hr. This reaction was transformed into E. coli strain DH5α and the resulting colonies were cultured, miniprepped and sequenced using standard methods. The OGT-myc/6xHis and OGA-myc constructs have been described previously (Boyce et al., 2011).
 
 The sequence of mEmerald-vimentin-N-18 (Addgene plasmid #54301) was amplified using primers complementary to vimentin and GFP (Forward: 5’ caccgccaccatgtccaccaggtccgtg 3’; Reverse: 5’ cgcaacgaattctcaatgtccaccaggtccgt). The resulting PCR product was cloned into a pENTR vector using the pENTR Directional TOPO cloning kit (Fisher Scientific #K240020) according to the manufacturer’s instructions. This vector was used in a Gateway LR Clonase II Enzyme reaction, according to manufacturer’s instructions (Invitrogen), with pLenti CMV Neo DEST (705-1) (Addgene plasmid #17392), or pLenti CMV/TO Hygro DEST (Addgene plasmid # 17291). Vimentin mutants were created from WT expression constructs via standard site-directed mutagenesis protocols using Agilent online primer design tools, oligonucleotides synthesized by IDT, and Phusion polymerase according to the manufacturer’s instructions (Thermo Fisher). Mutagenesis was performed on vimentin-mEmerald in the pENTR vector prior to transfer to the appropriate destination vector. The integrity of all constructs was confirmed by Sanger sequencing through the entire open reading frame of each construct (Eton Bioscience).
 
-## Transfections
+### Transfections
 
 30 µl of Trans-IT-293 transfection reagent (Mirus) was added to 750 µl of Opti-MEM medium (Life Technologies), vortexed and centrifuged briefly, and incubated at room temperature for 15 min. Then, 10 µg DNA was added to the mixture and vortexing and centrifuging were repeated, followed by an additional 15 min at room temperature. The entire reaction was added drop-wise to adherent cells.
 
-## Immunoprecipitation (IP)
+### Immunoprecipitation (IP)
 
 Samples were extracted in IP buffer (150 mM NaCl, 20 mM Tris pH 7.4, 1% Triton X-100, 0.1% SDS), diluted to 1 mg/ml total protein concentration, and 3 µg of antibody was added for each 1 mg of protein used. IPs were incubated at 4°C overnight with gentle agitation. The next day, washed protein-A/G agarose beads (Thermo) were added to the tubes and rotated at room temperature for 1.5 hr. The beads were then isolated by centrifuging at 600 g for 1 min and the supernatants were discarded. Beads were washed four times with 1 ml of IP buffer and eluted with three times the bead volume of elution buffer (8M urea, 150 mM NaCl; if the samples were to be further purified by nickel, this buffer also contained 10 mM imidazole).
 
-## Differential extraction
+### Differential extraction
 
 Differential extraction was performed essentially as described (Ridge et al., 2016). Briefly, 293 T cells were grown to confluency, treated with GlcNDAz precursor and UV-crosslinked as above, and washed three times on the plate with PBS containing 2 mM MgCl2 at room temperature. After removing PBS, attached cells were incubated in 1 ml of low-detergent buffer (10 mM MOPS pH 7, 10 mM MgCl2, 1 mM EGTA, 0.15% Triton X-100, plus 7.5 µl saturated phenylmethane sulfonyl fluoride (PMSF) solution in ethanol, added fresh, in 1x PBS) for five minutes at room temperature with gentle agitation. The buffer was removed and cleared by benchtop centrifugation, and the resulting supernatant was reserved as the soluble cell fraction. Plates were then incubated on ice in 1 ml of ice-cold high-detergent buffer (10 mM MOPS pH 7, 10 mM MgCl2, 1% Triton X-100, plus 7.5 µl saturated PMSF solution and 50 mg Benzonase, added fresh, in 1x PBS) for 3 min. Then, 250 µl of ice-cold 5 M NaCl was added, cells were resuspended by pipetting, and samples were cleared by centrifugation. The resulting supernatant was saved as the cytoskeletal fraction, including intermediate vimentin assembly states (Ridge et al., 2016). Finally, the pellet was resuspended by pipetting in 250 µl of 8 M urea in PBS to solubilize the remaining material (e.g., assembled IFs) (Ridge et al., 2016).
 
-## Buffer exchange
+### Buffer exchange
 
 Zeba spin desalting columns (Thermo Fisher, 89890) were washed with 1 ml of IP buffer and centrifuged at 1000 g for 2 min three times, according to the manufacturer’s instructions. Samples were applied to the center of the column and 40 µl of IP buffer was applied after sample absorption into the resin. The column was centrifuged for 2 min at 1000 g and sample was collected in 1.5 ml centrifuge tubes.
 
-## Mass spectrometry-based proteomics
+### Mass spectrometry-based proteomics
 
 293T cells stably expressing AGX1(F383G) (Yu et al., 2012) were transfected with a vimentin-myc-6xHis construct, treated with GlcNDAz precursor, and UV-crosslinked as above. Crosslinked and uncrosslinked vimentin-myc-6xHis was isolated first through anti-myc IP, as above. Samples were eluted from the protein A/G beads in 8 M urea, 150 mM NaCl and 10 mM imidazole in PBS and incubated with nickel-NTA resin (Qiagen) rotating at room temperature for 2 hr. The resin was washed three times with the same buffer and eluted with 8 M urea, 150 mM NaCl and 250 mM imidazole in PBS for 15 min. Eluents were separated by SDS-PAGE and stained with InstantBlue gel stain (Thermo Fisher). Bands corresponding to crosslinks were excised by hand, and analyzed by in-gel digest and MS/MS proteomics by the Duke Proteomics and Metabolomics Shared Resource. For more details, please see https://genome.duke.edu/cores-and-services/proteomics-and-metabolomics/protein-characterization
 
-## GalNAz labeling and click reactions
+### GalNAz labeling and click reactions
 
 GalNAz labeling was performed essentially as described (Boyce et al., 2011; Palaniappan et al., 2013; Chen et al., 2017). Briefly, 293T cells were incubated with DMSO vehicle or 100 µM Ac4GalNAz for 24 hr. To harvest, cells were washed twice with PBS and resuspended in click lysis buffer (1% Triton X-100, 1% SDS, 150 mM NaCl, 20 mM Tris pH 7.4, 5 µM PUGNAc, protease inhibitor cocktail). After sonication and centrifugation, protein concentration was measured via BCA assay.
 
 2.5 mg of protein were used in 875 µl total reaction volume for each click reaction. To these reactions were added 5 mM sodium ascorbate, 25 µM alkyne-Cy5 probe (Palaniappan et al., 2013), 100 µM TBTA, and 1 mM CuSO4. Samples were incubated in the dark at room temperature for 1 hr with gentle agitation and quenched with 10 mM EDTA. Samples were then diluted with 1% Triton X-100, 150 mM NaCl, 20 mM Tris pH 7.4, 1 mM EDTA, 5 µM PUGNAc and protease inhibitors to bring SDS concentration to 0.1%. 6.75 µg anti-myc (9E10) antibody were added to each sample and IPs were incubated at 4°C overnight with gentle agitation. The next day, washed protein-A/G agarose beads (Thermo) were added to the tubes and rotated at room temperature for 1 hr. The beads were then isolated by centrifuging at 600 g for 1 min and the supernatants were discarded. Beads were washed four times with 1 ml of IP buffer, eluted with three times the bead volume of SDS-PAGE loading buffer, and boiled for 5 min at 95°C. Samples were analyzed by SDS-PAGE and fluorescence scanning on a Li-Cor Odyssey imaging system.
 
-## Generation and validation of vimentin−/− cells by CRISPR/Cas9 deletion
+### Generation and validation of vimentin−/− cells by CRISPR/Cas9 deletion
 
 Three single guide RNA (sgRNA) sequences targeting the human vimentin locus were designed and validated via the Surveyor assay (Ran et al., 2013) by the Duke Functional Genomics facility: Vim-1: 5’ GGACGAGGACACGGACCTGG 3’; Vim-2: 5’ CATCCTGCGGTAGGAGGACG 3’; Vim-3: 5’ GGACACGGACCTGGTGGACA 3’. An sgRNA targeting the AAVS1 ‘safe harbor’ locus (Sadelain et al., 2011) was used as a control.
 
@@ -157,64 +458,99 @@ For qPCR, cellular mRNA was extracted with an RNeasy kit according to the manufa
 
 The following qPCR primers and cycling conditions were used:
 
-## Vimentin
+### Vimentin
 
 Forward: 5’-AGTGTGGCTGCCAAGAACCT 3’
 
 Reverse: 5’-GAGGGACTGCACCTGTCTCC 3’
 
-## Actin
+### Actin
 
 Forward: 5’-CACTCTTCCAGCCTTCCTTC 3’
 
 Reverse: 5’-GGATGTCCACGTCACACTTC 3’
 
-StepTemperature (°C)Time (minutes)CyclesInitial denaturation95101Denaturation Annealing Extension95 60 720.15 0.3 0.340Final extension72101Storage4∞-
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Temperature (°C)</th>
+      <th>Time (minutes)</th>
+      <th>Cycles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial denaturation</td>
+      <td>95</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Denaturation Annealing Extension</td>
+      <td>95 60 72</td>
+      <td>0.15 0.3 0.3</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Final extension</td>
+      <td>72</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td>4</td>
+      <td>∞</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
-## Creation of vimentin-mEmerald lentivirus and reconstitution of vimentin−/− cells
+### Creation of vimentin-mEmerald lentivirus and reconstitution of vimentin−/− cells
 
 1.2 × 106 293 T cells were plated at ~60–70% confluency in a 6 cm dish 24 hr prior to transfection. Cells were transfected with:
 
 12–18 hr post-transfection, the medium was changed to 4 ml of DMEM with 30% FBS. At 48 hr post-transfection, the medium containing the virus was harvested and replaced with fresh DMEM. At 72 hr post-transfection, the virus-containing medium was again harvested, combined with the previous medium, and filtered through a 0.45 µm PVDF filter. Filtered supernatants were then used to infect target cells as described above. HeLa cells were selected and passaged in 500 µg/ml G418, and 293T cells with 100 µg/ml hygromycin. After trypsinizing, cells were resuspended in serum-free DMEM (+penicillin/streptomycin) and passed through a sterile 30 µm filter (Sysmex CellTrics, 04-004-2326). Cells were sorted on a DiVa fluorescence-activated cell sorter (BD Biosciences) at the DCI FCSR to obtain the top third of highest-expressing cells, as judged by GFP fluorescence (vimentin-mEmerald signal).
 
-## Filament imaging
+### Filament imaging
 
 Imaging of vimentin-mEmerald was performed using a confocal laser scanning microscope (LSM 880; Zeiss) equipped with an automatic stage, Airyscan detector (Hamamatsu) and diode (405 nm), argon ion (488 nm), double solid-state (561 nm), and helium-neon (633 nm) lasers. Images were acquired using a 60x/1.4 NA oil objective (Zeiss) and deconvolved using automatic Airyscan Processing in the Zen Software (Zeiss).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were rinsed twice with 37°C PBS and fixed with 1% formaldehyde (Sigma) in PBS for 10 min. Cells were permeabilized with PBS containing 0.1% Triton X-100 (Sigma) for 10 min and blocked with TBS containing 5% BSA (Equitech-Bio) and 0.1% Triton X-100. A mouse antibody against vimentin (clone V9, Santa Cruz Biotech sc-57678) was diluted in TBS containing 5% BSA and 0.1% Triton X-100 and incubated with the samples overnight at 4˚C. Cells were washed three times with PBS and then incubated with a goat anti-rabbit (H + L) Alexa Fluor 647-conjugated secondary antibody (Thermo Fisher) diluted in TBST containing 5% BSA for 1 hr at room temperature. Coverslips were washed five times with PBS and mounted on slides using ProLong Diamond anti-fade mounting medium with DAPI (Thermo Fisher). Cells were imaged using a confocal laser scanning microscope (LSM 880; Zeiss) equipped with an automatic stage, Airyscan detector (Hamamatsu) and diode (405 nm), argon ion (488 nm), double solid-state (561 nm), and helium-neon (633 nm) lasers. Images were acquired using a 60x/1.4 NA oil objective (Zeiss) and deconvolved using automatic Airyscan Processing in the Zen Software (Zeiss).
 
-## Transwell migration assays
+### Transwell migration assays
 
 Transwell migration assays were performed essentially as described (Justus et al., 2014). Briefly, cells were plated at approximately 70% confluency and allowed to attach for 24 hr. Then, the medium was removed and replaced with DMEM containing penicillin/streptomycin but lacking FBS for 72 hr. 6.5 mm Transwell plates with 8.0 µm pore polycarbonate membrane inserts were collagen-coated by incubating individual inserts in 50 µg/ml collagen solution from bovine skin (Sigma-Aldrich, C4243-20ML) for 1 hr at 37°C, UV-sterilized in a biosafety cabinet, and re-hydrated with FBS-free DMEM for 1 hr. FBS-starved cells were trypsinized and counted, and 30,000 cells per replicate were added to each insert with either FBS-containing or FBS-free DMEM on the opposite side. Cells were permitted to migrate for 24 hr under standard culture conditions. The assay was stopped by fixing cells in ice-cold methanol for 10 min at −20°C. Then, inserts were stained with crystal violet solution (30% methanol, 0.1% crystal violet in PBS) overnight. After staining, inserts were washed three times in PBS and the non-migrated cells were gently removed with a cotton swab. Four non-overlapping fields of view per insert were imaged with a 10x objective of a Nikon TE200 inverted microscope. Cells were counted manually using Fiji (NIH).
 
-## Statistical analysis
+### Statistical analysis
 
 For filament morphology quantification, the number of puncta- and filament-containing cells was normalized as a percent of total cells counted and analyzed by ANOVA followed by pairwise t-tests, with p<0.05 considered significant. Transwell migration assays were normalized to percent of control (i.e., WT vimentin, vehicle-treated, serum-stimulated) migration and analyzed by ANOVA followed by pairwise t-tests, with p<0.05 considered significant.
 
-## Chlamydia strains and elementary body preparations
+### Chlamydia strains and elementary body preparations
 
 Chlamydia trachomatis serotype LGV-L2, strain 434/Bu (CTL2) was propagated in Vero cells. Infectious elementary bodies (EBs) were derived from Vero-infected cells at 44 hr post-infection (hpi). Infected cells were rinsed twice with PBS, lysed in water for 10 min, and diluted in buffer (7.2 mM K2HPO4, 3.8 mM KH2PO4, 218 mM sucrose, 4.9 mM L-glutamic acid, pH 7.4). Cell lysates were subsequently sonicated and stored at −80°C.
 
-## Chlamydia infections
+### Chlamydia infections
 
 HeLa cells were seeded at a density of 5 × 104 cells/well on glass coverslips (Bellco Glass, Inc.). Coverslips were pre-coated with 30 μg/ml type I collagen (Thermo Fisher) in 20 mM acetic acid (Spectrum) for 5 min and rinsed twice with medium. Cells were maintained in medium containing 0.5 mg/ml G418 and rinsed three times with medium lacking G418 just prior to infections. CTL2 EBs were added at a multiplicity of infection of three and infections were synchronized by centrifugation (1000 g, 20 min) at 10°C. The medium was replaced and infected cells were cultured under standard conditions for 30 hr. To inhibit OGT or OGA activity, the medium of infected cells was replaced with medium containing DMSO (vehicle), 50 µM 5SGlcNAc, or 50 µM Thiamet-G at 10 hpi.
 
-## Immunofluorescence in Chlamydia infection experiments
+### Immunofluorescence in Chlamydia infection experiments
 
 HeLa cells were rinsed twice with warm PBS and fixed with 3.7% formaldehyde in PBS for 20 min. Cells were quenched with 0.25% NH4Cl, permeabilized with PBS containing 0.1% Triton X-100 for 10 min, and blocked with PBS containing 2% BSA and 0.1% Triton X-100. A mouse antibody against MOMP (Santa Cruz, sc-57678) and a rabbit antibody against cap1 (A. Subtil, Institut Pasteur) were diluted in PBS containing 2% BSA and 0.1% Triton X-100. The secondary antibodies goat-anti-mouse (H + L) Alexa Fluor 647 (Thermo Fisher) and goat-anti-rabbit (H + L) Alexa Fluor 555 (Thermo Fisher) were diluted in PBS containing 2% BSA and 0.1% Triton X-100. Coverslips were washed five times with PBS and mounted on slides using Fluorsave mounting media (CalBiochem).
 
 Cells were imaged using a confocal laser scanning microscope (LSM 880; Zeiss equipped with an automatic stage, Airyscan detector (Hamamatsu) and diode (405 nm), argon ion (488 nm), double solid-state (561 nm), and helium-neon (633 nm) lasers. Images were acquired using a 60x/1.4 NA oil objective (Zeiss) and deconvolved using automatic Airyscan Processing in the Zen Software (Zeiss).
 
-## Analysis of Chlamydia infection experiment images
+### Analysis of Chlamydia infection experiment images
 
 To quantify Chlamydia inclusion size, images were imported into ImageJ (NIH) and converted to 8-bit TIFF and binary image files to demarcate individual inclusions. The area of each cap1-positive inclusion and the number of extra-inclusion bacteria were exported and plotted in the R software. Datasets were analyzed in R using Levene’s Test to assess equal variance, followed by either a Student’s t-test or Welch’s t-test, with p<0.05 considered significant.
 
-## Vimentin cleavage
+### Vimentin cleavage
 
 Vimentin−/− HeLa cells stably transduced with empty vector or WT, S49A or Y117L vimentin-mEmerald were mock-infected or infected with CTL2 Chlamydia (MOI = 0.5) for 30 hr, washed twice with cold PBS, incubated in ice-cold buffer (50 mM Tris pH 7.4, 150 mM NaCl, 1 mM EDTA, 1 mM PMSF, 1% Triton X-100, and protease inhibitors (Roche)) for 30 min and then sonicated on ice for 10 s. Cell lysates were cleared by centrifugation at 8000 rpm for five minutes at 4°C. Supernatants were diluted in SDS-PAGE sample buffer and heated to 95°C for five minutes. Equal volumes of sample were analyzed by IB. Rabbit antibodies against GFP (ThermoFisher A11122) and MOMP (a gift from Ken Fields), a mouse antibody against α-tubulin (Sigma-Aldrich, Clone B-5-1-2), and secondary anti-rabbit and anti-mouse antibodies (Li-Cor Biosciences) conjugated to infrared dye were diluted in PBS containing 5% nonfat milk (weight/volume) and 0.1% Tween-20, and sequentially incubated on the membrane prior to scanning with the Odyssey imaging system (Li-Cor Biosciences).
 
-## Transparent reporting
+### Transparent reporting
 
 We have adhered to the definition of ‘biological replicates’ outlined by Blainey et al. (2014) and paraphrased as independent, parallel measurements of biologically distinct samples to capture biological variation. By contrast, technical replicates are repeated measures of the same biological sample to determine the noise associated with experimental procedures or instruments (Blainey et al., 2014). Individual experiments shown in the figures are representative of at least three biological replicates. Statistical standards and tests for particular experiments are detailed in the appropriate subsections of the Materials and Methods and figure legends. For more information, please see the eLife Transparent Reporting form associated with this work.

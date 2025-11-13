@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.23570.001 Yeast is a powerful model for systems genetics. We present a versatile, time- and labor-efficient method to functionally explore the Saccharomyces cerevisiae genome using saturated transposon mutagenesis coupled to high-throughput sequencing. SAturated Transposon Analysis in Yeast (SATAY) allows one-step mapping of all genetic loci in which transposons can insert without disrupting essential functions. SATAY is particularly suited to discover loci important for growth under various conditions. SATAY (1) reveals positive and negative genetic interactions in single and multiple mutant strains, (2) can identify drug targets, (3) detects not only essential genes, but also essential protein domains, (4) generates both null and other informative alleles. In a SATAY screen for rapamycin-resistant mutants, we identify Pib2 (PhosphoInositide-Binding 2) as a master regulator of TORC1. We describe two antagonistic TORC1-activating and -inhibiting activities located on opposite ends of Pib2. Thus, SATAY allows to easily explore the yeast genome at unprecedented resolution and throughput. DOI: http://dx.doi.org/10.7554/eLife.23570.001
+Yeast is a powerful model for systems genetics. We present a versatile, time- and labor-efficient method to functionally explore the Saccharomyces cerevisiae genome using saturated transposon mutagenesis coupled to high-throughput sequencing. SAturated Transposon Analysis in Yeast (SATAY) allows one-step mapping of all genetic loci in which transposons can insert without disrupting essential functions. SATAY is particularly suited to discover loci important for growth under various conditions. SATAY (1) reveals positive and negative genetic interactions in single and multiple mutant strains, (2) can identify drug targets, (3) detects not only essential genes, but also essential protein domains, (4) generates both null and other informative alleles. In a SATAY screen for rapamycin-resistant mutants, we identify Pib2 (PhosphoInositide-Binding 2) as a master regulator of TORC1. We describe two antagonistic TORC1-activating and -inhibiting activities located on opposite ends of Pib2. Thus, SATAY allows to easily explore the yeast genome at unprecedented resolution and throughput.
 
 ## Introduction
 
@@ -30,81 +30,169 @@ To circumvent these problems, a second-generation genetic screening procedure ha
 
 Recently, an innovative approach called Transposon sequencing (Tn-seq) was developed in various bacterial models (Christen et al., 2011; Girgis et al., 2007; van Opijnen et al., 2009), and in the fungus Schizosaccharomyces pombe (Guo et al., 2013). By allowing en masse analysis of a pool of transposon mutants using next-generation sequencing, this strategy eliminates the drawbacks of previous genetic screens.
 
-Here, we describe an adaptation of the Tn-seq strategy for
+Here, we describe an adaptation of the Tn-seq strategy for S. cerevisiae, that combines the advantages of both first and second generation screens, while alleviating their limitations. The method is based on the generation of libraries of millions of different clones by random transposon insertion (Figure 1A). Transposons inserted in genes that are important for growth kill their hosts and are not subsequently detected. These genes therefore constitute transposon-free areas on the genomic map. Transposon-based libraries can be grown in any condition to reveal condition-specific genetic requirements. Unlike ordered deletion libraries, transposon-based libraries can easily be generated de novo from different strain backgrounds, are not limited to coding sequences and do not require the usage of robots.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig1-v2.jpg)
 
-**Figure 1.:** (A) Outline of the experimental procedure. Left, the transposon (green) can insert either into non-essential DNA (blue) and give rise to a clone, or into essential DNA (orange), in which case no clone is formed. Right, procedure to identify transposon insertion sites by deep-sequencing. (B) Profile of the transposon density across the whole genome, when the transposon original location is either a centromeric plasmid (top) or the endogenous ADE2 locus on chromosome XV (bottom). The dashed lines indicate the chromosome centromeres. (C) Six examples of genomic regions and their corresponding transposon coverage in seven independent transposon libraries of indicated genotypes. Each vertical grey line represents one transposon insertion event. Genes annotated as essential are shown in orange, others in blue. Green arrowheads indicate the places where the absence of transposon coverage coincides with an essential gene. (D) Histogram of the number of transposons found in every annotated gene (CDS). The vertical dashed line is the median of the distribution. (E) Same as D, with genes categorized as non-essential (blue) and essential (orange) according to previous annotations.DOI: http://dx.doi.org/10.7554/eLife.23570.003
+**Figure 1.:** (A) Outline of the experimental procedure. Left, the transposon (green) can insert either into non-essential DNA (blue) and give rise to a clone, or into essential DNA (orange), in which case no clone is formed. Right, procedure to identify transposon insertion sites by deep-sequencing. (B) Profile of the transposon density across the whole genome, when the transposon original location is either a centromeric plasmid (top) or the endogenous ADE2 locus on chromosome XV (bottom). The dashed lines indicate the chromosome centromeres. (C) Six examples of genomic regions and their corresponding transposon coverage in seven independent transposon libraries of indicated genotypes. Each vertical grey line represents one transposon insertion event. Genes annotated as essential are shown in orange, others in blue. Green arrowheads indicate the places where the absence of transposon coverage coincides with an essential gene. (D) Histogram of the number of transposons found in every annotated gene (CDS). The vertical dashed line is the median of the distribution. (E) Same as D, with genes categorized as non-essential (blue) and essential (orange) according to previous annotations.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Histogram of colony area for a randomly chosen sample of 402 colonies. (B) Example of picture of colonies (top) and segmentation thereof (bottom) used to calculate histogram in (A). Scale bar, 1 mm.DOI: http://dx.doi.org/10.7554/eLife.23570.004
+**Figure 1—figure supplement 1.:** (A) Histogram of colony area for a randomly chosen sample of 402 colonies. (B) Example of picture of colonies (top) and segmentation thereof (bottom) used to calculate histogram in (A). Scale bar, 1 mm.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Frequency plot of nucleotide composition around transposon insertion site. The strand is determined according to the orientation of the transposon insertion. Plot was calculated with a random sample of 50,000 transposon in the wild-type library 1. Note that GC-content of the yeast genome is 38%. (B) Preferential transposon insertion into internucleosomal DNA. Three genomic regions are shown. For each, the top panel shows the nucleosomal density as determined in (Lee et al., 2007), and the bottom panels show transposon insertion as in Figures 2–5. (C) Correlation analysis of nucleosome and transposon density. Transposon densities were calculated on the wild-type library 1 by averaging transposon number within a 40 bp moving average. Top, correlation coefficient calculated between the nucleosome and the transposon data offset by the indicated number of bp. The correlation is most negative when offset = 0. The periodicity is ~160 bp. Middle, autocorrelation of transposon data. The periodicity is identical as above. Bottom, autocorrelation of the nucleosome density data. The periodicity is identical as above. (D) Analysis of transposon number relative to distance from centromere. For each chromosome, the number of transposons mapping within a certain distance from their respective centromere was computed and plotted (grey lines). The number of transposons increases linearly with the distance, except in the vicinity of the centromere, where transposon enrichment can be observed. The intercept of the linear regression, computed on the linear part of the plot and multiplied by 16 chromosomes, gives a rough estimate of the numbers of transposons enriched at pericentromeric regions (~20% of the total transposon number).DOI: http://dx.doi.org/10.7554/eLife.23570.005
+**Figure 1—figure supplement 2.:** (A) Frequency plot of nucleotide composition around transposon insertion site. The strand is determined according to the orientation of the transposon insertion. Plot was calculated with a random sample of 50,000 transposon in the wild-type library 1. Note that GC-content of the yeast genome is 38%. (B) Preferential transposon insertion into internucleosomal DNA. Three genomic regions are shown. For each, the top panel shows the nucleosomal density as determined in (Lee et al., 2007), and the bottom panels show transposon insertion as in Figures 2–5. (C) Correlation analysis of nucleosome and transposon density. Transposon densities were calculated on the wild-type library 1 by averaging transposon number within a 40 bp moving average. Top, correlation coefficient calculated between the nucleosome and the transposon data offset by the indicated number of bp. The correlation is most negative when offset = 0. The periodicity is ~160 bp. Middle, autocorrelation of transposon data. The periodicity is identical as above. Bottom, autocorrelation of the nucleosome density data. The periodicity is identical as above. (D) Analysis of transposon number relative to distance from centromere. For each chromosome, the number of transposons mapping within a certain distance from their respective centromere was computed and plotted (grey lines). The number of transposons increases linearly with the distance, except in the vicinity of the centromere, where transposon enrichment can be observed. The intercept of the linear regression, computed on the linear part of the plot and multiplied by 16 chromosomes, gives a rough estimate of the numbers of transposons enriched at pericentromeric regions (~20% of the total transposon number).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** As in Figure 1D–E, except that, for each gene, the transposon density (i.e. number of transposons divided by length of the gene) is shown.DOI: http://dx.doi.org/10.7554/eLife.23570.006
+**Figure 1—figure supplement 3.:** As in Figure 1D–E, except that, for each gene, the transposon density (i.e. number of transposons divided by length of the gene) is shown.
 
 This method can successfully uncover sets of genes essential in given conditions, genome-wide genetic interactions and drug-targets. Transposon insertions can generate loss- and gain-of-function variants. Finally, our approach not only shows which protein is important for growth, but also which part of the protein is essential for function, allowing genome-wide mapping of structural protein domains and screening of phenotypes at a sub-gene resolution.
 
 ## Results
 
-## Library generation
+### Library generation
 
 The detailed procedure can be found in the Materials and methods section. The method utilizes the Maize Ac/Ds transposase/transposon system in yeast (Lazarow et al., 2012; Weil and Kunze, 2000). Briefly, cells in which the ADE2 gene is interrupted by the MiniDs transposon are induced to express the transposase Ac, on galactose-containing adenine-lacking synthetic defined medium (SD +galactose -adenine). Transposase-induced MiniDs excision is followed by repair of the ADE2 gene. Cells with repaired ADE2 will be able to form colonies. The excised transposon then re-inserts at random genomic locations with a frequency of ~60% (Lazarow et al., 2012).
 
-We have generated seven libraries, displayed together in all figures to illustrate the reproducibility of the approach. All libraries were generated in ade2Δ strains derived from BY4741 and BY4742 backgrounds. Additional mutations (dpl1Δ, dpl1Δ psd2Δ, VPS13(D716H), mmm1Δ VPS13(D716H), YEN1on, Table 1) will be described in the following sections. The complete dataset is available (Supplementary file 1) and searchable here: http://genome-euro.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=benjou&hgS_otherUserSessionName=23bDePuYrk10.7554/eLife.23570.007Table 1.Characteristics of the librariesDOI: http://dx.doi.org/10.7554/eLife.23570.007LibraryNumber of coloniesReads mappedTransposons mappedMedian read per transposonNumber of MiSeq runsOverlap between MiSeq runsWild-type 1~1.6×10631794831284162222*54%, 88%*Wild-type 2~2.4×10615303285258568121NAVPS13(D716H)~4.7×10624958456414114132†41%, 42%†Mmm1Δ VPS13(D716H)~1.9×10617799948303323121NAdpl1Δ~2.3×1061507715640112681NAdpl1Δ psd2Δ~2.9×1061164956136317991NAYEN1on~2.8×106951787749512561NAWild-type 2 + rapamycin~2.4×106966495616932291NA* The harvested library was grown in two flasks, one at 30°C and the other at 37°C. DNA was extracted separately from the two cultures and sequenced in two separate MiSeq runs† The library was harvested as ten subpools, which were grown in ten separate flasks. DNA was extracted separately. In one case, DNA from all ten subpools was pooled and processed to sequencing in one MiSeq run. In the other case, DNAs were kept separate and processed until the PCR step (1 × 100 µl PCR by subpool). PCR products were pooled and sequenced as another MiSeq run.
+We have generated seven libraries, displayed together in all figures to illustrate the reproducibility of the approach. All libraries were generated in ade2Δ strains derived from BY4741 and BY4742 backgrounds. Additional mutations (dpl1Δ, dpl1Δ psd2Δ, VPS13(D716H), mmm1Δ VPS13(D716H), YEN1on, Table 1) will be described in the following sections. The complete dataset is available (Supplementary file 1) and searchable here: http://genome-euro.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=benjou&hgS_otherUserSessionName=23bDePuYrk
 
-## Detection of transposon insertion sites
+**Table 1.**
+ Characteristics of the libraries
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Number of colonies</th>
+      <th>Reads mapped</th>
+      <th>Transposons mapped</th>
+      <th>Median read per transposon</th>
+      <th>Number of MiSeq runs</th>
+      <th>Overlap between MiSeq runs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type 1</td>
+      <td>~1.6×106</td>
+      <td>31794831</td>
+      <td>284162</td>
+      <td>22</td>
+      <td>2*</td>
+      <td>54%, 88%*</td>
+    </tr>
+    <tr>
+      <td>Wild-type 2</td>
+      <td>~2.4×106</td>
+      <td>15303285</td>
+      <td>258568</td>
+      <td>12</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>VPS13(D716H)</td>
+      <td>~4.7×106</td>
+      <td>24958456</td>
+      <td>414114</td>
+      <td>13</td>
+      <td>2†</td>
+      <td>41%, 42%†</td>
+    </tr>
+    <tr>
+      <td>Mmm1Δ VPS13(D716H)</td>
+      <td>~1.9×106</td>
+      <td>17799948</td>
+      <td>303323</td>
+      <td>12</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>dpl1Δ</td>
+      <td>~2.3×106</td>
+      <td>15077156</td>
+      <td>401126</td>
+      <td>8</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>dpl1Δ psd2Δ</td>
+      <td>~2.9×106</td>
+      <td>11649561</td>
+      <td>363179</td>
+      <td>9</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>YEN1on</td>
+      <td>~2.8×106</td>
+      <td>9517877</td>
+      <td>495125</td>
+      <td>6</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Wild-type 2 + rapamycin</td>
+      <td>~2.4×106</td>
+      <td>9664956</td>
+      <td>169322</td>
+      <td>9</td>
+      <td>1</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The harvested library was grown in two flasks, one at 30°C and the other at 37°C. DNA was extracted separately from the two cultures and sequenced in two separate MiSeq runs† The library was harvested as ten subpools, which were grown in ten separate flasks. DNA was extracted separately. In one case, DNA from all ten subpools was pooled and processed to sequencing in one MiSeq run. In the other case, DNAs were kept separate and processed until the PCR step (1 × 100 µl PCR by subpool). PCR products were pooled and sequenced as another MiSeq run._
+
+### Detection of transposon insertion sites
 
 Typically 7,000–10,000 colonies with a narrow size distribution (Figure 1—figure supplement 1) can be generated on a 8.4 cm-Ø petri dish. In the case of wild-type library 1, 240 plates yielded ~1.6E6 clones (Table 1). To detect transposon insertion sites, transposed cells were scraped off the 240 plates and pooled (Figure 1A). This pool was used to reinocculate SD medium lacking adenine (SD +Dextrose -Adenine), and the culture was grown to saturation. This step was used to dilute non-transposed ade- cells still present on the petri dishes. The culture was then harvested by centrifugation. Genomic DNA was extracted and digested with frequent-cutting restriction enzymes, followed by ligase-mediated intramolecular circularization. Circular DNA was PCR-amplified using transposon-specific outwards-facing primers. PCR products were then sequenced on a MiSeq machine (Figure 1A).
 
-## Analysis of transposon insertion sites
+### Analysis of transposon insertion sites
 
 We aligned the sequencing reads of the wild-type library (Table 1) to the reference yeast genome and counted the number of mapped transposons. To account for the fact that Illumina sequencing is imperfectly accurate, we considered that two reads of the same orientation mapping within two bp of each other originated from the same transposon (see Source code 1). In this analysis, 284,162 independent transposons could be mapped onto the genome, representing an average density of one transposon every 42 bp, and a median number of 22 reads per transposon. No large area of the genome was devoid of transposon (Figure 1B). Consistent with analyses in Maize (Vollbrecht et al., 2010), no strong sequence preference was detected in the insertion sites (Figure 1—figure supplement 2A).
 
 In many instances, though, insertion frequency was modulated along the genome with a periodicity of ~160 bp. Superimposing nucleosome occupancy data (Lee et al., 2007) showed that this was due to favored transposon insertion in inter-nucleosomal DNA (Figure 1—figure supplement 2B, Gangadharan et al., 2010). This effect can be appreciated at the genome-scale. Indeed, an autocorrelation analysis unraveled a ~160 bp periodic signal in the genome-wide transposon density (measured using a 40 bp moving average, Figure 1—figure supplement 2C). This periodicity was comparable to that of the nucleosomal density data (Lee et al., 2007). Finally, while no large region was devoid of transposon, some regions were actually preferentially targeted by transposons. These were the pericentromeric regions (Figure 1B, top), which were specifically enriched by ~20% of the transposon insertions (Figure 1—figure supplement 2D). The explanation for this phenomenon may pertain to nuclear architecture and to the propensity of our transposon to insert close to its excision site (Lazarow et al., 2012). Because the transposon is initially excised from a centromeric plasmid, and because centromeres cluster in the nuclear periphery (Jin et al., 2000), the transposon might tend to reinsert in the pericentromeric regions of other chromosomes. We confirmed this assumption by sequencing a small-scale library (~30 000 insertions mapped) in which the MiniDS transposon was originally at the endogenous ADE2 locus, rather than on a centromeric plasmid. In this library, preferential targeting was not observed at pericentromeric regions, but rather in the vicinity of ADE2, confirming our assumption (Figure 1B, bottom).
 
-## Identification of essential genes
+### Identification of essential genes
 
 The transposon map clearly showed that a fraction of the coding DNA sequences (CDS) were devoid of insertions. These coincided almost exactly with genes annotated as essential (Figure 1C, green arrowheads). The median number of transposons inserted in the CDSs of all genes was 18 per gene (Figure 1D). This number raised to 21 for annotated non-essential genes, but dropped to three for annotated essential genes (Figure 1E). This decrease was not due to a difference in the length between essential and non-essential genes, since normalizing the number of transposon insertions to the CDS length (transposon density) did not abrogate this effect (Figure 1—figure supplement 3). Thus our method distinguishes, in a single step, genes that are required for growth from those that are not.
 
 Several genes, although annotated as non-essential, harbored no or very few transposons (Supplementary file 2). This can be attributed to the following reasons. (1) Because sequencing reads mapping to repeated sequences were discarded during alignment, repeated genes appear as transposon-free. (2) Several annotated dubious ORFs overlap with essential genes, and thus appear as transposon-free. (3) Several genes are necessary for growth in particular conditions, and are therefore not annotated as essential, yet are required in our growth conditions (SD +galactose -adenine). These include genes involved, for instance, in galactose metabolism and adenine biosynthesis.
 
-## Identification of protein domains
+### Identification of protein domains
 
-It came as a surprise that some genes annotated as essential were tolerant to transposon insertion. While some of these clearly corresponded to annotation inconsistencies, many reflected an unanticipated outcome of our approach. We observed many instances of ‘essential’ CDSs containing transposon-permissive regions. A striking example is
+It came as a surprise that some genes annotated as essential were tolerant to transposon insertion. While some of these clearly corresponded to annotation inconsistencies, many reflected an unanticipated outcome of our approach. We observed many instances of ‘essential’ CDSs containing transposon-permissive regions. A striking example is GAL10 (Figure 2A). GAL10 encodes a bifunctional enzyme with an N-terminal epimerase, and a C-terminal mutarotase domain (Majumdar et al., 2004). While the epimerase activity is indispensable in our conditions, the mutarotase activity is dispensable, as cells were fed a mixture of α- and β-D-Galactose, thus not requiring the conversion of one into the other. In accordance, the 3’ end of GAL10 was permissive for transposon insertion. The junction between the permissive and non-permissive domains of GAL10 corresponds exactly to the junction of the two domains in the Gal10 protein. Several examples of essential genes with dispensable 3’-ends are shown in Figure 2A. We confirmed the dispensability of the 3' end for two genes, TAF3 and PRP45 (Figure 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-v2.jpg)
 
-**Figure 2.:** The grey level is proportional to the number of sequencing reads. Known functional domains are indicated. (A) Essential genes for which C-terminal truncations yield a viable phenotype. (B) Essential genes for which N-terminal truncations yield a viable phenotype. (C) Essential genes for which various truncations yield a viable phenotype.DOI: http://dx.doi.org/10.7554/eLife.23570.008
+**Figure 2.:** The grey level is proportional to the number of sequencing reads. Known functional domains are indicated. (A) Essential genes for which C-terminal truncations yield a viable phenotype. (B) Essential genes for which N-terminal truncations yield a viable phenotype. (C) Essential genes for which various truncations yield a viable phenotype.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Top, algorithm to detect essential protein domains. This algorithm is implemented in Source code 2. For each gene, a score is computed as follows: the longest interval between transposon n and transposon n + 5, multiplied by the total number of transposons mapping to that gene, divided by the gene length to the power of 1.5. A score of 0 is assigned to genes targeted by less than 20 transposons, in which the longest interval is smaller than 300 bp, and/or in which the longest interval represents more than 90% or less than 10% of the CDS length. Bottom, yeast genes sorted according to their domain likelihood score. Vertical black bars above the graph indicate previously annotated essential genes.DOI: http://dx.doi.org/10.7554/eLife.23570.009
+**Figure 2—figure supplement 1.:** Top, algorithm to detect essential protein domains. This algorithm is implemented in Source code 2. For each gene, a score is computed as follows: the longest interval between transposon n and transposon n + 5, multiplied by the total number of transposons mapping to that gene, divided by the gene length to the power of 1.5. A score of 0 is assigned to genes targeted by less than 20 transposons, in which the longest interval is smaller than 300 bp, and/or in which the longest interval represents more than 90% or less than 10% of the CDS length. Bottom, yeast genes sorted according to their domain likelihood score. Vertical black bars above the graph indicate previously annotated essential genes.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Grey scale indicates the number of sequencing reads as in Figure 2.DOI: http://dx.doi.org/10.7554/eLife.23570.010
+**Figure 2—figure supplement 2.:** Grey scale indicates the number of sequencing reads as in Figure 2.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.23570.011
-
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-figsupp4-v2.jpg)
-
-**Figure 2—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.23570.012
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** DOI: http://dx.doi.org/10.7554/eLife.23570.013
-
 ![Figure 3.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig3-v2.jpg)
 
-**Figure 3.:** TAF3 and PRP45 can be truncated without visible effects on cell growth.(A) A truncation of TAF3 was generated in a heterozygous diploid strain (left) by introduction of an HA tag and a G418-resistance cassette (HA kanr). The strain was tetrad dissected (middle). Tetrads 2 and 3 were further analyzed by PCR to confirm the Mendelian segregation of the truncated allele (right). (B) A complete TAF3 deletion was generated in a heterozygous diploid strain (left) by introduction of a G418-resistance cassette (kanr). Meiosis yields only two viable, G418-sensitive spores per tetrad, confirming that TAF3 complete deletion is lethal. (C–D) As in (A–B) but applied to PRP45. Asterisks in the right panel designate PCR reactions that were inefficient at amplifying the large truncated allele. The genotype of these spores can nevertheless be inferred from the Mendelian segregation of the G418 resistance. (E) Top, cryo-EM structure of the S. cerevisiae spliceosome (PDB accession 5GMK, Wan et al., 2016). Bottom, the same structure stripped of every protein except Prp45. The essential portion of Prp45 as defined in (C) is in green and the non-essential part is in red and yellow. U2, U6, U5 and substrate RNAs are depicted in pale blue, pink, dark blue and orange, respectively. The red circle indicates the catalytic active site of the spliceosome. (F) Alignment of the Human, S. cerevisiae, and S. pombe Prp45 orthologs. The green, red and yellow boxes are colored as in (E). The yellow box features the most conserved region of the protein.DOI: http://dx.doi.org/10.7554/eLife.23570.014
+**Figure 3.:** (A) A truncation of TAF3 was generated in a heterozygous diploid strain (left) by introduction of an HA tag and a G418-resistance cassette (HA kanr). The strain was tetrad dissected (middle). Tetrads 2 and 3 were further analyzed by PCR to confirm the Mendelian segregation of the truncated allele (right). (B) A complete TAF3 deletion was generated in a heterozygous diploid strain (left) by introduction of a G418-resistance cassette (kanr). Meiosis yields only two viable, G418-sensitive spores per tetrad, confirming that TAF3 complete deletion is lethal. (C–D) As in (A–B) but applied to PRP45. Asterisks in the right panel designate PCR reactions that were inefficient at amplifying the large truncated allele. The genotype of these spores can nevertheless be inferred from the Mendelian segregation of the G418 resistance. (E) Top, cryo-EM structure of the S. cerevisiae spliceosome (PDB accession 5GMK, Wan et al., 2016). Bottom, the same structure stripped of every protein except Prp45. The essential portion of Prp45 as defined in (C) is in green and the non-essential part is in red and yellow. U2, U6, U5 and substrate RNAs are depicted in pale blue, pink, dark blue and orange, respectively. The red circle indicates the catalytic active site of the spliceosome. (F) Alignment of the Human, S. cerevisiae, and S. pombe Prp45 orthologs. The green, red and yellow boxes are colored as in (E). The yellow box features the most conserved region of the protein.
 
 TAF3 encodes a 47 kDa central component of TFIID (Sanders et al., 2002). Our data show that only the first 76 amino acids are necessary for growth. Using homologous recombination, we replaced all but the sequence coding for the first 90 amino acids with an HA tag and a G418-resistance cassette (KanMX6) in a diploid strain. Sporulation and progeny segregation confirmed that strains expressing only the first 90 amino acids of Taf3 were viable (Figure 3A). By contrast, complete replacement of TAF3 gave rise to only two viable, G418-sensitive spores per meiosis, confirming that TAF3 is essential (Figure 3B). The essential region of Taf3 corresponds to a predicted histone-like bromo-associated domain (Doerks et al., 2002).
 
@@ -116,19 +204,21 @@ We devised an algorithm to score genes according to their likelihood of bearing 
 
 Thus, our method allows to identify not only genes, but also subdomains that are important for growth, yielding valuable structure-function information about their cognate proteins.
 
-## Comparison of independent libraries reveals genetic interactions
+### Comparison of independent libraries reveals genetic interactions
 
 Our approach can easily identify essential genes and essential protein domains. In addition, its ease makes it a potential tool to uncover genes that are not essential in standard conditions but become important in specific conditions. Indeed, our approach yields two measures — the number of transposons mapping to a given gene, and the corresponding numbers of sequencing reads. Since in most cases, transposon insertion obliterates the gene function, both measures may be used as a proxy for fitness. We assessed the usefulness of these metrics in various genetic screens.
 
 Synthetic genetic interaction screening is an extremely powerful approach to establish networks of functional connections between genes and biological pathways, and to discover new protein complexes (Costanzo et al., 2010; Schuldiner et al., 2005). We have recently identified single amino-acid substitutions in the endosomal protein Vps13 that suppress the growth defect of mutants of the ER-mitochondria encounter structure (ERMES) (Lang et al., 2015b). Suppression is dependent on the proper function of the mitochondrial protein Mcp1 (Tan et al., 2013) and on the endosomal protein Vam6/Vps39 (Elbaz-Alon et al., 2014; Hönscher et al., 2014). We generated a transposon library from a strain bearing both the VPS13 suppressor allele VPS13(D716H) and a deletion of the ERMES component MMM1. In these conditions, we expected VPS13, MCP1 and VAM6/VPS39 to become indispensable, while ERMES components (MDM10, MDM12 and MDM34) should become dispensable.
 
+Figure 4A shows, for each of the 6603 yeast CDSs, the number of transposon insertion sites mapped in the wild-type (x-axis) and in the mmm1Δ VPS13(D716H) library (y-axis). Most CDSs fall on a diagonal, meaning that they were equally transposon-tolerant in both libraries. Consistent with the ERMES suppressor phenotype of the VPS13(D716H) mutation, ERMES components fell above the diagonal (that is, they bore more transposons in the mmm1Δ VPS13(D716H) than in the wild-type library, Figure 4A–B). By contrast, VPS13, MCP1 and VAM6/VPS39 fell under the diagonal, as expected (Lang et al., 2015a, Figure 4A, C). Many other genes known to display synthetic sick or lethal interaction with mmm1Δ (Hoppins et al., 2011) were also found, including TOM70, VPS41, YPT7, VMS1 and YME1 (Figure 4A, C).
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig4-v2.jpg)
 
-**Figure 4.:** Libraries in panels B, C, E and G are displayed in the same order as in Figure 1C. (A) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the wild-type (x-axis) and mmm1Δ VPS13(D716H) (y-axis) libraries. (B) Transposon coverage of genes encoding ERMES components is increased in libraries from strains bearing the VPS13(D716H) allele. (C) Examples of genes showing synthetic sick/lethal interaction with mmm1Δ VPS13(D716H). (D) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the wild-type (x-axis) and dpl1Δ (y-axis) libraries. (E) Transposon coverage of the HIP1 locus in the dpl1Δ his3Δ library and in all the other libraries (HIS3). (F) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the dpl1Δ (x-axis) and dpl1Δ psd2Δ (y-axis) libraries. (G) Transposon coverage of the PSD1 locus in the dpl1Δ psd2Δ and in all other libraries.DOI: http://dx.doi.org/10.7554/eLife.23570.015
+**Figure 4.:** Libraries in panels B, C, E and G are displayed in the same order as in Figure 1C. (A) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the wild-type (x-axis) and mmm1Δ VPS13(D716H) (y-axis) libraries. (B) Transposon coverage of genes encoding ERMES components is increased in libraries from strains bearing the VPS13(D716H) allele. (C) Examples of genes showing synthetic sick/lethal interaction with mmm1Δ VPS13(D716H). (D) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the wild-type (x-axis) and dpl1Δ (y-axis) libraries. (E) Transposon coverage of the HIP1 locus in the dpl1Δ his3Δ library and in all the other libraries (HIS3). (F) Comparison of the number of transposons inserted in each of the 6603 yeast CDSs in the dpl1Δ (x-axis) and dpl1Δ psd2Δ (y-axis) libraries. (G) Transposon coverage of the PSD1 locus in the dpl1Δ psd2Δ and in all other libraries.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** The calculated fold-change in transposon density between the two sets of libraries is plotted in log2 scale on the x-axis. The -log10(p-value) (computed using the Student’s t-test) is plotted on the y-axis. (1)The VPS13(D716H) and the mmm1Δ VPS13(D716H) strains were generated in a MET17 background while all other libraries where generated in a met17Δ background. As a result MET17 and the overlapping ORF YLR302C appear as transposon free in the reference set. MET6 is more targeted by transposons in met17Δ libraries, likely because Met17 produces homocysteine, which needs to be converted to methionine by Met6, or might otherwise accumulate to toxic levels. (2)The VPS13(D716H) and mmm1Δ VPS13(D716H) strains were generated in a Matα background, while the others were generated in a Mata background. (3)YGR190C overlaps with HIP1. (4)GPP1 shows synthetic lethality with a recessive Mendelian variant present in the psd2Δ dpl1Δ strain. However, this variant is neither linked to DPL1 nor to PSD2 (data not shown). (5)ERMES component genes scores very high with respect to fold change, because two of the five libraries in the reference set bear the VPS13(D716H) allele. The p-value, by contrast, is not significant.DOI: http://dx.doi.org/10.7554/eLife.23570.016
+**Figure 4—figure supplement 1.:** The calculated fold-change in transposon density between the two sets of libraries is plotted in log2 scale on the x-axis. The -log10(p-value) (computed using the Student’s t-test) is plotted on the y-axis. (1)The VPS13(D716H) and the mmm1Δ VPS13(D716H) strains were generated in a MET17 background while all other libraries where generated in a met17Δ background. As a result MET17 and the overlapping ORF YLR302C appear as transposon free in the reference set. MET6 is more targeted by transposons in met17Δ libraries, likely because Met17 produces homocysteine, which needs to be converted to methionine by Met6, or might otherwise accumulate to toxic levels. (2)The VPS13(D716H) and mmm1Δ VPS13(D716H) strains were generated in a Matα background, while the others were generated in a Mata background. (3)YGR190C overlaps with HIP1. (4)GPP1 shows synthetic lethality with a recessive Mendelian variant present in the psd2Δ dpl1Δ strain. However, this variant is neither linked to DPL1 nor to PSD2 (data not shown). (5)ERMES component genes scores very high with respect to fold change, because two of the five libraries in the reference set bear the VPS13(D716H) allele. The p-value, by contrast, is not significant.
 
 As a second proof-of-principle, we generated a library from a strain in which the dihydrosphingosine phosphate lyase gene DPL1 (Saba et al., 1997) was deleted, and another library from a strain in which both DPL1 and the phosphatidylserine decarboxylase 2 gene PSD2 (Trotter and Voelker, 1995) were deleted (Figure 4D,F). In this latter double-deleted strain, phosphatidylethanolamine can only be generated via the mitochondrial phosphatidylserine decarboxylase Psd1, and thus any gene required for lipid shuttling to and from mitochondria should become indispensable (Birner et al., 2001).
 
@@ -138,11 +228,11 @@ Additionally, when comparing the dpl1Δ and wild-type libraries, one of the best
 
 Thus, synthetic genetic interactions are visible through pairwise comparison of the number of transposons per genes. However, this metrics leads to a significant spread of the diagonal (Figure 4A,D,F). This spread is due to the intrinsic noise of the experiment. Indeed, the number of transposons per gene is expected, for each gene, to follow a binomial distribution. Sampling variability may thus mask biologically relevant differences. To overcome this limitation, we reasoned that comparing sets of one or more libraries against each other, rather than comparing two libraries in a pairwise fashion (as in Figure 4), would greatly improve the signal-to-noise ratio. We thus calculated an average fold-change of the number of transposons per gene between the experimental and reference sets, as well as a p-value (based on a Student’s t-test) associated with this change. The fold-change and p-values were then plotted as a volcano plot (Figure 4—figure supplement 1, Supplementary file 3). In volcano plots, synthetic genes appeared well separated from the bulk of neutral genes, showing that parallel library comparison is a robust way to increase the signal-to-noise ratio.
 
-Synthetic lethality is one type of genetic interaction. Another type is rescue of lethal phenotype, where a gene deletion is lethal in an otherwise wild-type strain but can be rescued by a suppressor mutation. We describe two such phenomena observed in our libraries. The first concerns the septin gene
+Synthetic lethality is one type of genetic interaction. Another type is rescue of lethal phenotype, where a gene deletion is lethal in an otherwise wild-type strain but can be rescued by a suppressor mutation. We describe two such phenomena observed in our libraries. The first concerns the septin gene CDC10. Septin proteins are cytoskeletal GTPases that form a ring at the bud neck. This structure is necessary for vegetative growth in S. cerevisiae, and all septin genes are essential with the exception of CDC10 (Bertin et al., 2008; McMurray et al., 2011). Indeed, at low temperature, cdc10Δ cells are viable and able to assemble a septin ring. This Cdc10-less ring is based on a Cdc3-Cdc3 interaction, instead of the normal Cdc3-Cdc10 interaction (McMurray et al., 2011). Because the propensity of Cdc3 to self-assemble is weak, low temperature is thought to be necessary to stabilize the interaction. Since we grew all libraries at moderately high temperature (30°C), CDC10 was, as expected, essentially transposon-free in most libraries (Figure 5A). In the dpl1Δ psd2Δ library, however, the number of transposons mapping within CDC10 increased significantly, indicating that the absence of Psd2 and Dpl1 suppressed the cdc10Δ phenotype (Figure 5A, Figure 4—figure supplement 1, bottom left). Genetic analysis revealed that the dpl1Δ allele alone allowed cdc10Δ cells to grow at higher temperature, indicating that the Cdc10-less septin ring was stabilized in the absence of Dpl1 (Figure 5B–C). Genetic analysis also demonstrated that the rescue of cdc10Δ by dpl1Δ was independent of PSD2. It is unclear why the suppressive effect was detected in the dpl1Δ psd2Δ library, but not in the dpl1Δ library. We speculate that differences in growth conditions between experiments have obscured either the suppression in the dpl1Δ library or the involvement of Psd2 in our tetrad analyses.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig5-v2.jpg)
 
-**Figure 5.:** (A) Transposon coverage of CDC10 in the seven libraries. The coverage is increased in the dpl1Δ psd2Δ library. (B) Tetrad dissection of a PSD2/psd2Δ DPL1/dpl1Δ CDC10/cdc10Δ triple heterozygote at 30°C (left) and 25°C (right). The cdc10Δ spores of ascertained genotype are circled with a color-coded solid line. cdc10Δ spores for which the genotype can be inferred from the other spores of the tetrad are circled with a color-coded dashed line. (C) Quantification of growing and non-growing cdc10Δ spores of the indicated genotype obtained from 48 tetrads (three independent diploids). (D) Transposon coverage of DNA2 in the seven libraries. The coverage is increased in the YEN1 library. (onE) Tetrad dissection of a DNA2/dna2Δ YEN1/YEN1 single heterozygote and of a DNA2/dna2Δ YEN1/YEN1 double heterozygote at 30°C (left) and 25°C (right). All viable ondna2Δ spores additionally carry the YEN1 allele (red circle). (onF) FACS profile of propidium-iodide-stained DNA content in DNA2 and dna2Δ YEN1 strains exponentially growing at 30°C (left) and 25°C (right). For onDNA2 panels, each profile is an overlay of two independent strains. For dna2Δ YEN1 panels, each profile is an overlay of four independent strains.onDOI: http://dx.doi.org/10.7554/eLife.23570.017
+**Figure 5.:** (A) Transposon coverage of CDC10 in the seven libraries. The coverage is increased in the dpl1Δ psd2Δ library. (B) Tetrad dissection of a PSD2/psd2Δ DPL1/dpl1Δ CDC10/cdc10Δ triple heterozygote at 30°C (left) and 25°C (right). The cdc10Δ spores of ascertained genotype are circled with a color-coded solid line. cdc10Δ spores for which the genotype can be inferred from the other spores of the tetrad are circled with a color-coded dashed line. (C) Quantification of growing and non-growing cdc10Δ spores of the indicated genotype obtained from 48 tetrads (three independent diploids). (D) Transposon coverage of DNA2 in the seven libraries. The coverage is increased in the YEN1on library. (E) Tetrad dissection of a DNA2/dna2Δ YEN1/YEN1 single heterozygote and of a DNA2/dna2Δ YEN1/YEN1on double heterozygote at 30°C (left) and 25°C (right). All viable dna2Δ spores additionally carry the YEN1on allele (red circle). (F) FACS profile of propidium-iodide-stained DNA content in DNA2 and dna2Δ YEN1on strains exponentially growing at 30°C (left) and 25°C (right). For DNA2 panels, each profile is an overlay of two independent strains. For dna2Δ YEN1on panels, each profile is an overlay of four independent strains.
 
 Dpl1 is an ER protein that does not contact any of the septin subunits; its destabilizing effect on the septin ring must therefore be indirect. Since Dpl1 is a regulator of sphingolipid precursors (Saba et al., 1997) and since the septin ring assembles in contact with the plasma membrane (Bertin et al., 2010), it is most likely the changing properties of the membrane in DPL1-deficient cells that allow or restrict the assembly of Cdc10-less septin rings. This hypothesis is particularly appealing because temperature has a profound effect on membrane fluidity and composition (Ernst et al., 2016). Thus, the stabilizing effect of low temperature on Cdc10-less septin rings might not only be the result of a direct stabilization of Cdc3-Cdc3 interaction, but also of changes in plasma membrane properties, which can be mimicked by DPL1 ablation.
 
@@ -152,17 +242,17 @@ DNA2 encodes a large protein with both helicase and endonuclease activities (Bud
 
 Thus, our method can be used to screen for negative and positive genetic interactions in a rapid, labor-efficient and genome-wide manner, in strains bearing single and multiple mutations.
 
-## Chemical genetics approach
+### Chemical genetics approach
 
-To assess our method’s ability to uncover drug targets, we used the well-characterized immune-suppressive macrolide rapamycin. Rapamycin blocks cell proliferation by inhibiting the target of rapamycin complex I (TORC1), through binding to the Fk506-sensitive Proline Rotamase Fpr1 (
+To assess our method’s ability to uncover drug targets, we used the well-characterized immune-suppressive macrolide rapamycin. Rapamycin blocks cell proliferation by inhibiting the target of rapamycin complex I (TORC1), through binding to the Fk506-sensitive Proline Rotamase Fpr1 (Heitman et al., 1991). The TORC1 complex integrates nutrient-sensing pathways and regulates cellular growth accordingly. Rapamycin treatment therefore elicits a starvation response, which stops proliferation. We generated and harvested a wild-type library, then grew it in medium containing rapamycin at low concentration. To compare it to an untreated wild-type library, we counted the number of sequencing reads mapping to each of the 6603 yeast CDSs in both conditions (Figure 6A). Most genes fell on a diagonal, as they do not influence growth on rapamycin. By contrast, a few genes were robustly covered by sequencing reads in the rapamycin-treated library, indicating that their interruption conferred rapamycin resistance. Expectedly, the best hit was FPR1, encoding the receptor for rapamycin (Hall, 1996). Other hits included RRD1 (Rapamycin-Resistant Deletion 1), TIP41, GLN3, SAP190, PSP2, CCS1, ESL2 and members of the PP2A phosphatase PPH21 and PPM1 (Figure 6A). These genes are either directly involved in rapamycin signaling or known to confer rapamycin resistance upon deletion (Xie et al., 2005).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig6-v2.jpg)
 
-**Figure 6.:** (A) Comparison of the number of sequencing reads mapping to each of the 6603 yeast CDSs in rapamycin-untreated (x-axis) and -treated (y-axis) libraries. Note the difference in scale between both axis due to the high representation of rapamycin-resistant clones. (B) Distribution of transposons and number of associated sequencing reads on the PIB2 gene. Transposons with high number of sequencing reads in the rapamycin-treated library are clustered at the 5’-end of the CDS. (C) Wild-type (WT) and pib2Δ strains were transformed with either an empty plasmid (∅) or plasmids encoding full-length (FL) or indicated fragments of Pib2 (see E, numbers refer to the amino acid position in the full-length Pib2 protein). 5-fold serial dilutions of these strains were spotted on YPD or YPD containing 10 ng/ml rapamycin. Centromeric plasmids were used in all strains, except in those denoted with 2 µ, which carried multi-copy plasmids. (D) Strains of the indicated genotypes, transformed with either an empty plasmid (∅) or plasmids encoding full length (pPIB2) or truncated (pPIB2) versions of Pib2, were grown exponentially in minimal medium with proline as nitrogen source. 3 mM glutamine was added to the culture and the cells were harvested 2 min later. Protein extracts were resolved on an SDS-page and probed with antibodies either specific for Sch9-pThr165-635737 (P-Sch9), or for total Sch9 to assess TORC1 activity. (E) Schematic overview of Pib2 architecture and of the fragments used for genetic studies. (F) Summary of yeast-two-hybrid interactions between Pib2 fragments and the TORC1 subunit Kog1 (Figure 6—figure supplement 1). Fragments indicated by a black box interacted with Kog1, fragments indicated by a white box did not. (G) pib2Δ cells expressing the indicated Pib2 fragments from plasmids (see E) were assayed for their sensitivity to rapamycin (2.5 or 5 ng/ml) as in C. (H) WT or pib2Δ cells expressing the indicated Pib2 fragments from plasmids were assayed as in G, except that cells were spotted on synthetic medium to apply a selective pressure for plasmid maintenance.DOI: http://dx.doi.org/10.7554/eLife.23570.018
+**Figure 6.:** (A) Comparison of the number of sequencing reads mapping to each of the 6603 yeast CDSs in rapamycin-untreated (x-axis) and -treated (y-axis) libraries. Note the difference in scale between both axis due to the high representation of rapamycin-resistant clones. (B) Distribution of transposons and number of associated sequencing reads on the PIB2 gene. Transposons with high number of sequencing reads in the rapamycin-treated library are clustered at the 5’-end of the CDS. (C) Wild-type (WT) and pib2Δ strains were transformed with either an empty plasmid (∅) or plasmids encoding full-length (FL) or indicated fragments of Pib2 (see E, numbers refer to the amino acid position in the full-length Pib2 protein). 5-fold serial dilutions of these strains were spotted on YPD or YPD containing 10 ng/ml rapamycin. Centromeric plasmids were used in all strains, except in those denoted with 2 µ, which carried multi-copy plasmids. (D) Strains of the indicated genotypes, transformed with either an empty plasmid (∅) or plasmids encoding full length (pPIB2) or truncated (pPIB2165-635) versions of Pib2, were grown exponentially in minimal medium with proline as nitrogen source. 3 mM glutamine was added to the culture and the cells were harvested 2 min later. Protein extracts were resolved on an SDS-page and probed with antibodies either specific for Sch9-pThr737 (P-Sch9), or for total Sch9 to assess TORC1 activity. (E) Schematic overview of Pib2 architecture and of the fragments used for genetic studies. (F) Summary of yeast-two-hybrid interactions between Pib2 fragments and the TORC1 subunit Kog1 (Figure 6—figure supplement 1). Fragments indicated by a black box interacted with Kog1, fragments indicated by a white box did not. (G) pib2Δ cells expressing the indicated Pib2 fragments from plasmids (see E) were assayed for their sensitivity to rapamycin (2.5 or 5 ng/ml) as in C. (H) WT or pib2Δ cells expressing the indicated Pib2 fragments from plasmids were assayed as in G, except that cells were spotted on synthetic medium to apply a selective pressure for plasmid maintenance.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/23570/elife-23570-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** A) Transposon coverage of the PIB2 gene.Top row is the rapamycin-treated library and rows below are presented as in Figures 2–5. The gray scale has been adjusted to account for the large number of sequencing reads mapping in the 5’ region of the gene. (B) Yeast-two-hybrid assay assessing the interaction of the indicated Pib2 fragments encoded on the pCAB plasmid, with full-length Kog1 encoded on the pPR3N plasmid. (C) gtr1Δ gtr2Δ cells expressing indicated, plasmid-encoded Pib2 fragments (see Figure 6E) were assayed for their sensitivity to rapamycin. Note that expressing Pib2Δ533-620 in gtr1Δ gtr2Δ cells appears to inhibit growth even in the absence of rapamycin. (D) gtr1Δ gtr2Δ cells, transformed with centromeric plasmids expressing Pib2 fragments (see Figure 6E) and alleles of Gtr1 and Gtr2 as indicated, were assayed for their sensitivity to rapamycin.DOI: http://dx.doi.org/10.7554/eLife.23570.019
+**Figure 6—figure supplement 1.:** Top row is the rapamycin-treated library and rows below are presented as in Figures 2–5. The gray scale has been adjusted to account for the large number of sequencing reads mapping in the 5’ region of the gene. (B) Yeast-two-hybrid assay assessing the interaction of the indicated Pib2 fragments encoded on the pCAB plasmid, with full-length Kog1 encoded on the pPR3N plasmid. (C) gtr1Δ gtr2Δ cells expressing indicated, plasmid-encoded Pib2 fragments (see Figure 6E) were assayed for their sensitivity to rapamycin. Note that expressing Pib2Δ533-620 in gtr1Δ gtr2Δ cells appears to inhibit growth even in the absence of rapamycin. (D) gtr1Δ gtr2Δ cells, transformed with centromeric plasmids expressing Pib2 fragments (see Figure 6E) and alleles of Gtr1 and Gtr2 as indicated, were assayed for their sensitivity to rapamycin.
 
 Finding the TORC1 regulator PIB2 (Kim and Cunningham, 2015) was however unexpected, because PIB2 deletion confers sensitivity, not resistance, to rapamycin (Kim and Cunningham, 2015; Parsons et al., 2004). To solve this conundrum, we looked at the distribution of transposons on the PIB2 coding sequence. All the insertions selected by rapamycin treatment mapped to the 5’-end of the gene (Figure 6B). On the contrary, the rest of PIB2 was less covered in the rapamycin-treated than in non-rapamycin-treated libraries (Figure 6—figure supplement 1A). Insertions in the 5’ end of PIB2 therefore conferred rapamycin resistance, while insertions elsewhere, like complete deletion of PIB2, conferred rapamycin sensitivity.
 
@@ -210,27 +300,814 @@ The Ds transposon can in principle accommodate extra sequences with no known len
 
 ## Materials and methods
 
-## Plasmids and strains
+### Plasmids and strains
 
-All yeast strains, oligonucleotides and plasmids used herein are listed in Tables 2, 3 and 4, respectively. To generate pBK257, the ADE2 gene interrupted with the MiniDs transposon was PCR amplified from strain CWY1 (Weil and Kunze, 2000), using PCR primers #4 and #5. The PCR product and pWL80R_4x (plasmid encoding the Ac transposase under the control of the GAL1 promoter, Lazarow et al., 2012) were digested with SacI, then ligated together. This plasmid does not confer adenine prototrophy to ade2Δ cells unless the Ac transposase excises the MiniDS transposon, and repairs the ADE2 gene.10.7554/eLife.23570.020Table 2.Yeast strains used in this study.DOI: http://dx.doi.org/10.7554/eLife.23570.020NameParentGenotypeReference CWY1BY4723MATa his3Δ0 ura3Δ0 ade2:Ds-1Weil and Kunze (2000) ByK157BY4743MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 VPS13(D716H)Lang et al. (2015b) ByK352BY4741MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3*This study ByK484By4742MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 ade2Δ::HIS3*This study ByK485ByK352 and ByK484MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3*This study ByK446ByK157MATα his3Δ1 leu2Δ0 ura3Δ0 ade2Δ::HIS3* VPS13(D716H)This study ByK528ByK446MATα his3Δ1 leu2Δ0 ura3Δ0 ade2Δ::HIS3* VPS13(D716H) mmm1Δ::KanMX6This study ByK530ByK352MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::NAT* dpl1Δ::KanMX6This study ByK533ByK352 MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3* psd2Δ::KanMX6 dpl1Δ::NATThis study ByK576ByK485MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* prp45Δ::KanMX6/PRP45This study ByK579ByK485MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* PRP451-462-HA(KanMX6)/ PRP45This study ByK583ByK485MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* taf3Δ::KanMX6/TAF3This study ByK588ByK485MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* TAF31-270-HA(KanMX6)/ TAF3This study ByK725ByK533 and ByK484MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1This study ByK726ByK533 and ByK484MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1This study ByK739ByK725MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10This study ByK740ByK726MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10This study ByK741ByK726MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10This study YJM3916ByK352MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3* YEN1onThis study YL516BY4741/BY4742MATa his3Δ1 leu2Δ0 ura3Δ0Binda et al. (2009) MB32YL516MATa his3Δ1 leu2Δ0 ura3Δ0 gtr1Δ::kanMXBinda et al. (2009) RKH106YL516MATa his3Δ1 leu2Δ0 ura3Δ0 pib2Δ::kanMXThis study RKH241MB32MATa his3Δ1 leu2Δ0 ura3Δ0 gtr1Δ::kanMX gtr2Δ::hphMX4This study NMY51his3∆200 trp1-901 leu2-3,112 ade2 LYS::(lexAop)4-HIS3 ura3::(lexAop)8- lacZ ade2::(lexAop)8-ADE2 GAL4Dualsystems Biotech AG*ADE2 deleted −56 before ATG +62 after STOP with PCR primers #6 and #7 on pFA6a-His3MX6.10.7554/eLife.23570.021Table 3.Oligonucleotides used in this study.DOI: http://dx.doi.org/10.7554/eLife.23570.021#Original nameSequencePurpose1P5_MiniDsAATGATACGGCGACCACCGAGATCTACtccgtcccgcaagttaaataamplify library2MiniDs_P7CAAGCAGAAGACGGCATACGAGATacgaaaacgaacgggataaaamplify library3688_minidsSEQ1210tttaccgaccgttaccgaccgttttcatccctasequence library4ADE2FwdGGTTCGAGCTCCCTTTTGATGCGGAATTGACclone ADE2 MiniDS5ADE2RevGACCTGAGCTCTTACTGGATATGTATGTATGclone ADE2 MiniDS6Ade2PriFwdGTATAAATTGGTGCGTAAAATCGTTGGATCTCTCTTCTAAcggatccccgggttaattaadelete ADE27Ade2PriRevTATGTATGAAGTCCACATTTGATGTAATCATAACAAAGCCgaattcgagctcgtttaaacdelete ADE28Dpl1_Janke_S1AGCAAGTAGGCTAGCTTCTGTAAAGGGATTTTTCCATCTAATACAcgtacgctgcaggtcgacdelete DPL19Dpl1_Janke_S2GCACTCTCGTTCTTTAAATTATGTATGAGATTTGATTCTATATAGatcgatgaattcgagctcgdelete DPL110Psd2_pringle_FGATGCTGTATCAATTGGTAAAGAATCCTCGATTTTCAGGAGCATCCAACGcgtacgctgcaggtcgacdelete PSD211Psd2_pringle_RCTTGTTTGTACACGCTATAGTCTATAATAAAGTCTGAGGGAGATTGTTCATGatcgatgaattcgagctcgdelete PSD212TAF3_R1TGGATGAGATAATGACGAAAGAAAATGCAGAAATGTCGTTgaattcgagctcgtttaaacTAF3 partial deletion13TAF3_aa90_F2AGGTATTGTTAAGCCTACGAACGTTCTGGATGTCTATGATcggatccccgggttaattaaTAF3 partial deletion14Taf3_FwdGGCAAGATGTGATCAGGACGcheck TAF3 partial deletion15Taf3_RevTCTTGAAGAAGCGAAAGTACACTcheck TAF3 partial deletion16TAF3_R1TGGATGAGATAATGACGAAAGAAAATGCAGAAATGTCGTTgaattcgagctcgtttaaacTAF3 complete deletion17TAF3_aa1_ F1GAAAACAGCGATATCTTTGGGTCAATAGAGTTCCTCTGCTtgaggcgcgccacttctaaaTAF3 complete deletion18PRP45_R1ACTCAAGCACAAGAATGCTTTGTTTTCCTAGTGCTCATCCTGGGCgaattcgagctcgtttaaacPRP45 partial deletion19PRP45_aa154_F2AACGACGAAGTCGTGCCTGTTCTCCATATGGATGGCAGCAATGATcggatccccgggttaattaaPRP45 partial deletion20PRP45_FwdAGGTTGTAGCACCCACAGAAcheck PRP45 partial deletion21PRP45_RevCAATCATCACACCTCAGCGAcheck PRP45 partial deletion22PRP45_R1ACTCAAGCACAAGAATGCTTTGTTTTCCTAGTGCTCATCCTGGGCgaattcgagctcgtttaaacPRP45 complete deletion23PRP45_aa1_F1GCTCTGAGCCGAGAGGACGTATCAGCAACCTCAACCAAATtgaggcgcgccacttctaaaPRP45 complete deletion24CDC10-Ura3_fwdAAGGCCAAGCCCCACGGTTACTACAAGCACTCTATAAATATATTAtgacggtgaaaacctctgacCDC10 complete deletion25URA3-CDC10_revTTCTTAATAACATAAGATATATAATCACCACCATTCTTATGAGATtcctgatgcggtattttctccCDC10 complete deletion26OJM370ATGGGTGTCTCACAAATATGGGAmplify YEN127OJM371TTCAATAGTGCTACTGCTATCACAmplify YEN128OJM372TTCAATAGTGCTACTGCTATCACTGTCACAGGCTCAAACCGGTCGACTG TTCGTACGCTGCAGGTCGACDelitto perfetto on YEN129OJM373ATGGGTGTCTCACAAATATGGGAATTTTTGAAGCCATATCTGCAAGATTCCCGCGCGTTGGCCGATTCATDelitto perfetto on YEN130o3958gacggtatcgataagcttgatatcgGCGCTGGCATCTTTAATCTCPIB2 cloning31o3959actagtggatcccccgggctgcaggTGCTTGGATCCTTCTTGGTCPIB2 cloning32o3224TAATA CGACT CACTA TAGGGvarious PIB2 truncations33o3225ATTAA CCCTC ACTAA AGGGA Avarious PIB2 truncations34o4034atctagttcagggttcgacattctggtctccactacPIB2165-635 truncation35o4010gtagtggagaccagaatgtcgaaccctgaactagatPIB2165-635 truncation36o4012tagtggagaccagaatgttaccgcagcctgctPIB2304-635 truncation37o4035tcaaattagaactagcattcattctggtctccactacaactgtgPIB2221-635 truncation38o4011cacagttgtagtggagaccagaatgaatgctagttctaatttgaPIB2221-635 truncation39o4062atagttggtattaagttgattctcattctggtctccactacaactgPIB2426-635 truncation40o3996cagttgtagtggagaccagaatgagaatcaacttaataccaactatPIB2426-635 truncation41o4063cgtgtttgcgttatggttgtcgctgttcggaatagaPIB2Δ426-532 truncation42o3997tctattccgaacagcgacaaccataacgcaaacacgPIB2Δ426-532 truncation43o4064cacagagccgataacactcgtggttgaaaggttctcPIB2Δ533-620 truncation44o3998gagaacctttcaaccacgagtgttatcggctctgtgPIB2Δ533-620 truncation45o4065gtctcgcaaaaaatgttcatcagcccaaaacatcattaccttctPIB21-620 truncation46o3999agaaggtaatgatgttttgggctgatgaacattttttgcgagacPIB21-620 truncation47o1440GCTAGAGCGGCCATTACGGCCCCGGAGATTTATGGACCTCKOG1 cloning into pPR3N48o1442CGATCTCGGGCCGAGGCGGCCTCAAAAATAATCAATTCTCTCGTCKOG1 cloning into pPR3N49o3787GCTAGAGCGGCCATTACGGCC GAATTGTACAAATCTAGAACTAGTcloning PIB2 fragments into pCabWT*50o3788CGATCTCGGGCCGAGGCGGCCAA GAAACTACTCCAATTCCAGTTTGCcloning PIB2 fragments into pCabWT*51o3872CGATCTCGGGCCGAGGCGGCCAAGCCCAAAACATCATTACCTTCTTCTcloning PIB2 fragments into pCabWT*52o3871CGATCTCGGGCCGAGGCGGCCAAATCTTCGCCCTCCTCAACGTcloning PIB2 fragments into pCabWT*53o3870CGATCTCGGGCCGAGGCGGCCAAGTTGATTCTGTCGCTGTTCGcloning PIB2 fragments into pCabWT*54o3933GCTAGAGCGGCCATTACGGCCAGGAAGAAATTACGCAATTACTACcloning PIB2 fragments into pCabWT*55o3934GCTAGAGCGGCCATTACGGCC AGTGTTATCGGCTCTGTGCCcloning PIB2 fragments into pCabWT*56o3868CGATCTCGGGCCGAGGCGGCCAAATTAGTGCTCGAAGCAGGCTcloning PIB2 fragments into pCabWT*57o3867CGATCTCGGGCCGAGGCGGCCAAGTCATCCGTGAATGGCAACGcloning PIB2 fragments into pCabWT*58o3866CGATCTCGGGCCGAGGCGGCCAAGCCTGCCCCTGTTGAGCTCTcloning PIB2 fragments into pCabWT*59o3865CGATCTCGGGCCGAGGCGGCCAAGTCAGCACCGCTTTCCTCATcloning PIB2 fragments into pCabWT*Oligonucleotides #1 and #2, ordered as PAGE-purified and lyophilized, are resuspended at 100 μM in water. Oligonucleotide #3, ordered as HPLC-purified and lyophilized, is resuspended at 100 μM in water and distributed into single-use aliquots.10.7554/eLife.23570.022Table 4.Plasmids used in this study.DOI: http://dx.doi.org/10.7554/eLife.23570.022NameParentDescriptionReference pBK257pWL80R_4xCEN/URA3, carries MiniDs in ADE2 and hyperactive Ac transposase under GAL1 promoterThis study pWL80R_4xCEN/URA3, carries hyperactive Ac transposase under GAL1 promoterLazarow et al. (2012) pCORE-UHDelitto pefetto URA3 cassetteStorici and Resnick (2003) pJM7pENTRY-YEN1ONThis study pRS413CEN/HIS3, empty vectorSikorski and Hieter, 1989 pRS415CEN/LEU2, empty vectorSikorski and Hieter, 1989 pRS416CEN/URA3, empty vectorSikorski and Hieter, 1989 p1822pRS413CEN/HIS3, GTR1This study p1451pRS415CEN/LEU2, GTR2This study p1821pRS413CEN/HIS3, GTR1Q65LThis study p1452pRS415CEN/LEU2, GTR2S23LThis study p3084pRS416CEN/URA3, PIB2This study p3099p3084CEN/URA3, PIB2165-635This study p3097p3084CEN/URA3, PIB2304-635This study p3101p3084CEN/URA3, PIB2221-635This study p3253pRS4262 μ/URA3, PIB2This study p3255pRS4262 μ/URA3, PIB2165-635This study p3163p3084CEN/URA3, PIB2426-635This study p3153p3084CEN/URA3, PIB2Δ426-532This study p3154p3084CEN/URA3, PIB2Δ533-620This study p3156p3084CEN/URA3, PIB21-620This study pPR3N2 μ/TRP1, NubG-HADualsystems Biotech AG pCabWTCEN/LEU2, Aβ-Cub-LexA-VP16Dualsystems Biotech AG p3081pPR3N2 μ/TRP1, NubG-HA-KOG1This study p2966pCabWTCEN/LEU2, Aβ-PIB2-Cub-LexA-VP16This study p3002pCabWTCEN/LEU2, Aβ-PIB21-620-Cub-LexA-VP16This study p3007pCabWTCEN/LEU2, Aβ-PIB21-550-Cub-LexA-VP16This study p3001pCabWTCEN/LEU2, Aβ-PIB21-428-Cub-LexA-VP16This study p3051pCabWTCEN/LEU2, Aβ-PIB2440-550-Cub-LexA-VP16This study p3054pCabWTCEN/LEU2, Aβ-PIB2556-620-Cub-LexA-VP16This study p3052pCabWTCEN/LEU2, Aβ-PIB2621-635-Cub-LexA-VP16This study p3000pCabWTCEN/LEU2, Aβ-PIB21-312-Cub-LexA-VP16This study p2987pCabWTCEN/LEU2, Aβ-PIB2304-635-Cub-LexA-VP16This study p2999pCabWTCEN/LEU2, Aβ-PIB21-162-Cub-LexA-VP16This study p2986pCabWTCEN/LEU2, Aβ-PIB2165-635-Cub-LexA-VP16This study p2998pCabWTCEN/LEU2, Aβ-PIB21-101-Cub-LexA-VP16This study p2991pCabWTCEN/LEU2, Aβ-PIB2102-635-Cub-LexA-VP16This study p2997pCabWTCEN/LEU2, Aβ-PIB21-49-Cub-LexA-VP16This study p2990pCabWTCEN/LEU2, Aβ-PIB250-635-Cub-LexA-VP16This study
+All yeast strains, oligonucleotides and plasmids used herein are listed in Tables 2, 3 and 4, respectively. To generate pBK257, the ADE2 gene interrupted with the MiniDs transposon was PCR amplified from strain CWY1 (Weil and Kunze, 2000), using PCR primers #4 and #5. The PCR product and pWL80R_4x (plasmid encoding the Ac transposase under the control of the GAL1 promoter, Lazarow et al., 2012) were digested with SacI, then ligated together. This plasmid does not confer adenine prototrophy to ade2Δ cells unless the Ac transposase excises the MiniDS transposon, and repairs the ADE2 gene.
+
+**Table 2.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Parent</th>
+      <th>Genotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CWY1</td>
+      <td>BY4723</td>
+      <td>MATa his3Δ0 ura3Δ0 ade2:Ds-1</td>
+      <td>Weil and Kunze (2000)</td>
+    </tr>
+    <tr>
+      <td>ByK157</td>
+      <td>BY4743</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 VPS13(D716H)</td>
+      <td>Lang et al. (2015b)</td>
+    </tr>
+    <tr>
+      <td>ByK352</td>
+      <td>BY4741</td>
+      <td>MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3*</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK484</td>
+      <td>By4742</td>
+      <td>MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 ade2Δ::HIS3*</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK485</td>
+      <td>ByK352 and ByK484</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3*</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK446</td>
+      <td>ByK157</td>
+      <td>MATα his3Δ1 leu2Δ0 ura3Δ0 ade2Δ::HIS3* VPS13(D716H)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK528</td>
+      <td>ByK446</td>
+      <td>MATα his3Δ1 leu2Δ0 ura3Δ0 ade2Δ::HIS3* VPS13(D716H) mmm1Δ::KanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK530</td>
+      <td>ByK352</td>
+      <td>MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::NAT* dpl1Δ::KanMX6</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK533</td>
+      <td>ByK352</td>
+      <td>MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3* psd2Δ::KanMX6 dpl1Δ::NAT</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK576</td>
+      <td>ByK485</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* prp45Δ::KanMX6/PRP45</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK579</td>
+      <td>ByK485</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* PRP451-462-HA(KanMX6)/ PRP45</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK583</td>
+      <td>ByK485</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* taf3Δ::KanMX6/TAF3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK588</td>
+      <td>ByK485</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* TAF31-270-HA(KanMX6)/ TAF3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK725</td>
+      <td>ByK533 and ByK484</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK726</td>
+      <td>ByK533 and ByK484</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK739</td>
+      <td>ByK725</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK740</td>
+      <td>ByK726</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ByK741</td>
+      <td>ByK726</td>
+      <td>MATa/α his3Δ1/his3Δ1 leu2Δ0/leu2Δ0 LYS2/lys2Δ0 met17Δ0/MET17 ura3Δ0/ura3Δ0 ade2Δ::HIS3*/ade2Δ::HIS3* psd2Δ::KanMX6/PSD2 dpl1Δ::NAT /DPL1 cdc10Δ::URA3/CDC10</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YJM3916</td>
+      <td>ByK352</td>
+      <td>MATa his3Δ1 leu2Δ0 met17Δ0 ura3Δ0 ade2Δ::HIS3* YEN1on</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YL516</td>
+      <td>BY4741/BY4742</td>
+      <td>MATa his3Δ1 leu2Δ0 ura3Δ0</td>
+      <td>Binda et al. (2009)</td>
+    </tr>
+    <tr>
+      <td>MB32</td>
+      <td>YL516</td>
+      <td>MATa his3Δ1 leu2Δ0 ura3Δ0 gtr1Δ::kanMX</td>
+      <td>Binda et al. (2009)</td>
+    </tr>
+    <tr>
+      <td>RKH106</td>
+      <td>YL516</td>
+      <td>MATa his3Δ1 leu2Δ0 ura3Δ0 pib2Δ::kanMX</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RKH241</td>
+      <td>MB32</td>
+      <td>MATa his3Δ1 leu2Δ0 ura3Δ0 gtr1Δ::kanMX gtr2Δ::hphMX4</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>NMY51</td>
+      <td></td>
+      <td>his3∆200 trp1-901 leu2-3,112 ade2 LYS::(lexAop)4-HIS3 ura3::(lexAop)8- lacZ ade2::(lexAop)8-ADE2 GAL4</td>
+      <td>Dualsystems Biotech AG</td>
+    </tr>
+  </tbody>
+</table>
+
+_*ADE2 deleted −56 before ATG +62 after STOP with PCR primers #6 and #7 on pFA6a-His3MX6._
+
+**Table 3.**
+ Oligonucleotides used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Original name</th>
+      <th>Sequence</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>P5_MiniDs</td>
+      <td>AATGATACGGCGACCACCGAGATCTACtccgtcccgcaagttaaata</td>
+      <td>amplify library</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MiniDs_P7</td>
+      <td>CAAGCAGAAGACGGCATACGAGATacgaaaacgaacgggataaa</td>
+      <td>amplify library</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>688_minidsSEQ1210</td>
+      <td>tttaccgaccgttaccgaccgttttcatcccta</td>
+      <td>sequence library</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ADE2Fwd</td>
+      <td>GGTTCGAGCTCCCTTTTGATGCGGAATTGAC</td>
+      <td>clone ADE2 MiniDS</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ADE2Rev</td>
+      <td>GACCTGAGCTCTTACTGGATATGTATGTATG</td>
+      <td>clone ADE2 MiniDS</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ade2PriFwd</td>
+      <td>GTATAAATTGGTGCGTAAAATCGTTGGATCTCTCTTCTAAcggatccccgggttaattaa</td>
+      <td>delete ADE2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Ade2PriRev</td>
+      <td>TATGTATGAAGTCCACATTTGATGTAATCATAACAAAGCCgaattcgagctcgtttaaac</td>
+      <td>delete ADE2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Dpl1_Janke_S1</td>
+      <td>AGCAAGTAGGCTAGCTTCTGTAAAGGGATTTTTCCATCTAATACAcgtacgctgcaggtcgac</td>
+      <td>delete DPL1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Dpl1_Janke_S2</td>
+      <td>GCACTCTCGTTCTTTAAATTATGTATGAGATTTGATTCTATATAGatcgatgaattcgagctcg</td>
+      <td>delete DPL1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Psd2_pringle_F</td>
+      <td>GATGCTGTATCAATTGGTAAAGAATCCTCGATTTTCAGGAGCATCCAACGcgtacgctgcaggtcgac</td>
+      <td>delete PSD2</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Psd2_pringle_R</td>
+      <td>CTTGTTTGTACACGCTATAGTCTATAATAAAGTCTGAGGGAGATTGTTCATGatcgatgaattcgagctcg</td>
+      <td>delete PSD2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>TAF3_R1</td>
+      <td>TGGATGAGATAATGACGAAAGAAAATGCAGAAATGTCGTTgaattcgagctcgtttaaac</td>
+      <td>TAF3 partial deletion</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>TAF3_aa90_F2</td>
+      <td>AGGTATTGTTAAGCCTACGAACGTTCTGGATGTCTATGATcggatccccgggttaattaa</td>
+      <td>TAF3 partial deletion</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Taf3_Fwd</td>
+      <td>GGCAAGATGTGATCAGGACG</td>
+      <td>check TAF3 partial deletion</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Taf3_Rev</td>
+      <td>TCTTGAAGAAGCGAAAGTACACT</td>
+      <td>check TAF3 partial deletion</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>TAF3_R1</td>
+      <td>TGGATGAGATAATGACGAAAGAAAATGCAGAAATGTCGTTgaattcgagctcgtttaaac</td>
+      <td>TAF3 complete deletion</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>TAF3_aa1_ F1</td>
+      <td>GAAAACAGCGATATCTTTGGGTCAATAGAGTTCCTCTGCTtgaggcgcgccacttctaaa</td>
+      <td>TAF3 complete deletion</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>PRP45_R1</td>
+      <td>ACTCAAGCACAAGAATGCTTTGTTTTCCTAGTGCTCATCCTGGGCgaattcgagctcgtttaaac</td>
+      <td>PRP45 partial deletion</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>PRP45_aa154_F2</td>
+      <td>AACGACGAAGTCGTGCCTGTTCTCCATATGGATGGCAGCAATGATcggatccccgggttaattaa</td>
+      <td>PRP45 partial deletion</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>PRP45_Fwd</td>
+      <td>AGGTTGTAGCACCCACAGAA</td>
+      <td>check PRP45 partial deletion</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>PRP45_Rev</td>
+      <td>CAATCATCACACCTCAGCGA</td>
+      <td>check PRP45 partial deletion</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>PRP45_R1</td>
+      <td>ACTCAAGCACAAGAATGCTTTGTTTTCCTAGTGCTCATCCTGGGCgaattcgagctcgtttaaac</td>
+      <td>PRP45 complete deletion</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>PRP45_aa1_F1</td>
+      <td>GCTCTGAGCCGAGAGGACGTATCAGCAACCTCAACCAAATtgaggcgcgccacttctaaa</td>
+      <td>PRP45 complete deletion</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>CDC10-Ura3_fwd</td>
+      <td>AAGGCCAAGCCCCACGGTTACTACAAGCACTCTATAAATATATTAtgacggtgaaaacctctgac</td>
+      <td>CDC10 complete deletion</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>URA3-CDC10_rev</td>
+      <td>TTCTTAATAACATAAGATATATAATCACCACCATTCTTATGAGATtcctgatgcggtattttctcc</td>
+      <td>CDC10 complete deletion</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>OJM370</td>
+      <td>ATGGGTGTCTCACAAATATGGG</td>
+      <td>Amplify YEN1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>OJM371</td>
+      <td>TTCAATAGTGCTACTGCTATCAC</td>
+      <td>Amplify YEN1</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>OJM372</td>
+      <td>TTCAATAGTGCTACTGCTATCACTGTCACAGGCTCAAACCGGTCGACTG TTCGTACGCTGCAGGTCGAC</td>
+      <td>Delitto perfetto on YEN1</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>OJM373</td>
+      <td>ATGGGTGTCTCACAAATATGGGAATTTTTGAAGCCATATCTGCAAGATTCCCGCGCGTTGGCCGATTCAT</td>
+      <td>Delitto perfetto on YEN1</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>o3958</td>
+      <td>gacggtatcgataagcttgatatcgGCGCTGGCATCTTTAATCTC</td>
+      <td>PIB2 cloning</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>o3959</td>
+      <td>actagtggatcccccgggctgcaggTGCTTGGATCCTTCTTGGTC</td>
+      <td>PIB2 cloning</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>o3224</td>
+      <td>TAATA CGACT CACTA TAGGG</td>
+      <td>various PIB2 truncations</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>o3225</td>
+      <td>ATTAA CCCTC ACTAA AGGGA A</td>
+      <td>various PIB2 truncations</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>o4034</td>
+      <td>atctagttcagggttcgacattctggtctccactac</td>
+      <td>PIB2165-635 truncation</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>o4010</td>
+      <td>gtagtggagaccagaatgtcgaaccctgaactagat</td>
+      <td>PIB2165-635 truncation</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>o4012</td>
+      <td>tagtggagaccagaatgttaccgcagcctgct</td>
+      <td>PIB2304-635 truncation</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>o4035</td>
+      <td>tcaaattagaactagcattcattctggtctccactacaactgtg</td>
+      <td>PIB2221-635 truncation</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>o4011</td>
+      <td>cacagttgtagtggagaccagaatgaatgctagttctaatttga</td>
+      <td>PIB2221-635 truncation</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>o4062</td>
+      <td>atagttggtattaagttgattctcattctggtctccactacaactg</td>
+      <td>PIB2426-635 truncation</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>o3996</td>
+      <td>cagttgtagtggagaccagaatgagaatcaacttaataccaactat</td>
+      <td>PIB2426-635 truncation</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>o4063</td>
+      <td>cgtgtttgcgttatggttgtcgctgttcggaataga</td>
+      <td>PIB2Δ426-532 truncation</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>o3997</td>
+      <td>tctattccgaacagcgacaaccataacgcaaacacg</td>
+      <td>PIB2Δ426-532 truncation</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>o4064</td>
+      <td>cacagagccgataacactcgtggttgaaaggttctc</td>
+      <td>PIB2Δ533-620 truncation</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>o3998</td>
+      <td>gagaacctttcaaccacgagtgttatcggctctgtg</td>
+      <td>PIB2Δ533-620 truncation</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>o4065</td>
+      <td>gtctcgcaaaaaatgttcatcagcccaaaacatcattaccttct</td>
+      <td>PIB21-620 truncation</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>o3999</td>
+      <td>agaaggtaatgatgttttgggctgatgaacattttttgcgagac</td>
+      <td>PIB21-620 truncation</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>o1440</td>
+      <td>GCTAGAGCGGCCATTACGGCCCCGGAGATTTATGGACCTC</td>
+      <td>KOG1 cloning into pPR3N</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>o1442</td>
+      <td>CGATCTCGGGCCGAGGCGGCCTCAAAAATAATCAATTCTCTCGTC</td>
+      <td>KOG1 cloning into pPR3N</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>o3787</td>
+      <td>GCTAGAGCGGCCATTACGGCC GAATTGTACAAATCTAGAACTAGT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>o3788</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAA GAAACTACTCCAATTCCAGTTTGC</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>o3872</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAGCCCAAAACATCATTACCTTCTTCT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>o3871</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAATCTTCGCCCTCCTCAACGT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>o3870</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAGTTGATTCTGTCGCTGTTCG</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>o3933</td>
+      <td>GCTAGAGCGGCCATTACGGCCAGGAAGAAATTACGCAATTACTAC</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>o3934</td>
+      <td>GCTAGAGCGGCCATTACGGCC AGTGTTATCGGCTCTGTGCC</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>o3868</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAATTAGTGCTCGAAGCAGGCT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>o3867</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAGTCATCCGTGAATGGCAACG</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>o3866</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAGCCTGCCCCTGTTGAGCTCT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>o3865</td>
+      <td>CGATCTCGGGCCGAGGCGGCCAAGTCAGCACCGCTTTCCTCAT</td>
+      <td>cloning PIB2 fragments into pCabWT*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Oligonucleotides #1 and #2, ordered as PAGE-purified and lyophilized, are resuspended at 100 μM in water. Oligonucleotide #3, ordered as HPLC-purified and lyophilized, is resuspended at 100 μM in water and distributed into single-use aliquots._
+
+**Table 4.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Parent</th>
+      <th>Description</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pBK257</td>
+      <td>pWL80R_4x</td>
+      <td>CEN/URA3, carries MiniDs in ADE2 and hyperactive Ac transposase under GAL1 promoter</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pWL80R_4x</td>
+      <td></td>
+      <td>CEN/URA3, carries hyperactive Ac transposase under GAL1 promoter</td>
+      <td>Lazarow et al. (2012)</td>
+    </tr>
+    <tr>
+      <td>pCORE-UH</td>
+      <td></td>
+      <td>Delitto pefetto URA3 cassette</td>
+      <td>Storici and Resnick (2003)</td>
+    </tr>
+    <tr>
+      <td>pJM7</td>
+      <td></td>
+      <td>pENTRY-YEN1ON</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pRS413</td>
+      <td></td>
+      <td>CEN/HIS3, empty vector</td>
+      <td>Sikorski and Hieter, 1989</td>
+    </tr>
+    <tr>
+      <td>pRS415</td>
+      <td></td>
+      <td>CEN/LEU2, empty vector</td>
+      <td>Sikorski and Hieter, 1989</td>
+    </tr>
+    <tr>
+      <td>pRS416</td>
+      <td></td>
+      <td>CEN/URA3, empty vector</td>
+      <td>Sikorski and Hieter, 1989</td>
+    </tr>
+    <tr>
+      <td>p1822</td>
+      <td>pRS413</td>
+      <td>CEN/HIS3, GTR1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p1451</td>
+      <td>pRS415</td>
+      <td>CEN/LEU2, GTR2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p1821</td>
+      <td>pRS413</td>
+      <td>CEN/HIS3, GTR1Q65L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p1452</td>
+      <td>pRS415</td>
+      <td>CEN/LEU2, GTR2S23L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3084</td>
+      <td>pRS416</td>
+      <td>CEN/URA3, PIB2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3099</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2165-635</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3097</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2304-635</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3101</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2221-635</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3253</td>
+      <td>pRS426</td>
+      <td>2 μ/URA3, PIB2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3255</td>
+      <td>pRS426</td>
+      <td>2 μ/URA3, PIB2165-635</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3163</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2426-635</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3153</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2Δ426-532</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3154</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB2Δ533-620</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3156</td>
+      <td>p3084</td>
+      <td>CEN/URA3, PIB21-620</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pPR3N</td>
+      <td></td>
+      <td>2 μ/TRP1, NubG-HA</td>
+      <td>Dualsystems Biotech AG</td>
+    </tr>
+    <tr>
+      <td>pCabWT</td>
+      <td></td>
+      <td>CEN/LEU2, Aβ-Cub-LexA-VP16</td>
+      <td>Dualsystems Biotech AG</td>
+    </tr>
+    <tr>
+      <td>p3081</td>
+      <td>pPR3N</td>
+      <td>2 μ/TRP1, NubG-HA-KOG1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2966</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3002</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-620-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3007</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-550-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3001</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-428-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3051</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2440-550-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3054</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2556-620-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3052</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2621-635-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p3000</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-312-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2987</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2304-635-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2999</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-162-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2986</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2165-635-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2998</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-101-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2991</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB2102-635-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2997</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB21-49-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>p2990</td>
+      <td>pCabWT</td>
+      <td>CEN/LEU2, Aβ-PIB250-635-Cub-LexA-VP16</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
 
 Deletion strains were generated by PCR-mediated gene replacement using the Longtine toolbox for KanMX6 and HIS3 replacement (Longtine et al., 1998) and the Janke toolbox for NATnt2 (Janke et al., 2004), with primers listed in Table 3. Strain YJM3916 carrying YEN1ON at the endogenous locus was generated using the delitto perfetto method (Storici and Resnick, 2003).
 
-## Library generation
+### Library generation
 
 ade2Δ strains were transformed with the pBK257 plasmid. These strains are phenotypically ade-, since the ADE2 gene borne on the plasmid is interrupted by the MiniDs transposon. One liter of freshly prepared SD -Ura +2% Raffinose +0.2% Dextrose is inoculated with ade2Δ cells freshly transformed with pBK257, directly scraped off the transformation plates, at a final OD600 = 0.15. The culture is grown to saturation for 18 to 24 hr at 30°C. Cells are spun for 5 min at 600x g, 20°C, and resuspended in their supernatant at a final OD600 = 39. 200 μl of this resuspension are plated on ~250–300×8.5 cm plates containing 25 ml of SD +2% Galactose -Adenine using glass beads. Plates are incubated in closed but not sealed plastic bags for 3 weeks at 30°C. Clones in which transposon excision has led to the repair of the ADE2 gene on pBK257 start to appear after 10–12 days. The density of clones on the plate reaches 150–200 colonies/cm2, i.e. 8000-11000 colonies/plates after 3 weeks. All colonies are then scraped off the plates using minimal volume of either water or SD +2% Dextrose -Adenine, pooled, and used to inoculate a 2-liter SD +2% Dextrose -Adenine culture at a density of 2.5 106 cells/ml, which is allowed to grow to saturation. This step is used to dilute any remaining ade- cells, which represent about 20% of the total number of cells, and ensures that each transposition event is well represented. For example, reseeding a 2 106 clones library in 2L at a density of 2.5 106 cells/ml will ensure that each clone is represented by ((2.500.000 × 1000×2)*0.8)/2.000.000 = 2000 cells. The saturated culture is harvested by centrifugation (5 min, 1600x g), washed with ddH2O, then cell pellets are frozen as ~500 mg aliquots.
 
-## Rapamycin treatment
+### Rapamycin treatment
 
 Cells scraped off the plates were used to inoculate a 1-liter SD +2% Dextrose -Adenine culture at OD 0.08. After growing for 15 hr to OD 0.5, the culture was diluted to OD 0.1 in 500 ml SD +2% Dextrose -Adenine, treated with 10 nM (9.14 ng/ml) rapamycin (Sigma) and grown for 24 hr to OD 0.9. The culture was then diluted again to OD 0.1 in 500 ml SD +2% Dextrose -Adenine + 10 nM rapamycin. The treated culture was grown to saturation (OD 1.9), harvested by centrifugation and processed for genomic DNA extraction.
 
-## Genomic DNA
+### Genomic DNA
 
 A 500 mg cell pellet is resuspended with 500 μl Cell Breaking Buffer (2% Triton X-100, 1% SDS, 100 mM NaCl, 100 mM Tris-HCl pH8.0, 1 mM EDTA) and distributed in 280 μl aliquots. 200 μl Phenol:Chloroform:Isoamylalcool 25:25:1 and 300 μl 0.4–0.6 mm unwashed glass beads are added to each aliquot. Samples are vortexed for 10 min at 4°C using a Disruptor Genie from Scientific Industrial (US Patent 5,707,861). 200 μl TE are added to each lysate, which are then centrifuged for 5 min at 16100x g, 4°C. The upper layer (~400 μl) is transferred to a fresh tube, 2.5vol 100% EtOH are added and the sample mixed by inversion. DNA is pelleted for 5 min at 16100x g, 20°C. The supernatant is removed and the pellets resuspended in 200 μl RNAse A 250 μg/ml for 15 min at 55°C, 1000 rpm on a Thermomixer comfort (Eppendorf). 2.5 vol 100% EtOH and 0.1 vol NaOAc 3 M pH5.2 are added and the samples mixed by inversion. DNA is pelleted by centrifugation for 5 min at 16100x g, 20°C. The pellets are washed with 70% EtOH under the same conditions, the supernatant removed completely, and the pellets dried for 10 min at 37°C. The pellets are resuspended in a total volume of 100 μl water for 10 min at 55°C, 700 rpm on a Thermomixer comfort (Eppendorf).
 
 DNA is run on a 0.6% 1X TBE agarose gel against a standard 1 kb GeneRuler, and quantified using Fiji. 500 mg cell pellet should yield 20–60 μg DNA.
 
-## Library sequencing
+### Library sequencing
 
 Sequencing involves the following steps: (1) Digestion of genomic DNA with two four-cutter restriction enzymes, (2) ligase-mediated circularization of the DNA, (3) PCR of the transposon-genome junctions using outward-facing primers, (4) Illumina-sequencing of the combined PCR products.
 
@@ -240,22 +1117,22 @@ Block: calculated – 95°C 1 min, 35 × [95°C 30 s, 55°C 30 s, 72°C 3 min],
 
 The 2 × 10 PCR reactions are pooled into one NlaIII-digested pool and one DpnII-digested pool. 100 μl from each pool are purified using a PCR clean-up/gel extraction kit (Macherey-Nagel) according to the manufacturer protocol, with the following modifications. DNA is bound to the column for 30s at 3000x g; 30 μl of elution buffer (10 mM Tris-HCl pH8.5, 0.1% Tween) is applied to the column and incubated for 3 min, then spun for 1 min at 11000x g at 20°C. The eluate is reapplied to the column and a second elution is performed under the same conditions. Purified PCR products are quantified by absorbance at 260 nm. On a 1% agarose gel, the product runs as a smear from 250 bp to 1.2 kb, with highest density centered around 500 bp. The 867 bp size band present in the NlaIII-treated sample and the 465 bp size band present in the DpnII-treated sample correspond to untransposed pBK257. Equal amounts of DpnII- and NlaIII-digested DNA are pooled and sequenced using MiSeq v3 chemistry, according to manufacturer, adding 3.4 μl of 100 μM primer #3 into well 12 of the sequencing cartridge.
 
-## Bioinformatics analyses
+### Bioinformatics analyses
 
 The fastq file generated is uploaded into the CLC genomics workbench, trimmed using adaptor sequences ‘CATG’ and ‘GATC’ (the recognition sites for NlaIII and DpnII, respectively), allowing two ambiguities and a quality limit of 0.05. The trimmed sequence is then aligned to the reference genome, using the following parameters (mismatch cost, 2; insertion and deletion costs, 3; length fraction, 1; similarity fraction, 0.95; non-specific match handling, ignore). The alignment is then exported as a BAM file, which is further processed in MatLab, using the Source code 1, to detect individual transposition events. The outputted bed file is uploaded to the UCSC genome browser. Yeast annotations were downloaded from the Saccharomyces Genome Database (SGD). To generate our list of essential genes, we used YeastMine and searched the SGD for genes for which the null mutant has an ‘inviable’ phenotype (Balakrishnan et al., 2012).
 
 Volcano plots were computed as follows. Two sets of libraries were defined. For each gene and each library, the number of transposons per gene (tnpergene variable) was normalized to the total number of transposons mapped in the library. For each gene, the fold-change is calculated as the mean of the normalized number of transposons per gene in the experimental set, divided by that in the reference set. The p-value is computed using the Student’s t-test by comparing, for each gene, the normalized number of transposons per gene for each library in the experimental and reference sets.
 
-## Western blotting
+### Western blotting
 
 Cells were grown to mid-log phase in synthetic minimal medium containing 0.5 g/L proline as a sole nitrogen source and stimulated with 3 mM glutamine for 2 min. Cells were treated with 6.7% w/v trichloroacetic acid (final concentration), pelleted, washed with 70% ethanol and then lyzed in urea buffer (50 mM Tris-HCl [pH 7.5], 5 mM EDTA, 6 M urea, 1% SDS, 0.1 mg/ml Pefabloc/phosphatase inhibitor mix). After disrupting cells with glass beads and incubating with Laemmli SDS sample buffer, samples were subjected to regular SDS-PAGE and immunoblotting. The phosphorylation level of Sch9-Thr737 and the total amount of Sch9 were assessed using the phosphospecific anti-Sch9-pThr737 and anti-Sch9 antibodies, respectively (Péli-Gulli et al., 2015).
 
-## Split-ubiquitin yeast two-hybrid assay
+### Split-ubiquitin yeast two-hybrid assay
 
 The split-ubiquitin yeast two-hybrid system from Dualsystems Biotech AG was used following the manufacturer’s instructions.
 
 Pib2 fragments (full-length or truncated) and full-length Kog1 were cloned into pCabWT and pPR3N plasmids, respectively, and transformed into the strain NMY51 as indicated. Protein-protein interactions were detected as growth of the resultant strains on agar plates lacking adenine.
 
-## Accession numbers
+### Accession numbers
 
 Sequencing data have been deposited at EMBL-EBI ArrayExpress: E-MTAB-4885.

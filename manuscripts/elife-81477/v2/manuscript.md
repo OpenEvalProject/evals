@@ -44,27 +44,27 @@
 
 ### Affiliations
 
-1. https://ror.org/05j6ybs54 Millennium Institute on Immunology and Immunotherapy Santiago Chile
-2. https://ror.org/04teye511 Departamento de Genética Molecular y Microbiología, Facultad de Ciencias Biológicas, Pontificia Universidad Católica de Chile Santiago Chile
-3. https://ror.org/01qq57711 Departamento de Ciencias Biológicas, Facultad de Ciencias de la Vida, Universidad Andrés Bello Santiago Chile
-4. https://ror.org/04teye511 Departamento de Enfermedades Infecciosas e Inmunología Pediátrica, División de Pediatría, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile
-5. https://ror.org/04teye511 Centro de Investigación Clínica UC, Pontificia Universidad Católica de Chile Santiago Chile
-6. https://ror.org/04teye511 Departamento de Enfermedades Infecciosas del Adulto, División de Medicina, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile
-7. https://ror.org/0080ttk76 Departamento de Laboratorio Biomédico, Instituto de Salud Pública de Chile Santiago Chile
-8. https://ror.org/047gc3g35 Laboratory of Molecular and Cellular Virology, Virology Program, Institute of Biomedical Sciences, Faculty of Medicine, Universidad de Chile Santiago Chile
+1. Millennium Institute on Immunology and Immunotherapy Santiago Chile ([ROR:05j6ybs54](https://ror.org/05j6ybs54))
+2. Departamento de Genética Molecular y Microbiología, Facultad de Ciencias Biológicas, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+3. Departamento de Ciencias Biológicas, Facultad de Ciencias de la Vida, Universidad Andrés Bello Santiago Chile ([ROR:01qq57711](https://ror.org/01qq57711))
+4. Departamento de Enfermedades Infecciosas e Inmunología Pediátrica, División de Pediatría, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+5. Centro de Investigación Clínica UC, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+6. Departamento de Enfermedades Infecciosas del Adulto, División de Medicina, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+7. Departamento de Laboratorio Biomédico, Instituto de Salud Pública de Chile Santiago Chile ([ROR:0080ttk76](https://ror.org/0080ttk76))
+8. Laboratory of Molecular and Cellular Virology, Virology Program, Institute of Biomedical Sciences, Faculty of Medicine, Universidad de Chile Santiago Chile ([ROR:047gc3g35](https://ror.org/047gc3g35))
 9. Center for Infectious Disease and Vaccine Research, La Jolla Institute for Immunology La Jolla United States
-10. https://ror.org/0168r3w48 Department of Medicine, Division of Infectious Diseases and Global Public Health, University of California San Diego United States
-11. https://ror.org/057f25d66 Sinovac Biotech Beijing China
+10. Department of Medicine, Division of Infectious Diseases and Global Public Health, University of California San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+11. Sinovac Biotech Beijing China ([ROR:057f25d66](https://ror.org/057f25d66))
 12. Sinovac Life Sciences Co., Ltd. Beijing China
-13. https://ror.org/04teye511 Departamento de Farmacia, Facultad de Química y de Farmacia, Pontificia Universidad Católica de Chile Santiago Chile
-14. https://ror.org/02jx3x895 Department of Infection, Inflammation and Immunity, Great Ormond Street Institute of Child Health, University College London London United Kingdom
-15. https://ror.org/04teye511 Departamento de Endocrinología, Facultad de Medicina, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile
+13. Departamento de Farmacia, Facultad de Química y de Farmacia, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+14. Department of Infection, Inflammation and Immunity, Great Ormond Street Institute of Child Health, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+15. Departamento de Endocrinología, Facultad de Medicina, Escuela de Medicina, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
 
 † Corresponding author
 
 ## Abstract
 
-The development of vaccines to control the coronavirus disease 2019 (COVID-19) pandemic progression is a worldwide priority. CoronaVac is an inactivated severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccine approved for emergency use with robust efficacy and immunogenicity data reported in trials in China, Brazil, Indonesia, Turkey, and Chile. This study is a randomized, multicenter, and controlled phase 3 trial in healthy Chilean adults aged ≥18 years. Volunteers received two doses of CoronaVac separated by 2 (0–14 schedule) or 4 weeks (0–28 schedule); 2302 volunteers were enrolled, 440 were part of the immunogenicity arm, and blood samples were obtained at different times. Samples from a single center are reported. Humoral immune responses were evaluated by measuring the neutralizing capacities of circulating antibodies. Cellular immune responses were assessed by ELISPOT and flow cytometry. Correlation matrixes were performed to evaluate correlations in the data measured. Both schedules exhibited robust neutralizing capacities with the response induced by the 0–28 schedule being better. No differences were found in the concentration of antibodies against the virus and different variants of concern (VOCs) between schedules. Stimulation of peripheral blood mononuclear cells (PBMCs) with Mega pools of Peptides (MPs) induced the secretion of interferon (IFN)-γ and the expression of activation induced markers in CD4 + T cells for both schedules. Correlation matrixes showed strong correlations between neutralizing antibodies and IFN-γ secretion. Immunization with CoronaVac in Chilean adults promotes robust cellular and humoral immune responses. The 0–28 schedule induced a stronger humoral immune response than the 0–14 schedule. Ministry of Health, Government of Chile, Confederation of Production and Commerce & Millennium Institute on Immunology and Immunotherapy, Chile. NCT04651790
+Background:The development of vaccines to control the coronavirus disease 2019 (COVID-19) pandemic progression is a worldwide priority. CoronaVac is an inactivated severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) vaccine approved for emergency use with robust efficacy and immunogenicity data reported in trials in China, Brazil, Indonesia, Turkey, and Chile.Methods:This study is a randomized, multicenter, and controlled phase 3 trial in healthy Chilean adults aged ≥18 years. Volunteers received two doses of CoronaVac separated by 2 (0–14 schedule) or 4 weeks (0–28 schedule); 2302 volunteers were enrolled, 440 were part of the immunogenicity arm, and blood samples were obtained at different times. Samples from a single center are reported. Humoral immune responses were evaluated by measuring the neutralizing capacities of circulating antibodies. Cellular immune responses were assessed by ELISPOT and flow cytometry. Correlation matrixes were performed to evaluate correlations in the data measured.Results:Both schedules exhibited robust neutralizing capacities with the response induced by the 0–28 schedule being better. No differences were found in the concentration of antibodies against the virus and different variants of concern (VOCs) between schedules. Stimulation of peripheral blood mononuclear cells (PBMCs) with Mega pools of Peptides (MPs) induced the secretion of interferon (IFN)-γ and the expression of activation induced markers in CD4+ T cells for both schedules. Correlation matrixes showed strong correlations between neutralizing antibodies and IFN-γ secretion.Conclusions:Immunization with CoronaVac in Chilean adults promotes robust cellular and humoral immune responses. The 0–28 schedule induced a stronger humoral immune response than the 0–14 schedule.Funding:Ministry of Health, Government of Chile, Confederation of Production and Commerce & Millennium Institute on Immunology and Immunotherapy, Chile.Clinical trial number:NCT04651790
 
 ## Introduction
 
@@ -76,7 +76,7 @@ In this article, we compare the immune response elicited in healthy Chilean adul
 
 ## Materials and methods
 
-## Study design, randomization, masking, and volunteers
+### Study design, randomization, masking, and volunteers
 
 This clinical trial (clinicaltrials.gov NCT04651790) was conducted in Chile at eight different sites, six located in Santiago city (Metropolitan Region) and two in the V Region of Valparaiso. The study protocol adhered to the current Tripartite Guidelines for Good Clinical Practices, the Declaration of Helsinki, and local regulations and was approved by the Institutional Scientific Ethical Committee of Health Sciences of the Pontificia Universidad Católica de Chile (#200708006). The execution was approved by the Chilean Public Health Institute (#24204/20).
 
@@ -86,7 +86,7 @@ Randomization was performed with a sealed enveloped system integrated with an el
 
 CoronaVac consists of 3 µg or 600SU of β-propiolactone-inactivated SARS-CoV-2 (strain CZ02) with aluminum hydroxide as an adjuvant in 0.5 mL (Gao et al., 2020). Sodium chloride, monosodium hydrogen phosphate, and disodium hydrogen phosphate are excipients, and water for injection is included as solvent. A study nurse administered ready-to-use syringes with 0.5 mL of CoronaVac intramuscularly in the deltoid area. Sera and PBMCs were isolated from blood obtained before administration of the first and the second dose and 2 and 4 weeks after the second dose for both immunization schedules.
 
-## Procedures
+### Procedures
 
 For the isolation of sera, 20 mL of blood were collected in anticoagulant tubes and distributed in two tubes of 10 mL per volunteer (BD Vacutainer Clot Activator tubes #367896). Blood was allowed to clot for at least 1 hr at room temperature (RT). Samples were then centrifuged in a refrigerated centrifuge with a horizontal rotor at 1300× g for 10 min at 22°C. Serum was collected and stored at –80°C until use. Hemolyzed samples were rejected. For the isolation of PBMCs, blood was collected in three heparinized tubes (BD Vacutainer #367874, 10 mL) and stored at RT until processing. Samples were diluted with PBS (1:1) and centrifuged for 10 min at 1200× g (RT) in SepMate tubes (StemCell Technologies) with density-gradient medium (Lymphoprep). The plasma was then discarded and PBMCs were isolated by pouring them into a clean tube. Isolated PBMCs were washed twice with sterile PBS, counted, and cryopreserved in FBS (Industrial Biologicals) and 10% DMSO (Chem Cruz). All PBMC samples were stored in liquid nitrogen until use.
 
@@ -102,7 +102,7 @@ To assess the cellular immune response, ELISPOT and flow cytometry assays were p
 
 To characterize the expression of activation-induced markers (AIM) by T cells, flow cytometry assays were performed. 3×105 cells/well were stimulated as described for the ELISPOT assays, and after 24 hr of incubation with the stimulus, samples were stained. Staining was performed by incubation for 45 min at 4°C using the following reagents: a mix of BD Horizon Fixable Viability Stain 510 (BD Biosciences – CAT 564406–1 µL per 1×106 cells); anti-CD14 V500 (BD Biosciences – clone M5E2); anti-CD19 V500 (BD Biosciences – clone HIB19); anti-CD3 AF-700 (Biolegend – clone OKT3); anti-CD69 PE (BD Biosciences – clone FN50); anti-CD8a BV-650 (BD Biosciences – clone RPA-T8); anti-CD4 BV-605 (BD Biosciences – clone RPA-T4); anti-CD137 (BioLegend, Clone 4-1BB); and anti-OX40 (BioLegend, Clone BER-ACT35). Cells were washed twice with 200 µL of PEB buffer, fixed, and then handed to the Flow Cytometry core facility, for their acquisition in an LSRFortessa X-20 flow cytometer.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample size determination was already reported for this trial (Bueno et al., 2022). Statistical significance was set at α=0.05 in all cases. Statistical analyses and symbols used for each analysis are described briefly in each figure legend. All statistical analyses were performed in GraphPad Prism v.9.0.1 or RStudio.
 
@@ -116,25 +116,559 @@ Other comparisons assessed were analyzed via two-tailed unpaired t tests, two-ta
 
 ## Results
 
-## A 0–28 day immunization schedule with CoronaVac promotes higher seropositivity rates and GMT values of neutralizing antibodies than a 0–14 schedule
+### A 0–28 day immunization schedule with CoronaVac promotes higher seropositivity rates and GMT values of neutralizing antibodies than a 0–14 schedule
 
 To evaluate the humoral immune response elicited after vaccination with two doses of CoronaVac, separated by 2 or 4 weeks (0–14 and 0–28 days schedules, respectively), the neutralizing capacities of circulating antibodies were evaluated. This was performed independently through an sVNT (Figure 1A and C) and cVNT for the Ancestral strain (Figure 1B and D), as well as a pseudotyped virus neutralization test (pVNT) (Figure 1—figure supplement 2). For both immunization schedules, samples from 130 volunteers were tested for sVNT, 372 volunteers for cVNT with the Ancestral strain, and 94 for pVNT (Table 1). These techniques show a robust increase in arbitrary WHO international units (IU), geometric mean titer (GMT) values, and seropositivity rates 2 and 4 weeks after the second dose for both immunization schedules. Remarkably, as seen in IU for the sVNT and GMT values for cVNT and pVNT, the 0–28 schedule showed increased neutralizing capacities 2 and 4 weeks after the second dose (Figure 1A, B and Figure 1—figure supplement 2A). No differences in seropositivity rates between both schedules were detected for any of the assays evaluated (Figure 1C, D and Figure 1—figure supplement 2B). We also evaluated differences in the neutralizing capacities of circulating antibodies between the two age groups indicated for all four techniques (Figure 1—figure supplement 3). Both age groups had significantly increased GMT values at all times compared to preimmune samples, irrespective of the immunization schedule and the technique evaluated (Table 2). However, we observed significantly higher titers of circulating neutralizing antibodies in the 18–59 years age group compared to the >60 years age group, 2 and 4 weeks after the second dose, irrespective of the vaccination schedule, as determined by cVNT and pVNT (Figure 1—figure supplement 3 and Table 1). These results suggest that CoronaVac induces the production of circulating antibodies with varying neutralizing capacities after immunization with either a 0–14 or a 0–28 schedule. Remarkably, the 0–28 schedule promotes higher seroconversion rates and GMT or IU values of these neutralizing antibodies than the 0–14 schedule, as determined by sVNT and pVNT.
 
-## Both immunization schedule with CoronaVac exhibits similar levels of anti-S1 and anti-RBD-specific antibodies
+![Figure 1.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig1-v2.jpg)
+
+**Figure 1.:** Neutralizing antibody titers were evaluated with an sVNT, which quantifies the interaction between S1-RBD and human ACE2 (hACE2) pre-coated on ELISA plates (A,C) and with a cVNT, which quantifies the cytopathic effect (CPE) induced in Vero cells as plaques formation (B, D). n=372 volunteers for cVNT (Ancestral) and n=130 volunteers for sVNT (for both schedules). Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different times evaluated. Numbers above the bars show either the arbitrary international units (IU) (A) or the geometric mean titer (GMT) (B), and the error bars indicate the 95% CI. Seropositivity rates are also displayed (C, D). Data from IU and GMT values were analyzed by a two-tailed unpaired t-test of the base 2 logarithms of data to compare immunization schedules. Data from seropositivity rates were analyzed by a two-tailed Fisher’s exact test. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and highlighted numbers indicate statistical significance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** This study aims to characterize the differential immune response elicited by two immunization schedules with CoronaVac, with each dose separated by either 2 or 4 weeks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Neutralizing antibody titers were evaluated with a pVNT. n=94 volunteers for both schedules. In (A), data is represented as the reciprocal antibody titer of neutralizing antibody versus the different times evaluated. Numbers above the bars show the geometric mean titer (GMT), and the error bars indicate the 95% CI. A two-tailed one-way ANOVA for repeated measures was performed over the Log2 of antibody titers, followed by Bonferroni’s multiple comparisons test to compare geometric mean units (GMUs). (B) Data from seroconversion rates were analyzed by a two-tailed Fisher’s exact test. Values above the lines indicate p values. Significant p values are shown in red. Statistical significance was set at p<0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Neutralization assays were performed with an sVNT, which quantifies the interaction between S1-RBD and human ACE2 (hACE2) pre-coated on ELISA plates (A); with a cVNT, which quantifies the cytopathic effect induce in Vero cells as plaques formation for the Ancestral and D614G strains (B); and with a pVNT (C). Results were obtained from volunteers aged 18–59 years (blue circles for the 0–14 schedule and blue triangles for the 0–28 schedule) and ≥60 years (red circles for the 0–14 schedule and red triangles for the 0–28 schedule) before immunization (0 days), 2 weeks after second dose, and 4 weeks after the second dose. Data is represented as the reciprocal antibody titer versus time after the second dose. Numbers above the bars show the international units (IU) or geometric mean titer (GMT), and the error bars indicate the 95% CI. A two-tailed one-way ANOVA for repeated measures was performed over the Log2 of antibody titers, followed by Bonferroni’s multiple comparisons test to compare between schedules and age groups in each schedule. Values above the lines indicate p values. Significant p values are shown in red. Statistical significance was set at p<0.05.
+
+**Table 1.**
+ Seropositivity rates and geometric mean titer (GMT) values measured for circulating neutralizing antibodies induced by CoronaVac in both immunization schedules and dissected by age group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies evaluated</th>
+      <th>Schedule</th>
+      <th>Age group</th>
+      <th>Indicators</th>
+      <th>2 Weeks after second dose</th>
+      <th>*p Value</th>
+      <th>4 Weeks after second dose</th>
+      <th>†p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="24">sVNT</td>
+      <td rowspan="12">0–14 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>41/53</td>
+      <td rowspan="12">0.018</td>
+      <td>47/57</td>
+      <td rowspan="12">0.1100</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>77.4</td>
+      <td>82.5</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>50.9</td>
+      <td>51.2</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>37.4–59.1</td>
+      <td>38.5–68.0</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>30/32</td>
+      <td>29/32</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>93.8</td>
+      <td>90.6</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>76.0</td>
+      <td>68.8</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>50.2–115.1</td>
+      <td>46.0–102.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>11/21</td>
+      <td>18/25</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>52.3</td>
+      <td>72.0</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>27.6</td>
+      <td>35.1</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>20.0–38.1</td>
+      <td>24.2–50.8</td>
+    </tr>
+    <tr>
+      <td rowspan="12">0–28 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>66/73</td>
+      <td rowspan="12">0.035</td>
+      <td>66/73</td>
+      <td rowspan="12">0.1100</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>90.4</td>
+      <td>90.4</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>178.2</td>
+      <td>131.7</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>133.5–238.1</td>
+      <td>100.7–172.3</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>33/33</td>
+      <td>33/33</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>255.9</td>
+      <td>178.2</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>175.3–373.7</td>
+      <td>123.6–256.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>33/40</td>
+      <td>33/40</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>82.5</td>
+      <td>82.5</td>
+    </tr>
+    <tr>
+      <td>IU/mL</td>
+      <td>132.0</td>
+      <td>102.6</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>87.0–200.5</td>
+      <td>70.0–150.3</td>
+    </tr>
+    <tr>
+      <td rowspan="24">cVNT (Ancestral)</td>
+      <td rowspan="12">0–14 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>147/150</td>
+      <td rowspan="12">&lt;0.0001</td>
+      <td>156/160</td>
+      <td rowspan="12">&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>98.0</td>
+      <td>97.5</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>46.9</td>
+      <td>33.8</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>38.6–57.0</td>
+      <td>28.4–40.2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>121/121</td>
+      <td>128/128</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>59.2</td>
+      <td>42.6</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>48.8–71.8</td>
+      <td>35.7–50.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>26/29</td>
+      <td>28/32</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>89.7</td>
+      <td>87.5</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>17.3</td>
+      <td>13.1</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>10.7–28.0</td>
+      <td>8.9–19.1</td>
+    </tr>
+    <tr>
+      <td rowspan="12">0–28 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>208/210</td>
+      <td rowspan="12">&lt;0.0001</td>
+      <td>209/212</td>
+      <td rowspan="12">&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>99.0</td>
+      <td>98.6</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>90.2</td>
+      <td>61.1</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>76.8–105.8</td>
+      <td>52.3–71.4</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>124/125</td>
+      <td>123/124</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>99.2</td>
+      <td>99.2</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>121.9</td>
+      <td>82.4</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>102.5–144.9</td>
+      <td>69.6–97.7</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>84/85</td>
+      <td>86/88</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>98.8</td>
+      <td>97.7</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>57.9</td>
+      <td>40.1</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>43.7–76.6</td>
+      <td>30.7–52.4</td>
+    </tr>
+    <tr>
+      <td rowspan="24">pVNT</td>
+      <td rowspan="12">0–14 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>73/77</td>
+      <td rowspan="12">&lt;0.0001</td>
+      <td>73/77</td>
+      <td rowspan="12">0.0027</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>97.3</td>
+      <td>97.3</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>52.7</td>
+      <td>40.1</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>36.6–76.4</td>
+      <td>28.9–55.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>48/49</td>
+      <td>48/49</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>97.9</td>
+      <td>97.9</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>83.3</td>
+      <td>59.0</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>53.6–129.5</td>
+      <td>39.3–88.7</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>25/28</td>
+      <td>25/28</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>89.2</td>
+      <td>89.2</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>23.1</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>13.2–40.7</td>
+      <td>12.3–32.5</td>
+    </tr>
+    <tr>
+      <td rowspan="12">0–28 days</td>
+      <td rowspan="4">Total vaccine</td>
+      <td>Seropositivity n/N</td>
+      <td>16/17</td>
+      <td rowspan="12">0.0008</td>
+      <td>16/17</td>
+      <td rowspan="12">0.0029</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>94.1</td>
+      <td>94.1</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>146.7</td>
+      <td>104.9</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>60.0–359.0</td>
+      <td>41.9–262.6</td>
+    </tr>
+    <tr>
+      <td rowspan="4">18–59 years</td>
+      <td>Seropositivity n/N</td>
+      <td>8/8</td>
+      <td>8/8</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>505.9</td>
+      <td>328.7</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>306.1–836.0</td>
+      <td>159.6–676.8</td>
+    </tr>
+    <tr>
+      <td rowspan="4">≥60 years</td>
+      <td>Seropositivity n/N</td>
+      <td>8/9</td>
+      <td>8/9</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>88.8</td>
+      <td>88.8</td>
+    </tr>
+    <tr>
+      <td>GMT</td>
+      <td>48.8</td>
+      <td>38.0</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>13.3–178.6</td>
+      <td>9.56–152.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Red values indicate statistically significant results (p<0.05).*p Values are for comparison of IU/mL or GMT levels between 18 and 59 years and >60 years age groups 2 weeks after the second dose.†p Values are for comparison of IU/mL or GMT levels between 18 and 59 years and >60 years age groups 4 weeks after the second dose._
+
+**Table 2.**
+ p Values estimated for neutralization assays evaluated for both immunization schedules.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Figure</th>
+      <th rowspan="2">Parameter evaluated</th>
+      <th rowspan="2">Schedule;preimmune value</th>
+      <th colspan="2">Preimmune compared to</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>2 Weeks after second dose</th>
+      <th colspan="2">4 Weeks after second dose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Figure 1A</td>
+      <td rowspan="2">sVNT(IU/mL;p value)</td>
+      <td>0–14 days;16.4</td>
+      <td>50.9;&lt;0.0001</td>
+      <td colspan="2">51.2;&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>0–28 days;17.7</td>
+      <td>178.2;&lt;0.0001</td>
+      <td colspan="2">131.7;&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 1B</td>
+      <td rowspan="2">cVNT (Ancestral)(GMT;p value)</td>
+      <td>0–14 days;2.04</td>
+      <td>46.9;&lt;0.0001</td>
+      <td colspan="2">33.8;&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>0–28 days;2.08</td>
+      <td>90.2;&lt;0.0001</td>
+      <td colspan="2">61.1;&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 1—figure supplement 2</td>
+      <td rowspan="2">pVNT(GMT;p value)</td>
+      <td>0–14 days;2.05</td>
+      <td>52.66;&lt;0.0001</td>
+      <td colspan="2">40.14;&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>0–28 days;2.0</td>
+      <td>146.71;&lt;0.0001</td>
+      <td colspan="2">104.93;&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p Values were determined by performing one-way ANOVAs for repeated measures over Log10 of data, followed by post hoc Bonferroni's multiple comparisons test. Red values indicate statistically significant results (p<0.05)._
+
+### Both immunization schedule with CoronaVac exhibits similar levels of anti-S1 and anti-RBD-specific antibodies
 
 To evaluate the humoral immune response elicited after vaccination with two doses of CoronaVac, separated by 2 or 4 weeks (0–14 and 0–28 day schedules, respectively), antibody titers against the Ancestral S1 and the RBD of SARS-CoV-2 were evaluated before administration of the first and second dose, and 2 and 4 weeks after the second dose (Figure 2). Samples from 162 volunteers were assessed independently for the S1-RBD through ELISA assays (Figure 2A) and 44 through MSD immunoassays (Figure 2B). Circulating antibodies against the S1-RBD were robustly increased for both immunization schedules at all times evaluated after administration of the first dose (preimmune), as determined by geometric mean units (GMUs) values of the arbitrary WHO international standard. No differences were found at all times evaluated for anti-S1-RBD-specific antibodies between both schedules (Figure 2A). Accordingly, no differences could be found between schedules for the MSD analyses performed, either for the S protein (left) or the RBD (right) of the Ancestral strain of SARS-CoV-2 (Figure 2B). These results show that CoronaVac induces a statistically significant increase in anti-S1 and anti-RBD antibodies after immunization with either a 0–14 or a 0–28 schedule.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig2-v2.jpg)
 
-**Figure 2.:** Concentrations of IgG antibodies after two doses of CoronaVac were evaluated for immunized volunteers before the first (preimmune) and second dose and 2 and 4 weeks after the second. Specific IgG against the S1-RBD and the spike protein of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) were measured. n=162 volunteers for ELISA assays (A) and n=44 volunteers for meso-scale discovery (MSD) assays (B). Data are expressed as the reciprocal antibody titer in arbitrary WHO international unit versus the different times evaluated. Error bars indicate the 95% CI. Spots represent individual values of each volunteer, with the numbers above each set of spots showing the geometric mean unit (GMU) estimates. Data were analyzed using a two-tailed unpaired t-test of the Log2 of data to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 . Dotted line on A is showing a value of 4, which is the threshold established for the seroconversion rate of each volunteer. Therefore, every spot over the dotted line represents volunteers that were considered positive for seroconversion relative to their preimmune sample.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Concentrations of IgG antibodies after two doses of CoronaVac were evaluated for immunized volunteers before the first (preimmune) and second dose and 2 and 4 weeks after the second. Specific IgG against the S1-RBD and the spike protein of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) were measured. n=162 volunteers for ELISA assays (A) and n=44 volunteers for meso-scale discovery (MSD) assays (B). Data are expressed as the reciprocal antibody titer in arbitrary WHO international unit versus the different times evaluated. Error bars indicate the 95% CI. Spots represent individual values of each volunteer, with the numbers above each set of spots showing the geometric mean unit (GMU) estimates. Data were analyzed using a two-tailed unpaired t-test of the Log2 of data to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 . Dotted line on A is showing a value of 4, which is the threshold established for the seroconversion rate of each volunteer. Therefore, every spot over the dotted line represents volunteers that were considered positive for seroconversion relative to their preimmune sample.
 
-## CoronaVac induces a significant cellular immune response against SARS-CoV-2 antigens regardless of the immunization schedule
+### CoronaVac induces a significant cellular immune response against SARS-CoV-2 antigens regardless of the immunization schedule
 
 To assess the cellular-mediated immune response elicited in volunteers immunized with CoronaVac in both immunization schedules, we evaluated the number of SFCs positive for IFN-γ by ELISPOT and the expression of AIM on T cells by Flow Cytometry (Figure 3). Peripheral blood mononuclear cells (PBMCs) from 88 volunteers were evaluated for both immunization schedules and techniques. To evaluate SARS-CoV-2 antigen-specific secretion of IFN-γ and expression of AIM by T cells, PBMCs were stimulated independently with four MPs of peptides comprising the proteome of SARS-CoV-2. One MP contains peptides from the S protein (MP-S, 15-mer peptides), and another one considers the remaining viral proteome (MP-R, 15-mer peptides). The two other MPs comprise the whole proteome of SARS-CoV-2. These MPs were split in two as they were too many to be used as a single stimulus (MP-CD8A and MP-CD8B, 9- to 11-mer peptides). Stimulation of PBMCs with MP-S and MP-R induced a statistically significant increase in the secretion of IFN-γ and the expression of AIM in CD4+ T cells (defined as OX40+ and CD137+), compared to preimmune samples (Figure 3A and C, tables on top of each panel). This increase was not detected when stimulating with MP-CD8A and MP-CD8B (Figure 3B and D, tables on top of each panel). No statistical differences could be found between both immunization schedules in the total numbers of IFN-γ+ SFC (Figure 3A, B), or the percentage of AIM+ T cells (Figure 3C and D). No differences between both immunization schedules were found when evaluating the age groups indicated before for SFC (Figure 3—figure supplement 1) or AIM on T cells (Figure 3—figure supplement 2). No differences could be found between both immunization schedules for the number of IL-4+ SFCs (Figure 3—figure supplement 3). Overall, these results indicate that immunization with CoronaVac in both schedules induces an increase in the number of IFN-γ+ SFC and the expression of AIM by CD4+ and CD8+ T cells upon stimulation with several MPs.
 
-## Immunization with CoronaVac induces a similar profile of antibodies against the S protein and the RBD of SARS-CoV-2 VOC regardless of the immunization schedule
+![Figure 3.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig3-v2.jpg)
+
+**Figure 3.:** Total number of IFN-γ+ spot forming cells (SFCs) were determined by ELISPOT. Data were obtained upon stimulation of peripheral blood mononuclear cells (PBMCs) for 48 hr with MP-S and -R (A) or with MP-CD8A and -B (B). The percentage of activated CD4+ (AIM+ [OX40+, CD137+]) and CD8+ (AIM+ [CD69+, CD137+]) T cells was determined by flow cytometry, upon stimulation for 24 hr with MP-S and -R (C), or with MP-CD8A and -B (D) in samples obtained before the first (preimmune) and second dose, and 2 and 4 weeks after the second dose. n=124 samples stimulated with MP-S and -R for ELISPOT (A). n=117 samples stimulated with MP-CD8A and -B for ELISPOT (B). n=116 stimulated with MP-S and -R for flow cytometry (C). n=110 samples stimulated with MP-CD8A and -B for flow cytometry (D) (for both schedules). Numbers above the bars show the mean and the error bars correspond to the 95% CI. Data were analyzed by a mixed-effect two-way ANOVA, followed by a Bonferroni’s post hoc test to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and highlighted numbers indicate statistical significance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Changes in the secretion of IFN-γ were measured, determined as the number of SFCs per 3×105 peripheral blood mononuclear cell (PBMC). Data was obtained upon stimulation of PBMC with MP-S+R (A), and upon stimulation of PBMC with MP-CD8A+B (B), for 48 hr in samples obtained before immunization, 2 weeks after the second dose, and 4 weeks after the second dose. All data were normalized for DMSO unspecific stimulation. Data are presented as geometric means and error bars represent the 95% CI. A two-tailed one-way ANOVA for repeated measures was performed over the Log10 of SFCs, followed by Bonferroni’s multiple comparisons test to compare between schedules. Values above the lines indicate p values. Significant p values are shown in red. Statistical significance was set at p<0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The percentage of activated CD4+ (AIM+ [OX40+, CD137+]) and CD8+ (AIM+ [CD69+, CD137+]) T cells was determined by flow cytometry, upon stimulation for 24 hr with MP-S and -R (A–B), and with MP-CD8A and -B (C–D) in samples obtained before the first (preimmune) and second dose, and 2 and 4 weeks after the second dose. Data are presented as means and error bars represent the 95% CI. A two-tailed one-way ANOVA for repeated measures was performed, followed by Bonferroni’s multiple comparisons test to compare between schedules. Values above the lines indicate p values. Significant p values are shown in red. Statistical significance was set at p<0.05.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Changes in the secretion of IL-4 were measured, determined as the number of spot forming cells (SFCs) per 3×105 PBMC. Data was obtained upon stimulation of PBMC with MP-S+R (A), and upon stimulation of PBMC with MP-CD8A+B (B), for 48 hr in samples obtained before immunization, 2 weeks after the second dose, and 4 weeks after the second dose. All data were normalized for DMSO unspecific stimulation. Data are presented as geometric means and error bars represent the 95% CI. A two-tailed one-way ANOVA for repeated measures was performed over the Log10 of SFCs, followed by Bonferroni’s multiple comparisons test to compare between schedules. Values above the lines indicate p values. Significant p values are shown in red. Statistical significance was set at p<0.05.
+
+### Immunization with CoronaVac induces a similar profile of antibodies against the S protein and the RBD of SARS-CoV-2 VOC regardless of the immunization schedule
 
 To determine whether the immunization schedule had any impact on the profile of antibodies elicited against SARS-CoV-2 VOCs, MSD immunoassays were performed to determine antibody titers against the S protein or the RBD from SARS-CoV-2 VOC (Figure 4). Samples from 44 volunteers in the 0–14 schedule and from 40 volunteers in the 0–28 schedule, obtained 4 weeks after the second dose, were evaluated. No differences were seen for the titers of anti-S and anti-RBD antibodies between the two schedules, when both age groups were evaluated together (Figure 4A, B). Anti-S antibodies against all variants tested (Alpha, Beta, Gamma, Delta, and Omicron) showed decreased concentrations compared to the Ancestral strain regardless of the immunization schedule (Figure 4—figure supplement 1A). A similar trend was observed for anti-RBD antibodies, although the concentration of antibodies against the Delta strain RBD seemed to remain similar to antibody levels against the Ancestral strain RBD (Figure 4—figure supplement 1B). The concentration of antibodies that recognize the Omicron RBD seemed to decrease in a more pronounced way compared to the decrease observed for antibodies that recognize the Omicron S protein. When both age groups were analyzed independently, no differences were seen in the 18–59 years age group for anti-S and anti-RBD antibodies (Figure 4—figure supplement 2A, B). For the >60 years age group, decreased anti-S antibodies concentrations were found against the Alpha, Gamma, and Delta in the 0–28 schedule, compared to the 0–14 schedule (Figure 4—figure supplement 3A). No differences in antibodies concentrations against the RBD were found for this age group, irrespective of the schedule (Figure 4—figure supplement 3B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig4-v2.jpg)
+
+**Figure 4.:** Antibodies concentrations against the S (A) and the RBD (B) of different VOCs of SARS were evaluated through meso-scale discovery (MSD). n=44 volunteers for the 0–14 schedule. n=40 volunteers for the 0–28 schedule. Samples evaluated were obtained at 4 weeks after the second dose. Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different VOCs evaluated. With these values, a breadth index was calculated for each VOC for anti-S (C) and anti-RBD (D) antibodies. Numbers above the bars show either the international units (IU) (A, B) or the breadth index (C, D), and the error bars indicate the 95% CI. Data were analyzed by a mixed-effect two-way ANOVA, followed by a Bonferroni’s post hoc test to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and highlighted numbers indicate statistical significance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Antibodies concentrations against the S (A) and the RBD (B) of different VOCs of SARS were evaluated through meso-scale discovery (MSD). Results were obtained from 44 volunteers for the 0–14 schedule and 40 volunteers for the 0–28 schedule, from samples obtained at 4 weeks after the second dose. Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different VOCs evaluated. With these values, a breadth index was calculated for each VOC for anti-S (C) and anti-RBD (D) antibodies. Numbers above the bars show either the international units (IU) (A, B) or the breadth index (C, D), and the error bars indicate the 95% CI. Data were analyzed by a repeated measures two-way ANOVA, followed by a Bonferroni’s post hoc test to compare the level of antibodies against each VOC relative to the Ancestral strain. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and red numbers indicate statistical significance.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Antibodies concentrations against the S (A) and the RBD (B) of different VOCs of SARS were evaluated through meso-scale discovery (MSD). Results were obtained from 20 volunteers for the 0–14 schedule and 19 volunteers for the 0–28 schedule, from samples obtained at 4 weeks after the second dose. Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different VOCs evaluated. With these values, a breadth index was calculated for each VOC for anti-S (C) and anti-RBD (D) antibodies. Numbers above the bars show either the international units (IU) (A, B) or the breadh index (C, D), and the error bars indicate the 95% CI. Data were analyzed by a mixed-effect two-way ANOVA, followed by a Bonferroni’s post hoc test to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and red numbers indicate statistical significance.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Antibodies concentrations against the S (A) and the RBD (B) of different VOCs of SARS were evaluated through meso-scale discovery (MSD). Results were obtained from 24 volunteers for the 0–14 schedule and 21 volunteers for the 0–28 schedule, from samples obtained at 4 weeks after the second dose. Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different VOCs evaluated. With these values, a breadth index was calculated for each VOC for anti-S (C) and anti-RBD (D) antibodies. Numbers above the bars show either the international units (IU) (A, B) or the breadh index (C, D), and the error bars indicate the 95% CI. Data were analyzed by a mixed-effect two-way ANOVA, followed by a Bonferroni’s post hoc test to compare immunization schedules. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05 and red numbers indicate statistical significance.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/81477/elife-81477-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Neutralization assays were performed with a conventional virus neutralization test (cVNT), which quantifies the cytopathic effect induce in Vero cells as plaques formation for the strains Alpha, Gamma, and Delta (A) (n=31 volunteers for the 0–14 schedule, n=15 volunteers for the 0–28 schedule); and with cVNT for the Omicron strain (B) (n=22 volunteers for the 0–14 schedule, n=20 volunteers for the 0–28 schedule). Samples evaluated were obtained at 4 weeks after the second dose. Data is represented as the reciprocal antibody titer of neutralizing antibody versus the different VOCs evaluated. With these values, a breadth index was calculated for each VOC for each technique (C, D). Numbers above the bars show either the reciprocal antibody titers (A, B) or the breadth index (C, D), and the error bars indicate the 95% CI. Data were analyzed with a repeated measures two-way ANOVA, followed by a Bonferroni’s post hoc test to compare between VOCs. Numbers above each bracket represent calculated p values comparing both immunization schedules. Statistical significance was set at p<0.05. Data analyses for panels A and C were performed with data previously published (Melo-González et al., 2021).
 
 To account for differences on the antibody-binding activity of each volunteer’s serum, we calculated a breadth index, defined as the concentration of antibodies for a particular VOC divided by the concentration of antibodies for the Ancestral strain. Differences in breadth of antibodies were found for the anti-S antibodies, with the 0–28 schedule showing decreased recognition capacity for Alpha, Gamma, and Delta, relative to the 0–14 schedule (Figure 4C). Interestingly, the 0–28 schedule showed increased recognition of the Omicron VOC, compared to the 0–14 schedule. We found no differences in this index for anti-RBD antibodies between schedules (Figure 4D). A decreased recognition capacity for all VOC of anti-S antibodies was detected (Figure 4—figure supplement 1C). This was also seen in most VOC for anti-RBD antibodies, but no differences were found for the Delta strain (Figure 4—figure supplement 1D). When analyzing the age groups, the 18–59 years age group exhibited a reduced breadth index for the Alpha VOC in the 0–28 schedule, compared to the 0–14 schedule (Figure 4—figure supplement 2C). No differences were seen for RBD (Figure 4—figure supplement 2D). For the >60 years age group, the 0–28 schedule exhibited a reduced breadth index for the Alpha, Gamma, and Delta VOC, compared to the 0–14 schedule (Figure 4—figure supplement 3C and D). Remarkably, the 0–28 schedule reported increased breadth index for the Beta and Omicron VOC, relative to the 0–14 schedule (Figure 4—figure supplement 3C and D).
 
@@ -142,7 +676,7 @@ Finally, to further support our data, we evaluated the neutralization capacity a
 
 These results suggest that CoronaVac may induce moderate cross-reactive humoral immune responses against SARS-CoV-2 VOC. While no evident patterns could be found between both schedules, the most marked differences can be detected when evaluating the >60 years age group.
 
-## The humoral and cellular immune responses elicited by both immunization schedules exhibit a significant correlation pattern
+### The humoral and cellular immune responses elicited by both immunization schedules exhibit a significant correlation pattern
 
 To identify potential correlations between variables, we generated correlation matrixes for each immunization schedule (Figure 5A and D). Overall, the neutralizing capacities determined by the different techniques exhibited a positive correlation value for both schedules. Particularly, the neutralizing capacities of circulating antibodies were strongly and positively correlated for the cVNT and sVNT evaluation at 4 weeks after the second dose (Figure 5B and E). These correlations were statistically significant and were found for both immunization schedules. Interestingly, positive correlations were also found for the neutralizing capacities of circulating antibodies as determined by cVNT 2 weeks after the second dose and the expression of AIM by CD8+ T cells 4 weeks after the second dose (Figure 5C and F). Again, these correlations were statistically significant and were found for both immunization schedules. These results suggest that the immune responses elicited by CoronaVac go hand in hand for either immunization schedule, as increased values of neutralizing antibodies are associated with increased expression of AIM by T cells.
 

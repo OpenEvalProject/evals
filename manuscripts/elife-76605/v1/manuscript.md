@@ -39,28 +39,28 @@
 
 ### Affiliations
 
-1. https://ror.org/02yp1e416 Microbiology Service, Hospital General Universitario de Castellón Castellón Spain
-2. https://ror.org/01hn2d233 Tuberculosis Genomics Unit, Instituto de Biomedicina de Valencia (IBV-CSIC) Valencia Spain
-3. https://ror.org/0116vew40 Unidad Mixta "Infección y Salud Pública" (FISABIO-CSISP) Valencia Spain
-4. https://ror.org/00hpnj894 Microbiology Service, Hospital Clínico Universitario Valencia Spain
-5. https://ror.org/00qnmxq60 Microbiology and Parasitology Service, Hospital Universitario de La Ribera Alzira Spain
-6. https://ror.org/02s7fkk92 Microbiology Service, Hospital Arnau de Vilanova Valencia Spain
-7. https://ror.org/03971n288 Microbiology Service, Hospital Universitario Dr Peset Valencia Spain
-8. https://ror.org/0213rcc28 Department of Mathematics, Faculty of Science, Simon Fraser University Burnaby Canada
-9. https://ror.org/04ssfah06 Microbiology Laboratory, Hospital Virgen de los Lirios Alcoy Spain
+1. Microbiology Service, Hospital General Universitario de Castellón Castellón Spain ([ROR:02yp1e416](https://ror.org/02yp1e416))
+2. Tuberculosis Genomics Unit, Instituto de Biomedicina de Valencia (IBV-CSIC) Valencia Spain ([ROR:01hn2d233](https://ror.org/01hn2d233))
+3. Unidad Mixta "Infección y Salud Pública" (FISABIO-CSISP) Valencia Spain ([ROR:0116vew40](https://ror.org/0116vew40))
+4. Microbiology Service, Hospital Clínico Universitario Valencia Spain ([ROR:00hpnj894](https://ror.org/00hpnj894))
+5. Microbiology and Parasitology Service, Hospital Universitario de La Ribera Alzira Spain ([ROR:00qnmxq60](https://ror.org/00qnmxq60))
+6. Microbiology Service, Hospital Arnau de Vilanova Valencia Spain ([ROR:02s7fkk92](https://ror.org/02s7fkk92))
+7. Microbiology Service, Hospital Universitario Dr Peset Valencia Spain ([ROR:03971n288](https://ror.org/03971n288))
+8. Department of Mathematics, Faculty of Science, Simon Fraser University Burnaby Canada ([ROR:0213rcc28](https://ror.org/0213rcc28))
+9. Microbiology Laboratory, Hospital Virgen de los Lirios Alcoy Spain ([ROR:04ssfah06](https://ror.org/04ssfah06))
 10. Microbiology Service, Hospital de Denia Denia Spain
-11. https://ror.org/05xr2yq54 Computational Genomics Department, Centro de Investigación Príncipe Felipe Valencia Spain
-12. https://ror.org/01ar2v535 Microbiology Service, Hospital Universitari i Politècnic La Fe Valencia Spain
-13. https://ror.org/03sz8rb35 Microbiology Service, Hospital General Universitario de Valencia Valencia Spain
-14. https://ror.org/02ybsz607 Microbiology Service, Hospital General Universitario de Alicante Alicante Spain
-15. https://ror.org/04dywym46 Microbiology Service, Hospital General Universitario de Castellón Castellón Spain
-16. https://ror.org/03yk4dt83 Microbiology Service, Hospital Lluís Alcanyis Xativa Spain
-17. https://ror.org/01jmsem62 Microbiology Service, Hospital General Universitario de Elche Elche Spain
-18. https://ror.org/00f6kbf47 Microbiology Service, Hospital Universitario de San Juan de Alicante Alicantes Spain
+11. Computational Genomics Department, Centro de Investigación Príncipe Felipe Valencia Spain ([ROR:05xr2yq54](https://ror.org/05xr2yq54))
+12. Microbiology Service, Hospital Universitari i Politècnic La Fe Valencia Spain ([ROR:01ar2v535](https://ror.org/01ar2v535))
+13. Microbiology Service, Hospital General Universitario de Valencia Valencia Spain ([ROR:03sz8rb35](https://ror.org/03sz8rb35))
+14. Microbiology Service, Hospital General Universitario de Alicante Alicante Spain ([ROR:02ybsz607](https://ror.org/02ybsz607))
+15. Microbiology Service, Hospital General Universitario de Castellón Castellón Spain ([ROR:04dywym46](https://ror.org/04dywym46))
+16. Microbiology Service, Hospital Lluís Alcanyis Xativa Spain ([ROR:03yk4dt83](https://ror.org/03yk4dt83))
+17. Microbiology Service, Hospital General Universitario de Elche Elche Spain ([ROR:01jmsem62](https://ror.org/01jmsem62))
+18. Microbiology Service, Hospital Universitario de San Juan de Alicante Alicantes Spain ([ROR:00f6kbf47](https://ror.org/00f6kbf47))
 19. Microbiology Service, Hospital de la Vega Baixa Orihuela Spain
 20. Subdirección General de Epidemiología y Vigilancia de la Salud y Sanidad Ambiental de Valencia (DGSP) Valencia Spain
-21. https://ror.org/04kbvfy96 Microbiology Service, Hospital de Sagunto Sagunto Spain
-22. https://ror.org/02g87qh62 CIBER of Epidemiology and Public Health (CIBERESP) Madrid Spain
+21. Microbiology Service, Hospital de Sagunto Sagunto Spain ([ROR:04kbvfy96](https://ror.org/04kbvfy96))
+22. CIBER of Epidemiology and Public Health (CIBERESP) Madrid Spain ([ROR:02g87qh62](https://ror.org/02g87qh62))
 
 † Corresponding author
 
@@ -86,7 +86,7 @@ In the Valencia region, the contribution of recent transmission to local TB burd
 
 Extended and detailed methods in Appendix 1.
 
-## Sample selection and study design
+### Sample selection and study design
 
 About 1388 TB cases were reported between 2014 and 2016 by the Valencian Regional Public Health Agency (DGSP), 1019 with positive culture. All the available (785) samples were collected from 18 regional hospitals (Appendix 1—figure 1). Demographic, clinical, and microbiological records were obtained from the routine TB surveillance system, for 724 of the total samples. All diagnosed TB-positive patients completed a standardized questionnaire provided by the DGSP. In addition, conventional contact tracing is conducted for most cases as per WHO guidelines (https://www.sp.san.gva.es/DgspPortal/docs/GuiaTuberculosis2008.pdf).
 
@@ -94,21 +94,21 @@ M. tuberculosis structure and clustering analysis were performed with the total 
 
 Approval for the study was given by the Ethics Committee for Clinical Research from the Valencia Regional Public Health Agency (Comité Ético de Investigación Clínica de la Dirección General de Salud Pública y Centro Superior de Investigación en Salud Pública). Informed consent was waived on the basis that TB detection forms part of the regional compulsory surveillance program of communicable diseases. All personal information was anonymized, and no data allowing patient identification was retained.
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 Clinical isolates were cultured in Middlebrook 7H11 agar plates supplemented with 10% OADC (Becton-Dickinson) for 3 weeks at 37°C. After an inactivation step (90°C, 15 min), DNA was extracted using the cetyl trimethyl ammonium bromide method from a representative sample from each patient (four-time plate scraping). All procedures were conducted in a biological safety level 3 laboratory under WHO protocol recommendations. Sequencing libraries were constructed with a Nextera XT DNA library preparation kit (Illumina, San Diego, CA), following the manufacturer’s instructions. Sequencing was performed using the Illumina MiSeq platform.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Data analysis was carried out following a validated previously described pipeline (http://tgu.ibv.csic.es/?page_id=1794, Meehan et al., 2019). Sequencing reads were trimmed with fastp (Chen et al., 2018), and kraken software (Wood and Salzberg, 2014) was then used to remove non-M. tuberculosis complex (MTBC) reads. Filtered reads were mapped to an inferred MTBC common ancestor genome (https://doi.org/10.5281/zenodo.3497110) using BWA (Burrows-Wheeler Aligner, Li and Durbin, 2009). SNPs were called with SAMtools (Li, 2011) and VarScan2 (Koboldt et al., 2012). GATK HaplotypeCaller (McKenna et al., 2010) was used for calling InDels. SNPs with a minimum of 10 reads (20×) in both strands and minimum base quality of 25 were selected and classified based on their frequency in the sample as fixed (>90%) or low frequency (10–89%). InDels with less than 20× were discarded. SnpEff was used for SNP annotation using the H37Rv annotation reference (AL123456.2). Finally, SNPs falling in genes annotated as PE/PPE/PGRS, ‘maturase,’ ‘phage,’ and ‘13E12 repeat family protein’; those located in insertion sequences; those within InDels or in higher density regions (>3 SNPs in 10 bp) were removed due to the uncertainty of mapping. Next, variants were compared with recently published catalogs with validated association between mutations and phenotypic resistance (Ngo and Teo, 2019) in order to predict high-confidence resistance profiles to first- and second-line drugs. Lineages were determined by comparing called SNPs with specific phylogenetic positions established (Coll et al., 2014; Stucki et al., 2016). An in-house R script was used to detect mixed infections based on the frequency of lineage- and sublineage-specific positions (López et al., 2020). Read files were deposited in the European Nucleotide Archive (ENA) under the bioproject numbers PRJEB29604 and PRJEB38719 (Supplementary file 1). Sequences from two population-based studies in Oxfordshire (Walker et al., 2014), with 92% of culture-positive cases sequenced, and Malawi (Guerra-Assunção et al., 2015), with 72% of culture-positive cases sequenced, were downloaded from ENA and analyzed as for the sequences generated in this study. All the custom scripts used are available in https://gitlab.com/tbgenomicsunit/ThePipeline. (Copy archieved at swh:1:rev:a725827cb664e6d995823f3f30fcd1d7e16f63d2, Belda-Álvarez, 2022).
 
-## gClustering and phylogenetic analyses
+### gClustering and phylogenetic analyses
 
 The pairwise SNP distance was computed with the R ape package. The gCluster were constructed if the genetic distance between at least two patients’ isolates fell below a defined threshold. Cluster monophyly was confirmed in a maximum likelihood tree (50,184 SNPs).
 
 Timed phylogenies were inferred with Beast v2.5.1 (Bouckaert et al., 2014). Ancient TB DNA (Bos et al., 2014) and samples from a recent Spanish outbreak were included as calibration data. We constructed SNP alignments for each dataset, excluding known variants related to drug resistance, then we corrected the ascertainment bias by adjusting the clock rate to incorporate invariants sites (Supplementary file 2). Extended methodology and comparison with other ascertainment bias methods is detailed in Appendix 1. Dating was performed using GTR + GAMMA substitution model (General Time Reversible with gamma distributed rates heterogeneity) , a strict molecular clock model, and a coalescent constant size demographic model, as previously described (López et al., 2020). Three independent runs of Markov Chain Monte-Carlo length chains of 10 million were performed. Adequate mixing, convergence, and sufficient sampling were assessed in Tracer v1.6, after a 10% burn-in.
 
-## Tracking historical TLs
+### Tracking historical TLs
 
 Historical TLs were defined as nodes or tree bifurcations occurring over time phylogenies (Appendix 1—figure 2). The rationale for this approach is based on the assumption that if few pathogen mutations are expected to be observed during a host’s infection, as is the case of M. tuberculosis, lineages split only at transmission (Hall et al., 2016). In addition, as M. tuberculosis is an obligate pathogen, every strain is by definition, linked to others by recent or historical transmission events. In this sense, each node in the phylogeny represents a minimum one, and likely many, person-to-person transmission. Tips in the tree are the result of decades of transmission or, which is the same, multiple transmission events occurring along the branch; however, most of the secondary cases generated are missing, as they do not develop active TB or were cured before sampling (among other reasons, Appendix 1—figure 2A). Thus, only those lineages persisting until sampling time were recovered (Appendix 1—figure 2B). Moreover, the greater the transmission and the more sustained over time, the greater the chance of recovering secondary cases today. In addition, to estimate the time of the TLs, we used the time of the node, or the common ancestor, as this is the lower bound when the strain starts to circulate. Thus, each TL summarizes the number and time of the transmission along each tree branch. This analysis was conducted in the time trees generated with Beast, including both local and foreign cases; in order to avoid introductions we excluded nodes in which foreign samples appeared as ancestors, and only counted nodes including local-born tips occurring within 150 years before 2016 (yB 2016).
 
@@ -116,17 +116,17 @@ This analysis does not intend to define the direction of transmission or the exa
 
 ## Results
 
-## M. tuberculosis population structure and demographic characteristics in Valencia region
+### M. tuberculosis population structure and demographic characteristics in Valencia region
 
 We sequenced 77% of the TB culture-positive cases reported between 2014 and 2016 in Valencia region with a 4.3 million population. Around 10 samples were removed as non-MTBC isolates or likely mixed infections (Supplementary file 1). We identified 6 different lineages (L) circulating in the region (Coll et al., 2014; Stucki et al., 2016), with L4 the most frequent (92.1%) (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig1-v1.jpg)
 
-**Figure 1.:** (A) Phylogeny of 775 tuberculosis (TB) isolates collected during the years 2014 and 2016. Each ring represents genomic clusters detected by different single nucleotide polymorphism (SNP) thresholds (0, 5, and 12 SNPs). Mycobacterium canneti was used as an outgroup. (B) Clustering percentage, i.e. percentage of samples within clusters for different SNP thresholds. (C) Number of genomic clusters by different cluster sizes. A 12 SNP threshold was used as a standard. Cluster sizes of 8–11 samples were not detected. *Nomenclature proposed by Comas et al., 2013.Figure 1—source data 1.Cluster ID; number of Spanish. Foreign and unknown origin cases and total cluster size are indicated.
+**Figure 1.:** (A) Phylogeny of 775 tuberculosis (TB) isolates collected during the years 2014 and 2016. Each ring represents genomic clusters detected by different single nucleotide polymorphism (SNP) thresholds (0, 5, and 12 SNPs). Mycobacterium canneti was used as an outgroup. (B) Clustering percentage, i.e. percentage of samples within clusters for different SNP thresholds. (C) Number of genomic clusters by different cluster sizes. A 12 SNP threshold was used as a standard. Cluster sizes of 8–11 samples were not detected. *Nomenclature proposed by Comas et al., 2013.
 
 Characteristics of TB cases are summarized in Supplementary file 3, reporting the sequenced samples as a representative subset of the total culture-positive cases. TB incidence in the region ranged between 8.3 and 8.7 with higher incidence in migrants (mean 23.6) than in local born individuals (mean 6.9). Detailed epidemiological analysis of TB cases in Valencia region is presented in Supplementary file 3 and Supplementary file 4, remarkably 63% of all cases were Spanish-born patients, while 30% came from high-incidence countries, and 7% from other low-incidence countries. When we observed risk factors associated with TB, we found that diabetes was present in 10.4% of cases; although this was more prevalent in Spanish-born patients (OR 2.7, CI 1.5–5.4, p<0.001), values were similar to diabetes prevalence in the general Spanish population.
 
-## Epidemiological and gClustering
+### Epidemiological and gClustering
 
 Conventional contact tracing investigations (see Methods) identified 66 epidemiological clusters, including 97 cases, accounting for 12.5% of transmission in the Valencia region (Figure 1B). Considering the widely used pairwise distance threshold of 12 SNPs for defining transmission, we identified 112 gClusters, including 331 (42.7%) patients, with cluster size ranging from 2 to 12 cases (Figure 1C, Figure 1—source data 1). Although these clusters included foreign-born patients, Spanish-born patients were more likely part of genomically linked groups (OR 2, CI 1.44–2.79, p<0.001). In this regard, 42 gClusters exclusively comprised Spanish-born patients and 8 included only foreign-born patients.
 
@@ -140,15 +140,94 @@ We also assessed gClusters considering lower SNP thresholds, and observed that i
 
 We benchmarked WGS as a tool to quantify transmission against contact tracing, using the latter as the gold standard (Diel et al., 2019). In general, as the SNP threshold decreases, sensitivity diminishes, but specificity and accuracy increases (Supplementary file 6). A ROC curve establishes 11.5 SNPs as the optimal value for the SNP cut-off that maximizes the agreement between epidemiological investigation and genomic data, with an area under the curve higher than 0.9 (Figure 2B). Then, we used 12 SNPs threshold to define clusters in the following analyses.
 
-## Genetic thresholds for transmission are not universal across settings
+### Genetic thresholds for transmission are not universal across settings
 
 Next, we calculated the percentage of Spanish-born cases clustered by a range of pairwise distances (0–150 SNPs) and compared with the clustering of local cases in other settings (Guerra-Assunção et al., 2015; Walker et al., 2014), where more than 70% of all culture-positive cases were sequenced. We observed a bimodal pattern for Oxfordshire, with the transmission groups clearly differentiated from the other unlinked cases with distances higher than 50 SNPs. These findings agree with the 12 SNP value proposed as a means to identify recent transmission in low-burden settings (Walker et al., 2014). For the Valencia region and Malawi, strains group in a large range of distance thresholds (SNPs 0–150). Thus, there exists a continuous clustering throughout the distance values. The results strongly suggest that a strict transmission threshold of 12 SNPs (or any other threshold) does not apply to all the settings when analyzing transmission dynamics, particularly in those places with higher transmission burdens (Figure 3A), and specially if we want to understand long-term transmission (i.e. the survival and expansion of particular clones/strains in a population). However, strict SNP thresholds are informative to health authorities (see Discussion).
 
-## Age of local gClusters at different SNP thresholds and impact on public health
+![Figure 3.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-v1.jpg)
+
+**Figure 3.:** (A) Distribution of local-born cases clustered by different pairwise distance SNP thresholds. Cases are expressed as the percentage of the plotted samples. Pie charts represent the proportion of local-born (color) and foreign-born (gray) cases in each dataset. (B) Age of local transmission links over time in each setting. Circles represent median time, and lines represent 95% high probability density for each transmission link counted. Circle size represents the number of samples included in the corresponding link. Red denotes those transmission links including only samples within the same genomic transmission clusters (gClusters), green denotes links involving samples from different gClusters, blue denotes samples within gClusters and unique, and purple denotes unique cases. All links were obtained from Figure 3—figure supplements 1–6 and are summarized in Figure 3—source data 1–6.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Sample names in bold represent local born cases. Local clusters (CLs) are highlighted in orange and mixed CLs in green (those including foreign cases). The CL numbers are crossreferenced in Figure 3—source data 1. The transmission links’ (TLs’) dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent Bayesian posterior values being red the highest posterior, blue median, and green the lowest values. Numbers in TLs nodes are crossreferenced in Figure 3—source data 4.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Sample names in bold represent local born cases. Local clusters (CLs) are highlighted in orange and mixed CLs in green (those including foreign cases). The CL numbers are crossreferenced in Figure 3—source data 2. The transmission links’ (TLs’) dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent Bayesian posterior values being red the highest posterior, blue median, and green the lowest values. Numbers in TLs nodes are crossreferenced in Figure 3—source data 5.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Sample names in bold represent local born cases. Local clusters (CL) are highlighted in orange and mixed CL in green (those including foreign cases). The CL numbers are crossreferenced in Figure 3—source data 3. The transmission links’ (TLs’) dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent Bayesian posterior values being red the highest posterior, blue median and green the lowest values. Numbers in TLs nodes are crossreferenced in Figure 3—source data 6.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Sample names in bold represent local born cases. Local clusters are highlighted in orange and mixed clusters in green (those including foreign cases). CL numbers are crossreferencied in Figure 3—source data 3. TLs’ dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent bayesian posterior values being red the highest posterior, blue median and green the lowest values. Numbers in TLs nodes are cross referencend in Figure 3—source data 6.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Sample names in bold represent local born cases. Local clusters are highlighted in orange and mixed clusters in green (those including foreign cases). CL numbers are crossreferencied in Figure 3—source data 3. TLs’ dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent bayesian posterior values being red the highest posterior, blue median and green the lowest values. Numbers in TLs nodes are crossreferencend in Figure 3—source data 6.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/76605/elife-76605-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Sample names in bold represent local born cases. Local clusters are highlighted in orange and mixed clusters in green (those including foreign cases). CL numbers are crossreferencied in Figure 3-source data 3. TLs’ dates used in the analysis are indicated in bold and expressed as AD, the other TLs’ dates are indicated as years before 2016 AD. Branch colors represent bayesian posterior values being red the highest posterior, blue median and green the lowest values. Numbers in TLs nodes are crossreferencend in Figure 3—source data 6.
+
+### Age of local gClusters at different SNP thresholds and impact on public health
 
 Next, we evaluated how old are the gClusters identified by the standard 12 SNP threshold. Thus, we inferred the age of the local gClusters for the three settings. Dating results of the youngest and the oldest gClusters are summarized in Table 1, while complete results are detailed in Figure 3—source data 1–3. We can trace gClusters 31 years back from the most recent sample collected for both the Valencia region and Malawi; however, we only retrieved samples that formed part of gClusters, 19 years before the most recent Oxfordshire sample. The alternative time calibration samples included (Appendix 1) displayed similar results, thereby allowing comparisons among datasets. Our inference of clusters’ ancestors are in agreement with previous studies, using a similar Bayesian approach, and defining a timespan of up to 10 years for 5 SNP cut-offs (Meehan et al., 2018). Thus many genomic links based on 12 SNP distance are beyond the action of public health interventions. Using data from Valencia region, we further investigated the role of genomic distances in public health by evaluating the age of epidemiologically linked cases. Most of the epidemiologically linked cases have a common ancestor less than 10 years before the most recent sample, and the distance between samples typically ranged between 0 and 4 SNPs, with only one individual link separated by 11 SNPs (Supplementary file 5). While the ROC curve indicated a 12 SNP threshold to capture most epidemiological links, the reality is that strains linked by more than 5 SNP are beyond the action of public health interventions as they involve too old TLs. Our results imply that events useful for public health investigations are better captured by a 5 SNP threshold even though some epidemiological links are missing. But the reverse is also true, and more dramatic. Even when using a 5 SNP threshold public health only identifies around 15% of the cases in gClusters. This holds true even for pairs of isolates with 0 SNP differences. The many genomic links missed by public health investigations in Valencia region reminds of what is seen in high-burden countries, where contagion occurs outside the traditional household or work settings.
 
-## Historical TLs between clinical settings highlight distinct epidemic dynamics
+**Table 1.**
+ Dating of local genomic clusters (gCluster).Times of the oldest and youngest local gClusters obtained by a Bayesian analysis are presented, with values in years (AD) and 95% highest posterior density given in brackets. The number of gClusters and clustering percentage is provided for each dataset. The median distance ranges for all gClusters are also detailed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Sampling period</th>
+      <th>Local samples</th>
+      <th>N local gCluster</th>
+      <th>Local clustering</th>
+      <th>Median distance range</th>
+      <th>Oldest gCluster</th>
+      <th>Youngest gCluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Oxfordshire</td>
+      <td>2006–2012</td>
+      <td>74</td>
+      <td>6</td>
+      <td>27%</td>
+      <td>0–7</td>
+      <td>1993 (1982–2003)</td>
+      <td>2009 (2003–2012)</td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>2008–2010</td>
+      <td>106</td>
+      <td>40</td>
+      <td>49.80%</td>
+      <td>0–14</td>
+      <td>1979 (1968–1988)</td>
+      <td>2009 (2004–2010)</td>
+    </tr>
+    <tr>
+      <td>Valencia region</td>
+      <td>2014–2016</td>
+      <td>456</td>
+      <td>65</td>
+      <td>47.40%</td>
+      <td>0–11</td>
+      <td>1985 (1972–1996)</td>
+      <td>2015 (2012–2016)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Historical TLs between clinical settings highlight distinct epidemic dynamics
 
 In order to evaluate transmission dynamics in a setting over time, we defined historical TLs as the common ancestor of two circulating strains up to 150 yB 2016. To notice, we did not try to quantify how many transmission events have happened over the last 150 years. Our rationale is that many person-to-person transmission events likely occurred along branches between nodes or nodes and terminals, they are impossible to quantify, but we can summarize all these events as one TL, as we are confident that at least one transmission event occurred along the branch. The exact time of the transmission is not possible to estimate either, instead our rationale is that when two circulating strains had a common TL in the past, this ancestor represents a lower-bound for when the strains started to circulate. Thus, we compare how many links have occurred during a period of time among different settings, as an approach of long term transmission dynamics analysis. In our approach, we only considered genomic data from local-born patients to avoid the influence of imported genotypes in our analysis.
 
@@ -160,19 +239,19 @@ In the above analysis we had two strong assumptions. First, that the historical 
 
 Here, we present the first population-based study of TB transmission in Spain based on WGS. We sequenced the whole genome of a representative proportion of all the TB notified cases in the Valencia region that provides an accurate picture of the bacterial population structure, during 3 years. We exhaustively researched TB transmission linked to local epidemiological data and, by comparing to other settings, highlighted four main characteristics defining dynamics and influence on TB incidence.
 
-## Transmission can play a significant role in low-burden countries, especially among local-born patients
+### Transmission can play a significant role in low-burden countries, especially among local-born patients
 
 The percentage of genomically linked cases (12 SNPs) of around 43% in the total population, increases to 47% among the Spanish-borns being 31% among imported cases, suggesting that transmission among locally born patients majorly contributes to disease burden. These percentages remain high when considering a stricter threshold of 5 SNPs for clustering (35 vs. 39%, respectively). We found higher transmission in the Valencia region compared to other population based studies conducted in low-burden settings, where clustering rates ranged between 14 and 16% (Jajou et al., 2018; Walker et al., 2014) and somewhat closer to that reported in mid and high TB-incidence settings (39–85%) (Guerra-Assunção et al., 2015; Gygli et al., 2021; Khan et al., 2019; Saavedra et al., 2022; Walker et al., 2022; Yang et al., 2022; Yates et al., 2016). High transmission among Spanish-born individuals is a major contributor to disease burden in Valencia. By contrast, reactivation of infections in imported cases from high-burden settings is the significant driver in other low-burden settings (Jajou et al., 2018; Kamper-Jørgensen et al., 2012; Meumann et al., 2021; Walker et al., 2014). Thus, our results reveal the heterogeneity of the TB epidemic among settings, highlighting the lack of correlation between a region’s TB burden and the level of local transmission.
 
-## Community transmission can majorly contribute to TB cases in a low burden setting
+### Community transmission can majorly contribute to TB cases in a low burden setting
 
 In low-burden TB settings, comparison between contact tracing and WGS revealed that between 38 and 57% of genomically linked cases had also an epidemiological link (Diel et al., 2019; Jajou et al., 2018; Walker et al., 2014). In high-burden settings, which suffer from rampant community transmission (Yates et al., 2016), the agreement between both approaches is significantly lower (8–19%) (Auld et al., 2018; Middelkoop et al., 2015; Verver et al., 2004). In the Valencia region, we observed an agreement similar to high-burden settings (15.4%), meaning that almost 80% of transmission is missing by the health system, despite contact tracing being conducted in 78% of cases. As has suggested for high-burden settings, contact tracing among household close contacts will not have a significant effect on TB incidence at a community level (McCreesh and White, 2018; Surie et al., 2017), since much of transmission may result from casual contact in community settings between individuals not known to one another (Auld et al., 2018; Guerra-Assunção et al., 2015) and also, transmission associates more with social drivers, including the ways in which individuals interact and congregate (Andrews et al., 2014; Mathema et al., 2017). Thus, our results support that community transmission is behind the lack of agreement between genomic and epidemiological clusters observed in the Valencia region, and highlights its relevance in low burden settings.
 
-## Genomic links are older than epidemiological links
+### Genomic links are older than epidemiological links
 
 The Valencia region’s oldest gClusters dated to around 30 years before the sampling period. When considering only strains epidemiologically linked, the oldest most recent common ancestor can be traced less than 10 years. Thus, a 12 SNP threshold identifies both recent and older transmission events. A 5 SNP threshold dates clusters between 1999 and 2015 in agreement with recent transmission rendering more actionable results for public health, as was previously shown (Jajou et al., 2018; Meehan et al., 2018). However, a 5 SNP threshold still misses a percentage of cases linked by epidemiological data and vice versa, highlighting transmission complexity and the relevance of understanding its dynamics in each setting. Thus, a strict threshold has limitations and communicating a range, incorporating degrees of confidence, will be more valuable for public health interventions. This is particularly true in settings where transmission still has a prominent role. Communicating different thresholds allows to reveal not only very recent links, but also older TLs, which allows to evaluate the transmission burden, the impact of transmission control programmes, as well as, reveal transmission hotspots and unanticipated risk factors or community transmission, beyond the limits of contact tracing.
 
-## Continuous pairwise genetic distance distributions reflect sustained transmission over the last decades
+### Continuous pairwise genetic distance distributions reflect sustained transmission over the last decades
 
 The evaluation of local-born cases in the Valencia region revealed continuous clustering across genetic distances, similar to Malawi. In both settings, differentiation between linked and unlinked cases seems arbitrary, as a clear SNP cut-off to delineate genomic transmission could not provide precise results (Figure 4A). This contrasts with the results of Oxfordshire, where clustering does not change in the range of 12–150 SNPs (Figure 4B). In this sense, the SNP threshold choice used to differentiate transmission from unrelated cases remains challenging even in low-burden settings and provides only tentative information (Meehan et al., 2019). An in-depth evaluation of clustering in each setting is needed to understand its particular transmission dynamics. Furthermore, the Valencia region and Malawi also display continuous and sustained TLs over time (Figure 4C). Those events outside the genomic transmission clusters likely reflect older contagion chains that still contribute to TB incidence today, as a consequence, clustering is continuous in settings exhibiting this transmission dynamics. The lack of effective past efforts to halt transmission may represent a plausible explanation. Epidemiological data demonstrates that Spain will likely attain a country profile similar to the UK and other low-burden, high-immigration countries. The higher transmission and the older age of transmission chains likely reflects a situation in which Spain suffered from higher disease incidence for most of the 20th century, reflecting its lower socioeconomic status than neighboring countries. The current control strategies in place in the Valencia region meet the WHO’s target to reduce TB, including active case findings of close contacts since the 1990s. Improved TB control has led to a continuous drop in case numbers and to an incidence from 22 to 6.4 in the last 20 years. By contrast, Oxfordshire displays a bimodal distribution of clustering across pairwise distances, and also lacked transmission events other than those involving 12 SNP gClusters (Figure 4). These results agree with the robust reduction in both disease incidence and transmission that occurred until the beginning of the 1990s in the UK; after that, increased HIV infections, immigration and the emergence of TB drug resistance fueled the expansion of TB (Glaziou et al., 2018). In accordance with this data, we dated ongoing transmission in Oxfordshire back to 1993. Our results imply uninterrupted transmission of TB in Valencia region and Malawi and not in Oxfordshire and offer an explanation for the differences in SNP distributions across settings (Figure 4A and B).
 

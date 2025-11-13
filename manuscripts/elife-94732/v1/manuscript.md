@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05cy4wa09 Wellcome Sanger Institute Hinxton United Kingdom
+1. Wellcome Sanger Institute Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
 2. Genome Research Limited Hinxton United Kingdom
-3. https://ror.org/01kj2bm70 Newcastle University Newcastle upon Tyne United Kingdom
-4. https://ror.org/05p40t847 Newcastle Hospitals NHS Foundation Trust Newcastle upon Tyne United Kingdom
-5. https://ror.org/04kjcjc51 Brazilian Biosciences National Laboratory, National Center for Research in Energy and Materials (LNBIO-CNPEM) São Paulo Brazil
+3. Newcastle University Newcastle upon Tyne United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))
+4. Newcastle Hospitals NHS Foundation Trust Newcastle upon Tyne United Kingdom ([ROR:05p40t847](https://ror.org/05p40t847))
+5. Brazilian Biosciences National Laboratory, National Center for Research in Energy and Materials (LNBIO-CNPEM) São Paulo Brazil ([ROR:04kjcjc51](https://ror.org/04kjcjc51))
 
 † Corresponding author
 
@@ -31,6 +31,53 @@ As well as being inherently unjust, underrepresentation also hinders scientific 
 Here, we describe a scheme to address Black underrepresentation among early-career researchers at the Wellcome Sanger Institute in the UK. The recipients of the first three Sanger Excellence Fellowships were announced in October 2022 (Figure 1), three were awarded in 2023, and the third round of applications opened in February 2024 (see Box 1). Our scheme is one of a small number of schemes aiming to tackle underrepresentation in science in the UK (see Table 1 for other examples). Of note, the Royal Society is also running a pilot scheme that offers four-year Career Development Fellowships to Black postdoctoral researchers (applications now closed), while Wellcome has just announced a scheme to fund researchers of Black, Bangladeshi and Pakistani heritage in the UK.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94732/elife-94732-fig1-v1.jpg)
+
+**Table 1.**
+ Examples of current schemes tackling underrepresentation in science in the UK.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>General schemes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cowrie Scholarship Foundation Undergraduate: Supports disadvantaged Black British students at UK universities.</td>
+    </tr>
+    <tr>
+      <td>Royal Society Career Development Fellowship Postdoctoral: Four-year fellowships to retain researchers from underrepresented backgrounds in science, technology, engineering and mathematics.</td>
+    </tr>
+    <tr>
+      <td>Health Data Science Black Internship Programme Workforce: Eight-week paid internships to tackle the underrepresentation of Black people within the health data science sector.</td>
+    </tr>
+    <tr>
+      <td>Wellcome: Targeted funding for researchers of Black, Bangladeshi and Pakistani heritage Postdoctoral and higher: Awards of up to £200,000 to support researchers of Black, Bangladeshi and Heritage in the UK to stay in research and advance their careers. Total funding is £20 million over four years.</td>
+    </tr>
+    <tr>
+      <td>Schemes at specific institutions</td>
+    </tr>
+    <tr>
+      <td>Stormzy Scholarship for Black UK Students (University of Cambridge) Undergraduate: Scholarships to provide financial support for Black UK students at Cambridge.</td>
+    </tr>
+    <tr>
+      <td>Excel in Science Internship Programme (University of Nottingham) Undergraduate: Paid internships to give budding researchers the opportunity to gain hands-on research experience at Nottingham.</td>
+    </tr>
+    <tr>
+      <td>Surrey Black Scholars Programme (University of Surrey). Undergraduate and postgraduate: Programme to provide Black British students at Surrey with the resources, support and environment necessary to achieve excellence and pursue rich and rewarding careers after graduation.</td>
+    </tr>
+    <tr>
+      <td>James McCune Smith PhD Scholarships (University of Glasgow) Postgraduate: Scholarships to fund Black UK students to undertake PhD research at Glasgow.</td>
+    </tr>
+    <tr>
+      <td>Academic Futures Scholarship (University of Oxford) Postgraduate: A series of scholarship programmes to address underrepresentation and help improve equality, diversity and inclusion among graduate students at Oxford.</td>
+    </tr>
+    <tr>
+      <td>Cancer Research UK: Black Leaders in Cancer PhD Scholarship Programme (CRUK City of London and Cambridge Centres) Postgraduate: Programme aimed at students from Black heritage backgrounds pursuing a PhD in cancer-related fields.</td>
+    </tr>
+  </tbody>
+</table>
 
 We recognize that our programme is a work in progress, and there is still a great deal to do to improve representation at the Sanger, and in the scientific community in the UK more widely. But by developing a programme that centres the voices of Black academics, and is continually guided by feedback, we hope we can enthuse and inspire other organisations to consider how they can take practical steps to reduce inequalities in scientific research and wider academia.
 

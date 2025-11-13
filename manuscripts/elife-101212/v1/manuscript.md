@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 University of California, San Diego San Diego United States
+1. University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 

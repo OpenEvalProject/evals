@@ -6,9 +6,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04cvxnb49 Institute of Cardiovascular Regeneration, Goethe University Frankfurt Frankfurt am Main Germany
+1. Institute of Cardiovascular Regeneration, Goethe University Frankfurt Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
 2. Cardiopulmonary Institute Frankfurt am Main Germany
-3. https://ror.org/031t5w623 DZHK, site Rhine-Main Frankfurt am Main Germany
+3. DZHK, site Rhine-Main Frankfurt am Main Germany ([ROR:031t5w623](https://ror.org/031t5w623))
 
 † Corresponding author
 

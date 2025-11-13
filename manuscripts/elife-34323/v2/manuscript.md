@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.34323.001 Patients with Gorham-Stout disease (GSD) have lymphatic vessels in their bones and their bones gradually disappear. Here, we report that mice that overexpress VEGF-C in bone exhibit a phenotype that resembles GSD. To drive VEGF-C expression in bone, we generated Osx-tTA;TetO-Vegfc double-transgenic mice. In contrast to Osx-tTA mice, Osx-tTA;TetO-Vegfc mice developed lymphatics in their bones. We found that inhibition of VEGFR3, but not VEGFR2, prevented the formation of bone lymphatics in Osx-tTA;TetO-Vegfc mice. Radiological and histological analysis revealed that bones from Osx-tTA;TetO-Vegfc mice were more porous and had more osteoclasts than bones from Osx-tTA mice. Importantly, we found that bone loss in Osx-tTA;TetO-Vegfc mice could be attenuated by an osteoclast inhibitor. We also discovered that the mutant phenotype of Osx-tTA;TetO-Vegfc mice could be reversed by inhibiting the expression of VEGF-C. Taken together, our results indicate that expression of VEGF-C in bone is sufficient to induce the pathologic hallmarks of GSD in mice.
+Patients with Gorham-Stout disease (GSD) have lymphatic vessels in their bones and their bones gradually disappear. Here, we report that mice that overexpress VEGF-C in bone exhibit a phenotype that resembles GSD. To drive VEGF-C expression in bone, we generated Osx-tTA;TetO-Vegfc double-transgenic mice. In contrast to Osx-tTA mice, Osx-tTA;TetO-Vegfc mice developed lymphatics in their bones. We found that inhibition of VEGFR3, but not VEGFR2, prevented the formation of bone lymphatics in Osx-tTA;TetO-Vegfc mice. Radiological and histological analysis revealed that bones from Osx-tTA;TetO-Vegfc mice were more porous and had more osteoclasts than bones from Osx-tTA mice. Importantly, we found that bone loss in Osx-tTA;TetO-Vegfc mice could be attenuated by an osteoclast inhibitor. We also discovered that the mutant phenotype of Osx-tTA;TetO-Vegfc mice could be reversed by inhibiting the expression of VEGF-C. Taken together, our results indicate that expression of VEGF-C in bone is sufficient to induce the pathologic hallmarks of GSD in mice.
 
 ## Introduction
 
@@ -39,13 +39,33 @@ Vascular endothelial growth factor-C (VEGF-C) is the principle driver of lymphan
 
 ## Results
 
-## VEGF-C induces the formation of bone lymphatics
+### VEGF-C induces the formation of bone lymphatics
 
 Osterix (Osx) is a transcription factor expressed by chondrocytes, osteocytes, and osteoblasts (Zhou et al., 2010). A transgenic mouse line was previously created in which the expression of a tetracycline transactivator (tTA) cassette was placed under the control of the Osx promoter (Rodda and McMahon, 2006). This transgenic mouse line also has a TetO-Cre::GFP cassette located immediately downstream of the tTA cassette (Rodda and McMahon, 2006). To identify cell types that display tTA activity in Osx-tTA-TetO-Cre::GFP mice, we characterized the expression pattern of the Cre::GFP fusion protein with an anti-green fluorescent protein (GFP) antibody. GFP was expressed by chondrocytes, osteocytes, and osteoblasts (Figure 1—figure supplement 1). GFP was not expressed by cells in the kidney, liver, lung, pancreas, skeletal muscle, or spleen (Figure 1—figure supplement 1). These data show that tTA activity in Osx-tTA-TetO-Cre::GFP mice (herein referred to as Osx-tTA) is restricted to bone.
 
 To induce VEGF-C expression in bone, we bred Osx-tTA transgenic mice with TetO-Vegfc transgenic mice (Figure 1—figure supplement 2). No viable Osx-tTA;TetO-Vegfc offspring were obtained from these crosses. To determine whether Osx-tTA;TetO-Vegfc mice died during embryonic development, we analyzed mice on embryonic day (E)12.5, E14.5, and E16.5. Osx-tTA;TetO-Vegfc mice were grossly indistinguishable from control littermates on E12.5. However, Osx-tTA;TetO-Vegfc mice were severely edematous and displayed enlarged lymphatics on E14.5. All Osx-tTA;TetO-Vegfc mice were in the process of being resorbed on E16.5 (Figure 1—figure supplement 2). These data indicate that VEGF-C expression by bone cells during embryonic development has a lethal effect. To overcome this lethal effect, we bred Osx-tTA mice with TetO-Vegfc mice and placed mice on doxycycline water from E0.5 to E18.5. Mice were then placed on normal water to induce the expression of VEGF-C during postnatal development. To determine whether VEGF-C expression by bone cells induced the formation of bone lymphatics, we stained femurs from 21, 28, and 35-day-old Osx-tTA and Osx-tTA;TetO-Vegfc mice with an anti-podoplanin antibody. Lymphatic vessels were not present in femurs from 21, 28, or 35-day-old Osx-tTA mice. Similarly, lymphatic vessels were not present in femurs from 21-day-old Osx-tTA;TetO-Vegfc mice. In contrast, lymphatic vessels were present in femurs from 28-day-old Ox-tTA;TetO-Vegfc mice. However, lymphatic vessels were restricted to cortical bone (the dense outer shell of bone). In 35-day-old Osx-tTA;TetO-Vegfc mice, lymphatic vessels were located in cortical bone, trabecular bone, and the marrow cavity (Figure 1). Tibias and ribs from 35-day-old Osx-tTA;TetO-Vegfc mice also had lymphatics (Figure 1—figure supplement 3). These vessels expressed Lyve-1, another marker of lymphatic endothelium (Figure 1—figure supplement 3). Although 35-day-old Osx-tTA;TetO-Vegfc mice had hyperplastic lymphatics in bones, lymphatics in soft tissues (kidney, liver, lungs, and pancreas) appeared normal and the circulating level of VEGF-C was not elevated (Figure 1—figure supplement 4). These data indicate that expression of VEGF-C in bone induces the formation of bone lymphatics, but not the growth of lymphatics in distant tissues.
 
-## VEGFR3 signaling is required for the formation of bone lymphatics
+![Figure 1.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the Tet-Off system used to express VEGF-C in bone. Doxycycline inhibits the expression of VEGF-C. (B) Schematic showing when mice received normal water and doxycycline water. Osx-tTA and Osx-tTA;TetO-Vegfc mice received doxycycline water from E0.5 to E18.5 and then normal water from E18.5 to P35. (C–H) Representative images of cortical bone in Osx-tTA and Osx-tTA;TetO-Vegfc femurs. Sections were stained with an anti-podoplanin antibody. Arrowheads point to podoplanin-positive osteocytes. Arrows point to podoplanin-positive lymphatics. (I) Graph showing lymphatic vessel index values for cortical bone in P21 (0 ± 0.0; n = 3), P28 (0 ± 0.0; n = 5), and P35 (0 ± 0.0; n = 6) Osx-tTA mice and in P21 (0 ± 0.0; n = 4), P28 (67 ± 22.06; n = 4), and P35 (130.3 ± 44.35; n = 4) Osx-tTA;TetO-Vegfc mice. (J–O) Representative images of trabecular bone in Osx-tTA and Osx-tTA;TetO-Vegfc femurs. Sections were stained with an anti-podoplanin antibody. Arrowheads point to podoplanin-positive osteocytes. Arrow points to podoplanin-positive lymphatics. (P) Graph showing lymphatic vessel index values for trabecular bone in P21 (0 ± 0.0; n = 3), P28 (0 ± 0.0; n = 5), and P35 (0 ± 0.0; n = 6) Osx-tTA mice and P21 (0 ± 0.0; n = 4), P28 (0.167 ± 0.4082; n = 6), and P35 (189.5 ± 47.7; n = 4) Osx-tTA;TetO-Vegfc mice. (***p<0.001, ****p<0.0001, unpaired student’s T-test). ND = Not Detected.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the Osx-tTA-TetO-tTA-Cre::GFP cassette. When doxycycline is absent, tetracycline transactivator (tTA) induces the expression of a Cre::GFP fusion protein. (B) Representative images of tissues stained with an anti-GFP antibody. Tissues were collected from P35 Osx-tTA-TetO-tTA-Cre::GFP mice that were maintained on normal water. Chondrocytes, osteocytes (arrowheads), and osteoblasts (arrows) expressed GFP. Cells in the liver, lung, muscle, pancreas, spleen, and kidney did not express GFP.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic showing when mice received normal water. (B–C) Representative images of E12.5, E14.5 and E16.5 control embryos. (E–G) Representative images of E12.5, E14.5 and E16.5 Osx-tTA;TetO-Vegfc embryos. (H,I) Transverse sections of E14.5 embryos stained with hematoxylin and eosin. The jugular lymph sac (asterisk) in the control embryo appears normal. In contrast, the jugular lymph sac (asterisk) in the Osx-tTA;TetO-Vegfc embryo is enlarged.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) No Lyve-1-positive cells are in tibias from P35 Osx-tTA mice. (B) Numerous Lyve-1-positive lymphatics are in tibias from P35 Osx-tTA;TetO-Vegfc mice. (C) No Lyve-1-positive cells are in ribs from P35 Osx-tTA mice. (D) Numerous Lyve-1-positive lymphatics are in ribs from P35 Osx-tTA;TetO-Vegfc mice.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative pictures of tissues collected from P35 Osx-tTA and Osx-tTA;TetO-Vegfc mice. Lymphatics in the lung, liver, kidney, and pancreas appeared normal in Osx-tTA;TetO-Vegfc mice. (B) Graph showing the circulating level of VEGF-C in P35 Osx-tTA (2.04 ± 1.42, n = 8) and Osx-tTA;TetO-Vegfc (2.387 ± 0.94, n = 7) mice.
+
+### VEGFR3 signaling is required for the formation of bone lymphatics
 
 VEGF-C activates VEGFR2 and VEGFR3 (Joukov et al., 1996). However, VEGF-C is thought to primarily induce lymphangiogenesis by activating VEGFR3 (Veikkola et al., 2001). To determine whether VEGF-C activation of VEGFR2 or VEGFR3 was required for the formation of bone lymphatics, we treated 21-day-old Osx-tTA;TetO-Vegfc mice with vehicle, DC101 (VEGFR2 function-blocking antibody), or mF4-31C1 (VEGFR3 function-blocking antibody) for 2 weeks. The density of bone lymphatics was modestly reduced in DC101-treated mice. In contrast, bone lymphatics failed to form in mF4-31C1-treated mice (Figure 2). These data show that VEGFR3 signaling is required for the development of bone lymphatics in Osx-tTA;TetO-Vegfc mice.
 
@@ -55,9 +75,21 @@ VEGF-C activates VEGFR2 and VEGFR3 (Joukov et al., 1996). However, VEGF-C is tho
 
 In contrast to murine VEGF-C, murine VEGF-D only activates VEGFR3 (Baldwin et al., 2001). A transgenic mouse strain was recently created in which the expression of murine VEGF-D is controlled by doxycycline (Lammoglia et al., 2016). To determine whether murine VEGF-D could induce the formation of bone lymphatics, we generated Osx-tTA;TetO-Vegfd mice. Osx-tTA;TetO-Vegfd mice received doxycycline water from E0.5 to E18.5 and then normal water from E18.5 to postnatal day (P) 35. Importantly, femurs from Osx-tTA;TetO-Vegfd mice were filled with lymphatic vessels (Figure 2). These data show that activation of VEGFR3 is sufficient for the formation of bone lymphatics.
 
-## Bone loss in Osx-tTA;TetO-Vegfc mice is mediated by osteoclasts
+### Bone loss in Osx-tTA;TetO-Vegfc mice is mediated by osteoclasts
 
 To characterize the effect of VEGF-C expression by bone cells on bone structure, we X-rayed femurs from 21, 28, and 35-day-old Osx-tTA and Osx-tTA;TetO-Vegfc mice. Femurs from 21-day-old Osx-tTA;TetO-Vegfc mice appeared normal and were indistinguishable from femurs from Osx-tTA mice (Figure 3—figure supplement 1). In contrast, femurs from 28- and 35-day-old Osx-tTA;TetO-Vegfc mice had a moth-eaten appearance (Figure 3—figure supplement 1). The development of this phenotype coincided with the formation of lymphatics in cortical bone. To further characterize the structure of cortical bone, we took μCT images of femurs and ribs from 35-day-old Osx-tTA and Osx-tTA;TetO-Vegfc mice. This revealed that bones from Osx-tTA;TetO-Vegfc mice were significantly more porous than bones from Osx-tTA mice (Figure 3). To determine whether the structural defects in Osx-tTA;TetO-Vegfc bones affected bone strength, we performed a three-point bending assay. The three-point bending assay revealed that femurs from Osx-tTA;TetO-Vegfc mice were significantly weaker than femurs from Osx-tTA mice (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig3-v2.jpg)
+
+**Figure 3.:** (A,B) Representative μCT images of femurs from Osx-tTA and Osx-tTA;TetO-Vegfc mice. (C) Graph showing cortical bone porosity for femurs from Osx-TA (0.062 ± 0.0292, n = 5) and Osx-tTA;TetO-Vegfc (0.209 ± 0.0204, n = 6) mice. (D,E) Representative μCT images of ribs from Osx-tTA and Osx-tTA;TetO-Vegfc mice. (F) Graph showing cortical bone porosity for ribs from Osx-TA (0.024 ± 0.00293, n = 4) and Osx-tTA;TetO-Vegfc (0.165 ± 0.0265, n = 4) mice. (G) Graph showing results from the three-point bending assay. Less force was required to break bones from Osx-TA;TetO-Vegfc mice (5.96 ± 1.404, n = 11) than Osx-tTA mice (9.231 ± 1.355, n = 9) mice. (H,I) Representative images of TRAP-stained femurs from Osx-tTA and Osx-tTA;TetO-Vegfc mice. (J) Graph showing the number of osteoclasts per mm of bone for Osx-tTA (1.18 ± 0.6818; n = 4) and Osx-tTA;TetO-Vegfc (6.84 ± 1.413; n = 4) mice. (K) Graph showing CTX-1 values for Osx-tTA (1.7 ± 2.045; n = 8) and Osx-tTA;TetO-Vegfc (53.3 ± 31.8; n = 7) mice. (***p<0.001, ****p<0.0001, unpaired student’s T-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative images of x-rayed femurs from Osx-tTA and Osx-tTA;TetO-Vegfc mice. (A–C) Femurs from P21, P28, and P35 Osx-tTA mice appear normal. (D–E) Femurs from P21 Osx-tTA;TetO-Vegfc mice appear normal, whereas femurs from P28 and P35 Osx-tTA;TetO-Vegfc mice have a moth-eaten appearance (arrows).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic for experiment with the Osteo-Assay plate. (B,C) Representative images of wells containing lymphatic endothelial cells or RAW64.7 cells (osteoclasts). (D) Graph showing the percent area resorbed by lymphatic endothelial cells (0 ± 0.0; n = 3) and RAW264.7 cells (50.83 ± 4.131, n = 3). ****p<0.0001.
 
 Next, we set out to delineate the cause of bone loss in Osx-tTA;TetO-Vegfc mice. To determine whether lymphatic endothelial cells (LECs) could directly degrade bone, we cultured RAW264.7 cells (osteoclast precursor cell line) and primary human LECs in separate wells of an osteo-assay surface plate. The osteo-assay surface plate has a calcium-phosphate coating that mimics bone. After culturing cells for 72 hr, we observed numerous resorption pits in wells containing differentiated RAW264.7 cells (osteoclasts), but not in wells containing LECs (Figure 3—figure supplement 2). This finding suggests that LECs do not directly degrade bone.
 
@@ -67,21 +99,21 @@ Zoledronic acid (also known as Zometa) is a drug that accumulates in bone and pr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig4-v2.jpg)
 
-**Figure 4.:** Osx-tTA;TetO-Vegfc mice.(A) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice were treated (q.a.d.) with vehicle or zoledronic acid from P21 to P35. (B,C) Representative images of femurs stained with an anti-podoplanin antibody. (D) Graph showing lymphatic vessel index values for vehicle-treated (171.5 ± 18.18, n = 3) and zoledronic acid-treated (165.2 ± 18.04, n = 5) mice. (E,F) Representative images of TRAP stained femurs from vehicle-treated and zoledronic acid-treated mice. (G) Graph showing the number of osteoclasts per mm of bone for vehicle-treated (7.0 ± 3.15, n = 3) and zoledronic acid-treated (1.9 ± 1.9, n = 5) mice. (H,I) Representative images of H and E stained femurs from vehicle-treated and zoledronic acid-treated mice. (J) Graph showing cortical bone porosity of femurs for vehicle-treated (0.092 ± 0.0245, n = 3) and zoledronic acid-treated (0.030 ± 0.0103, n = 5) mice. (*p<0.05, **p<0.01, unpaired student’s T-test).
+**Figure 4.:** (A) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice were treated (q.a.d.) with vehicle or zoledronic acid from P21 to P35. (B,C) Representative images of femurs stained with an anti-podoplanin antibody. (D) Graph showing lymphatic vessel index values for vehicle-treated (171.5 ± 18.18, n = 3) and zoledronic acid-treated (165.2 ± 18.04, n = 5) mice. (E,F) Representative images of TRAP stained femurs from vehicle-treated and zoledronic acid-treated mice. (G) Graph showing the number of osteoclasts per mm of bone for vehicle-treated (7.0 ± 3.15, n = 3) and zoledronic acid-treated (1.9 ± 1.9, n = 5) mice. (H,I) Representative images of H and E stained femurs from vehicle-treated and zoledronic acid-treated mice. (J) Graph showing cortical bone porosity of femurs for vehicle-treated (0.092 ± 0.0245, n = 3) and zoledronic acid-treated (0.030 ± 0.0103, n = 5) mice. (*p<0.05, **p<0.01, unpaired student’s T-test).
 
 To determine whether inhibition of lymphangiogenesis could prevent osteoclastogenesis and bone loss in Osx-tTA;TetO-Vegfc mice, we analyzed femurs from vehicle and mF4-31C1-treated mice. We focused our analysis on mF4-31C1-treated mice because these mice do not develop bone lymphatics (Figure 2). We found that femurs from mF4-31C1-treated mice had significantly fewer osteoclasts than femurs from vehicle-treated mice (Figure 5). Additionally, we found that femurs from mF4-31C1-treated mice were significantly less porous than femurs from vehicle-treated mice (Figure 5). These data show that inhibition of lymphangiogenesis can prevent osteoclastogenesis and bone loss in Osx-tTA;TetO-Vegfc mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig5-v2.jpg)
 
-**Figure 5.:** Osx-tTA;TetO-Vegfc mice.(A) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice were treated (3x/week) with vehicle or mF4-31C1 (VEGFR3 function-blocking antibody) from P21 to P35. (B,C) Representative images of TRAP stained femurs from vehicle-treated and mF4-31C1-treated mice. (D) Graph showing the number of osteoclasts per mm of bone for vehicle-treated (7.37 ± 2.088, n = 5) and mF4-31C1-treated (2.552 ± 0.6893, n = 5) mice. (E,F) Representative images of H and E stained femurs from vehicle-treated and mF4-31C1-treated mice. (G) Graph showing cortical bone porosity of femurs for vehicle-treated (0.07244 ± 0.02468, n = 5) and mF4-31C1-treated (0.006375 ± 0.007087, n = 4) mice. (**p<0.01, unpaired student’s T-test).
+**Figure 5.:** (A) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice were treated (3x/week) with vehicle or mF4-31C1 (VEGFR3 function-blocking antibody) from P21 to P35. (B,C) Representative images of TRAP stained femurs from vehicle-treated and mF4-31C1-treated mice. (D) Graph showing the number of osteoclasts per mm of bone for vehicle-treated (7.37 ± 2.088, n = 5) and mF4-31C1-treated (2.552 ± 0.6893, n = 5) mice. (E,F) Representative images of H and E stained femurs from vehicle-treated and mF4-31C1-treated mice. (G) Graph showing cortical bone porosity of femurs for vehicle-treated (0.07244 ± 0.02468, n = 5) and mF4-31C1-treated (0.006375 ± 0.007087, n = 4) mice. (**p<0.01, unpaired student’s T-test).
 
-## Inhibition of VEGF-C expression reverses the mutant phenotype of Osx-tTA;TetO-Vegfc mice
+### Inhibition of VEGF-C expression reverses the mutant phenotype of Osx-tTA;TetO-Vegfc mice
 
 Next, we set out to determine whether the mutant phenotype of Osx-tTA;TetO-Vegfc mice was reversible. We first characterized the reversibility of VEGF-C expression in Osx-tTA;TetO-Vegfc mice. We collected RNA from tibias from Osx-tTA mice, Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35, and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water for either 3 or 7 days (Figure 6). The expression of VEGF-C mRNA was then evaluated by qPCR. VEGF-C mRNA levels were approximately 350-fold higher in Osx-tTA;TetO-Vegfc mice than Osx-tTA mice. Importantly, VEGF-C mRNA levels in Osx-tTA;TetO-Vegfc mice returned to normal within 3 days of being placed back on doxycycline water (Figure 6). These data indicate that doxycycline rapidly inhibits the expression of VEGF-C in Osx-tTA;TetO-Vegfc mice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig6-v2.jpg)
 
-**Figure 6.:** Osx-tTA;TetO-Vegfc mice disappear following the withdrawal of VEGF-C.(A) Schematic showing when mice received normal water and doxycycline water. One cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 (On 35d). A second cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 and then doxycycline water from P35 to P38 (On 35d/Off 3d). A third cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 and then doxycycline water from P35 to P42 (On 35d/Off 7d). (B) Graph showing the relative VEGF-C mRNA levels in tibias from mice. (C) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 (On 35d) or normal water from E18.5 to P35 and then doxycycline water for 3 (On 35d/Off 3d), 7 (On 35d/Off 7d), 28 (On 35d/Off 28d), or 56 days (On 35d/Off 56d). (D–I) Representative images of ribs stained with an anti-podoplanin antibody. The dashed lines separate the bone from the periosseous muscle. (J) Graph showing lymphatic vessel index values for ribs in Osx-tTA mice (0 ± 0.0; n = 5), Osx-tTA;TetO-Vegfc mice that received normal water for 35 days (152.5 ± 29.56; n = 5), and Osx-tTA;TetO-Vegfc mice that received normal water for 35 days and then doxycycline water for 3 (62.25 ± 51.7; n = 4), 7 (24.08 ± 21.26; n = 4), 28 (0 ± 0.0; n = 5) or 56 (0 ± 0.0; n = 3) days. (K) Graph showing lymphatic vessel index values for periosseous muscle in Osx-tTA mice (3.61 ± 1.974; n = 5), Osx-tTA;TetO-Vegfc mice that received normal water for 35 days (92.45 ± 34.63; n = 5), and Osx-tTA;TetO-Vegfc mice that received normal water for 35 days and then doxycycline water for 3 (99.29 ± 23.37; n = 4), 7 (74.84 ± 18.98; n = 4), 28 (92.67 ± 24.2; n = 5) or 56 (72.17 ± 14.05; n = 3) days. (**p<0.01, ***p<0.001, ****p<0.0001, ANOVA followed by Dunnett’s multiple comparisons test. Values were tested against values for Osx-tTA mice). ND = Not Detected.
+**Figure 6.:** (A) Schematic showing when mice received normal water and doxycycline water. One cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 (On 35d). A second cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 and then doxycycline water from P35 to P38 (On 35d/Off 3d). A third cohort of Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 and then doxycycline water from P35 to P42 (On 35d/Off 7d). (B) Graph showing the relative VEGF-C mRNA levels in tibias from mice. (C) Schematic showing when mice received normal water and doxycycline water. Osx-tTA;TetO-Vegfc mice received normal water from E18.5 to P35 (On 35d) or normal water from E18.5 to P35 and then doxycycline water for 3 (On 35d/Off 3d), 7 (On 35d/Off 7d), 28 (On 35d/Off 28d), or 56 days (On 35d/Off 56d). (D–I) Representative images of ribs stained with an anti-podoplanin antibody. The dashed lines separate the bone from the periosseous muscle. (J) Graph showing lymphatic vessel index values for ribs in Osx-tTA mice (0 ± 0.0; n = 5), Osx-tTA;TetO-Vegfc mice that received normal water for 35 days (152.5 ± 29.56; n = 5), and Osx-tTA;TetO-Vegfc mice that received normal water for 35 days and then doxycycline water for 3 (62.25 ± 51.7; n = 4), 7 (24.08 ± 21.26; n = 4), 28 (0 ± 0.0; n = 5) or 56 (0 ± 0.0; n = 3) days. (K) Graph showing lymphatic vessel index values for periosseous muscle in Osx-tTA mice (3.61 ± 1.974; n = 5), Osx-tTA;TetO-Vegfc mice that received normal water for 35 days (92.45 ± 34.63; n = 5), and Osx-tTA;TetO-Vegfc mice that received normal water for 35 days and then doxycycline water for 3 (99.29 ± 23.37; n = 4), 7 (74.84 ± 18.98; n = 4), 28 (92.67 ± 24.2; n = 5) or 56 (72.17 ± 14.05; n = 3) days. (**p<0.01, ***p<0.001, ****p<0.0001, ANOVA followed by Dunnett’s multiple comparisons test. Values were tested against values for Osx-tTA mice). ND = Not Detected.
 
 To assess the reversibility of the lymphatic phenotype of Osx-tTA;TetO-Vegfc mice, we analyzed ribs from Osx-tTA mice, Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35, and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water for either 3, 7, 28, or 56 days (Figure 6). Osx-tTA mice did not have lymphatic vessels in their ribs and possessed a sparse network of lymphatics in their periosseous muscle (Figure 6). In contrast, Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 had numerous lymphatic vessels in their ribs and an expanded network of lymphatics in their periosseous muscle (Figure 6). To our surprise, the abnormal lymphatic vessels in the ribs, but not in the periosseous muscle, gradually disappeared in Osx-tTA;TetO-Vegfc mice that received doxycycline (Figure 6). These data show that irregular lymphatic vessels in bone, but not in periosseous muscle, depend on continued VEGF-C signaling for their existence.
 
@@ -89,15 +121,15 @@ We next set out to characterize the reversibility of the bone phenotype of Osx-t
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig7-v2.jpg)
 
-**Figure 7.:** Osx-tTA;TetO-Vegfc mice is reversible.(A–C) Representative x-ray images of femurs from Osx-tTA mice, Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (On 35d), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (On 35d/Off 28d). Osx-tTA;TetO-Vegfc femurs switched from a moth-eaten appearance to a normal appearance following exposure to doxycycline. (D) Graph showing cortical bone porosity values for femurs from Osx-tTA mice (0.011 ± 0.0103; n = 4), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (0.149 ± 0.0615; n = 7), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (0.014 ± 0.0152; n = 5). (E–G) Representative images of H and E stained femurs. The femur from the Osx-tTA;TetO-Vegfc mouse that received normal water from E18.5 to P35 is filled with pores. (H) Graph showing the number of osteoclasts per mm of bone for Osx-tTA mice (1.18. ±0.6818; n = 4), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (6.84 ± 1.41; n = 4), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (1.45 ± 1.88; n = 4). (I) Graph showing CTX-1 values for Osx-tTA mice (1.7 ± 2.045; n = 8), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (53.3 ± 31.8; n = 7), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (1.9 ± 1.19; n = 4). (***p<0.001, ANOVA followed by Dunnett’s multiple comparisons test. Values were tested against values for Osx-tTA mice.).
+**Figure 7.:** (A–C) Representative x-ray images of femurs from Osx-tTA mice, Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (On 35d), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (On 35d/Off 28d). Osx-tTA;TetO-Vegfc femurs switched from a moth-eaten appearance to a normal appearance following exposure to doxycycline. (D) Graph showing cortical bone porosity values for femurs from Osx-tTA mice (0.011 ± 0.0103; n = 4), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (0.149 ± 0.0615; n = 7), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (0.014 ± 0.0152; n = 5). (E–G) Representative images of H and E stained femurs. The femur from the Osx-tTA;TetO-Vegfc mouse that received normal water from E18.5 to P35 is filled with pores. (H) Graph showing the number of osteoclasts per mm of bone for Osx-tTA mice (1.18. ±0.6818; n = 4), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (6.84 ± 1.41; n = 4), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (1.45 ± 1.88; n = 4). (I) Graph showing CTX-1 values for Osx-tTA mice (1.7 ± 2.045; n = 8), Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 (53.3 ± 31.8; n = 7), and Osx-tTA;TetO-Vegfc mice that received normal water from E18.5 to P35 and then doxycycline water from P35 to P63 (1.9 ± 1.19; n = 4). (***p<0.001, ANOVA followed by Dunnett’s multiple comparisons test. Values were tested against values for Osx-tTA mice.).
 
-## Osx-tTA;TetO-Vegfc mice develop chylothorax
+### Osx-tTA;TetO-Vegfc mice develop chylothorax
 
 Chylothorax is frequently observed in GSD patients with thoracic involvement and is the leading cause of mortality of GSD patients (Ludwig et al., 2016). During the course of our experiments we discovered that Osx-tTA;TetO-Vegfc mice die prematurely (Figure 8). When we examined moribund Osx-tTA;TetO-Vegfc mice, we found that their chest cavity was filled with fluid. The color of this fluid ranged from milky white to light pink. The triglyceride content of the fluid was greater than 110 mg/dl, which indicated that the effusion fluid was chyle (Figure 8). Chyle is lymph rich in fat that flows through the thoracic duct. To identify the route by which chyle escaped the thoracic duct in Osx-tTA;TetO-Vegfc mice, we injected the mesenteric lymph node of 35-day-old mice with Evans blue dye (EBD). EBD was confined to the thoracic duct in Osx-tTA mice. In contrast, EBD spilled from the thoracic duct into lymphatics in the periosseous muscle in Osx-tTA;TetO-Vegfc mice. EBD appeared to leak from the irregular lymphatics along the chest wall. These findings indicate that the lymphatics that form in the periosseous muscle do not function properly.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/34323/elife-34323-fig8-v2.jpg)
 
-**Figure 8.:** Osx-tTA;TetO-Vegfc mice develop chylothorax.(A) Survival curve for Osx-tTA and Osx-tTA;TetO-Vegfc mice (p<0.0001 Log-rank (Mantel-Cox) test). (B) Graph showing triglyceride levels in effusion fluid collected from Osx-tTA;TetO-Vegfc mice (n = 4). The dashed line marks 110 mg/dl. (C) Overview of the Evans blue dye (EBD) lymphangiography method. EBD injected into the mesenteric lymph node is transported to the thoracic duct. (D) EBD is confined to the thoracic duct in Osx-tTA mice (n = 4). (E) In Osx-tTA;TetO-Vegfc mice, EBD spills from the thoracic duct into periosseous lymphatics in muscle (n = 4).
+**Figure 8.:** (A) Survival curve for Osx-tTA and Osx-tTA;TetO-Vegfc mice (p<0.0001 Log-rank (Mantel-Cox) test). (B) Graph showing triglyceride levels in effusion fluid collected from Osx-tTA;TetO-Vegfc mice (n = 4). The dashed line marks 110 mg/dl. (C) Overview of the Evans blue dye (EBD) lymphangiography method. EBD injected into the mesenteric lymph node is transported to the thoracic duct. (D) EBD is confined to the thoracic duct in Osx-tTA mice (n = 4). (E) In Osx-tTA;TetO-Vegfc mice, EBD spills from the thoracic duct into periosseous lymphatics in muscle (n = 4).
 
 ## Discussion
 
@@ -119,54 +151,197 @@ Transgenic manipulation of the VEGF-C/VEGFR3 signaling pathway has been widely u
 
 ## Materials and methods
 
-## Mice and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Osx-tTA</td>
+      <td>PMID: 16854976</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>TetO-Vegfc</td>
+      <td>PMID: 18988807</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>TetO-Vegfd</td>
+      <td>PMID: 27342876</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>abcam, ab13970</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lyve-1 (goat polyclonal)</td>
+      <td>R and D Systems, AF2125</td>
+      <td></td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Podoplanin (hamster monoclonal)</td>
+      <td>abcam, ab11936</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VEGFR2 (rat monoclonal)</td>
+      <td>Eli Lily</td>
+      <td>DC101</td>
+      <td>Function blocking antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VEGFR3 (rat monoclonal)</td>
+      <td>Eli Lily</td>
+      <td>mF4-31C1</td>
+      <td>Function blocking antibody</td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>ELISA kit - CTX-1</td>
+      <td>CUSABIO, CSB - E12782M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>ELISA kit - VEGF-C</td>
+      <td>CUSABIO, CSB - E07361M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>TRIzol</td>
+      <td>Life Technologies, 15596018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>Rneasy RNA Isolation kit</td>
+      <td>Qiagen, 74104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>cDNA synthesis kit</td>
+      <td>BioRad, 74104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>2 ml phase lock gel tube</td>
+      <td>Quanta, 2302830</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay, kit</td>
+      <td>beads for tissue homogenizing</td>
+      <td>Biospec Products, 11079124zx</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycyline</td>
+      <td>Sigma Aldrich, D9891</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zoledronic acid</td>
+      <td>SAGENT Pharmaceuticals, 801–66</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ 1.48 v</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and genotyping
 
 The animal experiments described in this manuscript were carried out in accordance with an animal protocol approved by the Institutional Animal Care and Use Committee of UT Southwestern Medical Center. TetO-Vegfc mice (Lohela et al., 2008) were genotyped with the following primers: 5′-CCAAACCGGGCCCCTCTGCTAAC-3′ and 5′-ACTGTCCCCTGTCCTGGTATTGAG-3′. The PCR product for the transgenic allele was approximately 450 bp. TetO-Vegfd mice (Lammoglia et al., 2016) were genotyped with the following primers: 5’-GCTCGTTTAGTGAACCGTCAG-3’ and 5’-TGCTCGGATCTGTTGTTCAG-3’. The PCR product for the transgenic allele was approximately 250 bp. Osx-tTA mice (Rodda and McMahon, 2006) were genotyped with the following primers: 5′-CCTGGAAAATGCTTCTGTCCG-3′, 5′-CAGGGTGTTATAAGCAATCCC-3′, 5′-CAATGGTAGGCTCACTCTGGGAGATGAT​−3′, and 5′-​AACACACACTGGCAGGACTGGCTAGG-3′. The wild-type band was 300 bp and the Cre band was 400 bp.
 
-## Doxycycline administration
+### Doxycycline administration
 
 Osx-tTA (control) and Osx-tTA;TetO-Vegfc littermates received water containing doxycycline (1 mg/ml; Sigma-Aldrich, D9891, St. Louis, MO) and sucrose (5% w/v) from E0.5 to E18.5. Mice were then placed on normal water. For the reversal experiments, Osx-tTA;TetO-Vegfc mice were placed back on water containing doxycycline (1 mg/ml) and sucrose (5% w/v). Doxycycline water was replaced three times a week.
 
-## Therapy studies with mice
+### Therapy studies with mice
 
 DC101 and mF4-31C1 are rat monoclonal antibodies that block VEGFR2 and VEGFR3, respectively (ImClone/Eli Lilly). P21 Osx-tTA;TetO-Vegfc mice were treated with sterile saline (3x/week; i.p.), DC101 (800 μg; 3x/week; i.p.), or mF4-31C1 (800 μg; 3x/week; i.p.) for 2 weeks. To assess the effect of osteoclast inhibition on bone loss, P21 Osx-tTA;TetO-Vegfc mice were treated with sterile saline (q.a.d.; i.p.) or zoledronic acid (1.2 μg; q.a.d.; i.p.) for 2 weeks. Mice were randomly assigned to the various treatment groups.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Slides were deparaffinized with xylene and rehydrated through a descending EtOH series. Endogenous peroxidase activity was blocked by incubating slides with hydrogen peroxide diluted in methanol. Antigen retrieval was performed by incubating slides in a proteinase K solution at 37°C for 5 min. Slides were washed with PBS and then blocked for 1 hr with TBST (TBS +0.2% Tween 20)+20% Aquablock. Tissue sections were incubated overnight with primary antibodies diluted in TBST +5% BSA. The following primary antibodies were used for immunohistochemistry: goat anti-Lyve-1 (R and D Systems; AF2125, Minneapolis, MN), chicken anti-GFP (Abcam; ab13970, Cambridge, MA), and hamster anti-podoplanin (Abcam; ab11936). Slides were washed with TBST and then incubated with HRP conjugated secondary antibodies diluted in TBST +5% BSA. Slides were washed with TBST and antibody binding was detected with DAB (Dako, K3468, Santa Clara, CA).
 
-## Measuring lymphatic vessel index
+### Measuring lymphatic vessel index
 
 To quantify bone lymphatics, multiple pictures of cortical bone and of the area below the growth plate were analyzed in ImageJ. A grid (19,000 cm2) was placed over the pictures and the number of times that gridlines intersected within or on a lymphatic was determined.
 
-## Tartrate-resistant acid phosphatase (TRAP) staining and analysis
+### Tartrate-resistant acid phosphatase (TRAP) staining and analysis
 
 Bone sections were deparaffinized with xylene, rehydrated through a descending EtOH series, and then placed in pre-warmed TRAP staining solution (TRAP basic incubation media + Fast Red Violet Salt + Napthol AS-MX Phosphate) for 1 hr. Slides were rinsed with water and counterstained with Fast Green for 30 s. Next, slides were rinsed with water, dehydrated through an ascending EtOH series, and cleared in xylene. Pictures were taken with an AmScope FMA050 camera attached to a Nikon Eclipse E600 microscope. The number of osteoclasts per mm bone surface was assessed with ImageJ.
 
-## ELISA for VEGF-C and CTX-1
+### ELISA for VEGF-C and CTX-1
 
 Plasma was collected from mice and commercially available ELISA kits were used to measure the circulating levels of VEGF-C (CUSABIO, #CSB-E07361M, Houston, TX) and CTX-1 (CUSABIO, #CSB-E12782M). A BCA assay was performed to determine the total protein content of each plasma sample. VEGF-C and CTX-1 values were normalized to the total protein content.
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 Frozen tibias were placed inside an RNase-free bag and crushed with a hammer. The crushed samples were transferred to a tube containing 1 ml of TRIzol (Life Technologies, 15596018, Carlsbad, CA) and 1 ml of beads (Biospec Products, #11079124zx, Bartlesville, OK). The samples were homogenized in a Minibead Beater (Biospec Products). The homogenized lysate was transferred to a 2 ml Phase Lock Gel Tube (Quanta, #2302830) and spun at 12,000 g for 5 min. The upper layer of the spun solution was transferred to a Qiagen column and RNA was isolated with an RNeasy kit (Qiagen) according to the manufacturer’s instructions. cDNA was synthesized with an iScript cDNA synthesis kit (BioRad; #74104) according to the manufacturer’s instructions. The following primers were used in SYBR green qPCR reactions to amplify Vegfc (5’-TCCCCTGTCCTGGTATTGAG-3’ and 5’-CGAGGTCAAGGCTTTTGAAG-3’) and beta-actin (5’-CTGTCGAGTCGCGTCCA-3’ and 5’-ACCCATTCCCACCATCACAC-3’). Relative VEGF-C mRNA levels were calculated by the 2-ΔΔCT method.
 
-## Evans blue dye lymphangiography
+### Evans blue dye lymphangiography
 
 Our lymphangiography experiments were modeled after an approach recently published by Nitschke and colleagues (Nitschké et al., 2017). Immediately after euthanasia, the mesenteric lymph node was identified and injected with Evans blue dye (1% w/v). The thoracic cavity was then opened and pictures of the thoracic duct and chest wall were captured with an AmScope FMA050 camera.
 
-## Assessment of cortical bone
+### Assessment of cortical bone
 
 Fixed bones were scanned using a μCT imaging system (35, Scanco Medical, Bassersdorf, Switzerland). The μCT Evaluation Program (V6.6) was used to measure the volume of the pores in bone and the total volume of the region of interest. Cortical porosity was determined by dividing the total volume of the pores by the total volume of the region of interest. Cortical bone was also assessed histologically. Decalcified bones were sectioned with a microtome and stained with hematoxylin and eosin. Images were captured with an AmScope FMA050 camera attached to a Nikon Eclipse E600 microscope. ImageJ was used to measure the area of the pores in bone and the total area of the region of interest. Cortical porosity was determined by dividing the total area of the pores by the total area of the region of interest.
 
-## Three-point bending assay
+### Three-point bending assay
 
 Peak load at failure was tested in femora using a 3-point bending technique. Femora were placed with the anterior aspect up so that an actuator contacted the bones at mid-diaphysis. A Test Resources DDL200 axial loading machine outfitted with an Interface SMT1-22 force transducer was set to a cross-head displacement rate of 0.1 mm/sec. The femora rested on two supports 5 mm apart.
 
-## Osteo-assay surface plate
+### Osteo-assay surface plate
 
 One ml of primary human LECs (50,000 cells/ml) and one ml of RAW264.7 cells (50,000 cells/ml) were seeded into separate wells of an osteo-assay plate (Corning; #3987, Corning, NY). Recombinant RANKL (final concentration 50 ng/ml) was added to the wells that contained RAW264.7 cells. Cells were cultured at 37°C for 72 hr. Media was aspirated and one ml of 10% bleach was added to each well. Wells were then washed with water and images were captured with an inverted microscope. Image J was used to measure the area resorbed by cells.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using GraphPad Prism statistical analysis software (Version 7.0). All results are expressed as mean ± SD. The number of mice in each group is indicated in the figure legends (n = number of mice). For experiments with two groups, unpaired student’s T-tests were performed to test means for significance. For experiments with more than two groups, differences were assessed by ANOVA followed by Dunnett’s multiple comparisons test. Data were considered significant at p<0.05.

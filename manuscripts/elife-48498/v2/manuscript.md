@@ -16,7 +16,7 @@
 
 ## Abstract
 
-In Caenorhabditis elegans , mutations in WDR-5 and other components of the COMPASS H3K4 methyltransferase complex extend lifespan and enable its inheritance. Here, we show that wdr-5 mutant longevity is itself a transgenerational trait that corresponds with a global enrichment of the heterochromatin factor H3K9me2 over twenty generations. In addition, we find that the transgenerational aspects of wdr-5 mutant longevity require the H3K9me2 methyltransferase MET-2, and can be recapitulated by removal of the putative H3K9me2 demethylase JHDM-1. Finally, we show that the transgenerational acquisition of longevity in jhdm-1 mutants is associated with accumulating genomic H3K9me2 that is inherited by their long-lived wild-type descendants at a subset of loci. These results suggest that heterochromatin facilitates the transgenerational establishment and inheritance of a complex trait. Based on these results, we propose that transcription-coupled H3K4me via COMPASS limits lifespan by encroaching upon domains of heterochromatin in the genome.
+In Caenorhabditis elegans, mutations in WDR-5 and other components of the COMPASS H3K4 methyltransferase complex extend lifespan and enable its inheritance. Here, we show that wdr-5 mutant longevity is itself a transgenerational trait that corresponds with a global enrichment of the heterochromatin factor H3K9me2 over twenty generations. In addition, we find that the transgenerational aspects of wdr-5 mutant longevity require the H3K9me2 methyltransferase MET-2, and can be recapitulated by removal of the putative H3K9me2 demethylase JHDM-1. Finally, we show that the transgenerational acquisition of longevity in jhdm-1 mutants is associated with accumulating genomic H3K9me2 that is inherited by their long-lived wild-type descendants at a subset of loci. These results suggest that heterochromatin facilitates the transgenerational establishment and inheritance of a complex trait. Based on these results, we propose that transcription-coupled H3K4me via COMPASS limits lifespan by encroaching upon domains of heterochromatin in the genome.
 
 ## Introduction
 
@@ -32,9 +32,25 @@ H3K9me2 is classically considered a repressive modification and often associated
 
 ## Results
 
-## Transgenerational longevity in wdr-5 mutants
+### Transgenerational longevity in wdr-5 mutants
 
 It has previously been reported that animals mutant for genes encoding components of the COMPASS complex have a lifespan extension of up to 28% (Greer et al., 2010).This lifespan extension is inherited by wild-type descendants of these mutants, before reverting back to wild-type levels in the fifth generation (Greer et al., 2011). To investigate the nature of this inheritance, we first attempted to recapitulate the original observation using fertile, homozygous wdr-5 (ok1417) mutants. Since the transgenerational effects of a wdr-5 mutation lasts for four generations, we crossed wdr-5 mutants to wild type to generate heterozygous wdr-5/+ progeny and maintained populations as wdr-5/+ heterozygotes for five generations. We then used homozygous wdr-5 mutant progeny descended from F5 wdr-5/+ heterozygotes as our P0 founding population, comparing them to P0 wild-type animals descended from survivors recovered from a thaw. In contrast to prior observations, P0 wdr-5 mutants were never long-lived compared to their wild-type counterparts (as observed in eight biological replicates) (Figure 1, Figure 1—figure supplement 1). Furthermore, in contrast to what was originally reported (Greer et al., 2010), treatment of wild-type animals with wdr-5 RNA interference (RNAi) did not cause increased lifespan within a single generation (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig1-v2.jpg)
+
+**Figure 1.:** Analysis of relative lifespan between wild-type (gray) and wdr-5 mutants (purple) across generational time. P0 wild type was descended from animals recovered from a thaw. P0 wdr-5 mutants were the first homozygous mutants after maintenance as heterozygotes for five generations. For each generation, the x-axis is 40 days. *p<0.05, **p<0.01, ***p<0.001 compared to wild-type from the same generation with log-rank test. Median lifespan and statistics are presented in supplementary file 1. Additional replicates shown in Figure 1—figure supplement 1 and supplementary file 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–G) Analysis of relative lifespan between wild-type (gray) and wdr-5 mutants (purple) in seven independent transgenerational experiments. wdr-5 mutant populations were either reset by being maintained as heterozygotes for five generations following an outcross or by starving, as indicated in graph legend. Replicates (E), and (F), along with replicate shown in Figure 1, were used for ChIP-seq analysis. For each generation, the x-axis is 40 days. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 compared to wild-type from the same generation with log-rank test. Mean lifespan and statistics are presented in supplementary file 3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparison of relative lifespan between wild-type (gray) and wdr-5 mutant (purple) populations over generational time. For each generation, the x-axis is set at is 40 days. (B) Difference in progeny number between wild type and wdr-5 mutants for populations shown in (A). Each generation in (B) is shown directly under the corresponding generation in (A). (C) Comparison of lifespan in fed descendants from starved or fed late-gen populations of either wdr-5 mutants (purple and cyan, respectively) or wild type (orange and pink, respectively). (D) Lifespan of early-gen wdr-5 mutants (purple) derived from outcrossing late-gen wdr-5 mutants compared to the corresponding un-outcrossed late-gen wdr-5 mutant population (plum) and mid-gen wild-type animals (gray). *p<0.06, **p<0.01 and ***p<0.001 compared to the wild-type population in the same assay with log-rank test. Progeny data and an additional replicate are presented in supplementary file 2. Median lifespan, statistics, and additional replicates are presented in supplementary file 3.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Comparison of relative lifespan between wild-type animals on an empty vector control (gray) and wild-type animals on wdr-5 RNAi (dark purple) populations over generational time. For each generation, the x-axis is set at is 35 days. *p<0.05 compared to the wild-type population fed an empty vector control with log-rank test. Median lifespan and statistics are presented in supplementary file 3.
 
 The initial observations of wdr-5 mutant longevity did not report how many generations lacking WDR-5 activity were required to reach the 28% lifespan extension in wdr-5 mutants, so we considered the possibility that lifespan may gradually change over a number of generations in COMPASS mutants. Starting with P0 as described above, we followed a single population of wdr-5 mutants and assessed lifespan periodically. For the first six generations (which are hereafter referred to as early-gen populations), wdr-5 mutants had slightly shorter lifespans than wild-type populations of the same generation, though the decrease was not statistically significant (Figure 1, Figure 1—figure supplement 1). In generations F8 to F14 (hereafter referred to as mid-gen populations), wdr-5 mutants had lifespans that were the same as, or slightly longer than, wild-type populations (Figure 1), though the change was only statistically significant in some generations (Figure 1—figure supplement 1). By generation F20 and in subsequent generations (hereafter referred to as late-gen populations), wdr-5 mutant populations were consistently and statistically longer-lived than wild-type populations of the same generation (Figure 1, Figure 1—figure supplement 1). Additionally, populations of wild-type animals continuously treated with wdr-5 RNAi experienced a similarly gradual increase in lifespan, with a modest increase seen by generation F12 (Figure 1—figure supplement 3, p=0.039, log-rank test). Overall, late-gen wdr-5 mutants had median lifespan extensions ranging from 5–40% (with an average of 17% across multiple replicates) which recapitulated the 16–28% extension originally reported (supplementary files 1 and 3) (Greer et al., 2010; Greer et al., 2011). Thus, we conclude that wdr-5 mutants had longer lifespans, but only after many generations of lacking WDR-5 activity.
 
@@ -42,33 +58,69 @@ In many taxa, fecundity is inversely correlated with lifespan (Kenyon, 2010). To
 
 The appearance of longevity in wdr-5 mutants could be caused by the acquisition of background mutations in lifespan-determining genes, but several observations make this scenario unlikely. First, we have repeated the transgenerational analysis of lifespan in these populations seven additional times. In each replicate, lifespan increased gradually between early-, mid-, and late-gen populations, with late-gen wdr-5 mutants consistently living longer than late-gen wild-type populations (Figure 1—figure supplement 1). Additionally, when long-lived late-gen wdr-5 mutants were subjected to either starvation (Figure 1—figure supplement 2C) or freezing (Figure 2), lifespan reverted back to wild-type levels. We have also outcrossed long-lived late-gen wdr-5 mutants to wild-type populations, maintained these populations as heterozygotes for five generations, and re-selected new homozygous P0 wdr-5 mutant populations. These P0 wdr-5 mutants reverted back to being short-lived, even as the original late-gen wdr-5 mutant populations remained long-lived (Figure 1—figure supplement 2D).
 
-## Relative changes in lifespan across generations
+![Figure 2.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig2-v2.jpg)
+
+**Figure 2.:** (A) Lifespan of early-, mid-, and late-gen wild-type (yellow, tangerine, and burnt orange, respectively) and wdr-5 mutant populations (lavender, purple, and plum, respectively) descended from animals recovered from a thaw. Data are also shown separated into wild-type (A’) and wdr-5 mutant populations (A’’). Percentage difference in median lifespan between early- and late-gen is indicated above arrow. p<0.05, **p<0.01, and ****p<0.0001 using log-rank test. Median lifespan and statistics are presented in supplementary file 1. Additional replicates are included in supplementary file 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Lifespan comparison of early-gen wild-type animals from a thaw (gold) to early-gen wild-type (gray) and wdr-5 mutant (purple) populations, both derived from outcrossing late-gen wdr-5 mutants and maintaining the population as heterozygotes for five generations. *p<0.05 between both wild-type populations using log-rank test. Median lifespan, statistics, and additional replicates are presented in supplementary file 3.
+
+### Relative changes in lifespan across generations
 
 The determination of longevity in a population is always relative to a control. In our transgenerational lifespan experiments, wdr-5 mutant populations were compared to wild-type populations of the same generation. Therefore, the appearance of longevity could be caused by a relative extension in wdr-5 mutant lifespan, a relative decrease in wild-type lifespan, or changes in both populations. To distinguish between these possibilities, we directly compared the lifespan of early-, mid-, and late-gen wdr-5 mutant and wild-type populations in the same lifespan assay (Figure 2A). Surprisingly, wild-type lifespan decreased over generational time by 12%, primarily between early- and mid-gen populations (Figure 2A’, p=0.02, log-rank test), despite the fact that progeny number did not change in these populations (supplementary file 2). As mentioned previously, we assayed wild-type lifespan in descendants of animals recovered from a thaw, which we consider the P0 population. The process of freezing a strain involves an L1 larval diapause induced by starvation (Baugh, 2013). The generational change in wild-type lifespan after recovery from a thaw suggested that some aspect of starvation may increase lifespan in descendants, as has been previously shown in populations recovered from L1 diapause or from dauer diapause (Rechavi et al., 2014; Webster et al., 2018). To investigate the effect of starvation on wild-type populations, we starved a late-gen population that had already experienced a decrease in lifespan. Wild-type descendants of starved animals lived longer than their non-starved cousins (Figure 1—figure supplement 2C, p=0.001, log-rank test). To further confirm that the increase in wild-type lifespan in populations recovered from a freeze was caused by the freeze itself, we compared wdr-5 mutants and wild-type populations that were both descended from the same outcrossed population that had been maintained as wdr-5/+ heterozygotes for five generations. If the initial increase in wild-type lifespan was caused by the freeze-thaw process, then wild-type populations derived from the outcross, which did not undergo a freeze-thaw, should not have this initial increase in lifespan. Consistent with this possibility, we found that after the outcross, both early-gen wild-type animals and wdr-5 mutants had similar lifespans (Figure 2—figure supplement 1, p=0.32, log-rank test). In addition, early-gen wild-type animals from the outcross had a shorter lifespan than early-gen wild-type animals from a thaw (Figure 2—figure supplement 1, p=0.02, log-rank test). These results confirmed that wild-type lifespan was only extended after undergoing the freeze-thaw process.
 
 In contrast to what occurred in wild-type animals, lifespan in wdr-5 mutants increased over generational time by 20%, primarily between mid- and late-gen populations (Figure 2A’’, p=0.009, log-rank test). The decrease in wild-type lifespan was large enough that even early-gen wdr-5 mutants had significantly longer lifespans when compared to those of late-gen wild-type populations (Figure 2A, p=0.019, log-rank test). However, changes in wild-type lifespan were not the sole driver of longevity in late-gen wdr-5 mutants, since late-gen wdr-5 mutants lived significantly longer than even early-gen wild-type populations (p=0.0009, log-rank test). Overall, concurrent and opposite lifespan changes in both wild type and wdr-5 mutants accounted for the full increase in lifespan in late-gen wdr-5 mutant populations.
 
-## Correlation of longevity with repressive H3K9me2
+### Correlation of longevity with repressive H3K9me2
 
 Our previous work demonstrates that levels of H3K9me2 are enriched at certain loci in wdr-5 mutants compared to wild type (Kerr et al., 2014). Based on this finding, we asked whether an increase in H3K9me2 could account for the extended lifespan of wdr-5 mutants. To address this possibility, we first compared global levels of H3K9me2 by immunoblot and chromatin immunoprecipitation followed by next-generation sequencing (ChIP-seq). By immunoblot of mixed-stage populations, long-lived late-gen wdr-5 mutants had a global increase of H3K9me2 compared to late-gen wild-type populations (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunoblot comparing H3K9me2 protein levels in late-gen wild type to late-gen wdr-5 mutants and late-gen met-2 mutants (representative of two independent experiments). Actin is used as a loading control. (B, D, E) Metaplots of averaged z-score H3K9me2 ChIP-seq signal across H3K9me2 peaks (B), all genes (D), or germline genes (E) in early-, mid-, and late-gen populations of wild type (yellow, orange, and red, respectively) and wdr-5 mutants (lavender, purple, and plum, respectively). Line shows mean ChIP-seq signal. Data in (B) are also shown separated into wild type (B’) and wdr-5 mutants (B’’). Plots are centered on peak centers (B, B’, B’’) or pseudoscaled over genes to 1 kb with 500 bp borders on either side, indicated by vertical gray lines (D–E). (C) H3K9me2 ChIP-seq ratios of wdr-5 mutant coverage over wild-type coverage at each H3K9me2 peak (N = 10,457). Coverage is normalized to RPM. Thick line shows mean and whiskers show standard deviation. Green dots represent peaks that fall beyond y-axis scale (two peaks in mid-gen and 33 peaks in late-gen). ****p<0.0001 with paired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A)-(B) Representative H3K9me2 enrichment profiles in an IGV browser screenshot over a 26 kb region of Chr. III (A) and the rsks-1 locus (B). Average z-scored ChIP-seq tracks for H3K9me2 signal in early-gen wild type (yellow), early-gen wdr-5 mutants (lavender), mid-gen wild type (orange), mid-gen wdr-5 mutants (purple), late-gen wild type (red), and late-gen wdr-5 mutants (plum). All coverage tracks are shown on the same scale, −1.1 to 6.2 (A) or −1.5 to 3.5 (B). Below the tracks, H3K9me2 ChIP-seq peaks are shown in green, and genes are shown in blue. Highlighted region outlined in green shows a peak where mutant/wild type coverage ratios do not change over generational time. Highlighted regions outlined in pink show peaks where the ratio increases in late-gen populations. (C) Overlap between peaks called in transgenerational ChIP-seq experiments of wdr-5 mutants (Figure 3) or jhdm-1 mutants (Figure 4).
 
 We next examined the genomic enrichment of H3K9me2 using ChIP-seq across generations in wdr-5 mutant and wild-type populations. At H3K9me2 peaks, early-gen wdr-5 mutants had slightly less enrichment than their wild-type counterparts (Figure 3B). In wild type, H3K9me2 enrichment decreased (Figure 3B’) at the same time that lifespan decreased (Figure 2A’) between early- and mid-gen populations. Between mid- and late-gen wild-type populations, H3K9me2 enrichment subsequently decreased further as wild-type lifespan remained at steady-state (Figure 3B’). wdr-5 mutants experienced a similar H3K9me2 decrease between early- and mid-gen populations, as lifespan remained unchanged. However, H3K9me2 enrichment then increased between mid-and late-gen populations (Figure 3B’’), concomitant with the increase in lifespan (Figure 2A’’). An example of increasing H3K9me2 enrichment across generations can be seen at multiple H3K9me2 peaks over a region of Chromosome III (Figure 3—figure supplement 1A). We also observed the same trend at the rsks-1 locus (Figure 3—figure supplement 1B), the downregulation of which has been implicated in the increased lifespan of COMPASS mutants (Han et al., 2017). Overall, as lifespan increases across generations in wdr-5 mutants compared to wild type (early- to mid- to late-gen) (Figure 1), we observed a corresponding increase in the ratio of mutant to wild-type coverage at each peak (Figure 3C, p<0.0001, paired t-test).
 
 Because transgenerational phenotypes must be inherited through the germline, we would expect that H3K9me2 is most affected at germline-expressed genes in wdr-5 mutants. To address this possibility, we examined H3K9me2 at germline-expressed genes (hereafter referred to as germline genes), including those expressed exclusively in the germline and those that are expressed in both the germline and soma (Reinke et al., 2000). At all genes, H3K9me2 enrichment was low and decreased from early- to late-gen in both wild-type and wdr-5 mutant populations (Figure 3D). Likewise, at germline genes, wild-type H3K9me2 enrichment decreased between early- and late-gen populations (Figure 3E). In contrast, in wdr-5 mutants, H3K9me2 enrichment at germline genes increased between early- and late-gen populations (Figure 3E). This increase countered the slight global decrease observed in wdr-5 mutants between early- and late-gen populations (Figure 3B’’). Thus, the general global retention of H3K9me2 became even more pronounced at germline genes.
 
-## Requirement of MET-2 for wdr-5 mutant longevity
+### Requirement of MET-2 for wdr-5 mutant longevity
 
 Across generational time, higher levels of H3K9me2 generally correlated with a longer lifespan, raising the possibility that H3K9me2 helps to extend lifespan. To determine whether H3K9me2 is required for increased lifespan in wdr-5 mutants, we examined animals lacking the H3K9 methyltransferase MET-2. met-2 mutants have nearly undetectable amounts of H3K9me2 by immunoblot (Figure 4A), and have reduced H3K9me2 by mass spectrometry (Towbin et al., 2012), immunofluorescence (Bessler et al., 2010), and ChIP followed by quantitative PCR (ChIP-qPCR) (Kerr et al., 2014). Generally, met-2 mutants were shorter-lived than wild-type populations, with lifespans on average 14% shorter (Figure 4B, p=0.0002, log-rank test, and supplementary file 3). If H3K9me2 is required for increased lifespan in wdr-5 mutants, we would expect wdr-5 mutants lacking H3K9me2 to have a short lifespan like met-2 mutants. Furthermore, in the continued absence of H3K9me2, they should never be able to acquire longevity, even after many generations without WDR-5. To test these possibilities, we generated wdr-5 met-2 double mutants and followed them for more than twenty generations, assessing lifespan periodically. The lifespan of wdr-5 met-2 double mutants consistently resembled that of short-lived met-2 mutants, and wdr-5 met-2 mutants never became long-lived (Figure 4C).
 
-## Increased H3K9me2 and lifespan in jhdm-1 mutants
+![Figure 4.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunoblot comparing H3K9me2 protein levels in mid-gen mixed-stage wild type to mid-gen jhdm-1 and mid-gen met-2 mutants (representative of two independent experiments). Actin is used as a loading control. (B, F) Lifespan of early-gen met-2 mutants (green) and wild type (gray) (B) or mid-gen jhdm-1 mutants (blue) compared to early- (yellow) and late-gen (orange) wild type (F). (C–D) Generational analysis comparing relative lifespan in wdr-5 met-2 double mutants (pink) and met-2 single mutants (green) (C) or jhdm-1 mutants (blue) (D) to late-gen wild type (gray). The generation below each assay refers only to mutant populations. For each generation, the x-axis is set at is 40 days. (E, H, I) Metaplots of averaged z-score H3K9me2 ChIP-seq signal across H3K9me2 peaks (E), all genes (H), or germline genes (I) in early- and mid-gen populations of wild type (yellow and orange, respectively) and jhdm-1 mutants (blue and navy, respectively). Line shows mean ChIP-seq signal. Plots are either centered on peak centers (E) or pseudoscaled over genes to 1 kb with 500 bp borders on either side, indicated by vertical gray lines (H– I). (G) H3K9me2 ChIP-seq ratios of jhdm-1 mutant coverage over wild-type coverage at each H3K9me2 peak. Coverage for each sample is normalized to RPM. Thick line shows mean and whiskers show standard deviation. Green dot represents 65 peaks that lie beyond y-axis scale. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 compared to wild-type with log-rank test for lifespan assays or with paired t-test for coverage ratios. Median lifespan and statistics are presented in supplementary file 1, with additional replicates included in supplementary file 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Lifespan of late-gen wild-type animals from a thaw (orange) compared to early-gen wild-type (gray) and jhdm-1 mutant (blue) populations, both derived from outcrossing mid-gen jhdm-1 mutants and maintaining the population as heterozygotes for five generations. Lifespan did not significantly differ, by log-rank test. Median lifespan, statistics, and additional replicates are presented in supplementary file 3.
+
+### Increased H3K9me2 and lifespan in jhdm-1 mutants
 
 To determine whether higher levels of H3K9me2 can confer longevity directly, rather than as a consequence of changes in H3K4me, we examined mutant animals lacking a predicted H3K9 demethylase, JHDM-1. JHDM-1 has homology to S. pombe Epe1, a putative demethylase that prevents the inheritance of H3K9me2 across cell divisions (Audergon et al., 2015; Ragunathan et al., 2015). Consistent with a role in removing H3K9me, jhdm-1 mutants have higher levels of global H3K9me2 compared to mid-gen wild-type animals by immunoblot (Figure 4A). To investigate this increase across the genome, we next examined genomic H3K9me2 and compared it to lifespan in jhdm-1 mutant populations across generational time. To avoid the complication of wild-type lifespan decreasing after a thaw, jhdm-1 mutants were compared to late-gen wild-type populations that had already attained a steady-state lifespan. Importantly, lifespan in these late-gen wild-type populations was indistinguishable from that of wild-type populations derived from an outcrossed population that had been maintained as jhdm-1/+ heterozygotes for five generations (p=0.878, log-rank test, Figure 4—figure supplement 1). Early-gen jhdm-1 mutant populations were slightly longer lived than wild type (Figure 4D), and had similar levels of H3K9me2 enrichment at ChIP-seq peaks (Figure 4E, p=0.004, log-rank test). By mid generations, jhdm-1 mutants had significantly longer lifespans than their wild-type counterparts, despite having no difference in progeny number (Figure 4D, p=0.0004, log-rank test, and supplementary file 2). With lifespans averaging 30% longer than wild type, jhdm-1 mutants experienced a more robust longevity effect than wdr-5 mutants (supplementary files 1 and 3). Similar to wdr-5 mutants, the increase in jhdm-1 mutant lifespan corresponded with a genome-wide increase in H3K9me2 enrichment at peaks (Figure 4E). Mid-gen jhdm-1 mutants had more H3K9me2 than either early-gen jhdm-1 mutants or any generation of wild type (Figure 4E). The increase in mid-gen jhdm-1 mutants was particularly pronounced when examining RPM coverage ratios between jhdm-1 mutants and wild type in mid- versus early-gen populations (Figure 4G, p<0.0001, unpaired t-test).
 
 75% of peaks called in the jhdm-1 mutant transgenerational experiment were shared with those called in the wdr-5 mutant transgenerational experiment (Figure 3—figure supplement 1C). This overlap indicated that the H3K9me2 increases in both mutants occurred at similar locations in the genome. To further investigate the location of H3K9me2 peaks, we also examined coverage over all genes as well as over germline genes specifically in jhdm-1 mutants. In early-gen populations, wild type and jhdm-1 have similar levels of H3K9me2 at all genes (Figure 4H), including germline genes (Figure 4I). Across generations, wild type experienced a decrease in H3K9me2 enrichment at germline genes and this decrease is dependent upon WDR-5 (Figure 3E). Since the COMPASS complex should be functional in jhdm-1 mutants, we would not expect H3K9me2 to be protected at germline genes across generations, as it was in wdr-5 mutants. In long-lived mid-gen jhdm-1 mutants, we did indeed observe less H3K9me2 enrichment at germline genes (Figure 4I), as we did at all genes (Figure 4H), although the reduction was not as large as we observed in their wild-type counterparts (Figure 4I). This H3K9me2 decrease over genes was particularly notable when compared to the overall accumulation of H3K9me2 at all peaks in mid-gen jhdm-1 mutants (Figure 4E).
 
-## Inheritance of longevity requires H3K9me2
+### Inheritance of longevity requires H3K9me2
 
 Greer and colleagues found that genetically wild-type descendants of long-lived wdr-5 mutants are as long-lived as their mutant ancestors for up to four generations (Greer et al., 2011). Since H3K9me2 is required for the lifespan extension of wdr-5 mutants, it may also be the transgenerational factor inherited by their wild-type descendants. Using long-lived late-gen wdr-5 mutants, we recapitulated the observation that F3 genetically wild-type descendants of wdr-5 mutants (labeled WT (wdr-5)) were as long-lived as their wdr-5 mutant cousins descended from the same population (labeled wdr-5 (wdr-5)) (Figure 5A and B, p=0.04 and p=0.01, respectively, log-rank test) (Greer et al., 2011). As originally reported, we found that the lifespan extension of genetically wild-type descendants reverted by generation F5 (Figure 5C, p=0.47, log-rank test) (Greer et al., 2011). We next tested whether H3K9me2 is required for the inheritance of longevity by removing MET-2 from otherwise wild-type descendants of long-lived wdr-5 mutants (Figure 5D). We used long-lived late-gen wdr-5 mutants to generate homozygous wdr-5 mutants that were also met-2/+ heterozygote mutants (labeled ‘wdr-5’). F3 met-2 mutant descendants of ‘wdr-5’ mutants (labeled met-2 (‘wdr-5’)) were significantly shorter-lived than a wild-type control population (17%, p<0.0001, log-rank test), and resembled the short lifespan of met-2 mutants (Figure 5—figure supplement 1, p=0.48, log-rank test). In contrast, their F3 genetically wild-type cousins descended from the same ancestral population (labeled WT (‘wdr-5’)) were still long-lived (Figure 5E, p=0.04, log-rank test). Therefore, MET-2 was required for the inheritance of longevity by descendants of wdr-5 mutants.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig5-v2.jpg)
+
+**Figure 5.:** (A, D) Genetic schemes for generating wild-type descendants from single mutants (A) or met-2 mutant descendants from long-lived wdr-5 met-2/wdr-5 + mutants (D). (B–C) Lifespan of genetically wild-type F3 (B) or F5 (C) descendants of long-lived wdr-5 mutants (WT (wdr-5), pink), compared to wdr-5 mutants (wdr-5 (wdr-5), teal)) and descendants of wild-type animals (WT (WT), gray). (E) Lifespan of F3 met-2 mutants (met-2 (‘wdr-5’), gold) and genetically wild-type mutants (WT (‘wdr-5’), purple)) descended from long-lived wdr-5 met-2/+ wdr-5 mutants compared to descendants of wild-type animals (WT (WT), gray). (F–G) Lifespan of genetically wild-type F3 (F) or F5 (G) descendants of long-lived jhdm-1 mutants (WT (jhdm-1), pink), compared to jhdm-1 mutants (jhdm-1 (jhdm-1), teal) and descendants of wild-type animals (WT (WT), gray). *p<0.05, **p<0.01 ****p<0.0001 compared to WT (WT) using log-rank test. Median lifespan and statistics are presented in supplementary file 1, with additional replicates included in supplementary file 3. (H) Fold enrichment of H3K9me2 ChIP compared to input measured by qPCR at six peaks enriched for H3K9me2 in mid-gen jhdm-1 ChIP-seq. Two ChIP replicates are shown. Samples were mixed-stage animals from wild-type descendants of wild-type animals (WT (WT), gray), F4 and F7 genetically wild-type descendants from mid-gen jhdm-1 mutants (WT (jhdm-1), dark and light pink respectively), and F4 and F7 jhdm-1 mutants descended from mid-gen jhdm-1 mutants (jhdm-1 (jhdm-1), dark and light teal, respectively). Relative DNA quantities used to calculate fold enrichment are included in supplementary file 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Lifespan of F3 met-2 mutants (met-2 (‘wdr-5’), orange) and genetically wild-type mutants (WT (‘wdr-5’), blue)) descended from long-lived wdr-5 met-2/+ wdr-5 mutants, as well as genetically wild-type descendants of long-lived wdr-5 mutants (WT (wdr-5) pink) and wdr-5 mutants (wdr-5 (wdr-5), purple), compared to descendants of wild-type animals (WT (WT), gray) and to late-gen met-2 mutants (green). (B–C) Lifespan of genetically wild-type F3 (B) or F5 (C) descendants of short-lived met-2 mutants (WT (met-2), gold) compared to met-2 mutants descended from the same parental population (met-2 (met-2), teal) and descendants of wild-type animals (WT (WT), gray). Genetic scheme follows that used in Figure 5A. *p<0.05, ***p<0.001, and ****p<0.0001 with log-rank test. Median lifespan, statistics, and an additional replicate for (B–C) are presented in supplementary file 3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48498/elife-48498-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Representation of genomic H3K4me (green) and H3K9me2 (purple) through generational time as lifespan changes in wild type (A) or wdr-5 mutants (B). Color of animal represents lifespan: white indicates short-lived, gray indicates normal, and purple indicates long-lived. In (A), lifespan is compared to P0 wild-type animals recovered from a thaw. In (B), lifespan is compared to wild type of the same generation. After wdr-5 mutants become long-lived in late-gen populations (B), their genetically wild-type descendants inherit both elevated H3K9me2 and longevity. By the fifth generation, genomic H3K4me and H3K9me2 levels are rebalanced and lifespan reverts to normal.
 
 Eliminating MET-2 abrogated the inheritance of wdr-5 mutant longevity, but this suppression could have been caused either by loss of H3K9me2 or by another factor responding to its absence. met-2 mutants had shorter lifespans than wild type (Figure 4B). If H3K9me2 is the primary factor mediating inheritance of longevity, a normal chromatin state should be established by restoring H3K9me2 through the reintroduction of MET-2. Therefore, the decreased lifespan of met-2 mutants should not be inherited by wild-type progeny. F3 and F5 genetically wild-type descendants of met-2 mutants had a normal lifespan (Figure 5—figure supplement 1, p=0.34, log-rank test), consistent with H3K9me2 mediating longevity.
 
@@ -102,42 +154,178 @@ Overall, we have established a role for a heterochromatic histone modification i
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>N2 wild type</td>
+      <td>Wormbase</td>
+      <td>WB Cat# N2_(ancestral), RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans, hermaphrodite)</td>
+      <td>wdr-5 (ok1417) III</td>
+      <td>Wormbase</td>
+      <td>WB Cat# RB1304; RRID:WB-STRAIN:RB1304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans, hermaphrodite)</td>
+      <td>met-2 (n4256) III</td>
+      <td>Wormbase</td>
+      <td>WB Cat# MT13293; RRID:WB-STRAIN:MT13293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans, hermaphrodite)</td>
+      <td>jhdm-1 (ok2364) III</td>
+      <td>Wormbase</td>
+      <td>WB Cat# RB1826, RRID:WB-STRAIN:RB1826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans, hermaphrodite)</td>
+      <td>wdr-5 (ok1417) met-2 (n4256)/qC1 qIs26 [lag-2::GFP + pRF4 rol-6(su1006)] III</td>
+      <td>this paper</td>
+      <td></td>
+      <td>recombinant chromosome III isolated by crossing MT13293 and RB1304, then crossed to KW2203 to maintain over qC1 balancer</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-H3K9me2</td>
+      <td>Abcam</td>
+      <td>Abcam:ab1220; RRID:AB_449854</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-actin</td>
+      <td>Millipore/Upstate</td>
+      <td>Millipore:MAB1501; RRID:AB_2223041</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal secondary anti-mouse IgG (HRP)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab6728; RRID:AB_955440</td>
+      <td>WB: 1:3000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Plus</td>
+      <td>Amersham Biosciences</td>
+      <td>Amersham Biosciences:RPN2106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromatin Immunoprecipitation Assay Kit</td>
+      <td>EMD Millipore</td>
+      <td>EMD Millipore:17–295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iO SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Bio-Rad:1708882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MACS v2.1.1</td>
+      <td>PMID: 22936215</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>deepTools2</td>
+      <td>PMID: 27079975</td>
+      <td>RRID:SCR_016366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Integrated Genome Viewer (IGV)</td>
+      <td>PMID: 22517427</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>SeqPlots</td>
+      <td>PMID: 27918597</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>BEDtools v2.27.1</td>
+      <td>PMID: 20110278</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 All C. elegans strains were cultured at 20°C on 6 cm nematode growth media (NGM) agar plates with OP50 bacteria grown in Luria Broth (LB). Strains used were: N2: wild-type (Bristol isolate); RB1304: wdr-5 (ok1417) III; MT13293: met-2 (n4256) III; RB1826: jhdm-1 (ok2364) III; and wdr-5 (ok1417) met-2 (n4256)/qC1 qIs26 [lag-2::GFP + pRF4 rol-6(su1006)] III.
 
-## Single-worm genotyping
+### Single-worm genotyping
 
 Single animals were picked into 5–10 µl of lysis buffer (50 mM KCl, 10 mM Tris-HCl (pH 8.3), 2.5 mM MgCl2, 0.45% NP-40, 0.45% Tween-20, 0.01% gelatin) and incubated at 65°C for 1 hr followed by 95°C for 30 min. PCR reactions were performed with AmpliTaq Gold (Invitrogen) according to the manufacturer’s protocol and reactions were resolved on agarose gels. The following genotyping primers were used: wdr-5 (ok1417): CCCAAACTCCCAATCCAAACG, GTGTGCTGGGAGGGTTTTTA, GGATGACAATCGGAGGCTAG; met-2 (n4256): GTCACATCACCTGCATCAGC, ATTTCATTACGGCTGCCAAC, ATTCGAAAAATGGACCGTTG, TCTATTCCCAGGAGCCAATG; jhdm-1 (ok2364): GAAATAAATGCGTGCCGGACC, CGTTCTAGTTCAAGACGTTCAGGTG, TCCATTCTGGGATCATAGTTATACG.
 
-## Transgenerational experiments
+### Transgenerational experiments
 
 For each strain, three L4 hermaphrodites were transferred every fourth day from the previous population, except for met-2 or late-generation wdr-5 populations, in which four to six gravid young adults were transferred to ensure the selection of fertile animals. To reset populations, strains were either thawed or maintained as heterozygote mutant populations for five generations before homozygous mutant animals were selected to be the P0 generation. For analysis of populations recovering from starvation, progeny of arrested L1s were considered P0. For analysis of populations recovering from a thaw, progeny of surviving L1s were considered P0. Populations were genotyped periodically throughout the transgenerational experiment. For the starvation experiment in Figure 1—figure supplement 2C, gravid hermaphrodites from late-gen populations were laid embryos on NGM plates with no OP50 bacterial lawn. Hatched L1s were kept without food for six days before being transferred to plates with OP50. The progeny of these starved L1s were used in the lifespan assay.
 
-## Lifespan assays
+### Lifespan assays
 
 Assays were performed at 20°C on NGM agar plates that did not contain 5-fluoro-2’-deoxyuridine (FUdR). On Day 1, young adults (on their first day of egg-laying) were allowed to lay for 4–6 hr to hatch a synchronized population for the assay. When progeny were L4s or young adults, 90 animals per condition were transferred to new plates, with 30 animals per plate. Animals were transferred every day or every other day during their fertile period (usually the first ten days of adulthood). Plates were scored daily and animals marked as dead if they did not move in response to repeated prodding with a platinum pick. Animals were censored from analysis if they died from ruptured vulvas, matricide (‘bag of worms’ phenotype), or crawling off the agar. Kaplan-Meier survival curves were generated in GraphPad Prism and significance was calculated using a log rank test (Mantel-Cox). Lifespan differences are reported as percentages of median lifespans. The following core observations were repeated in double-blind experiments: transgenerational acquisition of longevity in wdr-5 mutants (Figure 1), the change in wild-type lifespan after freezing (Figure 2A), and the requirement for MET-2 in inheritance of wdr-5 mutant lifespan (Figure 5E).
 
-## Progeny count assay
+### Progeny count assay
 
 Individual hermaphrodites were cloned as L4s and transferred daily until no longer fertile. Progeny were scored as L4s or young adults. Each experiment started with broods of at least five animals, although broods were censored if mothers died before the end of their laying period. Significance was calculated using an unpaired t-test.
 
-## Protein analysis by immunoblot
+### Protein analysis by immunoblot
 
 To generate protein extract, animals were cultured with OP50 on six to twelve 10 cm NGM agar plates. Mixed-stage populations were collected by washing off plates with PBS, pelleted in 500 µl of PBS, and flash frozen. Frozen pellets were thawed, resuspended in NE2 buffer (250 mM sucrose,10 mM HEPES (pH 7.9), 450 mM NaCl, 2 mM MgCl2, 2 mM CaCl2, 0.1% Triton-X100), and flash frozen. Frozen pellets were then disrupted by a 7 ml Type B glass Dounce homogenizer and allowed to lyse on ice for 15 min. Pellets were washed two times in cold PBS, then resuspended in 20 mM Tris-HCl (pH 7.9). Extracts were resolved with 12% Mini-PROTEAN TGX Stain-Free Protein Gels (BioRad) and transferred to nitrocellulose membranes. Primary antibodies were: 1:500 H3K9me2 antibody (ab1220, Abcam) and 1:5000 actin (MAB1501 (Millipore/Upstate)). Primary antibodies were visualized using 1:3000 Rabbit Anti-Mouse IgG H and L (HRP) (ab6728, Abcam) and ECL Plus (Amersham Biosciences). Quantification was performed using a ChemiDoc MP and Image Lab software (BioRad).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 To generate chromatin extract, animals were cultured with OP50 on six to twelve 10 cm NGM agar plates. Mixed-stage populations were collected by washing off plates with PBS, pelleted in 500 µl of PBS, and flash frozen. Frozen pellets were disrupted by a 7 ml Type B glass Dounce homogenizer, fixed for ten minutes with 1% formaldehyde (diluted from 37% (w/v)) at 37°C and quenched with 125 mM glycine. ChIP samples were processed with a Chromatin Immunoprecipitation Assay Kit (EMD Millipore) according to manufacturer’s instructions. Samples were sonicated using a Diagenode Bioruptor UCD-200 at 4°C for 15 min on high, with a cycle of 45 s on and 15 s off. 1/20th of sample volume was taken for input controls. For immunoprecipitation, extracts were incubated overnight at 4°C with 10 µl of H3K9me2 antibody (ab1220, Abcam). DNA was extracted by phenol-chloroform and ethanol precipitated.
 
-## High-throughput sequencing and data analysis
+### High-throughput sequencing and data analysis
 
 Samples were sent for library preparation and sequencing at either the HudsonAlpha Genomic Services (Huntsville, AL, USA) or the Georgia Genomics and Bioinformatics Core (Athens, GA, USA). For wdr-5 mutant replicates 1 and 2 and for jhdm-1 mutant replicate 1, single-end 50 bp sequencing was performed on the IIlumina HiSeq v4 platform. For wdr-5 replicate three and jhdm-1 replicate 2, single-end 75 bp sequencing was performed on the Illumina NextSeq platform. Reads were filtered and aligned to genome WS220/ce10 using Bowtie2 (Langmead and Salzberg, 2012) using default settings. Peaks were called with MACS v2.1.1 (Feng et al., 2012) using the following parameters: --bw 150 -q. 01 --nomodel --broad. Peaks were required to be present in at least two replicates from the same genotype and generation, and the union of all peaks was used for the final peak list. bamCoverage in deepTools2 (Ramírez et al., 2016) was used to generate bedGraph coverage tracks in 10 bp bins, with blacklisted regions excluded (blacklist obtained from McMurchy et al., 2017), using the following parameters: -bs 10, -e 200, --normalizeUsing None. Z-score was used to normalize coverage in 10 bp bins for each replicate, and the average for each bin was calculated from all three replicates to generate average z-score coverage tracks. bedGraphs were converted to bigWig coverage tracks using UCSC bedGraphToBigWig utility. Tracks were visualized on Integrated Genome Viewer (IGV) (Thorvaldsdóttir et al., 2013). Metaplots were visualized from average z-score coverage tracks using SeqPlots (Stempor and Ahringer, 2016). Coverage counts over peaks was identified using multicov in bedtools v2.27.1 (Quinlan and Hall, 2010), normalized to reads per million, and averaged between all three replicates for coverage ratio analysis. The list of germline genes was modified from Reinke et al. (2004).
 
-## Quantitative PCR
+### Quantitative PCR
 
 Samples were prepared for ChIP as above, with the addition of a no-antibody-added control. DNA from two replicate ChIPs was quantified by real-time PCR, using iO SYBR Green Supermix (BioRad). The following primers were used: Y48G9.7 (ATCTGCTTGGGACACTGC and AAATTGGACGACTGCAACAGC) Y18H1A.14 (ATCAGTGAACACGGGATTCTGG and TTTGGCTCGGACATATCTGG); C17D12.1 (CCTGAATCGTTCATCTGCAACTG and TTTCCTGACACAACGCTTGC); Y92H12A.5 (GATCCGCCAAGTGATCTACAGTC and ACCCATCGTCGCCTCACTAATAC); ubxn-1 (AGAACGAAGACGAAATCGCCAG and CAGGCTTTGCCTCTGGAACC); npp-8 (GAGATTGGTGCAGAGTGCTGTG and AGCAGCTCTCAAGAGGCAAAG). Fold-enrichment was calculated as ((Ab ChIP/Ab input) / (no-Ab ChIP/no Ab input)). Raw relative DNA quantities are included in supplementary file 4.
 
-## RNA interference
+### RNA interference
 
 Escherichia coli HT115 transformed with a vector expressing dsRNA of wdr-5.1 was obtained from the Ahringer library (Source BioScience). RNAi bacteria and an empty vector control was grown at 37C and seeded on RNAi plates (standard NGM plates containing ampicillin (100 mg/ml) and isopropylthiogalactoside (IPTG; 0.4 mM)) left at room temperature to induce for at least 24 hr. Gravid adults were placed on RNAi plates for six hours to obtain synchronized populations of worms. For lifespan assays, L4 animals obtained from these synchronized populations were transferred to fresh RNAi plates seeded with the respective bacteria; animals were transferred to freshly seeded RNAi plates every two days during their fertile period, and once a week thereafter. Transgenerational populations were maintained transferred to fresh RNAi plates every two days.

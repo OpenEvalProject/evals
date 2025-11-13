@@ -29,13 +29,482 @@
 
 ## Abstract
 
-10.7554/eLife.12432.001 Nervous system maps are of critical importance for understanding how nervous systems develop and function. We systematically map here all cholinergic neuron types in the male and hermaphrodite C. elegans nervous system. We find that acetylcholine (ACh) is the most broadly used neurotransmitter and we analyze its usage relative to other neurotransmitters within the context of the entire connectome and within specific network motifs embedded in the connectome. We reveal several dynamic aspects of cholinergic neurotransmitter identity, including a sexually dimorphic glutamatergic to cholinergic neurotransmitter switch in a sex-shared interneuron. An expression pattern analysis of ACh-gated anion channels furthermore suggests that ACh may also operate very broadly as an inhibitory neurotransmitter. As a first application of this comprehensive neurotransmitter map, we identify transcriptional regulatory mechanisms that control cholinergic neurotransmitter identity and cholinergic circuit assembly. DOI: http://dx.doi.org/10.7554/eLife.12432.001
+Nervous system maps are of critical importance for understanding how nervous systems develop and function. We systematically map here all cholinergic neuron types in the male and hermaphrodite C. elegans nervous system. We find that acetylcholine (ACh) is the most broadly used neurotransmitter and we analyze its usage relative to other neurotransmitters within the context of the entire connectome and within specific network motifs embedded in the connectome. We reveal several dynamic aspects of cholinergic neurotransmitter identity, including a sexually dimorphic glutamatergic to cholinergic neurotransmitter switch in a sex-shared interneuron. An expression pattern analysis of ACh-gated anion channels furthermore suggests that ACh may also operate very broadly as an inhibitory neurotransmitter. As a first application of this comprehensive neurotransmitter map, we identify transcriptional regulatory mechanisms that control cholinergic neurotransmitter identity and cholinergic circuit assembly.
 
 ## Introduction
 
 Nervous system maps that describe a wide range of distinct structural and molecular parameters are essential for an understanding of nervous system development and function. Tremendous efforts have been and are being made to map connectomes (Bargmann and Marder, 2013; Plaza et al., 2014). Connectomes now exist for small anatomic regions of mouse and fly brains (Helmstaedter et al., 2013; Kasthuri et al., 2015; Takemura et al., 2013), but the only complete, system-wide connectome remains that of the nematode Caenorhabditis elegans, both in its hermaphroditic and male form (Albertson and Thomson, 1976; Jarrell et al., 2012; White et al., 1986). However, these anatomical maps are incomplete without the elucidation of chemical maps that describe the synaptically released neurotransmitters through which anatomically connected neurons communicate with one another. But even in C. elegans, let alone other organisms, there have so far been only limited efforts to precisely map neurotransmitter identities on a system-wide level with single-neuron resolution. In C. elegans, a combination of direct staining methods and expression analysis of neurotransmitter-specific enzymes and transporters have defined the probably complete complement of GABAergic, glutamatergic and aminergic neurotransmitter systems. Specifically, out of the 118 anatomically distinct neuron classes in the hermaphrodite (amounting to a total of 302 neurons), six classes (26 neurons) are GABAergic (McIntire et al., 1993), 38 are glutamatergic (78 neurons) (Serrano-Saiz et al., 2013) and 13 (26 neurons) are aminergic (i.e. serotonergic, dopaminergic, etc.; Chase and Koelle, 2007).
 
-One prominent neurotransmitter system – the cholinergic system – has not been completely mapped. Antibody staining against the vesicular acetylcholine (ACh) transporter, VAChT (encoded by unc-17) and the ACh-synthesizing choline acetyltransferase ChAT (encoded by cha-1) revealed the cholinergic identity of a number of neurons in the nervous system (Alfonso et al., 1993; Duerr et al., 2008). However, due to the synaptic localization of the VAChT and ChAT proteins, expression could only be unambiguously assigned to about one dozen neuron classes, mostly in the ventral nerve cord and a few isolated head and tail neurons (see Table 1 for a summary of previous studies on cholinergic neuron identity). The authors of these previous studies explicitly noted that many additional VAChT/ChAT-expressing neuron classes await identification (Duerr et al., 2008). Ensuing studies using reporter genes that capture cis-regulatory elements of parts of the unc-17/VAChT locus identified the cholinergic identity of a few additional neuron classes (Table 1), but the extent to which ACh is used in the nervous system has remained unclear. In the male nervous system, composed of 23 additional neuron classes, neurotransmitter identities are even less well defined (not just ACh, but other systems as well). Here, we map the usage of ACh in both the hermaphrodite and male nervous systems. We show that ACh is the most broadly used neurotransmitter in the C. elegans nervous system, employed by more than half of all neurons.10.7554/eLife.12432.003Table 1.Cholinergic neurons in the hermaphrodite.DOI: http://dx.doi.org/10.7554/eLife.12432.003Neuron typeNeuron classVAChT/ChAT1ChT 2AChE 3Co-transmitterPrevious ID 4Sensory neuron (9 classes)   ADF L/R ++ ++   Serotonin no ALN L/R ++ ++     yes 5 ASJ L/R + ++     no AWB L/R ++ ++     no IL2 D/V L/R +++ +++ ace-3/4   yes 6 PLN L/R ++ ++     yes 5 URA D/V L/R +++ ++ ace-3/4   yes 6 URB L/R ++ + ace-3/4   yes 6 URX L/R ++ ++ ace-3/4   no Interneuron (19 classes) AIA L/R +++ ++ ace-3/4   yes 7 AIN L/R ++ +++     yes 6 AIY L/R +++ +++     yes 7 AVA L/R +++ ++ ace-2   no AVB L/R +++ ++ ace-2   no AVD L/R +++ ++ ace-2   no AVE L/R +++ ++ ace-2    no AVG +     no DVA +++ +++ ace-2; ace-3/4   no 8 PVC L/R +++ +     yes 5 PVN L/R ++     no PVP L/R +++ ++     yes 5 RIB L/R (+)* +++     no RIF L/R ++ ++     no RIH +++ ++ ace-2; ace-3/4 Serotonin no RIR ++ ++     no RIV L/R ++ ++ ace-3/4   no SAA D/V L/R ++       no SDQ L/R ++ ++     yes 5 Motor neuron (17 classes)    AS1-11 ++ ++ ace-2   yes 5 DA1-9 ++ ++ ace-2   yes 5 DB1-7 ++ ++ ace-2    yes 5 HSN L/R ++     Serotonin yes 5 PDA ++ ++  ace-2; ace-3/4   no PDB ++ ++     no RMD D/V L/R +++ +++ ace-3/4   yes 5 RMF L/R ++ ++     no RMH L/R ++ ++     no SAB D V L/R ++ ++     yes 9 SIA D/V L/R +++ ++ ace-3/4   no SIB D/V L/R +++ ++     no SMB D/V L/R +++ ++     no SMD D/V L/R +++ +++ ace-3/4   no 10 Motor neuron (17 classes)    VA1-12 ++ ++ ace-2   yes 5 VB1-11 ++ ++ ace-2   yes 5 VC1-3 VC6 ++ ++     yes 5 VC4-5 ++     Serotonin yes 5   Pharyngeal           Polymodal (7 classes) I1 L/R ++       no I3 ++       no MC L/R ++       yes 11 M1 ++       no M2 L/R ++       no M4 +++ +++ ace-2   no M5 +++ +++     no   unc-17(+): 52 classes, 159 neurons           See the legend to Figure 2A and Table 2 for notes on neuron classification. Data for the male nervous system is shown in Table 5. '+' indicate relative expression levels. See Figure 1 for images.*Expression of cho-1 in the RIB neurons is strong but unc-17 expression is, at best, very dim. 1Gray shading indicates unc-17/cha-1 (VAChT/ChAT) expression as assessed by fosmid reporter and antibody staining. 2Gray shading indicates cho-1 (ChT) expression as assessed by fosmid reporters. 3Gray shading indicates reporters expression of one of the C. elegans ace (AChE) genes. 4Previously identified as a cholinergic neuron: 'yes' – see indicated references. 'no' - newly identified in this study. Only published data is considered, personal communications in Rand and Nonet (1997) were not taken into consideration. 5Duerr et al. (2008). 6Zhang et al. (2014). 7Altun-Gultekin et al. (2001). 8Previously proposed to be DVC (Duerr et al., 2008) but based on position and markers reassigned to DVA. 9Zhao and Nonet (2000). 10Based on our identification as SMB as cholinergic, Kim et al. (2015) demonstrated that lim-4 controls SMB cholinergic identity (see also Table 6). 11Raizen et al. (1995).
+One prominent neurotransmitter system – the cholinergic system – has not been completely mapped. Antibody staining against the vesicular acetylcholine (ACh) transporter, VAChT (encoded by unc-17) and the ACh-synthesizing choline acetyltransferase ChAT (encoded by cha-1) revealed the cholinergic identity of a number of neurons in the nervous system (Alfonso et al., 1993; Duerr et al., 2008). However, due to the synaptic localization of the VAChT and ChAT proteins, expression could only be unambiguously assigned to about one dozen neuron classes, mostly in the ventral nerve cord and a few isolated head and tail neurons (see Table 1 for a summary of previous studies on cholinergic neuron identity). The authors of these previous studies explicitly noted that many additional VAChT/ChAT-expressing neuron classes await identification (Duerr et al., 2008). Ensuing studies using reporter genes that capture cis-regulatory elements of parts of the unc-17/VAChT locus identified the cholinergic identity of a few additional neuron classes (Table 1), but the extent to which ACh is used in the nervous system has remained unclear. In the male nervous system, composed of 23 additional neuron classes, neurotransmitter identities are even less well defined (not just ACh, but other systems as well). Here, we map the usage of ACh in both the hermaphrodite and male nervous systems. We show that ACh is the most broadly used neurotransmitter in the C. elegans nervous system, employed by more than half of all neurons.
+
+**Table 1.**
+ Cholinergic neurons in the hermaphrodite.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron type</th>
+      <th>Neuron class</th>
+      <th>VAChT/ChAT1</th>
+      <th>ChT 2</th>
+      <th>AChE 3</th>
+      <th>Co-transmitter</th>
+      <th>Previous ID 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="9">Sensory neuron (9 classes)</td>
+      <td>ADF L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>Serotonin</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ALN L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>ASJ L/R</td>
+      <td>+</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AWB L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>IL2 D/V L/R</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>yes 6</td>
+    </tr>
+    <tr>
+      <td>PLN L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>URA D/V L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>yes 6</td>
+    </tr>
+    <tr>
+      <td>URB L/R</td>
+      <td>++</td>
+      <td>+</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>yes 6</td>
+    </tr>
+    <tr>
+      <td>URX L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td rowspan="19">Interneuron (19 classes)</td>
+      <td>AIA L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>yes 7</td>
+    </tr>
+    <tr>
+      <td>AIN L/R</td>
+      <td>++</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td>yes 6</td>
+    </tr>
+    <tr>
+      <td>AIY L/R</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td>yes 7</td>
+    </tr>
+    <tr>
+      <td>AVA L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVB L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVD L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVE L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVG</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>DVA</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>ace-2; ace-3/4</td>
+      <td></td>
+      <td>no 8</td>
+    </tr>
+    <tr>
+      <td>PVC L/R</td>
+      <td>+++</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>PVN L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PVP L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>RIB L/R</td>
+      <td>(+)*</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RIF L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RIH</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-2; ace-3/4</td>
+      <td>Serotonin</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RIR</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RIV L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SAA D/V L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SDQ L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Motor neuron (17 classes)</td>
+      <td>AS1-11</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>DA1-9</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>DB1-7</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>HSN L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>Serotonin</td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>PDA</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2; ace-3/4</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RMD D/V L/R</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>RMF L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>RMH L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SAB D V L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 9</td>
+    </tr>
+    <tr>
+      <td>SIA D/V L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SIB D/V L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SMB D/V L/R</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>SMD D/V L/R</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>ace-3/4</td>
+      <td></td>
+      <td>no 10</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Motor neuron (17 classes)</td>
+      <td>VA1-12</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>VB1-11</td>
+      <td>++</td>
+      <td>++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>VC1-3 VC6</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td>VC4-5</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>Serotonin</td>
+      <td>yes 5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pharyngeal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="7">Polymodal (7 classes)</td>
+      <td>I1 L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>I3</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>MC L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>yes 11</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>M2 L/R</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>M4</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>ace-2</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>M5</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-17(+): 52 classes, 159 neurons</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_See the legend to Figure 2A and Table 2 for notes on neuron classification. Data for the male nervous system is shown in Table 5. '+' indicate relative expression levels. See Figure 1 for images.*Expression of cho-1 in the RIB neurons is strong but unc-17 expression is, at best, very dim. 1Gray shading indicates unc-17/cha-1 (VAChT/ChAT) expression as assessed by fosmid reporter and antibody staining. 2Gray shading indicates cho-1 (ChT) expression as assessed by fosmid reporters. 3Gray shading indicates reporters expression of one of the C. elegans ace (AChE) genes. 4Previously identified as a cholinergic neuron: 'yes' – see indicated references. 'no' - newly identified in this study. Only published data is considered, personal communications in Rand and Nonet (1997) were not taken into consideration. 5Duerr et al. (2008). 6Zhang et al. (2014). 7Altun-Gultekin et al. (2001). 8Previously proposed to be DVC (Duerr et al., 2008) but based on position and markers reassigned to DVA. 9Zhao and Nonet (2000). 10Based on our identification as SMB as cholinergic, Kim et al. (2015) demonstrated that lim-4 controls SMB cholinergic identity (see also Table 6). 11Raizen et al. (1995)._
 
 The tremendous benefits of a neurotransmitter map include the ability to precisely dissect and understand neuronal circuit function. For example, knowledge of the cholinergic identity of the AIY interneuron (Altun-Gultekin et al., 2001) helped to define the two distinct behavioral outputs of AIY, one controlled via an ACh-mediated activation of the RIB interneuron and another controlled by ACh-mediated inhibition of the AIZ interneuron, via an ACh-gated chloride channel (Li et al., 2014). The cholinergic neurotransmitter map presented here will provide a resource to further functionally dissect circuit function in the C. elegans nervous system.
 
@@ -43,45 +512,2038 @@ Since neurotransmitter identity represents a key feature of a neuron, the knowle
 
 ## Results and discussion
 
-## Defining cholinergic neurons
+### Defining cholinergic neurons
 
-Cholinergic neurotransmitter identity is defined by the expression of the enzyme choline acetyltransferase (ChAT; encoded by
+Cholinergic neurotransmitter identity is defined by the expression of the enzyme choline acetyltransferase (ChAT; encoded by cha-1 in C. elegans) and the vesicular ACh transporter (VAChT; encoded by unc-17 in C. elegans); see Figure 1A for a description of the cholinergic pathway genes. Co-expression of these two genes is ensured via their organization into an operon-like structure called the cholinergic locus (Figure 1B). This operon-like organization is conserved from invertebrates to vertebrates (Eiden, 1998). Other possible diagnostic features of cholinergic neurons often used in vertebrates are the expression of the enzyme that breaks down ACh, acetylcholinesterase (AChE/ace; four genes in C. elegans; [Arpagaus et al., 1998]) and the reuptake transporter of the breakdown product choline (ChT; encoded by cho-1 in C. elegans [Okuda et al., 2000]). Whether these genes are expressed in all cholinergic neurons and/or restricted to all cholinergic neurons is, however, unclear.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig1-v2.jpg)
 
-**Figure 1.:** C. elegans hermaphrodite.(A) Cholinergic pathway genes. Ch = choline; ACh = acetylcholine; ChAT = choline acetyltransferase; VAChT = vesicular ACh transporter, AChE = ACh esterase, ChT = choline transporter. (B) Fosmid reporters used in this study. The unc-17 fosmid reporter was kindly provided by the TransgeneOme project (Sarov et al., 2012). It was previously reported that the expression of unc-17/VAChT and cha-1/ChAT overlap completely (Mathews et al., 2015). (C) unc-17 and cho-1 fosmid reporter expression in an L4 hermaphrodite. The fluorescent reporter inserted into the cho-1 locus is targeted to the nucleus (see Materials and methods), while the fluorescent reporter inserted into the unc-17 locus is fused directly to the unc-17 gene (resulting in cytoplasmic localization). (D, E) unc-17 and cho-1 fosmid reporter expression in head (D), retrovesicular ganglion and tail ganglia (E). In (E) bottom panels, neurons are labeled with a green pan-neuronal marker, ric-19. Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter, otIs380 = ric-19 reporter (Stefanakis et al., 2015). (F) Immunofluorescent staining for endogenous UNC-17 protein of unc-104(e1265) animals that express the cho-1 fosmid reporter transgene otIs544. (G) Co-labeling cholinergic (cho-1/ChT-positive) and glutamatergic (eat-4/VGLUT-positive) neurons illustrate no overlap in neurotransmitter ACh and Glu expression, and co-labeling with pan-neuronal marker rab-3 illustrates that most neurons now have a neurotransmitter assignment. Transgenes: otIs544 = cho-1 fosmid reporter, otIs388 = eat-4 fosmid reporter (Serrano-Saiz et al., 2013), otIs355 = rab-3 reporter. (H) ace/AChE genes are expressed in a subset of cholinergic neurons and in non-cholinergic neurons. ace-1 fosmid reporter expression in head neurons (left panel). ace-2 fosmid reporter expression in head neurons together with cho-1 fosmid reporter (middle panel). ace-3/4 reporter expression together with cho-1 fosmid reporter in head neurons (right panel). Transgenes: otEx4435 = ace-1 fosmid reporter; otEx4431 = ace-2 fosmid reporter; fpIs1 = ace-3/4 transcriptional reporter.DOI: http://dx.doi.org/10.7554/eLife.12432.004
+**Figure 1.:** (A) Cholinergic pathway genes. Ch = choline; ACh = acetylcholine; ChAT = choline acetyltransferase; VAChT = vesicular ACh transporter, AChE = ACh esterase, ChT = choline transporter. (B) Fosmid reporters used in this study. The unc-17 fosmid reporter was kindly provided by the TransgeneOme project (Sarov et al., 2012). It was previously reported that the expression of unc-17/VAChT and cha-1/ChAT overlap completely (Mathews et al., 2015). (C) unc-17 and cho-1 fosmid reporter expression in an L4 hermaphrodite. The fluorescent reporter inserted into the cho-1 locus is targeted to the nucleus (see Materials and methods), while the fluorescent reporter inserted into the unc-17 locus is fused directly to the unc-17 gene (resulting in cytoplasmic localization). (D, E) unc-17 and cho-1 fosmid reporter expression in head (D), retrovesicular ganglion and tail ganglia (E). In (E) bottom panels, neurons are labeled with a green pan-neuronal marker, ric-19. Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter, otIs380 = ric-19 reporter (Stefanakis et al., 2015). (F) Immunofluorescent staining for endogenous UNC-17 protein of unc-104(e1265) animals that express the cho-1 fosmid reporter transgene otIs544. (G) Co-labeling cholinergic (cho-1/ChT-positive) and glutamatergic (eat-4/VGLUT-positive) neurons illustrate no overlap in neurotransmitter ACh and Glu expression, and co-labeling with pan-neuronal marker rab-3 illustrates that most neurons now have a neurotransmitter assignment. Transgenes: otIs544 = cho-1 fosmid reporter, otIs388 = eat-4 fosmid reporter (Serrano-Saiz et al., 2013), otIs355 = rab-3 reporter. (H) ace/AChE genes are expressed in a subset of cholinergic neurons and in non-cholinergic neurons. ace-1 fosmid reporter expression in head neurons (left panel). ace-2 fosmid reporter expression in head neurons together with cho-1 fosmid reporter (middle panel). ace-3/4 reporter expression together with cho-1 fosmid reporter in head neurons (right panel). Transgenes: otEx4435 = ace-1 fosmid reporter; otEx4431 = ace-2 fosmid reporter; fpIs1 = ace-3/4 transcriptional reporter.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Neuronal identity was confirmed by crossing cho-1 fosmid reporter and/or unc-17 fosmid reporter with specific markers. (A) ADF and RIH were labeled by cho-1 (otIs354) and cat-1 (otIs625). (B) ASJ and AWB were labeled by cho-1 (otIs354) and DiI staining. (C) AVA, AVE and AVD were labeled by cho-1 (otIs544) and nmr-1 (akIs3). (D) AVA, AVE and AVD were also labeled by cho-1 (otIs544) and glr-1 (hdIs30). (E) AVB was labeled by cho-1 (otIs544) and acr-15 (wdEx290). (F) AVB was also labeled by cho-1 (otIs544) and sra-11 (otIs123). (G) AVB was not labeled by glr-1(hdIs30) as had been previously published (Brockie et al., 2001). (H) AWA was labeled by odr-10 (kyIs37) but did not show cho-1 (otIs544) expression. (I) AWA was labeled by gpa-4 (otEx6381) but did not show unc-17 (otIs576) expression. (J) AVG and RIF were labeled by cho-1 (otIs544) and odr-2 (otEx4452). (K) DVA was labeled by ser-2 (otIs358) and cho-1 (otIs544). (L) PDA was labeled by cho-1 (otIs544) and ace-3/4 (fpIs1). (M) ALN and PLN were labeled by cho-1 (otIs544) and lad-2 (otIs439). (N) SMB and SMD were labeled by cho-1 (otIs544) and lad-2 (otIs439). (O) SMD and RIV were labeled by cho-1 (otIs544) and lad-2 (otIs439). (P) SIA and SIB were labeled by cho-1 (otIs544) and ceh-24 (ccIs4595). (Q) URX, RIR and RIH were labeled by cho-1 (otIs544) and unc-86 (otIs337). (R) VC4 and VC5 were labeled by cat-1 (otIs221) but not by cho-1 (otIs544).DOI: http://dx.doi.org/10.7554/eLife.12432.005
+**Figure 1—figure supplement 1.:** Neuronal identity was confirmed by crossing cho-1 fosmid reporter and/or unc-17 fosmid reporter with specific markers. (A) ADF and RIH were labeled by cho-1 (otIs354) and cat-1 (otIs625). (B) ASJ and AWB were labeled by cho-1 (otIs354) and DiI staining. (C) AVA, AVE and AVD were labeled by cho-1 (otIs544) and nmr-1 (akIs3). (D) AVA, AVE and AVD were also labeled by cho-1 (otIs544) and glr-1 (hdIs30). (E) AVB was labeled by cho-1 (otIs544) and acr-15 (wdEx290). (F) AVB was also labeled by cho-1 (otIs544) and sra-11 (otIs123). (G) AVB was not labeled by glr-1(hdIs30) as had been previously published (Brockie et al., 2001). (H) AWA was labeled by odr-10 (kyIs37) but did not show cho-1 (otIs544) expression. (I) AWA was labeled by gpa-4 (otEx6381) but did not show unc-17 (otIs576) expression. (J) AVG and RIF were labeled by cho-1 (otIs544) and odr-2 (otEx4452). (K) DVA was labeled by ser-2 (otIs358) and cho-1 (otIs544). (L) PDA was labeled by cho-1 (otIs544) and ace-3/4 (fpIs1). (M) ALN and PLN were labeled by cho-1 (otIs544) and lad-2 (otIs439). (N) SMB and SMD were labeled by cho-1 (otIs544) and lad-2 (otIs439). (O) SMD and RIV were labeled by cho-1 (otIs544) and lad-2 (otIs439). (P) SIA and SIB were labeled by cho-1 (otIs544) and ceh-24 (ccIs4595). (Q) URX, RIR and RIH were labeled by cho-1 (otIs544) and unc-86 (otIs337). (R) VC4 and VC5 were labeled by cat-1 (otIs221) but not by cho-1 (otIs544).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) The different panels show the expression of unc-17 (otIs576) and cho-1 (otIs544) fosmids in the pharyngeal neurons in the anterior and posterior bulbs. Only M4 and M5 express both fosmids. Schematic for the cholinergic pharyngeal neurons is shown. (B) Expression of eat-4 (otIs518) and cho-1 (otIs344) fosmids in the pharyngeal neuron M5.DOI: http://dx.doi.org/10.7554/eLife.12432.006
+**Figure 1—figure supplement 2.:** (A) The different panels show the expression of unc-17 (otIs576) and cho-1 (otIs544) fosmids in the pharyngeal neurons in the anterior and posterior bulbs. Only M4 and M5 express both fosmids. Schematic for the cholinergic pharyngeal neurons is shown. (B) Expression of eat-4 (otIs518) and cho-1 (otIs344) fosmids in the pharyngeal neuron M5.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** unc-17 and cho-1 fosmid reporters in the male tail.(A) The top panel shows the male pre-anal ganglion on a ventral view and the bottom panel shows the pre-anal ganglion and tail neurons in a lateral view. (B) Male tail ventral view where PVS, PVU and the male-specific neurons PVZ and HOB were labeled by cho-1 fosmid and ida-1::gfp reporter. Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter; inIs179 = ida-1 reporter.DOI: http://dx.doi.org/10.7554/eLife.12432.007
+**Figure 1—figure supplement 3.:** (A) The top panel shows the male pre-anal ganglion on a ventral view and the bottom panel shows the pre-anal ganglion and tail neurons in a lateral view. (B) Male tail ventral view where PVS, PVU and the male-specific neurons PVZ and HOB were labeled by cho-1 fosmid and ida-1::gfp reporter. Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter; inIs179 = ida-1 reporter.
 
 To define cholinergic neuron types, we generated transgenic lines expressing fosmid based reporters for the unc-17 and cha-1 locus, the cho-1 locus and several ace genes (Figure 1B). Fosmids contain 30–40 kb genomic sequences, including genes upstream and downstream of the gene of interest and usually contain all cis-regulatory information involved in regulating expression of a specific gene. Differently colored fluorescent proteins were used to assess the relative overlap of these genes to one another (Figure 1C–E). The fosmid lines that monitor cho-1 and ace-1/-2 expression are nuclear localized reporters, in which the fluorescent tag is separated from the respective genomic locus by an SL2 trans-splicing event and targeted to the nucleus (see Materials and methods). The fosmid line for the unc-17 locus is, in contrast, a direct fusion of gfp to the unc-17 gene, thereby revealing the subcellular localization of unc-17.
 
 Multiple lines for each reporter transgene were analyzed and no differences between lines were found (for example, green and red fluorescent signals from a cho-1fosmid::mCherry transgenic line and an independent cho-1fosmid::yfp transgenic line perfectly overlap; data not shown). Preliminary neuron identifications were done based on cell position and axonal projections. These identifications were then confirmed for each neuron by crossing the unc-17 and/or cho-1 fosmid reporter strains with a differently colored reporter with a known, neuron type-specific expression pattern (Figure 1—figure supplement 1; see also Materials and methods). Furthermore, we validated unc-17 fosmid reporter expression by immunofluorescent staining with an antibody generated against the UNC-17 protein (Duerr et al., 2008). As previously noted, the punctate localization of UNC-17 protein, as detected with the UNC-17 anti-serum, limits the ability to reliably identify cells in the absence of markers (Duerr et al., 2008). However, immunostaining for UNC-17 in combination with the nuclear localization of cho-1 fosmid reporter in an unc-104 mutant background (UNC-104 is required for UNC-17 transport to synapses), allowed us to precisely define the complete set of cells that stain for endogenous UNC-17 protein. We found the overlap of UNC-17 antibody staining with cho-1 fosmid reporter expression to be the same as the overlap of unc-17 fosmid reporter expression with cho-1 fosmid reporter expression (Figure 1F), thereby validating the reliability of fosmid reporter expression patterns.
 
+unc-17/VAChT expression defines cholinergic identity and is present in 52 of the 118 classes of adult hermaphroditic neurons, amounting to 159 out of 302 neurons (Figure 1, Figure 2A; Table 1; Figure 1—figure supplement 2). Compared to all other neurotransmitter systems, this makes ACh the most abundantly employed neurotransmitter system in C. elegans (Glu: 38 classes, GABA: 6 classes, Aminergic: 13 classes, six of which are exclusively aminergic; Figure 2A, Table 2). The abundance of ACh usage is illustrated in an even more striking manner if one considers the C. elegans connectome (White et al., 1986): 85% (100/118) of all neuron classes are innervated by a cholinergic neuron (Table 3). With one exception (the highly unusual CAN neurons, which show very little synaptic connectivity with any other neuron), all neurons that do not receive cholinergic input are either themselves cholinergic neurons or innervate neurons that are cholinergic (Table 3). In other words, all but one neuron class in the C. elegans nervous system are either cholinergic, receive cholinergic input or innervate a cholinergic neuron.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig2-v2.jpg)
 
-**Figure 2.:** (A) Pie chart with numbers/distributions of cholinergic (this study), glutamatergic (Serrano-Saiz et al., 2013), GABAergic (McIntire et al., 1993) and aminergic (Chase and Koelle, 2007) neurons (including pharyngeal neurons). Inset: Pie charts of extrapharyngeal sensory, motor- and interneurons. Neurons that contain a classic fast transmitter plus an aminergic transmitter (e.g. RIH) are counted in the fast transmitter category. Classification of C. elegans neurons into sensory, inter- and motor neurons is complicated by the fact that a subset of sensory neurons are also motor neurons, i.e. synapse directly onto muscle (we count those neurons here only as sensory neurons). Conversely, a large number of motor neurons also extensively synapse onto other motor neurons or interneurons and hence classify as 'interneuron' as well; these neurons are shown exclusively in the motor neuron category. A number of neurons that were originally assigned as 'interneurons' by John White and colleagues are now considered motor neurons (because of the more recent identification of NMJs; e.g. SIA, SIB, SAB neurons), or are considered sensory neurons (because of their position in connectivity diagrams or expression of molecular markers; e.g. URA, URB, URXY, URY). See Table 2 for a complete list of neurons and their neurotransmitter assignment. Lastly, we note that unpublished results from our lab demonstrate that at least two additional interneurons, not shown here, utilize GABA (M. Gendrel and O.H., unpubl. data). (B) Distance of sensory neurons to motor output (processing depth) of cholinergic and glutamatergic sensory neurons. (C) Location of neurons with different neurotransmitter identities in the head ganglia. (D) Neurotransmitter identity does not track with lineage history. Neurotransmitter identity is superimposed on the embryonic lineage diagram (Sulston et al., 1983), with each color line indicating one neuron type with a defined identity. White lines indicate no known neurotransmitter identity, gray lines indicate non-neuronal cells. Lines with two colors illustrate co-transmitter identities.DOI: http://dx.doi.org/10.7554/eLife.12432.008
+**Figure 2.:** (A) Pie chart with numbers/distributions of cholinergic (this study), glutamatergic (Serrano-Saiz et al., 2013), GABAergic (McIntire et al., 1993) and aminergic (Chase and Koelle, 2007) neurons (including pharyngeal neurons). Inset: Pie charts of extrapharyngeal sensory, motor- and interneurons. Neurons that contain a classic fast transmitter plus an aminergic transmitter (e.g. RIH) are counted in the fast transmitter category. Classification of C. elegans neurons into sensory, inter- and motor neurons is complicated by the fact that a subset of sensory neurons are also motor neurons, i.e. synapse directly onto muscle (we count those neurons here only as sensory neurons). Conversely, a large number of motor neurons also extensively synapse onto other motor neurons or interneurons and hence classify as 'interneuron' as well; these neurons are shown exclusively in the motor neuron category. A number of neurons that were originally assigned as 'interneurons' by John White and colleagues are now considered motor neurons (because of the more recent identification of NMJs; e.g. SIA, SIB, SAB neurons), or are considered sensory neurons (because of their position in connectivity diagrams or expression of molecular markers; e.g. URA, URB, URXY, URY). See Table 2 for a complete list of neurons and their neurotransmitter assignment. Lastly, we note that unpublished results from our lab demonstrate that at least two additional interneurons, not shown here, utilize GABA (M. Gendrel and O.H., unpubl. data). (B) Distance of sensory neurons to motor output (processing depth) of cholinergic and glutamatergic sensory neurons. (C) Location of neurons with different neurotransmitter identities in the head ganglia. (D) Neurotransmitter identity does not track with lineage history. Neurotransmitter identity is superimposed on the embryonic lineage diagram (Sulston et al., 1983), with each color line indicating one neuron type with a defined identity. White lines indicate no known neurotransmitter identity, gray lines indicate non-neuronal cells. Lines with two colors illustrate co-transmitter identities.
+
+**Table 2.**
+ Neurotransmitter map of the hermaphrodite nervous system.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron class</th>
+      <th>Neuron</th>
+      <th>Neurotransmitter</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ADA</td>
+      <td>ADAL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ADAR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADE</td>
+      <td>ADEL</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ADER</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADF</td>
+      <td>ADFL</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ADFR</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADL</td>
+      <td>ADLL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ADLR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AFD</td>
+      <td>AFDL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AFDR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIA</td>
+      <td>AIAL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AIAR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIB</td>
+      <td>AIBL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AIBR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIM</td>
+      <td>AIML</td>
+      <td>Glu &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AIMR</td>
+      <td>Glu &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIN</td>
+      <td>AINL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AINR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIY</td>
+      <td>AIYL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AIYR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AIZ</td>
+      <td>AIZL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AIZR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALA</td>
+      <td>ALA</td>
+      <td>Unknown (orphan)</td>
+      <td>Newly assigned as mechanosensory (based on Sanders et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>ALM</td>
+      <td>ALML</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALMR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALN</td>
+      <td>ALNL</td>
+      <td>ACh</td>
+      <td>Classified as sensory because of expression of oxygen sensors</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALNR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AQR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>AS1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS7</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS8</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS9</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS10</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AS11</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASE</td>
+      <td>ASEL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASER</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASG</td>
+      <td>ASGL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASGR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASH</td>
+      <td>ASHL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASHR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASI</td>
+      <td>ASIL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASIR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASJ</td>
+      <td>ASJL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASJR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASK</td>
+      <td>ASKL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ASKR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AUA</td>
+      <td>AUAL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUAR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVA</td>
+      <td>AVAL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVAR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVB</td>
+      <td>AVBL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVBR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVD</td>
+      <td>AVDL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVE</td>
+      <td>AVEL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVER</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVF</td>
+      <td>AVFL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVFR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVG</td>
+      <td>AVG</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVH</td>
+      <td>AVHL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVHR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVJ</td>
+      <td>AVJL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVJR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVK</td>
+      <td>AVKL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AVKR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVL</td>
+      <td>AVL</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVM</td>
+      <td>AVM</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AWA</td>
+      <td>AWAL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AWAR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AWB</td>
+      <td>AWBL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AWBR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AWC</td>
+      <td>AWCL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AWCR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BAG</td>
+      <td>BAGL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BAGR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BDU</td>
+      <td>BDUL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BDUR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAN</td>
+      <td>CANL</td>
+      <td>unknown MA (cat-1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CANR</td>
+      <td>unknown MA (cat-1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEP</td>
+      <td>CEPDL</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CEPDR</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CEPVL</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CEPVR</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DA</td>
+      <td>DA1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA7</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA8</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DA9</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DB</td>
+      <td>DB1/3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB3/1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DB7</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DD</td>
+      <td>DD1</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DD2</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DD3</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DD4</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DD5</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DD6</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DVA</td>
+      <td>DVA</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DVB</td>
+      <td>DVB</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DVC</td>
+      <td>DVC</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLP</td>
+      <td>FLPL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FLPR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSN</td>
+      <td>HSNL</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HSNR</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IL1</td>
+      <td>IL1DL</td>
+      <td>Glu</td>
+      <td>Also a clear motor neuron</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL1DR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL1L</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL1R</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL1VL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL1VR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IL2</td>
+      <td>IL2DL</td>
+      <td>ACh</td>
+      <td>Also a clear motor neuron</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL2DR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL2L</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL2R</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL2VL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IL2VR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LUA</td>
+      <td>LUAL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUAR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OLL</td>
+      <td>OLLL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OLLR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OLQ</td>
+      <td>OLQDL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OLQDR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OLQVL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OLQVR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDA</td>
+      <td>PDA</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>PDB</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDE</td>
+      <td>PDEL</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PDER</td>
+      <td>DA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHA</td>
+      <td>PHAL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PHAR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHB</td>
+      <td>PHBL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PHBR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHC</td>
+      <td>PHCL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PHCR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PLM</td>
+      <td>PLML</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PLMR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PLN</td>
+      <td>PLNL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PLNR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PQR</td>
+      <td>PQR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVC</td>
+      <td>PVCL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVCR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVD</td>
+      <td>PVDL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVDR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVM</td>
+      <td>PVM</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVN</td>
+      <td>PVNL</td>
+      <td>ACh</td>
+      <td>Only very few minor NMJs, more prominent neuron-neuron synapses</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVNR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVP</td>
+      <td>PVPL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVPR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVQ</td>
+      <td>PVQL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVQR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVR</td>
+      <td>PVR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVT</td>
+      <td>PVT</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVW</td>
+      <td>PVWL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PVWR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIA</td>
+      <td>RIAL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIAR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIB</td>
+      <td>RIBL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIBR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIC</td>
+      <td>RICL</td>
+      <td>Octopamine</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RICR</td>
+      <td>Octopamine</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RID</td>
+      <td>RID</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIF</td>
+      <td>RIFL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIFR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIG</td>
+      <td>RIGL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIGR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIH</td>
+      <td>RIH</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIM</td>
+      <td>RIML</td>
+      <td>Glu &amp; Tyramine</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIMR</td>
+      <td>Glu &amp; Tyramine</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIP</td>
+      <td>RIPL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIPR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIR</td>
+      <td>RIR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIS</td>
+      <td>RIS</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RIV</td>
+      <td>RIVL</td>
+      <td>ACh</td>
+      <td>Only very few minor NMJs, more prominent neuron-neuron synapses</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RIVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMD</td>
+      <td>RMDDL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMDDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMDL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMDVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMDVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RME</td>
+      <td>RMED</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMEL</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMER</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMEV</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMF</td>
+      <td>RMFL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMFR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMG</td>
+      <td>RMGL</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMGR</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMH</td>
+      <td>RMHL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RMHR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SAA</td>
+      <td>SAADL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAADR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAAVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAAVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SAB</td>
+      <td>SABD</td>
+      <td>ACh</td>
+      <td>Makes clear neuromuscular junctions</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SABVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SABVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDQ</td>
+      <td>SDQL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SDQR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SIA</td>
+      <td>SIADL</td>
+      <td>ACh</td>
+      <td>Makes clear neuromuscular junctions</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIADR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIAVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIAVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SIB</td>
+      <td>SIBDL</td>
+      <td>ACh</td>
+      <td>Makes clear neuromuscular junctions</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIBDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIBVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SIBVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SMB</td>
+      <td>SMBDL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMBDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMBVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMBVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SMD</td>
+      <td>SMDDL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMDDR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMDVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMDVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URA</td>
+      <td>URADL</td>
+      <td>ACh</td>
+      <td>Also a clear motor neuron</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URADR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URAVL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URAVR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URB</td>
+      <td>URBL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URBR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URX</td>
+      <td>URXL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URXR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>URY</td>
+      <td>URYDL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URYDR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URYVL</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>URYVR</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VA</td>
+      <td>VA1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA7</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA8</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA9</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA10</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA11</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VA12</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VB</td>
+      <td>VB1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB7</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB8</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB9</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB10</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VB11</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VC</td>
+      <td>VC1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC2</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC4</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC5</td>
+      <td>ACh &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VC6</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VD</td>
+      <td>VD1</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD2</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD3</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD4</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD5</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD6</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD7</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD8</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD9</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD10</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD11</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD12</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VD13</td>
+      <td>GABA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Summary for extrapharyngeal neurons</td>
+    </tr>
+    <tr>
+      <td>Sensory neuron:</td>
+      <td></td>
+      <td>Sensory neuron:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>38/104 classes</td>
+      <td></td>
+      <td>ACh: 9 classes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>87/282 total neurons</td>
+      <td></td>
+      <td>Glu: 22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Motor neuron:</td>
+      <td></td>
+      <td>GABA: 0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>24/104</td>
+      <td></td>
+      <td>Aminergic: 3 (all Dopa)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118/282</td>
+      <td></td>
+      <td>Unknown: 4 (ASI, AWA, PVM, ALA)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Interneuron</td>
+      <td></td>
+      <td>Motor neuron:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>42/104</td>
+      <td></td>
+      <td>ACh: 17 classes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>77/282</td>
+      <td></td>
+      <td>Glu: 1 (RIM)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>GABA: 5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Aminergic: 0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unknown: 1 (RMG)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Interneuron:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>ACh: 19 classes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Glu: 11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>GABA: 1 (RIS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Aminergic: 2 (CAN, RIC)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unknown: 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Pharyngeal neurons</td>
+    </tr>
+    <tr>
+      <td>I1</td>
+      <td>I1L</td>
+      <td>ACh</td>
+      <td>Due to connectivity and rudimentary sensory endings, all polymodal</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I1R</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I2</td>
+      <td>I2L</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I2R</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I3</td>
+      <td>I3</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I4</td>
+      <td>I4</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I5</td>
+      <td>I5</td>
+      <td>Glu &amp; 5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I6</td>
+      <td>I6</td>
+      <td>Unknown (orphan)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>M1</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>M2L</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M2R</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>M3L</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M3R</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M4</td>
+      <td>M4</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M5</td>
+      <td>M5</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MC</td>
+      <td>MCL</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MCR</td>
+      <td>ACh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td>MI</td>
+      <td>Glu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NSM</td>
+      <td>NSML</td>
+      <td>5HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NSMR</td>
+      <td>5HT</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Neurons receiving cholinergic inputs. Includes pharyngeal neurons. Data from www.wormwiring.org.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Connectivity *</th>
+      <th>Neuron class</th>
+      <th>#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Receiving ACh input</td>
+      <td>Cholinergic neurons</td>
+      <td>ADF, AIA, AIN, AIY, ALN, AS, ASJ, AVA, AVB, AVD, AVE, AWB, DA, DB, DVA, I3, IL2, M2, M4, PLN, PVC, PVN, PVP, RIB, RIF, RIH, RIR, RIV, RMD, RMF, RMH, SAA, SAB, SDQ, SIA, SIB, SMB, SMD, URA, URB, URX, VA, VB, VC</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Non-cholinergic neurons</td>
+      <td>ADA, ADE, ADL, AFD, AIB, AIM, AIZ, ALA, ALM, AQR, ASE, ASG, ASH, ASI, ASK, AUA, AVF, AVH, AVJ, AVK, AVL, ASA, AWC, BAG, BDU, CEP, DD, DVC, I2, I4, I5, IL1, LUA, M1, M3, MC, NSM, OLL, OLQ, PQR, PVQ, PVR, PVT, PVW, RIA, RIC, RID, RIG, RIM, RIP, RIR, RIS, RME, RMG, URY, VD</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Receiving no ACh input</td>
+      <td>Cholinergic neuron</td>
+      <td>AVG, HSN, I1, M5, PDA, PDB</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Innervate cholinergic neuron</td>
+      <td>AVM, DVB, FLP, I6, MI, PDE, PHA, PHB, PHC, PLM, PVD, PVM</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Neither of the above</td>
+      <td></td>
+      <td>CAN</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 There does not appear to be any change in neurotransmitter identities in the first larval stage versus the adult stage, with the obvious exception of postembryonically generated neurons (mostly motor neurons). Expression of the cholinergic locus (unc-17 and cha-1) commences in the 1.5-fold stage of embryogenesis and by the three-fold stage, expression is seen in all cholinergic neurons (data not shown).
 
 cho-1/ChT expression extensively correlates with expression of unc-17/VAChT, both in terms of onset (by threefold stage; data not shown) and cellular specificity in the mature nervous system. In the hermaphrodite worm, all neurons that express cho-1 also express unc-17/VAChT (even though expression of unc-17 may be very low in at least one class, RIB), while 11 out of the 52 unc-17(+) classes do not express cho-1 (half of these neuron classes are in the pharyngeal nervous system; Figure 1;Table 1; Figure 1—figure supplement 2). In contrast, as a previous analysis of small reporter gene fusions already suggested (Combes et al., 2003), expression of the acetylcholinesterase (AChE)-encoding ace genes does not correlate with unc-17 expression. First, only one third of all cholinergic neuron classes express an ace gene (Table 1); and second, expression is observed in body wall muscle as well as in a few non-cholinergic neurons (Figure 1H). Given that the diffusible ACE proteins are secreted into the synaptic cleft, it may not come as a surprise that their site of synthesis does not necessarily match the site of ACh synthesis and release. The situation is similar in vertebrates; the only vertebrate AChE gene is expressed in cholinergic neurons, but the overlap is not complete and expression can also be observed in non-cholinergic neurons (Gwyn and Flumerfelt, 1971; Levey et al., 1984; Reiss et al., 1996).
 
-A list of all
+A list of all C. elegans neurons with their presently assigned neurotransmitter identity is shown in Table 2. There are no overlaps in usage of the main neurotransmitter systems glutamate, GABA and ACh in the core nervous system of the hermaphrodite, but within the pharynx, one single neuron, the motor neuron M5, strongly expresses both cholinergic pathway genes unc-17 and cho-1 and, albeit very weakly, the glutamatergic marker eat-4/VGLUT (Figure 1—figure supplement 2). We visualized the general lack of overlap with a transgenic line that expresses three different, nuclear localized, fluorescent tags – one marking cholinergic neurons (cho-1fosmid::mChOpti), one marking glutamatergic neurons (eat-4/VGLUTfosmid::yfp) and one marking all neurons (rab-3prom::bfp strain) (Figure 1G;Video 1). There are, however, some overlaps of cholinergic identity with aminergic identity in the core nervous system: the ADF, HSN, RIH and VC4/5 neurons are cholinergic, but also serotonergic (Duerr et al., 2001; Sze et al., 2000); similarly, some glutamatergic neurons are also aminergic (Serrano-Saiz et al., 2013). The case of the postembryonically generated, hermaphrodite-specific VC motor neurons is particularly notable because of the distinct identities of specific VC subtypes. All six VC neurons express unc-17/VAChT and are therefore cholinergic, but VC4 and VC5 are also serotonergic (Duerr et al., 1999). Notably, the expression of serotonergic identity in VC4 and VC5 correlates with a failure to express cho-1/ChT, which is only expressed in VC1,2,3 and VC6 (Figure 1—figure supplement 1, Figure 5C). VC4 and VC5 innervate vulval muscles and some aspects of their identity (namely expression of the unc-4 gene in VC4/5, but not VC1,2,3,6) are controlled by signals from vulval tissues (Zheng et al., 2013). We find that elimination of this vulval signal, or genetic elimination of the target muscle of the VC4/5 neurons (vulval muscle), does not impinge on the absence of cho-1 expression in VC4/5 (data not shown).
+
+![Video 1.](https://cdn.elifesciences.org/articles/12432/elife-12432-media1.mp4.jpg)
+
+**Video 1.:** Confocal image stack of a transgenic worm expressing cho-1::mChopti (otIs544) and eat-4::yfp (otIs388) fosmid reporter gene constructs in the head.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig3-v2.jpg)
 
-**Figure 3.:** (A, B) Circuit diagrams, taken from White et al. (1986), with neurotransmitter identities added in colors, as indicated. Panel A shows what White et al. called the “Circuitry associated with motoneurons in the nerve ring” and panel B shows the “Circuitry associated with the motoneurons of the ventral cord”. (C) A visualization of the C. elegans connectome that reflects signal flow through the network as well as the closeness of neurons in the network, as previously proposed and described (Varshney et al., 2011). Coordinates from the diagram were kindly provided by Lav Varshney. The vertical axis represents the signal flow depth of the network, i.e. the number of synapses from sensory to motor neurons. The horizontal axis represents connectivity closeness. We superimpose here neurotransmitter identity onto this network diagram, illustrating some network cluster enriched for ACh usage (shaded gray). (D) A graphic representation that focuses on processing depth, illustrating whether a neurotransmitter is used more frequently in upper (sensory) or lower (motor) layers of the network. (E) Network motifs enriched in the C. elegans connectome and their neurotransmitter usage. Colors indicate if the neurons in this position are enriched for the usage of Glu or ACh.DOI: http://dx.doi.org/10.7554/eLife.12432.012
+**Figure 3.:** (A, B) Circuit diagrams, taken from White et al. (1986), with neurotransmitter identities added in colors, as indicated. Panel A shows what White et al. called the “Circuitry associated with motoneurons in the nerve ring” and panel B shows the “Circuitry associated with the motoneurons of the ventral cord”. (C) A visualization of the C. elegans connectome that reflects signal flow through the network as well as the closeness of neurons in the network, as previously proposed and described (Varshney et al., 2011). Coordinates from the diagram were kindly provided by Lav Varshney. The vertical axis represents the signal flow depth of the network, i.e. the number of synapses from sensory to motor neurons. The horizontal axis represents connectivity closeness. We superimpose here neurotransmitter identity onto this network diagram, illustrating some network cluster enriched for ACh usage (shaded gray). (D) A graphic representation that focuses on processing depth, illustrating whether a neurotransmitter is used more frequently in upper (sensory) or lower (motor) layers of the network. (E) Network motifs enriched in the C. elegans connectome and their neurotransmitter usage. Colors indicate if the neurons in this position are enriched for the usage of Glu or ACh.
 
-## Relationship of cholinergic identity to neuron function, neuron position and neuronal lineage
+### Relationship of cholinergic identity to neuron function, neuron position and neuronal lineage
 
 ACh is used by sensory neurons, interneurons and motor neurons. Of the 45 extrapharyngeal cholinergic neuron classes, 9 are sensory neurons, 19 are interneurons and 17 are motor neurons (Figure 2A; Table 2; we only consider extrapharyngeal neurons because most pharyngeal neurons are polymodal, i.e. have sensory, inter- and motor neuron features; Albertson and Thomson, 1976; D.H.H. unpubl. data). Compared to other transmitter systems, motor neurons have a preference for employing ACh (17/24 extrapharyngeal motor neuron classes are cholinergic; Figure 2A; Table 2). In contrast, sensory neurons are predominantly glutamatergic (22/38 use Glu), but there is nevertheless an appreciable number of cholinergic sensory neurons (9/38 extrapharyngeal sensory neuron classes use ACh; Table 2). Intriguingly, most cholinergic sensory neurons have very shallow processing depth, i.e. are closely connected to the motor system (Figure 2B). Two (IL2 and URA) directly synapse onto muscle (i.e. are sensory-motor neurons), another four (ALN, PLN, ADF and URB) synapse directly onto motor neurons, while another two (URX and AWB) synapse onto cholinergic command interneurons that innervate motor neurons. The latter two cases are the only cases in the entire C. elegans nervous system where a multi-neuron pathway from sensory, via inter- to motor neurons is entirely made of exclusively one neurotransmitter system. In comparison, glutamatergic sensory neurons do not display such a narrow processing depth (Figure 2B).
 
@@ -91,7 +2553,7 @@ The most notable set of interneurons to which we assigned a cholinergic neurotra
 
 Apart from assigning cholinergic neurotransmitter identity to different types of neurons (sensory vs. inter vs. motor neurons), we examined whether cholinergic neurotransmitter identity correlates with other intrinsic neuronal features. We find that the adoption of cholinergic neurotransmitter identity does not correlate with position of the neuron within the nervous system, as shown in Figure 2C, with the notable exception of cholinergic motor neurons in the ventral head ganglion and along the ventral nerve cord. There is no correlation between the adoption of cholinergic identity and developmental history of the neurons. We arrived at this conclusion by mapping neurotransmitter identity onto the entire lineage diagram and not detecting any obvious lineage clusters of cells that uniquely employ ACh (or any other neurotransmitter; Figure 2D).
 
-## Distribution of cholinergic neurons, as well as other neurotransmitters, in relation to the entire connectome
+### Distribution of cholinergic neurons, as well as other neurotransmitters, in relation to the entire connectome
 
 With the identification of the complete set of cholinergic neurons, and with the consideration of previously identified glutamatergic, GABAergic and monoaminergic neurons, a neurotransmitter identity can now be assigned to ~90% of all neuron classes (102/118) and total neurons (275/302; Table 2). While some of the remaining orphan neurons (e.g. the prominent olfactory neuron AWA) contain small synaptic vesicles that are indicative of the usage of an as yet uncharacterized neurotransmitter system, about half of the remaining 16 'orphan' neuron classes display, according to John White’s EM analysis, a notable paucity or even absence of synaptic vesicles and/or are predominated by dark staining vesicles (e.g. AVF, AVH, AVJ, RIP) (White et al., 1986), suggesting that these neurons either signal mostly via electrical synapses or via neuropeptides.
 
@@ -101,17 +2563,1294 @@ Taking a broader view we mapped neurotransmitter identity on a wiring diagram th
 
 We considered neurotransmitter usage within the several types of recurring network motifs, composed of three or four neurons, which have been described to be enriched within the C. elegans connectome, such as feedforward motifs of three neurons (Milo et al., 2002). Our goal was to examine whether the usage of ACh (or any other neurotransmitter system) is biased for certain positions of a neuron within these motifs. Using previously described approaches (Milo et al., 2002) (see Materials and methods), we identified five 3-neuron motifs and fourteen 4-neuron motifs that are significantly enriched in the C. elegans connectome using the latest connectivity dataset (Figure 3E). We found either ACh or Glu to be enriched in specific positions in all but one of these motifs. ACh was enriched at a specific position in 11 out of these 19 motifs. Generally, there is a strong trend of ACh being more frequently used at the downstream end of the signaling flow within specific motifs, while Glu tends to be located at upstream positions within motifs (Figure 3E), which is consistent with the processing depth analysis described above (Figure 3D).
 
-In one 3-neuron motif, previously termed a 'regulated mutual motif' (Milo et al., 2004), each one of the interconnected neurons is enriched for a specific neurotransmitter and we examined this motif more closely for reasons that will become evident in later sections of this paper. The general architecture of this motif is defined by one neuron ('A') innervating two reciprocally connected neurons ('B' and 'C'; Figure 3E). 224 occurrences of this motif can be found in the C. elegans hermaphroditic connectome. This motif is significantly enriched for the presence of cholinergic neurons in either position 2 or 3, or in both. Notably, position 1 is significantly enriched for Glu usage. In 146 out of the 224 motif occurrences, ACh is used by both neuron '2' and '3' (listed in Table 4), and 134 of these 146 motifs break down into a number of two striking types. In the first type, reciprocally connected command interneurons are either innervated by a sensory neuron or by an interneuron (Table 4). In virtually all of these cases, the innervating sensory neurons are glutamatergic. In many cases, the reciprocally connected command interneurons are neurons that control different directions of movement (forward vs. reverse; Table 4). In the second type, the SMD or RMD head motor neurons are reciprocally connected and innervated again either by mostly glutamatergic sensory neurons or by interneurons (Table 4).10.7554/eLife.12432.013Table 4.Occurences of the 'Regulated Mutual' network motif.DOI: http://dx.doi.org/10.7554/eLife.12432.013Type 1: Sensory>command interneuronsType 2: Interneurons>command interneuronsType 3: Sensory neurons>head motor neuronsType 4: Interneurons>head motor neuronsType 5: Egg laying circuitMiscellaneousSN CI CI opp. IN CI CI opp. SN  hMN hMN IN hMN hMN         ADEL AVAL AVAR   ADAL AVAL AVAR   CEPVL RMDDL RMDVR RIAL RMDDL RMDVR AIML AVFL AVFR PHBL VA12 AVAL ADER AVAL AVAR   ADAL AVAR AVBL yes IL1DL RMDDR RMDVL RIAL RMDDR RMDVL AIMR RIFR HSNR PHCL VA12 AVAL ADER AVAR AVDR   ADAL AVAR AVBR yes IL1DR RMDDL RMDVR RIAR RMDDL RMDVR AIMR AVFL AVFR VA12 PVCL PVCR ADER AVAR AVER   ADAR AVAR AVBL yes IL1L RMDDL RMDVR RIAR RMDDR RMDVL AIMR AVFL HSNR AVEL DA01 AS01 ADLL AVAL AVAR   ADAR AVAR AVBR yes IL1L RMDL RMDR RICR SMDDL SMDVR AIMR AVFR HSNL AVER DA01 AS01 ADLL AVAL AVDL   ADAR AVAR AVDR   IL1R RMDDR RMDVL RICR SMDDR SMDVL HSNL AVFL HSNR AVHL ADFR AWBR ADLL AVAR AVBL yes ALA AVAR AVER   IL1R RMDL RMDR RIML SMDDR SMDVL AWAR ADFR AWBR ADLL AVAR AVDR   AUAR AVAR AVER   IL1VL RMDDL RMDVR RIMR RMDL RMDR CEPVR IL2VR URAVR ADLR AVAR AVBL   AVBR AVAL AVDL   IL1VR RMDDR RMDVL RIMR SMDDL SMDVR ADLR AVAR AVBR   AVDL AVAR AVDR   IL2L RMDL RMDR RIS RMDL RMDR ADLR AVAR AVDR   AVEL AVAL AVAR   OLLL SMDDL SMDVR RIVR SMDDL SMDVR ADLR AVAR PVCL yes AVER AVAL AVDL   OLLR SMDDL SMDVR RMGR RMDL RMDR ALML PVCL PVCR yes AVER AVDL AVEL   URYDL RMDDR RMDVL     AQR AVAL AVAR   AVG AVAL AVAR   URYDR RMDDL RMDVR unc-42 unc-42 AQR AVAL AVDL   AVG AVAR AVBL yes URYDR SMDDL SMDVR AQR AVAL PVCR yes AVG AVAR AVBR yes URYVL RMDDL RMDVR AQR AVAR AVBL yes AVG AVAR AVDR   URYVR RMDDR RMDVL AQR AVAR AVBR yes AVJR AVAR AVBL yes     AQR AVAR PVCR yes AVJR AVAR AVDR   unc-42 unc-42 ASHL AVAL AVDL   AVJR AVAR AVER   ASHR AVAR AVBR yes AVJR AVAR PVCL yes ASHR AVAR AVER   AVJR AVAR PVCR yes ASHR AVAR PVCL   AVJR PVCL PVCR yes AVM PVCL PVCR   BDUR AVAL PVCL yes BAGL AVAR AVER   DVA AVAL PVCL yes FLPL AVAL AVAR   DVC AVAL AVAR   FLPL AVAL AVDL   LUAR AVAL AVDL   FLPL AVAL PVCR yes LUAR AVAL PVCR yes FLPL AVAR AVBL yes PVCR AVDL AVEL   FLPL AVAR AVBR yes PVNL AVAL AVDL   FLPL AVAR AVDR   PVNL AVAL PVCL yes FLPL AVAR PVCR yes PVPL AVAL AVAR   FLPR AVAL AVAR   PVPL AVAL PVCL yes   FLPR AVAL AVDL   PVPL AVAL PVCR yes FLPR AVAR AVBL yes PVPL AVAR AVBL yes FLPR AVAR AVBR yes PVPL AVAR AVBR yes FLPR AVAR AVDR   PVPL AVAR AVDR   FLPR AVAR AVER   PVPL AVAR PVCL yes FLPR AVDL AVEL   PVPL AVAR PVCR yes PHBL AVAL AVAR   PVPL PVCL PVCR   PHBL AVAL AVDL   PVPR AVAR AVBR yes PHBL AVAL PVCL yes PVPR AVAR PVCL yes PHBL AVAR PVCL yes PVPR AVAR PVCR yes PHBR AVAL AVAR   PVPR PVCL PVCR   PHBR AVAL AVDL   RIBR AVAR AVER   PHBR AVAL PVCL yes RICL AVAL AVAR   PHBR AVAL PVCR yes RICR AVAL AVAR   PHBR AVAR AVDR   SDQL AVAL AVAR   PHBR AVAR PVCL yes SDQL AVAL AVDL   PHBR AVAR PVCR yes     PHBR PVCL PVCR   unc-3 unc-3 PHCL AVAL PVCL yes PQR AVAL AVAR   PQR AVAL AVDL   unc-3 unc-3                   Yellow: Glu, red: ACh, green: Aminergic, blue: GABA.opp.: command interneurons control opposite drives (forward/reverse).SN: sensory neuron, IN: interneuron, CI: command interneuron, hMN: head motor neuron. Black bar: Transcription factor controlling cholinergic identity. Note that most interconnected neurons are controlled by the same transcription factor.
+In one 3-neuron motif, previously termed a 'regulated mutual motif' (Milo et al., 2004), each one of the interconnected neurons is enriched for a specific neurotransmitter and we examined this motif more closely for reasons that will become evident in later sections of this paper. The general architecture of this motif is defined by one neuron ('A') innervating two reciprocally connected neurons ('B' and 'C'; Figure 3E). 224 occurrences of this motif can be found in the C. elegans hermaphroditic connectome. This motif is significantly enriched for the presence of cholinergic neurons in either position 2 or 3, or in both. Notably, position 1 is significantly enriched for Glu usage. In 146 out of the 224 motif occurrences, ACh is used by both neuron '2' and '3' (listed in Table 4), and 134 of these 146 motifs break down into a number of two striking types. In the first type, reciprocally connected command interneurons are either innervated by a sensory neuron or by an interneuron (Table 4). In virtually all of these cases, the innervating sensory neurons are glutamatergic. In many cases, the reciprocally connected command interneurons are neurons that control different directions of movement (forward vs. reverse; Table 4). In the second type, the SMD or RMD head motor neurons are reciprocally connected and innervated again either by mostly glutamatergic sensory neurons or by interneurons (Table 4).
 
-## Mapping putative inhibitory cholinergic synapses
+**Table 4.**
+ Occurences of the 'Regulated Mutual' network motif.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Type 1: Sensory&gt;command interneurons</th>
+      <th colspan="4">Type 2: Interneurons&gt;command interneurons</th>
+      <th colspan="3">Type 3: Sensory neurons&gt;head motor neurons</th>
+      <th colspan="3">Type 4: Interneurons&gt;head motor neurons</th>
+      <th colspan="3">Type 5: Egg laying circuit</th>
+      <th colspan="3">Miscellaneous</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SN</td>
+      <td>CI</td>
+      <td>CI</td>
+      <td>opp.</td>
+      <td>IN</td>
+      <td>CI</td>
+      <td>CI</td>
+      <td>opp.</td>
+      <td>SN</td>
+      <td>hMN</td>
+      <td>hMN</td>
+      <td>IN</td>
+      <td>hMN</td>
+      <td>hMN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADEL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>ADAL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>CEPVL</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>RIAL</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>AIML</td>
+      <td>AVFL</td>
+      <td>AVFR</td>
+      <td>PHBL</td>
+      <td>VA12</td>
+      <td>AVAL</td>
+    </tr>
+    <tr>
+      <td>ADER</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>ADAL</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>IL1DL</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td>RIAL</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td>AIMR</td>
+      <td>RIFR</td>
+      <td>HSNR</td>
+      <td>PHCL</td>
+      <td>VA12</td>
+      <td>AVAL</td>
+    </tr>
+    <tr>
+      <td>ADER</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>ADAL</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>IL1DR</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>RIAR</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>AIMR</td>
+      <td>AVFL</td>
+      <td>AVFR</td>
+      <td>VA12</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+    </tr>
+    <tr>
+      <td>ADER</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>ADAR</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>IL1L</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>RIAR</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td>AIMR</td>
+      <td>AVFL</td>
+      <td>HSNR</td>
+      <td>AVEL</td>
+      <td>DA01</td>
+      <td>AS01</td>
+    </tr>
+    <tr>
+      <td>ADLL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>ADAR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>IL1L</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td>RICR</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td>AIMR</td>
+      <td>AVFR</td>
+      <td>HSNL</td>
+      <td>AVER</td>
+      <td>DA01</td>
+      <td>AS01</td>
+    </tr>
+    <tr>
+      <td>ADLL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>ADAR</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>IL1R</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td>RICR</td>
+      <td>SMDDR</td>
+      <td>SMDVL</td>
+      <td>HSNL</td>
+      <td>AVFL</td>
+      <td>HSNR</td>
+      <td>AVHL</td>
+      <td>ADFR</td>
+      <td>AWBR</td>
+    </tr>
+    <tr>
+      <td>ADLL</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>ALA</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>IL1R</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td>RIML</td>
+      <td>SMDDR</td>
+      <td>SMDVL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AWAR</td>
+      <td>ADFR</td>
+      <td>AWBR</td>
+    </tr>
+    <tr>
+      <td>ADLL</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>AUAR</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>IL1VL</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td>RIMR</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CEPVR</td>
+      <td>IL2VR</td>
+      <td>URAVR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADLR</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td></td>
+      <td>AVBR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>IL1VR</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td>RIMR</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADLR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td></td>
+      <td>AVDL</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>IL2L</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td>RIS</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADLR</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>AVEL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>OLLL</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td>RIVR</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADLR</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td>AVER</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>OLLR</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td>RMGR</td>
+      <td>RMDL</td>
+      <td>RMDR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALML</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>AVER</td>
+      <td>AVDL</td>
+      <td>AVEL</td>
+      <td></td>
+      <td>URYDL</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>AVG</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>URYDR</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td></td>
+      <td>unc-42</td>
+      <td>unc-42</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>AVG</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>URYDR</td>
+      <td>SMDDL</td>
+      <td>SMDVR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>AVG</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>URYVL</td>
+      <td>RMDDL</td>
+      <td>RMDVR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>AVG</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>URYVR</td>
+      <td>RMDDR</td>
+      <td>RMDVL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>AVJR</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AQR</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>AVJR</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td></td>
+      <td>unc-42</td>
+      <td>unc-42</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASHL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>AVJR</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASHR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>AVJR</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASHR</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>AVJR</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASHR</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td></td>
+      <td>AVJR</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVM</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td></td>
+      <td>BDUR</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BAGL</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>DVA</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>DVC</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>LUAR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>LUAR</td>
+      <td>AVAL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>PVCR</td>
+      <td>AVDL</td>
+      <td>AVEL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>PVNL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>PVNL</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPL</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>PVPL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>AVAL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td>PVPL</td>
+      <td>AVAR</td>
+      <td>AVBL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td>PVPL</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLPR</td>
+      <td>AVDL</td>
+      <td>AVEL</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>PVPL</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>PVPR</td>
+      <td>AVAR</td>
+      <td>AVBR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBL</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td>PVPR</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBL</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td>PVPR</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td>PVPR</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td>RIBR</td>
+      <td>AVAR</td>
+      <td>AVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td>RICL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAL</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td>RICR</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAR</td>
+      <td>AVDR</td>
+      <td></td>
+      <td>SDQL</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAR</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td>SDQL</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>AVAR</td>
+      <td>PVCR</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHBR</td>
+      <td>PVCL</td>
+      <td>PVCR</td>
+      <td></td>
+      <td></td>
+      <td>unc-3</td>
+      <td>unc-3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHCL</td>
+      <td>AVAL</td>
+      <td>PVCL</td>
+      <td>yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PQR</td>
+      <td>AVAL</td>
+      <td>AVAR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PQR</td>
+      <td>AVAL</td>
+      <td>AVDL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-3</td>
+      <td>unc-3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Yellow: Glu, red: ACh, green: Aminergic, blue: GABA.opp.: command interneurons control opposite drives (forward/reverse).SN: sensory neuron, IN: interneuron, CI: command interneuron, hMN: head motor neuron. Black bar: Transcription factor controlling cholinergic identity. Note that most interconnected neurons are controlled by the same transcription factor._
+
+### Mapping putative inhibitory cholinergic synapses
 
 The C. elegans genome encodes not only conventional, excitatory ACh-gated cation channels, but also inhibitory ACh-gated anion channels (Hobert, 2013; Putrenko et al., 2005). Based on the synaptic connectivity diagram and the knowledge of the identity of all cholinergic neurons, it is therefore possible to predict potential inhibitory cholinergic transmission by examining which neurons express an ACh-gated anion channel. The C. elegans genome encodes at least four ACh-gated anion channels, acc-1 through acc-4, two of which (acc-1 and acc-2) were electrophysiologically validated to be inhibitory receptors, while the function of two others (acc-3 and acc-4) is less clear (Putrenko et al., 2005). We examined their expression pattern using available but previously uncharacterized fosmid-based reporter constructs (Sarov et al., 2012).
 
-An
+An acc-3 fosmid reporter showed no appreciable expression throughout the animal, whereas acc-1 and acc-2 fosmid reporters show very restricted and non-overlapping expression in the adult nervous system (Figure 4). The acc-1 fosmid reporter is expressed in a subset of cholinergic neurons, including cholinergic neurons in the ventral nerve cord, the retrovesicular ganglion and a few head neurons (including the SMD, RMD motor neurons, the AVA and AVE command interneurons and the SAA neurons). A small number of glutamatergic neurons also express acc-1 (including the pharyngeal neurons MI and M3, the PLM neurons and an unidentified neuronal pair in the lateral ganglion). The acc-2 fosmid reporter is expressed in a distinct, small set of glutamatergic neurons (RIA, RIG, PHA, AIZ) and cholinergic neurons (URX, RIH). We also found that the acc-2 fosmid reporter is strongly expressed in the newly identified male-specific MCM neurons.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig4-v2.jpg)
 
-**Figure 4.:** Expression pattern of acc fosmid reporters in L4 stage animals are shown. Transgenes: otEx6374 = acc-1 fosmid reporter; otEx6375 = acc-2 fosmid reporter; otEx6376 = acc-4 fosmid reporter; otIs545 = cho-1 fosmid reporter; otIs518 = eat-4 fosmid reporter. Besides the neurons shown here, acc-1 and acc-2 are expressed in a small number of additional neurons (not shown).DOI: http://dx.doi.org/10.7554/eLife.12432.014
+**Figure 4.:** Expression pattern of acc fosmid reporters in L4 stage animals are shown. Transgenes: otEx6374 = acc-1 fosmid reporter; otEx6375 = acc-2 fosmid reporter; otEx6376 = acc-4 fosmid reporter; otIs545 = cho-1 fosmid reporter; otIs518 = eat-4 fosmid reporter. Besides the neurons shown here, acc-1 and acc-2 are expressed in a small number of additional neurons (not shown).
 
 The acc-4 fosmid reporter showed the most striking expression pattern. As assessed by coexpression with cho-1, the acc-4 fosmid reporter is expressed almost exclusively in almost all of the 52 classes of cholinergic neurons (Figure 4). The only cholinergic neuron classes not expressing acc-4 are the ASJ and RIB neurons and the only acc-4-expressing non-cholinergic neurons are the AVF neurons. If acc-4 indeed is able to operate as inhibitory receptor (as suggested by its sequence), this expression data indicates that most cholinergic neurons can be silenced by presynaptically released ACh. In line with this prediction, more than half of all cholinergic neurons are innervated by cholinergic neurons. Among those neurons are the cholinergic command interneurons. This is particularly intriguing in light of laser ablation, electrophysiological and modeling data which indicate that specific command interneuron classes inhibit each others activity (Rakowski et al., 2013; Roberts et al., 2016). Another notable case of likely cross-inhibitory cholinergic connection is between members of two distinct head motor neuron classes (RMD and SMD classes). Notably, both the cross-inhibitory command interneurons and cross-inhibitory head motor neurons are parts of the above-described 'regulated mutual' network motif in which inter-connected cholinergic neurons are innervated by the same upstream neuron (Figure 3E). Regulated mutual motifs with negative interactions can operate as toggle switches that commit to one specific drive (forward movement) while inhibiting the alternative (reversal) drive.
 
@@ -119,13 +3858,149 @@ However, it is important to keep in mind that a number of cholinergic neurons (i
 
 We furthermore note that a substantial number of cholinergic neurons that express acc-4 are not innervated by cholinergic neurons (as predicted by the connectome), raising the intriguing possibility that ACC-4 may act as an inhibitory autoreceptor on cholinergic neurons. In the context of gene expression networks, negative autoregulation can confer a number of useful functions, including speed-up of circuit responses and noise reduction (Hart and Alon, 2013). A substantiation of this hypothesis will require a determination of the localization of ACC-4 protein as well as additional subunits with which ACC-4 must act to constitute an inhibitory receptor (Putrenko et al., 2005), a feat beyond the scope of this present study.
 
-## Acetylcholine is also the most broadly used neurotransmitter in the male-specific nervous system
+### Acetylcholine is also the most broadly used neurotransmitter in the male-specific nervous system
 
-The
+The C. elegans male contains 91 sex-specific neurons, defining 24 classes, most of them located in the tail. We find that 16 out of these 24 classes are cholinergic (Figure 5A, Figure 1—figure supplement 3, Table 5). These cholinergic neurons include the only male-specific head neurons (the CEM sensory neurons) and an additional, male-specific class of motor neurons in the ventral nerve cord, the CA neurons. The three key themes observed in the hermaphrodite nervous system also apply to the male-specific neurons: (1) ACh is the most broadly used neurotransmitter in the male nervous system; (2) ACh is used in sensory, inter- and motor neurons of the male-specific nervous system; (3) the male-specific sensory neurons that are cholinergic are all in close proximity to the motor circuitry: most of them directly innervate muscle (i.e. are sensory/motor neurons; PCB, PCC, SPC; several ray neurons) while all others (HOB, SPV) innervate motor neurons. Like in the pharyngeal nervous system, we found neurons labeled by two conventional fast transmitters markers– the PVV neurons and the R6A neurons express unc-17/VAChT and eat-4/VGLUT (data not shown). ACh/Glu cotransmission has been observed in some central synapses in the vertebrate central nervous system (Nishimaru et al., 2005; Ren et al., 2011).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig5-v2.jpg)
 
-**Figure 5.:** (A) Male-specific CEM neurons are cholinergic, but turn on cho-1 (otIs544) and unc-17 (otIs576) only in late L4. In the top panels CEM neurons are labeled by the pkd-2 reporter (bxIs14). See Figure 1—figure supplement 3 and Table 5 for a list of all male-specific cholinergic neurons. (B) Hermaphrodite-specific HSN neurons turn on the cholinergic marker unc-17 and pan-neuronal rab-3 also in late L4. HSN neurons are labeled by a nuclear localized unc-86 fosmid reporter (otIs337). At L4 and later stages, unc-17 fosmid expression (otIs576) becomes apparent in both soma and axon (top panels). The expression of the pan-neuronal marker rab-3 (otIs355) is also first observed in late L4 (bottom panels). (C) Hermaphrodite-specific VC neurons turn on unc-17 and cho-1 only in late L4 (note that cho-1 is NOT in VC4/5); this is later than the onset of the same genes in VA and VB neurons (VA, VB and VC neurons are labeled with the HOX gene lin-39). Transgenes: wgIs18 = lin-39 fosmid reporter; otIs544 = cho-1 fosmid reporter. (D) Sexually dimorphic neurotransmitter identity of a sex-shared neuron class. The AIM neuron expresses cho-1 (and unc-17; not shown) in adult males, but expresses eat-4/VGLUT instead in hermaphrodites Transgenes: otIs354 = cho-1 fosmid reporter; otIs518 = eat-4 fosmid reporter. (E) Sexually dimorphic neurotransmitter switch. Until the L3 stage, both male and hermaphrodite AIM neurons are glutamatergic (express eat-4/VGLUT). While hermaphrodites continue to express eat-4, males downregulate eat-4 and turn on cho-1 (and unc-17; not shown). (F) The neurotransmitter switch is cell-autonomously controlled by the sex-determination pathway. In the upper panels, the masculinizing fem-3 gene is force-expressed in the AIM neurons (with the eat-4prom11 driver) in otherwise hermaphroditic animals; in the lower panels, the masculinizing tra-2 intracellular domain ('tra-2ic') is expressed in AIM neurons of the male. Quantification is provided on the right.DOI: http://dx.doi.org/10.7554/eLife.12432.015
+**Figure 5.:** (A) Male-specific CEM neurons are cholinergic, but turn on cho-1 (otIs544) and unc-17 (otIs576) only in late L4. In the top panels CEM neurons are labeled by the pkd-2 reporter (bxIs14). See Figure 1—figure supplement 3 and Table 5 for a list of all male-specific cholinergic neurons. (B) Hermaphrodite-specific HSN neurons turn on the cholinergic marker unc-17 and pan-neuronal rab-3 also in late L4. HSN neurons are labeled by a nuclear localized unc-86 fosmid reporter (otIs337). At L4 and later stages, unc-17 fosmid expression (otIs576) becomes apparent in both soma and axon (top panels). The expression of the pan-neuronal marker rab-3 (otIs355) is also first observed in late L4 (bottom panels). (C) Hermaphrodite-specific VC neurons turn on unc-17 and cho-1 only in late L4 (note that cho-1 is NOT in VC4/5); this is later than the onset of the same genes in VA and VB neurons (VA, VB and VC neurons are labeled with the HOX gene lin-39). Transgenes: wgIs18 = lin-39 fosmid reporter; otIs544 = cho-1 fosmid reporter. (D) Sexually dimorphic neurotransmitter identity of a sex-shared neuron class. The AIM neuron expresses cho-1 (and unc-17; not shown) in adult males, but expresses eat-4/VGLUT instead in hermaphrodites Transgenes: otIs354 = cho-1 fosmid reporter; otIs518 = eat-4 fosmid reporter. (E) Sexually dimorphic neurotransmitter switch. Until the L3 stage, both male and hermaphrodite AIM neurons are glutamatergic (express eat-4/VGLUT). While hermaphrodites continue to express eat-4, males downregulate eat-4 and turn on cho-1 (and unc-17; not shown). (F) The neurotransmitter switch is cell-autonomously controlled by the sex-determination pathway. In the upper panels, the masculinizing fem-3 gene is force-expressed in the AIM neurons (with the eat-4prom11 driver) in otherwise hermaphroditic animals; in the lower panels, the masculinizing tra-2 intracellular domain ('tra-2ic') is expressed in AIM neurons of the male. Quantification is provided on the right.
+
+**Table 5.**
+ Male-specific cholinergic neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron type</th>
+      <th>Neuron class</th>
+      <th>unc-17 fosmid expression</th>
+      <th>cho-1 fosmid expression</th>
+      <th>Co-transmitter</th>
+      <th>Previous ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Sensory neuron (7 classes)</td>
+      <td>CEM D/V L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>R1A, R2A, R3A, R4A, R6A</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes 1</td>
+    </tr>
+    <tr>
+      <td>SPC L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes 2</td>
+    </tr>
+    <tr>
+      <td>SPV L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes 3</td>
+    </tr>
+    <tr>
+      <td>HOB</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PCB L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes 2</td>
+    </tr>
+    <tr>
+      <td>PCC L/R</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Interneuron (6 classes)</td>
+      <td>DVE</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>DVF</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PDC</td>
+      <td>++</td>
+      <td>++</td>
+      <td>PDC or PGA are also serotonergic 4</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PGA</td>
+      <td>++</td>
+      <td></td>
+      <td>PDC or PGA are also serotonergic 4</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PVY</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes3</td>
+    </tr>
+    <tr>
+      <td>PVX</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td>yes3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Motor neuron (3 classes)</td>
+      <td>PVZ</td>
+      <td>+++</td>
+      <td>++</td>
+      <td></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PVV</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>Glutamatergic6</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>CA1-9*</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td>no7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*CA7-9 do not express cho-1 and have lower levels of unc-17 than CA1-6. 1Koo et al. (2011).2Garcia et al. (2001).3LeBoeuf et al. (2014).4Loer and Kenyon (1993).5Sherlekar et al. (2013).6Our unpublished data. 7Rand and Nonet cite unpublished observations of cholinergic identity of four CA neurons (Rand and Nonet, 1997). We observe expression of unc-17 in all nine CA neurons (albeit lower in CA7-9)._
 
 Most of the male-specific neurons are generated postembryonically from embryonically generated blast cells that divide during larval stages. One notable exception is the male-specific head sensory neuron class CEM. The two pairs of CEM neurons are generated in the embryo in both sexes, but are removed specifically in the hermaphrodite through programmed cell death (Sulston et al., 1983). We examined the onset of cholinergic differentiation of these neurons in males and found that they only start expressing cholinergic identity features at the L4 larval stage (Figure 5A). Hence, even though generated in the embryo, long before sexual maturation, neurotransmitter identity of CEM male-specific neurons only becomes established during overt sexual maturation in late larval stages. The same applies to the two classes of hermaphrodite-specific cholinergic neurons, the HSN and VC neurons. HSN is born embryonically, and VCs are born in the first larval stage, yet onset of cholinergic pathway genes is only observed in late L4 larval stages (Figure 5B–C). The late onset of neurotransmitter expression in the VC neurons is particularly notable if one compares the onset of cholinergic marker expression in the VC neurons with other cholinergic motor neurons born at the same time, namely the VA, VB and AS-type neurons. In these neurons, the onset of cholinergic marker expression is observed already in late L1 stage animals, contrasting the late L4 onset in the VC neurons (Figure 5C).
 
@@ -133,17 +4008,244 @@ Other than the CEM neurons, there are no sex-specific neurons located in the hea
 
 We assessed whether the neurotransmitter switch of the AIM neurons is programmed in a cell autonomous manner. To this end, we generated sexually mosaic animals in which we masculinized AIM in otherwise hermaphroditic animals and we feminized AIM in otherwise male animals, using previously described strategies (Lee and Portman, 2007; Mowrey et al., 2014; White and Jorgensen, 2012; White et al., 2007). Specifically, masculinization was achieved by degrading the global regulator of hermaphroditic cellular identity, TRA-1, by ectopic expression of FEM-3 in specific hermaphroditic cells; FEM-3 is normally functioning in males to globally degrade TRA-1. Feminization is achieved by preventing FEM-3 downregulation of TRA-1 in male cells through ectopic expression of the intracellular domain of TRA-2 (TRA-2ic), which normally acts in hermaphrodites to inhibit FEM-3. FEM-3 or TRA-2ic were expressed under a fragment of the eat-4 locus, which is exclusively expressed in the AIM neurons in the head ganglia of the worm (E.S. and O.H., unpubl.). We found that masculinization of the AIM neurons ('eat-4prom11::fem-3') in otherwise hermaphroditic animals results in downregulation of eat-4/VGLUT and upregulation of cho-1 expression (Figure 5F). Conversely, feminization of AIM in male animals results in sustained eat-4 expression and no induction of cho-1 expression (Figure 5F). These results demonstrate that the neurotransmitter switch is programmed cell autonomously.
 
-## Transcriptional control of the cholinergic neurotransmitter phenotype
+### Transcriptional control of the cholinergic neurotransmitter phenotype
 
-Neurotransmitter maps can serve many different purposes. One of their applications relates to nervous system development. Since the neurotransmitter identity of a neuron defines a critical identity feature of any specific neuron type, a neurotransmitter map provides an entry point to study the molecular mechanisms by which neuronal identity is acquired. Previous work from our lab has defined transcription factors that control cholinergic identity in a small number of sensory, inter- and motor neurons. Specifically, we have reported that the POU homeobox gene
+Neurotransmitter maps can serve many different purposes. One of their applications relates to nervous system development. Since the neurotransmitter identity of a neuron defines a critical identity feature of any specific neuron type, a neurotransmitter map provides an entry point to study the molecular mechanisms by which neuronal identity is acquired. Previous work from our lab has defined transcription factors that control cholinergic identity in a small number of sensory, inter- and motor neurons. Specifically, we have reported that the POU homeobox gene unc-86 controls the cholinergic identity of three cholinergic sensory neurons (IL2, URA, URB) (Zhang et al., 2014), that the LIM homeobox gene ttx-3 controls the cholinergic identity of two cholinergic interneurons (AIY, AIA) (Altun-Gultekin et al., 2001) and that the COE (Collier/Olf/EBF)-type Zn-finger factor unc-3 controls cholinergic identity of most motor neuron classes in the VNC as well as the SAB head motor neurons (Kratsios et al., 2011, 2015). We sought to extend this analysis to other neuron classes, with the specific question in mind whether broad themes of neurotransmitter identity control may be revealed through the establishment of a comprehensive 'regulatory map'. To identify transcriptional regulators, we examined candidate factors known to be expressed in specific neurons and also conducted genetic screens using gfp-based identity markers of cholinergic neurons (see Materials and methods). Our analysis resulted in the identification of a total of 7 regulators that control the identity of 20 of the 52 cholinergic neuron types (Table 6; Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig6-v2.jpg)
 
-**Figure 6.:** We examined 20 animals for each genotype and for every mutant strain the described phenotype was observed in >80% of animals. (A) The LIM homeobox transcription factor lim-4 is required for unc-17 fosmid reporter expression (left panel) and cho-1 fosmid reporter expression (right panel) in AWB and SMB neurons . AWB neurons were visualized by DiI staining in the unc-17 fosmid reporter expressing strain. AWB and SMB show no fosmid reporter expression in the lim-4 mutant. (B) The Otx-type homeobox transcription factor ceh-14 is required for unc-17 and cho-1 fosmid reporter expression in PVC and unc-17 fosmid reporter expression in PVN. PVC neurons show a decrease in unc-17 and cho-1 fosmid reporter expression in the ceh-14 mutant compared to wild type. PVN neurons show no unc-17 fosmid reporter expression in the ceh-14 mutant. Note that PVN does not express cho-1 fosmid reporter in wild type animals. (C) The homeobox transcription factors unc-30 and lin-11 are required for normal expression of the unc-17 and cho-1 fosmid reporters. Cholinergic identity genes are downregulated in PVP neurons starting at L1 (top panels) and continuing until the L4/adult stage (bottom panels) in unc-30 and lin-11 mutant strains compared to wild type. (D) The homeobox transcription factor unc-42 is required for unc-17 and cho-1 fosmid reporter expression in RIV, SMD, RMD and SIB. (E) The POU homeobox transcription factor unc-86 is required for unc-17 and cho-1 fosmid reporter expression in RIH. (F) A wild type male is shown in the top panel for reference. unc-86 (middle panel) is also required for unc-17 and cho-1 fosmid reporter expression in URX and in the CEM male-specific neurons. In the absence of unc-86 the AIM neurons did not show expression of unc-17 and cho-1 fosmid reporters in the L4/adult male. The LIM homeobox transcription factor ceh-14 is required for the AIM neurons to express unc-17 and cho-1 fosmid reporters in the L4/adult male (bottom panel). Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter.DOI: http://dx.doi.org/10.7554/eLife.12432.017
+**Figure 6.:** We examined 20 animals for each genotype and for every mutant strain the described phenotype was observed in >80% of animals. (A) The LIM homeobox transcription factor lim-4 is required for unc-17 fosmid reporter expression (left panel) and cho-1 fosmid reporter expression (right panel) in AWB and SMB neurons . AWB neurons were visualized by DiI staining in the unc-17 fosmid reporter expressing strain. AWB and SMB show no fosmid reporter expression in the lim-4 mutant. (B) The Otx-type homeobox transcription factor ceh-14 is required for unc-17 and cho-1 fosmid reporter expression in PVC and unc-17 fosmid reporter expression in PVN. PVC neurons show a decrease in unc-17 and cho-1 fosmid reporter expression in the ceh-14 mutant compared to wild type. PVN neurons show no unc-17 fosmid reporter expression in the ceh-14 mutant. Note that PVN does not express cho-1 fosmid reporter in wild type animals. (C) The homeobox transcription factors unc-30 and lin-11 are required for normal expression of the unc-17 and cho-1 fosmid reporters. Cholinergic identity genes are downregulated in PVP neurons starting at L1 (top panels) and continuing until the L4/adult stage (bottom panels) in unc-30 and lin-11 mutant strains compared to wild type. (D) The homeobox transcription factor unc-42 is required for unc-17 and cho-1 fosmid reporter expression in RIV, SMD, RMD and SIB. (E) The POU homeobox transcription factor unc-86 is required for unc-17 and cho-1 fosmid reporter expression in RIH. (F) A wild type male is shown in the top panel for reference. unc-86 (middle panel) is also required for unc-17 and cho-1 fosmid reporter expression in URX and in the CEM male-specific neurons. In the absence of unc-86 the AIM neurons did not show expression of unc-17 and cho-1 fosmid reporters in the L4/adult male. The LIM homeobox transcription factor ceh-14 is required for the AIM neurons to express unc-17 and cho-1 fosmid reporters in the L4/adult male (bottom panel). Transgenes: otIs576 = unc-17 fosmid reporter; otIs544 = cho-1 fosmid reporter.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** AIM and PVC were labeled by cho-1 and ceh-14 fosmid reporters. PVN was labeled by ceh-14 fosmid reporter but it did not express cho-1 (see Table 1). ADF and PVP were labeled by cho-1 and lin-11 fosmid reporters. URX, RIR and RIH were labeled by by cho-1 and unc-86 fosmid reporters. PVP was labeled by cho-1 and unc-30 fosmid reporters. AVA, AVE, AVEs, RIV, RMD, SAA, SIB and SMD were labeled by cho-1 and unc-42 fosmid reporters.DOI: http://dx.doi.org/10.7554/eLife.12432.018
+**Figure 6—figure supplement 1.:** AIM and PVC were labeled by cho-1 and ceh-14 fosmid reporters. PVN was labeled by ceh-14 fosmid reporter but it did not express cho-1 (see Table 1). ADF and PVP were labeled by cho-1 and lin-11 fosmid reporters. URX, RIR and RIH were labeled by by cho-1 and unc-86 fosmid reporters. PVP was labeled by cho-1 and unc-30 fosmid reporters. AVA, AVE, AVEs, RIV, RMD, SAA, SIB and SMD were labeled by cho-1 and unc-42 fosmid reporters.
+
+**Table 6.**
+ Newly identified transcriptional regulators of cholinergic identity.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="3">Gene*</td>
+      <td rowspan="3">DNA binding domain</td>
+      <td rowspan="3">Neuron class</td>
+      <td colspan="3">Effect on identity features</td>
+      <td rowspan="3">Other neurotransmitter identities affected (neuron class)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cholinergic identity**</td>
+      <td rowspan="2">Other identity features**</td>
+    </tr>
+    <tr>
+      <td>unc-17 cha-1</td>
+      <td>cho-1</td>
+    </tr>
+    <tr>
+      <td rowspan="9">unc-3 (EBF)</td>
+      <td rowspan="9">Zn finger</td>
+      <td>PDA</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td rowspan="9"></td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>DVA</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PVC</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVA</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVB</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVD</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>AVE</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PVN</td>
+      <td>yes</td>
+      <td>n.a.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td rowspan="7">unc-42 (Prd-type)</td>
+      <td rowspan="7">Homeodomain</td>
+      <td>RIV</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>n.d.</td>
+      <td rowspan="7">Glu(ASH) 7</td>
+    </tr>
+    <tr>
+      <td>RMD</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SMD</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>SIB</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>AVA</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes1</td>
+    </tr>
+    <tr>
+      <td>AVD</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes1</td>
+    </tr>
+    <tr>
+      <td>AVE</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">lim-4(Lhx6/8)</td>
+      <td rowspan="3">Homeodomain</td>
+      <td>AWB</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes2</td>
+      <td rowspan="3"></td>
+    </tr>
+    <tr>
+      <td>SMB</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes3</td>
+    </tr>
+    <tr>
+      <td>RIV</td>
+      <td>no</td>
+      <td>no</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">lin-11 (Lhx1)</td>
+      <td rowspan="2">Homeodomain</td>
+      <td>ADF</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td rowspan="2">Glu (ASG, ADL) 7</td>
+    </tr>
+    <tr>
+      <td>PVP</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">unc-30 (Pitx)</td>
+      <td rowspan="2">Homeodomain</td>
+      <td>PVP</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes4</td>
+      <td rowspan="2">GABA (DD, VD) 9</td>
+    </tr>
+    <tr>
+      <td>RIH</td>
+      <td>no</td>
+      <td>no</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td rowspan="4">unc-86 (Brn3)</td>
+      <td rowspan="4">Homeodomain</td>
+      <td>CEM (male)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes5</td>
+      <td rowspan="4">Glu (ALM, PLM, AIM, AIZ, AQR, PQR, PVR) 7</td>
+    </tr>
+    <tr>
+      <td>URX</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes6</td>
+    </tr>
+    <tr>
+      <td>AIM (male)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes7</td>
+    </tr>
+    <tr>
+      <td>RIH</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes8</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ceh-14 (Lhx3/4)</td>
+      <td rowspan="3">Homeodomain</td>
+      <td>AIM (male)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td rowspan="3">Glu (AFD, DVC, PHA, PHB, PHC) 7</td>
+    </tr>
+    <tr>
+      <td>PVN</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>PVC</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Vertebrate orthologs in parenthesis. All neuron classes listed express the respective transcription factor tested.**'yes' = expression is downregulated or completely absent; 'no' = no readily observable effect; 'n.d.' = not determined; 'n.a. = not applicable because gene is not expressed in this cell. For primary data see Figure 6, and Figure 8. For data on 'other markers' (≥2 markers tested), see individual footnotes (this data is partly our own data, partly previously reported data). .Previously identified regulators of cholinergic identity are: unc-3 in A-, B-type, AS and SAB motor neurons, unc-86 in IL2, URA, URB, cfi-1 in IL2, URA, ttx-3 in AIY and AIA and ceh-10 in AIY (Altun-Gultekin et al., 2001; Kratsios et al., 2011, 2015; Wenick and Hobert, 2004; Zhang et al., 2014).1Baran et al. (1999); Brockie et al. (2001).2Alqadah et al. (2015); Sagasti et al. (1999).3Kim et al. (2015).4Hutter (2003). 5Shaham and Bargmann (2002).6Qin and Powell-Coffman (2004). 7Serrano-Saiz et al. (2013).8Sze et al. (2002). 9McIntire et al. (1993)_
 
 In line with a similar observation that we made upon analysis of glutamatergic neuron identity control (Serrano-Saiz et al., 2013), we observed a striking preponderance of homeodomain containing proteins in the transcription factors that we newly identified as cholinergic identity regulators. Specifically, we found that the three LIM homeobox genes lim-4, lin-11 and ceh-14 control cholinergic identity of six distinct cholinergic neuron types, including sensory neurons (lim-4 in AWB), interneurons (lin-11 in PVP; ceh-14 in AIM, PVC) and motor neurons (ceh-14 in PVN, lim-4 in SMB; Table 6; Figure 6). However, we find that lim-7, the C. elegans homolog of vertebrate Islet, which specifies cholinergic identity in the spinal cord and forebrain in mice (Cho et al., 2014), is not required to specify cholinergic identity in C. elegans (as assessed by normal cho-1 expression throughout the nervous system in lim-7 null mutants; data not shown). Therefore, while the usage of LIM-type homeobox genes in controlling cholinergic neurotransmitter identity appears to be conserved from C. elegans to vertebrates, different family members appear to execute this function in different species and cell types.
 
@@ -151,15 +4253,15 @@ Moreover, we found that the Pitx-type homeobox gene unc-30 controls cholinergic 
 
 From a EMS-induced genetic mutant screen that we conducted for regulators of RMD neuron identity (see Materials and methods), we uncovered unc-42, a Prox-type homeobox gene as a regulator of cholinergic gene expression in RMD motor neurons. We also found that unc-42 affects cholinergic identity of four additional, distinct types of cholinergic head neurons, most of them motor neurons (Figure 6). unc-42 is continuously expressed in all these postmitotic neuron types (Figure 6—figure supplement 1).
 
-The only exception to the homeobox theme is what appears to be the most remarkable regulator of cholinergic identity, the phylogenetically conserved COE-type
+The only exception to the homeobox theme is what appears to be the most remarkable regulator of cholinergic identity, the phylogenetically conserved COE-type unc-3 transcription factor. In addition to the previously reported impact of unc-3 on cholinergic ventral cord motor neuron identity (SAB-, A-, B-, AS-type MNs), we found that unc-3 regulates expression of the cholinergic identity genes cho-1 and unc-17 in all command interneurons (Figure 7, Table 6). Moreover, the PDA, PDB, PVN and DVA tail neurons also require unc-3 for their normal expression of cholinergic identity genes (Figure 7, Table 6). DVA is particularly notable here because like the command interneurons, the DVA neuron also takes a central role in the overall C. elegans connectivity network (Varshney et al., 2011) (Figure 3B) and this central location is paralleled by the dependence of these neurons on unc-3 activity. The expression pattern of unc-3 had not previously been reported in most of these neurons. Using a fosmid reporter and a gfp reporter inserted into the unc-3 locus through CRISPR-Cas9, we confirmed expression of unc-3 in all these cholinergic neuron types, including the command interneurons (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig7-v2.jpg)
 
-**Figure 7.:** unc-3 is a circuit-associated transcription factor.(A) Expression pattern of an unc-3 fosmid-based reporter (otIs591). Overlap with a cho-1 fosmid-based reporter (otIs544) is shown in all panels. The upper panels are the same as the lower, but a Nomarski image has been added for orientation purposes. unc-3 expression was also detected in PDA, PDB and PVP in the pre-anal ganglion (data not shown). (B) The expression of the unc-17 and cho-1 fosmid reporters is downregulated in command interneurons (AVA, AVB, AVD, AVE, PVC) and the tail neuron DVA in unc-3 mutant animals (identical results were obtained using two unc-3 alleles, e151 generates a premature STOP and n3435 is a deletion allele). Quantification is shown on the right. Twenty animals were analyzed at the fourth larval stage (L4) per genotype. Note that the effect of unc-3 on unc-17 expression in the command interneurons (this figure) is not as fully penetrant as it is in VNC motor neurons (Kratsios et al., 2011). (C) Gap junctions that command interneurons make are visualized with gfp tagging the innexin protein UNC-7, as previously described (Starich et al., 2009) (transgene: iwIs47). Dotted white lines delineate the location of the VNC. A significant decrease in the number of the UNC-7::GFP puncta was observed in the VNC of unc-3(n3435) mutant animals (quantification shown on the right with average values and standard deviation). A student’s t test was performed. ***p value <0.0001. (D) Reconstruction of the chemical synapse connectivity of the AVA command interneurons in a wild type and an unc-3(e151/MnH205) mutant animal. Less synaptic input onto AVA neurons and output from the AVA neurons was observed in the unc-3 mutant animal. This is not merely an effect of axonal process misplacement since in unc-3 mutants, AVA processes still run adjacent to the processes of the neurons it normally makes synaptic contacts to. More than 600 electron micrographs were reconstructed per genotype. In square brackets, the location (number of electron micrograph) for each chemical synapse is shown, and the number of consecutive micrographs in which a synapse was detected is also shown in parenthesis.DOI: http://dx.doi.org/10.7554/eLife.12432.020
+**Figure 7.:** (A) Expression pattern of an unc-3 fosmid-based reporter (otIs591). Overlap with a cho-1 fosmid-based reporter (otIs544) is shown in all panels. The upper panels are the same as the lower, but a Nomarski image has been added for orientation purposes. unc-3 expression was also detected in PDA, PDB and PVP in the pre-anal ganglion (data not shown). (B) The expression of the unc-17 and cho-1 fosmid reporters is downregulated in command interneurons (AVA, AVB, AVD, AVE, PVC) and the tail neuron DVA in unc-3 mutant animals (identical results were obtained using two unc-3 alleles, e151 generates a premature STOP and n3435 is a deletion allele). Quantification is shown on the right. Twenty animals were analyzed at the fourth larval stage (L4) per genotype. Note that the effect of unc-3 on unc-17 expression in the command interneurons (this figure) is not as fully penetrant as it is in VNC motor neurons (Kratsios et al., 2011). (C) Gap junctions that command interneurons make are visualized with gfp tagging the innexin protein UNC-7, as previously described (Starich et al., 2009) (transgene: iwIs47). Dotted white lines delineate the location of the VNC. A significant decrease in the number of the UNC-7::GFP puncta was observed in the VNC of unc-3(n3435) mutant animals (quantification shown on the right with average values and standard deviation). A student’s t test was performed. ***p value <0.0001. (D) Reconstruction of the chemical synapse connectivity of the AVA command interneurons in a wild type and an unc-3(e151/MnH205) mutant animal. Less synaptic input onto AVA neurons and output from the AVA neurons was observed in the unc-3 mutant animal. This is not merely an effect of axonal process misplacement since in unc-3 mutants, AVA processes still run adjacent to the processes of the neurons it normally makes synaptic contacts to. More than 600 electron micrographs were reconstructed per genotype. In square brackets, the location (number of electron micrograph) for each chemical synapse is shown, and the number of consecutive micrographs in which a synapse was detected is also shown in parenthesis.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A) The expression of PDA identity markers exp-1, ace-3/4, and cog-1 is affected in unc-3 mutant animals. Quantification is provided on the right. For cog-1, n = 25 for wild type and prom::gfpunc-3(e151). For ace-3/-4 n = 20 for wild type and prom::gfp and exp-1prom::gfp,unc-3(e151). Fisher’s exact test was performed. **p value <0.01; ***p value < 0.0001. (B) The expression of multiple glutamate receptor genes (nmr-1, nmr-2, glr-1, glr-2, glr-4, glr-5) is unaffected in command interneurons (AVA, AVB, AVD, AVE, PVC) of unc-3 null animals. Similarly, the expression of the ACh receptor subunit encoding gene acr-15 is not affected in the AVA and AVB neurons of unc-3 mutants. Quantification is provided on the right. Number of animals examined = 20 animals per reporter gene per genotype. Moreover, the expression of flp-18 and rig-3 (AVA markers), as well as opt-3 (AVE marker) is not affected in unc-3 mutants (N = 20, data not shown). In addition, the expression of several identity genes (glr-5, glutamate receptor; twk-16, potassium channel; nlp-12, neuropeptide; zig-5, immunoglobulin superfamily gene; ser-2, serotonin receptor) for the DVA interneuron is unaffected in unc-3 mutants (data not shown).DOI: http://dx.doi.org/10.7554/eLife.12432.021
+**Figure 7—figure supplement 1.:** (A) The expression of PDA identity markers exp-1, ace-3/4, and cog-1 is affected in unc-3 mutant animals. Quantification is provided on the right. For cog-1prom::gfp, n = 25 for wild type and unc-3(e151). For ace-3/-4prom::gfp and exp-1prom::gfp, n = 20 for wild type and unc-3(e151). Fisher’s exact test was performed. **p value <0.01; ***p value < 0.0001. (B) The expression of multiple glutamate receptor genes (nmr-1, nmr-2, glr-1, glr-2, glr-4, glr-5) is unaffected in command interneurons (AVA, AVB, AVD, AVE, PVC) of unc-3 null animals. Similarly, the expression of the ACh receptor subunit encoding gene acr-15 is not affected in the AVA and AVB neurons of unc-3 mutants. Quantification is provided on the right. Number of animals examined = 20 animals per reporter gene per genotype. Moreover, the expression of flp-18 and rig-3 (AVA markers), as well as opt-3 (AVE marker) is not affected in unc-3 mutants (N = 20, data not shown). In addition, the expression of several identity genes (glr-5, glutamate receptor; twk-16, potassium channel; nlp-12, neuropeptide; zig-5, immunoglobulin superfamily gene; ser-2, serotonin receptor) for the DVA interneuron is unaffected in unc-3 mutants (data not shown).
 
 Apart from the preponderance of homeobox genes, another striking theme we found is the employment of the same transcription factor in completely different cellular contexts, apparently a reflection of the operation of transcription factors in distinct combinations. For example, unc-86 controls cholinergic identity in the IL2 sensory neurons and the unrelated AIM interneurons (in the male). In these different cellular contexts unc-86 cooperates with distinct cofactors, cfi-1 in IL2 (Zhang et al., 2014) and ceh-14 in AIM (Figure 6G). The need for specific combinations of transcription factors to drive a specific identity program explains why we find that a factor that is expressed in multiple cholinergic neuron types does not necessarily regulate cholinergic identity in all neuron types in which it is expressed (Table 6). For example, lim-4 which is expressed in the cholinergic AWB, SMB and RIV neurons controls cholinergic identity in AWB and SMB (Figure 6), but not in RIV. This is likely because the cofactors that work together with lim-4 in AWB and/or SMB may not be expressed in RIV. Likewise, ceh-10 forms a heterodimer with ttx-3 in AIY to control its cholinergic identity (Altun-Gultekin et al., 2001; Wenick and Hobert, 2004), but it is not required for cholinergic identity of the AIN neurons which express ceh-10, but not ttx-3 (data not shown).
 
@@ -167,25 +4269,430 @@ Transcription factors that we find to control cholinergic neurotransmitter ident
 
 Lastly, we note that loss of two of the transcription factors that we examined, unc-3 and ceh-14, results in derepression of cholinergic identity features in normally non-cholinergic neurons (data not shown). In unc-3 mutants, two cells in the dorsal ganglion ectopically express cholinergic features; these are probably the RID neuron and its sister cell. In ceh-14 mutants at least one pair of tail neurons ectopically expresses cholinergic markers.
 
-## Coupling of cholinergic identity with other terminal identity features
+### Coupling of cholinergic identity with other terminal identity features
 
-Most of the transcriptional regulators that we defined here control not only cholinergic identity in the respective neuron classes, but also control other identity features. For example, we find that loss of
+Most of the transcriptional regulators that we defined here control not only cholinergic identity in the respective neuron classes, but also control other identity features. For example, we find that loss of unc-3 affects multiple aspects of PDA motor neuron identity (expression of the exp-1 ligand gated ion channel, ace-3/4 cholinesterase, cog-1 homeobox gene) and loss of unc-42 affects metabotropic glutamate receptor (mgl-1) expression in the RMD neurons. Apart from affecting cholinergic identity, loss of ceh-14 affects neuropeptide (flp-10) expression, as well as the serotonergic co-transmitter identity of the AIM neurons and it affects expression of the ionotropic glutamate receptors nmr-1 and glr-1 in the PVC command interneuron (Figure 8). In addition, lin-11 and unc-30 were previously found to control many terminal identity features of the PVP (Hutter, 2003) and these two factors also control cholinergic identity of PVP (Figure 6E). Similarly, lim-4 controls cholinergic identity of the AWB neurons but also several other identity features (Alqadah et al., 2015; Sagasti et al., 1999). The coupling of adopting cholinergic identity control with the adoption of other identity features has been observed in previously described regulators of cholinergic identity: unc-3 for VNC MNs (Kratsios et al., 2015 2011), unc-86 for IL2 (Zhang et al., 2014), ttx-3 for AIY and AIA (Altun-Gultekin et al., 2001; Zhang et al., 2014), and also in the context of neurons with distinct neurotransmitter identities (e.g. [Flames and Hobert, 2009; Serrano-Saiz et al., 2013]).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig8-v2.jpg)
 
-**Figure 8.:** (A) An mgl-1 reporter transgene does not show expression in RMD neurons in the absence of unc-42. (B) In the absence of ceh-14 the AIM neurons do not show eat-4 fosmid reporter and flp-10 reporter expression. 5-HT staining is not detectable in AIM neurons in the ceh-14 mutant. In the absence of ceh-14 the PVC neurons do not show nmr-1 or glr-1 reporter expression. Number of animals examined = 20 animals per reporter gene per genotype. (C) The expression of PDA identity markers exp-1, ace-3/4, and cog-1 is lost in unc-3 mutant animals. For cog-1, 25 of 25 wild-type and 1 of 25 prom::gfpunc-3(e151) animals showed cog-1 expression in PDA. For prom::gfpace-3/-4 20 of 20 wild-type and 0 of 20 prom::gfp,unc-3(e151) animals showed ace-3/-4 expression in PDA. For prom::gfpexp-1 20 of 20 wild-type and 11 of 20 prom::gfp,unc-3(e151) animals showed exp-1 expression in PDA.prom::gfpDOI: http://dx.doi.org/10.7554/eLife.12432.022
+**Figure 8.:** (A) An mgl-1 reporter transgene does not show expression in RMD neurons in the absence of unc-42. (B) In the absence of ceh-14 the AIM neurons do not show eat-4 fosmid reporter and flp-10 reporter expression. 5-HT staining is not detectable in AIM neurons in the ceh-14 mutant. In the absence of ceh-14 the PVC neurons do not show nmr-1 or glr-1 reporter expression. Number of animals examined = 20 animals per reporter gene per genotype. (C) The expression of PDA identity markers exp-1, ace-3/4, and cog-1 is lost in unc-3 mutant animals. For cog-1prom::gfp, 25 of 25 wild-type and 1 of 25 unc-3(e151) animals showed cog-1prom::gfp expression in PDA. For ace-3/-4prom::gfp, 20 of 20 wild-type and 0 of 20 unc-3(e151) animals showed ace-3/-4prom::gfp expression in PDA. For exp-1prom::gfp, 20 of 20 wild-type and 11 of 20 unc-3(e151) animals showed exp-1prom::gfp expression in PDA.
 
-However, we also noted a number of striking exceptions to the coupling of neurotransmitter identity with other terminal identity features. The serotonergic identity of the hermaphrodite specific motor neurons HSN is controlled by the unc-86 POU homeobox gene (Sze et al., 2002), but unc-86 does not affect unc-17/VAChT expression in HSN (data not shown). The most striking example for a separation of neurotransmitter identity from other identity features is observed in relation to the function of the unc-3 gene. We had previously shown that in all motor neurons in which unc-3 is expressed (SAB head motor neurons, A- B- and AS-type VNC MNs), unc-3 not only controls neurotransmitter identity, but also a multitude of other terminal molecular markers (Kratsios et al., 2015, 2011). In contrast, the activity of unc-3 in the AVA, AVB, AVD, AVE and PVC command interneurons and DVA interneuron appears to be restricted to select subfeatures of these neurons. We arrived at this conclusion by analyzing the expression of more than ten additional identity markers of these unc-3-expressing neurons (including glutamate receptors, neuropeptides and ion channels). Not a single one besides the cholinergic reporter genes is affected in the worms lacking unc-3 (Figure 7—figure supplement 1; Table 7). Within a subset of these neurons, namely the command interneurons AVA, AVD and AVE, three transcription factors, unc-42 (homeobox), fax-1 (nuclear hormone receptor) and cfi-1 (ARID-type), have been shown to control subsets of these unc-3-independent terminal identity markers (Table 8). The observation of a piece-meal regulation of distinct terminal identity features by a number of distinct transcription factors, each acting in a highly cell-type and target gene-specific manner (Table 8), represents a remarkable departure from the commonly observed theme of co-regulation of multiple identity features by the same set of transcription factors (Alqadah et al., 2015; Cinar et al., 2005; Duggan and Chalfie, 1995; Etchberger et al., 2009; Guillermin et al., 2011; Hobert, 2011; Kratsios et al., 2011; Serrano-Saiz et al., 2013; Wenick and Hobert, 2004; Zhang et al., 2014).10.7554/eLife.12432.023Table 7.unc-3 affects the differentiation of a broad set of cholinergic neuron types. nmr and glr genes encode glutamate receptors and expression of neither is affected by unc-3; many of them are instead regulated by either the unc-42, fax-1 or cfi-1, as summarized in Table 8.DOI: http://dx.doi.org/10.7554/eLife.12432.023  unc-3 (+) neuronsCholinergic identity in unc-3(-) animals 1 Other identity features that are NOT affected in unc-3(-) animals 1 Other identity feature that are affected in unc-3(-) animalsINTERCommand inter- neurons AVA unc-17, cho-1 affected  nmr-1, nmr-2, glr-1, glr-2, glr-4, glr-5, acr-15, rig-3, flp-18   AVB unc-17, cho-1 affected acr-15   AVD unc-17, cho-1 affected nmr-1, nmr-2, glr-1, glr-2, glr-5   AVE unc-17, cho-1 affected nmr-1, nmr-2, glr-1, glr-2, glr-5, opt-3   PVC unc-17, cho-1 affected nmr-1, nmr-2, glr-1, glr-2, glr-5   Other inter- neurons DVA unc-17, cho-1 affected glr-4, glr-5, twk-16, nlp-12, zig-5, ser-2   SAA unc-17 NOT affected2     PVP unc-17, cho-1 NOT affected     MOTOR Head MNs SAB unc-17, cho-1 affected3    8/8 markers tested3 VNC MNs A,B,AS unc-17, cho-1 affected3   29/34 markers tested3 Tail MNs PDA unc-17, cho-1 affected   exp-1, ace-3/4, cog-1 1PDB unc-17, cho-1 affected      PVN unc-17 affected2     1See Figure 7, Figure 7—figure supplement 1 2Cho-1 not expressed in these neurons.3As previously reported by Kratsios et al. (2011), (2015).10.7554/eLife.12432.024Table 8.Transcription factors affecting command interneuron differentiation.DOI: http://dx.doi.org/10.7554/eLife.12432.024TF AVA AVB AVD AVE PVC unc-3           unc-42           fax-1           cfi-1           ceh-14           ACh           unc-17 & cho-1 unc-3 effect unc-3 effect unc-3 effect unc-3 effect unc-3 effect unc-42 NO effect unc-42 NO effect unc-42 NO effect           ceh-14 effect Other           nmr-1 (GluR) unc-3 NO effect   unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-42 NO effect   unc-42 NO effect unc-42 NO effect ceh-14 effect fax-1 effect   fax-1 NO effect  fax-1 effect      cfi-1 effect cfi-1 effect nmr-2 (GluR) unc-3 NO effect   unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-42 NO effect   unc-42 NO effect unc-42 NO effect    fax-1 effect   fax-1 NO effect fax-1 effect glr-1 (GluR) unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-42 effect unc-42 NO effect unc-42 effect unc-42 effect ceh-14 effect fax-1 no effect fax-1 NO effect fax-1 no effect fax-1 no effect cfi-1 effect   cfi-1 effect glr-2 (GluR) unc-3 NO effect   unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-42 NO effect   unc-42 NOeffect unc-42 NOeffect   fax-1 NO effect   fax-1 NO effect fax-1 NO effect   glr-4 (GluR) unc-3 NO effect         unc-42 effect fax-1 no effect glr-5 (GluR) unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-3 NO effect unc-42 effect unc-42 NOeffect unc-42 effect unc-42 effect   fax-1 no effect fax-1 NO effect fax-1 no effect fax-1 no effect   opt-3       unc-3 NO effect   unc-42 effect fax-1 effect rig-3 (IgSF) unc-3 no effect         flp-18 (FMRF) unc-3 no effect         Gray shading: gene normally expressed in this cell. 'Effect' (red) indicate that respective reporter gene fails to be expressed in the respective mutant background in the indicated cells, 'no effect' (green) indicates the opposite. unc- 42, cfi-1 and fax-1 data on non-ACh marker from Wightman et al. (2005) Shaham and Bargmann (2002) and Brockie et al. (2001)
+However, we also noted a number of striking exceptions to the coupling of neurotransmitter identity with other terminal identity features. The serotonergic identity of the hermaphrodite specific motor neurons HSN is controlled by the unc-86 POU homeobox gene (Sze et al., 2002), but unc-86 does not affect unc-17/VAChT expression in HSN (data not shown). The most striking example for a separation of neurotransmitter identity from other identity features is observed in relation to the function of the unc-3 gene. We had previously shown that in all motor neurons in which unc-3 is expressed (SAB head motor neurons, A- B- and AS-type VNC MNs), unc-3 not only controls neurotransmitter identity, but also a multitude of other terminal molecular markers (Kratsios et al., 2015, 2011). In contrast, the activity of unc-3 in the AVA, AVB, AVD, AVE and PVC command interneurons and DVA interneuron appears to be restricted to select subfeatures of these neurons. We arrived at this conclusion by analyzing the expression of more than ten additional identity markers of these unc-3-expressing neurons (including glutamate receptors, neuropeptides and ion channels). Not a single one besides the cholinergic reporter genes is affected in the worms lacking unc-3 (Figure 7—figure supplement 1; Table 7). Within a subset of these neurons, namely the command interneurons AVA, AVD and AVE, three transcription factors, unc-42 (homeobox), fax-1 (nuclear hormone receptor) and cfi-1 (ARID-type), have been shown to control subsets of these unc-3-independent terminal identity markers (Table 8). The observation of a piece-meal regulation of distinct terminal identity features by a number of distinct transcription factors, each acting in a highly cell-type and target gene-specific manner (Table 8), represents a remarkable departure from the commonly observed theme of co-regulation of multiple identity features by the same set of transcription factors (Alqadah et al., 2015; Cinar et al., 2005; Duggan and Chalfie, 1995; Etchberger et al., 2009; Guillermin et al., 2011; Hobert, 2011; Kratsios et al., 2011; Serrano-Saiz et al., 2013; Wenick and Hobert, 2004; Zhang et al., 2014).
 
-## unc-3 is a circuit-associated transcription factor
+**Table 7.**
+ unc-3 affects the differentiation of a broad set of cholinergic neuron types. nmr and glr genes encode glutamate receptors and expression of neither is affected by unc-3; many of them are instead regulated by either the unc-42, fax-1 or cfi-1, as summarized in Table 8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>unc-3 (+) neurons</th>
+      <th>Cholinergic identity in unc-3(-) animals 1</th>
+      <th>Other identity features that are NOT affected in unc-3(-) animals 1</th>
+      <th>Other identity feature that are affected in unc-3(-) animals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">INTER</td>
+      <td rowspan="5">Command inter- neurons</td>
+      <td>AVA</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>nmr-1, nmr-2, glr-1, glr-2, glr-4, glr-5, acr-15, rig-3, flp-18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVB</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>acr-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVD</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>nmr-1, nmr-2, glr-1, glr-2, glr-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVE</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>nmr-1, nmr-2, glr-1, glr-2, glr-5, opt-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVC</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>nmr-1, nmr-2, glr-1, glr-2, glr-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Other inter- neurons</td>
+      <td>DVA</td>
+      <td>unc-17, cho-1 affected</td>
+      <td>glr-4, glr-5, twk-16, nlp-12, zig-5, ser-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SAA</td>
+      <td>unc-17 NOT affected2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVP</td>
+      <td>unc-17, cho-1 NOT affected</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">MOTOR</td>
+      <td>Head MNs</td>
+      <td>SAB</td>
+      <td>unc-17, cho-1 affected3</td>
+      <td></td>
+      <td>8/8 markers tested3</td>
+    </tr>
+    <tr>
+      <td>VNC MNs</td>
+      <td>A,B,AS</td>
+      <td>unc-17, cho-1 affected3</td>
+      <td></td>
+      <td>29/34 markers tested3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Tail MNs</td>
+      <td>PDA</td>
+      <td>unc-17, cho-1 affected</td>
+      <td></td>
+      <td>exp-1, ace-3/4, cog-1 1</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>unc-17, cho-1 affected</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVN</td>
+      <td>unc-17 affected2</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_1See Figure 7, Figure 7—figure supplement 1 2Cho-1 not expressed in these neurons.3As previously reported by Kratsios et al. (2011), (2015)._
+
+**Table 8.**
+ Transcription factors affecting command interneuron differentiation.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>TF</td>
+      <td>AVA</td>
+      <td>AVB</td>
+      <td>AVD</td>
+      <td>AVE</td>
+      <td>PVC</td>
+    </tr>
+    <tr>
+      <td>unc-3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>unc-42</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fax-1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cfi-1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ceh-14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACh</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>unc-17 &amp; cho-1</td>
+      <td>unc-3 effect</td>
+      <td>unc-3 effect</td>
+      <td>unc-3 effect</td>
+      <td>unc-3 effect</td>
+      <td>unc-3 effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ceh-14 effect</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nmr-1 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td></td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td>unc-42 NO effect</td>
+      <td>ceh-14 effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 effect</td>
+      <td></td>
+      <td>fax-1 NO effect</td>
+      <td>fax-1 effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>cfi-1 effect</td>
+      <td></td>
+      <td>cfi-1 effect</td>
+    </tr>
+    <tr>
+      <td>nmr-2 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td></td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 effect</td>
+      <td></td>
+      <td>fax-1 NO effect</td>
+      <td>fax-1 effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>glr-1 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 effect</td>
+      <td>unc-42 NO effect</td>
+      <td>unc-42 effect</td>
+      <td>unc-42 effect</td>
+      <td>ceh-14 effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 no effect</td>
+      <td>fax-1 NO effect</td>
+      <td>fax-1 no effect</td>
+      <td>fax-1 no effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>cfi-1 effect</td>
+      <td></td>
+      <td>cfi-1 effect</td>
+    </tr>
+    <tr>
+      <td>glr-2 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td></td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 NO effect</td>
+      <td></td>
+      <td>unc-42 NOeffect</td>
+      <td>unc-42 NOeffect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 NO effect</td>
+      <td></td>
+      <td>fax-1 NO effect</td>
+      <td>fax-1 NO effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>glr-4 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 no effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>glr-5 (GluR)</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+      <td>unc-3 NO effect</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>unc-42 effect</td>
+      <td>unc-42 NOeffect</td>
+      <td>unc-42 effect</td>
+      <td>unc-42 effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fax-1 no effect</td>
+      <td>fax-1 NO effect</td>
+      <td>fax-1 no effect</td>
+      <td>fax-1 no effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>opt-3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>unc-3 NO effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>unc-42 effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>fax-1 effect</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rig-3 (IgSF)</td>
+      <td>unc-3 no effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>flp-18 (FMRF)</td>
+      <td>unc-3 no effect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Gray shading: gene normally expressed in this cell. 'Effect' (red) indicate that respective reporter gene fails to be expressed in the respective mutant background in the indicated cells, 'no effect' (green) indicates the opposite. unc- 42, cfi-1 and fax-1 data on non-ACh marker from Wightman et al. (2005) Shaham and Bargmann (2002) and Brockie et al. (2001)_
+
+### unc-3 is a circuit-associated transcription factor
 
 Moving beyond a cell- and gene-centric consideration of regulatory factors, we asked whether there are any overarching, circuit-based themes of cholinergic identity control. Specifically, since every transcription factor that we identified here to control cholinergic neurotransmitter identity exerts its effect on more than one neuron type, we asked whether neurons whose neurotransmitter identity is controlled by the same regulatory factor are part of synaptically connected circuits. Such an observation would suggest that the respective transcription factor may define and coordinate the activity of entire circuits and perhaps may also define aspects of circuit assembly. We indeed found several examples of transcription factors that control the identity of synaptically connected neurons.
 
-The most striking example is the ventral nerve cord motor circuit which is composed of a multitude of interconnected motor neurons (six different classes) and a highly interconnected 'rich club' of interneurons (also six different classes) (
+The most striking example is the ventral nerve cord motor circuit which is composed of a multitude of interconnected motor neurons (six different classes) and a highly interconnected 'rich club' of interneurons (also six different classes) (White et al., 1986; Towlson et al., 2013). As noted above, the entire ventral nerve cord motor circuit uses ACh (except DD/VD; shown again in Figure 9A). Strikingly, unc-3 is expressed and required for the adoption of cholinergic identity in all neurons in this circuit (schematized in Figure 9A; data in Figure 7B). unc-3 is therefore a circuit-associated transcription factor that is selectively associated with this circuit (unc-3 is expressed only in a few neurons outside this circuit) and that defines a critical feature of the circuit, namely the ability of neurons in the circuit to communicate among each other. We furthermore note that the regulated mutual 3-neuron network motif mentioned above (Figure 4E) frequently occurs in the unc-3-dependent motor circuit, with the mutually connected neurons being unc-3-dependent command interneurons that receive inputs either from glutamatergic neurons outside the circuit or from cholinergic, and also unc-3-dependent neurons within the circuit (Figure 9A; Table 4).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig9-v2.jpg)
 
-**Figure 9.:** (A) Ventral cord motor circuit as shown in White et al. (1986), but now superimposed with neurotransmitter identity and expression pattern of the unc-3 transcription factor. unc-3 controls the cholinergic identity of every single neuron in this circuit. Next to the circuit diagram, a number of different regulated mutual 3-neuron networks motifs are shown. These motifs are either embedded in the circuit and provide a connection to neurons located outside the circuit (e.g. glutamatergic sensory neurons). In all cases unc-3 controls cholinergic identity of the mutually connected command interneurons ('CI') and in those cases where the mutually connected neurons receive cholinergic interneuron input, unc-3 controls the identity of the entire microcircuit. (B) unc-42 controls the cholinergic identity of interconnected head motor neurons, and glutamatergic signaling between ASH sensory neurons (whose glutamatergic identity is controlled by unc-42 (Serrano-Saiz et al., 2013) and cross-connected command interneurons in which unc-42 controls glutamate receptor expression (Brockie et al., 2001) (shown in Table 4). Red boxes indicate the neurons affected by the indicated transcription factor.DOI: http://dx.doi.org/10.7554/eLife.12432.025
+**Figure 9.:** (A) Ventral cord motor circuit as shown in White et al. (1986), but now superimposed with neurotransmitter identity and expression pattern of the unc-3 transcription factor. unc-3 controls the cholinergic identity of every single neuron in this circuit. Next to the circuit diagram, a number of different regulated mutual 3-neuron networks motifs are shown. These motifs are either embedded in the circuit and provide a connection to neurons located outside the circuit (e.g. glutamatergic sensory neurons). In all cases unc-3 controls cholinergic identity of the mutually connected command interneurons ('CI') and in those cases where the mutually connected neurons receive cholinergic interneuron input, unc-3 controls the identity of the entire microcircuit. (B) unc-42 controls the cholinergic identity of interconnected head motor neurons, and glutamatergic signaling between ASH sensory neurons (whose glutamatergic identity is controlled by unc-42 (Serrano-Saiz et al., 2013) and cross-connected command interneurons in which unc-42 controls glutamate receptor expression (Brockie et al., 2001) (shown in Table 4). Red boxes indicate the neurons affected by the indicated transcription factor.
 
 To investigate whether neurotransmitter identity is the only parameter of the circuit that is disrupted in unc-3 mutants, we examined connectivity between neurons in the VNC MN circuit. In our previous analysis of unc-3 function, we had identified neuromuscular junction defects, i.e. disorganized or absent synapses from VNC MNs onto body wall muscle (Kratsios et al., 2015), but upstream layers of the motor circuit (i.e. connections of command interneurons to MNs and connections among command interneurons) had not been examined. unc-3-expressing command interneurons make prominent electrical synapses to other command interneurons and to motor neurons and these synapses can be visualized through gfp-tagging of a gap junction component that connects command interneurons and motor neurons, the innexin unc-7 (Figure 7C), which is expressed in command interneurons (Starich et al., 2009). UNC-7::GFP puncta, visualized with a translational reporter are severely reduced in unc-3 mutants (Figure 7C). Expression of a transcriptional, fosmid-based unc-7 reporter is unaffected in unc-3 mutants (data not shown), leading us to conclude that unc-3 affects electrical synapse formation at a step independent of regulation of innexin expression.
 
@@ -193,47 +4700,328 @@ To examine chemical synapses within neurons of the motor circuit, we reconstruct
 
 Non-cholinergic synaptic inputs from sensory neurons into the motor circuit appear not to be affected by unc-3. We arrived at this conclusion by examining the synaptic connections of the glutamatergic PHB neuron to the AVA interneuron, normally made in the pre-anal ganglion (White et al., 1986). This synaptic connection can be visualized using a GFP reconstitution system ('GRASP'; (Park et al., 2011). We find these synaptic GFP signals to be unaffected in unc-3 mutants (data not shown).
 
-Remarkably, the pan-circuit control of cholinergic neurotransmitter identity by
+Remarkably, the pan-circuit control of cholinergic neurotransmitter identity by unc-3 is mediated via a single UNC-3 binding site ('COE motif') controlling neurotransmitter pathway genes. Its deletion in the context of the cho-1/ChT fosmid-based reporter eliminates expression not only in the ventral nerve cord motor neurons, but also in all other unc-3 dependent cholinergic neurons, not just within the motor neuron circuit, but also outside the circuit (Figure 10A–C). On the other hand, a 280 bp region from the cho-1 and a 250 bp region from the unc-17 locus that contain the COE motif are not sufficient to drive expression in all unc-3-dependent inter- and motor neurons of the motor circuit, but only drives expression in motor neurons (Figure 10D, E). This finding suggests that unc-3 may cooperate with distinct cofactors in distinct neuron types.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/12432/elife-12432-fig10-v2.jpg)
 
-**Figure 10.:** cho-1 expression in all distinct unc-3-dependent cholinergic neuron types.(A) Schematic showing of the cho-1 locus and the location of the UNC-3 binding site (COE motif) relative to ATG for the fosmid reporters and 280bp promoter fusion. (B, C) A cho-1 fosmid reporter (~28 kb) that contains an intact COE motif shows expression in all cholinergic neurons including the ventral nerve cord (VNC) motor neurons (MNs), the command interneurons (AVA, AVB, AVD, AVE, PVC), and the interneuron DVA. Mutation of the COE motif in the context of this cho-1 fosmid-based reporter results in selective loss of reporter gene expression in VNC MNs residing at the retrovesicular ganglion and all command interneurons (only AVA and AVE head interneurons are shown). (B) cho-1 fosmid reporter versus cho-1_COEmut fosmid reporter in an adult head. (C) cho-1 fosmid reporter versus cho-1_COEmut fosmid reporter in an adult tail. Reporter gene expression is also lost in tail neurons DVA and PVC. The transgenic line rab-3 drives reporter gene expression in the entire nervous system and was used in the background to facilitate neuronal identification. (prom::rfpD) A short fragment (280 bp) of the cho-1 cis-regulatory region containing the COE motif is sufficient to drive reporter gene expression only in VNC MNs. This fragment does not show expression in command interneurons located at the head and tail of the animal. (E) A short fragment (250 bp) of the unc-17 cis-regulatory region containing the COE motif is sufficient to drive reporter gene expression only in VNC MNs.DOI: http://dx.doi.org/10.7554/eLife.12432.026
+**Figure 10.:** (A) Schematic showing of the cho-1 locus and the location of the UNC-3 binding site (COE motif) relative to ATG for the fosmid reporters and 280bp promoter fusion. (B, C) A cho-1 fosmid reporter (~28 kb) that contains an intact COE motif shows expression in all cholinergic neurons including the ventral nerve cord (VNC) motor neurons (MNs), the command interneurons (AVA, AVB, AVD, AVE, PVC), and the interneuron DVA. Mutation of the COE motif in the context of this cho-1 fosmid-based reporter results in selective loss of reporter gene expression in VNC MNs residing at the retrovesicular ganglion and all command interneurons (only AVA and AVE head interneurons are shown). (B) cho-1 fosmid reporter versus cho-1_COEmut fosmid reporter in an adult head. (C) cho-1 fosmid reporter versus cho-1_COEmut fosmid reporter in an adult tail. Reporter gene expression is also lost in tail neurons DVA and PVC. The transgenic line rab-3prom::rfp drives reporter gene expression in the entire nervous system and was used in the background to facilitate neuronal identification. (D) A short fragment (280 bp) of the cho-1 cis-regulatory region containing the COE motif is sufficient to drive reporter gene expression only in VNC MNs. This fragment does not show expression in command interneurons located at the head and tail of the animal. (E) A short fragment (250 bp) of the unc-17 cis-regulatory region containing the COE motif is sufficient to drive reporter gene expression only in VNC MNs.
 
 Taken together, unc-3 activity is required not only for the expression of proper neurotransmitter identity, but also for synaptic connectivity throughout the VNC motor neuron circuit, not just in motor neurons but also in command interneurons. However, as mentioned above, unc-3 is not required to control the expression of other identity features of command interneurons, such as the many types of distinct glutamate receptors expressed by the command interneurons (Figure 7—figure supplement 1).
 
-## unc-42 appears to be another circuit-associated transcription factor
+### unc-42 appears to be another circuit-associated transcription factor
 
 unc-3 may not be the only transcription factor whose activity is required for the function and assembly of an entire circuit. On a micro-circuit level, we note that the homeobox gene unc-42 is, like unc-3, also frequently employed in the context of the 'regulated mutual' 3-neuron network motif described above. This motif is predominantly found either (a) in the context of the innervation of cross-connected command interneurons or (b) the context of cross-connected head motor neurons (SMDs and RMDs; Figure 9B; Table 4). unc-42 has functions in both of these motifs. In the case of the cross-connected head motor neurons (RMDs, SMDs) and the RIV interneuron that innervates these cross-connected neurons, unc-42 specifies the cholinergic identity of all of these neurons (and other signaling input to these neurons, exemplified by the above-mentioned regulation of the metabotropic Glu receptor mgl-1 by unc-42). In the cross-connected command interneurons, unc-42 does not affect their cholinergic identity, but it does affect the expression of multiple ionotropic Glu receptors (GluRs) expressed in the command interneurons (Brockie et al., 2001). Intriguingly, in a number of motif occurrences, the cross-connected command interneurons are innervated by the glutamatergic ASH sensory neurons, which sense a number of repulsive cues (Table 4) (Kaplan and Horvitz, 1993). We previously found that the glutamatergic identity of the ASH neurons is controlled by unc-42 (Serrano-Saiz et al., 2013). unc-42 therefore controls and apparently coordinates the expression of presynaptic neurotransmitter identity and postsynaptic receptor expression in a repulsive reflex circuit (Figure 9B).
 
 Notably, the above-mentioned unc-42-dependent 'regulated mutual' 3 neuron network motifs are connected to one another, as illustrated in Figure 9B. Mutually connected, unc-42-dependent head motor neurons are coupled by electrical synapses (Figure 9B). Moreover, the unc-42-dependent head motor neurons are connected to the unc-42-dependent ASH>command interneuron motif. This connection is made by the glutamatergic AIB interneurons; strikingly, their glutamatergic identity is also controlled by unc-42 (E.S. and O.H., unpubl. data). Taken together, a network of interconnected neurons in the head of the worm that employ distinct neurotransmitter systems all require unc-42, either for the acquisition of their neurotransmitter identity or for the ability to receive neurotransmitter signals (unc-42-dependent GluR expression in command interneurons).
 
-## Conclusions
+### Conclusions
 
 ## Materials and methods
 
-## Mutant strains
+### Mutant strains
 
 The C. elegans mutant strains used in this study were: unc-104(e1265); lim-4(ky403); ceh-14(ch3); lin-11(n389); unc-30(e191); unc-42(e419); unc-86(n846); unc-3(e151); unc-3(n3435).
 
-## Transgenic reporter strains
+### Transgenic reporter strains
 
 The unc-17, acc-1, acc-2, acc-3 and acc-4 fosmid reporter constructs were kindly provided by the TransgeneOme project (Sarov et al., 2012). gfp is fused directly to the respective loci ('translational reporters'). The unc-17 fosmid DNA was injected at 15 ng/μl into N2 worms together with lin-44::yfp as a co-injection marker. The cho-1 fosmid reporter construct was generated using λ-Red-mediated recombineering in bacteria as previously described (Tursun et al., 2009). For the cho-1 fosmid reporter, either an SL2 spliced, nuclear- localized mChOpti::H2B sequence was engineered right after the stop codon of the locus (resulting transgene: otIs544) or SL2 spliced, nuclear-localized yfp::H2B sequence was engineered at the same position, as previously reported (Stefanakis et al., 2015) (resulting transgene: otIs354). For the 'transcriptional', fosmid-based unc-7 reporter an sl2::H2B::yfp cassette was inserted at the 3’ end of the locus. The acc-1, -2, -3, and -4 and the cho-1 fosmid DNA were injected at 15 ng/μl into a pha-1(e2123) mutant strain with pBX as co-injection marker (Granato et al., 1994). The following reporter strains were generated for this study: unc-17 fosmid reporter (otIs576), cho-1 fosmid reporter (otIs544), acc-1 fosmid reporter (otEx6374), acc-2 fosmid reporter (otEx6375), acc-4 fosmid reporter (otEx6376). For the mutation of the COE motif in the context of the cho-1 fosmid-based reporter construct, two nucleotides (wild-type COE motif: aaaacggtctccagggagagaaa; mutated COE motif: aaaacggtctggagggagagaaa) that are critical for UNC-3 binding were mutated as previously described in Stefanakis et al., 2015.
 
-The following additional, and previously described neuronal markers were used in the study: ric-19::gfp (otIs380), eat-4fosmid::sl2::yfp::H2B (otIs388), eat-4fosmid::sl2::mChOpti::H2B (otIs518), ace-3/4::gfp (fpIs1), rab-3::bfp (otIs355), pkd-2::gfp (bxIs14), unc-86fosmid::yfp (otIs337), rab-3::rfp (otIs355), lin-39fosmid::gfp (wgIs18), opt-3::gfp (gvEx173), flp-18::TagRFP (otEx6491), rig-3::gfp (otEx239). Additional transgenes used for cell identifications are listed in Table 9.10.7554/eLife.12432.027Table 9.Molecular markers for cell identification. The respective markers were crossed with cho-1 or unc-17 fosmid reporters to validate cell identification.DOI: http://dx.doi.org/10.7554/eLife.12432.027NeuronMolecular markerHermaphrodite   ADFL/R cat-1::GFP (otIs625) 1AIA L/R ttx-3 fosmid::GFP (wgIs68) AIN L/R ttx-3 fosmid::GFP (wgIs68) AIY L/R ttx-3 fosmid::GFP (wgIs68) ALN L/R unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439) AS1-11 unc-3 fosmid::GFP (otIs591) ASJ L/R DiI/DiO staining AVA L/R glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3) AVB L/R acr-15::GFP (wdEx290); sra-11::GFP (otIs123) AVD L/R glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3) AVE L/R glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3) AVG odr-2::DsRed (otEx4452); unc-6 fosmid::GFP (otEx6370) AWB L/R DiI/DiO staining DA1-9 unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14) DB1-7 unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14) DVA ser-2::GFP (otIs358) HSN L/R unc-86 fosmid::YFP (otIs337) IL2 D/V L/R (x6) unc-86 fosmid::YFP (otIs337) PDA unc-3 fosmid::GFP (otIs591); ace-3/4::GFP (fpIs1) PDB unc-3 fosmid::GFP (otIs591) PLN L/R unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439) PVC L/R nmr-1::GFP (akIs3)  PVN L/R 2PVP L/R lin-11 fosmid::GFP (wgIs62); unc-30 fosmid::GFP (wgIs395) RIB L/R 2RIF L/R odr-2::DsRed (otEx4452); unc-6 fosmid::GFP (otEx6370) RIH cat-1::GFP (otIs625) RIR8 unc-86 fosmid::YFP (otIs337) RIV L/R unc-42 fosmid::GFP (wgIs173); lad-2::GFP (otIs439) RMD D/V L/R (x6) glr-1::DsRed (hdIs30)  RMF L/R 2RMH L/R 2SAA D/V L/R (x4) lim-4::GFP (mgIs19); lad-2::GFP (otIs439) SAB D V L/R (x3) unc-4::GFP (vsIs45) SDQ L/R unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439) SIA D/V L/R (x4) ceh-24::GFP (ccIs4595) SIB D/V L/R (x4) ceh-24::GFP (ccIs4595) SMB D/V L/R (x4) lim-4::GFP (mgIs19); lad-2::GFP (otIs439) SMD D/V L/R (x4) lad-2::GFP (otIs439) URA D/V L/R (x4) unc-86 fosmid::YFP (otIs337) URB L/R unc-86 fosmid::YFP (otIs337) URX L/R flp-10::GFP (otIs92); unc-86 fosmid::YFP (otIs337) VA1-12 unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14) VB1-11 unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14) VC1-6 lin-11::GFP (nIs106); ida-1::GFP (inIs179) Pharyngeal   I1 L/R 3I3 (L) 3M1 (R) 3M2 L/R 3M4 (L) 3M5 (L) 3MC L/R 3M   CEM D/V L/R (x4) pkd-2::GFP (bxIs14) CA1-9 ida-1 (inIs179) DVE, DVF 2HOB ida-1 (inIs179) PCB, PCC, SPC 4PDC, PGA 2PVV 2PVX, PVY 2PVZ ida-1 (inIs179) R1A, R2A, R3A, R4A, R6A 2SPV 21Excluded AWA due to lack of overlap of cho-1 fosmid reporter with odr-10::gfp and unc-17 fosmid reporter gfp reporter with gpa-4::mCherry. See Figure 1—figure supplement 1. 2Identified based on position and axonal projections because of the lack of available markers. 3Pharyngeal neurons identified based on axonal projections which are visible with the unc-17 fosmid reporter. 4Garcia et al. (2001).
+The following additional, and previously described neuronal markers were used in the study: ric-19::gfp (otIs380), eat-4fosmid::sl2::yfp::H2B (otIs388), eat-4fosmid::sl2::mChOpti::H2B (otIs518), ace-3/4::gfp (fpIs1), rab-3::bfp (otIs355), pkd-2::gfp (bxIs14), unc-86fosmid::yfp (otIs337), rab-3::rfp (otIs355), lin-39fosmid::gfp (wgIs18), opt-3::gfp (gvEx173), flp-18::TagRFP (otEx6491), rig-3::gfp (otEx239). Additional transgenes used for cell identifications are listed in Table 9.
 
-## Cell-type specific changes of sexual identity
+**Table 9.**
+ Molecular markers for cell identification. The respective markers were crossed with cho-1 or unc-17 fosmid reporters to validate cell identification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron</th>
+      <th>Molecular marker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hermaphrodite</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADFL/R</td>
+      <td>cat-1::GFP (otIs625) 1</td>
+    </tr>
+    <tr>
+      <td>AIA L/R</td>
+      <td>ttx-3 fosmid::GFP (wgIs68)</td>
+    </tr>
+    <tr>
+      <td>AIN L/R</td>
+      <td>ttx-3 fosmid::GFP (wgIs68)</td>
+    </tr>
+    <tr>
+      <td>AIY L/R</td>
+      <td>ttx-3 fosmid::GFP (wgIs68)</td>
+    </tr>
+    <tr>
+      <td>ALN L/R</td>
+      <td>unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>AS1-11</td>
+      <td>unc-3 fosmid::GFP (otIs591)</td>
+    </tr>
+    <tr>
+      <td>ASJ L/R</td>
+      <td>DiI/DiO staining</td>
+    </tr>
+    <tr>
+      <td>AVA L/R</td>
+      <td>glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3)</td>
+    </tr>
+    <tr>
+      <td>AVB L/R</td>
+      <td>acr-15::GFP (wdEx290); sra-11::GFP (otIs123)</td>
+    </tr>
+    <tr>
+      <td>AVD L/R</td>
+      <td>glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3)</td>
+    </tr>
+    <tr>
+      <td>AVE L/R</td>
+      <td>glr-1::DsRed (hdIs30); nmr-1::GFP (akIs3)</td>
+    </tr>
+    <tr>
+      <td>AVG</td>
+      <td>odr-2::DsRed (otEx4452); unc-6 fosmid::GFP (otEx6370)</td>
+    </tr>
+    <tr>
+      <td>AWB L/R</td>
+      <td>DiI/DiO staining</td>
+    </tr>
+    <tr>
+      <td>DA1-9</td>
+      <td>unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14)</td>
+    </tr>
+    <tr>
+      <td>DB1-7</td>
+      <td>unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14)</td>
+    </tr>
+    <tr>
+      <td>DVA</td>
+      <td>ser-2::GFP (otIs358)</td>
+    </tr>
+    <tr>
+      <td>HSN L/R</td>
+      <td>unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>IL2 D/V L/R (x6)</td>
+      <td>unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>PDA</td>
+      <td>unc-3 fosmid::GFP (otIs591); ace-3/4::GFP (fpIs1)</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>unc-3 fosmid::GFP (otIs591)</td>
+    </tr>
+    <tr>
+      <td>PLN L/R</td>
+      <td>unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>PVC L/R</td>
+      <td>nmr-1::GFP (akIs3)</td>
+    </tr>
+    <tr>
+      <td>PVN L/R</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PVP L/R</td>
+      <td>lin-11 fosmid::GFP (wgIs62); unc-30 fosmid::GFP (wgIs395)</td>
+    </tr>
+    <tr>
+      <td>RIB L/R</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>RIF L/R</td>
+      <td>odr-2::DsRed (otEx4452); unc-6 fosmid::GFP (otEx6370)</td>
+    </tr>
+    <tr>
+      <td>RIH</td>
+      <td>cat-1::GFP (otIs625)</td>
+    </tr>
+    <tr>
+      <td>RIR8</td>
+      <td>unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>RIV L/R</td>
+      <td>unc-42 fosmid::GFP (wgIs173); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>RMD D/V L/R (x6)</td>
+      <td>glr-1::DsRed (hdIs30)</td>
+    </tr>
+    <tr>
+      <td>RMF L/R</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>RMH L/R</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>SAA D/V L/R (x4)</td>
+      <td>lim-4::GFP (mgIs19); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>SAB D V L/R (x3)</td>
+      <td>unc-4::GFP (vsIs45)</td>
+    </tr>
+    <tr>
+      <td>SDQ L/R</td>
+      <td>unc-86 fosmid::YFP (otIs337); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>SIA D/V L/R (x4)</td>
+      <td>ceh-24::GFP (ccIs4595)</td>
+    </tr>
+    <tr>
+      <td>SIB D/V L/R (x4)</td>
+      <td>ceh-24::GFP (ccIs4595)</td>
+    </tr>
+    <tr>
+      <td>SMB D/V L/R (x4)</td>
+      <td>lim-4::GFP (mgIs19); lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>SMD D/V L/R (x4)</td>
+      <td>lad-2::GFP (otIs439)</td>
+    </tr>
+    <tr>
+      <td>URA D/V L/R (x4)</td>
+      <td>unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>URB L/R</td>
+      <td>unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>URX L/R</td>
+      <td>flp-10::GFP (otIs92); unc-86 fosmid::YFP (otIs337)</td>
+    </tr>
+    <tr>
+      <td>VA1-12</td>
+      <td>unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14)</td>
+    </tr>
+    <tr>
+      <td>VB1-11</td>
+      <td>unc-3 fosmid::GFP (otIs591); acr-2::GFP (juIs14)</td>
+    </tr>
+    <tr>
+      <td>VC1-6</td>
+      <td>lin-11::GFP (nIs106); ida-1::GFP (inIs179)</td>
+    </tr>
+    <tr>
+      <td>Pharyngeal</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I1 L/R</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>I3 (L)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>M1 (R)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>M2 L/R</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>M4 (L)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>M5 (L)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>MC L/R</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEM D/V L/R (x4)</td>
+      <td>pkd-2::GFP (bxIs14)</td>
+    </tr>
+    <tr>
+      <td>CA1-9</td>
+      <td>ida-1 (inIs179)</td>
+    </tr>
+    <tr>
+      <td>DVE, DVF</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HOB</td>
+      <td>ida-1 (inIs179)</td>
+    </tr>
+    <tr>
+      <td>PCB, PCC, SPC</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>PDC, PGA</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PVV</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PVX, PVY</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PVZ</td>
+      <td>ida-1 (inIs179)</td>
+    </tr>
+    <tr>
+      <td>R1A, R2A, R3A, R4A, R6A</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>SPV</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_1Excluded AWA due to lack of overlap of cho-1 fosmid reporter with odr-10::gfp and unc-17 fosmid reporter gfp reporter with gpa-4::mCherry. See Figure 1—figure supplement 1. 2Identified based on position and axonal projections because of the lack of available markers. 3Pharyngeal neurons identified based on axonal projections which are visible with the unc-17 fosmid reporter. 4Garcia et al. (2001)._
+
+### Cell-type specific changes of sexual identity
 
 FEM-3 and TRA-2ic were expressed under the control of a fragment of the eat-4 locus (between -2680 and -2155bp from ATG). The plasmids were injected in him-5(e1490) at 50 ng/ul. Two lines expressing FEM-3 were then crossed with otIs388 (eat-4fosmid::sl2::yfp::H2B) and otIs354 (cho-1fosmid::sl2::yfp::H2B) independently generating the following strains: OH13753 [otIs388; otEx6377 (eat-4prom11::fem-3::sl2::tagRFP;unc-122::GFP)], OH13802 [otIs388; otEx6378 (eat-4prom11::fem-3::sl2::tagRFP;unc-122::GFP)], OH13805 [otIs354; otEx6377 (eat-4prom11::fem-3::sl2::tagRFP;unc-122::GFP)] and OH13806 [otIs354; otEx6378 (eat-4prom11::fem-3::sl2::tagRFP;unc-122::GFP)]. Similarly, two lines expressing TRA-2ic were crossed with otIs388 and otIs354 generating the following strains: OH13803 [otIs388; otEx6379 (eat-4prom11::tra-2ic::sl2::tagRFP; unc-122::GFP)], OH13804 [otIs388; otEx6380 (eat-4prom11::tra-2ic::sl2::tagRFP; unc-122::GFP)], OH13807 [otIs354; otEx6379 (eat-4prom11::tra-2ic::sl2::tagRFP; unc-122::GFP)] and OH13808 [otIs354; otEx6380 (eat-4prom11::tra-2ic::sl2::tagRFP; unc-122::GFP)].
 
 eat-4 and cho-1 expression was analyzed at 1 day adult animals with and without the array. eat-4 expression in AIM was normalized by its expression in the RIGL/R neurons, while for cho-1 the expression in AIM was normalized by its expression in AIYL/R neurons.
 
-## Antibody staining
+### Antibody staining
 
 Immunofluorescence for UNC-17 was performed as described earlier (Duerr et al., 2008) using a an unc-104(e1265) mutant strain carrying the cho-1 fosmid reporter (otIs544). Worms were fixed using methanol/acetone and stained with a rabbit anti-UNC-17 serum diluted 1/100 (gift from James Rand).
 
 Immunofluorescence for serotonin was performed using a tube fixation protocol as described earlier (Serrano-Saiz et al., 2013). The anti-5HT S-5545 antibody was used at 1/100 and purchased from Sigma Aldrich.
 
-## Microscopy
+### Microscopy
 
 Worms were anesthetized using 100 mM of sodium azide (NaN3) and mounted on 5% agarose on glass slides. All images (except Figure 8 and Figure 7—figure supplement 1) were acquired using a Zeiss confocal microscope (LSM880). Several z-stack images (each ~0.4 μm thick) were acquired with the ZEN software. Representative images are shown following orthogonal projection of 2–10 z-stacks. Images shown Figure 8 and Figure 7—figure supplement 1 were taken using an automated fluorescence microscope (Zeiss, AXIO Imager Z1 Stand). Acquisition of several z-stack images (each ~1 μm thick) was performed with the Micro-Manager software (Version 3.1). Representative images are shown following max-projection of 2–10 z-stacks using the maximum intensity projection type. Image reconstruction was performed using ImageJ software (Schneider et al., 2012).
 
@@ -241,29 +5029,29 @@ For quantification of UNC-7::GFP puncta shown in Figure 7C, images were acquired
 
 For the quantification of eat-4 and cho-1 expression in AIM for the analysis shown in Figure 5F, images were acquired using a Zeiss confocal microscope (LSM880) and the fluorescence intensity mean was obtained with the ZEN software tool.
 
-## Statistical analysis
+### Statistical analysis
 
 For results shown in Figures 5E–F and Figure 7C statistical analysis was performed using the Student’s t-test (tail 2, type 2). Values are expressed as mean ± standard deviation (s.d.) or standard error of the mean (sem) as indicated in each figure legend. For results shown in Figure 7 and Figure 7—figure supplement 1 we performed Fisher’s exact test (two-tailed).
 
-## Electron microscopical analysis
+### Electron microscopical analysis
 
 Wild-type and unc-3 mutant animals were reconstructed in the anterior region of the ventral cord in order to determine neuron morphology and synaptic circuitry. The reconstructions were made from electron micrographs of serial sections as described in White et al. (1986). The regions reconstructed were ~150 µm in length and included ~1800 serial sections. We reconstructed the region of the ventral nerve cord that roughly includes the region from AS01 to AS03 motor neurons. Every third section was photographed and printed. All the processes of neurons with cell bodies in the region reconstructed were followed. The neurons were identified by characteristic synaptic or morphological features together with the relative position of their cell bodies in the sequence of cell bodies in the ventral cord (White et al., 1986). The two reconstructed animals were the wild-type N2U and the unc-3(e151) allele in trans to a covering deficiency (mnDf5). This strain was generated by crossing unc-3(e151) the strain SP266 mnDp1(X;V)/ V; mnDf5 X.
 
-## Screen for cholinergic identity mutants
+### Screen for cholinergic identity mutants
 
 The otIs341 (mgl-1::gfp) transgenic strain was used to identify mutants affecting the identity of the cholinergic RMDD/V motor neurons. A conventional semi-clonal EMS screen identified the ot712 mutation, which was found to be closely linked to the transgene vsIs33V also present in the strain background. ot712 animals are uncoordinated and unc-42 maps on LGV. Complementation tests between ot712 and two alleles of unc-42 (e419 and e270) confirmed that ot712 is an allele of unc-42. Sanger sequencing reveals that ot712 harbors a late nonsense mutation (W181>Stop) in exon 6.
 
-## Network analysis
+### Network analysis
 
-## Network Construction
+#### Network Construction
 
 Connectivity data was taken from the latest release of www.wormwiring.org which contains updates to the original wiring diagram (White et al., 1986). Data from both JSE and N2U worms were used. Only connections that have more than 3 EM-serial sections of synaptic connection are kept. Connection between a neuron to itself were ignored.
 
-## Motifs identification
+#### Motifs identification
 
 We used m-finder software (located at: http://www.weizmann.ac.il/mcb/UriAlon/download/network-motif-software) to find 3-neuron and 4-neuron network motifs. 3-neuron motifs analysis was performed with default parameters. 4-motifs search was performed with the metropolis randomization method
 
-## Neurotransmitter assignment and enrichment analysis
+#### Neurotransmitter assignment and enrichment analysis
 
 We used five NT categories: Glutamate, Acetylcholine, GABA, other, Unknown. A neuron secreting GABA/Glu/Ach another NT was mapped as GABA/Glu/ACh. A neuron secreting only NTs other than GABA/Glu/Ach was mapped as 'Other'. All neurons without a NT were named 'Unknown'.
 
@@ -275,12 +5063,14 @@ In both approaches, we start by counting the events in the real network. In appr
 
 We then compare those numbers to the event-numbers in randomized networks. Each generated network has the same network-structure, but each neuron is associated with a random NT out of the NT pool. This is done without repetitions, so at the end the randomized NT-list is a shuffling of the real NT-list. We generate 1000 randomized networks. We count for each randomized network how many times each NT appeared in each motif-role (for approach 1) and how many times each NT-combination appeared at each motif-role (approach 2). The number of occurrences of each NT/NT-combination is compared between the real network and the randomized networks by calculating a z-score.
 
-zscore=#occurencesinrealnetwork−Mean(#occurencesinrandomizednetworks)STD(#occurencesinrandomizednetworks)
+$$
+zscore=\frac{#occurencesinrealnetwork−Mean(#occurencesinrandomizednetworks)}{STD(#occurencesinrandomizednetworks)}
+$$
 
 We say that a motif-role is significantly associated with a given NT (approach 1), or a NT-combination (approach 2) if the z-score is larger than 2.
 
 To assess the risk for false-positives in this approach, we repeated the above calculation while treating 100 randomized networks as real networks, comparing each of them to 100 randomized networks, and choosing events with z-score >2 as significant. For 3-neuron motifs, approach 1, the real network has 5.6 ± 0.7 significant events (the average was done by each time comparing the real network to different randomized networks), while random networks had on average 1.8 ± 1.9 significant events. Hence, the risk for false-positives does not seem high.
 
-## Calculating the relative usage of neurotransmitters as a function of the processing depth
+#### Calculating the relative usage of neurotransmitters as a function of the processing depth
 
 We obtained the processing depth of each neuron from Varshney et al. (2011). Then, for each neurotransmitter, we calculated a histogram of the number of neurons that use this neurotransmitter at each processing depth (using the function SmoothHistogram in Mathematica). We then normalized the graphs at each processing depth such that each graph represents the percentage of neurons that use the relevant neurotransmitter at the relevant processing depth.

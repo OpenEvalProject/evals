@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Biochemistry, University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Department of Statistics, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01y2jtd41 Department of Medicine, Division of Endocrinology, University of Wisconsin-Madison Madison United States
-4. https://ror.org/037xafn82 William S. Middleton Memorial Veterans Hospital Madison United States
-5. https://ror.org/01y2jtd41 Department of Chemistry, University of Wisconsin-Madison Madison United States
+1. Department of Biochemistry, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Department of Statistics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Medicine, Division of Endocrinology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. William S. Middleton Memorial Veterans Hospital Madison United States ([ROR:037xafn82](https://ror.org/037xafn82))
+5. Department of Chemistry, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
 ## Abstract
 
-Insufficient insulin secretion to meet metabolic demand results in diabetes. The intracellular flux of Ca 2+ into β-cells triggers insulin release. Since genetics strongly influences variation in islet secretory responses, we surveyed islet Ca 2+ dynamics in eight genetically diverse mouse strains. We found high strain variation in response to four conditions: (1) 8 mM glucose; (2) 8 mM glucose plus amino acids; (3) 8 mM glucose, amino acids, plus 10 nM glucose-dependent insulinotropic polypeptide (GIP); and (4) 2 mM glucose. These stimuli interrogate β-cell function, α- to β-cell signaling, and incretin responses. We then correlated components of the Ca 2+ waveforms to islet protein abundances in the same strains used for the Ca 2+ measurements. To focus on proteins relevant to human islet function, we identified human orthologues of correlated mouse proteins that are proximal to glycemic-associated single-nucleotide polymorphisms in human genome-wide association studies. Several orthologues have previously been shown to regulate insulin secretion (e.g. ABCC8, PCSK1, and GCK), supporting our mouse-to-human integration as a discovery platform. By integrating these data, we nominate novel regulators of islet Ca 2+ oscillations and insulin secretion with potential relevance for human islet function. We also provide a resource for identifying appropriate mouse strains in which to study these regulators.
+Insufficient insulin secretion to meet metabolic demand results in diabetes. The intracellular flux of Ca2+ into β-cells triggers insulin release. Since genetics strongly influences variation in islet secretory responses, we surveyed islet Ca2+ dynamics in eight genetically diverse mouse strains. We found high strain variation in response to four conditions: (1) 8 mM glucose; (2) 8 mM glucose plus amino acids; (3) 8 mM glucose, amino acids, plus 10 nM glucose-dependent insulinotropic polypeptide (GIP); and (4) 2 mM glucose. These stimuli interrogate β-cell function, α- to β-cell signaling, and incretin responses. We then correlated components of the Ca2+ waveforms to islet protein abundances in the same strains used for the Ca2+ measurements. To focus on proteins relevant to human islet function, we identified human orthologues of correlated mouse proteins that are proximal to glycemic-associated single-nucleotide polymorphisms in human genome-wide association studies. Several orthologues have previously been shown to regulate insulin secretion (e.g. ABCC8, PCSK1, and GCK), supporting our mouse-to-human integration as a discovery platform. By integrating these data, we nominate novel regulators of islet Ca2+ oscillations and insulin secretion with potential relevance for human islet function. We also provide a resource for identifying appropriate mouse strains in which to study these regulators.
 
 ## Introduction
 
@@ -41,19 +41,39 @@ We explored the diversity of nutrient-evoked islet Ca2+ responses across the eig
 
 ## Results
 
-## Genetics exerts a strong influence on islet Ca2+ dynamics
+### Genetics exerts a strong influence on islet Ca2+ dynamics
 
 Glucose metabolism, β-cell Ca2+ flux, and insulin secretion are pulsatile, and have been found to oscillate in both humans and mice (Merrins et al., 2022; Dahlgren et al., 2005; Nunemaker et al., 2006b; Kennedy et al., 2002; Lang et al., 1979). Because they are interconnected, understanding the factors governing oscillation patterns can inform about the mechanisms that regulate insulin secretion (Lewandowski et al., 2020; Marinelli et al., 2022b; Colsoul et al., 2010; Corbin et al., 2016). To explore the influence of genetic background on Ca2+ oscillations, we measured Ca2+ in islets of the eight CC founder strains, that together harbor as much genetic diversity as humans: A/J, C57BL/6J (B6), 129S1/SvlmJ (129), NOD/ShiLtJ (NOD), NZO/HILtJ (NZO), CAST/EiJ (CAST), PWK/PhJ (PWK), and WSB/EiJ (WSB).
 
 All mice were maintained on a Western-style diet (WD) high in fat and sucrose for 16 weeks prior to isolating their islets for Ca2+ imaging with Fura Red, a Ca2+-sensitive fluorescent dye (Figure 1A). We measured Ca2+ dynamics in response to four conditions: (1) 8 mM glucose (8G); (2) 8G + 2 mM glutamine, 0.5 mM leucine, and 1.25 mM alanine (8G/QLA); (3) 8G/QLA + 10 nM glucose-dependent insulinotropic polypeptide (8G/QLA/GIP); and (4) 2 mM glucose (2G) (Figure 1B). There was a high degree of similarity between three of the five classical strains (A/J, B6, 129), which were dominated by slow oscillations (period 2–10 min) in 8G and 8G/QLA/GIP, and had relatively fewer islets reach plateau (continuous peak activity without oscillation) in 8G/QLA. Likewise, the wild-derived strains (CAST, WSB, and PWK) closely matched one another, while differing from the classical strains. The wild-derived mouse islets were dominated by fast oscillations (period <2 min) in 8G, resulting in plateaus for 8G/QLA and 8G/QLA/GIP.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig1-v1.jpg)
+
+**Figure 1.:** (A) Male and female mice from eight strains (A/J; C57BL/6J (B6); 129S1/SvImJ (129); NOD/ShiLtJ (NOD); NZO/HILtJ (NZO); CAST/EiJ (CAST); PWK/PhJ (PWK); and WSB/EiJ (WSB)) were placed on a Western diet (WD) for 16 weeks before their islets were isolated. The islets were then imaged on a confocal microscope using Fura Red dye under conditions of 8 mM glucose (8G); 8G + 2 mM L-glutamine, 0.5 mM L-leucine, and 1.25 mM L-alanine (8G/QLA); 8G/QLA + 10 nM glucose-dependent insulinotropic polypeptide (8G/QLA/GIP); and 2 mM glucose. (B) Representative Ca2+ traces for male mice (n = 3–8 mice per strain, and 15–83 islets per mouse), with the transitions between solution conditions indicated by dashed lines. Abbreviations: ‘[Glc]’ = ‘concentration of glucose in mM’; ‘Sol.’ = ‘solution’; ‘SNPs’ = ‘single-nucleotide polymorphisms’.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative Ca2+ traces for female mice (n = 3–7 mice per strain, and 11–94 islets per mouse) exhibit a high degree of variability across the eight strains. Abbreviations: ‘[Glc]’ = ‘concentration of glucose in mM’. (B) Representative Ca2+ trace for non-diabetic NZO female (left panel, fasting plasma glucose 69 mg/dl) and a diabetic NZO female (right trace, fasting plasma glucose >300 mg/dl). Related to Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative Ca2+ traces for a male NOD mouse, for which islets closely resemble the trace pattern shown. (B) Example traces from islets of a single non-diabetic NOD female mouse. The pattern observed, where some of the mouse’s islets appeared similar to the NOD male islets (top panel), some appeared similar to the diabetic NZO islets (bottom panel), and some presented with an intermediate phenotype (oscillations present in all stimulatory conditions, but with a more pronounced 8/QLA initial peak and diminished amplitudes; middle panel), was consistently observed for all the NOD females. Abbreviations: ‘[Glc]’ = ‘concentration of glucose in mM’. Related to Figure 1.
+
 Two strains stood out from the others. Islets from NOD mice showed characteristics from both the wild-derived and classical strains; slow oscillations in 8G and a sustained plateau in response to 8G/QLA and 8G/QLA/GIP with fast oscillations superimposed. The NZO mice also differed from the other classical strains, likely because they were all diabetic (blood glucose >250 mg/dl). Their islets were minimally responsive to 8G but did respond with a strong pulse in 8G/QLA and Ca2+ remained elevated in 8G/QLA/GIP.
 
 Many of the strain differences seen in the male mice were maintained in the females (Figure 1—figure supplement 1A). The classic strains were once again highly similar to one another, as were the wild-derived strains. Furthermore, the NZO females, of which all but one were diabetic, mirrored the behavior of the male islets. One interesting observation that emerged from the female islets is that the NOD females displayed a greater variation in their Ca2+ oscillations than the NOD males (Figure 1—figure supplement 2). Some of the islets maintained slow oscillations throughout the various conditions, while some demonstrated fast oscillations and plateaued like the wild-derived strains. Yet others appeared strikingly similar to the islets from diabetic NZO mice, despite none of the NOD mice being diabetic. Finally, the one non-diabetic female NZO displayed oscillatory behavior comparable to that of the other classical strains, with clear, slow oscillations (Figure 1—figure supplement 1B).
 
-## Dissecting islet Ca2+ dynamics
+### Dissecting islet Ca2+ dynamics
 
 An understanding of the mechanisms regulating insulin secretion, including the roles of specific metabolic pathways, ion channels, and hormones, has been derived from the shape and frequency of islet Ca2+ oscillations (Lewandowski et al., 2020; Dahlgren et al., 2005; Marinelli et al., 2022b; Kennedy et al., 2002; Nunemaker et al., 2006a; Marinelli et al., 2022a; Nunemaker et al., 2005; Bertram et al., 2018). To elucidate strain differences in Ca2+ dynamics, we focused on six parameters of the Ca2+ waveform (Figure 2A): (1) peak Ca2+ (the maximum value of each oscillation); (2) period (the length of time between two peaks); (3) active duration (the length of time for each Ca2+ oscillation measured at half of the peak height, also known the oxidative ‘secretory’ phase, or ‘MitoOx’ [Merrins et al., 2022]); (4) pulse duration (active duration plus extra time for Ca2+ extrusion); (5) silent duration (the electrically silent ‘triggering’ phase, also known as ‘MitoCat’ (Merrins et al., 2022), which culminates in KATP closure and membrane depolarization); and (6) plateau fraction (the active duration divided by the period, or the fraction of time spent in the active ‘secretory’ phase).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig2-v1.jpg)
+
+**Figure 2.:** (A) An example B6 female Ca2+ wave, showing that the islet oscillations can change in their average peak (1) and average baseline in response to different nutrients. Additionally, shifts in wave shape (green box) can be broken down into changes in time between peaks (period, 2), the time in the active phase (active duration, AD, 3), and the length of the oscillation (pulse duration, PD, 4). From these, the time inactive between oscillations (silent duration, SD, 5), and the relative time in the active phase, or plateau fraction (PF, 6), can be calculated. Each parameter can be changed by different underlying mechanisms. (B) For islets that plateaued, as in the example islet in 8G/QLA, they were assigned a plateau fraction of one and a period of zero. For islets that ceased to oscillate, such as the example islet in 2 mM glucose, they were assigned a plateau fraction of zero and a period of the time of measurement (40 min). (C) For trace 1 (left), which has a longer period (red bars) than trace 2 (right), but the same active duration (blue bars), the silent duration is greater and consequently the PF is shorter, in contrast to the trace in (A) where the PF increases between 8G and 8G/QLA are largely due to increases in AD. (D) Changes in specific Ca2+ wave parameters can reflect different mechanisms in β-cells. For example, changing KATP activity pharmacologically (upper panels) predominantly increases PF by altering SD, whereas increasing glucose concentrations by elevating glucose or activating GK cause significant alterations in both AD and SD to increase PF. Abbreviations: ‘[Glc]’ = ‘concentration of glucose in mM’; ‘GK’ = ‘glucokinase’.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) For the trace segment shown, the wave can be broken down into individual periodic waves (e.g. sine waves) of discrete amplitudes that, when added together, reproduce the trace. The frequency of each of these waves and its relative contribution to the overall trace signal is shown in (B), with frequency on the x axis and the spectral density, or the strength of each component signal, on the y axis. This was computed using scripts in R. The strongest two frequencies, denoted 1st and 2nd, respectively, are indicated. Related to Figure 2.
 
 We also assessed the spectral density for every islet to extract additional information from complex oscillations where multiple components were visible (Figure 2—figure supplement 1A). We analyzed each trace to determine the top two frequencies contributing to the trace (1st and 2nd component frequencies, Figure 2—figure supplement 1B) and their respective contributions (1st and 2nd component amplitudes). Because certain features, such as metabolically driven (slow) and electrically driven (fast) oscillations have characteristic frequencies (Bertram et al., 2007), extracting the top two frequencies may highlight additional information beyond that previously collected.
 
@@ -61,23 +81,55 @@ A representative Ca2+ trace from a female B6 islet is illustrated in Figure 2A. 
 
 Examples of pathways altering specific components of Ca2+ oscillations have previously been established (Figure 2D; Dahlgren et al., 2005; Marinelli et al., 2022b; Nunemaker et al., 2006b; Whitticar and Nunemaker, 2020; Koneshamoorthy et al., 2022). For example, when KATP channels are pharmacologically closed with tolbutamide, the silent duration is shortened, resulting in increased frequency without a change in pulse shape (upper panel). The addition of glucose leads to increased glucose metabolism and glucokinase (GK) activity (Marinelli et al., 2022b). The resulting rise in ATP inhibits KATP channels (Lewandowski et al., 2020) and is used as a substrate for additional processes that affect Ca2+, such as SERCA pumps (Tengholm and Gylfe, 2017; Shuai et al., 2021). Thus, glucose alters both the active and silent durations, resulting in a change in both frequency and shape of the Ca2+ oscillations (lower panel).
 
-## Parameters significantly correlated with insulin secretion show remarkable variance by strain and sex
+### Parameters significantly correlated with insulin secretion show remarkable variance by strain and sex
 
 Average Ca2+ is commonly used for analyzing Ca2+ dynamics and is frequently assumed to be highly correlated to insulin secretion. To determine whether average Ca2+ is predictive of insulin secretion, we performed ex vivo perifusion studies on islets from WSB and 129 male mice, two strains that showed similar average Ca2+ (Figure 3—figure supplement 1) but exhibited vastly different Ca2+ oscillations (Figure 1B). WSB mice had significantly higher insulin secretion in each of the secretory conditions (Figure 3A), suggesting another Ca2+ parameter better predicts insulin secretion.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig3-v1.jpg)
+
+**Figure 3.:** (A) Insulin secretion was measured for perifused islets from WSB (n = 6, magenta circles) and 129 (n = 5, yellow squares) male mice in 2 mM glucose, 8G, 8G/QLA, and 8G/QLA/GIP. Transitions between solutions are indicated by dotted lines and the conditions for each are indicated above the graph. ‘[Glc]’ denotes the concentration of glucose in mM. Data are shown as a percentage of total islet insulin (mean ± standard error of the mean [SEM]). (B) Average total insulin per islet for the WSB and 129 males used in (A) with one exception: islets from one of the 129 mice were excluded from perifusion analysis due to technical issues with perifusion system on the day those animals’ islets were perifused. Dots represent individual values, and the mean is denoted by the black line. For (A), asterisks denote strain effect for the area-under-the-curve of the section determined by two-way analysis of variance (ANOVA), mixed effects model; **p < 0.01, ***p < 0.001. For (B), asterisk denotes p < 0.05 from Student’s t-test with Welch’s correction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Average Ca2+ (detrended Fura Red ratio) for 8 mM glucose (8G, left panel), 8G with 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8G/QLA, middle panel), and 8G/QLA with 10 nM GIP (8G/QLA/GIP, right panel) are shown for each strain/sex. n = 3–7 mice per strain. Related to Figures 3 and 4.
+
 To identify parameters of the Ca2+ dynamics most strongly correlated to insulin secretion, we computed the correlation between the Ca2+ oscillation parameters and our previously published insulin secretion in similar conditions (8.3G, 8.3G/QLA, basal) for the same sexes and strains (Figure 4A, Figure 4—figure supplement 1, and Figure 4—figure supplement 2; Mitok et al., 2018). Consistent with our observations from the perifusion data in the WSB and 129 islets, we found that average Ca2+ was not strongly correlated to insulin secretion. Other metrics, such as active duration in 8G, and the silent durations in 8G/QLA, were more highly correlated to insulin secretion. Meanwhile, the 1st component frequency in 8G from the spectral density analysis was highly correlated with decreased insulin secretion. These metrics were also the most highly correlated with multiple clinical measures in the founder mice, particularly plasma insulin (Figure 4B, Figure 4—figure supplement 1, and Figure 4—figure supplement 3), for which silent duration in 8G/QLA/GIP had the strongest correlations.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig4-v1.jpg)
+
+**Figure 4.:** (A) The Z-score correlation coefficient was calculated for Ca2+ parameters and raw insulin secreted and % total insulin secreted. Insulin measurements were previously collected for seven different secretagogues (16.7 mM glucose + 0.5 mM palmitic acid (16.7G/PA); 3.3 mM glucose + 50 mM KCl (3.3G/KCl); 16.7 mM glucose (16.7G); 8.3 mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8.3G/QLA); 8.3 mM glucose + 100 nM GLP-1 (8.3G/GLP-1); 8.3 mM glucose (8.3G); and 3.3 mM glucose (3.3G)) (Mitok et al., 2018). (B) Correlation of the Ca2+ parameters to the clinical measurements in the founder mice which include (1) plasma insulin, triglycerides (TG), and glucose at 6, 10, and 14 weeks as well as at time of sacrifice; (2) number of islets; (3) whole-pancreas insulin content (WPIC); and (5) islet content for insulin and glucagon. For (A) and (B), the Ca2+ parameters shown here include average Ca2+ in 2 mM glucose (basal Ca2+); average Ca2+ in 8 mM glucose (8G avg.); average Ca2+ in 8 mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8G/QLA avg); average Ca2+ in 8 mM glucose + QLA + 10 nM GIP (8G/QLA/GIP avg.); pulse duration in 8 mM glucose (8G PD); active duration in 8G (8G AD); silent duration in 8G (8G SD), 8G/QLA (8G/QLA/SD), and 8G/QLA/GIP (8G/QLA/GIP SD); and 1st component frequency in 8 mM glucose (8G 1st freq.). Other parameters analyzed are indicated in Figure 4—figure supplement 2 and Figure 4—figure supplement 3. (B–E) Sex and strain variability for (C) average Ca2+ determined by the Fura-ratio (FR) in 2 mM glucose, (D) pulse duration of oscillations in 8G, (E) 1st component frequency in 8G, and (F) silent duration of oscillations in 8G, 8G/QLA, and 8G/QLA/GIP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The correlations between Z-scores for the calcium trait (x axis) and the other indicated trait (y axis) are shown for the eight strains (key, upper right). Males are indicated as boxes (□), females as circles (○) in each plot, where the color indicates the strain. (A) The correlation between the Z-scores for the 1st frequency component in 8 mM glucose (8G) and the percent insulin secreted in 8.3 mM glucose with 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8.3G/QLA) reveal clustering of strains into the disease susceptible strains (blue ellipse), classic inbred strains (gray ellipse), and wild-derived strains (green ellipse). (B) The correlation between the Z-scores for silent duration (SD) in 8G/QLA and the ng of insulin secreted per islet in 8.3G/QLA show less of a separation between the three groups. (C) Some correlations, such as that between Z-scores for the SD in 8 mM glucose with 1.25 mM L-alanine, 2 mM L-glutamine, 0.5 mM L-leucine, and 10 nM GIP (8G/QLA/GIP) and the plasma insulin level at sacrifice show strong effects of single strains (e.g. NZO, indicated by blue arrow). In each plot, the Pearson’s R value and slope are indicated. Related to Figure 4.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Heatmap displaying the correlation coefficients between the Z-scores for Ca2+ wave metrics and the Z-scores for raw insulin secreted, fold-change (FC) over basal insulin secreted, and % of total islet insulin secreted. Insulin measurements were previously collected (Mitok et al., 2018) for seven different secretagogues (16.7 mM glucose + 0.5 mM palmitic acid (16.7G/PA); 3.3 mM glucose + 50 mM KCl (3.3G/KCl); 16.7 mM glucose (16.7G); 8.3 mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8.3G/QLA); 8.3 mM glucose + 100 nM GLP-1 (8.3G/GLP-1); 8.3 mM glucose (8.3G); and 3.3 mM glucose (3.3G)). Perifusion conditions included 8 mM glucose (8G); 8 mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8G/QLA); 8 mM glucose + QLA + 10 nM GIP (8G/QLA/GIP). Unsupervised clustering of the Ca2+ wave parameters revealed several parameters highly correlated to multiple insulin secretion conditions. Parameters included: average Ca2+ in 2 mM glucose (basal Ca2+), in 8 mM glucose (8G avg.), in 8G/QLA (8G/QLA avg), and in 8G/QLA/GIP (8G/QLA/GIP avg.); average detrended Ca2+ in 8 mM glucose (8G detr. avg.), in 8G/QLA (8G/QLA detr. avg), and in 8G/QLA/GIP (8G/QLA/GIP detr. avg.); average change in Ca2+ vs. basal in 8 mM glucose (8G avg. Δ vs. 2G), in 8G/QLA (8G/QLA avg. Δ vs. 2G), and in 8G/QLA/GIP (8G/QLA/GIP avg. Δ vs. 2G); change in detrended average Ca2+ vs. basal in 8 mM glucose (8G detr. Δ vs. 2G), in 8/QLA (8G/QLA detr. Δ vs. 2G), and in 8G/QLA/GIP (8G/QLA/GIP detr. Δ vs. 2G); average oscillation peak Ca2+ in 8G (8G peak), in 8G/QLA (8G/QLA peak), and in 8G/QLA/GIP (8G/QLA/GIP peak); average oscillation baseline Ca2+ in 8G (8G baseline), in 8G/QLA (8G/QLA baseline), and in 8G/QLA/GIP (8G/QLA/GIP baseline); pulse duration in 8G (8G PD), in 8G/QLA (8G/QLA PD), and in 8G/QLA/GIP (8G/QLA/GIP PD); active duration in 8 mM glucose (8G AD), in 8G/QLA (8G/QLA AD), and in 8G/QLA/GIP (8G/QLA/GIP AD); silent duration in 8 mM glucose (8G SD), in 8G/QLA (8G/QLA SD), and in 8G/QLA/GIP (8G/QLA/GIP SD); plateau fraction in 8 mM glucose (8G PF), in 8G/QLA (8G/QLA PF), and in 8G/QLA/GIP (8G/QLA/GIP PF); spectral density 1st component frequency in 8 mM glucose (8G 1st freq.), in 8G/QLA (8G/QLA 1st freq.), and in 8G/QLA/GIP (8G/QLA/GIP 1st freq.); spectral density 2nd component frequency in 8 mM glucose (8G 2nd freq.), in 8G/QLA (8G/QLA 2nd freq.), and in 8G/QLA/GIP (8G/QLA/GIP 2nd freq.); contribution of the 1st component to the Ca2+ waveform for 8 mM glucose (8G 1st freq. amp.), for 8G/QLA (8G/QLA 1st freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 1st freq. amp.); and contribution of the 2nd component to the Ca2+ waveform for 8 mM glucose (8G 2nd freq. amp.), for 8G/QLA (8G/QLA 2nd freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 2nd freq. amp.). Related to Figure 4.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Heatmap displaying the correlation coefficients between the Z-scores for Ca2+ wave metrics and the Z-scores for mouse in vivo metrics previously collected (Mitok et al., 2018) for the same strains and sexes. These traits included plasma insulin, glucose, and triglycerides (TGs) (measured at 6, 10, and 14 weeks of age as well as at sacrifice) as well as whole body weights at those time points. Whole-pancreas insulin content (WPIC), islet glucagon, islet number, and islet insulin content were also determined. Ca2+ perifusion conditions included 8 mM glucose (8G); 8 mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8G/QLA); 8 mM glucose + QLA + 10 nM GIP (8G/QLA/GIP). Unsupervised clustering of the Ca2+ wave parameters revealed several parameters highly correlated to multiple in vivo traits. Parameters included: average Ca2+ in 2 mM glucose (basal Ca2+), in 8 mM glucose (8G), in 8G/QLA (8G/QLA), and in 8G/QLA/GIP (8G/QLA/GIP); average detrended Ca2+ in 8 mM glucose (8G detr.), in 8G/QLA (8G/QLA detr.), and in 8G/QLA/GIP (8G/QLA/GIP detr.); average change in Ca2+ vs. basal in 8 mM glucose (8G Δ vs. basal), in 8G/QLA (8G/QLA Δ vs. basal), and in 8G/QLA/GIP (8G/QLA/GIP Δ vs. basal); change in detrended average Ca2+ vs. basal in 8 mM glucose (8G detr. Δ vs. basal), in 8/QLA (8G/QLA detr. Δ vs. basal), and in 8G/QLA/GIP (8G/QLA/GIP detr. Δ vs. basal); average oscillation peak Ca2+ in 8G (8G peak), in 8G/QLA (8G/QLA peak), and in 8G/QLA/GIP (8G/QLA/GIP peak); average oscillation baseline Ca2+ in 8G (8G baseline), in 8G/QLA (8G/QLA baseline), and in 8G/QLA/GIP (8G/QLA/GIP baseline); pulse duration in 8G (8G PD), in 8G/QLA (8G/QLA PD), and in 8G/QLA/GIP (8G/QLA/GIP PD); active duration in 8 mM glucose (8G AD), in 8G/QLA (8G/QLA AD), and in 8G/QLA/GIP (8G/QLA/GIP AD); silent duration in 8 mM glucose (8G SD), in 8G/QLA (8G/QLA SD), and in 8G/QLA/GIP (8G/QLA/GIP SD); plateau fraction in 8 mM glucose (8G PF), in 8G/QLA (8G/QLA PF), and in 8G/QLA/GIP (8G/QLA/GIP PF); spectral density 1st component frequency in 8 mM glucose (8G 1st freq.), in 8G/QLA (8G/QLA 1st freq.), and in 8G/QLA/GIP (8G/QLA/GIP 1st freq.); spectral density 2nd component frequency in 8 mM glucose (8G 2nd freq.), in 8G/QLA (8G/QLA 2nd freq.), and in 8G/QLA/GIP (8G/QLA/GIP 2nd freq.); contribution of the 1st component to the Ca2+ waveform for 8 mM glucose (8G 1st freq. amp.), for 8G/QLA (8G/QLA 1st freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 1st freq. amp.); and contribution of the 2nd component to the Ca2+ waveform for 8 mM glucose (8G 2nd freq. amp.), for 8G/QLA (8G/QLA 2nd freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 2nd freq. amp.). Related to Figure 4.
 
 Several parameters of the Ca2+ oscillatory waveform showed strong strain and sex effects (Figure 4C, D and Figure 4—figure supplement 1). For example, basal Ca2+ (average Ca2+ in 2G, Figure 4C) was relatively consistent among the strains, except NZO where it was highest in islets from male mice. For the overall pulse duration (Figure 4D), the NZO mice were once again the highest, followed by CAST and WSB. A noticeable sex effect was measured for the CAST mice, where male mice had a longer pulse duration than the female mice. The 1st component frequency (Figure 4E) is driven by the differences observed in the wild-derived strains, for which CAST has the highest frequency, followed by PWK and WSB. Finally, the trend for a sex effect in the classic strains on the silent duration (at 8G, 8G/QLA, and 8G/QLA/GIP) is absent in the NZO and wild-derived mice with the former having greater silent duration in males and the latter frequently having islets plateau in response to these stimuli.
 
 Clustering the Ca2+ responses into distinct groups based on our observations of the waveforms (Figures 1B and 4C–E, Figure 1—figure supplement 1, and Figure 1—figure supplement 2) also occurs when correlating individual Ca2+ parameters to ex vivo secretion and clinical data (Figure 4—figure supplement 1). For example, the anticorrelation between the 1st frequency component in 8G and percent insulin secreted in 8.3G/QLA (Figure 4—figure supplement 1A) separates the classical inbred, wild-derived, and diabetes-susceptible strains into distinct groups despite the variability in the trait. Correlation between the silent duration in 8G/QLA to insulin secretion in 8.3G/QLA, likewise groups by strain (Figure 4—figure supplement 1B). Finally, some correlations, such as that between 8G/QLA/GIP silent duration and plasma insulin at sacrifice (Figure 4—figure supplement 1C), can be strongly influenced by outlier strains; for example NZO. Collectively, these data demonstrate that genetics has a profound influence on key parameters of islet Ca2+ oscillations.
 
-## Calcium oscillatory parameters correlate strongly to the abundance of specific islet proteins
+### Calcium oscillatory parameters correlate strongly to the abundance of specific islet proteins
 
 To explore relationships between Ca2+ oscillations and islet proteins, we took advantage of our whole islet proteomic survey from the eight founder strains (Mitok et al., 2018). To identify proteins that may underly the strain differences in Ca2+ oscillations, we computed the correlation between islet protein abundance and Ca2+ dynamics across all mice used in our study (Figure 5 and Figure 5—figure supplement 1). Our previous survey of islet proteomics included both sexes for all strains, except NZO males, resulting in a quantitative measure of 4054 proteins (Mitok et al., 2018). Figure 5A illustrates a heatmap of the correlation between islet proteins and several parameters of Ca2+ oscillations. Unsupervised clustering was used to show that groups of proteins showed strong positive or negative correlation to a given Ca2+ parameter, yielding distinct correlation architecture. For example, proteins highly correlated to the 8G 1st component frequency tended to also be strongly anticorrelated to the silent duration conditions, which were very similar to one another. The active and pulse durations for 8G had nearly identical correlation structure. Additionally, the conditions with the fewest highly correlated proteins were the average Ca2+ measures for 8G, 8G/QLA, and 8G/QLA/GIP, and the structure for these was largely inverted from the active duration conditions. Finally, despite the differences in the overall correlations between the different metrics, there were proteins that did overlap (e.g. the block of proteins with high correlation to both 8G AD and 8G/QLA SD) suggesting that while there were clusters of distinct proteins/pathways for any given metric some proteins may modify more than one metric.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig5-v1.jpg)
+
+**Figure 5.:** (A) Unsupervised clustering of correlation coefficients between protein abundance Z-scores and Z-scores for the Ca2+ parameters indicated. Islet proteins show differential correlation values to basal Ca2+, excitatory Ca2+ (detrended average values for 8G, 8/QLA, and 8/QLA/GIP), active duration and pulse duration in 8G (8G PD and AD), and silent durations (SD) in 8G, 8G/QLA, and 8G/QLA/GIP. Correlation coefficients for other parameters are indicated in Figure 5—figure supplement 1. (B) Histograms representing the number of proteins that are correlated (red) and anticorrelated (blue) to 8G AD. ENCODE & CHEA Consensus transcription factor motif database and Tabula Muris tissue single-cell RNA-seq signature database (C) as well as pathway enrichments for the Elsevier Pathway database and KEGG 2021 Human pathway database (D) (−log10(p-values)), for the highly correlated (red) and anticorrelated (blue) proteins to 8 AD metric. Databases were queried using Enrichr (Chen et al., 2013; Kuleshov et al., 2016).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Heatmap displaying unsupervised clustering of the correlation coefficients between the Z-scores for Ca2+ wave metrics and the Z-scores for normalized islet protein abundance. Islet proteins were quantified previously (Mitok et al., 2018). Perifusion conditions included 8 mM glucose (8G); 8G mM glucose + 1.25 mM L-alanine, 2 mM L-glutamine, and 0.5 mM L-leucine (8G/QLA); 8 mM glucose + QLA + 10 nM GIP (8G/QLA/GIP). Unsupervised clustering of the Ca2+ wave parameters revealed several parameters highly correlated to multiple insulin secretion conditions. Parameters included: average Ca2+ in 2 mM glucose (basal Ca2+), in 8 mM glucose (8G avg.), in 8G/QLA (8G/QLA avg), and in 8G/QLA/GIP (8G/QLA/GIP avg.); average detrended Ca2+ in 8 mM glucose (8G detr. avg.), in 8G/QLA (8G/QLA detr. avg), and in 8G/QLA/GIP (8G/QLA/GIP detr. avg.); average change in Ca2+ vs. basal in 8 mM glucose (8G avg. Δ vs. 2G), in 8G/QLA (8G/QLA avg. Δ vs. 2G), and in 8G/QLA/GIP (8G/QLA/GIP avg. Δ vs. 2G); change in detrended average Ca2+ vs. basal in 8 mM glucose (8G detr. Δ vs. 2G), in 8G/QLA (8G/QLA detr. Δ vs. 2G), and in 8G/QLA/GIP (8G/QLA/GIP detr. Δ vs. 2G); average oscillation peak Ca2+ in 8G (8G peak), in 8G/QLA (8G/QLA peak), and in 8G/QLA/GIP (8G/QLA/GIP peak); average oscillation baseline Ca2+ in 8G (8G baseline), in 8G/QLA (8G/QLA baseline), and in 8G/QLA/GIP (8G/QLA/GIP baseline); pulse duration in 8G (8G PD), in 8G/QLA (8G/QLA PD), and in 8G/QLA/GIP (8G/QLA/GIP PD); active duration in 8G (8G AD), in 8G/QLA (8G/QLA AD), and in 8G/QLA/GIP (8G/QLA/GIP AD); silent duration in 8 mM glucose (8G SD), in 8G/QLA (8G/QLA SD), and in 8G/QLA/GIP (8G/QLA/GIP SD); plateau fraction in 8 mM glucose (8G PF), in 8G/QLA (8G/QLA PF), and in 8G/QLA/GIP (8G/QLA/GIP PF); spectral density 1st component frequency in 8 mM glucose (8G 1st freq.), in 8G/QLA (8G/QLA 1st freq.), and in 8G/QLA/GIP (8G/QLA/GIP 1st freq.); spectral density 2nd component frequency in 8 mM glucose (8G 2nd freq.), in 8G/QLA (8G/QLA 2nd freq.), and in 8G/QLA/GIP (8G/QLA/GIP 2nd freq.); contribution of the 1st component to the Ca2+ waveform for 8 mM glucose (8G 1st freq. amp.), for 8G/QLA (8G/QLA 1st freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 1st freq. amp.); and contribution of the 2nd component to the Ca2+ waveform for 8 mM glucose (8G 2nd freq. amp.), for 8G/QLA (8G/QLA 2nd freq. amp.), and for 8G/QLA/GIP (8G/QLA/GIP 2nd freq. amp.). Related to Figure 5.
+
 Among the 4054 islet proteins, 363 had high absolute correlation coefficients (r > |0.5|) to 3 or more of the parameters our data suggest most strongly correlate to insulin secretion and plasma insulin (Basal Ca2+, 8G AD, 8G PD, 8G/QLA SD, 8G SD, 8G/QLA/GIP SD). Interestingly, of the proteins correlated to these traits, many have been previously implicated in islet biology, including PCSK1, GCK, SUR1, GLUT2, PDX1, and GLP-1 (Whitticar and Nunemaker, 2020; Koneshamoorthy et al., 2022; Tengholm and Gylfe, 2017; Shuai et al., 2021; Koster et al., 2000; Remedi and Nichols, 2016; Jennings et al., 2020; Rutter et al., 2020; Stijnen et al., 2016). Notably, the highly correlated proteins enriched for tissues, pathways, and transcription factors that support their role in insulin secretion (Figure 5B–D, Enrichr links in Supplementary file 3; Chen et al., 2013). For instance, proteins highly anticorrelated to active duration in 8G were enriched for components of oxidative metabolism and had their gene promoters enrich for binding to the islet transcription factor MAFA. These enrichment data provide a framework for discovering new genes of interest for their role in islet function.
 
-## Integration of mouse genetics with human GWAS
+### Integration of mouse genetics with human GWAS
 
 The data presented in Figure 5A illustrate the correlation between islet proteins and Ca2+ dynamics. Importantly, a protein strongly correlated to Ca2+ does not necessarily reflect a causal relationship, that is a change in protein abundance may or may not cause a change in the Ca2+ signal. To take our analysis beyond correlation, we integrated our data with human GWAS of glycemia-related traits.
 
@@ -89,17 +141,17 @@ For each Ca2+ parameter, we focused on those proteins in the tails of the correl
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88189/elife-88189-fig7-v1.jpg)
 
-**Figure 7.:** 2+ data using a novel online resource .(A) 3073 islet proteins significantly correlated to islet Ca2+ parameters of interest. Among the proteins, 647 had orthologues containing single-nucleotide polymorphisms (SNPs) for glycemic traits. Of these, 478 showed no results in our starting triage (see Methods) under any alias, suggesting they may be understudied in islet biology. (B) Of these 478 proteins, 198 were found to be secreted either as soluble proteins or in exosomes (Bateman et al., 2021; Thul et al., 2017; Uhlén et al., 2019; Navajas et al., 2022; Wang et al., 2013; Chen et al., 2019; Gonzales et al., 2009), 52 have existing knockout mice with annotated glycemia or pancreatic phenotypes (Groza et al., 2023; Blake et al., 2021), and 45 have existing compounds that target them (Stanford et al., 2021; Coker et al., 2019; Davies et al., 2015; Gaulton et al., 2017; Santos et al., 2017; Zhou et al., 2022). To make these data more accessible, we have developed an online resource that enables individuals to query the Ca2+ and proteomic data simultaneously. The user can select proteins and calcium traits (C) and display strain and sex distribution of these traits to determine the ideal backgrounds on which to test their traits or proteins of interest. In this example, GALNS is highly correlated to 8G/QLA/GIP AD, with the highest and lowest abundance strains for GALNS being AJ (yellow arrow) and CAST (green arrow), respectively. (D) The user can also query for the correlations between Ca2+ traits and proteins against one another or other traits of the same category. (E) The user can also see which of the traits or proteins has the largest change and most significant effects by sex, strain, or sex and strain.
+**Figure 7.:** (A) 3073 islet proteins significantly correlated to islet Ca2+ parameters of interest. Among the proteins, 647 had orthologues containing single-nucleotide polymorphisms (SNPs) for glycemic traits. Of these, 478 showed no results in our starting triage (see Methods) under any alias, suggesting they may be understudied in islet biology. (B) Of these 478 proteins, 198 were found to be secreted either as soluble proteins or in exosomes (Bateman et al., 2021; Thul et al., 2017; Uhlén et al., 2019; Navajas et al., 2022; Wang et al., 2013; Chen et al., 2019; Gonzales et al., 2009), 52 have existing knockout mice with annotated glycemia or pancreatic phenotypes (Groza et al., 2023; Blake et al., 2021), and 45 have existing compounds that target them (Stanford et al., 2021; Coker et al., 2019; Davies et al., 2015; Gaulton et al., 2017; Santos et al., 2017; Zhou et al., 2022). To make these data more accessible, we have developed an online resource that enables individuals to query the Ca2+ and proteomic data simultaneously. The user can select proteins and calcium traits (C) and display strain and sex distribution of these traits to determine the ideal backgrounds on which to test their traits or proteins of interest. In this example, GALNS is highly correlated to 8G/QLA/GIP AD, with the highest and lowest abundance strains for GALNS being AJ (yellow arrow) and CAST (green arrow), respectively. (D) The user can also query for the correlations between Ca2+ traits and proteins against one another or other traits of the same category. (E) The user can also see which of the traits or proteins has the largest change and most significant effects by sex, strain, or sex and strain.
 
 To aid in the selection of mouse strains for validating potential candidate regulators, we provide a resource with proteomic and Ca2+ data (Figure 7C–E; https://data-viz.it.wisc.edu/FounderCalciumStudy/, https://connect.doit.wisc.edu/FounderCalciumStudy/, https://doi.org/10.5061/dryad.j0zpc86jc, https://rstudio.it.wisc.edu/FounderCalciumStudy). This will enable the user to identify proteins correlated to other proteins or traits of interest, and from there, identify which strain(s) may be most appropriate for studies of their protein of interest. In the examples illustrated in Figure 7C, the user queries for the strain/sex distribution of the protein GALNS, which shows a high negative correlation to multiple traits, including the active duration time in 8G/QLA. Strains at the extremes of this trait are also extremes regarding GALNS protein abundance. Strains with high abundance (AJ, for example [yellow arrow]) would be ideal models for inhibition or knockout, whereas CAST mice (green arrow) could be a comparison strain for validating the role of the protein, as they express much less GALNS. Users can also query for the proteins or calcium parameters and see their correlation to the other proteins and/or calcium parameters (Figure 7D). Importantly, this includes the ability to look at the correlations between traits for individual strains or subsets of strains, enabling the user to see how the main clusters of strains (classical, wild-derived, and disease models) or individual outlier strains are drivers of specific traits. Finally, the user can see which traits or proteins show the strongest strain, sex, or sex-by-strain effects using the options in the volcano plot (Figure 7E). Together, these and other tools in the resource will allow researchers to explore their traits or proteins of interest as well as determine the appropriate model systems and conditions that may best interrogate their experimental questions of interest.
 
 ## Discussion
 
-## Genetic variability drives islet function
+### Genetic variability drives islet function
 
 While the development and progression of T2D is potentiated by environmental factors, an estimated 50% of disease risk is driven by genetic factors (Dimas et al., 2014; Clee and Attie, 2007; Bergman et al., 2003). Therefore, to study the genetic variation contributing to T2D, we took advantage of the genetic diversity contained within the eight CC founder strains. These mice collectively contain a level of genetic diversity mirroring that seen in humans, making them an excellent experimental platform to link genetics with altered islet function (Threadgill et al., 2011; Svenson et al., 2012). We demonstrate that they also vary in their Ca2+ response to various insulin secretagogues, supporting the use of these mice to identify novel genes involved in regulating islet biology.
 
-## Dissecting the calcium waveform highlights islet regulatory pathways
+### Dissecting the calcium waveform highlights islet regulatory pathways
 
 Variations in Ca2+ dynamics are highly complex, reflecting changes in metabolism, extra-islet signaling, and Ca2+ itself (Merrins et al., 2022). We therefore selected stimulatory conditions to assess each of these components in islets of the eight mouse strains. 8 mM glucose was first used to survey glycolytic responses, because we have observed that several strains reliably oscillate at this glucose concentration. Furthermore, this glucose concentration remains close to the stimulatory threshold, thus reducing the possibility of oscillations plateauing if islet Ca2+ responses were left shifted in any strains (Nunemaker et al., 2006a; Carter et al., 2009; Emfinger et al., 2022). We then added QLA as fuel to engage mitochondrial metabolism and paracrine signaling from α-cells, providing a survey of α- to β-cell communication in the islet (Lewandowski et al., 2020; Foster et al., 2022; El et al., 2021; Capozzi et al., 2019). Finally, we used GIP to interrogate the islet incretin responses and the cAMP amplification pathway (El et al., 2021), before returning to a low glucose concentration, which enabled us to establish baseline Ca2+ levels.
 
@@ -107,7 +159,7 @@ The variation in Ca2+ response to these conditions can be better understood by e
 
 The importance of analyzing a variety of Ca2+ parameters is further supported by the insulin secretion measurements in the male WSB and 129 mice. While average Ca2+ is a common metric used to predict insulin secretion, relying on only this metric would suggest that the two strains secrete insulin similarly (Figure 3—figure supplement 1). However, the WSB mice secreted significantly more insulin in 8G, 8G/QLA, and 8G/QLA/GIP (Figure 3). Based on our correlation analysis between Ca2+ parameters and insulin secretion across each sex and strain, active duration, and pulse duration in 8G more accurately predicted insulin secretion and may be highly informative when used with other data (Figure 4). This is similar to results published by other groups, suggesting that average Ca2+ does not correlate well with insulin secretion (Heart et al., 2006).
 
-## Strains segregate by their phylogenetic origins
+### Strains segregate by their phylogenetic origins
 
 Notably, several of the strains appeared to cluster together with similar responses. One such group is composed of three classical strains (A/J, B6, and 129), which had relatively similar waveforms that were dominated by slow oscillations. These differed from a second group containing the wild-derived strains (CAST, WSB, and PWK) which closely matched one another and were dominated by faster oscillations. Additionally, even with the clear separation between the clusters, inter-strain variation was still observed within the clusters (e.g. more 129 islets had plateau responses to 8G/QLA than the B6 or AJ).
 
@@ -125,13 +177,13 @@ Previous studies of islet Ca2+ have largely been confined to a handful of strain
 
 One study, comparing the outbred NMRI stock to the C57BL/6J and C57BL/6N strains (Pohorec et al., 2022), found that the NMRI displayed significantly lower Ca2+ frequencies than the C57 lines, particularly in physiological glucose ranges and had similar active periods. While highly informative, there were important differences between these studies and our studies here. Of note, the studies were done in acute slice culture, in only one sex, and the Ca2+ frequencies detected did not resemble the (at least for the C57 lines) the slow oscillations observed in isolated islets from these inbred strains (e.g. Figure 1, Lewandowski et al., 2020; Emfinger et al., 2022).
 
-## Mouse-to-human integration nominates novel islet drivers
+### Mouse-to-human integration nominates novel islet drivers
 
 One limitation of our current study is that the association between islet proteins and Ca2+ waveforms is correlative and therefore cannot distinguish proteins that are causal for the differences in islet Ca2+ between strains from proteins that change because of these differences. One approach to discriminate cause from effect, and establish the relevance to humans, is to identify whether genes encoding human orthologues of these proteins are associated with glycemic traits in human GWAS. SNPs for glycemic traits (Table 2), particularly those involving insulin, suggest that alterations in these proteins may impart disease risk, which is less likely for proteins that do not play critical regulatory roles. Thus, filtering our candidates for glycemic trait associations in human GWAS, while not definitive, suggests a likely causal role for these proteins in mediating differences in islet Ca2+ and insulin secretion among the different mice. Integrating human GWAS data with the proteins most correlated to Ca2+ dynamics nominated ~650 protein candidates, of which approximately one-third have been previously shown to have roles in islet biology. These include well-established drivers of insulin secretion; for example SUR1, GLUT2, and GNAS. Other previously unknown candidates show promise for validation, as they are already targets of small molecule compounds (e.g. ACP1 and others, Stanford et al., 2021; Coker et al., 2019; Davies et al., 2015; Gaulton et al., 2017; Santos et al., 2017; Zhou et al., 2022), are secreted (e.g. COBLL1 and others, Bateman et al., 2021; Thul et al., 2017; Uhlén et al., 2015; Uhlén et al., 2019; Navajas et al., 2022; Wang et al., 2013; Chen et al., 2019; Gonzales et al., 2009), or have been knocked out in mice, resulting in metabolic phenotypes (Figure 7B, Supplementary file 1, and Groza et al., 2023; Supplementary file 2).
 
 Our approach to merge human GWAS with our findings in mouse assumes that the glycemic-related SNPs we nominated alter the abundance or function of the human orthologues. Most SNPs that are strongly associated with phenotypes in human GWAS are noncoding, residing within introns, promoters, 3′UTRs, or intergenic regions (e.g. Figure 6). Therefore, a limitation of our approach is the assumption that SNPs regulate the gene they are proximal to, which is not always accurate (Nyaga et al., 2018; Chen et al., 2020; Smemo et al., 2014). To infer a more direct link between SNPs and potential target genes, we incorporated human islet chromatin data (Miguel-Escalada et al., 2019). Physical contact between a region containing SNPs and a distal gene supports a regulatory role, as for ACP1 (Figure 6B). Additionally, SNPs within regions of open chromatin (ATAC-seq) and actively transcribed regions (histone markers) suggest a higher likelihood of regulating transcription factor access. While this approach does not conclusively show a link between the SNPs and expression of the orthologue for our candidate proteins, these chromatin data more strongly suggest that the orthologue expression may be regulated by the candidates’ SNPs.
 
-## Exploiting strain and sex-dependent differences in Ca2+ dynamics for model system selection
+### Exploiting strain and sex-dependent differences in Ca2+ dynamics for model system selection
 
 In addition to the candidate regulators with potential relevance to human islet biology, we provide a user-friendly web interface to our data where users can determine whether their gene of interest has a potential regulatory role in islets. Multiple inferences regarding the roles of specific pathways are possible via analysis of Ca2+ oscillations in islets (Lewandowski et al., 2020; Merrins et al., 2022; Dahlgren et al., 2005; Kennedy et al., 2002), and our protein correlation data provide a resource to identify which parameter most closely correlates to a number of Ca2+ traits. Additionally, it highlights strain/sex outliers for a given trait or gene product, which can be used to select which strain/sex is best to explore that gene’s role (e.g. Figure 7C). Newer technologies in reproductive assistance, transgenesis, and gene editing, together with more accurate genome sequencing and single mutations conferring docility, are quickly making utilization of the wild-derived mice more practical (Hirose et al., 2017; Mochida et al., 2014; Karunakaran and Clee, 2018; Chao et al., 2019; Chang et al., 2017). As many of the QTL identified in DO-based studies often have strong driver SNPs from the wild-derived strains, a further understanding of which experimental questions might be best addressed by use of these strains will be important.
 
@@ -139,53 +191,213 @@ We have previously provided user-friendly web interfaces that allow searches of 
 
 ## Materials and methods
 
-## Chemicals
+### Chemicals
 
 All general chemicals, amino acids, bovine serum albumin, 4-(2-Hydroxyethyl)piperazine-1-ethanesulfonic acid, N-(2-Hydroxyethyl)piperazine-N′-(2-ethanesulfonic acid) (HEPES), dimethylsulfoxide (DMSO), glucose, glucose-dependent insulinotropic polypeptide (GIP, G2269), cOmplete Mini EDTA-free Protease Inhibitor Cocktail Tablets (11836170001), and heat-inactivated fetal bovine serum (FBS; 12306C) were purchased from Sigma-Aldrich. RPMI 1640 base medium (11-875-093), antibiotic–antimycotic solutions (15240112), NP-40 Alternative (492016), Fura Red Ca2+ imaging dye (F3020), DiR (D12731), and agarose (BP1356-500) were purchased from Thermo Fisher. Glass-bottomed culture dishes were ordered from Mattek (P35G-0-14C). Fura Red stocks were prepared at 5 mM concentrations in DMSO, aliquoted into light-shielded tubes, and stored at −20°C until day of use (5 μM final concentration). DiR was prepared in DMSO at 2 mg/ml, aliquoted to light-shielded tubes, and stored at 4°C until use. All imaging solutions were prepared in a bicarbonate/HEPES-buffered imaging medium (formula in Table 1). Amino acids were prepared as 100×stock in the biocarbonate/HEPES-buffered imaging medium, aliquoted into 1.5 ml tubes, and frozen at −20°C until day of use. Aliquots of GIP stock were prepared at 100 μM in water and kept at −20°C until day of use.
 
-## Animals
+**Table 1.**
+ Imaging medium formula.Components are indicated by chemical abbreviation on the left and final concentration in mM is indicated in the right column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Concentration (mM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaCl</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>KCl</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>MgCl2</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>NaH2PO4·H2O</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>NaHCO3</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>HEPES</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>CaCl2</td>
+      <td>2.6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animal care and experimental protocols were approved by the University of Wisconsin-Madison Animal Care and Use Committee. These studies used the following strains: A/J (RRID:IMSR_JAX:000646), C57BL/6J (B6) (RRID:IMSR_JAX:000664), 129S1/SvlmJ (129) (RRID: IMSR_JAX:002448), NOD/ShiLtJ (NOD) (RRID:IMSR_JAX:001976), NZO/HILtJ (NZO) (RRID:IMSR_JAX:002105), CAST/EiJ (CAST) (RRID:IMSR_JAX:000928), PWK/PhJ (PWK) (RRID:IMSR_JAX:003715), and WSB/EiJ (WSB)(RRID:IMSR_JAX:001145). Most strains (B6, AJ, 129, NOD, PWK, and WSB) were bred in-house, although two strains (CAST and NZO) were purchased from Jackson Laboratory (Bar Harbor, ME). All mice were fed a high-fat, high-sucrose Western-style diet (WD, consisting of 44.6% kcal fat, 34% carbohydrate, and 17.3% protein) from Envigo Teklad (TD.08811) beginning at 4 weeks and continuing until sacrifice (aged ~19–20 weeks for all strains except the NZO males). The NZO males were sacrificed at 12 weeks of age owing to complications from severe diabetes. For each strain, three to seven males and females from at least two litters were analyzed. Animals were sacrificed by cervical dislocation prior to islet isolation.
 
-## In vivo measurements
+### In vivo measurements
 
 Fasting blood glucose and insulin levels were measured in mice at 19 weeks of age, except for the NZO males which were measured at 12 weeks of age. Glucose was analyzed by the glucose oxidase method using a commercially available kit (TR15221, Thermo Fisher Scientific), and insulin was measured by radioimmunoassay (RIA; SRI-13K, Millipore). This is the same assay that was used to measure plasma insulin for the previously published cohort used for the correlation analysis in Figure 4; Mitok et al., 2018.
 
-## Islet imaging
+### Islet imaging
 
 Islets were isolated as previously described (Rabaglia et al., 2005) and incubated in recovery medium (RPMI 1640, 11.1 mM glucose, 1% antibiotic/antimycotic, 10% FBS) overnight at 37°C and 5% CO2. Islets were then incubated with Fura Red (5 μM in recovery medium) at 37°C for 45 min. Imaging dishes were created from glass-bottomed 10 cm2 dishes that had been filled with agarose. A channel with a central well was cut into the agarose with expanded ports on either side of the well for inflow and outflow lines. Prior to loading the chambers were perfused with the initial imaging solution (8 mM glucose in imaging medium). Islets were then loaded into these dishes. The imaging chamber was placed on a 37°C-heated microscope stage (Tokai Hit TIZ) of a Nikon A1R-Si+ confocal microscope. The solutions included 8 mM glucose (8G), 8 mM glucose + 2 mM glutamine, 0.5 mM leucine, and 1.25 mM alanine (8G/QLA), 8G/QLA + 10 nM glucose-dependent insulinotropic polypeptide (8G/QLA/GIP), and 2 mM glucose (2G), each of which were kept in a 37°C water bath. Solutions were perfused through the chamber at 0.25 ml/min for 40 min each, with constant flow controlled by a Fluigent MCFS-EZ and M-switch valve assembly (Fluigent). The scope was integrated with a Nikon Eclipse-Ti Inverted scope and equipped with a Nikon CFI Apochromat Lambda D ×10/0.45 objective (Nikon Instruments), fluorescence spectral detector, and multiple laser lines (Nikon LU-NV laser unit; 405, 440, 488, 514, 561, and 640 nm). Bound dye was excited with the 405 nm laser and the spectral detector’s variable filter was set to 620–690 nm. The free dye was excited with the 488 nm laser and the variable filter collected from 640 to 690 nm. Images were collected at 1 frame/s at 6-s intervals. Each islet was considered a region of interest for further analysis. ROI intensity was collected by NIS Elements and exported for further analysis. All microscopy was performed at the University of Wisconsin-Madison Biochemistry Optical Core, which was established with support from the University of Wisconsin-Madison Department of Biochemistry Endowment.
 
-## Islet perifusion
+### Islet perifusion
 
 Isolated islets were kept in RPMI-based medium (see above) overnight prior to perifusion, which was performed as previously described, with minor modifications (Emfinger et al., 2022; Bhatnagar et al., 2011). Islets were equilibrated in 2 mM glucose for 55 min, after which 100 μl fractions were collected every minute with the perifusion solutions set at a flow rate of 100 μl/min. All solutions and islet chambers were kept at 37°C. After the final fraction was collected, islet chambers were disconnected, inverted, and flushed with 2 ml of NP-40 Alternative lysis buffer containing protease inhibitors for islet insulin extraction.
 
-## Secreted insulin assay
+### Secreted insulin assay
 
 Insulin in each perifusion fraction and islet insulin content were determined using a custom assay, as previously described (Mitok et al., 2018). The primary (10R-I136a, also called D6C4) and secondary (61R-I136b-BT, also called D3E7) antibodies were from Biosynth.
 
-## Imaging data analysis
+### Imaging data analysis
 
 Trace segments for each solution condition were analyzed using Matlab and R. Traces were detrended using custom R scripts and GraphPad PRISM. Custom Matlab scripts (Foster et al., 2022) (https://github.com/hrfoster/Merrins-Lab-Matlab-Scripts (Foster, 2022), also stored on Zenodo https://doi.org/10.5281/zenodo.6540721) determined oscillation peak amplitude, pulse duration, active duration (the time when Ca2+ is above 50% peak amplitude), silent duration (the difference between period and active duration), plateau fraction (the fraction of overall time per pulse spent in the active duration), pulse period, and other parameters. Spectral density deconvolution for the trace segments to determine principal frequencies was done using R. Animal averages for the different parameters defined by Matlab and R were computed and graphed using custom R scripts. Figures were created using CorelDraw and Biorender. All R scripts and the citations for the relevant packages used to generate them are available via Dryad (https://doi.org/10.5061/dryad.j0zpc86jc).
 
-## Correlation and Z-score calculations
+### Correlation and Z-score calculations
 
 Correlation analysis was performed using the imaging data measurements and our published islet protein abundance data, ex vivo static insulin secretion measurements, and in vivo measurements made in a separate cohort of mice on the WD from the same strains and sexes used in these studies (Mitok et al., 2018). For each imaging parameter or previously published measurement, the Z-score was calculated using the formula z = (x − μ)/σ where z is the Z-score, x is the animal average for that trait given the strain and sex, μ is the average of all animals’ values for that trait, and σ is the standard deviation for all animals’ values for that trait. Z-scores were computed in R and excel for the imaging parameters and the previously published (Mitok et al., 2018) islet proteomic, ex vivo secretion, and in vivo measurements.
 
-Correlation coefficients between the Z-score values of the imaging parameters and Z-scores of the previously published protein abundance, islet secretion, and in vivo traits were computed in Excel using the CORREL function. The equation used for this function is:Correl(X,Y)=∑(x−x˙)(y−y˙)∑(x−x˙)2∗∑(y−y˙)2
+Correlation coefficients between the Z-score values of the imaging parameters and Z-scores of the previously published protein abundance, islet secretion, and in vivo traits were computed in Excel using the CORREL function. The equation used for this function is:
+
+$$
+Correl(X,Y)=\frac{\sum(x−x˙)(y−y˙)}{\sum(x−x˙)^{2}∗\sum(y−y˙)^{2}}
+$$
 
 where X and Y are the Z-scores for the correlated traits/parameters, ẋ is the population average for trait X and ẏ is the population average for trait Y. Traits were considered highly correlated if absolute value for their Z-score correlation coefficients was ≥0.5.
 
-## Gene enrichment and human GWAS analysis
+### Gene enrichment and human GWAS analysis
 
 Proteins highly correlated or anticorrelated to imaging parameters were further analyzed using pathway enrichment and presence of human GWAS SNPs. Briefly, for a given parameter, pathway analysis for the highly correlated or anticorrelated proteins to that parameter was done using Enrichr (Chen et al., 2013; Kuleshov et al., 2016). Enrichr links for the subsets of proteins highly correlated to specific calcium parameters are provided in Supplementary file 3, which is stored on Dryad (https://doi.org/10.5061/dryad.j0zpc86jc).
 
 For GWAS analysis, human orthologues for genes encoding the previously measured islet proteins were identified using BioMart (Smedley et al., 2009). For highly correlated proteins, the protein was deemed of human interest if its orthologue had SNPs for glycemia-related traits (see Table 2) either along the gene body, within ±100 kbp of the gene start or end, or if any region in the gene body was connected to regions with SNPs by chromatin looping. SNPs were queried using Lunaris tool of the Common Metabolic Diseases Knowledge Portal (https://hugeamp.org/). Chromatin loop anchor points for the relevant gene orthologues were identified using previously published human islet promoter-capture HiC data (Miguel-Escalada et al., 2019) and the alignment between these anchor loops and orthologues of interest was done using R scripts.
 
+**Table 2.**
+ Categories included in single-nucleotide polymorphism (SNP) queries.These terms were considered as glycemia related and are categorized as such on the Common Metabolic Diseases Knowledge portal, which was queried for the relevant SNPs. Also included but not listed here were variations of these terms that were adjusted for body mass index (BMI).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fasting hormones</th>
+      <th>Glucose related</th>
+      <th>Tolerance test</th>
+      <th>Diabetes risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Insulin</td>
+      <td>Fasting glucose</td>
+      <td>2 hr glucose</td>
+      <td>T1D</td>
+    </tr>
+    <tr>
+      <td>Proinsulin</td>
+      <td>Random glucose</td>
+      <td>2 hr insulin</td>
+      <td>T2D</td>
+    </tr>
+    <tr>
+      <td>C-peptide</td>
+      <td>Hba1c</td>
+      <td>2 hr C-peptide</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fasting glc–BMI interaction</td>
+      <td></td>
+      <td>Acute insulin response</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fasting ins–BMI interaction</td>
+      <td></td>
+      <td>SI-adjusted acute ins. Resp.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gestational diabetes/altered fast glucose in pregnancy</td>
+      <td></td>
+      <td>AUC insulin</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>AUC insulin/AUC glucose</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Corrected insulin response</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HOMA-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HOMA-IR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Ins. Secretion rate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Ins. Sensitivity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Incremental ins. @ 30 min OGTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Insulin @ 30 min OGTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Peak ins. response</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Peak ins. Response adj SI</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 For those proteins having orthologues with SNPs via this analysis, we conducted further literature searches using Pubmed, Google Scholar, ChEMBL (Davies et al., 2015; Gaulton et al., 2017; Jupp et al., 2014), canSAR (Coker et al., 2019), Uniprot (Bateman et al., 2021), Tabula Muris (Tabula Muris Consortium et al., 2018), the Human Protein Atlas (Thul et al., 2017; Uhlén et al., 2015), and other resources (Uhlén et al., 2019; Varshney et al., 2017; Lawlor et al., 2017) to determine tissue expression and identify any prior roles in islet biology. Figures for the relevant protein examples were created using GraphPad Prism, CorelDraw, and the WashU Epigenome Browser (Li et al., 2019).
 
 We further narrowed this list by searching each of the genes and their aliases in the PubMed, Google Scholar, and Google Search Engines along with ‘insulin secretion’. This allowed us to identify which genes have a known role in altering the insulin secretory pathway, and which genes may be understudied (Figure 7A).
 
-## Web resource
+### Web resource
 
 A web resource was created to explore the islet calcium and proteomic data and their relationships (https://data-viz.it.wisc.edu/FounderCalciumStudy, https://connect.doit.wisc.edu/FounderCalciumStudy/, https://rstudio.it.wisc.edu/FounderCalciumStudy). This resource sits on an RStudio/Connect server (see https://posit.co/). It enables the user to select traits from the calcium and protein datasets to plot by strain, sex, and calcium parameters. Distinct mice were assayed for calcium and protein. Individual strains can be selected on the main menu using the checkboxes, or all strains (default) can be viewed.
 
@@ -199,6 +411,6 @@ Statistical modeling terms include strain, sex, and the strain:sex interaction, 
 
 All data handling and web app construction for the resource were performed using R scripts in publicly available GitHub repositories, with specifics for the calcium study at https://github.com/byandell/FounderCalciumStudy (copy archived at Yandell, 2023b) and the general purpose analysis and web deployment package at https://github.com/byandell/foundr (copy archived at Yandell, 2023a).
 
-## Statistics
+### Statistics
 
 For the islet perifusion insulin measurements, statistics were determined in GraphPad Prism. Fractional secretion area-under-the-curve (AUC) was determined using Prism and differences in AUCs analyzed using post-tests following two-way analysis of variance for the indicated trace segments. Islet total insulins between strains were compared using a two-tailed Student’s t-test with Welch’s correction. For Figure 4—figure supplement 1, the graphs, Pearson’s R, and regression lines were created in Prism. All data analysis used individual animal averages of the islet measurements (biological replicates). Experimental numbers were determined using prior data analyses (Keller et al., 2019; Mitok et al., 2018; Emfinger et al., 2022). Owing to poor islet yield as a complication of their severe diabetes, in the imaging experiments the islets from some NZO mice had to be pooled with each pool considered a biological replicate.

@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Department of Psychology, Princeton University Princeton United States
-2. https://ror.org/00hx57361 Princeton Neuroscience Institute, Princeton University Princeton United States
-3. https://ror.org/03v76x132 Department of Psychology, Yale University New Haven United States
-4. https://ror.org/03v76x132 Wu Tsai Institute, Yale University New Haven United States
+1. Department of Psychology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+2. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+3. Department of Psychology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+4. Wu Tsai Institute, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ However, other studies have found that linking stimuli to shared associates can 
 
 Findings of this sort present a challenge to supervised learning models, which predict that the connection weights underlying these memories should be adjusted to make them more (not less) similar to each other. This kind of ‘similarity reversal’, whereby stimuli that have more features in common (or share a common associate) show less hippocampal pattern similarity, has now been observed in a wide range of studies (e.g. Favila et al., 2016; Schlichting et al., 2015; Molitor et al., 2021; Chanales et al., 2017; Dimsdale-Zucker et al., 2018; Wanjia et al., 2021; Zeithamova et al., 2018; Jiang et al., 2020; Fernandez et al., 2023; Wammes et al., 2022).
 
-## Nonmonotonic plasticity hypothesis
+### Nonmonotonic plasticity hypothesis
 
 How can we make sense of these findings? Supervised learning algorithms cannot explain the aforementioned results on their own, so they need to be supplemented by other learning principles. We previously argued (Ritvo et al., 2019) that learning algorithms positing a U-shaped relationship between neural activity and synaptic weight change — where low levels of activity at retrieval lead to no change, moderate levels of activity lead to synaptic weakening, and high levels of activity lead to synaptic strengthening — may be able to account for these results; the Bienenstock-Cooper-Munro (BCM) learning rule (Bienenstock et al., 1982; Cooper, 2004) is the most well-known learning algorithm with this property, but other algorithms with this property have also been proposed (Norman et al., 2006; Diederich and Opper, 1987). We refer to the U-shaped learning function posited by this type of algorithm as the nonmonotonic plasticity hypothesis (NMPH; Detre et al., 2013; Newman and Norman, 2010).
 
@@ -40,7 +40,7 @@ In addition to explaining how individual memories get stronger and weaker, the N
 
 **Figure 1.:** In this network, activity is allowed to spread bidirectionally. When B is presented along with X (corresponding to a BX study trial), activity can spread downward from X to the hidden-layer units associated with A, and also — from there — to the input-layer representation of A. (A) If activity spreads strongly to the input and hidden representations of A, integration of A and B occurs due to strengthening of connections between all of the strongly activated features (green connections indicate strengthened weights; AB integration can be seen by noting the increase in the number of hidden units receiving projections from both A and B). (B) If activity spreads only moderately to the input and hidden representations of A, differentiation of A and B occurs due to weakening of connections between the moderately activated features of A and the strongly activated features of B (green and red connections indicate weights that are strengthened and weakened, respectively; AB differentiation can be seen by noting the decrease in the number of hidden units receiving strong connections from both A and B — in particular, the middle hidden unit no longer receives a strong connection from A). (C) If activity does not spread to the features of A, then neither integration nor differentiation occurs. Note that the figure illustrates the consequences of differences in competitor activation for learning, without explaining why these differences would arise. For discussion of circumstances that could lead to varying levels of competitor activation, see the simulations described in the text.
 
-## Research goal
+### Research goal
 
 In this paper, we present a neural network model that instantiates the aforementioned NMPH learning principles, with the goal of assessing how well these principles can account for extant data on when differentiation and integration occur. In Ritvo et al., 2019, we provided a sketch of how certain findings could potentially be explained in terms of the NMPH. However, intuitions about how a complex system should behave are not always accurate in practice, and verbally stated theories can contain ambiguities or internal contradictions that are only exposed when building a working model. Building a model also allows us to generate more detailed predictions (i.e. we can use the model to see what follows from a core set of principles). Relatedly, there are likely boundary conditions on how a model behaves (i.e. it will show a pattern of results in some conditions but not others). Here, we use the model to characterize these boundary conditions, which (in turn) can be translated into new, testable predictions.
 
@@ -50,13 +50,13 @@ The model can account for the results of these studies, and it provides several 
 
 The following section provides an overview of general properties of the model. Later sections describe how we implemented the model separately for the three studies.
 
-## Basic network properties
+### Basic network properties
 
 We set out to build the simplest possible model that would allow us to explore the role of the NMPH in driving representational change. The model was constructed such that it only used unsupervised, U-shaped learning and not supervised learning. Importantly, we do not think that unsupervised, U-shaped learning function is a replacement for error-driven learning; instead, we view it as a supplementary tool the brain uses to reduce interference of competitors (Ritvo et al., 2019). Nonetheless, we intentionally omitted supervised learning in order to explore whether unsupervised, U-shaped learning on its own would be sufficient to account for extant findings on differentiation and integration. Achieving a better understanding of unsupervised learning is an important goal for computational neuroscience, given that learning agents have vastly more opportunities to learn in an unsupervised fashion than from direct supervision (for additional discussion of this point, see, e.g., Zhuang et al., 2021).
 
 Because we were specifically interested in the way competition affects learning, we decided to focus on the key moment after the memories have been formed, when they first come into competition with each other. Consequently, we pre-wired the initial connections into the network for each stimulus, rather than the allowing the connections to self-organize through learning (see Methods for details). Doing so meant we could have control over the exact level of competition between pairmates. We then used the model to simulate different studies, with the goal of assessing how different manipulations that affect competitor activity modulate representational change. In the interest of keeping the simulations simple, we modeled a single task from each study rather than modeling all of them comprehensively. Our goal was to qualitatively fit key patterns of results from each of the aforementioned studies. We fit the parameters of the model by hand as they are highly interdependent (see the Methods section for more details).
 
-## Model architecture
+### Model architecture
 
 The model was built using the Emergent simulation framework (Aisa et al., 2008). All versions of the model have the same basic architecture (Figure 2; see the following sections for how the model was adapted for each version, and the Methods section for the details of all parameters).
 
@@ -74,33 +74,33 @@ All projections as described above have weak, randomly-sampled weight values, bu
 
 Hidden units representing each individual item start out strongly interconnected (that is, the six pairmate A units are linked together by maximally strong recurrent connections, as are the six pairmate B units). We also pre-wired some stronger connections between these hidden A and B units and the output units, but the setup of the hidden-to-output pre-wired connections depends on the modeled experiment.
 
-## Inhibitory dynamics
+### Inhibitory dynamics
 
-Within a layer, inhibitory competition between units was enforced through an adapted version of the k-winners-take-all (kWTA) algorithm (O’Reilly and Munakata, 2000; see Methods) which limits the amount of activity in a layer to at most k units. The kWTA algorithm provides a useful way of capturing the ‘set-point’ quality of inhibitory neurons without requiring the inclusion of these neurons directly.
+Within a layer, inhibitory competition between units was enforced through an adapted version of the k-winners-take-all (kWTA) algorithm (O’Reilly and Munakata, 2000; see Methods) which limits the amount of activity in a layer to at most $k$ units. The kWTA algorithm provides a useful way of capturing the ‘set-point’ quality of inhibitory neurons without requiring the inclusion of these neurons directly.
 
 The main method we use to allow activity to spread to the competitor is through inhibitory oscillations. Prior work has argued that inhibitory oscillations could play a key role in this kind of competition-dependent learning (Norman et al., 2006; Norman et al., 2007; Singh et al., 2022). Depending on how much excitation a competing memory is receiving, lowering the level of inhibition can allow competing memories that are inactive at baseline levels of inhibition to become moderately active (causing their connections to the target memory to be weakened) or even strongly active (causing their connections to the target memory to be strengthened). Our model implements oscillations through a sinusoidal function which lowers and raises inhibition over the course of the trial, allowing competitors to ‘pop up’ when inhibition is lower.
 
-## Learning
+### Learning
 
-Connection strengths in the model between pairs of connected units x and y were adjusted at the end of each trial (i.e. after each stimulus presentation) as a U-shaped function of the coactivity of x and y, defined as the product of their activations on that trial. The parameters of the U-shaped learning function relating coactivity to change in connection strength (i.e. weakening / strengthening) were specified differently for each projection where learning occurs (bidirectionally between the input and hidden layers, the hidden layer to itself, and the hidden to output layer). Once the U-shaped learning function for each projection in each version of the model was specified, we did not change it for any of the various conditions. Details of how we computed coactivity and how we specified the U-shaped function can be found in the Methods section.
+Connection strengths in the model between pairs of connected units $x$ and $y$ were adjusted at the end of each trial (i.e. after each stimulus presentation) as a U-shaped function of the coactivity of $x$ and $y$, defined as the product of their activations on that trial. The parameters of the U-shaped learning function relating coactivity to change in connection strength (i.e. weakening / strengthening) were specified differently for each projection where learning occurs (bidirectionally between the input and hidden layers, the hidden layer to itself, and the hidden to output layer). Once the U-shaped learning function for each projection in each version of the model was specified, we did not change it for any of the various conditions. Details of how we computed coactivity and how we specified the U-shaped function can be found in the Methods section.
 
-## Competition
+### Competition
 
 Constructing the network in this way allows us to precisely control the amount of competition between pairmates. There are several ways beside amplitude of oscillations to alter the amount of excitation spreading to the competitor. For instance, competitor activity could be modulated by altering the pre-wired weights to force the hidden-layer representations for A and B to share more units. Each version of the model (for each experiment) relies on a different method to modulate the amount of competitor activity.
 
-## Model of Chanales et al., 2021: repulsion and attraction of color memories
+### Model of Chanales et al., 2021: repulsion and attraction of color memories
 
-## Key experimental findings
+#### Key experimental findings
 
 The first experiment we modeled was Chanales et al., 2021. The study was inspired by recent neuroimaging studies showing ‘similarity reversals’, wherein stimuli that have more features in common (or share a common associate) show less hippocampal pattern similarity (Favila et al., 2016; Schlichting et al., 2015; Molitor et al., 2021; Chanales et al., 2017; Dimsdale-Zucker et al., 2018; Wanjia et al., 2021; Zeithamova et al., 2018; Jiang et al., 2020; Wammes et al., 2022). Chanales et al., 2021 tested whether a similar ‘repulsion’ effect is observed with respect to how the specific features of competing events are retrieved. In their experiments, participants learned associations between objects and faces (Figure 3A). Specifically, participants studied pairs of objects that were identical except for their color value; each of these object pairmates was associated with a unique face. Participants’ memory was tested in several ways; in one of these tests — the color recall task — the face was shown as a cue alongside the colorless object, and participants were instructed to report the color of the object on a continuous color wheel.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig3-v1.jpg)
 
-**Figure 3.:** Chanales et al., 2021.(A) Participants in Chanales et al., 2021 learned to associate objects and faces (faces not shown here due to bioRxiv rules). The objects consisted of pairs that were identical except for their color value, and the difference between pairmate color values was systematically manipulated to adjust competition. Color memory was tested in a task where the face and colorless object were given as a cue, and participants had to use a continuous color wheel to report the color of the object. Color reports could be biased toward (+) or away from the competitor (-). (B) When color similarity was low (48°), color reports were accurate. When color similarity was raised to a moderate level (24°), repulsion occurred, such that color reports were biased systematically away from the competitor. When color similarity was raised further (6°), the repulsion effect was eliminated. (C) To model this study, we used the network structure described in Basic Network Properties, with the following modifications: This model additionally has a non-modifiable recurrent projection in the output layer, to represent the continuous nature of the color space: Each output unit was pre-wired with fixed, maximally strong weights connecting it to the seven units on either side of it (one such set of connections is shown to the output unit colored in green); background output-to-output connections (outside of these seven neighboring units) were set up to be fixed, weak, and random. The hidden layer additionally was initialized to have maximally strong (but learnable) one-to-one connections with units in the output layer, thereby ensuring that the color topography of the output layer was reflected in the hidden layer. Each of the six hidden A units were connected in an all-to-all fashion to the six pre-assigned A units in the output layer via maximally strong, pre-wired weights (purple lines). The same arrangement was made for the hidden B units (pink lines). Other connections between the output and hidden layers were initialized to lower values. In the figure, activity is shown after pairmate A is presented — the recurrent output-to-output connections let activity spread to units on either side. (D) We included six conditions in this model, corresponding to different numbers of shared units in the hidden and output layers. Three conditions are shown here. The conditions are labeled by the number of hidden/output units shared by A and B. Thus, one unit is shared by A and B in 1/6, two units are shared by A and B in 2/6, and so on. Increased overlap in the hidden and output layers is meant to reflect higher levels of color similarity in the experiment. We included overlap types from 0/6 to 5/6.
+**Figure 3.:** (A) Participants in Chanales et al., 2021 learned to associate objects and faces (faces not shown here due to bioRxiv rules). The objects consisted of pairs that were identical except for their color value, and the difference between pairmate color values was systematically manipulated to adjust competition. Color memory was tested in a task where the face and colorless object were given as a cue, and participants had to use a continuous color wheel to report the color of the object. Color reports could be biased toward (+) or away from the competitor (-). (B) When color similarity was low (48°), color reports were accurate. When color similarity was raised to a moderate level (24°), repulsion occurred, such that color reports were biased systematically away from the competitor. When color similarity was raised further (6°), the repulsion effect was eliminated. (C) To model this study, we used the network structure described in Basic Network Properties, with the following modifications: This model additionally has a non-modifiable recurrent projection in the output layer, to represent the continuous nature of the color space: Each output unit was pre-wired with fixed, maximally strong weights connecting it to the seven units on either side of it (one such set of connections is shown to the output unit colored in green); background output-to-output connections (outside of these seven neighboring units) were set up to be fixed, weak, and random. The hidden layer additionally was initialized to have maximally strong (but learnable) one-to-one connections with units in the output layer, thereby ensuring that the color topography of the output layer was reflected in the hidden layer. Each of the six hidden A units were connected in an all-to-all fashion to the six pre-assigned A units in the output layer via maximally strong, pre-wired weights (purple lines). The same arrangement was made for the hidden B units (pink lines). Other connections between the output and hidden layers were initialized to lower values. In the figure, activity is shown after pairmate A is presented — the recurrent output-to-output connections let activity spread to units on either side. (D) We included six conditions in this model, corresponding to different numbers of shared units in the hidden and output layers. Three conditions are shown here. The conditions are labeled by the number of hidden/output units shared by A and B. Thus, one unit is shared by A and B in 1/6, two units are shared by A and B in 2/6, and so on. Increased overlap in the hidden and output layers is meant to reflect higher levels of color similarity in the experiment. We included overlap types from 0/6 to 5/6.
 
 Chanales et al., 2021 found that, for low levels of pairmate color similarity (i.e. 72° and 48° color difference), participants were able to recall the colors accurately when cued with a face and an object. However, when color similarity was increased (i.e. 24° color difference), the color reports were biased away from the pairmate, leading to a repulsion effect. For instance, if the pairmates consisted of a red jacket and a red-but-slightly-orange jacket, repulsion would mean that the slightly-orange jacket would be recalled as less red and more yellow than it actually was. When the color similarity was increased even further (i.e. 6° color difference), the repulsion effects were eliminated (Figure 3B). For a related result showing repulsion with continuously varying face features (gender, age) instead of color, see Drascher and Kuhl, 2022.
 
-## Potential NMPH explanation
+#### Potential NMPH explanation
 
 Typical error-driven learning would not predict this outcome, because it would adjust weights to align the guess more closely with the true outcome, leading to no repulsion effects. In contrast, the NMPH potentially explains the results of this study well; as the authors note, “the relationship between similarity and the repulsion effect followed an inverted-U-shape function, suggesting a sweet spot at which repulsion occurs” (Chanales et al., 2021).
 
@@ -110,33 +110,33 @@ However, when color similarity is higher (i.e. 24°), the additional color overl
 
 When color overlap is highest (i.e. 6°), the repulsion effect was eliminated. The NMPH could explain this result in terms of the competitor getting so much excitation from the high similarity that it falls on the high/right side of the U-shaped function, in the direction of integration (or ‘attraction’ for the behavioral reports of color). Chanales et al., 2021 did not observe an attraction effect, but this can be explained in terms of the similarity of the pairmates in this condition (at 6° of color separation, there is a limit on how much more similar the color reports could become, given the precision of manual responses).
 
-## Model set-up
+### Model set-up
 
-## Model architecture
+#### Model architecture
 
 To model this task (Figure 3C), we used the two input layers (i.e. category and item) to represent the colorless object and face associates, respectively. To represent a particular stimulus, we activated a single unit in each of the input layers; pairmates share the same unit in the object layer (i.e. ‘jacket’), but differ in the unit for the face layer (i.e. ‘face-for-jacket-A’ and ‘face-for-jacket B’). The output layer represents the color-selective units. Units that are closer to each other can be thought of as representing colors that are more similar to each other.
 
-## Knowledge built into the network
+#### Knowledge built into the network
 
 As described in Basic Network Properties, each of the two input face units is pre-wired to connect strongly to the six corresponding hidden units (either the six hidden A units, or the six hidden B units). In this version of our model, we added several extra pre-wired connections, specifically, recurrent output-to-output connections (although we did not include learning for this projection). Neighboring units were pre-wired to have stronger connections, to instantiate the idea that color is represented in a continuous way in the brain (Hanazawa et al., 2000; Komatsu et al., 1992).
 
 The six hidden A units were connected to the corresponding six units in the output layer in an all-to-all fashion via maximally strong weights (such that each A hidden unit was connected to each A output unit); an analogous arrangement was made for the units representing pairmate B. Additionally, each non-pairmate unit in the hidden layer was pre-wired to have a maximally strong connection with the unit directly above it in the output layer. Arranging the units in this way (so the hidden layer matches the topography of the output layer) makes it easier to interpret the types of distortion that occur in the hidden layer.
 
-## Manipulation of competitor activity
+#### Manipulation of competitor activity
 
 In this experiment, competition is manipulated through the level of color similarity in each condition. We operationalized this by adjusting the level of overlap between the hidden (and output) color A and B units. One advantage of modeling is that, because there is no constraint on experiment length, we were able to sample a wider range of overlap types than the actual study, which was limited to three conditions per experiment. Instead, we used six overlap conditions in the model. For all conditions, the two pairmates were each assigned six units in the hidden layer. However, for the different overlap conditions, we pre-wired the weights from the input layers to the hidden layer so that the two pairmates differed in the number of hidden-layer units that were shared (note that this overlap manipulation was also reflected in the output layer, because of the pre-wired connections between the hidden and output layers described above).
 
 We labeled the six conditions based on the number of overlapping units between the pairmates (which varied) and the number of total units per pairmate (which was always six): 0/6 overlap means that the two pairmates are side-by-side but share zero units; 1/6 overlap means they share one unit out of six each; 2/6 overlap means they share two units out of six each, and so on.
 
-## Task
+#### Task
 
 The task simulated in the model is a simplified version of the paradigm used in Chanales et al., 2021. Specifically, we focused on the color recall task, where the colorless object was shown alongside the face cue, and the participant had to report the object’s color on a color wheel. To model this, the external input is clamped to the network (object and face units), and activity is allowed to flow through the hidden layer to the color layer so the network can make a color ‘guess’. We ran a test epoch after each training epoch so we could track the representations of pairmates A and B over time.
 
 As described in Basic Network Properties, inhibitory oscillations allow units that are inactive at baseline levels of inhibition to ‘pop up’ toward the end of the trial. This is important for allowing potential competitor units to activate. There is no ‘correct’ color shown to the network, and all learning is based purely on an unsupervised U-shaped learning rule that factors in the coactivity of presynaptic and postsynaptic units (see Methods for parameter details).
 
-## Results
+### Results
 
-## Effects of color similarity on color recall and neural representations
+#### Effects of color similarity on color recall and neural representations
 
 Chanales et al., 2021 showed that, as color similarity was raised, a repulsion effect occurred where the colors of pairmates were remembered as being less similar to each other than they were in reality. When color similarity was raised even further, this repulsion effect went away. In our model, we expected to find a similar U-shaped pattern as hidden-layer overlap increased.
 
@@ -144,7 +144,7 @@ To measure repulsion, we operationalized the color memory ‘report’ as the ce
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig4-v1.jpg)
 
-**Figure 4.:** Chanales et al., 2021 results.(A) The distance (number of units apart) between the centers-of-mass of output activity for A and B is used to measure repulsion vs. attraction. The gray bar indicates what the color difference would be after learning if no change happens from before (gray dots) to after (black dots) learning; above the gray bar indicates repulsion and below indicates attraction. For lower levels of overlap (0/6 and 1/6), color distance remains unchanged. For a medium level of overlap (2/6), repulsion occurs, shown by the increase in the number of units between A and B. For higher levels of overlap (3/6, 4/6, and 5/6), attraction occurs, shown by the decrease in the number of units between A and B. (B) Color error (output-layer distance between the ‘guess’ and ‘correct’ centers-of-mass) is shown for each pairmate and condition (negative values indicate repulsion). When repulsion occurs (2/6), the change is driven by a distortion of pairmate 2, whereas pairmate 1 is unaffected. (C) Pairmate similarity is measured by the correlation of the hidden-layer patterns before and after learning. Here, above the gray line indicates integration and below indicates repulsion. The within-pair correlation decreases (differentiation) when competitor overlap is moderate (2/6). Within-pair correlation increases (integration) when competitor overlap is higher (3/6, 4/6, and 5/6). (D) Four hidden-layer activity patterns from a sample run in the 2/6 condition are shown: pairmate 1before, pairmate 1after, pairmate 2before, and pairmate 2after. The subscripts refer to the state of the memory before/after the learning that occurs in the color recall task; pairmate 1 designates the first of the pairmates to be presented during color recall. Brighter colors indicate the unit is more active. In this run, pairmate 1 stays in place and pairmate 2 distorts away from pairmate 1. (E) Multidimensional scaling (MDS) plots for each condition are shown, to illustrate the pattern of representational change in the hidden layer. The same four patterns as in D are plotted for each run. MDS plots were rotated, shifted, and scaled such that pairmate 1before is located at (0,0), pairmate 2before is located directly to the right of pairmate 1before, and the distance between pairmate 1before and pairmate 2before is proportional to the baseline distance between the pairmates. A jitter was applied to all points. Asymmetry in distortion can be seen in 2/6 by the movement of pairmate 2after away from pairmate 1. In conditions that integrate, most runs lead to symmetric distortion, although some runs in the 3/6 condition lead to asymmetric integration, where pairmate 2 moves toward pairmate 1before. For panels A, B, and C, error bars indicate the 95% confidence interval around the mean (computed based on 50 model runs).
+**Figure 4.:** (A) The distance (number of units apart) between the centers-of-mass of output activity for A and B is used to measure repulsion vs. attraction. The gray bar indicates what the color difference would be after learning if no change happens from before (gray dots) to after (black dots) learning; above the gray bar indicates repulsion and below indicates attraction. For lower levels of overlap (0/6 and 1/6), color distance remains unchanged. For a medium level of overlap (2/6), repulsion occurs, shown by the increase in the number of units between A and B. For higher levels of overlap (3/6, 4/6, and 5/6), attraction occurs, shown by the decrease in the number of units between A and B. (B) Color error (output-layer distance between the ‘guess’ and ‘correct’ centers-of-mass) is shown for each pairmate and condition (negative values indicate repulsion). When repulsion occurs (2/6), the change is driven by a distortion of pairmate 2, whereas pairmate 1 is unaffected. (C) Pairmate similarity is measured by the correlation of the hidden-layer patterns before and after learning. Here, above the gray line indicates integration and below indicates repulsion. The within-pair correlation decreases (differentiation) when competitor overlap is moderate (2/6). Within-pair correlation increases (integration) when competitor overlap is higher (3/6, 4/6, and 5/6). (D) Four hidden-layer activity patterns from a sample run in the 2/6 condition are shown: pairmate 1before, pairmate 1after, pairmate 2before, and pairmate 2after. The subscripts refer to the state of the memory before/after the learning that occurs in the color recall task; pairmate 1 designates the first of the pairmates to be presented during color recall. Brighter colors indicate the unit is more active. In this run, pairmate 1 stays in place and pairmate 2 distorts away from pairmate 1. (E) Multidimensional scaling (MDS) plots for each condition are shown, to illustrate the pattern of representational change in the hidden layer. The same four patterns as in D are plotted for each run. MDS plots were rotated, shifted, and scaled such that pairmate 1before is located at (0,0), pairmate 2before is located directly to the right of pairmate 1before, and the distance between pairmate 1before and pairmate 2before is proportional to the baseline distance between the pairmates. A jitter was applied to all points. Asymmetry in distortion can be seen in 2/6 by the movement of pairmate 2after away from pairmate 1. In conditions that integrate, most runs lead to symmetric distortion, although some runs in the 3/6 condition lead to asymmetric integration, where pairmate 2 moves toward pairmate 1before. For panels A, B, and C, error bars indicate the 95% confidence interval around the mean (computed based on 50 model runs).
 
 We found no difference in the color center-of-mass before and after training in the 0/6 and 1/6 conditions. As similarity increased to the 2/6 condition, the distance between the centers-of-mass increased after learning, indicating repulsion. When similarity increased further to the 3/6, 4/6, and 5/6 conditions, the distance between the centers-of-mass decreased with learning, indicating attraction. The overall pattern of results here mirrors what was found in the Chanales et al., 2021 study: Low levels of color similarity were associated with no change in color perception, moderate levels of color similarity were associated with repulsion, and the repulsion effect went away when color similarity increased further.
 
@@ -156,9 +156,21 @@ We found that representational change tracked the repulsion/attraction results F
 
 Crucially, we can inspect the model to see why it gives rise to the pattern of results outlined above. In the low-overlap conditions (0/6, 1/6), the competitor did not activate enough during target recall to trigger any competition-dependent learning (see Video 1). When color similarity increased in the 2/6 condition, the competitor pop-up during target recall was high enough for co-activity between shared units and unique competitor units to fall into the dip of the U-shaped function, severing the connections between these units. On the next trial, when the competitor was presented, the unique parts of the competitor activated in the hidden layer but — because of the severing that occurred on the previous trial — the formerly shared units did not. Because the activity ‘set point’ for the hidden layer (determined by the kWTA algorithm) involves having 6 units active, and the unique parts of the competitor only take up 4 of these 6 units, this leaves room for activity to spread to additional units. Given the topographic projections in the output layer, the model is biased to ‘pick up’ units that are adjacent in color space to the currently active units; because activity cannot flow easily from the competitor back to the target (as a result of the aforementioned severing of connections), it flows instead away from the target, activating two additional units, which are then incorporated into the competitor representation. This sequence of events (first a severing of the shared units, then a shift away from the target) completes the process of neural differentiation, and is what leads to the behavioral repulsion effect in color recall (because the center-of-mass of the color representation has now shifted away from the target) — the full sequence of events is illustrated in Video 2. Lastly, when similarity increased further (to 3/6 units or above), competitor pop-up increased — the co-activity between the shared units and the unique competitor units now falls on the right side of the U-shaped function, strengthening the connections between these units (instead of being severed). This strengthening leads to neural integration and behavioral attraction in color space, as shown in Video 3.
 
+![Video 1.](https://cdn.elifesciences.org/articles/88608/elife-88608-video1.mp4.jpg)
+
+**Video 1.:** This video illustrates how the competitor does not pop up given low levels of hidden-layer overlap, so no representational change occurs.
+
+![Video 2.](https://cdn.elifesciences.org/articles/88608/elife-88608-video2.mp4.jpg)
+
+**Video 2.:** This video illustrates how the competitor pops up moderately and differentiates given medium levels of hidden-layer overlap.
+
+![Video 3.](https://cdn.elifesciences.org/articles/88608/elife-88608-video3.mp4.jpg)
+
+**Video 3.:** This video illustrates how the competitor pops up strongly and integrates given high levels of hidden-layer overlap.
+
 In summary, this version of our model qualitatively replicates the key pattern of results in Chanales et al., 2021, whereby increasing color similarity led to a repulsion effect in color recall, which went away as similarity increased further. The reasons why the model gives rise to these effects align well with the Potential NMPH Explanation provided earlier: Higher color similarity increases competitor activity, which first leads to differentiation of the underlying representations, and then — as competitor activity increases further — to integration of these representations.
 
-## Asymmetry of representational change
+#### Asymmetry of representational change
 
 A striking feature of the model is that the repulsion effect in the 2/6 condition is asymmetric: One pairmate anchors in place and the other pairmate shifts its color representation. Figure 4B illustrates this asymmetry, by tracking how the center-of-mass for both pairmates changes over time in the output layer. Specifically, for each pairmate, we calculated the difference between the center-of-mass at the end of learning compared to the initial center-of-mass. A distortion away from the competitor is coded as negative, and toward the competitor is positive. When repulsion occurred in the 2/6 condition, the item shown first (pairmate 1) anchored in place (i.e., the final color report was unchanged and accurate), whereas the item shown second (pairmate 2) moved away from its competitor.
 
@@ -166,7 +178,7 @@ This asymmetry was also observed in the hidden layer (Figure 4D and E). In Figur
 
 In our model, the asymmetry in differentiation manifested as a clear order effect — pairmate 1 anchors in place and pairmate 2 shifts away from pairmate 1. It is important to remember, however, this effect is contingent on pairmate 2 popping up as a competitor when pairmate 1 is first shown as a target. If the dynamics had played out differently then different results might be obtained. For example, if pairmate 2 does not pop up as a competitor when pairmate 1 is first presented, and instead pairmate 1 pops up as a competitor when pairmate 2 is first presented, we would expect the opposite pattern of results (i.e. pairmate 2 will anchor in place and pairmate 1 will shift away from pairmate 2). We return to these points, and their implications for empirically testing the model’s predictions about asymmetry, in the Discussion section.
 
-## Two kinds of integration
+#### Two kinds of integration
 
 We also observed that integration could take two different forms, symmetric and asymmetric (Figure 4B and E). In this version of the model, the symmetric integration is more common. This can be seen in the MDS plots for conditions 3/6, 4/6, and 5/6: Both pairmate 1after and pairmate 2after mutually move toward each other. This is because both pairmates end up connecting to all the units that were previously connected to either pairmate individually. Essentially, the hidden units for pairmate 1 and pairmate 2 are ‘tied’ in terms of strength of excitation, so they are all allowed to be active at once (see Activity and inhibitory dynamics in the Methods). However, in the 3/6 condition, some runs show asymmetric integration where pairmate 2 distorts toward pairmate 1. (Figure 4E).
 
@@ -176,9 +188,13 @@ Whether symmetric or asymmetric integration occurs depends on the relative stren
 
 **Figure 5.:** Generally, coactivity between pairs of units that are unique to the competitor (competitor-competitor coactivity) is less than coactivity between unique competitor units and shared units (competitor-shared coactivity), which is less than target-target, target-shared, or shared-shared coactivity. The heights of the vertical bars in the bottom row indicate activity levels for particular hidden units. The top row plots coactivity values for a subset of the pairings between units (those highlighted by the arcs in the bottom row), illustrating where they fall on the U-shaped learning function. (A) Schematic of the typical arrangement of coactivity in the hidden-hidden connections and item-hidden connections in the 2/6 condition. The competitor units do not activate strongly. As a result, the competitor-shared connections are severed because they fall in the dip of the U-shaped function; this, in turn, leads to differentiation. (B) Typical arrangement of coactivity in the higher overlap conditions, 4/6 and 5/6. Here, the competitor units are highly active. Consequently, all connection types fall on the right side of the U-shaped function, leading to integration. Specifically, all units connect to each other more strongly, leading units previously associated with either pairmate A or B to join together. (C) As competitor pop-up increases, moving from the situation depicted in panel A to panel B, intermediate levels of competitor activity can result in competitor-competitor coactivity levels falling into the dip of the U-shaped function. If enough competitor-competitor connections weaken, while competitor-shared connections strengthen, this imbalance can lead to an asymmetric form of integration where pairmate 2 moves toward pairmate 1 (see text for details). This happens in some runs of the 3/6 overlap condition.
 
+![Video 4.](https://cdn.elifesciences.org/articles/88608/elife-88608-video4.mp4.jpg)
+
+**Video 4.:** This video illustrates how integration can either be symmetric or asymmetric depending on the amount of competitor pop-up.
+
 Thus, two kinds of integration can occur — one where both pairmates pick up all units that initially belonged to either pairmate (symmetric), and one where pairmate 2 moves toward pairmate 1 (asymmetric). Generally, as competitor activity is raised, competitor-competitor coactivity is raised, and it is more likely the integration will become symmetric.
 
-## Differentiation
+#### Differentiation
 
 We found that differentiation requires a high learning rate. In our model, the change in connection weights on each trial is multiplied by a learning rate (LRate), which is usually set to 1. Lowering the LRate value, consequently, leads to smaller learning increments. When we cycle through LRate values for all projections other than the output-to-output connection (where LRate is zero), we find that differentiation fails to occur in the 2/6 condition if LRate is too low (Figure 6A): If the connections between competitor (pairmate 2) and shared units are not fully severed on Trial 1, the (formerly) shared units may still receive enough excitation to strongly activate when the model is asked to recall pairmate 2 on Trial 2. This can lead to two possible outcomes: Sometimes the activity pattern in the hidden layer ends up matching the original pairmate 2 representation (i.e. the shared units are co-active with the unique pairmate 2 units), resulting in a re-forming of the original representation. In other cases, asymmetric integration occurs: If connections between pairmate 2 units and shared units have weakened somewhat, while the connections between shared units and pairmate 1 units are still strong, then spreading activity from the (re-activated) shared units on Trial 2 can lead to the original pairmate 1 hidden-layer representation outcompeting the original pairmate 2 hidden-layer representation, in which case the pairmate 2 inputs will become associated with the original pairmate 1 hidden-layer representation. See Video 5 for illustrations of both possible outcomes. A useful analogy may be escape velocity from astrophysics. Spaceships need to be going a certain speed to escape the pull of gravity. Similarly, the competitor representation needs to get a certain distance away from its pairmate in one trial, or else it will get pulled back in.
 
@@ -186,39 +202,43 @@ We found that differentiation requires a high learning rate. In our model, the c
 
 **Figure 6.:** (A) The learning rate (LRate) parameter was adjusted and the within-pair correlation in the hidden layer was calculated for each overlap condition. In each plot, the gray horizontal bar indicates baseline similarity (prior to NMPH learning); values above the gray bar indicate integration and values below the gray bar indicate differentiation. Error bars indicate the 95% confidence interval around the mean (computed based on 50 model runs). The default LRate for simulations in this paper is 1. In the low overlap conditions (0/6 and 1/6), adjusting the LRate has no impact on representational change. In the 2/6 condition, differentiation does not occur if the LRate is lowered. In the high overlap conditions (3/6, 4/6, and 5/6), integration occurs regardless of the LRate (assuming it is set above zero). (B) For each LRate value tested, the within-pair correlation over time in the 2/6 condition is shown, where each purple line is a separate run (darker purple lines indicate many lines superimposed on top of each other). When LRate is set to 0.50 or higher, some model runs show abrupt, strong differentiation, resulting in negative within-pair correlation values; these negative values indicate that the hidden representation of one pairmate specifically excludes units that belong to the other pairmate.
 
+![Video 5.](https://cdn.elifesciences.org/articles/88608/elife-88608-video5.mp4.jpg)
+
+**Video 5.:** This video illustrates how differentiation can fail to occur when the learning rate is too low.
+
 A corollary of the fact that differentiation requires a high learning rate is that, when it does happen in the model, it happens abruptly. After competitor-shared connections are weakened, this can have two possible effects. If the learning rate is high enough to sever the competitor-shared connections, differentiation will be evident the next time the competitor is presented. If the amount of weakening is insufficient, the formerly shared units will be reactivated and no differentiation will occur. The abruptness of differentiation can be seen in Figure 6B, which shows learning across trials for individual model runs (with different random seeds) as a function of LRate: When the learning rate is high enough to cause differentiation, it always happens between the first and second epochs of training. The prediction that differentiation should be abrupt is also supported by empirical studies. For instance, Wanjia et al., 2021 showed that behavioral expressions of successful learning are coupled with a temporally abrupt, stimulus-specific decorrelation of CA3/dentate gyrus activity patterns for highly similar memories.
 
 In contrast to these results showing that differentiation requires a large LRate, the integration effects observed in the higher-overlap conditions do not depend on LRate. Once two items are close enough to each other in representational space to strongly coactivate, a positive feedback loop ensues: Any learning that occurs (no matter how small) will pull the competitor closer to the target, making them even more likely to strongly coactivate (and thus further integrate) in the future.
 
-## Pairs of items that differentiate show anticorrelated representations
+#### Pairs of items that differentiate show anticorrelated representations
 
 Figure 6B also highlights that, for learning rates where robust differentiation effects occur in aggregate (i.e. there is a reduction in mean pattern similarity, averaging across model runs), these aggregate effects involve a bimodal distribution across model runs: For some model runs, learning processes give rise to anticorrelated representations, and for other model runs the model shows integration; this variance across model runs is attributable to random differences in the initial weight configuration of the model and/or in the order of item presentations across training epochs. The aggregate differentiation effect is therefore a function of the proportion of model runs showing differentiation (here, anticorrelation) and the proportion of model runs showing integration. The fact that differentiation shows up as anticorrelation in the model’s hidden layer relates to the learning effects discussed earlier: Unique competitor units are sheared away from (formerly) shared units, so the competitor ends up not having any overlap with the target representation (i.e. the level of overlap is less than you would expect due to chance, which mathematically translates into anticorrelation). We return to this point and discuss how to test for anticorrelation in the Discussion section.
 
-## Take-home lessons
+### Take-home lessons
 
 Our model of Chanales et al., 2021 shows that the NMPH can explain the results observed in the study, namely that moderate color similarity can lead to repulsion and that, if color similarity is increased beyond that point, the repulsion is eliminated. Furthermore, our model shows how the behavioral changes in this paradigm are linked to differentiation and integration of the underlying neural representations. The simulations also enrich our NMPH account of these phenomena in several ways, beyond the verbal account provided in Ritvo et al., 2019. In particular, the simulations expose some important boundary conditions for when representational change can occur according to the NMPH (e.g. that differentiation depends on a large learning rate, but integration does not), and the simulations provide a more nuanced account of exactly how representations change (e.g. that differentiation driven by the NMPH is always asymmetric, whereas integration is sometimes asymmetric and sometimes symmetric; and that, when differentiation occurs on a particular model run, it tends to give rise to anticorrelated representations in the model’s hidden layer).
 
 There are several aspects of Chanales et al., 2021 left unaddressed by our model. For instance, they interleaved the color recall task (simulated here) with an associative memory test (not simulated here) where a colored object appeared as a cue and participants had to select the associated face. Our goal was to show how the simplest form of their paradigm could lead to the distortion effects that were observed; future simulations can assess whether these other experiment details affect the predictions of the model.
 
-## Model of Favila et al., 2016: similar and different predictive associations
+### Model of Favila et al., 2016: similar and different predictive associations
 
-## Key experimental findings
+#### Key experimental findings
 
 Favila et al., 2016 provided neural evidence for differentiation following competition, using a shared associate to induce competition between pairmates. In this study (Figure 7A), participants were instructed to learn scene-face associations. Later, during the repeated face-test task, participants were shown a scene and asked to pick the correct face from a bank of faces. Scenes were made up of highly similar pairs (e.g. two bridges, two barns). Sometimes, two paired scenes predicted the same face, sometimes different faces, and sometimes no face at all (in the latter case, the paired scenes appeared in the study task and not the face-test task). Participants were never explicitly told that some scene pairs shared a common face associate.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig7-v1.jpg)
 
-**Figure 7.:** Favila et al., 2016.(A) Participants learned to associate individual scenes with faces (faces not shown here due to bioRxiv rules). Each scene had a pairmate (another, similar image from the same scene category, e.g., another barn), and categories were not re-used across pairs (e.g. if the stimulus set included a pair of barns, then none of the other scenes would be barns). Pairmates could be associated with the same face, different faces, or no face at all (not shown). Participants were scanned while looking at each individual scene in order to get a measure of neural representations for each scene. This panel was adapted from Figure 1 of Favila et al., 2016. (B) Neural similarity was measured by correlating scene-evoked patterns of fMRI activity. A scene pair difference score was calculated by subtracting non-pairmate similarity from pairmate similarity; this measure shows the relative representational distance of pairmates. Results for the different-face and same-face condition in the hippocampus are shown here: Linking scenes to the same face led to a negative scene pair difference score, indicating that scenes became less similar to each other than they were to non-pairmates (differentiation). This panel was adapted from Figure 2 of Favila et al., 2016. (C) To model this study, we used the same basic structure that was described in Basic Network Properties. In this model, the category layer represents the type of scene (e.g. barn, bridge, etc.), and the item layer represents an individual scene. The output layer represents the face associate. Activity shown is for pairmate A in the same-face condition. Category-to-hidden, item-to-hidden and hidden-to-hidden connections are pre-wired similarly to the 2/6 condition of our model of Chanales et al., 2021 (see Figure 2). The hidden A and B units have random, low-strength connections to all output units, but are additionally pre-wired to connect strongly to either one or two units in the output layer. In the different-face condition, hidden A and B units are pre-wired to connect to two different face units, but in the same-face condition, they are pre-wired to connect to the same face unit. (D) This model has two conditions: same face and different face. The only difference between conditions is whether the hidden A and B units connect to the same or different face unit in the output layer.
+**Figure 7.:** (A) Participants learned to associate individual scenes with faces (faces not shown here due to bioRxiv rules). Each scene had a pairmate (another, similar image from the same scene category, e.g., another barn), and categories were not re-used across pairs (e.g. if the stimulus set included a pair of barns, then none of the other scenes would be barns). Pairmates could be associated with the same face, different faces, or no face at all (not shown). Participants were scanned while looking at each individual scene in order to get a measure of neural representations for each scene. This panel was adapted from Figure 1 of Favila et al., 2016. (B) Neural similarity was measured by correlating scene-evoked patterns of fMRI activity. A scene pair difference score was calculated by subtracting non-pairmate similarity from pairmate similarity; this measure shows the relative representational distance of pairmates. Results for the different-face and same-face condition in the hippocampus are shown here: Linking scenes to the same face led to a negative scene pair difference score, indicating that scenes became less similar to each other than they were to non-pairmates (differentiation). This panel was adapted from Figure 2 of Favila et al., 2016. (C) To model this study, we used the same basic structure that was described in Basic Network Properties. In this model, the category layer represents the type of scene (e.g. barn, bridge, etc.), and the item layer represents an individual scene. The output layer represents the face associate. Activity shown is for pairmate A in the same-face condition. Category-to-hidden, item-to-hidden and hidden-to-hidden connections are pre-wired similarly to the 2/6 condition of our model of Chanales et al., 2021 (see Figure 2). The hidden A and B units have random, low-strength connections to all output units, but are additionally pre-wired to connect strongly to either one or two units in the output layer. In the different-face condition, hidden A and B units are pre-wired to connect to two different face units, but in the same-face condition, they are pre-wired to connect to the same face unit. (D) This model has two conditions: same face and different face. The only difference between conditions is whether the hidden A and B units connect to the same or different face unit in the output layer.
 
 When the two scenes predicted different faces, the hippocampal representations for each scene were relatively orthogonalized — hippocampal representations of the two pairmate scenes were just as similar to each other as to non-pairmate scenes. However, when the two scenes predicted the same face, differentiation resulted, such that the hippocampal representations of the two pairmate scenes were less similar to each other than to non-pairmate scenes (Figure 7B).
 
-## Potential NMPH explanation
+#### Potential NMPH explanation
 
 As noted earlier, these results contradict supervised learning models, which predict that pairing two stimuli with the same associate would lead to integration, not differentiation. The NMPH, however, can potentially explain these results: Linking the pairmates to a shared face associate provides an additional pathway for activity to spread from the target to the competitor (i.e. activity can spread from scene A, to the shared face, to scene B). If competitor activity falls on the left side of the U-shaped function in the different-face condition, then the extra spreading activity in the same-face condition could push the activity of the competitor into the ‘dip’ of the function, leading to differentiation.
 
-## Model set up
+### Model set up
 
-## Model architecture
+#### Model architecture
 
 Our model of Chanales et al., 2021 can be adapted for Favila et al., 2016. Instead of mapping from an object and face to a color, as in Chanales et al., 2021, the Favila et al., 2016 study involves learning mappings between scenes and faces. Also, the way in which competition is manipulated is different across the studies: In Chanales et al., 2021, competition is manipulated by varying the similarity of the stimuli (specifically, the color difference of the objects), whereas in Favila et al., 2016, competition is manipulated by varying whether pairmate scenes are linked to the same vs. different face.
 
@@ -226,77 +246,93 @@ To adapt our model for Favila et al., 2016, the interpretation of each layer mus
 
 The output layer in this model represents the face associate, such that each individual output-layer unit could be thought of as a single face. For this model, the ordering of units in the output layer is not meaningful — two units next to each other in the output layer are no more similar than to any other units.
 
-## Knowledge built into the network
+#### Knowledge built into the network
 
 As before, we were interested in the moment that competition first happens, so we pre-wired connections as if some initial learning had occurred. We pre-wired the connections between the hidden layer and both input layers (and from hidden layer to itself) to be similar to the 2/6 condition of our model of Chanales et al., 2021, so there is some baseline amount of overlap between A and B (i.e. reflecting the similar-looking scenes).
 
 To mimic the learning of scene-face associates, all hidden A units are connected to a single unit in the face layer, and all hidden B units are connected to a single unit in the face layer. In the different-face condition, A and B hidden units are connected to different face units, to reflect that the two scenes were predictive of two separate faces. In the same-face condition, A and B hidden units connect to the same face unit, to reflect that A and B predict the same face.
 
-## Manipulation of competitor activity
+#### Manipulation of competitor activity
 
 Competitor activity is modulated by the similarity of predictive consequences in this version of the model — that is, whether the hidden units for pairmates A and B are pre-wired to connect strongly to the same unit or different units in the output layer. Stronger connections to the same face unit should provide an extra conduit for excitation to flow to the competitor units.
 
-## Task
+#### Task
 
 The task performed by the model was to guess the face associated with each scene. We clamped the external input for the scenes and allowed activity to spread through the hidden layer to the output layer so it could make a guess for the correct face. No correct answer was shown, and no error-driven learning was used. Although the exact parameter values used in this simulation were slightly different from the values used in the previous simulation (see Methods for details), inhibition and oscillations were implemented in the same way as before.
 
-## Results
+### Results
 
 For this study, the key dependent measure was representational change within the hidden layer. Specifically, we sought to capture the hippocampal pattern similarity results reported by Favila et al., 2016.
 
-## Differentiation and integration
+#### Differentiation and integration
 
 The different-face condition in this model led to no representational change (see Video 6) whereas the same-face condition led to differentiation (see Video 7), as measured using within-pair correlation (Figure 8A). Differentiation is indicated by the fact that new units are added that did not previously belong to either pairmate. In this version of the model, the topography of the hidden layer is not meaningful other than the units assigned to A and B, so the new units that are added to the representation could be on either side. The reason why the model shows differentiation in the same-face condition (but not in the different-face condition) aligns with the Potential NMPH Explanation provided earlier: The shared face associate in the same-face condition provides an conduit for extra activity to spread to the competitor scene pairmate, leading to moderate activity that triggers differentiation. Note also that the exact levels of differentiation that are observed in the different-face and same-face conditions are parameter dependent; for an alternative set of results showing some differentiation in the different-face condition (but still less than is observed in the same-face condition), see Figure 8—figure supplement 1.
 
-## Nature of representational change
+![Video 6.](https://cdn.elifesciences.org/articles/88608/elife-88608-video6.mp4.jpg)
+
+**Video 6.:** This video illustrates how no representational change occurs in the different face condition of our simulation of Favila et al., 2016.
+
+![Video 7.](https://cdn.elifesciences.org/articles/88608/elife-88608-video7.mp4.jpg)
+
+**Video 7.:** This video illustrates how differentiation occurs in the same face condition of our simulation of Favila et al., 2016.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig8-v1.jpg)
+
+**Figure 8.:** (A) Within-pair correlation between A and B hidden layer representations before and after learning. Error bars indicate the 95% confidence interval around the mean (computed based on 50 model runs). In the same-face condition, the within-pair correlation is reduced after learning, indicating differentiation. (B) Activity patterns of both pairmates in the hidden layer before and after learning for a sample “same-face” run are shown. Asymmetry in distortion can be seen in how pairmate 1’s representation is unchanged and pairmate 2 picks up additional units that did not previously belong to either item (note that there is no topography in the hidden layer in this simulation, so we would not expect the newly-acquired hidden units to fall on one side or the other of the layer). (C) MDS plots for each condition illustrate representational change in the hidden layer. The differentiation in the same-face condition is asymmetric: Pairmate 2after generally moves further away from pairmate 1 in representational space, while pairmate 1 generally does not change.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Results from our model of Favila et al., 2016, using an alternative parameterization where the oscillation amplitude Osc for the hidden layer is set to 0.1 instead of 0.067: (A) Within-pair correlation between A and B hidden layer representations before and after learning. Error bars indicate the 95% confidence interval around the mean (computed based on 50 model runs). Compare with Figure 8A. When Osc is set to 0.1, both the different-face and same-face conditions show a reduction in pattern similarity compared to baseline, but the size of this decrease is larger in the same-face condition. This pattern of results qualitatively aligns with the actual results observed by Favila et al., 2016. (B) Plots of the within-pair correlation across learning epochs, shown separately for the different-face and same-face conditions. Each purple line is a separate run of the model (darker purple lines indicate many lines superimposed on top of each other). The plots show that individual model runs exhibit one of three discrete outcomes (integration, reflected by a within-pair correlation of 1; no change; or differentiation, reflected by a negative within-pair correlation). The differences in average levels of representational change shown in part (A) for the same-face and different-face conditions are due to differences in the frequencies-of-occurrence of these three discrete outcomes.
+
+#### Nature of representational change
 
 The representational change in the hidden layer shows the same kind of asymmetry that occurred in our model of Chanales et al., 2021; Figure 8B and C: In the same-face condition, pairmate 1 typically anchors in place, whereas pairmate 2 acquires new units that did not previously belong to either either pairmate (Figure 8B), resulting in it shifting away from pairmate 1 (Figure 8C). Although this pattern is present on most runs, the MDS plot also shows that some runs fail to differentiate and instead show integration (see the Discussion for an explanation of how conditions that usually lead to differentiation may sometimes lead to integration instead). Note that the neural measure of differentiation used by Favila et al., 2016 does not speak to the question of whether representational change was symmetric or asymmetric in their experiment — to measure the (a)symmetry of representation change, it is necessary to take ‘snapshots’ of the representations both before and after learning (e.g. Schapiro et al., 2012), but the method used by Favila et al., 2016 only looked at post-learning snapshots (comparing the neural similarity of pairmates and non-pairmates). We return in the Discussion to this question of how to test predictions about asymmetric differentiation.
 
 Figure 8—figure supplement 1 also indicates that, as in our simulation of Chanales et al., 2021, individual model runs where differentiation occurs show anticorrelation between the pairmate representations, and gradations in the aggregate level of differentiation that is observed across conditions reflect differences in the proportion of trials showing this anticorrelation effect.
 
-## Differentiation requires a high learning rate
+#### Differentiation requires a high learning rate
 
 As in our model of Chanales et al., 2021, we again found that a high LRate is needed for differentiation. Specifically, lowering LRate below its standard value (e.g, to a value of 0.10) eliminated the differentiation effect in the same-face condition. Changing the learning rate did not impact the different-face condition. In this condition, the pop-up is low enough that all competitor-shared connections on Trial 1 fall on the left side of the U-shaped function, so no weight change occurs, regardless of the learning rate setting.
 
-## Take-home lessons
+### Take-home lessons
 
 This simulation demonstrates that the NMPH can explain the results of Favila et al., 2016, where learning about stimuli that share a paired associate can lead to differentiation. The model shows how linking items with the same or different associates can modulate competitor activity and, through this, modulate representational change. As in our simulation of Chanales et al., 2021, we found that the NMPH-mediated differentiation was asymmetric, manifested as anticorrelation between pairmate representations on individual model runs, and required a high learning rate, leading to abrupt representational change.
 
-## Model of Schlichting et al., 2015: blocked and interleaved learning
+### Model of Schlichting et al., 2015: blocked and interleaved learning
 
-## Key experimental findings
+#### Key experimental findings
 
 For our third simulation, we focused on a study by Schlichting et al., 2015. This study examined how the learning curriculum affects representational change in different brain regions. Participants learned to link novel objects with a common associate (i.e. AX and BX). Sometimes these associates were presented in a blocked fashion (all AX before any BX) and sometimes they were presented in an interleaved fashion (Figure 9A).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig9-v1.jpg)
 
-**Figure 9.:** Schlichting et al., 2015.(A) Participants in Schlichting et al., 2015 learned to link novel objects with a common associate (i.e., AX and BX). Sometimes these associates were learned in a blocked design (i.e. all AX before any BX), and sometimes they were learned in an interleaved design. The items were shown side-by-side, and participants were not explicitly told the structure of the shared items. Before and after learning, participants were scanned while observing each item alone, in order to get a measure of the neural representation of each object. This panel was adapted from Figure 1 of Schlichting et al., 2015. (B) Some brain regions (e.g. right posterior hippocampus) showed differentiation for both blocked and interleaved conditions, some regions (e.g. left mPFC) showed integration for both conditions, and other regions (e.g. right anterior hippocampus) showed integration in the blocked condition but differentiation in the interleaved condition. This panel was adapted from Figures 3, 4 and 5 of Schlichting et al., 2015. (C) To model this study, we used the network structure described in Basic Network Properties, with the following modifications: The structure of the network was similar to the same-face condition in our model of Favila et al., 2016 (see Figure 7), except we altered the connection strength from units in the hidden layer to the output unit corresponding to the shared item (item X) to simulate what would happen depending on the learning curriculum. In both conditions, the pre-wired connection linking the item B hidden units to the item X output unit is set to .7. In the interleaved condition, the connection linking the item A hidden units to the item X output unit is set to .8, to reflect some amount of initial AX learning. In the blocked condition, the connection linking the item A hidden units to the item X output unit is set a higher value (0.999), to reflect extra AX learning. (D) Illustration of the input and output patterns, which were the same for the blocked and interleaved conditions (the only difference in how we modeled the conditions was in the initial connection strengths, as described above).
+**Figure 9.:** (A) Participants in Schlichting et al., 2015 learned to link novel objects with a common associate (i.e., AX and BX). Sometimes these associates were learned in a blocked design (i.e. all AX before any BX), and sometimes they were learned in an interleaved design. The items were shown side-by-side, and participants were not explicitly told the structure of the shared items. Before and after learning, participants were scanned while observing each item alone, in order to get a measure of the neural representation of each object. This panel was adapted from Figure 1 of Schlichting et al., 2015. (B) Some brain regions (e.g. right posterior hippocampus) showed differentiation for both blocked and interleaved conditions, some regions (e.g. left mPFC) showed integration for both conditions, and other regions (e.g. right anterior hippocampus) showed integration in the blocked condition but differentiation in the interleaved condition. This panel was adapted from Figures 3, 4 and 5 of Schlichting et al., 2015. (C) To model this study, we used the network structure described in Basic Network Properties, with the following modifications: The structure of the network was similar to the same-face condition in our model of Favila et al., 2016 (see Figure 7), except we altered the connection strength from units in the hidden layer to the output unit corresponding to the shared item (item X) to simulate what would happen depending on the learning curriculum. In both conditions, the pre-wired connection linking the item B hidden units to the item X output unit is set to .7. In the interleaved condition, the connection linking the item A hidden units to the item X output unit is set to .8, to reflect some amount of initial AX learning. In the blocked condition, the connection linking the item A hidden units to the item X output unit is set a higher value (0.999), to reflect extra AX learning. (D) Illustration of the input and output patterns, which were the same for the blocked and interleaved conditions (the only difference in how we modeled the conditions was in the initial connection strengths, as described above).
 
 The analysis focused on the hippocampus, the medial prefrontal cortex (mPFC), and the inferior frontal gyrus (IFG). Some brain regions (e.g. right posterior hippocampus) showed differentiation for both blocked and interleaved conditions, some regions (e.g. left mPFC) showed integration for both conditions, and others (e.g. right anterior hippocampus) showed integration in the blocked condition but differentiation in the interleaved condition (Figure 9B).
 
-## Potential NMPH explanation
+### Potential NMPH explanation
 
 The NMPH can potentially explain how the results differ by brain region, since the overall level of inhibition in a region can limit the competitor’s activity. For instance, regions that tend to show differentiation (like posterior hippocampus) have sparser activity (Barnes et al., 1990). Higher inhibition in these areas could cause the activity of the competitor to fall into the moderate range, leading to differentiation. For regions with lower inhibition, competitor activity may fall into the high range, leading to integration.
 
 The result that some regions (e.g. right anterior hippocampus) show differentiation in the interleaved condition and integration in the blocked condition could also be explained by the NMPH. By the first BX trial, we would expect that the connections between A and X would be much stronger in the blocked condition (after many AX trials) compared to the interleaved condition (after one or a few AX trials). This stronger A-X connection could allow more activity to flow from B through X to the A competitor. Consequently, competitor activity in the blocked condition would fall farther to the right of the U-shaped function compared to the interleaved condition, allowing for integration in the blocked condition but differentiation in the interleaved condition.
 
-## Model set up
+### Model set up
 
-## Model architecture
+#### Model architecture
 
 In Schlichting et al., 2015, A, B, and X were all individual pictures of objects shown in the same fashion; the only difference is that X was paired with two distinct items (A and B) but A and B were only paired with one other item (X). We decided to represent A and B pairmates in the input layer and X as a single unit in the output layer. Concretely, we represented A and B in the input layer by having a unique (single) unit in the item layer for each of A and B; the same (single) unit is active in the category layer for both stimuli (it can be thought of as representing the category of ‘novel objects’ to which both A and B belong). Putting A and B in the same layer, where their representations directly compete, captures the fact that A and B were mutually exclusive (i.e. they were never viewed together). Putting X in a different layer made it easier for the model to represent X at the same time as A or B. Note that, because connections in the model are bidirectional and symmetric in strength, the X output was able to influence activity elsewhere in the network, which proves to be critical for the learning effects described below. This approach also makes the isomorphism to Favila et al., 2016 clearer — just as a shared face associate in that study served as a conduit for activity to spread to the scene pairmate, the shared X object associate in Schlichting et al., 2015 serves as a conduit for activity to spread between B and A pairmates.
 
-## Knowledge built into the network
+#### Knowledge built into the network
 
 The connections between layers for this model are similar to the connections we used in the same-face condition in our model of Favila et al., 2016. Since both A and B have a shared associate (X), all hidden A and B units are connected to the same unit in the output layer. However, we adjusted the connection strength to the shared X unit in order to simulate blocked or interleaved learning (see Figure 9C caption for details).
 
 Matching the previous two simulations, we pretrained the weights so the hidden representations of the stimuli initially had 2/6 units in common. Even though the A and B stimuli used in the actual experiment did not have obvious feature overlap (they were randomly selected novel objects), it is important to note that the hidden layer is not simply a representation of the sensory features of the A and B stimuli; the hidden layer also receives input from the output layer, which represents the shared associate of A and B (X). We think that the presence of this shared associate justifies our use of initially-overlapping hidden representations.
 
-## Modulation of competitor activity
+#### Modulation of competitor activity
 
 We hypothesized that competition would be modulated by the blocked vs. interleaved manipulation. If AX and BX are learned in a blocked design, then the connections between A (in the hidden layer) and X (in the output layer) will be stronger before the first BX trial than in the interleaved condition. That extra strength can provide a pathway for more excitation to flow from X to A during BX trials. In our simulations, we operationalized this difference by varying the strength of the connection between A units (in the hidden layer) and X units (in the output layer; see Figure 9 caption for details).
 
-## Task
+#### Task
 
 External inputs corresponding to the A or B stimuli (given by the two input layers) are clamped, and activity is allowed to flow through the hidden layer to the output layer, producing a guess of its associate. This deviates somewhat from the task in the original study, which showed AX or BX stimuli side-by-side. We could have clamped the X external values so it would be shown rather than guessed, but we decided to let the activity flow through the network to be consistent with the other versions of our model. This change does not have any impact on the outcome of the simulation — X ends up being strongly active here even though it is not being externally clamped, so the dynamics of activity elsewhere in the network (and the resulting learning) end up the same as if external clamping had been applied.
 
@@ -304,35 +340,51 @@ In the blocked condition, we assume AX has been fully learned, so we start with 
 
 Although the exact values of parameters used in this simulation were slightly different than the values used in the previous simulations (see Methods for details), inhibition and oscillations were implemented in the same manner as before.
 
-## Modulation of inhibitory dynamics
+#### Modulation of inhibitory dynamics
 
 For this version of our model, we added an extra manipulation. To model the fact that some brain regions showed overall differentiation and others overall integration, we varied the amplitude of the inhibitory oscillations in the hidden layer. If the amplitude of the sinusoidal function on inhibition is larger (or smaller), then the competitor is allowed to pop up more (or less), affecting the outcome of learning. We first present results from a version of the model where the amplitude is set to an intermediate level (0.0623); we also present results from model variants where we allowed less competitor pop-up (by lowering the oscillation amplitude to 0.0535) and more competitor pop-up (by raising the oscillation amplitude to 0.09), in order to simulate representational change in brain regions that have more or fewer restrictions on competitor activity.
 
 ## Results
 
-## Differentiation and integration
+### Differentiation and integration
 
 Examining the correlation between the hidden-layer representations of A and B, we found that the interleaved condition leads to differentiation (see Video 8) whereas the blocked condition (where the AX connection is stronger) leads to integration (see Video 9; Figure 10A). The reason why the model shows this pattern of results aligns with the Potential NMPH Explanation provided earlier: Because the X output unit is more strongly connected to A’s hidden-layer representation in the blocked condition, more activity spreads from B via X to A in the blocked condition. This increased competitor activity results in the two representations integrating (as opposed to differentiating).
 
+![Video 8.](https://cdn.elifesciences.org/articles/88608/elife-88608-video8.mp4.jpg)
+
+**Video 8.:** This video illustrates how differentiation occurs in the interleaved condition of our simulation of Schlichting et al., 2015.
+
+![Video 9.](https://cdn.elifesciences.org/articles/88608/elife-88608-video9.mp4.jpg)
+
+**Video 9.:** This video illustrates how integration occurs in the blocked condition of our simulation of Schlichting et al., 2015.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig10-v1.jpg)
+
+**Figure 10.:** (A) Within-pair correlation between hidden-layer A and B representations is shown before and after learning; here, the oscillation amplitude Osc was set to 0.0623. In the interleaved condition, the within-pair correlation is reduced after learning, indicating differentiation. In the blocked condition, the within-pair correlation increases, indicating integration. (B) Activity patterns of both pairmates in the hidden layer before and after learning are shown for a sample run in the interleaved condition. Asymmetry in distortion can be seen in how pairmate 2, but not pairmate 1, picks up additional units that did not previously belong to either representation. (C) MDS plots for each condition illustrate the pattern of representational change in the hidden layer. In the blocked condition, the pairmates integrate and move toward each other. This integration is mostly symmetric, but on many trials it is asymmetric: Pairmate 2 moves toward pairmate 1 rather than pairmates 1 and 2 meeting in the middle. In the interleaved condition, asymmetric differentiation occurs: Pairmate 2 moves away from pairmate 1. (D) To investigate how these results might vary across brain regions with different inhibitory dynamics, we manipulated the inhibitory oscillation amplitude to change the amount of competitor pop-up. No parameters other than the inhibitory oscillation amplitude were changed. When oscillation amplitude is reduced to 0.0525, less competitor pop-up happens, and the blocked, but not interleaved, condition leads to differentiation. When oscillation amplitude is raised to 0.09, more competitor pop-up happens, and both conditions lead to integration. For panels A and D, error bars indicate the 95% confidence intervals around the mean (computed based on 50 model runs).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Results from our model of Schlichting et al., 2015, using an alternative parameterization where the connection strength between X (in the output layer) and A (in the hidden layer) is set to 0.9 in the blocked condition (instead of 0.999). (A) Within-pair correlation between hidden-layer A and B representations is shown before and after learning; here, the oscillation amplitude Osc was set to 0.0635. In the interleaved condition, the within-pair correlation is reduced after learning, indicating differentiation. In the blocked condition, the within-pair correlation increases, indicating integration. (B) Activity patterns of both pairmates in the hidden layer before and after learning are shown for a sample run in the interleaved condition. Asymmetry in distortion can be seen in how pairmate 2, but not pairmate 1, picks up additional units that did not previously belong to either representation. (C) MDS plots for each condition illustrate the pattern of representational change in the hidden layer. In the blocked condition, the pairmates integrate and move toward each other on most (but not all) trials — a subset of the trials show differentiation. In the interleaved condition, differentiation occurs on most (but not all) trials — a subset of the trials show integration. (D) To investigate how these results might vary across brain regions with different inhibitory dynamics, we manipulated the inhibitory oscillation amplitude to change the amount of competitor pop-up. No parameters other than the inhibitory oscillation amplitude were changed. When oscillation amplitude is reduced to 0.0615, less competitor pop-up happens, and here this results in both conditions showing differentiation (compare to our original results in Figure 10D, where differentiation occurred in the blocked condition but not the interleaved condition). When oscillation amplitude is raised to 0.07, more competitor pop-up happens, and both conditions lead to integration. For panels A and D, error bars indicate the 95% confidence intervals around the mean (computed based on 100 model runs).
+
 Note that the key feature driving integration in the blocked condition of this simulation is not the high strength of the connection from X to A on its own — rather, it is the asymmetry in the pretrained connection strengths from X to A (0.999) and from X to B (0.7). This asymmetry, which is meant to reflect the extensive training on A-X that occurred before the initial presentation of B-X, results in the A-X hidden representation decisively winning the competition during B-X presentation, which then leads to the B input also being linked to this representation (i.e. integration). It is instructive to compare this to the same-face condition from our simulation of Favila et al., 2016: In that simulation, the two pairmates are also linked strongly (0.99 initial connection strength) to a shared associate, but in that case the connections are equally strong, so there is more balanced competition — in this case, the competitor representation only comes to mind moderately (instead of displacing the target representation), so the result is differentiation instead of integration.
 
-## Nature of representational hange
+#### Nature of representational hange
 
 The results of this simulation again indicate that differentiation is asymmetric. Figure 10B shows a single run in the interleaved condition: Pairmate 1 anchors in place and pairmate 2 picks up units that did not previously belong to either representation. The MDS plot (Figure 10C) shows how, in the interleaved condition, pairmate 2 consistently shifts away from pairmate 1. Also, as in our other simulations, when differentiation occurs on a particular model run it tends to give rise to anticorrelated representations (results not shown).
 
 The MDS results from the blocked condition show that integration is mostly symmetric, but there are many runs that show asymmetric integration (just like in the 3/6 condition of our model of Chanales et al., 2021). The reason for asymmetric integration is the same here: Sometimes not all of the competitor-competitor coactivity values reach the right side of the U-shaped function, and connections that fall into the ‘dip’ of the U-shaped function are weakened. When these competitor-competitor connections weaken and the competitor-shared connections strengthen, this imbalance can cause pairmate 2 to flip from its original representation to sharing pairmate 1’s original representation.
 
-## Differentiation requires a high learning rate, but integration does not
+#### Differentiation requires a high learning rate, but integration does not
 
 Just as in our previous simulations, a high learning rate is needed for differentiation. Specifically, lowering LRate below its standard value (e.g. to a value of 0.1) eliminated differentiation in the interleaved condition. Lowering the learning rate to 0.1 did not, however, eliminate the integration observed in the blocked condition.
 
-## Adjusting oscillation amplitude modulates representational change
+#### Adjusting oscillation amplitude modulates representational change
 
 In this model, we additionally adjusted the amplitude of inhibitory oscillations, to simulate different inhibitory dynamics across brain regions (Figure 10D). When the competitor was less able to activate (as a result of smaller inhibitory oscillations), only the blocked condition led to differentiation. When the competitor was allowed to activate more (because of larger inhibitory oscillations), both conditions led to integration. Figure 10—figure supplement 1 shows results from an alternative parameterization where, in the low-oscillation-amplitude condition, differentiation is observed in both the blocked and interleaved conditions (mirroring results from Schlichting et al., 2015, who found differentiation in both conditions in several regions of interest, including parts of the hippocampus and medial prefrontal cortex). Taken together, these simulations provide an ‘in principle’ account of how differences in levels of inhibition across brain regions can modulate representational change.
 
 It is worth emphasizing that — in this simulation, as in our simulation of Chanales et al., 2021 — manipulations that raise competitor activity (here, increasing oscillation strength) are associated with a transition from no representational change to differentiation to integration; this is a straightforward consequence of the U shape of the NMPH curve. Notably, this appears to be inconsistent with some recent results from Molitor et al., 2021, who used a paradigm similar to Schlichting et al., 2015 and measured competitor activity with a multivariate fMRI pattern classifier. Molitor et al., 2021 found that — in a combined DG / CA2,3 hippocampal ROI — lower levels of competitor activity were associated with integration and higher levels of competitor activity were associated with differentiation. Although there are several potential ways that any single finding of this sort could be explained away (see e.g., Tarder-Stoll et al., 2021), such a pattern of results could prove troublesome for the model if it turns out to be reliable across studies.
 
-## Take-home lessons
+### Take-home lessons
 
 This version of our model shows that the NMPH can account for the results of Schlichting et al., 2015, where the learning curriculum (blocked or interleaved) had been shown to affect representational change. Additionally, the model reveals how the inhibitory dynamics of different brain regions can affect these outcomes. As in the other versions of our model, differentiation requires a high learning rate, and — on model runs when it occurs — it is asymmetric and gives rise to anticorrelated representations.
 
@@ -342,7 +394,7 @@ Recent studies have presented a challenge to supervised learning models, showing
 
 Our model provides an existence proof that a network imbued with NMPH learning can explain these findings. Using unsupervised NMPH learning alone, we showed how: (1) Increasing the similarity of color memories leads progressively to a repulsion effect and then an attraction effect; (2) pairing two stimuli with the same associate can lead to differentiation; and (3) learning in an interleaved vs. blocked fashion can lead to differentiation and integration, respectively, and that changing inhibitory dynamics can affect these outcomes. In addition to qualitatively replicating the results from the studies we simulated, our model gives rise to several novel predictions — most notably, that differentiation driven by the NMPH requires a rapid learning rate, and when it occurs for a particular pair of items, it is asymmetric and gives rise to anticorrelated representations.
 
-## Differentiation requires a high learning rate and is sensitive to activity dynamics
+### Differentiation requires a high learning rate and is sensitive to activity dynamics
 
 Our model predicts that a high learning rate is required for differentiation: As shown in our simulation of Chanales et al., 2021, if connections between the unique features of the competitor and the (formerly) shared features are not sufficiently weakened after one trial, the shared features will be strongly reactivated when the competitor is next presented; in the model, this reactivation of shared features leads to either restrengthening of the previously weakened connections (‘undoing’ the differentiation) or integration of the target and competitor memories.
 
@@ -358,7 +410,7 @@ One way to address this problem would be to model each item’s repulsion timeco
 
 Although the results from Wanjia et al., 2021 provide strong support for the model’s prediction that differentiation will be abrupt, they raise another question: What explains variance across items in when this abrupt change takes place? The answer to this question remains to be seen, but one possibility is encoding variability: If we assume that participants stochastically sample (i.e. attend to) the features of the scene pairmates, it is possible that participants might initially fail to sample the features that distinguish the scene pairmates, which can be quite subtle — and if the distinguishing features of the pairmates are not represented in high-level visual regions (i.e. the pairmates are represented in these regions as having the same features), this could delay the onset of differentiation until the point at which the distinguishing features happen (by chance) to be sampled.
 
-## Asymmetry of representational change
+### Asymmetry of representational change
 
 Our model predicts that representational change will often be asymmetric. Specifically, the model predicts that differentiation will always be asymmetric, such that the item that first pops up as a competitor is the one that distorts. By contrast, integration in the model is sometimes symmetric and sometimes asymmetric (such that the hidden-layer representation of one item flips to the hidden-layer representation of the other).
 
@@ -370,15 +422,15 @@ Another way to test the model’s prediction about asymmetry, without having to 
 
 The asymmetry of differentiation also has implications for how to measure behavioral repulsion effects, even when one is not trying to detect asymmetry. In paradigms like Chanales et al., 2021, our model predicts that only one item in each pair will repel. This implies that, if you measure differentiation by looking at all items (i.e. both items in a pair), you will be averaging across the pairmate that moved and the pairmate that stayed put, weakening the measured effect. Statistically, it is more powerful to use designs where there is a way of predicting a priori which item will shift and which will anchor, so you can focus on the subset of items that shift without diluting the analysis by including items that anchor.
 
-## Testing the model’s prediction about anticorrelation
+### Testing the model’s prediction about anticorrelation
 
 Even though we operationally define differentiation as a reduction in similarity with learning, the way that it actually shows up on individual model runs is as anticorrelation between pairmates; in the model, the size of the aggregate differentiation effect is determined by the proportion of model runs that show this anticorrelation effect (vs. no change or integration). This implies that, if we could get a clean measurement of the similarity of pairmates in an experiment, we might see a multimodal distribution, with some pairmates showing anticorrelation, and others showing increased correlation (integration) or no change in similarity. This kind of clean readout of the similarity of individual pairs might be difficult to obtain with fMRI; it is more feasible that this could be obtained with electrophysiology. Another challenge with using fMRI to test this prediction is that anticorrelation at the individual-neuron level might not scale up to yield anticorrelation at the level of the BOLD response; also, fMRI pattern similarity values can be strongly affected by preprocessing choices — so a negative pattern similarity value does not necessarily reflect anticorrelation at the individual-neuron level. A final caveat is that, while we predict that differentiation will show up as anticorrelation in the brain region that gives rise to the differentiation effect, this might not translate into anticorrelation in areas that are downstream of this region (e.g. if the hippocampus is the source of the differentiation effect, we would expect anticorrelation there, but not necessarily in neocortical regions that receive input from the hippocampus; we revisit this point later in the Discussion, when we address limitations and open questions).
 
-## Reconciling the prevalence of differentiation in the model and in the data
+### Reconciling the prevalence of differentiation in the model and in the data
 
 A key lesson from our model is that, from a computational perspective, it is challenging to obtain differentiation effects: The region of parameter space that gives rise to differentiation is much smaller than the one that gives rise to integration (for further discussion of this issue, see the section in Methods on Practical advice for getting the model to show differentiation). However, the fact that integration is more prevalent in our simulations across parameter configurations does not mean that integration will be more prevalent than differentiation in real-life circumstances. What really matters in predicting the prevalence of differentiation in real life is how the parameters of the brain map on to parameters of the model: If the parameters of the brain align with regions of model parameter space that give rise to differentiation (even if these regions are small), this would explain why differentiation has been so robustly observed in extant studies. Indeed, this is exactly the case that we sought to make above about the hippocampus — that is its use of especially sparse coding and a high learning rate will give rise to the kinds of neural dynamics that cause differentiation (as opposed to integration). As another example, while it is true that half of the overlap conditions in our simulation of Chanales et al., 2021 give rise to integration, this does not imply that integration will occur half of the time in the Chanales et al., 2021 study; it may be that the levels of overlap that are actually observed in the brain in Chanales et al., 2021 are more in line with the levels of overlap that give rise to differentiation in our model.
 
-## Limitations and open questions
+### Limitations and open questions
 
 Our model can account for differentiation and integration across several scenarios. We think this provides important computational support for the NMPH explanation of representational change, and useful predictions for future work. Nonetheless, there are several ways our model can be extended in the future.
 
@@ -394,17 +446,17 @@ Another important future direction is to apply the model to a wider range of lea
 
 Yet another direction to explore is how cognitive control and attention modulate representational change. The simulations described in this paper provide an existence proof of how — if the conditions are right (e.g. moderate competitor activity, suitably high learning rate) — differentiation can occur automatically, without participants having to deliberately focus their attention on discriminative features of the pairmates. However, it is surely the case that attention can modulate these learning effects (Amer and Davachi, 2023; see the Practical advice section in the Methods for a brief discussion of this point).
 
-## Summary
+### Summary
 
 The model presented in this paper provides a concrete computational instantiation of the NMPH account of representational change set forth in Ritvo et al., 2019. By modulating competitor activity in different ways (by varying stimulus similarity, presence of shared associates, learning curriculum, and inhibitory dynamics) and tracking how this affects learning, our model serves several purposes: It provides an existence proof of how the NMPH can explain otherwise-puzzling findings regarding representational change (e.g. why linking to a shared associate can promote differentiation); it provides principled new explanations of certain patterns in the literature (e.g. why differentiation is more frequently observed in the hippocampus than in neocortex); and it makes novel, testable predictions (e.g. regarding the asymmetry of differentiation). Although more work remains to be done to explore the consequences of this U-shaped learning function for representational change, we hope our model can be useful in framing future modeling and empirical research on learning.
 
 ## Methods
 
-## Model architecture
+### Model architecture
 
 We built our computational model using the Leabra algorithm (O’Reilly, 2012) within the Emergent neural network simulation software (Aisa et al., 2008), which is written in the programming language Go. We constructed the model as described in Basic Network Properties, and adapted the parameters to model the three individual studies.
 
-## Approach to parameterization and data fitting
+### Approach to parameterization and data fitting
 
 The overall goal of this modeling work is to account for key empirical regularities regarding differentiation and integration and to establish boundary conditions on these regularities. As such, the modeling work described below focuses more on qualitative fits to general properties of the data space than on quantitative fits to results from specific studies. Automatic parameter optimization is not feasible for this kind of model, given the large number of model parameters and the highly interactive, nonlinear nature of competitive dynamics in the model; consequently, model fitting was done by hand.
 
@@ -414,37 +466,286 @@ While the core model architecture and dynamics were the same for all three simul
 
 To generate the results shown in the figures here, we ran the model 50 times, each time starting with a different random seed. Results plots show the mean level of performance across model runs and the 95% confidence interval around the mean.
 
-## Activity and inhibitory dynamics
+#### Activity and inhibitory dynamics
 
 Emergent simplifies the discrete on-off firing of individual neurons into a rate code approximation where a unit’s activity can range from 0 to 1; this rate code reflects the unit’s current level of excitatory and inhibitory inputs. A given unit M’s excitatory input is a function of the activity of all other units N connected to it, weighted by the strengths of the connections between the N units and M. The function relating excitatory input to activity (after accounting for inhibition; see below and O’Reilly, 2012) is S-shaped and bounded between 0–1, where the steepness of the function is modulated by a gain factor. Lowering the gain creates a more graded response, which enables moderate pop up of competitor units. The gain for each layer is written in Table 1 (XX1 Gain), along with the other activity and inhibitory parameters for these models. When an external input is clamped to a layer, the external input is multiplied by a Clamp Gain factor, which modulates how strongly it should contribute to activity compared to other excitatory inputs that the unit is receiving (from elsewhere in the network).
 
-A unit’s activity is also modulated by the inhibitory dynamics in the layer. We implemented inhibition using a variant of the k-winners take all (kWTA) algorithm (O’Reilly and Munakata, 2000). This algorithm imposes a ‘set point’-like behavior on inhibition, ensuring that at most k units are allowed to activate in a layer. In the standard version of the kWTA algorithm, the units in a layer are ranked in terms of the amount of inhibition that would be needed to put that unit at the threshold of activating, given its current excitatory input. Then, inhibition is set such that only the k highest-ranked units are able to reach the activity threshold.
+**Table 1.**
+ Parameters for layer inhibitory and activity dynamics.kWTA Point = a value between 0 and 1, which indicates how far toward the $k+1^{th}$ unit to place the current inhibitory level (the higher kWTA Point, the lower the inhibition value). Target Diff = the threshold for determining whether units after the $k^{th}$ unit should be allowed to be active (see text). Osc = the amplitude of the oscillation function that multiplies the overall inhibition level of the layer. Note that for the model of Schlichting et al., 2015, we tested three different hidden-layer oscillation amounts: 0.0623, 0.0525 and 0.09. XX1 Gain = the multiplier on the S-shaped activity function, where lower values means that activity will be more graded. Clamp Gain multiplies the external input, modifying how strongly it contributes to the activity of the layer.
 
-In our simulations, we adjusted the kWTA algorithm to give the model the ability to activate more than k units in certain circumstances (Figure 11). This flexibility is helpful for integration: Allowing more than k units to be active makes it possible for the model to incorporate units from both pairmates into the new, integrated representation. To provide this flexibility, we adjusted the kWTA algorithm to allow units that are tied in the ranking (within a threshold amount reflected by the Target Diff parameter) to activate as well. We also included a cap on the total number of units allowed to activate even with the tie (reflected by the K_Max parameter). So if k=6 and K_Max=10, the top 6 units will be allowed to activate, as well as optionally any units beyond the top 6 that are tied (within some threshold specified by Target Diff), but no more than 10 units can be active.
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Layer</th>
+      <th>K</th>
+      <th>K Max</th>
+      <th>kWTA Point</th>
+      <th>Target Diff</th>
+      <th>Osc</th>
+      <th>XX1 Gain</th>
+      <th>Clamp Gain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chanales</td>
+      <td>Output</td>
+      <td>6</td>
+      <td>15</td>
+      <td>0.95</td>
+      <td>0.05</td>
+      <td>0.115</td>
+      <td>30</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Hidden</td>
+      <td>6</td>
+      <td>10</td>
+      <td>0.75</td>
+      <td>0.03</td>
+      <td>0.11</td>
+      <td>100</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Category</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.75</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Item</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.95</td>
+      <td>0.2</td>
+      <td>0.22</td>
+      <td>100</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Output</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.75</td>
+      <td>0.03</td>
+      <td>0.07</td>
+      <td>100</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Hidden</td>
+      <td>6</td>
+      <td>10</td>
+      <td>0.8</td>
+      <td>0.02</td>
+      <td>0.067</td>
+      <td>100</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Category</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.75</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Item</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.95</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>100</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Output</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.75</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>100</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Hidden</td>
+      <td>6</td>
+      <td>10</td>
+      <td>0.8</td>
+      <td>0.02</td>
+      <td>0.0623</td>
+      <td>100</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Category</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.75</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Item</td>
+      <td>1</td>
+      <td>∞</td>
+      <td>0.95</td>
+      <td>0.2</td>
+      <td>0.156</td>
+      <td>100</td>
+      <td>0.3</td>
+    </tr>
+  </tbody>
+</table>
+
+A unit’s activity is also modulated by the inhibitory dynamics in the layer. We implemented inhibition using a variant of the k-winners take all (kWTA) algorithm (O’Reilly and Munakata, 2000). This algorithm imposes a ‘set point’-like behavior on inhibition, ensuring that at most $k$ units are allowed to activate in a layer. In the standard version of the kWTA algorithm, the units in a layer are ranked in terms of the amount of inhibition that would be needed to put that unit at the threshold of activating, given its current excitatory input. Then, inhibition is set such that only the $k$ highest-ranked units are able to reach the activity threshold.
+
+In our simulations, we adjusted the kWTA algorithm to give the model the ability to activate more than $k$ units in certain circumstances (Figure 11). This flexibility is helpful for integration: Allowing more than $k$ units to be active makes it possible for the model to incorporate units from both pairmates into the new, integrated representation. To provide this flexibility, we adjusted the kWTA algorithm to allow units that are tied in the ranking (within a threshold amount reflected by the Target Diff parameter) to activate as well. We also included a cap on the total number of units allowed to activate even with the tie (reflected by the $K_Max$ parameter). So if $k=6$ and $K_Max=10$, the top 6 units will be allowed to activate, as well as optionally any units beyond the top 6 that are tied (within some threshold specified by Target Diff), but no more than 10 units can be active.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig11-v1.jpg)
 
-**Figure 11.:** Units are ranked according to the amount of inhibition that would be needed to put the unit at threshold of activity. This is proportional to excitation: The more excitation the unit receives, the more inhibition is needed to cancel out the excitation and put the unit at threshold. In the classic KWTA algorithm, inhibition is set such that only the  highest ranked units activate. We added a kTarget Diff parameter to potentially allow more units to activate, if units are ‘tied’ with the  unit. If a unit below the kth unit in the rank ordering of units is within kthTarget Diff of the  unit, then it is considered to be ‘tied’ with the kth unit, and it is allowed to activate. In this example, the 6th, 7th, and 8th unit are tied in the ranking, because the difference is less than kthTarget Diff. Consequently, inhibition is set such that 8 units activate.
+**Figure 11.:** Units are ranked according to the amount of inhibition that would be needed to put the unit at threshold of activity. This is proportional to excitation: The more excitation the unit receives, the more inhibition is needed to cancel out the excitation and put the unit at threshold. In the classic KWTA algorithm, inhibition is set such that only the $k$ highest ranked units activate. We added a Target Diff parameter to potentially allow more units to activate, if units are ‘tied’ with the $k^{th}$ unit. If a unit below the $k^{th}$ unit in the rank ordering of units is within Target Diff of the $k^{th}$ unit, then it is considered to be ‘tied’ with the $k^{th}$ unit, and it is allowed to activate. In this example, the 6th, 7th, and 8th unit are tied in the ranking, because the difference is less than Target Diff. Consequently, inhibition is set such that 8 units activate.
 
-Note that, in addition to allowing more than k units to be active, this modification also helps to solve an issue with the classic implementation of kWTA that emerges when the inhibition needed to put the kth unit at threshold is very close to the value needed for the k+1th unit. In the classic implementation of kWTA, this situation results in the kth unit’s activity being very close to zero (since it is only slightly above threshold); effectively, fewer than k units end up being active. This issue would occur, for example, with the configuration of values shown in Figure 11; with classic kWTA, the 5th and 6th units would be just above threshold and thus barely active. This issue can make it difficult for the competitor to pick up new units in conditions that lead to differentiation (because the new units often receive very similar levels of excitation). With the modified kWTA algorithm, the model is free to find a ‘break point’ beyond the kth unit that allows the new units to be more robustly active.
+Note that, in addition to allowing more than $k$ units to be active, this modification also helps to solve an issue with the classic implementation of kWTA that emerges when the inhibition needed to put the $k^{th}$ unit at threshold is very close to the value needed for the $k+1^{th}$ unit. In the classic implementation of kWTA, this situation results in the $k^{th}$ unit’s activity being very close to zero (since it is only slightly above threshold); effectively, fewer than $k$ units end up being active. This issue would occur, for example, with the configuration of values shown in Figure 11; with classic kWTA, the 5th and 6th units would be just above threshold and thus barely active. This issue can make it difficult for the competitor to pick up new units in conditions that lead to differentiation (because the new units often receive very similar levels of excitation). With the modified kWTA algorithm, the model is free to find a ‘break point’ beyond the $k^{th}$ unit that allows the new units to be more robustly active.
 
 Lastly, inhibition is modulated by oscillations; these inhibitory oscillations play a key role in regulating the amount of competitor activity. The layer’s inhibition is initially constant (determined by the kWTA calculation described above), and then at cycle 125 is varied according to a sine wave (with amplitude set by the parameter Osc) until the end of the trial at cycle 200. Concretely, inhibition is sinusoidally raised above baseline from cycles 125–163, and then lowered below baseline from cycles 164–200. The raising of inhibition does not have much impact on the network activity (because the external clamping is strong enough to offset the raising of inhibition), but lowering the inhibition allows the competitors to activate.
 
-## Projections between layers
+#### Projections between layers
 
 The weight of any given connection between two units could range from 0 to 1. The two input layers are connected to the hidden layer, which is in turn connected to the output layer. The hidden layer also has recurrent connections. Generally the output layer does not have recurrent connections, except for our model of Chanales et al., 2021, where we included fixed-strength recurrent output-to-output connections to simulate topographically organized color representations. All projections were bidirectional: Activity was allowed to flow forwards and backwards through the network. Parameters for each bidirectional projection were identical except for the Wt Scale, which indicated the overall strength of the projection from one layer to another.
 
 All layers that were connected were connected fully — that is, all units in one layer were connected to all units in the other layer. Most of these connections were random and low in magnitude, except for a set of pre-wired connections that were stronger, as described in Basic Network Properties. Any pre-wired connections that differed between versions of the model are included in the sections of this paper on the set up of each model. All pre-wired, non-random connections were set to have a strength of 0.99 unless otherwise indicated. The parameters for the random connections are shown in Table 2.
 
+**Table 2.**
+ Projection parameters: Wt Range = range of the uniform distribution used to initialize the random weights between each projection (range does not include the maximally strong pre-wired connections described in the text, which were set to 0.99 unless stated otherwise).Wt Scale = the scaling of the projection, operationalized as an absolute multiplier on the weights in the projection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Projection</th>
+      <th>Wt Range</th>
+      <th>Wt Scale (Forwards / Backwards)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chanales</td>
+      <td>Hidden ↔ Hidden</td>
+      <td>0.45–0.55</td>
+      <td>1.8/1.8</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Hidden↔ Output</td>
+      <td>0.01–0.03</td>
+      <td>3.0/2.0</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Category↔Hidden</td>
+      <td>0.01–0.03</td>
+      <td>0.2/0.2</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Item ↔Hidden</td>
+      <td>0.45–0.55</td>
+      <td>0.2/0.2</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Output ↔Output</td>
+      <td>0.01–0.03</td>
+      <td>1.0/1.0</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Hidden ↔Hidden</td>
+      <td>0.45–0.55</td>
+      <td>1.8/1.8</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Hidden ↔Output</td>
+      <td>0.01–0.03</td>
+      <td>1.2/1.7</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Category ↔Hidden</td>
+      <td>0.01–0.03</td>
+      <td>0.1/0.1</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Item ↔Hidden</td>
+      <td>0.45–0.55</td>
+      <td>0.3/0.2</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Hidden ↔Hidden</td>
+      <td>0.45–0.55</td>
+      <td>1.9/1.9</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Hidden ↔Output</td>
+      <td>0.01–0.03</td>
+      <td>1.2/1.7</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Category ↔Hidden</td>
+      <td>0.01–0.03</td>
+      <td>0.2/0.1</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Item ↔Hidden</td>
+      <td>0.45–0.55</td>
+      <td>0.3/0.2</td>
+    </tr>
+  </tbody>
+</table>
+
 The random low-level connections constitute one of two sources of variance in the model, the other being the trial order for most simulations (described below in Stimulus Presentation).
 
-## A note on prewiring representations
+#### A note on prewiring representations
 
 In our model, our practice of ‘prewiring’ memory representations for the A and B pairmates serves two functions. In some cases, it is meant to stand in for actual training (as in the blocked / interleaved manipulation; the connections supporting the AX association are prewired to be stronger in the blocked condition than in the interleaved condition). However, the other, more fundamental role of prewiring is to ensure that the A and B input patterns evoke sparse distributed representations in the hidden layer (i.e. where some units are strongly active but most other units are inactive). In the real brain, this happens automatically because the weight landscape has been extensively sculpted by both experience and evolution. For example, in the real hippocampus, when the second pairmate is presented for the first time, it will evoke a sparse distributed representation in the CA3 subfield (potentially overlapping with the first pairmate’s CA3 representation) even before any learning of the second pairmate has occurred, due to the strong, sparse mossy fiber projections that connect the dentate gyrus to CA3 (McNaughton and Morris, 1987). As discussed above, we hypothesize that this initial, partial overlap between the second pairmate’s representation and the first pairmate’s representation can lead to pop-up of the unique features of the first pairmate’s representation, triggering learning that leads to differentiation or integration. In our small-scale model, we are effectively starting with a ‘blank brain’; in the absence of prewiring, the A and B inputs would activate overly diffuse representations that do not support these kinds of competitive dynamics. As such, prewiring in our model is necessary for its proper functioning. The presence of prewired A and B representations should therefore not be interpreted as reflecting a particular training history (except in the blocked / interleaved case above); rather, these prewired representations constitute the minimum step we would take to ensure well-defined competitive dynamics in our small-scale model.
 
 The fact that connection strengths serve this dual function — sometimes reflecting effects of training (as in our simulation of Schlichting et al., 2015) and in other cases reflecting necessary prewiring — complicates the interpretation of these strength values in the model. Our view is that this is a necessary limitation of our simplified modeling approach — one that can eventually be surmounted through the use of more biologically-detailed architectures (see the Limitations and Open Questions section in the Discussion).
 
-## Learning
+### Learning
 
 We used only unsupervised NMPH learning in this model since we wanted to test whether the NMPH was sufficient to produce the representational changes observed in these experiments. Each of the projections in the model could be modified through learning, except for the topographic output-to-output projection in the model of Chanales et al., 2021.
 
@@ -452,39 +753,196 @@ After each training trial, connection weights were adjusted based on the coactiv
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig12-v1.jpg)
 
-**Figure 12.:** , DThr, and DRev are X-axis coordinates. ThrP and DRevMag are Y-axis coordinates, and indicate the amount of peak weakening or strengthening.DMaxMag
+**Figure 12.:** $DThr$, $DRev$, and $ThrP$ are X-axis coordinates. $DRevMag$ and $DMaxMag$ are Y-axis coordinates, and indicate the amount of peak weakening or strengthening.
 
-Intuitively, medium-term running average activity is an integrated measure of the unit’s activity across the trial and is hierarchically computed from the unit’s super-short- and short-term average activity. The equations for computing medium-term running average activity were taken from the Leabra algorithm described in O’Reilly, 2018; for additional conceptual motivation for approach, see O’Reilly, 2012. First, the activity of each unit is integrated to yield a super-short-term average of unit activity:μtsuper-short=μt-1super-short+αsuper-short⁢(xt-μt-1super-short)
+Intuitively, medium-term running average activity is an integrated measure of the unit’s activity across the trial and is hierarchically computed from the unit’s super-short- and short-term average activity. The equations for computing medium-term running average activity were taken from the Leabra algorithm described in O’Reilly, 2018; for additional conceptual motivation for approach, see O’Reilly, 2012. First, the activity of each unit is integrated to yield a super-short-term average of unit activity:
 
-where xt is the activity of the unit at time t, μt−1super-short is the super-short-term average activity at time t−1, and αsuper-short is the super-short-term time scale constant. Next, super-short-term average activity is integrated to yield short-term average activity:μtshort=μt-1short+αshort⁢(μtsuper-short-μt-1short)
+$$
+\mu_{t}^{super-short}=\mu_{t-1}^{super-short}+\alpha^{super-short}⁢(x_{t}-\mu_{t-1}^{super-short})
+$$
 
-where μt−1short is the short-term activity at time t−1 and αshort is the short-term time scale constant. Lastly, short-term average activity is integrated to yield the raw medium-term average activity:μtraw medium=μt-1raw medium+αraw medium⁢(μtshort-μt-1raw medium)
+where $x_{t}$ is the activity of the unit at time $t$, $\mu_{t−1}^{super-short}$ is the super-short-term average activity at time $t−1$, and $\alpha^{super-short}$ is the super-short-term time scale constant. Next, super-short-term average activity is integrated to yield short-term average activity:
 
-where μt−1raw medium is the raw medium-term activity at time t−1 and αraw medium is the medium-term time scale constant. The final medium-term average activity is computed as a linear combination of raw medium-term average activity and the short-term average activity:μtmedium=αμtraw medium+βμtshort
+$$
+\mu_{t}^{short}=\mu_{t-1}^{short}+\alpha^{short}⁢(\mu_{t}^{super-short}-\mu_{t-1}^{short})
+$$
 
-The coactivity κ between the receiver unit and the sender unit is the product between the final medium-long term average activity between those two units:κ=μreceivermedium⁢μsendermedium
+where $\mu_{t−1}^{short}$ is the short-term activity at time $t−1$ and $\alpha^{short}$ is the short-term time scale constant. Lastly, short-term average activity is integrated to yield the raw medium-term average activity:
+
+$$
+\mu_{t}^{raw medium}=\mu_{t-1}^{raw medium}+\alpha^{raw medium}⁢(\mu_{t}^{short}-\mu_{t-1}^{raw medium})
+$$
+
+where $\mu_{t−1}^{raw medium}$ is the raw medium-term activity at time $t−1$ and $\alpha^{raw medium}$ is the medium-term time scale constant. The final medium-term average activity is computed as a linear combination of raw medium-term average activity and the short-term average activity:
+
+$$
+\mu_{t}^{medium}=\alpha\mu_{t}^{raw medium}+\beta\mu_{t}^{short}
+$$
+
+The coactivity $κ$ between the receiver unit and the sender unit is the product between the final medium-long term average activity between those two units:
+
+$$
+κ=\mu_{receiver}^{medium}⁢\mu_{sender}^{medium}
+$$
 
 This coactivity is fed into the U-shaped function, and then the resulting value is multiplied by a scalar learning rate parameter, LRate, to obtain the final weight change value. LRate was set to 1 for all of our simulations except for the simulations where we explicitly manipulated learning rate.
 
-The values of the time scale parameters used to compute running averages were unchanged from the defaults used in O’Reilly, 2018: αsuper-short=0.5,αshort=0.5,α% raw medium=0.1. The linear combination parameters were set to α=0.9,β=0.1 (whereas in the original Leabra models they were set to α=0.1,β=0.9).
+The values of the time scale parameters used to compute running averages were unchanged from the defaults used in O’Reilly, 2018: $\alpha^{super-short}=0.5,\alpha^{short}=0.5,\alpha^{% raw medium}=0.1$. The linear combination parameters were set to $\alpha=0.9,\beta=0.1$ (whereas in the original Leabra models they were set to $\alpha=0.1,\beta=0.9$).
 
 The five parameters that define the U-shaped function were set separately for each projection in each model, such that — when moderate competitor pop-up occurred — the competitor-shared connections would be severed. All reciprocal connections (e.g. output-to-hidden and hidden-to-output) had identical U-shaped functions. Once the U-shaped function was set for a connection, those were the parameters used for all runs of the model, in all conditions. The parameters for each learning function can be found in Table 3.
 
+**Table 3.**
+ Learning parameters: All parameters are defined in Figure 12.All bidirectional connections used the same parameters for the U-shaped learning function (e.g. the parameters for item-to-hidden matched the parameters for hidden-to-item).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Projection</th>
+      <th>DThr</th>
+      <th>DRev</th>
+      <th>DRevMag</th>
+      <th>ThrP</th>
+      <th>DMaxMag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chanales</td>
+      <td>Hidden↔Hidden</td>
+      <td>0.15</td>
+      <td>0.24</td>
+      <td>–4.5</td>
+      <td>0.4</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Hidden↔Output</td>
+      <td>0.1</td>
+      <td>0.44</td>
+      <td>–10</td>
+      <td>0.6</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Category ↔Hidden</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>–0.1</td>
+      <td>0.46</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Item ↔Hidden</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>–2.5</td>
+      <td>0.46</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Chanales</td>
+      <td>Output ↔Output</td>
+      <td>0.53</td>
+      <td>0.6</td>
+      <td>–0.3</td>
+      <td>0.68</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Hidden ↔Hidden</td>
+      <td>0.11</td>
+      <td>0.23</td>
+      <td>–1.5</td>
+      <td>0.4</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Hidden ↔Output</td>
+      <td>0.11</td>
+      <td>0.23</td>
+      <td>–0.01</td>
+      <td>0.4</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Category ↔Hidden</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>–0.1</td>
+      <td>0.46</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Favila</td>
+      <td>Item ↔Hidden</td>
+      <td>0.215</td>
+      <td>0.4</td>
+      <td>–2.5</td>
+      <td>0.6</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Hidden ↔Hidden</td>
+      <td>0.11</td>
+      <td>0.23</td>
+      <td>–1.5</td>
+      <td>0.4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Hidden ↔Output</td>
+      <td>0.11</td>
+      <td>0.23</td>
+      <td>–0.01</td>
+      <td>0.4</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Category ↔Hidden</td>
+      <td>0.2</td>
+      <td>0.3</td>
+      <td>–0.1</td>
+      <td>0.46</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Schlichting</td>
+      <td>Item ↔Hidden</td>
+      <td>0.11</td>
+      <td>0.23</td>
+      <td>–1.5</td>
+      <td>0.4</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 Evidence for the U-shaped plasticity function used here (where low activation leads to no change, moderate activation leads to weakening, and higher levels of activation lead to strengthening) was previously reviewed in Ritvo et al., 2019. In brief, there are three lines of work that support the U shape: First, multiple neurophysiological studies have found that moderate postsynaptic depolarization leads to synaptic weakening and higher levels of depolarization lead to synaptic strengthening (e.g. Artola et al., 1990; Hansel, 1996). Second, human neuroscience studies have used pattern classifiers, applied to fMRI and EEG data, to measure memory activation, and have related this measure to subsequent memory accessibility; several studies using this approach have found that low levels of activation lead to no change in memory strength, moderate levels of activation lead to impaired subsequent memory, and higher levels of activation lead to increased subsequent memory (e.g. Newman and Norman, 2010; Detre et al., 2013; Kim et al., 2014; for related findings, see Lewis-Peacock and Norman, 2014; Wang et al., 2019). Third, a recent human fMRI study by Wammes et al., 2022 manipulated memory activation by varying the visual similarity of pairmates and observed a U-shaped function relating visual similarity to representational change in the hippocampus, whereby low levels of pairmate similarity were associated with no change, moderate levels of similarity were associated with differentiation, and the differentiation effect went away at higher levels of similarity.
 
-## Stimulus presentation
+### Stimulus presentation
 
 Each model run included only two stimuli — pairmates A and B. This modeling choice reflects our assumption that the competitive dynamics of interest occur between pairmates and not across pairs (given that pairs are typically constructed to be dissimilar to other pairs and thus are not confusable with them). The middle unit in the category layer was active for both pairmates (reflecting input features shared between them) and distinct units in the item layer were active for pairmates A and B. These external inputs were the same for all models. Every epoch consisted of a single presentation of A and B, in a random order, except in our model of Schlichting et al., 2015 where B was always shown first (and, in the blocked condition, no A trials followed).
 
 We ran a test epoch before the first training epoch to attain a ‘baseline’ measure of the representations of A and B, and we ran another test epoch after each subsequent training epoch. The only difference between test and training epochs was that (1) test epochs included no oscillations, so we could get a pure guess for the state of the representation, and (2) connection weights were not adjusted at the end of test epochs (i.e. learning was turned off). We ran the model for 20 train/test epochs, and the final pattern of unit activity for each test epoch was recorded and used for the analyses.
 
-## Practical advice for getting the model to show differentiation
+### Practical advice for getting the model to show differentiation
 
 As discussed above, differentiation is highly sensitive to activity dynamics. To obtain differentiation, pairmate 2 (the competitor) must activate moderately on trial 1, and the following criteria must be met on trial 2:
 
 This seems straightforward, but meeting these conditions can be difficult. Sometimes the parameter adjustments needed to satisfy #1 make #2 harder to satisfy, and vice versa. Most of the failures to differentiate that we observed happened if these two conditions were not fully met.
 
-## On trial 2, pairmate 1 hidden units cannot be reactivated
+#### On trial 2, pairmate 1 hidden units cannot be reactivated
 
 Even if some weakening of competitor-shared connections has occurred on trial 1, it is possible for pairmate 1 units to activate on trial 2. If this happens, any initial differentiation effects are undone. This happens if the excitation for pairmate 1 units remains too high, and there are several potential reasons why this might occur.
 
@@ -492,7 +950,7 @@ We have discussed one potential cause already, when learning rate is low and the
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/88608/elife-88608-fig13-v1.jpg)
 
-**Figure 13.:** A) Two sample activity patterns in the hidden layer during the first trial are shown.Units are labelled as belonging to either the target, competitor, or both (shared), and vertical bars indicate activity level (along with activity values). A moderate amount of pop-up of the competitor occurs, which should lead to differentiation if the competitor-shared connections are appropriately weakened. Although the two patterns are very similar, the bottom pattern has slightly more variable activity, which could arise if the level of random noise in the strengths of the hidden-hidden connections is higher. (B) A U-shaped function for each activity pattern is shown, with the coactivity values for a subset of the hidden-unit pairings (those highlighted by the arcs in part A) plotted along the X axis. In the top example, all competitor-competitor coactivities are lower than all competitor-shared coactivities, which are in turn lower than all target-shared and target-target coactivities. This means that it is possible to preserve all of the competitor-competitor connections while severing all of the competitor-shared connections. However, in the bottom example, there is some interlacing of the competitor-competitor coactivities and competitor-shared coactivities; this scenario makes it impossible to fully preserve all competitor-competitor connections while severing all competitor-shared connections. With the U-shaped function shown here, the pattern of activity in the bottom example will result in sparing of some of the competitor-shared connections, making it less likely that differentiation will occur.
+**Figure 13.:** Units are labelled as belonging to either the target, competitor, or both (shared), and vertical bars indicate activity level (along with activity values). A moderate amount of pop-up of the competitor occurs, which should lead to differentiation if the competitor-shared connections are appropriately weakened. Although the two patterns are very similar, the bottom pattern has slightly more variable activity, which could arise if the level of random noise in the strengths of the hidden-hidden connections is higher. (B) A U-shaped function for each activity pattern is shown, with the coactivity values for a subset of the hidden-unit pairings (those highlighted by the arcs in part A) plotted along the X axis. In the top example, all competitor-competitor coactivities are lower than all competitor-shared coactivities, which are in turn lower than all target-shared and target-target coactivities. This means that it is possible to preserve all of the competitor-competitor connections while severing all of the competitor-shared connections. However, in the bottom example, there is some interlacing of the competitor-competitor coactivities and competitor-shared coactivities; this scenario makes it impossible to fully preserve all competitor-competitor connections while severing all competitor-shared connections. With the U-shaped function shown here, the pattern of activity in the bottom example will result in sparing of some of the competitor-shared connections, making it less likely that differentiation will occur.
 
 Another relevant parameter is the oscillation amplitude Osc, which can shift the placement of competitor-shared coactivity on the U-shaped function. If the oscillation is not set to the appropriate amplitude, the resulting level of competitor unit activity may not cause appropriate severing of competitor-shared connections. This can be seen in the results of our model of Schlichting et al., 2015: When the oscillation amount is adjusted, this can have strong effects on the representational changes that occur (Figure 10A and D).
 
@@ -500,7 +958,7 @@ Yet another factor to consider is how much excitation the hidden representation 
 
 Learning that occurs in the category-hidden and output-hidden projections can also affect the relative amount of excitation received by the hidden representations of pairmate 1 and pairmate 2. On trial 1, if shared input/output features are strongly activated and unique hidden features of pairmate 2 are moderately activated, then NMPH learning can result in weakening of the connections between the shared input/output features and the unique hidden features of pairmate 2. If this occurs, then, on trial 2, shared input/output features will selectively send excitation to pairmate 1, but not pairmate 2, which further increases the odds that pairmate 1’s hidden representation will be activated (thwarting the differentiation effect). In our simulations, we were able to avoid this problem by using a small DRevMag value for projections from shared input/output features, which effectively reduces the amount of weakening that occurs for these projections.
 
-## On trial 2, unique pairmate 2 hidden units must be reactivated
+#### On trial 2, unique pairmate 2 hidden units must be reactivated
 
 If connections within the pairmate 2 representation are weakened too much on trial 1 (when it pops up as a competitor), then, when pairmate 2 is presented as the target on trial 2, its hidden representation will not be accessible (i.e. the model will fail to reactivate the unique parts of this hidden representation). When this happens, the hidden representation of pairmate 1 typically ends up being activated instead. This leads to the asymmetric form of integration, where the input units for pairmate 2 end up being linked to the hidden representation of pairmate 1.
 

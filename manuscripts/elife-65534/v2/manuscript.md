@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Understanding changes in infectiousness during SARS-COV-2 infections is critical to assess the effectiveness of public health measures such as contact tracing. Here, we develop a novel mechanistic approach to infer the infectiousness profile of SARS-COV-2-infected individuals using data from known infector–infectee pairs. We compare estimates of key epidemiological quantities generated using our mechanistic method with analogous estimates generated using previous approaches. The mechanistic method provides an improved fit to data from SARS-CoV-2 infector–infectee pairs compared to commonly used approaches. Our best-fitting model indicates a high proportion of presymptomatic transmissions, with many transmissions occurring shortly before the infector develops symptoms. High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines have been distributed widely, even if contacts from a short time window before symptom onset alone are traced. Engineering and Physical Sciences Research Council (EPSRC).
+Background:Understanding changes in infectiousness during SARS-COV-2 infections is critical to assess the effectiveness of public health measures such as contact tracing.Methods:Here, we develop a novel mechanistic approach to infer the infectiousness profile of SARS-COV-2-infected individuals using data from known infector–infectee pairs. We compare estimates of key epidemiological quantities generated using our mechanistic method with analogous estimates generated using previous approaches.Results:The mechanistic method provides an improved fit to data from SARS-CoV-2 infector–infectee pairs compared to commonly used approaches. Our best-fitting model indicates a high proportion of presymptomatic transmissions, with many transmissions occurring shortly before the infector develops symptoms.Conclusions:High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines have been distributed widely, even if contacts from a short time window before symptom onset alone are traced.Funding:Engineering and Physical Sciences Research Council (EPSRC).
 
 ## Introduction
 
@@ -36,13 +36,49 @@ We fitted each model to data from 191 SARS-CoV-2 transmission pairs (Ferretti et
 
 For each model, we calculated the generation time (Figure 2A), TOST (Figure 2B), and serial interval (Figure 2C) distributions using point estimates for the fitted parameters (Supplementary file 1). The empirical serial interval distribution is also plotted in Figure 2C, to give an approximate visual indication of the goodness of fit of the different models. However, since the data contained intervals of possible exposure times in addition to symptom onset dates, this only gives a partial picture of the goodness of fit. Therefore, we also calculated the Akaike information criterion (AIC) for each model. When calculating AIC values, we considered maximum likelihood parameter estimates with symptom onsets occurring in the middle of the onset dates, to avoid comparing models based on likelihoods calculated using augmented data. The best fit to the data was obtained using the variable infectiousness model (ΔAIC = 0). The constant infectiousness model gave the next best fit (ΔAIC = 1.3), followed by the Ferretti model (ΔAIC = 5.1). Finally, the model with the standard assumption of independent transmission and symptoms fitted least well (ΔAIC = 38.9).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-v2.jpg)
+
+**Figure 2.:** Distributions of epidemiological time intervals estimated by fitting different models to data from 191 SARS-CoV-2 transmission pairs (Figure 2—source data 1). (A) Generation time, indicating the relative expected infectiousness of a host at each time since infection. (B) Time from onset of symptoms to transmission (TOST), indicating the relative expected infectiousness of a host at each time since symptom onset. (C) Serial interval, indicating the periods between infectors and infectees developing symptoms. In (C), the empirical serial interval distribution from the transmission pair data (Figure 2—source data 1) is shown as grey bars. In addition, discretised versions of the serial interval distributions, calculated using the method in Cori et al., 2013, are shown in Figure 2—figure supplement 1. In all panels, lines represent: variable infectiousness model (blue), constant infectiousness model (red), Ferretti model (orange dashed), and independent transmission and symptoms model (purple dashed). We assumed a specified incubation period distribution (Lauer et al., 2020) when fitting the different models to data (see Materials and methods); equivalent panels using an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Discretised versions of the serial interval distributions shown in Figure 2C, calculated using the method in Cori et al., 2013, plotted as stars alongside the empirical serial interval distribution from the transmission pair data (grey bars). (A) Variable infectiousness model. (B) Constant infectiousness model. (C) Ferretti model. (D) Independent transmission and symptoms model.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Equivalent panels to Figure 2 for an alternative incubation period distribution (Linton et al., 2020). ΔAIC values for the different models are 0 (variable infectiousness model), 5.1 (constant infectiousness model), 10.2 (Ferretti model), and 64.5 (independent transmission and symptoms model).
+
 The predicted variability in the generation time between individuals was lower for the independent transmission and symptoms model compared to the other three models (Figure 2A). On the other hand, the TOST distribution was most concentrated around the time of symptom onset for the best-fitting variable infectiousness model, and least concentrated for the independent transmission and symptoms model (Figure 2B). In the best-fitting model, a decrease in infectiousness was inferred following symptom onset, likely due to behavioural factors that reduce the transmission risk following symptom appearance (Manfredi and D’Onofrio, 2013).
 
 Using the full posterior distributions of model parameters obtained when fitting the models to data, we calculated posterior estimates of the proportion of transmissions occurring before symptom onset (for hosts who developed symptoms) for each model (Figure 3A). The median (95% credible interval) proportion of presymptomatic transmissions was 0.65 (0.53–0.77), 0.56 (0.50–0.62), 0.55 (0.48–0.62), and 0.49 (0.43–0.56) under the variable infectiousness model, constant infectiousness model, Ferretti model, and independent transmission and symptoms model, respectively. The central estimate of 65% of transmissions occurring prior to symptom onset using the best-fitting model is higher than estimated in most previous studies in which the generation time and/or TOST were estimated (Ferretti et al., 2020a; Ferretti et al., 2020b; He et al., 2020; Ashcroft et al., 2020). In the wider literature, we note significant variation in estimates of the contribution of presymptomatic transmission (obtained under a range of different modelling assumptions), including estimates exceeding 65% (Casey et al., 2020; Tindale et al., 2020; Ganyani et al., 2020).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-v2.jpg)
+
+**Figure 3.:** (A) Violin plots indicating posterior distributions for the proportion of transmissions occurring prior to symptom onset for individuals who develop symptoms (i.e., neglecting transmissions from individuals who remain asymptomatic throughout infection) for the different models. (B) Posterior distributions for the total proportion of non-symptomatic transmissions, accounting for transmissions from asymptomatic infectious individuals (Figure 3—figure supplement 1), for the different models. Equivalent panels assuming an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Assumed distribution for the proportion of asymptomatic cases, $p_{A}$. (B) Assumed distribution for the relative infectiousness of asymptomatic hosts, $x_{A}$. These distributions were chosen for consistency with the confidence intervals in (1) (Materials and methods).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Equivalent panels to Figure 3 for an alternative incubation period distribution (Linton et al., 2020).
+
 We also combined the estimates in Figure 3A with the results of a previous study (Buitrago-Garcia et al., 2020) in which the extent of asymptomatic transmission (i.e., transmissions from individuals who never display symptoms) was characterised (Figure 3—figure supplement 1), to obtain estimates for the total proportion of non-symptomatic (either presymptomatic or asymptomatic) transmissions for the different models (Figure 3B). The non-symptomatic proportion was highest for the variable infectiousness model and lowest for the independent transmission and symptoms model.
 
 Finally, we explored the implications of these results for isolation and contact tracing (Figure 4), under the simplifying assumptions of perfect isolation (i.e., isolation prevents transmission completely) and perfect contact tracing (i.e., all contacts are traced successfully during periods of contact tracing). Imperfect isolation and contact tracing are considered in Figure 4—figure supplement 1. Considering a scenario in which a case (referred to here as the ‘index case’) is detected following symptom onset, we first calculated how many transmissions from the index case are expected to be prevented for different time delays between the index case developing symptoms and being isolated (Figure 4A), compared to a scenario in which the index case is never isolated. We then considered tracing the contacts of that index case, inferring the proportion of presymptomatic contacts identified for different contact elicitation windows (Figure 4B). As an example, a contact elicitation window of 2 days means that all contacts of the index case that occurred in the 2 days prior to the index case developing symptoms are traced (in addition to contacts that occurred after the index case developed symptoms). Finally, we considered isolation of infected contacts of the index case. We calculated the expected proportion of transmissions generated by those contacts prevented for different time periods between the index case transmitting the virus to the contact and the contact being isolated (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-v2.jpg)
+
+**Figure 4.:** (A) Effect of the timing of isolation of symptomatic index cases: the proportion of transmissions prevented through isolation, for different time periods between symptom onset and isolation. (B) Effect of the contact elicitation window: the proportion of presymptomatic infectious contacts found for different times up to which contacts are traced before the symptom onset time of the index host. (C) Effect of the timing of isolation of infected contacts: the proportion of onward transmissions generated by the contacts prevented by isolation of those contacts, for different time periods between exposure to the index host and isolation of the contacts. In all panels, lines represent predictions obtained using point estimate parameters for the variable infectiousness model (blue), constant infectiousness model (red), Ferretti model (orange dashed), and independent transmission and symptoms model (purple dashed). Here, isolation and contact tracing are assumed to be 100% effective; equivalent panels in which the effectiveness is less than 100% are shown in Figure 4—figure supplement 1. Equivalent panels assuming an alternative incubation period distribution (Linton et al., 2020) are shown in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Equivalent panels to Figure 4A for different values of the isolation effectiveness, $\epsilon_{1}$ (see Materials and methods). (A) $\epsilon_{1}=0.8$. (B) $\epsilon_{1}=0.6$. (C) $\epsilon_{1}=0.4$. (D–F) Equivalent panels to Figure 4B for different values of the contact identification effectiveness, $\epsilon_{2}$ (see Materials and methods). (D) $\epsilon_{2}=0.8$. (E) $\epsilon_{2}=0.6$. (F) $\epsilon_{2}=0.4$. (G–I) Equivalent panels to Figure 4C for different values of the contact isolation effectiveness, $\epsilon_{3}$ (see Materials and methods). (G) $\epsilon_{3}=0.8$. (H) $\epsilon_{3}=0.6$. (I) $\epsilon_{3}=0.4$.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65534/elife-65534-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Equivalent panels to Figure 4 for an alternative incubation period distribution (Linton et al., 2020).
 
 Under the best-fitting variable infectiousness model, 23% (17–31%) of all transmissions that would be generated by a symptomatic host are prevented if the host is isolated one day after symptom onset (Figure 4A, blue). This compares to a higher estimate of 38% (32–44%) with the standard independent transmission and symptoms assumption (Figure 4A, purple dashed) and intermediate estimates for the constant infectiousness (Figure 4A, red) and Ferretti (Figure 4A, orange dashed) models. The limited impact of isolation of symptomatic hosts alone under the variable infectiousness model, which is due to the high predicted proportion of presymptomatic transmissions (Figure 3A), highlights the need to also conduct contact tracing.
 
@@ -64,100 +100,276 @@ In summary, using a novel mechanistic approach in combination with data from SAR
 
 ## Materials and methods
 
-## Notation and general details
+### Notation and general details
 
-Here, we outline the notation used in this section when describing the different models that we considered. For a given transmission pair, we label the infector as 1 and the infectee as 2, and define:tik=(time of infection of host k),k=1,2,tsk=(time of symptom onset of host k),k=1,2,τinc,k=(incubation period of host k),k=1,2,τgen=(generation time),xtost=(time from symptom onset of 1 to transmission to 2 (TOST)),xser=(serial interval).
+Here, we outline the notation used in this section when describing the different models that we considered. For a given transmission pair, we label the infector as 1 and the infectee as 2, and define:
 
-In the above, t is used to denote calendar times, τ for time intervals relative to the time of infection, and x for time intervals relative to the time of symptom onset. We denote the probability density functions of the incubation period, generation time, TOST, and serial interval as finc, fgen, ftost, and fser, respectively, and use a capital F for the corresponding cumulative distribution functions.
+$$
+t_{ik}=(time of infection of host k),k=1,2,t_{sk}=(time of symptom onset of host k),k=1,2,\tau_{inc,k}=(incubation period of host k),k=1,2,\tau_{gen}=(generation time),x_{tost}=(time from symptom onset of 1 to transmission to 2 (TOST)),x_{ser}=(serial interval).
+$$
 
-In addition, we denote the expected infectiousness of a host at time since infection τ as βτ, and the expected infectiousness at time since symptom onset x as bx. These infectiousness profiles are related to the generation time and TOST distributions, respectively, byβ(τ)=β0fgen(τ),bx=β0ftostx.
+In the above, $t$ is used to denote calendar times, $\tau$ for time intervals relative to the time of infection, and $x$ for time intervals relative to the time of symptom onset. We denote the probability density functions of the incubation period, generation time, TOST, and serial interval as $f_{inc}$, $f_{gen}$, $f_{tost}$, and $f_{ser}$, respectively, and use a capital $F$ for the corresponding cumulative distribution functions.
 
-Here, β0 corresponds to the expected number of transmissions generated by each host who develops symptoms at some stage during infection, that is, the (instantaneous) reproduction number of such hosts (at least if corrections to the reproduction number within a finite contact network [Keeling and Grenfell, 2000; Enright and Kao, 2018] can be neglected). However, the exact value of β0 has no effect on our analyses, since it simply adds a constant factor to the likelihood function given below. We also let βτ∣τinc and bx∣τinc be the expected infectiousness at time τ since infection and at time x since symptom onset, respectively, conditional on an incubation period of τinc (these are related by βτ∣τinc=bτ-τincτinc and bx∣τinc=βx+τincτinc).
+In addition, we denote the expected infectiousness of a host at time since infection $\tau$ as $\beta\tau$, and the expected infectiousness at time since symptom onset $x$ as $bx$. These infectiousness profiles are related to the generation time and TOST distributions, respectively, by
 
-We considered several different models for infectiousness (details of individual models are given below). In each model, the conditional infectiousness, βτ∣τinc, or equivalently, bx∣τinc, is specified. The distributions of the generation time and TOST can be recovered from this conditional infectiousness by averaging over the incubation period distribution (which is assumed to be known):βτ=β0fgenτ=∫0∞βτ∣τincfinc(τinc)dτinc,bx=β0ftostx=∫0∞bx∣τincfinc(τinc)dτinc.
+$$
+\beta(\tau)=\beta_{0}f_{gen}(\tau),
+$$
+
+
+
+$$
+bx=\beta_{0}f_{tost}x.
+$$
+
+Here, $\beta_{0}$ corresponds to the expected number of transmissions generated by each host who develops symptoms at some stage during infection, that is, the (instantaneous) reproduction number of such hosts (at least if corrections to the reproduction number within a finite contact network [Keeling and Grenfell, 2000; Enright and Kao, 2018] can be neglected). However, the exact value of $\beta_{0}$ has no effect on our analyses, since it simply adds a constant factor to the likelihood function given below. We also let $\beta\tau∣\tau_{inc}$ and $bx∣\tau_{inc}$ be the expected infectiousness at time $\tau$ since infection and at time $x$ since symptom onset, respectively, conditional on an incubation period of $\tau_{inc}$ (these are related by $\beta\tau∣\tau_{inc}=b\tau-\tau_{inc}\tau_{inc}$ and $bx∣\tau_{inc}=\betax+\tau_{inc}\tau_{inc}$).
+
+We considered several different models for infectiousness (details of individual models are given below). In each model, the conditional infectiousness, $\beta\tau∣\tau_{inc}$, or equivalently, $bx∣\tau_{inc}$, is specified. The distributions of the generation time and TOST can be recovered from this conditional infectiousness by averaging over the incubation period distribution (which is assumed to be known):
+
+$$
+\beta\tau=\beta_{0}f_{gen}\tau=\int_{0}^{∞}\beta\tau∣\tau_{inc}f_{inc}(\tau_{inc})d\tau_{inc},
+$$
+
+
+
+$$
+bx=\beta_{0}f_{tost}x=\int_{0}^{∞}bx∣\tau_{inc}f_{inc}(\tau_{inc})d\tau_{inc}.
+$$
 
 Alternative (equivalent) expressions for the generation time and TOST distributions are available for some of the models considered (these are detailed in the “Models of infectiousness” subsection below).
 
-To obtain an expression for the serial interval distribution, we note thatxser=xtost+τinc,2.
+To obtain an expression for the serial interval distribution, we note that
 
-We assume throughout that xtost and τinc,2 are independent, so that the serial interval distribution is given by the convolutionfserxser=∫0∞ftostxser-τincfincτincdτinc.
+$$
+x_{ser}=x_{tost}+\tau_{inc,2}.
+$$
 
-The proportion of presymptomatic transmissions (out of all transmissions generated by individuals who develop symptoms) can be calculated asqP=∫-∞0ftostxtostdxtost,although simpler equivalent expressions for individual models are also detailed later.
+We assume throughout that $x_{tost}$ and $\tau_{inc,2}$ are independent, so that the serial interval distribution is given by the convolution
 
-## Data
+$$
+f_{ser}x_{ser}=\int_{0}^{∞}f_{tost}x_{ser}-\tau_{inc}f_{inc}\tau_{inc}d\tau_{inc}.
+$$
+
+The proportion of presymptomatic transmissions (out of all transmissions generated by individuals who develop symptoms) can be calculated as
+
+$$
+q_{P}=\int_{-∞}^{0}f_{tost}x_{tost}dx_{tost},
+$$
+
+although simpler equivalent expressions for individual models are also detailed later.
+
+### Data
 
 Following Ferretti et al., 2020b, we considered SARS-COV-2 transmission pair data from five different studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020; Zhang et al., 2020), totalling 191 infector–infectee pairs (Figure 2—source data 1). In all 191 transmission pairs, both the infector and the infectee developed symptoms, and the symptom onset date of each host was recorded. In four of the five studies (Ferretti et al., 2020a; He et al., 2020; Xia et al., 2020; Cheng et al., 2020), intervals of exposure were available for either the infector or infectee (or both), whereas in the other (Zhang et al., 2020), only symptom onset dates were recorded.
 
-## Incubation period
+### Incubation period
 
 In our main analyses, the incubation period was assumed to follow a Gamma distribution with shape parameter 5.807 and scale parameter 0.948 (Lauer et al., 2020). This corresponds to a mean incubation period of 5.5 days and a standard deviation of 2.3 days. However, to demonstrate that our main conclusions are robust to the exact incubation period distribution used, we also repeated our analyses using an alternative, more dispersed, Gamma distributed incubation period with a mean of 5.3 days and a standard deviation of 3.2 days (Linton et al., 2020; Figure 2—figure supplement 2, Figure 3—figure supplement 2, Figure 4—figure supplement 2).
 
-## Models of infectiousness
+### Models of infectiousness
 
-## Independent transmission and symptoms model
+#### Independent transmission and symptoms model
 
-In this model, the infectiousness of each host at a given time since infection is assumed to be independent of their incubation period, so thatβτ∣τinc=βτ=β0fgenτ,where the generation time distribution, fgen, is prescribed. We assumed (Ferretti et al., 2020a, Ganyani et al., 2020) thatτgen∼Gamma(a,b),where a and b are shape and scale parameters, respectively, so that the mean generation time is mgen=ab and the standard deviation of generation times is sgen=a1/2b.
+In this model, the infectiousness of each host at a given time since infection is assumed to be independent of their incubation period, so that
 
-The TOST distribution for this model is given byftostxtost=∫0∞fgenxtost+τincfinc(τinc)dτinc,while the proportion of presymptomatic transmissions isqP=∫0∞fgenτ1-Finc(τ)dτ.
+$$
+\beta\tau∣\tau_{inc}=\beta\tau=\beta_{0}f_{gen}\tau,
+$$
+
+where the generation time distribution, $f_{gen}$, is prescribed. We assumed (Ferretti et al., 2020a, Ganyani et al., 2020) that
+
+$$
+\tau_{gen}∼Gamma(a,b),
+$$
+
+where $a$ and $b$ are shape and scale parameters, respectively, so that the mean generation time is $m_{gen}=ab$ and the standard deviation of generation times is $s_{gen}=a^{1/2}b$.
+
+The TOST distribution for this model is given by
+
+$$
+f_{tost}x_{tost}=\int_{0}^{∞}f_{gen}x_{tost}+\tau_{inc}f_{inc}(\tau_{inc})d\tau_{inc},
+$$
+
+while the proportion of presymptomatic transmissions is
+
+$$
+q_{P}=\int_{0}^{∞}f_{gen}\tau1-F_{inc}(\tau)d\tau.
+$$
 
 Derivations of these expressions are given in Appendix.
 
-The vector of unknown (log) model parameters, θ=(log⁡mgen,log⁡(sgen)), was estimated when we fitted the model to the transmission pair data.
+The vector of unknown (log) model parameters, $\theta=(log⁡m_{gen},log⁡(s_{gen}))$, was estimated when we fitted the model to the transmission pair data.
 
-## Ferretti model
+#### Ferretti model
 
-Ferretti et al., 2020b proposed a model in which the conditional infectiousness was specified as the re-scaled skew-logistic distribution,b(x∣τinc)={CFβ0e−(xmincτinc−μF)/σF(1+e−(xmincτinc−μF)/σF)αF+1,−τinc≤x < 0,CFβ0e−(x−μF)/σF(1+e−(x−μF)/σF)αF+1,x≥0.
+Ferretti et al., 2020b proposed a model in which the conditional infectiousness was specified as the re-scaled skew-logistic distribution,
 
-Here, minc is the mean incubation period, and μF, σF, and αF are model parameters that do not have straightforward epidemiological interpretations. We setCF=αFσF1-1+e(minc+μF)/σF-αF,in order to ensure the correct scaling for the infectiousness (see Appendix).
+$$
+b(x∣\tau_{inc})={\frac{C_{F}\beta_{0}e^{−(\frac{xm_{inc}}{\tau_{inc}}−\mu_{F})/\sigma_{F}}}{(1+e^{−(\frac{xm_{inc}}{\tau_{inc}}−\mu_{F})/\sigma_{F}})^{\alpha_{F}+1}},−\tau_{inc}\leqx < 0,\frac{C_{F}\beta_{0}e^{−(x−\mu_{F})/\sigma_{F}}}{(1+e^{−(x−\mu_{F})/\sigma_{F}})^{\alpha_{F}+1}},x\geq0.
+$$
 
-The proportion of presymptomatic transmissions isqP=1+eμF/σF-αF-1+e(minc+μF)/σF-αF1-1+e(minc+μF)/σF-αF.
+Here, $m_{inc}$ is the mean incubation period, and $\mu_{F}$, $\sigma_{F}$, and $\alpha_{F}$ are model parameters that do not have straightforward epidemiological interpretations. We set
+
+$$
+C_{F}=\frac{\alpha_{F}}{\sigma_{F}1-1+e^{(m_{inc}+\mu_{F})/\sigma_{F}}^{-\alpha_{F}}},
+$$
+
+in order to ensure the correct scaling for the infectiousness (see Appendix).
+
+The proportion of presymptomatic transmissions is
+
+$$
+q_{P}=\frac{1+e^{\mu_{F}/\sigma_{F}}^{-\alpha_{F}}-1+e^{(m_{inc}+\mu_{F})/\sigma_{F}}^{-\alpha_{F}}}{1-1+e^{(m_{inc}+\mu_{F})/\sigma_{F}}^{-\alpha_{F}}}.
+$$
 
 A derivation of this expression is given in Appendix.
 
-The vector of unknown model parameters, θ=(μF,log⁡σF,log⁡(αF)), was estimated when we fitted the model to the transmission pair data (note that μF could take either positive or negative values, whereas σF and αF were constrained to be positive).
+The vector of unknown model parameters, $\theta=(\mu_{F},log⁡\sigma_{F},log⁡(\alpha_{F}))$, was estimated when we fitted the model to the transmission pair data (note that $\mu_{F}$ could take either positive or negative values, whereas $\sigma_{F}$ and $\alpha_{F}$ were constrained to be positive).
 
-## Our mechanistic model
+#### Our mechanistic model
 
-In our mechanistic approach, we divided each infection into three stages: latent (E), presymptomatic infectious (P), and symptomatic infectious (I). The stage durations were assumed to be independent, and infectiousness was assumed to be constant over the duration of each stage. We denote the stage durations by yE/P/I, their density and cumulative distribution functions by fE/P/I and FE/P/I, and the infectiousness of hosts in the P and I stages by βP/I, respectively. We also defineα=βP/βIto be the ratio of transmission rates in the P and I stages. In this model, the expected number of transmissions generated by each infected host isβ0=βPmP+βImI,where mP/I are the respective mean durations of the P and I stages.
+In our mechanistic approach, we divided each infection into three stages: latent (E), presymptomatic infectious (P), and symptomatic infectious (I). The stage durations were assumed to be independent, and infectiousness was assumed to be constant over the duration of each stage. We denote the stage durations by $y_{E/P/I}$, their density and cumulative distribution functions by $f_{E/P/I}$ and $F_{E/P/I}$, and the infectiousness of hosts in the P and I stages by $\beta_{P/I}$, respectively. We also define
 
-We further assumed that the durations of each stage followed Gamma distributions, withyE∼Gamma(kE,1kincγ),yP∼Gamma(kP,1kincγ),yI∼Gamma(kI,1kIμ),wherekinc=kE+kP.
+$$
+\alpha=\beta_{P}/\beta_{I}
+$$
 
-In particular, the scale parameters of yE and yP were both assumed to be equal to 1/(kincγ), in order to ensure a Gamma distributed incubation period,τinc=yE+yP∼Gammakinc,1kincγ.
+to be the ratio of transmission rates in the P and I stages. In this model, the expected number of transmissions generated by each infected host is
 
-We fixed kinc=5.807 and γ=1/(5.807×0.948), in order to obtain the specified incubation period distribution (see 'Incubation period' subsection above). When we fitted the model to data, we assumed that kI=1, so that the symptomatic infectious period follows an exponential distribution. The parameters kE (representing the shape parameter of the latent (E) period) and μ (representing the reciprocal of the mean symptomatic infectious (I) period) were estimated in the fitting procedure. We considered two versions of the model: one in which we assumed α=1 (the constant infectiousness model), and one in which α was also estimated (the variable infectiousness model).
+$$
+\beta_{0}=\beta_{P}m_{P}+\beta_{I}m_{I},
+$$
 
-For this model, the infectiousness of a host at time x since symptom onset, conditional on an incubation period of τinc, can be calculated to beb(x|τinc)={αCβ0(1−FBeta(−x/τinc;kP,kE)),−τinc≤x < 0,Cβ0(1−FI(x)),x≥0,where FBeta(s;a,b) is the cumulative distribution function of a Beta distributed random variable with shape parameters a and b, andC=βIβ0=kincγμαkPμ+kincγ.
+where $m_{P/I}$ are the respective mean durations of the P and I stages.
 
-The TOST distribution is given byftost(xtost)={αC(1−FP(−xtost)),xtost < 0,C(1−FI(xtost)),xtost≥0.
+We further assumed that the durations of each stage followed Gamma distributions, with
 
-The generation time can be written asτgen=yE+y*,where y* is the time between the start of the P stage and the transmission occurring, and therefore the generation time distribution is given by the convolutionfgenτgen=∫0τgenf*τgen-yEfEyEdyE,where the density, f*, of y* satisfiesf*y*=Cα1-FPy*+∫0y*1-FIy*-yPfPyPdyP.
+$$
+y_{E}∼Gamma(k_{E},\frac{1}{k_{inc}\gamma}),y_{P}∼Gamma(k_{P},\frac{1}{k_{inc}\gamma}),y_{I}∼Gamma(k_{I},\frac{1}{k_{I}\mu}),
+$$
 
-The proportion of presymptomatic transmissions isqP=βPmPβ0=αkPμαkPμ+kincγ.
+where
+
+$$
+k_{inc}=k_{E}+k_{P}.
+$$
+
+In particular, the scale parameters of $y_{E}$ and $y_{P}$ were both assumed to be equal to $1/(k_{inc}\gamma)$, in order to ensure a Gamma distributed incubation period,
+
+$$
+\tau_{inc}=y_{E}+y_{P}∼Gammak_{inc},\frac{1}{k_{inc}\gamma}.
+$$
+
+We fixed $k_{inc}=5.807$ and $\gamma=1/(5.807\times0.948)$, in order to obtain the specified incubation period distribution (see 'Incubation period' subsection above). When we fitted the model to data, we assumed that $k_{I}=1$, so that the symptomatic infectious period follows an exponential distribution. The parameters $k_{E}$ (representing the shape parameter of the latent (E) period) and $\mu$ (representing the reciprocal of the mean symptomatic infectious (I) period) were estimated in the fitting procedure. We considered two versions of the model: one in which we assumed $\alpha=1$ (the constant infectiousness model), and one in which $\alpha$ was also estimated (the variable infectiousness model).
+
+For this model, the infectiousness of a host at time $x$ since symptom onset, conditional on an incubation period of $\tau_{inc}$, can be calculated to be
+
+$$
+b(x|\tau_{inc})={\alphaC\beta_{0}(1−F_{Beta}(−x/\tau_{inc};k_{P},k_{E})),−\tau_{inc}\leqx < 0,C\beta_{0}(1−F_{I}(x)),x\geq0,
+$$
+
+where $F_{Beta}(s;a,b)$ is the cumulative distribution function of a Beta distributed random variable with shape parameters $a$ and $b$, and
+
+$$
+C=\frac{\beta_{I}}{\beta_{0}}=\frac{k_{inc}\gamma\mu}{\alphak_{P}\mu+k_{inc}\gamma}.
+$$
+
+The TOST distribution is given by
+
+$$
+f_{tost}(x_{tost})={\alphaC(1−F_{P}(−x_{tost})),x_{tost} < 0,C(1−F_{I}(x_{tost})),x_{tost}\geq0.
+$$
+
+The generation time can be written as
+
+$$
+\tau_{gen}=y_{E}+y^{*},
+$$
+
+where $y^{*}$ is the time between the start of the P stage and the transmission occurring, and therefore the generation time distribution is given by the convolution
+
+$$
+f_{gen}\tau_{gen}=\int_{0}^{\tau_{gen}}f^{*}\tau_{gen}-y_{E}f_{E}y_{E}dy_{E},
+$$
+
+where the density, $f^{*}$, of $y^{*}$ satisfies
+
+$$
+f^{*}y^{*}=C\alpha1-F_{P}y^{*}+\int_{0}^{y^{*}}1-F_{I}y^{*}-y_{P}f_{P}y_{P}dy_{P}.
+$$
+
+The proportion of presymptomatic transmissions is
+
+$$
+q_{P}=\frac{\beta_{P}m_{P}}{\beta_{0}}=\frac{\alphak_{P}\mu}{\alphak_{P}\mu+k_{inc}\gamma}.
+$$
 
 Derivations of these formulae are given in Appendix.
 
-The vector of unknown model parameters, θ=(log⁡(kE),log⁡μ), was estimated when we fitted the constant infectiousness model to the transmission pair data, while the corresponding vector of estimated model parameters for the variable infectiousness model was θ=(log⁡(kE),log⁡μ,log⁡(α)).
+The vector of unknown model parameters, $\theta=(log⁡(k_{E}),log⁡\mu)$, was estimated when we fitted the constant infectiousness model to the transmission pair data, while the corresponding vector of estimated model parameters for the variable infectiousness model was $\theta=(log⁡(k_{E}),log⁡\mu,log⁡(\alpha))$.
 
-## Likelihood and model fitting
+### Likelihood and model fitting
 
-For a single transmission pair (labelled n), suppose that the times of infection for the infector and infectee are known to lie in the intervals [ti1,L,ti1,R] and [ti2,L,ti2,R], respectively (where these intervals may be infinitely wide), and that their symptom onset times, ts1 and ts2, are known exactly. In this case (when only that transmission pair is observed), the likelihood of the parameters, θ, of the model of infectiousness under consideration is given byL(n)(θ)=1β0∫ti2,Lti2,R∫ti1,Lti1,Rb(ti2−ts1∣ts1−ti1,θ)finc(ts1−ti1)finc(ts2−ti2)dti1dti2,where the dependence of the conditional expected infectiousness, b(x∣τinc,θ), on the model parameters, θ, is indicated explicitly. A derivation of this expression is given in Appendix. Assuming that each transmission pair in our dataset is independent, the overall likelihood is therefore given by the product of the contributions, L(n)(θ), from each individual transmission pair, that is,L(θ)=∏n=1NL(n)(θ),where N is the total number of transmission pairs.
+For a single transmission pair (labelled $n$), suppose that the times of infection for the infector and infectee are known to lie in the intervals $[t_{i1,L},t_{i1,R}]$ and $[t_{i2,L},t_{i2,R}]$, respectively (where these intervals may be infinitely wide), and that their symptom onset times, $t_{s1}$ and $t_{s2}$, are known exactly. In this case (when only that transmission pair is observed), the likelihood of the parameters, $\theta$, of the model of infectiousness under consideration is given by
 
-To account for uncertainty in the exact symptom onset times within the day of onset (and so avoid imparting bias by fitting continuous-time models to discrete-time symptom onset data), we fitted the models to the data using data augmentation MCMC (Thompson, 2020, Ferguson et al., 2005, Cauchemez et al., 2004). In alternating steps of the chain, we updated either the vector of model parameters, N, or the exact symptom onset times of each infector and infectee. The chain was run for 2.5 million steps, of which the first 500,000 were discarded as burn-in. Posterior distributions of model parameters were obtained by recording only every 100 iterations of the chain (assuming independent uniform prior distributions for each entry of θ). Point estimates of model parameters (Supplementary file 1) were obtained by calculating the posterior mean of θ. Full details of the MCMC procedure are given in Appendix.
+$$
+L^{(n)}(\theta)=\frac{1}{\beta_{0}}\intt_{i2,L}t_{i2,R}\intt_{i1,L}t_{i1,R}b(t_{i2}−t_{s1}∣t_{s1}−t_{i1},\theta)f_{inc}(t_{s1}−t_{i1})f_{inc}(t_{s2}−t_{i2})dt_{i1}dt_{i2},
+$$
 
-In order to provide a straightforward comparison of the goodness of fit between models, we also determined the parameters, θ^, that maximised the likelihood, L(θ), for each model under the assumption that each host developed symptoms exactly in the middle of the known onset date. The AIC for each model could then be calculated asAIC=2×(numberofestimatedparameters)−2log⁡(L(θ^)),where three parameters were estimated for the variable infectiousness and Ferretti models, and two parameters for the constant infectiousness and independent transmission and symptoms models. Since the maximum likelihood estimators, θ^, did not account for uncertainty in exact symptom onset times, they were not used elsewhere in our analyses (however, these all lay within the credible intervals obtained in the MCMC procedure, which are given in Supplementary file 1).
+where the dependence of the conditional expected infectiousness, $b(x∣\tau_{inc},\theta)$, on the model parameters, $\theta$, is indicated explicitly. A derivation of this expression is given in Appendix. Assuming that each transmission pair in our dataset is independent, the overall likelihood is therefore given by the product of the contributions, $L^{(n)}(\theta)$, from each individual transmission pair, that is,
 
-## Distributions of the presymptomatic and total non-symptomatic proportion of transmissions
+$$
+L(\theta)=\prodn=1NL^{(n)}(\theta),
+$$
 
-Expressions for the proportion of transmissions, qP, generated prior to symptom onset, are given for the individual models above. Once asymptomatic cases are accounted for, the overall non-symptomatic proportion of transmissions can be written aspAxA+(1−pA)qPpAxA+(1−pA),where pA is the proportion of infected individuals who remain asymptomatic and xA is the ratio between the average number of secondary cases generated by an asymptomatic host and the number generated by a host who develops symptoms at some stage during infection. A derivation of this expression is given in Appendix.
+where $N$ is the total number of transmission pairs.
 
-For each model, we used the posterior parameter distributions that were obtained when we fitted the model to data to obtain a sample from the posterior distribution of qP. In order to estimate the total proportion of non-symptomatic transmissions, we assumed the distributionspA∼Beta(85,186),[mean 0.31, standard deviation 0.03],xA∼Lognormal(−1.04,0.652),[mean 0.44, standard deviation 0.32],which are consistent with estimates in Buitrago-Garcia et al., 2020. These distributions are shown in Figure 3—figure supplement 1. We then combined samples from the assumed distributions of pA and xA with the sample that we generated from the posterior distribution of qP to obtain a distribution for the total proportion of non-symptomatic transmissions.
+To account for uncertainty in the exact symptom onset times within the day of onset (and so avoid imparting bias by fitting continuous-time models to discrete-time symptom onset data), we fitted the models to the data using data augmentation MCMC (Thompson, 2020, Ferguson et al., 2005, Cauchemez et al., 2004). In alternating steps of the chain, we updated either the vector of model parameters, $N$, or the exact symptom onset times of each infector and infectee. The chain was run for 2.5 million steps, of which the first 500,000 were discarded as burn-in. Posterior distributions of model parameters were obtained by recording only every 100 iterations of the chain (assuming independent uniform prior distributions for each entry of $\theta$). Point estimates of model parameters (Supplementary file 1) were obtained by calculating the posterior mean of $\theta$. Full details of the MCMC procedure are given in Appendix.
 
-## Contact tracing and isolation
+In order to provide a straightforward comparison of the goodness of fit between models, we also determined the parameters, $\theta^$, that maximised the likelihood, $L(\theta)$, for each model under the assumption that each host developed symptoms exactly in the middle of the known onset date. The AIC for each model could then be calculated as
 
-First, we considered the proportion of transmissions that can be prevented if a symptomatic host is isolated d1 days after symptom onset. Assuming that a proportion ε1 of infectious contacts that would otherwise occur are prevented during the isolation period (and neglecting any transmissions that occur after the end of the isolation period), the overall proportion of transmissions prevented through isolation isε1(1−Ftost(d1)).
+$$
+AIC=2\times(numberofestimatedparameters)−2log⁡(L(\theta^)),
+$$
 
-We then predicted the proportion of the presymptomatic infectious contacts of a symptomatic index case that will be found, if contacts are traced up to d2 days before the time of symptom onset of the index case. In this scenario, assuming that it is possible to trace a fraction ε2 of the host’s presymptomatic contacts (at times when tracing takes place), then the proportion of presymptomatic infectious contacts found is equal toε2(qP−Ftost(−d2))qP.
+where three parameters were estimated for the variable infectiousness and Ferretti models, and two parameters for the constant infectiousness and independent transmission and symptoms models. Since the maximum likelihood estimators, $\theta^$, did not account for uncertainty in exact symptom onset times, they were not used elsewhere in our analyses (however, these all lay within the credible intervals obtained in the MCMC procedure, which are given in Supplementary file 1).
 
-Finally, we considered the proportion of onward transmissions that can be prevented if an infected individual, who is identified through contact tracing, is isolated d3 days after exposure. Assuming that a proportion d3 of infectious contacts that would otherwise occur are prevented during the isolation period, the overall proportion of onward transmissions prevented through isolation isε3(1−Fgen(d3)).
+### Distributions of the presymptomatic and total non-symptomatic proportion of transmissions
 
-In the main text (Figure 4), we assumed that ε1=ε2=ε3=1 (i.e., isolation of symptomatic hosts, contact identification, and isolation of infected contacts are all 100% effective). Values of ε1, ε2, and ε3 below 1 are considered in Figure 4—figure supplement 1.
+Expressions for the proportion of transmissions, $q_{P}$, generated prior to symptom onset, are given for the individual models above. Once asymptomatic cases are accounted for, the overall non-symptomatic proportion of transmissions can be written as
+
+$$
+\frac{p_{A}x_{A}+(1−p_{A})q_{P}}{p_{A}x_{A}+(1−p_{A})},
+$$
+
+where $p_{A}$ is the proportion of infected individuals who remain asymptomatic and $x_{A}$ is the ratio between the average number of secondary cases generated by an asymptomatic host and the number generated by a host who develops symptoms at some stage during infection. A derivation of this expression is given in Appendix.
+
+For each model, we used the posterior parameter distributions that were obtained when we fitted the model to data to obtain a sample from the posterior distribution of $q_{P}$. In order to estimate the total proportion of non-symptomatic transmissions, we assumed the distributions
+
+$$
+p_{A}∼Beta(85,186),[mean 0.31, standard deviation 0.03],x_{A}∼Lognormal(−1.04,0.65^{2}),[mean 0.44, standard deviation 0.32],
+$$
+
+which are consistent with estimates in Buitrago-Garcia et al., 2020. These distributions are shown in Figure 3—figure supplement 1. We then combined samples from the assumed distributions of $p_{A}$ and $x_{A}$ with the sample that we generated from the posterior distribution of $q_{P}$ to obtain a distribution for the total proportion of non-symptomatic transmissions.
+
+### Contact tracing and isolation
+
+First, we considered the proportion of transmissions that can be prevented if a symptomatic host is isolated $d_{1}$ days after symptom onset. Assuming that a proportion $\epsilon_{1}$ of infectious contacts that would otherwise occur are prevented during the isolation period (and neglecting any transmissions that occur after the end of the isolation period), the overall proportion of transmissions prevented through isolation is
+
+$$
+\epsilon_{1}(1−F_{tost}(d_{1})).
+$$
+
+We then predicted the proportion of the presymptomatic infectious contacts of a symptomatic index case that will be found, if contacts are traced up to $d_{2}$ days before the time of symptom onset of the index case. In this scenario, assuming that it is possible to trace a fraction $\epsilon_{2}$ of the host’s presymptomatic contacts (at times when tracing takes place), then the proportion of presymptomatic infectious contacts found is equal to
+
+$$
+\frac{\epsilon_{2}(q_{P}−F_{tost}(−d_{2}))}{q_{P}}.
+$$
+
+Finally, we considered the proportion of onward transmissions that can be prevented if an infected individual, who is identified through contact tracing, is isolated $d_{3}$ days after exposure. Assuming that a proportion $d_{3}$ of infectious contacts that would otherwise occur are prevented during the isolation period, the overall proportion of onward transmissions prevented through isolation is
+
+$$
+\epsilon_{3}(1−F_{gen}(d_{3})).
+$$
+
+In the main text (Figure 4), we assumed that $\epsilon_{1}=\epsilon_{2}=\epsilon_{3}=1$ (i.e., isolation of symptomatic hosts, contact identification, and isolation of infected contacts are all 100% effective). Values of $\epsilon_{1}$, $\epsilon_{2}$, and $\epsilon_{3}$ below 1 are considered in Figure 4—figure supplement 1.

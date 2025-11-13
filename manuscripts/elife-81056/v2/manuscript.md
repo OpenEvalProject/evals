@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03hsf0573 Department of Biology, College of William and Mary Williamsburg United States
+1. Department of Biology, College of William and Mary Williamsburg United States ([ROR:03hsf0573](https://ror.org/03hsf0573))
 
 † Corresponding author
 
@@ -43,27 +43,47 @@ The evolution experiment was conducted in two genetic backgrounds. While most S.
 
 From each ancestral strain, 10 replicate populations were evolved via serial transfer for 350–400 mitotic generations, half punctuated with sexual cycles every 40 generations, and two without beads as controls. YJM311 was evolved for 8 sexual cycles, while YJM128 was evolved for 9. Populations were grown in limiting medium in glass tubes in the presence of a plastic bead (Figure 1A–B). After growth, beads were washed, suspended in water, and sonicated to detach cells. The cell suspension was transferred to the next tube for growth (Figure 1—figure supplement 1). In YJM128, the sexual control failed to propagate after the first cycle. Therefore, a full complement of controls (three asexual and three sexual) were subsequently initiated and evolved in the same manner.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig1-v2.jpg)
+
+**Figure 1.:** (A) Image of a 7 mm experimental bead; close-up image with attached cells expressing mCherry, scale bar represents 50 µm. (B) Whole population-bead adherence of replicate populations over the experimental cycles, as estimated at the end of the experiment from cryopreserved stocks. All replicates of one background were grown and measured in one assay to test their adherence ability (including control populations that were not evolved in the presence of a bead). Y-axis plots the number of cells adhering to a plastic bead on a log scale, as estimated by hemocytometer counts (± S.E.M.). Along with the ancestral timepoint, for each population at each timepoint, cells from eight replicate beads were counted in YJM311 (670 beads in total); for YJM128, four replicate beads were counted (542 beads in total).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Solid arrows represent steps in serial transfer; dashed lines represent punctuated sexual treatments. Populations were evolved on a 12-day cycle. In each cycle, populations were grown in 10 ml of minimal medium in a glass tube containing a sterile 7 mm polystyrene bead for 48 hr with rotation. The bead was removed, washed, suspended in water, and gently sonicated to detach cells from the bead. The cell suspension was used to inoculate the next 10 ml tube. After four serial transfers, asexual populations were refrigerated and sexual populations were sporulated for 48 hr. Asci were digested, germinated and mated. Refrigerated cultures and mated spores were used to begin the next 12-day cycle.
+
 The number of cells attaching to the bead increased over time in the experimental populations (Figure 1; Supplementary file 1c). The data were analyzed with a linear mixed-effect model (LMM); coefficients for the treatment x cycle interaction estimate the effect a given treatment had over time on the number of cells adhering to a bead, as measured by hemocytometer counts. In both genetic backgrounds, the interaction coefficients were positive and sexual populations showed a larger effect than the asexual (YJM311, asexual*cycle = 0.054 (confidence interval ± 0.048), sexual*cycle = 0.184 (±0.048); YJM128, asexual*cycle = 0.47 (±0.242), sexual*cycle = 0.598 (±0.254)). Hence, as has been demonstrated in other evolution experiments in microorganisms (Zeyl and Bell, 1997; Goddard et al., 2005; McDonald et al., 2016; Kosheleva and Desai, 2018; Kaltz and Bell, 2002; Lachapelle and Bell, 2012), sexual populations showed increased adaptation in comparison to asexual populations.
 
 In order to interrogate other effects of adherence selection, at the end of the experiment, ten individual clones were isolated from each population from four timepoints (for YJM311, cycles 2, 4, 6, 8, and for YJM128, cycles 1, 3, 6, 9). For each genetic background, over 400 clones, along with 20 ancestral recombinant offspring, were arrayed in a 96-well plate format for analysis of multicellular phenotypes.
 
-## Plastic adherence ability
+### Plastic adherence ability
 
 The panel of clones was first assayed for plastic adherence ability (Figure 2A with Figure 2—figure supplements 1 and 2). Plastic adherence was measured with a microplate reader that detected the fluorescence signal of cells remaining attached to a well in which culture was grown to saturation and gently rinsed. As expected, plastic adherence increased over time in the clones from experimental populations (YJM311: control*cycle = 0.008 (±0.056), asexual*cycle = 0.040 (±0.040), sexual*cycle = 0.100 (±0.040); YJM128: control*cycle = 0.016 (±0.076), asexual*cycle = 0.012 (±0.102); sexual*cycle = 0.187 (±0.114); Supplementary file 1d). Fluorescent signal could have evolved over the course of the experiment; indeed, from the beginning, YJM128 produced a brighter fluorescent signal than YJM311, suggesting the existence of genetic variants that could influence fluorescence expression. Despite the potential for noise in the measurement, the signal of increased adherence throughout the experiment was apparent in both genetic backgrounds. These clonal data support the results of the whole-population adherence measurement (Figure 1), in which cells attaching to a plastic bead were counted manually with a hemocytometer.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig2-v2.jpg)
+
+**Figure 2.:** Ten clones were isolated from each population at four timepoints and assayed in triplicate (except for flor formation, which had a single replicate). In all panels, large points represent the average of a treatment (asexual, sexual, control) ± 2 s.e.m.; smaller points represent the average of a replicate population ± s.e.m. Data at cycle 0 represent the average of 20 ancestral segregants. Representative images demonstrate the variation found in the phenotypes. (A) Plastic adherence was estimated by measuring the fluorescent signal of cells that adhered to the bottom of of a black, clear-bottom 96-well plate. (B) CCM was scored after growth on solid, glucose-limiting medium using the scale on the right, with 1 representing no biofilm and 5 the most structured colonies. (C) Flor formation was scored after growth in minimal medium using the scale on the right, with 0 representing no floating cells and 4 representing a full mat. (D) PSH was scored after growth on solid nitrogen-limiting medium. Images were processed to determine the percentage of growth pixels that were pseudohyphal compared to the central colony. The trajectory of replicate populations from each ancestral background can be found in Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Phenotypes were assessed as in Figure 2. Larger points represent replicate population averages, with each replicate represented by a different shape/color combination (as in Figure 4); smaller points represent measurements from individual clones. Fluorescence, CCM, and PSH are average values of three replicate measurements per clone; Flor is based on one replicate.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Phenotypes were assessed as in Figure 2. Larger points represent replicate population averages, with each replicate represented by a different shape/color combination (as in Figure 4); smaller points represent measurements from individual clones. Fluorescence, CCM, and PSH are average values of three replicate measurements per clone; Flor is based on one replicate.
+
 We next measured the ability of the clonal panel to express three other seemingly different multicellular phenotypes.
 
-## Biofilm colony formation
+### Biofilm colony formation
 
 The first multicellular phenotype was the ability to form complex colony morphology (CCM) on solid agar, which is indicative of the ability of a strain to form a differentiated biofilm colony, also known as a ‘fluffy colony’ (Kuthan et al., 2003; St’ovíček et al., 2010; Št’ovíček et al., 2014; Váchová et al., 2011; Maršíková et al., 2017). This phenotype is correlated with another multicellular phenotype (Hope and Dunham, 2014), mat formation, which is a biofilm that forms on semi-solid agar (Reynolds and Fink, 2001); we therefore only assayed CCM. Morphology was scored after growth on solid, glucose-limiting medium using a scale from 1 to 5, with 1 representing no biofilm and 5 representing the most structured colonies (Hope and Dunham, 2014; Granek and Magwene, 2010; Figure 2B with Figure 2—figure supplements 1 and 2).
 
 In both genetic backgrounds, the selected populations increased in their ability to exhibit CCM compared to the ancestor, while the control populations either maintained or decreased their expression (YJM311: control*cycle = −0.024 (±0.056), asexual*cycle = 0.119 (±0.039), sexual*cycle = 0.136 (±0.039); YJM128: control*cycle = 0.007 (±0.020), asexual*cycle = 0.048 (±0.026); sexual*cycle = 0.052 (±0.030); Supplementary file 1e ). YJM311 evolved to exhibit stronger CCM than YJM128, despite the latter evolving for one more cycle.
 
-## Flor formation
+### Flor formation
 
 The second multicellular phenotype was the ability to form a flor (or velum), which is a floating mat containing cells attached to one another in an extracellular matrix (Zara et al., 2009). Flors form at the liquid-air interface in static conditions and are most commonly found during sherry and wine making processes (Legras et al., 2016). Flor formation was scored after growth in minimal medium, with 0 representing no floating cells and 4 representing a full mat. The ability to form flors increased in both genetic backgrounds (Figure 2C with supplements 1 and 2), despite the cultures being grown with agitation. In YJM311, the ancestral clones showed no ability to generate flors, yet, its evolved populations did (control*cycle = 0.007 (±0.048), asexual*cycle = 0.075 (±0.034), sexual*cycle = 0.163 (±0.034); Supplementary file 1f). In YJM128, ancestral clones showed limited ability to form flors. The experimental populations either remained or increased in flor-forming ability, while control populations decreased in theirs (control*cycle = −0.109 (±0.032), asexual*cycle = 0.031 (±0.043); sexual*cycle = −0.003 (±0.048); Supplementary file 1f).
 
-## Pseudohyphal growth
+### Pseudohyphal growth
 
 The final phenotype, pseudohyphal growth (PSH), is a form of filamentous growth thought to represent a foraging strategy. It is characterized by substrate invasion and incomplete separation of mother-daughter cells growing in an elongated, unipolar budding pattern (Gimeno et al., 1992). This phenotype is sometimes correlated with invasive growth, so only PSH was assayed. Filamentous and invasive growth have been associated with pathogenicity and virulence in S. cerevisiae (McCusker et al., 1994a; Phadke et al., 2018; Palecek et al., 2002), as well as in other fungal pathogens of humans and plants (Lengeler et al., 2000). PSH was scored on solid nitrogen-limiting medium; images were processed to determine the percentage of growth that was pseudohyphal compared to the central colony. Unlike the previously assayed phenotypes, the two genetic backgrounds did not evolve similarly with respect to PSH.
 
@@ -75,13 +95,33 @@ The results from both genetic backgrounds suggest that the evolution of PSH was 
 
 Overall, our phenotyping data show that selection on the ability to adhere to a plastic surface generated a correlated response in multiple multicellular phenotypes, and nutrient limiting conditions favored a further multicellular phenotype in one of the backgrounds.
 
-## Hyper-multicellularity
+### Hyper-multicellularity
 
 To understand the phenotypic landscape of the evolved populations and to determine whether the different forms of multicellularity evolved in concert in individual clones, the clonal phenotype data were combined in a principal components analysis (PCA) (Figure 3 with supplements 1 and 2). In YJM311, the loadings of the first two components, which explain 78% of the variation, show that evolved clones with the most extreme values of plastic adherence and flor formation do not tend to also excel at PSH. There were clones, however, that evolved to excel in all of the phenotypes, while not obtaining the most extreme values of the individual traits. In YJM128, the first two loadings explain 70% of the variation, and again, PSH appeared separated from the other multicellular phenotypes. Individual correlations between traits bear out this interpretation (Figure 3—figure supplements 3 and 4). When grouped by experimental treatments, clones from control, asexual, and sexual populations tended to occupy their own, somewhat overlapping, phenotypic space.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig3-v2.jpg)
+
+**Figure 3.:** (Top panel) Principal components analysis of clones from ancestral and evolved populations. The loadings of PC1 for YJM311 were –0.616*Flor - 0.573*PA - 0.493*CCM +0.221*PSH; for PC2, they were 0.851*PSH +0.506*CCM - 0.137*Flor. In YJM128, the loadings of PC1 were 0.601*CCM +0.535*PA +0.451*Flor +0.386*PSH; for PC2, they were 0.852*PSH - 0.226*PA - 0.472*Flor. PCA with population and cycle information can be found in Figure 3—figure supplements 1 and 2, while individual correlations can be found in Figure 3—figure supplements 3 and 4. (Bottom panel) Principal components analysis with highlighted points representing strains chosen for virulence assays: blue circles represent low multicellularity clones; orange squares represent hyper-multicellular clones; gray triangles represent the rest of the clonal panel. In YJM311, the non-multicellular clones were chosen from ancestral and control populations, while in YJM128, they were chosen from ancestral and early experimental populations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Each point represents a single clone; ancestor- green, control- gray through black, asexual- light blue through dark blue, sexual- light red through dark red. Colors become darker as cycle number increases. In the first panel, shapes as in Figure 4 to highlight different replicate populations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Each point represents a single clone; ancestor- green, control- gray through black, asexual- light blue through dark blue, sexual- light red through dark red. Colors become darker as cycle number increases. In the first panel, shapes as in Figure 4 to highlight different replicate populations.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** All correlations were significant with p<0.001. The adjusted R2 for the relationships are as follows: PA vs. CCM: 0.167, PA vs. Flor: 0.306, PA vs. PSH: 0.020, CCM vs. Flor: 0.220, PSH vs Flor: 0.105, CCM vs. PSH: 0.015. Despite the statistical significance, most of these correlations explain little of the variance in the data; the presence of one multicellular phenotype does not necessarily predict the presence of another.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** All correlations were significant with p<0.001. The adjusted R2 for the relationships are as follows: PA vs. CCM: 0.235, PA vs. Flor: 0.071, PA vs. PSH: 0.0294, CCM vs. Flor: 0.121, PSH vs Flor: 0.0162, CCM vs. PSH: 0.102. Despite the statistical significance, most of these correlations explain little of the variance in the data; the presence of one multicellular phenotype does not necessarily predict the presence of another.
+
 In both backgrounds, as the populations evolved, there were individual clones that increased in all abilities, and became ‘hyper-multicellular’. Thus, a simple process of selection for plastic adherence led to correlated effects in multiple multicellular traits. These correlated effects were apparent both at the population-level, with mean phenotypes increasing in populations over the generations, but also at the individual-level with the evolution of hyper-multicellularity.
 
-## FLO11 length variation
+### FLO11 length variation
 
 One possible explanation for the increase in multiple forms of multicellularity is a change in a genetic element common to all four phenotypes. A genome-wide investigation into the genetic basis of three multicellular phenotypes (biofilm formation, PSH, and invasive growth) in a lab strain of S. cerevisiae found that each phenotype appeared to have its own set of hundreds of genes underlying its expression, but also some overlap in select transcription factors and signaling pathways (Ryan et al., 2012). Notably, the one element that all of the traits had in common, as do other aggregative phenotypes, is the requirement of the cell adhesin, Flo11p (Reynolds and Fink, 2001; Zara et al., 2005; Lo and Dranginis, 1998), which allows yeast cells to adhere to surfaces and other cells (Dranginis et al., 2007).
 
@@ -89,11 +129,23 @@ Flo11p is a cell surface protein with three domains: a C-terminal that facilitat
 
 To determine whether FLO11 length changed throughout the experiment, amplicons of the gene were analyzed with electrophoresis in a subset of clones from the final timepoint (Figure 4). In the YJM311 populations, five out of eight experimental populations ended with an approximate 1000 bp length increase in some or all clones, while none of the control clones showed an increase in length. It is unknown whether the change in length was due to independent de novo mutations or selection favoring an existing allele. The similar allelic length in multiple replicate populations favors the latter explanation. It is possible that during the generation of the starting recombinant pool, there was a mutation that was not detected in the subset of ancestral clones later chosen for analysis. In this genetic background, FLO11 length is not correlated with the strength of plastic adherence, nor with the other three multicellular phenotypes (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig4-v2.jpg)
+
+**Figure 4.:** In 8 ancestral clones and 5 clones per replicate population at the final cycle, the full gene was amplified and run through a BioAnalyzer to determine its length. Amplicons of this length have an accuracy of ±100 bp. x-axis: Anc refers to ancestor, A to asexual populations, and S to sexual populations, while a-d denote replicates; C refers to control populations, and a and s refer to the asexual and sexual controls, respectively. (A) In YJM311, it appears there were two major length alleles, with the possibility of derived variants with smaller changes in length. (B) In YJM128, it appears there were also two alleles, separated by ~500 bp. Clones from the final timepoint show variation in length. Correlations between length and different adherence phenotypes can be found in Figure 4—figure supplements 1 and 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** FLO11 length measurements, point shapes and point colors as in Figure 4. Each panel plots the allele length for a clone with one of its phenotypic measurements.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81056/elife-81056-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** FLO11 length measurements, point shapes and point colors as in Figure 3. Each panel plots the allele length for a clone with one of its phenotypic measurements.
+
 In YJM128, the ancestral pool likely had two alleles separated by a few hundred basepairs. The ending asexual populations appeared to have these alleles, with one much longer allele in a clone in one replicate. The ending sexual populations contained the ancestral alleles, as well as other variants both longer and shorter. Clones from one replicate could not be amplified (Sa), suggesting the possibility of a mutation in the region where the primers anneal. Again, FLO11 length was not correlated with the strength of plastic adherence, nor with the other three multicellular phenotypes (Figure 4—figure supplement 2).
 
 Thus, while FLO11 length evolved during the experiment, it does not appear to be the cause of the correlated response to selection on adherence. However, this does not rule out the possibility that FLO11 plays a role. It is possible that expression of the gene, through its complex regulatory network (Rupp et al., 1999; Octavio et al., 2009; Bumgarner et al., 2009), is related to the phenotypic response to adherence selection.
 
-## Virulence
+### Virulence
 
 To test the coincidental selection-accidental virulence hypothesis, we sought to determine if the evolved changes had an effect on virulence, and were particularly interested in the unexpected evolution of hyper-multicellular clones. Virulence was measured using larvae of the greater wax moth, Galleria mellonella, an invertebrate model used to study microbial pathogenesis and virulence (Pereira et al., 2018), including in S. cerevisiae (Phadke et al., 2018). Using the phenotyping data and the PCA results as a guide, for each genetic background, we identified six hyper-multicellular clones and six non-multicellular clones (Figure 5, Supplementary file 1a, b). We attempted to identify evolved clones that excelled in all measured aggregative traits; therefore, not all were from the final time point, but all were from late in the experiment. In choosing the non-multicellular strains, clones were taken from a variety of time points, including the ancestor, control, and experimental populations at different time points. This allowed us to verify that it was the evolved hyper-multicellular phenotype and not just long-term growth in the evolution medium.
 
@@ -123,58 +175,159 @@ As humans continue to generate novel ecological niches at an unprecedented rate 
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>FLO11</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>YIR019C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YJM311</td>
+      <td>Gift from Paul Magwene at Duke</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YJM128</td>
+      <td>Gift from Paul Magwene at Duke</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Saccharomyces cerevisiae)</td>
+      <td>HMY7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>YJM311 homozygous for PGK1 tagged with mCherry-KanMX</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Saccharomyces cerevisiae)</td>
+      <td>HMY355</td>
+      <td>This paper</td>
+      <td></td>
+      <td>YJM128 homozygous for PGK1 tagged with mCherry-HygMX</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Galleria mellonella)</td>
+      <td>Galleria mellonella larvae</td>
+      <td>Vanderhorst Wholesale Inc.</td>
+      <td></td>
+      <td>https://www.waxworms.net/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS34</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_83796</td>
+      <td>Source of mCherry for tagging original strains</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FLO11-for</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCTCAAAA ATCCATATA CGCACACTA TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FLO11-rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTAGAATAC AACTGGAAG AGCGAGTAG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MasterPure Yeast DNA Purification Kit</td>
+      <td>Lucigen</td>
+      <td>Cat #: MPY80200</td>
+      <td>DNA extraction kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent DNA 7500 kit</td>
+      <td>Agilent</td>
+      <td>Cat #: 5067–1506</td>
+      <td>PCR product length analysis kit</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7 mm polystyrene beads</td>
+      <td>American Educational Products</td>
+      <td>Product #: 3276</td>
+      <td>Plastic beads used in the evolution experiment (Figure 1A)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 To generate strains appropriate for downstream phenotyping assays, the original diploid isolates were engineered to express a fluorescence protein by fusing mCherry to the C-terminal region of the highly expressed PGK1 gene, generating HMY7 (YJM311 PGK1-mCherry-KanMX) (Deschaine et al., 2018) and HMY355 (YJM128 PGK1-mCherry-HygMX). After being subject to selection for 8–9 cycles, clones with different multicellular phenotypes were isolated from each replicate population. Original isolates were generously provided by Paul Magwene (Duke University).
 
-## Media
+### Media
 
 Experimental populations were grown in Evolution Medium (EM; 0.17% yeast nitrogen base without ammonium sulfate and without amino acids, 0.1% glutamic acid, 0.1% dextrose) supplemented with G418 (200 μg/ml) or Hygromycin B (300 μg/ml). Cells were sporulated on solid medium (1% potassium acetate, 2% agar) and digested using an overnight zymolyase- β-glucuronidase procedure (Goddard et al., 2005; Granek et al., 2013). Phenotypes were assayed on YPD (1% yeast extract, 2% peptone, 2% dextrose, 2% agar), low dextrose (LD) YPD (0.1% dextrose), 2 X SLAD (0.34% yeast nitrogen base without ammonium sulfate and without amino acids, 2% dextrose, 50 μmol ammonium sulfate, 2% agar), or in liquid SD (0.17% yeast nitrogen base without amino acids and with ammonium sulfate, 2% dextrose).
 
-## Experimental evolution
+### Experimental evolution
 
 HMY7 and HMY355 were grown in 10 ml YPD, sporulated, digested, grown to saturation in 10 ml EM, and used to inoculate 10 replicate populations: 4 sexual, 4 asexual, and 1 control of each reproductive type.
 
 Experimental and control populations derived from YJM311 were evolved for 8 12-day cycles, for a total of ~350 generations; populations from YJM128 were evolved for 9 cycles, for a total of ~400 generations. In each cycle, experimental populations were grown in 10 ml of EM in a glass tube containing a sterile 7 mm polystyrene bead (American Education Products), population size ~2 x 108. After 48 hr at 30 °C in a rotator drum, the bead was removed with sterile disposable forceps, washed twice, suspended in 500 µl of sterile H2O in a microcentrifuge tube, and gently sonicated (UP200St with VialTweeter, Heischler Ultrasound Technology) to detach cells from the bead. The cell suspension was used to inoculate the next 10 ml EM tube. The number of cells on the bead varied over the experiment. Control populations were also grown in 10 ml of EM in a glass tube, but without the presence of a bead. Instead, 10 μl of culture were used to inoculate the next tube, which was approximately the same number of cells as that being transferred from bead adherence in the experimental populations at the start of the experiment. After 4 serial transfers, asexual populations were refrigerated and sexual populations were sporulated for 48 hr. Asci were digested overnight, and the spores resuspended in 1 ml of EM to allow germination and mating (population size ~105 spores). Finally, the refrigerated cultures and the mated spores were used to begin the next 12-day cycle.
 
-## Population phenotyping
+### Population phenotyping
 
 To estimate adherence evolution, all populations from all cycles were assayed using the same batch of medium. 10 ml EM cultures were inoculated with cryopreserved glycerol stocks and grown for 48 hr. From these, two replicate test tubes were inoculated with two beads in each, for a total of four beads per population per time point. The cultures were grown and the beads processed as in the experimental cycle; cell counts were made using a hemocytometer with the sonicated cell suspension. This entire process was repeated a second time, for a total of 8 beads per population per cycle for YJM311 populations.
 
-## Clonal phenotyping
+### Clonal phenotyping
 
 Twenty clones were isolated from the ancestral population and 10 clones were isolated from each replicate population at four cycle timepoints: 2, 4, 6, 8, for YJM311, and 1, 3, 6, 9, for YJM128. The clonal strains were arrayed in a 96-well format and cryopreserved. To assay social phenotypes, saturated YPD cultures were resuspended and pinned to different media using a 96-pin multi-blot replicator (V&P Scientific no. VP408FP6), wrapped in parafilm, and incubated at 30 °C.
 
-## Plastic adherence
+#### Plastic adherence
 
 Clones were grown in 200 μl EM for 48 hr in three replicate black, clear-bottom, non-treated 96-well plates. Optical density was measured, then culture was removed, and plates were gently washed with water three times and dried upside down for 1 hr. Fluorescence readings were taken with a Spectramax M2e (Molecular Devices) and used as a proxy for the number of cells that remained attached to the wells. To account for differences in growth, each fluorescence reading was divided by the optical density of the well.
 
-## Flor formation
+#### Flor formation
 
 Clones were grown in 200 μl SD for 5 days and imaged on an Olympus SZX16 dissecting scope. Flor formation was scored using the scale in Figure 2.
 
-## Complex colony morphology (CCM)
+#### Complex colony morphology (CCM)
 
 Clones were pinned to 3 replicate LD omni trays, incubated for 7 days, and imaged on an EPSON Expression 11000 XL scanner. Colonies were scored for complexity using the scale in Figure 2.
 
-## Pseudohyphal growth
+#### Pseudohyphal growth
 
 Clones were pinned to three replicate 2 X SLAD omni trays, incubated for 8 days, and scanned. Images were processed using a custom script that determined the percentage of colony pixels comprising the pseudohyphae (Lenhart et al., 2019).
 
-## Data analysis
+#### Data analysis
 
 Bead cell count data from experimental populations were log-transformed and analyzed using a mixed effects linear model in R (R Development Core Team, 2020) with the lme4 package (Bates et al., 2015). Replicate population within treatments (control, asexual, sexual) was considered a random effect. Because all populations were begun from a single ancestral pool, the intercept was set as the mean value of the ancestor and not allowed to vary among treatments. Therefore, the only fixed effect was the interaction between cycle and treatment, which tested the differences among the slopes of the three treatments. The analysis was performed on the number of cells counted on a hemocytometer, which ranged from zero to a few hundred cells in the later cycles. Thus, the coefficients represent the effect on the number of cells per cycle on these counts. Clonal data were analyzed similarly, with the untransformed average score of a phenotype as the independent variable. Thus, the coefficients represent the effect of the treatment over time on the measurement of the phenotype. Finally, the average phenotyping data for each clone were combined for a principal components analysis in R using the princomp function. Figures were produced using ggplot2 (Wickham, 2016).
 
-## Clones for virulence assay
+### Clones for virulence assay
 
 The virulence assay was first conducted with clones from the YJM311 background. Clones were selected to reflect changes that occurred over the course of the entire experiment, specifically the evolution of hyper-multicellularity in experimental populations. Therefore, the low-multicellularity clones were chosen from the ancestral segregants, as well as early and ending control populations. The high-multicellularity clones were chosen from the ending experimental populations. Because CCM was correlated with plastic adherence and flor formation, it was used as an initial screen to find clones of interest (either smooth or very complex colonies); data on the other phenotypes were then investigated. Once a subset of clones was chosen, they were re-assayed to verify the phenotypes and used in virulence assays. In the second background, YJM128, clones were chosen in an attempt to isolate the effect of hyper-multicellularity, thus, other than ancestral segregants, all clones were chosen from the experimental populations using the same process. Since the high-multicellularity clones should have exhibited some level of all of the phenotypes (when possible) and PSH was evolving independently, the chosen clones do not stand out as the most extreme on the PCA plot.
 
-## Virulence assay
+### Virulence assay
 
 10 ml EM cultures of evolved and ancestral strains Supplementary file 1a were grown for 48 hr, washed and resuspended in sterile water to a concentration of 109 cells/ml based on hemocytometer counts. 4 μl of culture or control water was injected into the final posterior proleg of Galleria mellonella larvae (Vanderhorst Wholesale Inc, https://www.waxworms.net) weighing on average 180 (±20) mg using a Hamilton PB600-1 Repeating Dispenser with a 27-gauge needle. Each strain was injected into 20 larvae on the same day using the same shipment of G. mellonella; 20 control larvae were injected at the start of the assay and at the end. The same assay was repeated the next day with the same shipment of larvae, for a total of 40 larvae/strain/shipment. Multiple shipments were used for the virulence measurements, for a total of 200 larvae per strain for YJM311-derived strains and 180 larvae per strain for YJM128-derived strains. After injection, larvae were incubated at 30 °C and survival was monitored for 7 days; larvae that turned black and no longer responded to tactile stimulation were considered dead and removed from the population, as were larvae beginning to pupate.
 
 Data were analyzed with a mixed effects Cox model using the coxme package (Therneau, 2020) in R (R Development Core Team, 2020). Death was recorded as the day larvae were removed from the population; larvae were censored if removed for pupation. The model included treatment (high vs. low multicellular) as a fixed effect, and strain and larval batch as random effects.
 
-## FLO11 length
+### FLO11 length
 
 Of the clones assayed for multicellular phenotypes, 8 ancestral clones and 5 clones from the final time point of each replicate population were chosen for length analysis. Genomic DNA was extracted using the MasterPure Yeast DNA Purification Kit (Lucigen). FLO11 was amplified with Phusion polymerase (New England BioLabs) and primers targeting the entire gene (forward: GCC TCA AAA ATC CAT ATA CGC ACA CTA TG, reverse: TTA GAA TAC AAC TGG AAG AGC GAG TAG). Cycle conditions followed manufacturers recommendations and included a melting temperature of 58 °C and 3 min extension time. Gene length was estimated by running PCR amplicons through the Agilent 2100 BioAnalyzer using the Agilent DNA 7500 kit (as in ref [Oppler et al., 2019]).

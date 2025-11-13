@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Department of Molecular Biology, Princeton University Princeton United States
+1. Department of Molecular Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
 ## Abstract
 
-In Drosophila melanogaster embryos, somatic versus germline identity is the first cell fate decision. Zygotic genome activation (ZGA) orchestrates regionalized gene expression, imparting specific identity on somatic cells. ZGA begins with a minor wave that commences at nuclear cycle (NC)8 under the guidance of chromatin accessibility factors (Zelda, CLAMP, GAF), followed by the major wave during NC14. By contrast, primordial germ cell (PGC) specification requires maternally deposited and posteriorly anchored germline determinants. This is accomplished by a centrosome coordinated release and sequestration of germ plasm during the precocious cellularization of PGCs in NC10. Here, we report a novel requirement for Zelda and CLAMP during the establishment of the germline/soma distinction. When their activity is compromised, PGC determinants are not properly sequestered, and specification is disrupted. Conversely, the spreading of PGC determinants from the posterior pole adversely influences transcription in the neighboring somatic nuclei. These reciprocal aberrations can be correlated with defects in centrosome duplication/separation that are known to induce inappropriate transmission of the germ plasm. Interestingly, consistent with the ability of bone morphogenetic protein (BMP) signaling to influence specification of embryonic PGCs, reduction in the transcript levels of a BMP family ligand, decapentaplegic ( dpp ), is exacerbated at the posterior pole.
+In Drosophila melanogaster embryos, somatic versus germline identity is the first cell fate decision. Zygotic genome activation (ZGA) orchestrates regionalized gene expression, imparting specific identity on somatic cells. ZGA begins with a minor wave that commences at nuclear cycle (NC)8 under the guidance of chromatin accessibility factors (Zelda, CLAMP, GAF), followed by the major wave during NC14. By contrast, primordial germ cell (PGC) specification requires maternally deposited and posteriorly anchored germline determinants. This is accomplished by a centrosome coordinated release and sequestration of germ plasm during the precocious cellularization of PGCs in NC10. Here, we report a novel requirement for Zelda and CLAMP during the establishment of the germline/soma distinction. When their activity is compromised, PGC determinants are not properly sequestered, and specification is disrupted. Conversely, the spreading of PGC determinants from the posterior pole adversely influences transcription in the neighboring somatic nuclei. These reciprocal aberrations can be correlated with defects in centrosome duplication/separation that are known to induce inappropriate transmission of the germ plasm. Interestingly, consistent with the ability of bone morphogenetic protein (BMP) signaling to influence specification of embryonic PGCs, reduction in the transcript levels of a BMP family ligand, decapentaplegic (dpp), is exacerbated at the posterior pole.
 
 ## Introduction
 
@@ -28,41 +28,205 @@ Though the level of transcription during the minor wave of ZGA is relatively mod
 
 ## Results
 
-## Embryos compromised for ZGA regulators have reduced PGC counts
+### Embryos compromised for ZGA regulators have reduced PGC counts
 
 Previous studies on the ZGA regulator Zld suggested that PGC formation is relatively normal in embryos derived from females carrying zld- germline clones; however, these studies only showed that PGCs are present (Liang et al., 2008). To determine if compromising zld has any undetected effect on nascent germline formation and/or specification, we counted the number of PGCs in embryos maternally compromised for zld. For this purpose, we used a germline driver, maternal-tubulin-GAL4 (or mat-Gal4, i.e. 67.15), to drive expression of a zld shRNA transgene, pUAS-zld (zldi1m) in the mother. This RNAi knockdown strategy has been shown to recapitulate the phenotypic consequences observed in zld- germline clone embryos (Sun et al., 2015; Yamada et al., 2019). As indicated in Table 1, we observe a small but significant decrease in the number of PGCs in syncytial and cellular blastoderm stage zldi1m embryos. While control embryos (egfpim) derived from mothers expressing an shRNA directed against egfp had 19.2 PGCs on average (n=12), zldi1m embryos had an average of 13.7 PGCs (n=15; p=0.021 by t-test) (Table 1).
+
+**Table 1.**
+ Primordial germ cell (PGC) counts decrease with zld or clamp knockdown.Table 1—source data 1.Raw data summarized in Table 1: Primordial germ cell (PGC) counts for individual embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Mean PGCs</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>egfpim</td>
+      <td>19.2</td>
+      <td>3.67</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>zldi1m</td>
+      <td>13.7</td>
+      <td>6.13</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>egfpiz</td>
+      <td>19.7</td>
+      <td>1.95</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>zldi2z</td>
+      <td>12.9</td>
+      <td>3.94</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>clampiz</td>
+      <td>12.6</td>
+      <td>5.48</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
 It remains possible that the maternal RNAi-based knockdown could also impact zygotic gene expression as the processed dsRNAs, deposited in the egg, likely persist and remain active in the embryos. Therefore, wherever possible we have confirmed the phenotypes using just zygotic knockdown (see below) wherein the Gal4 protein and UAS RNAi transgenes are provided by the mother and the father, respectively. Furthermore, although it is thought that zld is not required during oogenesis, it is possible that zld has a subtle and as yet unknown role in the assembly and/or activity of the maternal PGC determinants. Thus, we tested whether a strictly zygotic knockdown of zld also impacted the number of PGCs. In this case, we mated mat-Gal4 (i.e. 67.15) virgin females to males carrying UAS-zldi RNAi (zldi2z) or UAS-egfpi as a control (egfpiz) (Colonnetta et al., 2021a; Duan et al., 2021). While the egfpiz embryos had an average of 19.7 PGCs (n=10), the zldi2z embryos had only 12.9 PGCs on average (n=8; p=0.002 by t-test) (Table 1). This finding indicates that PGC formation is impacted by reduced zld activity in the embryo, and not due to some unexpected effect during oogenesis.
 
 We wondered whether the effects of compromising zld on PGC formation are specific to this ZGA factor, or whether other factors implicated in ZGA might have similar phenotypes. To address this question, we used a similar zygotic knockdown strategy to reduce the activity of CLAMP in early embryos. Like zldi2z, embryos zygotically compromised for CLAMP (clampiz) also have fewer PGCs (12.6; p=0.002 compared to egfpiz control by t-test) (Table 1). Thus, diminishing activities of two different ZGA regulators results in a modest but comparable reduction in total PGC number.
 
-## Germ plasm components are mislocalized in embryos compromised for ZGA regulators
+### Germ plasm components are mislocalized in embryos compromised for ZGA regulators
 
 Reduction in PGC numbers can be a consequence of a failure to properly incorporate maternal germline determinants during PGC cellularization (Lerit et al., 2017). To investigate if PGC loss observed upon compromising zld or clamp function is due to this possibility, we first examined Vasa protein levels in newly formed PGCs. We found that PGCs from the egfpim control embryos have uniformly high levels of Vasa (n=123) (Figure 1A). In contrast, we observed a significant reduction in Vasa protein levels using two different UAS zld RNAi transgenes, zldi1m and zldi2m (Figure 1B and C), to knock down zld mRNA during oogenesis. For zldi1m embryos, 38% of PGCs (n=199; p<0.001 by Fisher’s exact test) had reduced levels of Vasa, while in zldi2m embryos, reduced levels of Vasa were observed in 52% of the PGCs (n=187, p<0.001 by Fisher’s exact test). In addition to a reduction in Vasa protein, we found that PGCs are located at unusual positions in the zld knockdown embryos. In the example shown in Figure 1B, there are several PGCs in the interior of the embryo instead of at the surface (marked with an asterisk and an arrowhead in panel B), while there are overlying somatic nuclei. In Figure 1C, there is a single PGC (arrowhead) located on the dorsal side of the embryo away from the posterior PGC cluster while the rest of the PGCs are clustered together albeit most show reduced level of Vasa which are marked (see legend).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig1-v1.jpg)
+
+**Figure 1.:** Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Vasa antibodies (green) to assess PGC integrity. Shown are representative embryos at nuclear cycle (NC)13 (late syncytial blastoderm stage) of respective genotypes. (A) egfpim embryos have PGCs with uniformly high levels of Vasa (arrowhead, green), but (B) zldi1m and (C) zldi2m embryos have low levels of Vasa (panel C, asterisk and arrowhead) in PGCs and these PGCs often spread away from the posterior pole in the interior of the embryo (panel B, two such PGCs are marked with an asterisk and an arrowhead). Scale bar represents 10 µm. Images shown are maximum intensity projections through an embryo to capture all PGCs through the Z plane.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Vasa antibodies (red) to assess PGC formation and cellularization. Shown are a few examples of embryos at nuclear cycle (NC)12/13 (late syncytial blastoderm stage) of respective genotypes. (A) egfpim embryos have PGCs with uniformly high levels of Vasa but zldi1m embryos show cells with low levels of Vasa in PGCs (panel B, asterisk), or fewer PGCs (panel C). On rare occasions PGCs are formed away from each other (empty space marked with an arrowhead) unlike wild type where they are in a continuous monolayer. Scale bar represents 10 µm. Images shown are maximum intensity projections through an embryo to capture all PGCs through the Z plane.
 
 Like Vasa protein, we found that mRNAs encoding the germline determinants pgc and gcl are mislocalized when zld function is compromised. pgc mRNA is not tightly sequestered in PGCs located at posterior pole in zldi1m embryos, but instead spreads anteriorly so that the mRNA is associated with nearby somatic nuclei (Figure 2). The distribution profile of pgc mRNA in several egfpim and zldi1m embryos is shown in Figure 2C and D. The spreading of germ plasm mRNAs is not restricted to pgc as other germ plasm mRNAS such as gcl (Figure 3) and osk (Figure 3—figure supplement 1) are also not properly sequestered in cellularizing PGCs in zldi1m knockdown embryos. We found that germ plasm mRNAs spread away from the posterior in 57% of zldi1m (n=110; p<0.001) embryos while spreading was observed in only 12.1% of control egfpim embryos (n=99) (e.g. dark blue trace in panel C). Similar results were obtained for zldi2m embryos: spreading was observed in 57% of zldi2m (n=23; p<0.001).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig2-v1.jpg)
 
-**Figure 2.:** polar granule component (pgc) RNA away from the posterior pole in syncytial and cellular blastoderm zld knockdown embryos.Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for pgc (green) on 0- to 4-hr-old paraformaldehyde-fixed (A) egfpi and (mB) zldi embryos to assess germ plasm localization. Scale bar represents 10 µm. Images shown are representative maximum intensity projections through nuclear cycle (NC)13 (late syncytial blastoderm) embryos to capture total germ plasm localization in Z. Sequestration to the posterior cap is shown with an arrowhead while germ plasm spread into the soma is indicated with an asterisk. The degree of germ plasm spread was measured by fluorescence intensity from maximum projections (visualized using 1mpgc) in the posterior 75 µm of (C) egfpi and (mD) zldi embryos. Each plot shows a representative experiment, with each line depicting germ plasm distribution of an individual embryo (see Materials and methods for details of quantification).1m
+**Figure 2.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for pgc (green) on 0- to 4-hr-old paraformaldehyde-fixed (A) egfpim and (B) zldi1m embryos to assess germ plasm localization. Scale bar represents 10 µm. Images shown are representative maximum intensity projections through nuclear cycle (NC)13 (late syncytial blastoderm) embryos to capture total germ plasm localization in Z. Sequestration to the posterior cap is shown with an arrowhead while germ plasm spread into the soma is indicated with an asterisk. The degree of germ plasm spread was measured by fluorescence intensity from maximum projections (visualized using pgc) in the posterior 75 µm of (C) egfpim and (D) zldi1m embryos. Each plot shows a representative experiment, with each line depicting germ plasm distribution of an individual embryo (see Materials and methods for details of quantification).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig3-v1.jpg)
+
+**Figure 3.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for gcl (red) on 0- to 4-hr-old paraformaldehyde-fixed (A,A’) egfpim (nuclear cycle [NC]12) and (B,B’) zldi1m (NC12) embryos to assess gcl RNA localization. Scale bar represents 10 µm. Images shown are representative maximum intensity projections through NC12 (late syncytial blastoderm) embryos to capture total germ plasm localization in Z. Sequestration to the posterior cap is shown with an asterisk while germ plasm spread into the soma is indicated with an arrowhead. The degree of germ plasm spread was measured by fluorescence intensity from maximum projections (visualized using gcl-specific signal) in the posterior 75 µm of (C) egfpim and (D) zldi1m embryos. Each plot shows a representative experiment, with each line depicting germ plasm distribution of an individual embryo (see Materials and methods for details of quantification).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for osk on 0- to 4-hr-old paraformaldehyde-fixed (A) egfpim and (B) zldi1m embryos to assess osk RNA localization. Scale bar represents 10 µm. Images shown are representative maximum intensity projections through nuclear cycle (NC)10 (early syncytial blastoderm) embryos to capture total germ plasm localization in Z. In egfpim embryos, a large fraction of osk RNA is seen associated with the posterior cortex (marked with an arrowhead) whereas in zldi1m embryos, osk RNA is relatively uniformly distributed away from the posterior cortex (marked with an asterisk). The degree of germ plasm spread was measured by fluorescence intensity from maximum projections (visualized using osk-specific signal) in the posterior 75 µm of (C) egfpim and (D) zldi1m embryos. Each plot shows a representative experiment, with each line depicting germ plasm distribution of an individual embryo (see Materials and methods for details of quantification).
 
 As in the case of Vasa protein, ectopic localization of the germ plasm in syncytial blastoderm stage embryos does not appear to be due simply to some unknown defect in germ plasm assembly caused by the depletion of zld mRNA during oogenesis. However, maternal RNAi-based knockdown can also influence zygotic gene expression. Thus, we sought to examine whether just zygotic knockdown yields similar phenotypic consequences. We found that germ plasm mRNAs are not properly sequestered in cellularizing PGCs even when zld is knocked down zygotically. As illustrated in Figure 4, pgc mRNAs are found associated with somatic nuclei that are located away from the posterior pole in early syncytial blastoderm stage zldi1m (Figure 4B) and zldi2z (Figure 4C) embryos unlike in control egfpiz embryos (Figure 4A). Moreover, this is not unique to zld knockdowns, as spreading of germ plasm mRNAs into the soma is also observed in clampiz zygotic knockdowns. Figure 4—figure supplement 1 shows that gcl mRNAs associate with somatic nuclei that are distant from posterior pole in clampiz knockdown embryos, while gcl mRNAs are properly localized in the egfpiz control (compare Figure 4—figure supplement 1A and B). As the zygotic knockdown phenotypes appear to qualitatively resemble the maternal knockdown, together these data suggest that Zld and CLAMP contribute to germline/soma distinction zygotically.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig4-v1.jpg)
+
+**Figure 4.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for pgc on 0- to 3-hr-old paraformaldehyde-fixed (A) egfpim, (B) zldi1m, and (C) zldi2z embryos to assess germ plasm localization. Scale bar represents 10 µm. pgc RNA is seen at the posterior cortex in an nuclear cycle (NC)11 (early syncytial blastoderm) egfpim embryo (marked with an arrowhead) whereas both zldi1m and zldi2z embryos at NC10/11 (early syncytial blastoderm) show similar mislocalization of pgc RNA (marked with an asterisk in both panels).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for gcl. On 0- to 3-hr-old paraformaldehyde-fixed (A) egfpiz and (B) clampiz embryos to assess germ plasm localization. Scale bar represents 10 µm. egfpiz embryo at nuclear cycle (NC)11 (early syncytial blastoderm) shows posteriorly localized gcl RNA whereas gcl RNA is ectopically localized away from the posterior cortex in an NC11 (early syncytial blastoderm) clampiz embryo marked with an asterisk and arrowhead.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Defects in germ plasm localization were classified as "None", "Intermediate", or "Strong", as shown in examples.
+
 To better understand the relationship between the progression of the nuclear division cycles and germ plasm spread in zldi1m embryos, we examined maximum intensity projections of embryos labeled with pgc and gcl and/or osk probes. We classified the labeled embryos using two independent criteria: degree of germ plasm spread and embryonic stage (judged by the NC determined by nuclear density) (Table 2). Germ plasm localization defects were denoted as ‘none’ (all germ plasm constituents effectively sequestered to pole buds/PGCs), ‘moderate’ (germ plasm RNAs are ectopically localized but are seen associated with the somatic nuclei neighboring PGCs), and ‘severe’ (germ plasm components are detected well beyond immediately adjacent somatic nuclei). Based on their respective age, embryos were also classified into two categories: early syncytial blastoderm (ESB: NC10 and -11), or late syncytial blastoderm (LSB: NC12 and -13). As can be seen in Table 2, germ plasm mRNAs that were not captured in the PGCs during their cellularization continue to spread into the surrounding soma as the NCs proceed. Spreading after PGC cellularization could be due simply to the diffusion of mRNAs that were not captured in PGCs; alternatively, since the mRNAs often accumulate in clusters surrounding the somatic nuclei (asterisk in Figure 3—figure supplement 1), it is possible that a microtubule-dependent mechanism actively transmits germ plasm RNAs through the soma.
 
-## PGCs from embryos compromised for Zld or CLAMP display aberrant centrosome behavior
+**Table 2.**
+ Mislocalization of germ plasm increases in zld-compromised embryos as embryogenesis progresses.Table 2—source data 1.Raw data summarized in Table 2: Embryonic stage and pole plasm spreading phenotype for individual embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Defects</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Genotype</th>
+      <th>Stage</th>
+      <th>None</th>
+      <th>Moderate</th>
+      <th>Severe</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>egfpim</td>
+      <td></td>
+      <td>66 (84.6%)</td>
+      <td>12 (15.4%)</td>
+      <td>0 (0%)</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ESB</td>
+      <td>24 (85.7%)</td>
+      <td>4 (14.3%)</td>
+      <td>0 (0%)</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LSB</td>
+      <td>42 (84%)</td>
+      <td>8 (16%)</td>
+      <td>0 (0%)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>zldi1m</td>
+      <td></td>
+      <td>24 (27.9%)</td>
+      <td>49 (57%)</td>
+      <td>13 (15.1%)</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ESB</td>
+      <td>11 (34.3%)</td>
+      <td>15 (46.9%)</td>
+      <td>6 (18.8%)</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LSB</td>
+      <td>13 (24%)</td>
+      <td>34 (63%)</td>
+      <td>7 (13%)</td>
+      <td>54</td>
+    </tr>
+  </tbody>
+</table>
+
+### PGCs from embryos compromised for Zld or CLAMP display aberrant centrosome behavior
 
 The initial formation of PGCs depends upon at least one germ plasm component, gcl, and the proper functioning of the centrosomes associated with the PGC nuclei (Jongens et al., 1992; Lerit et al., 2017; Raff and Glover, 1989; Robertson et al., 1999). When they enter the posterior pole, centrosomes trigger the release of the germline determinants from the cortex and subsequently direct the trafficking and partitioning of the germ plasm into the cellularizing PGCs. When centrosome function is disrupted, germ plasm is not properly incorporated into the PGCs and instead spreads into the surrounding soma (Lerit et al., 2017; Lerit and Gavis, 2011). In their initial characterization of zelda, Staudt et al., 2006, showed that zelda mutant embryos had a range of nuclear division defects including asynchronous replication and improper chromosome segregation. Consistent with their observation, we found that centrosome defects are observed in syncytial blastoderm embryos zygotically compromised for either zld or clamp (Colonnetta et al., 2021a). We thus sought to determine if embryos maternally compromised for Zld show similar defects and therefore analyzed embryos by immunostaining for Centrosomin (Cnn), a core component of mitotic centrosomes, and Peanut (Pnut), a Drosophila Septin, to visualize the cytoskeleton. Confirming a requirement for maternally deposited zelda, we observed comparable centrosome defects in the zldi1m embryos. In the late syncytial blastoderm stage embryos (NC13-14), nearly all (15/18; 88%) of the zldi1m embryos had centrosome defects as opposed to (2/15; 11%) control egfpim embryos (p<0.001 by Fisher’s exact test). As illustrated in Figure 5 (arrowhead), a common defect was a lack of proper separation after centrosome duplication. In wild type (WT), centrosomes duplicate early in the nuclear division cycle and then immediately move to opposite poles of each nucleus. For this reason, duplicated but not yet separated centrosomes are rarely observed in WT embryos. Other defects include ‘orphan’ centrosomes that are not associated with nuclei, and multiple (fragmented, asterisk) centrosomes associated with a single nucleus.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig5-v1.jpg)
 
-**Figure 5.:** zld-compromised embryos.Zero- to four-hr old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Peanut (anti-Pnut) antibodies to assess centrosome behavior in the soma of zldi embryos. (1mA) egfpi embryo at nuclear cycle (NC)12 (late syncytial blastoderm) has regularly spaced nuclei with two centrosomes (A’, red) at opposite poles surrounded by a ring of Pnut (green). (mB) zld embryo at a comparable stage displays numerous defects, including duplicated but not separated centrosomes (arrowhead, B’, red) and disrupted accumulation of the cytoskeletal protein Pnut. Embryos were co-stained with Hoescht to visualize nuclei (blue). Scale bar represents 10 µm.1m
+**Figure 5.:** Zero- to four-hr old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Peanut (anti-Pnut) antibodies to assess centrosome behavior in the soma of zldi1m embryos. (A) egfpim embryo at nuclear cycle (NC)12 (late syncytial blastoderm) has regularly spaced nuclei with two centrosomes (A’, red) at opposite poles surrounded by a ring of Pnut (green). (B) zld1m embryo at a comparable stage displays numerous defects, including duplicated but not separated centrosomes (arrowhead, B’, red) and disrupted accumulation of the cytoskeletal protein Pnut. Embryos were co-stained with Hoescht to visualize nuclei (blue). Scale bar represents 10 µm.
 
 Next, we wondered whether the centrosome defects seen at the late syncytial blastoderm stage (NC13-14) can be traced back to earlier NCs during development. We thus stained 0- to 3-hr-old embryos maternally compromised for zelda, which contained both NC10-11 and even younger pre-syncytial embryos between NC1-10. As shown in Figure 6, we observed aberrant centrosome separation in the somatic nuclei from cycle 11 embryos.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig6-v1.jpg)
 
-**Figure 6.:** zld.Zero- to 3-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) (magenta) to assess centrosome behavior in zldi embryos. Embryos were co-stained with Hoechst to visualize nuclei (blue). Both panels show the anterior terminus of a nuclear cycle (NC)11 (early syncytial blastoderm) embryo. (1mA) egfpi embryos have regularly spaced nuclei with correctly segregated centrosomes. (mB) zld embryos display ineffectively separated centrosomes (asterisk) and fused nuclei (arrowhead). Scale bar represents 10 µm.1m
+**Figure 6.:** Zero- to 3-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) (magenta) to assess centrosome behavior in zldi1m embryos. Embryos were co-stained with Hoechst to visualize nuclei (blue). Both panels show the anterior terminus of a nuclear cycle (NC)11 (early syncytial blastoderm) embryo. (A) egfpim embryos have regularly spaced nuclei with correctly segregated centrosomes. (B) zld1m embryos display ineffectively separated centrosomes (asterisk) and fused nuclei (arrowhead). Scale bar represents 10 µm.
 
 Interestingly, duplicated but not separated centrosomes were also seen in even younger, that is, pre-syncytial embryos. Thirty-five percent of the nuclei (n=37) in zldi1m pre-syncytial embryos (NC7-9) showed this phenotype while only 6% of the nuclei (n=51) in egfpim NC7-9 control embryos had similar centrosome problems (p<0.001 by Fisher’s exact test). Thus, centrosome defects are observed even in very young embryos where nuclei have not yet reached the periphery. In addition, in half of the zldi1m NC7-9 embryos, we also observed at least one fused, oversized nucleus.
 
@@ -70,29 +234,37 @@ The occurrence of centrosome defects when Zld or CLAMP activities are compromise
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig7-v1.jpg)
 
-**Figure 7.:** zld-compromised embryos have defects in centrosome duplication and separation in newly formed primordial germ cells (PGCs).Zero- to three-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Vasa antibodies to assess centrosome behavior in the pole buds of zldi embryos. (1mA) egfpi embryos have high levels of Vasa (mA’, red) in PGCs with centrosomes marked by Cnn (green) at opposite poles of each cell (A, caret). (B) zld embryos display non-segregated centrosomes (1mB, arrowhead), variable levels of Vasa in PGCs (B’, red) and reduced level of Cnn (C, asterisk, green). Embryos at NC10-11 (early syncytial blastoderm) were co-stained with Hoescht to visualize nuclei (blue). Scale bar represents 10 µm.
+**Figure 7.:** Zero- to three-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Vasa antibodies to assess centrosome behavior in the pole buds of zldi1m embryos. (A) egfpim embryos have high levels of Vasa (A’, red) in PGCs with centrosomes marked by Cnn (green) at opposite poles of each cell (A, caret). (B) zld1m embryos display non-segregated centrosomes (B, arrowhead), variable levels of Vasa in PGCs (B’, red) and reduced level of Cnn (C, asterisk, green). Embryos at NC10-11 (early syncytial blastoderm) were co-stained with Hoescht to visualize nuclei (blue). Scale bar represents 10 µm.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig8-v1.jpg)
 
-**Figure 8.:** zld or clamp display improperly duplicated and separated centrosomes in newly formed primordial germ cells (PGCs).Zero- to 2.5-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Vasa antibodies to assess centrosome behavior in the pole buds of zld or clamp zygotic knockdown embryos. (A) egfpi embryo at nuclear cycle (NC)10 (early syncytial blastoderm) displays high levels of Vasa (zA’, red) in PGCs with centrosomes at opposite poles of each cell (A’’, green). Both zld (2zB) and clampi (zC) embryos also at NC10 (early syncytial blastoderm) exhibit defects including duplicated but attached or improperly separated centrosomes (B’’/C’’, arrowheads) as well as an aberrant pattern of anti-Cnn staining (green). Vasa seems to be unevenly distributed between daughter cells (red, B’ and C’). Scale bar represents 10 µm.
+**Figure 8.:** Zero- to 2.5-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Vasa antibodies to assess centrosome behavior in the pole buds of zld or clamp zygotic knockdown embryos. (A) egfpiz embryo at nuclear cycle (NC)10 (early syncytial blastoderm) displays high levels of Vasa (A’, red) in PGCs with centrosomes at opposite poles of each cell (A’’, green). Both zld2z (B) and clampiz (C) embryos also at NC10 (early syncytial blastoderm) exhibit defects including duplicated but attached or improperly separated centrosomes (B’’/C’’, arrowheads) as well as an aberrant pattern of anti-Cnn staining (green). Vasa seems to be unevenly distributed between daughter cells (red, B’ and C’). Scale bar represents 10 µm.
 
-## Anterior protrusions in Zld- or CLAMP-compromised embryos
+### Anterior protrusions in Zld- or CLAMP-compromised embryos
 
 Defects in the process of pole bud formation and PGC cellularization are not the only abnormalities evident in zld or clamp knockdown embryos in the period just after nuclei migrate to the cortex. At the same time that pole buds are forming at the embryonic posterior and then undergoing cellularization, we observe bud-like protrusions developing at the anterior end of the knockdown embryos. Panels C and D in Figure 9 show buds forming simultaneously in an early syncytial blastoderm maternal zldi1m knockdown embryo. Anterior buds like those shown in this figure are observed in about 61% (11/18) of early syncytial blastoderm zldi1m knockdown embryos, while they are rarely, if ever, observed in maternal egfpim knockdown embryos (9%: n=1/12) (p=0.007 by Fisher’s exact test). While we also observe ectopic buds on the dorsal-lateral surface of early syncytial zldi1m knockdown embryos, these are only seen infrequently, suggesting that the curvature at the anterior might be more permissive for bud formation. As observed for other zldi1m knockdown phenotypes, ectopic buds are also observed in the zygotic knockdown embryos, though somewhat less frequently, therefore zldi2z (41%; 5/12, p=0.055 by Fisher’s exact test) and clampiz (30%; 4/13, p=0.131 by Fisher’s exact test) knockdowns trend toward significant incidence of protrusions compared to egfpiz (0%, 0/8) (Figure 10).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig9-v1.jpg)
 
-**Figure 9.:** zld knockdown embryos.Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Peanut (anti-Pnut) antibodies to assess morphology at the poles. Anterior (A,A’,C,C’) and posterior (B,B’/D,D’) views of a single representative egfpi (A,A’/B,B’) or mzldi (C,C’/D,D’) embryos at nuclear cycle (NC)12 (late syncytial blastoderm) are shown with nuclei (Hoescht, blue), centrosomes (Cnn, red), and cytoskeleton (Pnut, green). Though nuclei and their associated centrosomes reach the anterior terminus of control embryos, they do not bulge outward (arrowhead, 1mA). In some zldi embryos, nuclei and their associated centrosomes protrude outward, mirroring pole bud behavior (asterisk, 1mC) Scale bar represents 10 µm.
+**Figure 9.:** Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Centrosomin (anti-Cnn) and anti-Peanut (anti-Pnut) antibodies to assess morphology at the poles. Anterior (A,A’,C,C’) and posterior (B,B’/D,D’) views of a single representative egfpim (A,A’/B,B’) or zldi1m (C,C’/D,D’) embryos at nuclear cycle (NC)12 (late syncytial blastoderm) are shown with nuclei (Hoescht, blue), centrosomes (Cnn, red), and cytoskeleton (Pnut, green). Though nuclei and their associated centrosomes reach the anterior terminus of control embryos, they do not bulge outward (arrowhead, A). In some zldi1m embryos, nuclei and their associated centrosomes protrude outward, mirroring pole bud behavior (asterisk, C) Scale bar represents 10 µm.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig10-v1.jpg)
 
-**Figure 10.:** zld and clamp knockdown embryos, protrusions appear shortly after the formation of primordial germ cells (PGCs) at the posterior pole.Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Peanut (anti-Pnut), anti-Vas, and anti-Centrosomin (anti-Cnn) antibodies to assess morphology at the poles. Anterior (A/C/E) and posterior (B/D/F) views of a single representative egfpi (A/B), mzldi (C/D), or 2zclampi (E/F) embryo are shown with nuclei (Hoescht, blue), centrosomes (Cnn, magenta), cytoskeleton (Pnut, green), and PGCs (Vasa, red). (All three embryos are nuclear cycle [NC]12, late syncytial blastoderm stage.) Though nuclei and their associated centrosomes reach the anterior terminus of control embryos, they do not bulge outward (arrowhead, zA). In some zld embryos, nuclei and their associated centrosomes protrude outward, mirroring pole bud behavior (asterisk, 2zC). clampi embryos also form anterior bulges (asterisk, zE). Scale bar represents 10 µm.
+**Figure 10.:** Zero- to four-hr-old paraformaldehyde-fixed embryos were stained with anti-Peanut (anti-Pnut), anti-Vas, and anti-Centrosomin (anti-Cnn) antibodies to assess morphology at the poles. Anterior (A/C/E) and posterior (B/D/F) views of a single representative egfpim (A/B), zldi2z (C/D), or clampiz (E/F) embryo are shown with nuclei (Hoescht, blue), centrosomes (Cnn, magenta), cytoskeleton (Pnut, green), and PGCs (Vasa, red). (All three embryos are nuclear cycle [NC]12, late syncytial blastoderm stage.) Though nuclei and their associated centrosomes reach the anterior terminus of control embryos, they do not bulge outward (arrowhead, A). In some zld2z embryos, nuclei and their associated centrosomes protrude outward, mirroring pole bud behavior (asterisk, C). clampiz embryos also form anterior bulges (asterisk, E). Scale bar represents 10 µm.
 
-## Transcriptional quiescence is compromised in PGCs of ZGA-compromised embryos
+### Transcriptional quiescence is compromised in PGCs of ZGA-compromised embryos
 
 Transcriptional quiescence is an important trait that distinguishes PGCs from the surrounding soma. In D. melanogaster, maternally deposited germ plasm constituents (nos, gcl, pgc) promote silencing by inhibiting the transcription of overlapping yet distinct sets of target genes. When one of these factors is mutant, a specific set of target genes are transcribed in the mutant PGCs. Since these determinants are not fully captured by the PGCs when they cellularize, we wondered whether this impacted the establishment of transcriptional quiescence. To test this, we examined the expression of two genes, Sxl-Pe and slam, which are known to be Zld targets during ZGA (Liang et al., 2008; Nien et al., 2011; ten Bosch et al., 2006). In PGCs, Sxl-Pe is kept off by gcl and nos, while pgc blocks the expression of slam. In WT embryos, these two genes are never active in PGCs, and this is also true for the egfpim control embryos (n=30). However, we found that 13.3% of zldi1m embryos (n=15; p=0.106 by Fisher’s exact test, not statistically significant) and 7.1% of zldi2m embryos (n=14; p=0.318 by Fisher’s exact test, not statistically significant) had slam mRNAs in their PGCs (Figure 11) while 22.6% of zldi1m embryos (n=31; p=0.011 by Fisher’s exact test) and 0% of zldi2m embryos (n=14, p=1.0 by Fisher’s exact test, statistically indistinguishable from control) had nascent Sxl-Pe transcripts in their PGCs (Figure 11—figure supplement 1). These findings indicate that zld is required for properly attenuating transcription in newly formed PGCs.
 
-## Ectopic localization of germ plasm affects somatic transcription
+![Figure 11.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig11-v1.jpg)
+
+**Figure 11.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for slam on 0- to 4-hr-old embryos to assess the status of transcription in PGCs. While slam is never expressed in (A) egfpim control PGCs, some (B) zldi1m PGCs display ectopic slam transcription (asterisk). Posterior poles of representative syncytial blastoderm embryos (nuclear cycle [NC]13, late syncytial blastoderm) are shown with slam RNA visualized in magenta and Hoescht DNA dye in blue. Scale bar represents 10 µm.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for Sxl-Pe on 0- to 4-hr-old embryos to assess the status of transcription in PGCs. While Sxl is never transcribed in (A) egfpim control PGCs, some (B) zldi1m PGCs activate Sxl-Pe (asterisk). Posterior poles of representative nuclear cycle (NC)12 (late syncytial blastoderm) embryos are shown with Sxl RNA visualized in red and Hoescht DNA dye in blue. Scale bar represents 10 µm.
+
+### Ectopic localization of germ plasm affects somatic transcription
 
 In PGCs, the germline determinants pgc, gcl, and nos function to inhibit RNA PolII activity. When these germline determinants are overexpressed or ectopically expressed, they can downregulate transcription in the soma, interfering with somatic development (de Las Heras et al., 2009; Deshpande et al., 2005; Robertson et al., 1999). Since one of the key roles of germ plasm constituents is establishing transcriptional quiescence in the PGCs, we wondered if somatic transcription is downregulated when germ plasm components spread into surrounding posterior soma. We examined two genes, tailess (tll) and decapentaplegic (dpp), that are normally expressed at high levels in both the posterior and anterior of the embryo. The tll gene is activated by the terminal pathway, and its activity in PGCs is known to be repressed by pgc, which encodes an inhibitor of the PolII CTD elongation kinase pTFB (Deshpande et al., 2004; Hanyu-Nakamura et al., 2008; Martinho et al., 2004), and likely also gcl, which promotes the degradation of the terminal pathway receptor torso (Colonnetta et al., 2021b; Pae et al., 2017).
 
@@ -100,17 +272,17 @@ For this reason, the spreading of these germ plasm components into the surroundi
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig12-v1.jpg)
 
-**Figure 12.:** tll somatic transcription is notably decreased in the embryonic posterior upon zld knockdown.Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for tll (green) and gcl (magenta) on 0- to 4-hr-old egfpi (A/B) and mzldi (C/D) embryos to assess the status of somatic transcription at the anterior and posterior poles. Maximum intensity projections of anterior (1mA–A”,C–C”) and posterior (B–B”,D–D”) poles of representative late syncytial blastoderm (nuclear cycle [NC]13) embryos are shown with tll RNA visualized in green, gcl RNA in magenta, and Hoescht DNA dye in blue. Scale bar represents 10 µm. While tll transcription is comparable between anterior (A’ and A”) and posterior (B’ and B”) termini of egfpi embryos, transcript levels are reduced in mzldi embryos, to a greater extent at the posterior pole (1mD’ and D”) as compared to the anterior (C’ and C”) tll is not expressed in primordial germ cells (PGCs) (arrowhead).
+**Figure 12.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for tll (green) and gcl (magenta) on 0- to 4-hr-old egfpim (A/B) and zldi1m (C/D) embryos to assess the status of somatic transcription at the anterior and posterior poles. Maximum intensity projections of anterior (A–A”,C–C”) and posterior (B–B”,D–D”) poles of representative late syncytial blastoderm (nuclear cycle [NC]13) embryos are shown with tll RNA visualized in green, gcl RNA in magenta, and Hoescht DNA dye in blue. Scale bar represents 10 µm. While tll transcription is comparable between anterior (A’ and A”) and posterior (B’ and B”) termini of egfpim embryos, transcript levels are reduced in zldi1m embryos, to a greater extent at the posterior pole (D’ and D”) as compared to the anterior (C’ and C”) tll is not expressed in primordial germ cells (PGCs) (arrowhead).
 
 Next, we investigated transcription of dpp, another direct target of Zld (Liang et al., 2008; Nien et al., 2011) and a key signaling ligand of the BMP family (Deignan et al., 2016; Matsuda et al., 2016; O’Connor et al., 2006). Using exonic probes, we visualized zygotic transcription of dpp which is activated by NC10 concomitantly with pole bud formation and PGC cellularization. Subsequently, as global transcription is upregulated during NC12-14 and the dorsal-ventral axis of the embryo is established, the levels of dpp transcripts are substantially increased on the dorsal half of the embryo including both the poles (Chang et al., 2001; Stathopoulos et al., 2002). As shown for efgpim in Figure 13, the expression domain at the posterior terminus of the embryo encompasses the pole cells. Confirming that dpp is a target for zld, in 10/13 zldi1m knockdown embryos, dpp expression in the dorsal half of the embryo is reduced as compared to 0/11 efgpim control embryos (p<0.001 by Fisher’s exact test; compare Figure 13, panels A’ and B’). dpp expression at the anterior terminus is also reduced compared to the egfpim control embryos. Importantly, as was observed for tll, the reduction in the transcript levels is typically more pronounced in the posterior soma in the regions of the embryo where mislocalized pgc mRNA can be detected (Figure 14). We quantified the number of nuclei expressing dpp versus the total number of nuclei in the anterior and posterior halves of zldi1m embryos (see Materials and methods for details of quantification). In the anterior 77/119; 64% of the nuclei expressed dpp while in the posterior only 38/129; 29% of the nuclei expressed dpp (p<0.001 by Fisher’s exact test).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig13-v1.jpg)
 
-**Figure 13.:** decapentaplegic (dpp) decreases in zld-compromised embryos.Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for dpp (A’ and B’) and polar granule component (pgc) (A” and B”) on 0- to 4-hr-old embryos to assess the status of somatic transcription at the posterior pole. egfpi embryos (mA–A”) express dpp dorsally (red, B, asterisk), but these expression levels are compromised in zldi embryos (B–B”,B’, arrowhead), particularly those displaying more severe germ plasm spread as shown by 1mpgc (green, marked with an arrowhead in panel B”). Scale bar represents 10 µm. Images shown are maximum intensity projections through embryos at nuclear cycle (NC)13 (late syncytial blastoderm) to capture total germ plasm localization and dpp expression throughout relevant focal planes (in Z).
+**Figure 13.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for dpp (A’ and B’) and polar granule component (pgc) (A” and B”) on 0- to 4-hr-old embryos to assess the status of somatic transcription at the posterior pole. egfpim embryos (A–A”) express dpp dorsally (red, B, asterisk), but these expression levels are compromised in zldi1m embryos (B–B”,B’, arrowhead), particularly those displaying more severe germ plasm spread as shown by pgc (green, marked with an arrowhead in panel B”). Scale bar represents 10 µm. Images shown are maximum intensity projections through embryos at nuclear cycle (NC)13 (late syncytial blastoderm) to capture total germ plasm localization and dpp expression throughout relevant focal planes (in Z).
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/78188/elife-78188-fig14-v1.jpg)
 
-**Figure 14.:** decapentaplegic (dpp) transcripts in the posterior half.Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for dpp (red, A–A” and B–B”) and polar granule component (pgc) (green, A and B) on 0- to 4-hr-old zldi embryos to assess the status of somatic transcription at the anterior and posterior poles. While 1mzldi embryos express 1mdpp (red) at the anterior (A–A”), these expression levels are compromised in the posterior half (B–B”) as seen by comparison between A’ (anterior half, arrowhead) and B’ (posterior half, arrowhead). A” (anterior) and B” (posterior) show magnified versions. (Note the difference in signal intensities between nuclei marked with a single asterisk in panel A” with a double asterisk in B”, respectively.) Scale bar represents 10 µm. Images shown are maximum intensity projections through an embryo at nuclear cycle (NC)13 (late syncytial blastoderm) to capture total germ plasm localization and dpp expression throughout relevant focal planes (in Z).
+**Figure 14.:** Single molecule fluorescence in situ hybridization (smFISH) was performed using probes specific for dpp (red, A–A” and B–B”) and polar granule component (pgc) (green, A and B) on 0- to 4-hr-old zldi1m embryos to assess the status of somatic transcription at the anterior and posterior poles. While zldi1m embryos express dpp (red) at the anterior (A–A”), these expression levels are compromised in the posterior half (B–B”) as seen by comparison between A’ (anterior half, arrowhead) and B’ (posterior half, arrowhead). A” (anterior) and B” (posterior) show magnified versions. (Note the difference in signal intensities between nuclei marked with a single asterisk in panel A” with a double asterisk in B”, respectively.) Scale bar represents 10 µm. Images shown are maximum intensity projections through an embryo at nuclear cycle (NC)13 (late syncytial blastoderm) to capture total germ plasm localization and dpp expression throughout relevant focal planes (in Z).
 
 ## Discussion
 
@@ -119,6 +291,92 @@ The conserved process of ZGA is primarily responsible for providing a roadmap th
 In D. melanogaster, ZGA consists of a minor and a major wave, which are temporally separable. The proper specification of distinct somatic cell types in the Drosophila embryo takes place during the major wave of ZGA. The global activation of transcription is dependent upon at least three genome-wide regulators, Zld, CLAMP, and GAF (Colonnetta et al., 2021a; Duan et al., 2021; Harrison et al., 2011; Liang et al., 2008; Nien et al., 2011). While the most substantial upregulation of transcription during the major ZGA wave occurs in NC14, the minor wave, which commences at NC8, involves only relatively sparse and low levels of transcription. Nonetheless, genes transcribed during this period regulate two crucial processes: somatic sex determination and early patterning. Coincident with these two steps in fate specification, another important developmental decision, namely germline versus somatic identity, also takes place. Here, we have investigated the possible role of the factors that mediate ZGA in distinguishing germline versus soma. Our results indicate that two regulators of ZGA, Zld and CLAMP, play important roles in establishing germline and somatic fate during ZGA.
 
 We find that compromising either zld or clamp by RNAi knockdown has reciprocal effects on cells normally destined to be either germline (PGC) or soma. In the former case, newly formed PGCs exhibit a range of defects consistent with a partial transformation toward somatic identity. These include a loss or reduction in the levels of the germline specific marker Vasa and the upregulation of transcription of genes (Sxl-Pe and slam) that are never transcribed in WT PGCs. Conversely, in the soma, we observed reductions in the level of transcription of the tll and dpp genes at the posterior of embryo over and above that caused by the embryo-wide loss of Zld activity. The observed phenotypes exhibiting the disruption in both germline and somatic fates are summarized in Table 3.
+
+**Table 3.**
+ Summary of aberrant germline/somatic developmental phenotypes observed in zld knockdown embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>Unit classified</th>
+      <th colspan="3">Phenotypic frequency in each genotype</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>egfpim</th>
+      <th>zldi1m</th>
+      <th>zldi2m</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Germ plasm spread</td>
+      <td>Embryos</td>
+      <td>12/99 (12.1%)</td>
+      <td>63/110 (57.3%)</td>
+      <td>13/23 (56.5%)</td>
+    </tr>
+    <tr>
+      <td>Pre-syncytial blastoderm somatic centrosome defects</td>
+      <td>Nuclei</td>
+      <td>3/51 (5.9%)</td>
+      <td>13/37 (35.1%)</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Syncytial blastoderm somatic centrosome defects</td>
+      <td>Embryos</td>
+      <td>2/15 (13.3%)</td>
+      <td>15/18 (8.3%)</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Pole bud/PGC centrosome defects</td>
+      <td>Nuclei</td>
+      <td>4/31 (12.9%)</td>
+      <td>16/30 (53.3%)</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Anterior protrusions</td>
+      <td>Embryos</td>
+      <td>1/12 (8.3%)</td>
+      <td>11/18 (61.1%)</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>slam expression in PGCs</td>
+      <td>Embryos</td>
+      <td>0/30 (0%)</td>
+      <td>2/15 (13.3%)</td>
+      <td>1/14 (7.1%)</td>
+    </tr>
+    <tr>
+      <td>Sxl-Pe expression in PGCs</td>
+      <td>Embryos</td>
+      <td>0/30 (0%)</td>
+      <td>5/31 (16.1%)</td>
+      <td>0/14 (0%)</td>
+    </tr>
+    <tr>
+      <td>tll somatic transcription levels</td>
+      <td>Embryos</td>
+      <td>0/10 (0%)</td>
+      <td>8/11 (72.7%)</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>dpp somatic transcription levels</td>
+      <td>Embryos</td>
+      <td>0/11 (0%)</td>
+      <td>10/13 (76.9%)</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
 
 The perturbations in both germline and soma specification can be traced back to defects in the process of PGC cellularization. In WT, the centrosomes associated with the nuclei migrating into the posterior pole trigger the release of germline determinants that are anchored to the cortex during oogenesis. After release, the germline determinants are trafficked on astral microtubules so they encompass the pole bud nuclei (Lerit et al., 2017; Lerit and Gavis, 2011). When cellularization takes place the germline determinants are efficiently captured in the newly formed PGCs. In the maternal zld knockdown and in the zygotic zld and clamp knockdowns, the sequestration of the germline determinants during PGC cellularization is aberrant and these factors disperse into the nearby soma. The failure to incorporate the full complement of germline determinants is responsible at least in part for the PGC phenotypes observed in the zld and clamp RNA knockdowns. Consistent with this conclusion, similar PGC phenotypes are observed in gcl mutants and in mutants in components of the BMP signaling pathway (Colonnetta et al., 2021b; Colonnetta et al., 2022). In both of these cases, germline determinants are not efficiently captured by the cellularizing PGCs. Likewise, the ectopic presence of germline determinants in a somatic domain is likely responsible for exacerbating the reductions in transcription of tll and dpp in the posterior soma of zldi1m knockdown embryos. This is supported by earlier observations showing that pgc, gcl, and nos can downregulate transcription in the soma upon overexpression or ectopic expression (de Las Heras et al., 2009; Deshpande et al., 2005; Robertson et al., 1999). Likely there are many other genes that are active in the posterior region of blastoderm stage embryos whose expression is downregulated not only because of the loss of zld, but also because of the inappropriate localization of germ plasm away from the posterior cortex.
 
@@ -130,29 +388,165 @@ In sum, together these observations document unprecedented activities of ZGA pio
 
 ## Materials and methods
 
-## Fly stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Maternal-tubulin-GAL4 (67.15)</td>
+      <td>Eric Wieschaus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-egfp RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 41552; RRID:BDSC_41552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-zld-shRNA (zldi1)</td>
+      <td>Christine Rushlow</td>
+      <td></td>
+      <td>Maintained in the lab of C Rushlow</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-zld RNAi (zldi2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 42016; RRID:BDSC_42016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-clamp RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 27080; RRID:BDSC_27080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (rat polyclonal)</td>
+      <td>Paul Lasko</td>
+      <td>RRID:AB_2568498</td>
+      <td>Used 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: 46F11; RRID:AB_10571464</td>
+      <td>Used 1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cnn (rabbit polyclonal)</td>
+      <td>Thomas Kaufman</td>
+      <td></td>
+      <td>Used 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pnut (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: 4C9H4;RRID: AB_528429</td>
+      <td>Used 1:10</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pgc</td>
+      <td>Eagle et al., 2018</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gcl</td>
+      <td>Eagle et al., 2018</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>osk</td>
+      <td>Little et al., 2015</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sxl-Pe</td>
+      <td>Thomas Gregor</td>
+      <td>smFISH probe set</td>
+      <td>Intronic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>slam</td>
+      <td>Colonnetta et al., 2022</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tll</td>
+      <td>Colonnetta et al., 2021b; Colonnetta et al., 2022</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dpp</td>
+      <td>This paper; Biosearch Technologies</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes; sequences available in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoescht</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific: H3570</td>
+      <td>Nuclear dye</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetics
 
 The following D. melanogaster stocks were used: maternal-tubulin-Gal4 line 67.15 (gift from Eric Wieschaus), zld shRNA (referred to as zldi1, gift of Christine Rushlow), and egfp RNAi (41552), clamp RNAi (27080), and zld RNAi (referred to as zldi2, 42016) from Bloomington Drosophila Stock Center.
 
 To generate maternal knockdown embryos, we mated 67.15 virgins to males carrying RNAi transgenes, then collected female progeny (all of which carry two copies of maternal-tubulin Gal4 and one copy of indicated RNAi transgene) that were mated to WT males. The embryos from this cross were then analyzed as ‘maternal knockdown’ embryos, indicated with m. To generate zygotic knockdown embryos, we mated 67.15 virgins to males carrying RNAi transgenes, indicated with z.
 
-## Immunostaining and single molecule fluorescence in situ hybridization
+### Immunostaining and single molecule fluorescence in situ hybridization
 
 Embryos were formaldehyde-fixed, and a standard immunohistochemical protocol was used for either DAB or fluorescent staining as described previously (Deshpande et al., 1999). Fluorescent immunostaining employed fluorescently labeled (Alexa Fluor) secondary antibodies. The primary antibodies used were mouse anti-Vasa (1:10, DSHB, Iowa City, IA) rat anti-Vasa (1:1000, gift of Paul Lasko), rabbit anti-Centrosomin (1:500, gift from Thomas Kaufmann), and mouse anti-Peanut (1:10, DSHB, Iowa City, IA). Fluorescent immunostaining employed fluorescently labeled (Alexa Fluor) secondary antibodies, used at 1:500 (Thermo Fisher Scientific, Waltham, MA). Embryos were co-labeled with Hoescht (3 µg/ml, Invitrogen, Carlsbad, CA) to visualize nuclei. DAB staining employed secondary anti-peroxidase antibodies (Jackson Immunoresearch Laboratories). Stained embryos were mounted using Aqua Poly/mount (Polysciences, Warrington, PA) on slides and imaged as described below. At least three independent biological replicates were used for each experiment.
 
 Single molecule fluorescence in situ hybridization (smFISH) was performed as described by Little and Gregor using formaldehyde-fixed embryos (Little et al., 2015; Little and Gregor, 2018). All probe sets were designed using the Stellaris probe designer (20-nucleotide oligonucleotides with 2-nucleotide spacing). osk, pgc, and gcl smFISH probes (coupled to either atto565 or atto647 dye, Sigma, St Louis, MO) were a gift from Liz Gavis (Little et al., 2015; Eagle et al., 2018), and Sxl intronic probes (coupled to either atto565 or atto633 dye, Sigma, St Louis, MO) were a gift from Thomas Gregor (Colonnetta et al., 2021a). tll probes (coupled to Quasar 570) (Colonnetta et al., 2021b), slam probes (coupled to Quasar 670) (Colonnetta et al., 2022), and dpp intronic probes (coupled to Quasar 670) were produced by Biosearch Technologies (Middlesex, UK). All samples were mounted using Aqua Poly/mount (Polysciences, Warrington, PA) on slides and imaged as described below. At least three independent biological replicates were used for each experiment.
 
-## Microscopy and image processing
+### Microscopy and image processing
 
 NIKON-Microphot-SA microscope was used to image and analyze DAB-stained embryos. Confocal imaging for all fluorescently labeled samples was performed on a Nikon A1 inverted laser-scanning confocal microscope. Unless noted in figure legend, all images were of single sections, not maximum intensity projections from Z stacks. To assess the spreading of the RNAs or protein in different mutant backgrounds compared to the control, we generated plot profiles using ImageJ. The posterior-most 75 µm of each embryo was plotted for comparison, and embryos from a single biological replicate are plotted in figures given that variation between fluorescence between replicates obscured the germ plasm distribution trends if embryos from all replicates were plotted together. Images were assembled using Fiji (ImageJ, NIH) and Adobe Photoshop software to crop regions of interest, adjust brightness and contrast, and separate or merge channels.
 
-## Classifying embryonic germline/somatic distinction phenotypes
+### Classifying embryonic germline/somatic distinction phenotypes
 
 Typically, we analyzed embryonic phenotypes by classifying each image blindly, unaware of which genotype was represented in the image. We also determined ‘PGC’ nuclei versus ‘somatic’ nuclei based on location—PGC or pole bud nuclei are located at the posterior cap of an embryo while somatic nuclei include the remainder of the developing embryonic syncytium.
 
 PGCs in control or WT embryos display uniformly high levels of Vasa while experimental embryos (zldi1m, for instance) have variable levels of Vasa among PGCs, which also show decreased PGC numbers and aberrant spacing/localization. Therefore, we classified ‘low’ versus ‘high’ levels of Vasa in PGCs for each blindly scored embryo. Likewise, we scored embryos for ‘spread’ versus ‘no spread’ of germ plasm RNAs, based on the localization of germ plasm RNAs at or away from the posterior terminus of the embryo. We then compiled all data points for embryos within each genotype for statistical analysis (further detailed below).
 
-## Statistical analysis
+### Statistical analysis
 
 Using NC13/14 embryos, PGCs of each genotype were counted from the first Vasa-positive cell to the last through an entire z-volume captured at 2 µm intervals. These PGCs counts were analyzed using a Student’s t-test. These PGCs were also classified as having high or low levels of Vasa, and pairwise comparisons of these populations for each genotype were performed using Fisher’s exact test. Likewise, proportions of embryos displaying aberrant germ plasm localization (degree of spreading) were compared to control embryos using Fisher’s exact test. To analyze the effect of NC progression on the germ plasm spreading phenotype, we used ordinal logistic regression, regressing stage (classified as pre-blastoderm, early syncytial blastoderm, late syncytial blastoderm, or cellular blastoderm), and genotype on degree of germ plasm spread. For smFISH experiments, total number of embryos expressing slam or Sxl-Pe in PGCs were counted, and Fisher’s exact test was used to test significance in the compared proportions of embryos positive for transcription in PGCs.
 

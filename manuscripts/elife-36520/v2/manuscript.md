@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.36520.001 Though the last decade has seen accelerated advances in techniques and technologies to perturb neuronal circuitry in the brain, we are still poorly equipped to adequately dissect endogenous peptide release in vivo. To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.
+Though the last decade has seen accelerated advances in techniques and technologies to perturb neuronal circuitry in the brain, we are still poorly equipped to adequately dissect endogenous peptide release in vivo. To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.
 
 ## Introduction
 
@@ -54,7 +54,31 @@ To establish a quantitative assay, we used a custom synthesized isotopically lab
 
 For in vivo detection in freely moving mice, we developed a customizable microdialysis probe (i.e. customizable length, depth and sampling area) with an integrated fiber optic to locally sample proximal to the site of photostimulation in the brain (Figure 2a, Figure 2—figure supplemenrt 1a–e). Traditional dialysis probes incorporate inlet and outlet tubing encased in a semi-permeable membrane enclosed with epoxy, and further encased in a stiff cannula for rigidity and robustness. To minimize the size of the opto-dialysis probe we did not include the final external casing and instead took advantage of the natural rigidity of the fiber optic to support the dialysis inlet-outlet assembly (Figure 2a, Figure 2—figure supplemenrt 1a–e). This resulted in a maximal probe diameter of 480 μm. To maximize concentrations of peptides entering the probe, we used a 60 kDa molecular weight cutoff, polyacrylonitrile membrane with a slight negative charge for optimal peptide recovery (AN69, Hospal, Bologna Italy) (Zhou et al., 2015; Maidment et al., 1989) and showed we can measure changes in peptide stock concentration within the 15 min fraction collection time (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig2-v2.jpg)
+
+**Figure 2.:** (a) Images of the optodialysis probe. (b) Trace of an in vitro step change from 100 pM of DYN, LE, and ME stock solution to a solution of 1 nM Dyn and 400 pM LE and ME. The arrow indicates the first fraction in which the peptide was expected to change. Data were normalized to fraction 4, the fraction expected to reflect elevated concentration stock change. Data shown as average ± SD, n = 4 probes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Also see supplementary file 1.
+
 To evoke and measure in vivo peptide release we injected AAV5-EF1α-DIO-ChR2-eYFP in to either the vNAcSh or the dNAcSh of preprodynorphin-IRES-cre (dyn-cre) mice and implanted the custom opto-dialysis probes 3 weeks later (Figure 3a). Following recovery artificial cerebrospinal fluid (aCSF) was perfused through the device at 0.8 μL/min and fractions were collected on ice every 15 min, generating 12 μL volumes, 2 μL of which were aliquoted and used for a small molecule detection assay. Three baseline fractions were collected prior to a fraction capturing 15 min of 10 Hz (10 ms pulse width) photostimulation, and six additional fractions were collected following photostimulation. As a positive control for detecting dynamic changes in vivo by nLC-MS and to establish sampled neuron responsivity to stimuli, we infused 100 mM K+ aCSF at the end of each collection experiment. The influx of K+ ions causes depolarization, resulting in vesicular exocytosis, which is expected to evoke a large increase in peptide concentration. Mice were included in the study if 100 mM K+ stimulation resulted in a positive increase in analytes at the end of the experiment (Figure 3—figure supplement 2a–c) and if correct anatomical probe placement and viral expression were confirmed (Figure 3—figure supplement 3a and b). In the current study 81.1% (15/18) of the mice were included in the analysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-v2.jpg)
+
+**Figure 3.:** (a) Timeline of experimental procedure outlining viral injection, probe implantation and dialysate collection. (b) Extracellular opioid peptide release shown as % baseline in vNAcSh dyn1-8, (left panel, n = 8), dNAcSh dyn1-8 (right panel, n = 6). (c) vNAcSh Leu-Enkephalin (left panel, n = 4), dNAcSh Leu-Enkephalin (right panel, n = 6). (d) vNAcSh Met-Enkephalin (left panel, n = 7) and dNAcSh Met-Enkephalin (right panel, n = 7). (e) Small molecules simultaneously collected and shown as % baseline in vNAcSh Dopamine (left panel, n = 7), dNAcSh Dopamine (right panel, n = 7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Reliable depolarisation following K + was detected for (a) vNAcSh dyn1-8, (left panel, n = 8), dNAcSh dyn1-8 (right panel, n = 6). (b) vNAcSh Leu-Enkephalin (left panel, n = 4), dNAcSh Leu-Enkephalin (right panel, n = 6). (c) vNAcSh Met-Enkephalin (left panel, n = 7) and dNAcSh Met-Enkephalin (right panel, n = 7). Data show as mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (b) dNAcSh, closed green circles represent correct hits, open circles represent misses.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/36520/elife-36520-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (b) vNAcSh Glutamate (left panel, n = 7) and dNAcSh Glutamate (right panel, n = 7).
 
 A significant increase in dyn was detected in dyn-cre positive mice during photostimulation in both the vNAcSh (interaction effect; t = 3.941, p<0.001) and dNAcSh (interaction effect; t = 3.012, p=0.003), compared to control mice (Figure 3b). Interestingly, in the vNAcSh there was also a sustained increase in dyn after photostimulation (interaction effect; t = 2.499, p=0.014) (Figure 3b). Dyn release during photostimulation was also significantly higher in the vNAcSh compared to the dNAcSh (interaction effect; t = 2.749, p=0.007) and post stimulation (interaction effect; t = 2.806, p=0.006) (Figure 3b). Photostimulation of vNAcSh dyn neurons was previously shown to cause aversive behavior, consistent with early pharmacological studies which linked dyn with negative emotional states (Al-Hasani et al., 2015; Bals-Kubik et al., 1993). Here, we demonstrate sufficiently discrete dynorphin detection to measure different levels of peptide in two regions of the NAc shell separated by 1 mm.
 
@@ -78,23 +102,99 @@ This new approach, we describe here allows for detection of cell-type-specific e
 
 ## Materials and methods
 
-## Viral preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Neurotrace</td>
+      <td>Invitrogen</td>
+      <td>RRID:SCR_008410</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Dynorphin A 1–8 (dyn)</td>
+      <td>Bachem 4005845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leu-Enkephalin (LE)</td>
+      <td>Bachem 4006097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Met-Enkephalin (ME)</td>
+      <td>Sigma M6638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Thermo Xcalibur QuanBrowser</td>
+      <td>ThermoFisher</td>
+      <td>RRID:SCR_008452</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV-EF1α-double floxed- hChR2(H134R)-eYFP-WPRE- HGHpA</td>
+      <td>Addgene</td>
+      <td>RRID:SCR_002037</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 1100 HPLC pump</td>
+      <td>Agilent Technologies</td>
+      <td>RRID:SCR_013575</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>linear ion trap</td>
+      <td>LTQ XL, Thermo Scientific</td>
+      <td>RRID:SCR_014992</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Accela UHPLC system/TSQ Quantum Ultra triple quadrupole mass spectrometer</td>
+      <td>ThermoFisher</td>
+      <td>RRID:SCR_008452</td>
+    </tr>
+  </tbody>
+</table>
+
+### Viral preparation
 
 Plasmids encoding pAAV-EF1α-DIO-eYFP [final titer 5 × 1012 vg/ml], pAAV-EF1α-double floxed-hChR2(H134R)-eYFP-WPRE-HGHpA [final titer 2 × 1013 vg/ml], were obtained from Addgene (AddgeneRRID:SCR_002037) originally from the Deisseroth Laboratory at Stanford University. The DNA was amplified with a Maxiprep kit (Promega) and packaged into AAV5 serotyped viruses by the WUSTL Hope Center Viral Core.
 
-## Animals and surgical procedure
+### Animals and surgical procedure
 
 Adult male C57BL/6 mice (Envigo, 5–6 weeks of age) were used for initial experiments to determine perfusion media conditions and effects of probe design. For optogenetic studies, adult male preprodynorphin-IRES-cre (dyn-Cre) (RRID:IMSR_JAX:027958) mice were used. Mice were unilaterally injected with 300 nL of AAV5-EF1α-DIO-ChR2-eYFP with cre recombinase targeting to the Pdyn locus (Washington University in St. Louis, Hope Center Viral Vector Core, viral titer 2 × 1013 vg/mL) into either the dNAcSh or vNAcSh and were allowed to recover from surgery at Washington University in St. Louis 1 week prior to shipment. Mice were then shipped to, and acclimated for 2–3 weeks at, the University of Michigan before probe implantation.
 
-## Chemicals
+### Chemicals
 
 Dynorphin A1-8 (abbreviated dyn) and Leu-Enkephalin (LE) were purchased from Bachem (4005845 and 4006097, Torrance, CA); Met-Enkephalin (ME) was purchased from Sigma Aldrich (M6638, St. Louis, MO). Isotopically labeled leucine (13C615N1-leucine) was used to create an isotopically labeled dynorphin A 1-8internal standard (DYN*) through the University of Michigan’s protein synthesis core. Water, methanol, and acetonitrile for mobile phases are Burdick and Jackson HPLC grade purchased from VWR (Radnor, PA). All other chemicals were purchased from Sigma Aldrich (St. Louis, MO) unless otherwise noted. Artificial cerebrospinal fluid (aCSF) consisted of 145 mM NaCl, 2.67 mM KCl, 1.4 mM CaCl2, 1.01 mM MgSO4, 1.55 mM Na2HPO4, and 0.45 mM Na2H2PO4 adjusted to pH 7.4 with NaOH. Ringer solution consisted of 148 mM NaCl, 2.7 mM KCl, 2.4 mM CaCl2, and 0.85 mM MgCl2 adjusted pH to 7.4 with NaOH. In experiments that used high K+ ringer solution NaCl was adjusted to 48 mM and KCl was adjusted to 100 mM, all other chemicals remained the same.
 
-## Fabrication of opto-dialysis probe
+### Fabrication of opto-dialysis probe
 
 Fabrication of the optogenetic fiber optic probe was made as previously described (Al-Hasani et al., 2015; McCall et al., 2015; Sparta et al., 2011). Fabrication of the microdialysis probe and opto-dialysis probe are described in the supplemental information.
 
-## In vivo microdialysis
+### In vivo microdialysis
 
 Mice were group housed in temperature and humidity-controlled rooms with 12-hr light/dark cycles with access to food and water ad libitum. Both the Washington University in St. Louis and University of Michigan Unit for Laboratory Animal Medicine approved animal procedures, and they were in accordance with the National Institute of Health Guidelines for the Care and Use of Laboratory Animals. All experiments were conducted within the guidelines of Animal Research Reporting in vivo Experiments. Surgical procedures for inserting probes were similar to those previously described (Mabrouk et al., 2011; Al-Hasani et al., 2015; McCall et al., 2015; Patterson et al., 2015). Briefly, mice were anesthetized in an induction chamber with 5% isoflurane prior to surgical procedures and placed in a Model 963 stereotaxic frame (David Kopf Instruments, Tujunga, CA, USA) equipped with a mouse ear and bite bar. Mice were maintained under anesthesia with 1–2% isoflurane during cannulation procedures. A custom-made 1 mm polyacrylonitrile membrane (Hospal AN69) concentric probe, was inserted into either the dNAcSh (stereotaxic coordinates from bregma:+1.3 anterior-posterior [AP],±0.5 medial-lateral [ML], −4.5 mm dorsal-ventral [DV]) or vNAcSh (stereotaxic coordinates from bregma:+1.3 [AP],±0.5 [ML], −5.0 mm [DV]). Light power from a 473 nm laser was measured at the membrane to ensure satisfactory light power (defined as ≥5 mW at a distance of 1 mm from the end of fiber optic) before implantation of microdialysis probes integrated with fiber optic (opto-dialysis probe). Implanted probes were secured using two bone screws and dental cement. Mice were allowed to recover 24 hr with free access to food and water prior to baseline collection for microdialysis studies.
 
@@ -102,11 +202,11 @@ For microdialysis studies, the fiber optic was connected to the laser via a teth
 
 When experiments were completed, mice were euthanized and perfused with paraformaldehyde. Brains were extracted to confirm probe placement and virus expression by histology. Mice with verified virus expression and correct probe placement were included in the data set.
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 On the day of the experiment, mice were connected to a laser via a tether alongside the microdialysis perfusion lines. An Arduino UNO was programmed and connected to the 473 nm laser to provide stimulation frequency of 10 Hz, 10 ms pulse width. The laser was manually operated and turned on and off during a single 15 min fraction after three baseline collections. Six additional fractions were collected after the photostimulation, followed by two fractions with high 100 mM K+ ringer solution for a total of 12 fractions.
 
-## Peptide assays with nanoflow LC-MS
+### Peptide assays with nanoflow LC-MS
 
 An assay was developed to monitor opioid peptides (dyn, LE, and ME) using nanoflow LC-MS. Capillary columns and electrospray ionization emitter tips were prepared in-house (Mabrouk et al., 2011; Patterson et al., 2015). Capillary columns were prepared using a 10 cm length of 50/360 μm (inner diameter/outer diameter) fused silica capillary packed with 5 μm AltimaTM C18 particles to a bed length of 3.5 cm. The column was connected to a fused silica ESI emitter tip using a Teflon connector.
 
@@ -114,14 +214,14 @@ An assay was developed to monitor opioid peptides (dyn, LE, and ME) using nanofl
 
 Fresh dyn, LE, and ME standards, spiked with DYN* for the opioid assay were prepared daily. Standards were analyzed with nLC-MS at 0.01, 0.05, 0.1, 1, 10, 20, 50, and 100 pM concentrations in triplicate to determine linearity, reproducibility, and limits of detection. Opioid analytes were normalized to DYN*. Limits of detection for dyn, LE, and ME were 0.2 ± 0.04, 0.5 ± 0.3, and 0.6 ± 0.4 pM, respectively, in 5 μL and were determined each day of experimentation. Average carry over across all experiments for dyn, LE, and ME were 0.8 ± 0.03%, 0.3 ± 0.3%, and 0.3 ± 0.2% determined by running the highest calibration point immediately followed by a blank and integrating the peak area across the same time. Mice that had average basal levels above the limits of detection and had appropriate probe placement and virus expression were used for the study.
 
-## Small molecule analysis using benzoyl chloride (BzCl) LC-MS
+### Small molecule analysis using benzoyl chloride (BzCl) LC-MS
 
 For small molecule analysis, dialysate samples were derivatized with BzCl and analyzed by LC-MS (Song et al., 2012; Wong et al., 2016). This BzCl assay targeted dopamine, GABA and glutamate. 2 µL dialysate were aliquoted from the peptide samples and were derivatized with 1.5 µL sodium carbonate, 100 mM; 1.5 µL BzCl, 2% (v/v) BzCl in acetonitrile; 1.5 µL isotopically labeled internal standard mixture diluted in 50% (v/v) acetonitrile containing 1% (v/v) sulfuric acid and spiked with deuterated ACh and Ch (C/D/N isotopes, Pointe-Claire, Canada). Derivatized samples were analyzed using Thermo Fisher Accela UHPLC system interfaced to a Thermo Fisher TSQ Quantum Ultra triple quadrupole mass spectrometer (Thermo Fisher Scientific RRID:SCR_008452) fitted with a HESI II ESI probe, operating in multiple reaction monitoring. 5 µL samples were injected onto a Phenomenex core-shell biphenyl Kinetex HPLC column (2.1 mm x 100 mm). Mobile phase A was 10 mM ammonium formate with 0.15% formic acid, and mobile phase B was acetonitrile. The mobile phase was delivered an elution gradient at 450 µL/min as follows: initial, 0% B; 0.01 min, 19% B; 1 min, 26% B; 1.5 min, 75% B; 2.5 min, 100% B; 3 min, 100% B; 3.1 min, 5% B; and 3.5 min, 5% B. Thermo Xcalibur QuanBrowser (Thermo Fisher Scientific RRID:SCR_008452) was used to automatically process and integrate peaks. Each peak was visually inspected to ensure proper integration.
 
-## Assessment of probe placement
+### Assessment of probe placement
 
 Mice were anesthetized with pentobarbital and transcardially perfused with ice-cold 4% paraformaldehyde in phosphate buffer (PB). Brains were dissected, post-fixed for 24 hr at 4°C and cryoprotected with solution of 30% sucrose in 0.1M PB at 4°C for at least 24 hr, cut into 30 µm sections and processed for Nissl body staining. Sections were washed three times in PBS and blocked in PBS containing 0.5% Triton X-100 (G-Biosciences) for 1 hr. This was followed by a 1 hr incubation with fluorescent Nissl stain to allow visualization of cell bodies (1:400, Neurotrace, Invitrogen RRID:SCR_008410). Sections were then washed three times in PBS, followed by three 10 min rinses in PB and mounted on glass slides with Hard set Vectashield (Vector Labs) for episcope microscopy. Correct regional expression of the AAV5-DIO-ChR2-eYFP was verified in addition to placement of the opto-dialysis probe in either the vNAcSh or dNAcSh, which are represented on hit maps.
 
-## Statistical analyses
+### Statistical analyses
 
 The University of Michigan Center for Statistical Consultation and Research helped design a linear mixed model analysis appropriate for this study using SPSS Statistics software (SPSS, RRID:SCR_002865). The linear mixed model analysis was chosen to account for variations within and between mice and to account for missing data points within individual animals following sample loss or mechanical failure of the instrument. The linear mixed model was used to determine differences in basal conditions, effect of photostimulation relative to basal conditions, and prolonged effects after photostimulation relative to basal conditions. Linear mixed models were used to compare between genotypes within each region sampled, and between regions within genotypes. In vitro data were represented as mean ± SD and the in vivo was represented as mean ± SEM. In all cases significance was defined as p≤0.05.

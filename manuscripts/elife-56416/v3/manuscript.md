@@ -70,21 +70,33 @@ We therefore conducted a mutational analysis was undertaken, swapping TbAQP2 and
 
 ## Results
 
-## Investigation of the structural determinants of AQP2 for pentamidine transport
+### Investigation of the structural determinants of AQP2 for pentamidine transport
 
-## Positive selection for pore size
+#### Positive selection for pore size
 
 In T. brucei, the AQP2 and AQP3 genes are arranged as a tandem pair on chromosome 10 and have 74% amino acid identity. Whereas TbAQP2 clearly mediates pentamidine uptake, TbAQP3 does not (Baker et al., 2012; Munday et al., 2014), nor do various chimeric AQP2/3 rearrangements that give rise to pentamidine resistance (Munday et al., 2014; Graf et al., 2015). To investigate the origin of the AQP2 gene, a phylogenetic analysis of AQPs in African trypanosomes was performed. The number of aquaporin genes varies: there is a single aquaporin in T. vivax and T. congolense, two in T. suis and three in T. brucei and its derivatives and the most probable tree (Figure 1) is consistent with the evolutionary history of the four species (Hutchinson and Gibson, 2015), and indicates AQP1 as the ancestral AQP present in all trypanosome species. A duplication occurred in the common ancestor of T. suis and T. brucei after divergence from T. congolense and a further duplication, to form AQP2 and AQP3, in the ancestor of T. brucei after divergence from T. suis. Multiple alignment (Figure 1—figure supplement 1) shows that the classical NPA/NPA and ar/R AQP selectivity filter elements are present in all AQPs except T. brucei AQP2. The divergence of T. brucei AQP2 and 3 was investigated by calculating the non-synonymous/synonymous codon ratio (dN/dS) for different AQPs (Figure 1—figure supplement 2). For T. brucei aligned with T. suis AQP1, dN/dS is 0.21 and for AQP3, dN/dS is 0.30 indicating purifying selection. However, comparing T. brucei AQP2 with T. brucei AQP3, dN/dS is 2.0 indicating strong selection pressure for divergence on AQP2 towards an aquaporin with increased pore size. In order to verify any role of amino acids along the TbAQP2 pore in facilitating pentamidine sensitivity and/or uptake, we performed a mutational analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig1-v3.jpg)
+
+**Figure 1.:** The tree is a Neighbour-joining tree produced in Clustal Omega with the lengths of the horizontals proportional to the differences.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The T. brucei and T. congolense sequences were obtained from tritrypDB, T. suis sequences (Kelly S, Gibson W and Carrington M. The genome of Trypanosoma suis. In preparation). The alignment was produced with Clustal Omega. The yellow highlighting indicates the N-terminus of the sequences used to determine non-synonymous v synonymous ratios. dN/dS. T brucei AQP1 v T. suis AQP1 0.21. T brucei AQP3 v T. suis AQP3 0.30. T brucei AQP2 v T. brucei AQP3 2.00.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** brucei and T. suis AQPs. The ratios were calculated using a region of high confidence alignments from ~amino acid 60 (highlighted in Figure 1—figure supplement 1) to the C-terminus.
+
 Figure 1 shows that replacing the AQP2 NSA/NPS motif in the selectivity filter of the pore with the consensus NPA/NPA motif of other aquaporins still allows pentamidine to permeate, although at substantially reduced rate, with an EC50 at >50 fold lower than the aqp2/aqp3 null control, while cymelarsan is almost completely blocked (EC50 ~60% of control). Similar observations are made for the L258Y mutant (Figure 1B,C). In contrast, the single mutant L264R did not allow either cymelarsan or pentamidine permeation (Figure 1A, E) and the double mutant I110W/L264R actually enabled a level of cymelarsan (but not pentamidine) permeation (Figure 1F). These findings can be rationalised by the differing structural features, interaction patterns, and charge of the two compounds. The leucine to arginine substitution introduces a further positive charge into the central pore of the aquaporin, which repels the dicationic pentamidine molecule and is therefore likely to decrease its affinity to this variant, whereas the neutral arsenical compound is much less affected by the addition of positive charge into the pore.
 
-## Introduction of AQP3 residues into the AQP2 selectivity filter
+### Introduction of AQP3 residues into the AQP2 selectivity filter
 
 One highly conserved motif of aquaporins, believed to be essential for permeant selectivity, is NPA/NPA which is present in TbAQP3 but not in TbAQP2, where, uniquely, it is NS131A/NPS263 instead. We therefore constructed a TbAQP2 variant with the classical NPA/NPA motif (TbAQP2S131P/S263A) and expressed it in the aqp2/aqp3 null cell line (Baker et al., 2012; Munday et al., 2014). In this cell line, uptake of 30 nM [3H]-pentamidine was reduced to 4.40 ± 0.71% (n = 4) of the rate in the control line expressing TbAQP2WT (p<0.05, Student’s unpaired t-test), as well as significantly different from the rate measured in parallel in the tbaqp2/tbaqp3 null cells (p<0.01) (Figure 2A). The remaining pentamidine uptake was sufficient to strongly sensitise the TbAQP2S131P/S263A cells to pentamidine in a standard protocol of 48 hr incubation with the drug followed by a further 24 hr in the presence of the resazurin indicator dye (p<0.0001 vs tbaqp2/tbaqp3 null) but the EC50 was still significantly higher than the TbAQP2WT control (p<0.05) (Figure 2B). A similar effect was observed for the melaminophenyl arsenical drug cymelarsan, but there was no change in sensitivity to diminazene or the control drug phenylarsine oxide (PAO), which is believed to diffuse directly across the membrane (Fairlamb et al., 1992; Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig2-v3.jpg)
 
-**Figure 2.:** (A) Transport of 30 nM [3H]-pentamidine by tbaqp2/aqp3 null cells expressing TbAQP2-WT or one of the TbAQP2 mutants as indicated (blue bars). The corresponding brown bars are pentamidine transport in the control tbaqp2/aqp3 null cells assessed in parallel in each experiment. Transport was determined in the presence of 1 mM adenosine to block the TbAT1/P2 transporter. Bars represent the average and SEM of at least three independent experiments, each performed in triplicate. Blue stars: statistical significance comparison, by two-tailed unpaired Student’s tests, between the cells expressing TbAQP2WT and mutants; red stars: statistical comparison between the AQP2-expressing cells and control cells; NS, not significant. (B–F) EC50 values indicated test drugs, expressed as a percentage of the resistant control (tbaqp2/tbaqp3 null), against cell lines either expressing the indicated TbAQP2 mutant or TbAQP2WT (sensitive control). Red stars and green stars: comparison with tbaqp2/aqp3 null or TbAQP2WT-expressing cells, respectively, which were always assessed in parallel in each experiment. (G) Transport of 30 nM [3H]-pentamidine by tbaqp2/aqp3 null cells expressing TbAQP3 or an AQP3 mutant as indicated. (H) EC50 values of the indicated drugs against tbaqp2/aqp3 null cells expressing either TbAQP3 or a mutant thereof, expressed as percentage of tbaqp2/aqp3 null. All data for these graphs are contained in Figure 2—source data 1. All experiments are the average and SEM of at least three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001 by unpaired Student’s t-test, two-tailed.Figure 2—source data 1.50 values and transport rates for Figure 2A-H.
+**Figure 2.:** (A) Transport of 30 nM [3H]-pentamidine by tbaqp2/aqp3 null cells expressing TbAQP2-WT or one of the TbAQP2 mutants as indicated (blue bars). The corresponding brown bars are pentamidine transport in the control tbaqp2/aqp3 null cells assessed in parallel in each experiment. Transport was determined in the presence of 1 mM adenosine to block the TbAT1/P2 transporter. Bars represent the average and SEM of at least three independent experiments, each performed in triplicate. Blue stars: statistical significance comparison, by two-tailed unpaired Student’s tests, between the cells expressing TbAQP2WT and mutants; red stars: statistical comparison between the AQP2-expressing cells and control cells; NS, not significant. (B–F) EC50 values indicated test drugs, expressed as a percentage of the resistant control (tbaqp2/tbaqp3 null), against cell lines either expressing the indicated TbAQP2 mutant or TbAQP2WT (sensitive control). Red stars and green stars: comparison with tbaqp2/aqp3 null or TbAQP2WT-expressing cells, respectively, which were always assessed in parallel in each experiment. (G) Transport of 30 nM [3H]-pentamidine by tbaqp2/aqp3 null cells expressing TbAQP3 or an AQP3 mutant as indicated. (H) EC50 values of the indicated drugs against tbaqp2/aqp3 null cells expressing either TbAQP3 or a mutant thereof, expressed as percentage of tbaqp2/aqp3 null. All data for these graphs are contained in Figure 2—source data 1. All experiments are the average and SEM of at least three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001 by unpaired Student’s t-test, two-tailed.
 
 The mutant L258Y, which has the AQP3 Tyr-250 half of the highly conserved aromatic/arginine (ar/R) motif, responsible for pore restriction and proton exclusion (Wu et al., 2009), introduced into the TbAQP2 pore, yielded a drug transport phenotype similar to TbAQP2S131P/S263A. The [3H]-pentamidine transport rate was reduced to 6.6 ± 1.4% of TbAQP2WT (p<0.05) but remained above the rate in the tbaqp2/tbaqp3 null cells (p<0.01) (Figure 2A). Pentamidine and cymelarsan EC50 values were also significantly different from both the TbAQP2WT and the tbaqp2/tbaqp3 null controls (Figure 2C).
 
@@ -92,47 +104,89 @@ The ar/R motif is part of the larger selectivity filter, usually WGYR, present i
 
 We conclude that the unique TbAQP2 replacement of the NPA/NPA motif and all of the WGYR selectivity filter mutations are necessary for the observed pentamidine and melaminophenyl arsenical sensitivity observed in cells expressing wild-type TbAQP2.
 
-## Introduction of TbAQP2 selectivity filter residues into the AQP3 pore enables pentamidine transport
+#### Introduction of TbAQP2 selectivity filter residues into the AQP3 pore enables pentamidine transport
 
 An interesting question was whether the introduction of (some of) the critical TbAQP2 residues in TbAQP3 might give the latter the capacity to take up pentamidine. We therefore constructed TbAQP3W102I/R256L and TbAQP3W102I/R256L/Y250L and tested whether tbaqp2/tbaqp3 null cells transfected with these mutant aquaporins were able to take up 25 nM [3H]-pentamidine in the presence of 1 mM adenosine (which blocks uptake via TbAT1/P2). Pentamidine uptake in the tested cell lines was very low compared to the same cells expressing TbAQP2WT (Figure 2G). However, by measuring [3H]-pentamidine uptake over 30 min it was possible to reliably and reproducibly measure radiolabel accumulation in each cell line. This showed that while uptake in TbAQP3W102I/R256L only trended slightly upwards (p>0.05), the mutant AQP3 with all three AQP2 WGYR residues (W102I, R256L and Y250L) accumulated significantly more [3H]-pentamidine than the tbaqp2/tbaqp3 null cells (p<0.01) or the null cells expressing TbAQP3WT (p=0.011). This is further corroborated by comparing the pentamidine sensitivity profile of these cell lines: only TbAQP3W102I/R256L/Y250L conveyed significant sensitisation to tbaqp2/tbaqp3 null cells (p<0.0001; Figure 2H). Thus, TbAQP3 is converted into a pentamidine transporter by the insertion of the AQP2 WGYR residues, although this does not convey as high a rate of pentamidine uptake as TbAQP2. Similar experiments did not show any sensitisation to cymelarsan upon expression of TbAQP3 or mutants TbAQP3W102I/R256L and TbAQP3W102I/R256L/Y250L, although the latter mutant actually showed a 50% higher EC50 concentration (p<0.001); EC50 values were 114 ± 5%, 105 ± 8% and 159 ± 8% of the tbaqp2/tbaqp3 control, respectively (n ≥ 7).
 
-## Mutations of amino acids modelled to potentially bind pentamidine or melarsoprol dramatically reduce pentamidine transport
+#### Mutations of amino acids modelled to potentially bind pentamidine or melarsoprol dramatically reduce pentamidine transport
 
 Our previous attempts at modelling the binding of pentamidine and melarsoprol into the pore of TbAQP2 tentatively identified several residues that could be involved in this process (Munday et al., 2015a), from which we selected two residues, Ile190 and Trp192, at the extracellular end of the channel (position shown in Figure 7), to swap with the corresponding residues of TbAQP3, creating TbAQP2I190T and TbAQP2W192G. Both residues were predicted to interact with the substrate(s) via main-chain carbonyl oxygen atoms, but the side chains could nonetheless affect the interactions.
 
 TbAQP2I190T displayed dramatically reduced [3H]-pentamidine uptake, at 2.7 ± 0.7% (p<0.01, n = 4) of the TbAQP2WT control, although significantly higher than the rate of the tbaqp2/tbaqp3 null negative control (p<0.05) (Figure 3A). The reduced rate was the result of a reduced Vmax of the high affinity [3H]-pentamidine uptake, rather than a change in Km; the LAPT1 Vmax and Km were unchanged in cells expressing TbAQP2I190T or TbAQP2WT (Figure 3—figure supplement 1). TbAQP2I190T still conferred some increased pentamidine sensitivity in the standard resazurin test (p<0.0001), although highly significantly less sensitizing than TbAQP2WT (p<0.001); an intermediate sensitivity was also observed for cymelarsan (Figure 3B). Substitution W192G also produced intermediate sensitivity to both drugs (Figure 3C) but the double substitution TbAQP2I190T/W192G displayed no significant pentamidine uptake above tbaqp2/tbaqp3 null (Figure 3A) and did not sensitise to pentamidine or cymelarsan (Figure 3D).
 
-## The effect of large amino acids at the cytoplasmic end of the pore
+![Figure 3.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig3-v3.jpg)
+
+**Figure 3.:** (A) Transport of 30 nM [3H]-pentamidine by tbaqp2/tbaqp3 null cells or TbAQP2 variants expressed therein. Transport was expressed as a percentage of the rate of the AQP2WT control, performed in parallel. Blue stars are comparison with TbAQP2WT, red stars, comparison with the tbaqp2/tbaqp3 null control. NS, not significant. (B) EC50 values for the indicated drugs against tbaqp2/tbaqp3 null cells, and against TbAQP2WT and TbAQP2I190T expressed therein; values were expressed as % of the tbaqp2/tbaqp3 null (resistant) control. Red stars, comparison with the resistant control; green stars, comparison with the internal sensitive control (TbAQP2WT). The assays for all three strains and all three drugs were done simultaneously on at least three different occasions. (C) As B but for TbAQP2W192G. (D) As B but for TbAQP2I190T/W192G. All data for these graphs are contained in Figure 3—source data 1. *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001 by unpaired Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Transport of 30 nM [3H]-pentamidine by tbaqp2/tbaqp3 null cells expressing TbAQP2I190T, in the presence of unlabelled pentamidine at the indicated concentrations. Incubation time was 15 min, required to ensure sufficient radiolabel for accurate quantification, and uptake was linear and through zero over this period. The inhibition data were plotted to a double sigmoidal curve (Prism 7.0) with the bottom value fixed at 0. The high affinity component displayed an average an IC50 of 30.9 ± 12.2 nM (n = 3) and the lower affinity segment could be converted to a Michaelis-Menten plot for determination of Km and Vmax (inset), yielding an average Km of 59.9 ± 9.1 µM (n = 3), consistent with the Low Affinity Pentamidine Transporter (LAPT1; Bridges et al., 2007). The plot shown is one representative experiment in triplicate of three independent experiments. (B) Like (A) but with tbaqp2/tbaqp3 null cells expressing TbAQP2WT. Incubation time was 20 s (linear phase). The high affinity phase had statistically identical EC50 (41 ± 17 nM; p>0.05) as TbAQP2I190T. The inset shows a zoom-in on the low-affinity part of the curve (LAPT1 contribution), with the dotted line representing a theoretical sigmoid plot for one inhibitor, with the upper limit fixed at the value obtained for 10 μM pentamidine. The low affinity component was also statistically identical in the two strains (TbAQP2-WT Km = 82.7 ± 17.5 µM (n = 3; p>0.05)). Note that the amount of [3H]-pentamidine taken up by the low affinity component is highly similar for the mutant (A) and control (B) cell lines, at approximately 0.0005 pmol(107 cells)−1 s−1. Both frames show one representative experiment of three repeats, each performed in triplicate. Error bars are SEM, when not shown, fall within the symbol. All data for these graphs are contained in Figure 3—source data 1.
+
+#### The effect of large amino acids at the cytoplasmic end of the pore
 
 To test whether restrictions at the cytoplasmic end of TbAQP2 would impact on pentamidine transport, we selected three leucine residues and exchanged each with tryptophan, creating L84W, L118W and L218W (positions indicated in Figure 7). Expressing each of the L-to-W mutants in tbaqp2/tbaqp3 null cells revealed significantly reduced pentamidine sensitivity compared to the same cells expressing TbAQP2WT (Figure 4A), while also exhibiting dramatically reduced rates of [3H]-pentamidine transport (Figure 4B). This effect was additive, with TbAQP2L84W/L118W not significantly sensitising for pentamidine and displaying no detectable increase in [3H]-pentamidine transport relative to tbaqp2/tbaqp3 null cells (Figure 4A,B). None of these L-to-W mutants sensitised the cells to cymelarsan, diminazene or PAO, except that the L218W mutant sensitised slightly to diminazene (~2 fold, p<0.05; compared to 20-fold for pentamidine, p<0.0001) (Figure 4—figure supplement 1). When the same leucine residues were replaced with methionine instead of tryptophan, variants L84M and L218M were not or barely different from TbAQP2WT with respect to pentamidine sensitisation (Figure 4A) or transport (but highly significantly different from their respective tryptophan variants). For position 118 the Met replacement had similar effects as the Trp variant had, albeit with a significantly higher rate of pentamidine transport (1.88 ± 0.20 (n = 6) versus 9.38 ± 0.63% (n = 3) of TbAQP2WT, p<0.001; Figure 4A,B). The L84M and L218M mutants also sensitised to cymelarsan (p<0.01) and, surprisingly, the L218 M mutants also sensitised somewhat to diminazene (~2 fold, p<0.05) (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig4-v3.jpg)
+
+**Figure 4.:** (A) Pentamidine EC50 values (nM) for mutant and WT TbAQP2 expressed in tbaqp2/tbaqp3 cells (aqp2-3 null). The mutants are either a Trp (dark blue bars) or Met (orange bars) substitution at the indicated positions. The resistant control (aqp2-3 null) and sensitive control (AQP2WT) for the separate datasets (Trp or Met) are indicated as hatched bars in the same colours. (B) As (A) but showing transport of 30 nM [3H]-pentamidine by the same cell lines, expressed as percentage of the transport rate in the TbAQP2 control cells. (C) Pentamidine EC50 values for the same mutants as in (A) but expressed in the tbaqp1-2-3 null cells, performed in parallel with the determination of EC50 values for SHAM, shown in (D). As all cell lines were done simultaneously, the resistant and sensitive strain control values are identical for the Trp and Met mutants in this series. All bars represent the average and SEM of at least three independent replicates. *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001 by unpaired Student’s t-test; ns, not significant; nd, not determined. All data for these graphs are contained in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** AQP2-WT and various mutant versions thereof (indicated) were expressed in this cell line. EC50 values were determined using the alamar blue (resazurin) assay. Bars represent the average and SEM for at least three determinations. nd, not done. All data for these graphs are contained in Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** All EC50 values are expressed as percentage of the resistant control, aqp2/3 null transfected with an empty vector (no TbAQP2). 2T1 is the parental cell line of the aqp2/3 null. All values are the average of at least three independent determinations; the sensitive and resistant control cell lines were included in each independent experiment and the percentages taken are from the internal control rather than from the grand average over all experiments. All data for these graphs are contained in Figure 4—source data 1.
+
 These results strongly argue that the introduction of large amino acids at the cytosolic end significantly blocks the transport of pentamidine, whereas the change to Leu→Met mutants were more permissive for pentamidine, but not cymelarsan. In order to check whether these variants were still functional aquaglyceroporins, we used the observation of Jeacock et al., 2017 that T. brucei cells lacking all three AQPs are sensitised to the Trypanosome Alternative Oxidase inhibitor SHAM, as a result of cellular glycerol accumulation. By this measure, all of the position 84, 118 and 218 Trp and Met mutants were able to transport glycerol, as each displayed SHAM EC50 values significantly different from the tbaqp1-2-3 null cells (Figure 4C,D); several variants displayed an intermediate SHAM EC50, being also significantly different from TbAQP2WT, indicating some attenuation of glycerol efflux capacity for those mutants. Indeed, uptake of [3H]-glycerol closely mirrored the SHAM observations (Figure 4E).
 
-## Overall correlation between [3H]-pentamidine transport rate and pentamidine EC50
+#### Overall correlation between [3H]-pentamidine transport rate and pentamidine EC50
 
 The results presented in Figures 2–4 consistently show that even TbAQP2 mutants that display a large reduction in [3H]-pentamidine uptake rate results can show intermediate pentamidine sensitivity phenotypes (EC50s), due to the nature of the standard drug sensitivity test employed, which involves a 48 hr incubation with the drug prior to a further 24 hr incubation with resazurin: even a much-reduced transport rate will be sufficient to accumulate significant amounts of intracellular pentamidine over 3 days. A plot of [3H]-pentamidine transport rates versus pentamidine EC50, using the data for all 19 TbAQP2 and TbAQP3 mutants for which the transport rates were determined, shows that relatively small changes in EC50 occur, even with up to approximately 95% reduction in transport rates; at >95% reduction large EC50 increases become apparent (Figure 4—figure supplement 2).
 
-## Partially blocking endocytosis does not alter the rate of pentamidine transport and pentamidine does not trigger AQP2 endocytosis in bloodstream form T. brucei
+### Partially blocking endocytosis does not alter the rate of pentamidine transport and pentamidine does not trigger AQP2 endocytosis in bloodstream form T. brucei
 
 The knockdown of the CRK12 kinase in T. brucei causes a highly reproducible defect in endocytosis that affects an estimated one third of cells 12 hr after RNAi induction and is ultimately lethal (Monnerat et al., 2013). We utilized this system to investigate whether a link between endocytosis and pentamidine transport exists. At 12 hr of CRK12 RNAi induction with tetracycline, CRK12 mRNA levels were reduced by 42% (p<0.001) relative to uninduced controls as determined by qRT-PCR (Figure 5A). Samples from the culture taken at this time point showed an increased abundance of cells with swelling characteristic of endocytosis defects, although this was hard to quantify as a minority of cells were affected, and to various degrees, as the 12 hr time point was deliberately taken at as early a point as possible, so as not to affect cell viability (Figure 5—figure supplement 1) or cause excessive cellular pathology. We thus performed parallel uptake experiments with [3H]-pentamidine and [3H]-suramin, with suramin acting as positive control as it is known to enter T. brucei bloodstream forms through endocytosis after binding to surface protein ISG75 (Zoltner et al., 2016; Zoltner et al., 2020). After 12 hr of CRK12 RNAi induction, pentamidine uptake was not significantly less than in the T. brucei 2T1 parental cells, whereas uptake of [3H]-suramin was (p=0.019, n = 5; Figure 5B,C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig5-v3.jpg)
+
+**Figure 5.:** (A) qRT-PCR of CRK12, normalised to housekeeping gene GPI-8 (n = 3). (B) Transport of 0.025 µM [3H]-Pentamidine measured in control (non-induced) and CRK12 cell after exactly 12 hr of tetracycline induction; incubation time with label was 30 s. Bar is average and SEM of 5 independent determinations, each performed in triplicate. NS, not significant by unpaired Student’s t-test. (C) As frame B but uptake of 0.25 µM [3H]-suramin over 15 min; average and SEM of 5 independent determinations, each in quadruplicate. **, p=0.0027 by Student’s unpaired, two-tailed t-test. All data for these graphs are contained in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Cell counts were performed with a haemocytometer and the average of duplicate determinations is shown. All data for these graphs are contained in Figure 5—source data 1.
+
 As this approach is necessarily limited to a partial inhibition of endocytosis in BSF T. brucei, it was also investigated whether pentamidine induces the internalisation and turnover of TbAQP2, as could be expected if the protein acts to internalise substrate by receptor-mediated endocytosis. Cells pre-treated with the protein synthesis inhibitor cycloheximide (100 µg/ml) were incubated in the presence or absence of 25 nM pentamidine and the abundance of 3 × HA tagged TbAQP2 was followed over a period of 6 hr by western blot (Figure 6—figure supplement 1). Quantification of the bands showed identical turnover rates with or without pentamidine present in the medium (Figure 6).
 
-## The protonmotive force drives AQP2-mediated pentamidine uptake in bloodstream forms of T. brucei
+![Figure 6.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig6-v3.jpg)
+
+**Figure 6.:** Cells were induced for expression of 3×HATbAQP2, pretreated with cyclohexidine and subsequently with 25 nM pentamidine (5× EC50). Western blots (Figure 6—figure supplement 1) were performed using anti-HA antiserum in order to quantify the relative amount of TbAQP2 in the cells. The two datasets were not significantly different by Kolmogorov-Smirnov test (p=0.77) and data points at each time point were also not significantly different by Student’s t-test (p>0.05). All data for these graphs are contained in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Two independent experiments are shown. HA, haemagglutinin; tub, β-tubulin; CHX, cycloheximide; α-HA, anti-HA serum. All data for these graphs are contained in Figure 6—source data 1.
+
+### The protonmotive force drives AQP2-mediated pentamidine uptake in bloodstream forms of T. brucei
 
 It has been reported that knock-down of the HA1–three plasma membrane proton pumps of T. brucei (which are essential for maintaining the plasma membrane potential), confers pentamidine resistance (Alsford et al., 2012; Baker et al., 2013). Interestingly, this locus only conferred resistance to (dicationic) pentamidine, not to the (neutral) melaminophenyl arsenicals, unlike knockdown of the TbAQP2/TbAQP3 locus (Alsford et al., 2012). We have previously reported that the HAPT-mediated pentamidine uptake in T. brucei procyclics correlates strongly with the proton-motive force (PMF) (de Koning, 2001a). However, it is not clear whether this dependency indicates that pentamidine uptake is mediated by a proton symporter, as known for many T. brucei nutrient transporters (de Koning and Jarvis, 1997a; de Koning and Jarvis, 1997b; de Koning and Jarvis, 1998; de Koning et al., 1998), or reflects the energetics of uptake of cationic pentamidine being driven by the strong inside-negative membrane potential Vm. The absence of an effect of HA1–three knockdown on sensitivity to the neutral melaminophenyl arsenicals strongly argues against a mechanism of proton symport for HAPT1/AQP2 but a (partial) dependency of HAPT1/AQP2-mediated uptake of dicationic pentamidine on PMF or Vm would be expected if the substrate traverses the channel, as opposed to binding a single Asp residue on the extracellular side of the protein, as suggested in the endocytosis model (Song et al., 2016). Here we show that the same ionophores that inhibit HAPT1-mediated pentamidine transport in procyclic cells, and inhibit hypoxanthine uptake in both bloodstream form (BSF) (de Koning and Jarvis, 1997b) and procyclic (de Koning and Jarvis, 1997a) T. brucei, also dose-dependently inhibit [3H]-pentamidine uptake in BSF (Figure 7A). This confirms that pentamidine needs the membrane potential for rapid uptake, as predicted by the dependence on the HA1–three proton pumps. Using [3H]-suramin as an endocytosed substrate (Zoltner et al., 2016), we found that 20 µM CCCP also inhibits endocytosis in T. brucei, by 32.6% (p=0.029; pre-incubation 3 min, plus suramin accumulation over 10 min) (Figure 7B). While that means that the ionophore experiments do not perfectly discriminate between endocytosis and trans-channel transport for di-cationic pentamidine, they do for neutral melaminophenyl arsenicals: the non-dependence of these neutral TbAQP2 substrates on the proton gradient (Alsford et al., 2012) indicates that, unlike suramin, they are not endocytosed.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig7-v3.jpg)
 
-**Figure 7.:** T. b. brucei is sensitive to ionophores.(A) Uptake of 25 nM [3H]-pentamidine in s427WT bloodstream forms was measured in the presence of 1 mM adenosine to block the P2 transporter, and in the further presence of various ionophores at the indicated concentrations in µM. Incubation with radiolabel was 5 min after a 3 min pre-incubation with ionophore. Accumulation of radiolabel was expressed as a percentage of the control, being a parallel incubation in the absence of any ionophore. Bars represent the average of 3–5 independent determinations (each performed in quadruplicate) and SEM. (B) Uptake of 0.25 µM [3H]-suramin by T. b. brucei s427WT cells over 10 min. Cells were incubated in parallel, with or without the presence of 20 µM CCCP (plus 3 min pre-incubation). Saturation of the suramin-receptor interaction was demonstrated by including 100 µM unlabelled suramin (blue bars). Bars represent average and SEM or three independent experiments, each performed in quadruplicate. (C) Correlation plot of pentamidine transport rate versus protonmotive force (PMF), r2 = 0.93, p<0.05 by F-test. Concentrations in µM are indicated in the frame. CCCP is shown in red and not included in the regression analysis. Each data point is the average of 4 or more independent repeats performed in quadruplicate. The values for PMF were taken from de Koning and Jarvis, 1997b. (D) Uptake of 0.25 µM [3H]-glycerol by aqp1/aqp2/aqp3 null cells expressing TbAQP2-WT. Dose response with CCCP and pentamidine (PMD), using an incubation time of 1 min. The graph shown was performed in triplicate and representative of three independent repeats. (E) As D but using 0.025 µM [3H]-pentamidine and 30 s incubations. Representative graph in triplicate from three independent repeats. *, p<0.05; **, p<0.01; ***, p<0.001 by Student’s unpaired t-test. All data for these graphs are contained in Figure 7—source data 1.Figure 7—source data 1.Figure 7A-E.
+**Figure 7.:** (A) Uptake of 25 nM [3H]-pentamidine in s427WT bloodstream forms was measured in the presence of 1 mM adenosine to block the P2 transporter, and in the further presence of various ionophores at the indicated concentrations in µM. Incubation with radiolabel was 5 min after a 3 min pre-incubation with ionophore. Accumulation of radiolabel was expressed as a percentage of the control, being a parallel incubation in the absence of any ionophore. Bars represent the average of 3–5 independent determinations (each performed in quadruplicate) and SEM. (B) Uptake of 0.25 µM [3H]-suramin by T. b. brucei s427WT cells over 10 min. Cells were incubated in parallel, with or without the presence of 20 µM CCCP (plus 3 min pre-incubation). Saturation of the suramin-receptor interaction was demonstrated by including 100 µM unlabelled suramin (blue bars). Bars represent average and SEM or three independent experiments, each performed in quadruplicate. (C) Correlation plot of pentamidine transport rate versus protonmotive force (PMF), r2 = 0.93, p<0.05 by F-test. Concentrations in µM are indicated in the frame. CCCP is shown in red and not included in the regression analysis. Each data point is the average of 4 or more independent repeats performed in quadruplicate. The values for PMF were taken from de Koning and Jarvis, 1997b. (D) Uptake of 0.25 µM [3H]-glycerol by aqp1/aqp2/aqp3 null cells expressing TbAQP2-WT. Dose response with CCCP and pentamidine (PMD), using an incubation time of 1 min. The graph shown was performed in triplicate and representative of three independent repeats. (E) As D but using 0.025 µM [3H]-pentamidine and 30 s incubations. Representative graph in triplicate from three independent repeats. *, p<0.05; **, p<0.01; ***, p<0.001 by Student’s unpaired t-test. All data for these graphs are contained in Figure 7—source data 1.
 
 Although there is a good correlation between the proton-motive force and TbAQP2-mediated pentamidine transport (Figure 7C), the effect of CCCP was stronger than expected, and stronger than previously observed for [3H]-hypoxanthine uptake in T. brucei bloodstream forms (de Koning and Jarvis, 1997b) and we thus investigated whether CCCP might have a direct effect on TbAQP2. Indeed, CCCP inhibited uptake of (neutral) [3H]-glycerol in tbaqp1-2-3 null cells expressing TbAQP2-WT, with an IC50 of 20.7 ± 2.6 µM (n = 3) and inhibited [3H]-pentamidine uptake in the same cells with a similar IC50 (Figure 7D,E), showing CCCP to inhibit TbAQP2 directly, irrespective of effects on the membrane potential. Figure 7D also shows that pentamidine, used as a control, inhibits [3H]-glycerol uptake with an EC50 value (Mean of 27.5 nM, n = 2) similar to the EC50 of pentamidine inhibiting uptake of [3H]-pentamidine.
 
-## Molecular dynamics modelling of pentamidine interactions with TbAQP2
+### Molecular dynamics modelling of pentamidine interactions with TbAQP2
 
 To further investigate pentamidine binding and permeation in TbAQP2, we used the coordinates of the TbAQP2-pentamidine complex that was modelled in our previous study (Munday et al., 2015a). The stability of the protein model was first confirmed by unbiased atomistic molecular dynamics simulations (Figure 8—figure supplement 1). We then conducted force-probe simulations, in which a moving spring potential was used to enforce unbinding of pentamidine from its docked binding position and subsequently reconstructed the free-energy profile of pentamidine association-dissociation along the pore axis by employing Jarzynski’s equality (Park et al., 2003).
 
 Figure 8A shows that the docked position of pentamidine correctly identified its minimum free-energy binding site inside the TbAQP2 pore. Pentamidine adopts an extended state inside the TbAQP2 pore, adapting its molecular shape to the narrow permeation channel; pentamidine binding poses display inter-amidine lengths in the range 16.5–17 Å. Importantly, our steered simulations reveal that pentamidine can exit the channel in either direction, and that unbinding on the route towards the cytoplasm occurs on a free-energy surface roughly symmetric to that towards the extracellular side. Apart from overcoming the strongly attractive binding interaction in the centre, there are no major further free-energy barriers in either direction. The computed free-energy profile of pentamidine binding to the TbAQP2 structural model slightly overestimates its experimentally recorded binding affinity. However, the pentamidine conformation binding the narrow pore may not be the lowest-energy internal conformation of the small molecule, a factor that may be underrepresented in the profile as simulations were started from the protein-bound state. A further source of uncertainty stems from the protein model, which is expected to be somewhat less accurate than a crystal structure.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig8-v3.jpg)
+
+**Figure 8.:** (A) Docked conformation of pentamidine (blue) bound to the TbAQP2 (wheat). The protein and the ligand were modelled as described.4 The protein pore is shown in grey mesh, and the mutated positions described in the text are in magenta. (Right) Free-energy profile G(L) (solid blue line) along the pore axis of TbAQP2 (L). The membrane voltage of T. b. brucei gives rise to a voltage drop across the membrane (gray dotted line), which alters the free-energy profile (dashed blue line includes Vm effect) and reduces the free-energy of pentamidine exit into the intracellular bulk by ~22 kJ/mol as compared to the extracellular side (black arrow). (B) Close-up views comparing the bound positions of pentamidine (left) and melarsoprol (right) and showing the mutated sites and major interactions with the AQP2 pore lining.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig8-figsupp1-v3.jpg)
 
 Due to the dicationic character of pentamidine, the free-energy profile of the molecule within TbAQP2 strongly depends on the membrane voltage. The voltage drop of −125 mV across the cytoplasmic membrane of T. b. brucei (de Koning and Jarvis, 1997b), with a negative potential inside the cell, results in an overall inward attraction of ~22 kJ/mol (Figure 8A, arrow), that is exit from TbAQP2 into the cytoplasm is substantially more favourable for pentamidine than towards the extracellular side. Taken together, the free-energy profile under membrane voltage explains the strong coupling between pentamidine uptake and Vm observed in the experiments. The high affinity of the binding interaction leads to slow off-rates and a relatively low Vmax (0.0044 ± 0.0004 pmol(107 cells)−1 s−1) (de Koning, 2001a).
 
@@ -142,35 +196,555 @@ Conversely, the shorter arsenical agent is more affected by introducing the NPA/
 
 Finally, the single and double mutations I190T and W192G have broadly similar effects on pentamidine and cymelarsan permeation across AQP2 (Figure 2) as both positions at the entrance to the pore exhibit similar interaction patterns to both pentamidine and the arsenical agent.
 
-## SAR of the pentamidine-AQP2 interaction
+### SAR of the pentamidine-AQP2 interaction
 
 In order to study substrate binding and selectivity by the T. b. brucei High Affinity Pentamidine Transporter (HAPT1/TbAQP2), competition assays were performed with a series of pentamidine analogues and other potential inhibitors, in the presence of 1 mM unlabelled adenosine to block diamidine uptake by the TbAT1 aminopurine transporter (de Koning, 2001a; Bridges et al., 2007). High specific activity [3H]-pentamidine was used at 30 nM, below the Km value (de Koning, 2001a). Uptake was linear for at least 3 min (de Koning, 2001a) and we utilized 60 s incubations for the determination of inhibition constants (Ki). At 30 nM [3H]-pentamidine there is virtually no uptake through LAPT1 (Bridges et al., 2007) (Km value ~1000 fold higher than HAPT1) (de Koning, 2001a). The full dataset of 71 compounds is presented in Supplementary file 1, featuring Kis spanning five log units.
 
-## The linker length and composition is a strong determinant for high affinity binding of pentamidine
+#### The linker length and composition is a strong determinant for high affinity binding of pentamidine
 
 We determined the Ki values for analogues with a 2–8 methylene unit linker (Figure 9A, Table 1). Pentamidine analogues featuring 5–7 units displayed submicromolar binding affinities (5 > 6 > 7), while fewer (3-4) or more (8) only conveyed low micromolar binding affinity, equivalent to a decrease in Gibbs free energy of binding (ΔG0) from 10.2 to 13.0 kJ/mol (Table 1). Energy minimalization using Gaussian16 yielded an elongated conformation for pentamidine, with an inter-amidine length of 17.8 Å (Figure 7B). Replacement of the ether oxygens with S or NH, analogues RT-48 and RT-50, respectively (Table 1) resulted in δ(ΔG0) of 10.0 and 12.9 kJ/mol, respectively, indicating that the ether oxygens potentially act as H-bond acceptors: the NH group serves only as an H-bond donor, as its lone pair is conjugated with the aromatic system, and the sulphur mimics an aromatic NH (Beno et al., 2015). The sulfone analogue (RT-49), which introduces a dihedral angle of 180° between the benzamidine and the linker (Brameld et al., 2008), displayed no binding affinity. We propose that a near-planar conformation of the Phe-O-CH2 segment is required for efficient engagement of the binding site. This is supported by examining the binding affinities found for the analogous benzofuramidine series (e.g. RT-14, Figure 9B), which has a conformationally predefined ether-methylene bond orientation. Replacement of the middle methylene unit of pentamidine with an isosteric oxygen (ethylene glycol derivative DB1699, Table 1) results in a less flexible linker and a remarkable drop in binding affinity (δ(ΔG0)=15.3 kJ/mol).
 
-## Two amidine groups are required for high affinity binding
+![Figure 9.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig9-v3.jpg)
+
+**Figure 9.:** (A) A series of pentamidine analogues with different methylene linker length was tested for inhibition of TbAQP2/HAPT1-mediated 25 nM [3H]-pentamidine transport (i.e. in the presence of adenosine to block the TbAT1/P2 transporter). The Ki values are listed in Table 1. All Ki values are shown as average and SEM of 3 or more independent experiments, each performed in triplicate. (B) The distance between the amidine carbon atoms in the lowest-energy conformation was calculated using density functional theory as implemented in Spartan’ 16 v2.0.7. Geometry optimisations were performed with the wB97XD functional and the 6–31G* basis set at the ground state in gas phase. Structures and distances shown represent the dication state that is overwhelmingly prevalent in aqueous solution at neutral pH. The numbered red data points correspond to the propamidine - octamidine series in frame A. (C) Repulsion between free electron pairs (double dots), indicated by curved blue lines for RT-52 in the cis-conformation, causing it to exist overwhelmingly in the anti-conformation. (D) Overview of SAR observations on the binding preferences of TbAQP2 for pentamidine and its analogues. All data for these graphs are contained in Figure 9—source data 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56416/elife-56416-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** The pentamidine value (bold) is the Km determined with radiolabeled pentamidine. The table lists the data points shown in the plot. The line was made by linear regression (Prism 6.0); correlation coefficient r2 is 0.037. F-test: slope is not significantly different from zero (p=0.33). All values are in µM. All data for these graphs are contained in Figure 9—source data 1.
+
+**Table 1.**
+ Pentamidine analogues with an aliphatic linker.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="10"></td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>R1</td>
+      <td>R2</td>
+      <td>R3</td>
+      <td>R4</td>
+      <td>X</td>
+      <td>Y</td>
+      <td>Z</td>
+      <td>Ki (µM)</td>
+      <td>δ(ΔG0) PMD (kJ/mol)</td>
+    </tr>
+    <tr>
+      <td>Ethamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)2-O-</td>
+      <td>&gt;100</td>
+      <td>&gt;19.7</td>
+    </tr>
+    <tr>
+      <td>Propamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)3-O-</td>
+      <td>6.63 ± 1.40</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td>Butamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)4-O-</td>
+      <td>3.87 ± 1.38</td>
+      <td>11.7</td>
+    </tr>
+    <tr>
+      <td>Pentamidine (PMD)</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>0.036 ± 0.0006</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Hexamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)6-O-</td>
+      <td>0.058 ± 0.011</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Heptamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)7-O-</td>
+      <td>0.123 ± 0.010</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Octamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)8-O-</td>
+      <td>2.16 ± 0.48</td>
+      <td>10.2</td>
+    </tr>
+    <tr>
+      <td>RT-48</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-S-(CH2)5-S-</td>
+      <td>2.01 ± 0.86</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>RT-50</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-NH-(CH2)5-NH-</td>
+      <td>6.27 ± 1.30</td>
+      <td>12.9</td>
+    </tr>
+    <tr>
+      <td>RT-49</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-SO2-(CH2)5-SO2-</td>
+      <td>&gt;150</td>
+      <td>&gt;20.7</td>
+    </tr>
+    <tr>
+      <td>DB1699</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)2-O-(CH2)2-O-</td>
+      <td>16.6 ± 2.1</td>
+      <td>15.3</td>
+    </tr>
+    <tr>
+      <td>RT-36</td>
+      <td>Am</td>
+      <td>NH2</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>0.43 ± 0.07</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <td>CHI/1/72/1</td>
+      <td>Am</td>
+      <td>CH3</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>3.1 ± 0.7</td>
+      <td>10.7</td>
+    </tr>
+    <tr>
+      <td>CHI/1/69/1</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)4-O-</td>
+      <td>2.3 ± 0.5</td>
+      <td>10.4</td>
+    </tr>
+    <tr>
+      <td>RT-38</td>
+      <td>Am</td>
+      <td>CA</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)3-O-</td>
+      <td>NI, 100</td>
+      <td>&gt;19.7</td>
+    </tr>
+    <tr>
+      <td>meta-PMD</td>
+      <td>H</td>
+      <td>H</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>2890 ± 1050</td>
+      <td>28.1</td>
+    </tr>
+    <tr>
+      <td>RT-32</td>
+      <td>Im</td>
+      <td>Im</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>0.40 ± 0.08</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>RT-30</td>
+      <td>MeAm</td>
+      <td>MeAm</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>0.30 ± 0.07</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>Stilbamidine</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-CH = CH-</td>
+      <td>54.8 ± 3.2</td>
+      <td>18.3</td>
+    </tr>
+    <tr>
+      <td>FR39</td>
+      <td>G1</td>
+      <td>G1</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-(CH2)2-</td>
+      <td>41.7 ± 15.2</td>
+      <td>17.6</td>
+    </tr>
+    <tr>
+      <td>CRMI8</td>
+      <td>G2</td>
+      <td>G2</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-(CH2)2-</td>
+      <td>52.8 ± 12.7</td>
+      <td>18.1</td>
+    </tr>
+    <tr>
+      <td>RT-43</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>Cl</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>0.51 ± 0.15</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>Iodo-PMD</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>I</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>2.15 ± 0.04</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>RT-46</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>-C(O)NH2</td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>&gt;100</td>
+      <td>&gt;19.7</td>
+    </tr>
+    <tr>
+      <td>RT-52</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>CH</td>
+      <td>N</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>8.84 ± 0.88</td>
+      <td>13.7</td>
+    </tr>
+    <tr>
+      <td>RT-53</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td>H</td>
+      <td>H</td>
+      <td>N</td>
+      <td>CH</td>
+      <td>-O-(CH2)5-O-</td>
+      <td>NI, 250</td>
+      <td>&gt;22</td>
+    </tr>
+  </tbody>
+</table>
+
+_Am, amidine; MeAm, Methyl-amidine; Im, imidazole; CA, carboxylic acid; G1, 2-aminoimidazoline; G2, 1-methoxy-2-aminoimidazoline. PMD, pentamidine, NI, no inhibition at the indicated concentration in µM. Ki is the inhibition constant for [3H]-pentamidine transport by TbAQP2/HAPT1. δ(ΔG0) PMD is the difference in Gibbs Free Energy of interaction of the substrate with TbAQP2 with the same value for pentamidine (PMD). All Ki values are the average and SEM of at least 3–4 independent experiments._
+
+#### Two amidine groups are required for high affinity binding
 
 Matched-molecular pair analysis of non-symmetric analogues identified that both amidines contribute to high affinity binding (compare pairs pentamidine/RT-36 and pentamidine/CHI/1/72/1; Table 1). Removal of an H-bond donor (as in CHI/1/72/1) leads to a loss in ΔG0 > 10 kJ/mol. The aniline derivative RT-36 can still act as an H-bond donor, albeit with significantly reduced basicity (and thus H-bond acceptor propensity), and accordingly displayed intermediate affinity (δ(ΔG0)=6.2 kJ/mol). Interestingly, the removal of one amidine (compare butamidine and CHI/1/69/1) did not produce a significant effect on the binding affinity (Ki = 3.87 µM and Ki = 2.33 µM, respectively), indicating that the low affinity of butamidine (compare 36 nM for pentamidine) is due to an inability to attain a productive interaction with the second amidine. Capping of the amidine group, resulting in imidazoline analogue RT-32, or methylation (analogue RT-30) reduced binding to HAPT1, probably due to increased steric crowding at the interaction site, impairing H-bonding. Reducing pentamidine to just 4-hydroxybenzamidine removed essentially all affinity (Ki = 2.9 mM; δ(ΔG0)=28.1 kJ/mol), and the replacement of one amidine with a carboxylic group (compare propamidine, RT-38) was highly deleterious for engagement with the binding site. Finally, the orientation of the amidine group is crucial as shown by a meta to para change on the phenyl ring (meta-pentamidine, Table 1). We conclude that for high affinity both amidine groups must be able to interact unimpeded with the transporter, and in the linear (para) conformation.
 
-## Fully conjugated linking units
+#### Fully conjugated linking units
 
 Stilbamidine and the short-linker analogues FR39 and CRMI8 (Ríos Martínez et al., 2015) displayed low binding affinity (Table 1). Diminazene also displayed similar low affinity (Ki = 63 µM), and [3H]-diminazene uptake can only just be detected in procyclic T. b. brucei, that is in the absence of the TbAT1/P2 transporter (Teka et al., 2011), potentially indicating a minimal uptake via HAPT1. Stilbamidine and diminazene feature a similar inter-amidine distance, much shorter than pentamidine (12.35 and 12.25 Å, respectively). DB75 (furamidine) likewise displayed low affinity (Table 2) and is only internalised by TbAT1/P2 (Ward et al., 2011). The 2,5-furan linker imposes a fixed, inflexible angle of 136° on the benzamidine moieties and the phenyl rings will adopt a planar orientation with respect to the furan plane. This appears to allow only one benzamidine end to interact with the transporter, as (unlike the flexible linker of aliphatic diamidines, vide supra) the replacement of one amidine group actually increases the binding affinity, presumably by allowing an improved bonding orientation of the remaining amidine. Thus, DB607 (methoxy for amidine) and DB960 (N-methyl benzimidazole for benzamidine) display a somewhat higher affinity than DB75, although the fixed angle was unchanged. Introduction of a pyridine-N in the ortho-position with respect to the amidine functionality (DB994), dramatically reduces the pKa of the amidine moiety (Wang et al., 2010), resulting in a complete loss of binding affinity (Ki = 167 ± 20 µM), while this was not observed for the corresponding meta-pyridine derivative (DB829). The unfavourable furan bond angle is further demonstrated by the distally elongated analogues DB1061 and DB1062 that approximate the inter-amidine distance of pentamidine but showed no improvement in binding affinity (Table 2). Replacement of furan with thiazole (ER1004) or methylpyrrole (DB320), which feature a similar bond angle, also revealed comparable binding affinities. In contrast, a 2,5-substituted thiophene (DB686 and DB1063) or 2,5-substituted selenophene (DB1213) as a bio-isosteric replacement for the furan linker resulted in significantly higher binding affinities when compared to their matched pair analogue (DB1063/DB1061 and DB1213/DB75), which we attribute to a larger benzamidine-benzamidine angle. This is corroborated by the much weaker binding of the 2,4-thiophene derivative DB1077. A terminal amidine cap (imidazoline) reduced affinity as it did for pentamidine (compare DB1061/DB1062 and DB1063/DB1064 (Table 2)). A difuran spacer (DB914) resulted in a high affinity binder (Ki = 0.073 µM) because the two furans orient themselves in a trans conformation, resulting in a near-linear molecule.
 
-## Modifications to the phenyl rings of pentamidine
+**Table 2.**
+ Selection of diamidine analogues with aromatic linkers.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="8"></td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>R1</td>
+      <td>R2</td>
+      <td>Ar</td>
+      <td>X</td>
+      <td>Y</td>
+      <td>Ki (µM)</td>
+      <td>δ(ΔG0) PMD (kJ/mol)</td>
+    </tr>
+    <tr>
+      <td>DB75</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>38.2 ± 10.2</td>
+      <td>17.3</td>
+    </tr>
+    <tr>
+      <td>DB607</td>
+      <td>Am</td>
+      <td>OCH3</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>18.1 ± 1.9</td>
+      <td>15.5</td>
+    </tr>
+    <tr>
+      <td>DB960</td>
+      <td>Am</td>
+      <td>NMBa</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>16.6 ± 3.5</td>
+      <td>15.3</td>
+    </tr>
+    <tr>
+      <td>DB994</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>N</td>
+      <td>CH</td>
+      <td>167 ± 20</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <td>DB829</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>N</td>
+      <td>39.9 ± 8.0</td>
+      <td>17.4</td>
+    </tr>
+    <tr>
+      <td>DB1061</td>
+      <td>EtAm</td>
+      <td>EtAm</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>32.3 ± 6.0</td>
+      <td>16.9</td>
+    </tr>
+    <tr>
+      <td>DB1062</td>
+      <td>2MeIm</td>
+      <td>2MeIm</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>59.6 ± 11.2</td>
+      <td>18.4</td>
+    </tr>
+    <tr>
+      <td>ER1004</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>68.7 ± 16.0</td>
+      <td>18.8</td>
+    </tr>
+    <tr>
+      <td>DB320</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>71.3 ± 12.1</td>
+      <td>18.9</td>
+    </tr>
+    <tr>
+      <td>DB686</td>
+      <td>Gua</td>
+      <td>Gua</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>0.29 ± 0.11</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>DB1063</td>
+      <td>EtAm</td>
+      <td>EtAm</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>0.40 ± 0.10</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>DB1064</td>
+      <td>2MeIm</td>
+      <td>2MeIm</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>3.0 ± 0.82</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <td>DB1213</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>0.72 ± 0.17</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>DB1077</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>13.8 ± 3.1</td>
+      <td>14.8</td>
+    </tr>
+    <tr>
+      <td>DB914</td>
+      <td>Am</td>
+      <td>Am</td>
+      <td></td>
+      <td>CH</td>
+      <td>CH</td>
+      <td>0.073 ± 0.013</td>
+      <td>1.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_Am, amidine; Im, imidazole; EtAm, ethylamidine; 2MeIm, 2-methylimidazoline; NMB, N-methyl benzimidazole. aThis compound lacks the second benzene ring and features the terminal NMB moiety instead. Ki is the inhibition constant for [3H]-pentamidine transport by TbAQP2/HAPT1. δ(ΔG0) PMD is the difference in Gibbs Free Energy of interaction of the substrate with TbAQP2 with the same value for pentamidine (PMD). All Ki values are the average and SEM of at least 3–4 independent experiments._
+
+#### Modifications to the phenyl rings of pentamidine
 
 Substituents in the ortho-position (relative to the alkyloxy substituent) of pentamidine were poorly tolerated, including chloride or iodide (RT-43, iodopentamidine; Table 1); the amide analogue displayed no affinity at all (RT-46). Such substituents will cause an out-of-plane conformation of the alkoxy-group to avoid clashing with the ortho-substituent; high-affinity pentamidine binding appears to require a coplanar arrangement of the first methylene bound to the oxygen. Similarly, the introduction of an ortho-pyridine N (RT-52) led to a δ(ΔG0) of 13.7 kJ/mol. This derivative exhibits a conformational bias towards an anti-orientation of the ether oxygen and pyridine nitrogen (Figure 9C; Chein and Corey, 2010). The regio-isomeric meta-pyridine (RT-53) was completely inactive, reflecting the need for a positively charged amidine, as this analogue has a significantly reduced pKa (Wang et al., 2010) (see furan-spaced analogue DB994, supra).
 
-## Non-diamidine trypanocides
+#### Non-diamidine trypanocides
 
 The important veterinary trypanocide isometamidium, a hybrid of the phenanthridine ethidium and the diamidine diminazene, inhibited HAPT1-mediated [3H]-pentamidine uptake with a Ki of only 3.5 µM (Supplementary file 1), most probably through an interaction with its benzamidine moiety, as ethidium displayed virtually no affinity (Ki = 97 µM). However, we found no evidence that HAPT1/AQP2 is able to transport the bulky isometamidium molecule. For instance, the 2T1, tbaqp2 null, TbAQP2 expressed in tbaqp2 null, and the tbaqp2/tbaqp3 null strains displayed statistically identical EC50 values for isometamidium (112 ± 12 nM, 103 ± 14 nM, 98 ± 24 nM and 95 ± 12 nM, respectively; p>0.05, Student’s unpaired t-test), and the EC50 values for ethidium were also identical for each of these strains (1.32 ± 0.07 µM, 1.39 ± 0.08 µM, 1.35 ± 0.11 µM and 1.38 ± 0.14 µM, respectively). It is thus likely that isometamidium acts as an extracellular inhibitor rather than a substrate for HAPT/AQP2, as it does for the TbAT1/P2 transporter (de Koning, 2001b). The nitro-heterocyclic trypanocide megazol (Carvalho et al., 2014), curcumin and its trypanocidal analogue AS-HK14 (Alkhaldi et al., 2015) failed to inhibit HAPT1. Two trypanocidal bis-phosphonium compounds, CD38 (Taladriz et al., 2012) and AHI43 (Alkhaldi et al., 2016) did inhibit pentamidine uptake (Ki5–10 µM), whereas two related compounds, CDIV31 and AHI15 (Taladriz et al., 2012), did not. Phloretin, which inhibits human AQP9 and AQP3 (Geng et al., 2017),47 displayed a Ki of 1.76 µM for HAPT1/TbAQP2.
 
-## Are all the HAPT1/AQP2 inhibitors transported?
+#### Are all the HAPT1/AQP2 inhibitors transported?
 
 In an uptake-by-endocytosis model some correlation between TbAQP2 binding energy and TbAQP2-mediated uptake rates for each analogue would be expected, although in many instances of receptor-mediated endocytosis factors such as gating and the induction of conformational changes in the carrier might complicate such a correlation. Nevertheless, if we could observe a significant correlation of these parameters it would strengthen the argument for the endocytosis model. We were unable to ascertain the existence of such a correlation directly, for lack of radiolabelled substrates other than pentamidine and diminazene and thus used the Resistance Factor (RF; EC50(aqp2/3 null)/EC50(TbAQP2-WT)) as a proxy: clearly, a compound with a significant RF is internalized by TbAQP2. We observed a poor correlation between HAPT1 binding affinity and the level of resistance in the tbaqp2/tbaqp3 null strain (r2 = 0.039, Figure 9—figure supplement 1; n = 30), with many inhibitors, even those with high affinity, not displaying any significant resistance in the null line. This indicates that many of these compounds inhibit HAPT1/TbAQP2 but are not transported by it. This fails to support a model in which pentamidine binds and is then internalized by endocytosis: the inhibitors do not show resistance in the tbaqp2/tbaqp3 null line, whereas substrates do. The lack of any correlation would be especially problematic for a model of ‘passive’ pentamidine endocytosis, where the drug merely piggy-backs on TbAQP2 as it is internalised in its regular turnover schedule (t1/2 >4 h [Quintana et al., 2020]), without inducing any conformation changes in the receptor protein. The caveat inherent to using the RF instead of rate of transport is that it cannot be excluded that some of the test compounds are AQP2 substrates yet predominantly taken up by transporters other than TbAQP2, and hence show a low RF.
 
-## SAR summary
+#### SAR summary
 
 Figure 9D summarises the structure-activity relationship of pentamidine interactions with HAPT1/TbAQP2. No modification in any part of pentamidine improved affinity for TbAQP2, but virtually every modification resulted in a significant loss of binding activity (a similar analysis with melaminophenyl arsenicals was impossible for lack of the required organo-arsenicals). The results clearly demonstrate that at least both amidine groups and one or both ether oxygens are involved in interactions with AQP2, the sum of which adds up to the unusually high binding energy for this substrate-transporter pair (ΔG0 = −42.6 kJ/mol). These results are fully compatible with pentamidine binding in an elongated orientation, and are in complete agreement with the modelling and molecular dynamics, and the mutational analysis presented above, strengthening those conclusions using a completely different approach.
 
@@ -200,17 +774,270 @@ Altogether, we conclude that the primary entry of the sleeping sickness drugs pe
 
 ## Materials and methods
 
-## Trypanosome strains and cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Trypanosoma brucei)</td>
+      <td>2T1</td>
+      <td>David Horn</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei)</td>
+      <td>aqp2/aqp3 null</td>
+      <td>David Horn</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei)</td>
+      <td>aqp1-3 null</td>
+      <td>David Horn</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trypanosoma brucei)</td>
+      <td>CRK12 RNAi</td>
+      <td>Tansy Hammarton</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRPa</td>
+      <td>David Horn</td>
+      <td></td>
+      <td>plasmid for expression in T. brucei</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>AQP2</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.10.14170</td>
+      <td>Sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2S131P/S263A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L258Y</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence inSupplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2I110W</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence inSupplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L264R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2I110W /L264R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2I190T</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2W192G</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2I190T/W192G</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L84W</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L84M</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L118W</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L118M</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L218W</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L218M</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP2L84W/L118W</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutated TbAQP2; sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>AQP3</td>
+      <td>TriTrypDB</td>
+      <td>Tb927.10.14160</td>
+      <td>Sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP3W102I/R256L</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma brucei)</td>
+      <td>TbAQP3W102I/R256L/Y250L</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td></td>
+      <td>All itemised in Supplementary file 1</td>
+      <td></td>
+      <td>Custom inhibitors and pentamidine analogues</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentamidine isethionate</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diminazene aceturate</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Suramin</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cymelarsan</td>
+      <td>gift from C. Michael Turner</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]-pentamidine</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td></td>
+      <td>Radiochemical</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]-Suramin</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td></td>
+      <td>Radiochemical</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]-glycerol</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td></td>
+      <td>Radiochemical</td>
+    </tr>
+  </tbody>
+</table>
+
+### Trypanosome strains and cultures
 
 The drug-sensitive clonal T. b. brucei strain 427 (MiTat 1.2/BS221) (de Koning et al., 2000) was used for all the work on the SAR of pentamidine transport. The tbaqp2/tbaqp3 null cells (Baker et al., 2012) and tbaqp1-2-3 null cells (Jeacock et al., 2017) (both obtained from David Horn, University of Dundee, UK) are derived from the 2T1 strain of T. b. brucei (Alsford and Horn, 2008). The CRK12 RNAi cell line28 was obtained from Dr Tansy Hammarton (University of Glasgow, UK) and is also based on the 2T1 cell line; RNAi expression was induced with 1 µg/ml tetracycline in the medium. All experiments were performed with bloodstream form trypanosomes grown in vitro in HMI-11 medium as described (Wallace et al., 2002) at 37°C in a 5% CO2 atmosphere. Cultures were routinely maintained in 10 ml of this medium, being seeded at 5 × 104 cells/ml and passed to fresh medium at reaching approximately 3 × 106 cells/ml after 48 hr. For transport experiments 150 or 200 ml of culture was seeded at the same density in large flasks and incubated until the culture reached late-log phase.
 
-## Materials
+### Materials
 
 A complete list of diamidine analogues and other chemicals used for the SAR study is given as a table with their sources (Supplementary file 1). Ionophores and uncouplers nigericin, gramicidin, carbonyl cyanide m-chlorophenyl hydrazone (CCCP) and valinomycin, as well as the T. brucei proton pump inhibitor N-ethylmaleimide (NEM) were all purchased from Sigma-Aldrich. New compounds synthesised for this study are listed and described in Supplementary file 3.
 
-Transport assays - Transport of [3H]-pentamidine was performed exactly as previously described for various permeants (Wallace et al., 2002; Bridges et al., 2007; Teka et al., 2011) in a defined assay buffer (AB; 33 mM HEPES, 98 mM NaCl, 4.6 mM KCl, 0.55 mM CaCl2, 0.07 mM MgSO4, 5.8 mM NaH2PO4, 0.3 mM MgCl2, 23 mM NaHCO3, 14 mM glucose, pH 7.3). [3H]-pentamidine was custom-made by GE Healthcare Life Sciences (Cardiff, UK) with a specific activity of 88 Ci/mmol. Incubations of bloodstream form trypanosomes with 30 nM of this label (unless otherwise indicated) were performed in AB at room temperature for 60 s (unless otherwise indicated) and terminated by addition of 1 ml ice-cold ‘stop’ solution (1 mM unlabelled pentamidine (Sigma) in AB) and immediate centrifugation through oil (7:1 dibutylphthalate:mineral oil v/v (both from Sigma)). Transport was assessed in the presence of 1 mM adenosine to block uptake through the P2 aminopurine transporter; adenosine does not affect HAPT1-mediated transport (de Koning, 2001a; Bridges et al., 2007). Inhibition assays were performed routinely with 6–10 different concentrations of inhibitor over the relevant range, diluting stepwise by one third each time, in order to obtain a well-defined and accurate sigmoid plot and IC50 value (inhibitor concentration giving 50% inhibition of pentamidine transport; calculated by non-linear regression using Prism 6.0 (GraphPad), using the equation for a sigmoid curve with variable slope). Highest concentration was usually 1 mM unless this was shown to be insufficient for good inhibition, or when limited by solubility. Ki values were obtained from IC50 values using(1)ki=IC50/[1+(L+km)]in which L is the [3H]-pentamidine concentration and Km the Michaelis-Menten constant for pentamidine uptake by HAPT1 (Wallace et al., 2002). The Gibbs Free energy of interaction ΔG0 was calculated from(2)ΔG0=−RTlnKiin which R is the gas constant and T is the absolute temperature (Wallace et al., 2002). Transport of [3H]-glycerol and [3H]-suramin was performed essentially as for [3H]-pentamidine. For [3H]-glycerol (American Radiolabeled Chemicals, 40.0 Ci/mmol), 107 BSF T. brucei were incubated with radiolabel at a final concentration of 0.25 µM, for one minute. When the effect of CCP was studied, CCCP was added 3 min prior to the addition of the radiolabel. [3H]-suramin (American Radiolabeled Chemicals, 20.0 Ci/mmol) was also used at 0.25 µM final concentration, using 15 min incubations in the presence and absence of 100 µM unlabelled suramin (used as saturation) control.
+Transport assays - Transport of [3H]-pentamidine was performed exactly as previously described for various permeants (Wallace et al., 2002; Bridges et al., 2007; Teka et al., 2011) in a defined assay buffer (AB; 33 mM HEPES, 98 mM NaCl, 4.6 mM KCl, 0.55 mM CaCl2, 0.07 mM MgSO4, 5.8 mM NaH2PO4, 0.3 mM MgCl2, 23 mM NaHCO3, 14 mM glucose, pH 7.3). [3H]-pentamidine was custom-made by GE Healthcare Life Sciences (Cardiff, UK) with a specific activity of 88 Ci/mmol. Incubations of bloodstream form trypanosomes with 30 nM of this label (unless otherwise indicated) were performed in AB at room temperature for 60 s (unless otherwise indicated) and terminated by addition of 1 ml ice-cold ‘stop’ solution (1 mM unlabelled pentamidine (Sigma) in AB) and immediate centrifugation through oil (7:1 dibutylphthalate:mineral oil v/v (both from Sigma)). Transport was assessed in the presence of 1 mM adenosine to block uptake through the P2 aminopurine transporter; adenosine does not affect HAPT1-mediated transport (de Koning, 2001a; Bridges et al., 2007). Inhibition assays were performed routinely with 6–10 different concentrations of inhibitor over the relevant range, diluting stepwise by one third each time, in order to obtain a well-defined and accurate sigmoid plot and IC50 value (inhibitor concentration giving 50% inhibition of pentamidine transport; calculated by non-linear regression using Prism 6.0 (GraphPad), using the equation for a sigmoid curve with variable slope). Highest concentration was usually 1 mM unless this was shown to be insufficient for good inhibition, or when limited by solubility. Ki values were obtained from IC50 values using
 
-## Construction of AQP mutants and transfection
+$$
+k_{i}=IC_{50}/[1+(L+k_{m})]
+$$
+
+in which L is the [3H]-pentamidine concentration and Km the Michaelis-Menten constant for pentamidine uptake by HAPT1 (Wallace et al., 2002). The Gibbs Free energy of interaction ΔG0 was calculated from
+
+$$
+ΔG^{0}=−RTlnK_{i}
+$$
+
+in which R is the gas constant and T is the absolute temperature (Wallace et al., 2002). Transport of [3H]-glycerol and [3H]-suramin was performed essentially as for [3H]-pentamidine. For [3H]-glycerol (American Radiolabeled Chemicals, 40.0 Ci/mmol), 107 BSF T. brucei were incubated with radiolabel at a final concentration of 0.25 µM, for one minute. When the effect of CCP was studied, CCCP was added 3 min prior to the addition of the radiolabel. [3H]-suramin (American Radiolabeled Chemicals, 20.0 Ci/mmol) was also used at 0.25 µM final concentration, using 15 min incubations in the presence and absence of 100 µM unlabelled suramin (used as saturation) control.
+
+### Construction of AQP mutants and transfection
 
 All mutations in the TbAQP2 and TbAQP3 genes were introduced to the relevant backbone WT vector, either pRPaGFP-AQP2 or pRPaGFP-AQP3 (Baker et al., 2012), by site-directed mutagenesis. Use of the pRPa vector for transfection of 2T1-derived T. brucei ensures integration in a prepared locus in the ribosomal rRNA spacer region and a high level of stable expression (Alsford et al., 2005). For mutations S131P, S263A, I110W, L264R, L258Y, I190T and W192G in AQP2, and W102I, R256L and Y250L in AQP3 mutations were inserted using the QuikChange II kit (Agilent, Santa Clara, CA, USA), following the manufacturer's instructions. For mutations L84W, L118W, L218W, L84M, L118M and L218M were introduced using the Q5 Site-Directed Mutagenesis Kit (E0554S), (New England BioLabs) according to manufacturer’s instructions.
 
@@ -218,18 +1045,18 @@ The following primer pairs (itemised in Supplementary file 4) were used to inser
 
 For transfection, 10 µg of digested plasmid and 1–2 × 107 parasites of the desired cell line (either aqp2/aqp3 null or aqp1/aqp2/aqp3 null) were resuspended in transfection buffer and transfected using an Amaxa Nucleofector, with program X-001. After a recovery period (8–16 hr) in HMI-11 at 37°C and 5% CO2, the parasites were cloned out by limiting dilution with the selection antibiotic (2.5 µg/ml hygromycin). In all cases the presence of the construct and its correct integration into the designed rRNA locus was verified by three PCR reactions, one using primers for the amplification of the full-length aquaporin (primers HDK529 and HDK209). The second PCR was performed to amplify the gene with surrounding parts of the expression cassette using (primers HDK1011 and HDK430). The third PCR was to assess whether the expression cassette had linearized and integrated into the T. brucei genome using (primers HDK991 and HDK713).
 
-## Drug sensitivity assays
+### Drug sensitivity assays
 
 Drug sensitivity assays for T. b. brucei bloodstream forms used the cell viability dye resazurin (Sigma) and were performed exactly as described (Wallace et al., 2002; Bridges et al., 2007) in 96-well plates with doubling dilutions of test compound, starting at 100 µM, over 2 rows of the plate (23 dilutions plus no-drug control). Incubation time with test compound was 48 hr (37°C/5% CO2), followed by an additional 24 hr in the presence of the dye.
 
-## Protein turnover and western blotting
+### Protein turnover and western blotting
 
 T. brucei 2T1 containing 3×HAAQP2 were incubated with 1 µg/ml tetracycline for 24 hr at 37°C/5% CO2 to induce expression. Tetracycline was then washed away by four consecutive washes with fresh supplemented HMI-9, and cells were then incubated with 25 nM of pentamidine (5 × EC50) for 1 hr at 37°C/5% CO2 prior to harvest cells for pulse chase experiments. To determine protein half-life, translation was blocked by addition of cycloheximide (100 µg/ml) and cells were harvested at various times by centrifugation (800 × g for 10 min at 4°C). Cells were washed with ice-cold PBS, then resuspended in 1 × SDS sample buffer (Thermo) and incubated at 70°C for 10 min. Proteins were subjected to electrophoresis using 4–12% precast acrylamide Bis-Tris gels (Thermo) and transferred to polyvinylidene difluoride (PVDF; Sigma-Aldrich) membranes with a iBlot2 system (Thermo) at 23 V for 6 min, exactly as described (Quintana et al., 2020), blocking non-specific binding with 5% (w/v) bovine serum albumin (BSA; Sigma) in Tris-buffered saline (pH 7.4) with 0.2% (v/v) Tween-20 (TBST) and using rat anti-HA IgG1 (Sigma) or anti-mouse β-tubulin (clone KMX-1; Millipore) at 1:5000 or 1:10,000 dilution in TBST, respectively. Membranes were washed five times with TBST and then incubated in TBST/1% BSA with the appropriate horseradish peroxidase (HRP)-coupled secondary antibody (Sigma), at 1: 10,000. Bands were visualised using the ECL Prime Western Blotting System (Sigma) and GE healthcare Amersham Hyperfilm ECL (GE). Densitometry quantification was conducted using ImageJ software (NIH).
 
-## Molecular dynamics
+### Molecular dynamics
 
 Molecular dynamics simulations were performed using the GROMACS software package, version 5.1.1 (Abraham et al., 2015). We used the coordinates from the homology model of TbAQP2 published in Figure 2A in Munday et al., 2015a, which was inserted into POPC/POPE (4:1) membranes, approximately reflecting the membrane composition of T. b. brucei (Smith and Bütikofer, 2010). The membrane models were constructed using the CHARMM-GUI webserver (Jo et al., 2008). Subsequently, extended stability tests of the modelled structure and the bound pentamidine were carried out using unbiased simulations of 100 ns length. The root-mean-square deviation (RMSD) of the protein remained relatively low with a backbone RMSD converging to ~3 Å after 100 ns simulated time (Figure 8—figure supplement 1) bound to the binding site defined previously using molecular docking (Figure 8A; Munday et al., 2015a). For these and all following simulations, we used the CHARMM36 force field (Klauda et al., 2010) pentamidine was parameterised using the CHARMM generalized force field approach (CHGenFF [Vanommeslaeghe et al., 2010]). All simulations employed a time step of 2 fs under an NPT ensemble at p=1 bar and T = 310 K. To obtain non-equilibrium work values for removing pentamidine from the internal AQP2 binding site, we then conducted steered MD simulations with a probe speed of 0.005 nm/ns and a harmonic force constant of 300 kJ/mol nm2, pulling pentamidine in both directions along the pore axis. The free energy profile of pentamidine binding to the AQP2 pore was reconstructed by using the Jarzynski, 1997 equality.
 
-## Statistical analysis
+### Statistical analysis
 
 All transport experiments were performed in triplicate and all values such as rate of uptake, percent inhibition, Ki, Km, Vmax etc were performed at least three times completely independently. For drug sensitivity tests, all EC50 values were based on serial dilutions over two rows of a 96-well plate (23 doubling dilutions plus no-drug control), which were obtained independently at least three times. EC50 and IC50 values were determined by non-linear regression using the equation for a sigmoid curve with variable slope and are presented as average ± SEM. Statistical significance between any two data points was determined using Student’s t-test (unpaired, two-tailed).

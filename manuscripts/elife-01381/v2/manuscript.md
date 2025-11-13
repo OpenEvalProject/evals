@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.01381.001 Non-additive interaction between genetic variants, or epistasis, is a possible explanation for the gap between heritability of complex traits and the variation explained by identified genetic loci. Interactions give rise to genotype dependent variance, and therefore the identification of variance quantitative trait loci can be an intermediate step to discover both epistasis and gene by environment effects (GxE). Using RNA-sequence data from lymphoblastoid cell lines (LCLs) from the TwinsUK cohort, we identify a candidate set of 508 variance associated SNPs. Exploiting the twin design we show that GxE plays a role in ∼70% of these associations. Further investigation of these loci reveals 57 epistatic interactions that replicated in a smaller dataset, explaining on average 4.3% of phenotypic variance. In 24 cases, more variance is explained by the interaction than their additive contributions. Using molecular phenotypes in this way may provide a route to uncovering genetic interactions underlying more complex traits. DOI: http://dx.doi.org/10.7554/eLife.01381.001
+Non-additive interaction between genetic variants, or epistasis, is a possible explanation for the gap between heritability of complex traits and the variation explained by identified genetic loci. Interactions give rise to genotype dependent variance, and therefore the identification of variance quantitative trait loci can be an intermediate step to discover both epistasis and gene by environment effects (GxE). Using RNA-sequence data from lymphoblastoid cell lines (LCLs) from the TwinsUK cohort, we identify a candidate set of 508 variance associated SNPs. Exploiting the twin design we show that GxE plays a role in ∼70% of these associations. Further investigation of these loci reveals 57 epistatic interactions that replicated in a smaller dataset, explaining on average 4.3% of phenotypic variance. In 24 cases, more variance is explained by the interaction than their additive contributions. Using molecular phenotypes in this way may provide a route to uncovering genetic interactions underlying more complex traits.
 
 ## Introduction
 
@@ -37,57 +37,37 @@ On long time frames, epistasis plays an important role in evolution (Breen et al
 
 However, epistasis has proved harder to identify in human genome-wide association studies. In particular, with classical complex traits there has not been evidence of epistasis on the scale seen in model organisms. This may be in part because of the large number of possible interactions to test in the human genome, and possibly because the genetic architecture is different in a homogeneous outbred population from that of a cross between inbred lines.
 
+Paré et al. (2010) have described how an interaction, either genetic or environmental, can induce genotype dependent variance in phenotypes. This effect can be observed without directly modeling the interacting factor. They suggested that SNPs which showed such effects on variance could be prioritized in the search for interactions. We see an example of why this could be true in Figure 1A: carriers of C allele of SNP rs230273 show reduced expression when also carriers of the G allele of SNP rs3131691. For carriers of this G allele, this induces a bimodality in expression which appears as a large variance in expression. For those with AA genotype at rs3131691, expression appears independent of rs230273 genotype; in the absence of the induced bimodality, the variance within this group is much reduced. The interactions causing genotype dependent variance could be with another genetic variant (epistasis, as in our example and the focus of this paper) or an environmental factor.
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-v2.jpg)
 
-**Figure 1.:** Genotype dependent variance analysis identifies candidate SNPs for interactions. These SNPs cluster close to the transcription start site.(A) The plot shows expression of the gene TRIT1, broken down by v-eQTL genotype (rs3131691), to illustrate how an interaction can be observed as an increase in variance. The genotype at rs3131691 interacts with the genotype of rs230273. Orange individuals are carriers of the C allele at rs230273, which decreases expression only in the AG and GG genotype groups of rs3131691. Observing only expression conditioned on rs3131691, this induced bimodality increases the variance of the observations within these groups. Jitter has been introduced in the x axis to reduce overplotting. (B) Histogram of distance from transcription start site in kilobases for the 508 peak v-eQTL hits. Figure shows the clustering of the 508 v-eQTL discovered in the TwinsUK cohort around the transcription start site, with downstream of the TSS counted as positive. The orange triangles below mark the positions of the 26 v-eQTL which replicated in the GEUVADIS cohort.DOI: http://dx.doi.org/10.7554/eLife.01381.003
+**Figure 1.:** (A) The plot shows expression of the gene TRIT1, broken down by v-eQTL genotype (rs3131691), to illustrate how an interaction can be observed as an increase in variance. The genotype at rs3131691 interacts with the genotype of rs230273. Orange individuals are carriers of the C allele at rs230273, which decreases expression only in the AG and GG genotype groups of rs3131691. Observing only expression conditioned on rs3131691, this induced bimodality increases the variance of the observations within these groups. Jitter has been introduced in the x axis to reduce overplotting. (B) Histogram of distance from transcription start site in kilobases for the 508 peak v-eQTL hits. Figure shows the clustering of the 508 v-eQTL discovered in the TwinsUK cohort around the transcription start site, with downstream of the TSS counted as positive. The orange triangles below mark the positions of the 26 v-eQTL which replicated in the GEUVADIS cohort.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** p-values for SNPs associated with variance in gene expression (v-eQTL) are plotted against their genomic position. Horizontal line indicates FDR = 0.05 cut off. Only the most significant v-eQTL for each gene is plotted, explaining isolated signals and there being few signals with p-value >0.01.DOI: http://dx.doi.org/10.7554/eLife.01381.004
+**Figure 1—figure supplement 1.:** p-values for SNPs associated with variance in gene expression (v-eQTL) are plotted against their genomic position. Horizontal line indicates FDR = 0.05 cut off. Only the most significant v-eQTL for each gene is plotted, explaining isolated signals and there being few signals with p-value >0.01.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.01381.005
-
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp3-v2.jpg)
-
-**Figure 1—figure supplement 3.:** NUDT2) is dependent on genotype dosage of rs10972055.DOI: http://dx.doi.org/10.7554/eLife.01381.006
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** PLA2GC4) is dependent on genotype dosage of rs8109684.DOI: http://dx.doi.org/10.7554/eLife.01381.007
-
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp5-v2.jpg)
-
-**Figure 1—figure supplement 5.:** TRIT1) is dependent on genotype dosage of rs3131691.DOI: http://dx.doi.org/10.7554/eLife.01381.008
 
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp6-v2.jpg)
 
-**Figure 1—figure supplement 6.:** TTC38) is dependent on genotype dosage of rs6008743.DOI: http://dx.doi.org/10.7554/eLife.01381.009
-
 ![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp7-v2.jpg)
-
-**Figure 1—figure supplement 7.:** ANXA5) is dependent on genotype dosage of rs6857766.DOI: http://dx.doi.org/10.7554/eLife.01381.010
 
 ![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp8-v2.jpg)
 
-**Figure 1—figure supplement 8.:** POLR1E) is dependent on genotype dosage of rs7033474.DOI: http://dx.doi.org/10.7554/eLife.01381.011
-
 ![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp9-v2.jpg)
-
-**Figure 1—figure supplement 9.:** GSTM4) is dependent on genotype dosage of rs542338.DOI: http://dx.doi.org/10.7554/eLife.01381.012
 
 ![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp10-v2.jpg)
 
-**Figure 1—figure supplement 10.:** HLA-DQB2) is dependent on genotype dosage of rs114183935.DOI: http://dx.doi.org/10.7554/eLife.01381.013
-
 ![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp11-v2.jpg)
 
-**Figure 1—figure supplement 11.:** HLA-DQA1) is dependent on genotype dosage of rs9276807.DOI: http://dx.doi.org/10.7554/eLife.01381.014
-
 ![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig1-figsupp12-v2.jpg)
-
-**Figure 1—figure supplement 12.:** C21orf56) is dependent on genotype dosage of rs16978976.DOI: http://dx.doi.org/10.7554/eLife.01381.015
 
 We therefore adopt the following two step strategy for uncovering epistasis affecting gene expression. We search for: (1) SNPs affecting the variance of expression (v-eQTL) within the 2 Mbp region around the transcription start site (TSS) of the gene, and then (2) SNPs in epistasis with these v-eQTL. Previous work that looked for variance QTL for height and BMI in ∼150,000 samples identified one replicated locus (Yang et al., 2012). Wang et al. (2014) also looked at v-eQTL in gene expression in the same cohort as presented here, where expression was quantified using microarrays rather than sequence based technology (Grundberg et al., 2012). They concluded that v-eQTL can often be induced by partial linkage disequilibrium with eQTL. They also discovered differences in expression between monozygotic twins which were dependent on genotype of the twin pair, such differences cannot be induced by these partial linkages and thus point to a gene–environment interaction. The haplotype effect explanation for v-eQTL, combined with a literature which has concluded in many cases epistasis does not contribute to variation in complex traits (Hill et al., 2008), led them to conclude epistasis is not a cause of v-eQTL. However, they do not search for examples of epistasis; we do so in this paper, explicitly ruling out haplotype effects. We note that microarray data are also less suitable than RNA-seq for the purpose of detecting v-eQTL, because saturation of signal limits discrimination at extremes (Wang et al., 2009). In neither Yang et al. (2012) nor Wang et al. (2014) were variance QTL directly used to identify epistatic or GxE interactions.
 
@@ -101,81 +81,260 @@ We searched for v-eQTL in a dataset of 765 LCL samples from female Caucasian adu
 
 To search for epistasis, we scanned the cis windows for a second variant statistically interacting with each of the peak v-eQTL. A forward stepwise analysis identified independent examples of epistasis, not induced by linkage disequilibrium; a statistical test was applied to remove signals related to dominance (‘Materials and methods’). This identified 256 independent SNPs in apparent epistasis with the peak v-eQTL for 173 genes (Bonferroni, p-value <1.98 × 10−8; Supplementary file 1B). To call these signals as genuine genetic interactions we required two further criteria: (i) significant replication in an independent dataset, and (ii) that the interaction could not be explained by the effect of a third, possibly rare, variant effecting expression as discussed above.
 
-We replicated our scan for v-eQTL and epistatic interactions in 462 samples with LCL RNA-seq data from 1000 Genomes samples collected by the GEUVADIS consortium (Lappalainen et al., 2013). Table 1 reports the results of replication for v-eQTL and epistasis using both FDR and Bonferroni correction for threshold determination. For the 23 v-eQTL that are significant using the Bonferroni threshold, 16 are significant in the GEUVADIS cohort (FDR <0.05), 15 with same direction of effect. Of the 508 v-eQTL, 28 replicated with an FDR <0.05, 26 with same direction of effect. The ten most significant v-eQTL in the GEUVADIS cohort, with matching direction of effect across the two cohorts, are shown in Figure 1—figure supplements 3–12.10.7554/eLife.01381.016Table 1.Replication analysisDOI: http://dx.doi.org/10.7554/eLife.01381.016TestThresholdAssociations (available for testing in GEUVADIS)Replicate, FDR <0.05 (% success)Same direction of effect (% success)π1v-eQTLFDR <0.05508 (485)28 (5.8%)26 (93%)0.30v-eQTLBonf <0.0523 (23)16 (70%)15 (94%)0.72EpistasisBonf <0.05256 (246)137 (56%)131 (96%)0.71Significant associations (at FDR and Bonferroni thresholds) from the TwinsUK sample were replicated in GEUVADIS samples. The number of overlapping SNPs and genes in both datasets per analysis is shown, as well as the percentage of replicated associations. π1 is an estimate of the proportion of replicating loci in the GEUVADIS cohort (Storey, 2002).
+We replicated our scan for v-eQTL and epistatic interactions in 462 samples with LCL RNA-seq data from 1000 Genomes samples collected by the GEUVADIS consortium (Lappalainen et al., 2013). Table 1 reports the results of replication for v-eQTL and epistasis using both FDR and Bonferroni correction for threshold determination. For the 23 v-eQTL that are significant using the Bonferroni threshold, 16 are significant in the GEUVADIS cohort (FDR <0.05), 15 with same direction of effect. Of the 508 v-eQTL, 28 replicated with an FDR <0.05, 26 with same direction of effect. The ten most significant v-eQTL in the GEUVADIS cohort, with matching direction of effect across the two cohorts, are shown in Figure 1—figure supplements 3–12.
+
+**Table 1.**
+ Replication analysis
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Threshold</th>
+      <th>Associations (available for testing in GEUVADIS)</th>
+      <th>Replicate, FDR &lt;0.05 (% success)</th>
+      <th>Same direction of effect (% success)</th>
+      <th>π1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v-eQTL</td>
+      <td>FDR &lt;0.05</td>
+      <td>508 (485)</td>
+      <td>28 (5.8%)</td>
+      <td>26 (93%)</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>v-eQTL</td>
+      <td>Bonf &lt;0.05</td>
+      <td>23 (23)</td>
+      <td>16 (70%)</td>
+      <td>15 (94%)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Epistasis</td>
+      <td>Bonf &lt;0.05</td>
+      <td>256 (246)</td>
+      <td>137 (56%)</td>
+      <td>131 (96%)</td>
+      <td>0.71</td>
+    </tr>
+  </tbody>
+</table>
+
+_Significant associations (at FDR and Bonferroni thresholds) from the TwinsUK sample were replicated in GEUVADIS samples. The number of overlapping SNPs and genes in both datasets per analysis is shown, as well as the percentage of replicated associations. π1 is an estimate of the proportion of replicating loci in the GEUVADIS cohort (Storey, 2002)._
 
 Of the 256 epistasis associations, information on both the SNP and the gene was available for 246 in the GEUVADIS data. We found that 137 replicated with FDR <0.05, 131 of which had the same direction of effect (Supplementary file 1B). p-value enrichment analysis (Storey, 2002) indicated that there was replication evidence for 71% of the 246. Moreover, we observed a correlation of 0.58 between the effect sizes of the interactions in both datasets (p-value = 5.9 × 10−24), with 202 of the 246 interactions sharing the same direction of effect (p-value = 2.2 × 10−25) (Figure 2—figure supplements 1, 2).
 
-As discussed in the introduction, it is possible that an observed statistical interaction between two SNPs can be caused by a single true eQTL in linkage disequilibrium with them. For example, a particular combination of alleles across the pair of SNPs could tag a rare causative eQTL. To rule out this possibility, we took advantage of the full sequence for the GEUVADIS replication samples obtained by the 1000 Genomes Project (
+As discussed in the introduction, it is possible that an observed statistical interaction between two SNPs can be caused by a single true eQTL in linkage disequilibrium with them. For example, a particular combination of alleles across the pair of SNPs could tag a rare causative eQTL. To rule out this possibility, we took advantage of the full sequence for the GEUVADIS replication samples obtained by the 1000 Genomes Project (The 1000 Genomes Project Consortium, 2012). For the 131 replicated examples of epistasis we identified all eQTL for the relevant genes amongst all sequenced cis SNPs or indels (a forward stepwise scan identified all eQTL significant with p<10−5, ‘Materials and methods’). The aim was for good characterisation of eQTL down to low frequency variants, though this is complicated by power and poorer imputation accuracy at such frequencies. We then tested whether the epistatic interaction was still significant in models incorporating each eQTL individually at the same threshold as previously applied. Fifty seven epistasis signals remain significant. Figure 2A shows the effect of the epistasis SNP broken down by genotype group on expression of TRIT1, Table 2 and Figure 2—figure supplements 3–12 report the 10 most significant examples of epistasis in the GEUVADIS cohort, a full list is in Supplementary file 1B. For all plotted interactions, the direction of effect was consistent within v-eQTL genotype groups across cohorts. In at least two instances we see sign epistasis, the effect of one SNP reverses direction conditional on the other SNP (Figure 2—figure supplements 7, 9).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-v2.jpg)
 
-**Figure 2.:** TRIT1 expression is affected by an interaction between two SNPs, lying on the boundaries of two separate enhancer regions, in both TwinsUK and GEUVADIS cohorts.(A) Expression of TRIT1 is shown, with a separate panel for each v-eQTL (rs3131691) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs230273) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines show different SNP effects for the epistatic SNPs in different v-eQTL genotype groups, these lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort. (B) SNPs affecting TRIT1 expression are near regulatory elements. Position of v-eQTL (rs3131691), interacting epistasis SNP (rs230273) and a nearby eQTL (rs34387655) affecting TRIT1 expression are shown. ENCODE segmentation analysis shows regulatory elements around TRIT1 (reverse strand gene). Colours indicating regions are: yellow = weak enhancer, orange = strong enhancer, red = strong promoter, light red = weak promoter, purple = poised promoter, dark green = transcriptional transition/elongation, light green = weakly transcribed, blue = insulator, and light grey = heterochromatin or repetitive/copy number variation.DOI: http://dx.doi.org/10.7554/eLife.01381.017
+**Figure 2.:** (A) Expression of TRIT1 is shown, with a separate panel for each v-eQTL (rs3131691) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs230273) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines show different SNP effects for the epistatic SNPs in different v-eQTL genotype groups, these lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort. (B) SNPs affecting TRIT1 expression are near regulatory elements. Position of v-eQTL (rs3131691), interacting epistasis SNP (rs230273) and a nearby eQTL (rs34387655) affecting TRIT1 expression are shown. ENCODE segmentation analysis shows regulatory elements around TRIT1 (reverse strand gene). Colours indicating regions are: yellow = weak enhancer, orange = strong enhancer, red = strong promoter, light red = weak promoter, purple = poised promoter, dark green = transcriptional transition/elongation, light green = weakly transcribed, blue = insulator, and light grey = heterochromatin or repetitive/copy number variation.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The 57 replicated associations after removing possible haplotype effects are shown in blue.DOI: http://dx.doi.org/10.7554/eLife.01381.018
+**Figure 2—figure supplement 1.:** The 57 replicated associations after removing possible haplotype effects are shown in blue.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Effect size is reported as proportion of variance explained by the interaction, where sign is positive if when both variants have the alternate allele the combined effect is a greater increase in expression than predicted by the separate additive effects, negative if expression is decreased comparatively. The 57 replicated associations are shown in blue.DOI: http://dx.doi.org/10.7554/eLife.01381.019
+**Figure 2—figure supplement 2.:** Effect size is reported as proportion of variance explained by the interaction, where sign is positive if when both variants have the alternate allele the combined effect is a greater increase in expression than predicted by the separate additive effects, negative if expression is decreased comparatively. The 57 replicated associations are shown in blue.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** NUDT2) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of NUDT2 is shown, with a separate panel for each v-eQTL (rs10972055) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs10814083) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.020
+**Figure 2—figure supplement 3.:** Expression of NUDT2 is shown, with a separate panel for each v-eQTL (rs10972055) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs10814083) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** HLA-DQB2) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of HLA-DQB2 is shown, with a separate panel for each v-eQTL (rs114183935) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs1049130) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.021
+**Figure 2—figure supplement 4.:** Expression of HLA-DQB2 is shown, with a separate panel for each v-eQTL (rs114183935) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs1049130) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** HLA-DQB2) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of HLA-DQB2 is shown, with a separate panel for each v-eQTL (rs114183935) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs9274666) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.022
+**Figure 2—figure supplement 5.:** Expression of HLA-DQB2 is shown, with a separate panel for each v-eQTL (rs114183935) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs9274666) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp6-v2.jpg)
 
-**Figure 2—figure supplement 6.:** SPATA20) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of SPATA20 is shown, with a separate panel for each v-eQTL (rs12943759) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs1122634) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.023
+**Figure 2—figure supplement 6.:** Expression of SPATA20 is shown, with a separate panel for each v-eQTL (rs12943759) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs1122634) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp7-v2.jpg)
 
-**Figure 2—figure supplement 7.:** POU5F1) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of POU5F1 is shown, with a separate panel for each v-eQTL (rs116627368) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs115631087) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.024
+**Figure 2—figure supplement 7.:** Expression of POU5F1 is shown, with a separate panel for each v-eQTL (rs116627368) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs115631087) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp8-v2.jpg)
 
-**Figure 2—figure supplement 8.:** SERPINB1) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of SERPINB1 is shown, with a separate panel for each v-eQTL (rs318452) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs6940344) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.025
+**Figure 2—figure supplement 8.:** Expression of SERPINB1 is shown, with a separate panel for each v-eQTL (rs318452) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs6940344) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp9-v2.jpg)
 
-**Figure 2—figure supplement 9.:** ANXA5) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of ANXA5 is shown, with a separate panel for each v-eQTL (rs6857766) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs12511956) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.026
+**Figure 2—figure supplement 9.:** Expression of ANXA5 is shown, with a separate panel for each v-eQTL (rs6857766) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs12511956) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp10-v2.jpg)
 
-**Figure 2—figure supplement 10.:** TCF19) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of TCF19 is shown, with a separate panel for each v-eQTL (rs115523621) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs115921994) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.027
+**Figure 2—figure supplement 10.:** Expression of TCF19 is shown, with a separate panel for each v-eQTL (rs115523621) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs115921994) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp11-v2.jpg)
 
-**Figure 2—figure supplement 11.:** HLA-C) expression is affected by an interaction between two SNPs in both TwinsUK and GEUVADIS cohorts.Expression of HLA-C is shown, with a separate panel for each v-eQTL (rs114916097) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs116012228) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.028
+**Figure 2—figure supplement 11.:** Expression of HLA-C is shown, with a separate panel for each v-eQTL (rs114916097) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs116012228) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp12-v2.jpg)
 
-**Figure 2—figure supplement 12.:** Expression of PHLDB3 is shown, with a separate panel for each v-eQTL (rs10409591) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs2682547) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.DOI: http://dx.doi.org/10.7554/eLife.01381.029
+**Figure 2—figure supplement 12.:** Expression of PHLDB3 is shown, with a separate panel for each v-eQTL (rs10409591) genotype group. Relationship between expression and imputed genotype dosage of the epistasis SNP (rs2682547) is shown to be conditional on v-eQTL genotype. Expression from TwinsUK individuals is shown in the upper panels, GEUVADIS individuals in the lower panels. Best fit lines indicate the different epistatic SNP effects in the different v-eQTL genotype groups and are illustrative only. These lines are constructed ignoring twin structure in the case of the TwinsUK sample and population in the GEUVADIS cohort and do not represent model fit for the analysis performed.
 
 ![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig2-figsupp13-v2.jpg)
 
-**Figure 2—figure supplement 13.:** Using the p value in the replication sample avoids inflation by winners curse. The blue dots are the 57 replicated associations after removing haplotype effects.DOI: http://dx.doi.org/10.7554/eLife.01381.030
+**Figure 2—figure supplement 13.:** Using the p value in the replication sample avoids inflation by winners curse. The blue dots are the 57 replicated associations after removing haplotype effects.
 
-We estimated the proportion of variance explained by the interaction in the GEUVADIS cohort to avoid over-estimating effects because of winner’s curse. As a result, we were able to determine that up to 16% of the variance in gene expression was explained by considering the interaction between the variants, with an average additional variance explained of 4.3% (
+**Table 2.**
+ Effect size estimates and significance for the ten most significant replicated interactions in TwinsUK and GEUVADIS
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Chr</th>
+      <th>v-eQTL</th>
+      <th>Interacting epistasis SNP</th>
+      <th>Interaction variance in TwinsUK</th>
+      <th>Interaction variance in GEUVADIS</th>
+      <th>Additive variation in GEUVADIS</th>
+      <th>p-value in TwinsUK</th>
+      <th>p-value in GEUVADIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUDT2</td>
+      <td>9</td>
+      <td>rs10972055</td>
+      <td>rs10814083</td>
+      <td>−0.328</td>
+      <td>−0.128</td>
+      <td>0.310</td>
+      <td>1.88 × 10−53</td>
+      <td>5.43 × 10-22</td>
+    </tr>
+    <tr>
+      <td>HLA-DQB2</td>
+      <td>6</td>
+      <td>rs114183935</td>
+      <td>rs1049130</td>
+      <td>−0.337</td>
+      <td>−0.161</td>
+      <td>0.099</td>
+      <td>1.83 × 10−62</td>
+      <td>2.91 × 10−21</td>
+    </tr>
+    <tr>
+      <td>HLA-DQB2</td>
+      <td>6</td>
+      <td>rs114183935</td>
+      <td>rs9274666</td>
+      <td>−0.368</td>
+      <td>−0.119</td>
+      <td>0.158</td>
+      <td>3.45 × 10−18</td>
+      <td>1.04 × 10−16</td>
+    </tr>
+    <tr>
+      <td>SPATA20</td>
+      <td>17</td>
+      <td>rs12943759</td>
+      <td>rs1122634</td>
+      <td>0.301</td>
+      <td>0.078</td>
+      <td>0.404</td>
+      <td>3.12 × 10−69</td>
+      <td>1.42 × 10−15</td>
+    </tr>
+    <tr>
+      <td>POU5F1</td>
+      <td>6</td>
+      <td>rs116627368</td>
+      <td>rs115631087</td>
+      <td>0.311</td>
+      <td>0.116</td>
+      <td>0.008</td>
+      <td>6.95 × 10−34</td>
+      <td>6.63 × 10−14</td>
+    </tr>
+    <tr>
+      <td>SERPINB1</td>
+      <td>6</td>
+      <td>rs318452</td>
+      <td>rs6940344</td>
+      <td>−0.227</td>
+      <td>−0.102</td>
+      <td>0.117</td>
+      <td>2.40 × 10−36</td>
+      <td>7.66 × 10−14</td>
+    </tr>
+    <tr>
+      <td>ANXA5</td>
+      <td>4</td>
+      <td>rs6857766</td>
+      <td>rs12511956</td>
+      <td>−0.411</td>
+      <td>−0.104</td>
+      <td>0.056</td>
+      <td>3.09 × 10−37</td>
+      <td>3.81 × 10−13</td>
+    </tr>
+    <tr>
+      <td>TCF19</td>
+      <td>6</td>
+      <td>rs115523621</td>
+      <td>rs115921994</td>
+      <td>−0.585</td>
+      <td>−0.076</td>
+      <td>0.201</td>
+      <td>2.59 × 10−36</td>
+      <td>1.48 × 10−11</td>
+    </tr>
+    <tr>
+      <td>HLA-C</td>
+      <td>6</td>
+      <td>rs114916097</td>
+      <td>rs116012228</td>
+      <td>0.160</td>
+      <td>0.077</td>
+      <td>0.183</td>
+      <td>3.35 × 10−18</td>
+      <td>2.17 × 10−11</td>
+    </tr>
+    <tr>
+      <td>PHLDB3</td>
+      <td>19</td>
+      <td>rs10409591</td>
+      <td>rs2682547</td>
+      <td>−0.270</td>
+      <td>−0.0858</td>
+      <td>0.0569</td>
+      <td>1.67 × 10−14</td>
+      <td>4.83 × 10−11</td>
+    </tr>
+  </tbody>
+</table>
+
+_Effect sizes are reported as the proportion of variance explained by the interaction. Sign of effect size reflects direction of interaction effect: positive implies combined effect of the alternate alleles is an increase in expression greater than predicted by separate additive effects, and negative that it is less._
+
+We estimated the proportion of variance explained by the interaction in the GEUVADIS cohort to avoid over-estimating effects because of winner’s curse. As a result, we were able to determine that up to 16% of the variance in gene expression was explained by considering the interaction between the variants, with an average additional variance explained of 4.3% (Table 2; Supplementary file 1B; Figure 3). For the eight genes for which we replicated independent interactions with the v-eQTL, we found that in total up to 10.4% of the variance was explained by these multiple interactions, with an average of 5.1%. For 24 out of 57 the replicated examples of epistasis, the interaction explains more variance than the additive effects of the SNPs. We show as an example the gene TRIT1 (Figure 2). The v-eQTL (rs3131691) for TRIT1 lies on the boundary of an ENCODE defined LCL weak enhancer (Dunham et al., 2012; Rosenbloom et al., 2013) upstream of the gene, while the SNP in epistasis (rs230273) lies on the boundary of a downstream LCL enhancer region (Figure 2B). The v-eQTL is also 28 bp upstream of a strong eQTL signal (rs34387655). This eQTL has minor allele frequency (MAF) 0.08, and is in high D′ with the v-eQTL (MAF = 0.30), suggesting that the eQTL could be a recent mutation co-segregating with one allele of the v-eQTL. But this eQTL cannot explain the observed interaction, which was still significant when analyzing only major allele homozygotes for the eQTL (p-value = 0.0095). Therefore, we conclude that two causal loci act on the weak enhancer in two different ways; rs34387655 has a direct effect on the enhancer while rs3131691 acts in conjunction with the epistasis variant rs230273 (or variants in linkage disequilibrium with these SNPs act in these ways).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig3-v2.jpg)
 
-**Figure 3.:** We show the variation explained by the interaction of two SNPs on phenotype, compared to the additive contribution of the SNPs.DOI: http://dx.doi.org/10.7554/eLife.01381.032
+**Figure 3.:** We show the variation explained by the interaction of two SNPs on phenotype, compared to the additive contribution of the SNPs.
 
 The discussion up to this point concerns SNPs in cis with the expressed gene. Looking for examples of trans SNPs (>5 Mbp from the TSS) in epistasis with the v-eQTL yielded no hits that replicated in the GEUVADIS cohort. However, using the twin design we were able to address the contribution of long range epistasis by a heritability analysis. Assuming no recombination in the cis region, the proportion of the cis window that dizygotic twins (DZ) inherited identically by descent is either 0, 0.5 or 1 and this allows us to perform a linkage analysis to estimate the proportion of variance explained by variants in the cis region, the trans region (5 Mbp away from the TSS) and interactions between the two. We had information about the IBD sharing around 273 of the 508 v-eQTL genes. For 15 of these, interactions between the cis and trans regions explain more than 10% of the variance in expression. For all of these there is greater evidence of cis-trans epistasis affecting expression than an influence of common environment, and for 9 of the 15 the interaction effect was more than the estimated combined direct genetic contribution of both cis and trans variants (Supplementary file 1C).
 
-The presence of v-eQTL can be induced by gene–environment interactions, as well as epistasis or haplotype effects. Because our data come from a twin cohort, which includes monozygotic (MZ) twin pairs, we have another measure of variability within the dataset: the discordance in expression between MZ twins. Genotype dependent differences in expression within MZ pairs cannot be induced by epistasis or haplotype effects, as both twins share the same genetic background. Therefore, evidence that v-eQTL are also discordant eQTL (d-eQTL) would suggest that v-eQTL could also have a GxE explanation, including possibly interactions between the genome and the epigenome (
+The presence of v-eQTL can be induced by gene–environment interactions, as well as epistasis or haplotype effects. Because our data come from a twin cohort, which includes monozygotic (MZ) twin pairs, we have another measure of variability within the dataset: the discordance in expression between MZ twins. Genotype dependent differences in expression within MZ pairs cannot be induced by epistasis or haplotype effects, as both twins share the same genetic background. Therefore, evidence that v-eQTL are also discordant eQTL (d-eQTL) would suggest that v-eQTL could also have a GxE explanation, including possibly interactions between the genome and the epigenome (Martin et al., 1983; Reynolds et al., 2007; Figure 4A). Using our MZ data, we have tested our 508 v-eQTL for evidence that they are also d-eQTL; using the methods from Storey (2002) we estimate that 70% of the v-eQTL act in this manner. This suggests that GxE interactions are common amongst these variants (‘Materials and methods’, Figure 4B; Supplementary file 1A). In total, 176 of the 508 v-eQTL show significant effects on discordance (FDR <0.05). Of these 176, we estimate the proportion that are also eQTL as 40.3%, less than the proportion of all v-eQTL which act as eQTL.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01381/elife-01381-fig4-v2.jpg)
 
-**Figure 4.:** Increased discordance within MZ twin pairs identifies GxE interactions.(A) We show discordance in expression between MZ twin pairs for the gene BAMBI broken down by v-eQTL genotype (rs10826519). Discordance is greatest in the GG genotype group (mean difference between MZ twins is 1.12), decreasing with each additional copy of the A allele (mean discordance is 0.85 for GA genotype group, 0.60 for AA). Since MZ twins are genetically identical, genotype dependent discordance in expression must be a consequence of environment, pointing to GxE. We observe that the SNP also has an effect on the mean level of expression (p = 5.42 × 10−19). (B) −log10 p values for genotype dependent discordance in MZ twins against −log10 p values for peak v-eQTL. The blue dots represent points where there is a significant epistasis hit with the v-eQTL, orange where no such interaction was detected. For many of the strong v-eQTL with little evidence of discordance we can identify an epistatic interaction which explains the increase in variance. However, for some loci with strong evidence of genotype dependent MZ discordance we also detect an epistatic interaction, suggesting both epistasis and GxE acts on these genes.DOI: http://dx.doi.org/10.7554/eLife.01381.033
+**Figure 4.:** (A) We show discordance in expression between MZ twin pairs for the gene BAMBI broken down by v-eQTL genotype (rs10826519). Discordance is greatest in the GG genotype group (mean difference between MZ twins is 1.12), decreasing with each additional copy of the A allele (mean discordance is 0.85 for GA genotype group, 0.60 for AA). Since MZ twins are genetically identical, genotype dependent discordance in expression must be a consequence of environment, pointing to GxE. We observe that the SNP also has an effect on the mean level of expression (p = 5.42 × 10−19). (B) −log10 p values for genotype dependent discordance in MZ twins against −log10 p values for peak v-eQTL. The blue dots represent points where there is a significant epistasis hit with the v-eQTL, orange where no such interaction was detected. For many of the strong v-eQTL with little evidence of discordance we can identify an epistatic interaction which explains the increase in variance. However, for some loci with strong evidence of genotype dependent MZ discordance we also detect an epistatic interaction, suggesting both epistasis and GxE acts on these genes.
 
 By looking at variance between individuals and discordance between monozygotic twins, we mirror an approach which looked at robustness of phenotypes to genetic and environmental influences (Fraser and Schadt, 2010). In this study of gene expression traits, differences between inbred mouse strains were called ‘genetic robustness QTL’ (GR-QTL). These correspond to our definition of v-eQTL, and the paper discusses how they can be induced by epistatic interactions. The paper also looks at QTL for within strain variance, analogous to our d-eQTL and referred to as ‘environmental robustness QTL’ (ER-QTL), and describe them as induced by gene–environment interactions. They reported finding both GR-QTL and ER-QTL in mice, Arabidopsis and S. cerevisiae.
 
@@ -193,48 +352,96 @@ In conclusion, we report 26 replicated variance eQTL and 57 replicated cis epist
 
 ## Materials and methods
 
-## Genotying and imputation
+### Genotying and imputation
 
 Samples were genotyped on a combination of the HumanHap300, HumanHap610Q, 1 M-Duo and 1.2MDuo 1M Illumnia arrays. Samples were pre-phased using IMPUTE2 (Howie et al., 2009) with no reference panel, then imputed into the 1000 Genomes Phase 1 reference panel (interim, data freeze, 10 November 2010, The 1000 Genomes Project Consortium 2012). Post imputation, SNPs were removed if MAF <0.01 or IMPUTE info value <0.8.
 
-## RNA processing
+### RNA processing
 
 Samples were prepared for sequencing with the Illumina TruSeq sample preparation kit (Illumina, San Diego, CA) according to manufacturer's instructions and were sequenced on a HiSeq2000 machine. Afterwards, the 49-bp sequenced paired-end reads were mapped to the GRCh37 reference genome (The International Human Genome Sequencing Consortium, 2001) with BWA v0.5.9 (Li and Durbin, 2009). We use genes defined as protein coding in the GENCODE 10 annotation (Harrow et al., 2012), removing genes with more than 10% zero read count. RPKM values were root mean transformed. PEER software (Parts et al., 2011) was used to remove 50 latent factors; age and body mass index were included when factors were constructed, to prevent removal of important environmental factors. Data were then quantile normalised.
 
-## v-eQTL
+### v-eQTL
 
 GRAMMAR (Aulchenko et al., 2007) was used to remove correlations between related individuals. Expression of each gene was tested against every SNP within 1 Mbp of the TSS. First, any eQTL effects were removed by regressing expression on the posterior probability of being a heterozygote and the posterior probability of being a minor allele homozygote. The residuals were squared, giving a measure of distance from the mean expression of that genotype class for all individuals. A Spearman rank correlation test between this ‘distance’ and genotype dosage was used to assess evidence of variance effects. A set of five permutations, consistent across all tests to consider linkage disequilibrium structure between SNPs, was applied to the distance residuals and the spearman correlation test was applied as before to estimate the distribution of the test statistic under the complete null hypothesis of no variance effects. An FDR was calculated as the proportion of permuted statistics more significant, divided by 5. This two stage procedure where relatedness was regressed out separately from v-eQTL mapping was adopted to make the full scan for v-eQTL computationally feasible.
 
-## Epistasis
+### Epistasis
 
 The R package lme4 (Bolker, 2013) was used to fit linear mixed models using maximum likelihood to model expression as a function of genetic interactions. The models, with a full description of how the twin structure is captured, are presented in the section ‘Equations’. A forward stepwise scheme, as used in Lappalainen et al. (2013) to map standard eQTL, was used to discover independent examples of epistasis. Assuming the K-1 significant examples of epistasis had been discovered, a complete scan of every SNP in the cis window tested for evidence of epistasis with the v-eQTL (using a likelihood ratio test of Equation 2 nested into Equation 1, testing the hypothesis cK = 0), conditioned on all previously discovered interactions. If the most significant SNP was Bonferroni significant (p<1.98 × 10−8), the SNP was added to the list and the process continued, otherwise the list was considered complete. This revealed 275 examples of epistasis, affecting expression of 178 genes. To exclude the possibility that significant interactions could be explained by a non-additive genetic effect of the original v-eQTL appearing as epistasis between the v-eQTL and another variant in tight linkage disequilibrium, a further conditional analysis tested the epistasis term conditional on the model it was discovered in and a non-additive effect of the v-eQTL (testing nested models, Equation 3 and Equation 4 for cK = 0). SNPs which were not Bonferroni significant at the same threshold (p<1.98 × 10−8) were removed, leaving 256 epistatic interactions affecting 173 genes. Proportion of variance for linear mixed models was calculated as described in Nakagawa and Schielzeth (2012). Scripts to analyse the data are provided in Supplementary material.
 
-## Equations
+### Equations
 
-Denoting individual i, expression by yi, dosage of v-eQTL by Siv, dosage of the kth discovered epistatic SNPs by Sik, probability that the v-eQTL is a heterozygote by Sivhet, and the probability that the v-eQTL is a minor allele homozygote by Sivhom, we have modelled expression in the following ways:(1)yi=μ+aSiv+∑k=1K−1(bkSik+ckSivSik)+bKSiK+βi+γi+εi(2)yi=μ+aSiv+∑k=1K−1(bkSik+ckSivSik)+bKSiK+cKSivSiK+βi+γi+εi(3)yi=μ+ahetSivhet+ahomSivhom+∑k=1K−1(bkSik+ckSivSik)+bKSiK+βi+γi+εi(4)yi=μ+ahetSivhet+ahomSivhom+∑k=1K−1(bkSik+ckSivSik)+bKSiK+cKSivSiK+βi+γi+εiwhereβi∼N(0,σFAM2)γi∼N(0,σMZ2)εi∼N(0,σ2)
+Denoting individual i, expression by yi, dosage of v-eQTL by Siv, dosage of the kth discovered epistatic SNPs by Sik, probability that the v-eQTL is a heterozygote by $S_{iv}^{het}$, and the probability that the v-eQTL is a minor allele homozygote by $S_{iv}^{hom}$, we have modelled expression in the following ways:
+
+$$
+y_{i}=\mu+aS_{iv}+\sumk=1K−1(b_{k}S_{ik}+c_{k}S_{iv}S_{ik})+b_{K}S_{iK}+\beta_{i}+\gamma_{i}+\epsilon_{i}
+$$
+
+
+
+$$
+y_{i}=\mu+aS_{iv}+\sumk=1K−1(b_{k}S_{ik}+c_{k}S_{iv}S_{ik})+b_{K}S_{iK}+c_{K}S_{iv}S_{iK}+\beta_{i}+\gamma_{i}+\epsilon_{i}
+$$
+
+
+
+$$
+y_{i}=\mu+a^{het}S_{iv}^{het}+a^{hom}S_{iv}^{hom}+\sumk=1K−1(b_{k}S_{ik}+c_{k}S_{iv}S_{ik})+b_{K}S_{iK}+\beta_{i}+\gamma_{i}+\epsilon_{i}
+$$
+
+
+
+$$
+y_{i}=\mu+a^{het}S_{iv}^{het}+a^{hom}S_{iv}^{hom}+\sumk=1K−1(b_{k}S_{ik}+c_{k}S_{iv}S_{ik})+b_{K}S_{iK}+c_{K}S_{iv}S_{iK}+\beta_{i}+\gamma_{i}+\epsilon_{i}
+$$
+
+where
+
+$$
+\beta_{i}∼N(0,\sigma_{FAM}^{2})
+$$
+
+
+
+$$
+\gamma_{i}∼N(0,\sigma_{MZ}^{2})
+$$
+
+
+
+$$
+\epsilon_{i}∼N(0,\sigma^{2})
+$$
 
 To correctly model the twin structure we require that βi = βj when i and j are twins, and γi = γj when i and j are MZ twins (capturing the increased genetic correlation of MZ twins).
 
-## Heritability
+### Heritability
 
-A variance components model was fitted in the program solar (Almasy and Blangero, 1998) where the covariance matrix for the trait is written:Ω=Πcisσcis2+Πtransσtrans2+Πcis−transσcis−trans2+Iσe2
+A variance components model was fitted in the program solar (Almasy and Blangero, 1998) where the covariance matrix for the trait is written:
 
-Πcis and Πtrans are the proportion of cis and trans alleles that twins share inherited identically by descent and Πcis−trans is the Hadamard product of these matrices. Parameters were estimated by maximum likelihood and proportion of variance explained by cis-trans interactions was estimated as:σcis−trans2σcis2+σtrans2+σcis−trans2+σe2
+$$
+Ω=Π_{cis}\sigma_{cis}^{2}+Π_{trans}\sigma_{trans}^{2}+Π_{cis−trans}\sigma_{cis−trans}^{2}+I\sigma_{e}^{2}
+$$
+
+$Π_{cis}$ and $Π_{trans}$ are the proportion of cis and trans alleles that twins share inherited identically by descent and $Π_{cis−trans}$ is the Hadamard product of these matrices. Parameters were estimated by maximum likelihood and proportion of variance explained by cis-trans interactions was estimated as:
+
+$$
+\frac{\sigma_{cis−trans}^{2}}{\sigma_{cis}^{2}+\sigma_{trans}^{2}+\sigma_{cis−trans}^{2}+\sigma_{e}^{2}}
+$$
 
 For comparison, the model without cis-trans interactions but with a common environment term was fitted, and the two models compared using likelihood.
 
-## Discordant QTL
+### Discordant QTL
 
 Maximum expression of the two twins was regressed on minimum expression of the twin pair and genotype of the twin pair to detect whether the relationship between max and min expression was conditional on genotype.
 
-## GEUVADIS replication
+### GEUVADIS replication
 
 Raw RPKM values were root transformed, 20 principal component factors were removed and then the data were quantile normalised. Evidence for v-eQTL and epistasis was calculated as before, with indicator variables for study population (CEU, YRI, TSI, GBR, FIN) to control for population effects. Epistasis was assessed for each SNP individually, as LD induced multiple signals and dominance effects had been removed in the TwinsUK sample. To ensure that our results are not caused by heteroskedasticity, we have considered various transformations to remove this issue and found the results to be robust. In particular, of the 131 statistically significant interactions in the GEUVADIS cohort, 126 are also significant when log transformed data is analysed (a typical way of accounting for heteroskedasticity). To eliminate confounding with eQTL variants, an identical forward stepwise cis eQTL scan to that used in Lappalainen et al. (2013) reported all eQTL significant at p<10−5 in the GEUVADIS dataset. A t test for each reported eQTL assessed significance of the interaction conditional on the v-eQTL, epistasis SNP and the eQTL. If the greatest p value, over all possible eQTL, did not meet the FDR cut-off the SNP was removed from the list of interactions. FDR was calculated using the qvalue package (Dabney and Storey, 2014) in R (R Development Core Team, 2008) using the default settings with the exception that lambda was restricted to lie within the range of the p values to prevent overly lenient correction. The replication dataset together with functions to reproduce the results are provided in Supplementary files 2–4.
 
-## ENCODE segmentation
+### ENCODE segmentation
 
 Segmentation analysis for LCL cell line GM12878 was downloaded from the UCSC website on 11/6/2013, url: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeBroadHmm/wgEncodeBroadHmmGm12878HMM.bed.gz.
 
-## Sequence data
+### Sequence data
 
 Sequence data has been deposited at the European Genome-phenome Archive (EGA, http://www.ebi.ac.uk/ega/) under accession number EGAS00001000805.

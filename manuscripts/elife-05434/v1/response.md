@@ -69,9 +69,7 @@ We have redone the experiment using two concentrations where we see the greatest
 
 7) Figure 1C and 2D are consistent with the notion that IPA induces the dimerization of Ire1. In the RAF field, authors use reciprocal IPs to demonstrate inhibitor-induced dimerization in cells (and AUC in vitro). Can the authors provide direct evidence that IPA induces PERK dimerization using either immunofluorescence (as per Figure 2D) or IP pull downs? This data would strengthen the proposed model.
 
-We have provided new data (Figure 6B) showing that IPA induces PERK oligomerization through chemical cross-linking (see response to Major Point 1 above) to provide concrete evidence of IPA-driven PERK oligomerization.10.7554/eLife.05434.023Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.05434.023
-
-DOI: http://dx.doi.org/10.7554/eLife.05434.023
+We have provided new data (Figure 6B) showing that IPA induces PERK oligomerization through chemical cross-linking (see response to Major Point 1 above) to provide concrete evidence of IPA-driven PERK oligomerization.10.7554/eLife.05434.023Author response image 1.
 
 Reviewer 2:
 

@@ -34,7 +34,7 @@
 
 ## Abstract
 
-Ataxia Telangiectasia (A-T) and Ataxia with Ocular Apraxia Type 1 (AOA1) are devastating neurological disorders caused by null mutations in the genome stability genes, A-T mutated ( ATM ) and Aprataxin ( APTX ), respectively. Our mechanistic understanding and therapeutic repertoire for treating these disorders are severely lacking, in large part due to the failure of prior animal models with similar null mutations to recapitulate the characteristic loss of motor coordination (i.e., ataxia) and associated cerebellar defects. By increasing genotoxic stress through the insertion of null mutations in both the Atm (nonsense) and Aptx (knockout) genes in the same animal, we have generated a novel mouse model that for the first time develops a progressively severe ataxic phenotype associated with atrophy of the cerebellar molecular layer. We find biophysical properties of cerebellar Purkinje neurons (PNs) are significantly perturbed (e.g., reduced membrane capacitance, lower action potential [AP] thresholds, etc.), while properties of synaptic inputs remain largely unchanged. These perturbations significantly alter PN neural activity, including a progressive reduction in spontaneous AP firing frequency that correlates with both cerebellar atrophy and ataxia over the animal’s first year of life. Double mutant mice also exhibit a high predisposition to developing cancer (thymomas) and immune abnormalities (impaired early thymocyte development and T-cell maturation), symptoms characteristic of A-T. Finally, by inserting a clinically relevant nonsense-type null mutation in Atm , we demonstrate that S mall M olecule R ead- T hrough (SMRT) compounds can restore ATM production, indicating their potential as a future A-T therapeutic.
+Ataxia Telangiectasia (A-T) and Ataxia with Ocular Apraxia Type 1 (AOA1) are devastating neurological disorders caused by null mutations in the genome stability genes, A-T mutated (ATM) and Aprataxin (APTX), respectively. Our mechanistic understanding and therapeutic repertoire for treating these disorders are severely lacking, in large part due to the failure of prior animal models with similar null mutations to recapitulate the characteristic loss of motor coordination (i.e., ataxia) and associated cerebellar defects. By increasing genotoxic stress through the insertion of null mutations in both the Atm (nonsense) and Aptx (knockout) genes in the same animal, we have generated a novel mouse model that for the first time develops a progressively severe ataxic phenotype associated with atrophy of the cerebellar molecular layer. We find biophysical properties of cerebellar Purkinje neurons (PNs) are significantly perturbed (e.g., reduced membrane capacitance, lower action potential [AP] thresholds, etc.), while properties of synaptic inputs remain largely unchanged. These perturbations significantly alter PN neural activity, including a progressive reduction in spontaneous AP firing frequency that correlates with both cerebellar atrophy and ataxia over the animal’s first year of life. Double mutant mice also exhibit a high predisposition to developing cancer (thymomas) and immune abnormalities (impaired early thymocyte development and T-cell maturation), symptoms characteristic of A-T. Finally, by inserting a clinically relevant nonsense-type null mutation in Atm, we demonstrate that Small Molecule Read-Through (SMRT) compounds can restore ATM production, indicating their potential as a future A-T therapeutic.
 
 ## Introduction
 
@@ -52,35 +52,83 @@ Finally, we designed this new mouse model to test our recently developed Small M
 
 ## Results
 
-## Creation of a new A-T mutant mouse model expressing a clinically relevant nonsense mutation
+### Creation of a new A-T mutant mouse model expressing a clinically relevant nonsense mutation
 
 To create a more clinically relevant mouse model of A-T, we used a gateway recombination cloning and site-directed mutagenesis method to recapitulate a c.103C>T (p.R35X) mutation in the ATM gene found in a large population of North African A-T patients (Figure 1A and Materials and methods) (Gilad et al., 1996b). The insertion of thymine in place of cytosine at this site in exon 3 results in a PTC-causing nonsense mutation in the ATM gene. Since the c.103C>T mutation results in different PTCs in the human gene compared to the mouse Atm gene—TGA versus TAG, respectively—we created two different mice by exchanging the mouse Atm exon 3 with either a human or mouse exon 3 variant with the c.103C>T mutation (Figure 1B). In the human variant, a 103C>T mutation of the mouse codon, where the arginine (R) encoding codon (CGA) becomes a TGA stop codon, results in a mouse we denote as AtmR35X (officially AtmTm1.1(103CAG)TGAMfgc). In the mouse variant, the c.103C>T mutation transforms a glutamine (Q)-encoding CAG codon into a TAG stop codon and is denoted AtmQ35X (officially AtmTm1.1(103C)TMfgc). The presence of the PTC results in a loss of ATM expression, either reduced by about half in the heterozygote expressing one normal mouse copy of the Atm gene (AtmR35X/+ or AtmQ35X/+), or completely in the homozygote (AtmR35X/R35X or AtmQ35X/Q35X) (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig1-v2.jpg)
 
-**Figure 1.:** (A) The Atm gene locus was targeted by homologous recombination of a targeting vector containing a modified NorCOMM cassette in intron one and the corresponding A-T PTC mutation in exon 3 to create the targeted Atm and R35XAtm ES cell lines. Following germline transmission of these alleles in mice, the floxed NorCOMM cassette was removed by Cre-excision in vivo to produce the final Q35XAtm and R35XAtm mouse lines. (Q35XB) Genotyping of A-T mouse models. PCR agarose gel of mouse DNA shows 151 bp wild-type (+) allele band and 241 bp Cre-excised targeted allele band. (C) ATM levels were examined using immunoblot analyses of the spleen due to its high expression density in this tissue. Exemplar blots illustrate a gene dose effect of ATM protein expression in samples harvested from wild-type (+), heterozygous (R35X/+, Q35X/+), and homozygous Atm (R35X) and R35X/R35XAtm (Q35X) mice as indicated. (Q35X/Q35XD) Breeding scheme schematic for double mutant and control mice for this study. (E) AtmR35X/R35X; Aptx−/− mice develop an ataxia that at late stages results in a severe loss of motor coordination and ability to ambulate (see Videos 1–4). Abbreviations for panel 1: hβA-human beta Actin promotor; ∆TK1-delta TK1, inactivated Thymidine Kinase 1; (T2A)-self-cleaving peptide sequence; Neo-Neomycin gene; PGKpA-Phosphoglycerate kinase poly A tail; loxP-recombination elements are shown as a blue triangle; orientation of the Gateway attB recombination elements is shown by an orange arrow; orientation of the genotyping (F) and (R) primers is shown by green and blue arrows, respectively; and engineered PTC sites are shown in exon 3 by a red circle. A-T, Ataxia Telangiectasia; ATM, A-T mutated; PTC, premature termination codon.Figure 1—source data 1.
+**Figure 1.:** (A) The Atm gene locus was targeted by homologous recombination of a targeting vector containing a modified NorCOMM cassette in intron one and the corresponding A-T PTC mutation in exon 3 to create the targeted AtmR35X and AtmQ35X ES cell lines. Following germline transmission of these alleles in mice, the floxed NorCOMM cassette was removed by Cre-excision in vivo to produce the final AtmR35X and AtmQ35X mouse lines. (B) Genotyping of A-T mouse models. PCR agarose gel of mouse DNA shows 151 bp wild-type (+) allele band and 241 bp Cre-excised targeted allele band. (C) ATM levels were examined using immunoblot analyses of the spleen due to its high expression density in this tissue. Exemplar blots illustrate a gene dose effect of ATM protein expression in samples harvested from wild-type (+), heterozygous (R35X/+, Q35X/+), and homozygous AtmR35X/R35X (R35X) and AtmQ35X/Q35X (Q35X) mice as indicated. (D) Breeding scheme schematic for double mutant and control mice for this study. (E) AtmR35X/R35X; Aptx−/− mice develop an ataxia that at late stages results in a severe loss of motor coordination and ability to ambulate (see Videos 1–4). Abbreviations for panel 1: hβA-human beta Actin promotor; ∆TK1-delta TK1, inactivated Thymidine Kinase 1; (T2A)-self-cleaving peptide sequence; Neo-Neomycin gene; PGKpA-Phosphoglycerate kinase poly A tail; loxP-recombination elements are shown as a blue triangle; orientation of the Gateway attB recombination elements is shown by an orange arrow; orientation of the genotyping (F) and (R) primers is shown by green and blue arrows, respectively; and engineered PTC sites are shown in exon 3 by a red circle. A-T, Ataxia Telangiectasia; ATM, A-T mutated; PTC, premature termination codon.
 
 AtmR35X/R35X; Aptx−/− (double mutant) mice were created by first crossing single mutant AtmR35X/R35X (congenic on the C57BL/6J background) and Aptx−/− (mixed C57BL/6J and 129 background) mice to generate heterozygote AtmR35X/+; Aptx+/−. F1-5 littermate AtmR35X/+; Aptx+/− were then crossed within litters to create sufficient numbers of the desired experimental and control genotypes to determine how the loss of different amounts of ATM and APTX affects the animal’s phenotype (Figure 1D). Like prior ATM-deficient A-T mouse models, ATM or APTX deficiency alone did not result in mice with ataxia (Videos 1 and 2). However, deficiency in both proteins (AtmR35X/R35X; Aptx−/−) results in the development of a severe and progressively ataxic phenotype (Figure 1E, Videos 3 and 4).
 
-## ATM-deficient mice have lowered survivability and a high incidence of thymomas
+![Video 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/64695/elife-64695-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/64695/elife-64695-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/64695/elife-64695-video4.mp4.jpg)
+
+### ATM-deficient mice have lowered survivability and a high incidence of thymomas
 
 We assessed the general health and development of control and experimental mice expressing different levels of ATM and APTX (Figure 2). We found that AtmR35X/R35X; Aptx−/− mice grew ~55% slower and reached estimated plateau weights that were ~35% less than control genotypes (log-rank, n=21–40, p<0.0001; Figure 2A). These differences in weight were a postnatal phenomenon, as no significant weight differences were detected just after birth (P8) across all genotypes (one-way ANOVA, n=5–23, p>0.23). Adolescent double mutant mice at postnatal day 45 (P45) weighed on average 30% less in male mice (double mutant: 14.4±1.0 g [n=13] vs. wild-type: 20.2±0.5 g [n=16], t-test, p<0.0001) and 25% less in females (double mutant: 12.7±0.6 g [n=17] vs. wild-type: 17.0±0.2 g [n=15], t-test, p<0.0001; Figure 1A). Differences across the control genotypes were observed, but they were small and not consistent across time points or sex and therefore judged to not be physiologically relevant (Figure 2A). Survivability of the AtmR35X/R35X; Aptx−/− mice was significantly reduced compared to Atm+/+; Aptx+/+ mice, with 53% of mice still alive at 400 days of age, compared to 97% of Atm+/+; Aptx+/+ mice at the same time point (Figure 2B). ATM deficiency alone was sufficient to reduce survivability; as compared to Atm+/+; Aptx+/+ mice, both AtmR35X/R35X; Aptx+/+ and AtmR35X/R35X; Aptx+/− had significantly reduced survivability (42%, log-rank, χ2(1, 56)=13.49, p=0.0002% and 52%, log-rank, χ2(1, 53)=19.54, p<0.0001, respectively). No significant difference in survivability between ATM-deficient mice with partial or complete APTX deficiency was detected (log-rank, χ2(2, 85)=1.01, p=0.6). Conversely, mice harboring at least one functional copy of the Atm gene had normal survivability, regardless of whether they expressed APTX or not (log-rank, χ2(3, 131)=3.08, p=0.4). No significant difference between male and female mice was observed, and thus data were pooled (log-rank, p>0.4 for all pairwise comparisons; Figure 2—figure supplement 2–1B). Generally, a third of mice with ATM deficiency died from complications related to large thymic cancers (thymoma) found in the thoracic cavity (Figure 2C). The presence or absence of APTX did not impact cancer prevalence, and mice with at least one Atm transcript were cancer-free up until at least P400. Overall, ATM but not APTX deficiency had severe effects on the health and survivability of mice.
 
-## Both ATM and APTX deficiency are necessary to produce progressive motor dysfunction
+![Figure 2.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left: The line color and symbol for each genotype are denoted and are consistent across all figures. Right: AtmR35X/R35X; Aptx−/− mice weighed significantly less than all control genotypes as indicated by the growth curves (±95% confidence interval; dotted lines). Growth curve (AtmR35X/R35X; Aptx−/− vs. controls): Male k=0.024 vs 0.011−0.019, Ymax=21.8 vs. 32.9−41.0 g (n=3–18); Female k=0.030 vs. 0.017–0.022, Ymax=16.9 vs 23.3–31.3 (n=2–19). Sum of squares F-test run across all curves: Male F(12, 364)=30.5, p<0.0001, Female F(12, 339)=28.3, p<0.0001. (B) ATM-deficient mice, regardless of APTX expression, displayed significantly lower survivability with ~55% of mice deceased by P400. No statistical differences between ATM-deficient mice were detected. Moreover, a single wild-type copy of the Atm gene was sufficient to prevent premature death (no statistical difference detected between AtmR35X/+; Aptx−/− and Atm+/+; Aptx+/+ mice). Log-rank (Mantel-Cox) tests across all (χ2(6,217)=48.4, p<0.0001), just the ATM-deficient (χ2(2,217)=1.06, p=0.6), and single comparisons to wild-type (see figure) were conducted. Total number of animals indicated in panel (C). (C) Pie charts illustrating that ATM-deficient mice displayed a high prevalence of thymomas based on postmortem necropsies. ‘Other’ probable causes of death included enlarged livers and obstructed kidneys. ‘Missing’ mice were presumed dead and cannibalized by cage mates, cause of death unknown. ATM, Ataxia Telangiectasia mutated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The average weights are plotted for each genotype at each of the indicated time points. Two-way ANOVA with age and genotype as factors excluding the double mutant mice data. Male: F(10, 226)=5.6, p<0.0001; Female: F(10, 197)=7.3, p<0.0001. (B) The survivability of each genotype of mice is plotted for male and female individually.
+
+### Both ATM and APTX deficiency are necessary to produce progressive motor dysfunction
 
 The progressive development of severe ataxia is a hallmark characteristic of A-T that is recapitulated in the AtmR35X/R35X; Aptx−/− mice but none of the other control genotypes we tested. Overall, we find motor coordination deficits emerge between 210 and 400 days after birth in AtmR35X/R35X; Aptx−/− mice and find no evidence of ataxia in mice with at least one copy of the Atm or Aptx gene (Figure 3A and B). For the vertical pole test, AtmR35X/R35X; Aptx−/− mice took twice as long to descend at P400 compared to Atm+/+; Aptx+/+, Atm+/+; Aptx−/−, AtmR35X/R35X; Aptx+/+, or AtmR35X/+; Aptx−/− mice (Male: 29.1 ± 0.9 s [n=3] vs. 7.5 ± 0.4 s [n=12], 12.5±2.5 s [n=9], 9.2±0.9 s [n=10], 8.6±0.9 s [n=11], one-way ANOVA, F(4, 40)=19.9, p<0.0001; Female: 19.0±4.0 s [n=4] vs. 7.5±0.4 s [n=12], 7.8 ± 0.4 s [n=10], 10.5±1.2 s [n=6], 8.2±0.5 s [n = 8], one-way ANOVA, F(4, 35)=13.9, p<0.0001). An examination of gait indicated that AtmR35X/R35X; Aptx−/− mice at P400, but not P210 need additional stabilization during ambulation, as they spend twice as much time with three paws, rather than the normal 2, in contact with the ground as they walk across the gait analysis platform (Male: 56.2% vs. 26.4–32.2%, one-way ANOVA, F(4, 54)=14.3, p<0.0001; Female: 58.4% vs. 18.9–28.8%, one-way ANOVA, F(3, 178)=95.5, p<0.0001; Figure 3B). AtmR35X/R35X; Aptx−/− also display a slower cadence and average speed across the platform compared to all other genotypes at P400 (cadence, Male: 9.5 vs. 13.3–15.9 steps/s, one-way ANOVA, F(3, 204)=36.8, p<0.0001; Female: 9.1 vs. 14.2–15.9 steps/s, one-way ANOVA, F(3, 204)=39.7, p<0.0001; speed, Male: 8.8 vs. 22–26 cm/s, one-way ANOVA, F(4, 50)=28.3, p<0.0001; Female: 58.4 vs. 18.9–28.8 cm/s, one-way ANOVA, F(3, 178)=39.7, p<0.0001; Figure 3B; Figure 3—figure supplement 3–1). This difference in speed and cadence is unlikely to be caused by animal size, as there are no significant differences in these parameters at earlier time points when the difference in size is significant (Figure 2A). These observations across the two behavioral tests were found in both male and female mice at each of their respective time points, consistent with the lack of sex differences observed in A-T patients.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig3-v2.jpg)
+
+**Figure 3.:** (A) AtmR35X/R35X; Aptx−/− mice take a similar amount of time to descend a vertical pole at P45, P120, and P210, but significantly longer at P400. These overall results were found to be similar for both male (left, n=2–12) and female (right, n=4–12) mice. (B) Consistent with the vertical pole test, the gait of AtmR35X/R35X; Aptx−/− mice measured during ambulation on a Catwalk gait analysis system was significantly different to controls by P400, but not before P210. This includes the percent of time a mouse spends with 3 versus 1, 2, or 4 paws on the ground and the speed and cadence during each run across the platform. The effects of the two null mutations were generally similar between males (left, n=4–21) and females (right, n=3–18). (C) Behavioral data for male (blue) and female (pink) AtmR35X/R35X; Aptx−/− (dark purple, left) and Atm+/+; Aptx+/+ (orange, right) mice are plotted at P30 (left two columns) and P400 (right two columns). Left-right asymmetries of the horizontal bars indicate a difference in performance between genotypes for the behavioral test listed in a column on the far left. A significant difference in the time to right during the righting reflex at P8 was observed in both male and female mice (bottom). (A) and (B) were examined via two-way ANOVA with age and genotype as factors followed by Tukey’s multiple comparison tests between AtmR35X/R35X; Aptx−/− and each of the control genotypes. Behavioral tests in (C) were examined using a non-parametric Kruskal-Wallis followed by Dunn’s multiple comparisons tests. Symbol/color key: Atm+/+; Aptx+/+ (purple circle), Atm+/+; Aptx−/− (blue diamond), AtmR35X/R35X; Aptx+/+ (green triangle), AtmR35X/R35X; Aptx−/− (orange square), AtmR35X/+; Aptx−/− (red inverted triangle).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) AtmR35X/R35X; Aptx−/− mice develop an ataxia that at late stages results in a severe loss of coordination and ability to ambulate. (B) Additional gait analyses measuring stride length and time of overlap of the hindlimbs. Examined via two-way ANOVA with age and genotype as factors followed by Tukey’s multiple comparison tests between AtmR35X/R35X; Aptx−/− and each of the control genotypes. (C) Behavioral deficits are seen only in AtmR35X/R35X; Aptx−/− mice across all behavioral tests and sexes. Behavioral tests were examined using a nonparametric Kruskal-Wallis followed by Dunn’s multiple comparisons test.
+
 We further examined behavioral differences between the AtmR35X/R35X; Aptx−/− and Atm+/+; Aptx+/+ mice using a standardized set of experimental procedures used to phenotype genetically modified mice (i.e., SHIRPA; Figure 3C; Figure 3—figure supplement 3–1; Rogers et al., 1997). We first detected differences in motor function at P8, where AtmR35X/R35X; Aptx−/− mice took 3–4 times longer on average to right themselves compared to Atm+/+; Aptx+/+ mice (Male: 6.4±1.1 s [n=24] vs. 1.5±0.1 s [n=23], t-test, p<0.0002; Female: 11.1±1.9 s [n=21] vs. 2.4±0.3 s [n=17], t-test, p<0.0002; Figure 3C bottom). At 30 days of age, we detected significant differences between AtmR35X/R35X; Aptx−/− and Atm+/+; Aptx+/+ mice in behavioral tests that qualitatively measure body position and spontaneous activity (Figure 3C). Striking differences in AtmR35X/R35X; Aptx−/− compared to Atm+/+; Aptx+/+ mice were observed at P400, especially for behaviors related to movement, including locomotor activity, body position, and gait (Figure 3C). The results from this battery of tests demonstrate that AtmR35X/R35X; Aptx−/− mice develop a severe change in behavior by P400, consistent with purely visual observations of significant motor coordination deficits in the mice up to this time point. Importantly, we do not find any significant differences between the other control genotypes, including AtmR35X/+; Aptx−/− mice that express at least some ATM but no APTX protein (Figure 3—figure supplement 3–1).
 
-## Membrane and synaptic properties are perturbed in ATM- and APTX-deficient Purkinje neurons
+### Membrane and synaptic properties are perturbed in ATM- and APTX-deficient Purkinje neurons
 
 Purkinje neurons (PNs) are a key neuronal subtype located in the cerebellar cortex. They display considerable intrinsic excitability, firing action potentials (APs) spontaneously at rates significantly higher than most other neurons in the brain (50–100 Hz more in many cases). Their activity shapes cerebellar output via tonic inhibition of neurons of the cerebellar nuclei, which project to motor coordination centers in the forebrain, brainstem, and spinal cord. Cerebellar PN dysfunction is associated with several forms of ataxia and implicated in A-T (Hoxha et al., 2018; Cook et al., 2021; Shiloh, 2020). We therefore examined if the electrophysiological properties of PNs in the AtmR35X/R35X; Aptx−/− cerebellum were abnormal.
 
 Since PN baseline activity and responsivity to input is mediated by a baseline set of passive and active membrane properties (Figure 4), we directly recorded from and compared the membrane properties of PNs in acute cerebellar sections harvested from AtmR35X/R35X; Aptx−/− and Atm+/+; Aptx+/+ mice (P350–P400). PNs recorded from AtmR35X/R35X; Aptx−/− mice had significantly ‘tighter’ membranes, displaying higher membrane input resistances (Rm) than those from Atm+/+; Aptx+/+ mice (47.7±5.6 [n=15] vs. 30.2±1.47 [n=23] MΩ, t-test, p=0.008; Figure 4B) and displayed a faster membrane time constant (τ) (3.6±0.4 [n=15] vs. 5.1±0.3 [n=23] ms, t-test, p=0.009; Figure 4B). These results indicate that the total membrane capacitance (Cm=τ/Rm) of the AtmR35X/R35X; Aptx−/− PNs is significantly reduced (98.25±19.23 [n=15] vs. 175.6±12.67 [n=23] pF, t-test, p=0.0025; Figure 4B). At the cellular level, this suggests that the ATM- and APTX-deficient PNs have less (i.e., decreased area) or thinner membranes than that of wild-type PNs, a result suggestive of a developmental deficit or neurodegenerative process (Dell’Orco et al., 2015). We next assessed the intrinsic excitability of PNs in AtmR35X/R35X; Aptx−/− and Atm+/+; Aptx+/+ mice by examining PN AP generation and dynamics. Significant deficits in the ability of PNs to fire continuously in response to current injection were observed in AtmR35X/R35X; Aptx−/− mice (Figure 4C). These deficits were associated with significant perturbations in the amplitude, threshold, and area of evoked APs (amplitude: 66.2±0.7 [n=14] vs. 72.1±1.4 [n=13] ΔmV, t-test, p=0.003; threshold: –55.2±1.5 to –48.61±1.9 mV, t-test, p=0.0196; area: 17.96±0.6 vs. 20.63±1.0 mV*ms, t-test, p=0.048; Figure 4C). Taken together, these experiments demonstrate significant perturbations of PN physiological properties that likely disrupt their ability to function normally in the cerebellum of AtmR35X/R35X; Aptx−/− mice.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic diagram of intracellular recording from a single Purkinje neuron (PN) in an acute cerebellar tissue slice preparation used to examine their physiological properties. (B) Left: Voltage-clamp measurements of PN membrane properties made from a 1 s, –5 mV step pulse as illustrated. Right: The membrane input resistance (Rm), time constant (τ), and capacitance (Cm) were perturbed in AtmR35X/R35X; Aptx−/− compared to Atm+/+; Aptx+/+ mice. (C) Current-clamp recordings of PN action potentials (APs) after 2 nA step pulses from a –70 mV holding potential. PN APs recorded from AtmR35X/R35X; Aptx−/− fail to maintain constant firing and summary plots show that they have lower 1st AP amplitudes, firing threshold, and area under the curve. (D) Top: Example sEPSC traces taken from a PN under voltage clamp at a –80 mV holding potential. Bottom: Median frequency and amplitude data, along with the overall probability distribution function are plotted for both Atm+/+; Aptx+/+ (n=11) and AtmR35X/R35X; Aptx−/− (n=11) mice. The frequency but not amplitude of PNs recorded in AtmR35X/R35X; Aptx−/− mice was found to be perturbed. (E, F) Left: Example traces of evoked EPSCs recorded from PNs as a result of a two-pulse stimulation (50 ms interval) of either parallel (E) or climbing (F) fiber axons. Traces illustrate the first (A1) and second (A2) amplitude (normalized) and time course of decay (blue fitted line) of each synaptic response. Right: Summary plots of the paired-pulse ratio. While parallel fiber paired-pulse facilitation was normal in AtmR35X/R35X; Aptx−/− mice, climbing fiber paired-pulse depression and halfwidth was significantly perturbed compared to Atm+/+; Aptx+/+ mice. (G) Schematic diagram of extracellular recording from a single PN in an acute cerebellar tissue slice preparation. Example electrophysiological traces for Atm+/+; Aptx+/+ (purple, top) and AtmR35X/R35X; Aptx−/− (orange, bottom) PNs in the medial area (i.e., vermis) of the cerebellum. (H) AtmR35X/R35X; Aptx−/− PN AP firing frequency progressively decreased with age and was significantly slower in comparison to all control genotypes expressing at least one copy of the Atm or Aptx gene [Atm+/+; Aptx+/+ (n=52–59), Atm+/+; Aptx−/− (n=51–64), AtmR35X/R35X; Aptx+/+ (n=39–52), AtmR35X/R35X; Aptx−/− (n=24–71), AtmR35X/+; Aptx−/− (n=69)]. Data in (B) were compared using an ANOVA (Kruskal-Wallis) followed by Dunn’s multiple comparisons test, data in (D–F) were compared via Welch’s t-test, and data in (H) using a two-way ANOVA followed by Holm-Šídák’s multiple comparisons test. Symbol/color key: Atm+/+; Aptx+/+ (purple circle), Atm+/+; Aptx−/− (blue diamond), AtmR35X/R35X; Aptx+/+ (green triangle), AtmR35X/R35X; Aptx−/− (orange square), AtmR35X/+; Aptx−/− (red inverted triangle). sEPSC, spontaneous excitatory postsynaptic current.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) PN voltage responses to various current steps between –500 and 2250 pA (250 pA steps) from a –70 mV holding current in Atm+/+; Aptx+/+ (top, purple) and AtmR35X/R35X; Aptx−/− (bottom, orange) mice. (B) I‒V curves calculated from either max deflection (Vm max) or steady state (Vm end) for Atm+/+; Aptx+/+ (purple) and AtmR35X/R35X; Aptx−/− (orange) mice. (C) Various measurements of the voltage response to –500 pA step pulse (blue box in B) in Atm+/+; Aptx+/+ (purple) and AtmR35X/R35X; Aptx−/− (orange) mice. Significance was tested using a non-parametric Mann-Whitney test. PN, Purkinje neuron.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Average PN firing frequency (Hz) is plotted across the indicated locations at P45, P120, P210, and P400. Significance tested via two-way ANOVA with age and genotype as factors. PN, Purkinje neuron.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Average PN firing frequency (Hz) for all cells recorded from male and female mice is plotted for the indicated genotype. No significant differences were observed between sex. Two-way ANOVA with age and sex as factors, Atm+/+; Aptx+/+ (F(1, 751)=1.15, p=0.3), Atm+/+; Aptx−/− (F(1, 797)=1.10, p=0.3), AtmR35X/R35X; Aptx+/+ (F(1, 630)=0.17, p=0.7), AtmR35X/R35X; Aptx−/− (F(1, 666)=1.10, p=0.4), t-test for P400 AtmR35X/+; Aptx−/− (p=0.9). PN, Purkinje neuron.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Average CV of PN firing frequency is plotted across the indicated locations at P45, P120, P210, and P400. No significant differences (p<0.5) were detected across all areas using two-way ANOVA with age and genotype as factors. PN, Purkinje neuron.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Average CV2 of PN firing frequency is plotted across the indicated locations at P45, P120, P210, and P400. No significant differences (p<0.5) were detected across all areas using two-way ANOVA with age and genotype as factors. PN, Purkinje neuron.
+
 We next tested whether extrinsic and/or synaptic PN properties were also impacted in AtmR35X/R35X; Aptx−/− mice. We first examined spontaneous excitatory postsynaptic currents (sEPSCs) generated by granule cell-to-PN synapses (i.e., parallel fiber inputs). No difference in sEPSC size was detected, indicating the function of granule cell axon terminals (i.e., parallel fibers) was relatively normal in the AtmR35X/R35X; Aptx−/− cerebellum (18.92±1.3 [n=11] vs. 23.4±3.3 [n=11] pA, t-test, p=0.477; Figure 4D, Yamasaki et al., 2006). sEPSC frequency, however, was found to be significantly increased, a phenomenon that could be attributed to either an increase in the total number of synapses, an increase in the size of the readily releasable pool of synaptic vesicles, or an increase in the probability of neurotransmitter release in PNs of AtmR35X/R35X; Aptx−/− mice (18.75±2.8 Hz [n=11] vs. 11.4±1.0 Hz [n=11], t-test, p=0.047; Figure 4D). We next explored evoked synaptic release and short-term plasticity by simultaneously recording from PNs and electrically stimulating either granule cell (i.e., parallel fibers) or inferior olivary (i.e., climbing fiber) axons with a paired-pulse burst (two-pulses, 50 ms apart). The synaptic properties of parallel fibers were found to be normal, displaying no significant differences in the expected short-term facilitation (Atluri and Regehr, 1996) or halfwidth and decay time constant of the evoked EPSC (PPR: 1.3±0.03 [n=10] vs. 1.4±0.05 [n=13], t-test, p=0.162; halfwidth: 3.9±0.6 vs. 4.9±0.4 ms, t-test, p=0.175; time constant: 3.5±0.5 vs. 4.7±0.4 ms, t-test, p=0.054; Figure 4E). In comparison, we found climbing fiber-to-PN synaptic responses, which normally display pair-pulse depression (Hansel and Linden, 2000), to depress at significantly greater magnitudes in AtmR35X/R35X; Aptx−/− mice (PPR: 0.6±0.03 [n=6] vs. 0.7±0.02 [n=9], t-test, p=0.03; Figure 4F). The overall width and decay time constant of the evoked currents were also smaller (halfwidth: 2.3±0.6 [n=6] vs. 3.0±0.2 [n=9] ms, t-test, p=0.004; time constant (fast): 1.1±0.14 vs. 2.9±0.4 ms, t-test, [p=0.001]). While these results could be caused by a presynaptic deficit, such as reduced vesicle stores in the climbing fiber axon terminal, the unaffected initial magnitude of the EPSC (2.4±0.4 [n=6] vs. 1.9±0.2 nA [n=9], t-test, p=0.3) points to a more intrinsic deficit, such as a reduced Ca2+ influx from the endoplasmic reticulum, which could significantly impact long-term synaptic plasticity critical to cerebellar function (Hoxha et al., 2018; Kano and Watanabe, 2017). Overall, the perturbations to the passive and active PN properties that we observe here likely give rise to the significant cerebellar dysfunction in AtmR35X/R35X; Aptx−/− mice.
 
-## ATM and APTX deficiency causes a progressive perturbation of PN neural activity that is associated with dendritic shrinking and overall cerebellar atrophy
+### ATM and APTX deficiency causes a progressive perturbation of PN neural activity that is associated with dendritic shrinking and overall cerebellar atrophy
 
 Decreased rates of spontaneous PN AP firing, which can be indicative of PN dysfunction, have been observed in several mouse models of ataxia, including spinocerebellar ataxias (SCA) 2, 3, 5, 6, 13, and 27, several models of episodic ataxia (e.g., leaner, ducky, and tottering), and autosomal-recessive spastic ataxia of the Charlevoix-Saguenay (Hourez et al., 2011; Hansen et al., 2013; Dell’Orco et al., 2017; Kasumu and Bezprozvanny, 2012; Liu et al., 2009; Perkins et al., 2010; Shakkottai et al., 2011; Jayabal et al., 2016; Stoyas et al., 2020; Hurlock et al., 2008; Shakkottai et al., 2009; Bosch et al., 2015; Walter et al., 2006; Alviña and Khodakhah, 2010; Ady et al., 2018; Larivière et al., 2019; Cook et al., 2021). We therefore used this biomarker to characterize the progression of PN perturbation in AtmR35X/R35X; Aptx−/− mice and assess whether deficits were restricted to ATM- and APTX-deficient mice, consistent with the behavioral results (Figures 2 and 3). We additionally examined whether decreased PN activity differed across the cerebellum, as anecdotal clinical pathology reports suggest degeneration may occur asymmetrically across the cerebellum, with the anterior and posterior vermis and middle cerebellar hemispheres affected the most, although no systematic analysis has been performed, and the consistency of results across patients is highly variable (Verhagen et al., 2012; De León et al., 1976; Amromin et al., 1979; Monaco et al., 1988; Terplan and Krauss, 1969; Strich, 1966; Solitare, 1968; Solitare and Lopez, 1967; Aguilar et al., 1968; Paula-Barbosa et al., 1983).
 
@@ -88,15 +136,27 @@ Using extracellular recording methods in the acute slice, we recorded spontaneou
 
 We found that complete deficiency of both ATM and APTX, consistent with the behavioral results, was necessary to produce a significantly reduced spontaneous PN firing frequency (Figure 4G and H). Although the trend of slower PN firing rates was observed across most regions of the cerebellum, some subregions appeared to be less or minimally impacted, including several areas of the lateral cerebellum, including the paraflocculus, paramedian, and crus I and II (Figure 4—figure supplement 4–2). Significant age-dependent changes in firing frequency were also only observed in AtmR35X/R35X; Aptx−/− mice (Figure 4H), with the most significant decline occurring between P120 and P210 (medial: 50.3±2.4 Hz [n=61] vs. 36.9±2.2 Hz [n=31], t-test, p=0.0006). No significant difference in PN firing frequency was detected between male and female mice within each genotype, thus the data were pooled (two-way ANOVA, p>0.3 across all pairwise comparisons; Figure 4—figure supplement 4–3). Previous studies across several mouse models of heritable ataxia, including episodic ataxia and several variants of spinocerebellar ataxia find that physiological disruption in PN firing not only changes its frequency, but also its regularity (Kasumu and Bezprozvanny, 2012; Jayabal et al., 2016; Stoyas et al., 2020; Cook et al., 2021). We compared both the coefficient of variation (CV) and variability in adjacent intervals (CV2) between AtmR35X/R35X; Aptx−/− and control mice (Figure 4—figure supplements 4 and 5). No difference in these parameters across sex, age, or genotype was detected. Consistent with the behavioral results, cerebellar dysfunction was found only in the AtmR35X/R35X; Aptx−/− mice that developed ataxia and not in mice with partial or full expression of ATM or APTX.
 
-## ATM-and APTX-deficiency induces cerebellar atrophy
+### ATM-and APTX-deficiency induces cerebellar atrophy
 
 In A-T patients, ataxia is usually detected between 1 and 2 years of age and is associated with little to no cerebellar atrophy (Tavani et al., 2003; Taylor et al., 2015). Significant structural changes and atrophy are usually first detected via neuroimaging between 5 and 10 years of age (Demaerel et al., 1992; Tavani et al., 2003). Postmortem clinical histopathology in A-T patients points to significant changes in PN morphology and density; however, these reports primarily detail patients at late stages of the disorder, and the relationship between the severity of PN pathology and ataxia is not clear (Verhagen et al., 2012; De León et al., 1976; Amromin et al., 1979; Monaco et al., 1988; Terplan and Krauss, 1969; Strich, 1966; Solitare, 1968; Solitare and Lopez, 1967; Aguilar et al., 1968; Paula-Barbosa et al., 1983; Gatti and Vinters, 1985).
 
 In the AtmR35X/R35X; Aptx−/− mice, we found the gross size of the cerebellum to be normal early in life, but significant atrophy developed as the severity of ataxia increased (Figure 5A). At early stages (P45–P210), the size of the cerebellum in AtmR35X/R35X; Aptx−/− mice did not differ from mice with at least one copy of the Atm gene (two-way ANOVA, F(3,52)=1.0, p=0.4). However, by P210, the overall size of the cerebellum in AtmR35X/R35X; Aptx−/− mice was significantly reduced (one-way ANOVA, F(3,37)=1.4, p=0.3), with the degenerative process continuing to at least the last time point investigated (P460). To rule out the possibility that reduced cerebellar size was related to the smaller stature of AtmR35X/R35X; Aptx−/− mice, we examined, animal weight and cerebellar size and found no correlation (Pearson’s correlation, p>0.3 for all four genotypes at P460, n=10–20). Furthermore, we found that cerebellar size did not differ between male and the on average 22% smaller female mice across genotypes at this age (two-way ANOVA, F(2, 153)=1.9, p=0.2). Therefore, cerebellar neurodegeneration in the AtmR35X/R35X; Aptx−/− mice, which begins after P120, is correlated with ATM and APTX deficiency.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cartoon image of the brain highlighting the dorsal forebrain and cerebellar surface. Area estimates from dorsal images of the brain were used to determine the cerebellum to forebrain ratio allowing us to control for any differences in overall size of the brain. We found the cerebellum decreased in size over age in AtmR35X/R35X; Aptx−/− (n=5–10), but not control mice (Atm+/+; Aptx+/+ [n=4–20], Atm+/+; Aptx−/− [n=4–12], AtmR35X/R35X; Aptx+/+ [n=6–16], AtmR35X/+; Aptx−/− [n=6]). (B) Left: Immunofluorescent images of parasagittal cerebellar sections illustrating the length (blue arrows) of PN dendrites in the ML (green) and width of the granule cell layer (GCL; magenta) in Atm+/+; Aptx+/+ and AtmR35X/R35X; Aptx−/− mice (P400; medial cerebellar lobule VIII). Scale bar=50 μm. Middle: Summary graphs of ML and GCL width measurements averaged across all lobules in sections from the medial, intermediate, and lateral parts of the cerebellum (P400). Right: Average ML and GCL widths at different ages in the medial cerebellum (n=5–7). (C) Left: H&E stained, parasagittal cerebellar sections from P400 Atm+/+; Aptx+/+ (top) and AtmR35X/R35X; Aptx−/− (bottom) mice. Scale bar=500 μm Right: Magnified view (from white box) of PNs (white triangles) in cerebellar lobules 4/5 and 6. Scale bar=50 μm, inset 10 μm Right: The average density of PNs across all lobules in the medial cerebellum of Atm+/+; Aptx+/+ (n=9) and AtmR35X/R35X; Aptx−/− (n=7) P400 mice do not differ. (D) Left: Whole cerebellar, fluorescent images and magnified view of folia VIII (from white box). Scale bar=500 μm left, 75 μm right. Right: Average density of Calbindin positive PNs across the whole cerebellum (n=7–9). (E) Left: Optically sectioned fluorescent images illustrate the smaller size of PNs in AtmR35X/R35X; Aptx−/− mice. Right: Plot of the average width of PN somas randomly sampled from across the cerebellum (n=5). Scale bar=10 μm. (F) Left: Images like in (E). Abnormally large caliber PN dendrites (inset) were observed in AtmR35X/R35X; Aptx−/− mice (P400; medial cerebellar lobule VI). Scale bar=25 μm main, 5 μm inset. Right: Average width of primary and secondary PN dendrites measured at the midline between the PN cell bodies and ML edge in Atm+/+; Aptx+/+ and AtmR35X/R35X; Aptx−/− mice (n=6). Statistical significances were assessed via two-way ANOVA with age and genotype as factors followed by Holm-Šídák (A and B right) or Šídák (B middle) pairwise multiple comparisons test. Welch’s t-test used in (D–F). PN, Purkinje neuron.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Width measurements of the molecular layer and granule cell layer—ML and GCL, respectively—for each lobule across the medial intermediate and lateral areas of the cerebellum. (B) Left: Summary plot indicates no significant differences in PN density were observed across each lobule in Atm+/+; Aptx+/+ (n=9) and AtmR35X/R35X; Aptx−/− (n=7) mice. Right: Images of parasagittal cerebellar sections from medial (top), intermediate (middle), and lateral (bottom) cerebellum. Scale bar=500 μm Statistical significances were assessed via two-way ANOVA with age and genotype as factors followed by Šídák post comparison test. PN, Purkinje neuron.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Fluorescent images of anti-microglial activation (CD68) staining in Atm+/+; Aptx+/+, AtmR35X/R35X; Aptx−/−, and a positive control for cerebellar degeneration (mouse model of MPS III; deficient in N-acetyl-alpha-glucosaminidase (Naglu)) (Li et al., 1999).
+
 We found cerebellar atrophy to be associated with a selective reduction in the width of the molecular layer (ML) where PN dendrites reside (Figure 5B). Consistent with the temporal changes in gross cerebellar size, PN firing frequency, and behavior, ML width in AtmR35X/R35X; Aptx−/− mice was normal in younger mice but progressively decreased in width as the severity of ataxia increased (P400: 120.2±2.1 μm [n=5] vs. 140.2±4.8 μm [n=5], two-way ANOVA, F(1, 42)=45.04, p<0.0001; Figure 5B and Figure 5—figure supplement 1). In contrast, no difference in the width of the granule cell layer (GCL) across age was observed in the AtmR35X/R35X; Aptx−/− mice (P400: 135.5±2.4 μm [n=6] vs. 127.5±4.3 μm [n=5], two-way ANOVA, F(1, 42)=3.3, p=0.08; Figure 5B and Figure 5—figure supplement 1). Cerebellar atrophy, however, was not due to PN cell death, as PN density did not significantly differ between AtmR35X/R35X; Aptx−/− and Atm+/+; Aptx+/+ mice (P400: 4.5±0.3 [n=9] vs. 4.5±0.2 [n=7] PNs/4000 μm2, Welch’s t-test, p=0.9; Figure 5C and D and Figure 5—figure supplement 1). Moreover, we found no evidence from immunohistolological experiments for increased levels of programmed cell death or microglial activation in the AtmR35X/R35X; Aptx−/− mice (Figure 5—figure supplement 2). At the anatomical level, we found pathological changes in PN morphology, as somatic size was reduced (15.3±0.3 [n=5] vs. 17.8±0.1 [n=5] μm, Welch’s t-test, p=0.0004; Figure 5E) and the primary and secondary dendrites were abnormally large in caliber in the AtmR35X/R35X; Aptx−/− mice (3.1±0.2 [n=6] vs. 2.8±0.1 [n=6] μm, Welch’s t-test, p=0.003; Figure 5F and -Figure 5—figure supplement 2). Overall, we found a good correlation between the abnormal structural and electrophysiological properties of the cerebellum and the progression of motor and deficits.
 
-## Differential disruption of thymocyte development in ATM-deficient versus APTX-deficient mice
+### Differential disruption of thymocyte development in ATM-deficient versus APTX-deficient mice
 
 Chronic sinopulmonary infections associated with immunodeficiency are one of the leading causes of death in A-T patients (Morrell et al., 1986; Bhatt and Bush, 2014). Immunodeficiency is linked to deficits in the generation of B- and T-lymphocytes that have been linked to defects in the antigen receptor gene rearrangement processes during the generation of these cells in the bone marrow and thymus, respectively (Staples et al., 2008). The resulting defects in mature lymphocyte numbers include decreases in CD4+ helper T-cells and killer CD8+ T-cells (Schubert et al., 2002). We therefore examined the percentages of T-cells in peripheral blood and of different subpopulations in the thymus of AtmR35X/R35X; Aptx−/− mice using T-cell antigen receptor (TCR) and CD4/CD8 co-receptor expression.
 
@@ -104,7 +164,7 @@ In the peripheral blood, we observed a significant reduction in the total fracti
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig6-v2.jpg)
 
-**Figure 6.:** AtmR35X/R35X; Aptx−/− mice.(A) Representative flow cytometric profiles of T-cell glycoprotein marker CD3 and summary plots indicate ATM- and/or APTX-deficient mice have decreased proportions of CD3+ T-cells in the blood. (B) Representative flow cytometric profiles of T-cell glycoprotein markers CD4 and CD8 gated on CD3+ cells and summary plots for CD8 and CD4 single positive cell proportions. ATM-deficient mice had reduced CD4+ proportions compared to mice with at least one copy of the Atm gene. Statistical significances were assessed via one-way ANOVA followed by Tukey’s pairwise multiple comparisons test. Number of animals denoted at bottom of bar. Symbol/color key: Atm (purple circle), +/+; Aptx+/+Atm (green triangle), R35X/R35X; Aptx+/+AtmR35X/+; Aptx−/− (red inverted triangle), AtmR35X/R35X; Aptx−/− (orange square). ATM, Ataxia Telangiectasia mutated.Figure 6—source data 1.
+**Figure 6.:** (A) Representative flow cytometric profiles of T-cell glycoprotein marker CD3 and summary plots indicate ATM- and/or APTX-deficient mice have decreased proportions of CD3+ T-cells in the blood. (B) Representative flow cytometric profiles of T-cell glycoprotein markers CD4 and CD8 gated on CD3+ cells and summary plots for CD8 and CD4 single positive cell proportions. ATM-deficient mice had reduced CD4+ proportions compared to mice with at least one copy of the Atm gene. Statistical significances were assessed via one-way ANOVA followed by Tukey’s pairwise multiple comparisons test. Number of animals denoted at bottom of bar. Symbol/color key: Atm+/+; Aptx+/+ (purple circle), AtmR35X/R35X; Aptx+/+ (green triangle), AtmR35X/+; Aptx−/− (red inverted triangle), AtmR35X/R35X; Aptx−/− (orange square). ATM, Ataxia Telangiectasia mutated.
 
 Given the reduction in T-cell populations in the blood, we next assessed T-cell development in the thymus. In this organ, bone marrow-derived T-cell progenitors undergo TCR gene rearrangement followed by positive selection for MHC restriction and negative selection of autoreactive clones. The phases of thymocyte development can be followed by monitoring the expression of CD4 and CD8 expression in thymocytes. The progression of this developmental program goes from double negative (CD4−CD8−) thymocytes to double positive (CD4+CD8+) thymocytes and then to single positive (CD4+ or CD8+) thymocytes. In addition, within the double negative stage, four different subpopulations can be identified, based on the expression of CD25 and CD44, known as DN1 (CD44+CD25−), DN2 (CD44+CD25+), DN3 (CD44−CD25+), and DN4 (CD44−CD25−) (Germain, 2002).
 
@@ -112,17 +172,17 @@ Gene rearrangement during thymocyte development occurs twice—once at the doubl
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig7-v2.jpg)
 
-**Figure 7.:** (A) Representative flow cytometric profiles of T-cell glycoprotein markers CD44 and CD25 gated on CD4−CD8− double negative (DN) cells. Summary plots show proportions of thymocytes at DN stages 1–4 (left to right). APTX deficient mice display increased proportions for DN1–3 and decreased proportion at DN4 consistent with a deficit in ontogeny from DN3 to DN4. (B) Representative flow cytometric profiles of T-cell glycoprotein markers CD4 and CD8 gated. ATM-deficient mice display decreased proportions for CD4 and CD8 single positive cells consistent with a deficit in ontogeny from CD4+CD8+ double positive to CD4+ and CD8+ single positive fates. Statistical significances were assessed via one-way ANOVA followed by Tukey’s pairwise multiple comparisons test. Number of animals denoted at bottom of bars. Symbol/color key: Atm (purple circle), +/+; Aptx+/+Atm (green triangle), R35X/R35X; Aptx+/+AtmR35X/+; Aptx−/− (red inverted triangle), AtmR35X/R35X; Aptx−/− (orange square).Figure 7—source data 1.
+**Figure 7.:** (A) Representative flow cytometric profiles of T-cell glycoprotein markers CD44 and CD25 gated on CD4−CD8− double negative (DN) cells. Summary plots show proportions of thymocytes at DN stages 1–4 (left to right). APTX deficient mice display increased proportions for DN1–3 and decreased proportion at DN4 consistent with a deficit in ontogeny from DN3 to DN4. (B) Representative flow cytometric profiles of T-cell glycoprotein markers CD4 and CD8 gated. ATM-deficient mice display decreased proportions for CD4 and CD8 single positive cells consistent with a deficit in ontogeny from CD4+CD8+ double positive to CD4+ and CD8+ single positive fates. Statistical significances were assessed via one-way ANOVA followed by Tukey’s pairwise multiple comparisons test. Number of animals denoted at bottom of bars. Symbol/color key: Atm+/+; Aptx+/+ (purple circle), AtmR35X/R35X; Aptx+/+ (green triangle), AtmR35X/+; Aptx−/− (red inverted triangle), AtmR35X/R35X; Aptx−/− (orange square).
 
 Next, we looked at the proportions of CD4+CD8+ thymocytes compared to CD4+CD8− and CD4−CD8+ single positive thymocytes in these four different strains. In agreement with our results in the blood and prior studies, we found that ATM-deficient mice but not control mice displayed decreased expression of CD4+CD8− and CD4−CD8+ single positive thymocytes (Figure 7B). These results support the role of ATM in TCR α/δgene rearrangement during thymocyte development (Bredemeyer et al., 2006), a role that is independent of the role played by APTX in early thymocyte maturation.
 
-## Read-through molecules overcome PTC to restore ATM expression
+### Read-through molecules overcome PTC to restore ATM expression
 
 Our primary rationale for inserting a clinically relevant nonsense mutation in the Atm gene was to generate a mouse amenable to critical pre-clinical testing of a novel set of SMRT compounds. We previously demonstrated SMRT compounds recover production of ATM protein in A-T patient-derived lymphoblastoid cell lines by overcoming PTC producing nonsense mutations (Du et al., 2013). To demonstrate suitability of this new A-T animal model for SMRT compound testing we chose to directly examine their ability to restore ATM expression using an explant approach that circumvents challenges related to in vivo delivery (e.g., bioavailability, route of delivery, etc.). ATM expression was measured in samples from the spleen, where ATM is normally expressed at high levels, and the cerebellum, a key target tissue for the disorder. We exposed these explant tissues, harvested from homozygous AtmR35X and AtmQ35X mice with either a candidate SMRT compound (GJ103), or an aminoglycoside previously known to have read-through properties (G418), and then measured ATM expression by immunoblot to assess restoration. In both types of ATM-deficient mice, ATM expression was consistently restored in the spleen and cerebellum by both G418 and GJ103 (Figure 8). These results demonstrate that our SMRT compounds can enable read-through of at least two of the three possible nonsense mutations causing PTCs and provide the rationale for in vivo efficacy testing in follow-on studies.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/64695/elife-64695-fig8-v2.jpg)
 
-**Figure 8.:** Atm and R35X/R35XAtm mice.Q35X/Q35XSpleen and cerebellar explant tissue from Atm and R35X/R35XAtm mice were treated with vehicle, the read-through compounds G418 (100 µM) or GJ103 (100 µM) for 72 hr. ATM immunoblots show recovery of ATM (MW 350 kDa) production in both the spleen and cerebellum. Equal loading was assessed via housekeeping genes (Actin or GAPDH) and ponceau staining. ATM, Ataxia Telangiectasia mutated.Q35X/Q35XFigure 8—source data 1.
+**Figure 8.:** Spleen and cerebellar explant tissue from AtmR35X/R35X and AtmQ35X/Q35X mice were treated with vehicle, the read-through compounds G418 (100 µM) or GJ103 (100 µM) for 72 hr. ATM immunoblots show recovery of ATM (MW 350 kDa) production in both the spleen and cerebellum. Equal loading was assessed via housekeeping genes (Actin or GAPDH) and ponceau staining. ATM, Ataxia Telangiectasia mutated.
 
 ## Discussion
 
@@ -156,7 +216,304 @@ Finally, pinpointing where, when, and how ATM deficiency causes cerebellar patho
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>AtmR35X, AtmTm1.1(103CAG)TGAMfgc</td>
+      <td>This paper</td>
+      <td>103C&gt;T mutation, human exon replacement</td>
+      <td>Generated by Hicks laboratory. Has been backcrossed into C57b/6 9 times. Contact pmathews@lundquist.org</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>AtmQ35X, AtmTm1.1(103C)TMfgc</td>
+      <td>This paper</td>
+      <td>103C&gt;T mutation, targeted premature termination signal in the mouse codon</td>
+      <td>Generated by Hicks laboratory. Has been backcrossed into C57b/6 9 times. Contact pmathews@lundquist.org</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Aptx−/−</td>
+      <td>Ahel et al., 2006</td>
+      <td>MGI Cat# 3687171, RRID:MGI:3687171</td>
+      <td>Contact peter.mckinnon@stjude.org</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Atm</td>
+      <td>MGI</td>
+      <td>MGI:107202; C030026E19Rik; ENSMUSG00000034218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo Sapien)</td>
+      <td>ATM</td>
+      <td>OMIM</td>
+      <td>OMIM: 607585 MGI: 107202 HomoloGene: 30952; ENSG00000149311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atm gene</td>
+      <td>Transnetyx</td>
+      <td>PCR primers</td>
+      <td>F-5′-CCTTTGAGGCATAAGTTGCAACTTG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atm gene</td>
+      <td>Transnetyx</td>
+      <td>PCR primers</td>
+      <td>R-5′-GTACAGTGTATCAGGTTAGGCATGC-3′</td>
+    </tr>
+    <tr>
+      <td>Chemical compound/ drugs</td>
+      <td>GJ103 saltFormula: C16H14N403S</td>
+      <td>TargetMol</td>
+      <td>T3448;CAS No.: 1459687-96-7</td>
+      <td>100 μM in media</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD68 (Rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# MCA1957, RRID: AB_322219</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATM (D2E2) (Rabbit- monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 2873, RRID:AB_2062659</td>
+      <td>WB (1:500)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (14C10)(Rabbit-monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 2118, RRID:AB_561053</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (D6A8)(Rabbit-monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 8457, RRID:AB_10950489</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, HRP-linked(Goat-monoclonal-polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 7074, RRID:AB_2099233</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (D-28k)(Rabbit, polyclonal)</td>
+      <td>Swant Inc.</td>
+      <td>Swant Cat# CB 38, RRID:AB_10000340</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific; Invitrogen</td>
+      <td>Cat# A11001, RRID: AB_2534069</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Cleaved Caspase-3, Asp-175 (rabbit)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9961, RRID: AB_2341188</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat Alexa Fluor 555 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific; Invitrogen</td>
+      <td>Cat# A21244, RRID: AB_2535812</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific; Invitrogen</td>
+      <td>Cat# A-21434, RRID: AB_141733</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin D-28k (mouse-monoclonal)</td>
+      <td>Swant Inc.</td>
+      <td>Cat# CB300</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 488 (Goat-polyclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# A-11034, RRID:AB_2576217</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4(GK1.5)(Rat-monoclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# 50-0041-82, RRID:AB_10609337</td>
+      <td>FACS(5 µl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8(53-6.7)(Rat-monoclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# 53-0081-82, RRID:AB_469897</td>
+      <td>FACS(5 µl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3(145-2C11)(Hamster-monoclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# 12-0031-83, RRID:AB_465497</td>
+      <td>FACS(5 µl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD44(IM7)(Rat-monoclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# 25-0441-82, RRID:AB_469623</td>
+      <td>FACS(5 µl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD25(PC61.5)(Rat-monoclonal)</td>
+      <td>Thermo Fisher Scientific;Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# 47-0251-82, RRID:AB_1272179</td>
+      <td>FACS(5 µl per test)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin Y (Certified Biological Stain)</td>
+      <td>Thermo Fisher Scientific (Fisher Chemical)</td>
+      <td>Cat# E511-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin Stain Solution, Modified Harris Formulation, Mercury Free Nuclear Stain</td>
+      <td>RICCA Chemical Company</td>
+      <td>Cat# 3530-16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Permount Mounting Medium</td>
+      <td>Thermo Fisher Scientific (Fisher Chemical)</td>
+      <td>Cat# SP15-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluoromount-G with DAPI</td>
+      <td>Southern Biotech</td>
+      <td>Cat# 0100-20,RRID: SCR_021261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific;Pierce</td>
+      <td>Cat# 23225</td>
+      <td>Protein assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific;Pierce</td>
+      <td>Cat# 34580</td>
+      <td>Chemiluminescent substrate</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Radiance plus</td>
+      <td>Azure Biosystems</td>
+      <td>Cat# AC2103</td>
+      <td>Chemiluminescent substrate</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 1.53</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro</td>
+      <td>http://www.wavemetrics.com/products/igorpro/igorpro.htm</td>
+      <td>RRID:SCR_000325</td>
+      <td>Version 7; Tarotools procedures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroexpress</td>
+      <td>https://www.researchgate.net/project/NeuroExpress-Analysis-software-for-whole-cell-electrophysiological-data</td>
+      <td>https://www.researchgate.net/project/NeuroExpress-Analysis-software-for-whole-cell-electrophysiological-data</td>
+      <td>Version 21.1.13; used for sEPSC analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad, Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Versions 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MBF, Stereo investigator</td>
+      <td>https://www.mbfbioscience.com/stereology</td>
+      <td>RRID:SCR_017667</td>
+      <td>Version 2021</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>https://www.microsoft.com/en-us/microsoft-365/excel</td>
+      <td>RRID:SCR_016137</td>
+      <td>Version 365</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Catwalk XT</td>
+      <td>https://www.noldus.com/catwalk-xt</td>
+      <td>RRID: SCR_021262</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice were group housed and kept under a 12 hr day/night cycle with food and water available ad libitum. Animals were housed within the general mouse house population, and not in specialized pathogen-free rooms. Older animals were made available wetted food or food gel packs on the ground of the cages as ataxia developed. AtmR35X and AtmQ35X mice were created and provided by Dr. Hicks and colleagues at the University of Manitoba.
 
@@ -168,51 +525,51 @@ AtmR35X and AtmQ35X were back-crossed with C57Bl/6J mice for nine generations (9
 
 Genotyping was performed from ear tissue samples of P8-11 mice. Real-time PCR methods conducted by Transnetyx Inc were used to determine each animals’ genotype. Animals were made identifiable via toe tattoos given at the same time as ear biopsy. Unique primers for AtmR35X and AtmQ35X were quantified and used to identify wildtype, heterozygous and homozygous mice (listed above). Aptx−/− and Aptx+/+ primers were used to assess their genotypes.
 
-## Animal health
+### Animal health
 
 Animals were weighed via a digital scale at P8, P45, P120, P210, and P400. Animal death was recorded as the day found dead, or on the day of euthanization when the animals reached a humane endpoint (animal unable to right itself within 60 s, significant hair matting indicating lack of self-grooming, or excessive distress as noted by the veterinary staff). Animal carcasses were immediately frozen upon death, and postmortem necropsies were carried out in batch. Probable cause of death was determined to the best of our ability in collaboration with the staff veterinarian (Dr. Catalina Guerra) by visual inspection of the internal organs. Some mice were cannibalized or accidentally disposed of by vivarium staff and were therefore labeled as ‘missing.’ Mice with no discernable visual cause of death were labeled ‘indeterminable.’ Mice that were found with thoracic masses near where the thymus would normally be in young mice were listed as ‘thymic cancer.’ All other identified probable causes of death (e.g., enlarged livers, urinary blockage) were labeled ‘other.’
 
-## Behavior
+### Behavior
 
 Before performing any behavioral test, mice were acclimated to the behavioral suite for ~20 min. Mice were tested at varying times of the day, in line with their day cycle. A battery of behavioral tests were performed on naïve double mutant mice of the indicated genotypes at various time points depending on the behavior but in the same cohort of mice. The battery of tests included Catwalk Gait assessment (P45, P120, P210, and P400) and a subset of the SmithKline-Beecham Harwell Imperial-College and Royal-London-Hospital Phenotype Assessment (SHIRPA) tests (P30 and P400). These tests were conducted by the UCLA Behavioral Core. Double mutant and control mice were additionally examined on the Vertical Pole test. All behavioral apparatuses were wiped down with ethanol (70%) between each testing each subject.
 
-## Gait analysis
+#### Gait analysis
 
 We used a Noldus Catwalk Gait analysis system designed to semi-automatically measure and analyze the gait of mice during normal ambulation. Briefly, the movement of mice across a glass bottom corridor is video recorded from a ventral position. Paw prints are highlighted in the video due to light illumination across the glass walking platform. Each mouse step within a video is subsequently detected using Catwalk XT (Noldus) in a semi-automated fashion. A run for each mouse consists of three trials of consistent ambulation across the monitored platform. Only consistent trials are accepted, and mice may take up to 10 attempts to complete three compliant trials in either direction across the corridor. Compliant trials were defined as those with movement across the platform under 5-s long and with no more than 60% speed variation. Once placed onto the platform, mice generally ran back and forth without any need for experimenter prompting.
 
-## Vertical pole
+#### Vertical pole
 
 Mice were placed at the top of an 80-cm-tall bolt with their nose facing down and hind paws as close to the top as possible. Mice were immediately released, and time started immediately upon placement. Time was stopped when the first forepaw touches the surface below the pole. A mouse’s natural predilection is to immediately climb down the pole, and they were given up to 60 s to traverse the pole, otherwise they were helped off the pole. A non-completed trial was automatically given a time of 30 s, as 95% of mice that did not descend within 30 s were still on the pole at the 60 s mark.
 
-## SHIRPA
+#### SHIRPA
 
 Behavioral tests were conducted by the University of California, Los Angeles Behavioral Core at P30 and P400. All parameters are scored to provide a quantitative assessment, which enables the comparison of results both over time and between different laboratories. Each mouse was sequentially tested across all behaviors within ~20 min time span before moving onto the next mouse. The experimenter was blinded to animal genotype. The screen was performed as described previously (Rogers et al., 1997).
 
-## Behavioral observation
+#### Behavioral observation
 
 The primary screen provides a behavioral observation profile and assessment of each animal begins by observing undisturbed behavior in a viewing jar (10 cm diameter) for 5 min. In addition to the scored behaviors of body position, spontaneous activity, respiration rate, and tremor, the observer logs any instances of bizarre or stereotyped behavior and convulsions, compulsive licking, self-destructive biting, retropulsion (walking backwards), and indications of spatial disorientation.
 
-## Arena behavior
+#### Arena behavior
 
 Thereafter, the mouse was transferred to the arena (30 × 50 cm2) for testing of transfer arousal and observation of normal behavior. The arena was marked into a grid of 10×10 cm2 squares to measure locomotor activity within a 30-s period. While the mouse was active in the arena, measures of startle response, gait, pelvic elevation, and tail elevation are recorded.
 
-## Supine restraint
+#### Supine restraint
 
 The animal was restrained in a supine position to record autonomic behaviors. During this assessment, grip strength, body tone, pinna reflex, corneal reflex, toe pinch, wire maneuver, and heart rate were evaluated.
 
-## Balance and orientation
+#### Balance and orientation
 
 Finally, several measures of vestibular system function were performed. The righting reflex, contact righting reflex, and negative geotaxis tests were performed. Throughout this procedure vocalization, urination and general fear, irritability, or aggression were recorded.
 
-## Equipment used
+#### Equipment used
 
-## Electrophysiology
+### Electrophysiology
 
-## Preparation of acute cerebellar slices
+#### Preparation of acute cerebellar slices
 
 Acute parasagittal slices of 300 μm thickness were prepared from the cerebellum of experimental and control littermate mice by following published methods (Hansen et al., 2013). In brief, cerebella were quickly removed and immersed in an ice-cold extracellular solution with composition of (mM): 119 NaCl, 26 NaHCO3, 11 glucose, 2.5 KCl, 2.5 CaCl2, 1.3 MgCl2, and 1 NaH2PO4, pH 7.4 when gassed with 5% CO2/95% O2. Cerebella were sectioned parasagittally using a vibratome (Leica VT-1000, Leica Biosystems, Nussloch, Germany) and initially incubated at 35°C for ~30 min, and then equilibrated and stored at room temperature until use.
 
-## Extracellular electrophysiology
+#### Extracellular electrophysiology
 
 Extracellular and intracellular recordings were obtained from PNs in slices constantly perfused with carbogen-bubbled extracellular solution and maintained at either 37°C (extracellular) or 32°C (intracellular) ±1°C (see above). Cells were visualized with DIC optics and a water-immersion 40× objective (NA 0.75) using a Zeiss Examiner microscope. Glass pipettes of ~3 MΩ resistance (Model P-1000, Sutter Instruments, Novato, CA) were filled with extracellular solution and positioned near PN axon hillocks in order to measure AP-associated capacitive current transients in voltage clamp mode with the pipette potential held at 0 mV. For whole-cell patch-clamp recordings, pipettes were filled with an intracellular solution (mM): 140 KMeth (CH3KO3S), 10 NaCl, 2 MgCl2, 0.2 CaCl2, 10 HEPES, 14 Phosphocreatine (tris salt), 1 EGTA, 4 Mg-ATP, 0.4 Na-GTP. 100 μM Picrotoxin (Sigma-Aldrich) was added to block inhibitory GABAegeric synaptic inputs. Data was acquired using a MultiClamp 700B amplifier at 20 or 100 kHz in voltage or current clamp mode, Digidata 1440 with pClamp10 (Molecular Devices, Sunnyvale, CA), and filtered at 2–4 kHz. The series resistance was usually between 10 and 15 MΩ. Series resistance was compensated at 80% for short-term plasticity experiments only.
 
@@ -220,19 +577,19 @@ For extracellular recordings, a total of 20–45 PNs were recorded for each anim
 
 Intracellular recordings were obtained from PNs in either lobule III or VIII of the medial cerebellum (i.e., vermis); no statistical differences in properties were observed between lobules.
 
-## Analyses
+#### Analyses
 
 Spontaneous AP interstimulus intervals were detected and analyzed using standard and custom routines in ClampFit (Molecular Device), IgorPro (Wavemetrics), and Excel (Microsoft). Specifically, APs were threshold detected and spiking statistics (i.e., frequency and interval length) were determined using adapted IgorPro routines (Taro Tools; https://sites.google.com/site/tarotoolsregister/). The coefficient of variation of the mean inter-spike interval (CV) and the median inter-spike interval (CV2=2 |ISIn+1−ISIn|/(ISIn+1 +ISIn)) were calculated in Excel using custom macros.
 
 Standard membrane properties were analyzed using IgorPro. RM was determined by averaging three voltage trace responses to a –5 mV step pulse from a –80 mV holding potential and measuring the resulting current deflection between 900 and 1000 ms after onset. The membrane time constant was measured by fitting a single exponential to the initial decay phase from 90% to 10% of the peak. CM was calculated by dividing the membrane time constant by the RM. sEPSC events were recorded over a 1-min epoch and detected and measured using Neuroexpress (v21.1.13). Parallel and climbing fiber axons were stimulated using theta-glass electrodes (W.P.I.) and a TTL-controlled stimulus isolator (ISO-Flex, A.M.P.I.). Evoked EPSC amplitudes and decay time constants (one exp. for parallel and two exp. for climbing fibers) were analyzed using custom routines in IgorPro. APs were examined as part of a set of 1 s current injections between –500 and 2250 pA (250 pA steps) with a holding current adjusted to maintain an ~70 mV potential. AP waveforms were measured using custom routines in IgorPro. AP threshold was defined as the first membrane voltage in which the first derivative exceeded 30 mV/ms (Zhu et al., 2006).
 
-## Examination of cerebellar atrophy
+### Examination of cerebellar atrophy
 
-## Cerebellar size
+#### Cerebellar size
 
 Immediately after brain removal from the skull, a dorsal, whole-mount image was obtained. Images were then processed using Fiji (NIH). The forebrain and cerebellar sizes were assessed by outlining their two-dimensional space and then calculating area. We normalized for possible differences in overall brain size by dividing the results of the cerebellum by forebrain size to produce a relative cerebellum-to-forebrain ratio. Experimenters were blind to the genotype of the animal.
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 At the respective study endpoints (P45, P120, P210, and P400), male and female mice of all genotypes represented in this study were anesthetized with isoflurane and underwent transcardial perfusion with phosphate-buffered saline (PBS) followed by 4% (w/v) buffered paraformaldehyde (PFA) and then dissected to extract the brain. Images of the whole brain were taken immediately after removing the brain from the skull and the brains were then submerged in 4% PFA for 24 hr, and then cryoprotected in Tris-buffered saline (TBS) with 0.05% azide and 30% sucrose for 72 hr and stored at 4°C until further use. The cerebellum was separated from the forebrain and parasagittally sectioned using a sliding microtome (Microm HM 430, Thermo Fisher Scientific) set to section at 40 µm thickness. Cerebellum sections were collected in a series of six and stored in TBS-AF (TBS with 30% sucrose, 0.05% sodium azide, and 30% ethylene glycol) at 4°C or –20°C until further use. For immunofluorescent visualization of PNs, cerebellum sections of both Atm+/+; Aptx+/+ and AtmR35X/R35X; Aptx−/− (n=5 per genotype) were washed for 5 min in TBS three times, and then blocked in 15% normal goat serum at room temperature for 30 min followed by free-floating incubation in rabbit or mouse anti-calbindin D-28k (1:1000) for 1 hr at room temperature on an orbital shaker. Sections were then washed for 5 min with TBS three times, followed by free-floating incubation in goat anti-rabbit or mouse Alexa Fluor 488 (1:1000) for 1 hr in the dark at room temperature on an orbital shaker. Following secondary antibody incubation, sections were washed for 5 min in TBS three times, then mounted and cover-slipped with Fluoromount-G with DAPI. For some sections, anti-cleaved Caspase-3 (1:200) and anti-CD68 (1:400) antibodies were additionally probed in parallel with Calbindin using an Alexa Fluor 647 (1:500) secondary antibody. Slides were scanned using Stereo Investigator (MBF Bioscience, ver. 2020) on a Zeiss microscope equipped with an ApoTome 2 (Carl Zeiss Microscopy, Axio Imager.M2) using either a 2.5×, 10×, 20×, 40×, or 63× objective and images were captured with a Hamamatsu CMOS camera (Hamamatsu Photonics, ORCA Flash 4.0 LT+).
 
@@ -252,14 +609,14 @@ For non-fluorescent histological analysis, 25-μm-thick, free-floating tissue se
 
 Experimenters were blinded to the mouse genotype in which sections were examined, and the order of examination was interleaved for all histological measurements.
 
-## Flow cytometry measurements
+### Flow cytometry measurements
 
 Flow cytometry analysis of blood and thymus cells was performed by staining with specific anti-mouse antibodies: CD4, CD8, CD3, CD44, and CD25. Briefly, whole-blood samples (50 μl) were stained using fluorescent-labeled antibodies, then red blood cells were lysed using BD lysing solution while live white blood cells were stained using a viability stain. Thymi were mechanically dissociated. 1–2 million thymus cells were similarly stained using specific antibodies for CD4, CD8, CD44, and CD25. Analysis of immuno-stained white blood cells or thymus samples was performed using FACS ARIA III and data was analyzed using FlowJo software as reported previously (Sanghez et al., 2017).
 
-## Western blots
+### Western blots
 
 Protein extracts (cells/tissues) were homogenized in radioimmunoprecipitation assay (RIPA) lysis buffer (150 mM NaCl, 1% Nonidet P-40 [NP-40], 0.5% deoxycholate, 0.1% SDS, 50 mM Tris, and pH 8.0) with protease inhibitors (10 μg/ml AEBSF, 10 μg/ml leupeptin, 5 μg/ml pepstatin, 5 μg/ml chymotrypsin, and 10 μg/ml aprotinin). The protein extracts were sonicated then pelleted by centrifugation at 13,000 rpm for 15 min at 4°C. BCA protein assay was used to quantify protein concentrations. Samples containing equal amounts of protein 50–100 μg per lane were separated using 4–12% gradient TGX precast gels Bio-Rad then transferred by TransBlot Semi-Dry Bio-Rad system using Nitrocellulose transfer pack. Transferred blots were stained by Ponceau S stain for equal protein loading then washed and blocked with 5% nonfat dry milk in TBST for 60 min at room temperature. Primary antibodies were incubated with shaking overnight at 4°C. Blots were probed for the following antibodies: ATM (D2E2) Rabbit mAb Cell Signaling, at 1:1000 dilution, β-Actin (D6A8) Rabbit mAb Cell Signaling, GAPDH (D16H11) Rabbit mAb Cell Signaling followed by the appropriate horseradish peroxidase-conjugated (HRP) secondary Anti-rabbit, Anti-mouse for 2 hr at room temperature. After multiple washes with TBST, protein expression was detected by Radiance Plus chemiluminescence substrate using the Azure c400 and the Bio-Rad ChemiDoc imaging systems. Densitometric analysis of the ATM was performed using ImageJ. Experiments were performed with 2 technical and 3–5 biological replicates as indicated.
 
-## Statistical assessment
+### Statistical assessment
 
 The number of animals chosen for each group was based on a priori power analyses using GPower v3.1 based on an α size of 0.5, power of 0.8, and effect sizes estimated from preliminary data or prior studies. We used both parametric (one- and two-way ANOVA) for normally distributed and nonparametric (Kruskal-Wallis) statistical methods for interval data to test for differences between groups followed by pairwise multiple comparisons tests as indicated in the text. Outliers for immune data in Figures 6 and 7 were excluded via the ROUT method (Q=2%). The specific analyses used for each data set is noted in each figure legend. For all figures: ns=not significant, * p≤0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data are reported as mean ± SEM and box and whisker plots indicate the minimum, first quartile, median, third quartile, and maximum data values. All figures and statistical analyses were completed using Excel (Microsoft 360) or Prism v8 and 9 (Graphpad).

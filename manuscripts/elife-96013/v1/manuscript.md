@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/024kbgz78 School of Life Sciences, Gwangju Institute of Science and Technology (GIST) Gwangju Republic of Korea
-2. https://ror.org/01zqccq48 Department of Biomedical Science, College of Natural Science, Daegu University Gyeongsan Republic of Korea
-3. https://ror.org/02ks53214 Department of Evolutionary Neuroethology, Max Planck Institute for Chemical Ecology Jena Germany
-4. https://ror.org/02ks53214 Next Generation Insect Chemical Ecology, Max Planck Centre, Max Planck Institute for Chemical Ecology Jena Germany
+1. School of Life Sciences, Gwangju Institute of Science and Technology (GIST) Gwangju Republic of Korea ([ROR:024kbgz78](https://ror.org/024kbgz78))
+2. Department of Biomedical Science, College of Natural Science, Daegu University Gyeongsan Republic of Korea ([ROR:01zqccq48](https://ror.org/01zqccq48))
+3. Department of Evolutionary Neuroethology, Max Planck Institute for Chemical Ecology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
+4. Next Generation Insect Chemical Ecology, Max Planck Centre, Max Planck Institute for Chemical Ecology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
 
 † Corresponding author
 
 ## Abstract
 
-In birds and insects, the female uptakes sperm for a specific duration post-copulation known as the ejaculate holding period (EHP) before expelling unused sperm and the mating plug through sperm ejection. In this study, we found that Drosophila melanogaster females shortens the EHP when incubated with males or mated females shortly after the first mating. This phenomenon, which we termed m ale- i nduced E HP s hortening (MIES), requires Or47b+ olfactory and ppk23+ gustatory neurons, activated by 2-methyltetracosane and 7-tricosene, respectively. These odorants raise cAMP levels in pC1 neurons, responsible for processing male courtship cues and regulating female mating receptivity. Elevated cAMP levels in pC1 neurons reduce EHP and reinstate their responsiveness to male courtship cues, promoting re-mating with faster sperm ejection. This study established MIES as a genetically tractable model of sexual plasticity with a conserved neural mechanism.
+In birds and insects, the female uptakes sperm for a specific duration post-copulation known as the ejaculate holding period (EHP) before expelling unused sperm and the mating plug through sperm ejection. In this study, we found that Drosophila melanogaster females shortens the EHP when incubated with males or mated females shortly after the first mating. This phenomenon, which we termed male-induced EHP shortening (MIES), requires Or47b+ olfactory and ppk23+ gustatory neurons, activated by 2-methyltetracosane and 7-tricosene, respectively. These odorants raise cAMP levels in pC1 neurons, responsible for processing male courtship cues and regulating female mating receptivity. Elevated cAMP levels in pC1 neurons reduce EHP and reinstate their responsiveness to male courtship cues, promoting re-mating with faster sperm ejection. This study established MIES as a genetically tractable model of sexual plasticity with a conserved neural mechanism.
 
 ## Introduction
 
@@ -44,23 +44,31 @@ In this study, we demonstrated that two male pheromones, 2-methyltetracosane (2M
 
 ## Results
 
-## MIES is dependent on olfaction
+### MIES is dependent on olfaction
 
 To investigate the impact of changes in the social-sexual context on the EHP, we compared the EHP of post-mating females isolated from any male presence to those exposed to naive wild-type Canton-S (CS) males immediately after copulation (Figure 1A). Notably, the EHP of females incubated with naive males was approximately 30 min shorter than that of females left in isolation after mating (Figure 1A and B). We refer to this phenomenon as male-induced EHP shortening (MIES). In contrast, little difference in EHP was observed between females incubated with virgin females and those isolated after mating (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the experimental procedure employed to measure male-induced EHP shortening (MIES). Immediately after the end of copulation, the female is incubated with a wild-type Canton-S (CS) male that has not been previously exposed to the female. Typically, w females that are kept alone after mating exhibit an EHP of approximately 90 min, whereas females that are incubated with a naïve 1118CS male exhibit an EHP of approximately 60 min. In this study, we refer to this phenomenon as MIES. (B–F) Normalized EHP or ΔEHP of the females of the indicated genotypes, incubated under the indicated conditions after mating. The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (the leftmost column) from the EHP of individual females in comparison. Mann-Whitney test (n.s. p>0.05; ****p<0.0001). Gray circles indicate the EHP or ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
+**Figure 1.:** (A) Schematic of the experimental procedure employed to measure male-induced EHP shortening (MIES). Immediately after the end of copulation, the female is incubated with a wild-type Canton-S (CS) male that has not been previously exposed to the female. Typically, w1118 females that are kept alone after mating exhibit an EHP of approximately 90 min, whereas females that are incubated with a naïve CS male exhibit an EHP of approximately 60 min. In this study, we refer to this phenomenon as MIES. (B–F) Normalized EHP or ΔEHP of the females of the indicated genotypes, incubated under the indicated conditions after mating. The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (the leftmost column) from the EHP of individual females in comparison. Mann-Whitney test (n.s. p>0.05; ****p<0.0001). Gray circles indicate the EHP or ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
 
 Male fruit flies employ various sensory signals to attract females during courtship (Billeter et al., 2006). To assess the role of the visual signal in MIES, we examined MIES under dim red light conditions and observed that limited illumination had a marginal impact on MIES (Figure 1D). Next, we examined MIES in post-mating females incubated with decapitated CS males. These males could serve as a source of olfactory or gustatory signals, but not for auditory or visual signals. Again, no reduction in MIES was observed (Figure 1E). This strongly suggests that olfactory or gustatory cues are the key signals responsible for MIES. This is further supported by the observation that females deficient in the odorant receptor co-receptor (Orco1) did not exhibit MIES (Figure 1F). Thus, it is highly likely that male odorant(s), especially those detected by olfactory receptors (Or), induce MIES.
 
-## MIES is dependent on the Or47b receptor and Or47b-expressing ORNs
+### MIES is dependent on the Or47b receptor and Or47b-expressing ORNs
 
 In the fruit fly antenna, the trichoid sensilla and their associated ORNs are known to detect sex pheromones (van der Goes van Naters and Carlson, 2007). To investigate the contribution of ORNs located in the trichoid sensilla to MIES, we silenced 11 different ORN groups found in the trichoid and intermediate sensilla (Couto et al., 2005; Lin and Potter, 2015) by expressing either the active or inactive form of tetanus toxin light chain (TNT) (Sweeney et al., 1995). Our results showed that silencing ORNs expressing Or13a, Or19a, Or23a, Or47b, Or65c, Or67d, or Or88a significantly affected MIES (Figure 2—figure supplement 1).
 
 We then focused on the analysis of Or47b-positive ORNs (Figure 2A), which, in contrast to the others, exhibited almost complete abolition of MIES when silenced. Activation of these neurons with the thermogenetic activator dTRPA1 (Hamada et al., 2008) resulted in a significant EHP shortening, even in the absence of male exposure (Figure 2B). Subsequently, we examined whether restoring Orco expression in Or47b ORNs in Orco-deficient females would restore MIES. Our results confirmed that this is indeed the case (Figure 2C). To establish the necessity of the Or47b receptor gene for MIES, we examined Or47b-deficient females (Or47b2/Or47b3) and observed a complete absence of MIES, whereas heterozygous controls exhibited normal MIES (Figure 2D). Furthermore, the reintroduction of Or47b expression in Or47b ORNs of Or47b-deficient females almost completely restored MIES (Figure 2E). Based on these observations, we concluded that MIES depends on the Or47b receptor gene and Or47b-expressing ORNs.
 
-## 2MC induces MIES via Or47b and Or47b ORNs
+![Figure 2.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig2-v1.jpg)
+
+**Figure 2.:** (A, C–E) ΔEHP of females of the indicated genotypes, incubated with or without naive males after mating. The female genotypes are as follows from left to right: (A) control (Or47b>TNTinactive), Or47b ORN silencing (Or47b>TNTactive); (C) Orco mutant (Orco1/Orco1), Orco rescue in Or47b ORNs of Orco mutant (Orco1/Orco1; Or47b>Orco); (D) control 1 (Or47b2/+), control 2 (Or47b3/+), Or47b mutant (Or47b2/Or47b3); (E) Or47b mutant (Or47b2/Or47b2), Or47b rescue (Or47b>Or47b; Or47b2/Or47b2). (B) Thermogenetic activation of Or47b-positive ORNs shortens EHP in females kept alone after mating. The female genotypes are as follows from left to right: control 1 (Or47b-Gal4/+), control 2 (UAS-dTRPA1/+), Or47b>dTRPA1 (Or47b-Gal4/UAS-dTRPA1). Mann-Whitney test (n.s. p>0.05; *p<0.05; **p<0.01; ****p<0.0001). The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (‘-’ in A, C–E) or incubated at 21°C control conditions (B) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. The gray circles with dashed borders indicate ΔEHP values that exceed the axis limits (>90 or <-90 min). Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. EHP, ejaculate holding period. Genotype and sample size are shown in Table 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** ΔEHP of females of the indicated genotypes, incubated with or without naive males immediately after mating. The female genotypes are as follows from left to right:+>TNTactive, Or13a>TNTactive, Or19a>TNTactive, Or23a>TNTactive, Or43a>TNTactive, Or47b>TNTactive, Or65a>TNTactive, Or65b>TNTactive, Or65c>TNTactive, Or67d>TNTactive, Or83c>TNTactive, Or88a>TNTactive. Mann-Whitney test (n.s. p>0.05; *p<0.05; **p<0.01; ***p<0.001). Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (‘-’) from the EHP of individual females in comparison. Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. EHP, ejaculate holding period. Genotype and sample size are shown in Table 1.
+
+### 2MC induces MIES via Or47b and Or47b ORNs
 
 Previous studies have shown that methyl laurate and palmitoleic acid can activate Or47b ORNs only in the presence of a functional Or47b gene (Dweck et al., 2015; Lin et al., 2016). However, in our investigation, none of these odorants induced significant EHP shortening, even when applied at concentrations as high as 1440 ng (Figure 3—figure supplement 1). This prompted us to search for a new pheromone capable of activating Or47b ORNs and thereby shortening the EHP.
 
@@ -68,17 +76,57 @@ Oenocytes produce a significant portion of the CHCs or pheromones. We asked whet
 
 The EHP was therefore measured in females incubated in a small mating chamber containing a piece of filter paper perfumed with male CHCs, including 2-methylhexacosane, 2-methyldocosane, 5-methyltricosane, 7-methyltricosane, 10Z-heneicosene, 9Z-heneicosene, and 2MC at various concentrations (not shown). Among these, 2MC at 750 ng was the only one that significantly reduced EHP (Figure 3A; Figure 3—figure supplement 3). 2MC was mainly found in males, but not in virgin females (Dweck et al., 2015). Notably, it is present in D. melanogaster, D. simulans, D. sechellia, and D. erecta, but not in D. yakuba (Dweck et al., 2015; Wang et al., 2022).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) ΔEHP of females of the indicated genotypes, incubated in solvent vehicle or 2MC. Mated females were incubated with a piece of filter paper perfumed with either vehicle (-) or 750 ng 2MC (+). The female genotypes are as follows: (A) w1118, (B) Orco mutant (Orco1/Orco1), (C) Or47b mutant (Or47b2/Or47b2), (D) Gal4 control (Or47b-Gal4/+; Orco1/Orco1), UAS control (UAS-Orco/+; Orco1/Orco1), Orco rescue in Or47b olfactory receptor neurons (ORN) (Orco1/Orco1; Or47b-Gal4/UAS-Orco). (A–C) Mann-Whitney test (n.s. p>0.05; *p<0.05). (D) One-way analysis of variance (ANOVA) test with Fisher’s LSD multiple comparison (n.s. p>0.05; *p<0.05). Gray circles indicate the ΔEHP of individual females and the mean ± SEM of data is presented. The ΔEHP is calculated by subtracting the mean of the reference EHP of females incubated with vehicle-perfumed paper (the leftmost column in A–C) or the mean of the Gal4 control and UAS control female incubated with vehicle-perfumed paper (the two leftmost columns in D) from the EHP of individual females in comparison. Gray circles with dashed borders indicate ΔEHP values that exceed the axis limits (>90 or <-90 min). Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** ΔEHP of w1118 females incubated with a piece of filter paper perfumed with solvent vehicle or with the indicated amounts of two known Or47b odorant ligands, methyl laurate (A) and trans-palmitoleic acid (B) immediately after mating. Mann-Whitney test (n.s. p>0.05). The ΔEHP is calculated by subtracting the mean of the reference EHP of females incubated with vehicle-perfumed paper (the leftmost column) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean of the EHP differences between vehicle and odorant treatments. Genotype and sample size are shown in Table 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) ΔEHP of w1118 females incubated with males with feminized oenocytes (Oe Fem male; PromE(800)-Gal4/UAS-Tra) or virgin females with masculinized oenocytes (Oe Mas female; PromE(800)-Gal4/UAS-Tra-RNAi). (B) ΔEHP of w1118 females incubated with naive males of the indicated Drosophila species. D. mel (D. melanogaster), D. sim (D. simulans), D. sec (D. sechellia), D. ere (D. erecta), D. yak (D. yakuba). Mann-Whitney test (n.s. p>0.05; ****p<0.0001). The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (the leftmost column) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** ΔEHP of w1118 females incubated with a piece of filter paper perfumed with solvent vehicle or the indicated amounts of 2MC. Mann-Whitney test (n.s. p>0.05; *p<0.05). The ΔEHP is calculated by subtracting the mean of the reference EHP of females incubated with vehicle-perfumed paper (the leftmost column) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean of the EHP differences between vehicle and odorant treatments. Genotype and sample size are shown in Table 1.
+
 Moreover, the 2MC-induced EHP shortening was not observed in Orco- or Or47b-deficient females (Figure 3B and C), but was restored when Orco expression was reinstated in Or47b ORNs in Orco-deficient mutants (Figure 3D). Our behavioral observations strongly suggest that 2MC acts as an odorant ligand for Or47b and shortens the EHP through this receptor.
 
-## 7-T shortens EHP through ppk23 neurons
+### 7-T shortens EHP through ppk23 neurons
 
 In contrast to incubation with virgin females, incubation with mated females resulted in a significant shortening of EHP (Figure 4A). Mated females carry male pheromones, including 7-T and cVA, which are transferred during copulation (Laturney and Billeter, 2016). This raised the possibility that these male pheromones might also induce EHP shortening. Indeed, our experiments revealed that incubation with a piece of filter paper perfumed with 150 ng of 7-T significantly shortened the EHP. Conversely, incubation with cVA and 7-pentacosene, a related CHC, did not produce the same effect (Figure 4B and C; Figure 4—figure supplement 1A, B). The concentrations of 7-T capable of inducing EHP shortening appear to be physiologically relevant. 7-T has been found at levels of 432 ng in males (Scott and Richmond, 1988), 25 ng in virgin females, and 150 ng in mated females (Laturney and Billeter, 2016). Although the receptors for 7-T remain unknown, ppk23-expressing tarsal neurons have been shown to sense these compounds and regulate sexual behavior in males and females (Thistle et al., 2012; Toda et al., 2012; Vijayan et al., 2014). Subsequently, we silenced ppk23 neurons, and as a result, MIES was almost completely abolished, underscoring the pivotal role of 7-T in MIES (Figure 4D). However, DEG/ENac channel genes expressed in ppk23 neurons, including ppk23 and ppk29, were found to be dispensable for MIES (Figure 4—figure supplement 1C–E). This aligns with the previous observations that neither ppk23 deficiency nor ppk28 deficiency recapitulates the sexual behavioral defects caused by silencing ppk23 neurons (Lu et al., 2012).
 
-## The pC1b and c neurons regulate EHP and MIES
+![Figure 4.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) ΔEHP of females of the indicated genotypes, incubated with mated females (A), a piece of filter paper perfumed with 150 ng 7-T (B), 200 ng 11-cis-vaccenyl acetate (cVA) (C), or naive males (D) after mating. The female genotypes are as follows: (A–C) w1118, (D) control (ppk23-Gal4/UAS-TNTinactive), ppk23 silencing (ppk23-Gal4/UAS-TNTactive). (A) Unpaired t-test. (B–D) Mann-Whitney test (n.s. p>0.05; *p<0.05). The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone (‘-’ in A, D) or incubated with vehicle-perfumed paper (the leftmost column in B, C) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. The gray circles with dashed borders indicate ΔEHP values that exceed the axis limits (>90 or <-90 min). Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) ΔEHP of w1118 females incubated with a piece of filter paper perfumed with solvent vehicle or the indicated amounts of 7-T (A), or 7-pentacosene (B) after mating. Incubation with a specific concentration of 7-T significantly shorten EHP, but 7-pentacosene does not. Unpaired t-test (n.s. p>0.05; *p<0.05). (C–E) ΔEHP of females of the indicated genotypes, incubated with or without naive males after mating. The female genotypes are as follows from left to right: (C) control 1 (w1118), control 2 (ppk23-/+), and ppk23- (ppk23-/ppk23-); (D) control 1 (w1118), control 2 (ppk28-/+), and ppk28- (ppk28-/ppk28-); (E) control 1 (w1118), control 2 (ppk29-/+), and ppk29- (ppk29-/ppk29-). Mann-Whitney test (n.s. p>0.05; *p<0.05; **p<0.01; ****p<0.0001). The ΔEHP is calculated by subtracting the mean of the reference EHP of females incubated with vehicle-perfumed paper (the leftmost column in A, B) or kept alone after mating (‘-’ in C–E) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. Genotype and sample size are shown in Table 1.
+
+### The pC1b and c neurons regulate EHP and MIES
 
 The neuropeptide Dh44 determines the timing of sperm ejection or EHP (Lee et al., 2015). The same study found that Dh44 receptor neurons involved in EHP regulation also express doublesex (dsx), which encodes sexually dimorphic transcription factors. A recent study has revealed that pC1 neurons, a specific subgroup of dsx-expressing central neurons in the female brain, do indeed express Dh44 receptors (Kim et al., 2024). With these findings, we set out to investigate the role of pC1 neurons in the regulation of EHP and MIES. The pC1 neurons comprise five distinct subtypes. Of these, the pC1a, b, and c subtypes have been implicated in mating receptivity (Deutsch et al., 2020; Kim et al., 2024), while the remaining pC1d and e subtypes have been implicated in female aggression (Chiu et al., 2023; Deutsch et al., 2020). To investigate the role of these subtypes in EHP, we employed GtACR1, an anion channel activated by blue light in the presence of all trans-retinal (ATR), to silence specific pC1 subtypes immediately after mating. Our experiments revealed that silencing of the pC1 subset comprising the pC1a, b, and c subtypes with GtACR1 led to an increase in EHP (Figure 5A), whereas silencing of the pC1d and e subtypes had a limited effect on EHP (Figure 5B). We further analyzed the roles of pC1b, c neurons along with pC1a neurons separately. We generated a subtype-specific split-Gal4 for pC1a and found that, as expected, silencing pC1a with this split-Gal4 almost completely suppressed mating receptivity (Figure 5—figure supplement 1). However, silencing pC1a alone did not result in increased EHP, suggesting a marginal role of the pC1a subtype in EHP regulation (Figure 5C). In contrast, concomitant silencing of both pC1b and pC1c neurons significantly increased EHP by 56±6.9 min (Figure 5D). At present, we lack the genetic tools to further distinguish the roles of pC1b and pC1c subtypes separately.
 
-## 2MC and 7-T increase cAMP levels in pC1b and c neurons
+![Figure 5.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) The optogenetic silencing of a pC1 neuron subset comprising pC1b and pC1c neurons (pC1b, c) increases EHP. Females of the indicated genotypes were cultured on food with or without all trans-retinal (ATR) after eclosion. The ΔEHP is calculated by subtracting the mean of the reference EHP of females cultured in control ATR - food (the leftmost column) from the EHP of individual females in comparison. The female genotypes are as follows: (A) pC1a,b,c>GtACR1 (pC1-S-Gal4/UAS-GtACR1), (B) pC1d,e>GtACR1 (pC1-A-Gal4/UAS-GtACR1), (C) pC1a>GtACR1 (pC1a-split-Gal4/UAS-GtACR1), and (D) pC1b,c>GtACR1 (Dh44-pC1-Gal4/UAS-GtACR1). Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. The gray circles with dashed borders indicate ΔEHP values that exceed the axis limits (>120 min). Mann-Whitney test (n.s. p>0.05; *p<0.05; ****p<0.0001). Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. (E, F) Relative CRE-luciferase reporter activity of pC1 neurons in females of the indicated genotypes, incubated with a piece of filter paper perfumed with solvent vehicle control or the indicated pheromones immediately after mating. The CRE-luciferase reporter activity of pC1 neurons of Or47b-deficient females (Or47b2/2 or Or47b3/3) was observed to increase in response to 7-T but not to 2MC. To calculate the relative luciferase activity, the average luminescence unit values of the female incubated with the vehicle are set to 100%. Mann-Whitney test (n.s. p>0.05; **p<0.01; ***p<0.001; ****p<0.0001). Gray circles indicate the relative luciferase activity (%) of individual females, and the mean ± SEM of data is presented. Genotype and sample size are shown in Table 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Z-projection confocal images of the brain (A) and VNC (B) of a female carrying pC1a-split-GAL4 and UAS-myrEGFP, stained with anti-EGFP (green) and anti-nc82 (magenta). Scale bars, 50 μm. In the brain, only the pC1a cells are labeled, but in the VNC, several cells are labeled in the abdominal ganglion. (C) An anatomical comparison between pC1a-split-GAL4 neurons (above; pC1a-ss) in the brain and a pC1a neuron (below; NeuPRINT body ID, 5813046951). The panel above shows the maximum intensity projection image (MIP) of an aligned confocal image of the brain from a female carrying pC1a-split-GAL4 and UAS-myrEGFP stained with anti-EGFP and anti-nc82. (D) Mating frequencies of pC1a>GtACR1 (pC1a-split-Gal4/UAS-GtACR1) females during optogenetic silencing, scored as the percentage of females that copulate within 1 hr. Females were cultured on food with or without all trans-retinal (ATR) prior to the mating assay. The optogenetic silencing of pC1a neurons with GtACR1 was observed to suppress mating receptivity almost completely. Chi-square test (****p<0.0001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The relative CRE-luciferase reporter activity of pC1 neurons in females incubated with a piece of filter paper perfumed with the indicated amounts of 2MC (A) and 7-T (B). It is noteworthy that the concentration range within which 2MC or 7-T increases cAMP levels in pC1 neurons is narrow. To calculate the relative luciferase activity, the average luminescence unit values of the female incubated with the vehicle are set to 100%. Gray circles indicate the relative luciferase activity (%) of individual females, and the mean ± SEM of data is presented. Mann-Whitney test (n.s. p>0.05; **p<0.01; ***p<0.001; ****p<0.0001). Genotype and sample size are shown in Table 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The relative CRE-luciferase reporter activity of pC1 neurons in virgin females of the indicated genotypes, incubated with a piece of filter paper perfumed with the indicated odorants. To calculate the relative luciferase activity, the average luminescence unit values of the female incubated with the vehicle are set to 100%. Mann-Whitney test (n.s. p>0.05; **p<0.01; ***p<0.001; ****p<0.0001). Gray circles indicate the relative luciferase activity (%) of individual females, and the mean ± SEM of data is presented. Genotype and sample size are shown in Table 1.
+
+### 2MC and 7-T increase cAMP levels in pC1b and c neurons
 
 Our recent research has shown that pC1 neurons exhibit elevated cAMP levels during sexual maturation, and that this increase in cAMP is closely related to heightened excitability of pC1 neurons (Kim et al., 2024). The same study also showed that a mating signal (i.e. sex peptide in the male seminal fluid) reduces cAMP levels in pC1 neurons. Thus, we hypothesized that male odorants responsible for inducing MIES, such as 2MC or 7-T, would elevate cAMP levels in pC1b, c neurons in newly mated females. This, in turn, would lead to increased excitability of pC1 neurons and, as a consequence, a reduction in the EHP. To monitor cAMP levels in these neurons, we prepared females that express a CRE-luciferase reporter selectively in pC1b, c neurons. Indeed, when exposed to 2MC or 7-T, pC1b, c neurons exhibited a significant increase in CRE-luciferase activity, indicating that these neurons produce higher levels of cAMP in response to these odorants (Figure 5E). Notably, CRE-luciferase activity appeared to peak at specific odorant concentrations that induced significant shortening of the EHP (Figure 5—figure supplement 2).
 
@@ -86,9 +134,17 @@ In contrast, when we examined other pC1 subsets, such as pC1a, and pC1d and e, w
 
 To further test the role of Or47b in 2MC detection, we generated Or47b-deficient females with pC1 neurons expressing the CRE-luciferase reporter. Females with one copy of the wild-type Or47b allele, which served as the control group, showed robust CRE-luciferase reporter activity in response to either 2MC or 7-T. In contrast, Or47b-deficient females showed robust CRE-luciferase activity in response to to 7-T, but little activity in response to 2MC. This observation suggests that the odorant receptor Or47b plays an essential role in the selective detection of 2MC (Figure 5F).
 
-## Elevated cAMP in pC1 neurons shortens the EHP, while increasing re-mating
+### Elevated cAMP in pC1 neurons shortens the EHP, while increasing re-mating
 
 Having shown that MIES-inducing male odorants, 2MC or 7-T, increase cAMP levels in pC1b, c neurons from mated females, we next asked whether this induced elevation of cAMP levels in pC1b, c neurons would shorten EHP, leading to MIES. We employed the photoactivatable adenylate cyclase (PhotoAC), which increases cellular cAMP levels upon exposure to light. Indeed, the induced elevation of cAMP levels in pC1b, c neurons significantly shortened EHP, whereas the same treatment applied to pC1a or pC1d and pC1e had no such effect (Figure 6A). This further underscores the pivotal role of pC1b, c neurons in EHP regulation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig6-v1.jpg)
+
+**Figure 6.:** (A) The optogenetic production of cAMP in the pC1b, c neurons shortens EHP, whereas the same treatment in pC1a or pC1d, e neurons does not. ΔEHP is calculated by subtracting the mean of the reference EHP of females incubated in the control illumination (Dim light), which does not activate a photoactivatable adenylate cyclase (PhotoAC), from the EHP of individual females. Mann-Whitney test (n.s. p>0.05, ****p<0.0001). (B) The optogenetic production of cAMP transiently increases the excitability of pC1 neurons. Left, schematic of the experimental procedure. Right, peak ΔF/F in the LPC projections of pC1 neurons from freshly mated females in response to the pheromone 11-cis-vaccenyl acetate (cVA), before and after photoactivation of PhotoAC expressed in pC1 neurons. The calcium response was measured at specific time points after photoactivation: after 1 min (blue dots and box) or 10 min (purple dots and box) after activation. Repeated measures one-way ANOVA test with the Geisser-Greenhouse correction followed by Tukey’s multiple comparisons test (*p<0.05; ***p<0.001; ****p<0.0001). (C) Left, schematic of the experimental procedure. Right, re-mating rate of females during optogenetic cAMP production in pC1b, c neurons, scored as the percentage of females that copulate with a naive Canton-S (CS) male within 6 hr after the first mating. The female genotypes are as follows: Control (+/UAS-PhotoAC), pC1b,c>UAS-PhotoAC (Dh44-pC1-Gal4/UAS-PhotoAC). Chi-square test (*p<0.05). Genotype and sample size are shown in Table 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96013/elife-96013-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** ΔEHP of females of the indicated genotypes, incubated with or without naive males immediately after mating. The female genotypes are as follows from left to right: Gal4 control (UAS-Dcr2/+; GMR71G01-Gal4/+), UAS control (UAS-Dh44R1-RNAi/+; UAS-Dh44R2-RNAi/+), Dh44R1-RNAi, Dh44R2-RNAi in pC1 (UAS-Dcr2/+; GMR71G01-Gal4/Dh44R1-RNAi; Dh44R2-RNAi/+). Mann-Whitney test (*p<0.05; ***p<0.001; ****p<0.0001). The ΔEHP is calculated by subtracting the mean of the reference EHP of females kept alone after mating (‘-’) from the EHP of individual females in comparison. Gray circles indicate the ΔEHP of individual females, and the mean ± SEM of data is presented. The gray circles with dashed borders indicate ΔEHP values that exceed the axis limits (>120 or <-120 min). Numbers below the horizontal bar represent the mean of the EHP differences between the indicated treatments. EHP, ejaculate holding period. Genotype and sample size are shown in Table 1.
 
 Next, we asked whether the expression of Dh44R1 and Dh44R2, GPCRs that increase cellular cAMP in response to their ligand Dh44, in pC1b, c neurons is necessary for MIES. However, double knockdown of Dh44R1 and Dh44R2 in pC1 neurons seemed to have a limited impact on MIES (Figure 6—figure supplement 1). This suggests that Dh44R signaling in pC1 neurons is not essential for the regulation of EHP or MIES, raising the possibility that other GPCRs may be involved in the upregulation of cAMP levels in pC1 neurons in response to 2MC or 7-T.
 
@@ -118,40 +174,1424 @@ In conclusion, we have identified a circuit that, via the detection of a novel m
 
 ## Materials and methods
 
-## Fly care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Canton S</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>VDRC</td>
+      <td>VDRC #60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R71G01 (pC1-Gal4)</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_39599</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Orco1</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or13a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or19a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9948</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or23a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or43a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9974</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or47b-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9983</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or47b-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9984</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or65a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9993</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or65b-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or65c-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or67d-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9998</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or83c-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or88a-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Or47b</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_76045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or47b2/2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Or47b3/3</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNT active</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_28837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNT inactive</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_28839</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dTRPA1</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_26263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_55135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6m</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_42748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R52G04-AD</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_71085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>SAG-Gal4 (VT50405)</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0489354, VDRC #200652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dh44R1-RNAi</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0482273, VDRC #110708</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dh44R2-RNAi</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0465025, VDRC #43314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dicer2</td>
+      <td>VDRC</td>
+      <td>VDRC #60007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PromE(800)-Gal4</td>
+      <td>Billeter et al., 2009</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FLP, CRE-F-luc</td>
+      <td>Tanenhaus et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-FLP</td>
+      <td>Bussell et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GtACR1</td>
+      <td>Mohammad et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PhotoAC (PACα)</td>
+      <td>Schröder-Lang et al., 2007</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk23-Gal4</td>
+      <td>Thistle et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk23-</td>
+      <td>Thistle et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk28-</td>
+      <td>Thistle et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk29-</td>
+      <td>Thistle et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pC1-A</td>
+      <td>Deutsch et al., 2020</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pC1-S</td>
+      <td>Deutsch et al., 2020</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44-pC1-Gal4</td>
+      <td>Kim et al., 2024</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Orco-Gal4</td>
+      <td>Yu et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-EGFP-Orco</td>
+      <td>Yu et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dsx-DBD</td>
+      <td>Wang et al., 2020</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pC1a-split-Gal4</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila simulans)</td>
+      <td>Drosophila simulans</td>
+      <td>EHIME-Fly, KYORIN-Fly</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila sechellia)</td>
+      <td>Drosophila sechellia</td>
+      <td>EHIME-Fly, KYORIN-Fly</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila erecta)</td>
+      <td>Drosophila erecta</td>
+      <td>EHIME-Fly, KYORIN-Fly</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila yakuba)</td>
+      <td>Drosophila yakuba</td>
+      <td>EHIME-Fly, KYORIN-Fly</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Bruchpilot</td>
+      <td>DSHB</td>
+      <td>Cat# Nc82; RRID:AB_2314866</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Polyclonal Anti-Green Fluorescent Protein (GFP)</td>
+      <td>Thermo Fisher Scientific (Invitrogen)</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-rabbit</td>
+      <td>Thermo Fisher Scientific (Invitrogen)</td>
+      <td>Cat# A-11008, RRID:AB_143165</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 568-conjugated goat anti-mouse</td>
+      <td>Thermo Fisher Scientific (Invitrogen)</td>
+      <td>Cat# A-11004, RRID:AB_2534072</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Photo-curable UV glue</td>
+      <td>ThreeBond</td>
+      <td>A16A01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>All trans-retinal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Vectashield</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Methyl laurate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# W271500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>7(Z)-Tricosene</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 9000313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>trans-palmitoleic acid</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 9001798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>11-cis-vaccenyl acetate (cVA)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10010101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>7(Z)-Pentacosene</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 9000530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Beetle Luciferin, Potassium Salt</td>
+      <td>Promega</td>
+      <td>Cat# E1601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Triton X-100, laboratory grade</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# X100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>2-Methyltetracosane</td>
+      <td>KIP</td>
+      <td>N/A</td>
+      <td>&gt;98%, purity</td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/software/fiji/downloads</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>GraphPad Prism9</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Metamorph software</td>
+      <td>https://www.moleculardevices.com/products/cellular-imaging-systems/acquisition-and-analysis-software/metamorph-microscopy</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Neuronbridge</td>
+      <td>https://neuronbridge.janelia.org/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Computational Morphometry Toolkit (CMTK)</td>
+      <td>https://github.com/jefferis/fiji-cmtk-gui; Jefferis, 2015</td>
+      <td>RRID:SCR_002234 Version number: v0.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>ColorMIP_Mask_Search plugin</td>
+      <td>https://github.com/JaneliaSciComp/ColorMIP_Mask_Search; Otsuna et al., 2020</td>
+      <td>Version number: v1.0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digital camcorder</td>
+      <td>SONY</td>
+      <td>HDR-CX405</td>
+      <td>Behavior recording device</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Smart phone</td>
+      <td>Xiaomi</td>
+      <td>Redmi Note 10</td>
+      <td>Behavior recording device</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multi-channel LED lights</td>
+      <td>NeoPixel</td>
+      <td>Cat# WS2812</td>
+      <td>Light activation device; red light, 620–625 nm, 390–420 mcd; green light, 522–525 nm, 660–720 mcd; blue light, 465–467 nm, 180–200 mcd</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electron-multiplying CCD camera</td>
+      <td>Andor Technology</td>
+      <td>LucaEM R 604M</td>
+      <td>Calcium imaging assay device</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stimulus Controller</td>
+      <td>Syntech</td>
+      <td>Type CS-55</td>
+      <td>Pheromone delivery device</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microplate luminometer</td>
+      <td>Berthold Technologies</td>
+      <td>Centro XS3 LB 960</td>
+      <td>Luciferase assay device</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly care
 
 Flies were cultured on a standard medium composed of dextrose, corn meal, and yeast, at room temperature on a 12 hr:12 hr light:dark cycle (Kim et al., 2023; Lee et al., 2015). Behavioral assays were performed at 25°C, except for the thermogenetic activation experiment with dTRPA1. Virgin males and females were collected immediately after eclosion. Males were aged individually for 4–6 days, while females were aged in groups of 15–20. For EHP and mating assays, females were aged for 3–4 days. Assays were performed at Zeitgeber time 3:00–11:00 and were repeated on at least 3 separate days.
 
-## Fly stocks
+### Fly stocks
 
 The following stocks are from the Bloomington Drosophila Stock Center (BDSC), the Vienna Drosophila Resource Center (VDRC): Canton S (CS) (RRID:BDSC_64349), w1118 (VDRC #60000), R71G01 (pC1-Gal4) (RRID:BDSC_39599), Orco1 (RRID:BDSC_23129), Or13a-Gal4 (RRID:BDSC_9946), Or19a-Gal4 (RRID:BDSC_9948), Or23a-Gal4 (RRID:BDSC_9955), Or43a-Gal4 (RRID:BDSC_9974), Or47b-Gal4 (RRID:BDSC_9983), Or47b-Gal4 (RRID:BDSC_9984), Or65a-Gal4 (RRID:BDSC_9993), Or65b-Gal4 (RRID:BDSC_23901), Or65c-Gal4 (RRID:BDSC_23903), Or67d-Gal4 (RRID:BDSC_9998), Or83c-Gal4 (RRID:BDSC_23131), Or88a-Gal4 (RRID:BDSC_23137), UAS-Or47b (RRID:BDSC_76045), Or47b2/2 (RRID:BDSC_51306), Or47b3/3 (RRID:BDSC_51307), UAS-TNT active (RRID:BDSC_28837), UAS-TNT inactive (RRID:BDSC_28839), UAS-dTRPA1 (RRID:BDSC_26263), UAS-CsChrimson (RRID:BDSC_55135), UAS-GCaMP6m (RRID:BDSC_42748), R52G04-AD (RRID:BDSC_71085), SAG-Gal4 (VT50405) (RRID:Flybase_FBst0489354, VDRC #200652), UAS-Dh44R1-RNAi (RRID:Flybase_FBst0482273, VDRC #110708), UAS-Dh44R2-RNAi (RRID:Flybase_FBst0465025, VDRC #43314), UAS-Dicer2 (VDRC #60007). The following stocks were previously reported: PromE(800)-Gal4 (Billeter et al., 2009), UAS-FLP, CRE-F-luc (Tanenhaus et al., 2012), LexAop-FLP (Bussell et al., 2014), UAS-CsChrimson (Klapoetke et al., 2014), UAS-GtACR1 (Mohammad et al., 2017), UAS-PhotoAC (PACα) (Schröder-Lang et al., 2007), pC1-A (Deutsch et al., 2020), pC1-S (Deutsch et al., 2020), Dh44-pC1-Gal4 (Kim et al., 2024), ppk23-Gal4, ppk23-, ppk28-, ppk29- (Thistle et al., 2012), and Orco-Gal4, UAS-EGFP-Orco (Yu et al., 2018). pC1a-split-Gal4 is generated by combining R52G04-AD (RRID:BDSC_71085) and dsx-DBD (Wang et al., 2020). Drosophila species other than D. melanogaster are obtained from the EHIME-Fly Drosophila Stock Center and the KYORIN-Fly Drosophila Species Stock Center. To enhance knock-down efficiency, RNAi experiments were performed using flies carrying UAS-Dicer2 (VDRC #60007). Table 1 lists the genotypes and number of animals used in all experiments.
 
-## Chemical information
+**Table 1.**
+ Table of D. melanogaster genotypes or Drosophila species used to generate the figures and figure supplements in this paper.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th colspan="3">D. melanogaster genotypes or Drosophila species of</th>
+      <th>N numbers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Tested females</td>
+      <td>Mating partner</td>
+      <td>Incubation partner</td>
+      <td>From left to right</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 1B</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>59, 69</td>
+    </tr>
+    <tr>
+      <td>Figure 1C</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 15</td>
+    </tr>
+    <tr>
+      <td>Figure 1D</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>12, 12</td>
+    </tr>
+    <tr>
+      <td>Figure 1E</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>20, 18, 23</td>
+    </tr>
+    <tr>
+      <td>Figure 1F</td>
+      <td>w[1118]; TI{w[+mW.hs]=TI}Orco[1]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>55, 47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>w[1118];Or47b-Gal4/UAS-TNTinactive(P{UAS-TeTxLC.(-)Q}A2)</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>14, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or47b-Gal4/UAS-TNTactive (P{w[+mC]=UAS-TeTxLC.tnt}E2)</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>16, 18</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>w[1118];Or47b-Gal4/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>28, 31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];;UAS-dTRPA1/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>21, 16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or47b/+;UAS-dTRPA1/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>11, 15</td>
+    </tr>
+    <tr>
+      <td>Figure 2C</td>
+      <td>w[1118]; TI{w[+mW.hs]=TI}Orco [1]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b-Gal4&gt;UAS-EGFP-Orco; Orco[1]/Orco[1]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>13, 14</td>
+    </tr>
+    <tr>
+      <td>Figure 2D</td>
+      <td>w[1118]; Or47b[2]/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>12, 15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b[3]/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>13, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b[2]/Or47b[3]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>13, 12</td>
+    </tr>
+    <tr>
+      <td>Figure 2E</td>
+      <td>w[1118]; Or47b[2]/Or47b[2]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>14, 15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b-Gal4&gt;P{w[+mC]=UAS-Or47b.MYC}2; Or47b[2]/Or47b[2]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>11, 11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3A</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>13, 16</td>
+    </tr>
+    <tr>
+      <td>Figure 3B</td>
+      <td>w[1118]; TI{w[+mW.hs]=TI}Orco[1]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>11, 12</td>
+    </tr>
+    <tr>
+      <td>Figure 3C</td>
+      <td>w[1118]; TI{w[+mW.hs]=TI}Or47b[2]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>14, 17</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>w[1118];Or47b-Gal4/+;Orco[1]/Orco[1]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>22, 22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];UAS-Orco/+; Orco[1]/Orco[1]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>15, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or47b-Gal4/UAS-Orco;Orco[1]/Orco[1]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>18, 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4A</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 22</td>
+    </tr>
+    <tr>
+      <td>Figure 4B</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>23, 31</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>16, 17</td>
+    </tr>
+    <tr>
+      <td>Figure 4D</td>
+      <td>w[1118];ppk23-Gal4/UAS-TNTinactive(P{UAS-TeTxLC.(-)Q}A2)</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];ppk23-Gal4/UAS-TNTactive (P{w[+mC]=UAS-TeTxLC.tnt}E2)</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>17, 17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5A</td>
+      <td>w[1118];pC1(R71G01)-AD/+;Dsx-DBD/UAS-GtACR1</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>22, 21</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>w[1118];VT25602-AD/+;UAS-GtACR1/VT2064-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>18, 18</td>
+    </tr>
+    <tr>
+      <td>Figure 5C</td>
+      <td>w[1118];R52G04-AD/+;UAS-GtACR1/Dsx-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>15, 14</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>w[1118];;Dh44-pC1 (Dsx-DBD, Dh44A-AD)-GAL4/UAS-GtACR1</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>17, 20</td>
+    </tr>
+    <tr>
+      <td>Figure 5E</td>
+      <td>w[1118];UAS-FLP/+; GMR71G01-Gal4, CRE-F-Luc/+</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];R52G04-AD/+;UAS-FLP, CRE-F-Luc/Dsx-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];;UAS-FLP, CRE-F-Luc/Dh44-pC1 (Dsx-DBD, Dh44A-AD)-GAL4</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>16, 16, 16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];VT25602-AD/+;UAS-FLP, CRE-F-Luc/VT2064-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td>Figure 5F</td>
+      <td>w[1118]; Or47b[2]/+; pC1-FLP, CRE-F-Luc</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>8, 8, 8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b[2]/Or47b[2]; pC1-FLP, CRE-F-Luc</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>8, 8, 8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b[3]/+; pC1-FLP, CRE-F-Luc</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>8, 8, 8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; Or47b[3]/Or47b[3]; pC1-FLP, CRE-F-Luc</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>8, 8, 8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6A</td>
+      <td>w[1118]; R52G04-AD/+;UAS-PhotoAC/Dsx-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>18, 22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];;UAS-PhotoAC/Dh44-pC1 (Dsx-DBD, Dh44A-AD)-GAL4</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>22, 28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; VT25602-AD/+;UAS-PhotoAC/VT2064-DBD</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>21, 20</td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>w[1118];UAS-GCaMP6m/+; pC1(GMR71G01)-GAL4/UAS-PhotoAC</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>9, 9, 9</td>
+    </tr>
+    <tr>
+      <td>Figure 6C</td>
+      <td>w[1118];;+/UAS-PhotoAC</td>
+      <td>Canton-S(1st, 2nd)</td>
+      <td></td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];;Dh44-pC1 (Dsx-DBD, Dh44A-AD)-GAL4/UAS-PhotoAC</td>
+      <td>Canton-S(1st, 2nd)</td>
+      <td></td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1</td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>27, 27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or13a-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>9, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2;+/Or19a-Gal4</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>8, 6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2;+/Or23a-Gal4</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>11, 11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2;+/Or43a-Gal4</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2;+/Or47b-Gal4</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>12, 11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or65a-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>13, 16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or65b-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];+/P{w[+mC]=UAS-TeTxLC.tnt}E2;+/Or65c-Gal4</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>20, 18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or67d-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>15, 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or83c-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>20, 17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];Or88a-Gal4/P{w[+mC]=UAS-TeTxLC.tnt}E2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>21, 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1A</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>26, 14, 18, 13</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1B</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>22, 14, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2A</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>+;PromE(800)-Gal4/UAS-Tra</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>+;PromE(800)-Gal4/UAS-Tra-RNAi</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2B</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>D. melanogaster</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>D. simulans</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>D. sechellia</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>D. erecta</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>D. yakuba</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 3</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>18, 18, 14, 17, 15, 13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1A</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>17, 17, 18, 18, 17, 18</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1B</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>15, 15, 15, 16, 14, 15</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1C</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>21, 18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]/ppk23-</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>17, 21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk23-</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>13, 15</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1D</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]/ppk28-</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>23, 25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk28-</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>22, 17</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1E</td>
+      <td>w[1118]</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>17, 14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];ppk29-/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>19, 20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ppk29-</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>16, 17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1A–C</td>
+      <td>w[1118];R52G04-AD/UAS-myrGFP;Dsx-DBD/UAS-myrGFP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1D</td>
+      <td>w[1118];R52G04-AD/+;Dsx-DBD/UAS-GtACR1</td>
+      <td>Canton-S</td>
+      <td></td>
+      <td>82, 60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2A</td>
+      <td>w[1118];UAS-FLP/+; GMR71G01-Gal4, CRE-F-Luc/+</td>
+      <td></td>
+      <td></td>
+      <td>8, 8, 8, 12, 8, 4</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2B</td>
+      <td>w[1118];UAS-FLP/+; GMR71G01-Gal4, CRE-F-Luc/+</td>
+      <td></td>
+      <td></td>
+      <td>8, 8, 8, 12, 8, 4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 3</td>
+      <td>w[1118];UAS-FLP/+; GMR71G01-Gal4, CRE-F-Luc/+</td>
+      <td></td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; R52G04-AD/+;UAS-FLP, CRE-F-Luc/Dsx-DBD</td>
+      <td></td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];;UAS-FLP, CRE-F-Luc/Dh44-pC1 (Dsx-DBD, Dh44A-AD)-GAL4</td>
+      <td></td>
+      <td></td>
+      <td>12, 12, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]; VT25602-AD/+;UAS-FLP, CRE-F-Luc/VT2064-DBD</td>
+      <td></td>
+      <td></td>
+      <td>10, 10, 10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>w[1118]/UAS-Dcr2;;GMR71G01-Gal4/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>27, 26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118];UAS-Dh44R1-RNAi/+; UAS-Dh44R2-RNAi/+</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>18, 17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>w[1118]/UAS-Dicer2;UAS-Dh44R1-RNAi1/+; GMR71G01-GAL4/UAS-Dh44R2-RNAi2</td>
+      <td>Canton-S</td>
+      <td>Canton-S</td>
+      <td>35, 30</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical information
 
 ATR (Cat# R2500), methyl laurate (Cat# W271500), and Triton X-100 (Cat# X100) were obtained from Sigma-Aldrich (St. Louis, MO, USA). The following chemicals were obtained from the Cayman Chemical (Ann Arbor, MI, USA): 7(Z)-Tricosene (CAS No. 52078-42-9, Cat# 9000313), 7(Z)-Pentacosene (CAS No. 63623-49-4, Cat# 9000530), trans-palmitoleic acid (CAS No. 10030-73-6, Cat# 9001798), cVA dissolved in EtOH (CAS No. 6186-98-7, Cat# 10010101). 2MC (>98% purity) was custom-synthesized by KIP (Daejeon, Korea). Ethanol is used as a vehicle for 7-T, cVA, trans-palmitoleic acid, and methyl laurate, while hexane is used as a vehicle for 2MC.
 
-## Behavior assays
+### Behavior assays
 
 For mating behavior assays, we followed the procedures described previously (Yapici et al., 2008). Individual virgin females and naive CS males were paired in 10 mm diameter chambers and were recorded using a digital camcorder (SONY, HDR-CX405 or Xiaomi, Redmi Note 10) for either 30 min or 1 hr for the mating assay and 6 hr for the re-mating assay. In the re-mating assay, females that completed their initial mating within 30 min were subsequently paired with naive CS males.
 
 To measure EHP, defined as the time elapsed between the end of copulation and sperm ejection, we used the following procedure: Virgin females were individually mated with CS males in 10 mm diameter chambers. Following copulation, females were transferred to new chambers, either with or without a CS male or pheromone presentation, and their behavior was recorded using a digital camcorder (SONY, HDR-CX405). Typically, females that completed copulation within 30 min were used for analysis. The sperm ejection scene, in which the female expels a white sac containing sperm and the mating plug through the vulva, was directly observed by eye in the recorded video footage. For pheromone presentation, females were individually housed in 10 mm diameter chambers containing a piece of Whatman filter paper (2 mm × 2 mm) treated with 0.5 μl of the pheromone solution and air-dried for 1 min. For thermogenetic activation experiments, females were incubated at the indicated temperatures immediately after the end of copulation. For light activation experiments, a custom-made light activation setup was used with a ring of 104 multi-channel LED lights (NeoPixel, Cat# WS2812; red light, 620–625 nm, 390–420 mcd; green light, 522–525 nm, 660–720 mcd; blue light, 465–467 nm, 180–200 mcd). Females were individually placed in 10 mm diameter chambers, and the chamber was illuminated with light at an intensity of 1100 lux across the chamber during the assay, as measured by an HS1010 light meter. Flies used in these experiments were prepared by culturing them immediately after eclosion in food containing vehicle (EtOH) or 1 mM ATR. They were kept in complete darkness for 3–4 days until the assay was conducted. To prevent the accumulation of residual pheromones, all behavioral chambers were cleaned with 70% water/ethanol or acetone before and after the experiment.
 
-## Calcium imaging
+### Calcium imaging
 
 We followed the procedures described previously (Kim et al., 2024; Kohatsu and Yamamoto, 2015). Following copulation, freshly mated female flies were temporarily immobilized using ice anesthesia, and their heads were attached to a custom-made thin metal plate with a 1 mm diameter hole using photo-curable UV glue (ThreeBond, A16A01). An opening in the fly’s head was created using a syringe needle under saline (108 mM NaCl, 5 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES pH 7.5). Imaging was performed with a Zeiss Axio Examiner A1 microscope equipped with an electron-multiplying CCD camera (Andor Technology, LucaEM R 604M) and an LED light source (CoolLED, Precis Excite). Metamorph software (Molecular Devices, RRID:SCR_002368) was used for image analysis. The Syntech Stimulus Controller (Type CS-55) was used to deliver the male pheromone using an airflow. 2 μl of pheromone solution was applied to a piece of Whatman filter paper (2 mm × 1 mm), which was then inserted into a glass Pasteur pipette after solvent evaporation.
 
-## Luciferase assay
+### Luciferase assay
 
 We followed the procedures described previously (Kim et al., 2024; Tanenhaus et al., 2012). For the assay, 3-day-old virgin females or freshly mated females were used. A group of three fly heads, kept at –80°C, was homogenized using cold homogenization buffer (15 mM HEPES, 10 mM KCl, 5 mM MgCl2, 0.1 mM EDTA, 0.5 mM EGTA). Luciferase activity was measured using beetle luciferin potassium salt (Promega, Cat# E1603) and a microplate luminometer (Berthold Technologies, Centro XS3 LB 960), following the manufacturer’s instructions. For pheromone presentation, flies were placed in 10 mm diameter chambers containing a piece of Whatman filter paper (4 mm × 6 mm) treated with 1 μl of the pheromone solution and air-dried for 1 min.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 3- to 5-day-old virgin female flies were dissected in phosphate-buffered saline (PBS) and fixed in 4% paraformaldehyde in PBS for 30 min at room temperature. After fixation, the brains were thoroughly washed in PBST (0.1% Triton X-100 in PBS) and then blocked with 5% normal goat serum in PBST. After blocking, brains were incubated with primary antibody in PBST for 48 hr at 4°C, washed with PBST, and then incubated with secondary antibody in PBST for 24 hr at 4°C. The samples were washed three times with PBST and once with PBS before mounting in Vectashield (Vector Laboratories, Cat# H-1000). Antibodies used were rabbit anti-GFP (1:1000; Thermo Fisher Scientific, Cat# A-11122, RRID:AB_221569), mouse anti-nc82 (1:50; Developmental Studies Hybridoma Bank, Cat# Nc82; RRID:AB_2314866), Alexa 488-conjugated goat anti-rabbit (1:1000; Thermo Fisher Scientific, Cat# A-11008, RRID:AB_143165), Alexa 568-conjugated goat anti-mouse (1:1000; Thermo Fisher Scientific, Cat# A-11004, RRID:AB_2534072). Brain images were acquired with a Zeiss LSM 700/Axiovert 200M (Zeiss) and processed with Fiji (https://imagej.net/software/fiji/downloads, RRID:SCR_002285).
 
-## Color depth MIP-based anatomical analysis
+### Color depth MIP-based anatomical analysis
 
 A stack of confocal images of pC1a-split-Gal4>UAS-myr-EGFP adult female brains stained with anti-GFP and anti-nc82 was used. Images were registered to the JRC2018 unisex brain template (Bogovic et al., 2020) using the Computational Morphometry Toolkit (CMTK, https://github.com/jefferis/fiji-cmtk-gui RRID:SCR_002234, v0.1.1). Color depth MIP masks of pC1a-split-Gal4 neurons and pC1a (ID, 5813046951) in Hemibrain (Scheffer et al., 2020; Figure 5—figure supplement 1C) were generated using the ColorMIP_Mask_Search plugin for Fiji (Otsuna et al., 2018; https://github.com/JaneliaSciComp/ColorMIP_Mask_Search) and NeuronBridge (Clements et al., 2022; https://neuronbridge.janelia.org/). Similarity score and rank were calculated using NeuronBridge.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was conducted using GraphPad Prism 9 (GraphPad, RRID:SCR_002798), with specific details of each statistical method provided in the figure legends.

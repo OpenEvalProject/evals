@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02h1nk258 Max Planck Institute for Brain Research Frankfurt Germany
+1. Max Planck Institute for Brain Research Frankfurt Germany ([ROR:02h1nk258](https://ror.org/02h1nk258))
 
 † Corresponding author
 
 ## Abstract
 
-Cephalopod chromatophores are small dermal neuromuscular organs, each consisting of a pigment-containing cell and 10–20 surrounding radial muscles. Their expansions and contractions, controlled and coordinated by the brain, are used to modify the animal’s appearance during camouflaging and signaling. Building up on tools developed by this lab, we propose a flexible computational pipeline to track and analyze chromatophore dynamics from high-resolution videos of behaving cephalopods. This suite of functions, which we call CHROMAS, segments and classifies individual chromatophores, compensates for animal movements and skin deformations, thus enabling precise and parallel measurements of chromatophore dynamics and long-term tracking over development. A high-resolution tool for the analysis of chromatophore deformations during behavior reveals details of their motor control and thus, their likely innervation. When applied to many chromatophores simultaneously and combined with statistical and clustering tools, this analysis reveals the complex and distributed nature of the chromatophore motor units. We apply CHROMAS to the skins of the bobtail squid Euprymna berryi and the European cuttlefish Sepia officinalis , illustrating its performance with species with widely different chromatophore densities and patterning behaviors. More generally, CHROMAS offers many flexible and easily reconfigured tools to quantify the dynamics of pixelated biological patterns.
+Cephalopod chromatophores are small dermal neuromuscular organs, each consisting of a pigment-containing cell and 10–20 surrounding radial muscles. Their expansions and contractions, controlled and coordinated by the brain, are used to modify the animal’s appearance during camouflaging and signaling. Building up on tools developed by this lab, we propose a flexible computational pipeline to track and analyze chromatophore dynamics from high-resolution videos of behaving cephalopods. This suite of functions, which we call CHROMAS, segments and classifies individual chromatophores, compensates for animal movements and skin deformations, thus enabling precise and parallel measurements of chromatophore dynamics and long-term tracking over development. A high-resolution tool for the analysis of chromatophore deformations during behavior reveals details of their motor control and thus, their likely innervation. When applied to many chromatophores simultaneously and combined with statistical and clustering tools, this analysis reveals the complex and distributed nature of the chromatophore motor units. We apply CHROMAS to the skins of the bobtail squid Euprymna berryi and the European cuttlefish Sepia officinalis, illustrating its performance with species with widely different chromatophore densities and patterning behaviors. More generally, CHROMAS offers many flexible and easily reconfigured tools to quantify the dynamics of pixelated biological patterns.
 
 ## Introduction
 
@@ -27,15 +27,15 @@ This laboratory recently developed automated and quantitative approaches to circ
 
 CHROMAS reads video files and extracts chromatophore properties based on known biological features, derived from prior experimental work.
 
-## Identity and position
+### Identity and position
 
 The relative spatial arrangement of chromatophores is anatomically fixed in the skin (Packard, 1982) because they are anchored to a stable and appropriately stiff extracellular matrix. Their neighboring chromatophores, however, change as the animal grows, because new chromatophores are continuously added between older ones and change color as they age (Reiter et al., 2018). CHROMAS keeps track of chromatophore identity over time despite these changes.
 
-## Expansion state
+### Expansion state
 
 When radial muscles (attached distally to the extracellular matrix and proximally to a chromatophore) contract, the chromatophore’s cytoplasmic membrane and internal pigment sack expand; inversely, when those muscles relax, the pigment sack retracts passively due to its elasticity. Because the chromatophore muscles are controlled by motor neurons (Florey and Kriebel, 1969), chromatophore size variations offer an indirect but objective and quantifiable readout of neural activity (Reiter et al., 2018) at video sampling rate.
 
-## Anisotropy of expansion and detailed innervation
+### Anisotropy of expansion and detailed innervation
 
 The radial muscles controlling a chromatophore can collectively be innervated by more than one motor neuron (Florey, 1969). Chromatophore expansion is then determined by a set of potentially independent forces, which can result in irregular or anisotropic chromatophore deformations. Analysis of this anisotropy can thus inform us of the fine innervation of individual chromatophores. CHROMAS provides this information.
 
@@ -75,11 +75,11 @@ CHROMAS provides a versatile framework to investigate a wide range of biological
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/106509/elife-106509-fig8-v1.jpg)
 
-**Figure 8.:** 0 = 7 days post hatching (dph) and t1 = 21 dph).During this time, the number of chromatophores nearly doubled, with many changing chromatic properties. Despite these changes and intermittent filming, our pipeline reliably tracks individual chromatophores, as illustrated with two arbitrarily selected chromatophores, in blue and green.
+**Figure 8.:** During this time, the number of chromatophores nearly doubled, with many changing chromatic properties. Despite these changes and intermittent filming, our pipeline reliably tracks individual chromatophores, as illustrated with two arbitrarily selected chromatophores, in blue and green.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/106509/elife-106509-fig9-v1.jpg)
 
-**Figure 9.:** Sepia officinalis processed through the CHROMAS pipeline.(a1, a2) Original video frame. (b1, b2) Binary segmentation with chromatophores in black and background in white. (c1, c2) Epicenters of chromatophores in blue and motion markers with triangulation in green. (d1, d2) Putative motor units calculated using the Affinity Propagation algorithm. In this example, Principal Component Analysis–Independent Component Analysis (PCA–ICA) revealed independent components influencing the activity of each chromatophore. We found 4.68 ± 1.41 (mean ± std) ICs per chromatophore (n = 1616). Those independent components were then clustered together based on their covariation and plotted with the same color. For visualization purposes, only clusters of size 8 and 9 are plotted. In this segment, we found 10.37 ± 14.23 (mean ± std) chromatophores per cluster, with 90% of clusters consisting of less than 20 chromatophores. This example highlights CHROMAS’s ability to process complex datasets, such as footage of Sepia officinalis, which exhibits a high density of chromatophores and very active dynamics correlated with its camouflage and other behaviors.
+**Figure 9.:** (a1, a2) Original video frame. (b1, b2) Binary segmentation with chromatophores in black and background in white. (c1, c2) Epicenters of chromatophores in blue and motion markers with triangulation in green. (d1, d2) Putative motor units calculated using the Affinity Propagation algorithm. In this example, Principal Component Analysis–Independent Component Analysis (PCA–ICA) revealed independent components influencing the activity of each chromatophore. We found 4.68 ± 1.41 (mean ± std) ICs per chromatophore (n = 1616). Those independent components were then clustered together based on their covariation and plotted with the same color. For visualization purposes, only clusters of size 8 and 9 are plotted. In this segment, we found 10.37 ± 14.23 (mean ± std) chromatophores per cluster, with 90% of clusters consisting of less than 20 chromatophores. This example highlights CHROMAS’s ability to process complex datasets, such as footage of Sepia officinalis, which exhibits a high density of chromatophores and very active dynamics correlated with its camouflage and other behaviors.
 
 We provide a comprehensive tutorial guide along with sample video files to test the pipeline. Links to these resources are available in the ‘Data availability’ section. The entire pipeline can be run with the command below, and individual task command lines are included as each step of the pipeline is detailed.
 
@@ -87,7 +87,7 @@ Command line:
 
 > chromas run /path/to/example.mp4
 
-## Chunking videos into usable segments
+### Chunking videos into usable segments
 
 Analyzing long video recordings of behaving-cephalopod skin can be frustrating because of occasional movement blur, de-focusing, and obstruction. To address this, we divide the video into continuous segments which we call ‘chunks’, consisting of consecutive frames where the animal’s mantle, or a part of it, is both visible and in focus. An animal, or a field, is considered to be in focus if the edges of its chromatophores are clearly defined. The identification of these chunks can be accomplished using focus statistics, which are numerical measures indicative of the sharpness of an image (Figure 2, focus score). A method often used is the difference of Gaussians, which involves subtracting a blurred version of an image (produced by convolving the image with a Gaussian kernel with a large standard deviation) from a less blurred version of the original image (using a smaller standard deviation). The resulting image emphasizes areas of steep intensity change, such as edges, while suppressing low-frequency variations, making it well suited for detecting the sharp boundaries of chromatophores. The standard deviations of the two Gaussian kernels were chosen such that their difference matched the typical size of chromatophores, to increase the visibility of their edges. The input video is then cut into shorter clips—the chunks (Figure 2, chunking output). This step can be adapted to exclude other types of unwanted frames based on other parameters, such as low brightness, the absence of a fluorescent tag in the frame, or motion blur.
 
@@ -95,7 +95,7 @@ Command line:
 
 > chromas chunk /path/to/example.mp4
 
-## Chromatophore segmentation and color classification
+### Chromatophore segmentation and color classification
 
 It is essential to identify and isolate individual chromatophores accurately in video frames before a detailed analysis can begin. ‘Segmentation’ refers to the process of generating a binarized image, where each pixel is classified as either part of a chromatophore or part of the background (Figure 3). Chromatophore classification by color is also supported. Segmentation relies on deep learning models trained on manually annotated data. We provide two trained models: one for binary (yes, no) and one for chromatophore-color segmentation (dark, orange, yellow), trained on annotated data of S. officinalis and E. berryi under different lighting conditions and camera setups. Furthermore, these models can be fine-tuned on custom data, and various models can be trained from scratch on custom data to enable research on different species. Available models include Fully Convolutional Networks (Long et al., 2015), DeepLabV3 (Chen et al., 2017), or U-Net (Ronneberger et al., 2015), with ResNet50, ResNet101 (He et al., 2016), or MobileNetv3-Large (Howard et al., 2019) serving as backbones. Alternatively, segmentation can also be achieved by a random forest classifier or a combination of both, followed by ‘majority vote’.
 
@@ -103,7 +103,7 @@ Command line:
 
 > chromas segment /path/to/example.dataset
 
-## Compensating for movement: Registration
+### Compensating for movement: Registration
 
 To measure a chromatophore’s activity (deformations), its identity must be correctly transferred across frames; this is a difficult task if its coordinates change from frame to frame. Chunk selection ensures that video segments with blur due to rapid motion have been excluded from the data. However, chromatophores often change position from one frame to another due to slower or more subtle movements such as breathing, slow drifting, or skin deformation, while remaining in focus. Therefore, what we call the ‘Registration’ operation compensates for the animal’s movements to maintain a consistent location of individual chromatophores over time. For this, the Lucas–Kanade optical flow algorithm (Lucas and Kanade, 1981) tracks points that are initially randomly sampled on the first frame, from frame to frame. Full displacement maps are then interpolated from the displacement of these tracking points using a moving-least-squares algorithm. This results in all the frames being registered with the first frame of the video as reference (Figure 4). To ensure accurate registration, tracking points that move implausibly far between frames are automatically discarded, and the registration process is halted if too many points are lost, preventing poor-quality mappings from being used in the analysis pipeline.
 
@@ -111,7 +111,7 @@ Command line:
 
 > chromas register/path/to/example.dataset
 
-## Stitching across video chunks
+### Stitching across video chunks
 
 To create a cohesive dataset, the correct identity of each chromatophore must be tracked across chunks. The absence of visual information between chunks (by definition of the chunks), however, renders standard optical flow techniques unsuitable for this task. A new technique was developed for this end involving the following steps. All registered frames within a chunk are averaged to produce a descriptive image of the position and color of each chromatophore. This average is referred to as the ‘masterframe’ of that chunk (Figure 5a, without the ellipse). If the animal’s body is fully visible, an initial alignment of the masterframes of successive chunks is achieved through automatic ellipse fitting around the animal’s silhouette (Figure 5a–c). Otherwise, alignment is performed after the user manually selects matching points between masterframes. Subsequently, displacement vectors are calculated for a regular grid of points sampled over the animal’s body by maximizing phase correlation between image patches surrounding these points (Figure 5b–d). Full displacement maps are then interpolated using a moving-least-squares algorithm. The accuracy of these mappings is quantified using the reprojection error metric, as detailed in the methods section, and chunks with high reprojection error are excluded from further analysis.
 
@@ -119,7 +119,7 @@ Command line:
 
 > chromas stitch /path/to/example.dataset
 
-## Tracking chromatophore size
+### Tracking chromatophore size
 
 Now that the chromatophores have been aligned across frames and chunks, their identity can be tracked and their expansion quantified (Figure 6a). First, a 2D array, termed ‘Cleanqueen’, is generated, that delineates individual chromatophore territories, that is, the space that each chromatophore can occupy (Figure 6b). Using inverse registration maps, the cleanqueen is mapped onto the unregistered segmentation frames and the identity of each chromatophore can be tracked. The area of each chromatophore is then calculated as the number of pixels forming the largest connected component inside the chromatophore’s corresponding territory (Figure 6c).
 
@@ -127,21 +127,21 @@ Command line:
 
 > chromas area /path/to/example.dataset
 
-## Tracking anisotropic chromatophore activity
+### Tracking anisotropic chromatophore activity
 
 For most uses, analysis of the global chromatophore expansion is sufficient. There exist conditions, however, where a high-resolution analysis of chromatophore deformations is useful. We will show that it can reveal the multiple innervation of individual chromatophores and the fine and distributed nature of motor units.
 
 Quantifying the kinematics of an ever-changing shape on a surface which is also subject to deformations is not a trivial task. Whereas chromatophores can be viewed as monochromatic objects that change shape over time, they reside on a surface (the skin) that itself undergoes both local and global deformations, such as mantle muscle contractions or movements caused by breathing, locomotion, or external forces such as water currents. Therefore, an accurate description of the kinematics of a chromatophore can be done only once it has been disentangled from the distortions of the skin. We thus addressed the need to accurately stabilize (i.e., compensate for the movements and deformations of) the background. Registration maps were not suitable for this task, because an optic flow approach would try to correct for chromatophore expansion. We thus developed a different type of registration. This step takes advantage of the fact that the 2D configuration of chromatophores in their most contracted state tends to be fixed in space. The center of mass of chromatophores that remain small and constant in size throughout the video (typically, chromatophores at early or intermediate stages of development, Reiter et al., 2018) can thus be viewed as inert points on the animal’s skin, and their displacement over frames can then be used to derive skin deformation. We call these points ‘motion markers’. Once this operation has been accomplished, the details of a chromatophore’s deformations can be obtained.
 
-To quantify these deformations, each chromatophore is divided into radial slices, and the area within each slice is calculated independently (Figure 7a). To slice a chromatophore radially, its ‘epicenter’ (the starting point of its expansion, blue dots in Figure 7a–c), must be identified and tracked over frames. This point cannot be the center of mass of the chromatophore, because anisotropic deformations would wrongly shift this point between frames. Instead, a chromatophore’s epicenter is computed following the logic of the previous paragraph: it is calculated as the center of mass at the frame where the chromatophore is in its most contracted state. Because the spatial relationships between epicenters are constant in time, their coordinates can be stored relative to the coordinates of their respective motion markers (Figure 7c, green dots), that is the three nearest motion markers spanning a triangle around the chromatophore in a Delaunay triangulation (Figure 7c, green triangles represent the Delaunay triangulation). Relative coordinates are stored as barycentric coordinates (λ1,λ2,λ3)∈R3\begin{document}$(\lambda _{1},\lambda _{2},\lambda _{3})\in R^{3}$\end{document}, such that the absolute coordinates c\begin{document}$c$\end{document} of the epicenters can be calculated as c=λ1⋅a1+λ2⋅a2+λ3⋅a3\begin{document}$c=\lambda _{1}\cdot a_{1}+\lambda _{2}\cdot a_{2}+\lambda _{3}\cdot a_{3}$\end{document} from the absolute coordinates a1,a2,a3\begin{document}$a_{1},a_{2},a_{3}$\end{document} of their motion markers. The combination of these local coordinate systems, along with a sufficiently dense distribution of motion markers, enables us to eliminate the global and local deformations of the skin and to successfully track the positions of all epicenters. In addition, the motion markers are used to keep the orientation of the slices constant over frames, which is necessary to track the identity of each slice.
+To quantify these deformations, each chromatophore is divided into radial slices, and the area within each slice is calculated independently (Figure 7a). To slice a chromatophore radially, its ‘epicenter’ (the starting point of its expansion, blue dots in Figure 7a–c), must be identified and tracked over frames. This point cannot be the center of mass of the chromatophore, because anisotropic deformations would wrongly shift this point between frames. Instead, a chromatophore’s epicenter is computed following the logic of the previous paragraph: it is calculated as the center of mass at the frame where the chromatophore is in its most contracted state. Because the spatial relationships between epicenters are constant in time, their coordinates can be stored relative to the coordinates of their respective motion markers (Figure 7c, green dots), that is the three nearest motion markers spanning a triangle around the chromatophore in a Delaunay triangulation (Figure 7c, green triangles represent the Delaunay triangulation). Relative coordinates are stored as barycentric coordinates $(\lambda_{1},\lambda_{2},\lambda_{3})\inR^{3}$, such that the absolute coordinates $c$ of the epicenters can be calculated as $c=\lambda_{1}⋅a_{1}+\lambda_{2}⋅a_{2}+\lambda_{3}⋅a_{3}$ from the absolute coordinates $a_{1},a_{2},a_{3}$ of their motion markers. The combination of these local coordinate systems, along with a sufficiently dense distribution of motion markers, enables us to eliminate the global and local deformations of the skin and to successfully track the positions of all epicenters. In addition, the motion markers are used to keep the orientation of the slices constant over frames, which is necessary to track the identity of each slice.
 
-By default, chromatophores are sliced into 36 sectors. This number was selected based on the Nyquist–Shannon sampling theorem (Shannon, 1948), and on histological analysis showing that chromatophores in E. berryi and S. officinalis are each controlled by approximately 10–15 radial muscles. This number of slices struck an acceptable balance, ensuring a high enough resolution to capture realistic shape changes, while keeping computational demands manageable. To reduce measurement errors induced by pixel discretization, slice areas were computed by averaging the distance from the border pixels of the slice to the epicenter r and then computing the respective area as area=π⋅r2/n\begin{document}$area=\pi \cdot r^{2}/n$\end{document}, see Figure 7b.
+By default, chromatophores are sliced into 36 sectors. This number was selected based on the Nyquist–Shannon sampling theorem (Shannon, 1948), and on histological analysis showing that chromatophores in E. berryi and S. officinalis are each controlled by approximately 10–15 radial muscles. This number of slices struck an acceptable balance, ensuring a high enough resolution to capture realistic shape changes, while keeping computational demands manageable. To reduce measurement errors induced by pixel discretization, slice areas were computed by averaging the distance from the border pixels of the slice to the epicenter r and then computing the respective area as $area=\pi⋅r^{2}/n$, see Figure 7b.
 
 Command line:
 
 > chromas slice /path/to/example.dataset
 
-## Long-term chromatophore tracking
+### Long-term chromatophore tracking
 
 Tracking individual chromatophores over extended periods (days or weeks) is necessary to examine, among others, functional and developmental issues of control. While standard stitching techniques (see ‘Stitching’) suffice for datasets captured in close temporal proximity (hours), they fail for longer time periods, due to significant changes in animal size, chromatophores color, chromatophore numbers, and occasionally the disappearance of existing ones.
 
@@ -151,7 +151,7 @@ Command line:
 
 > chromas superstitch /path/to/example.dataset /path/to/later_example.dataset
 
-## Built-in analysis tools and additional features
+### Built-in analysis tools and additional features
 
 CHROMAS also offers a series of built-in analysis tools. Clustering algorithms, for example, are particularly useful to study how motor neurons control small groups of chromatophores, or sets of sectors of chromatophores, potentially revealing patterns of co-innervation and synchronized activity across specific regions of the skin. Our software enables users to perform Principal Component Analysis (PCA), Independent Component Analysis (ICA), and clustering analysis, including, but not limited to, Affinity Propagation (AP) and Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN). PCA and ICA are instrumental in disentangling the influence of motor neurons on individual chromatophores, while clustering algorithms uncover the broader distribution of motor neuron influence across larger scales (Figure 9). Such tools can be found under ‘Methods—Clustering motion correlation’.
 
@@ -161,11 +161,89 @@ Command line:
 
 > chromas analyse XXX /path/to/example.dataset
 
-## Performance
+### Performance
 
 Performance was benchmarked using a 5-min-long 4K video (shot at 20 frames per second, totaling 6000 frames and 494.5 MB) featuring a close-up view of live skin of S. officinalis. The benchmark also included two modified versions of the same video, cropped to Full-HD (2000 × 2000) and SD (1000 × 1000) resolutions. Cropped videos preserve the original pixel density per chromatophore but include fewer chromatophores for analysis.
 
 Tables 1 and 2 document the processing time per frame (in milliseconds) for individual tasks, based on different image sizes and hardware configurations. The hardware categories include a workstation (with a 10-core Intel Core i9-10900X with 64 GB RAM and a NVIDIA RTX A4000 GPU), as well as a laptop (with a 4-core Intel Core i5-1135G7 with 16 GB RAM and no NVIDIA GPU).
+
+**Table 1.**
+ Performance on a workstation with a 10-core Intel Core i9-10900X with 64 GB RAM and a NVIDIA RTX A4000 GPU.Runtime in milliseconds per frame (mean ± s.d.).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resolution</th>
+      <th>Number of chromatophores (ms/frame)</th>
+      <th>Segmentation(neural net) (ms/frame)</th>
+      <th>Registration (ms/frame)</th>
+      <th>Tracking chromatophore size (ms/frame)</th>
+      <th>Tracking anisotropic activity (ms/frame)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SD</td>
+      <td>146</td>
+      <td>5.38 ± 0.1</td>
+      <td>18.61 ± 0.1</td>
+      <td>13.01 ± 1.4</td>
+      <td>4.98 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>HD</td>
+      <td>566</td>
+      <td>22.31 ± 0.7</td>
+      <td>62.87 ± 2.3</td>
+      <td>140.44 ± 1.0</td>
+      <td>135.24 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>2842</td>
+      <td>986.21 ± 10.4</td>
+      <td>611.74 ± 5.4</td>
+      <td>744.69 ± 2.5</td>
+      <td>495.17 ± 2.8</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Performance on a laptop with a 4-core Intel Core i5-1135G7 with 16 GB RAM and no NVIDIA GPU.Runtime in milliseconds per frame (mean ± s.d.).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resolution</th>
+      <th>Number of chromatophores (ms/frame)</th>
+      <th>Segmentation(lookup) (ms/frame)</th>
+      <th>Registration (ms/frame)</th>
+      <th>Tracking chromatophore size (ms/frame)</th>
+      <th>Tracking anisotropic activity (ms/frame)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SD</td>
+      <td>146</td>
+      <td>11.55 ± 1.81</td>
+      <td>4.67 ± 0.63</td>
+      <td>14.56 ± 5.1</td>
+      <td>9.31 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>4k</td>
+      <td>2842</td>
+      <td>1679.62 ± 251.8</td>
+      <td>1490.94 ± 249.9</td>
+      <td>3072.94 ± 121.6</td>
+      <td>1488.25 ± 84.0</td>
+    </tr>
+  </tbody>
+</table>
 
 While the runtime performance of all tasks (except for stitching) is influenced by hardware capabilities, video length, and resolution (in this particular order), the performance of areas and slice-areas calculation and analysis is also influenced by the number of visible chromatophores in the footage. Furthermore, the performance of stitching depends only on the hardware, the resolution, and the number of chunks.
 
@@ -177,11 +255,11 @@ First, our results achieve high levels of spatial resolution. Indeed, our anisot
 
 Second, our semi-automatic methods for tracking chromatophore identity overcome key challenges in long-term monitoring, the biggest one of which is the continuous addition of new chromatophores as the animal develops. This development enables the tracking of chromatophores over very long times (weeks to months), thus spanning the entire lifespan of an animal.
 
-## Scalability
+### Scalability
 
 Tasks within CHROMAS are designed for efficient parallelization. This enables scaling to the full capacity of single machines as well as execution on high-performance supercomputers. In addition, ‘larger-than-memory’ execution is supported, allowing for the processing of datasets whose size exceeds the available RAM (e.g., with 8K-resolution images). CHROMAS uses an approach to parallelization that does not depend on the hardware, ensuring code maintainability and versatility. This design allows the same script to run efficiently on various hardware configurations, from single-core machines to multi-core systems and clusters. Tasks are parallelized along multiple axes (chunk-based, temporal, and spatial). While temporal parallelization is mainly used, some tasks (segmentation, registration, areas, slice areas) are parallelized along the spatial dimensions as well. For cluster-level parallelization, initial setup on the cluster is required. CHROMAS supports most high-performance computing job schedulers found in scientific research environments, such as SLURM, SGE, TORQUE, LSF, DRMAA, and PBS. Hence, the spatial scale and temporal resolution of our analyses are bound less by the capabilities of CHROMAS than by the quality of the image data and the available computational power.
 
-## Usability
+### Usability
 
 CHROMAS can operate in four distinct modes, adapted to user needs. The software can be controlled by a graphical user interface (GUI), enabling quick and easy operation without programming knowledge and widening the pool of potential users. It can also be controlled by a command line interface, offering additional flexibility as well as automation and scripting capabilities. We provide an extensive low-level application programming interface, enabling custom workflows, integration with external tools, and the development of extensions. Last, we provide Jupyter notebooks facilitating interactive data analysis for common use cases.
 
@@ -189,31 +267,31 @@ The software can be installed either via the PyPI package manager, through the e
 
 Both high-level parameters, like algorithmic choices or storage configurations, and lower-level parameters, like concrete parameters of algorithms, are configured for ease of use within a single YAML file, which can also be modified through the GUI.
 
-## Known limitations
+### Known limitations
 
 CHROMAS analyzes the activity of chromatophores by dividing the mantle into small mosaics (in the ‘cleanqueen’), where each chromatophore is assigned its own territory. Because these territories are discrete—they belong to only one chromatophore at a time—there can be species, ages, and conditions in which the chromatophores expand so much that they encroach on each other’s space and overlap partly. Currently, our software is not able to resolve these overlaps.
 
 Another known limitation concerns the biological assumptions underlying the current version of CHROMAS. The pipeline is designed for surfaces that remain reasonably planar and undergo deformations primarily in two dimensions. In cephalopods such as octopuses, in which the skin can undergo substantial three-dimensional morphological changes, analyzing chromatophore dynamics may require complementary three-dimensional tracking of the skin surface to correct for out-of-plane deformations and maintain accurate measurement of chromatophore activity.
 
-## Recommended video parameters for optimal use of CHROMAS
+### Recommended video parameters for optimal use of CHROMAS
 
 The performance of CHROMAS depends on the quality of the input videos. Although the pipeline analyzes each frame independently and has no frame rate requirement, we recommend recording at 20 frames per second at least, to capture chromatophore dynamics accurately. Sharp, in-focus frames are critical, particularly for moving subjects, where higher shutter speeds help minimize motion blur. For reliable segmentation, each chromatophore should cover at least 10 pixels across its fully expanded diameter. Higher spatial resolution, with chromatophores covering around 50 pixels in diameter, is recommended if sub-chromatophore dynamics are of interest. Recording conditions should minimize background noise, and the water column should be as clear as possible, free of particles or debris. The water surface should be kept as calm and planar as possible to avoid optical artifacts. If wide-angle lenses or other optics that may introduce distortion are used, lens correction algorithms should be applied during preprocessing to compensate for the optical distortions. For long-term tracking applications (e.g., developmental studies), frequent imaging sessions are recommended. Newly differentiated chromatophores are initially light colored (e.g., yellow) and thus visually distinct from mature chromatophores (which are dark); over days to weeks, however, the light chromatophores darken and become increasingly difficult to differentiate from older ones. Recording at appropriate and regular intervals thus helps track individual chromatophores across developmental stages and improves the reliability of long-term analyses. Following these recommendations will help segmentation, tracking, and analysis with CHROMAS.
 
 ## Methods
 
-## Implementation details
+### Implementation details
 
 CHROMAS is written for GNU/Linux, Windows, and MacOS operating systems in the Python programming language, requiring Python 3.9 or higher. The software relies on several key libraries for various functionalities. NumPy (Harris et al., 2020), SciPy (Virtanen et al., 2020), pandas (McKinney, 2010), and xarray (Hoyer and Hamman, 2017) are used for most of the numerical computations, utilizing labeled multi-dimensional arrays. Dask (Rocklin, 2015; Dask Development Team, 2016) is used for parallel computing and distributed task scheduling. Image processing and computer vision tasks are performed using OpenCV (Bradski, 2000), scikit-image (van der Walt et al., 2014), and decord (Howard et al., 2019) for efficient video decoding. scikit-learn (Pedregosa et al., 2011) is used for data preprocessing, classification models and clustering, PyTorch (Paszke et al., 2019) and torchvision (Marcel and Rodriguez, 2010) for deep-learning-based segmentation models, and albumentations (Buslaev et al., 2020) for image augmentation used in the training of these models. Visualization is accomplished using Matplotlib (Hunter, 2007) for creating static, animated, and interactive visualizations, and Bokeh (Bokeh Development Team, 2014) for interactive dashboards visualizing computations. Data storage is performed using Zarr (Miles et al., 2020) for chunked, compressed, N-dimensional arrays. This allows for efficient storage and access of large, chunked, and compressed N-dimensional arrays. The command-line interface is created using Click (Ronacher, 2014), while tqdm (tqdm Developers, 2016) provides progress bar functionality and the TUI is built using Trogon (Freeman, 2022). Documentation is generated using Sphinx (Sphinx Team, 2007). nbsphinx (Grünwald, 2017) is used to include Jupyter notebooks in the documentation, with jupyter-client and ipykernel providing Jupyter notebook support (Jupyter Development Team, 2015). Pandoc (MacFarlane, 2006) is used for document conversion and rpy2 (Gautier, 2008) is used for exporting data in R formats.
 
 Selected sample data accompany the tutorials.
 
-## Training machine learning models to segment chromatophores
+### Training machine learning models to segment chromatophores
 
-## Data augmentation
+#### Data augmentation
 
 To reduce the amount of manually annotated images needed for training segmentation models, data augmentation techniques are employed to expand the size of the training dataset. This approach was also used in the training of the enclosed models. The albumentations library (Buslaev et al., 2020) is used for this purpose, offering a variety of transformations including resizing, shifting, scaling, rotation, horizontal and vertical flips, RGB-value shifting, brightness and contrast adjustment, downscaling, random shadows, FancyPCA, and perspective transforms.
 
-## Models
+#### Models
 
 CHROMAS offers three distinct types of segmentation classifiers, each tailored to accommodate varying levels of visual variability in the dataset, processing speed, and available amounts of training data.
 
@@ -225,17 +303,17 @@ The second option uses a random forest classifier, a computationally efficient a
 
 The third approach uses deep learning models, specifically Fully Convolutional Networks (Long et al., 2015), DeepLabV3 (Chen et al., 2017), and U-Net (Ronneberger et al., 2015), with either ResNet50, ResNet101 (He et al., 2016), or MobileNetV3-Large (Howard et al., 2019) as backbones. This neural network-based method requires more training data, especially at the beginning. Our pre-trained models (trained on manually annotated images of E. berryi and S. officinalis using Cross Entropy loss), however, are designed to function right away, or to serve as robust baselines for fine-tuning, thus reducing the need for large datasets. While this approach requires access to an NVIDIA GPU, it generalizes well across conditions, making it the most flexible and powerful option.
 
-## Registration details
+### Registration details
 
 The Lucas–Kanade optical flow algorithm, used for video registration, tracks a sparse set of points across the video. These points are initially defined in the first frame as centers of mass of small chromatophores. The process starts by identifying chromatophore regions through segmentation of the first frame, with an offset calculated to exclude points near the edges based on a percentage of the image dimensions. Candidates are filtered based on shape properties such as eccentricity, solidity, and area and are subsampled evenly across a grid to ensure that tracking points are well distributed.
 
 After selecting and tracking these points throughout the video, displacement maps of a finer equidistant grid are interpolated using the moving-least-squares algorithm. Full displacement maps are then calculated by linearly interpolating between these points, providing comprehensive registration of the video frames.
 
-## Stitching reprojection error
+### Stitching reprojection error
 
 The stitching algorithm is used to align each masterframe in a dataset to every other masterframe. The accuracy of these non-symmetric mappings is quantified by calculating the reprojection error, as developed in Reiter et al., 2018. Specifically, all points within a mask—either the animal’s body if it is fully visible or a selected region of interest—of masterframe A are mapped to the reference frame of masterframe B using the A-to-B map, and then mapped back to the reference frame of A using the B-to-A map. The reprojection error is defined as the Euclidean distance between the original points and their remapped counterparts.
 
-## Clustering motion correlation data
+### Clustering motion correlation data
 
 PCA is a statistical technique used to reduce data dimensionality while retaining as much variance as possible (Jolliffe and Cadima, 2016). It identifies principal components—orthogonal directions that capture the most variance in the data. These components represent independent patterns of variation within the dataset. In the context of chromatophore anisotropy, motor neurons influence subsets of radial muscles, creating distinct patterns of contraction and expansion. By applying PCA to the activity data of the slices (and indirectly, the radial muscles), we could uncover the primary directions of variance, corresponding to the independent influence of individual motor neurons (to the extent that they were recruited independently of one another at least some of the time). We used the elbow method to set the number of components worth retaining: in a cumulative-explained-variance versus number of components, the value of x at the inflection point beyond which additional components captured less and less additional variance—was chosen. Essentially, each retained principal component reflects a distinct source of coordinated muscle activity, likely driven by a separate motor neuron.
 

@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Molecular and Cellular Biology, University of California, Davis Davis United States
-2. https://ror.org/05rrcem69 Department of Physiology and Membrane Biology, University of California, Davis Davis United States
-3. https://ror.org/05rrcem69 Department of Anesthesiology and Pain Medicine, University of California, Davis Davis United States
+1. Department of Molecular and Cellular Biology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Department of Physiology and Membrane Biology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+3. Department of Anesthesiology and Pain Medicine, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -34,9 +34,17 @@ These oviposition attractant-detecting (Chen and Luetje, 2014) receptors in Cx. 
 
 ## Results
 
-## Chimeric OR with reversed specificity
+### Chimeric OR with reversed specificity
 
 We envisioned that studying a pair of ORs with reverse specificities, like CquiOR10 and CquiOR2, could lead us to specificity determinants. CquiOR10 is activated by the oviposition attractant skatole (Blackwell et al., 1993; Mboera et al., 2000; Millar et al., 1992) with high specificity (Figure 1A), whereas CquiOR2 is specific to indole (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig1-v2.jpg)
+
+**Figure 1.:** (A) CquiOR10 and (B) CquiOR2. Lines were obtained with nonlinear fit. Bars represent SEM. n = 4–5.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CquiOR10M3; (B) CquiOR10M4; (C) CquiOR10M5; (D) CquiOR10M6; (E) CquiOR10M7; (F) CquiOR10M3,4,5,6,7; (G) CquiOR10M3,4,5,6; (H) CquiOR10M4,5,6; (I) CquiOR10M3,5,6; (J) CquiOR10M3,4,6; (K) CquiOR10M3,4,5; (L) CquiOR10M3,4; (M) CquiOR10M3,5; (N) CquiOR10M3,6; (O) CquiOR10M3,7; (P) CquiOR10M4,5; (Q) CquiOR10M4,6; (R) CquiOR10M4,7; (S) CquiOR10M5,6; (T) CquiOR10M5,7; and (U) CquiOR10M6,7. Lines were obtained with nonlinear fit. Barsrepresent SEM. n = 3.
 
 Our approach was designed to swap TM domains using the more sensitive receptor, CquiOR10, as the acceptor. Specifically, we generated chimeric receptors by replacing CquiOR10 TM domains with related domains from CquiOR2 (Figure 2A). During the life of this project, the cryo-EM structure of an odorant receptor coreceptor AbakOrco from the parasitic fig wasp, Aprocrypta bakeri, was reported (Butterwick et al., 2018). We then compared the experimental structure (Butterwick et al., 2018) with the predicted topology for AbakOrco using the same OCTOPUS method (Viklund and Elofsson, 2008) we used to identify CquiOR10 and CquiOR2 TMs (Figure 2A; Viklund and Elofsson, 2008). The almost perfect overlap between OCTOPUS prediction and the AbakOrco structure (Figure 2B) validated not only our TM predictions (Figure 2A), but also the 21 chimeric ORs already tested when the structure of the coreceptor AbakOrco (Butterwick et al., 2018) was reported.
 
@@ -46,7 +54,13 @@ Our approach was designed to swap TM domains using the more sensitive receptor, 
 
 We referred to these chimeric receptors as CquiOR10Mx, where Mx refers to TMx from CquiOR2. We performed functional assays of these CquiOR10Mx receptors using the Xenopus oocyte recording system. This long-term project could require as many as 127 possible chimeric receptors. We started by swapping all seven TM domains. We envisioned that this chimeric receptor would have a reverse specificity. If so, we would restore one TM at a time to identify critical domains. It turned out that CquiOR10M1,2,3,4,5,6,7 was silent (see Appendix 1, Supplementary file 1, Table 2). To minimize the number of tested mutants, we changed the strategy to start from single mutations to obtain educated guess for the subsequent design of mutants. With this approach, we generated and tested only 8 of the required 99 mutants with 7–3 TMs swapped. We tested 36 chimeric receptors (see Supplementary file 1, Table 2, and Figure 1—figure supplement 1). Fourteen chimeric receptors did not respond to skatole or indole, and 21 receptors retained the specificity to skatole (Supplementary file 1, Table 2, and Figure 1—figure supplement 1). Lastly, CquiOR10M2,7/CquiOrco-expressing oocytes responded to both skatole and indole with a reverse profile (Figure 3A). This dataset shows that CquiOR10M2,7 emulated the profile of the indole receptor CquiOR2 (Figure 1B).
 
-## A single-point mutation that reverses the specificity of the skatole and indole receptors
+![Figure 3.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig3-v2.jpg)
+
+**Figure 3.:** (A) CquiOR10M2,7; (B) CquiOR10M2,5,6,7; (C) CquiOR10M2,5,6,7_Outer; (D) CquiOR10M2,5,6,7_Mid;Inner; (E) CquiOR10M2,5,6,7_Inner; (F) CquiOR10M2,5,6,7T78I; (G) CquiOR10M2,5,6,7L73A; (H) CquiOR10M7A73L; (I) CquiOR10A73L; (J) CquiOR2L74A. Lines were obtained with nonlinear fit. Bars represent SEM. The number of replicates (n) were 7, 4, 5, 5, 4, 3, 9, 7, 6, and 5, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig3-figsupp1-v2.jpg)
+
+#### A single-point mutation that reverses the specificity of the skatole and indole receptors
 
 We proceeded to identify the amino acid residues in the swapped domains of CquiOR10M2,7, directly affecting the specificity of the chimeric and wildtype receptors. Given the observation that, by and large, chimeric receptors with TM5 and TM6 from CquiOR2 gave stronger responses (Figure 1—figure supplement 1), we asked whether CquiOR10M2,7 responses with these two additional TM domains swapped would give more robust responses while keeping the same specificity to indole. CquiOR10M2,5,6,7/CquiOrco-expressing oocytes were indeed more sensitive while maintaining the selectivity to indole (Figure 3B). We then used CquiOR10M2,5,6,7 and designed various mutants to rescue single or multiple residues in TM2 at a time (Figure 4). We focused on TM2 because swapping TM7 did not affect the specificity of the receptor (Figure 1—figure supplement 1E). We divided TM2 into outer, middle, and inner segments based on the topology predicted by OCTOPUS (Viklund and Elofsson, 2008).
 
@@ -62,13 +76,27 @@ We also recorded the response of these ORs to other phenolic ligands that activa
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig5-v2.jpg)
 
-**Figure 5.:** (A) Each receptor was co-expressed with CquiOrco in Xenopus oocytes and stimulated with the phenolic compounds at 1 mM. n = 3–5. (B) CquiOR10/CquiOrco-, (C) CquiOR2/CquiOrco-, and (D)-CquiOR2L74A-expressing oocytes were stimulated with 100 µM of the specified methylindoles. n = 9–11. Bars represent SEM.Figure 5—source data 1.
+**Figure 5.:** (A) Each receptor was co-expressed with CquiOrco in Xenopus oocytes and stimulated with the phenolic compounds at 1 mM. n = 3–5. (B) CquiOR10/CquiOrco-, (C) CquiOR2/CquiOrco-, and (D)-CquiOR2L74A-expressing oocytes were stimulated with 100 µM of the specified methylindoles. n = 9–11. Bars represent SEM.
 
 Additionally, we recorded responses elicited by methylindoles. Specifically, we challenged oocytes with 1-methylindole, 2-methylindole, 4-methylindole, 5-methylindole, 6-methylindole, and 7-methylindole. In these analyses, we did not stimulate the oocyte preparations with 3-methylindole to avoid possible desensitization. CquiOR10/CquiOrco-expressing oocytes elicited stronger responses when challenged with 1-methylindole and 5-methylindole than when stimulated with the other methylindoles (Figure 5B). By contrast, CquiOR2/CquiOrco-expressing oocytes elicited similarly lower responses when stimulated with methylindoles (Figure 5C). CquiOR2L74A with a single-point mutation to mimic OR10 receptor recapitulated CquiOR10 response profile (Figure 5D). These data suggest that a single amino acid residue determines a receptor’s specificity toward ligands eliciting robust or small responses.
 
-## CquiOR10 computational modeling suggests space-filling constraints for indole-based odorants around A73
+### CquiOR10 computational modeling suggests space-filling constraints for indole-based odorants around A73
 
 To structurally hypothesize the above-described reciprocal specificity, we generated structural models of CquiOr10, CquiOR2, CquiOR10A73L, and CquiOR2L74A using RoseTTAFold (Baek et al., 2021) and a structural model of CquiOR10 using AlphaFold (Jumper et al., 2021; Figure 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig6-v2.jpg)
+
+**Figure 6.:** Structural models of CquiOR10 (A, B), CquiOR10A73L (C), CquiOR2 (D), and CquiOR2L74A (E) with AlphaFold (A) and RoseTTAFold (B–E) structure prediction methods. Superposition of all RoseTTAFold models (F) resulted in transmembrane helix root mean square deviation (RMSD) of 0.8 Å when aligned with RoseTTAFold CquiOR10. (G) The transmembrane helix RMSD of CquiOR10 RoseTTAFold (rainbow) vs. AlphaFold (gray) was 1.7 Å. Loops were not included in RMSD calculation due to inherent flexibility during structure prediction.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) RoseTTAFold and (B) AlphaFold models for CquiOR10.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig6-figsupp4-v2.jpg)
 
 CquiOR10 models of one homotetramer subunit were generated with AlphaFold and RoseTTAFold, each producing five models. RoseTTAFold models of CquiOR10, CquiOR10A73L, CquiOR2, and CquiOR2A73L produced a transmembrane helix root mean square deviation (RMSD) between α-Carbon atoms less than 1 Å across all 20 models (five models per odorant receptor); this suggests that the homologous CquiOR10 and CquiOR2 are structurally similar and that single-point mutations should not cause great structural deviation from wildtype. Comparing CquiOR10 models, RoseTTAFold and AlphaFold produced a transmembrane helix RMSD of 1.7 Å, with the transmembrane helices at the extracellular membrane face having the largest structural deviation. Considering there is little structural knowledge of insect odorant receptors, their binding mechanisms, and their conformational changes, we suspected that homologous odorant receptors would have similar binding modes. Further, pairwise sequence alignment suggests that a series of residues in MhraOR5 TM4 aligns with CquiOR10 TM2, which contains CquiOR10A73 (CquiOR10: 59EVI-INAYFAMIFFNAV74. MhraOR5: 199EVIAIYEAVAMIFLITA215.; Figure 6—figure supplement 1) while AlphaFold and RoseTTAFold models of CquiOR10 were broadly similar to MhraOR5 (Figure 6—figure supplement 2). Using transmembrane helix 7b (TM7b), we superimposed the top-ranking CquiOR10 RoseTTAFold and AlphaFold models with an experimentally resolved structure, M. hrabei (MhraOR5) in complex with eugenol (PDB ID: 7LID; DelMarmol et al., 2021) to identify which of our models resembled an odorant-bound conformation. With this selection criteria, we proceeded with RoseTTAFold models of the odorant receptors for Rosetta-based small-molecule docking method RosettaLigand (Davis and Baker, 2009; DeLuca et al., 2015) as the structural similarity around the hypothesized binding pocket was greater than the AlphaFold models of the odorant receptors compared with the MhraOR5 structure. We chose to select conformationally similar models over modeling and docking an apo structure into a bound conformation because it is a more cautious approach when there is little structural information. We perceived modeling an apo structure into a bound conformation to potentially yield more biologically implausible conformations than docking of a structurally comparative model.
 
@@ -76,9 +104,47 @@ To verify that RosettaLigand could effectively sample odorants in receptors homo
 
 For each receptor–ligand complex (CquiOR10-skatole, CquiOR10A73L-skatole, CquiOR10-indole, and CquiOR10A73L-indole), we generated 100,000 docking models using RosettaLigand, clustered the 10,000 lowest interface-energy models, and selected the lowest interface-energy model from the 10 largest clusters, resulting in 10 models per receptor–ligand complex from which to draw structural hypotheses (Supplementary file 1, Tables 4 and 5). Our modeling suggests that both indole and skatole can readily reorient themselves in a similar pore depth near residue 73, regardless of mutant or wildtype receptor. Comparing the lowest interface-scoring model from each receptor–ligand complex, indole and skatole are positioned in the membrane-embedded pore, flanked by transmembrane helices S2, S4, S5, and S6, and show positional overlap in both and CquiOR10-A73L CquiOR10 (Figure 7, Figure 7—figure supplements 1–5).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-v2.jpg)
+
+**Figure 7.:** Each model shown is the lowest interface-energy model from the 10 largest clusters of each docking study. CquiOR10 – skatole (forest green), CquiOR10 – indole (brown), CquiOR10A73L – skatole (light blue), and CquiOR10A73L – indole (purple). Atoms that are not indole/skatole carbon atoms are color-coded by atom type: carbon (gray), nitrogen (dark blue), and oxygen (red). Ala-73 and Leu-73 indicated with space-filling representation. (A, B) and (C, D) Mebrane and extracellular views for CquiOR10 and CquiOR10A73L, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp2-v2.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp3-v2.jpg)
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** OR: odorant receptor.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** (A) CquiOR10 and (B) CquiOR10A73L.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp6-v2.jpg)
+
+**Figure 7—figure supplement 6.:** The representative is the lowest interface-scoring energy model from the 10 most frequent clusters of each test case. Hydrogen bond andpi-stacking interactions were filtered by previously reported bond distances (Bissantz et al., 2010).
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp7-v2.jpg)
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig7-figsupp8-v2.jpg)
+
+**Figure 7—figure supplement 8.:** (A) Odorants docked to CquiOR (grey) were positioned relative to eugenol from MhraOR5 (PDB 7LID) and then randomlyrotated/translated within 7 Å as a starting position for docking. The green sphere represents the 7 Å sampling boundary. (B) An example demonstrating thesampling of skatole (green) docked to CquiOR10 after docking with eugenol (yellow) as a positional reference. Red: extracellular membrane boundary. Blue: cytosplasmic membrane boundary.
+
 In most models, skatole and indole form contacts with CquiOR10 and CquiOr10A73L in a similar plane about a center of rotation. These observations are supported by skatole and indole not containing rotatable bonds, thus relying on rigid translational movements and rotation to form favorable contacts with the rotatable and repackable receptor residues. Additionally, our models position indole and skatole within a series of nonpolar, polar-uncharged, and aromatic amino acids. Protein–ligand interaction profiler (PLIP) analysis (Adasme et al., 2021) suggests that the bulk of favorable interactions are nonpolar, occasional hydrogen bonding with the odorant NH group, and occasional parallel pi stacking, with the ligand-binding pocket formed by TMs 2, 4, 5, and 6 (Figure 7—figure supplement 6). Akin to eugenol forming hydrophobic contacts with MhraOR5/Ile-213 from TM4 (Figure 6—figure supplement 3), skatole and indole formed hydrophobic contacts with CquiOR10/Asn-72 from TM2 (Supplementary file 1, Table 8), which are matched pairs form Needleman–Wunsch pairwise alignment (Figure 6—figure supplement 1). We find of most importance skatole and indole not forming contacts with Ala-73 in CquiOR10 models (Supplementary file 1, Tables 6–14). By contrast, in the CquiOR17A73L models, skatole formed hydrophobic contacts with Leu-73 in 5 of the 10 representative models, while indole formed contacts with Leu-73 in 2 representative models (Supplementary file 1, Table 8). This suggests that Ala-73 may indirectly affect specificity by modulating the volume of the binding pocket (see Appendix 3).
 
 Structurally aligning CquiOR10 and CquiOR10A73L receptors by TM7b (Supplementary file 1, Table 15), demonstrates approximately a 1 Å α-carbon outward shift of A73L (Supplementary file 1, Table 16), suggesting a tightly constrained space in CquiOR10 and an expanded space in CquiOR10A73L relative to the protein backbone (Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig8-v2.jpg)
+
+**Figure 8.:** An approximate 1 Å α-carbon outward shift of Leu-73 (forest green) in CquiOR10 model relative to Ala-73 (light blue) in CquiOR10A73L model. Models were superimposed using the TM7b region. Residue 73 amino nitrogen is colored in dark blue, and carboxyl oxygen is colored in red in each model.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A-C) CquiOR10 mutants. (D-F) CquiOR2 mutants.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig8-figsupp2-v2.jpg)
 
 This difference in binding pocket volume is not ligand-induced, but rather independent of skatole or indole binding. Consistent with our structural hypothesis of space constraints, mutation of Ala-73 in CquiOR10 to Ile or Val negatively affected receptor function, whereas CquiOR10A73G retained specificity and showed higher sensitivity. Specifically, CquiOR10A73I/CquiOrco- and CquiOR10A73V/CquiOrco-expressing oocytes did not respond to skatole or indole (Figure 8—figure supplement 1A and B). We concluded that mutations with these bulkier residues caused loss of binding to indole or skatole, given that these receptors were functional, as indicated by the potent responses elicited by the Orco ligand candidate OLC12, 2-{[4-Ethyl-5-(4-pyridinyl)–4 H-1,2,4-triazol-3-yl]sulfanyl}-N-(4-isopropylphenyl)acetamide (Chen and Luetje, 2012), also known as VUAA-3 (Taylor et al., 2012). As previously demonstrated, OR-Orco complexes are more sensitive to activation by Orco agonists than are the Orco homomers (Chen and Luetje, 2012; Chen and Luetje, 2013; Choo et al., 2018; Hughes et al., 2017; Chen and Luetje, 2014). It is, therefore, conceivable that the complexes (Figure 8—figure supplement 1A, B) were expressed but the binding sites were defective.
 
@@ -87,6 +153,14 @@ On the other hand, CquiOR10A73G/CquiOrco-expressing oocytes showed the same skat
 Since CquiOR2 is homologous to CquiOR10, we also propose that our space constraint structural hypothesis can be applied to CquiOR2. CquiOR2 has 49.5% sequence identity and 71.7% sequence similarity to CquiOR10. CquiOR2 also has physiochemically matched pairs to CquiOR10 residues speculated to form contacts with skatole/indole in our study (Supplementary file 1, Table 17). While we did not perform CquiOR2 docking, we indirectly examined space constraints in CquiOR2 by mutating Leu-74 to Ile, Val, or Gly. We then tested oocytes co-expressing CquiOrco with CquiOR2L74I, CquiOR2L74V, or CquiOR2L74G (Figure 8—figure supplement 1D–F). Consistent with the relaxation of the space constraints, CquiOR2L74I retained the specificity of the wildtype receptor to indole, whereas CquiOR2L74G showed a reverse specificity profile (Figure 8—figure supplement 1F), that is, more robust response to skatole than indole. Interestingly, CquiOR2L74V/CquiOrco-expressing oocytes generated nearly equal, albeit small, currents when stimulated with the two oviposition attractants (skatole, 8.7 ± 2.7 nA; indole, 9.0 ± 2.5 nA at 100 µM; n = 3, p>0.9999, Wilcoxon matched-pairs signed-rank test).
 
 Next, we tested the space constraints hypothesis with a bulkier ligand, 3-ethylindole. A CquiOR10 mutant with a less space-filling residue, CquiOR10A73G, elicited responses to 3-ethylindole (526 ± 110 nA) higher than the responses to indole (205 ± 81 nA, at 100 µM), although less robust than the skatole responses (1939 ± 142 nA; all at 100 µM) (Figure 9—figure supplement 1). By contrast, receptors with a bulkier residue (CquiOR2WT, CquiO10A73L, and CquiOR2L74I) did not respond to 3-ethylindole (Figure 9). However, CquiOR2 mutant with less space-filling residues, CquiOR2L74A and CquiOR2L74G, responded to 3-ethylindole in a dose-dependent manner (Figure 9). Additionally, CquiOR10A73G elicited dose-dependent strong responses to 3-ethylindole than CquiOR10 (Figure 9).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig9-v2.jpg)
+
+**Figure 9.:** Bars represent SEM (n = 4–10).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/82922/elife-82922-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Representative trace recorded after challenging an oocyte with the three odorants at the same dose (100 µM). (B) Quantification of responses from six different oocytes. Columns with the same letter are not significantly different (Repeated measures, one-way ANOVA).
 
 In summary, the findings that a bulkier, non-natural ligand, elicited more robust responses when CquiOR10 and CquiOR2 residues at 73 and 74, respectively, were mutated into Gly are consistent with the space constraints hypothesis.
 
@@ -104,23 +178,278 @@ Taken together, our findings shed light on a possible path to design more potent
 
 ## Materials and methods
 
-## Construction of chimeric receptors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stellar competent cell</td>
+      <td>Takara Bio, USA (San Jose, CA)</td>
+      <td>Cat# 636766</td>
+      <td>https://bit.ly/3Dowpe2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEMHE (plasmid)</td>
+      <td>Liman et al., 1992</td>
+      <td>https://doi.org/10.1016/0896-6273(92)90,239a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Xenopus oocytes</td>
+      <td>EcoCyte Bioscience (Austin, TX)</td>
+      <td>https://bit.ly/3Ud8OTo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XmaI</td>
+      <td>New England Biolabs (Ipswich, MA)</td>
+      <td>Cat# R0180S</td>
+      <td>https://www.neb.com/products/r0180-xmai</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XbaI</td>
+      <td>New England Biolabs (Ipswich, MA)</td>
+      <td>Cat# R0145S</td>
+      <td>https://www.neb.com/products/r0145-xbai</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Gentamycin sulfate</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>Cat# ab146573</td>
+      <td>https://www.abcam.com/ab146573.html</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Fisher Scientific (Waltham, MA)</td>
+      <td>Cat# S271-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Fisher Scientific (Waltham, MA)</td>
+      <td>Cat# P217-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaHCO3</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>Cat# S6014-500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgSO4</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>Cat# M-7634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ca(NO3)2</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>Cat# 237124-500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Fisher Scientific (Waltham, MA)</td>
+      <td>Cat# S71924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>Cat# H4034-500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OLC12</td>
+      <td>Vanderbilt Institute of Chemical Biology</td>
+      <td>Chemical Synthesis Core, VUAA 3</td>
+      <td>https://medschool.vanderbilt.edu/syncore/</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Skatole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 83-34-1, Cat# W301912</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indole</td>
+      <td>ACROS Organics (Geel, Belgium)</td>
+      <td>CAS# 120-72-9, Cat# 122150100</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Ethylindole</td>
+      <td>AmBeed (Arlington hts, IL)</td>
+      <td>CAS# 1484-19-1, Cat# AMBH96F1079C</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenol</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 108-95-2</td>
+      <td>99.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,5-Dimethylphenol</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 108-68-9</td>
+      <td>99%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Methylindole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 603-76-92</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Methylindole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 95-20-5</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylindole</td>
+      <td>ACROS Organics (Geel, Belgium)</td>
+      <td>CAS# 16096-32-5</td>
+      <td>99%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Methylindole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 614-96-0</td>
+      <td>99%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-Methylindole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 3420-02-8</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-Methylindole</td>
+      <td>Sigma-Aldrich (Milwaukee, WI)</td>
+      <td>CAS# 933-67-5</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://doi.org/10.1002/jcc.20084; UCSF</td>
+      <td>https://bit.ly/3S7OdOF; ver. 1.15</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rosetta</td>
+      <td>Leman et al., 2020</td>
+      <td>https://doi.org/10.1038/s41592-020-0848-2</td>
+      <td>https://www.rosettacommons.org/software/license-and-download; ver 2021.07.61567</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Avogadro</td>
+      <td>Hanwell et al., 2012</td>
+      <td>https://doi.org/10.1186/1758-2946-4-17</td>
+      <td>https://avogadro.cc/; ver 1.2.0 (Git revision: c1fcc5b)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AmberTools</td>
+      <td>Case et al., 2021</td>
+      <td>https://ambermd.org/index.php</td>
+      <td>https://ambermd.org/doc12/Amber21.pdf</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpeneEye Omega</td>
+      <td>Hawkins et al., 2010</td>
+      <td>https://doi.org/10/1021/ci100031x</td>
+      <td>https://www.eyesopen.com/omega</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDBSCAN</td>
+      <td>McInnes et al., 2017</td>
+      <td>https://doi.org/10.21105/joss.00205</td>
+      <td>https://github.com/scikit-learn-contrib/hdbscan; McInnes and Healy, 2017</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioMol2Clust</td>
+      <td>https://biokinet.belozersky.msu.ru/Biomol2Clust</td>
+      <td>Timonina et al., 2021</td>
+      <td>ver 1.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein Ligand Interaction Profiler</td>
+      <td>Salentin et al., 2015</td>
+      <td>https://doi.org/10.1093/nar/gkv315</td>
+      <td>https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index; software repository: https://github.com/pharmai/plip; ver 2.2.1, Salentin et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMBOSS Needle</td>
+      <td>Madeira et al., 2022</td>
+      <td>https://doi.org/10.1093/nar/gkac240</td>
+      <td>https://www.ebi.ac.uk/Tools/psa/emboss_needle/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of chimeric receptors
 
 We used a previously obtained pGEMHE-CquiOR10 (Hughes et al., 2010) plasmid to amplify the sequences of the desired chimeric receptors. To obtain the full length of chimeric OR genes, we used specific primers, with overlapping sequences at each end to target sequences (adaptor underlined) for cloning into pGEMHE vector, which was linearized at restriction sites XmaI (5′-CCCGGG-3') and XbaI (5′-TCTAGA-3'):CqOR10_Fw 5′-GATCAATTCCCCGGGACCATGACCGCGGCACCCATTTT-3' and CqOR10_Rv 5′-CAAGCTTGCTCTAGATCAATTATAAACGCGTCTCAGCAGGGT-3'. To generate a chimeric OR by PCR amplification, we designed specific primers for the desired CquiOR2 TM domain. Simultaneously, we prepared the recipient fragments of CquiOR10 to receive the CquiOR2 TM domains. The fragments were then assembled using In-Fusion HD cloning kit (Clontech) to obtain the desired chimeric OR. Each CquiOR2 TM domain was divided into two parts, each part was synthesized with a specific primer, except for CquiOR2 TM7 domain, which used only one primer with the full domain. These primers contained an overlap with CquiOR10 sequence followed by one part of the CquiOR2 TM sequence and an overlap with the other part of the CquiOR2 TM domain sequence, which was synthesized in another PCR. The underlined sequences represent CquiOR2 TM domains and, unless otherwise specified, sequences in italic are overlaps for CquiOR2 TM domains. CqOR10M1_Fw: 5′-GGTGACCGTGCTGAACGTGTTCCAGTTTATGAACCTGTTTCGAGCCTGGGGCAACATC-3′; CqOR10M1_Rv: 5′-TCAGCACGGTCACCGGAATGCAGCCGAGGAGGTAACTGAGGACGTTGCCTACTGTGATCTCAAGG-3′; CqOR10M2_Fw: 5′-CCGTGCTGTACTTCAACCTTGTGTTGAGAACCACGTTTATACTGTGCAATCGTCAGGATTATGAGG-3′; CqOR10M2_Rv: 5′- AAGTACAGCACGGTGAAATATCCGTCGATGATGATTTTGTCGATGTTGCCCCAGGCT-3′; CqOR10M3_Fw: 5′- GTTCATCAGTGCGTGCTTCGTGACGTATCCGCTTTTTTCACCGACACGTAGCCTCCCGTACG-3′; CqOR10M3_Rv: 5′- ACGCACTGATGAACGCTCCCAGCCAGAGGTTCGATTTGGACAGCAGTCGGGCACGTTTGGTGA-3′; CqOR10M4_Fw: 5′- CACGTTTCCGGCGTGCTGCATGTACATTCCGTTTACCAGCTTCTTCGCCACGACTACTTTG-3′; CqOR10M4_Rv: 5′- ACGCCGGAAACGTGAGGTACACTTGCAGAAAAAACACAACCTGGTACAGGGGCGTC-3′; CqOR10M5_Fw: 5′- GCTATGCGCCTTGCTGTTTCTACTTAGCACCAGCAATAATCCCGCGCAAATTATCATCGTGG-3′; CqOR10M5_Rv: 5′- GCAAGGCGCATAGCATCATCCCAAACGATAGCAACTCAATCAGACAGATGTAGGTCACCAGCG-3′; CqOR10M6_Fw: 5′- TCTTTATGATTCTGTCCCAGATGTACGCCCTGTACTGGCACGCCAACGAGCTGCG-3′; CqOR10M6_Rv: 5′- AGAATCATAAAGATGTACGATCCGATCATCACCATCTGCGCGGGATTTTCGATAATGTTCAGC-3′; CqOR10M7_Rv: 5′- CAAGCTTGCTCTAGATCAATTATAAACGCGTCTCAGCAACGTAAAGTACGAATACGAGGCATTGATCAACTTTTGAAACATTTCCAAGGTCATCGGATAGACGTTGCCTACTGTGATCTCAAGG-3′ (here the italic represents the pGEMHE adaptor). The two fragments were amplified using a combination of CqOR10_Fw with CqOR10Mx_Rv primers and CqOR10_Rv with CqOR10Mx_Fw primers. Then, we cloned the two fragments amplified by PCR into pGEMHE vector using the In Fusion system as described below. Chimeric plasmid with a single TM swapped was used as a template to generate chimeric OR with two TM swapped and subsequently chimeric ORs with multiple CquiOR2 TM domains.
 
-## Chimeric OR cloning and subcloning into pGEMHE
+### Chimeric OR cloning and subcloning into pGEMHE
 
 The fragments amplification was performed using Platinum Taq DNA Polymerase High Fidelity (Thermo Fisher Scientific) with the following conditions: 95°C for 5 min, followed by 30 cycles of 95°C for 20 s, 57°C 30 s for annealing and 68°C for 1.5 min, and extension at 68°C for 5 min. PCR products were purified by QIAquick gel extraction kit (QIAGEN). The target pGEMHE plasmid was cut by XmaI and XbaI in separate reactions. Ligation was done with In Fusion (Takara Bio USA) system and the transformation was performed using Stellar competent cells (Takara Bio USA) in heat-shock. After selecting the cells, plasmids were extracted with QIAprep Spin Miniprep kit (QIAGEN). The cloned gene was verified by DNA sequencing (Berkeley Sequencing Facility).
 
-## Site-directed point mutagenesis and fragment replacement
+### Site-directed point mutagenesis and fragment replacement
 
 Phusion Site-Directed Mutagenesis Kit (Thermo Scientific, West Palm Beach, FL) was used to generate point mutations and TM fragment replacements. Mutations were created with mismatched 5′-phosphorylated mutagenic primers and PCR amplification. The chimeric sequences (CquiOR10M2,5,6,7) in pGEMHE vector were used as templates for rescues, whereas the wildtype sequences in pGEMHE vector served as templates for point-mutations. Rescue primers: CqOR10M2_M2567OUTERup: 5′-GATGATGACCTCGTCGATGTTGCCCCAGGC-3′; CqOr10M2_M2567OUTERdn: 5′-AACGCATATTTCACCGTGCTGTACTTCAACC-3′; CqOr10M2_M2567INNERup: 5′-cgcagcaccgcgttgaagtacagcacggtg-3′; CqOr10M2_M2567INNERdn: 5′-aacaattttcatactgtgcaatcgtcagga-3′; CqOR10M2_M2567MID-INNERup: 5′-catcgacggCtactttgcgatgattttcttcaacgcg-3′; CqOR10M2_M2567MID-INNERdn: 5′-atgattttgtcgatgttgccccaggctc-3′; CqOr10M2_M2567_L73Aup: 5′-CGTTGAAGTACAGCACGGTGAAATAT-3′; CqOr10M2_M2567_L73Adn: 5′-CTGTGTTGAGAACCACGTTTATACTGT-3′; CqOr10M2_M2567_T78Iup: 5′-ATGGTTCTCAACACAAGGTTGAAGTA-3′; CqOr10M2_M2567_T78Idn: 5′-CTTTATACTGTGCAATCGTCAGGATTATG-3′; point mutation primers: CqOR10A73up: 5′-Gttgaagaaaatcatcgcaaagta-3′; CqOR10A73Ldn: 5′-Ctggtgctgcgaacaattttc-3′; CqOR10A73Adn: 5′-Gcggtgctgcgaacaattttc-3′; CqOR10A73Gdn: 5′-Ggggtgctgcgaacaattttc-3′; CqOR10A73Vdn: 5′-Gtggtgctgcgaacaattttc-3′; CqOR10A73Idn: 5′-ATCgtgctgcgaacaattttc-3′; CqOR2L74up: 5′-gttgaagtacagcacggtgaaata-3′; CqOr2L74Adn: 5′-Gctgtgttgagaaccacgtttatac-3′; CqOr2L74Idn: 5′-atcGTGTTGAGAaccacgtttatac-3′; CqOr2L74Gdn: 5′-gggGTGTTGAGAaccacgtttatac-3′; CqOr2L74Vdn: 5′-gtgGTGTTGAGAaccacgtttatac-3′. The amplified linear PCR products containing the desired modification were ligated and transformed into Stellar Competent Cells (Takara Bio USA). All sequences were confirmed by DNA sequencing (UC Berkeley DNA Sequencing Facility).
 
-## In vitro transcription, oocyte microinjection, and two-electrode voltage-clamp assay (TEVC)
+### In vitro transcription, oocyte microinjection, and two-electrode voltage-clamp assay (TEVC)
 
 Capped OR cRNA was prepared using mMESSAGE mMACHINE T7 Kit (Ambion) as previously described (Xu et al., 2019). Purified OR cRNA was resuspended in nuclease-free water at 200 ng/μL and microinjected into Xenopus laevis oocytes on stage V or VI (EcoCyte Bioscience) along with the same amount of CquiOrco. Injected oocytes were incubated at 18°C for 3–7 days in a modified Barth’s solution (88 mM NaCl, 1 mM KCl, 2.4 mM NaHCO3, 0.82 mM MgSO4, 0.33 mM Ca(NO3)2, 0.41 mM CaCl2, and 10 mM HEPES at pH 7.4) supplemented with 10 μg/mL gentamycin, 10 μg/mL streptomycin, and 1.8 mM sodium pyruvate. Two-electrode voltage-clamp technique (TEVC) was used to measure odorant-induced currents at a holding potential of −80 mV. Signals were amplified with an OC-725C amplifier (Warner Instruments), low-pass filtered at 50 Hz, and digitized at 1 kHz. Data acquisition and analysis were performed with Digidata 1440A and software pCLAMP 10 (Molecular Devices). Skatole (98%, CAS# 83-34-1), indole (98%, CAS# 120-72-9), and 3-ethylindole (97%, CAS# 1484-19-1) were provided by Sigma-Aldrich (Milwaukee, WI), ACROS Organics (Geel, Belgium), and AmBeed (Arlington Hts, IL), respectively. Phenol (99.5%, CAS# 108-95-2), 3,5-dimethylphenol (99%, CAS# 108-68-9), 1-methylindole (97%, CAS# 603-76-9), 2-methylindole (98%, CAS# 95-20-5), 5-methylindole (99%, CAS# 614-96-0), 6-methylindole (97%, CAS# 3420-02-8), and 7-methylindole (97%, CAS# 933-67-5) were acquired from Sigma-Aldrich, and 4-methylindole (99%, CAS# 16096-32-5) was provided by ACROS.
 
-## Rosetta structural modeling and docking
+### Rosetta structural modeling and docking
 
 We used RoseTTAFold (Baek et al., 2021) and AlphaFold (Jumper et al., 2021) to generate predicted structures of CquiOR10, CquiOR2, CquiOR10A73L, and CquiOR2L74A monomers. The OpenEye Omega toolkit (Hawkins et al., 2010) was used to generate conformer libraries. Molecular docking was performed using RosettaLigand (Davis and Baker, 2009; DeLuca et al., 2015). The top models were visually analyzed using UCSF Chimera (Pettersen et al., 2004).
 

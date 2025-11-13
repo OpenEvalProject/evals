@@ -7,10 +7,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03b94tp07 Laboratory of Microbial Biochemistry and Biotechnology, School of Biological Sciences, The University of Auckland Auckland New Zealand
+1. Laboratory of Microbial Biochemistry and Biotechnology, School of Biological Sciences, The University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
 
 † Corresponding author
 
 ## Abstract
 
-In the bacterium M. smegmatis , an enzyme called MftG allows the cofactor mycofactocin to transfer electrons released during ethanol metabolism to the electron transport chain.
+In the bacterium M. smegmatis, an enzyme called MftG allows the cofactor mycofactocin to transfer electrons released during ethanol metabolism to the electron transport chain.

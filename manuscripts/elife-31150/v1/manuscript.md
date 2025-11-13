@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.31150.001 Healthy pregnancy depends on proper placentation—including proliferation, differentiation, and invasion of trophoblast cells—which, if impaired, causes placental ischemia resulting in intrauterine growth restriction and preeclampsia. Mechanisms regulating trophoblast invasion, however, are unknown. We report that reduction of Inverted formin 2 ( INF2) alters intracellular trafficking and significantly impairs invasion in a model of human extravillous trophoblasts. Furthermore, global loss of Inf2 in mice recapitulates maternal and fetal phenotypes of placental insufficiency. Inf2 −/− dams have reduced spiral artery numbers and late gestational hypertension with resolution following delivery. Inf2 −/− fetuses are growth restricted and demonstrate changes in umbilical artery Doppler consistent with poor placental perfusion and fetal distress. Loss of Inf2 increases fetal vascular density in the placenta and dysregulates trophoblast expression of angiogenic factors. Our data support a critical regulatory role for INF2 in trophoblast invasion—a necessary process for placentation—representing a possible future target for improving placentation and fetal outcomes.
+Healthy pregnancy depends on proper placentation—including proliferation, differentiation, and invasion of trophoblast cells—which, if impaired, causes placental ischemia resulting in intrauterine growth restriction and preeclampsia. Mechanisms regulating trophoblast invasion, however, are unknown. We report that reduction of Inverted formin 2 (INF2) alters intracellular trafficking and significantly impairs invasion in a model of human extravillous trophoblasts. Furthermore, global loss of Inf2 in mice recapitulates maternal and fetal phenotypes of placental insufficiency. Inf2−/− dams have reduced spiral artery numbers and late gestational hypertension with resolution following delivery. Inf2−/− fetuses are growth restricted and demonstrate changes in umbilical artery Doppler consistent with poor placental perfusion and fetal distress. Loss of Inf2 increases fetal vascular density in the placenta and dysregulates trophoblast expression of angiogenic factors. Our data support a critical regulatory role for INF2 in trophoblast invasion—a necessary process for placentation—representing a possible future target for improving placentation and fetal outcomes.
 
 ## Introduction
 
@@ -37,43 +37,139 @@ The cause of shallow EVT invasion is unknown and under-investigated due to a lac
 
 Successful cellular invasion depends on formation of invasive structures such as invadopodia and podosomes (Parast et al., 2001; Patel and Dash, 2012), suggesting cytoskeletal integrity and appropriate remodeling is critical for EVT migration and invasion. Formins, a multi-domain family of proteins highly expressed in reproductive tissues (Figure 1), have been identified as critical in the regulation of cytoskeletal assembly and organization through actin polymerization and microtubule bundling, mediating processes such as cellular migration, division, and intracellular transport (Antón et al., 2008; Antón et al., 2011; Chhabra and Higgs, 2007; Gaillard et al., 2011; Higgs and Peterson, 2005; Ness et al., 2013; Pollard, 2007; Schönichen and Geyer, 2010). Phylogenetic analyses indicate that the structure of these proteins is highly conserved (Figure 1—figure supplement 1) and examination of evolutionary rates of mammalian formins showed no evidence of positive selection acting on either the INF clade or the INF2 clade (Table 1). Several formin family genes have previously been associated with pregnancy and reproductive phenotypes, including preterm birth (Cruickshank et al., 2013; Elovitz et al., 2014; Montenegro et al., 2009). Furthermore, there is evidence of increased expression of a formin activator, RhoA-GTP, during pregnancy (Hudson and Bernal, 2012).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig1-v1.jpg)
+
+**Figure 1.:** Expression levels range from 0.1 to 82.3 transcripts per million (TPM) across the six tissues. Raw data obtained from the Human Protein Atlas database (Uhlén et al., 2015).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Individual branches showing sequences from each species for each formin gene are collapsed, such that only the relationships among the 15 formin ortholog groups are shown. The formin domain architecture for each ortholog group or set of groups is based on previously described structure and classification (Chalkia et al., 2008; Schönichen and Geyer, 2010).
+
+**Table 1.**
+ Tests of Natural Selection of the INF and INF2 clades.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clade</th>
+      <th>H0 lnL*</th>
+      <th>H1 lnL†</th>
+      <th>2ΔL‡</th>
+      <th>P value§</th>
+      <th>ω ratio in background branches in H1 model#</th>
+      <th>ω ratio in foreground branches in H1 model¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>INF</td>
+      <td>−35554.9</td>
+      <td>−3.5554.74</td>
+      <td>0.32</td>
+      <td>N.S.</td>
+      <td>0.12226</td>
+      <td>0.12995</td>
+    </tr>
+    <tr>
+      <td>INF2</td>
+      <td>−35554.9</td>
+      <td>−35554.56</td>
+      <td>0.68</td>
+      <td>N.S.</td>
+      <td>0.12422</td>
+      <td>0.11077</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Log likelihood score of H0 model, which assumes a single ω ratio across the phylogeny of the formin family;†Log likelihood score of H1 model, which assumes a single ω ratio for the foreground clade (INF or INF2) and another ω ratio for the rest of the branches of the formin phylogeny;‡Difference in log likelihood scores between the H0 and H1 models;§P value of χ2 test of statistical significance between the the H0 and H1 models;#dn/ds (=ω) ratio of background (all branches except those of the INF or INF2 clade) branches of the formin phylogeny under the H1 model;¶dn/ds (=ω) ratio of foreground (INF or INF2) branches of the formin phylogeny under the H1 model_
+
 Inverted formin 2 is unique among the formins due to its ability to sever and depolymerize actin filaments in addition to traditional formin functions such as microtubule bundling and actin polymerization (Chhabra and Higgs, 2006; Ramabhadran et al., 2012). Severing and depolymerization of actin filaments allows INF2 to generate highly transient filaments (Chhabra et al., 2009). Transient activation of cofilin—one known regulator of actin filament assembly and disassembly—has been shown to be important in stimulated cell motility (Yamaguchi and Condeelis, 2007), suggesting tight regulation of actin dynamics may be vital to extravillous trophoblast invasion. Furthermore, polymerization of actin filaments by INF2 is important for mitochondrial fission, a process that may be important in regulating trophoblast metabolism (Burton et al., 2017; Korobova et al., 2013). Importantly, INF2 is necessary for intracellular transport—responsible for mobilizing cargo such as SRC kinases, which are responsible for EVT degradation of extracellular matrix (Patel and Dash, 2012) and invasiveness. One SRC-like tyrosine kinase trafficked by INF2, lymphocyte-specific protein tyrosine kinase (LCK), has previously been shown to play a role in tumor metastasis (Andrés-Delgado et al., 2010; Mahabeleshwar and Kundu, 2003)—perhaps one of the many reasons EVT invasion is frequently compared to the metastatic invasion in cancer.
 
 Given the central role of formin proteins in reproduction, actin cytoskeleton dynamics, and the intracellular transport of LCK (Andrés-Delgado et al., 2010), we hypothesized that INF2 is necessary for successful trophoblast invasion and vascular remodeling. Inf2-deficient mice demonstrated impaired spiral artery remodeling, hypertension, fetal growth restriction, and altered placental development, identifying the Inf2 null mouse as a novel model of placental insufficiency.
 
 ## Results
 
-## INF2 is necessary for trophoblast invasion through intracellular trafficking of proteins integral for formation of invasive structures
+### INF2 is necessary for trophoblast invasion through intracellular trafficking of proteins integral for formation of invasive structures
 
 INF2 targeted siRNA successfully reduced expression in an in vitro model of human EVTs (HTR-8/SVneo; Figure 2A and B; p=0.0046). Reduction of INF2 in these cells did not impact phalloidin content (Figure 2—figure supplement 1A; p=0.58), however, mitochondrial volume was significantly increased (Figure 2—figure supplement 1B and C; p=0.0048). INF2 knockdown impaired invasion of HTR-8/SVneo cells by 73% compared to nonsense siRNA- and vehicle-treated cells (Figure 2C; p=0.0005). To determine if INF2 is necessary for transcytosis in EVTs as in other cells (Andrés-Delgado et al., 2010; Madrid et al., 2010), we visualized intracellular localization of MAL2 and LCK in vehicle- or knockdown siRNA-treated HTR-8/SVneo cells. MAL2 is dispersed throughout the cytoplasm in vehicle-treated HTR-8/SVneo cells with no change in localization after INF2 knockdown (Figure 2—figure supplement 2). Reduction of INF2 restricted LCK to the perinuclear region of cultured HTR-8/SVneo cells while LCK was distributed throughout the cytoplasm in controls (Figure 2D). There was no change in LCK protein expression (Figure 2B). Treatment of HTR-8/SVneo cells with the LCK/FYN-specific inhibitor PP1 reduced invasion by 69% (Figure 2E; p=0.011) while the SRC inhibitor TX1123 reduced invasion by 98% compared to controls (Figure 2E; p=0.0007).
 
-## Inf2 is temporally regulated in the placenta throughout gestation and is localized to cells of the trophoblast lineage
+![Figure 2.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig2-v1.jpg)
+
+**Figure 2.:** siRNA targeting INF2 efficiently reduced expression in HTR-8/SVneo trophoblasts by qPCR (A) (n = 4; 1.0 ± 0.14 vs 1.05 ± 0.23 vs 0.15 ± 0.04; **p<0.01) and Western blot analysis (B). (C) INF2 reduction in HTR-8/SVneo cells significantly impeded invasion of these cells through Matrigel (n = 3; 100 ± 11.3 vs 79.44 ± 2.83 vs 18.85 ± 4.46%; ***p<0.001, analyzed by 1-way ANOVA). (D) Consistent with results published in Jurkat T lymphocytes, INF2 reduction restricted LCK to the perinuclear region in cultured EVTs as opposed to cytoplasmic distribution in nonsense siRNA treated EVTs (scale bar: 10 μm). (E) Treatment with the LCK/FYN-specific inhibitor PP1 or the SRC inhibitor TX1123 also significantly restricted the ability of these cells to invade (n = 3; 100 ± 10.49 vs 31.23 ± 11.09 vs 1.34 ± 0.51%; *p<0.05, ***p<0.001). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** F-actin content of HTR-8/SVneo trophoblasts was not significantly changed by siRNA knockdown of INF2 (A) and (C) (n = 15; 83.55 ± 2.68 vs 80.34 ± 3.43 vs 78.95 ± 3.42, analyzed by 1-way ANOVA). Consistent with results published in U2OS cells, INF2 reduction significantly increased mitochondrial size (B) and (C) (n = 15; 4.446 ± 1.44 vs 5.65 ± 0.82 vs 14.57 ± 3.52; **p<0.01, calculated by Tukey’s multiple comparison test; scale bar: 10 μm). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** MAL2 is distributed throughout the cytoplasm in vehicle-, nonsense siRNA-, and knockdown siRNA-treated HTR-8/SVneo cells, similar to what has been reported in hepatoma HepG2 cells (scale bar: 10 μm).
+
+### Inf2 is temporally regulated in the placenta throughout gestation and is localized to cells of the trophoblast lineage
 
 Inf2 expression in C57Bl/6J placentas was significantly increased at gestational day 15.5 (E15.5; Figure 3A; p=0.026) compared to E13.5 and E18.5 placentas. By E18.5, Inf2 mRNA returned to earlier pregnancy levels. We demonstrate dense, specific staining of trophoblast cells throughout the labyrinth, junctional zone, and decidua in control mice and none in the knockout mice (Figure 3B). Lck is restricted to the perinuclear region in Inf2−/− trophoblasts while it is distributed throughout the cytoplasm in Inf2+/+ trophoblasts (Figure 3C). Immunofluorescence staining revealed co-localization of Inf2 with the pan-trophoblast marker cytokeratin-7 (Ck7) and the trophoblast giant cell (TGC) marker proliferin (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig3-v1.jpg)
 
-**Figure 3.:** Inf2 is highly expressed in the mouse placenta and co-localizes with trophoblast markers.(A) Timecourse of Inf2 mRNA levels in C57Bl/6J mice at E13.5, E15.5, and E18.5 (n = 2, 5, 5; 1.01 ± 0.12 vs 3.21 ± 0.62 vs 0.96 ± 0.45; *p<0.05 by 1-way ANOVA). (B) IHC of E15.5 placentas reveal dense, specific staining of Inf2 throughout the Inf2 labyrinth, junctional zone, and decidua with no positive staining in the +/+Inf2 placenta (scale bar: 500 μm). (−/−C) Consistent with our in vitro data, at E15.5, Lck is localized throughout trophoblast cells in the Inf2 placenta while it is mostly perinuclear in +/+Inf2 placentas (scale bar: 50 μm). (−/−D) Inf2 does not co-localize with endothelial cell marker endomucin, but co-localizes with the pan-trophoblast marker cytokeratin-7 and the TGC marker proliferin in Inf2 E15.5 placentas (scale bar: 50 μm). All data represent the mean ±SEM.+/+
+**Figure 3.:** (A) Timecourse of Inf2 mRNA levels in C57Bl/6J mice at E13.5, E15.5, and E18.5 (n = 2, 5, 5; 1.01 ± 0.12 vs 3.21 ± 0.62 vs 0.96 ± 0.45; *p<0.05 by 1-way ANOVA). (B) IHC of E15.5 placentas reveal dense, specific staining of Inf2 throughout the Inf2+/+ labyrinth, junctional zone, and decidua with no positive staining in the Inf2−/− placenta (scale bar: 500 μm). (C) Consistent with our in vitro data, at E15.5, Lck is localized throughout trophoblast cells in the Inf2+/+ placenta while it is mostly perinuclear in Inf2−/− placentas (scale bar: 50 μm). (D) Inf2 does not co-localize with endothelial cell marker endomucin, but co-localizes with the pan-trophoblast marker cytokeratin-7 and the TGC marker proliferin in Inf2+/+ E15.5 placentas (scale bar: 50 μm). All data represent the mean ±SEM.
 
-## Improper spiral artery remodeling in Inf2−/− placentas causes systemic hypertension during pregnancy that resolves after delivery
+### Improper spiral artery remodeling in Inf2−/− placentas causes systemic hypertension during pregnancy that resolves after delivery
 
 We visualized lectin-labeled maternal spiral arteries in cleared, depth-coated placentas. Fully extended spiral artery numbers were counted in placentas rendered in 3D (Videos 1 and 2). At E19.0, the number of spiral arteries in Inf2−/− placentas was significantly reduced compared to wildtype placentas (Figure 4A and B; p=0.023). Using the volumetric pressure cuff system to monitor blood pressure changes throughout pregnancy, systolic blood pressure dropped from pre-pregnancy levels at E15.5 in all females. In contrast, at E17.5 blood pressure was significantly elevated in Inf2−/− females compared to Inf2+/+ (Figure 4C; p=0.012). By postnatal day 2 (P2), the systolic blood pressure of all females was comparable to pre-pregnancy levels. No significant differences in total urinary protein were measured in non-gravid females (n = 6; 26984 ± 2936 vs 29428 ± 3441 ng/μL) or females at E17.5 (n = 3, 4; 33834 ± 4644 vs 34727 ± 7028 ng/μL; data not shown).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig4-v1.jpg)
+
+**Figure 4.:** (A) Lectin-tagged maternal spiral arteries (arrowheads) were visualized in E19.0 placentas after clearing. Positive staining was depth coded in the 3D image based on position in Z (0.00 μm in red, 50.00 μm in orange, 150.00 μm in yellow, 250.00 μm in green, 350.00 μm in cyan, 400.00 μm in indigo, and 450.00 μm in violet). (B) The number of fully extended spiral arteries was quantified and found to be significantly reduced in Inf2−/− placentas compared to wildtype placentas (n = 3; 6.33 ± 1.2 vs 2 ± 0; *p<0.05). (C) Calculated as change (Δ) from the non-pregnant state (NP; n = 9, 8; 0.00 ± 0.00 mmHg), the systolic blood pressure of both Inf2+/+ and Inf2−/− females decreased at E15.5 (-6.422 ± 4.262 vs −8.395 ± 3.523 mmHg). At E17.5, blood pressure was significantly elevated in Inf2−/− females, while Inf2+/+ blood pressure remained unchanged (−9.468 ± 1.650 vs 6.871 ± 5.834 mmHg; *p<0.05). By P2, both Inf2+/+ and Inf2−/− systolic blood pressure returned to pre-pregnancy levels (−2.902 ± 5.222 vs 0.331 ± 3.266 mmHg). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Despite a trend of higher placental growth factor-2 (Plgf-2) in Inf2−/− maternal serum at E15.5 (n = 8, 7; 8.909 ± 1.143 vs 13.246 ± 2.856), there were no significant differences detected at E15.5 or E18.5 (n = 9, 7; 8.359 ± 1.258 vs 8.255 ± 2.244). Similarly, no differences were seen in serum vascular endothelial growth factor receptor type 1 (FMS-like tyrosine kinase 1, Flt1) levels at E15.5 (n = 8, 7; 29129 ± 5743 vs 30148 v 5502) or E18.5 (n = 9, 8; 47775 ± 2655 vs 49190 ± 8401) in Inf2+/+ or Inf2−/− females. All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Video 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/31150/elife-31150-video2.mp4.jpg)
+
 As maternal hypertension in pregnancy may result from abnormal placental production of angiogenic factors, we measured these levels in serum. Despite a trend of higher placental growth factor-2 (Plgf-2) in the maternal circulation of Inf2−/− females at E15.5 (Figure 4—figure supplement 1; p=0.16), no significant differences were detected in either Plgf-2 (p=0.16, 0.97) or FMS-like tyrosine kinase 1 (Flt1; p=0.90, 0.87) levels at E15.5 or E18.5.
 
-## Inf2 is vital for the regulation of gestation length and fetal growth
+### Inf2 is vital for the regulation of gestation length and fetal growth
 
 To evaluate the significance of Inf2 in gestation, we compared pregnancy outcomes in Inf2+/+ and Inf2−/− mice. Gestation length was increased by 9.8 hr in Inf2−/− mice (Figure 5A; p=0.009) with no impact on pup weight at birth (p=0.96), litter size (p=0.83), or total litter weight (Figure 5B and Figure 5—figure supplement 1A and B; p=0.51 at E18.5, 0.31 at p0). Despite extended gestational length, there were no detectable differences in serum progesterone (p=0.64), uterine prostaglandins F2α (p=0.64) and E2 (p=0.99), or oxytocin receptor mRNA expression at E18.5 (Figure 5—figure supplement 2A–D; p=0.33) (Bezold et al., 2013). While normal weight at birth, fetal weight at E18.5 was significantly reduced in Inf2−/− pups compared to Inf2+/+ pups (Figure 5B; p=0.020). There were no differences in placental weight (Figure 5C; p=0.82); however, the ratio of fetal to placental weight was significantly reduced in Inf2−/− mice (Figure 5D; p=0.019). Previous studies showed that altered fetal growth in late pregnancy is preceded by changes in placental nutrient transport (Jansson et al., 2006), however, there were no detectable differences in mRNA expression of the amino acid or glucose transporters studied here at E18.5 (Figure 5—figure supplement 3A–D; p=0.19–0.65).
 
-## Inf2−/− pregnancies are complicated by placental vasculopathy
+![Figure 5.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig5-v1.jpg)
+
+**Figure 5.:** (A) Gestation lengths measured from visualization of a copulatory plug (n = 21, 35 dams; 19.26 ± 0.15 vs 19.67 ± 0.08 days; **p<0.01). (B) Pup weights at E18.5 were significantly reduced in Inf2−/− dams (n = 15, 13; 1.152 ± 0.03 vs 1.062 ± 0.018 grams; *p<0.05) while no difference in pup weight was measured at time of birth (P0; n = 10, 32; 1.358 ± 0.013 vs 1.359 ± 0.01 grams). (C) No significant differences in placental weight at E18.5 were detected (n = 13; 0.096 ± 0.003 vs 0.096 ± 0.003 grams). (D) The ratio of fetal weight to placental weight was significantly reduced in Inf2−/− dams (n = 6; 13.18 ± 0.298 vs 11.947 ± 0.326; *p<0.05). Data are presented as a boxplot (median, interquartile range, minimum, and maximum). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Number of pups from live births were not different between genotypes (E18.5, n = 15, 13; P0, n = 20, 35; 9 ± 0.44 vs 8 ± 0.59; 8 ± 0.47 vs 8 ± 0.40). (B) Total litter weight did not differ between genotypes (E18.5, n = 15, 14; 10.278 ± 0.465 vs 9.712 ± 0.721; P0, n = 10, 20, 11.412 ± 0.746 vs 10.201 ± 0.739). Data are presented as a boxplot (median, interquartile range, minimum, and maximum). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** No differences were detected in maternal serum progesterone (A) (n= 7, 8; 13.82± 1.91vs15.16± 2.08), uterine prostaglandin F2α (B) (n= 8, 12; 44.76± 3.25vs41.77± 4.62) and E2 (C) (n= 10; 19.48± 4.94vs19.56± 4.38), and uterine oxytocin receptor mRNA (D) (n = 5, normalized to E13.5 uterus; 2.35 ± 1.28 vs 4 ± 1) measured in Inf2+/+ and Inf2−/− dams at E18.5. All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** No differences were measured in Inf2+/+ or Inf2−/− E18.5 placental mRNA expression of nutrient transporters Snat2 (A) (Slc38a2; n = 5; 1.0 ± 0.16 vs 0.80 ± 0.06) or Glut1 (B) (Slc2a1; n = 3, 4; 1.0 ± 0.10 vs 0.88 ± 0.08), 3 (C) (Slc2a3; n = 3, 4; 1.0 ± 0.15 vs 0.86 ± 0.10), and 4 (D) (Slc2a4; n = 3, 4; 1.0 ± 0.10 vs 1.23 ± 0.39). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+### Inf2−/− pregnancies are complicated by placental vasculopathy
 
 Altered end-diastolic flow and pulsatility index may indicate the presence of intrauterine growth restriction (IUGR) and/or PE (Bond et al., 2015; Krebs et al., 1996; Turan et al., 2008). To assess vascular capacity and placental function, we performed umbilical artery and vein Doppler in pregnant Inf2+/+ and Inf2−/− dams at E18.5 (Figure 6A). End-diastolic velocity (EDV) and pulsatility index (PI) were significantly elevated in Inf2−/− fetuses (Figure 6B and C; p=0.045 and 0.022), with no significant differences in resistance index (p=0.33), peak systolic velocity (p=0.12), or fetal heart rate (Figure 6—figure supplement 1A–C; p=0.06). Moreover, some umbilical vein waveforms appeared pulsatile (Figure 6A). Fetal vascular density in the labyrinth of placentas (Figure 6D) at E18.5 was significantly higher in Inf2−/− placentas (Figure 6E; p=0.018) and the proportion of placental depth consisting of labyrinth but not junctional zone was significantly reduced in Inf2−/− compared to Inf2+/+ placentas (Figure 6F and G; p=0.030 and 0.105).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig6-v1.jpg)
+
+**Figure 6.:** (A) Umbilical Doppler images from Inf2+/+ and Inf2−/− fetuses highlighting differences in arterial and venous waveforms at E18.5. End diastolic velocity (B) (12.03 ± 0.619 vs 14.15 ± 0.902 mm/s) and pulsatility index (C) (1.907 ± 0.016 vs 2.007 ± 0.047) are significantly increased in Inf2−/− fetuses (n = 83, 54 fetuses; *p<0.05). (D) Representative images from endomucin-labeled Inf2+/+ and Inf2−/− E18.5 placentas depict differences in vessel density (scale bar: 50 μm), quantified in (E) (n = 2–3 placentas per dam, 5 and 7 dams; 66.53 ± 3.65 vs 79.4 ± 2.83 number/high powered field; *p<0.05). (F) The percent of total placenta depth consisting of the labyrinth was significantly reduced at E18.5 (n = 3 placentas per dam, five dams per genotype; 65.72 ± 1.26 vs 60.38 ± 1.58%; *p<0.05) while no differences were measured in the junctional zone (G) (n = 3 placentas per dam, five dams per genotype; 21.6 ± 1.09 vs 25.15 ± 1.60%). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** No differences in resistance index (A) (n = 83, 54 fetuses; 0.908 ± 0.004 vs 0.902 ± 0.004), peak systolic velocity (B) (n = 83, 54 fetuses; 138.3 ± 3.96 vs 150.4 ± 7.31), or fetal heart rate (C) (n = 77, 46 fetuses; 176.6 ± 5.14 vs 161.3 ± 6.09) were measured in Inf2+/+ or Inf2−/− umbilical Doppler at E18.5. All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
 
 To determine if INF2 regulates angiogenic factor expression, we utilized an in vitro model of the crosstalk between CTBs (BeWo choriocarcinoma) with reduced INF2 mRNA expression (Figure 7A; p<0.0001) and human placental microvascular endothelial cells (HPMVECs). Knockdown of INF2 significantly increased PGF mRNA in the BeWo cell line (Figure 7B; p=0.0007). HPMVEC exposure to cultured media significantly increased soluble vascular endothelial growth factor receptor type 1 (sVEGFR-1; sFLT1) mRNA (Figure 7D; p=0.0083) in response to INF2 deficiency; therefore, we hypothesized that PGF protein secreted by INF2-knockdown BeWo cells would also be increased and underlie the sFLT1 response in the HPMVECs. Knockdown of INF2 significantly upregulated secretion of PGF compared to vehicle-treated cells (Figure 7C; p=0.037). PGF secretion by nonsense siRNA-treated cells, however, did not differ significantly from vehicle-treated cells (Figure 7C; p=0.39). Global loss of Inf2 in mice, however, did not change placental Pgf or sFlt1 mRNA levels in vivo (data not shown).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31150/elife-31150-fig7-v1.jpg)
 
-**Figure 7.:** INF2 is necessary for regulating angiogenic factor expression.(A) Knockdown of INF2 in the BeWo cells (n = 4, 5, 5; 1.0 ± 0.08 vs 0.82 ± 0.08 vs 0.12 ± 0.02; ****p<0.0001, analyzed by 1-way ANOVA) significantly increased PGF mRNA (B) (n = 4, 5, 5; 1.0 ± 0.06 vs 1.09 ± 0.03 vs 1.69 ± 0.14; ***p<0.001, analyzed by 1-way ANOVA). This increase in mRNA corresponded with an increase in secreted PGF by INF2-deficient BeWo cells compared to vehicle-treated cells (D) (n = 7; 6.353 ± 0.68 vs 7.462 ± 1.53 vs 8.888 ± 1.485 pg/μg protein; *p<0.05, analyzed by paired 1-tailed t test). Treatment with nonsense siRNA did not significantly alter secretion of PGF compared to vehicle. Conditioned media from INF2-deficient BeWo cells induced a significant increase in sFLT1 mRNA (D) (n = 4, 5, 3; 1.0 ± 0.15 vs 1.07 ± 0.06 vs 2.01 ± 0.40; **p<0.01, analyzed by 1-way ANOVA). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
+**Figure 7.:** (A) Knockdown of INF2 in the BeWo cells (n = 4, 5, 5; 1.0 ± 0.08 vs 0.82 ± 0.08 vs 0.12 ± 0.02; ****p<0.0001, analyzed by 1-way ANOVA) significantly increased PGF mRNA (B) (n = 4, 5, 5; 1.0 ± 0.06 vs 1.09 ± 0.03 vs 1.69 ± 0.14; ***p<0.001, analyzed by 1-way ANOVA). This increase in mRNA corresponded with an increase in secreted PGF by INF2-deficient BeWo cells compared to vehicle-treated cells (D) (n = 7; 6.353 ± 0.68 vs 7.462 ± 1.53 vs 8.888 ± 1.485 pg/μg protein; *p<0.05, analyzed by paired 1-tailed t test). Treatment with nonsense siRNA did not significantly alter secretion of PGF compared to vehicle. Conditioned media from INF2-deficient BeWo cells induced a significant increase in sFLT1 mRNA (D) (n = 4, 5, 3; 1.0 ± 0.15 vs 1.07 ± 0.06 vs 2.01 ± 0.40; **p<0.01, analyzed by 1-way ANOVA). All data represent the mean ±SEM and were analyzed by unpaired 2-tailed t test, unless otherwise noted.
 
 ## Discussion
 
@@ -97,11 +193,264 @@ Overall, our data represent one mechanism of EVT invasion and proffer new avenue
 
 ## Materials and methods
 
-## Formin expression in human tissues
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>INF2</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Inf2</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Strain</td>
+      <td>C57BL/6</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:000664</td>
+    </tr>
+    <tr>
+      <td>Inf2−/−; Inf2 KO</td>
+      <td>KOMP</td>
+      <td>RRID:MGI:5759294</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Genetic reagent (H. sapiens)</td>
+      <td>Nonsense siRNA</td>
+      <td>Millipore Sigma SIC001</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Knockdown siRNA</td>
+      <td>ThermoFisher Scientific 4392420</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cell line (H. sapiens)</td>
+      <td>HTR-8/SVneo</td>
+      <td>Charles Graham; ATCC</td>
+      <td>RRID:CVCL_7162</td>
+    </tr>
+    <tr>
+      <td>BeWo</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0044</td>
+    </tr>
+    <tr>
+      <td>HPMVEC</td>
+      <td>Helen Jones</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Antibody</td>
+      <td>Rabbit polyclonal anti-MAL2</td>
+      <td>Abcam</td>
+      <td>RRID:AB_1280985</td>
+    </tr>
+    <tr>
+      <td>Rabbit polyclonal anti-Lck</td>
+      <td>Abcam ab208787</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Rabbit polyclonal anti-INF2</td>
+      <td>MilliporeSigma</td>
+      <td>RRID:AB_1078325</td>
+    </tr>
+    <tr>
+      <td>Goat polyclonal anti-Endomucin</td>
+      <td>R&amp;D Systems</td>
+      <td>RRID:AB_2100035</td>
+    </tr>
+    <tr>
+      <td>Gloat polyclonal anti-Proliferin</td>
+      <td>R&amp;D Systems</td>
+      <td>RRID:AB_2284428</td>
+    </tr>
+    <tr>
+      <td>Rabbit polyclonal anti-LCK</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2249950</td>
+    </tr>
+    <tr>
+      <td>MitoTracker Red CMXRos</td>
+      <td>ThermoFisher Scientific M7512</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Rabbit polyconal anti-INF2</td>
+      <td>MilliporeSigma</td>
+      <td>RRID:AB_11203139</td>
+    </tr>
+    <tr>
+      <td>Primers</td>
+      <td>Mouse Inf2 qPCR primers</td>
+      <td>Forward: CGAGTAGTTGACCACCGAGG Reverse: ACAGCACTCTGCACCATCTC</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Rps20 qPCR primers</td>
+      <td>Forward: GCTGGAGAAGGTTTGTGCG Reverse:AGTGATTCTCAAAGTCTTGGTAGGC</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Oxtr qPCR primers</td>
+      <td>Forward: ACGGGTCAGTAGTGTCAAGC Reverse: TAATGCTCGTCTCTCCAGGC</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Slc38a2 qPCR primers</td>
+      <td>Forward: ACCTTTGGTGATCAAGGCAT Reverse: AGGACCAGATAGTCACCGTT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Slc2a1 qPCR primers</td>
+      <td>Forward: TGCAGTTCGGCTATAACACT Reverse: GTAGCGGTGGTTCCATGTTT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Slc2a3 qPCR primers</td>
+      <td>Forward: CTTTGGCAGACGCAACTCTA Reverse: GCTATCTTGGCGAATCCCAT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Slc2a4 qPCR primers</td>
+      <td>Forward: ACTGGACCTGTAACTTCAT Reverse: GCAAATAGAAGGAAGACGTA</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Pgf qPCR primers</td>
+      <td>Forward: GACCTATTCTGGAGACGACA Reverse: GGTTCCTCAGTCTGTGAGTT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse sFlt1 qPCR primers</td>
+      <td>Forward: TGACGGTCATAGAAGGAACA Reverse: TAGTTGGGATAGGGAGCCA</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human INF2 qPCR primers</td>
+      <td>Forward: CACATCCAACGTGATGGTGAAG Reverse: GGAGAGCTCGTTCATGACAATG</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human ACTB qPCR primers</td>
+      <td>Forward: CGCGAGAAGATGAACCAG Reverse: TAGCACAGCCTGGATAGCAA</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human PGF qPCR primers</td>
+      <td>Forward: GAGGAGAGAGAAGCAGAGA Reverse: GTGACGGTAATAAATACACGAG</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Human sFLT1 qPCR primers</td>
+      <td>Forward: AGAAGGGCTCTGTGGAAAGT Reverse: ACACAGGTGCATGTTAGAGTG</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Commercial assay or kit</td>
+      <td>Mouse Angiogenesis/Growth Factor Magnetic Bead Panel</td>
+      <td>MilliporeSigma MAGPMAG-24K</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Mouse Soluble Cytokine Receptor Magnetic Bead Panel</td>
+      <td>MilliporeSigma MSCRMAG-42K</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Progesterone Mouse/Rat ELISA</td>
+      <td>BioVendor RTC008R</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PGE2 EIA Kit</td>
+      <td>Oxford Biomedical Research EA02</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>PGF2a EIA Kit</td>
+      <td>Oxford Biomedical Research EA05</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Human PLGF Quantikine ELISA Kit</td>
+      <td>R and D Systems DPG00</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chemical compound, drug</td>
+      <td>PP1</td>
+      <td>Cayman Chemical 14244 CAS: 172889-26-8</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>TX1123</td>
+      <td>MilliporeSigma 655200 CAS: 157397-06-3</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Software, algorithm</td>
+      <td>MAFFT, v7.310</td>
+      <td>(Katoh and Standley, 2013)</td>
+      <td>RRID:SCR_011811</td>
+    </tr>
+    <tr>
+      <td>SeaView</td>
+      <td>(Gouy et al., 2010)</td>
+      <td>RRID:SCR_015059</td>
+    </tr>
+    <tr>
+      <td>RAxML, v8.2.9</td>
+      <td>(Stamatakis, 2014)</td>
+      <td>RRID:SCR_006086</td>
+    </tr>
+    <tr>
+      <td>PROTGAMMAAUTO</td>
+      <td>(Jones et al., 1992)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>FigTree, v1.4.3</td>
+      <td>(Rambaut, 2007)</td>
+      <td>RRID:SCR_008515</td>
+    </tr>
+  </tbody>
+</table>
+
+### Formin expression in human tissues
 
 Expression data on the 15 human formins in placenta, fallopian tube, breast, ovary, endometrium, and uterus were collected from the Human Protein Atlas (Uhlén et al., 2015) where RNA-sequence expression is measured in TPM (Transcripts Per Kilobase Million).
 
-## Sequence retrieval and phylogenetic inference
+### Sequence retrieval and phylogenetic inference
 
 To identify genes that belong to the formin gene family we used the defining FH2 domain as a query against the Pfam database (Finn et al., 2005). Using UniProtKB identifiers for 11 mammalian species (Homo sapiens, Pan troglodytes, Gorilla gorilla, Pongo abelii, Nomascus leucogenys, Macaca mulatta, Calithrix jacchus, Otolemur garnettii, Mus musculus, Rattus norvegicus, and Canis lupus familiaris), coding and protein sequences of the 15 genes of the formin family were collected from ENSEMBL, release 89 (Cunningham et al., 2015). Exceptions to this gene family were found in P. troglodytes and P. abelii (P. troglodytes lacks DIAPH1 and FMN2 and P. abelii lacks FMNL1). Most proteins were annotated as members of the family (155); however, others were annotated as novel predictions (7). Only the longest coding sequence for each ortholog was kept.
 
@@ -109,66 +458,66 @@ Protein sequences for all mammalian formins were aligned with the alignment prog
 
 Unaligned coding sequences of mammalian formins were derived using Pal2Nal, v14 (Suyama et al., 2006). Coding sequence alignment was reformatted using the program trimAl, v1.3 (Capella-Gutiérrez et al., 2009). The FH2 mammalian tree was edited to distinguish INF clade branches as the foreground from the remaining background branches. Another FH2 phylogeny was edited distinguishing only INF2 clade branches from the rest of the tree. To examine ancient positive selection on the mammalian FH2 domain in the INF and INF2 clades, analyses of evolutionary rates were conducted using the codeml package in PAML, v4.8 (Yang, 2007). Branch models were used to predict the rates of codon substitution (dn/ds) based on the following hypotheses: all branches reflect equivalent rates of amino acid substitution (H0), positive selection on the INF clade (H1), and positive selection on the INF2 clade (H2).
 
-## Cell lines
+### Cell lines
 
 First trimester human EVT (HTR-8/SVneo) cells were cultured in RPMI-1640 medium supplemented with 5% FBS at 37°C under 5% CO2 (Graham et al., 1993). BeWo choriocarcinoma cells, which are male in origin, were cultured in nutrient Mixture F-12 Hams medium supplemented with penicillin (100 U/mL), streptomycin (100 μg/mL), and 10% FBS at 37°C under 5% CO2. HPMVECs, the sex of which are undetermined, were maintained at 37°C under 5% CO2 in EGM-2 plated on Attachment Factor-coated culture flasks (Troja et al., 2014). BeWo choriocarcinoma cells were authenticated by STR profiling and tested negative for mycoplasma contamination by ATCC (ATCC, Manassas, VA). HTR-8/SVneo cells, a generous gift from Dr. Charles Graham at Queen's University (Graham et al., 1993), have also been authenticated by STR profiling and tested negative for mycoplasma contamination by ATCC. HPMVECs were isolated from normal term pregnancies under IRB approval and were tested for expression of endothelial cell markers CD31 and von Willebrand factor (Troja et al., 2014). Contamination by smooth muscle cells was assessed by immunocytochemistry. Mycoplasma contamination was not assessed in these cells.
 
-## Transfection and drug treatment
+### Transfection and drug treatment
 
 HTR-8/SVneo and BeWo cells were seeded at a density of 2.5 × 105 cells per well of a 6-well plate and allowed to reach 70% confluency at the time of transfection. Transfections were performed in duplicate (triplicate for invasion assays) with 50 nM of MISSION siRNA Universal Negative Control #1 (Millipore Sigma, St. Louis, MO), 50 nM of INF2 siRNA (Thermo Fisher Scientific, Waltham, MA), or vehicle following the Lipofectamine 3000 Reagent standard protocol (Thermo Fisher Scientific). 24 hr post-transfection, the media was replaced on cells and replaced with either growth media or serum-free media. 48 hr post-transfection, cells were harvested for mRNA or protein analysis. Additional HTR-8/SVneo cells were cultured for 7 days in DMSO, 1 μM PP1 (Cayman Chemical, Ann Arbor, MI), or 1 μM TX1123 (Millipore Sigma) prior to invasion assays.
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 RNA was isolated from whole mouse placentas or uterus using TRIzol reagent (Thermo Fisher Scientific) per manufacturer’s protocols. RNA was isolated from cells using the Qiagen RNeasy Mini Kit per the manufacturer’s protocols. cDNA was synthesized from 1000 ng of RNA (Qiagen, Hilden, Germany) per manufacturer’s protocols. EXPRESS SYBR GreenER (Thermo Fisher Scientific) was used for qPCR analysis. Primer sequences were generated using the NCBI primer BLAST tool for human INF2 and mouse Inf2 mRNAs. All mouse genes analyzed were normalized to Ribosomal Protein S20 (Rps20) expression. All human genes analyzed were normalized to Beta-Actin (ACTB) expression. Gene expression data were generated and calculated using the ΔΔCt method on the StepOnePlus real time PCR system (Applied Biosystems, Foster City, CA).
 
-## Protein isolation and analysis
+### Protein isolation and analysis
 
 Cell pellets were homogenized in RIPA Buffer (Millipore Sigma) supplemented with Protease Inhibitor Cocktail (Millipore Sigma) and Phosphatase Inhibitor Cocktails I and II (Millipore Sigma) and protein concentration determined by BCA Assay (Thermo Fisher Scientific). 30 μg was loaded per lane of a 4–12% gradient Bis-Tris polyacrylamide gel (Thermo Fisher Scientific) and transferred to a Hybond enhanced nitrocellulose membrane using a semidry transfer system (BioRad, Hercules, CA). Membranes were blocked with 5% milk in TBS with 0.1% Tween-20 (Millipore Sigma). Blots were probed with overnight at 4°C with anti-INF2 (Millipore Sigma, ABT61, 1:500) or anti-LCK (Abcam, Cambridge, UK; ab208787, 1:2000). Binding of the secondary goat anti-rabbit secondary antibody (Santa Cruz, Dallas, TX; sc-2004, 1:10,000) was determined using SuperSignal West Dura Extended Duration Substrate (Thermo Fisher Scientific). Blots were stripped with Restore Western Blot Stripping Buffer (Thermo Fisher Scientific) and reprobed with the anti-actin antibody (Millipore Sigma, 1:30,000) as an internal control.
 
-## Matrigel invasion assay
+### Matrigel invasion assay
 
 Serum starved HTR-8/SVneo cells were plated on BioCoat Matrigel Invasion Chambers (Corning, Corning, NY) at a density of 2.0 × 105 cells in 200 μL of serum-free media. Each chamber was placed in a well of a 24-well plate containing 600 μL of RPMI medium with 10% FBS for 24 hr, after which the Matrigel and non-invading cells were removed from the membrane. Inserts were fixed in 4% PFA and washed in PBS. Nuclei of invaded cells were stained with DAPI and membranes were mounted on slides. Invaded cells were counted in five random fields at 10x magnification in three inserts per treatment and in three independent experiments. Drug-treated HTR-8/SVneo cells were similarly tested for invasiveness after culture for 7 days in DMSO, 1 μM PP1 (Cayman Chemical), or 1 μM TX1123 (Millipore Sigma) in three independent experiments. Data are represented as percent invaded cells normalized to vehicle-treated HTR-8/SVneo cells.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 24 hr post-transfection, cells were transferred to a chamber slide (ibidi). 48 hr post-transfection, one subset of slides were treated for 20 min with 100 mM MitoTracker Red CMXRos (Thermo Fisher Scientific, M7512) at 37°C. Media was removed from remaining slides and cells were washed with PBS and fixed in 4% PFA. After blocking in 10% normal horse serum in 0.1% Tween-PBS, cells were incubated overnight at 4°C with MAL2 (Abcam, ab75347, 1:100) or LCK (Abcam, ab208787, 1:100). Positive staining was detected using a fluorescent donkey anti-rabbit IgG secondary antibody (Thermo Fisher Scientific, 1:200). Cells were counterstained with Alexa Fluor 594 phalloidin (Thermo Fisher Scientific, 1:500) and DAPI (Thermo Fisher Scientific, 1:10,000). Cells were washed and post-fixed with 4% PFA and were imaged on a Nikon Ti-E inverted microscope with a Nikon A1R and a 100x oil immersion objective in the Confocal Imaging Core at Cincinnati Children’s. Images were processed in NIS-Elements and depicted as maximum intensity projections and are representative from three independent experiments. Imaris, v9.0.1 (Bitplane, Zurich, Switzerland), was used to determine mitochondrial volume and phalloidin content of HTR-8/SVneo cells. Cytoplasmic phalloidin content was determined by taking the ratio of cytoplasmic phalloidin volume to the total cellular phalloidin volume, which we multiplied by 100.
 
-## Animals
+### Animals
 
 Inf2-deficient mice (Inf2tm1.1(KOMP)Vlcg, abbreviated Inf2−/−) used for this research project were generated by the trans-NIH Knock-Out Mouse Project (KOMP) on a C57BL/6NTac background and obtained from the KOMP Repository (Dickinson et al., 2016). Using the ZEN-Ub1 cassette in VGB6 ES cells, 12,623 bp of Inf2 (Chr12:112,600,006–612,628) were deleted, with an insertion of a LacZ reporter between exons 1 and 23, removing 1270 amino acids. Mice were housed on a 14-/10 hr light-dark cycle with access to chow and water ad libitum. Colonies were maintained as Inf2+/− x Inf2+/− matings, allowing for Inf2−/− animals to be compared to littermate controls. Females between 10 weeks and 6 months of age were used for studies. All animal procedures were approved by the Cincinnati Children’s Medical Center Animal Care and Use Committee and were in accordance with the National Institutes of Health guidelines.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Nulliparous females were set up with males (so pups were homozygous) for timed matings at 1700 hr and separated the following morning at 0800 hr. A copulatory plug marked 0.5 days post-coitum (dpc). Placentas at gestational days 15.5 and 18.5 were collected and fixed overnight in 4% PFA at 4°C. Tissues were washed in PBS, halved, and immersed in 70% ethanol prior to processing and paraffin embedding. Placentas were sectioned at 5 μm. Slides were baked at 60°C overnight, deparaffinized, and rehydrated. Antigen retrieval was performed using 10 mM citrate buffer (pH 6.0) followed by PBS washes. Endogenous peroxidase activity was removed by treatment with 3% H2O2 for DAB IHC. Non-specific binding was blocked by incubating slides for 1 hr in 4% normal horse serum in 0.1% Tween-PBS. Inf2 was detected using a rabbit anti-INF2 primary antibody (Millipore Sigma, HPA000724, 1:25) and using a biotinylated horse anti-rabbit IgG secondary antibody at (Vector Laboratories, Burlingame, CA; BA-1100, 1:200) followed by treatment with ABC peroxidase complex (Vector Laboratories). Slides were developed with either DAB (Vector Laboratories), counterstained with nuclear fast red and mounted with PROTOCOL Mounting Medium (Thermo Fisher Scientific), or developed with Cyanine 5 tyramide (Perkin Elmer, Waltham, MA), counterstained with DAPI (Thermo Fisher Scientific) and mounted with ProLong Gold Antifade Mountant (Thermo Fisher Scientific). Immunofluorescent co-localization of INF2 with: endothelial cells using a goat anti-Endomucin-2 antibody (R&D Systems, Minneapolis, MN; AF4666, 1:200), canal and spiral artery-associated TGCs using a goat anti-Proliferin antibody (R&D Systems, AF1623, 1:200), and trophoblasts using Alexa Fluor 594 rabbit anti-Cytokeratin 7 (Abcam, Cambridge, UK; ab209600, 1:100). Lck localization was determined using a rabbit anti-Lck antibody (Abcam, ab3885, 1:200). Nuclei were counterstained with DAPI (Thermo Fisher Scientific, 1:10,000). Images are representative of placentas from three dams per genotype.
 
-## Visualization of maternal circulation
+### Visualization of maternal circulation
 
 At E19.0, 300 μL of 400 μg/mL DyLight 649 labeled Lycopersicon Esculentum (Tomato) Lectin (Vector Laboratories) in 100 U/mL heparin sulfate and PBS was injected into the tail vein. 20 min were allowed for lectin circulation. Placentas were fixed in 4% PFA overnight at 4°C. The following day, placentas were washed in PBS. Tissue was cleared via an active CLARITY technique (Lee et al., 2016). Placentas were incubated overnight at 4°C in a 4% acrylamide hydrogel monomer containing 0.25% Wako VA-044 photoinitiator. Tissues were incubated for 3–4 hr in a 37°C water bath to polymerize the gel. Tissues were lightly washed, then placed in a Logos Biosystems X-CLARITY machine for 6–8 hr at 1.5 Amperes and 37°C. Post clearing, tissues were washed in 37°C water overnight, then multiple washes with PBS to remove any residual SDS. Placentas were then dehydrated in a methanol series and placed in benzyl alcohol/benzyl benzoate for final clearing and mounted in a custom-made aluminum chamber slide for upright microscopy. Images were acquired on a Nikon FN1 upright microscope with a Nikon A1R-MP in single-photon confocal mode and a 16X/0.8 NA water immersion objective in the Confocal Imaging Core at Cincinnati Children’s. Images were stitched, analyzed and processed in NIS-Elements. A researcher blinded to mouse genotype counted and recorded number of spiral arteries. Images and videos are representative.
 
-## Systolic blood pressure measurements
+### Systolic blood pressure measurements
 
 Systolic blood pressure was measured in conscious animals using a non-invasive Volume Pressure Recording method (Kent Scientific, Torrington, CT), a previously validated method (Feng et al., 2008). Females were trained in the restraints on the warming platform for two weeks prior to the study. Baseline measurements were an average of measurements on virgin females for three consecutive days. Plugged females resumed training at E7.5 to avoid interfering with implantation while non-plugged females resumed training until plugged. Measurements were taken longitudinally from E14.5 through postnatal day 7. Three cycles used to acclimate females to tail cuff inflation and discarded from analysis, using acceptable reads from the following 12 cycles. Investigator observed all measurement cycles and manually discarded reads with signal artifacts. Data collected by Kent Scientific software were analyzed off-line. All blood pressure measurements were obtained between 0700 and 1000 hr.
 
-## Circulating angiogenic factors
+### Circulating angiogenic factors
 
 Maternal blood was collected in serum separator tubes at E15.5 and E18.5 by submandibular phlebotomy. Blood was allowed to clot at room temperature for 30 min and serum was removed and stored per the manufacturer’s conditions until assayed by the Research Flow Cytometry Core at CCHMC on a MILLIPLEX MAP Mouse Angiogenesis/Growth Factor Magnetic Bead Panel and MILLIPLEX MAP Mouse Soluble Cytokine Receptor Magnetic Bead Panel (Millipore Sigma).
 
-## Parturition and pregnancy outcome
+### Parturition and pregnancy outcome
 
 Nulliparous Inf2−/− or Inf2+/+ females were set up with homozygous males of corresponding genotype for timed matings at 1700 hr and separated the following morning at 0800 hr. Visualization of a copulatory plug marked 0.5 days post-coitum (dpc). Cages were checked four times daily (0600, 1000, 1400, 1800 hr) to calculate gestation length, determined by the timing of birth of the first pup. Number of pups in a litter and pup weights were recorded at birth (P0) or at E18.5 after euthanization. Serum progesterone concentration at E18.5 (by submandibular phlebotomy as described above) was measured by ELISA according to manufacturer’s protocols (BioVendor, Brno, Czech Republic; RTC008R). PGF2α and PGE2 were measured on snap frozen uterus at E18.5. Prostaglandins were extracted after weighing frozen tissue by homogenization in 100% ethanol. Centrifugation removed debris and the supernatant dried down under inert gas, resuspended and assayed per the manufacturer’s instruction (Oxford Biomedical Research, Rochester Hills, MI).
 
-## Transabdominal umbilical Dopplers
+### Transabdominal umbilical Dopplers
 
 A Vevo 2100 ultrasound machine (Fugifilm VisualSonics, Toronto, Canada) equipped with a 40 MHz transducer was used to perform fetal ultrasounds on E18.5. Dams were anesthetized with 1.0% inhaled isoflurane, abdominal hair removed with a depilatory agent, and positioned on a warmed platform to maintain euthermia. After fetal number and placement were determined, each fetus was examined consecutively around the uterine horn. Seven fetuses per litter were scanned in each dam. Umbilical vessels were identified using 2-dimensional and color Doppler imaging with the vessels traced from the fetus to the site of insertion into the placenta. A freely mobile loop of umbilical cord was interrogated. Color Doppler images of the umbilical artery and vein were recorded, typically capturing flow in both vessels simultaneously. The pulsed wave Doppler sample volume was adjusted and subtle positional changes of the transducer made to obtain umbilical vessel interrogation as close to parallel flow as possible, adjusting the beam angle from 0 to 60 degrees as needed to provide the best alignment. Pulsed wave Doppler is recorded at a sweep speed of 5.1 m/second with peak velocity scaled to a maximum of 150 mm/second to optimize tracings for off line analysis. Images were analyzed using the vascular package included in the Vevo 2100 software by investigators blinded to genotype. Off line measurements include fetal heart rate, umbilical artery peak systolic velocity (PSV), end diastolic (EDV) and the umbilical artery velocity time integral (VTI), the latter of which provides the umbilical artery mean velocity. Umbilical vein flow was qualitatively assessed for abnormalities such as pulsatile diastolic flow or flow reversal. Images highlight the largest differences.
 
-## Histomorphometry
+### Histomorphometry
 
 Vascular density was measured in placentas at E15.5 and E18.5 by counting the number of blood vessels, identified using IF for Endomucin, per high-powered field (40X magnification), blinded to genotype. Vessel numbers in each of 10 random fields were averaged in a single section per placenta across 2–3 placentas per dam. An average of three measurements made across 20X H&E scans of each the labyrinth, junctional zone, and whole placenta were taken using the Nikon Elements Software. Results were reported from 2 to 3 placentas per dam at E18.5. Images are representative.
 
-## CTB/Endothelial cell crosstalk
+### CTB/Endothelial cell crosstalk
 
 24 hr post-transfection, media on transfected BeWo cells was replaced with EGM-2 (Lonza, Basel, Switzerland). 48 hr post-transfection, BeWo cells were harvested for RNA analysis while the media was removed and placed on HPMVECs at 70% confluence grown in 6-well plates coated with attachment factor (Thermo Fisher Scientific). In a subset of BeWo cells, media and cells were collected for PGF ELISA analysis (R&D Systems, DPG00). ELISA data were normalized to total protein. HPMVECs were cultured in BeWo cell conditioned medium for 48 hr prior to harvesting for RNA analysis.
 
-## Statistics
+### Statistics
 
 Data were analyzed by Student’s t test, one-, or two-way ANOVA test (Prism 7.0c software; GraphPad Software, Inc., San Diego, CA) as indicated in Figure Legends and a p≤0.05 was considered significant. The n represents either dams or fetuses as indicated in Figure Legends. Results are reported as ±SEM.

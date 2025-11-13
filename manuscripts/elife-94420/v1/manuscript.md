@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 The University of Cambridge Metabolic Research Laboratories, Wellcome Trust-MRC Institute of Metabolic Science Cambridge United Kingdom
-2. https://ror.org/037a8w620 MRC Metabolic Diseases Unit, Wellcome Trust-MRC Institute of Metabolic Science Cambridge United Kingdom
-3. https://ror.org/05m8dr349 The National Institute for Health Research Cambridge Biomedical Research Centre Cambridge United Kingdom
-4. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
-5. https://ror.org/01cwqze88 Laboratory of Clinical Immunology & Microbiology, Intramural Research Program, National Institute of Allergy and Infectious Disease, National Institutes of Health Bethesda United States
-6. https://ror.org/01wka8n18 Department of Comparative Biomedical Science, The Royal Veterinary College London United Kingdom
-7. https://ror.org/01nrxwf90 Centre for Cardiovascular Science, University of Edinburgh Edinburgh United Kingdom
-8. https://ror.org/011jsc803 MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
+1. The University of Cambridge Metabolic Research Laboratories, Wellcome Trust-MRC Institute of Metabolic Science Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. MRC Metabolic Diseases Unit, Wellcome Trust-MRC Institute of Metabolic Science Cambridge United Kingdom ([ROR:037a8w620](https://ror.org/037a8w620))
+3. The National Institute for Health Research Cambridge Biomedical Research Centre Cambridge United Kingdom ([ROR:05m8dr349](https://ror.org/05m8dr349))
+4. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
+5. Laboratory of Clinical Immunology & Microbiology, Intramural Research Program, National Institute of Allergy and Infectious Disease, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+6. Department of Comparative Biomedical Science, The Royal Veterinary College London United Kingdom ([ROR:01wka8n18](https://ror.org/01wka8n18))
+7. Centre for Cardiovascular Science, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+8. MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:011jsc803](https://ror.org/011jsc803))
 
 † Corresponding author
 
@@ -45,43 +45,107 @@ We now address mechanisms underlying human mixed gain- and loss-of-function phen
 
 ## Results
 
-## PI3K subunit expression and signalling in APDS2 fibroblasts
+### PI3K subunit expression and signalling in APDS2 fibroblasts
 
 Disorders in the PIK3CA-related overgrowth spectrum (PROS) feature soft tissue overgrowth and are caused by heterozygous, mosaic activating mutations in PIK3CA, encoding the p110α catalytic subunit of PI3Kα (Madsen et al., 2018). In this group, basal hyperactivation of PI3Kα signalling can be easily discerned in dermal fibroblasts from affected areas of the body (Lindhurst et al., 2012). PIK3R1, like PIK3CA, is ubiquitously expressed, yet overgrowth is not reported in APDS2 caused by heterozygous, constitutional activating mutations in PIK3R1. Dermal fibroblasts strongly express PIK3R1, but no studies to date have evaluated whether PI3K activity is increased in APDS2.
 
 We began by assessing dermal fibroblasts cultured from a previously described 32-year-old Turkish woman with APDS2 due to the common causal PIK3R1 mutation. This affects a splice donor site that causes skipping of exon 11, leading to in-frame deletion of 42 amino acids (434–475 inclusive) in the inter-SH2 domain, which is shared by all PIK3R1 isoforms (Patient A.1 in Lucas et al., 2014b; Figure 1—figure supplement 1). These cells were compared to cells from healthy control volunteers, or from people with PROS. Confirmation of expression of all pathogenic mutations was undertaken by cDNA sequencing prior to further study (Figure 1—figure supplement 2A). We found that truncated p85α was expressed, but at a much lower protein level than full-length wild-type (WT) p85α (Figure 1A, Figure 1—figure supplement 2B and C). Despite this, no increase in basal or insulin-stimulated AKT phosphorylation was seen in APDS2 cells compared to cells from WT volunteers or from people with PROS and activating PIK3CA mutations H1047L or H1047R (Figure 1A–C, Figure 1—figure supplement 3A and B). Although insulin-induced AKT phosphorylation was lower in fibroblasts from the one APDS2 patient studied compared to controls, we have previously reported extensive variability in insulin-responsiveness of primary dermal fibroblasts. Moreover even primary cells from a patient expressing high levels of the SHORT syndrome-associated p85α Y657X did not show attenuated insulin action (Huang-Doran et al., 2016). The reduced insulin action in APDS2 cells in the current study thus should not be overinterpreted until reproduced in further APDS2 cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig1-v1.jpg)
+
+**Figure 1.:** Immunoblotting of AKT, AKT phosphorylated at threonine 308 (T308) or serine 473 (S473), p85α, p110δ, and p110α and are shown with and without stimulation by 100 nM insulin (Ins) for 10 min. β-Actin is shown as a loading control, with different amounts of pooled lysate (Pool) used to demonstrate signal intensity in the linear range. Molecular weight markers (in kDa) are indicated to the left. Results are shown from four healthy controls (wild-type [WT]; 1–4), one patient with activating p110 delta syndrome 2 (APDS2) due to the p85α Δexon11 variant, and three patients with PIK3CA-related overgrowth spectrum (PROS) caused by the activating PIK3CA mutations indicated. (A) Immunoblots, with the truncated p85α Δexon11 variant arrowed. (B–E) Quantification of immunoblot bands from three independent experiments are shown for phosphoAKT-S473, phosphoAKT-T308, p110δ, and p110α, respectively. Each point represents data from one of the patient cell lines in the immunoblots. Paired datapoints ± insulin are shown in (B) and (C), and dotted lines mark means. Asterisks indicate a significant difference. More detailed statistical analysis including 95% confidence intervals for the paired mean differences for these comparisons are shown in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All three protein products of PIK3R1 are illustrated, namely p85α, p55α, and p50α. The site of the heterozygous in-frame deletion caused by skipping of exon 11 that explains most cases of activating p110 delta syndrome 2 (APDS2) is indicated as well as the three heterozygous SHORT syndrome causal variants studied, including the commonest causal variant R649W. All proteins and variants studied are indicated in red. For reference the reported truncating homozygous variants that disrupt only p85α and that are associated with agammaglobulinaemia are also shown. BH = BCR homology, nSH2=N-terminal SH2, cSH2=C-terminal SH2, iSH2=inter-SH2 domain.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Details of cDNA sequence for PIK3CA and PIK3R1 from cells derived from healthy controls (wild-type [WT]), patients with activating p110 delta syndrome 2 (APDS2) (p85α ΔEx11) or PIK3CA-related overgrowth spectrum (PROS), confirming expected expression of mutant alleles. (B) Higher magnification detail of immunoblot from WT and APDS2 fibroblasts (arrowed lane) showing truncated p85α Δex11 in APDS2 cells only. (C) Close-up view of all three immunoblot replicates for p110δ blots quantified in Figure 1 (APDS2 and adjacent genotypes only), showing severely reduced p110δ expression in the APDS2 cell line.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The paired mean difference for are shown in Cumming estimation plots. The raw data, as presented in Figure 1, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars. (C, D) Analysis of differences in (C) p110α and (D) p110δ protein expression between healthy control cells and cells from PIK3CA-related overgrowth spectrum (PROS) patients harbouring activating PIK3CA mutations. Mean differences are shown in Gardner-Altman estimation plots, with expression data plotted on the left axes and mean difference on floating axes on the right, again as a bootstrap sampling distribution with mean difference depicted as a dot and 95% confidence intervals by the ends of the vertical bar.
+
 Previous studies have suggested that the truncated, APDS2-causal p85α variant exerts a much greater activating effect on p110δ, which has a more restricted tissue expression, including immune cells, than p110α, which is ubiquitous (Dornan et al., 2017). We found that both p110α and p110δ were easily detectable in control dermal fibroblasts, however p110δ was almost absent in APDS2 fibroblasts compared to controls, with lower levels also seen in PROS cells (Figure 1A and D, Figure 1—figure supplement 3D). p110α was unchanged in APDS2 cells but modestly increased in PROS cells (Figure 1A and E, Figure 1—figure supplement 3C). Collectively these findings suggest that any ability of the APDS2 PIK3R1 variant in skin cells to activate PI3K may be overcome by reduced protein levels of p110δ, likely through reduced binding and/or reduced stabilisation of p110δ by the mutant regulatory subunit.
 
-## Overexpressed PIK3R1 ΔExon11 is potently dominant negative in 3T3-L1 preadipocytes
+### Overexpressed PIK3R1 ΔExon11 is potently dominant negative in 3T3-L1 preadipocytes
 
 We next turned to a well-established cellular system allowing conditional overexpression of PK3R1 alleles of interest. We have previously shown that overexpression of two SHORT syndrome PIK3R1 variants – R649W and Y657X – impair insulin signalling and adipocyte differentiation of murine 3T3-L1 preadipocytes, consistent with impaired PI3Kα function and with the lipodystrophy and insulin resistance seen in SHORT syndrome (Huang-Doran et al., 2016). To assess the effect of the APDS2 ΔEx11 in the same, non-immunological, cell context, we used lentiviral vectors, as previously described (Huang-Doran et al., 2016), to generate clonal 3T3-L1 cell lines allowing conditional, tuneable overexpression of PIK3R1 variants in response to doxycycline (Figure 2—figure supplement 1). For signalling studies, we also generated cells conditionally overexpressing the PROS- and cancer-associated PIK3CA H1047R mutation as a positive control for increased PI3Kα signalling, while for differentiation studies we used previously reported lines conditionally expressing PIK3R1 R649W or Y657X (Huang-Doran et al., 2016; Figure 1—figure supplement 1). In undifferentiated cells, we first confirmed doxycycline-dependent overexpression of p85α or p110α transgenes (Figure 2A), before assessing basal and insulin-stimulated Akt phosphorylation. As expected, overexpression of oncogenic H1047R p110α strongly increased basal Akt phosphorylation (Figure 2A–C, Figure 2—figure supplement 2A and C) with no additional increase on insulin stimulation (Figure 2A–C, Figure 2—figure supplement 2B and D). Surprisingly, however, not only did overexpression of the APDS2 ΔEx11 p85α not increase basal PI3Kα signalling, but it also potently inhibited insulin-induced Akt phosphorylation, consistent with a strong dominant negative action on pathway activation (Figure 2A–C, Figure 2—figure supplement 2). Overexpressing WT p85α mildly reduced insulin-stimulated Akt phosphorylation (Figure 2A–C, Figure 2—figure supplement 2B and C), although WT p85α was not expressed to as high a level as ΔEx11 p85a. In keeping with impaired PI3Kα activity, overexpression of the ΔEx11 variant also severely impaired adipocyte differentiation, assessed by triglyceride accumulation in response to a standard differentiation protocol (Figure 2D). A similar effect was seen on overexpressing SHORT syndrome variants R649W and Y657X (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig2-v1.jpg)
+
+**Figure 2.:** Immunoblotting of Akt, Akt phosphorylated at threonine 308 (T308) or serine 473 (S473), p85α, and p110α and are shown with and without stimulation with 100 nM insulin (Ins) for 10 min. Molecular weight markers (in kDa) are indicated to the left. Cells were treated with doxycycline (Dox) 1 μg/mL for 72 hr prior to insulin stimulation as indicated. (A) One immunoblot representing three experiments is shown. (B, C) Quantification of immunoblot bands from all three independent experiments shown for phosphoAkt-S473 and phosphoAkt-T308, respectively. Paired datapoints ± insulin are shown, and dotted lines mark means. Asterisks indicate a significant difference. More detailed statistical analysis including 95% confidence intervals for the paired mean differences for these comparisons are shown in Figure 2—figure supplement 2. (D) Staining for neutral lipid with Oil Red O of 3T3-L1 cells at day 10 of adipocyte differentiation. Induction of transgene expression by 1 μg/mL Dox throughout differentiation is shown. Images of entire plates are shown above, with representative bright-field microscopy images below. Scale bars on micrographs are 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Wild-type 3T3-L1 murine preadipocytes with intact endogenous Pik3r1 expression were infected with pSLIK lentivirus with a payload of wild-type or mutant human PIK3R1 under control of a doxycycline-responsive promoter. After selection stable cells with or without doxycycline exposure to induce transgenic PIK3R1 expression were either differentiated to adipocytes, or stimulated with 100 nM insulin as indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Analysis of the effects of doxycycline-induced expression of wild-type (WT) or ΔEx11 (activating p110 delta syndrome 2 [APDS2]) p85α, or of p110α H1047R (PIK3CA-related overgrowth spectrum [PROS]) on Akt S473/4 (A, B) and T308/9 (C, D) phosphorylation. Comparisons are made in both the basal, non-insulin-stimulated state (A, C) and after stimulation with 10 nmol/L insulin (B, D). Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 2, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Immunoblots of p85α, phosphoAkt (S473), and total Akt are shown for control 3T3-L1 cells and 3T3-L1 cells conditionally expressing wild-type (WT), or activating p110 delta syndrome 2 (APDS2)-associated mutant p85α under the control of doxycycline (Dox), with and without 10 min of exposure to insulin as indicated. The filled black triangles indicate increasing concentrations of Dox (from left to right: 0, 0.02, 0.03, 0.045, 0.065, or 0.1 μg/mL). Exposure was for 72 hr in all cases. The truncated p85α variant can be seen below the WT p85α for the APDS2 ΔEx11 mutant.
+
 To assess whether the inhibitory effect of ΔEx11 p85α might be an artefact caused by strong overexpression, doxycycline titration was used to assess whether a low level of overexpression might unmask signalling hyperactivation. However, no such hyperactivation was seen, and instead, a graded diminution of insulin-induced AKT phosphorylation was observed from the lowest to highest levels of p85a ΔEx11 overexpression (Figure 2—figure supplement 3).
 
-## Effect of PIK3R1 mutations on PI3K activity in vitro
+### Effect of PIK3R1 mutations on PI3K activity in vitro
 
 Given this evidence that APDS2-associated PIK3R1 ΔEx11 potently inhibits PI3Kα signalling when overexpressed in 3T3-L1 preadipocytes, we next sought to investigate the biochemical basis of this observation. First, we assessed the effect of disease-causing PIK3R1 mutations on basal and phosphotyrosine-stimulated activity of purified PI3Kα, β, and δ holoenzyme in a previously described reconstituted in vitro system (Burke et al., 2012). As well as the APDS2 ΔEx11 mutation, we selected three SHORT syndrome-associated mutations to study. These were the most common causal mutation, R649W, which abolishes phosphotyrosine binding by the C-terminal SH2 (cSH2) domain (Chudasama et al., 2013), Y657X, which truncates the cSH2 domain (Huang-Doran et al., 2016; Kwok et al., 2020), and E489K which, atypically, lies in the inter-SH2 domain where most cancer, overgrowth, and APDS2-associated mutations lie (Thauvin-Robinet et al., 2013). PIK3R1 E489K-containing primary cells were previously suggested to show basal hyperactivation (Thauvin-Robinet et al., 2013).
 
 Wild-type and SHORT syndrome mutant holoenzymes were successfully purified for in vitro assay, but despite multiple attempts, ΔEx11 holoenzyme could only be made in small amounts under identical conditions, and moreover was unstable on storage, precluding further study. Such instability of in vitro synthesised ΔEx11 holoenzyme was previously reported (Dornan et al., 2017). Also in keeping with previous reports (Chudasama et al., 2013; Dornan et al., 2017; Dornan et al., 2020), p85α R649W showed severely reduced phosphotyrosine-stimulated activity in complex with p110α, with highly significant but lesser loss of function seen for Y657X and E489K (Figure 3A, Figure 3—figure supplement 1A). No increase in basal activity was seen for any variant.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig3-v1.jpg)
+
+**Figure 3.:** Lipid kinase activity of purified recombinant PI3K complexes generated using baculoviral expression in Sf9 cells was measured using a modified fluorescence polarisation assay. Wild-type (WT) p85α or p85α SHORT syndrome mutations, E489K, R649W, or Y657X bound to either (A) p110α, (B) p110β, or (C) p110δ were assayed for basal and bisphosphotyrosine (pY2)-stimulated lipid kinase activity. Dotted lines mark means, and asterisks indicate a significant difference between the bisphosphotyrosine (pY2)-stimulated state for WT and comparator mutant p85α. More detailed statistical analysis including 95% confidence intervals for the paired mean differences for these comparisons are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Analysis of fluorescence polarisation assay of phosphoinositide 3-kinase (PI3K) activity of in vitro synthesised wild-type (WT) or mutant (E489K, R649W, or Y657X) p85α. Results for p110α- and p110β-containing PI3K are shown in (A) and (B) respectively. All data were acquired in the presence of phosphotyrosine peptide. Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 3, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars. Results for the R649W p85α mutation are only shown with p110δ in (C). In this case raw data are re-plotted on the left-hand axes with paired observations connected by three nearly superimposed lines. On the right-hand axes, paired mean differences are plotted as a bootstrap sampling distribution.
+
 We also assessed whether any of the SHORT syndrome variants affect function of PI3Kβ and found that all variants impaired phosphotyrosine-stimulated activity of PI3Kβ. Again, this impairment was less for p85α Y657X than for R649W, and in this case only very mild for E489K (Figure 3B, Figure 3—figure supplement 1B). For PI3Kδ, p85α R649W conferred severe loss of function, as for other isoforms (Figure 3C, Figure 3—figure supplement 1C), suggesting that the absence of immunodeficiency in SHORT syndrome is not accounted for by selective inhibition of PI3Kα function by causal mutations.
 
-## Binding of p110α by mutant p85α
+### Binding of p110α by mutant p85α
 
 Given the potent dominant negativity of APDS2-related p85α ΔEx11 in cells, and the instability of p85α ΔEx11-containing PI3K holoenzyme in vitro, we next used immunoprecipitation to assess binding of p110α by this and other p85α variants in cells. p85α was easily detected in anti-p110α immunoprecipitates from all cell lines at baseline (Figure 4). No increase in p110α levels was seen on conditional overexpression of WT or R649W p85α. Given the known instability of monomeric p110α, this suggests that all p110α is bound to p85α before overexpression. Although WT endogenous p85α may have been replaced by heterologously overexpressed p85α in these cells, this could not be detected without a size difference of the variant from WT. For cells overexpressing the SHORT syndrome-associated p85α Y657X, the truncated variant was strongly co-immunoprecipitated, accounting for nearly all of the p85α signal in anti-p110α immunoprecipitate. This demonstrates preserved binding of p110α by mutant p85α (Figure 4). In sharp contrast, although truncated p85α ΔEx11 was easily detected in cell lysates before immunoprecipitation and in supernatant after immunoprecipitation (arrowed in Figure 4), no truncated p85α ΔEx11 was seen in p110α immunoprecipitates, and no change in p110α expression was detected (Figure 4). This suggests that this truncated APDS2 causal variant does not supplant endogenous, full-length p85α binding to p110α, despite overexpression. This argues against destabilisation of p110α as the mechanism of the observed dominant negative activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig4-v1.jpg)
 
-**Figure 4.:** Results of immunoblotting of anti-p110α immunoprecipitates from 3T3-L1 cells expressing wild-type (WT), activating p110 delta syndrome 2 (APDS2)-associated or SHORT syndrome-associated mutant p85α under the control of doxycycline (Dox) are shown. (A) One representative immunoblot of immunoprecipitate, cell lysate prior to immunoprecipitation, and post immunoprecipitation supernatant is shown. Molecular weight markers (in kDa) are indicated to the left. between gel images. (B) Quantification of immunoblot bands from immunoprecipitates from three independent experiments, expressed as a percentage relative to the intensity of the band in WT cells without Dox exposure. Co-immunoprecipitated p85α is shown normalised to immunoprecipitated p110α from all three independent experiments. Datapoints from the same experiment ± Dox are connected by lines. No significant differences were found among conditions.Figure 4—source data 1.Figure 4A, including images of two further experimental replicates included in analysis.Figure 4—source data 2.Figure 4A, indicating excerpts displayed in figures and replicates included in analysis.
+**Figure 4.:** Results of immunoblotting of anti-p110α immunoprecipitates from 3T3-L1 cells expressing wild-type (WT), activating p110 delta syndrome 2 (APDS2)-associated or SHORT syndrome-associated mutant p85α under the control of doxycycline (Dox) are shown. (A) One representative immunoblot of immunoprecipitate, cell lysate prior to immunoprecipitation, and post immunoprecipitation supernatant is shown. Molecular weight markers (in kDa) are indicated to the left. between gel images. (B) Quantification of immunoblot bands from immunoprecipitates from three independent experiments, expressed as a percentage relative to the intensity of the band in WT cells without Dox exposure. Co-immunoprecipitated p85α is shown normalised to immunoprecipitated p110α from all three independent experiments. Datapoints from the same experiment ± Dox are connected by lines. No significant differences were found among conditions.
 
-## Effect of PIK3R1 mutations on insulin-induced PI3K recruitment to IRS1/2
+### Effect of PIK3R1 mutations on insulin-induced PI3K recruitment to IRS1/2
 
 As APDS2 p85α ΔEx11 does not appear to displace WT p85α from p110α, despite strong overexpression, it is likely that there are high levels of truncated p85α unbound to p110α in the cell. This may be important, as p85α mediates recruitment of PI3K to activated tyrosine kinase receptors and their tyrosine-phosphorylated substrates, including the insulin-receptor substrate proteins Irs1 (Myers et al., 1992) and Irs2 (Sun et al., 1995). Excess free regulatory subunits compete with heterodimeric PI3K holoenzyme for binding to these phosphotyrosines (Ueki et al., 2002), raising the possibility that excess free, truncated APDS2 p85α ΔEx11 may exert its inhibitory action similarly by outcompeting PI3K holoenzyme for phosphotyrosine binding.
 
 To assess this possibility, we again used the 3T3-L1 cellular model to determine whether overexpression of disease-causing p85α variants impairs recruitment of p110α to Irs1 and Irs2. Irs1 was immunoprecipitated with or without conditional p85α overexpression and with or without insulin stimulation. Overexpression of WT p85α had no effect on basal or insulin-induced p110α recruitment to Irs1 (Figure 5A and B, Figure 5—figure supplement 1). In contrast, overexpression of either p85α R649W or Y657X sharply reduced insulin-stimulated p110α recruitment to Irs1 on insulin stimulation (Figure 5A and B, Figure 5—figure supplement 1). In keeping with the inability of the R649W cSH2 domain to bind phosphotyrosines, p85α R649W was also not recruited to Irs1, while overexpression of Y657X increased stimulated but not basal p85α recruitment (Figure 5A and C, Figure 5—figure supplement 2). This suggests a pure defect in PI3K holoenzyme recruitment for R649W. For Y657X the signalling defect may have mixed mechanisms, with reduced activation by phosphotyrosine seen in in vitro studies coupled to increased abundance of monomeric mutant p85α, leading to recruitment of non p110α-bound mutant p85α to Irs1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig5-v1.jpg)
+
+**Figure 5.:** Results of immunoblotting of anti-Irs1 immunoprecipitates from 3T3-L1 cells expressing wild-type, APDS2-associated, or SHORT syndrome-associated mutant p85α under the control of doxycycline (Dox) are shown. Treatment with 100 nM insulin (Ins) is indicated. (A) One representative immunoblot of immunoprecipitate, cell lysate prior to immunoprecipitation, and post immunoprecipitation supernatant is shown. Two separate sets of gels, including independent wild-type controls, are shown on left and right. Molecular weight markers (in kDa) are indicated between gel images. (B, C) Quantification of immunoblot bands from immunoprecipitates from three independent experiments. Immunoprecipitated p110α is shown normalised to immunoprecipitated Irs1 from all three independent experiments in (B), and immunoprecipitated p85α similarly in (C). Datapoints from the same experiment -± insulin are connected by lines. Asterisks indicate significant differences induced by transgene overexpression (i.e. plus versus minus doxycycline). More detailed statistical analysis including 95% confidence intervals for the paired mean differences for these comparisons are shown in Figure 5—figure supplements 1 and 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Analysis of the effects of doxycycline (Dox)-induced expression of wild-type (WT), Y657X, R649W, or ΔEx11 p85α on association of p110α with Irs1. Comparisons are made in both the basal, non-insulin-stimulated state (A) and after stimulation with 10 nmol/L insulin (B) are shown. Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 5B, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Analysis of the effects of doxycycline (Dox)-induced expression of wild-type (WT), Y657X, R649W, or ΔEx11 p85α on association of p85α with Irs1. Comparisons are made in both the basal, non-insulin-stimulated state (A) and after stimulation with 10 nmol/L insulin (B) are shown. Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 5C, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars.
+
 In keeping with our finding of severely attenuated insulin signalling upon p85a ΔEx11 overexpression (Figure 2), overexpression of this mutant p85α abolished p110α recruitment to Irs1 (Figure 5A and B, Figure 5—figure supplement 1). However, non-p110α-bound p85a ΔEx11 was strongly recruited to Irs1 even in the absence of insulin stimulation (Figure 5A and C, Figure 5—figure supplement 2). This suggests that although p85a ΔEx11 does not effectively compete with WT p85α for binding to p110α, it has preserved or possibly enhanced ability to bind Irs1. This gives the mutant p85α properties that render it a more potent endogenous inhibitor of PI3K signalling than free WT p85α. Experiments conducted with immunoprecipitation of Irs2 instead of Irs1 yielded closely similar findings for all p85α species (Figure 6 and Figure 6—figure supplements 1 and 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig6-v1.jpg)
+
+**Figure 6.:** Results of immunoblotting of anti-Irs2 immunoprecipitates from 3T3-L1 cells expressing wild-type, APDS2-associated, or SHORT syndrome-associated mutant p85α under the control of doxycycline (Dox) are shown. Treatment with 100 nM insulin (Ins) is indicated. (A) One representative immunoblot of immunoprecipitate, cell lysate prior to immunoprecipitation, and post immunoprecipitation supernatant is shown. Two separate sets of gels, including independent wild-type controls are shown on left and right. Molecular weight markers (in kDa) are indicated between gel images. (B, C) Quantification of immunoblot bands from immunoprecipitates from three independent experiments. Immunoprecipitated p110α is shown normalised to immunoprecipitated Irs2 from all three independent experiments in (B), and immunoprecipitated p85α similarly in (C). Datapoints from the same experiment ± insulin are connected by lines. More detailed statistical analysis including 95% confidence intervals for the paired mean differences for these comparisons are shown in Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Analysis of the effects of doxycycline (Dox)-induced expression of wild-type (WT), Y657X, R649W, or ΔEx11 p85α on association of p110α with Irs2. Comparisons are made in both the basal, non-insulin-stimulated state (A) and after stimulation with 10 nmol/L insulin (B). Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 6B, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/94420/elife-94420-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Analysis of the effects of doxycycline (Dox)-induced expression of wild-type (WT), Y657X, R649W, or ΔEx11 p85α on association of p85α with Irs2. Comparisons are made in both the basal, non-insulin-stimulated state (A) and after stimulation with 10 nmol/L insulin (B). Paired mean differences for three comparisons are shown in Cumming estimation plots. Raw data, as presented in Figure 6C, are re-plotted on the upper axes with paired observations connected by a line. On the lower axes, paired mean differences are plotted as a bootstrap sampling distribution. Mean differences are depicted as dots; 95% confidence intervals are indicated by the ends of the vertical error bars.
 
 ## Discussion
 
@@ -105,31 +169,363 @@ In summary, it is already established that: (1) genetic activation of PIK3CD cau
 
 ## Materials and methods
 
-## Baculovirus generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Homo sapiens)</td>
+      <td>PIK3R1</td>
+      <td>GenBankUniProt</td>
+      <td>NM_181523.3P27986.1</td>
+      <td>p85α protein product only studied</td>
+    </tr>
+    <tr>
+      <td>Cell line(H. sapiens)</td>
+      <td>Dermal fibroblastsWild-type 1; 2; 3; 4</td>
+      <td>https://doi.org/10.1172/jci.insight.88766;https://doi.org/10.1038/ng.2332</td>
+      <td></td>
+      <td>Described in Ethics</td>
+    </tr>
+    <tr>
+      <td>Cell line(H. sapiens)</td>
+      <td>Dermal fibroblastsAPDS2</td>
+      <td>https://doi.org/10.1084/jem.20141759</td>
+      <td></td>
+      <td>Described in Ethics</td>
+    </tr>
+    <tr>
+      <td>Cell line(H. sapiens)</td>
+      <td>Dermal fibroblastsPROS H1047L; H1047R; H1047R</td>
+      <td>This study:https://doi.org/10.1038/ng.2332</td>
+      <td></td>
+      <td>Described in Ethics</td>
+    </tr>
+    <tr>
+      <td>Cell line(Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>Thermo Fisher</td>
+      <td>#11496015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Mus musculus)</td>
+      <td>3T3-L1 preadipocytes</td>
+      <td>Zenbio</td>
+      <td>Lot 3T3062104</td>
+      <td>Passage 8</td>
+    </tr>
+    <tr>
+      <td>Cell line(Escherichia coli)</td>
+      <td>Stellar competent cells</td>
+      <td>Takara</td>
+      <td>#636763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(E. coli)</td>
+      <td>MAX Efficiency DH10Bac Competent Cells</td>
+      <td>Invitrogen</td>
+      <td>#10361–012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a_pACEBac1</td>
+      <td>https://doi.org/10.1016/j.str.2011.06.003</td>
+      <td></td>
+      <td>Generated in Williams Lab, MRC-LMB; expressing Human p85α(UniProtKB P27986.1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a-Y657*_pACEBac1</td>
+      <td>Human p85α-Y657*</td>
+      <td>This study</td>
+      <td>Based on Hsp85a_pACEBac1; Described in Baculovirus generation section of Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a-R649W_pACEBac1</td>
+      <td>Human p85α-R649W</td>
+      <td>This study</td>
+      <td>Based on Hsp85a_pACEBac1; Described in Baculovirus generation section of Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a-E489K_pACEBac1</td>
+      <td>Human p85α-E489K</td>
+      <td>This study</td>
+      <td>Based on Hsp85a_pACEBac1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a-dEx11_pACEBac1</td>
+      <td>Human p85α-dEx11</td>
+      <td>This study</td>
+      <td>Based on Hsp85a_pACEBac1; Described in Baculovirus generation section of Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp110a_pFastBacHT B</td>
+      <td>https://doi.org/10.1016/j.str.2011.06.003</td>
+      <td></td>
+      <td>Generated in Williams Lab, MRC-LMB; expressing Human p110α(UniProtKB P42336.2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp110b_pACEBac1</td>
+      <td>https://doi.org/10.1016/j.str.2011.06.003</td>
+      <td></td>
+      <td>Generated in Williams Lab, MRC-LMB; expressing Human p110β(UniProtKB P42338.1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp110d_pFastBacHT B</td>
+      <td>https://doi.org/10.1016/j.str.2011.06.003</td>
+      <td></td>
+      <td>Generated in Williams Lab, MRC-LMB; expressing Human p110δ(UniProtKB O00329.2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEN_Tmcs</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_25751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSLIK-Hygro</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_25737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent(H. sapiens)</td>
+      <td>Hsp85a-dEx11_pSLIK-Hygro</td>
+      <td>Human p85α-dEx11</td>
+      <td>This study</td>
+      <td>Generation described in Generation of 3T3-L1 cells conditionally expressing p85α or p110α section of Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMDLg/pRRE</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSV-Rev</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct(H. sapiens construct in M. musculus cells)</td>
+      <td>p85α WT; SHORT p85α Y657X; SHORT p85α R649W</td>
+      <td>https://doi.org/10.1172/jci.insight.88766</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct(H. sapiens construct in M. musculus cells)</td>
+      <td>APDS2 p85α Δex11</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct(H. sapiens construct in M. musculus cells)</td>
+      <td>PROS p110α H1047R</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p85a(Rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_659889</td>
+      <td>(Used at 1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-AKT/Akt_T308(Rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_329828</td>
+      <td>(Used at 1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-AKT/Akt_S473(Rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_329825</td>
+      <td>(Used at 1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKT/Akt (Mouse, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_1147620</td>
+      <td>(Used at 1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p110a(Rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2165248</td>
+      <td>(Used at 1:1000 and 1:50 dilution for immunoblotting and immunoprecipitation respectively)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p110d(Rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2799043</td>
+      <td>(Used at 1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Irs1(Rabbit, polyclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2127890</td>
+      <td>(Used at 1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Irs1(Rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_330333</td>
+      <td>(Used at 1:1000 and 1:50 dilution for immunoblotting and immunoprecipitation respectively)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Irs2(Mouse, monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_11211231</td>
+      <td>(Used at 1:1000 and 1:50 dilution for immunoblotting and immunoprecipitation respectively)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin(Rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_330288</td>
+      <td>(Used at 1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-linkedAnti-rabbit IgG(Goat, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2099233</td>
+      <td>(Used at 1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-linked Anti-mouse IgG(Horse, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_330924</td>
+      <td>(Used at 1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>pY2 (PDGFRβ peptide 735- ESDGGYMDMSKDES-IDYVPMLDMKGDIKYADIE –767)</td>
+      <td>Cambridge Peptides</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange II XL Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>#200521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-fusion Cloning Kit</td>
+      <td>Takara</td>
+      <td>#638909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymoclean Gel DNA Recovery Kit</td>
+      <td>Zymo Research</td>
+      <td>#D4001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin Clean-up Kit</td>
+      <td>Takara</td>
+      <td>#740609.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PI 3-Kinase Activity Fluorescence Polarisation Assay</td>
+      <td>Echelon Biosciences</td>
+      <td>#K-1100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G Dynabeads</td>
+      <td>Life Technologies</td>
+      <td>#10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sphingomyelin; cholesterol; porcine brain phosphatidylcholine; phosphatidylethanolamine; phosphatidylserine; phosphoinositide-4,5-bisphosphate</td>
+      <td>Avanti Polar Lipids</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Baculovirus generation
 
 p85α point mutation expression constructs were created by site-directed mutagenesis of an Hsp85α_pACEBac1 plasmid using a QuikChange II XL Site-Directed Mutagenesis Kit (Agilent, 200521). In-Fusion cloning (Takara, 638909) was used to generate Hsp85α_pACEBac1_p85α ΔEx11. In brief, Hsp85α_pACEBac1 backbone was digested (BamHI/NotI) and purified using Zymoclean Gel DNA Recovery Kit (Zymo Research, D4001), while the cDNA insert was purified using NucleoSpin Clean-up Kit (Takara, 740609.10). Insert generation was performed by High-Fidelity PCR using primers designed to yield fragments containing exons 1–10 or 12–16 with the necessary overlap, with inserts verified by electrophoresis and purified using NucleoSpin Clean-up Kit. In-Fusion reactions were performed according to the manufacturer’s guideline using 100 ng each of linearised plasmid and both inserts in 10 μL. Products were transformed into Stellar Competent cells (Takara, 636763). Purified plasmid inserts were sequenced and verified by restriction enzyme digest, exploiting loss of a DpnI site within excised exon 11.
 
 Hsp85α_pACEBac1, Hsp110α_pACEBac1, Hsp110β_pACEBac1, and Hsp110δ_pFastBacHT B plasmids (Burke et al., 2011) encoding N terminally tandem His-tagged p110 subunits were used to generate bacmid DNA. MAX Efficiency DH10Bac Competent Cells (Invitrogen, 10361-012) were transformed with 40 ng plasmid DNA and turbid cultures plated onto agar containing 50 μg/mL kanamycin, 10 μg/mL gentamicin, 10 μg/mL tetracycline, 100 μg/mL X-Gal, and 40 μg/mL IPTG. Single colonies were picked, expanded, and purified at 2 days and bacmid concentrations quantified by NanoDrop 1000 Spectrophotometer (Thermo Scientific). 2–4 μg bacmid was transfected into Sf9 cells in six-well plates using Insect-XPRESS with L-Glutamine (Lonza, 12-730Q) and FuGENE HD (Promega E2311). Cells were incubated at 2°C for 5 days and bacmid YFP expression assessed by Leica DM IL LED Fluo microscope using a green fluorescent protein filter cube. Pooled virus from two wells of supernatant (P1 stock) was used to produce high titre P2 stock by transfection of 1.5×106 Sf9 cells/mL (Thermo Fisher, 11496015) in 450 mL using Insect-XPRESS with L-Glutamine and FuGENE HD. For catalytic subunits, 1–2 mL P2 stock was used for a further round of Sf9 transfection and expansion to generate P3 stock.
 
-## Purification of PI3K holoenzymes
+### Purification of PI3K holoenzymes
 
 1.5–2 L of 1.5×106 Sf9 cells/mL were co-infected with 18 mL P3 catalytic subunit and 4 mL P2 regulatory subunit baculovirus. Non-infected Sf9 cells were negative controls, and a prior protein preparation of 320 kDa was the positive control. Cells were cultured at 27°C, harvested 48 hr post-infection, pelleted, washed, and stored at –80°C. Pellets were later lysed by sonication in buffer containing 20 mM Tris-HCl (pH 8.0), 300 mM NaCl, 20 mM imidazole (pH 8.0), and 1 mM TCEP (pH 7.0) at 4°C. Universal Nuclease (Thermo Fisher, 88702) was added to lysates before ultracentrifugation at 35,000 rpm for 35 min at 4°C. p85α/p110 heterodimers were pulled down via six tandem p110 N-terminal His tags, preventing purification of monomeric p85α, using tandem Ni2+HisTrap Fast Flow columns (GE Healthcare) (equilibration buffer 20 mM Tris-HCl [pH 8.0], 100 mM NaCl, 20 mM imidazole, and 1 mM TCEP [pH 7.0]; elution buffer 20 mM Tris-HCl [pH 8.0], 100 mM NaCl, 200 mM imidazole, and 1 mM TCEP [pH 7.0]). Further purification utilised a heparin HiTrap Q HP column (GE Healthcare) equilibrated with 20 mM Tris-HCl (pH 8.0) and 1 mM TCEP (pH 7.0), with proteins eluted in 20 mM Tris-HCl (pH 8.0), 1 M NaCl, and 1 mM TCEP (pH 7.0). Eluted fractions were concentrated to ≥1 mg/mL using Millipore Amicon Ultra-15 Centrifugal Filter Units with Ultracel-50 membrane, and 1 mL concentrated fractions were gel-filtered on Superdex 200 16/60 columns (GE Healthcare) equilibrated in 20 mM HEPES (pH 7.5), 100 mM NaCl, and 2 mM TCEP (pH 7.0). The p110 6-His tag was retained for proteins used in functional analyses. KTA Protein Purification Systems (GE Healthcare) and UNICORN Control Software version 5.11 (GE Healthcare) were used for all purifications. Purity of eluted complexes was verified by SDS-PAGE, and purified proteins were quantified using a NanoDrop 1000 Spectrophotometer (Thermo Fisher). Protein concentration was calculated using the molecular extinction coefficient (assuming full cysteine reduction) determined by heterodimer sequence input to the ProtParam tool (ExPASy). Purified proteins were stored at –80°C in single-use aliquots.
 
 Total injection volume onto gel filtration columns was kept at 1 mL. Yields of PI3K complexes were determined using the area under the curve (280 nm mAU per mL eluted protein) from gel filtration chromatograms, and normalised to the volume of Sf9 cells infected.
 
-## Liposome preparation
+### Liposome preparation
 
 Chloroform/methanol solutions of sphingomyelin, cholesterol, porcine brain phosphatidylcholine, porcine brain phosphatidylethanolamine, porcine brain phosphatidylserine, and porcine brain PI(4,5)P2 (Avanti Polar Lipids) were mixed to generate a preparation containing 5/10/15/45/20/5% (wt/vol) of each lipid, with a total lipid concentration of 5 mg/mL and final PI(4,5)P2 concentration 250 μg/mL. Lipid preparations were dessicated under argon and then in a vacuum desiccator. Lipids were rehydrated in buffer containing 20 mM HEPES (pH 7.5), 100 mM KCl, and 1 mM EGTA (pH 8.0) using vortexing for 3 min, water bath sonication for 15 min, and 10 cycles between liquid nitrogen and a 43°C water bath. Unilamellar vesicles were generated by extrusion through polycarbonate filters with 100 nm pores, using a glass-tight syringe. Single-use aliquots were stored at –80°C.
 
-## Fluorescence polarisation assay
+### Fluorescence polarisation assay
 
 PI(3,4,5)P3 production was measured by modified PI3-kinase activity fluorescence polarisation assay (Echelon Biosciences, Salt Lake City, UT, USA). 10 μL reactions in 384-well black microtitre plates used 1 mM liposomes containing 50 μM PI(4,5)P2, optimised concentrations of purified PI3K proteins, 100 μM ATP, 2 mM MgCl2, with or without 1 μM tyrosine bisphosphorylated 33-mer peptide derived from mouse PDGFRβ residues 735–767, including phosphotyrosine at positions 740 and 751 (‘pY2’; 735-ESDGGYMDMSKDESIDYVPMLDMKGDIKYADIE-767; Cambridge peptides). Reactions were quenched with 5 μL of solution containing 20 mM HEPES (pH 7.5), 150 mM NaCl, 30 mM EDTA (pH 7.4), and 400 nM GST-Grp1-PH, followed by addition of 5 μL 40 nM TAMRA Red Fluorescent Probe in HNT buffer. Identity of the lipid group coupled to the TAMRA probe was not disclosed by Echelon Biosciences, but as Grp1 recognises specific lipid head groups in competition with PI(3,4,5)P3, it is likely to be a lipid with a similar head group such as inositol 1,3,4,5-tetrakisphosphate. After 1 hr equilibration, fluorescence polarisation was measured using a PHERAstar spectrofluorometer (BMG Labtech, Ortenberg, Germany) with the FP/540-20/590-20/590-20 optical module. The concentrations of WT protein complexes used in the assay were: 20–40 nM p85α/p110α, 80–160 nM p85α/p110β, and 80–160 nM p85α/p110δ for basal activities, and 1–2 nM p85α/p110α, 2–4 nM p85α/p110β, and 2–6 nM p85α/p110δ for pY2-stimulated activities. Concentrations of thawed protein aliquots were assessed as 280 nm absorbance by NanoDrop 1000 Spectrophotometer, and samples of preparations used in assays were resolved by SDS-PAGE to confirm equal amounts of each complex. Three technical replicates were used per assay on at least three different occasions. Relevant WT p85α/p110 catalytic isoforms were included in each assay as controls. Other controls were (1) Stop mix+probe without lipids, to assess maximum fluorescence polarisation. (2) Stop mix+probe with lipids, to determine the effect of lipids on maximum fluorescence polarisation. (3) Probe without stop mix or lipids to determine minimum fluorescence polarisation. (4) Probe with lipids but no stop mix to determine the effect of lipids on minimum fluorescence polarisation. Standard curves of diC8-PI(3,4,5)P3 in the presence of liposomes were included in every experiment and used to infer PIP3 generated by purified PI3K. GraphPad Prism v6.0 was used to generate sigmoidal standard curves by plotting log-transformed diC8-PI(3,4,5)P3 concentrations against fluorescence polarisation. Standard curves for each experiment provided the linear range within which PIP3 could be accurately determined. Preliminary studies found only trivial differences in measured fluorescence polarisation in the presence of pY2, which was thus omitted from subsequent standard curves. Quadruplicate interpolated PIP3 concentrations were averaged and normalised by reaction time (30 min) and enzyme concentration in pM to yield PI3K activity in pmol PIP3/min/pM enzyme. Specific activities were then further normalised to activity of p85α WT controls in the presence of pY2 in each experiment.
 
-## Generation of 3T3-L1 cells conditionally expressing p85α or p110α
+### Generation of 3T3-L1 cells conditionally expressing p85α or p110α
 
 3T3-L1 preadipocytes (Zenbio, lot 3T3062104, passage 8) were cultured, differentiated, and stained for neutral lipid with Oil Red O as previously described (Huang-Doran et al., 2011). Differentiation (visible as accumulation of multiple lipid droplets) served as a phenotypic assay validating cell identity. All cell lines used were confirmed mycoplasma free through a routine policy of monthly PCR-based screening. Generation of 3T3-L1 sublines inducibly expressing WT, Y657X, or R649W p85α was also previously reported (Huang-Doran et al., 2016; Hussain et al., 2011). The 3T3-L1 lines inducibly expressing p85α ΔEx11 or p110α H1047R were generated using essentially the same procedure, starting with In-Fusion subcloning of the p85a ΔEx11 cDNA insert from the pACEBac1 p85a ΔEx11 plasmid described above, and of PIK3CA H1047R cDNA (based on Uniprot P42336) derived by PCR of a pre-existing expression vector, into the pEN_Tmcs entry vector. After sequence verification these inserts were integrated into a pSLIK-Hygro lentiviral vector, packaged into VSV-G-pseudotyped lentiviral particles, using packaging plasmids pMDLg/pRRE and pRSVREV, and VSV-G envelope plasmid pVSV, and used to infect 3T3-L1 preadipocytes (plasmids listed in Key resources table). Transgene expression was induced with 1 μg/mL doxycycline for 72 hr, or with variable concentrations of doxycycline as indicated.
 
-## Insulin signalling studies
+### Insulin signalling studies
 
 3T3-L1 cells serum starved in DMEM containing 0.5% BSA for 16 hr were stimulated with 100 nM Actrapid insulin (Novo Nordisk) for 10 min. Monolayers were snap-frozen in liquid N2 and stored at –80°C. 200–600 μL co-immunoprecipitation (Co-IP) lysis (20 mM HEPES, 150 mM NaCl, 1.5 mM MgCl2, 10% [vol/vol] glycerol, 1% [vol/vol] Triton X-100, 1 mM EGTA pH 7.4, 1 mM PMSF, 2 mM activated sodium orthovanadate, Complete Mini EDTA-free protease inhibitor cocktail, and PhosSTOP [Roche 04906837001], in Milli-Q Ultrapure water [Millipore]) or RIPA buffer (50 mM Tris-HCl pH 8.0, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS with added Complete Mini EDTA-free protease inhibitor cocktail and PhosSTOP, in Milli-Q Ultrapure Water [Millipore]) was added to frozen cells before scraping of lysate into pre-chilled tubes, incubation on ice for 30 min and clearing by centrifugation. Protein was quantified using the Bio-Rad DC assay.
 
@@ -137,6 +533,6 @@ Lysates were mixed with NuPAGE LDS Loading buffer (Life Technologies, NP0008) su
 
 For immunoblotting, blocked membranes were incubated overnight at 4°C in primary antibody, washed and incubated with HRP-linked anti-rabbit or anti-mouse IgG secondary antibody diluted 1:5000 in blocking buffer. Proteins were visualised using the ChemiDoc MP System (Bio-Rad) and band intensities quantified using Image Lab software (Bio-Rad).
 
-## Statistical analysis
+### Statistical analysis
 
 For quantitative data, all biological replicates (i.e. results of independent experiments on different days) are represented in figures, with paired points (e.g. with/without insulin in the same experiment) connected by lines. For fluorescence polarisation assays, each biological replicate shown is the mean of three technical replicates. Sample size for individual experiments was not pre-determined. To avoid the pitfalls of dichotomous significance testing on low-throughput biological datasets, we used estimation statistics (Data Analysis using Bootstrap-Coupled ESTimation) with default settings (5000 resamples, BCa bootstrap) (Ho et al., 2019). This focuses on effect sizes and derives confidence intervals derived from bootstrapping for differences in means; the small (but typical) sample size of the experiments analysed limits reliable bootstrapping, but it offers additional confidence to the consistent patterns seen in independent replicates. We have indicated significance in main text figures with an asterisk, and show the 95% confidence intervals for mean differences in extended view figures.

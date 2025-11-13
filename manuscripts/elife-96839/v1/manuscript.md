@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Cell and Developmental Biology, University College London London United Kingdom
-2. https://ror.org/000zhpw23 Institut de la Vision, Sorbonne Université Paris France
+1. Department of Cell and Developmental Biology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Institut de la Vision, Sorbonne Université Paris France ([ROR:000zhpw23](https://ror.org/000zhpw23))
 
 † Corresponding author
 
 ## Abstract
 
-By exposing genes associated with disease, genomic studies provide hundreds of starting points that should lead to druggable processes. However, our ability to systematically translate these genomic findings into biological pathways remains limited. Here, we combine rapid loss-of-function mutagenesis of Alzheimer’s risk genes and behavioural pharmacology in zebrafish to predict disrupted processes and candidate therapeutics. FramebyFrame , our expanded package for the analysis of larval behaviours, revealed that decreased night-time sleep was common to F0 knockouts of all four late-onset Alzheimer’s risk genes tested. We developed an online tool, ZOLTAR , which compares any behavioural fingerprint to a library of fingerprints from larvae treated with 3677 compounds. ZOLTAR successfully predicted that sorl1 mutants have disrupted serotonin signalling and identified betamethasone as a drug which normalises the excessive day-time sleep of presenilin-2 knockout larvae with minimal side effects. Predictive behavioural pharmacology offers a general framework to rapidly link disease-associated genes to druggable pathways.
+By exposing genes associated with disease, genomic studies provide hundreds of starting points that should lead to druggable processes. However, our ability to systematically translate these genomic findings into biological pathways remains limited. Here, we combine rapid loss-of-function mutagenesis of Alzheimer’s risk genes and behavioural pharmacology in zebrafish to predict disrupted processes and candidate therapeutics. FramebyFrame, our expanded package for the analysis of larval behaviours, revealed that decreased night-time sleep was common to F0 knockouts of all four late-onset Alzheimer’s risk genes tested. We developed an online tool, ZOLTAR, which compares any behavioural fingerprint to a library of fingerprints from larvae treated with 3677 compounds. ZOLTAR successfully predicted that sorl1 mutants have disrupted serotonin signalling and identified betamethasone as a drug which normalises the excessive day-time sleep of presenilin-2 knockout larvae with minimal side effects. Predictive behavioural pharmacology offers a general framework to rapidly link disease-associated genes to druggable pathways.
 
 ## Introduction
 
@@ -33,11 +33,31 @@ In practice, how can we quickly follow the thread from a disease-associated gene
 
 ## Results
 
-## Most Alzheimer’s risk genes are present in zebrafish and expressed early in development
+### Most Alzheimer’s risk genes are present in zebrafish and expressed early in development
 
 GWAS point to small portions of the genome where variation in sequence is associated with variation in disease risk but do not readily specify the genes whose altered function are responsible for this association. Therefore, as a starting point, we used a meta-analysis of GWAS on AD that found 37 significant loci and annotated each with the most likely causal gene using mainly statistical colocalisation (Schwartzentruber et al., 2021; Giambartolomei et al., 2014). To add confidence to these calls, we cross-referenced these causal gene predictions with a transcription-wide association study and risk gene transcripts that undergo differential splicing in AD brains (Raj et al., 2018). Finally, we included the three genes that can cause early-onset AD when mutated: PSEN1 (Campion et al., 1995), PSEN2 (Rogaev et al., 1995), and APP (Levy et al., 1990; Van Broeckhoven et al., 1990), yielding a list of 40 genes associated with AD risk (Supplementary file 1).
 
 Of these 40 Alzheimer’s risk genes, 30 (75%) had at least one annotated orthologue in the zebrafish genome (source: Ensembl). Of those, 17 had one orthologue (e.g. the only zebrafish orthologue of human SORL1 was sorl1); 11 had two orthologues (e.g. the zebrafish orthologues of human APP were appa and appb); and 2 had more than two orthologues (e.g. the zebrafish orthologues of human MS4A6E included ms4a17a, ms4a17c.2, tmem176l, and more; Figure 1a). A human gene often has two or more zebrafish orthologues because of a teleost-specific whole-genome duplication event around 340 million years ago (Meyer and Málaga-Trillo, 1999). There were no annotated orthologues for 10 Alzheimer’s risk genes, including TREM2.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig1-v1.jpg)
+
+**Figure 1.:** (a) Of 40 Alzheimer’s risk genes, 17 had one orthologue in zebrafish; 11 had two orthologues; 2 had more than two orthologues; and 10 did not have any annotated orthologue. More details about orthologues of Alzheimer’s risk genes are provided in Supplementary file 1 (source: Ensembl). (b) Expression of Alzheimer’s risk genes during early development in zebrafish. Genes were marked as ‘expressed’ (green) if at least three cells had detectable transcripts in the single-cell RNA-seq dataset from Raj et al., 2020. CABZ01076737.1 is the orthologue of TSPOAP1; cd247l is the orthologue of FCER1G; si:ch211-260p9.3 is an orthologue of PLCG2; zgc:174164 is an orthologue of ADAM10. Other genes have the same name as their human orthologue. The orthologues of MS4A6E were not included. hpf, hours post-fertilisation; dpf, days post-fertilisation.(c) Expression of apoeb in cells of the nervous system at 5 dpf. Each dot represents one cell. Cells are grouped by cluster identity, which are provided in Supplementary file 1. Single-cell RNA-seq data and clustering from Raj et al., 2020. (d) In situ hybridization chain reactions labelling psen2, apoeb, or clu mRNA in the brains of 6-dpf larvae. The images are maximum Z-projections of dorsal (top) and sagittal (bottom) views of three larvae. A, anterior; P, posterior; R, rightwards; L, leftwards; D, dorsal; V, ventral. Larva # labels individual animals across this figure and Figure 1—figure supplements 3 and 4. See also Figure 1—videos 1–9.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Expression of appa (a); appb (b); psen1 (b); psen2 (d) in brain cells of the larval zebrafish at 5 dpf. Each dot represents one cell. Cells are grouped by clusters, which are coloured by broad categories. Cluster identities are provided in Supplementary file 1. Single-cell RNA-seq data and clustering from Raj et al., 2020.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Expression of apoea (a); cd2ap (b); clu (c); sorl1 (d) in brain cells of the larval zebrafish at 5 dpf. Each dot represents one cell. Cells are grouped by clusters, which are coloured by broad categories. In (b), (c), and (d), black arrowheads mark the cluster with highest average expression, after excluding cells with no expression and clusters with fewer than three cells with positive expression. Cluster identities are provided in Supplementary file 1. Single-cell RNA-seq data and clustering from Raj et al., 2020.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** In situ hybridization chain reaction labelling appa (a); appb (b); psen1 (c); psen2 (d) mRNA in the brains of 6-dpf larvae. Maximum Z-projections of dorsal (top) and sagittal (bottom) views. A, anterior; P, posterior; R, rightwards; L, leftwards; D, dorsal; V, ventral. Larva # labels individual animals across this figure, Figure 1d, Figure 1—figure supplement 4. See also Figure 1—video 1–9.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** In situ hybridization chain reaction labelling apoea (a); apoeb (b); cd2ap (c); clu (d); sorl1 (e) mRNA in the brains of 6-dpf larvae. Maximum Z-projections of dorsal (top) and sagittal (bottom) views. A, anterior; P, posterior; R, rightwards; L, leftwards; D, dorsal; V, ventral. Larva # labels individual animals across this figure, Figure 1d, Figure 1—figure supplement 3. See also Figure 1—videos 1–9.
 
 Next, we used a published single-cell RNA sequencing (scRNA-seq) dataset of the developing zebrafish brain (Raj et al., 2020) to ask whether the orthologues of the Alzheimer’s risk genes were expressed in zebrafish embryos and larvae. Most of the genes (33/42) were detectable as early as 12 hr post-fertilisation (hpf) and remained expressed throughout development (Figure 1b). At 5 days post-fertilisation (dpf), 38 of the 42 orthologues (90%) were expressed.
 
@@ -47,17 +67,49 @@ For these selected Alzheimer’s risk genes, we more carefully examined their ex
 
 In summary, around 75% of Alzheimer’s risk genes had at least one clear orthologue in zebrafish and most of these were expressed in the brain of 5–6-dpf zebrafish larvae, so they could play a role in early brain development or function.
 
-## The FramebyFrame R package for analysis of sleep/wake behaviour from high-throughput video-tracking data
+### The FramebyFrame R package for analysis of sleep/wake behaviour from high-throughput video-tracking data
 
 The next stage in our behavioural pharmacology strategy is to measure sleep/wake behaviour of F0 knockout larvae for the genes under study. To uncover even subtle behavioural phenotypes caused by the loss of Alzheimer’s risk genes, we developed a high-throughput sleep/wake tracking assay for zebrafish larvae capable of analysing behaviour at the sub-second resolution over multiple days and nights. To achieve this, we combined previous sleep/wake analysis methods (Rihel et al., 2010a; Lee et al., 2022; Rihel et al., 2010b) with some aspects of the frame-by-frame analysis developed by Ghosh and Rihel, 2020 into a single software tool, the FramebyFrame R package (github.com/francoiskroll/FramebyFrame, copy archived at Kroll, 2025a). We also designed a 3D-printed mesh-bottom plate that supports long-term (up to 8.5 days tested) tracking of larvae with minimal intervention by regulating the water level with a small pump and delivering paramecia for feeding through the mesh from the water bath below (Figure 2a and b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig2-v1.jpg)
+
+**Figure 2.:** (a) 3D model of the 96-square well mesh-bottom plate. Available at github.com/francoiskroll/FramebyFrame (copy archived at Kroll, 2025a). (b) Example of an 8-day (208 hr total) video-tracking experiment. scrambled-injected control larvae were in a mesh-bottom plate placed in a water bath containing paramecia. Larvae were tracked for 63 hr on a 14 hr:10 hr light:dark cycle (white and dark grey backgrounds, respectively), then switched to constant dim light (30 lux) for 145 hr (subjective nights are framed). The larvae were tracked from 4 to 13 dpf and all appeared healthy at the end of the experiment. The trace is the mean ± SEM across larvae of the activity (sum of Δ pixels/10 min). The arrow indicates when the water in the bath was replaced and fresh paramecia were supplemented, causing a spike in activity. (c) The FramebyFrame R package calculates 17 parameters from the Δ pixel timeseries of each larva. The parameters are grouped in three categories: activity parameters, active bout parameters, and sleep parameters. Here, sleep parameters calculated by the FramebyFrame R package are annotated on the first ~9 min of the Δ pixel timeseries for one wild-type larva starting at lights off. These parameters describe the sleep behaviour of each larva during each day or night. Sleep parameters are also calculated for days, except for sleep latency. This plot is connected to (b) for illustrative purposes only; the data was not from the same experiment. (d) Example of an active bout parameter—active bout length—annotated on the sample data from (c). For all the activity and active bout parameters calculated by the FramebyFrame R package, see Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Activity parameters calculated by the FramebyFrame R package annotated on sample data from a single larva. These parameters describe the overall activity of each larva during each day or night and are calculated directly on the Δ pixel timeseries. Sunset startle describes the larva’s startle response when lights abruptly switch off at the day-to-night transition, and therefore is only defined for nights. Activity tends to decrease over the course of the day; the slope parameter describes the rate of this decline. Transition delta describes the sudden jump or drop in activity which occurs at the light transitions. Fractal dimension describes the smoothness (D closer to 1.0) or roughness (D closer to 2.0) of the activity trace. (b) Active bout parameters calculated by the FramebyFrame R package annotated on sample data from a single larva. These parameters describe the average swimming bout of each larva during each day or night.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Example of a sleep bout detected by the FramebyFrame R package that is missed by analysis done on 1-min epochs. In this example, the larva was inactive for 80 consecutive seconds, which represents a sleep bout as per the 1-min inactivity criterion for sleep (Rihel et al., 2010b). Binning in 1-min epochs misses the sleep bout as it returns two active minutes with 7 and 12 s of activity per minute, while the FramebyFrame package detects the 80 s sleep bout. (b) Difference in sleep parameters measurements between the 1-min analysis and the frame-by-frame analysis performed on the same dataset. One line represents one wild-type larva during one night. 1-min, results obtained with the minute-by-minute detection; FbyF, results obtained with the FramebyFrame R package; r, Pearson correlation. (c) Difference in sleep parameters measurements between the 1-min analysis and the frame-by-frame analysis, as in (b). One line represents one wild-type larva during one day. (d) Example of a sleep latency survival plot generated with the FramebyFrame R package. Starting at lights-off, larvae that experienced their first sleep bout were gradually removed from the survival curve. At any timepoint, the larvae with paramecia in the well were 68 ± 31% less likely to fall asleep for the first time than larvae housed without paramecia: hazard ratio for larvae with paramecia = 0.32 ± 0.31, *** p<0.001 by likelihood-ratio test.
+
 The FramebyFrame package extracts and analyses 17 behavioural parameters from frame-by-frame Δ pixel data, which represent the number of pixels that changed intensity at each frame-to-frame transition. These parameters capture both behaviours that unfold over multiple minutes or hours, such as sleep (Figure 2c), and actions at smaller time scales (<1 s), such as individual swimming bouts (Figure 2d). The parameters are grouped into three categories: activity parameters (Figure 2—figure supplement 1a), which describe the overall activity of each larva during a complete day or night; active bout parameters (Figure 2—figure supplement 1b), which describe the structure of individual swimming bouts; and sleep parameters (Figure 2c) such as sleep latency (Figure 2—figure supplement 2d). In zebrafish larvae, sleep is defined as any period of inactivity (Δ pixel = 0) lasting longer than 1 min, a definition based on increases in arousal threshold and homeostatic rebound following deprivation (Rihel et al., 2010b; Prober et al., 2006). This frame-by-frame analysis has several advantages over previous methods that analysed activity data at the 1-min resolution (Rihel et al., 2010a; Lee et al., 2022; Rihel et al., 2010b). First, individual swimming bouts could not be resolved by these methods as single bouts last ~0.2 s on average. Second, the 1-min methods missed around one third of all sleep bouts because of how the Δ pixel data is binned in 1-min epochs (Figure 2—figure supplement 2a). At the frame-by-frame resolution, the start and end frame of each sleep bout can be precisely determined, which also improves the measurement accuracy of sleep bout duration and sleep latency, the delay from lights-off to first sleep bout. For example, during a sample 10 hr night (Figure 2—figure supplement 2b), the frame-by-frame analysis detected 35 ± 14 more sleep bouts, longer average sleep bout lengths (+0.2 ± 0.2 min), and shorter sleep latencies (1.6 ± 2.3 min earlier), resulting in a 42% increase in total sleep time (+2.3 ± 0.4 hr). During the day, the FramebyFrame analysis also detected more sleep and more sleep bouts (Figure 2—figure supplement 2c). Most behaviour plots included in this study were created using the FramebyFrame package in just a few commands from the raw frame-by-frame data.
 
-## psen2 knockouts sleep more during the day
+### psen2 knockouts sleep more during the day
 
 Next, we used CRISPR-Cas9 to generate F0 knockouts for the zebrafish orthologues of the three genes that can cause early-onset AD when mutated in humans—psen1, psen2, appa/appb—and tested these mutants for behavioural and other phenotypes. We focused first on psen1 and psen2.
 
 Zebrafish Psen1 and Psen2 are highly similar to their human counterparts (~70% identical amino acid sequence, Figure 3a and b), with the same critical amino acid at the four annotated active sites (two per presenilin). Mismatches between the human and zebrafish proteins were largely clustered into disordered domains, suggesting that the zebrafish presenilins have the same catalytic activity as in humans. The Cas9/guide RNA ribonucleoproteins (RNPs) used to generate F0 knockouts mutated virtually every copy of the genome at each of the three targeted sites. At each targeted locus of psen1, 99.0 ± 2.7% of reads had a small insertion and/or deletion (indel) and 78.6 ± 29.7% of all reads had a frameshift mutation (Figure 3c). At each targeted locus of psen2, 99.9 ± 0.1% reads had indels and 82.0 ± 33.6% of all reads had a frameshift mutation (Figure 3d). As each gene is mutated at three loci, the biallelic knockout probability, that is, the probability of having at least one frameshift mutation on both alleles, cumulatively reached >98% (francoiskroll.shinyapps.io/frameshiftmodel/), indicating that most psen1 and psen2 F0 knockout larvae were complete loss-of-function mutants.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig3-v1.jpg)
+
+**Figure 3.:** (a) Human PSEN1 amino acid sequence (top) aligned to zebrafish Psen1 amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. In the human protein, wavy lines represent disordered domains and arrowheads point to the two active sites at residues 257 and 385 (source: UniProt). White gaps are added when additional residues are present in the other sequence. (b) Human PSEN2 amino acid sequence (top) aligned to zebrafish Psen2 amino acid sequence (bottom), as in (a). Active sites are at residues 263 and 366 (source: UniProt and AlphaFold). (c) (above) Schematic of psen1 in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (below) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of psen1. scr, scrambled-injected control larva; ko, psen1 F0 knockout larva. The numbers refer to individual animals. For example, ko4 refers to an individual psen1 F0 knockout larva for which mutations at each targeted locus are plotted. Across F0 knockout samples: 99.0 ± 2.7% mutated reads, 78.6 ± 29.7% of all reads had a frameshift mutation. (d) (above) Schematic of psen2 in the 5′–3′ genome direction, as in (c). (below) Percentage of reads mutated and frameshifted at each targeted locus of psen2, as in (c). Across F0 knockout samples: 99.9 ± 0.1% mutated reads, 82.0 ± 33.6% of all reads had a frameshift mutation. (e) Concentration of Aβ40 and Aβ42 in pools of n=16–22 uninjected, scrambled-injected, psen1 F0 knockout, and psen2 F0 knockout 16-dpf larvae. Each datapoint is the mean of four technical replicates. Concentration unit is ng of Aβ40/42 per g of total protein extracted. Horizontal black line represents the limit of detection. Red crosses indicate samples for which all technical replicates were below the limit of detection. All Aβ38 measurements were below the limit of detection and are not plotted. (f) Pictures of psen2 (top row) and psen1 (bottom row) F0 knockout larvae at 16 dpf. Note the fainter pigmentation of psen2 F0 knockout larvae. (g) (left) Activity (sum of Δ pixels/10 min) of psen2 F0 knockout larvae and scrambled-injected siblings during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10 min epoch) during the same experiment. Traces are mean ± SEM across larvae. See also Figure 3—figure supplement 2a for results from replicate clutch 2. (h) Behavioural fingerprints of two clutches of psen2 F0 knockout larvae. Each dot represents the mean deviation from the same-clutch scrambled-injected mean for that parameter (z-score, mean ± SEM). Asterisks represent the p-values by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values. cos, cosine similarity between the two clutch fingerprints.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Pictures of psen1/psen2 double F0 knockout larvae (5 dpf). Note patchy retinal pigment epithelium and eye oedema (insets). (b) Parameter plots for two clutches of psen1 F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one night. Black crosses mark the group means. At night, psen1 F0 knockouts slept less (total sleep, * p=0.030), spent more time active (time active, * p=0.018), and initiated more swimming bouts (number of active bouts, ** p=0.004) than scrambled-injected siblings. The startle response of psen1 F0 knockouts was also slightly suppressed (sunset startle, * p=0.015). Statistics by likelihood-ratio test on linear mixed effects models. (c) Behavioural fingerprints of two clutches of psen1 F0 knockout larvae. Each dot represents the mean deviation from the same-clutch scrambled-injected mean for that parameter (z-score, mean ± SEM). Asterisks represent the p-values by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values, as in (b). cos, cosine similarity between the two clutch fingerprints.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) (left) Activity (sum of Δ pixels/10 min) of psen2 F0 knockout larvae and scrambled-injected siblings during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10-min epoch) during the same experiment. Traces are mean ± SEM across larvae. This replicate experiment is called clutch 2 in Figure 3h. (b) Parameter plots for two clutches of psen2 F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during 1 day. Black crosses mark the group means. Compared to scrambled-injected siblings, psen2 F0 knockouts displaced fewer pixels (total activity, *** p<0.001) and initiated fewer swimming bouts (number of active bouts, *** p<0.001), each displacing fewer pixels in average (active bout mean, *** p<0.001). They also spent more time asleep (total sleep, ** p=0.002) and initiated more sleep bouts (number of sleep bouts, ** p=0.002) than scrambled-injected siblings. Statistics by likelihood-ratio test on linear mixed effects models.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Pictures of psen2 F0 knockout larvae (top row) and scrambled-injected control larvae (bottom row) at the end of the behavioural tracking (8 dpf). Note the fainter pigmentation of psen2 F0 knockout larvae, particularly over the swim bladder (marked by black arrowheads). (b) Frame-by-frame Δ pixel timeseries of two individual larvae showing the startle response shortly after the lights turn off. (left) Startle response of a psen2 F0 knockout larva. During the 3 s after lights-off, the most vigorous bout reached a maximum Δ pixel value of 75 px. (right) Startle response of a scrambled-injected larva. During the 3 s after lights-off, the most vigorous bout reached a maximum Δ pixel value of 85 px. (c) Maximum startle responses over the three consecutive lights-off transitions, by clutch (clutch 1 and clutch 2) and group (psen2 KO or scrambled). Each dot represents one larva. The startle response was defined as the maximum Δ pixel during the 3 s directly after lights-off (see b). There were three lights-off transitions during the experiment; plotted for each larva is the largest of the three startle responses (maximum startle response). (left) Unprocessed data. scrambled-injected larvae displaced more pixels during the startle response at lights-off compared to psen2 F0 knockout larvae, presumably because they appeared darker to the camera (clutch 1: * p=0.042; clutch 2: *** p<0.001, by Welch’s t-test). The ratio of the means estimated how much darker psen2 knockout larvae were compared to scrambled-injected larvae; that is, psen2 knockout larvae were 0.89 and 0.95× as dark as scrambled-injected larvae. (right) The ratios were then used to downscale the frame-by-frame Δ pixel data of the scrambled-injected larvae, in a sense artificially making them as faint as psen2 knockout larvae. As intended, the downscaling rendered the differences in startle response non-significant (clutch 1: ns p=0.78; clutch 2: ns p=0.77, by Welch’s t-test). (d) The original activity trace (sum Δ pixels/10 min, mean ± SEM) of scrambled-injected larvae (lighter grey) compared to the downscaled one (darker grey), during the first day and night as illustration. The data of psen2 F0 knockouts is not shown as it is not modified during the downscaling. (e) Behavioural fingerprints of two clutches of psen2 F0 knockout larvae, before and after downscaling the Δ pixel data of the scrambled-injected larvae. Each dot represents the mean deviation from the same-clutch scrambled-injected mean for that parameter (z-score, mean ± SEM). Two parameters were excluded from the fingerprints: sunset startle, as the difference between knockouts and controls was artificially nullified by the pixel scaling procedure; and active bout minimum, because the pixel scaling procedure artefactually raised this parameter for scrambled-injected larvae. Asterisks represent the p-values by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values. cos, cosine similarity between the two clutch fingerprints. The pixel scaling procedure is available as a function (pixelAdjust(…)) in the FramebyFrame R package.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Human APP amino acid sequence (top) aligned to zebrafish Appa amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. White gaps are added when additional residues are present in the other sequence. (b) Human APP amino acid sequence (top) aligned to zebrafish Appb amino acid sequence (bottom), as in (a). (c) (top) Schematic of appa in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of appa. scr, scrambled-injected control larva; ko, appa F0 knockout larva. Across F0 knockout samples: 96.6 ± 8.4% mutated reads, 70.4 ± 23.2% of all reads had a frameshift mutation. (d) (top) Schematic of appb, as in (c). (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of appb. scr, scrambled-injected control larva; ko, appb F0 knockout larva. Across F0 knockout samples: 95.0 ± 5.6% mutated reads, 82.6 ± 19.0% of all reads had a frameshift mutation. In (c) and (d), the numbers refer to individual animals. For example, ko5 refers to an individual appa/appb double F0 knockout larva for which mutations at the four targeted loci are plotted. (e) Parameter plots for two clutches of appa/appb F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one day (left) or night (right). Black crosses mark the group means. Compared to scrambled-injected controls, appa/appb F0 knockouts spent less time active during the day (time active, ** p=0.002) and had shorter swimming bouts across the day/night cycle (active bout duration, day: ** p=0.003; night: * p=0.018). Sleep was not affected (sleep total, ns p=0.71). Statistics by likelihood-ratio test on linear mixed effects models. (f) Behavioural fingerprints of two clutches of appa/appb double F0 knockout larvae. Each dot represents the mean deviation from the same-clutch scrambled-injected mean for that parameter (z-score, mean ± SEM). Asterisks represent the p-values by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values. cos, cosine similarity between the two clutch fingerprints.
 
 In humans, PSEN1 or PSEN2 acts as the catalytic subunit of the γ-secretase protein complex, which is responsible for the cleavage of more than 90 substrates, such as Notch. It also performs the last cleavage of APP to release Aβ, which aggregates in the brains of patients with AD (Haass and Selkoe, 1993; De Strooper et al., 1998; Haapasalo and Kovacs, 2011; Kang et al., 1987). Do presenilins also cleave zebrafish Appa/Appb into Aβ? Using a sensitive ELISA-based assay, Aβ40 and Aβ42 were detectable in control (uninjected and scrambled-injected) larvae but not in two clutches of psen1 F0 knockouts (Figure 3e), confirming that zebrafish Psen1 is required for the cleavage of Appa/Appb into Aβ. In contrast, Aβ40 and Aβ42 were detectable in psen2 F0 knockouts, suggesting that most Aβ is generated by Psen1 in zebrafish and that Psen2 alone cannot compensate. This result extends previous findings that Aβ production in zebrafish is blocked by the γ-secretase inhibitor DAPT (Özcan et al., 2022) and matches closely observations in mice, in which loss of PSEN2 had no measurable effect on Aβ40/42 production (Frånberg et al., 2011; Herreman et al., 1999).
 
@@ -71,7 +123,7 @@ Finally, we examined the impact of loss of both Appa and Appb. While overexpress
 
 In summary, knockout larvae for the three genes associated with early-onset AD had distinct morphological and behavioural phenotypes, with the strongest behavioural changes observed for psen2 knockouts. Since both presenilins are broadly expressed in the larval brain (Figure 1d, Figure 1—figure supplement 3c,d), these results indicate that zebrafish Psen1- and Psen2-γ-secretases likely cleave different substrates, such as Appa/Appb which is primarily cleaved into Aβ by Psen1-γ-secretase. Moreover, the behavioural phenotypes of appa/appb and psen1 knockout larvae had little overlap while they presumably both resulted in the loss of Aβ. The appa/appb day phenotype could be primarily caused by loss of some Appa/Appb cleavage product not relying on γ-secretase. Alternatively, the net effect of loss of all other Psen1-γ-secretase products could have masked the effect of loss of Aβ.
 
-## Knockouts in all four tested late-onset Alzheimer’s risk genes sleep less at night
+### Knockouts in all four tested late-onset Alzheimer’s risk genes sleep less at night
 
 To test whether knockout of genes associated with late-onset AD also impacted behaviour in larvae, we then generated F0 knockouts for the zebrafish orthologues of APOE (apoea/apoeb), CD2AP (cd2ap), CLU (clu), and SORL1 (sorl1).
 
@@ -81,11 +133,43 @@ Knockout of other late-onset AD risk genes also impacted behaviour, especially a
 
 In summary, we video-tracked the sleep/wake behaviours of F0 knockout larvae in four genes associated with late-onset AD: apoea/apoeb, cd2ap, clu, and sorl1. Remarkably, loss of all four genes produced a fairly consistent phenotype at night (Figure 4), with all knockout larvae spending 5–13% less time asleep and instead spending 12–38% more time active because they were moving 13–34% more often. In contrast, each mutant had distinct day-time behavioural alterations. Comparing with early-onset genes, psen1 knockouts had similar night-time phenotypes, but knockout of psen2 or appa/appb had no effect on night-time sleep. Therefore, at least some late-onset (and one early-onset) Alzheimer’s risk genes have common effects on sleep from an early age, despite being expressed in different tissues and having distinct biochemical properties.
 
-## From behavioural fingerprint to causal process: serotonin signalling disruption by the loss of Sorl1
+![Figure 4.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-v1.jpg)
+
+**Figure 4.:** For each gene: behavioural fingerprints of N = 2–3 clutches of F0 knockout larvae. Each dot represents the mean deviation from the same-clutch scrambled-injected mean for that parameter (z-score, mean ± SEM). Asterisks represent the p-values by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values. cos, cosine similarities between fingerprints. Arrows and dashed lines mark the three parameters which are significant for all four late-onset Alzheimer’s risk genes tested.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Human APOE amino acid sequence (top) aligned to zebrafish Apoea amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. White gaps are added when additional residues are present in the other sequence. (b) Human APOE amino acid sequence (top) aligned to zebrafish Apoeb amino acid sequence (bottom), as in (a). (c) (top) Schematic of apoea in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of apoea. scr, scrambled-injected control larva; ko, apoea F0 knockout larva. Across F0 knockout samples: 99.6 ± 1.2% mutated reads, 77.5 ± 17.8% of all reads had a frameshift mutation. (d) (top) Schematic of apoeb, as in (c). (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of apoeb. scr, scrambled-injected control larva; ko, apoeb F0 knockout larva. Across F0 knockout samples: 95.2 ± 14.2% mutated reads, 64.6 ± 39.9% of all reads had a frameshift mutation. In (c) and (d), the numbers refer to individual animals. For example, ko6 refers to an individual apoea/apoeb double F0 knockout larva for which mutations at the four targeted loci are plotted. (e) Parameter plots for three clutches of apoea/apoeb double F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one day (left) or night (right). Black crosses mark the group means. (left) During the day, apoea/apoeb double F0 knockout larvae had more subdued swimming bouts than scrambled-injected siblings (active bout mean, ** p=0.006; active bout maximum, ** p=0.004). (right) At night, apoea/apoeb double F0 knockout larvae were performing more swimming bouts (number of active bouts, ** p=0.003) and sleeping less (total sleep, ** p=0.009) than scrambled-injected siblings. Six datapoints from four apoea/apoeb F0 knockout larvae fall outside the Y axis limit of the number of active bouts (7229–13,975 bouts). Statistics by likelihood-ratio test on linear mixed effects models. ni., night.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Human CD2AP amino acid sequence (top) aligned to zebrafish Cd2ap amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. White gaps are added when additional residues are present in the other sequence. (b) (top) Schematic of cd2ap in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of cd2ap. scr, scrambled-injected control larva; ko, cd2ap F0 knockout larva. The numbers refer to individual animals. For example, ko1 refers to an individual cd2ap F0 knockout larva for which mutations at each targeted locus are plotted. Across F0 knockout samples: 94.3 ± 9.8% mutated reads, 72.1 ± 20.3% of all reads had a frameshift mutation. (c) Parameter plots for two clutches of cd2ap F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one night. Black crosses mark the group means. At night, cd2ap F0 knockouts spent more time active (time active, *** p<0.001), displaced more pixels in total (total activity, ** p=0.001), initiated more swimming bouts (number of active bouts, *** p<0.001), and slept less (total sleep, *** p<0.001) than scrambled-injected siblings. Three datapoints from two cd2ap F0 knockout larvae (clutch1) fall outside the Y axis limit of the time active plot (5.1–5.8 hr). One datapoint from a cd2ap F0 knockout larvae (clutch1) falls outside the Y axis limit of the total activity plot (1.2×106 Δ px).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Human CLU amino acid sequence (top) aligned to zebrafish Clu amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. White gaps are added when additional residues are present in the other sequence. (b) (top) Schematic of clu in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of clu. scr, scrambled-injected control larva; ko, clu F0 knockout larva. The numbers refer to individual animals. For example, ko2 refers to an individual clu F0 knockout larva for which mutations at each targeted locus are plotted. Across F0 knockout samples: 99.6 ± 1.6% mutated reads, 84.9 ± 17.7% of all reads had a frameshift mutation. (c) Parameter plots for two clutches of clu F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one day (left) or night (right). Black crosses mark the group means. Loss of Clu did not consistently affect locomotor activity during the day (time active, ns p=0.18; active bout mean, ns p=0.21). At night, clu F0 knockouts were slightly more active (time active, * p=0.047) and slept less (total sleep, * p=0.033) than scrambled-injected siblings, although the effect sizes were not well replicated across clutches. One datapoint from a clu F0 knockout larvae (clutch2) falls outside the Y axis limit of the night time active plot (3.3%).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Human SORL1 amino acid sequence (top) aligned to zebrafish Sorl1 amino acid sequence (bottom). In the zebrafish protein, each amino acid (vertical bar) is coloured based on its similarity with the human protein. White gaps are added when additional residues are present in the other sequence. (b) (top) Schematic of sorl1 in the 5′–3′ genome direction. Exons are in dark grey; tall exons are protein-coding, small are 5′- or 3′-UTR. Light grey lines are introns, and grey arrows represent the direction of transcription. Orange arrowheads mark the target loci. Exons and introns are on different scales. (bottom) Percentage of reads mutated (height of each bar, with orange representing percentage with a frameshift mutation) at each targeted locus of sorl1. scr, scrambled-injected control larva; ko, sorl1 F0 knockout larva. The numbers refer to individual animals. For example, ko6 refers to an individual sorl1 F0 knockout larva for which mutations at each targeted locus are plotted. Across F0 knockout samples: 98.2 ± 5.4% mutated reads, 73.9 ± 23.8% of all reads had a frameshift mutation. (c) (left) Activity (sum of Δ pixels/10 min) of sorl1 F0 knockout larvae and scrambled-injected siblings during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10-min epoch) during the same experiment. Traces are mean ± SEM across larvae. See also Figure 4—figure supplement 5 for results from replicate clutch 2. (d) Parameter plots for two clutches of sorl1 F0 knockout larvae and scrambled-injected siblings. Each dot represents one larva during one day (top row) or night (bottom row). Black crosses mark the group means. (top row) During the day, sorl1 F0 knockouts spent less time active (time active, ** p=0.005) and initiated fewer swimming bouts (number of active bouts, ** p=0.004) than scrambled-injected controls. The average duration and number of pixels each swimming bout displaced were not affected by the loss of Sorl1 (active bout duration, ns p=0.40; active bout sum, ns p=0.84). Sleep was also not affected (total sleep, ns p=0.98). (bottom row) During the night, sorl1 F0 knockouts spent more time active (time active, ** p=0.002) and their swimming bouts lasted longer on average (active bout duration, *** p<0.001) than scrambled-injected siblings. sorl1 F0 knockouts also slept less (total sleep, ** p=0.001), mainly because they initiated fewer sleep bouts (number of sleep bouts, *** p<0.001), while the duration of each sleep bout remained broadly unchanged (sleep bout duration, ns p=0.69). One scrambled-injected larva from clutch 2 falls outside the Y axis limit of sleep bout duration (night1: 16.1 min, night2: 12.3 min). Statistics by likelihood-ratio test on linear mixed effects models.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (left) Activity (sum of Δ pixels/10 min) of sorl1 F0 knockout larvae and scrambled-injected siblings during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10-min epoch) during the same experiment. Traces are mean ± SEM across larvae. This replicate experiment is called clutch 2 in Figure 4—figure supplement 4.
+
+### From behavioural fingerprint to causal process: serotonin signalling disruption by the loss of Sorl1
 
 From genomic studies of AD, we know that mutations in genes such as SORL1 modify risk by disrupting some biological processes (Schwartzentruber et al., 2021; Nicolas et al., 2016; Pottier et al., 2012; Thonberg et al., 2017). Presumably, the same processes are disrupted in zebrafish sorl1 knockouts, and some caused the behavioural alterations we observed. Can we now follow the thread backwards and predict some of the biological processes in which Sorl1 is involved based on the behavioural profile of sorl1 knockouts?
 
 To predict disrupted biological processes from the sorl1 knockout behavioural profile, we developed a behavioural pharmacology approach based on a database of 5756 small molecule behavioural fingerprints (3677 unique compounds) obtained in wild-type larvae (Rihel et al., 2010a). First, we used information from the Therapeutic Target Database (Zhou et al., 2022) to annotate each compound with its indications (e.g. triprolidine is used to treat hay fever), targets (e.g. triprolidine targets the histamine H1 receptor), and the pathways it affects through its targets (e.g. triprolidine affects the ‘inflammatory mediator regulation of TRP channels’). Second, we converted the frame-by-frame behavioural fingerprint of sorl1 knockouts to the 1-min format used by the database. We then compared the mean sorl1 knockout fingerprint with each small molecule behavioural fingerprint, creating a ranked list from the small molecule fingerprint most similar to the sorl1 fingerprint (SU6656: cosine similarity = 0.83) to the small molecule fingerprint most opposite to the sorl1 fingerprint (nitrocaramiphen HCl: cos = −0.78). Third, we tested using a custom permutation test whether specific indication, target, or pathway annotations were significantly enriched at the top and/or the bottom of the ranked list. More present among the small molecules most correlating and/or anti-correlating with the sorl1 fingerprint were drugs used to treat depression (Figure 5—figure supplement 1a, simulated p-value = 0.049), targeting the serotonin transporter SLC6A4 (Figure 5a and b, simulated p-value = 0.015), and affecting the ‘serotonergic synapse’ pathway (Figure 5—figure supplement 1b, simulated p-value = 0.027). Thus, sorl1 knockout larvae behaved similarly to larvae treated with small molecules targeting serotonin signalling, suggesting that the loss of Sorl1 altered serotonin signalling.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig5-v1.jpg)
+
+**Figure 5.:** (a) Compounds interacting with the serotonin transporter SLC6A4 tend to generate behavioural phenotypes similar to the sorl1 F0 knockout fingerprint. 2674 compound–target protein pairs (vertical bars; 1552 unique compounds) are ranked from the fingerprint with the most positive cosine to the fingerprint with the most negative cosine in comparison with the mean sorl1 F0 knockout fingerprint. Fingerprints of compounds that interact with SLC6A4 are coloured in yellow (source: Therapeutic Target Database). Simulated p-value = 0.015 for enrichment of drugs interacting with SLC6A4 at the top (positive cosine) and/or bottom (negative cosine) of the ranked list by a custom permutation test. (b) Result of the permutation test for top and/or bottom enrichment of drugs interacting with SLC6A4 in the ranked list. The absolute cosines of the fingerprints of drugs interacting with SLC6A4 (n=18, one fingerprint per compound) were summed, giving sum of cosines = 6.1. To simulate a null distribution, 18 fingerprints were randomly drawn 100,000 times, generating a distribution of 100,000 random sum of cosines. Here, only 1470 random draws gave a larger sum of cosines, so the simulated p-value was p = 1470/100,000 = 0.015 *. (c) (top) Behavioural fingerprints of sorl1 F0 knockouts and scrambled-injected siblings treated with 1 µM citalopram. (bottom) Behavioural fingerprints of sorl1 F0 knockouts and scrambled-injected siblings treated with 10 µM citalopram. In both plots, each dot represents the mean deviation from the mean of the same-group (F0 knockout or scrambled-injected) untreated (H2O) siblings (z-score, mean ± SEM); therefore, the baseline (z-scores = 0) does not represent the same larvae for sorl1 F0 knockouts and scrambled-injected controls. Z-scores from two clutches were averaged. (d) Euclidean distance from same-group controls’ mean across the 32 parameters. ns p=0.71, *** p<0.001 by Welch’s t-test. (e) HCRs labelling transcripts encoding serotonin transporters (slc6a4a and slc6a4b) in 6-dpf sorl1 F0 knockouts and scrambled-injected controls. The images are maximum Z-projections of dorsal (top) and sagittal (bottom) views of the median stack of all larvae in each group. A, anterior; P, posterior; R, rightwards; L, leftwards; D, dorsal; V, ventral. (f) Quantification of HCRs from (c). (left) Total grey pixel intensity per anatomical region in sorl1 F0 knockouts and scrambled-injected controls. Across regions: ns p=0.98; unique regions: ns p>0.25. (right) Number of voxels with positive signal per anatomical region in sorl1 F0 knockouts and scrambled-injected controls. ** p=0.001, unique regions: ns p>0.07. Statistics across regions by likelihood-ratio test on linear mixed effects models; statistics on unique regions by Welch’s t-test without p-value adjustment. The same larvae are plotted in Figure 5—figure supplement 1e f.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Drugs used to treat depression tend to generate behavioural phenotypes similar to the sorl1 F0 knockout fingerprint. 1401 pairs of one compound and one therapeutic indication (vertical bars; 1123 unique compounds) are ranked from the fingerprint with the most positive cosine to the fingerprint with the most negative cosine in comparison with the mean sorl1 F0 knockout fingerprint. Fingerprints of drugs used to treat depression are coloured in yellow (source: Therapeutic Target Database). Simulated p-value = 0.049 for enrichment of drugs used to treat depression at the top (positive cosine) and/or bottom (negative cosine) of the ranked list by a custom permutation test. (b) Result of the permutation test for top and/or bottom enrichment of drugs affecting the ‘serotonergic synapse’ KEGG pathway. The absolute cosines of the fingerprints of drugs which affect the ‘serotonergic synapse’ (n=374, one fingerprint per compound) were summed, giving sum of cosines = 100.4. To simulate a null distribution, 374 fingerprints were randomly drawn 100,000 times, generating a distribution of 100,000 random sum of cosines. Here, only 2662 random draws gave a larger sum of cosines, so the simulated p-value was p = 2662/100,000 = 0.027 *. (c) Behavioural fingerprints of sorl1 F0 knockouts and scrambled-injected siblings treated with 10 µM fluvoxamine maleate. In both plots, each dot represents the mean deviation from the mean of the same-group (F0 knockout or scrambled-injected) untreated (H2O) siblings (z-score, mean ± SEM), therefore the baseline (z-scores = 0) does not represent the same larvae for sorl1 F0 knockouts and scrambled-injected controls. (d) Euclidean distance from same-group controls’ mean across the 32 parameters. *** p<0.001 by Welch’s t-test. (e) HCRs labelling transcripts encoding tryptophan hydroxylases (tph1a, tph1b, tph2) in 6-dpf sorl1 F0 knockouts and scrambled-injected controls. The images are maximum Z-projections of dorsal (top) and sagittal (bottom) views of the median stack of all larvae in each group. A, anterior; P, posterior; R, rightwards; L, leftwards; D, dorsal; V, ventral. (f) Quantification of HCRs from (e). (left) Total grey pixel intensity per anatomical region in sorl1 F0 knockouts and scrambled-injected controls. *** p<0.001, * p=0.012. (right) Number of voxels with positive signal per anatomical region in sorl1 F0 knockouts and scrambled-injected controls. Across regions: ns p=0.08; unique regions: ns p>0.07. Statistics across regions by likelihood-ratio test on linear mixed effects models; statistics on unique regions by Welch’s t-test without p-value adjustment. The same larvae are plotted in Figure 5e and f.
 
 If serotonin signalling is altered in sorl1 knockouts, they should react differently to serotonergic drugs than wild-type animals. To test this hypothesis, we treated sorl1 F0 knockouts and controls with citalopram, a selective serotonin reuptake inhibitor (SSRI) used to treat depression (Andersen et al., 2009). Citalopram binds the serotonin transporter SLC6A4, preventing the reuptake of serotonin from the synaptic cleft. At a low dose of citalopram (1 µM, added directly to the fish water), sorl1 F0 knockouts and scrambled-injected controls reacted similarly, sleeping about 1.1 hr more during both day and night (Figure 5c). In contrast, at a higher dose of citalopram (10 µM), sorl1 F0 knockouts had a stronger reaction than their control siblings. For example, sleep during the day increased 2.5× in sorl1 knockouts, while it only increased 2.2× in controls. The heightened sensitivity of sorl1 knockouts to citalopram was also apparent when taking all parameters into account by measuring each larva’s Euclidean distance from the average H2O-treated sibling of same genotype (Figure 5d). Indeed, 10 μM citalopram displaced the sorl1 knockout larvae further from their behavioural baseline than it pushed controls from theirs. In a second experiment, we treated knockouts and controls with fluvoxamine maleate (10 µM), another commonly prescribed SSRI (Omori et al., 2010). sorl1 F0 knockouts had a weaker reaction to fluvoxamine than their control siblings, the opposite effect than for citalopram. For example, fluvoxamine doubled (2.1×) sleep bout length at night in sorl1 knockouts but tripled it (3.4×) in controls (Figure 5—figure supplement 1c). Measuring each larva’s Euclidean distance from its H2O-treated siblings confirmed the reduced sensitivity of sorl1 knockouts to fluvoxamine (Figure 5—figure supplement 1d). While it is surprising that the sorl1 knockout larvae reacted oppositely to the two SSRIs, they reacted differently than control larvae in both cases, demonstrating that our behavioural pharmacology approach correctly predicted from behaviour alone that serotonin signalling was in some way altered in sorl1 knockouts.
 
@@ -93,11 +177,19 @@ There are at least two ways sorl1 knockouts could react differently to SSRIs. Fi
 
 To distinguish between these two hypotheses, we used HCR to label serotonergic neurons by tagging mRNA coding for tryptophan hydroxylases (in zebrafish: tph1a, tph1b, tph2; Figure 5e), an enzyme required for the synthesis of serotonin, and serotonin transporters by tagging slc6a4a and slc6a4b mRNA (Lillesaar, 2011; Figure 5—figure supplement 1e). We registered the brain stacks to a common atlas (Zebrafish Brain Browser) and segmented them into 168 anatomical regions. In each region with expression, we counted the number of positive voxels and measured the total signal intensity in each channel (channel 1: tph1a + tph1b + tph2; channel 2: slc6a4a + slc6a4b). sorl1 F0 knockouts had slightly more (+2%) slc6a4a/b positive voxels than controls across regions, but this difference was not definite for any one region and not replicated when looking at total signal intensity (Figure 5—figure supplement 1f). sorl1 F0 knockouts had on average 18% lower tph1a/1b/2 signal intensities across regions, particularly in the hypothalamus (hypothalamus – caudal zone 1: –24%, Figure 5e and f). Incidentally, of 94 clusters from the 5-dpf scRNA-seq dataset, sorl1 expression was highest in hypothalamic neurons enriched for tph1a expression (Figure 1—figure supplement 2). These small differences can help explain the reduced sensitivity of sorl1 knockouts to fluvoxamine, but do not explain the heightened sensitivity to citalopram. Additionally, at least one study did not find significant changes in serotonin levels in the striatum of SORL1 knockout mice (Glerup et al., 2013), and we did not find genes related to serotonin signalling to be differentially expressed in a bulk RNA-seq dataset of sorl1 knockout zebrafish brains (Barthelson et al., 2020). Support for our first hypothesis is therefore not overwhelming. Alternatively, different levels of serotonin receptors on the post-synaptic neurons could also contribute.
 
-## From behavioural fingerprint to candidate therapeutic: betamethasone rescues the psen2 behavioural phenotype
+### From behavioural fingerprint to candidate therapeutic: betamethasone rescues the psen2 behavioural phenotype
 
 In addition to pointing to the disrupted pathways, behavioural pharmacology can also predict small molecules that may normalise mutant behavioural phenotypes by pointing to compounds that generate the opposite behavioural fingerprint in wild-type larvae.
 
 Using this approach, we sought to identify compounds capable of normalising the behavioural alterations of psen2 knockouts, such as the increased day-time sleep. We ranked the 5756 small molecule behavioural fingerprints in comparison with the mean psen2 F0 knockout fingerprint and focused on compounds that generated the most opposite (anti-correlating) fingerprint when applied on wild-type larvae. This identified three compounds with a high negative cosine compared to psen2 knockouts (Figure 6a, Figure 6—figure supplement 1a): tinidazole (minimum cos = −0.89), fenoprofen (minimum cos = −0.79), and betamethasone (minimum cos = −0.79). These compounds were also selected because they were each replicated at least once in the database, lending confidence to the prediction. We then applied the three compounds on psen2 F0 knockouts and measured their effects on sleep/wake parameters. For each treatment, we grouped the behavioural parameters into four categories: ‘rescue’ if the parameter was significantly altered in DMSO-treated psen2 knockout larvae but got normalised by the drug; ‘missed rescue’ if the psen2 knockout parameter remained altered after drug treatment; ‘side effect’ if a parameter was unaffected in psen2 knockouts but got altered by the drug; and ‘no effect’ if the parameter was unaffected in psen2 knockouts and remained unchanged by the drug.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig6-v1.jpg)
+
+**Figure 6.:** (a) The psen2 F0 knockout fingerprint was used as query to identify small molecules that generate the opposite behavioural phenotype when applied on wild-type larvae, returning betamethasone as candidate therapeutic. Plotted are the query psen2 fingerprint (mean of two clutches, dark grey) and the two betamethasone fingerprints from the drug database with the largest negative cosine similarities (yellow). Parameters: 1, average activity (sec active/min); 2, average waking activity (sec active/min, excluding inactive minutes); 3, total sleep (hr); 4, number of sleep bouts; 5, sleep bout length (min); 6, sleep latency (min until first sleep bout). cos, cosine similarity between each betamethasone fingerprint and the psen2 F0 knockout fingerprint. (b) (left) Activity (sum of Δ pixels/10 min) of scrambled-injected larvae treated with DMSO and psen2 F0 knockout larvae treated with DMSO or 15 µM betamethasone during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10 min epoch) during the same experiment. Traces are mean ± SEM across larvae. See also Figure 6—figure supplement 1 for results from replicate clutch 2. (c) Survey of behavioural parameters for each drug treatment. Bars represent the mean deviation from scrambled-injected siblings treated with DMSO (z-score, mean ± SEM). Dark grey bars represent the psen2 knockouts treated with DMSO, i.e. the phenotype to be treated (same population of psen2 knockouts treated with DMSO for all the drug treatments, n=19+18). Other bars are colour-coded by the effect of each drug on psen2 knockouts: ‘rescue’ (green) if the drug normalised the parameter; ‘missed rescue’ (red) if the drug failed to normalise the parameter; ‘side effect’ (yellow) if the drug significantly altered a parameter which was unaffected in psen2 knockouts; and ‘no effect’ (grey). Calls were decided based on significance by likelihood-ratio test on linear mixed effects models calculated on the raw parameter values from both clutches (n is sample size of drug-treated psen2 knockouts of clutch1 + clutch2).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96839/elife-96839-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The psen2 F0 knockout fingerprint was used as query to identify small molecules that generate the opposite behavioural phenotype when applied on wild-type larvae, returning tinidazole and fenoprofen as candidate therapeutics. Plotted are the query psen2 fingerprint (mean of two clutches, dark grey) and the tinidazole (green) and fenoprofen (blue) fingerprints from the drug database. Parameters: 1, average activity (sec active/min); 2, average waking activity (sec active/min, excluding inactive minutes); 3, total sleep (hr); 4, number of sleep bouts; 5, sleep bout length (min); 6, sleep latency (min until first sleep bout). cos, cosine similarity between the drug fingerprint and the psen2 F0 knockout fingerprint. (b) (left) Activity (sum of Δ pixels/10 min) of scrambled-injected larvae treated with DMSO and psen2 F0 knockout larvae treated with DMSO or 15 µM betamethasone during 48 hr on a 14 hr:10 hr light:dark cycle (white background for days, dark grey background for nights). (right) Sleep (minutes per 10-min epoch) during the same experiment. Traces are mean ± SEM across larvae.
 
 All three compounds normalised at least some aspects of the psen2 knockout behavioural phenotype. Tinidazole did not reduce the abnormally high day-time sleep characteristic of psen2 knockouts (Figure 6c left). It rescued the swimming bout alterations (active bout parameters) during the day but not at night. Overall, the compound barely caused any side effects but only rescued a small aspect of the psen2 knockout phenotype (9/18 altered parameters rescued). Fenoprofen performed worse (Figure 6c middle, 8/18 altered parameters rescued), rescuing some of the swimming bout alterations during the day but aggravating them at night. Furthermore, fenoprofen worsened the day-time hypoactivity of psen2 knockout larvae, causing sleep to increase further and activity to decrease. Strikingly, betamethasone completely resolved the excess day-time sleep without causing hyperactivity (Figure 6b, Figure 6—figure supplement 1b). Betamethasone rescued most, but not all, of the swimming bout alterations during both the day and night (Figure 6c right, 14/18 altered parameters rescued). Betamethasone did cause a few side effects, likely by making psen2 knockout larvae overly aroused at the start of the night, extending sleep latency, steepening the slope in activity, and decreasing the startle response. Therefore, of the three drugs we selected using behavioural pharmacology, one almost completely normalised the psen2 knockout phenotype, albeit with a few side effects.
 
@@ -109,13 +201,13 @@ The F0 knockout and behavioural pharmacology approach successfully predicted the
 
 **Figure 7.:** (a) Datasets currently available to the ZOLTAR online app for predictions. The height of each bar represents the number of unique compounds with this annotation. Some annotations are labelled as examples. Of 3677 unique compounds labelled with a PubChem ID, 1123 were annotated with one or more indications; 1552 were annotated with one or more target proteins; and 1140 were annotated with one or more KEGG pathways through their targets. Source of annotations: Therapeutic Target Database. (b) Screenshot showing some of the features of the ZOLTAR online app. User drags and drops data file(s) (middur = sec active/min for each larva) and file(s) labelling each well with a condition (called ‘genotype file’, but can be any group assignments). The app reads the groups from the genotype file(s) and the user selects the treatment and control groups in a dropdown menu. The app calculates and plots the fingerprint(s) (tab Query fingerprint), then ranks the 5756 small molecule fingerprints (tab Drug fingerprints ranked) from maximum positive cosine to maximum negative cosine. Clicking on a row in the table of ranked compounds plots all the fingerprints of this compound (all fingerprints with the same PubChem ID) in comparison with the query fingerprint, as in Figure 6a. The app tests, for each annotation, enrichment towards the top and/or bottom of the ranked list with a custom permutation test. Current annotations are clinical indications (tab Indications), target proteins (tab Targets), and the KEGG pathways each target protein is associated with (tab KEGG pathways). Clicking on a row in a table of annotation results generates the ‘barcode plot’ for this annotation, as in Figure 5a. The tables can be downloaded as .csv files and the plots as .pdf files.
 
-## Disrupted sleep and serotonin signalling—causal processes of AD?
+### Disrupted sleep and serotonin signalling—causal processes of AD?
 
 Of the seven genes tested, psen1 and all four late-onset Alzheimer’s risk genes decreased sleep duration at night when mutated in zebrafish larvae. Could disrupted sleep itself be a causal process in AD? AD patients often take longer to fall asleep, have higher sleep fragmentation, and spend sharply less time in NREM sleep (D’Atri et al., 2021; Prinz et al., 1982). Sleep disruption can be present before the onset of cognitive deficits. For example, very high sleep fragmentation in elderly people is associated with subsequent diagnosis of AD (Lim et al., 2013). Experiments on humans and animal models also point to disrupted sleep being a causal process in some cases. In healthy adults, one night of sleep deprivation was sufficient to cause a 25–30% increase in Aβ signal on PET scans (Shokri-Kojori et al., 2018), a ~30% increase in CSF concentrations of Aβ (Lucey et al., 2018), and a ~50% increase in CSF concentrations of tau (Holth et al., 2019). In wild-type rats and in mice overexpressing mutated human APP and PSEN1, restricting sleep for 21 days increased Aβ deposits in the cortex (Kang et al., 2009; Zhao et al., 2019). Conversely, pharmaceutically or chemogenetically consolidating sleep in AD mouse models for 1–2 months delayed Aβ plaque formation (Kang et al., 2009; Jagirdar et al., 2021). Disrupted sleep is therefore likely to be a causal process in AD. Can it become a therapeutic target? An ongoing clinical trial (NCT04629547) is underway to test whether suvorexant, an orexin receptor antagonist that increases sleep, can reduce Aβ accumulation by consolidating sleep in older adults without dementia (Herring et al., 2020). Our observation that disruption of genes associated with AD diagnosis after 65 years reduces sleep in 7-day zebrafish larvae suggest that disrupted sleep may be a common mechanism through which these genes exert an effect on risk. Impaired sleep early in life may be especially deleterious as it is likely essential for brain development: infants spend most of their time asleep during the first year of life (Ednick et al., 2009). Incidentally, infants who carry the risk allele of APOE, ε4, show differences in grey matter volume and myelin content in multiple brain regions (Dean et al., 2014). Differences are also present in children 9–17 years old who carry the disease-causing PSEN1 E280A mutation (Quiroz et al., 2015). In adults without dementia, higher genetic risk of AD correlate with some sleep phenotypes, sometimes as early as their early twenties (Chen et al., 2022; Leng et al., 2021; Muto et al., 2021). Future work should directly assess whether sleep is impaired in infants at higher genetic risk of AD and whether it is related to these brain structural differences.
 
 Our behavioural pharmacology approach also predicted that loss of Sorl1 impaired serotonin signalling. sorl1 knockouts did respond differently to SSRIs, but the exact mechanism is unclear. SORL1 acts as an adaptor protein between retromer and several cargo proteins, such as APP (Jensen et al., 2023), GDNF receptor α1 (Glerup et al., 2013), and glutamate receptor 1 (GLUA1; Mishra et al., 2022). Retromer is a large protein complex which ‘rescues’ proteins from endosomes, targeting them to recycling instead of lysosomal digestion (Burd and Cullen, 2014). By disrupting retromer function, mutations in SORL1 disrupt endosomal recycling, which appears as swelling of early endosomes (Mishra et al., 2023). As a result, APP remains in endosomes for longer, where it is more likely to be cleaved by β-secretase, the first step towards production of Aβ (Small and Petsko, 2015). Similarly, retromer dysfunction also lowers the level of GLUA1 receptors on the neuron membrane, likely because endocytosed receptors are not recycled back to the membrane, which can result in both increased or decreased firing rates in vitro (Mishra et al., 2022). We speculate that some serotonin (5-hydroxytryptamine, 5-HT) receptors are also recycled via retromer and SORL1. Consequently, sorl1 knockouts would react differently to a large spike in serotonin (SSRI treatment) as they have different levels of 5-HT receptors on the post-synaptic membrane. In support for this idea, both 5-HT type 4 receptor (Joubert et al., 2004) and SORL1 (Huang et al., 2016) interact with sorting nexin 27, a subunit of retromer. Incidentally, the 5-HT receptor type 4 was also an enriched target for sorl1 (simulated p-value = 0.016). Other observations are consistent with serotonin signalling being a causal process of AD. For example, treatment of an AD mouse model with citalopram caused a rapid decrease in Aβ concentrations in the ISF and eventually reduced amyloid plaque load. Additionally, humans treated with SSRIs within the past 5 years had significantly lower cortical amyloid plaque load on PET scans, suggesting a causal relationship (Cirrito et al., 2011). While much work remains to be done, SSRIs can generally be used safely for many years, so modulating serotonin signalling may be an attractive approach to reduce Aβ levels years before the onset of cognitive symptoms (Cirrito et al., 2011).
 
-## Limitations and future directions for predictive behavioural pharmacology
+### Limitations and future directions for predictive behavioural pharmacology
 
 Currently, the hypotheses that our behavioural pharmacology approach can test are limited by the small molecule screen dataset (Rihel et al., 2010a), which was biased towards specific themes and targets. For example, of 1552 compounds with an annotated target, 60 (3.9%) target the dopamine D2 receptor but only 1 (0.06%) targets mitochondrial uncoupling proteins (UCP1, 2, 3). Consequently, the approach presumably has high sensitivity for disruptions in dopamine signalling, while some hypotheses, such as impairment in mitochondrial coupling, are never formally tested. Broadly, this means that a negative (non-significant) result may not be meaningful if the biological process in question is underrepresented. Additionally, about 30% of the annotated compounds in the database have more than one target. While this is not necessarily an issue when the goal is to find any small molecule which rescues the phenotype, this lack of specificity likely blurs the signal from modulation of a specific target to effect on behaviour. For example, all five compounds which target the histamine H4 receptor also target the histamine H3 receptor, so if the H3 receptor is detected as significantly enriched, the H4 receptor is certain to be significant too, regardless of whether the H4 receptor is indeed specifically disrupted. To develop the biological process prediction, future work should focus on selecting specific agonists and antagonists for a set list of targets, such as the compound VUF-6002 to selectively target the histamine H4 receptor without also activating H3 (Terzioglu et al., 2004). Alternatively, ZOLTAR could weigh the evidence for a target based on the compound’s affinity constant, such that a weak inhibitor (high Ki) could only contribute proportionally weak evidence for its target in the analysis.
 
@@ -123,21 +215,290 @@ A way to improve the specificity of the approach is to enhance the resolution of
 
 This leads to a thought experiment: assuming absolute resolution in behaviour tracking, does every knockout give a unique effect on behaviour? In other words, are there ~26,000 distinct knockout fingerprints or do multiple genes converge on a smaller set of possible fingerprints? How much resolution is required to distinguish every possible fingerprint?
 
-## Conclusion
+### Conclusion
 
 In summary, we present a behavioural pharmacology approach which uses the sleep/wake behaviour of zebrafish larvae as a tool to translate genomic findings into druggable biological processes and candidate therapeutics. We used Alzheimer’s risk genes, especially SORL1 and PSEN2, as case studies and correctly predicted mutant-drug interactions from behaviour alone. Our strategy is both scalable thanks to the F0 knockout method and the FramebyFrame analysis package and generalisable beyond AD through the ZOLTAR app. Other neurological conditions for which many risk genes are known, such as autism, epilepsy, or schizophrenia, are prime candidates for the application of the strategy.
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB ×TL</td>
+      <td>University College London, London, UK</td>
+      <td>ZDB-GENO-031202–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>TL</td>
+      <td>Institut de la Vision, Paris, France</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>appa</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000104279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>appb</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000055543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>apoea</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000102004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>apoeb</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000040295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>psen1</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000004870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>psen2</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000015540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>cd2ap</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000015224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>clu</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000010434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>sorl1</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000013892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(elavl3:H2b-GCaMP6s)jf5Tg</td>
+      <td>PMID:25068735</td>
+      <td>ZDB-ALT-141023–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>mitfaw2 (nacre)</td>
+      <td>PMID:10433906</td>
+      <td>ZDB-ALT-990423–22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 crRNAs</td>
+      <td>IDT</td>
+      <td></td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR-Cas9 tracrRNA</td>
+      <td>IDT</td>
+      <td>Cat. #1072533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HCR probes</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HCR amplifiers</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alt-R S.p. Cas9 Nuclease V3</td>
+      <td>IDT</td>
+      <td>Cat. #1081059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>citalopram hydrobromide</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. #15732987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fluvoxamine maleate</td>
+      <td>MedChemExpress</td>
+      <td>Cat. #HY-B0103A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tinidazole</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. #16594384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fenoprofen calcium salt hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #F1517</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>betamethasone</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #20363</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>dsDNA Broad Range Assay</td>
+      <td>Qubit</td>
+      <td>Cat. #Q33266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Pierce Detergent Compatible Bradford Assay</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #23246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>V-PLEX Plus Aβ Peptide Panel 1 (4G8)</td>
+      <td>Meso Scale Diagnostics</td>
+      <td>Cat. # K15199G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ampliCan</td>
+      <td>PMID:30850374</td>
+      <td></td>
+      <td>bioconductor.org/packages/release/bioc/html/amplican.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZebraLab</td>
+      <td>ViewPoint Behavior Technology</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FramebyFrame R package</td>
+      <td>this paper</td>
+      <td></td>
+      <td>https://github.com/francoiskroll/FramebyFrame</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>https://imagej.net/software/fiji/downloads</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZOLTAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>https://francoiskroll.shinyapps.io/zoltar/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2022b</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3</td>
+      <td>Python</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v4.2.2</td>
+      <td>CRAN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-square well mesh-bottom plate, 3D model</td>
+      <td>this paper</td>
+      <td></td>
+      <td>https://github.com/francoiskroll/FramebyFrame</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult zebrafish were reared by University College London’s Fish Facility on a 14 hr:10 hr light:dark cycle. To obtain eggs, pairs of one female and one male were isolated in breeding boxes overnight, separated by a divider. Around 9 AM (lights on) the next day, the dividers were removed and eggs were collected 7–10 min later. The embryos were then raised in 10 cm Petri dishes filled with fish water (0.3 g/L Instant Ocean) in a 28.5 ºC incubator on a 14 hr:10 hr light:dark cycle. Debris and dead or dysmorphic embryos were removed every other day with a Pasteur pipette under a bright-field microscope and the fish water replaced. At the end of the experiments, larvae were euthanised with an overdose of 2-phenoxyethanol (ACROS Organics). Experimental procedures were in accordance with the Animals (Scientific Procedures) Act 1986 under Home Office project licences PA8D4D0E5 and PP6325955 awarded to Jason Rihel. Adult zebrafish were kept according to FELASA guidelines (Aleström et al., 2020).
 
 Wild types refer to AB×TL zebrafish, except for the fluvoxamine experiment (Figure 5—figure supplement 1) which used TL larvae. Throughout, F0 knockouts refer to wild-type embryos that were injected with Cas9/gRNA RNPs at the single-cell stage.
 
-## Generation of F0 knockout larvae
+### Generation of F0 knockout larvae
 
-## crRNA selection
+#### crRNA selection
 
 The crRNA was the only component of the Cas9/gRNA RNP specific to the target locus.
 
@@ -147,7 +508,7 @@ We prioritised targeting asymmetrical exons and only selected crRNAs without any
 
 A protocol describing how to select crRNAs based on these developments is available at dx.doi.org/10.17504/protocols.io.81wgb6r5qlpk/v1. Sequences of the crRNAs and information about the targeted loci are provided in Supplementary file 1.
 
-## Cas9/gRNA preparation
+#### Cas9/gRNA preparation
 
 A protocol describing how to generate F0 knockout larvae is available at dx.doi.org/10.17504/protocols.io.5qpvo52wdl4o/v3.
 
@@ -157,7 +518,7 @@ The RNPs were usually kept overnight in a 4 ºC fridge on ice before injections 
 
 For experiments targeting two genes simultaneously (appa/appb, psen1/psen2, apoea/apoeb), we targeted each gene at two loci to potentially reduce unviability (Kroll et al., 2021). While mutating two loci instead of three is predicted to reduce rates of complete biallelic knockout animals, given the high rate of frameshift mutations achieved with the RNPs that were used, ~90% of injected animals were still expected to be complete biallelic knockouts. Across loci that were mutated during double F0 knockout experiments, 97.5 ± 7.0% of the reads were mutated, and 78.9 ± 24.0% of all reads had a frameshift mutation; see francoiskroll.shinyapps.io/frameshiftmodel/ for the theoretical knockout rate prediction. The preparation followed the same steps as above. The four RNP solutions were pooled, so the final concentration of each RNP in the pool was 7.6 µM and the total RNP concentration was 30.5 µM.
 
-## Injections
+#### Injections
 
 Approximately 1 nL of the three-RNP pool was injected into the yolk at the single-cell stage before cell inflation. This amounts to ~30.5 fmol of RNP (30.5 fmol [5029 pg] of Cas9 and 30.5 fmol [1070 pg] of total gRNA). Each unique RNP was present in equal amounts in the pool. Therefore, in the case of three RNPs,~10.2 fmol of each RNP were co-injected.
 
@@ -165,11 +526,11 @@ When targeting two genes simultaneously, approximately 1.3 nL of the four-RNP mi
 
 The injected eggs were kept at ~20 ºC for ~50 min after injection before transfer to a 28.5 ºC incubator, as delaying the first cell division by lowering the temperature was tentatively shown to increase mutagenesis and reduce the diversity of alleles (Terzioglu et al., 2020).
 
-## Scrambled RNPs
+#### Scrambled RNPs
 
 In all F0 knockout experiments, three or four non-targeting, ‘scrambled’, crRNAs were prepared into RNPs and injected following the same steps as above. These were created by shuffling the spacer sequence of existing crRNAs until the only predicted targets had 4 or more mismatches in protein-coding sequences, or 3 or more in non-coding sequences. Sequences of the scrambled crRNAs are available in Supplementary file 1.
 
-## Preparation of samples for Illumina MiSeq
+### Preparation of samples for Illumina MiSeq
 
 We sequenced every targeted locus in samples of F0 knockout larvae using Illumina MiSeq. For psen1, psen2, apoea, and apoeb, the samples were from video-tracked larvae. The appa, appb, cd2ap, clu, and sorl1 (scr1–2 and ko1–6) larvae were generated expressly to be sequenced. The other sorl1 samples (scr3–4 and ko7–16) were from video-tracked larvae of the fluvoxamine experiment. For each locus, we generally prepared 5–6 F0 knockout samples and 2–3 scrambled-injected samples. Individual larvae were sequenced at the three or four mutated loci.
 
@@ -179,15 +540,15 @@ PCR primers were designed for each target locus using Primer-BLAST (NCBI) to amp
 
 Each PCR well contained: 7.98 μL PCR mix (2 mM MgCl2, 14 mM pH 8.4 Tris-HCl, 68 mM KCl, 0.14% gelatine in water, autoclaved for 20 min, cooled to room temperature, chilled on ice, then added 1.8% 100 mg/mL BSA and 0.14% 100 mM d[A, C, G, T]TP), 3 μL 5× Phusion HF buffer (New England Biolabs), 2.7 μL dH2O, 0.3 μL forward primer (100 μM), 0.3 μL reverse primer (100 μM), 0.12 μL Phusion High-Fidelity DNA Polymerase (New England Biolabs), 1.0 μL genomic DNA; for a total of 15.4 μL. The PCR plate was sealed and placed into a thermocycler. The PCR program was: 95 ºC – 5 min, then 40 cycles of: 95 ºC – 30 sec, 60 ºC – 30 sec, 72 ºC – 30 sec, then 72 ºC – 10 min, then cooled to 10 ºC until collection. The PCR product’s concentration was quantified with Qubit (dsDNA High Sensitivity or Broad Range Assay) and its length was verified on a 2.5% agarose gel with GelRed (Biotium). Excess primers and dNTPs were removed by ExoSAP-IT (Thermo Fisher) following the manufacturer’s instructions. The samples were then sent for Illumina MiSeq, which used MiSeq Reagent Nano Kit v2 (300 Cycles).
 
-## Illumina MiSeq data analysis
+### Illumina MiSeq data analysis
 
 Illumina MiSeq data was received as two fastq files for each well, one forward and one reverse. The paired-end reads were aligned to the reference amplicon with bwa v0.7.17 and the resulting bam alignment file was sorted and indexed with samtools v1.11 (Li et al., 2009). Alignments were then filtered to keep only reads with less than 20% of its length soft-clipped and spanning at least 20 bp on each side of the predicted Cas9 double-strand break site, 4 bp upstream of the ‘N’ of the NGG protospacer adjacent motif. Whenever necessary, bam alignment files were visualised with IGV v2.16.0. The resulting filtered bam file was converted back to a forward and a reverse fastq file using bedtools v2.30.0 (Quinlan and Hall, 2010). The filtered fastq files were used as input to the R package ampliCan v1.20.0 (Labun et al., 2019b), together with a csv configuration file containing metadata information about the samples. AmpliCan was run with settings min_freq = 0.005 (any mutation at a frequency below this threshold was considered as a sequencing error), cut_buffer = 12 (any insertion/deletion starting within ±12 bp of the PAM may be Cas9-generated), and event_filter = FALSE (no filtering of reads), as the reads were already filtered. AmpliCan can normalise mutation counts by ignoring any insertion/deletion found in control samples. On rare occasions, this could artefactually decrease mutation counts in F0 knockout samples because of low-level contamination in control samples (e.g. Figure 4—figure supplement 4, locus 1, sample scr1) so we turned this feature off. Instead, we manually checked the scrambled-injected samples in IGV to confirm that there were no insertions or deletions already present in the wild-type background. AmpliCan detected and counted mutations in the reads and wrote results files that were used for subsequent analysis. Any sample with less than 20× paired end (40× single read) coverage were excluded from plots and subsequent analysis, which is why some samples are missing from plots (e.g. locus2, ko5 is missing in Figure 3c). Figures like Figure 3c,d plot the proportion of mutated reads and the proportion of reads with a frameshift mutation at each locus, as computed by ampliCan. A read was counted as mutated if it contained one or more insertions or deletions (indels), base substitutions were not considered. If a read contained multiple indels, ampliCan summed them to conclude whether the read had a frameshift mutation or not.
 
-## 3D-printed 96-well mesh-bottom plate
+### 3D-printed 96-well mesh-bottom plate
 
 The 96-square well mesh-bottom plate (Figure 2a) was designed using Fusion 360 and PrusaSlicer. Multiple copies were 3D-printed in clear polylactic acid (PLA) with a Creality Ender-3 3D printer. The 3D model is available at github.com/francoiskroll/FramebyFrame (copy archived at Kroll, 2025a).
 
-## Behavioural video-tracking
+### Behavioural video-tracking
 
 In F0 knockout experiments, wild-type embryos from separate clutches were injected at the single-cell stage with CRISPR-Cas9 RNPs. Each clutch was from a unique pair of parents allowed to mate for 7–10 min. For each clutch, about half of the embryos were injected with non-targeting ‘scrambled’ RNPs to generate control siblings. Clutch-to-clutch variability in locomotor activity is substantial in zebrafish larvae, even between wild-type clutches of the same strain (Joo et al., 2020). Therefore, keeping clutches from different parents/mating events separate is predicted to increase sensitivity of the assay by reducing variability. More generally, it is crucial never to perform comparisons where treatment larvae (e.g. mutant, transgenic, drug-treated) are from one clutch and the control larvae are from another (i.e. controls are not siblings), as any difference discovered with such an experimental design could be caused by clutch-to-clutch variability.
 
@@ -195,7 +556,7 @@ At 5 dpf, individual larvae were transferred to the wells of 3D-printed mesh-bot
 
 At the end of the tracking, we inspected the larvae under a bright-field microscope and excluded from analysis any larva that did not appear healthy or was not responsive to a light touch with a P10 tip. We then randomly selected 2–3 scrambled-injected and 5–6 F0 knockout larvae for sequencing of the targeted loci (see Preparation of samples for Illumina MiSeq).
 
-## Behavioural video-tracking with drug treatment
+### Behavioural video-tracking with drug treatment
 
 This refers to the experiments treating sorl1 F0 knockouts with citalopram (Figure 5c and d) or fluvoxamine (Figure 5—figure supplement 1c and d) and the experiment treating psen2 F0 knockouts with tinidazole, fenoprofen, and betamethasone (Figure 6b,c, Figure 6—figure supplement 1b). Broadly, video-tracking was performed as above (see Behavioural video-tracking) but larvae were housed in standard 96-square well plates (Whatman) in fish water with drug. Water was topped up every morning shortly after 9 AM (lights on).
 
@@ -215,29 +576,41 @@ Video-tracking was then performed with the same settings as above (see Behaviour
 
 A protocol for behavioural video-tracking with drug treatment is available at dx.doi.org/10.17504/protocols.io.4r3l27p6pg1y/v1.
 
-## Behavioural data analysis
+### Behavioural data analysis
 
 Behavioural data analysis was performed using the FramebyFrame R package v0.11.0. A tutorial and documentation are available at github.com/francoiskroll/FramebyFrame (copy archived at Kroll, 2025a). The important steps of the analysis are summarised below.
 
 The raw file generated by the ZebraLab software was exported into hundreds of xls files each containing 1 million rows of data. Each row of data represented the Δ pixel of one larva at one frame transition. Using the vpSorter(…) function, these data were re-organised in a large csv file where each column was a well, each row was a frame transition, and each cell a Δ pixel value. To visualise activity over time, we smoothed the Δ pixel time course for each larva with a 60-min (~90,000 rows) rolling average then binned the data by summing Δ pixels in 10-min epochs. We generated the activity trace of individual larvae using ggActivityTraceGrid(…) and excluded from subsequent analysis any larva that had an obviously aberrant behaviour, defined as having missed entirely a day-night transition (no jump/drop in the activity trace) or having shown activity during a day lower than the previous night. Each well was assigned to a group using a metadata file generated by genotypeGenerator(…). For each 10-min epoch, we calculated the mean and standard error of the mean (SEM) across larvae in each group to build the activity traces (e.g. Figure 3g left).
 
-Sleep was measured on the large csv file containing all the frame-by-frame Δ pixel data. A 60 s (~1500 rows) rolling sum was applied on the Δ pixel time course of each larva, so that any data point that became zero indicated that the previous 60 s of Δ pixels were all zeros, that is, a sleep bout started exactly 60 s ago. The data after the rolling sum was converted into a series of Booleans: true if the data point was 0 (i.e. that frame was part of a sleep bout); false if the data point was positive (i.e. that frame was not part of a sleep bout, as the larva moved at some point in the preceding 60 s). At this stage, the first 0 of each sleep bout marked the frame at the 60th second of each sleep bout. Therefore, a correction was then applied to extend each sleep bout 60 s in the past by switching the ~1500 frames of false before each sleep bout start to true. The time spent asleep in 10 min epochs (~15,000 rows) was calculated by counting the number of true frames in each epoch and multiplying the counts by 1/frame rate (typically 1/25 frames per second), which was converted into minutes for the sleep trace. For example, if larva #3 had 5000 out of 15,000 frames marked true (i.e. these frames are part of a sleep bout) from minute 20–30 of tracking, that represented 5000×125×160=3.33minutesasleep for that epoch. As for the activity trace, the mean and SEM across larvae in each group were calculated for each 10min epoch to build the sleep traces (e.g. Figure 3g right).
+Sleep was measured on the large csv file containing all the frame-by-frame Δ pixel data. A 60 s (~1500 rows) rolling sum was applied on the Δ pixel time course of each larva, so that any data point that became zero indicated that the previous 60 s of Δ pixels were all zeros, that is, a sleep bout started exactly 60 s ago. The data after the rolling sum was converted into a series of Booleans: true if the data point was 0 (i.e. that frame was part of a sleep bout); false if the data point was positive (i.e. that frame was not part of a sleep bout, as the larva moved at some point in the preceding 60 s). At this stage, the first 0 of each sleep bout marked the frame at the 60th second of each sleep bout. Therefore, a correction was then applied to extend each sleep bout 60 s in the past by switching the ~1500 frames of false before each sleep bout start to true. The time spent asleep in 10 min epochs (~15,000 rows) was calculated by counting the number of true frames in each epoch and multiplying the counts by 1/frame rate (typically 1/25 frames per second), which was converted into minutes for the sleep trace. For example, if larva #3 had 5000 out of 15,000 frames marked true (i.e. these frames are part of a sleep bout) from minute 20–30 of tracking, that represented $5000\times\frac{1}{25}\times\frac{1}{60}=3.33minutesasleep$ for that epoch. As for the activity trace, the mean and SEM across larvae in each group were calculated for each 10min epoch to build the sleep traces (e.g. Figure 3g right).
 
 15 behavioural parameters were then calculated for each larva and day/night. Two additional parameters, startle response at sunset and sleep latency, were only defined for nights, for a total of 32 unique parameters (15 day parameters and 17 night parameters). Full days/nights during the experiment were: night0, day1, night1, day2, night2. Larvae were 5 dpf during night0, 6 dpf during day1/night1, 7 dpf during day2/night2, and the experiment was stopped in the morning of 8 dpf. Night0 (5 dpf) was excluded from the analysis as a habituation period; therefore, two day data points and two night data points were calculated for each larva and behavioural parameter. Definitions of the behavioural parameters can be found in the documentation of the FramebyFrame package (github.com/francoiskroll/FramebyFrame, copy archived at Kroll, 2025a).
 
-To build the behavioural fingerprints, a z-score was calculated for each day/night, each larva, and each unique parameter. For example, to calculate the z-score for parameter active bout length of larva #5 for day1, we first calculated the mean and standard deviation of all active bout length data points for control larvae during day1. These were then used to calculate larva #5’s z-score as:zday1=x−μconσcon
+To build the behavioural fingerprints, a z-score was calculated for each day/night, each larva, and each unique parameter. For example, to calculate the z-score for parameter active bout length of larva #5 for day1, we first calculated the mean and standard deviation of all active bout length data points for control larvae during day1. These were then used to calculate larva #5’s z-score as:
 
-where x was larva #5’s day1 data point, μcon was the mean of control day1 data points, σcon was the standard deviation of control day1 data points. The calculation was repeated for day2. The day1 and day2 z-scores were then averaged to produce a common day z-score for active bout length of larva #5. The process was repeated for each unique parameter, producing 32 z-scores for each larva, which we term each larva’s behavioural fingerprint. To draw the fingerprint plots (e.g. Figure 3h), the mean and SEM of all z-scores were calculated for each unique parameter and group of larvae. By definition of the z-score, the mean z-score for the control larvae was always 0 and the SEM constant for each experiment (dependent on the number of control larvae), so the controls’ fingerprint was omitted from the plot.
+$$
+z_{day1}=\frac{x−\mu_{con}}{\sigma_{con}}
+$$
+
+where $x$ was larva #5’s day1 data point, $\mu_{con}$ was the mean of control day1 data points, $\sigma_{con}$ was the standard deviation of control day1 data points. The calculation was repeated for day2. The day1 and day2 z-scores were then averaged to produce a common day z-score for active bout length of larva #5. The process was repeated for each unique parameter, producing 32 z-scores for each larva, which we term each larva’s behavioural fingerprint. To draw the fingerprint plots (e.g. Figure 3h), the mean and SEM of all z-scores were calculated for each unique parameter and group of larvae. By definition of the z-score, the mean z-score for the control larvae was always 0 and the SEM constant for each experiment (dependent on the number of control larvae), so the controls’ fingerprint was omitted from the plot.
 
 In Figure 6c, for each parameter, the mean and SEM of all z-scores from each clutch were calculated separately. The two z-score means and SEMs were then averaged to draw each bar. See Statistics on behavioural parameters for the definition of each category.
 
 Each larva’s fingerprint can be conceptualised as the coordinates of one data point in a 32-dimension space where each dimension represents one behavioural parameter. In Figure 5d, Figure 5—figure supplement 1d, the centre of the H2O-treated scrambled-injected larvae or the centre of the H2O-treated sorl1 F0 knockout larvae was set as the origin of this 32-dimension space (point at coordinates 0, 0, 0, …) by the z-scoring procedure. We then measured the Euclidean distance between each larva’s fingerprint and the origin.
 
-## Statistics on behavioural parameters
+### Statistics on behavioural parameters
 
-Each behavioural parameter was statistically compared between F0 knockout and scrambled-injected larvae using linear mixed effects (LME) modelling implemented in the lmer function of the R package lme4 v1.1.31 (Bates et al., 2015). The data were parameter values per larva per time window, for example larva #3 slept 4 hr during night2. We always tracked one unique clutch in each ZebraBox run; therefore, the replicate experiment(s) provided both technical and biological replication. The data collected during nights or during days were analysed separately. The fixed effect was the group assignment (genotype or treatment). Random effects were intercepts for clutch assignment (experiment), larva number, and the larva’s age (dpf). Random effects of clutch assignment and larva number were modelled as nested, as data points between larvae of the same clutch were expected to be more similar than between larvae of different clutches; and within each clutch, the day1 (or night1) data point of one larva was expected to be similar to its day2 (or night2) data point. The command to create the day or night model was:lmer(parameter∼group+(1∣experiment/larva)+(1∣dpf),data=nightorday)
+Each behavioural parameter was statistically compared between F0 knockout and scrambled-injected larvae using linear mixed effects (LME) modelling implemented in the lmer function of the R package lme4 v1.1.31 (Bates et al., 2015). The data were parameter values per larva per time window, for example larva #3 slept 4 hr during night2. We always tracked one unique clutch in each ZebraBox run; therefore, the replicate experiment(s) provided both technical and biological replication. The data collected during nights or during days were analysed separately. The fixed effect was the group assignment (genotype or treatment). Random effects were intercepts for clutch assignment (experiment), larva number, and the larva’s age (dpf). Random effects of clutch assignment and larva number were modelled as nested, as data points between larvae of the same clutch were expected to be more similar than between larvae of different clutches; and within each clutch, the day1 (or night1) data point of one larva was expected to be similar to its day2 (or night2) data point. The command to create the day or night model was:
 
-The model provided the slope and its standard error reported on top of the parameter plots (e.g. Figure 3—figure supplement 1b). A model without the fixed effect group was then created, as:lmer(parameter∼1+(1∣experiment/larva)+(1∣dpf),data=nightorday)
+$$
+lmer(parameter∼group+(1∣experiment/larva)+(1∣dpf),data=nightorday)
+$$
+
+The model provided the slope and its standard error reported on top of the parameter plots (e.g. Figure 3—figure supplement 1b). A model without the fixed effect group was then created, as:
+
+$$
+lmer(parameter∼1+(1∣experiment/larva)+(1∣dpf),data=nightorday)
+$$
 
 This null model was compared with the full model created above with a likelihood-ratio test, which provided the p-value reported in the figures and legends.
 
@@ -247,27 +620,27 @@ The main likelihood-ratio test (see above) tested the null hypothesis that group
 
 In Figure 6c, the LME analysis was performed on data from both clutches, as described above. The colour for each parameter was based on two p-values obtained using estimated marginal means: the p-value when comparing DMSO-treated scrambled-injected controls with DMSO-treated psen2 F0 knockouts (‘knockout p-value’), and the p-value when comparing DMSO-treated scrambled-injected controls with drug-treated psen2 F0 knockouts (‘drug p-value’), such that:
 
-## One-minute vs. frame-by-frame
+### One-minute vs. frame-by-frame
 
 The 1-min analyses developed previously (Rihel et al., 2010a; Lee et al., 2022; Rihel et al., 2010b) use the middur parameter calculated by ZebraLab. The middur parameter reports, for each minute, the number of seconds each larva spent above the freeze threshold (set by the user, typically 3 Δ pixel) and below the burst threshold (set by the user, typically 200 Δ pixel). In Figure 2—figure supplement 2b and c, to better focus the comparisons on the effect of the 1-min binning, we re-calculated the middur dataset of the experiment using the FramebyFrame R package (function rawToMiddur(…)) setting the freeze threshold to 0. Larvae plotted were the scrambled-injected larvae from sorl1 F0 knockout clutch 2 (Figure 4—figure supplement 5).
 
-## Pilot long-term video-tracking in 96-well plate
+### Pilot long-term video-tracking in 96-well plate
 
 For the experiment in Figure 2b, we placed 4-dpf scrambled-injected larvae in the wells of a mesh-bottom plate and added to the water bath 50 mL of paramecia culture filtered through a 40 μm cell strainer nylon mesh (Fisherbrand) to remove the large debris which may be detected by the camera of the ZebraBox. Larvae were video-tracked for a total of 208 hr, first on a 14 hr:10 hr light:dark cycle for 63 hr then in constant dim light at 30 lux for 145 hr for the free-running segment. In the afternoon of the first day in constant dim conditions, we removed most of the water from the bath using a 10 mL Pasteur pipette, replaced with fresh fish water, and added another 50 mL of filtered paramecia. As can be seen in Figure 2b, this created a sharp rise in activity. We did not intervene for the rest of the experiment. The activity trace was generated as above (see Behavioural data analysis).
 
-## Sleep latency in presence of paramecia
+### Sleep latency in presence of paramecia
 
 We video-tracked wild-type 6-dpf larvae as described above (see Behavioural video-tracking) for 24 hr, including a 14 hr night. Larvae were in the wells of a standard 96-square well plate (Whatman), and we added two drops of filtered paramecia in half of the wells. There was no water bath and the light level at night was 0 lux.
 
-## Zebrafish orthologues of Alzheimer’s risk genes
+### Zebrafish orthologues of Alzheimer’s risk genes
 
 We used the GWAS meta-analysis and list of most likely causal genes from Schwartzentruber et al., 2021. We downloaded from Ensembl the list of all zebrafish orthologues of human genes (accessed 27/04/2023). More details about GWAS loci, causal genes, and zebrafish orthologues can be found in Supplementary file 1.
 
-## Single-cell RNA sequencing data
+### Single-cell RNA sequencing data
 
 We downloaded single-cell RNA sequencing (scRNA-seq) data generated by Raj et al., 2020 from GEO repository GSE158142 (.rds.gz files, Seurat data structure). In Figure 1b, each gene was considered expressed if it was detected in at least three cells at this developmental stage. In Supplementary file 1, we manually grouped the clusters from Raj et al., 2020 in broad categories to add colours. The expression data plotted (e.g. Figure 1c) were normalised from raw counts by the authors using the ‘LogNormalize’ method implemented in Seurat (Stuart et al., 2019).
 
-## In situ hybridization chain reaction
+### In situ hybridization chain reaction
 
 In situ hybridization chain reaction (HCR) probes were designed as described by Choi et al., 2018 using a custom Python script. HCR split initiator sequences B1, B3, and B5 were obtained from Choi et al., 2018. To generate probe sets, probe pairs were excluded if they fell below melting temperature and %GC thresholds. Probe pairs with strong sequence similarity to off-target transcripts were also excluded. For each target transcript, we generated sets of 15–25 probe pairs. Multiple transcripts were often stained in the same individual larvae. HCR probes were purchased as custom DNA oligos from Thermo Fisher Scientific. HCR amplifiers (B1-Alexa Fluor 488, B3-Alexa Fluor 546, and B5-Alexa Fluor 647) and buffers were purchased from Molecular Instruments. More details about HCR probes can be found in Supplementary file 1.
 
@@ -289,19 +662,19 @@ In the sorl1 experiments, masks for anatomical regions were from the Zebrafish B
 
 To prepare Figure 5e, and Figure 5—figure supplement 1e we calculated each median stack using MATLAB R2022b. The maximum of all four median stacks were then adjusted to the same value in Fiji to keep intensities comparable. The dorsal and sagittal Z-projections were prepared as above.
 
-## Amyloid beta measurements on psen1 and psen2 F0 knockouts
+### Amyloid beta measurements on psen1 and psen2 F0 knockouts
 
 psen1, psen2, and double psen1/psen2 F0 knockout larvae were generated as described above (see Generation of F0 knockout larvae). Most double psen1/psen2 F0 knockout larvae died or were severely dysmorphic by 5 dpf. The other larvae were raised until 16 dpf to increase the amount of tissue available for the assay. Larvae were euthanised by an overdose of tricaine then decapitated with a scalpel. Heads were snap-frozen in liquid nitrogen then homogenized using a mechanical homogenizer in 100 μL TBS (50 mM Tris-HCl, pH 8.0) containing 1:200 protease inhibitor cocktail set III (Calbiochem). Homogenates were centrifuged at 16,000× g at 4 ºC for 30 min. The supernatant was then collected and stored at –70 ºC. We measured total protein concentration of each sample using the Pierce Detergent Compatible Bradford Assay Kit (Thermo Fisher). Aβ38, Aβ40, and Aβ42 concentrations were measured on the Meso Scale Discovery platform (Meso Scale Diagnostics) using the V-PLEX Plus Aβ Peptide Panel 1 (4G8) kit.
 
 Each pool of larvae was measured in four technical replicates: two at the original concentration and two diluted 1:1 in TBS. Meso Scale returned concentrations of Aβ38, Aβ40, Aβ42 in pg/mL. All Aβ38 measurements were below the detection limit. We converted the Aβ concentrations to pg Aβ/µg total protein using the total protein content measured with the Bradford assay. The limit of detection (LOD) for each Aβ species was the concentration of the most diluted standard in pg/mL. We calculated a sample-specific LOD by calculating the Aβ concentration (pg Aβ/µg total protein) that would have given exactly the LOD in pg/mL. For example, the LOD for Aβ40 was 39.79 pg/mL. Therefore, for a sample whose total protein content was 3788 µg/mL, Aβ40 concentration should have been 0.0105 pg Aβ40/g total protein to give exactly the LOD (39.79 pg/mL). Each data point represents the mean of the four technical replicates, except if both diluted replicates were below the sample-specific LOD, in which case the data point represents the mean of the two undiluted technical replicates. If one undiluted sample was below the LOD but not the other, we replaced the below-LOD measurement by the sample-specific LOD itself. If all four technical replicates (undiluted and diluted) were below the sample-specific LOD, the sample was marked with a cross in the plot.
 
-## Annotation of the Rihel et al., 2010 small molecule behavioural database
+### Annotation of the Rihel et al., 2010 small molecule behavioural database
 
 From the Rihel et al., 2010a small molecule zebrafish behavioural database, we extracted the name of each compound tested and the 5756 behavioural fingerprints, which are the mean z-score for each sleep/wake parameter (see Figure 6a for the 1-min parameters). The same compound could have alternate database names (e.g. ‘Dopamine hydrochloride’ and ‘Dopamine HCl’), and could vary by its stereochemistry or salts (e.g. atropine sulfate vs. atropine methyl nitrate). Therefore, we first simplified as much as possible each compound name by removing various stereochemistry and salt information. This reduced the number of unique compound names from 5149 to 4731. We then used the webchem R package (Szöcs et al., 2020) to automatically search each name in the PubChem database and return the PubChem CID. CID could be retrieved automatically for 4365 (92%) of the names. We manually searched the remaining 366 compound names, eventually leaving only 8 of 4731 compound names without a CID. The final number of unique CIDs was 3677. The Therapeutic Target Database (TTD) uses a custom TTD Drug ID but provided a file for cross-matching PubChem CIDs to TTD Drug IDs (P1-03-TTD_crossmatching.txt). We found a TTD Drug ID for 1740 of the 3677 CIDs (47%). Using each TTD Drug ID as query, we then extracted indications and target proteins from databases provided by the TTD using TTD Drug IDs as queries (P1-05-Drug_disease.txt and P1-01-TTD_target_download.txt). Proteins are given a target ID by the TTD, which we then used as query to extract the KEGG pathways each protein was associated with (P4-01-Target-KEGGpathway_all.txt).
 
 As TTD Drug IDs were used to extract annotations but that only 47% of compounds were assigned one, the ZOLTAR app currently uses less than half of the dataset by Rihel et al., 2010a for prediction of disrupted pathways. In the future, other sources could be used to enrich the annotations, for example using machine learning to predict target proteins (Chatterjee et al., 2023).
 
-## Behavioural pharmacology from sorl1 F0 knockout’s fingerprint
+### Behavioural pharmacology from sorl1 F0 knockout’s fingerprint
 
 We first simplified the Rihel et al., 2010a behavioural database so that each compound (unique PubChem CID) would be present as a single average fingerprint. Without this adjustment, a single compound could in theory drive a significant enrichment because it is present as several replicate fingerprints (e.g. propranolol has 10 fingerprints) all positively or negatively correlating with the query fingerprint. We then measured the cosine similarity (range −1.0–1.0) between the mean fingerprint of the two sorl1 F0 knockout clutches and each of the 3677 average small molecule fingerprints (one per PubChem CID) from the Rihel et al., 2010a database, ranking them from the small molecule fingerprint with the most positive cosine (SU6656: cos = 0.83) to the one with the most negative cosine (nitrocaramiphen HCl: cos = −0.78).
 
@@ -311,51 +684,67 @@ We swapped each compound in the ranked list for its annotations, for example its
 
 To measure enrichment of a given annotation towards the top and/or bottom of the list, we summed the absolute cosines of all its instances. For example, 18 compounds in the database are annotated as binding the serotonin transporter (SLC6A4). In the ranked list of fingerprints for sorl1, the sum of those 18 cosines was 6.07. Was this sum of cosines surprising or could it be explained by chance? To test this, we randomly drew 18 positions and measured the sum of cosines 100,000 times to generate a null distribution of sum of cosines (e.g. Figure 5b). We counted how many random draws gave a larger sum of cosines than the observed sum of cosines (6.07) to calculate a simulated p-value. In the case of SLC6A4, 1470 random draws gave a larger sum of cosines; therefore, the probability that a sum of cosines as high as 6.07 was obtained by chance was estimated at 1470/100,000 = 0.0147, which we reported as the simulated p-value.
 
-## Behavioural pharmacology from psen2 F0 knockout’s fingerprint
+### Behavioural pharmacology from psen2 F0 knockout’s fingerprint
 
 We measured the cosine similarity between the mean fingerprint of the two psen2 F0 knockout clutches and each of the 5756 small molecule fingerprints from the Rihel et al., 2010a database. We then ranked the 5756 small molecule fingerprints from the most positive cosine (3–3-Acetoxypregn-16-en-12,20-dione: cos = 0.82) to the most negative cosine (isogedunin: cos = −0.87). We searched within the ~100 fingerprints with the most negative cosines (range of cosines: −0.72–−0.87) for compounds which Rihel et al., 2010a labelled as shortlisted because it affected one behavioural parameter with a large effect size and/or affected the same parameter in the same direction across the two days/nights. From these compounds, we selected fenoprofen and betamethasone because they both had a replicate fingerprint with cosine < −0.50. Tinidazole was selected based on a preliminary experiment in wild-type larvae (data not shown), although it was not shortlisted by Rihel et al., 2010a.
 
 To simplify this selection process in the ZOLTAR app (francoiskroll.shinyapps.io/zoltar/), the shortlisted compounds are labelled, and clicking on a candidate compound automatically plots all the fingerprints from this compound (same PubChem CID).
 
-## Protein alignment plots
+### Protein alignment plots
 
 This refers to the plots as in Figure 3a and b. Amino acid sequences were obtained from UniProt. The ClustalOmega algorithm, implemented in R by the msa package, was used to align the sequences. Definitions of ‘highly similar’ and ‘weakly similar’ groups of amino acids were taken from the ClustalOmega online documentation. The following groups of amino acids were considered highly similar: STA, NEQK, NHQK, NDEQ, QHRK, MILV, MILF, HY, FYW. The following groups of amino acids were considered weakly similar: CSA, ATV, SAG, STNK, STPA, SGND, SNDEQK, NDEQHK, NEQHRK, FVLIM, HFY. Identity was the number of positions where the zebrafish amino acid matched the human amino acid divided by the total length of the alignment. Similarity was the number of positions where the zebrafish amino acid matched or was highly similar to the human amino acid divided by the total length of the alignment. UniProt IDs of the amino acid sequences used were (human vs. zebrafish): appa, P05067 vs. Q6NUZ1; appb, P05067 vs. B0V0E5; psen1, P49768 vs. Q9W6T7; psen2, P49810 vs. Q90ZE4; apoea, P02649 vs. Q503V2; apoeb, P02649 vs. O42364; cd2ap, Q9Y5K6 vs. F1R1N9; clu, P10909 vs. Q6PBL3; sorl1, Q92673 vs. Q90ZE4.
 
-## Gene schematics
+### Gene schematics
 
 This refers to the plots as in Figure 3c and d. Coordinates of 5′-UTRs, 3′-UTRs, and exon boundaries were obtained from Ensembl accessed through R using the biomaRt package v2.54.1 (Durinck et al., 2009). For each gene, we drew the transcript that was used as reference when selecting the crRNAs, usually the longest coding transcript annotated in Ensembl. Ensembl IDs of transcripts drawn were: appa, ENSDART00000166786; appb, ENSDART00000077908; psen1, ENSDART00000149864; psen2, ENSDART00000006381; apoea, ENSDART00000172219; apoeb, ENSDART00000058965; cd2ap, ENSDART00000102611; clu, ENSDART00000127173; sorl1, ENSDART00000156995.
 
-## Pictures
+### Pictures
 
 For the pictures of the psen2 F0 knockout larvae and scrambled-injected siblings (Figure 3f, Figure 3—figure supplement 3a), larvae were anaesthetised and mounted in 1% low melting point agarose (Sigma-Aldrich) in fish water. Pictures were then taken with a Nikon SMZ1500 brightfield microscope with illumination from above the sample.
 
 Pictures of the psen1/psen2 double F0 knockout larvae (Figure 3—figure supplement 1a) were taken with an Olympus MVX10 microscope connected to a computer with the software cellSens (Olympus).
 
-## Statistics
+### Statistics
 
 For statistics on behavioural parameters, see Statistics on behavioural parameters. For the permutations procedure used in Figure 5a,b, Figure 5—figure supplement 1a,b, see Behavioural pharmacology from sorl1 F0 knockout’s fingerprint.
 
 Threshold for statistical significance was α=0.05. In figures, ns refers to p>0.05, * to p≤0.05, ** to p≤0.01, and *** to p≤0.001. In text, data distributions are reported as mean ± standard deviation, unless stated otherwise.
 
-In text, estimates of behavioural parameter effect sizes are often reported in % vs. scrambled-injected controls. To calculate those, we first calculated, for each clutch and day or night, the mean of all control data points for this parameter, typically returning four averages (e.g. clutch1 controls, night1 and night2; clutch2 controls, night1 and night2). To each average, the slope from the LME model (see Statistics on behavioural parameters) was added/subtracted to estimate the knockout averages. An effect size in % vs. controls (ef%) was then calculated for each clutch and day or night as:ef\% =100×(−1+kocon)
+In text, estimates of behavioural parameter effect sizes are often reported in % vs. scrambled-injected controls. To calculate those, we first calculated, for each clutch and day or night, the mean of all control data points for this parameter, typically returning four averages (e.g. clutch1 controls, night1 and night2; clutch2 controls, night1 and night2). To each average, the slope from the LME model (see Statistics on behavioural parameters) was added/subtracted to estimate the knockout averages. An effect size in % vs. controls ($ef%$) was then calculated for each clutch and day or night as:
 
-if the slope was positive; oref\% =−100×(1−kocon)
+$$
+ef\% =100\times(−1+\frac{ko}{con})
+$$
 
-if the slope was negative; where ko and con is the knockout or control average for one clutch and one day or night. The effect sizes were then averaged to return one effect size representing the estimated % increase or decrease vs. scrambled controls.
+if the slope was positive; or
+
+$$
+ef\% =−100\times(1−\frac{ko}{con})
+$$
+
+if the slope was negative; where $ko$ and $con$ is the knockout or control average for one clutch and one day or night. The effect sizes were then averaged to return one effect size representing the estimated % increase or decrease vs. scrambled controls.
 
 In Figure 2—figure supplement 2d, the data were 47 observations, one per larva. Each observation was the time in hours when the larva had its first sleep bout (status 2). Every larva slept at least once during the experiment, so there were no censored (status 1) observations. We calculated the hazard ratio with a Cox proportional-hazards model and the p-value with a likelihood-ratio test. The functions we used were implemented in the R package survival v3.4.0. The FramebyFrame R package automatically performs this survival analysis when generating sleep latency survival plots with the function ggSleepLatencyGrid(…).
 
-In Figure 5f, Figure 5—figure supplement 1f, we compared values between groups (sorl1 F0 knockouts vs. scrambled-injected) in each anatomical region using Welch’s t-test. To test the null hypothesis that group assignment had no effect on values across regions, we used LME modelling implemented in the lmer function of the R package lme4 v1.1.31 (Bates et al., 2015). Taking total signal intensity as an example, the command to create the LME model was:lmer(totalsignalintensity∼group)+(1∣larva)+(1∣anatomicalregion)
+In Figure 5f, Figure 5—figure supplement 1f, we compared values between groups (sorl1 F0 knockouts vs. scrambled-injected) in each anatomical region using Welch’s t-test. To test the null hypothesis that group assignment had no effect on values across regions, we used LME modelling implemented in the lmer function of the R package lme4 v1.1.31 (Bates et al., 2015). Taking total signal intensity as an example, the command to create the LME model was:
 
-The model provided the slope and its standard error reported in the figures. We then created a model without the fixed effect group, as:lmer(totalsignalintensity∼1)+(1∣larva)+(1∣anatomicalregion)
+$$
+lmer(totalsignalintensity∼group)+(1∣larva)+(1∣anatomicalregion)
+$$
+
+The model provided the slope and its standard error reported in the figures. We then created a model without the fixed effect group, as:
+
+$$
+lmer(totalsignalintensity∼1)+(1∣larva)+(1∣anatomicalregion)
+$$
 
 We compared this null model with the full model created above with a likelihood-ratio test, which provided the p-value reported in the figures.
 
-## Software
+### Software
 
 Data analysis was performed in R v4.2.2 ran through RStudio 2023.06.0+421. Analysis of HCR on sorl1 F0 knockouts used Jupyter notebooks written in Python 3 and a MATLAB script ran in MATLAB R2022b. Figures were prepared with Adobe Illustrator 2019. Videos were prepared with Adobe Premiere Pro 2020.
 
-## Code availability
+### Code availability
 
 Source code of the FramebyFrame R package is available at github.com/francoiskroll/FramebyFrame (copy archived at Kroll, 2025a). The package can be installed directly into R. The GitHub repository includes installation instructions, tutorial, and documentation.
 

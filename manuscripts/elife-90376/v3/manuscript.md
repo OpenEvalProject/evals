@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03h2bxq36 Division of Molecular, Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom
-2. https://ror.org/01aj84f44 Section of Neurobiology and DANDRITE, Department of Molecular Biology and Genetics, Aarhus University Aarhus Denmark
+1. Division of Molecular, Cell and Developmental Biology, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+2. Section of Neurobiology and DANDRITE, Department of Molecular Biology and Genetics, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
 
 † Corresponding author
 
@@ -32,49 +32,85 @@ With the large number of functionally O-GlcNAcylated proteins and thousands more
 
 ## Results
 
-## An OGT-CDG mutation reduces global O-GlcNAcylation throughout Drosophila development
+### An OGT-CDG mutation reduces global O-GlcNAcylation throughout Drosophila development
 
 To investigate the contribution of reduced O-GlcNAcylation to phenotypes relevant to OGT-CDG, catalytic domain mutations found in patients were modelled in Drosophila using CRISPR-Cas9 mutagenesis. The previously published sxcN595K (equivalent to human N567K) Pravata et al., 2019 and the newly generated sxcC941Y (equivalent to human C921Y) mutant strains were used to assay the effects of OGT-CDG mutations on global O-GlcNAcylation in adult flies. Consistent with previous reports, O-GlcNAcylation in lysates from adult heads was found to be significantly reduced in the sxcN595K mutant compared to a control genotype (Figure 1A; Pravata et al., 2019). The newly generated sxcC941Y mutant strain presented with a significantly more severe reduction in global O-GlcNAcylation, to roughly 40% of the control genotype. This reduction in O-GlcNAcylation was observed despite a modest, yet significant, increase in OGT protein relative to the control genotype. As the reduction in O-GlcNAcylation was modest in the sxcN595K line, a previously generated catalytically dead mutant strain (sxcK872M) was further characterised alongside the newly generated sxcC941Y variant (Mariappa et al., 2018), to control for allele-specific effects. The sxcK872M genotype was previously found to be recessive lethal at the late pupal stages (Mariappa et al., 2018); therefore, for this genotype O-GlcNAcylation and OGT levels were only assayed at embryonic and larval stages. Both sxcC941Y and sxcK872M stage 16–17 embryos present with significantly reduced O-GlcNAcylation and increased OGT (Figure 1B). As sxcK872M embryos were derived from heterozygous parents, O-GlcNAcylation seen in these embryos is likely largely due to maternally contributed wildtype sxc gene product (Ingham, 1984; Sinclair et al., 2009). By the third-instar larval stage of development, the difference in O-GlcNAcylation between the sxcC941Y and sxcK872M genotypes is more pronounced. sxcK872M larvae present with significantly lower O-GlcNAcylation than both the control and sxcC941Y genotype (Figure 1C). O-GlcNAcylation in the sxcC941Y larvae remains significantly reduced relative to the control genotype, as at all other stages of development assayed. Surprisingly, at this stage of development, sxcC941Y larvae do not present with significantly elevated DmOGT protein levels. Strikingly, the mean DmOGT protein levels in sxcK872M larvae are over eight times higher than in the control genotype.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig1-v3.jpg)
+
+**Figure 1.:** (A) Representative western blot of sxcWT (n = 8), sxcC941Y (n = 8), and sxcN595K (n = 6) adult head lysates and quantification (mean ± standard deviation) of OGT and O-GlcNAcylation immunoreactivity normalised to the both the loading and genotype control. Clostridium perfringens OGA (CpOGA)-treated lanes demonstrate the specificity of the O-GlcNAc antibody (RL2) used compared to lysates treated with the OGA inhibitor GlcNAc statin G (GG). A significant intergroup difference in O-GlcNAcylation was observed (F(2,19) = 42.82, p<0.001), with post hoc analysis revealing a significant reduction in O-GlcNAcylation in both sxcN595K (padj<0.05) and sxcC941Y (padj<0.001) flies relative to the control genotype, and a significant difference between the mutant strains (padj<0.001). A significant intergroup difference was also observed for OGT levels (F(2,19) = 9.137, p<0.01); however, post hoc analysis revealed this was only due to a significant increase in OGT in sxcC941Y flies (padj<0.01). (B) Representative western blot of sxcWT (n = 6), sxcC941Y (n = 6), and sxcK872M (n = 6) lysates from stage 16–17 embryos along with OGT and O-GlcNAc quantification. A significant decrease in O-GlcNAcylation (F(2,14) = 8.014, p<0.01) was observed for both sxcC941Y (padj<0.01) and sxcK872M (padj<0.05) embryos, accompanied by a significant increase in OGT (F(2,14) = 9.49, p<0.01) for both genotype (padj<0.01 and padj<0.05, respectively). (C) Representative western blot and quantification of lysates from sxcWT (n = 6), sxcC941Y (n = 5), and sxcK872M (n = 6) third-instar larvae, demonstrating a significant decrease in O-GlcNAcylation for both sxcC941Y and sxcK872M larvae (F(2,14) = 184.5, p<0.001, padj<0.001 and padj<0.001, respectively) and a decrease in OGT in sxcK872M larvae (F(2,14) = 122.6, p<0.001, padj<0.001). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantification of the number of bristles on the scutellum of sxcWT (n = 566) and sxcC941Y (n = 344) flies, represented as a percentage of total flies included in quantification. (B) As for (A), comparing the number of bristles for sxcWT (n = 136), sxcC941Y (n = 123), sxcC941Y;OgaKO (n = 83), and OgaKO flies (n = 92).
+
 To determine whether the phenotypic consequences of loss of O-GlcNAc transferase function in the sxcC941Y mutant flies results in similar phenotypic consequences as a previously characterised Drosophila line carrying a hypomorphic mutation in sxc (sxcH537A), flies were assayed for scutellar bristle development (Mariappa et al., 2018). sxcC941Y flies were found to also present with an increased penetrance of ectopic bristles on the scutellum, with 31% of sxcC941Y flies presenting with one or more additional bristles, while in the control genotype this only occurred in 8% of flies (Figure 1—figure supplement 1A). Taken together, these results demonstrate that hypo-GlcNAcylation due to OGT-CDG variants can be modelled in Drosophila. Further supporting the hypothesis that reduced OGT catalytic activity is causal in phenotypes seen in ID, a patient mutation modelled in Drosophila results in a similar phenotype as rational mutagenesis of a key DmOGT catalytic residue.
 
-## Pharmacological rescue of O-GlcNAc levels in sxcC941Y flies
+### Pharmacological rescue of O-GlcNAc levels in sxcC941Y flies
 
 To evaluate whether reduced O-GlcNAcylation in sxc mutants with impaired catalytic activity can be rescued to control levels, we sought to elevate O-GlcNAcylation through both genetic and pharmacological means. First, to demonstrate that O-GlcNAcylation can be rescued in flies with impaired DmOGT catalytic activity by abolishing OGA activity, sxc mutant flies were crossed with an Oga knockout strain (OgaKO) (Muha et al., 2020). When assayed by Western blot, we found that knocking out OGA led to a marked increase in O-GlcNAcylation in lysates from adult heads in the sxcC941Y line, above levels seen in the control genotype (Figure 2A). To assay whether this rescue of O-GlcNAcylation could reverse a phenotype caused by reduced O-GlcNAc transferase activity, we compared the number of scutellar bristles in sxcWT, sxcC941Y, sxcC941Y;OgaKO, and OgaKO flies. Surprisingly, we found that despite the OgaKO allele having no effect on its own, sxcC941Y;OgaKO flies had an increased penetrance of ectopic scutellar bristles beyond what we observed for sxcC941Y flies (Figure 1—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative western blot (of three) of sxcWT, sxcC941Y, sxcC941Y;OgaKO and OgaKO adult head lysates, immunolabelled with RL2 to detect O-GlcNAcylation and actin as a loading control. (B) Western blot and quantification of adult head lysates of sxcWT, sxcC941Y vehicle, sxcC941Y fed 3 mM Thiamet G (TMG) and sxcC941Y fed 5 mM TMG (n = 3), immunolabelled for O-GlcNAcylation using the RL2 antibody, OGT, and actin as a loading control. A significant intergroup difference was observed for both O-GlcNAcylation (F(3,8) = 20.86, p<0.001) and OGT (F(3,8) = 27.28, p<0.001) levels, with post hoc analysis revealing that O-GlcNAcylation and OGT levels were not significantly different between sxcWT flies and sxcC941Y flies fed 3 mM TMG (padj=0.75 and padj=0.57, respectively). Both sxcC941Y flies fed a vehicle control and 5 mM TMG present with significantly different O-GlcNAcylation (padj<0.001 and padj<0.01, respectively) and OGT (padj<0.01 and padj<0.05, respectively) levels. (C) Western blot and quantification of third-instar larval lysates of sxcWT, sxcC941Y vehicle, sxcC941Y fed 150 μM TMG and sxcC941Y fed 200 μM TMG (n = 3), immunolabelled for O-GlcNAcylation using the RL2 antibody and actin as a loading control. O-GlcNAcylation significantly differed between groups (F(3,8) = 9.11, p<0.01), with both 150 μM and 200 μM TMG rescuing O-GlcNAcylation levels in sxcC941Y larvae to be no longer significantly different relative to the control genotype (padj=0.31 and padj=0.98, respectively) and 200 μM TMG treatment significantly elevating O-GlcNAcylation relative to the untreated sxcC941Y larvae (padj<0.05). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Log2 fraction of linear profile of O-GlcNAc immunoreactivity from the western blot in Figure 2B of sxcC941Y vehicle (CY untreated), 3 mM Thiamet G (TMG) (CY 3 mM TMG), and 5 mM TMG (CY 5 mM TMG) relative to the sxcWT control (normalised to a loading control). Generated using a custom Python script to calibrate molecular weights to a curve fitted to the protein ladder. (B) Coomassie stain of lysates used for the Western blot in Figure 2B, and linear profile as in (A, C).
+
 We next set out to identify concentrations at which the OGA inhibitor Thiamet G (TMG) (Yuzwa et al., 2008) would restore sxcC941Y global O-GlcNAcylation to control levels. To elevate O-GlcNAcylation in adult Drosophila, young adult flies were placed on food supplemented with TMG for 72 hr prior to analysis by western blotting (Figure 2B). After assaying varying concentrations of OGA inhibitor, we found that global O-GlcNAcylation was rescued to control levels in sxcC941Y flies fed 3 mM TMG for 72 hr. Paradoxically, a higher 5 mM concentration did not have the same effect. Flies fed this higher concentration of TMG were found to have significantly decreased global O-GlcNAcylation relative to the control genotype, though this appeared to be due to an alteration in the pattern of O-GlcNAcylation with some substrates retaining elevated O-GlcNAcylation relative to sxcC941Y flies fed standard food (Figure 2—figure supplement 1). Accompanying elevated O-GlcNAcylation, TMG treatment resulted in decreased levels of DmOGT. For sxcC941Y flies fed 3 mM TMG, DmOGT protein levels were rescued to control levels, while for flies fed 5 mM TMG, DmOGT decreased below levels seen in the control genotype. To assay whether the same pharmacological rescue could be performed during development, adults were allowed to lay eggs on food supplemented with TMG and the O-GlcNAcylation levels of their offspring were measured by western blot at the wandering third-instar stage (Figure 2C). Presumably due to differences in feeding behaviour, TMG concentrations required to rescue O-GlcNAcylation during the larval stages of development were much lower than for adults. At 150 μM TMG, O-GlcNAcylation in sxcC941Y larvae was no longer significantly different from the control genotype, while O-GlcNAcylation in larvae fed 200 μM TMG was both significantly higher than in the sxcC941Y larvae fed standard food and not significantly different from the control genotype. Overall, these results demonstrate that defective O-GlcNAc homeostasis in flies carrying an OGT-CDG mutation can be restored by reducing OGA activity through pharmacological inhibition.
 
-## sxcC941Y flies possess a NMJ bouton phenotype
+### sxcC941Y flies possess a NMJ bouton phenotype
 
 Previous research has identified an important role for O-GlcNAcylation in excitatory synapse function (Lagerlöf et al., 2017; Fenckova et al., 2022; Muha et al., 2020). To ascertain the contribution of this role of O-GlcNAcylation to ID, synaptic development was assayed at the larval NMJ. This synapse is an established model for mammalian central nervous system excitatory synapses and has been previously used to study the role of genes implicated in ID (Pan et al., 2004). To assay the effects of sxc mutations on NMJ morphology, type 1b NMJs of muscle 4 were visualised by immunostaining for the subsynaptic reticulum protein Discs large 1 (Dlg1) (Gan and Zhang, 2018) and with an anti-HRP antibody to visualise neuronal membranes (Fabini et al., 2001; Figure 3A). Upon quantification with a semiautomated ImageJ macro (Nijhof et al., 2016), several parameters measured were found to significantly differ between the NMJs in control genotype larvae and sxcC941Y and the catalytically dead sxcK872M larvae. The average NMJ area in sxcWT larvae (mean ± standard deviation, 326 ± 52 μm2) was significantly higher than in both sxcC941Y (278 ± 28 μm2) and sxcK872M mutant larvae (198 ± 32 μm2), with a significant difference between the two sxc mutant groups. This phenotype was partially rescued in the sxcC941Y;OgaKO line (291 ± 39 μm2), relative to the control genotype, although the total area of the NMJs was not affected in the OgaKO larvae (337 ± 32 μm2), consistent with previous research on OgaKO larvae (Fenckova et al., 2022; Figure 3B). Total length was also significantly different between the control genotype (mean ± standard deviation, 115 ± 18 μm) and sxcC941Y (93 ± 11 μm) and sxcK872M larvae (74 ± 7 μm). This parameter was also partially rescued in sxcC941Y;OgaKO larvae (102 ± 14 μm) relative to sxcWT larvae, while being unaffected in the OgaKO genotype (115 ± 13 μm) (Figure 3C). Finally, bouton numbers were also significantly reduced in both sxcC941Y (mean ± standard deviation, 15 ± 3) and sxcK872M (12 ± 1) larvae, relative to the sxcWT controls (19 ± 3). Unlike total area and length, this parameter remained significantly reduced in the sxcC941Y;OgaKO line (16 ± 2) relative to the control genotype (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig3-v3.jpg)
+
+**Figure 3.:** (A) Representative images of larval neuromuscular junctions (NMJs) immunolabelled with anti-HRP (red), anti-Discs Large 1 (cyan) and both (scale bars 25 μm) for sxcWT (n = 13), sxcC941Y (n = 19), sxcC941Y;OgaKO (n = 14), sxcK872M (n = 8), sxcK872M;OgaKO (n = 7), and OgaKO (n = 13) larvae. In the sxcC941Y;OgaKO panel, the closed arrow indicates 1b boutons, analysed here, while the open arrow indicates an example of 1 s boutons, not analysed here. (B) Quantification of NMJ area (mean ± SD), which was found to be significantly different between genotypes (F(5,68) = 23.05, p<0.001). Relative to the sxcWT control, both sxcC941Y and sxcK872M larvae presented with a smaller NMJ area (padj<0.01 and padj<0.001, respectively), which was partially rescued in the sxcC941Y;OgaKO strain (padj=0.14), though the OgaKO larvae did not present with a significantly increased NMJ area (padj=0.97). (C) Quantification of NMJ length (mean ± SD), which was found to be significantly different between genotypes (F(5,68) = 17.75, p<0.001). Relative to the control genotype, both sxcC941Y and sxcK872M larvae presented with overall shorter NMJ length (padj<0.001 for both), while NMJ length was not significantly different in sxcC941Y;OgaKO larvae (padj=0.13), despite OgaKO NMJ length not being affected (padj=0.99). (D) Bouton number (mean ± SD) is significantly reduced in sxcC941Y and sxcK872M larvae (F(5,68) = 18.11, p<0.001, padj<0.001 for both), and remains significantly reduced in sxcC941Y;OgaKO larvae (padj<0.05). Values for individual NMJs are represented as small grey points, with averages for each larva represented as larger coloured points. Descriptive and inferential statistics were performed on larval averages, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Muscle area from sxcWT (n = 9, mean ± standard deviation 0.036 ± 0.005 mm2) and sxcK872M (n = 7, 0.033 ± 0.004 mm2, F(1,14) = 1.297, p=0.27) larvae is not significantly different. When normalised to muscle area, neuromuscular junction (NMJ) area in sxcK872M larvae (0.0052 + 0.0004 µm2/µm2) is significantly reduced compared to sxcWT larvae (0.0071 ± 0.0012 µm2/µm2, F(1,14) = 16.82, p<0.01). (B) Representative images of larval NMJs immunolabelled with anti-HRP (red), anti-Discs Large 1 (cyan), and both (scale bars 25 μm) for sxcWT and sxcH596F larvae. (B–D) Quantification of NMJ parameters quantified using a semi-automated ImageJ plugin for sxcWT (n = 9) and sxcH596F (n = 9) larvae, area (sxcWT: 304 ± 18 µm2, sxcH596F: 260 ± 23 µm2, F(1,16) = 20.54, p<0.001) (B), length (sxcWT: 111 ± 12.8 µm, sxcH596F: 94.2 ± 12.3 µm, F(1,16) = 7.694, p<0.05) (C), and bouton number (sxcWT: 18.5 ± 1.7, sxcH596F: 16.3 ± 1.9, F(1,16) = 6.864, p<0.05) (D) are all significantly different between the two genotypes. Values for individual NMJs are represented by small grey points, with averages for each larva represented as larger coloured points. Descriptive and inferential statistics were performed on larval averages. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative images of neuromuscular junction (NMJ) Discs large 1 immunostaining of sxcK872M; elavL3>Gal4 (elav>Gal4, n = 5), sxcK872M; elavL3>Gal4/UAS:sxc (elav>sxc, n = 7), sxcK872M; mhc>Gal4 (mhc>Gal4, n = 5), sxcK872M; mhc>Gal4/UAS:sxc (mhc>sxc, n = 5), and sxcK872M; UAS:sxc-HA (uas:sxc, n = 6) larvae (scale bars 25 μm). (B) NMJ area (mean ± SD) is significantly increased in elav>sxc (246 ± 20 µm2) larvae compared to the Gal4 control (elav>Gal4: 180 ± 37 µm2) (F(4,23) = 5.484, p<0.01, padj<0.05) and relative to uas:sxc larvae (170 ± 32 µm2, padj<0.01). Conversely, sxc overexpression in muscle cells (mhc>sxc: 198 ± 30 µm2) had no effect relative to the Gal4 control (mhc>Gal4: 201 ± 39 µm2) (padj = 0.99). (C) NMJ length was not significantly affected by genotype (F(4,23) = 2.073, p=0.12) (elav>Gal4: 70 ± 13 µm, elav>sxc: 70 ± 11 µm, mhc>Gal4: 58 ± 12 µm, mhc>sxc: 57 ± 13 µm, uas:sxc: 58 ± 10 µm). (D) NMJ bouton number was not significantly affected by genotype (F(4,23) = 2.028, p=0.12) (elav>Gal4: 11.8 ± 1.6, elav>sxc: 11.7 ± 2.6, mhc>Gal4: 9.4 ± 1.7, mhc>sxc: 9.4 ± 2.1, uas:sxc: 10.7 ± 1.2). Values for individual NMJs represented as small grey points, with averages for each larva represented as larger coloured points. Descriptive and inferential statistics were performed on larval averages, *p<0.05, **p<0.01.
+
 As O-GlcNAcylation has been shown to regulate overall body size (Sekine et al., 2010; Park et al., 2011) and NMJ area correlates with muscle size (Nijhof et al., 2016), we decided to measure muscle size in sxcK872M larvae to determine whether changes in overall body growth could explain the NMJ phenotype we observed. No significant difference in muscle size was observed between sxcWT and sxcK872M larvae, and when NMJ area was normalised to muscle area, this parameter remained significantly reduced in sxcK872M larvae (Figure 3—figure supplement 1A). Further, to ascertain whether loss of normal O-GlcNAcylation impairs NMJ bouton growth through pre-synaptic or post-synaptic mechanisms, wild type sxc was overexpressed either in neurons (elavL3-Gal4) or muscles (mhc-Gal4), in a DmOGT catalytically dead background (sxcK872M). This demonstrated that overexpression of wild type sxc in sxcK872M larval neurons could significantly increase NMJ total area, but not length or bouton number. By contrast, similar overexpression in muscle cells did not lead to any significant effect on NMJ morphology (Figure 3—figure supplement 2). Overall, growth of larval NMJs is broadly stunted in larvae modelling OGT-CDG and in larvae completely lacking OGT catalytic activity, with the phenotype partially rescued in the former by knocking out Oga. This is at odds with previously published research, which shows that both rationally designed hypomorphic mutants and ID mutations in the TPR domain result in increased growth at the NMJ (Fenckova et al., 2022). To address this disparity, we measured NMJ parameters in larvae of one of the genotypes previously assayed, sxcH596F. We found that this mutation also results in a significant decrease in NMJ area (mean ± standard deviation, 260 ± 23 μm2) relative to the control genotype (304 ± 18 μm2), with a similar effect for length and bouton number, consistent with the other genotypes assayed here (Figure 3—figure supplement 1B–E).
 
-## Pharmacological rescue of OGT-CDG NMJ phenotypes
+### Pharmacological rescue of OGT-CDG NMJ phenotypes
 
 To determine whether the (partial) rescue of NMJ parameters by genetic ablation of OGA activity can be recapitulated by pharmacological means, larvae were fed 200 μM TMG to elevate O-GlcNAcylation to control levels, as previously determined (Figure 2C). As with knocking out Oga, elevating O-GlcNAcylation pharmacologically resulted in a partial rescue of NMJ parameters (Figure 4A). The total NMJ area in sxcC941Y larvae treated with 200 μM TMG (mean ± standard deviation, 303 ± 40 μm2) was no longer significantly different relative to the control genotype (319 ± 31 μm2) while sxcC941Y fed a vehicle control presented with reduced NMJ area relative to the control genotype (272 + 40 μm2) (Figure 4B). Unlike in sxcC941Y;OgaKO larvae, TMG inhibition in sxcC941Y larvae did not significantly rescue NMJ length (median ± interquartile range, 106 ± 13 μm) relative to the control genotype (117 ± 9 μm), although a non-significant increase in length relative to sxcC941Y larvae fed a vehicle was observed (95 μm ± 8) (Figure 4C). Similar to the OGA knockout experiment (Figure 3D), sxcC941Y larvae fed 200 μM TMG presented with significantly fewer boutons per NMJ (mean ± standard deviation, 16 ± 2) relative to the control genotype (19 ± 2) without a significant difference relative to the sxcC941Y larvae fed a vehicle control (15 ± 2) (Figure 4D). Overall, this demonstrates that pharmacological inhibition of OGA activity can partially rescue synaptogenesis in OGT-CDG mutant larvae.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig4-v3.jpg)
 
-**Figure 4.:** sxc larvae.C941Y(A) Representative images of neuromuscular junctions (NMJs) immunolabelled with anti-HRP (red), anti-Discs Large 1 (cyan), and both (scale bars 25 μm) for sxc (n = 11)WT, sxc (n = 14), and C941Ysxc fed 200 μM TMG (n = 13). (C941YB) NMJ area (mean ± SD) is significantly reduced in sxc larvae fed a vehicle control (F(2,35) = 5.264, p=0.01, pC941Yadj<0.01), relative sxc larvae. sWTxc larvae fed 200 μM TMG no longer present with a significant reduction in total NMJ area (pC941Yadj=0.54). (C) Total NMJ length (median ± IQR) is significantly different between groups (Χ2(2) = 17.483, p<0.001); however, unlike total area, post hoc analysis demonstrates that this parameter remains significantly reduced compared to the sxc control for both vehicle and TMG treated WTsxc larvae (pC941Yadj<0.001 and padj<0.01, respectively). (D) Quantification of bouton number (mean ± SD) demonstrated a significant intergroup difference (F(2,35) = 13.6, p<0.001), with both vehicle and TMG fed sxc larvae presenting with significantly reduced bouton number (pC941Yadj<0.001 and padj<0.01, respectively). Values for individual NMJs represented as small grey points, with averages for each larva represented as larger coloured points. Descriptive and inferential statistics were performed on larval averages, *p<0.05, **p<0.01, ***p<0.001.Figure 4—source data 1.Figure 4B–D).
+**Figure 4.:** (A) Representative images of neuromuscular junctions (NMJs) immunolabelled with anti-HRP (red), anti-Discs Large 1 (cyan), and both (scale bars 25 μm) for sxcWT (n = 11), sxcC941Y (n = 14), and sxcC941Y fed 200 μM TMG (n = 13). (B) NMJ area (mean ± SD) is significantly reduced in sxcC941Y larvae fed a vehicle control (F(2,35) = 5.264, p=0.01, padj<0.01), relative sxcWT larvae. sxcC941Y larvae fed 200 μM TMG no longer present with a significant reduction in total NMJ area (padj=0.54). (C) Total NMJ length (median ± IQR) is significantly different between groups (Χ2(2) = 17.483, p<0.001); however, unlike total area, post hoc analysis demonstrates that this parameter remains significantly reduced compared to the sxcWT control for both vehicle and TMG treated sxcC941Y larvae (padj<0.001 and padj<0.01, respectively). (D) Quantification of bouton number (mean ± SD) demonstrated a significant intergroup difference (F(2,35) = 13.6, p<0.001), with both vehicle and TMG fed sxcC941Y larvae presenting with significantly reduced bouton number (padj<0.001 and padj<0.01, respectively). Values for individual NMJs represented as small grey points, with averages for each larva represented as larger coloured points. Descriptive and inferential statistics were performed on larval averages, *p<0.05, **p<0.01, ***p<0.001.
 
-## Fragmented sleep in sxcC941Y flies is reversible by normalising global O-GlcNAcylation
+### Fragmented sleep in sxcC941Y flies is reversible by normalising global O-GlcNAcylation
 
 Patients with ID present with hyper-activity and sleep disturbances more often than the general population (Faraone et al., 2017; Köse et al., 2017). Several patients affected by OGT-CDG follow this pattern, presenting with sleep disturbances and behavioural abnormalities (Pravata et al., 2020b; Selvan et al., 2018). To assay whether activity and sleep are also disrupted in a Drosophila model of OGT-CDG, we used the Drosophila Activity Monitor (DAM) to measure these parameters (Figure 5A and B). In Drosophila research, sleep is commonly defined as a period of five or more minutes of quiescence, which is accurately measured by the DAM system (Donelson et al., 2012). Total activity of sxcC941Y flies (median ± interquartile range, 1.25e3 ± 6.6e2 counts/24 hr) was not significantly different from the control genotype (1.23e3 ± 5.8e2 counts/24 hr). However, sxcC941Y;OgaKO flies were significantly less active than the control genotype (8.9e2 ± 3.9e2 counts/24 hr), despite the OgaKO allele having no effect on total activity on its own (1.13e3 ± 5.7e2 counts/24 hr) (Figure 5C). By contrast, sxcC941Y flies did present with reduced total sleep (mean ± standard deviation, 8.1e2 ± 1.8e2 min/24 hr), relative to the control genotype (9.4e2 ± 1.4e2 min/24 hr), which was rescued in sxcC941Y;OgaKO flies to wild type levels (9.7e2 ± 1.3e2 min/24 hr) (Figure 5D). Upon more detailed investigation, the nature of sleep disruption in the OGT-CDG flies was found to be due to a reduced duration of individual sleep bouts both during the day and night in these flies (median ± interquartile range, 28 ± 13 min and 39 ± 30 min, respectively) compared to the control genotype (42 ± 22 min and 75 ± 56 min, respectively). Mean sleep bout duration in sxcC941Y flies is partially rescued by elevating global O-GlcNAcylation through knocking out Oga both during the day (32 ± 19 min) and at night (56 ± 40 min), although during both time periods sleep bout duration remained significantly reduced compared to the control genotype (Figure 5E). Upon further investigation of sleep bout duration, we found that the differences in sleep patterns between genotypes could be explained by the inability of sxcC941Y flies to maintain longer sleep bouts. sxcWT flies experience significantly more sleep bouts longer than 2 hr (median ± interquartile range 2.0 ± 1.0 bouts/24 hr) relative to sxcC941Y flies (1 ± 1.3 bouts). This aspect of sleep is also rescued by knocking out Oga, with sxcC941Y;OgaKO flies no longer presenting with a significant decrease in number of sleep bouts longer than 2 hr (1.7 ± 1.3 bouts/24 hr) (Figure 5G). Accompanying decreased sleep bout duration, sxcC941Y and sxcC941Y;OgaKO flies present with significantly more frequent sleep bouts during the day (mean ± standard deviation 13 ± 3 and 14 ± 5 bouts, respectively) and at night (14 ± 5 and 13 ± 5 bouts, respectively), compared to the control genotype (day: 11 ± 4 and night: 9 ± 4 bouts, respectively) (Figure 5F). These results indicate that the sleep defects in sxcC941Y flies are only partially rescued by elevating global O-GlcNAcylation, with the modest rescue of sleep bout duration seen upon loss of OGA fully rescuing total sleep, in part due to sleep frequency remaining unaltered and above the control genotype levels.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig5-v3.jpg)
 
-**Figure 5.:** Drosophila model of OGT-CDG.(A) Activity profile (mean ± SEM of activity counts in 30 min bins) for sxc (n = 89)WT, sxc (n = 94)C941Y, sxc (n = 74)C941Y;OgaKO, and Oga (n = 95) flies. (KOB) Sleep profile (mean ± SEM of sleep in 30 min bins) for genotypes as in (A). (C–G) Sleep parameters for genotypes in (A) and (B). (C) Total daily activity (median ± IQR) is significantly reduced in the sxc mutant strain relative to the control (ΧC941Y;OgaKO2(3) = 41.546, p<0.001, padj<0.001). (D) Total daily sleep (mean ± SD) is significantly reduced in sxc flies relative to the control genotype (F(3,348) = 18.34, p<0.001, pC941Yadj<0.001), while both sxc and C941Y;OgaKOOga flies do not have significantly altered total sleep (pKOadj=0.58 and padj=0.99, respectively). (E) Mean sleep episode duration (median ± IQR) is significantly reduced in both sxc and C941Ysxc flies relative to the control genotype during the day (ΧC941Y;OgaKO2(3) = 83.8, p<0.001, padj<0.001 and padj<0.01, respectively) and night (Χ2(3) = 52.0, p<0.001, padj<0.001 and padj<0.01, respectively). Mean sleep episode duration is significantly increased in sxc flies compared to C941Y;OgaKOsxc flies both during the day and night (pC941Yadj<0.05 and padj<0.001, respectively). (F) Daily number of sleep bouts (mean ± SD) is significantly elevated in both sxc and C941Ysxc flies compared to the C941Y; OgaKOsxc control (F(3,696) = 20.31 p<0.001, pWTadj<0.001 for both) while time of day had no significant effect on the number of sleep bouts (F(1,696) = 0.099, p=0.75). Post hoc analysis revealed that relative to the sxc control, the number of sleep bouts was significantly increased for WTsxc and C941Ysxc flies both during the day (pC941Y;OgaKOadj<0.01 and padj<0.001) and night (padj<0.001 and padj<0.001). (G) Daily number of sleep bouts longer than 2 hr (median ± IQR) is significantly lower in sxc flies than the control genotype (ΧC941Y2(3) = 49.623, p<0.001, padj<0.001). Individual points represent mean values of measurements conducted over 3 days, for unique flies. *p<0.05, **p<0.01, ***p<0.001.Figure 5—source data 1.Figure 5A–G).Figure 5—source data 2.Figure 5C–F).
+**Figure 5.:** (A) Activity profile (mean ± SEM of activity counts in 30 min bins) for sxcWT (n = 89), sxcC941Y (n = 94), sxcC941Y;OgaKO (n = 74), and OgaKO (n = 95) flies. (B) Sleep profile (mean ± SEM of sleep in 30 min bins) for genotypes as in (A). (C–G) Sleep parameters for genotypes in (A) and (B). (C) Total daily activity (median ± IQR) is significantly reduced in the sxcC941Y;OgaKO mutant strain relative to the control (Χ2(3) = 41.546, p<0.001, padj<0.001). (D) Total daily sleep (mean ± SD) is significantly reduced in sxcC941Y flies relative to the control genotype (F(3,348) = 18.34, p<0.001, padj<0.001), while both sxcC941Y;OgaKO and OgaKO flies do not have significantly altered total sleep (padj=0.58 and padj=0.99, respectively). (E) Mean sleep episode duration (median ± IQR) is significantly reduced in both sxcC941Y and sxcC941Y;OgaKO flies relative to the control genotype during the day (Χ2(3) = 83.8, p<0.001, padj<0.001 and padj<0.01, respectively) and night (Χ2(3) = 52.0, p<0.001, padj<0.001 and padj<0.01, respectively). Mean sleep episode duration is significantly increased in sxcC941Y;OgaKO flies compared to sxcC941Y flies both during the day and night (padj<0.05 and padj<0.001, respectively). (F) Daily number of sleep bouts (mean ± SD) is significantly elevated in both sxcC941Y and sxcC941Y; OgaKO flies compared to the sxcWT control (F(3,696) = 20.31 p<0.001, padj<0.001 for both) while time of day had no significant effect on the number of sleep bouts (F(1,696) = 0.099, p=0.75). Post hoc analysis revealed that relative to the sxcWT control, the number of sleep bouts was significantly increased for sxcC941Y and sxcC941Y;OgaKO flies both during the day (padj<0.01 and padj<0.001) and night (padj<0.001 and padj<0.001). (G) Daily number of sleep bouts longer than 2 hr (median ± IQR) is significantly lower in sxcC941Y flies than the control genotype (Χ2(3) = 49.623, p<0.001, padj<0.001). Individual points represent mean values of measurements conducted over 3 days, for unique flies. *p<0.05, **p<0.01, ***p<0.001.
 
 To dissect developmental from non-developmental contributions to this sleep phenotype, we investigated whether elevating O-GlcNAcylation only in adulthood could rescue the sleep phenotype observed in sxcC941Y flies. Adult sxcC941Y flies were fed 3 mM TMG for 72 hr prior to and during activity monitoring. In this condition, OGT-CDG flies no longer presented with decreased overall sleep duration (Figure 6A). This may be explained by differences in fly food used during this assay, to accommodate the addition of TMG. However, other aspects of sleep remained disrupted in OGT-CDG flies. Both mean sleep duration (median ± interquartile range, day: 22 ± 10 min, night: 44 ± 26 min) and daily number of sleep bouts longer than 2 hr (median ± interquartile range, 1 ± 1 bouts/24 hr) remained significantly reduced compared to the sxcWT control (day: 28 ± 13 min, night: 50 ± 43, 1.3 ± 1.0 bouts/24 hr, respectively). Additionally, as in previous experiments, sxcC941Y flies presented with significantly more sleep bouts throughout the day (mean ± standard deviation, day: 17 ± 4 bouts, night: 15 ± 5 bouts) than the control genotype (day: 14 ± 4 bouts, night: 12 ± 4 bouts) (Figure 6B–D). Interestingly, these phenotypes were partially reversed by TMG feeding. Mean sleep bout duration in sxcC941Y flies fed TMG was no longer significantly different from the control genotype both during the day and at night (26 ± 13 min and 44 ± 39 min, respectively), nor was the number of sleep bouts longer than 2 hr (1.3 ± 1.0 bouts/24 hr). The number of sleep bouts in sxcC941Y flies fed TMG was also no longer significantly different than for the control genotype fed a vehicle control (day: 16 ± 3 bouts, night: 13 ± 4 bouts), although it remained non-significantly elevated relative to the control genotype. This rescue was not due to non-specific effects of TMG on feeding behaviour, such as aversion due to altered food taste, as neither genotype nor inclusion of TMG in food influenced total feeding (Figure 6—figure supplement 1). These results suggest that effects of OGT-CDG mutations may not be solely developmental, and that defective O-GlcNAc cycling in adulthood may be an important contributor to the pathogenesis of these mutations.
 
-## Glial knockdown of sxc partially phenocopies sxcC941Y fragmented sleep
+![Figure 6.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig6-v3.jpg)
+
+**Figure 6.:** Sleep parameters for sxcWT (n = 63), sxcC941Y (n = 57), and sxcC941Y flies fed 3 mM Thiamet G (TMG) (n = 60).(A) Total sleep (mean ± SD) is not significantly different between groups (F(2,177) = 0.249, p=0.78). (B) Mean sleep bout duration (median ± IQR) significantly differs between groups during the day (Χ2(2) = 12.854, p<0.01) and night (Χ2(2) = 6.5027, p<0.05), though it is only significantly reduced for sxcC941Y flies fed the vehicle control (padj=0.001 and padj<0.05) and not TMG (padj=0.07, padj=0.48). (C) Daily number of sleep bouts is significantly different across groups (F(2,354) = 16.775, p<0.001) and times of day (F(2,354) = 37.446, p<0.001). Post hoc analysis reveals that compared to the sxcWT genotype, sxcC941Y flies fed a vehicle control present with significantly more sleep bouts both during the day and at night (padj<0.001 for both) while the same genotype fed TMG supplemented food did not present with a significantly different number of sleep bouts (padj=0.33 and padj=0.52). (D) The number of sleep bouts longer than 2 hr is significantly reduced in sxcC941Y flies fed a vehicle control, but not TMG (Χ2(2) = 8.2491, p<0.05, padj<0.05 and padj=0.3, respectively). Individual points represent mean values of measurements conducted over 3 days, for unique flies. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Optical density at 625 nm (OD625) of lysates from adult sxcC941Y flies fed blue dye no.1 in food along with either 3 mM Thiamet G (TMG) or a vehicle control, and the control genotype. No significant effect was detected in this experiment (F(2,36) = 0.34, p=0.714). There was neither an effect of genotype on dye ingestion (padj=0.85) nor was there an effect of adding 3 mM TMG to food of sxcC941Y flies (padj=0.95).
+
+### Glial knockdown of sxc partially phenocopies sxcC941Y fragmented sleep
 
 Sleep in Drosophila and in humans is regulated by multiple cell types. To determine which cell types require normal O-GlcNAcylation to regulate sleep, we decided to knock down sxc in neurons and glia as both have been extensively implicated in this process (Shafer and Keene, 2021). Upon neuronal knockdown of sxc, no difference in total sleep (median ± interquartile range, 474 ± 228 min/24 hr) (Figure 7A) nor mean sleep bout duration (median ± interquartile range, day: 17 ± 10 min, night: 23 ± 14 min) (Figure 7B) was observed relative to the GAL4 control (total sleep 510 ± 232 min, mean sleep bout duration day: 11 ± 9 min, night: 28 ± 17 min). However, neuronal knockdown of sxc significantly affects sleep bout number, during the daytime decreasing (mean ± standard deviation, 8 ± 5 bouts) relative to both the elav GAL4 (12 ± 4 bouts) and UAS (12 ± 4 bouts) control lines (Figure 7C). Conversely, knockdown of sxc in glial cells resulted in a significant decrease in total daily sleep (median ± interquartile range, 690 ± 230 min/24 hr), relative to a GAL4 (800 ± 170 min/24 hr), and UAS control (960 ± 120 min/24 hr) (Figure 7A). As in sxcC941Y flies, glial knockdown caused a decrease in the mean duration of sleep episodes (median ± interquartile range, day: 29 ± 26 min, night: 31 ± 19 min) compared with the control GAL4 (day: 38 ± 32 min, night: 46 ± 26 min) and UAS genotypes (day: 39 ± 24 min, night: 57 ± 40 min, Figure 7B); however, this effect is only significant during the night. Unlike in OGT-CDG flies, the number of sleep bouts was not significantly increased in flies expressing sxc RNAi in glial cells (mean ± standard deviation, day: 12 ± 6 bouts, night: 13 ± 5 bouts) relative to either control (GAL4: day: 12 ± 6 bouts, night: 11 ± 5 bouts, UAS: day: 12 ± 4 bouts, night: 10 ± 4 bouts; Figure 7C). Flies expressing sxc RNAi in glial cells presented with fewer sleep bouts longer than 2 hr (median ± interquartile range, 1.0 ± 1.3 bouts/24 hr), however, only relative to the UAS control group (2 ± 0.7 bouts/24 hr) and not the repo GAL4 line (1.3 ± 0.7 bouts/24 hr) (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90376/elife-90376-fig7-v3.jpg)
 
-**Figure 7.:** sxc partially phenocopies sxc sleep defects.C941YQuantification of sleep parameters in flies expressing sxc RNAi under the control of either the neuronal elav promoter (n = 42) or the glial repo promoter (n = 54). (A) Total sleep is significantly (χ2(4) = 105.98, p<0.001) reduced by sxc knockdown in glial cell, compared to both to the repo >GAL4 (n = 30, padj<0.01) and UAS (n = 45, padj<0.001) control lines. (B) Mean sleep episode duration is only significantly reduced in repo>sxc RNAi flies during the night, compared to both the UAS and GAL4 control lines (χ2(4) = 67.073, p<0.001, padj<0.001 and padj<0.05, respectively). (C) Daily number of sleep episodes is not significantly affected by genotype (F(4, 127) = 1.368, p=0.24); however, there is a significant effect of time of day on sleep (F(4, 127) = 5.656, p<0.05). There is also a significant interaction between genotype and time of day with regards to number of sleep bouts (F(4, 127) = 10.747, p<0.001), which can be explained by a significant decrease in number of sleep bouts during the day in neuronal sxc knockdown flies compared to both the elav>GAL4 (n = 29, padj<0.01) and UAS (padj<0.01) control lines. Conversely, neuronal sxc knockdown flies present with significantly more sleep bouts during the night, compared to these control lines (padj<0.05 and padj<0.01, respectively). (D) The daily number of sleep episodes longer than 2 hr is also reduced with glial sxc knockdown (χ2(4) = 81.215, p<0.001), but only compared to the UAS control line (padj<0.001) and not the GAL4 control line (padj=0.3). *p<0.05, **p<0.01, ***p<0.001.Figure 7—source data 1.Figure 7A–H).Figure 7—source data 2.Figure 7A–C).
+**Figure 7.:** Quantification of sleep parameters in flies expressing sxc RNAi under the control of either the neuronal elav promoter (n = 42) or the glial repo promoter (n = 54). (A) Total sleep is significantly (χ2(4) = 105.98, p<0.001) reduced by sxc knockdown in glial cell, compared to both to the repo >GAL4 (n = 30, padj<0.01) and UAS (n = 45, padj<0.001) control lines. (B) Mean sleep episode duration is only significantly reduced in repo>sxc RNAi flies during the night, compared to both the UAS and GAL4 control lines (χ2(4) = 67.073, p<0.001, padj<0.001 and padj<0.05, respectively). (C) Daily number of sleep episodes is not significantly affected by genotype (F(4, 127) = 1.368, p=0.24); however, there is a significant effect of time of day on sleep (F(4, 127) = 5.656, p<0.05). There is also a significant interaction between genotype and time of day with regards to number of sleep bouts (F(4, 127) = 10.747, p<0.001), which can be explained by a significant decrease in number of sleep bouts during the day in neuronal sxc knockdown flies compared to both the elav>GAL4 (n = 29, padj<0.01) and UAS (padj<0.01) control lines. Conversely, neuronal sxc knockdown flies present with significantly more sleep bouts during the night, compared to these control lines (padj<0.05 and padj<0.01, respectively). (D) The daily number of sleep episodes longer than 2 hr is also reduced with glial sxc knockdown (χ2(4) = 81.215, p<0.001), but only compared to the UAS control line (padj<0.001) and not the GAL4 control line (padj=0.3). *p<0.05, **p<0.01, ***p<0.001.
 
 ## Discussion
 
@@ -90,44 +126,402 @@ We also demonstrate a novel behavioural effect resulting from catalytic domain m
 
 ## Materials and methods
 
-## CRIPSR-Cas9 mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>sxc</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0261403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Oga</td>
+      <td>FlyBase</td>
+      <td>FLYB: FBgn0261403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w1118 (VDRC60000)</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vas-Cas9</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL51323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sxcK872M</td>
+      <td>Mariappa et al., 2018</td>
+      <td>FLYB: FBal0340183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>OgaKO</td>
+      <td>Muha et al., 2020</td>
+      <td>FLYB: FBal0361594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sxcN595K</td>
+      <td>Pravata et al., 2019</td>
+      <td>FLYB: FBal0352246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sxcH596F</td>
+      <td>Fenckova et al., 2022</td>
+      <td>FLYB: FBal0375027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sxc RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC110717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>elav-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL8765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repo-GAL4</td>
+      <td>Kind gift from Leeanne McGurk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mhc- GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_55133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>elavL3-GAL4</td>
+      <td>Kind gift from Leeanne McGurk</td>
+      <td>RRID:BDSC_8760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS:sxc-HA</td>
+      <td>Mariappa et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RL2, anti-O-GlcNAc (mouse monoclonal)</td>
+      <td>Novus</td>
+      <td>Cat# NB300-524</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OGT (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab-96718</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# A2066</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Discs Large 1 (mouse polyclonal)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528203</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HRP conjugated to Alexa Fluor 647 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_528203</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG 680 infrared conjugated (donkey polyclonal)</td>
+      <td>LI-COR</td>
+      <td>RRID:AB_2716687</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG 800 infrared conjugated (goat polyclonal)</td>
+      <td>LI-COR</td>
+      <td>RRID:AB_2687825</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse conjugated to Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A21202</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-dU63gRNA</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CpOGA (GST tagged)</td>
+      <td>Rao et al., 2006</td>
+      <td></td>
+      <td>Produced in-house</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiamet G</td>
+      <td>SantaCruz</td>
+      <td>Cat# sc-224307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPage LDS</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# NP0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dako mounting media</td>
+      <td>Agilent</td>
+      <td>Cat# S302380-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GlcNAcstatin G</td>
+      <td>Dorfmueller et al., 2010</td>
+      <td></td>
+      <td>Produced in-house</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blue dye no. 1</td>
+      <td>Sigma</td>
+      <td>861146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>https://www.licor.com/bio/image-studio/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAMFileScan113</td>
+      <td>https://www.trikinetics.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3</td>
+      <td>https://www.python.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (4.0.3)</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ-FIJI</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SCAMP</td>
+      <td>Donelson et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rethomics</td>
+      <td>Geissmann et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Drosophila_NMJ_Morphometrics</td>
+      <td>Nijhof et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WBplotProfile</td>
+      <td>This paper, Czajewski, 2024</td>
+      <td></td>
+      <td>Code can be obtained from: https://github.com/IgnacyCz/WBplotProfile</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal microscope</td>
+      <td>Zeiss</td>
+      <td>710</td>
+      <td>Section ‘Neuromuscular junction immunohistochemistry’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal microscope</td>
+      <td>Zeiss</td>
+      <td>980</td>
+      <td>Section ‘Neuromuscular junction immunohistochemistry’ (Neuronal overexpression of sxc partially rescues neuromuscular junction defects caused by loss of OGT catalytic activity)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dissection microscope</td>
+      <td>Motic</td>
+      <td>SMZ-161</td>
+      <td>Section ‘Scutellar bristle assay’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAM2 monitor</td>
+      <td>trikinetics</td>
+      <td>https://trikinetics.com/</td>
+      <td>Section ‘Drosophila activity monitor’</td>
+    </tr>
+  </tbody>
+</table>
+
+### CRIPSR-Cas9 mutagenesis
 
 The gRNA sequence for generating the sxc C941Y flies was selected using the online tool Crispr.mit.edu. The optimal gRNA sequence was included in annealing oligos including overhangs compatible with cloning into the pCFD3-dU63gRNA plasmid previously cut with BpiI restriction enzyme. A 2 kb repair template for the region was generated from Drosophila Schneider 2 cell genomic DNA by PCR using GoTaq G2 Polymerase. The PCR product was cloned as a blunt product into the pTOPO-Blunt plasmid. Mutations were introduced into the template to include the C941Y mutation as well as silent mutations to remove the gRNA recognition sequence. This was carried out using the QuikChange kit from Stratagene and confirmed by DNA sequencing. The mutations removed the restriction site BseMI which is present in the gRNA sequence. sxcC941Y mutant flies were generated by microinjection of vas-Cas9 embryos (BL51323) (Rainbow Transgenic Flies, Inc) with CRISPR reagents generated in-house, backcrossed to a w1118 (VDRC60000) background and the mutated chromosome was balanced over Curly of Oster (CyO). Diagnostic digests were carried out on the resulting flies to first confirm the loss of the restriction site followed by sequencing of the PCR product. The correctness of the mutation was also confirmed through sequencing of the full-length sxc mRNA. Sequences of the oligonucleotides used here are listed in Table 1.
 
-## Fly stocks and maintenance
+**Table 1.**
+ List of oligonucleotides used in CRISPR-Cas9 mutagenesis section.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gRNA annealing oligonucleotide (forward)</td>
+      <td>GTCGCTTGATACTCCTTTATGCAA</td>
+    </tr>
+    <tr>
+      <td>gRNA annealing oligonucleotide (reverse)</td>
+      <td>AAACTTGCATAAAGGAGTATCAAG</td>
+    </tr>
+    <tr>
+      <td>Repair template cloning primer (forward)</td>
+      <td>aaaGGATCCTTTCGACACAAAATCAGTCGAGAGTCTG</td>
+    </tr>
+    <tr>
+      <td>Repair template cloning primer (reverse)</td>
+      <td>aaaGCGGCCGCGGTAGCCAGCTGAGAGGCAGCCAC</td>
+    </tr>
+    <tr>
+      <td>Repair template mutagenesis primer 1 (silent) (forward)</td>
+      <td>GGGGTCAATTAGCTGATATATGTCTTGATACgCCgcTgTcgAATGGGCATACAACATCTATGGACGTTTTG</td>
+    </tr>
+    <tr>
+      <td>Repair template mutagenesis primer 1 (silent) (reverse)</td>
+      <td>CAAAACGTCCATAGATGTTGTATGCCCATTcgAcAgcGGcGTATCAAGACATATATCAGCTAATTGACCCC</td>
+    </tr>
+    <tr>
+      <td>Repair template mutagenesis primer 2 (C941Y mutation) (forward)</td>
+      <td>GTCAATTAGCTGATATATacCTTGATACGCCGCTGTgtAATGGGCATACAACATCTATG</td>
+    </tr>
+    <tr>
+      <td>Repair template mutagenesis primer 2 (C941Y mutation) (reverse)</td>
+      <td>CATAGATGTTGTATGCCCATTacACAGCGGCGTATCAAGgtATATATCAGCTAATTGAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and maintenance
 
 Stocks were maintained on a 12:12 light dark cycle at 25°C on Nutri-Fly Bloomington Formulation fly food. Previously described sxcK872M (Mariappa et al., 2018), sxcN595K (Pravata et al., 2019), and sxcH596F (Fenckova et al., 2022) mutant flies (2018) were used. Previously described OgaKO flies (Muha et al., 2020) were used to generate sxcC941Y;OgaKO and sxcK872M;OgaKO stocks. The homozygous lethal sxcK872M chromosome was balanced over a CyO chromosome carrying a GFP reporter (CyO, P{ActGFP.w[-]}CC2, BL9325). An isogenic w1118 (VRDC60000) background strain was used as a control genetic background. To overexpress wild type sxc in an sxcK872M background, sxcK872M/CyO(GFP);mhc-Gal4 (generated using the w[*]; P{w[+mC]=Mhc-GAL4.K}2/TM3, Sb[1] line; BL55133) or sxcK872M/CyO(GFP);elavL3-Gal4 (generated using the P{GAL4-elav.L}CG16779[3] line; RRID:BDSC_8760) were crossed with sxcK872M/CyO(GFP);UAS:sxc-HA (generated using the previously described UAS:sxc-HA line; Mariappa et al., 2015). To knock down sxc in neurons or glia, the sxc RNAi line VDRC110717 was used and 10 of either virgin VDRC110717 or VRDC60000 females were crossed with five P{w[+mC]=GAL4elav.L}2/CyO (BL8765), p[w[mC]:repo-GAL4]/TM6b (kind gift from Leeanne McGurk), or VRDC60000 males and allowed to lay embryos for 5 days.
 
-## Drosophila tissue lysis and western blotting
+### Drosophila tissue lysis and western blotting
 
 For immunoblotting of adult head lysates, flies raised as described previously were anaesthetised with CO2 and an equal number of 3–5-day-old male and female flies were snap frozen in liquid nitrogen. Heads were then severed from bodies by vortexing flies twice and collected using a paintbrush. To collect larval and embryonic lysates, homozygous 3–5-day-old females and males were allowed to lay embryos for 4 hr and 2 hr, respectively, on apple juice agar plates supplemented with yeast paste. For recessive lethal lines, heterozygous parents were crossed in the same manner. Embryos were collected 14 hr later and snap frozen on dry ice. For recessive lethal genotypes, homozygous embryos were collected based on the absence of a GFP fluorescent CyO balancer chromosome. For larval tissues, 24 hr after embryo collection, sxc mutant homozygous first-instar larvae were collected into vials containing Nutri-Fly Bloomington Formulation fly food at a density of 25 larvae per vial and aged to the wandering third-instar stage, when they were snap frozen on dry ice. For experiments in which specificity of the O-GlcNAc antibody was tested by prior incubation with Clostridium perfringens OGA CpOGA, heads were lysed in modified RIPA buffer to accommodate the pH optimum of CpOGA (Rao et al., 2006) (150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS, 25 mM citric acid pH 5.5) supplemented with a protease inhibitor cocktail (1 M benzamidine, 0.2 mM PMSF, 5 mM leupeptin). To validate specificity of O-GlcNAc detection, lysates were split with one group incubated with 2.5 μM GST tagged CpOGA to remove O-GlcNAc while the experimental group was incubated with 1 μM GlcNAcstatin G. Lysates were then incubated for 2 hr at room temperature, agitated at 300 RPM using a thermomixer (Eppendorf thermomixer comfort). The reaction was stopped by heating to 95°C with NuPAGE LDS Sample Buffer with 50 mM TCEP to a 1× concentration. Otherwise, collected tissues were lysed in 50 mM Tris- HCl (pH 8.0), 150 mM NaCl, 1% Triton-X 100, 4 mM sodium pyrophosphate, 5 mM NaF, 2 mM sodium orthovanadate, 1 mM EDTA, supplemented 1:100 with a protease inhibitor cocktail (1 M benzamidine, 0.2 mM PMSF, 5 mM leupeptin) and 1.5× NuPAGE LDS Sample Buffer with 50 mM TCEP. Protein concentration was estimated using a Pierce 660 assay (Thermo Scientific) supplemented with ionic detergent compatibility reagent (Thermo Scientific). 30 μg of protein per group were separated by gel electrophoresis (NuPage 4–12% Bis-Tris, Invitrogen) and transferred onto a nitrocellulose membrane (Amersham Protran 0.2 μm). Membranes were developed with the following primary antibodies: mouse anti-O-GlcNAc (RL2, 1:1000, Novus), rabbit anti-OGT (1:1000, Abcam, ab-96718), and rabbit anti-actin (1:5000, Sigma, A2066) and the following secondary antibodies: goat anti-mouse IgG 800 and donkey anti-rabbit IgG 680 infrared dye conjugated secondary antibodies (LI-COR, 1: 10,000). Western blots were analysed using Image Studio Lite.
 
-## Thiamet G feeding
+### Thiamet G feeding
 
 Thiamet G (SantaCruz, sc-224307) was dissolved in PBS to a stock concentration of 100 mM. This stock was mixed with Drosophila instant food (Flystuff Nutri-Fly Food, Instant Formulation) to appropriate concentrations, to avoid heating Thiamet G. For experiments with adult flies, 1–3-day-old flies (males and females in equal proportion) were placed on food for 72 hr prior to snap freezing in liquid nitrogen. For larval feeding experiments, ten 0–3-day-old females were crossed with four males and allowed to lay embryos for 2 days. Wandering third-instar larvae were snap frozen on dry ice and lysed.
 
 Effects of the addition of Thiamet G to food on adult feeding behaviour were assayed similarly to Wong et al., 2009. To age match flies, freshly eclosed adults were placed on standard food as described in ‘Fly stocks and maintenance’ for 2 days. Males were then transferred to vials with 1% agarose for 18 hr, to starve flies and later induce feeding. After starvation, flies were placed in either vehicle control vials (0.86% agarose, 5 mM sucrose, 3% PBS, 0.2% blue dye no. 1 [Sigma 861146]) or Thiamet G containing vials (0.86% agarose, 5 mM sucrose, 3% PBS, 3 mM Thiamet G, 0.2% blue dye no. 1) for 30 min. Ten flies per replicate were then ground with a pestle in 50 μL of water and centrifuged at 17,000 RCF for 15 min to remove debris. 35 μL of supernatant was then collected and absorbance at 625 nm was measured (NanoDrop One, Thermo Fisher Scientific).
 
-## NMJ immunohistochemistry
+### NMJ immunohistochemistry
 
 The NMJ assay was performed as in Nijhof et al., 2016. Larvae for this assay were obtained as described above. Male wandering third-instar larvae were dissected using the ‘open book’ technique Brent et al., 2009 followed by immediate fixation in 3.7% paraformaldehyde in phosphate buffered saline (pH 7.5) (PBS) for 25 min. Fixed larvae were either stored in PBS at 4°C for up to 48 hr or immediately processed further. Larval preparations were blocked using 5% normal donkey serum (NDS) in PBS and Triton-X (0.3%, PBST) for 2 hr at room temperature, followed by immunostaining using mouse anti-Discs Large 1 (1:25, Developmental Studies Hybridoma Bank, RRID:AB_528203) and goat anti-HRP conjugated to Alexa Fluor 647 (1:400, Jackson ImmunoResearch, RRID:AB_2338967) in 5% NDS PBST overnight at 4°C. Sections were washed four times for 10 min in PBST (0.5%), followed by 4 hr incubation with donkey anti-mouse Alexa Fluor 488 (1:400) in 5% NDS PBST at room temperature. Sections were washed as for primary antibodies, rinsed in PBS, and mounted using Dako Fluorescence Mounting Medium (Agilent). Images of type 1b NMJs of muscle 4 were obtained using either a Zeiss 710 or 980 confocal microscope using a ×10 objective (EC Plan Neofluar 0.3) (voxel size: 0.69 × 0.69 × 6.22 μm) for muscle area measurements and using a ×63 objective (Plan Apochromat 1.4 oil) to image individual junctions (voxel size: 0.196 × 0.196 × 0.91 μm). Image size for the former was 2048 × 2048 pixels and 688 × 688 for the latter. Both channels were acquired simultaneously. NMJ parameters were scored using a semi-automated macro by a researcher blind to the conditions (Neuromuscular Junction Morphometrics; Nijhof et al., 2016) with poorly annotated or damaged NMJs excluded from further analysis. Muscle area was manually measured using the polygon selection tool in ImageJ. Statistical analysis was performed on mean values for individual larvae for which three or more NMJs were accurately annotated.
 
-## Drosophila activity monitor
+### Drosophila activity monitor
 
 Drosophila activity was recorded using Trikinetics DAM2 monitors. 1–3-day-old male flies were used for all experiments. Briefly, male flies were anaesthetised using CO2 and placed in DAM vials with Nutri-Fly Bloomington Formulation food. Experiments were performed at 25°C on a 12 hr:12 hr light:dark cycle, data were recorded for 3 days, after 2 days of acclimatisation. For TMG rescue experiments, food was prepared as described in ‘Thiamet G feeding’ and data were recorded 72 hr after placing flies on supplemented food. Data were pre-processed using DAMFileScan113 software and Sleep and Circadian Analysis MATLAB Program (SCAMP) (Donelson et al., 2012). Flies that ceased to move during the experimental window were presumed dead and excluded. For analysis of number of bouts longer than 2 hr, the raw output from the DAM system was analysed in R using the Rethomics packages (Geissmann et al., 2019).
 
-## Scutellar bristle assay
+### Scutellar bristle assay
 
 To assay scutellar bristle number, 8–10 young homozygous virgin females were mated with three males and allowed to lay embryos for 3 days to prevent overcrowding of larvae. Eclosed offspring were immobilised using CO2 and scutellar bristles were counted using a Motic SMZ-161 microscope.
 
-## Western blot intensity profile
+### Western blot intensity profile
 
 Intensity of O-GlcNAc immunoreactivity was calibrated to estimated molecular weight plotted using custom Python code (available at GitHub, copy archived at Czajewski, 2024). Briefly, images were imported using the PIL library (Umesh, 2012), converted to NumPy arrays (Harris et al., 2020), and molecular weight markers were identified as intensity peaks in a user-defined x-coordinate column of pixels. The SciPy (Virtanen et al., 2020) library was then used to fit a curve to identified molecular weight markers to infer molecular weights at y-pixel coordinates. This was then used to calibrate the x-axis for plotting (using the matplotlib library; Hunter, 2007) the relative intensity of immunolabelling across genotypes and conditions based on user defined x pixel coordinates defining protein lanes, normalised to loading controls.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed in R (version 4.0.3). Data that satisfied assumptions regarding homoscedasticity and normality were analysed with a one-way ANOVA followed by Tukey’s HSD with Bonferroni correction. Otherwise, data were analysed using a Kruskal–Wallis rank sum test followed by pairwise comparisons using Wilcoxon rank sum test with continuity correction and p value adjustment using the Bonferroni method. Sleep architecture phenotypes which were analysed separately for data collected during the day and night were analysed by two-way ANOVA (sleep bout number) or by a Kruskal–Wallis rank sum test performed separately on the two time periods (mean sleep bout duration), followed by post hoc testing as above. One outlier was removed from analysis (sxcN595K OGT and O-GlcNAcylation quantification), based on the criteria of falling more than 1.5 interquartile range beyond the 75 percentile. To balance the removal of this outlier, the minimum for this group was also removed.
 
-## Materials availability statement
+### Materials availability statement
 
 All materials are available upon request.

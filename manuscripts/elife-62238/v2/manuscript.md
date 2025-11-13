@@ -30,15 +30,31 @@ Here we determine the sequence of events leading to the evolution of nontransiti
 
 ## Results
 
-## Evolution of nontransivity along a line of genealogical descent
+### Evolution of nontransivity along a line of genealogical descent
 
 Previously we evolved ~600 haploid populations of yeast asexually for 1000 generations in rich glucose medium (Lang et al., 2011). We characterized extensively the nuclear basis of adaptation for a subset of these populations through whole-genome whole-population time-course sequencing (Lang et al., 2013) and/or fitness quantification of individual mutations (Buskirk et al., 2017).
 
 For one population (BYS1-D08) we were surprised to observe that a 1000-generation clone lost in direct competition with a fluorescently labeled version of the ancestor. To test the hypothesis that a nontransitive interaction arose during the adaptive evolution of this population, we isolated individual clones from three time points: Generation 0 (Early), Generation 335 (Intermediate), and Generation 1000 (Late) (Figure 1A). These time points were chosen, in part, to coincide with the completion of selective sweeps in the population (Lang et al., 2013). The Intermediate clone was isolated following a selective sweep that fixes three nuclear mutations including a beneficial mutation in YUR1. The Late clone was isolated following three more selective sweeps that fix an additional 10 nuclear mutations including a beneficial mutation in STE4.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence evolution (from Lang et al., 2013) shows that population BYS1-D08 underwent four clonal replacements over 1000 generations. Mutations in the population that went extinct are not shown. The four selective sweeps are color-coded: red, mutations in yur1, rxt2, and an intergenic mutation; green, a single intergenic mutation; orange, mutations in mpt5, gcn2, iml2, ste4, mud1, and an intergenic mutation; blue, three intergenic mutations. The Intermediate clone isolated at Gen. 335 does not produce, but is resistant to, the killer toxin (K-I+). The Late clone, isolated at Generation 1000 does not produce, and is sensitive to, the killer toxin (K-I-). (B) Competition experiments demonstrate nontransitivity and positive frequency-dependent selection. Left: Relative fitness of Early (Gen. 0), Intermediate (Gen. 335), and Late (Gen. 1000) clones. Right: Relative fitness of the Early clone without ancestral virus or with the viral variant from the Intermediate clone. Fitness and starting frequency correspond to the later clone relative to the earlier clone during pairwise competitions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Fitness of Late clone relative to Early clone, as a function of frequency. Stable fixed points indicated by closed black circles and unstable fixed point indicated by open black circle.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of killer phenotypic assays. To assay killing ability, a tester (sensitive) strain is spread as a lawn, followed by a query strain spotted as a concentrated culture. After incubation, the production of a zone of clearing indicates that the query strain possesses killing ability. To assay sensitivity, a query strain is plated as a dilute spot, followed by a tester (killer) strain spotted as a concentrated culture. After incubation, the production of a zone of clearing indicates that the query strain possesses killing ability. (B) Halo assays demonstrate that the ancestor of the evolution experiment exhibits killing ability and immunity while the cured ancestor lacks killing ability and is sensitive to the toxin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The killer phenotypes of Early, Intermediate, and Late clones from population BYS1-D08 were determined by halo assay.
+
 We performed pairwise competition experiments between the Early, Intermediate, and Late clones at multiple starting frequencies. We find that the Intermediate clone is 3.8% more fit relative to the Early clone and that the Late clone is 1.2% more fit relative to the Intermediate clone (Figure 1B, left panel). The yur1 mutation in the Intermediate clone and the ste4 mutation in the late clone were previously estimated to provide a 4.6 ± 0.5% and 2.6 ± 0.4% fitness advantage, respectively (Buskirk et al., 2017), consistent with the fitness differences between the Intermediate and Early clones and the Late and Intermediate clones. The expectation, assuming additivity, is that the Late clone will be more fit than the Early clone, by roughly 5.0%. Surprisingly, we find that the Late clone is less fit than expected, to the extent that it often loses in pairwise competition with the Early clone (Figure 1B, left panel). Furthermore, the interaction between the Early and Late clones exhibits positive frequency-dependent selection, thus creating a bi-stable system where the fitness disadvantage of the Late clone can be overcome if it starts above a certain frequency relative to the Early clone (Figure 1—figure supplement 1).
 
-## Evolution of nontransitivity is associated with changes to the killer virus
+### Evolution of nontransitivity is associated with changes to the killer virus
 
 Positive frequency-dependent selection is rare in experimental evolution and can only arise through a few known mechanisms. It has been observed previously in yeast that harbor killer viruses (Greig and Travisano, 2008), which are dsRNA viruses that encode toxin/immunity systems. Using a well-described halo assay (Woods and Bevan, 1968), we find that the ancestral strain of our evolved populations exhibits the phenotype expected of yeast that harbor the killer virus: it inhibits growth of a nearby sensitive strain and resists killing by a known killer strain (Figure 1—figure supplement 2).
 
@@ -48,15 +64,31 @@ To determine if killer toxin production by the Early clone is necessary for it t
 
 To determine if viral evolution alone is sufficient to account for the observed fitness gains in nontransitive interactions, we focused on the first step in the evolutionary sequence: the transition from the Early clone to Intermediate clone. We transferred the killer virus from the Intermediate clone to the cured Early clone and assayed fitness relative to the Early clone. Because the virus from the Intermediate clone no longer produces toxin, we suspected that it may provide a fitness benefit to the host. However, we find that the evolved killer virus from the Intermediate clone confers no significant effect on host fitness compared to the killer virus from the Early clone (Figure 1B, right panel). This shows that the fitness benefit of the Intermediate clone relative to the Early clone is due to adaptation in the nuclear genome. Taken together these experiments show that the sequence of events leading to the evolution of nontransitivity involves changes to both the host and viral genomes.
 
-## Changes to killer-associated phenotypes are common under our experimental conditions
+### Changes to killer-associated phenotypes are common under our experimental conditions
 
 To determine the extent of killer phenotype evolution across all populations, we assayed the killer phenotype of 142 populations that were founded by a single ancestor and propagated at the same bottleneck size as BYS1-D08 (Lang et al., 2011). We find that approximately half of all populations exhibit a loss or weakening of killing ability by Generation 1000, with ~10% of populations exhibiting neither killing ability nor immunity (Figure 2). Of note, we did not observe loss of immunity without loss of killing ability, an increase in killing ability or immunity, or reappearance of killing ability or immunity once it was lost from a population (Figure 2—figure supplement 1), apart from the noise associated with scoring of population-level phenotypes. Several populations (i.e. BYS2-B09 and BYS2-B12) lost both killing ability and immunity simultaneously, suggesting that a single event can cause the loss of both the killer phenotypes.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig2-v2.jpg)
+
+**Figure 2.:** (A) Loss of killing ability (top) and immunity (bottom) from evolving yeast populations over time. Killer phenotypes were monitored by halo assay (examples shown on right). (B) Breakdown of killer phenotypes for all populations at Generation 1000. Data point size corresponds to number of populations. Border and fill color indicate killing ability and immunity phenotypes, respectively, as in panel A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Killer phenotype is shown according to scale in Figure 2. For each population, killing ability is shown in shades of red (top) and immunity in shades of blue (bottom).
+
 Mutations in nuclear genes can affect killer-associated phenotypes. The primary receptors of the K1 killer toxin are β-glucans in the yeast cell wall (Pieczynska et al., 2013). We observe a statistical enrichment of mutations in genes involved in β-glucan biosynthesis (sixfold Gene Ontology [GO] Biological Process enrichment, p<0.0001). Furthermore, of the 714 protein-coding mutations dispersed across 548 genes, 40 occur within 11 of the 36 genes (identified by Pagé et al., 2003) that, when deleted, confer a high level of resistance to the K1 toxin (χ2 = 18.4, df = 1, p=1.8 × 10−5). Nevertheless, the presence of mutations in nuclear genes that have been associated with high levels of resistance is not sufficient to account for the loss of killing ability (χ2 = 1.037, df = 1, p=0.309) or immunity (χ2 = 0.103, df = 1, p=0.748).
 
-## Standing genetic variation and de novo mutations drive phenotypic change
+### Standing genetic variation and de novo mutations drive phenotypic change
 
 We sequenced viral genomes from our ancestral strain and a subset of yeast populations (n = 67) at Generation 1000 (Figure 3). We find that our ancestral strain, which was derived from the common lab strain W303-1a, contains the M1-type killer virus (encoding the K1-type killer toxin) with only minor differences from previously sequenced strains (Figure 3—figure supplement 1). Our ancestral strain also possesses the L-A helper virus, which supplies the RNA-dependent RNA polymerase and capsid protein necessary for the killer virus, a satellite virus, to complete its life cycle (Ribas and Wickner, 1992). We sequenced viral genomes from 57 populations that changed killer phenotype and 10 control populations that retained the ancestral killer phenotypes. Viral genomes isolated from populations that lost killing ability possess 1–3 mutations in the M1 coding sequence – most being missense variants (Figure 3A). In contrast, only a single mutation, synonymous nonetheless, was detected in M1 across the 10 control populations that retained the killer phenotype. The correlation between the presence of mutations in the viral genome and the loss of killing ability (χ2 = 59.3, df = 1, p=1.4 × 10−13) is strong evidence that viral mutations are responsible for the changes in killer phenotypes. We estimate that by Generation 1000 half of all populations have fixed viral variants that alter killer phenotypes (for comparison, IRA1, the most common nuclear target, fixed in ~25% of populations over the same time period).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig3-v2.jpg)
+
+**Figure 3.:** (A) Number of mutations in the K1 gene in yeast populations that retain or lose killing ability. Each data point represents a single yeast population. (B) Observed spectrum of point mutations across the K1 toxin in 67 evolved yeast populations. Mutations were detected in a single population unless otherwise noted. Large internal deletion variants from two yeast populations (BYS1-D06 and BYS2-E11). The deletions span the region indicated by the dashed gray line. VBS: viral binding site. TRE: terminal recognition element.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The viruses of our ancestral yeast strain diverged from previously published LA and M1 genomes by 19 nucleotides and 7 nucleotides, respectively. Solid lines represent nonsynonymous polymorphisms, labeled by amino acid substitution. Dashed lines represent synonymous/intergenic polymorphisms.
 
 Of the 57 populations that lost killing ability, 42 fixed one of three single nucleotide polymorphisms, resulting in amino acid substitutions D106G, D253N, and I292M and observed 13, 14, and 15 times, respectively (Supplementary file 1). Given their prevalence, these polymorphisms likely existed at low frequency in the shared ancestral culture (indeed, we can detect one of the common polymorphisms, D106G, in individual clones at the Early time point, indicating that this mutation was heteroplasmic in cells of the founding population). Killer phenotypes are consistent across populations that fixed a particular ancestral polymorphism (Supplementary file 1).
 
@@ -64,15 +96,35 @@ In addition to the three ancestral polymorphisms, we detect 34 putative de novo 
 
 Though point mutations are the most common form of evolved variation, we also detected two viral genomes in which large portions of the K1 ORF are deleted (Figure 3B). Despite the loss of the majority of the K1 coding sequence, the deletion mutants maintain cis signals for replication and packaging (Ribas and Wickner, 1992; Ribas et al., 1994). Notably, the two populations that possess these deletion mutants also possess full-length viral variants. The deletion mutants we observe are similar to the ScV-S defective interfering particles that have been shown to outcompete full-length virus presumably due to their decreased replication time (Kane et al., 1979; Ridley and Wickner, 1983; Esteban and Wickner, 1988).
 
-## Host/virus co-evolutionary dynamics are complex and operate over multiple scales
+### Host/virus co-evolutionary dynamics are complex and operate over multiple scales
 
 To compare the dynamics of viral genome evolution, nuclear genome evolution, and phenotypic evolution we performed time-course sequencing of viral genomes from three yeast populations that lost killing ability and for which we have whole-population, whole-genome, and time-course sequencing data for the nuclear genome (Lang et al., 2013). As with the evolutionary dynamics of the host genome, the dynamics of viral genome evolution feature clonal interference (competition between mutant genotypes), genetic hitchhiking (an increase in frequency of an allele due to genetic linkage to a beneficial mutation), and sequential sweeps (Figure 4, Figure 4—figure supplement 1). Interestingly, viral sweeps often coincide with nuclear sweeps. Since the coinciding nuclear sweeps often contain known driver mutations, it is possible that the viral variants themselves are not driving adaptation but instead hitchhiking on the back of beneficial nuclear mutations. This is consistent with the observation that the introduction of the viral variant from the Intermediate clone did not affect the fitness of the Early clone (Figure 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig4-v2.jpg)
+
+**Figure 4.:** Killer phenotype of evolved populations is indicated by color according to the key. Nuclear dynamics (reported previously in Lang et al., 2013) are represented as solid lines. Nuclear mutations that sweep before or during the loss of killing ability are indicated by black lines. All other mutations are indicated by gray lines. Viral mutations are indicated by purple dashed lines and labeled by amino acid change.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The K1 mutations detected in each population at Generation 1000 are indicated in the top-left of the plot. Trajectories of nuclear mutations were obtained from Lang et al., 2013. Black lines indicate nuclear mutations that swept up to and including the period of killer phenotypic change (all others nuclear mutations are gray). Mutational cohorts are labeled according to their putative driver or putative toxin resistance mutation. Killing ability and immunity are indicated in bar graph (bottom) by shades of red and blue, respectively.
+
 To determine if the loss of killer phenotype is caused solely by mutations in the killer virus, we transferred the ancestral virus (K+I+) and five evolved viral variants into the virus-cured Early clone via cytoduction (Figure 5A). The five viral variants were selected to span the range of evolved killer phenotypes: one exhibited weak killing ability and full immunity (KwI+: D253N), three exhibited no killing ability and full immunity (K-I+: P47S, D106G, I292M), and one exhibited neither killing ability nor immunity (K-I-: −1 frameshift). Following cytoduction, we observed that the killer phenotype of each cytoductant matched the killer phenotype of the population of origin, which demonstrates that viral mutations are sufficient to explain changes in killer phenotypes (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-v2.jpg)
+
+**Figure 5.:** (A) Relative fitness of viral variants in pairwise competition with the ancestor (K+I+) and virus-cured ancestor (K-I-). Killer phenotype and identity of viral variant labeled above (Kw indicates weak killing ability). Killer phenotype of the ancestral competitor labeled below. Starting frequency indicated by color. (B) Change to killer phenotype during intracellular competitions between viral variants (by color) and ancestral virus. Replicate lines indicated by symbol. (C) Variant frequency during intracellular competitions. Colors and symbols consistent with panel B. Inset: frequency of the de novo G131D viral variant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Viral variants were transferred from evolved populations to a cured ancestor. Halo assays demonstrate that killer phenotypes were consistent between donor and recipient strains. Viruses were obtained from the following evolved populations at Generation 1000: BYS1-A03 (D253N), RMB1-A02 (P47S), BYB1-H06 (D106G), BYS1-A05 (I292M), and BYS2-B09 (frameshift). Populations RMB1-A02 and BYS2-B09 appear mixed given the observed speckling pattern.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62238/elife-62238-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Intracellular competitions were tracked over time by both Sanger and Illumina sequencing.
 
 To determine if any viral variants affect host fitness, we competed all five cytoductants against the killer-containing Early clone (K+I+) and the virus-cured Early clone (K-I-) in pairwise fashion. Frequency-dependent selection was observed in all cases in which one competitor exhibited killing ability and the other competitor lacked immunity (Figure 5A). For example, cytoductants containing either the ancestral virus or the weak-killing D253N variant exhibited a frequency dependent advantage over the virus-cured Early clone. However, in all competitions where the killer-associated phenotypes were compatible, host fitness was not impacted by the specific viral variant, or even by the presence of the virus itself. These data suggest that production of active toxin and maintenance of the virus have no detectable fitness costs to the host. These findings support previous theoretical and empirical studies (Pieczynska et al., 2016; Pieczynska et al., 2017) that claim that mycoviruses and their hosts have co-evolved to minimize cost.
 
-## Success of evolved viral variants is due to an intracellular fitness advantage
+### Success of evolved viral variants is due to an intracellular fitness advantage
 
 Based on the lack of a measurable effect of viral mutations on host fitness when killing-mediated interactions are absent, we hypothesized that the evolved viral variants may have a selective advantage within the viral population of individual yeast cells. A within-cell advantage has been invoked to explain the invasion of internal deletion variants (e.g. ScV-S [Kane et al., 1979]) but has not been extended to point mutations. To test evolved viral variants for a within-cell fitness advantage, we generated a heteroplasmic diploid strain by mating the ancestor (with wild-type virus) with a haploid cytoductant containing either the I292M (K-I+) or −1 frameshift (K-I-) viral variant. The heteroplasmic diploids were propagated for seven single-cell bottlenecks every 48 hr to minimize among-cell selection. At each bottleneck, we assayed the yeast cells for killer phenotypes and we quantified the ratio of the intracellular viral variants by RT-PCR and sequencing. We find that killing ability was lost from all lines, suggesting that the evolved viral variants outcompeted the ancestral variant (Figure 5B). Sequencing confirmed that the derived viral variant fixed in most lines (Figure 5C). In some lines, however, the derived viral variant increased initially before decreasing late. Further investigation into one of these lines revealed that the decrease in frequency of the viral variant corresponded to the sweep of a de novo G131D variant (Figure 5C, inset). Viral variants therefore appear to constantly arise, and the evolutionary success of the observed variants results from their selective advantage over viral competitors within the context of an individual cell. We speculate that an intracellular competition between newly arising viral variants also explains the loss of immunity from populations that previously lost killing ability (Figure 2—figure supplement 1), given the relaxed selection for the maintenance of functional immunity in those populations.
 
@@ -98,11 +150,196 @@ Here we present a mechanistic case study on the evolution of nontransitivity alo
 
 ## Materials and methods
 
-## Experimental evolution
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL432</td>
+      <td>First reported in Lang et al., 2011</td>
+      <td>Early clone/Ancestor of evolution experiment</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL519</td>
+      <td>First reported in Lang et al., 2011</td>
+      <td>ymCitrine reference strain</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL1582</td>
+      <td>This paper</td>
+      <td>Intermediate clone</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL1042</td>
+      <td>This paper</td>
+      <td>Late clone</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL1097</td>
+      <td>This paper</td>
+      <td>Sensitive tester strain</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL1253</td>
+      <td>This paper</td>
+      <td>Early clone/Ancestor (M1 cured)</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>yGIL1353</td>
+      <td>This paper</td>
+      <td>kar1∆15 mating partner</td>
+      <td>Lang Lab strain collection</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMR1593</td>
+      <td>Mark Rose (Georgetown University)</td>
+      <td>kar1Δ15 integrating plasmid</td>
+      <td>ATCC (87710)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M1_F1</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>TTGGCTATTACAGCGTGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M1_F5</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>ATGACGAAGCCAACCCAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M1_F7</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>CAGAAAAAGAGAGAACAGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M1_R3</td>
+      <td>This paper</td>
+      <td>cDNA synthesis, PCR (Sanger sequencing)</td>
+      <td>TGCTGTTGCATTAAACCAGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M1_R6</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>ATAGCCCGGTGCTCTGTAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LA_F2</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>ATCAGGTGATGCAGCGTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LA_F3</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>ACTCCCCATGCTAAGATTTGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LA_R2</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>CGGCACCCTTACGGAGATAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LA_R3</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>GACCTGTAATGCCCGGAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LA_R6</td>
+      <td>This paper</td>
+      <td>PCR (Sanger sequencing)</td>
+      <td>AGTACTGAGCCCCAAGACCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>I292M_read1</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>CGTCGGCAGCGTCAGATGTGTATAAGAGACAGNNNNNNNNCCATGGTGTCGGCTAATGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>I292M_read2</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>CGTGGGCTCGGAGATGTGTATAAGAGACAGAGGTCAGACACGATGCCCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frameshift_read1</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>CGTCGGCAGCGTCAGATGTGTATAAGAGACAGNNNNNNNNCCCGTCTGCGACAGTAGAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frameshift_read2</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>CGTGGGCTCGGAGATGTGTATAAGAGACAGTGTGTAAGAACTGCGTGGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>i5_adapter</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACNNNNNNNNTCGTCGGCAGCGTCAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>i7_adapter</td>
+      <td>This paper</td>
+      <td>PCR (Illumina sequencing)</td>
+      <td>CAAGCAGAAGACGGCATACGAGATNNNNNNNNGTCTCGTGGGCTCGGAGATGTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental evolution
 
 Details of the evolution experiment have been described previously (Lang et al., 2011). Briefly, population BYS1-D08 is one of ~600 populations that were evolved for 1000 generations at 30°C in YPD + A and T (yeast extract, peptone, dextrose plus 100 μg/ml ampicillin and 25 μg/ml tetracycline to prevent bacterial contamination). Each day populations were diluted 1:210 into 128 μl of YPD + A and T in round-bottom 96-well plates using a BiomekFX liquid handler. The dilution scheme equates to 10 generations of growth per day at an effective population size of ~105.
 
-## Growth conditions and strain construction
+### Growth conditions and strain construction
 
 Unless otherwise specified, yeast strains were propagated at 30°C in YPD + A and T. The ancestor and evolved populations were described previously (Lang et al., 2011). Early, Intermediate, and Late clones were isolated by resurrecting population BYS1-D08 at the Generation 0, 335, and 1000, respectively. These specific time points were selected to coincide with the completion of a selective sweep (Lang et al., 2013), when the population is expected to be near clonal. For each time point we isolated multiple clones from a YPD plate and assayed each one to verify that the killer phenotype was uniform.
 
@@ -110,11 +347,11 @@ The ancestral strain was cured of the M1 and LA viruses by streaking to single c
 
 Karyogamy mutants were constructed by introducing the kar1Δ15 allele by two-step gene replacement in the cured a MATα version of the ancestor (Georgieva and Rothstein, 2002). The kar1Δ15-containing plasmid pMR1593 (Mark Rose, Georgetown University) was linearized with BglII prior to transformation and selection on -Ura. Mitotic excision of the integrated plasmid was selected for plating on 5-fluorotic acid (5-FOA). Then we replaced NatMX with KanMX to enable selection for recipients during viral transfer.
 
-## Fitness assays
+### Fitness assays
 
 Competitive fitness assays were performed as described previously (Lang et al., 2011; Lang et al., 2013). To investigate frequency dependence, competitors were mixed at various ratios at the initiation of the experiment. Competitions were performed for 50 generations under conditions identical to the evolution experiment (Lang et al., 2011). Every 10 generations, competitions were diluted 1:1000 in fresh media and an aliquot was sampled by BD FACS Canto II flow cytometer. Flow cytometry data was analyzed using FlowJo 10.3. Relative fitness was calculated as the slope of the change in the natural log ratio between the experimental and reference strain. To detect frequency-dependent selection, each 10-generation interval was analyzed independently to calculate starting frequency and fitness.
 
-## Halo assay
+### Halo assay
 
 Killer phenotype was measured using a high-throughput version of the standard halo assay (Crabtree et al., 2019) and a liquid handler (Biomek FX). Assays were performed using YPD agar that had been buffered to pH 4.5 (citrate-phosphate buffer), dyed with methylene blue (0.003%), and poured into a 1-well rectangular cell culture plate.
 
@@ -124,11 +361,11 @@ Immunity was assayed against the ancestral strain (yGIL432). Query strains were 
 
 Plates were incubated at room temperature for 2–3 days before assessment. Killer phenotype was scored according to the scale in shown in Figure 2.
 
-## Viral RNA isolation, cDNA Synthesis, and PCR
+### Viral RNA isolation, cDNA Synthesis, and PCR
 
 Nucleic acids were isolated by phenol–chloroform extraction and precipitated in ethanol. Isolated RNA was reverse-transcribed into cDNA using ProtoScript II First Strand cDNA Synthesis Kit (NEB) with either the enclosed Random Primer Mix or the M1-specific oligo M1_R3.
 
-## Sanger sequencing and bioinformatics analyses
+### Sanger sequencing and bioinformatics analyses
 
 PCR was performed on cDNA using Q5 High-Fidelity Polymerase (NEB). The K1 ORF was amplified using primers M1_F1 or M1_F5 and M1_R6. The M1 region downstream of the polyA stretch was amplified using M1_F7 and M1_R3. The LA virus was amplified using LA_F2 and LA_R2, LA_F2 and LA_R3, or LA_F3 and LA_R6. PCR products were Sanger sequenced by Genscript.
 
@@ -136,16 +373,16 @@ Mutations were identified and peak height quantified using 4Peaks (nucleobytes).
 
 The Sanger sequencing data was aligned to publicly available M1 and LA references (GenBank Accession Numbers U78817 and J04692, respectively) using ApE (A plasmid Editor). The ancestral M1 and LA viruses differed from the references at 7 sites (including 3 K1 missense mutations) and 19 sites, respectively (Figure 3—figure supplement 1).
 
-## Viral transfer
+### Viral transfer
 
 Viruses were transferred to MATa strains using the MATα karyogamy mutant as an intermediate. Viral donors (MATa, ura3, NatMX) were first transformed with the pRS426 (URA3, 2µ ORI) for future indication of viral transfer. Cytoduction was performed by mixing a viral donor with the karyogamy mutant recipient (MATα, ura3, KanMX) at a 5:1 ratio on solid media. After a 6 hr incubation at 30°C, the cells were plated on media containing G418 to select for cells with the recipient nuclei. Recipients that grew on -Ura (indicator of cytoplasmic mixing) and failed to grow on ClonNat (absence of donor nuclei) then served as donors for the next cytoduction. These karyogamy mutant donors (MATα, URA3, KanMX) were mixed with the selected recipient (MATa, ura3, NatMX) at a 5:1 ratio on solid media. After a 6 hr incubation at 30°C, the cells were plated on media containing ClonNat to select for cells with recipient nuclei. Recipients that grew on -Ura (indicator of cytoplasmic mixing) and failed to grow on G418 (absence of the donor nucleus) were then cured of the indicator plasmid by selection on 5-FOA. Killer phenotype was confirmed by halo assays and the presence of the viral variants in the recipient was verified by Sanger sequencing.
 
-## Illumina sequencing and bioinformatics analyses
+### Illumina sequencing and bioinformatics analyses
 
 Multiplexed libraries were prepared using a two-step PCR. First, cDNA was amplified by Q5 High-Fidelity Polymerase (NEB) for 10 cycles using primers I292M_read1 and I292M_read2 or frameshift_read1 and frameshift_read2 to incorporate a random 8 bp barcode and sequencing primer binding sites. The resulting amplicons were further amplified by Q5 PCR for 15 cycles using primers i5_adapter and i7_adapter to incorporate the sequencing adaptors and indices. Libraries were sequenced on a NovaSeq 6000 (Illumina) at the Genomics Core Facility at Princeton University.
 
 Raw FASTQ files were demultiplexed using a dual-index barcode splitter (https://bitbucket.org/princeton_genomics/barcode_splitter) and trimmed using Trimmomatic (Bolger et al., 2014) with default settings for paired-end reads. Mutation frequencies were determined by counting the number of reads that contain the ancestral or evolved allele (mutation flanked by five nucleotides).
 
-## Intracellular competitions
+### Intracellular competitions
 
 Within-cell viral competitions were performed by propagating a heteroplasmic diploid and monitoring killer phenotype and viral variant frequency. Diploids were generated by crossing the ancestor with a cytoductant harboring either the I292M or −1 frameshift viral variant. For each viral variant, three diploid lines (each initiated by a unique mating event) were passaged every other day on buffered YPD media for a total of seven single-cell bottlenecks to minimize among-cell selection. A portion of each transferred colony was cryopreserved in 15% glycerol. Cryosamples were revived, assayed for killer phenotype, and harvested for RNA. Following RT-PCR, samples were sent for Sanger sequencing and Illumina sequencing. Variant frequency deviated from the expected frequency of 0.5 at the initial time point, presumably due to an unavoidable delay between the formation of the heteroplasmic diploid and initiation of the intracellular competition from a single colony. Alternatively, viral copy number may vary between donor and recipient cells.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.39866.001 Retinal dopamine is a critical modulator of high acuity, light-adapted vision and photoreceptor coupling in the retina. Dopaminergic amacrine cells (DACs) serve as the sole source of retinal dopamine, and dopamine release in the retina follows a circadian rhythm and is modulated by light exposure. However, the retinal circuits through which light influences the development and function of DACs are still unknown. Intrinsically photosensitive retinal ganglion cells (ipRGCs) have emerged as a prime target for influencing retinal dopamine levels because they costratify with DACs in the inner plexiform layer and signal to them in a retrograde manner. Surprisingly, using genetic mouse models lacking specific phototransduction pathways, we find that while light influences the total number of DACs and retinal dopamine levels, this effect does not require ipRGCs. Instead, we find that the rod pathway is a critical modulator of both DAC number and retinal dopamine levels.
+Retinal dopamine is a critical modulator of high acuity, light-adapted vision and photoreceptor coupling in the retina. Dopaminergic amacrine cells (DACs) serve as the sole source of retinal dopamine, and dopamine release in the retina follows a circadian rhythm and is modulated by light exposure. However, the retinal circuits through which light influences the development and function of DACs are still unknown. Intrinsically photosensitive retinal ganglion cells (ipRGCs) have emerged as a prime target for influencing retinal dopamine levels because they costratify with DACs in the inner plexiform layer and signal to them in a retrograde manner. Surprisingly, using genetic mouse models lacking specific phototransduction pathways, we find that while light influences the total number of DACs and retinal dopamine levels, this effect does not require ipRGCs. Instead, we find that the rod pathway is a critical modulator of both DAC number and retinal dopamine levels.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ Despite the importance of light signaling in regulating dopamine levels, the cel
 
 ## Results
 
-## Light exposure during development sets TH-positive cell number and dopamine levels
+### Light exposure during development sets TH-positive cell number and dopamine levels
 
 We first tested whether exposure to a 12:12 light:dark cycle influences the number of TH+ amacrine cells in the retina. To do this, we performed immunohistochemistry for TH and compared the number of TH+ cells in the retinas of animals that were reared in constant darkness from conception to those reared on standard 12:12 cycles (Figure 1D). Rearing in constant darkness resulted in decreased numbers of TH +cells at P14 (DD: Mean ± SEM = 580.8 ± 8.6 cells, n = 15 retinas; LD: Mean ± SEM = 643.7 ± 8.2 cells, n = 6 retinas; Unpaired t-test, p = 0.0004) (Figure 1A). This decrease persisted when animals were dark-reared to adult stages (DD: Mean ± SEM = 567.3 ± 10.2 cells, n = 6 retinas; LD: Mean ± SEM = 648.5 ± 17.5 cells, n = 6 retinas; One-Way ANOVA, p = 0.0002, Dunnett’s multiple comparisons test) (Figure 1B). Interestingly, we found that this decrease in TH+ cell number in the adult retina persisted even after dark-reared mice were placed in LD at P14, demonstrating that this decrease in TH+ cell number could not be rescued by subsequent exposure to a normal LD cycle after eye opening (LD Rescue: Mean ± SEM = 541.8 ± 5.6 cells, n = 4 retinas; One-Way ANOVA, Dunnett’s multiple comparisons test) (Figure 1B). In support of decreased TH+ cell number, dopamine (DA) levels were significantly reduced in DD reared animals (DD: Mean ± SEM = 0.6 ± 0.08 ng/mg, n = 4 retinas; LD: Mean ± SEM = 1.723 ± 0.16 ng/mg, n = 4 retinas; Unpaired t-test, p = 0.003) (Figure 1C).
 
@@ -38,11 +38,19 @@ We first tested whether exposure to a 12:12 light:dark cycle influences the numb
 
 If light signaling is occurring through one of the three known photoreceptors (rods, cones, or ipRGCs), then rendering all three of these photoreceptor types insensitive to light through genetic perturbation of phototransduction cascade components (Gnat1-/-; Gnat2cpfl3/cpfl3; Opn4-/-, hereafter referred to as TKO for ‘triple knockout’) should mimic the phenotype we observed in DD reared animals. Indeed, TKO retinas had significantly reduced number of TH+ cells (TKO: Mean ± SEM = 505.0 ± 32.8 cells, n = 4 retinas; Control: Mean ± SEM = 627.4 ± 13.5 cells, n = 9 retinas; One-Way ANOVA, p < 0.0001, Dunnett’s multiple comparisons test) and significantly reduced DA levels (TKO: Mean ± SEM = 2.82 ± 0.09 ng/mg, n = 6 retinas; Control: Mean ± SEM = 3.55 ± 0.22 ng/mg, n = 6 retinas; One-Way ANOVA, p < 0.0001, Dunnett’s multiple comparisons test) compared to control retinas (Figure 1E–F). These results indicate that light is a critical modulator of TH+ cell number and resting DA levels in the retina during development and into adulthood.
 
-## Rod, but not cone or melanopsin, phototransduction influence TH-positive cell number and dopamine levels
+### Rod, but not cone or melanopsin, phototransduction influence TH-positive cell number and dopamine levels
 
 We next wanted to determine which photoreceptor types are involved in setting TH+ cell number and DA levels during development (Figure 2A). To do this, we counted TH+ cells in retinas from littermate mice lacking functional rod (Gnat1-/-, hereafter referred to as RKO), cone (Gnat2cpfl3/cpfl3, hereafter referred to as CKO), or melanopsin (Opn4-/-, hereafter referred to as MKO) phototransduction cascades (Figure 2B). Despite reports of ipRGC influence on DA-dependent retinal physiology (Prigge et al., 2016; Zhang et al., 2008; Zhao et al., 2017; Zhang et al., 2012; Qiao et al., 2017), we found that MKO and CKO mice showed no significant change in TH+ cell number (MKO: Mean ± SEM = 615.3±55.5 cells, n = 6 retinas; CKO: Mean ± SEM = 708.6 ± 30.74 cells, n = 9 retinas; Control Mean ± SEM = 627.4 ± 13.5 cells, n = 9 retinas; One-Way ANOVA, Dunnett’s multiple comparisons test) or DA levels (MKO: Mean ± SEM = 3.63 ± 0.15 ng/mg, n = 6 retinas; CKO: Mean ± SEM = 3.88 ± 0.07 ng/mg, n = 6 retinas; Control Mean ± SEM = 3.55 ± 0.22 ng/mg, n = 6 retinas; One-Way ANOVA, Dunnett’s multiple comparisons test), though CKO mice showed a trend toward increasing numbers of TH+ cells (Figure 2C–D). These data indicate that lack of melanopsin or cone phototransduction does not influence basal retinal DA as previously suggested (Dkhissi-Benyahya et al., 2013). Surprisingly, RKO mice showed a significant decrease in both TH+ cell number (RKO: Mean ± SEM = 518.5 ± 29.3 cells, n = 9; Control Mean ± SEM = 627.4 ± 13.5 cells, n = 9; One-Way ANOVA, p < 0.0001, Dunnett’s multiple comparisons test) and DA levels (RKO: Mean ± SEM = 2.92 ± 0.09 ng/mg, n = 6 retinas; Control Mean ± SEM = 3.55 ± 0.22 ng/mg, n = 6 retinas; One-Way ANOVA, p < 0.0001, Dunnett’s multiple comparisons test). Our data from RKO tracks closely with our results from DD reared animals and TKO animals (Figure 1), indicating that rods in particular play a critical role in setting TH+ cell number and DA levels in the developing and adult retina.
 
-## Rod influence on retinal dopamine and TH-positive cell number does not occur through ipRGCs
+![Figure 2.](https://cdn.elifesciences.org/articles/39866/elife-39866-fig2-v1.jpg)
+
+**Figure 2.:** (A) Diagram depicting potential pathways by which light information could reach DACs (1. Via melanopsin signals relayed by ipRGCs, (2. Via rod signals relayed to DACs, (3. Via cone signals relayed to DACs, or (4. Via rod, cone, and/or melanopsin signals through ipRGC-dependent pathways. Dashed arrows represent indirect influence through multicellular circuits while solid arrows represent direct synaptic connectivity between subtypes. (B) Diagram depicting signaling pathways disrupted in MKO, RKO, CKO, and DTA mouse lines. Dashed arrows represent indirect influence through multicellular circuits while solid arrows represent direct synaptic connectivity between subtypes. (C–D) TH+ cell number and DA levels in Control (black circles, n = 9), MKO (blue circles, n = 6), RKO (red circles, n = 8), and CKO (green circles, n = 9) retinas from adult littermates. (E–F) TH+ cell number (n = 8 Control, n = 6 DTA) and DA levels (n = 6 Control, n = 6 DTA) in Control (black circles) and DTA (gray circles) retinas from adult littermates. (G) TH+ cell anatomy in WT and DTA adult retinal sections. We observed no morphological differences between TH+ cells in these two mouse lines. DA: dopamine, DAC: dopaminergic amacrine cell, MKO: animals lacking melanopsin phototransduction, RKO: animals lacking rod signaling, CKO: animals lacking cone signaling, DTA: animals where ipRGCs are ablated through expression of diphtheria toxin. Scale bar in (G) is 50 μm. *p < 0.05, bars on plots represent mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39866/elife-39866-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** TH+ cell stratification in WT (top panels) and DTA (bottom panels) retinas show no differences in morphology. Scale bar is 50 μm.
+
+### Rod influence on retinal dopamine and TH-positive cell number does not occur through ipRGCs
 
 Rods and cones signal to DACs through bipolar cells (Zhang et al., 2008; Qiao et al., 2016) as well as in a retrograde fashion via ipRGCs (Zhang et al., 2008; Zhao et al., 2017; Zhang et al., 2012). Thus, it is possible that though melanopsin phototransduction itself is not required for normal TH+ cell number and retinal DA levels, that the rod-based signals are still reaching DACs via ipRGCs (Figure 2A). If this is the case, then ablating ipRGCs during development should phenocopy our results from RKO animals (Figure 2B). To test this, we counted TH+ cells and measured DA levels in retinas from animals where ipRGCs are ablated early in development (Opn4DTA/DTA, hereafter referred to as DTA animals) (Figure 2B) (Chew et al., 2017). Surprisingly, ablation of ipRGCs did not affect the number of TH+ cells (DTA: Mean ± SEM = 605.2 ± 10.5 cells, n = 6 retinas; Control: Mean ± SEM = 582.6 ± 10.1 cells, n = 8 retinas; Unpaired t-test, p = 0.1522) or retinal DA levels (DTA: Mean ± SEM = 3.61 ± 0.27 ng/mg, n = 6 retinas; Control: Mean ± SEM = 3.31 ± 0.23 ng/mg, n = 6 retinas; Unpaired t-test, p = 0.4188), indicating that ipRGCs are not the relay for rod-dependent signals influencing these processes (Figure 2E–F). Additionally, we find that TH+ cell stratification also appears normal in DTA retinas, providing further support for normal DAC development in the absence of ipRGCs (Figure 2G and Figure 2—figure supplement 1). These data indicate that rod phototransduction through non-ipRGC pathways is the critical regulator of both TH+ cell number and resting retinal DA levels (Figure 3).
 
@@ -60,32 +68,84 @@ It is important to note that while our data clearly indicate fewer TH+ cells in
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Opn4LacZ/LacZ</td>
+      <td>PMID: 11834834</td>
+      <td>RRID: MGI:3797748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gnat2cpfl3/cpfl3</td>
+      <td>PMID: 17065522</td>
+      <td>RRID: MGI:3715214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Gnat1-/-</td>
+      <td>PMID: 11095744</td>
+      <td>RRID: MGI:3640094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Opn4DTA/DTA</td>
+      <td>PMID: 28617242</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TH</td>
+      <td>Millipore</td>
+      <td>Cat: AB152</td>
+      <td>IHC (1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the Animal Care and Use Committee at Northwestern University (Protocol number IS00000887). Both male and female mice were used in this study. For LD and DD experiments, F1 C57Bl6/J; 129S1/SvlmJ wild-type mice from Jackson Labs were bred to generate hybrid progeny. For manipulations of specific phototransduction cascades, mouse lines were generated from the following cross: Opn4+/-; Gnat1+/-; Gnat2+/cpfl3 X Opn4+/-; Gnat1+/-; Gnat2+/cpfl3. Each locus outside the locus of interest was either heterozygous or wild-type. Control mice were either heterozygous or wild-type at a given locus. From this cross were able to generate all MKO (Opn4-/-), RKO (‘rod knock out,’ Gnat1-/-), and CKO (‘cone knock out,’ Gnat2cpfl3/cpfl3) mice (Calvert et al., 2000; Chang et al., 2006; Altimus et al., 2010; Hattar et al., 2002) but only a single TKO (‘triple knockout,’ Opn4-/-; Gnat1-/-; Gnat2cpfl3/cpfl3) mouse due to low probability of homozygosity at every locus. We therefore used offspring from this initial mating to generate all other TKO mice used in the study. To generate Opn4DTA/DTA and the associated controls, we crossed Opn4DTA/+ X Opn4DTA/+ and utilized Opn4DTA/DTA (DTA) (Chew et al., 2017) and Opn4+/+ (Control) littermates generated from this cross for all experiments.
 
 For LD/DD experiments animals were bred and reared in a 12:12 light:dark cycle (Light intensity ~2000 lux) except in the case of the dark-reared animals, which were bred and reared from conception in light-tight chambers. Some of the dark-reared animals were placed in the Rescue group. These animals were bred and maintained in light-tight chambers until P14 and then moved to a 12:12 LD cycle (Light intensity ~2000 lux). For DD conditions, cages were changed using very dim, red illumination. For mutant studies, animals were housed in the animal facility where the light intensity was 100 – 200 lux. All animals received food and water ad libitum.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were euthanized at postnatal day 14 (P14) and at P50-90. Whole retinas were isolated and placed in 4% paraformaldehyde (PFA) at 4oC. Following a 1 hr incubation, retinas were then washed with phosphate buffered saline (PBS) three times for 5 min each at room temperature (RT). Blocking solution consisted of 6% goat serum in 0.3% Triton (Millipore) in PBS. Retinas were kept in blocking solution for 1 hr at RT. Retinas were then placed in primary antibody solution overnight at 4oC, at a 1:500 dilution of rabbit anti TH antibody (Millipore) in 0.3% Triton. Retinas were once again washed in PBS, and then placed in a 1:500 Alexa fluor 488 goat anti-rabbit IgG (Invitrogen) secondary antibody solution for 2 to 4 hr at RT. Retinas were washed once again and mounted onto glass microscope slides, and the coverslip was secured using Fluoromount. Slides were then stored at 4oC until imaged.
 
 For retinal sections, mice were euthanized at P14 or P30 and the eyes were removed. The cornea and lens were removed, and the isolated eyecups were fixed in 4% PFA at 4°C for 2 hr and then cryoprotected in 30% sucrose overnight. Eyecups were then mounted in OCT freezing media and stored at −20°C overnight. The retinal tissue was then sectioned at 16 μm on a Leica CM1950 Cryostat and mounted on glass slides. Sections were then washed on the slides 3 × 10 min. in PBS at RT. Retinas were then incubated in Blocking Solution (2% donkey serum in 0.3% Triton (Millipore)) in PBS for 2 hr at RT. Retinas were then placed in Primary Antibody solution (Blocking Solution + 1:1000 rabbit anti-TH). Retinas were then washed 3 × 10 min. in PBS and placed in Secondary Antibody solution (Blocking Solution + 1:500 donkey anti-rabbit IgG 488). Retinas were then washed 3 × 10 min. PBS, covered in Fluoromount, coverslipped, and stored at 4°C until imaging.
 
-## Imaging
+### Imaging
 
 For whole retina imaging, images were obtaining using Leica DM5500 SPE microscope at 100x under epifluorescent illumination. Tile scanned images were taken of the entire retina and automatically stitched together, using LAS X software.
 
 Confocal images of retinal sections were obtained at 20X magnification using a Leica DM5500 SPE microscope.
 
-## Cell counting
+### Cell counting
 
 Retinal images were processed using ImageJ plugin: Fiji. Total TH positive cells in each retina were counted by hand by an experimenter blinded to the genotype, and total number was recorded.
 
-## Dopamine quantification
+### Dopamine quantification
 
 Mice were euthanized at P14 and P60-90. Retinas were dissected and flash frozen using liquid nitrogen. Retinas were then placed on dry ice, stored at −80°C, and sent to the Vanderbilt University Neurochemistry Core on dry ice for analysis of dopamine levels. Samples where dopamine levels were compared directly were always quantified in the same batch to avoid inter-experiment variability.
 
-## Statistics
+### Statistics
 
 Statistics were performed using Graphpad Prism software. For pairwise comparisons, unpaired t-tests were used. For multiple comparisons, a one-way ANOVA followed by a Dunnett’s multiple comparisons test was performed. Significance was concluded when p < 0.05. n values represent number of retinas. Individual data points are shown on plots with a bar representing the mean.

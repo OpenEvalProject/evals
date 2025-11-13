@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05r8dqr10 Center for Proteomics, Faculty of Medicine, University of Rijeka Rijeka Croatia
+1. Center for Proteomics, Faculty of Medicine, University of Rijeka Rijeka Croatia ([ROR:05r8dqr10](https://ror.org/05r8dqr10))
 
 † Corresponding author
 

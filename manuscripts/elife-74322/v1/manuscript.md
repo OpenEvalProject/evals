@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Genetics, University of Cambridge, Downing Street Cambridge United Kingdom
-2. https://ror.org/013meh722 Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/000bdn450 Syngenta, Jealott's Hill International Research Centre Bracknell United Kingdom
-4. https://ror.org/013meh722 MRC Toxicology Unit, Gleeson Building, University of Cambridge, Tennis Court Road Cambridge United Kingdom
-5. https://ror.org/013meh722 Cambridge Advanced Imaging Centre, Department of Physiology, Development and Neuroscience/Anatomy Building, University of Cambridge Cambridge United Kingdom
-6. https://ror.org/013meh722 Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Tennis Court Road Cambridge United Kingdom
+1. Department of Genetics, University of Cambridge, Downing Street Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Syngenta, Jealott's Hill International Research Centre Bracknell United Kingdom ([ROR:000bdn450](https://ror.org/000bdn450))
+4. MRC Toxicology Unit, Gleeson Building, University of Cambridge, Tennis Court Road Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+5. Cambridge Advanced Imaging Centre, Department of Physiology, Development and Neuroscience/Anatomy Building, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+6. Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Tennis Court Road Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Drosophila nicotinic acetylcholine receptors (nAChRs) are ligand-gated ion channels that represent a target for insecticides. Peptide neurotoxins are known to block nAChRs by binding to their target subunits, however, a better understanding of this mechanism is needed for effective insecticide design. To facilitate the analysis of nAChRs we used a CRISPR/Cas9 strategy to generate null alleles for all ten nAChR subunit genes in a common genetic background. We studied interactions of nAChR subunits with peptide neurotoxins by larval injections and styrene maleic acid lipid particles (SMALPs) pull-down assays. For the null alleles, we determined the effects of α-Bungarotoxin (α-Btx) and ω-Hexatoxin-Hv1a (Hv1a) administration, identifying potential receptor subunits implicated in the binding of these toxins. We employed pull-down assays to confirm α-Btx interactions with the Drosophila α5 (D α 5), Dα6, D α 7 subunits. Finally, we report the localisation of fluorescent tagged endogenous Dα6 during Drosophila CNS development. Taken together, this study elucidates native Drosophila nAChR subunit interactions with insecticidal peptide toxins and provides a resource for the in vivo analysis of insect nAChRs.
+Drosophila nicotinic acetylcholine receptors (nAChRs) are ligand-gated ion channels that represent a target for insecticides. Peptide neurotoxins are known to block nAChRs by binding to their target subunits, however, a better understanding of this mechanism is needed for effective insecticide design. To facilitate the analysis of nAChRs we used a CRISPR/Cas9 strategy to generate null alleles for all ten nAChR subunit genes in a common genetic background. We studied interactions of nAChR subunits with peptide neurotoxins by larval injections and styrene maleic acid lipid particles (SMALPs) pull-down assays. For the null alleles, we determined the effects of α-Bungarotoxin (α-Btx) and ω-Hexatoxin-Hv1a (Hv1a) administration, identifying potential receptor subunits implicated in the binding of these toxins. We employed pull-down assays to confirm α-Btx interactions with the Drosophila α5 (Dα5), Dα6, Dα7 subunits. Finally, we report the localisation of fluorescent tagged endogenous Dα6 during Drosophila CNS development. Taken together, this study elucidates native Drosophila nAChR subunit interactions with insecticidal peptide toxins and provides a resource for the in vivo analysis of insect nAChRs.
 
 ## Introduction
 
@@ -45,17 +45,25 @@ Here, we report the results from a combined genetic and biochemical analysis of 
 
 ## Results
 
-## Construction of new D. melanogaster nicotinic acetylcholine receptor subunit gene mutations
+### Construction of new D. melanogaster nicotinic acetylcholine receptor subunit gene mutations
 
 To investigate the role of individual nAChR subunits we used CRISPR/Cas9 genome engineering to generate null mutations in each of the seven α-subunit and three β-subunit genes. All mutations were generated in virtually identical genetic backgrounds using nos-Cas9 sources on the second or third chromosome of otherwise genetically homogeneous fly lines. Two of the subunit genes, nAChRα3 and nAChRα7, are X-linked and consequently these lines retain the X from the nos-Cas9 stocks used to generate the mutations whereas the other eight null mutations have a w1118 chromosome. In brief, for each gene we targeted exons shared between all predicted isoforms, in most cases close to the N-terminus of the protein. To disrupt each coding sequence and facilitate screening we introduced a visible fluorescent marker, DsRED under control of the eye-specific 3xP3 promoter at the targeted locus (Figure 1—figure supplement 1A-C). Positive lines were confirmed by PCR and sequencing. The system was designed in such a way that the DsRED marker may be excised from the genome by Cre-LoxP recombination, leaving a 3 X FLAG tag and a single LoxP site with the reading frame predicted to be restored. We have not yet tested this facet of the design.
 
 For nine out of 10 subunit genes, we established homozygous viable and fertile stocks, the exception was the nAChRβ1 gene which proved to be recessive lethal. We crossed the nAChRβ1 null strain with a Tubby1-marked balancer but obtained no homozygous 3rd instar larvae, indicating lethality prior to this stage, which precluded subsequent analysis of homozygotes. Although all the other lines are viable, we noticed that all of the lines, but particularly nAChRα1, nAChRα2, nAChRα5 and nAChRβ3, exhibited a curled abdomen phenotype that is most prominent in males (approximately 25, 20, 15% and 15% respectively, Figure 1A and B, Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig1-v1.jpg)
+
+**Figure 1.:** (A) Adult males from indicated nAChR subunit null mutants, black arrows indicate curled abdomens but even in lines with a low frequency the phenotype is prominent (blue arrow). (B) Frequency of curled abdomen phenotype (%), n=3. (C) Graph of locomotor activity determined in climbing assays as a percentage of wild-type, n=3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram of the construct used to generate DsRED insertions into each of the nAChR subunit genes. LHA and RHA = Left and Right homology arms. (B) A guide RNA target site is identified in the exon of interest. Insertion by homology directed repair after Cas9 cleavage disrupts the exon by insertion of a 3XFLAG-DsRED cassette. If required, the DsRED may be removed by Cre-LoxP recombination, restoring the reading frame with the addition of a 3XFLAG tag. (C) Diagramatic representation of DsRED insertion sites in each of the subunit genes with the gRNA specified in Supplementary file 6. Purple blocks represent coding exons on longest transcript, dotted lines represent introns. Genomic coordinates are above each gene model. The blue line represents the approximate extend of the ligand-binding domains.
+
 It is possible that this phenotype is a result of defects in neural control of abdominal muscles and it is interesting to note that a previous analysis of an nAChRα1 allele reports reduced male courtship and mating (Somers et al., 2017). Since nAChRs are mostly found in the nervous system, we carried out basic climbing assays on the null alleles to assess potential locomotor defects (Figure 1C, Supplementary file 2). We saw little or no impact on the locomotor activity of 10-day-old flies with nAChRα4, nAChRα5, nAChRα7, nAChRβ2, or nAChRβ3 homozygous mutants.
 
 In contrast, the nAChRα1, nAChRα2, and nAChRα6 mutants showed 50–60% reductions in climbing ability compared to wild-type, and the nAChRα3 null mutant exhibited a severe reduction in locomotor activity with less than 25% of wild-type activity. Taken together, we report the generation and validation predicted of null mutations in all 10 D. melanogaster nAChR subunit genes, with mild morphological defects associated with most of the new alleles and impaired locomotion observed with some of the mutants.
 
-## Distinct nAChR subunits mediate interactions with Ω-Hexatoxin-Hv1a and α-Bungarotoxin
+### Distinct nAChR subunits mediate interactions with Ω-Hexatoxin-Hv1a and α-Bungarotoxin
 
 In order to investigate the selective contribution of each nAChR subunit to toxin binding in vivo, we injected 3rd instar larvae from the homozygous nAChR mutants with either ω-Hexatoxin-Hv1a (Hv1a) or α-Bungarotoxin (α-Btx) dissolved in PBS. As a control, injections of PBS alone (vehicle) were performed in parallel, with all larvae surviving the injection procedure and showing no detectable defects. Larval injection of 2.5 nmol/g Hv1a induced locomotor paralysis and full lethality in the control groups (w1118, THattP40 and THattP2, Figure 2A, Supplementary file 3). Survival was quantified as the percentage of pupae formed after injection. Injection of Hv1a into each of the receptor mutant lines showed varied effects. Where nAChRα3, nAChRα5, nAChRα6, and nAChRα7 showed lethality comparable to the wild-type controls (p > 0.9), the nAChRα4 and nAChRβ2 mutants showed a significant increase in survival to 42% ± 22% (one-way ANOVA followed by Bonferroni’s test, p = 0.0035, Figure 2A). nAChRα1, nAChRα2 and nAChRβ3 showed slight increases in survival but these were not found to be significant.
 
@@ -65,11 +73,19 @@ In order to investigate the selective contribution of each nAChR subunit to toxi
 
 We also observed significant toxicity following injection of 1.25 nmol/g α-Btx, with larvae exhibiting a progressive reduction in locomotion until stationary, resulting in developmental arrest and death. We found that α-Btx induced lethality is drastically reduced in the nAChRα5, nAChRα6 and nAChRα7 subunit mutants, with the survival rate significantly increased from 0% (controls) to 61% ± 10% (p = 0.001), 53% ± 24% (p = 0.0051) and 72% ± 25% (p = 0.0001), respectively (one-way ANOVA followed by Bonferroni’s test, Figure 2B). Together, these results indicate that Hv1a and α-Btx do not share the same binding target and differentially interact with the nAChR subunits in vivo. Since α-Btx showed a novel insecticidal effect on nAChRs we further examined its interactions biochemically.
 
-## Forming SMA-lipid particles (SMALPs) of ring-like nAChR complex structures
+### Forming SMA-lipid particles (SMALPs) of ring-like nAChR complex structures
 
 To take advantage of our novel receptor mutants for the characterisation of native nAChR functions, we undertook a biochemical analysis to determine the subunits responsible for binding α-Btx. The analysis of membrane proteins such as nAChRs and their native in vivo interaction with toxins by mass spectrometry has proved extremely challenging (Mulcahy et al., 2018) since effective solubilisation of native receptors in an environment that maintains subunit interactions and receptor integrity is important for characterising toxin-receptor binding.
 
 We reasoned that solubilisation of low abundance nAChR complexes into styrene maleic acid lipid particles should facilitate characterisation of native interactions with α-Btx. We therefore utilised detergent-free SMALPs extraction to characterise the interaction between receptor native lipid discs and the α-Btx toxin (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the SMALPs extraction and nAChRs pull-down for mass spectrometric analysis. (B) Negative staining of extracted SMALPs by transmission electron microscopy, n=3. Scale bar 100 nm. (C) Western blot for Dα6-mVenus nAChR with and without enrichment using α-Btx, n=2. Detected with anti-GFP antibody. The fusion protein was detected at approximately 83 kDa. Ponceau S staining was used as sample equal loading control. (D, E) Negative staining of extracted SMALPs after α-Btx pull-downs, n=3, ring-like protein structures are boxed (scale bar = 100 nm) with an example in the magnified image (scale bar = 20 nm). A top view of the nAChR structure from PDB entry 4HQP is shown for reference.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescence signal of uncoupled α-Btx in solution before and after coupling to affinity beads (two-tailed t-test, ***p<0.001, n=4). (B) Biological replicate: same condition as in Figure 3C, samples were reduced with 1% DTT. To allow the detection of the fusion protein Dα6-mVenus an anti-GFP (Ab252881) antibody was used. The fusion protein was detected at approximatly 83 kDa. (C) Pull-down samples were not reduced with 1% DTT. A signal at about 180 kDa was also detected and mostly indicative of a dimer. (D) Biological replicate: same condition as in (C), samples were not reduced with 1% DTT. Ponceau S staining was used as sample an equal loading control.
 
 In brief, we prepared membrane extracts from adult D. melanogaster heads (Depner et al., 2014) and generated lipid particle discs by solubilising the membrane extracts with the SMA copolymer. We used affinity beads coupled to α-Btx (Wang et al., 2003; Mulcahy et al., 2018) to enrich for nAChRs in the SMALP preparations that bound to the toxin, and performed mass spectrometric analysis of tryptic peptides generated from the enriched preparations. In parallel, we processed membrane extracts without SMALP and with SMALP extracts enriched with beads alone as controls.
 
@@ -77,9 +93,17 @@ We first determined whether membrane protein discs are formed from enriched memb
 
 Thus our TEM analysis shows an enrichment in ring-like membrane complexes in the SMALP preparations which are likely to be nAChRs.
 
-## Efficient SMALPs extraction allow to study nAChR subunits solubility
+### Efficient SMALPs extraction allow to study nAChR subunits solubility
 
 To assess to what extent the SMA copolymer solubilised nAChRs, we performed a shotgun proteomics analysis to identify receptor subunits. Membrane preparations were solubilised in buffer with or without SMA, and affinity beads with or without α-Btx were used to assess binding to nAChR subunits. Comparing the number of proteins identified in samples solubilised either with or without 5% SMA, we observed a significantly increased identification of proteins dissolved in SMA by equal numbers of MS/MS spectral counts (two-tailed t-test, p < 0.01, Figure 4A and non-significant, Figure 4B). This indicates that mass spectrometer performance was comparable during the analysis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig4-v1.jpg)
+
+**Figure 4.:** (A) Number of identified proteins in affinity pull-down samples solubilised with or without SMA, two-tailed t-test, **p<0.01, n=6 or 8 replicates per condition. (B) MS/MS spectrum counts from samples solubilised with or without SMA, ns = not significant after two-tailed t-test with n=6 or 8. (C) Calculated hydrophobicity score of amino acid residues found in protein sequences obtained with and without SMA solubilisation, ****p<0.0001, two-tailed t-test, n=3 per condition. (D) GO term (cellular compartment) enrichment of proteins identified with and without SMA solubilisation, n=4 or 11. (E) Predicted numbers of proteins containing transmembrane helices obtained with or without SMA solubilisation, n=4 or 8. (F, G) Analysis of solubility and hydrophobicity of receptors identified with and without SMA solubilisation (r2 = –0.56, p<0.0001, n=4) and of transmembrane receptor helices (r2=0.56, p < 0.01, n = 4). (H) Solubility score of individual nAChR subunits.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) GO slim term for biological process and (B) for molecular function analysed within samples solubilised without or with SMA, n=4 or 11 per conditions. Predicted β-barrel membrane- (C), two-tailed t-test ****p<0.0001, n=6 or 10; palmitoylated- (D), ****p<0.0001, each n=8; myristoylated- (E), ****p<0.0001, n=6 or 10; and GPI-anchored proteins (F), non-significant ns, n=6 or 10.
 
 Sequences of membrane spanning segments of nAChR subunits, which are embedded in a hydrophobic lipid environment, are largely composed of nonpolar side chains. Determining the average hydrophobicity of identified protein sequences revealed significantly increased numbers of proteins with a positive hydrophobicity score in samples solubilised in SMA (two-tailed t-test, p < 0.0001, Figure 4C), indicative of enrichment of membrane proteins. The hydrophobicity score was calculated as the sum of the hydrophobic or hydrophilic properties of amino acids divided by the length of identified proteins. An analysis of Gene Ontology (GO) slim terms supports the conclusion that the SMALP preparations are enriched for membrane embedded and/or associated proteins (Figure 4D), and that these are not limited to plasma membrane proteins. In the SMA-enriched samples, we found enrichment for proteins annotated with metabolic and catalytic activity terms and also enhanced response to biological stimuli (Figure 4—figure supplement 1A, B), highlighting the recovery of membrane-associated proteins. Next, we focused on identified membrane proteins predicted to contain transmembrane helical (TMH) domains and found an increased number of proteins containing TMHs in SMA solubilised samples (Figure 4E). While the majority of these proteins contained a single TMH domain, we identified Piezo, a mechanosensory ion channel protein containing 37 predicted transmembrane helices. Both α- and β-nAChR subunits contain four TMH domains and could be solubilised in SMA. The number of β-barrel membrane spanning proteins identified was also significantly increased by SMA extraction (two-tailed t-test, p < 0.0001, Figure 4—figure supplement 1C). In addition, palmitoylated lipid anchor modifications to nAChR subunits has been shown to be important for receptor assembly into membranes and the formation of functional complexes (Alexander et al., 2010).
 
@@ -87,9 +111,21 @@ We found a significantly increased identification of proteins which are predicte
 
 Taken together, these data confirm that SMA solubilises nAChR complexes in a state suitable for subunit identification by mass spectrometry and suggests that α-Btx interactions can be studied with SMALP preparations.
 
-## Three nAChR α-subunits are targets of α-Btx
+### Three nAChR α-subunits are targets of α-Btx
 
 Using nAChRs solubilised in SMA allowed us to search for native interactions between α-Btx and the receptor. To do so, we identified peptides from subunit ligand-binding and cytoplasmic domains, identifying the Dα5, Dα6, and Dα7 subunits in the α-Btx affinity bead pull-downs (Figure 5A, Figure 5—figure supplement 1A, Supplementary file 4). We also performed similar pull-downs with our newly constructed knockout mutants (Figure 5B). Several other nAChR subunit peptides could be identified in the negative controls performed without coupling α-Btx to affinity beads (Supplementary file 5). The sequences of the ligand-binding domains of the Dα5, Dα6, and Dα7 subunits are very similar (avg. 95.49 %) and we identified peptides common to all three subunits (Figure 5—figure supplement 2A) as well as unique peptides within each of cytoplasmic domains (Figure 5—figure supplement 2B). However, we found no evidence of peptides mapping to the TMH domains, which was not unexpected since peptides from these regions contain stretches of hydrophobic amino acids that are known to be difficult to detect by shotgun proteomics approaches (Carroll et al., 2007).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig5-v1.jpg)
+
+**Figure 5.:** (A) Identified Dα5, Dα6, and Dα7 subunit peptides in pull-downs using α-Btx affinity beads. Peptides from the ligand-binding and cytoplasmic domain are highlighted in red. (B) Numbers of identified unique peptides in wild-type pull-downs using affinity beads in absence and presence of α-Btx, n=3. Deleting nAChRα5, nAChRα6, nAChRα7 and performing pull-downs identified unique peptides for nAChR subunits suggesting that functional complexes can be formed in each of the mutants, n=3. (C) Superimposed nAChR α-subunit structures from Homo sapiens (blue, PDB 6USF) and Torpedo californica (red, 6UWZ). The extracellular ligand-binding domains (LBD) exhibit a structure similarity. (D) Same superimposed structures docked to α-bungarotoxin (α-Btx, surface structure). Peptides found in LBD are highlighted in green. The homology regions of the Dα6 LBD are shown in violet.(E) KEGG pathway enrichment analysis of pull-downs in wild-type and nAChRα5, nAChRα6, nAChRα7 mutants, Fisher’s exact test, n=3. Protein counts with p values of enriched pathways are shown. p values of ≤ 0.05 are to be considered as strongly enriched with default threshold of 0.1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Graphical representation of ten nAChR subunits. The position of protein domains and signal peptides are shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Shared peptides found in the ligand-binding domains are shown in red. (B) Identified unique (/) and shared (,) peptides in cytoplasmic domain.
 
 The ligand-binding domain of α-subunits show structural similarity across different species (Figure 5C) and by mapping the identified peptides to known subunit structures we concluded they were most likely outside of the α-Btx binding sites (Figure 5D). This may indicate that α-Btx binding sites are not structurally conserved or that binding of α-Btx alters local proteolytic susceptibility and as a consequence peptides identifiable by mass spectrometry are not generated.
 
@@ -99,9 +135,21 @@ We compared the repertoire of proteins identified with α-Btx enrichment in wild
 
 In summary, our analysis indicates that a functional α-Btx binding nAChR involves the Dα5, Dα6, and Dα7 subunits. This is entirely in line with our genetic findings described above, where loss of each of these subunit genes conferred substantial resistance to α-Btx-induced lethality.
 
-## Glycosylation sites of nAChR subunits by α-Btx binding
+### Glycosylation sites of nAChR subunits by α-Btx binding
 
 We next examined glycosylation sites on nAChR subunits since these are known to have an important role in α-Btx binding affinity in other systems, and the identification of glycans on receptor subunits may help in the development of more species-specific insecticides (Knight et al., 2004). For example, deglycosylation reduces α-Btx binding in human nAChRs by more than two orders of magnitude (Dellisanti et al., 2007) and α-Btx binding to loop C in Torpedo californica α-subunits is enhanced by N-glycosylation of sites in these regions (Rahman et al., 2020). To identify specific glycosylation sites in D. melanogaster nAChRs we first purified SMALP solubilised receptors with α-Btx affinity beads, digested them into peptides and enriched for glycopeptides using HILIC resin (Hägglund et al., 2004, Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig6-v1.jpg)
+
+**Figure 6.:** (A) Diagrammatic representation of nAChR subunit glycopeptide enrichment. Pull-downs with α-Btx affinity beads enrich for nAChRs and after tryptic digestion glycopeptides were enriched. Glycopeptides were deglycosylated with Endo H or PNGase F and analyzed by mass spectrometry. (B) Low numbers of glycopeptides (average 20) are detected in HILIC resin flow through fractions. (C) Numbers of identified glycopeptides according to site probabilities are shown (n=3). (D) Shared glycopeptide identified in the ligand-binding domain of Dα5 and Dα7, an N-linked glycosylated asparagine (N) residue is highlighted. (E) Deglycosylated peptide with either Endo H or PNGase F and contains either an N-acetylhexosamine or is deamidated on asparagine (N2). The two different modifications on the same peptide lead to a different monoisotopic mass (MH+ [Da]). Peptide contains an additional carbamidomethyl on cysteine (C5).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MS/MS spectra of fragmented shared Dα5 and Dα7 subunit peptides. Glycopeptides were deglycosylated with Endo H and the second asparagine (N) residue is modified with an N-acetylhexosamine, HexNAc (H). (B) Same deglycosylated peptide with PNGase F and deamination (D) of asparagine residue is shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Multiple sequence alignment of insect α7 nAChR subunits compared to sequences of nematodes. The glycosylated ligand-binding domain (LBD) sequence of Dα5 and Dα7 nAChR subunits are shown. Glycosylated asparagine residues highlighted in red are conserved within insects and nematodes (Dα5 422 and Dα7 170 amino acids). (B) Same Dα5 and Dα7 nAChR subunit sequences compared to T.californica, D.rerio, M. musculus, and H. sapiens. (C) Graphical representation of Dα3 and Dβ3 nAChR subunits. N-acetylhexosamine (H) modification on asparagine residues are highlighted and are of low site probability ≤ 80%.
 
 Site-specific identification of glycans on peptides by mass spectrometry is challenging (Fang et al., 2020) and often requires an additional deglycosylation step for glycopeptide measurement. Deglycosylation of enriched peptides was carried out using two separate enzymes: Endoglycosidase H (Endo H), which cleaves asparagine-linked oligosaccharides to generate a truncated sugar molecule with one N-acetylhexosamine (HexNAc) residue, and the endoglycosidase PNGase F, which releases the entire glycan from asparagine residues and deaminates the sugar free asparagine to aspartic acid. While very few glycopeptides were observed in the flow through (an average 20 glycopeptides, Figure 6B), we identified a total of 397 glycopeptides after enrichment and deglycosylation with Endo H or PNGase F (Figure 6C).
 
@@ -113,15 +161,39 @@ We also identified glycosylation sites in the Dα3 (ATKATLNYTGR) and Dβ3 (VVLPE
 
 Taken together, these findings suggest that the Dα5 and Dα7 subunits are modified at asparagine residues in the α-Btx ligand-binding domain with an N-linked sugar chain.
 
-## Localisation of Dα6 nAChRs subunit in the brain
+### Localisation of Dα6 nAChRs subunit in the brain
 
 The in vivo distribution of receptor subunits can provide important clues to understanding their biological function. While localisation studies with fluorescent protein tagged Dα6 subunits have been reported (Perry et al., 2015; Martelli et al., 2022) these have used transgenic constructs driven by Gal4 lines under the control of nAChRα6 regulatory sequences. To characterise the endogenous localisation of an α-Btx binding receptor subunit, we elected to use CRISPR/Cas9 genome engineering to introduce in frame C-terminal fluorescence and epitope tags into the nAChRα6 locus (Figure 7). We elected to use Dα6 in this exploratory study since there is localisation data from the studies mentioned above, as well as recent transcript localisation data (Mitchell et al., 2021), that we could use to validate out tagging strategy.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig7-v1.jpg)
+
+**Figure 7.:** (A–C) Dα6-YFP localisation from live confocal imaging in 2nd A, early B and late C 3rd instar larval brains. Visible localisation in brain (Br), ventral nerve cord (VNC), mushroom bodies (MB), and optic lobes (OL). Scale bar = 100 µm. (D) Imaging Dα6-YFP localisation in fixed late 3rd instar larval brain. (E) Dα6-YFP in mushroom bodies of 3rd instar larvae with detectable fluorescence signal in Kenyon cells (KC), calyx (CX), peduncle (Ped), dorsal lobes (DL), and medial lobes (ML). Scale bar = 100 µm. (F) Dα6-YFP was observed in developing optic lobes, lamina (Lam) and medulla (Med) of later 3rd instar larvae. Scale bar = 100 µm. (G) Dα6-YFP on external structures of developing lobes in later 3rd instar larvae. Scale bar = 100 µm. (H) Dα6-YFP in the adult fly brain, strong signal is detected in mushroom bodies (MB) and optic lobe (OL). Scale bar = 100 µm. (I) Schematic summary of Dα6 subunit expression during different developmental stages, (L2, L3 and Adult) in which the green shading indicate the localisation of the Dα6 subunit.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Live confocal microscope images for the indicated subunits tagged at the C-terminus with YFP. Scale bars as indicated.
 
 The resulting line was homozygous viable, fertile and showed no apparent phenotypes: we particularly noted that the curled abdomen phenotype observed at low frequency in the null allele was not detected in the tagged line. We used live confocal imaging with unfixed brains from larvae and adults homozygous for the tagged line. In 2nd instar larvae, we observed low level well-distributed fluorescence signal throughout the ventral nerve cord (VNC), including on commissural axons, and in the developing brain (Figure 7A).
 
 By early 3rd instar larvae, we found more defined localisation in the VNC and developing mushroom bodies (Figure 7B), particularly noticeable in the Kenyon cells, a known site of α-Btx binding (Su and O’Dowd, 2003). Localisation in larval mushroom bodies continued to evolve in late 3rd instar larvae, with defined expression in the Kenyon cells, calyx, peduncle, dorsal and medial lobes (Figure 7C; Video 1), and with the strong mushroom body and VNC signal also observed when we imaged YFP in fixed preparations (Figure 7D). We also detected weaker signals in the medulla and lamina of the emerging optic lobes (Figure 7E; Video 2, Figure 7F; Video 3) as well as localisation to a number of cell bodies overlying the optic lobes (Figure 7G).
 
+![Video 1.](https://cdn.elifesciences.org/articles/74322/elife-74322-video1.mp4.jpg)
+
+**Video 1.:** Scale bar = 100 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/74322/elife-74322-video2.mp4.jpg)
+
+**Video 2.:** Scale bar = 100 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/74322/elife-74322-video3.mp4.jpg)
+
+**Video 3.:** Scale bar = 100 µm.
+
 Finally, in the adult brain, expression was largely restricted to the mushroom bodies particularly the Kenyon cells and connections across the midline between the β and γ lobes and the optic lobes (Figure 7H; Video 4). The temporal localisation of Dα6 subunit in the CNS is summarised in schematic form (Figure 7I).
+
+![Video 4.](https://cdn.elifesciences.org/articles/74322/elife-74322-video4.mp4.jpg)
+
+**Video 4.:** Scale bar = 100 µm.
 
 The imaging of endogenously tagged Dα6 is largely consistent with the results reported from the expression of tagged transgenic lines (Perry et al., 2015; Martelli et al., 2022) and reported transcript localisation in mushroom bodies (Mitchell et al., 2021) with the main difference being the weak optic lobe expression we detected in larval brains. We detected strong optic lobe expression in the adult brain, consistent with previous reports (Martelli et al., 2022) and consider that the earlier expression detected with the endogenous fusion compared to Gal4 driven constructs likely reflects the regulatory complexity of the locus not captured by Gal4 drivers.
 
@@ -163,88 +235,364 @@ In conclusion, we identified ligand-binding subunit sites for a D. melanogaster 
 
 ## Materials and methods
 
-## Drosophila methods
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>pCDF3</td>
+      <td>Port et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>FSVS</td>
+      <td>Korona et al., 2020</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>3 × P3-DsRED</td>
+      <td>Gratz et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>{nos-Cas9}attP40</td>
+      <td>Ren et al., 2013</td>
+      <td>BDSC:78,781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>{nos-Cas9}attP2</td>
+      <td>Ren et al., 2013</td>
+      <td>BDSC:78,782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>FlyBase</td>
+      <td>FBal0018186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα1 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα2 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα3 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα4 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα5 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα6 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα7 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRβ2 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRβ3 KO</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα1FSVS</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRα6FSVS</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRβ1FSVS</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nAChRβ2FSVS</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Steven Russell/ https://www.flyfacility.gen.cam.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>E. coli competent cells</td>
+      <td>New England Biolabs</td>
+      <td>Catalogue number: C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BbsI</td>
+      <td>New England Biolabs</td>
+      <td>Catalogue number: R0539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Catalogue number: E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 High-Fidelity 2 X Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Catalogue number: M0492L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce fluorometric peptide kit</td>
+      <td>Thermo Scientific</td>
+      <td>Catalogue number: 23,290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Trypsin/Lys-C mix</td>
+      <td>Promega</td>
+      <td>Catalogue number: V5073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (goat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalogue number: Ab252881</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat IgG (goat polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalogue number: A9037</td>
+      <td>1:10.000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ω‐hexatoxin‐Hv1a</td>
+      <td>Syngenta</td>
+      <td></td>
+      <td>CH-4332 Stein, Switzerland</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>α-Bungarotoxin</td>
+      <td>Abcam</td>
+      <td>Catalogue number: ab120542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Carbachol</td>
+      <td>Insight Biotechnology Ltd</td>
+      <td>Catalogue number: CAS 51-83-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CNBr-activated sepharose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalogue number: C9 142–5 G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Styrene maleic acid copolymer (3:1)</td>
+      <td>Dafforn, p.c.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mini-Protean TGX precast gels</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Catalogue number: 456–1,084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL-Chemiluminescent detection solution</td>
+      <td>GE Healthcare</td>
+      <td>Catalogue number: 45-000-999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CL-XPosure films</td>
+      <td>Thermo Scientific</td>
+      <td>Catalogue number: 10465145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.3</td>
+      <td>Thermo Scientific</td>
+      <td>RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila methods
 
 Embryos from the THattP40 (y1 sc v1 sev21; P{y+t7.7 v+t1.8 nos-Cas9.R}attP40) or THattP2 (y1 sc v1 sev21; P{y+t7.7 v+t1.8 nos-Cas9.R}attP2) lines expressing nos-Cas9 were injected using standard procedures (Bloomington Drosophila Stock Centre). Donor DNA (500 ng/μL) in sterile H2O was injected together with gRNA plasmids (100 ng/μL) as described previously (Korona et al., 2020). Individually selected surviving adults were crossed to w1118 and the progeny screened for DsRED fluorescence localised mostly to the eyes of transgenic flies: positive flies were balanced and homozygous stocks established where possible. The correct localisation of the insert was confirmed via PCR and sequencing. Transgenic flies were assessed for the phenotype using bright field microscope. For tagging of Dα6 and other nAChR subunits, the stocks were additionally subjected to Cre-recombination for marker removal and several independent lines were verified by PCR. Some of these lines were screened for YFP fluorescence using confocal microscopy. From the YFP-positive balanced stocks, a viable and fertile homozygote stock was established. Injections were performed by the Department of Genetics Fly Facility (https://www.flyfacility.gen.cam.ac.uk). All fly stocks were maintained at 25℃ on standard cornmeal medium.
 
-## Cloning of gRNAs and generation of donor vectors
+### Cloning of gRNAs and generation of donor vectors
 
-## Construction of nAChR subunits null alleles
+#### Construction of nAChR subunits null alleles
 
 In order to generate individual nAChR subunits gene mutations, the open-reading frame (ORF) was disrupted by introducing a visible marker harbouring DsRED marker under the eye specific 3P × 3 promoter using CRISPR/Cas9 technology as previously described (Korona et al., 2020). The targeted exons are shared between different isoforms and adjacent to the N-terminus to ensure the protein translation was interrupted. The insertion sites were designed in silico and optimal gRNAs were chosen (Supplementary file 6) that were tested against the injection strain and cloned into pCDF3. Briefly, target-specific sequences were synthesised and either 5′-phosphorylated annealed and ligated into the BbsI sites of pCDF3 pre-cut with BbsI. Positive clones were confirmed by sequencing. For generation of donor vectors, firstly, homology arms were amplified on genomic DNA (Supplementary file 7) that, secondly, were used as a template to amplify the homology arms (Supplementary file 8) of the donor vector for CRISPR/Cas9 homologous recombination (HDR). The inserts with visible marker were amplified using as a template previously generated constructs (Korona et al., 2020) with appropriate primers.
 
 These fragments were used for Gibson Assembly using Gibson Assembly Master Mix (New England Biolabs). PCR products were produced with the Q5 High-Fidelity 2 X Master Mix (New England Biolabs). All inserts were verified by sequencing.
 
-## C-terminal tagging of Dα6 nAChRs subunit fusion protein
+#### C-terminal tagging of Dα6 nAChRs subunit fusion protein
 
 For tagging of Dα6 nAChRs subunit, the C-terminal fusion with FSVS fluorescent protein harbouring StrepII and 3xFLAG epitope tags (3xFLAG-StrepII-mVenus-StrepII) was generated for CRISPR/Cas9 mediated genome engineering (Korona et al., 2017; Korona et al., 2020). First, gRNAs were designed (Supplementary file 6) and tested against the genomic DNA sequence of injection strains. The oligonucleotides were phosphorylated and ligated into BbsI pre-cut pCDF3. The positive variants were confirmed by sequencing. The donor vector to generate protein fusion with fluorescent protein harbouring epitope tags was cloned in two steps strategy by initially creating a nAChRα6-FSVS donor and then adding the removable marker to generate a nAChRα6-FSVS-loxP-3P × 3-DsRED-loxP donor vector. The homology arms were amplified from genomic DNA (Supplementary file 7) and used to amplify homology arms for the nAChRα6-FSVS donor vector (Supplementary file 8), assembled using Gibson Assembly as described above. The FSVS tag was amplified from previously generated constructs (Korona et al., 2017) with appropriate overlapping oligonucleotides (Supplementary file 8). The construct was confirmed by Sanger sequencing and used as a template to generate donor vector with removable marker. The PCR fragments harbouring homology arms and FSVS tag were amplified from the nAChRα6-FSVS construct, whereas the 3P × 3-DsRED with adjacent loxP sites was amplified using earlier generated constructs (Korona et al., 2017). The final donor vector was generated using Gibson Assembly as described above and positive variants were confirmed by sequencing. Other nAChR tagged lines were constructed as mentioned above.
 
-## Confocal microscopy
+#### Confocal microscopy
 
 Localisation of FSVS-tagged (3xFLAG-StrepII-mVenus-StrepII) Dα6 nAChRs subunit was visualised in dissected larvae brains via monitoring the YFP fluorescence (mVenus). Briefly, the larval brains were dissected and mounted in glycerol for live imaging. For fixed preparations 3rd instar larvae brains were dissected on ice in chilled PBS, fixed in 4% PFA in PBS for 20 min at room temperature, washed three times with PBS-T (phosphate-buffered saline – PBS + 0.2% Triton) and mounted in VECTASHIELD.
 
 Images were acquired using a Leica SP8 confocal microscope or ZEISS LSM 880 confocal with appropriate spectral windows for mVenus, images were processed with Fiji or ImageJ.
 
-## Locomotor behaviour
+#### Locomotor behaviour
 
 Adult female and male flies were collected shortly after eclosion and separated into 10 cohorts consisting of 10 flies (100 total) for each genotype. Flies were maintained at 25 °C and transferred to fresh food every three days. For the curled abdomen phenotype, 50 flies (25 males and 25 females) in three replicates were used to examine the phenotype, we did not differentiate between males and females, however, we noticed that the phenotype predominantly affected males. For the climbing assay, each cohort was transferred to a plugged 10 ml serological pipette, and allowed to acclimatize for 5 min. For each trial, flies were tapped down to the bottom of the vial, and the percentage of flies able to cross a 5 ml mark successfully within 10 s was recorded as the climbing index. Five trials were performed for each cohort, with a 1 min recovery period between each trial. Climbing assays were performed 10 days after eclosion.
 
-## Drosophila larval injections
+#### Drosophila larval injections
 
 Injections were performed by using the Nanoliter 2000 (World Precision Instruments, Hertfordshire, United Kingdom) mounted on a micromanipulator (Narishige, London, United Kingdom). Micropipettes were pulled from glass capillary tubes (1.14 mm OD, 0.530 mm ±25 μm ID; #4878, WPI) using a laser-based micropipette puller (Sutter P-2000, Sutter Instrument, Novato, CA, USA). Third instar larvae (wandering stage) were transferred to an adhesive surface after being quickly washed with water to remove food residues and gently dried using paper tissue. The micropipette was positioned over the approximate centre of the body, on the dorsal side, and the tip was advanced through the cuticle into the hemocoel of the larva. Larvae were injected with 69 nL of PBS (phosphate-buffered saline) supplemented with 10% (v/v) filtered food dye (PME, moss green food colouring; 0.2 µm filter). Food dye was included to aid in monitoring the success of the injection under a dissection microscope (Leica MZ65, Milton Keynes, United Kingdom). ω‐hexatoxin‐Hv1a (Hv1a, Syngenta, Schaffhauserstrasse, CH-4332 Stein, Switzerland) and α-Bungarotoxin α-Btx (ab120542, Abcam, Cambridge, United Kingdom) were added to the injection mix in order to obtain a final concentration of 2.5 nmol/g and 1.25 nmol/g, respectively (average larval weight was 2.14 mg).
 
 After injection, larvae were then gently transferred into agar/grape juice (Ritchie Products Limited, Burton-On-Trent, United Kingdom) plates and kept at 25 °C. The rate of survival (expressed as percentage) was calculated as the number of living pupae, formed 1–2 days after injection, divided by the total number of injected larvae. Experiments were repeated three times independently with a total number of 10 larvae for each experimental group. Results were analysed with One-way ANOVA followed by Bonferroni’s multiple comparisons test using GraphPad Prism (version 7, GraphPad Software, San Diego, California, USA).
 
-## Coupling procedure of α-Bungarotoxin to affinity beads
+#### Coupling procedure of α-Bungarotoxin to affinity beads
 
 Coupling of α-Bungarotoxin, α-Btx (ab120542, Abcam, Cambridge, United Kingdom) to cyanogen bromide-activated (CNBr) sepharose beads 4B (C9 142–5 G, Sigma-Aldrich, Haverhill, United Kingdom) was performed as described (Wang et al., 2003; Mulcahy et al., 2018). CNBr-activated sepharose 4B beads (0.25 g) were hydrated in 1.25 ml of 1 mM HCl for 1 hr at 4 °C on a rotator. Beads were centrifuged for 5 min at 1500 × g, the supernatant removed and beads washed twice with 1 ml of coupling buffer (0.25 M NaHCO3, 0.5 M NaCl, pH 8.3). Beads were centrifuged for 5 min at 1500 × g and the supernatant was removed. Alpha-Btx (1 mg) was resuspended in 1 ml coupling buffer and incubated together with the affinity beads at 4 °C for 16 hr on a rotator. Beads were centrifuged for 5 min at 1500 × g. Coupling efficiency was determined using a Pierce quantitative fluorometric peptide kit and used according to the manufacturer’s instructions (23290, Thermo Scientific, Bishop’s Stortford, United Kingdom). Beads were blocked with 1 ml of 0.2 M glycine in 80% coupling buffer at 4 °C for 16 hr on a rotator. Beads were then centrifuged for 5 min at 1500 × g and washed with 1 ml of 0.1 M NaHCO3, 0.5 M NaCl, pH 8.0. This step was repeated with 1 ml of 0.1 M NaCH3CO2, 0.5 M NaCl, pH 4.0. Beads were washed again in 1 ml of 0.1 M NaHCO3, 0.5 M NaCl, pH 8.0. After a final wash step with 1 ml coupling buffer the beads were incubated twice for 30 min in 1 ml Tris-buffer (50 mM Tris, 150 mM NaCl, pH 8.0). The beads were centrifuged for 5 min at 1500 × g, the supernatant was removed.
 
-## Membrane protein enrichment and incorporation in SMALPs
+#### Membrane protein enrichment and incorporation in SMALPs
 
 D. melanogaster heads were obtained and separated according to Depner et al., 2014. In a 50 ml falcon tube approximately 6 g flies were rapidly frozen in liquid nitrogen and vortexed twice for 3 min, with the tube cooled for 30 sec in liquid nitrogen between. Heads were separated from bodies by sieving (1201124 & 1201125, Endecotts, London, United Kingdom).
 
 1 ml of isotonic lysis buffer (0.25 M sucrose, 50 mM TRIS/HCl pH 7.4, 10 mM HEPES pH 7.4, 2 mM EDTA, Protease inhibitor) was added to approximately 0.8 g separated heads. The solution was mixed three times by vortexing and the heads were lysed with 60 strokes in a Dounce homogenizer with a pestle. Membrane protein preparation was performed by differential centrifugation-based fractionation as described (Depner et al., 2014; Geladaki et al., 2019). Membranes (24–177 mg wet pellet weight) were resuspended in approximately 20–300 μl 5% SMALP solution (5% styrene maleic acid copolymer (3:1), 5 mM Tris-Base, 0.15 mM NaCl, pH 8.0). As a comparison membrane pellets were also solubilised in 5% SMALP solution without the addition of the copolymer (Supplementary file 9). For efficient incorporation and formation of SMALPs, membrane proteins were incubated with 5% SMALP solution for 2 hr at room temperature on a rocking platform. To separate the insoluble proteins from the soluble SMALPs a centrifugation step at 100,000 × g for 60 min, 4 °C was performed. Supernatant containing the SMALPs was combined and used for the nAChRs pull-downs.
 
-## Enrichment of nAChRs by α-Btx pull-down
+#### Enrichment of nAChRs by α-Btx pull-down
 
 SMALPs (20–35 mg/ml) were incubated with 200 μl α-Btx conjugated affinity beads for 16 hr, 4 °C on a rotator. The beads were then centrifuged for 5 min at 1500 × g and washed two or three times, each for 10 min with 1 ml ice-cold TBS (50 mM Tris, 150 mM NaCl, pH 8.0) on a rotator at 4 °C. Beads were centrifuged for 5 min at 1500 × g and nAChRs selectively eluted twice with 100 μl 1 M carbachol (CAS 51-83-2, Insight Biotechnology Ltd, Wembley, United Kingdom). These steps were performed for 25 min at room temperature on a rotator. Beads were centrifuged for 5 min at 1500 × g and eluates were combined and ice-cold 100% acetone in the volume of four times of the sample was added to the samples, mixed by vortexing and proteins were precipitated for 16 hr at –20 °C. Samples were centrifuged at 13000 × g for 15 min. Supernatant was removed and dried proteins were dissolved in Laemmli buffer (1 M Tris pH 6.8, 10% SDS, 5% glycerol, 2% bromophenol blue). Proteins were heated at 60 °C and loaded on Mini-Protean TGX precast gels (456–1084, 4–15 %, Bio-Rad Laboratories, Inc, Watford, United Kingdom).
 
-## Immunoblotting
+#### Immunoblotting
 
 Alpha-Btx pull-down enriched or unenriched protein samples were treated with 1% DTT or left untreated, boiled at 60 °C for 8 min, separated by PAGE and transferred onto a nitrocellulose membrane (1704158, Trans-Blot Turbo Mini, Bio-Rad Laboratories, Inc, Watford, United Kingdom).
 
 Ponceau S staining was used as a sample loading control. FSVS-tagged Dα6 (3xFLAG-StrepII-mVenus-StrepII) was detected with anti-GFP (Ab252881, Abcam, Cambridge, United Kingdom). 5% skimmed milk power dissolved in TBS-T was used for blocking and membranes were incubated for 16 hr at 4 °C with the α-GFP antibody (1:1000 concentrated in blocking solution) followed by anti-rat IgG antibody for 1 hour (A9037, Sigma-Aldrich, Haverhill, United Kingdom). Immunoblots were treated with an ECL chemiluminescent detection solution (45-000-999, GE Healthcare, Chalfont St. Giles, United Kingdom) exposed for 10 s to CL-XPosure films (10465145, Thermo Scientific, Bishop’s Stortford, United Kingdom) and visualised using an x-ray developer (1170-1-8000, Protec GmbH, Oberstenfeld, Germany). Two biological replicates were performed.
 
-## Electron microscopy preparation
+#### Electron microscopy preparation
 
 For negative staining analysis, membrane proteins were extracted with 5% SMA and nAChRs were enriched using α-Btx affinity pull-downs. Proteins were diluted 1:10 with deionised water to approximately 0.9 mg/ml and an aliquot of the samples were absorbed onto a glow-discharged copper/carbon-film grid (EM Resolutions) for approximately 2 min at room temperature. Grids were rinsed twice in deionised water and negative staining was performed using a 2% aqueous uranyl acetate solution. Samples were viewed in a Tecnai G2 transmission electron microscope (TEM, FEI/ThermoFisher) run at 200 keV accelerating voltage using a 20 μm objective aperture to increase contrast; images were captured using an AMT CCD camera. Three biological replicates were performed and we provide 28 micrographs, 15 enriched from α-Btx and 13 unenriched (Figure 3—source data 1).
 
-## Sample preparation for liquid chromatography–mass spectrometry (LC-MS)
+#### Sample preparation for liquid chromatography–mass spectrometry (LC-MS)
 
 Gel pieces were excised from the gel lanes and proteolytic digestion with Trypsin/Lys-C mix (V5073, Promega, Southampton, United Kingdom) was performed as described (Shevchenko et al., 2006). The gel pieces were covered with 50 mM NH₄HCO₃ / 50% ACN and shaken for 10 min. This step was repeated with 100% acetonitrile and finally dried in a speed vac. Samples were reduced with 10 mM DTT in 50 mM NH₄HCO₃ at 56 °C for 1 hr and alkylated with 50 mM iodoacetamide in 50 mM NH₄HCO₃ at room temperature without light for 45 min. The gels were covered with 50 mM NH₄HCO₃ and 100% ACN and shaken for 10 min. These steps were repeated and samples were dried in a speed vac. Trypsin/Lys-C buffer was added to the sample according to manufacturer’s instructions and incubated for 45 min on ice.
 
 Next 30 μl 25 mM NH₄HCO₃ was added and samples were incubated at 37 °C for 16 hr. The gel pieces were covered with 20 mM NH₄HCO₃ and shaken for 10 min. Supernatant with peptides was collected. Next, the gels were covered with 50% ACN / 5% FA and shaken for 20 min. These steps were repeated and peptides were dried in a speed vac. Samples for glycopeptide enrichment were digested in-solution according to Queiroz et al., 2019. Samples were reduced and alkylated in 10 mM DTT and 50 mM iodoacetamide. Proteins were digested in final concentration of 2.5 μg Trypsin/Lys-C buffer for 16 hr at 37 °C.
 
-## Peptide clean-ip
+#### Peptide clean-ip
 
 Peptides were desalted using C-18 stage tips according to Rappsilber et al., 2007. C-18 material (three C-18 plugs were pasted in a 200 μl pipette tip, Pierce C18 Spin Tips, 84,850 Thermo Scientific, Bishop’s Stortford, United Kingdom) was equilibrated with methanol/ 0.1% FA, 70% ACN/ 0.1% FA and with 0.1% FA. Peptides were loaded on C-18 material, washed with 0.1% FA and eluted with 70% ACN/0.1% FA. Samples were dried and finally, peptides were resuspended in 20 μl 0.1% FA. For glycopeptide enrichment, peptides were first desalted using Poros oligo r3 resin (1-339-09, Thermo Scientific, Bishop’s Stortford, United Kingdom) as described (Gobom et al., 1999; Queiroz et al., 2019). Pierce centrifuge columns (SH253723, Thermo Scientific, Bishop’s Stortford, United Kingdom) were filed with 250 μl of Poros oligo r3 resin. Columns were washed three times with 0.1% TFA. Peptides were loaded onto the columns and washed three times with 0.1% TFA and subsequently eluted with 70% ACN.
 
-## Glycopeptide enrichment
+#### Glycopeptide enrichment
 
 Enrichment of glycopeptides of nAChRs was performed as described (Hägglund et al., 2004). Micro columns were prepared with 200 μl peptide tips filled with a C8 plug and iHILIC – fusion 5 µm, 100 Å silica based material (HCS 160119, Hilicon, Umeå, Sweden). Peptides were solubilised stepwise in 19 μl dH2O and then in 80 μl ACN plus 1 μl TFA acid. The micro columns were cleaned with 50 μl 0.1% TFA and three times equilibrated with 100 μl 80% ACN, 1% TFA. Peptides were loaded onto the micro column and washed twice with 100 μl 80% ACN, 1% TFA. Glycopeptides were eluted from the column using twice 40 μl 0.1% TFA and finally with 20 μl 80% ACN, 1% TFA. Samples were dried in a speed vac before peptides were deglycosylated with Endo H or PNGase F according to manufacturer’s instructions (P07025 & P0710S, New England Biolabs Inc, Hitchin, United Kingdom).
 
-## LC-MS/MS
+#### LC-MS/MS
 
 Peptide samples were dissolved in 20 μl of 0.1% (v/v) FA. Approximately 1 μg peptide solution was used for each LC-MS/MS analysis. All LC-MS/MS experiments were performed using a Dionex Ultimate 3000 RSLC nanoUPLC (Thermo Fisher Scientific Inc, Waltham, MA, USA) system and a Q ExactiveTM Orbitrap mass spectrometer (Thermo Fisher Scientific Inc, Waltham, MA, USA). Separation of peptides was performed by reverse-phase chromatography at a flow rate of 300 nL/min and a Thermo Scientific reverse-phase nano Easy-spray column (Thermo Scientific PepMap C18, 2 μm particle size, 100 Å pore size, 75 μm i.d. x 50 cm length). Peptides were loaded onto a pre-column (Thermo Scientific PepMap 100 C18, 5 μm particle size, 100 A pore size, 300 μm i.d. x 5 mm length) via the Ultimate 3,000 autosampler with 0.1% FA for 3 min at a flow rate of 15 μL/min. After loading, the column valve was switched to allow elution of peptides from the pre-column onto the analytical column. Solvent A was water +0.1% FA and solvent B was 80% ACN, 20% water +0.1% FA. The linear gradient employed was 2%–40% B in 90 min (the total run time including column washing and re-equilibration was 120 min). In between runs columns were washed at least four times to avoid carry overs. The LC eluant ionised by means of an Easy-spray source (Thermo Fisher Scientific Inc). An electrospray voltage of 2.1 kV was applied in order to ionise the eluant. All m/z values of eluting ions were measured in an Orbitrap mass analyzer, set at a resolution of 35,000 and scanned between m/z 380 and 1500. Data-dependent scans (Top 20) were employed to automatically isolate and generate fragment ions by higher energy collisional dissociation (HCD; Normalised collision energy (NCE): 25 %) in the HCD collision cell and measurement of the resulting fragment ions were performed in the Orbitrap analyser, set at a resolution of 17,500. Singly charged ions and ions with unassigned charge states were excluded from being selected for MS/MS and a dynamic exclusion of 20 s was employed.
 
-## Peptide/protein database searching
+#### Peptide/protein database searching
 
 Protein identification was carried out using Sequest HT or Mascot search engine software operating in Proteome Discoverer 2.3 (Eng et al., 1994; Koenig et al., 2008). Raw flies were searched against the Uniprot Drosophila_melanogaster_20180813 database (23,297 sequences; 16110808 residues) and a common contaminant sequences database. The search parameters using mascot algorithm were: (i) Trypsin was set as the enzyme of choice, (ii) precursor ion mass tolerance 20 ppm, (iii) fragment ion mass tolerance 0.1 Da, (iv) maximum of two missed cleavage sites were set, (v) a minimum peptide length of six amino acids were set, (vi) fixed cysteine static modification by carbamidomethylation, (vii) variable modification by methionine oxidation & deamidation on asparagine and glutamine and N-acetylhexosamine (HexNAc(1)dHex(1) + HexNAc on asparagine) as variable glycopeptide modifications, (viii) A site probability threshold of 75% was set, (ix) Percolator was used to assess the false discovery rate and peptide filters were set to high confidence (FDR < 1).
 
-## Data handling and statistical analysis
+#### Data handling and statistical analysis
 
 Protein data evaluation was performed using R 3.5.3 (Ihaka and Gentleman, 1996). Plotting of graphs were performed in RStudio 1.3.959 (Rstudio Team, 2020) using ggplot2 (Ginestet, 2011) and other R packages. In order to characterise membrane proteins, the following tools were used: (i) TMHMM - 2.0 (Krogh et al., 2001), (ii) PRED-TMBB2 (Tsirigos et al., 2016) (iii) SwissPalm (Blanc et al., 2015), (iv) PredGPI (Pierleoni et al., 2008), (v) Gravy calculator (https://www.gravy-calculator.de), (vi) Myristoylator (Bologna et al., 2004) (vii) Solubility scores (Sormanni et al., 2015; Sormanni et al., 2017). Analysis of gene ontology (GO) slim terms (The Gene Ontology Consortium, 2019) were performed within proteome discoverer 2.3 (Thermo Fisher Scientific). KEGG (Kanehisa et al., 2020) pathway enrichment analysis was performed using DAVID (Huang et al., 2009). For each experimental investigation, n ≥ 3 were considered and data are represented as means ± SEM. Experiments were performed in a blinded manner whenever possible. Data are presented as mean ± SD. Statistical tests for SMALPs were performed using two-tailed t-test with an unequal variance and p values of ≤ 0.05 were considered to be significant. In DAVID, Fisher’s exact p values are computed to measure the gene-enrichment terms. Fisher’s exact p value of 0 represents perfect enrichment of a term. Usually p value of ≤ 0.05 are to be considered as strongly enriched. In this study, the default threshold set in DAVID of 0.1 was used. Linear regression analysis was performed in order to study the efficiency of SMALPs extraction of membrane receptors.
 
-## Structural assessment and illustration of nAChR subunits
+#### Structural assessment and illustration of nAChR subunits
 
 For structural alignment of nAChRs matchmaker command operating in UCSF Chimera X 0.91 (Goddard et al., 2018) was used. This command is superimposing protein structures by first creating pairwise sequence alignments, then fitting the aligned residue pairs and displays in an overlaid structure as a result. The following parameters were set to create the aligned structure: (i) alignment algorithm; Needleman-Wunsch (ii) similarity matrix; BLOSUM-62. Structural animation was performed in Blender 2.8 (https://www.blender.org), an open-source 3D graphics software. For annotation of protein sequences InterProScan was used (Mitchell et al., 2019). Illustrator for biological sequences (IBS) web server was used to represent biological sequences (Liu et al., 2015). Multiple sequence alignments were performed (Madeira et al., 2019) or using BoxShade multiple sequence alignments (Swiss institute of bioinformatics).

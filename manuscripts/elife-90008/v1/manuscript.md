@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/039bjqg32 Institute of Evolutionary Biology, Faculty of Biology, University of Warsaw Warsaw Poland
-2. https://ror.org/02ymw8z06 Department of Geological Sciences, University of Missouri Columbia United States
+1. Institute of Evolutionary Biology, Faculty of Biology, University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+2. Department of Geological Sciences, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
 
 † Corresponding author
 

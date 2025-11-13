@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.35468.001 During speciation, sex chromosomes often accumulate interspecific genetic incompatibilities faster than the rest of the genome. The drive theory posits that sex chromosomes are susceptible to recurrent bouts of meiotic drive and suppression, causing the evolutionary build-up of divergent cryptic sex-linked drive systems and, incidentally, genetic incompatibilities. To assess the role of drive during speciation, we combine high-resolution genetic mapping of X-linked hybrid male sterility with population genomics analyses of divergence and recent gene flow between the fruitfly species, Drosophila mauritiana and D. simulans . Our findings reveal a high density of genetic incompatibilities and a corresponding dearth of gene flow on the X chromosome. Surprisingly, we find that a known drive element recently migrated between species and, rather than contributing to interspecific divergence, caused a strong reduction in local sequence divergence, undermining the evolution of hybrid sterility. Gene flow can therefore mediate the effects of selfish genetic elements during speciation.
+During speciation, sex chromosomes often accumulate interspecific genetic incompatibilities faster than the rest of the genome. The drive theory posits that sex chromosomes are susceptible to recurrent bouts of meiotic drive and suppression, causing the evolutionary build-up of divergent cryptic sex-linked drive systems and, incidentally, genetic incompatibilities. To assess the role of drive during speciation, we combine high-resolution genetic mapping of X-linked hybrid male sterility with population genomics analyses of divergence and recent gene flow between the fruitfly species, Drosophila mauritiana and D. simulans. Our findings reveal a high density of genetic incompatibilities and a corresponding dearth of gene flow on the X chromosome. Surprisingly, we find that a known drive element recently migrated between species and, rather than contributing to interspecific divergence, caused a strong reduction in local sequence divergence, undermining the evolution of hybrid sterility. Gene flow can therefore mediate the effects of selfish genetic elements during speciation.
 
 ## Introduction
 
@@ -40,49 +40,407 @@ To begin to assess the role of drive in the evolution of X-linked hybrid male st
 
 ## Results
 
-## Mapping X-linked hybrid male sterility
+### Mapping X-linked hybrid male sterility
 
 Multiple intervals on the X chromosome cause male sterility when introduced from D. mauritiana into D. simulans (True et al., 1996b; Maside et al., 1998). The number and identities of the causal factors, how they disrupt spermatogenesis, and the evolutionary forces that drove their interspecific divergence are unknown. We therefore generated a high-resolution genetic map of X-linked hybrid male sterility between the two species, with the ultimate aim of identifying a panel of sterility factors. We first introgressed eight X-linked D. mauritiana segments that together tile across ~85% of the euchromatic length of the X chromosome into a D. simulans genetic background (Figure 1A,B; Table 1). Each introgressed segment was marked by two co-dominant P element insertions bearing mini-white transgenes (P[w+]; True et al., 1996a) that serve as visible genetic markers. We introgressed these ‘2P’ segments into the D. simulans wXD1 genetic background through >40 generations of repeated backcrossing (Figure 1A). Our ability to generate these introgression genotypes confirms that the distal 85% of the D. mauritiana X euchromatin carries no dominant factors that cause female sterility or lethality in a D. simulans genetic background (True et al., 1996b; Tao et al., 2003). All eight 2P introgression genotypes are, however, completely male-sterile, indicating that each of the introgressed regions contains one or more hybrid male sterility factors. Two pairs of introgression genotypes carry largely overlapping introgressed D. mauritiana segments and were combined for further analyses (2P-5a/b and 2P-6a/b, respectively; Figure 1B, Table 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig1-v1.jpg)
+
+**Figure 1.:** (A) D. mauritiana ‘2P’ lines were constructed by combining pairs of P-element insertions containing the miniwhite transgene (P[w+]; red triangles) distributed across the X chromosome. The P[w+] inserts are semi-dominant visible eye-color markers that permit discrimination of individuals carrying 0, 1 or 2P[w+]. X-linked segments from D. mauritiana were introgressed into a D. simulans genetic background by backcrossing 2P[w+] hybrid females to D. simulans wXD1 males for over 40 generations. Each introgression line was then bottlenecked through a single female to eliminate segregating variation in the recombination breakpoints flanking the 2P[w+] interval. (B) Cytological map of the D. melanogaster X chromosome, indicating the locations of P[w+] and pBac[eYFP] transgene insertions. The extent of regions introgressed from D. mauritiana into D. simulans (e.g. 2P-1) are labeled above the map. Two pairs of introgression genotypes (2P-5a/b and 2P-6a/b) mostly overlap; the regions included in 2P-5b/2P-6b but not 2P-5a/2P-6a are indicated by dashed lines. (C) Meiotic mapping of sterility factors. 2P[w+] females were crossed to D. simulans strains carrying an X-linked pBac[eYFP] transgene (yellow triangles) that was used as an additional visible marker to score recombinant chromosomes. Recombinant X chromosomes with both pBac[eYFP] and a single P[w+] were chosen and assayed for male fertility. Recombinant chromosomes were generated using pBac[eYFP] markers both proximal and distal to each 2P introgression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Colored bars and arrow below indicate individual male and mean fertility for D. simulans wXD1, respectively. The mean fertility of 10 replicate D. mauritiana w12 males with D. simulans wXD1 females is 197.2 offspring.
+
+**Table 1.**
+ Locations and lengths of 2P intervals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>2P interval</th>
+      <th>Left P[w+]*</th>
+      <th>Right P[w+]*</th>
+      <th>Length (Mbp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2P-1</td>
+      <td>993419</td>
+      <td>4498520</td>
+      <td>3.51</td>
+    </tr>
+    <tr>
+      <td>2P-3</td>
+      <td>6192555</td>
+      <td>9126133</td>
+      <td>2.93</td>
+    </tr>
+    <tr>
+      <td>2P-4</td>
+      <td>9126133</td>
+      <td>11189873</td>
+      <td>2.06</td>
+    </tr>
+    <tr>
+      <td>2P-5a</td>
+      <td>11189873</td>
+      <td>13324017</td>
+      <td>2.13</td>
+    </tr>
+    <tr>
+      <td>2P-5b</td>
+      <td>11189873</td>
+      <td>13903934</td>
+      <td>2.71</td>
+    </tr>
+    <tr>
+      <td>2P-6a</td>
+      <td>13903934</td>
+      <td>17492084</td>
+      <td>3.59</td>
+    </tr>
+    <tr>
+      <td>2P-6b</td>
+      <td>13324017</td>
+      <td>17492084</td>
+      <td>4.17</td>
+    </tr>
+    <tr>
+      <td>2P-7</td>
+      <td>17492084</td>
+      <td>18660037</td>
+      <td>1.17</td>
+    </tr>
+  </tbody>
+</table>
+
+_*coordinate position in the assembled D. simulans w501 genome_
+
 To determine the genetic basis of male sterility within each 2P interval, we generated recombinant introgressions using D. simulans strains carrying pBac[eYFP] visible markers (Stern et al., 2017) (Figure 1C). These crosses capture unique recombination events between P[w+] and pBac[eYFP] markers, allowing recombinant D. mauritiana introgressions (hereafter called 1P-YFP) to be propagated indefinitely through females without recombination via selection for the 1P-YFP genotype. From these 1P-YFP females, an unlimited number of replicate males carrying identical 1P-YFP recombinant introgressions can be generated, assayed for male fertility, and archived for genotyping (Figure 1C; see below). We assayed male fertility in at least 10 individual males from each of 617 recombinant 1P-YFP genotypes (Table 2; see Materials and methods), and used the mean number of offspring across replicate males as the measure of fertility for each 1P-YFP genotype. Across 1P-YFP genotypes, the mean number of offspring ranged from 0 to 215 progeny; 238 genotypes (38.6%) were completely male-sterile, producing no offspring, and an additional 62 (10%) produced fewer than five offspring per male (Figure 1—figure supplement 1). Of the remaining 1P-YFP genotypes, 231 (37.4%) had intermediate fertility, and 86 (13.9%) had fertility indistinguishable from pure D. simulans controls (Pt-test >0.01).
+
+**Table 2.**
+ Fertility and sex ratio phenotypes for 1P-YFP recombinant genotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>2P interval</th>
+      <th>N tested</th>
+      <th>N sterile*</th>
+      <th>N sub-fertile</th>
+      <th>N fertile†</th>
+      <th>Mean fertility†</th>
+      <th>% fertile†</th>
+      <th>Mean SR†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2P-1</td>
+      <td>171</td>
+      <td>48</td>
+      <td>20</td>
+      <td>103</td>
+      <td>72.2</td>
+      <td>0.60</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>2P-3</td>
+      <td>97</td>
+      <td>12</td>
+      <td>21</td>
+      <td>64</td>
+      <td>67.4</td>
+      <td>0.66</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>2P-4</td>
+      <td>77</td>
+      <td>17</td>
+      <td>9</td>
+      <td>51</td>
+      <td>71.9</td>
+      <td>0.66</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>2P-5a/b</td>
+      <td>92</td>
+      <td>23</td>
+      <td>16</td>
+      <td>53</td>
+      <td>68.2</td>
+      <td>0.58</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>2P-6a/b</td>
+      <td>97</td>
+      <td>69</td>
+      <td>10</td>
+      <td>18</td>
+      <td>73.8</td>
+      <td>0.19</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>2P-7</td>
+      <td>83</td>
+      <td>69</td>
+      <td>6</td>
+      <td>8</td>
+      <td>136.5</td>
+      <td>0.10</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>all 1P-YFP genotypes</td>
+      <td>617</td>
+      <td>238</td>
+      <td>82</td>
+      <td>297</td>
+      <td>81.7</td>
+      <td>0.48</td>
+      <td>0.45</td>
+    </tr>
+  </tbody>
+</table>
+
+_*genotypes where no male produced any offspring†genotypes where at least two males produced at least five offspring_
 
 We determined high-resolution genotypes of 1P-YFP recombinant introgressions using multiplexed whole-genome sequencing (Andolfatto et al., 2011). After quality filtering, we obtained high-confidence genome-wide genotype information for 439 1P-YFP recombinant introgressions (Figure 2). No genotype showed evidence for any autosomal D. mauritiana alleles, confirming that the introgression scheme isolated X-linked D. mauritiana segments in a pure D. simulans autosomal genetic background (Figure 2—figure supplement 1). Recombinant 1P-YFP introgressions on the X chromosome ranged in size from 0.219 to 6.32 Mbp, with a mean length of 1.97 Mb (Table 3). Figure 2 shows the distribution of D. mauritiana introgression segments and their corresponding sterility phenotypes. Three large regions on the D. mauritiana X chromosome can be introgressed into D. simulans without strong negative effects on male fertility, indicating an absence of major hybrid male sterility factors in these regions (Figure 2). Conversely, we delineated four small regions (<700 kb) that consistently and strongly reduced male fertility: 90% of replicate males with introgressions spanning these regions produce fewer than five offspring. Quantitative trait locus (QTL) analyses confirmed the existence of genetic variation among introgression genotypes that significantly affects male fertility (Figure 3, Figure 3—figure supplement 1). At least five QTL peaks are significant at p<0.01 (permutation test). Most regions containing D. mauritiana alleles reduce the average number of progeny to <15. Two QTL peaks (2.5 cM, and 29.3 cM, Figure 3) appear to show higher fertility associated with the D. mauritiana allele than the D. simulans allele, but this is attributable to D. mauritiana sterility factors located at 12.6 cM and 17.5 cM and the negative linkage disequilibrium that is generated across a 2P interval by our meiotic mapping approach (Figure 1C).
 
-## Sex ratio distortion revealed through experimental introgression
+![Figure 2.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig2-v1.jpg)
+
+**Figure 2.:** Colored horizontal bars indicate the extent of introgressed D. mauritiana alleles for each recombinant 1P-YFP X chromosome. The color of each introgression indicates the mean fertility of 10 replicate males carrying that 1P-YFP X chromosome. The three shaded areas indicate fertile regions within which D. mauritiana introgressions do not cause sterility, whereas the four red arrows indicate small candidate sterility regions. The blue arrowhead indicates the location of the Dox/MDox meiotic drive loci. Lines in the lower panel indicate the average number of offspring and average proportion of sterile males (defined as producing fewer than five offspring) for all 1P-YFP genotypes that carry D. mauritiana alleles at each genotyped SNP.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Red ticks indicate D. simulans alleles (par1), blue ticks indicate D. mauritiana alleles (par2), and the red (blue) shaded regions indicate the location of inferred D. simulans (D. mauritiana) ancestry.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig3-v1.jpg)
+
+**Figure 3.:** Mean offspring counts for each genotype were transformed as log10(N + 1). The top plot shows lod scores for a two-part model that treats completely sterile genotypes as one class, and tests for quantitative effects on fertility among non-sterile genotypes. The solid and dotted gray lines indicate 5% and 1% significance thresholds, respectively, determined from 10,000 permutations. The bottom plot shows the estimated effects of D. simulans and D. mauritiana alleles at QTL placed every 1 cM (bounding lines indicate 95% confidence intervals).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Lod scores are shown for models where offspring counts for each genotype were modeled as a normally distributed variable (normal), log10(N + 1) offspring counts were modeled as a normally distributed variable (normal (log)), or offspring counts were modeled as two classes, completely sterile genotypes as one class, and tests for quantitative effects on fertility among non-sterile genotypes. Horizontal lines indicate 1% significance thresholds determined from 10,000 permutations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Lod scores are shown for analyses where offspring log10(N + 1) offspring counts were treated as a normally distributed variable, without and with introgression length in base-pairs as a covariate. Horizontal lines indicate 1% significance thresholds determined from 10,000 permutations.
+
+**Table 3.**
+ Distribution of 1P-YFP recombinant introgression lengths.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>2P interval</th>
+      <th>Sequenced</th>
+      <th>Min size</th>
+      <th>Mean size</th>
+      <th>Max size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2P-1</td>
+      <td>129</td>
+      <td>295,225</td>
+      <td>2,617,833</td>
+      <td>6,322,871</td>
+    </tr>
+    <tr>
+      <td>2P-3</td>
+      <td>73</td>
+      <td>306,052</td>
+      <td>1,636,944</td>
+      <td>3,818,569</td>
+    </tr>
+    <tr>
+      <td>2P-4</td>
+      <td>55</td>
+      <td>226,018</td>
+      <td>1,482,659</td>
+      <td>2,917,578</td>
+    </tr>
+    <tr>
+      <td>2P-5</td>
+      <td>61</td>
+      <td>365,004</td>
+      <td>1,627,632</td>
+      <td>3,276,930</td>
+    </tr>
+    <tr>
+      <td>2P-6</td>
+      <td>55</td>
+      <td>692,350</td>
+      <td>2,400,499</td>
+      <td>4,764,204</td>
+    </tr>
+    <tr>
+      <td>2P-7</td>
+      <td>66</td>
+      <td>218,722</td>
+      <td>1,412,108</td>
+      <td>2,502,552</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sex ratio distortion revealed through experimental introgression
 
 Among fertile 1P-YFP males, progeny sex ratios were skewed toward a slight excess of sons: the mean proportion of daughters was 0.45, and 86% of fertile 1P-YFP genotypes (260/303) produced fewer than 50% daughters (Figure 4). These skewed sex ratios are at least partially attributable to effects of the sim wXD1 genetic background, as a similar male bias was observed among progeny of control sim wXD1 males (mean proportion females = 0.46, n = 35 sires, t-test vs. null hypothesis of 0.5, p=0.005). We observe a significant positive correlation between fertility and progeny sex-ratio among both sim wXD1 and introgression genotypes (ρ = 0.44, p=0.009; ρ = 0.21, p=0.0002, respectively); males that sire fewer progeny sire a lower proportion of daughters (Figure 4—figure supplement 1). However, there is some evidence that introgressed D. mauritiana alleles modify this modest male bias: across all fertile introgression genotypes, there is a significant negative correlation between the length of the introgressed D. mauritiana segment and the proportion of female progeny produced by that genotype (ρ = −0.31, p<0.0001, Figure 4—figure supplement 2). This effect seems to be independent of the effects of introgressed alleles on fertility as the partial correlation between progeny sex-ratio and introgression length remains unchanged after taking into account the effect of fertility (ρ = −0.31, p<0.0001; Figure 4—figure supplement 2). One interpretation of these results is that the Y chromosome of sim wXD1 causes weak segregation distortion, and the intensity of distortion is modified by X-linked alleles at multiple loci from D. mauritiana.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig4-v1.jpg)
+
+**Figure 4.:** Colored horizontal bars indicate the extent of introgressed D. mauritiana alleles for each fertile recombinant 1P-YFP X chromosome. The color of each introgression indicates the sex-ratio of progeny from replicate males carrying that 1P-YFP X chromosome. The line below indicates the average progeny sex-ratio for all 1P-YFP genotypes that carry D. mauritiana alleles at each genotyped SNP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The top panel shows number of progeny and the percentage of daughters for all recombinant 1P-YFP males that produced any offspring and 40 control D. simulans wXD1 males. The bottom panel shows mean number of progeny and mean progeny sex-ratio for all recombinant 1P-YFP genotypes. In all cases, there is a significant positive correlation between fertility and progeny sex-ratio (1P-YFP males: ρ = 0.12, p<0.0001; wXD1 males: ρ=0.44, p=0.009; 1P-YFP genotypes: ρ = 0.21, p=0.0002).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Partial correlation coefficients among these three variables: length, fertility: ρ = 0.03, p=0.67; fertility, sex-ratio: ρ = 0.16, p=0.02; length, sex-ratio: ρ = −0.31, p<0.0001). Trendline corresponds to linear regression of progeny sex-ratio on introgression length: sex-ratio = 0.487 - length*0.022.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Top panel includes all males that produced any offspring; bottom panel includes only males that sired more than four offspring and genotypes with at least three males that sired more than four offspring. Grey lines indicate results using all genotypes that met the above criterion; black lines indicate results excluding a single outlier genotype. Solid and dotted lines indicate 5% and 1% significance thresholds determined from 10,000 random permutations, respectively.
+
 Although the majority of fertile 1P-YFP genotypes sired male-biased progeny, introgressions that included the distal end of the 2P-5 region sired female-biased progeny (Figure 4). QTL analysis of progeny sex ratio confirms a significant peak in the distal portion of 2P-5 (Figure 4—figure supplement 3). The estimated effect of this QTL on progeny sex ratios is 54.6% daughters for the mauritiana allele versus 42.5% daughters for the simulans allele. These results are consistent with the existence of a cryptic (normally-suppressed) X-linked drive allele in D. mauritiana that is released in a D. simulans genetic background, as the D. mauritiana w12 strain used to generate the 2P introgressions produces slightly male-biased progeny sex-ratios using the same fertility assay (one male paired with three D. simulans wXD1 females, n = 10 sires, mean sex-ratio = 0.47, t-test vs. D. simulans wXD1p=0.4). This region of the X chromosome does not contain any previously mapped meiotic drive loci in D. simulans (Montchamp-Moreau et al., 2006; Tao et al., 2007a; Helleu et al., 2016), suggesting that our experiments have uncovered a novel cryptic drive locus and provide the first evidence of cryptic X-chromosome drive in D. mauritiana.
 
-## Population genomics of speciation history
+### Population genomics of speciation history
 
 The high density of hybrid male sterility factors and the presence of cryptic drive systems on the X chromosome is expected to influence patterns of gene flow between D. mauritiana and D. simulans. We therefore analyzed whole-genome variation within and between 10 D. mauritiana strains from Mauritius (Garrigan et al., 2014) and 20 D. simulans strains, including nine from Madagascar, ten from Kenya, and one from North America (Rogers et al., 2014; Hu et al., 2013). These data allow us to characterize differentiation and identify genomic regions with aberrant genealogical histories consistent with recent interspecific introgression. The analyses reported here complement earlier studies that characterized interspecific divergence (Garrigan et al., 2012), polymorphism within D. mauritiana (Garrigan et al., 2014; Nolte et al., 2013), and polymorphism within D. simulans (Begun et al., 2007; Rogers et al., 2014). Below we present genome-wide population genetic analyses using non-overlapping 10-kb windows (unless otherwise stated; see Materials and methods).
 
-## Polymorphism
+#### Polymorphism
 
 Our genome-wide analyses provide multiple indicators that the island-endemic D. mauritiana has a smaller effective population size than D. simulans (Table 4), consistent with previous multi-locus analyses (Hey and Kliman, 1993; Kliman et al., 2000). Compared to D. simulans, total polymorphism (Nei and Li, 1979) in D. mauritiana is 32% lower on the X chromosome and 19% lower on the autosomes (Figure 5—figure supplement 1). The X/autosome ratio of polymorphism is thus lower in D. mauritiana (0.656) than in D. simulans (0.778) and lower than the 3/4 expected for a random mating population with a 1:1 sex ratio (Garrigan et al., 2014). A substantial fraction of extant polymorphisms in both species arose in their common ancestor, reflecting the large effective population sizes of both species and relatively recent species split time (see Materials and methods). Compared to D. simulans, however, D. mauritiana has retained 74.4% as many ancestral polymorphisms and accumulated just 46.3% as many derived polymorphisms. The site frequency spectra (Tajima, 1989) in D. mauritiana are less skewed toward rare variants than in D. simulans, and average linkage disequilibrium (Kelly, 1997) is twofold higher. Overall, these findings show that, relative to D. simulans, D. mauritiana has lower nucleotide diversity; retained fewer ancestral SNPs; accumulated fewer derived SNPs; a less negatively skewed site frequency spectrum; and greater linkage disequilibrium—all patterns consistent with a historically smaller effective population size in D. mauritiana than in D. simulans.
 
-## Divergence and differentiation
+**Table 4.**
+ Population genomics summary statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Inference</th>
+      <th>Statistic*</th>
+      <th>D. simulans</th>
+      <th>D. mauritiana</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Polymorphism</td>
+      <td>median πX</td>
+      <td>0.0119</td>
+      <td>0.0076</td>
+      <td>&lt; 0.0001‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>median πA</td>
+      <td>0.0152</td>
+      <td>0.0116</td>
+      <td>&lt; 0.0001‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SNPs with inferred ancestry†</td>
+      <td>4,324,740</td>
+      <td>2,181,959</td>
+      <td>&lt;0.0001§</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>% ancestral SNPs</td>
+      <td>14.6</td>
+      <td>21.6</td>
+      <td rowspan="2">&lt;0.0001#</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>% derived SNPs</td>
+      <td>85.3</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <td>Site frequency spectra</td>
+      <td>median Tajima's DX</td>
+      <td>−1.218</td>
+      <td>−0.536</td>
+      <td>&lt; 0.0001c</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>median Tajima's DA</td>
+      <td>−1.127</td>
+      <td>−0.359</td>
+      <td>&lt; 0.0001c</td>
+    </tr>
+    <tr>
+      <td>Linkage disequilibrium</td>
+      <td>median Zns, X</td>
+      <td>0.056</td>
+      <td>0.122</td>
+      <td>&lt; 0.0001c</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>median Zns, A</td>
+      <td>0.058</td>
+      <td>0.129</td>
+      <td>&lt; 0.0001c</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Summary statistics estimated from 10-kb non-overlapping windows.†SNP were inferred as ancestral or derived using parsimony, with D. melanogaster as an outgroup (see Materials and methods).‡P-value for Mann-Whitney U-test.§P-value for χ2-test.#P-value from Fisher's exact test._
+
+#### Divergence and differentiation
 
 Net divergence levels between species are comparable to diversity levels within species. The median number of pairwise differences per site (DXY) between the two species, estimated in non-overlapping 10-kb windows, is 0.010 for the X chromosome and 0.013 for the autosomes. However, as the X chromosome has lower levels of polymorphism within species, the median net divergence (DA) between species is 0.0007 for the X (mean DA = 0.0007) and −0.0005 (mean DA = −0.0006) for the autosomes (a negative value of DA on the autosomes occurs because, on average, levels of within-species polymorphism exceed levels of between-species divergence). DA is significantly greater on the X chromosome than the autosomes (p<0.0001 for both medians and means). Allele frequency differentiation is also higher for the X chromosome (median FST = 0.378) than the autosomes (median FST = 0.279, PMWU <0.0001). These Fst estimates imply that, for X-linked and autosomal loci, the mean times to coalescence for two gene copies sampled from the different species are 2.2- and 1.8-fold deeper than the mean coalescence times for two gene copies within-species, respectively (Slatkin, 1993).
 
-## Recent interspecific gene flow and introgression
+#### Recent interspecific gene flow and introgression
 
-Gene flow between D. mauritiana and D. simulans has been rare during their speciation history, with an apparent recent increase (Garrigan et al., 2012). To identify genomic regions that have introgressed between species in the recent past, we used the Gmin statistic— the ratio of the minimum pairwise sequence distance between species to the average pairwise distance between species (min[DXY]/ D¯XY; Geneva et al., 2015). As populations diverge without gene flow, all loci in the genome gradually approach reciprocal monophyly, leaving just one ancestral lineage from each population available for coalescence in the ancestral population. Consequently, the minimum distance (numerator) equals the mean pairwise distance (denominator), causing Gmin→1 with zero variance. Conversely, Gmin is small when the minimum distance is small relative to the mean pairwise distance. Gmin is therefore sensitive to genealogical configurations resulting from recent gene flow, particularly when introgressed haplotypes segregate at low to intermediate population frequency in at least one of the populations (Geneva et al., 2015). Importantly, Gmin distinguishes genealogies produced by introgression from those produced by incomplete lineage sorting. Between D. mauritiana and D. simulans, we find that median Gmin (±median absolute deviation) estimated for 10-kb windows across the major chromosome arms ranges from 0.761 ± 0.0537 for 3L to 0.785 ± 0.0531 for the X (Figure 5; Kruskal-Wallis test, p<0.0001). As 95% of Gmin values are <0.85, reciprocal monophyly for 10-kb windows is rare.
+Gene flow between D. mauritiana and D. simulans has been rare during their speciation history, with an apparent recent increase (Garrigan et al., 2012). To identify genomic regions that have introgressed between species in the recent past, we used the Gmin statistic— the ratio of the minimum pairwise sequence distance between species to the average pairwise distance between species ($min[D_{XY}]/ D¯_{XY}$; Geneva et al., 2015). As populations diverge without gene flow, all loci in the genome gradually approach reciprocal monophyly, leaving just one ancestral lineage from each population available for coalescence in the ancestral population. Consequently, the minimum distance (numerator) equals the mean pairwise distance (denominator), causing Gmin→1 with zero variance. Conversely, Gmin is small when the minimum distance is small relative to the mean pairwise distance. Gmin is therefore sensitive to genealogical configurations resulting from recent gene flow, particularly when introgressed haplotypes segregate at low to intermediate population frequency in at least one of the populations (Geneva et al., 2015). Importantly, Gmin distinguishes genealogies produced by introgression from those produced by incomplete lineage sorting. Between D. mauritiana and D. simulans, we find that median Gmin (±median absolute deviation) estimated for 10-kb windows across the major chromosome arms ranges from 0.761 ± 0.0537 for 3L to 0.785 ± 0.0531 for the X (Figure 5; Kruskal-Wallis test, p<0.0001). As 95% of Gmin values are <0.85, reciprocal monophyly for 10-kb windows is rare.
 
-To identify 10-kb outlier windows that have genealogical histories inconsistent with strict allopatric divergence, we used a Monte Carlo simulation procedure that assumes a constant species divergence time across all 10-kb intervals, separately for the X and the autosomes (see Materials and methods). In total, 196 of the 10,443 10-kb windows (1.9%) have a more recent common ancestry between D. mauritiana and D. simulans than expected under a strict allopatric divergence model, as indicated by significantly low values of Gmin (P ≤ 0.001, corresponding to a genome-wide false discovery rate of 5%). As Gmin is a ratio, significantly small Gmin values could result from unusually small numerators (minimum DXY) or unusually large denominators (D¯XY). We find that 10-kb windows with significant Gmin values have smaller median minimum DXY (0.0056 in introgression windows versus 0.0094 genome-wide, PMWU <0.0001) as well as smaller median D¯XY (0.0110 in introgression windows versus 0.0124 genome-wide PMWU <0.0001), indicating that the significant Gmin values are due to unusually small minimum DXY values. The smaller D¯XY of windows with significant Gmin reflects the contribution of the introgressed, low-distance haplotypes to the overall average pairwise distance between species.
+![Figure 5.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig5-v1.jpg)
+
+**Figure 5.:** Grey (black) dots indicate Gmin values calculated using 5-kb (10-kb) windows; light blue (dark blue) dots indicate 5-kb (10-kb) windows with significant Gmin values. As with 10-kb windows, 5-kb windows with significant Gmin values are 4-fold underrepresented on the X chromosome: 14 of 3603 5-kb windows on the X chromosome (0.39%) have significant Gmin values versus 266 of 17,065 5-kb windows on the autosomes (1.56%; Fisher’s exact test p<0.0001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The rows of panels show: nucleotide diversity for a sample of 10 inbred strains of D. mauritiana (πmau, green dots) and 20 inbred strains of D. simulans (πsim, purple dots); nucleotide divergence scaled by within-species polymorphism (blue dots); and Gmin (red dots), the ratio of the minimum number of nucleotide differences per site between D. mauritiana and D. simulans to the average number of differences per site, a summary statistic that is sensitive to introgression. Panels correspond to each major chromosome arm, with genome coordinates on the x-axis.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Within both D. simulans and D. mauritiana there is a significant negative correlation between polymorphism (π) and Gmin P-value (Spearman's ρ = 0.22 and 0.38, respectively, p<0.0001), indicating that windows with higher polymorphism are more likely to have low Gmin values, although this correlation is driven by the large majority of non-significant windows. However, 10-kb windows with significant Gmin values have lower levels of polymorphism in D. simulans than non-significant windows, while significant windows have higher levels of polymorphism in D. mauritiana than non-significant windows (Wilcoxon rank test p<0.0001 within both species). One interpretation of this pattern is that windows with significant Gmin values have levels of polymorphism similar to that in the other species, which is consistent with these windows carrying lineages derived from the other species.
+
+To identify 10-kb outlier windows that have genealogical histories inconsistent with strict allopatric divergence, we used a Monte Carlo simulation procedure that assumes a constant species divergence time across all 10-kb intervals, separately for the X and the autosomes (see Materials and methods). In total, 196 of the 10,443 10-kb windows (1.9%) have a more recent common ancestry between D. mauritiana and D. simulans than expected under a strict allopatric divergence model, as indicated by significantly low values of Gmin (P ≤ 0.001, corresponding to a genome-wide false discovery rate of 5%). As Gmin is a ratio, significantly small Gmin values could result from unusually small numerators (minimum $D_{XY}$) or unusually large denominators ($D¯_{XY}$). We find that 10-kb windows with significant Gmin values have smaller median minimum $D_{XY}$ (0.0056 in introgression windows versus 0.0094 genome-wide, PMWU <0.0001) as well as smaller median $D¯_{XY}$ (0.0110 in introgression windows versus 0.0124 genome-wide PMWU <0.0001), indicating that the significant Gmin values are due to unusually small minimum $D_{XY}$ values. The smaller $D¯_{XY}$ of windows with significant Gmin reflects the contribution of the introgressed, low-distance haplotypes to the overall average pairwise distance between species.
 
 Introgression windows are 4.4-fold underrepresented on the X chromosome: only nine of 1842 10-kb windows on the X chromosome (0.49%) have significant Gmin values versus 187 of 8601 10-kb windows on the autosomes (2.17%; Fisher’s exact test p<0.0001). However, not all 10-kb introgression windows are independent: 169 of the 196 significant 10-kb windows (86.2%) can be arrayed into contiguous (or nearly contiguous) genomic regions (see Materials and methods). As a result, we infer 27 small (10-kb) introgressions and 21 larger introgressions ranging in size from 20 kb to 280 kb (Supplementary file 1). Of these 48 total introgressions, only one is on the X chromosome and 47 are on autosomes (χ2-test, p=0.0124). The lengths of these introgressed haplotypes depend on their time spent in the receiving population and on the local recombination rate. First, recombination has eroded introgression sizes over time, with longer, presumably younger, introgressions having smaller average Gmin values (Spearman ρ = −0.6293, p<0.0001) and smaller minimum Dxy values (ρ = −0.3677, p=0.0101). Second, local recombination rate has been an important factor in determining introgression lengths, with relatively long introgressions tending to reside in chromosomal environments with low rates of crossing over (ρ = −0.366, p=0.0105).
 
 To complement our distance-based Gmin analyses, we also used a genealogy-based four-population (ABBA-BABA) test, summarized by Patterson’s D-statistic (Green et al., 2010; Durand et al., 2011), to evaluate the distribution of shared derived variants between D. mauritiana and D. simulans. Assuming a (((D. sechellia, D. simulans), D. mauritiana), D. melanogaster) tree topology, the null expectation is that a history involving zero gene flow should result in approximately equal numbers of ABBA and BABA nucleotide site configurations via lineage sorting, where A and B correspond to ancestral and derived states, respectively (Green et al., 2010; Durand et al., 2011). Instead, we find that D = 0.0812 (s.e. = 0.0033; block jackknife with 1 Mb blocks) across the genome, indicating a significant excess of shared derived sites between D. simulans and D. mauritiana compared to D. sechellia and D. mauritiana. These findings provide complementary support for a history of interspecific gene flow between D. mauritiana and D. simulans.
 
-## Interspecific introgression of the cryptic Winters sex-ratio drive system
+#### Interspecific introgression of the cryptic Winters sex-ratio drive system
 
-The single introgression detected on the X chromosome corresponds to a ~130-kb region that comprises eight protein-coding genes plus the Winters sex-ratio meiotic drive genes, Distorter on the X (Dox) and, its progenitor gene, Mother of Dox (MDox) (Tao et al., 2007a) (Figure 6). The median Gmin value across this 130-kb region is 0.333, a ~2.4-fold reduction relative to background Gmin on the X chromosome (PMWU <0.0001). The most extreme 10-kb window within the 130-kb region has a minimum DXY value (=0.00087) that is 92% smaller than the X chromosome-wide D¯XY, implying that introgression occurred in the recent past. The 130-kb region is also an outlier with respect to Patterson’s D statistic: we observe 90.2 (72%) ABBA sites versus just 35.2 (28%) BABA sites in the region (D = 0.4382), whereas a significantly different configuration of ABBA and BABA sites occurs on the X chromosome outside the 130-kb region (9774.6 [55%] and 7911.1 [45%], respectively; D = 0.1054; χ2-test, p=0.00027). The elevated value of D within the 130-kb region indicates a significant excess of derived nucleotide variants shared between D. simulans and D. mauritiana compared to genomic background levels. Given the evidence from both distance- and genealogy-based analyses, we conclude that this 130-kb haplotype has a history of recent gene flow between species. In D. simulans, when unsuppressed, MDox and Dox cause biased transmission of the X chromosome during spermatogenesis, with male carriers siring more than 80% daughters (Tao et al., 2007a). These drivers are suppressed by an autosomal gene, Not much yin (Nmy), a retrotransposed copy of Dox that is a source of endogenous siRNAs that silence both MDox and Dox (Tao et al., 2007b). In non-African D. simulans populations, Dox, MDox, and Nmy are nearly fixed, although haplotypes lacking functional copies of the genes segregate at low frequencies (Kingan et al., 2010). All three loci have histories consistent with selective sweeps in multiple populations of D. simulans due to the presumed transmission advantage at MDox and Dox and the associated selective advantages of suppressing drive and restoring equal sex ratios at Nmy (Kingan et al., 2010). We estimated the probability that a random X-linked 130-kb introgression might include Dox and MDox by chance by permuting the location of a 130-kb segment on the X chromosome. Out of 100,000 such random permutations, 356 included Dox and MDox (p=0.004). We hypothesize that the signature of recent introgression at these sex-ratio distorters is not coincidental, but rather that introgression was mediated by their biased transmission through males.
+The single introgression detected on the X chromosome corresponds to a ~130-kb region that comprises eight protein-coding genes plus the Winters sex-ratio meiotic drive genes, Distorter on the X (Dox) and, its progenitor gene, Mother of Dox (MDox) (Tao et al., 2007a) (Figure 6). The median Gmin value across this 130-kb region is 0.333, a ~2.4-fold reduction relative to background Gmin on the X chromosome (PMWU <0.0001). The most extreme 10-kb window within the 130-kb region has a minimum DXY value (=0.00087) that is 92% smaller than the X chromosome-wide $D¯_{XY}$, implying that introgression occurred in the recent past. The 130-kb region is also an outlier with respect to Patterson’s D statistic: we observe 90.2 (72%) ABBA sites versus just 35.2 (28%) BABA sites in the region (D = 0.4382), whereas a significantly different configuration of ABBA and BABA sites occurs on the X chromosome outside the 130-kb region (9774.6 [55%] and 7911.1 [45%], respectively; D = 0.1054; χ2-test, p=0.00027). The elevated value of D within the 130-kb region indicates a significant excess of derived nucleotide variants shared between D. simulans and D. mauritiana compared to genomic background levels. Given the evidence from both distance- and genealogy-based analyses, we conclude that this 130-kb haplotype has a history of recent gene flow between species. In D. simulans, when unsuppressed, MDox and Dox cause biased transmission of the X chromosome during spermatogenesis, with male carriers siring more than 80% daughters (Tao et al., 2007a). These drivers are suppressed by an autosomal gene, Not much yin (Nmy), a retrotransposed copy of Dox that is a source of endogenous siRNAs that silence both MDox and Dox (Tao et al., 2007b). In non-African D. simulans populations, Dox, MDox, and Nmy are nearly fixed, although haplotypes lacking functional copies of the genes segregate at low frequencies (Kingan et al., 2010). All three loci have histories consistent with selective sweeps in multiple populations of D. simulans due to the presumed transmission advantage at MDox and Dox and the associated selective advantages of suppressing drive and restoring equal sex ratios at Nmy (Kingan et al., 2010). We estimated the probability that a random X-linked 130-kb introgression might include Dox and MDox by chance by permuting the location of a 130-kb segment on the X chromosome. Out of 100,000 such random permutations, 356 included Dox and MDox (p=0.004). We hypothesize that the signature of recent introgression at these sex-ratio distorters is not coincidental, but rather that introgression was mediated by their biased transmission through males.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35468/elife-35468-fig6-v1.jpg)
 
-**Figure 6.:** MDox-Dox region of the X chromosome.(A) Gmin values for 10-kb windows in the region containing MDox and Dox. Blue lines indicate windows with significantly low Gmin values. Inset box indicates the 90-kb region shown in panel B. (B) DNA polymorphism tables: the top table corresponds to the MDox region, and the bottom corresponds to the Dox region. Within the tables, yellow squares denote the derived nucleotide state, and blue squares indicate the ancestral state. The top 20 rows of each table correspond to the D. simulans samples, and the bottom 10 rows correspond to the D. mauritiana samples. The genome map between the polymorphism tables shows gene models for the region (orange boxes) and the locations of the MDox and Dox genes (green triangles). Regions highlighted in red are 10-kb windows with significantly low Gmin values. (C) Maximum likelihood phylogenetic trees for the MDox and Dox regions. Green circles and red triangles denote D. mauritiana and D. simulans samples, respectively.10.7554/eLife.35468.028Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Gmin values for 10-kb windows in the region containing MDox and Dox. Blue lines indicate windows with significantly low Gmin values. Inset box indicates the 90-kb region shown in panel B. (B) DNA polymorphism tables: the top table corresponds to the MDox region, and the bottom corresponds to the Dox region. Within the tables, yellow squares denote the derived nucleotide state, and blue squares indicate the ancestral state. The top 20 rows of each table correspond to the D. simulans samples, and the bottom 10 rows correspond to the D. mauritiana samples. The genome map between the polymorphism tables shows gene models for the region (orange boxes) and the locations of the MDox and Dox genes (green triangles). Regions highlighted in red are 10-kb windows with significantly low Gmin values. (C) Maximum likelihood phylogenetic trees for the MDox and Dox regions. Green circles and red triangles denote D. mauritiana and D. simulans samples, respectively.
 
 Maximum-likelihood phylogenetic trees for the 130-kb MDox-Dox region show reduced diversity within D. mauritiana and reduced divergence between the two species (Figure 6). Among the 10 D. mauritiana sequences, nucleotide diversity is just 24% (π = 0.0018) of background diversity levels on the X chromosome, corresponding to a massive selective sweep in the D. mauritiana genome (PMWU <0.0001; see also (Nolte et al., 2013; Garrigan et al., 2014)). The distribution of variability among haplotypes in the D. simulans samples is consistent with a parallel, albeit incomplete, selective sweep (Figure 6).
 
@@ -94,19 +452,19 @@ Notably, the large MDox-Dox introgression, and its associated sweep co-localize 
 
 Our combined genetic and population genomics analysis of hybrid male sterility and gene flow between D. mauritiana and D. simulans yields three findings. First, we confirm the rapid accumulation of X-linked hybrid male sterility between these species and map four major sterility factors to small (<700 kb) intervals (Figure 2). Second, we find that very recent natural introgression has occurred between these species, albeit almost exclusively on the autosomes, consistent with a large X-effect on gene flow (Supplementary file 1). Third, we discover new roles for meiotic drive during the history of speciation between these species. Some drive seems to be associated with functional divergence between species: one region of the D. mauritiana X chromosome appears to cause segregation distortion in a D. simulans genetic background. In contrast, the well-characterized X-linked Winters sex ratio distorters, MDox and Dox, have clearly migrated between species, reducing local interspecific divergence. Together, these findings, respectively, suggest that genetic conflict may both promote as well as undermine the special role of sex chromosomes in speciation.
 
-## Genetic basis of X-linked hybrid male sterility
+### Genetic basis of X-linked hybrid male sterility
 
 Our genetic analyses were initiated by introgression of six different regions of the D. mauritiana X chromosome into a pure D. simulans genetic background. All six regions cause complete hybrid male sterility and therefore carry at least one, or a combination of, D. mauritiana allele(s) that disrupt spermatogenesis due to incompatibilities with X-linked, Y-linked, or autosomal D. simulans alleles. Only three large (>2 Mb) regions of the D. mauritiana X are readily exchangeable between species, permitting male fertility in a D. simulans genome. Thus, after only ~250,000 years, sufficient X-linked hybrid male sterility has accumulated to render most of the D. mauritiana X chromosome male-sterile on a D. simulans genetic background (True et al., 1996b). Most of the D. mauritiana X chromosome is male-sterile in a D. sechellia genome as well (Masly and Presgraves, 2007). The combination of such extensive reproductive isolation with such modest genetic divergence makes this species group an ideal system to study the genetic basis of speciation.
 
 We were able to define four small regions (<700 kb), each sufficient to cause complete male sterility (Figure 2), suggesting that these may contain single, strong sterility factors. We also find a large region spanning most of 2P-6 from which we were unable to recover fertile 1P-YFP recombinants. We infer that 2P-6 contains a minimum of two strong sterility regions, one tightly linked to each of the flanking P-elements (Figure 3). While our 2P mapping scheme is designed to facilitate the identification of male sterility factors, the 2P-6 interval highlights one of its limitations: in regions like 2P-6, for which strong sterility factors are very close to both flanking P-elements, we cannot determine how many additional sterility factors might localize to the middle of the interval. The present experiments therefore provide only a minimum estimate of the total number of hybrid male sterility factors on the X chromosome. We tentatively conclude that, within the fraction of the D. mauritiana X chromosome investigated, there are at least six genetically separable regions, each individually sufficient to cause virtually complete male sterility. It is worth noting that these experimental approaches detect relatively large-effect sterility factors under a single set of laboratory conditions. There are likely many hybrid male sterility factors of smaller effect, generally neglected in the lab but easily detected by selection in natural populations and thus able to affect the probability of migration at linked loci.
 
-## Genomic signatures of complex speciation with gene flow
+### Genomic signatures of complex speciation with gene flow
 
 The two species studied here are allopatric: D. simulans has never been reported on Mauritius, and D. mauritiana has never been found anywhere other than Mauritius (David et al., 1989; Legrand et al., 2011). D. mauritiana appears to have originated from a D. simulans-like ancestor, probably from Madagascar, that migrated and established a population on Mauritius (Hey and Kliman, 1993; Kliman et al., 2000). Our characterization of genome-wide variation within and between D. mauritiana and D. simulans confirms a coalescent history that reaches considerably deeper into the past than the inferred species split time of ~250,000 years (Hey and Kliman, 1993; Kliman et al., 2000). Nested within this largely shared coalescent history, many functional differences have evolved between the two species, including extreme ones that mediate large-effect hybrid incompatibilities. The signatures of gene flow found in the genomes of these species imply recurrent bouts of migration and interbreeding. To introgress between species, immigrating foreign haplotypes must escape their locally disfavored chromosomal backgrounds by recombination before being eliminated by selection against linked incompatibilities and locally maladaptive alleles (Petry, 1983; Bengtsson, 1985; Barton and Bengtsson, 1986). Conditional on escape, the lengths of foreign haplotypes will be subject to gradual erosion by recombination with the resident genetic background.
 
 Here, and in previous work (Garrigan et al., 2012), we detect evidence consistent with weak migration: 2–5% of the genome shows evidence of introgression between D. simulans and D. mauritiana during their recent history. Our population genomic analysis identified 48 segregating foreign haplotypes. We find evidence that the genomic locations and lengths of introgressed foreign haplotypes have been shaped by selection and by recombination in the receiving population. First, selection has likely affected the genomic distribution of foreign haplotypes: only one of the 48 introgressions occurs on the X chromosome. The opportunity for foreign haplotypes on the X chromosome to escape linked incompatibilities via recombination is more constrained than on the autosomes, as the X has a higher density of incompatible alleles, and hemizygous selection eliminates foreign X-linked haplotypes more quickly (Muirhead and Presgraves, 2016). Second, we find that the lengths of introgressed haplotypes depend on local recombination rates: introgressions tend to be longer in chromosomal regions with relatively lower recombination rates. Third, after escaping locally deleterious chromosomal backgrounds, recombination eroded the lengths of foreign haplotypes over time: recently introgressed, and hence less diverged, haplotypes tend to be longer. It is worth noting here that the 10-kb windows used for our Gmin scan for foreign haplotypes almost certainly fails to identify very small and/or old introgressions. However, similar results are obtained from Gmin scans using 10-kb and 5 kb windows (Figure 5).
 
-## Meiotic drive and complex speciation
+### Meiotic drive and complex speciation
 
 The original drive theory posits that hybrid incompatibilities accumulate as incidental by-products of recurrent bouts of meiotic drive and suppression (Hurst and Pomiankowski, 1991; Frank, 1991). Our mapping experiments provide no direct evidence in support of this theory in D. mauritiana and D. simulans, as no hybrid male sterility loci co-localized with sex-ratio loci. Direct genetic evidence that sex-ratio distortion is responsible for the evolution of hybrid male sterility is however inherently difficult to obtain, as sterile males produce no offspring, preventing detection of biased sex-ratios. Indeed, the dual role of Ovd in hybrid male sterility and sex-ratio distortion in D. pseudoobscura was only detectable because males recover low levels of fertility as they age (Orr and Irving, 2005). Although weakly fertile males (producing fewer than five offspring) were removed from the sex-ratio analyses presented here, these males show no evidence for systematically biased sex ratios (Figure 4—figure supplement 1).
 
@@ -120,7 +478,430 @@ The discovery that the MDox and Dox drivers have moved between species highlight
 
 ## Materials and methods
 
-## Drosophila husbandry and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>mau w[12]</td>
+      <td>Drosophila species stock center; NCBI SRA</td>
+      <td>14021–0241.60; SRX684364; SRX135546</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans</td>
+      <td>sim w[XD1]</td>
+      <td>this paper</td>
+      <td>SRR8247551</td>
+      <td>obtained from J. Coyne</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=Neneh2}, P{w[+]=4R1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=Ophelia1}, P{w[+]=4J1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-4</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=4J1}, P{w[+]=2A1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-5a</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=2A1}, P{w[+]=ILEA1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-5b</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=2A1}, P{w[+]=2G3}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-6a</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=2G3}, P{w[+]=A1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-6b</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=ILEA1}, P{w[+]=A1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila mauritiana)</td>
+      <td>2P-7</td>
+      <td>this paper</td>
+      <td></td>
+      <td>w[12], P{w[+]=A1}, P{w[+]=3L1}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[175.2]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[356.5]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[377.31]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[52.4]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[277.1]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[926.3]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[16.3]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[360.1]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[433.1]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[19.1]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[21.4]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>YFP[458.6]</td>
+      <td>PMID:28280212</td>
+      <td></td>
+      <td>pBac{3XP3::EYFP-attP}</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dox_F_1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CGAAATGAGACGCTTCTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dox_R_1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AACCGATACCGTCGTAGTTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDox_F_1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>CCCATTTTGTCCAAGGTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDox_R_2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGTTCCGGTCAAAGTGGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpS28b_F_1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>TGGACAAACCAGTTGTGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpS28b_R_1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>AGGAACTCGACCTTCACCTG</td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>sim w[501]</td>
+      <td>PMID:22936249</td>
+      <td>14021–0251.011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md06</td>
+      <td>NCBI SRA</td>
+      <td>SRX497551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md15</td>
+      <td>NCBI SRA</td>
+      <td>SRX497574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md63</td>
+      <td>NCBI SRA</td>
+      <td>SRX497553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md73</td>
+      <td>NCBI SRA</td>
+      <td>SRX497563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md105</td>
+      <td>NCBI SRA</td>
+      <td>SRX497558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md199</td>
+      <td>NCBI SRA</td>
+      <td>SRX497559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md221</td>
+      <td>NCBI SRA</td>
+      <td>SRX495510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md233</td>
+      <td>NCBI SRA</td>
+      <td>SRX495507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>md251</td>
+      <td>NCBI SRA</td>
+      <td>SRX497557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns05</td>
+      <td>NCBI SRA</td>
+      <td>SRX497560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns33</td>
+      <td>NCBI SRA</td>
+      <td>SRX497575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns39</td>
+      <td>NCBI SRA</td>
+      <td>SRX497562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns40</td>
+      <td>NCBI SRA</td>
+      <td>SRX497556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns50</td>
+      <td>NCBI SRA</td>
+      <td>SRX497571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns67</td>
+      <td>NCBI SRA</td>
+      <td>SRX497565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns78</td>
+      <td>NCBI SRA</td>
+      <td>SRX497573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns79</td>
+      <td>NCBI SRA</td>
+      <td>SRX497576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns113</td>
+      <td>NCBI SRA</td>
+      <td>SRX497572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila simulans)</td>
+      <td>ns137</td>
+      <td>NCBI SRA</td>
+      <td>SRX497561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r12</td>
+      <td>NCBI SRA</td>
+      <td>SRX135546</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r23</td>
+      <td>NCBI SRA</td>
+      <td>SRX688576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain (Drosophila mauritiana)</td>
+      <td>r31</td>
+      <td>NCBI SRA</td>
+      <td>SRX688581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r32</td>
+      <td>NCBI SRA</td>
+      <td>SRX688583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r39</td>
+      <td>NCBI SRA</td>
+      <td>SRX688588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r41</td>
+      <td>NCBI SRA</td>
+      <td>SRX688609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r44</td>
+      <td>NCBI SRA</td>
+      <td>SRX688610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r56</td>
+      <td>NCBI SRA</td>
+      <td>SRX688612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r61</td>
+      <td>NCBI SRA</td>
+      <td>SRX688710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Drosophila mauritiana)</td>
+      <td>r8</td>
+      <td>NCBI SRA</td>
+      <td>SRX688712</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila husbandry and genetics
 
 All Drosophila crosses and phenotyping were done in parallel in two locations, using standard cornmeal media (Rochester, NY) or minimal cornmeal media (Bloomington, IN) at room temperature (23–25C). We constructed D. mauritiana ‘2P’ lines that carry pairs of X-linked P-element insertions that contain the mini-white transgene (P[w+]) (True et al., 1996a) which serve as semi-dominant visible genetic eye-color markers and allow us to distinguish individuals carrying 0, 1 or 2P[w+]. These ‘2P’ regions were then introgressed into the D. simulans wXD1 genetic background through more than 40 generations of repeated backcrossing while following the two P[w+] insertions (Figure 1A). Each 2P introgression line was then bottlenecked through a single female to eliminate segregating variation in the recombination breakpoints flanking the 2P[w+] interval.
 
@@ -128,32 +909,32 @@ We performed meiotic mapping to ascertain the genetic basis of male sterility wi
 
 Progeny sex ratios were calculated as the number of female offspring/total number of offspring (% female). Males that sired fewer than five offspring were excluded from sex ratio analyses, as were genotypes with fewer than three males that sired more than four offspring. This resulted in 2538 males and 303 recombinant 1P-YFP chromosomes that were used to estimate progeny sex ratios; 210 recombinant 1P-YFP genotypes had both progeny sex ratio and sequence data.
 
-## Genotyping recombinant chromosomes by sequencing
+### Genotyping recombinant chromosomes by sequencing
 
 We determined the fine-scale genetic architecture of hybrid male sterility within each introgressed region by genotyping recombinant 1P-YFP X chromosomes using multiplexed whole-genome sequencing. DNA extraction and library construction followed published methods for high-throughput sequence analysis of a large number of recombinant genotypes (Andolfatto et al., 2011; Peluffo et al., 2015). Sequence reads were mapped to the reference genome sequence of the D. mauritiana stock used for mapping (mau w12) (Garrigan et al., 2012), the genome sequence of sim wXD1, and the D. simulans pBac[eYFP] strains (Stern et al., 2017). Ancestry from each parent species was determined by a Hidden Markov Model (HMM) (Pinero et al., 2017; Andolfatto et al., 2011).
 
 Genotype data and ancestry assignments were inspected for all recombinant 1P-YFP introgression genotypes. Genotypes were excluded if there was no segment on the X chromosome identified by the HMM that had either a posterior probability of D. mauritiana parentage >0.95 or a posterior probability of D. simulans parentage <0.05. Genotypes with segments that had either a posterior probability of D. mauritiana parentage >0.95 or a posterior probability of D. simulans parentage <0.05 in a region that was not within the parental 2P region (i.e. came from a different 2P introgression) were inferred to have resulted either from mislabeling or contamination of DNA samples and were excluded from further analyses. 112 genotypes had insufficient sequence data to identify introgressions using the criteria above (or the introgression was too small to be identified). 16 genotypes showed evidence for D. mauritiana alleles that did not fall within the parental 2P interval. Across the 439 genotypes with sufficiently high-quality sequence data for ancestry assignment, we recovered 64,373 X-linked markers. A subset of 2835 non-redundant markers were retained that delimit the extent of each 1P-YFP D. mauritiana segment. No genotype showed evidence for any autosomal D. mauritiana alleles (see Figure 2—figure supplement 1 for exemplars), confirming that our introgression scheme isolated X-linked D. mauritiana segments in a pure D. simulans autosomal genome.
 
-## Quantitative trait locus analysis
+### Quantitative trait locus analysis
 
 QTL analyses were done in the R/qtl package version 1.36–6. Phenotype means (fertility and progeny sex-ratio) for each introgression genotype and the 2835 non-redundant markers were used as the input data. Mean male fertility was transformed as log10 (N + 1). Because of the large proportion of completely sterile introgression genotypes (Figure 1—figure supplement 1), a two-part model (Broman et al., 2003) was used to analyze fertility; sex-ratio was analyzed assuming a normal distribution. Significance thresholds were determined using 10,000 permutations of the data.
 
-## Samples and short read alignment
+### Samples and short read alignment
 
 We used genome sequence data from 10 lines of D. mauritiana, including nine inbred wild isolates and the genome reference strain, mau w12; 20 lines of D. simulans, including 10 inbred wild isolates from Kenya, nine wild isolates from Madagascar, and the reference strain, sim w501; and the reference strain of D. melanogaster. The D. mauritiana and D. simulans sequence data were reported previously (Garrigan et al., 2012; Garrigan et al., 2014; Rogers et al., 2014). SRA accessions for genome sequences are included in the key resources file. The D. simulans w501 and D. melanogaster genome assemblies are available on Flybase (www.flybase.org). We performed short read alignment against the D. mauritiana genome assembly (version 2) using the ‘aln/sampe’ functions of the BWA short read aligner and default settings (Li and Durbin, 2009). Reads flanking indels were realigned using the SAMTOOLS software (Li et al., 2009). Individual BAM files were merged and sorted with SAMTOOLS.
 
-## Polymorphism and divergence analyses
+### Polymorphism and divergence analyses
 
 Both within- and between-population summary statistics were estimated in 10-kb windows using the software package POPBAM (Garrigan, 2013). The within population summary statistics include: unbiased nucleotide diversity π (Nei, 1987); the summary of the folded site frequency spectrum Tajima’s D (Tajima, 1989); and the unweighted average pairwise value of the r2 measure of linkage disequilibrium, ZnS, excluding singletons (Kelly, 1997). The between population summary statistics include: two measures of nucleotide divergence between populations, DXY, and net divergence, DA (Nei, 1987); the ratio of the minimum between-population nucleotide distance to the average, Gmin (Geneva et al., 2015); and the fixation index, FST (Wright, 1951). From a total of 11,083 scanned 10-kb windows, we only analyzed windows for which at least 50% of aligned sites passed the default quality filters (minimum read coverage 3, minimum rms mapping quality 25, minimum SNP quality 25, minimum map quality 13, minimum base quality 13) in POPBAM, which resulted in a final alignment for 10,443 scanned 10-kb windows. POPBAM output was formatted for use in the R statistical computing environment using the package, POPBAMTools (Geneva, 2014). All statistics and data visualization were done in R (R Development Core Team, 2013).
 
-## Identification of introgressed regions
+### Identification of introgressed regions
 
 We used the Gmin statistic (Geneva et al., 2015) to scan the genome for haplotypes that have recent common ancestry between D. simulans and D. mauritiana. Gmin is defined as the ratio of the minimum number of nucleotide differences per aligned site between sequences from different populations to the average number of nucleotide differences per aligned site between populations. The Gmin statistic was calculated in 10-kb intervals across each major chromosome arm using the same quality filtering criteria used for all other summary statistics. From these values, we estimated the probability of the observed Gmin under a model of allopatric divergence, conditioned on the divergence time. For each 10-kb genomic interval, the significance of the observed Gmin value was tested via Monte Carlo coalescent simulation of that 10-kb window with two populations diverging in allopatry with all mutations assumed to be neutral. Simulations were performed using msmove (Geneva, 2017), which is based on the coalescent simulation software ms (Hudson, 2002), modified to track and report the presence of introgressed genealogies. The arguments of msmove are identical to those of ms and for all simulations we used the following command (msmove 30 10000 t θ -r ρ 10001 -I 2 10 20 -ej 0.61 1 2). We assumed a population divergence time of 1.21 × 2Nsim generations before the present, in which Nsim is the current estimated effective population size of D. simulans (Garrigan et al., 2012). In the simulations, the observed local value of DXY was used to determine the neutral population mutation rate (θ) for that 10-kb interval. To account for uncertainty in local population recombination rate, for each simulated replicate, a rate was drawn from a normally distributed prior (truncated at zero) with the mean estimated from genetically determined crossover frequencies (True et al., 1996a) for that window, and variance equal to the variance of crossover estimates for the entire chromosome arm. The empirical crossover rate estimates were converted from cM to ρ (the population crossover rate, 4Nsimc) by assuming Nsim≈106. The effective population sizes of both species were assumed to be equal and constant. For each 10-kb interval, 105 simulated replicates were generated and the probability of the observed Gmin value was estimated from the simulated cumulative density. To identify putatively introgressed haplotypes, we used a significance threshold of p≤0.001 from the simulations, which yields a proportion of null tests of 0.982 and a false discovery rate of 5%. To infer the full length of any putative introgressions >10-kb, we identified runs of contiguous (or semi-contiguous) 10-kb windows with significant Gmin values (p≤0.001). We also assessed the distribution of shared derived variants using the four-population test, summarized by Patterson’s D statistic (Green et al., 2010). Variants were generated using POPBAM default parameters and used to calculate Patterson’s D across chromosome arms using customized perl scripts. For D statistic calculations, we assumed the tree structure (((D. sechellia, D. simulans), D. mauritiana), D. melanogaster) for (((P1,P2),P3),O), and used the population frequencies of SNPs to compute probabilistic contributions of individual sites to counts of ‘ABBA’ and ‘BABA’ site types (Green et al., 2010; Durand et al., 2011). Finally, we estimated maximum likelihood phylogenies for each of the putative introgression intervals using RAxML v. 8.1.1 (Stamatakis, 2014).
 
-## Genotyping the Winters sex ratio genes
+### Genotyping the Winters sex ratio genes
 
 We extracted genomic DNA from single male flies using the Qiagen DNeasy Blood and Tissue Kit. The meiotic drive genes of the Winters sex ratio system (Tao et al., 2007a), Dox and MDox, were PCR-amplified as previously described (Kingan et al., 2010). To assay the presence or absence of the Dox and MDox gene insertions, the amplicons for the Dox and MDox regions were digested with the StyI and StuI restriction enzymes (NEB), respectively. The digests were run on a 1% agarose gel stained with EtBr and the band size was estimated using the GeneRuler 1 kb plus ladder (Thermo Scientific). For both genes, only haplotypes containing the gene insertions have restriction sites as confirmed by samples with known genotypes (Kingan et al., 2010).
 
-## Quantitative PCR for Dox/MDox expression in fly testes
+### Quantitative PCR for Dox/MDox expression in fly testes
 
 We assayed expression of the Dox and MDox genes in testes from D. simulans strain MD63 and D. mauritiana strain mau w12 using quantitative PCR. Total RNA was extracted from the dissected testes of 5–10 day old flies using the Nucleospin RNA XS kit (Macherey-Nagel, Germany), and cDNA was synthesized with poly dT oligos and random hexamers using Superscript III RT cDNA synthesis kit (Invitrogen, CA). qPCR assays were performed on a BioRad Real-time PCR machine using the cycling conditions: 95° C for 3 mins.; 40 cycles of 95° C for 10 s, 58° C for 30 s, and 72° C for 30 s. The primer sequences used for qPCR are provided in Supplementary file 3.

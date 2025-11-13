@@ -21,19 +21,19 @@
 
 ### Affiliations
 
-1. https://ror.org/05rehad94 Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam
-2. https://ror.org/03rke0285 Cambridge Baker Systems Genomics Initiative, Baker Heart and Diabetes Institute Melbourne Australia
-3. https://ror.org/052gg0110 Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-4. https://ror.org/05yevm258 Pham Ngoc Thanh Hospital Ho Chi Minh City Viet Nam
-5. https://ror.org/040tqsb23 Hospital for Tropical Diseases Ho Chi Minh City Viet Nam
-6. https://ror.org/003g49r03 Pham Ngoc Thach University of Medicine Ho Chi Minh City Viet Nam
-7. https://ror.org/013meh722 Cambridge Baker Systems Genomics Initiative, Department of Public Health and Primary Care, University of Cambridge Cambridge United Kingdom
+1. Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam ([ROR:05rehad94](https://ror.org/05rehad94))
+2. Cambridge Baker Systems Genomics Initiative, Baker Heart and Diabetes Institute Melbourne Australia ([ROR:03rke0285](https://ror.org/03rke0285))
+3. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Pham Ngoc Thanh Hospital Ho Chi Minh City Viet Nam ([ROR:05yevm258](https://ror.org/05yevm258))
+5. Hospital for Tropical Diseases Ho Chi Minh City Viet Nam ([ROR:040tqsb23](https://ror.org/040tqsb23))
+6. Pham Ngoc Thach University of Medicine Ho Chi Minh City Viet Nam ([ROR:003g49r03](https://ror.org/003g49r03))
+7. Cambridge Baker Systems Genomics Initiative, Department of Public Health and Primary Care, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Mortality and morbidity from tuberculous meningitis (TBM) are common, primarily due to inflammatory response to Mycobacterium tuberculosis infection, yet the underlying mechanisms remain poorly understood. We aimed to uncover genes and pathways associated with TBM pathogenesis and mortality, and determine the best predictors of death, utilizing whole-blood RNA sequencing from 281 Vietnamese adults with TBM, 295 pulmonary tuberculosis (PTB), and 30 healthy controls. Through weighted gene co-expression network analysis, we identified hub genes and pathways linked to TBM severity and mortality, with a consensus analysis revealing distinct patterns between HIV-positive and HIV-negative individuals. We employed multivariate elastic-net Cox regression to select candidate predictors of death, then logistic regression and internal bootstrap validation to choose best predictors. Increased neutrophil activation and decreased T and B cell activation pathways were associated with TBM mortality. Among HIV-positive individuals, mortality associated with increased angiogenesis, while HIV-negative individuals exhibited elevated TNF signaling and impaired extracellular matrix organization. Four hub genes— MCEMP1, NELL2, ZNF354C , and CD4 —were strong TBM mortality predictors. These findings indicate that TBM induces a systemic inflammatory response similar to PTB, highlighting critical genes and pathways related to death, offering insights for potential therapeutic targets alongside a novel four-gene biomarker for predicting outcomes.
+Mortality and morbidity from tuberculous meningitis (TBM) are common, primarily due to inflammatory response to Mycobacterium tuberculosis infection, yet the underlying mechanisms remain poorly understood. We aimed to uncover genes and pathways associated with TBM pathogenesis and mortality, and determine the best predictors of death, utilizing whole-blood RNA sequencing from 281 Vietnamese adults with TBM, 295 pulmonary tuberculosis (PTB), and 30 healthy controls. Through weighted gene co-expression network analysis, we identified hub genes and pathways linked to TBM severity and mortality, with a consensus analysis revealing distinct patterns between HIV-positive and HIV-negative individuals. We employed multivariate elastic-net Cox regression to select candidate predictors of death, then logistic regression and internal bootstrap validation to choose best predictors. Increased neutrophil activation and decreased T and B cell activation pathways were associated with TBM mortality. Among HIV-positive individuals, mortality associated with increased angiogenesis, while HIV-negative individuals exhibited elevated TNF signaling and impaired extracellular matrix organization. Four hub genes—MCEMP1, NELL2, ZNF354C, and CD4—were strong TBM mortality predictors. These findings indicate that TBM induces a systemic inflammatory response similar to PTB, highlighting critical genes and pathways related to death, offering insights for potential therapeutic targets alongside a novel four-gene biomarker for predicting outcomes.
 
 ## Introduction
 
@@ -47,17 +47,669 @@ In the current study, we investigated whole blood RNA sequencing (RNA-seq) trans
 
 ## Results
 
-## Characteristics and outcomes of the cohorts
+### Characteristics and outcomes of the cohorts
 
 Four RNA-seq cohorts (all ≥18 years) were used in the study, representing a total of 606 participants. The characteristics of these cohorts are provided in Table 1. There were 281 adults with TBM; 207 HIV-negative and 74 HIV-positive. In the HIV-negative TBM adults, the median age was 46 years (IQR 34, 58), 127 (61%) were male, and the median Body Mass Index (BMI) was 20.0 (IQR 18.2, 22.3). HIV-positive TBM were more likely than HIV-negative TBM to be male, younger, have lower BMI, have previously received TB treatment, and to have microbiologically confirmed TBM. Total white cell counts in blood and CSF in HIV-positive TBM were lower than in HIV-negative TBM. Median CD4 cell counts in HIV-positive TBM was 67 cells/mm3 (IQR 19, 124) and 28 (39%) were under antiretroviral therapy. The PTB cohort consisted of 295 HIV-negative adults with the median age of 44 years (IQR 31, 52), 228 (77%) were male, the median of BMI was 19.4 (IQR 17.7, 21.6) and 129 (48%) had pulmonary cavities on chest X-ray. Of the 30 healthy controls, 11 (37%) were male, and the median age was 33 (IQR 29, 37). In real-time quantitative polymerase chain reaction (qPCR) validation cohort, 132 HIV-negative TBM adults have similar characteristics as HIV-negative TBM RNA-seq cohort (Table 1).
 
+**Table 1.**
+ Baseline characteristics of TBM, PTB, and healthy controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Characteristics</th>
+      <th colspan="9">RNA-seq cohorts</th>
+      <th colspan="3">qPCR validation cohort</th>
+    </tr>
+    <tr>
+      <th colspan="2">HIV-negative TBM n = 207</th>
+      <th colspan="2">HIV-positive TBM n = 74</th>
+      <th colspan="2">PTB n=295</th>
+      <th colspan="2">Healthy controls n = 30</th>
+      <th colspan="3">HIV-negative TBM n = 132</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>n</th>
+      <th>Summary</th>
+      <th>n</th>
+      <th>Summary</th>
+      <th>n</th>
+      <th>Summary</th>
+      <th>n</th>
+      <th>Summary</th>
+      <th colspan="2">n</th>
+      <th>Summary</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>207</td>
+      <td>46 (34, 58)</td>
+      <td>74</td>
+      <td>34 (29, 40)</td>
+      <td>295</td>
+      <td>44 (31, 52)</td>
+      <td>30</td>
+      <td>33 (29, 37)</td>
+      <td colspan="2">132</td>
+      <td>48 (35, 60)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male sex</td>
+      <td>207</td>
+      <td>127 (61)</td>
+      <td>74</td>
+      <td>56 (76)</td>
+      <td>295</td>
+      <td>228 (77)</td>
+      <td>30</td>
+      <td>11 (37)</td>
+      <td colspan="2">132</td>
+      <td>84 (65)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>205</td>
+      <td>20.0 (18.2, 22.3)</td>
+      <td>72</td>
+      <td>19.3 (17.2, 20.4)</td>
+      <td>295</td>
+      <td>19.4 (17.7, 21.6)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2">132</td>
+      <td>20.0 (18.2, 22.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symptom duration (days)</td>
+      <td>207</td>
+      <td>14 (11, 20)</td>
+      <td>73</td>
+      <td>16 (10, 30)</td>
+      <td>294</td>
+      <td>20 (10, 30)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2">132</td>
+      <td>16 (13, 24)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>History of TB treatment</td>
+      <td>204</td>
+      <td>5 (2.5)</td>
+      <td>74</td>
+      <td>15 (20)</td>
+      <td>295</td>
+      <td>100 (34)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2">130</td>
+      <td>12 (9.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glasgow coma score</td>
+      <td>207</td>
+      <td>14 (12, 15)</td>
+      <td>72</td>
+      <td>14 (13, 15)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">132</td>
+      <td>14 (13, 15)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cavity chest X-ray</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>270</td>
+      <td>129 (48)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TB microbiological tests</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MGIT culture positive</td>
+      <td>199</td>
+      <td>50 (25)</td>
+      <td>69</td>
+      <td>41 (59)</td>
+      <td>295</td>
+      <td>279 (95)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Xpert/Ultra positive</td>
+      <td>198</td>
+      <td>42 (21)</td>
+      <td>70</td>
+      <td>39 (56)</td>
+      <td>295</td>
+      <td>287 (97)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscopy positive</td>
+      <td>205</td>
+      <td>48 (23)</td>
+      <td>67</td>
+      <td>35 (52)</td>
+      <td>203</td>
+      <td>169 (83)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2">105</td>
+      <td>18 (17)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Blood (106 cells/ml)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leucocyte count</td>
+      <td>204</td>
+      <td>9.4 (7.0, 11.9)</td>
+      <td>74</td>
+      <td>6.4 (5.0, 9.2)</td>
+      <td>242</td>
+      <td>9.2 (7.4, 11.4)</td>
+      <td>26</td>
+      <td>6.4 (5.6, 7.2)</td>
+      <td colspan="2">129</td>
+      <td>10.0 (7.7, 12.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophil count</td>
+      <td>204</td>
+      <td>7.1 (4.8, 9.1)</td>
+      <td>74</td>
+      <td>5.0 (3.3, 6.9)</td>
+      <td>241</td>
+      <td>6.1 (4.7, 8.2)</td>
+      <td>26</td>
+      <td>3.4 (3.1, 4.1)</td>
+      <td colspan="2">129</td>
+      <td>7.8 (6.9, 8.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocytes count</td>
+      <td>204</td>
+      <td>1.2 (0.9, 2.0)</td>
+      <td>74</td>
+      <td>0.7 (0.4, 1.2)</td>
+      <td>242</td>
+      <td>1.9 (1.4, 2.3)</td>
+      <td>26</td>
+      <td>2.2 (1.9, 2.6)</td>
+      <td colspan="2">129</td>
+      <td>1.2 (0.7, 1.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSF (103 cells/ml)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leucocyte count</td>
+      <td>207</td>
+      <td>142 (19, 323)</td>
+      <td>73</td>
+      <td>124 (10, 453)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">106</td>
+      <td>122 (38, 328)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophil count</td>
+      <td>207</td>
+      <td>0 (0, 39)</td>
+      <td>73</td>
+      <td>17 (0, 144)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">60</td>
+      <td>20 (3, 73)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocyte count</td>
+      <td>207</td>
+      <td>106 (18, 223)</td>
+      <td>73</td>
+      <td>58 (10, 216)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">106</td>
+      <td>95 (79, 100)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CD4 cell count (cells/mm3)</td>
+      <td></td>
+      <td></td>
+      <td>71</td>
+      <td>67 (19, 124)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antiretroviral therapy</td>
+      <td></td>
+      <td></td>
+      <td>70</td>
+      <td>28 (39%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV load (103 cells/ml)</td>
+      <td></td>
+      <td></td>
+      <td>73</td>
+      <td>77.3 (0.8, 672)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Values were displayed as median (1st and 3rd interquartile) for continuous variables and frequency (%) for categorical variables.TBM = PTB = tuberculosis, andCSF = TBM = PTB = tuberculosis, and CSF = TBM = tuberculous meningitis, PTB = pulmonary tuberculosis, and CSF = cerebrospinal fluid._
+
 The clinical variables associated with three-month mortality of the 281 adults with TBM in RNA-seq cohort are given in Table 2. The discovery (n=142) and validation (n=139) cohorts had similar characteristics (Table 2). 47.3% (133/281) had definite TBM (Marais et al., 2010), with microbiologically confirmed disease, accounting for 45.9% (101/220) of survivors and 52.4% (32/61) of those who died. The overall three-month mortality rate was 21.7% (61/281) for TBM regardless of HIV status: 16.4% (34/207) in HIV-negative and 36.5% (27/74) in HIV-positive (p<0.001). We did not observe differences in mortality by sex, age and diagnostic category. Greater disease severity, MRC grades 2 and 3 at enrolment, was associated with increased mortality compared to grade 1 (p<0.001). In those who died, CSF and peripheral blood neutrophil counts were higher and peripheral blood lymphocyte count lower, compared to those who survived.
+
+**Table 2.**
+ Association between baseline clinical characteristics with TBM mortality in RNA-seq cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th colspan="6">All TBM</th>
+      <th colspan="2">Discovery cohort</th>
+      <th colspan="2">Validation cohort</th>
+    </tr>
+    <tr>
+      <th>n</th>
+      <th>Survival n=220</th>
+      <th>Death n=61</th>
+      <th>HR*</th>
+      <th>95% CI</th>
+      <th>p value*</th>
+      <th>Survival n=111</th>
+      <th>Death n=31</th>
+      <th>Survival n=109</th>
+      <th>Death n=30</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Male sex</td>
+      <td>281</td>
+      <td>144 (65)</td>
+      <td>39 (64)</td>
+      <td>0.92</td>
+      <td>0.55, 1.56</td>
+      <td>0.3</td>
+      <td>70 (63)</td>
+      <td>19 (61)</td>
+      <td>74 (68)</td>
+      <td>20 (67)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>281</td>
+      <td>41 (32, 53)</td>
+      <td>39 (30, 60)</td>
+      <td>1.01</td>
+      <td>0.99, 1.02</td>
+      <td>0.8</td>
+      <td>41 (32, 53)</td>
+      <td>47 (33, 64)</td>
+      <td>41 (32, 53)</td>
+      <td>35 (29, 59)</td>
+    </tr>
+    <tr>
+      <td>HIV infection</td>
+      <td>281</td>
+      <td>47 (21)</td>
+      <td>27 (44)</td>
+      <td>2.34</td>
+      <td>1.41, 3.89</td>
+      <td>&lt;0.001</td>
+      <td>24 (22)</td>
+      <td>14 (45)</td>
+      <td>23 (21)</td>
+      <td>13 (43)</td>
+    </tr>
+    <tr>
+      <td>†Diagnostic category</td>
+      <td>280</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>definite TBM</td>
+      <td></td>
+      <td>101 (46)</td>
+      <td>32 (52)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>55 (50)</td>
+      <td>17 (55)</td>
+      <td>46 (42)</td>
+      <td>15 (50)</td>
+    </tr>
+    <tr>
+      <td>possible TBM</td>
+      <td></td>
+      <td>43 (20)</td>
+      <td>6 (9.8)</td>
+      <td>1.01</td>
+      <td>0.59, 1.72</td>
+      <td>0.9</td>
+      <td>20 (18)</td>
+      <td>2 (6.5)</td>
+      <td>23 (21)</td>
+      <td>4 (13)</td>
+    </tr>
+    <tr>
+      <td>probable TBM</td>
+      <td></td>
+      <td>75 (34)</td>
+      <td>23 (38)</td>
+      <td>0.50</td>
+      <td>0.21, 1.19</td>
+      <td>0.12</td>
+      <td>35 (32)</td>
+      <td>12 (39)</td>
+      <td>40 (37)</td>
+      <td>11 (37)</td>
+    </tr>
+    <tr>
+      <td>‡MRC grade</td>
+      <td>281</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>grade 1</td>
+      <td></td>
+      <td>114 (52)</td>
+      <td>7 (11)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>58 (52)</td>
+      <td>3 (9.7)</td>
+      <td>56 (51)</td>
+      <td>4 (13)</td>
+    </tr>
+    <tr>
+      <td>grade 2</td>
+      <td></td>
+      <td>100 (45)</td>
+      <td>35 (57)</td>
+      <td>4.96</td>
+      <td>2.20, 11.2</td>
+      <td>&lt;0.001</td>
+      <td>51 (46)</td>
+      <td>18 (58)</td>
+      <td>49 (45)</td>
+      <td>17 (57)</td>
+    </tr>
+    <tr>
+      <td>grade 3</td>
+      <td></td>
+      <td>6 (2.7)</td>
+      <td>19 (31)</td>
+      <td>26.4</td>
+      <td>11.0, 63.2</td>
+      <td>&lt;0.001</td>
+      <td>2 (1.8)</td>
+      <td>10 (32)</td>
+      <td>4 (3.7)</td>
+      <td>9 (30)</td>
+    </tr>
+    <tr>
+      <td>Blood (106 cells/ml)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leukocyte count</td>
+      <td>278</td>
+      <td>8.1 (6.2, 10.7)</td>
+      <td>10.1 (6.7, 12.2)</td>
+      <td>1.57</td>
+      <td>1.04, 2.38</td>
+      <td>0.033</td>
+      <td>7.8 (6.2, 10.6)</td>
+      <td>8.6 (6.4, 12.0)</td>
+      <td>8.4 (6.4, 10.7)</td>
+      <td>10.8 (7.6, 12.4)</td>
+    </tr>
+    <tr>
+      <td>Neutrophil count</td>
+      <td>278</td>
+      <td>6.0 (4.0, 8.1)</td>
+      <td>8.0 (5.0, 10.3)</td>
+      <td>1.83</td>
+      <td>1.29, 2.59</td>
+      <td>&lt;0.001</td>
+      <td>5.9 (4.0, 8.1)</td>
+      <td>6.7 (4.9, 9.6)</td>
+      <td>6.4 (4.0, 8.2)</td>
+      <td>9.0 (5.8, 10.3)</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte count</td>
+      <td>278</td>
+      <td>1.2 (0.8, 1.9)</td>
+      <td>0.9 (0.5, 1.2)</td>
+      <td>0.70</td>
+      <td>0.56, 0.88</td>
+      <td>0.002</td>
+      <td>1.2 (0.7, 2.0)</td>
+      <td>1.0 (0.6, 1.3)</td>
+      <td>1.3 (0.9, 1.9)</td>
+      <td>0.8 (0.5, 1.2)</td>
+    </tr>
+    <tr>
+      <td>CSF (103 cells/ml)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leukocyte count</td>
+      <td>280</td>
+      <td>129 (19, 340)</td>
+      <td>148 (15, 360)</td>
+      <td>0.99</td>
+      <td>0.91, 1.09</td>
+      <td>0.9</td>
+      <td>130 (17, 348)</td>
+      <td>148 (15, 444)</td>
+      <td>124 (27, 335)</td>
+      <td>146 (25, 283)</td>
+    </tr>
+    <tr>
+      <td>Neutrophil count</td>
+      <td>117</td>
+      <td>78 (28, 192)</td>
+      <td>135 (54, 402)</td>
+      <td>1.23</td>
+      <td>1.01, 1.49</td>
+      <td>0.040</td>
+      <td>64 (30, 228)</td>
+      <td>260 (163, 516)</td>
+      <td>90 (29, 161)</td>
+      <td>75 (50, 173)</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte count</td>
+      <td>280</td>
+      <td>101 (18, 229)</td>
+      <td>91 (14, 176)</td>
+      <td>0.95</td>
+      <td>0.86, 1.05</td>
+      <td>0.3</td>
+      <td>104 (16, 208)</td>
+      <td>123 (10, 214)</td>
+      <td>97 (21, 248)</td>
+      <td>86 (14, 147)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values were displayed as median (1st and 3rd interquartile) for continuous variables and frequency (%) for categorical variables.TBM = CSF = TBM = tuberculous meningitis, CSF = cerebrospinal fluid.*Association of the corresponding variables with three-month mortality using a Cox regression model. Hazard ratio (HR) and p-value from the Cox regression model were presented in the table. For blood and CSF cells, the HR was calculated for each increase in log2 units.†Diagnostic categories were assigned according to the consensus case definition (Marais et al., 2010). Definite TBM refers to cases that are microbiologically confirmed TB by microscopy, culture and Xpert using CSF samples.‡MRC grade denotes modified British Medical Research Council criteria (Streptomycin in Tuberculosis Trials Commitee, Medical Research Council, 1948)._
 
 In qPCR validation cohort (n=132), 3-month mortality rate was 28.8% (38/132) and those who died associated with older age, greater disease severity, lower number of CSF leukocytes, lymphocytes and neutrophils, but did not differ in number of peripheral blood neutrophils (Supplementary file 1A).
 
-## Whole blood transcriptional profiles of the four RNA-seq cohorts
+### Whole blood transcriptional profiles of the four RNA-seq cohorts
 
 We analyzed the whole blood transcriptomics, using bulk RNA sequencing from 606 participants in the 4 cohorts. On average 35.1 million reads/sample was obtained with 89.4% reads mapping accuracy to human reference genome (GRCh.38 release 99) and 65.4% reads were uniquely mapped. The study objectives and cohorts flow are presented in Figure 1. Principal component analysis on the transcriptomic data of 20,000 genes across 4 studies showed different profiles between healthy controls from both PTB and TBM cases (Figure 2A). The PTB profile substantively overlapped with TBM, with some separation between HIV-negative and HIV-positive TBM.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig1-v1.jpg)
+
+**Figure 1.:** TBM: TB meningitis, HIV: human immunodeficiency virus, PTB: pulmonary TB, HC; healthy controls.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Transcriptional profiling was conducted across four cohorts: 207 HIV-negative TBM patients, 74 HIV-positive TBM patients, 295 pulmonary tuberculosis (PTB) patients, and 30 healthy controls. To identify transcriptional signatures associated with TBM mortality, RNA-seq data from all 281 TBM participants were analyzed. For reproducibility, the RNA-seq TBM cohort was randomly split into a discovery cohort (n=142) and a validation cohort (n=139). Weighted gene co-expression network analysis (WGCNA) was initially performed to identify common hub genes and pathways related to TBM mortality. Additionally, consensus WGCNA was applied to identify signals specific to either the HIV-negative or HIV-positive TBM cohorts. Outcome prediction models were then developed based on the common and specific hub genes associated with TBM. Finally, the association of hub genes with the outcome and prediction models was validated using qPCR on an independent cohort of HIV-negative TBM patients (n=132).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Principle component analysis (PCA) of transcriptomic data before (A) and after (B) batch correction by combat function in SVA r package. Each symbol represents one individual with color coding different cohorts. The x-axis represents principle component (PC) 1, while y-axis represents PC2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig2-v1.jpg)
 
@@ -65,7 +717,7 @@ We analyzed the whole blood transcriptomics, using bulk RNA sequencing from 606 
 
 Enrichment scores from single sample gene set enrichment analysis (ssGSEA), which based on expression rank of genes relevant to pathways, were measured in some pathways already known to be important mediators of TB or TBM pathogenesis (Figure 2B–G). As anticipated, inflammatory response, cytokine signaling, interferon signaling, TNF signaling, and inflammasome activation pathways, were enriched in PTB and TBM cohorts as compared to healthy controls. In TBM, enrichment of genes in these pathways were generally higher in HIV-positive than in HIV-negative individuals.
 
-## Transcriptional gene modules associated with TBM severity and mortality
+### Transcriptional gene modules associated with TBM severity and mortality
 
 Transcriptional profiles associated with TBM mortality were generated by identifying differentially expressed genes. Of the top 20,000 genes with most variation, we observed 724 (3.6%) genes that were differentially expressed (FDR <0.05, absolute fold change (FC) >1.5) in all those with TBM (Figure 3A). Next, we applied weighted gene co-expression network analysis (WGCNA) to 5000 most variable genes from 281 TBM samples (n=207, HIV-negative; n=74, HIV-positive) to define clusters of highly correlated genes (modules) associated with TBM severity and mortality. Gene modules are clusters of genes that have highly interconnected expression, usually related to their biological functions. Hub genes are genes with high connectivity to other genes within a respective module. First, we used WGCNA to construct a network of gene modules in the discovery cohort. Then we validated the presence of these transcriptional modules in the validation cohort, labelling the modules with different colors. In the discovery cohort (n=142), 15 modules were identified overall, consisting of 44–1350 genes per module (Figure 4—figure supplement 1). All 15 modules were preserved in the validation cohort (n=139) through the preservation analysis (Figure 4—figure supplement 2).
 
@@ -75,13 +727,170 @@ Transcriptional profiles associated with TBM mortality were generated by identif
 
 The associations between the 15 modules and TBM severity and mortality are presented in Figure 4 for both the discovery and validation cohorts. Modules were linked to each other in a hierarchical structure, with major biological processes annotated. Associations of the modules with TBM disease severity (MRC grade) at baseline were estimated by Spearman correlations between MRC grade and the first principle component (PC1) of each module. Similarly, associations of the modules with mortality were measured by hazard ratio (HR) per increase 1/10 unit of PC1 using Cox regression model adjusted for age, HIV status and dexamethasone treatment (Figure 4) in both discovery and validation cohorts.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig4-v1.jpg)
+
+**Figure 4.:** (A) Associations between WGCNA modules with two clinical phenotypes TBM disease severity (MRC grade) and three-month mortality in discovery and validation cohorts, and their associated biological processes. The heatmap showed the association between principle component 1 (PC1) of each module and the phenotypes, particularly Spearman correlation r for MRC grade and hazard ratio per increase 1/10 unit of PC1 (HR) for mortality. The HRs were estimated using a Cox regression model adjusted for age, HIV status and dexamethasone treatment. False discovery rate (FDR) corrected based on Benjamini & Yekutieli procedure, with significant level denoted as *<0.05, **<0.01 and ***<0.001. Gradient colors were used to fill the cell with green indicating negative r or HR <1, red color indicating positive r or HR >1. The order of modules was based on hierarchical clustering using Pearson correlation distance for module eigengene. On the left, biological processes, corresponding to modules, were identified using Gene Ontology and KEGG database. (B) Validation of the association between WGCNA modules and mortality in discovery and validation cohorts. X-axis represents –log10 FDR in discovery cohort and Y-axis represents –log10 FDR in validation cohort. Red dash lines indicate FDR = 0.05 as the threshold for statistically significant in both cohorts. Five modules (blue, brown, red, black and cyan) with FDR <0.05 were validated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Analysis of network topology for various soft-thresholding powers of the top 5000 most variant genes based on the scale-free network model. (A) The scale-free fit index (y-axis) as a function of the soft-thresholding power (x-axis). The red horizontal line corresponds to $R^{2}=0.85$ and soft-thresholding power  $\beta$=8, which was chosen for the construction gene-expression network. (B) The mean connectivity on the y-axis as a function of the soft-thresholding power on the x-axis. The adjacency matrix of the scale-free network between genes was determined as $A=(a_{ij})$ where  $a_{ij}=|cor(gene_{i},gene_{j})|^{\beta}$. (C) The dendrogram resulted from the hierarchical clustering analysis using topological overlap of the adjacency matrix A served as a dissimilarity metric. Each cluster was referred as a module and assigned with a color. (D) Bar-plots indicate the number of genes contained in each module.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The median rank preservation statistics of the modules. Each module was represented by a point, labeled with the corresponding color and name. The Y-axis represents the median rank of observed preservation statistics per module, while the X-axis indicates the number of genes within each module. A low preservation median rank value indicates a high level of preservation. The gold module was an artificial module comprised of 500 randomly selected genes. The grey module consisted of non-connected genes identified in the WGCNA analysis of the discovery cohort. These two modules exhibited the highest median rank, indicating low preservation, which ensured our preservation analysis controlling well the background noise signal. (B) The Zsummary preservation statistics of the modules. Each module was represented by a point, labeled with the corresponding color and name. The Y-axis represents the Zsummary statistic of each module based on 1,000 permutations of module labels, while the X-axis indicates the number of genes within each module. The horizontal green dash line corresponds to the threshold of Zsummary >10 indicating strongly persevered modules. The presence of all modules in discovery were validated in validation cohort with Zsummary >10.
+
 Of the 15 preserved modules, five modules were significantly associated with mortality in the discovery and validation cohorts, with false discovery rate (FDR) <0.05 (Figure 4B). These five modules were separated into two big module clusters. The first cluster contained the blue module (n=799 genes), involved in inflammatory and innate immune responses, and the cyan module (n=44 genes) with unknown biological function. These modules were upregulated in those who died, as shown in the heat-map in Figure 4A (HR: 3.0 and 2.2 for the blue module, and 2.1 and 1.7 for the cyan module, FDR <0.05 for all comparisons). The black (n=207 genes), brown (n=698 genes), and red (n=229 genes) modules were in the second cluster and were generally involved in adaptive immunity including T and B cell signaling pathways. These three modules were down-regulated in those who died (HR: 0.43 and 0.36 for brown, 0.46 and 0.39 for red, 0.59 and 0.49 for black; Figure 4A).
 
 It is known that TBM MRC grade before treatment initiation strongly predicts outcome from TBM. Here, we investigated correlations between each module and MRC grade and their association with mortality. The pink module, involved in hemostasis and platelet activation, was positively correlated with MRC grade, but not mortality. Of the five modules associated with death from TBM, all were correlated with MRC grade (Figure 4A). Four of these five modules, were enriched for immune responses.
 
-## Transcriptional hub genes associated with TBM severity and mortality
+### Transcriptional hub genes associated with TBM severity and mortality
 
 We next identified hub genes within the four biologically functional modules associated with TBM mortality in both the discovery and validation cohorts. Hub genes showed higher connectivity within the modules, and stronger association with TBM mortality as compared to less connected genes within a module (Figure 5—figure supplement 1). Seven hub genes (ETS2, PGD, UPP1, CYSTM1, FCAR, KIF1B, and MCEMP1) were upregulated in death, all from the acute inflammation (blue) module. Hub genes from the brown, red and black modules were downregulated in death and were involved in adaptive immune response. Ten hub genes associated with mortality (CD96, TNFRSF25, TBC1D4, CD28, ABLIM1, RASGRP1, NELL2, TRAF5, TESPA1, TRABD2A) were from the brown module, three (EVL, PLCG1, NLRC3) from the red, and six (CD2, CD247, TGFBR3, ARL4C, KLRK1, MATK) from the black module (Figure 5E–H). For qPCR validation, available samples from HIV-negative TBM patients (n=132) were used to evaluate 11 hub genes selected from the blue and brown modules. 8/11 hub genes were found to be significantly associated with mortality, as determined univariate Cox regression (Table 3). Three genes (FCAR, PGD, ETS2) also found to be associated but in reverse direction.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) showed biological processes and pathways identified in four mortality associated modules: blue, brown, red and black module, by over representation analysis (ORA). Bar plots show the top representative GO biological processes or KEGG pathways. The bars indicates biological processes or pathways having ORA FDR <0.05 and size corresponding to fold enrichment calculated as the ratio of gene number of pathway in the input list divided by the ratio of gene number of the pathway in reference. (E–H) showed gene co-expression networks and hub genes of blue, brown, red and black module, respectively. Each node represents one gene. Each edge represents the link between two genes. Hub genes were shown by bigger nodes and bold text. The gradient color of node corresponds to its HR per 1 log2 unit increase in gene expression related to mortality, with red indicating HR >1, and blue HR <1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, C, E and G) are scatter plots for blue, brown, red and black modules in discovery cohort. (B, D, F and H) are scatter plots for blue, brown, red and black modules in validation cohort. For each module, each dot represents one gene in the module. The X-axis represents module membership calculated by Pearson correlation between gene expression level and its corresponding PC1 of that module. The Y-axis represents –log10(p-value) of the association between gene expression and 3-month mortality based on the Cox regression model adjusted for age, HIV, and dexamethasone treatment. Hub-genes were those on the right corner of the plot. The displayed R2 and p value were taken from linear regression models.
+
+**Table 3.**
+ Validation of hub genes in PCR validation cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">No.</th>
+      <th rowspan="2">Genes</th>
+      <th colspan="3">RNA-seq cohort HIV-negative TBM (n=207)</th>
+      <th colspan="3">qPCR validation cohort HIV-negative TBM (n=132)</th>
+    </tr>
+    <tr>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th>p value</th>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>MCEMP1</td>
+      <td>1.93</td>
+      <td>1.57, 2.37</td>
+      <td>4.07E-10</td>
+      <td>1.74</td>
+      <td>1.27, 2.37</td>
+      <td>4.99E-04</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>FCAR</td>
+      <td>2.37</td>
+      <td>1.70, 3.30</td>
+      <td>3.52E-07</td>
+      <td>0.59</td>
+      <td>0.40, 0.87</td>
+      <td>7.87E-03</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ETS2</td>
+      <td>2.65</td>
+      <td>1.85, 3.81</td>
+      <td>1.24E-07</td>
+      <td>0.27</td>
+      <td>0.16, 0.44</td>
+      <td>3.27E-07</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>PGD</td>
+      <td>2.65</td>
+      <td>1.84, 3.81</td>
+      <td>1.47E-07</td>
+      <td>0.18</td>
+      <td>0.09, 0.34</td>
+      <td>2.69E-07</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>NELL2</td>
+      <td>0.56</td>
+      <td>0.45, 0.71</td>
+      <td>6.08E-07</td>
+      <td>0.80</td>
+      <td>0.66, 0.96</td>
+      <td>1.53E-02</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>TRABD2A</td>
+      <td>0.43</td>
+      <td>0.31, 0.58</td>
+      <td>4.94E-08</td>
+      <td>0.64</td>
+      <td>0.51, 0.8</td>
+      <td>1.05E-04</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>TRAF5</td>
+      <td>0.31</td>
+      <td>0.2, 0.49</td>
+      <td>4.52E-07</td>
+      <td>0.47</td>
+      <td>0.36, 0.61</td>
+      <td>1.66E-08</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>CD28</td>
+      <td>0.57</td>
+      <td>0.42, 0.76</td>
+      <td>1.42E-04</td>
+      <td>0.60</td>
+      <td>0.47, 0.76</td>
+      <td>2.83E-05</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>TESPA1</td>
+      <td>0.36</td>
+      <td>0.25, 0.52</td>
+      <td>2.74E-08</td>
+      <td>0.65</td>
+      <td>0.48, 0.89</td>
+      <td>7.35E-03</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>ABLIM1</td>
+      <td>0.31</td>
+      <td>0.2, 0.49</td>
+      <td>2.21E-07</td>
+      <td>0.47</td>
+      <td>0.36, 0.63</td>
+      <td>1.55E-07</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>RASGRP1</td>
+      <td>0.45</td>
+      <td>0.31, 0.67</td>
+      <td>6.10E-05</td>
+      <td>0.59</td>
+      <td>0.45, 0.77</td>
+      <td>9.77E-05</td>
+    </tr>
+  </tbody>
+</table>
+
+_Association of the hub genes with three-month mortality using a univariate Cox regression model. Hazard ratio (HR), 95% CI of HR and p-value from the Cox regression model were presented in the table. HR or 95% mean per increase 1 unit of log2 normalized expression of gene in RNA-seq cohort or decrease 1 unit of cycle threshold in qPCR validation cohort._
 
 We, next, examined patterns of shared and distinct gene expression of some hub across the four cohorts (healthy controls, PTB, and TBM with and without HIV-infection) to reveal disease progression and pathogenesis of different TB forms (Figure 6). There were two upregulated genes from the acute inflammation module (FCAR and MCEMP1) and six downregulated genes (NELL2, TRABD2A, PLCG1, NLRC3, CD247, and MATK) from the other three adaptive immunity modules. The patterns of up and downregulation, relative to healthy controls, were similar in PTB and TBM, although tended to be more pronounced in those with TBM as well as those with HIV (Figure 6).
 
@@ -89,7 +898,7 @@ We, next, examined patterns of shared and distinct gene expression of some hub a
 
 **Figure 6.:** Each dot represents gene expression from one participant. (A, B) expression of FCAR and MCEMP1 hub genes from the blue module. (C, D) expression of NELL2 and TRABD2A hub genes from the brown modules. (E, F) expression of PLCG1 and NLRC3 hub genes from the red module. (G, H) expression of CD247 and MATK hub genes from the black module. The box presents median, 25th to 75th percentile and the whiskers present the minimum to the maximum points in the data. Comparisons were made between death (red) with survival (blue) or between HIV-negative and HIV-positive TBM by Wilcoxon rank sum test with p-values displayed as significance level above the boxes and the horizontal bars (*<0.05, **<0.01, ***<0.001).
 
-## Transcriptional immune pathways associated with TBM mortality
+### Transcriptional immune pathways associated with TBM mortality
 
 To better understand the biological functions of the five modules associated with TBM mortality, a gene set associated with mortality in each module was functionally annotated using known pathway databases, such as gene ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) (Ge et al., 2020). Pathway enrichment analysis was performed using fold enrichment to determine if the prevalence of genes in a pathway were different from that expected by chance. We also used ssGSEA enrichment scores based on gene expression ranking of genes in a particular pathway within a single individual, to show the activity of this pathway between death and survival TBM as well as across four cohorts. These analyses helped to identify the pathways linked to mortality within the gene modules.
 
@@ -103,9 +912,21 @@ We also investigated the association between pathways known to be important to T
 
 **Figure 7.:** (A–F) Enrichment scores of known immune pathways associated with TBM pathogenesis. Pathway enrichment scores were calculated using single sample GSEA algorithm (Barbie et al., 2009). Each dot represents one participant. The box presents median, 25th to 75th percentile and the whiskers present the minimum to the maximum points in the data. The comparisons were made between survival and death using Wilcoxon rank sum test. Only significant results are presented with *<0.05, **<0.01, ***<0.001.
 
-## HIV influence on modules, hub genes, and pathways associated with TBM mortality
+### HIV influence on modules, hub genes, and pathways associated with TBM mortality
 
 Transcriptional profiles associated with TBM mortality stratified by HIV status are shown in Figure 3. In HIV-negative individuals, 786 (3.9%) genes were differentially expressed, whereas in HIV-positive the number was 1620 (8.1%) genes (Figure 3B–C; Supplementary file 1G and H). We hypothesized that host transcriptional signatures associated with TBM mortality differ according to HIV status. To test this hypothesis, we constructed gene co-expression networks from all genes in HIV-negative (n=207) and HIV-positive (n=74) individuals separately, then performed consensus gene co-expression network analysis (Figure 8A; Figure 8—figure supplement 1). Modules were identified with colors and to discriminate them from the modules linked to mortality alone we added an annotated function on the module name. We focused on modules that failed to form consensus associations with mortality due to opposite associations in the two cohorts.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig8-v1.jpg)
+
+**Figure 8.:** (A) Associations between 16 consensus WGCNA modules with two clinical phenotypes TBM severity (MRC grade) and mortality in HIV-negative (n=207) and HIV-positive (n=74) TBM participants, and their associated BP Gene ontology or KEEG database. The heatmap showed the association between modules and the phenotypes, with Spearman correlation r for MRC grade and hazard ratio per increase 1/10 unit of PC1 of module (HR) for mortality in HIV-positive and HIV-negative cohorts. The consensus sub-panel presented associations of the consensus modules and clinical phenotypes with same trend detected in both HIV cohorts, otherwise were annotated with missing (NA) values. False discovery rate (FDR) corrected using Benjamini & Yekutieli procedure, with significant level denoted as *<0.05, **<0.01 and ***<0.001. Gradient colors were used to fill the cell with green indicating negative r or HR <1, red color indicating positive r or HR >1. The order of modules was based on hierarchical clustering using Pearson correlation distance for module eigengene. It is noted that these consensus modules were not identical to the identified modules in the primary analysis in Figure 4A. (B–C) Functional enrichment analysis of HIV-positive pathway (blue module) and HIV-negative pathway (yellow module), respectively. (D–E) Gene co-expression network of blue and yellow modules. Each node represents one gene. Each edge represents the link between two genes. Hub genes were shown by bigger nodes with bold text. The gradient color of node corresponds to its HR per 1 log2 unit increase in gene expression related to mortality, with red indicating HR >1, and blue HR <1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Consensus analysis of network topology for various soft-thresholding powers of the top 5000 most variant genes based on the scale-free network model. (A, B) The summary network indices (y-axes) as functions of the soft thresholding power (x-axes). Numbers in the plots indicate the corresponding soft thresholding powers. The plots indicated that approximate scale-free topology is attained around the soft-thresholding power of 8 for both sets, which is the lowest power that satisfies the approximate scale-free topology criterion for both cohorts, HIV-positive (black dots) and HIV-negative (red dots). The adjacency matrix of the scale-free network between genes of each cohort was determined and scaled. The consensus topological overlap of two adjacency matrix were identified and served as dissimilarity metric for the hierarchical clustering. (C) The dendrogram of the consensus gene co-expression network. Each cluster was referred as a module and assigned with a color. (D) The bar-plot indicates the number of genes contained in each module.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Each dot represents gene expression from one participant. (A, B) expression of RNF24 and ZNF721 hub genes from the specific blue module. (C, D) expression of BCL9L and IL11RA hub genes from the specific yellow modules. The box presents median, 25th to 75th percentile and the whiskers present the minimum to the maximum points in the data. Comparisons were made between death (red) with survival (blue) or between HIV-negative and HIV-positive TBM by Wilcoxon rank sum test with p-values displayed as significance level above the boxes and the horizontal bars, respectively (*<0.05, **<0.01, ***<0.001).
 
 Sixteen gene co-expression modules (Figure 8—figure supplement 1; Supplementary file 1I), ranging from 60 to 958 genes, were obtained from the HIV-negative and positive cohorts. Of these, 12 modules formed consensus association with mortality (Figure 8A). Of the 4 modules which failed to form consensus association, two modules were significantly associated with mortality (FDR <0.05). The blue-angiogenesis module was up-regulated in death in HIV-positive adults (HR: 1.7) and the yellow-extracellular matrix organization (EMO) module was down-regulated in death in HIV-negative adults (HR: 0.31; Figure 8A).
 
@@ -115,11 +936,146 @@ Pathway enrichment analysis showed genes in the blue-angiogenesis module were si
 
 In addition, almost all of the pathways significantly associated with TBM mortality were similar in HIV-negative and positive cohorts, confirming that these important pathways were common to all TBM (Figure 9—figure supplement 1). However, pathway enrichment scores were higher in HIV-positive than in HIV-negative, especially for the TNF signaling pathway and TNF transcripts (Figure 9). Death in HIV-negative TBM was associated with increased enrichment of these pathways, but with less TNF transcript compared to HIV-positive individuals. The enrichment scores indicated mortality was strongly associated with downregulation of adaptive immune responses, including T cell activation, T and B cell receptor signaling pathways, with little impact of HIV status on these pathways (Figure 9). These data suggest an inadequate adaptive immune response contributes to disease pathogenesis and mortality in all those with TBM, regardless of HIV status.
 
-## Predictors of TBM mortality
+![Figure 9.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig9-v1.jpg)
+
+**Figure 9.:** Pathway enrichment scores were calculated using single sample GSEA algorithm (Barbie et al., 2009). Each dot represents one participant. (A–C) showed box-plots depicting enrichment scores of the innate immunity pathways from the blue module. (E–H) enrichment scores of the adaptive immunity pathways from the red and brown modules and (D) normalized expression of TNF. The box presents median, 25th to 75th percentile and the whiskers present the minimum to the maximum points in the data. Comparisons were made between death (red) with survival (blue) or between HIV-negative and HIV-positive TBM by Wilcoxon rank sum test with p-values displayed as significance level above the boxes and the horizontal bars, respectively (*<0.05, **<0.01, ***<0.001).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Pathway fold change enrichment to mortality of each biological pathway defined as the distribution of the total of mean differential expression between death and survival TBM of all genes involved in the pathway based on Qusage method (Yaari et al., 2013). Median and 95% confidence interval of pathway fold change of each top-hit biological pathway in the blue (A), brown (B), and red module (C) in the primary analysis. Blue lines are from HIV-negative cohort and red lines from HIV-positive cohort. Pathway fold change enrichment above 0 indicates up-regulation while below 0 indicates down-regulation in death. Vertical dashed lines indicate no difference in death compared to survival TBM.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A–E) Boxplots visualized distribution of gene expression of MCEMP1, TRABD2A, CD4, NELL2 and ZNF354C in healthy (n=30), PTB (n=295), TBM without HIV (n=207) and with HIV (n=74). Boxes indicate median and inter-quantile range. Dots indicate data in individuals. The comparisons were made between death (red) and survival (blue) by Wilcoxon rank sum test with p-value displayed as *<0.05, **<0.01 and ***<0.001. (F–J) Associations between mortality and gene expression of MCEMP1, TRABD2A, CD4, NELL2 and ZNF354C. In each figure, the upper panel corresponds to gene distribution in HIV-negative (blue) and HIV-positive (red), the lower panel presents the approximation of the association between that gene and mortality. Their gene expression were divided into 15 groups using equal-distant quantiles (1/15,…, 14/15) intervals and the proportion of mortality within those groups of patients were computed. Each point (error bar) presented the proportion with its confidence interval of mortality per group. The line represents the logistic curve that illustrates the mortality trend corresponding to a twofold increase in gene expression.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/92344/elife-92344-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** Receiver operating characteristic (ROC) curves for 3-month mortality for our developed model using expression level of four genes (MCEMP1, NELL2, CD4, and ZNF354C) with two clinical predictors (age, MRC grade) (red line) and the model develop by Thao et al. (blue line) for HIV-negative cohort (A), for HIV-positive cohort (B) and for HIV-negative qPCR validation cohort (C). The optimism corrected area under the curve (AUC) was calculated based on 1000 times bootstrap subsampling as described in the methods. Calibration plots were presented for the corresponding prediction models for HIV-negative (D), HIV-positive cohort (E) and HIV-negative qPCR validation cohort (E).
+
+### Predictors of TBM mortality
 
 We aimed to identify baseline gene signatures that might help predict death or survival from TBM. We selected potential gene predictors from 26 common and 10 HIV-specific hub genes; these hub genes represented the dominant modules associated with mortality. Three predefined clinical factors known to be associated with outcome (age, MRC grade and CSF lymphocyte count) were also used for candidate predictor selection. Using a multivariate Cox elastic-net regression model for 39 predictors, six predictors were selected for HIV-negative TBM (MRC grade, age, CSF lymphocyte count, gene set 1: MCEMP1, TRABD2A, and CD4), and six predictors were selected for HIV-positive TBM (MRC grade, age, CSF lymphocyte count, gene set 2: NELL2, MCEMP1, and ZNF354C; Supplementary file 1L).
 
 Gene expression and association with mortality of five distinct genes in gene sets 1 and 2 were presented in Figure 9—figure supplement 2. By combining the two gene sets above and reducing genes in the same module, we generated gene set 3 (MCEMP1, TRABD2A, CD4, and ZNF354C) and gene set 4 (MCEMP1, NELL2, ZNF354C, and CD4). These two gene sets, with and without clinical factors (MRC grade and age), were tested for their predictive performance in HIV-negative and HIV-positive RNA-seq cohorts together with a reference model (Thao et al., 2018). Model 7 using gene set 4 and clinical factors outperformed other gene sets and reference model, with the best overall model performance (lowest optimism-corrected Brier score, 0.11 and 0.14 for HIV-negative and HIV-positive, respectively) and the best discriminant performance (highest optimism-corrected AUC 0.80 and 0.86 for HIV-negative and positive; Table 4, Figure 9—figure supplement 3).
+
+**Table 4.**
+ Comparison of gene signatures in distinguishing survival and death in TBM prognostic models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">RNA-seq cohorts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">No.</td>
+      <td rowspan="2">Predictor set</td>
+      <td colspan="2">All TBMn=281</td>
+      <td colspan="2">HIV-negative TBMn=207</td>
+      <td colspan="2">HIV-positive TBMn=74</td>
+    </tr>
+    <tr>
+      <td>AUC</td>
+      <td>Brier score</td>
+      <td>AUC</td>
+      <td>Brier score</td>
+      <td>AUC</td>
+      <td>Brier score</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Reference model (Thao et al., 2018)</td>
+      <td>0.78</td>
+      <td>0.14</td>
+      <td>0.77</td>
+      <td>0.12</td>
+      <td>0.82</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Gene set 1 (MCEMP1, TRABD2A, and CD4)</td>
+      <td>0.78</td>
+      <td>0.14</td>
+      <td>0.78</td>
+      <td>0.11</td>
+      <td>0.65</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Gene set 2 (MCEMP1, NELL2 and ZNF354C)</td>
+      <td>0.78</td>
+      <td>0.14</td>
+      <td>0.77</td>
+      <td>0.11</td>
+      <td>0.75</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Gene set 3 (MCEMP1, TRABD2A, CD4 and ZNF354C)</td>
+      <td>0.78</td>
+      <td>0.14</td>
+      <td>0.77</td>
+      <td>0.11</td>
+      <td>0.73</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Gene set 4 (MCEMP1, NELL2, CD4 and ZNF354C)</td>
+      <td>0.79</td>
+      <td>0.14</td>
+      <td>0.77</td>
+      <td>0.11</td>
+      <td>0.75</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Gene set 3 and clinical risk factors</td>
+      <td>0.82</td>
+      <td>0.13</td>
+      <td>0.80</td>
+      <td>0.11</td>
+      <td>0.84</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Gene set 4 and clinical risk factors</td>
+      <td>0.82</td>
+      <td>0.13</td>
+      <td>0.80</td>
+      <td>0.11</td>
+      <td>0.86</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td colspan="8">qPCR validation cohort</td>
+    </tr>
+    <tr>
+      <td rowspan="2">No.</td>
+      <td rowspan="2">Predictor set</td>
+      <td colspan="6">HIV-negative TBM (n=132)</td>
+    </tr>
+    <tr>
+      <td colspan="3">AUC</td>
+      <td colspan="3">Brier score</td>
+    </tr>
+    <tr>
+      <td>8*</td>
+      <td>MCEMP1, NELL2, ZNF354C and clinical predictors</td>
+      <td colspan="3">0.91</td>
+      <td colspan="3">0.12</td>
+    </tr>
+  </tbody>
+</table>
+
+_Clinical risk factors were age, MRC grade and CSF lymphocytes (Streptomycin in Tuberculosis Trials Commitee, Medical Research Council, 1948; Thao et al., 2018). The prediction models for three-month mortality were based on multivariable logistic regression models with top-hit genes and clinical risk factors. Area under the curve (AUC) and Brier score were corrected for optimism using internal bootstrap resampling over 1000 iterations to evaluate the model performance. The Brier score is an overall performance measure, calculated as the mean squared difference between the predicted probability and the actual outcome, with smaller values indicating superior model performance.*CD4 data is unavailable for the analysis._
 
 Given that gene expression could reflect cellular composition changes of peripheral blood with neutrophil being most abundant sub-population, we performed a sensitivity analysis including blood neutrophil count as a potential gene predictor in multivariate Cox elastic-net regression model. In sensitivity analysis, all six predictors for either HIV-negative TBM or HIV-positive TBM were repeatedly selected (Supplementary file 1M). We evaluated the predictive values of blood neutrophil alone and in combination with identified gene sets, but adding neutrophils did not improve the overall performance of predictive models.
 
@@ -149,7 +1105,7 @@ In summary, we present a comprehensive and unbiased analysis of the gene transcr
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We collected data and whole peripheral blood samples for transcriptomic profiling from adults (≥18 years) with TBM enrolled into two randomized controlled trials conducted in Vietnam. The two trials investigated whether adjunctive dexamethasone improves outcome from TBM and the protocols for both trials have been published (Donovan et al., 2018b; Donovan et al., 2018a). The ACT-HIV trial (NCT03092817) completed enrolment and follow-up of 520 HIV-positive adults with TBM in April 2023, with the results accepted for publication (Donovan et al., 2023). The LAST-ACT trial (NCT03100786) completed enrollment of 720 HIV-negative adults with TBM in March 2023, with the last participants due to complete follow-up in March 2024.
 
@@ -159,33 +1115,33 @@ Peripheral blood samples were taken for transcriptional profiling from two other
 
 Ethics approval was obtained from the institutional review board at the Hospital for Tropical Diseases, Pham Ngoc Thach Hospital and the ethics committee of the Ministry of Health in Vietnam, and the Oxford Tropical Research Ethics Committee, UK (OxTREC 52–16, 36–16, 24–17, 33–17 and 532–22). All participants provided their written informed consent to take part in the study, or from their relatives if they were incapacitated.
 
-## Study design
+### Study design
 
 The objectives and cohorts used in this study are presented in Figure 1 and a workflow of data analysis is shown in Figure 1—figure supplement 1. Briefly, blood transcriptional profiling was generated from four cohorts of 207 TBM HIV-negative, 74 TBM HIV-positive, 279 PTB and 30 healthy controls. To define transcriptional signatures associated with TBM mortality, data from all 281 TBM participants were used. To ensure reproducibility, in our main analysis we randomly split our TBM data into two datasets, a discovery cohort (n=142) and a validation cohort (n=139). After identifying gene modules associated with mortality, related functional pathways and hub genes were determined. In a broader view, gene enrichment and expression from significant pathways and hub genes were illustrated across all four cohorts. Next, outcome prediction models were developed for TBM. Finally, the association of hub genes and outcome prediction then was validated in qPCR HIV-negative TBM cohort.
 
-## Sample processing and RNA-seq
+### Sample processing and RNA-seq
 
 Whole blood samples, collected from participants at enrollment, were stored in PAXgene collection tubes at –80 °C. RNA extraction and RNA-seq were done in 2 batches. Batch 1 was done in 2020 including 207 HIV-negative TBM, 31 HIV-positive TBM and 296 PTB. Batch 2 was done in 2022 including 43 HIV-positive TBM and 30 Healthy control. RNA samples were isolated using the PAXgene Blood RNA kits (QIAGEN, Valencia, CA, USA) following the manufacturer’s instructions, except for an additional washing step before RNA elution. DNA was digested on columns using the RNase-free DNase Set (QIAGEN, Valencia, CA, USA). Quality control of the RNA extraction was performed using the Epoch spec for quantity and quality, and Tapestation Eukaryotic RNA Screentape for integrity. Samples with RNA integrity number below 4 were exclude for further steps. RNA-seq was performed by the Ramaciotti Centre for Genomics (Sydney, Australia). One microgram of total RNA was used as input for each sample, using the TruSeq Stranded Total RNA Ribo-zero Globin kit (Illumina). Libraries were generated on the Sciclone G3 NGS (Perkin Elmer, Utah, USA) and the cDNA was amplified using 11 PCR cycles. Libraries were pooled 75 samples per pool and sequenced using NovaSeq 6000 S4 reagents at 2x100 bp to generate about 30 million reads per sample.
 
-## RNA-seq data quality control and pre-processing
+### RNA-seq data quality control and pre-processing
 
 Quality control and alignment were performed using an in-house pipeline modified from previously published practices for RNA-seq analysis (Yalamanchili et al., 2017; Conesa et al., 2016) in linux command line. Briefly, the quality of the sequencing fastq files was analyzed using FastQC (v0.11.5) and poor quality samples were excluded from further analysis. Sequence reads were adapter and quality trimmed using Trimmomatic (v0.36), followed by duplicated optical read removal using BBMap (v38.79) tool. STAR aligner (v2.5.2a) was used to align the reads to the human reference genome (GRCh38 build 99) downloaded from Ensembl, allowing for maximum 2 mismatches in each 25 bp segment and a maximum of 20 alignment hits per read (Dobin et al., 2013; Bolger et al., 2014). The alignment results were sorted and indexed for downstream analyses as BAM format files. The aligned reads were further utilized to generate gene expression counts using FeatureCounts (v2.0.0) against the human reference annotation (GRCh38 build 99; Liao et al., 2014). Next, 60,067 genes in the expression matrix were first normalized by variance stabilizing transformation method built in DESeq2 package in R (Love et al., 2014). Subsequently, the batch effect was removed for 20,000 most variable genes using combat function in the SVA package which corrected for 2 RNA-seq batches (Leek et al., 2012). The results of batch effect removal were visualized by principle component analysis. First component was plotted against second component. The variation explained by RNA-seq batches was removed after using combat (Figure 1—figure supplement 2). All later analysis and data visualization were done used batch corrected data.
 
-## WGCNA preservation analysis on discovery and validation dataset
+### WGCNA preservation analysis on discovery and validation dataset
 
 In this study, WGCNA from Bioconductor R package (version 4.3.3) was used to construct weighted genes co-expression network in discovery dataset (n=139). In brief, 20,000 most variant genes out of 60,067 genes in the expression matrix were first selected and normalized by variance stabilizing transformation method built in DESeq2 package in R. The batch effect was removed on normalized expression data using combat function in the SVA package. After removing batch effect, 5000 most variable genes across 281 TBM were input in unsupervised principle component analysis to check for potentially outlying individuals. Specifically, we declared individuals as outliers if they were > 2.5 standard deviations away from the mean first or second principle component. No individual was classified as outliers using these criteria. Using WGCNA, the similarity matrix between each pair of genes across all samples was calculated based on its Pearson’s correlation value. Then, the similarity matrix was transformed into an adjacency matrix. Subsequently, the topological overlap matrix (TOM) and the corresponding dissimilarity (1-TOM) value were computed based on soft threshold β = 8 which meet the criteria for scale-free topology property of the co-expression network (R2-cutoff for scale-free topology  = 0.85). Finally, a dynamic tree cut algorithm with deepSplit of 2, cut height of 0.975 and minimum module size of 30 genes, was employed to detect gene co-expression modules, groups of genes with a similar expression. The expression patterns of each gene module were summarized by the first principle component (PC1). Pairs of modules were subsequently merged if the correlation between the modules’ PC1 exceeded 0.7. Genes that did not fit the clustering criteria were combined in a leftover group named grey.
 
 If a module in the discovery dataset is not determined randomly, it will be reproduced in validation dataset. In this study, module preservation statistics was used to validate whether a defined module in discovery dataset could also be found in validation dataset. The WGCNA used two composite preservation statistics for module preservation: First, Z-summary distinguished preserved modules from non-preserved ones through the permutation test (n Permutations = 1000). Values below 2 of Z-summary indicate non-preserved modules, while values over 2 represent moderately preserved modules, and values over 10 provides strong evidence of module preservation. Next, median ranks were computed. In comparisons of the two modules, the one with a higher median rank was considered to have a lower preservation tendency (Langfelder et al., 2011).
 
-## WGCNA consensus analysis in HIV-negative and HIV-positive TBM cohorts
+### WGCNA consensus analysis in HIV-negative and HIV-positive TBM cohorts
 
 Similar to preservation analysis, 5000 most variance genes were input in WGCNA consensus analysis. The similarity matrix between each pair of genes across all samples was calculated based on its Pearson’s correlation value. Then, the similarity matrix was transformed into an adjacency matrix. Subsequently, the topological overlap matrix (TOM) and the corresponding dissimilarity (1-TOM) value were computed based on soft threshold β = 8 which meet the criteria for scale-free topology property of the co-expression network. Considering the diverse statistical properties between different HIV-negative and HIV-positive data sets, we scaled and transformed the HIV-positive TOM to make it equivalent to that HIV-negative and obtained consensus modules between two TBM cohorts; the consensus TOM was calculated with component-wise (‘parallel’) minimum of the TOMs for each set. To obtain large modules, the ‘minModuleSize’ parameter, indicating the minimum module size of the modules, was set as 30. Genes with similar expression patterns were separated into different modules with the ‘cutreeDynamic’ function; to evaluate and group the co-expression similarities of all modules, the eigengenes (MEs) were calculated, clustered, and mapped to the related consensus modules; then, modules with a correlation of 0.75 were merged with ‘mergeCloseModules’ function using default parameters.
 
-## Validation of hub genes by Microfluidic multiplex RT-qPCR
+### Validation of hub genes by Microfluidic multiplex RT-qPCR
 
 Whole blood samples were collected, stored and RNA extraction was performed as described in previous section. The expression of housekeeping genes (GAPDH and TMBIM6) and other hub genes were evaluated by microfluidic RT-qPCR using Biomark 48.48 Complete Bundle with Delta Gene Assays and BioMark HD system (Fluidigm Corporation, South San Francisco, CA, USA) following manufacturer’s instructions with some optimized modifications. Briefly, 2 µL of total RNA with concentration of 50 ng/µL was reverse transcribed to cDNA. The specific target amplification (STA) of cDNA was used for 14 cycles of preamplification, then the STA products were treated with Exonuclease I (New England Biolabs, Ipswich, MA, USA) before 20-fold dilution. SsoFast EvaGreen Supermix with Low ROX (Bio-Rad Laboratories, Hercules, CA, USA) was used in RT-qPCR before applying to IFC Controllers MX and BioMark HD system (Fluidigm Corporation, South San Francisco, CA, USA). The CT values of target hub genes were normalized before analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 The primary outcome examined in this study was TBM three-month mortality. In the descriptive analysis, we summarized and tested association of patient characteristics with three-month mortality using univariate Cox regression analysis. We presented the proportion for binary variables and median (1st and 3rd interquartile range) for continuous variables.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.34176.001 Formins are major regulators of actin networks. They enhance actin filament dynamics by remaining processively bound to filament barbed ends. How biochemical and mechanical factors affect formin processivity are open questions. Monitoring individual actin filaments in a microfluidic flow, we report that formins mDia1 and mDia2 dissociate faster under higher ionic strength and when actin concentration is increased. Profilin, known to increase the elongation rate of formin-associated filaments, surprisingly decreases the formin dissociation rate, by bringing formin FH1 domains in transient contact with the barbed end. In contrast, piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude, largely overcoming profilin-mediated stabilization. We developed a model of formin conformations showing that our data indicates the existence of two different dissociation pathways, with force favoring one over the other. How cells limit formin dissociation under tension is now a key question for future studies.
+Formins are major regulators of actin networks. They enhance actin filament dynamics by remaining processively bound to filament barbed ends. How biochemical and mechanical factors affect formin processivity are open questions. Monitoring individual actin filaments in a microfluidic flow, we report that formins mDia1 and mDia2 dissociate faster under higher ionic strength and when actin concentration is increased. Profilin, known to increase the elongation rate of formin-associated filaments, surprisingly decreases the formin dissociation rate, by bringing formin FH1 domains in transient contact with the barbed end. In contrast, piconewton tensile forces applied to actin filaments accelerate formin dissociation by orders of magnitude, largely overcoming profilin-mediated stabilization. We developed a model of formin conformations showing that our data indicates the existence of two different dissociation pathways, with force favoring one over the other. How cells limit formin dissociation under tension is now a key question for future studies.
 
 ## Introduction
 
@@ -39,11 +39,57 @@ Here, we systematically quantify the dissociation rate of mammalian formins mDia
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig1-v1.jpg)
 
-**Figure 1.:** (A–C) Different experimental configurations using microfluidics for the study of formin processivity, showing sketches of the side view (top) and typical kymographs of individual filaments (bottom). (A) Alexa 488 labeled actin filaments are elongated from surface-anchored spectrin-actin seeds. Transient exposure to a formin solution puts formins on filament barbed ends, which elongate faster (here in the presence of 1 µM 15% Alexa 488 labeled actin +5 µM profilin, at 100 mM KCl). Upon formin dissociation, the barbed end elongates slower. Images were acquired in TIRF microscopy. See Video 1. (B) Same configuration as in (A), but the filaments are exposed to a periodic alternation of different conditions: here a solution of unlabeled actin (0.3 µM actin, 50 mM KCl) for 100 s and a solution of 15% Alexa 488 labeled actin (0.5 µM actin +2 µM profilin, 50 mM KCl) for 20 s. Images were acquired in epifluorescence while exposing to unlabeled actin. See Video 2. (C) Configuration where formins are anchored to the surface by their C-terminus. Filaments were nucleated using a solution of labeled actin and elongated by flowing in a solution of unlabeled actin (here, 0.3 µM actin, at 50 mM KCl), until the filaments eventually detached and disappeared. The viscous drag applied on the filaments was kept low (<0.1 pN) by working with low flow rates. Images were acquired in epifluorescence. See Video 3. (D) Domain architecture and boundaries for the mDia1 and mDia2 formin constructs used in this study. (E) Survival fractions of mDia1(FH1-FH2-DAD) formin-bound barbed ends as a function of time, obtained from three independent experiments performed in the same conditions, in the experimental configuration shown in (A). Curves are fitted by a mono-exponential decay to obtain formin dissociation rate k.off
+**Figure 1.:** (A–C) Different experimental configurations using microfluidics for the study of formin processivity, showing sketches of the side view (top) and typical kymographs of individual filaments (bottom). (A) Alexa 488 labeled actin filaments are elongated from surface-anchored spectrin-actin seeds. Transient exposure to a formin solution puts formins on filament barbed ends, which elongate faster (here in the presence of 1 µM 15% Alexa 488 labeled actin +5 µM profilin, at 100 mM KCl). Upon formin dissociation, the barbed end elongates slower. Images were acquired in TIRF microscopy. See Video 1. (B) Same configuration as in (A), but the filaments are exposed to a periodic alternation of different conditions: here a solution of unlabeled actin (0.3 µM actin, 50 mM KCl) for 100 s and a solution of 15% Alexa 488 labeled actin (0.5 µM actin +2 µM profilin, 50 mM KCl) for 20 s. Images were acquired in epifluorescence while exposing to unlabeled actin. See Video 2. (C) Configuration where formins are anchored to the surface by their C-terminus. Filaments were nucleated using a solution of labeled actin and elongated by flowing in a solution of unlabeled actin (here, 0.3 µM actin, at 50 mM KCl), until the filaments eventually detached and disappeared. The viscous drag applied on the filaments was kept low (<0.1 pN) by working with low flow rates. Images were acquired in epifluorescence. See Video 3. (D) Domain architecture and boundaries for the mDia1 and mDia2 formin constructs used in this study. (E) Survival fractions of mDia1(FH1-FH2-DAD) formin-bound barbed ends as a function of time, obtained from three independent experiments performed in the same conditions, in the experimental configuration shown in (A). Curves are fitted by a mono-exponential decay to obtain formin dissociation rate koff.
+
+![Video 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-video1.mp4.jpg)
+
+**Video 1.:** Images were acquired in TIRF. Full field of view is 137 × 137 µm. Interval between images is 5 s (movie is accelerated 75x). The solution flows from left to right. Corresponds to Figure 1A of the main text.
+
+![Video 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-video2.mp4.jpg)
+
+**Video 2.:** The filaments are transiently exposed to a solution of 11 nM mDia1(FH1-FH2-DAD) for 5 s, after frame number 5. Images were acquired in epifluorescence while exposing to unlabeled actin. Full field of view is 137 × 137 µm. Interval between images is 120 s (movie is accelerated 360x). The solution flows from left to right. Corresponds to Figure 1B of the main text.
+
+![Video 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-video3.mp4.jpg)
+
+**Video 3.:** Full field of view is 221 × 221 µm. Images were acquired in epifluorescence. Interval between images is 10 s (movie is accelerated 70x). A minimal flow is applied. The solution flows from left to right. Corresponds to Figure 1C of the main text.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig2-v1.jpg)
+
+**Figure 2.:** (A,B) Effect of salt concentration on the survival fraction of formin-bound barbed ends (A), on the formin dissociation rates (B, log-linear scale) as well as on the barbed end elongation rates (B, inset). The dissociation rates in (B) result from the exponential fits (black lines) shown in (A). Each data point corresponds to a population of 30–40 filaments. (C,D) Effect of the actin Alexa 488 labeling fraction on the survival fraction of formin-bound barbed ends (C), on the formin dissociation rates (D) and on the barbed end elongation rates (D, inset). Each data point in (D) corresponds to a population of 30–40 filaments. Error bars on formin dissociation rates indicate 65% confidence intervals based on exponential fits and sample size (see Materials and methods), and error bars on elongation rates indicate standard deviations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig2-figsupp1-v1.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-v1.jpg)
+
+**Figure 3.:** (A, C) Variation of the mDia1 (A) or mDia2 (C) formin dissociation rate as a function of the barbed end elongation rate. Each data set (N = 30–40 filaments) was obtained with a fixed profilin concentration and different actin concentrations, at 100 mM KCl. Each point corresponds to an independent experiment, performed with 15% Alexa 488-labeled actin, except for the data of mDia1 without profilin which were acquired with unlabeled actin (as described in Figure 1B). (B, D) Variation of the formin dissociation rate and the barbed end elongation rate (inset) as a function of profilin concentration, (B) for mDia1 formins with a full length FH1 (FH1-FH2-DAD) and with a truncated FH1 containing only two polyproline tracks (FH1(2PP)-FH2-DAD), and (D) for mDia2(FH1-FH2-DAD). The data was obtained with 15% Alexa 488-labeled actin, at 100 mM KCl. The same profilin dependence was observed using unlabeled actin, for both 50 and 100 mM KCl (Figure 2—figure supplement 1). Each data point corresponds to the average of 1–3 independent experiments. (E) Variation of the formin dissociation rate as a function of the barbed end elongation rate: for mDia1(FH2-DAD) homodimers in the presence or absence of profilin, and for mDia1(FH1-FH2-DAD) in the absence of profilin, all with unlabeled actin. (F) Sketch illustrating the profilin-mediated interaction between FH1 and the barbed end, forming the ‘ring complex’, which appears to prevent the dissociation of formin from the barbed end. Error bars on formin dissociation rates indicate 65% confidence intervals based on exponential fits and sample size (see Materials and methods), and error bars on elongation rates indicate standard deviations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each data point corresponds to an independent experiment (N = 30–40 filaments) which was conducted at 100 mM KCl. Error bars indicate standard deviations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Survival fraction of mDia1 formin-anchored filaments (N = 30 for each curve), exposed to negligible force (<0.1 pN) while elongating with 1 µM actin and either zero (blue), 10 µM (gray) or 20 µM profilin-R88E mutant (black). Inset: average elongation rates measured in the same conditions (subset of N = 11–13 filaments, for each condition). Error bars represent standard deviations.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sketch of the experimental configuration, similar to that of Figure 1C, but where significant forces are applied using various flow rates. The applied force scales with the filament length. (B) Survival fractions of mDia1-anchored filaments, elongating with 1 µM actin +10 µM profilin, using different flow rates to reach different force ranges: each filament underwent 0.051 pN/µm (initial filament length = 4.9 µm, N = 46 filaments), 0.204 pN/µm (initial filament length = 3.2 µm, N = 49) or 0.501 pN/µm (initial filament length = 2.6 µm, N = 49) for ‘low’, ‘medium’ and ‘high’ flow rate curves, respectively. (C–E) mDia1 formin dissociation rate as a function of applied force (log-linear plots), for different actin concentrations in the absence of profilin (C); for 1 µM actin with different profilin concentrations (D); for 0.3 µM actin in presence or absence of FH1 domains (E, top); and for 1 µM actin, 4 µM profilin for mDia1 (FH1-FH2-DAD) formins either anchored by their FH1 N-terminus or FH2 C-terminus (E, bottom). Experiments were carried out by elongating the filaments with unlabeled actin, at 50 mM KCl. (F) mDia1 and mDia2 formin dissociation rates as a function of applied force (log-linear plots), for different profilin and unlabeled actin concentrations, at 100 mM KCl. Dissociation rates were obtained by local fits of the slope in survival fractions similar to the ones shown in (B) (see Materials and methods). Each data point is either obtained from a single experiment or is the average of 2–3 independent experiments. The data points at zero force were measured independently, using the configuration shown in Figure 1B (striped filaments). The error bars indicate standard deviations when several independent experiments were grouped (data from individual experiments for (C) and (D) are shown in Supp. Figure 4—figure supplement 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Nucleation of new filaments from surface-anchored mDia1 formins. The anchored mDia1(FH1-FH2-DAD) formins that participated in a pulling force experiment with 1 µM actin 4 µM profilin in a moderate flow (i.e. reaching a pulling force ~1–4 pN before filaments detached) as depicted in Figure 4, were subjected to a renucleation assay to assess if they were still present on the coverslip surface and functional. The renucleation assay consisted in exposing them alternatively, at the same flow rate, to a solution of F-buffer at 25 mM KCl, 2 µM 15% Alexa 488-labeled actin, 0.4 µM profilin and to a solution of F-buffer at 100 mM KCl, 1 µM unlabeled actin, 4 µM profilin, for 15 s each. The formins that were observed renucleating a filament (‘1 st renucleation’, light blue), eventually let go of that filament and could be observed nucleating another filament (‘2nd renucleation’, dark blue). The dashed line indicates that 74% of the formins had nucleated a new filament after 500 s.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** mDia1 formin dissociation rate as a function of applied force (log-linear plots): for different actin concentrations in the absence of profilin (left); for 1 µM actin with different profilin concentrations (right). Dissociation rates were obtained by local fits of the slope in survival fractions similar to the ones shown in Figure 4B (see Materials and methods). Each data point is obtained from a single experiment. Error bars indicate the standard deviations for force and the ±0.13% uncertainty on the dissociation rate, accounting for formin detachments from the surface (see Materials and methods). Grouping these data in bins of similar forces resulted in the plots shown in Figure 4C and D.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** C-terminus anchored mDia2 (FH1-FH2-DAD) formin elongation rate as a function of the applied tension for 2 µM unlabeled actin in absence (left) or in presence of 4 µM profilin (right), at 100 mM KCl. Data from both conditions are simultaneously fitted, according to the model from (Jégou et al., 2013), resulting in the probability to be in the open state p0 = 69%, and kon = 1.5 and 18.4 µM−1.s−1 in the absence or presence of profilin, respectively.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig5-v1.jpg)
 
-**Figure 5.:** Mean flament length (A) as a function of actin concentration, in the absence of profilin, normalized by its value at 1 µM actin (which equals 0.65 µm for mDia1 and 8.22 µm for mDia2); (B) mean length as a function of profilin concentration, at 1 µM actin, normalized by its value in the absence of profilin; (C) mean length as a function of force, at 2 µM actin 4 µM profilin for mDia2, and at 1 µM actin 4 µM profilin for mDia1, normalized by its value in the absence of force (83.7 µm for mDia2 and 7.45 µm for mDia1). All data were acquired at 100 mM KCl. Error bars indicate standard deviations.10.7554/eLife.34176.019Figure 5—source data 1.Figure 5.Units and conditions are indicated in the figures legends. The data are on separate sheets, as indicated on the thumbnails.
+**Figure 5.:** Mean flament length (A) as a function of actin concentration, in the absence of profilin, normalized by its value at 1 µM actin (which equals 0.65 µm for mDia1 and 8.22 µm for mDia2); (B) mean length as a function of profilin concentration, at 1 µM actin, normalized by its value in the absence of profilin; (C) mean length as a function of force, at 2 µM actin 4 µM profilin for mDia2, and at 1 µM actin 4 µM profilin for mDia1, normalized by its value in the absence of force (83.7 µm for mDia2 and 7.45 µm for mDia1). All data were acquired at 100 mM KCl. Error bars indicate standard deviations.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34176/elife-34176-fig6-v1.jpg)
 
@@ -51,7 +97,7 @@ Here, we systematically quantify the dissociation rate of mammalian formins mDia
 
 ## Results
 
-## Single-filament Microfluidics is an efficient means to measure formin processivity under various conditions
+### Single-filament Microfluidics is an efficient means to measure formin processivity under various conditions
 
 We have carried out experiments using a standard microfluidics chamber with three inlets, in different configurations (Figure 1A–C and Materials and methods). Using anchored spectrin-actin seeds we have monitored the growth of free actin filaments barbed ends, which we exposed to a solution of formin for typically ten seconds and resumed exposing to constant concentrations of actin and profilin. The presence of formin at the barbed end was visible thanks to its faster elongation (in the presence of profilin). This configuration was used with fluorescently labeled actin (Figure 1A) or alternating exposure to labeled actin with unlabeled actin, producing striped filaments, which allowed us to measure formin related rate constants when incorporating fully unlabeled actin segments (Figure 1B, Materials and methods). Another configuration consisted in anchoring formins to the coverslip surface, nucleating and elongating filaments from these formins (Figure 1C). This allowed us to monitor the elongation of filaments from unlabeled actin, and the dissociation of the formin from the barbed end was revealed by the detachment of the filament which is then carried away by the flow. This configuration applies calibrated forces to the filament-formin interaction (Jégou et al., 2013), which can be kept very low (<0.1 pN) using a low microfluidics flow rate, or made significant, up to several pN, by increasing the flow rate (Figure 4). Except for the variant with striped filaments, we have used these experimental configurations in earlier studies (Jégou et al., 2013; Montaville et al., 2014; Shekhar et al., 2015).
 
@@ -59,13 +105,13 @@ These different configurations allowed us to measure, under a given set of condi
 
 We used purified actin from rabbit muscle, either unlabeled or labeled on lysine 328 with Alexa 488 (Tóth et al., 2016). We used recombinant formin constructs (Figure 1D): mDia1(FH1-FH2-DAD) with full length functional domains; a truncated mDia1(FH1(2PP)-FH2-DAD) with an FH1 domain that contained only the two polyproline (PP) tracks closest to the FH2 domain; mDia1(FH2-DAD) which contained no FH1 domain at all; and mDia2(FH1-FH2-DAD).
 
-## Impact of ionic strength and actin labeling on formin processivity
+### Impact of ionic strength and actin labeling on formin processivity
 
 Varying KCl concentration in our assay buffer (see Materials and methods), we found that the ionic strength had a strong impact on formin dissociation (Figure 2A,B). In comparison, the same variations of the ionic strength had a limited impact on the barbed end elongation rate, with or without formins (Figure 2B, inset). In order for formin dissociation rates to be in a range that could be measured accurately, we have used either 50 or 100 mM KCl depending on whether we were studying mDia1 or mDia2 formins, and whether mechanical tension was applied. We have verified that the effects we report in the rest of this paper are not qualitatively affected by the choice of ionic strength (Figure 2—figure supplement 1).
 
 Labeling actin with a fluorophore can hinder its polymerization or its interaction with regulatory proteins (Chen et al., 2012; Kuhn and Pollard, 2005) and lead to unsuspected artefacts (Niedermayer et al., 2012). Here, our labeling of actin on lysine 328 with Alexa 488 fluorophore had no measurable impact on the elongation rate of formin-free barbed ends, but slowed down their elongation with formins significantly and enhanced formin dissociation rate (Figure 2C,D). Using our microfluidics setup to measure reaction rates with unlabeled actin (Figure 1B,C), we have verified that the conclusions we drew from the observation of 15% Alexa 488-labeled actin filaments were not biased by labeling (Figure 2—figure supplement 1).
 
-## Profilin increases formin processivity, involving FH1 domains
+### Profilin increases formin processivity, involving FH1 domains
 
 For a given profilin concentration, the barbed end elongation rate velong scales with the actin concentration (with or without formin, Figure 3—figure supplement 1) and we observed that the formin dissociation rate koff increased with actin concentration, and thus with the elongation rate (Figure 3A,C). This confirmed earlier observations on yeast formin Bni1p (Paul and Pollard, 2008). However, for both mDia1 and mDia2, the amplitude of the increase of the formin dissociation rate with actin concentration appeared to depend significantly on profilin concentration (Figure 3A,C). As a result, there is no universal scaling of koff with the elongation rate. In fact, using different sets of actin and profilin concentrations, one can obtain identical elongation rates with very different formin dissociation rates.
 
@@ -75,7 +121,7 @@ In order to estimate the role of the FH1 domains in the profilin-induced reducti
 
 To further investigate the contribution of the FH1 domains, we then asked whether the reduction of the dissociation rate by profilin required its binding to the FH1 domain, or if the rapid equilibrium of profilin with the barbed end was enough to stabilize its interaction with the formin. We reasoned that if the latter hypothesis was correct, the processivity of mDia1(FH2-DAD) dimers (with no FH1 domains) should be enhanced by the binding of profilin to the barbed end. To test this, we compared the FH2 dimer dissociation rate for different barbed end elongation rates, obtained in the presence or absence of profilin (Figure 3E). We found that the presence of a large excess of profilin, which significantly puts the barbed end in a profilin-bound state and slows down its elongation (Jégou et al., 2011; Pernier et al., 2016), led to the same FH2 dimer dissociation rate as when the same elongation rates were reached without profilin. Thus, in the absence of FH1 domains, profilin simply reduces the dissociation rate of the FH2 dimer by slowing down barbed elongation. These results indicate that FH1 is required in order for profilin to decrease the formin dissociation rate koff independently of the barbed end elongation rate. In the absence of profilin, FH1-FH2 behaved like FH2 (Figure 3E), indicating that the presence of FH1 domains alone, in the absence of profilin, has no impact on processivity. Mutant profilin-R88E, which binds to FH1 but not to actin (Kovar et al., 2006; Lu and Pollard, 2001), has no impact on processivity (Figure 3—figure supplement 2), indicating that the interaction of profilin with G-actin and/or filament barbed ends is required in order to decrease the formin dissociation rate.
 
-## Mechanical tension strongly decreases formin processivity
+### Mechanical tension strongly decreases formin processivity
 
 In cells, anchored formins are exposed to mechanical tension applied to actin filaments, typically as a consequence of myosin activity. We thus investigated the impact of such forces on formin processivity. To do so, we performed experiments with surface-anchored formins, in the configuration shown in Figure 1C, but using higher flow rates in order to apply significant tension to the filaments (Figure 4A). In a previous study, we have shown that the force at the anchoring point scales with the filament length (Jégou et al., 2013), and thus increases as the filaments elongate over time. Here, the sigmoidal shape of the survival fractions over time indicated an increase of the dissociation rate koff with the applied force (Figure 4B). In order to avoid making assumptions regarding the force-dependence of the dissociation rate koff, we determined koff at different forces by local fits of the survival fractions (see Materials and methods). We verified that the filament detachment events observed during the experiment corresponded to filament-formin dissociations (as sketched in Figure 4A) by checking that formins were still on the surface at the end of the experiment (see Materials and methods and Figure 4—figure supplement 1).
 
@@ -85,7 +131,7 @@ We found a similar increase of koff with tension for mDia1 FH2 dimers (i.e. with
 
 ## Discussion
 
-## Processivity mostly relies on FH2-filament interactions, with an unexpected contribution of FH1 domains
+### Processivity mostly relies on FH2-filament interactions, with an unexpected contribution of FH1 domains
 
 Formin control of actin filament elongation at the barbed end is mediated by its homology domains FH1 and FH2, as well as its tail domain, DAD (Gould et al., 2011; Vizcarra et al., 2014). We quantified formin processivity by measuring its dissociation rate koff. Our data indicate that FH2-barbed end interactions are destabilized by ions (Figure 2A). These results confirm that salt bridges mediating FH2-actin interactions, which have been predicted from molecular dynamics simulations (Baker et al., 2015), are essential determinants of the residence time of formin at the barbed end. Our data also indicate that FH2-actin interactions are destabilized by the presence of a fluorescent label on actin subunits (Figure 2C), consistent with the notion that the lateral contacts of FH2 with actin subunits are essential to maintain the formin at the barbed end (Otomo et al., 2005).
 
@@ -99,7 +145,7 @@ This FH1-profilin-mediated stabilization does not seem to resist pulling forces,
 
 The different factors that we report here to affect formin processivity may also modulate the resulting average filament length (i.e. the filament elongation rate divided by the formin dissociation rate) in a non-trivial way (Figure 5). An increase in actin concentration increases the elongation rate while reducing processivity, and as a result the filament length varies moderately (Figure 5A). In contrast, increasing the profilin concentration efficiently generates longer filaments (Figure 5B) since both processivity and elongation rates are strongly increased. The application of mechanical tension drastically decreases the resulting filament length (Figure 5C) because the increase in elongation rate (see Jégou et al., 2013) for mDia1, Figure 4—figure supplement 3 for mDia2) is very moderate compared to the decrease in processivity. For both mDia1 and mDia2, filament length is typically reduced ten-fold every 3 pN. Compared to mDia1, mDia2 elongates filaments more slowly in all the conditions we tested, but it is far more processive, resulting in the formation of much longer filaments. This feature appears to reflect differences in their FH2-DAD domains since it persists in the absence of profilin.
 
-## Modeling FH2 conformations at the barbed end
+### Modeling FH2 conformations at the barbed end
 
 Putting the contributions of FH1 domains and profilin aside, our results show that the elongation velocity, hence the addition of actin subunits, enhances formin dissociation from the barbed end (Figure 3A). This suggests that the FH2 dimer goes through a transient, weakly bound state, every time a new actin subunit is added (Figure 6A), as already proposed by (Paul and Pollard, 2008). Based on this idea, we have built a mathematical model predicting the elongation velocity velong and dissociation rate koff for a barbed-end associated formin as a function protein concentrations and force. This model and its predictions are presented in detail in Appendix 1.
 
@@ -115,7 +161,7 @@ Our model for dissociation primarily includes the notion that the FH2 dimer goes
 
 In the absence of force, our data show a strong dependence of formin dissociation on actin concentration, i.e. on elongation rate (Figure 3A and C) meaning that koffT(f = 0) is the dominant contribution to the global koff(f = 0). When pulling forces are applied, the formin dissociation rates for different actin concentrations converge, i.e. koff(f) does not depend on actin concentration anymore (Figure 4C and F). The model predicts such a behavior when koffO(f) increases with force more strongly than koffT(f), and thus becomes dominant at high forces (Figure 6B). In contrast, the situation where koffT(f) remains the dominant contribution to dissociation results in curves for koff(f) at different actin concentrations that remain well separated at high forces (Figure 6C). Together our model and data thus indicate that, while dissociation from the transition state is the dominant route at low force, it is the dissociation from the open state that dominates at high force.
 
-## How do cells manage formin dissociation in a mechanical context?
+### How do cells manage formin dissociation in a mechanical context?
 
 Our results show that mechanical tension plays a dominant role in the modulation of formin processivity. The dramatic enhancement of formin dissociation, upon application of piconewton forces, appears difficult to compensate with the other factors we have tested, such as actin and profilin concentrations. In cells, where filaments are likely to be tensed mainly because of myosin activity, our results raise questions regarding how these filaments may remain in interaction with membrane-anchored formins. Since it seems unlikely that filaments detach from membranes as soon as moderate forces are applied, they may cumulate alternative anchoring strategies, or see their interaction with formins reinforced by other factors.
 
@@ -123,7 +169,94 @@ In cells, formin-elongated filaments are often found in bundles, a situation whi
 
 ## Materials and methods
 
-## Proteins and buffers
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Thermo Fischer</td>
+      <td>Cat# C600003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rabbit)</td>
+      <td>Rabbit muscle</td>
+      <td>INRA Jouy-en-Josas</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse mDia1(FH1-FH2-DAD)</td>
+      <td>Uniprot</td>
+      <td>O08808</td>
+      <td>seq. 552–1255 aa</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse mDia2(FH1-FH2-DAD)</td>
+      <td>Uniprot</td>
+      <td>Q9Z207</td>
+      <td>seq. 521–1171 aa</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human profilin-1</td>
+      <td>Uniprot</td>
+      <td>P07737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PentaHis Biotin conjugate</td>
+      <td>Qiagen</td>
+      <td>34440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 succinimidyl ester</td>
+      <td>Life Technologies</td>
+      <td>Cat#A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protino Ni-NTA Agarose beads</td>
+      <td>Macherey-Nagel</td>
+      <td>Cat#745400.25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiLoad 16/60 Superdex 200 gel filtration column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#28-9893-35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>numpy/scipy packages</td>
+      <td>Python</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Proteins and buffers
 
 Skeletal muscle actin was purified from rabbit muscle acetone powder (Pel-freeze) following the protocol described in (Wioland et al., 2017), adapted from the original protocol (Spudich and Watt, 1971). Actin was fluorescently labeled on accessible surface lysine 328 of F-actin (Tóth et al., 2016), using Alexa 488-NHS (LifeTechnologies).
 
@@ -135,7 +268,7 @@ Spectrin-actin seeds were purified from human erythrocytes as described in Wiola
 
 Experiments were performed in F-buffer (5 mM Tris-HCl pH 7.8, 1 mM MgCl2, 0.2 mM EGTA, 0.2 mM ATP, 10 mM DTT and 1 mM DABCO) with various concentrations of KCl, as indicated in the main text and figures.
 
-## Microfluidics setup and experiments
+### Microfluidics setup and experiments
 
 Protein solutions were injected into a Poly-Dimethyl-Siloxane (PDMS, Sylgard) chamber, 20 µm or 40 µm in height, 800 µm in width and 1 cm in length. Chambers were mounted on glass coverslips previously cleaned for 20 min in ultrasonic baths of 1M KOH, ethanol and dH20. PDMS chambers and glass coverslips were UV-treated (UVO cleaner, Jelight) to allow them to bind tightly to each other. We used cross-shaped channels with three inlets. We controlled the pressure in the reservoir and measured the flow rate in each channel using an MFCS and Flow Units (Fluigent).
 
@@ -143,7 +276,7 @@ For experiments with anchored pointed ends (configurations shown in Figure 1A,B)
 
 The anchoring of formins to the coverslip surface (configurations shown in Figures 1C and 4A) was achieved in various ways, with similar results. Surfaces were first passivated and functionalized with biotin, either with PLL-PEG containing a fraction of PLL-PEG-biotin (SuSoS, Switzerland) or with a mixture of BSA and biotinylated BSA. The surfaces were then incubated for 5 min with neutravidin (20 µg/mL) and rinsed. The various formin constructs all contained a C-terminal 6xHis tag to anchor them via a biotinylated anti-His (penta-His, Qiagen). To anchor specifically the mDia1 (FH1-FH2-DAD) via its N-terminus, we used a biotinylated SNAP-tag construct.
 
-## Microscopy and image acquisition
+### Microscopy and image acquisition
 
 The microfluidic setup was placed on a Nikon TiE inverted microscope, equipped with a 60x oil-immersion objective. We either used TIRF, HiLo or epifluorescence depending on the background fluorophore concentration in solution. Two different TiE microscope setups were used. The TIRF setup was controlled by Metamorph, illuminated in TIRF or epifluorescence by 100 mW tunable lasers (iLAS2, Roper Scientific), and images were acquired by an Evolve EMCCD camera (Photometrics). The other TiE setup was controlled by micromanager (Edelstein et al., 2014), illuminated with a 200W Xcite lamp (Lumen dynamics) and images were acquired by an sCMOS Orca-Flash4.0 V2+ camera (Hamamatsu).
 
@@ -151,23 +284,23 @@ Images were analyzed using ImageJ software.
 
 The experiments were performed at room temperature, in an air-conditioned environment. We nonetheless measured day-to-day variations of room temperature, between 19°C and 23°C, and found that these temperature changes correlated with variations in filament elongation rates and formin dissociation rates: higher temperatures favored faster elongation and faster dissociation. To minimize the impact of such variations, and obtain consistent data, experiments and their controls were systematically repeated on the same day.
 
-## Data analysis
+### Data analysis
 
 To avoid any bias related to the selection of filaments during analysis, a rectangular region containing a few tens of filaments was randomly chosen in the microscope field of view, and all the filaments in this region were analyzed. Within this population, filaments were excluded from our analysis only in the following specific cases. We excluded filaments whose ends were difficult to locate because they overlapped with other filaments. We also excluded filaments that sometimes seemed to stick to the surface or, in the case of experiments with anchored formins, appeared to stall (see Supp. Movies).
 
 Movies were analyzed with ImageJ. The Subtract Background plugin was sometimes used to enhance the contrast, with a rolling ball radius of 50 pixels.
 
-## Quantifying formin dissociation rates and their error bars, in the absence of force
+### Quantifying formin dissociation rates and their error bars, in the absence of force
 
 For each experiment, from a randomly chosen filament population, we noted the time at which each individual formin dissociated from the barbed end. The survival fraction of each experiment was then fitted by a single exponential using the numpy/scipy numerical packages of Python.
 
 In order to quantify the statistical uncertainty in the estimation of the dissociation rate koff resulting from the exponential fits of the survival fractions S(t) (shown for example in Figures 1,2A; Figure 2C), we performed numerical simulations of the experiment (using Python). The program simulated a large number (M = 10,000) of experiments, each consisting in N filaments randomly losing their formin with rate constant k0. The survival fraction of each simulated experiment was fitted by a single exponential, resulting in the generation of M estimated rates kest. The distribution of these kest, centered on k0, allowed us to compute the width of the confidence intervals. We could thus verify that a 65% confidence interval corresponded to errors of approximately k0/N0.5.
 
-## Analysis of experiments with striped filaments
+### Analysis of experiments with striped filaments
 
 Our standard experiment (Figure 1A) relied on the ability to image filaments and on the acceleration of their elongation by formins in order to assess their presence at the barbed end. In order to determine the elongation velocity and the formin dissociation rate in conditions where actin could not be directly imaged (i.e. unlabeled actin) and/or when the presence of formin was not readily detected by a change in elongation velocity (i.e. in the absence of profilin), other configurations were used. A possible alternative was to anchor the formins to the coverslip surface and work with low forces (Figure 1C). In order to obtain results with unanchored formins and zero force, we have used a ‘striped filaments’ protocol (illustrated in Figure 1B). It consisted in exposing filaments to alternating conditions: a duration ∆t1 with condition 1 (the condition of interest, with unknown elongation rate v1 and formin dissociation rate k1), and a duration ∆t2 with condition 2 (containing profilin and labeled actin, with predetermined elongation rate v2 and formin dissociation rate k2). The resulting, striped filament population was imaged at interval (∆t1+∆t2) and had a measurable elongation rate v=(∆t1 v1+∆t2 v2)/(∆t1+∆t2) and formin dissociation rate k=(∆t1 k1+∆t2 k2)/(∆t1+∆t2). Knowing v2 and k2, we could thus determine v1 and k1. The results we obtained were consistent with those from experiments with anchored formins, at very low force.
 
-## Analysis of experiments with pulling forces
+### Analysis of experiments with pulling forces
 
 We measured the fraction S(t) of filaments growing from surface-anchored formins that remained attached over time, while force was applied on the filaments by viscous drag. The observed filament detachment rate kobs(t) = (dS/dt)/S(t) increases over time, as the filaments get longer and the average force exerted on them thus increases. This force has been calibrated (Jégou et al., 2013) and we can compute the average force f(t) exerted on the population of filaments, homogeneous in length.
 

@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/01nrxwf90 Cancer Research UK Edinburgh Centre, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/057q4rt57 Program in Developmental and Stem Cell Biology, Hospital for Sick Children Toronto Canada
-4. https://ror.org/05hs6h993 Department of Obstetrics, Gynecology and Reproductive Biology, Michigan State University East Lansing United States
-5. https://ror.org/05hs6h993 Department of Biomedical Engineering; Michigan State University East Lansing United States
-6. https://ror.org/05hs6h993 Institute for Quantitative Health Science and Engineering, Michigan State University East Lansing United States
+1. MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Cancer Research UK Edinburgh Centre, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. Program in Developmental and Stem Cell Biology, Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))
+4. Department of Obstetrics, Gynecology and Reproductive Biology, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+5. Department of Biomedical Engineering; Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+6. Institute for Quantitative Health Science and Engineering, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
 
 † Corresponding author
 
@@ -43,9 +43,17 @@ Here, we derive novel transgenic mouse lines to show that the original AID syste
 
 ## Results
 
-## Generation of mouse models for auxin-inducible degradation of condensin subunits
+### Generation of mouse models for auxin-inducible degradation of condensin subunits
 
 The condensin I and II complexes (Figure 1A) are essential for mitotic chromosome formation and chromosome segregation in vertebrate cells (Ono et al., 2003), and are thought to work via a DNA-dependent motor activity to generate loops in chromosomal DNA (Gibcus et al., 2018; Terakawa et al., 2017). AID tagging of condensin subunits has enabled the consequences of their acute depletion to be studied in various cancer cell lines (Gibcus et al., 2018; Samejima et al., 2018; Takagi et al., 2018). However, it has been challenging to compare the functional requirement for condensins, or indeed other essential proteins, during cell division in different somatic cell lineages.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagrams showing the subunit composition of condensin I and II complexes with C-terminal AID:Clover. The kleisin subunits of condensin I and II are NCAPH and NCAPH2, respectively. (B) CRISPR-Cas9 strategy for integrating mClover cassettes at the Ncaph and Ncaph2 loci using long single stranded deoxyoligonucleotides (ssODN) to generate NcaphAID:Clover and Ncaph2AID:Clover alleles. Full details and sequences for the integrated cassettes are given in Supplementary file 3. (C) Western blots prepared from thymic whole cell protein extract were probed with antibodies recognising endogenous NCAPH or NCAPH2, with tubulin as a loading control. ‘+’ indicates wildtype allele, ‘tag’ indicates AID:Clover. (D) Immunofluorescence imaging of mitotic murine embryonic fibroblast lines derived from NcaphAID:Clover/AID:Clover and Ncaph2AID:Clover/AID:Clover embryos. Scale bar = 5 μm. (E) Schematic diagram showing the Rosa26Tir1 allele. Details on how this allele was generated are detailed in Figure 1—figure supplement 1D and Materials and methods. (F) Breeding scheme to combine endogenously tagged Ncaph and Ncaph2 alleles with Rosa26Tir1. (G) Clover fluorescence was measured by flow cytometry in primary S/G2/M thymocytes (gated on DNA content, n > 1000 cells/sample) from mice homozygous for AID:Clover-tagged target proteins, in combination with 0, 1, or 2 alleles of the Rosa26Tir1 transgene. Cells were not subjected to IAA treatment. Boxplots show background-corrected mean fluorescence values from (n) biological replicate samples. * indicates a significant (p < 0.05) difference between genotypes (one-way analysis of variance [ANOVA] with Tukey HSD test, p < 0.05). NS: not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Observed and expected genotype frequencies among 28-day-old animals generated from heterozygous crosses for each AID:Clover transgene. Chi-squared tests revealed no significant deviation from expected Mendelian frequencies. (B) Litter sizes from matings between animals heterozygous versus homozygous for each AID:Clover transgene. * indicates significant difference at p < 1 × 10−3 from unpaired two-tailed t-tests (C). Weight of pups at 28 days post-partum from crosses between parents heterozygous for the AID:Clover transgene (tag/+). M = male, F = female. * indicates significant differences between genotypes at p < 0.01, ** at p < 0.05 from one-way analysis of variance (ANOVA) with Tukey’s HSD post hoc test. (D) Schematic illustrating the derivation of Rosa26Tir1 via a Rosa26LSL-Tir1 intermediate. Breeding of Rosa26pCAG-LSL mice to pCX-NLS-Cre caused germline deletion of the lox-stop-lox cassette to produce Rosa26Tir1. (E) Western blots of whole tissue extracts from Rosa26Tir1/TIr1 or Rosa26+/+ animals, probed with an anti-myc tag antibody (9B11). (F) Observed and expected genotype frequencies among 28-day-old animals generated from crosses between parents homozygous for either Ncaph- or Ncaph2AID:Clover and heterozygous for Rosa26OsTir1. Chi-squared tests revealed no significant deviation from expected Mendelian frequencies of Rosa26 genotypes in the Ncaph background, and elevated frequencies of Rosa26Tir1 homozygotes in the Ncaph2 background. (G) Litter sizes from any mating involving a male (M) or female (F) carrying Rosa26Tir1 and either Ncaph- or Ncaph2AID:Clover alleles in the homozygous state, in combination with animals of various genotype. Because genotypes of the other animal in each mating differed between conditions, these data show simply that breeding from double homozygous transgenic mice is possible and are not suitable to quantify fertility across conditions. (H) Weight of pups at 28 days post-partum. Differences between Tir1 genotypes were not significant at p < 0.05 in one-way ANOVA tests. M = male, F = female.
 
 To address this, we generated mice in which the function of each condensin complex could be perturbed by IAA-mediated targeted proteolysis. The Easi-CRISPR approach (Miura et al., 2018; Quadros et al., 2017) was used to generate two transgenic lines in which cassettes encoding the mini-auxin-inducible degron and Clover fluorescent protein (AID:Clover) were fused to the C-terminus of endogenous condensin subunits via a short flexible linker peptide (NCAPHAID:Clover and NCAPH2AID:Clover, Figure 1A, B, Supplemental Methods). The kleisin subunits NCAPH and NCAPH2 were selected for tagging as they are expressed at levels that are limiting for holocomplex assembly (Walther et al., 2018), and are known to be essential for condensin complex function in mice (Houlard et al., 2015; Nishide and Hirano, 2014). Degradation of NCAPH and NCAPH2 should therefore ablate the function of condensin I and II, respectively.
 
@@ -55,7 +63,7 @@ In parallel, we generated transgenic animals expressing the Oryza sativa (Os) TI
 
 In order to generate IAA-responsive mice, we performed crosses to combine the Rosa26Tir1 allele with either NcaphAID:Clover or NcaphAID:Clover in double transgenic animals (Figure 1F). The presence of TIR1 has previously been reported to induce ‘basal’ degradation of some AID-tagged target proteins even in the absence of exogenous IAA (Mendoza-Ochoa et al., 2019; Sathyan et al., 2019; Yesbolatova et al., 2020). Importantly, the presence of Rosa26Tir1 alleles had little (NCAPH) or no (NCAPH2) effect on target protein expression (Figure 1G). Accordingly, double homozygotes were obtained at, or greater than, the expected Mendelian frequencies from crosses of Ncaph- or Ncaph2AID:Clover/AID:Clover; Rosa26Tir1/+ parents (Figure 1—figure supplement 1F), and both sexes were fertile (Figure 1—figure supplement 1G). No significant difference in weight was observed between animals with 0, 1, or 2 alleles of Rosa26Tir1 (Figure 1—figure supplement 1H). Thus, despite low-level affinity of TIR1 for the degron peptide in the absence of auxin (Tan et al., 2007), we conclude that the Rosa26Tir1 transgene did not cause levels of auxin-independent degradation that were sufficient to induce overt phenotypes in combination with either of the AID-tagged target proteins studied here. However, further comprehensive phenotyping following the guidelines and protocols established by international programmes such as International Mouse Phenotyping Consortium (Birling et al., 2021), will be needed in the future to determine whether any of these genetic modifications induce phenotypic effects that were not detected in this study.
 
-## Rapid degradation of AID-tagged endogenous proteins in primary cells
+### Rapid degradation of AID-tagged endogenous proteins in primary cells
 
 The ability of IAA to induce targeted protein degradation was then tested in short term cultures of primary CD8+ thymocytes, embryonic fibroblasts, and neural stem cells harvested from animals homozygous for Rosa26Tir1 and either AID-tagged allele (Figure 2A). In each case, addition of IAA to the culture media resulted in near complete (>90%) protein degradation within 2 hr (Figure 2B–E).
 
@@ -63,9 +71,17 @@ The ability of IAA to induce targeted protein degradation was then tested in sho
 
 **Figure 2.:** (A) Schematic illustration of experiments designed to test targeted degradation of condensin subunits in primary cells. (B) Western blots prepared from thymus whole cell extract and probed with polyclonal antibodies against NCAPH, NCAPH2, or a GAPDH loading control. Robust tag-dependent degradation of target proteins is clearly evident after 3 hr of auxin treatment. (C and D) Boxplots quantify the extent of targeted protein depletion following IAA treatment (500 μM for 3 hr), measured by flow cytometry in primary CD8+ thymocytes (C) and murine embryonic fibroblasts (MEFs - D). n = 3 biological replicates from at least 2 independent experiments, with degradation measured in over 1000 S/G2/M cells in each case. To calculate % protein remaining, the background-corrected fluorescence value of each cell was expressed as a percentage of the mean fluorescence value for all cells in the vehicle-only condition. Boxes show the boundaries of upper and lower quartiles and whiskers show the range. Where negative values were observed (e.g. in MEFs due to variable autofluorescence between lines), a value of 0% was assigned. (E) Titration of target protein levels in primary neural stem cells treated with different IAA concentrations for 2 hr. Boxplots were generated as described for panels C and D.
 
-## Dosage of ternary complex components determines degradation efficiency
+### Dosage of ternary complex components determines degradation efficiency
 
 AID and other degron tagging approaches achieve protein degradation through the formation of a ternary complex comprising a ligand, an E3 ligase substrate receptor, and the degron-tagged target protein (Figure 3A, Tan et al., 2007). Complex formation induces ubiquitination of target proteins via an E3 ligase: for the AID system this is SCFTir1. It is well established that the kinetics of protein degradation are determined, and can be experimentally manipulated by, ligand dose (Natsume and Kanemaki, 2017; Nishimura et al., 2009). We confirmed this finding in primary neural stem cells derived from NcaphAID:Clover/AID:Clover and Ncaph2AID:Clover/AID:Clover animals homozygous for Rosa26Tir1 (Figure 2E). Whether the kinetics of AID-mediated protein degradation are also controlled by the cellular dosage of the substrate protein and/or the TIR1 substrate receptor is less well understood.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic diagram illustrates the assembly of the Tir1 substrate receptor protein, IAA ligand and AID-tagged target protein-of-interest into a ternary complex necessary for target protein ubiquitination via SCFTir1, and degradation. (B and C) Histograms show the distribution of Clover expression levels, measured by flow cytometry in S/G2/M thymocytes cultured for 2 hr ex vivo in the presence of different IAA concentrations. Thymocytes were isolated from animals homozygous for either (B) NcaphAID:Clover or (C) Ncaph2AID:Clover alleles in combination with either one (dark purple) or two (light purple) alleles of Rosa26Tir1. Equivalent data from animals heterozygous for AID-tagged alleles are shown in Figure 5—figure supplement 1. (D) Comparison of depletion kinetics in the presence of one (black) versus two (red) alleles of the Tir1 transgene at low (solid line) versus high (dashed line) ligand concentrations (n = 3 biological replicate samples). Each experiment in panels B–D used data from at least 1000 S/G2/M thymocytes, gated on DNA content. In panel D, the mean background-corrected fluorescence value for each cell population is expressed as a percentage of the mean background-corrected fluorescence value for the vehicle only condition.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Thymocytes were isolated from animals heterozygous for either (A) NcaphAID:Clover or (B) Ncaph2AID:Clover alleles in combination with either one (dark purple) or two (light purple) alleles of Rosa26Tir1.
 
 To address the role of substrate receptor dosage, we compared the efficiency of target protein degradation in primary thymocytes derived from animals homozygous for NcaphAID:Clover or Ncaph2AID:Clover in combination with either 1 or 2 copies of the Rosa26Tir1 transgene. This analysis revealed that two copies of Tir1 resulted in more efficient degradation of target proteins compared to a single copy (Figure 3B–D). The same trend was observed consistently for both NCAPH and NCAPH2 target proteins (Figure 3B, C), in the presence of either one or two AID-tagged alleles (Figure 3B, C, Figure 3—figure supplement 1). Depletion kinetics of AID-tagged mammalian proteins are therefore controlled not only by ligand dose, but also by dosage of the E3 ligase substrate receptor protein TIR1.
 
@@ -73,23 +89,47 @@ To determine the effect of target protein dosage on degradation efficiency, we d
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig4-v2.jpg)
 
-**Figure 4.:** (A) The relative expression of NCAPH and NCAPH2 (n = 6 biological replicates each) in thymocytes, based on flow cytometric Clover fluorescence measurements in >1000 cells. (B) Table showing the relative total dose of AID-tagged proteins in mice heterozygous for Ncaph2 in combination with either 0 (Low), 1 (Medium), or 2 (High) alleles of AID:CloverNcaph. Relative AID dose is calculated based on data in panel A. (AID:CloverC) Schematic showing the time course for auxin treatment of primary thymocytes in panels D and E. (D) Western blots probed with a polyclonal antibody against NCAPH2. Tagged protein (upper band) is degraded, whereas wildtype protein (lower band) is not. * indicates non-specific band. (E) Quantification of NCAPH2-AID:Clover depletion in the presence of low, medium, or high overall AID-tagged protein dose. Density of the AID:Clover band (see panel D) was first measured relative to the corresponding wildtype allele (bottom) as an internal control. The AID:WT ratio in the vehicle only control was set at 100% and IAA treatment conditions were then calculated relative to this value. Data from two independent experiments are presented.
+**Figure 4.:** (A) The relative expression of NCAPH and NCAPH2 (n = 6 biological replicates each) in thymocytes, based on flow cytometric Clover fluorescence measurements in >1000 cells. (B) Table showing the relative total dose of AID-tagged proteins in mice heterozygous for Ncaph2AID:Clover in combination with either 0 (Low), 1 (Medium), or 2 (High) alleles of NcaphAID:Clover. Relative AID dose is calculated based on data in panel A. (C) Schematic showing the time course for auxin treatment of primary thymocytes in panels D and E. (D) Western blots probed with a polyclonal antibody against NCAPH2. Tagged protein (upper band) is degraded, whereas wildtype protein (lower band) is not. * indicates non-specific band. (E) Quantification of NCAPH2-AID:Clover depletion in the presence of low, medium, or high overall AID-tagged protein dose. Density of the AID:Clover band (see panel D) was first measured relative to the corresponding wildtype allele (bottom) as an internal control. The AID:WT ratio in the vehicle only control was set at 100% and IAA treatment conditions were then calculated relative to this value. Data from two independent experiments are presented.
 
-## Comparing essential gene function between primary cell types
+### Comparing essential gene function between primary cell types
 
 Loss of function mutations in condensin subunits cause fully penetrant embryonic lethality in mice (Houlard et al., 2015; Nishide and Hirano, 2014; Smith et al., 2004), but it is not known whether each complex is absolutely required for cell division throughout development. Our system for rapidly depleting essential condensin I and II subunits in different primary cell types enabled us to address this question. A BrdU pulse chase assay was established to assess the efficiency of cell division during a single-cell cycle across primary cell types.
 
 We chose to focus on lymphocyte development, specifically comparing how rapid degradation of either a condensin I or a condensin II subunit affected cell division in precursor versus mature splenic cells in both the B- and T-cell lineages. Explanted cells from the bone marrow (precursor B), thymus (precursor T), or spleen (peripheral B and T) were cultured for 2 hr in the presence or absence of auxin to degrade either NCAPH or NCAPH2, then subjected to a 30-min BrdU pulse followed by washout and chase (Figure 5A). BrdU and DNA content were then measured by flow cytometry (Figure 5B). Over time, a fraction of BrdU+ cells divide to form G1 daughter cells with 2n DNA content (Figure 5C). If loss of either condensin complex inhibits cell division, IAA treatment should reduce the fraction of BrdU+ cells that progress through mitosis into G1 during the chase (Figure 5D). By quantifying and comparing the extent of this reduction across cell types (Figure 5E), we tested their ability to complete a single-cell division in the near absence of condensin I or II. As expected, acute degradation of either NCAPH or NCAPH2 did not affect BrdU incorporation (Figure 5—figure supplement 1A) or induce markers of DNA damage during S phase (Figure 5—figure supplement 1B), but instead caused an accumulation of 4N cells (Figure 5D) consistent with a cell cycle block during G2/M.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig5-v2.jpg)
+
+**Figure 5.:** (A) Chronological representation of the BrdU pulse chase assay to measure the efficiency of cell division in primary cell types cultured ex vivo. Lymphocyte isolation and culture protocols are detailed in Materials and methods. Quantifying the % of BrdU+ cells (B) that complete mitosis and halve their DNA content (C) allows the efficiency of a single-cell division to be quantified under normal or acute condensin deficient conditions. The appearance of BrdU+G1 cells can be seen at 3 and 5 hr. (D) Representative DNA content profiles, gated on BrdU+ as shown in panel B, from cycling early (thymic/marrow) or activated mature (Splenic) T and B lymphocytes, measured following a 3.5-hr chase in the presence or absence of condensin I or II. (E) Quantification of division efficiency, based on the % of BrdU+ cells in G1 after 3.5 hr (n = 3 biological replicates from at least 2 independent experiments). Corresponding condensin depletion levels for each experiment are shown in Figure 5—figure supplement 1C (F). Quantification of the effect of NCAPH or NCAPH2 degradation on cell division across cell types in panel E. For each cell type, division efficiency (panel E) in the vehicle only control condition was set to 100%, and the same parameter in IAA-treated cells was expressed relative to this. Asterisks represent p values from paired t-tests ***p < 0.01, **p < 0.05, *p < 0.1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The % of cells engaged in DNA replication (BrdU+) is not significantly different following acute depletion of NCAPH or NCAPH2. Each point shows the average % of cells incorporating BrdU following a 30-min pulse following 2 hr of culture in 500 μM IAA or vehicle, measured by flow cytometry. Bone marrow B cells required an extra hour of IAA treatment (3 h total) to achieve robust depletion. Experimental schematic is shown in Figure 5A. (B) Acute depletion of NCAPH or NCAPH2 does not induce the DNA damage marker ˠH2AX in interphase cells undergoing DNA replication. Each point represents the average fluorescence intensity from at least 1000 single CD8+ thymocytes single cells with DNA content between 2N and 4N (presumed to be in S phase). * indicates significant differences at p < 0.05 based on two-tailed unpaired t-tests. Positive control wildtype cells were treated with 500 μM hydroxyurea for 3 hr to induce replication fork collapse. (C) Mean depletion levels of NCAPH and NCAPH2 proteins in the BrdU pulse chase experiments shown in Figure 5. Clover was quantified by flow cytometry in S/G2/M cells at the start (0 hr) and end (3.5 hr) of the chase period, with the +IAA value expressed as a % of vehicle only control after correcting for background autofluorescence. Where mean Clover fluorescence was lower than autofluorescence in the +IAA condition, a mean value of 0% was assigned. (D) Reduced proliferation in peripheral B cells following acute degradation of NCAPH or NCAPH2, measured by Cell Trace flow cytometry assays. Contour plots show Cell Trace dye dilution via cell division following stimulation with LPS + IL4 for 48 hr in the continuous presence of 500 μM IAA. Condensin-AID:Clover signal is shown on the y-axis to visualise degradation.
+
 In primary cells from NcaphAID:Clover/AID:Clover; Rosa26TIr1/Tir1 mice, acute depletion of an essential condensin I subunit impacted cell division to a greater extent in precursor T cells isolated from the thymus compared to activated mature T cells isolated from the spleen (Figure 5D–F). In thymocytes, where most cell division occurs at the ‘beta-selection’ stage of T-cell differentiation (Kreslavsky et al., 2012), treatment caused an 88% reduction (21.6% vs 3.1%, Figure 5E, F) in the fraction of G1 cells among the BrdU+ population following a 3.5-hr chase. In contrast IAA treatment of activated splenic T cells caused only a 22% reduction in this population (39% vs 31% of BrdU+ cells in G1, Figure 5E, F). By the same measure, precursor B cells isolated from the bone marrow were significantly more sensitive to NCAPH depletion compared to mature B cells isolated from the spleen (67% vs 48% reduction in BrdU+ G1 cells, respectively, Figure 5E, F). The same experiments repeated in primary cells from Ncaph2AID:Clover/AID:Clover; Rosa26Tir1/Tir1 animals revealed similar trends, with precursors more sensitive to condensin perturbation compared to mature cells, albeit with less profound effect sizes.
 
 The observed differences between cell types were not attributable to differences in the extent of protein degradation, which were similar between precursor and peripheral cell populations (Figure 5—figure supplement 1C). However, despite the relatively mild consequences of condensin degradation on peripheral lymphocytes over a single-cell division (Figure 5D–F), cell trace experiments still showed a clear impact on proliferation over several cell cycles (Figure 5—figure supplement 1D). Altogether, these experiments show that lymphocytes at later stages of differentiation are better able to complete a single round of cell division in the near absence of either condensin I or II compared to their respective precursor cell populations.
 
-## Acute degradation of AID-tagged proteins in living mice
+### Acute degradation of AID-tagged proteins in living mice
 
 Having established the utility of the AID system to compare essential protein functions between primary cell types, we next investigated its use in living adult mice. Because condensin expression is largely restricted to proliferating cells in adult tissues, we initially focused on haematopoietic organs where dividing cells are abundant. In a pilot dose-finding study, adult NcaphAID:Clover/+ Rosa26Tir1/Tir1 mice received a single dose of IAA via I.P. injection, then thymus tissue was collected 2 hr later to quantify Clover fluorescence using flow cytometry. Increasing levels of protein degradation were observed as the dose was increased from 50 to 100 mg kg−1 (Figure 6—figure supplement 1A). All subsequent experiments were therefore performed using the 100 mg kg−1 dose. To evaluate hepatic toxicity of IAA, a panel of liver function tests was performed on plasma collected from animals either 2 or 72 hr following I.P. injection of IAA or vehicle. No significant differences were observed (Figure 6—figure supplement 1B).
 
 Adult animals homozygous for AID-tagged kleisin alleles and Rosa26Tir1 were then injected I.P. with IAA, then haematopoietic organs were collected either 1 or 2 hr post-injection (Figure 6A). Flow cytometric quantification of Clover fluorescence in proliferating thymocytes (Figure 6A) and bone marrow B-cell precursors (Figure 6—figure supplement 1C) revealed that a majority of target protein was typically degraded within 1 hr of injection, and near complete degradation (>90%) was achieved within 2 hr, although some variability was observed between biological replicates. To validate knockdown efficiency using an orthogonal method, and to assess the proteome-wide specificity of the AID system, thymus tissue was collected from Ncaph2AID:Clover/AID:Clover Rosa26Tir1/Tir1 animals 2 hr following I.P. injection of IAA or vehicle, and proteomic quantification was performed in MACS-purified CD8+ cells using mass spectrometry (Figure 6B). This confirmed profound (~10-fold) downregulation of the target protein. Remarkably, no other protein was significantly downregulated using thresholds of p < 0.01 and >2-fold change. Only a single protein (the heat shock protein Hspb11) was significantly upregulated. Relaxing the significance threshold to p < 0.05 led to only three downregulated proteins and an additional two upregulated proteins (Supplementary file 1). We conclude that IAA injection can achieve not only rapid and profound, but also highly specific degradation of AID-tagged proteins in vivo. However further proteomic studies are needed to assess the potential for TIR1-dependent off-target protein degradation in other cell types, and in combination with other target proteins.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig6-v2.jpg)
+
+**Figure 6.:** (A) (Top) I.P. injection time course to test protein degradation in vivo. Each mouse received a single injection of IAA solution (100 mg/kg), or vehicle. (Bottom) Boxplots show the extent of targeted protein degradation in >1000 S/G2/M CD8+ thymocytes harvested 1 or 2 hr following auxin injection, measured by flow cytometry. % protein remaining was calculated as described in Figure 2 legend. Boxes indicate the boundaries of upper and lower quartiles and whiskers show the range. Data are from three biological replicate injections performed over at least two independent experiments. (B) Proteome quantification by mass spectrometry analysis of MACS-purified CD8+ thymocytes. n = 3 animals per condition. (C) Protein degradation and recovery following a single I.P. injection. Data are presented as described for panel A, except mice were heterozygous for the Ncaph2AID:Clover allele. (D) Schematic illustration of experimental workflow for protein degradation in E10.5 embryos. (E) Example image from whole-mount immunofluorescence performed on E10.5 embryo cryosections, stained with DAPI, anti-GFP-647 nanobooster (detecting NCAPH-AID:Clover), and anti-CDH1. Anti-GFP signal was quantified within five CDH1+ regions of interest (ROI) per embryo, which were selected based solely on the CDH1 staining pattern. To enable CDH1 localisation and ROIs to be visualised, the anti-GFP-647 channel is not shown in this panel. Images were captured at ×40 magnification, scale bar = 800 μm. (F) Example ROI’s from CDH1+ stained tissue on which target protein quantification was performed. To visualise degradation, only the NCAPH-AID:Clover channel is shown. Scale bar = 10 μm. (G) Quantification of degradation efficiency in CDH1+ embryonic cells. Mean pixel intensity was first calculated from five Cdh1+ regions in NcaphAID:Clover/AID:Clover Rosa26Tir1/Tir1 embryos from mothers injected with either IAA or vehicle, and non-fluorescent negative control embryos (n = 1 embryo each). The mean pixel intensity value from negative control ROIs was set to 0%, and the mean value from vehicle-only ROIs to 100%. Mean pixel intensity values for each ROI from vehicle and IAA-exposed embryos were then plotted on this scale. Negative values were set to 0%.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Boxplots quantify the extent of targeted protein depletion in CD8+ thymocytes from NcaphAID:Clover/+Rosa26Tir1 animals injected with IAA at increasing dose. % protein remaining was calculated as described in the legend for Figure 2. Boxes show the boundaries of upper and lower quartiles and whiskers show the range. Where negative values were observed, a value of 0% was assigned. N = 1 per condition. (B) A panel of liver function tests performed on plasma collected post-mortem from adult mice (n = 3 per condition) 2 or 72 hr after I.P. injection with IAA (100 mg/kg) or vehicle. No significant differences (p < 0.05) were detected in unpaired two-tailed t-tests. ALP: alkaline phosphatase; AST: aspartate transaminase; ALT: alanine transaminase. (C) I.P. injection time course to test protein degradation in CD19+ bone marrow cells in vivo. Data were captured, analysed and presented as described in Figure 6A.(D) Schematic illustration of experimental workflow for protein degradation in E10.5 embryos. (E) Example image from whole mount immunofluorescence performed on E10.5 embryo cryosections, stained with DAPI, anti-GFP-647 nanobooster (detecting NCAPH-AID:Clover) and anti-PDGFR. Anti-GFP signal was quantified within 5 PDGFR+ regions of interest (ROI) per embryo, which were selected based solely on the PDGFR staining pattern. To enable PDGFR localisation and ROIs to be visualised, the anti-GFP-647 channel is not shown in this panel. Images were captured at 40X magnification, scale bar = 800μm (F) Example ROI’s from PDGFR+ stained tissue on which target protein quantification was performed. To visualise degradation, only the NCAPH-AID:Clover channel is shown. Scale bar = 10μm (G) Quantification of degradation efficiency in PDGFR+ embryonic cells. Mean pixel intensity was first calculated from 5 PDGFR+ regions in NcaphAID:Clover/AID:Clover Rosa26Tir1/Tir1 embryos from mothers injected with either IAA or vehicle, and non-fluorescent negative control embryos (n = 1 embryo each). The mean pixel intensity value from negative control ROIs was set to 0%, and the mean value from vehicle-only ROIs to 100%. Mean pixel intensity values for each ROI from vehicle and IAA-exposed embryos were then plotted on this scale.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Immunofluorescence on cryosections from small intestine of an NcaphAID/AID Rosa26TIr1/Tir1 adult, fixed following 2-hr exposure to IAA in vivo (100 mg/kg, I.P.). Scale bar 10 μm. NCAPH degradation was quantified specifically within DAPI-stained regions of mitotic (ph3S10+) cells, but can also be observed in the vast majority of interphase cells. Arrows show the position of an IAA-unresponsive cell. (B) Different levels of NCAPH degradation observed in CD8+ thymocytes and Ter119+ erythroblasts from a single animal 2 hr following I.P. injection of IAA. (C) Western blots probed with anti-myc (top) to detect Tir1 expression, and anti-pan histone H3 loading control (bottom) in whole cell extracts from MACS-purified blood cell populations shown in panels B and D. (D) Different levels of NCAPH degradation in CD19+ B-cell precursors and Ter119+ erythroblasts following IAA treatment from the same ex vivo short-term bone marrow culture. In panels B and D, boxes show the boundaries of upper and lower quartiles and whiskers show the range of degradation values for >1000 S/G2/M cells, calculated as described in the legend for Figure 2. (E) Immunofluorescence on cryosections from fixed adult testes (NcaphAID/AID Rosa26TIr1/Tir1) shows little if any target protein degradation. Yellow boxes in the upper panel show zoomed regions in the lower panel. Upper scale bar = 15 μm, lower scale bar = 10 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/77987/elife-77987-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Figure created with https://biorender.com/.
 
 To assess the kinetics of protein degradation and recovery over longer periods following single dose I.P. administration of IAA, we generated NcaphAID:Clover/+ Rosa26Tir1/Tir1 animals, in which AID-tagged protein could be degraded while leaving a pool of untagged protein to support ongoing cell division. Protein levels began to recover within 6 hr post-injection before returning to baseline levels within 72 hr (Figure 6C). This shows that degradation of endogenous proteins via the AID system is reversible in vivo.
 
@@ -123,19 +163,106 @@ In conclusion, these issues need to be resolved in order to establish AID as a g
 
 ## Materials and methods
 
-## Mouse maintenance and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (O. sativa)</td>
+      <td>osTIR1</td>
+      <td>Addgene</td>
+      <td>64,945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene fragment (A. thaliana)</td>
+      <td>mAID</td>
+      <td>Nora et al., 2017</td>
+      <td>IAA17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD1</td>
+      <td>Charles River</td>
+      <td>Crl:CD1(ICR)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Rosa26-LSL-osTIR1-9myc</td>
+      <td>This paper</td>
+      <td>CD1-Gt(ROSA)26Sorem1(CAG-LSL-osTIR1-myc)Jrt</td>
+      <td>Sequence details in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Rosa26-osTIR1-9myc (Mus musculus)</td>
+      <td>This paper</td>
+      <td>CD1-Gt(ROSA)26Sorem1.1(CAG-LSL-osTIR1-myc)Jrt</td>
+      <td>Sequence details in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>pCX-NLS-cre (Mus musculus)</td>
+      <td>Belteki et al., 2005</td>
+      <td>ICR-Tg(CAG-cre)</td>
+      <td>http://www.informatics.jax.org/reference/J:99607</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>NcaphAID:Clover</td>
+      <td>This paper</td>
+      <td>NcaphAID:Clover</td>
+      <td>Sequence details in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Ncaph2AID:Clover</td>
+      <td>This paper</td>
+      <td>Ncaph2AID:Clover</td>
+      <td>Sequence details in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRosa26-CAG-LSL-osTIR1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Belteki et al., 2005</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse maintenance and husbandry
 
 All animal work was approved by a University of Edinburgh internal ethics committee and was performed in accordance with institutional guidelines under license by the UK Home Office. AID knock-in alleles were generated under project license PPL 60/4424. Rosa26Tir1 knock-in mouse lines were generated under the Canadian Council on Animal Care Guidelines for Use of Animals in Research and Laboratory Animal Care under protocols approved by the Centre for Phenogenomics Animal Care Committee (20-0026H). Experiments involving double transgenic animals were conducted under the authority of UK project license PPL P16EFF7EE.
 
 Mice were maintained at the Biological Research Facility, Western General Hospital, Edinburgh and fed on RM3 chow (Special Diets Services; Product Code 801700). All experimental animals were between 6 and 16 weeks in age unless otherwise specified. Male and female animals were used interchangeably. Mice were housed in individually ventilated cages with 12 hr light/dark cycles. All tissues were harvested and processed immediately following euthanasia via cervical dislocation or CO2. All animals and primary cells used in protein degradation experiments were of a mixed (C57BL/6J and CD1) genetic background.
 
-## Generation of Ncaph and Ncaph2 degron-reporter mice
+### Generation of Ncaph and Ncaph2 degron-reporter mice
 
 Ncaph-AID-mClover and Ncaph2-AID-mClover mice were generated following the Easi-CRISPR protocol (Miura et al., 2018). sgRNAs were designed using the Zhang Lab design tool (https://zlab.bio/guide-design-resources) and ordered from IDT. Priority was given to protospacer sequences that would result in cleavage proximal to the stop codon with low predicted likelihood for off-target cleavage. Repair templates were long single stranded oligonucleotides (‘megamers’) ordered from IDT. Each megamer comprised 105 nucleotides of homology either side of the integrated sequence. Integrations included linker sequence and the 44 amino acid mini-auxin-inducible degron used by Nora et al. (Morawska and Ulrich, 2013; Nora et al., 2017) fused in-frame with the fluorescent protein Clover (Lam et al., 2012). Full nucleotide sequences for the guide RNA target sequences and repair templates are listed in Supplementary file 3.
 
 The microinjection mix comprised pre-annealed crRNA/TracrRNA complex (20 ng/μl), repair template (5 ng/μl), and Cas9 protein (NEB – 0.3 μM). This was incubated at 37°C for 10 min before microinjection. Zygotes were collected from C57BL/6J females mated overnight with C57BL/6J stud males (Charles River Laboratories). Editing reagents were introduced via pronuclear microinjection at the Evans Transgenic Facility (University of Edinburgh), cultured overnight before transfer to pseudopregnant CD1 females. Successful integrations were identified by PCR using primers spanning the integration sites, then confirmed by observing band shifts on western blots probed with antibodies against wildtype NCAPH and NCAPH2 (Figure 1C). Founder animals were outcrossed for two generations with C57BL/6J animals and then N2 siblings were intercrossed to obtain homozygotes.
 
-## Generation of Rosa26Tir1 knock-in mice
+### Generation of Rosa26Tir1 knock-in mice
 
 The plasmid donor for generating Rosa26Tir1 knock-in mice was constructed as follows. A TIR1-9myc cassette was PCR amplified from the pBABE-TIR1-9myc plasmid (addgene 64945, a kind gift from Don Cleveland Holland et al., 2012). The cassette was inserted into MluI restriction site of the pR26 CAG AsiSI/MluI plasmid (addgene 74286, a kind gift from Ralf Kuehn, Chu et al., 2016) by infusion cloning (Takara). The coding sequence of TIR1-9myc was separated from the CAG promoter by a loxP-STOP-loxP (LSL) cassette.
 
@@ -143,13 +270,13 @@ The Rosa26-LSL-osTIR1-9myc(CD1-Gt(ROSA)26Sorem1(CAG-LSL-osTIR1-myc)Jrt) mouse li
 
 To generate the Rosa26Tir1 allele (full name Rosa26-osTIR1-9myc (CD1-Gt(ROSA)26Sorem1.1(CAG-LSL-osTIR1-myc)Jrt) used in subsequent experiments, a Rosa26-LSL-osTIR1-9myc +/− male was mated with a pCX-NLS-cre (ICR-Tg(CAG-cre)1Nagy female. Progeny were screened for removal of the LSL cassette by PCR and the mice carrying correctly recombined sequences were bred to establish the line. The Rosa26Tir1 allele is homozygous viable and mice were bred in the homozygous state.
 
-## Whole cell protein extract preparation and quantification
+### Whole cell protein extract preparation and quantification
 
 Protein preparations were generated from either single-cell suspensions of primary haematopoietic cells, or whole tissue. Single-cell suspensions of thymus were generated by gentle dissociation of whole thymus tissue through 40 µm filters (Fisherbrand, 22-363-547). For bone marrow, tissue was flushed out of tibia and femur bones with phosphate-buffered saline (PBS) before dissociation through a 40 µm filter. Cell numbers were counted manually using a haemocytometer. Bone marrow cells were further purified by Magnetic Activated Cell Sorting (Miltenyi), using beads pre-coated with antibodies against B220, Ter-119, CD4, or CD8. MACS purification proceeded according to the manufacturer’s instructions. Cell pellets were resuspended in NP-40 Lysis Buffer (150 mM NaCl, 50 mM Tris–HCl, 1% NP-40) using 3 volumes of NP-40 Buffer to 1 volume of cell pellet. 0.5 µl benzonase nuclease (Millipore) was added per 100 µl of resuspended pellet. Samples were incubated at 4°C for 30 min with intermittent vortexing, before pelleting cellular debris via centrifugation at maximum speed (13,200 × g, 15 min, 4°C). For whole tissue samples, adult tissue (brain, thymus, lung, spleen, kidney, small intestine, and liver) were removed, snap frozen in LN2, and stored at −80°C until use. Between 10 and 30 mg of frozen tissue was weighed and homogenised in 1 ml RIPA buffer (150 mM NaCl, 1% NP-40, 0.5% NaDeoxycholate, 0.1% SDS, 50 mM Tris–HCl pH 8 with 5 µl benzonase [Millipore]) for 10 min using a TissueLyserLT (Qiagen), then incubated on ice for 30 min. Cellular debris was pelleted via centrifugation at maximum speed for 15 min at 4°C. Supernatants were transferred into fresh tubes, and protein concentration was quantified using a Pierce BCA Protein Assay Kit (Thermo, 23228) following the manufacturer’s instructions.
 
 Pierce Lane Marker Reducing Sample Buffer (1×, Thermo, 39000) was added to each sample prior to denaturation via boiling at 95°C for 5 min. Samples were used immediately or stored at −20°C.
 
-## Western blotting
+### Western blotting
 
 Denatured protein lysates (12.5 µg/sample) were loaded on to NuPAGE 4–12% Bis–Tris 1.0 mm Mini Protein Gels (Invitrogen, NP0321) alongside Chameleon Duo Protein Ladder (3 µl/lane; LiCOR, 928-60000) or PageRuler Protein Ladder (5 µl/lane; Thermo Scientific, 26616) and run in pre-chilled 1× MOPS Buffer (Thermo, NP0001). Samples were typically run at 100 V for 90 min. Transfers were performed using either the iBlot2 Gel Transfer device according to the manufacturer’s instructions or wet transfer. PVDF membranes were pre-soaked in 100% methanol (Fisher, 10284580) and rinsed briefly in Transfer Buffer (25 mM Tris [AnalaR, 103156X], 200 mM glycine [Fisher, G-0800-60], 20% methanol, 0.02% SDS [IGMM Technical Services]). Genie Blotter transfer device (Idea Scientific) was assembled with the gel and PVDF membrane placed between two layers of cellulose filter paper (Whatman, 3030-917) inside the loading tray. Once the apparatus was prepared, Transfer Buffer was filled to the top of the Genie Blotter and transfer proceeded for 90 min at 12 V.
 
@@ -157,7 +284,7 @@ Conditions for blocking and antibody staining were optimised individually for ea
 
 Primary antibodies were added to the corresponding block solution at the dilution shown in Supplementary file 2. Membranes were incubated in the antibody dilutions with constant agitation, either at room temperature for 1 hr, or at 4°C overnight. Membranes were washed in TBS-Tween-20 solutions (0.1% Tween-20; four washes × 10 min). Fluorescent or HRP-conjugated secondary antibodies were also diluted in the corresponding block solution (with 0.1% Tween-20), and membranes were incubated with secondary antibody dilutions under constant agitation at room temperature for 1 hr. Membranes were then washed in TBS-Tween-20 solutions (0.1% Tween-20, four washes × 10 min). Membranes were visualised on an Odyssey CLx Imaging System (LiCOR) or ImageQuant (Cytiva). Fluorescent antibodies were detected using either a 700 Channel Laser Source (685 nm) or 800 Channel Laser Source (785 nm).
 
-## Proteome analysis by mass spectrometry
+### Proteome analysis by mass spectrometry
 
 Mice were treated with 100 mg/kg auxin via I.P. injection for 2 hr, then culled by cervical dislocation. Thymus was removed and a single-cell suspension of primary thymocytes was made using ice-cold PBS. CD8a+ cells were isolated by MACS using CD8a2 (Ly-2) microbeads (Miltenyi) following the manufacturer’s instructions. Purified cells were lysed in whole proteome lysis buffer (6 M GuHCl, 100 mM Tris–HCl 8.5, 1 mg/ml chloracetamide, 1.5 mg/ml TCEP) at a concentration of 0.3 × 106 cells/µl buffer. Lysate was sonicated with a probe sonicator (Soniprep 150) until no longer viscous, and boiled at 95°C for 5 min, then centrifuged at 14,000 rpm for 5 min. Supernatent was then transferred to a fresh tube and processed for mass spectrometry.
 
@@ -165,39 +292,39 @@ A 50 µl volume of sample was heated to 97°C for 5 min, then pre-digest (Lys-C,
 
 Samples were acidified with 1% Trifluoroacetic acid (TFA) and centrifuged at 13,000 rpm, for 10 min at room temperature. Sample was applied to a double-layer Empore C18 Extraction Disk (3 M) prepared with methanol. Membrane was washed twice with 0.1% TFA and protein was eluted with elution buffer (50% acetonitrile (ACN), 0.05% TFA), dried using a CentriVap Concentrator (Labconco) and resuspended in 15 µl 0.1% TFA. Protein concentration was determined by absorption at 280 nm on a Nanodrop 1000, then 2 µg of de-salted peptides were loaded onto a 50 cm emitter packed with 1.9 µm ReproSil-Pur 200 C18-AQ (Dr Maisch, Germany) using a RSLC-nano uHPLC systems connected to a Fusion Lumos mass spectrometer (both Thermo, UK). Peptides were separated by a 140-min linear gradient from 5% to 30% acetonitrile, 0.5% acetic acid. The mass spectrometer was operated in DIA mode, acquiring a MS 350–1650 Da at 120 k resolution followed by MS/MS on 45 windows with 0.5 Da overlap (200–2000 Da) at 30 k with a NCE setting of 27. Raw files were analysed and quantified using Spectronaut 15 (Biognosis, Switzerland) using directDIA against the Uniprot Mus musculus database with the default settings. Ratios and t-tests were calculated by the Spectronaut pipeline using default settings.
 
-## Flow cytometry
+### Flow cytometry
 
 For cultured adherent cells, single-cell suspensions were first generated using trypsin (MEFs) or accutase (neural stem cells). For haematopoietic cells, samples were prepared from single-cell suspensions of bone marrow and thymus. Samples were incubated with fluorescently conjugated antibodies against cell surface markers (Supplementary file 2) and Fixable Viability Dye (eBioscience, 65-0865-14, 1 in 200 dilution) diluted in Flow Cytometry Staining Buffer (eBioscience, 00-4222-26) (20 min at 4°C). Samples were then washed in a 10-fold volume of Flow Cytometry Staining Buffer before centrifugation at 300 × g for 5 min at 4°C. Pellets were resuspended in Cytofix/Cytoperm solution (BD Bioscience, 554722) following the manufacturer’s instructions and washed in Perm/Wash buffer (BD Bioscience, 554723). If required, samples were incubated with fluorescently conjugated antibodies against intracellular markers for 20 min at room temperature. For intracellular γH2AX staining, samples were further permeabilised by resuspending in Perm/Wash buffer (1 ml) for 15 min at 4°C before antibody incubation. After intracellular antibody incubation, all stained samples were then washed in Perm/Wash buffer (300 × g/5 min/4°C). Cell Trace Yellow (Thermo Fisher C34567) experiments were conducted according to the manufacturer’s protocol. Samples were resuspended in DAPI staining solution (1 µg/ml DAPI in PBS). DAPI-stained samples were incubated on ice for at least 15 min before data acquisition.
 
 Data acquisition (BD LSRFortessa) was performed no more than 24 hr following sample fixation. Identical laser power was used to quantify Clover signal across all experiments. Data analysis was conducted using FlowJo software (Treestar). Cellular debris/aggregates were excluded using strict forward- and side-scatter gating strategies. Cell cycle stages were gated based on DNA content (DAPI) fluorescence. Our protein degradation experiments focused on S/G2/M phase cells in order to control for cell cycle differences between cell types, and because condensins function primarily during cell division. Wildtype samples lacking Clover expression were processed and stained in parallel to transgenic samples. To correct for autofluorescence, background fluorescence was measured for each cell population from wildtype samples, and then subtracted from transgenic fluorescence values. To generate boxplots, the background-corrected fluorescence value from each of >1000 cells was expressed relative to the mean of the vehicle only condition. We focused exclusively on S/G2/M cells, gated on DNA content, for quantifications to avoid the confounding effects of quiescent cells, where condensins are expressed at very low levels.
 
-## Primary cell culture
+### Primary cell culture
 
-## Thymic and bone marrow ex vivo cultures
+#### Thymic and bone marrow ex vivo cultures
 
 Single-cell suspensions of thymus tissue were generated by gentle dissociation of whole thymus tissue through 40 µm filters (Fisherbrand, 22-363-547) into PBS. For bone marrow, tissue was flushed out of tibia and femur bones with PBS before dissociation through a 40-µm filter. Cell numbers were counted manually using a haemocytometer. Cells (1–2.5 × 106/ml) were then cultured at 37°C ex vivo for 2–6 hr in RPMI (Gibco, 21875-034) containing 10% FCS (Fetal Calf Serum: IGC Technical Services) and penicillin (70 mg/l, IGC Technical Services) and streptomycin (130 mg/l, IGC Technical Services). For bone marrow cultures, different cell lineages were cultured together and then B cell and erythroid lineages were identified based on flow cytometric detection of cell surface marker expression (CD19 and Ter119, respectively) and analysed separately.
 
-## Peripheral T and B lymphocyte ex vivo cultures
+### Peripheral T and B lymphocyte ex vivo cultures
 
 Peripheral T and B lymphocytes were derived from spleens dissected from adult animals. Single-cell suspensions of splenic tissue were generated by gentle dissociation of whole spleen through 40 µm filters (Fisherbrand, 22-363-547). Splenic cells were resuspended in MACS buffer (0.5% BSA (Sigma), 1 mM EDTA in PBS – 40 µl MACS Buffer per 10 × 107 cells) in preparation for Magnetic Activated Cell Sorting. Peripheral T and B cells were isolated from whole spleen using Pan T Cell (Miltenyi Biotec, 130-095-130) or Pan B Cell (Miltenyi Biotec, 130-104-433) isolation kits, respectively, according to the manufacturer’s instructions.
 
 Isolated peripheral T and B cells were cultured at a density of 0.5 × 106 cells/ml, in RPMI media (Gibco, 21875-034) supplemented with 10% FCS (IGC Technical Services), penicillin (70 mg/l, IGC Technical Services), streptomycin (130 mg/l, IGC Technical Services), 2 mM L-glutamine (IGC Technical Services), 1 mM sodium pyruvate (Sigma-Aldrich, S8363), 50 µM β-mercaptoethanol (Gibco, 31350-010) and 1× Non-Essential Amino Acids (Sigma-Aldrich, M7145) at 37°C. To stimulate cells, T cells were additionally cultured with 30 U/ml IL-2 (PeproTech, 212-12) and 1 µl/ml Mouse T-Activator Dynabeads (Gibco, 11,452D), whilst B cells were cultured with 10 ng/ml IL-4 (PeproTech, 214-14) and 5 µg/ml LPS (Sigma, L4391). Cells were allowed to proliferate for 48 hr prior to any auxin/BrdU treatments.
 
-## MEFs
+### MEFs
 
 MEFs were derived from E13.5/E14.5 embryos. Head and organs were removed, and the embryonic body was homogenised with a sterile razor blade. 1 ml 1× trypsin (Sigma-Aldrich, T4174) in PBS was added per 3 embryos and the mixture was incubated at 37°C for 10 min. Tissue was further homogenised by passage through a 23 G needle approximately 20 times. Homogenous tissue was then resuspended in MEF media (Standard Dulbecco's Modified Eagle Medium (DMEM - Gibco, 41965-039) with 15% FCS (IGC Technical Services), penicillin (70 mg/l) and streptomycin (65 mg/l), 2 mM L-glutamine (IGC Technical Services), 1 mM sodium pyruvate (Sigma-Aldrich, S8363), 50 µM β-mercaptoethanol (Gibco, 31350-010), 1× Non-Essential Amino Acids (Sigma-Aldrich, M7145)) and passed through a 40 µm filter to remove non-homogenised tissue. MEFs were then cultured in a T75 flask (per 3 embryos) at 37°C, 5% CO2, and 3% O2.
 
-## Neural stem cells
+### Neural stem cells
 
 SC lines were derived from the telencephalon of individual E13.5 or E15.5 embryos following a previously described protocol (Pollard, 2013). Once stably propagating, NSCs were cultured in T75 flasks. When passaging, NSCs were washed with Wash Media (WM) DMEM/Ham’s F-12 media with L-glutamine (Sigma-Aldrich, D8437-500), 300 mM D-(+)-glucose solution (Sigma-Aldrich, G8644), 1× MEM Non-Essential Amino Acids Solution (Gibco, 11140050), 4.5 mM HEPES (Gibco, 15630056), 75 mg/ml BSA solution, 50 μM β-mercaptoethanol (Gibco, 31350-010), penicillin (70 mg/l, IGC Technical Services), and streptomycin (130 mg/l, IGC Technical Services) and propagated in Complete Media (CM) WM supplemented with Epidermal Growth Factor (EGF) (PeproTech, 315-09) and Recombinant Human FGF-basic (FGF) (PeproTech, 100-18B) each to final concentration of 10 ng/ml, 1 μg/ml Laminin (Trevigen, 3446-005-01), 2.5 ml N-2 Supplement (100×) (Gibco, 17502048) and 5 ml B27 Supplement (50×) (Gibco, 17504044). Cells were cultured at 37°C, 5% CO2 and passaged every 2–3 days.
 
-## Auxin treatment
+### Auxin treatment
 
-## Cell culture
+#### Cell culture
 
 Indole-3-acetic acid (auxin, MP Biomedicals, 102037) was solubilised in DMSO to give a 500 mM stock solution. This stock solution was then diluted in the cell media of choice to give a solution of desired concentration before being filter sterilised through a 0.22 µm filter (Starlab, E4780-1226). A DMSO-only treated sample was always processed alongside any auxin-treated sample.
 
-## In vivo
+### In vivo
 
 Indole-3-acetic acid powder (125 mg) was dissolved in 1 ml PBS (Sigma-Aldrich, D8537), with small quantities of NaOH (IGC Technical Services, 5 M, 140 µl) added to help solubilise the drug. The solubilised drug was then added to 2.4 ml PBS, with minute volumes of HCl (5 M, Fisher, H/1150/PB17) added until solution pH reached 7.4. In order to achieve a more physiological osmolarity, the drug mixture was diluted to 10 ml in MQ water (final osmolarity range of ~355–380 mOsm/l; concentration = 71.4 mM). Vehicle injection mixture was prepared by adding 10 µl of both NaOH (5 M) and HCl (5 M) to 10 ml PBS (final osmolarity of 326 mOsm/l).
 
@@ -205,23 +332,23 @@ Both vehicle and auxin injection mixtures were filter sterilised through 0.22 µ
 
 For in vivo auxin treatments in Figure 6A, B, Figure 6—figure supplement 1B, C, three animals per condition were injected with auxin solution and a further three animals were injected with vehicle. For in vivo auxin treatments in Figure 6C, G, Figure 6—figure supplement 1A, Figure 6—figure supplement 2A, B, and D, a single animal per condition was injected with auxin and a further one animal was injected with vehicle. The experimental unit was a single animal in each case. Neither a priori sample size calculation nor experimental blinding were performed. We excluded one experimental proteomics dataset (relevant to Figure 6B), which used whole thymus rather than sorted CD8+ cells, due to profound contamination with red blood cells. This exclusion criterion was not pre-established. Contamination was subsequently eliminated by MACS purification for CD8+ T-cell lineage cells (Figure 6B). Randomisation was not used to allocate animals to experimental groups. An ARRIVE E10 checklist for the reporting of animal experimentation has been submitted as a Supplemental data file with this manuscript.
 
-## BrdU pulse chase assay
+### BrdU pulse chase assay
 
 A 10 mM stock of BrdU was firstly generated by dissolving 0.0031 g BrdU powder (Sigma-Aldrich, B5002) in 1 ml PBS. Samples were firstly pre-depleted of Ncaph/Ncaph2 using auxin (500 µM) for 2–3 hr, before being pulsed with BrdU (final concentration = 10 µM) for 30 min at 37°C. BrdU was washed out by firstly pelleting cells via centrifugation (300 × g, 5 min) before washing once in media, and then pelleting samples again. Samples were then split in two, with half of the sample placed on ice for assessment of degradation efficiency at the beginning of the chase (0 hr time-point in Figure 5—figure supplement 1C). The other half of the sample was resuspended in pre-warmed auxin-containing media before being incubated at 37°C for a further 3.5 hr. All samples were rinsed in PBS and pelleted after their incubations were complete and stained with Fixable Viability Dye (eBioscience, 65-0865-14, 1 in 200 dilution), and/or fluorescent surface markers if required (20 min/4°C), before being washed in 2 ml Flow Cytometry staining buffer (FCSB - PBS supplemented with 2% bovine serum albumin and 2mM EDTA). To quantify the efficiency of auxin-induced depletion (Figure 5—figure supplement 1C), a small portion of each sample was taken at the start (0 hr) and end (3.5 hr) of the chase and analysed on the LSRFortessa. Degradation was calculated as described in ‘Flow Cytometry’. Following the chase, the majority of each sample was then resuspended and fixed in Cytofix/Cytoperm solution (100 µl/sample, BD Bioscience, 554722) following manufacturer’s instructions and washed in Perm/Wash buffer (2 ml/sample, BD Bioscience, 554723) before being resuspended in 0.5 ml FCSB and left overnight at 4°C.
 
 Samples were pelleted and resuspended in Cytoperm Permeabilisation Buffer Plus (BD Bioscience, 561651) following the manufacturer’s instruction, before being washed in 2 ml Perm/Wash buffer. Cytofix/Cytoperm solution (100 µl/sample) was used to re-fix samples for 5 min at 4°C before samples were again washed in 2 ml Perm/Wash buffer. DNase I solution (eBioscience, 00-4425-10 – part of BrdU Staining Kit for Flow Cytometry, 8817-6600-42) was diluted following the manufacturer’s instruction. Each sample was resuspended in 100 µl diluted DNase I and incubated at 37°C for 1 hr to expose the BrdU epitope. Samples were washed in 2 ml Perm/Wash solution, before being incubated with AlexaFluor-647-conjugated anti-BrdU monoclonal antibody (Invitrogen, B35140, 1 in 20 dilution in Perm/Wash, 20-min incubation at room temperature). Perm/Wash (2 ml per sample) was used to wash samples. To stain for DNA content, each sample was resuspended in 20 µl 7-AAD (BD Biosciences, 559925) for at least 15 min before samples were finally diluted in 0.5 ml PBS. Samples were all analysed on the LSRFortessa as above.
 
-## Immunofluorescence on tissue cryosections
+### Immunofluorescence on tissue cryosections
 
 Tissues were dissected immediately post-mortem then washed in ice-cold PBS, fixed for 24 hr (small intestine) or 2 hr (E10.5 embryos) in 4% PFA in PBS, then passed through 10% and 30% sucrose in PBS solutions, and mounted in OCT (Tissue-Tek). 20 µm sections were cut on a Leica CM1850 and adhered to Superfrost Plus slides (Epredia). Sections were post-fixed in 4% PFA in PBS for 10 min at room temperature, then permeablised in 0.5% Triton X-1000 for 5 min at room temperature, and washed twice in 0.2% Triton X-1000 for 5 min at room temperature. Sections were then blocked in 4% BSA in PBS for 1 hr (small intestine) or 2 hr (E10.5 embryo) at room temperature, and primary antibodies were diluted in 4% BSA in PBS and applied overnight at 4°C. Sections were washed three times in 0.2% Triton X-1000, and secondary antibodies were diluted in 4% BSA in PBS and applied at room temperature for 2 hr. Sections were then washed as previously, stained with DAPI at 1 µg/ml, and mounted in Vectashield (Vector Labs). To reduce autofluorescence, staining of small intestine sections also included an additional treatment with 0.1% Sudan Black in 70% ethanol at room temperature for 20 min immediately prior to DAPI stain and mounting.
 
-## Image capture and analysis
+### Image capture and analysis
 
 Images of small intestine sections were acquired at ×100 magnification using a Photometrics Coolsnap HQ2 CCD camera and a Zeiss AxioImager A1 fluorescence microscope with a Plan Apochromat 100 × 1.4 NA objective, a Nikon Intensilight Mercury based light source (Nikon UK Ltd, Kingston-on-Thames, UK) and either Chroma #89,014ET (3 colour) or #89,000ET (4 colour) single excitation and emission filters (Chroma Technology Corp., Rockingham, VT) with the excitation and emission filters installed in Prior motorised filter wheels. A piezoelectrically driven objective mount (PIFOC model P-721, Physik Instrumente GmbH & Co, Karlsruhe) was used to control movement in the z dimension. Hardware control and image capture were performed using Nikon Nis-Elements software (Nikon UK Ltd, Kingston-on-Thames, UK). Deconvolution of 3D data was performed in Nis-Elements (Richardson Lucy, 20 iterations). 3D datasets were visualised and analysed for fluorescence intensity using Imaris V9.5 (Bitplane, Oxford Instruments, UK). DNA volume was calculated by manually rendering a surface around the DAPI signal in pH3S10+ cells within Imaris, and immunofluorescence signal was calculated from mean voxel intensity within that surface. The percentage protein remaining following IAA treatment was calculated by setting the mean voxel intensity measured in pH3S10+ cells from negative control (e.g. Ncaph+/+ Ncaph2+/+) sections to 0%, and the mean voxel intensity from vehicle-treated sections to 100%.
 
 Images of embryonic whole-mount cryosections were acquired in 2D using a Zeiss Axioscan Z1 with a Plan-Apochomat 40 × 0.95 Korr M27 objective and an Axiocam 506 camera using DAPI channel as focus. Images were acquired in Zen 3.1 software, and analysed using QuPath 0.3.0 (Bankhead et al., 2017). Five regions per embryo were selected based on lineage marker staining (Cdh1 and Pdgfr), and mean pixel intensity was calculated in the 647 channel, corresponding to Ncaph-AID:Clover detected with an anti-GFP-647 nanobooster. The percentage protein remaining value was then calculated as described for small intestine sections.
 
-## Materials availability statement
+### Materials availability statement
 
 Proteomics data underlying Figure 6B ave been submitted to the PRIDE database under accession PXD032374. All other primary data, including flow cytometry files, fluorescence imaging, and uncropped western blot scans are available through the Dryad Digital Repository at https://doi.org/10.5061/dryad.g1jwstqt9.
 

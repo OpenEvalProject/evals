@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01kpzv902 College of Science and Engineering, Flinders University Adelaide Australia
-2. https://ror.org/01nrxwf90 School of Geosciences, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/049jtt335 Département de Biologie, Chimie et Géographie, Université du Québec à Rimouski Rimouski Canada
-4. https://ror.org/048a87296 Subdepartment of Evolution and Development, Department of Organismal Biology, Uppsala University Uppsala Sweden
-5. https://ror.org/01rxfrp27 School of Life Sciences, La Trobe University Melbourne Australia
+1. College of Science and Engineering, Flinders University Adelaide Australia ([ROR:01kpzv902](https://ror.org/01kpzv902))
+2. School of Geosciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. Département de Biologie, Chimie et Géographie, Université du Québec à Rimouski Rimouski Canada ([ROR:049jtt335](https://ror.org/049jtt335))
+4. Subdepartment of Evolution and Development, Department of Organismal Biology, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+5. School of Life Sciences, La Trobe University Melbourne Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
 
 † Corresponding author
 
@@ -44,13 +44,11 @@ Here, we investigate the endocranial morphology of six Devonian dipnoans (Iowadi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig1-v1.jpg)
 
-**Figure 1.:** Griphognathus whitei (NHMUK PV P56054) in (a), dorsal; (b, c), lateral; (d), ventral views.
-
 ## Results
 
-## Description of endocasts
+### Description of endocasts
 
-## Griphognathus whitei (NHMUK PV P56054)
+#### Griphognathus whitei (NHMUK PV P56054)
 
 The skull and endocast of Griphognathus whitei show the extremity of the elongated morphotype; the endocast is more than four times longer than it is wide, measuring 130 mm in length but less than 30 mm in width (Figure 1). However, it is the olfactory region and forebrain (comprising the olfactory lobes, telencephalon and diencephalon) that have undergone significant elongation, with the mid and hind-brain of similar proportion to that in several other taxa (e.g. Rhinodipterus spp.). The shape of the nasal capsules is distinct from other lungfish, in being particularly elongate, forming narrow, oblong ovals. They are situated at the anterior end of remarkably long olfactory canals (comprising almost half the length of the entire endocast) that diverge from each other narrowly at 11°. Numerous canals that may contribute to a medial canal meshwork emanate from the dorsal surface of the olfactory tracts. The lateral branch of the canal for the ramus ophthalmicus profundus n.V and the canal for the ramus buccalis n.VII pass mediodorsally and lateral to the nasal capsule respectively whereas the lateral branch of the nasal vein enters the posterior wall of the nasal capsule.
 
@@ -60,13 +58,11 @@ The mesencephalic region of the endocast is not well preserved and its dorsal ma
 
 Within the inner ear, the semicircular canals are thin and follow a less circular arc than in Chirodipterus and Gogodipterus, with the posterior and lateral canals being longer than the anterior canal. The lateral and anterior canals bear prominent swelling (for their ampullae) at their bases, while the ampulla in the posterior canal is less well defined. The sinus superior reaches the same level dorsally as the endolymphatic ducts above the roof of the cranial cavity. The utricular recess is relatively large and oblong when viewed laterally, while the sacculus is not as clearly defined as that in Rhinodipterus, and its pouches are separated widely from each other, thereby allowing space for a large notochord.
 
-## Iowadipterus halli (FMNH PF 12323)
+#### Iowadipterus halli (FMNH PF 12323)
 
 Although the resolution of the scan data in Iowadipterus halli does not allow for fine detail to be elucidated, overall morphology of the endocast and several other features can nevertheless be recognised (Figure 2). The endocast (~21 mm long, 7.5 mm wide) is high and narrow, and closely associated with the notochord ventrally. The telencephalic, diencephalic, and mesencephalic regions are particularly narrow and high, with only a slight widening evident in the hindbrain region.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig2-v1.jpg)
-
-**Figure 2.:** Iowadipterus halli (FMNH PF 12323) in (a), dorsal; (b), lateral left; (c), lateral right; and (d), ventral views.
 
 The nasal capsules are large and oval-shaped, connecting to the greater cranial cavity via their posteromedial corner. The olfactory canals are very short and diverge from each other at 55°. The bulbous appearance of the tracts as they diverge suggest that sessile olfactory bulbs may have been housed here. The telencephalic region has straight dorsal and ventral margins, although ventrally this angles steeply upwards toward the olfactory bulbs suggestive of a slight telencephalic expansion in this region ventrally. An anterodorsally extended eminence on the dorsal surface represents the space for the pineal organ and stalk, and two ventral expansions below this likely housed the optic nerves. The mesencephalic region is similarly high and narrow as is the forebrain.
 
@@ -74,13 +70,11 @@ On either side of the endocast, just anterior of the labyrinths, two laterally e
 
 The arrangement of the semicircular canals appear somewhat unusual for Devonian lungfish in that the anterior canal is noticeably longer than that of the posterior canal. The anterior semicircular canals are anterior-posteriorly extended, whereas the posterior canals are shorter and are more dorso-ventrally oriented. The lateral semicircular canal has a strong curve and re-enters the labyrinth anterior to the posterior canal. The utricular recess is well-defined on both sides of the specimen, forming almost spherical extensions of the vestibule. Ventral to this, the sacculus forms a single chamber (without a notch to separate the lagena) appearing as an elongated oval-shaped region.
 
-## Orlovichthys limnatis (PIN 3725/110)
+#### Orlovichthys limnatis (PIN 3725/110)
 
 The endocast of Orlovichthys limnatis measures just over 50 mm in length and 20 mm in width (Figure 3). The right-hand side is better preserved and includes a complete labyrinth. The nasal capsules (left-hand side preserved) are small and semicircular in outline. The olfactory canals are very short and diverge at 50° from each other. However, overall the forebrain (comprising the olfactory lobes, telencephalon and diencephalon), is extremely long and narrow.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig3-v1.jpg)
-
-**Figure 3.:** Orlovichthys limnatis (PIN 3725/110) in (a), dorsal; (b), lateral left; (c), lateral right; and (d), ventral views.
 
 The hypophyseal fossa for the hypothalamus extends posteroventrally and there is only a small protrusion for the pineal eminence dorsally. The canal housing the pseudobranchial artery exits the hypophyseal recess latero-ventrally before abruptly turning postero-laterally. It does not bifurcate into separate canals for the pseudobranchial and internal carotid arteries. In the anterior region of the hypophyseal recess two short canals projecting anteriorly likely housed the palatine arteries. Dorsal to the canals for the pseudobranchial/internal carotid arteries a slender canal projects antero-laterally. This canal held the ophthalmic artery. Just posterior to this canal, the canal for the pituitary veins project laterally and slight dorsally.
 
@@ -88,7 +82,7 @@ The dorsal margins of the telen-, dien-, and mesencephalon regions are incomplet
 
 The labyrinth system comprises three semicircular canals, each bearing prominent, elongate ampullae and forming small, circular arcs. The point where the anterior and posterior semicircular canals join, the crus commune, sits above the roof of the cranial cavity. O. limnatis has a prominent, oval-shaped utriculus and an elongated sacculus pouch, which is inferred to have been large although it is incomplete ventrally.
 
-## Pillararhynchus longi (ANU 49196) - with additional notes on Gogodipterus paddyensis (WAM 70.4.250)
+#### Pillararhynchus longi (ANU 49196) - with additional notes on Gogodipterus paddyensis (WAM 70.4.250)
 
 Due to their similarity and incompleteness of Gogodipterus, the following description is based predominantly on Pillararhynchus, but where features differ in Gogodipterus further remarks are included. Gogodipterus paddyensis was previously described as Chirodipterus paddyensis (Miles, 1977), before the material was further acid-prepared and redescribed as Gogodipterus by Gogodipterus by Long, 1992. Only the inner ear canals and part of the trigeminal nerve complex are preserved as it is missing a large part of the dorsal and anterodorsal faces of the endocranium.
 
@@ -96,11 +90,7 @@ As noted in Barwick and Campbell, 1996, Pillararhynchus longi (ANU 49196) is see
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig4-v1.jpg)
 
-**Figure 4.:** Pillararhynchus longi (ANU 49196) in (a), dorsal; (b), lateral left; (c), lateral right; and (d), ventral views.
-
 ![Figure 5.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig5-v1.jpg)
-
-**Figure 5.:** Gogodipterus paddyensis (WAM 70.4.250) labyrinth region in (a), dorsal; and (b), right lateral views with transparent skull overlay; (c), dorsal; (d), right lateral; (e), anterior; (f), posterior views of labyrinth endocast only.
 
 The nasal capsules are large, oblong, with a convex dorsal surface and remain open ventrally. There are no discernible divisions within the two capsules. The large canals for the olfactory nerves (n.I) enter the nasal sacs in their posteromediodorsal region. Below these nerves, there are two other canals exiting the nasal capsule posterolaterally; the larger canal likely contained the orbitonasal vein, and smaller canal likely contained the palatine nerve (VII). The olfactory canals diverge at around 45° from each other. They remain relatively narrow except for a slight bulge just anterior of where they join the telencephalic region, suggesting that these swellings housed sessile olfactory bulbs. On the right side, there is a single canal exiting dorsally from one of these swellings, before changing course to an anterolateral direction. This may represent a branch of the anterior cerebral vein.
 
@@ -112,13 +102,11 @@ The anterior metencephalic region is marked by a large bifurcating canal for the
 
 The labyrinth region on the right side is well preserved, containing all three semicircular canals and the utricular recess. Unfortunately, the boundaries of the sacculolagenar pouch are not observable and thus its shape cannot be reliably determined. The semicircular canals are robust and form small circular arcs; although the arcs in P. longi are slightly more ovoid than those of G. paddyensis. Each canal possesses a sizeable elongate expansion (ampulla) at its base. The crus commune is situated ventral to the highest points of the anterior and posterior semicircular canals, and the sinus superior is also prominent above the roof of the cranial cavity. The posterior canal is the longest of the three semicircular canals, joining with and at the level of the lateral canal, rather than inserting on top of it as the anterior semicircular canal. The lateral canal is the shortest of the three semicircular canals. Although the sacculolagenar region is not preserved, by comparison with the semicircular canals, the spherical utricular recess appears relatively small. The semicircular canals of G. paddyensis are well preserved but almost indistinguishable from those in P. longi.
 
-## Rhinodipterus ulrichi (NRM P6609a)
+#### Rhinodipterus ulrichi (NRM P6609a)
 
 The endocast of Rhinodipterus ulrichi is incomplete anteriorly without the nasal capsules preserved (Figure 6). Overall, the endocast is extremely narrow (14 mm in length and would have been only about 5 mm wide in life), although the specimen has undergone some lateral compression. Only the left olfactory canal is preserved so the angle of divergence between them is not known, although it appears to have been very small.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig6-v1.jpg)
-
-**Figure 6.:** Rhinodipterus ulrichi (NRM P6609a) in (a), dorsal; (b), lateral left; (c), lateral right; and (d), ventral views.
 
 The long and narrow olfactory canal runs directly anteroposteriorly before reaching the telencephalon which bears a prominent ventral bulge and a steeply posterodorsally angled dorsal margin (which continues to rise all the way up to the mesencephalic portion of the endocast). There is a large pineal eminence projecting anterodorsally from the roof of the diencephalic region. The hypophyseal fossa is of moderate size and extends posteroventrally from the lower margin of the endocast. The large, circular canals for the optic nerves (n.II) are visible close to the ventral boundary between the telencephalic and diencephalic regions. Smaller canals that would house nerves n.III (oculomotor) and n.IV (trochlear) exit the cranial cavity close to the ventral margin of the mesencephalic region.
 
@@ -128,25 +116,51 @@ On the right side of the specimen, it appears there may have been space for enla
 
 The anterior and lateral semicircular canals are preserved on the left side, but only the anterior canal appears to bear an ampullar swelling, somewhat triangular in shape, where it connects with the utriculus. The utricular recess is relatively large and is somewhat lemniscate in outline when viewed laterally. The sacculolagenar pouch is elongate and tapers posteriorly. The notochordal canal is preserved between the two sacculolagenar pouches and extends anterior to the level of the trigeminal nerve complex.
 
-## Principal Component Analyses
+### Principal Component Analyses
 
 Firstly, preliminary standard Principal Component Analyses (PCAs) were performed on matrices of various measurements taken from the endocasts (Figure 7). These matrices were partial in order to maximize either the number of variables (PCA-characters; 13 variables on seven taxa) or the number of taxa (PCA-taxa; nine variables on nine taxa). Imputation (i.e., methods to fill in or impute missing data in a matrix) has not been used for these standard PCA. In both analyses, the most incomplete taxa (i.e., Griphognathus whitei, Protopterus aethiopicus, Gogodipterus paddyensis, Dipnorhynchus sussmilchi, and Rhinodipterus ulrichi) were excluded, thus results from these analyses do not encompass the whole spectrum of disparity. Furthermore, in both analyses, three variables (length and height of the sacculus, length of nasal capsules) were not included because of the high proportion of incomplete data. Based on the broken-stick method, only PC1 was non-trivial for the PCA-taxa, whereas the first three axes were considered as non-trivial for the PCA-characters.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig7-v1.jpg)
 
-**Figure 7.:** a), dorsal; (b), left lateral; and (c), ventral view.ANG_OLF, angle of bifurcation between olfactory canals; D_NII, depth of cranial endocast at level of n.II; D_NV, depth of cranial endocast at level of n.V; DEP_HYP_F, depth of cranial endocast at level of hypophyseal fossa; HF_NII, distance from hypophyseal fossa to n.II; NAS_CAP_L, length of nasal capsules; NII_ OLF_BIF, distance from n.II to point of bifurcation between olfactory canals; NV_HF, distance from n.V to hypophyseal fossa; NX_NV, distance from n.V to n.X; OLF_CAN_L, length of olfactory canals from nasal capsules to point of bifurcation; SAC_H, height of sacculus; SAC_L, length of sacculus; SCC_H, height of semicircular canals; SCC_L, length of semicircular canals from anterior to posterior; SCC_W, width of semicircular canals from midline to lateral canal; UTR_H, height of utriculus; UTR_L, length of utriculus.
+**Figure 7.:** ANG_OLF, angle of bifurcation between olfactory canals; D_NII, depth of cranial endocast at level of n.II; D_NV, depth of cranial endocast at level of n.V; DEP_HYP_F, depth of cranial endocast at level of hypophyseal fossa; HF_NII, distance from hypophyseal fossa to n.II; NAS_CAP_L, length of nasal capsules; NII_ OLF_BIF, distance from n.II to point of bifurcation between olfactory canals; NV_HF, distance from n.V to hypophyseal fossa; NX_NV, distance from n.V to n.X; OLF_CAN_L, length of olfactory canals from nasal capsules to point of bifurcation; SAC_H, height of sacculus; SAC_L, length of sacculus; SCC_H, height of semicircular canals; SCC_L, length of semicircular canals from anterior to posterior; SCC_W, width of semicircular canals from midline to lateral canal; UTR_H, height of utriculus; UTR_L, length of utriculus.
 
 In the PCA (taxa), variables associated with the semicircular canals (height, length, and width) and variables taking into consideration nerves (n.II, n.V, n.X) position covaried together and represent 69.9% of the total variation (Figure 8, Figure 8—figure supplement 1). Although considered as trivial based on the broken-stick method, the second axis reflects a contrast between the length of the olfactory canals and the angle between these canals and it accounts for 17.1% of the total variation; this important source of variation is important even without the inclusion of Griphognathus.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig8-v1.jpg)
+
+**Figure 8.:** Loadings and eigenvalues shown in Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig8-figsupp1-v1.jpg)
+
 In the PCA (characters), all variables, with the exception of the angle between the olfactory canals, are increasing simultaneously accounting for 55.2% of the total variation (Figure 9, Figure 9—figure supplements 1 and 2), whereas the variation associated with the angle between the olfactory lobes and height of n.II foramen accounts for the variation of PC2 (16.4%). This tendency is even clearer in the projection of axes PC1 versus PC3 (Figure 9B). In addition, there is a contrast between the utriculus (height and length) and the semicircular canals (height, length, and width). The height and depth of n.V are opposed to the distance between n.V and n.X.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig9-v1.jpg)
+
+**Figure 9.:** (A), PC1 vs PC2; (B), PC1 vs PC3; (C), PC2 vs PC3. Loadings and eigenvalues shown in Figure 9—figure supplements 1 and 2.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig9-figsupp1-v1.jpg)
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig9-figsupp2-v1.jpg)
 
 In both standard PCAs (PCA-taxa and PCA-characters), some variables cluster together [(1) the three variables (length, height, and width) of the semicircular canals and (2) the depth at nerves II and V] and the angle between the olfactory lobes show a clear distinction from the remaining variables. Although some trends are common to both standard PCAs, differences of results between the PCA (taxa) and the PCA (characters) highlight the advantages of using other methods such as Bayesian PCA (BPCA) and the PCA for incomplete data (InDaPCA). These two methods allow us to perform more integrative analyses using distinct approaches to deal with incomplete data. Furthermore, the most incomplete taxa (Griphognathus, Dipnorhynchus, Gogodipterus, and Protopterus) and variables (length of nasal capsules and the sacculus length and height) can be included in the analyses.
 
 Thus, using Bayesian Principle Component Analysis (BPCA), only three axes are considered to be statistically non-trivial based on the broken-stick method (Figure 10, Figure 10—figure supplement 1). The first axis accounts for 54.2% of the variation, while the second axis explains 29.2%. The main source of variation of the first axis is a contrast between the length of the nasal capsules and the olfactory canals (Figure 10b–c), and the angle between the olfactory canals. All the remaining variables respond similarly (all change concordantly with the tandem length of the nasal capsules – length of the olfactory canals) corresponding to a minor source of variation for axes 1 and 2. In summary, BPCA PC1 and PC2 summarize the general endocranial tendency, whereby the length of the nasal capsule +olfactory canals increase as the angle between the olfactory canals decreases. Griphognathus whitei has a particularly strong weight on this tendency (Figure 10a). The three variables associated with the semicircular canals (length, height, and width) cluster together, as do the height and length of the sacculus, the height and length of the utriculus and the depth of n.II and n.III.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig10-v1.jpg)
+
+**Figure 10.:** Eigenvalues shown in Figure 10—figure supplement 1.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig10-figsupp1-v1.jpg)
+
 Further findings worthy of note include Gogodipterus paddyensis failing to cluster near the rest of the ‘chirodipterids’, instead plotting out closer to Dipnorhynchus sussmilchi. The extant taxa, Neoceratodus and Protopterus do not share a similar morphospace, whereas Youngolepis praecursor, Chirodipterus australis, Dipterus valenciennesi, Orlovichthys limnatis, Pillarhynchus longi, and Rhinodipterus spp. do (Figure 10a).
 
 Finally, using PCA for incomplete data (InDaPCA), the first axis represents 66.0% of the variation, while the second and third axes represent 12.6% and 6.46%, of the variation, respectively (Figure 11, Figure 11—figure supplement 1). Based on the broken-stick method, solely axis 1 is non-trivial, but the interpretation of the first three axes is biologically meaningful (Figure 11—figure supplement 1). The main difference between the scatter diagrams of the InDaPCA and the BPCA is that the taxa in the InDaPCA morphospace occupy a better space distribution where the functional out-group Youngolepis is clearly distinct from other lungfish on the first axis.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig11-v1.jpg)
+
+**Figure 11.:** Explanation of variable abbreviations as per Figure 7.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig11-figsupp1-v1.jpg)
 
 The first axis in the InDaPCA corresponds to an integration of all variables with the exception of the angle between the olfactory canals (Figure 11—figure supplement 1), which has a weak importance on the first axis. This main source of variation corresponds to a coordinate integration of the endocast components. Axis PC2 reflects mainly the contrasts between (1) the length of the olfactory canal and the angle between these canals. The size and shape of the sacculus and semicircular canals, the size of the utriculus, and the depth at cranial n.II and n.V and the height of the foramen for cranial n.II form three clusters in the projection of axes 1 and 2. Projections of axes PC1 versus PC2, and PC1 versus PC3 provide similar endocranial information.
 
@@ -158,7 +172,7 @@ In contrast to the BPCA, using InDaPCA results in Gogodipterus paddyensis cluste
 
 Lungfish first appear in the fossil record in the Early Devonian as robust marine animals, many with hyper-mineralised tooth plates, heavily-ossified dermal skulls and neurocrania (Cui et al., 2022). However, from the Late Devonian-Carboniferous onwards, many undergo a decline in the degree of ossification as their skeleton becomes more cartilaginous. This reduction in the dipnoan cranial dermal skeleton was likely accompanied by some changes in the cranial cavity form, but this level of increasingly poor ossification of the neurocranium in those taxa limits our possible comparisons to between the more heavily ossified Devonian forms and extant taxa only. Consequently, some of the oldest lungfish taxa are the most completely known, especially with respect to neurocranial morphology. With the exception of the Permian lungfish Persephonichthys chthonica (Pardo et al., 2014), no post-Devonian fossil taxa have had their cranial endocasts described. We acknowledge that our investigation of lungfish brain evolution as elucidated from morphometric analysis of cranial endocasts is still preliminary in several respects. Due to the extreme age and rarity of 3D preserved lungfish endocrania, we used all material available to us. Admittedly we cannot hope to control for many factors, including ontogeny, so our interpretations must naturally take that into consideration. However, we hope that our study inspires future work on the neural evolution of both fossil and extant lungfish.
 
-## Implications for sensory abilities in early lungfish
+### Implications for sensory abilities in early lungfish
 
 Overall, there is considerable variation in the shape and relative proportions of the endocasts examined. Griphognathus whitei stands out as the most extreme case of elongation of the olfactory region, whereas other taxa, such as Iowadipterus halli, appear to elongate the midbrain region, whilst retaining very short olfactory canals and more conventionally-shaped nasal capsules (rounded to slightly oval). Although only a partial endocast, Gogodipterus paddyensis is nearly indistinguishable from Pillararhynchus longi in labyrinth morphology. All ‘chirodipterid’ taxa (sensu Friedman, 2007) appear to share mediolaterally-oriented nasal capsules, close to equidimensional circular arcs of their semicircular canals and a broad angle of bifurcation between the olfactory canals. Despite this, the ‘chirodipterid’ taxa do not consistently cluster together in the analyses, giving further weight to the proposition that these taxa form a paraphyletic group (Friedman, 2007).
 
@@ -168,7 +182,7 @@ The length of the olfactory canals (usually incorporating olfactory nerve, bulb 
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/73461/elife-73461-fig12-v1.jpg)
 
-**Figure 12.:** Challands et al., 2019 .*The following endocasts were first published elsewhere but new images were created for inclusion in this figure: Rhinodipterus kimberleyensis (Clement and Ahlberg, 2014) Figures 2 and 3; Dipterus valenciennesi (Challands, 2015) Figures 6 and 9; ‘Chirodipterus’ australis (Henderson and Challands, 2018) Figures 3–4; Dipnorhynchus sussmilchi (Clement et al., 2016a) Figures 2—4.
+**Figure 12.:** *The following endocasts were first published elsewhere but new images were created for inclusion in this figure: Rhinodipterus kimberleyensis (Clement and Ahlberg, 2014) Figures 2 and 3; Dipterus valenciennesi (Challands, 2015) Figures 6 and 9; ‘Chirodipterus’ australis (Henderson and Challands, 2018) Figures 3–4; Dipnorhynchus sussmilchi (Clement et al., 2016a) Figures 2—4.
 
 Taken together, our analyses suggest that the olfactory and labyrinth regions are more plastic and may reflect species differences in chemosensory and vestibular sensitivity (and potentially auditory) abilities, whereas the hindbrain remains more conserved. These findings are of note as the olfactory region seems to be changing independently from all other endocast variables, despite elongated dermal crania being modified in different ways (e.g. elongation of the dermal snout, cheek, or jaws). A similar finding has been established for extant cartilaginous fishes, where the olfactory bulbs maintain a substantial level of allometric independence from the rest of the brain in more than 100 species, reflecting differences in ecological niche, particularly habitat (Yopak et al., 2015; Yopak et al., 2019), a relationship which is common to other vertebrates (Yopak et al., 2010). This suggests that these species of lungfish may have had different olfactory abilities for various survival tasks including localizing prey, avoiding predators, and chemosensory communication with conspecifics.
 
@@ -182,7 +196,7 @@ In contrast, the forebrain underwent early expansion in some of the oldest membe
 
 And finally, the changes seen in the labyrinth region, particularly the expansion of the utriculus, suggests increasing sensitivity to movements in the horizontal plane, perhaps reflecting changing sensory requirements from one niche to another. For example, we consider that animals living in a shallow, near-shore environment would have less requirement for sensitivity to large changes in the vertical plane compared to nektonic animals living in deeper, open environments throughout the water column. Thus, the modular dissociation between the sacculus +semicircular canals compared to the expansion of the utriculus may potentially be capturing a change from deeper water marine (nektonic) environments (as per some of the earliest lungfish, e.g. Dipnorhynchus), to gradually more near-shore/terrestrial ecosystems (a trend seen among Mid-Late Devonian members to present day taxa). However, we acknowledge that it is difficult to determine if increased relative utricular size results from greater reliance of sensitivity in the horizontal plane alone, or if it expands to compensate for example relative stagnation of the sacculus + semicircular canals in some way. Further studies, such as investigation of neuronal densities in extant lungfish labyrinths, may potentially help to clarify this uncertainty in future.
 
-## Taxonomy of the ‘chirodipterids’
+### Taxonomy of the ‘chirodipterids’
 
 The genus Chirodipterus was erected by Gross, 1933, and the first lungfish endocast to be described was that of C. wildungensis from the Upper Devonian in Germany (Säve-Söderbergh, 1952). Since that time, several more species of Chirodipterus have been described, including forms from Europe (Mörs, 1991; Säve-Söderbergh, 1952), China (Song and Chang, 1991), USA (Schultze, 2010) and Australia (Kemp, 2000; Miles, 1977). Other so-called ‘chirodipterids’ (sensu Friedman, 2007) include Pillarahynchus (Barwick and Campbell, 1996) and Gogodipterus (Long, 1992) from Australia, and Sorbitorhynchus (Wang et al., 1993) from China, suggesting a wide global distribution.
 
@@ -194,7 +208,7 @@ Two of the specimens included in our study, Pillararhynchus longi and Gogodipter
 
 Our findings, and data from the Chinese taxa once published, should thus enable definitive clarification of the taxonomy of Chirodipterus. Nevertheless, from our current work we can already identify several characters common to ‘chirodipterids’ (such as a prominent pineal process, mediolaterally-oriented nasal capsules, a ventrally-directed hypophyseal region, near-equidimensional circular arcs of all three semicircular canals), which should be tested in any further studies of chirodipterid taxonomy.
 
-## Elongated crania
+### Elongated crania
 
 At the other end of the morphological spectrum from the ‘chirodipterids’, the development of an elongated snout and/or skull has occurred convergently across many genera of actinopterygians but is not a well-established morphology in piscine sarcopterygians. In fact, lungfish are the only sarcopterygian group that developed significant cranial elongation, and those that did were mostly confined to the Middle to Late Devonian (ranging from the Givetian to the Famennian).
 
@@ -210,45 +224,45 @@ Other forms with elongate crania are placed in isolated positions alongside shor
 
 The elongation of lungfish crania has been proposed to be related to either feeding functional morphology (Campbell and Barwick, 1986; Sharp and Clack, 2013) or air-gulping ability (Gess and Clement, 2019 other references therein). As mentioned earlier, this cranial elongation is achieved via various approaches, either by modification of the dermal bones in the snout, cheek, or in the jaws. Thus, we expected that the neurocranium and endocasts of Devonian lungfish would have also accommodated elongation via different approaches. In contrast, we found that it is nearly always the olfactory region that is elongated regardless of which portion of the dermal skull appears to lengthen, and that the hindbrain remains relatively conserved in form. The most glaring exception to this is that of Iowadipterus which appears to have very short olfactory canals but a long and narrow midbrain. We believe further investigation and consideration of this unusual taxon in particular is warranted.
 
-## Conclusions
+### Conclusions
 
 The cranial endocasts of six Palaeozoic dipnoans (Iowadipterus halli, Gogodipterus paddyensis, Pillararhynchus longi, Griphognathus whitei, Orlovichthys limnatis, and Rhinodipterus ulrichi) are created and described from synchrotron and computed tomography (CT) data. These represent a significant addition to the other known Palaeozoic lungfish endocasts (previously only four virtual endocasts had been described from tomographic data, and four others with partial endocasts were described and reconstructed directly from observation of specimens). Morphometric analyses of 10 Palaeozoic and two extant lungfish genera are conducted using standard Principal Component Analysis (PCA), Bayesian Principle Component Analysis (BPCA) and PCA for incomplete data (InDaPCA), which show the olfactory and labyrinth regions exhibit the largest amount of variation. Functional interpretation suggests that olfaction remains one of their most dominant senses throughout lungfish evolutionary history. The phylogenetic implications for the ‘chirodipterids’ and long-headed lungfish are discussed, and we support incorporation of additional endocranial characters in future analyses of dipnoan interrelationships.
 
 ## Materials and methods
 
-## Specimens examined
+### Specimens examined
 
 Six species of Devonian lungfish were examined in this study: Gogodipterus paddyensis (WAM 70.4.250); Griphognathus whitei (NHMUK PV P56054); Iowadipterus halli (FMNH PF 12323); Orlovichthys limnatis (PIN 3725/110); Pillararhynchus longi (ANU 49196); Rhinodipterus ulrichi (NRM P6609a).
 
-## Imaging and segmentation
+### Imaging and segmentation
 
-## Gogodipterus paddyensis (WAM 70.4.250)
+#### Gogodipterus paddyensis (WAM 70.4.250)
 
 Gogodipterus paddyensis was scanned using X-ray micro-computed tomography (X-ray µCT) at the Centre for Microscopy, Characterisation and Analysis (CMCA) at The University of Western Australia (UWA) in Perth, Australia in 2019. Parameters used were 80kV and 7 W using a Versa 520 XRM (Zeiss, Pleasanton, CA, USA). A LE2 beam filter was used to mitigate beam hardening and increase contrast. Source-sample and sample-detector distances were set to –73 and 48 mm, respectively, which together with the 0.4 X objective and 2 x camera binning, resulted in a final pixel resolution of 41.52 µm. Suitable image intensity was achieved with an exposure of 1 s and a total of 2401 projections were collected through 360o for the tomography. Owing to its large size, the sample was scanned in wide stitch mode, with five vertical segments needed to cover the full height. In addition, auto referencing was disabled, with a single reference collection captured prior to scanning. Reconstruction and stitching were achieved automatically by the software using default settings. Total scan time was 21 hr 38 min. These data were manually segmented and rendered in MIMICS v.19 (Materialise).
 
-## Griphognathus whitei (NHMUK PV P56054)
+#### Griphognathus whitei (NHMUK PV P56054)
 
 Griphognathus whitei was scanned at the Natural History Museum, UK, using a Nikon Metrology HMX ST 225 micro-CT scanner. The specimen was scanned with the following parameters: Energy 210 keV, voxel size 102 microns, 180 degrees, 3142 proj, angle step 0.1 deg/proj, exposure time 0.5 sec/proj, object to detector 1170 mm. (filters: 2.5 mm Cu). The resulting image stack was rendered and segmented manually using Drishti and Drishti Paint 2.6.1 to produce a virtual 3D endocast.
 
-## Iowadipterus halli (FMNH PF 12323)
+#### Iowadipterus halli (FMNH PF 12323)
 
 The holotype and only known specimen (FMNH PF 12323) was scanned at The University of Texas High-Resolution X-ray CT Facility, Austin, in 2007 using the following parameters: 419 kV, 1.8 mA, 130% offset, 1 brass filter, air wedge, integration time 128ms, slice thickness 0.25 mm, S.O.D. 700 mm, 2000 views, 1 ray averaged per view, 2 samples per view, inter-slice spacing 0.25 mm, field of reconstruction 180 mm (maximum field of view 184.9855 mm), reconstruction offset 4000, reconstruction scale 4000. Total slices 192, and resultant voxel size is 0.361 mm. Segmentation was performed using MIMICS v.17 & v.19 (Materialise).
 
-## Orlovichthys limnatis (3725/110)
+#### Orlovichthys limnatis (3725/110)
 
 Orlovichthys limnatis was scanned at the Palaeontological Institute, Moscow, in three sections using a Skyscan 1,172 micro-CT scanner. Each section was scanned with the following parameters: Energy 100 keV, voxel size 34.1 microns, 180 degrees, 514 projections, angle step 0.7 deg/projection, exposure time 0.79 sec/projection, object to detector 344 mm. (filters: 1 mm Al). The resulting image stacks of all specimens were combined using ImageJ and the subsequent image stack was rendered and segmented manually using Drishti and Drishti Paint 2.6.1 to produce a virtual 3D endocast.
 
-## Pillararhynchus longi (ANU 49196)
+#### Pillararhynchus longi (ANU 49196)
 
 Pillararhynchus longi was scanned at the Australian Synchrotron (Australian Nuclear Science and Technology Organisation, ANSTO), during experiment number AM10403 in 2016 with the following parameters: Energy 40 keV, voxel size 12.2 microns, 181 degrees, 1810 projections, angle step 0.1 degree/projection, exposure time 0.22 sec/projection, object to detector 35 mm (filters: 0.45 mm carbone +5 mm high density Carbone +10 mm high density Carbone +1 mm Al +1 mm Al). The resulting image stacks of all specimens were rendered and segmented manually using MIMICS v.18 and v.19 (Materialise) to produce a virtual 3D endocast.
 
-## Rhinodipterus ulrichi (NRM P6609a)
+#### Rhinodipterus ulrichi (NRM P6609a)
 
 Rhinodipterus ulrichi was scanned at the European Synchrotron Radiation Facility (ESRF) on beamline ID19 using propagation phase-contrast X-ray synchrotron radiation micro-computed tomography (PPC-SRµCT) and the attenuation protocol of Sanchez et al., 2013 with 4 meters between the sample and detector. It was imaged with 90 keV, with 4,000 projections over 360 degrees of 0.1 s each, in half-acquisition mode. Two columns of 30 scans each were required to capture the entire specimen, which had a resultant voxel size of 30 µm. The endocast was rendered and manually segmented in Drishti Paint 2.6.1.
 
 Note: The first lungfish to have had its endocast described (Säve-Söderbergh, 1952) was Chirodipterus wildungensis, Gross, 1933, which is currently housed in the Museum für Naturkunde in Berlin, Germany (MB.f 12875, holotype). One of us (AMC) visited Berlin to examine and scan this specimen in December 2018. The original ‘shatter method’ dissection of the specimen resulted in some ~70 separate pieces of the skull, but only about 10 sizeable pieces remain in the collection today, possibly due to loss or degradation. The largest three blocks were scanned at the µCT Lab of Museum für Naturkunde using the following parameters: “c” 140kV, 500 µA, 2000 projections, 360 degrees rotation, 0.139 pixel size; “cd” 100kV, 135 µA, 2000 projections, 360 degrees rotation, 0.139 pixel size; “f” 100kV, 135 µA, 2000 projections, 360 degrees rotation, 0.139 pixel size. Despite this, we unfortunately did not find it possible to reconstruct endocranial morphology from the scanned or remaining segments of this specimen.
 
-## Measurements and analysis
+### Measurements and analysis
 
 Endocast dimensions (Figure 7) were taken using IC Measure on-screen calibration and measurement software (https://www.theimagingsource.com). The complete original matrix (Source data 1) combined 17 endocast variables examined in 14 specimens representing 12 species (‘Chirodipterus’ australis and Dipterus valenciennesi were coded for two specimens each). This included 10 Palaeozoic as well as two extant species (Neoceratodus forsteri and Protopterus aethiopicus). Both specimens of ‘C’. australis were included in every analysis, whereas only specimen NHMUK PV P17410 of D. valenciennesi was retained in our analyses (the incomplete specimen NMS G.2004-10-1 of D. valenciennesi was excluded because it had undergone considerable compression). Specimen NHMUK PV P56038 of ‘C’. australis and specimen NHMUK PV P17410 of D. valenciennesi are the only two specimens for which all variables are available. Gogodipterus paddyensis is the most incomplete specimen missing 11 measurements out of a total of 17 variables. The complete original matrix has 24.7% of missing data, while the complete matrix (excluding one specimen of Dipterus) has 21.2% of missing data. Data were log10-transformed to minimize differences among taxa.
 
@@ -260,6 +274,6 @@ We used ordination methods to describe the variation and relationships among the
 
 Missing data were estimated using the Bayesian method developed by Oba et al., 2003 and implemented in the R package ‘pcaMethods’ (Stacklies et al., 2007). A cross-validation method was used to estimate the number of meaningful components – in this case the two first components (Stacklies et al., 2007). The InDaPCA method used was designed by Podani et al., 2021 and consists of a modified version of an eigenanalysis-based PCA for data containing missing values. The InDaPCA was performed in R using the correlation matrix. In this case, the four first components were considered for interpretation. The package ‘ggplot2’ in R was used to create the graphics.
 
-## Data availablility
+### Data availablility
 
 All data generated or analysed during this study are included in the manuscript, supporting files (5 figures and 5 tables), or via a relevant online repository. Scan data from Chirodipterus wildungensis, Gogodipterus paddyensis, Iowadipterus halli, Pillararhynchus longi and Rhinodipterus ulrichi can be found on MorphoSource at: https://www.morphosource.org/projects/000381944?locale=en, Griphognathus whitei and Orlovichthys limnatis have been deposited on Dryad: https://doi.org/10.5061/dryad.2rbnzs7p8.

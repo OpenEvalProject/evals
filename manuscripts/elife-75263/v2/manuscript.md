@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Cardiovascular Research Institute and Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States
+1. Cardiovascular Research Institute and Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Here, we improve our assay by incorporating the native integrin ICAM-1 as our li
 
 ## Results
 
-## Expanding suite of optogenetically controlled T cell biosensors by optimizing cell adhesion system
+### Expanding suite of optogenetically controlled T cell biosensors by optimizing cell adhesion system
 
 Previously, we developed a light-gated immune receptor (zdk-CAR) to probe T cell antigen signaling output as a function of both receptor occupancy and average ligand-binding half-life (Figure 2A; Tischer and Weiner, 2019). In the dark, cells expressing zdk-CAR bind to purified LOV2 ligands functionalized on a supported lipid bilayer (SLB) and activate antigen signal transduction. Blue light interrupts LOV2-binding events and antigen signaling. If we provide LOV2 as the only means of cell interaction with the bilayer, cells unbind from the bilayer upon exposure to blue light (Figure 2B). This complicates our analysis, which requires exposing cells to multiple doses of blue light to build up a dose-response curve. Therefore, we must also include a light-insensitive mode of adhering the cells to the bilayer.
 
@@ -46,11 +46,35 @@ In our previous work, we adhered cells to the SLB using an antibody against thei
 
 We functionalized our SLB with human ICAM-1 to better mimic the T cell/APC interaction (Figure 2C, right; Dustin et al., 2007). We first validated Zap70 recruitment, LAT clustering, and DAG generation biosensors expressed in Jurkat cells on ICAM-1 functionalized bilayers (Figure 2D). Jurkat cells stably expressing zdk-CAR were exposed to SLBs functionalized with purified human ICAM-1-His and Alexa Fluor 488 labeled LOV2. To increase integrin binding, we changed our imaging buffer to a modified HBSS (mHBSS) buffer with higher Mg++ concentrations (Labadia et al., 1998). Compared to our previous antibody-based adhesion, Jurkats on ICAM-1 functionalized bilayers released a greater percentage of the bound LOV2 ligand upon blue-light illumination. Adhesion through ICAM-1 also increased the dynamic range of the Zap70, LAT, and DAG biosensors (Figure 2E; Videos 1–4). ICAM-1 adhered cells also displayed receptor/Zap70 and LAT clustering spatial patterns similar to those observed by others using native receptor ligands on SLBs (Balagopalan et al., 2015; Chakraborty and Weiss, 2014; Kumari et al., 2015).
 
-## Quantifying kinetic proofreading in Zap70 recruitment, LAT clustering, and DAG generation under ICAM-1 adhesion
+![Video 1.](https://cdn.elifesciences.org/articles/75263/elife-75263-video1.mp4.jpg)
+
+**Video 1.:** Time course of LOV2 on a supported lipid bilayer reversibly binding zdk-CARs expressed in Jurkat cells in the presence of ICAM-1 adhesion to the bilayer (light-independent cellular interaction). LOV2 is released from cell footprint under blue light and rebinds in the dark (illumination status indicated in top left). Cells were adhered to the bilayer for 5 min prior to the start of the video. Two minutes of strong blue-light illumination are followed by 3 min in the dark for two cycles (MM:SS time-stamp in top right).
+
+![Video 2.](https://cdn.elifesciences.org/articles/75263/elife-75263-video2.mp4.jpg)
+
+**Video 2.:** Time course of reversible Zap70 recruitment in Jurkat cells in the presence of ICAM-1 adhesion to the bilayer (light-independent cellular interaction). ZAP70 is recruited to phosphorylated zdk-CAR ITAMs in the dark and released back to the cell cytosol under blue light (illumination status indicated in top left). Cells were adhered to the bilayer for 5 min prior to the start of the video. Two minutes of strong blue-light illumination are followed by 3 min in the dark for two cycles (MM:SS time-stamp in top right).
+
+![Video 3.](https://cdn.elifesciences.org/articles/75263/elife-75263-video3.mp4.jpg)
+
+**Video 3.:** Time course of reversible LAT clustering in Jurkat cells in the presence of ICAM-1 adhesion to the bilayer (light-independent cellular interaction). LAT forms clusters during active antigen signaling in the dark, and these clusters dissociate following blue-light-mediated dissociation of the receptor-ligand interaction (illumination status indicated in top left). Cells adhered to the bilayer for 5 min prior to the start of the video. Two minutes of strong blue-light illumination are followed by 3 min in the dark for two cycles (MM:SS time-stamp in top right).
+
+![Video 4.](https://cdn.elifesciences.org/articles/75263/elife-75263-video4.mp4.jpg)
+
+**Video 4.:** Time course of reversible DAG generation in Jurkat cells in the presence of ICAM-1 adhesion to the bilayer (light-independent cellular interaction). DAG is generated during active antigen signaling in the dark, and DAG generation is terminated following blue-light-mediated dissociation of the receptor-ligand interaction (illumination status indicated in top left). Cells adhered to the bilayer for 5 min prior to the start of the video. Two minutes of strong blue-light illumination are followed by 3 min in the dark for two cycles (MM:SS time-stamp in top right).
+
+### Quantifying kinetic proofreading in Zap70 recruitment, LAT clustering, and DAG generation under ICAM-1 adhesion
 
 With our improved ICAM-1 adhesion method and expanded suite of biosensors, we applied our previous assay for measuring the strength of upstream kinetic proofreading to the signaling events of Zap70 recruitment, LAT clustering, and DAG generation. In our assay, we independently probe the effect of receptor occupancy or ligand-binding half-life on a given T cell intracellular signal (Tischer and Weiner, 2019). By titrating the intensity of LOV2 stimulating light, we modulate the lifetime of receptor-LOV2-binding events and the downstream antigen signaling response. By repeating the experiment at different levels of LOV2 ligand on the bilayer, we can uncouple the effects of ligand occupancy from ligand-binding half-life on cell activation.
 
 After exposing zdk-CAR expressing cells to a LOV2 and ICAM-1 functionalized SLB, we illuminate the cells with a constant intensity of blue light with a known ligand-binding half-life (Figure 3A). After 3 min of illumination (when a steady state is reached), we image the amount of bound fluorescently tagged LOV2 accumulated underneath each cell using a long exposure image (O’Donoghue et al., 2013). We also image the output intensity of the signaling biosensor. We then reset the system with 2 min pulse of intense blue light to terminate all signaling before proceeding to expose the cells to the next intensity of blue light. We repeat the experiment on bilayers functionalized with different densities of LOV2 to sample a wider range of occupancies. Following this experimental protocol, we build up a dataset of steady-state signaling output as a function of both ligand occupancy and ligand half-life (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig3-v2.jpg)
+
+**Figure 3.:** (A) After adhering the cells to the functionalized supported lipid bilayers (SLBs), we expose them to a series of 3 min blue-light illuminations generating defined average ligand-binding half-lives. At the end of each half-life condition, we measure every cell’s steady-state reporter output and receptor occupancy (example cell highlighted at timepoint 8). Following this protocol, we measure every cell’s reporter output (bottom) as a function of receptor occupancy (middle) and average ligand-binding half-life (top). (B) After normalizing each cell to its average basal reporter activity, the data from multiple time courses with different ligand densities are aggregated, and the reporter output values are normalized to the 90th percentile cell in the dataset. (C) The dataset is then fit to a model of the expected output of a kinetic proofreading signaling system. In the model, the expected signaling output is proportional to the ligand occupancy (R) and ligand-binding half-life (τ) raised to the number of strong proofreading steps (n) upstream of that signaling step. The magnitude of n provides a relative measure of the strength of kinetic proofreading between ligand binding and a given signaling step. K is the amount of upstream signal for half-maximal response, and β is basal signaling in the pathway (D) Expected output of models with zero, five, and ten kinetic proofreading steps. As the value of n increases, the dependence of output on ligand half-life increases, while the dependence on receptor occupancy decreases. A system with no proofreading responds only to receptor occupancy, while a system with a high degree of proofreading (n=10) is insensitive to numerous short binding events while fully responding to very few long binding events. (E) Anticipated results for different scenarios of proofreading step distribution.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Using the architecture and parameterization of the kinetic proofreading model described in Ganti et al., 2020, we simulated the signaling output of non-proofreading and kinetic proofreading systems to a series of ligands with the same equilibrium constant but different binding half-lives. (A) To create a non-proofreading system, we deleted all reset pathways dependent on ligand unbinding. This left a series of slow reversible reactions (top). While this system binds the ligand series at different rates, the same receptor occupancy is reached for all ligands at steady state (middle). The signaling output of the non-proofreading system also reaches the same steady-state value for all ligands (bottom). (B) The kinetic proofreading system consists of both a series of reversible reactions, and additional reset pathways dependent on ligand unbinding (top). While all ligands achieve the same steady-state receptor occupancy (middle), the steady-state output of the kinetic proofreading system is different for each ligand depending on its binding half-life (bottom).
 
 The lentiviral vectors we used to express our zdk-CAR and live-cell biosensors result in cell-to-cell variability in the expression level of each construct, even after sorting for cells with CAR expression levels similar to native TCR expression in T cells (Tischer and Weiner, 2019). To account for variability in biosensor expression, we normalize each cell to its baseline biosensor intensity measured in the absence of ligand engagement. The cell-to-cell variability in zdk-CAR expression has the benefit of expanding the receptor occupancies that we sample, as cells expressing more zdk-CAR receptors bind more LOV2 under all half-life conditions (Figure 3A, middle). If all cells expressed identical amounts of receptor, it would be laborious to generate and analyze the large number of independent CAR expressing clones needed to sample a wide range of receptor occupancies. Importantly, the variability in receptor expression is not unique to our CAR system; native T cells also vary in TCR expression level and can respond to antigen even at very low levels of TCR expression (Labrecque et al., 2001). Kinetic proofreading could enable cells to tolerate variability in receptor expression level, as it results in cells that are increasingly sensitive to ligand-binding half-life instead of receptor occupancy.
 
@@ -66,13 +90,37 @@ With the assumptions of the model, the fit value of n is unlikely to represent t
 
 Comparing the measured degree of proofreading at multiple known signaling events allows us to bracket where kinetic proofreading steps exist (Figure 3E). If all proofreading steps occurred between ligand binding and Zap70 recruitment, we would measure the same degree of upstream proofreading at Zap70 recruitment, LAT clustering, and DAG generation (Figure 3E, left), as there would be no additional increase in proofreading strength beyond Zap70. If all proofreading steps occurred after LAT clustering and before DAG generation, we would measure no degree of upstream proofreading at Zap70 recruitment or at LAT clustering, and see a large jump in the degree of upstream proofreading at DAG generation (Figure 3E, middle). If proofreading steps were distributed from before Zap70 recruitment to after LAT clustering, we would measure a non-zero degree of upstream proofreading at Zap70 recruitment with an increasing degree of upstream proofreading as we progress down the cascade to LAT clustering and DAG generation (Figure 3E, left). As we will show, this last model is most consistent with our data.
 
-## Kinetic proofreading steps exist between ligand-receptor binding and Zap70 recruitment
+### Kinetic proofreading steps exist between ligand-receptor binding and Zap70 recruitment
 
 In our previous work, we failed to detect kinetic proofreading in Zap70 recruitment (Tischer and Weiner, 2019). Using ICAM-1 functionalized bilayers, we now measure moderate amounts of kinetic proofreading in the recruitment of Zap70 to activated receptors. Zap70 recruitment correlated with both receptor occupancy (⍴=0.42) and ligand-binding half-life (⍴=0.49) (Figure 4—figure supplement 1A). Our model indicates a moderate degree of proofreading at Zap70 recruitment across three datasets (n=4.5 ± 0.4) (Figure 4A). These data suggest the existence of kinetic proofreading steps between ligand binding and Zap70 recruitment.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-v2.jpg)
+
+**Figure 4.:** (A) Collected data of Zap70 recruitment as a function of receptor occupancy (y-axis) and ligand half-life (x-axis) (left). Zap70 recruitment best fits a model of kinetic proofreading with a strength of upstream proofreading of n=4.5 ±- 0.4 (right). (B) Collected data of LAT clustering as a function of receptor occupancy (y-axis) and ligand half-life (x-axis) (left). LAT clustering best fits a model of kinetic proofreading with a strength of upstream proofreading of n=7.8 ± 1.1 (right). (C) Collected data of DAG generation as a function of receptor occupancy (y-axis) and ligand half-life (x-axis) (left). DAG generation best fits a model of kinetic proofreading with a strength of upstream proofreading of n=11 ± 1.5 (right). (D) The mean model fit n-values (±1 std) for each biosensor across three biological replicates (gray markers). The fit n-values continue to increase from Zap70 recruitment to LAT cluster to DAG generation. These results suggest the existence of kinetic proofreading steps between ligand-binding and Zap70 recruitment, between the recruitment of Zap70 and the formation of a LAT cluster, and between the initial formation of a LAT cluster and the generation of DAG from that cluster.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mean reporter output (±1 std) plotted as a function of receptor occupancy (left) and ligand-binding half-life (right) for Zap70 recruitment (A), LAT clustering (B), and diacylglycerol (DAG) generation (C). Spearman correlation shown in the inset of each graph. Each datapoint represents reporter measurment in approximately n=120 cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** In our previous work, we failed to detect kinetic proofreading in Zap70 recruitment with supplementary bilayer adhesion. In our previous studies lacking light-independent bilayer adhesion, it is possible that non-activated cells did not generate sufficient footprints for segmentation. Consistent with this idea, if we restrict our analysis to only the activating half-life conditions of our current Zap70 dataset (which uses ICAM as a secondary adhesion molecule), we measure similarly low proofreading (n=0.7 ± 0.3).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–C) Residual plots of the kinetic proofreading model fit for each reporter dataset. Heatmaps show the model fit subtracted from the underlying data, highlighting areas where the model over predicted the cell response in red and under predicted the cell response in blue. (D) Plot of the average residual for models fit with a range of constant N values. We fit each dataset to our model of kinetic proofreading while holding the number of proofreading steps (N) constant. For each constant value of N (x-axis), we calculated the average residual value of the fit (y-axis). Fit values of N reported in the main text are highlighted with a dot on each line.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** This model predicts the minimum number of proofreading steps needed to achieve a desired Hopfield error rate at given ratios of cognate-ligand to self-ligand concentration and half-life ratios (Hopfield, 1974). (A) Exploration of the ligand concentration ratios (y-axis) and ligand half-life ratios (x-axis) where a kinetic proofreading system could achieve a Hopfield error rate of less than 0.001. An 11-step kinetic proofreading system could achieve an error rate less than 0.001 in the region indicated between the purple lines (N~11). (B) Heatmaps of the number of proofreading steps required to achieve Hopfield error rates of less than 0.01 (left), 0.001 (middle), and 0.0001 (right). (C) A minimum of two steps (N=1) are required to achieve a Hopfield error rate of less than 0.001, even at very high half-life ratios between cognate- and self-ligand.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** We used AIC to select between models where Zap70, LAT, and diacylglycerol (DAG) each have their own unique value for the number of upstream proofreading steps (N value), models where two steps share the same N value (with a unique N value for the third step), and models where all three steps share the same N value. We found that models with unique N values for all three signaling steps have the lowest AIC, thus best explaining our data. Models where LAT and DAG share the same N value (and Zap70 has a unique N value) have a marginally worse AIC. Models where Zap70, LAT, and DAG all share the same N value perform the worst.
+
 Previously, we measured Zap70 with no light-insensitive adhesion to the bilayer, as antibody adhesion inhibited Zap70 reporter dynamics (Tischer and Weiner, 2019). With no additional adhesion, only actively signaling cells adhere to the bilayer. In the absence of adhesion beyond LOV2, we potentially missed sampling high occupancy, short half-life regimes with little Zap70 recruitment, as those cells failed to adhere to the bilayer. If we filter out the short half-life conditions of our new Zap70 data (with ICAM-1 adhesion) and refit our kinetic proofreading model, we measure a similarly low proofreading result as we previously observed in the absence of adhesion beyond LOV2 (n=0.7 ± 0.3) (Figure 4—figure supplement 2). With ICAM-1 adhesion we likely capture a more complete dataset of Zap70 recruitment, improving our measurement of upstream proofreading.
 
-## Evidence for kinetic proofreading steps between Zap70 recruitment and LAT clustering, with further steps between LAT clustering and DAG generation
+### Evidence for kinetic proofreading steps between Zap70 recruitment and LAT clustering, with further steps between LAT clustering and DAG generation
 
 Next, we measured the strength of kinetic proofreading at the levels of LAT clustering and DAG generation. LAT clustering showed an increased dependency on binding half-life (⍴=0.54) and a decreased dependence on receptor occupancy (⍴=0.21) compared to Zap70 recruitment (Figure 4—figure supplement 1B). Our proofreading model fits our LAT clustering data with a higher degree of proofreading (n=7.8 ±1.1) compared to Zap70 recruitment (Figure 4B). The stronger degree of kinetic proofreading at LAT clustering versus Zap70 recruitment suggests additional steps of kinetic proofreading between the recruitment of Zap70 to phosphorylated ITAMs and the formation of LAT clusters. The generation of DAG also depended heavily on ligand half-life (⍴=0.52), while depending the least on occupancy (⍴=0.18) (Figure 4—figure supplement 1C). Our model fits the highest degree of kinetic proofreading at DAG generation (n=11.3 ± 1.5), suggesting further kinetic proofreading steps beyond initial LAT clustering and upstream of DAG generation (Figure 4C). The sequential increase in the degree of kinetic proofreading progressing down the antigen signaling cascade suggests steps contributing to kinetic proofreading exist throughout the cascade, at least up to the generation of DAG (Figure 4D).
 
@@ -92,11 +140,27 @@ To better explore the kinetic proofreading model space, we generated heatmaps re
 
 After comparing our results with the Ganti model, this analysis suggests that our number of fit proofreading steps may be somewhat inflated as a function of our uses the average ligand-binding half-lives of three-dimensional washout experiments in place of the two-dimensional single-molecule information T cells use to make activation decisions. However, the higher fit N values are more consistent with the required number of steps to discriminate ligands under more physiological conditions than our previous measurements of approximately three steps, which would not be expected to discriminate ligands with half-life ratio of 10 even at a ligand ratio of 1 (Figure 4—figure supplement 4B, right).
 
-## LAT clusters reset more slowly than Zap70 clusters upon ligand disengagement
+### LAT clusters reset more slowly than Zap70 clusters upon ligand disengagement
 
 Kinetic proofreading requires all signaling intermediates to reset upon ligand unbinding. While it is often assumed signaling intermediates reset at similar rates, slower reset rates for downstream and terminal signaling intermediates could improve sensitivity without a great loss in specificity (McKeithan, 1995). Our zdk-CAR deactivates with blue light, giving us the unique ability to unbind all antigen-binding events synchronously. After measuring additional kinetic proofreading steps downstream of the activated receptor, we used our Zdk-CAR system to measure the off-rate of bound LOV2, recruited Zap70, and clustered LAT following acute antigen unbinding (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of reset experiment. After synchronously unbinding all receptors with intense blue light, we measure the reset rate of LOV2 unbinding, Zap70 loss, and LAT cluster dissociation. (B) Representative cells of Zap70 and LAT upon receptor inactivation with respective LOV2 images. Cells expressing either Zap70-Halo (top) or LAT-Halo (bottom) were allowed to activate for 3 min before acute inactivation with intense blue light for 1 min and subsequently imaged every 3 s. The lifetimes of subcellular clusters of LOV2, Zap70, and LAT were tracked with the ImageJ TrackMate plugin (scale bar = 5μm). (C) The lifetime distributions of tracked clusters after receptor inactivation. The lifetime distributions of LOV2 unbinding and Zap70 dissociation fit exponential distributions with mean lifetimes of 3.3 and 9.3 s, respectively, suggesting a one-step reset process. The LAT declustering lifetime distribution fit an Erlang distribution of a two-step process and a mean lifetime of 14.2 s. Fitting of cluster intensity over time with exponentials gave comparable results for all three reporters (Figure 5—figure supplement 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75263/elife-75263-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** As an alternative to tracking each reporter’s lifetime distribution, we tracked the intensity of identified cluster regions following blue-light inactivation. We fit the median curve of each biosensor to a bi-exponential function. The stronger fit half-life (weight = ~75%) for each biosensor’s bi-exponential fit (graph inset) was comparable to the mean lifetime found analyzing the lifetime distributions (Figure 5C). We found that clusters of receptor-bound LOV2 lost intensity with a half-life of 3.1 s. Clustered Zap70 lost intensity with a half-life of 5.6 s. LAT clusters lost intensity much slower than LOV2 ligand or Zap70, with a half-life of 16 s. The lesser fit half-life for each biosensor was approximately 16 s with a weight of ~25%. The longer half-life fit is likely a combination of photobleaching and/or cytoskeletal rearrangements of the cell occurring after receptor inactivation that are common between the biosensors.
+
 After allowing cells to activate on LOV-AF488 and ICAM-1-HIS functionalized bilayers for 3 min, we acutely unbound all LOV2 ligands with intense blue light while imaging LOV2 and Zap70 or LAT biosensors. We manually segmented cells in ImageJ and tracked individual subcellular clusters of each biosensor using the TrackMate plugin (Tinevez et al., 2017) to sample their lifetime distributions (Figure 5B, Video 5 and Video 6). We assumed the loss of each biosensor consisted of one or more Poisson steps. A single-step mechanism results in exponentially distributed lifetimes, while a multistep process creates an Erlang lifetime distribution, where the integer shape parameter estimates the number of steps (Huang et al., 2019). We found the lifetimes of bound LOV2 and recruited Zap70 best fit exponential distributions with mean lifetimes of 3.3 and 9.3 s, respectively. However, the lifetimes of LAT clusters best fit a two-step Erlang distribution (shape = 2) with a mean lifetime of 14.2 s (Figure 5C). Upon ligand unbinding, recruited Zap70 and clustered LAT likely reset through different processes, with LAT resetting through a slower multistep process. While this idea awaits experimental verification, these data open the possibility that a LAT cluster could survive a momentary ligand unbinding event (loss of Zap70) and survive long enough to integrate multiple ligand-binding events, as observed in primary T cells on SLBs with native ligand (Lin et al., 2019). Such a mechanism could explain why our simple steady-state model of kinetic proofreading captures Zap70 recruitment better than LAT clustering and DAG generation, as our ligand density and stimulation time are likely sufficient for binding event integration to occur (Figure 4—figure supplement 3).
+
+![Video 5.](https://cdn.elifesciences.org/articles/75263/elife-75263-video5.mp4.jpg)
+
+**Video 5.:** Example cell from time course of bound LOV2 (left) and recruited Zap70 (right) loss after inactivation of antigen signaling with strong blue light. Jurkat cells expressing zdk-CAR and Zap70 biosensor were activated on LOV2 and ICAM-1 functionalized supported lipid bilayers (SLBs) for 3 min prior to the start of the video. Cells are illuminated with strong blue light at the start of the video, and the lifetime of bound LOV2 and recruited Zap70 are tracked using the ImageJ TrackMate plugin (magenta circles, MM:SS timestamp top left). Only tracks originating before blue-light illumination (start of the video) were included to filter out spurious tracks later in the time course (scale bar = 5μm).
+
+![Video 6.](https://cdn.elifesciences.org/articles/75263/elife-75263-video6.mp4.jpg)
+
+**Video 6.:** Example cell from time course of bound LOV2 (left) and LAT clusters (right) loss after inactivation of antigen signaling with strong blue light. Jurkat cells expressing zdk-CAR and LAT biosensor were activated on LOV2 and ICAM-1 functionalized supported lipid bilayers (SLBs) for 3 min prior to the start of the video. Cells are illuminated with strong blue light at the start of the video, and the lifetime of bound LOV2 and recruited Zap70 are tracked using the ImageJ TrackMate plugin (magenta circles, MM:SS timestamp top left). Only tracks originating before blue-light illumination (start of the video) were included to filter out spurious tracks later in the time course (scale bar = 5μm).
 
 ## Discussion
 
@@ -128,92 +192,96 @@ Cooperativity between active receptors to complete downstream proofreading steps
 
 Methods were adapted from our lab’s previous work (Tischer and Weiner, 2019) with modified sections highlighted below.
 
-## Cloning
+### Cloning
 
 We used standard molecular biology protocols for all cloning. In general, we PCR-amplified individual DNA segments and assembled them using the isothermal Gibson assembly method. Mark M Davis (Huse et al., 2007) kindly gifted us a plasmid encoding the C1 domains of PKCθ. Jay Groves kindly gifted us plasmids encoding human Zap70 and LAT (O’Donoghue et al., 2013). The Zdk-CAR was based on a CD8-CAR (Irving and Weiss, 1991), the plasmid for which was a kind gift from Art Weiss. The V529N mutation in LOV2 biases it toward the ‘open’ conformation which does not bind Zdk (Yao et al., 2008). This mutation facilitated the quick release of LOV2 from the Zdk-CAR.
 
-## Cell culture
+### Cell culture
 
 Jurkat cells grew in RPMI 1640 (Corning Cellgro, #10-041-CV) supplemented with 10% fetal bovine serum (Gibco, #16140-071) and glutamine (Gibco, #35050-061). Jurkat lines were tested to be negative for mycoplasma. Cell identity (Jurkat E6.1 clone) was validated with STR profiling. We maintained Jurkats at densities between 0.1 and 1.0×106 cells per ml. We grew 293T cells in DMEM (Gibco, #11995-065) with 10% fetal bovine serum. All cell lines grew in humidified incubators at 37°C with 5% CO2.
 
-## Cell line construction
+### Cell line construction
 
 We combined 1 ml of wild-type (WT) Jurkat cells at 0.5×106 cells/ml with 0.5 ml lentiviral supernatant for the zdk-CAR and the appropriate reporter construct. Cells recovered overnight in the incubator, 8 ml of media was added the following day and cells were grown to desired density. Cells were labeled with the Halo dye JF549 (Grimm et al., 2015) and we sorted the desired expression levels by FACS (FACSAria II, BD). Cells recovered for approximately three passages and tested for blue-light-dependent signaling on LOV2 and ICAM-1 functionalized SLBs on the microscope. We obtained WT Jurkat cells for this study from the laboratory of Dr Art Weiss. Regular mycoplasma tests were negative.
 
-## Lentiviral production
+### Lentiviral production
 
 We produced lentivirus in 293T cells using a second-generation lentiviral system (James and Vale, 2012). We transfected cells grown to 40–60% confluency in six-well plates with 0.5 µg each of pHR (containing the transgene of interest), pMD2.G (encoding essential packaging genes), and p8.91 (encoding VSV-G gene to pseudotype virus) using 6 µl of Trans-IT (Mirus, #MIR 2705) per manufacturer’s instructions. (Plasmids kind gift from Ron Vale.) After 48 hr, we filtered the supernatant through a 0.22 µm filter and used immediately or froze at −80°C until use.
 
-## Cell preparation for imaging
+### Cell preparation for imaging
 
 For each imaging well, we used approximately 1×106 Jurkat cells labeled with the Halo dye JF549 (Grimm et al., 2015) (10 nM, a kind gift from the Lavis lab) for at least 15 min at 37°C before resuspension in growth media. Before imaging, we washed cells once into mHBSS-BB (at 400 RCF, 4 min), and resuspended them in 40 µl imaging media before adding them to a functionalized SLB.
 
-## Protein purification
+### Protein purification
 
 LOV2 and Zdk were purified and labeled as described in our previous work (Tischer and Weiner, 2019). Jay Groves generously gifted us the purified human ICAM-1-HIS used in this study (Nye and Groves, 2008).
 
-## Glassware cleaning
+### Glassware cleaning
 
 All glassware was cleaned as described in our previous work (Tischer and Weiner, 2019).
 
-## Preparation of small unilamellar vesicles
+### Preparation of small unilamellar vesicles
 
 We washed a precleaned 4 ml glass vial ×2 with chloroform (Electron Microscopy Sciences, #12550). Using Hamilton syringes (Hamilton Company, Gastight 1700 series, #80265 and #81165), we combined 1 mmoles of lipids in the following molar ratio: 97.5% DOPC, 0.5% PEG-PE, 1% DGS-NTA(Ni), and 1% biotinyl CAP PE (Avanti Polar Lipids, #850375C, #880230C, #790404C, #870282C, respectively). Next, we evaporated the chloroform by slowly rotating the vial at an angle while slowly flowing nitrogen gas (Airgas, #NI 250). We vacuum desiccated the resulting lipid film for 2 hr to overnight. After desiccation, we rehydrated the lipids in 2 ml of TBS and gently vortexed the vial for 10 min. We transferred the mixture to a cleaned 5 ml round bottom glass tube. We formed small unilamellar vesicles (SUVs) by submerging bottom of the tube in a Branson 1800 ultrasonic cleaner (Branson #M1800) to the level of the lipid mixture in the tube and sonicating for 30–60 min until clear. We added ice periodically to the sonicator bath to maintain a temperature of 0°C. Centrifugation at >21,000 RCF for 30 min at 4C (Eppendorf microcentrifuges 5425R) pelleted large lipid structures. We removed the SUV containing supernatant and used it immediately or stored it in liquid nitrogen until use.
 
-## RCA cleaning of microscopy coverslips
+### RCA cleaning of microscopy coverslips
 
 We placed glass coverslips (Ibidi, #10812) into a glass Coplin jar (Sigma-Aldrich, #BR472800) and successively bath sonicated for 10 min each in acetone (Sigma-Aldrich, #534064-4L), isopropyl alcohol (Thermo Fisher Scientific, #BP2618500), and ddH2O. Coverslips were washed five times in ddH2O between each bath sonication to remove excess organic solvents. Next, we added 40 ml ddH2O, 10 ml of 30% ammonium (Thermo Fisher Scientific, #423305000) hydroxide, and 10 ml 30% hydrogen peroxide (VWR, #7722-84-1) to the coverslips. We placed the Coplin jar into a 70–80°C water bath and allowed it to react for 10 min after the base solution began to vigorously bubble. We decanted the base solution and washed the coverslips five times in ddH2O. Next, we added 40 ml ddH20, 10 ml of 30% hydrochloric acid (Millipore Sigma, #1003180250), and 10 ml 30% hydrogen peroxide to the coverslips. Again we incubated the reaction in the water bath and allowed it to react for 10 min after the acid solution began to vigorously bubble. We decanted the acid solution and washed the coverslips five times in ddH2O and stored them in ddH2O for up to 1 week.
 
-## Functionalization of SLBs and cell preparation
+### Functionalization of SLBs and cell preparation
 
 After removing an RCA cleaned glass coverslip from ddH2O and immediately blown drying it with compressed nitrogen, we firmly attached a six-well Ibidi sticky chamber (Ibidi, #80608) to the coverslip. We diluted 30 µl of SUV mixture with 600 µl TBS before adding 100 µl to each well and incubated at room temperature for 25 min. To functionalize a well, we flushed out excess lipids with 500 µl TBS. Next, we added 100 µl of ICAM-1-HIS diluted in TBS-BB to 150 µM to the well and incubated at room temperature for 35 min. After incubation, we washed the well with 500 µl TBS before adding 100 µl Streptavidin (Rockland, #S000-01) diluted in TBS-BB (2 µg/ml final) to the well and incubated at room temperature for 5 min. After washing again with 500 µl TBS-BB, we added LOV2 diluted in TBS-BB (typically between 20 and 200 nM) to the well and incubated in the dark at 37°C for 5 min. We then flushed the well with 500 µl HBSS-BB and incubated with cells previously labeled with the halo dye washed into Imaging media. Cells adhered to the SLB in the dark for 5 min at 37°C before imaging.
 
-## Buffers for SLB functionalization and imaging
+### Buffers for SLB functionalization and imaging
 
-## Microscopy
+### Microscopy
 
 Imaging was performed on an Eclipse Ti inverted microscope (Nikon) with two tiers of dichroic turrets to allow simultaneous fluorescence imaging and optogenetic stimulation. The microscope was also equipped with a motorized laser TIRF illumination unit, ×60 and ×100 Apochromat TIRF 1.49 NA objective (Nikon), an iXon Ultra EMCCD camera (Andor), and a laser launch (Versalase, Vortran) equipped with 405, 488, 561, and 640 nm laser lines. For RICM, light from a Xenon arc lamp (Lambda LS, Sutter Instrument) source was passed through a 572/35 nm excitation filter (Chroma, #ET572/35x) filter and then a 50/50 beam splitter (Chroma, #21000). Microscope and associated hardware was controlled with MicroManager (Edelstein et al., 2014) in combination with custom-built Arduino controllers (Advanced Research Consulting Corporation). Blue light for optogenetic stimulation was from a 470 nm LED (Lightspeed Technologies Inc, #HPLS-36), controlled with custom micromanager scripts. For most timepoints, only RICM and TIRF561 images were collected. During and in-between these timepoints, a TIRF488 long-pass dichroic mirror remained permanently in the top dichroic turret, ensuring the blue-light illumination of the cells was never interrupted. The top TIRF488 dichroic passed the longer wavelengths used for RICM and TIRF561. Only when LOV2 localization was imaged with TIRF488 at the end of a 3 min stimulation was the top dichroic removed to allow the shorter fluorescence excitation light to pass.
 
-## Image processing
+### Image processing
 
 After each day of imaging, we captured TIRF488, TIRF561, and RICM images of slides with concentrated solutions of fluorescein, Rose Bengal, or dPBS, respectively. To flat field correct, we subtracted the camera offset from both the experimental and dye images. By dividing the experimental image by the median dye slide image, we acquired the final flat field corrected image used in analysis (Model, 2006).
 
-## Time course overview
+### Time course overview
 
 We exposed cells to 5 min blocks of constant blue-light stimulation. Each block consisted of an initial 2 min hold in strong blue light followed by a 3 min stimulation at a fixed intensity of intermediate blue light. To measure the reporter output, we averaged the final four timeframes of each condition. We measured CAR occupancy from a long exposure TIRF488 image taken at the end of the 3 min stimulation, after the last biosensor output measurement made in TIRF561. As fluorescence excitation light from TIRF488 potently stimulates LOV2, the TIRF488 channel could only be imaged once at the very end of a 3 min stimulation. We repeated 5 min blocks over the course of an hour experiment with a variety of blue-light intensities to sample different ligand-binding half-lives.
 
-## LOV2-binding half-life measurements
+### LOV2-binding half-life measurements
 
 We calculated the average Zdk-binding half-life for each blue-light condition as described previously (Tischer and Weiner, 2019).
 
-## CAR occupancy measurements
+### CAR occupancy measurements
 
 We background subtracted and thresholded RICM images at each timeframe to create a mask of cell footprints. The thresholded image was labeled using Python skimage watershed algorithm (van der Walt et al., 2014). A second local background mask was made by labeling pixels surrounding an expanded perimeter of each labeled cell in the cell mask. At steady state, free LOV2 should be homogeneously distributed on the SLB. The mean TIRF488 pixel intensity of a cell footprint is the sum of free LOV2 and LOV2 bound to the CAR. The mean TIRF488 pixel intensity in the background mask reflects free LOV2. Therefore, we calculated CAR occupancy as the mean TIRF488 pixel intensity in the cell mask minus the mean TIRF488 pixel intensity in the background mask.
 
-## Biosensor measurements
+### Biosensor measurements
 
 To calculate biosensor output levels at steady state, we averaged the TIRF561 pixel intensity within each labeled cell mask over the last four timeframes (equivalent to the last 40 s) of a 3 min hold in blue light. To account for differences in biosensor expression level, we normalized cells to their average biosensor intensity in the absence of signaling (taken as the average of the last two TIRF561 images of each 2 min reset pulse of intense blue light). We sometimes observed drift in a cell’s basal activity over time. To correct for this drift, we subtracted the mean TIRF561 pixel intensity of each preceding 2 min reset pulse of intense blue light from the mean value of the proceeding 3 min stimulation of blue light. Thus, the reported biosensor output value is the fold-change from the cell’s average basal activity minus the fold-change from resent basal activity.
 
 Prior to model fitting, the biosensor output values of a biological replicate dataset (consisting of multiple wells acquired on the same day) were normalized by the 90th percentile output value in the dataset to properly normalize the data to the model, and to allow comparison between biosensors of variable dynamic ranges.
 
-## Kinetic proofreading model fitting
+### Kinetic proofreading model fitting
 
 We fit each biological replicate dataset to the simple model of kinetic proofreading described previously (Figure 3D; Tischer and Weiner, 2019). Each datapoint consists of an average ligand-binding half-life, a CAR occupancy measurement, and a biosensor output measurement (see above). With those three measured values, we fit the remaining three parameters of our model n, K, and β (number of proofreading steps, input for half-max biosensor output, and basal signaling output, respectively) using the Levenberg-Marquardt least-squares algorithm as implemented by the curve_fit function from the Python SciPy library (Virtanen et al., 2020).
 
-## Akaike information criterion
+### Akaike information criterion
 
 Assuming errors are identically and normally distributed, AIC was calculated as 2K+n*ln(RSS/n) for several nested models where various conditions of equality were set on the N parameters in the equilibrium model across the data. K is the total number of parameters used to describe the outcomes, n is the total number of measurements across the system, and RSS is the sum of squared residual from the fit. The model with the lowest AIC score (three unique values for N) was chosen as the best model (Yang, 2019).
 
-## Criteria for including or excluding cells in analysis
+### Criteria for including or excluding cells in analysis
 
 We restricted our analysis to cells that were present for the full-time course. Cells that detached partway through the time course or arrived after the experiment began were excluded. Each replicate began with a no-light (maximal half-life) condition to identify non-responding cells. Cells that did not exhibit at least a 10% increase in reporter output above their basal output were excluded from analysis.
 
-## Biological and technical replicates
+### Biological and technical replicates
 
 Kinetic proofreading datasets (Figure 4) – A biological replicate consisted of two time courses of stimulating cells with blue light on SLBs with different concentrations of LOV2, all on the same day (to ensure the light path did not change). We conducted each biological replicate on different days, with new preparations of cells, SLBs, and LOV2. Each time course within a biological replicate contained approximately 30 cells, whose biosensor output levels and receptor occupancy were measured in all half-life conditions. As the microscopy experiments could not be done in parallel and each biological replicate took an entire day, we could not conduct technical replicates. Data underlying each replicate included in the supplement.
 
 Signaling reset datasets (Figure 5) – A biological replicate consisted of four cycles of acutely terminating signaling and measuring the respective reporter lifetimes for approximately 30 cells. For each reporter, three or four biological replicates were conducted with different preparations of cells and bilayers (data included in the supplement).
 
-## Measuring signaling reset after ligand unbinding
+### Measuring signaling reset after ligand unbinding
 
-OptoCAR expressing Jurkats were activated for 5 min on a LOV2-AF647 and ICAM-1 functionalized bilayer. At T=0, we illuminated the cell with intense blue light to unbind receptor-bound LOV2 ligands while imaging LOV2 and either Zap70 or LAT biosensors every 3 s. We manually segmented cells in ImageJ before tracking clusters of LOV2 and Zap70/LAT biosensors using the TrackMate plugin (Tinevez et al., 2017). We selected all tracks that persisted for at least two frames prior to blue-light illumination and plotted the lifetime distribution of the resulting tracks. We then fit each lifetime distribution to Erlang distributions with shape parameter k and rate parameter λ (which reduces to an exponential distribution when k=1) using curve_fit function from the SciPy library (Virtanen et al., 2020):f(x)=λkxk−1e−λx(k−1)!
+OptoCAR expressing Jurkats were activated for 5 min on a LOV2-AF647 and ICAM-1 functionalized bilayer. At T=0, we illuminated the cell with intense blue light to unbind receptor-bound LOV2 ligands while imaging LOV2 and either Zap70 or LAT biosensors every 3 s. We manually segmented cells in ImageJ before tracking clusters of LOV2 and Zap70/LAT biosensors using the TrackMate plugin (Tinevez et al., 2017). We selected all tracks that persisted for at least two frames prior to blue-light illumination and plotted the lifetime distribution of the resulting tracks. We then fit each lifetime distribution to Erlang distributions with shape parameter k and rate parameter λ (which reduces to an exponential distribution when k=1) using curve_fit function from the SciPy library (Virtanen et al., 2020):
+
+$$
+f(x)=\frac{\lambda^{k}x^{k−1}e^{−\lambdax}}{(k−1)!}
+$$

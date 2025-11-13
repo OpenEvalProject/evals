@@ -33,37 +33,37 @@ The Xiaheyan locality is unique in several respects (Trümper et al., 2020), inc
 
 ## Results
 
-## Systematic palaeontology
+### Systematic palaeontology
 
-## Etymology
+#### Etymology
 
 Based on ‘frequens’ (‘frequent’ in Latin), referring to the abundance of the species at the Xiaheyan locality. Holotype. Specimen CNU-NX1-326 (female individual; Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71006/elife-71006-fig1-v1.jpg)
 
-**Figure 1.:** Ctenoptilus frequens sp. nov., holotype (CNU-NX1-326).(A) Habitus drawing and (B) habitus photograph (composite); (C–D) details of head and right foreleg (location as indicated in B), (C) color-coded interpretative drawing and (D) photograph (composite); and (E–F) details of ovipositor (location as indicated in B), (E) drawing and (F) photograph (composite). Color-coding and associated abbreviations: red, lacina (la); dark blue-purple, mandible (md); green, pharynx (pha). Other indications, head: ce, composite eye; f, frons; co, coronal cleavage line; fc, frontal cleavage line. Wing morphology abbreviations: LFW, left forewing; LHW, left hind wing; RFW, right forewing; RHW, right hind wing; ScP, posterior subcosta; RA, anterior radius; RP, posterior radius; M, media; CuA, anterior cubitus; CuPa, anterior branch of posterior cubitus; CuPb, posterior branch of posterior cubitus; AA, anterior analis. Photograph (composite). Color-coding and associated abbreviations: red, lacina (la); dark blue-purple, mandible (md); green, pharynx (pha). Other indications, head: ce, composite eye; f, frons; co, coronal cleavage line; fc, frontal cleavage line. Wing morphology abbreviations: LFW, left forewing; LHW, left hind wing; RFW, right forewing; RHW, right hind wing; ScP, posterior subcosta; RA, anterior radius; RP, posterior radius; M, media; CuA, anterior cubitus; CuPa, anterior branch of posterior cubitus; CuPb, posterior branch of posterior cubitus; AA, anterior analis.
+**Figure 1.:** (A) Habitus drawing and (B) habitus photograph (composite); (C–D) details of head and right foreleg (location as indicated in B), (C) color-coded interpretative drawing and (D) photograph (composite); and (E–F) details of ovipositor (location as indicated in B), (E) drawing and (F) photograph (composite). Color-coding and associated abbreviations: red, lacina (la); dark blue-purple, mandible (md); green, pharynx (pha). Other indications, head: ce, composite eye; f, frons; co, coronal cleavage line; fc, frontal cleavage line. Wing morphology abbreviations: LFW, left forewing; LHW, left hind wing; RFW, right forewing; RHW, right hind wing; ScP, posterior subcosta; RA, anterior radius; RP, posterior radius; M, media; CuA, anterior cubitus; CuPa, anterior branch of posterior cubitus; CuPb, posterior branch of posterior cubitus; AA, anterior analis. Photograph (composite). Color-coding and associated abbreviations: red, lacina (la); dark blue-purple, mandible (md); green, pharynx (pha). Other indications, head: ce, composite eye; f, frons; co, coronal cleavage line; fc, frontal cleavage line. Wing morphology abbreviations: LFW, left forewing; LHW, left hind wing; RFW, right forewing; RHW, right hind wing; ScP, posterior subcosta; RA, anterior radius; RP, posterior radius; M, media; CuA, anterior cubitus; CuPa, anterior branch of posterior cubitus; CuPb, posterior branch of posterior cubitus; AA, anterior analis.
 
 Referred material. See Appendix 1, Section 2.1.2.
 
-## Locality and horizon
+#### Locality and horizon
 
 Xiaheyan Village, Zhongwei City, Yanghugou Formation (Ningxia Hui Autonomous Region, China); latest Bashkirian (latest Duckmantian) to middle Moscovian (Bolsovian), early Pennsylvanian (Trümper et al., 2020).
 
-## Differential diagnosis
+#### Differential diagnosis
 
 The species is largely similar to Ctenoptilus elongatus (Brongniart, 1893), in particular in its wing venation (Appendix 1, Section 2.1.2). However, it differs from it in its smaller size (deduced from forewing length) and its prothorax longer than wide (as opposed to quadrangular).
 
 General description. See Appendix 1, Section 2.1.2.
 
-## Specimens description
+#### Specimens description
 
 See Appendix 1, Section 2.1 and Appendix 1—figures 2–8; details of ovipositor, see Figure 2; details of head, see Figure 4.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71006/elife-71006-fig2-v1.jpg)
 
-**Figure 2.:** Ctenoptilus frequens sp. nov. in lateral view.(A–C) Specimen CNU-NX1-749, (A) overview of the ovipositor with overlaid indications of the ovipositor parts (see also) overview of the ovipositor with overlaid indications of the ovipositor parts (see also Appendix 1—figure 7A–C) and (B, C) details of basal part of the same ovipositor as in A. (B) composite photograph and (C) reflectance transforming imaging (RTI) extract in normals visualization; (D–F) specimen CNU-NX1-742, (D) overview of the ovipositor with overlaid indications of the ovipositor parts (see also) overview of the ovipositor with overlaid indications of the ovipositor parts (see also Appendix 1—figure 8B and C) and (E, F) details of basal part of the same ovipositor as in D; (E) composite photograph and (F) RTI extract in normals visualization. Olistheter (‘olis’) configurations at different parts of each respective ovipositor are shown as insets. Abbreviations: Gonostylus IX (gs9); gonapophysis IX (gp9); gonapophysis VIII (gp8).
+**Figure 2.:** (A–C) Specimen CNU-NX1-749, (A) overview of the ovipositor with overlaid indications of the ovipositor parts (see also) overview of the ovipositor with overlaid indications of the ovipositor parts (see also Appendix 1—figure 7A–C) and (B, C) details of basal part of the same ovipositor as in A. (B) composite photograph and (C) reflectance transforming imaging (RTI) extract in normals visualization; (D–F) specimen CNU-NX1-742, (D) overview of the ovipositor with overlaid indications of the ovipositor parts (see also) overview of the ovipositor with overlaid indications of the ovipositor parts (see also Appendix 1—figure 8B and C) and (E, F) details of basal part of the same ovipositor as in D; (E) composite photograph and (F) RTI extract in normals visualization. Olistheter (‘olis’) configurations at different parts of each respective ovipositor are shown as insets. Abbreviations: Gonostylus IX (gs9); gonapophysis IX (gp9); gonapophysis VIII (gp8).
 
-## Ovipositor morphology
+### Ovipositor morphology
 
 The external genitalia in insects consist primarily of a pair of mesal extensions, the so-called gonopods, or ovipositor blades, and a pair of lateral projections, the so-called gonostyli, or ovipositor sheaths on abdominal segments 8 and 9. These sclerotized elements are collectively referred to as ‘valves’. The studied fossils possess three pairs of valves in their ovipositor, each strongly sclerotized (Figure 2, and Appendix 1—figure 7B, C, 8B and C). Especially the valve margins are still visible in the anterior area (‘base’), including the dorsal margin of the gonostylus IX (gs9), the ventral margin of the gonapophysis IX (gp9), and the dorsal and ventral margins of gonapophysis VIII (gp8). All observed ovipositors, but in particular the one of specimen CNU-NX1-742 (Figure 2D–F, and Appendix 1—figure 8B and C), display, from the second third of their length onwards, a thin longitudinal line much sharper and more developed than other visible linear structures in the area. This is the primary olistheter (olis1), a tongue-like structure which commonly interlocks gp9 and gp8 in extant insects having more or less well-developed external ovipositors (Figure 3; Klass, 2008). In the distal half of the ovipositor, the linear structure occurring between the dorsal edge of gs9 and olis1 is interpreted as the dorsal margin of gp9.
 
@@ -75,7 +75,7 @@ Together with the position of the antero-basal apophysis (=outgrowth) of this va
 
 This morphology implies that, at the base, dorsal to the anterior margin of gp8, only gs9 and gp9 occur. Therefore, the sharp and heavily sclerotized longitudinal line, located slightly dorsally with respect to the ventral margin of gs9, can only be an olistheter interlocking these two valves. This second olistheter (olis2) reaches olis1 but its development beyond this point could not be inferred with the available material. The occurrence of a mechanism locking gs9 onto gp9 is further supported by the fact that these valves remained connected to each other in the specimen CNU-NX1-742 even though it endured heavy decay (head and ovipositor detached from thorax and abdomen, respectively; Appendix 1—figure 8).
 
-## Mandibular mechanical advantage
+### Mandibular mechanical advantage
 
 The head and mouthpart morphology could be investigated in more detail in six specimens (see Appendix 1) while we could study the mechanical advantage (MA; see Section 1.5 of Appendix 1) of their mandibles in four of the six (viz. CNU-NX1-326, −747,–754, –764). The MA is defined as the inlever to outlever ratio and thus indicates the percentage of force transmitted to the food item (i.e. the effectivity of the lever system). Therefore, the MA allows for a size-independent comparison of the relative efficiencies of force transmission to the food item. Low MA values usually indicate quick biting with low force transmission typical for predators, while high MA values indicate comparatively slow biting with higher force transmission typical for non-predatory species.
 
@@ -83,7 +83,7 @@ Calculation of the MA along the entire gnathal edge revealed characteristic MA c
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71006/elife-71006-fig4-v1.jpg)
 
-**Figure 4.:** A–D) in Ctenoptilus frequens sp. nov. and (E) mandibular mandibular mechanical advantage in Ct. frequens sp. nov. and a selection of polyneopteran species.(A–B) Specimen CNU-NX1-754, (A) color-coded interpretative drawing, and (B) photograph (composite) (as located on Appendix 1—figure 7I); (C–D) Specimen CNU-NX1-764, (C) color-coded interpretative drawing, and (D) photograph (composite). (E) Principal component analysis of the mandibular mechanical advantage. Color-coding: (A–D) red, lacina (la); salmon, cardinal and stipital sclerites (ca and st, respectively); dark blue-purple, mandible (md); yellow, tentorium, including anterior tentorial arm (ata), posterior tentorial arm (pta), and corpotentorium (ct). Other indications: co, coronal cleavage line; fc, frontal cleavage line.
+**Figure 4.:** (A–B) Specimen CNU-NX1-754, (A) color-coded interpretative drawing, and (B) photograph (composite) (as located on Appendix 1—figure 7I); (C–D) Specimen CNU-NX1-764, (C) color-coded interpretative drawing, and (D) photograph (composite). (E) Principal component analysis of the mandibular mechanical advantage. Color-coding: (A–D) red, lacina (la); salmon, cardinal and stipital sclerites (ca and st, respectively); dark blue-purple, mandible (md); yellow, tentorium, including anterior tentorial arm (ata), posterior tentorial arm (pta), and corpotentorium (ct). Other indications: co, coronal cleavage line; fc, frontal cleavage line.
 
 A polynomial function of the fifth order resulted in the best relative fit on the MA curves according to the Akaike information criterion (AIC) value (–661.3, see Materials and methods). The five common coefficients were subjected to a principal component analysis (PCA, Figure 4E), and, because phylogenetic signal was detected (K = 1.03316; p = 0.0001), also analysed using a phylogenetic principal component analysis (pPCA) (Appendix 1, Section 2.3, and Appendix 1—figure 10). The first four principal components (PCs) accounted for 96.8% (PCA)/96% (pPCA) of the variation in MA (Appendix 1—table 2).
 
@@ -93,13 +93,13 @@ The CFMR of Ct. frequens is located at the centre of the first three PCs (Figure
 
 ## Discussion
 
-## Phylogenetic implications
+### Phylogenetic implications
 
 Our analysis of material of Ct. frequens provides unequivocal evidence that olis2 occurs in this species. Therefore, the new species was an orthopteran. The ovipositor configuration in Ct. elongatus furthermore conforms that observed in extant cave crickets (Raphidophoridae) in which olis2 occurs in addition to olis1 and interlocks gs9 and gp9 (Figure 3A–C; Appendix 1, Section 2.2). Indeed, this structure is present in ensiferan (‘sword-bearing’) Orthoptera possessing a developed ovipositor and is absent in caeliferan (‘chisel-bearing’) Orthoptera (Cappe de Baillon, 1920; Cappe de Baillon, 1922; Kluge, 2016; and see below). It follows that the new species is either more closely related to Ensifera than to Caelifera (owing to the possession of olis2), or it is a stem-orthopteran and olis2 was secondarily lost in Caelifera.
 
 Further evidence for the phylogenetic placement of Ct. frequens is based on the lack of jump-related specializations in the hind-leg. Such specializations define the taxon Saltatoria within Orthoptera, and therefore Ct. frequens can be confidently excluded from crown-Orthoptera. This conclusion is furthermore corroborated by wing vein characteristics: Ct. frequens lacked a forked CuPa vein before its fusion with the CuA vein. Such a forked CuPa vein is typical for Panorthoptera, which includes crown-Orthoptera and their nearest stem relatives (Béthoux and Nel, 2002). Given this evidence, based on the configuration of several body parts, Ct. frequens, and its various Pennsylvanian relatives collectively referred to as ‘lobeattid insects’ are stem relatives of Orthoptera (Figure 3C). The absence of olis2 in Caelifera therefore is the consequence of a secondary loss.
 
-## Evolution of ovipositor morphology
+### Evolution of ovipositor morphology
 
 Based only on extant species, the evolution of the external ovipositor in crown-Orthoptera was ambiguous due to the organizational diversity of its substructures (Cappe de Baillon, 1920; Cappe de Baillon, 1922; Kluge, 2016; Thompson, 1986; Walker, 1919; Appendix 1, Supplemental Text, Section 2.2). Comparison has traditionally been made between Grylloblattodea (rock-crawlers) and Orthoptera (Walker, 1919) even though the two groups are not closely related (Wipfler et al., 2019). In both groups the ovipositor displays an elongate gs9 and a ball-and-socket locking mechanism, the so-called primary olistheter (olis1), interlocking gp9 onto gp8 (Figure 2G). This olis1 occurs widely among insects (Klass, 2008). Orthoptera possess a variety of additional olistheters, including one interlocking gs9 onto gp9 (royal blue in Figures 2 and 3; olis2), commonly present in ensiferans possessing a well-developed ovipositor, as exemplified by Rhaphidophoridae (cave crickets; Figure 2E, igure 3A and B, and see sections labelled ‘a–c’ on Figure 3C), and Gryllacrididae (raspy and king crickets) and Anostostomatidae (king crickets) (Figure 2 G3C). The occurrence of an olis2 is diagnostic of ensiferan (‘sword-bearing’) Orthoptera (Kluge, 2016; and see below).
 
@@ -113,7 +113,7 @@ The evolutionary scenario resulting from our findings in Ct. frequens addresses 
 
 Another important input on the early evolution of orthopterans regards the abundance of lobeattids. Indeed, these insects are emerging as the main component of the Pennsylvanian insect fauna. They have been reported in high numbers from all major Pennsylvanian deposits (Béthoux, 2005c; Béthoux, 2008; Béthoux and Nel, 2005a; and Appendix 1, Section 2.1), such as Miamia bronsoni at Mazon Creek (Béthoux, 2008). At Xiaheyan, they collectively account for more than half of all insect occurrences (Trümper et al., 2020). Besides a high abundance, lobeattids and other stem-orthopterans compose a species-rich group at Xiaheyan, where they represent about a third of all insect species currently known to occur at this locality (Appendix 1, Section 3, taxon Archaeorthoptera). Orthoptera, which represent the bulk of extant polyneopteran insect diversity, therefore must have diversified early during their evolution.
 
-## Ovipositor shape and use
+### Ovipositor shape and use
 
 Extant Orthoptera resort to a wide diversity of substrates where to lay eggs, including ground, decaying leaves or wood, and stems or leaves of living plants (Cappe de Baillon, 1920; Cappe de Baillon, 1922; Ingrisch and Rentz, 2009; Rentz, 1991). This operation aims at ensuring a degree of moisture conditions suitable for eggs to fully develop, and providing protection, for example against predation. Ground is the preferred substrate of the majority of Orthoptera, including Caelifera (Agarwala, 1952; Stauffer and Whitman, 1997; Uvarov, 1966; and see above). Within this group, the epiphytic and endophytic habits of several, inner lineages represent derived conditions (Braker, 1989; Ramme, 1926). This habit translates into finely serrated ovipositor valves, including gs9.
 
@@ -127,9 +127,9 @@ Given the relation of ovipositor shape and substrate in extant species, Ct. freq
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71006/elife-71006-fig5-v1.jpg)
 
-**Figure 5.:** Ctenoptilus frequens sp. nov. laying eggs.Courtesy of Xiaoran Zuo.
+**Figure 5.:** Courtesy of Xiaoran Zuo.
 
-## Dietary preferences
+### Dietary preferences
 
 Unlike in an extant tropical forest, a limited proportion of Pennsylvanian plant foliage experienced external damage, in particular generalized feeding types such as margin and hole feeding. Although such damages were reported from multiple localities, they are so rare that their occurrence was considered worth being reported (Correia et al., 2020; Iannuzzi and Labandeira, 2008; Laaß and Hauschke, 2019; Scott and Taylor, 1983). Quantitative data from Pennsylvanian localities indicate that generalized external damages were indeed rare, and concentrated on pteridosperms (‘seed ferns’; Donovan and Lucas, 2021; Xu et al., 2018). Such damages have been traditionally assigned to Orthoptera and their purported stem relatives (Labandeira, 1998). Indeed, investigation of mouthparts morphology in a subset of these insects suggested that, at least for the representatives belonging to the Panorthoptera/Saltatoria (Figure 3C), these insects were herbivores (Labandeira, 2019). However, there is an inconsistency between the paucity of damage on Pennsylvanian plant foliage on the one hand, and the abundance of lobeattid insects on the other. If these insects were all external foliage feeders, evidence of such damage would be more prevalent.
 
@@ -137,7 +137,7 @@ Given the reconstruction of the mandibular gnathal edge and its position in PC s
 
 ## Materials and methods
 
-## Fossil material
+### Fossil material
 
 The studied specimens are housed at the Key Laboratory of Insect Evolution and Environmental Changes, College of Life Sciences, Capital Normal University, Beijing, China (CNU). All specimens were collected from the locality near Xiaheyan village, where insect carcasses deposited in an interdeltaic bay (Trümper et al., 2020).
 
@@ -147,7 +147,7 @@ To ensure an exhaustive documentation of ovipositor, head and mouthparts morphol
 
 We computed RTI files based on sets of photographs obtained using a custom-made light dome as described elsewhere (Béthoux et al., 2016), driving a Canon EOS 5D Mark III digital camera coupled to a Canon MP-E 65 mm macro lens. Sets of photographs were optimized for focus using Adobe Photoshop CC 2015.5. RTI computing was then performed using the RTIbuilder software (Cultural Heritage Imaging, San Francisco, CA) using the HSH fitter (a black reflecting hemisphere placed next to the area of interested provided reference). Several snapshots were extracted using the RTIviewer software (Cultural Heritage Imaging, San Francisco, CA), including those in ‘normals visualization’ mode, which provides a color-coded image according to the direction of the normal at each pixel (i.e. the direction of the vector perpendicular to the tangent at each pixel; see Figure 2C and F). This allows to quantify subtle height differences in fossilized structures.
 
-## Comparative analyses
+### Comparative analyses
 
 The phylogeny adopted for comparative analyses is based on the most comprehensive account to date (Song et al., 2020), which is largely consistent with previous analyses (Song et al., 2015; Zhou et al., 2017), except for the position of the Rhaphidophoridae, either regarded as sister group of the remaining Tettigoniidea or of a subset of it. The same applies to the Schizodactylidae (splay-footed crickets), which lack a developed ovipositor.
 

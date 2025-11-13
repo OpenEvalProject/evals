@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.26973.001 Cortico-basal ganglia circuits are thought to mediate goal-directed learning by a process of outcome evaluation to gradually select appropriate motor actions. We investigated spiking activity in core and shell subregions of the cortical nucleus LMAN during development as juvenile zebra finches are actively engaged in evaluating feedback of self-generated behavior in relation to their memorized tutor song (the goal). Spiking patterns of single neurons in both core and shell subregions during singing correlated with acoustic similarity to tutor syllables, suggesting a process of outcome evaluation. Both core and shell neurons encoded tutor similarity via either increases or decreases in firing rate, although only shell neurons showed a significant association at the population level. Tutor similarity predicted firing rates most strongly during early stages of learning, and shell but not core neurons showed decreases in response variability across development, suggesting that the activity of shell neurons reflects the progression of learning.
+Cortico-basal ganglia circuits are thought to mediate goal-directed learning by a process of outcome evaluation to gradually select appropriate motor actions. We investigated spiking activity in core and shell subregions of the cortical nucleus LMAN during development as juvenile zebra finches are actively engaged in evaluating feedback of self-generated behavior in relation to their memorized tutor song (the goal). Spiking patterns of single neurons in both core and shell subregions during singing correlated with acoustic similarity to tutor syllables, suggesting a process of outcome evaluation. Both core and shell neurons encoded tutor similarity via either increases or decreases in firing rate, although only shell neurons showed a significant association at the population level. Tutor similarity predicted firing rates most strongly during early stages of learning, and shell but not core neurons showed decreases in response variability across development, suggesting that the activity of shell neurons reflects the progression of learning.
 
 ## Introduction
 
@@ -23,15 +23,79 @@ Recurrent cortico-basal ganglia circuits mediate procedural skill learning, whic
 
 Neural control of vocal learning in juvenile zebra finches (Taeniopygia guttata) is vested in cortico-basal ganglia loops that emanate from the cortical nucleus LMAN (lateral magnocellular nucleus of the anterior nidopallium; Figure 1) (Aronov et al., 2008; Bottjer et al., 1984; Scharff and Nottebohm, 1991). Core and surrounding shell subregions of LMAN make parallel connections through the basal ganglia and thalamus (Bottjer, 2004; Luo et al., 2001; Johnson et al., 1995; Gale et al., 2008; Person et al., 2008; Iyengar et al., 1999; Paterson and Bottjer, 2017) and appear functionally similar to sensorimotor and associative cortico-basal ganglia loops that contribute to different aspects of motor learning in mammals (Thorn et al., 2010; Yin et al., 2008; Samejima and Doya, 2007; Ashby et al., 2010; Redgrave et al., 2010; Graybiel, 2008; Gremel and Costa, 2013; Yin et al., 2009; Kupferschmidt et al., 2017; Alexander and Crutcher, 1990). The core pathway mediates vocal motor production in juvenile songbirds (Elliott et al., 2014; Scharff and Nottebohm, 1991; Aronov et al., 2008), whereas the shell pathway is involved in evaluating sensorimotor learning; lesions in the shell pathway of juvenile birds impair the ability to copy tutor song syllables, but do not cause motor disruption of song (Bottjer and Altenau, 2010) (Figure 1—figure supplement 1). This disruption of learning, but not motor performance, supports the idea that shell circuitry helps to evaluate whether self-generated vocalizations match learned tutor sounds.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig1-v2.jpg)
+
+**Figure 1.:** Left: core (c, gray) and shell (s, red) subregions of the cortical nucleus LMAN give rise to parallel recurrent loops through the basal ganglia. LMAN-core projects to vocal motor cortex (RA); this pathway drives vocal motor output in juvenile birds. LMAN-shell projects to a region of motor cortex that is adjoined to the lateral margin of RA (AId); this pathway does not drive motor output but is involved in learning. Shell also forms a trans-cortical loop via AId that converges with the core-shell basal ganglia loops in a dorsal thalamic zone. A transient projection from core to AId (dashed line) is present only in juvenile birds and creates a site of integration between core and shell pathways in AId during the learning period. The dorsal thalamus feeds back to LMAN and feeds forward to the premotor cortical area, HVC (High Vocal Center), via medial MAN (latter pathway not shown for clarity). Right: upper panel shows a low-power coronal section containing core and shell regions of LMAN as well as the anterior basal ganglia (Area X, dashed white outline, is an anatomical subregion of basal ganglia in songbirds; it contains both striatal and pallidal cells and is necessary for vocal learning). Calbindin expression (dark staining) demarcates both core and shell regions by labeling terminals of afferent thalamic axons. Lower panel shows a high-magnification Nissl-stained coronal view of the border between core and shell subregions, which are distinguished by the higher density of magnocellular neurons within core.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Imitation of tutor (father) songs by adult birds that had received a bilateral lesion of AId as juveniles (at 45 dph, after tutor song memorization) compared to birds that received control lesions. Lesion of AId interrupts the trans-cortical loop from shell through AId and back to shell via the thalamus, and prevents the convergence of this trans-cortical loop with the cortico-basal ganglia loops through thalamus. Left bars: percent of syllables in the tutor songs copied by the sons; right bars: percent of syllables in the sons’ songs copied from the tutors (black, lesioned birds versus gray, control birds; means + s.e.m.). Lesions of AId prevent imitation of the tutor song as well as the development of a stereotyped sequence of syllables; however, the phonology of syllables is normal, indicating that AId lesions do not exert an effect on vocal motor production.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** LMAN neurons respond differentially to playback of songs in juvenile zebra finches during early stages of sensorimotor integration, following memorization of the tutor song (45 dph). Individual core neurons show significant responses to playback of their own song only or to both their own song and the tutor song (and frequently to other songs as well, data not shown); few core neurons respond to tutor song only. In contrast, individual shell neurons show significant responses either to their own song or to tutor song; few shell neurons respond to playback of both their own song and tutor song. Thus, a large population of shell neurons (~30%) responds significantly to tutor song, but not to own song (or other control songs). This pattern indicates that LMAN contains representations of both current behavior (self-generated song) and the goal behavior (tutor song). Tutor-tuned neurons are a transient population: their incidence decreases greatly by late stages of sensorimotor integration (not shown), indicating that tutor-tuned neurons are eliminated due to cell death or are re-tuned to each bird’s own song.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Left: the borders of AId are difficult to discern in Nissl-stained sections but are clearly demarcated by the axonal projection from LMAN. Labeled axons in this photomicrograph were produced by a large injection of HRP that covered both core and shell in an adult bird; axons enter the dorsal border of AId (most core axons enter RA through its lateral margin). Coronal view, medial is left; bar = 200 µm. Right: reconstructions of individual axon arbors of LMAN-core neurons in a juvenile bird (27 dph). Many core neurons of juvenile birds, but not adults, extend collaterals into AId; in adult birds, core neurons project only to RA and shell neurons project only to AId. This transient projection provides a point of integration between the two basal ganglia pathways as juvenile birds are actively engaged in learning but is completely retracted in adult birds. In addition, the transient projection suggests that these branches convey corollary discharge signals, since they are collateral branches of core neurons that drive vocal behavior via RA but lesions of AId do not cause motor disruption.
+
 Within the shell subregion of LMAN in juvenile birds, distinct subpopulations of neurons respond selectively to playback of either their learned tutor song or their own self-generated song (Achiro and Bottjer, 2013), indicating that the shell pathway has access to neural representations of the goal behavior and the current version of the bird’s own song (Figure 1—figure supplement 2).
 
 In contrast, core neurons are not selective for different song types at the onset of sensorimotor learning, but gradually become selectively tuned to playback of their own song (Doupe, 1997; Solis and Doupe, 1997). In addition, core neurons that project to vocal motor cortex (RA, Figure 1) send transient axon collaterals into the shell pathway, such that a copy of the motor signal is conveyed into the shell circuit only in juvenile birds (Miller-Sims and Bottjer, 2012) (Figure 1—figure supplement 3). Remarkably, the large population of tutor-tuned neurons in LMAN-shell is gone by late stages of sensorimotor learning, suggesting a key role for this subpopulation during a restricted period of development. These developmental changes suggest that the shell pathway may evaluate feedback about current vocal performance in relation to a memory of the tutor song during early sensorimotor learning and transmit that evaluation to core and other motor pathways (Achiro and Bottjer, 2013; Bottjer et al., 2010). We evaluated this idea by testing the activity of core and shell neurons in singing juvenile birds as they are actively involved in sensorimotor learning. The results support the idea that core neurons participate in motor-related actions and that activity in both core and shell neurons reflects evaluation of feedback of motor performance against the goal of memorized tutor sounds.
 
 ## Results
 
-## Neurons in both core and shell subregions of LMAN exhibit singing-related neural activity in juvenile birds
+### Neurons in both core and shell subregions of LMAN exhibit singing-related neural activity in juvenile birds
 
 We recorded single neurons in core and shell subregions of LMAN in juvenile zebra finches that had completed memorization of a tutor song and begun to practice their song vocalizations (43–60 dph). The majority of neurons in both core and shell showed significant modulation of firing rate during singing (Table 1; see Materials and methods). Among neurons that exhibited a significant change in firing rate during song production, approximately 65–70% showed excitation in both core and shell whereas the remainder were suppressed. Excitatory response strength was marginally higher in shell neurons, whereas suppressed response strength did not differ between core and shell (Table 1; Mann-Whitney tests: singing-excited neurons U = 1768, p=0.06, singing-suppressed neurons U = 459, p=0.90). Figure 2 shows spiking activity of example core and shell neurons that exhibited average levels of excitation (top) or suppression (bottom) during singing. Singing-excited neurons in both core and shell showed a significant increase in bursting during singing (fraction of spikes with interspike intervals <10 ms; Figure 2—figure supplement 1) as shown previously for LMAN-core neurons in juvenile birds (Olveczky et al., 2005).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig2-v2.jpg)
+
+**Figure 2.:** Left: Examples of two different core neurons during singing in juvenile birds showing either excitation (top; 54 dph) or suppression (bottom; 43 dph) compared with quiet baseline periods. Spectrograms depict three example singing episodes (frequency, 0–8 kHz, over time) and one non-singing baseline period; time-aligned spikes and corresponding firing rates (spikes/s; 10 ms bin size) are shown above. Right: Examples of two different shell neurons during singing in juvenile birds showing either excitation (top; 43 dph) or suppression (bottom; 50 dph), as in left panels.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Percent of spikes that occurred in bursts (interspike intervals <10 ms) from core (gray) and shell (red) neurons during singing and local baselines (average of the two baseline periods nearest in time to each singing episode). Left panels: singing-excited neurons; right panels: singing-suppressed neurons. Box plots indicate medians and first/third quartiles. ***p<0.001; n.s. indicates no significant difference between baseline and singing (Wilcoxon signed-rank tests).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example spiking responses during production of four different syllable types in a 53 dph bird. Top row shows spectrograms; raster plots and PSTHs for each syllable in single core and shell neurons are below. Firing rates in both core and shell neurons were similar across production of different syllable types, suggesting little selectivity. (B) To quantify the selectivity of responses for different syllable types we computed an activity fraction for neurons that were excited during production of at least one syllable type, where a score of 0 indicates no selectivity for a specific syllable type and one indicates maximum selectivity (see Materials and methods). Cumulative distributions of activity fraction scores were low (filled circles; mean scores ± s.e.m.: core = 0.15 ± 0.02; shell = 0.16 ± 0.02; no difference between core and shell, Kolmogorov-Smirnov Z = 0.97, p=0.31). However, scores for both subregions were significantly different from distributions of scores for which responses were shuffled with respect to syllable type (dashed lines; core Kolmogorov-Smirnov Z = 2.48, p<0.001; shell Kolmogorov-Smirnov Z = 2.71, p<0.001), suggesting that neurons in both subregions of juvenile LMAN have a low level of selectivity for syllable identity.
+
+**Table 1.**
+ Response strength during episodes of singing.Standardized response strength (mean ± s.e.m.) for core and shell neurons in LMAN that showed significant excitation or suppression during song production compared with quiet baseline periods (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">CORE</th>
+      <th colspan="2">SHELL</th>
+    </tr>
+    <tr>
+      <th>Fraction</th>
+      <th>Response strength</th>
+      <th>Fraction</th>
+      <th>Response strength</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excited</td>
+      <td>0.72 (66/92)</td>
+      <td>7.06 ± 0.71</td>
+      <td>0.65 (66/102)</td>
+      <td>7.28 ± 0.44</td>
+    </tr>
+    <tr>
+      <td>Suppressed</td>
+      <td>0.28 (26/92)</td>
+      <td>−7.32 ± 1.15</td>
+      <td>0.35 (36/102)</td>
+      <td>−5.82 ± 0.45</td>
+    </tr>
+  </tbody>
+</table>
 
 Firing rates of neurons in core and shell were also similar during production of different syllable types and lacked temporal specificity across renditions of the same syllable type (Figure 2—figure supplement 2). Thus, spiking was relatively sparse and variable within and across syllable types in both core and shell neurons, as reported previously in core for both juvenile and adult birds during playback and singing (Doupe, 1997; Doupe and Solis, 1997; Kao et al., 2008; Olveczky et al., 2005; Solis and Doupe, 1997). In summary, the basic profile of neural activity during song production was similar between shell and core neurons.
 
@@ -39,9 +103,9 @@ Despite these overall similarities in neural activity between core and shell, th
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig3-v2.jpg)
 
-**Figure 3.:** core but not shell.Pre-singing activity in core (gray, top panel) and shell (red, bottom panel) in juvenile birds for all neurons that showed significant excitation prior to syllable onsets. Solid lines show smoothed mean-subtracted population rate histograms aligned to syllable onsets (syllable onset at time 0), shading indicates s.e.m. Bars above and below the traces indicate times at which the rate change is significant (95% confidence interval outside of zero); n’s are indicated in parentheses. Population histograms aligned to syllable offsets showed no significant changes for either core or shell offset-excited neurons (data not shown).10.7554/eLife.26973.011Figure 3—source data 1.
+**Figure 3.:** Pre-singing activity in core (gray, top panel) and shell (red, bottom panel) in juvenile birds for all neurons that showed significant excitation prior to syllable onsets. Solid lines show smoothed mean-subtracted population rate histograms aligned to syllable onsets (syllable onset at time 0), shading indicates s.e.m. Bars above and below the traces indicate times at which the rate change is significant (95% confidence interval outside of zero); n’s are indicated in parentheses. Population histograms aligned to syllable offsets showed no significant changes for either core or shell offset-excited neurons (data not shown).
 
-## Neural activity in LMAN reflects similarity of self-generated syllables to tutor syllables
+### Neural activity in LMAN reflects similarity of self-generated syllables to tutor syllables
 
 A large proportion of shell neurons are specifically tuned to playback of either the tutor song or the current version of self-generated song during early stages of sensorimotor integration when core neurons drive vocal motor output and lesions of LMAN pathways cause disruption of song learning (Achiro and Bottjer, 2013; Aronov et al., 2008; Bottjer et al., 1984; Olveczky et al., 2005; Scharff and Nottebohm, 1991; Bottjer and Altenau, 2010). This pattern suggests that LMAN is involved in sensorimotor learning in juveniles, but direct support is lacking for the idea that the activity of individual LMAN neurons represents how well syllables match the tutor song during singing. We tested this idea in juvenile birds (43–60 dph) by comparing neural activity during singing with the acoustic similarity of self-generated syllables to tutor syllables (see Materials and methods): regressions of baseline-corrected firing rates against tutor similarity were performed for each neuron. Unexpectedly, this analysis revealed that firing rates of cells in both core and shell could either increase or decrease as a function of tutor similarity: approximately half of all neurons in each subregion showed increased firing rates for syllables with higher tutor similarity (positive slopes, r values > 0), whereas the other half showed increased firing rates for syllables with lower tutor similarity (negative slopes, r values < 0) (Table 2). Figure 4A shows examples of syllable utterances with relatively high or low acoustic similarity to the closest tutor syllable, along with the corresponding firing rate of a shell neuron that showed a negative correlation with tutor similarity (Figure 4B). This neuron showed a low firing rate during production of syllables with high tutor similarity and excitation during production of syllables with low tutor similarity. Thus, LMAN neurons can encode similarity between self-generated utterances and tutor song via either increases or decreases in firing rate.
 
@@ -51,6 +115,89 @@ A large proportion of shell neurons are specifically tuned to playback of either
 
 To estimate the fraction of single neurons showing a significant relationship between firing rate and tutor similarity, we performed repeated permutation tests by generating 1000 random shuffles of the relationship between firing rate and tutor similarity for each cell (O'Connor et al., 2010); see Materials and methods). The percent of significant neurons compared to these random distributions was 5.5% in core and 10.8% in shell (Table 2) (chi-square test between core and shell proportions = 1.98, p=0.18). core and shell neurons were evenly split between positive and negative associations of firing rate to degree of tutor song matching, and had fairly comparable r values (averages ranging from +0.22 to −0.31). In summary, tutor similarity predicted the firing rates of a relatively small percentage of single neurons in both core and shell, with somewhat more neurons in shell showing a significant correlation.
 
+**Table 2.**
+ Tutor similarity modulates baseline-corrected firing rates in single LMAN neurons.Single neurons showed either positive or negative slopes for the regression of firing rate against tutor similarity. The incidence of neurons across the population that had either positive (increased firing rates for syllables with higher tutor similarity) or negative (increased firing rates for syllables with lower tutor similarity) r values was similar for core and shell. Most single neurons had nonsignificant r values, but clear effects were observed at the population level (see Figure 5, text).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Positive slope (r &gt; 0)</th>
+      <th>Negative slope (r &lt; 0)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CORE</td>
+      <td>48</td>
+      <td>50</td>
+      <td>Total cell number (n = 98)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>49.0</td>
+      <td>51.0</td>
+      <td>Percent</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.082</td>
+      <td>−0.065</td>
+      <td>Mean of r value across all cells</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3.3</td>
+      <td>2.2</td>
+      <td>Estimated % significant core cells = 5.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.22</td>
+      <td>−0.21</td>
+      <td>Approximate mean r value for significant cells (n = 5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SHELL</td>
+      <td>62</td>
+      <td>60</td>
+      <td>Total cell number (n = 122)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>50.8</td>
+      <td>49.2</td>
+      <td>Percent</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.062</td>
+      <td>−0.081</td>
+      <td>Mean of r value across all cells</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4.5</td>
+      <td>6.3</td>
+      <td>Estimated % significant shell cells = 10.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0.21</td>
+      <td>−0.31</td>
+      <td>Approximate mean r value for significant cells (n = 13)</td>
+    </tr>
+  </tbody>
+</table>
+
 To test whether similarity to tutor syllables modulates neural activity at the population level, we analyzed the regressions of baseline-corrected firing rates with tutor similarity across all neurons using a mixed-effects linear regression model (fixed and random effects for tutor similarity nested within a random intercept for neurons; see Materials and methods). This analysis yielded a significant effect for shell neurons (t = −2.23, p=0.035) but not for core neurons (t = 0.91,p=0.37), indicating that the population activity of shell neurons during singing reflected tutor-matching performance. Because positive or negative relationships between firing rate and tutor similarity may reflect unique processes of evaluating tutor similarity (Table 2), we examined these two categories separately. Using the mixed-effects linear regression model to provide a descriptive assessment of the magnitude of positive and negative associations, we found significant effects for positive and negative relationships between firing rate and tutor similarity in both core and shell neurons (core positive: t = 3.42, p=0.003; negative: t = −2.90, p=0.004; shell positive: t = 4.02, p=0.001; negative: t = −2.80, p=0.009). To illustrate these relationships, Figure 5 shows response strengths during production of syllables with low versus high tutor similarity (bottom versus top 50% ranked by tutor similarity; Materials and methods) separated by whether cells showed positive (left panels) or negative (right panels) slope values. These data indicate that the majority of neurons in both core and shell showed either higher or lower firing rates during production of syllables with higher tutor similarity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig5-v2.jpg)
@@ -59,27 +206,35 @@ To test whether similarity to tutor syllables modulates neural activity at the p
 
 An alternative interpretation of the significant association between firing rate and tutor similarity in shell is that firing rates were modulated by more prototypical juvenile utterances, that is, those closer to the center of the distribution of acoustic features for a given syllable type (see Materials and methods). We tested whether the significant correlation to tutor similarity we observed in shell neurons reflected a tendency to encode highly prototypical syllables using the mixed-effects regression model described above. This analysis showed a non-significant effect (t = −1.53, p=0.136), and there was no relationship between indices of tutor similarity and prototypicality (data not shown), indicating that tutor-similar syllable renditions are not more prototypical. Thus, the relationship between firing rates and tutor similarity in shell neurons does not appear to be based on prototypicality of self-generated syllables.
 
-## Variability in neural responses of both core and shell neurons reflects similarity of self-generated syllables to tutor syllables
+### Variability in neural responses of both core and shell neurons reflects similarity of self-generated syllables to tutor syllables
 
 To test if degree of similarity to tutor song also modulates firing rate variability of LMAN neurons in 43–60 dph birds, we calculated the CV (coefficient of variation) of firing rate during production of syllable renditions with low versus high similarity to tutor syllables (bottom versus top 50% of tutor similarity scores). Both core and shell neurons showed increased firing rate variability during production of syllable utterances with low tutor similarity compared to those with high similarity (Figure 6A; Wilcoxon signed-rank tests, core Z = −5.70, p<0.001; shell Z = −4.48, p<0.001). Thus, variability of firing rates during singing reflected the degree of tutor song matching in both core and shell neurons such that responses were less variable for syllable renditions that were more similar to tutor song.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig6-v2.jpg)
 
-**Figure 6.:** core and shell neurons.(A) Coefficient of variation (CV) of firing rate for core (gray) and shell (red) neurons during production of syllables that had high or low similarity to tutor syllables (top versus bottom 50% of tutor similarity scores). ***p<0.001 between CV during production of syllables representing high versus low similarity to tutor (Wilcoxon signed-rank tests; core n = 87, shell n = 105). (B) Characteristics of syllables in high- versus low-similarity categories. Left: fraction of syllable types represented in high versus low similarity to tutor syllables for each bird for day of singing; each symbol represents the number of syllable types produced in a recording session as a fraction of the total number of syllable types produced. Gray markers represent sessions in which activity of core neurons was collected (n = 17), red markers represent sessions in which activity of shell neurons was collected (n = 14), black markers represent sessions in which activity of both core and shell neurons was collected (n = 11). Right: the average scatter for each syllable type represented in high- versus low- tutor similarity categories for each session, defined as the average of the acoustic distance between each point in the distribution to its centroid (lower values indicate a tighter cluster). Box plots represent median and first/third quartiles.
+**Figure 6.:** (A) Coefficient of variation (CV) of firing rate for core (gray) and shell (red) neurons during production of syllables that had high or low similarity to tutor syllables (top versus bottom 50% of tutor similarity scores). ***p<0.001 between CV during production of syllables representing high versus low similarity to tutor (Wilcoxon signed-rank tests; core n = 87, shell n = 105). (B) Characteristics of syllables in high- versus low-similarity categories. Left: fraction of syllable types represented in high versus low similarity to tutor syllables for each bird for day of singing; each symbol represents the number of syllable types produced in a recording session as a fraction of the total number of syllable types produced. Gray markers represent sessions in which activity of core neurons was collected (n = 17), red markers represent sessions in which activity of shell neurons was collected (n = 14), black markers represent sessions in which activity of both core and shell neurons was collected (n = 11). Right: the average scatter for each syllable type represented in high- versus low- tutor similarity categories for each session, defined as the average of the acoustic distance between each point in the distribution to its centroid (lower values indicate a tighter cluster). Box plots represent median and first/third quartiles.
 
 One possible caveat is that the decreased variability of firing rate for utterances with higher tutor similarity might simply reflect a smaller number of syllable types in this category, whereas low-similarity utterances might include many different syllable types. To test this idea, we assessed the fraction of syllable types (across all syllable renditions) that were produced within the high- versus low-similarity categories for each day of singing and found no significant difference (Figure 6B left; Mann-Whitney U = 693, p=0.06). In addition, there was no difference in the scatter of syllable renditions within a syllable type between the high- and low-similarity to tutor categories (Figure 6B right; Mann-Whitney U = 867.5, p=0.90). In summary, these data indicate that variability in firing rate was higher across the populations of both core and shell neurons during production of syllable renditions with low tutor similarity compared to production of syllable renditions with high tutor similarity.
 
-## Behavioral and neural changes during song development
+### Behavioral and neural changes during song development
 
-## Behavioral expression of learning
+#### Behavioral expression of learning
 
 The developmental span over which we recorded birds’ vocal behavior (43–60 dph) corresponds with a transition from highly variable ‘subsong’ to ‘plastic song’ with less behavioral variability and a corresponding increase in similarity to tutor song. If the modulation of neural activity by tutor similarity we observed above reflects some aspect of learning, then it should change during the progression of learning. To test this idea, we assessed the degree of song development for each day of singing for each bird by calculating goodness-of-fit coefficients from an exponential fit to the distribution of syllable durations (see Materials and methods; Figure 7—figure supplement 1). Juveniles in subsong (but not plastic song) produce a graded distribution of syllable durations, which is well-fit by an exponential function (lower numbers indicate better fit; (Aronov et al., 2011; Tchernichovski et al., 2004; Aronov et al., 2008; Johnson et al., 2002). Comparing degree of song development with acoustic similarity to tutor across average syllable types yielded a significant correlation (Figure 7A; r = 0.23, p=0.03), supporting the canonical understanding that juvenile birds produce syllable renditions that are more similar to tutor syllables as sensorimotor integration progresses.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig7-v2.jpg)
+
+**Figure 7.:** (A) Average similarity of all juvenile syllable types to corresponding tutor syllables as a function of the progression of song development from subsong to plastic song (goodness-of-fit coefficients plotted against average syllable-type similarity for each bird for each day of singing; see Figure 7—figure supplement 1). (B) Average similarity to tutor across development, plotted as in A, but segregating individual syllable renditions into low similarity (bottom 50% of tutor similarity scores, left panel) and high similarity (top 50% of tutor similarity scores, right panel) for each day of singing for each bird. For tutor similarity scores, 2 = no similarity, 0 = perfect similarity (see Materials and methods).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Left panel: example spectrograms of syllables from the same bird at different ages (47, 49, 50 and 51 dph). Right panel: distributions of syllable durations per day for this bird; red lines indicate exponential fits for each distribution. Coefficients shown for each day are goodness-of-fit coefficients from the Lilliefors test for fit to an exponential function (lower numbers indicate better fit). As birds progress to the plastic song stage of sensorimotor integration, they begin to produce syllables that appear as peaks in the distribution of syllable durations, causing the distributions to no longer be approximated by an exponential function. (B) Tutor similarity scores across all individual syllable renditions of all birds (regardless of whether or not renditions were assigned to syllable types) as a function of song development (0 = perfect similarity, 2 = no similarity; see Materials and methods). Black line indicates linear fit. These data show increases in tutor similarity across development for the population of individual syllable renditions in all birds.
 
 We then examined individual syllable utterances with high versus low tutor similarity within each day of singing. Surprisingly, we found that birds produced many utterances with relatively high tutor similarity during subsong (Figure 7B, right). Furthermore, the level of tutor matching among these utterances was fairly constant across development such that there was no significant correlation between tutor similarity and song development (r = 0.13, p=0.42). This striking finding indicates that some of the highly variable vocalizations produced by birds during early sensorimotor learning are good matches to tutor syllables. Birds in subsong also produced many low-similarity utterances (Figure 7B, left), and the similarity between these poorly-matched renditions and tutor syllables increased as song development progressed, reflecting the expected increase in tutor matching (r = 0.34, p=0.03; cf. Figure 7A). Thus, birds in subsong produce some utterances with tutor similarity as high as that of birds in later stages of song development, and renditions with lower tutor similarity at the beginning of sensorimotor integration are gradually eliminated.
 
 These data raise the possibility that syllable renditions with high versus low tutor similarity (Figure 7B) were distinct in other ways. For example, high-similarity syllable renditions in subsong birds might consist of simple harmonic stacks, whereas low-similarity renditions might consist of syllable types with complex modulations. We examined whether individual syllable types were selectively represented in high- versus low-similarity categories for each day of singing, and found that the syllable type that was produced most frequently in the high-similarity category (highest percentage of renditions among all syllable types) was also produced most frequently in the low-similarity category. The most common syllable type produced was the same for both high- and low-similarity renditions in 57% of vocal recording sessions across all birds, indicating that a single syllable type did not typically predominate in either low- or high- similarity categories. This pattern is consistent with the finding above that syllable renditions within both high- and low-similarity categories represent multiple syllable types (Figure 6B). In addition, qualitative examination revealed that syllable types with the most renditions in high- and low-similarity categories included both simple and complex syllables, although we noted a slight tendency for low-similarity renditions to include more frequency modulation. Thus, syllable renditions with high versus low tutor similarity did not show a strong pattern of syllable type.
 
-## Neural representation of performance during learning
+#### Neural representation of performance during learning
 
 How did neural activity in LMAN encode these changes in tutor similarity as learning progressed? Absolute values of response strength across song development increased in both core and shell neurons regardless of whether syllable renditions had high or low similarity to tutor syllables (data not shown). This pattern agrees with previously published work showing increases in firing rate of RA neurons as song learning progresses (Ölveczky et al., 2011), suggesting generic increases in firing rate with development. However, LMAN circuitry is critical for early sensorimotor learning when the number of tutor-tuned shell neurons is high (Achiro and Bottjer, 2013), indicating that the involvement of LMAN may be high initially when the goal representation is strong and decrease as learning progresses. In accord with this idea, correlations between firing rate and tutor similarity across development revealed that the activity of LMAN neurons tracked vocal performance during sensorimotor learning (Figure 8). Both core and shell neurons showed stronger associations between firing rate and tutor similarity during early stages of song development, and weaker associations as sensorimotor learning progressed. These trends were significant in core and shell neurons with positive associations and in core neurons with negative associations; shell neurons with negative slopes showed a weak but non-significant association between firing rate and tutor similarity across development. However, when the two bottom outliers in the panel for SHELL-negative slopes were removed the association was significant, r = 0.35, p=0.006. This pattern indicates that the activity of both core and shell neurons reflects the degree of song learning: tutor similarity is a better predictor of firing rate during early sensorimotor learning when many utterances have low tutor similarity (Figure 7B), and the strength of this association decreases in parallel with developmental increases in motor performance as song learning progresses.
 
@@ -91,7 +246,7 @@ The variability of firing rate paralleled the behavioral changes in tutor simila
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig9-v2.jpg)
 
-**Figure 9.:** shell neurons during development for syllable renditions with low tutor similarity during subsong.Top panels: correlation of CV of firing rate during production of syllable renditions in the bottom 50% of tutor similarity with the progression of song development. Bottom panels: correlation of CV of firing rate during production of syllable renditions in the top 50% of tutor similarity with the progression of song development. Black lines indicate linear fits. core (gray, left panels); shell (red, right panels).
+**Figure 9.:** Top panels: correlation of CV of firing rate during production of syllable renditions in the bottom 50% of tutor similarity with the progression of song development. Bottom panels: correlation of CV of firing rate during production of syllable renditions in the top 50% of tutor similarity with the progression of song development. Black lines indicate linear fits. core (gray, left panels); shell (red, right panels).
 
 ## Discussion
 
@@ -99,7 +254,7 @@ We tested whether spiking activity in LMAN of juvenile birds reflects the acoust
 
 One interpretation of this pattern of results is that shell circuitry acts primarily as a ‘critic’ to evaluate comparisons between self-generated and tutor sounds, while core circuitry serves as an ‘actor’ that drives vocal motor output and receives instruction from the critic in order to bias action selection over the course of learning (Barto et al., 1983; Graybiel, 2008). The idea of an instructive function by ‘critic’ circuitry is complicated (here as elsewhere), since the recurrent loop architecture of cortico-basal ganglia circuits means that error or reinforcement signals (which are themselves widely distributed) may be propagated into multiple pathways (Lau et al., 2017). Thus in the current results it is difficult to know whether evaluative signals may originate in shell and be transmitted to core in order to instruct future motor actions. We favor this idea as a working model; the current data serve as a foundation for tests of this idea in future studies.
 
-## Parallels between behavioral and neural indices of learning
+### Parallels between behavioral and neural indices of learning
 
 Interestingly, some individual syllable renditions were similar to tutor syllables even in subsong birds during early sensorimotor integration, indicating a surprising capacity to produce relatively mature syllabic utterances. This result is reminiscent of the finding that juvenile birds exposed to adult females are able to produce more stereotyped song patterns than normally seen in young birds (Kojima and Doupe, 2011). The ability to produce syllable renditions that represent a range of matches to the goal (i.e. both higher and lower similarity) may be an important component of the behavioral variability that is necessary for skill acquisition involving reinforcement learning.
 
@@ -109,11 +264,11 @@ As vocal behavior was refined to achieve a more accurate imitation of tutor song
 
 Tutor similarity could be encoded by either increases or decreases in firing rate for both core and shell neurons. This intriguing aspect of the current results is subject to different interpretations. One possibility is that increases in firing rates for syllables with higher tutor similarity (positive slopes) could provide a reinforcement signal to increase the probability of producing that vocal pattern, whereas increases in firing rates for syllables with lower tutor similarity (negative slopes) could provide an error signal to decrease the probability of making that incorrect sound; both types of information could be conveyed to downstream neurons and used to guide accurate refinement of syllables during learning.
 
-## Developmental aspects of skill learning
+### Developmental aspects of skill learning
 
 The construction of cortical circuits has been studied extensively in primary sensory cortex of mammals (Katz and Shatz, 1996; Espinosa and Stryker, 2012; Levelt and Hübener, 2012), but few studies have probed developmental changes in cortico-basal ganglia circuits as part of the mechanisms of skill learning. The involvement of LMAN circuitry in goal-oriented learning is likely to be strongly dependent on developmental changes that occur in these pathways. In juveniles, but not adults, many core neurons that project to vocal motor cortex send a collateral branch into the shell pathway (Figure 1—figure supplement 3) (Miller-Sims and Bottjer, 2012). This transient pathway may transmit a copy of the premotor signal generated by core neurons to shell neurons. In addition, the incidence of shell neurons tuned to learned tutor sounds decreases sharply (Achiro and Bottjer, 2013). Because the overall volume of shell regresses sharply during development, it may be that tutor-tuned neurons are eliminated due to naturally-occurring cell death (Johnson and Bottjer, 1992; Johnson et al., 1995), thereby helping to close the sensitive period for learning. Topographic specificity develops in the projection from LMAN core to RA (vocal motor cortex) during early development and is dependent on normal auditory experience (Iyengar and Bottjer, 2002b). In addition, a high proportion of synapses formed by thalamic axons in LMAN are ‘silent synapses’ in early development (Bottjer, 2005); a decrease in their number may contribute to a period of synaptic refinement to confer greater specificity of connectivity in thalamo-cortical connections (Iyengar and Bottjer, 2002a; Nixdorf-Bergweiler, 2001); cf. Garst-Orozco et al., 2014) as well as to curtail the sensitive period (Huang et al., 2015). These developmental changes suggest that differences in the extent and plasticity of neural mechanisms may be causally related to goal-oriented learning during development, and help to explain decreases in behavioral plasticity in older animals.
 
-## Relationship of core and shell circuitry to mammalian cortico-basal ganglia pathways
+### Relationship of core and shell circuitry to mammalian cortico-basal ganglia pathways
 
 A functional segregation of vocal learning into parallel core and shell cortico-basal ganglia loops is reminiscent of corresponding architecture in sensorimotor and associative cortico-basal ganglia loops of mammals. Studies in mammals have shown that neurons in associative loops show increased modulation early in learning of goal-directed tasks, whereas sensorimotor circuits increase their activity throughout training and may encode learned motor performance (Joel and Weiner, 1997; Histed et al., 2009; Yin et al., 2009; Thorn et al., 2010; Gremel and Costa, 2013; Kim et al., 2013; Samejima and Doya, 2007; Graybiel, 2008; Yin et al., 2008; Ashby et al., 2010; Redgrave et al., 2010; Ito and Doya, 2015; Lehéricy et al., 2005; Thorn and Graybiel, 2014; Atallah et al., 2007; Nakahara et al., 2001; Parent and Hazrati, 1995). Such evidence has suggested that associative loops function to evaluate motor performance during early stages of learning and sensorimotor loops encode behaviors as they become more habitual (Makino et al., 2016).
 
@@ -121,33 +276,41 @@ The overall patterns of neural activity we observed in shell and core are consis
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 All procedures were performed in accordance with Protocol 9159 approved by the University of Southern California Animal Care and Use Committee and in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. Ten juvenile male zebra finches (Taeniopygia guttata) were used, 43–60 days post hatch (dph) at the time of neural recordings (30 min recording sessions were collected across this age span on an average of 4 different days for each bird; thus each neuron represents a single 30 min recording session; see below). The period of sensorimotor integration begins in zebra finches when young males produce variable babbling sounds (subsong) starting at approximately 35 dph, and continues until the birds begin to produce a stereotyped imitation of the tutor song around 70–90 dph. Birds were raised under naturalistic conditions (by their parents within group aviaries) until they were at least 38 dph, ensuring normal tutor song exposure and social experience (Böhner, 1990; Immelmann, 1969; Roper and Zann, 2006; Böhner, 1983; Eales, 1985; Clayton, 1987; Mann and Slater, 1995; Chen et al., 2016).
 
-## Electrophysiology
+### Electrophysiology
 
 Birds were anesthetized with isoflurane (1.5% inhalation) and an electrode assembly consisting of seven tungsten-wire stereotrodes was implanted into LMAN core and shell; each stereotrode consisted of two twisted-pair polyesteramide-insulated and imide-overcoated tungsten wires (diameter 25 μm, California Fine Wire Company, Grover Beach, CA) routed through fused silica capillary tubing. One stereotrode was implanted 1.5 mm dorsal to LMAN to serve as a reference electrode, and silver wire (diameter 250 µm) was placed between the skull and skin for the animal ground. Signals were acquired through a unity gain headstage (Neuralynx, Bozeman, MT) with a flexible cable that connected the electrode assembly to a commutator (Neuralynx) and two 8-channel amplifiers (Lynx8, Neuralynx). Vocalizations were recorded through a microphone mounted in the cage (Sanken COS-11D) and saved coincident with neural activity (band passed 300–6000 Hz; digitized at 32 kHz; Spike two software, Cambridge Electronic Design, UK). At the end of each experiment, small electrolytic lesions (7 µA for 20 s) were made to confirm recording locations. To verify the borders of LMAN core and shell, 50-µm-thick coronal sections were Nissl-stained or stained with a monoclonal antibody against calbindin-D-28K (Sigma-Aldrich Cat# C9848, RRID:AB_476894) using standard immunohistochemical procedures; calbindin expression specifically labels thalamic axons terminating in LMAN (Pinaud et al., 2007; Achiro and Bottjer, 2013) (Figure 1). The border between core and shell subregions of LMAN can be distinguished based on the density of magnocellular somata, and the outer borders of shell can be distinguished from surrounding regions based on the limit of calbindin expression (Figure 1). Recording sites were considered for analysis if they were confirmed histologically to be in either core or shell, excluding 50 µm on either side of the core-shell border (see Achiro and Bottjer, 2013).
 
-Single units were isolated offline from stereotrode recordings made during each 30 min session using KlustaKwik (Ken Harris, Rutgers University) for automatic clustering as described previously (Achiro and Bottjer, 2013), and refined manually using MClust (A. David Redish, University of Minnesota) in MATLAB (Mathworks, Natick, MA, California). Single units were included if signal to noise ratio was >3 and if less than 1% of spikes had an interspike interval <2 ms (n = 127 neurons from core, 171 neurons shell). To compute an appropriate sample size, we used preliminary electrophysiological data to measure average response strength that was different from zero during singing (including all neurons regardless of whether they showed a significant response during singing by t-test, see below). One-sample, two-tailed power analysis indicated we would need a sample size of 97 core neurons and 45 shell neurons in order to determine that neurons in each subregion showed a significant response during singing at 90% power with a 0.05 two-sided significance level:n= (σz(1− α2)+ z(1−β)μ− μ0)2, z= μ− μ0σn
+Single units were isolated offline from stereotrode recordings made during each 30 min session using KlustaKwik (Ken Harris, Rutgers University) for automatic clustering as described previously (Achiro and Bottjer, 2013), and refined manually using MClust (A. David Redish, University of Minnesota) in MATLAB (Mathworks, Natick, MA, California). Single units were included if signal to noise ratio was >3 and if less than 1% of spikes had an interspike interval <2 ms (n = 127 neurons from core, 171 neurons shell). To compute an appropriate sample size, we used preliminary electrophysiological data to measure average response strength that was different from zero during singing (including all neurons regardless of whether they showed a significant response during singing by t-test, see below). One-sample, two-tailed power analysis indicated we would need a sample size of 97 core neurons and 45 shell neurons in order to determine that neurons in each subregion showed a significant response during singing at 90% power with a 0.05 two-sided significance level:
+
+$$
+n= (\sigma\frac{z(1−\frac{ \alpha}{2})+ z(1−\beta)}{\mu− \mu_{0}})^{2}, z= \frac{\mu− \mu_{0}}{\frac{\sigma}{\sqrt{n}}}
+$$
 
 where n is sample size, µ is mean, µ0 is 0, σ is standard deviation, α is Type I error and 1 – β is power.
 
-## Analysis of neural activity
+### Analysis of neural activity
 
 Analyses of neural activity were based on all neurons from the total of all daily 30-min recording sessions across birds and days (each neuron was recorded for 30 min on 1 day). Baseline periods were defined as periods of silence (non-singing) lasting at least 2 s that were 2 s or more away from singing, calls or movement/cage noise. A neuron was considered responsive if the average firing rate (spikes/s) during singing showed a significant change from the average firing rate during baseline (independent t-test, due to differing number of baseline and singing episodes, p<0.05). Neurons in both core and shell showed significant modulation of firing rate during singing and/or the 50 ms interval prior to syllable onsets compared with quiet baseline periods (core: 81%, 103/127 neurons; shell: 82%, 141/171 neurons).
 
 Analysis of pre-singing related activity was restricted to cells that showed a significant increase in average firing rate between baseline periods and the 50 ms prior to onsets of all syllables (independent t-tests, p<0.05). The proportions of CORE versus SHELL neurons showing an increase in average firing rate during this 50 ms period did not differ [CORE 48% (61/127 neurons), SHELL 40% (68/171 neurons); chi-square test = 2.27, p=0.13]. To analyze the temporal pattern of firing leading up to syllable onsets across these neurons, histograms of population activity were made by calculating the mean-subtracted firing rate for each neuron: the average firing rate was calculated during ±200 ms surrounding syllable onsets in bin sizes of 2 ms and the rate during each bin was subtracted from the mean firing rate over all bins for each cell before smoothing with a Gaussian (40 ms smoothing); population functions were generated by averaging across neurons (Goldberg and Fee, 2012). To determine significance, we used the inverse student t cumulative distribution function to get a t-statistic for 95% probability. We calculated the two-tailed critical value of the t distribution for α = 0.05 with degrees of freedom equal to the number of neurons minus one; a bin of the population histogram was deemed significant if the critical value of the t distribution multiplied by the population histogram ±the s.e.m. for that bin was less than or greater than zero.
 
-To compare changes in activity during singing across neurons with differing firing rates, responses for each neuron were calculated as standardized response strength:standardized response strength =S--B-VarS+VarB-2*Covar(S,B)* n
+To compare changes in activity during singing across neurons with differing firing rates, responses for each neuron were calculated as standardized response strength:
+
+$$
+standardizedresponsestrength=\frac{S--B-}{\sqrt{VarS+VarB-2*Covar(S,B)}}*\sqrt{n}
+$$
 
 where S is the firing rate during singing, B is the firing rate during local baseline periods (the average of the two baseline periods nearest in time to each singing episode), and n is the number of singing/baseline pairs. A positive value indicates an increased firing rate during singing, and a negative value indicates a decreased firing rate during singing compared to baseline periods. We refer to this standardized measure throughout the text as response strength. To measure the incidence of bursts during singing episodes and local baselines, we calculated a burst fraction by measuring the percentage of spike events with an interspike interval of less than 10 ms (Wilcoxon signed-rank tests, due to one average local baseline period per singing episode,p<0.05).
 
-## Analysis of singing behavior
+### Analysis of singing behavior
 
 Because juvenile birds in early stages of song learning do not produce stereotyped syllable sequences (song motifs), episodes of singing were defined as periods of continuous singing separated by gaps of at least 300 ms. Episodes of singing and individual syllables contained within episodes were detected automatically using amplitude threshold crossings and checked manually to remove cage noise and to adjust syllable start or stop boundaries where needed.
 
-## Classification of syllable types
+### Classification of syllable types
 
 Juvenile birds produce highly variable sequences of syllables, making it impossible to align the temporal pattern of neural activity across song motifs (Tchernichovski et al., 2001). However, one can align spiking activity of single neurons to multiple renditions of individual syllables of the same type. Because of the high variability of juvenile syllables, we created custom software in MATLAB using many features created for Sound Analysis Pro (Tchernichovski et al., 2000) to automatically classify syllables in juvenile birds, available online (Shen, 2017; https://github.com/BottjerLab/Acoustic_Similarity. A copy is archived at https://github.com/elifesciences-publications/Acoustic_Similarity). To assign syllables to different types, we employed a combination of two measures of the acoustic distance between syllables that was then used to cluster syllables.
 
@@ -155,13 +318,25 @@ The first distance measure was based on summary statistics of the following syll
 
 The second distance measure was based on time-varying changes in song features; we calculated the following syllable features for each time point in the syllable (9.27 ms window size, 7.91 ms overlap): Wiener entropy, frequency modulation, amplitude modulation, fundamental frequency and goodness of pitch (Tchernichovski et al., 2000)(Figure 10A). Syllables were represented as multi-dimensional feature vectors in time. The distance between the vectors was calculated with a dynamic time-warping algorithm including a warping penalty (Vintsyuk, 1972). The time-warping algorithm tolerates small perturbations in the timing of sub-syllabic events common to juvenile syllables.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig10-v2.jpg)
+
+**Figure 10.:** (A) Examples of the features used to calculate acoustic similarity in order to assign juvenile syllable renditions to types (clusters). Top row shows spectrograms for five renditions of a syllable type labeled e from a 59 dph bird (also shown in B). Below are plots of three features calculated across time for each syllable; a total of 11 features were used to generate an acoustic distance score for clustering of syllables into types (see Materials and methods). (B) Spectrograms for the five syllable types from this bird, a-e, resulting from automatic clustering of syllables.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/26973/elife-26973-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** The tutor syllable was selected by finding the closest acoustic distance between each juvenile syllable rendition and the tutor syllables for that bird (see Materials and methods).
+
 In order to normalize the measures, we converted each distance measure to percentiles based on the empirical distribution (computed over all pairs of syllables). To obtain a combined distance measure we calculated the geometric mean of the two percentile distance measures for each syllable pair. We then generated a matrix consisting of the combined distance measure for each syllable to all other syllables. A final distance score was calculated as a dissimilarity index by taking one minus the correlation between points of the combined distance measure matrix, and ranged between 0 (perfect similarity) and 2 (no similarity; i.e., if the syllables were completely anticorrelated, the correlation would be −1 and the distance would be 1 - (−1)=2). Syllables were clustered into 4–25 types by hierarchical agglomerative clustering using the dissimilarity index as the distance metric and complete linkage as the linkage criterion (Figure 10B). We then manually selected the number of types for each bird for each day, confirmed cluster quality, and merged clusters which were similar. Some clusters were rejected due to high variability; thus not all syllables were clustered into types, especially those from recordings of birds producing more immature vocalizations. The total percent of classified syllables (assigned to clusters) was 49% overall (across song recordings for all birds and ages); 38% of syllables were classified from song recordings in early stages of development (representing the bottom half of song recordings by goodness-of-fit coefficients of exponential fit to syllable duration distributions, see ‘Song development’ below) and 57% of syllables were classified for song recordings in later stages of song development (representing the top half of song recordings by goodness-of-fit coefficient).
 
-We calculated firing rates during each syllable produced and the 50 ms prior to syllable onsets in order to include pre-syllable-related activity; this syllable-based firing rate was used in analyses of neural selectivity for syllable types and similarity to tutor song (see below). The average gap between syllables in juvenile birds is ~60 ms (Glaze and Troyer, 2013; Aronov et al., 2011), making it unlikely that activity during a previous syllable was included in these firing rates. In order to align syllables to construct PSTH’s of spiking activity, we linearly time warped each spike train to the average length for that syllable type following procedures of (Kao et al., 2008). We calculated the average duration of all syllables within each cluster and used that value as the ‘reference duration’. Then, each syllable in the cluster was linearly stretched/compressed (syllables were aligned at onsets) and spike trains were projected onto the time-warped axis for each syllable. To determine selectivity of responses to specific syllable types, we calculated a sparseness/activity fraction (AF) (Meliza and Margoliash, 2012; Vinje and Gallant, 2000) for all neurons which responded significantly to at least one syllable type:AF=1− [(∑rin)2/∑(ri2n)]1− 1n
+We calculated firing rates during each syllable produced and the 50 ms prior to syllable onsets in order to include pre-syllable-related activity; this syllable-based firing rate was used in analyses of neural selectivity for syllable types and similarity to tutor song (see below). The average gap between syllables in juvenile birds is ~60 ms (Glaze and Troyer, 2013; Aronov et al., 2011), making it unlikely that activity during a previous syllable was included in these firing rates. In order to align syllables to construct PSTH’s of spiking activity, we linearly time warped each spike train to the average length for that syllable type following procedures of (Kao et al., 2008). We calculated the average duration of all syllables within each cluster and used that value as the ‘reference duration’. Then, each syllable in the cluster was linearly stretched/compressed (syllables were aligned at onsets) and spike trains were projected onto the time-warped axis for each syllable. To determine selectivity of responses to specific syllable types, we calculated a sparseness/activity fraction (AF) (Meliza and Margoliash, 2012; Vinje and Gallant, 2000) for all neurons which responded significantly to at least one syllable type:
+
+$$
+AF=\frac{1− [(\frac{\sumr_{i}}{n})^{2}/\sum(\frac{r_{i}^{2}}{n})]}{1− \frac{1}{n}}
+$$
 
 where r is the firing rate to the ith syllable type and n is the number of syllable types. Thus a score of 0 indicates no selectivity for a specific syllable type (equal firing rates across all syllable types) and one indicates maximum selectivity (change in firing rate during only one syllable type).
 
-## Similarity to tutor song
+### Similarity to tutor song
 
 Analyses of similarity to tutor song included all neurons for which at least 40 classified syllables (syllables which were able to be clustered into a given type) were produced during each neuron’s 30-min recording period. We used only classified syllable renditions for the tutor similarity analyses in order to use the same set of neurons and syllables for an analysis of prototypicality as a control (see below). We tested whether using only classified syllables influenced the tutor similarity results by examining the outcome using all syllables (both classified and not classified) and observed the same trends (data not shown); thus, use of classified syllables did not bias the results. These analyses included both singing-excited and singing-suppressed neurons, as well as neurons that did not show a significant change in firing rate during singing episodes (the latter cases ensured inclusion of cells that showed excitation during syllables with high similarity and suppression during syllables with low similarity, for example). To evaluate the similarity between juvenile syllables and tutor syllables we employed the final combined distance score described above. Similarity to tutor was calculated as the acoustic distance score between each syllable and its closest tutor syllable. We defined what constituted the closest tutor syllable in two ways: either as the tutor syllable which was closest in distance to the center of the syllable cluster to which each rendition belonged, or as the tutor syllable which was simply closest in distance to each rendition. These two approaches yielded highly similar results, and we therefore chose the latter method to reduce any effects of the syllable clustering routine on tutor similarity calculations. All syllable renditions produced during each neuronal recording were ranked by tutor similarity; for many analyses, a median split was employed in which the ranked juvenile syllables for each neuron were divided into the top 50% versus bottom 50% of tutor similarity – these two categories are referred to as high and low similarity, respectively (Figure 10—figure supplement 1).
 
@@ -171,14 +346,14 @@ To assess the association of baseline-corrected firing rates on tutor similarity
 
 To examine if firing rate variability was modulated by similarity to tutor song, we calculated the CV of firing rate during production of syllables representing high and low similarity to corresponding tutor syllables (top and bottom 50% of syllables ranked by tutor similarity). Neurons were included in these analyses if at least 40 classified syllables were produced during the 30-min recording period and if the mean firing rate was non-zero for the most/least prototypical and most/least similar to tutor song syllables (because neurons with mean firing rates of zero would give undefined CV values).
 
-## Syllable prototypicality
+### Syllable prototypicality
 
 We calculated a prototypicality score for each syllable based on (Niziolek et al., 2013), which measures whether renditions are similar to the center of that syllable’s distribution (more prototypical) or less similar to the center of the distribution (less prototypical). We computed the acoustic distance between each syllable rendition and the center of the syllable cluster to which it belonged, again employing the combined distance score described above. This measure served as a control for effects based on tutor similarity to assess whether correlations based on firing rate reflected prototypical utterances; we used the same mixed-effects regression model as above to assess a relationship between baseline-corrected firing rates and prototypicality. As indicated above, this analysis also included all neurons for which at least 40 classified syllables were produced during individual recording periods; in this way analyses of tutor similarity and prototypicality included the same set of neurons and syllables.
 
-## Song development
+### Song development
 
 In order to assess how developed each bird’s song was for each day, we utilized methods previously described to define song stage (Aronov et al., 2011). Juvenile birds in the subsong stage of sensorimotor integration produce syllables of variable lengths, the distribution of which is well-fitted by an exponential function. As birds progress to the plastic song phase, they produce more regular syllable types which begin to appear as peaks in the distribution of syllable durations, and therefore are no longer well-fit by an exponential (Aronov et al., 2011; Tchernichovski et al., 2004). Based on this evidence, we fit an exponential to all syllable duration distributions for each bird, for each day of singing (500–8,000 syllables). We used the Lilliefors test (MATLAB) to quantify goodness-of-fit, and the resulting coefficient was scaled by the number of syllables. Therefore, smaller goodness-of-fit coefficients indicate less developed songs (i.e. subsong) and larger coefficients indicate more developed songs (i.e. plastic song). Response strength, CV, and r values (correlations between baseline-corrected firing rate and tutor similarity) for all neurons across all classified syllables (syllables assigned to clusters) produced in each recording session were analyzed as a function of song development using goodness-of-fit coefficients.
 
-## Statistics
+### Statistics
 
 Kolmogorov-Smirnov and Shapiro-Wilk tests were used to test for normality; t-tests were used to compare means for normally distributed data, and Mann-Whitney tests were used for non-normally distributed data. Differences in proportions were tested using chi-square tests. Correlations were performed using Pearson’s correlation. The significance of mean-subtracted bins for pre-singing activity (Figure 3) was calculated as the 95% confidence interval outside of zero and is described above. Specific statistical tests used are identified in context in the Results.

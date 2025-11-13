@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01xf75524 Department of Genitourinary Oncology, Moffitt Cancer Center and Research Institute Tampa United States
-2. https://ror.org/01xf75524 Department of Integrated Mathematical Oncology, Moffitt Cancer Center and Research Institute Tampa United States
-3. https://ror.org/02mpq6x41 Department of Biological Sciences, University of Illinois at Chicago Chicago United States
-4. https://ror.org/01xf75524 Cancer Biology and Evolution Program, Moffitt Cancer Center and Research Institute Tampa United States
+1. Department of Genitourinary Oncology, Moffitt Cancer Center and Research Institute Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
+2. Department of Integrated Mathematical Oncology, Moffitt Cancer Center and Research Institute Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
+3. Department of Biological Sciences, University of Illinois at Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
+4. Cancer Biology and Evolution Program, Moffitt Cancer Center and Research Institute Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
 
 † Corresponding author
 
 ## Abstract
 
-Abiraterone acetate is an effective treatment for metastatic castrate-resistant prostate cancer (mCRPC), but evolution of resistance inevitably leads to progression. We present a pilot study in which abiraterone dosing is guided by evolution-informed mathematical models to delay onset of resistance. In the study cohort, abiraterone was stopped when PSA was <50% of pretreatment value and resumed when PSA returned to baseline. Results are compared to a contemporaneous cohort who had >50% PSA decline after initial abiraterone administration and met trial eligibility requirements but chose standard of care (SOC) dosing. 17 subjects were enrolled in the adaptive therapy group and 16 in the SOC group. All SOC subjects have progressed, but four patients in the study cohort remain stably cycling (range 53–70 months). The study cohort had significantly improved median time to progression (TTP; 33.5 months; p<0.001) and median overall survival (OS; 58.5 months; hazard ratio, 0.41, 95% confidence interval (CI), 0.20–0.83, p<0.001) compared to 14.3 and 31.3 months in the SOC cohort. On average, study subjects received no abiraterone during 46% of time on trial. Longitudinal trial data demonstrated the competition coefficient ratio ( α ) of sensitive and resistant populations, a critical factor in intratumoral evolution, was two- to threefold higher than pre-trial estimates. Computer simulations of intratumoral evolutionary dynamics in the four long-term survivors found that, due to the larger value for RS /α SR α cycled therapy significantly decreased the resistant population. Simulations in subjects who progressed predicted further increases in OS could be achieved with prompt abiraterone withdrawal after achieving 50% PSA reduction. RS /α SR, Incorporation of evolution-based mathematical models into abiraterone monotherapy for mCRPC significantly increases TTP and OS. Computer simulations with updated parameters from longitudinal trial data can estimate intratumoral evolutionary dynamics in each subject and identify strategies to improve outcomes. Moffitt internal grants and NIH/NCI U54CA143970-05 (Physical Science Oncology Network).
+Background:Abiraterone acetate is an effective treatment for metastatic castrate-resistant prostate cancer (mCRPC), but evolution of resistance inevitably leads to progression. We present a pilot study in which abiraterone dosing is guided by evolution-informed mathematical models to delay onset of resistance.Methods:In the study cohort, abiraterone was stopped when PSA was <50% of pretreatment value and resumed when PSA returned to baseline. Results are compared to a contemporaneous cohort who had >50% PSA decline after initial abiraterone administration and met trial eligibility requirements but chose standard of care (SOC) dosing.Results:17 subjects were enrolled in the adaptive therapy group and 16 in the SOC group. All SOC subjects have progressed, but four patients in the study cohort remain stably cycling (range 53–70 months). The study cohort had significantly improved median time to progression (TTP; 33.5 months; p<0.001) and median overall survival (OS; 58.5 months; hazard ratio, 0.41, 95% confidence interval (CI), 0.20–0.83, p<0.001) compared to 14.3 and 31.3 months in the SOC cohort. On average, study subjects received no abiraterone during 46% of time on trial. Longitudinal trial data demonstrated the competition coefficient ratio (αRS/αSR) of sensitive and resistant populations, a critical factor in intratumoral evolution, was two- to threefold higher than pre-trial estimates. Computer simulations of intratumoral evolutionary dynamics in the four long-term survivors found that, due to the larger value for αRS/αSR, cycled therapy significantly decreased the resistant population. Simulations in subjects who progressed predicted further increases in OS could be achieved with prompt abiraterone withdrawal after achieving 50% PSA reduction.Conclusions:Incorporation of evolution-based mathematical models into abiraterone monotherapy for mCRPC significantly increases TTP and OS. Computer simulations with updated parameters from longitudinal trial data can estimate intratumoral evolutionary dynamics in each subject and identify strategies to improve outcomes.Funding:Moffitt internal grants and NIH/NCI U54CA143970-05 (Physical Science Oncology Network).
 
 ## Introduction
 
@@ -40,7 +40,7 @@ Here, we provide follow-up on an initial report submitted when the benefits of a
 
 ## Methods
 
-## Pilot clinical trial
+### Pilot clinical trial
 
 This is a single-institution investigator-initiated pilot study (NCT02415621) carried out at the Moffitt Cancer Center, Tampa, FL. The protocol was approved by central IRB and monitored by Moffitt Cancer Center’s protocol monitoring committee. Details of the trial design have been previously published (Zhang et al., 2017). Briefly, inclusion criteria were similar to phase III AA-302 trial (Cunningham, 2019) population, except allowing ECOG 2 performance status (PFD), prior exposure to enzalutamide, sipuleucel-T, and ketoconazole. Prior docetaxel was allowed if it was given during the castration-sensitive phase. Patients on opioids for cancer-related pain were excluded. Patients could be enrolled in the study after achieving 50% or more decline of their pre-abiraterone Prostate Specific Antigen (PSA) levels. Cohort size was designed to have sufficient statistical power to detect a 50% increase in TTP.
 
@@ -50,31 +50,96 @@ Patients were monitored every 4–6 weeks with a lab (Complete Blood Count (CBC)
 
 For patients who did not undergo surgical castration, GnRH analog treatment was continued to maintain castration levels of serum testosterone. Patients who did not achieve a 50% decline of their baseline PSA after restarting abiraterone remained in study until they developed radiographic progression based on Prostate Cancer Working Group 2 criteria. Patients who developed radiographic progression while off abiraterone would restart abiraterone and remain on abiraterone until a partial response was noted in the repeat bone scan, and abdominal and pelvic CT. These subjects were then allowed to stop abiraterone and reenter the adaptive therapy cycles. Patients were followed until they developed radiographic progression or ECOG performance status deterioration while on abiraterone, whichever came first.
 
-## SOC cohort
+### SOC cohort
 
 Sixteen patients who were treated with continuous abiraterone as the SOC and met the eligibility criteria for our adaptive therapy were identified through chart review of mCRPC patients treated at the Moffitt Cancer Center during the time of the study enrollment. Thus, all patients fulfilled trial eligibility requirements (including a >50% drop in PSA) and chose SOC treatment. Specifically, all patients in this group had a >50% decline in PSA following initial administration of abiraterone (Appendix 1) and a prior therapy history that met eligibility requirements for the adaptive trial.
 
-## Mathematical models used in trial design and analysis
+### Mathematical models used in trial design and analysis
 
 Our original mathematical model (Zhang et al., 2017) divided the prostate cancer subpopulations based on their interactions with testosterone: T+ cells require extrinsic androgen for survival and proliferation, TP cells require androgen for survival and proliferation but upregulated CYP17a1 (Mostaghel et al., 2011) allow them to produce testosterone generating an autocrine loop, T-cells are androgen independent. Note the potential coupling of TP and T+ cells as the testosterone produced by the TP cells represent a ‘common good’ or‘public good’ (Johnstone and Rodrigues, 2016) that can be used by the T+ cells. In evolutionary terms, this coupling results in the T+ cells acting as ‘cheaters’ (Ghoul et al., 2014) because they use the testosterone produced by the TP cells but do not incur the fitness cost of producing it. Here, for our post-trial analysis, we combine the T+ and TP cells as both being sensitive to abiraterone. This simplifies the model into a sensitive population (T+ and TP) and a population resistant to abiraterone (T-). The model is available in GitHub (Cunningham, 2022).
 
-As in our original report (Zhang et al., 2017), we use Lotka–Volterra (LV) competition equations to model the interactions between the three (prior model) and two (current analysis) cell types (xj) based on parameters for intrinsic growth rates, ri , carrying capacities, Ki , and the matrix of competition coefficients, aij .(1)dxidt=rixi1-∑j=13aijxjKi
+As in our original report (Zhang et al., 2017), we use Lotka–Volterra (LV) competition equations to model the interactions between the three (prior model) and two (current analysis) cell types ($x_{j})$ based on parameters for intrinsic growth rates, $r_{i}$ , carrying capacities, $K_{i}$ , and the matrix of competition coefficients, $a_{ij}$ .
+
+$$
+\frac{dx_{i}}{dt}=r_{i}x_{i}1-\frac{\sumj=13a_{ij}x_{j}}{K_{i}}
+$$
 
 Since patients are included in the study only if their PSA declined by at least 50% after initial application of abiraterone, the sensitive cells must be more prevalent than the resistant cells. Based on census methodologies (Pfister, 1995) and the steep drop in PSA with therapy, we can conclude that the sensitive cells are fitter than the T- cells prior to treatment. We assume that each phenotype produces roughly equal amounts of PSA, which may introduce error if this assumption is substantially violated. This assumption does allow us to consider PSA as a direct estimator of the total number of cancer cells.
 
-Each competition coefficient (aij) standardizes the competitive effect of an individual of type j on the per capita growth rate of type i in units of type i. In general, the value of the competition coefficient reflects the relative fitness of the populations. All aii=1. If aij>1, then inter-type competition is greater than intra-type; and vice versa if aij<1.
+Each competition coefficient ($a_{ij}$) standardizes the competitive effect of an individual of type j on the per capita growth rate of type i in units of type i. In general, the value of the competition coefficient reflects the relative fitness of the populations. All $a_{ii}=1$. If $a_{ij}>1$, then inter-type competition is greater than intra-type; and vice versa if $a_{ij}<1$.
 
 As in our original model, we let abiraterone therapy reduce the carrying capacities of the TP and T+ cells, with no effect on T-. We assume that TP cells are either killed or quiescent during abiraterone treatment. Since abiraterone inhibits the production of testosterone by the TP cells, the T+ ‘cheater’ population will have no source of testosterone and they too decline with abiraterone, rendering both sensitive to abiraterone both directly and indirectly.
 
-## Statistics
+### Statistics
 
 To compare patient characteristics between the trial and SOC cohorts, we used Kruskal–Wallis nonparametric one-way ANOVAs (done with SYSTAT13). To compare progression-free survivorship between the two cohorts. we used the Mantel logrank test (done with SYSTAT13).
 
 ## Results
 
-## Cohort analysis
+### Cohort analysis
 
 Seventeen evaluable patients were enrolled between June 2015 and January 2019. Tumor stage, initial Gleason Scores, and pretreatment PSA values were not significant between both trial and SOC cohorts (Table 1): Gleason scores: Kruskal–Wallis test statistic of 0.088 with p=0.767 based on a chi-square distribution, df = 1. Pretreatment PSA levels: Kruskal–Wallis test statistic of 0.157 with p=0.692 based on a chi-square distribution, df = 1. All patients fulfilled trial eligibility so that pretreatment history was identical.
+
+**Table 1.**
+ Demographic and prior treatment history in each cohort.The study was conducted before abiraterone, enzalutamide, or apalutamide was approved for treating castration-sensitive prostate cancer. Sipuleucel-T was the only treatment given before abiraterone for metastatic castrate-resistant prostate cancer (mCRPC) in the control and adaptive abiraterone cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control (Pfister, 1995)</th>
+      <th>Adaptive abiraterone (Zhang et al., 2017)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age/mean [range]</td>
+      <td>68 [57–76]</td>
+      <td>67 [50–79]</td>
+    </tr>
+    <tr>
+      <td>History of androgen deprivation therapy for M0 prostate cancer</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>&lt;12 months of androgen deprivation therapy prior to abiraterone for mCRPC</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Sipuleucel-T prior to abiraterone</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Gleason score/median [range]</td>
+      <td>7 [7, 10]</td>
+      <td>8 [6, 10]</td>
+    </tr>
+    <tr>
+      <td>Pre-abiraterone PSA/mean [range]</td>
+      <td>36.52 [2.71, 93.4]</td>
+      <td>29.7 [1.46, 109.4]</td>
+    </tr>
+    <tr>
+      <td>Lymph node metastases only</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Bone, with or without lymph node metastases</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Lung or soft tissue metastases</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 This study was conducted before abiraterone was approved in the castration-sensitive setting. None of the patients enrolled in the adaptive therapy trial or included in the historical control had received new hormonal agent (abiraterone, enzalutamide, or apalutamide) or docetaxel in the castration-sensitive setting. Abiraterone was the frontline therapy for mCRPC for most patients in each group.
 
@@ -88,19 +153,29 @@ In a preliminary report, we found that the median radiographic TTP could not be 
 
 All 16 patients in the SOC group have progressed and all have died at the time of this report. Seven patients in the adaptive therapy remain alive and four patients remain on study without imaging progression (range 53–70 months) as of the date of submission. Patients in the adaptive therapy group received an average abiraterone dosing rate (mg drug/patient/unit time) of 54% compared to SOC. That is, on average, the trial patients were not receiving abiraterone during 46% of their time on trial.
 
-## Mathematical analysis
+### Mathematical analysis
 
 Mathematically based analysis of the trial proceeded in two steps. First, longitudinal trial data allowed key model parameters, including growth rate, pretreatment ratio of sensitive and resistant cell populations, and the relative fitness of each population. Second, computer simulations of the model with updated parameters were performed on each patient in both cohorts to estimate intratumoral evolutionary dynamics that led to the observed outcomes.
 
-## Converting longitudinal trial data to parameter estimates
+### Converting longitudinal trial data to parameter estimates
 
-Because ADT was continued during abiraterone therapy, we assumed that the T+ cell proliferation was linked exclusively to androgen production by the TP cells. That is, loss of TP cells would reduce intratumoral androgen concentrations necessitating a decline in the T+ population. Their linked fates allow us to reduce Equation 1 to a two-species model with T- cells as the resistant population (xR) and the TP and T+ cells as a combined sensitive population (xS). Population sizes correspond to overall tumor burden. We arbitrarily set the carrying capacity to 10,000 (its scalable). and we assume all cell types have the same carrying capacity. Equation 1 becomes(2)ẋS=βSCrSxS1-xS+ αSRxR10000-9000Ʌ(3)ẋR=βSCrRxR1-xR+ αRSxS10000
+Because ADT was continued during abiraterone therapy, we assumed that the T+ cell proliferation was linked exclusively to androgen production by the TP cells. That is, loss of TP cells would reduce intratumoral androgen concentrations necessitating a decline in the T+ population. Their linked fates allow us to reduce Equation 1 to a two-species model with T- cells as the resistant population (xR) and the TP and T+ cells as a combined sensitive population (xS). Population sizes correspond to overall tumor burden. We arbitrarily set the carrying capacity to 10,000 (its scalable). and we assume all cell types have the same carrying capacity. Equation 1 becomes
 
-where rS and rr are the population growth rates (units of per day), βSC is a cell-type-independent scaling factor, and ʌ (value of 1 during abiraterone treatment and 0 during drug holidays) is the effect of abiraterone on the carrying capacity of the sensitive cells. Carrying capacity is generally set by limits to growth such as nutrients and space. Thus, we assume that under no therapy all cell types have the same need and utilization of nutrients and space, and we assume lack of testosterone induces a 90% drop in nutrient and space use efficiency. Finally, in the absence of abiraterone, any competitive advantage of the sensitive cells will manifest through either a higher growth rate, r (only meaningful during transient dynamics away from carrying capacity), or a larger competitive effect of sensitive cells on resistant cells than vice versa (the most salient from a cost of resistance): αRS > αSR.
+$$
+ẋ_{S}=\beta_{SC}r_{S}x_{S}1-\frac{x_{S}+ \alpha_{SR}x_{R}}{10000-9000Ʌ}
+$$
+
+
+
+$$
+ẋ_{R}=\beta_{SC}r_{R}x_{R}1-\frac{x_{R}+ \alpha_{RS}x_{S}}{10000}
+$$
+
+where $r_{S}$ and $r_{r}$ are the population growth rates (units of per day), $\beta_{SC}$ is a cell-type-independent scaling factor, and ʌ (value of 1 during abiraterone treatment and 0 during drug holidays) is the effect of abiraterone on the carrying capacity of the sensitive cells. Carrying capacity is generally set by limits to growth such as nutrients and space. Thus, we assume that under no therapy all cell types have the same need and utilization of nutrients and space, and we assume lack of testosterone induces a 90% drop in nutrient and space use efficiency. Finally, in the absence of abiraterone, any competitive advantage of the sensitive cells will manifest through either a higher growth rate, r (only meaningful during transient dynamics away from carrying capacity), or a larger competitive effect of sensitive cells on resistant cells than vice versa (the most salient from a cost of resistance): αRS > αSR.
 
 We used a two-step process for parameter estimation. First, for each patient (dropping those with insufficient pre-therapy data), we used the initial rate of increase of PSA to estimate the growth rate of sensitive cells, rS. We then used the average of these patient-specific estimates of rS as the patient-wide value for subsequent parameter estimation in both the trial and continuous therapy cohorts. This assumes that prior to therapy, resistant cells represent a small fraction of extant cancer cells. To estimate the growth rate of resistant cells, we used the increase in PSA levels following disease progression in the continuous therapy cohort under the assumption that with disease progression the cancer cell population is predominately resistant. We then used the average of these patient-specific estimates of rR as the patient-wide parameter value for both trial and continuous therapy cohorts (Appendix 1).
 
-The first step provided patient-wide estimates of rS and rR that were then used as fixed values for the second step of parameter estimation. In the second step, we used constrained nonlinear multivariable optimization to estimate the scaling factor, βSC , the competitive effect of sensitive cells on resistant ones, αRS, and the initial population sizes of sensitive and resistant populations, xS(0) and xR(0) (Appendix 2). For these estimates, we made βSC and αRS patient-wide, and xS(0) and xR(0) patient-specific. We set the competitive effect of resistant cells on sensitive cells to αRS = 1, the same as the intraspecific competition coefficients.
+The first step provided patient-wide estimates of rS and rR that were then used as fixed values for the second step of parameter estimation. In the second step, we used constrained nonlinear multivariable optimization to estimate the scaling factor, $\beta_{SC}$ , the competitive effect of sensitive cells on resistant ones, αRS, and the initial population sizes of sensitive and resistant populations, xS(0) and xR(0) (Appendix 2). For these estimates, we made $\beta_{SC}$ and αRS patient-wide, and xS(0) and xR(0) patient-specific. We set the competitive effect of resistant cells on sensitive cells to αRS = 1, the same as the intraspecific competition coefficients.
 
 With these assumptions, we accomplish several things. We prevent overfitting with too many parameters by using the two-step estimation process and limiting the number of patient-specific parameters. By letting the initial sizes of sensitive and resistant cells be patient-specific, we allow for the high variability among patients in their initial response to therapy and subsequent disease dynamics. The efficacy of adaptive therapy depends on the presence of a cost of resistance, which in our model will manifest as the ratio of competition coefficients αRS/αSR > 1. It may be that the effect of resistant cells on sensitive cells is less than 1, but by assuming that αSR = 1 we expect the estimate for αRS > 1, and we have one less parameter to estimate.
 
@@ -112,17 +187,17 @@ The sensitive cell population had a significantly higher mean growth rate (0.015
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76284/elife-76284-fig2-v1.jpg)
 
-**Figure 2.:** a, b) and relationship between time to radiographic progression (TTP) and initial population fraction of cancer cells resistant to abiraterone (c).Parameters α (competition coefficient of sensitive on resistant cells) and RS (growth rate scaling factor) were estimated by a constrained nonlinear multivariable optimization minimizing the least-squares difference between the output of the model and the actual patient data over the entire cohort. The global minimum occurred at βSCα = 6 and RS. (βSC=8c) TTP declines with the estimated pretreatment fraction of resistant cells for both adaptive therapy and continuous therapy cohorts. Adaptive therapy is superior to continuous therapy. No adaptive therapy patient lies below the regression line for continuous therapy, and no continuous therapy patient lies above the regression line for adaptive therapy.
+**Figure 2.:** Parameters αRS (competition coefficient of sensitive on resistant cells) and $\beta_{SC}$ (growth rate scaling factor) were estimated by a constrained nonlinear multivariable optimization minimizing the least-squares difference between the output of the model and the actual patient data over the entire cohort. The global minimum occurred at αRS = 6 and $\beta_{SC}=8$. (c) TTP declines with the estimated pretreatment fraction of resistant cells for both adaptive therapy and continuous therapy cohorts. Adaptive therapy is superior to continuous therapy. No adaptive therapy patient lies below the regression line for continuous therapy, and no continuous therapy patient lies above the regression line for adaptive therapy.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76284/elife-76284-fig3-v1.jpg)
 
 **Figure 3.:** For patients C007 (a) and C004 (b), the pretreatment fraction of resistant cancer cells was estimated as 0.3 and 0.25, respectively, and time to radiographic progression was 526 and 128 days, respectively.
 
-Estimated values for the remaining patient-wide parameters yielded βSC = 8 and αRS ≈ 6. For perspective, the ratio of the competition coefficient of a dominant species over a nondominant species in nature ranges from slightly above 1 to over 100 (Inouye, 1999). In our pre-trial model (Zhang et al., 2017), we used a ratio of αRS/αSR≈ 2. We now see that this was too conservative, and the actual ratio of 6 has clinical implications (Figure 4). If αRS/αSR = 2, the resistant population (xR) increases as the sensitive population (xS) declines but, following treatment cessation, remains constant. As a result of this increase then plateau sequence, our original model simulations predicted the resistant population will inevitably become predominate, leading to progression after 2–20 cycles. However, with the retrospective and empirically derived αRS/αSR = 6, simulations (Figure 4) show the increasing sensitive population (xS) after treatment cessation causes a decrease in the size of the resistant population (xR) such that, after 3–4 consecutive optimal treatment cycles, the resistant population can approach 0. This means that, in theory, cycling can persist indefinitely. Or, after using adaptive therapy to create persistent cycles, it may be possible to be therapeutically more aggressive to achieve cure.
+Estimated values for the remaining patient-wide parameters yielded $\beta_{SC}$ = 8 and αRS ≈ 6. For perspective, the ratio of the competition coefficient of a dominant species over a nondominant species in nature ranges from slightly above 1 to over 100 (Inouye, 1999). In our pre-trial model (Zhang et al., 2017), we used a ratio of αRS/αSR≈ 2. We now see that this was too conservative, and the actual ratio of 6 has clinical implications (Figure 4). If αRS/αSR = 2, the resistant population (xR) increases as the sensitive population (xS) declines but, following treatment cessation, remains constant. As a result of this increase then plateau sequence, our original model simulations predicted the resistant population will inevitably become predominate, leading to progression after 2–20 cycles. However, with the retrospective and empirically derived αRS/αSR = 6, simulations (Figure 4) show the increasing sensitive population (xS) after treatment cessation causes a decrease in the size of the resistant population (xR) such that, after 3–4 consecutive optimal treatment cycles, the resistant population can approach 0. This means that, in theory, cycling can persist indefinitely. Or, after using adaptive therapy to create persistent cycles, it may be possible to be therapeutically more aggressive to achieve cure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76284/elife-76284-fig4-v1.jpg)
 
-**Figure 4.:** In the top panels, we show the ideal cycling of the PSA treatment in which treatment is stopped immediately upon reaching 50% of the pretreatment value and resumed immediately upon reaching that value. In the lower panel, we show computer simulations of changes in the treatment-sensitive (blue) and treatment-resistant populations (red). Treatment dynamics are sensitive to the value of the competition coefficient (α), which is dependent on the fitness differences of the sensitive and resistant populations in the absence of treatment. In panel (RSa) we assume α = 0.8 and increase in RSx does not decrease the population Sx and adaptive therapy fails. In panel (Rb), α = 2, the increase in RSx during treatment holidays slows the growth of Sx and delays treatment failure. In panel (Rc) the estimated αRS 6 results in a RSnegative growth rate in x during proliferation of Rx. Over 3–4 cycles, the Sx population approaches 0. This allows the cycling treatment to maintain tumor control indefinitely. Note that, however, this represents an ideal setting and does not account for other dynamics (see below) that may result in loss of control.R
+**Figure 4.:** In the top panels, we show the ideal cycling of the PSA treatment in which treatment is stopped immediately upon reaching 50% of the pretreatment value and resumed immediately upon reaching that value. In the lower panel, we show computer simulations of changes in the treatment-sensitive (blue) and treatment-resistant populations (red). Treatment dynamics are sensitive to the value of the competition coefficient (αRS), which is dependent on the fitness differences of the sensitive and resistant populations in the absence of treatment. In panel (a) we assume αRS = 0.8 and increase in xS does not decrease the population xR and adaptive therapy fails. In panel (b), αRS = 2, the increase in xS during treatment holidays slows the growth of xR and delays treatment failure. In panel (c) the estimated αRSRS 6 results in a negative growth rate in xR during proliferation of xS. Over 3–4 cycles, the xR population approaches 0. This allows the cycling treatment to maintain tumor control indefinitely. Note that, however, this represents an ideal setting and does not account for other dynamics (see below) that may result in loss of control.
 
 The potential for achieving the actual or near extinction of the resistant cancer cells after 3–4 cycles of adaptive therapy may have occurred for the four trial patients who after >5 years of adaptive therapy remain on a stable cycling regime (Figure 5). If there is potential for permanent control, why was tumor progression observed in most members of the adaptive therapy cohort? Computer simulations suggest that they were overtreated. While protocol design required monthly PSA levels, radiographic studies were limited to 3-month intervals. As demonstrated in Figure 6, the protocol requirement for radiographic confirmation of response resulted in multiple weeks and even months in which patients remained on treatment even when the PSA was <10% of pretreatment values. Simulations demonstrate this excessive reduction of the sensitive population leads to the proliferation and predominance of the resistant population.
 
@@ -138,7 +213,7 @@ Finally, the models allowed us to explore whether the protocol to remove therapy
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76284/elife-76284-fig7-v1.jpg)
 
-**Figure 7.:** a) and (b), and in which only a 20% drop is required before drug holiday (c) and (d).The red is TP cells that are directly affected by administration of abiraterone, blue is the T+ cells, and green is the therapy-resistant T- cells. The regions where the background is highlighted are the times at which abiraterone is being administered.
+**Figure 7.:** The red is TP cells that are directly affected by administration of abiraterone, blue is the T+ cells, and green is the therapy-resistant T- cells. The regions where the background is highlighted are the times at which abiraterone is being administered.
 
 ## Discussion
 

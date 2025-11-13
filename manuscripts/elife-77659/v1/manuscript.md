@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Physics of Complex Systems, Weizmann Institute of Science Rehovot Israel
+1. Department of Physics of Complex Systems, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ Here, we present an alternative mechanism that reduces the cognitive demand on i
 
 ## Results
 
-## Foragers move according to a biased random walk that is crop state dependent
+### Foragers move according to a biased random walk that is crop state dependent
 
 Starved colonies of Camponotus sanctus ants were recorded in an artificial 2D nest as they gradually replenished on fluorescently-labeled food. All ants were tracked, the amount of food in their crop was quantified throughout time using fluorescence imaging, and all trophallaxis events were annotated (Greenwald et al., 2018; Baltiansky et al., 2021). Foragers were identified to be those ants that repeatedly left the nest to retrieve food and deliver it to other ants in the nest. We analyzed the trajectories of these foragers inside the nest in relation to their changing crop state, as they distributed their food in trophallactic interactions. Figure 1 shows a single frame from an experimental video overlaid with an example of a forager’s trajectory in the nest.
 
@@ -42,11 +42,15 @@ Starved colonies of Camponotus sanctus ants were recorded in an artificial 2D ne
 
 We found that the movement of a forager in the nest can be characterized by a random walk with a bias that depends on the amount of food in her crop (Figure 2A). At each trophallactic interaction that a forager performed, her distance from the nest entrance was measured. The probabilities of her next interaction to be farther from the entrance (step inward), closer to the entrance (step outward) or at the same distance from the entrance (stay), were calculated as a function of the forager’s crop state at the end of the interaction. This coarse-grained analysis revealed a crop load threshold of 0.45 that separates between two types of movement. When the forager’s crop load is higher than the threshold value, she is more inclined to step inward into the nest. Conversely, at lower crop loads she is more probable to step outward toward the exit (Figure 2A). Figure 2B shows that these probabilities are not affected by the direction of the forager’s previous step. Thus, it is reasonable to model the forager’s movement as a Markovian process.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77659/elife-77659-fig2-v1.jpg)
+
+**Figure 2.:** (A) All locations in the nest were binned according to distance from the entrance, with bin width of 1 typical ant length (as visualized by circular grid lines in panel C). At each interaction of a forager, her crop load at the end of the interaction and the location bin of her next interaction was recorded. Pooled data from all foragers was used to calculate the probability of the next interaction to be in a deeper location bin (inward), in the same location bin (stay), or in a location bin closer to the entrance (outward), as a function of their crop load. Probabilities and standard deviations were calculated for each one of 10 crop load bins. Standard deviation was calculated by the formula for multinomial STD: $\sqrt{p⁢(1-p)/n}$, and is represented by the error bars in the plot. Sample sizes for each one of the 10 crop load bins ($n$) are {27, 38, 58, 68, 78, 103, 185, 192, 187, 77, 41}. (B) The data described in panel A was grouped according to the direction of the previous step. The plots show the probability to step inward (left), outward (middle) and stay (right), for cases where the previous step was inward, outward or stay as different curves. The pooled probability for all previous directions is presented as a thick black curve, equivalent to the curves presented in panel A. Standard deviations were calculated as in panel A, sample sizes for each crop load bin ($n$) for each previous step direction are “inward”: {11, 23, 26, 34, 46, 81, 73, 79, 26, 15}, “outward”: {8, 16, 17, 17, 23, 43, 36, 37, 13, 6}, “stay”: {19, 18, 24, 24, 19, 36, 51, 35, 9, 4}. (C) Examples of trajectories of single unloading bouts of a forager in the nest. Nest entrance is at the bottom left corner. Grid-lines spaced by a typical ant length are presented in gray. These are the spatial bins used to define the distance from the entrance for calculating the foragers’ biases (panels A-B). The trajectory of the unloading bout is plotted in blue, and locations of trophallaxis events are presented as red diamonds. The top two plots present trajectories from low colony states, and the bottom two plots present trajectories from high colony states.
+
 Foragers that operate according to the crop-dependent movement described above are expected to generate random closed paths in the nest as they unload their crops via trophallaxis: since the forager steps into the nest with a relatively full crop after she fed at the food source, her initial bias drives her deeper into the nest. As she unloads her food to other ants, her crop load may reach a level at which her bias switches direction. The forager then continues to disseminate food to ants in the nest, but now with a drift that carries her toward the exit, until she finally reaches it and leaves the nest to forage again. Note that as the colony gradually satiates, the forager’s unloading rate decreases (Greenwald et al., 2018). Therefore the duration and the depth of the forager’s cyclic paths both rise with the colony’s level of satiety. (Note that the experimental nest is flat, and the term ‘depth’ merely refers to distance from the entrance and not vertical depth.) Figure 2C shows examples of empirical paths of unloading bouts of individual foragers in the nest. When the colony is hungry (colony state close to 0), the paths are short and include few trophallactic interactions, and when the colony approaches satiation (colony state close to 1), paths are long and include more trophallactic interactions. Figure 2—video 1 and Figure 2—video 2 are fragments from an experimental video that show unloading bouts overlaid with the trajectory of the forager as she unloads in the nest at a high colony state and at a low colony state.
 
 To explore whether this empirically-derived movement rule may underlie the fact that foraging frequency scales linearly with total colony hunger, we simulated it numerically and analysed it mathematically. In the next sections we present two agent-based models and an analytical description of the system. The first agent-based model mimics the experimental two-dimensional nest. The second model is a simplified 1-dimensional version which is more readily approachable analytically. Our simulations show that both models yield the desired linear foraging frequency regulation. We then solve the 1D model analytically to show how it accounts for this emergence based on the local movement rule described above. Finally, we compare different properties of these models to our empirical observations.
 
-## Agent-based model in a 2D nest
+### Agent-based model in a 2D nest
 
 This model implements a square 2D nest of size 11x11 ant-lengths which contains 89 nest ants. The size of the nest and the number of ants were chosen to be of similar scale to the experimental conditions. The nest has a single entry/exit, located at one of the corner cells, mimicking the structure of the experimental nest. A single forager loads her crop outside the nest and then enters the nest, moving around and distributing her food load to the nest-ants. For simplicity, the nest-ants only receive food from the forager and do not redistribute it further. The forager’s movement is based on the empirical turning angles of foragers, such that is captures the two movement types described in Figure 2: generating an inward drift when her crop load is above the empirically identified threshold and an outward drift below it (see description below). When the forager happens upon the nest entrance, she exits the nest, refills her crop, and re-enters to distribute her new load. Note that contrary to the assumptions used in our previous paper (Greenwald et al., 2018), here a forager never directly decides to exit the nest. Rather, the forager only decides on the direction of her next step, and an exit occurs if the forager’s motion brings her to the nest exit. Hereafter, we refer to all the steps between the forager’s entrance and exit as a single unloading bout. For more details please refer to the Materials and Methods section.
 
@@ -62,7 +66,7 @@ Following the empirical analysis in Greenwald et al., 2018, ‘foraging frequenc
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77659/elife-77659-fig4-v1.jpg)
 
-**Figure 4.:** Foraging frequency was calculated as the inverse of the duration of the forager’s unloading bout in the nest. Unloading bouts were binned into five equally spaced bins of colony state, and the mean and SEM of foraging frequency was calculated for each bin. (A) Experimental data, figure taken from figure 4B of Greenwald et al., 2018. Data was grouped into equally-spaced bins of colony state (n = 57, 39, 28, 26, 26, for bins 1–5, respectively). (B) Data from 200 repeats of the 2D model simulation. Data from all repeats was pooled and grouped into equally-spaced bins of colony state (n = 3869, 4183, 4489, 4895, 6248, for bins 1-5, respectively). (C) Data from 200 repeats of the 1D model simulation. Data from all repeats was pooled and grouped into equally-spaced bins of colony state (n = 1770, 1989, 2222, 2531, 3189, for bins 1-5, respectively).Figure 4—source data 1.Output data from 200 runs of the 1D agent-based model. The file contains 3 spreadsheets: (1) Forager data. Includes data on the forager’s crop load and position in the nest at every step of the simulation. (2) Trophallaxis data. Includes data on the forager’s and the receiver’s crop loads, and the amount of food transferred at every interaction. (3) Trip data. Aggregated data on each trip of the forager inside the nest, including trip length and forager’s crop load upon exiting.Figure 4—source data 2.Output data from 200 runs of the 2D agent-based model. Data within the file is as described for the 1D model data. Python code for the agent-based model is available on GitHub (Frankel et al., 2022).
+**Figure 4.:** Foraging frequency was calculated as the inverse of the duration of the forager’s unloading bout in the nest. Unloading bouts were binned into five equally spaced bins of colony state, and the mean and SEM of foraging frequency was calculated for each bin. (A) Experimental data, figure taken from figure 4B of Greenwald et al., 2018. Data was grouped into equally-spaced bins of colony state (n = 57, 39, 28, 26, 26, for bins 1–5, respectively). (B) Data from 200 repeats of the 2D model simulation. Data from all repeats was pooled and grouped into equally-spaced bins of colony state (n = 3869, 4183, 4489, 4895, 6248, for bins 1-5, respectively). (C) Data from 200 repeats of the 1D model simulation. Data from all repeats was pooled and grouped into equally-spaced bins of colony state (n = 1770, 1989, 2222, 2531, 3189, for bins 1-5, respectively).
 
 Note that the model has reproduced the linear scaling between foraging frequency and empty colony state, but it was not expected to capture the exact values of the empirical observation. Quantitative discrepancies are a result of factors that were not incorporated into the model to avoid over-complication, such as: nest-ant behavior (spatial distribution, movement and secondary trophallaxis between nest-ants), the duration of trophallaxis events, and the fact that there is more than one forager.
 
@@ -70,35 +74,80 @@ Hence, the three local rules of the agent-based model lead to the emergence of a
 
 To understand how this linear scaling emerges from the local rules described above, we introduce an analytically tractable one-dimensional model. Since the direction of the forager’s movement is defined relative to the nest entrance (toward the entrance, away from the entrance), the forager’s position may essentially be defined using a single coordinate – her distance from the entrance. This description is further strengthened by the fact that coarse-graining the forager’s motion in a single dimension reveals a clear threshold-dependency of her motion bias on her crop load (Figure 2). The nest can then be simplified to a one-dimensional array of nest-ants through which the forager walks back and forth. In the next section, we describe the 1D simplification of the agent-based model.
 
-## Agent-based model in a 1D nest
+### Agent-based model in a 1D nest
 
 This model implements a 1D nest consisting of 45 cells, each cell inhabiting one nest-ant. The point of entrance/exit of the nest is from one of its edges. A single forager walks in the nest and feeds nest-ants as described in the 2D model above, with the following adjustments:
+
+**Table 1.**
+ Movement biases for agent-based model.The probabilities of a simulated forager to step inward, outward or to stay in the same cell, for two cases: when her crop load is lower than or higher than a threshold (0.45). The values of the threshold and the biases are approximated based on the empirical data (Figure 2A).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Crop load</th>
+      <th>P⁢(i⁢n⁢w⁢a⁢r⁢d)</th>
+      <th>P⁢(o⁢u⁢t⁢w⁢a⁢r⁢d)</th>
+      <th>P⁢(s⁢t⁢a⁢y)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≤ 0.45</td>
+      <td>0.16</td>
+      <td>0.53</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>&gt; 0.45</td>
+      <td>0.46</td>
+      <td>0.32</td>
+      <td>0.22</td>
+    </tr>
+  </tbody>
+</table>
 
 For more details on the implementation of the 1D model, see Materials and methods.
 
 Figure 4C shows that, similar to the 2D model, the 1D model reproduces the empirical observation that foraging frequency scales linearly with colony hunger. Next, we present a mathematical description of the 1D system to analytically explain these results.
 
-## The emergence of linear scaling between foraging frequency and total colony hunger
+### The emergence of linear scaling between foraging frequency and total colony hunger
 
 A precise analytical description of the unloading bouts of a forager is challenging, since they involve stochasticity in her movement, in the amount of food she delivers at each interaction, and in the state of her nest-ant partners. Therefore, we use a coarse-grained analysis, where we consider the averages of these stochastic variables: the forager’s average direction, the average amount of food given per interaction, and the average state of the forager’s partners in an unloading bout.
 
 Here, for the sake of simplicity, we present the equations for the deterministic case in which a forager walks only inward when her crop load exceeds the threshold, and only outward when it is below the threshold. In Appendix 1, we show how these equations apply to the more general case, where the forager’s bias is set by the partial probabilities to walk in each direction.
 
-Let c denote the crop state of the forager (c=1 when the forager’s crop is full and c=0 when it is empty). A certain crop load c* is the threshold that separates between the forager’s two movement biases within the nest: the forager walks inward when c>c∗ and outward when c<c∗.
+Let $c$ denote the crop state of the forager ($c=1$ when the forager’s crop is full and $c=0$ when it is empty). A certain crop load $c^{*}$ is the threshold that separates between the forager’s two movement biases within the nest: the forager walks inward when $c>c^{∗}$ and outward when $c<c^{∗}$.
 
-Let F be the total satiety state of the colony (F=0 when the colony is starved and F=1 when all ants in the colony are satiated). The nest-ant movement rule dictates that the forager interacts with a representative sample of the colony at each unloading bout (Greenwald et al., 2018), such that the average state of the forager’s partners is equal to the colony state, F. The trophallaxis rule gives the average amount of food delivered at each interaction: a fraction α of the receivers’ empty crop space (Greenwald et al., 2018). Given these two rules, the average amount of food a forager unloads at every interaction is:(1)⟨Δ⁢c⟩=α⋅(1-F).
+Let $F$ be the total satiety state of the colony ($F=0$ when the colony is starved and $F=1$ when all ants in the colony are satiated). The nest-ant movement rule dictates that the forager interacts with a representative sample of the colony at each unloading bout (Greenwald et al., 2018), such that the average state of the forager’s partners is equal to the colony state, $F$. The trophallaxis rule gives the average amount of food delivered at each interaction: a fraction $\alpha$ of the receivers’ empty crop space (Greenwald et al., 2018). Given these two rules, the average amount of food a forager unloads at every interaction is:
 
-Since the forager enters the nest full, and since in the extreme case the forager performs trophallaxis with a new ant at each step, the average number of interactions she will make until her crop load reaches the threshold is n*=1-c*⟨Δ⁢c⟩. In the extreme case, this quantity is equivalent to the average position in the nest at which the forager switches her bias, denoted ⟨xs⁢w⁢i⁢t⁢c⁢h⟩. Therefore, we obtain the following relation between the colony state and average position at which the forager switches her bias:(2)⟨xs⁢w⁢i⁢t⁢c⁢h⟩=1-c*α⁢(1-F)
+$$
+⟨Δ⁢c⟩=\alpha⋅(1-F).
+$$
 
-The average duration of the foragers’ unloading bout, ⟨T⟩ is the time it takes her to reach ⟨xs⁢w⁢i⁢t⁢c⁢h⟩ from the entrance (at x=0) and return. In the extreme case, walking inward every step until ⟨xs⁢w⁢i⁢t⁢c⁢h⟩ and outward every step from ⟨xs⁢w⁢i⁢t⁢c⁢h⟩, this simply equals 2⋅⟨xs⁢w⁢i⁢t⁢c⁢h⟩. We get:(3)⟨T⟩=2⁢(1-c*)α⁢(1-F)
+Since the forager enters the nest full, and since in the extreme case the forager performs trophallaxis with a new ant at each step, the average number of interactions she will make until her crop load reaches the threshold is $n^{*}=\frac{1-c^{*}}{⟨Δ⁢c⟩}$. In the extreme case, this quantity is equivalent to the average position in the nest at which the forager switches her bias, denoted $⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩$. Therefore, we obtain the following relation between the colony state and average position at which the forager switches her bias:
 
-The frequency of the forager’s unloading bouts, R, is defined as the reciprocal of the average unloading bout duration 1⟨T⟩. Therefore, the foraging frequency is:(4)R=α2⁢(1-c*)⋅(1-F)=μ⋅(1-F)
+$$
+⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩=\frac{1-c^{*}}{\alpha⁢(1-F)}
+$$
 
-where μ=α2⁢(1-c*) is a constant. Thus, it is clear that the foraging frequency R is proportional to the colony state of hunger (1-F). This is the linear relationship observed both experimentally and in the simulations of our agent-based models (Figure 4).
+The average duration of the foragers’ unloading bout, $⟨T⟩$ is the time it takes her to reach $⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩$ from the entrance (at $x=0$) and return. In the extreme case, walking inward every step until $⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩$ and outward every step from $⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩$, this simply equals $2⋅⟨x_{s⁢w⁢i⁢t⁢c⁢h}⟩$. We get:
 
-Clearly, in reality forager ants don’t move in such an extreme manner within the nest, but the general logic of the analytical development above applies to a softer movement rule as well, where the forager’s walk is more probabilistic. In short, the difference between an extreme walk and a probabilistic walk, means that the forager, going stochastically back and forth between the nest ants, may interact multiple times with the same ants before switching her bias. This distinction alters the average amount of food delivered at each step (Δ⁢c, Equation 1), as less food is given to a nest-ant with each subsequent encounter between her and the forager. Additionally, the number of interactions that it takes the forager to reach her threshold no longer translates directly to the position at which she switches her bias (xs⁢w⁢i⁢t⁢c⁢h, Equation 2). Nevertheless, the derivation in Appendix 1 shows that the average amount of food given to each nest-ant is still proportional to (1-F), and that since both the inward and outward biases are constant, the number of steps spent with each nest ant is, on average, also constant (neglecting boundary effects). Therefore, overall, the differences introduced by the probabilistic walk are expressed in the factor μ that multiplies the colony state of hunger (1-F) in equation 4. In the probabilistic movement case, μ is dependent on the fraction α, the threshold c*, and the probabilistic walking biases. For details, see Appendix 1.
+$$
+⟨T⟩=\frac{2⁢(1-c^{*})}{\alpha⁢(1-F)}
+$$
 
-## Further characteristics of unloading bouts in experiment and simulation
+The frequency of the forager’s unloading bouts, $R$, is defined as the reciprocal of the average unloading bout duration $\frac{1}{⟨T⟩}$. Therefore, the foraging frequency is:
+
+$$
+R=\frac{\alpha}{2⁢(1-c^{*})}⋅(1-F)=\mu⋅(1-F)
+$$
+
+where $\mu=\frac{\alpha}{2⁢(1-c^{*})}$ is a constant. Thus, it is clear that the foraging frequency $R$ is proportional to the colony state of hunger $(1-F)$. This is the linear relationship observed both experimentally and in the simulations of our agent-based models (Figure 4).
+
+Clearly, in reality forager ants don’t move in such an extreme manner within the nest, but the general logic of the analytical development above applies to a softer movement rule as well, where the forager’s walk is more probabilistic. In short, the difference between an extreme walk and a probabilistic walk, means that the forager, going stochastically back and forth between the nest ants, may interact multiple times with the same ants before switching her bias. This distinction alters the average amount of food delivered at each step ($Δ⁢c$, Equation 1), as less food is given to a nest-ant with each subsequent encounter between her and the forager. Additionally, the number of interactions that it takes the forager to reach her threshold no longer translates directly to the position at which she switches her bias ($x_{s⁢w⁢i⁢t⁢c⁢h}$, Equation 2). Nevertheless, the derivation in Appendix 1 shows that the average amount of food given to each nest-ant is still proportional to $(1-F)$, and that since both the inward and outward biases are constant, the number of steps spent with each nest ant is, on average, also constant (neglecting boundary effects). Therefore, overall, the differences introduced by the probabilistic walk are expressed in the factor μ that multiplies the colony state of hunger $(1-F)$ in equation 4. In the probabilistic movement case, μ is dependent on the fraction $\alpha$, the threshold $c^{*}$, and the probabilistic walking biases. For details, see Appendix 1.
+
+### Further characteristics of unloading bouts in experiment and simulation
 
 Figure 5 presents additional dynamics that appeared in both the experimental and simulated data. The states of the foragers’ recipients represent, on average, the states of all ants in the colony (Figure 5A). The forager unloads her food at a rate proportional to the empty colony state (Figure 5B). Furthermore, the forager’s unloading bouts in the nest become deeper with colony satiation (Figure 5C), and the amounts of food in the forager’s crop upon exiting the nest are highly variable at all colony states (Figure 5D). On average, they are relatively constant initially, and slightly rise at higher colony states.
 
@@ -134,41 +183,178 @@ In summary, the model we present here for foraging frequency regulation supports
 
 ## Materials and methods
 
-## Experimental setup
+### Experimental setup
 
 The experiments used to conduct this research are those used in Greenwald et al., 2018.
 
-## Data analysis
+### Data analysis
 
 Data was analysed in Python using the following packages: Numpy (Oliphant, 2006), Matplotlib (Hunter, 2007), openCV (Bradski, 2000) and Pandas (McKinney, 2010).
 
-## Agent-based models
+### Agent-based models
 
 The agent-based models are described according to the protocol laid out by Grimm et al., 2006; Grimm et al., 2020. Two models are presented, a two-dimensional model in continuous space and a 1-dimensional model in discrete space. Both models include a single forager which has two stochastic walking tendencies: the forager tends deeper into the nest when the amount of food in her crop is above a threshold value and tends toward the entrance once her crop level drops below the threshold. Models progress in the following way: the forager begins at the entrance with a full crop and walks through the nest, unloading food to each nest-ant she meets according to her trophallaxis rule. Once she has unloaded enough food, she switches walking tendency, and tends toward the entrance. Upon reaching the entrance, she refills and proceeds to re-enter the nest.
 
 The model is written in Python with a GUI written in Java. Scheduling in the 1D model was carried out through a modified version of the mesa scheduling module (Masad and Kazil, 2015).
 
-## Purpose and patterns
+#### Purpose and patterns
 
 The purpose of the model is to determine whether the three rules described in section 3.2 are sufficient to recapitulate the forager’s exit frequency relation with colony hunger. Other patterns of the foragers’ unloading bouts are used to determine the accuracy of the model, including depth, exiting crop state, unloading rate, and the state of their interaction partners.
 
-## State variables and scale
+#### State variables and scale
 
 The model is comprised of individual agents representing ants; ants can be grouped into two sub-populations, foragers and nest-ants. These two populations are representative of what is seen in ant colonies in the scope of food dissemination. The model is also treated as an individual object to allow for data collection and parameter setting. Model parameters and their values are specified in Table 2.
+
+**Table 2.**
+ Parameter values for different groups of agents in both models.Parameters given to all agents are described under the ’Ants’ sub-population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-population</th>
+      <th>Parameter</th>
+      <th>Model</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ants</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Crop state capacity</td>
+      <td>All</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Movement speed</td>
+      <td>2D</td>
+      <td>0.2 ant-lengths second-1</td>
+    </tr>
+    <tr>
+      <td>Nest-ants</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Initial crop state</td>
+      <td>All</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Position</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1D</td>
+      <td>45 ants, one on every cell</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2D</td>
+      <td>89 ants randomly placed</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Radius of interaction</td>
+      <td>2D</td>
+      <td>0.2 ant-lengths</td>
+    </tr>
+    <tr>
+      <td>Forager</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Initial crop state</td>
+      <td>All</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Threshold value</td>
+      <td>All</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Initial position</td>
+      <td>All</td>
+      <td>Entrance of nest</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Foraging time</td>
+      <td>All</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Interaction proportion</td>
+      <td>All</td>
+      <td>p∼Exp(10.15)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Biases in state A</td>
+      <td>1D</td>
+      <td>{0.32,0.22,0.46}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Biases in state B</td>
+      <td>1D</td>
+      <td>{0.53,0.31,0.16}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Possible angles in state A</td>
+      <td>2D</td>
+      <td>Appendix 1—figure 1, above</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Possible angles in state B</td>
+      <td>2D</td>
+      <td>Appendix 1—figure 1, below</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Boarder reflection noise</td>
+      <td>2D</td>
+      <td>[–0.3 radians, 0.3 radians]</td>
+    </tr>
+  </tbody>
+</table>
 
 In the 1D model, biases {a, b, c} are to be read as such; a is probability to step one cell outwards, b is probability to stay in the same cell, c is probability to step one cell inwards. In the 2D model, the forager moves 0.2 ant-lengths at every step (the average empirical velocity of foragers). After every interaction, she samples a new direction from a list of angles extracted empirically, given her crop load (Appendix 1—figure 1). Furthermore, nest-ants move 0.2 ant-lengths in a random direction at every step.
 
 In both models one forager was initialized and simulations were run until the colony was sufficiently satiated.
 
-## 1D model
+##### 1D model
 
 The nest length is 45 cells, plus 1 entrance cell. The entrance and deepest cell in the nest are reflecting boundaries, forcing the forager to step inwards/outwards, respectively, the step after it reaches said cell.
 
-## 2D model
+##### 2D model
 
 The nest is of size 12 by 12 ant-lengths, Where the bottom left corner is the point of entrance/exit. When the forager reaches a nest boundary her direction is reflected with noise of 0.3 radians.
 
-## Process overview and scheduling
+### Process overview and scheduling
 
 The process of the forager in both models is described by the flow diagram in Figure 6.
 
@@ -178,16 +364,16 @@ The process of the forager in both models is described by the flow diagram in Fi
 
 Time in the model is discrete. In the 1D model, each step in the simulation represents the time it takes for the forager to step one ant length. In the 2D model, each step represents one second.
 
-## Design concepts
+### Design concepts
 
-## Initialization and termination
+### Initialization and termination
 
 Every simulation was initialized with empty nest-ants and a fed forager. This mimics the data collected from wet-lab experiments, in which colonies were starved for 1–2 weeks prior and data collection only began after the first time a forager leaves the nest to find food. The forager is initialized in the entrance, and the nest ants are initialized in random positions (2D model) or in every cell (1D model).
 
 Simulations were terminated after all nest-ants were at least 95% full.
 
-## Input
+### Input
 
 No external input into the models was used.
 
-## Sub-models
+### Sub-models

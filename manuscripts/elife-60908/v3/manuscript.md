@@ -43,7 +43,7 @@ In previous work, we showed the existence of a soluble form of CL-12 in addition
 
 ## Results
 
-## C3b and properdin deposition on A. fumigatus incubated in normal human serum was C3-dependent
+### C3b and properdin deposition on A. fumigatus incubated in normal human serum was C3-dependent
 
 Compstatin is a potent peptide inhibitor of C3 activation, which has been further modulated to a more potent analog named Cp40 (Risitano et al., 2014). In order to study our hypothesis, Aspergillus fumigatus (A. fumigatus) was used as a model of infection. Normal human serum (NHS) was used as a complement source and C3b deposition and properdin binding were determined on A. fumigatus with or without the addition of Cp40. Cp40 completely inhibited C3b deposition at 1.5 µM final concentration (Figure 1A). Concomitant with this observation, properdin binding was completely abolished in the presence of the Cp40 (6 µM) (Figure 1B). A control peptide had no effects on C3b or properdin binding (Figure 1A–B).
 
@@ -51,35 +51,67 @@ Compstatin is a potent peptide inhibitor of C3 activation, which has been furthe
 
 **Figure 1.:** NHS (20%) was preincubated with compstatin analog Cp40 or its control peptide (A: 0 ~ 6 µM; B: 6 µM) prior to inducing complement activation on A. fumigatus through incubation in the presence of Ca2+. C3b deposition (A) or properdin binding (B) was analyzed and expressed as the geometric mean fluorescence intensity (GMFI) by flow cytometry. Data are expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
 
-## Soluble CL-12-induced properdin binding was not dependent on initial C3b deposition
+### Soluble CL-12-induced properdin binding was not dependent on initial C3b deposition
 
 First, A. fumigatus was incubated with purified CL-12, and binding of CL-12 was measured by flow cytometry (Figure 2A). Second, A. fumigatus was incubated with NHS, and the deposition of properdin was found to be markedly increased on the fungi opsonized with CL-12 than the non-opsonized fungi (Figure 2B). Third, to further validate our previous findings that soluble CL-12 triggers AP complement activation via properdin, C3 activation was inhibited by Cp40 and the effect of soluble CL-12 on properdin recruitment was evaluated. In the presence of Cp40, properdin binding from NHS alone was completely abolished, whereas properdin from NHS was still able to bind CL-12-pre-opsonized fungi, although to a lesser extent than without Cp40. (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig2-v3.jpg)
 
-**Figure 2.:** A.fumigatus in the presence of soluble CL-12 and compstatin analog Cp40.A. fumigatus were incubated with or without soluble CL-12 (sCL-12) (5 µg/ml) prior to addition of NHS (20%) under EGTA-Mg2+ buffer. In some experiments, NHS (20%) was preincubated with compstatin analog Cp40 (6 µM) prior to induce complement activation. CL-12 (A) or properdin (B, C) binding was analyzed by flow cytometry. Results are representative of at least six independent experiments.
+**Figure 2.:** A. fumigatus were incubated with or without soluble CL-12 (sCL-12) (5 µg/ml) prior to addition of NHS (20%) under EGTA-Mg2+ buffer. In some experiments, NHS (20%) was preincubated with compstatin analog Cp40 (6 µM) prior to induce complement activation. CL-12 (A) or properdin (B, C) binding was analyzed by flow cytometry. Results are representative of at least six independent experiments.
 
-## Soluble CL-12 mediated C3b-independent binding of properdin
+### Soluble CL-12 mediated C3b-independent binding of properdin
 
 To further investigate the CL-12-dependent properdin binding, properdin-depleted serum (fP-Dpl) was reconstituted with serum properdin in the absence and presence of Cp40. In the absence of Cp40, no binding of properdin was observed in fP-Dpl, whereas after reconstitution the binding of properdin was comparable to NHS as described above (Figure 3A). Pre-opsonization with CL-12 markedly enhanced the properdin binding in reconstituted serum (Figure 3A). C3 inhibition by Cp40 again virtually abolished the properdin binding to the fungi in the absence of CL-12, whereas it was restored solely upon pre-opsonization with soluble CL-12 (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig3-v3.jpg)
 
-**Figure 3.:** A.fumigatus.A. fumigatus were incubated with or without sCL-12 (5 µg/ml) prior to addition of properdin-depleted serum (fP-Dpl) (10%) reconstituted with serum properdin (10 µg/ml) (A). In some experiments, the serum was preincubated with or without compstatin analog Cp40 (6 µM) under EGTA-Mg2+ buffer (B). Properdin binding was analyzed by flow cytometry. The GMFI was used to assess protein binding. B is expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
+**Figure 3.:** A. fumigatus were incubated with or without sCL-12 (5 µg/ml) prior to addition of properdin-depleted serum (fP-Dpl) (10%) reconstituted with serum properdin (10 µg/ml) (A). In some experiments, the serum was preincubated with or without compstatin analog Cp40 (6 µM) under EGTA-Mg2+ buffer (B). Properdin binding was analyzed by flow cytometry. The GMFI was used to assess protein binding. B is expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
 
-## The binding of properdin to CL-12-opsonized fungi was specifically C3-independent
+### The binding of properdin to CL-12-opsonized fungi was specifically C3-independent
 
 To further substantiate the exclusive effect of soluble CL-12 on C3b-independent binding of properdin, C3- depleted serum (C3-Dpl) was used as complement source to exclude the influence of C3b deposition and properdin binding was determined with a series of serial dilution of the serum (~10–100%). Reconstitution with exogenous C3 under physiological concentration was able to restore AP activation as validated by determination of C3b deposition using the EGTA-Mg2+ containing buffer (Figure 4A). Again, when A. fumigatus was opsonized with soluble CL-12, properdin binding was markedly increased in a serum concentration-dependent manner, (Figure 4B), thus reflecting the increase in properdin concentration with constant depleted C3. This was also confirmed through application of 100% NHS (Figure 4C–E), where C3 activation (Figure 4C) and properdin binding (Figure 4E) were completely removed by addition of the Cp40.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig4-v3.jpg)
+
+**Figure 4.:** A. fumigatus was incubated with C3-depleted serum (C3-Dpl) (10%) reconstituted with exogeneous C3 (130 µg/ml) (A). In some experiments, A. fumigatus was incubated with or without sCL-12 (5 µg/ml) prior to addition of C3-Dpl (11.1 ~ 100%) (B). Inhibitory effect of compstatin analog Cp40 (20 µM) was determined on NHS (100%)-induced complement activation as described above. C3b deposition (A, C) or properdin binding (B, D, E) was analyzed and expressed as the GMFI or % positive events with respect to the C3-Dpl alone by flow cytometry. Results are representative of at least six independent experiments. *p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Soluble CL-12 (sCL-12) (A) or properdin (B) binding was analyzed on A. niger by flow cytometry as described for A. fumigatus. Results are representative of at least six independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Properdin binding was analyzed with sCL-12 and properdin-depleted serum (fP-Dpl) restored with serum properdin on A. niger as described for A. fumigatus. The GMFI was used to assess protein binding. Results are expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Properdin binding was analyzed with sCL-12 and C3-depleted serum (C3-Dpl) on A. niger as described for A. fumigatus. % positive events with respect to the C3-Dpl alone was used to assess protein binding. Results are representative of at least six independent experiments.
+
 To further confirm the prerequisite of soluble CL-12 for the C3b-independent binding of properdin leading to complement activation observed with A. fumigatus, we turned to Aspergillus niger (A. niger) as an another model of infection based on our recent findings (Zhang et al., 2019). In agreement with the results for A. fumigatus, soluble CL-12-mediated properdin binding was detected in NHS in the presence of Cp40 (Figure 4—figure supplement 1) or fP-Dpl plus exogeneous properdin (Figure 4—figure supplement 2) and was repeated with the use of C3-Dpl serum (Figure 4—figure supplement 3). By contrast, when Candida albicans (C. albicans) was applied, no apparent binding of soluble CL-12 was noted (Zhang et al., 2019) and complement was only activated in mannose-binding lectin (MBL) (or collectin-11)-dependent manner (Ma et al., 2013a).
 
-## Soluble CL-12 solely recruits properdin with high oligomeric structure
+### Soluble CL-12 solely recruits properdin with high oligomeric structure
 
 To identify which structural organization is required for the interaction of soluble CL-12 with the oligomeric forms of properdin, recombinant wild type properdin was produced in HEK293F cells and separated by size-exclusion chromatography (SEC) in two fractions: (i) containing dimers and trimers (fP DT) and (ii) containing tetramers (fP T) (Pedersen et al., 2017). Furthermore, a monomer-like properdin (fP M) was manipulated and obtained through co-expression of separate N-terminal (TB-TSR3) and C-terminal (TSR4-TSR6) constructs (Figure 5A; Pedersen et al., 2019a). The purity and oligomerization status of these properdin preparations were confirmed by SDS-PAGE (Figure 5B, inset) and by SEC analysis (Figure 5B). In the SDS-PAGE analysis, both fP T and fP DT migrated with gel mobility corresponding to ~53 kDa in parallel with purified serum properdin, whereas the monomer-like properdin comprising the two fragments TB-TSR3 and TSR4-TSR6 appeared as two bands corresponding to ~33 kDa and ~31 kDa, respectively (Figure 5B, inset). Compared with purified serum properdin organized mainly as dimer, trimer and tetramer, SEC analysis revealed that the used fP DT contained approx. 50% dimers and 50% trimers eluting in two separate peaks, the fP T was primarily tetrameric with a low content of trimer, while the fP M eluted in a single peak in line with our previous observations (Figure 5B; Pedersen et al., 2017; Pedersen et al., 2019a). All three properdin variants recognized C3b deposited on the fungus and induced C3 amplification via stabilization of the C3 convertase (Figure 5C), consistent with our previous findings (Pedersen et al., 2017; Pedersen et al., 2019a). Consistently, pre-opsonization with CL-12 enhanced the binding of fP T dose-dependently in the presence of Cp40 (Figure 5D). In contrast, no clear binding was detected when adding the fP DT or the fP M instead (Figure 5D). These results obtained with A. fumigatus were confirmed by parallel experiments with A. niger (Figure 5E and Figure 5—figure supplement 1).
 
-## Soluble CL-12-induced properdin binding directs in situ assembly of the AP C3 convertase
+![Figure 5.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig5-v3.jpg)
+
+**Figure 5.:** (A) Illustrative diagram of monomer-like properdin complex. (B) SEC analysis of properdin. Inset: SDS-PAGE analysis of properdin under reducing condition. (C) A. fumigatus were incubated with fP-Dpl (10%) restored with purified serum properdin (10 µg/ml) or properdin variants (fP T: properdin tetramer; fP DT: properdin dimer/trimer; fP M: monomer-like properdin, 10 µg/ml). C3b deposition were analyzed and expressed as % Positive events with respect to the fP-Dpl alone with mean ± S.E.M from three independent experiments. (D) sCL-12 (5 µg/ml) was preincubated with the fungus prior to addition of the serum treated with Cp40 (6 µM) plus the properdin variants. Binding of properdin variants was analyzed in sCL-12-positive region (R1 in FSC vs SSC of the fungus) and expressed as % properdin/CL-12-double positive events with mean ± S.E.M from three independent experiments. (E) Binding of properdin tetramer (20 µg/ml) was determined on A. niger as above. Results are representative of at least six independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Properdin variants binding was analyzed with sCL-12 and fP-Dpl restored with properdin variants (fP T: properdin tetramer; fP DT: properdin dimer/trimer; fP M: monomer-like properdin, 10 µg/ml) as described for A. fumigatus. Results are representative of at least six independent experiments.
+
+### Soluble CL-12-induced properdin binding directs in situ assembly of the AP C3 convertase
 
 To further validate whether surface-bound properdin directs C3bBb assembly and whether prior opsonization of CL-12 indeed amplifies in situ assembly of C3bBb via properdin recruitment, Bb deposition was assessed on A. fumigatus. In contrast to properdin-deficient serum, reconstitution of exogeneous properdin sustained C3b-dependent Bb association, since no Bb deposition was observed when Cp40 was present (Figure 6). In accordance with the previous properdin binding data, pre-opsonization with CL-12 dramatically increased the Bb deposition in the reconstituted serum, while C3 inhibition by Cp40 again abolished the Bb deposition (Figure 6). Consistent results were also obtained on A. niger (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig6-v3.jpg)
+
+**Figure 6.:** A. fumigatus were incubated with fP-Dpl (10%) in the presence or absence of sCL-12 (5 µg/ml) as described above. In some experiments, the serum was restored with serum properdin (10 µg/ml) in the presence of Cp40 (6 µM). Bb deposition was analyzed by flow cytometry. The GMFI was used to assess protein binding and expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60908/elife-60908-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Bb deposition on A. niger was determined with sCL-12 and fP-Dpl restored with serum properdin as described for A. fumigatus. The GMFI was used to assess protein binding and expressed as mean ± S.E.M from three independent experiments. Results are representative of at least six independent experiments. *p<0.01.
 
 ## Discussion
 
@@ -103,40 +135,40 @@ In conclusion, we provide evidence that it is necessary to revise the notion abo
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 HEK293F (Source: Gibco, Identifier: R79007) was involved in our work. Each lot of Gibco 293 F cells was tested for cell growth and viability post-recovery from cryopreservation. The Master Seed Bank has been tested for contamination of bacteria, yeast, mycoplasma and virus and has been characterized by isozyme and karyotype analysis.
 
-## Production of recombinant properdin
+### Production of recombinant properdin
 
 DNA encoding human properdin was synthesized (GenScript) with the endogenous signaling peptide and a C-terminal 6xHis-tag and cloned into the pCEP4 mammalian expression vector using HindIII and BamHI restriction sites. Oligomeric properdin (fP T or fP DT) was expressed by transient transfection (Pedersen et al., 2019b) and monomeric properdin (monomer-like properdin complex) was generated by co-transfection of properdin head fragment (TB-TSR3) and tail fragment (TSR4-TSR6) as described previously (Pedersen et al., 2019a). Oligomeric and monomeric properdin were expressed in HEK293F cells as described previously (Pedersen et al., 2019b). fP T and fP DT were purified by gel filtration using a 24 ml Superdex 200 increase column (GE Healthcare) equilibrated in equilibration buffer (20 mM HEPES/150 mM NaCl, pH 7.5).
 
-## Compstatin analog Cp40 and its control peptide
+### Compstatin analog Cp40 and its control peptide
 
 Compstatin analog Cp40 (dTyr-Ile-[Cys-Val-Trp(Me)-Gln-Asp-Trp-Sar-His-Arg-Cys]-mIle-NH2, 1.7 kDa) was produced by our group at the University of Pennsylvania and applied to specifically block C3 activation (Risitano et al., 2014). Negative control peptide to the Cp40 (Ile-Ala-Val-Val-Gln-Asp-Trp-Gly-His-His-Arg-Ala-Thr-NH2, 1.5 kDa) was obtained from Tocris Bioscience.
 
-## Efficacy of compstatin analog Cp40 on C3b deposition
+### Efficacy of compstatin analog Cp40 on C3b deposition
 
 Normal human serum (NHS) (20%) (from healthy volunteer blood donors with informed consent) was preincubated with the compstatin analog Cp40 (0–6 µM) or the control peptide (0–6 µM) for 10 min prior to incubation with Aspergillus fumigatus (A. fumigatus). Complement C3b deposition was then determined in the presence of TBS/Ca2+ as previously described (Ma et al., 2015), and analysed by flow cytometry. Data were evaluated using FCS express version 5 (De Novo software).
 
-## Preparation of fungal pathogens
+### Preparation of fungal pathogens
 
 Isolates of A. fumigatus strain was obtained from fatal clinical specimens (No. 6871) of invasive pulmonary aspergillosis (IPA) (Naaraayan et al., 2015) (a kind gift from Professor Luigina Romani, Microbiology Section, Department of Experimental Medicine and Biochemical Science, University of Perugia). Isolates of A. niger strain (N32) was obtained from Professor Reinhard Würzner (Innsbruck Medical University, Innsbruck). Resting conidia were prepared as previously described (Ma et al., 2015; Zhang et al., 2019). In brief, the Aspergillus strains were grown on sabouraud dextrose agar supplemented with chloramphenicol by agar-streak for 4 days at 28°C. Abundant conidia were obtained under these conditions. The conidia were harvested by washing the slant culture with PBS supplemented with 0.025% Tween 20 (PBS-T) and gently scraping the conidia from the mycelium with sterile cotton-tipped applicators. The conidia were then allowed to settle by gravity, followed by filtration through sterile 40 µM cell strainer to remove hyphal fragments and cell debris. After extensive washing with PBS-T, the conidia were counted and diluted to the desired concentrations. The conidia were heat-inactivated at 121°C for 15 min prior to use. Clinically isolated C. albicans H29929 was obtained and prepared as described previously (Ma et al., 2011).
 
-## Binding of soluble CL-12 to A. fumigatus, A. niger and C. albicans
+### Binding of soluble CL-12 to A. fumigatus, A. niger and C. albicans
 
 Binding of soluble CL-12 to A. fumigatus was performed as previously described (Ma et al., 2009; Ma et al., 2013b). Aspergillus strains were incubated with recombinant soluble CL-12 (5 µg/ml, R and D system). Bound proteins were detected with CL-12 pAb one and Alexa Fluor 488-conjugated donkey anti-goat IgG (Invitrogen), and finally analyzed by flow cytometry. Data were evaluated using FCS express version 5 (De Novo software). In some experiments, the binding was also determined on A. niger or C. albicans as described previously (Zhang et al., 2019; Ma et al., 2011).
 
-## Binding of properdin to A. fumigatus and A. niger
+### Binding of properdin to A. fumigatus and A. niger
 
 A. fumigatus were incubated with NHS (20%) treated with or without compstatin analog Cp40 (6 µM) or control peptide (6 µM) under TBS/EGTA-Mg2+ (10 mM Tris/150 mM NaCl/10 mM EGTA/5 mM Mg2+, pH7.4) as described above. When incubation with 100% NHS instead, the Cp40 or control peptide was treated with 20 µM. After washing, properdin binding was detected by sheep anti-human properdin pAb (R and D system) and Alexa fluor 488-conjugated donkey anti-sheep IgG (Invitrogen). Bound proteins were analyzed by flow cytometry as described above. In some experiments, A. fumigatus were preincubated with soluble CL-12 (5 µg/ml) prior to addition of NHS (20% or 100%), properdin-depleted human serum (fP-Dpl) (10%, CompTech) with or without addition of serum properdin (10 µg/ml, CompTech) or C3-depleted human serum (C3-Dpl) (0 ~ 100%, CompTech), and assessed as described above. The binding specificity of soluble CL-12 towards properdin oligomers was tested with fP T, fP DT or fP M instead. Alternatively, the binding was also determined on A. niger as described above.
 
 Serum properdin (CompTech) was thawed once from initial preparation, and preparations that formed aggregates during storage were excluded from testing through SEC analysis prior to use. Serum properdin was organized mainly as physiological oligomers (dimers, trimers and tetramers) under the conditions above (Harboe et al., 2017; Pedersen et al., 2017). Purity and oligomeric status of fP T, fP DT and fP M were determined by SDS-PAGE and SEC analysis prior to use as described above. In some experiments, C3-Dpl (10%) was spiked with exogenous C3 (130 µg/ml, CompTech) under physiological concentration, and assessed complement activity by measurement of C3b deposition as described above. The level of properdin was quantified to be ~14.6 µg/ml in the C3-Dpl (Harboe et al., 2017).
 
-## Deposition of Bb on A. fumigatus and A. niger
+### Deposition of Bb on A. fumigatus and A. niger
 
 A. fumigatus was incubated with properdin-restored fP-Dpl in the presence or absence of soluble CL-12 (5 µg/ml) as described above. Bb deposition was detected by mouse anti-human Bb mAb (Quidel) and FITC-conjugated goat anti-mouse IgG (Dako) and analyzed by flow cytometry as described above. Alternatively, the binding was also determined on A. niger as described above.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed by GraphPad Prism version 8.0 (GraphPad Software) for statistics. Significant differences were analyzed by one-way ANOVA to compare between control and treated samples. P values < 0.01 were considered statistically significant.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.37231.001 The core CoREST complex (LHC) contains histone deacetylase HDAC1 and histone demethylase LSD1 held together by the scaffold protein CoREST. Here, we analyze the purified LHC with modified peptide and reconstituted semisynthetic mononucleosome substrates. LHC demethylase activity toward methyl-Lys4 in histone H3 is strongly inhibited by H3 Lys14 acetylation, and this appears to be an intrinsic property of the LSD1 subunit. Moreover, the deacetylase selectivity of LHC unexpectedly shows a marked preference for H3 acetyl-Lys9 versus acetyl-Lys14 in nucleosome substrates but this selectivity is lost with isolated acetyl-Lys H3 protein. This diminished activity of LHC to Lys-14 deacetylation in nucleosomes is not merely due to steric accessibility based on the pattern of sensitivity of the LHC enzymatic complex to hydroxamic acid-mediated inhibition. Overall, these studies have revealed how a single Lys modification can confer a composite of resistance in chromatin to a key epigenetic enzyme complex involved in gene silencing.
+The core CoREST complex (LHC) contains histone deacetylase HDAC1 and histone demethylase LSD1 held together by the scaffold protein CoREST. Here, we analyze the purified LHC with modified peptide and reconstituted semisynthetic mononucleosome substrates. LHC demethylase activity toward methyl-Lys4 in histone H3 is strongly inhibited by H3 Lys14 acetylation, and this appears to be an intrinsic property of the LSD1 subunit. Moreover, the deacetylase selectivity of LHC unexpectedly shows a marked preference for H3 acetyl-Lys9 versus acetyl-Lys14 in nucleosome substrates but this selectivity is lost with isolated acetyl-Lys H3 protein. This diminished activity of LHC to Lys-14 deacetylation in nucleosomes is not merely due to steric accessibility based on the pattern of sensitivity of the LHC enzymatic complex to hydroxamic acid-mediated inhibition. Overall, these studies have revealed how a single Lys modification can confer a composite of resistance in chromatin to a key epigenetic enzyme complex involved in gene silencing.
 
 ## Introduction
 
@@ -38,9 +38,25 @@ Here, we use purified LHC along with various peptide and modified nucleosomal su
 
 ## Results
 
-## Characterization of the LHC demethylase activity with peptide substrates
+### Characterization of the LHC demethylase activity with peptide substrates
 
 We have employed the recently described method to obtain the purified core CoREST ternary protein complex (LHC) which contains HDAC1, LSD1, and CoREST1 as a heterotrimer in 1:1:1 stoichiometry (Figure 2A) (Kalin et al., 2018). This complex is stable for up to 2 weeks when stored at 4˚C at a concentration of about 5 μM and freeze-thaws were avoided. LHC demethylase activity was determined with histone H3 peptide (aa1-21) substrate possessing K4me2 using a previously described coupled assay that measures hydrogen peroxide product formation (Hayward and Cole, 2016; Marabelli et al., 2016). Interestingly, using the unacetylated H3K4me2 tail peptide, we observed a bi-phasic demethylase activity with LHC that was not observed with purified GST-LSD1 as the catalyst (Figure 2B). The first phase is typically about 3–5 min in duration and after transition to the second phase, product formation is quite linear for at least 15 min (Figure 2B). Adjusting the concentration of the coupling enzyme or peroxide detection reagents did not eliminate the bi-phasic behavior (data not shown), suggesting it is an intrinsic property of the LHC-catalyzed reaction under these buffer conditions. By varying the peptide substrate concentration, we determined that the initial phase of the LHC-catalyzed reaction had lower apparent Km and kcat values compared to the second linear phase and that the Km value of the second phase was similar to that of GST-LSD1 (Figure 2C and Figure 2—figure supplement 1). Varying ionic strength, glycerol content, or inositol hexaphosphate (InsP6), an HDAC complex stabilizer (Watson et al., 2016), was performed to see if the kinetic profile could be simplified by adjusting the reaction conditions. InsP6 somewhat prolonged the initial phase (Figure 2B) but altering the buffer conditions did not eliminate the bi-phasic nature of the reaction. We considered the possibility that the LHC complex might be falling apart over the course of our assays, but size exclusion chromatography of the reaction mixture after 20 min showed that the complex was still intact (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig2-v2.jpg)
+
+**Figure 2.:** (A) Coomassie-stained SDS-PAGE of the purified ternary CoREST complex LHC. (B) Demethylation of 100 μM H3K4me2 H3 tail peptide (aa1-21) peptide by LHC (130 nM) exhibits a bi-phasic activity. In the presence of 100 μM InsP6, the first phase becomes longer. In contrast, the demethylation by GST-LSD1 (88 nM) exhibits a linear activity that best matches the second phase of LHC as shown in panel C. The y-axis is shown as [Product]/[Enzyme]. (C) Summary of the steady-state kinetic parameters of peptide demethylation by LHC and GST-LSD1. (p<0.05 for Km and p<0.005 for kcat of the first phase vs. the second phase); (n = 3 for all measurements); kinetic parameters shown are ± S.E.M. (D) DNA accelerates the peptide demethylation by LHC (50 nM) in a dose dependent manner. (E) BHC80 modulates the peptide demethylation by LHC (100 nM), altering the bi-phasic activity (>100 nM).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (n = 3 for all measurements).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Size exclusion chromatography analysis of the demethylation mixture after 20 min reaction at 25°C with LHC (200 nM) and H3 peptide substrate (60 μM). (B) SDS-PAGE analysis of the fractions from size exclusion chromatography. It demonstrated that the complex was still intact after the 20 min demethylation reaction.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) dsDNA (146 bp, 50 ng/μL) addition did not alter the rate of the demethylation of H3K4me2 21aa peptide (60 μM) by GST-LSD1 (300 nM) (left). dsDNA (146 bp or 4.9 kb, 50 ng/μL) effects on H3K4me2 21aa peptide demethylation by LHC (50 nM) (middle). 60 bp dsDNA (100 ng/μL) did not alter the rate of the demethylation (right). (B) The dose-response relationship of the rate of demethylation of H3K4me2 21aa peptide (60 µM) by LHC (50 nM) vs DNA concentration. The estimated EC50 is shown. (C) Effects of BHC80 (aa331-430) on LHC (100 nM) catalyzed demethylation of H3K4me2 21aa peptide (60 µM); (n = 2 for all measurements).
 
 It has been reported that LSD1/CoREST can bind to DNA in a DNA sequence independent fashion and that mononucleosomes containing extended DNA sequences are more efficiently demethylated by the LSD1/CoREST heterodimer (Kim et al., 2015; Pilotto et al., 2015; Yang et al., 2006). Interestingly, we found that the addition of 146 bp of dsDNA (the 601 Widom sequence [Lowary and Widom, 1998]) sharply accelerated LHC-mediated demethylation of the H3K4me2 tail peptide in a concentration- dependent way and also abolished the lag phase seen without DNA. (Figure 2D). The dose-response curve showed an EC50 of 63 ± 15 ng/μL and a maximum activation of demethylation rate of 36-fold (Figure 2—figure supplement 3). We also tested a 4.9 kb circular DNA plasmid and a 60 bp linear dsDNA fragment. The plasmid DNA exhibited a similar level of stimulation of LHC catalyzed demethylation but the 60 bp dsDNA fragment was inert in these assay conditions (Figure 2—figure supplement 3). These results suggest that a large piece of DNA appears necessary for allosteric activation of LHC-mediated demethylation of H3K4me2 tail peptide, perhaps in part through a templating role.
 
@@ -50,19 +66,130 @@ The influences of InsP6, DNA, and BHC80 on LHC are consistent with the idea that
 
 LHC demethylation of histone H3K4me2 peptides that contained additional K9ac, K14ac or K18ac showed only minor effects on the demethylation rate, the largest of which was a 60% reduction with H3K4me2K14ac substrate (Figure 3A). Since the HDAC1 in LHC was in principle capable of deacetylating these substrates contemporaneously with demethylation, we examined the demethylation in the presence of 10 μM SAHA (Vorinostat), a broad spectrum HDAC inhibitor (Grant et al., 2007; Richon et al., 1998). The demethylase rates of the K9ac and K18ac containing peptide substrates were moderately reduced while the rate of the K14ac substrate was more sharply inhibited (Figure 3A) with 100 μM peptide substrate. These results indicate that deacetylation most likely precedes demethylation, consistent with the more rapid rate of deacetylase activity reported previously (Kalin et al., 2018). Steady-state kinetic analysis in the presence of SAHA revealed that the Km and kcat of LHC demethylase action on the H3K4me2K14ac substrate were dramatically decreased (~20 fold) relative to the non-acetylated substrate. In comparison, H3K4me2K9ac showed an intermediate effect with ~3 fold reductions in kcat and Km and H3K4me2K18ac was closely matched with the non-acetylated substrate in these LHC demethylase reactions (Figure 3B and Figure 3—figure supplement 1). Interestingly, the kcat/Km values were closely matched among the various substrates suggesting that the reduced catalytic turnover appears to be associated with a stabilized enzyme-substrate ground state complex for H3K4me2K14ac. Prior biochemical studies with purified LSD1 have shown that substrate H3 tail acetylation is disruptive to catalysis (Forneris et al., 2007; 2006). We have specifically investigated Lys9, Lys14, and Lys18 with GST-LSD1 here and found that Lys14 acetylation sharply inhibits H3K4me2 demethylation (Figure 3—figure supplement 1). These results suggest that LHC preserves an intrinsic property of LSD1 with respect to the H3K14ac inhibitory effects.
 
-## Generating nucleosomes containing semi-synthetic site-specifically modified histone H3s
+![Figure 3.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig3-v2.jpg)
+
+**Figure 3.:** (A) Comparison of LHC-catalyzed demethylation of 100 μM peptide substrate with H3K4me2 (Ctrl), H3K4me2K9ac (K9ac), H3K4me2K14ac (K14ac), and H3K4me2K18ac (K18ac) by 100 nM LHC. The four substrates were also analyzed in the presence of 10 μM SAHA. (B) Summary of the steady-state kinetic parameters based on the initial phase (0–2 min) of the reactions in the presence of SAHA. (p<0.005 for Km and kcat of H3K4me2 peptide vs. H3K4me2K14ac peptide substrates); (n = 3 for all measurements) error bars represent S.E.M.; kinetic parameters are shown ± S.E.M.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of GST-LSD1-catalyzed demethylation of 150 μM peptide substrate with H3K4me2 (Ctrl), H3K4me2K9ac (K9ac), H3K4me2K14ac (K14ac), and H3K4me2K18ac (K18ac) by 110 nM GST-LSD1. (n = 2 for the measurements) (B) Non-linear curve fitting to the Michaelis-Menten equation was used to calculate the observed Km and kcat values of the first phase in the presence of 10 μM SAHA; (n = 3 for the measurements).
+
+### Generating nucleosomes containing semi-synthetic site-specifically modified histone H3s
 
 To further understand the enzymatic properties of LHC, we turned to site-specifically modified nucleosome substrates. To obtain the desired modified nucleosomes, we adapted F40 sortase, an engineered transpeptidase (Piotukh et al., 2011; Ringel et al., 2015), in combination with depsipeptide H3 tail peptide substrates to generate full length semisynthetic histone H3, F40 sortase has been used previously to generate semisynthetic H3 but the method suffers from poor ligation yield that is presumably related to the transpeptidation step which is thermodynamically balanced between starting material and product. Ester peptide substrates have the potential to overcome this limitation (Williamson et al., 2012). In our hands, the use of an ester linkage in the synthetic N-tail significantly improved the conversion of H3 from less than 40 to ~90% (Figure 4A and B). The more effective ligation facilitated purification of the full-length H3 away from the unligated H3 (Figure 4—figure supplement 1, overall isolated yield ~40% of purified semisynthetic H3) and the structures of the traceless semisynthetic histone H3s were confirmed by mass spectrometry (Figure 4C) and western blots (Figure 4—figure supplement 1). The semisynthetic H3s were then assembled along with the other core recombinant Xenopus histones H2A, H2B, and H4 to furnish histone octamers which in turn were used in mononucleosome reconstitution with 146 bp 601 DNA (Figure 4A and Figure 4—figure supplement 1).
 
-## Characterization of the enzymatic activity of the CoREST complex using nucleosome substrates
+![Figure 4.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scheme for the semisynthesis of histone H3 forms and their incorporation into nucleosomes. The ester bond between Thr32 and X33 enhances ligation conversion. (B) Coomassie-stained SDS-PAGE of the sortase mediated ligation and the purified histone H3 product containing H3K4me2. (C) MALDI mass spectrum of the semisynthetic H3K4me2 modified histone H3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coomassie-stained SPS-PAGE of a representative F40 sortase-mediated ligation and fractions obtained after cation exchange chromatography. After 15 hr reaction time, the crude mixture was loaded on to an SP column and eluted using a gradient of increasing NaCl from 0.1 to 0.5 M in the elution buffer. The purified fractions containing the ligated histone H3s were collected. (B) Coomassie-stained SDS-PAGE of representative semisynthetic histone H3 products. Recombinant purified unmodified H3 is shown for comparison. (C) Western blot of representative semi-synthetic histone H3s that are recognized by the histone modification-specific antibodies. (D) Coomassie-stained SDS-PAGE of representative nucleosomes. (E) Ethidium bromide stained Novex TBE gel of representative nucleosomes with 146 bp DNA.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The star (*) peak indicates the impurity identified as the unligated histone H3 (aa33-135). The impurity is less than 5% based on Coomassie-stained SDS-PAGE analysis of the product samples.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig4-figsupp4-v2.jpg)
+
+### Characterization of the enzymatic activity of the CoREST complex using nucleosome substrates
 
 We investigated the ability of LHC to demethylate H3K4me2 modified nucleosomes by monitoring H3K4me2 disappearance using western blot. However, we were unable to detect nucleosome demethylation even at the highest concentration of LHC employed (400 nM) with 100 nM nucleosome substrate over 3 hr. Given prior studies that DNA extension in nucleosomes can stimulate LSD1 activity with the LSD1/CoREST heterodimer (Kim et al., 2015), we generated H3K4me2 mononucleosomes containing 185 bp 601 DNA with 20 bp extensions on either end (20 + 145 + 20). With this nucleosome with longer DNA, we were able to observe LHC catalyzed demethylation, albeit at a slow rate (Figure 5A and Figure 5—figure supplement 1). To confirm the enzymatic dependence of this demethylation, we showed that the dual LSD1/HDAC1 inhibitor corin (Kalin et al., 2018) could block this demethylation activity. (Figure 5B and Figure 5—figure supplement 1). We estimate that the rate of this reaction is about 55-fold reduced relative to the corresponding tail peptide substrate. This low rate makes it difficult to perform in depth, quantitatively reliable enzymatic characterization.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig5-v2.jpg)
+
+**Figure 5.:** (A) Demethylation of 100 nM H3K4me2 modified nucleosomes with either 146 or 185 bp nucleosomal 601 DNA by 400 nM LHC. (B) Corin inhibits the demethylation of the 185 bp H3K4me2 modified nucleosome substrate. These assays were performed three times (n = 3) in A and twice (n = 2) in B on separate occasions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The H3K4me2 nucleosome with 185 bp dsDNA was slowly demethylated by the CoREST complex while nucleosome demethylation with with 146 bp dsDNA was below the level of detection. (B) The LSD1 and HDAC1 dual inhibitor Corin (20 μM) inhibited the demethylation of the 185 bp nucleosome substrate; (n = 3 for A and n = 2 for B); error bars represent S.E.M.
+
 We explored LHC's deacetylase activity with individually modified H3K9ac, H3K14ac, and H3K18ac 146 bp mononucleosome substrates (which also contained H3K4me2), monitoring deacetylase activity with site-specific anti-Kac Abs. These experiments revealed efficient deacetylation of 100 nM H3K9ac nucleosomes with 20 nM LHC within 20 min with comparatively slower rates measured with H3K18ac followed by H3K14ac (Figure 6A and 7). Selectivity was preserved with the corresponding triacetylated nucleosomes with K9ac > K18ac > K14 ac (Figure 6B and Figure 6—figure supplement 2). There was a ~7 fold rate differential between H3K9ac and K14ac. Interestingly, when purified H3 proteins were investigated as LHC substrates, they showed essentially identical rates for hydrolysis at the different positions (Figure 6C and Figure 6—figure supplement 2). As observed with LHC catalyzed demethylation, the LHC deacetylation rates were much higher for the isolated H3 protein substrates compared with the nucleosome substrates (Table 1).
 
-## Analysis of hydroxamic acid-Lys analogs with LHC
+![Figure 6.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig6-v2.jpg)
+
+**Figure 6.:** (A) The deacetylation of 100 nM monoacetylated nucleosomes by 20 nM LHC. The quantified bands of Kac are measured in the plot below. (B) Deacetylation of 200 nM triacetylated H3K9acK14acK18ac nucleosomes by 40 nM LHC. (C) The deacetylation of 1 μM monoacetylated semisynthetic histone H3s possessing either K9ac or K14ac by 1 nM LHC. These assays were performed at three times (n = 3) in A and B and twice (n = 2) in C on separate occasions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) His-FLAG-HDAC1 (50 nM) showed no detectable deacetylation of H3K9ac nucleosome substrate (100 nM). (B) His-FLAG-HDAC1 (5 nM) showed robust deacetylation of both H3K9ac and H3K14ac histone H3 substrates (1 μM). (C) Deacetylation of the H3K9K14K18 triacetylated histone H3 (1 μM) by 1 nM LHC. (D) Deacetylation of 100 nM H3K9ac nucleosomes (lacking H3K4me2 modification) by 20 nM LHC. Each of these panels shows western blots with the relevant site-specific and total H3 Abs. (n = 3 for all measurements except n = 2 for A and B).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Deacetylation of 1 μM Kac histone H3 by 1 nM LHC. (B) Deacetylation of 100 nM H3K9K14K18 triacetylated nucleosomes by 40 nM LHC. (C) Deacetylation of 1 μM H3K9K14K18 triacetylated histone H3 by 1 nM LHC. (D) Deacetylation of 100 nM H3K9ac nucleosomes without H3K4me2 by 20 nM LHC. V/[E]=0.14 ± 0.0045 min−1. (E) The deacetylation of 1 μM Kac histone H3 by 5 nM His-FLAG-HDAC1; (n = 3 for all measurements except n = 2 for A and C); Error bars represent S.E.M.
+
+**Table 1.**
+ Summary of the deacetylation turnover (V/[E]) from data in Figure 6 and Figure 6—figure supplement 1 (p<0.001 for V/[E] of K9ac nucleosome vs. K14ac nucleosome substrates in both the monoacetylated and triacetylated assays); (n = 3 for all measurements except n = 2 for LHC on H3 and HDAC1 on nucleosomes; kinetic values shown are ± S.E.M.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Substrate</th>
+      <th colspan="3">V/[E] (min−1)</th>
+    </tr>
+    <tr>
+      <th>K9ac</th>
+      <th>K14ac</th>
+      <th>K18ac</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">LHC</td>
+      <td>Kac Nucleosome</td>
+      <td>0.10 ± 0.0084</td>
+      <td>0.014 ± 0.0073</td>
+      <td>0.048 ± 0.011</td>
+    </tr>
+    <tr>
+      <td>Kac H3</td>
+      <td>31 ± 3.9</td>
+      <td>35 ± 8.5</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3Kac Nucleosome</td>
+      <td>0.11 ± 0.0071</td>
+      <td>0.019 ± 0.0033</td>
+      <td>0.058 ± 0.0022</td>
+    </tr>
+    <tr>
+      <td>3Kac H3</td>
+      <td>31 ± 4.3</td>
+      <td>35 ± 2.7</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HDAC1</td>
+      <td>Kac Nucleosome</td>
+      <td>&lt;0.005</td>
+      <td>&lt;0.005</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Kac H3</td>
+      <td>10 ± 0.89</td>
+      <td>12 ± 0.26</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis of hydroxamic acid-Lys analogs with LHC
 
 Hydroxamic acid (Hd) warheads have been employed in small molecule HDAC inhibitors such as SAHA (Richon et al., 1998) and also in the context of peptides as analogs of Lys residues (Dose et al., 2016). We envisaged that these Hd warheads if installed at the K9 and K14 positions of histone H3 could be useful to probe the basis of more facile deacetylation of nucleosomes containing K9ac versus K14ac. We hypothesized that H3K9Hd versus H3K14Hd might more potently inhibit LHC deacetylase activity if the deacetyaltion differences resulted from greater exposure of the nine position for LHC engagement. Therefore, we incorporated the Lys analog AsuHd (2-aminosuberic acid ω-hydroxamate) into semisynthetic histone H3 at the 9 and 14 positions (Figure 7—figure supplement 1). These Hd containing H3s were used in the assembly of 146 bp mononucleosomes. These H3K9Hd and H3K14Hd containing nucleosomes were probed as potential inhibitors of LHC catalyzed deacetylation of a fluorescent peptide substrate (Figure 7A). We found that both H3K9Hd and H3K14Hd containing nucleosomes could inhibit LHC deacetylase activity with sub-micromolar potencies (Figure 7B) whereas there was little effect of unmodified or acetylated mononuclesomes under these reaction conditions (Figure 7C). A detailed analysis showed that, as expected, H3K14Hd is a competitive inhibitor versus peptide substrate for the LHC reaction (Figure 7D). The Ki values for H3K9Hd and H3K14Hd containing nucleosomes were 60 nM and 40 nM, respectively for LHC inhibition (Figure 7F). The corresponding H3 Hd-containing proteins and peptides were about 30-fold lower (Figure 7E and Figure 7—figure supplement 1). The similar potencies of these Hd nucleosomes suggest similar accessibility of these nucleosomes for the LHC HDAC1 active site. Thus, we deduce that the preference of LHC for deacetylating K9ac versus K14ac in nucleosomes is not a simple difference in exposure but must derive from more subtle interactions such as precise orientation of the acetyl-Lys in the active site.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig7-v2.jpg)
+
+**Figure 7.:** (A) A model for nucleosomes containing hydroxamic acid acetyl-Lys analogs (KHd) on the H3 tail and coordinating to the active site Zn2+ of HDAC1 in LHC. (B) Dose-dependent inhibition of LHC catalyzed peptide deacetylation by KHd-modified nucleosomes. (C) Kac and unacetylated nucleosomes (up to 400 nM) do not inhibit LHC catalyzed peptide deacetylation. (D) Dixon plot of LHC inhibition by H3K14Hd-modified nucleosomes shows competitive inhibition versus peptide deacetylation with Ki = 35 nM. (E) Dose-dependent inhibition of LHC catalyzed peptide deacetylation by KHd-modified semisynthetic histone H3s. (F) Summary of the Ki values calculated from IC50 values, (n = 3 for all measurements); values shown are ± S.E.M.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37231/elife-37231-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The chemical structure of the KHd. (B) Dose-response curves for the inhibition of LHC by H3K9Hd and H3K14Hd nucleosomes. (C) Dose-response curves for the inhibition of LHC by K9Hd and K14Hd histone H3 proteins. (D) Dose-dependent inhibition of LHC catalyzed peptide deacetylation by KHd-modified H3 synthetic peptides. (E) Summary of the IC50s of the KHd forms against LHC; (n = 3 for all measurements); error bars show S.E.M.; IC50 values shown are ± S.E.M.
 
 ## Discussion
 
@@ -80,7 +207,7 @@ These studies also clearly show that deacetylation, which is much more rapidly c
 
 From a technical standpoint, we have combined the use of F40 sortase and depsipeptide H3 tails to improve the production of semisynthetic H3. We believe that for generating N-terminally modified H3s, this approach offers advantages over native chemical ligation (Holt and Muir, 2015; Seenaiah et al., 2015), nonsense suppression (Neumann et al., 2008; Wang et al., 2017), or other methods (Chalker et al., 2012) in combining high yield and efficiency of incoprorating tails with multiple and diverse modifications without the need for Cys mutation/desulfurization.
 
-## Conclusion
+### Conclusion
 
 In this study, we applied chemical and biochemical tools to study how LSD1 and HDAC1 in the context of the CoREST complex act on nucleosomes to modify histone marks. We find that H3K4me2/H3K14ac is a privileged pair of modifications that is especially resistant to CoREST enzymatic processing. These findings provide a new framework for understanding how gene regulation may be controlled by specific histone patterns of post-translational modifications.
 
@@ -88,11 +215,11 @@ In this study, we applied chemical and biochemical tools to study how LSD1 and H
 
 The source data for this manuscript have been deposited in Dryad (DOI: https://doi.org/10.5061/dryad.413tm83; Wu et al., 2018).
 
-## Reagents
+### Reagents
 
 Amino acids were purchased from Novabiochem of EMD Millipore (Darmstadt, Germany) and Chem-Impex (Wood Dale, IL). Anti-histone H3 (Abcam Cat# ab1791, RRID:AB_302613), anti-H3K4me2 (Abcam Cat# ab32356, RRID:AB_732924) and anti-H3K9ac (Abcam Cat# ab32129, RRID:AB_732920) antibodies and BHC80 were purchased from Abcam (Cambridge, MA). Anti-H3K14ac (Millipore Cat# 07–353, RRID:AB_310545) and anti-H3K18ac (Millipore Cat# 07–354, RRID:AB_441945) antibodies were purchased from EMD Millipore (Burlington, MA). HRP-linked anti-rabbit antibody (Cell Signaling Technology Cat# 7074, RRID:AB_2099233) was purchased from Cell Signaling Technology (Danvers, MA). HEK293F cell line (RRID:CVCL_6642) was purchased from Thermo Fisher Scientific (Waltham, MA) and shown to be negative for mycoplasma. His-FLAG-HDAC1 and Fluorogenic HDAC1 assay kit was purchased from BPS Bioscience (San Diego, CA).
 
-## Peptide synthesis
+### Peptide synthesis
 
 Histone H3 peptides (aa 1–21) were synthesized using the Fmoc strategy on a PS3 peptide synthesizer (Gyros protein technologies, Tucson, AZ). Syntheses started with 0.1 mmol Fmoc-Ala-Wang resin and Fmoc was deprotected by 5 mL 20% piperidine in dimethylformamide (DMF) for 10 min twice. Next, the resin was coupled twice with 0.4 mmol Fmoc-amino acid, 1.6 mmol N-methylmorpholine (NMM) and 0.375 mmol HATU in 4 mL DMF for 90 min at room temperature. After the coupling steps, the resin was washed with DMF prior to subsequent cycles. After all amino acid couplings were complete, the resin was transferred to a reaction column and deprotected with 20% piperidine and then washed with DMF and CH2Cl2. Peptide cleavage from resin and protective group removal was performed by treatment with reagent K (5% phenol, 5% H2O, 5% thioanisole and 2.5% ethanedithiol in trifluoroacetic acid (TFA)) for 3 hr at room temperature. The crude peptide product was precipitated with cold diethyl ether and dried by nitrogen gas flow and then purified by reversed phase HPLC with a Varian Dynamax Microsorb 100–5 C18 column (250 × 21.4 mm, 5 μm). The gradient condition is 5% CH3CN/0.05%TFA in H2O/0.05%TFA for 2 min and a linear gradient from 5% CH3CN/0.05%TFA to 32% CH3CN/0.05%TFA over 25 min, flow rate: 10 mL/min.
 
@@ -126,15 +253,15 @@ H3K4me2K9Hd(1-34): [M + H]+ calculated for C148H267N54O46+ 3537.0, found 3537.
 
 H3K4me2K14Hd(1-34): [M + H]+ calculated for C148H267N54O46+ 3537.0, found 3537.8.
 
-## Expression and purification of recombinant F40 sortase
+### Expression and purification of recombinant F40 sortase
 
 F40 sortase production was performed using a previously reported method with some modifications (Piotukh et al., 2011). The DNA plasmid pET21-F40-srtA was transformed into BL21 E. coli and after plating a single colony was cultivated in LB media with 100 mg/L ampicillin at 37°C. After reaching an OD600 of 0.6, sortase expression was induced by adding 0.25 mM isopropyl β-D-thiogalactoside (IPTG) and further cultivated for 4 hr at 30°C. The cells were harvested by centrifugation at 5,000 g for 20 min and the cell pellet was resuspended in 20 mM Tris pH 8.0, 0.1% Triton X-100 and Roche protease inhibitor cocktail. The suspended cells were passed twice through a french press cell disrupter (Thermo electron corporation) at 1,500 psi and then the lysate was centrifuged at 20,000 g for 20 min. The resulting supernatant was applied to a column with prewashed Ni Sepharose 6 Fast Flow (GE Healthcare) and the column was washed with 20 mM Tris-HCl, 500 mM NaCl at pH 7.5. The column was then treated with elution buffers containing increasing concentrations of imidazole (up to 250 mM) in 20 mM Tris pH 7.5 and 150 mM NaCl. Fractions were analyzed using coomassie-stained SDS-PAGE and those containing F40 sortase were combined and dialyzed against 50 mM Tris-HCl, 150 mM NaCl and 5 mM CaCl2, pH 7.5 (3.5K MWCO, Thermo) followed by concentration using an Amicon Ultra spin column (10K MWCO, EMD Millipore) to 50 mg/mL. The purified proteins were stored at −80°C until usage.
 
-## Expression of core histones
+### Expression of core histones
 
 The X. laevis histones H2A, H2B, H3 and H4 were expressed in E. coli as previously described (Luger et al., 1999). The expression and purification procedure for the globular H3 (gH3) fragment (aa_33–135) was modified from a previous report (Piotukh et al., 2011). The DNA plasmid pET23-gH3 construct was transformed into the BL21 strain of E. coli and after plating a single colony was cultivated in LB media with 100 mg/L ampicillin at 37°C. After reaching an OD600 of 0.6, histone gH3 expression was induced with 0.5 mM IPTG, and the cells were cultivated for another 3 hr at 37°C. The cells were harvested by centrifugation at 5,000 g for 20 min and the cell-pellet was resuspended in histone wash buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 1 mM EDTA, 5 mM 2-mercaptoethanol (BME) and 0.2 mM phenylmethylsulfonyl fluoride (PMSF)) with 1% Triton X-100. The cells were lysed by three passes through a french press cell disrupter at 1,500 psi. The lysate was centrifuged at 20,000 g for 20 min, the supernatants were discarded and the pellets were washed with histone wash buffer with 1% Triton X-100 once and histone wash buffer without Triton X-100 twice. The pellets were then treated with 7 M guanidinium hydrochloride, 20 mM Tris pH 7.5 and 10 mM DTT. After centrifugation at 20,000 g for 15 min, the supernatant was dialyzed three times against IEX (ion exchange) buffer (7 M urea, 10 mM Tris pH 7.8, 1 mM EDTA, 0.2 mM PMSF and 5 mM BME). The resulting gH3 solution in urea buffer was diluted 5-fold by IEX buffer and loaded on to a tandem Q-SP column (GE healthcare, HiTrap Q HP and HiTrap SP HP, 5 mL) equilibrated with IEX buffer containing 100 mM NaCl. After loading, the column was eluted with a gradient of IEX buffer containing increasing NaCl from 100 mM to 500 mM. The fractions containing gH3 were collected and dialyzed against 2 mM BME (3.5K MWCO, Spectra/Por) followed by concentration using an Amicon Ultra spin column (3K MWCO, EMD Millipore) to 100 μM. The purified gH3 solution was stored at −80°C until usage.
 
-## Semisynthesis of histone H3 using F40 sortase
+### Semisynthesis of histone H3 using F40 sortase
 
 The histone H3 depsipeptide (aa1-34, 1.2 mM) and gH3 (aa33-135, 70 μM) were mixed in reaction buffer (50 mM HEPES pH 7.5, 150 mM NaCl and 5 mM CaCl2) and then F40 sortase (300 μM) was added. After incubation at 37°C overnight, the crude mixture was dialyzed against 1 L IEX buffer (7 M urea, 10 mM Tris pH 7.8, 1 mM EDTA and 5 mM BME). The resulting H3 solution was loaded on to a SP column (GE healthcare, HiTrap SP HP, 1 mL) equilibrated with IEX buffer containing 100 mM NaCl. After loading, the column was eluted with a gradient of IEX buffer containing increasing NaCl from 100 to 500 mM (Figure 4—figure supplement 1). The fractions containing ligated H3 were collected and dialyzed against 2 mM BME (3.5K MWCO, Spectra/Por) followed by concentration using an Amicon Ultra spin column (3K MWCO, EMD Millipore). The purified H3 was lyophilized to a white powder and stored at −80°C until usage. A typical reaction volume is 3.2 mL with 2.6 mg gH3 and the usual yield of the ligated H3 is 1.5 mg (46%). Semi-synthesized histone H3s (matrixed with sinapinic Acid) were characterized by Voyager DE-STR MALDI-TOF at the Mass Spectrometry and Proteomics Core of Johns Hopkins University School of Medicine or at the Molecular Biology Core Facilities of Dana Farber Cancer Institute (Figure 4—figure supplement 3).
 
@@ -154,27 +281,27 @@ H3K4me2K9Hd: [M + H]+ calculated for C674H1138N215O188S3+ 15349, found 15350.
 
 H3K4me2K14Hd: [M + H]+ calculated for C674H1138N215O188S3+ 15349, found 15346.
 
-## Octamer refolding and nucleosome reconstitution
+### Octamer refolding and nucleosome reconstitution
 
 Octamer refolding and nucleosome assembly were performed as previously reported(Luger et al., 1999). Briefly, the core histone proteins H2A, H2B, H3 and H4 were dissolved in unfolding buffer (7 M guanidine, 20 mM Tris pH 7.5 and 10 mM DTT) and mixed at molar ratio 1.1:1.1:1:1. After dialysis against high salt buffer (20 mM Tris 7.5, 2.0 M NaCl, 1 mM EDTA and 5 mM BME), the octamer was purified by size exclusion chromatography. The DNA used for these nucleosomes, 146 and 185 bp Widom 601 DNA, was prepared by methods previously reported (Luger et al., 1999). Briefly, the 146 bp DNA was obtained from restriction digests of an established DNA plasmid cultured in and isolated from E. coli followed and purified by size fractionation precipitation with polyethylene glycol. The 185 bp DNA was amplified by PCR from the DNA template and purified by preparative polyacrylamide gel electrophoresis. The histone octamer and DNA were mixed at a 1:1 molar ratio at high salt buffer (10 mM Tris 7.5, 2.0 M KCl, 1 mM EDTA and 1 mM DTT), and the mixture was gradually dialyzed to low salt buffer (10 mM Tris 7.5, 0.25 M KCl, 1 mM EDTA and 1 mM DTT). The resulting mixture was subjected to HPLC with a Waters instrument with 1525 binary pump and a 2489 UV-Vis detector. The gradient condition with a TEKgel column is 0% TES600/100% TES 250 for 12 min and a linear gradient from 25% TES 600% to 75% TES 600 over 30 min, flow rate: 1 mL/min. The fractions were collected and dialyzed to a storage buffer (20 mM Tris 7.5 and 1 mM DTT) and concentrated to 5–10 μM using an Amicon Ultra spin column (10K MWCO, EMD Millipore). Due to the zinc ion in the CoREST complex, we did not use the traditional TCS buffer that includes 1 mM EDTA to store the nucleosomes.
 
-## Expression and purification of the CoREST complex
+### Expression and purification of the CoREST complex
 
 We followed the expression methods and purification protocols previously reported by Portolano et al (Portolano et al., 2014) and Kalin et al (Kalin et al., 2018). Briefly, HEK293F cells were co-transfected with HDAC1, CoREST1 and LSD1 DNA plasmids, and the complex was purified from the cell lysate by immunoaffinity enrichment and gel filtration. The purified complex was concentrated to 3–5 μM and stored at 4°C for up to 3 weeks.
 
-## Kinetic analysis of the demethylation of H3 peptide substrates
+### Kinetic analysis of the demethylation of H3 peptide substrates
 
 The peroxidase-coupled kinetics measurements of the demethylation of H3 peptide substrate by the CoREST complex was performed as previously described (Prusevich et al., 2014). Briefly, the H3K4me2 peptide is mixed with 0.1 mM 4-aminoantipyrine, 1 mM 3,5-dichloro-2-hydroxybenzenesulfonic acid, 0.04 mg/mL horseradish peroxidase in 50 mM HEPES pH 7.5 followed by the addition of the CoREST complex to initialize the reaction at 25°C. Absorbance changes were measured at 515 nm and the product formation was quantified using the extinction coefficient of 26,000 M−1. The data in the initial linear phase and second linear phase were analyzed separately using linear regression and GraphPad Prism five software to determine reaction rates.
 
-## Analysis of demethylation of H3K4me2 nucleosomes
+### Analysis of demethylation of H3K4me2 nucleosomes
 
 H3K4me2 nucleosomes (100 nM, 146 bp or 185 bp) were treated with LHC (400 nM) in a buffer with 50 mM HEPES 7.5 and 0.2 mg/mL BSA at 25°C. At each time point, 10 μL aliquots were mixed with 2 μL 80 mM EDTA and 4 μL 4x SDS-PAGE gel loading buffer. The samples were boiled for 5 min at 95°C, and resolved by 15% SDS-PAGE. After transferring to nitrocellulose, H3K4me2 and total H3 were detected by western blot with specific antibodies on separate gels. Western blot bands were visualized by ECL and quantified using ImageJ software, and the data were fit to a single phase exponential decay curve using GraphPad Prism five software.
 
-## Analysis of deacetylation of acetylated nucleosomes and acetylated histone H3s
+### Analysis of deacetylation of acetylated nucleosomes and acetylated histone H3s
 
 The H3Kac nucleosomes (100 nM) or histone H3s (1.0 μM) were treated with LHC (1–20 nM) or His-FLAG-HDAC1 (5 nM) in reaction buffer containing 50 mM HEPES 7.5, 100 mM KCl, 100 μM InsP6, and 0.2 mg/mL BSA at 37°C. At each time point, 10 μL aliquots were mixed with 2 μL 80 mM EDTA and 4 μL 4x SDS-PAGE gel loading buffer. The samples were boiled for 5 min at 95°C, and resolved by 15% SDS-PAGE. After transferring to nitrocellulose, H3K9ac, H3K14ac, H3K18ac and total H3 were detected by western blot with specific antibodies on separate gels. Western blot bands were visualized by ECL and quantified using ImageJ software and the data was fit to a single phase exponential decay curve using GraphPad Prism five software. In general, these experiments were done with histone H3 or nucleosomes that also contained H3K4me2. As our earlier work suggested that demethylation of K4me2 is very slow compared with deacetylation, we hypothesized that the H3K4 modification would not perturb deacetylation by LHC. In fact, we prepared H3K9ac nucleosomes lacking H3K4me2 and these showed similar behavior to those that contained H3K4me2 (please compare Figure 6—figure supplement 1 with Figure 6A).
 
-## Fluorogenic HDAC1 deacetylation assay and inhibition
+### Fluorogenic HDAC1 deacetylation assay and inhibition
 
 LHC (1 nM) was pretreated with hydroxamic acid (K9Hd or K14Hd) containing nucleosomes (50–400 nM), histone H3 (3–200 nM), or H3 peptide (3–800 nM) or control nucleosomes in reaction buffer (50 mM HEPES 7.5, 100 mM KCl, 100 μM InsP6 and 0.2 mg/mL BSA) for 30 min in ice. Next, the HDAC fluorogenic peptide substrate (50 μM) was added and the reaction mixtures were incubated at 37°C for 15 min. The HDAC Developer (2x) was added to quench the deacetylation reactions and develop the fluorescence signal for 15 min at room temperature. The samples were analyzed in 96-well plates by a fluorescent plate reader with excitation at a wavelength of 365 nm and detection of emitted light in the range of 450 nm. The data was analyzed by non-linear curve fitting (log(inhibitor) vs response) using GraphPad Prism five software to determine the IC50. Ki was calculated from the equation Ki=IC50/([S]/Km +1) assuming a competitive inhibition model that was demonstrated by Dixon plot for K14Hd nucleosomes (Figure 7D).
 

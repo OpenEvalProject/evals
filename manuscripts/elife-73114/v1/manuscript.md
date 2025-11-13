@@ -35,15 +35,19 @@ Overall, this study uses recently developed high-resolution imaging techniques a
 
 ## Results
 
-## Distribution of somatostatin- and dopamine-expressing CSF-c neurons along the spinal cord
+### Distribution of somatostatin- and dopamine-expressing CSF-c neurons along the spinal cord
 
 To investigate the spatial distribution of CSF-c neurons around the central canal at the single-cell level with high speed and sufficient spatial resolution, we combined expansion and light-sheet microscopy on fluorescently labelled CSF-c neurons. An experimental design for expanding and handling spinal cord tissue was developed, which includes slicing, fluorescent immunolabelling of somatostatin and dopaminergic CFS-c neurons in 80–100 µm thick spinal cord slices, and the expansion steps with a final expansion factor of about ~4.5 (Figure 1A, B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig1-v1.jpg)
+
+**Figure 1.:** (A) A schematic illustration of the lamprey spinal cord treated for expansion microscopy (ExM). The spinal cords were immunostained for somatostatin and tyrosine hydroxylase (TH) prior to the ExM steps (MA-NHS treatment, gelation, proteinase K treatment, and expansion in water). (B) The spinal cord slices are shown before and after expansion. (C, D) Expanded samples imaged by light-sheet microscopy along the spinal cord. (C) Transverse and (D) horizontal images of somatostatin (magenta) and dopaminergic (green) CSF-c neurons shown by ExM-light-sheet microscopy. Scale bar, 30 µm. (E) Segmentation of the three-dimensional (3D) data from CSF-c neurons. Scale bar, 30 µm. (F) Quantification of somatostatin- and dopamine-expressing CSF-c neurons in four different areas of the spinal cord. The data are represented as the mean of number of cells in volume of each area; the error bar represents SD; Student’s paired t-test: *p ˂ 0.05 significant difference of somatostatin CSF-c neurons area 1 vs area 2 (p = 0.016, t3 = −4.84), area 2 vs area 3 (p = 0.016, t3 = 5.72) and vs area 4 (p = 0.04, t3 = 3.38), **p ˂ 0.01 and ***p ˂ 0.001 significant difference of somatostatin and dopamine CSF-c neurons at area 1 (p = 5.8 × 10−3, t3 = 7.06), at area 2 (p = 4 × 10−3, t3 = 7.67), at area 4 (p = 7.9 × 10−4, t3 = 13.9), and non-significant difference (n.s.) at area 3 (p = 0.09, t3 = 2.40). cc, central canal.
 
 The combination of our spinal cord expansion protocol and light-sheet microscopy (ExLSM) enables us to record a volume of 360  ×  250  ×  200  µm3 containing a large population of CSF-c neurons where the individual cells can be recognized and counted (Figure 1C, D). Somatostatin and dopaminergic (TH-expressing) CSF-c neurons can be visualized along the spinal cord (Figure 1C, D) and their specific location in the three-dimensional (3D) architecture of the tissue can be visualized (Figure 1—video 1) and quantified in different views (Figure 1E). The cell bodies of both dopamine and somatostatin CSF-c neurons are clearly visible, as well as their characteristic protrusion into the central canal. Different types of CSF-c neurons show a specific distribution along the lamprey spinal cord in all three spatial dimensions. Somatostatin-expressing CSF-c neurons are found throughout the whole volume and located laterally relative to the central canal, while the dopaminergic CSF-c neurons are located ventrally, confirming that the observation on individual sections is maintained in large volume with a high degree of order.
 
 The throughput of ExLSM allowed recording a total volume of 7.2 × 107 µm3 along the spinal cord for a total of 224 cells. We quantified the distribution of CSF-c neuronal subtypes at four different levels of the spinal cord, resulting in a higher amount of somatostatin CSF-c neurons compared to the dopaminergic CSF-c neurons in all four areas of the spinal cord. Additionally, in a specific position (area 2) the somatostatin CSF-c neurons were more abundant than in other parts (Figure 1F).
 
-## Somatostatin and dopamine neurotransmitters in CSF-c neurons are stored in dense-core vesicles
+### Somatostatin and dopamine neurotransmitters in CSF-c neurons are stored in dense-core vesicles
 
 To investigate the subcellular location and compartmentalization of somatostatin and dopamine in CSF-c neurons, we used STED microscopy. The STED microscope was equipped with a glycerol objective and red-shifted wavelengths to allow tissue imaging with minimal spherical aberration and scattering.
 
@@ -51,17 +55,37 @@ Somatostatin and dopamine are stored in dense-core vesicles (DCVs) and were foun
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig2-v1.jpg)
 
-**Figure 2.:** (A–C) Somatostatin (magenta) and α-tubulin (green) immunostaining in CSF-c neurons. Scale bar in A, 5 µm. (B, C) Selected Region of interest (ROIs) of somatostatin dense-core vesicles (DCVs) in the bulb of somatostatin-expressing CSF-c neurons imaged with confocal and stimulated emission depletion (STED) microscopy, respectively. Scale bar, 500 nm. (D) Analysis of the size of somatostatin DCVs measured with confocal and STED microscopy (n = 46). (E–G) Dopamine (magenta) and phalloidin (green) immunostaining in CSF-c neurons. Scale bar in (E), 5 µm. (F, G) Selected ROIs of dopamine DCVs in the bulb of dopamine CSF-c neurons with confocal and STED microscopy, respectively. Scale bar, 500 nm. (H) Analysis of the size of dopamine DCVs with confocal and STED (n = 44). cc, central canal.Figure 2—source data 1.Analysis of somatostatin DCVs diameter measured with confocal and stimulated emission depletion (STED) microscopy.Figure 2—source data 2.Analysis of dopamine DCVs diameter measured with confocal and stimulated emission depletion (STED) microscopy.
+**Figure 2.:** (A–C) Somatostatin (magenta) and α-tubulin (green) immunostaining in CSF-c neurons. Scale bar in A, 5 µm. (B, C) Selected Region of interest (ROIs) of somatostatin dense-core vesicles (DCVs) in the bulb of somatostatin-expressing CSF-c neurons imaged with confocal and stimulated emission depletion (STED) microscopy, respectively. Scale bar, 500 nm. (D) Analysis of the size of somatostatin DCVs measured with confocal and STED microscopy (n = 46). (E–G) Dopamine (magenta) and phalloidin (green) immunostaining in CSF-c neurons. Scale bar in (E), 5 µm. (F, G) Selected ROIs of dopamine DCVs in the bulb of dopamine CSF-c neurons with confocal and STED microscopy, respectively. Scale bar, 500 nm. (H) Analysis of the size of dopamine DCVs with confocal and STED (n = 44). cc, central canal.
 
-## Somatostatin but not GABA release are responsible for pH response in somatostatin/GABA CSF-c neurons
+### Somatostatin but not GABA release are responsible for pH response in somatostatin/GABA CSF-c neurons
 
 The somatostatin CSF-c neurons in the lamprey spinal cord also express GABA (Brodin et al., 1990; Christenson et al., 1991; Jalalvand et al., 2014). We have recently shown that somatostatin/GABA CSF-c neurons are sensitive to pH changes of the cerebrospinal fluid (Jalalvand et al., 2016a; Jalalvand et al., 2016b). Here, we investigate how the spatial distribution and abundance of somatostatin and GABA changes during induced pH changes to acidic (6.5) or alkaline (8.5) conditions and if they were co-released. The somatostatin DCVs were visualized in the soma as well as in the axons by both confocal and STED microscopy (Figure 3A–F). Somatostatin DCVs were imaged with STED microscopy in control, acidic, and alkaline pH conditions. The number density of somatostatin DCVs measured for the soma of CSF-c neurons both in areas (Figure 3G) and volumes (Figure 3—figure supplement 1) decreased markedly in CSF-c neurons in either acidic or alkaline pH conditions. In contrast, the slices stained with a GABA antibody did not show any changes in fluorescence intensity at different pH (Figure 3H–K).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig3-v1.jpg)
+
+**Figure 3.:** (A–F) Spinal cord slices in normal (pH 7.4), acidic (pH 6.5), and alkaline (pH 8.5) extracellular solution stained with an anti-somatostatin antibody (magenta). (A–C) Confocal and stimulated emission depletion (STED) images (selected ROIs) of somatostatin DCVs in the soma. Scale bar in (A–C), 10 µm; in ROIs, 1 µm. (D–F) The axons of the somatostatin-expressing cerebrospinal fluid-contacting (CSF-c) neurons (arrowheads). Scale bar, 10 µm. (G) Quantification of somatostatin DCVs number density in cell area (µm−2) in the different conditions (n = 13). Student’s paired t-test: ***p ˂ 0.001 significant difference between pH 7.4 and 6.5 (p = 5.26 × 10−5, t12 = 4.9), and 7.4 and 8.5 (p = 1.79 × 10−5, t12 = 5.3). (H–J) The spinal cord slices in normal, acidic and alkaline extracellular solution, stained with an anti-GABA antibody (green). Scale bar, 10 µm. (K) Comparison of normalized GABA signals at pH 7.4 (n = 26), 6.5 (n = 24), and 8.5 (n = 22), respectively. Student’s t-test: non-significant difference (n.s.) between pH 7.4 and 6.5 (p = 0.62, t47 = 0.48), and 7.4 and 8.5 (p = 0.80, t43 = 0.25). (L–O) STED and confocal images of spinal cord slices stained for somatostatin (magenta) and GABA (green). (L) STED image of a CSF-c neuron. Scale bar, 1 µm. (M, N) Selected ROI from the soma in (l) shown at higher magnification with confocal and STED microscopy, respectively. Scale bar, 1 µm. (O) Line profile graph in image N. (P) Mean GABA signal in cellular compartments and compared to extracellular background (n = 5), normalized to volume intensity in soma (n = 5) and axons (n = 3), respectively. Repetitions are different cells. Student’s t-test between means of cellular means: ****p < 0.0001 significant difference between soma-volume and background (p = 1.0 × 10−5, t8 = −9.7), soma-DCVs and background (p = 1.0 × 10−5, t8 = −9.6), axon-volume and background (p = 8.0 × 10−8, t4 = −93), and axon-DCVs and background (p = 4.4 × 10−5, t4 = −19), non-significant differences (n.s.) between soma-volume and DCVs (p = 0.090, t8 = −1.9), and axon-volume and DCVs (p = 0.12, t4 = 1.9). Data (G, K, P) are represented as means, with error bars representing standard deviation (SD) (G, K) or standard error of the mean (SEM) (P). cc, central canal.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Representative volumetric imaging of somatostatin DCVs in the soma of the identified cell, shown as an axially colour-coded projection in the different conditions (n = 5, pH 7.4; n = 4, pH 6.5; n = 4, pH 8.5). (D) Quantification of the somatostatin DCVs number density in cell volume (µm−3) in the different conditions (n = 5, pH 7.4; n = 4, pH 6.5; n = 4, pH 8.5). Student’s paired t-test: *p ˂ 0.05 and **p ˂ 0.01 significant difference between pH 7.4 and 6.5 (p = 0.011, t6 = 2.44), and 7.4 and 8.5 (p = 0.002, t5 = 2.57). (E–H) Workflow of the analysis: raw image where the cell soma is selected. (E) Processed image after noise and background filtering. (F) Vesicle segmentation. (G) Binary map used to measure the cell soma-volume (H). Scale bar, 1 µm.
+
 As somatostatin and GABA are co-expressed in the same CSF-c neurons, we investigated if they were colocalized in the same vesicles (Figure 3L–P). STED images of somatostatin DCVs and GABA-expressing CSF-c neurons did not show colocalization of somatostatin DCVs and GABA in the soma (Figure 3M–O). The GABA signal was not significantly different when measured in or outside of somatostatin DCVs, neither in the soma nor in the axons (Figure 3P). The results confirmed that there is no correlation between GABA and somatostatin signals in somatostatin vesicles. Our imaging data support the conclusion that during pH changes of the extracellular solution vesicles containing somatostatin are released, resulting in fewer DCVs in the soma, while GABA is not co-released.
 
-## Dopaminergic CSF-c neurons are not sensitive to changes in extracellular pH
+### Dopaminergic CSF-c neurons are not sensitive to changes in extracellular pH
 
 The next step was to explore whether the dopaminergic CSF-c neurons at the ventral aspect of the central canal were also sensitive to pH changes. As for the somatostatin experiments, acidic and alkaline extracellular pH was perfused on spinal cord slices and subsequently stained with a dopamine antibody to investigate the dopamine DCVs spatial distribution in dopaminergic CSF-c neurons. We performed STED microscopy to resolve and count the single vesicles in distinct neuronal locations (Figure 4A–C). The result showed no significant change in the number density of dopaminergic DCVs after perfusion with acidic or alkaline pH solutions, neither in cell areas (Figure 4D) nor in cell volumes (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Stimulated emission depletion (STED) images of dopamine-containing dense-core vesicles (DCVs) in the soma of CSF-c neurons in normal (pH 7.4), acidic (pH 6.5), and alkaline (pH 8.5) extracellular solution. Scale bar, 1 µm. (D) Quantification of the number of dopamine DCVs number density in cell area (µm−2) in the different conditions (n = 10). Student’s t-test: non-significant (n.s.) between pH 7.4 and 6.5 (p = 0.27, t9 = 1.12), and 7.4 and 8.5 (p = 0.29, t9 = 1.08). (E) Whole-cell patch recording of a CSF-c neuron, showing firing spontaneous action potentials in control (pH 7.4), acidic (p H 6.5), and alkaline (pH 8.5) conditions in the presence of gabazine (20 mM) and kynurenic acid (2 mM). (F–H) Photomicrographs of the CSF-c neurons recorded in (E) intracellularly filled with Neurobiotin (arrow) during recording. The labelled cell showed immunoreactivity to tyrosine hydroxylase (TH, arrow). Scale bar, 10 µm. (I) Action potential frequency during 1 min in CSF-c neurons at pH 7.4, 6.5, and 6.8, respectively (n = 15). Student’s paired t-test: non-significant difference (n.s.) between pH 7.4 and 6.5 (p = 0.24, t14 = −1.22), and 7.4 and 8.5 (p = 0.1, t14 = −1.75). The bar graph data are represented as the means, with error bars representing standard deviation (SD). cc, central canal.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Representative volumetric imaging of dopamine DCVs in the soma of the identified cell, shown as an axially colour-coded projection in the different conditions (n = 3, pH 7.4; n = 3, pH 6.5; n = 2, pH 8.5). (D) Quantification of the dopamine DCVs number density (µm−3) in the different conditions (n = 3, pH 7.4; n = 3, pH 6.5; n = 2, pH 8.5). Student’s paired t-test: non-significant difference (n.s.) between pH 7.4 and 6.5 (p = 0.77, t4 = 2.77), and 7.4 and 8.5 (p = 0.93, t3 = 3.18). Scale bar, 1 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) A schematic illustration showing a dopaminergic CSF-c neuron (red) was patched and a pressure pipette was placed close to its bulb-like ending. (B) A short pressure pulse (20 p.s.i., 80 ms) elicited action potential responses in a dopaminergic CSF-c neuron. (C) Elicited action potential responses in a dopaminergic CSF-c neuron by pressure pulse in present of the acid-sensing ion channel 3 (ASIC3) blocker APETx2 (2 µM). (D) In situ hybridization image showing ventrally located CSF-c neurons co-expressing the polycystic kidney disease 2-like 1 (PKD2L1) channel (green), tyrosine hydroxylase (TH, red), and Nissl (blue). Scale bar, 10 µm. cc, central canal.
 
 To complement the results from the STED imaging, dopaminergic CSF-c neurons were patched as previously described for somatostatin-expressing CSF-c neurons (Jalalvand et al., 2016a; Jalalvand et al., 2016b). Their electrophysiological properties and response to changes of extracellular pH were investigated with whole-cell patch recording in current-clamp mode (Figure 4E). All recorded dopaminergic CSF-c neurons fired spontaneous action potentials, depolarizing synaptic potentials, and hyperpolarizing synaptic potentials (Figure 4E). To verify that responses were not evoked synaptically, the GABAergic and glutamatergic synaptic transmission was blocked by bath-application of gabazine (GABAA receptor antagonist) and kynurenic acid (glutamate receptor antagonist). During bath-applied extracellular solutions of acidic pH (6.5) or alkaline pH (8.5) no changes in spike frequency were observed, nor a net depolarization of the resting membrane potential (Figure 4E1). Thus, in contrast to the somatostatin CSF-c neurons the dopamine CSF-c are not sensitive to pH changes. All neurons labelled with Neurobiotin during the patch-clamp recording were tyrosine hydroxylase (TH) immunoreactive (Figure 4F, H).
 
@@ -69,7 +93,7 @@ Both somatostatin and dopamine CSF-c neurons are ciliated (see below) and the fo
 
 In conclusion, dopamine CSF-c neurons are not sensing pH changes as their somatostatin counterparts, but both are mechanosensitive. The mechanical transduction is blocked by an ASIC3 antagonist in somatostatin CSF-c neurons and may be mediated by PKD2L1 in the dopamine CSF-c neurons as in the zebrafish.
 
-## CSF-c neurons show both primary and motile cilia symmetries
+### CSF-c neurons show both primary and motile cilia symmetries
 
 Somatostatin- and dopamine-expressing CSF-c neurons are thus both mechanosensitive, but through different transduction mechanisms. Since both types of CSF-c neurons are ciliated, we investigated whether the functional difference is reflected in the structural organization of the cilia.
 
@@ -77,19 +101,43 @@ Cilia express acetylated α-tubulin and can be classified either as primary cili
 
 One aim for exploring the cilia symmetry of ciliated CSF-c neurons was to uncover potential signalling compartments related to pH and mechanosensitivity of the CSF-c neurons. Cilia in the central canal was immunolabelled for acetylated α-tubulin, a protein characteristic of cilia, and imaged with confocal and STED microscopy to measure their diameters, respectively (Figure 5A, B, E, F). STED imaging visualizes the cilium as a hollow structure with an outer diameter of about 240 nm thanks to the increased spatial resolution, but the resolution is still not enough to detect the microtubule doublets. One strategy to increase the observable level of detail is to expand the tissue. In the expanded spinal cord tissue, pre-immunostained for acetylated α-tubulin, the resolution of the dense cilia in the central canal increased (Figure 5—figure supplement 1, 3D XYZ image) as compared to confocal imaging of the non-expanded sample. Confocal imaging of the expanded sample shows spatial details comparable to STED images (Figure 5C) of the non-expanded one, therefore still not having the resolution (5–10 nm) needed to dissect the internal cilia structure and identify microtubule doublets. That level of detail is crucial to further investigate the nature of cilia as sensory or motile for each specific cell type.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Confocal and stimulated emission depletion (STED) images of a cerebrospinal fluid-contacting (CSF-c) neuron cilium in a non-expanded spinal cord pre-stained with anti-α-tubulin antibodies. Scale bar, 0.5 µm. (C, D) Confocal (expansion microscopy, ExM) and STED (ExSTED) images of a cilium in the expanded spinal cord. Scale bar, 0.5 µm. (E, F) Quantification of the cilium diameter (arrowheads) in confocal and STED images in a non-expanded spinal cord. (G, H) Quantification of the cilium diameter (arrowheads) in confocal (ExM) and STED (ExSTED) in the expanded spinal cord. (I–M) Confocal (ExM, I, J) and STED (ExSTED, K, L) deconvoluted images of a primary cilium with 9 + 0 symmetry in the expanded spinal cord. Scale bar, I, 2 µm and J–L, 1 µm. (M) Quantification of the cilium diameter from image (l) (arrowheads). (N–R) Confocal (ExM, N, O) and STED (ExSTED, P, Q) deconvoluted images of a motile cilium with 9 + 2 symmetry in the expanded spinal cord. Scale bar, N, 2 µm and O–Q, 1 µm. (R) Quantification of the cilium diameter from image (Q) (arrowheads). Cilia diameters in blue were divided by the expansion factor.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative volumetric imaging of expanded cilia (stained with α-tubulin) protruding into the central canal from cerebrospinal fluid-contacting (CSF-c) neurons, shown as an axially colour-coded projection. Scale bar, 5 µm. cc, central canal.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Averages and ± SD are 402 ± 25, 240 ± 20, 266 ± 17, and 218 ± 18 nm, respectively. Student’s paired t-test: ***p < 0.001 significant difference between cilia diameter in confocal and ExSTED (p = 2.8 × 10−24, t19 = 24.8), and ExM and ExSTED (p = 1.32 × 10−9, t19 = 8.08), STED and ExM (p = 2.8 × 10−4, t19 = –4,02), **p < 0.01 significant difference between cilia diameter in STED and ExSTED (p = 1.7 × 10−3, t18 = 3.38).
+
 By using the combination of STED microscopy and expanded tissue (ExSTED), we were able to add a factor of ~four to five to the typical 50 nm resolution of STED microscopy and therefore resolving at the smaller spatial scale of 5–10 nm (Figure 5—figure supplement 2). In this way, it was possible to separate high-density cilia within the 3D geometry of the central canal (Figure 5—video 1) due to the increased imaging resolution and further resolve their internal structure and allowing to classify them as motile or sensory (Figure 5D). In some cilia, the central pair of tubules was clearly observed with a peak-to-peak distance of 70 nm (Figure 5P–R).
 
 Both types of cilia symmetries in the lamprey spinal cord were explored: sensory (Figure 5I–M) and motile cilia symmetries (Figure 5N–R). The presence of motile cilia in the central canal of the lamprey has been shown with electron microscopy (Schotland et al., 1996; Vigh et al., 2004), but with ExSTED we could detect both motile and sensory cilia symmetries in this area. As all CSF-c neurons, including somatostatin and dopaminergic CSF-c neurons in the lamprey spinal cord, are ciliated, the next step is to know which cilia type is related to which neuronal phenotypes and if they contribute to a specific neuronal function.
 
-## Somatostatin CSF-c neurons have both primary and motile cilia, but dopaminergic CSF-c neurons have only motile cilia
+### Somatostatin CSF-c neurons have both primary and motile cilia, but dopaminergic CSF-c neurons have only motile cilia
 
 To further investigate whether somatostatin-expressing CSF-c neurons (pH-sensitive) and dopaminergic CSF-c neurons (non-pH-sensitive) have different types of cilia, expansion was combined with STED microscopy. Using dual-colour imaging of spinal cord slices, either somatostatin or dopamine (TH immunostaining), together with α-tubulin immunostaining (Figure 6) was analysed. To have better access to the cilia and CSF-c neurons the central canal of the expanded spinal cord has been cut horizontally and flipped 90° with respect to the coverslip. The central canal can then be visualized in a cylindrical form (Figure 6A–C). To confirm what type of CSF-c neurons the cilia belong to, z-stack scanning for all the imaging was applied. In our data, 70 cilia belong to somatostatin-expressing CSF-c neurons (n = 70). Of these, 60 cilia were primary (9 + 0 symmetry) and 10 cilia were motile (9 + 2 symmetry) (Figure 6D–K, T). Additionally, 20 cilia of dopaminergic CSF-c neurons were all motile cilia (9 + 2 symmetry) (Figure 6L–S, T). We found that somatostatin-expressing CSF-c neurons are sensory neurons expressing mainly sensory cilia. However, the motile cilia in both somatostatin-expressing and dopaminergic CSF-c neurons might be involved in contributing to the flow of CSF through the central canal (Figure 6U).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig6-v1.jpg)
+
+**Figure 6.:** (A) A schematic illustration of an expanded spinal cord stained for somatostatin (magenta), dopamine (blue), and α-tubulin (green). The gel was cut through the central canal and flipped 90° on the side on the coverslip. (B, C) Longitudinal images of the expanded spinal cord (expansion microscopy, ExM) stained with α-tubulin, TH, and somatostatin antibodies, respectively. Scale bar, 10 µm. (D–K) ExM and ExSTED images of two somatostatin CSF-c neurons with their cilia. Scale bar, D, 1 µm and H, 3 µm. (F, G) showing 9 + 0 symmetry and (J, K) showing both 9 + 0 and 9 + 2 symmetries. Scale bar, 1 µm. (L–S) ExM and ExSTED images of two dopaminergic CSF-c neurons (TH staining) with 9 + 2 symmetry. Scale bar, L–O, Q–S, 1 µm and P, 2 µm. (T) Quantification of cilium types in somatostatin and dopaminergic CSF-c neurons. (U) A schematic illustration of the central canal with somatostatin and dopaminergic CSF-c neurons and their possible cilia symmetries. cc, central canal.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–L) Two different CSF-c neurons showing immunoreactivity to the PKD2L1 channel (magenta) on their cilium stained with α-tubulin (green). Scale bar, A, G, 2 µm and B, H, 1 µm. (C–E) Selected ROI from (B, I–K), selected ROI from (H) is shown at higher magnification with stimulated emission depletion (STED) microscopy with their corresponding line profiles (F, L), respectively. Scale bar, C–E, I–K, 300 nm. (M–P) ASIC3 (magenta) expression on cilia of CSF-c neurons imaged with STED microscopy. Scale bar, M, 1 µm. (N–P) Selected ROI from (M) is shown at higher magnification with a corresponding line profile in (Q). Scale bar, 300 nm. (R–U) Cilia in the mouse central canal stained with α-tubulin (green) and ARL13b (magenta). Scale bar, R, 1 µm. (S–U) STED images of a ROI from (R) showing ARLB13b expression on a cilium with corresponding line profile in (V). Scale bar, 500 nm.
+
 The sensory cilia are a potential location for pH-sensitive receptors (Atkinson et al., 2019; Vina et al., 2015). We have recently shown that in somatostatin-expressing CSF-c neurons, acidic and alkaline responses are mediated by the ASIC3 and possibly PKD2L1 channel, respectively (Jalalvand et al., 2016a; Jalalvand et al., 2016b). Interestingly, we could detect the expression of both ASIC3 and PKD2L1 on the cilia of spinal CSF-c neurons in mice (Figure 6—figure supplement 1A–Q). Besides, we visualized Arl13b, a ciliary protein on cilia that has high expression in sensory cilia (Figure 6—figure supplement 1R–V).
 
-## CSF neurons have one and rarely two cilia
+### CSF neurons have one and rarely two cilia
 
 Another advantage of expansion microscopy (ExM) is that more specific morphological details of cells can be revealed, which cannot be detected in non-expanded samples. Using ExM, paired cilia of CSF-c neurons were visualized in some cases (Figure 7). As reported, somatostatin-expressing and dopaminergic CSF-c neurons mainly have one cilium, but we could in rare cases (N = 8) detect two cilia per bulb of these neurons by ExM (Figure 7A–F). To confirm the finding, we performed z-stack scanning to see the whole bulb and its cilia in 3D (Figure 7—video 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73114/elife-73114-fig7-v1.jpg)
+
+**Figure 7.:** (A) An expansion microscopy (ExM) image of an expanded somatostatin CSF-c neuron showing one cilium on its bulb (arrow). Scale bar, 5 µm. (B, C) A somatostatin CSF-c neuron with two cilia (arrow) (C) selected ROI from (B). Scale bar B, 5 µm and C, 2 µm. (D) A dopaminergic CSF-c neuron (tyrosine hydroxylase [TH] expressing) with one cilium (arrow). Scale bar, 5 µm. (E, F) A dopaminergic CSF-c neuron with two cilia (arrows) (F) selected ROI from (E). Scale bar, E, 5 µm and F, 2 µm. cc, central canal.
 
 ## Discussion
 
@@ -109,37 +157,292 @@ In conclusion, by applying ExM combined with light-sheet and STED microscopy wit
 
 ## Materials and methods
 
-## Animals: lamprey
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Lampetra fluviatilis)</td>
+      <td>Spinal cord</td>
+      <td>Collected from the Ljusnan River, Hälsingland, Sweden</td>
+      <td></td>
+      <td>Freshly isolated from Lampetra fluviatilis</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Spinal cord</td>
+      <td>Janvier Labs, C57BL/6</td>
+      <td></td>
+      <td>Freshly isolated from C57BL/6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T6793, RRID:AB_477585</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-somatostatin (rat monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB354, RRID:AB_2255365</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-somatostatin 14-IgG (rabbit polyclonal)</td>
+      <td>Peninsula laboratories</td>
+      <td>Cat# T-4102.0400, RRID:AB_518613</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB318, RRID:AB_2201528</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB152, RRID:AB_390204</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dopamine (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB5300, RRID:AB_94817</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GABA (mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>Cat# Mab 3A12, RRID:AB_2314454</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-polycystin-L (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB9084, RRID:AB_571091</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASIC3 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA5-41022, RRID:AB_2576713</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ARL13B (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 17711-1-AP, RRID:AB_2060867</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey-anti-rat-IgG-AF594</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 712-585-153, RRID:AB_2340689</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey-anti-rat-IgG-AF488</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 712-545-153, RRID:AB_2340684</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti-mouse-STAR635P</td>
+      <td>Abberrior</td>
+      <td>Cat# ST635P-1001-500 UG, RRID:AB_2893232</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti-rabbit-AF594</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11037, RRID:AB_2534095</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey-anti-mouse-IgG-Cy3</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-165-150, RRID:AB_2340813</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey-anti-mouse-IgG-AF488</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 715-545-150, RRID:AB_2340846</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NeuroTrace530/615</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# N21482, RRID:AB_2620170</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NeuroTrace640/660</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# N21483, RRID:AB_2572212</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin-STAR635P</td>
+      <td>Abberior</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Neurobiotin</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# SP-1120, RRID:AB_2313575</td>
+      <td>Injection of 0.5% solution for intracellular labelling</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-AF488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 016-540-084, RRID:AB_2337249</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamate receptor antagonist kynurenic acid</td>
+      <td>Tocris Ellisville, MO, USA</td>
+      <td></td>
+      <td>Bath perfusion, 2 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GABAA receptor antagonist gabazine</td>
+      <td>Tocris Ellisville, MO, USA</td>
+      <td></td>
+      <td>Bath perfusion, 20 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>The Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Impsector</td>
+      <td>Max-Planck Innovation</td>
+      <td>RRID:SCR_015249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin</td>
+      <td>OriginLab</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 9.1</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex and Clampfit</td>
+      <td>Molecular Devices, CA, USA</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Digoxigenin RNA Labeling kit</td>
+      <td>Roche Diagnostics</td>
+      <td>Catalog #11 277 073 910</td>
+      <td>In situ hybridization</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Cy3 Plus Evaluation Kit</td>
+      <td>PerkinElmer</td>
+      <td>NEL763E001</td>
+      <td>In situ hybridization</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DIG antibody coupled to HRP (sheep polyclonal)</td>
+      <td>Roche Diagnostics</td>
+      <td>RRID: AB_514497</td>
+      <td>IF (1:2000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals: lamprey
 
 Experiments were performed on a total of 40 adult river lampreys (Lampetra fluviatilis) of both sexes that were collected from the Ljusnan River, Hälsingland, Sweden. The experimental procedures were approved by the local ethical committee (Stockholms Djurförsöksetiska Nämnd; Dnr 5806-2019) and were in accordance with The Guide for the Care and Use of Laboratory Animals (National Institutes of Health, 1996 revision). During the investigation, every effort was made to minimize animal suffering and to reduce the number of animals used during the study.
 
-## Mouse
+### Mouse
 
 Experiments were performed on a total of 4, C57BL/6 wild type mice (Mus musculus). All experiments were performed in accordance with animal welfare guidelines set forth by Karolinska Institutet and were approved by Swedish Board of agriculture for Animal welfare (ethical permit number: 2645-2021).
 
-## Immunohistochemistry: lamprey
+### Immunohistochemistry: lamprey
 
 The animals (n = 30) were deeply anesthetized through immersion in carbonate-buffered tap water containing MS-222 (100 mg/l; Sigma, St Louis, MO, USA). Following decapitation, a portion of the spinal cord, rostral to the dorsal fin, was fixed by 4% (wt/vol) paraformaldehyde (PFA) in phosphate-buffered saline (PBS) for 12–24 hr at 4°C, and subsequently cryoprotected in 20% sucrose in phosphate buffer (PB) for 3–12 hr. For GABA and dopamine immunodetection, 1% glutaraldehyde (vol/vol) was added to the fixative solution. Transverse sections (20 µm thick) were cut on a cryostat (Microm HM 560, Microm International GmbH, Walldorf, Germany), collected on gelatine-coated slides, and kept at −20°C until processing. Sections were incubated/co-incubated with different primary antibodies listed here: a mouse monoclonal anti-acetylated tubulin antibody (dilution 1:500, Sigma-Aldrich), a rat monoclonal anti-somatostatin antibody (1:100, Millipore), a rabbit polyclonal anti-somatostatin-14 IgG antibody (1:1000, Peninsula laboratories), a mouse monoclonal anti-TH antibody (1:200, Millipore), a rabbit polyclonal anti-TH antibody (1:500, Millipore), a mouse monoclonal anti-dopamine antibody (1:400, Millipore), and a mouse monoclonal anti-GABA antibody (1:2000, Swant).
 
-## Mouse
+### Mouse
 
 The animals were deeply anesthetized with sodium pentobarbital (200 mg/kg i.p.) and transcardially perfused with 4% PFA in 0.01 M PBS, pH 7.4. The spinal cord was removed and postfixed for 2 hr, after which it was transferred to a 12% sucrose solution in 0.01 M PBS overnight. Transverse sections (20 µm thick) were cut on a cryostat and mounted on gelatine-coated slides and kept at −20°C until processing. Sections were incubated with a rabbit polyclonal anti-polycystin-L antibody (1:500, Millipore), a rabbit polyclonal ASIC3 antibody (1:400, Thermo Fisher Scientific), or a rabbit polyclonal anti-ARL13B antibody (1:500, Proteintech).
 
 The lamprey and mouse spinal cord sections were after incubation with primary antibodies thoroughly rinsed in PBS and then incubated with Alexa Fluor 594-conjugated donkey anti-rat IgG (1:500, Jackson ImmunoResearch Labs) or Alexa Fluor 488-conjugated donkey anti-rat IgG (1:200, Jackson ImmunoResearch Labs), STAR 635P-conjugated goat anti-mouse (1:500, Abberior) or Alexa Fluor 594-conjugated donkey anti-mouse (1:500, Thermo Fisher Scientific), and STAR 635P-conjugated goat anti-rabbit (1:500, Abberior) or Alexa Fluor 594-conjugated goat anti-rabbit (1:500, Thermo Fisher Scientific), for 3 hr at room temperature. The sections were Nissl stained by adding NeuroTrace 530/615 red or 640/660 deep-red fluorescent Nissl stain (1:1000, Invitrogen) to the secondary antibody solution. Phalloidin conjugated with STAR 635P (1:200, Abberior) was added to the secondary antibodies to stain actin filaments. The primary and secondary antibodies were diluted in 1% bovine serum albumin and 0.3% Triton X-100 in 0.1 M PB. All sections were mounted in custom-made Mowiol mounting media, supplemented with DABCO (Thomas Scientific, C966M75), and covered with coverslips (No. 1.5).
 
-## Expansion microscopy
+### Expansion microscopy
 
 After fixation, transverse sections of the lamprey spinal cord (40–50 µm thick) were cut on a cryostat and collected and immersed in PBS. The sections were stained with antibodies according to the protocols described above. The samples were treated at room temperature for 1 hr with anchoring solution, 1 mM MA-NHS in PBS (0.018 g MA-NHS in 100 µl DMSO and stored at −20°C) which enables proteins to be anchored to the hydrogel. The slices then were incubated for 1 hr in a monomer solution on ice, which was followed by adding the gelling solution to the gelling chambers. The gelling solution consisted of monomer solution (1 M NaCl, 8.6% sodium acrylate, 2.5% acrylamide, and 0.15% N,N′-methylene bisacrylamide in PBS), 4-hydroxy-TEMPO (0.2%), Tetramethylethylenediamine (TEMED) (accelerator solution, 0.2%), and Ammonium persulfate (APS) (initiator solution, 0.2%). The slices were incubated in a 37°C incubator for 2 hr for gelation. The gels were removed from the gelling chamber and the coverslips were transferred to digesting buffer (50 mM Tris, pH 8.0, 1 mM EDTA, and 0.5 Triton X-100) with proteinase K (1:100, 8 units/ml, New England Biolabs) for 30–40 min in room temperature. The gels were removed from the digestion buffer and immersed in deionized (DI) water (three to five times for 30 min) for further expansion. After final expansion, the gels were mounted to a 35 mm glass bottom petri dish coated with poly-L-lysine (Sigma-Aldrich). To remove the extra gel on a coverslip and increase the resolution, we cut the gel through the central canal and rotated it 90° away from the coverslip. The expansion factor was ~4.5–5 and has been calculated by overlapping the pre- and post-expanded gel slice in the air–water boundary and by cross checking the cilia diameter in expanded and not samples.
 
-## STED microscopy
+### STED microscopy
 
 Most STED images have been recorded on a custom-built setup, as previously described (Alvelid and Testa, 2019) equipped with a glycerol objective (HCX PL APO 93×/1.30 NA GLYC STED White motCORR, 15506417, Leica Microsystems). The images were recorded by exciting Alexa Fluor 594 and STAR 635P with 561 nm (PDL561, Abberior Instruments) and 640 nm (LDH-D-C-640, PicoQuant) laser lines, respectively. A STED beam at 775 nm (KATANA 08 HP, OneFive) has been used to deplete both laser lines, shaped by a spatial light modulator (LCOS-SLM X10468-02, Hamamatsu Photonics) into a donut. Two-colour STED images were recorded line-by-line sequentially. A third confocal channel, for structures labelled with Alexa Fluor 488, has been excited with a 510-nm laser line (LDH-D-C-510, PicoQuant). Detection was performed using the following bandpass filters: ET615/30 m (Chroma), ET705/100 m (Chroma), and FF01-550/49 (Semrock). The pixel sizes of the images were 27.2–32.3 nm in XY, and 300 nm in Z. The pixel dwell time used was 10–50 µs, added over one to two lines. Laser powers used were in the following ranges: 561 nm: 1–40 µW, 640 nm: 2–20 µW, and 775 nm: 65–180 mW. Additional STED images (Figures 2 and 3A–J) have been recorded on a commercial Leica TCS SP8 3X STED. The images were recorded by exciting Alexa Fluor 488, Alexa Fluor 594, and STAR 635P with laser lines at 488, 594, and 635 nm, respectively. The detection windows used were 510–560, 600–645, and 670–750 nm. The pixel size of the images was 25–30 nm, and the pixel dwell time used was 10–40 µs, added over two to four lines.
 
-## Light-sheet microscopy
+### Light-sheet microscopy
 
 The expanded slices from four different parts of the lamprey spinal cord were separately glued to a metal rod and placed in the chamber of a Zeiss Light-sheet Z1 microscope containing DI water. Fluorescence was excited from two sides using ×10/0.2 NA illumination objectives and detected using a ×10/0.4 NA or ×20/1.0 NA water dipping objective.
 
-## Image analysis
+### Image analysis
 
 The images were analysed using Fiji (Schindelin et al., 2012), Imspector (Max-Planck Innovation), and MATLAB (The Mathworks). The transverse sections of the cilia images were deconvoluted with a calculated effective STED PSF, Lorentzian with FWHM of 50 nm, using the Richardson–Lucy deconvolution implemented in Imspector. The deconvolution was stopped after five iterations. The line profiles of cilia and DCVs were fitted with a Gaussian, and the FWHM was measured. The OriginLab software (OriginLab) was used for making the graphs. Animation and spot object creation tools of Imaris 9.1 (Bitplane) were used to make 3D movies and segmentation of the 3D data.
 
@@ -149,14 +452,14 @@ The quantification of the somatostatin and dopamine DCVs in the cell area (2D) w
 
 The quantification of the somatostatin and dopamine DCVs in cell volume was performed using the 3D imageJ suite plugins (Ollion et al., 2013). The 3D stacks were slightly adjusted for noise applying a two-pixel 3D median filter. The background was detected by applying a 15-pixel 3D median filter and then subtracted from the stacks. The stacks were then segmented by first detecting the seeds points using the maximum local filter and then applying the 3D spot segmentation. Vesicles with a volume smaller than 0.008 µm3 were considered for the final quantification and their number density was calculated.
 
-## Live slices
+### Live slices
 
 The spinal cord of lamprey (n = 5) was dissected out and embedded in 4% agar dissolved in ice-cooled oxygenated 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES)-buffered physiological solution containing (in mM): 138 NaCl, 2.1 KCl, 1.8 CaCl2, 1.2 MgCl2, 4 glucose, 2 HEPES, and with pH adjusted to 7.4 with NaOH. The agar block containing the spinal cord was glued to a metal plate and transverse slices of the spinal cord (100–150 or 300 µm) were cut on a vibrating microtome. The preparation was continuously perfused with HEPES solution at 4–6°C. Then the spinal cord slice was exposed to HEPES solution with various pH values (7.4, 6.5, and 8.5) for 8–10 min. The slices were then fixed immediately with 4% PFA (somatostatin) or 4% PFA and 1% glutaraldehyde (dopamine and GABA) in 0.01 M PBS overnight at 4°C. Following a thorough rinse in 0.01 M PBS, the slices (100–150 µm) were incubated with a rat monoclonal anti-somatostatin, a mouse monoclonal anti-GABA, or a mouse monoclonal anti-dopamine antibody overnight at 4°C. The slices were then incubated with Alexa Fluor 594-conjugated donkey anti-rat or anti-mouse IgG as described above.
 
-## Patch-clamp recordings
+### Patch-clamp recordings
 
 The spinal cord slices (300 µm) of lamprey (n = 5) after slicing were transferred in a cooled recording chamber and allowed to recover at 5°C for 1 hr before recording. Patch electrode was prepared from borosilicate glass microcapillaries (Hilgenberg GmbH) using a two-stage puller (PP830, Narishige, Japan). Patch electrodes (8–12 MΩ) were filled with an intracellular solution of the following composition (in mM): 130 K-gluconate, 5 KCl, 10 HEPES, 4 Mg-ATP, 0.3 Na-GTP, and 10 phosphocreatine sodium salt. The pH of the solution was adjusted to 7.4 with KOH and osmolarity to 270 mOs ml−1 with water. Cells ventral to the central canal were recorded in whole-cell in current-clamp mode using a Multiclamp 700B amplifier (Molecular Devices Corp., CA, USA). Bridge balance and pipette capacitance compensation were adjusted and signals were digitized and recorded using Clampex software and analysed in Clampfit (pCLAMP 10, Molecular Devices, CA, USA). The neurons were visualized with DIC/infrared optics (Olympus BX51WI, Tokyo, Japan). Resting membrane potentials were determined in current-clamp mode during whole-cell recording. The following drugs were added to the extracellular solution and applied by bath perfusion: the GABAA receptor antagonist gabazine (20 mM, Tocris, Ellisville, MO, USA) and the glutamate receptor antagonist kynurenic acid (2 mM, Tocris, Ellisville, MO, USA). Neurons were intracellularly labelled by injection of 0.5% Neurobiotin (Vector Laboratories) during whole-cell recordings. After recording the spinal cord slices were fixed with 4% formalin. To investigate whether the intracellularly Neurobiotin-labelled CSF-c cells express TH, the slices were incubated overnight with a mouse monoclonal anti-TH antibody and then rinsed thoroughly in 0.01 M PBS and incubated with a mixture of Alexa Fluor 488-conjugated streptavidin (1:1000, Jackson ImmunoResearch Labs) and Cy3-conjugated donkey anti-mouse IgG (1:500, Jackson ImmunoResearch Labs) for 3 hr at room temperature.
 
-## In situ hybridization
+### In situ hybridization
 
 Lamprey (n = 2) were deeply anesthetized as described above and the rostral spinal cord was removed, fixed in 4% formalin in 0.1 M PB overnight at 4°C, and then cryoprotected in 20% sucrose in 0.1 M PB. Then, 10–20 µm thick cryostat sections were made and stored at −80°C until processed. Single-stranded digoxigenin-labelled sense and antisense PKD2L1 riboprobes were generated by in vitro transcription of the previously cloned PKD2L1 cDNA using the Digoxigenin RNA Labeling kit (Roche Diagnostics). Briefly, sections were incubated for 1 hr in prehybridization mix (50% formamide, 5× SSC, 1% Denhardt’s, 50 g/ml, salmon sperm DNA, 250 g/ml yeast RNA) at 60°C. Sections incubated with the heat-denatured digoxigenin-labelled riboprobe were hybridized overnight at 60°C. Following the hybridization, the sections were rinsed twice in 1× SSC, washed twice in 1× SSC (30 min each) at 60°C and twice in 0.2× SSC at room temperature. After blocking in 0.5% blocking reagent (PerkinElmer), the sections were incubated overnight in anti-DIG antibody coupled to HRP (1:2000, Roche Diagnostics) at 4°C. The probe was then visualized by TSA Cy3 Plus Evaluation Kit (PerkinElmer). The specificity of the hybridization procedure was verified by incubating sections with the sense riboprobe (data not shown). The sections were rinsed thoroughly in 0.01 M PBS and then incubated with a mouse monoclonal anti-TH antibody (1:200, Millipore) overnight at 4°C, rinsed in PBS, and incubated with Alexa Fluor 488-conjugated donkey anti-mouse IgG (1:200, Jackson ImmunoResearch Labs) and 640/660 deep-red fluorescent Nissl stain (1:1000, Thermo Fisher Scientific) for 2 hr and mounted with Mowiol. All primary and secondary antibodies were diluted in 1% BSA and 0.3% Triton X-100 in 0.1 M PB.

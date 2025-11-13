@@ -34,15 +34,15 @@ There is growing recognition of the importance of data sharing for scientific pr
 
 Starting with early pioneering efforts by Gazzaniga and Van Horn to establish an fMRI Data Center in 1999 (Van Horn and Gazzaniga, 2013), data sharing has become well established in the domain of neuroimaging (Milham et al., 2018; Poldrack and Gorgolewski, 2014; Poline et al., 2012). A major impetus for the growth of data sharing was the International Neuroimaging Data Sharing Initiative (Mennes et al., 2013), which published a landmark paper in 2010 (Biswal et al., 2010) demonstrating the scientific utility of a large shared resting fMRI dataset. The most prominent recent examples have been large-scale prospective data sharing projects, including the Human Connectome Project (HCP) (Van Essen et al., 2013), the NKI-Rockland sample (Nooner et al., 2012), Adolescent Brain Cognitive Development study (Casey et al., 2018), and the UK Biobank (Littlejohns et al., 2020). These datasets have provided immense value to the field and have strongly demonstrated the utility of shared data. However, their scientific scope is necessarily limited, given that each dataset includes only a limited number of imaging tasks and measurement types. Beyond these large focused data sharing projects, there is a ‘long tail’ of smaller neuroimaging datasets that have been collected in service of specific research questions. Making these available is essential to ensure reproducibility as well as to allow aggregation across many different types of measurements in service of novel scientific questions. The OpenNeuro archive addresses this challenge by providing researchers with the ability to easily share a broad range of neuroimaging data types in a way that adheres to the FAIR principles.
 
-## Goals and principles
+### Goals and principles
 
 The OpenNeuro archive evolved from the OpenfMRI archive (Poldrack et al., 2013), which was focused solely on the sharing of task-based human fMRI data. Some of the principles behind OpenNeuro were inherited from OpenfMRI, whereas others grew out of our experiences in that project as well as from new developments in the domain of open science.
 
-## Minimal restrictions on sharing
+### Minimal restrictions on sharing
 
 There is a range of restrictiveness across data archives with regard to their data use agreements (Jwa and Poldrack, 2021). At one end of the spectrum are highly restricted databases such as the Alzheimer’s Disease Neuroimaging Initiative, which requires researchers to submit their scientific question for review and requires the consortium to be included as a corporate author on any publications. OpenNeuro represents the other pole of restrictiveness, by releasing data (by default) under a Creative Commons Zero (CC0) Public Domain Dedication which places no restrictions on who can use the data or what can be done with them. While not legally required, researchers using the data are expected to abide by community norms and cite the data following the guidelines included within each dataset. The primary motivation for this policy is that it makes the data maximally accessible to the largest possible number of researchers and citizen-scientists.
 
-## Standards-focused data sharing
+### Standards-focused data sharing
 
 To ensure the utility of shared data for the purposes of efficient discovery, reuse, and reproducibility, standards are required for data and metadata organization. These standards make the structure of the data clear to users and thus reduce the need for support by data owners and curation by repository owners, as well as enabling automated QA, preprocessing, and analytics. Unfortunately, most prior data sharing projects have relied upon custom organizational schemes, which can lead to misunderstanding and can also require substantial reorganization to adapt to common analysis workflows. The need for a clearly defined standard for neuroimaging data emerged from our experiences in the OpenfMRI project; while the repository had developed a custom scheme for data organization and file naming, this scheme was ad hoc and limited in its coverage, and datasets often required substantial manual curation (involving laborious interaction with data owners). In addition, there was no way to directly validate whether a particular dataset met the standard.
 
@@ -50,7 +50,7 @@ For these reasons, we focused at the outset of the OpenNeuro project on developi
 
 While BIDS and OpenNeuro are now independent projects, there is a strongly synergistic relationship. All data uploaded to OpenNeuro must first pass a BIDS validation step, such that all data in OpenNeuro are compliant with the BIDS specifications at upload time. Conversely, the OpenNeuro team has made substantial contributions to the BIDS standard and validator. The BIDS standard has been remarkably successful, with tens of thousands of datasets now available in the format, including but not limited to those contained in the OpenNeuro database. As a consequence, this model maximizes compatibility with processing and analysis tools (Gorgolewski et al., 2017), but more importantly, it effectively minimizes the potential for data misinterpretation (e.g., when owner and reuser have slightly different definitions of a critical acquisition parameter). Through the adoption of BIDS, OpenNeuro has moved away from project- or database-specific data structures designed by the owner or the distributor (as used in earlier projects such as OpenfMRI and HCP) and toward a uniform and unambiguous representation model agreed upon by the research community prior to sharing and reuse.
 
-## FAIR sharing
+### FAIR sharing
 
 The FAIR principles (Wilkinson et al., 2016) have provided an important framework to guide the development and assessment of open data resources. OpenNeuro implements each of these principles.
 
@@ -62,11 +62,11 @@ Interoperable: The data and metadata use the BIDS standard to ensure accessible 
 
 Reusable: The data are released with a clear data use agreement (currently defaulting to a CC0 public domain dedication). Through use of the BIDS standard, the data and metadata are consistent with community standards in the field.
 
-## Data versioning and preservation
+### Data versioning and preservation
 
 OpenNeuro keeps track of all changes in stored datasets and allows researchers to unambiguously report the exact version of the data used for any analysis. OpenNeuro preserves all versions of the data through the creation of ‘snapshots’ that unequivocally point to one specific point in the lifetime of a dataset. Data management and snapshots are supported by DataLad (RRID:SCR_003931; Halchenko et al., 2021), a free and open-source distributed data management system (Hanke et al., 2021).
 
-## Protecting privacy and confidentiality of data
+### Protecting privacy and confidentiality of data
 
 There is a direct relationship in data sharing between the openness of the data and their reuse potential; all else being equal, data that are more easily or openly available will be more easily and readily reused. However, all else is not equal, as openness raises concern regarding risks to subject privacy and confidentiality of data in human subjects research. Researchers are ethically bound to both minimize the risks to their research participants (including risks to confidentiality) and to maximize the benefits of their participation (United States. National Commission for the States, 1978). Because sharing of data will necessarily increase the potential utility of the data, researchers are ethically bound to share human subject data unless the benefits of sharing are outweighed by risks to the participant (Brakewood and Poldrack, 2013).
 
@@ -74,13 +74,19 @@ In general, risks to data privacy and confidentiality are addressed through deid
 
 Truly informed consent requires that subjects be made aware that their data may be shared publicly, and that confidentiality cannot be absolutely guaranteed in the future. For this reason, we recommend that researchers planning to share their data via OpenNeuro use a consent form based on the Open Brain Consent (Bannier et al., 2021), which includes language that ensures subject awareness of the intent to share and its potential impact on the risk of participating. Of note, the Open Brain Consent has recently been adapted to include a data usage agreement that accommodates the European Union’s General Data Protection Regulation (GDPR 2016/679); however, data collected in countries covered by GDPR cannot be shared through OpenNeuro at present due to the requirement for restrictive data use agreements that are not currently supported by OpenNeuro.
 
-## Open source
+### Open source
 
 The entirety of the code for OpenNeuro is available under a permissive open-source software license (MIT License) at https://github.com/OpenNeuroOrg/openneuro. This enables any researcher who wishes to reuse part or all of the code or to run their own instance of the platform.
 
-## Data submission and access
+### Data submission and access
 
 Figure 1 outlines the steps required for sharing a dataset using OpenNeuro. Once shared, data can be accessed by several available mechanisms.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71774/elife-71774-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71774/elife-71774-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71774/elife-71774-fig1-figsupp2-v2.jpg)
 
 Web download: Each snapshot is associated with a link that provides immediate downloading of the dataset.
 
@@ -90,19 +96,19 @@ OpenNeuro command line tool: The OpenNeuro command line tool provides access to 
 
 Amazon S3: The latest snapshot as well as all previous versions of a dataset may be fetched using the Amazon Web Services (AWS) clients or directly via https.
 
-## User support
+### User support
 
 Support for individual datasets: Data users sometimes have questions regarding particular datasets. In order to facilitate discussion of these issues and to make those discussions available to the entire community, a discussion forum is provided on each dataset page. The dataset owner is automatically notified by email of any questions that are posted. In addition, users can ‘follow’ a dataset of interest and receive notifications of any comments posted to the dataset.
 
 Site support: Two mechanisms are provided for users of the OpenNeuro site to obtain help with site issues. First, a helpdesk is available directly from the site, through which users can submit specific help questions. Second, users are recommended to post general questions to the Neurostars.org question and answer forum, so that the answers will be available to the entire community.
 
-## Data processing
+### Data processing
 
 Data processing was initially envisioned as an incentive for researchers to share their data, and the OpenNeuro site was launched in 2017 with the ability to perform cloud-based data processing using a limited set of analysis workflows. This feature was disabled in 2018, after an overhaul of the site’s initial storage infrastructure. At that time, we determined that it would be preferable to collaborate with an existing platform dedicated to cloud processing rather than rebuilding our own execution platform. At present, OpenNeuro has partnered with the Brainlife.io platform (RRID:SCR_020940), which provides a large set of cloud-based neuroimaging workflows for data analysis and visualization. Data hosted on OpenNeuro can be easily imported into Brainlife for analysis, and more than 400 OpenNeuro datasets are cached for quick access; in the first 6 months of 2021, more than 700 analyses were performed on these datasets. In the future we plan to partner with additional platforms, including the NEMAR platform for EEG/MEG analysis; the availability of the data via DataLad and Amazon S3 also enables any platform to make the data available to their users without requiring any agreement or effort from OpenNeuro.
 
 ## Results
 
-## Usage and impact
+### Usage and impact
 
 The OpenNeuro site was launched in June 2017, and was originally seeded with all of the datasets previously shared through OpenfMRI, after converting them to the BIDS standard. All data presented below are current as of October 9, 2021. The database contains 604 datasets comprising data from 20,989 individual participants. Figure 2 shows cumulative figures for numbers of datasets and subjects since 2018, demonstrating sustained and continual growth in the archive since its inception.
 
@@ -112,9 +118,56 @@ The OpenNeuro site was launched in June 2017, and was originally seeded with all
 
 The overwhelming majority of datasets are from humans (574 datasets, 95%), with a small but growing number of nonhuman species including mouse (17 datasets), rat (6 datasets), nonhuman primates (2 datasets), dogs (1 dataset), and juvenile pigs (1 dataset). Table 1 presents data for the prevalence of different modalities; while the majority of datasets include some form of MRI data, other supported modalities are present including electrophysiological measures and PET.
 
+**Table 1.**
+ Number of datasets by imaging modality; additional modalities present in fewer than three datasets are not included here.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Modality</th>
+      <th>Number of datasets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anatomical MRI</td>
+      <td>501</td>
+    </tr>
+    <tr>
+      <td>Functional MRI</td>
+      <td>445</td>
+    </tr>
+    <tr>
+      <td>Electroencephalography</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>Diffusion-weighted MRI</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Magnetoencephalography</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Positron emission tomography</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Intracranial EEG</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Arterial spin labeling MRI</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
 OpenNeuro is a recommended data repository for a number of publishers and journals, including Nature Scientific Data, PLOS, eLife, F1000 Research, Gigascience, BioMed Central, American Heart Association, and Wellcome Open Research. The database contains 407 DOIs for publications associated with datasets (including both primary scientific publications and data descriptors).
 
-## Multiple dimensions of ‘big data’
+### Multiple dimensions of ‘big data’
 
 Discussions of ‘big data’ in neuroimaging (Poldrack and Gorgolewski, 2014; Smith and Nichols, 2018) have largely focused on datasets including large numbers of individuals. While these analyses are essential for robust population inference, it is also important to recognize that large numbers of subjects are only one dimension over which a neuroimaging dataset can be ‘big’. Here, we will define the number of subjects as the ‘width’ of the dataset, the number of different phenotypes measured for each individual as the ‘breadth’ of the dataset, and the number of measurements per individual as the ‘depth’ of the dataset.
 
@@ -126,7 +179,7 @@ The OpenNeuro database is distinguished by sharing datasets that are extensive a
 
 Another unique feature of OpenNeuro is the breadth of phenotypes across datasets. To further characterize this, we searched the text associated with OpenNeuro datasets to identify terms related to psychological concepts and tasks as defined in the Cognitive Atlas ontology (Poldrack et al., 2011). Word clouds showing the top terms identified in this analysis are shown in Figure 1—figure supplement 2. This analysis shows a broad range of tasks and concepts associated with these datasets, highlighting the substantial conceptual and methodological breadth of the archive.
 
-## Data reuse
+### Data reuse
 
 OpenNeuro has distributed a substantial amount of data; from May 2020 through April 2021, a total of 406 terabytes of data were distributed. Because data reuse is not directly measurable, we utilize published reuse of the shared data as a proxy. To identify published reuses of OpenNeuro data, we used Google Scholar and CrossRef to identify potential reuses, and then manually examined them to confirm that they were a legitimate reuse (as opposed to a primary publication of the data or data descriptor); note that this is an underestimate since many papers during this period reported analyses of data downloaded from OpenfMRI, which would not have been identified in our searches. We identified 165 publications that reused OpenNeuro datasets; this showed a sharp increase over time (see Figure 4). Of these publications, 112 were journal or conference papers, 42 were preprints, and 11 were other types of publications (such as theses or project reports). A total of 111 OpenNeuro datasets were reused at least once, with the most popular dataset (Poldrack et al., 2016) appearing in 28 published reuses. A significant number of publications reused multiple datasets; 31 of the 165 papers reused at least two datasets, with a maximum of 40 datasets reused (Esteban et al., 2019). Collecting these data from scratch would have required more than 21,000 individual subject visits; at an estimated scanning cost of $1000/session (based on the conservative cost estimate from Milham et al., 2018), this represents a total data reuse value of nearly 21 million US dollars. These reuses have a total of 1329 citations (according to Google Scholar as of June 15, 2021); the most highly cited reuse (Esteban et al., 2019) has more than 500 citations.
 
@@ -144,7 +197,7 @@ The data in OpenNeuro have been particularly useful for methodological researche
 
 The OpenNeuro data archive plays an important role in advancing neuroscience research and ensuring its reproducibility by enabling the sharing of a broad range of neuroscience data types according to the FAIR principles. Its tight integration with the community-driven BIDS standard enhances the ease of sharing, the reusability of the shared data, and the extensibility of the archive in the future. The shared data have enabled a growing number of publications that provide novel neuroscientific insights, as well as supporting novel methodological advances and software development.
 
-## Lessons learned
+### Lessons learned
 
 The experiences of our group in developing the OpenNeuro project have provided a number of lessons that may be useful more generally for researchers interested in establishing a culture of data sharing within their scientific subdomain.
 
@@ -154,7 +207,7 @@ Second, we have found that ‘it takes an ecosystem’ to make data sharing succ
 
 Finally, we would highlight the importance of domain-specific data repositories that support a particular research community. All of the sharing activities accomplished using OpenNeuro could in principle have been accomplished using more general data sharing repositories (such as Figshare or Dryad). A unique benefit of OpenNeuro has been in making a large number of datasets easily findable by researchers, rather than requiring a trawl through a much larger body of datasets to find ones that are relevant. By developing upload and download systems that are tailored for imaging data, OpenNeuro has also greatly lowered the barrier to sharing and reusing data. These benefits argue for the continued need for domain-specific data sharing projects designed in close consultation with researchers in the area. Domain specificity has also allowed OpenNeuro to nurture a community around the resource. Through our social media presence, we have engaged the community with regular blog posts that highlight the most open and sharing labs over the previous 6 months to promote more social incentives to sharing.
 
-## Long-term sustainability
+### Long-term sustainability
 
 A continual challenge for any investigator-initiated data repository is the long-term sustainability of the archive, in order to ensure researchers’ trust in the platform (Lin et al., 2020). The ongoing costs of running a repository are substantial, primarily due to the continuing cost of technological upkeep of a web platform with regard to security and stability, as well as the ongoing costs of storage and bandwidth on cloud platforms or hardware maintenance when using on-premise computing systems. Performant web applications require the use of cutting-edge software tools, which can often become deprecated or unstable over time, leading to substantial technical debt that must be continually addressed to maintain stable and secure operation.
 
@@ -164,7 +217,7 @@ Another resource for longer-term sustainability is institutional data repositori
 
 OpenNeuro has also been fortunate to be part of the Amazon Public Datasets project (https://registry.opendata.aws/openneuro/), which has provided free data storage and bandwidth for the openly available datasets in the OpenNeuro archive.
 
-## Current limitations and future directions
+### Current limitations and future directions
 
 There are a number of additional features planned for future development. These include:
 
@@ -176,17 +229,17 @@ Bringing computing to data: The availability of the OpenNeuro data on the AWS al
 
 Beyond MRI data: Driven by the initial seeding of data from OpenfMRI, and reflecting the fact that BIDS was originally MRI-centric, the data currently available from OpenNeuro are heavily skewed toward MRI, and fMRI in particular (Table 1). However, BIDS is quickly expanding to other modalities that can readily be uploaded to OpenNeuro, and there has been a rapid increase in sharing of other modalities; for example, more than 60 EEG datasets have been deposited since the publication of the BIDS-EEG standard in 2019 (Pernet et al., 2019). This organic expansion beyond MRI will be supported with the necessary adaptations (e.g., online visualization of new modalities) of OpenNeuro’s user interface.
 
-## Conclusion
+### Conclusion
 
 Data sharing ensures the transparency and reproducibility of scientific research, and allows aggregation across datasets that improves statistical power and enables new research questions. The OpenNeuro repository plays a central role in the data sharing ecosystem by promoting maximally open sharing of data, and by enhancing open availability of data from a wide range of datasets spanning. The growth and impact of the repository demonstrate the viability of minimally restrictive sharing, and the importance of common standards such as BIDS for the effective sharing and reuse of data.
 
 ## Materials and methods
 
-## OpenNeuro infrastructure
+### OpenNeuro infrastructure
 
 Code for the OpenNeuro platform is available at (https://github.com/OpenNeuroOrg/openneuro). The application utilizes a cloud-based containerized architecture and is built in JavaScript and Python with a MongoDB database for application data storage. OpenNeuro is hosted on AWS using the Kubernetes container orchestration platform. Services are deployed as containers and integrated via a JavaScript GraphQL API gateway and the AWS Application Load Balancer. Several clients access this API, the React website, OpenNeuro command line interface, and an ElasticSearch indexer. Datasets are stored as DataLad repositories and managed by a Python backend service container. Each DataLad repository is assigned to a ZFS pool backed by AWS Elastic Block Store. This allows DataLad versioning and filesystem level access to datasets with existing processing and validation tools. Persistent metadata such as user accounts and permissions are maintained in a MongoDB database. Ephemeral caching is provided by Redis. Search indexes, performance monitoring, and logging are implemented with ElasticSearch. CloudFront is used as a global cache and network to provide global presence.
 
-## Content analysis
+### Content analysis
 
 Data regarding OpenNeuro contents and usage were current as of October 9, 2021. Code and data needed to execute all analyses and generate all figures are available from https://doi.org/105281/zenodo5559041.
 

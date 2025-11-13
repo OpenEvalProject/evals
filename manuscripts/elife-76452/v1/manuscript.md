@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Neurobiology, Duke University Durham United States
-2. https://ror.org/00py81415 Center for Cognitive Neuroscience, Duke University Durham United States
+1. Department of Neurobiology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Center for Cognitive Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 3. Duke Institute for Brain Sciences Durham United States
-4. https://ror.org/01an3r305 Department of Neuroscience, University of Pittsburgh Pittsburgh United States
-5. https://ror.org/01an3r305 Center for the Neural Basis of Cognition, University of Pittsburgh Pittsburgh United States
-6. https://ror.org/00py81415 Department of Statistical Science, Duke University Durham United States
-7. https://ror.org/00py81415 Department of Psychology and Neuroscience, Duke University Durham United States
-8. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
-9. https://ror.org/00py81415 Department of Computer Science, Duke University Durham United States
+4. Department of Neuroscience, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+5. Center for the Neural Basis of Cognition, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+6. Department of Statistical Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+7. Department of Psychology and Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+8. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+9. Department of Computer Science, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -42,31 +42,204 @@ To address these questions, we turned to the primary visual cortex (V1). V1 allo
 
 We evaluated activity in V1 while monkeys viewed either individual stimuli (gratings) or two different types of combined stimuli (superimposed vs. adjacent gratings). When the two gratings were superimposed, they presumably appeared as one fused object, or plaid (Adelson and Movshon, 1982; Rodman and Albright, 1989; Heeger et al., 1996; Busse et al., 2009; Lima et al., 2010), whereas when they were adjacent they appeared as two distinct objects. We found evidence for coding fluctuations when two gratings were present at separate locations (two objects) but not when the gratings were superimposed at the same location and appeared as one fused object. We then evaluated the degree and sign of the spike count correlations (commonly referred to as ‘noise’ correlations; Cohen and Kohn, 2011) observed between pairs of simultaneously recorded units in response to presentations of particular stimulus conditions. We found that the pattern of correlations varied dramatically depending on whether the stimuli were presented either individually or superimposed (single stimuli or one fused object) vs. when they were presented side-by-side (two separate objects). In the two-object case, the distribution of spike count correlations was markedly different from previous reports involving individual stimuli (Table 1, Cohen and Kohn, 2011), and encompassed a range spanning many negative correlations in addition to positive ones. Whether the correlations tended to be positive vs. negative depended on whether the two neurons in the pair preferred the same stimulus (median correlation + 0.25) or preferred different stimuli (median correlation –0.05). The distribution of spike count correlation values was even more widely spread among pairs of neurons that showed demonstrably fluctuating activity across stimulus presentations (same preference: +0.49 and different preference: –0.14). In contrast, in the single stimuli and fused object (superimposed gratings) cases, positive correlations predominated (single stimuli: median value 0.15–0.19; fused object: median value +0.15). Distinct tuning-preference-related distributions of spike count correlations for adjacent stimuli but not for superimposed/fused stimuli were also seen in a smaller additional dataset in V4.
 
+**Table 1.**
+ Summary of included data.Analyses were conducted on ‘triplets,’ consisting of a combination of A, B, and AB conditions. If the spikes evoked by the A and B stimuli failed to follow Poisson distributions with substantially separated means, the triplet was excluded from analysis. This table shows the numbers of triplets that survived these exclusion criteria for each brain area and type of stimulus condition (last column), as well as the numbers of monkeys, distinct units, and sessions that they were derived from (columns 6–9).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>1. Stimuli</th>
+      <th>2. Brain area</th>
+      <th>3. Task</th>
+      <th>4. Monkeys</th>
+      <th>5. Available sessions</th>
+      <th>6. Sessions for which at least one triplet was included</th>
+      <th>7. Available units</th>
+      <th>8. Units for which at least one triplet was included</th>
+      <th>9. Triplets passing exclusion criteria for analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adjacent</td>
+      <td>V1</td>
+      <td>Attention</td>
+      <td>ST, BR</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1604</td>
+      <td>935</td>
+      <td>1389</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V4</td>
+      <td>Fixation</td>
+      <td>BA, HO</td>
+      <td>17</td>
+      <td>17</td>
+      <td>991</td>
+      <td>274</td>
+      <td>456</td>
+    </tr>
+    <tr>
+      <td>Superimposed</td>
+      <td>V1</td>
+      <td>Fixation</td>
+      <td>ST, BR</td>
+      <td>25</td>
+      <td>23</td>
+      <td>2304</td>
+      <td>770</td>
+      <td>1686</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V4</td>
+      <td>Fixation</td>
+      <td>JD, SY</td>
+      <td>21</td>
+      <td>21</td>
+      <td>1744</td>
+      <td>817</td>
+      <td>1529</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Trial counts for included sessions.The values reported are calculated for individual recording sessions for which at least one triplet was included for the analysis; the numbers of trials are the same for all simultaneously recorded units within a session. The values for ‘A’ and ‘B’ trials indicate the values for either A or B; that is, there were on average 21 ‘A’ trials and 21 ‘B’ trials for each triplet in the adjacent V1 dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Stimuli</th>
+      <th rowspan="2">Brain area</th>
+      <th colspan="4">Number of ‘A’ and ‘B’ trials</th>
+      <th colspan="4">Number of ‘AB’ trials</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Min</th>
+      <th>Max</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adjacent</td>
+      <td>V1</td>
+      <td>21.0</td>
+      <td>12.3</td>
+      <td>6</td>
+      <td>56</td>
+      <td>17.8</td>
+      <td>12.8</td>
+      <td>6</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V4</td>
+      <td>72.8</td>
+      <td>30.3</td>
+      <td>5</td>
+      <td>136</td>
+      <td>72.2</td>
+      <td>30.7</td>
+      <td>6</td>
+      <td>132</td>
+    </tr>
+    <tr>
+      <td>Superimposed</td>
+      <td>V1</td>
+      <td>25.4</td>
+      <td>15.4</td>
+      <td>7</td>
+      <td>74</td>
+      <td>23.3</td>
+      <td>12.1</td>
+      <td>7</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V4</td>
+      <td>131.3</td>
+      <td>42.0</td>
+      <td>20</td>
+      <td>196</td>
+      <td>184.5</td>
+      <td>64.6</td>
+      <td>20</td>
+      <td>270</td>
+    </tr>
+  </tbody>
+</table>
+
 Overall, this pattern of results is consistent with the possibility that when two visual objects are presented in close proximity, a subpopulation of visual cortical neurons fluctuates in a coordinated fashion, generally retaining information about segregated objects and suggesting an account for why they can be perceived at once.
 
 ## Results
 
-## General experimental design
+### General experimental design
 
 The activity of neurons in visual cortex was recorded in three experimental designs in six monkeys (N = 2 per experiment per brain area), using chronically implanted multielectrode arrays (Figure 1a, Table 1). In the ‘superimposed’ dataset, the activity of neurons in V1 and V4 was recorded while monkeys passively fixated (for details, see Ruff et al., 2016). In the ‘adjacent’ datasets, the activity of V1 and V4 neurons was recorded while monkeys either passively fixated (V4 recordings) or fixated while performing an orientation change discrimination task involving either one of these stimuli or a third stimulus presented in the ipsilateral hemifield (V1) (for details, see Ruff and Cohen, 2016). In the ‘superimposed’ dataset, the gratings were large, spanning the receptive fields of the recorded neurons, and were presented either individually or in combinations of two orthogonal gratings at a consistent location on every trial (Figure 1c). When the two gratings were presented, they superimposed and formed one fused ‘plaid’ object. In the ‘adjacent’ datasets, the stimuli were smaller Gabor patches (V1, V4, Figure 1d and e) or natural images (V4, Figure 1e, stimuli from Long et al., 2018) and were presented either individually or adjacent to one another as two separate objects. Together they spanned the receptive fields of the V1 or V4 neurons being recorded in a fashion similar to the ‘superimposed’ experiment. For data collected during performance of the attention task (V1), we focused our analyses on trials in which the monkeys attended to the third stimulus and judged its orientation, that is, attention was consistently directed away from either of the two adjacent Gabor patches that elicited responses in the neurons under study (Figure 1d). Trials in which the monkey was required to attend to one or the other of the adjacent Gabor patches were excluded from the analyses, as were incorrectly performed trials.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig1-v1.jpg)
+
+**Figure 1.:** (a) Multiunit activity was recorded in V1 and V4 using chronically implanted 10 × 10 or 6 × 8 electrode arrays in six monkeys (see ‘Methods’). (b) In both ‘superimposed’ and ‘adjacent’ datasets, the stimuli were positioned to overlap with (‘adjacent’ dataset) or completely span (‘superimposed’ dataset) the centers of the receptive fields of the recorded neurons. (c) In the ‘superimposed’ dataset, gratings were presented either individually or in combination at a consistent location and were large enough to cover the V1 and V4 receptive fields (stimulus diameter range: 2.5–7o). The combined gratings appeared as a plaid (rightmost panel). Monkeys maintained fixation throughout stimulus presentation and performed no other task. (d) In the V1 ‘adjacent’ dataset, Gabor patches were smaller (typically ~1o, see Figure 1—figure supplement 1) and were presented individually or side-by-side roughly covering the region of the V1 receptive fields. Monkeys maintained fixation while performing an orientation change detection task. The data analyzed in this study involved trials in which the monkeys were attending a third Gabor patch located in the ipsilateral hemifield to perform the orientation change detection. (e) In the V4 ‘adjacent’ dataset, the stimuli consisted of either Gabor patches or natural image stimuli, and monkeys performed a fixation task. Incorrectly performed trials and stimulus presentations during which we detected microsaccades were excluded from all analyses.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Example receptive field positions, sample estimated receptive field size, and layout of stimuli for the V1 dataset involving adjacent stimuli. This figure was adapted from Figure 1B of Ruff and Cohen, 2016. (b) Actual stimuli used. One ‘A’ and one ‘B’ stimulus was used in each session. The sizes of the circles indicate the sizes of the Gabor patches; specifically, the radii are equal to twice the standard deviations of the Gaussian envelopes used to construct the patches. Some stimuli were centered slightly into the ipsilateral hemifield but extended into the contralateral hemifield.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Average eye positions during stimulus presentations on single (gray) vs. dual (magenta) stimulus trials during one recording session. Box indicates the fixation window, which was ±0.5°. (b) Geometric mean of the horizontal and vertical standard deviations of eye position for this session. (c) Average standard deviation of eye position across all 16 recording sessions as a function of stimulus type. The single vs. combined stimulus values did not differ (one-tailed paired t-test, p=0.927).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** For clarity, receptive field centers are shown in relationship to the location of the more contralateral of the two stimuli; the other stimulus location is shown as the average of all the other stimulus locations in relation to the most contralateral one. Each dot shows the RF center of one unit condition (i.e., unit and particular set of stimulus conditions tested in the analysis). Yellow-orange dots correspond to the RF centers for unit conditions that met criteria for inclusion but for which the Bayesian response pattern classification did not yield a high-confidence result (i.e., probability of successful classification was less than 0.67). Magenta and green symbols indicate RF centers for unit conditions that were classified as ‘mixture’ (magenta) or as something other than a ‘mixture’ (green) with high confidence (probability of successful classification was greater than 0.67). The magenta and green bull’s eye symbols correspond to unit conditions that also showed a significant correlation between firing rate and fixational scatter along the dimension connecting the two stimuli for that session (p<0.01). A small number of unit conditions are not plotted here if the RF mapping did not produce a good estimate of RF center. Overall, significant correlations between spike count and scatter of eye fixation (p<0.01) were identified in 4% of the stimulus conditions that were included for analysis (57/1389, see Table 1). Among the conditions that could be successfully categorized with a probability of at least 0.67 (see Figure 2), the prevalence of significant eye position correlations did not differ significantly for conditions labels as ‘mixtures’ (~9%) vs. those that received some other label (~5%). These proportions did not differ from one another by chi-square test (p=0.1730), nor is there any clear pattern in the location of unit conditions showing correlations with eye scatter in relation to RF centers and stimulus locations as shown in this figure. Finally, about 9% of ‘mixtures’ (n = 9) were responsive to both stimuli (i.e., RF centers were intermediate between the two stimuli and responses exceeded baseline firing by at least 1 standard deviation for both stimuli alone); among these nine, only one showed sensitivity to eye position (11%).
+
 Any potential contribution of eye movements and/or fixation variation to visually evoked activity was minimized as follows: (1) fixation windows were small, ±0.5° horizontally and vertically, and trials with broken fixations were excluded from further analysis. (2) Any trials with microsaccades during the stimulus presentations (defined as eye velocity exceeding 6 standard deviations above the mean velocity observed during steady fixation; Engbert and Kliegl, 2003) were excluded from further analysis. (3) Only a 200 ms period after stimulus onset was analyzed. Our reasoning is that any stimulus-evoked modulation in eye position would have a latency of 150–350 ms (Engbert and Kliegl, 2003). This would have limited the consequences of any potential stimulus-evoked fixational modulation to at most only roughly the last 50 ms of the 200 ms spike counting window. In addition, we verified that there actually was no difference in eye position variation based on the stimulus conditions (Figure 1—figure supplement 2), so even this slim possibility was not borne out. Finally, we assessed the responses of individual units to ascertain what proportion of units showed a correlation between firing rate and fixational scatter; this proportion was small overall (4–9%) and did not co-vary with the outcomes of the main analyses of the study (see Figure 1—figure supplement 3 for details).
 
-## Two objects evoke fluctuating activity patterns in V1
+### Two objects evoke fluctuating activity patterns in V1
 
 We first evaluated the response patterns for evidence of fluctuating activity profiles consistent with multiplexing of information on multistimulus trials. Figure 2a illustrates three V1 example units from the adjacent-stimuli dataset, each of which showed spike count distributions on dual stimulus presentations (black lines, 200 ms spike-counting window) that reflected a mixture of the distributions evident on the corresponding single-stimulus presentations (red and blue lines). The dual-stimulus distributions of spike counts are over-dispersed compared to what would be expected if the spikes on dual-stimulus presentations were generated from a similar Poisson process as the single- stimulus presentations, and a tendency for bimodality with modes near the modes for each of the individual stimulus presentations is evident.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig2-v1.jpg)
+
+**Figure 2.:** (a) Distribution of spike counts on single stimuli (red, blue) and dual adjacent stimulus presentations (black) for three units in V1 tested with adjacent stimuli. Spikes were counted in a 200 ms window following stimulus onset. (b) Bayesian model comparison regarding spike count distributions. We evaluated the distribution of spike counts on combined stimulus presentations in relation to the distributions observed on when individual stimuli were presented alone. Four possible models were considered as described in the equations and text. Only one case each of the ‘single’ (B-like) and ‘outside’ (λAB > max(λA, λB) is shown. (c, d) Best spike count models for the adjacent (c) and superimposed (d) stimulus datasets, meeting a minimum winning probability of at least 0.67, i.e., the winning model is at least twice as likely as the best alternative. Pie chart insets illustrate proportion of tested conditions that met this confidence threshold. While ‘singles’ dominated in the adjacent stimulus dataset and ‘singles’ and ‘outsides’ dominated in the superimposed stimulus datasets, we focus on the presence of a ‘mixtures’ as an important minority subpopulation present nearly exclusively in the ‘adjacent’ stimulus dataset.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Shading indicates the confidence level of the model categorization. A winning probability of >0.5 indicates that the winning model is at least as likely as all other models combined; a probability of >0.67 indicates the winner is at least twice as likely as all others, and a probability of 0.95 indicates it is at least 20 times as likely as all others. Cases with a winning probability of >0.25 (the minimum possible) but less than 0.5 are not shown. As noted in the main text, for the adjacent dataset, ‘mixtures’ represented 33% of the cases in which a particular model was at least twice as likely as all other models combined (i.e., the winning probability of 0.67); overall they represented 14% of the cases that passed the exclusion criteria as described in ‘Methods’ and Table 1.
 
 While it is visually evident that the spiking responses of these three V1 example units on combined AB stimulus presentations appear drawn from a mixture of the A-like and B-like response distributions, evaluating this systematically across the population requires a formal statistical assessment. We developed such an assessment in our previous work concerning fluctuating activity in the context of encoding of multiple simultaneous stimuli (Caruso et al., 2018; Mohl et al., 2020; Glynn et al., 2021). In particular, we can model the firing rate behavior of neurons when two simultaneous grating stimuli A and B are presented in relation to the firing rates that occur when stimuli A and B are presented individually. We assume that each single-stimulus condition induces Poisson-distributed spike counts and we exclude cases where this assumption is violated (see ‘Methods’ for details). We use a Bayesian model comparison framework to consider four hypotheses concerning the combined AB stimulus presentations (Figure 2b): (1) the responses to A and B together appear drawn from the same distribution as either A or B and consistently so on every stimulus presentation, as if the unit responded to only one of the two stimuli (‘single’). (2) Responses to A and B together appear drawn from a distribution ‘outside’ the range spanned by the A and B response distributions; this is the predicted pattern if neurons generally exhibited enhanced responses to combined AB stimuli than either stimulus alone, or if one stimulus strongly suppressed the response to the other. (3) The responses to A and B together are drawn from a single distribution with a mean at an ‘intermediate’ value between the A-like and B-like response rates. This is the response pattern that would be expected under theories such as divisive normalization in which the responses of an individual neuron to a more favored stimulus are reduced when other stimuli are also present, but can also represent fluctuating activity on a fast, sub-stimulus-duration timescale, as shown for some neurons in the IT face patch system and inferior colliculus (Caruso et al., 2018). (4) The responses to A and B together appear to be drawn from a ‘mixture’ of the A-like and B-like response distributions. Mixtures are the category of interest for this analysis as they indicate the presence of activity fluctuations at the stimulus-presentation timescale.
 
 The overall presence of ‘mixtures’ in V1 differed substantially depending on whether one object or two was presented (the superimposed vs. adjacent grating datasets). Figure 2c shows the results for conditions that produced a winning model that was at least twice as likely as its nearest competitor (‘win prob >0.67,’ the full results are provided in Figure 2—figure supplement 1). We found that ‘mixtures’ were evident in a third of V1 units (33%) when two objects were presented (adjacent gratings, Figure 2c), but were very rare when only one ‘object’ was present (superimposed gratings, Figure 2d, 2%). The incidence of ‘mixtures’ in V1 for the adjacent stimuli was slightly below that observed in the MF face patch in IT cortex (38%) and about half the rate observed in the inferior colliculus (67%; IT and IC data reanalyzed from Caruso et al., 2018 to use similar winning model criteria as shown here for this study). The remainder of the tested conditions were best explained by the ‘single’ hypotheses for the adjacent stimuli, indicating winner (or loser)-take-all response patterns, or a blend of ‘single’ and ‘outside’ for the superimposed plaid stimuli, indicating the predominance of winner/loser-take-all and either enhancement or suppression in this dataset (see also Figure 2—figure supplement 1). This ‘single’ vs. ‘single-or-outside’ difference almost certainly stems from differences in the size of the stimuli being presented in these two datasets – typically only one of the two adjacent gratings was located within the classical receptive field of a given V1 unit, whereas this was often not the case for the superimposed dataset. This difference is a side note to our main focus on the fluctuating activity patterns that do occur in V1 in response to multiple objects but not in response to individual objects.
 
-## Possible ways fluctuating activity might be coordinated across the population
+### Possible ways fluctuating activity might be coordinated across the population
 
 Our next question concerns how fluctuating activity patterns are coordinated at the population level, and the implications for preserving information about each of the stimuli that are present. To assess such coordination, we computed Pearson’s correlation between the spike count responses observed during presentations a given stimulus combination for pairs of units in each data set (spike count correlation, rsc, also commonly called a noise correlation). We begin by discussing the possible results and their interpretation schematically in Figures 3 and 4. The overall point is that the activity of pairs of neurons might be either positively or negatively correlated, and the interpretation of such correlation patterns will depend on the turning preferences of the two neurons in the pair.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig3-v1.jpg)
+
+**Figure 3.:** (a) Three hypothetical neurons and their possible spike count distributions for single-stimulus presentations. Units 1 and 2 both respond better to stimulus ‘A’ than to stimulus ‘B’ (“congruent” preferences). Unit 3 shows the opposite pattern (‘incongruent’ preferences). (b, c) Possible pairwise spike count correlation (Rsc) patterns for these units. Two units that have congruent A vs. B response preferences will show positive correlations with each other if they both show ‘A-like’ or ‘B-like’ activity on the same trials (panel b, left). In contrast, if one unit prefers ‘A’ and the other ‘B’ (incongruent), then A-like or B-like activity in both units on the same trial will produce a negative spike count correlation (panel b, right). The opposite pattern applies when units tend to respond to different stimuli on different trials (panel c). (d–f). Key examples of the inferences to be drawn at the population level from these potential correlation patterns. (d) Positive correlations among ‘congruent’ pairs negative correlations among ‘incongruent’ pairs would suggest only one stimulus is encoded at the population level at a time. (e) If both stimuli are encoded in the population, then both positive and negative correlations might be observed among both congruent and incongruent pairs. (f) Both stimuli may be encoded, but not necessarily equally. This example shows a pattern intermediate between the illustrations in (d) and (e), and is consistent with one of the two stimuli being overrepresented compared to the other. Other possibilities exist as well, including that neurons may could be uncorrelated with one another (not shown), which would also serve to preserve information about both stimuli at the population level.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Schematic histograms of the possible patterns of spike count correlations across all the pairs of recorded neurons as a function of whether they share the same (‘congruent’) stimulus preferences or have different (‘incongruent’) preferences, and whether they tend to ‘encode’ the same stimulus or different stimuli on each presentation (panel h is panel a + panel d; i = a + e; j = b + f; k = c + g; the bottom row [c, g, k] is a biased version of the row above [b, f, j]). Panels (h), (j), and (k) are included in Figure 3 as panels (d), (e), and (f).
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig4-v1.jpg)
 
-**Figure 4.:** (a) Example units’ correlation patterns (same units as Figure 2a). The two units that shared a similar tuning preference (‘congruent’) exhibited positively correlated spike count variation on individual stimulus presentations for the dual stimulus condition (left), whereas both units 1 and 2 exhibited a negative correlation with the differently tuned (‘incongruent’) unit 3 (middle and right panels). (b) Distribution of Rsc values for the other units that were simultaneously recorded with unit 1 and were also classified as ‘mixtures,’ color coded according to whether the stimulus preference of the other unit was the same as that of unit 1 (‘congruent,’ green) or different (‘incongruent,’ brown). All of the ‘congruent’ pairs exhibited positive correlations, and 5 of 5 were individually significant (p<0.05). All of the ‘incongruent’ pairs exhibited negative correlations, and 1 of 5 was individually significant (p<0.05). (c) Overall, neural pairs in which both units met the ‘mixture’ classification showed distinct positive and negative patterns of correlation in response to adjacent stimuli. Positive correlations were more likely to occur among pairs of neurons that responded more strongly to the same individual stimuli (‘congruent,’ green bars, median rsc = 0.486), and negative correlations were more likely to occur among pairs of neurons that responded more strongly to different individual stimuli (‘incongruent,’ brown bars, median rsc = –0.14, p<0.0001, see ‘Methods’). This bimodal distribution did not occur when only a single stimulus was presented (dashed orange line). (d, e) This pattern of results held even when all the unit pairs were considered in aggregate (d, ‘congruent preference’ pairs, median rsc = 0.252; ‘incongruent preference’ pairs, median rsc = –0.052, p<0.0001), and also occurred for well-isolated single units (e). (f) However, among pairs recorded during presentation of superimposed gratings, this pattern was not apparent: unit pairs tended to show positive correlations in both cases (‘congruent-preference’ median rsc = 0.159, ‘incongruent-preference’ median rsc = 0.144), and there was little evident difference compared to when a single grating was presented (orange line). See Figure 4—source data 1 for additional information.Figure 4—source data 1.The top two rows show the median spike count correlations observed for dual stimuli for various types of pairs of units, and correspond to the data shown in Figure 4 and Figure 5 in the main text (gray background). The next three rows show the same analyses conducted for trials involving single stimuli. Here, the ‘congruent’ group was subdivided according to whether the presented stimulus was the one that elicited the stronger response (‘driven’) or the weaker one (‘not driven’). The bottom two rows show the differences in the medians observed for the relevant congruent and incongruent groups (lines 1 minus 2 and lines 3 minus 5; green background).
+**Figure 4.:** (a) Example units’ correlation patterns (same units as Figure 2a). The two units that shared a similar tuning preference (‘congruent’) exhibited positively correlated spike count variation on individual stimulus presentations for the dual stimulus condition (left), whereas both units 1 and 2 exhibited a negative correlation with the differently tuned (‘incongruent’) unit 3 (middle and right panels). (b) Distribution of Rsc values for the other units that were simultaneously recorded with unit 1 and were also classified as ‘mixtures,’ color coded according to whether the stimulus preference of the other unit was the same as that of unit 1 (‘congruent,’ green) or different (‘incongruent,’ brown). All of the ‘congruent’ pairs exhibited positive correlations, and 5 of 5 were individually significant (p<0.05). All of the ‘incongruent’ pairs exhibited negative correlations, and 1 of 5 was individually significant (p<0.05). (c) Overall, neural pairs in which both units met the ‘mixture’ classification showed distinct positive and negative patterns of correlation in response to adjacent stimuli. Positive correlations were more likely to occur among pairs of neurons that responded more strongly to the same individual stimuli (‘congruent,’ green bars, median rsc = 0.486), and negative correlations were more likely to occur among pairs of neurons that responded more strongly to different individual stimuli (‘incongruent,’ brown bars, median rsc = –0.14, p<0.0001, see ‘Methods’). This bimodal distribution did not occur when only a single stimulus was presented (dashed orange line). (d, e) This pattern of results held even when all the unit pairs were considered in aggregate (d, ‘congruent preference’ pairs, median rsc = 0.252; ‘incongruent preference’ pairs, median rsc = –0.052, p<0.0001), and also occurred for well-isolated single units (e). (f) However, among pairs recorded during presentation of superimposed gratings, this pattern was not apparent: unit pairs tended to show positive correlations in both cases (‘congruent-preference’ median rsc = 0.159, ‘incongruent-preference’ median rsc = 0.144), and there was little evident difference compared to when a single grating was presented (orange line). See Figure 4—source data 1 for additional information.
 
 Figure 3 illustrates potential correlation patterns for pairs of several hypothetical neurons, each having a ‘mixture’ response patterns, but two with a similar or ‘congruent’ individual stimulus preference (unit 1, unit 2, more spikes elicited by ‘A’ than ‘B’ when presented alone) and one with a different stimulus preference compared to the other two (unit 3, more spikes elicited by ‘B’ than ‘A’ when presented alone, ‘incongruent’) (Figure 3a). When spike count correlations are computed across trials in which both ‘A’ and ‘B’ are presented, four different scenarios (or combinations thereof) could occur. ‘Congruent’ units 1 and 2 could be positively correlated, suggesting they are encoding the same stimulus on the same trials (i.e., both ‘A’ or both ‘B,’ Figure 3b, left). Alternatively, they could be negatively correlated, suggesting they are encoding different stimuli on different trials (i.e., one ‘A’ and the other ‘B,’ Figure 3c, left). Conversely, when considering the spike count correlations between pairs of neurons exhibiting ‘incongruent’ stimulus preferences (e.g., a ‘B’ preferring unit 3 vs. the ‘A’ preferring unit 1), the opposite applies – a positive correlation would be consistent with the two neurons encoding different stimuli in concert (Figure 3c, right), and a negative correlation would be consistent with encoding the same stimulus in concert (Figure 3c, left). In short, positive vs. negative spike count correlations in response to combined stimuli will have different interpretations depending on whether the two neurons in the pair both respond more vigorously to the same component stimulus or to different component stimuli.
 
@@ -74,7 +247,7 @@ Several key potential patterns of spike count correlations across a population o
 
 It should be noted that it is likely that all spike count correlations between pairs of neurons ride on an overall wave of at least slight positivity due to shared sensitivity to non-stimulus-related factors like overall arousal level or satiety-related signals that might accompany task performance. Thus, the negative- and positive modes of a broad distribution may not be symmetric around zero but slightly shifted toward the positive side.
 
-## With two objects, distinct distributions of positive and negative spike count correlations occur in V1
+### With two objects, distinct distributions of positive and negative spike count correlations occur in V1
 
 We now turn to the actual results with these predictions in mind, starting with the example units illustrated in Figure 2a. Units 1 and 2 exhibited congruent stimulus preferences: stimulus ‘A,’ elicited higher spike counts (red line) than stimulus ‘B’ (blue line) for both. Unit 3 had the opposite (incongruent) preference, with higher spike counts for ‘B’ than for ‘A.’ Figure 4a shows the activity of each of these units on individual ‘A-and-B’ stimulus presentations plotted against the others. The pattern of spike count correlation on individual stimulus presentations varied depending on the stimulus tuning preferences, with the pairing between the units with congruent preferences yielding a positive value (0.56, panel d) and the two pairings involving incongruent preferences yielding negative spike count correlations (−0.45, –0.34, panels e and f). This pattern is borne out when the full set of pairings involving unit 1 and other units recorded at the same time that also showed ‘mixture’ response patterns is considered (Figure 4b): all the pairings that involved congruent tuning preferences yielded positive correlations, and all of these correlations are individually significant (green bars, p<0.05). In contrast, all the pairings that involve incongruent tuning preferences yielded negative correlations (brown bars); as expected, these are slightly more weakly negative than the congruent pairings are positive, but 1 of 5 reaches individual significance (darker brown, p<0.05).
 
@@ -88,7 +261,7 @@ Indeed, this is the case. Figure 5 illustrates the median spike count correlatio
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig5-v1.jpg)
 
-**Figure 5.:** a vs. panel b) and as a function of the spike count response profile classification resulting from the Bayesian model comparison for the V1 adjacent stimulus dataset.The ‘mixture’-‘mixture’ combinations produced the strongest positive (congruent preference pairs) and strongest negative (incongruent preference pairs) median spike count correlations, but all other combinations also involved positive median correlations for congruent preference pairs and negative median correlations for incongruent preference pairs. See Figure 4—source data 1 for additional information.
+**Figure 5.:** The ‘mixture’-‘mixture’ combinations produced the strongest positive (congruent preference pairs) and strongest negative (incongruent preference pairs) median spike count correlations, but all other combinations also involved positive median correlations for congruent preference pairs and negative median correlations for incongruent preference pairs. See Figure 4—source data 1 for additional information.
 
 Returning to the predictions laid out in Figure 3d–f, the implication of congruent-preference units being on average positively correlated and incongruent-preference units being on average negatively correlated from a coding perspective is that V1’s representation (among ‘mixture’ units) may be slightly biased toward one or the other stimulus on each individual stimulus presentation, most closely resembling the schematic depiction in Figure 3d. However, the actual data involves a broad distribution with positive spike count correlations also occurring among the incongruent-preference pairs and negative spike count correlations among the congruent-preference pairs. Overall, this is most consistent with the schematic depiction in Figure 3f. In short, while the overall pattern of activity among ‘mixture’ units is biased toward one stimulus over the other on individual stimulus presentations, there are ample cases of units that do not follow this pattern, and these exceptions may be sufficient to preserve information about the other stimulus on any given trial.
 
@@ -100,9 +273,17 @@ To visualize this in another way, we repeated the calculation of Pearson’s cor
 
 We note that this correlation pattern cannot be accounted for by any obvious confounds. As mentioned previously, all stimulus presentations with microsaccades were excluded from the analyses, limiting the degree to which shared dependence on eye movements could affect the correlation patterns. Furthermore, any variability in fixation position across stimulus presentations might affect the assessment of spike count correlations within a particular pair of neurons, but would not be expected to produce (1) a bimodal distribution of spike count correlations at the population level, that (2) occurs especially strongly when two distinct objects are presented. For example, if variability in fixation caused positive correlations between pairs of neurons whose receptive fields were aligned (likely at most a very small subset of our data), this effect should be equally present on both single-stimulus presentations when the stimulus is in those receptive fields and on double-stimulus presentations. Yet, as can be seen in Figure 5c and d, the positive extent of the correlations on double-stimulus presentations among ‘congruent preference’ pairs is higher than is observed on single-stimulus presentations (green bars extend to higher values than the orange curve), and vice versa for the ‘incongruent preference’ pairs.
 
-## With two objects, distinct distributions of spike count correlations occur in V4
+### With two objects, distinct distributions of spike count correlations occur in V4
 
 We next assessed V4, which showed both similarities and differences in comparison to V1. Like V1, activity patterns differed considerably in the superimposed vs. adjacent stimuli cases. However, the details of these differences differed: while ‘mixtures’ were present in both the superimposed and adjacent stimulus conditions in V4, ‘intermediates’ were more prevalent in the adjacent stimulus case than in the superimposed stimulus case. Given that ‘intermediates’ could also reflect fluctuations (like ‘mixtures’ but on a faster-than-stimulus-presentation timescale), we considered both mixtures and intermediates as subcategories of particular interest for the V4 dataset (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig7-v1.jpg)
+
+**Figure 7.:** Shown here are classifications for all units regardless of confidence level, and results from gabors and natural images are combined. See Figure 7—figure supplement 1 for a breakdown by confidence level and for gabors and natural images separately. ‘Mixtures’ were seen in both datasets, but ‘intermediates’ were seen primarily in the adjacent-stimulus dataset. These two categories can in principle both contain fluctuating activity, and are grouped here as ‘between’ (i.e., the average response for dual stimuli for these two categories is between the average responses to single stimuli). As with V1, the relative proportions of ‘singles’ vs. ‘outsides’ also differed across these datasets. The combined incidence of these ‘not between’ categories was higher for the superimposed dataset than for the adjacent dataset.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76452/elife-76452-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Shading indicates the confidence level of the model categorization as described in Figure 3. Experiments involving adjacent gabors and adjacent images are combined in panels (a) and (e) and broken out separately in panels (b) and (c). Panels (e) and (f) show the sums of the corresponding bars in panels (a) and (d).
 
 The patterns of spike count correlations across mixture–mixture pairs in V4 varied considerably based on whether the stimuli were adjacent vs. superimposed and, for adjacent stimuli, whether the two units in the pair exhibited the congruent or incongruent stimulus preferences (Figure 8). For adjacent mixture–mixture pairs (panel a), the congruent-preferring units again tended to show positive spike count correlations, whereas for incongruent-preferring pairs, the distribution appeared centered around zero. It is unclear whether these pairs are truly uncorrelated or if they might appear uncorrelated due to a negative, stimulus-related, correlation being canceled out by a comparable, globally shared positive correlation that could stem from other factors (e.g., shared reward sensitivity). When intermediate–intermediate patterns are included, the overall pattern of a difference between the congruent-preferring and incongruent-preferring distributions is preserved (panel b), although now the incongruent-preference pairs are slightly positive. This pattern was still present when no selection for response pattern was applied (panel c), and is perhaps best appreciated by comparing the medians of the distributions (Figure 8f): there is a distinct difference between the median spike count correlation for same-preference and different-preference pairs for the adjacent dataset. Similar differences in the correlation patterns of congruent-preference vs. incongruent-preference pairs have also been identified in a previous study involving responses of V4 neurons to adjacent gratings (Verhoef and Maunsell, 2017).
 
@@ -150,7 +331,7 @@ Finally, it is worth noting here that considering how the brain preserves inform
 
 ## Methods
 
-## Electrophysiological recordings and visual stimuli
+### Electrophysiological recordings and visual stimuli
 
 The full experimental procedures are described in Ruff et al., 2016 and Ruff and Cohen, 2016 and summarized below. All animal procedures were approved by the Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University (Protocol #: 20067560 PHS Assurance Number: D16-00118). Each of the datasets consisted of multielectrode recordings from two adult male rhesus monkeys for each brain area (Tables 1 and 2). Recordings were made using chronically implanted a 10 × 10 microelectrode arrays (Blackrock Microsystems) in V1 and 6 × 8 arrays in V4 (Figure 1a). The electrode shafts were 1 mm long, and the minimum distance between the nearest electrodes was 400 μm. In some sessions, recordings were also made using other electrodes in areas MT and 7a, but these data are not included in the current analyses.
 
@@ -160,7 +341,7 @@ The visual stimuli and behavioral experiment for the V1 adjacent stimulus datase
 
 The adjacent stimulus dataset for V4 involved two types of stimuli, small drifting Gabor patches as above or natural images of animals or common objects, from Long et al., 2018. Results for the two types of stimuli were combined for the main analyses presented in this article (Figures 7 and 8), and are broken out separately in Figure 7—figure supplement 1. The monkeys performed a fixation task.
 
-## Analysis of spike count distributions
+### Analysis of spike count distributions
 
 The full description of the statistical evaluation of spike count distributions on combined stimulus presentations can be found in Caruso et al., 2018; Mohl et al., 2020. Briefly, we deployed a Bayesian procedure for modeling the distribution of spike counts in response to combined stimuli. Assuming that the spike counts corresponding to condition A and condition B are both Poisson-distributed with the rate parameters λA and λB, respectively (and excluding exceptions, see below), the four hypotheses for the spike count distributions for condition AB consist of
 
@@ -170,14 +351,14 @@ Only the triplets satisfying two exclusion criteria are used: (1) the single-sti
 
 The numbers of trials involved for the different datasets are provided in Table 2. The trial counts were adequate to provide accurate model identification according to our previous simulations. Depending on the separation between λA and λB, we previously found that model identification accuracy in simulations is high for trial counts as low as 5 ‘AB’ trials, and plateaus near ceiling around ‘AB’ trial counts of about 10 trials and above – that is, below the mean trial counts available here for all datasets (see Figure 4 of Mohl et al., 2020).
 
-## Correlation analysis
+### Correlation analysis
 
 We calculated spike count correlations between pairs of units recorded at the same time in the same experiment. The Pearson correlation coefficient was calculated on the spike counts for each presentation of each relevant stimulus combination. Stimulus presentations in which one or both units in the pair exhibited an ‘outlier’ response, that is, more than 3 standard deviations from the mean, were excluded from the analysis. The spike count correlations for particular unit pairs for different stimulus combinations were included in the population analyses as separate observations and were not averaged together. For example, in the V1 adjacent stimulus dataset, pairs were typically tested with two separate adjacent stimulus combinations, differing in the direction of motion, potentially yielding two values of the spike count correlation (assuming both conditions passed the Poisson and response-separation exclusion criteria noted above). Similarly, V4 neurons tested with different combinations of drifting gabors and/or images contributed values of spike count correlations for each stimulus set to the population.
 
-## Congruent or incongruent preference
+### Congruent or incongruent preference
 
 Preference of a unit for a particular stimulus was determined by higher spike counts. Unit pairs that both exhibited more spikes in response to stimulus A than to B, or both exhibited more spikes in response to stimulus B than to A, were defined as ‘congruent preference.’ Unit pairs in which one responded with more spikes to A and the other with more spikes to B were defined as ‘incongruent preference’.
 
-## Comparison of distributions of spike count correlations
+### Comparison of distributions of spike count correlations
 
 The medians of the ‘congruent preference’ vs. ‘incongruent preference’ distributions of spike count correlations were statistically compared using Monte Carlo methods in which the same/different preference assignments were randomly shuffled and the medians recalculated 10,000 times. When the true difference between the medians was greater than any of the shuffled versions, the p-value can be said to be less than 1/10,000 or 0.0001.

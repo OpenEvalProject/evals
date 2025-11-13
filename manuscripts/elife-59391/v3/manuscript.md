@@ -226,13 +226,154 @@ We recently initiated a comprehensive HCW screening programme for SARS-CoV-2 in 
 
 Testing for SARS-CoV-2 RNA was performed with real-time RT-PCR using throat and nose swab samples of HCWs from Cambridge University Hospitals NHS Foundation Trust (CUHNFT) and their symptomatic household contacts. Over the new study period (25th April to 24th May 2020), 2611 additional tests were performed in the HCW asymptomatic screening arm, 555 additional tests in the HCW symptomatic screening arm, and 216 additional tests in the HCW household contact screening arm. A further six tests did not have a clearly recorded arm of origin. Over the entire study period, the median age of HCWs and their household contacts was 36.5 and 35.5 years, respectively. About 68.4% were female and 31.6% were male. Of the individuals testing positive over the entire study period, the median age of HCWs and their household contacts was 32 and 47 years, respectively. About 77.9% of all positive tests were from females and 22.1% from males. Table 1 summarizes the total number of HCWs testing positive through either arm of the screening programme, according to the job role. A comparison of the proportions of hospital employees from each job role that tested positive through the HCW symptomatic screening arm revealed no statistically significant difference (Pearson’s chi-square test p=0.419). Reasonable comparison of the proportions testing positive through the HCW asymptomatic screening arm was not possible due to non-random sampling of different areas of the hospital, meaning some job roles had been more frequently targeted for asymptomatic screening than others.
 
+**Table 1.**
+ Combined data for SARS-CoV-2 RNA positive HCWs by role and screening arm, from the present study and our previous study (Rivett et al., 2020).Difference in proportions of HCWs testing positive through the symptomatic screening arm was analysed using Pearson’s chi-square test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>HCW asymptomatic screening arm</th>
+      <th>HCW symptomatic screening arm</th>
+      <th>Total number of hospital employees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nurse</td>
+      <td>25</td>
+      <td>19</td>
+      <td>3621</td>
+    </tr>
+    <tr>
+      <td>Healthcare assistant</td>
+      <td>14</td>
+      <td>8</td>
+      <td>1734</td>
+    </tr>
+    <tr>
+      <td>Doctor</td>
+      <td>8</td>
+      <td>6</td>
+      <td>1871</td>
+    </tr>
+    <tr>
+      <td>Cleaners</td>
+      <td>2</td>
+      <td>3</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <td>Radiographer</td>
+      <td>2</td>
+      <td>1</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <td>Radiology support worker</td>
+      <td>0</td>
+      <td>1</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Physiotherapist</td>
+      <td>1</td>
+      <td>0</td>
+      <td>116</td>
+    </tr>
+  </tbody>
+</table>
+
+_Overall, 360 individuals underwent repeat testing, either as part of the asymptomatic screening programme, or for other reasons as previously described (Rivett et al., 2020). The median turnaround time from sample arrival in the laboratory to final verification was 18 hr 45 min. Positive results were called out on the same day, with negative results emailed within 24 hr._
+
 Between 25th April and 24th May 2020, a total of 34 new positive tests were reported. In the HCW symptomatic and HCW symptomatic household contact screening arms combined (reflecting all individuals with self-reported symptoms at the time of testing), 13/771 (1.7%) tests were positive, which was significantly lower than 30/221 (13%) in the original study period (Fisher’s exact test p<0.0001). In the HCW asymptomatic screening arm, 21/2611 (0.8%) tests were positive, which again was significantly lower than 31/1032 (3%) in the original study period (Fisher’s exact test p<0.0001). As we previously observed (Rivett et al., 2020), individuals captured in the HCW asymptomatic screening arm were generally asymptomatic at the time of screening; however, these individuals could be divided into subgroups. In the first subgroup, 8/21 (38%) HCWs had no symptoms at all. Of these, 5/8 (63%) remained entirely asymptomatic 5–7 weeks after their positive test, whereas 2/8 (25%) developed symptoms 24–48 hr after testing. One HCW could not be contacted to obtain further history. In the second subgroup, 6/21 (29%) had retrospectively experienced some symptoms prior to screening. Of these, 5/6 (83%) had symptoms with a high pre-test probability of COVID-19 (Rivett et al., 2020) commencing >7 days prior to screening, of whom 3/5 had appropriately self-isolated then returned to work, and 1/5 was tested shortly after developing symptoms. 1/6 (17%) had symptoms with a low pre-test probability of COVID-19 (Rivett et al., 2020) commencing <7 days prior to screening and had not self-isolated. In the third subgroup, 7/21 (33%) were detected through repeat sampling of HCW who previously tested positive. Of these, 4/7 (57%) were tested to determine their suitability to return to work with severely immunocompromised/immunosuppressed patients, as dictated by UK national guidance (National Institute for Health and Care Excellence (NICE), 2020). The remaining 3/7 (43%) were from HCWs tested incidentally for the second time in the asymptomatic HCW screening programme. The median interval between serial positive tests was 16.5 days (IQR 9.5–19.5). All cases were attributable to prolonged SARS-CoV-2 RNA detection from a single infection, rather than re-infection. Our approach to patients with repeatedly positive SARS-CoV-2 PCR tests is described in the Methods.
 
 The fraction of positive tests among the HCW asymptomatic, and HCW symptomatic and household contact screening groups combined varied over time (Figure 1A, Table 2). In particular, during the last 2 weeks of the study period (11th to 24th May 2020), we identified only four positive SARS-CoV-2 samples from 2016 tests performed, two from the HCW asymptomatic and two from the HCW symptomatic/symptomatic household contact arms. This fall in positive HCW tests mirrored the decline in both patients testing positive at CUHNFT and those tested throughout the wider region (Figure 1B). Similar trends were observed in a smaller cohort study of HCWs in London (Treibel et al., 2020).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59391/elife-59391-fig1-v3.jpg)
 
-**Figure 1.:** (a) Positive SARS-CoV-2 tests for asymptomatic and symptomatic screening arms by week. (b) Total HCW SARS-CoV-2 tests in CUHNFT performed by week. (c) Total positive SARS-CoV-2 patient tests in Cambridge University Hospital NHS Foundation Trust (CUHNFT) by week. (d) Total positive SARS-CoV-2 tests in the East of England (EOE) by week.Figure 1—source data 1.
+**Figure 1.:** (a) Positive SARS-CoV-2 tests for asymptomatic and symptomatic screening arms by week. (b) Total HCW SARS-CoV-2 tests in CUHNFT performed by week. (c) Total positive SARS-CoV-2 patient tests in Cambridge University Hospital NHS Foundation Trust (CUHNFT) by week. (d) Total positive SARS-CoV-2 tests in the East of England (EOE) by week.
+
+**Table 2.**
+ Positive tests and total number of SARS-CoV-2 tests performed in each screening arm categorised according to week since starting the healthcare worker testing programme (6th April–24th May 2020).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9">Week commencing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>6th April</td>
+      <td>13th April</td>
+      <td>20th April</td>
+      <td>27th April</td>
+      <td>4th May</td>
+      <td>11th May</td>
+      <td>18th May</td>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <td>HCW asymptomatic screening arm</td>
+      <td>4/121</td>
+      <td>20/383</td>
+      <td>7/529</td>
+      <td>11/550</td>
+      <td>8/483</td>
+      <td>1/738</td>
+      <td>1/840</td>
+      <td>52/3644 (1.4%)</td>
+    </tr>
+    <tr>
+      <td>HCW symptomatic screening arm</td>
+      <td>1/15</td>
+      <td>14/60</td>
+      <td>11/95</td>
+      <td>7/119</td>
+      <td>3/104</td>
+      <td>0/164</td>
+      <td>2/168</td>
+      <td>38/725 (5.2%)</td>
+    </tr>
+    <tr>
+      <td>HCW symptomatic household contacts</td>
+      <td>1/7</td>
+      <td>3/18</td>
+      <td>0/26</td>
+      <td>0/62</td>
+      <td>1/50</td>
+      <td>0/51</td>
+      <td>0/53</td>
+      <td>5/267 (1.8%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>0/0</td>
+      <td>0/2</td>
+      <td>0/13</td>
+      <td>0/0</td>
+      <td>0/4</td>
+      <td>0/1</td>
+      <td>0/1</td>
+      <td>0/21</td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td>6/143 (4.1%)</td>
+      <td>37/463 (7.9%)</td>
+      <td>18/663 (2.7%)</td>
+      <td>18/731 (2.4%)</td>
+      <td>12/641 (1.8%)</td>
+      <td>1/954 (0.1%)</td>
+      <td>3/1062 (0.2%)</td>
+      <td>95/4657 (2%)</td>
+    </tr>
+  </tbody>
+</table>
 
 In our original study between 6th and 24th April 2020, we described in detail two clusters of HCW infections (Rivett et al., 2020). From 25th April to 24th May 2020, we detected one additional cluster on a general medical ward with a separate area for patients with proven COVID-19 and another area for those without. This was identified through targeted screening of the ward over a 24 hr period from 4th to 5th May 2020, in response to four staff testing positive through the HCW symptomatic arm of the screening programme from 27th to 30th April 2020. Reactive screening of a further 40 staff from the same ward identified a further three positive asymptomatic HCWs. In addition, a further two HCWs tested positive in an asymptomatic screen of 30 individuals from a closely related clinical area (designated for non-COVID patients) on 6th May 2020.
 
@@ -248,14 +389,14 @@ Importantly, our data demonstrate that CUHNFT was not acting as an independent �
 
 ## Materials and methods
 
-## Staff screening protocols
+### Staff screening protocols
 
 We previously described protocols for staff screening, sample collection, laboratory processing, and results reporting in detail (Rivett et al., 2020). These methods remained unchanged throughout this study period. Two parallel streams of entry into the testing programme included (i) HCW symptomatic, and HCW symptomatic household contact screening arms and (ii) an HCW asymptomatic screening arm. In the former, any patient-facing or non-patient-facing HCW could voluntarily refer themselves or a household contact, should they develop symptoms suggestive of COVID-19. In the latter, HCWs could volunteer to take part in a rolling programme of testing for all patient-facing and non-patient-facing staff working in defined clinical areas thought to be at risk of SARS-CoV-2 transmission. Testing was performed (i) at temporary on-site ‘Pods’; (ii) via self-swabbing kits delivered to HCWs in their area of work. All individuals in each arm of the programme performed a self-swab at the back of the throat then the nasal cavity, followed by RNA extraction and amplification using real-time RT-PCR (Sridhar et al., 2020). Cluster investigation was initiated when three or more HCWs working in the same clinical area tested positive for SARS-CoV-2 in 1 week .
 
-## Management of HCW with repeat positive tests
+### Management of HCW with repeat positive tests
 
 Current National Institute for Health and Care Excellence (NICE) guidelines require a negative test before returning to work with immunocompromised patients (National Institute for Health and Care Excellence (NICE), 2020). In accordance with the UK national guidance, individuals with repeat positive screens following a minimum period of 7 days self-isolation were advised to continue working if they were not scheduled to come into close contact with heavily immunocompromised patients, provided they remained asymptomatic (UK Government, 2020). This approach to managing repeat positive screens is further supported by recent data from the Korea Centers for Disease Control and Prevention, which showed no clear evidence of onward transmission to the contacts of 285 repeat-positive individuals, 108 of whom had samples taken for attempted viral culture, which was universally unsuccessful (Korea Centers for Disease Control & Prevention (KCDC), 2020). Additional small studies have also demonstrated an inability to culture virus from clinical samples obtained later than 8 days after symptom onset, suggesting prolonged detection of viral RNA is unlikely to indicate an ongoing risk of transmission (Wölfel et al., 2020; Bullard et al., 2020).
 
-## Data extraction and analysis
+### Data extraction and analysis
 
 Swab result data for HCWs and patients were extracted directly from the hospital-laboratory interface software, Epic (Verona, WI) and from SARS-CoV-2 point of care testing. Data for SARS-CoV-2 infections from the local community were extracted from Public Health England’s Data Dashboard (Public Health England (PHE), 2020). Data were collated using Microsoft Excel, and figures produced with GraphPad Prism (GraphPad Software, La Jolla, CA). Fisher’s exact test was used to compare the proportion of HCWs testing positive in this study period to that of our previous study period (Rivett et al., 2020). Pearson’s chi-square test was used for comparison of the proportions of HCWs testing positive in each job role.

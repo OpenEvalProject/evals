@@ -12,20 +12,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Department of Neurology and Neurosurgery, Faculty of Medicine, McGill University Montreal Canada
-2. https://ror.org/03dbr7087 Department of Physiology, Faculty of Medicine, University of Toronto Toronto Canada
-3. https://ror.org/057q4rt57 Neuroscience and Mental Health, The Hospital for Sick Children Toronto Canada
-4. https://ror.org/05ghs6f64 McConnell Brain Imaging Centre (BIC), Montreal Neurological Institute (MNI), Faculty of Medicine, McGill University Montreal Canada
-5. https://ror.org/01pxwe438 Department of Biomedical Engineering, Faculty of Medicine, School of Computer Science, McGill University Montreal Canada
-6. https://ror.org/05c22rx21 Mila - Quebec Artificial Intelligence Institute Montreal Canada
-7. https://ror.org/00kybxq39 Department of Computer Science, Université de Sherbrooke Sherbrooke Canada
+1. Department of Neurology and Neurosurgery, Faculty of Medicine, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Department of Physiology, Faculty of Medicine, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+3. Neuroscience and Mental Health, The Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))
+4. McConnell Brain Imaging Centre (BIC), Montreal Neurological Institute (MNI), Faculty of Medicine, McGill University Montreal Canada ([ROR:05ghs6f64](https://ror.org/05ghs6f64))
+5. Department of Biomedical Engineering, Faculty of Medicine, School of Computer Science, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+6. Mila - Quebec Artificial Intelligence Institute Montreal Canada ([ROR:05c22rx21](https://ror.org/05c22rx21))
+7. Department of Computer Science, Université de Sherbrooke Sherbrooke Canada ([ROR:00kybxq39](https://ror.org/00kybxq39))
 8. Imeka Solutions Inc Sherbrooke Canada
 
 † Corresponding author
 
 ## Abstract
 
-The heterogeneity of white matter damage and symptoms in concussion has been identified as a major obstacle to therapeutic innovation. In contrast, most diffusion MRI (dMRI) studies on concussion have traditionally relied on group-comparison approaches that average out heterogeneity. To leverage, rather than average out, concussion heterogeneity, we combined dMRI and multivariate statistics to characterize multi-tract multi-symptom relationships. Using cross-sectional data from 306 previously concussed children aged 9–10 from the Adolescent Brain Cognitive Development Study, we built connectomes weighted by classical and emerging diffusion measures. These measures were combined into two informative indices, the first representing microstructural complexity, the second representing axonal density. We deployed pattern-learning algorithms to jointly decompose these connectivity features and 19 symptom measures. Early multi-tract multi-symptom pairs explained the most covariance and represented broad symptom categories, such as a general problems pair, or a pair representing all cognitive symptoms, and implicated more distributed networks of white matter tracts. Further pairs represented more specific symptom combinations, such as a pair representing attention problems exclusively, and were associated with more localized white matter abnormalities. Symptom representation was not systematically related to tract representation across pairs. Sleep problems were implicated across most pairs, but were related to different connections across these pairs. Expression of multi-tract features was not driven by sociodemographic and injury-related variables, as well as by clinical subgroups defined by the presence of ADHD. Analyses performed on a replication dataset showed consistent results. Using a double-multivariate approach, we identified clinically-informative, cross-demographic multi-tract multi-symptom relationships. These results suggest that rather than clear one-to-one symptom-connectivity disturbances, concussions may be characterized by subtypes of symptom/connectivity relationships. The symptom/connectivity relationships identified in multi-tract multi-symptom pairs were not apparent in single-tract/single-symptom analyses. Future studies aiming to better understand connectivity/symptom relationships should take into account multi-tract multi-symptom heterogeneity. Financial support for this work came from a Vanier Canada Graduate Scholarship from the Canadian Institutes of Health Research (G.I.G.), an Ontario Graduate Scholarship (S.S.), a Restracomp Research Fellowship provided by the Hospital for Sick Children (S.S.), an Institutional Research Chair in Neuroinformatics (M.D.), as well as a Natural Sciences and Engineering Research Council CREATE grant (M.D.).
+Background:The heterogeneity of white matter damage and symptoms in concussion has been identified as a major obstacle to therapeutic innovation. In contrast, most diffusion MRI (dMRI) studies on concussion have traditionally relied on group-comparison approaches that average out heterogeneity. To leverage, rather than average out, concussion heterogeneity, we combined dMRI and multivariate statistics to characterize multi-tract multi-symptom relationships.Methods:Using cross-sectional data from 306 previously concussed children aged 9–10 from the Adolescent Brain Cognitive Development Study, we built connectomes weighted by classical and emerging diffusion measures. These measures were combined into two informative indices, the first representing microstructural complexity, the second representing axonal density. We deployed pattern-learning algorithms to jointly decompose these connectivity features and 19 symptom measures.Results:Early multi-tract multi-symptom pairs explained the most covariance and represented broad symptom categories, such as a general problems pair, or a pair representing all cognitive symptoms, and implicated more distributed networks of white matter tracts. Further pairs represented more specific symptom combinations, such as a pair representing attention problems exclusively, and were associated with more localized white matter abnormalities. Symptom representation was not systematically related to tract representation across pairs. Sleep problems were implicated across most pairs, but were related to different connections across these pairs. Expression of multi-tract features was not driven by sociodemographic and injury-related variables, as well as by clinical subgroups defined by the presence of ADHD. Analyses performed on a replication dataset showed consistent results.Conclusions:Using a double-multivariate approach, we identified clinically-informative, cross-demographic multi-tract multi-symptom relationships. These results suggest that rather than clear one-to-one symptom-connectivity disturbances, concussions may be characterized by subtypes of symptom/connectivity relationships. The symptom/connectivity relationships identified in multi-tract multi-symptom pairs were not apparent in single-tract/single-symptom analyses. Future studies aiming to better understand connectivity/symptom relationships should take into account multi-tract multi-symptom heterogeneity.Funding:Financial support for this work came from a Vanier Canada Graduate Scholarship from the Canadian Institutes of Health Research (G.I.G.), an Ontario Graduate Scholarship (S.S.), a Restracomp Research Fellowship provided by the Hospital for Sick Children (S.S.), an Institutional Research Chair in Neuroinformatics (M.D.), as well as a Natural Sciences and Engineering Research Council CREATE grant (M.D.).
 
 ## Introduction
 
@@ -41,29 +41,142 @@ The objective of the present study was to leverage advanced diffusion MRI (dMRI)
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Data in this study were obtained from the world’s largest child development study of its kind – the ongoing longitudinal Adolescent Brain Cognitive Development Study (ABCD Study; https://abcdstudy.org/), data release 2.0 (https://data-archive.nimh.nih.gov/abcd). The ABCD Study acquired data from 11,874 children aged 9–10 years (mean age = 9.49 years) from across the United States (48% girls; 57% Caucasian, 15% African American, 20% Hispanic, 8% other) (Volkow et al., 2018). Additional information about the ABCD Study can be found in Garavan et al., 2018. This dataset is administered by the National Institutes of Mental Health Data Archive and is freely available to all qualified researchers upon submission of an access request. All relevant instructions to obtain the data can be found in https://nda.nih.gov/abcd/request-access. The Institutional Review Board of the McGill University Faculty of Medicine and Health Sciences reviewed the application and confirmed that no further ethics approvals were required.
 
-## History of concussion
+### History of concussion
 
 Parents completed a modified version of the Ohio State University TBI Identification Method (OSU-TBI-ID) (Corrigan and Bogner, 2007). We included participants who reported a head injury without loss of consciousness but with memory loss and/or a head injury with loss of consciousness for less than 30 min (n = 434). Due to missing or incomplete data, corrupted files, data conversion errors, and images rated by the ABCD Study team as being of poor quality, the final sample of participants with usable data was 345. After processing, images were visually inspected by two trained independent raters (G.I.G., S.S.). Images that were deemed of low quality after processing by both raters were removed (n = 39), leading to a final sample of 306 participants. We randomly divided the sample into a discovery dataset (70%, n = 214) and a replication dataset (30%, n = 92). Figure 1 summarizes the subject selection procedure.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70450/elife-70450-fig1-v2.jpg)
 
-## Symptom-oriented measures
+### Symptom-oriented measures
 
 To probe various aspects of concussion symptomatology, we used items collected from assessments available in the ABCD dataset. These items, as well as the concussion symptom they are meant to probe are outlined in Table 1.
 
-## MRI acquisition
+**Table 1.**
+ Table outlining all behavioral measures used in analyses, along with the corresponding symptom they reflect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Questionnaire - Description</th>
+      <th>Symptom Measured</th>
+      <th>Respondent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBCL – Headaches</td>
+      <td>Headaches</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Nausea, feels sick</td>
+      <td>Nausea</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Vomiting, throwing up</td>
+      <td>Vomiting</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Feels dizzy or lightheaded</td>
+      <td>Dizziness</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Overtired without good reason</td>
+      <td>Fatigue</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>SDS – The child experiences daytime sleepiness</td>
+      <td>Drowsiness</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>SDS – The child has difficulty getting to sleep at night</td>
+      <td>Trouble falling asleep</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Sleep more than most kids during day and/or night</td>
+      <td>Sleep more than usual</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Sleeps less than most kids</td>
+      <td>Sleep less than usual</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Depression (DSM) T score</td>
+      <td>Sadness</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Anxiety Disorder (DSM) T score</td>
+      <td>Nervousness</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL – Attention Problems T score</td>
+      <td>Difficulty concentrating</td>
+      <td>Parent</td>
+    </tr>
+    <tr>
+      <td>CBCL Aggression T score</td>
+      <td>Irritability</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>NIH Toolbox Picture Sequence Memory Test – Fully-Corrected T-score</td>
+      <td>Sequence Memory (difficulty remembering)</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>NIH Toolbox List Sorting Working Memory Test – Fully-Corrected T-score</td>
+      <td>Working memory (difficulty remembering)</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>RAVLT Short Delay Trial VI – Total Correct</td>
+      <td>Short recall (difficulty remembering)</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>RAVLT Long Delay Trial VII – Total Correct</td>
+      <td>Long recall (difficulty remembering)</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>NIH Toolbox Dimensional Change Card Sort Test – Fully-Corrected T-score</td>
+      <td>Executive function (feeling “foggy”)</td>
+      <td>Child</td>
+    </tr>
+    <tr>
+      <td>NIH Toolbox Pattern Comparison Processing Speed Test – Fully-Corrected T-score</td>
+      <td>Processing speed (feeling “slow”)</td>
+      <td>Child</td>
+    </tr>
+  </tbody>
+</table>
+
+_CBCL: Child Behavior Checklist. SDS: Sleep Disturbance Scale. NIH: National Institutes of Health. DSM: Diagnostics and Statistics Manual. RAVLT: Ray Auditory Verbal Learning Test._
+
+### MRI acquisition
 
 MRI scans were acquired across 21 sites, with data coming from 28 different scanners. Details about the acquisition protocols and image specifications are outlined in Casey et al., 2018. Multi-shell dMRI scans had 96 diffusion-weighted directions, with 6 directions of b = 500 s/mm2, 15 directions of b = 1000 s/mm2, 15 directions of b = 2000 s/mm2, and 60 directions of b = 3000 s/mm2. The b = 2000 shell was excluded from the data processing. In addition, scans had 6 or 7 b = 0 s/mm2 images, depending on scanner type. Lastly, a reverse b0 image was included for each participant.
 
-## Processing
+### Processing
 
 We used Tractoflow (Theaud et al., 2020) to process dMRI and T1-weighted scans. Tractoflow is a novel diffusion MRI processing pipeline, incorporating state-of-the-art functions from FSL, Dipy, and MRtrix into NextFlow. The processing steps are summarized in Theaud et al., 2020. Important deviations from the default parameters utilized by Tractoflow are as follows: 1. We used gray-white matter interface seeding, as this method accounts for the length bias introduced by white-matter seeding; (Girard et al., 2014) 2. We used 24 seeds-per-voxel with the objective of obtaining approximately 2 million streamlines across the entire brain. We used the b = 0, 500, and 1000 shells to perform tensor fitting, and the b = 0 and 3000 shells to perform Constrained Spherical Deconvolution (CSD) (Descoteaux et al., 2009; Tournier et al., 2007). We obtained group-average fiber-response functions from voxels with high ( > 0.70) fractional anisotropy (FA). Lastly, we created tractograms using a probabilistic particle-filtering tractography algorithm (Girard et al., 2014).
 
-## Connectivity matrices
+### Connectivity matrices
 
 The post-processing workflow is illustrated in Figure 2. To construct connectivity matrices, we used Freesurfer on McGill’s CBrain platform (Sherif et al., 2014) to fit the Desikan-Killiani Tourvile (DKT) (Klein and Tourville, 2012) and aseg atlases onto the processed T1-images that had been transformed to DWI space during processing (Figure 2A). We applied these parcellations and extracted diffusion measures using connectoflow (version 1.0.0) (https://github.com/scilus/connectoflow; Rheault and Houde, 2021). This novel pipeline uses scilpy (version 1.0.0) scripts (https://github.com/scilus/scilpy; Sherbrooke Connectivity Imaging Lab, 2022) (wrappers of Dipy) implemented in Nextflow to split parcellations into individual labels, apply them to tractograms to create individual bundles, and then extract diffusion measures across them. To implement connectoflow, we first removed redundant and irrelevant labels from the fitted atlas (a list of retained labels is supplied in Supplementary file 1), yielding a final atlas with 76 labels. We then thresholded matrices such that a connection was only retained if it was found to be successfully reconstructed (defined as the presence of at least one streamline) across 90% of participants (Guberman et al., 2020a). We then performed a procedure to minimize the impact of spurious streamlines on our results (see “Accounting for spurious streamlines” paragraph below). We then randomly divided the sample into a discovery dataset (70%, n = 214) and a replication dataset (30%, n = 92). Every step hereafter was performed separately for each dataset. On each dataset, we weighted thresholded connectomes by FA, mean, radial, and axial diffusivities (MD, RD, AD respectively), apparent fiber density along fixels (AFDf), and number of fiber orientations (NuFO) (Figure 2B). The first four measures are derived from the tensor model, whereas the latter two are based on fiber orientation distribution functions (fODFs) obtained from CSD (Raffelt et al., 2012; Dell’Acqua et al., 2013). Simulation studies have shown that AFD is more specifically related to axonal density, and by computing it along ‘fixels’ (fiber elements), axonal density specific to particular fiber populations can be studied independently of crossing fibers (Raffelt et al., 2012).
 
@@ -71,71 +184,328 @@ The post-processing workflow is illustrated in Figure 2. To construct connectivi
 
 **Figure 2.:** (A). We applied the DKT parcellation onto each tractogram, thus building a binary connectivity matrix that displayed for all 306 subjects in the full dataset (rows), whether (black) or not (white) a streamline existed between each pair of labels (columns). (B). We thresholded connectomes using the full dataset, only keeping connections that existed across 90% of participants (a threshold of 100% is illustrated here for simplicity). On these connections, we also filtered streamlines by computing COMMIT weights. This technique assigns weights to streamlines depending on how well they explain the diffusion signal. We identified connections as spurious if all their streamlines had a COMMIT weight of 0. We only retained connections that were found to be non-spurious across 90% of participants in the full dataset. We then split the dataset into a discovery set (n = 214) and a replication set (n = 92). Using the discovery set, we then constructed connectomes of 6 scalar diffusion measures (Fractional Anisotropy (FA), Axial Diffusivity (AD), Mean Diffusivity (MD), Radial Diffusivity (RD), Apparent Fiber Density along fixels (AFDf), and Number of Fiber Orientations (NuFO)), by computing the average measure across each connection. (C). We stacked all columns from each connectivity matrix, creating vectors of every pair of subject and connection, and then joined together these vectors. We then performed principal component analysis (PCA) on these matrices. Principal component (PC) scores were calculated for each subject/connection combination, thus reconstructing connectomes weighted by PC scores. (D). From each these new connectomes, we selected 200 connections based on Pearson correlations with symptom-oriented measures. We then performed partial least squares correlation on each of these PC-weighted features and symptom measures, which allowed us to obtain pairs of multi-tract connectivity features (‘MCF’) and multi-symptom features (‘MSF’). Each multivariate feature is composed of linear combinations (weighted sums, illustrated by the black arrows called ‘weights’) of variables from its corresponding feature set.
 
-## Additional data transformations
+### Additional data transformations
 
 We imputed missing connectivity (prior to the PCA), symptom, and nuisance data (sex, pubertal stage, handedness, scanner) by randomly selecting non-missing data from other participants in the same dataset. We reverse-coded cognitive scores, such that increasing scores in all symptom data reflected more problems. From connectivity and symptom data, we regressed out the following nuisance variables: sex, pubertal stage, scanner (only for connectivity data), and handedness. An illustration of the impact of regressing out scanner from connectivity data can be found in Appendix 1—figure 1.
 
-## Accounting for spurious streamlines
+### Accounting for spurious streamlines
 
 Most tractography techniques, including the one presently used, depend on propagating the local diffusion model across voxels. This approach has inherent limitations in voxels where the local model lacks the information necessary to inform on the appropriate path for streamline propagation, leading inevitably to the creation of spurious streamlines (Maier-Hein et al., 2017; Girard et al., 2020). To minimize the impact of spurious connections on our results, we implemented an approach called Convex optimization modeling for microstructure informed tractography (COMMIT) (Daducci et al., 2015). This technique assigns weights to streamlines based on how they explain the diffusion signal. After running COMMIT, we identified streamlines with weights of 0, which signified that these streamlines were not necessary to explain the dMRI signal because they were spurious or redundant. When all the streamlines of a connection had a weight of 0, the entire connection was considered spurious. We identified non-spurious connections and only kept those that were found to be non-spurious across 90% of participants in the full dataset.
 
-## Principal components analysis
+### Principal components analysis
 
 Although individual diffusion measures are related to different aspects of neuropathology, together they provide more information than when considered separately (Guberman et al., 2020a). A recent framework based on principal component analysis (PCA) has been proposed to combine diffusion measures into biologically interpretable indices of white matter structure (Chamberland et al., 2019). We therefore performed PCA on the concatenated set of standardized measures across subjects in the discovery set and connections that passed COMMIT filtering, generating connectivity matrices weighted by principal component (PC) scores (Figure 2C).
 
-## Pattern-learning pipeline
+### Pattern-learning pipeline
 
-## Feature selection
+#### Feature selection
 
 Given the constraints on the number of connectivity features that can be included in the partial least squares correlation (PLSc) analysis, we performed a univariate feature selection based on Pearson correlations. This solution is becoming increasingly adopted for high-dimensional variable sets (Figure 2D; Boulesteix, 2004; Wang et al., 2020). From the connections that passed COMMIT filtering, we selected the 200 connectivity features most correlated with any symptom score, to maximize the number of features included. Given our discovery dataset size, selecting 200 connectivity features corresponded to 93% of our sample, a level of granularity comparable to other recent neuroimaging studies employing a feature selection step prior to multivariate analyses (Dinga et al., 2019; Drysdale et al., 2017).
 
-## PLSc
+#### PLSc
 
 We performed PLSc analyses in R using the tepPLS function from the texposition package (Beaton et al., 2014). PLSc involves singular value decomposition on the covariance matrix between connectivity and symptom features, creating pairs of multivariate connectivity and multivariate symptom features called multi-tract multi-symptom relationships. Each multi-tract multi-symptom relationship encapsulates a linear combination of connectivity features (‘multi-tract features’), a linear combination of symptom scores (‘multi-symptom features’), and an eigenvalue (reflective of the amount of explained covariance between connectivity and symptom features). Each multi-tract multi-symptom relationship is constructed so as to explain a successively smaller portion of the covariance between symptoms and connectivity features. We constructed the largest number of possible multi-tract multi-symptom relationships, given the dimensionality of the behavioral variable set (k = 19) (Figure 2D).
 
-## Selection and interpretation of multi-tract multi-symptom pairs
+### Selection and interpretation of multi-tract multi-symptom pairs
 
 To reduce the number of multi-tract multi-symptom pairs to retain for interpretation, we performed permutation testing by randomly shuffling row labels for the symptom features, without replacement, repeating the PLSc and computing eigenvalues at every permutation (2000 iterations). We calculated p-values as the proportion of permutations that yielded eigenvalues that exceeded the original amount.
 
 To interpret symptom and connectivity weights of significant (p < 0.05) multi-tract multi-symptom pairs, we performed bootstrap analyses (2000 iterations), using the BOOT4PLSC command from the texposition package. At each iteration, labels for data were drawn with replacement, the entire PLSc was repeated and the weights for all pairs were obtained. Although the pairs are expected to differ between iterations, they are always ordered by the percentage of covariance in inputs they explain. This process yields a sampling distribution of weights for each connectivity and symptom feature (McIntosh and Lobaugh, 2004). The ratio of the original weights to the standard error of each measure’s bootstrap distribution can be interpreted as a z-score, which yielded so-called ‘bootstrap ratios’. We used a value of 1.96 to determine which variables significantly contributed to each particular significant pair.
 
-## Comparison of multivariate against univariate approaches
+### Comparison of multivariate against univariate approaches
 
 To compare information captured by the PLSc and univariate approaches, we identified, among the 214 participants from the discovery set, those that had obtained a psychiatric diagnosis. Parents of all participants completed the Kiddie-Schedule for Affective and Psychiatric Disorders in School Age Children (KSADS), a gold-standard tool to assess the presence of pediatric psychiatric disorders (Kaufman et al., 1997). We divided the sample into clinical subgroups based on whether they had obtained a diagnosis of attention-deficit/hyperactivity disorder (ADHD). We selected this diagnosis because its behavioral manifestations can be easily related to some of the presently-studied concussion symptoms (e.g.: attention problems). It was also the second-most common diagnosis in our sample (33/214). Using a threshold of p < 0.05, we computed univariate comparisons of connectivity (PC scores) between individuals with and those without a diagnosis of ADHD, thus identifying putative ‘ADHD-related’ univariate connectivity features.
 
-We were interested in comparing how many of these features were also found to significantly contribute to each multi-tract connectivity feature. To do so, we computed a measure of percent overlap as follows:,%Overlap= Csig(Su+Sm−Csig) × 100
+We were interested in comparing how many of these features were also found to significantly contribute to each multi-tract connectivity feature. To do so, we computed a measure of percent overlap as follows:
+
+$$
+%Overlap= \frac{C_{sig}}{(S_{u}+S_{m}−C_{sig})} \times 100
+$$
 
 where Csig refers to the number of connections flagged as significant in both approaches, Su to the number of connections flagged as significant in the univariate approach, and Sm to the number of connections flagged as significant in the multivariate approach. This measure can account for the apparent high overlap that can arise when Su and Sm are not equivalent in size.
 
-## Relation to TBI-related and sociodemographic factors
+### Relation to TBI-related and sociodemographic factors
 
 We assessed whether expression of multi-tract connectivity features was related to injury-specific and sociodemographic factors (‘external’ variables). Injury-related variables included: the time between the last-documented injury and testing, the cause of injury, and the total number of documented mTBIs. Sociodemographic variables included: sex, total combined family income in the last 12 months, and race/ethnicity. We used the following categories for race/ethnicity: ‘Asian’ (Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, Other Asian), AIAN (‘American Indian’/Native American, Alaska Native), NHPI (Native Hawaiian, Guamanian, Samoan, Other Pacific Islander), Non-Hispanic White, Non-Hispanic Black, Hispanic, Other, and Multiple (Heeringa, 2020). To illustrate the influence of these sociodemographic factors we created scatter plots illustrating expression of connectivity latent factors color-coded by sociodemographic factors (Appendix 1—figure 2). In addition, we calculated correlations between multi-tract or multi-symptom feature expression and binary (or dummy-coded) variables representing these ‘external’ variables. These simple yet straightforward analyses allowed us to quantify the strength of the relationship between multivariate feature expression and external variables.
 
-## Analyses on the replication dataset
+### Analyses on the replication dataset
 
 To assess the robustness of our analyses, we first computed the percentage of connectivity/symptom covariance explained in the replication set by the first multi-tract multi-symptom pair of both PLSc analyses performed on the discovery set. We then selected, from the replication set, the same 200 connectivity features originally selected in the discovery set, and projected them, along with symptom features, onto the latent spaces obtained using the discovery set. To assess whether differences existed in multi-tract multi-symptom expression between participants from each set, we performed correlations comparing multi-tract multi-symptom feature expression against a binary variable indexing the dataset. Finally, we reran our feature selection procedure as well as the PLSc analyses on the dreplication set, and compared the number of connectivity features that coincided in both analyses. We also performed correlations comparing the loadings of every corresponding multi-tract and multi-symptom feature, as well as the expression of these features.
 
-## Data availability
+### Data availability
 
 Data from the ABCD Study can be accessed by qualified researchers (see Participants section above for details). Scripts, supporting documents, and other information necessary to implement all aspects of data organization, preparation, and analysis can be found in https://github.com/GuidoGuberman/Multi-tract-multi-symptom-relationships-in-pediatric-concussion, (copy archived at swh:1:rev:4c30fa113b2e0d24305a6e82fe8af54a3ed5af1a; Guberman, 2022).
 
 ## Results
 
-## Sample
+### Sample
 
 Out of 434 participants with a history of mild TBI (mTBI, used interchangeably with the term ‘concussion’ in this manuscript), 306 (127F/179 M) had usable data (Figure 1). Table 2 outlines sociodemographic and injury-related factors, as well as handedness and sex. The majority had sustained an injury over 1 year prior to the study. Nuisance variables were well-balanced between participants in the discovery and the replication set.
 
-## Combined measures of white matter tract microstructure
+**Table 2.**
+ Table of sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographic and injury data</th>
+      <th>Discovery set(n = 214)</th>
+      <th>Replication set(n = 92)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interview Age</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>9.57 (0.496)</td>
+      <td>9.54 (0.501)</td>
+    </tr>
+    <tr>
+      <td>Median [Min, Max]</td>
+      <td>10.0 [9.00, 10.00]</td>
+      <td>10.0 [9.00, 10.0]</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>88 (41.1%)</td>
+      <td>39 (42.4%)</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>126 (58.9%)</td>
+      <td>53 (57.6%)</td>
+    </tr>
+    <tr>
+      <td>Pubertal Stage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Early</td>
+      <td>41 (19.2%)</td>
+      <td>18 (19.6%)</td>
+    </tr>
+    <tr>
+      <td>Mid</td>
+      <td>58 (27.1%)</td>
+      <td>19 (20.7%)</td>
+    </tr>
+    <tr>
+      <td>Prepubertal</td>
+      <td>115 (53.7%)</td>
+      <td>52 (56.5%)</td>
+    </tr>
+    <tr>
+      <td>Late</td>
+      <td>0 (0%)</td>
+      <td>3 (3.3%)</td>
+    </tr>
+    <tr>
+      <td>Race/Ethnicity</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>2 (0.9%)</td>
+      <td>2 (2.2%)</td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>27 (12.6%)</td>
+      <td>18 (19.6%)</td>
+    </tr>
+    <tr>
+      <td>Multiple</td>
+      <td>18 (8.4%)</td>
+      <td>8 (8.7%)</td>
+    </tr>
+    <tr>
+      <td>Non-Hispanic Black</td>
+      <td>14 (6.5%)</td>
+      <td>11 (12.0%)</td>
+    </tr>
+    <tr>
+      <td>Non-Hispanic White</td>
+      <td>151 (70.6%)</td>
+      <td>52 (56.5%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 (0.9%)</td>
+      <td>1 (1.1%)</td>
+    </tr>
+    <tr>
+      <td>Combined Family Income</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt; 5 K</td>
+      <td>5 (2.3%)</td>
+      <td>5 (5.4%)</td>
+    </tr>
+    <tr>
+      <td>$5,000 - $11,999</td>
+      <td>5 (2.3%)</td>
+      <td>1 (1.1%)</td>
+    </tr>
+    <tr>
+      <td>$12,000-$15,999</td>
+      <td>3 (1.4%)</td>
+      <td>2 (2.2%)</td>
+    </tr>
+    <tr>
+      <td>$16,000-$24,999</td>
+      <td>5 (2.3%)</td>
+      <td>3 (3.3%)</td>
+    </tr>
+    <tr>
+      <td>$25,000-$34,999</td>
+      <td>12 (5.6%)</td>
+      <td>4 (4.3%)</td>
+    </tr>
+    <tr>
+      <td>$35,000-$49,999</td>
+      <td>12 (5.6%)</td>
+      <td>5 (5.4%)</td>
+    </tr>
+    <tr>
+      <td>$50,000-$74,999</td>
+      <td>34 (15.9%)</td>
+      <td>16 (17.4%)</td>
+    </tr>
+    <tr>
+      <td>$75,000-$99,999</td>
+      <td>31 (14.5%)</td>
+      <td>13 (14.1%)</td>
+    </tr>
+    <tr>
+      <td>$100,000-$199,000</td>
+      <td>76 (35.5%)</td>
+      <td>27 (29.3%)</td>
+    </tr>
+    <tr>
+      <td>&gt;$200,000</td>
+      <td>31 (14.5%)</td>
+      <td>16 (17.4%)</td>
+    </tr>
+    <tr>
+      <td>Handedness</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LH</td>
+      <td>10 (4.7%)</td>
+      <td>10 (10.9%)</td>
+    </tr>
+    <tr>
+      <td>RH</td>
+      <td>175 (81.8%)</td>
+      <td>69 (75%)</td>
+    </tr>
+    <tr>
+      <td>Mixed</td>
+      <td>29 (13.6%)</td>
+      <td>13 (14.1%)</td>
+    </tr>
+    <tr>
+      <td>Injury Mechanism</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fall/hit by object</td>
+      <td>135 (63.1%)</td>
+      <td>48 (52.2%)</td>
+    </tr>
+    <tr>
+      <td>Fight/shaken</td>
+      <td>2 (0.9%)</td>
+      <td>3 (3.3%)</td>
+    </tr>
+    <tr>
+      <td>Motor vehicle collision</td>
+      <td>14 (6.5%)</td>
+      <td>3 (3.3%)</td>
+    </tr>
+    <tr>
+      <td>Multiple</td>
+      <td>10 (4.7%)</td>
+      <td>5 (5.4%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>53 (24.8%)</td>
+      <td>33 (35.9%)</td>
+    </tr>
+    <tr>
+      <td>Time Since Injury (years)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>3.22 (2.79)</td>
+      <td>3.23 (2.60)</td>
+    </tr>
+    <tr>
+      <td>Median [Min, Max]</td>
+      <td>2.00 [0.00, 11.0]</td>
+      <td>2.50 [0.00, 9.00]</td>
+    </tr>
+    <tr>
+      <td>Total TBIs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>53 (24.8%)</td>
+      <td>33 (35.9%)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>151 (70.6%)</td>
+      <td>54 (58.7%)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>9 (4.2%)</td>
+      <td>5 (5.4%)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1 (0.5%)</td>
+      <td>0 (0%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Participants with “Unknown” Injury Mechanism and Total TBIs reported sustaining a TBI but no mechanism of injury was endorsed._
+
+### Combined measures of white matter tract microstructure
 
 From all 2850 possible connections, 1,026 survived thresholding. Out of those 1026 connections, 629 survived COMMIT filtering. The PCA applied across dMRI measures from all 629 connections yielded two biologically-interpretable components that together explained 96% of the variance in measures (Appendix 1—figure 3). The first appeared to reflect an index of microstructural complexity, whereas the second more closely reflected axonal density. Because we retained two PCs, we performed two PLSc analyses.
 
-## Multi-tract multi-symptom relationships
+### Multi-tract multi-symptom relationships
 
 To parse multi-tract multi-symptom heterogeneity, we performed two PLSc analyses, one using the selected microstructural complexity features and another using the selected axonal density features, along with all 19 symptom features. Each PLSc analysis yielded 19 latent modes of covariance (termed here ‘multi-tract multi-symptom relationships’), each consisting of a pair of multi-tract connectivity and multi-symptom features. Based on permutation testing, 16 multi-tract multi-symptom pairs were retained from the microstructural complexity PLSc, and 8 from the axonal density PLSc. Appendix 1—figures 4 and 5 illustrate all the multi-symptom and multi-tract features (respectively) from the retained pairs from the microstructural complexity PLSc. Individual pairs selected for further discussion are shown in Figures 3 and 4. Figure 3 also illustrates the expression of these multi-tract multi-symptom pairs (scatter plots). For each pair, the symptom profiles of two example participants, one with high feature expression, one with low, are shown. These example participants illustrate how these multi-tract multi-symptom features can represent a diversity of symptom profiles.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70450/elife-70450-fig3-v2.jpg)
 
-**Figure 3.:** B).Left: Polar plots displaying the weights of all 19 symptom measures for each multi-symptom feature. Bars pointing away from the center illustrate positive weights, bars pointing towards the center represent negative weights. White stars illustrate symptoms that significantly contributed to the pair. Bar graphs underneath the polar plots illustrate the % covariance explained by each pair, with the currently-shown pair highlighted. Right: Scatter plots showing the expression of multi-tract features (x-axis) and multi-symptom features (y-axis). In each scatter plot, the same 6 participants are labeled (1 through 6). Small bar graphs illustrate the scaled symptom measures (i.e.: not the expression of multi-symptom features) for two participants, one expressing low levels of a pair, the other expressing high levels. For each illustrated participant, positive bars illustrate symptoms that are higher than the sample average, negative bars represent symptoms that are lower. The black dashed line illustrates 1 standard deviation above the group mean. Participants with ADHD diagnoses are illustrated in black. Correlation coefficients inset in each scatter plot represent Pearson correlations between expression of multi-tract features (near x-axis), or multi-symptom features (near y-axis) and a binary variable indexing whether or not a participant had a diagnosis of ADHD.
+**Figure 3.:** Left: Polar plots displaying the weights of all 19 symptom measures for each multi-symptom feature. Bars pointing away from the center illustrate positive weights, bars pointing towards the center represent negative weights. White stars illustrate symptoms that significantly contributed to the pair. Bar graphs underneath the polar plots illustrate the % covariance explained by each pair, with the currently-shown pair highlighted. Right: Scatter plots showing the expression of multi-tract features (x-axis) and multi-symptom features (y-axis). In each scatter plot, the same 6 participants are labeled (1 through 6). Small bar graphs illustrate the scaled symptom measures (i.e.: not the expression of multi-symptom features) for two participants, one expressing low levels of a pair, the other expressing high levels. For each illustrated participant, positive bars illustrate symptoms that are higher than the sample average, negative bars represent symptoms that are lower. The black dashed line illustrates 1 standard deviation above the group mean. Participants with ADHD diagnoses are illustrated in black. Correlation coefficients inset in each scatter plot represent Pearson correlations between expression of multi-tract features (near x-axis), or multi-symptom features (near y-axis) and a binary variable indexing whether or not a participant had a diagnosis of ADHD.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70450/elife-70450-fig4-v2.jpg)
 
@@ -151,23 +521,23 @@ Although this pattern was observed in both PLSc analyses, important exceptions w
 
 Overall, these results illustrate how different symptom profiles are associated with different combinations of tracts. Earlier pairs consisted of broad symptom categories and implicated wider networks of connectivity features, whereas more idiosyncratic pairs consisted of more localized connectivity features that were associated with more symptom-specific profiles. However, some symptoms such as sleep problems were implicated across the spectrum of different multi-tract multi-symptom pairs, illustrating how some symptoms do not demonstrate a one-to-one relationship with connectivity features across multi-tract multi-symptom pairs. No tracts were widely implicated across all pairs.
 
-## Multi-tract multi-symptom features and clinical subgroup membership
+### Multi-tract multi-symptom features and clinical subgroup membership
 
 We identified 33 individuals in the discovery set with diagnoses of ADHD obtained from the KSADS (Dodd et al., 2014). These individuals are shown in black in Figure 3 (scatter plots). Despite forming a clinical subgroup based on a gold-standard measure of psychiatric pathology, these individuals were heterogeneous in their expression of multi-tract and multi-symptom features. Further, we computed correlations between the expression of these multivariate features and clinical subgroup membership, and found weak, albeit significant correlations (see Figure 3 scatter plots and Supplementary file 3).
 
-## Multivariate vs univariate approaches
+### Multivariate vs univariate approaches
 
 We compared microstructural complexity and axonal density scores across all 200 connections between individuals with and without an ADHD diagnosis, and calculated the percent overlap between each multi-tract connectivity feature and the set of tracts found to be significant in univariate comparisons (ostensibly ‘ADHD-related’ tracts). The percent overlap scores are presented in Figure 4. Notably, the highest overlap occurred with multi-tract connectivity feature 1 (10–13%) from both PLSc analyses, which implicated a wide network of white matter tracts and were associated with general problems. In contrast, the overlap with multi-tract connectivity feature 7, which implicated mostly frontal connections and was associated with attention problems almost exclusively, was low (5%). Neither of the two univariate analyses implicated the two connections discussed above (right pars opercularis – right post-central sulcus; right par opercularis – right sumpramarginal gyrus) that were consistently associated with attention problems. These results suggest that the putative ‘ADHD-related’ connections identified in univariate comparisons of microstructural complexity and axonal density measures between individuals with ADHD and those without are mostly non-overlapping with the connections identified in an attention-problems specific multi-tract multi-symptom pair.
 
-## Relationship with sociodemographic and injury-related factors
+### Relationship with sociodemographic and injury-related factors
 
 Appendix 1—figure 2 illustrates the expression of multi-tract connectivity features color-coded by sociodemographic strata defined by sex, total combined household income, and race/ethnicity. Qualitatively, no clusters defined by these sociodemographic strata are apparent. Further, correlations between multi-tract/multi-symptom feature expression and binary (or dummy-coded) variables defining each strata are overall weak and non-significant (Appendix 1—figure 2). Out of 24 retained multi-tract multi-symptom pairs, time since the latest injury was only significantly correlated to the expression of one multi-tract connectivity features (Supplementary file 2) and no multi-symptom features. Only the expression of two multi-tract connectivity features (features 2 and 15 from the microstructural complexity PLSc) were significantly different between groups defined by injury cause (Appendix 1—figures 6 and 7, respectively). Only the expression of one multi-tract connectivity features, feature 15 from the microstructural complexity PLSc (Appendix 1—figure 8) significantly differed between groups defined by the total number of TBIs.
 
-## Results on the replication dataset
+### Results on the replication dataset
 
 We first analyzed the amount of connectivity/symptom covariance explained by each of the multi-tract/multi-symptom pairs. We found that approximately 26% of the connectivity/symptom covariance in the replication set was explained by the first multi-tract/multi-symptom pair from the microstructural complexity PLSc, and 40% was explained by the corresponding pair from the axonal density PLSc. However, with permutation testing, these percentages were not found to be significantly higher than expected by chance. We then projected the replication dataset onto the latent spaces obtained using the discovery set, and ran correlations comparing multi-tract multi-symptom feature expression against a binary variable indexing the dataset. We found very low, non-significant correlations (all coefficients lower than 0.01) between multi-tract and multi-symptom feature expression and set membership. Finally, we reran our PCA and PLSc analyses on the replication set, and compared the features obtained against the original results. The loadings obtained from the PCA performed on the replication set are illustrated in Appendix 1—figure 9. The loadings for the first two PCs from both sets of analyses were highly correlated (r = 0.9997, p < 0.001; r = 0.996, p < 0.001). Out of the 200 connections originally selected in the discovery set, 73 were also selected in the replication set. Appendix 1—figure 10 illustrates the loadings for all the multi-symptom features retained after permutation testing. Correlations between the loadings of these new multi-symptom features and the ones obtained from the original PLSc analyses were low to high (0.087–0.810). The correlations between the loadings of the 73 connections that were common to both PLSc analyses were very low to moderate (0.006–0.227). However, the correlations between expression of multi-symptom features obtained from the PLSc performed on the replication dataset and those obtained by projecting the replication set onto the original latent spaces reached higher values (0.01–0.979), which was also found for those between expression of multi-tract features (0.02–0.67). Altogether, these results suggest that despite having mostly different connectivity inputs due to the feature selection step, the analyses led to similar multi-tract multi-symptom features.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 We first tested the impact that changing the number of retained connections would have on PLSc results. The percentage of covariance explained by the first multi-tract multi-symptom pair from the microstructural complexity PLSc is illustrated in Appendix 1—figure 11. Initially, the percentage of covariance explained increased with an increasing number of connections, and stabilized around 200 connections. These results suggest that a selection of 200 connections is close to the optimal amount that could have been selected.
 

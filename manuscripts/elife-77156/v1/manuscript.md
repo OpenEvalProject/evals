@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0198v2949 Departamento de Zoologia-IBRAG, Universidade do Estado do Rio de Janeiro Rio de Janeiro RJ Brazil
-2. https://ror.org/057zh3y96 Department of Earth and Planetary Science, Graduate School of Science, The University of Tokyo Tokyo Japan
-3. https://ror.org/039ygjf22 Department of Anatomy, The Jikei University School of Medicine Tokyo Japan
-4. https://ror.org/03bf0mp03 Kitakyushu Museum of Natural History and Human History, 2-4-1 Higashida, Yahatahigashi-ku, Kitakyushu Fukuoka Japan
-5. https://ror.org/019whta54 Institute of Earth Sciences, University of Lausanne Lausanne Switzerland
-6. https://ror.org/02feahw73 Université Paris-Saclay, CNRS, ministère de la Culture, UVSQ, MNHN, Institut photonique d’analyse non-destructive européen des matériaux anciens Saint-Aubin France
-7. https://ror.org/04cybtr86 Department of Anatomy, Iwate Medical University School of Medicine Iwate Japan
-8. https://ror.org/04dpcyn69 Kanagawa Prefectural Museum of Natural History Kanagawa Japan
-9. https://ror.org/057zh3y96 Atmosphere and Ocean Research Institute, The University of Tokyo Chiba Japan
+1. Departamento de Zoologia-IBRAG, Universidade do Estado do Rio de Janeiro Rio de Janeiro RJ Brazil ([ROR:0198v2949](https://ror.org/0198v2949))
+2. Department of Earth and Planetary Science, Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+3. Department of Anatomy, The Jikei University School of Medicine Tokyo Japan ([ROR:039ygjf22](https://ror.org/039ygjf22))
+4. Kitakyushu Museum of Natural History and Human History, 2-4-1 Higashida, Yahatahigashi-ku, Kitakyushu Fukuoka Japan ([ROR:03bf0mp03](https://ror.org/03bf0mp03))
+5. Institute of Earth Sciences, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+6. Université Paris-Saclay, CNRS, ministère de la Culture, UVSQ, MNHN, Institut photonique d’analyse non-destructive européen des matériaux anciens Saint-Aubin France ([ROR:02feahw73](https://ror.org/02feahw73))
+7. Department of Anatomy, Iwate Medical University School of Medicine Iwate Japan ([ROR:04cybtr86](https://ror.org/04cybtr86))
+8. Kanagawa Prefectural Museum of Natural History Kanagawa Japan ([ROR:04dpcyn69](https://ror.org/04dpcyn69))
+9. Atmosphere and Ocean Research Institute, The University of Tokyo Chiba Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 10. Seikei Education and Research Center for Sustainable Development Tokyo Japan
-11. https://ror.org/01ydb3330 Synchrotron SOLEIL, L’orme des Merisiers Saint-Aubin Gif-sur-Yvette Cedex France
-12. https://ror.org/01xjv7358 Japan Synchrotron Radiation Research Institute (JASRI/SPring-8) Hyogo Japan
+11. Synchrotron SOLEIL, L’orme des Merisiers Saint-Aubin Gif-sur-Yvette Cedex France ([ROR:01ydb3330](https://ror.org/01ydb3330))
+12. Japan Synchrotron Radiation Research Institute (JASRI/SPring-8) Hyogo Japan ([ROR:01xjv7358](https://ror.org/01xjv7358))
 
 † Corresponding author
 
@@ -49,39 +49,75 @@ Curiously, some living vertebrates display an unpaired organ, leaving the ancest
 
 To follow lung evolutionary history in vertebrates, we analyzed the morphogenesis of lungs of key living osteichthyans (Figures 1 and 2, Figures 3 and 4, Figures 5 and 6). Embryos, larvae, juveniles and adults of P. senegalus, N. forsteri, Lepidosiren paradoxa were examined. To compare the lung anatomy of osteichthyan fishes with tetrapods, we studied also an extensive developmental series of the living salamandrid Salamandra salamandra, from early and late larvae to juveniles before and after metamorphosis (Figure 5). As salamanders are often considered to have retained plesiomorphic characteristics of tetrapod stance and locomotion (Pierce et al., 2020), we used them here also as a model for understanding lung evolution in tetrapods. Specimens of mentioned taxa were examined through x-ray microtomography, the unique effective non-invasive methodology to study their morphology and histology at a three-dimensional (sub) microscale. When possible, we proceeded also with dissections and the study of histological sections. We compare our results with the available information from the lung of fossil taxa, the coelacanths and salamanders (Cupello et al., 2019; Brito et al., 2010; Tissier et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig1-v1.jpg)
+
+**Figure 1.:** (A) Early embryo (9.3mm) total length (TL) in right lateral view, (B) isolated lung of the early embryo in dorsal view, (C) juvenile (45mm TL) in right lateral view, (D) isolated lung of the juvenile in dorsal view, (E) close-up of (D) highlighting the lung in ventral view and pointing out the region of the independent and secondary connection of the left sac to the right one by a lateral opening. Yellow, foregut including the stomach; red, lung. Black arrow in (A) pointing to the lung. Arrowheads in (B) pointing to the lung connection to the foregut and in (D) pointing to the pneumatic duct connection to the foregut. Black arrow in (E) pointing to the independent connection. Ls, left sac; rs, right sac; ulb, unpaired lung bud. Scale bars, 5.0mm (A); 0.075mm (B); 5.0mm (C, D); 1.0mm (E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Unpaired lung origin. (B) Right sac arising from the foregut. (C) Left sac arising from an independent and lateral connection to the right sac. (D) Right and left sacs. Yellow, foregut; red, lung. Orange arrow, opened connection between foregut and lung. Fg, foregut; ls, left sac; rs, right sac. Scale bars, 0.5 mm (A–D).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Virtual section of the juvenile (45 mm total length; TL) in anterior view, evidencing the esophagus and the lung in 3D. (B) Isolated right lung of the juvenile in lateral view, evidencing the independent and secondary connection of the left sac to the right one by a lateral opening. Yellow, foregut including the stomach; red, right sac; blue, left sac, dashed line, independent and secondary connection of the left sac to the right one. Scale bars, 1.0 mm (A, B).
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig2-v1.jpg)
 
-**Figure 2.:** Polypterus senegalus.(A) No lung bud in 8.0mm total length (TL) specimen, (B) origin of an unpaired lung bud in 8.5mm TL specimen, (C) unpaired lung bud in 9.1mm TL specimen, (D) first register of an independent and lateral second lung bud in 12mm TL specimen, (E, F) independent and lateral second lung bud arising from the principal tube in 15.5mm TL and 18mm TL specimens. (A, C, E–F) Histological thin-sections. (B, D) Sections of synchrotron x-ray microtomography of the early embryo. Black and white head arrows pointing to the lumen of the unpaired lung buds; arrows pointing to the undifferentiated cells surrounding the glottis. Fg, foregut; ilb, independent lateral bud; rb, right bud; ulb, unpaired lung bud. Scale bars, 0.2mm (A, E); 0.1mm (B, D, F); 0.05mm (C).
+**Figure 2.:** (A) No lung bud in 8.0mm total length (TL) specimen, (B) origin of an unpaired lung bud in 8.5mm TL specimen, (C) unpaired lung bud in 9.1mm TL specimen, (D) first register of an independent and lateral second lung bud in 12mm TL specimen, (E, F) independent and lateral second lung bud arising from the principal tube in 15.5mm TL and 18mm TL specimens. (A, C, E–F) Histological thin-sections. (B, D) Sections of synchrotron x-ray microtomography of the early embryo. Black and white head arrows pointing to the lumen of the unpaired lung buds; arrows pointing to the undifferentiated cells surrounding the glottis. Fg, foregut; ilb, independent lateral bud; rb, right bud; ulb, unpaired lung bud. Scale bars, 0.2mm (A, E); 0.1mm (B, D, F); 0.05mm (C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig3-v1.jpg)
 
-**Figure 3.:** Latimeria chalumnae.(A) Early embryo of Latimeria chalumane (45mm total length; TL) in right lateral view (Cupello et al., 2015), (B) isolated unpaired lung of the early embryo in dorsal view, (C) adult specimen of Latimeria chalumnae (1300mm TL) in right lateral view (Cupello et al., 2015), (D) isolated unpaired lung of the adult specimen in dorsal view. Yellow, foregut including the stomach; red, lung. Arrowheads in (B) and (D) pointing to the lung connection to the foregut. Black arrow in (C) pointing to the lung. Ul, unpaired lung bud in (B) and unpaired lung in (D). Scale bars, 5.0mm (A); 5.0mm (B); 200.0mm (C); 40mm (D). Modified from Cupello et al., 2015.
+**Figure 3.:** (A) Early embryo of Latimeria chalumane (45mm total length; TL) in right lateral view (Cupello et al., 2015), (B) isolated unpaired lung of the early embryo in dorsal view, (C) adult specimen of Latimeria chalumnae (1300mm TL) in right lateral view (Cupello et al., 2015), (D) isolated unpaired lung of the adult specimen in dorsal view. Yellow, foregut including the stomach; red, lung. Arrowheads in (B) and (D) pointing to the lung connection to the foregut. Black arrow in (C) pointing to the lung. Ul, unpaired lung bud in (B) and unpaired lung in (D). Scale bars, 5.0mm (A); 5.0mm (B); 200.0mm (C); 40mm (D). Modified from Cupello et al., 2015.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig4-v1.jpg)
+
+**Figure 4.:** (A) Early embryo of Neoceratodus forsteri (13.5mm total length; TL) in right lateral view, (B) isolated unpaired lung of the early embryo in dorsal view, (C) adult specimen of Neoceratodus forsteri (200mm TL) in right lateral view, (D) isolated unpaired lung of the adult specimen in dorsal view, (E) close-up of the lung unpaired connection to the foregut in (D), (F) larva of Lepidosiren paradoxa (46mm TL) in lateral view, (G) isolated lung of the larval specimen in dorsal view, (H) close-up of the lung unpaired connection to the foregut in (G), (I) juvenile of Lepidosiren paradoxa young adult (68mm TL) in lateral view, (J) isolated lung of the juvenile specimen in dorsal view, (K) close-up of the lung unpaired connection to the foregut in (J).Yellow, foregut including the stomach; red, lung. Black arrow in (A) pointing to the lung. Arrowheads in (B), pointing to the lung connection to the foregut and in (D), (G) and (J) pointing the pneumatic duct connection to the foregut. Ls, left sac; rs, right sac; ul, unpaired lung; ulb, unpaired lung bud. Scale bars, 2.5mm (A); 0.1mm (B); 20mm (C); 10mm (D, I); 7.2 mm (J); 5.0mm (F, G).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Unpaired lung origin. (B) Unique sac arising from the foregut. (C, D) Unique sac developing. Yellow, foregut; red, lung. Orange arrow, opened connection between foregut and lung. fg, foregut; us, unique sac. Scale bars, 0.5 mm (A–D).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Unpaired lung origin. (B) Right sac arising from the foregut. (C) Left sac arising from an independent and lateral connection to the right sac. (D) Right and left sacs. Yellow, foregut; red, lung. Orange arrow, opened connection between foregut and lung. Fg, foregut; ls, left sac; rs, right sac. Scale bars, 0.5mm (A–D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Red arrow, lung. Black arrow, ventral insertion of the right sac. Ls, left sac; rs, right sac. Scale bars, 50mm (A, B); 10mm (C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig5-v1.jpg)
+
+**Figure 5.:** (A) Early larva of Salamandra salamandra (35.5mm total length; TL) in right lateral view, (B) isolated paired lung of the larva embryo in dorsal view, (C) juvenile of Salamandra salamandra (81.85mm TL) in right lateral view, (D) isolated paired lung of the juvenile specimen in dorsal view. Yellow, foregut including the stomach; red, lung. Arrowheads in (B) and (D) pointing to the trachea connection to the foregut. Ll, left lung; rl, right lung. Scale bars, 5.0mm (A); 3.125mm (B); 10mm (C); 6.25cm (D).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Trachea arising. (C, D) Fist order bronchioles. (E) Right and left lungs arising simultaneously and symmetrically. Yellow, foregut; red, lung. Orange arrow, opened connection from the foregut. Br, braonchile; fg, foregut; ll, left lung; rl, right lung; tr, trachea. Scale bars, 0.5mm (A–D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77156/elife-77156-fig6-v1.jpg)
 
-**Figure 6.:** A–H) and true paired lungs (I, J).(A, B) Virtual section of Polypterus senegalus (12mm total length; TL), (C) histological thin section of Latimeria chalumnae (127cm) (Cupello et al., 2017a), (D) virtual section of L. chalumnae (40mm TL; modified from Cupello et al., 2017a), (E, F) virtual section of Neoceratodus forsteri (16mm TL), (G, H) virtual section of Lepidosiren paradoxa (46mm TL), (I, J) virtual section of Salamandra salamandra (35.5mm TL). Yellow, foregut including the stomach; red, lung. Orange arrows, opened connection between the foregut and the lung. Fg, foregut; ll, left lung; ls, left sac; rb, right bud; ilb, independent lung bud; rl, right lung; rs, right sac; ulb, unpaired lung bud. Scale bars, 0.25mm (A, B); 3.0mm (C); 1.0mm (D); 0.1mm (E, F); 0.5mm (G, H); 1.25mm (I, J).
+**Figure 6.:** (A, B) Virtual section of Polypterus senegalus (12mm total length; TL), (C) histological thin section of Latimeria chalumnae (127cm) (Cupello et al., 2017a), (D) virtual section of L. chalumnae (40mm TL; modified from Cupello et al., 2017a), (E, F) virtual section of Neoceratodus forsteri (16mm TL), (G, H) virtual section of Lepidosiren paradoxa (46mm TL), (I, J) virtual section of Salamandra salamandra (35.5mm TL). Yellow, foregut including the stomach; red, lung. Orange arrows, opened connection between the foregut and the lung. Fg, foregut; ll, left lung; ls, left sac; rb, right bud; ilb, independent lung bud; rl, right lung; rs, right sac; ulb, unpaired lung bud. Scale bars, 0.25mm (A, B); 3.0mm (C); 1.0mm (D); 0.1mm (E, F); 0.5mm (G, H); 1.25mm (I, J).
 
 ## Results
 
-## The lung development in Polypterus senegalus
+### The lung development in Polypterus senegalus
 
 From our observations on embryos of 8.0, 8.5, 9.1, and 9.3 mm total length (TL), the lung anlage develops as a ventral unpaired and tubular depression of the respiratory pharynx (the posterior portion of the pharynx), surrounded by undifferentiated mesenchymal cells (Tatsumi et al., 2016; Figures 1A, B, 2B and C). Only at the 12 mm TL larva, the left bud arises from the principal and primary lung anlage as a branch (Figure 2D). Subsequently, the lung assumes its asymmetrical morphology, the left sac is smaller and remains ventral in the abdominal cavity, while the right one (principal tube) starts a partial turn up and stays parallel to the dorsal portion of the foregut (including the stomach). The left sac keeps a secondary connection to a lateral opening of the principal tube, and not to the foregut (Figures 1D, E, 6A and B, Figure 1—figure supplements 1 and 2). Undifferentiated dense cells surrounding the glottis are visible for the first time in specimens of 15.5 mm TL (black arrows in Figure 2E). Air-breathing behavior starts at the juvenile stage in P. senegalus (Bartsch et al., 1997), and from juveniles of 23 mm TL onward, the blastema starts to develop into the muscular sphincter and respiratory epithelium at the glottis (ciliated cells intercalated by goblet cells). Right and left sacs are well developed and have a projection anterior to the connection with the small pneumatic duct in juveniles (Figure 1D and E). The right tube is three times longer than the left one, with an expanded diameter in its caudal portion, posterior to the stomach (Figure 1C and D).
 
 The right and left sacs make a partial turn-up, remaining parallel to the dorsal surface of the upper gastrointestinal tract (one of each side). P. senegalus lung is internally smooth and lacks alveolation at all the examined developmental stages, except for in the 45 mm TL juvenile, in which the most anterior projection of the lung, anterior to the connection with the pneumatic duct, is slightly compartmentalized. This evidence based on the first developmental stages of P. senegalus (embryos with 8.5 mm, 9.1 mm, and 9.3 mm) lung prove that the lung bud initially develops as an unpaired anlage in this taxon (Figures 1B, 2B and C). The left sac develops secondarily from the right sac at later developmental stages, as a diverticulum or a lobe, of the right primary lung (Figure 2E and F, Figure 1—figure supplements 1 and 2).
 
-## The lung development in Latimeria chalumnae
+### The lung development in Latimeria chalumnae
 
 The anatomy of the lung of fossil and extant coelacanths, as well as its ontogenic development in the extant L. chalumnae, have been extensively documented (Cupello et al., 2015; Cupello et al., 2017a; Cupello et al., 2017b; Cupello et al., 2019). The latter studies highlighted that embryos of L. chalumnae display ventral compartmentalized unpaired lung throughout its length, suggesting alveolation (Cupello et al., 2017a), and that a lateral and internal chamber is also present in the early embryo (40 mm TL) (Figures 3 and 6D). At the latest developmental stages the pulmonary complex shows vestigial features, and no internal compartmentalization is recognizable (Lambertz et al., 2015). Adult specimens have constrictions and septations that divide the unpaired lung into separate lobes throughout its length, as in some fossil coelacanths (Cupello et al., 2019). Fossil coelacanths, from late Devonian to late Cretaceous, were most probably facultative air-breathers and made gas exchanges through their unpaired lungs and gills (Cupello et al., 2019; Brito et al., 2010). Although some authors suggest that L. chalumnae fatty organ evidences a paired lung, previous studies proved that this organ is not the second lung, since there is no opened connection between this organ and the foregut or lung, nor lung plates surrounding it (Cupello et al., 2015; Cupello et al., 2017a; Cupello et al., 2017b). Based on these, the paired condition of coelacanth lungs can be excluded.
 
-## The lung development in Neoceratodus forsteri
+### The lung development in Neoceratodus forsteri
 
 The first developmental stage with lung anlage registered in this study is an early larva of 13.5 mm TL, with an unpaired morphology represented primarily by lung anterior projection (Figure 4B). In larvae of 16 mm, 17 mm, and 17.5 mm TL, although organogenesis is still not complete, a long and unpaired lung anlage is clearly identifiable and arises as a ventral depression of the post-pharyngeal foregut (Figure 6E and F). In the 19 mm TL specimen, the unpaired lung starts its dorsal turn up in relation to the dorsal portion of the foregut (including the stomach) (Figure 4—figure supplement 1). From 20.5 mm TL onward, organogenesis is completed. In the larva of 20.5 mm TL, the lung remains unpaired and is ventrally connected to the post-pharyngeal foregut by a ventral, opened and long pneumatic duct. This organ has a projection anterior to the connection of the pneumatic duct and does not display alveolation/compartmentalization yet. According to previous studies (Kemp, 1982; Kemp, 1986), air-breathing begins in N. forsteri at 25 mm TL larval stage. Our results reveal that the larva with 26.5 mm TL presents a lung wall slightly pleated. From 50 mm TL larval stage onward, the lung wall is pleated eventually providing a high degree of alveolation. In the adult individual with 200 mm TL, the single lung displays internally two lateral chambers that are connected to a principal median chamber at both sides as a single structure (Figure 4C–E). In adult specimens of N. forsteri, the lung is highly compartmentalized by septa of smooth muscle and non-elastic connective tissue, as well as spongy alveolar structures (Grigg, 1965). At this developmental stage, the lung makes a complete dorsal turn-up at its posterior portion in relation to the gastrointestinal tract (Figure 4C). Although some authors pointed the presence of a second bud at the early developmental stages of N. forsteri, referred as the left lung (Spencer, 1893; Neumayer, 1904), the results presented here show an indubitably unpaired configuration for Neoceratodus lung throughout the ontogeny (Figures 4A–E–6E and F and Figure 4—figure supplement 1).
 
-## The lung development in Lepidosiren paradoxa
+### The lung development in Lepidosiren paradoxa
 
 Lungs of the four specimens studied here, from larva to adults (larva with 46 mm TL, juveniles with 68 mm TL and 222.1 mm TL, and adult with 400 mm TL), display a similar morphology, and surprisingly, left and right tubes do not arise simultaneously. Only the right sac is connected to the pharynx by a long pneumatic duct (Figure 6G and H and Figure 4—figure supplement 2). The left sac is a branch of the right one, connected by a posterior and secondary opening at the lung level, already in dorsal position in relation to the foregut (Figure 6G and H and Figure 4—figure supplement 2). There is no connection of the left sac with the pneumatic duct. In L. paradoxa, only the pneumatic duct is ventrally positioned, and the lung makes a complete dorsal turn up from the right side of the upper gastrointestinal tract (Figure 4F–K and Figure 4—figure supplement 3), just after the ventral connection to the pharynx. This complete dorsal turn-up is also seen in the lung of adult specimens of N. forsteri (Figure 4I–K). There are no anterior projections of the lung. Lung compartmentalization is clearly observable through dissections, evidencing the high degree of alveolation (Figure 4—figure supplement 3). Our results indicate that the lung of L. paradoxa is, in fact, remarkably similar to P. senegalus lung. The so-called left lung of L. paradoxa is most likely a diverticulum or a modified lateral lobe, which might have evolved secondarily, an advantage for enlarging the surface area for oxygen-uptake, eventually enabling the obligatory air-breathing performance in the linage towards L. paradoxa.
 
-## The lung development in Salamandra salamandra
+### The lung development in Salamandra salamandra
 
 In early larvae with 35.5 mm TL and 42.8 mm TL, paired lungs are collapsed in its middle and posterior portion (Figure 5A and B). The internal lung wall is thin and smooth, without compartmentalization and/or alveolation in its inner wall (Figure 6J and Figure 5—figure supplement 1). From the early larvae onward, the muscular glottis develops on the ventral portion of the pharynx, and both left and right lungs arise simultaneously and symmetrically from a long trachea and paired first order bronchioles (Figures 5C, D, 6I and J and Figure 5—figure supplement 1). Lungs are symmetrical in size and morphology and are placed in the anteriormost portion of the abdominal cavity, as described for other tetrapods (Figure 5C and D).
 
@@ -105,7 +141,7 @@ According to morphological evidence presented here, bifurcation morphogenesis in
 
 ## Materials and methods
 
-## Specimens information
+### Specimens information
 
 All specimens used in this work are permanently housed in collections of public institutions. No specimens were collected alive in the field for this work. P. senegalus specimens were originally obtained for the study on the molecular developmental in polypterids (Tatsumi et al., 2016). Nine specimens here studied are: six late embryos (free embryonic phase or postembryos) of 8.0 mm TL (PS-001–01) and histological thin-section of another specimen of 8.0 mm TL (PSS-No1), 8.5 mm TL (PS-001–02), 9.1 mm TL (PSS-No2), and 9.3 mm TL (two specimens, PS-001–03); four larva of 12 mm TL (two specimens, PS-001–04), 15.5 mm TL (PSS-No3), and 18.0 mm TL (PSS-No4); and three juveniles of 20 mm TL (PS-001–05), 23 mm TL (PS-001–06), and 45 mm TL (PS-001–07). We indicate the developmental stages (embryo, larvae, juveniles, and adults) following Bartsch et al., 1997. Specimens and histological material are housed at the Department of Anatomy of the Jikei University School of Medicine (Tokyo, Japan).
 
@@ -117,7 +153,7 @@ Six S. salamandra specimens were obtained on loan at the amphibian collection of
 
 Institutional abbreviations: IMU-RU-SI, Iwate Medical University, Ryozi Ura Collection, Japan; PS, Polypterus senegalus; PSS, Polypterus senegalus sections; KPM-NI, Kanagawa Prefectural Museum Natural History, Odawara, Japan; MNHN, Muséum national d’Histoire naturelle, Paris, France; UERJ-PN, Universidade do Estado do Rio de Janeiro, Peixes Neotropicais.
 
-## X-ray tomography
+### X-ray tomography
 
 Due to the extremely small size of the embryos and larvae, and to the weak density difference between soft tissues of the abdominal cavity, propagation phase-contrast microtomography was the unique way to study their anatomy and histology at micrometer scale. Phase-contrast microtomography being only achieved at synchrotron sources, we accessed the anatomy of these rare and tiny samples at the Synchrotron SOLEIL and Synchrotron SPring-8. The high brightness of the synchrotrons was essential for our material and enabled the collection high resolution scans in short timescales.
 
@@ -129,6 +165,6 @@ Specimens of N. forsteri (from 13.5 to 70 mm TL) were imaged at the SPring-8 Syn
 
 Datasets were acquired at propagation distances of 2.75 µm/voxel, 4.47 µm/voxel: 600 mm; 12.56 µm/voxel: 3 m and three different exposure times of 70 ms, 150 ms, and 200 ms per projection. Field of view were: pixel size × 2048 (2.75 × 2048 = 5632 µm; 4.47 × 2048 = 9154.56 µm; 12.56 × 2048 = 25722.88 µm) A total of 1800 projections were recorded per scan as the sample was rotated through 180°. A high-resolution computerized axial tomography scanning was performed for the adult specimen of Neoceratodus (KPM-NI 11384) of 200 mm TL at the National Museum of Nature and Science (Tokyo, Japan) using the following scanning parameters: effective energy 189 kV, current 200 mA, voxel size 9.765 μm and 1000 views (slice width 0.1 mm).
 
-## Segmentation and three-dimensional rendering
+### Segmentation and three-dimensional rendering
 
 Segmentation and 3D rendering were performed using the software MIMICS Innovation Suite 20.0 (Materialise) at the Laboratório de Ictiologia Tempo e Espaço of the Universidade do Estado do Rio de Janeiro.

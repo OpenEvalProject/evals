@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03zjqec80 Arthritis and Tissue Degeneration Program and David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery New York United States
-2. https://ror.org/02r109517 Department of Medicine, Weill Cornell Medical College New York United States
-3. https://ror.org/00mcjh785 The first Affiliated Hospital of Xiamen University-ICMRS Collaborating Center for Skeletal Stem Cells, State Key Laboratory of Cellular Stress Biology, Faculty of Medicine and Life Sciences, Fujian Provincial Key Laboratory of Organ and Tissue Regeneration, School of Medicine, Xiamen University Xiamen China
-4. https://ror.org/02r109517 Pathology and Laboratory Medicine, Weill Cornell Medical College New York United States
-5. https://ror.org/02f6dcw23 Department of Biochemistry & Structural Biology, University of Texas Health Science Center at San Antonio San Antonio United States
-6. https://ror.org/03zjqec80 Research Institute, Hospital for Special Surgery New York United States
-7. https://ror.org/02r109517 Graduate Program in Cell and Development Biology, Weill Cornell Graduate School of Medical Sciences New York United States
+1. Arthritis and Tissue Degeneration Program and David Z. Rosensweig Genomics Research Center, Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+2. Department of Medicine, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+3. The first Affiliated Hospital of Xiamen University-ICMRS Collaborating Center for Skeletal Stem Cells, State Key Laboratory of Cellular Stress Biology, Faculty of Medicine and Life Sciences, Fujian Provincial Key Laboratory of Organ and Tissue Regeneration, School of Medicine, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))
+4. Pathology and Laboratory Medicine, Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+5. Department of Biochemistry & Structural Biology, University of Texas Health Science Center at San Antonio San Antonio United States ([ROR:02f6dcw23](https://ror.org/02f6dcw23))
+6. Research Institute, Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
+7. Graduate Program in Cell and Development Biology, Weill Cornell Graduate School of Medical Sciences New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
@@ -41,41 +41,99 @@ The rapid evolution of scRNAseq technology provides an opportunity to investigat
 
 ## Results
 
-## scRNAseq reveals Adipoq-lineage progenitors as a main cellular source expressing Csf1 in bone marrow
+### scRNAseq reveals Adipoq-lineage progenitors as a main cellular source expressing Csf1 in bone marrow
 
 Along with the rapid progress of single-cell RNAseq technology, single-cell transcriptomics provides an unprecedented assessment of tissue cellular composition and gene expression profile at individual cell resolution. We took advantage of a recently published dataset (Dolgalev and Tikhonova, 2021), which integrated three bone marrow scRNAseq datasets (Tikhonova et al., 2020; Baryawno et al., 2019; Baccin et al., 2020), and analyzed the expression profiles of non-hematopoietic bone marrow cells. Adipoq is found to be most highly expressed in the cluster MSPC-adipo (mesenchymal progenitor cells-adipo lineage)/Adipoq-lineage progenitors (Figure 1A, B and D) as a marker of this cell population among the clusters. This MSPC-Adipo cluster (Dolgalev and Tikhonova, 2021) was described as the adipo-primed mesenchymal progenitors (Tikhonova et al., 2020), adipocyte progenitors (Wolock et al., 2019), Adipo-CAR (Cxcl12-Abundant Reticular) cells (Baccin et al., 2020), Lepr-MSC (Baryawno et al., 2019), or marrow adipogenic lineage precursors (MALPs) (Zhong et al., 2020) identified in bone marrow. Since we utilized Adipoq Cre mice to investigate the function of this progenitor population, we used the nomenclature bone marrow Adipoq-lineage progenitors to designate these cells throughout this study. We found the Adipoq-lineage progenitors to be highly enriched for bone marrow stromal cell markers important for the hematopoietic niche, such as Lepr, Cxcl12 and Kitl, but also express unique genes, such as Lpl (Figure 1B, Figure 3A). These cells labeled by Adipoq Cre were relatively quiescent, with about 4% cells incorporating BrdU under basal conditions (Figure 1C). The Adipoq-lineage progenitors are not mature adipocytes, but express some common adipocyte lineage markers, such as Cebpa and Adipoq (Figure 1B). On the other hand, osteoblast lineage marker genes, such as Sp7, Alpl, Dmp1, and Bglap, are nearly undetectable in these cells (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig1-v2.jpg)
 
-**Figure 1.:** Csf1.(A) UMAP plot of the integrated analysis of the bone marrow niche datasets of scRNAseq based on Dolgalev and Tikhonova, 2021. EC, endothelial cell; MSPC: mesenchymal progenitor cell. (B) Dot plot of several typical marker gene expression for bone marrow stromal cells, adipocyte lineage, osteoblast lineage and endothelial cells across the listed scRNAseq clusters. Cell clusters are listed on the y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects scaled average gene expression level as indicated by the legend. (C) Flowcytometry images and quantification of the bone marrow Adipoq-lineage progenitors (Adipoq+) incorporating BrdU in 10-week-old female Adipoq Cre-mTmG mice. n=5. (D) UMAP plots of the expression of Adipoq (upper left panel), Csf1 (upper right panel) and the co-expression of these two genes (lower left panel) in bone marrow cells. The lower right panel shows a relative expression scale for each gene. (E) Dot plot of Adipoq and Csf1 expression across the listed scRNA-seq clusters. Cell clusters are listed on y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects the scaled average gene expression level as indicated by the legend. (F) Violin plots of the expression of Adipoq and Csf1.Figure 1—source data 1.
+**Figure 1.:** (A) UMAP plot of the integrated analysis of the bone marrow niche datasets of scRNAseq based on Dolgalev and Tikhonova, 2021. EC, endothelial cell; MSPC: mesenchymal progenitor cell. (B) Dot plot of several typical marker gene expression for bone marrow stromal cells, adipocyte lineage, osteoblast lineage and endothelial cells across the listed scRNAseq clusters. Cell clusters are listed on the y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects scaled average gene expression level as indicated by the legend. (C) Flowcytometry images and quantification of the bone marrow Adipoq-lineage progenitors (Adipoq+) incorporating BrdU in 10-week-old female Adipoq Cre-mTmG mice. n=5. (D) UMAP plots of the expression of Adipoq (upper left panel), Csf1 (upper right panel) and the co-expression of these two genes (lower left panel) in bone marrow cells. The lower right panel shows a relative expression scale for each gene. (E) Dot plot of Adipoq and Csf1 expression across the listed scRNA-seq clusters. Cell clusters are listed on y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects the scaled average gene expression level as indicated by the legend. (F) Violin plots of the expression of Adipoq and Csf1.
 
 When screening expression of known genes regulating skeletal homeostasis in the bone marrow, we found that these bone marrow Adipoq-lineage progenitors (MSPC-adipo cluster) express the highest level of Csf1 (Figure 1D, E and F), which was unexpected because the MSPC-osteo (mesenchymal progenitor cells-osteo lineage) cluster and osteoblasts were thought to be the cellular source expressing Csf1 in bone marrow based on previous studies of in vitro cultured osteoblast cell lines or calvarial osteoblastic cells (Tanaka et al., 1993; Elford et al., 1987). Further quantitative analysis showed that bone marrow Adipoq-lineage progenitors (70% of 6441 cells expressed with scaled average expression level at 2.6) express a markedly higher level of Csf1 than MSPC-osteo cluster cells (61% of 2247 cells expressed with scaled average expression level at 1.3) (Figure 1E, Figure 1—source data 1). Csf1 expression was negligible in osteo cluster and osteoblasts (scaled average expression level at 0, Figure 1E, Figure 1—source data 1). These results indicate that the Adipoq-lineage progenitors produce substantially more Csf1 than the osteoblast lineage cells.
 
 We next asked whether the Adipoq-lineage progenitors exist in human bone marrow. We analyzed a recently published scRNAseq dataset based on human femur bone marrow (Wang et al., 2021), and identified a similar cell population (cluster 1, Adipoq-lineage progenitors) that expressed high ADIPOQ, bone marrow stromal marker genes LEPR, CXCL12 and KITLG, LPL and CEBPA, but with nearly undetectable osteoblast lineage genes (Figure 2A and B, Figure 2—source data 1). This cell population was mostly highly enriched in CSF1 expression across the clusters (Figure 2C, D and E). In an additional human scRNAseq dataset (Li et al., 2022), we also found a similar human bone marrow stromal cluster (cluster 5, Adipo) that simultaneously expresses high levels of ADIPOQ and CSF1 (Figure 2—figure supplement 1). These results indicate that human bone marrow contains a cell population that is highly similar to the bone marrow Adipoq-lineage progenitors in mice with conserved robust expression of CSF1.
 
-## M-CSF is expressed in the bone marrow Adipoq-lineage progenitors but nearly undetectable in mature adipocytes in bone marrow or peripheral adipose
+![Figure 2.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig2-v2.jpg)
+
+**Figure 2.:** (A) UMAP plot analysis of the human bone marrow datasets of scRNAseq based on Wang et al., 2021. (B) Dot plot of several typical marker gene expression for bone marrow stromal cells, adipocyte lineage, osteoblast lineage and endothelial cells across the listed scRNA-seq clusters. Cell clusters are listed on the y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects scaled average gene expression level as indicated by the legend. (C) UMAP plots of the expression of ADIPOQ (upper left panel), CSF1 (upper right panel) and the co-expression of these two genes (lower left panel) in bone marrow cells. The lower right panel shows a relative expression scale for each gene. (D) Dot plot of ADIPOQ and CSF1 expression across the listed scRNAseq clusters. Cell clusters are listed on y-axis. Features are listed along the x-axis. Dot size reflects the percentage of cells in a cluster expressing each gene. Dot color reflects the scaled average gene expression level as indicated by the legend. (E) Violin plots of the expression of ADIPOQ and CSF1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig2-figsupp1-v2.jpg)
+
+### M-CSF is expressed in the bone marrow Adipoq-lineage progenitors but nearly undetectable in mature adipocytes in bone marrow or peripheral adipose
 
 As Adipoq is expressed in mature adipocytes (Berry and Rodeheffer, 2013), we wondered whether M-CSF is also produced by these cells. We sorted the Adipoq-lineage progenitors from the Adipoq Cre-mTmG mice, and isolated both white and brown lipid-laden mature adipocytes, as well as the lipid-laden mature bone marrow adipocytes (BMAd). We found that the mRNA expression of Csf1 in bone marrow Adipoq-lineage progenitor cells is 20–30 fold higher than that of mature adipocytes (Figure 3A, Figure 3—figure supplement 1). The Csf1 expression in bone marrow Adipoq-lineage progenitor cells is also much higher than that of the stromal vascular fraction (SVF) cells in white adipose (Figure 3A). With this striking difference in mRNA expression, we further performed immunofluorescence staining of M-CSF on bone slices. We observed that the majority of bone marrow Adipoq-expressing progenitor cells express M-CSF (Figure 3B, 1865 cells out of 2001 cells counted, n=3 mice, 93.2%). In contrast, M-CSF expression was not detected in mature bone marrow adipocytes (Perilipin1+) (Figure 3C, 0 cells out of 115 cells counted, n=3 mice, 0%), indicating that mature bone marrow adipocytes are unlikely to be a significant source of M-CSF. Moreover, we performed western blot to analyze M-CSF protein expression in peripheral adipose tissue. As shown in Figure 3D, the stromal vascular fraction (SVF) cells in adipose, which contain multiple cell populations including adipogenic progenitors, express M-CSF. On the contrary, M-CSF was nearly undetectable in the peripheral mature adipocytes isolated from inguinal and epididymal white adipose tissue (WAT) (Figure 3D). These data collectively support that mature adipocytes are not a significant source of M-CSF as evidenced by nearly undetectable M-CSF expression compared to the Adipoq-lineage progenitors. These results identify Adipoq-lineage progenitors residing in bone marrow as a new cell type highly expressing M-CSF.
 
-## Adipoq Cre-driven Csf1 conditional knock out (Csf1∆Adipoq) mice exhibit osteopetrosis
+![Figure 3.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig3-v2.jpg)
+
+**Figure 3.:** (A) qPCR analysis of Csf1 and Lpl expression in bone marrow Adipoq-linage progenitors that were sorted from the bone marrow of Adipoq Cre-mTmG reporter mice, mature bone marrow adipocytes (BMAd), mature peripheral white and brown adipocytes and white stromal vascular fraction (SVF). E-adipocyte: mature adipocytes isolated from the epididymal white adipose tissue. I-adipocyte: mature adipocytes isolated from inguinal white adipose tissue. B-adipocyte: Brown adipocytes. n=5 for E-, I- and B-adipocytes from 12-week-old male mice. Five replicates, each with a pooled sample from 12-week-old male mice for BMAd (6–7 mice) and bone marrow Adipoq-lineage progenitors (3–4 mice). Error bars: Data are mean ± SD. ****p<0.0001 by one-way ANOVA analysis followed by post hoc Bonferroni’s correction for multiple comparisons. (B) Immunofluorescence staining of M-CSF (purple) on femur bone slices from 12-week-old male Adipoq Cre-mTmG reporter mice. DAPI: blue. Arrows: co-localization of M-CSF and Adipoq-GFP in GFP +Adipoq-lineage progenitors. n=3 mice. (C) Immunofluorescence staining of M-CSF (purple) and Perilipin1 (green, mature adipocyte marker) on femur bone slices from 12-week-old male mice. n=3. (D) Immunoblot analysis of M-CSF and Adiponectin expression in mature adipocytes and stromal vascular fraction (SVF) in peripheral adipose. (E) epididymal white adipose tissue. (I) the inguinal white adipose tissue. p38 was used as a loading control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** E-adipocyte: mature adipocytes isolated from the epididymal white adipose tissue. I-adipocyte: mature adipocytes isolated from inguinal white adipose tissue. B-adipocyte: Brown adipocytes. n=5 for E-, I- and B-adipocytes from 12-week-old male mice. Five replicates, each with a pooled sample from 12-week-old male mice for BMAd (6–7 mice) and bone marrow Adipoq-lineage progenitors (3–4 mice). Error bars: Data are mean ± SD. ****p<0.0001.
+
+### Adipoq Cre-driven Csf1 conditional knock out (Csf1∆Adipoq) mice exhibit osteopetrosis
 
 We next sought to investigate the contribution of the M-CSF produced by bone marrow Adipoq-lineage progenitors to bone development and homeostasis. We generated Csf1 conditional knock out (KO) mice, in which Csf1 is specifically deleted in Adipoq + cells by crossing Csf1flox/flox mice with Adipoq Cre mice (Csf1f/f;AdipoqCre; hereafter referred to as Csf1∆Adipoq). Their littermates with a Csf1f/f genotype were used as the controls. Compared to control mice, Csf1 expression was reduced by approximately 75% in a total bone marrow stromal cell culture derived from the Csf1∆Adipoq mice (Figure 4A). Given that bone marrow Adipoq-lineage progenitors constitute only about 0.08% of bone marrow cells (Figure 4—figure supplement 1), these results, together with the data shown in Figures 1—3, support that bone marrow Adipoq-lineage progenitors are the major cellular source of M-CSF expression in the bone marrow. Furthermore, immunofluorescence staining of bone slices showed a drastic decrease in M-CSF protein expression in bone marrow Adipoq-lineage progenitor cells in Csf1∆Adipoq mice compared to the control mice (Figure 4B). Although SVF cells express Csf1, these cells do not express Adipoq (Figure 3D). Thus, it is unlikely that Csf1 expression in SVF is changed in Csf1∆Adipoq mice. Indeed, our results showed that Csf1 expression in SVF was not altered in Csf1∆Adipoq mice (Figure 4—figure supplement 2). These results clearly demonstrate that adipoq-cre does not target SVF cells. We also examined the expression of a group of cytokines that often regulate macrophage function and osteoclastogenesis in bone marrow, including Il34, Il1b, Il6, Il10, Csf2, Tnf, Cxcl12, and found that the deficiency of Csf1 in Csf1∆Adipoq mice did not affect the expression of these genes (Figure 4—figure supplement 3). Csf1∆Adipoq mice did not display abnormalities in gross appearance, body weight, tooth eruption and long bone length (Figure 4C and D, Figure 4—figure supplement 4). In contrast, microcomputed tomographic (µCT) analyses showed that Csf1∆Adipoq mice exhibited a marked osteopetrotic phenotype, as indicated by a twofold increase in trabecular bone mass and marked increases in bone mineral density (BMD), connectivity density (Conn-Dens.), trabecular bone number and a decrease in trabecular bone spacing compared to the littermate control mice (Figure 4E and F). Cortical bone appeared normal in Csf1∆Adipoq mice (Figure 4G). In addition, heterozygous Csf1 conditional knockout mice (Csf1f/+;Adipoq Cre) did not show an abnormal bone phenotype compared to control mice (Csf1f/f) (Figure 4—figure supplement 5). There are no differences in vertebral BMD or bone mass between the control and Csf1∆Adipoq mice (Figure 4—figure supplement 6). Given that peripheral mature adipocytes (Adipoq + cells in peripheral adipose tissue) and mature bone marrow adipocytes (Adipoq +lipid-laden cells in bone marrow) express negligible levels of M-CSF, these data indicate that Csf1 in bone marrow Adipoq-lineage progenitors plays a key role in the bone mass maintenance of long bones.
 
-## Bone marrow macrophages and osteoclasts are suppressed in Csf1∆Adipoq mice
+![Figure 4.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-v2.jpg)
+
+**Figure 4.:** (A) Csf1 expression in BMSCs derived from Csf f/f and Csf1ΔAdipoq (n = 4/group). (B) Representative images of immunostaining of Adiponectin (red) and M-CSF (white) on femur bone slices from 12-week-old male Csf f/f and Csf1ΔAdipoq mice. DAPI: blue. n=3/group. (C) Gross appearance of the incisors from Csf f/f and Csf1ΔAdipoq mice. (D) Gross appearance of the femur (left panel), and the lengths of femur and tibia from Csf f/f and Csf1ΔAdipoq mice (right panels) (n = 6/group). (E) μCT images and (F) bone morphometric analysis of trabecular bone of the distal femurs isolated from 12-week-old male Csf f/f and Csf1ΔAdipoq mice (n = 5/group). (G) μCT images and bone morphometric analysis of cortical bone of the mid-shaft femurs isolated from 12-week-old male Csf f/f and Csf1ΔAdipoq mice (n = 5/group). BM, bone marrow; BMSC, bone marrow stromal cell; BV/TV, bone volume per tissue volume; BMD, bone mineral density; Conn-Dens, connectivity density; Tb.Th, trabecular thickness; Tb.Sp, trabecular separation; Tb.N, trabecular number. Ct.Th, cortical bone thickness; BA/TA: Bone area/Tissue area. A, D, F, G *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns: not statistically significant by two tailed unpaired Student’s t test. Error bars: Data are mean ± SD. Scale bars: B, 50 µm; E, 500 µm; G, 500 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** n=3. Data are mean ± SD.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** ns: not statistically significant by two tailed unpaired Student’s t test. Data are mean ± SD.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** BV/TV, bone volume per tissue volume; BMD, bone mineral density; Tb.N, trabecular number; Tb.Th, trabecular thickness; Tb.Sp, trabecular separation; Conn-Dens., connectivity density. Data are mean ± SD. n.s., not statistically significant by two tailed unpaired Student’s t test analysis.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** BV/TV, bone volume per tissue volume; BMD, bone mineral density; Tb.N, trabecular number; Tb.Th, trabecular thickness; Tb.Sp, trabecular separation; Conn-Dens., connectivity density. Data are mean ± SD. n.s., not statistically significant by two tailed unpaired Student’s t test analysis.
+
+### Bone marrow macrophages and osteoclasts are suppressed in Csf1∆Adipoq mice
 
 The osteopetrotic phenotype in Csf1∆Adipoq mice implicated a defect in osteoclast function. Indeed, Csf1 deficiency in Adipoq+ cells impaired osteoclast formation in vivo evidenced by reduced osteoclast surface area and lower osteoclast numbers (Figure 5A). The TRAP level in serum was significantly lower in Csf1∆Adipoq mice than that in control mice (Figure 5B). On the other hand, mineral apposition rate (MAR) and bone formation rate (BFR) were not affected in Csf1∆Adipoq mice, indicating normal osteoblastic function in these mice (Figure 5—figure supplement 1). Since osteoclasts are derived from the myeloid macrophage lineage, we examined bone marrow macrophage populations. CD11b+Ly6 Chi monocytes were similar between control and Csf1∆Adipoq mice. CD11b+F4/80+macrophages were reduced by almost half in Csf1∆Adipoq mice (Figure 5C). This decrease in macrophages reflects the effects of M-CSF deficiency, as M-CSF is critical for macrophage development. We further stimulated bone-marrow-derived macrophages (BMMs) with LPS and found that the inflammatory response of BMMs, indicated by inflammatory gene induction (Figure 5—figure supplement 2A) and the activation of MAPK or NF-κB pathways in response to LPS (Figure 5—figure supplement 2B), was similar between the BMMs derived from the control and Csf1∆Adipoq mice. To further test the importance of M-CSF produced by bone marrow Adipoq-lineage progenitors for osteoclastogenesis, we cultured whole bone marrow ex vivo without exogenous M-CSF to test whether the Adipoq-lineage cell-produced M-CSF is sufficient to function together with RANKL to induce osteoclast differentiation. As shown in Figure 5D, RANKL can induce osteoclast differentiation in the control bone marrow cultures even without addition of M-CSF, but it failed to induce osteoclastogenesis in the Csf1∆Adipoq bone marrow culture. When recombinant M-CSF was added back to the bone marrow cultures, the osteoclast formation in Csf1∆Adipoq cell cultures was similar to that in the control cultures (Figure 5E). These results demonstrate that the M-CSF secreted by bone marrow resident Adipoq-lineage progenitors is critical for osteoclastogenesis.
 
-## Csf1 deficiency in bone marrow Adipoq-lineage progenitors does not affect macrophage development in peripheral adipose tissue and spleen
+![Figure 5.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig5-v2.jpg)
+
+**Figure 5.:** (A) TRAP staining and histomorphometric analysis of histological sections obtained from the metaphysis region of distal femurs of 12-week-old male Csf f/f and Csf1ΔAdipoq mice (n = 5/group). (B) ELISA analysis of serum TRAP levels in 12-week-old male Csf f/f and Csf1ΔAdipoq mice (n = 6/group). (C) Flowcytometry image (left) and quantification (right) of monocytes and macrophages in bone marrow. n=6/group. (D, E) Osteoclast differentiation directly from the cultures of bone marrows harvested from Csf f/f and Csf1ΔAdipoq mice stimulated with RANKL (40 ng/ml) but without recombinant M-CSF for ten days (D) or with both RANKL and recombinant M-CSF (20 ng/ml) for five days (E). TRAP staining (left panel) was performed and the area of TRAP-positive MNCs (≥3 nuclei/cell) per well was calculated (right panel). TRAP-positive cells appear red in the photographs. (n = 3/group). Oc.S/BS, osteoclast surface per bone surface; N.Oc/B.Pm, number of osteoclasts per bone perimeter. (A, B), C, D, E **p<0.01; ***p<0.001; ****p<0.0001; ns: not statistically significant by two tailed unpaired Student’s t test. Error bars: Data are mean ± SD. Scale bars: A, 100 µm; D, E, 200 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images of calcein double labelling of the femur of 12-week-old male Csf f/f and Csf1ΔAdipoq mice. Dynamic histomorphometric analysis of trabecular bones (B) and cortical bones (C) of femurs isolated from 12-week-old male Csf f/f and Csf1ΔAdipoq mice (n = 5/group). BFR/BS, bone formation rate per bone surface; MAR, mineral apposition rate. Data are mean ± SD. ns: not statistically significant by two-tailed unpaired Student’s t test. Scale bars: A, 100 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) qPCR analysis of inflammatory gene expression and (B) Immunoblot analysis of the activation of signaling pathways in response to LPS stimulation (10 ng/ml) in BMMs derived from the Csf f/f and Csf1ΔAdipoq mice. Data are mean ± SD. ns: not statistically significant by two-way ANOVA.
+
+### Csf1 deficiency in bone marrow Adipoq-lineage progenitors does not affect macrophage development in peripheral adipose tissue and spleen
 
 Besides bone marrow, peripheral adipose tissue contains a large amount of Adipoq +mature adipocytes. However, M-CSF expression is undetectable in these cells (Figure 3A and D). In addition, some organs, such as spleen, have many tissue macrophages but few Adipoq + cells. We then asked whether Csf1 expressed by bone marrow Adipoq-lineage progenitors affects macrophages outside of the bone marrow, such as in peripheral adipose tissue or the spleen. The gross appearance and weight of the spleen and peripheral adipose tissue, including the inguinal and epididymal adipose depots, were normal in Csf1∆Adipoq mice (Figure 6A and B). There was no difference in CD11b+Ly6 Chi monocytes in either the spleen, inguinal or epididymal adipose tissue between control and Csf1∆Adipoq mice, and the amount of CD11b+F4/80+macrophages was unchanged in these tissues (Figure 6C). Thus, in contrast to the effects on bone marrow macrophages, Csf1 deficiency in bone marrow Adipoq-lineage progenitors does not influence macrophage development in peripheral adipose tissue or the spleen.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig6-v2.jpg)
 
-**Figure 6.:** ΔAdipoq mice does not affect monocyte and macrophage populations in spleen and peripheral adiposes.(A) Gross appearance (left panel) and weight (right panel) of the spleen from Csf  and Csf1f/fΔAdipoq mice (n = 6/group). (B) Gross appearance and weight of the inguinal (left panels) and the epididymal (right panels) adipose from Csf  and Csf1f/fΔAdipoq mice (n = 6/group). (C) Flowcytometry quantification of monocytes and macrophages (gated on CD45 +Ly6G- cells) in the indicated tissues. n=6/group. (A, B, C) ns: not statistically significant by two tailed unpaired Student’s t test. Error bars: Data are mean ± SD.Figure 6—source data 1.ΔAdipoq mice does not affect monocyte and macrophage populations in spleen and peripheral adiposes.
+**Figure 6.:** (A) Gross appearance (left panel) and weight (right panel) of the spleen from Csf f/f and Csf1ΔAdipoq mice (n = 6/group). (B) Gross appearance and weight of the inguinal (left panels) and the epididymal (right panels) adipose from Csf f/f and Csf1ΔAdipoq mice (n = 6/group). (C) Flowcytometry quantification of monocytes and macrophages (gated on CD45 +Ly6G- cells) in the indicated tissues. n=6/group. (A, B, C) ns: not statistically significant by two tailed unpaired Student’s t test. Error bars: Data are mean ± SD.
 
-## Lack of Csf1 in bone marrow Adipoq-lineage progenitors alleviates estrogen-deficiency induced osteoporosis
+### Lack of Csf1 in bone marrow Adipoq-lineage progenitors alleviates estrogen-deficiency induced osteoporosis
 
 We next investigated the significance of M-CSF secreted by Adipoq+ cells in pathological bone loss. We developed the ovariectomy (OVX) model in Csf1∆Adipoq mice to study the contribution of Adipoq+ cell-produced M-CSF to the estrogen-deficiency induced osteoporosis, which mimics postmenopausal bone loss. Uterine weight was measured six weeks after surgery to assess the success of the OVX. Uterine weights were decreased approximately 75% in OVX groups compared with the sham group (Figure 7A), indicating comparable and effective estrogen depletion in both control and Csf1∆Adipoq mice. OVX did not alter Csf1 expression in the bone marrow (Figure 7—figure supplement 1). μCT analysis showed that OVX significantly reduced bone mass indicated by a decrease in BV/TV, trabecular number, trabecular thickness, Conn-Dens. and an increase of trabecular spacing compared with the sham group in the control mice (Figure 7B and C). Although OVX also decreased the bone mass of Csf1∆Adipoq mice, the extent of bone loss was less than that of control mice (Figure 7B and C). Significant changes were identified between the control and Csf1∆Adipoq mice in several μCT parameters. For example, a decrease in trabecular BV/TV after OVX: 35.1% in the control vs 20.9% in Csf1∆Adipoq mice; a decrease in Tb. N after OVX:11.34% in the control vs 7.97% in Csf1∆Adipoq mice; a decrease in Conn-Dens after OVX: 39.7% in the control vs 14.56% in Csf1∆Adipoq mice; an increase in Tb. Sp after OVX: 12.51% in the control vs 1.97% in Csf1∆Adipoq mice. Furthermore, the bone mass was markedly higher in Csf1∆Adipoq mice than control mice after OVX (Figure 7B and C, column 4 vs 2), indicating a significant role for the M-CSF secreted by Adipoq + cells in estrogen-deficiency induced bone loss. OVX is an osteoclastogenic stimulus. Thus, osteoclast formation as indicated by osteoclast surface and numbers was significantly enhanced by OVX in control mice (Figure 7D). Bone histomorphometric analysis further showed significantly greater osteoclast numbers and surface area in control mice with OVX than Csf1∆Adipoq mice with OVX (Figure 7D). Despite an increase in osteoclast surface in Csf1∆Adipoq mice after OVX, osteoclast numbers were not significantly influenced by OVX (Figure 7D). As bone marrow Adipoq-lineage progenitors are a key cell population expressing M-CSF, these results indicate that the absence of M-CSF in these cells appears to enable osteoclast linage cells to be resistant to environmental osteoclastogenic stimuli, such as OVX, thereby mitigating pathologic bone loss. These data demonstrate an important role for M-CSF produced by bone marrow Adipoq-lineage progenitors in pathologic osteoclastogenesis and bone loss.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig7-v2.jpg)
+
+**Figure 7.:** 12-week-old female Csf f/f and Csf1ΔAdipoq mice were subjected to OVX or sham surgery and analyzed 6 weeks after surgery. (A) Gross appearance (left panel) and weight (right panel) of uterus, (B) μCT images, and (C) bone morphometric analysis of trabecular bone of the distal femurs isolated from the Csf f/f and Csf1ΔAdipoq mice with sham or OVX surgery (n = 7/group). (D) TRAP staining (left panels) and histomorphometric analysis (right panels) of histological sections obtained from the metaphysis region of distal femurs isolated from the indicated mice (n = 7/group). BV/TV, bone volume per tissue volume; Tb.N, trabecular number; Tb.Th, trabecular thickness; Tb.Sp, trabecular separation; Conn-Dens., connectivity density; Ct.Th, cortical thickness; Oc.S/BS, osteoclast surface per bone surface; N.Oc/B.Pm, number of osteoclasts per bone perimeter. Data are mean ± SD. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; n.s., not statistically significant by two-way ANOVA analysis followed by post hoc Bonferroni’s correction for multiple comparisons. Scale bars: B, 500 µm; D, 100 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82118/elife-82118-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Sham n=3, OVX n=4. Data are mean ± SD. ns: not statistically significant by two-tailed unpaired Student’s t test.
 
 ## Discussion
 
@@ -99,42 +157,290 @@ In addition to its function in development and postnatal homeostasis, M-CSF is a
 
 ## Methods
 
-## Mice and analysis of bone phenotype
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Csf1flox/flox</td>
+      <td>PMID:21958845</td>
+      <td>RRID:MGI:5305712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26mT/mG</td>
+      <td>PMID:17868096</td>
+      <td>RRID:IMSR_JAX:007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Adipoq-Cre</td>
+      <td>PMID:21356515</td>
+      <td>RRID:IMSR_JAX:028020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-PerCP/Cyanine5.5 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103132RRID: AB_893340</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6G- Brilliant Violet 711 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127643RRID:AB_2565971</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse/human CD11b- Alexa Fluor 700 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101222RRID:AB_493705</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80- APC/Cyanine7 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 123118RRID:AB_893477</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6C- Brilliant Violet 510 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128033RRID:AB_2562351</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45- APC (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103112RRID:AB_312977</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD31-APC (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102510RRID:AB_312917</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TER-119 /Erythroid Cells- APC (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116212RRID:AB_313713</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU-APC (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 364114RRID:AB_2814315</td>
+      <td>FACS (5 ug per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1, κ Isotype-APC (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 400119RRID:AB_2888687</td>
+      <td>FACS (5 ug per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Adiponectin (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA1-054RRID:AB_325789</td>
+      <td>IF(1:200)WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21235RRID:AB_2535804</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-Alexa Fluor 594 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11012RRID:AB_2534079</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-M-CSF (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-365779RRID:AB_10846852</td>
+      <td>IF(1:200)WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Perilipin (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9349RRID:AB_10829911</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P38alpha (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-535RRID:AB_632138</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-NF-κB p65 (Ser536)(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3033RRID:AB_331284</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p44/42 MAP kinase (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9101RRID:AB_331646</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-SAPK/JNK (Thr183/Tyr185) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9251RRID:AB_331659</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience BrdU Staining Buffer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 00-5525-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human sRANK Ligand</td>
+      <td>PeproTech</td>
+      <td>Cat# 310–01</td>
+      <td>40 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine M-CSF</td>
+      <td>PeproTech</td>
+      <td>315–02</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2′-deoxyuridine (Brdu)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: B5002</td>
+      <td>200 mg/Kg</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Fixable Blue Dead Cell Stain Kit, for UV excitation</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L23105</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Tartrate Resistant Acid Phosphatase (TRAP) ELISA Kit</td>
+      <td>MyBioSource.com.</td>
+      <td>MBS1601167</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>PMID:29608179</td>
+      <td>RRID:SCR_016341</td>
+      <td>https://satijalab.org/seurat/get_started.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo V10.7.1</td>
+      <td>Flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN (blue edition) version 3.4</td>
+      <td>ZEN (blue edition)</td>
+      <td>RRID:SCR_013672</td>
+      <td>https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 564907, RRID:AB_2869624</td>
+      <td>FACS (1 ug/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and analysis of bone phenotype
 
 Csf1flox/flox mice have been described previously (Harris et al., 2012). We generated mice with Adipoq+ cell specific deletion of Csf1 by crossing Csf1flox/flox mice with the mice with an Adipoq promoter-driven Cre transgene on the C57BL/6 background (Adipoq-Cre: The Jackson Laboratory, stock No: 028020). We also generated Adipoq Cre-mTmG reporter mice by crossing the mTmG mice (The Jackson Laboratory, stock No: 007676) with the Adipoq-Cre mice. Sex- and age-matched Csf1flox/flox;Adipoq-Cre mice (referred to as Csf1ΔAdipoq) and their littermates with Csf1flox/flox genotype as controls (referred to as Csf1f/f) were used for experiments. Csf1flox/flox mice were a gift from Dr. Jean X. Jiang (UT Health San Antonio). Bilateral ovariectomy (OVX) or sham operation (Sham) was performed on 12-week-old female mice. The mice were sacrificed 6 weeks after surgery. Uterine atrophy was first confirmed and then bones were collected for µCT and histological analysis. The mice with the same genotype were randomly allocated to different treatments or procedures. All mouse experiments were approved (protocol: 2016–0001 and 0004) by Institutional Animal Care and Use Committee of the Hospital for Special Surgery and Weill Cornell Medical College.
 
 µCT analysis was conducted to evaluate bone volume and 3D bone architecture using a Scanco µCT-35 scanner (SCANCO Medical). Mice femora were fixed in 10% buffered formalin and scanned at 6  µm resolution. Proximal femoral trabecular bone parameters or the cortical bone parameters obtained from the midshaft of femurs were analyzed using Scanco software according to the manufacturer’s instructions and the American Society of Bone and Mineral Research (ASBMR) guidelines. Femur bones were decalcified and subjected to sectioning, TRAP staining and histological analysis. For dynamic histomorphometric measures of bone formation, calcein (25 mg/kg, Sigma) was injected into mice intraperitoneally at 7 and 2 days before sacrifice to obtain double labeling of newly formed bones. The non-decalcified femur bones were processed with 5% aqueous potassium hydroxide for 96 hr, dehydrated and embedded in paraffin (Porter et al., 2017). 5 μm thick sections were sliced using a microtome. The Osteomeasure software was used for bone histomorphometry using standard procedures according to the program’s instruction.
 
-## Single-cell RNAseq (scRNAseq) analysis
+### Single-cell RNAseq (scRNAseq) analysis
 
 The data from the integrated analysis of the three scRNA-seq datasets of the non-hematopoietic compartment of the murine bone marrow were extracted from the Open Science Framework (https://osf.io/ne9vj) (Dolgalev and Tikhonova, 2021). We further extracted the clusters of ‘Chondrocytes’, ‘EC-Arteriar’, ‘EC-Arteriolar’, ‘EC-Sinusoidal’, ‘Fibroblasts’, ‘MSPC-Adipo’, ‘MSPC-Osteo’, ‘Myofibroblasts’, ‘Osteo’, ‘Osteoblasts’, and ‘Pericytes’ from the integrated data and analyzed the data using Seurat (Stuart et al., 2019). A human bone marrow scRNAseq dataset (Wang et al., 2021) was also extracted and re-analyzed using Seurat. UMAP (uniform manifold approximation and projection) was used for dimensionality reduction after PCAs were calculated for integrated datasets. We visualized the simultaneous expression of two genes in a cell using FeaturePlot function in Seurat. The percentage of cells in a cluster expressing a certain gene and the expression level of each gene were visualized by DotPlot function in Seurat. The distribution of gene expression in each cluster was visualized using VlnPlot function in Seurat. R version 4.0.2 (2020-06-22) and Seurat 4.0.2 were used for Figure 1A, D and F. R version 4.1.2 (2021-11-01) and Seurat 4.1.1 were used for the left bioinformatics analysis in the study.
 
-## Cell culture
+### Cell culture
 
 For osteoclastogenesis directly from bone marrow cultures, bone marrow cells were seeded at a density of 3.125 × 105 /cm2, and cultured in α-MEM medium with 10% FBS, glutamine (2.4  mM, Thermo Fisher Scientific) and Penicillin–Streptomycin (Thermo Fisher Scientific) for 2 days. The cells were then treated with RANKL (40  ng/ml) without M-CSF for 10 days, or with both RANKL (40 ng/ml) and M-CSF (20 ng/ml) for 5 days. Medium were changed every 2 days.
 
-## Reverse transcription and real-time PCR
+### Reverse transcription and real-time PCR
 
 DNA-free RNA was obtained with the RNeasy MiniKit (Qiagen, Valencia, CA) with DNase treatment according to the manufacturer’s instructions. For the RNA extraction from the pooled Adipoq-progenitors or BMAds, 13 μl Rnase-free H2O was used to elute RNA from the column in the last step. Then, 1  µg of total RNA or total amount of RNA extracted from the pooled Adipoq-progenitors or BMAds was reverse-transcribed with random hexamers and MMLV-Reverse Transcriptase (Thermo Fisher Scientific) according to the manufacturer’s instructions. Real-time PCR was done in triplicate with the QuantStudio 5 Real-time PCR system and Fast SYBR Green Master Mix (Thermo Fisher Scientific) with 500  nM primers. mRNA amounts were normalized relative to glyceraldehyde-3-phosphate dehydrogenase (GAPDH) mRNA. The primers for real-time PCR were as follows: Csf1: 5’-AAAGACAACACCCCCAATGC-3’ and 5’-AGGAGTCTCATGGAAAGTTCGG-3’; Lpl: 5’-TTCCAGCCAGGATGCAACA-3’ and 5’-GGTCCACGTCTCCGAGTCC-3’; Gapdh: 5’-ATCAAGAAGGTGGTGAAGCA-3’ and 5’-AGACAACCTGGTCCTCAGTGT-3’; Actb: 5’-CTGACTGACTACCTCATGAAGATCCT-3’ and 5’-CTTAATGTCACGCACGATTTCC-3’; Il6: 5’-TACCACTTCACAAGTCGGAGGC-3’ and 5’-CTGCAAGTGCATCATCGTTGTTC-3’; Il1b: 5’-AGCTTCCTTGTGCAAGTGTCT-3’ and 5’-GACAGCCCAGGTCAAAGGTT-3’; Tnf: 5’-CCCTCACACTCAGATCATCTTCT-3’ and 5’-CTTTGAGATCCATGCCGTTG-3’; Csf2: 5’-CCAGCTCTGAATCCAGCTTCTC-3’ and 5’-TCTCTCGTTTGTCTTCCGCTGT-3’; Il34: 5’- ACTCAGAGTGGCCAACATCACAAG-3’ and 5’-ATTGAGACTCACCAAGACCCACAG-3’; Cxcl12: 5’-TGCATCAGTGACGGTAAACCA-3’ and 5’-TTCTTCAGCCGTGCAACAATC-3’; Il10: 5’-GGTTGCCAAGCCTTATCGGA-3’ and 5’-GGGGAGAAATCGATGACAGC.
 
-## Frozen sectioning and immunofluorescence staining
+### Frozen sectioning and immunofluorescence staining
 
 Freshly dissected mouse bones were fixed with 4% paraformaldehyde (PFA) (15,710 S, Electron Microscopy Sciences) for 4 hr at 4 °C. After samples were washed with PBS, decalcification was processed with 0.5 M EDTA for 5 days. Samples were incubated with infiltration solution (20% sucrose (S7903, Sigma) plus 2% polyvinylpyrrolidone (Sigma, 9003-39-8) in PBS) until they sank to the bottom of the tube. Embedding was performed with OCT (Sakura Finetek,4583) and samples were stored at −80 °C. The samples were sectioned at 10 μm in thickness using a Leica cryostat. Frozen sections were thawed at room temperature and rehydrated with PBS, permeabilized with 0.5% Triton X-100 in PBS for 15 min at room temperature, and blocked for 1 hr with 5% BSA in PBS (blocking buffer). Primary antibodies were freshly diluted in blocking buffer and were incubated with the slices overnight at 4 °C. After washing three times with PBS, secondary antibodies (1:2000 dilution with blocking buffer) were incubated for 1 hr at room temperature. Samples were then washed and mounted with antifade mounting solution with DAPI (Life technologies, P36941). Imaging was employed using a Zeiss Axioscan 7 Slide Scanner.
 
-## Flow cytometry
+### Flow cytometry
 
 Bone marrow cells were directly flushed out by quick centrifuge (from 0 to 9400 g, approximately 15 s at room temperature) after cutting both ends of long bones, then resuspended by PBS (Corning, 21040CV) and filtered through 70 μm cell strainer (FALCON,352350). The cells were spun down at 500 g for 5 min at 4 °C. Epididymal white adipose tissue (EWAT) and Inguinal WAT (IngWAT) were isolated from mice and minced into small pieces by scissors and then digested by the digestion buffer (a-MEM [Gibco, 12561056] with 2 mg/ml collagenase II [Worthington, LS004176] and 2% BSA [Gemini Bio, 700–100 P]) for 40 min in a rotary incubator at 250 rpm at 37 °C. The cells were then filtered through 70 μm cell strainer and spun down at 500 g for 5 min at 4 °C. One third of spleen was mashed with the plunger end of a syringe through the 70 μm cell strainer. The splenic cells were then spun down at 500 g for 5 min at 4 °C. Red blood cells in cell pellets were lysed by ACK lysis buffer (Gibco, A1049201). Cells were stained with antibodies in 200 μl of the staining buffer (PBS with 0.5% BSA and 2 mM EDTA (Invitrogen, 15575020)) on ice for 30 min, and then washed by 2 ml of the staining buffer. Cells were resuspended in the staining buffer and analyzed using a FACS Symphony flow cytometer (BD Biosciences). DAPI was used for live/dead staining. Flowjo V10.7.1 was used for analysis. The same gating strategy was applied to flow samples from the control and Csf1ΔAdipoq mice. The antibodies used for flow cytometry included anti-CD45-PerCP/Cyanine5.5 (Biolegend, clone QA17A26,1:200), anti-Ly6G-Brilliant Violet 711 (Biolegend, clone 1A8, 1:200), anti-CD11b-Alexa Fluor 700 (Biolegend, clone M1/70, 1:200), anti-F4/80- APC/Cyanine7 (Biolegend, clone BM8, 1:200), and anti-Ly6C-Brilliant Violet 510 (Biolegend, clone HK1.4, 1:200).
 
 For BrdU staining, 10-week-old female Adipoq Cre-mTmG reporter mice were injected (i.p.) with 200 mg/kg BrdU (B5002, Sigma) 24 hr and 3 hr before sacrifice. The bone marrow cells were flushed out from long bones. The bones were then cut into small pieces and digested as described in the FACS method. The bone marrow cells and the digested bone solution were collected together, filtered through 70 μm cell strainer and spun down at 500 g for 5 min at 4 °C. Red blood cells in cell pellets were lysed by ACK lysis buffer (Gibco, A1049201). After cell viability staining (Live/Dead Fixable Blue Dead Cell Stain kit, L23105 ThermoFisher Scientific) and CD45/CD31/Ter119 cell surface antigen staining, the cells were treated using eBioscience BrdU Staining Buffer (00-5525-00) according to the manufacturer’s instruction. The flowcytometry was then performed as described above with the isotype control antibody (Biolegend, Clone MOPC-21, 400119, 5 μg/sample) and the anti-BrdU antibody (Biolegend, clone 3D4, 364114, 5 μg/sample).
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 Bone marrow cells from 12-week-old male Adipoq Cre-mTmG reporter mice were harvested as above. The long bones (without periosteum) were then cut into pieces and digested in α-MEM (Gibco,12561056) with 2% FBS (Atlanta Biologicals, S11550), 2 mg/ml collagenase II (Worthington, LS004176) and 1 mg/ml Dispase II (Gibco, 17105041) for 25 min in a rotary incubator at 250 rpm at 37 °C. Dnase I (2 units/ml, Sigma,4716728001) was then added. After 5 min, the digested bone solution and bone marrow cells were collected together, filtered through 70 μm cell strainer and spun down at 500 g for 5 min at 4 °C. Red blood cells in cell pellets were lysed by ACK lysis buffer (Gibco, A1049201). The cells were stained with anti-Lin antibodies, including anti-CD45-APC (Biolegend, clone 30-F11, 1:200), anti-CD31-APC (Biolegend, clone MEC13.3, 1:200) and anti-Ter119-APC (Biolegend, 116212,1:200) for 30 min at 4 °C. The Adipoq + cells (GFP+) were sorted using a FACS Aria II SORP cell sorter (Becton Dickinson) at Weill Cornell Medical College, with exclusion of DAPI+ (BD, 564907) cells, doublets and Lin+ cells.
 
-## Isolation of peripheral mature adipocytes and bone marrow mature adipocytes
+### Isolation of peripheral mature adipocytes and bone marrow mature adipocytes
 
 EWAT, IngWAT and brown adipose tissue (BAT) were isolated from mice and minced into small pieces by scissors and then digested by the digestion buffer (a-MEM (Gibco,12561056) with 2 mg/ml collagenase II (Worthington, LS004176) and 2% BSA (Gemini Bio, 700–100 P)) for 40 min in a rotary incubator at 250 rpm at 37 °C. The cells were then filtered through 70 μm cell strainer and spun down at 500 g for 5 min at room temperature. The floating mature lipid-laden adipocytes were collected from the top layer and washed with PBS for three times. Bone marrow cells were directly flushed out by quick centrifuge (from 0~9400 g, approximately 15 s at room temperature) after cutting both ends of long bones, then resuspended by PBS (Corning, 21040CV) and filtered through 70 μm cell strainer (FALCON,352350). The cells were spun down at 500 g for 5 min at room temperature. The floating mature lipid-laden adipocytes were collected from the top layer and washed with PBS for three times (Fan et al., 2017).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Graphpad Prism software. Two-tailed Student’s t test was applied when there were only two groups of samples. In the case of more than two groups of samples, two-way ANOVA was used with more than two conditions. ANOVA analysis was followed by post-hoc Bonferroni’s correction for multiple comparisons. p < 0.05 was taken as statistically significant. Data are presented as the mean  ± SD as indicated in the figure legends.

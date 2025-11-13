@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.32027.001 Understanding the computations that take place in brain circuits requires identifying how neurons in those circuits are connected to one another. We describe a technique called TRACT ( TRA nsneuronal C ontrol of T ranscription) based on ligand-induced intramembrane proteolysis to reveal monosynaptic connections arising from genetically labeled neurons of interest. In this strategy, neurons expressing an artificial ligand (‘donor’ neurons) bind to and activate a genetically-engineered artificial receptor on their synaptic partners (‘receiver’ neurons). Upon ligand-receptor binding at synapses the receptor is cleaved in its transmembrane domain and releases a protein fragment that activates transcription in the synaptic partners. Using TRACT in Drosophila we have confirmed the connectivity between olfactory receptor neurons and their postsynaptic targets, and have discovered potential new connections between neurons in the circadian circuit. Our results demonstrate that the TRACT method can be used to investigate the connectivity of neuronal circuits in the brain.
+Understanding the computations that take place in brain circuits requires identifying how neurons in those circuits are connected to one another. We describe a technique called TRACT (TRAnsneuronal Control of Transcription) based on ligand-induced intramembrane proteolysis to reveal monosynaptic connections arising from genetically labeled neurons of interest. In this strategy, neurons expressing an artificial ligand (‘donor’ neurons) bind to and activate a genetically-engineered artificial receptor on their synaptic partners (‘receiver’ neurons). Upon ligand-receptor binding at synapses the receptor is cleaved in its transmembrane domain and releases a protein fragment that activates transcription in the synaptic partners. Using TRACT in Drosophila we have confirmed the connectivity between olfactory receptor neurons and their postsynaptic targets, and have discovered potential new connections between neurons in the circadian circuit. Our results demonstrate that the TRACT method can be used to investigate the connectivity of neuronal circuits in the brain.
 
 ## Introduction
 
@@ -40,6 +40,38 @@ In our previously published work, we described an artificial ligand-receptor sys
 
 To test whether the expression of the ligand in donor neurons could reveal the subset of receiver neurons that receive synaptic input from them, we focused on the antennal lobe, the second-order olfactory processing area in the Drosophila brain that receives direct input from the primary olfactory receptor neurons (ORNs) (Figure 2a, Wilson, 2013; Laissue and Vosshall, 2008). Synapses in the antennal lobe are organized into discrete compartments, called glomeruli, and each glomerulus corresponds to a distinct ORN class (defined by the odorant receptor it expresses) (Berck et al., 2016). All ORNs of a specific class project their axons to a common glomerulus (Vosshall et al., 1999; Fishilevich and Vosshall, 2005; Couto et al., 2005). The principal second-order olfactory neuron is called a projection neuron (PN). The vast majority of PNs are uniglomerular PNs (uniPNs) (Figure 2b), and each of these uniPNs have dendrites that branch into single glomeruli where they receive direct synaptic input from a single class of ORNs. Axonal output from uniPNs projects to two major third-order olfactory areas, the mushroom body and the lateral horn, via the medial antennal lobe tract (mALT, formerly iACT) (Ito et al., 2014), (Figure 2a). In addition, a smaller subset of PNs, multiglomerular PNs (multiPNs) (Figure 2c) (Stocker et al., 1990; Parnas et al., 2014; Liang et al., 2013), have dendritic arbors which pool input across multiple glomeruli in the antennal lobe, and send their output to the lateral horn only via the mediolateral ALT (mlALT, formerly the mACT) (Figure 2a) (Tanaka et al., 2012). Finally, a large set of local neurons (LNs) send and receive synaptic input from both ORNs and PNs, densely interconnecting the glomeruli (Figure 2d) (Chou et al., 2010; Hong and Wilson, 2015; Seki et al., 2010).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-v2.jpg)
+
+**Figure 2.:** (a) Olfactory receptor neurons (ORNs) labeled in red, have their cell bodies located into two peripheral sensory organs, antennae (illustrated here) and maxillary palps, and have axons that project into the antennal lobe (AL) in the brain. All axons from ORNs expressing the same olfactory receptor converge in two glomeruli (one in each hemisphere) within the AL (red circles). There are two main types of neurons (green) in the antennal lobe, projection neurons (PNs) and local neurons (LNs). PNs have dendrites that branch in glomeruli and axons that project towards the mushroom body (MB) and/or the lateral horn (LH). (b, c) There are two types of PNs, uniglomerular PNs (uniPNs) and multiglomerular PNs (multiPNs). (b) The dendrites of uniPNs branch in a single glomerulus, and their axons project into the MB and LH via the medial antennal lobe tract (mALT). (c) The dendrites of multiPNS branch into multiple glomeruli, and their axons project into the LH via the mediolateral ALT (mlALT). (d) LNs are axonless neurons and their dendrites branch into many (or most) of the glomeruli. (e) Detection of synaptic contacts between olfactory receptor neurons and antennal lobe neurons in the adult Drosophila antennal lobe with the nlgSNTG4 receptor driven by nSybE enhancer (top panels) and GH146 enhancer (bottom panels). Induction of GFP expression in neurons (arrows) surrounding the antennal lobe when the ligand (nSyb::CD19) was driven by the orco driver in ORNs. Arrowheads indicate the axons of PNs in mALT and mlALT. Left: nSyb::CD19+ axons from ORNs (red); middle: GFP+ neurons in the antennal lobe (green); right: merged images of nSyb::CD19 and GFP. In the brains with the nlgSNTG4 receptor driven by the nSybE enhancer (top panels) GFP expression was induced in different neuronal types, including uniPNs, LNs and and several multiPNs at the ventral part. In the brain with the nlgSNTG4 receptor driven by the PN-specific driver GH146 (bottom panels), only PNs were GFP+. Most of these cells are uniPNs, but there was also one GFP+ multiPN in each antennal lobe (yellow arrow). Maximum projection of z-stack confocal images. Scale bar = 50 µm. See Supplementary file 2 for additional information.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) and (b) Detection of neuron-neuron contacts in the adult Drosophila antennal lobe (stippled circle) with nlgSNTG4 driven by elav promoter. Top panels show maximum projection of z-stack confocal images; the bottom panels show single optical sections from the z-stack on the top panels. (a) Control samples without orco-lexA driver (carrying elav-nlgSNTG4, 5xUAS-CD4::tdGFP and LexAop-CD19mch) show no induction in antennal lobe neurons. The stars mark the ligand-independent background in the mushroom body (top left) and axons from Johnson’s organ neurons (bottom right). (b) Top panels show induction of CD8:GFP expression in neurons (arrows) surrounding the antennal lobe (stippled circle) when the ligand (CD19mch) was driven by the orco driver in ORNs. Left: CD8:GFP+ neurons; middle: CD19mch+ axons from ORNs; right: merged images of CD19mch (red), CD8:GFP (green). Bottom panels show a single optical section from the stack on top with GABA immunostaining (magenta), confirming that some of the GFP+ neurons (green) induced by CD19mch+ ORNs are GABAergic LNs (arrows). The arrowheads indicate the GFP+, GABA- neurons. left: distribution of GFP+ neurons; middle: GABA immunostaining; right: merged images of GABA (magenta), GFP (green). Scale bar = 20 μm. (c, d) Detection of neuron-neuron contacts in the adult Drosophila antennal lobe with nlgSNTG4 driven by nSyb promoter. (c) Control brains without orco-lexA driver (carrying nSyb-nlgSNTG4, 5xUAS-CD4::tdGFP and LexAop-CD19mch) had low levels of background GFP expression inside of the antennal lobe (arrowheads) and in the antennal mechanosensory and motor center (star in the bottom panel). (d) When CD19mch was driven by the orco-lexA driver in ORNs, it triggered induction of GFP expression in neurons whose dendrites branched throughout the whole antennal lobe. Left: GFP+ cell bodies and neurites from the antennal lobe neurons; middle: ChAT immunostaining (blue); right: merged images of CD19mch (red), CD4::tdGFP (green), and CD19mch+ axons from ORNs (red). The images of two single optical section (top and bottom panels) at different depths show ChAT immunostaining (blue), indicating that some of the GFP+ neurons (green) induced by CD19mch+ ORNs are cholinergic PNs (arrows in the top panels). Bottom panels, some of the GFP+ neurons (green) are non-cholinergic cells, suggesting that they are LNs (arrows in the bottom panels). Scale bar = 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The receptor nlgSNTG4 was tagged with the V5 epitope in its C terminus. Immunostaining with an anti-V5 antibody shows that the nlgSNTG4 receptor is highly expressed in the central brain, in regions such as antennal lobe and subesophageal ganglion, but its expression was much weaker in the optic lobe (bottom left and top right corners). The expression level of the receptor protein in the homozygote SybE-nlgSNTG4 (right) is higher than in the heterozygote (middle). Notice that the expression of the receptor is enriched in the neuropil regions. Scale bar = 50 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The ligand, CD19, was fused with domains from the following pre-synaptic markers: nSyb (a), syx (b), Nrx1 (c), Sdc (d), Dip (e) and Dpr (f). The distribution of the different ligands expressed in ORN axons driven by the orco driver is shown in single optic sections (a–f) or maximum projections (a’–f’). nSyb::CD19 (a and a’) was selectively accumulated at the presynaptic terminals and could not be detected along axons, thus allowing for the visualization of individual glomeruli. The other ligands (syx (b), Nrx1 (c), Sdc (d), Dip (e) and Dpr (f)) are homogeneously distributed throughout the surface of the axons, including axon shafts, thus allowing to detect the ligand on the antennal commissure (arrowheads in b-f and b’-f’). Scale bar = 50 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Different intracellular and transmembrane domains (from Nrx, nSyb, and sdc) were fused to CD19 and expressed into ORNs targeting the DA1 glomerulus using the CD19::Nrx (top panels), nSyb::CD19 (middle panels) and CD19::Sdc (bottom panels), with the R17H02 driver (in green). The brain samples were co-immunostained with antibodies against the OLLAS tag (present in the ligand) and against the pre-synaptic protein, BRP (in magenta). The ligand proteins are co-localized with or adjacent to BRP (arrows), demonstrating that all ligands are enriched at the presynaptic terminals of the ORNs, but CD19::Nrx was also expressed at strong levels in the axon shaft outside of the glomerulus (arrowheads in top panels). Scale bar = 20 μm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Cholinergic (ChAT+)and GABAergic (GABA+) neurons were labeled with GFP when the nSyb::CD19 ligand was expressed in most of the ORNs by the orco-lexA driver. The position of the cell bodies of the cholinergic and GABAergic GFP+ neurons was consistent with them being PNs and LNs, respectively. The images of two single optical section from two brain samples show ChAT immunostaining (top row, third column in blue) and GABA immunostaining (bottom row, third column in blue), indicating that some of the GFP+ neurons (top and bottom rows, second column in green) induced by nSyb::CD19+ ORNs (top and bottom rows, first column in red) are cholinergic (not GABAergic) PNs (arrows in (top row) and arrowhead in (bottom row)). Some GFP+ neurons on the lateral part of the antennal lobe are GABA+ and ChAT- (arrowheads in (top row) and arrows in (bottom row)), which indicates they are probably GABAergic LNs. First column: NSYB::CD19+ axons from ORNs (red); Second column: distribution of GFP+ neurons in the antennal lobe; Third column: GABA or ChAT immunostaining; Fourth column: merged images of GABA or ChAT (blue), GFP (green) and nSyb::CD19 (red). Scale bar = 20 μm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** To selectively detect the connections between ORNs and PNs, the GH146 enhancer was used to drive expression of nlgSNTG4 selectively into PNs, and the ligand was expressed in subsets of ORNs that project to identified glomeruli. (a) Control brain without lexA driver (carrying GH146-nlgSNTG4, 5xUAS-CD4::tdGFP and LexAop-CD19mch) reveals low levels of background GFP expression that can be barely observed in several brain regions, including DA1 glomerulus (star in the right). (b, c, and d) Expression of the ligand CD19mch in most glomeruli with the orco driver (b), or in identified glomeruli using the R17H02 (c) and R28H10 (d) drivers. (b) Left - CD19mch+ axons from ORNs (red) driven by orco branch in the antennal lobe. Middle - Induction of CD4::tdGFP expression in PNs triggered by CD19mch+ ORNs (red, left image). Axon bundles of the CD4::tdGFP+ uniPNs in the iACT (arrows) branch in the mushroom body. (c–d) CD4::tdGFP+ PNs (middle panels) induced by CD19mch+ ORN axons (red, left images) that innervate one (VC1) to three (DA1/VA6/VA1lm) identified glomeruli (stippled circles in the left panels). Although the ligand proteins were only present in specific glomeruli (stippled circles, the expression level in VA6 was low and undetectable after immunostaining with anti-RFP antibody), strong CD4::tdGFP induction (middle panels) was detected in PNs with dendrites outside the CD19mch+ glomeruli. In particular, there are GFP+ neurites within DA1 (stars) in all the cases. The arrows indicate the axons of uniPNs, which run through the mALT. In (b–d), in addition to the uniPNs, few multiPNs were labeled as well (arrowheads). Their dendrite arborizations cover the entire antennal lobes. The right panels show the merged images of CD4::tdGFP (green) and CD19mch (red). Scale bar = 50 μm.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (a) The confocal images show that the negative controls of Figure 2e without lexA drivers (carrying nlgSNTG4 driven by the nSybE- (top panels) or GH146 enhancers (bottom panels), 5xUAS-CD4::tdGFP and LexAop-nSyb::CD19) have no induction in antennal lobe neurons. (b) The images show that control brains of Figure 3 without LexA driver (carrying GH146-nlgSNTG4, 5xUAS-CD4::tdGFP and LexAop-nSyb::CD19 (top panels) or CD19::Sdc (bottom panels) have very low levels of ligand-independent background GFP expression in the antennal lobe (stippled circle). Scale bar = 50 μm.
+
 Expression of the original TRACT ligand and receptor (without any domains that would localize them to synaptic sites) in neurons failed to reveal any synaptic connections in the antennal lobe. For instance, when the CD19mch ligand is expressed in the majority of ORNs using the Orco-lexA driver (Stocker et al., 1997) and the SNTG4 receptor is expressed from the elav enhancer (Yao and White, 1994), we predicted labeling of both PNs and LNs, the major postsynaptic targets in the antennal lobe. However, in flies carrying Orco > CD19 mch, elav-SNTG4, UAS-GFP transgenes, no GFP induction was observed in the antennal lobe (data not shown), consistent with the findings from another publication (He et al., 2017), suggesting that the system needed adjustments to detect synaptic connections.
 
 To generate a genetic system that could be used to reliably identify synaptically connected neurons we tested a number of different modifications with the ligand, receptor, the drivers used to direct their expression, and reporters (discussed in full detail in the supplementary methods). The following modifications proved to be effective to achieve specific transneuronal labeling:
@@ -54,6 +86,158 @@ To investigate the ability of TRACT to reveal neurons exclusively connected by s
 
 **Figure 3.:** (a) Labeling of PNs that receive synaptic input from ORNs expressing the ligand nSyb::CD19 in identified glomeruli using the R17H02 (top panels) and R28H10 (bottom panels) LexA drivers. Left: nSyb::CD19+ axons from ORNs (red) driven by R17H02- and R28H10-LexA branch in identified glomeruli (stippled circles). In R17H02 the nSyb::CD19 expression level was low in VA6 and VA1lm, and expression in DA1 was only visible after signal amplification by immunostaining. Center: Induction of CD4::tdGFP expression in PNs triggered by nSyb::CD19+ ORNs (red, left panels). In R17H02 (top center) two uniPNs with dendrites branching into DA1 (arrows) and one neuron branching into VA6 (arrowhead) were labeled. No GFP+ PN branched in VA1lm. In R28H10 (bottom center) a single uniPN with dendrites branching in VC1 was GFP+ (arrow). (b) Tracing the neuronal connections from the ORNs expressing the ligand CD19::sdc in identified glomeruli by using the R17H02 (top panels) and R28H10 (bottom panels) LexA drivers. Left: CD19::sdc+ axons from ORNs (red) driven by R17H02- and R28H10-LexA branch in the identified glomeruli (stippled circles). In the VA6 glomerulus of R17H02 and VC1 of R28H10, the CD19::sdc expression level was too low to be detected by immunostaining, but the expression in DA1 and VA1lm of R17H02 was above the detection level. Center: Induction of CD4::tdGFP expression in PNs triggered by CD19::sdc+ ORNs (red, left panels). In R17H02 (top center) there were uniPNs projecting to DA1 (arrows) and VA6 (arrowhead). In R28H10 (bottom center) a single uniPN projecting to VC1 was GFP+ (arrow). Expression of CD19::sdc with R28H10 and R17H02 induced GFP expression in a single multiPN (yellow arrowhead). (c) The diagrams show the induction pattern of uniPNs from (a) and (b). The multiPNs detected in (b) are not included. Scale bar = 50 μm.
 
+**Table 1.**
+ Summary of the induction results in the identified glomeruli and circadian neurons.(a and b) Summary of PNs labeled from ORNs expressing nSyb::CD19 (a) or CD19::Sdc (b) in identified glomeruli using the R17H02 and R28H10 LexA drivers. # of GFP+ PNs: number of PNs with GFP induction (median ±sd). % of positive ALs: percentage of antennal lobes with GFP+ PNs in identified glomeruli. # of PNs reported: numbers of PNs innervating identified glomeruli as reported in previous works (Grabe et al., 2016). In the column of R17H02, only the results from females (F) are listed because expression of the R17H02-lexA driver was highly variable in males. n: number of antennal lobes analyzed. *: one R17H02>nSyb::CD19 and two R17H02>CD19::Sdc VA6 glomeruli were GFP+ (there were GFP+ dendrites branching in VA6), but were excluded because the cell bodies of the uniPN projecting into VA6 could not be identified. $: with nSyb::CD19 there is GFP induction in multiPNs in animals homozygous for the ligand (hom), but not in heterozygotes (het). (c) Summary of neurons with GFP expression in animals with donor PDF neurons expressing nSyb::CD19. # of GFP+ Ns: number of the different types of neurons labeled with GFP (mean ±s.e.m). # of Ns reported with connections: previous works did not report these data. % of positive hemispheres: percentage of hemispheres analyzed that contained GFP+ neurons. n: numbers of the hemispheres analyzed.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="2">A</td>
+      <td colspan="5">GH146-nlgSNTG4 + LexAop-nSyb::CD19</td>
+    </tr>
+    <tr>
+      <td>PNs</td>
+      <td># of GFP+ PNs</td>
+      <td># of PNs reported</td>
+      <td>% of positive ALs</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td rowspan="4">R17H02</td>
+      <td>uniPN-&gt;DAl</td>
+      <td>10.5±1.65</td>
+      <td>8±1.9(F)</td>
+      <td>100</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>uniPN-&gt;VA6</td>
+      <td>1±0.33</td>
+      <td>1±0.4 (F)</td>
+      <td>100</td>
+      <td>9*</td>
+    </tr>
+    <tr>
+      <td>uniPN-&gt;VA1lUm</td>
+      <td>0</td>
+      <td>6±0.9 (F)</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>multiPN</td>
+      <td>0 (het)$ 1±0.00 (horn)</td>
+      <td>1</td>
+      <td>0 100</td>
+      <td>10 6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R28H10</td>
+      <td>uniPN-&gt;VCl</td>
+      <td>1±0.00</td>
+      <td>1-2</td>
+      <td>100</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>multiPN</td>
+      <td>0 (het)$ 1±0.48(hom)</td>
+      <td>1</td>
+      <td>0 70</td>
+      <td>22 10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">B</td>
+      <td colspan="5">GH146-nlgSNTG4 + LexAop-CD19::Sdc</td>
+    </tr>
+    <tr>
+      <td>PNs</td>
+      <td># of GFP+ PNs</td>
+      <td># of PNs reported</td>
+      <td>% of positive ALs</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td rowspan="4">R17H02</td>
+      <td>uniPN-&gt;DAl</td>
+      <td>11.5±11.43</td>
+      <td>8±+1.9 (F)</td>
+      <td>100</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>uniPN-&gt;VA6</td>
+      <td>1±0.35</td>
+      <td>1±10.4 (F)</td>
+      <td>100</td>
+      <td>8*</td>
+    </tr>
+    <tr>
+      <td>uniPN-&gt;VA1lm</td>
+      <td>0</td>
+      <td>6±0.9 (F)</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>multiPN</td>
+      <td>1±0.52</td>
+      <td>1</td>
+      <td>60</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R28H10</td>
+      <td>uniPN-&gt;VCl</td>
+      <td>1±0.31</td>
+      <td>1-2</td>
+      <td>90</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>multiPN</td>
+      <td>1±0.39</td>
+      <td>1</td>
+      <td>90</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C</td>
+      <td colspan="5">nSybE-nlgSNTG4 + LexAop-nSyb::CD19</td>
+    </tr>
+    <tr>
+      <td>types of neurons</td>
+      <td>#of GFP+Ns</td>
+      <td># of Ns reported with connections</td>
+      <td>% of positive hemispheres</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td rowspan="3">pdf</td>
+      <td>DN2</td>
+      <td>1±0.75</td>
+      <td>N.A.</td>
+      <td>55.6</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>DN3</td>
+      <td>7±2.3</td>
+      <td>N.A.</td>
+      <td>100</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>PER-</td>
+      <td>7±2.81</td>
+      <td>N.A.</td>
+      <td>100</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
 A previous work demonstrated that, in addition to the uniPNs, the GH146 enhancer drives expression of transgenes into one multiPN (Marin et al., 2002). With the CD19::sdc and nSyb::CD19, in addition to the uniPNs described above, one multiPN was labeled with both R17H02 and R28H10 drivers, which has been identified previously (Figures 3b and 4 and Table 1a and b) (Marin et al., 2002). The dendrites of this neuron almost cover the whole antennal lobe, and its axon projects first to the lateral horn and then anterodorsally toward the midline. (Figure 3c and d).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig4-v2.jpg)
@@ -63,6 +247,14 @@ A previous work demonstrated that, in addition to the uniPNs, the GH146 enhancer
 Although we did not observe any differences in the number or distribution of uniPNs when the ligands were CD19::Sdc or nSyb::CD19, we observed that the labeling of multiPNs had different requirements for sdc and nSyb. Whereas we could achieve labeling of multiPNs with a single copy of CD19::sdc (in heterozygote animals) (Figures 3b and 4b), we could only detect multiPNs when the nSyb::CD19 ligand was present in two copies (homozygote animals) (Figures 3a and 4a). This observation suggests first, that the amount of ligand may be a limiting factor for transneuronal labeling, and second, that in some cases, the CD19::sdc could be more effective at revealing some synaptic partners than nSyb::CD19. These results indicate that both the nSyb::CD19 and CD19::sdc ligands selectively reveal neurons connected by synaptic contacts between ORNs and PNs, match the available data from previously published works, and confirm that TRACT can be used to perform anterograde transneuronal tracing of brain circuits in the Drosophila brain.
 
 To explore the ability of the TRACT method to trace neuronal circuits in other brain areas, we investigated the brain circuits involved in the control of Drosophila circadian behavior (Figure 5a) (Konopka and Benzer, 1971; Hall, 1998; Rosbash et al., 2003; Young, 1998; Nitabach and Taghert, 2008). There are two key advantages of the circadian circuit to test the usefulness of the TRACT system: (i) it consists of a relatively low number of neurons (around 150), and (ii) the function and anatomy of many of those neurons are known in some detail, although their connectivity is not fully understood (Beckwith and Ceriani, 2015; Peschel and Helfrich-Förster, 2011; Shafer et al., 2006).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig5-v2.jpg)
+
+**Figure 5.:** (a) Diagram of Drosophila circadian neurons. The two groups of PDF LNvs are located close to optic lobe: four l-LNvs (black) have dendrites that branch into the ipsilateral optic lobe, and project their axons across the central brain to the contralateral optic lobe. Four s-LNvs (red) project their dorsal axons to dorsoposterior part of the central brain, where DN1 (blue), DN2 (purple) and DN3 (green) neurons are located. (b) Labeling of neurons that receive synaptic input from PDF cells expressing no ligand (top panels: b1, (b3, b5, b7), or the ligand nSyb::CD19 driven by the pdf-LexA driver (bottom panels: b2, (b4, b6, b8). To unbiasedly identify downstream synaptic targets of PDF neurons, we used the pan-neuronal receptor strain, nSybE-nlgSNTG4. b1, b2: nSyb::CD19 +expression pattern. b1: control brain with no nSyb::CD19 expression. b2: nSyb::CD19 driven by pdf-LexA accumulated (red) in the cell bodies (yellow arrows) and the axon terminals of s-LNv dorsal axons (yellow arrowheads). b3: No GFP induction was observed in the control brains without pdf >nSyb::CD19 ligand. b4: Induction of CD4::tdGFP expression in pdf >nSyb::CD19 brain in the vicinity of the trajectory of nSyb::CD19 +axons through the central brain. Arrow and arrowhead point to GFP +neurons in the DN1 region, and DN3 regions, respectively. b5, b6: Immunostaining with anti-PER antibody identifies DN1 (white arrow), DN2, and DN3 (white arrowhead) neurons. b7, b8: Merged images of PER (magenta), GFP (green) and nSyb::CD19 (red). Stippled square in b8 indicates region shown at high magnification (40X) in Figure 6.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32027/elife-32027-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a1-4) Negative control, with no ligand expression. (b1-4 and b1’−4’ [two different animals]) GFP +neurons induced by expression of the CD19::Sdc ligand driven by the pdf-LexA driver. The receptor in both cases is the nSybE-nlgSNTG4. a1: control brain with no nSyb::CD19 expression. b1 and b1’: nSyb::CD19 driven by pdf-LexA strongly accumulated (red) in the cell bodies (arrows) and had a weak signal in the axon terminals of s-LNv dorsal axons (arrowheads). a2: no GFP induction was observed in the control brains without pdf >nSyb::CD19 ligand. b2 and b2’: Induction of GFP expression in pdf >nSyb::CD19 brain in the vicinity of the trajectory of nSyb::CD19 +axons through the central brain. b1-4 and b1’-b4’ are images from two different animals. In b2 there was GFP induction in DN3 (but not DN2), and in b2’ there was induction in DN2 (but not in DN3). White Arrows point to GFP +DN2 (b) and GFP +DN3 (b’) neurons whereas yellow arrows indicate the commissural axons of l-LNvs. a3, b3, and b3’: Immunostaining with anti-PER antibody identifies DN1, DN2, and DN3 neurons. a4, b4 and b4’:Merged images of PER (magenta), GFP (green) and CD19::Sdc (red). Stippled insets in b and b’ show the GFP +DN2 or DN3 neurons in high magnification (60X). Scale bar = 50 μm.
 
 As a test case, we explored the ability of TRACT to reveal the connectivity of the PDF neurons, a well-characterized set of cells in the Drosophila brain that are critical regulators of circadian rhythm (Figures 5b and 6 and Figure 5, Figure 5—figure supplement 1; Renn et al., 1999; Lear et al., 2009). There are two types of PDF neurons in the Drosophila brain: (i) s-LNv neurons, which project their axons into the dorsal regions of the central brain, and (ii) l-LNv neurons, which have large dendrites that branch in the optic lobe, and an axon that projects to the contralateral optic lobe (Figure 5a). In addition to pdf, the period (per) gene is another critical regulator of circadian function in Drosophila (Konopka and Benzer, 1971; Bargiello and Young, 1984; Reddy et al., 1984). Previous works using GRASP suggested that s-LNv neurons were connected to the DN1p (Cavanaugh et al., 2014; Seluzicki et al., 2014) and DN2 neurons (Tang et al., 2017) in the adult fly. In addition, it has been reported that s-LNv neurons make weak connections with LNd neurons that vary throughout the day (Gorostiza et al., 2014). We tested whether we could use TRACT, first, to confirm the connection between s-LNv and DN1 and/or LNd neurons, and second, to identify new synaptic partners of s-LNvs in other brain areas. We used a pdf-lexA driver to express the nSyb::CD19 or CD19::sdc ligands, performed immunostaining against the OLLAS tag and confirmed that the ligands were selectively expressed in the axon terminals of the PDF neurons (Figures 5b and 6 and Figure 5—figure supplement 1).
 
@@ -100,7 +292,7 @@ In recent years, there has been a surge in interest for new methods to investiga
 
 ## Materials and methods
 
-## Transgenic flies
+### Transgenic flies
 
 elav-nlgSNTG4: The SNTG4 cassette is described in detail in our previous publication (Huang et al., 2016), and it contains a single chain antibody domain (S), the NRR domain from Drosophila Notch (N), the transmembrane domain from Drosophila Notch (T), and the esn variant of Gal4 (G4). nlgSNTG4 constructs were generated by ligating three PCR fragments of SNT, dNlg2 ICD and Gal4esn (esn, for short). The SNT and esn fragment was amplified by PCR from elav-SNTG4 (Huang et al., 2016), and the dNlg2 ICD was from Drosophila EST RH63339. These three fragments were subcloned into a P-element vector carrying the elav enhancer (Yao and White, 1994) using standard procedures. Transgenic elav-nlgSNTG4 flies were produced by standard P-element integration, were screened by GAL4 immunostaining, and the lines with the highest expression level of SNTG4 were chosen for subsequent experiments. Line #1, 2 and 4 were tested, and had similar results. Line #4 was used in this study.
 
@@ -128,7 +320,7 @@ orco-LexA::VP16: gift from Dr. Lee, Janelia Research Campus HHMI
 
 Janelia LexA driver lines: GMR17H02, and GMR28H10-LexA were requested from Bloomington fly stocks.
 
-## Genotypes of flies analyzed in the figures
+### Genotypes of flies analyzed in the figures
 
 Figure 2e top: 5XUAS-CD4::tdGFP, nSybE-nlgSNTG4/nSybE-nlgSNTG4; orco-LexA::VP16/LexAop-nSyb::CD19
 
@@ -152,12 +344,12 @@ Figure 5b bottom and 8: nSyb-nlgSNTG4, 5XUAS-CD4::tdGFP/nSyb-nlgSNTG4, pdf-LexA;
 
 All crosses were maintained in a 25C incubator with 12 hr-12hr dark-light cycles, and were repeated at least three times.
 
-## Immunostaining and imaging of fly brains
+### Immunostaining and imaging of fly brains
 
 After incubation at 29C for one day, the adult Drosophila were dissected, and the brains were removed in 1x PBS under a dissection microscope. For PER immunostaining, the flies were dissected one hour before the lights turned on (around 7 AM). Brains were fixed by immersing them in a 4% paraformaldehyde solution in PBS for 15 min at room temperature. Brains were washed in PBS three times for 10 mins each, followed by permeabilization with PBS + 0.5% triton X-100 (PBST) for 30 mins and blocking with 5% horse serum in PBST for 30 mins. The brain samples were stained with antibodies against GFP (rabbit polyclonals (AB3080 1:1000, AB3080P 1:1500 (Millipore)), or chicken polyclonal (Abcam), diluted at 1:1000), mcherry (rat monoclonal 5F8 (Chromotek) diluted at 1:1,000), Brp (mouse monoclonal nc82 (DSHB) diluted at 1:50), ChAT (mouse monoclonal 4B1 (DSHB) diluted at 1:200), GABA (rabbit polyclonal A2052 (Sigma) 1:200), PER (guinea pig polyclonal PA1140, gift from Dr. Sehgal, University of Pennsylvania), V5 (mouse monoclonal R960-25 (invitrogen) diluted at 1:300), OLLAS (rat monoclonal L2 NBP106713 (Novus) diluted at 1:300) diluted in 5% horse serum/PBST. Brains were Incubated with primary antibodies overnight at 4C, washed three times in PBST, incubated with secondary (goat secondary antibodies (Life Technologies) 1:500, except for rabbit anti-GFP AB3080P (Millipore), where the secondary was used at 1:750) for 1.5 hr at room temperature, washed in PBST and mounted on glass slides with a clearing solution (Slowfade Gold antifade reagent (Invitrogen)).
 
 Stained brains were imaged with Confocal microscopes (Olympus Fluoview 300 or Zeiss 710) under 20x or 40X objectives. In a typical experiment, we imaged 150 sections with an optical thickness of 0.3–0.5 µm from dorsal or ventral sides. Confocal stacks were processed with Fiji to obtain maximal projections.
 
-## Generation of transgenic constructs
+### Generation of transgenic constructs
 
 All constructs were generated using either PCR with NEB Phusion polymerase or IDT gene blocks. Cloning into transgenic vector plasmids was performed using Gibson assembly mix from NEB. The sequences of the constructs used to generate the data shown in main text (ID3 dNRR dNotch1 TMD dnlng2 esn V5, nSyb::CD19, and CD19::sdc) are shown in Supplementary file 1, including maps indicating their key elements).

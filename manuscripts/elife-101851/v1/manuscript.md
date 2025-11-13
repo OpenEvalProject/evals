@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03ht1xw27 Department of Biological Sciences, Tata Institute of Fundamental Research Mumbai India
-2. https://ror.org/03gnh5541 Institute of Science and Technology Austria Klosterneuburg Austria
+1. Department of Biological Sciences, Tata Institute of Fundamental Research Mumbai India ([ROR:03ht1xw27](https://ror.org/03ht1xw27))
+2. Institute of Science and Technology Austria Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))
 
 † Corresponding author
 
 ## Abstract
 
-In the developing vertebrate central nervous system, neurons and glia typically arise sequentially from common progenitors. Here, we report that the transcription factor Forkhead Box G1 ( Foxg1 ) regulates gliogenesis in the mouse neocortex via distinct cell-autonomous roles in progenitors and postmitotic neurons that regulate different aspects of the gliogenic FGF signalling pathway. We demonstrate that loss of Foxg1 in cortical progenitors at neurogenic stages causes premature astrogliogenesis. We identify a novel FOXG1 target, the pro-gliogenic FGF pathway component Fgfr3 , which is suppressed by FOXG1 cell-autonomously to maintain neurogenesis. Furthermore, FOXG1 can also suppress premature astrogliogenesis triggered by the augmentation of FGF signalling. We identify a second novel function of FOXG1 in regulating the expression of gliogenic cues in newborn neocortical upper-layer neurons. Loss of FOXG1 in postmitotic neurons non-autonomously enhances gliogenesis in the progenitors via FGF signalling. These results fit well with the model that newborn neurons secrete cues that trigger progenitors to produce the next wave of cell types, astrocytes. If FGF signalling is attenuated in Foxg1 null progenitors, they progress to oligodendrocyte production. Therefore, loss of FOXG1 transitions the progenitor to a gliogenic state, producing either astrocytes or oligodendrocytes depending on FGF signalling levels. Our results uncover how FOXG1 integrates extrinsic signalling via the FGF pathway to regulate the sequential generation of neurons, astrocytes, and oligodendrocytes in the cerebral cortex.
+In the developing vertebrate central nervous system, neurons and glia typically arise sequentially from common progenitors. Here, we report that the transcription factor Forkhead Box G1 (Foxg1) regulates gliogenesis in the mouse neocortex via distinct cell-autonomous roles in progenitors and postmitotic neurons that regulate different aspects of the gliogenic FGF signalling pathway. We demonstrate that loss of Foxg1 in cortical progenitors at neurogenic stages causes premature astrogliogenesis. We identify a novel FOXG1 target, the pro-gliogenic FGF pathway component Fgfr3, which is suppressed by FOXG1 cell-autonomously to maintain neurogenesis. Furthermore, FOXG1 can also suppress premature astrogliogenesis triggered by the augmentation of FGF signalling. We identify a second novel function of FOXG1 in regulating the expression of gliogenic cues in newborn neocortical upper-layer neurons. Loss of FOXG1 in postmitotic neurons non-autonomously enhances gliogenesis in the progenitors via FGF signalling. These results fit well with the model that newborn neurons secrete cues that trigger progenitors to produce the next wave of cell types, astrocytes. If FGF signalling is attenuated in Foxg1 null progenitors, they progress to oligodendrocyte production. Therefore, loss of FOXG1 transitions the progenitor to a gliogenic state, producing either astrocytes or oligodendrocytes depending on FGF signalling levels. Our results uncover how FOXG1 integrates extrinsic signalling via the FGF pathway to regulate the sequential generation of neurons, astrocytes, and oligodendrocytes in the cerebral cortex.
 
 ## Introduction
 
@@ -43,25 +43,57 @@ Our results shed light on a novel mechanism regulating the sequential generation
 
 We used a Foxg1 conditional knockout mouse line with an intrinsic reporter (Foxg1lox/lox; Rosa26FRT-GFP ; Miyoshi and Fishell, 2012) to assess the cell-autonomous phenotypes of Foxg1 disruption. In this line, Cre-mediated recombination of the floxed Foxg1 allele results in the expression of flippase, which then recombines a STOP-FRT-EGFP reporter inserted in the Rosa26 locus. Since this reporter is integrated into the genome, introducing Cre recombinase into a progenitor results in GFP expression in Foxg1-recombined cells arising from it without dilution, serving as a label for its lineage.
 
-## Disrupting Foxg1 during neurogenesis causes premature gliogenesis
+### Disrupting Foxg1 during neurogenesis causes premature gliogenesis
 
 In wild-type mice, FOXG1 expression decreases in cortical progenitors from embryonic day (E) 15.5 to E18.5 (Figure 1—figure supplement 1; Falcone et al., 2019). We tested the consequences of a premature drop in FOXG1 at E15.5 when superficial layer neurons are generated in the neocortex. We introduced a plasmid encoding Cre recombinase at E15.5 using in utero electroporation and examined the brains on postnatal day 14 (P14). This stage is suitable for a comprehensive assessment of the lineage arising from control and mutant progenitors.
 
 In control brains, as expected, GFP+ cells with pyramidal neuron morphologies occupied layer II/III of the neocortex, whereas cells with glial morphologies were scattered throughout the tissue. 67% of the GFP+ cells also expressed neuronal marker NEUN and did not express mature astrocytic marker ALDH1L1. 16% of the GFP+ cells were also ALDH1L1+ due to the intrinsic Rosa26FRT-GFP reporter that causes EGFP expression in the entire lineage of progenitors electroporated at E15.5 (Figure 1A–D, Figure 1—figure supplement 2). In contrast, Cre electroporation in Foxg1lox/lox embryos results in GFP+ cells with astrocytic morphologies distributed all over the neocortex. None were NEUN+, but 56% were ALDH1L1+, confirming their astrocyte identity. We found similar results, that is, premature gliogenesis, upon Cre electroporation at E14.5 (Figure 1E–H). In contrast, loss of Foxg1 at E13.5 did not impede neurogenesis. The mutant cells were NEUN+ and ALDH1L1–, indicating no premature gliogenesis. Consistent with the literature, there is enhanced expression of REELIN (Figure 1—figure supplement 3; Toma et al., 2014; Hanashima et al., 2004; Shen et al., 2006; Kumamoto and Hanashima, 2014; Kumamoto et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Cre electroporation at E15.5 in control (A, Foxg1lox/+; Rosa26FRT-GFP) and Foxg1 loss-of-function (LOF) (B, Foxg1lox/lox; Rosa26FRT-GFP) embryos, followed by analysis at P14. (C, D) 67.3% of GFP+ cells colocalised with NeuN in control brains and 1% in Foxg1 LOF brains. 16% of GFP+ cells colocalised with ALDH1L1 in control brains and 56% in Foxg1 LOF brains. n = 2151 (Control), 2761 (Foxg1 LOF) cells from N = 3 brains (biologically independent replicates). (E–H) Cre electroporation at E14.5 in control (E, Foxg1lox/+; Rosa26FRT-GFP) and Foxg1 LOF (F, Foxg1lox/lox; Rosa26FRT-GFP) embryos, followed by analysis at P14. (G, H) 77.7% of GFP+ cells colocalised with NeuN in control brains and 0% in Foxg1 LOF brains. 20.1% of GFP+ cells colocalised with ALDH1L1 in control brains and 55.7% in Foxg1 LOF brains. n = 3,160 (Control), 2978 (Foxg1 LOF) cells from N = 3 brains (biologically independent replicates). In each row (A, B, E, F), the boxes in the leftmost low magnification panels indicate approximate regions shown in either the NEUN or ALDH1L1 high-magnification panels. Filled arrowheads depict colocalisation, and open arrowheads depict non-colocalisation of marker and electroporated cells. Statistical test: two-tailed unpaired t-test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars are 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) FOXG1 immunostaining at E15.5 and E18.5 in control brains together with apical progenitor marker PAX6. (B) Nuclear intensity quantification of FOXG1 in apical progenitors reveals a significant decrease in levels by E18.5, suggesting an endogenous mechanism for the transition of neurogenesis to gliogenesis in progenitors. n = 350 cells from N = 3 (biologically independent replicates). Statistical test: Mann–Whitney test. Scale bar: 50 μm. (C, D) Violin plots depicting normalised gene expression levels from scRNA-seq data (Di Bella et al., 2021) for Foxg1 (C) and Fgfr3 (D) reveal complementary temporal dynamics for these genes in progenitors at E15.5, P1, and P4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** This experiment aimed to examine whether there is a difference in baseline neurogenesis in Foxg1+/+ versus Foxg1lox/+ brains since the latter are used as controls in Figures 1 and 6. (A) Cre electroporation at E15.5 in control embryos carrying an Ai9 reporter. Brains were harvested at P14. The leftmost panel in (A) is a low-magnification image, as the scale bar indicates. (B) Quantification of Ai9+ cells reveals similar proportions of these cells colocalise with NeuN in +/+ controls (72%) compared to Foxg1lox/+; GFP FRT brains (67%). (C) Quantification of glial marker ALDH1L1 reveals similar proportions of Ai9+ cells colocalise with ALDH1L1 in +/+ brains (18%) compared to Foxg1lox/+; GFP FRT brains (16%). No significant difference is observed between the two conditions. n = 2790 cells from N = 3 (biologically independent replicates) were examined over three independent experiments. Statistical test: unpaired t-test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–F) hGFAP-CreERT2/+; Ai9 (Control) and hGFAP-CreERT2/+; Foxg1lox/lox; Ai9 (Foxg1 loss-of-function [LOF]) brains after tamoxifen administration at E13.5, followed by analysis at E17.5. (A, B, G) 96% of Ai9+ cells colocalised with NEUN in control brains and 95% in Foxg1 LOF brains. (C, D, H) 4% of Ai9+ cells colocalised with ALDH1L1 in control brains and 5% in Foxg1 LOF brains. (E, F, I) The average REELIN intensity per Ai9+ cell increased from 17% in control brains to 22% in Foxg1 LOF brains. n = 2,508 (Control), 2798 (Foxg1 LOF) cells from N = 3 brains (biologically independent replicates).
+
 This indicates that progenitors undergo a transition after E13.5, wherein the loss of FOXG1 from E14.5 prompts a shift from neurogenesis to gliogenesis, even if they have not yet produced the final cohorts of superficial layer neurons.
 
-## Enhanced gliogenesis upon loss of Foxg1 is not due to the over-proliferation of mutant astrocytes
+### Enhanced gliogenesis upon loss of Foxg1 is not due to the over-proliferation of mutant astrocytes
 
 Increased gliogenesis may arise from the over-proliferation of astrocytes and an accompanying death of neurons that have lost Foxg1. Alternatively, there could be a premature cell fate switch in the progenitors that should have produced neurons but instead produced astrocytes (Figure 2A). To distinguish between these scenarios, we examined the presence of KI67 in cells at 1 day (E16.5) or 3 days (E18.5) after Cre electroporation at E15.5. Similar numbers of electroporated (EGFP+) cells displayed KI67 in control and Foxg1lox/lox brains, indicating that loss of Foxg1 did not induce overproliferation (Figure 2B and B’, Figure 2—figure supplement 1). Furthermore, no difference was observed in the expression of a cell death marker Cleaved Caspase 3 (Figure 2C and C’). However, consistent with a switch to gliogenesis, the Foxg1 LOF cells were positive for gliogenic factor NFIA but not the neurogenic intermediate progenitor marker TBR2 (Figure 2D, D’, E and E’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic depicting the two alternative mechanisms that could result in enhanced gliogenesis upon loss of Foxg1: a change in cell type produced by the progenitor, i.e., ‘fate switch’ or increase in proliferation of astrocytes accompanied by neuronal cell death. (B, B', C, C’) Images of the ventricular and sub-ventricular zone (the dashed line indicates the ventricle boundary). Cre electroporation at E15.5 in control (Foxg1lox/+; Rosa26FRT-GFP) and Foxg1 LOF (Foxg1lox/lox; Rosa26FRT-GFP) embryos, followed by analysis at E18.5. Proliferation marker KI67 (B, B’) colocalises with similar numbers of GFP+ cells in control and Foxg1 LOF brains. Cell death marker Cleaved Caspase 3 (C, C’) does not reveal differences in colocalisation with GFP+ control and Foxg1 LOF cells. In contrast, glial progenitor markers NFIA (D, D’) display increased colocalisation with GFP+ cells in Foxg1 LOF (51.7%) compared with controls (12.5%). Neurogenic intermediate progenitor marker TBR2 (E, E’) displays decreased colocalisation with GFP+ cells in Foxg1 LOF brains (0%) compared with controls (8%). n = 3590 (control), 2100 (mutant) cells from N = 3 brains (biologically independent replicates). (F) Schematic depicting the genotype and corresponding fluorescent labels resulting from the Mosaic Analysis with Double Markers (MADM) recombination events. (G-H) Cre electroporation at E14.5/E15.5 in Foxg1-MADM brains (M12GT/TG, Foxg1) analysed at P14. Green (Foxg1—/—) and red (Foxg1+/+) cells were scored based on neuronal (open arrowheads, G) or glial (arrowheads, E) morphology. (H) Represents the number of neurons or glia as a percentage of the total population of neurons +glia of each genotype: control (red; +/+) or Foxg1 mutant (green –/–) neurons. n = 354 cells from N = 5 brains (biologically independent replicates). Statistical test: two-tailed unpaired t-test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Analysis of the proliferation marker KI67 in Control and Foxg1 LOF E16.5 progenitors, 1 day post-electroporation at E15.5. KI67 colocalises with comparable numbers of GFP+ cells in both Control (A; Cre in Foxg1lox/+) and Foxg1 LOF (B; Cre in Foxg1lox/lox) brains. Quantifications are presented in (C). n = 403 cells (Control) and 663 cells (Foxg1 LOF) from N = 2 biologically independent experiments.
 
 We also employed a MADM-based strategy to distinguish between these possibilities (Figure 2F; Zong et al., 2005; Contreras et al., 2021). We used the MADM-12 (M12) line (Contreras et al., 2021; Hippenmeyer et al., 2013) in which the MADM GT and TG cassettes are on chromosome 12 and crossed them onto a Foxg1lox/+ background. In the resulting Foxg1-MADM (M12GT/TG, Foxg1) brains, a fraction of Cre-electroporated progenitors undergo recombination, resulting in progeny that is either Foxg1—/—, GFP+ (green), or Foxg1+/+ tdTomato+ (red) cells. Since these red and green cells arise from single progenitors, the MADM system enables an accurate analysis of proliferation versus cell fate transformation upon disruption of Foxg1. A fraction of progenitors in the MADM paradigm undergoes a different recombination pattern, resulting in a yellow progeny due to the expression of both GFP and tdTomato (Zong et al., 2005; Contreras et al., 2021), which were not scored. We performed in utero electroporation of Cre in Foxg1-MADM embryos in E14.5/E15.5 embryos. We analysed the brains at P14 (Figure 2G). Green and red cells were scored for neuronal or glial identity based on morphology (Shen et al., 2021; Zhang et al., 2020). Of the total control (red, +/+) cells, 61.9% were neurons, and 38.1% were glia. In contrast, of the total number of Foxg1 mutant (green,–/–) cells, 16.7% were neurons, and 83.3% were glia (Figure 2H).
 
 In summary, the results demonstrate that loss of Foxg1 results in a premature cell fate switch in neurogenic progenitors, making them gliogenic.
 
-## Loss of Foxg1 causes upregulation of Fgfr3 in progenitors and enhanced FGF signalling
+### Loss of Foxg1 causes upregulation of Fgfr3 in progenitors and enhanced FGF signalling
 
 We investigated how FOXG1 regulates the transcriptional landscape in cortical progenitors to maintain a temporal control of neurogenesis and gliogenesis. We used the inducible hGFAP-CreERT2 (hGCE) driver to achieve widespread recombination in apical progenitors at embryonic ages upon induction with tamoxifen (Zhuo et al., 2001; Ganat et al., 2006). First, we ascertained that hGCE-driven loss of Foxg1 at E15.5 recapitulates the premature gliogenesis phenotype we described in Figure 3—figure supplement 1A. Also, 2 days after tamoxifen induction (E15.5 → E17.5), Foxg1 LOF cells were positive for gliogenic factor NFIA, similar to that seen upon Cre electroporation (Figure 2C, Figure 3—figure supplement 1B and C). To identify pathways that regulate the premature gliogenesis induced by the loss of Foxg1, we collected FACS-purified control and mutant cells at E17.5, 48 hours post-tamoxifen administration at E15.5, for transcriptomic analysis (Figure 3—figure supplement 1D and D’; Supplementary file 1). As expected, the loss of Foxg1 caused the upregulation of known gliogenic factors such as Nfia and Olig3 and the downregulation of neurogenic genes such as Neurod2 and neuronal marker Pou3f1 (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig3-v1.jpg)
+
+**Figure 3.:** (A) RNA-seq analysis of FACS-purified Control and Foxg1 loss-of-function (LOF) progenitors harvested two days after labelling at E15.5. Gliogenic factors such as Nfia, Id3, and Olig3 are upregulated, and neuronal markers such as Pou3f1 and Robo4 are downregulated. (B–D) Multimodal analysis comparing FOXG1 occupancy (ChIP-seq) and bivalent epigenetic marks (H3K4Me3 and H3K27Me3) and astrocyte-enriched genes from Telley et al., 2019 reveals a list of 19 genes common to each dataset (B). Four of these are upregulated upon loss of Foxg1, including the known gliogenic gene Fgfr3 (D). FOXG1 occupies a –26 kb enhancer region of Fgfr3 (C). (E) KEGG analysis of the upregulated genes from (A) identifies the MAPK signalling pathway downstream of FGF signalling. (F) Loss of Foxg1 from E15.5 progenitors (hGFAP-CreERT2, tamoxifen at E15.5) causes upregulation of FGFR3 receptor by E17.5 as seen in cells near the VZ of the somatosensory cortex. Boxes (F) indicate the regions in high magnification shown in the adjacent panels (G). Dashed circles outline the regions of interest (ROIs) identified in the DAPI channel used for intensity quantification in (H). (G; n = 50 [Control and Foxg1 LOF] ROIs from N = 3 brains) and phosphorylated-ERK1/2 (H; n = 67 [Control] and 89 [Foxg1 LOF]) cells from N = 3 brains (biologically independent replicates). Statistical test: Mann–Whitney test *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) hGFAP-CreERT2/+; Ai9 (hGCE; Ai9) and hGFAP-CreERT2/+; Foxg1 lox/lox; Ai9 (labelled hGCE Foxg1lox/lox; Ai9) brains after tamoxifen administration at E15.5 and harvesting at P14. The Foxg1 loss-of-function (LOF) condition shows the absence of neurons and enhanced glia, consistent with the phenotype from the electroporation-mediated loss of Foxg1. This result is similar to that in Figure 1. (B, C) hGCE Foxg1lox/lox; Ai9 (tamoxifen at E15.5, harvested at E17.5). Foxg1 LOF progenitors display a significant upregulation of gliogenic factor NFIA (n = 310 [hGCE; Ai9] and 367 [hGCE Foxg1lox/lox; Ai9] cells from N = 3 biologically independent replicates). (D, D’) Fluorescence-activated cell sorting (FACS) plot of the Ai9+ cells obtained from control and hGCE Foxg1lox/lox; Ai9 brains (tamoxifen at E15.5, harvested at E17.5). Cells in the boxed cluster in (D’) were collected at E17.5 and purified for RNA sequencing. (E) Plot depicting the presence of both H3K4Me3 and H3K27Me3 (Bivalent) marks at the Fgfr3 promoter region and the presence of a FOXG1 binding site at 26 kb upstream region of the gene. Statistical test: Mann–Whitney test. Scale bar: 50 μm.
 
 We further filtered the list of genes upregulated upon loss of Foxg1 using a strategy designed to narrow down candidates likely to drive gliogenesis. First, we examined a set of genes known to display FOXG1 occupancy at E15.5 (Cargnin et al., 2018). Second, we reasoned that cell fate transitions are driven by genes maintained in states poised for transcriptional activation or repression by displaying both epigenetic marks (Liu et al., 2017). Therefore, we analysed a dataset from E15.5 radial glial cells to identify genes that carry bivalent H3K4Me3 and H3K27Me3 marks in gene regulatory regions. Third, we obtained a list of genes enriched in cortical astrocytes (Telley et al., 2019).
 
@@ -71,19 +103,27 @@ In summary, we identified Fgfr3 as a novel FOXG1 target. Upregulation of Fgfr3 m
 
 These results demonstrate that FOXG1 suppresses Fgfr3 gene expression and the MAPK/ERK pathway, and loss of Foxg1 results in an enhancement of this pro-gliogenic pathway. The decline in nuclear FOXG1 by E18.5 suggests an endogenous mechanism for the transition of neurogenesis to gliogenesis in apical progenitors.
 
-## Foxg1 overexpression cell-autonomously suppresses FGF-induced astrogliogenesis
+### Foxg1 overexpression cell-autonomously suppresses FGF-induced astrogliogenesis
 
 Exogenous FGF8 is known to have potent progliogenic effects in the neocortex Dinh Duong et al., 2019, which our results recapitulated (Figure 4A and B). As expected, electroporation at E15.5 of a control construct encoding EGFP did not impede neurogenesis. In wild-type mice, 100% of the electroporated GFP+ cells were NEUN+ and occupied the superficial layers of the neocortex by P7 (Figure 4A). Similar to the findings of Dinh Duong et al., 2019, co-electroporation of constructs encoding Fgf8+Egfp induced premature gliogenesis, resulting in 85% of the GFP+ cells displaying astrocytic morphologies and glial marker SOX9 (Figure 4B). Foxg1 overexpression alone did not affect neurogenesis but gave rise to neurons, some of which occupied the superficial layer and some displayed migration deficits, as previously shown (Miyoshi and Fishell, 2012; Figure 4C). Note that this experiment did not use the intrinsic Rosa26FRT-GFP reporter. Electroporation-based introduction of GFP is expected to dilute with continued progenitor proliferation. Therefore, the control brains displayed GFP in neurons that were born at E15.5, and not in glia that arose subsequently from the same progenitors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig4-v1.jpg)
 
-**Figure 4.:** Foxg1 suppresses FGF-induced gliogenesis.(A–D) In-utero electroporations were performed in wild-type embryos at E15.5, and the brains were analysed at P7. (A) GFP electroporation labels LII/III cells that are NEUN+ (arrowheads) and SOX9– (open arrowheads). (B) Overexpression of Fgf8 leads to premature gliogenesis, and the GFP+ cells are NEUN– (open arrowheads) and SOX9+ (arrowheads). (C) Overexpression of Foxg1 produced NEUN+ (arrowheads) and SOX9– (open arrowheads) neurons, some of which displayed delayed migration (black asterisk), and others migrated to the cortical plate (white asterisk), as shown in Miyoshi and Fishell, 2012. (D) Overexpression of Foxg1 together with FGF8 partially rescued neuronal fate such that GFP+ cells also displayed NEUN (arrowheads) but not SOX9 (open arrowheads). In (A–D), the boxes in the leftmost low-magnification panels indicate approximate regions shown in the adjacent high-magnification panels. (E) Quantifications of GFP+ cells that are also NEUN+ in each condition: 98.6% (GFP); 1.8% (Fgf8); 98.3% (Foxg1); 74.1% (Foxg1+Fgf8). (F) Quantifications of GFP+ cells that are also SOX9+ in each condition: 0% (Egfp); 87.7% (Fgf8+Egfp); 0% (Foxg1-Egfp); 24.2% (Foxg1-Egfp+Fgf8). n = 2,123 (Egfp), 1643 (Fgf8+Egfp), 1357 (Foxg1-Egfp), 1924 (Foxg1-Egfp+Fgf8) cells each from N = 3 brains (biologically independent replicates). Statistical test: two-way ANOVA with Tukey’s correction. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
+**Figure 4.:** (A–D) In-utero electroporations were performed in wild-type embryos at E15.5, and the brains were analysed at P7. (A) GFP electroporation labels LII/III cells that are NEUN+ (arrowheads) and SOX9– (open arrowheads). (B) Overexpression of Fgf8 leads to premature gliogenesis, and the GFP+ cells are NEUN– (open arrowheads) and SOX9+ (arrowheads). (C) Overexpression of Foxg1 produced NEUN+ (arrowheads) and SOX9– (open arrowheads) neurons, some of which displayed delayed migration (black asterisk), and others migrated to the cortical plate (white asterisk), as shown in Miyoshi and Fishell, 2012. (D) Overexpression of Foxg1 together with FGF8 partially rescued neuronal fate such that GFP+ cells also displayed NEUN (arrowheads) but not SOX9 (open arrowheads). In (A–D), the boxes in the leftmost low-magnification panels indicate approximate regions shown in the adjacent high-magnification panels. (E) Quantifications of GFP+ cells that are also NEUN+ in each condition: 98.6% (GFP); 1.8% (Fgf8); 98.3% (Foxg1); 74.1% (Foxg1+Fgf8). (F) Quantifications of GFP+ cells that are also SOX9+ in each condition: 0% (Egfp); 87.7% (Fgf8+Egfp); 0% (Foxg1-Egfp); 24.2% (Foxg1-Egfp+Fgf8). n = 2,123 (Egfp), 1643 (Fgf8+Egfp), 1357 (Foxg1-Egfp), 1924 (Foxg1-Egfp+Fgf8) cells each from N = 3 brains (biologically independent replicates). Statistical test: two-way ANOVA with Tukey’s correction. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
 
 In summary, FOXG1 is sufficient to cell-autonomously suppress the pro-gliogenic effects of FGF8, establishing it as a regulator of FGF signalling within cortical progenitors.
 
-## Postmitotic neuron-specific loss of Foxg1 leads to premature gliogenesis in cortical progenitors
+### Postmitotic neuron-specific loss of Foxg1 leads to premature gliogenesis in cortical progenitors
 
 Postmitotic neurons provide ‘feedback instruction’ to progenitors via cues that modulate the cell types that arise subsequently (Seuntjens et al., 2009; Barnabé-Heider et al., 2005). We examined a publicly available transcriptomic dataset from CUX2+ upper-layer neurons isolated at stages from E18.5 to P48 (Yuan et al., 2022) and discovered that Fgf family members Fgf9, Fgf10, and Fgf18 mRNA levels peaked in the first postnatal week and dropped thereafter, consistent with the temporal profile of astrogliogenesis in the cortex (Figure 5—figure supplement 1A and B; Thompson et al., 2014). Since Foxg1 is expressed in postmitotic neurons (Hou et al., 2020; Dastidar et al., 2011), we tested whether it may play a role in regulating gliogenic factors secreted by these cells. We used postmitotic neuron-specific NexCre to disrupt Foxg1 and examined these brains at birth (Figure 5—figure supplement 1C and D). We found a significant increase in the levels of gliogenic factor SOX9 in the ventricular zone progenitors and an increased number of SOX9+ cells in the mantle compared to that in control brains, indicating a non-autonomous effect of neuron-specific loss of Foxg1 on progenitors (Figure 5A–D). Consistent with enhanced gliogenesis, there was an apparent increase in astrocyte marker ALDH1L1+ cells in the entire cortical plate (Figure 5—figure supplement 1E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig5-v1.jpg)
+
+**Figure 5.:** (A) SOX9 staining in the control P0 cortex identifies gliogenic progenitors at the ventricular zone (VZ, white asterisk) and scattered cells throughout the cortical plate. (B–D) NexCre-driven loss of Foxg1 is specific to postmitotic neurons, as seen by GFP reporter expression (C, white bars) and causes a non-autonomous upregulation of nuclear SOX9 in the VZ progenitors and an increase in the numbers of SOX9+ cells cortical plate (B; quantifications: D, E). (B) and (C) are images of the same section showing SOX9 alone (B) and together with the GFP reporter (C). (F) Transcriptomic analysis of cortical plate tissue from control and NexCre/+; Foxg1lox/lox; Rosa26FRT-GFP reveals a significant upregulation of Fgf18 upon loss of Foxg1. (G) Fgf18 expression in CUX2+ upper-layer cells peaks at P7, as seen in the RNA seq dataset from Yuan et al., 2022. (H) Examination at E18.5 reveals increased levels of phosphorylated p42/44-ERK1/2 (pERK1/2) within the VZ of NexCre/+; Foxg1lox/lox brains, indicative of enhanced FGF signalling. This upregulation of pERK1/2 is reversed upon treatment with the FGF Inhibitor NVP-BGJ398 (H; quantifications: J). (I) In sections from the same brains, levels of SOX9 within the VZ are increased upon postmitotic loss of Foxg1, and this is restored to baseline levels upon administration of the inhibitor. (I; quantifications: K). Quantifications of pERK1/2 in each condition: 233 (Control); 248 (NexCre/+; Foxg1lox/lox); 207 (Control+ NVP-BGJ398); 223 (NexCre/+; Foxg1lox/lox+NVP-BGJ398) cells from N = 2 brains (biological replicates from two independent experiments). Quantifications of SOX9 levels in each condition: 233 (Control); 234 (NexCre/+; Foxg1lox/lox); 228 (Control+ NVP-BGJ398); 205 (NexCre/+; Foxg1lox/lox+NVP-BGJ398) cells from N = 3 brains (biological replicates from two independent experiments). Statistical test: Mann–Whitney test (D, E); two-way ANOVA with Tukey’s correction (J, K). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Expression of FGF ligands such as Fgf9, Fgf10, and Fgf18 peaks in the first postnatal week and declines thereafter as seen in Allen Brain Atlas in situ hybridisation data (A; Thompson et al., 2014 and RNA-Seq data from Yuan et al., 2022). (C–E) Deletion of Foxg1 using NexCre results in a reduction of FOXG1 protein expression specifically within the cortical plate (C, D) and an apparent increase in ALDH1L1 staining within the cortical plate (E).
 
 To identify potential gliogenic molecules regulated by FOXG1 in postmitotic neurons, we performed transcriptomic analysis on cortical plate tissue isolated from control and NexCre-driven Foxg1 LOF brains at birth and examined genes encoding secreted factors (Figure 5E, Supplementary file 2). In the Fgf family, Fgf9 transcripts decreased, Fgf10 displayed no change, whereas Fgf18 displayed a 2.5-fold increase (Figure 5E). This ligand has been well characterised to be preferentially expressed in neurons in the postnatal rodent brain (Hoshikawa et al., 2002), displays peak expression in CUX2+ cells in the first postnatal week (Figure 5—figure supplement 1B), and is in the same family as FGF8, which is used to induce gliogenesis (Dinh Duong et al., 2019). We examined nuclear-phosphorylated p42/44-ERK1/2, indicative of FGF signalling and found it to display increased nuclear localisation specifically in the ventricular zone of NexCre/+; Foxg1lox/lox brains (Figure 5H). This indicates a net increase in FGF signalling experienced by the progenitors.
 
@@ -91,11 +131,27 @@ To further confirm whether this enhanced gliogenesis upon postmitotic neuron-spe
 
 Together, these data indicate that FOXG1 regulates signals from postmitotic neurons that non-autonomously trigger a transition to gliogenesis via the FGF-ERK pathway in the progenitors residing in the ventricular zone.
 
-## Attenuation of FGF signalling does not restore neurogenesis in Foxg1 mutant progenitors but causes premature oligogenesis
+### Attenuation of FGF signalling does not restore neurogenesis in Foxg1 mutant progenitors but causes premature oligogenesis
 
 Loss of Foxg1 appears to promote astrogliogenesis via two distinct functions: enhancing FGFR3 expression in progenitors and increasing expression of Fgf18 in postmitotic neurons. We, therefore, tested whether reducing the available FGF ligands may be sufficient to restore neurogenesis in Foxg1 LOF progenitors. We used a construct encoding soluble FGFR3 chelator (sFgfr3c), which has been effectively used by other studies to sequester and limit the availability of FGFs using in utero electroporation (Dinh Duong et al., 2019; Fukuchi-Shimogori and Grove, 2001).
 
 As before (Figure 1), embryos were electroporated at E15.5, and the brains were harvested at P14 and examined for glial markers either common to glial precursor cells (OLIG2) or exclusive to either OPCs (PDGFRA) or astrocytes (ALDH1L1). For two of the conditions, control (Cre electroporation in Foxg1lox/+) and Foxg1 LOF alone (Cre electroporation in Foxg1lox/lox), brains from the same set of experiments presented in Figure 1 were used from which additional sections were examined for OLIG2 and PDGFRA (Figure 6A and B). In controls, the majority of GFP+ cells were neurons that did not express any glial marker (Figures 1, 6A and D). Neurogenesis was significantly reduced upon loss of Foxg1 alone, and there was a corresponding increase in both types of glia (Figure 6B and D). For the new experimental condition, which involves a combined loss of Foxg1 and abrogation of FGF signalling, we co-electroporated Cre with sFgfr3c into Foxg1lox/lox embryos. Strikingly, this condition did not restore neurogenesis but instead shifted the cell fate towards OLIG2+, PDGFRA+, and ALDH1L1— OPCs (Figure 6C and D) Conversely, neurogenesis was enhanced at the expense of gliogenesis when Cre and sFgfr3c were electroporated in Foxg1lox/+; Rosa26FRT-GFP (Control) embryos (Figure 6—figure supplement 1), consistent with previous reports of sFgfr3c overexpression in wild-type brains (Dinh Duong et al., 2019). To verify the functional consequences of FGF signalling, we quantified nuclear phospho-ERK1/2 levels in the different conditions 1 day after electroporation, when the process of cell fate decision would be underway in progenitors. Loss of Foxg1 at E15.5 led to an increase in nuclear localisation of phospho-ERK1/2 by E16.5, and this effect was abrogated by co-electroporation of sFgfr3c (Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Cre electroporation at E15.5 in control (A, Foxg1lox/+; Rosa26FRT-GFP) and Foxg1 LOF (B, Foxg1lox/lox; Rosa26FRT-GFP) embryos, followed by analysis at P14. GFP+ cells in control brains do not colocalise with ALDH1L1, OLIG2, and PDGFRA staining (A), whereas most GFP+ cells in Foxg1 LOF brains display these markers (B). Co-electroporation of Cre together with a construct encoding soluble FGFR3c (an FGF-chelator) in Foxg1lox/lox; Rosa26FRT-GFP causes a significant increase in the co-localisation of GFP+ cells with oligodendrocyte precursor cells (OPCs) markers such as OLIG2 and PDGFRA (C). In each row (A–C), the boxes in the leftmost low magnification panels indicate approximate regions from the same section or serial sections shown in the adjacent high magnification panels. A quantitative analysis reveals a drastic reduction of upper-layer neurogenesis at the expense of gliogenesis (astrocytes + OPCs) upon loss of Foxg1 and an additional increase in the percentage of OPCs with the additional abrogation of FGF signalling (D, D’). n = 4069 (Control), 3970 (Foxg1 LOF), 3332 (Foxg1 LOF+sFgfr3c) from N = 3 brains (biologically independent replicates). Statistical test: two-way ANOVA.with Tukey’s correction *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All scale bars: 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) sFgfr3c+Cre electroporation at E15.5 in Control (A, Foxg1lox/+; Rosa26FRT-GFP) embryos, followed by analysis at P14 (A). 79.9% of GFP+ cells colocalise with NEUN, compared to 67.3% in Controls. 14.55% of GFP+ cells colocalise with ALDH1L1 compared to 16% in Controls. 3.9% of cells colocalise with PDGFRA compared to 17% in Controls (B, C). n = 2000 cells from N = 3 biologically independent experiments. Statistical analysis: Student’s t-test. Scale bars: 50 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Quantification of pERK1/2 levels in E15.5 progenitors examined at E16.5, 1 day post-electroporation, under different conditions: (A, B) Electroporation of Cre in Foxg1lox/lox embryos (B) at E15.5 results in elevated pERK1/2 levels compared to controls (A). This increase is significantly attenuated upon electroporation of Cre+sFGFR3c in Foxg1lox/lox progenitors (C). The intensity quantification is represented in (D). n = 500 cells per condition from N = 2 biologically independent experiments. Statistical analysis: two-way ANOVA with Tukey’s correction. Scale bars: 50 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/101851/elife-101851-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A–C) Foxg1-Egfp+Cre electroporation at E15.5 in Control (A, Foxg1lox/+; Rosa26FRT-GFP) embryos, followed by analysis at P14 (A). 98% of GFP+ cells colocalise with NEUN, compared to 67.3% in Controls. 2% of GFP+ cells colocalise with ALDH1L1 compared to 16% in Controls. 0% of cells colocalise with PDGFRA compared to 17% in Controls (B, C). n = 2000 cells from N = 3 biologically independent experiments. Statistical analysis: Student’s t-test. Scale bars: 50 μm.
 
 These results indicate that upper-layer neurogenesis can neither proceed normally nor be restored by abrogating FGF signalling in the absence of FOXG1. Instead, the progenitors display a premature progression to an OPC fate, which appears to be a permissive cell fate in the context of the combined loss/decrease of FOXG1 and FGF signalling, respectively.
 
@@ -127,7 +183,374 @@ FOXG1 modulates the cell-intrinsic response of progenitors to cell-extrinsic FGF
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Foxg1lox/lox; Rosa26FRT-GFP</td>
+      <td>PMID:22726835</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MADM-12 GT/GT</td>
+      <td>PMID:34161767</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MADM-12 TG/TG</td>
+      <td>PMID:34161767</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>hGFAP-CreERT2</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain No.: 012849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ai9</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain No.: 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>NexCre/+ (Neurod6-Cre)</td>
+      <td>PMID:17146780</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCAGG-IRES-eGFP</td>
+      <td>PMID:22726835</td>
+      <td></td>
+      <td>Gift from Prof. Gord Fishell</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCAGG-IRES-FOXG1-EGFP</td>
+      <td>PMID:22726835</td>
+      <td></td>
+      <td>Gift from Prof. Gord Fishell</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCAGG-FGF8</td>
+      <td>PMID:31175212</td>
+      <td></td>
+      <td>Gift from Prof. Hiroshi Kawasaki</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pCAGG-sFGFR3c</td>
+      <td>PMID:31175212</td>
+      <td></td>
+      <td>Gift from Prof. Hiroshi Kawasaki</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated GFP (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab6658</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NEUN (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: 702022</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ALDH1L1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab87117</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OLIG2 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Catalog number: AB9610</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX9 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab185230</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KI67 (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: MA5-14520</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RFP (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: MA5-15257</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho p42/44 MAPK (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 4370S</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FGFR3 (rabbit polyclonal)</td>
+      <td>Affinity Biosciences</td>
+      <td>Catalog number: AF0160</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NF1A (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab228897</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PAX6 (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: MA1-109</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EOMES (rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: 14-4875-82</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX2 (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: MA1-014</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD140a (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Catalog number: 558774</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FOXG1 (rabbit polyclonal)</td>
+      <td>TakaraBio</td>
+      <td>Catalog number: M227</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A11011</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin Alexa 488 Conjugate Dye</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: S32354</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit 647 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A31573</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A11004</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat 647 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A21247</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat 568 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A11077</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: A11034</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FlashTag</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>SKU C34554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HBSS without calcium/magnesium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: 14170112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HBSS with calcium/magnesium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: 14025092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>0.25% Trypsin</td>
+      <td>Thermo Fisher Scientific Gibco</td>
+      <td>Catalog number: 15400054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corn oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog number: 8267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton-X100</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS No.: 9036-19-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog number:T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NVP-BGJ398</td>
+      <td>MedChemExpress</td>
+      <td>Catalog number: HY-13311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics</td>
+      <td>Other</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>PMID:31375807</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID:25516281</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Shiny GO</td>
+      <td>PMID:31882993</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SRA Toolkit</td>
+      <td>SRA Toolkit Development Team</td>
+      <td>Other</td>
+      <td>https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>PMID:22388286</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Homer</td>
+      <td>PMID:20513432</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTools</td>
+      <td>PMID:20110278</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV</td>
+      <td>PMID:21221095</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All procedures followed the Tata Institute of Fundamental Research Animal Ethics Committee (TIFR-IAEC) guidelines (IAEC approval no.: TIFR/IAEC/2022-3).
 
@@ -137,38 +560,38 @@ All animals were kept at an ambient temperature and humidity, with a 12-hour lig
 
 Primers for genotyping were (expected band sizes):
 
-## In utero electroporation
+### In utero electroporation
 
 In utero electroporation was performed as previously described (Pal et al., 2021). Embryos were injected with 1–2 μL of plasmid DNA solution dissolved in nuclease-free water with 0.1% fast green with plasmid DNA into the lateral ventricle through the uterine wall using a fine glass microcapillary (Sutter capillaries #B100-75-10). Constructs pCAGG-IRES-eGFP and pCAGG-IRES-FOXG1-EGFP were gifts from Gord Fishell, Harvard Medical School. pCAGG-FGF8 and pCAGG-sFGFR3c were gifts from Hiroshi Kawasaki, Kanazawa University.
 
-## Tissue preparation
+### Tissue preparation
 
 Embryos were isolated in ice-cold PBS. Embryonic brains were dissected and fixed overnight in 4% (wt/vol) paraformaldehyde at 4°C overnight and then cryoprotected by transferring to 30% (wt/vol) sucrose-PBS until sectioning. Postnatal mice were anaesthetised using thiopentone and transcardially perfused with 4% (wt/vol) paraformaldehyde in phosphate buffer, followed by overnight fixation and then cryoprotected by transferring to 30% sucrose-PBS until sectioning. The brains were sectioned at 30 μm and 40 μm for MADM using a freezing microtome (Leica SM2000R).
 
-## FGF inhibitor administration and analysis
+### FGF inhibitor administration and analysis
 
 We used the FGFR inhibitor NVP-BGJ398, a selective inhibitor of FGF receptors 1, 2, and 3 for blocking FGF signalling (Guagnano et al., 2011). Pregnant dams were administered NVP-BGJ398 (10 mg/kg body weight in DMSO and corn oil; MedChemExpress, Catalog number: HY-13311) or vehicle solution (corn oil) by intraperitoneal injection twice a day from E14.5 to E17.5, eight treatments in total.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Brains were sectioned (30 μm), mounted on Superfrost plus glass microscope slides (Catalog number: 71869-10), and dried for 2 hours at room temperature (RT). Three washes were given for 5 minutes each (3 * 5′) in phosphate buffer. All antibodies except FGFR3 and PDGFRα required antigen retrieval at 90–95°C in 10 mM sodium citrate buffer (pH 6.0) for 10 minutes. Sections were immersed in blocking solution (5% [vol/vol] horse serum in phosphate buffer with 0.1% [vol/vol] Triton X-100 [Sigma; X100]) for 1 hour at RT. Incubation with primary antibody was performed in phosphate buffer containing 0.1% (vol/vol) Triton X-100 and 2.5% (vol/vol) horse serum at 4°C overnight. For postnatal brain sections, free-floating immunohistochemistry was performed. Sections were given three washes for 5 minutes each (3 * 5′) in phosphate buffer and then permeabilised with phosphate buffer containing 0.3% (vol/vol) Triton X-100 for 10 minutes. Blocking was done with 5% (vol/vol) horse serum in phosphate buffer with 0.3% (vol/vol) Triton X-100 for 1 hour at RT. This was followed by primary antibody treatment in phosphate buffer containing 0.3% (vol/vol) Triton X-100 and 2.5% (vol/vol) horse serum overnight at 4°C. The sections were washed in phosphate buffer, followed by the appropriate secondary antibody for 2 hours at RT.
 
 This was followed by three washes for 5 minutes each (3 * 5′) in phosphate buffer and DAPI staining for 10 minutes, after which the sections were washed with phosphate buffer for 15 minutes (3 * 5′). The slides were then mounted with Fluoroshield (Sigma Catalog number: F6057 or F6182). Please refer to the Key Resources Table for detailed information on antibodies.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Fluorescence images were taken using an Olympus FluoView 3000 confocal microscope with FluoView software. All the image analysis was done on Fiji-ImageJ. A nonlinear operation such as gamma correction was not performed in the figures. Brightness and contrast adjustments were performed identically for control and mutant conditions. Cell counting was performed using the Cell Counter plugin in Fiji.
 
 Intensity quantifications for Phospho-p42/44-ERK1/2 and SOX9 were done by imaging Control and mutant samples at the same laser, gain and offset settings on the Olympus FV3000 confocal microscope. Images were stacked based on one-cell thickness stacks, that is, approximately 5 μm. Intensity quantification was done by drawing regions of interest (ROIs) around the nuclei using DAPI or SOX2, followed by intensity quantification of Phospho-p42/44-ERK1/2 or SOX9 and calculating mean intensity per unit ROI.
 
-## Histone and FOXG1 ChIP-seq analysis
+### Histone and FOXG1 ChIP-seq analysis
 
 FASTQ files deposited by previously published manuscripts (Liu et al., 2017; Cargnin et al., 2018) were obtained using SRA Toolkit’s fastq-dump command and aligned to mouse reference genome mm10 using Bowtie2 (Langmead and Salzberg, 2012). Peak calling and annotation were performed using Homer using default options and command style “-histone” for the H3K27Me3 and H3K4Me3 datasets. For the FOXG1 ChIP-seq analysis, peaks were called using all “-style” options and only the top 50% peaks called were considered for further analysis for all the ChIP-seq datasets. Peaks were intersected using BEDTools software Quinlan and Hall, 2010 and annotated using Homer (Heinz et al., 2010) annotatePeaks.pl function, and genome view plots were created using IGV (Robinson et al., 2011).
 
-## Fluorescence-assisted cell sorting
+### Fluorescence-assisted cell sorting
 
 Foxg1 mutant cells were obtained by administering tamoxifen (Catalog number: T5648) prepared in corn oil (Sigma; Catalog number: 8267) to E15.5 hGFAP-CreERT2; Foxg1lox/lox; Ai9 dams, at 40 μg/g body weight dose and FACS-isolated using the Ai9 reporter at E17.5. We used FlashTag-labelled (Thermo Fisher Scientific SKU C34554) progenitors at E15.5 for controls and collected the cells at E17.5. Cortical tissue was dissected in HBSS without calcium/magnesium (Thermo Fisher Scientific Catalogue number: 14170112), and a single-cell suspension was prepared in HBSS with calcium/magnesium (Thermo Fisher Scientific Catalogue number: 14025092) using 0.25% Trysin (Thermo Fisher Scientific Gibco Catalogue number: 15400054) and 70 um cell strainer. FACS was performed using BD Aria Fusion (BD Biosciences) with the 568 and 488 lasers using an 85 μm nozzle. Singlets were selected using forward scatter and side scatter. Cells were selected for collection based on their RFP signal (Mutant) or GFP signal (Control).
 
-## RNA seq: Sample preparation and analysis
+### RNA seq: Sample preparation and analysis
 
 Cells obtained from FACS were stored in RNAlater until extraction. 400,000 cells were pooled from at least two brains to obtain a biological replicate. RNA extraction and sequencing were performed on three control replicates and four Foxg1 mutant replicate cell suspensions. 1 ug of RNA was used to obtain the cDNA library, and sequencing was performed on an Illumina platform to achieve 150  bp reads to generate 30 million paired-end reads per sample. Fastq QC was performed as described in https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ and reads >30 Phred scores were aligned using HISAT2 (Kim et al., 2019). Feature counts were used to quantify the number of reads per transcript. Differential expression analysis was performed using DESeq2 (Love et al., 2014). A log2FoldChange cutoff of 0.58 and p-value <0.05 was used to identify DEGs. GO analysis was performed using Shiny GO (Ge et al., 2020). Genes described as Astrocyte-enriched were obtained from Telley et al., 2019.

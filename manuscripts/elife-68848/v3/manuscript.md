@@ -42,15 +42,35 @@ We demonstrate that the motor state encoding in AIY represents a CD signal from 
 
 ## Results
 
-## Forward movements are sustained across thermal fluctuations during positive thermotaxis
+### Forward movements are sustained across thermal fluctuations during positive thermotaxis
 
 C. elegans navigates towards temperatures that correspond to prior thermal experience. To evoke positive thermotaxis, we placed young adults cultivated at 25°C on a linear thermal gradient spanning 19–23°C (Figure 1). Consistent with earlier reports, these animals exhibited biased random walk and klinotaxis towards warmer temperatures (Figure 1B; Luo et al., 2014a; Yamaguchi et al., 2018): runs that pointed in favorable directions were lengthened (Figure 1B); forward heading angles gradually reoriented towards temperatures that correspond to prior experience (Figure 1B). Without a temperature gradient, there was no evident modulation of either run length or heading angle (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig1-v3.jpg)
+
+**Figure 1.:** (A) Example trajectories of wild-type C. elegans cultivated at 25°C migrating up a linear temperature gradient over 20 min. Top: schematics of the thermal gradient. Middle: trajectories of 49 animals during positive thermotaxis. The starting points of all trajectories are aligned (yellow dot) and the end points are marked by magenta dots. Bottom: a histogram of the final location of animals. (B) Left column: duration of forward runs as a function of their overall direction (vector pointing from the starting point to the end point of the run). Right column: instantaneous velocity during forward runs as a function of the instantaneous heading angle. Top row: data from animals exposed to spatial thermal gradients (top, N = 140). Bottom row: data from animals under constant temperature surfaces (bottom, N = 73). (C) Thermotaxis trajectory of a single animal during thermotaxis with alternating periods of forward movement and reversals (left), and the instantaneous heading angle over time during one extended period of forward movement within the trajectory (right). Asterisks denote periods where the heading direction pointed down the thermal gradient. (D) Histogram of temporal changes in temperature ($d⁢T/d⁢t$) experienced by animals during forward runs that ended up pointing up the temperature gradient. Data from N = 140 wild-type animals exposed to linear thermal gradient and N = 73 wild-type animals exposed to constant temperature of 21°C. Error bars are standard errors of the mean (s.e.m.).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (Top) Distribution of the number of cooling epochs experienced during forward runs. Cooling epochs that occurred at the beginning or the end of forward runs were excluded. Same analysis carried out for cooling epochs where instantaneous temperature change was lower than −0.001°C (middle) or −0.005° (bottom) throughout the epoch. (B) Distribution of the duration of mid-run cooling epochs. (C) Distribution of the total drop in temperature experienced during mid-run cooling epochs. Data from N = 140 wild-type animals exposed to linear thermal gradients shown in Figure 1A.
+
 Individual trajectories during positive thermotaxis revealed periods of forward movement that carry the animal up the temperature gradient. Although these periods of forward movement are persistent in duration, they are not always persistent in direction (Figure 1C, Figure 1—figure supplement 1). C. elegans experiences temporal changes in temperature on spatial gradients because of its own movements. Most runs – even those that orient the animal towards warmer temperatures – will involve periods of both warming and cooling stimuli because of frequent changes in movement direction (Figure 1D, Figure 1—figure supplement 1). Thus, C. elegans reveals an ability to sustain forward movement up temperature gradients despite transient cooling fluctuations.
 
-## Thermosensory representation in AIY is gated by the motor state
+### Thermosensory representation in AIY is gated by the motor state
 
 To uncover circuit mechanisms for sustaining forward movement against thermal fluctuations, we simultaneously imaged the calcium activity across a group of neurons involved in thermosensory processing, locomotory control, or both. These include the principal thermosensory neuron AFD, its primary postsynaptic partner AIY, the premotor interneuron AVA, the left-right pair of the head motor neurons RME, SMDV, and SMDD, and the RIM interneuron that extensively connects with premotor interneurons and motor neurons (Figure 2A, B). To measure locomotory behavior while minimizing motion artifact, we performed imaging in semi-constrained animals that exhibited sinusoidal movements akin to those observed in free-moving animals (Figure 2—figure supplement 1, also see Materials and methods). This approach allowed us to simultaneously examine the encoding of thermosensory and motor information in the same neurons.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig2-v3.jpg)
+
+**Figure 2.:** (A) Anatomical connections among neurons implicated in positive thermotaxis, locomotory control, or both. Connectivity is inferred from both the original C. elegans connectome (White et al., 1986) and a recent reconstruction of the connectome across the developmental time course (Witvliet et al., 2020) (see http://www.nemanode.org) (B) Example maximum projection of a confocal z-stack taken from a transgenic animal expressing GCaMP6s and mCherry in neurons examined in this study. (C) Example ratiometric calcium activity trace (left panel) and histogram (right panel) of the thermosensory neuron AFD in response to oscillating temperature. (D) Average cross-correlation function between thermal stimuli and AFD activity during forward run (green) or reversal (red) states. N = 5 wild-type animals. (E) Simultaneously measured calcium activity of interneurons and motor neurons involved in thermosensory processing and/or motor control. The activity traces (left) and activity histograms (middle) are from the same sample dataset. (F) Average cross-correlation functions between the thermal stimuli and individual neurons shown in (E), conditioned on the animal in forward run (green) or reversal (red) states. N = 6 wild-type animals. Error bars are 95% CI of the mean. Wilcoxon rank-sum test was used to compare the peak mean cross-correlation values during forward runs (green) versus reversals (red). *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05. (G) Thermal stimulus-triggered activity of the AIY interneuron during forward runs (left column) and reversals (right column) in wild-type animals (N = 5). Individual stimulus epochs from the same neuron under the given motor state were concatenated into heat maps, with the average calcium activity trace shown on top. (H) Simultaneous recording of the activity of interneurons and motor neurons under constant temperature. The histograms on the right are derived from the sample activity traces to the left. (I) Pairwise cross-correlation functions among neurons examined in (E) and (H) under oscillating (orange, N = 6) or constant temperature (blue, N = 7). Error bars are standard errors of the mean (s.e.m.). Wilcoxon rank-sum test was used to compare the peak mean cross-correlation values between data under oscillating temperature versus data under constant temperature. *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) Annotating forward runs and reversals in a free-moving animal. (A) Top: locomotory state can be read out either by directly measuring the axial velocity (i.e., velocity projected onto the animal’s body axis) of a landmark object (in this care, the AIY neurite, black trace) or by computing the cross-correlation of the radial velocities (i.e., component of the velocity orthogonal to the body axis) of two landmark objects located along the A-P axis (e.g., the AIY neurite [blue trace] and the more posterior AIY soma [red trace]), as illustrated in (C, D). (B) Calcium activity extracted from AIY neurite (blue trace) from the same recording as in (A), overlaid on its axial velocity (red trace, same as in A). (C) Cross-correlation functions corresponding to the forward run epoch (left panel) and the reversal epoch (right panel) marked with asterisks in (A). During the forward run, the measured velocity of the AIY neurite precedes that of the AIY soma; the opposite is true during reversal. (D) Average cross-correlation function between AIY calcium activity and the axial velocity of the AIY neurite, exhibiting positive correlation. Data are from N = 3 wild-type animals. (E–G) Annotating forward run and reversal states in a semi-constrained animal. (E) The axial velocity of the AIY neurite (black trace) and the radial velocities of the AIY neurite (blue) and the AIY soma (red). (F) Calcium activity extracted from AIY neurite (blue trace) from the same recording as in (A), overlaid on its axial velocity (red trace, same as in A). (G) Cross-correlation functions corresponding to forward run epoch (left panel) and reversal epoch (right panel) marked with asterisks in (E), with similar patterns as seen in (C). (H) Cross-correlation function between AIY calcium activity and the axial velocity of the AIY neurite, exhibiting positive correlation. Data are from N = 5 wild-type animals.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Violin plots showing the distribution of changes in AIY activity in response to warming (left) or cooling (right) stimuli under forward run or reversal state in wild-type animals. Dotted black lines indicate the threshold values used to calculate the response probability in (B). (B) Probability that the magnitude of change in AIY activity upon warming or cooling is above the defined thresholds. See Materials and methods for details. For (A) and (B), data are from N = 5 wild-type animals.
 
 First, we measured the activity of the AFD thermosensory neuron and AIY, its principal postsynaptic partner, by calcium imaging in moving animals. Subjected to oscillating temperatures below the preferred temperature, C. elegans exhibits positive thermotaxis. As previously reported (Clark et al., 2006), AFD’s activity phase locks to periodic variations in temperatures, rising upon warming and falling upon cooling (Figure 2C, D). AFD activity did not covary with transitions between forward run and reversal states (Figure 2C), indicating that motor commands arise downstream of the thermosensory neuron.
 
@@ -60,9 +80,21 @@ Unlike AFD and AIY, all motor circuit neurons that we examined exhibited little 
 
 To elucidate which of these activity patterns are driven by thermosensory inputs, we next measured the activity of these neurons under constant temperature (Figure 2H). We found that the activity of all six neurons continued to be modulated by locomotory state in the same way as when exposed to oscillating temperature. Furthermore, the pairwise cross-correlation between neurons remained the same under both oscillatory and constant temperature (Figure 2I). Specifically, AIY and RME were positively correlated with one another and were anti-correlated with AVA. The head motor neurons SMDD and SMDV were strongly anti-correlated with one another, consistent with previous reports (Hendricks et al., 2012). Both SMDD and SMDV were positively correlated with RME and AIY, consistent with their role in controlling head oscillations during forward locomotion (Pirri et al., 2009). These observations indicate that the widespread encoding of motor state in neurons downstream of AFD does not require thermosensory input and may instead reflect an intrinsic circuit property.
 
-## Motor coding in AIY is a CD signal that requires RIM
+### Motor coding in AIY is a CD signal that requires RIM
 
 Our finding that AIY encodes thermal information in a manner that depends on motor state suggests a critical role in sensorimotor transformations during positive thermotaxis. In animals exposed to either constant or oscillating temperatures, AIY activity consistently rises at the beginning of forward runs and decays at the onset of reversals (Figure 3A, B). Moreover, AIY exhibited persistent activation, the duration of which coincided reliably with that of the forward run state (Figure 3—figure supplement 1). How does AIY, a first-order interneuron, acquire a robust motor signal?
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig3-v3.jpg)
+
+**Figure 3.:** (A, B) Calcium activity of the AIY interneuron aligned to the onset of forward runs (left column) or reversals (right column) in animals exposed to oscillating temperature (A, N = 6) or constant temperature (B, N = 5). Each row of the heat plots represents AIY calcium activity during a single behavioral epoch. The curve on top of each panel represents activity dynamics averaged across individual epochs. Broken lines indicate the onset and offset of each behavior epochs. (C) Calcium activity of the AIY interneuron aligned to the onset of forward runs or reversals in animals expressing tetanus toxin (TeTx) specifically in AIY (N = 4). (D) Calcium activity of AIY aligned to onset or offset of AVA activation in animals immobilized by the cholinergic agonist levamisole (N = 4). The ON and OFF states of AVA activity are defined by binarizing AVA activity using the Otsu method. See Materials and methods for details. (E) Change in AIY activity before versus. after the onset of forward runs (green) or reversals (red) for datasets shown in (A) and (B). Wilcoxon Signed rank test was used to test if the change in AIY activity has a median significantly different from zero, *p<0.05; **p<0.01; ***p<0.001; n.s., non-significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Definition of the AIY ON state. (A) Example histogram (left) and time-series trace (right) of AIY activity under oscillating temperature. Solid curve is derived by fitting the distribution with a Gaussian mixture model with three components. Dotted orange lines in both plots indicate the local minimum between the centers of the first two components of the Gaussian mixture model. Activity above the dotted orange line is classified as the ON state. (B) Same analyses as in (A) on a sample AIY activity trace measured under constant temperature. Activity above the dotted orange line is classified as the ON state. (C) The duration of the forward run state exhibits positive correlation with the duration of the AIY ON state under both oscillating and constant temperature. (D) Time lag between the onset of AIY ON states and the onset of forward runs for data collected under oscillating (orange) or constant (blue) temperatures. Positive values indicate that the AIY ON state followed the onset of the forward run.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Simultaneously measured calcium activity in AIY and neurons of the motor circuit in an animal pharmacologically immobilized by levamisole. (B) Cross-correlation functions between the activity of AIY and that of simultaneously measured interneurons and motor neurons. (C) Average pairwise cross-correlation functions among neurons in wild-type animals under semi-constrained (blue) and pharmacologically immobilized (red) preparations. Data are from N = 4 wild-type animals. Error bars are standard errors of the mean (s.e.m.). Wilcoxon rank-sum test was used to compare the peak mean cross-correlation values between data under oscillating temperature versus data under constant temperature. *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05.
 
 Because AIY has an established role in promoting forward locomotion, we first tested whether motor representation in AIY arises due to feedforward output from AIY to the downstream circuit. We imaged AIY activity after blocking vesicle release from AIY through cell-specific expression of tetanus toxin (TeTx) (Figure 3C). Despite the lack of synaptic and dense-core-vesicle-dependent chemical release (Whim et al., 1997), AIY activity remained strongly coupled to the motor state, implying that AIY must receive the motor state signal.
 
@@ -70,17 +102,37 @@ We explored the possibility that proprioception, elicited by movement itself, un
 
 We next asked whether AIY receives CD from neurons that encode the motor command. We imaged AIY activity in moving animals upon ablation of AIY’s downstream interneurons and premotor interneurons (Figure 4A). For interneurons, we focused on AIB and RIM. AIB shares electrical synapses with RIM and the AFD thermosensory neuron (White et al., 1986). In the context of chemotaxis, AIB and RIM have been shown to regulate variability in the neuronal and behavioral response to olfactory inputs (Gordus et al., 2015). We also tested AVA and AVB, premotor interneurons that regulate reversal and forward movement, respectively. Ablations were performed by expressing flavoprotein miniSOG, which induces acute functional loss and neuronal death by photoactivation (Qi et al., 2012).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig4-v3.jpg)
+
+**Figure 4.:** (A) Change in AIY activity before versus. after the onset of forward runs (green) or reversals (red) in animals where candidate neurons for relaying the CD signal have been ablated. Data are from RIM-ablated animals (N = 9); AIB-ablated animals (N = 3); AVB-ablated animals (N = 4); AVA-ablated animals (N = 4); and AVA/AVE/RIM (nmr-1::miniSOG)-ablated animals (N = 4). Error bars are 95% CI. Wilcoxon rank-sum test was used to test if the distributions of AIY activity before and after the onset of motor states have the same median: *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05. (B) AIY activity aligned to the onset of forward runs (left column) or reversals (right column) in the animals where neurons RIM (upper panels, N = 9) or AIB (lower panels, N = 3) have been genetically ablated. (C) AIY activity in response to optogenetic stimulation of the AVB premotor interneurons in wild-type animals grown on all-trans retinal (ATR) (top, N = 5), RIM-ablated animals grown on ATR (N = 6), and wild-type animals grown without ATR (N = 3). (D) Top: AIY activity 2.5 s before (pre-stimulus) versus 2.5 s at the end of the AVB opto-stimulation (post-stimulus) under experimental conditions shown in (D). Bottom: average change in AIY activity pre-and post-stimulation under experimental conditions shown (D). Trials are sorted into three groups based on pre-stimulation AIY activity. Same datasets as in (C). (E) AIY activity in response to optogenetic stimulation of the AVA premotor interneurons in wild-type animals grown on ATR (top, N = 4), RIM-ablated animals grown on ATR (middle, N = 5), and wild-type animals grown without ATR (bottom, N = 5). (F) Top: AIY activity 2.5 s before (pre-stimulus) versus 2.5 s at the end of the AVA opto-stimulation (post-stimulus) under experimental conditions shown in (E). Bottom: average change in AIY activity pre- and post-stimulation under experimental conditions shown in (E). Trials are sorted into three groups based on pre-stimulation AIY activity. Same datasets as in (E). For (E) and (F), error bars are 95% CI; Wilcoxon signed-rank test was used to test if the average post-stimulation change in AIY activity was significantly different from 0. *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) AIY activity aligned to the onset of forward runs (left column) or reversals (right column) in the animals where the AVA interneurons have been genetically ablated (N = 4). (B) AIY activity aligned to the onset of forward runs (left column) or reversals (right column) in the animals where the AVB interneurons have been genetically ablated (N = 4). (C) AIY activity aligned to the onset of forward runs (left column) or reversals (right column) in the animals where multiple premotor interneurons (AVA, AVE, AVD, and PVC) and the RIM neurons have been genetically ablated (N = 9).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) AIY activity aligned to the onset of forward runs (left column) or reversals (right column) in VGLUT3/eat-4(ky5) mutants (N = 3); VMAT/cat-1(e1111) mutants (N = 3); GAD/unc-25(e156) mutants (N = 3); CAPS/unc-31(e69) mutants (N = 3); TDC/tdc-1(n3420) mutants (N = 4); transgenic animals expressing tetanus toxin (TeTx) specifically in the RIM and RIC neurons (N = 4). (B) Quantification of motor-related activity in AIY in mutants and transgenic animals presented in (A). Significance in comparison to wild-type and to RIM-ablated animals is presented side by side on top of each bar. Error bars are 95% CI. Wilcoxon rank-sum test, n.s., non-significant, *p<0.05; **p<0.01; ***p<0.001.
+
 We found that ablating AIB did not abolish the motor state representation in AIY (Figure 4A, B). Neither did the removal of the premotor interneurons AVA or AVB alone (Figure 4A, Figure 4—figure supplement 1A, B). However, AIY lost its motor state representation when we ablated RIM either by itself or in combination with other premotor interneurons (Figure 4A, B, Figure 4—figure supplement 1C).
 
 RIM activity has been shown to be correlated with the AVA premotor interneuron that promotes reversals and anti-correlated with the AVB premotor interneuron that promotes forward runs (Kawano et al., 2011; Gordus et al., 2015; Kato et al., 2015). RIM has been shown to promote long reversals (Gray et al., 2005) and to suppress head oscillations during reversals (Alkema et al., 2005). A recent study demonstrated that RIM also promotes the stability of forward runs when hyperpolarized (Sordillo et al., 2021). To probe whether RIM is required for the motor state signal to appear in AIY, we optogenetically activated either AVA or AVB while simultaneously measuring AIY calcium activity in immobilized animals. Activation of AVB using the light-gated opsin chrimson triggered an increase in AIY calcium levels (Figure 4C, D). Activation of AVA (Klapoetke et al., 2014) triggered a decrease in AIY calcium levels (Figure 4E, F). When RIM was ablated, AIY calcium signals no longer responded to optogenetic activation of either AVA or AVB, suggesting that RIM is part of the CD pathway from the motor circuit to AIY. Without RIM, AIY activity no longer reflected or depended on the motor state, but the premotor interneurons AVA continued to encode the backward and forward movement, albeit with reduced bimodal activity (Figure 5A, C). Thus, RIM is not essential for generating motor commands, but is necessary to relay motor information to AIY, a first-layer interneuron.
 
-## RIM-mediated CD does not depend on chemical synaptic transmission
+![Figure 5.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig5-v3.jpg)
+
+**Figure 5.:** (A) Simultaneously measured activity of AIY and neurons of the motor circuit in RIM-ablated animals under oscillating temperature. Middle panels show histograms of neuron activity during forward runs (green) or reversals (red) for the dataset to the left. Right panels show average cross-correlograms between neural activity and thermal stimuli during forward runs and reversals across RIM-ablated animals (N = 3). Error bars are 95% CI of the mean. Wilcoxon rank-sum test was used to compare the peak mean cross-correlation values during forward runs (green) versus reversals (red). *p<0.05; **p<0.01; ***p<0.001; no asterisk p>0.05. (B) Thermal stimulus-triggered activity of the AIY interneuron during forward runs (left column) and reversals (right column) in RIM-ablated animals (N = 3). Individual stimulus epochs from the same neuron under the given motor state were concatenated into heat maps, with the average activity trace shown on top. (C) Simultaneously measured activity of AIY and neurons of the motor circuit in RIM-ablated animals under constant temperature (left). Right panels show histograms of neuron activity during forward runs (green) or reversals (red). (D) Violin plots showing the distribution of changes in AIY activity in response to warming (left) or cooling (right) stimuli under forward run or reversal state in wild-type and RIM-ablated animals. Dotted black lines indicate threshold values used to calculate the response probability in (E). (E) Probability that the magnitude of change in AIY activity upon warming or cooling is above defined thresholds in wild-type or RIM-ablated animals. See Materials and methods for details. For (D) and (E), N = 5 wild-type animals and N = 3 RIM-ablated animals. Error bars are 95% CI of the mean. Wilcoxon rank-sum test *p<0.05; **p<0.01; ***p<0.001; n.s., non-significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top: example histogram (left) and time-series trace (right) of AIY activity under oscillating temperature. Solid curve is derived by fitting the distribution with a Gaussian mixture model with three components. Dotted orange lines in both plots indicate the local minimum between the centers of the first two components of the Gaussian mixture model. Activity above the dotted orange line is classified as the ON state. See Materials and methods for details. Bottom: same analyses as in (A) on a sample AIY activity trace measured under constant temperature. Activity above the dotted orange line is classified as the ON state. (B) Violin plot showing the distributions of the duration of AIY ON states in wild-type versus RIM-ablated animals under oscillating and constant temperature. Data are from: N = 5 wild-type animals under oscillating temperature, N = 6 wild-type animals under constant temperature, N = 3 RIM-ablated animals under oscillating temperature, and N = 4 RIM-ablated animals under constant temperature. Wilcoxon rank-sum test *p<0.05; **p<0.01; ***p<0.001; n.s., non-significant.
+
+### RIM-mediated CD does not depend on chemical synaptic transmission
 
 We sought synaptic mechanisms by which RIM may contribute to the CD pathway. RIM expresses VGLUT3/EAT-4, indicating the potential involvement of glutamatergic synaptic transmission (Serrano-Saiz et al., 2013). RIM also synthesizes tyramine, a monoamine neuromodulator (Alkema et al., 2005). We thus imaged AIY activity in loss-of-function mutants for glutamatergic signaling (VGLUT3/eat-4), tyramine synthesis (TDC/tdc-1), vesicular monoamine transport (VMAT/cat-1), and peptidergic signaling (CAPS/unc-31). AIY activity co-varied with the motor state in all mutants, but the difference in AIY activity between the forward run and reversal states was less distinct in mutants defective for vesicular monoamine transport (VMAT/cat-1) or tyramine synthesis (TDC/tdc-1) (Figure 4—figure supplement 2A, B). Blocking vesicle fusion in RIM by expressing TeTx (Ptdc-1::TeTx) also attenuated the motor state representation in AIY (Figure 4—figure supplement 2A, B).
 
 Since perturbation of chemical synaptic transmission did not fully abolish motor-related activity in AIY, neuronal communication that is independent of classic chemical synaptic transmission is likely involved in relaying CD to AIY. As previously reported (Kawano et al., 2011; Kato et al., 2015; Gordus et al., 2015), RIM activity is strongly correlated with the AVA premotor interneuron, higher during reversals and lower during forward movement. AIY, on the other hand, exhibits increased activity during forward movement (Figure 3). This sign reversal may be explained by an inhibitory input from RIM to AIY. Alternatively, RIM may play a permissive role in allowing the motor-related feedback to AIY. Taken together, our results suggest that the joint representation of sensory and motor signals in AIY arises from separate sources: feedforward input from AFD and feedback from the motor circuit that is dependent on RIM.
 
-## RIM-dependent CD promotes persistent forward states and more effective thermotaxis
+### RIM-dependent CD promotes persistent forward states and more effective thermotaxis
 
 RIM plays a critical role in the motor state-dependent modulation of AIY calcium activity. This prompted us to examine the effect of disrupting the CD signal on sensorimotor transformations. When RIM-ablated animals were subjected to oscillating temperatures, AIY activity was no longer coupled to the motor state, but instead reliably tracked temperature fluctuations during both forward and backward movements (Figure 5A, B, Figure 5—figure supplement 1A, B, Figure 5—video 1). Under oscillating temperature, the average duration of AIY activation was shortened compared to wild type, though no significant difference was observed under constant temperature (Figure 5D).
 
@@ -88,15 +140,23 @@ When RIM was ablated, we were also able to detect the representation of thermose
 
 We tested this hypothesis by examining the effect of RIM ablation on positive thermotaxis (Figure 6A, Figure 6—figure supplement 1A). Compared to wild-type animals, RIM-ablated animals exhibited an overall reduction in thermotaxis bias (Figure 6B). These animals were specifically defective in their ability to sustain forward locomotion when moving up the thermal gradient, while their ability to gradually modify heading angle during a forward run remained intact (Figure 6C, Figure 6—figure supplement 1A). At constant temperature, run durations are similar between wild-type and RIM-ablated animals (Figure 6—figure supplement 1B). Thus, the loss of RIM specifically disrupted the animal's ability to sustain forward runs up temperature gradients.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig6-v3.jpg)
+
+**Figure 6.:** (A) Example trajectories of RIM-ablated animals (N = 39) cultivated at 25°C and exposed to the same thermal gradient as in Figure 1A. Top: schematic of the thermal gradient. Middle: trajectories of individual animals during positive thermotaxis. The starting points of all trajectories are aligned (yellow dot) and the end points are marked by magenta dots. Bottom: a histogram of the final location of the animals at the end of the 20 min period. (B) Average thermotactic bias of wild-type (N = 140) versus RIM-ablated animals (N = 102). (C) Forward run duration as a function of forward run direction in RIM-ablated animals (blue) compared to the wild type (gray). Error bars are standard errors of the mean (s.e.m.). Wilcoxon rank-sum test was used to compare the run duration of wild-type versus RIM-ablated animals. p<*0.05, **0.01, ***0.001, p>0.05 (non-significant) for panels without asterisk. (D) Velocity profiles of wild-type (left) and RIM-ablated (right) animals aligned to the end of cooling epochs that occurred during forward runs. Heat maps are generated by concatenating velocity profiles from individual cooling epochs along the y-axis and sorting by the average velocity within the first 2 s after the offset of cooling epochs (shown as line plot to the right). Black dotted lines divide instances in which forward runs continued past the offset of cooling epochs from instances where reversals ensued within the first 2 min of cooling offset. (E) Histograms of post-cooling velocities in wild-type (top) and RIM-ablated animals (bottom). Analysis applied to same dataset as in (D). (F) Fraction of cooling epochs that were followed by transition from forward runs to reversals as a function of the duration of cooling epochs (orange: wild type, gray: RIM ablated).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Average angular velocity of wild-type (blue) and RIM-ablated (gray) animals as a function of their instantaneous heading angle. (B) Average forward run durations as a function of overall run direction in wild-type (blue) and RIM-ablated (gray) animals. Error bars are standard errors of the mean (s.e.m.). Wilcoxon rank-sum test was used to draw comparisons between wild-type and RIM-ablated animals. p<*0.05, **0.01, ***0.001, p>0.05 (non-significant) for panels without asterisk. (C) Instantaneous thermal variations experienced by wild-type (left) and RIM-ablated (right) animals aligned to the offset of forward runs. Heat maps are generated by concatenating $d⁢T/d⁢t$ time series along the y-axis and sorting by the average $d⁢T/d⁢t$ values within the last 2 s before the offset of forward runs (shown as line plot to the right). Black dotted lines divide instances in which forward runs ended after a period of warming from cases where runs ended after a period of cooling. (D) Histograms of $d⁢T/d⁢t$ values within the last 2 min before the end of forward runs in wild-type (top) and RIM-ablated animals (bottom). Analysis applied to same dataset as in (C). (E) Fraction of forward runs that ended after cooling as a function of the overall duration of the forward run (orange: wild type, gray: RIM ablated).
+
 If RIM-dependent motor feedback serves to filter out transient thermal fluctuations during positive thermotaxis, then loss of RIM should render the forward run state more susceptible to thermal variations. To test this prediction, we analyzed how periods of cooling affected the forward run state in wild-type and RIM-ablated animals (Figure 6D–F). Overall, cooling induced reversals at a higher probability in RIM-ablated animals compared to the wild type. This difference was particularly notable for persistent periods of cooling lasting from 7 to 30 s (Figure 6E). We also examined the probability with which forward runs end after a period of cooling (Figure 6—figure supplement 1C–E). We found that, compared to the wild type, forward runs in RIM-ablated animals are more likely to end after a period of cooling regardless of run length (Figure 6—figure supplement 1E). Together, these analyses support a role of the RIM-dependent motor feedback in promoting a persistent forward run state.
 
-## Agent-based simulations driven by a reduced model recapitulate the role of CD feedback in positive thermotaxis
+### Agent-based simulations driven by a reduced model recapitulate the role of CD feedback in positive thermotaxis
 
 To understand how CD might sustain motor states during thermotaxis, we built a minimal dynamical systems model of the thermotaxis circuit (Figure 7). In this model, temperature fluctuations encoded by a thermosensory neuron are conveyed to a downstream interneuron. The interneuron then outputs to a motor command neuron that determines the motor state. A copy of the motor command is then relayed back to the interneuron after being weighted by a feedback gain factor (g). A positive gain factor means the motor-related signal is reinforcing to the activity of the interneuron, effectively forming a positive feedback loop. A negative gain factor translates to a negative feedback loop. We allowed the gain factor to vary between 1 (positive feedback), 0 (no feedback), and −1 (negative feedback) to test the impact of the recurrent circuit motif on circuit output.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/68848/elife-68848-fig7-v3.jpg)
 
-**Figure 7.:** (A) Schematic of the circuit model. (B) Dynamics of the model in response to an oscillating input stimulus. Top: temporal profile of the input signal. Middle: dynamics of the model with the feedback strength set to 1 (positive feedback), 0 (no feedback), or −1 (negative feedback). (C) Simulated trajectories of navigational behavior on a 2-D arena with linear input gradient, with feedback strength set to 1 (left), 0 (middle), and −1 (right). (D) Thermotactic biases for trajectories generated by models with feedback strength equaling 1 (positive feedback), 0 (no feedback), or −1 (negative feedback). (E) Forward run duration as a function of forward run direction for the behavioral simulations in (D). (F) Fraction of cooling epochs that were followed by the termination of forward runs in simulations with the feedback gain set to 1 (blue) or 0 (black). (G) Fraction of forward runs that ended after a period of cooling in simulations with the feedback gain set to 1 (blue) or 0 (black). Error bars are 95% CI. Wilcoxon rank-sum test *p<0.05; **p<0.01; ***p<0.001.Figure 7—source data 1.
+**Figure 7.:** (A) Schematic of the circuit model. (B) Dynamics of the model in response to an oscillating input stimulus. Top: temporal profile of the input signal. Middle: dynamics of the model with the feedback strength set to 1 (positive feedback), 0 (no feedback), or −1 (negative feedback). (C) Simulated trajectories of navigational behavior on a 2-D arena with linear input gradient, with feedback strength set to 1 (left), 0 (middle), and −1 (right). (D) Thermotactic biases for trajectories generated by models with feedback strength equaling 1 (positive feedback), 0 (no feedback), or −1 (negative feedback). (E) Forward run duration as a function of forward run direction for the behavioral simulations in (D). (F) Fraction of cooling epochs that were followed by the termination of forward runs in simulations with the feedback gain set to 1 (blue) or 0 (black). (G) Fraction of forward runs that ended after a period of cooling in simulations with the feedback gain set to 1 (blue) or 0 (black). Error bars are 95% CI. Wilcoxon rank-sum test *p<0.05; **p<0.01; ***p<0.001.
 
 When exposed to oscillating inputs, the positive feedback model exhibited stable high and low states in both the interneuron and the motor neuron. The autocorrelative timescale of these states (a measure of persistence) outlasted the oscillatory period of the input signal (Figure 7B). This was not the case for the models with no feedback or negative feedback where the oscillatory signal remained evident in both the interneuron and the motor neuron (Figure 7B).
 
@@ -118,13 +178,13 @@ The tyramine receptor, SER-2, is expressed in many neurons including AIY. Cell-s
 
 ## Materials and methods
 
-## Molecular biology and transgenic strain construction
+### Molecular biology and transgenic strain construction
 
-## Promoters
+#### Promoters
 
 The following promoters were used to allow neuron-specific expression of a calcium sensor, chrimson, and miniSOG. Most were generated from genomic DNA isolated from mixed stage N2 animals. Promoters include 4.8 kb (Prig-3), 0.9 kb (Pinx-1), 5.3 kb (Pglr-1), 2.9 kb (Pcex-1), 0.86 kb (Plgc-55B), and 3.1 kb (Pnmr-1) genomic sequence. All promoters except Pnmr-1 and Plgc-55B used the genomic sequence of the respective length starting immediately upstream of the predicted ATG start codon of the respective genes. For Pnmr-1, a 2 kb internal fragment that reduces the 5.1 kb nmr-1 reporter expression was removed (Kawano et al., 2011). Details on Plgc-55B can be found in Gao et al., 2015. See Appendix 1—table 1 for the full list of constructs and transgenes used in this study.
 
-## Calcium imaging
+#### Calcium imaging
 
 For AIY calcium imaging, aeaIs003 was generated by integrating olaEx1621 [Pmod-1::GCaMP6s; Pttx-3::RFP; Punc-122::mCherry]. The integrant was outcrossed against N2 for four times to generate strain ADS003 and crossed into lite-1 to generate QW1410. As in previous studies, temperature-evoked AIY activity was reliably recorded from neurites as opposed to the soma (Clark et al., 2006; Biron et al., 2006).
 
@@ -132,15 +192,15 @@ For AFD calcium imaging, aeaIs004 was generated by integrating an existing Ex li
 
 For premotor interneuron and motor neuron calcium imaging, pJH3338 was constructed for calcium imaging for premotor interneurons and head motor neurons. The GCaMP6s reporter was optimized for C. elegans and contained three C. elegans introns (Lim et al., 2016; Chen et al., 2013). GCaMP6s was fused with codon-optimized mCherry (wCherry) at the C-terminus to facilitate ratiometric measurement via simultaneous imaging of GFP and RFP. The reporter expression was driven by Pglr-1 as described above. This construct was co-injected with lin-15(+) marker to lin-15(n765) animals to generate extrachromosomal transgenic array hpEx3550 and subsequently integrated to generate hpIs471. The integrated array was outcrossed against N2 wild type four times to generate ZM8558. For simultaneous AIY and premoter/interneuron imaging, hpIs471 was crossed with aeaIs003 to generate ADS027.
 
-## Neuron ablation
+#### Neuron ablation
 
 pJH2829, pJH3311, pJH2931, pJH2890, and pJH2827 were constructed for LED-based neuronal ablation for RIM, AIB, AVA (plus other neurons), AVB (plus other neurons), and AVA/AVE/AVD/RIM/PVC (plus other neurons), respectively. miniSOG fused with an outer mitochondrial membrane tag TOMM20 (tomm20-miniSOG or mito-miniSOG) (Qi et al., 2012; Shu et al., 2011). An inter-cistronic sequence splice leader (SL2) was inserted between the coding sequence of tomm20-miniSOG and codon-optimized mCherry (wCherry; a gift of A Desai, UCSD) to visualize neurons that express miniSOG and to examine the efficacy of ablation. SL2 sequence was PCR amplified off the splice leader sequence (SL2) between gpd-2 and gpd-3. These constructs were co-injected with the lin-15(+) marker in lin-15(n765) animals to generate extrachromosomal arrays hpEx2997, hpEx3464, hpEx3072, hpEx3064, and hpEx2940, respectively. With the exception of hpEx3072, other arrays were integrated to generate hpIs327, hpIs465, hpIs331, and hpIs321. All integrated transgenic arrays were outcrossed four times against N2, except hpIs327, which was outcrossed seven times against N2, before being used for behavioral analyses or to be combined with AIY calcium imaging analyses or behavioral analyses.
 
-## AIY imaging upon neuronal ablation
+#### AIY imaging upon neuronal ablation
 
 aeaIs003 was crossed with hpIs327, hpIs321, hpEx3072, hpIs331, and hpIs465, respectively, to generate ADS010, ADS014, ADS026, ADS036, and ADS046. They were used for AIY calcium imaging upon ablation of RIM, premotor interneurons (with a few other neurons), and AIB, respectively.
 
-## AIY calcium imaging upon genetic manipulation of synaptic transmission and optogenetic stimulation
+#### AIY calcium imaging upon genetic manipulation of synaptic transmission and optogenetic stimulation
 
 For AIY imaging in genetic synaptic transmission mutants, QW1408, QW1409, QW1411, QW1175, and QW1415 were generated by crossing aeaIs003 into the corresponding mutant backgrounds listed in Appendix 1—table 1.
 
@@ -150,80 +210,233 @@ Chrimson (Klapoetke et al., 2014) was codon-optimized and fused at C-terminus wi
 
 aeaEx003 and aeaEx005 were then crossed into hpIs327;aeaIs003;lite-1 to generate ADS033 and ADS035 for AIY calcium imaging in RIM-ablated animals, upon AVB and AVA stimulation, respectively.
 
-## Behavioral assays
+### Behavioral assays
 
-## Positive thermotaxis assay
+#### Positive thermotaxis assay
 
 L4 animals were cultivated at 25°C the night before the assay. On the day of the experiment, the behavioral arena was allowed to equilibrate until a stable linear thermal gradient spanning 19 –23°C was established. Before each assay session, a thin layer of NGM agar sized 20 cm on each side was placed on the arena and allowed to equilibrate to the temperature of the arena. Twenty young adults were collected from their cultivation plates and briefly washed in NGM buffer before they were transferred onto the thin agar. These animals were allowed to explore the assay environment for 5 min before behavioral recording starts. Afterwards, a CMOS camera positioned above the arena recorded continuously every 500 ms for 20 min. Animal trajectories were extracted from the raw behavioral recordings using custom-written LABVIEW software. Subsequent analyses were performed in MATLAB.
 
-## Spontaneous locomotion assay
+#### Spontaneous locomotion assay
 
 Animals were cultivated and prepared for behavioral assay in identical manners as for the positive thermotaxis assay. The same behavioral arena, equilibrate to room temperature (22°C), was used to assay spontaneous locomotion. Behavioral recordings were conducted the same way as in the positive thermotaxis assay. Subsequent analyses were performed using the same LABVIEW software as above and subsequently in MATLAB.
 
-## Calculation of thermotactic bias
+#### Calculation of thermotactic bias
 
-For each animal, the instantaneous velocity (v) and speed (|v|) were calculated from the animal's centroid positions. The velocity vector was then projected onto direction of the thermal gradient, which in this case was parallel to the negative direction of the x-axis of the behavior arena. The thermotactic bias is the ratio between the velocity projection along the thermal gradient and the instantaneous speed of the animal:thermotactic bias =−vx|v|
+For each animal, the instantaneous velocity ($v$) and speed ($|v|$) were calculated from the animal's centroid positions. The velocity vector was then projected onto direction of the thermal gradient, which in this case was parallel to the negative direction of the x-axis of the behavior arena. The thermotactic bias is the ratio between the velocity projection along the thermal gradient and the instantaneous speed of the animal:
 
-## Calcium imaging in semi-constrained animals
+$$
+thermotactic bias =\frac{−v_{x}}{|v|}
+$$
 
-## Sample preparation and imaging setup
+### Calcium imaging in semi-constrained animals
+
+#### Sample preparation and imaging setup
 
 L4 larval animals expressing cytosolic GCaMP6s::wCherry were cultivated at 25°C the night before the imaging experiment. Immediately before the imaging session, animals were transferred to a microscope slide with a 5% agarose pad (2 mm thick). A small drop of NGM buffer was added to the agarose pad and a #1 coverslip was lowered onto the pad. This preparation allowed the animal enough mobility to execute head and (partial) body oscillations characteristic of forward runs and reversals. Under this preparation, the animal exhibits slow, local displacements, but cannot fully leave the field of view. Calcium imaging was performed on an upright spinning disc confocal microscope (Nikon Eclipse LV100 and Yokogawa CSU22) and iXon3 DU-897 EMCCD camera (Andor). High-resolution images were collected through a 40×, 0.95 NA Nikon Plan Apo lambda objective. 3D volumetric stacks were acquired in both the green (GCaMP6s) and red (wCherry) channels with an exposure of 30 ms at approximately 1.2 volumes per second.
 
-## Control of thermal stimulation
+#### Control of thermal stimulation
 
 Animals were imaged on a custom-built temperature control stage where a PID controller and H-bridge amplifier (Accuthermo) drove a thermoelectric cooler (TEC) (Newark) that pumped heat into and out of a thin copper plate with a liquid-cooled water block (Swiftech) acting as a thermal reservoir. A type-T thermocouple microprobe (Physitemp) was placed on the copper plate underneath a thin steel tab. A custom written Labview program was used to specify the desired temperature waveform.
 
-## Extraction of calcium transient levels
+#### Extraction of calcium transient levels
 
-To extract fluorescence intensities for individual neurons, we identified connected regions above a predefined intensity threshold and registered these regions of interest (ROI) across a movie based on spatial proximity across frames. For each ROI, we computed mean intensity of the top 30 pixels in both the green (GCaMP6s) and the red (wCherry) channel. The instantaneous activity of each neuron was computed using the following equation:Δ⁢R⁢(t)/R0=(R⁢(t)-R0)/R0
+To extract fluorescence intensities for individual neurons, we identified connected regions above a predefined intensity threshold and registered these regions of interest (ROI) across a movie based on spatial proximity across frames. For each ROI, we computed mean intensity of the top 30 pixels in both the green (GCaMP6s) and the red (wCherry) channel. The instantaneous activity of each neuron was computed using the following equation:
 
-R is the ratio between the mean intensity value in the green channel and that of the red channel. R0 represents the lowest 1st percentile of R⁢(t) values in the time series.
+$$
+Δ⁢R⁢(t)/R_{0}=(R⁢(t)-R_{0})/R_{0}
+$$
 
-## Event-triggered averages (ETAs) of neural activity
+$R$ is the ratio between the mean intensity value in the green channel and that of the red channel. R0 represents the lowest 1st percentile of $R⁢(t)$ values in the time series.
+
+#### Event-triggered averages (ETAs) of neural activity
 
 AIY activity was extracted from a defined window of time spanning the event interest (i.e., onset of thermal stimuli, transition between the forward run and reversal states, onset and offset of AVA activation). For analysis in Figure 3D, AVA ON and OFF states were defined by thresholding AVA activity using the Otsu method, which was implemented in MATLAB using the multithresh function. Data across multiple epochs of the same event were concatenated into matrices and presented as heat maps throughout the paper. Average ETA profiles were computed by averaging data from that precede or lag the event of interest by the same number of time points.
 
-## Duration of AIY activation
+#### Duration of AIY activation
 
 AIY activity data from each imaging session was fit using a Gaussian mixture models (see 'Statistical analysis' for implementation details). The number of Gaussian components was determined by iteratively fitting models with component number k = 1,2,3,…,6 and assessing the quality of the fit using the Bayesian information criterion (BIC). As k increases, the BIC value typically drops sharply from k = 2 to k = 3 and varies little after that. For wild-type data, models with k = 3 consistently capture the baseline AIY activities during reversals, the heightened activities during forward runs, and the large transients that occur at the onset of the forward runs or in response to warming stimuli. We thus defined the intersection point of the two Gaussian components with the lowest and the second lowest mean as the threshold above AIY is considered to be in the activated state. We then use this threshold value to binarize the AIY activity time series and compute the duration of each bout of AIY activation.
 
-## Optogenetic stimulation and simultaneous calcium imaging
+#### Optogenetic stimulation and simultaneous calcium imaging
 
 Experimental animals expressing Chrimson were grown on NGM plates supplied with 5 µM all-trans retinal (ATR) mixed with OP50 bacteria. Control animals of the same genotypes were grown on NGM plates seeded with OP50 without ATR. The day before the experiment L4 animals were picked onto fresh plates (with ATR for the experimental groups and without ATR for the control groups). On the day of the experiment, young adult animals were prepared for imaging in the semi-constrained preparation as described above. During imaging, pulses of red light were delivered from a filtered white LED lamp. Pulse timing was controlled by MATLAB scripts. For calcium imaging, animals were illuminated with only the blue laser (488 nm) to avoid strong activation of Chrimson.
 
-## Neuron ablation
+#### Neuron ablation
 
 Transgenic animals expressing miniSOG were collected from late L1 to L2 stage onto a small NGM plate (3.5 cm diameter). The plate was placed under a blue LED spotlight (Mightex, peak wavelength 617 nm) for 40 min. Following illumination, the animals were allowed to recover for overnight at 15°C to examine the disappearance of cells. All ablation was performed using animals that carried integrated miniSOG transgens, with the exception for AVA ablation. Ablation of AVA was carried out in animals that carried an extrachromsomal array for Prig-3-miniSOG-SL2-RFP, which was subjected to random loss during somatic division. Animals used for ablation were selected for those that did not show expression (hence ablation) in a pharyngeal neuron that affects the survival of ablated animals.
 
-## Statistical analysis
+### Statistical analysis
 
-## Statistical tests
+#### Statistical tests
 
 The Wilcoxon rank-sum test was used in the following comparisons: (1) comparing calcium activity upon the initiation of forward runs or reversals between wild-type animals and various neuron-ablation experiments, (2) comparing the probability of change in AIY activity upon the initiation of forward run or reversals between wild-type and AIY::TeTX animals, and (3) comparing the thermotactic bias between wild-type and RIM-ablated animals. To control for multiple comparison, p values were adjusted using the Benjamini–Hochberg correction. 95% confidence intervals were determined by bootstrapping.
 
-## Gaussian mixture model
+#### Gaussian mixture model
 
 Gaussian mixture models were fit to AIY activity distributions from each independent dataset using the fitgmdist function in MATLAB. The initial cluster centers were generated through the k-means++ algorithm, and the initial mixing proportions were set to uniform.
 
-## Modeling of circuit activity and behavior
+### Modeling of circuit activity and behavior
 
-## Neural circuit model
+#### Neural circuit model
 
-We use a minimal model to capture the interaction between the key components of the thermotaxis circuit:(1)Thermosensory neuron (AFD) −V0:τ0dV0dt=−gL0(V0−VL0)+IinputR(2)Interneuron (AIY)−V1:τ1dV1dt=−gL1(V1−VL1)+F10V0+F12V2(3)Motor command neurons −V2:τ2dV2dt=−gL2(V2−VL2)+F21V1where gL⁢1, gL⁢2, and gL⁢3 are leak conductances and are non-negative. VL⁢1, VL⁢2, and VL⁢3 are the resting potentials. Synaptic interactions are modeled as linear or sigmoidal functions:(4)F10(V0)=w0V0(5)F12(V2)=wfb(11+e−k1×(V2−β1))(6)F21(V1)=w21(γ11+e−k2×(V1−β2))−(γ21+e−k3×(V1−β2′))where w0, wf⁢b, and w21 are the network weights, and gi, ki, and βi define the height, steepness, and inflection point of sigmoidal functions. The two terms in F32 represent separate groups of premotor interneurons that promote forward runs (e.g., AVB) or reversals (e.g., AVA). Equation 6 essentially performs a max operation between the two terms to determine whether the motor output favors forward runs (F32>0) or reversals (F32<0).
+We use a minimal model to capture the interaction between the key components of the thermotaxis circuit:
 
-The above model is further simplified by setting AFD activity to its steady-state value, V0⁢(t)≅V0=VL⁢0+Ii⁢n⁢p⁢u⁢t⁢RgL⁢0, which reduces the model to two dimensions:(7)τ1dV1dt=−gL1V1+αIinput+F12(V2)+C1(8)τ2dV2dt=−gL2V2++F21(V1)+C2where α=w0⁢RgL⁢1, C1=gL⁢1⁢VL⁢1+VL⁢0, and C2=gL⁢2⁢VL⁢2.
+$$
+Thermosensory neuron (AFD) −V_{0}:\tau_{0}\frac{dV_{0}}{dt}=−g_{L0}(V_{0}−V_{L0})+I_{input}R
+$$
 
-Based on dynamical systems theory (Strogatz, 2015), the above model has two distinct stable states as long as their nullclines intersect at least three times, which can be achieved by a wide range of parameter values. Table 1 lists the parameter values that were used for network simulations in Figure 7B. Note that wf⁢b is varied between −1, 0, and 1, corresponding to negative feedback, no feedback, and positive feedback networks.
 
-## Simulation of thermotaxis behavior
 
-We used the same network model described above to drive agent behavior. The locomotory state M⁢(t) of the animal is determined by the activity of the motor command neuron:M(t)=1, if V2>0→agent executes forward runM(t)=0, if V2<0→agent executes reversal
+$$
+Interneuron (AIY)−V_{1}:\tau_{1}\frac{dV_{1}}{dt}=−g_{L1}(V_{1}−V_{L1})+F_{10}V_{0}+F_{12}V_{2}
+$$
 
-At the start of each forward run, the new heading direction is chosen randomly from a uniform distribution with range [-180°, 180°). During an ongoing forward run or reversal, the heading direction, θ⁢(t), was kept constant. When a forward run ends and a reversal state starts, the heading direction changes by 180°:(9)θ(t)={(cos⁡θ0,sin⁡θ0)t=0θ(t−dt)M(t)=M(t−dt)−θ(t−dt)M(t)=1 and M(t−dt)=−1(cos⁡θ0,sin⁡θ0)M(t)=−1 and M(t−dt)=1
+
+
+$$
+Motor command neurons −V_{2}:\tau_{2}\frac{dV_{2}}{dt}=−g_{L2}(V_{2}−V_{L2})+F_{21}V_{1}
+$$
+
+where $g_{L⁢1}$, $g_{L⁢2}$, and $g_{L⁢3}$ are leak conductances and are non-negative. $V_{L⁢1}$, $V_{L⁢2}$, and $V_{L⁢3}$ are the resting potentials. Synaptic interactions are modeled as linear or sigmoidal functions:
+
+$$
+F_{10}(V_{0})=w_{0}V_{0}
+$$
+
+
+
+$$
+F_{12}(V_{2})=w_{fb}(\frac{1}{1+e^{−k_{1}\times(V_{2}−\beta_{1})}})
+$$
+
+
+
+$$
+F_{21}(V_{1})=w_{21}(\frac{\gamma_{1}}{1+e^{−k_{2}\times(V_{1}−\beta_{2})}})−(\frac{\gamma_{2}}{1+e^{−k_{3}\times(V_{1}−\beta_{2}^{′})}})
+$$
+
+where w0, $w_{f⁢b}$, and w21 are the network weights, and gi, ki, and $\beta_{i}$ define the height, steepness, and inflection point of sigmoidal functions. The two terms in F32 represent separate groups of premotor interneurons that promote forward runs (e.g., AVB) or reversals (e.g., AVA). Equation 6 essentially performs a max operation between the two terms to determine whether the motor output favors forward runs ($F_{32}>0$) or reversals ($F_{32}<0$).
+
+The above model is further simplified by setting AFD activity to its steady-state value, $V_{0}⁢(t)≅V_{0}=V_{L⁢0}+\frac{I_{i⁢n⁢p⁢u⁢t}⁢R}{g_{L⁢0}}$, which reduces the model to two dimensions:
+
+$$
+\tau_{1}\frac{dV_{1}}{dt}=−g_{L1}V_{1}+\alphaI_{input}+F_{12}(V_{2})+C_{1}
+$$
+
+
+
+$$
+\tau_{2}\frac{dV_{2}}{dt}=−g_{L2}V_{2}++F_{21}(V_{1})+C_{2}
+$$
+
+where $\alpha=\frac{w_{0}⁢R}{g_{L⁢1}}$, $C_{1}=g_{L⁢1}⁢V_{L⁢1}+V_{L⁢0}$, and $C_{2}=g_{L⁢2}⁢V_{L⁢2}$.
+
+Based on dynamical systems theory (Strogatz, 2015), the above model has two distinct stable states as long as their nullclines intersect at least three times, which can be achieved by a wide range of parameter values. Table 1 lists the parameter values that were used for network simulations in Figure 7B. Note that $w_{f⁢b}$ is varied between −1, 0, and 1, corresponding to negative feedback, no feedback, and positive feedback networks.
+
+**Table 1.**
+ Parameter values used in Figure 7B.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τ1</td>
+      <td>2/3</td>
+    </tr>
+    <tr>
+      <td>τ2</td>
+      <td>2/3</td>
+    </tr>
+    <tr>
+      <td>gL⁢1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>gL⁢2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>w0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>wf⁢b</td>
+      <td>−1, 0, or 1</td>
+    </tr>
+    <tr>
+      <td>w21</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>k1</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>k2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>k3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>β1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>β2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>β2′</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>γ1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>γ2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Simulation of thermotaxis behavior
+
+We used the same network model described above to drive agent behavior. The locomotory state $M⁢(t)$ of the animal is determined by the activity of the motor command neuron:
+
+$$
+M(t)=1, if V_{2}>0→agent executes forward run
+$$
+
+
+
+$$
+M(t)=0, if V_{2}<0→agent executes reversal
+$$
+
+At the start of each forward run, the new heading direction is chosen randomly from a uniform distribution with range [-180°, 180°). During an ongoing forward run or reversal, the heading direction, $\theta⁢(t)$, was kept constant. When a forward run ends and a reversal state starts, the heading direction changes by 180°:
+
+$$
+\theta(t)={(cos⁡\theta_{0},sin⁡\theta_{0})t=0\theta(t−dt)M(t)=M(t−dt)−\theta(t−dt)M(t)=1 and M(t−dt)=−1(cos⁡\theta_{0},sin⁡\theta_{0})M(t)=−1 and M(t−dt)=1
+$$
 
 These simple behavioral rules allows us to specifically model the biased random walk component of thermotaxis, while leaving the RIM-independent klinotaxis component out of the analysis.
 
-All agents are simulated to move at constant speed (one unit length per time step) on a two-dimensional linear thermal gradient. The gradient is set to lie along the x-axis: T⁢(x)=cT⁢x, where x represents the x coordinate. Since AFD is known to sense temporal changes in temperature, the input current to AFD evoked by thermal stimuli is defined by Ii⁢n⁢p⁢u⁢t⁢(t)=cT⁢(x⁢(t)-x⁢(t-Δ⁢t)), where x⁢(t) is the instantaneous x-position of the agent.
+All agents are simulated to move at constant speed (one unit length per time step) on a two-dimensional linear thermal gradient. The gradient is set to lie along the x-axis: $T⁢(x)=c_{T}⁢x$, where $x$ represents the x coordinate. Since AFD is known to sense temporal changes in temperature, the input current to AFD evoked by thermal stimuli is defined by $I_{i}⁢n⁢p⁢u⁢t⁢(t)=c_{T}⁢(x⁢(t)-x⁢(t-Δ⁢t))$, where $x⁢(t)$ is the instantaneous x-position of the agent.
 
-Each simulation is initialized by setting an starting position of (0,0), an initial heading angle drawn from the uniform distribution from [−180°, 180°), an initial network state of (V1⁢(t0)=1, V2⁢(t0)=1), and with the animal in a forward run state. Upon numerical integration, simulated worms move autonomously in their environment for a predetermined duration (tm⁢a⁢x).
+Each simulation is initialized by setting an starting position of (0,0), an initial heading angle drawn from the uniform distribution from [−180°, 180°), an initial network state of ($V_{1}⁢(t_{0})=1$, $V_{2}⁢(t_{0})=1$), and with the animal in a forward run state. Upon numerical integration, simulated worms move autonomously in their environment for a predetermined duration ($t_{m⁢a⁢x}$).

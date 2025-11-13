@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 Behavioural and Clinical Neuroscience Institute, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/01khx4a30 Department of Psychology, Goldsmiths University of London London United Kingdom
+1. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Behavioural and Clinical Neuroscience Institute, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Psychology, Goldsmiths University of London London United Kingdom ([ROR:01khx4a30](https://ror.org/01khx4a30))
 4. Quantum Motion London United Kingdom
-5. https://ror.org/013meh722 Department of Psychiatry, School of Clinical Medicine, University of Cambridge Cambridge United Kingdom
-6. https://ror.org/0128dmh12 Hertfordshire Partnership University NHS Foundation Trust Welwyn Garden City United Kingdom
-7. https://ror.org/0267vjk41 University of Hertfordshire Hatfield United Kingdom
+5. Department of Psychiatry, School of Clinical Medicine, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+6. Hertfordshire Partnership University NHS Foundation Trust Welwyn Garden City United Kingdom ([ROR:0128dmh12](https://ror.org/0128dmh12))
+7. University of Hertfordshire Hatfield United Kingdom ([ROR:0267vjk41](https://ror.org/0267vjk41))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Following this reasoning, we developed a smartphone Motor Sequencing App with at
 
 While designing our app, we additionally considered previous research emphasizing training frequency, context stability, and reward contingencies as important features for enhancing habit strength (Wood and Rünger, 2016). To ensure effective consolidation required for habit/skill retention to occur, we implemented a 1-month training period. This aligns with studies showing that practice alone is insufficient for habit development as it also requires off-line consolidation over longer periods of time and sleep (Nusbaum et al., 2018; Walker et al., 2003). Finally, given the influence of reinforcer predictability on habit acquisition speed (Bouton, 2021), we employed two different reinforcement schedules (reward scores: continuous versus variable [probabilistic]) to assess their impact on habit formation among healthy volunteers (HV) and patients with OCD.
 
-## Outline
+### Outline
 
 In this article, we applied, for the first time, app-based behavioral training (experiment 1) to a sample of patients with OCD. We compared 32 patients and 33 healthy participants, matched for age, gender, IQ, and years of education in measures of motivation and app engagement (see Materials and methods for participants’ demographics and clinical characteristics). We also assessed to what extent performing such repetitive actions in 1 month impacted OCD symptomatology. In an initial phase (30 days), two action sequences were trained daily to produce habits/automatic actions (experiment 1). We collected data online continuously to monitor engagement and performance in real time. This approach ensured we acquired sufficient data for subsequent analysis of procedural learning and automaticity development.
 
@@ -46,19 +46,19 @@ In a second phase, we administered two follow-up behavioral tasks (experiments 2
 
 Finally, we administered a comprehensive set of self-reported clinical questionnaires, including a recently developed questionnaire (Ersche et al., 2017) on habit-related aspects. This aimed to investigate: (1) if OCD patients report more habits; (2) whether stronger subjective habitual tendencies predict enhanced procedural learning, automaticity development, and an (in)ability to adjust to changing circumstances; and (3) if app-based habit reversal therapy yields therapeutic benefits or has any subjective sequelae in OCD.
 
-## Hypothesis
+### Hypothesis
 
 Anticipating implicit learning issues in OCD (Deckersbach et al., 2002; Kathmann et al., 2005; Rauch et al., 1997) and fine-motor difficulties (Bloch et al., 2011), we expected poorer procedural learning in patients compared to HV. However, once learned, we predicted OCD patients would reach automaticity faster, possibly due to a stronger tendency to form habitual/automatic actions (Gillan et al., 2016; Gillan et al., 2014). We also hypothesized differences in the learning rate and automaticity development between the two action sequences based on their associated (1) reward schedule (continuous versus variable), with faster automaticity in the continuous reward sequence, as suggested by past research (Bouton, 2021); and (2) sign of changes in reward scores, expecting enhanced performance improvements following a decrease in scores, particularly pronounced in OCD patients due to heightened sensitivity to negative feedback (Apergis-Schoute et al., 2024; Becker et al., 2014; Kanen et al., 2019). Additionally, we predicted that OCD patients would generally display stronger habits and assign greater intrinsic value to the familiar app sequences, evidenced by a marked preference for executing them even when presented with a simpler alternative sequences. Finally, we expected patients to show a greater tendency to perform the familiar/trained sequences, even though its extrinsic relative value was reduced and new, more valuable, options became available.
 
 ## Results
 
-## Self-reported habit tendencies
+### Self-reported habit tendencies
 
-Participants completed self-reported questionnaires measuring various psychological constructs (see Materials and methods). Highly relevant for the current topic is the Creature of Habit Scale (COHS) (Ersche et al., 2017), recently developed to measure individual differences in routine behavior and automatic responses in everyday life. As compared to healthy controls, OCD patients reported significantly higher habitual tendencies in both the routine (t = –2.79, p = 0.01; HV: COHSroutine¯ = 48.4, σ = 9; OCD: COHSroutine¯ = 55.7, σ = 11) and the automaticity (t = –3.15, p < 0.001; HV: COHSautomaticity¯ = 26.3, σ = 8; OCD: COHSautomaticity¯ = 32.9, σ = 9) subscales.
+Participants completed self-reported questionnaires measuring various psychological constructs (see Materials and methods). Highly relevant for the current topic is the Creature of Habit Scale (COHS) (Ersche et al., 2017), recently developed to measure individual differences in routine behavior and automatic responses in everyday life. As compared to healthy controls, OCD patients reported significantly higher habitual tendencies in both the routine (t = –2.79, p = 0.01; HV: $COHSroutine¯$ = 48.4, $\sigma$ = 9; OCD: $COHSroutine¯$ = 55.7, $\sigma$ = 11) and the automaticity (t = –3.15, p < 0.001; HV: $COHSautomaticity¯$ = 26.3, $\sigma$ = 8; OCD: $COHSautomaticity¯$ = 32.9, $\sigma$ = 9) subscales.
 
-## Phase A: Experiment 1
+### Phase A: Experiment 1
 
-## Motor sequence acquisition using the app
+#### Motor sequence acquisition using the app
 
 The task was a self-instructed and self-paced smartphone application (app) downloaded to participants’ iPhones. It consisted of a motor practice program that participants committed to pursue daily, for a period of 1 month. An exhaustive description of the method has been previously published (Banca et al., 2019) but a succinct description can be found below, in Figure 1 and in Video 1.
 
@@ -66,83 +66,113 @@ The task was a self-instructed and self-paced smartphone application (app) downl
 
 **Figure 1.:** (a) A trial starts with a static image depicting the abstract picture that identifies the sequence to be performed (or 'played') as well as the four keys that will need to be tapped. Participants use their dominant hand to play the required keys: excluding the thumb, the leftmost finger corresponds to the first circle and the rightmost finger corresponds to the last circle. (b) Screenshot examples of the task design: (1) sequence selection panel, each sequence is identified by an abstract picture; (2) panel exemplifying visual cues that initially guide the sequence learning; (3) panel exemplifying the removal of the visual cues, when sequence learning is only guided by auditory cues. (c) Example of a sequence performed with the right hand: 6-moves in length, each move can comprise multiple finger presses (2 or 3 simultaneous) or a single finger press. Each sequence comprises 3 single press moves, 2 two-finger moves, and 1 three-finger move. (d) Short description of the daily practice schedule. Each day, participants are required to play a minimum of two practices per sequence. Each practice comprised 20 successful trials. Participants could play more if they wished and the order of the training practices was self-determined.
 
+![Video 1.](https://cdn.elifesciences.org/articles/87346/elife-87346-video1.mp4.jpg)
+
 The training consisted of practicing two sequences of finger movements, composed of chords (two or three simultaneous finger presses) and single presses (one finger only). Each sequence comprised six moves and was performed using four fingers of the dominant hand (index, middle, ring, and little finger). Participants received feedback on each sequence performance (trial). Successful trials (to which we later refer as sequence trial number [n]) were followed by a positive ring tone and a positive visual effect (rewarding stars) and the unsuccessful ones by a negative ring tone and a negative visual effect (red lines on the screen). Every time a mistake occurred (irrespective of which move in the sequence it occurred), participants were prompted to restart the trial. Instructions were to respond swiftly and accurately. Participants were required to keep their fingers very close to the keys to minimize movement amplitude variation and to facilitate fast performance. To promote sequence learning and memorization, we implemented three progressively challenging practice levels. Initially (first three practice sessions), subjects responded to visual and auditory cues, following lighted keys associated with musical notes (level 1). As practice advanced, to enable motor independence and automaticity, these external cues were gradually removed: level 2 included only auditory cues (practices 4 and 5), and level 3 had no cues (remaining practices). Successful performance at each difficulty level resulted in progression to the next one. Unsuccessful performance led to reverting to the prior stage.
 
 Each sequence, identified by a specific abstract image, was associated with a particular reward schedule. Points were calculated as a function of the time taken to complete a sequence trial. Accordingly, performance time was the instructed task-related dimension (i.e. associated with reward). In the continuous reward schedule, points were received for every successful trial whereas in the variable reward schedule, points were shown only on 37% of the trials. The rationale for having two distinct reward schedules was to assess their possible dissociable effect on the participants’ development of automatic actions. For each rewarded trial, participants could see their achieved points on the trial. To increase motivation, the total points achieved on each training session (i.e. practice) were also shown, so participants could see how well they improved across practice and days. The permanent accessibility of the app (given that most people carry their mobile phones everywhere) facilitated training frequency and enabled context stability.
 
-## Practice schedule
+### Practice schedule
 
 All participants were presented with a calendar schedule and were asked to practice both sequences daily. They were instructed to practice as many times as they wished, whenever they wanted during the day and with the sequence order they would prefer. However, a minimum of two practices (P) per sequence was required every day; each practice comprised 20 successful sequence trials. Participants had to make up for missed training by completing both the current day’s session and the previous day’s if they skipped a day. If they missed training for over 2 days, the researcher gauged their motivation and incentivized their commitment. Participants were excluded if they missed training for more than 5 consecutive days.
 
 At least 30 days of training was required, and all data were anonymously collected in real time, through an online server. On the 21st day of practice, the rewards were removed (extinction) to ensure that the action sequences were more dependent on proprioceptive and kinesthetic, rather than on external, feedback. Analysis of the reward removal (extinction) is presented in Appendix 1 and Appendix 1—figure 3. Other additional task components and analysis are also included in Appendix 1 and Appendix 1—figures 1 and 2.
 
-## Training engagement
+### Training engagement
 
-Participants reliably committed to their regular training schedule, practicing consistently both sequences every day. Unexpectedly, OCD patients completed significantly more practices as compared with HV (p = 0.005) (Figure 2a). Descriptive statistics are as follows (values provided as median number of practices and interquartile range): HV: P~ = 122, IQR = 7; OCD:  P~ = 130, IQR = 14. When visually inspecting the daily training pattern, we observed that HV tended to practice earlier than OCD. Circular statistics within each group demonstrated that HV practiced preferentially at a peak time of ~15:00 (mean resultant length 0.47, p = 0.000497, Rayleigh test for the uniformity of a circular distribution of points; Figure 2b). For OCD participants, the preferred practice time had a mean direction at ~18:00 (mean resultant length 0.58, p = 8.03 × 10–6, Rayleigh test; Figure 2c). There were, however, no significant differences between both samples (p = 0.19, Watson’s U2 test).
+Participants reliably committed to their regular training schedule, practicing consistently both sequences every day. Unexpectedly, OCD patients completed significantly more practices as compared with HV (p = 0.005) (Figure 2a). Descriptive statistics are as follows (values provided as median number of practices and interquartile range): HV: $P~$ = 122, IQR = 7; OCD:  $P~$ = 130, IQR = 14. When visually inspecting the daily training pattern, we observed that HV tended to practice earlier than OCD. Circular statistics within each group demonstrated that HV practiced preferentially at a peak time of ~15:00 (mean resultant length 0.47, p = 0.000497, Rayleigh test for the uniformity of a circular distribution of points; Figure 2b). For OCD participants, the preferred practice time had a mean direction at ~18:00 (mean resultant length 0.58, p = 8.03 × 10–6, Rayleigh test; Figure 2c). There were, however, no significant differences between both samples (p = 0.19, Watson’s U2 test).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig2-v1.jpg)
 
 **Figure 2.:** (a) Whole training overview. Obsessive-compulsive disorder (OCD, N = 32) patients engaged in significantly more training sessions than healthy volunteers (HV, N = 33) (*p = 0.005). The minimum required practices (P) were 120P. (b) Daily training pattern for HV (N = 33) and (c) daily training pattern for OCD (N = 32). Single dots on the unit circle denote the preferred practice times of individual participants within 0–24 hr, obtained from the mean resultant vector of individual practice hours data (Rayleigh statistics). Group-level statistics were conducted in each group separately using the Rayleigh test to assess the uniformity of a circular distribution of points. The graphic displays the length of the mean resultant vector in each distribution, and the associated p-value. Regarding between-group statistical analysis, see main text.
 
-## Learning
+### Learning
 
-Learning was evaluated by the decrement in sequence duration throughout training. To follow the nomenclature of the motor control literature, we refer to sequence duration as movement time (MT, in s), which is defined as(1)MT=t6-t1,
+Learning was evaluated by the decrement in sequence duration throughout training. To follow the nomenclature of the motor control literature, we refer to sequence duration as movement time (MT, in s), which is defined as
 
-where t6 and t1 are the time of the last (6th) and first key presses, respectively.
+$$
+MT=t_{6}-t_{1,}
+$$
 
-For each participant and sequence reward type (continuous and variable), we measured MT of a successful trial, as a function of the sequence trial number, n, across the whole training. Across trials, MT decreased exponentially (Figure 3a). The decrease in MT has been widely used to quantify learning in previous research (Crossman, 1959). A single exponential is viewed as the most statistically robust function to model such decrease (Heathcote et al., 2000). Accordingly, each participant’s learning profile was modeled as follows:(2)MT(n)=MT0+MTLexp⁡(−nnr),
+where $t_{6}$ and $t_{1}$ are the time of the last (6th) and first key presses, respectively.
 
-where nr is the learning rate (measured in number of trials), which governs the rate of exponential decay. Parameter MT0 is the movement time at asymptote (at the end of the training). Last, MTL is the speed-up achieved over the course of the training (referred to as amount of learning) (Figure 3a). The larger the value of MTL , the bigger the decline in the movement time and thus the larger the improvement in motor learning.
+For each participant and sequence reward type (continuous and variable), we measured MT of a successful trial, as a function of the sequence trial number, n, across the whole training. Across trials, MT decreased exponentially (Figure 3a). The decrease in MT has been widely used to quantify learning in previous research (Crossman, 1959). A single exponential is viewed as the most statistically robust function to model such decrease (Heathcote et al., 2000). Accordingly, each participant’s learning profile was modeled as follows:
+
+$$
+MT(n)=MT_{0}+MT_{L}exp⁡(−\frac{n}{n}_{r}),
+$$
+
+where $n_{r}$ is the learning rate (measured in number of trials), which governs the rate of exponential decay. Parameter $MT_{0}$ is the movement time at asymptote (at the end of the training). Last, $MT_{L}$ is the speed-up achieved over the course of the training (referred to as amount of learning) (Figure 3a). The larger the value of $MT_{L}$ , the bigger the decline in the movement time and thus the larger the improvement in motor learning.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig3-v1.jpg)
 
-**Figure 3.:** Upper panel: Model fitting procedure conducted for the continuous reward sequence. Lower panel: Model fitting procedure conducted for the variable reward sequence. (a) Individual plots exemplifying the time-course of MT (in s) as training progresses (lighter color) as well as the exponential decay fit modeling the learning profile of a single participant (darker color). Left panels depict data in an healthy volunteers (HV) individual, right panels display data in a patient with obsessive-compulsive disorder (OCD). (b) Group comparison resulting from all individual exponential decays modeling the learning profile of each participant. A significant group difference was observed on the amount of learning,  , in both reward schedule conditions (continuous: MTLp = 0.009; variable: p < 0.001). Solid lines: median; transparent regions: median ± 1.57 × interquartile range/sqrt(n); purple: HV (N = 33); blue: patients with OCD (N = 32).
+**Figure 3.:** Upper panel: Model fitting procedure conducted for the continuous reward sequence. Lower panel: Model fitting procedure conducted for the variable reward sequence. (a) Individual plots exemplifying the time-course of MT (in s) as training progresses (lighter color) as well as the exponential decay fit modeling the learning profile of a single participant (darker color). Left panels depict data in an healthy volunteers (HV) individual, right panels display data in a patient with obsessive-compulsive disorder (OCD). (b) Group comparison resulting from all individual exponential decays modeling the learning profile of each participant. A significant group difference was observed on the amount of learning, $MT_{L}$ , in both reward schedule conditions (continuous: p = 0.009; variable: p < 0.001). Solid lines: median; transparent regions: median ± 1.57 × interquartile range/sqrt(n); purple: HV (N = 33); blue: patients with OCD (N = 32).
 
 The individual fitting approach we used has the advantage of handling the different number of trials executed by each participant by modeling their behavior to a consolidated maximum value of n, nmax = 1200. We used a moving average of 20 trials to mitigate any effect of outlier trials. This analysis was conducted separately for continuous and variable reward schedules.
 
-To statistically assess between-group differences in learning behavior, we pooled the individual model parameters (MTL , nr and MT0), and conducted a Kruskal-Wallis H test to assess the effect of group (HV and OCD), reward type (continuous and variable), and their interaction on each parameter (Figure 3b).
+To statistically assess between-group differences in learning behavior, we pooled the individual model parameters ($MT_{L}$ , $n_{r}$ and $MT_{0}$), and conducted a Kruskal-Wallis H test to assess the effect of group (HV and OCD), reward type (continuous and variable), and their interaction on each parameter (Figure 3b).
 
-There was a significant effect of group on the amount of learning (MTL) parameter, H = 16.5, p < 0.001, but no reward (p = 0.06) or interaction effects (p = 0.34) (Figure 3c). Descriptive statistics are as follows (values provided as median and interquartile range): HV:  MTL~ = 3.1 s, IQR = 1.2 s and OCD: MTL~ = 3.9 s, IQR = 2.3 s for the continuous reward sequence; HV: MTL~ = 2.3 s, IQR = 1.2 s and OCD:  MTL~ = 3.6 s, IQR = 2.5 s for the variable reward sequence.
+There was a significant effect of group on the amount of learning ($MT_{L}$) parameter, H = 16.5, p < 0.001, but no reward (p = 0.06) or interaction effects (p = 0.34) (Figure 3c). Descriptive statistics are as follows (values provided as median and interquartile range): HV:  $MT_{L}~$ = 3.1 s, IQR = 1.2 s and OCD: $MT_{L}~$ = 3.9 s, IQR = 2.3 s for the continuous reward sequence; HV: $MT_{L}~$ = 2.3 s, IQR = 1.2 s and OCD:  $MT_{L}~$ = 3.6 s, IQR = 2.5 s for the variable reward sequence.
 
-Regarding the learning rate (nr) parameter, we found no significant main effects of group (p = 0.79), reward (p = 0.47), or interaction effects (p = 0.46). Descriptive statistics: sequence trials needed to asymptote HV:  nr~ = 176, IQR = 99 and OCD: nr~ = 200, IQR = 114 for the continuous reward sequence; HV:  nr~ = 182, IQR = 123 and OCD:  nr~ = 162, IQR = 141 for the variable reward sequence. These non-significant effects on the learning rate were further assessed with Bayes factors (BF) for factorial designs (see Materials and methods). This approach estimates the ratio between the full model, including main and interaction effects, and a restricted model that excludes a specific effect. The evidence for the lack of main effect of group was associated with a BF of 0.38, which is anecdotal evidence. We additionally obtained moderate evidence supporting the absence of a main effect of reward or a reward × group interaction (BF = 0.16 and 0.17, respectively).
+Regarding the learning rate ($n_{r}$) parameter, we found no significant main effects of group (p = 0.79), reward (p = 0.47), or interaction effects (p = 0.46). Descriptive statistics: sequence trials needed to asymptote HV:  $n_{r}~$ = 176, IQR = 99 and OCD: $n_{r}~$ = 200, IQR = 114 for the continuous reward sequence; HV:  $n_{r}~$ = 182, IQR = 123 and OCD:  $n_{r}~$ = 162, IQR = 141 for the variable reward sequence. These non-significant effects on the learning rate were further assessed with Bayes factors (BF) for factorial designs (see Materials and methods). This approach estimates the ratio between the full model, including main and interaction effects, and a restricted model that excludes a specific effect. The evidence for the lack of main effect of group was associated with a BF of 0.38, which is anecdotal evidence. We additionally obtained moderate evidence supporting the absence of a main effect of reward or a reward × group interaction (BF = 0.16 and 0.17, respectively).
 
-In analyzing the asymptote (MT0) parameter, we found no significant main or interaction effects (group effect: p = 0.17; reward effect: p = 0.65 and interaction effect: p = 0.64). Descriptive statistics are as follows: HV: MT0~ = 1.7 s, IQR = 0.4 s and OCD:  MT0~ = 1.8 s, IQR = 0.5 s for the continuous reward sequence; HV:  MT0~ = 1.8 s, IQR = 0.5 s and OCD:  MT0~ = 1.8 s, IQR = 0.5 s for the variable reward sequence. BF analysis indicated anecdotal evidence against a main group effect (BF = 0.53). Meanwhile, there was moderate evidence suggesting neither reward nor reward × interaction factors significantly influenced performance time (BF = 0.12 and 0.17, respectively).
+In analyzing the asymptote ($MT_{0}$) parameter, we found no significant main or interaction effects (group effect: p = 0.17; reward effect: p = 0.65 and interaction effect: p = 0.64). Descriptive statistics are as follows: HV: $MT_{0}~$ = 1.7 s, IQR = 0.4 s and OCD:  $MT_{0}~$ = 1.8 s, IQR = 0.5 s for the continuous reward sequence; HV:  $MT_{0}~$ = 1.8 s, IQR = 0.5 s and OCD:  $MT_{0}~$ = 1.8 s, IQR = 0.5 s for the variable reward sequence. BF analysis indicated anecdotal evidence against a main group effect (BF = 0.53). Meanwhile, there was moderate evidence suggesting neither reward nor reward × interaction factors significantly influenced performance time (BF = 0.12 and 0.17, respectively).
 
 The results indicate that OCD patients do not exhibit learning deficits. While they initially performed action sequences slower than the HV group, their learning rates ultimately matched those of HV. Both groups showed comparable movement durations at the asymptote. This suggests that, though OCD patients began at a lower baseline level of performance, they enhanced their motor learning to a degree that reached the same asymptotic performance as the controls.
 
-## Automaticity
+### Automaticity
 
-To assess automaticity, the ability to perform actions with low-level cognitive engagement, we examined the decline over time in the consistency of inter-keystroke interval (IKI) patterns trial to trial. We mathematically defined IKI consistency as the sum of the absolute value of the time lapses between finger presses from one sequence to the previous one.(3)C=∑k=15|tk,n+1−tk,n|,
+To assess automaticity, the ability to perform actions with low-level cognitive engagement, we examined the decline over time in the consistency of inter-keystroke interval (IKI) patterns trial to trial. We mathematically defined IKI consistency as the sum of the absolute value of the time lapses between finger presses from one sequence to the previous one.
 
-where n is the sequence trial number and k is the inter-keystroke response interval (Figure 4a). In other words, C quantifies how consistent/reproducible the press pattern is from trial to trial. The assumption here is that the more reproducible the sequences are over time, the more automatic the person’s motor performance becomes.
+$$
+C=\sumk=15|t_{k,n+1}−t_{k,n}|,
+$$
+
+where $n$ is the sequence trial number and $k$ is the inter-keystroke response interval (Figure 4a). In other words, C quantifies how consistent/reproducible the press pattern is from trial to trial. The assumption here is that the more reproducible the sequences are over time, the more automatic the person’s motor performance becomes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig4-v1.jpg)
 
-**Figure 4.:** (a) We mathematically defined trial-to-trial inter-keystroke-interval consistency (IKI consistency), denoted as C (in s), as the sum of the absolute values of the time lapses between finger presses across consecutive sequences. The variable n represents the sequence trial and k denotes the IKI. We evaluated automaticity by analyzing the decline in C over time, as it approached asymptotic levels. (b) Group comparison resulting from all individual exponential decays modeling the automaticity profile (drop in C) of each participant. A significant group effect was found on the amount of automaticity gain,  (Kruskal-Wallis CLH = 11.1, p < 0.001) and on the automaticity constant,  (Kruskal-Wallis nCH = 4.61, p < 0.03). Solid and dashed lines are median values (M). Light purple: healthy volunteers (HV); dark purple: patients with obsessive-compulsive-disorder (OCD); solid lines: continuous reward condition; dashed lines: variable reward condition. Sample size (N): HV = 33, OCD = 32.
+**Figure 4.:** (a) We mathematically defined trial-to-trial inter-keystroke-interval consistency (IKI consistency), denoted as C (in s), as the sum of the absolute values of the time lapses between finger presses across consecutive sequences. The variable n represents the sequence trial and k denotes the IKI. We evaluated automaticity by analyzing the decline in C over time, as it approached asymptotic levels. (b) Group comparison resulting from all individual exponential decays modeling the automaticity profile (drop in C) of each participant. A significant group effect was found on the amount of automaticity gain, $C_{L}$ (Kruskal-Wallis H = 11.1, p < 0.001) and on the automaticity constant, $n_{C}$ (Kruskal-Wallis H = 4.61, p < 0.03). Solid and dashed lines are median values (M). Light purple: healthy volunteers (HV); dark purple: patients with obsessive-compulsive-disorder (OCD); solid lines: continuous reward condition; dashed lines: variable reward condition. Sample size (N): HV = 33, OCD = 32.
 
-For each participant and sequence reward type (continuous and variable), automaticity was assessed based on the decrement in C, as a function of n, across the entire training period. Since C decreased in an exponential fashion, we fitted the C data with an exponential decay function (following the same reasoning and procedure as MT) to model the automaticity profile of each participant,(4)C(n)=C0+CLexp⁡(−nnC),
+For each participant and sequence reward type (continuous and variable), automaticity was assessed based on the decrement in C, as a function of n, across the entire training period. Since C decreased in an exponential fashion, we fitted the C data with an exponential decay function (following the same reasoning and procedure as MT) to model the automaticity profile of each participant,
 
-where nC is the automaticity rate (measured in number of trials), C0 is the sequence consistency at asymptote (by the end of the training), and CL is the change in automaticity over the course of the training (which we refer to amount of automation gain). The model fitting procedure was conducted separately for continuous and variable reward schedules.
+$$
+C(n)=C_{0}+C_{L}exp⁡(−\frac{n}{n_{C}}),
+$$
 
-A Kruskal-Wallis H test was then conducted to assess the effect of group (OCD and HV) and reward type (continuous and variable) on each parameter resulting from the individual exponential fits (CL, nC and C0 ).
+where $n_{C}$ is the automaticity rate (measured in number of trials), $C_{0}$ is the sequence consistency at asymptote (by the end of the training), and $C_{L}$ is the change in automaticity over the course of the training (which we refer to amount of automation gain). The model fitting procedure was conducted separately for continuous and variable reward schedules.
 
-There was a significant effect of group on the amount of automation gain  (CL) parameter: H = 11.1, p < 0.001 but no reward (p = 0.12) or interaction effects (p = 0.5) (Figure 4b). Descriptive statistics are as follows: HV:  CL~ = 1.4 s, IQR = 0.7 s and OCD:  CL~ = 1.9 s, IQR = 1.0 s for the continuous reward sequence; HV:  CL~ = 1.1 s, IQR = 0.8 s and OCD:  CL~ = 1.5 s, IQR = 1.1 s for the variable reward sequence.
+A Kruskal-Wallis H test was then conducted to assess the effect of group (OCD and HV) and reward type (continuous and variable) on each parameter resulting from the individual exponential fits ($C_{L}$, $n_{C}$ and $C_{0}$ ).
 
-There was also a significant group effect on the automaticity rate (nC) parameter: H = 4.61, p < 0.03 but no reward (p = 0.42) or interaction (p = 0.12) effects. Descriptive statistics: sequence trials needed to asymptote HV:  nC~ = 142, IQR = 122 and OCD:  nC~ = 198, IQR = 162 for the continuous reward sequence; HV:  nC~ = 161, IQR = 104 and OCD:  nC~ = 191, IQR = 138 for the variable reward sequence.
+There was a significant effect of group on the amount of automation gain  ($C_{L}$) parameter: H = 11.1, p < 0.001 but no reward (p = 0.12) or interaction effects (p = 0.5) (Figure 4b). Descriptive statistics are as follows: HV:  $C_{L}~$ = 1.4 s, IQR = 0.7 s and OCD:  $C_{L}~$ = 1.9 s, IQR = 1.0 s for the continuous reward sequence; HV:  $C_{L}~$ = 1.1 s, IQR = 0.8 s and OCD:  $C_{L}~$ = 1.5 s, IQR = 1.1 s for the variable reward sequence.
 
-At asymptote (C0), no group (p = 0.1), reward (p = 0.9), or interaction (p = 0.45) effects were found. We found anecdotal evidence against a main group effect (BF = 0.65). In addition, there was moderate evidence in favor of no main effects of reward or interaction (BF = 0.12 and 0.18, respectively).
+There was also a significant group effect on the automaticity rate ($n_{C}$) parameter: H = 4.61, p < 0.03 but no reward (p = 0.42) or interaction (p = 0.12) effects. Descriptive statistics: sequence trials needed to asymptote HV:  $n_{C}~$ = 142, IQR = 122 and OCD:  $n_{C}~$ = 198, IQR = 162 for the continuous reward sequence; HV:  $n_{C}~$ = 161, IQR = 104 and OCD:  $n_{C}~$ = 191, IQR = 138 for the variable reward sequence.
 
-Of note is the median consistency in consecutive sequences achieved at asymptote: HV:  C0~ = 287 ms, IQR = 127 ms, OCD: C0~ 301 ms, IQR = 186 ms for the continuous reward sequence and HV: C0~ = 288 ms, IQR = 110 ms, OCD: C0~ = 300 ms, IQR = 114 ms for the variable reward sequence. These values of the C at asymptote are generally shorter than the normal reaction time for motor performance (Kosinski, 2008), reinforcing the idea that automaticity was reached by the end of the training.
+At asymptote ($C_{0}$), no group (p = 0.1), reward (p = 0.9), or interaction (p = 0.45) effects were found. We found anecdotal evidence against a main group effect (BF = 0.65). In addition, there was moderate evidence in favor of no main effects of reward or interaction (BF = 0.12 and 0.18, respectively).
+
+Of note is the median consistency in consecutive sequences achieved at asymptote: HV:  $C_{0}~$ = 287 ms, IQR = 127 ms, OCD: $C_{0}~$ 301 ms, IQR = 186 ms for the continuous reward sequence and HV: $C_{0}~$ = 288 ms, IQR = 110 ms, OCD: $C_{0}~$ = 300 ms, IQR = 114 ms for the variable reward sequence. These values of the C at asymptote are generally shorter than the normal reaction time for motor performance (Kosinski, 2008), reinforcing the idea that automaticity was reached by the end of the training.
 
 In conclusion, compared to HV, patients took significantly longer to achieve a similar level of automaticity in both reward schedules. They began at a slower pace, exhibited more variability, and progressed to automaticity at a slower rate.
 
-## Sensitivity of sequence duration to reward
+### Sensitivity of sequence duration to reward
 
-Our next goal was to investigate the sensitivity of performance improvements over time in our participant groups to changes in scores, whether they increased or decreased. To do this, we quantified the trial-by-trial behavioral changes in response to a decrement or increase in reward from the previous trial using the sequence duration (in ms), labeled as MT (movement time). Note that in our experimental design, MT was negatively correlated with the scores received. Following Pekny et al., 2015, we represented the change from trial n to n+1 in MT simply as:(5)ΔMT(n+1)=MT(n+1)−MT(n)
+Our next goal was to investigate the sensitivity of performance improvements over time in our participant groups to changes in scores, whether they increased or decreased. To do this, we quantified the trial-by-trial behavioral changes in response to a decrement or increase in reward from the previous trial using the sequence duration (in ms), labeled as MT (movement time). Note that in our experimental design, MT was negatively correlated with the scores received. Following Pekny et al., 2015, we represented the change from trial n to n+1 in MT simply as:
 
-Reward (R) change at trial n was computed as:(6)ΔR(n)=R(n)−R(n−1)
+$$
+ΔMT^{(n+1)}=MT^{(n+1)}−MT^{(n)}
+$$
 
-We next aimed to analyze separately ∆MT values that followed an increase in reward from trial n − 1 to n, ∆R+, denoting a positive sign in ∆R; and those that followed a drop in reward, ∆R−, indicating a negative sign in ∆R. An issue arises with poor performance trials (those with a slower duration, or a large MT(n)). These could inherently result in a systematic link between ∆R− and smaller (negative) ∆MT(n+1) values due to the statistical effect known as ‘regression to the mean’. Essentially, a trial that is poorly performed, marked by a large MT(n), is likely to be followed by a smaller MT(n+1) just because extreme values tend to be followed by values closer to the mean. As training progresses and MT reduces overall, the potential for significant changes relative to reward increments or decrements may diminish. To account for and counteract this statistical artifact, we normalized the ∆MT(n+1) index using the baseline MT(n):(7)ΔMT(n+1)=(MT(n+1)−MT(n))/MT(n)
+Reward (R) change at trial n was computed as:
+
+$$
+ΔR^{(n)}=R^{(n)}−R^{(n−1)}
+$$
+
+We next aimed to analyze separately ∆MT values that followed an increase in reward from trial n − 1 to n, ∆R+, denoting a positive sign in ∆R; and those that followed a drop in reward, ∆R−, indicating a negative sign in ∆R. An issue arises with poor performance trials (those with a slower duration, or a large MT(n)). These could inherently result in a systematic link between ∆R− and smaller (negative) ∆MT(n+1) values due to the statistical effect known as ‘regression to the mean’. Essentially, a trial that is poorly performed, marked by a large MT(n), is likely to be followed by a smaller MT(n+1) just because extreme values tend to be followed by values closer to the mean. As training progresses and MT reduces overall, the potential for significant changes relative to reward increments or decrements may diminish. To account for and counteract this statistical artifact, we normalized the ∆MT(n+1) index using the baseline MT(n):
+
+$$
+ΔMT^{(n+1)}=(MT^{(n+1)}−MT^{(n)})/MT^{(n)}
+$$
 
 We used this normalized measure of ∆MT(n+1) (adimensional) for further analyses. It reflects the behavioral change from trial n to n+1 relative to the baseline performance on trial n. Following Pekny et al., 2015, we estimated for each participant the conditional probability distributions p(∆T|∆R+) and p(∆T|∆R−) (where T denotes a behavioral measure, MT in this section or IKI consistency in the next section) by fitting a Gaussian distribution to the histogram of each data sample (Appendix 1—figure 5). The standard deviation (σ) and the center μ of the resulting distributions were used for statistical analyses (Appendix 1—figure 5). Similar analyses were carried out on a normalized version of index C (Equation 3), which already reflected changes between consecutive trials. See next section.
 
@@ -154,7 +184,7 @@ We observed that participants speeded up their sequence duration more (negative 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig5-v1.jpg)
 
-**Figure 5.:** .(a) Mean normalized change in movement time (MT, ms) from trial n to n+1 following an increment (∆R+, in purple) or decrement (∆R–, in green) in scores at n. The change in movement time trial to trial was normalized with the baseline value on the initial trial n: ∆MT(n+1) = (MT(n+1) – MT(n))/MT(n). This relative change index is therefore adimensional. The dots represent mean MT changes (error bars denote SEM) in each bin of correctly performed sequences, after partitioning all correct sequences into four subsets, and separately for obsessive-compulsive disorder (OCD, N = 32) (dark colors) and healthy volunteers (HV, N = 33) (light colors). (b) Both groups of participants speeded up their sequence performance more following a drop in scores (main effect of reward, p = 2 × 10–16; 2×4: reward × bin analyses of variance [ANOVA]); yet this acceleration was reduced over the course of practiced sequences (main bin effect, p = 5.06 × 10–12). (c) Same as (a) but for the spread (std) of the MT change distribution (adimensional). (d–e) Illustration of the main effect of group (d) p = 9.93 × 10–6 and reward (e) p = 4.13 × 10–5 on std. Each bin depicted in the plots (x-axis) contains around 110 correct sequences on average (further details in Appendix 1: Sample size for the reward sensitivity analysis).
+**Figure 5.:** (a) Mean normalized change in movement time (MT, ms) from trial n to n+1 following an increment (∆R+, in purple) or decrement (∆R–, in green) in scores at n. The change in movement time trial to trial was normalized with the baseline value on the initial trial n: ∆MT(n+1) = (MT(n+1) – MT(n))/MT(n). This relative change index is therefore adimensional. The dots represent mean MT changes (error bars denote SEM) in each bin of correctly performed sequences, after partitioning all correct sequences into four subsets, and separately for obsessive-compulsive disorder (OCD, N = 32) (dark colors) and healthy volunteers (HV, N = 33) (light colors). (b) Both groups of participants speeded up their sequence performance more following a drop in scores (main effect of reward, p = 2 × 10–16; 2×4: reward × bin analyses of variance [ANOVA]); yet this acceleration was reduced over the course of practiced sequences (main bin effect, p = 5.06 × 10–12). (c) Same as (a) but for the spread (std) of the MT change distribution (adimensional). (d–e) Illustration of the main effect of group (d) p = 9.93 × 10–6 and reward (e) p = 4.13 × 10–5 on std. Each bin depicted in the plots (x-axis) contains around 110 correct sequences on average (further details in Appendix 1: Sample size for the reward sensitivity analysis).
 
 In addition, there was a significant interaction between reward and bin in predicting the trial-to-trial changes in movement time (F (504,3) = 3.652, p = 0.0126). This outcome suggested that the relative improvement in MT over sequences depended on whether the reward increased or decreased from the previous trial. To explore this interaction effect further, we conducted a dependent-sample pairwise t-test on MT, after collapsing the data across groups. In each sequence bin, participants speeded up MT more following a drop in scores than following an increment, as expected (corrected pFDR = 2 × 10–16).
 
@@ -164,23 +194,27 @@ Overall, these findings indicate that both OCD and HV participants exhibited an 
 
 Assessment of the std (σ) of the Gaussian distributions p(∆T|∆R−) and p(∆T|∆R+) in the continuous reward condition (Figure 5c) with a similar three-way ANOVA revealed a significant main effect of group (F (504,1) = 19.928, p = 9.93 × 10–6). As shown in Figure 5d, the std (σ) of the distribution of trial-to-trial MT changes was smaller in HV than in OCD. In addition, we observed a significant change over bins of sequences in σ, and independently of the group or reward factors (main effect of bin, F (504,3) = 39.078, p = 2 × 10–16). This outcome reflected that over the course of training, both groups exhibited less variable changes in MT in response to both reward increments and decrements, in line with improvements in skill learning (Wolpert et al., 2011). Reward also modulated σ, with ∆R− being associated with a more variable distribution of behavioral changes than ∆R+(main effect of reward, F (504,1) = 17.110, p = 4.13 × 10–05). No interaction effects were found (there was moderate to strong evidence that removing any of the possible interaction effects improved the model: BF ranged from 5.67 to 41.3). Control analyses demonstrated that the group, reward, or bin effects were not confounded by differences in the size of the subsamples used for the Gaussian distribution fits (not shown; Appendix 1 -Sample size for the reward sensitivity analysis).
 
-## Sensitivity of IKI consistency (C) to reward
+### Sensitivity of IKI consistency (C) to reward
 
-To further explore the potential impact of reward changes on the previously reported group effects on automaticity, we quantified the trial-by-trial behavioral changes in IKI consistency (represented by C) in response to changes in reward scores relative to the previous trial. Note that a smaller C indicates a more reproducible IKI pattern trial to trial. As for ∆MT, we normalized the index C (termed normC to avoid confusion with the main analysis on C) with the baseline IKI values on the previous trial n(8)normC=∑k=15|(tk,n+1−tk,n)/tk,n|,
+To further explore the potential impact of reward changes on the previously reported group effects on automaticity, we quantified the trial-by-trial behavioral changes in IKI consistency (represented by C) in response to changes in reward scores relative to the previous trial. Note that a smaller C indicates a more reproducible IKI pattern trial to trial. As for ∆MT, we normalized the index C (termed normC to avoid confusion with the main analysis on C) with the baseline IKI values on the previous trial n
 
-where k is the inter-keystroke response interval and n is the sequence trial number. During continuous reward practices, both patients and healthy controls exhibited an increased consistency of IKI patterns trial to trial across bins of correct sequences (decreased normC, Equation 8, Figure 6a; main effect of bin on the center of the Gaussian distribution, F (497, 3) = 4.188, p = 0.00607; three-way ANOVA). Performance in OCD and HV, however, differed with regard to how reproducible their timing patterns were (main effect of group, F (497, 1) = 8.130, p = 0.00454). The timing patterns were less consistent trial to trial in OCD, relative to HV (Figure 6b, left panel). Moreover, the IKI consistency improved more (smaller normC) following reward increments than after decrements, as shown in Figure 6b (right panel; main reward effect, F (497, 1) = 23.283, p = 1.86 × 10–6). No significant interaction effects between factors were found (BF analysis demonstrated that when any of the interaction effects among factors was removed from the ANOVA design, there was moderate to strong evidence that the model improved: BF in range from 6.83 to 14.1). Accordingly, although OCD participants exhibited an attenuated IKI consistency in their performance relative to HV, the main effects of reward and bins of sequences were independent of the group.
+$$
+normC=\sumk=15|(t_{k,n+1}−t_{k,n})/t_{k,n}|,
+$$
+
+where $k$ is the inter-keystroke response interval and $n$ is the sequence trial number. During continuous reward practices, both patients and healthy controls exhibited an increased consistency of IKI patterns trial to trial across bins of correct sequences (decreased normC, Equation 8, Figure 6a; main effect of bin on the center of the Gaussian distribution, F (497, 3) = 4.188, p = 0.00607; three-way ANOVA). Performance in OCD and HV, however, differed with regard to how reproducible their timing patterns were (main effect of group, F (497, 1) = 8.130, p = 0.00454). The timing patterns were less consistent trial to trial in OCD, relative to HV (Figure 6b, left panel). Moreover, the IKI consistency improved more (smaller normC) following reward increments than after decrements, as shown in Figure 6b (right panel; main reward effect, F (497, 1) = 23.283, p = 1.86 × 10–6). No significant interaction effects between factors were found (BF analysis demonstrated that when any of the interaction effects among factors was removed from the ANOVA design, there was moderate to strong evidence that the model improved: BF in range from 6.83 to 14.1). Accordingly, although OCD participants exhibited an attenuated IKI consistency in their performance relative to HV, the main effects of reward and bins of sequences were independent of the group.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig6-v1.jpg)
 
-**Figure 6.:** normC) to reward changes in the continuous schedule.(a) The mean normalized change in trial-to-trial IKI consistency (normC, Equation 8 adimensional) across bins of correct sequences is shown, separately for each group (obsessive-compulsive disorder [OCD, N = 32]: dark colors; healthy volunteers [HV, N = 33]: light colors) and for reward increments (∆R+, purple) and decrements (∆R–, green). The dots represent the mean value, while the vertical bars denote SEM. (b) Illustration of the main effect of group (left panel; p = 0.00454) and type of reward change (right panel; p = 1.86 × 10–6). (c) Same as (a) but for the std of the distribution of IKI consistency changes, normC, adimensional. (d) The panel displays the main effect of bin (p = 3.63 × 10–14) on the std. Black denotes the average (SEM) across reward and group levels. Each bin depicted in the plots (x-axis) contains 110 correct sequences on average (see Appendix 1: Sample size for the reward sensitivity analysis).
+**Figure 6.:** (a) The mean normalized change in trial-to-trial IKI consistency (normC, Equation 8 adimensional) across bins of correct sequences is shown, separately for each group (obsessive-compulsive disorder [OCD, N = 32]: dark colors; healthy volunteers [HV, N = 33]: light colors) and for reward increments (∆R+, purple) and decrements (∆R–, green). The dots represent the mean value, while the vertical bars denote SEM. (b) Illustration of the main effect of group (left panel; p = 0.00454) and type of reward change (right panel; p = 1.86 × 10–6). (c) Same as (a) but for the std of the distribution of IKI consistency changes, normC, adimensional. (d) The panel displays the main effect of bin (p = 3.63 × 10–14) on the std. Black denotes the average (SEM) across reward and group levels. Each bin depicted in the plots (x-axis) contains 110 correct sequences on average (see Appendix 1: Sample size for the reward sensitivity analysis).
 
 Regarding the spread of the p(∆T|∆R) distributions, we found a significant main effect of bin factor (F (504,3) = 23.350, p = 3.63 × 10–14; Figure 6c and d). These outcomes suggest that the σ of the Gaussian distribution for normC values was reduced across bins of practiced sequences. There was only a trend for a significant main effect of group (F (504,1) = 3.412, p = 0.0653) and no main effect of reward (F (504,1) = 2.327, p = 0.1278). These non-significant effects were explored further using BF. This analysis provided anecdotal and moderate evidence that omitting either the group or reward effects was beneficial to the model (BF = 1.98 for removing group, BF = 3.20 for removing reward). We did not observe any interaction effect either (BF values increased moderately to strongly when any of the interaction effects among factors was removed from the ANOVA design: BF ranged from 4.89 to 43.3). The results highlight that over the course of training participants’ normalized IKI consistency values stabilized, and this effect was not observed to be modulated by group or reward factors. Similarly to the MT analyses, the sensitivity analyses of normC were not influenced by differences in the size of the subsamples used for the ∆R+ and ∆R– Gaussian distribution fits (Appendix 1 - Sample size for the reward sensitivity analysis).
 
-## Phase B: Tests of action sequence preference and re-evaluation
+### Phase B: Tests of action sequence preference and re-evaluation
 
 Once the month-long app training was completed, participants attended a laboratory session to conduct additional behavioral tests aimed at assessing preference for familiar versus novel sequences (experiments 2 and 3) including a re-evaluation test to assess ability to adapt to environmental changes (experiment 3 only). Below we briefly describe these two experiments and report the results. See Materials and methods and Table 3 for a more detailed description of the tasks. Since these follow-up tests required observing additional stimuli while performing the action sequences, it was impractical to use participant’s individual iPhones to simultaneously present the task stimuli and be an interface to play the action sequences. We therefore used a ‘Makey-Makey’ device to connect the testing laptop (presenting the task stimuli) to four playdough keys arranged on a table (used as an interface for action sequence input). This device ensured precise key registration and timing. The playdough keys matched the size of those on the participants’ iPhones used for the 1-month training. Participants practiced the action sequences in this new setup until they were comfortable. Hence, the transition to a non-mobile/laboratory context was conducted with great care. These tasks were conducted in a new context, which has been shown to promote re-engagement of the goal system (Bouton, 2021).
 
-## Experiment 2: Preference for familiar versus novel action sequences
+#### Experiment 2: Preference for familiar versus novel action sequences
 
 This experiment tests the hypothesis stated in the outline, that the trained action sequence gains intrinsic/rewarding properties or value. We used an explicit preference task, assessing participants’ preferences for familiar (hypothetically habitual) sequences over goal-seeking sequences. We assume that if the trained sequences have acquired rewarding properties (e.g. anxiety relief, or the inherent gratification of skilled performance or routine), participants would express a greater preference to ‘play’ them, even when alternative easier sequences are offered (i.e. goal-seeking sequences).
 
@@ -188,13 +222,13 @@ After reporting which app sequence was their preferred, participants started the
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig7-v1.jpg)
 
-**Figure 7.:** (a) Explicit preference task. Participants had to choose and play one of two given sequences. Once the choice was made, the image correspondent to the selected sequence was highlighted in blue. Participants then played the sequence. While playing it, the bar on top registered each move progressively lighting up in green. There were three conditions, each comprising a specific sequence pair: (1) app preferred sequence versus app non-preferred sequence (control condition); (2) app preferred sequence versus any 6-move sequence of participant’s choice (experimental condition 1); (3) app preferred sequence versus any 3-move sequence of participant’s choice (experimental condition 2). (b) No evidence for enhanced preference for the app sequence in either HV or OCD patients (HV: N = 33, OCD: N = 32). In fact, when an easier and shorter sequence is pitted against the app familiar sequence (right raincloud plot), both groups significantly preferred it (Kruskal-Wallis main effect of condition H = 23.2, p < 0.001). Left raincloud plot: control condition; middle raincloud plot: experimental condition 1; right raincloud plot: experimental condition 2. Y-axis depicts the number of app sequence choices (15 choice trials maximum). Connected lines depict mean values. (c) Exploratory analysis of the preference task following up unexpected findings on the mobile-app effect on symptomatology: re-analysis of the data conducting a Dunn’s post hoc test splitting the OCD group into two subgroups based on their YBOCS change after the app training (14 patients with improved symptomatology [reduced YBOCS scores] and 18 patients who remained stable or felt worse [i.e. respectively unchanged or increased YBOCS scores]). Patients with reduced YBOCS scores after the app training had significantly higher preference to play the app sequence in both experimental conditions (left panel: p 0.015*; right panel: FDR =p 0.011*). The bar plots represent the sample mean and the vertical lines the confidence interval. Individual data points are included to show dispersion in the sample. Abbreviations: YBOCS = Yale-Brown Obsessive-Compulsive Scale, HV = healthy volunteers, OCD = patients with obsessive-compulsive disorder.FDR =
+**Figure 7.:** (a) Explicit preference task. Participants had to choose and play one of two given sequences. Once the choice was made, the image correspondent to the selected sequence was highlighted in blue. Participants then played the sequence. While playing it, the bar on top registered each move progressively lighting up in green. There were three conditions, each comprising a specific sequence pair: (1) app preferred sequence versus app non-preferred sequence (control condition); (2) app preferred sequence versus any 6-move sequence of participant’s choice (experimental condition 1); (3) app preferred sequence versus any 3-move sequence of participant’s choice (experimental condition 2). (b) No evidence for enhanced preference for the app sequence in either HV or OCD patients (HV: N = 33, OCD: N = 32). In fact, when an easier and shorter sequence is pitted against the app familiar sequence (right raincloud plot), both groups significantly preferred it (Kruskal-Wallis main effect of condition H = 23.2, p < 0.001). Left raincloud plot: control condition; middle raincloud plot: experimental condition 1; right raincloud plot: experimental condition 2. Y-axis depicts the number of app sequence choices (15 choice trials maximum). Connected lines depict mean values. (c) Exploratory analysis of the preference task following up unexpected findings on the mobile-app effect on symptomatology: re-analysis of the data conducting a Dunn’s post hoc test splitting the OCD group into two subgroups based on their YBOCS change after the app training (14 patients with improved symptomatology [reduced YBOCS scores] and 18 patients who remained stable or felt worse [i.e. respectively unchanged or increased YBOCS scores]). Patients with reduced YBOCS scores after the app training had significantly higher preference to play the app sequence in both experimental conditions (left panel: pFDR = 0.015*; right panel: pFDR = 0.011*). The bar plots represent the sample mean and the vertical lines the confidence interval. Individual data points are included to show dispersion in the sample. Abbreviations: YBOCS = Yale-Brown Obsessive-Compulsive Scale, HV = healthy volunteers, OCD = patients with obsessive-compulsive disorder.
 
 A Kruskal-Wallis H test indicated a main effect of condition (H = 23.2, p < 0.001) but no group (p = 0.36) or interaction effects (p = 0.72) (Figure 7b). Dunn’s post hoc pairwise comparisons revealed that experimental condition 2 (app sequence versus any three sequence) was significantly different from control condition (pFDR < 0.001) and from experimental condition 1 (app sequence versus any six sequence) (pFDR = 0.006). No differences were found between the latter two conditions (p = 0.086). Bayesian analysis further provided moderate evidence in support of the absence of main effects of group (BF = 0.129) and interaction (BF = 0.054). These results denote that both groups evaluate the trained app sequences as being equally attractive as the alternative novel-but-easier sequence when of the same length (Figure 7b, middle plot). However, when given the option to play an easier-but-shorter sequence (in experimental condition 2), both groups significantly preferred it over the app familiar sequence (Figure 7b, right plot). A positive correlation between COHS and the app sequence choice (Pearson r = 0.36, p = 0.005) showed that those participants with greater habitual tendencies had a greater propensity to prefer the trained app sequence under this condition.
 
 Given the high variance of participants’ choices on this preference task, particularly in the experimental conditions, and the findings reported below related to the mobile-app performance effect on symptomatology, we further conducted an exploratory Dunn’s post hoc test splitting the OCD group into two subgroups based on their Yale-Brown Obsessive-Compulsive Scale (YBOCS) score changes after the app training: 14 patients with improved symptomatology (reduction in YBOCS scores) and 18 patients who remained stable or felt worse (i.e. respectively, same or increase in YBOCS scores). Patients with lowered YBOCS scores after the app training had significantly greater preference for the app trained sequence in both experimental conditions as compared to patients with same or increased YBOCS scores after the app training: experimental condition 1 (pFDR = 0.015, Figure 7c, left) and experimental condition 2 (pFDR = 0.011, Figure 7c, right). In addition to this subgrouping analysis, we conducted a correlation analysis between changes in YBOCS scores and patient preferences for the app sequences. This helped us determine whether patients who experienced greater changes in YBOCS scores tended to prefer the learned sequences, and vice versa. We observed a positive correlation, meaning that the higher the symptom improvement after the month training, the greater the preference for the familiar/learned sequence. This is particularly the case for the experimental condition 2, when subjects are required to choose between the trained app sequence and any 3-move sequence (rs = 0.35, p = 0.04). A trend was observed for the correlation between the YBOCS score change and the preference for the app sequences in experimental condition 1 (rs = 0.30, p = 0.09). In conclusion, most participants preferred to play shorter and easier alternative sequences, thus not showing a bias toward the trained/familiar app sequences. Contradicting our hypothesis, OCD patients followed the same behavioral pattern. However, some participants still preferred the app sequence, specifically those with greater habitual tendencies, including patients who improved their symptoms during the month training and considered the app training beneficial (see also below exploratory analyses of ‘Mobile-app performance effect on symptomatology’). Such preference presumably arose because some intrinsic value may have been attributed to the trained action sequence.
 
-## Experiment 3: Re-evaluation of the learned action sequence
+#### Experiment 3: Re-evaluation of the learned action sequence
 
 In experiment 3, we employed a two-choice appetitive learning task. We modified the conditions by manipulating extrinsic feedback to assess participants’ capacity to adopt a different response choice, after re-evaluating their options. By providing more value to alternative action sequences (as opposed to the previously automatized ones), participants were thus encouraged to reassess their choices and respond appropriately. Of note, we did not use a conventional goal devaluation procedure here, as this could possibly have disrupted the behavioral control of the sequences and thus invalidated the test.
 
@@ -208,9 +242,9 @@ Four chest-pairs (conditions, 40 trials each) were tested (see Figure 8a and Mat
 
 Both groups were highly sensitive to the re-evaluation procedure based on monetary feedback, choosing more often the non-app sequence, irrespective of the novelty of that sequence (Figure 8b, no group effects; p = 0.210 and BF = 0.742, anecdotal evidence supporting no main effect of group). However, when re-evaluation required motor effort (condition 4), participants were less inclined to choose the ‘any 3’ alternative, which is the sequence demanding less motor effort (Kruskal-Wallis main effect of condition: H = 151.1, p < 0.001). Moreover, OCD patients significantly favored the trained app sequence over HV (post hoc group × condition 4 comparison: p = 0.04). In conclusion, following the month of training, both groups exhibited the ability to update their behavior based on monetary re-evaluation. Yet, OCD patients more frequently selected the familiar sequence, even when a less effortful and shorter alternative was available.
 
-## Mobile-app performance effect on symptomatology: exploratory analyses
+### Mobile-app performance effect on symptomatology: exploratory analyses
 
-In a debriefing questionnaire, participants were asked to give feedback about their app training experience and how it interfered with their routine: (1) how stressful/relaxing the training was (rated on a scale from –100% highly stressful to 100% very relaxing); (2) how much it impacted their life quality (Q) (rated on a scale from –100% maximum decrease to 100% maximum increase in life quality). Appendix 1—table 1 and Appendix 1—figure 4 depict participants’ qualitative and quantitative feedback. Of the 33 HV, 30 reported the app was neutral and did not impact their lives, neither positively nor negatively. The remaining 3 reported it as being a positive experience, with an improvement in their life quality (rating their life quality increase as 10%, 15%, and 60%). Of the 32 patients assessed, 14 unexpectedly showed improvement (I) in their OCD symptoms during the month as measured by the YBOCS difference, in percentage terms, pre-post training (I¯ = 20 ± 9%), 5 felt worse (I¯ = –19 ± 9%) and 13 remained stable during the month (all errors are standard deviations). Of the 14 who felt better, 10 directly related their OCD improvement to the app training (life quality increase: Q¯ = 43 ± 24%). Nobody rated the app negatively. Of note, the symptom improvement was positively correlated with patients’ habitual tendencies reported in the Creature of Habit questionnaire, particularly with the routine subscale (Pearson r = 0.45, p = 0.01) (Figure 9a, left). A three-way ANOVA test showed that patients who reported less obsessions and compulsions after the month training were the ones with more pronounced habit routines (group effect: F = 13.7, p < 0.001, Figure 9a, right). A strong positive correlation was also found between the OCD improvement reported subjectively as direct consequence of the app training and the OCI scores and reported habit tendencies (Pearson r = 0.8, p = 0.008; Pearson r = 0.77, p < 0.01, respectively) (Figure 9b): i.e., patients who considered the app somewhat beneficial were the ones with higher compulsivity scores and higher habitual tendencies. In HV, participants who also had greater tendency for automatic behaviors, regarded the app as more relaxing (Pearson r = 0.44, p < 0.01). However, such correlation between the self-reported relaxation measure attributed to the app and the COHS automaticity subscale was not observed in OCD (p = 0.1). Finally, patients’ symptom improvement did not correlate with how relaxing they considered the app training (p = 0.1) nor with the number of total practices performed during the month training period (p = 0.2).
+In a debriefing questionnaire, participants were asked to give feedback about their app training experience and how it interfered with their routine: (1) how stressful/relaxing the training was (rated on a scale from –100% highly stressful to 100% very relaxing); (2) how much it impacted their life quality (Q) (rated on a scale from –100% maximum decrease to 100% maximum increase in life quality). Appendix 1—table 1 and Appendix 1—figure 4 depict participants’ qualitative and quantitative feedback. Of the 33 HV, 30 reported the app was neutral and did not impact their lives, neither positively nor negatively. The remaining 3 reported it as being a positive experience, with an improvement in their life quality (rating their life quality increase as 10%, 15%, and 60%). Of the 32 patients assessed, 14 unexpectedly showed improvement (I) in their OCD symptoms during the month as measured by the YBOCS difference, in percentage terms, pre-post training ($I¯$ = 20 ± 9%), 5 felt worse ($I¯$ = –19 ± 9%) and 13 remained stable during the month (all errors are standard deviations). Of the 14 who felt better, 10 directly related their OCD improvement to the app training (life quality increase: $Q¯$ = 43 ± 24%). Nobody rated the app negatively. Of note, the symptom improvement was positively correlated with patients’ habitual tendencies reported in the Creature of Habit questionnaire, particularly with the routine subscale (Pearson r = 0.45, p = 0.01) (Figure 9a, left). A three-way ANOVA test showed that patients who reported less obsessions and compulsions after the month training were the ones with more pronounced habit routines (group effect: F = 13.7, p < 0.001, Figure 9a, right). A strong positive correlation was also found between the OCD improvement reported subjectively as direct consequence of the app training and the OCI scores and reported habit tendencies (Pearson r = 0.8, p = 0.008; Pearson r = 0.77, p < 0.01, respectively) (Figure 9b): i.e., patients who considered the app somewhat beneficial were the ones with higher compulsivity scores and higher habitual tendencies. In HV, participants who also had greater tendency for automatic behaviors, regarded the app as more relaxing (Pearson r = 0.44, p < 0.01). However, such correlation between the self-reported relaxation measure attributed to the app and the COHS automaticity subscale was not observed in OCD (p = 0.1). Finally, patients’ symptom improvement did not correlate with how relaxing they considered the app training (p = 0.1) nor with the number of total practices performed during the month training period (p = 0.2).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig9-v1.jpg)
 
@@ -218,9 +252,180 @@ In a debriefing questionnaire, participants were asked to give feedback about th
 
 We also checked whether the preferred app sequence, chosen by participants at the beginning of Phase B, was consistently the one that had yielded more reward during the app training (i.e. the continuously rewarded sequence). We found no evidence for this case: 54.5% of HV and 29% of the OCD sample considered the continuous sequence to be their preferred one, a non-statistically significant difference. This result suggests that participants’ preference may not solely be linked to programmed reward. Other factors, such as the aesthetic appeal of, or ease of performing specific combinations of finger movements, may also influence overall preference.
 
-## Other self-reported symptoms
+### Other self-reported symptoms
 
 In addition to the Creature of Habit findings, of the remaining self-reported questionnaires assessed (see Materials and methods), OCD patients also reported enhanced intolerance of uncertainty, elevated motivation to avoid aversive outcomes and higher perfectionism, worries and perceived stress, as compared to healthy controls (see Table 1 for statistical results and Figure 10 for overall summary).
+
+**Table 1.**
+ Self-reported measures on various scales measuring impulsiveness, compulsiveness, habitual tendencies, self-control, behavioral inhibition and activation, intolerance of uncertainty, perfectionism, stress, and the trait of worry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HV</th>
+      <th>OCD</th>
+      <th colspan="3">Statistics</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>(n = 33)</th>
+      <th>(n = 32)</th>
+      <th>t</th>
+      <th>df</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPAS</td>
+      <td>5.9 (4.0)</td>
+      <td>14.2 (5.0)</td>
+      <td>–7.37</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>COHS routine</td>
+      <td>48.4 (9.4)</td>
+      <td>55.7 (11.1)</td>
+      <td>–2.79</td>
+      <td>62</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>COHS automaticity</td>
+      <td>26.3 (8.2)</td>
+      <td>32.9 (8.5)</td>
+      <td>–3.15</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>COHS total</td>
+      <td>74.8 (14.4)</td>
+      <td>88.7 (16.7)</td>
+      <td>–3.56</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>HSCQ</td>
+      <td>50.7 (7.3)</td>
+      <td>42.5 (8.5)</td>
+      <td>4.17</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>BIS</td>
+      <td>17.5 (3.5)</td>
+      <td>24.4 (2.7)</td>
+      <td>–8.81</td>
+      <td>61</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>BAS reward responsibility</td>
+      <td>15.9 (2.2)</td>
+      <td>15.1 (2.5)</td>
+      <td>1.25</td>
+      <td>61</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>BAS drive</td>
+      <td>10.0 (2.4)</td>
+      <td>9.6 (2.6)</td>
+      <td>0.66</td>
+      <td>61</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>BAS fun seeking</td>
+      <td>11.1 (1.9)</td>
+      <td>9.7 (2.4)</td>
+      <td>2.60</td>
+      <td>61</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>Barratt total</td>
+      <td>58.8 (8.4)</td>
+      <td>65.0 (10.1)</td>
+      <td>–2.68</td>
+      <td>61</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td>Barratt attentional</td>
+      <td>14.6 (4.1)</td>
+      <td>19.8 (4.7)</td>
+      <td>–4.74</td>
+      <td>61</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>Barratt motor</td>
+      <td>21.2 (2.6)</td>
+      <td>21.4 (3.2)</td>
+      <td>–0.23</td>
+      <td>61</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Barratt non-planning</td>
+      <td>23.7 (3.3)</td>
+      <td>24.6 (4.5)</td>
+      <td>–0.96</td>
+      <td>61</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>IUS</td>
+      <td>41.9 (10.0)</td>
+      <td>87.3 (20.2)</td>
+      <td>–11.23</td>
+      <td>61</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>SCS</td>
+      <td>118.5 (21.4)</td>
+      <td>118.3 (17.2)</td>
+      <td>0.04</td>
+      <td>62</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>FMPS</td>
+      <td>70.3 (21.0)</td>
+      <td>95.4 (21.4)</td>
+      <td>–4.73</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>PSS</td>
+      <td>13.7 (4.7)</td>
+      <td>22.9 (5.1)</td>
+      <td>–7.51</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>PSWQ</td>
+      <td>37.9 (11.7)</td>
+      <td>64.0 (11.0)</td>
+      <td>–9.20</td>
+      <td>62</td>
+      <td>&lt;0.001†</td>
+    </tr>
+  </tbody>
+</table>
+
+_HV, healthy volunteers; OCD, patients with obsessive-compulsive disorder; CPAS, Compulsive Personality Assessment Scale; COHS, Creature of Habit Scale; HSCQ, Habitual Self-Control Questionnaire; BIS, Behavioral Inhibition System; BAS, Behavioral Activation System; Barratt, Barratt Impulsiveness Scale; IUS, Intolerance of Uncertainty Scale; SCS, Self-Control Scale; FMPS, Frost Multidimensional Perfectionism Scale; PSS, Perceived Stress Scale; PSWQ, Penn State Worry Questionnaire. Standard deviations are in parentheses: mean (std). One patient and one healthy control missed a few questionnaires.*= p < 0.05 level.†= p < 0.001 level (two-tailed)._
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/87346/elife-87346-fig10-v1.jpg)
 
@@ -234,7 +439,7 @@ Leveraging a novel smartphone tool, we real-time monitored the acquisition of tw
 
 In a subsequent testing phase in a novel context, both groups adeptly transferred both trained action sequences to corresponding discriminative stimuli (visual icons). Furthermore, both cohorts were sensitive to re-evaluation when it pertained to monetary reward, demonstrating their ability to adapt behavior when facing environmental changes. However, when re-evaluation involved physical effort, OCD patients did not demonstrate the same adaptability and instead displayed a distinct inclination toward the already trained/familiar action sequence, presumably due to its inherent value. This effect was more pronounced in patients with higher habitual inclinations and compulsivity scores. Exploratory analysis revealed that patients with pronounced habitual inclinations and compulsivity scores were more likely to choose the familiar sequence. Moreover, when faced with a choice between the familiar and a new, less effort-demanding sequence, the OCD group leaned toward the former, likely due to its inherent value. These insights align with the theory of goal direction/habit imbalance in OCD (Gillan et al., 2016), underscoring the dominance of habits in particular settings where they might hold intrinsic value. This inherent value could hypothetically be associated with symptom alleviation. Corroborating this, post-training feedback and a measured difference in the YBOCS scale pre- and post-training suggest many patients found the app therapeutically beneficial.
 
-## Implications for the dual associative theory of habitual and goal-directed control
+### Implications for the dual associative theory of habitual and goal-directed control
 
 Rapid execution, invariant response topography, action chunking, and low cognitive load have all been considered essential criteria for the definition of habits (Balleine and Dezfouli, 2019; Haith and Krakauer, 2018). We have successfully achieved all these elements with our app using the criteria of extensive training and context stability, both previously shown to be essential to enhance formation and strengthening of habits (Haith and Krakauer, 2018; Verplanken and Wood, 2006). Context stability was provided by the tactile, visual, and auditory stimulation associated with the phone itself, which establishes a strong and similar context for all participants, regardless of their concurrent circumstances. Overtraining has been one of the most important criteria for habit development, and used by many as an operational definition on how to form a habit (Dickinson et al., 1995; Haith and Krakauer, 2018; Tricomi et al., 2009) (for a review, see Balleine and O’Doherty, 2010), despite current controversies raised by de Wit et al., 2018, on its use as an objective test of habits. A recent study has demonstrated though that even short overtraining (1 day) is effective at producing habitual behavior in participants high in affective stress (Pool et al., 2022), confirming previous suggestions for the key role of anxiety and stress on the behavioral expression of habits (Dias-Ferreira et al., 2009; Hartogsveld et al., 2020; Schwabe and Wolf, 2009). Here, we have trained a clinical population with moderately high baseline levels of stress and anxiety, with training sessions of a higher order of magnitude than in previous studies (de Wit et al., 2018; Gera et al., 2022). By all accounts our overtraining is valid: to our knowledge the longest overtraining in human studies achieved so far. All participants attained automaticity, exhibiting similar and stable asymptotic performance, both in terms of speed and the invariance in the kinematics of the motor movement.
 
@@ -242,7 +447,7 @@ We succeeded in achieving automaticity – which at a neural level is known to r
 
 Regardless of whether the trained action sequences are labeled as procedural habits or goal-directed motor skills, one must question why OCD patients preferred familiar sequences in specific situations, even when it seemed counterproductive (e.g. in the effort condition). This observation leads to the hypothesis that motivation for action sequences might include other factors besides explicit goals, such as monetary rewards. The apparent (intrinsic) therapeutic value of performing these sequences further blurs the attribution of a singular goal such as monetary reward to human action sequences. One implication of this analysis may be to consider that behavior in general is ‘goal-directed’ but may vary in the balance of control by external and internal goals. This perspective aligns with motor control theories that classify the successful completion of a motor action, in the spatio-temporal sense, as ‘goal-related’. Hence, underlying any action sequence is possibly a hierarchy of objectives, ranging from overt rewards like money to intrinsic relief from an endogenous state (e.g. anxiety or boredom). In light of these insights, the dual associative process framework of behavioral control might be better understood in terms of the relative importance of extrinsic versus intrinsic outcomes. Another possible formulation is that habits, which depend initially on cached or historically acquired rewarding action values, may not necessarily lose current value, but instead acquire alternative sources of value (Hommel and Wiers, 2017; Kruglanski and Szumowska, 2020; O’Doherty, 2014).
 
-## Implications for understanding OCD symptoms
+### Implications for understanding OCD symptoms
 
 We observed a slower and more irregular performance in patients with OCD as compared to healthy participants at the beginning of training. This was expected given previous reports of visuospatial and fine-motor skill difficulties in patients with OCD (Bloch et al., 2011). However, despite this initial slowness, no procedural learning deficits were found in our patient sample. This finding is inconsistent with other implicit learning deficits previously reported in OCD using the serial reaction time (SRT) paradigm (Deckersbach et al., 2002; Joel et al., 2005; Kathmann et al., 2005; Rauch et al., 2001; Rauch et al., 1997). Nevertheless, this result aligns with recent studies demonstrating successful learning both in patients with OCD (Soref et al., 2018) and in healthy individuals with subclinical OCD symptoms (Barzilay et al., 2022) when instructions are given explicitly, and participants intentionally search for the underlying sequence structure. In fact, our task does not tap into memory processes as strongly as SRT tasks because we explicitly demonstrate the sequence to participants before they begin their 30-day training, which likely decreases demands on procedural learning.
 
@@ -254,11 +459,11 @@ Considering the hypothetically greater tendency in OCD to form habitual/automati
 
 Finally, we also expected that OCD patients would show a greater resistance than controls in adjusting their behavior when the extrinsic relative value of the trained familiar sequences is diminished, in the re-evaluation procedure. Our findings show that this is partially the case, depending on the type of reward considered. Although we showed that all participants, including OCD patients, were apparently goal-directed in terms of gaining money this was not so clear when goal re-evaluation involved the physical effort expended. In this latter manipulation, participants were less goal-oriented and OCD patients preferred to perform the longer, familiar, to the shorter, novel sequence, thus exhibiting significantly greater habitual tendencies, as compared to controls. Such group differences may be driven hypothetically by the intrinsic value associated with the automatic sequences.
 
-## Possible beneficial effect of action sequence training on OCD symptoms as habit reversal therapy
+### Possible beneficial effect of action sequence training on OCD symptoms as habit reversal therapy
 
 OCD patients engaged significantly more with the Motor Sequencing App and enjoyed it more than HV. Additionally, the patients more prone to routine habits (COHS), with higher OCI scores, and who additionally showed a preference for familiar sequences (possibly by attributing to them intrinsic value), found the use of the app beneficial, exhibiting symptomatic improvement based on the YBOCS. One hypothesis for the therapeutic potential of this motor sequencing training is that the trained action sequences may disrupt OCD compulsions, either via ‘distraction’ or habit ‘replacement’, by engaging the same neural ‘habit circuitry’. This habit ‘replacement’ hypothesis is in line with successful interventions in Tourette syndrome (Hwang et al., 2012), tic disorders (Bate et al., 2011), and trichotillomania (Morris et al., 2013).
 
-## Limitations
+### Limitations
 
 As mentioned above, we were unable to employ the often-mooted ‘gold standard’ criterion of resistance to devaluation because it would have invalidated the subsequent tests. This meant that we were unable to conclusively define the trained action sequences as habitual according to the full set of Balleine and Dezfouli, 2019 criteria, although they satisfied other important criteria such as automatic execution, invariant response topography, action chunking and low cognitive load. Nevertheless, the utility of the devaluation criterion has been questioned especially when applied to human studies of habit learning. This is because achieving devaluation can be difficult given that human behavior has multiple goals, some of which may be implicit, and thus difficult to control experimentally, as well as being subject to great individual variation. In fact recent analyses of habitual behavior have not employed devaluation or revaluation as a criterion (Du and Haith, 2023). That study ascertains habits using different criteria and provides supporting evidence for trained action sequences being understood as skills, with both goal-directed and habitual components.
 
@@ -266,33 +471,243 @@ Although we found a significant preference for the trained action sequence in OC
 
 Finally, some of the conclusions relating to the effects of OCD severity on sequence preference without feedback were based only on a post hoc exploratory analysis. Specifically, only those patients with higher compulsivity (OCI) and COHS scores exhibited this preference, therefore consistent with the hypothesis described above of the importance of intrinsic value of the habitual sequence to the development of compulsions. Evidence of this intrinsic value was provided by the greater engagement with, and therapeutic findings for, the app training in these patients. However, the latter effect needs to be confirmed in a registered clinical trial in a controlled manner, which is ongoing.
 
-## Conclusion
+### Conclusion
 
 We employed a battery of behavioral tasks designed to investigate two key hypotheses of the goal/habit imbalance theory of compulsion, specifically pertaining to enhanced habit formation and automaticity and impaired goal re-evaluation in individuals with OCD. Our findings did not support greater habit formation nor heightened automaticity in patients with OCD. Moreover, evidence for patients’ ability to adapt behavior when facing environmental changes was mixed. In certain contexts, OCD patients were able to behaviorally re-adjust (e.g. when reward is monetary) but in others (e.g. when involving motor effort) patients demonstrated a distinct augmented inclination to perform their trained/familiar action sequences, attributing higher intrinsic value to them. Interestingly, this preference was more pronounced in patients with higher compulsivity and habitual tendencies, who engaged significantly more with the motor habit-training app, reporting symptom relief after the experiment. This suggests a promising avenue for investigating the therapeutic potential of this application as a tool for habit reversal in the context of OCD.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We recruited 33 OCD patients and 34 healthy individuals, matched for age, gender, IQ, and years of education. Two participants (one HV and one OCD) were excluded because they did not perform the minimum required training (i.e. two daily practices for a period of 30 days). Therefore, a total of 32 OCD patients (19 females) and 33 healthy participants (19 females) were included in the analysis. Most participants were right-handed (left-handed: four OCD and six HV). Participants’ demographics and clinical characteristics are presented in Table 2 and Figure 10.
+
+**Table 2.**
+ Demographic and clinical characteristics of OCD patients and matched healthy controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HV</th>
+      <th>OCD</th>
+      <th colspan="3">Statistics</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>(n = 33)</th>
+      <th>(n = 32)</th>
+      <th>t</th>
+      <th>df</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender ratio (male/female)</td>
+      <td>14/19</td>
+      <td>13/19</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>40.2 (11.7)</td>
+      <td>39.3 (12.5)</td>
+      <td>0.29</td>
+      <td>63</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Years of education</td>
+      <td>16.8 (3.4)</td>
+      <td>15.6 (3.5)</td>
+      <td>1.33</td>
+      <td>63</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Predicted verbal IQ</td>
+      <td>117.8 (5.6)</td>
+      <td>118.4 (4.6)</td>
+      <td>–0.43</td>
+      <td>63</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>YBOCS session 1</td>
+      <td>0.0</td>
+      <td>24.3 (5.7)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>YBOCS Obsessions session1</td>
+      <td>0.0</td>
+      <td>12.2 (3.0)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>YBOCS Compulsions session1</td>
+      <td>0.0</td>
+      <td>11.8 (3.7)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>YBOCS session 2</td>
+      <td>0.0</td>
+      <td>22.9 (6.6)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>YBOCS Obsessions session2</td>
+      <td>0.0</td>
+      <td>11.6 (3.1)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>YBOCS Compulsions session2</td>
+      <td>0.0</td>
+      <td>11.1 (4.2)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Trait Anxiety (STAI-T)</td>
+      <td>28.6 (5.9)</td>
+      <td>56.4 (8.6)</td>
+      <td>–15.11</td>
+      <td>63</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>State Anxiety (STAI-S)</td>
+      <td>28.6 (5.9)</td>
+      <td>56.4 (8.6)</td>
+      <td>–15.2</td>
+      <td>63</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>BDI</td>
+      <td>1.7 (2.3)</td>
+      <td>16.5 (9.4)</td>
+      <td>–8.72</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>MADRS</td>
+      <td>0.9 (1.5)</td>
+      <td>11.8 (6.2)</td>
+      <td>–9.88</td>
+      <td>63</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>OCI</td>
+      <td>7.3 (9.1)</td>
+      <td>68.4 (30.9)</td>
+      <td>–10.83</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Checking</td>
+      <td>0.9 (1.9)</td>
+      <td>11.7 (9.4)</td>
+      <td>–6.5</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Ordering</td>
+      <td>0.7 (1.6)</td>
+      <td>5.8 (3.3)</td>
+      <td>–7.92</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Washing</td>
+      <td>7.3 (9.2)</td>
+      <td>66.0 (28.6)</td>
+      <td>–11.18</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Doubting</td>
+      <td>1.9 (2.7)</td>
+      <td>13.6 (7.5)</td>
+      <td>–8.37</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Obsessing</td>
+      <td>1.1 (1.8)</td>
+      <td>7.9 (4.0)</td>
+      <td>–8.82</td>
+      <td>62</td>
+      <td>&lt;0.001***</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: OCD, patients with obsessive-compulsive disorder; HV, healthy volunteers; YBOCS, Yale-Brown Obsessive-Compulsive Scale; MADRS, Montgomery-Asberg Depression Rating Scale; STAI, The State-Trait Anxiety Inventory; BDI, Beck Depression Inventory; OCI, Obsessive-Compulsive Inventory. Standard deviations are in parentheses: mean (std). One patient missed the BDI and the OCI questionnaires. *** = p < 0.001 level (two-tailed)._
 
 Healthy individuals were recruited from the community, were all in good health, unmedicated, and had no history of neurological or psychiatric conditions. Patients with OCD were recruited through an approved advertisement on the OCD action website (https://ocdaction.org.uk/) and local support groups and via clinicians in East Anglia. All patients were screened by a qualified psychiatrist of our team, using the Mini International Neuropsychiatric Inventory (MINI) to confirm the OCD diagnosis and the absence of any comorbid psychiatric conditions. Patients with hoarding symptoms were excluded. Our patient sample comprised 6 unmedicated patients, 20 taking selective serotonin reuptake inhibitors (SSRIs), and 6 on a combined therapy (SSRIs+antipsychotic). OCD symptom severity and characteristics were measured using the YBOCS scale (Goodman et al., 1989), mood status was assessed using the Montgomery-Asberg Depression Rating Scale (MADRS) (Montgomery and Asberg, 1979) and Beck Depression Inventory (BDI) (Beck et al., 1961), anxiety levels were evaluated using the State-Trait Anxiety Inventory (STAI) (Spielberger et al., 1983), and verbal IQ was quantified using the National Adult Reading Test (NART) (Nelson and Willison, 1982). All patients included suffered from OCD and scored >16 on the YBOCS, indicating at least moderate severity. They were also free from any additional axis I disorders. General exclusion criteria for both groups were substance dependence, current depression indexed by scores exceeding 16 on the MADRS, serious neurological or medical illnesses, or head injury. All participants completed additional self-report questionnaires measuring:
 
 All participants gave written informed consent prior to participation, in accordance with the Declaration of Helsinki, and were financially compensated for their participation. This study was approved by the East of England – Cambridge South Research Ethics Committee (16/EE/0465).
 
-## Phase B: Tests of action sequence preference and re-evaluation
+### Phase B: Tests of action sequence preference and re-evaluation
 
-## Experiment 2: Explicit preference task
+#### Experiment 2: Explicit preference task
 
 Participants observed, on each trial, two sequences identified by a corresponding image, and were asked to choose which one they wanted to play. Once the choice was made, the image correspondent to the selected sequence was highlighted in blue. Participants then played the sequence. The task included 3 conditions (15 trials each). Each condition comprised a specific sequence pair: 2 experimental conditions pairing the app preferred sequence (putative procedural habit) with a goal-seeking sequence and 1 control condition pairing both app sequences trained at home. The conditions were as follows: (1) app preferred sequence versus app non-preferred sequence (control condition); (2) app preferred sequence versus any 6-move sequence (experimental condition 1); (3) app preferred sequence versus any 3-move sequence (experimental condition 2). The app preferred sequence was the putative habitual sequence and the ‘any 6’- or ‘any 3’-move sequences were the goal-seeking sequences because they are supposedly easier: they could comprise any key press of participant’s choice (e.g. the same single key press repeatedly six or three times, respectively) and they could have same or different key press combinations every time the ‘any-sequence’ needed to be input. The conditions (15 trials each) were presented sequentially but counterbalanced among participants. See Figure 7a for illustration of the task.
 
-## Experiment 3: Two-choice appetitive learning task
+#### Experiment 3: Two-choice appetitive learning task
 
 On each trial, participants were presented with two ‘chests’, each containing an image identifying the sequence that needed to be completed to be able to open the chest. Participants had to choose which chest to open and play the correct sequence to open it. Their task was to learn by trial and error which chest would give them more rewards ‘gems’, which by the end of the experiment would be converted into real monetary reward. If mistakes were made inputting the sequences, participants could simply repeat the moves until they were correct, without any penalty. Behavior was assessed based on participants’ choice, regardless of the accuracy of the sequence. The task included 4 conditions (40 trials each), with chest-pairs correspondent to the following motor sequences (see also Figure 8 for illustration of each condition):
 
 As in the preference task described above, the ‘any 6-move’ or ‘any 3-move’ sequences could comprise any key press of participant’s choice (e.g. the same single key press repeatedly six or three times, respectively) and could be played by different key press combinations on each trial. The novel sequence (in condition 2) was a 6-move sequence of similar complexity and difficulty as the app sequences, but only learned on the day, before starting this task (therefore, not overtrained). The training of this novel sequence comprised 40 trials only: sufficient to learn the sequence without overtraining. Initially lighted keys guided the learning (similarly to the app training). After the initial five trials, the lighted cues were removed, and participants were required to input the previously well-learned correct 6-move sequence. When an error occurred, the correct input key(s) lighted up on the following trial (a few milliseconds before participants made key presses), to remind participants of the correct sequence and help them consolidate learning of the novel sequence. In conditions 1, 2, and 3, higher monetary outcomes were given to the alternative sequences. To remove the uncertainty confound commonly linked to probabilistic tasks, conditions 1, 2, and 3 followed a deterministic nature: in all trials, the choice for the preferred app sequence was rewarded with smaller monetary outcomes (sampled from a random distribution between 1 and 7 gems) whereas the alternative option always provided higher monetary outcomes (sampled from a random distribution between 8 and 15 gems). Therefore, variable amount of reward that did not overlap was given (deterministic). Condition 4, on the other hand, kept the monetary value equivalent for the two options (maintaining a probabilistic rather than deterministic contingency) but offered a significantly easier/shorter alternative sequence. This set up a comparison between the intrinsic value of the familiar sequence and a motor-wise less effortful sequence. To prevent excessive memory load, which could introduce potential confounds, conditions were presented sequentially rather than intermixed, but the order was counterbalanced among participants (Table 3).
 
-## Statistical analyses
+**Table 3.**
+ Follow-up task instructions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Explicit preference task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>You will be given two sequences to choose from.You can play either of them and switch as you go.Select the sequences using the left and right pads and then play it</td>
+    </tr>
+    <tr>
+      <td>Two-choice appetitive instrumental task</td>
+    </tr>
+    <tr>
+      <td>In the following task, you will need to choose between two chests. Pick a chest using the left and right pads and play the matching sequence to open it. Open any chest you want. One of the chests may reward you more than the other. The more gems you get, the more money you will earn at the end of the task. Try to win as much as you can! You will receive your winnings at the end of the study.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analyses
 
 Participant’s characteristics and self-reported questionnaires were analyzed with χ2 and independent t-tests, respectively. The Motor Sequencing App automatically uploaded the data to a cloud-based database. This task enabled us to compare patients with OCD and HV in the following measures: training engagement (which included as primary output measures of the total number of practices completed and app engagement as defined as the number of sequences attempted, including both correct and incorrect sequences); procedural learning, automaticity development, sensitivity to reward (see definitions and description of data analyses in Results section); and training effects on symptomatology as measured by the YBOCS difference pre-post training. The Phase B experiments enabled further investigation of preference and re-evaluation strategies. The primary outcome was the number of choices.
 
@@ -302,6 +717,6 @@ In the case of non-significant effects in the factorial analyses, we assessed th
 
 The diurnal patterns of app use (Figure 2b and c) were assessed in each group using circular statistics (Mardia, 1975), with the ‘circular’ package in R (R version 4.3.1; 2023-06-16). This provided the group-level mean vector length and direction. To assess on the group level whether the daily practice data were uniformly distributed or, alternatively, oriented toward a specific time, we used a Rayleigh test (Landler et al., 2021; Mardia, 1975). We adapted code from Galvez-Pol et al., 2022. To test differences between two circular distributions (OCD, HV), we followed the recommendations of Landler et al., 2021, and employed the high-powered Watson’s U2 test, a non-parametric rank-based test (function watson.two.test in R).
 
-## Code availability
+### Code availability
 
 The code for the main analyses is provided with this paper. It is available in the Open Science Framework, in the following link: https://osf.io/9xrdz/.

@@ -12,9 +12,9 @@
 ### Affiliations
 
 1. Biome Inc Kyoto Japan
-2. https://ror.org/00q4vv597 Department of Ocean Science, Hong Kong University of Science and Technology Kowloon Hong Kong
-3. https://ror.org/02kpeqv85 Hakubi Center, Kyoto University Kyoto Japan
-4. https://ror.org/02kpeqv85 Center for Ecological Research, Kyoto University Shiga Japan
+2. Department of Ocean Science, Hong Kong University of Science and Technology Kowloon Hong Kong ([ROR:00q4vv597](https://ror.org/00q4vv597))
+3. Hakubi Center, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+4. Center for Ecological Research, Kyoto University Shiga Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
 5. Toyohashi Museum of Natural History Aichi Japan
 
 † Corresponding author
@@ -35,7 +35,7 @@ To fuel communities’ engagement in biodiversity surveys and environmental educ
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig1-v1.jpg)
 
-**Figure 1.:** Biome.(1) Users can upload images that were taken by the smartphone camera or import existing images from the storage, including those imported from external devices. (2) Users select whether the image is about animals or plants to activate the species identification artificial intelligence (AI). (3) The AI analyses the image and its metadata to generate a candidate species list. (4) Alternatively, users can input the taxon name manually and obtain a list of candidate species. To submit the occurrence record, users can either (5) seek identification assistance from other users through the ‘ask Biomers’ feature, or (6) identify the species from the list. To the records, users can add memos and tags indicating phenology, life stage, sex, and whether the individual is wild or captive.
+**Figure 1.:** (1) Users can upload images that were taken by the smartphone camera or import existing images from the storage, including those imported from external devices. (2) Users select whether the image is about animals or plants to activate the species identification artificial intelligence (AI). (3) The AI analyses the image and its metadata to generate a candidate species list. (4) Alternatively, users can input the taxon name manually and obtain a list of candidate species. To submit the occurrence record, users can either (5) seek identification assistance from other users through the ‘ask Biomers’ feature, or (6) identify the species from the list. To the records, users can add memos and tags indicating phenology, life stage, sex, and whether the individual is wild or captive.
 
 Species distribution models (SDMs) are effective statistical tools for assessing biodiversity at specific sites while accounting for biases in survey efforts. SDMs use species occurrence records and environmental conditions to estimate the potential geographic ranges and suitable habitats for species (Booth et al., 2014; Box, 1981; Elith et al., 2011; Hutchinson, 1957; Phillips et al., 2006). These models play a crucial role in conservation and restoration planning by helping predict how changes in land use and climate impact species distributions (Kindt, 2023; Porfirio et al., 2014; Urban et al., 2016). While species presence/absence data—which needs extensive surveys by experts—is limited, presence-only data—which can be obtained from communities’ observations—is much more available. MaxEnt (Phillips et al., 2006; Phillips and Dudík, 2008) is one of the most popular SDM methods due to its computational efficiency and estimation accuracy (Valavi et al., 2022). It can estimate species distribution from presence-only data by maximising the entropy of the probability distribution while satisfying constraints based on the available information (Elith et al., 2011; Phillips and Dudík, 2008). Since MaxEnt only requires occurrence records, it is well-suited for empowering community-based observations to predict species distributions. Also, while community-sourced data often suffer from spatially biased sampling efforts (i.e. sampling tends to concentrate in densely populated or touristic areas; Kendal et al., 2020; Reddy and Dávalos, 2003), SDMs such as MaxEnt can account for such spatial biases by considering the spatial distribution of sampling efforts when selecting pseudo-absence (background) locations (Milanesi et al., 2020; Phillips et al., 2009). When sampling efforts are adequately controlled, adding community-sourced data improves the accuracy of SDMs (Johnston et al., 2018; Robinson et al., 2020; Steen et al., 2019). This implies that SDMs may be substantially improved by utilising rapidly accumulating Biome‘s species occurrence records if we adequately control the sampling efforts.
 
@@ -43,19 +43,288 @@ Here, we show the quality of community-based data gathered through the smartphon
 
 ## Results
 
-## The amount and quality of Biome data
+### The amount and quality of Biome data
 
 By 7 July 2023, Biome had accumulated 5,275,457 occurrence records of 40,957 species across the Japanese archipelago (Figure 2A). The amount of occurrence records submitted to Biome has increased across the years (Figure 2B). On average, in 2022, users submitted 5407 records per day. The distribution of data along environmental gradients somewhat differs between Biome and Traditional survey data. To elucidate this distinction, we employed principal component (PC) analysis to summarise all environmental variables. The two datasets demonstrated divergent distribution patterns along PC1 (Figure 2C). This component, accounting for 6.1% of the total variation, is primarily influenced by land use, topography, and climate (Supplementary file 1). Among the environmental variables, a notable contrast between the datasets was observed in relation to the natural-urban gradient. The Biome data exhibited a relatively uniform distribution encompassing the entire gradient, while Traditional survey data was substantially biased towards natural areas (Figure 2C). The majority of records are attributed to insects (31.2%) and seed plants (41.8%), which are relatively accessible and can be easily photographed using smartphones (Figure 2D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig2-v1.jpg)
 
-**Figure 2.:** Biome.Data distributions are shown based on all records submitted to Biome by 7 July 2023 (N = 5,275,457). (A) Spatial distribution of records across Japan. (B) Accumulation of records through time. The barplot represents the number of records each month and the line shows the cumulative amount of records. (C) Distributions of records along with PC1 of all environmental variables and standardised area occupancy of urban-type land uses. Grey and green represent distributions of Traditional and Biome data, respectively. (D) Taxonomic composition of records is shown as the area sizes. ‘Other plant’ consists of non-seed terrestrial plants; ‘insects’ include Arachnids and Insects; ‘arthropods’ cover any Arthropod not included in insects; ‘other animals’ covers all invertebrates not included in the taxa above.
+**Figure 2.:** Data distributions are shown based on all records submitted to Biome by 7 July 2023 (N = 5,275,457). (A) Spatial distribution of records across Japan. (B) Accumulation of records through time. The barplot represents the number of records each month and the line shows the cumulative amount of records. (C) Distributions of records along with PC1 of all environmental variables and standardised area occupancy of urban-type land uses. Grey and green represent distributions of Traditional and Biome data, respectively. (D) Taxonomic composition of records is shown as the area sizes. ‘Other plant’ consists of non-seed terrestrial plants; ‘insects’ include Arachnids and Insects; ‘arthropods’ cover any Arthropod not included in insects; ‘other animals’ covers all invertebrates not included in the taxa above.
 
 Out of all the records submitted to Biome, a total of 2,373,303 records (45.0%) successfully passed through the automatic filtering process. This dataset, referred to as the Biome data, is utilised for subsequent investigations. The quality of Biome data varied across taxa and the rarities of species (Table 1). The fraction of the records of wild individuals exceeded 97% in insects and birds, while it was lower than 90% in molluscs, seed plants, mammals and fishes. Among the records of wild individuals, at the species level, identification accuracy was higher than 95% in birds, reptiles, mammals, and amphibians but less than 90% in insects, fishes, and seed plants. At the genus level, identification accuracy was higher than 90% in all taxa except for insects. In the case of fishes and seed plants, identifications became 5–6% more accurate at the genus level compared to the species level. The family was correctly identified in more than 94% of records in all taxa examined. Common species had higher identification accuracy than rare species (average value, 95% vs. 87%). This tendency was prominent in insects and seed plants, but less in the other taxa. These results suggest that identifying rare species in taxonomically diverse taxa (i.e. seed plants and insects) is a challenging task.
 
-## The performance of SDMs
+**Table 1.**
+ Data quality of Biome.The fraction of records documenting wild individuals, and identification accuracy at species, genus, and family levels among the records documenting wild individuals are shown. Species were identified only for records documenting wild individuals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species group</th>
+      <th>Species rarity</th>
+      <th>N</th>
+      <th>Wild/total (%)</th>
+      <th>Species correct/wild (%)</th>
+      <th>Genus correct/wild (%)</th>
+      <th>Family correct/wild (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>Total</td>
+      <td>1420</td>
+      <td>81.6</td>
+      <td>91</td>
+      <td>93.6</td>
+      <td>96.9</td>
+    </tr>
+    <tr>
+      <td>Seed plant</td>
+      <td>Total</td>
+      <td>290</td>
+      <td>86.2</td>
+      <td>89.6</td>
+      <td>94.4</td>
+      <td>97.2</td>
+    </tr>
+    <tr>
+      <td>Mollusca</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>87.9</td>
+      <td>90.2</td>
+      <td>91.1</td>
+      <td>96.7</td>
+    </tr>
+    <tr>
+      <td>Insect</td>
+      <td>Total</td>
+      <td>290</td>
+      <td>100</td>
+      <td>83.4</td>
+      <td>86.9</td>
+      <td>94.1</td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>73.6</td>
+      <td>87.4</td>
+      <td>93.2</td>
+      <td>96.1</td>
+    </tr>
+    <tr>
+      <td>Amphibian</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>93.6</td>
+      <td>96.2</td>
+      <td>96.2</td>
+      <td>98.5</td>
+    </tr>
+    <tr>
+      <td>Reptile</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>91.4</td>
+      <td>97.7</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Bird</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>98.6</td>
+      <td>98.6</td>
+      <td>99.3</td>
+      <td>99.3</td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>Total</td>
+      <td>140</td>
+      <td>80.7</td>
+      <td>95.6</td>
+      <td>95.6</td>
+      <td>96.5</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>Rare</td>
+      <td>710</td>
+      <td>88.7</td>
+      <td>87</td>
+      <td>91</td>
+      <td>95.6</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>Common</td>
+      <td>710</td>
+      <td>91</td>
+      <td>95</td>
+      <td>96.3</td>
+      <td>98.3</td>
+    </tr>
+    <tr>
+      <td>Seed plant</td>
+      <td>Rare</td>
+      <td>145</td>
+      <td>80.7</td>
+      <td>82.9</td>
+      <td>91.5</td>
+      <td>94.9</td>
+    </tr>
+    <tr>
+      <td>Seed plant</td>
+      <td>Common</td>
+      <td>145</td>
+      <td>91.7</td>
+      <td>95.5</td>
+      <td>97</td>
+      <td>99.2</td>
+    </tr>
+    <tr>
+      <td>Mollusca</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>82.9</td>
+      <td>86.2</td>
+      <td>87.9</td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <td>Mollusca</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>92.9</td>
+      <td>93.8</td>
+      <td>93.8</td>
+      <td>96.9</td>
+    </tr>
+    <tr>
+      <td>Insect</td>
+      <td>Rare</td>
+      <td>145</td>
+      <td>100</td>
+      <td>75.2</td>
+      <td>80</td>
+      <td>91.7</td>
+    </tr>
+    <tr>
+      <td>Insect</td>
+      <td>Common</td>
+      <td>145</td>
+      <td>100</td>
+      <td>91.7</td>
+      <td>93.8</td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>74.3</td>
+      <td>88.5</td>
+      <td>94.2</td>
+      <td>94.2</td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>72.9</td>
+      <td>86.3</td>
+      <td>92.2</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Amphibian</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>95.7</td>
+      <td>95.5</td>
+      <td>95.5</td>
+      <td>98.5</td>
+    </tr>
+    <tr>
+      <td>Amphibian</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>91.4</td>
+      <td>96.9</td>
+      <td>96.9</td>
+      <td>98.4</td>
+    </tr>
+    <tr>
+      <td>Reptile</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>94.3</td>
+      <td>95.5</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Reptile</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>88.6</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Bird</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>97.1</td>
+      <td>98.5</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Bird</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>100</td>
+      <td>98.6</td>
+      <td>98.6</td>
+      <td>98.6</td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>Rare</td>
+      <td>70</td>
+      <td>81.4</td>
+      <td>91.2</td>
+      <td>91.2</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>Mammal</td>
+      <td>Common</td>
+      <td>70</td>
+      <td>80</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+### The performance of SDMs
 
 SDMs using Biome + Traditional data, including Biome data at 50%, were more accurate than those modelled only using Traditional survey data when the two datasets have the same amount of occurrence records (Figure 3). Our analysis revealed that although the intercept of the Boyce index (BI, model accuracy metric that ranges between –1 and 1) did not differ between the two datasets (generalised linear mixed model, see ‘Methods’: β = 0.02 ± 0.03, t = 0.60, p=0.55), Biome + Traditional data consistently led to a more rapid increase in SDM accuracy as the amount of data increased, compared to models solely relying on Traditional survey data (β = 0.02 ± 0.01, t = 3.72, p<0.001).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig3-v1.jpg)
+
+**Figure 3.:** Accuracy of species distribution models (SDMs) using Traditional survey data (grey dots and lines) and Biome + Traditional data (i.e. 50% of Biome data: green). Each SDM was performed with a specific dataset, species, and the amount of records. For each species and amount of records, we computed the average model accuracy (Boyce index) from three replicated runs. Subsequently, we calculated the median model accuracy across species for each amount of records. These medians were then illustrated for each taxon in the strip of each respective panel. The ‘Endangered’ category includes species that are listed as endangered on Japan’s national or prefectural red lists.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig3-figsupp1-v1.jpg)
 
 When compared to SDMs using Traditional survey data, those using Biome + Traditional data achieved a high level of accuracy with a much smaller amount of data. For instance, BI, which ranges from –1 to 1, exceeds 0.9 with 294 ± 471 records (mean ± SD across all species) in the Biome + Traditional data, whereas the Traditional survey data requires 2129 ± 4157 records to achieve the same accuracy. This was also true in endangered species (included in Japanese national or prefectural red lists); although 2336 ± 3718 Traditional survey records were required to exceed 0.9 of BI, only 338 ± 571 were required for Biome + Traditional data.
 
@@ -63,13 +332,13 @@ Because we controlled the proportion of Biome data within the Biome + Traditiona
 
 ## Discussion
 
-## Biome: The amount and quality of submitted data
+### Biome: The amount and quality of submitted data
 
 Since its launch in 2019, the app Biome has accumulated species occurrence data rapidly (Figure 2). Despite our concerted efforts to engage non-expert users through gamification features, it is important to acknowledge that an excessive influx of non-expert users could potentially compromise the quality of the collected data. This could manifest in misidentifications or incomplete documentation, such as failing to appropriately label non-wild individuals. We thus have developed algorithms to exclude such suspicious records based on the features of records and users’ behaviour on the app. The implementation of automatic data filtering techniques is expected to enhance the quality of the data, although further refinement is necessary. Notably, for insects and birds, which encompass numerous species that can be kept in captivity, the majority of records that underwent filtering procedures were restricted to observations of wild individuals. Yet, the fraction of non-wild individuals is high in several taxa such as fishes and seed plants. In response, we have updated the posting flow in the app to prompt users to differentiate between non-wild and wild individuals. Further analysis is warranted to evaluate the impact of this update on data quality.
 
 Once we could exclude non-wild individuals, species identification accuracy exceeded 95% in taxa with moderate species diversity (amphibians, reptiles, birds, and mammals). In seed plants, Biome’s species identification accuracy was 90%, which is higher than the accuracy of auto-suggest identification by commonly used apps for plants (69%, PlantNet, PlantSnap, LeafSnap, iNaturalist, and Google Lens; Hart et al., 2023). During the invasive plants survey in the United States, the reports by non-professional volunteers were 72% correct (Crall et al., 2011). The higher accuracy of species identification in Biome data can be attributed to two key factors. Firstly, the vigilant oversight of the user community through the ‘suggest identification’ feature plays a crucial role. Biome encourages users to participate in suggesting identifications by offering ‘points’ as rewards for their contributions. Secondly, the species identification AI algorithm leverages past occurrence data from nearby areas, resulting in increasingly accurate automatic identifications as the data accumulates. Given these, as a community science app, the data quality of Biome is decent. Yet, rare species generally showed lower identification accuracy, which would require identification by experts and further improvement of species identification AI algorithm.
 
-## Species distribution modelling
+### Species distribution modelling
 
 The inclusion of Biome data resulted in improved accuracy of SDMs (Figure 3). The most accurate model predictions were obtained when the training data consisted of 50–70% Biome data (Appendix 1), highlighting the necessity of incorporating both traditional surveys and citizen observations for a comprehensive understanding of species distributions (Miller et al., 2019; Pacifici et al., 2017; Robinson et al., 2020).
 
@@ -81,7 +350,7 @@ The impact of community-sourced data on SDMs has primarily been investigated usi
 
 Importantly, SDMs for endangered species, which often suffer from data deficit (Erickson and Smith, 2023; Wisz et al., 2008), became accurate in a much fewer amount of records by blending Biome data (Figure 3). Specifically, a threshold of >0.9 BI could be reached with only around 300 records when using Biome data, whereas over six times of data is required when using Traditional survey data only. This finding highlights the importance of community-sourced data not only for monitoring the dynamics of endangered species (Chandler et al., 2017; Zapponi et al., 2017) but also for modelling purposes. Considering the rapid accumulation of Biome data, Biome data would make a significant contribution to the more effective distribution modelling of endangered species.
 
-## Limitations of this study
+### Limitations of this study
 
 In assessing data quality, reidentification was impossible for records that did not photograph key traits for species identification. To address this limitation, further app improvements can include allowing users to submit multiple images. Encouraging users to document various body parts of organisms through multiple images would make capturing key identification traits much easier. This will make reidentification easier and possibly improve automatic species identification accuracy.
 
@@ -91,7 +360,7 @@ We evaluated SDMs based on spatial transferability using the central Japan regio
 
 Finally, our SDMs do not directly indicate the species' presence probability. The output from presence-only SDMs usually deviates from the probability of presence when species prevalence (i.e. the proportion of area where the species occupied, requiring presence/absence data throughout the area) is unavailable (Elith et al., 2011; Ward et al., 2009). Due to the unavailability of absence data, SDM outputs in this work are indirect measures of species presence and thus are not directly comparable across different species. Nonetheless, they are comparable within a species, providing useful information for understanding species distributions.
 
-## Future directions
+### Future directions
 
 By blending data from traditional surveys and communities, we improved the accuracy of species distribution estimates. This enhanced estimation lays the groundwork for more precise subsequent analyses. For instance, estimated distributions will be useful in selecting new protected areas or areas with Other Effective area-based Conservation Measures (OECMs): allowing a wider range of land use as long as biodiversity and ecosystem services are sustained/improved. Using estimated distributions of each species, hotspots of species or evolutionary diverse taxa can be inferred. Such sites will be good candidates for protected areas (Jones et al., 2016) or OECMs (Shiono et al., 2021). Further, estimated distributions can be used as input for spatial conservation prioritisation tools (e.g. Marxanl Ball et al., 2009).
 
@@ -105,7 +374,38 @@ Our platform facilitates collaboration among diverse stakeholders, including loc
 
 ## Methods
 
-## Occurrence record accumulation through the mobile app Biome
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 4.1.3; MaxEnt (using ENMeval 2.0 package on R)</td>
+      <td>R 4.1.3 (R Core Team, 2021); MaxEnt (Phillips et al., 2006; Phillips and Dudík, 2008);ENMeval 2.0 package (Kass et al., 2021)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Species occurrence data</td>
+      <td>Biome app, GBIF and others (see ‘Methods’)</td>
+      <td>For DOIs of GBIF data, see Supplementary file 2</td>
+      <td>For details, see section ‘Occurrence data’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Occurrence record accumulation through the mobile app Biome
 
 In April 2019, a free smartphone app called Biome was launched for the Japanese markets. The app has been downloaded 839,844 times by 13 September 2023. The app allows users to collect data on the distribution of plants and animals using their mobile devices. Users can post photographs of the plants and animals they find, and the app automatically records the location and timestamp from EXIF data. If the EXIF data is unavailable, users can manually input the locality and timestamp.
 
@@ -115,39 +415,190 @@ Users can view and comment on other users’ records. However, for conservation 
 
 We obtained occurrence records submitted to Biome by 7 July 2023. The raw data collected through Biome contains invalid presence records which we defined in the present study as unclear images, documenting non-wild individuals and misidentifications, and images including some privacy issues. To improve data quality, we excluded records deemed to be invalid mainly based on location metadata and users’ reactions to the record is as detailed below. This filtered Biome data is used in the subsequent investigations.
 
-## Filtering suspicious occurrence record in Biome data
+### Filtering suspicious occurrence record in Biome data
 
 Occurrence records of non-wild individuals were eliminated as much as possible by using the information provided by users and location of records. Biome users sometimes report inappropriate records (e.g. unclear images and images from websites or books), and we excluded all of those reported records. All private records were excluded because they can harbour inappropriate and misidentified records not being screened by other users. We also excluded occurrence records that users had marked as non-wild individuals: users have an option to label their records as photographing bred or cultivated individuals, or specimens. Records from cultural centres (i.e. zoos, botanical gardens, museums, and aquariums) and large pet stores were removed as well. During the data correction process, we prioritise the suggestions provided by certified users (see below for the definition), regardless of the decisions made by the users who originally created the record. Furthermore, we excluded records that have not been posted by certified users or have not received identification suggestions from certified users.
 
 Certified users are defined as users who achieved the higher accuracy of species identification (<15% of public occurrence records were suggested as misidentification by other users), submitted few inappropriate records (<0.5% of public records), and have created >20 public records. We also defined specialist users, a subset of certified users identified in each taxa (see Figure 2 for the classification), who made a total of >30 records or identification suggestions with high identification accuracy (the fraction of suggested records is less than the average of certified users in the taxa). Specialist users are used in determining pseudo-absence for SDMs.
 
-## Assessing the accuracy of records
+### Assessing the accuracy of records
 
 We investigated the proportion of occurrence records within the Biome data that were suitable for SDMs. Since SDMs are influenced by invalid presence records, we assessed the quality of Biome data based on a total of 1420 records from rare and common species of seed plants, molluscs, insects (including Arachnid and Insecta), fishes, mammals, birds, reptiles, and amphibians (Figure 4). We defined rare species as those with less than or equal to 10 occurrences in Biome data, and common species as those with the highest 15% of records in each taxonomic category. In each of the seed plant and insect species which account for the majority of Biome data (Figure 2D), we randomly selected 145 records of each rare and common species. For the other taxonomic categories, we chose each of the 70 records from rare and common species.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig4-v1.jpg)
 
-**Figure 4.:** Biome data.
-
 Records were first screened whether they targeted organisms (images with no organisms were discarded) and contained wild individuals. To assess the accuracy of species identification, species in the records that documented wild individuals were manually reidentified by experts with taxonomic knowledge (Figure 4). These experts have professional backgrounds, serving as a technician at a prefectural research institute (fish), highly experienced field survey conductors (plants and insects, respectively), a post-doctoral researcher (amphibians and reptiles, and mammals, respectively), and a museum curator (molluscs) specialising in the focal taxa. Then, by comparing species identifications by the experts and on Biome data, the results were classified into two categories: (1) correct based on the image and locality—based on the image, identification was probably correct, and the image locality matches with habitat/range of the species; (2) misidentification—records were reidentified by experts if possible. We also examined whether the identification was correct at genus and family levels.
 
-## Species distribution models
+### Species distribution models
 
-## Occurrence data
+#### Occurrence data
 
 To evaluate the impact of Biome data on SDM prediction accuracy, we compiled two datasets: ‘Traditional survey data’ and ‘Biome + Traditional data’. The Traditional survey data comprised records collected through conventional survey techniques (e.g. riverine census, forest inventory census, and museum specimens) primarily sourced from the National Census on River and Dam Environments (NCRE) and GBIF. In contrast, the Biome + Traditional data encompassed records submitted to Biome that passed filtering methods, in addition to the Traditional survey data. To control the relative proportion of Biome data, we constrained the fraction of Biome data within the Biome + Traditional data to 50% for each species. Our preliminary results showed that blending 50–70% of Biome data in training data improved prediction accuracy (Appendix 1). For traditional survey data, we downloaded occurrence records of relevant taxa from GBIF between 20 April 2023. To prevent significant differences between the sampling periods of the GBIF records and environmental data, we used the GBIF sampled after 1970. The clean_coordinates function of the R package ‘CoordinateCleaner’ was used to remove records with erroneous coordinates such as records from country capitals and centroids, and biodiversity institutions. We obtained occurrence data from the large occurrence datasets such as the NCRE and Forest Ecosystem Diversity Basic Survey. For the areas or taxa where occurrences were scarce, we further compiled the literature with detailed locality information, such as local species inventories. The amount of occurrence records in the modelled species and species coverage of each dataset is summarised in Table 2. For the species analysed (S9 Table), traditional survey data contains a negligible portion of community-sourced data (5.5%) because GBIF contains community-sourced data from iNaturalist and eBird.
 
-## Predictor variables
+**Table 2.**
+ List of species occurrence datasets used for constructing species distribution models (SDMs).To compare Biome dataset with the other datasets, iNaturalist and eBird data based on community science were classified as ‘Traditional survey’ data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Original dataset</th>
+      <th colspan="2">Occurrence records of modelled species</th>
+      <th rowspan="2">Species coverage among modelled species</th>
+      <th rowspan="2">Survey method</th>
+      <th rowspan="2">Data group in SDM</th>
+      <th rowspan="2">Down load date</th>
+      <th rowspan="2">Availability</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>Occu pancy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biome (filtering applied)</td>
+      <td>201,114</td>
+      <td>8.6</td>
+      <td>132/132</td>
+      <td>Citizen science through smartphone app</td>
+      <td>Biome</td>
+      <td>7 July 2023</td>
+      <td>https://biome.co.jp/</td>
+    </tr>
+    <tr>
+      <td>National Census on River and Dam Environments (NCRE)</td>
+      <td>1,413,541</td>
+      <td>60.2</td>
+      <td>126/132</td>
+      <td>Traditional survey on freshwater and its adjacent ecosystems</td>
+      <td>Traditional survey</td>
+      <td>10 January 2023</td>
+      <td>http://www.nilim.go.jp/lab/fbg/ksnkankyo/</td>
+    </tr>
+    <tr>
+      <td>Institute records registered at GBIF</td>
+      <td>530,952</td>
+      <td>22.6</td>
+      <td>116/132</td>
+      <td>Traditional survey and museum specimens</td>
+      <td>Traditional survey</td>
+      <td>7 July 2023</td>
+      <td>GBIF*</td>
+    </tr>
+    <tr>
+      <td>iNaturalist and eBird</td>
+      <td>118,050</td>
+      <td>5</td>
+      <td>110/132</td>
+      <td>Citizen science through smartphone app and web service</td>
+      <td>Traditional survey*</td>
+      <td>7 July 2023</td>
+      <td>GBIF*</td>
+    </tr>
+    <tr>
+      <td>Forest Ecosystem Diversity Basic Survey</td>
+      <td>80,929</td>
+      <td>3.4</td>
+      <td>42/132</td>
+      <td>Traditional survey on forest trees</td>
+      <td>Traditional survey</td>
+      <td>30 March 2023</td>
+      <td>http://forestbio.jp/</td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>3293</td>
+      <td>0.1</td>
+      <td>130/132</td>
+      <td>Traditional survey</td>
+      <td>Traditional survey</td>
+      <td>31 March 2023</td>
+      <td>Refs*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*For the list of GBIF download doi and literature, see Supplementary file 2._
+
+#### Predictor variables
 
 Predictors encompass a range of environmental variables recognised to impact species distribution (Table 3): land use (Newbold et al., 2015), climate (bioclim variables; Booth et al., 2014), vegetation (Abe, 2018), lithology (Ott, 2020), and elevational range (Udy et al., 2021). Additionally, categorical variables representing known biogeographic regions, reflecting geological history, were included. We applied Blakiston’s Line—Tsugaru straits dividing the northern and main islands of Japan (i.e. Hokkaido and Honshu islands)— reflecting a significant historical migration barrier for mammals and birds (Dobson, 1994; Saitoh et al., 2015). Due to the distinct fauna (Wepfer et al., 2016; Yamasaki, 2017), we also specified oceanic islands (i.e. Ogasawara and Daito isles) which have never been connected with the Asiatic continents. Continuous environmental variables were transformed into linear, quadratic, and hinge feature classes to illustrate nonlinear associations between environments and species occurrence (Phillips et al., 2017). The regularisation multiplier was set at 2.5, falling within the established optimal range of 1.5–4 (Elith et al., 2010; Moreno-Amat et al., 2015).
 
-## Pseudo-absence reflecting search effort
+**Table 3.**
+ Environmental data used for constructing species distribution models (SDMs).Years indicate the data collection period. Usage in the SDM shows how the variables were converted before using in the species distribution modelling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Variables</th>
+      <th>Year</th>
+      <th>Usage in the SDM</th>
+      <th>Available at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Land use</td>
+      <td>The area sizes of forests, rice fields, farms, wastelands, inland waters, beaches, ocean, golf courses, urbanised areas, and others</td>
+      <td>2016</td>
+      <td>Extracted six principal components (PCA) explained ≧ 80% of total variation. PCs were converted into linear, quadratic and hinge terms.</td>
+      <td>The Ministry of Land, Infrastructure, Transport and Tourism of Japan (MLIT) (https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-L03-a.html)</td>
+    </tr>
+    <tr>
+      <td>Forest type</td>
+      <td>Forest type (planted and natural)</td>
+      <td>1998</td>
+      <td>Converted into linear, quadratic, and hinge terms.</td>
+      <td>The Biodiversity Centre of Japan (http://gis.biodic.go.jp/webgis/index.html)</td>
+    </tr>
+    <tr>
+      <td>Climate</td>
+      <td>Monthly average, minimum and maximum temperature and precipitation</td>
+      <td>11981–2010</td>
+      <td>Transformed into 19 bioclimatic variables (Booth et al., 2014), then extracted three PCs explained ≧ 80% of total variation. Converted into linear, quadratic, and hinge terms.</td>
+      <td>MLIT (https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-G02-v3_0.html)</td>
+    </tr>
+    <tr>
+      <td>Elevation-al range</td>
+      <td>Differences between maximum and minimum elevation, and maximum slope</td>
+      <td>1981</td>
+      <td>Converted into linear, quadratic, and hinge terms.</td>
+      <td>MLIT (https://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-G04-a.html)</td>
+    </tr>
+    <tr>
+      <td>Vegetation</td>
+      <td>The area sizes</td>
+      <td>1998</td>
+      <td>Transformed into 37 PCs of which total variation explained was more than 80%. Converted into linear, quadratic and hinge terms.</td>
+      <td>MOE (http://gis.biodic.go.jp/webgis/index.html)</td>
+    </tr>
+    <tr>
+      <td>Geology</td>
+      <td>The area sizes of limestone and serpentinite</td>
+      <td>2022</td>
+      <td>Converted into linear, quadratic and hinge terms</td>
+      <td>The Research Institute of Geology and Geoinformation (https://gbank.gsj.jp/seamless/use.html)</td>
+    </tr>
+    <tr>
+      <td>Geohistory</td>
+      <td>Blakiston’s Line (Dobson, 1994; Saitoh et al., 2015), oceanic islands (Wepfer et al., 2016; Yamasaki, 2017)</td>
+      <td></td>
+      <td>Categorical variables</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Pseudo-absence reflecting search effort
 
 We considered sampling efforts when selecting a total of 10,000 pseudo-absence locations. To accommodate biases in sampling efforts, we assigned picking probabilities as an increasing function of the amount of occurrence records of all and relevant taxa at the grid cell (an index of sampling efforts) (Milanesi et al., 2020; Phillips et al., 2009). That is, grid cells with rich occurrence records of relevant taxa are more likely to be chosen as pseudo-absences than cells with few records, as detailed below (see also Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93694/elife-93694-fig5-v1.jpg)
 
-**Figure 5.:** Biome-Traditional dataset.In this process, both Biome data and Traditional dataset are utilised to determine the suitable locations for pseudo-absence grid cells. However, when constructing SDMs using the Traditional dataset exclusively, Biome data is not involved in the selection of pseudo-absence points.
+**Figure 5.:** In this process, both Biome data and Traditional dataset are utilised to determine the suitable locations for pseudo-absence grid cells. However, when constructing SDMs using the Traditional dataset exclusively, Biome data is not involved in the selection of pseudo-absence points.
 
 To generate pseudo-absence (i.e. background) data, we employed two approaches considering different sampling efforts. The first approach incorporated all observers and taxa, while the second approach focused on experts and relevant taxa (Figure 4). In both cases, pseudo-absences were selected from grid cells that lacked any occurrence records of the species being modelled. However, due to variations in sampling efforts across locations, it was important to address potential bias. To mitigate this bias, we adjusted the picking probability based on the number of occurrences of other species in each grid cell (Milanesi et al., 2020; Phillips et al., 2009).
 
@@ -155,11 +606,11 @@ In the first approach, we assumed that the users of Biome submit records of any 
 
 Using the described approaches, we obtained a total of 10,000 pseudo-absences for our analyses. The amount of pseudo-absences follows the default setting of MaxEnt (Elith et al., 2011). For the models using Biome + Traditional dataset (also in Biome-blended dataset in Appendix 1), pseudo-absences were generated by merging each of the 5000 points identified through the two approaches. Meanwhile, for SDMs using the Traditional survey data only, we obtained 10,000 pseudo-absences by exclusively using the second approach without incorporating Biome data.
 
-## Modelling
+#### Modelling
 
 We modelled distributions of terrestrial seed plants and animals at a scale of 1 × 1 km grid cell, based on Traditional survey data and Biome + Traditional data. To model species distributions from presence-only data, several algorithms have been utilised, including generalised additive models, random forest, and neural networks (Norberg et al., 2019; Valavi et al., 2022). In our study, we opted for MaxEnt (Phillips and Dudík, 2008) due to its high estimation accuracy and relatively low computational burden (Valavi et al., 2022). We performed MaxEnt via ENMeval 2.0 package (Kass et al., 2021) on R 4.1.3 (R Core Team, 2021).
 
-## Model evaluation
+#### Model evaluation
 
 We evaluated the model by examining spatial transferability because we could not find occurrence data that are environmentally unbiased and independent from training data. To minimise spatial autocorrelation between training and test data, we set a spatial block for splitting data (Araújo et al., 2019; Santini et al., 2021). As the spatial block, we chose the central Japan region (latitude, 33.7°–37.7° N; longitude, 136.2°–137.6° E: Figure 6) which covers various environments—alpine to coastal lowlands, metropolis to highly intact areas.
 
@@ -169,15 +620,19 @@ We evaluated the model by examining spatial transferability because we could not
 
 To ensure a fair and balanced assessment of the accuracy of SDMs built from Traditional survey data (0% Biome data) and Biome + Traditional data (50% Biome data), we compiled a test dataset that embodies characteristics intermediate between these two datasets. This composite test dataset encompasses 25% Biome data and 75% Traditional data, effectively bridging the differences between the two original datasets and providing a comprehensive basis for evaluating SDM accuracy.
 
-Due to the presence of invalid records, Biome records were used as test data only when multiple users recorded the same species within an identical 1 km grid cell. Although Biome data may include invalid records (i.e. non-wild individuals or misidentification), if multiple users recorded the same species at the same place, any one of the records from the place is likely to be valid. As we know the fraction of valid records within the Biome dataset in each taxon (see Results), we can calculate the probability of the true presence in a given location as follows, by assuming that records made by different users were independent:ptp=1−(1−pvalid)nusers
+Due to the presence of invalid records, Biome records were used as test data only when multiple users recorded the same species within an identical 1 km grid cell. Although Biome data may include invalid records (i.e. non-wild individuals or misidentification), if multiple users recorded the same species at the same place, any one of the records from the place is likely to be valid. As we know the fraction of valid records within the Biome dataset in each taxon (see Results), we can calculate the probability of the true presence in a given location as follows, by assuming that records made by different users were independent:
 
-The probability of valid records at a given taxon is shown as pvalid , and the number of users reported given species at the place is indicated as nusers . If ptp exceeds 99%, we deemed that the species occurred in the location.
+$$
+p_{tp}=1−(1−p_{valid})^{n_{users}}
+$$
+
+The probability of valid records at a given taxon is shown as $p_{valid}$ , and the number of users reported given species at the place is indicated as $n_{users}$ . If $p_{tp}$ exceeds 99%, we deemed that the species occurred in the location.
 
 To reduce spatial sampling bias, we downsampled a dataset within Traditional survey data, NCRE with massive records from freshwaters, to match the number of records from the remaining Traditional survey data. This procedure is applied to all test datasets in both the main analysis and preliminary analyses documented in Figure 3—figure supplement 1 and Appendix 1.
 
 BI was used to measure model performance because it was designed to evaluate presence-only SDMs (Hirzel et al., 2006). In short, BI measures the correlation between estimated habitat preference and the frequency of actual presence, and ranges from –1 to 1. A high BI indicates high SDM accuracy that presence data points tend to be located in grids with higher habitat suitability values. To reliably calculate BI, at least 50 occurrences should be needed in test data (Hirzel et al., 2006). Thus, we used 132 species that have more than 50 occurrences in test data for calculating BI (Supplementary file 3).
 
-## Examining influences of blending Biome data on SDM accuracy
+### Examining influences of blending Biome data on SDM accuracy
 
 Given that the accuracy of SDMs is affected by the amount and quality of data (Araújo et al., 2019; Erickson and Smith, 2023; Stockwell and Peterson, 2002), blending Biome data in SDMs may affect the model performances in two possible ways: by increasing the overall amount of data and/or by introducing data with different information than the original data. We analysed to distinguish between these effects. We prepared two different datasets: ‘Traditional survey data’ and ‘Biome + Traditional data’. Then, we separately trained SDMs using these two datasets. We further varied the data size by performing random downsampling, ranging from a minimum of 20 to a maximum of 20,000 records, in order to evaluate its impact on the model. As for the ‘Biome + Traditional data’ category, the proportion of Biome data was kept at 50%. For each condition, we conducted three iterations of training and testing to reduce the impact of random sampling stochasticity. Because the modelling was performed for each species, we obtained BI for each species, amount of records, and dataset (i.e. two datasets consisted of 132 species, each with a maximum of 123 conditions for the amount of records, and the models were replicated three times, resulting in a total of 12,351 individual model runs).
 

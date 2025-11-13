@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Neuroscience Institute, New York University Grossman School of Medicine New York United States
-2. https://ror.org/0190ak572 Department of Neurology, New York University Grossman School of Medicine New York United States
-3. https://ror.org/0190ak572 Department of Neuroscience & Physiology, New York University Grossman School of Medicine New York United States
-4. https://ror.org/0190ak572 Department of Radiology, New York University Grossman School of Medicine New York United States
+1. Neuroscience Institute, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Neurology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Department of Neuroscience & Physiology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. Department of Radiology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ In this study, we addressed these open questions by investigating the spatiotemp
 
 ## Results
 
-## Paradigm and behavior
+### Paradigm and behavior
 
 To investigate the spatiotemporal dynamics of brain activity supporting object recognition under uncertainty, we combined MEG (N=24) and fMRI data (N=25) obtained from two separate experiments using the same stimuli set and experimental paradigm (with trial timing tailored to each imaging modality, see Figure 1A). The main datasets analyzed herein were previously published in Podvalny et al., 2019, and Levinson et al., 2021.
 
@@ -49,7 +49,7 @@ The behavioral results from the MEG and fMRI experiments showed consistent patte
 
 Together, this pattern of behavioral results suggests that the object images were successfully presented at subjective recognition threshold, and that participants performed the categorization task meaningfully in both recognized and unrecognized trials.
 
-## Sequential emergence of recognition and object category information
+### Sequential emergence of recognition and object category information
 
 We first investigated the timing of recognition state- and object category-related information in the MEG. The presence of both types of information in the current fMRI dataset was established in a previous study, which showed that brain activity in widely distributed cortical networks contains information about the subjective recognition outcome (recognized vs. unrecognized) and category (face/animal/house/man-made objects) of the images (Levinson et al., 2021). Here, utilizing the fine temporal resolution of MEG, we assessed when such information emerges.
 
@@ -57,9 +57,17 @@ To assess the temporal evolution of brain signals containing information about s
 
 Recognition outcome could be significantly decoded from 200 to 900 ms after stimulus onset (p<0.05, cluster-based permutation test, Figure 2A), with peak decoding at 580 ms. Similar to previous fMRI findings (Levinson et al., 2021), the decodability of image category was highly dependent on subjective recognition (Figure 2B). When images were reported as unrecognized, image category was undecodable throughout the epoch (Figure 2B, red). By contrast, when the same identical images were recognized, decoding accuracy for category membership peaked at 290 ms the first time, though it did not survive cluster correction; decoding accuracy reached significance at 470 ms and remained significant until 1060 ms (Figure 2B, green). These results reveal long-lasting neural processes elicited by brief stimuli, consistent with earlier studies using threshold-level visual stimuli (Dehaene and Changeux, 2011; Li et al., 2014; Baria et al., 2017). At the same time, they reveal a rise of stimulus-evoked neural processes influencing recognition behavior at ~200 ms, preceding the emergence of category information at ~470 ms.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig2-v2.jpg)
+
+**Figure 2.:** (A) Recognition outcome decoding. (B) Image category decoding in recognized (green) and unrecognized trials (red). (C) Group-average MEG representational dissimilarity matrices (RDMs) (40×40) at selected time points. (D) Visualization of representational dissimilarity structure at the same time points as in (C) using the first two dimensions of the multidimensional scaling (MDS). Each of the filled circles represents an exemplar image that was reported as recognized and is color-coded according to its category membership. The unfilled points represent the physically identical exemplar images that were not recognized by participants. (E) Mean between-image representational dissimilarity in recognized (green) and unrecognized trials (red). (F) Left: Correlation between category model RDM and MEG RDMs in recognized (green) and unrecognized (red) trials. Right: Category model RDM. Blue and yellow colors indicates low and high representational dissimilarities, respectively. In (A–B) and (E–F), shaded areas represent SEM across participants; horizontal dashed lines indicate the chance level, and vertical dashed lines indicate significance onset latencies. Statistical significance is indicated by the colored horizontal bars (p<0.05, one-sided cluster-based sign permutation tests).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Same format as in Figure 2B. The x-axis is truncated as compared to Figure 2B due to shorter trial length in the localizer task (1 s). In both the localizer and main task, images were presented for 66.7 ms.
+
 It is intriguing that category-related information emerged slowly over time compared to earlier studies using high-contrast images (e.g. Carlson et al., 2013; Cichy et al., 2014). To test whether the delayed responses were due to the low visibility (and increased uncertainty) of the present stimuli, we ran a separate MEG task block wherein participants viewed the same set of images presented at high contrasts (see Methods for details). Consistent with earlier studies, we found that when image visibility was high, there was a fast rise of category information within the first 200 ms after stimulus onset (reaching significance at 110 ms, peaking at 170 ms; Figure 2—figure supplement 1). This result confirms that the late onset of category information observed in the main task was due to the more challenging viewing condition, likely reflecting the more time-consuming recurrent processing involving corticocortical feedback activity (Lamme and Roelfsema, 2000; Fyall et al., 2017; Kar and DiCarlo, 2021).
 
-## Dynamic change of representation format over time
+### Dynamic change of representation format over time
 
 The significant recognition outcome decoding emerging at 200 ms indicates that there was a dynamic change in how recognized images were represented relative to unrecognized images. To probe this further, we applied representational similarity analysis (RSA, Kriegeskorte et al., 2008) to whole-head MEG signals. At each time point, we computed a representational dissimilarity matrix (RDM) for sensor-level activity patterns across unique images and recognition outcomes. Each RDM had dimensions of 40×40 (5 exemplars×4 object categories×2 recognition outcomes; Figure 2C), with each cell populated with a dissimilarity measure (quantified as 1-Pearson’s correlation) between activity patterns of an image/condition pair. We applied multidimensional scaling (MDS) to visualize the structure of RDMs by projecting them onto two-dimensional spaces (Figure 2D). In the MDS plot, each dot represents an image associated with a particular recognition outcome, and distances between dots reflect the dissimilarities in neural activity patterns.
 
@@ -69,19 +77,47 @@ Together with our report of image category being only decodable in recognized tr
 
 Taken together, these findings indicate that successful recognition is associated with a shrinking representational space occupied by cortical activity at 130 ms, which may have a facilitating effect on the formation of object category representation that reaches significance at ~470 ms. In the analyses presented below, we bring in the 7T fMRI data to shed light on the spatiotemporal evolution of this and related neural effects.
 
-## Resolving the spatiotemporal dynamics of recognition-related processes using model-driven MEG-fMRI fusion
+### Resolving the spatiotemporal dynamics of recognition-related processes using model-driven MEG-fMRI fusion
 
 The MEG decoding analysis presented above focused on the temporal evolution of recognition-related information at the whole-brain level, leaving open the question of how the related signals unfold in individual brain regions over time. To provide a deeper understanding of the involved neural processes, we applied a model-driven MEG-fMRI fusion approach (Hebart et al., 2018; Flounders et al., 2019), which provides a spatiotemporally resolved view of different types of neural processes in the brain. This section provides a brief overview of our methodology.
 
 First, we constructed model RDMs that capture two different types of recognition-related processing: (i) Consistent with our MEG results (Figure 2C–E) and related prior findings (Schurger et al., 2015; Baria et al., 2017), the ‘recognition model’ (Figure 3A, left) hypothesizes that successful recognition is associated with a reduction of neural variability, resulting in clustering of activity patterns associated with recognized images (manifesting as low dissimilarity among them). (ii) The ‘two-state model’ (Figure 3A, right), on the contrary, hypothesizes that subjective recognition is associated with a bifurcation in neural signals into two brain states corresponding to recognized and unrecognized outcomes, respectively (manifesting as low dissimilarity between trials with the same recognition outcome and high dissimilarity between trials with different recognition outcomes).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig3-v2.jpg)
+
+**Figure 3.:** (A) Model representational dissimilarity matrices (RDMs) used for model-driven MEG-fMRI fusion. Blue and yellow colors represent low and high dissimilarities, respectively. (B) Schematic for the commonality analysis. Commonality coefficient at each time point reflects the shared variance between an MEG RDM of a given time point, fMRI RDM of a given region of interest (ROI), and a model RDM reflecting the expected dissimilarity structure based on a given hypothesis. By repeating the procedure for every single MEG time point, we obtained a commonality time course for a given ROI and a given model RDM. (C) fMRI ROIs (from Levinson et al., 2021). Left: Early visual cortex (EVC) and ventral temporal cortex (VTC) ROIs from a representative subject, defined using a functional localizer. Right: ROIs outside the visual cortices, in the task-positive network (TPN, orange-yellow colors) and default mode network (DMN, blue), were yielded from the recognized vs. unrecognized general linear model (GLM) contrast. AG: angular gyrus, aIns: anterior insula, aPCC: anterior posterior-cingulate cortex, IFJ: inferior frontal junction, IPS: intraparietal sulcus, MFG: middle frontal gyrus, mPFC: medial prefrontal cortex, OFC: orbitofrontal cortex, PCC: posterior cingulate cortex, SFG: superior frontal gyrus, STG: superior temporal gyrus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** For this analysis, we computed Spearman’s rank correlation between MEG RDM derived from each time point and fMRI RDM derived from each ROI. For all panels: the horizontal blue bar indicates statistically significant clusters of positive correlations (p<0.05, cluster-based label permutation test). The permutation test was conducted using an analogous procedure as for model-driven MEG-fMRI fusion (see Methods).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig3-figsupp3-v2.jpg)
+
 We then used RSA to combine time-varying MEG data with spatially localized fMRI data based on the correspondence between their representational structures, under the assumption that a correspondence between neural measurements by different recording modalities reflects the same neural generators (Kriegeskorte et al., 2008; Cichy and Oliva, 2020). Specifically, we estimated how much of the RDM correspondence between a given fMRI location and a given MEG time point could be attributed to each process of interest, as captured by the model RDMs (Figure 3B). Analogous to the MEG data, we computed RDMs (dimensions: 40×40) based on the voxel-wise BOLD activity patterns in 25 regions of interest (ROIs) (Figure 3C). Four ROIs in the early visual cortices (bilateral V1, V2, V3, and V4) and four bilateral regions in the ventral temporal cortices (VTC) selective to faces, houses, animals, and man-made objects were defined using independent retinotopy and object category functional localizers, respectively. ROIs in the frontoparietal cortices were defined based on differences in activation magnitudes between recognized and unrecognized trials (Levinson et al., 2021) and covered nine unilateral regions in the task-positive network (TPN); and eight unilateral or midline regions in the default mode network (DMN). As shown in Levinson et al., 2021, TPN regions had higher activation in recognized trials while DMN regions had stronger deactivation in recognized trials.
 
 Relating an RDM derived from a given fMRI location to RDMs derived from all MEG time points yielded a time course of MEG-fMRI fusion (quantified as the squared Spearman’s rho) for that ROI (Figure 3—figure supplements 1–3). For each ROI, we then conducted a commonality analysis to determine the portion of the shared variance between its RDM (from fMRI) and the MEG RDM at each time point that can be accounted for by each model RDM. This procedure yielded a time course of commonality coefficients for each ROI and each model RDM, indicating the temporal evolution of recognition-related information specific to the modeled process in that ROI. V4 was excluded from the analysis because its RDM did not have significant positive correlations with MEG RDMs, leaving 24 ROIs in the analysis presented below.
 
-## Early, concurrent onsets of recognition-related information across large-scale brain networks
+### Early, concurrent onsets of recognition-related information across large-scale brain networks
 
 The results of the model-driven MEG-fMRI fusion are displayed in Figure 4. Significant effects related to the recognition model were evident in all ROIs (Figure 4A, left). The earliest significance onset was at 110 ms concurrently in multiple VTC (face, animal, and house), TPN (bilateral MFG, bilateral IPS, and right IFJ), and DMN (bilateral AG, left SFG) regions, all leading to a transient peak at ~150 ms (Figure 4, blue and Figure 4—figure supplements 1–3). This initial peak was followed by a dip and a cascade of the reestablishment of recognition model effects in TPN (190 ms onward), DMN regions (202.5 ms onward), and VTC regions (220 ms onward). In many of the TPN and DMN regions, the recognition model-related effects stayed significant at most time points during the 2 s period investigated. In contrast, recognition model-related effects in the VTC predominantly existed in the first 1000 ms but were largely undetectable from 1000 ms onward, and were characterized by a transient, intermittent occurrence (Figure 4A, left; Figure 4B, ‘face’ ROI; Figure 4—figure supplement 1), potentially driven by feedback activity from frontoparietal regions. Notably, recognition model-related effects in the EVC were late and transient; they became statistically significant at ~600 ms and disappeared by 1000 ms after stimulus onset.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig4-v2.jpg)
+
+**Figure 4.:** (A) Commonality analysis results for all regions of interest (ROIs) are shown by plotting the statistically significant time points (p<0.05, cluster-based label permutation tests). Left: Results based on the recognition model. Right: Results based on the two-state model. (B) Commonality coefficient time course for recognition model (blue) and two-state model (orange) effects in five selected ROIs. The vertical dashed lines denote onset latencies, and the horizontal bars at the top indicate statistically significant time points (p<0.05, cluster-based label permutation tests). Gray-shaded areas denote the MEG-fMRI fusion, equivalent to the total variance shared by MEG and fMRI representational dissimilarity matrices (RDMs). Results from all ROIs are shown in Figure 4—figure supplements 1–3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Same format as in Figure 4B.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Same format as in Figure 4B.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Same format as in Figure 4B.
 
 Interestingly, the early, two-wave dynamics of recognition model-related effects did not occur uniformly across all ROIs within the same network. For instance, recognition model-related effects emerged relatively late in OFC and bilateral insulae (225–237.5 ms, Figure 4 and Figure 4—figure supplement 2) compared to other TPN regions. Moreover, these three regions did not show the sustained, elevated effects observed in other TPN regions. Instead, their dynamics were characterized by continuous fluctuations, which resembled those observed in the VTC regions, consistent with the idea that these regions might have an especially close dialogue with the VTC (Bar et al., 2006; Huang et al., 2021).
 
@@ -89,13 +125,278 @@ We next sought to identify neural dynamics driven by the two-state model. Like t
 
 In sum, both recognition and two-state models are associated with early, concurrent onset of significant processes across widespread ROIs, but the two models capture different aspects of recognition-related processing and are associated with distinct network-level patterns (e.g. two-state model accounts for EVC activity better while recognition model accounts for TPN activity better; see Figure 4B and Figure 4—figure supplements 1–3) and dynamic characteristics (e.g. two-state model-related effects are more sustained over time than recognition model-related effects). Below, we systematically characterize these network-level differences.
 
-## Differential representational formats between functional brain networks
+### Differential representational formats between functional brain networks
 
 To assess network-level effects, we first examined the functional network association of each ROI, using well-known resting-state network (RSN) parcellation (Yeo et al., 2011). Because our TPN ROIs encompassed regions outside the occipitotemporal visual cortices that exhibited heighted activation in recognized than unrecognized trials (Levinson et al., 2021), they belonged to several RSNs. Therefore, these ROIs were assigned to the frontoparietal control network (FPCN, including the aPCC, bilateral MFG, and OFC), dorsal attentional network (DAN, including the right IFJ and bilateral IPS), and salience network (SAL, including bilateral insulae), according to the RSN that accounted for the highest percentage of voxels in each ROI (Table 1). For DMN ROIs, we excluded bilateral STG because >50% of their voxels were located in the somatosensory network based on Yeo et al. parcellation, leaving six ROIs in the DMN in the following analysis (bilateral AG, mPFC, PCC, and bilateral SFG). The extents of EVC and VTC were unchanged.
+
+**Table 1.**
+ Distribution of each regions of interest (ROI’s) voxels across different functional brain networks (as defined in Yeo et al., 2011), presented as percentage of voxels located in each network.Each ROI was assigned to the brain network with the highest voxel count.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Visual</th>
+      <th>Somato</th>
+      <th>SAL</th>
+      <th>DAN</th>
+      <th>Limbic</th>
+      <th>FCPN</th>
+      <th colspan="2">DMN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">SAL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L aInsula</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>65.17</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>24.38</td>
+      <td colspan="2">3.09</td>
+    </tr>
+    <tr>
+      <td>R aInsula</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>60.02</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>30.59</td>
+      <td colspan="2">0.07</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="8">DAN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R IFJ</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>79.43</td>
+      <td>0.00</td>
+      <td>12.18</td>
+      <td colspan="2">0.00</td>
+    </tr>
+    <tr>
+      <td>L IPS</td>
+      <td>4.09</td>
+      <td>2.80</td>
+      <td>0.00</td>
+      <td>39.69</td>
+      <td>0.00</td>
+      <td>34.45</td>
+      <td colspan="2">4.10</td>
+    </tr>
+    <tr>
+      <td>R IPS</td>
+      <td>6.91</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>55.98</td>
+      <td>0.00</td>
+      <td>20.71</td>
+      <td colspan="2">0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="8">FCPN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L MFG</td>
+      <td>0.00</td>
+      <td>0.48</td>
+      <td>8.50</td>
+      <td>18.05</td>
+      <td>0.00</td>
+      <td>54.07</td>
+      <td colspan="2">1.55</td>
+    </tr>
+    <tr>
+      <td>R MFG</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>6.97</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>78.21</td>
+      <td colspan="2">0.16</td>
+    </tr>
+    <tr>
+      <td>R OFC</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>31.08</td>
+      <td>0.00</td>
+      <td>2.94</td>
+      <td>45.46</td>
+      <td colspan="2">2.22</td>
+    </tr>
+    <tr>
+      <td>aPCC</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.29</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>36.77</td>
+      <td colspan="2">20.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="8">DMN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L AG</td>
+      <td>6.96</td>
+      <td>0.00</td>
+      <td>1.11</td>
+      <td>17.67</td>
+      <td>0.00</td>
+      <td>1.65</td>
+      <td colspan="2">67.83</td>
+    </tr>
+    <tr>
+      <td>R AG</td>
+      <td>0.43</td>
+      <td>8.78</td>
+      <td>7.06</td>
+      <td>15.91</td>
+      <td>0.00</td>
+      <td>0.20</td>
+      <td colspan="2">64.95</td>
+    </tr>
+    <tr>
+      <td>PCC</td>
+      <td>5.68</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.18</td>
+      <td colspan="2">88.36</td>
+    </tr>
+    <tr>
+      <td>mPFC</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.33</td>
+      <td colspan="2">91.73</td>
+    </tr>
+    <tr>
+      <td>L SFG</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>2.16</td>
+      <td colspan="2">80.88</td>
+    </tr>
+    <tr>
+      <td>R SFG</td>
+      <td>0.00</td>
+      <td>0.43</td>
+      <td>16.62</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>21.78</td>
+      <td colspan="2">36.95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="8">Somatosensory/motor network (excluded from the analysis)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L STG</td>
+      <td>0.00</td>
+      <td>45.35</td>
+      <td>7.34</td>
+      <td>0.76</td>
+      <td>0.35</td>
+      <td>3.63</td>
+      <td colspan="2">38.46</td>
+    </tr>
+    <tr>
+      <td>R STG</td>
+      <td>0.10</td>
+      <td>69.18</td>
+      <td>5.35</td>
+      <td>1.77</td>
+      <td>0.00</td>
+      <td>1.51</td>
+      <td colspan="2">17.58</td>
+    </tr>
+  </tbody>
+</table>
 
 Visual inspection of commonality coefficient time courses (Figure 4, Figure 4—figure supplements 1–3) suggests that functional networks differed in the predominance of model-related effects. We thus estimated the explanatory powers of each model RDM by computing how much of the shared variance between MEG and fMRI RDMs it can explain. This was conducted for each ROI at each time point in the post-stimulus epoch. We were further interested in how the explanatory power of RDM models changed as a function of time. To this end, we split the explanatory power estimates into an early (0–1000 ms following stimulus onset) and a late (1000–2000 ms) time window, reasoning that perceptual processing had relatively strong influences on brain responses in the early stage whereas those in the late stage were mainly involved in post-perceptual processing.
 
 To quantify the effect of model (recognition vs. two-state) and time window (early vs. late) on the amount of explained MEG-fMRI covariance, we conducted a two-way mixed-design analysis of variance (ANOVA). This analysis revealed a significant main effect of model in all brain networks, with opposite effects between ventral visual and higher-order frontoparietal networks (Figure 5). The two-state model was the superior model for explaining neural dynamics in EVC (F1,799 = 1021.34, p=5.14 × 10–145, η2G=0.32; Figure 5A) and VTC (F1,799 = 892.66, p=2.79 × 10–132, η2G=0.31; Figure 5B), while recognition model was superior for SAL (F1,799 = 12.33, p=4.72 × 10–4, η2G=0.01; Figure 5C), DAN (F1,799 = 5104.20, p=0, η2G=0.77; Figure 5D), FPCN (F1,799 = 740.60, p=6.42 × 10–116, η2G=0.36; Figure 5E), and DMN (F1,799 = 34.89, p=5.17 × 10–9, η2G=0.03; Figure 5F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig5-v2.jpg)
+
+**Figure 5.:** In all panels: Line plots depict the median percentage of explained variance across all time points in the window. The dashed lines in the violin plots represent 25th percentile, median, and 75th percentile. Asterisks indicate significant differences between time windows (early vs. late, two-sided Mann-Whitney test) or models (recognition vs. two-state, two-sided Wilcoxon signed-rank test) at p<0.001, Bonferroni-corrected across all pairwise tests. n.s.: not significant at a level of p<0.05, Bonferroni-corrected. EVC: early visual cortex, VTC: ventral temporal cortex, SAL: salience network, DAN: dorsal attentional network, FPCN: frontoparietal control network, DMN: default mode network. Results for individual regions of interest (ROIs) are presented in Figure 5—figure supplement 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** EVC: early visual cortices, VTC: ventral temporal cortices, SAL: salience network, DAN: dorsal attentional network, FCPN: frontoparietal control network, DMN: default mode network. In all panels, line plots depict the median percentage of explained variance across all time points within the window. Error bars indicate the interquartile range. *: p<0.05, **: p<0.01, ***: p<0.001, all FDR-corrected for multiple comparisons across time windows.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/84797/elife-84797-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** In all panels, line plots depict the median percentage of explained variance across all time points in the window. Results from the recognition model are shown as solid lines; those from the two-state model are shown as dashed lines.
 
 There was a significant interaction effect between model and time window in all networks except DAN. In EVC, the significant interaction was driven by a sharp decrease in two-state model’s explanatory power over time (F1,799 = 155.62, p=9.27 × 10–33, η2G=0.07). In the remaining networks, the interaction was driven by an overall increase in two-state model’s explanatory power and a decrease in recognition model’s explanatory power over time (VTC: F1,799=286.46, p=3.78×10–55, η2G=0.13; SAL: F1,799=11.35, p=7.90×10–4, η2G=0.01; FPCN: F1,799=97.65, p=8.38×10–22, η2G=0.07; DMN: F1,799=316.67, p=6.31×10–60, η2G=0.20). Interestingly, this interaction effect manifested as a temporal shift in the dominant model in the DMN, with the recognition model prevailing in the early time window (Figure 5F, Wilcoxon signed-rank test, N=801, W=6944, p=3.66×10–46) and the two-state model prevailing in the late time window (N=800, W=23,937, p=1.56×10–11), suggesting a flexible adaption in DMN’s functional profile to different stages of object recognition processing.
 
@@ -127,11 +428,11 @@ In summary, under a challenging viewing condition, we found that object recognit
 
 ## Methods
 
-## Participants
+### Participants
 
 Twenty-five volunteers (15 females, mean age 26 years, range 22–34 years) participated in the MEG experiment, approved by the Institutional Review Board of the National Institute of Neurological Disorders and Stroke (protocol #14N-0002). One participant did not complete the MEG experiment due to discomfort and was removed from further procedures, leaving 24 participants in the MEG dataset. A total of 38 volunteers (26 females, mean age 27 years, range 20–38 years) participated in the fMRI experiment, following the study protocol (s15-01323) approved by the Institutional Board Review of New York University School of Medicine. Ten volunteers were excluded due to not completing the task and three were removed from data analysis due to poor behavioral performance, leaving 25 volunteers in the fMRI dataset. All participants were right-handed, neurologically healthy, and had a normal or corrected-to-normal vision. All experiments were conducted in accordance with the Declaration of Helsinki and written informed consent was obtained from each participant. Both the MEG and fMRI datasets analyzed herein have been used in previous publications (Podvalny et al., 2019; Levinson et al., 2021).
 
-## Experimental stimuli and procedure
+### Experimental stimuli and procedure
 
 The same stimuli set was used in both the MEG and fMRI experiments. The stimuli set consisted of five unique exemplars from four categories, namely face, house, man-made object, and animal. These images were selected from public domain labeled photographs or from Psychological Image Collection at Stirling (PICS, http://pics.psych.stir.co.uk). The images were resized to 300×300 pixels and converted to grayscale. In addition, the pixel intensities were normalized by subtracting the mean and dividing by the standard deviation, and image was filtered with a two-dimensional Gaussian kernel with a standard deviation of 1.5 pixels and 7×7 pixels size. We additionally generated scrambled images by shuffling the two-dimensional Fourier transformed phase of one randomly chosen exemplar from each category (data from scrambled image trials were not used in the present study due to low trial count). This yielded a stimuli set consisting of 20 unique real images and 4 scrambled images in total. In both MEG and fMRI experiment, stimulus size was ~8 degrees in diameter. Prior to the main task, participants underwent an adaptive staircase procedure ‘QUEST’ to identify image contrast yielding a recognition rate of 50%. Detailed procedures are available in Podvalny et al., 2019; Levinson et al., 2021.
 
@@ -141,11 +442,11 @@ Both the MEG and fMRI main tasks consisted of 300 real image and 60 scrambled im
 
 Participants in both the fMRI and MEG experiments additionally completed a ‘localizer’ task. The localizer task in the fMRI experiment was described in detail in Levinson et al., 2021, and the data were used for the definition of VTC (face, house, object, animal) ROIs used in that paper and in the current study (for detailed method about localizer data analysis, see Levinson et al., 2021). Here, we describe in detail the methods for the localizer task in the MEG experiment, as the associated data have not been previously published. In the localizer task block, participant viewed the same set of 20 real images as used in the main task (scrambled images were not included), with the crucial difference being that the images were presented at the original high contrast. This allowed us to directly compare the neural dynamics of object recognition triggered by the same set of images at different visibility/uncertainty levels. The localizer block consisted of 300 trials, with each unique image presented 15 times in a randomized order. Each trial lasted 1 s and started with an image presentation of 66.7 ms, during which the image intensity gradually increased from 0.01 to 1 (the original contrast). Participants were instructed to perform a one-back memory task and press a button whenever they saw an image presented twice consecutively.
 
-## MEG data acquisition and preprocessing
+### MEG data acquisition and preprocessing
 
 Continuous MEG signals were recorded at a sampling rate of 1200 Hz using a 275-channel whole-head MEG system (CTF, VSM MedTech). Three electrodes were dysfunctional and excluded, leaving 272 channels for further procedures. MEG data were preprocessed with the MNE toolbox, Python (Gramfort et al., 2013). Independent component analysis (ICA) was performed on continuous data from each run to remove artifacts related to eye movements, blinks, and heartbeats. The ICA-cleaned MEG data were detrended, demeaned, band-pass filtered between DC and 35 Hz, and down-sampled to 400 Hz (for commonality analysis) or 100 Hz (for decoding analysis). We epoched continuous MEG data into 2.5 s trials from –500 ms to 2000 ms relative to stimulus onset and applied baseline correction for each sensor using the pre-stimulus time window.
 
-## Multivariate pattern analysis of MEG data
+### Multivariate pattern analysis of MEG data
 
 Decoding on MEG data was performed using The Decoding Toolbox (Hebart et al., 2014). For each participant, the decoding analysis was performed using linear SVM (in LIBSVM implementation, Chang and Lin, 2011) with a fixed cost parameter of c=1. Data associated with scrambled images were excluded from the analysis, leaving data associated with 40 conditions (5 unique real exemplars×4 categories×2 recognition outcomes).
 
@@ -159,25 +460,29 @@ To construct an RDM for each time point (from –500 to 2000 ms relative to stim
 
 We constructed a category model RDM to test for category-related processing in recognized and unrecognized image trials, respectively. The category model RDM had a size of 20×20 cells, corresponding to the total number of image exemplars for a given recognition outcome. It predicted that activity patterns evoked by images from the same category would have relatively small dissimilarities with each other, while dissimilarities between activity patterns evoked by different categories would be relatively large. For each participant, we compared the category model RDM with the parts of their MEG RDMs representing recognized and unrecognized trials (the upper-left and bottom-right quadrants), respectively. That is, we computed the Spearman’s rank correlation coefficient (rho) between the model RDM and MEG RDM derived from each time point. Statistical significance at the group-level was determined using procedures analogous to those employed for the decoding analysis. Spearman’s rho significant above zero indicated the presence of category information.
 
-## MRI data acquisition, preprocessing, and ROI definition
+### MRI data acquisition, preprocessing, and ROI definition
 
 Detailed methods related to the fMRI dataset have been reported in Levinson et al., 2021. Here, we briefly summarize the procedures relevant to the present work. MRI data were acquired using a Siemens 7T scanner equipped with a 32-channel NOVA coil. A T1-weighted structural image was acquired using an MPRAGE sequence (TR=3000 ms, TE=4.49 ms, 192 saggital slices, flip angle=6, FOV=256×256 mm2, 1.0 mm isotropic). Functional volumes covering the whole brain were obtained using T2* weighted echo planar imaging sequence (TR=2000 ms, TE=25 ms, FOV=192×192 mm2, flip angle=50, acceleration factor/GRAPPA=2, multi-band factor 2). Each volume consisted of 54 oblique slices with an in-plane resolution of 2×2 mm and a slice thickness of 2 mm with a distance factor of 10%. fMRI data collected from each participant were preprocessed using FSL package (http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL). In short, they were realigned, corrected for slice timing, spatially smoothed with a 3 mm FWHM kernel, and registered to the T1 anatomical scan. Artifacts related to motion, arteries, or CSF pulsation were removed using ICA.
 
 A retinotopy functional localizer was used to define EVC ROIs in each participant. For each hemisphere, field maps in V1, V2d, V2v, V3d, V3v, and V4 were identified, and the dorsal and ventral portions of V2 and V3 within each hemisphere were subsequently merged into a single ROI, respectively. For the present study, we further merged the left and right hemisphere for each early visual area, resulting in four EVC ROIs including the bilateral V1, V2, V3, and V4. EVC ROIs could not be defined in several individuals due to noisy data, leaving 23 subjects’ data in analyses involving V1–V3 and 22 subjects’ data in analyses involving V4. The four category-selective ROIs in the VTC (face, house, object, animal) were defined individually using a separate functional localizer: each ROI consisted of up to 500 most responsive voxels to one of the four object categories within occipitotemporal visual cortex (thresholded at Z>2.3, masked with the conjunction of inferior lateral occipital cortex, occipital fusiform gyrus, posterior parahippocampal gyrus, temporal fusiform cortex, and temporal occipital fusiform cortex from the Harvard-Oxford brain atlas). In addition, a category-selective ROI was only defined if more than 100 voxels surpassed the threshold within the mask. This yielded face-selective ROIs in 20 subjects, house-selective ROI in 15 subjects, object-selective ROI in 18 subjects, and animal-selective ROI in 18 subjects. TPN and DMN ROIs were defined based on significant clusters extracted from the group-level statistical maps for the recognized vs. unrecognized general linear model (GLM) contrast (cluster-corrected p<0.05). These clusters were transformed back to each individual’s native space; thus, TPN and DMN ROIs were defined for all 25 participants.
 
-## fMRI multivariate pattern analysis
+### fMRI multivariate pattern analysis
 
 We constructed a 40×40 RDM for each ROI based on the BOLD activity pattern elicited by each exemplar in each recognition condition. These activity patterns were estimated using a first-level GLM implemented in FSL. For each experimental run, we defined one regressor for each image exemplar associated with either recognition outcome aligned to the stimulus onsets. An additional nuisance regressor, aligned to the onset of the first question, was added to account for motor-related activation. This resulted in a total of 49 regressors per run ((20 real exemplars+4 scrambled exemplars)×2 recognition outcomes+1 nuisance regressor), each convolved with a gamma-shaped hemodynamic response function. Note that each exemplar was only presented once in an experimental run and could be only associated with a specific recognition outcome. As a consequence, only 25 regressors contained non-zero values in each run. The same GLM was estimated for all experimental runs, yielding trial-wise beta parameter estimates for activity patterns elicited by each of the presented stimuli in each recognition condition. As for the MEG RDM, we discarded data related to the scrambled images, leaving data associated with 40 conditions (20 real exemplars×2 recognition outcomes). We averaged the activity patterns across runs for each condition and then computed the dissimilarities between all condition pairs, before entering them into the RDM. Lastly, RDMs were averaged across participants, yielding a mean 40×40 RDM for each ROI.
 
-## Model-driven MEG-fMRI fusion
+### Model-driven MEG-fMRI fusion
 
 To provide a spatiotemporally resolved view of object recognition processing under uncertainty, we performed a model-driven MEG-fMRI fusion based on RSA (Hebart et al., 2018; Flounders et al., 2019). First, we applied cross-modal RSA to combine the MEG and fMRI data acquired from independent participant groups. For a given MEG time point and a given fMRI ROI, we extracted the lower triangles of the corresponding 40×40 RDMs, respectively, and converted them to dissimilarity vectors. We then calculated the squared Spearman’ rank correlation coefficient between the MEG and fMRI dissimilarity vectors, which is equivalent to the variance shared by MEG and fMRI RDMs. Repeating this procedure for all MEG time points and fMRI ROIs, we obtained a time course of MEG-fMRI fusion that indexed the representational similarity between whole-brain MEG data and ROI-specific fMRI data. Since MEG and fMRI data were collected from different groups of participants, we conducted the described procedure using the group-average RDMs from each recording modality as the best estimate of the true RDM (Hebart et al., 2018).
 
-To isolate the effects related to a neural process of interest in the MEG-fMRI fusion, we constructed model RDMs that reflected the expected dissimilarity pattern related to a neural process of interest. The contribution of the neural process of interest to the MEG-fMRI fusion at a given time point and ROI can be estimated using commonality analysis (Seibold and McPHEE, 1979; Hebart et al., 2018; Flounders et al., 2019). More specifically, a commonality coefficient C yielded from the analysis informed about how much of the shared variance between the MEG RDM at a given time point and the fMRI RDM from a given ROI can be attributed to the model RDM. Formally, the commonality coefficient at a given time point and a given location is calculated as follows:C(MEG.fMRI,model)=RMEG.fMRI2+RMEG.model2−RMEG.fMRI,model2
+To isolate the effects related to a neural process of interest in the MEG-fMRI fusion, we constructed model RDMs that reflected the expected dissimilarity pattern related to a neural process of interest. The contribution of the neural process of interest to the MEG-fMRI fusion at a given time point and ROI can be estimated using commonality analysis (Seibold and McPHEE, 1979; Hebart et al., 2018; Flounders et al., 2019). More specifically, a commonality coefficient C yielded from the analysis informed about how much of the shared variance between the MEG RDM at a given time point and the fMRI RDM from a given ROI can be attributed to the model RDM. Formally, the commonality coefficient at a given time point and a given location is calculated as follows:
+
+$$
+C(MEG.fMRI,model)=R_{MEG.fMRI}^{2}+R_{MEG.model}^{2}−R_{MEG.fMRI,model}^{2}
+$$
 
 We applied a cluster-based label permutation test to determine the statistical significance of commonality coefficients (Hebart et al., 2018; Flounders et al., 2019). For each of the 5000 permutations, we randomly shuffled the labels of MEG RDM, computed the commonality coefficient time course for a given model, and extracted the maximum cluster-level statistic. The cluster-defining threshold at each time point was set to the 95th percentile of the null distribution yielded from the permutation test (equivalent to p<0.05, one-tailed). Analogous to the statistical testing for MEG decoding, a cluster in the original data was considered significant if its cluster-level statistic exceeded the 95th percentile of the null distribution of maximum cluster-level statistics (corresponding to p<0.05 cluster-corrected).
 
-## Analysis on RDM models’ explanatory power
+### Analysis on RDM models’ explanatory power
 
 Model RDM’s explanatory power at a given time point was estimated by commonality coefficient divided by the shared variance between MEG and fMRI RDM, which quantifies the percentage of the shared variance between MEG and fMRI RDM that can be accounted for by the model. The explanatory power estimate was set to zero if the commonality coefficient was negative. The estimation was conducted for all 801 time points between 0 and 2000 ms relative to stimulus onset, yielding a time course of percentages of explained MEG-fMRI covariance per ROI. The time course was split into two halves, with the first half corresponding to 0–1000 ms after stimulus onset and the second half corresponding to 1001–2000 ms after stimulus onset.
 

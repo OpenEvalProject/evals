@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.08274.001 Prevention of relapses is a major challenge in treating anxiety disorders. Fear reinstatement can cause relapse in spite of successful fear reduction through extinction-based exposure therapy. By utilising a contextual fear-conditioning task in mice, we found that reinstatement was accompanied by decreased c-Fos expression in the infralimbic cortex (IL) with reduction of synaptic input and enhanced c-Fos expression in the medial subdivision of the central nucleus of the amygdala (CeM). Moreover, we found that IL dopamine plays a key role in reinstatement. A reinstatement-inducing reminder shock induced c-Fos expression in the IL-projecting dopaminergic neurons in the ventral tegmental area, and the blocking of IL D1 signalling prevented reduction of synaptic input, CeM c-Fos expression, and fear reinstatement. These findings demonstrate that a dopamine-dependent inactivation of extinction circuits underlies fear reinstatement and may explain the comorbidity of substance use disorders and anxiety disorders. DOI: http://dx.doi.org/10.7554/eLife.08274.001
+Prevention of relapses is a major challenge in treating anxiety disorders. Fear reinstatement can cause relapse in spite of successful fear reduction through extinction-based exposure therapy. By utilising a contextual fear-conditioning task in mice, we found that reinstatement was accompanied by decreased c-Fos expression in the infralimbic cortex (IL) with reduction of synaptic input and enhanced c-Fos expression in the medial subdivision of the central nucleus of the amygdala (CeM). Moreover, we found that IL dopamine plays a key role in reinstatement. A reinstatement-inducing reminder shock induced c-Fos expression in the IL-projecting dopaminergic neurons in the ventral tegmental area, and the blocking of IL D1 signalling prevented reduction of synaptic input, CeM c-Fos expression, and fear reinstatement. These findings demonstrate that a dopamine-dependent inactivation of extinction circuits underlies fear reinstatement and may explain the comorbidity of substance use disorders and anxiety disorders.
 
 ## Introduction
 
@@ -30,73 +30,148 @@ To identify brain regions involved in processing fear reinstatement, we mapped t
 
 ## Results
 
-## Reinstatement is associated with low c-Fos expression in the IL
+### Reinstatement is associated with low c-Fos expression in the IL
 
-To examine the neural circuits for fear reinstatement, we utilised a contextual fear-conditioning task, as described previously (
+To examine the neural circuits for fear reinstatement, we utilised a contextual fear-conditioning task, as described previously (Shen et al., 2013) (Figure 1A). Mice learned an association between CS (chamber A) and US (foot shocks) on Day 1. On Day 2, they received a prolonged CS presentation without any US (extinction training), then their freezing time gradually decreased. On Day 3, they were re-exposed to CS to confirm retention of extinction (test 1). To reinstate the conditioned fear, they immediately received a weak US (reminder shock) in chamber B on Day 4, and they were exposed to CS again on Day 5 (test 2). The mice showed higher freezing time in test 2 than they did in test 1, suggesting successful reinstatement. Freezing time was comparable between tests 1 and 2 if mice were exposed to chamber B without a reminder shock on Day 4 (39.5 ± 4.2% in test 1 and 32.6 ± 5.3% in test 2, n = 4). When we gave the reminder shock to naive mice, the reminder shock alone did not induce high fear responses (6.0 ± 2.1%, n = 5), indicating that the reminder shock-induced increase in freezing was derived from the original conditioned fear, not from new learning.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig1-v2.jpg)
 
-**Figure 1.:** (A) A reminder shock reinstated extinguished fear (n = 10 mice; paired t-test, t(9) = 3.6, p = 0.0059). (B) Representative images of the infralimbic cortex (IL), the ventral intercalated amygdala neurons (ITCv), and the central nucleus of the amygdala (CeM) in the Fear, Extinction, and Reinstatement groups. (C) c-Fos+ cell density decreased in the IL and the ITCv and increased in the CeM with reinstatement (n = 8–11 mice; F(2,27) = 4.3, p = 0.023 [IL]; F(2,26) = 4.8, p = 0.0016 [ITCv]; F(2,26) = 6.3, p = 0.0058 [CeM]; Tukey's test, PExtinction vs Reinstatement = 0.029 [IL], 0.035 [ITCv], 0.013 [CeM]). (D) IL muscimol infusions resulted in high freezing (n = 10 mice; t(18) = 2.4, p = 0.030). **p < 0.01, *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.003
+**Figure 1.:** (A) A reminder shock reinstated extinguished fear (n = 10 mice; paired t-test, t(9) = 3.6, p = 0.0059). (B) Representative images of the infralimbic cortex (IL), the ventral intercalated amygdala neurons (ITCv), and the central nucleus of the amygdala (CeM) in the Fear, Extinction, and Reinstatement groups. (C) c-Fos+ cell density decreased in the IL and the ITCv and increased in the CeM with reinstatement (n = 8–11 mice; F(2,27) = 4.3, p = 0.023 [IL]; F(2,26) = 4.8, p = 0.0016 [ITCv]; F(2,26) = 6.3, p = 0.0058 [CeM]; Tukey's test, PExtinction vs Reinstatement = 0.029 [IL], 0.035 [ITCv], 0.013 [CeM]). (D) IL muscimol infusions resulted in high freezing (n = 10 mice; t(18) = 2.4, p = 0.030). **p < 0.01, *p < 0.05. Data represent mean ± standard error.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Mice of the Reinstatement group showed greater freezing behaviour relative to the Extinction group (F(2,25) = 8.7, p = 0.0013; Tukey's test, PFear vs Extinction = 0.0023, PExtinction vs Reinstatement = 0.0073). **p < 0.01. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.004
+**Figure 1—figure supplement 1.:** Mice of the Reinstatement group showed greater freezing behaviour relative to the Extinction group (F(2,25) = 8.7, p = 0.0013; Tukey's test, PFear vs Extinction = 0.0023, PExtinction vs Reinstatement = 0.0073). **p < 0.01. Data represent mean ± standard error.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** + cell density in the IL calculated in the analysis using a normal threshold and in an additional analysis using a strict threshold.(n = 8–11 mice; F(3,35) = 5.9, p = 0.0023 [Normal threshold]; F(3,35) = 3.0, p = 0.042 [Strict threshold]; Tukey's test, PNaive vs Extinction = 0.0017 [Normal threshold], 0.032 [Strict threshold]). **p < 0.01, *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.005
+**Figure 1—figure supplement 2.:** (n = 8–11 mice; F(3,35) = 5.9, p = 0.0023 [Normal threshold]; F(3,35) = 3.0, p = 0.042 [Strict threshold]; Tukey's test, PNaive vs Extinction = 0.0017 [Normal threshold], 0.032 [Strict threshold]). **p < 0.01, *p < 0.05. Data represent mean ± standard error.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** + cells in the PL, LA, BA, CeL, ITCd, CA1, CA2, CA3, and DG was comparable between the Extinction and Reinstatement groups (PL, F(2,28) = 3.6, p = 0.041; LA, F(2,26) = 1.4, p = 0.27; BA, F(2,26) = 0.068, p = 0.93; CeL, F(2,26) = 4.8, p = 0.017; ITCd, F(2,27) = 0.97, p = 0.39; CA1, F(2,22) = 1.3, p = 0.29; CA2, F(2,22) = 0.29, p = 0.75; CA3, F(2,22) = 1.0, p = 0.38; DG, F(2,22) = 0.46, p = 0.64; Tukey's test, CeL: PFear vs Extinction = 0.015).PL: prelimbic cortex, LA: lateral amygdala, BA: basal amygdala, CeL: lateral subdivision of central nucleus of the amygdala, ITCd: dorsal intercalated amygdala neurons. *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.006
+**Figure 1—figure supplement 3.:** PL: prelimbic cortex, LA: lateral amygdala, BA: basal amygdala, CeL: lateral subdivision of central nucleus of the amygdala, ITCd: dorsal intercalated amygdala neurons. *p < 0.05. Data represent mean ± standard error.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.08274.007
-
 To identify the brain regions involved in processing reinstatement, we employed activity mapping with c-Fos immunohistochemistry. Mice were exposed to the CS one day after reminder shock (Reinstatement group). The Fear and Extinction groups were exposed to the CS one day after conditioning and one day after extinction training, respectively. The freezing time of the Reinstatement group was higher than it was in the Extinction group and comparable to that of the Fear group (Figure 1—figure supplement 1). Brains were removed 90 min later and subjected to c-Fos immunohistochemistry (Figure 1B). The density of c-Fos+ cells in the IL in the Reinstatement group was lower than it was in the Extinction group and comparable to that in the Fear group (Figure 1C), which was not affected by thresholding (Figure 1—figure supplement 2). Given that the IL inhibits the CeM partly through the ITC, the reduced IL activity could result in low ITC and high CeM activities. Consistent with this idea, the density of c-Fos+ cells in the ventral ITC and CeM decreased and increased, respectively, in the Reinstatement group compared to the Extinction group (Figure 1C). There were no significant differences between the Extinction and Reinstatement groups in other sub-regions of the mPFC, amygdala, or hippocampus (Figure 1—figure supplement 3). These results suggest that low IL activity disinhibits the CeM during fear reinstatement.
 
-## Inactivation of the IL enhances fear responses
+### Inactivation of the IL enhances fear responses
 
 Next, we tested whether inactivation of the IL would lead to high fear responses. Mice underwent conditioning and extinction training. Muscimol, a gamma-aminobutyric acid type A receptor agonist, or a vehicle was infused into the IL 30 min before 5 min of re-exposure to the CS (Figure 1—figure supplement 4). Mice infused with muscimol showed higher freezing compared with those infused with a vehicle (Figure 1D), which is consistent with previous works in rats (Quirk et al., 2000; Laurent and Westbrook, 2009). These data suggest that inactivation of the IL is sufficient to enhance fear responses.
 
-## Reinstatement is associated with presynaptic depression in the IL
+### Reinstatement is associated with presynaptic depression in the IL
 
-To examine the cellular basis of lowered IL activity, we prepared brain slices 1 hr after the last test and obtained whole-cell recordings from pyramidal neurons in layer 5 of the IL. Frequency of miniature excitatory postsynaptic current (mEPSC) was lower in the Reinstatement group than it was in the Extinction group (
+To examine the cellular basis of lowered IL activity, we prepared brain slices 1 hr after the last test and obtained whole-cell recordings from pyramidal neurons in layer 5 of the IL. Frequency of miniature excitatory postsynaptic current (mEPSC) was lower in the Reinstatement group than it was in the Extinction group (Figure 2A,B), while mEPSC amplitude was comparable across groups (Figure 2C). Thus, excitatory synaptic inputs to the IL were decreased with reinstatement. To probe release probability, we measured paired-pulse ratio (PPR) by layer 2/3 stimulation. PPR was higher in the Reinstatement group than it was in the Extinction group (Figure 2E,F), indicating decreased transmitter release to IL neurons. Moreover, in the Reinstatement group, increased freezing time between tests 1 and 2 was negatively and positively correlated with mEPSC frequency and PPR, respectively (Figure 2D,G). These results suggest that presynaptic depression in the IL is associated with reinstatement.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative miniature excitatory postsynaptic current (mEPSC) traces. (B) IL neurons had lower mEPSC frequency in the Reinstatement group (n = 8 neurons from 6 mice) than the Extinction group (n = 8 neurons from 4 mice) (F(2,21) = 3.9, p = 0.037; PExtinction vs Reinstatement = 0.030). (C) mEPSC amplitude did not differ across groups (F(2,21) = 1.9, p = 0.38). (D) mEPSC frequency negatively correlated with Δfreezing (different degrees of freezing time between tests 1 and 2) in the Reinstatement group (r = −0.83, p = 0.040). (E) Representative traces of EPSCs evoked by paired-pulse stimulation. (F) IL neurons had a higher paired-pulse ratio (PPR) in the Reinstatement group (n = 8 neurons from 5 mice) than the Extinction group (n = 8 neurons from 4 mice) (t(14) = 2.2, p = 0.049). (G) PPR positively correlated with Δfreezing in the Reinstatement group (r = 0.95, p = 0.012). *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.008
+**Figure 2.:** (A) Representative miniature excitatory postsynaptic current (mEPSC) traces. (B) IL neurons had lower mEPSC frequency in the Reinstatement group (n = 8 neurons from 6 mice) than the Extinction group (n = 8 neurons from 4 mice) (F(2,21) = 3.9, p = 0.037; PExtinction vs Reinstatement = 0.030). (C) mEPSC amplitude did not differ across groups (F(2,21) = 1.9, p = 0.38). (D) mEPSC frequency negatively correlated with Δfreezing (different degrees of freezing time between tests 1 and 2) in the Reinstatement group (r = −0.83, p = 0.040). (E) Representative traces of EPSCs evoked by paired-pulse stimulation. (F) IL neurons had a higher paired-pulse ratio (PPR) in the Reinstatement group (n = 8 neurons from 5 mice) than the Extinction group (n = 8 neurons from 4 mice) (t(14) = 2.2, p = 0.049). (G) PPR positively correlated with Δfreezing in the Reinstatement group (r = 0.95, p = 0.012). *p < 0.05. Data represent mean ± standard error.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Representative traces showing spikes in response to a 400-pA current pulse. (B) The number of action potentials in response to depolarizing steps at different current intensities (n = 21, 20, 20 neurons). (C) The maximum number of evoked spikes at any current step increased with fear extinction (F(2,58) = 4.1, p = 0.022; Tukey's test, p = 0.016) and did not change with fear reinstatement. *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.009
+**Figure 2—figure supplement 1.:** (A) Representative traces showing spikes in response to a 400-pA current pulse. (B) The number of action potentials in response to depolarizing steps at different current intensities (n = 21, 20, 20 neurons). (C) The maximum number of evoked spikes at any current step increased with fear extinction (F(2,58) = 4.1, p = 0.022; Tukey's test, p = 0.016) and did not change with fear reinstatement. *p < 0.05. Data represent mean ± standard error.
 
-To probe intrinsic neuronal excitability, the maximum number of action potentials generated during the current injections was also compared among the groups. The maximum number of action potentials in the Reinstatement group was not significantly different from either the Extinction group or the Fear group, while that of the Extinction group was higher than that of the Fear group, consistent with a previous study using auditory fear conditioning (Santini et al., 2008) (Figure 2—figure supplement 1). Other electrophysiological properties of IL neurons in the Reinstatement group were comparable to those in the Extinction and Fear groups (Table 1). Thus, intrinsic excitability of IL neurons did not change with fear reinstatement.10.7554/eLife.08274.010Table 1.Electrophysiological properties of IL neuronsDOI: http://dx.doi.org/10.7554/eLife.08274.010FearExtinctionReinstatementResting potential (mV)−70.7 ± 1.1−72.0 ± 1.0−70.6 ± 0.7Input resistance (MΩ)276.5 ± 24.6391.9 ± 32.4*362.6 ± 30.9Spike amplitude (mV)75.5 ± 1.572.9 ± 2.076.3 ± 1.2First interspike interval (ms)7.9 ± 0.58.8 ± 0.68.9 ± 0.4Rheobase (pA)78.1 ± 5.765.5 ± 4.970.0 ± 6.1Spike threshold (mV)−37.3 ± 0.7−37.2 ± 1.0−35.1 ± 0.6Voltage sag (mV)−3.0 ± 0.3−3.1 ± 0.2−3.8 ± 0.4Half width of spike (ms)1.01 ± 0.030.98 ± 0.021.04 ± 0.02fAHP (mV)−17.3 ± 0.7−16.7 ± 0.7−16.7 ± 0.7mAHP (mV)−1.6 ± 0.5−0.9 ± 0.4−1.0 ± 0.5*p < 0.05 vs Fear, Tukey's test.fAHP, fast afterhyperpolarization; mAHP, medium afterhyperpolarization.
+To probe intrinsic neuronal excitability, the maximum number of action potentials generated during the current injections was also compared among the groups. The maximum number of action potentials in the Reinstatement group was not significantly different from either the Extinction group or the Fear group, while that of the Extinction group was higher than that of the Fear group, consistent with a previous study using auditory fear conditioning (Santini et al., 2008) (Figure 2—figure supplement 1). Other electrophysiological properties of IL neurons in the Reinstatement group were comparable to those in the Extinction and Fear groups (Table 1). Thus, intrinsic excitability of IL neurons did not change with fear reinstatement.
 
-## A reminder shock activates dopaminergic ventral tegmental area neurons projecting to the IL
+**Table 1.**
+ Electrophysiological properties of IL neurons
 
-The mPFC, including the IL, receives dopaminergic innervation from the ventral tegmental area (VTA). It is reported that aversive stimuli activate VTA dopaminergic neurons (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fear</th>
+      <th>Extinction</th>
+      <th>Reinstatement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resting potential (mV)</td>
+      <td>−70.7 ± 1.1</td>
+      <td>−72.0 ± 1.0</td>
+      <td>−70.6 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>Input resistance (MΩ)</td>
+      <td>276.5 ± 24.6</td>
+      <td>391.9 ± 32.4*</td>
+      <td>362.6 ± 30.9</td>
+    </tr>
+    <tr>
+      <td>Spike amplitude (mV)</td>
+      <td>75.5 ± 1.5</td>
+      <td>72.9 ± 2.0</td>
+      <td>76.3 ± 1.2</td>
+    </tr>
+    <tr>
+      <td>First interspike interval (ms)</td>
+      <td>7.9 ± 0.5</td>
+      <td>8.8 ± 0.6</td>
+      <td>8.9 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>78.1 ± 5.7</td>
+      <td>65.5 ± 4.9</td>
+      <td>70.0 ± 6.1</td>
+    </tr>
+    <tr>
+      <td>Spike threshold (mV)</td>
+      <td>−37.3 ± 0.7</td>
+      <td>−37.2 ± 1.0</td>
+      <td>−35.1 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Voltage sag (mV)</td>
+      <td>−3.0 ± 0.3</td>
+      <td>−3.1 ± 0.2</td>
+      <td>−3.8 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Half width of spike (ms)</td>
+      <td>1.01 ± 0.03</td>
+      <td>0.98 ± 0.02</td>
+      <td>1.04 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>fAHP (mV)</td>
+      <td>−17.3 ± 0.7</td>
+      <td>−16.7 ± 0.7</td>
+      <td>−16.7 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>mAHP (mV)</td>
+      <td>−1.6 ± 0.5</td>
+      <td>−0.9 ± 0.4</td>
+      <td>−1.0 ± 0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < 0.05 vs Fear, Tukey's test.fAHP, fast afterhyperpolarization; mAHP, medium afterhyperpolarization._
+
+### A reminder shock activates dopaminergic ventral tegmental area neurons projecting to the IL
+
+The mPFC, including the IL, receives dopaminergic innervation from the ventral tegmental area (VTA). It is reported that aversive stimuli activate VTA dopaminergic neurons (Matsumoto and Hikosaka, 2009; Brischoux et al., 2009) and elevate dopamine concentration in the PFC (Abercrombie et al., 1989; Hamamura and Fibiger, 1993). Additionally, dopamine application with electric stimulation suppresses transmitter release onto mPFC neurons via dopamine D1 receptors (D1Rs) (Law-Tho et al., 1994; Gao et al., 2001). Therefore, we hypothesised that a reminder shock activates the VTA-to-IL circuit and that dopamine D1 signalling in the IL contributes to reduction of synaptic input onto IL neurons and subsequent fear reinstatement. In order to assess this idea, we tested whether a reminder shock induces c-Fos expression in the VTA neurons projecting to the IL. We retrogradely labelled the neurons projecting to the IL by infusing Alexa 488-conjugated cholera toxin subunit B (CTB) into the IL (Figure 3A). Of the retrogradely labelled cells (CTBIL+) in the VTA, 59.1 ± 4.5% were immunopositive for a dopamine neuron marker, tyrosine hydroxylase (TH+), indicating that they were dopaminergic. This is within the range reported in previous studies (Margolis et al., 2006; Lammel et al., 2011). The mice underwent conditioning, extinction training, test 1, and were exposed to chamber B with or without a reminder shock; their brains were removed 90 min later. c-Fos and TH were immunostained and observed in the VTA (Figure 3B). We found that a reminder shock increased c-Fos expression in the CTBIL+ TH+ VTA neurons (Figure 3C), but not in the CTBIL+ TH− VTA neurons (Figure 3D). This result suggests that a reminder shock activates dopaminergic VTA neurons projecting to the IL.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig3-v2.jpg)
 
-**Figure 3.:** (A) Coronal brain section of a mouse with Alexa 488-conjugated cholera toxin subunit B (CTB) infusion into the IL. (B) A representative immunofluorescence image of the ventral tegmental area (VTA) neurons with c-Fos, tyrosine hydroxylase (TH), and CTB. (C) A reminder shock increased the proportion of c-Fos+ neurons in IL-projecting TH+ VTA neurons (no shock: n = 7, reminder shock: n = 6 mice; t(11) = 4.3, p = 0.0012). (D) A reminder shock did not increase the proportion of c-Fos+ neurons in IL-projecting TH− VTA neurons (no shock: n = 7, reminder shock: n = 6 mice). **p < 0.01, Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.011
+**Figure 3.:** (A) Coronal brain section of a mouse with Alexa 488-conjugated cholera toxin subunit B (CTB) infusion into the IL. (B) A representative immunofluorescence image of the ventral tegmental area (VTA) neurons with c-Fos, tyrosine hydroxylase (TH), and CTB. (C) A reminder shock increased the proportion of c-Fos+ neurons in IL-projecting TH+ VTA neurons (no shock: n = 7, reminder shock: n = 6 mice; t(11) = 4.3, p = 0.0012). (D) A reminder shock did not increase the proportion of c-Fos+ neurons in IL-projecting TH− VTA neurons (no shock: n = 7, reminder shock: n = 6 mice). **p < 0.01, Data represent mean ± standard error.
 
-## D1Rs in the IL mediate reinstatement
+### D1Rs in the IL mediate reinstatement
 
-To test whether D1R signalling is involved in reinstatement, we infused a D1R antagonist, SCH23390, or vehicle 30 min before giving the mice a reminder shock and measured their freezing time in test 2 (
+To test whether D1R signalling is involved in reinstatement, we infused a D1R antagonist, SCH23390, or vehicle 30 min before giving the mice a reminder shock and measured their freezing time in test 2 (Figure 4—figure supplement 1). SCH23390 infusions into the IL prevented reinstatement (Figure 4A). On the other hand, SCH23390 infusions into the prelimbic cortex (PL), a region adjacent to the IL, did not affect reinstatement (Figure 4—figure supplement 2). These results indicate a specific role of IL dopaminergic signalling in the induction of reinstatement. Next, we examined the effect of IL D1R blockage on reduction of synaptic input onto IL neurons associated with reinstatement. Brain slices were prepared after test 2 from the mice infused with SCH23390 or vehicle into the IL before the reminder shock. mEPSC frequency was higher in the SCH23390-infused mice than it was in the vehicle-infused mice (Figure 4B,C), while mEPSC amplitude was comparable (Figure 4D). Thus, IL D1R blockage attenuated reduction of synaptic input associated with reinstatement. Finally, we examined the effect of IL D1R blockage on c-Fos expression in the amygdala during test 2. Brains were removed 90 min after test 2 from the mice infused with SCH23390 or vehicle into the IL before the reminder shock. SCH23390-infused mice showed higher and lower c-Fos expression than vehicle-infused mice in the ventral ITC and CeM, respectively (Figure 4E). Thus, we concluded that IL D1R blockage prevents c-Fos expression changes in the amygdala associated with reinstatement. Taken together, these results indicate that D1R signalling in the IL is necessary for reduction of synaptic inputs, CeM disinhibition, and reinstatement.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig4-v2.jpg)
 
-**Figure 4.:** (A) SCH23390 infusions into the IL before a reminder shock suppressed reinstatement (phosphate-buffered saline [PBS]: n = 15, SCH23390: n = 14 mice; t(27) = 2.2, p = 0.039). (B) Representative mEPSC traces. (C) SCH23390-infused mice demonstrated higher mEPSC frequency (n = 9, 10 neurons; t(17) = 2.2, p = 0.044). (D) SCH23390 infusions had no effects on mEPSC amplitude. (E) SCH23390-infused mice demonstrated higher and lower c-Fos+ cell density in the ventral intercalated amygdala neurons (ITCv) and the central nucleus of the amygdala (CeM), respectively (n = 7–8 mice; ITCv: t(13) = 3.0, p = 0.0093; CeM: t(14) = 2.9, p = 0.011). **p < 0.01, *p < 0.05. Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.012
+**Figure 4.:** (A) SCH23390 infusions into the IL before a reminder shock suppressed reinstatement (phosphate-buffered saline [PBS]: n = 15, SCH23390: n = 14 mice; t(27) = 2.2, p = 0.039). (B) Representative mEPSC traces. (C) SCH23390-infused mice demonstrated higher mEPSC frequency (n = 9, 10 neurons; t(17) = 2.2, p = 0.044). (D) SCH23390 infusions had no effects on mEPSC amplitude. (E) SCH23390-infused mice demonstrated higher and lower c-Fos+ cell density in the ventral intercalated amygdala neurons (ITCv) and the central nucleus of the amygdala (CeM), respectively (n = 7–8 mice; ITCv: t(13) = 3.0, p = 0.0093; CeM: t(14) = 2.9, p = 0.011). **p < 0.01, *p < 0.05. Data represent mean ± standard error.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** A) and the prelimbic (B) cortices.DOI: http://dx.doi.org/10.7554/eLife.08274.013
-
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/08274/elife-08274-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Data represent mean ± standard error.DOI: http://dx.doi.org/10.7554/eLife.08274.014
+**Figure 4—figure supplement 2.:** Data represent mean ± standard error.
 
 ## Discussion
 
@@ -118,17 +193,17 @@ The present findings suggest a possible dopaminergic mechanism of fear reinstate
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experiments were approved by the animal experiment ethics committee at The University of Tokyo (approval number 24-10) and were in accordance with The University of Tokyo guidelines for the care and use of laboratory animals. Male C57BL/6J mice (8–15 weeks old; SLC, Shizuoka, Japan) were housed in group cages of four under standard laboratory conditions (12-hr light/12-hr dark cycle, with light from 7 a.m. to 7 p.m. and free access to food and water). Mice were handled daily for 1 week and housed individually for 2 days before behavioural procedures. All behavioural procedures were performed between 9 a.m. and 2 p.m.
 
-## Contextual fear conditioning
+### Contextual fear conditioning
 
 Behavioural procedures for fear conditioning, extinction, and reinstatement were performed in accordance with our previous protocol (Shen et al., 2013). For contextual fear conditioning, after a 150-s acclimation period in transparent rectangular conditioning chamber A (18 cm wide, 15 cm deep, 27 cm high) with white light and a stainless steel grid floor, 3 shocks (1 mA, 2 s) were delivered through a shock scrambler (SGS-003DX; Muromachi Kikai, Tokyo, Japan) with a 150-s interval between shocks. Mice were left in the chamber for an additional 60 s and then returned to their home cages. The entire duration of this session was 510 s. For extinction training and testing, mice were placed in chamber A without any shocks for 40 min and 5 min, respectively. A reminder shock (0.6 mA, 2 s) was given immediately after the mice were placed in white triangular chamber B (22 cm wide, 19 cm deep, 27 cm high) with red light and a stainless steel grid floor. The mice then returned to their home cages. Unless otherwise mentioned, testing sessions were 5 min.
 
 Mice in the Fear group underwent contextual fear conditioning on Day 1 and testing on Day 2. Mice in the Extinction group underwent contextual fear conditioning on Day 1, extinction training on Day 2, and testing on Day 3. Mice in the Extinction group of the PPR experiment underwent contextual fear conditioning on Day 1, extinction training on Day 2, testing on Day 3, exposure to chamber B on Day 4, and testing in chamber A on Day 5. Mice in the Reinstatement group underwent contextual fear conditioning on Day 1, extinction training on Day 2, testing on Day 3, a reminder shock on Day 4, and testing on Day 5. Each session was video recorded for automatic scoring of freezing according to a previously described method (Nomura and Matsuki, 2008). Freezing was defined as the absence of all movement except those related to breathing. Naive mice were kept in their home cages and were not exposed to the conditioning apparatus. The numbers of mice used in the c-Fos immunohistochemistry are as follows: (naive, Fear, Extinction, Reinstatement) = (9, 11, 11, 9) in PL and IL; (8, 10, 11, 8) in the lateral and basal nuclei of the amygdala, CeM and CeL; (8, 11, 11, 8) in dorsal ITC; (8, 11, 10, 8) in ventral ITC; and (8, 8, 9, 8) in CA1, CA2, CA3, and dentate gyrus.
 
-## Immunohistochemistry and microscopy
+### Immunohistochemistry and microscopy
 
 Mice were perfused intracardially with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde 90 min after behavioural tests. Brains were removed and stored in the same fixative for 8 hr at 4°C and subsequently immersed in 20% and 30% sucrose for 24 hr and 48 hr at 4°C. The immunocytochemical staining was performed on 40-μm thick free-floating sections that were prepared using a cryostat (HM520; Thermo Fisher Scientific, Waltham, MA, USA).
 
@@ -136,11 +211,11 @@ For c-Fos staining with diaminobenzidine (DAB), the sections were incubated in 0
 
 For fluorescence immunohistochemistry, the sections were incubated with primary antibodies, including a polyclonal anti-c-Fos antibody (1:1000) and mouse anti-tyrosine hydroxylase antibody (MAB318, 1:500; Millipore, MA, United States), for 24 hr at 4°C, and secondary antibodies, including a goat anti-rabbit biotinylated antibody (BA-1000, 1:500; Vector Laboratories) and Alexa Fluor 405 goat anti-mouse IgG secondary antibody (A31553, 1:400; Life Technologies, CA, United States) for 2 hr, VECTASTAIN ABC Kit (Vector Laboratories) for 1.5 hr, and TSA-Cyanine 3 (SAT704A001EA, 1:1000; Perkin–Elmer, Waltham, MA, USA) for 1 hr. The sections were mounted in PermaFluor (ThermoShandon, Pittsburgh, PA, United States). Images of the VTA (bregma −2.9 to −3.4 mm) were acquired using a confocal microscope (CV1000, 40× objective lens (NA, 1.3); Yokogawa, Tokyo, Japan). All cell counting experiments were conducted blind to experimental group. The quantification of c-Fos-positive cells was performed with ImageJ software (Scion). CTB positive and TH and c-Fos immunoreactive cells were counted bilaterally using at least five sections (374 cells from 13 mice). The VTA were outlined as an ROI according to the Paxinos and Franklin atlas. The number of c-Fos-positive cells in the CTB+ and TH+ cells was calculated by thresholding c-Fos immunoreactivity above background levels. The percentage for each animal was averaged across mice in order to produce the mean of each group.
 
-## Surgery
+### Surgery
 
 Under intraperitoneal xylazine (10 mg/kg) and pentobarbital (2.5 mg/kg) anaesthesia, 26-gauge stainless steel guide cannulas (Plastics One, Roanoke, VA, United States) were implanted aimed at the IL (A/P 1.7 mm, L/M ±0.3 mm, D/V −3.0 mm) or the PL (A/P 2.0 mm, L/M ±0.3 mm, D/V −2.2 mm). These cannulas were secured to the skull using a mixture of acrylic and dental cement, and 33-gauge dummy cannulas were then inserted into each guide cannula to prevent clogging. Mice were given at least 7 days of postoperative recovery time.
 
-## Drugs and microinfusions
+### Drugs and microinfusions
 
 Mice underwent fear conditioning on Day 1, extinction training on Day 2, testing on Day 3, and received bilateral infusions of PBS or muscimol (0.25 µg/side) into the IL 30 min before testing on Day 4.
 
@@ -150,12 +225,12 @@ Alexa 488-conjugated CTB (0.5 μg/side, Life Technologies) was infused into the 
 
 Infusions were made over 2 min, and the infusion cannulas (28 gauge, extending 0.5 mm below the guide cannula) were left in place for at least 1 min afterwards.
 
-## Electrophysiology
+### Electrophysiology
 
 Mice were deeply anaesthetised with diethyl ether and decapitated 60–90 min after re-exposure to the conditioning context. Brains were removed quickly, and 300-µm thick coronal slices containing the IL were prepared with a vibratome (VT 1200S, Leica) in ice-cold, oxygenated (95% O2/5% CO2) modified artificial cerebrospinal fluid containing 222.1 mM sucrose, 27 mM NaHCO3, 1.4 mM NaH2PO4, 2.5 mM KCl, 0.5 mM ascorbic acid, 1 mM CaCl2, and 7 mM MgSO4.
 
 Picrotoxin (100 µM) was added to ACSF (artificial cerebrospinal fluid) (127 mM NaCl, 1.6 mM KCl, 1.24 mM KH2PO4, 1.3 mM MgSO4, 2.4 mM CaCl2, 26 mM NaHCO3, 10 mM glucose) to block inhibitory synaptic currents. Whole-cell patch-clamp recordings were performed with glass microelectrodes (3–6 MΩ) filled with internal solution (120 K-gluconate, 5 KCl, 10 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid, 1 MgCl2, 10 phosphocreatine-Na2, 2 MgATP, 0.1 Na2GTP, 0.2 ethylene glycol tetraacetic acid, pH 7.2–7.3, 280–295 mOsm). For electrical stimulation, a pipette with a large tip (∼3 μm) was filled with ACSF and placed in layer 2/3. Brief current pulses (50 μs, 1–40 μA) were delivered with a stimulation-isolation unit (Nihon Kohden, Tokyo, Japan). Paired stimuli were given with an interstimulus interval of 50 ms, and the ratio between the amplitude of the second and first EPSCs was calculated. mEPSCs were recorded at a holding potential of −70 mV in the presence of tetrodotoxin (TTX, 1 µM). mEPSCs were detected using an in-house MATLAB programme and were defined as inward currents with amplitudes greater than 7 pA (Miura et al., 2012). To examine the intrinsic excitability, IL neurons were injected with 800-ms depolarizing current pulses ranging from 40 pA to 400 pA at 40-pA increments. The number of action potentials evoked by each current intensity was counted. The amplitude of fast afterhyperpolarization was calculated as the difference between the minimum potential after the second evoked spike within the 800-ms pulse and the spike threshold. To measure the medium afterhyperpolarization (mAHP), cells were held at −70 mV, and the 800-ms pulse, which evoked two action potentials, was injected. The amplitude of mAHP was calculated as the difference between the negative peak of the potential after the end of the 800-ms pulse and the resting membrane potential (−70 mV). To measure the voltage sag, a hyperpolarizing current pulse of 200 pA was injected in current-clamp mode. The voltage sag was calculated by subtracting the average steady-state voltage during a 100-ms period beginning 645 ms after the beginning of the hyperpolarizing step minus the peak of the hyperpolarization. Input resistance was calculated by current response to a 10-mV, 30-ms depolarizing pulse in voltage-clamp mode. Data were sampled at 20 kHz and filtered at 2 kHz using an Axopatch 700B amplifier (Axon Instruments, Foster, CA, United States), Digidata 1440A (Axon Instruments), and pClamp 10.2 (Molecular Devices, Sunnyvale, CA, United States). All data were acquired, stored, and analysed using Clampex 10, Clampfit, and MATLAB.
 
-## Data analysis
+### Data analysis
 
 All values are reported as mean ±SEM. Repeated measures analysis of variance (ANOVA), Tukey's test after one-way ANOVA, Student's t-tests, and paired t-tests were performed to identify significant differences.

@@ -21,14 +21,14 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 Department of Dermatology, Course of Integrated Medicine, Graduate School of Medicine, Osaka University Osaka Japan
-2. https://ror.org/035t8zc32 Department of Neurocutaneous Medicine, Division of Health Sciences, Graduate School of Medicine, Osaka University Osaka Japan
-3. https://ror.org/05hj3gh79 Research Department, Maruho Co, Ltd. Kyoto Japan
-4. https://ror.org/035t8zc32 Cutaneous Allergy and Host Defense, Immunology Frontier Research Center (iFReC), Osaka University Osaka Japan
-5. https://ror.org/035t8zc32 Department of Plastic Surgery, Course of Organ Regulation Medicine, Graduate School of Medicine, Osaka University Osaka Japan
-6. https://ror.org/05kt9ap64 Department of Plastic and Reconstructive Surgery, Kindai University Osaka Japan
-7. https://ror.org/035t8zc32 Department of Respiratory Medicine and Clinical Immunology, Course of Internal Medicine, Graduate School of Medicine, Osaka University Osaka Japan
-8. https://ror.org/035t8zc32 Department of Medicine for Cutaneous Immunological Diseases, Course of Integrated Medicine, Graduate School of Medicine, Osaka University Osaka Japan
+1. Department of Dermatology, Course of Integrated Medicine, Graduate School of Medicine, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Department of Neurocutaneous Medicine, Division of Health Sciences, Graduate School of Medicine, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Research Department, Maruho Co, Ltd. Kyoto Japan ([ROR:05hj3gh79](https://ror.org/05hj3gh79))
+4. Cutaneous Allergy and Host Defense, Immunology Frontier Research Center (iFReC), Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+5. Department of Plastic Surgery, Course of Organ Regulation Medicine, Graduate School of Medicine, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+6. Department of Plastic and Reconstructive Surgery, Kindai University Osaka Japan ([ROR:05kt9ap64](https://ror.org/05kt9ap64))
+7. Department of Respiratory Medicine and Clinical Immunology, Course of Internal Medicine, Graduate School of Medicine, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+8. Department of Medicine for Cutaneous Immunological Diseases, Course of Integrated Medicine, Graduate School of Medicine, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 
 † Corresponding author
 
@@ -46,39 +46,99 @@ Herein, we investigated the roles of Sema4A in the pathogenesis of psoriasis by 
 
 ## Results
 
-## Epidermal Sema4A expression is downregulated in psoriasis
+### Epidermal Sema4A expression is downregulated in psoriasis
 
 The analysis of previously published single-cell RNA-sequencing data from control (Ctl) and psoriatic lesional (L) skin specimens (Kim et al., 2023) revealed detectable expression of SEMA4A in keratinocytes, dendritic cells, and macrophages in both Ctl and L. SEMA4A expression was low in neural crest-like cells, fibroblasts, CD4 T cells, CD8 T cells, NK cells, and plasma cells, making the comparison of expression levels impractical (Figure 1A and B; Figure 1—figure supplement 1A–C). Dendritic cells and macrophages showed comparable SEMA4A expression levels between Ctl and L (Figure 1C). The adjusted p-value (padj) for SEMA4A in keratinocytes between Ctl and L was 2.83×10–39, indicating a statistically significant difference despite not being visually prominent in the volcano plot, which shows comprehensive differential gene expression in keratinocytes (Figure 1C; Figure 1—figure supplement 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig1-v1.jpg)
+
+**Figure 1.:** (A) UMAP plots, generated from single-cell RNA-sequencing data (GSE220116), illustrate cell distributions from control (Ctl) and psoriatic lesion (L) samples (n=10 for Ctl, n=11 for L). (B) Subclustering of immune cells. (C) SEMA4A expression in keratinocytes, dendritic cells, and macrophages. ****padj<0.001. NS, not significant. Analyzed using Python and cellxgene VIP. (D) Representative immunohistochemistry and magnified views showing Sema4A expression in Ctl, psoriatic non-lesion (NL), and L. Scale bar = 50 μm. (E) Mean epidermal (Epi) Sema4A intensity in immunohistochemistry (n=10 per group). Each dot represents the average intensity from 5 unit areas per sample. (F) Relative SEMA4A expression in Epi (n=10 for Ctl, n=7 for L and NL) and dermis (Derm, n=6 per group). (G) Proportions of Sema4A-expressing cells in blood CD4 T cells (left), CD8 T cells (middle), and monocytes (right) from Ctl and psoriatic (Pso) patients (n=13 per group in CD4 and CD8, n=11 for Ctl and n=13 for Pso in monocytes). (H) Serum Sema4A levels in Ctl (n=20) and Pso (n=60). (E–H) *p<0.05, **p<0.01, ****p<0.0001. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sample information for specimens from Ctl and psoriatic L (GSE220116). (B, C) Clusters of cells were identified by their expression patterns of signature genes. (D) The volcano plot displays changes in gene expression in psoriatic L compared to Ctl.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Gating strategy for human Sema4A expression in blood cells. Large and small cells were distinguished using forward scatter (FCS) and side scatter (SSC) in a dot plot panel, with dead cells being excluded. Monocytes were defined within the live large cell population as CD11c positive. CD4 and CD8 T cells were identified within the live small cell population as CD3-positive CD4-positive and CD3-positive CD8-positive populations, respectively. The empty histogram represents the flow cytometry minus one control for Sema4A.
+
 Immunohistochemistry of Ctl and psoriasis demonstrated Sema4A expression in keratinocytes (Figure 1D). The staining intensity of Sema4A in epidermis was significantly lower in both non-lesions (NL) and L than in Ctl (Figure 1E). Relative mRNA expression of SEMA4A was also decreased in the epidermis of NL and L compared to Ctl, while it remained comparable in the dermis (Figure 1F). In contrast, the proportions of Sema4A-positive cells were significantly higher in blood CD4 and CD8 T cells, and monocytes in psoriasis compared to Ctl (Figure 1G; Figure 1—figure supplement 2). Serum Sema4A levels, measured by enzyme-linked immunosorbent assay (ELISA), were comparable between Ctl and psoriasis (Figure 1H). These findings demonstrate that the expression profile of Sema4A in psoriasis varies across cell types.
 
-## Psoriasis-like dermatitis is augmented in Sema4A KO mice
+### Psoriasis-like dermatitis is augmented in Sema4A KO mice
 
 When psoriasis-like dermatitis was induced in wild-type (WT) mice and Sema4A knockout (KO) mice by imiquimod (IMQ) application on ears (Figure 2A), ear swelling on day 4 was more pronounced in Sema4A KO mice (Figure 2B) with upregulated Il17a gene expression (Figure 2C). Flow cytometry analysis of cells isolated from the ears revealed increased proportions of Vγ2+ T cells, Vγ2-Vγ3- double-negative (DN) γδ T cells, and IL-17A-producing cells of those fractions in Sema4A KO epidermis (Figure 2D and E; Figure 2—figure supplement 1). In Sema4A KO dermis, there was also an increase in the proportions of Vγ2+ T cells and IL-17A-producing Vγ2+ T cells (Figure 2D and E). These results suggest that Sema4A deficiency in mice accelerates psoriatic profile. IL-17A-producing T cells in skin-draining lymph nodes (dLN) remained comparable between WT mice and Sema4A KO mice (Figure 2F). Though the IMQ model is well established and valuable murine psoriatic model (van der Fits et al., 2009), the vehicle of IMQ cream can activate skin inflammation that is independent of Toll-like receptor 7, such as inflammasome activation, keratinocyte death, and interleukin-1 production (Walter et al., 2013). This suggests that the IMQ model involves complex pathway. Therefore, we subsequently induced IL-23-mediated psoriasis-like dermatitis (Figure 2—figure supplement 2A), a much simpler murine psoriatic model, because IL-23 is thought to play a central role in psoriasis pathogenesis (Krueger et al., 2007; Lee et al., 2004). Although ear swelling on day 4 was comparable between WT mice and Sema4A KO mice (Figure 2—figure supplement 2B), the epidermis, but not the dermis, was significantly thicker in Sema4A KO mice compared to WT mice (Figure 2—figure supplement 2C). We found that the proportion of CD4 T cells among T cells was significantly higher in Sema4A KO mice compared to WT mice, while the proportion of Vγ2 and DNγδ T cells among T cells was comparable between them (Figure 2—figure supplement 2D). On the other hand, focusing on IL-17A-producing cells, the proportion of IL-17A-producing Vγ2 and DNγδ T cells in CD3 fraction in the epidermis was significantly higher in Sema4A KO mice, consistent with the results from IMQ-induced psoriasis-like dermatitis (Figure 2—figure supplement 2E).
 
-## Sema4A in keratinocytes may play a role in preventing murine psoriasis-like dermatitis
+![Figure 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental scheme. Wild-type (WT, green) mice and Sema4A KO (black) mice were treated with 10 mg/ear of 5% IMQ for 4 consecutive days. Samples for flow cytometry analysis were collected on day 4. (B) Ear thickness of WT mice and KO mice on day 4 (n=15 per group). (C) Relative expression of Il17a in epidermis (n=5 per group). (D, E) The percentages of Vγ3, Vγ2, Vγ2-Vγ3-γδ (DNγδ), CD4, and CD8 T cells (D) and those with IL-17A production (E) in CD3 fraction in the Epi (top) and Derm (bottom) of WT and KO ears (n=6 per group, each dot represents the average of 4 ear specimens). (F) The percentages of IL-17A-producing γδ, CD4, and CD8 T cells in CD3 fraction in skin-draining lymph nodes (dLN) (n=9 per group). (B–F) *p<0.05, **p<0.01, ****p<0.0001. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Gating strategy for murine T cells infiltrating the epidermis and dermis. After excluding dead cells, TCRγδ-positive T cells were evaluated for the expression of Vγ2. TCRγδ-positive Vγ2-negative population was further assessed the expression of Vγ3. The CD3-positive TCRγδ-negative population was evaluated for the expression of CD4 and CD8. Each population was analyzed for cytokine production. The empty histogram represents the isotype control for IL-17A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) An experimental scheme involved intradermally injecting 20 μL of phosphate-buffered saline containing 500 ng of recombinant mouse IL-23 into both ears of wild-type (WT) mice and KO mice for 4 consecutive days. Samples for following analysis were collected on day 4. (B, C) Ear thickness (B) and Epi and Derm thickness (C) of WT mice and KO mice on day 4 (n=12 per group). (D, E) The percentages of Vγ3, Vγ2, DNγδ, CD4, and CD8 T cells (D) and those with IL-17A production (E) in CD3 fraction in the Epi (top) and Derm (bottom) of WT and KO ears (n=5 per group). Each dot represents the average of 4 ear specimens. (B–E) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
+
+### Sema4A in keratinocytes may play a role in preventing murine psoriasis-like dermatitis
 
 To investigate the cells responsible for the augmented ear swelling in Sema4A KO mice, bone marrow chimeric mice were next analyzed (Figure 3A). Since it has already been reported that bone marrow cells contain keratinocyte stem cells (Harris et al., 2004; Wu et al., 2010), we confirmed that epidermis of mice deficient in non-hematopoietic Sema4A (WT→KO) showed no obvious detection of Sema4a, thereby ruling out the impact of donor-derived keratinocyte stem cells infiltrating the host epidermis (Figure 3—figure supplement 1A). WT→KO mice displayed more pronounced ear swelling than mice with intact Sema4A expression (WT→WT) following IMQ application (Figure 3B). Similarly, mice with a systemic deficiency of Sema4A (KO→KO) showed severe ear swelling compared to mice deficient in hematopoietic Sema4A (KO→WT) (Figure 3B). Ear swelling was comparable between WT→WT mice and KO→WT mice (Figure 3B). Flow cytometry analysis revealed increased infiltration of IL-17A-producing DNγδ T cells in the epidermis, as well as Vγ2+ T cells and IL-17A-producing Vγ2+ T cells in the dermis, in WT→KO mice compared to WT→WT mice (Figure 3C; Figure 3—figure supplement 1B). These findings suggest that non-hematopoietic cells, possibly keratinocytes, are primarily responsible for the increased IMQ-induced Sema4A KO mice ear swelling.
 
-## Sema4A KO epidermis is thicker than WT epidermis with increased γδ T17 infiltration
+![Figure 3.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental scheme for establishing BM chimeric mice. (B) Imiquimod (IMQ) day 4 ear thickness in the mice with the indicated genotypes (n=14 for WT→WT, n=13 for WT→KO, n=9 for KO→WT, n=9 for KO→KO). (C) The percentages of IL-17A-producing Vγ3, Vγ2, DNγδ, CD4, and CD8 T cells in CD3 fraction from IMQ day 4 Epi (top) and Derm (bottom) of the ears from WT→ WT mice and WT→ KO mice (n=6 per group). Each dot represents the average of 4 ear specimens. (B, C) *p<0.05, **p<0.01, ****p<0.0001. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sema4a expression in the Epi of WT→ WT mice and WT→ KO mice (n=8 for WT→ WT, n=7 for WT→ KO). (B) The percentages of Vγ3, Vγ2, DNγδ, CD4, and CD8 T cells in CD3 fraction from imiquimod (IMQ) day 4 Epi (top) and Derm (bottom) of the ears from WT→ WT mice and WT→ KO mice (n=6 per group). Each dot represents the average of 4 ear specimens. (A, B) *p<0.05, ***p<0.001. NS, not significant. The error bars represent the standard deviation.
+
+### Sema4A KO epidermis is thicker than WT epidermis with increased γδ T17 infiltration
 
 Even without IMQ application, Sema4A KO ears turned out to be slightly but significantly thicker than WT ears on week 8 while their appearance remained normal (Figure 4A). While epidermal thickness of back skin was comparable at birth (Figure 4B), on week 8, epidermis of Sema4A KO back and ear skin was notably thicker than that of WT mice (Figure 4B), suggesting that acanthosis in Sema4A KO mice is accentuated post-birth. Dermal thickness remained comparable between WT mice and Sema4A KO mice at both times (Figure 4B). The epidermis of WT ear at week 8 showed significantly higher Sema4a mRNA expression compared to the dermis (Figure 4C). Based on these observations, Sema4A appears to play a more pronounced role in epidermis than in dermis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig4-v1.jpg)
+
+**Figure 4.:** (A) Ear thickness of WT mice and KO mice at week (Wk) 8 (n=15 per group) and representative images. (B) Left: representative hematoxylin and eosin staining of day 0 back and Wk 8 back and ear. Scale bar = 50 μm. Right: Epi and Derm thickness in day 0 back (n=5) and Wk 8 back (n=5) and ear (n=8). (C) Relative Sema4a expression in WT Epi and Derm (n=5 per group). (D) The percentages of the IL-17A-producing Vγ3, Vγ2, DNγδ, CD4, and CD8 T cells in CD3 fraction (n=4 per group) in Epi (top) and Derm (bottom). Each dot represents the average of 4 ear specimens. (E) The graphs showing the percentages of IL-17A-producing γδ, CD4, and CD8 T cells in CD3 fraction from draining LN (dLN) of WT mice and Sema4A KO mice (n=6 per group). (A–E) *p<0.05, **p<0.01, ****p<0.0001. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative expression of psoriasis-associated genes in Epi (top) and Derm (bottom) of wild-type (WT) mice and KO mice (n=5 per group, #: not detected). (B) Representative dot plots showing CD69 and CD103 expression in the indicated T cell fractions from whole skin. The graphs show T cell counts per ear (top) and those with resident memory phenotype (bottom) (n=7 per group). Each dot represents the average of 4 ear specimens. (A, B) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The percentages of Vγ3, Vγ2, DNγδ, CD4, and CD8 T cells in CD3 fraction from naive WT and KO mice. (B, C) The graphs presenting the percentages of IFNγ (B) and IL-4 (C) -producing Vγ2, DNγδ, CD4, and CD8 T cells in CD3 fraction in the Epi (top) and Derm (bottom) of naive WT mice and KO mice (n=4 per group). (A–C) Each dot represents the average of 4 ear specimens. *p<0.05. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Splenic T cells were cultured for 2 weeks, followed by flow cytometry analysis. The accumulated data display the percentages of IL-17A-producing (right) and IFNγ-producing (left) γδ, CD4, and CD8 T cells within CD3 fraction under various conditions: IL-23-dependent Th17-skewing condition (top), IL-23 only Th17-skewing condition (middle), and IL-23-independent Th17-skewing condition (bottom). NS, not significant. The error bars represent the standard deviation.
 
 Sema4A KO epidermis exhibited increased expression of Ccl20, Tnfa, and Il17a and a trend of upregulation of S100a8 compared to WT epidermis (Figure 4—figure supplement 1A). These differences were not observed in dermis (Figure 4—figure supplement 1A). Flow cytometry analysis revealed increased infiltration of γδ T cells in Sema4A KO ear (Figure 4—figure supplement 1B). These cells predominantly expressed resident memory T cell (TRM)-characteristic molecules, CD69 and CD103 (Figure 4—figure supplement 1B). Sema4A KO skin also had a higher number of TRM in both CD4 and CD8 T cells (Figure 4—figure supplement 1B). The percentages of Vγ2+ T cells, DNγδ T cells, and CD8 T cells in epidermis were higher in Sema4A KO mice than in WT mice, which was not the case in dermis (Figure 4—figure supplement 2A). The proportion of Vγ3+ dendritic epidermal T cells was comparable between WT mice and Sema4A KO mice (Figure 4—figure supplement 2A). Epidermal Vγ2+ T cells and DNγδ T cells in Sema4A KO mice showed higher IL-17A-producing capability (Figure 4D), while IFNγ and IL-4 production was comparable between WT mice and Sema4A KO mice (Figure 4—figure supplement 2B and C). Conversely, the frequency of IL-17A-producing T cells from dLN was comparable (Figure 4E). The production of IL-17A and IFNγ from splenic T cells under T17-polarizing conditions remained consistent between WT mice and Sema4A KO mice (Figure 4—figure supplement 3).
 
 Taken together, it is suggested that T17 cells are specifically upregulated in epidermis, indicating that the epidermal microenvironment plays a pivotal role in facilitating the increased T cell infiltration observed in naïve Sema4A KO mice.
 
-## Sema4A KO skin shares features with human psoriatic NL
+### Sema4A KO skin shares features with human psoriatic NL
 
 Previous literatures have identified certain features common to psoriatic L and NL, such as thickened epidermis (Figure 5—figure supplement 1; Gallais Sérézal et al., 2019), CCL20 upregulation (Gallais Sérézal et al., 2019), and accumulation of IL-17A-producing T cells (Vo et al., 2019), which were detected in Sema4A KO mice.
 
 Gene expression analysis using public RNA-sequencing data (Tsoi et al., 2019) with RaNAseq (Prieto and Barrios, 2019) showed upregulation of keratinization and antimicrobial peptide genes in NL compared to Ctl (Figure 5A). Gene Ontology analysis highlighted an upregulation in biological processes, predominantly in peptide cross-linking involved in epidermis formation and keratinocyte differentiation, with a secondary increase in the defense response to viruses in NL (Figure 5B). While the expression of Keratin (KRT) 10 was comparable between NL and Ctl, upregulation in KRT5, KRT14, and KRT16 was observed in NL (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) The volcano plot (A) and Gene Ontology (GO) analysis (B), generated from RNA-sequencing data (GSE121212) using RaNAseq, display changes in gene expression in psoriatic NL compared to Ctl. (C) The difference in the expression of epidermal differentiation markers between Ctl and NL (n=38 for Ctl, n=27 for NL) was calculated with the transcripts per million values. **padj<0.01. NS, not significant. The error bars represent the standard deviation. (D) Relative gene expression of epidermal differentiation markers between wk 8 Epi of wild-type (WT) mice and KO mice (n=5 for Krt14 and Krt16, n=8 for Krt5, Krt10, Filaggrin, and Loricrin). (E) Left: Representative immunofluorescence pictures of Krt5, Krt10, Krt14, and Krt16 (red) overlapped with DAPI. Scale bar = 50 μm. Right: Accumulated graphs showing the numbers of Krt5, Krt10, Krt14, and Krt16 positive cells per 100 μm width (n=5 per group) of wk 8 ear (right). Each dot represents the average from 5 unit areas per sample. (F) Transepidermal water loss (TEWL) in back skin of WT mice and KO mice at wk 8 (n=5 per group). (D–F) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Epidermal thickness of Ctl and psoriatic non-lesions (NL) (n=10 per group). ***p<0.001. The error bars represent the standard deviation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Representative immunofluorescence pictures of Krt5, Krt10, Krt14, and Krt16 (red) overlapped with DAPI, and the accumulated graphs showing the numbers of Krt5, Krt10, Krt14, and Krt16 positive cells per 100 μm width (n=5 per group) in the epidermis of day 0 back. Scale bar = 50 μm. Each dot represents the average from 5 unit areas per sample. NS, not significant. The error bars represent the standard deviation.
+
 In the murine model, relative expression levels of Krt10, Krt14, Krt16, and Filaggrin were elevated in Sema4A KO epidermis (Figure 5D). Immunofluorescence analysis showed that Sema4A KO epidermis had a higher density of keratinocytes positive for Krt5, Krt10, Krt14, and Krt16 compared to WT epidermis (Figure 5E). This upregulation was not observed in back skin at birth (Figure 5—figure supplement 2). Comparable transepidermal water loss between WT mice and Sema4A KO mice indicated preserved skin barrier function in Sema4A KO mice (Figure 5F).
 
 Based on these results, it is implied that the epidermis of human psoriatic NL and Sema4A KO mice exhibit shared pathways, potentially leading to an acanthotic state. Combined with the observed acanthosis and increased T17 infiltration in Sema4A KO mice, Sema4A KO skin is regarded to demonstrate the features characteristic of human psoriatic NL.
 
-## mTOR signaling is upregulated in the epidermis of psoriatic NL and Sema4A KO mice
+### mTOR signaling is upregulated in the epidermis of psoriatic NL and Sema4A KO mice
 
 Previous reports have shown that mTOR pathway plays a critical role in maintaining epidermal homeostasis, as evidenced by mice with keratinocyte-specific deficiencies in Mtor, Raptor, or Rictor, which exhibit a hypoplastic epidermis with impaired differentiation and barrier formation (Asrani et al., 2017; Ding et al., 2016; Ding et al., 2020). We thus investigated mTOR pathway in both human and murine epidermis.
 
@@ -86,11 +146,23 @@ Immunohistochemical analyses highlighted the increase in phospho-S6 (p-S6), indi
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig6-v1.jpg)
 
-**Figure 6.:** (A) Representative results of immunohistochemistry displaying cells positive for phospho-S6 (p-S6) (Ser235/236), S6, phospho-Akt (p-Akt) (Ser473), and Akt in Ctl, NL, and L. The graphs of accumulated data show the mean intensity of p-S6 and S6 in the upper and lower epidermal layers (n=9 per group). Scale bar = 100 μm. Each dot represents the average mean intensity from 5 unit areas per sample. (B) The mean intensity of p-S6 (Ser235/236) and p-Akt (Ser473), detected by immunohistochemistry in the epidermis of wild-type (WT) mice and KO mice, were analyzed. Scale bar = 50 μm. Each dot represents the average intensity from 5 unit areas per sample (n=8 per group). (C, D) Immunoblotting of p-S6 (Ser235/236), S6, p-Akt (Ser473), and Akt in tissue lysates from epidermis without treatment (C) and with imiquimod (IMQ) treatment for consecutive 4 days (D) (n=5 per group, except for p-Akt and Akt in C, for which n=4). (A–D) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6C and D.Figure 6—source data 3.Figure 6C and D.
+**Figure 6.:** (A) Representative results of immunohistochemistry displaying cells positive for phospho-S6 (p-S6) (Ser235/236), S6, phospho-Akt (p-Akt) (Ser473), and Akt in Ctl, NL, and L. The graphs of accumulated data show the mean intensity of p-S6 and S6 in the upper and lower epidermal layers (n=9 per group). Scale bar = 100 μm. Each dot represents the average mean intensity from 5 unit areas per sample. (B) The mean intensity of p-S6 (Ser235/236) and p-Akt (Ser473), detected by immunohistochemistry in the epidermis of wild-type (WT) mice and KO mice, were analyzed. Scale bar = 50 μm. Each dot represents the average intensity from 5 unit areas per sample (n=8 per group). (C, D) Immunoblotting of p-S6 (Ser235/236), S6, p-Akt (Ser473), and Akt in tissue lysates from epidermis without treatment (C) and with imiquimod (IMQ) treatment for consecutive 4 days (D) (n=5 per group, except for p-Akt and Akt in C, for which n=4). (A–D) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
 
-## Inhibition of mTOR signaling modulates cytokeratin expression in Sema4A KO mice
+### Inhibition of mTOR signaling modulates cytokeratin expression in Sema4A KO mice
 
 To investigate the contribution of mTORC1 and mTORC2 signaling in the development of psoriatic features in the Sema4A KO epidermis, mTORC1 inhibitor rapamycin and mTORC2 inhibitor JR-AB2-011 were intraperitoneally applied to Sema4A KO mice for 14 days. Although epidermal thickness remained unchanged by the inhibitors (Figure 7A and B), relative gene expression of Krt5 was significantly upregulated and that of Krt16 was significantly downregulated after rapamycin application (Figure 7C). While the upregulation of Il17a in Sema4A KO epidermis was not clearly modified by rapamycin (Figure 7C), immunofluorescence revealed the decrease in the number of CD3 T cells in Sema4A KO epidermis by rapamycin (Figure 7D). We additionally conducted topical application of rapamycin gel and vehicle gel on the left and right ears of Sema4A KO mice, respectively. Although there were no detectable changes in epidermal thickness and epidermal T cell counts, the upregulation of Krt5 and downregulation of Krt16 was observed again (Figure 7—figure supplement 1). Conversely, the application of JR-AB2-011 resulted in decreased expression of Krt5, Krt10, and Krt14 with a trend toward increased Krt16 expression (Figure 7E). JR-AB2-011 did not influence the number of infiltrating T cells in the epidermis (Figure 7F). Next, we investigated whether intraperitoneal rapamycin treatment effectively downregulates inflammation in the IMQ-induced murine model of psoriasis in Sema4A KO mice (Figure 7—figure supplement 2A). Rapamycin significantly reduced epidermal thickness compared to vehicle treatment (Figure 7—figure supplement 2B). Additionally, rapamycin treatment downregulated the expression of Krt10, Krt14, and Krt16 (Figure 7—figure supplement 2C). While the upregulation of Il17a in the Sema4A KO epidermis in IMQ model was not clearly modified by rapamycin (Figure 7—figure supplement 2C), immunofluorescence revealed a decrease in the number of CD3 T cells in Sema4A KO epidermis by rapamycin (Figure 7—figure supplement 2D). In the naive states, mTORC1 primarily regulates keratinocyte proliferation, whereas mTORC2 mainly involved in the keratinocyte differentiation through Sema4A-related signaling pathways. Conversely, in the psoriatic dermatitis state, rapamycin downregulated both keratinocyte differentiation and proliferation markers. The observed similarities in Il17a expression following treatment with rapamycin and JR-AB2-011, regardless of additional IMQ treatment, suggest that Il17a production is not significantly dependent on Sema4A-related mTOR signaling.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Epidermal thickness of Sema4A KO mice treated intraperitoneally with vehicle (Ctl) or rapamycin (A), and Ctl or JR-AB2-011 (B) (n=5 per group). (C, D) Relative expression of keratinocyte differentiation markers and Il17a in Sema4A KO Epi (C), and the number of T cells in Epi and Derm under Ctl or rapamycin (D) (n=5 per group). (E, F) Relative expression of keratinocyte differentiation markers and Il17a in Sema4A KO Epi (E), and the number of T cells in Epi and Derm under Ctl or JR-AB2-011 (F) (n=5 per group). (D and F) Each dot represents the sum of numbers from 10 unit areas across 3 specimens. (A–F) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Comparison of Epi thickness between vehicle (Ctl) gel-treated right ears and rapamycin gel-treated left ears of Sema4A knockout (KO) mice (n=10 per group). (B) Relative expression of keratinocyte differentiation markers and Il17a in Sema4A KO Epi under Ctl gel or rapamycin gel treatments (n=5 per group). (C) The number of T cells in the Epi (left) and Derm (right), under Ctl gel or rapamycin gel treatments (n=5 per group). Each dot represents the sum of numbers from 10 unit areas across 3 specimens. (A–C) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/97654/elife-97654-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Experimental scheme. (B) The Epi thickness on day 18 (n=10 for Ctl, n=12 for rapamycin). (C) Relative expression of keratinocyte differentiation markers and Il17a in Sema4A KO Epi (n=10 for Ctl, n=12 for rapamycin). (D) The number of T cells in the Epi (left) and Derm (right), under Ctl or rapamycin and IMQ treatments (n=10 for Ctl, n=12 for rapamycin). Each dot represents the sum of numbers from 10 unit areas across 3 specimens. (A–C) *p<0.05, **p<0.01. NS, not significant. The error bars represent the standard deviation.
 
 ## Discussion
 
@@ -108,11 +180,11 @@ In summary, epidermal Sema4A downregulation can reflect the psoriatic non-lesion
 
 ## Materials and methods
 
-## Human sample collection
+### Human sample collection
 
 Psoriatic L and NL skin specimens were acquired from 17 psoriasis patients. Ctl specimens were obtained from 19 subjects who underwent tumor resection or reconstructive surgery. For epidermal-dermal separation, specimens were incubated overnight at 4°C with 2.5 mg/mL dispase II (Wako, Osaka, Japan) in IMDM (Wako). Blood samples were collected from 73 psoriasis and 33 Ctl. In addition to ELISA (Nakatsuji et al., 2012), peripheral blood mononuclear cells were isolated using Ficoll-Paque PLUS density gradient media (Cytiva, Tokyo, Japan). Patient details are provided in Supplementary file 1.
 
-## Mice
+### Mice
 
 C57BL/6J WT mice were procured from CLEA Japan (Tokyo, Japan). Sema4A KO mice with C57BL/6J background were generated as previously described (Kumanogoh et al., 2005). We examined female mice in order to reduce the result variation. Neonatal mice and female mice aged 8–12 weeks, maintained under specific pathogen-free conditions, were used.
 
@@ -124,33 +196,33 @@ In the specified experiments, skin specimens were separated into epidermis and d
 
 Transepidermal water loss measurements were performed on the back skin of mice at week 8 using a Tewameter (Courage and Khazaka Electronic GmbH, Cologne, Germany), according to the manufacturer’s instructions.
 
-## Immunofluorescence and immunohistochemistry
+### Immunofluorescence and immunohistochemistry
 
 Specimens were fixed in 4% paraformaldehyde phosphate buffer solution (Wako), embedded in paraffin, and sliced into 3 μm thickness on glass slides. After deparaffinization and rehydration, antigen retrieval was performed using citrate buffer (pH 6.0, Nacalai Tesque, Kyoto, Japan) or TE buffer (pH 9.0, Nacalai Tesque).
 
 For immunohistochemistry, samples were incubated with 3% H2O2 (Wako) for 5 min. After blocking (Agilent, Santa Clara, CA, USA), the specimens were incubated with the indicated primary antibodies under specified conditions (Supplementary file 2). The specimens were applied with the Dako REAL EnVision Detection System, Peroxidase/DAB, Rabbit/Mouse, HRP kit (Agilent) and counterstained with hematoxylin (Wako). For immunofluorescence, the blocked specimens were incubated with the indicated primary antibodies followed by the secondary antibodies (Supplementary file 2). Mounting medium with DAPI (Vector Laboratories, Burlingame, CA, USA) was used. Slides were observed using a fluorescence microscope (BZ-X700, Keyence, Osaka, Japan). The staining intensity was measured using Fiji software (ImageJ, National Institutes of Health, Bethesda, MD, USA) over lengths of 200 μm in human samples and 100 μm in murine samples. This measurement was taken from 5 areas of each specimen, and the average score is presented. The average thickness of epidermis and dermis from 10 spots is presented. The number of epidermal cells positive for the indicated cytokeratins was counted per 100 μm width, with the average number from 5 areas being presented. Additionally, the numbers of CD3-positive cells in murine ears were counted across 10 fields of 400 μm width, with the total sum being presented.
 
-## Quantitative reverse transcription polymerase chain reaction
+### Quantitative reverse transcription polymerase chain reaction
 
 Total RNA was extracted from homogenized skin tissue using Direct-zol RNA MiniPrep Kit (Zymo Research, Irvine, CA, USA). cDNA was synthesized by High-Capacity RNA-to-cDNA Kit (Thermo Fisher Scientific, Waltham, MA, USA). qPCR was performed using TB Green Premix Ex Taq II (Takara Bio, Shiga, Japan) on a ViiA 7 Real-Time PCR System (Thermo Fisher Scientific). The primers are listed in Supplementary file 3. All samples were run in triplicate, and the median CT value was calculated. Relative gene expression levels were normalized to the housekeeping gene GAPDH using the ΔΔCT technique.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Single-cell suspensions from murine skin-dLN and spleen were prepared by grinding, filtering, and lysing red blood cells (BioLegend). Skin specimens were minced and digested with 3 mg/mL collagenase type III (Worthington Biochemical Corporation, Lakewood, NJ, USA) in RPMI 1640 medium (Wako) at 37°C for 10 min for epidermis, and 30 min for dermis or whole skin. Cells were surface-stained with directly conjugated monoclonal antibodies (Supplementary file 4). Dead cells were identified using LIVE/DEAD Fixable Dead Cell Stain Kit (Thermo Fisher Scientific). To evaluate cytokine production, cells were stimulated with Phorbol 12-Myristate 13-Acetate (PMA; 50 ng/mL, Wako) and ionomycin (1000 ng/mL, Wako), plus BD Golgiplug (BD Biosciences, San Jose, CA, USA) for 4 hr before surface staining. Fixation, permeabilization, and intracellular cytokine staining were performed using BD Cytofix/Cytoperm Fixation/Permeabilization Kit (BD Biosciences) according to the manufacturer’s protocol. In specified experiments, the numbers of each cell subset per ear were estimated using CountBright Absolute Counting Beads (Thermo Fisher Scientific). Sample analysis was conducted using BD FACSCanto II (BD Biosciences), and data were analyzed with Kaluza software (Beckman Coulter, Brea, CA, USA).
 
-## In vitro Th17 differentiation
+### In vitro Th17 differentiation
 
 Murine splenic T cells were isolated using Pan T Cell Isolation Kit II (Miltenyi Biotec, Bergisch Gladbach, Germany). Two hundred thousand T cells per well were cultured in 96-well plates in the presence of T Cell Activation/Expansion Kit (Miltenyi Biotec) for 2 weeks. The medium was supplemented twice per week with the following recombinant cytokines: mouse recombinant IL-6 (20 ng/mL), IL-1β (20 ng/mL), and IL-23 (40 ng/mL) for the IL-23-dependent Th17 cell condition; IL-6 (20 ng/mL) and TGFβ1 (3 ng/mL) for the IL-23-independent Th17 cell condition; or IL-23 (40 ng/mL) for the IL-23 only Th17 cell condition. The cytokines listed were purchased from BioLegend (Supplementary file 5). Afterward, the cultured cells were processed for flow cytometry analysis.
 
-## Western blotting
+### Western blotting
 
 Murine epidermis was lysed using RIPA buffer (Wako) containing phosphatase and protease inhibitor cocktail (Nacalai Tesque). Protein lysates were separated by 10% SuperSep Ace (Wako), transferred onto polyvinylidene difluoride membranes (0.45 μm, Merck, Darmstadt, Germany) by Trans-Blot Turbo Transfer System (Bio-Rad, Hercules, CA, USA). The membrane was blocked with 5% bovine serum albumin and subjected to immunoblotting targeting the indicated proteins overnight 4°C, followed by the application of HRP-conjugated secondary antibody for 1 hr at room temperature (Supplementary file 2). WB stripping solution (Nacalai Tesque) was used to remove the antibodies for further evaluation.
 
-## Inhibition of mTOR
+### Inhibition of mTOR
 
 Rapamycin (4 mg/kg, Sanxin Chempharma, Hebei, China), JR-AB2-011 (400 μg/kg, MedChemExpress, Monmouth Junction, NJ, USA) and vehicle were applied intraperitoneally to mice once daily for 14 consecutive days. Rapamycin and JR-AB2-011 were dissolved in 100% DMSO and diluted with 40% Polyethylene Glycol 300 (Wako), 5% Tween-80 (Sigma-Aldrich, St. Louis, MO, USA) and 45% saline in sequence. For topical application, 0.2% rapamycin gel and vehicle gel were prepared by the pharmaceutical department as previously described (Wataya-Kaneda et al., 2017). Rapamycin gel was applied to the left ear, and vehicle gel to the right ear (10 mg/ear) of Sema4A KO, once daily for 14 consecutive days. To analyze the preventive effectiveness of rapamycin in an IMQ-induced murine model of psoriatic dermatitis, Sema4A KO mice were administered either vehicle or rapamycin intraperitoneally from day 0 to day 17, and IMQ was topically applied to both ears for 4 days starting on day 14. Then, on day 18, ears were collected for further analysis.
 
-## Data processing of single-cell RNA-sequencing and bulk RNA-sequencing
+### Data processing of single-cell RNA-sequencing and bulk RNA-sequencing
 
 The raw count matrix data from the previously reported single-cell RNA-sequencing data from GSE220116 (Kim et al., 2023) were imported into Scanpy (1.9.6) using Python for further analyses. For each sample, cells and genes meeting the following criteria were excluded: cells expressing over 200 genes (sc.pp.filter_cells), cells with a high proportion of mitochondrial genes (>5%), and genes expressed in fewer than 3 cells (sc.pp.filter_genes). Counts were normalized using sc.pp.normalize_per_cell, logarithmized (sc.pp.log1p), and scaled (sc.pp.scale). Highly variable genes were selected using sc.pp.filter_genes_dispersion with the options min_mean = 0.0125, max_mean = 2.5, and min_disp = 0.7.
 
@@ -158,6 +230,6 @@ Principal component analysis was conducted with sc.pp.pca, selecting the 1st to 
 
 Bulk RNA-sequencing data from GSE121212 (Tsoi et al., 2019) were re-analyzed using RaNAseq (Prieto and Barrios, 2019) for differential expression in Ctl versus psoriatic NL. Our analysis included normalization, differential gene expression (defining significance as padj<0.05), and focused on Gene Ontology biological process analysis. The gene expression was calculated with the transcripts per million values.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 10 software (GraphPad Software, La Jolla, CA, USA) was used for all statistical analyses except for RNA-sequencing. Mann-Whitney test was used for two-group comparisons, while Kruskal-Wallis test followed by Dunn’s multiple comparisons test was applied for comparison among three or more groups. Statistical significance was defined as p<0.05 (*), p<0.01 (**), and p<0.001 (***). In the analysis of RNA-sequencing data, statistical significance was defined as padj<0.01 (**) and padj<0.001 (***).

@@ -76,15 +76,27 @@ Based on the anatomical comparison between the epiphyses of different tetrapod
 
 ## Results
 
-## Evolutionary analysis
+### Evolutionary analysis
 
 Confirming previous observations (Sanchez et al., 2014; Sanchez et al., 2016), 3D microanatomical characterization of the 380-million-year-old lobe-finned fish Eusthenopteron revealed longitudinally-oriented trabeculae within the shaft of their humeri (Figure 1A), strongly indicating that endochondral ossification facilitates bone elongation in stem tetrapods in a manner similar to that in stem amniotes (290 Mya) (e.g., Seymouria, Figure 1B) and present-day mammals (e.g., red squirrel, Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) The proximal humeral metaphyses of Eusthenopteron (A), Seymouria (B), and Sciurus vulgaris (red squirrel) (C). The longitudinal trabeculae resulting from endochondral ossification at the base of the growth plate in adults are shown in pink, while the transverse trabeculae appear green. The longitudinal trabeculae (l.t.) are designated marrow processes invading the growth plate. (D) Phylogeny tree, illustrating the major changes in the evolution of long-bone epiphyses. The black arrows indicate the presence of a secondary calcified center (SC) or a secondary ossification center (SOC). (i) Estimated appearance of endochondral formation of long bones based on the fossil record to date; (ii) Cartilaginous epiphyses in long-bones; (iii) Hypothetical presence of an ancestral SCs in sauropsids; (iv) Hypothetical presence of an ancestral SOCs in synapsids. * indicates paraphyly within the group. (E) A synchrotron scan of a juvenile sparrow demonstrates the presence of SOC. 1, a virtual thin section of the proximal epiphysis. prox. ep., proximal epiphysis. (F) Deformation and distribution of octahedral stress from FEA simulation in different evolutionary taxa. Columns refer to (from left to right) ‘without SOC’ (representing i.e., fetal tetrapods and urodeles), ‘with SOC’ (representing i.e., synapsids including mammal), ‘stem tetrapods’ (representing i.e., juvenile stem tetrapods, chelonians, crocodilians), and archosaurs (representing i.e., birds and non-avian dinosaurs). For comparison of structural functionality, all situations used the same basic geometry and materials. The small arrows indicate the direction of loading. The supra-physiological loading level (3 MPa) was modeled. A hypertrophic zone free of bony elements is presented under each model for direct comparison.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Representative safranin O and fast green staining of sections of the epiphyseal end of the tibia of mouse (A), rat (B), and the hind limb of salamander species Pleurodeles waltl (C) and Notophthalmus viridescens (D). The dashed red lines outline the SOC. Red arrowheads mark the zone of hypertrophic cells. Walking behavior is indicated according to our daily observations. Pleurodeles waltl is an Iberian newt that spends most of its life in water. Notophthalmus viridescens is a north American newt that has an aquatic larval, a terrestrial eft, and a semiaquatic adult stage.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Columns refer to (from left to right) ‘without SOC’ (representing i.e., fetal tetrapods and urodeles), ‘with SOC’ (representing i.e., synapsids including mammal), ‘stem tetrapods’ (representing i.e., juvenile stem tetrapods, chelonians, crocodilians), and archosaurs (representing i.e., birds and non-avian dinosaurs). For comparison of structural functionality, all situations used the same basic geometry and materials. The small arrows indicate the direction of loading. Supra-physiological loading level (3 MPa) was modeled. Hypertrophic zone free of bony elements is presented under each model for direct comparison. Hypertrophic zone, HZ.
 
 Evolutionary analysis revealed that the SOC is not present in anamniotes and first appears in amniotes, animals that relocate their entire lifecycle on land (Figure 1D). Among various groups of synapsids, the SOC is present in all crown mammals, whereas some stem mammals have evolved a SOC [i.e., Niassodon (Castanhinha et al., 2013; Figure 1D)] but others have not (Chinsamy and Abdala, 2008; Ray and Chinsamy, 2004). In sauropsids, which can be subdivided into two large clades, Lepidosauria (lizards and Sphenodon) and Archosauria (crocodilians, chelonians, birds, and non-avian dinosaurs), diversification of bone ossification is greater. Lepidosauria generally develops a SOC (lizards) or calcified secondary center (SC, sphenodontids) (Figure 1D). However, Archosauria does not develop such structures [(Haines, 1938), Figure 1D] with the exception of few bones with SOCs in some birds (Figure 1E). Instead, this clade develops bone marrow protrusions with calcified or ossified walls that protrude into the epiphyseal cartilage and sequester the hypertrophic chondrocytes in between them (Haines, 1938; Haines, 1942; Barreto et al., 1993; Horner et al., 2001). These ossified protrusions are relatively small in chelonians and crocodilians and quite extended in birds and non-avian dinosaurs (Haines, 1938; Haines, 1942; Chinsamy and Abdala, 2008; Ray and Chinsamy, 2004 and Figure 1E). Although the weight-bearing bones of certain birds exhibit a SOC together with such protrusions (e.g., the proximal epiphysis of the tibiotarsus in sparrow Figure 1E), most ossify without forming a SOC (Horner et al., 2001).
 
 It has to be emphasized that anamniotes spend their juvenile growth period in an aquatic environment, with amniotes being the first to translocate their entire life cycle on land. Such habitat change may pose additional mechanical demands on the growing skeleton, which must be sufficiently rigid to bear the body weight during a wide range of movements, yet flexible enough to allow bone elongation. Accordingly, we next hypothesized that the development of the SOC or ossified protrusions might be viewed as skeletal adaptations to the weight-bearing demands of the terrestrial environment and associated mechanical stresses posed on the epiphyseal cartilage.
 
-## Mathematical modeling
+### Mathematical modeling
 
 To explore the potential effects of the SOC and ossified protrusions on stress distribution within the epiphyseal cartilage, we first employed mathematical modeling (i.e., finite element analysis, FEA) based on a modified model developed by Carter and coworkers (Carter and Wong, 1988; Carter et al., 1998; Figure 1F, see the Materials and methods section for details). For description of the local force effects in an equilibrium state, we evaluated the distributions within the model of maximum compressive principal stress, octahedral stress, and hydrostatic stress. These scalar point-wise stress state measures can, in essence, be seen as representing the local stress state by the dominant pressure in any direction (maximum compressive principal stress), the deforming stress tending to deform a spherical region into an ellipsoidal one (octahedral stress), and the uniform shape-preserving pressure tending to change just the size of a sphere (hydrostatic stress). In this evaluation, the shape-changing octahedral shear stress was provisionally assumed to be the most significant one for chondrocytes according to Carter and Wong, 1988.
 
@@ -92,31 +104,43 @@ First, the FEA showed that the SOC significantly enhances the stiffness of the e
 
 Thus, in our subsequent analysis, we focused only on the SOC since it is most relevant to human physiology.
 
-## Comparative analysis of animals with specialized extremities
+### Comparative analysis of animals with specialized extremities
 
 Thus, evolutionary analysis suggests that the appearance of the SOC can be a skeletal adaptation to the terrestrial environment, whereas mathematical modeling suggests that this adaptation may evolve to protect the growth plate structure from mechanical stresses. To further explore the association between mechanical demands and the extent of the SOC development, we selected a few extant unrelated taxa with extremities subjected to different mechanical demands, specifically Chiroptera (bats), Dipodoidea (Jerboa [i.e., bipedal hopping rodents]﻿), and Cetaceans (whales).
 
-## Chiroptera
+### Chiroptera
 
 The newborn pups of Chiroptera must cling to their mother or to the roost from birth, utilizing for this purpose only their feet, thumbs of the wing, and milk teeth, whereas other wing bones are not used until 2–3 weeks of age, when the pups learn to fly (Hughes et al., 1995; Powers et al., 1991; Elangovan et al., 2007; Wang et al., 2014). We observed that in newborn bats the SOC development in the legs and thumbs of wings is more advanced than in the rest of the wing bones (Figure 2A and Figure 2—video 1). This heterochrony, that is, a change in timing or rate of ontogenetic development, was particularly pronounced in autopods with heavily ossified feet and thumb, but no SOC in other bones of the wing (Figure 2B–C). It was apparent during ontogenesis and consistent within the Chiroptera order (summary of six species with available ontogeny data is presented in Figure 2D–E and primary data for all 13 species analyzed presented in Supplementary file 1). It has to be admitted that despite a very clear pattern of heterochrony, there is a variation of ossification among Chiroptera species, which likely reflects their varying foraging and roosting ecology, behavior of juvenile bats, litter size, and lifespan (Adams and Thibault, 2000; Hermanson and Wilkins, 2008; Koyabu and Son, 2014; Kunz and Hood, 2000; Racey and Entwistle, 2000).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig2-v2.jpg)
+
+**Figure 2.:** (A) microCT image of a 1–3 days-old bat Pipistrellus pipistrellus. (A1) foot, with arrows pointing to growth plates, (A2) wing, with dashed blue lines outlining the areas of non-ossified cartilage. (B–C) Ossification of the autopod (B) and of the stylopod and zeugopod (C) in seven bat species at birth. (D–E) A generalized pattern of ossification of the autopod (D) and stylopod and zeugopod (E) of six bat species combined (Myotis lucifugus, Artibeus jamaicensis, Carollia perspicillata, Tadarida brasiliensis, Myotis austroriparius, and Myotis myotis).
+
 Interestingly, SOCs in the feet and the thumbs of some bat species are well-developed even before birth (Supplementary file 1) and the pups of certain species (Mops condylurus, Artibeus jamaicensis, Megaloglossus woermani, and Rousettus celebensis) are born with fully ossified feet of adult size (Adams and Thibault, 2000; Koyabu and Son, 2014) (see also Figure 2B for A. jamaicensis). The appearance of SOC in embryonic feet and thumb suggests that a genetic program governing SOC development precedes the mechanical influence.
 
-## Jerboa
+### Jerboa
 
 Next, we analyzed SOC development in the bipedal three-toed jerboa (Jaculus jaculus) in the family of Dipodoidea rodents. These animals jump on their hindlimbs when adult but during the first 2–3 weeks of life they employ only forelimbs thereafter becoming quadrupedal and eventually bipedal (Eilam and Shefer, 1997). The video-recording of gait pattern acquisition for two species, Jacuslus jaculus and Jaculus orientalis, confirmed that jerboa employs only front limbs for crawling during the first postnatal weeks (Figure 3—videos 1 and 2). Analysis of the ossification pattern for Jacuslus jaculus revealed that SOC formation in the front limbs significantly preceded the one in the hind limbs (Figure 3A–R). It is interesting to point out that the development of the SOC also coincides with the changes in gait pattern from crawling to walking in mice and rats (Figure 1—figure supplement 1A–B). Whether the same situation applies to human remains to be investigated.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig3-v2.jpg)
+
+**Figure 3.:** (A–P) Alcian blue and alizarin red staining of the femur (A–D), humerus (E–H), metatarsal (I–L), and metacarpal (M–P) of Jaculus jaculus (three-toed jerboa) at various postnatal (P) time points. The dashed white lines outline the SOC. The gait pattern was derived from our weekly observations (see Figure 3—videos 1 and 2). (Q–R) Ossification of the autopod (Q) and stylopod and zeugopod (R) of Jaculus jaculus (three-toed jerboa) at various postnatal stages. Data are means ± SD, representing inter-individual variation, one-way ANOVA. In (Q–R), n = 2 jerboa analyzed. ns, not significant.
+
 Thus, in both Chiroptera and jerboa, advanced ossification is observed in limbs subjected to mechanical duties early in life, which is further strengthening an association between mechanical demands and SOC development.
 
-## Cetaceans
+### Cetaceans
 
 If demand for SOC is mechanically related, we further reasoned that the absence of terrestrial-associated loading conditions would release the evolutionary pressure on SOC and that it can be lost or reduced with time. To test this assumption, we analyzed the cetaceans (whales) forelimbs (Figure 4A) whose mechanical demands highly differ in loadings and angles from their terrestrial ancestors (Cooper et al., 2008). In early cetaceans from the Eocene epoch (56–33.9 Mya), the epiphyseal plates of the forelimbs are structurally similar to those of terrestrial mammals, as evident in semi-aquatic Maiacetus inuus (Gingerich et al., 2009) and fully aquatic Dorudon atrox (Form, 2004), where SOCs are present at the joints connecting carpal bones, metacarpal bones, and phalanges (Figure 4B 1-2). However, in baleen whales (both extant and some extinct from Miocene epoch, 23–5.3 Mya), there is a clear reduction of SOCs such as in the Balaenopteridae family where SOC is reduced by up to 80% in metacarpals and phalanges (Figure 4B 3) and the Balaenidae family where SOC is reduced in distal radius and ulna and essentially absent in metacarpals phalanges (Figure 4B 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig4-v2.jpg)
+
+**Figure 4.:** (A) Forelimb bones of the minke whale Balaenoptera acutorostrata. (B) Comparative anatomy of bony and cartilaginous epiphyses in the distal portion of the forelimbs of various cetacean whales: B1-B2 – early cetaceans; B3-B4 – baleen whales; B5-B10 – toothed whales. (B1) Maiacetus inuus, semi-aquatic from Eocene era (56–33.9 Mya), (B2) Dorudon atrox, fully-aquatic from Eocene era (B3) minke whale Balaenoptera acutorostrata from Miocene era (23–5.3 Mya) (B4) North Atlantic right whale Eubalaena glacialis, (B5) pilot whale Globicephala melas (B6) boto river dolphin Inia geoffrensis, (B7) narwhal Monodon monoceros, (B8) killer whale Orcinus orca, (B9) juvenile and (B10) subadult sperm whale Physeter catodon. (C) Sample image of an adult killer whale Orcinus orca (same species as B8) with X-ray images of the highlighted areas (C1 and C2) from the corresponding image on their left. (D) Sample (left) and X-ray (right) images of an adult beluga whale Delphinapterus leucas. (D1) Micro-CT reconstruction of the highlighted phalange joint. (E) CT image of an adult killer whale Orcinus orca and a virtual sagittal section of the metacarpal II demonstrating the absence of the SOC.
 
 Toothed whales from the Miocene to the present demonstrate more diverse patterns of secondary ossification. SOCs are not reduced in either Platanistidae or certain Delphinoidea (Figure 4B 5), whereas Iniidae (Amazon River dolphins) do not have distinct epiphyseal plates, but rather multiple small SOCs covering 10–50% of the corresponding area (Figure 4B 6). In Ziphiidae and the narwhal Monodon monoceros (Delphinapteridae), SOCs are reduced in size by 5–10 times (Figure 4B 7). X-ray examination of another member of Delphinapteridae, the beluga whale Delphinapterus leucas, revealed only remnants of SOC in metacarpals and phalanges (Figure 4D). Finally, the most advanced epiphyseal transformation is seen in the killer whale Orcinus orca (Delphinidae) (Figure 4B 8; Cooper, 2009; Mellor et al., 2009) and the sperm whale Physeter catodon (Figure 4B 9 and 10), in which the SOCs of the distal radius, ulna, and metacarpals are indistinct or even absent and a fibrocartilaginous structure is formed in the carpal area (Figure 4B 8–10). CT scan confirmed a complete lack of the SOC in Orcinus orca (Figure 4E and Figure 4—video 1), which was further confirmed by radiograph (Figure 4C). Taken together, these observations suggest that the return of cetaceans to the aquatic environment is associated with a gradual reduction in the size of SOC in a few phylogenetic lineages, and even their complete loss in some species.
 
 The observed striking consistency in unrelated taxa indicates a causative relationship between the presence of the SOC and mechanical demands and considering mathematical predictions and evolutionary analysis, further suggests that SOC protects the growth plate from mechanical demands.
 
-## Functional experiments with two model systems: the SOC protects epiphyseal chondrocytes
+### Functional experiments with two model systems: the SOC protects epiphyseal chondrocytes
 
 To explore the function of the SOC experimentally, we first employed two ex vivo models: (i) application of different loads to bones of similar size but with (mouse) or without (rat) a SOC and (ii) application of identical pressure (load per area) to rat bones at different stages of development (before, during, and after the formation of the SOC).
 
@@ -124,9 +148,33 @@ We first compared similar rodent tibiae, one with and one without a SOC. Analysi
 
 To address the protective effect of SOC on epiphyseal chondrocytes, we placed the bones exposed previously to different loads into in vitro culture conditions for 48 hr to allow load-induced cellular responses to manifest, using previously optimized culture conditions (Chagin et al., 2010). We then assessed the survival status of the epiphyseal chondrocytes using exposure to propidium iodide (PI) during the end of the culture period (i.e., a part of live/death assay to visualize dead cells). These experiments revealed that chondrocytes appeared to be highly sensitive to load, with 40% dying upon application of a 1N-load in the SOC- model; whereas the presence of SOC allowed these cells to withstand a load one order of magnitude higher (Figure 5A–B and Figure 5—figure supplement 2). The unfavorable effect of loading on epiphyseal chondrocytes in both the SOC- and SOC+ models was confirmed by the decreased expression of several typical chondrocyte markers, such as Indian hedgehog (Ihh), parathyroid hormone-related peptide (PTHrP) (Figure 5—figure supplement 1K–L), and collagen type X (Col X) (Figure 5—figure supplement 1N–O).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Quantification of propidium iodide- (PI) (A–B) and TUNEL- (C–D) positive cells in the growth plates of the tibia with and without SOCs loaded vertically (A, C) or at an angle (B, D). (E–F) Representative images and quantification of TUNEL staining (green) (E) and cleaved caspase-3 staining (red) (F) in the growth plates of loaded tibias with and without SOCs. DAPI was used for counterstaining (blue). Data are means ± SD, two-tailed Student’s t-test. In (A–F), n = 3. The control and loaded tibia were from the same animal. VL, vertical load, AL, angled load. RZ and PZ, resting zone and proliferative zone combined, HZ, hypertrophic zone. ‘tibia with SOC’ and ‘tibia without SOC’ in the figure refer to tibias from 30-day-old mice and 10-day-old rats, respectively (see Figure 5—figure supplement 1A–B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mouse (30-day-old) and rat (10-day-old) tibia with and without a SOC, respectively, have similar physical dimensions of the epiphyses (d1, d2, h). (B) Representative images and quantification of the nanoindentation test of 30-day-old mice and 10-day-old rats. (C–D) The stiffness of bones with fully developed SOCs (tibia with SOC) and with immature SOCs (tibia without SOC) was measured at different loads and in both the vertical (C) and angled (D) direction. (E–J) Representative load/deformation (E–F) and stress/strain (G–H) curves of vertically (VL) (E, G) and angularly (AL) (F, H) loaded tibias with and without SOCs. (I–J) The elasticity of tibias with and without SOCs under vertical (I) and angled load (J). (K–L) The QPCR analysis of Indian hedgehog (Ihh) (K) and parathyroid hormone-related peptide (PTHrP) (L) levels in the epiphyseal end of tibia with and without SOCs. (M) Representative images of growth plates of tibias with and without SOCs fixed after dissection and prior loading. TUNEL staining (green) and nucleus counterstaining with DAPI (blue). (N) Fluorescent in situ hybridization of collagen type X (ColX) in the loaded growth plates of tibias with and without SOCs. VL, vertical load, AL, angled load. RZ and PZ, resting zone and proliferative zones, HZ, hypertrophic zone. (O) QPCR analysis of ColX level in the epiphyseal end of tibia with and without SOCs exposed to different loading. Data are means ± SD, two-tailed Student’s t-test, except in (B) where Mann-Whitney U-test was used. In (A), n = 23 for ‘Mouse’ and n = 15 for ‘Rat’. In (B), n = 5 for ‘Mouse’ and n = 4 for ‘Rat’. In (C), n = 10 for ‘tibia with SOC’ at all loads; n = 9 for ‘tibia without SOC’ at 0–1N and 1–4N, n = 4 for>4N. In (D), n = 11 for ‘tibia with SOC’ at all loads; n = 8 for ‘tibia without SOC’ at all loads. In (I–L, O), n = 3. ns, not significant.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Representative images and quantification of the distribution of propidium iodide (PI)-positive cells in the growth plates of tibia with (A) and without a SOC (B) loaded vertically or angularly. During the end of culture period, bones were incubated with PI, which penetrates only into dead cells (red). Representative pictures (images) and quantifications (graphs) are shown. DAPI (blue) counterstaining of all nucleus was done on the fixed tissue sections. RZ and PZ, resting zone and proliferative zones, HZ, hypertrophic zone. ‘tibia with SOC’ and ‘tibia without SOC’ refer to tibias from 30-day-old mice and 10-day-old rats, respectively (see Figure 5—figure supplement 1A–B). Data are means ± SD, two-tailed Student’s t-test. In (A–B), n = 3.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–C) Immunostaining and quantification of YAP (A), p73 (B), and YAP + p73 double-positive cells (C) in the growth plates of loaded tibias with and without SOCs loaded vertically (VL) and angularly (AL). RZ and HZ, resting zone and proliferative zone, HZ, hypertrophic zone. ‘tibia with SOC’ and ‘tibia without SOC’ refer to tibias from 30-day-old mice and 10-day-old rats, respectively (see Figure 5—figure supplement 1A–B). Data are means ± SD, two-tailed Student’s t-test. In (A–C), n = 3.
+
 To distinguish between mechanical damage and stress-induced activation of the self-elimination apoptotic program, we performed the TUNEL assay on the loaded bones to detect fragmented DNA, a hallmark of apoptotic nuclei. Epiphyseal chondrocytes in the SOC+ model become apoptotic in response to much higher loads as compared to the SOC- model (Figure 5C–E, see also Figure 5—figure supplement 1M for baseline control). In addition, much higher loads were required for the SOC+ model to activate caspase-3, a protease that executes apoptosis (Figure 5F). To further explore the underlying mechanism, we checked the activity of the signaling pathway involving the Yes-associated protein 1/Tafazzin (YAP/TAZ), which is well-known to be involved in mechano-sensing (Dupont et al., 2011) and can promote apoptosis via the tumor suppressor protein, p73 (Strano et al., 2001). Both the levels and nuclear translocation of the YAP (Figure 5—figure supplement 3A and Figure 9—figure supplement 1K–L) and p73 proteins (Figure 5—figure supplement 3B) were enhanced by loading, with their overlapping distribution pattern further confirming the activation of this signaling pathway (Figure 5—figure supplement 3C). Thus, caspase-dependent apoptosis, likely via the YAP-p73 pathway, appears to be triggered in epiphyseal chondrocytes by mechanical loads with a SOC providing substantial protection.
 
 We also noticed that cell death was most extensive in the hypertrophic zone (Figure 6A–D), where the levels of active caspase-3, YAP, and p73 were also increased to a greater extent in the hypertrophic zone than in the resting/proliferative zone (Figure 6E–H and Figure 6—figure supplement 1A–D). In SOC- bones hypertrophic chondrocytes died in response to a load as low as 0.2N (Figure 6I), whereas in the SOC+ bones this phenomenon occurred only with loads of 3–5N (Figure 6A–D). Within this loading range, no effect on chondrocyte proliferation was observed (Figure 6—figure supplement 1E–F), suggesting that loading affects particularly the hypertrophic chondrocytes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Comparison of the extent of cell death between resting+proliferative zones (RZ and PZ) and hypertrophic zone (HZ) of the vertically and angularly loaded growth plates with (A, C) and without (B, D) SOCs as assessed by PI staining (A–B) and TUNEL (C–D). (E to H) Distribution of immunohistological staining along the longitudinal axis for cleaved caspase-3 staining (E–F) and YAP and p73 double staining (G–H) of the vertically and angularly loaded tibia with (E, G) and without (F, H) SOCs. (I) Representative images and quantification of propidium iodide (PI) staining (upper panel) and cleaved caspase-3 staining (lower panel) in the growth plates of vertically or angularly 0.2N loaded tibias without SOCs. The control and loaded tibia were from the same animal. DAPI was used for counterstaining (blue) in (I). Data are means ± SD, two-tailed Student’s t-test. In (A–I), n = 3. ns, not significant. ‘tibia with SOC’ and ‘tibia without SOC’ refer to tibias from 30-day-old mice and 10-day-old rats, respectively (see Figure 5—figure supplement 1A–B).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Comparison of YAP (A–B) and p73 (C–D) staining between the resting plus proliferative zones (RZ and PZ) and hypertrophic zone (HZ) in the growth plates of tibias with (A, C) and without (B, D) SOCs. (E–F) Representative images and quantification of the ki67 staining in the growth plates of tibias with (F) and without (E) SOCs. Data are means ± SD, two-tailed Student’s t-test. In (A–F), n = 3. ns, not significant.
 
 Despite the agreement with the mathematical predictions, confounding variables cannot be definitively excluded in this SOC ± model. To further strengthen this line of experimental evidence, we compared the effect of the same pressure (load per cross-sectional area) on rat tibiae before, during, and after the formation of SOC. The tibia was isolated from rats of the same litter at 5, 8, 12, 15, and 22 days of age and then measured in order to apply a load (0.2–0.65N) that generated a pressure of 0.023 MPa per cross-sectional area. We found that a pressure identical to that which led to the death of chondrocytes before the formation of the SOC did not affect the survival of these cells after this formation (Figure 7A–D). In addition, hypertrophic chondrocytes were proved to be particularly vulnerable to this effect of pressure (Figure 6E). The percentage of the hypertrophic chondrocytes that died and the size of the SOC were negatively correlated (Figure 7F–G).
 
@@ -136,31 +184,49 @@ Despite the agreement with the mathematical predictions, confounding variables 
 
 Thus, both these ex vivo models suggest that the SOC protects the growth plate chondrocytes from mechanical stress, the effect particularly pronounced in the hypertrophic cell population, which renders these cells able to withstand approximately twenty-five-fold greater load when a SOC is present (comparing 0.2 N to 5N). In combination with mathematical modeling (compare the two left columns in Figure 1F), these findings indicate that the SOC protects chondrocytes and, especially, hypertrophic chondrocytes from the deleterious effect of extensive mechanical stress.
 
-## Functional experiments with physiological systems: the SOC protects epiphyseal chondrocytes
+### Functional experiments with physiological systems: the SOC protects epiphyseal chondrocytes
 
 This highly effective protection by SOC observed in the ex vivo models prompted us to modulate the size and maturity of the SOC in a series of in vivo experiments to compare the survival status of the epiphyseal chondrocytes. We recently reported that an inhibitor of vascular endothelial growth factor (VEGF) receptor, axitinib (Gerber et al., 1999), can delay development of the SOC within a narrow developmental window, that is when axitinib is administrated at P18, but not P21 as analyzed in transgenic mice (Newton et al., 2019). Here similar inhibition on the size of SOC was observed in wild-type mice (Figure 8A–B). The mice in which the development of the SOC was delayed showed significantly higher levels of apoptosis in the hypertrophic zone than corresponding controls (Figure 8C–D). Axitinib treatment until the same final time point (P27) or for the same duration (P21-P30) was employed as controls in these experiments (Figure 8A,C). No significant effect of axitinib on mechanical properties of epiphyseal cartilage was observed as assessed by nanoindentation (8.1 ± 1.7 kPa (mean ± SE, n = 6, control animals) and 10.5 ± 1.9 kPa (n = 7, axitinib-treated animals), p=0.37, unpaired t- test; mice were treated with vehicle or axitinib from P21 till P30 and live tissue sections were analyzed).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig8-v2.jpg)
 
-**Figure 8.:** Size of the SOC was inhibited either pharmacologically employing axitinib (A–D) or genetically employing activation of Gnas (E, F). (A–B) Representative histology images of the tibia epiphysis (A) and quantification of the SOC size (B) of wild type mice injected with axitinib at various time periods. P refers to postnatal day. (C–D) Representative images (C) and quantification of TUNEL staining (green) (D) in the hypertrophic cells of the tibia growth plate of the axitinib injected mice. (E–F) Quantification of SOC size (E) and TUNEL staining (F) of the hypertrophic cells in the growth plates of  (Control) and stopGnasR201HPrx-Cre:Gnas (R201HGnas-Tg) mice. DAPI was used for counterstaining (blue) in (C). Data are means ± SD, two-tailed Student’s t-test. In (A–F), n = 3. ns, not significant.
+**Figure 8.:** Size of the SOC was inhibited either pharmacologically employing axitinib (A–D) or genetically employing activation of Gnas (E, F). (A–B) Representative histology images of the tibia epiphysis (A) and quantification of the SOC size (B) of wild type mice injected with axitinib at various time periods. P refers to postnatal day. (C–D) Representative images (C) and quantification of TUNEL staining (green) (D) in the hypertrophic cells of the tibia growth plate of the axitinib injected mice. (E–F) Quantification of SOC size (E) and TUNEL staining (F) of the hypertrophic cells in the growth plates of stopGnasR201H (Control) and Prx-Cre:GnasR201H (Gnas-Tg) mice. DAPI was used for counterstaining (blue) in (C). Data are means ± SD, two-tailed Student’s t-test. In (A–F), n = 3. ns, not significant.
 
 In a second model, we employed mice with limb-specific activation of the stimulatory G-protein α-subunit (Gnas), which exhibit delayed SOC formation (Prx-Cre:GnasR201H) (Karaca et al., 2018). To block immediate elimination of dead hypertrophic chondrocytes by ingrowing blood vessels, we inhibited angiogenesis in these mice and corresponding controls by injecting axitinib at a time-point when it does not interfere with the formation of the SOC (P21-P30, Figure 8A) but delays elimination of hypertrophic chondrocytes (Newton et al., 2019). Analysis of these mice confirmed reduced SOC size in mutant mice and revealed an elevated number of dead hypertrophic chondrocytes in these mice (Figure 8E–F). It must be emphasized that in both these pharmacological and genetic models, mice actively run and thereby expose their growth plates to the weight-associated loads, but have decreased body mass (for axitinib-treated mice, 56.6 ± 11.2% of the DMSO-treated control and for the Prx-Cre:GnasR201H mice, 80 ± 6.9% of the corresponding controls). Thus, the increase in cell death observed may be an underestimation of what might occur in bones with an underdeveloped SOC under normal weight-bearing conditions.
 
 Summarizing, both pharmacological and genetic manipulation of the SOC confirmed its protective effect on hypertrophic chondrocytes, which is in agreement with the results obtained from ex vivo models and mathematical predictions.
 
-## Mechanical properties of hypertrophic chondrocytes make them vulnerable to the mechanical stress
+### Mechanical properties of hypertrophic chondrocytes make them vulnerable to the mechanical stress
 
 In another mouse model examined, where the formation of the SOC is delayed substantially by chondrocyte-specific ablation of the salt-induced kinase 3 (Sik3) (Col2a1-Cre:Sik3F/F mice) (Sasagawa et al., 2012), we noticed increased death of the hypertrophic chondrocytes not throughout the hypertrophic zone, but mostly at the sides of the growth plate (Figure 9A–B). In this strain, hypertrophy is slightly delayed and we thought this observation might reflect a phenomenon overlooked in our previous experiments, that is, the higher load at the edges or its different distribution during locomotion. To explore this further, we applied loading to our SOC ± model at an angle from the lateral side and examined the distribution of the cell death along the medial-lateral axis within the growth plate (Figure 9C). We noticed that chondrocytes on the side opposite to the loading underwent more extensive cell death (Figure 9D–E). This uneven distribution of cell death was also reflected in the higher number of TUNEL-positive cells and levels of YAP at the side opposite to the one where angled loading was applied (Figure 9—figure supplement 1C,E,G,I). Vertical loading did not affect the medial-lateral distribution of cell death, thereby serving as a control (Figure 9—figure supplement 1A,B,D,F,H,J).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig9-v2.jpg)
+
+**Figure 9.:** (A) Quantification of the SOC size of postnatal day 28 Sik3F/F (Control) and Col2a1-Cre:Sik3F/F (Sik3-cKO) mice. (B) Representative images and quantification of TUNEL staining (green) between the lateral and middle parts of Sik3-cKO mice. DAPI was used for counterstaining (blue). HZ, hypertrophic zone. In (A–B), data are means ± SD, two-tailed Student’s t-test, n = 3 for ‘Control’ and n = 5 animals for ‘Sik3-cKO’ whereas each dot represents one histological section analyzed. (C) Schematic illustration of a section plan and loading directions in relation to the quantitative analysis of cell death distribution in the lateral-medial direction presented in (D–E). The growth plate is divided into three equal parts, (left, middle, and right) in relationship to the angle at which the load is applied (green or red arrows). (D–E) Quantification of propidium iodide (PI)-positive chondrocytes in the resting and proliferative zones and hypertrophic zone of tibias with (D) and without (E) SOCs subjected to an angled load (AL, green arrow, always applied from the right). Data are means ± SD, one-way ANOVA. **, p<0.001 and ***, p<0.0001 in comparison with the left portion. ns, not significant. The black and white asterisks indicate the significance for the resting and proliferative and hypertrophic zones, respectively. (F) Principal compressive stress from FEA modeling with physiological loading level. The small arrows indicate the direction of loading. The two-headed curved arrows indicate areas for comparison. (G) Typical force curves for hypertrophic and proliferating chondrocytes obtained by atomic force microscopy. (H) Comparison of the elastic moduli of hypertrophic and proliferating chondrocytes.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A–B) Quantification of PI-positive chondrocytes in relation to the lateral-medial direction of the growth plate of tibia loaded vertically with (A) and without (B) an SOC (see Figure 4A for details). (C–F) Quantification of TUNEL-positive chondrocytes in relation to the lateral-medial direction of the growth plate of the tibia with (C–D) and without (E–F) a SOC subjected to angular (C, E) and vertical (D, F) loading. (G–J) Quantification of the distribution of YAP-positive chondrocytes in relation to the lateral-medial direction within the resting and proliferative and hypertrophic zones of the growth plate of angularly (G, I) and vertically (H, J) loaded tibia with (G–H) and without (I–J) an SOC. Only nuclearized active YAP as demonstrated in k-l was quantified. The red and green arrows indicate the direction of loading (see the legend in Figure 4a for more details). Data are means ± SD, one-way ANOVA. **, p<0.001 and ***, p<0.0001. In (A–J), n = 3. ns, not significant. The black and white asterisks indicate p-values for the resting and proliferative and hypertrophic zones, respectively. (K–L) Immunostaining of active (nuclear) and inactive YAP in mouse (K) and rat (L) chondrocytes. (M) Hydrostatic compressive stress on epiphyseal plates from FEA modeling with physiological loading level. The small arrows indicate the direction of loading and the two-headed curved arrows indicate areas for comparison.
 
 This medial-lateral distribution of the cell death does not match the distribution of the octahedral stress, since upon angled loading this stress is low at the sides (Figure 1F). However, the distribution of the highest compressive principal stress and hydrostatic stress upon angled loading (Figure 1—figure supplement 2, see also Figure 9F and Figure 9—figure supplement 1M for physiological loading range) matches well with the observed distribution of cell death along the medial-lateral axis. Hydrostatic stress can be excluded since it increases upon vertical loading in the central part and at edges, and therefore does not match the distribution of cell death upon vertical load (Figure 1—figure supplement 2, Figure 9—figure supplement 1M). Thus, we concluded that directional compressive (principle) stress appears to be the one that overlaps well with the spatial distribution of cell death under various loadings, and is likely, together with octahedral stress, harmful for hypertrophic chondrocytes. Vulnerability to compressive stress suggests that hypertrophic chondrocytes have a very low Young’s modulus (i.e., the ratio of stress to strain). To check this directly, we utilized atomic force microscopy (AFM) to measure cell stiffness in live tissue sections as described (Xu et al., 2016). According to the mathematical prediction, we found that hypertrophic chondrocytes were only approximately 25% as stiff as the columnar chondrocytes from which they are derived (Figure 9G–H).
 
 Therefore, it seems plausible that this relatively low stiffness of hypertrophic chondrocytes, in combination with their large size, render them particularly vulnerable to mechanical loading.
 
-## The involvement of mechanical versus genetic factors in the development of the SOC
+### The involvement of mechanical versus genetic factors in the development of the SOC
 
 As mentioned in the introduction, many investigators presently believe that the formation of the SOC is stimulated by mechanical factors (Carter and Wong, 1988; Chagin et al., 2010; Klein-Nulend et al., 1986; Stevens et al., 1999; Sundaramurthy and Mao, 2006; Wong and Carter, 1990). On the other hand, the observation that the thumb and fingers on the same wing of Chiroptera ossify at different times in utero (Figure 2) indicates that genetic factors may play a more important role in this formation. To explore this proposal, we examined the effects of unloading during limb development in rats and characterized ossification in a newt species during its terrestrial stage of growth.
 
 On postnatal day 10, the hindlimbs of rats were unloaded either by resection of the sciatic nerve or fixation with kinesiology tape (which resembles fixation with a cast but is lighter and easier to change daily). Analysis at 23 days of age revealed that neither of these forms of unloading had affected the size of the SOC (Figure 10A–D,F–I), although in both cases bone mass was reduced dramatically (Figure 10E,J). The inability of the animals to use their nerve-resected leg was confirmed by testing footprint behavior (de Medinaceli et al., 1982; Figure 10—figure supplement 1) and this leg was also insensitive to pricking with a needle (video-recordings made every 3–4 days are available upon request). The inability to use the taped leg was also documented by video-recording every 3–4 days (available upon request).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig10-v2.jpg)
+
+**Figure 10.:** Sciatic nerve resection (A–E) or leg restriction with a kinesiology tape (F–J) was done at 10 days of age and both hindlimbs (manipulated and intact) were analyzed at day 23. For (A–E) sham-operated littermates were used as a control (only right hindlimb was utilized), whereas for (F–J) unmanipulated littermates were used as a control (only right hindlimb was utilized). (A–C, F–H) Representative Safranin O and Fast Green stained images of the knee joint. Black dash lines outline the SOC and solid lines outline the epiphysis area in A and F. Quantification of SOC size (normalized to total epiphysis size) (D, I) and bone mass (within the primary spongiosa region) (E, J). Bars are means ±95% confidential interval and every dot represent an individual animal, two-tailed Student’s t-test. ns, not significant.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig10-figsupp1-v2.jpg)
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/55212/elife-55212-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** (A) Alcian blue and von Kossa staining of the humerus of the newt (Notophthalmus viridescens) revealed calcified chondrocytes at the post metamorphosis transient land stage. (B–C) TUNEL (B) and DNA replication licensing factor MCM2 (C) staining of the same salamander species revealed no notiecable differences in apoptotic and proliferating chondrocytes at the three developmental stages.
 
 These experiments indicate that the development of the SOC is primarily under genetic control. To obtain further support for this conclusion, we analyzed the epiphysis in the salamander Notophthalmus viridescens, an anamniote that do not normally develop a SOC. However, these animals can be raised under terrestrial conditions for several months. Therefore, we raised the newt Notophthalmus viridescens first under aquatic conditions, thereafter under terrestrial conditions (the eft stage, characterized by much slower growth than during the aquatic stages [Hurlbert, 1969]) and then under aquatic conditions again. No SOC was formed during terrestrial growth (Figure 10—figure supplement 2A), although calcification of cartilage during this period could be detected by Von Kossa staining (Figure 10—figure supplement 2A, middle panel). The numbers of apoptotic (Figure 10—figure supplement 2B) and proliferating chondrocytes (Figure 10—figure supplement 2C) were not dramatically different under aquatic and terrestrial conditions.
 
@@ -190,19 +256,113 @@ In conclusion, various independent approaches employed in this study (i.e., evol
 
 ## Materials and methods
 
-## Synchrotron scanning and 3D modeling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 (mouse strain)</td>
+      <td>Charles River Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Sprague Dawley (rat strain)</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Col2a1-Cre:Sik3F/F (mouse strain)</td>
+      <td>Dr. Henry Kronenberg, Massachusetts General Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sik3F/F (mouse strain)</td>
+      <td>EUCOMM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Col2a1-Cre (mouse strain)</td>
+      <td>Richard R. Behringer, University of Texas MD Anderson Cancer Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Prx-Cre:GnasR201H (mouse strain)</td>
+      <td>Dr. Murat Bastepe, Massachusetts General Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>cleaved caspase 3 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#9661</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-101199</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p73 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab137797</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ki67 (rabbit monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>MA5-14520</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MCM2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab4461</td>
+      <td>1:250</td>
+    </tr>
+  </tbody>
+</table>
+
+### Synchrotron scanning and 3D modeling
 
 All these scans were performed at the beamline ID19 (European Synchrotron Radiation Facility, France) with a current of 200 mA or 16 bunch. Scanning and 3D-modeling of the humerus of Eusthenopteron were performed as described by Sanchez et al., 2014. The data were reconstructed using a single distance phase retrieval approach (Sanchez et al., 2012) based on a modified version of the algorithm of Paganin et al., 2002, applying an unsharp mask to the radiographs after the phase retrieval to enhance the trabecular mesh. The humerus of Seymouria was imaged with a voxel size of 3.48 µm using an optical system associated with a 47 μm-thick GGG (i.e., a gadolinium gallium garnet crystal) scintillator and a FreLON 2k14 CCD detector (Labiche et al., 2007). The propagation distance was of 700 mm. The gap of the W150m wiggler was opened to 37 mm. The sample was imaged at 80 keV using a beam filtered with 0.25 mm of tungsten and 2 mm of aluminum. In half-acquisition conditions, 4998 projections were produced over 360° with a time of exposure of 0.15 s. Binned images (final 6.96 μm voxel size) were reconstructed, segmented, and 3D-modeled in the same manner as Eusthenopteron (Sanchez et al., 2014). The scan of the humerus of Sciurus vulgaris was made with the same voxel size (3.48 µm) as for the humerus of Seymouria using the same optics (FreLON 2k14 CCD camera and a 47μm-thick GGG scintillator). The sample was imaged with a propagation distance of 500 mm. The beam was filtered with 0.14 mm of tungsten, 0.14 mm of copper, and 2.8 mm of aluminum. The gap of the W150m wiggler was opened to 50 mm, which resulted in energy of 65.8keV. In half-acquisition conditions, 4998 projections were produced over 360° with a time of exposure of 0.15 s.
 
-## MicroCT scan of Pipistrellus pipistrellus s.l
+### MicroCT scan of Pipistrellus pipistrellus s.l
 
 The 1–3 day-old bat was scanned in Vienna with a SkyScan 1174 as previously described (Metscher, 2009).
 
-## Mice and rats
+### Mice and rats
 
 30-day-old C57BL/6 mice (body weight 14.59 ± 0.72 g) and 10-day-old Sprague Dawley rats (body weight 20 ± 0.49 g) were purchased from Charles River Laboratories and Janvier Labs (Europe). C57BL/6 mice used for the axitinib experiments were purchased from Charles River Laboratories. Col2a1-Cre:Sik3F/F mice were obtained from Dr. Henry Kronenberg, Massachusetts General Hospital. The Sik3F/F mice were originally purchased from EUCOMM and the Col2a1-Cre mice were obtained from Richard R. Behringer, University of Texas MD Anderson Cancer Center (Ovchinnikov et al., 2000). Prx-Cre:GnasR201H mice were generated by Dr. Murat Bastepe, Massachusetts General Hospital and were described previously (Karaca et al., 2018).
 
-## Dissection, loading, and culturing of the tibia and femur
+### Dissection, loading, and culturing of the tibia and femur
 
 From both hind legs of 30-day-old mice and 10-day-old rats, the tibia and femur bones were dissected out aseptically in DMEM/F12 medium supplemented with 50 µg/mL gentamycin (dissection medium) on ice, with the removal of as much surrounding tissue as possible. The height and diameters of the top and side surfaces of the epiphysis were measured with a digital caliper. For each animal, one set of tibia and femur was used for control and the other for treatment. All comparisons involved the bones from the same animal.
 
@@ -210,31 +370,31 @@ Still, in dissection medium on ice, the bones were subjected to pressure with th
 
 For culturing, bones were first washed twice in dissection medium before being placed into DMEM/F12 medium supplemented with 1 mM β-glycerophosphate, 0.2% bovine serum albumin, 50 µg/mL ascorbic acid, and 50 µg/mL gentamycin for 48 hr as described previously (Cooper, 2009). Propidium iodide (stock solution at 1 mg/mL, Sigma) was added to the culture medium at a ratio of 1:50 30 min before termination of culturing. The tibia and femur were then fixed in 4% PFA overnight, decalcified, cleared in 30% sucrose overnight (at 4° C), and finally embedded in optimal cutting temperature (OCT) compound for frozen sectioning. When applying the load, the medial tibia plateau flanked by the tibia bone grooves is always facing one direction and the angled pressure was applied always to one side of the plateau (on top of one of the grooves). When embedding in OCT for sectioning, the bone is always placed into the grid with the medial tibia plateau facing upward and sectioned frontally to ensure the pressure direction during imaging.
 
-## Calculation of mechanical and material properties
+### Calculation of mechanical and material properties
 
 The determination of the position of the bone relative to the position of its fixture yielded the deformation value. Stiffness was defined as the slope of the initial linear portion of the load-deformation curve. Stress was calculated by distributing the load equally over the top (vertical load) or side surface (angular load) of the epiphysis, assuming that both of these surfaces were oval. The strain was calculated by distributing the bone deformation equally along the height of the epiphysis. The initial linear portion of the stress-strain curve up to 0.2% offset was plotted together with the stress-strain curve itself in the same graph and the intersection of the line and curve defined as the 0.2% offset yield strength.
 
-## Axitinib injection
+### Axitinib injection
 
 Axitinib (Sigma) was dissolved in DMSO and injected intraperitoneally at a dose of 0.25 mg per animal per day for the C57BL/6 mice for 8 (P21 to P27) or 10 days (P18 to P27 or P21 to P30). The control group of the C57BL/6 mice received the same volume of DMSO injection each day. Transgenic Prx-Cre:GnasR201H mice and corresponding GnasR201H controls were injected daily 0.017 mg per gram of body weight between postnatal 21 and 29 days of age to block the elimination of dead hypertrophic chondrocytes by ingrowing blood vessels. Animals were sacrificed one day after the last axitinib injection.
 
-## TUNEL staining
+### TUNEL staining
 
 About 30 µm thick sections of cultured tibia bones were treated with proteinase K (Ambion) at 10 µg/mL for 40 min at 37° C before applying the TUNEL reaction mix (Roche Inc) for 90 min. The cells were then counter-stained with DAPI for 5 min.
 
-## Quantification of positive cells (PI+, TUNEL+, YAP+, etc)
+### Quantification of positive cells (PI+, TUNEL+, YAP+, etc)
 
 For each data point of the PI+ and TUNEL+ cell number quantification, at least three sections per animal and at least three animals were analyzed. Double-blind counting was performed for all quantification analysis, including the mediolateral distribution of PI+, TUNEL+, caspase-3+, p73+, YAP+, and double p73+YAP+ cells.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 30 µm sections of cultured tibia bones were blocked in 3% normal horse serum for 1 hr, followed by overnight incubation with primary antibodies against cleaved caspase-3 (1:500) (Cell Signaling), YAP (1:50) (Santa Cruz), p73 (1:100) (Abcam), Ki67 (1:20) (Invitrogen), or MCM2 (1:250) (Abcam) at 4° C. Secondary antibodies tagged with fluorophore were then added for one hour followed by DAPI counter-staining for 5 min.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization was performed on 30 µm sections as described previously (Chagin et al., 2014) utilizing a probe against ColXa1 (a gift from Prof. Bjorn Olsen, Harvard Medical School) labeled with digoxigenin (DIG) in accordance with the manufacturer’s instructions (Roche Inc). Samples were then treated with either DIG antibody Fab fragments (Sigma) and NTM (Sigma) for colorimetric visualization or DIG antibody HRP (Sigma) and TSA kit (Perkin Elmer) for fluorescent visualization.
 
-## Atomic force microscopy
+### Atomic force microscopy
 
 About 120–150 µm thick sections of live rat tibia bones were obtained by vibratome (Thermo Fisher Scientific) and mounted onto glass discs using silicone grease from the Bruker fluid cell accessory kit (Bruker). The force spectroscopy measurements were performed using a MultiMode eight atomic force microscope with a Nanoscope V controller and E scanner (Bruker). The regions of cells of interest for the acquisition of force-distance curves were selected under the optical microscope in combination with the AFM instrument.
 
@@ -242,7 +402,7 @@ The force-distance curves were acquired employing CP-PNP-BSG colloidal probes (N
 
 All measurements were conducted at 25°C and all tissue was handled in DMEM/F12 HEPES-containing medium on ice. At least 70 individual force-distance curves were acquired for each type of cell by ramping over the surface and a total of 30 cells were measured from three different animals. These force-distance curves were processed with the NanoScope Analysis v.1.10 software (Bruker). Utilizing retract curves, the elastic modulus E was extracted from these force-distance curves by fitting in accordance with the Hertzian model of contact mechanics.
 
-## Nanoindentation
+### Nanoindentation
 
 Local mechanical characteristics of 10-day-old rat and 30-day-old mice cartilage samples were measured with a Piuma Nanoindenter (Optics11, Netherlands) adapted for soft materials. Measurements were performed on 220–250 µm sections of live tissues (without fixation and freezing) obtained by vibratome (Thermo Fisher Scientific) at 2-4°C. After the measurement, the sections were stained with PI (Sigma) and CalceinAM (Sigma) to confirm cell viability.
 
@@ -254,7 +414,7 @@ For the study of 10-day-old rat and 30-day-old mice cartilage mechanical charact
 
 For the experiment assessing the effect of axitinib on the mechanical properties of epiphyseal cartilage, between 14 and 96 measurements of cartilage stiffness with nano-indenter were performed for each animal and the median (due to not normal distribution of the measurements) was chosen as the closest ‘true’ value representing cartilage stiffness for each mouse (six controls and seven treated mice). These values were employed to assess the effect of the treatment, their normal distribution verified by the Shapiro–Wilk test (passed; p=0.4051 and p=0.3921 for control and axitinib groups, respectively) and equality of distributions compared by unpaired t-test with n = 6 for control and n = 7 for treated.
 
-## Finite element analysis
+### Finite element analysis
 
 The effects of a SOC on the distribution of stress in the zones of bone growth were explored by numerical simulations. Following the reasoning of Carter et al., 1998, a plane-strain 2D domain was considered, to simplify the complex geometry of the bone end, and thereby clarify fundamental aspects of the response. The model thus considered five sub-domains. The geometry of this simulation domain was a slight modification of Carter et al., 1998, with a total height of 66 mm, the radius at the top of 17 mm, and bottom width of 25 mm. The cortical bone was given a width of 2.5 mm (measured horizontally). The thickness normal to the 2D plane was by definition 1 mm. Only the top part of the model is shown in the results figures.
 
@@ -270,30 +430,30 @@ With similar loads, this model resulted in stress distribution in and deformatio
 
 Model design for stem tetrapods and archosaurs were based on Sanchez et al., 2014; Sanchez et al., 2016 and (Chinsamy and Abdala, 2008; Ray and Chinsamy, 2004), respectively.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Proximal end growth plate of mouse and rat tibia was dissected and homogenized in liquid nitrogen for subsequent RNA extraction by Trizol and RNA purification by the RNeasy kit (Qiagen). Only RNA samples with an A260/A280 value between 1.8 and 2.0 were used. Extracted RNA was reverse transcribed into cDNA using a kit from Takara. qPCR was performed using the SYBR Green I supermix (BioRad) and analyzed using the ΔCt method by normalizing with the housekepping gene GAPDH. Three growth plates from independent animals were analyzed for each condition.
 
-## Sciatic nerve resection
+### Sciatic nerve resection
 
 Wistar-Kyoto rats at P10 were anesthetized with 20 mg/kg Zoletil (Vibrac). On the posterior side of the right leg, the skin and muscle were dissected, and the sciatic nerve was isolated. For experimental animals, a 5 mm nerve fragment was excised; for sham-operated animals, the nerve was returned to the soft tissue without resection. The skin at the operation site was sutured and, after recovery from anesthesia, the pups were returned to their mother. The suture was treated with povidone-iodine for 7 days after surgery. Foot sensitivity was tested at P16 using a needle. Video recordings of gaits were carried out at P11, P14, P20, and P22. The animals were sacrificed at P23 for tissue collection.
 
-## Leg immobilization with kinesiology tape
+### Leg immobilization with kinesiology tape
 
 The right legs of 10-day-old Wistar-Kyoto rats were immobilized using kinesiology tape (Bradex) and the left legs remain intact. Free-living animals were used as the control group. The tape was wrapped in two layers to fix the knee and ankle joint. As the rats grew, the tape was changed every 2 days. Rats’ gait pattern was observed daily, and the video was recorded at P14, P20, and P22, to verify the unloading of the taped leg. Rats were sacrificed at P23 for tissue collection.
 
-## SOC size evaluation
+### SOC size evaluation
 
 Knee samples were fixed in 3.7% formaldehyde for 1 day and decalcified in EDTA. About 20 μm cryosections were stained with Safranin O and Fast Green. SOC size was estimated in the middle of the epiphysis, identifiable by the presence of a cruciate ligament. SOC area was measured and normalized to the total epiphysis area, including the growth plate with Image J.
 
-## Bone density evaluation
+### Bone density evaluation
 
 The primary spongiosa area (500 μm under the growth plate) on hematoxylin and eosin-stained sections was used to evaluate the bone density. The bone area that is stained with eosin was measured and normalized to the total primary spongiosa area with Image J.
 
-## Footprint rat behavior test
+### Footprint rat behavior test
 
 The test was carried out on P20. The rat's hind legs were painted with iodine and the animal was allowed to move freely on a blank sheet of paper. After the rat walked along the sheet in one direction, the sheet was changed. For each rat, at least five records were made. Papers with footprints were scanned.
 
-## Statistical analysis
+### Statistical analysis
 
 The values presented as means ± standard deviations of at least three independent experiments. The unpaired Student’s t-test and one-way ANOVA were utilized to calculate P-values if not otherwise indicated.

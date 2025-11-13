@@ -18,19 +18,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02t9fsj94 National Research Center for Protozoan Diseases, Obihiro University of Agriculture Veterinary Medicine Obihiro Japan
-2. https://ror.org/039xnh269 Department of Veterinary Medicine, Agriculture College of Yanbian University Yanji China
-3. https://ror.org/043say313 College of Veterinary Medicine and Biomedical Sciences, Cavite State University Indang Philippines
-4. https://ror.org/01k8vtd75 Department of Biochemistry and Molecular Biology, Faculty of Veterinary Medicine, Mansoura University Mansoura Egypt
-5. https://ror.org/03ppx1p25 Central Laboratory, Institute of Tropical Medicine (NEKKEN), Nagasaki University Nagasaki Japan
-6. https://ror.org/0212jcf64 School of Basic Medicine, Hubei University of Arts and Science Xiangyang China
-7. https://ror.org/057zh3y96 Research Center for Asian Infectious Diseases, The University of Tokyo Tokyo Japan
+1. National Research Center for Protozoan Diseases, Obihiro University of Agriculture Veterinary Medicine Obihiro Japan ([ROR:02t9fsj94](https://ror.org/02t9fsj94))
+2. Department of Veterinary Medicine, Agriculture College of Yanbian University Yanji China ([ROR:039xnh269](https://ror.org/039xnh269))
+3. College of Veterinary Medicine and Biomedical Sciences, Cavite State University Indang Philippines ([ROR:043say313](https://ror.org/043say313))
+4. Department of Biochemistry and Molecular Biology, Faculty of Veterinary Medicine, Mansoura University Mansoura Egypt ([ROR:01k8vtd75](https://ror.org/01k8vtd75))
+5. Central Laboratory, Institute of Tropical Medicine (NEKKEN), Nagasaki University Nagasaki Japan ([ROR:03ppx1p25](https://ror.org/03ppx1p25))
+6. School of Basic Medicine, Hubei University of Arts and Science Xiangyang China ([ROR:0212jcf64](https://ror.org/0212jcf64))
+7. Research Center for Asian Infectious Diseases, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
 ## Abstract
 
-Babesiosis is a disease brought on by intraerythrocytic parasites of the genus Babesia . Current chemotherapies are accompanied by side effects and parasite relapse. Therefore, it is crucial to develop highly effective drugs against Babesia . Cipargamin (CIP) has shown inhibition against apicomplexan parasites, mainly Plasmodium and Toxoplasma . This study evaluated the growth-inhibiting properties of CIP against Babesia spp. and investigated the mechanism of CIP on B. gibsoni . The half inhibitory concentration (IC 50 ) values of CIP against the in vitro growth of B. bovis and B. gibsoni were 20.2 ± 1.4 and 69.4 ± 2.2 nM, respectively. CIP significantly inhibited the growth of B. microti and B. rodhaini in vivo. Resistance was conferred by L921V and L921I mutations in BgATP4, which reduced the sensitivity to CIP by 6.1- and 12.8-fold. The inhibitory potency of CIP against BgATP4-associated ATPase activity was moderately reduced in mutant strains, with a 1.3- and 2.4-fold decrease in BgATP4 L921V and BgATP4 L921I , respectively, compared to that of BgATP4 WT . An in silico investigation revealed reductions in affinity for CIP binding to BgATP4 L921V and BgATP4 L921I compared to BgATP4 WT . Resistant strains showed no significant cross-resistance to atovaquone or tafenoquine succinate (TQ), with less than a onefold change in IC 50 values. Combining CIP with TQ effectively eliminated B. microti infection in SCID mice with no relapse, and parasite DNA was not detected by qPCR within 90 days post-infection. Our findings reveal the efficacy of CIP as an antibabesial agent, its limitations as a monotherapy due to resistance development, and the potential of combination therapy with TQ to overcome said resistance and achieve complete parasite clearance.
+Babesiosis is a disease brought on by intraerythrocytic parasites of the genus Babesia. Current chemotherapies are accompanied by side effects and parasite relapse. Therefore, it is crucial to develop highly effective drugs against Babesia. Cipargamin (CIP) has shown inhibition against apicomplexan parasites, mainly Plasmodium and Toxoplasma. This study evaluated the growth-inhibiting properties of CIP against Babesia spp. and investigated the mechanism of CIP on B. gibsoni. The half inhibitory concentration (IC50) values of CIP against the in vitro growth of B. bovis and B. gibsoni were 20.2 ± 1.4 and 69.4 ± 2.2 nM, respectively. CIP significantly inhibited the growth of B. microti and B. rodhaini in vivo. Resistance was conferred by L921V and L921I mutations in BgATP4, which reduced the sensitivity to CIP by 6.1- and 12.8-fold. The inhibitory potency of CIP against BgATP4-associated ATPase activity was moderately reduced in mutant strains, with a 1.3- and 2.4-fold decrease in BgATP4L921V and BgATP4L921I, respectively, compared to that of BgATP4WT. An in silico investigation revealed reductions in affinity for CIP binding to BgATP4L921V and BgATP4L921I compared to BgATP4WT. Resistant strains showed no significant cross-resistance to atovaquone or tafenoquine succinate (TQ), with less than a onefold change in IC50 values. Combining CIP with TQ effectively eliminated B. microti infection in SCID mice with no relapse, and parasite DNA was not detected by qPCR within 90 days post-infection. Our findings reveal the efficacy of CIP as an antibabesial agent, its limitations as a monotherapy due to resistance development, and the potential of combination therapy with TQ to overcome said resistance and achieve complete parasite clearance.
 
 ## Introduction
 
@@ -46,37 +46,69 @@ Due to its excellent efficacy against other apicomplexan parasites, including Pl
 
 ## Results
 
-## Inhibitory efficacy of CIP on B. bovis and B. gibsoni in vitro
+### Inhibitory efficacy of CIP on B. bovis and B. gibsoni in vitro
 
 In vitro efficacy of CIP against B. bovis and B. gibsoni showed a steep growth inhibition curve with half inhibitory concentration (IC50) values of 20.2 ± 1.4 nM (Figure 1A) and 69.4 ± 2.2 nM (Figure 1B), respectively. The 50% cytotoxic concentration (CC50) value of CIP on Madin–Darby canine kidney (MDCK) cells and human foreskin fibroblasts (HFFs) was 38.7 ± 2.0 and 70.8 ± 4.9 μM (Figure 1—figure supplement 1), respectively. Based on these values, the predicted selectivity indices, which reflect the drug’s safety and specificity, were calculated to be greater than 500. Furthermore, at a concentration of 100 μM, CIP exhibited a low erythrocyte hemolysis rate of 0.11 ± 0.03% (data not shown).
 
-## CIP effect on B. microti and B. rodhaini infections in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Dose-dependent growth curve of CIP on B. bovis and B. gibsoni in vitro. IC50: the half maximal inhibitory concentration. (C) Inhibitory effects of CIP and atovaquone (ATO) plus azithromycin (AZI) on the proliferation of B. microti in BALB/c mice. (D) Hematocrit (HCT) values in mice treated with CIP or ATO plus AZI compared with vehicle-treated mice. (E) Inhibitory effects of CIP and ATO plus AZI on the proliferation of B. rodhaini in BALB/c mice. (F) Survival rates of CIP-treated, ATO plus AZI-treated, and vehicle-treated mice. The treatment time is shown by two-way arrows, and significant differences (p < 0.01) between the drug-treated groups (n = 6) and the vehicle-treated control group (n = 6) are indicated by asterisks. The data from one of three individual experiments are expressed as means ± SD. **p ˂ 0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The MTP-500 microplate reader was utilized to detect the absorbance at 450 nm. Each value represents the mean ± SD of three independent experiments carried out in triplicate. CC50: the 50% cytotoxic concentration.
+
+### CIP effect on B. microti and B. rodhaini infections in vivo
 
 Concurrently, CIP showed effective inhibition on B. microti and B. rodhaini in vivo. The parasitemia of B. microti-infected BALB/c mice increased dramatically in the vehicle-treated control group and peaked at 10 DPI (38.55 ± 4.32%) (Figure 1C). On the other hand, 7 days of treatment with CIP (20 mg/kg) or ATO plus AZI administered orally resulted in a significantly lower peak parasitemia, 1.06 ± 0.20% and 1.61 ± 0.20%, respectively (Figure 1C). Hematocrit (HCT) variations were tracked every 4 days as an indicator of anemia in B. microti-infected mice. The vehicle-treated group showed a drop in HCT levels at 12 and 16 DPI (p < 0.01) (Figure 1D). No significant reduction in HCT levels was observed in the CIP-treated group or the ATO plus AZI-treated group (Figure 1D). This indicates that the administration of CIP could control B. microti infection and prevent anemia from developing in B. microti-infected mice.
 
 BALB/c mice infected with B. rodhaini treated with sesame oil or ATO plus AZI showed high parasitemia, 90.73 ± 1.97%, and 86.23 ± 3.06%, respectively (Figure 1E), and all mice died within 7 DPI (Figure 1F). CIP treatment in B. rodhaini-infected mice precluded the emergence of parasitemia for the following 8 days (Figure 1E), which led to 66.67% of mice surviving the challenge infection (Figure 1F). At 12 DPI, parasites had recurred in all CIP-treated B. rodhaini-infected mice (10.32 ± 15.51%), which were eventually cleared as indicated by undetectable parasites at 18 DPI (Figure 1E).
 
-## Identification of B. gibsoni ATP4 mutation in CIP-resistant strains
+### Identification of B. gibsoni ATP4 mutation in CIP-resistant strains
 
 After being exposed to CIP at increasing concentrations up to 10 times the IC50, the resistant parasites in two of the culture wells were able to regrow. We sequenced the B. gibsoni ATP4 gene from the wild-type and two resistant strains. The wild-type strain has a C at nucleotide 2761, which translates to leucine (Figure 2A). In one resistant strain, a single-nucleotide variant in BgATP4 with a substitution at position 2761 (from C to G) was found—a nonsynonymous coding change from leucine to valine (L921V) (Figure 2B). In another resistant strain, the mutation occurred in the same position. However, the nucleotide substitution was from C to A, and the coding changed from leucine to isoleucine (L921I) (Figure 2C). Next-generation sequencing (NGS) revealed that for Bgatp42761C>G, 99.97% of 7,960 reads were G at nucleotide 2761, and for Bgatp42761C>A, 99.92% of 7862 reads were A at nucleotide 2761 (Figure 2D). BgATP4L921V and BgATP4L921I lines were tested for their susceptibility to CIP and had IC50 values of 421.0 ± 15.9 and 887.9 ± 62.0 nM, respectively (Figure 2E). These findings demonstrate a 6.1- and 12.8-fold reduction in CIP sensitivity of the resistant parasite lines BgATP4L921V and BgATP4L921I.
 
-## The effect of CIP on BgATP4WT, BgATP4L921V, and BgATP4L921I function
+![Figure 2.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) Representative sequencing chromatogram of wild-type and resistant parasites from CIP-treated B. gibsoni. The resistant parasite genomic DNA is extracted from blood samples after a 60-day treatment. The BgATP4 gene was amplified and sequenced using the DNA. (D) Genes of high-frequency sequence variants detected by next-generation sequencing (NGS). (E) Dose-dependent growth curve of BgATP4WT, BgATP4L921V, and BgATP4L921I in vitro. The data from one of three individual experiments are expressed as means ± SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A yellow square and arrow denote the BgATP4 mutation site discovered in this investigation; purple squares and arrows represent sites linked to P. falciparum cipargamin (CIP) resistance, and a gray square and arrow represent sites associated with T. gondii.
+
+### The effect of CIP on BgATP4WT, BgATP4L921V, and BgATP4L921I function
 
 Microscopic observation of thin blood smears was performed to determine the morphological changes of B. gibsoni exposed to CIP. The CIP-treated parasites became swollen after incubation with the drug for 72 hr (Figure 3A). For both the treatment and control groups, one hundred parasites were measured. The mean size of treated parasites was notably bigger than the parasites in the untreated group (p ˂ 0.0001) (Figure 3B). Significant vacuolization was observed in the cytoplasm of parasites in the CIP-treated group, as revealed by transmission electron microscopy (TEM). Despite this, the nuclear membrane structure and parasitic membranes remained intact until the parasites were completely destroyed (Figure 3C). The addition of the ATP4 inhibitor CIP resulted in a time-dependent increase in the concentrations of [Na+]i in wild-type B. gibsoni, with improved signal-to-noise ratios at the higher drug concentration of 20 nM (Figure 3D). We observed that the Na+ concentrations in both BgATP4L921V and BgATP4L921I lines were lower when compared with those of the control BgATP4WT line after being exposed to 20 nM CIP for 20 min, with a significantly lower Na+ concentration in BgATP4L921I (p = 0.0087) (Figure 3F). We also demonstrated here that the addition of CIP in wild-type B. gibsoni caused an increase in the cytosolic pH (Figure 3E). Specifically, 4 min after the drug was added, the average pH of the 20 nM CIP group reached as high as 7.278, while the 1 nM CIP group reached 7.089 and the untreated group reached 7.062 (Figure 3E). The pH values of the 20 nM CIP group were consistently higher than those of the other two groups, although declining with time (Figure 3E). In resistant lines, a 20-min exposure to 20 nM CIP caused small changes in the pH values compared to the wild-type line, with the BgATP4L921I line (7.048 ± 0.042) having a notably lower pH value (p = 0.0229) (Figure 3G).
 
-## Sensitivity of BgATP4-associated ATPase activity to CIP in BgATP4WT, BgATP4L921V, and BgATP4L921I
+![Figure 3.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig3-v1.jpg)
+
+**Figure 3.:** (A) Untreated and CIP-treated parasite morphology after incubation for 72 hr. Scale bar: 5 µm. (B) Sizes of 100 parasites in two groups measured with ImageJ software in panel A. Statistically significant differences between the means of variables determined by t-test. ****p ˂ 0.0001. (C) Transmission electron microscopy (TEM) of untreated and CIP-treated parasite. N, nucleus; SB, spherical body; V, vacuole. Scale bar: 500 nm. (D) [Na+]i concentrations after the addition of CIP in the BgATP4WT line. Representative traces from the experiment that highlight the impact of adding 20 nM CIP (blue), 1 nM CIP (green), or 0 nM CIP (grey) on the concentration [Na+]i of the BgATP4WT line. (E) Alkalinization of pHi in BgATP4WT line upon addition of the ATP4 inhibitor. (F) Addition of 20 nM CIP to the wild-type and resistant parasite lines results in different [Na+]i concentrations. (G) Addition of 20 nM CIP to the wild-type and resistant parasite lines results in different pHi concentrations. (H) Data acquired in the low Na+ condition (containing only the 2 mM Na+ introduced upon the addition of 1 mM Na2ATP) was subtracted from data obtained in the high Na+ condition to determine the ATPase activity related to the BgATP4 proteins. (I) Dose-dependent BgATP4-associated ATPase activity curve of BgATP4WT, BgATP4L921V, and BgATP4L921I in vitro. ATPase activity was determined at pH 7.2 in the presence of 150 mM Na+ and 1 mM Na2ATP. Each value represents the mean ± SD derived from a minimum of three biological replicates. *p ˂ 0.05; **p ˂ 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** CIP disrupts the BgATP4 function of wild-type parasites, which causes a net influx of Na+ and efflux of H+ from the parasite. The osmotic load imposed on the influx of Na+ further brings about parasite swelling and internal alkalinization, which are the main factors in Babesia death. Mutations in ATP4 minimize the susceptibility to ATP4 inhibitors by recovering H+ and Na+ balance, as indicated by the dotted arrows.
+
+### Sensitivity of BgATP4-associated ATPase activity to CIP in BgATP4WT, BgATP4L921V, and BgATP4L921I
 
 The BgATP4-associated ATPase activity in erythrocytes infected with BgATP4WT (6.31 ± 1.20 nmol Pi/mg protein/min), measured in the presence of 150 mM Na+, was higher than those observed in BgATP4L921V (5.11 ± 0.50 nmol Pi/mg protein/min) and BgATP4L921I (4.58 ± 0.53 nmol Pi/mg protein/min) (p = 0.04) (Figure 3H).
 
 We further investigated the concentration-dependent inhibition of BgATP4-associated ATPase activity by CIP in wild-type and mutant parasites. In membranes prepared from B. gibsoni, CIP inhibited BgATP4-associated ATPase activity with IC50 values of 111.4 ± 31.8 nM for BgATP4WT, 149.8 ± 21.7 nM for BgATP4L921V, and 269.5 ± 29.8 nM for BgATP4L921I. The potency of CIP in inhibiting BgATP4-associated ATPase activity was reduced by 1.3- and 2.4-fold in membranes prepared from BgATP4L921V and BgATP4L921I, respectively, compared to BgATP4WT (Figure 3I).
 
-## Multiple sequence alignment of Babesia ATP4 and molecular docking
+### Multiple sequence alignment of Babesia ATP4 and molecular docking
 
 The whole amino acid sequence of B. gibsoni ATP4 (GenBank: KAK1443404.1) shared identity values of 29.75%, 49.40%, 49.67%, 62.21%, and 52.47% with Homo sapiens ATP4 (GenBank: NM_000704.3), P. falciparum ATP4 (GenBank: PF3D7_1211900), T. gondii ATP4 (GenBank: XP_018635122.1), B. bovis ATP4 (PiroplasmaDB: BBOV_IV010020), and B. microti ATP4 (GenBank: BMR1_03g01005), respectively (Figure 2—figure supplement 1).
 
 The pLDDT (predicted Local Distance Difference Test) value of BgATP4WT prediction was 80.7 using Colab-fold. Multiple potential binding sites for CIP were revealed by blind docking throughout the whole protein surface (Figure 4—figure supplement 1). CIP binds in close proximity to L921, as demonstrated by focused docking on this area (Figure 4A). The contribution of each residue to the predicted binding affinity in either mutant structure was reduced; the precise values of BgATP4WT (Figure 4B), BgATP4L921V (Figure 4C), and BgATP4L921I (Figure 4D) were −6.43, –6.40, and –6.26 kcal/mol, respectively. The interactions of CIP from each docking simulation are shown in Supplementary file 3.
 
-## Cross-resistance of BgATP4L921V and BgATP4L921I mutants to ATO and TQ
+![Figure 4.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig4-v1.jpg)
+
+**Figure 4.:** (A) The lowest energy poses for cipargamin (CIP) were located in reference to the whole protein structure, docking against the WT (green), L921V (yellow), and L921I (pink) mutant BgATP4. The side chain of L921 is also shown in a red stick at its position. (B–D) The zoomed views of the binding locations of CIP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101128/elife-101128-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) The binding space of WT, L921V, and L921I mutants in BgATP4 are labeled in green, yellow, and pink, respectively.
+
+### Cross-resistance of BgATP4L921V and BgATP4L921I mutants to ATO and TQ
 
 The BgATP4WT, BgATP4L921V, and BgATP4L921I lines were tested for their susceptibility to ATO and TQ. The IC50 values for these lines were 380.1 ± 3.1, 412.9 ± 5.4, and 360.3 ± 7.9 nM, respectively, for ATO (Figure 5A), and 39.5 ± 0.4, 29.9 ± 1.4, and 39.3 ± 0.3 μM, respectively, for TQ (Figure 5B). The IC50 values for both ATO and TQ in the resistant strains showed only slight changes compared to the wild-type strain, with less than a onefold difference. This minimal variation suggests that the resistant strain has a mild alteration in susceptibility to ATO and TQ, but not enough to indicate strong resistance or significant cross-resistance.
 
@@ -84,7 +116,7 @@ The BgATP4WT, BgATP4L921V, and BgATP4L921I lines were tested for their susceptib
 
 **Figure 5.:** (A) Dose-dependent growth curve of BgATP4WT, BgATP4L921V, and BgATP4L921I by ATO treatment in vitro. (B) Dose-dependent growth curve of BgATP4WT, BgATP4L921V, and BgATP4L921I by TQ treatment in vitro. (C) Inhibitory effects of CIP plus TQ on the proliferation of B. microti in SCID mice (n = 5 per group). Treatment started at 4 DPI: CIP was given at 20  mg/kg once daily for 7 days, TQ was administered as a single 20  mg/kg dose, and the combination group received both treatments (CIP at 20  mg/kg once daily for 7 days plus a single dose of TQ at 20  mg/kg). (D) Parasite DNA was detected by qPCR on genomic DNA extracted from blood collected from untreated and treated SCID mice infected with B. microti at 90 DPI. A dotted gray line across the graph represents the average cut-off Cq value. Cut-off Cq ≤35 was considered positive, while Cq >35 or no amplification was considered negative. Each value represents the mean ± SD derived from a minimum of five biological replicates. NA indicates no amplification.
 
-## Combination treatment of CIP plus TQ in SCID mice with B. microti infection
+### Combination treatment of CIP plus TQ in SCID mice with B. microti infection
 
 The parasitemia of B. microti-infected SCID mice in the vehicle group increased dramatically, peaking at 10 DPI (77.03 ± 2.45%) (Figure 5C). Although the trend showed a subsequent decline, the parasitemia remained around 50% until the mice were euthanized at 90 DPI. Treatment with CIP (20 mg/kg) initially reduced parasitemia to undetectable by 18 DPI. However, a relapse occurred, with parasitemia increasing rapidly and stabilizing at levels comparable to the vehicle group during the subsequent observation period. Notably, no mutations were detected in the relapsed B. microti parasites from SCID mice (data not shown). In contrast, parasitemia was completely cleared in the TQ and CIP plus TQ groups by 8 DPI and 6 DPI, respectively, with no parasites observed under the microscope thereafter. qPCR analysis at 90 DPI detected parasite DNA in all groups except the CIP plus TQ group (Figure 5D).
 
@@ -110,68 +142,68 @@ In summary, our findings provide a comprehensive understanding of CIP’s effica
 
 ## Materials and methods
 
-## Parasite culture
+### Parasite culture
 
 The parasites B. gibsoni Oita strain and B. bovis Texas strain were in vitro cultured in 24-well plates and maintained in an atmosphere of 5% CO2 and 5% O2 at 37°C (Liu et al., 2018). For the in vivo studies, B. microti Peabody mjr strain-(ATCC PRA-99) and B. rodhaini Australia strain-infected RBCs (iRBCs), which were collected and diluted with phosphate-buffered saline when the parasitemia levels in the donor mice reached ~20% and 50%, respectively, and were intraperitoneally injected into 6-week-old female BALB/c mice. Each BALB/c mouse was infected with 1.0 × 107 B. microti or B. rodhaini iRBCs for the in vivo trials (Ji et al., 2022a).
 
-## In vitro cytotoxicity of CIP and hemolysis rate in canine erythrocytes
+### In vitro cytotoxicity of CIP and hemolysis rate in canine erythrocytes
 
 HFFs and MDCK cells were obtained from the American Type Culture Collection (ATCC, catalog number CRL-2522 and CCL-34). Both cell lines were authenticated using short tandem repeat profiling conducted by ATCC to confirm their genetic identities. Additionally, both HFF and MDCK cells were tested and confirmed the absence of mycoplasma contamination by fluorescent Hoechst staining. Cell lines were maintained at 37°C under an atmosphere of 5% CO2 and 5% O2, and the cytotoxic effect of CIP (MedChem Express, Tokyo, Japan) was assessed using a cell viability assay by CCK-8 (Dojindo, Japan) as described previously (Li et al., 2023). The selectivity index is calculated as the ratio between the IC50 and the CC50 values.
 
 Canine erythrocytes were collected from healthy beagle dogs raised in NRCPD and stocked in Vega y Martinez (VYM) phosphate-buffered saline solution at 4°C (Vega et al., 1985). A canine erythrocyte hemolysis assay was performed at concentrations of 0.1, 1, 5, 10, 25, 50, and 100 µM as previously described (Ariefta et al., 2022).
 
-## Evaluation of the efficacy of CIP against Babesia parasites in vitro
+### Evaluation of the efficacy of CIP against Babesia parasites in vitro
 
 The efficacy of CIP against B. gibsoni and B. bovis was determined using a fluorescence assay, as previously described (Guswanto et al., 2014). The IC50 values were determined from the fluorescence values and by non-linear regression analysis (curve fit) in GraphPad Prism 9 (GraphPad Software Inc, USA).
 
-## Chemotherapeutic effects of CIP against Babesia infections in vivo
+### Chemotherapeutic effects of CIP against Babesia infections in vivo
 
 CIP was evaluated on B. microti- and B. rodhaini-infected mice, as previously described (Ndayisaba et al., 2021; Tuvshintulga et al., 2022). When B. microti- and B. rodhaini-infected mice had a 1% average parasitemia at 4 and 2 DPI, respectively, the drug treatments were administered and continued for 7 days. Three groups of B. microti-infected mice were administered different treatments. The CIP group (n = 6) and the ATO plus AZI group (n = 6) were orally treated with 20 mg/kg CIP and 20 mg/kg ATO plus 20 mg/kg AZI (Sigma, Tokyo, Japan), respectively. All drugs were prepared in sesame oil. The infected mice of the vehicle group (n = 6) orally received 0.2 ml of sesame oil as the control. Eighteen mice infected with B. rodhaini were likewise placed into three groups for treatment, and they received the same treatments as the mice infected with B. microti. A light microscope (Nikon, Japan) and a hematology analyzer (Celltac α MEK-6450, Nihon Kohden Corporation, Tokyo, Japan) were used to assess the parasitemia and HCT levels every 2 and 4 days, respectively.
 
-## Selection of CIP-resistant B. gibsoni in vitro
+### Selection of CIP-resistant B. gibsoni in vitro
 
 Selections were initiated by exposing six independent flasks, each containing 10 μl (5 × 106) B. gibsoni iRBCs mixed with 40 μl (4 × 108) RBCs into a 450-μl culture medium, which contained increasing concentrations of CIP: 5, 10, 20, and 30–694 nM (10 × IC50). The medium containing CIP was replaced daily until parasites treated with 10 × IC50 CIP reached multiplication rates that were approximately comparable to those of the untreated controls (Hwang et al., 2010). Then, to evaluate the decreased sensitivity to CIP, IC50 values of resistant strains were determined by nonlinear regression using the GraphPad Prism software.
 
-## Detection of B. gibsoni ATP4 gene mutations
+### Detection of B. gibsoni ATP4 gene mutations
 
 The genomic DNA of the mutant parasites was extracted and sequenced (Ji et al., 2022a). The primer sets used for sequencing are listed in Supplementary file 1. The single-nucleotide variants were identified by pairwise alignment to the BgATP4WT sequence (GenBank: KAK1443404.1). NGS was performed to detect the ratio of wild-type to mutant parasites by using the Illumina NovaSeq6000 sequencing platform (Jeon et al., 2021).
 
-## Morphological changes in CIP-treated in vitro cultured B. gibsoni
+### Morphological changes in CIP-treated in vitro cultured B. gibsoni
 
 A microscopy assay was used to detect the morphological changes of wild-type B. gibsoni after exposure to 50 nM CIP for three consecutive days (Liu et al., 2021; Tayebwa et al., 2018). At 4 days post-treatment, ImageJ software was used to measure the sizes of 100 randomly selected parasites in the CIP-treated group and the control group on Giemsa-stained blood smears. After treating the parasites as described above, iRBCs were fixed in GA fixation buffer (2% glutaraldehyde in 0.1 M sodium cacodylate buffer containing 1 mM CaCl2 and 1 mM MgCl2), then stored in rinse buffer (0.1 M sodium cacodylate buffer containing 1 mM CaCl2 and 1 mM MgCl2) at 4°C for TEM analysis (Hidayati et al., 2023).
 
-## Parasites [Na+]i and pHi measurements
+### Parasites [Na+]i and pHi measurements
 
 For both [Na+]i and pHi measurements, the wild-type and mutant parasites were initially separated from erythrocytes by treatment with saponin (0.05% [wt/vol]) for 5 min (Saliba and Kirk, 1999). The Na+-sensitive fluorescent dye SBFI (Thermo Fisher Scientific; product S1263) was used to quantify intracellular sodium ([Na+]i). Saponin-isolated parasites (at 1 × 108 parasites/ml) were loaded with SBFI (5 μM; in the presence of 0.02% wt/vol Pluronic F127) for 1 hr at room temperature (RT) (Spillman et al., 2013). Thereafter, SBFI-loaded parasites were resuspended in physiological saline (120 mM NaCl, 5 mM KCl, 25 mM HEPES, 20 mM D-glucose, and 1 mM MgCl2 [pH 7.1]) at RT in the presence or absence of CIP. A 96-well microtiter plate was filled with around 200 µl of parasite suspension per well. The dye-loaded cells fluoresced at 515 nm after being stimulated at 340 and 380 nm. Parasites loaded with SBFI were suspended in calibration buffers containing [Na+] values ranging from 0 to 140 mM (pH 7.1) to establish calibration curves (Diarra et al., 2001).
 
 The cytosolic pH of wild-type and mutant strains was measured using the pH-sensitive fluorescent dye BCECF [2′,7′-bis-(2-carboxyethyl)-5-(and-6)-carboxyfluorescein] (Biotium; product 51011). The BCECF was added to saponin-isolated parasites by suspension (1 × 108 parasites/ml) and incubated for 20 min at 37°C in RPMI-1640 culture medium (Gibco, USA) (Saliba and Kirk, 1999). Thereafter, the parasites loaded with dye were rinsed thrice (12,000 × g, 1 min) in RPMI-1640 culture medium, then resuspended in physiological saline (as previously mentioned) with or without various concentrations of CIP. A 96-well microtiter plate was filled with around 200 µl of parasite suspension per well. The dye-loaded cells fluoresced at 520 nm after being stimulated at 440 and 490 nm. A pH calibration was carried out for each experiment (Mohring et al., 2022).
 
-## Measurements of membrane ATPase activity
+### Measurements of membrane ATPase activity
 
 Membranes from isolated B. gibsoni were prepared by lysing the parasites in ice-cold deionized water containing 7 × Protease Inhibitor Cocktail Tablets (Roche, Germany). The membrane preparation was then washed three times with ice-cold deionized water, with protease inhibitors included in the first two washes (Qiu et al., 2022). Protein concentrations in the membrane samples were determined using a Bradford assay. The production of inorganic phosphate (Pi) from ATP hydrolysis was measured using the Malachite Green Phosphate Assay (BioAssay Systems, USA). Membrane preparations were diluted in either a high Na+ solution (final reaction conditions: 150 mM NaCl, 20 mM KCl, 2 mM MgCl2, 50 mM Tris, pH 7.2) or a Na+-free solution (final reaction conditions: 150 mM choline chloride, 20 mM KCl, 2 mM MgCl2, 50 mM Tris, pH 7.2) to achieve a final protein concentration of 40 μg/ml. CIP was added at the concentrations specified in the respective figure legends. Reactions were conducted according to the manufacturer’s protocol provided with the assay kit.
 
-## Multiple ATP4 sequence alignment and molecular docking
+### Multiple ATP4 sequence alignment and molecular docking
 
 B. gibsoni ATP4 (GenBank: KAK1443404.1), B. bovis ATP4 (PiroplasmaDB: BBOV_IV010020), B. microti ATP4 (GenBank: BMR1_03g01005), T. gondii ATP4 (GenBank: XP_018635122.1), and H. sapiens ATP4 (GenBank: NM_000704.3) sequences were obtained by a homology search using P. falciparum ATP4 (GenBank: PF3D7_1211900). Sequence alignment was analyzed using MUSCLE in Jalview v2.11.3.2 software and BLAST (http://www.ncbi.nlm.nih.gov/BLAST/).
 
 AlphaFold was used to predict the structure of BgATP4WT (Jumper et al., 2021). Using the GROMACS 2021 Molecular Dynamics package, the energy minimization was carried out following the model’s generation (Lindahl and Hess, 2021). The mutations were produced by using CHARMM-GUI PDB reader (Jo et al., 2014). PyMOL (version 2.0 Schrödinger, LLC) was used to confirm the position of the mutation site (center: –20.367, 10.904, 9.435; size: 30 × 30 × 30) (Trott and Olson, 2010). The ligand molecules CIP were downloaded from PubChem (CID 44469321; https://pubchem.ncbi.nlm.nih.gov/compound/44469321). The ligand was used to dock with Gnina (Eberhardt et al., 2021). The affinity score and binding pose were chosen only from the highest convolutional neural network score results from docking simulations. The models were visualized using the PyMOL Molecular Graphic System and Discovery Studio.
 
-## Cross-resistance to TQ and ATO in mutant parasites
+### Cross-resistance to TQ and ATO in mutant parasites
 
 The efficacy of TQ and ATO against BgATP4WT, BgATP4L921V, and BgATP4L921I was evaluated using a fluorescence assay, as described above. The IC50 values were calculated from the fluorescence values using non-linear regression analysis (curve fitting) in GraphPad Prism 9 (GraphPad Software Inc, USA).
 
-## Efficacy of CIP plus TQ combination therapy in SCID mice infected with B. microti
+### Efficacy of CIP plus TQ combination therapy in SCID mice infected with B. microti
 
 Twenty 6-week-old female immunocompromised mice (C.B-17/IcrJcl-Prkdcscid strain, CLEA Japan, Inc) were intraperitoneally injected with 1.0 × 107 of B. microti-infected blood cells (Tuvshintulga et al., 2022). When the average parasitemia across all mice reached 1% (at 4 DPI), the drug treatments were initiated. The CIP group (n = 5) was orally administered 20 mg/kg CIP for 7 days. The TQ group (n = 5) was orally administered a single dose of 20 mg/kg TQ. The CIP plus TQ group (n = 5) received the combination treatment, following the dosage and administration methods described above. The vehicle group (n = 5) orally received 0.2 ml of sesame oil as the control. Thin blood smears were prepared every other day and examined under a light microscope to determine parasitemia levels.
 
-## qPCR analysis
+### qPCR analysis
 
 To further verify the presence or absence of B. microti DNA in treated SCID mice, real-time quantitative PCR analysis was performed as described previously (Vydyam et al., 2024). Briefly, genomic DNA was extracted from blood samples (200 μl) collected at 90 DPI and subjected to qPCR analysis using SYBR Green I, targeting a highly conserved region of Babesia mitochondrial genome (mtDNA). Primers used were: Bmic-F 5′-TTGCGATAGTAATAGATTTACTGC-3′ and B-lsu-R2 5′-TCTTAACCCAACTCACGTACCA-3′ (Qurollo et al., 2017). The reaction mixture consisted of: 1× Advanced Universal SYBR Green Super Mix (2×) (1725270; Bio-Rad); 0.5 μM of each primer, and 100 ng of genomic DNA.
 
-## Detection of B. microti ATP4 gene mutations in relapsed infected SCID mice
+### Detection of B. microti ATP4 gene mutations in relapsed infected SCID mice
 
 The genomic DNA of the mutant parasites was extracted and sequenced (Ji et al., 2022a). The primer sets used for sequencing are listed in Supplementary file 2. The single-nucleotide variants were confirmed by pairwise alignment to the BmATP4WT sequence (GenBank: BMR1_03g01005).
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis, namely one-way ANOVA and two-tailed unpaired t-tests, was performed using GraphPad Prism (La Jolla, CA, USA) version 9. A p value of <0.05 was considered a statistically significant result.

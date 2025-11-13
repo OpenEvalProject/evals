@@ -39,9 +39,57 @@ Here we provide DeepFRET, an all-inclusive analysis software with a pre-trained 
 
 ## Results
 
-## DeepFRET software package
+### DeepFRET software package
 
 DeepFRET is an open-source software package that implements a neural network model architecture for data evaluation integrating into a user-friendly platform all common procedures for smFRET analysis (Figure 1, Figure 1—figure supplements 1–2). The neural network model architecture used here is based on a deep convolutional neural network to recognize particular spatial features present in the data. The model first passes the data through several layers of convolutions of different lengths, and in the process learns to recognize which particular elements of a sample are present at different length scales, to best classify it correctly. This has previously been used to label time-series data such as electrocardiographs (Hannun et al., 2019) or electrical readouts in DNA sequencing (Wick et al., 2018). Additionally, we added a long short-term memory (LSTM) layer after the convolutional layers, as this will also help the model to learn temporality in the data and propagate to the later frames the learned information (Karim et al., 2018; Oh et al., 2018). A detailed description of the model hyperparameters and architecture can be found in the Materials and methods section.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-v1.jpg)
+
+**Figure 1.:** (a) Cartoon of the typical heterogeneous data acquired in smFRET experiments. Varying criteria for data selection for downstream analysis may yield different structural and kinetic information. (b) Screenshots of the provided standalone software that integrates deep learning and reduces the selection to a single-user-adjustable criterion: the DEEP FRET confidence threshold. The simple and intuitive GUI integrates all the features of our approach for rapid traces extraction from raw images to filtering of traces based on the predicted classification, treatment of smFRET data to extraction of publication-quality figures. (c) End-to-end sequence classification of smFRET traces by deep learning. Raw signals of donor-donor, donor-acceptor, and acceptor-acceptor intensities in the form of ASCII files can also be loaded with the DeepFRET software. The pre-trained DNN will classify individual frames into one of six different categories: bleached, static smFRET, dynamic smFRET, aggregate, noisy, and scrambled. A final smFRET confidence score is calculated, depending on each of the categories, that is used for threshold.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each residual block (Res) is made up of 1D convolutional filters of size n × k with batch normalization and ReLU activations in between. The initial convolution after the input layer has the same hyper-parameters as the first residual block. A 1 × k convolution is added in each bottleneck unit for efficiency. The ‘+’ symbol denotes a skip-connection, where the residual block’s input is added to its output. The final convolved output goes to a bidirectional long short-term memory (LSTM) layer. For each frame, the outputs are distributed among the different classes by a dense layer with softmax activation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** To generate unbiased distributions of smFRET traces, most steps include randomization, sampling from uniform distributions (except for bleaching probability, which follows an exponential distribution) for the given input parameter ranges. User-adjustable parameters include the probability of aggregation, fluorophore blinking, bleaching, and more. All output data is automatically sequence-annotated with the ground truth behavior, for supervised machine learning. A scrambling probability is used to generate a fraction of heavily distorted data to improve model robustness and prevent misclassification of data containing artifacts.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) smFRET traces were generated with 1–4 randomly defined FRET states with the same transition probabilities as used for model training. Comparing FRET calculated from uniformly sampled donor/acceptor intensities between 0 and 1 reveals identical, uniform distributions. (b) Theoretical lifetime distributions for various ranges of sampled transition probabilities. The lifetime distribution follows an evenly weighted average over the exponential decays for each possible number of FRET states and transition probabilities. A Monte Carlo simulation derived by sampling transition probabilities uniformly between 0 and 0.2, as in the training data, on n = 10,000 traces sampling from 2 to 4 FRET states is in agreement with the underlying model. (C) Transition density plot displaying the idealized transitions of n = 1000 simulated FRET traces. A minimum distance of 0.1 FRET between states was used, as in the training data, to distinguish actual transitions from noise fluctuations, hence the grayed out diagonal. The simulated training data does not introduce any bias in the model training.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) To tune the accepted noise level for our deep learning model, we simulated 200 smFRET traces with a single state at 0.5 FRET, with varying noise levels. (b) At a noise level of 0.25, the distributions in (a) could no longer be considered normal, using a D’Agostino-Pearson test for normality (p<0.05).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Randomly generated traces, corresponding to each of the six defined categories, shown with raw signals, E (FRET), and S (stoichiometry). The color code in the bottom panel corresponds to the frame-level ground truth labeling of each trace.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** To facilitate fast and easy experimentation of any kind on smFRET traces, the DeepFRET GUI includes a visual trace simulator with ground-truth labels associated with every trace. The traces can be exported to ASCII or DAT and used for all kinds of statistical procedures.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** The distribution of labels for all frames in the training dataset, after balancing classes based on the first frame. The ‘bleaching’ label is excluded from balancing, as it occurs in most of the generated traces, due to photobleaching.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (a) Short toy-examples of selected traces for each category and the corresponding frame-wise predictions used for calculating confidence scores. The color code corresponds to classified behavior. All bleached data points (marked with gray in the trace) are excluded from the confidence score calculation. (b) Step-by-step calculation of trace scores.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** DeepFRET includes a histogram window which automatically finds BIC-optimal Gaussian mixtures, and allows the user to test enter the number of Gaussians to include in a mixture model. The histogram interface also includes an option for β- and γ-correction. Data is simulated from DeepFRETs trace generator with three states with means 0.15, 0.5, and 0.85, as in Figure 2—figure supplement 2b.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** To visualize transitions between FRET states, DeepFRET includes a window to fit exponential lifetime distributions of clusters in a transition density plot. The transition density interface also allows the user to test a different number of clusters for the transition density window. Data is simulated from DeepFRET’s trace generator with three states with means 0.15, 0.5, and 0.85, as in Figure 2—figure supplement 2b.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** To provide direct visualization of the Hidden Markov modeling of smFRET traces, traces can be imported directly for HMM analysis using the commonly used pomegranate implementation of the Baum-Welch algorithm. The transitions from the traces window are used in the transition density window. Data is simulated from DeepFRET’s trace generator with three states with means 0.15, 0.5, and 0.85, as in Figure 2—figure supplement 2b.
 
 To ensure that the predictions of DeepFRET would generalize to a wide range of experimentally observable behaviors independently of biological systems or experimental conditions, we provide a fully pre-trained DNN model. The implemented DNN is pre-trained on 150,000 simulated traces that uniformly sample all possible FRET states, their respective lifetimes, occupancies, and transition pathways, as well as all possible noise levels, ensuring that the data represents all theoretically possible configurations (see Figure 1, Figure 1—figure supplements 3–5, Materials and methods for software and algorithms). As such DeepFRET does not require the selection of any direct initial guesses of FRET values or user-defined parameter pretraining. However, we do provide both a script-based method for simulating smFRET data and a simple graphical interface for expert end-users to adjust simulation distribution parameters (see Figure 1b, Figure 1—figure supplement 6 and Materials and methods) for model re-training if needed (e.g. for specific circumstances or stricter criteria). This offers experts the possibility to benchmark the impact of, for example, one’s sorting criteria, noise, and optical correction factors.
 
@@ -51,9 +99,25 @@ For a given time trace the DNN predicts and outputs six softmaxed probabilities 
 
 If the DeepFRET score is above the user-defined threshold, the trace is accepted for the subsequent analysis (see Figure 1, Figure 1—figure supplement 8 and Materials and methods). Subsequent analysis involves two-channel fitting of idealized FRET traces using Hidden Markov modeling HMM (using the open-source package pomegranate); data and statistical evaluation of the abundance of FRET states and lifetimes; application of correction factors; and transition density plots (see Figure 1b, Figure 1—figure supplements 6 and 9–11). The number of underlying FRET distributions is automatically determined using Bayesian information criterion (BIC), offering the unbiased analysis of distribution of biomolecular distances (see Figure 1b, Figure 1—figure supplements 6 and 9–11). All data can be directly exported in publication-quality figures or extracted as data for user specific analysis if required.
 
-## Performance of DeepFRET
+### Performance of DeepFRET
 
 To test our DeepFRET performance in practice, we initially compared it with commonly used threshold values. To be on the safe site, we simulated 200 ground truth smFRET traces and merged them with a dataset containing 5000 random, non-smFRET traces (too noisy, aggregates of multiple molecules, aberrant single-molecule behavior, see Materials and methods for parameter descriptions). The obtained overall FRET distribution would be akin to what one would observe experimentally before any preprocessing of smFRET data on a low purity protein sample (Figure 2a). Common procedures for pre-selecting valid data for treatment often rely on an initial automatic threshold for discarding this large fraction of non-smFRET data (see Figure 1a). This is based on any number of combinations of the anticorrelated signal of the donor and acceptor, fluorophore bleaching, noise levels, or certain ranges of fluorophore stoichiometry, if recorded using ALEX methods (Hellenkamp et al., 2018; Hohlbein et al., 2014; Juette et al., 2016; Lee et al., 2005; McKinney et al., 2006; Preus et al., 2015; van de Meent et al., 2014). We first removed photobleaching and then accepted or rejected traces based on commonly used thresholds of median stoichiometry and max intensity (but not anticorrelation, see Materials and methods) without any manual post-inspection of the data. Figure 2b displays ground truth distribution (green) and the distribution of the accepted traces (pink) for varying the above thresholds. We recovered a poorly-defined FRET distribution that even at the tightest threshold does not recapitulate the underlying ground truth two-state conformational equilibrium. We calculated the common model evaluation metrics ‘precision’ and ‘recall’ (see Materials and methods) to quantify the quality of the predictions. The precision and recall, though improved by tightening the threshold, remain around 0.22 and 0.40, in the best case for simple thresholding (Figure 2b). The fact that out of 366 selected traces only 80 were true positive, while 286 were false positive and 120 false negative, highlights the need for human intervention as many traces are indistinguishable with simple statistical characterization (selected examples are shown below the histograms [Figure 2b]).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig2-v1.jpg)
+
+**Figure 2.:** (a) Simulated dynamic smFRET traces transitioning between FRET states 0.3 and 0.7 (left, ‘ground truth’) were mixed with a larger number of traces not showing smFRET (center). The overall distribution (right, ‘combined’) shows how the desired data can be drowned out in non-smFRET contaminant traces. The distribution would correspond to a raw distribution as extracted from raw image analysis of smFRET on low purity protein sample before any trace selection. (b) Automatic selection of data based on median stoichiometry, single-molecule intensity and bleaching. The number n designates the number of traces accepted by the model. Tightening the selection thresholds results in slight improvement of the poor overlap of the selected data with ground truth data, highlighting the need for a time-consuming and prone to potential cognitive biases human intervention. (c) Automatic classification of all traces of the combined set by DeepFRET, based only on the DeepFRET score threshold variation. Even at a low threshold DeepFRET selection follows the ground truth data. Increasing the score threshold further increases the fidelity of data selection. DeepFRET correctly assigns the dynamic, bleaching and aggregate behavior on the same smFRET traces as in (b) (see Figure 1—figure supplement 5 for more data). The single-user adjustable score threshold outperforms commonly used thresholds offering rapid, cross-lab reproducibility, and fully automatic data treatment. P: precision, R: recall, TN: true negatives, FP: false positives, FN: false negatives, TP: true positives.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Visual display of recovered smFRET distributions for several thresholds for a 2-state system (same data as Figure 2). (b) The precision and recall are calculated for all thresholds on the datasets shown in Figure 2 and Figure 2—figure supplement 2. For 1-, 2-, and 3-state systems we find that a threshold around 0.8–0.9 provides the best trade-off between the two measures, in order to recover the underlying FRET distribution faithfully.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In each of the figures (a) and (b); Top: ground truth distribution and distribution of randomly selected non-smFRET data from an external test set. Middle: Performance of DeepFRET sorting at different thresholds. Bleached frames were excluded from analysis in all cases. Bottom: Performance of sorting by semi-automated methodologies using common thresholds-based sorting at different thresholds. Classification metrics for smFRET trace detection are shown in the graph. (a) The performance, given a 1-state system centered at FRET mean value 0.5. (b) The performance, given a 3-state system centered at FRET mean values 0.15, 0.5, and 0.85.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) 3D illustration of the precision or recall (pseudocolor) as a function of trace noise and the distance between FRET states for dynamic 2-state traces. Prediction accuracy is minimal at ~0.2 noise levels. At lower noise, the trace is accepted and correctly classified with an accuracy of >0.96, while at high noise levels the trace is accurately classified as non-FRET. (b) Examples of simulated dynamic traces used, with input simulation noise. At a high simulated noise level, only some traces are below the lower limit of acceptable noise, when measuring the per-state standard deviation of FRET of the final output trace.
 
 DeepFRET, on the other hand, allowed the high-fidelity recovery of the underlying ground truth distribution reaching a precision of 0.91 when setting a DeepFRET score of 0.85 (Figure 2c) without the need for human intervention. The virtually identical FRET distributions, matching the ground truth data, that are derived for a large fraction of score thresholds (0.5– 0.85) show no systematic biases originating from data evaluation and illustrate the minimum impact of human interventions when using DeepFRET (see Figure 2, Figure 2—figure supplement 1). As expected, the fidelity of DeepFRET pertained to correctly identifying single or complex multistate FRET distributions (see Figure 2, Figure 2—figure supplements 1–2) reaching precision 0.91 as compared to just 0.22 for standard threshold setting in the absence of further human intervention. The practically identical precision and recall for single, double or triple, state FRET distributions independently of threshold further support the wide applicability to multiple biological systems.
 
@@ -61,15 +125,43 @@ Quantification of precision and recall of the selection for various DeepFRET sco
 
 We quantified and displayed using confusion matrix the discordance between the ground truth data and the data selected and classified by DeepFRET (Figure 3). In the confusion matrices, displayed in Figure 3, each row represents the predicted classification of traces while each column represents the ground truth data. The high classification accuracy for the annotation of individual frames is highlighted by the clear diagonal feature. We found similar classification performance for a DNN trained on non-ALEX FRET (by a DNN with only DD and DA inputs, which we will refer to as ‘ALEX-disabled’; Figure 3 right panels) signifying the applicability of the DeepFRET approach to both ALEX and non-ALEX FRET data. The misclassification between static and dynamic smFRET traces is practically non-existent and consists of <3% dynamic traces being misclassified as static, for both model types. This is important for accurately quantifying the abundance of static and dynamic subpopulations within the experimental time frame, which has been shown to have a clear experimental impact (He et al., 2019; Kilic et al., 2018; Osuka et al., 2018; Wood et al., 2012).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig3-v1.jpg)
+
+**Figure 3.:** (a) Classification accuracy of data in the six categories for the ALEX-enabled model, or the ALEX-disabled model. The absolute number of frames is shown while the fractions for each classification is displayed in parentheses (as calculated row-wise for each true label). The diagonal percentages show the accurate classification of DeepFRET (b) per-trace classification accuracy based on accepting only traces that are classified as smFRET (static/dynamic), and non-FRET data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Precision is plotted against recall for all precision on a simulated dataset containing 46 true smFRET traces and 954 non-smFRET traces. Additionally, the precision-recall for the entire test set (20,000 traces) is plotted for the model. The error bars on the average participant performance represent the standard deviation of the three individual participants.
+
 DeepFRET was found to classify bleached or aggregated frames with a 98% the true positives for ALEX-FRET model enabled (97% for the non-ALEX model), whereas only 89% (and 83% for ALEX-disabled) of the scrambled traces were correctly classified (see also Figure 2—figure supplement 3 for a detailed breakdown of the precision and recall). We note that the model is trained with a noise contribution that is drawn from a normal distribution of varying width (σ uniformly distributed between 0.01 and 0.30, multiplied by the maximum single fluorophore intensity) with a small contribution of gamma-distributed noise. As such, traces with σ above 0.25 are characterized by the employed DNN as ‘noisy’ (see Figure 2, Figure 2—figure supplement 3 and Materials and methods). In a regime where transition rates are similar to the imaging temporal resolution, traces may be incorrectly classified as noisy by the model. To allow experts to accept more noisy traces or traces with fast transition rates that may appear as noisy for given imaging conditions, we integrated into the DeepFRET a visual trace simulator. This user-friendly simulator allows the generation of traces with ground truth labels of traces where all parameters are tunable to integrate the specific needs of each lab (see Figure 1, Figure 1—figure supplements 6 and 11).
 
 We found the classification accuracy of each frame to be consistent with the classification accuracy on each trace, later derived from the overall most probable class given all predictions of individual frames of a trace (Figure 3a, Figure 3b, Figure 1, Figure 1—figure supplement 6 and Materials and methods). This is achieved by adding a bidirectional long short-term memory, LSTM, layer at the end of the DNN (Figure 1, Figure 1—figure supplement 1). The LSTM layer allows coherent predictions throughout the trace and forward propagation of information detected in the first frames, such as fluorophore detection or bleaching, to the predictions for later frames. By collapsing the per-trace confusion matrix into a binary ‘smFRET’ and ‘non-smFRET’ (as shown by the cross-lines in Figure 3b), DeepFRET was found to be very balanced overall, with a true-positive rate of 94% for smFRET traces, and a true-negative rate of non-smFRET traces (Figure 3c), resulting in an overall balanced classification accuracy of 94% for the ALEX-enabled model and 93% for the ALEX-disabled model.
 
 We then compared the classification accuracy of DeepFRET to the accuracy of three different human operators working with smFRET to evaluate the feasibility of manually inspecting and making decisions about smFRET examples. We simulated 1000 ground truth traces, of which only 46 contained actual smFRET, at different, randomly chosen levels of noise. The participants were neither informed about the underlying distribution nor the true number of smFRET traces. The test revealed that the average performance of the human operators, scoring 0.76 ± 0.10 in precision and 0.83 ± 0.14 in recall, was close to the precision-recall curve of the DNN, on a relatively small dataset (Figure 3, Figure 3—figure supplement 1). Notably, one participant scored slightly better than the model in both precision and recall but spent an average of 5 s per trace, which would significantly increase data treatment time, thus making this unfeasible in a high-throughput setting. The large spread on precision and recall attained by human operators on these data furthermore suggest a large possible spread in experimental outcomes and highlights the advantages of unifying, reproducible methodologies independent of human interventions. We, therefore, argue that DeepFRET is equally good, or better, as careful manual inspection while offering orders of magnitude faster data evaluation.
 
-## DeepFRET performance on real data compared to the existing robust software for smFRET analysis
+### DeepFRET performance on real data compared to the existing robust software for smFRET analysis
 
 The model’s generalizability was initially examined by evaluation on real experimental smFRET data previously published by us (Stella et al., 2018). The selected published dataset contains thousands of traces that included aggregates and incomplete labeled molecules, due to low labeling efficiency. Our pre-screening (using median stoichiometry and intensity distributions) and subsequent manual inspection of the data resulted in 214 traces to exhibit smFRET. Applying our trained model with a threshold of 0.85, without any other parameter tuning, recovered 228 traces, with a FRET distribution very closely matching manual selection (Figure 4, Figure 4—figure supplement 1). The DeepFRET score of human versus machine selection displays the importance of quantitative and reproducible assessment of trace scores (Figure 4, Figure 4—figure supplement 2). The total data evaluation time of <50 ms per trace (on a recent laptop) free of human intervention highlights the potential of DeepFRET to rapidly and reliably evaluate high throughput smFRET data. Most importantly, the trace selection is deterministic, strictly relies on the score threshold, and is thus independent of potential human cognitive bias. This demonstrates the ability of the DNN to generalize to a completely new set of experimental data, without any prior expectations for signal-to-noise ratio, anti-correlation, underlying FRET distribution, etc., offering the possibility to rapidly analyze smFRET data for structural biology insights.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig4-v1.jpg)
+
+**Figure 4.:** (a) Raw FRET distribution as it would look before any sorting to remove incomplete or multi-labeled proteins, aggregates, cross talk, etc. (b, c) Comparison of DeepFRET data selection with published distributions for 0.7 in (b) and 0.85 in (c) thresholds. At the DeepFRET score threshold of 0.85, a high-fidelity data selection is achieved resulting in a similar distribution as compared to manual selection.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** We applied DeepFRET to a previously obtained smFRET dataset on CRISPR-Cas12a. At the DeepFRET threshold of ~0.8–0.85 an excellent agreement with previously used sorting methodologies involving manual inspection of data was achieved.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) The predicted confidence score of every trace in experimentally recorded dataset (b) Confidence score distribution of manual versus automatic selection of smFRET traces. Automatic selection exclusively accepts high-confidence traces. (c) Pearson’s test displaying no correlation (r = −0.12) between predicted trace confidence and mean FRET in the manually selected dataset.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) 200 simulated, ground truth smFRET traces (left) were merged with 1800 simulated, non-smFRET traces (middle) to yield a combined distribution of 2000 traces (right). (b) Performance of DeepFRET, SPARTAN, iSMS, HAMMY, and ebFRET on the simulated data employing various sorting criteria. In SPARTAN, six commonly used thresholds were employed on parameters including donor/acceptor correlation, SNR, intensity, FRET lifetime, exclusion of photoblinking, and step-wise drops in fluorescence intensity. In iSMS, aggregates were removed by intensity thresholds with subsequent sorting based on stoichiometries of ~0.4–0.6 and removal of FRET outliers. In HAMMY, sorting was based on intensity thresholds, while in ebFRET, sorting was based on the removal of FRET outliers (0 < E < 1). Data is displayed without applying correction factors. Note that, expert users can navigate through all thresholds and define their own to further, and even more accurately, optimize data selection of both SPARTAN and iSMS, while HAMMY and ebFRET may require additional manual selection or sorting via other software packages. DeepFRET only required a single quality threshold of 0.8.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/60404/elife-60404-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** DeepFRET, SPARTAN, and iSMS performance on (a) non-ALEX data published by Kilic et al., 2018 and (b) ALEX data published by Hellenkamp et al., 2018. In both cases, all software packages were found to reproduce the published FRET distributions from raw tif files with a little discrepancy. The raw movies resulted in 294 and 719 traces, respectively, before sorting. Data selection relied on removing aggregates and using stoichiometries of ~0.4–0.6 for iSMS and the commonly used thresholds for SPARTAN including thresholds on donor/acceptor correlation, SNR, intensity, FRET lifetime, exclusion of photoblinking step-wise drops in fluorescence intensity, and using 10 first frames minimizing bleaching effect. Note that expert users can navigate through all thresholds and define their own to further, and even more accurately, optimize data selection of iSMS and SPARTAN. In DeepFRET, a single quality score was used to sort traces. Data selection resulted in removal of ~40–60% of the traces in all cases, and are displayed without applying correction factors.
 
 To further evaluate the performance of DeepFRET we compared it to the existing, robust, and widely used software packages for classification and treatment of smFRET data, iSMS, and SPARTAN (Juette et al., 2016; Preus et al., 2015), as well as ebFRET and HAMMY that focus on the kinetic analysis (McKinney et al., 2006; van de Meent et al., 2014). The performance was initially tested on simulated, ground truth data and further evaluated on published and publicly available experimental data (Kilic et al., 2018; Hellenkamp et al., 2018). For the simulated data, 200 ground truth smFRET traces were merged with 1800 simulated, non-smFRET traces and sorted by the various software packages. SPARTAN and iSMS both have sophisticated tools for automated sorting of traces (intensity, stoichiometry, and FRET thresholds in iSMS, and 26 parameter thresholds in SPARTAN including donor/acceptor correlation, SNR, intensity, FRET lifetime, and exclusion of photoblinking), while ebFRET and HAMMY relies on simple thresholds on the intensity and FRET. Here, practically the commonly used thresholds were employed in all software packages. DeepFRET was found to sort traces at least similarly to, or better than, both SPARTAN and iSMS without any parameter tuning, closely matching the underlying ground truth distribution, while ebFRET and HAMMY would require further sorting by manual selection or additional software packages for optimal results (see Figure 4—figure supplement 3). We then compared the performance of the three software packages offering advanced sorting on experimental data from other groups (Kilic et al., 2018; Hellenkamp et al., 2018). To ensure proper testing, the performance was evaluated on both ALEX and non-ALEX data. Our data show that all software packages were able to reproduce published FRET distributions from raw tif files with a little discrepancy (see Figure 4—figure supplement 4). We used practically the default settings in both software. We note that expert users are well trained to navigate through all thresholds and define their own to further, and even more accurately, optimize data selection. This task however may become more challenging on data where the ground truth distribution is unknown and fine-tuning parameters could be subject to bias, especially for non-specialized users. The use of a single threshold and thus minimal required expertise, offered by DeepFRET may be crucial for a greater number of scientists to take advantage of this tool.
 
@@ -89,13 +181,39 @@ DeepFRET’s neural network is trained to operate for smFRET data but our approa
 
 We first define a nomenclature that will be used throughout the text and plots: DD, DA, AA (donor excitation→donor emission, donor excitation→acceptor emission, acceptor excitation→acceptor emission, respectively). A separate background signal is not considered, as we assume all model inputs to be background-corrected (i.e. background is 0).
 
-## Synthetic smFRET data generation
+### Synthetic smFRET data generation
 
 Deep learning requires large amounts of diverse data in order to generalize well to unseen data. We have developed a method to generate the required thousands of ground truth traces to cover every type of empirically observed trace, with a dedicated user interface option (Figure 1—figure supplements 2 and 6). This algorithm includes the generation of TIRF-microscopy smFRET traces of ALEX or non-ALEX data. The traces sample any given FRET value with tunable dye photobleaching lifetime, signal noise, dye blinking, donor bleedthrough, aggregates (i.e. more than one donor/acceptor fluorophore) of any given size, as well as a ‘scrambling’ feature, to account for fluorophore phenomena that could not be classified as stemming from smFRET.
 
-In order to generate traces, for each pair, we first generate the underlying FRET states from an adjustable Hidden Markov model and assume unscaled unit-intensities for DD, DA, AA. Then, if the energy transferred is defined by(1)FRET=DA / (DD+DA)the remaining intensity of the donor is(2)DD=1−FRETand from (1), the transferred intensity is(3)DA=−(DD ∗ FRET) / (FRET−1)
+In order to generate traces, for each pair, we first generate the underlying FRET states from an adjustable Hidden Markov model and assume unscaled unit-intensities for DD, DA, AA. Then, if the energy transferred is defined by
 
-In a perfectly-aligned setup, one can expect that(4)DD + DA=AAsuch that the stoichiometry S will be exactly(5)S=(DD+DA) / (DD+DA+AA)=0.5
+$$
+FRET=DA / (DD+DA)
+$$
+
+the remaining intensity of the donor is
+
+$$
+DD=1−FRET
+$$
+
+and from (1), the transferred intensity is
+
+$$
+DA=−(DD ^{∗} FRET) / (FRET−1)
+$$
+
+In a perfectly-aligned setup, one can expect that
+
+$$
+DD + DA=AA
+$$
+
+such that the stoichiometry S will be exactly
+
+$$
+S=(DD+DA) / (DD+DA+AA)=0.5
+$$
 
 Initially, all fluorophores are simulated with an intensity of 1 (with absolute scaling only adjusted after applying all other parameters). Additionally, the intensity of AA should always be 1, regardless of the current FRET state. In practice, the AA intensity may not be exactly half of DD+DA (and consequently one might observe S that deviates slightly from 0.5). To account for this, we uniformly sample ‘AA-mismatch’ as a percentage of the unit intensity signal. Upon fluorophore photobleaching, with lifetimes sampled from an exponential distribution, either DD or DA/AA is set to 0. Noise, AA-mismatch, and donor bleedthrough are added to the ground truth signals to obtain the observable DD, DA, and AA, we can calculate realistic, observable values for E and S. For each synthetic trace, the noise is drawn from a Normal (μ = 0, σ) distribution of varying σ. We found that, on top of the normally distributed noise, we could add the noise from a (centered) Gamma(k = 1, θ = 1.1) distribution multiplied with the noise amplitude at each frame (and is thus controlled via the noise parameter). This did not visually alter the spread of the distribution significantly but improved the robustness of predictions on real data, as we found empirically that the noise of experimental data never exactly followed a pure normal distribution.
 
@@ -109,7 +227,7 @@ With these parameters, directly applicable as input for the algorithm (see Code 
 
 We supplied only the raw features DD, DA, and AA to the model (or only DD and DA for the non-ALEX-enabled model), where for each trace, signals were normalized to the max of all signals in that trace to preserve the relative intensities between donor and acceptor. In this way, predictions done on individual smFRET traces are fully independent from every other in a given experiment, and also independent of non-standardized instrument intensity units (i.e. ‘arbitrary units’).
 
-## Neural network model setup and hyperparameters
+### Neural network model setup and hyperparameters
 
 An LSTM-RNN (long short-term memory recurrent neural network) classifier was implemented in Keras with TensorFlow as backend. The structure of the network (Figure 1—figure supplement 1) was inspired by a recent sequence classifier for ECG time-series (Hannun et al., 2019) that employs both skip connections and batch normalization as means to prevent overfitting. Here we replaced the global pooling layer with stride-1 max pooling layers, and added a bidirectional LSTM layer before the final fully connected layer, which we found lead to more temporally causal and context-sensitive predictions (e.g. if the model spots multiple bleaching steps in the beginning of a trace, this information is propagated throughout, so the whole trace can be confidently marked as aggregated).
 
@@ -117,33 +235,49 @@ Each residual block (‘Res’ in Figure 1—figure supplement 1) contains n = 2
 
 The model loss was minimized in batches of 32 samples with the Adam optimizer, using the default parameters and the default learning rate of 0.001. The learning rate was decreased by a factor of 10 if validation loss showed no improvement over two consecutive epochs. The training was stopped early if no improvement in the validation loss was observed over five consecutive epochs. Convolutional kernels were initialized as proposed by He et al., 2015. Other layer configurations were left at their Keras defaults. The final model output is passed through a softmax layer, thus that for each frame the probabilities between all classes sum up to exactly 1. Further experimentation with optimizers and learning rates showed no significant improvement over the above configuration.
 
-## Bleaching detection
+#### Bleaching detection
 
 In order to avoid having single-frame bleaching triggering the remainder of the trace being marked as bleached, we employ a sliding window over the whole trace. In each window, at least 4 out of 7 frames must be marked as bleached with >0.5 probability by the model. If this condition is satisfied, all frames in the window and every frame onwards is marked as bleached, and excluded from the calculation of smFRET confidence. The model predicts with >99% accuracy bleaching (Figure 3). Additionally, if bleaching happens faster than the first 15 frames, the whole trace is classified as bleached, regardless of model classification, as the DeepFRET score would otherwise end up being artificially inflated (see below).
 
 For stoichiometry-based thresholding (Figure 2), we employed a similar sliding window but instead marked frames as bleached if the stoichiometry was outside of the range (0.3, 0.7).
 
-## Precision and recall
+#### Precision and recall
 
-We use precision and recall to quantify classifier performance. These are defined as,(6)Precision:P=Tp / (Tp+Fp)(7)Recall: R=Tp / (Fn+Tp)where Tp, Fp, Fn are True positive, False positive, and False negative, respectively.
+We use precision and recall to quantify classifier performance. These are defined as,
 
-## DeepFRET score calculation and trace classification
+$$
+Precision:P=Tp / (Tp+Fp)
+$$
 
-In order to calculate the confidence score, probabilities for all categories for each frame are first predicted by the model, and bleached frames (see above) excluded from the score calculation. The average probability pi over all frames t, for each of the remaining five categories is calculated, resulting in five category scores Pi for each category i.Pi=∑tpit∑∑tpitPi=∑tpit∑∑tpit
+
+
+$$
+Recall: R=Tp / (Fn+Tp)
+$$
+
+where Tp, Fp, Fn are True positive, False positive, and False negative, respectively.
+
+#### DeepFRET score calculation and trace classification
+
+In order to calculate the confidence score, probabilities for all categories for each frame are first predicted by the model, and bleached frames (see above) excluded from the score calculation. The average probability pi over all frames t, for each of the remaining five categories is calculated, resulting in five category scores Pi for each category i.
+
+$$
+P_{i}=\frac{\sumtp_{i_{t}}}{\sum\sumtp_{i_{t}}}P_{i}=\frac{\sumtp_{i_{t}}}{\sum\sumtp_{i_{t}}}
+$$
 
 Static smFRET (S), dynamic smFRET (D) scores are summed into the final DeepFRET score, and aggregate (A), noisy (N), and scrambled (X) scores ignored for calculation of this (but retained and displayed for explainability for the user). See Figure 1—figure supplements 5–8 for examples on all trace types.
 
-## Model performance evaluation
+### Model performance evaluation
 
-## Noise level of synthetic data
+#### Noise level of synthetic data
 
 We changed the label of traces to ‘noisy’ if the initial noise was drawn from a normal(μ = 0, σ) with σ above 0.25. Traces above this level of noise could no longer statistically be approximated as normally distributed by D’Agostino-Pearson two-sided test for normality (Figure 1—figure supplement 4; which is a requirement for fitting the correct number of FRET states in a trace, using a mixture model). Although a σ of 0.20 also fulfilled the p<0.05 test statistic, we chose to opt for a limit of 0.25, as we found that the neural network would otherwise tend to discard less noisy data too frequently.
 
-## Trends in human versus machine selection
+#### Trends in human versus machine selection
 
 To test for differences in the way a human versus our trained model would select traces, three participants partook in the manual selection of generated data (Figure 3—figure supplement 1), similar to that of Figure 2, only this time with 1000 traces, wherein 46 were true smFRET traces and 954 non-usable traces. The number of true smFRET traces and underlying distributions were unknown to the participants.
 
-## Performance test and comparison with existing software
+#### Performance test and comparison with existing software
 
 For testing simple thresholding versus DeepFRET (Figure 2, Figure 2—figure supplements 1–2 and Figure 4—figure supplement 4) we generated data with the following parameters:
 
@@ -151,18 +285,18 @@ Other parameters were set to the same value as what is used to generate training
 
 Our definition of ‘simple thresholding’ is based on single-molecule intensity, median stoichiometry, and the presence of bleaching. Here we chose not to use any values for anti-correlation as this assumes that all molecules of interest are equally dynamic, when smFRET studies have shown that this may not always be the case (He et al., 2019; Kilic et al., 2018; Osuka et al., 2018).
 
-## Extra features of the software platform
+### Extra features of the software platform
 
-## Hidden Markov model and statistical analysis
+#### Hidden Markov model and statistical analysis
 
 The DeepFRET GUI has the option to fit traces with a Hidden Markov model, with adjustable strictness on the number of states, according to recent best practices for smFRET data analysis, including the ability to switch between predicting states from raw fluorescence intensities or EFRET values (Kelly et al., 2012). We fit the traces using the pomegranate implementation of the Baum-Welch algorithm (Schreiber, 2018). We further provide the option to predict state values directly from the Markov Model or from the median of the classified frames for each trace, to maintain compatibility and comparability with current results in the field. We provide clustering of subsequent transition density plots, lifetime estimates with detection of degenerate states, and publication-ready plots for Pearson's correlation coefficients, DD/DA histograms, and EFRET-stoichiometry histograms.
 
 The Hidden Markov model was verified on externally available data from the kinSoft challenge, as well as simulated data produced within DeepFRET.
 
-## Data availability
+### Data availability
 
 All data used for model training and instructions on how to use it, is available at https://github.com/hatzakislab/DeepFRET-Model (Thomsen, 2020; copy archived at https://github.com/elifesciences-publications/DeepFRET-Model).
 
-## Code availability
+### Code availability
 
 We provide DeepFRET as an accessible GUI for everyone, as well as the Python source code for expert users. The code for the GUI as well as compiled executables, with instructions for how to edit and recompile the GUI is located at https://github.com/hatzakislab/DeepFRET-GUI.

@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.37184.001 Alternative splicing of mRNA precursors represents a key gene expression regulatory step and permits the generation of distinct protein products with diverse functions. In a genome-scale expression screen for inducers of the epithelial-to-mesenchymal transition (EMT), we found a striking enrichment of RNA-binding proteins. We validated that QKI and RBFOX1 were necessary and sufficient to induce an intermediate mesenchymal cell state and increased tumorigenicity. Using RNA-seq and eCLIP analysis, we found that QKI and RBFOX1 coordinately regulated the splicing and function of the actin-binding protein FLNB, which plays a causal role in the regulation of EMT. Specifically, the skipping of FLNB exon 30 induced EMT by releasing the FOXC1 transcription factor. Moreover, skipping of FLNB exon 30 is strongly associated with EMT gene signatures in basal-like breast cancer patient samples. These observations identify a specific dysregulation of splicing, which regulates tumor cell plasticity and is frequently observed in human cancer.
+Alternative splicing of mRNA precursors represents a key gene expression regulatory step and permits the generation of distinct protein products with diverse functions. In a genome-scale expression screen for inducers of the epithelial-to-mesenchymal transition (EMT), we found a striking enrichment of RNA-binding proteins. We validated that QKI and RBFOX1 were necessary and sufficient to induce an intermediate mesenchymal cell state and increased tumorigenicity. Using RNA-seq and eCLIP analysis, we found that QKI and RBFOX1 coordinately regulated the splicing and function of the actin-binding protein FLNB, which plays a causal role in the regulation of EMT. Specifically, the skipping of FLNB exon 30 induced EMT by releasing the FOXC1 transcription factor. Moreover, skipping of FLNB exon 30 is strongly associated with EMT gene signatures in basal-like breast cancer patient samples. These observations identify a specific dysregulation of splicing, which regulates tumor cell plasticity and is frequently observed in human cancer.
 
 ## Introduction
 
@@ -53,11 +53,23 @@ Alternative splicing has been previously associated with EMT. Mesenchymal cancer
 
 ## Results
 
-## A genome scale ORF screen to identify regulators of the mesenchymal cell state
+### A genome scale ORF screen to identify regulators of the mesenchymal cell state
 
 In prior work, we described a genetically defined, experimental model of breast cancer, derived from introducing vectors expressing the telomerase catalytic subunit, the SV40 large-T and small-t antigens, and an H-Ras oncoprotein into human mammary epithelial cells (HMLER cells) (Elenbaas et al., 2001). Subsequent work demonstrated that the CD44 cell surface antigen is a surrogate marker for the EMT cell state change in this model (Chaffer et al., 2011; Chaffer et al., 2013). Thus, we separated the CD44-high and -low populations of HMLER cells by fluorescence-activated cell sorting (FACS) and confirmed that the CD44-low cells displayed epithelial properties, as measured by levels of EMT marker expression (Figure 1—figure supplement 1A). The highly purified CD44-low cell population remained in the epithelial cell state for at least 4 weeks in the experimental conditions. In contrast, the CD44-high HMLER cells showed elevated expression of mesenchymal markers and a greater propensity to form mammospheres, an in vitro surrogate assay for the stemness of mammary epithelial cells (Figure 1—figure supplement 1B,C).
 
 To study inducers of the EMT and stem-like cell state, we performed a genome scale open-reading frame (ORF) screen to identify genes that convert the HMLER cells from the CD44-low state to the CD44-high state. Each ORF in the human ORFeome library collection 8.1 (Yang et al., 2011) was tagged with a unique 24-nucleotide barcode and introduced into FACS purified CD44-low HMLER cells by lentiviral-mediated gene transfer. Following 7 days in culture, we purified the newly arising CD44-high HMLER cells by FACS and identified ORFs enriched in these cells by massively parallel sequencing (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the genome scale ORF screen used to identify regulators of EMT. (B) Distribution of enrichment Z scores. The red dots indicate the ORFs with a Z score >3 and the top 15 gene names are labeled (Figure 1—source data 1). (C) The top candidate ORFs in the screen categorized into seven different functional classes. (D) Network analysis of enriched protein complexes among the top candidates ORFs. (E) GO term enrichment analysis of the top candidate ORFs. (F) Enrichment for RNA metabolic processes among the top candidate ORFs, as determined by pre-ranked GSEA analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HMLER cells were stained with CD44-PE-CY7 antibody. CD44 high and low cell populations were sorted by flow cytometry. The gating for CD44 high and low cells is shown. (B) qPCR analysis of the expression of mesenchymal (ZEB1, FN1 and VIM) and epithelial (CDH1) markers in CD44 high and low HMLER cells. n = 4. *, p<0.05, **, p<0.01. Student’s two-tailed t test. (C) Left: Quantification of mammosphere numbers derived from 1000 HMLER CD44 high or low cells plated in ultra-low attachment plates. n = 3. *, p<0.05. Student’s two-tailed t test. Right: Representative images of the CD44 high and CD44 low cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The reproducibility of the two replicates in the screen. Shown are the comparison of the Log scores of the unsorted cell population (left) or the CD44 high cell population (right) between the two replicates. (B) The Z scores of all the ORFs tested in the screen. The ORFs were sorted from high to low based on their Z score value. The red dots indicate the 68 genes with a Z score greater than 3 (related to Figure 1B).
 
 We found that the consistency between the biological replicates of the screen was high (Figure 1—figure supplement 2A). SNAI1, a well-characterized EMT-inducing transcription factor (EMT-TF) (Nieto et al., 2016), scored as the top hit in the screen, as did BCL6, JMJD6 and FOS, which have previously been shown to play key roles in regulating EMT (Aprelikova et al., 2016; Eger et al., 2000; Yu et al., 2015) (Figure 1B, Figure 1—figure supplement 2B and Figure 1—source data 1); these findings indicated that this screen was robust. We used a cut-off of three standard deviations (S.D.) above the mean and analyzed the top-scoring candidates to identify protein complexes or pathways enriched for regulators of EMT. Sixty-eight ORFs met this criterion (Figure 1B and Figure 1—figure supplement 2B), including transcription factors, RNA splicing factors, kinases and phosphatases, epigenetic regulators, and genes involved in the regulation of spermatogenesis, apoptosis and the metabolic processing of cellular amides (Figure 1C). Other EMT transcription factors did not meet the 3 S.D. cutoff possibly due to mutations in the ORF constructs or low ORF representation in the library.
 
@@ -65,9 +77,29 @@ Using the GeNets analysis tool (apps.broadinstitute.org/genets), we found three 
 
 Several RNA-binding proteins have been previously associated with EMT. For example, ESRP1 and 2 promote an epithelial phenotype, while QKI and RBFOX2 (a homolog of RBFOX1 that scored in the screen) regulate a number of EMT-associated splicing events (Braeutigam et al., 2014; Venables et al., 2013; Yang et al., 2016). Of note, although RBFOX2 has been shown to play a role in EMT (Braeutigam et al., 2014; Venables et al., 2013), the RBFOX2 clone present in the ORFeome collection 8.1 library harbors three mutations (a 396–449 deletion, a 752–763 deletion and a C to T substitution at 1007), which likely explained why this ORF did not score in the screen. However, whether the expression of any RBPs is functionally sufficient or required to induce a mesenchymal cell state remains unclear. Since we found a striking enrichment of RBPs in this screen, we focused on the top candidates implicated in pre-mRNA splicing to understand their possible role in regulating the EMT and stem-like cell states in breast cancer pathogenesis.
 
-## Expression of QKI and RBFOX1 are necessary and sufficient to induce an intermediate mesenchymal cell state
+### Expression of QKI and RBFOX1 are necessary and sufficient to induce an intermediate mesenchymal cell state
 
 In the ORF expression screen, we identified eight candidate RBPs (QKI, RBFOX1, MBNL1, MBNL2, CELF4, SFPQ, SRSF9 and HNRNPUL1) that scored when tested individually. We systematically tested these genes in five assays to examine EMT-associated phenotypes or marker expression to find the RBPs that meet the following criteria: (1) Expression of the RBP promotes an increase in the CD44-high population (Figure 2—figure supplement 1A); (2) Expression of the RBP upregulates the expression of a panel of mesenchymal markers examined by both quantitative PCR (Figure 2A and Figure 2—figure supplement 1B) and immunoblotting (Figure 2B); (3) Expression of the RBP induces mammosphere formation when cells are grown in suspension, a characteristic of the stem-like and mesenchymal cell properties (Figure 2C and Figure 2—figure supplement 1C) (Chaffer et al., 2013; Mani et al., 2008); (4) Endogenous expression of the RBP is upregulated upon overexpression of an EMT-inducing transcription factor, SNAI1 or ZEB1 (Figure 2—figure supplement 2A–D); (5) Expression of the RBP promotes tumor formation in vivo, a feature associated with stem-like cells (Figure 2D andFigure 2—figure supplement 2; Figure 2—figure supplement 2E) (Chaffer et al., 2013; Mani et al., 2008). Together, we discovered that the expression of QKI (NCBI Reference: NM_006775.2, also known as QKI-5) and RBFOX1 (NCBI Reference: NM_145893.2, also known as RBFOX1 beta) strongly induced the mesenchymal and stem-like phenotypes in all the experiments tested, while MBNL1, MBNL2 and CELF4 scored in some assays. We also found that SRSF9, SFPQ and HNRNPUL1 are unlikely to initiate a mesenchymal and stem-like cell state (Figure 2J). The CD44-high cells induced by QKI, RBFOX1 or SNAI1 shared a similar elongated and spindle shape cell morphology (Figure 2—figure supplement 3A). In addition, QKI and RBFOX1 overexpression also significantly increased the CD44-high cell populations in two additional breast cancer cell lines (MCF7 and ZR75-1) (Figure 2—figure supplement 3B). We thus proceeded to focus on the role of QKI and RBFOX1 in EMT.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap showing the expression of mesenchymal (FN1, VIM, ZEB1) and epithelial (CDH1, KRT14) markers in HME cells expressing the indicated candidate ORFs, normalized to a negative control (EGFP) and quantified by qPCR. n = 3. Bar graphs and statistical significance for each gene are shown in Figure 2—figure supplement 1B. (B) Levels of EMT marker expression in HME cells expressing the indicated candidate ORFs quantified by immunoblotting. (C) The rate of mammosphere formation in HMLE cells that express the indicated ORFs. The number of mammosphere per 1000 cells plated was counted. n = 5, ***, p<0.001; **, p<0.01; *, p<0.05. Representative images are shown in Figure 2—figure supplement 1C. (D) In vivo tumor formation assay. HMLER cells expressing the corresponding ORFs were injected subcutaneously into immuno-compromised mice and tumor growth was monitored for 15 weeks. Shown are an image of tumor sizes (left) and quantification of tumor weights (right) (individual tumor growth curves are shown in Figure 2—figure supplement 1E). n = 9, **, p<0.01; *, p<0.05, Student’s two-tailed t-test. (E) The percentage of CD44-high cells when SNAI1 is overexpressed along with shRNAs targeting candidate RNA-binding proteins or LacZ as a negative control. The red bar indicates a positive control shRNA against SNAI1 and the orange bars indicate shRNAs targeting QKI and RBFOX1. The knockdown efficiency is shown in Figure 2—figure supplement 3D. n = 4, ***, p<0.001; **, p<0.01; *, p<0.05, Student’s two-tailed t-test. (F–I) The effect of CRISPR/Cas9-targeting of endogenous QKI or RBFOX1 in HMLE cells ectopically expressing SNAI1 on: (F) the percentage of CD44-high cells, (G) EMT marker expression (VIM: mesenchymal marker, CDH1: epithelial marker) quantified by qPCR, (H) EMT marker expression quantified by immunoblotting and (I) mammosphere formation. Also shown is the efficiency of gene knockout as quantified by immunoblotting. (B) n = 4, (C) n = 4, (E) n = 3, ***, p<0.001; **, p<0.01; *, p<0.05, Student’s two-tailed t-test. (J) Summary of effects of ORFs on EMT markers and phenotypes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Validation of individual candidate ORFs by CD44 status. (Upper) Immunoblot analysis of ORF expression. The ORFs were tagged with a V5 epitope in the lentiviral expression vector (the TGFBR2 ORF contains a termination codon before the V5 tag). The expression of the indicated ORFs were analyzed using a V5 antibody. (Lower left) Flow cytometry plots of CD44 staining. The y-axis shows CD44 staining while the x-axis shows side scatter (SSC). (Lower right) Quantification of the percentage of CD44 high cells. n = 3, *, p<0.05, Student’s two-tailed t-test. (B) Change in the expression of mesenchymal (FN1, VIM, ZEB1) and epithelial (CDH1, KRT14) markers in HME cells expressing splicing factors normalized to a negative control (EGFP). Cells expressing SNAI1 served as a positive control. Fold-changes in gene expression were quantified by qPCR in cells that expressed the corresponding ORFs (data corresponds to heatmap in Figure 2A). n = 3. *, p<0.05; **, p<0.01, student’s two-tailed t-test. (C) Representative images of the mammospheres in HMLE cells that express the indicated ORFs as quantified in Figure 2C.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Change in endogenous mRNA expression level of RBPs in HME cells undergoing an EMT by ectopic expression of SNAI1 (A) or ZEB1 (B), as quantified by qPCR and relative to control HME cells expressing hcRED. n = 5, **, p<0.01; *, p<0.05, Student’s two-tailed t-test. (C) Levels of RBPs in HME cells expressing hcRED or SNAI1, quantified by immunoblotting. (D) HMLER cells were sorted as CD44 high or CD44 low cells as shown in Figure 1—figure supplement 1A. The expression of candidate RNA-binding proteins (QKI and RBFOX1), a mesenchymal marker (Fibronectin) and an epithelial marker (E-cadherin) were analyzed by immunoblotting. (E) Tumor growth curve over the course of 15 weeks. The tumor volumes are summarized in Figure 2D.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cell morphologies of the CD44-high cells induced by QKI, RBFOX1 and SNAI1. (Upper) HMLER cells expressing QKI, RBFOX1 or SNAI1 were subjected to cell sorting for CD44 high populations by FACS. (Lower) CD44-high cells induced by QKI, RBFOX1 or SNAI1 were stained for actin structures by Phalloidin. Representative pictures were shown for each cell lines. (B) Levels of CD44 as measured by flow cytometry in multiple cell lines including MCF7 and ZR75-1 with ectopic expression of EGFP, RBFOX1 or QKI. (C) The impact of QKI and RBFOX1 overexpression in cell proliferation. 10,000 HME cells expressing EGFP, QKI, RBFOX1 and SNAI1 were plated in six-well plates and cell numbers were counted after 6 days of propagation. (Left) Relative cell number quantification. (Right) Immunoblot showing the expression of the indicated V5-tagged ORFs. n = 5; *p<0.05; **p<0.01, student’s t test. (D) The efficiency of shRNA-mediated gene suppression as quantified by qPCR for the remaining amount of the corresponding mRNAs (related to Figure 2E).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The gene expression levels of QKI, RBFOX1, other RBPs, and mesenchymal markers in TCGA breast invasive carcinoma (BRCA) patient samples. Tumors were defined as epithelial or mesenchymal based on a published gene expression signature generated in breast cancer cell lines (Charafe-Jauffret et al., 2006; Ciriello et al., 2015). Epithelial samples, n = 242; mesenchymal samples, n = 242. **** p<1e-4, student two-tailed t-test. (B) Scheme of the generation of HER2-positive murine mammary tumors, as reported previously (Goel et al., 2016). TetO-HER2 (tetracycline-operator-HER2) transgenic founders were bred with MMTV-rtTA mice (reverse tetracycline-controlled transactivator under control of the mouse mammary tumor virus promoter), producing MMTV-rtTA/tetO-HER2 bitransgenic mice. Sustained HER2 expression leads to induction of mammary carcinoma. Subsequent withdrawal of HER2 expression leads to tumor regression followed by tumor recurrence in approximately two-thirds of mice. The recurrent tumors showed substantial upregulation of mesenchymal markers and downregulation of epithelial markers in 10 out of 11 recurrent tumors subjected to RNA-sequencing analysis. In the previous report, immunoblotting and histology staining also confirmed that an EMT occurs under these conditions (Goel et al., 2016). (C) Heatmap showing the expression of splicing factors (Qk and Rbfox1), mesenchymal-associated markers (Zeb1, Snai1, Vim, Fn1 and Cd44) and epithelial-associated markers (Cdh1, Epcam and Cd24a) in murine mammary tumor samples. The p value and False Discovery Rate (FDR) are also shown. (D) Identification of genes that were differentially expressed between primary tumors and the recurrent tumors depicted in (B) by comparative marker selection analysis, a module in GenePattern. The differentially expressed genes were ranked from left to right. EMT markers and RBPs are shown.
 
 Of note, overexpression of QKI and RBFOX1 reduced cell proliferation by 40% to 45% as would be expected if the cells undergo an EMT (Figure 2—figure supplement 3C) (Tsai et al., 2012; Vega et al., 2004). In addition, the expression of QKI, RBFOX1 and other RBPs failed to decrease the expression of epithelial markers (Figure 2A,B and Figure 2—figure supplement 1B), suggesting that the cell state triggered by expression of the RBPs involves elevated expression of mesenchymal markers with retention of pre-existing epithelial marker expression. This spectrum of marker expression is reminiscent of an intermediate EMT state that is implicated in development and tumor progression (Bierie et al., 2017; George et al., 2017; Nieto et al., 2016; Schmidt et al., 2015).
 
@@ -77,29 +109,61 @@ We next examined whether the expression of QKI and RBFOX1 also correlated with m
 
 Collectively, although QKI has been previously associated with AS changes occurring during EMT, our observations demonstrate that overexpression of QKI or RBFOX1 suffices to promote an intermediate mesenchymal and stem-like cell state and are also necessary for the SNAI1-induced EMT. Further, the expression of endogenous QKI and RBFOX1 were also induced by EMT-TFs such as SNAI1 or ZEB1 (Figure 2J). These results extend prior observations implicating these RNA binding proteins in EMT and confirm that our screen identified key regulators of EMT.
 
-## Characterizing alternatively spliced transcripts that are regulated by QKI and RBFOX1
+### Characterizing alternatively spliced transcripts that are regulated by QKI and RBFOX1
 
 Although QKI and RBFOX2 (a homolog of RBFOX1) have been shown to regulate AS events during EMT (Braeutigam et al., 2014; Venables et al., 2013; Yang et al., 2016), it remains unclear whether QKI and RBFOX1 alter splicing of genes directly involved in EMT or if the expression of these RNA binding proteins merely correlate with the mesenchymal cell state. To dissect the mechanism by which QKI and RBFOX1 induce the intermediate mesenchymal and stem-like cell states, we overexpressed each of these or a control protein (hcRED or EGFP) in HME cells and used RNA-sequencing to assess changes in transcriptional programs. We subsequently used replicate multivariate analysis of transcript splicing (rMATS) to individually quantify and analyze differences in AS events in HME cells expressing either the hcRED or EGFP control proteins versus QKI, RBFOX1 or SNAI1 (Shen et al., 2014). Indeed, HME cells that expressed QKI or RBFOX1 exhibited a > 5 fold increase in the number of alternatively spliced events compared to control cells that expressed hcRED (Figure 3—figure supplement 1A and Figure 3—source datas 1 and 2). Among all detected types of splicing events, the majority of splicing changes after overexpression of QKI or RBFOX1 occurred in skipped exons (Figure 3A). We next used pre-ranked GSEA to analyze the pathways that are regulated by QKI or RBFOX1 and found that their downstream splicing targets were enriched in gene modules involved in cell motility/cytoskeleton organization, stem cell fate determination, oncogenic signaling and epigenetic targets (Figure 3—figure supplement 1B,C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig3-v2.jpg)
+
+**Figure 3.:** (A) Quantification of the different types of alternative splicing events regulated by QKI or RBFOX1 overexpression as determined using rMATS. Exclusion or inclusion are relative to control cells overexpressing EGFP. (B) RT-PCR validation of individual splicing events regulated by QKI or RBFOX1. The cDNA from cells expressing the indicated ORFs were subjected to PCR amplification using primers flanking the alternative exon. The ratios of the intensity of the upper (inclusion) and lower (exclusion) PCR product bands were quantified and the relative intensity of the upper band is indicated. Below are shown RNA-sequencing based quantification of the % inclusion of the alternative exon. n = 3 (EGFP, HcRed and RBFOX1) or n = 2 (QKI and SNAI1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Volcano plots of the change in ‘Percentage Spliced In’, or ∆PSI (x-axis), versus the –log10(p value) (y-axis) for alternatively skipped exons in HME cells expressing hcRED, QKI, RBFOX1 or SNAI1, in comparison to cells expressing EGFP. (B, C) Genes with alternatively skipped exons regulated by QKI (B) or RBFOX1 (C) were analyzed by pre-ranked gene set enrichment analysis (GSEA) and the enriched Geneset pathways and their normalized enrichment scores, P and FDR Q values are shown.
+
 We then individually validated the top alternatively spliced genes regulated by both QKI and RBFOX1 with the hypothesis that shared targets were more likely to be involved in EMT. We focused on the genes with alternatively skipped exons, as it is the most prevalent type of AS in higher eukaryotes (Keren et al., 2010). We confirmed that, consistent with the RNA-seq results, pre-mRNAs of specific exons in the genes involved in cell motility/cytoskeleton organization, FLNB, SLK, NUMB, CA12, ESYT2 and ATP5C1 showed substantially greater skipping in cells expressing QKI and RBFOX1, as compared to control cells expressing hcRED or EGFP (Figure 3B). Interestingly, the same AS pattern for these genes was also observed in mesenchymal HME cells overexpressing SNAI1, indicating that the AS events observed in SNAI1-expressing cells are likely to be due to the activity of QKI and RBFOX1.
 
-## QKI and RBFOX1 regulate the alternative splicing of FLNB
+### QKI and RBFOX1 regulate the alternative splicing of FLNB
 
 From our RNA-sequencing analysis, we found that many AS events, and in particular, skipped exons, were regulated by both QKI and RBFOX1 (Figure 4A, Figure 4—figure supplement 1A and Figure 4—source data 1). To identify direct targets of QKI and RBFOX1, we performed enhanced UV crosslinking and immunoprecipitation followed by sequencing (eCLIP-seq) in HME cells (Figure 4—figure supplement 1B) (Van Nostrand et al., 2016). QKI-binding sites were located predominantly in introns, while the majority of RBFOX1-binding sites were found both in introns and 3’UTRs, and consistent with prior studies. We also recovered the known QKI (ACUAAC) and RBFOX1 (UGCAUG) binding motifs (Figure 4B,C). Interestingly, we found that QKI-binding sites were also highly enriched for the RBFOX-binding motif, UGCAUG (Figure 4B,C) and overall, there was a substantial degree of overlap between QKI and RBFOX1 eCLIP-binding peaks (p<0.001, Figure 4D and Figure 4—source data 2). When examining the 183 exon skipping events that we found to be regulated by both QKI and RBFOX1, we detected binding sites for both QKI and RBFOX1 for 36 events, with peaks overlapping the exon itself or positioned in the flanking introns (Figure 4E). Since the QKI and RBFOX1 proteins have previously been shown to physically associate with one another (Lim et al., 2006), we then tested whether these two proteins were also interacting in HME cells. When we isolated endogenous QKI complexes by immunoprecipitation, we detected a robust interaction with RBFOX1 protein that did not require the presence of RNA (Figure 4—figure supplement 1C). Thus, these observations demonstrate that QKI and RBFOX1 interact in human mammary epithelial cells and suggest that they concurrently bind to and regulate the AS of common downstream targets.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig4-v2.jpg)
+
+**Figure 4.:** (A) Venn diagram illustrating the overlap in skipped exons regulated by QKI and RBFOX1, as detected by RNA-seq. The significance of overlap was determined by Fisher’s exact test. (B, C) Binding distributions and de novo motifs identified from eCLIP-seq analysis of significant peaks (p≤10−5, fold-enrichment ≥8). The QKI (B) or RBFOX1 (C) binding distributions are shown in pie charts (upper). Below are shown the top two ranked QKI (B) and RBFOX1 (C) binding motifs. (D) Venn diagram illustrating the overlap in binding peaks detected by eCLIP-seq analysis of QKI and RBFOX1. p<0.001, as determined by random shuffling of one set of peaks and repeated testing of the extent of overlap. (E) Percentage of SE splicing events regulated by both QKI and RBFOX1 (n = 183), that contain CLIP-binding peaks located in the exon or flanking introns, for either or both proteins. (F) Heatmap depicting the association between an EMT signature score (top row) and AS events in a panel of breast cancer cell lines. Shown are the top 20 AS events that are positive or negatively associated with the EMT score. (G) Scatter plot of the change in ‘Percentage Spliced In’ (PSI) for SE events shared between QKI and RBFOX1. ΔPSI values are for each ORF relative to EGFP. Colored dots indicate events in CD44 or FLNB. (H) Tracks indicate eCLIP-seq read density for QKI and RBFOX1 at FLNB exon 30, normalized to a million total usable reads. Below each pair of replicate tracks are shown significant binding peaks called by CLIPper software (p≤10−5, fold-enrichment ≥8). Also shown are size-matched input controls for each pair of replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) (Upper) Venn diagrams illustrating the overlap in AS events regulated by QKI and RBFOX1 for each AS event type, including alternative 5’ splice sites (A5SS), alternative 3’ splice sites (A3SS), mutually exclusive exons (MXE) and retained introns (RI) (related to Figure 4A). The significance of overlapping events was determined by Fisher’s exact test and p values are shown. (Lower) Scatter plot of the change in ‘Percentage Spliced In’ (PSI) for the corresponding alternative splicing events shared between QKI and RBFOX1. ΔPSI values are for each ORF relative to EGFP (related to Figure 4G). (B) Schematic of the eCLIP-seq experiment. Briefly, protein-RNA interactions were stabilized with UV crosslinking followed by immunoprecipitation. The RNA was then ligated to a 3’ end adapter and reverse-transcribed. An additional adapter was ligated to the 3’ end of the cDNA and the cDNA was amplified by PCR for Illumina sequencing. The crosslinked sites (‘RT stops’) correspond to the 5’ end of sequenced reads and allow the identification of specific protein-RNA interaction sites. (C) Interaction between QKI and RBFOX1 as determined by immunoprecipitation of endogenous QKI protein followed by immunoblotting for QKI, RBFOX1 or vinculin. The cell lysate was pretreated with the indicated concentration of RNase at room temperature for 20 min (left). Cell lysate was pretreated with 50 ng/ml of RNase before the immunoprecipitation of endogenous QKI proteins (right).
+
 To identify transcripts whose AS is likely to play a functional role in promoting EMT, we assessed which QKI and RBFOX1-regulated AS events were also associated with an EMT gene signature across a panel of breast cancer cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012). We examined the AS events in breast cancer cell lines that were ranked by their EMT gene signature score (Byers et al., 2013), using the Information Coefficient (IC), an information-theoretic measure (Kim et al., 2016), and an empirical permutation test for statistical significance of the top hits (Barretina et al., 2012). Among all the common targets of QKI and RBFOX1, we found that CD44 (IC:0.857, p value:<6.59e-07) and FLNB (IC:0.848, p value:<6.59e-07) scored as the top two genes that most strongly associated with the EMT signature in breast cancer cell lines (Figure 4F). CD44 and FLNB were also among the top genes regulated by both QKI and RBFOX1 in HME cells (Figure 4G). Prior work has demonstrated that AS of CD44 to produce the standard shorter isoform promoting EMT, and that CD44 splicing is not only a marker of the EMT state but also contributes to EMT (Brown et al., 2011). However, the functional importance of FLNB in EMT has not yet been characterized. Exon 30 of FLNB is skipped when QKI and RBFOX1 are overexpressed (Figure 3B), and we found that both QKI and RBFOX1 were strongly bound to the intron flanking this exon (Figure 4H, QKI peak p value = 2.2e-16; RBFOX1 peaks p value = 3.0e-7 and 1.8e-9). Although RBFOX1-binding downstream of an exon typically results in splicing enhancement (Conboy, 2017), we found that binding of RBFOX1 downstream of FLNB exon 30 instead results in splicing repression. Together these observations support the view that QKI and RBFOX1 coordinately regulate the AS of genes associated with EMT.
 
-## Alternative splicing of FLNB is strongly associated with basal-like breast cancer
+### Alternative splicing of FLNB is strongly associated with basal-like breast cancer
 
 Based on gene expression analysis, prior studies stratified breast cancer cell lines into basal B, basal A and luminal clusters, among which, the basal B subtype expresses mesenchymal markers and displays a high degree of stem-like cell features (Kao et al., 2009; Neve et al., 2006). To identify the alternative transcripts that correlated with the basal B subtype of breast cancer, we analyzed alternatively spliced events in breast cancer cell lines included in the CCLE (Barretina et al., 2012). We found several targets of QKI and RBFOX1, including FLNB, SLK, USO1, ENAH, ESYT2, NUMB and ARHGEF1, to be among the most differentially spliced genes in basal B breast cancer cell lines (Figure 5—figure supplement 1A). Strikingly, we observed a bimodal distribution for the AS of FLNB (Figure 5A), in which the shorter mesenchymal FLNB isoform corresponding to a lower exon 30 'Percent Spliced In' (PSI) value, occurred overwhelmingly in basal B cell lines, while the longer epithelial FLNB isoform existed predominantly in luminal and basal A cell lines. We validated this finding in two basal B (BT549 and MDAMB231) and two luminal (ZR75-1 and MCF7) cell lines by RT-PCR (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig5-v2.jpg)
+
+**Figure 5.:** (A) FLNB exon 30 PSI in all CCLE breast cancer cell lines. RT-PCR validation of FLNB exon 30 splicing in two Basal B cell lines (BT549 and MDAMB231) and two luminal cell lines (ZR75-1 and MCF7) is shown on the right. (B) CCLE cell lines (except hematopoietic cell lines, n = 787) were ranked by their FLNB exon 30 Percent Spliced In (PSI) values, and associated gene expression signatures were analyzed by the REVEALER program. The top associated signatures with their Information coefficient (IC), p values and False Discovery Rates (FDR) are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CCLE breast cancer cell lines were classified by subtype (Basal B, Basal A and Luminal). Alternatively spliced genes are ranked by the difference in the PSI value between the Basal B, Luminal and Basal A subtypes. The HER2 status of these cell lines is also shown. (B) Breast cancer cell lines in CCLE were sorted by their FLNB exon 30 PSI values, and associated features were assessed by the REVEALER algorithm. Multiple independent EMT signatures were highly enriched. Their Information Coefficient (IC), p value and False Discovery Rate (FDR) values are shown. (C) All CCLE cell lines, except hematopoietic cell lines, were ranked by their FLNB exon 30 PSI values, and a mammary stem cell signature was shown to correlate with the AS of FLNB. The correlation co-efficiency (IC), p value and False Discovery Rate (FDR) values are shown. (D, E) Gene expression of two FLNB isoforms (FLNB-L and FLNB-ΔH1) (D) and QKI (E) in breast invasive carcinoma patient samples analyzed by TCGA. Basal samples, n = 136; Luminal samples, n = 591. Two tailed t-test.
 
 We further found that there is a strong association between the AS of FLNB exon 30 and EMT gene expression features in breast cancer cell lines (Figure 5—figure supplement 1B). When we examined all non-hematopoietic cancer cell lines in the CCLE, we found that the degree of FLNB exon 30 splicing correlated significantly with a ZEB1 target signature, an epithelial differentiation signature, two metastasis signatures and a mammary stem cell signature (Figure 5B and Figure 5—figure supplement 1C). These observations further confirmed that the AS of FLNB exon 30 strongly associates with EMT and a stem-like cell state. In addition, the strong association between FLNB splicing and EMT features suggest that FLNB exon 30 splicing may serve as a biomarker for residence of cancer cells in a mesenchymal state.
 
 Since mesenchymal and stem-like cell features are enriched in basal-like breast cancer, we examined whether the splicing of FLNB and the expression of QKI or RBFOX1 were associated with the basal-like subtype in TCGA Breast Invasive Carcinoma (BRCA) samples. We observed lower expression of the longer FLNB isoform with exon 30 included and higher expression of the shorter FLNB isoform in samples classified as the basal subtype, consistent with the notion that FLNB splicing plays a role in regulating the mesenchymal and stem-like cell state (Figure 5—figure supplement 1D). Similarly, we discovered elevated expression of QKI (NM_006775, also called QKI-5) in basal-like breast cancers relative to other subtypes of breast cancers (Figure 5—figure supplement 1E).
 
-## FLNB isoform switching promotes a mesenchymal-like cell state
+### FLNB isoform switching promotes a mesenchymal-like cell state
 
 FLNB is a member of the Filamin family of actin-binding proteins (FLNA, B and C). Prior work has implicated the role of filamins in actin crosslinking, focal adhesion kinase and integrin signaling, and regulating transcriptional activity (Feng and Walsh, 2004; van der Flier et al., 2002; Xu et al., 2010; Zhou et al., 2010). Filamins share an N-terminal actin-binding domain, two hinge regions, and 24 filamin-type immunoglobulin-like (FLN) domains that are involved in the formation of tail-to-tail dimers (Feng and Walsh, 2004; van der Flier et al., 2002). Exon 30 of FLNB encodes the first hinge (H1) domain, which governs filamin protein flexibility and calpain cleavage sensitivity (Figure 6A) (Feng and Walsh, 2004; Xu et al., 2010). The skipping of exon 30 results in loss of the H1 domain from the full-length protein without altering the remainder of the protein. Hereafter, we refer to the longer isoform of FLNB (including exon 30) as FLNB-L, and to the shorter isoform (which lacks exon 30) as FLNB-ΔH1. When we tested whether the splicing of FLNB differed between the CD44-high and CD44-low cell populations (Figure 6B), we found that FLNB exon 30 skipping occurred exclusively in the CD44-high mesenchymal and stem-like cell population.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of FLNB (Filamin B) protein domain structure, which contains an N-terminal actin-binding domain (ABD, shown in yellow), 24 filamin repeats (shown in blue) and two hinge domains (H1 and H2, shown in red). The exon 30 of FLNB encodes the first hinge domain (H1). (B) CD44-high and CD44-low HMLER cells were sorted and FLNB AS was analyzed by RT-PCR with primers flanking FLNB exon 30. The CD44-high HMLER cells were spontaneously generated. (C) The expression of FLNB was suppressed by siRNAs against FLNB 3’UTR region (FLNB-U1, U2 and UTR1,2) in HMLE cells. FLNB-U1,2 is a pool of FLNB-U1 and FLNB-U2 siRNAs. Protein levels of FN1, VIM (mesenchymal markers), CDH1 (epithelial marker) and FLNB after FLNB suppression was quantified by immunoblotting. (D) The expression of FLNB was rescued by FLNB-L (FLNB long isoform) or FLNB-ΔH1 (FLNB lacking H1 domain) after endogenous FLNB depletion by siRNA targeting the UTR of FLNB (FLNB-U1,2). Protein levels of FN1, VIM (mesenchymal markers), CDH1 (epithelial marker) and FLNB were quantified by immunoblotting. (E) Schematic of CRISPR/Cas9-mediated targeting of the FLNB intron 29 - exon 30 junction. (Left) Guide RNAs were designed to target the junction of FLNB intron 29 (in lower-case black letters) and exon 30 (in capital red letters). (Right) Examples of modifications to the junction induced by sgRNAs sgFLNB-SK2 and sgFLNB-SK4 are shown. (F) FLNB exon 30 skipping and total FLNB levels were quantified in cells expressing sgRNAs targeting the junction of FLNB intron 29 and exon 30 by RT-PCR (upper) and immunoblot (lower) (corresponding to Figure 6E). (G–I) Effect of CRISPR/Cas9-mediated modulation of the FLNB-L/FLNB-ΔH1 ratio on the expression of mesenchymal and epithelial markers as examined by qPCR (G), on the expression of CD44 as analyzed by flow cytometry (H), and on the number of mammosphere formed per 1000 cells cultured in low attachment condition (I). n = 4 for (G), n = 6 for (H), n = 3 for (I). *, p<0.05; **, p<0.01, Student’s two-tailed t-test compared to sgGFP controls.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Protein levels of VIM (mesenchymal marker) and CDH1 (epithelial marker) after the ectopic expression of control GFP, FLNB-L or FLNB-ΔH1 in a mesenchymal cell line, MDA-MB-231 cells, as quantified by immunoblotting. (B) EMT makers were quantified by immunoblotting (left) or qPCR (right) after the ectopic expression of control GFP, FLNB-L or FLNB-ΔH1 in an epithelial cell line, HMLE cells. n = 4, *, p<0.05; **, p<0.01, Student’s two-tailed t-test between FLNB-L and FLNB-ΔH1. (C) CD44 expression in HMLE cells expressing different isoforms of FLNB, as measured by flow cytometry. (D) Schematic depicting the siRNAs used to regulate FLNB isoform ratios. Upper, siFLNB-L1 and siFLNB-L2 (in red) target the alternative exon 30. Lower, siFLNB-S1 and siFLNB-S2 (in blue) target the junction between exon 29 and exon 31. Exon 30 splicing and total FLNB levels were assessed by RT-PCR and immunoblot (right). (E) Effect of siRNA-mediated modulation of FLNB-L/FLNB-ΔH1 ratio on the expression of mesenchymal and epithelial markers, as measured by qPCR. n = 3, *, p<0.05, Student’s two-tailed t-test.
 
 To investigate the function of FLNB in regulating EMT, we suppressed FLNB expression using siRNAs targeting the FLNB 3’UTR region in HMLE cells, in which the FLNB-L isoform represents the majority of FLNB protein. We found that suppression of FLNB-L upregulated the expression of mesenchymal markers, VIM and FN1, indicating that FLNB-L plays a negative role in regulating EMT (Figure 6C). To dissect the respective role of FLNB-L and FLNB-ΔH1 isoforms, we rescued the suppression of endogenous FLNB by ectopically expressing each isoform of FLNB (Figure 6D). Depletion of FLNB promoted the expression of mesenchymal markers. We found that FLNB-L reduced the expression of mesenchymal markers, FN1 and VIM. In contrast, the expression of FLNB-ΔH1 did not decrease the mesenchymal marker expression. When the two isoforms of FLNB were expressed in a mesenchymal cell line, MDA-MB-231, we also found that FLNB-L overexpression suppressed mesenchymal marker expression, strongly suggesting that FLNB-L inhibits the EMT (Figure 6—figure supplement 1A). Interestingly, when we expressed each isoform in HMLE cells in the presence of the endogenous FLNB-L, FLNB-ΔH1 ectopic expression elevated mesenchymal markers while the expression of FLNB-L did not significantly alter expression of the same set of markers (Figure 6—figure supplement 1B,C). Since filamin proteins dimerize (Berry et al., 2005; Pudas et al., 2005; Stossel et al., 2001), the effects of FLNB-ΔH1 proteins likely represent interactions with the endogenous FLNB-L, which blocks the suppressive effect mediated by FLNB-L. As before, we did not observe robust changes in the expression of pre-existing epithelial markers in these experiments, reminiscent of our previous observation that QKI or RBFOX1 induces an intermediate mesenchymal state with retention of epithelial markers and acquisition of mesenchymal ones (Figure 2A,B and Figure 2—figure supplement 1B). Together, these results support the view that the skipping of the exon 30 of FLNB switches the function of the FLNB from suppressing to promoting the EMT.
 
@@ -107,9 +171,17 @@ To manipulate the ratio of the two FLNB isoforms and dissect the function of the
 
 In addition, we used two sets of siRNAs that targeted either exon 30, or the junction between exon 29 and exon 31 when exon 30 is skipped. The siRNAs that target the exon 29–31 junction selectively disrupt formation of the FLNB-ΔH1 isoform, since the FLNB-L isoform lacks the siRNA target sequences. This approach effectively altered the ratio of FLNB-L and FLNB-ΔH1 (Figure 6—figure supplement 1D,E) and revealed that an elevated ratio of the FLNB-ΔH1 isoform over the FLNB-L isoform and a reduction of FLNB protein levels significantly increased the level of mesenchymal markers, consistent with the effect of ectopically expressing FLNB-ΔH1 or CRISPR/Cas9-mediated editing of the splice junction (Figure 6C–I). Together, these observations demonstrate that the skipping of FLNB exon 30 contributes to the acquisition of a mesenchymal-like cell state.
 
-## EMT mediated by FLNB exon 30 skipping is dependent on the FOXC1 transcription factor
+### EMT mediated by FLNB exon 30 skipping is dependent on the FOXC1 transcription factor
 
 In addition to their function in the cytoplasm, actin-binding proteins, such as the Filamin family, have been shown to localize to the nucleus and regulate transcription and gene expression (Bedolla et al., 2009; Berry et al., 2005; Olson and Nordheim, 2010; Zheng et al., 2009; Zhou et al., 2010). We tested whether the two isoforms of FLNB generated by alternative splicing of exon 30 localized to different subcellular compartments. By comparing HMLE cells expressing a control sgRNA targeting GFP (sgGFP) or sgRNAs that induce exon 30 skipping (sgFLNB-SK2 and SK4) (Figure 6E), we found that the FLNB-L isoform localized to both the cytoplasm and the nucleus while FLNB-ΔH1 was preferentially localized to the cytoplasm (50% reduction in nuclear localization, Figure 7A). We confirmed this change of FLNB localization using immunofluorescence (Figure 7—figure supplement 1A). Thus, alternative splicing of exon 30 changes the nuclear localization of FLNB.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig7-v2.jpg)
+
+**Figure 7.:** (A) Analysis of nuclear and cytoplasmic fractions of FLNB. HMLE cells expressing Cas9 and sgRNAs targeting GFP (sgGFP, as control) or targeting the FLNB intron 29 - exon 30 junction to induce exon skipping (sgFLNB-SK2 and SK4, described in Figure 6E), were subjected to subcellular fractionation. The levels of FLNB proteins in the nuclear and cytoplasmic fractions were analyzed by immunoblotting and the skipping of exon 30 was confirmed by RT-PCR. The nuclear levels of FLNB is diminished when exon 30 is skipped. (B) Interaction between FLNB, FOXC1 and PBX1 in the nucleus as determined by immunoprecipitation followed by immunoblotting. HMLE cells expressing Cas9 and sgRNAs targeting GFP (sgGFP, as control) or targeting the FLNB intron 29 - exon 30 junction to induce exon skipping (sgFLNB-SK4, described in Figure 6E), were subjected to immunoprecipitation analysis using nuclear protein extract. The interaction between FLNB and FOXC1 in the nuclear extract was reduced largely due to the decrease in nuclear FLNB levels. (C) The depletion of FOXC1 diminishes the upregulation of mesenchymal markers (ZEB1 and FN1) mediated by FLNB exon 30 skipping (sgFLNB-SK2 and SK4, shown in red bars) as measured by qPCR. n = 6, *, p<0.05; **, p<0.01, Student’s two-tailed t-test. The knockdown efficiency for FOXC1 is shown in the upper panel. (D) The rate of mammosphere formation in HMLE cells that expressed the indicated sgRNAs and transfected with a FOXC1 siRNA pool. The number of mammospheres per 1000 cells plated was counted. Representative images (left) and quantification (right) are shown. n = 3, **, p<0.01, Student’s two-tailed t-test. (E, F) Depletion of FOXC1 diminishes the upregulation of mesenchymal markers (E) and mammosphere formation (F) mediated by QKI and RBFOX1 expression, as measured by qPCR (E) and mammosphere formation assay (F). n = 6 for (E), n = 4 for (F). *, p<0.05; **, p<0.01, Student’s two-tailed t-test. (G) A model of the mechanism underlying the QKI and RBFOX1-induced mesenchymal and stem-like cell state.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37184/elife-37184-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunofluorescence analysis of the subcellular localization of FLNB isoforms in HMLE cells expressing Cas9 and sgRNAs targeting GFP or targeting the FLNB intron 29 - exon 30 junction to induce exon skipping (sgFLNB-SK4, described in Figure 6E) (related to Figure 7A). The ratios of average fluorescence intensity in the nucleus to that in the cytoplasm (nucleus/cytoplasm) were quantified by ImageJ software (n = 50 for each group. ****p=1.64e-11, student’s t test). (B) Immunoprecipitation followed by immunoblotting to assess the interaction between endogenous FLNB and FOXC1 in HMLE whole cell lysates. (C) Representative images of mammosphere formation in HMLE cells that expressed the indicated ORFs or sgRNAs. The number of mammospheres per 1000 cells plated was counted and quantification is shown in Figure 7F. (D) Immunofluorescent staining of V5-RBFOX1 (NM_145893.2) in human mammary epithelial cells using V5 antibody. Fluorescent intensity was quantified by ImageJ software. The percentage of nuclear RBFOX1 (NM_145893.2) is 38 ± 5%.
 
 Filamin A has been reported to assemble a protein complex with FOXC1 and PBX1, which inhibits FOXC1 transcriptional activity (Berry et al., 2005; Zheng et al., 2009; Zhou et al., 2010). To test whether Filamin B also forms a complex with FOXC1 in HMLE cells, we confirmed that FLNB interacts with FOXC1 by co-immunoprecipitation (Figure 7—figure supplement 1B). Furthermore, we found that the interaction among FLNB, FOXC1 and PBX1 was reduced when we induced FLNB exon 30 skipping, largely due to the decreased amount of nuclear FLNB protein (Figure 7B). Based on these observations, we conclude that FLNB nuclear exclusion, mediated by exon 30 skipping, regulates its interaction with FOXC1.
 
@@ -133,84 +205,290 @@ Collectively, we conclude that QKI and RBFOX proteins play important roles in es
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pan-QKI</td>
+      <td>Millipore</td>
+      <td>MABN624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-QKI</td>
+      <td>Bethyl</td>
+      <td>A300-183A RRID:AB_2173160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RBFOX1</td>
+      <td>Sigma</td>
+      <td>SAB2100002 RRID:AB_10600323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MBNL1</td>
+      <td>Santa-Cruz</td>
+      <td>sc-47740 RRID:AB_784435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MBNL2</td>
+      <td>Santa-Cruz</td>
+      <td>sc-136167 RRID:AB_2140469</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CELF4(Brunol4)</td>
+      <td>Santa-Cruz</td>
+      <td>sc-398292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RBFOX2 (RBM9)</td>
+      <td>Bethyl</td>
+      <td>A300-864A RRID:AB_609476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLNB</td>
+      <td>Cell signaling</td>
+      <td>12979S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SNAI1</td>
+      <td>Cell signaling</td>
+      <td>3879S RRID:AB_2255011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vinculin</td>
+      <td>Cell signaling</td>
+      <td>4650S RRID:AB_10559207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5</td>
+      <td>Cell signaling</td>
+      <td>13202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (for eCLIP)</td>
+      <td>Life Technologies</td>
+      <td>R96025 RRID:AB_159313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD44-PE-Cy7</td>
+      <td>Affymetrix</td>
+      <td>25-0441-81 RRID:AB_469622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siRNA NS #1</td>
+      <td>GE Dharmacon</td>
+      <td>D-001810–01- 05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-L1 (3019)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-237650/ LJBYN-000019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-L2 (3021)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-237646/ LJBYN-000021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-S1 (2923)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-237648/ LJBYN-000023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-S2 (2925)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-237649/ LJBYN-000025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFOXC1 smart pool of 4 siRNAs</td>
+      <td>GE Dharmacon</td>
+      <td>M-009318-01-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-U1 (targeting UTR region of FLNB)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-206669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>siFLNB-U2 (targeting UTR region of FLNB)</td>
+      <td>GE Dharmacon</td>
+      <td>CTM-206671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX Transfection Reagent</td>
+      <td>thermofisher</td>
+      <td>13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Mini Kit</td>
+      <td>Qiagen</td>
+      <td>51304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>QKI</td>
+      <td>NCBI Reference</td>
+      <td>NM_006775.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>RBFOX1</td>
+      <td>NCBI Reference</td>
+      <td>NM_145893.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>NCr-nude mice</td>
+      <td>Taconic</td>
+      <td>NCRNU,F, CrTac:NCr,Foxn1nu</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The human mammary epithelial (HME) cell line, and its derived cell lines HMLE and HMLER, were grown in Mammary Epithelial Cell Growth Medium (MEGM, Lonza, #CC-3150). MCF7, BT549, MDAMB231, ZR75-1 cells were grown in Dulbecco’s minimum essential medium (DMEM) or Roswell Park Memorial Institute (RPMI) medium containing 10% fetal bovine serum and 1% antibiotics, while 293 T cells were grown in DMEM supplemented with 10% fetal bovine serum and 1% antibiotics. All cell lines were obtained from the Cancer Cell Line Encyclopedia directly from original sources and had their identity confirmed by SNP fingerprinting (Barretina et al., 2012). All cells were tested for mycoplasma periodically.
 
-## Plasmids and ORFeome library
+### Plasmids and ORFeome library
 
 The ORFs of EGFP, HcRed, CELF4, MBNL1, MBNL2, QKI, RBFOX1, SFPQ, HNRNPUL1, SRSF9, RBM47, TGFBR2 and SNAI1 were obtained from the Genetic Perturbation Platform at the Broad Institute. Plasmids containing the two isoforms of FLNB (FLNB-L and FLNB-∆H1) were generous gifts from Dr. Arnoud Sonnenberg at the Netherlands Cancer Institute. The ORFeome 8.1 library was produced in the Genetic Perturbation Platform at the Broad Institute. There are the 17,255 ORF clones in the library, among which, 12952 ORF clones have at least 99% nucleotide and protein match (75.1%). Of those genes 7547 ORF clones are 100% protein matches (43.7%) and 6040 are 100% nucleotide matches (35.0%). The construction of the ORF library has been described previously (Yang et al., 2011).
 
-## Animal studies
+### Animal studies
 
 All protocols with use of animals were approved by DFCI’s Institutional Animal Care and Use Committee (IACUC). For tumor studies, HMLER cells expressing different ORFs were washed and suspended in 50% Matrigel/PBS mix (Corning Matrigel Basement Membrane Matrix, #354234), then injected subcutaneously in both flanks and in the back of 6-week-old female immunocompromised NCr-nude mice (Taconic, NCRNU-F, CrTac:NCr-Foxn1nu). Two million cells were injected per site. Mice were sacrificed after 15 weeks or when tumors reached a diameter of 2 cm.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were trypsinized, suspended in phosphate-buffered saline (PBS) with CD44-PE-Cy7 antibody (Affymetrix # 25-0441-81; 1:500 dilution), and stained for 20 min at room temperature; cells were mixed at 5 min intervals, and then washed with PBS to remove excess antibodies. Immediately after, cells were sorted on a BD FACSAria SORP or analyzed on a BD Fortessa, using BD FACSDiva Software (BD Biosciences, USA).
 
-## Mammosphere assay
+### Mammosphere assay
 
 Mammosphere cultures were generated as described (Chaffer et al., 2013). Briefly, 1000 cells were seeded per well in a 96-well Corning Ultra-Low attachment plate, in replicates of 6 (Corning, USA; CLS3474). Cells were grown in a serum-free mammary epithelial cell growth medium, supplemented with B27 (Invitrogen), 10 ng/mL EGF, 20 ng/mL bFGF (BD Biosciences) and 1% methycellulose. Bovine pituitary extract was excluded. Spheroid numbers were counted between days 8 and 12 microscopically.
 
-## ORF screening
+### ORF screening
 
 The genome-scale screen was performed in two biological replicates. HMLER cells in the CD44-low state were pre-sorted using flow cytometry. The purity of CD44-low cells was >99.99% for each experiment. HMLER_CD44-low cells were then transduced with the ORF library and cultured for 7 days, with one passage on Day 4. On Day 7, CD44-high cells were sorted from more than 200 million transduced HMLER cells, using flow cytometry for each biological replicate. Sorted CD44-high cells (about 200 thousand cells for each replicate) and their corresponding unsorted HMLER cells were subjected to genomic DNA extraction using the QIAamp DNA Mini Kit (Qiagen # 51304). The barcodes corresponding to each ORF were amplified using PCR, and analyzed by next-generation sequencing. Enriched barcodes were analyzed as follows: (i) Each sample was normalized to a total of 1 million barcode reads. (ii) The number of each barcode after normalization was calculated to its log base two value. The log value of each barcode in the unsorted group was subtracted from the CD44-high group to obtain the log fold-change in the value of each barcode. (iii) The averages and standard deviations (SD) of the log fold-change values in all samples were determined, and Z scores for each barcode were calculated as follows: Z Barcode X= (Log value Barcode X - average)/SD. The Z score was used to evaluate the enrichment of a certain ORF in the CD44-high population, compared with the unsorted population. A higher Z score indicated an enhanced capability for an ORF to promote the conversion of HMLER cells to the CD44-high state.
 
-## RNA-sequencing library preparation and data analysis
+### RNA-sequencing library preparation and data analysis
 
 To prepare libraries for RNA sequencing of HME cells that overexpress HcRed, EGFP, QKI, RBFOX1 or SNAI1, we first extracted total RNA using the RNeasy Mini Kit (QIAGEN). Next, 1.5 ug of total RNA was used to generate first strand cDNA using Oligo(dT)12–19 primers (Invitrogen) and AffinityScript Multi-Temp Reverse Transcriptase (Agilent). Second strand cDNA was synthesized using the NEBNext mRNA Second Strand Synthesis Module (NEB) and washed with AMPure XP beads (Beckman Coulter). Finally, libraries were generated from cDNA using the Nextera XT DNA Sample Preparation Kit (Illumina) and Nextera XT Indexes (Illumina). Libraries were pooled and sequenced on the Illumina NextSeq 500 sequencer (paired-end, 150 bp). Image analysis and base calling were done using the standard Illumina pipeline, and then demultiplexed into FASTQ files. Reads were first trimmed using Trimmomatic (version 0.33) to remove Nextera adapter sequences down to a uniform length of 100nt (for compatibility with downstream splicing analysis software). Trimmed reads were then aligned to the human genome (hg19/GRCh37) using STAR (version 2.5.2b) (Dobin et al., 2013) and Gencode V19 gene annotations. Alternative splicing was quantified using rMATS (version 3.2.5) (Shen et al., 2014) by comparing each ORF to EGFP, with at least two to three replicates per group. The output from rMATS was further filtered to include only events for which the sum of inclusion counts (IC) and skipping counts (SC) was greater or equal to 10 for both sets of samples.
 
 Alternative splicing quantification across cell lines in CCLE and TCGA breast invasive carcinoma was performed using JuncBASE v.0.8 with default parameters after initial sequence alignment using TopHat v1. To incorporate potentially novel exons, Cufflinks de novo transcript annotations were included from the CCLE data only.
 
-## RNA preparation and polymerase chain reaction analysis
+### RNA preparation and polymerase chain reaction analysis
 
 Total RNA was isolated using the RNeasy Mini kit (Qiagen, 74104) according to the manufacturer’s protocol. A cDNA sample, prepared from 1 μg total RNA, was used for quantitative reverse transcription polymerase chain reaction (RT-PCR) performed with the High Capacity cDNA Reverse Transcription Kit (Life Technologies, 4368814) or iScript Reverse Transcription Supermix (BIO-RAD, 1708840). Quantitative PCR (qPCR) was done with the Power SYBR Green Master Mix (Life Technologies; 4368708); data were collected and analyzed on a Bio-Rad Real-Time PCR Detection System or a Roche LightCycler 480 qPCR instrument. Thermal-cycling parameters for the PCR were as follows: 95°C for 10 min, followed by 45 cycles each of 95°C for 20 s, 60°C for 60 s. The relative quantity of mRNA was normalized against the relative quantity of RPLP0 or GAPDH mRNA in the same sample. Primer sequences in a 5′ to 3′ orientation are shown in Supplementary file 1.
 
-## EMT signature analysis for CCLE cell lines and TCGA breast cancer samples
+### EMT signature analysis for CCLE cell lines and TCGA breast cancer samples
 
 EMT UP and DOWN signatures were derived from previously published datasets based on their pattern of expression relative to the EMT phenotype (TAUBE_EMT_UP/DN, EMT gene set (Taube et al., 2010), GROGER_EMT_UP/DN, EMT gene set (Gröger et al., 2012), BYERS_EMT_UP/DN (Byers et al., 2013). The EMT signature scores across CCLE were generated by using the ssGSEA algorithm (Subramanian et al., 2005). These scores were used to identify the top associated splice targets based on degree of association, an information-theoretic measure Information Coefficient (IC) (Kim et al., 2016). An empirical permutation test was performed for statistical significance calculations.
 
 RNA-sequencing data of TCGA Breast invasive carcinoma (BRCA) samples were downloaded from the GDAC portal of the Broad Institute (http://gdac.broadinstitute.org/). The EMT signature scores across TCGA_BRCA samples were generated by the ssGSEA algorithm based on a previously published EMT gene expression signature (CHARAFE_EMT_UP and _DOWN combined) (Charafe-Jauffret et al., 2006; Subramanian et al., 2005). The top 20% of samples (total n = 1212, mesenchymal tumor = 242) that had the highest EMT scores were counted as mesenchymal tumor samples and the top 20% of samples (n = 242) that had the lowest EMT scores were counted as epithelial tumor samples. The gene expression of EMT markers and RBPs were compared between these mesenchymal and epithelial samples in Figure 3G. In addition, these scores were used to identify the top correlated gene expression based on degree of association by calculating Pearson Correlation Coefficiency (PCC) and their p values. Breast cancer subtypes were obtained from a PAM50 gene signature-based TCGA analysis (Ciriello et al., 2015) and correlated with the expression of specific isoforms.
 
-## Gene expression analysis for murine mammary tumor gene expression
+### Gene expression analysis for murine mammary tumor gene expression
 
 RNA sequencing data for gene expression in primary and recurrent MMTV-HER2 mammary tumors were previously published (Goel et al., 2016). In this model, withdrawal of HER2 expression leads to primary mammary tumor regression but is eventually followed by recurrence of HER2-resistant tumors that harbor a mesenchymal phenotype (Figure 2—figure supplement 1D–F). Ten out of 11 such recurrent tumors underwent EMT as shown by the expression of mesenchymal markers and the spindle-like cellular morphology (Figure 2—figure supplement 1D) (Goel et al., 2016). Strikingly, based on an analysis of the RNA-sequencing results from Goel et al. (2016), we found that the expression of Qk (mouse homolog of human QKI) and Rbfox1 were significantly upregulated in the recurring mesenchymal mammary tumors relative to their expression in the corresponding, initially formed epithelial tumors (Figure 2—figure supplement 1D,E). The differential gene expression was evaluated by p values calculated by student’s t-test of the normalized expression values between the recurrent tumors and primary tumors. The false discovery rate (FDR) values were generated by comparative marker selection analysis in Genepattern (Reich et al., 2006).
 
-## Protein extraction and immunoblotting
+### Protein extraction and immunoblotting
 
 Cell extract preparation and immunoblotting were completed as described (Li et al., 2013). All antibodies used for immunoblotting were listed in Supplementary file 1.
 
 For RBFOX1 immunoblotting, we detected a 42 kDa band in HME cell lysate (predicted size). RBFOX1 levels are higher in HMLER cells and we observed a 33 kDa lower band, in addition to the 42 kDa band that corresponds to the predicted size of RBFOX1 (Figure 2—figure supplement 2C,D), which is likely a cleaved form of RBFOX1.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 For preparation of whole cell extract, HME or 293 T cells were harvested, and lysed on ice for 30 min with IP buffer containing 50 mM Tris HCl pH 7.0, 150 mM NaCl, 1 mM EDTA/pH 8, 0.5% Na-deoxycholate, 0.5% NP-40 and 10% glycerol, with protease inhibitors added before use. The lysates were sonicated with 10 pulses on ice, then centrifuged at 14,000 rpm for 5 min, and the supernatants were collected for immunoprecipitation. For preparation of nuclear protein, HMLE nuclear extract was prepared using the Nuclear Complex Co-IP kit (Active Motif #54001) as described in manufacturer’s instructions. Briefly, cell pellets were resuspended in hypotonic buffer to break cell membrane and the nucleus were isolated by centrifugation. The nuclear fraction was further lysed by digestion buffer with enzymatic shearing cocktail before it was further diluted in the IP buffer provided in the kit.
 
 For immunoprecipitations, QKI antibody (Bethyl Laboratories # A310-050A) or FLNB antibody (Millipore # AB9276) was added at a concentration of 1 ug per 1 mg of cell lysate, and the lysates were incubated for 2 hr at 4°C; protein A/G agarose was then added and lysates were further incubated for 2 hr at 4°C on a rotator. Protein A/G beads were washed four times in cold IP buffer followed by centrifugation. Samples were boiled in SDS loading buffer, and separated on an SDS-PAGE gel, followed by immunoblotting. For QKI immunoprecipitations, to digest the RBP-associated RNAs, cell lysate was incubated with 50 ng/ml of RNase at room temperature for 20 min before antibodies were added.
 
-## siRNA transfection
+### siRNA transfection
 
 HME, HMLE or HMLER cells were transfected with siRNAs, using Lipofectamine RNAi-MAX. Six hours before the siRNA transfection, cells were split into six-well plates. To prepare transfection complexes, 5 ul of RNAiMAX was mixed into 150 ul of OptiMEM medium in one tube, while 5 ul of 20 mM siRNA was mixed into 150 ul of OptiMEM medium in another tube. Tubes were incubated at room temperature for 20 min before being added to the cells. The cells were harvested 72 hr after transfection.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Immunofluorescence procedures have been described previously (Li et al., 2013). Briefly, HMLE cells were fixed with cold methanol for 2 min and permeabilized with PBS-1% Triton X-100 for 5 min. Cells were blocked in PBS-donkey serum for 1 hr before being incubated with primary antibody for 2 hr. Alexafluor 488-conjugated donkey anti-rabbit IgG (Invitrogen # R37118) was used as a secondary antibody. DNA was stained with DAPI. Images were acquired with a Nikon inverted microscope. For Phalloidin staining, cells were fixed with Formalin for 8 min and incubated with Phalloidin-Alexafluor 488 for 1 hr at room temperature before DAPI staining and image analysis.
 
-## eCLIP-sequencing library preparation and data analysis
+### eCLIP-sequencing library preparation and data analysis
 
 RBP-RNA interactions were crosslinked by UV exposure (254 nm, 400 mJ/cm2) using a Spectrolinker XL-1500 UV crosslinker. eCLIP was then performed as previously described (Van Nostrand et al., 2016) (ENCODE protocol v1.P 20151108) with some minor modifications as follows: (1) immunoprecipitated RNA was 3’ end ligated to a custom RNA adapter (‘3 SR_RNA’); (2) RNA was released from the nitrocellulose membrane after transfer by treatment with 200 ul of an SDS solution (100 mM Tris, pH 7.5; 50 mM NaCl; 1 mM EDTA; 0.2% SDS) containing 10 ul of proteinase K (Life Technologies, AM2546) and incubating in an Eppendorf thermomixer (60 min at 50°C: 15 s at 1000 r.p.m., 30 s rest), as described in the irCLIP protocol (Zarnegar et al., 2016); (3) reverse transcription was done with a custom RT primer (‘SR_RT’); (4) the 3’ end of the cDNA was ligated to a custom DNA adapter (‘SR_DNA’); (4) amplification of ligated cDNA was done with NEBNext Multiplex Oligos for Illumina (NEB, E7335S); (5) PCR amplified libraries were purified twice with AMPure XP beads (1.0X both times) and then directly quantified by qPCR and run on a Bioanalyzer High Sensitivity DNA chip, before being pooled and submitted for sequencing on the Illumina NextSeq 500 (single-end, 75 bp). For each RBP (QKI and RBFOX1), we prepared and sequenced two replicates and a single size-matched input control derived from the first replicate.
 
 Sequenced reads were processed as previously described (Van Nostrand et al., 2016) (ENCODE pipeline v1.P 20160215), with some minor modifications. First, the unique molecular index (UMI) from the 5' end of each read was extracted using UMI Tools (parameters: umi_tools extract --bc-pattern=NNNNN). Next, adapters were trimmed using cutadapt (parameters: cutadapt --match-read-wildcards --times 1 -e 0.1 -O 1 --quality-cutoff 6 m 18 -a NNNNAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC). Trimmed reads were first aligned to a database of human repetitive elements (RepBase) using STAR (v2.5.2b) (parameters: STAR --runMode alignReads --genomeDir/path/to/RepBase --readFilesCommand zcat --outSAMunmapped Within --outFilterMultimapNmax 30 --outFilterMultimapScoreRange 1 --outSAMattributes All --outStd BAM_Unsorted --outSAMtype BAM Unsorted --outFilterType BySJout --outReadsUnmapped Fastx --outFilterScoreMin 10 --outSAMattrRGline ID:foo --alignEndsType EndToEnd). Reads not mapping to RepBase were then aligned to the human reference genome (hg19 with Gencode V19 annotations) using STAR (v2.5.2b) (parameters: STAR --runMode alignReads --genomeDir/path/to/hg19 --readFilesIn --outSAMunmapped Within --outFilterMultimapNmax 1 --outFilterMultimapScoreRange 1 --outStd BAM_Unsorted --outSAMattributes All --outSAMtype BAM Unsorted --outFilterType BySJout --outReadsUnmapped Fastx --outFilterScoreMin 10 --outSAMattrRGline ID:foo --alignEndsType EndToEnd). PCR duplicates were then removed using UMI Tools (parameters: umi_tools dedup --method directional-adjacency --spliced-is-unique) leaving only uniquely mapping reads. Finally, CLIP peaks were called using CLIPper software (Lovci et al., 2013) and identified peaks were normalized to the appropriate size-matched input control with ‘Peak_input_normalization_wrapper.pl’ (https://github.com/YeoLab/gscripts) before being merged between replicates. Binding motifs were identified using MEME-ChIP (Machanick and Bailey, 2011).
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 All data represent the average of at least three independent experiments, unless otherwise indicated. Significance was calculated by two-tail Student's t-test, using GraphPad software. Differences were considered significant when p was <0.05.
 
-## Primer and oligo sequences
+### Primer and oligo sequences
 
 All primer and oligo sequences are listed in Supplementary file 1.
 
-## Data availability
+### Data availability
 
 Both the RNA-seq data and the CLIP-seq data are deposited at NCBI Gene Expression Omnibus (accession number GSE98210).

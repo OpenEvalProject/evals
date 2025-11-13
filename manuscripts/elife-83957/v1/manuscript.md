@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Biological Sciences Graduate Program, University of California, San Diego La Jolla United States
-2. https://ror.org/03xez1567 Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States
+1. Biological Sciences Graduate Program, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Molecular Neurobiology Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
 
 † Corresponding author
 
@@ -31,9 +31,37 @@ To test the hypothesis that, like other aversive stimuli, predators were able to
 
 ## Results
 
-## C. elegans avoids bacterial lawns inhabited by Pristionchus predators
+### C. elegans avoids bacterial lawns inhabited by Pristionchus predators
 
 We recently showed that P. pacificus bites C. elegans adults even though it is difficult to consume them. This biting of adult C. elegans prey forces these animals to leave the bacterial lawn, resulting in more exclusive access to the lawn by the predator (Quach and Chalasani, 2022). Using a modified version of the protocol in our previous study (Quach and Chalasani, 2022), we placed three predators and three C. elegans on an assay plate containing a small, dense bacterial lawn. Animals were restricted to an arena that included the lawn and a small area of empty agar (see Materials and methods). Control plates (‘mock’) had six C. elegans to maintain a consistent number of animals between plates with and without predators. These behavioral arenas were imaged under various experimental conditions, and coordinates of the eggs in arenas were determined. These coordinates were used to compute the distances of individual eggs from lawn center as well as their position relative to the lawn edge. Since Pristionchus also lay eggs, we used a C. elegans strain that expresses the GFP fluorophore in all of its eggs (Pelt-2::GFP) (Figure 1a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic showing egg location assay setup. Small lawns (approx. 3 mm) in diameter are enclosed in a filter paper corralled arena. Six animals are placed into the arena, three GFP+ C. elegans strain CX7389 and three Pristionchus spp. (or six C. elegans in mock controls). After 20 hr, eggs are visualized and <x,y> positions in the arena are determined. (b) Histograms of egg distributions in mock (N=10 arenas) or five predator conditions: P. pacificus eud-1(tu445) mutants (N=11 arenas), P. pacificus strain PS312 (California isolate) (N=11 arenas), P. pacificus strain RS5194 (Japan isolate) (N=9 arenas), P. uniformis strain JU1051 males (N=11 arenas), and P. uniformis JU1051 females (N=10 arenas). Bolded bars show average distribution of egg distance from center (in mm) with faint bars indicating the individual arena distributions. Lawn edge is marked at radial distance approximately 1.5 mm from center. (c) Distributions of eggs are quantified as <# eggs off lawn, # eggs on lawn> in each arena and the observed probability of off lawn egg laying (P(off)) is plotted in each condition (# eggs off lawn/total # of eggs, average of ~90 eggs per arena). Statistical analysis was performed by logistic regression in R modeling the [# off, # on] egg counts as a function of predator condition, with significant effects determined by likelihood ratio analysis of deviance in R. Model estimates are overlaid on plots as expected values of P(off) from the logistic model ± 95% confidence intervals. We detected a significant main effect of predator condition (p<2.2 × 10–16). Post hoc comparisons with correction for multiple testing were computed using the single step multivariate normal procedure in the multcomp package in R according to simultaneous method of Hothorn, Brez, and Westfall (Hothorn et al., 2008). (d) C. elegans expressing Pnlp-29::GFP and a Pcol-12::dsRed co-injection marker paired with various predators after 20 hr. P. pacificus RS5194 animals all died following 20 hr of predator exposure. GFP signal was quantified and normalized to dsRed signal for each animal. (e) log2 (GFP/dsRed) signal is shown relative to the mock mean (=0). N=79 mock, 47 P. pacificus eud-1(tu445), 34 P. pacificus PS312, 44 P. uniformis JU1051 males, 49 P. uniformis JU1051 females. Statistical analysis was performed with ANOVA and we detected a significant main effect of predator condition (p<2.2 × 10–16). Model estimates are overlaid on plots as mean log2 normalized fluorescence ± 95% confidence intervals. Post hoc comparisons with correction for multiple testing were performed using the single step multivariate t procedure in the multcomp package in R (Hothorn et al., 2008). (f) Representative images of egg location assay plates after 20 hr of mock (upper) or exposure to P. uniformis males (lower). Red arrows indicate example eggs laid off lawn. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Proportion of stenostomatous and eurystomatous animals in P. uniformis females (N=40), P. uniformis males (N=33), and P. pacificus strain PS312 (N=69). We did not detect significant differences in the steno/eurystomatous ratio between P. uniformis males and females (Fisher’s exact test, p=0.77). We did detect a significantly lower proportion of stenostomatous animals in P. pacificus PS312 compared to P. uniformis males (Fisher’s exact test, p=0.036) and a trend to lower proportion of stenostomatous animals compared to P. uniformis females (Fisher’s exact test, p=0.095).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** We calculated the number of eggs laid off and on from egg positional data from 1 - 6 hours in either Mock or predator conditions as in Figure 1 ( N=8 - 13 arenas per condition). Numbers of eggs laid off the lawn were analyzed by logistic regression as a two-way interaction model with time as a continuous variable and predator condition. We detected a significant two-way interaction between time and predator condition (likelihood ratio p=3.35 × 10–8). To explore these effects visually, observed P(off) data points are plotted with the trend lines ± 95% confidence intervals from logistic regression. Data points are shown only once per condition, but for reference the Mock control trendline is shown in each panel. All conditions showed significant positive relationship with respect to time indicating P(off) increased over the course of 6 hours. Pairwise comparisons at individual time points between predator and Mock conditions were computed with correction for multiple testing using the single step method in the multcomp package in R as in Figure 1. n.s.=p>0.1, †=p<0.1, * p<0.05, ** p<0.01, ***p<0.001, ****<p<0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Average number of eggs per individual C. elegans animal from assays shown in Figure 1B and C are plotted for each predator condition. We did not detect a significant effect of predator condition on the number of eggs laid (one-way ANOVA, p=0.14). Expected values are overlaid on plots as mean number of eggs ± 95% confidence intervals.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** We determined the log2 (Pnlp-29::GFP/Pcol-12::dsRed) relative to the mock condition mean from 2 to 6 hr. Relative fluorescence data were analyzed by ANOVA/linear regression as a two-way interaction of time as a continuous variable and predator condition. We detected a significant two-way interaction of predator condition and time (ANOVA p<2.2 × 10–16). To explore this interaction visually, observed fluorescence data are only plotted once per condition, but trendlines ± 95% confidence intervals are shown for each pairwise comparison of predator condition to mock control. In mock conditions, P. uniformis male and P. uniformis female conditions, we did not observe a significant relationship of fluorescence over time, but a positive relationship was observed for both P. pacificus strains. Pairwise comparisons at individual time points between predator and mock conditions were computed with correction for multiple testing using the single step method in the multcomp package in R as in Figure 1. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a) The number eggs laid off and on lawn was determined in different ratios of predator:prey (0:6 N=9 arenas, 1:5 N=8 arenas, 2:4, 3:3, 4:2, 5:1 all N=10 arenas). Plotted are observed P(off) in each ratio condition. <# off, #on>data were analyzed by logistic regression/analysis of deviance. Overlaid are model expected values of P(off)±95% confidence intervals. We detected a significant main effect of predator:prey ratio (likelihood ratio p<2.2 × 10–16). Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R. (b) The average number of eggs per individual C. elegans in the same arenas as (a) was calculated and data analyzed by ANOVA. Overlaid are mean values ± 95% confidence intervals. We did not detect a significant effect of predator:prey ratio on the number of eggs laid (ANOVA p=0.92). n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (a) The number of eggs laid off and on lawn was determined in arenas with lawns pre-conditioned with mock (sterile C. elegans) (N=7 arenas) or P. uniformis males (N=5 arenas) with six C. elegans per arena allowed to lay eggs for 2 hr. Plotted are observed values of P(off) with data further analyzed by logistic regression/analysis of deviance as in Figure 1 and Figure 1—figure supplement 2. Overlaid are logistic model estimates of the expected values of P(off)±95% confidence intervals. We did not detect a significant effect of lawn condition on P(off) (likelihood ratio p=0.73). (b) The average number of eggs per individual C. elegans animal in arenas in (a) was determined and is plotted for each condition, with data analyzed by ANOVA. Overlaid are mean estimates ± 95% confidence intervals. We did detect a significant increase to the average number of eggs laid in lawns conditioned by P. uniformis males (ANOVA p=0.03). *p<0.05.
 
 To observe whether predator biting affects C. elegans prey behavior, we chose several different types of predators: P. pacificus strains PS312 and RS5194, a St-only P. pacificus mutant TU445 eud-1(tu445) (Ragsdale et al., 2013), and an isolate of P. uniformis, JU1051. P. pacificus strain RS5194 is more aggressive than PS312 as characterized by an increased probability of bite per encounter (Quach and Chalasani, 2022) so both strains were included in this analysis. The St-only (non-predative) mutant was included to demonstrate whether biting was required for predators to alter C. elegans behavior. We also included the cohabiting predator P. uniformis. As a more naturalistic predator which has coevolved with C. elegans, we wondered how prey response to this predator may differ from P. pacificus. P. uniformis males and females were considered separately, while only hermaphrodite P. pacificus were used. We first tested if short-term predator exposure could alter where eggs were laid by determining the numbers of eggs on and off bacterial lawns in our experimental arenas. These tabulations allowed us to fit a logistic regression model (Materials and methods, Equations 1 and 2) that estimated the probability of off lawn egg laying (‘P(off)’) as a function of time and in interaction with various predators or other conditions. To prevent eggs hatching into L1s, which secrete pheromones that promote lawn leaving (Scott et al., 2017) this assay only ran for 6 hr. C. elegans in general showed an increase to P(off) over time regardless of predator condition although animals exposed to the aggressive strain P. pacificus RS5194 showed slightly higher P(off) at 6 hr compared to mock (C. elegans only 0.22, RS5194-exposed animals 0.29, p=0.043) (Figure 1—figure supplement 2). We also observed an increase to P(off) between 3 and 5 hr when exposed to P. uniformis females but by 6 hr P(off) in both mock control and P. uniformis female-exposed conditions appeared comparable.
 
@@ -41,27 +69,31 @@ We hypothesized that increasing predator exposure time would more greatly increa
 
 Next, we tested whether Pristionchus biting-induced injury was required for the change in C. elegans egg location. We used a C. elegans reporter strain expressing GFP (green fluorescent protein) under the control of an nlp-29 promoter. This strain (Pnlp-29::GFP) has been shown to increase GFP expression upon wounding the cuticle with a microinjection needle, a laser beam, or fungal infection (Pujol et al., 2008a; Pujol et al., 2008b). We paired each of the predators tested in our egg location assay with this reporter strain and monitored GFP fluorescence relative to the co-injection marker (Pcol-12::dsRED) (Figure 1c). We found that both isolates of P. pacificus (PS312 and RS5194) were able to increase reporter fluorescence in this reporter strain within 4 hr (Figure 1—figure supplement 4). In the 20 hr assay, C. elegans exposed to P. pacificus RS5194 were killed and could not be measured, but animals exposed to P. pacificus PS312 adults showed increased reporter fluorescence (Figure 1d). In contrast, the stenostomatus eud-1 mutant was unable to increase GFP fluorescence even after 20 hr. Notably, neither P. uniformis males nor females were able to increase GFP fluorescence in this Pnlp-29::GFP reporter strain. However, while it is difficult to confirm biting when the bites are relatively ineffective, C. elegans do appear to sense putative bites from P. uniformis by exhibiting escape response typical of other aversive stimuli (Quach and Chalasani, 2022; Hilliard et al., 2002; Video 1). It is possible that these bites are causing low level of harm without damaging the cuticle sufficiently to increase expression from the Pnlp-29::GFP reporter. We planned to use the C. elegans egg location assay for the remainder of our studies in non-fluorescent wildtype (WT) C. elegans and so chose a predator that does not lay eggs (P. uniformis males) in our assays (Figure 1e). Furthermore, failure to elicit a change in Pnlp-29::GFP fluorescence also indicated that changes to P(off) when exposed to P. uniformis animals in our egg location assay was not the result of extensive injury.
 
+![Video 1.](https://cdn.elifesciences.org/articles/83957/elife-83957-video1.mp4.jpg)
+
+**Video 1.:** Video showing P. uniformis and C. elegans on a bacterial lawn. C. elegans shows rapid avoidance responses to bites from P. uniformis.
+
 We next tested how the ratio of predators (P. uniformis males) to prey (C. elegans) affected the location of prey eggs and the expected value of P(off). While maintaining the same arena size and total number of animals (six), we altered the ratio of predators and prey. We found that the presence of even a single predator was able to increase the P(off) and adding additional predators resulted in greater increase to P(off), appearing to asymptote after ≥2 predators in the arena (Figure 1—figure supplement 5a). These changes to predator:prey ratio did not alter the overall abundance of C. elegans eggs (Figure 1—figure supplement 5b). These data are consistent with results in our previous study using P. pacificus (Quach and Chalasani, 2022).
 
 As exposure to P. uniformis males did not result in strong injury to C. elegans but nevertheless was associated with changes to off lawn egg laying, we wondered whether, rather than biting itself, this phenomenon was due to compounds secreted by the predator. We have previously shown that P. pacificus secretions are aversive to C. elegans (Liu et al., 2018). We tested whether P. uniformis was secreting an aversive chemical that drives C. elegans away from the bacterial lawn. We conditioned lawns with P. uniformis males or sterile C. elegans as a control (to simulate changes in lawn caused by animal movement) and tested whether naïve C. elegans would alter their egg location on these lawns. We were unable to detect a shift in P(off) as the result of exposure to P. uniformis-conditioned lawns (Figure 1—figure supplement 6a). We did detect, curiously, an increase to the overall number of C. elegans eggs, though this was likely driven by an outlier effect (Figure 1—figure supplement 6b). In these assays, C. elegans was allowed to lay eggs in the arena for 2 hr. These data suggest that P. uniformis males either do not secrete a C. elegans aversive signal that can account for the observed predator-induced change to egg location or that C. elegans requires substantially longer exposure to such a signal compared to P. pacificus.
 
-## Predator-induced changes to off lawn laying are associated with sustained avoidance of the lawn by prey
+### Predator-induced changes to off lawn laying are associated with sustained avoidance of the lawn by prey
 
 While C. elegans exhibits increased P(off) when occupying a lawn with predators, it may be that C. elegans is not truly avoiding the lawn in general, but simply altering its decision about where to lay its eggs. To determine where the prey themselves were located throughout the course of a predator exposure experiment, we used an imaging setup (WormWatcher) to monitor the locations of mScarlet-expressing C. elegans over 20 hr with images of acquired every 4 min (Figure 2a). We found that, when exposed to P. uniformis, C. elegans exhibited a shift in location to just outside the lawn boundary, starting at approximately 5–6 hr (Figure 2b). This shift in location was sustained in predator-containing arenas through the remainder of the 20 hr assay, while mock controls exposed only to other C. elegans remained mainly within the lawn. Thus, we infer that changes to P(off) observed in our egg location assays is likely a consequence of this sustained avoidance.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig2-v1.jpg)
 
-**Figure 2.:** C. elegans shows sustained avoidance of the lawn when exposed to predator.(a) Schematic for WormWatcher experiments for location tracking. Distance of midpoint of fluorescent C. elegans (strain ARM112, Peft-3::mScarlet) to center of the arena is tracked over 20 hr (15 frames per hour, tresolution = 4 min). (b) Worms tracked by WormWatcher included ARM112 strain C. elegans in mock (N=12 arenas), or predator (P. uniformis males, N=12 arenas), and are plotted as individual traces (thin lines, average position of all worms in an arena, range 2–6 worms per arena, average = 3), representing average distance from center in mm over time. Data were analyzed by non-parametric bootstrap resampling with replacement with 1×105 iterations. Bold lines represent the estimated average distance over time, with shading representing empirically determined 2.5–97.5% quantiles (95% interval) of bootstrap samples. p<0.05 significance can be inferred from regions of lack of overlap of bootstrapped intervals between mock and predator-exposed conditions, identified with lines above traces showing regions of 0% overlap. Regions with 0% overlap account for 71% of all time points, all occurring in the region >5 hr.Figure 2—source data 1.C. elegans.For each test arena, 20 hr (15 frames/hr, tresolution = 4 min) of tracking data are tabulated, showing frame number, time (in hr), arena, condition, number of worms tracked per time point, lawn radius (in pixels), distance of body midpoint to center of arena (in pixels), distance of body midpoint to edge of lawn (in pixels), position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 2.:** (a) Schematic for WormWatcher experiments for location tracking. Distance of midpoint of fluorescent C. elegans (strain ARM112, Peft-3::mScarlet) to center of the arena is tracked over 20 hr (15 frames per hour, tresolution = 4 min). (b) Worms tracked by WormWatcher included ARM112 strain C. elegans in mock (N=12 arenas), or predator (P. uniformis males, N=12 arenas), and are plotted as individual traces (thin lines, average position of all worms in an arena, range 2–6 worms per arena, average = 3), representing average distance from center in mm over time. Data were analyzed by non-parametric bootstrap resampling with replacement with 1×105 iterations. Bold lines represent the estimated average distance over time, with shading representing empirically determined 2.5–97.5% quantiles (95% interval) of bootstrap samples. p<0.05 significance can be inferred from regions of lack of overlap of bootstrapped intervals between mock and predator-exposed conditions, identified with lines above traces showing regions of 0% overlap. Regions with 0% overlap account for 71% of all time points, all occurring in the region >5 hr.
 
-## Change in bacterial topography alone contributes to, but does not account for, extent of egg location change
+### Change in bacterial topography alone contributes to, but does not account for, extent of egg location change
 
 We observed that arenas containing C. elegans hermaphrodites and P. uniformis males, but not controls, had streaks of bacteria outside the main lawn (Figure 1e). Given the duration of our assay, these streaks might represent bacteria that sticks on the C. elegans body and gets deposited onto the agar as it exits the lawn. Over the duration of the assay, these streaks grow and are visible to the naked eye by the end of the 20 hr period. We tested whether the presence of streaks outside the main lawn alone could account for the change in egg location. We artificially streaked bacterial lawns at the beginning of the assay and monitored the location of the eggs in these predator-free arenas (Figure 3b). Indeed, artificial streaking was able to induce an increase in P(off) nearly threefold, however this response was greater in arenas containing P. uniformis (Figure 3c). These data showed that the presence of bacteria outside the main lawn can drive egg location change but may not be the only contributor to the decision of where to lay eggs when exposed to predator.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig3-v1.jpg)
 
-**Figure 3.:** (a) Representative image of an assay plate after 20 hr with artificially streaked lawns. (b) Histograms of egg distributions in mock (N=14 arenas), artificially streaked (N=14 arenas), and predator-exposed (N=17 arenas) conditions. Bolded bars show average distribution of egg distance from center (in mm) with faint bars indicating the individual arena distributions. Lawn edge is marked at radial distance approximately 1.5 mm from center. (c) Distributions of eggs are quantified as [# off lawn, # on lawn] in each arena as in Figure 1, and the observed probability of off lawn laying (P(off)) is plotted in each condition, with data analyzed by logistic regression/analysis of deviance. Overlaid are logistic model estimates of the expected values of P(off)±95% confidence intervals. We detected a significant effect of condition (likelihood ratio p<2.2 × 10–16). Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 3—source data 1.For each test arena, data tabulate the arena, condition, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 3.:** (a) Representative image of an assay plate after 20 hr with artificially streaked lawns. (b) Histograms of egg distributions in mock (N=14 arenas), artificially streaked (N=14 arenas), and predator-exposed (N=17 arenas) conditions. Bolded bars show average distribution of egg distance from center (in mm) with faint bars indicating the individual arena distributions. Lawn edge is marked at radial distance approximately 1.5 mm from center. (c) Distributions of eggs are quantified as [# off lawn, # on lawn] in each arena as in Figure 1, and the observed probability of off lawn laying (P(off)) is plotted in each condition, with data analyzed by logistic regression/analysis of deviance. Overlaid are logistic model estimates of the expected values of P(off)±95% confidence intervals. We detected a significant effect of condition (likelihood ratio p<2.2 × 10–16). Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Egg location change lasts many hours even in the absence of predator
+### Egg location change lasts many hours even in the absence of predator
 
 Next, we tested whether changes to egg location persist even in the absence of predators. We ‘trained’ C. elegans prey in our egg location assay setup with P. uniformis males for 20 hr and transferred only the prey to a test arena. The position of eggs laid in the test arena was quantified over 6 hr and subjected to the same analyses as our other egg location assays, allowing us to test more nuanced hypotheses about the effect of recent exposure to predator.
 
@@ -69,7 +101,7 @@ We tested animals recently exposed to P. uniformis or mock (C. elegans only) con
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig4-v1.jpg)
 
-**Figure 4.:** (a) Schematic of egg laying learning assay: after 20 hr of exposure to either mock (C. elegans only) or predator condition (P. uniformis males), worms are transferred to arenas either completely filled with bacteria or arenas with a normal sized small lawn or a lawn with artificial streaks. In the predator-exposed condition, all three C. elegans are transferred, while in the mock condition, three C. elegans selected at random from among the six are transferred. (b) Analysis of distributional properties of C. elegans egg laying for 1–6 hr in arenas completely filled with bacteria after mock (N=8–9 arenas per time point), or predator exposure (N=9 arenas per time point). Plotted are the mean distance from lawn center in mm for each time point and condition. (c) Data points represent the coefficient of variation (standard deviation divided by the mean) for egg distances in (b) for each time point and for each condition. Data in (b) and (c) were analyzed by linear regression/ANOVA modeling interactions of time as continuous variable and predator exposure condition. Overlaid on plots are trendlines for each condition from linear models with shading showing 95% confidence intervals. We detected a significant main effect of time on both average distance from center (ANOVA p=3.0 × 10–6) as well as on the dispersal of the eggs measured by the coefficient of variation (ANOVA p=0.0016) but no significant main effect of predator condition (average distance, p=0.51; coefficient of variation, p=0.14) or interaction effects on either variable (average distance, p=0.76; coefficient of variation, p=0.97). (d) Analysis of off lawn egg laying in animals exploring small lawns or lawns with artificial streaks after 20 hr of mock or predator exposure. Data points in (d) represent observed P(off) in each time point and condition (N=9–12 arenas per time point/condition). Off lawn egg laying probability was analyzed by logistic regression/analysis of deviance modeling a three-way interaction between time as a continuous variable, lawn type, and predator exposure condition. We detected a significant three-way interaction between these independent variables (likelihood ratio p=1.5 × 10–7). Data in D–G were analyzed together as a single analysis paradigm, however to ease visual understanding of this interaction, pairwise comparisons between conditions are shown in separate panels D–G for: artificially streaked and small lawns for mock-exposed animals, predator vs. mock in small lawns, predator exposure/small lawns compared to the artificially streaked/mock-exposed animals, and finally artificially streaked lawns compared to small lawns for predator-exposed animals. Pairwise comparisons at individual time points between lawn types/conditions were computed with correction for multiple testing using the single step method in the multcomp package in R. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 4—source data 1.For each test arena, data tabulate the arena, condition, <x,y> coordinates in pixels, the egg distance from arena center in pixels, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, time in hr.Figure 4—source data 2.For each test arena, data tabulate the arena, predator exposure condition, lawn type, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm, time in hr.Figure 4—source data 3.Slopes showing the model estimates for temporal change per hour in mean distance from center (mm/hr) and coefficient of variation (units/hr) in Figure 4b and c in predator-exposed and control conditions.Figure 4—source data 4.Slopes showing the model estimates for temporal change per hour in log odds ratio () from logistic models in logp(off)1−p(off)Figure 4d in different conditions. On logit scale, a slope of +0.1 = 1.1-fold, 0.22=1.25-fold, +0.4 = 1.5-fold, +0.69 = 2-fold change in the P(off)/P(on) odds ratio.
+**Figure 4.:** (a) Schematic of egg laying learning assay: after 20 hr of exposure to either mock (C. elegans only) or predator condition (P. uniformis males), worms are transferred to arenas either completely filled with bacteria or arenas with a normal sized small lawn or a lawn with artificial streaks. In the predator-exposed condition, all three C. elegans are transferred, while in the mock condition, three C. elegans selected at random from among the six are transferred. (b) Analysis of distributional properties of C. elegans egg laying for 1–6 hr in arenas completely filled with bacteria after mock (N=8–9 arenas per time point), or predator exposure (N=9 arenas per time point). Plotted are the mean distance from lawn center in mm for each time point and condition. (c) Data points represent the coefficient of variation (standard deviation divided by the mean) for egg distances in (b) for each time point and for each condition. Data in (b) and (c) were analyzed by linear regression/ANOVA modeling interactions of time as continuous variable and predator exposure condition. Overlaid on plots are trendlines for each condition from linear models with shading showing 95% confidence intervals. We detected a significant main effect of time on both average distance from center (ANOVA p=3.0 × 10–6) as well as on the dispersal of the eggs measured by the coefficient of variation (ANOVA p=0.0016) but no significant main effect of predator condition (average distance, p=0.51; coefficient of variation, p=0.14) or interaction effects on either variable (average distance, p=0.76; coefficient of variation, p=0.97). (d) Analysis of off lawn egg laying in animals exploring small lawns or lawns with artificial streaks after 20 hr of mock or predator exposure. Data points in (d) represent observed P(off) in each time point and condition (N=9–12 arenas per time point/condition). Off lawn egg laying probability was analyzed by logistic regression/analysis of deviance modeling a three-way interaction between time as a continuous variable, lawn type, and predator exposure condition. We detected a significant three-way interaction between these independent variables (likelihood ratio p=1.5 × 10–7). Data in D–G were analyzed together as a single analysis paradigm, however to ease visual understanding of this interaction, pairwise comparisons between conditions are shown in separate panels D–G for: artificially streaked and small lawns for mock-exposed animals, predator vs. mock in small lawns, predator exposure/small lawns compared to the artificially streaked/mock-exposed animals, and finally artificially streaked lawns compared to small lawns for predator-exposed animals. Pairwise comparisons at individual time points between lawn types/conditions were computed with correction for multiple testing using the single step method in the multcomp package in R. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 When we tested artificial streaking (Figure 3), results suggested both effects of changes to bacterial topology and an interaction with the presence of P. uniformis males. We were curious about dynamics of this interaction in the absence of predator. We tested C. elegans recently exposed to predator or non-exposed controls in our learning paradigm in arenas containing either a small main lawn or a lawn with artificial streaks, and determined the number of eggs laid at 1–6 hr in independent arenas. We found a significant three-way interaction between time, recent predator exposure, and bacterial topology (Figure 4d). Animals exposed only to other C. elegans and then subsequently laying eggs in test arenas with small unperturbed lawns tended to have very low values of P(off) in general, which decayed negatively over time. By contrast, when tested in arenas with artificial streaks, not only was P(off) increased generally, but showed a positive relationship with off lawn laying increasing over time. When exposed to P. uniformis males and tested in arenas with unperturbed lawns, as expected animals did show a potentiation of P(off) and this potentiation to P(off) was comparable to that exhibited by C. elegans in the artificially streaked arenas at the early time points. However, in contrast to the temporal dynamics shown by changes to bacterial topology, P(off) was flatter with recent predator exposure across all time points. Finally, combining recent predator exposure and testing on lawns with artificial streaks showed the greatest potentiation to P(off) in general, with a similarly flat response over time. These results suggest that for at least 6 hr there are two separate phenomena: egg laying off the lawn driven by the presence of low concentrations of bacteria at a distance from the main lawn, and egg laying off the lawn driven by recent predator exposure. Predator exposure and artificial streaks together exhibit a combined effect on potentiating P(off) overall which is more than additive. With respect to the time evolution over 6 hr, recent predator exposure appears to trump the effects of bacterial topology, indicated by the relatively flat slopes in predator-exposed animals in either bacterial topological condition. The estimated slopes for these effects over time are shown in Figure 4—source data 4.
 
@@ -77,35 +109,43 @@ We wondered whether this elevation to P(off) would persist at even greater perio
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig5-v1.jpg)
 
-**Figure 5.:** (a) Schematic of egg laying learning assay. C. elegans are exposed to mock or predator condition (P. uniformis males) for 20 hr and transferred to a rest plate for 1, 2, or 24 hr. After rest, animals are transferred to a test arena containing artificial streaks as in Figure 4 and positions of laid eggs are determined in order to determine the proportion of eggs laid off and on the lawn. (b) Observed P(off) in test arenas is plotted by condition and length of rest period (mock/1 hr N=12 arenas, mock/2 hr N=15 arenas, mock/24 hr N=20 arenas, predator-exposed/1 hr N=12 arenas, predator-exposed/2 hr N=17 arenas, predator-exposed/24 hr N=19 arenas). Data were analyzed by logistic regression/analysis of deviance fitting a two-way interaction of categorical length of rest period (1–24 hr) and mock or predator condition, with expected values of P(off)±95% confidence intervals from logistic model overlaid on plot. We found a significant two-way interaction of rest period length and predator exposure condition (likelihood ratio p=3.4 × 10–11). (c) Log2 fold change in computed predator response is plotted for each rest time period, where predator response is defined as the change to the odds ratio of [off lawn/on lawn] egg laying between predator and mock conditions (see Materials and methods, Equations 1–3). These are displayed as point estimates with 95% confidence intervals as derived from logistic regression. Post hoc comparisons between conditions, as well as changes to predator response, with correction for multiple testing, were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 5—source data 1.For each test arena, data tabulate the arena, predator exposure condition, rest period, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 5.:** (a) Schematic of egg laying learning assay. C. elegans are exposed to mock or predator condition (P. uniformis males) for 20 hr and transferred to a rest plate for 1, 2, or 24 hr. After rest, animals are transferred to a test arena containing artificial streaks as in Figure 4 and positions of laid eggs are determined in order to determine the proportion of eggs laid off and on the lawn. (b) Observed P(off) in test arenas is plotted by condition and length of rest period (mock/1 hr N=12 arenas, mock/2 hr N=15 arenas, mock/24 hr N=20 arenas, predator-exposed/1 hr N=12 arenas, predator-exposed/2 hr N=17 arenas, predator-exposed/24 hr N=19 arenas). Data were analyzed by logistic regression/analysis of deviance fitting a two-way interaction of categorical length of rest period (1–24 hr) and mock or predator condition, with expected values of P(off)±95% confidence intervals from logistic model overlaid on plot. We found a significant two-way interaction of rest period length and predator exposure condition (likelihood ratio p=3.4 × 10–11). (c) Log2 fold change in computed predator response is plotted for each rest time period, where predator response is defined as the change to the odds ratio of [off lawn/on lawn] egg laying between predator and mock conditions (see Materials and methods, Equations 1–3). These are displayed as point estimates with 95% confidence intervals as derived from logistic regression. Post hoc comparisons between conditions, as well as changes to predator response, with correction for multiple testing, were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Biogenic amine signaling regulates off lawn laying behavior
+### Biogenic amine signaling regulates off lawn laying behavior
 
 Biogenic amines already are well established as modulators of egg laying behavior in general as well as egg laying during different locomotor modes (Alkema et al., 2005; Cermak et al., 2020; Horvitz et al., 1982). Additionally, biogenic amines are known to modulate behaviors over long time scales (Chase and Koelle, 2007), and the change in egg location behavior upon predator exposure appears to last for many hours. We hypothesized that egg laying behavior in response to predator might be subject to modulation by biogenic amines, and therefore tested mutants in genes required for their synthesis. We observed variable changes both to the baseline P(off) probabilities in animals not exposed to predator and to the magnitude of predator exposure response (Figure 6a–b). This is consistent with previous studies showing that dopamine and serotonin signaling is required for overall locomotion (Sawin et al., 2000; Flavell et al., 2013). In general, all mutants were able to show potentiation in P(off) when exposed to predator (Figure 6a). Mutants in the C. elegans homolog of the mammalian vesicular monoamine transporter, cat-1 (Duerr et al., 1999) exhibited a lower P(off) in the absence of predators. Although cat-1 mutant animals showed an increase to P(off) with predator exposure, the magnitude of predator response (as in Figure 5c) was lower than WT animals (Figure 6b). We also found that mutants in cat-2 (which encodes tyrosine hydroxylase for dopamine synthesis; Sulston et al., 1975; Lints and Emmons, 1999) and tph-1 (tryptophan hydroxylase for serotonin synthesis; Sze et al., 2000) had similar changes to baseline off lawn egg laying, but nevertheless increase P(off) in the presence of predator. This magnitude of increase was greater than WT in tph-1 mutants given the very low baseline P(off) in these animals in mock conditions, and the increase in cat-2(e1112) was similar in fold change magnitude compared to WT, again given their low baseline of P(off) in non-exposed conditions. Mutants in tbh-1 (which encodes tyramine beta-hydroxylase which converts tyramine into octopamine; Alkema et al., 2005) showed a similar baseline of P(off) to WT animals and a greater potentiation with predator. Mutants in tdc-1 (tyrosine decarboxylase, which converts tyrosine into tyramine) showed an elevation of P(off) in mock controls and a slight decrease in fold potentiation in the presence of predator compared to WT animals. Tyramine is known to inhibit egg laying (Alkema et al., 2005), however we did not detect significant changes to the number of eggs laid per C. elegans animals in tdc-1 mutants (not shown). Taken together, these data show that loss of biogenic amine neurotransmitters can modify off lawn egg laying behavior, attenuating or even increasing the observed response to predator, though these two phenomena were not so clearly separable. Loss of both dopamine and serotonin neurotransmitters in cat-1 mutants, however, not only reduced the general probability of off lawn laying but also contributed to the largest blunting of the predator response. We focused our remaining studies on dopaminergic signaling, but future work will investigate the role of serotonin signaling as serotonin has been previously shown to modify egg laying behavior (Schafer, 2005; Schafer, 2006).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig6-v1.jpg)
+
+**Figure 6.:** (a) Plotted are observed P(off) data for either mock or predator-exposed arenas in various mutants in biogenic amine synthesis genes (mock: wildtype [WT] N=17 arenas, cat-1(e1111) N=18, cat-2(e1112) N=13, tph-1(mg280) N=12, tbh-1(n3247) N=12, tdc-1(n3419) N=15, predator-exposed: WT N=16, cat-1(e1111) N=9, cat-2(e1112) N=12, tph-1(mg280) N=12, tbh-1(n3247) N=12, tdc-1(n3419) N=16). Data were analyzed by logistic regression/analysis of deviance fitting a two-way interaction of genotype and predator exposure, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant two-way interaction of genotype and predator exposure condition (likelihood ratio p<2.2 × 10–16). (b) Log2 predator response (as in Figure 5 and Materials and methods, Equation 3) is plotted as point estimates with error bars showing 95% confidence intervals across genotypes. (c) Observed P(off) data in mock or predator-exposed conditions in WT or two cat-2 mutant alleles n4547 and e1112 (mock N=9 arenas per genotype, predator N=8 arenas per genotype). Data analyzed as in (a) with overlaid expected values for P(off) from the logistic model±95% confidence intervals. We failed to detect a significant interaction between genotype and predator condition (likelihood ratio p=0.22) but we were able to detect a main effect of genotype (p<2.2 × 10–6) and a main effect of predator exposure (p<2.2 × 10–6). (d) Log2 predator response across genotypes as in (b). (e) Observed P(off) in WT or cat-2(e1112) mutant animals with or without transgenic rescue of cat-2 cDNA in either ADE/PDE or CEP neurons (mock/WT N=11 arenas, predator/WT N=10 arenas, mock/cat-2(e1112) N=10 arenas, predator/cat-2(e1112) N=11 arenas, cat-2(e1112); p27::cat-2-sl2-GFP (ADE/PDE) N=10 arenas for each condition, cat-2(e1112); Pdat-1p19::cat-2-sl2-GFP (CEP) N=11 arenas per condition). Data analyzed as in (a, c) with overlaid expected values for P(off) from the logistic model±95% confidence intervals. We detected a significant two-way interaction of genotype and predator exposure condition (likelihood ratio p<2.2 × 10–16). (f) Log2 predator response as described in (b) and (d) across genotype/transgenic rescue conditions. Post hoc with correction for multiple testing, were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) WormWatcher data tracking position (15 frames per hour, tresolution = 4 min) in ARM112 mScarlet-expressing C. elegans (‘wildtype [WT]’) exposed to mock (N=8 arenas) or predator (N=8 arenas) over the course of 20 hr. (b) Position tracking of ARM112 animals crossed into the cat-2(e1112) mutant background in mock (N=8) or predator (N=9) conditions. Data in (a, b) are plotted as individual traces (thin lines) representing average distance from center over time per arena. Data were analyzed by non-parametric bootstrap resampling with replacement with 1×105 iterations. Bold lines represent the estimated average distance over time, with shading representing empirically determined 2.5–97.5% quantiles (95% interval) of bootstrap samples. p<0.05 significance can be inferred from regions of lack of overlap of bootstrapped intervals between mock and predator-exposed conditions, identified with lines above traces showing regions of 0% overlap, accounting for 63% of all time points in (a) and 38% of time points in (b). (c) The bootstrap estimates for the magnitude of change between predator-mock distance from center in both genotypes. (d, e) WormWatcher data tracking position as in (a, b) in either WT ARM112 controls or ARM112 crossed into the dat-1(ok157) mutant background. Lack of bootstrap confidence interval overlap between conditions is evident for 76% of all time points for WT and 82% of all time points for dat-1(ok157) mutants. (f) Bootstrap estimates for the magnitude of change between predator-mock distance from center in both genotypes.
 
 We continued to investigate the consequence of loss of dopamine synthesis by testing a second mutant allele of cat-2, n4547. Both cat-2 mutants showed a similar reduction to baseline P(off) in mock conditions (Figure 6c), and a similar magnitude of predator response (Figure 6d). In C. elegans adult hermaphrodites, CAT-2 protein is expressed by eight neurons (four CEPs, two ADEs and PDEs), and dopamine signaling has been previously shown to affect modulation of locomotion as well as learning (Chase and Koelle, 2007). Additionally, analysis of the dopamine transporter promoter has identified specific elements that drive expression of transgenes in subsets of these dopaminergic neurons (Flames and Hobert, 2009). Using these cell-selective promoter elements, we expressed full-length coding sequence of the cat-2 cDNA under either CEP- or ADE/PDE-specific promoters. Transgenic rescue in ADE/PDE partially restored baseline P(off) in mock controls (Figure 6e), with rescue in CEP neurons resulting in the greatest increase to baseline P(off), even greater than WT levels. In this particular experiment, cat-2(e1112) mutants did in fact show a blunted predator response even though this metric accounts for the reduced levels of baseline P(off) in the mock condition, and both rescues also show significantly lower predator response compared to WT (Figure 6f). This indicates some variability in absolute loss of dopamine synthesis on modulating predator response vs. modulating off lawn egg laying in general. The cohorts of cat-2 mutants used in Figure 6a–b, Figure 6c–d, as well as the results shown in Figure 7 described below, indicate that changes to the underlying probability of laying eggs off the lawn is likely driving any observed effects to predator response. Additionally, differences in promoter strength used to drive expression of cat-2 may explain why dopaminergic cell types show differing ability to restore baseline P(off). Nevertheless, it is clear that re-expression of CAT-2 protein in either ADE/PDE or CEP is only sufficient to at least partially restore baseline off lawn egg laying behavior.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig7-v1.jpg)
 
-**Figure 7.:** (a) Schematic of the egg laying learning assay. C. elegans exposed to either mock or predator condition for 20 hr are transferred to testing arenas containing artificially streaked bacteria with or without the addition of 2 mM dopamine. (b) Observed P(off) data are plotted for each genotype, predator exposure, and presence of exogenous dopamine (N=11 arenas all conditions except cat-2(e1112)/mock/+3 mM dopamine condition which had N=10 arenas). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a three-way interaction of genotype, predator exposure, and dopamine, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant three-way interaction of genotype, predator exposure, and dopamine (likelihood ratio p=0.0006). (c) Log2 predator response±95% confidence intervals (as in Figures 5–6, see Materials and methods, Equation 3) in each genotype with and without addition of 2 mM dopamine. Post hoc with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 7—source data 1.cat-2(e1112) mutants with and without predator exposure and addition of 3 mM dopamine.For each test arena, data tabulate the arena, predator exposure condition, genotype, dopamine addition, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 7.:** (a) Schematic of the egg laying learning assay. C. elegans exposed to either mock or predator condition for 20 hr are transferred to testing arenas containing artificially streaked bacteria with or without the addition of 2 mM dopamine. (b) Observed P(off) data are plotted for each genotype, predator exposure, and presence of exogenous dopamine (N=11 arenas all conditions except cat-2(e1112)/mock/+3 mM dopamine condition which had N=10 arenas). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a three-way interaction of genotype, predator exposure, and dopamine, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant three-way interaction of genotype, predator exposure, and dopamine (likelihood ratio p=0.0006). (c) Log2 predator response±95% confidence intervals (as in Figures 5–6, see Materials and methods, Equation 3) in each genotype with and without addition of 2 mM dopamine. Post hoc with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 We also monitored locomotor activity of cat-2(e1112) animals over the course of 20 hr using the WormWatcher imager. Mutants were still capable of elevating distance from center upon predator exposure. However, there were approximately 40% fewer time points at which mutants differed between mock and predator-exposed conditions as compared to controls (Figure 6—figure supplement 1a–b). When computing confidence intervals for the fold increase (change between predator and mock conditions), both cat-2(e1112) mutants and WT exhibited similar response, though cat-2 mutants did show lower magnitudes of change at a few time points (Figure 6—figure supplement 1c). A mutant in the dopamine reuptake transporter gene dat-1, which has increased amounts of dopamine at synapses (Nass et al., 2005; Carvelli et al., 2004), showed a nearly identical response to WT animals (Figure 6—figure supplement 1d–f). Toward the end of the 20 hr observation period, however, dat-1 mutants in the mock condition began to move away from the lawn, consistent with the role of excess dopamine in altering locomotion (Hills et al., 2004; Chase and Koelle, 2007; Calhoun et al., 2015). These results suggest that dopamine signaling is required for off lawn exploration and changes in this pathway likely affects both animal position and egg laying distribution.
 
 Next, we hypothesized that adding exogenous dopamine would restore normal egg laying to cat-2 dopamine deficient mutants. To test our hypothesis, we first exposed WT and cat-2 mutant C. elegans to P. uniformis males for 20 hr (training) and then transferred them to a plate with a lawn and artificial streaks (as in Figures 5–6) with and without exogenous dopamine (Figure 7a). This assay setup avoids exogenous dopamine from altering P. uniformis behavior, and leverages our data that prey responses persist for 24 hr even without predators. Previously 2 mM exogenous dopamine has been shown to rescue basal slowing upon encountering food (Sawin et al., 2000) and density pattern discrimination of PDMS pillars (Han et al., 2017) in cat-2 mutants. Consistent with our previous results, cat-2 mutants exhibited reduced off lawn egg laying in both control and predator-exposed conditions (Figure 7b). We found that adding 2 mM dopamine restored normal off lawn egg laying in both of these conditions. In the case of cat-2 mutants, addition of exogenous dopamine restored baseline P(off) to significantly greater levels than in WT, and thus exhibited a net reduction the predator response (Figure 7c). Together, these data suggest that dopamine signaling is required for off lawn egg laying in both control and predator-exposed conditions.
 
-## Dopamine receptor signaling alters both baseline and predator-evoked egg laying behavior
+### Dopamine receptor signaling alters both baseline and predator-evoked egg laying behavior
 
 Complete loss of dopamine synthesis appeared to primarily affect baseline levels of egg laying activity off the bacterial lawn, so we next explored the roles of the cognate dopamine receptors in modifying this behavior. The C. elegans genome encodes at least four dopamine receptors (dop-1, -2, -3, and -4) with viable mutants in each (Chase and Koelle, 2007). These receptors each have multiple protein isoforms whose sequence alignments are depicted in Figure 8a. C. elegans DOP-1 is a homolog of the mammalian D1-like receptors and DOP-2/3 are homologs of mammalian D2-like receptors (Chase and Koelle, 2007). DOP-4 is also D1-like, however this receptor belongs to a unique invertebrate family of D1-like including receptors found in Drosophila melanogaster and Apis mellifera (Sugiura et al., 2005). We tested single mutants in each of these four receptors in our egg location assay along with a quadruple mutant that lacked all four receptors. P(off) was increased with exposure to predator in all cases (Figure 8b). Complete loss of all four receptors was associated with a trend to reduce the baseline of P(off) in mock controls (p=0.08 after multiple testing correction) and did not show a significant change to the predator response compared to WT (Figure 8c), which were similar effects observed when removing dopamine synthesis. Loss of individual receptors had varying results. Loss of dop-1, dop-2, dop-3 all elevated baseline P(off) to varying degrees (Figure 8b) and showed concomitant reductions to the magnitude of predator-induced fold increases (Figure 8c). Thus, loss of single receptors, though able to modulate overall fold change in P(off) when predator was present, still appeared to do so as a consequence of changes to background. Only dop-4 single mutants show mock condition P(off) not significantly distinct from WT and also showed comparable predator-evoked response.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig8-v1.jpg)
 
-**Figure 8.:** (a) CLUSTAL Omega multiple protein sequence alignment of the three isoforms of dopaminergic receptors DOP-1, the six of DOP-2, the three of DOP-3, and DOP-4 are shown visually as a colormap where black squares represent sequence alignment gaps, and amino acids colors are grouped by type (e.g. uncharged, charged). (b) Observed P(off) data are shown for the mock and predator-exposed conditions in WT (mock N=12 arenas, predator N=11 arenas), a quadruple mutant for all four receptor genes (N=10/condition), and single receptor mutants dop-1(vs100) (N=12/condition), dop-2(vs105) (mock N=12, predator N=11), dop-3(vs106) (mock N=12, predator N=11), and dop-4(ok1321) (mock N=11, predator N=12). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a two-way interaction of genotype and predator exposure, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p<2.2 × 10–6). (c) Log2 predator response±95% confidence intervals as in Figures 5—7 (see Materials and methods, Equation 3) across genotypes. Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 8—source data 1.FASTA format for amino acid sequences of DOP-1, DOP-2, DOP-3, DOP-4 proteins, and isoforms obtained from Wormbase.Figure 8—source data 2.For each test arena, data tabulate the arena, predator exposure condition, genotype, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 8.:** (a) CLUSTAL Omega multiple protein sequence alignment of the three isoforms of dopaminergic receptors DOP-1, the six of DOP-2, the three of DOP-3, and DOP-4 are shown visually as a colormap where black squares represent sequence alignment gaps, and amino acids colors are grouped by type (e.g. uncharged, charged). (b) Observed P(off) data are shown for the mock and predator-exposed conditions in WT (mock N=12 arenas, predator N=11 arenas), a quadruple mutant for all four receptor genes (N=10/condition), and single receptor mutants dop-1(vs100) (N=12/condition), dop-2(vs105) (mock N=12, predator N=11), dop-3(vs106) (mock N=12, predator N=11), and dop-4(ok1321) (mock N=11, predator N=12). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a two-way interaction of genotype and predator exposure, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p<2.2 × 10–6). (c) Log2 predator response±95% confidence intervals as in Figures 5—7 (see Materials and methods, Equation 3) across genotypes. Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Since dopamine receptors are known to exist as heteromers (Perreault et al., 2014), we analyzed mutants in pairwise combinations. Again, all combinations of two dop- mutants showed an elevation of P(off) when predator was present (Figure 9a). These combinations also had differing effects on baseline P(off) in mock controls. dop-1;dop-4 mutants were the most similar to WT. dop-1;dop-2, dop-2;dop-4, and dop-2;dop-3 all showed elevation of baseline off lawn egg laying activity relative to WT, and dop-1;dop-3 and dop-3;dop-4 showed reductions to baseline P(off). The magnitude of predator response in these mutant combinations is shown ordered from highest to lowest in Figure 9b. WT and dop-3;dop-4 double mutants show the highest fold change increase in P(off) relative to their respective mock controls. All combinations containing dop-4 rank intermediate with dop-2;dop-3 and dop-1;dop-3 ranking lowest. Other than dop-3;dop-4, all other combinations showed reduction to predator response relative to WT.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/83957/elife-83957-fig9-v1.jpg)
 
-**Figure 9.:** (a) Observed P(off) data are shown for mock and predator-exposed conditions in WT or various pairwise combinations of dopamine receptor mutants (N=12 arenas per condition except mock/dop-2(vs105);dop-4(ok1321) N=9, and predator/dop-2(vs105);dop-4(ok1321) N=10). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a two-way interaction of genotype and predator exposure, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p<2.2 × 10-6). (b) Log2 predator response±95% confidence intervals as in Figures 5—8 (see Materials and methods, Equation 3) across receptor mutant combinations. Below (b) is shown a qualitative visualization of the predator response ranked from highest to lowest. (c) Observed P(off) data shown for mock and predator-exposed conditions in WT, a triple mutant dop-1(vs100);dop-2(vs105);dop-3(vs106), and a quadruple mutant in all four dop- genes (N=10 arenas per condition except mock/quadruple mutant N=9). Data analyzed as in (a) with overlaid expected values for P(off)±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p=2 × 10–13). (d) Log2 predator response±95% confidence intervals as in (b). Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 9—source data 1.For each test arena, data tabulate the arena, predator exposure condition, genotype, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.Figure 9—source data 2.For each test arena, data tabulate the arena, predator exposure condition, genotype, <x,y> coordinates in pixels, lawn radius in pixels, the egg distance from arena center in pixels, the egg distance from lawn edge in pixels, position as 1 (off) or 0 (on) lawn, the conversion factor for pixel data in mm-per-pixel, the calculated distance from center in mm, the calculated distance from the lawn edge in mm.
+**Figure 9.:** (a) Observed P(off) data are shown for mock and predator-exposed conditions in WT or various pairwise combinations of dopamine receptor mutants (N=12 arenas per condition except mock/dop-2(vs105);dop-4(ok1321) N=9, and predator/dop-2(vs105);dop-4(ok1321) N=10). Data were analyzed as in previous figures by logistic regression/analysis of deviance fitting a two-way interaction of genotype and predator exposure, with overlaid expected values of P(off) from logistic modeling±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p<2.2 × 10-6). (b) Log2 predator response±95% confidence intervals as in Figures 5—8 (see Materials and methods, Equation 3) across receptor mutant combinations. Below (b) is shown a qualitative visualization of the predator response ranked from highest to lowest. (c) Observed P(off) data shown for mock and predator-exposed conditions in WT, a triple mutant dop-1(vs100);dop-2(vs105);dop-3(vs106), and a quadruple mutant in all four dop- genes (N=10 arenas per condition except mock/quadruple mutant N=9). Data analyzed as in (a) with overlaid expected values for P(off)±95% confidence intervals. We detected a significant two-way interaction of genotype and predator condition (likelihood ratio p=2 × 10–13). (d) Log2 predator response±95% confidence intervals as in (b). Post hoc comparisons with correction for multiple testing were computed using the single step method in the multcomp package in R as in previous figures. n.s.=p>0.1, †=p<0.1, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 The ranked magnitudes of fold change in predator-exposed conditions suggested that combinations with dop-4 mutants were intermediate or closer to WT response level, regardless of changes to baseline P(off). To test the hypothesis of the presence or absence of just dop-4 influencing predator-evoked behavior, we performed an experiment comparing triple mutant animals in dop-1;dop-2;dop-3 to quadruple mutants of all four receptors (Figure 9c). Once again, the quadruple mutant showed reduction to the baseline P(off) in the mock control as in Figure 8, however, the triple mutant showed a comparable level of off lawn laying in the mock condition relative to WT. This enabled us to more easily interpret the significant reduction to predator response observed when comparing the triple mutant to the quadruple mutant or WT (Figure 9f). Taken together, dopaminergic receptor signaling can affect both baseline off lawn laying activity and predator response, and the specific exclusion of dop-1, dop-2, and dop-3 from the assembly of available receptors modulates predator response while maintaining otherwise normal levels of egg laying activity.
 
@@ -119,7 +159,7 @@ CEP neurons have been previously implicated in learning the size of bacterial la
 
 We observe a role for multiple dopamine receptors in this prey response to predator threat. The C. elegans genome encodes at least four dopamine receptors (Hobert, 2013). While DOP-1 and DOP-2/3 are the C. elegans homologs of the mammalian D1-like and D2-like receptors respectively, DOP-4 is a D1-like receptor unique to invertebrates (Sugiura et al., 2005; Chase et al., 2004). We find that the dop-1; dop-2; dop-3 triple mutant animals have a reduced response to predator threat while maintaining normal off lawn egg laying behavior. Complete loss of all four receptors, or the double loss of dop-3 and dop-4, results in greatest reductions to baseline off lawn laying. Studies in mammals where pharmacology and receptor knockouts have shown that knockouts in D1- and D2-like receptors can have opposing effects on behavior (Sugiura et al., 2005; Kelly et al., 1998; Gong et al., 1999; McNamara et al., 2003). Here, we show that specific combinations of receptors can exert varying effects. While we did not identify the site of action of these receptors, we suggest that the combined action of DOP-1, -2, and -3 receptors act downstream of dopamine release to alter prey egg location in predator-exposed animals.
 
-## Ideas and speculation
+### Ideas and speculation
 
 We speculate that responses by C. elegans to predator exposure fit within the broader context of prey refuge, wherein a prey adopts a strategy to reduce predation risk. The prey refuge brings with it the potential cost of decreased feeding opportunities, which is weighed against the benefit of minimal harm induced by the predator (Sih, 1987). This theoretical framework is consistent with the interactions we find between predator and changes to bacterial topology. Predator-exposed C. elegans shift egg to streaks away from a central lawn, and this strategy may lower the encounter probability with Pristionchus thus minimizing risk to the prey. This is especially so given the observations we have previously made that Pristionchus predators prefer to patrol a main lawn when it is available, thus leaving refuges open for exploitation by C. elegans (Quach and Chalasani, 2022). However, such refuges afforded by these streaks may have detriment to C. elegans fitness due to their lower density of available food, and longer term monitoring of health and fitness of prey in these conditions has yet to be tested. Variations to the number of available refuges for fleeing prey, as well as their local food density and quality, can be modified in the future to gain a better appreciation for this intriguing model of prey risk minimization strategy in C. elegans.
 
@@ -133,78 +173,314 @@ In summary, after predator exposure, C. elegans lays eggs in areas of high food 
 
 ## Materials and methods
 
-## C. elegans and Pristionchus spp. strains
+### C. elegans and Pristionchus spp. strains
 
 Nematode strains used in this study are shown in the following table. Mutant crosses generated for this study in the table below available upon request (CGC = Caenorhabditis Genetics Center).
 
-## Nematode growth
+<table>
+  <thead>
+    <tr>
+      <th>Strain Name</th>
+      <th>Source</th>
+      <th>Genotype</th>
+      <th>Figure</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>Wildtype</td>
+      <td>Figure 1—figure supplements 5–6, Figures 2—92—92—9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CX7389</td>
+      <td>Quach and Chalasani, 2022</td>
+      <td>kyIs392 [Pstr-2::GFP::rab-3; Pttx-3::lin-10::dsRed; Pelt-2::GFP]</td>
+      <td>Figure 1b–c, Figure 1—figure supplements 2 and 3</td>
+      <td>Fluorescent eggs</td>
+    </tr>
+    <tr>
+      <td>CZ6326</td>
+      <td>Pujol et al., 2008a; Pujol et al., 2008b</td>
+      <td>frIs7 [nlp-29p::GFP+col-12p::DsRed] IV</td>
+      <td>Figure 1d–e, Figure 1—figure supplement 4</td>
+      <td>Injury reporter</td>
+    </tr>
+    <tr>
+      <td>ARM112</td>
+      <td>CGC</td>
+      <td>wamSi112 [eft-3p::mScarlet::unc-54 3'UTR+Cbr-unc-119(+)] II; unc-119(ed3) III</td>
+      <td>Figure 2, Figure 6—figure supplement 1</td>
+      <td>WT whole-body fluorescent strain</td>
+    </tr>
+    <tr>
+      <td>IV983</td>
+      <td>This study</td>
+      <td>cat-2(e1112) wamSi112[eftp-3::mScarlet::unc-54 3'UTR+Cbr-unc-119(+)] II</td>
+      <td>Figure 6—figure supplement 1</td>
+      <td>cat-2 mutant crossed into ARM112 background</td>
+    </tr>
+    <tr>
+      <td>IV988</td>
+      <td>This study</td>
+      <td>wamSi112[eftp-3::mScarlet::unc-54 3'UTR+Cbr-unc-119(+)] II; dat-1(ok157) III</td>
+      <td>Figure 6—figure supplement 1</td>
+      <td>dat-1 mutant crossed in ARM112 background</td>
+    </tr>
+    <tr>
+      <td>CB1111</td>
+      <td>CGC</td>
+      <td>cat-1(e1111) X</td>
+      <td>Figure 6a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB1112</td>
+      <td>CGC</td>
+      <td>cat-2(e1112) II</td>
+      <td>Figures 6, 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT13113</td>
+      <td>CGC</td>
+      <td>tdc-1(n3419) II</td>
+      <td>Figure 6a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT15434</td>
+      <td>CGC</td>
+      <td>tph-1(mg280) II</td>
+      <td>Figure 6a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT9455</td>
+      <td>CGC</td>
+      <td>tbh-1(n3247) X</td>
+      <td>Figure 6a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT15620</td>
+      <td>CGC</td>
+      <td>cat-2(n4547) II</td>
+      <td>Figure 6c–d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV111</td>
+      <td>Calhoun et al., 2015</td>
+      <td>cat-2(e1112) II; ueEx51 [p27::cat-2-sl2-GFP; Pelt-2::GFP]</td>
+      <td>Figure 6e–f</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV552</td>
+      <td>Calhoun et al., 2015</td>
+      <td>cat-2(e1112) II; ueEx355 [Pdat-1p19::cat-2-sl2-GFP; Pelt-2::GFP]</td>
+      <td>Figure 6e–f</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX645</td>
+      <td>CGC</td>
+      <td>dop-1(vs100) X</td>
+      <td>Figure 8b–c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX702</td>
+      <td>CGC</td>
+      <td>dop-2(vs105) V</td>
+      <td>Figure 8b–c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX703</td>
+      <td>CGC</td>
+      <td>dop-3(vs106) X</td>
+      <td>Figure 8b–c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RB1254</td>
+      <td>CGC</td>
+      <td>C52B11.3(ok1321) X</td>
+      <td>Figure 8b–c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX705</td>
+      <td>CGC</td>
+      <td>dop-1(vs100);dop-3(vs106) X</td>
+      <td>Figure 9a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX706</td>
+      <td>CGC</td>
+      <td>dop-2(vs105) V; dop-1(vs100) X</td>
+      <td>Figure 9a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV984</td>
+      <td>This study</td>
+      <td>dop-4(ok1321);dop-1(vs100) X</td>
+      <td>Figure 9a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV985</td>
+      <td>This study</td>
+      <td>dop-2(vs105) V;dop-4(ok1321) X</td>
+      <td>Figure 9a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IV986</td>
+      <td>This study</td>
+      <td>dop-4(ok1321) dop-3(vs106) X</td>
+      <td>Figure 9a–b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX734</td>
+      <td>CGC</td>
+      <td>dop-2(vs105) V; dop-1(vs100); dop-3(vs106) X.</td>
+      <td>Figure 9c–d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CF2805</td>
+      <td>CGC</td>
+      <td>dop-2(vs105) V; dop-4(ok1321) dop-1(vs100) dop-3(vs106) X</td>
+      <td>Figure 8b–c, Figure 9c–d</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CF1903</td>
+      <td>CGC</td>
+      <td>glp-1(e2144) III</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JU1051</td>
+      <td>From Marie-Anne Félix (Félix et al., 2013)</td>
+      <td>P. uniformis wild isolate</td>
+      <td>Figures 1—9 and figure supplements</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PS312</td>
+      <td>From Ralf J Sommer (Click et al., 2009)</td>
+      <td>P. pacificus California isolate</td>
+      <td>Figure 1b–e, Figure 1—figure supplement 1, Figure 1—figure supplements 1–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RS5194</td>
+      <td>From Ralf J Sommer (Click et al., 2009)</td>
+      <td>P. pacificus Japanese isolate</td>
+      <td>Figure 1b–e, Figure 1—figure supplements 2–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TU445</td>
+      <td>From Ralf J Sommer (Ragsdale et al., 2013)</td>
+      <td>P. pacificus eud-1(tu445) X</td>
+      <td>Figure 1b–e, Figure 1—figure supplements 2–4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Nematode growth
 
 Nematode strains were maintained at 20°C on 6 cm Petri plates containing Nematode Growth Medium (NGM) seeded with Escherichia coli OP50 bacteria (CGC) as food (Brenner, 1974).
 
-## Egg location assay
+### Egg location assay
 
 Assay plates are created by spotting 0.5 µl of OP50 liquid culture (OD600=0.5) on 35 mm standard NGM plates (Brenner, 1974). The bacterial lawns are allowed to grow at 20°C for 30 hr, then stored for up to 1 month at 4°C. Whatman filter paper with ¼" punch forms the ‘corral’ and encircles the lawn, allowing approximately 1.5 mm of clean agar in between the lawn edge and the corral edge. All animals are allowed to crawl on a clean section of agar to clean them of bacteria and picked to the assay plate using a sanitized eyelash, placed next to the lawn on a clean area of agar. Three predators are picked first, staged by overall size and pigment development as J4s. Then, three C. elegans L4s are picked to the assay plate. The animals are allowed to interact for a determined amount of time, 20 hr for an overnight assay, at 20°C. For short-term exposure (6 hr and under), gravid C. elegans adults and adult predators are used by picking L4s or J4s the day before to plates with plenty of food. The juveniles are allowed to grow overnight into adulthood and then used in the same assay setup. After their interaction, corrals and all adults are removed from the plate and the area inside the corral is imaged using an AxioZoom V16 (ZEISS).
 
 For the streaked lawn variation, streaks are formed by gently dragging a sanitized eyelash through the center of the lawn in radial streaks 10 times, followed by two concentric circular streaks halfway between the lawn and the corral edge. The streaked lawn is then used immediately.
 
-## Injury assay
+### Injury assay
 
 Injury assays are set up in the same way as the egg location assays, using a C. elegans strain containing the array frIs7 [Pnlp-29::GFP+Pcol-12::DsRed]. After the set interaction time, worms are immobilized by placing the plates on ice and imaged on an AxioZoom V16 (ZEISS) within 1 hr, with exposure times kept constant for fluorescence imaging (25 ms).
 
-## Learning assay
+### Learning assay
 
 C. elegans are trained using the 20 hr egg location assay. At the same time as the animals used for training are transferred to their assay plates, test plates are set up. Three types of test plates are used: a filled lawn (10 µl of OP50 [OD600=0.5]), a streaked lawn (same as the streaked lawn variant of the egg location assay), and a small lawn (same as the original assay plate). The training plates with animals on them and the test plates are incubated at 20°C for 20 hr, during which the C. elegans is exposed to JU1051 males and the smears on the test plates are allowed to grow. (The bacteria on the other test plates are also allowed to grow at this time so that the bacteria are at a similar metabolic state and density across test plates, and streaks are already present.) Filter paper corrals like those used in the egg location assay are centered over the test plate lawns.
 
 After the C. elegans are incubated in their training conditions for 20 hr, they are carefully removed with an eyelash pick from their training plates to a clean section of an NGM plate. The animal is allowed to crawl for a few seconds to remove bacteria and then picked to a test plate halfway between the central lawn and the corral edge. For the filled test lawns, the animals are placed in an equivalent position relative to the corral edge. The test plates are then imaged every hour on an AxioZoom V16 for 6 hr. For the variant including rest plates, the C. elegans are picked from their training plate to rest plates (‘filled lawn’ plates) for the set rest time. They are then transferred to a streaked lawn test plate and egg locations are observed after 2 hr. In learning experiments, all three C. elegans in predator-exposed conditions are transferred to a rest plate or test arena. In mock controls, where there are six C. elegans present, three C. elegans are selected randomly for transfer.
 
-## Exogenous dopamine assay
+### Exogenous dopamine assay
 
 When adding exogenous dopamine to the learning assay, a 200 mM stock of dopamine hydrochloride (Code 122000100 Lot: A0427132, CAS: 62-31-7, Acros Organics) in water was prepared. Two hours before the trained worms needed to be transferred to the test plates, 50 µl of the dopamine stock or water as a control was gently applied onto the streaked lawn test plate. The plates were allowed to diffuse and dry with the lids off for 2 hr, at which time the trained worms were transferred to the test plates. The trained worms were allowed to lay eggs for 2 hr before their plates were imaged.
 
-## Egg location image quantification
+### Egg location image quantification
 
 Egg location images are quantified in FIJI with the experimenter blinded to the condition by randomizing the file order and obscuring the filenames (using the Filename_Randomizer macro found at https://imagej.nih.gov/ij/macros/Filename_Randomizer.txt). Eggs are manually selected with the multipoint tool and lawns are selected as circles. Distances from each egg from to the lawn edge are calculated in Python. All assays are performed with their relevant controls over at least 3 separate days.
 
-## WormWatcher assays
+### WormWatcher assays
 
 Assays conducted in the WormWatcher (Tau Scientific Instruments, West Berlin, NJ, USA) were performed on a single 6 cm 2.5% agar NGM plate in a 12-arena setup. The 12-well corral was created by cutting a 3×4 array of ¼" circles into a plastic sheet using a Cricut machine. OP50 was spotted in the 3×4 pattern using the same concentration and allowed to grow for the same amount of time as in the egg location assay although in this setup lawn radii averaged approximately 1.2 mm as compared to 1.5 mm in other assays. The increased agar percentage on the WormWatcher plates helped prevent worms from escaping under the plastic edges of the corral.
 
 The assays were set up like the egg location assays, with three L4 C. elegans and three J4 JU1051 males or six L4 C. elegans in control arenas. The positions of predator-containing and/or mutant-containing arenas were alternated on different assay days. The WormWatcher was set to acquire fluorescent frames with a green LED excitation light every 4 min. A reference darkfield image was acquired before and after every experiment to reference the positions of the arenas and the size and positions of the lawns. After the experiment was completed, each arena was inspected and imaged to determine whether any worms escaped away or into it. Custom code was written to segment the C. elegans and arenas in each position and the median distance from the lawn edge to the midpoint of each worm body per well was recorded. Data from arenas were discarded if two worms had escaped from an arena, or if a P. uniformis was seen in a control arena.
 
-## Pristionchus mouthform analysis
+### Pristionchus mouthform analysis
 
 Pristionchus mouthform analysis was performed as reported in Werner et al., 2017. Briefly, Pristionchus were egg-prepped via bleaching and eggs were cultured either on standard solid NGM plates or in liquid culture. After eggs reached adulthood, they were immobilized on agarose slides with sodium azide. The slides of different strains from different culture conditions were mixed and their labels obscured while they were observed. The slides were scored as either Eu (wide mouth, two teeth) or St (narrow mouth, one tooth) while the experimenter was blinded to strain.
 
-## Statistical methods
+### Statistical methods
 
-## Replication
+#### Replication
 
 All data points represented as scatter points in plots, individual sample traces in Figure 2, as well as Figure 6—figure supplement 1, as well as coordinates of egg positions in source data files represent biologically distinct samples arising from independent animals, and not technical replication (repeated measurements on the same biological sample). Specific numbers of replicates per condition in assays are displayed in figure legends.
 
-## Egg location data
+#### Egg location data
 
-For egg location assays the number of eggs on and off the bacterial lawn were quantified from images. The probability of laying eggs off the lawn is a bounded variable between 0 and 1 best represented by binomial probability. Thus, tabulated egg data as numbers of eggs off and on the lawn were analyzed via binomial generalized linear models (logistic regression) in R using the glm function to fit one-, two-, or three-way interactions between independent variables (R Development Core Team, 2009). These models are fit using the logit link function (Equation 1):(1)log(P(off)1−P(off))= X⋅β
+For egg location assays the number of eggs on and off the bacterial lawn were quantified from images. The probability of laying eggs off the lawn is a bounded variable between 0 and 1 best represented by binomial probability. Thus, tabulated egg data as numbers of eggs off and on the lawn were analyzed via binomial generalized linear models (logistic regression) in R using the glm function to fit one-, two-, or three-way interactions between independent variables (R Development Core Team, 2009). These models are fit using the logit link function (Equation 1):
 
-where P(off) is the expected probability of off lawn egg laying, X is the design matrix of categorical or continuous predictors, and β is the vector of fitted coefficients. The quantity P(off)1−P(off) is the ‘odds ratio’ of laying eggs off the lawn, and thus the logit is the logarithmic scale odds ratio. Changes to the log odds ratio can be interpreted as changes to odds of laying eggs off lawn vs. on lawn. The expected probability P(off) under different conditions and associated confidence intervals can be determined from exponentiation of logit scale quantities using the inverse logit function (Equation 2):(2)P(off) =eX⋅β1+eX⋅β
+$$
+log(\frac{P(off)}{1−P(off)})= X⋅\beta
+$$
 
-These estimates for the expected value of P(off) with its associated 95% confidence interval were used for overlaying on plots. Omnibus effects in the data were determined by likelihood ratio tests/analysis of deviance using the ANOVA function in the car package in R (Fox and Weisberg, 2018). Where significant main effects or interactions were detected, post hoc linear hypotheses included both comparisons between groups as well as higher order comparisons of magnitudes of change were computed (as in Figures 5—9, e.g. the change to the magnitude of change between predator and mock conditions between genotypes). The ‘predator response’ in Figures 5—9 is specifically defined as the change to the expected value of the log odds ratio (Equation 1) between mock and predator conditions (Equation 3):(3)log(Predator Response)=log(P(off)1−P(off))Predator−log(P(off)1−P(off))Mock
+where P(off) is the expected probability of off lawn egg laying, X is the design matrix of categorical or continuous predictors, and β is the vector of fitted coefficients. The quantity $\frac{P(off)}{1−P(off)}$ is the ‘odds ratio’ of laying eggs off the lawn, and thus the logit is the logarithmic scale odds ratio. Changes to the log odds ratio can be interpreted as changes to odds of laying eggs off lawn vs. on lawn. The expected probability P(off) under different conditions and associated confidence intervals can be determined from exponentiation of logit scale quantities using the inverse logit function (Equation 2):
+
+$$
+P(off) =\frac{e^{X⋅\beta}}{1+e^{X⋅\beta}}
+$$
+
+These estimates for the expected value of P(off) with its associated 95% confidence interval were used for overlaying on plots. Omnibus effects in the data were determined by likelihood ratio tests/analysis of deviance using the ANOVA function in the car package in R (Fox and Weisberg, 2018). Where significant main effects or interactions were detected, post hoc linear hypotheses included both comparisons between groups as well as higher order comparisons of magnitudes of change were computed (as in Figures 5—9, e.g. the change to the magnitude of change between predator and mock conditions between genotypes). The ‘predator response’ in Figures 5—9 is specifically defined as the change to the expected value of the log odds ratio (Equation 1) between mock and predator conditions (Equation 3):
+
+$$
+log(Predator Response)=log(\frac{P(off)}{1−P(off)})_{Predator}−log(\frac{P(off)}{1−P(off)})_{Mock}
+$$
 
 which can straightforwardly be computed for a particular experimental condition or genotype from logistic models by linear combination of the coefficients in β (Equations 1–2, with associated standard error and confidence intervals used for inference). In plain language this represents the change in odds of off lawn egg laying observed in the predator condition relative to the mock control. As natural logarithms are cumbersome for easy interpretation on plots, Figures 5—9 use base 2 logarithms where each unit change corresponds to a twofold change in the predator response as defined in Equation 3 above.
 
 All linear hypotheses were computed using the glht function in the multcomp package in R with associated correction for multiple testing performed using the multivariate normal distribution (Z tests with the ‘single step’ method for generalized linear models, according to the simultaneous p-value estimation method of Hothorn et al., 2008). All statistical inference for differences between groups is performed on the logit scale but linear scale p(off) values are shown on plots for ease of interpretation.
 
-## WormWatcher positional tracking data
+#### WormWatcher positional tracking data
 
 Distance from body to center of arena over 20 hr of observation in WormWatcher assays was subjected to non-parametric bootstrap resampling with replacement for 105 iterations with empirical 95% intervals determined using the quantile function in R. Significant changes to position with respect to time between conditions were inferred at p<0.05 where empirical bootstrapped intervals failed to overlap.
 
-## Egg count data and Pnlp-29::GFP fluorescence data
+#### Egg count data and Pnlp-29::GFP fluorescence data
 
 Average number of eggs per individual C. elegans in assays as well as logarithmic scale normalized fluorescence in Figure 1 and Figure 1—figure supplement 1 were tested for main effects and interactions between independent variables using general linear models using the lm function and the ANOVA function from the car package. To alleviate non-normality assessed by QQ Plot (qqnorm function in R) and heteroscedasticity in linear scale fluorescence data (assessed by Levene’s tests, function leveneTest in R), data were log2 transformed and logarithmic scale data was subjected to further analysis. Omnibus effects in log-transformed data were determined by ANOVA. Where significant main effects or interactions were detected, post hoc linear hypothesis tests for differences between conditions were determined using the glht function in the multcomp package in R with associated correction for multiple testing performed using the multivariate t distribution (the ‘single step’ method for ANOVA/linear models according to the simultaneous p-value estimation method of Hothorn et al., 2008).
 
-## Mouthform analysis
+#### Mouthform analysis
 
 Changes to abundance of St or Eu Pristionchus was determined by Fisher’s exact test.
 
-## CLUSTAL alignment of DOP receptors
+#### CLUSTAL alignment of DOP receptors
 
 Alignment of receptors shown in Figure 8 was performed using Clustal Omega on the EMBL-EBI server at https://www.ebi.ac.uk/Tools/msa/clustalo/ (Sievers et al., 2011).

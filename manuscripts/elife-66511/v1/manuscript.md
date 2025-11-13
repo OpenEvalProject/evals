@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/052g8jq94 Institut Català de Paleontologia Miquel Crusafont, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain
-2. https://ror.org/0524sp257 School of Earth Sciences, University of Bristol Bristol United Kingdom
+1. Institut Català de Paleontologia Miquel Crusafont, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+2. School of Earth Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
@@ -32,11 +32,165 @@ Here, we explore morphospace distribution, disparity (morphological richness), a
 
 Our dated phylogeny of lepidosaurs (Figure 1, Figure 1—figure supplement 1), based on a morphological tree constrained by phylogenomic evidence (Figure 1—figure supplements 2–4, see Figure 1—figure supplements 5–7 for results of an unconstrained analysis), shows that the clade originated around the Permian-Triassic boundary, and that by the Mid-Triassic it was represented by different extinct groups. The Rhynchocephalia diversified in the Mesozoic, but reverted to a single species subsequently, the living tuatara (Sphenodon punctatus) from New Zealand. The Squamata, on the other hand, show a step of diversification through the Jurassic, as the main modern clades emerged, and then a further diversification in the mid-Cretaceous, perhaps linked to the KTR. The ranges of ages for nodes differ depending on the method used (Figure 1—figure supplement 1), with the Hedman method (Figure 1) yielding the oldest divergence dates for nodes, the MBL (Minimum Branch Length) method yielding the youngest ones, and the equal method being intermediate. According to these results, it was regarded as necessary to consider all three methods of dating when performing the evolutionary rate analyses in order to discard the possibility that results were biased by the selected dating method.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-v1.jpg)
+
+**Figure 1.:** Phylogeny represented by a single randomly selected tree among those most parsimonious trees (MPTs) of the constrained analysis, and temporarily calibrated with the ‘Hedman’ method. Fossil ranges for each lineage are indicated according to the temporal distribution of the sampled taxa. For complete phylogenies and alternative datings, see Figure 1—figure supplements 1–7.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp6-v1.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig1-figsupp7-v1.jpg)
+
 The dated phylogenetic tree only describes the outline of the origins of squamate biodiversity, but does not map species numbers or, importantly, the range of morphology, and presumably the range of adaptation, reflecting ecological impact, of the group. Using a large morphological dataset (Conrad, 2018), covering 201 species of living and fossil lepidosaurs scored for 836 skeletal morphological characters, we analyzed disparity for lepidosaurs through time and tracked changes to morphospace occupation and major expansions. Stacked temporal morphospaces (Figure 2) show that rhynchocephalians and squamates occupy mutually exclusive morphospaces. Stepping up through time, from bottom to top of the stack, shows how lepidosaur morphospace expanded, not gradually, but marked by a single major step. At first, the total morphospace is small, formed by stem lepidosaurs and rhynchocephalians in the Triassic, and exclusively by rhynchocephalians in the Early Jurassic. Note that the lack of Early Jurassic stem lepidosaurs is artificial because they are found again (and possibly for the last time) in the Middle Jurassic as represented by Marmoretta. Then, with the addition of squamates in the Middle to Late Jurassic bin, morphospace expands to five or six times the area – the limits are established by rhynchocephalians, generalized lizards, anguimorph lizards, and snakes, each occupying a separate area of morphospace. We coin the term Jurassic Morphospace Expansion (JME) for the event related to this sudden increase in morphospace, which is interpreted as evidence of the initial radiation of the total group Squamata. Note that the coincident loss of stem lepidosaurs does not result in a modification of the morphospace hull because of the central position of these taxa. This morphospace configuration remains remarkably stable from the Late Jurassic through to the present, with only subtle increases in morphospace occupation and in the density of points inside the envelope, notably in the mid Cretaceous coinciding with the KTR and the consequent recorded increase in diversity.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-v1.jpg)
+
+**Figure 2.:** Blue circles correspond to squamates, with the blue scincid silhouette indicating the position of generalized lizards, the yellow varanid indicating the position of anguimorphs, and the violet snake the position of snakes (and other limbless squamates). Green triangles correspond to rhynchocephalians (green Sphenodon silhouette). Red crosses correspond to stem lepidosaurs (red kuehneosaur silhouette). For additional plots of morphospace occupation through time, see Figure 2—figure supplements 1–6. JME: Jurassic Morphospace Expansion; KTR: Cretaceous Terrestrial Revolution.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Colors and symbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Colors and symbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Colors and symbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Colors and symbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 2.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Colors and symbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 1.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Colors and simbols according to high-level taxonomical groups. Time bin ages correspond to time scheme 2.
 
 At this point, we should comment on the form-function relationship. It is well understood that form (skeletal morphology) does not always equate to function (Wainwright et al., 2005), with many functions sometimes performed by organisms of apparently similar morphology, or many different morphologies capable of performing a single function. However, here we calibrate the morphospace by mapping living taxa of known function and ecology onto the fossil time slices. This means we can mark (Figures 2 and 3) the rhynchocephalian (cluster 1, in green) pole as dietary generalists with robust jaws and tongue prey prehension like the modern Sphenodon; the generalized lizard (cluster 2, in blue) pole as diverse insect-eaters, like modern skinks; the anguimorph (cluster 3, in yellow) pole as active foragers with tendency to carnivory; and the snake (cluster 4, in violet) pole as limbless predators that feed mainly on other vertebrates and, to a lesser degree, invertebrates. Note that these clusters are loosely based on the ones recovered using the R ‘pamk’ function of the fpc package (see Figure 3—figure supplement 6, Source code 3). Admittedly, this is a simplification because, just as an example, rhynchocephalians contain dietary specialists (durophagous, piscivorous, etc.) and examples of forms adapted to swimming (like pleurosaurs), and the same occurs with specific clades of squamates (e.g., herbivore iguanians). Although a more precise ecomorphological classification would potentially provide more information on the distribution of ecologies through time, it has proven impractical for the current dataset, also in agreement with previous results (e.g., Simões et al., 2020). However, our classification serves the purpose of depicting that the extremes of morphospace had been achieved by the Middle to Late Jurassic (Figures 2 and 3D). Regarding squamates, it is worth noting that the first members of the group sampled in our analyses are Late Jurassic in age, but Middle Jurassic forms are known, just happen to be not included in the current morphological dataset because they are too incomplete.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-v1.jpg)
+
+**Figure 3.:** (A) Morphospace based on the two major axes of variation (PCO1 and PCO2), with colors and symbols according to the three main taxonomic groups. (B) Phylomorphospace distribution in PCO1 and PCO2, with lower taxonomic groups labeled. (C) 3D phylomorphospace illustrating the three major axes of variation (corresponding to PCO1, PCO2, and PCO3), with colors and symbols denoting to the lower taxonomic groups (see color legend in Figure 1—figure supplement 2). (D) Chronophylomorphospace of lepidosaurs showing the expansion of morphologies on the two major axes of variation (PCO1 and PCO2) through time. The phylogeny used corresponds to a randomly selected most parsimonious tree (MPT) of the constrained analysis. Silhouettes correspond to the same groups in Figure 1. JME: Jurassic Morphospace Expansion; KTR: Cretaceous Terrestrial Revolution. For additional plots of morphospace, see Figure 3—figure supplements 1–5, and Supplementary files 1-5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Abbreviations correspond to Ac plum: Acontias plumbeus; Ad magn: Adamisaurus magnidentatus; Ad sues: Adriosaurus suessi; Ae feli: Aeluroscalabotes felinus; Af aviu: Afairiguana avius; Ag agam: Agama agama; Ai: Aigialosaurus; Al fest: Alopoglossus festae; Am amei: Ameiva ameiva; An caro: Anolis carolinensis; An gilm: Anchaurosaurus gilmorei; An leon: Anomochilus leonardi; An pach: Ankylosphenodon pachyostosus; An papi: Anelytropsis papillosus; An scyt: Anilius scytale; Ar brev: Ardeosaurus brevipes; Ar orna: Arretosaurus ornatus; As tigr: Aspidoscelis tigris; Ba ammo: Bahndwivici ammoskius; Ba bico: Bachia bicolor; Ba macr: Bavarisaurus macrodactylus; Ba parv: Bainguis parvus; Be hoff: Becklesius hoffstetteri; Bi bipo: Bipes biporus; Bl: Blanus; Bo cons: Boa constrictor; Br: Brachylophus; Br bryg: Brookesia brygooi; Ca blan: Cadea blanoides; Ca drac: Callisaurus draconoides; Ca inte: Carusia intermedia; Ch fitz: Chometokadmon fitzingeri; Ch kozl: Cherminsaurus kozlowskii; Ch mada: Chalarodon madagascariensis; Ch ocel: Chalcides ocellatus; Cl bair: Clevosaurus bairdi; Cl bras: Clevosaurus brasiliensis; Cl mcgi: Clevosaurus mcgilli; Co mode: Colobosaura modesta; Cr coll: Crotaphytus collaris; Cr hass: Cryptolacerta hassiaca; Cr typi: Cricosaura typica; Ct parv: Ctenomastax parva; Cy huiz: Cynosphenodon huizachalensis; Cy ruff: Cylindrophis ruffus; Da este: Darchansaurus estesi; Da long: Dalinghosaurus longidigitus; Di avon: Diphydontosaurus avonis; Di nova: Dibamus novaeguineae; Di pata: Dinilysia patagonica; Do purb: Dorsetisaurus purbeckensis; Dr croi: Dracaenosaurus croizeti; Dr guia: Dracaena guianensis; Dr nord: Dryadosaura nordestina; Ei goul: Eichstaettisaurus gouldi; Ei schr: Eichstaettisaurus schroederi; El coer: Elgaria coerulea; En bili: Enyalius bilineatus; Eo koeh: Eosaniwa koehni; Eo lace: Eoxanta lacertifrons; Eo robu: Eolacerta robusta; Eo ster: Eonatator sternbergi; Ep goud: Epictia goudotii; Er robi: Erdenetesaurus robinsonae; Es mong: Estesia mongoliensis; Eu alge: Eumeces algeriensis; Eu macu: Eublepharis macularius; Ex serr: Exostinus serratus; Fe curr: Feylinia currori; Fl dzer: Flaviagama dzerzhinskii; Ga: Gambelia; Ge brid: Gephyrosaurus bridensis; Ge geck: Gekko gecko; Gi chul: Gilmoreteius chulsanensis; Gi ferr: Gilmoreteius ferrugenous; Gl semi: Gladidenagama semiplena; Gl venu: Globaura venusta; Go aren: Gobinatus arenosus; Go cret: Gobekko cretacicus; Go pulc: Gobiderma pulchrum; Gy unde: Gymnophthalmus underwoodi; Ha terr: Haasiophis terrasanctus; He horr: Heloderma horridum; Ho sanz: Hoyalacerta sanzi; Ho spin: Hoplocercus spinosus; Ho such: Hoburogekko suchanovi; Hu mixt: Huehuecuetzpalli mixtecus; Hy clar: Hymenosaurus clarki; Ic sief: Icarosaurus siefkeri; Ju gran: Jucaraseps grandipes; Ka ceri: Kallimodon cerinensis; Ku latu: Kuehneosaurus latus; La born: Lanthanotus borneensis; La serr: Laemanctus serratus; La viri: Lacerta viridis; Le cata: Leiosaurus catamarcensis; Le flav: Lepidophyma flavimaculatum; Li: Liolaemus; Li acan: Liushusaurus acanthocaudata; Li albi: Liotyphlops albirostris; Ly bowr: Lygosoma bowringii; Ma mabo: Mabuya mabouya; Ma oxon: Marmoretta oxoniensis; Me diaz: Meyasaurus diazromerali; Me orna: Merkurosaurus ornatus; Mi albe: Microlophus albermalensis; Mi cras: Mimeosaurus crassus; Mo annu: Morunasaurus annularis; Mo sund: Mochlus sundevalli; My micr: Myrmecodaptria microphagosa; Na rion: Najash rionegrina; Ne levi: Nephrurus levis; No nyct: Norellius nyctisaurops; Oe tryo: Oedura tryoni; Op cycl: Oplurus cyclurus; Or metz: Ornatocephalus metzleri; Pa UTAH: Paramacellodid UTAH; Pa angu: Paravaranus angustifrons; Pa bava: Palaeolacerta bavarica; Pa boge: Paraderma bogerti; Pa cana: Palaeosaniwa canadensis; Pa este: Parviraptor estesi; Pa inex: Parviderma inexacta; Pa kyre: Palaeoxantusia kyrentos; Pa owen: Paramacellodus oweni; Pa polo: Pamelina polonica; Pa posi: Palaeopleurosaurus posidoniae; Pa prob: Pachyrhachis problematicus; Pa scut: Parmeosaurus scutatus; Pa tlay: Pamizinsaurus tlayuaensis; Pa wyom: Parasaniwa wyomingensis; Pe gran: Peltosaurus granulosus; Ph asio: Phrynosoma asio; Ph aspe: Phrynosomimus asper; Ph coci: Physignathus cocincinus; Ph line: Phelsuma lineata; Pl anth: Plestiodon anthracinus; Pl fasc: Plestiodon fasciatus; Pl gold: Pleurosaurus goldfussi; Pl inte: Platysaurus intermedius; Pl plic: Plica plica; Pl robi: Planocephalosaurus robinsonae; Po ecpl: Potamites ecpleopus; Po gutt: Polychrus gutturosus; Po lign: Portugalophis lignites; Po mong: Polrussia mongoliensis; Po mull: Polysphenodon mulleri; Po ster: Polyglyphanodon sternbergi; Pr avel: Priosphenodon avelasi; Pr egge: Proscelotes eggeli; Pr gobi: Priscagama gobiensis; Pr long: Proplatynotia longirostrata; Pr ness: Primaderma nessovi; Ps beck: Pseudosaurillus becklesi; Ps gris: Psammosaurus griseus; Py lepi: Pygopus lepidopus; Re rugo: Restes rugosus; Rh flor: Rhineura floridana; Rh sang: Rhinophis sanguineus; Ri brac: Rieppeleon brachyurus; Sa ater: Sauromalus ater; Sa corn: Saltuarius cornutus; Sa davi: Saichangurvel davidsoni; Sa ensi: Saniwa ensidens; Sa feis: Saniwa feisti; Sa mong: Saniwides mongoliensis; Sc: Sceloporus; Sc cier: Scandensia ciervensis; Sc dysp: Schoenesmahl dyspepsia; Sc scin: Scincus scincus; Sh croc: Shinisaurus crocodilurus; Si hexa: Sineoamphisbaena hexatabularis; Sl dare: Slavoia darevskii; Sp eleg: Sphaerodactylus elegans; Sp punc: Sphenodon punctatus; St: Stenocercus; Ta sept: Takydromus septentrionalis; Tc mult: Tchingisaurus multivagus; Te elli: Temujinia ellisoni; Te gran: Telmasaurus grangeri; Te tepe: Tepexisaurus tepexii; Te teyo: Teius teyou; Ti scin: Tiliqua scincoides; Ti zhen: Tianyusaurus zhengi; Tr pete: Tracheloptychus petersi; Tr torq: Tropidurus torquatus; Tu tegu: Tupinambis teguixin; Ty grac: Typhlacontias gracilis; Ty jama: Typhlops jamaicensis; Ty squa: Typhlophis squamosus; Un gen PM: Unnamed gen PMUR58; Ur aegy: Uromastyx aegyptia; Ur nigr: Urosaurus nigricaudus; Ut stan: Uta stansburiana; Va vari: Varanus varius; Xa vigi: Xantusia vigilis; Xe gran: Xenosaurus grandis; Ya tenu: Yabeinosaurus tenuis; Za scel: Zapsosaurus sceliphros.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp3-v1.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Colors, symbols, and hulls according to low-level taxonomical groups and colors according to clades (see color legend in Figure 1—figure supplement 2 and abbreviations in Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Colors according to high-level taxonomical groups and colors according to clades (see color legend in Figure 1—figure supplement 2 and abbreviations in Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Clusters used in Figure 3B broadly correspond to the groups represented here and colors according to clades (see color legend in Figure 1—figure supplement 2 and abbreviations in Figure 3—figure supplement 1).
+
 The illustrated morphospaces (Figures 2, 3A and B, Figure 2—figure supplement 2, Figure 3—figure supplement 1) represent the first two major axes of variation, and there could be additional morphospace expansions along the other main axes: this is not the case (Figure 2—figure supplements 3 and 5; Figure 3—figure supplements 2 and 3). Further, the story does not change when the post-Cretaceous time bin is divided into Paleogene and Neogene time slices (Figure 2—figure supplements 2; 4 and 6). In a plot of total disparity (i.e., the sum of variances [SoVs] across all morphospace axes) of lepidosaurs through geological time (Figure 4A), the two peaks of elevated disparity (Middle–Late Jurassic and mid–Late Cretaceous) are clear. These summary data also confirm the much higher total disparity of squamates than rhynchocephalians (Figure 4—figure supplement 1) and among the former, a higher disparity of snakes and anguimorphs (and less clearly mosasaurs) than the remaining main groups of squamates among which dibamids, lacertids, and the extinct group of ardeosaurs (sensu lato) are the ones with the lowest disparity (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-v1.jpg)
+
+**Figure 4.:** (A) Temporal disparity patterns (bootstrapped and rarefied within bin sum of variances for all axes). For additional plots of disparity patterns, see Figure 4—figure supplements 1–4. (B) Evolutionary rates through time in epoch-scale bins. Black solid line corresponds to results for all taxa, blue solid line for lizards, and green solid line for rhynchocephalians plus stem lepidosaurs (all according to the constrained phylogeny). Dashed gray line corresponds to results for all taxa and unconstrained phylogeny. The curves represent averages from 25 iterations of each analysis using randomly selected trees dated with the Hedman method. For additional plots of evolutionary rates, see Figure 4—figure supplements 5–22. JME: Jurassic Morphospace Expansion; KTR: Cretaceous Terrestrial Revolution; ETr: Early Triassic; MTr: Middle Triassic; LTr: Late Triassic; EJ: Early Jurassic; MJ: Middle Jurassic; LJ: Late Jurassic; EK: Early Cretaceous; LK: Late Cretaceous; Pg: Paleogene; Ng-Q: Neogene-Quaternary.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp3-v1.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp4-v1.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp9-v1.jpg)
+
+**Figure 4—figure supplement 9.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp10-v1.jpg)
+
+**Figure 4—figure supplement 10.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp11-v1.jpg)
+
+**Figure 4—figure supplement 11.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp12-v1.jpg)
+
+**Figure 4—figure supplement 12.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 13.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp13-v1.jpg)
+
+**Figure 4—figure supplement 13.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 14.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp14-v1.jpg)
+
+**Figure 4—figure supplement 14.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 15.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp15-v1.jpg)
+
+**Figure 4—figure supplement 15.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 16.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp16-v1.jpg)
+
+**Figure 4—figure supplement 16.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 17.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp17-v1.jpg)
+
+**Figure 4—figure supplement 17.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 18.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp18-v1.jpg)
+
+**Figure 4—figure supplement 18.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 19.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp19-v1.jpg)
+
+**Figure 4—figure supplement 19.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 20.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp20-v1.jpg)
+
+**Figure 4—figure supplement 20.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 21.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp21-v1.jpg)
+
+**Figure 4—figure supplement 21.:** (a) Spaghetti plot according to stratigraphic time bins; (b) spaghetti plot according to 10 million year (Myr) time bins. Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
+
+![Figure 4—figure supplement 22.](https://cdn.elifesciences.org/articles/66511/elife-66511-fig4-figsupp22-v1.jpg)
+
+**Figure 4—figure supplement 22.:** Spaghetti plot according to stratigraphic time bins (above); spaghetti plot according to 10 million year (Myr) time bins (below). Gray lines correspond to evolutionary rates for a specific dated MPT. Black line represents the average evolutionary rates. Red triangles and blue rhombuses highlight significantly high and significantly low evolutionary rates, respectively.
 
 The ‘two-peak’ pattern is also identified through a study of evolutionary rates among lepidosaurs (Figure 4B). Maximum-likelihood analyses of rates of morphological character evolution clearly show that the highest rates occur in the Late Jurassic (coinciding with the peak in disparity and roughly coinciding with the observed expansion of morphospace), and there is a lower peak in the mid-Cretaceous (see Figure 4—figure supplements 5–7). The high peak is for squamates (see Figure 4—figure supplements 8–10 for squamates), not rhynchocephalians (see Figure 4—figure supplements 11–13), and in our opinion all three observations (morphospace expansion, increase of disparity, and fast evolutionary rates) are linked and support the existence of the JME event. Rhynchocephalians showed their highest rates of evolution in the Triassic, and those rates declined substantially through time. On the other hand, squamates show a further step-up in rates during the Neogene, the past 23 Myr. The peak in evolutionary rates towards the present is particularly acute when using the MBL method, in what we regard as an artifact due to the condensing of divergence dates towards the present. These evolutionary rates are not the result of choosing a specific phylogenetic context – the black line represents summed rates for all lepidosaurs using the phylogenomic constrained trees, and the dashed gray line the rates from unconstrained morphological trees, with iguanians and fossorial species in traditional positions. This alternative version yields a similar general result, where the Late Jurassic peak is again clearly recovered (see Figure 4—figure supplements 14–22). In both cases, most parsimonious trees (MPTs) were randomly selected and dated five times according to each of the three dating methods, and evolutionary rates were calculated for each of the resulting dated trees. The curve shown represents average evolutionary rates among those calculated using the randomly selected MPT’s and the equal method (see Figure 4—figure supplements 5–22 for results according to all methods). The Late Jurassic peak in evolutionary rates is thus also robust to changes in the particular (randomly selected) point inside the stratigraphical range of a given fossil, and to different methods of dating the trees, including ‘equal’ and ‘Hedman’ methodologies, but not the ‘MBL’ method (but see the discussion for a possible explanation).
 
@@ -82,23 +236,23 @@ Finally, results that directly depend on the estimation of time-calibrated branc
 
 ## Materials and methods
 
-## Taxa and character data
+### Taxa and character data
 
 The data source for all morphological character and taxon data analyses is the morphological data matrix of Conrad, 2018, reduced in our study to 201 species of living and fossil lepidosaurs scored for 836 skeletal morphological characters. We used this data matrix because it is by far the most extensive in terms of taxa and characters.
 
-## Phylogeny and timescaling
+### Phylogeny and timescaling
 
 Phylogenetic analyses were performed in TNT 1.5 (Goloboff and Catalano, 2016). The settings for the unconstrained analysis are the same as in the original publication (Conrad, 2018) (ratchet and drift options activated, except that we set analyses to 100 replicates instead of 200). An alternative version of the phylogeny was obtained after constraining the general relationships recovered in molecular studies for those groups that present discrepancies in their position in morphological analyses, among others the sister group relationship of Iguania to the rest of crown squamates and the grouping of limb-reduced and limbless forms in the called ‘fossorial’ group (including dibamids, snakes, amphisbaenians, and limbless skinks), which is the result of convergences and clearly do not form a monophyletic group. For this, we randomly chose one of the MPTs recovered in the first analysis and forced the topology of phylogenomic studies for extant clades by defining the monophyly of the main extant groups according to Pyron et al., 2013. We set up fossils, which account for more than half of the taxa comprising the matrix, as floaters, so they could freely move around the tree. In both cases (constrained and unconstrained analysis), the resulting MPTs were exported to PAUP (Howard et al., 2002), where consensus trees were calculated. We produced the time trees for illustration (Figure 1, Figure 1—figure supplement 1) and rates calculations using fossil data to date origins of clades and time calibrated the trees in Paleotree v. 3.3.0 (Bapst, 2012) and using the Hedman method (see below).
 
-## Morphological disparity
+### Morphological disparity
 
 All disparity and macroevolutionary analyses were performed in R (R Development Core Team, 2013). For disparity analyses, the pipeline started with the calculation of a pairwise morphological distance from the original character data using the package Claddis and maximum observable rescaled distances (MORD; Lloyd, 2016). The pairwise distances data was then subject to principal coordinates analysis (PCO) to identify the major axes of morphological variation. The resulting ordination matrix was used to plot morphospace based on PCOs 1–3. This morphospace was combined with a single topology (dated using the same method) to illustrate phylomorphospace and a chronophylomorphospace. We also plotted morphospace occupation in temporal bins. Finally, we used both pre-ordination (weighted mean pairwise distance, WMPD) and post-ordination (SoV, calculated in DispRity, Guillerme and Poisot, 2018) metrics to calculate global disparity, disparity in specific groups, as well as disparity through time. We also calculated completeness and sampling across the different time bins for comparisons with disparity results. We used various packages in R for plotting, namely, Plotly (Sievert, 2018), ggplot (Wickham, 2016), Geomorph (Adams et al., 2019), Claddis (Lloyd, 2016), and Phytools (Revell, 2012).
 
-## Morphological evolutionary rates
+### Morphological evolutionary rates
 
 Rates of morphological evolution were analyzed using maximum-likelihood methods applied to the discrete skeletal character dataset and a range of phylogenetic trees. We used the DiscreteCharacterRate function from the R package Claddis and ran calculations for five of the unconstrained MPTs and five of the constrained MPTs, separately. We used a modified version of the code from Moon and Stubbs, 2020. The methodology first seeks to identify rate heterogeneity across the whole tree and then highlights branches or temporal bins with significant rate deviations (notably fast or slow) using likelihood ratio tests (Lloyd, 2016). To ensure rate results are consistent, the different topologies were dated multiple times (in our case, five dating replicates for each of the five randomly selected trees, for both unconstrained and constrained trees). We also repeated this for three dating methodologies, using the ‘equal’ method (Brusatte et al., 2008), ‘minimum branch length’ approach (Laurin, 2004), using the R functions from Lloyd et al., 2016 and a whole-tree extension of the Bayesian Hedman algorithm (Hedman, 2010). The Hedman node-dating approach uses Bayesian statistics, incorporating probability distribution constraints based on successive outgroup taxa ages (Hedman, 2010). We calculated per-bin evolutionary rates in two sets of time bins, one corresponding to geological stages and one corresponding to equal 10 Myr bins. To illustrate the rates results, we use ‘spaghetti plots’ showing individual lines for each combination of tree and dating (25 individual lines), as well as an average line, and also highlighting iterations and bins with significantly fast and slow evolutionary rates (Figure 4—figure supplements 5–22). In the main Figure 4B, we present summaries of these analyses.
 
-## Plots of Cramér coefficients
+### Plots of Cramér coefficients
 
 We used Cramér coefficients (Appendix 1—figure 7, Appendix 2—figure 2) to show correspondence between characters and PCO axes (Kotrc and Knoll, 2015; Nordén et al., 2018). See Appendix 4 for more details.
 

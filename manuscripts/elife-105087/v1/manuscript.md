@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00p4k0j84 Department of Molecular and System Pharmacology, Graduate School of Pharmaceutical Sciences, Kyushu University Fukuoka Japan
-2. https://ror.org/00p4k0j84 Division of Molecular Neuroimmunology, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan
-3. https://ror.org/00p4k0j84 Kyushu University Institute for Advanced Study Fukuoka Japan
+1. Department of Molecular and System Pharmacology, Graduate School of Pharmaceutical Sciences, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+2. Division of Molecular Neuroimmunology, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+3. Kyushu University Institute for Advanced Study Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
 
 † Corresponding author
 
 ## Abstract
 
-Neuropathic pain, a debilitating chronic pain condition, is a major clinical challenge. The pleiotropic cytokine interleukin-4 (IL-4) has been shown to suppress neuropathic pain in rodent models, but its underlying mechanism remains unclear. Here, we show that intrathecal administration of IL-4 to mice with spinal nerve transection (SpNT) increased the number of CD11c + microglia (a microglia subset important for pain remission) in the spinal dorsal horn (SDH) and that this effect of IL-4 was essential for its ameliorating effect on SpNT-induced pain hypersensitivity. Furthermore, in mice with spared nerve injury (SNI), another model in which pain remission does not occur, the emergence of CD11c + SDH microglia was curtailed, but intrathecal IL-4 increased their emergence and ameliorated pain hypersensitivity in a CD11c + microglia-dependent manner. Our study reveals a mechanism by which intrathecal IL-4 ameliorates pain hypersensitivity after nerve injury and provides evidence that IL-4 increases CD11c + microglia with a function that ameliorates neuropathic pain.
+Neuropathic pain, a debilitating chronic pain condition, is a major clinical challenge. The pleiotropic cytokine interleukin-4 (IL-4) has been shown to suppress neuropathic pain in rodent models, but its underlying mechanism remains unclear. Here, we show that intrathecal administration of IL-4 to mice with spinal nerve transection (SpNT) increased the number of CD11c+ microglia (a microglia subset important for pain remission) in the spinal dorsal horn (SDH) and that this effect of IL-4 was essential for its ameliorating effect on SpNT-induced pain hypersensitivity. Furthermore, in mice with spared nerve injury (SNI), another model in which pain remission does not occur, the emergence of CD11c+ SDH microglia was curtailed, but intrathecal IL-4 increased their emergence and ameliorated pain hypersensitivity in a CD11c+ microglia-dependent manner. Our study reveals a mechanism by which intrathecal IL-4 ameliorates pain hypersensitivity after nerve injury and provides evidence that IL-4 increases CD11c+ microglia with a function that ameliorates neuropathic pain.
 
 ## Introduction
 
@@ -28,49 +28,57 @@ In this study, using two different models of neuropathic pain, we demonstrated t
 
 ## Results
 
-## Intrathecal treatment of IL-4 increases CD11c+ microglia in the SDH and alleviates pain hypersensitivity after SpNT
+### Intrathecal treatment of IL-4 increases CD11c+ microglia in the SDH and alleviates pain hypersensitivity after SpNT
 
 To examine the effect of IL-4 on the behavioral remission of neuropathic pain, we used mice with spinal nerve transection (SpNT; a model of neuropathic pain Ho Kim and Mo Chung, 1992; Rigaud et al., 2008) and repeated the administration of IL-4 to their intrathecal spaces from day 14 post-SpNT, when the paw withdrawal threshold (PWT) decreased (indicating that mechanical pain hypersensitivity had been developed) (Figure 1A). Intrathecal treatment with IL-4 increased the PWT in the hindpaw ipsilateral (but not contralateral) to the SpNT (Figure 1A). Notably, this behavioral remission of neuropathic mechanical hypersensitivity persisted for at least 5 days after the last intrathecal injection of IL-4. Because we previously showed that CD11c+ microglia emerging in the SDH after SpNT are necessary for the spontaneous remission of pain behavior that gradually occurs around 3 weeks after nerve injury (Kohno et al., 2022), we explored the mechanism of action of spinal IL-4 with a focus on CD11c+ microglia in the SDH. In Itgax-Venus mice, in which CD11c+ cells are visualized using the fluorescent protein Venus (Kohno et al., 2022; Lindquist et al., 2004), SpNT increased the number of Venus+ (CD11c+) cells in the SDH ipsilateral to the injury (Figure 1B). Consistent with our previous data (Kohno et al., 2022), almost all CD11c+ cells were immunohistochemically positive for ionized calcium-binding adapter molecule 1 (IBA1) and the purinergic P2Y12 receptor (P2Y12R; Figure 1B and C), which are markers for myeloid cells and microglia, respectively (Butovsky et al., 2014; Ito et al., 1998). We found that intrathecal administration of IL-4 to SpNT mice enhanced the increase in CD11c+ cells in the SDH (Figure 1B–D). These cells also expressed both IBA1 and P2Y12R (Figure 1B and C), indicating that CD11c+ cells increased by intrathecal IL-4 were microglia. Quantitative flow cytometry analysis revealed a significant increase in CD11c+ microglia in the SDH of IL-4-treated SpNT mice (Figure 1D). In contrast, IL-4 did not significantly change the total number of microglia in the SDH (Figure 1D). In addition, intrathecal IL-4 did not induce infiltration of CD169+ monocytes/macrophages into the SDH (Figure 1—figure supplement 1A). These findings suggest that CD11c+ microglia may be involved in the mechanism by which intrathecal treatment with IL-4 attenuates pain hypersensitivity.
 
-## IL-4-induced remission of pain hypersensitivity requires spinal CD11c+ microglia
+![Figure 1.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig1-v1.jpg)
+
+**Figure 1.:** (A) Paw withdrawal threshold (PWT) of Itgax-Venus mice before (Pre) and after SpNT (n=7–8 mice). IL-4 or PBS was intrathecally administrated from day 14 to day 16 post-SpNT (once a day for 3 days). ****p<0.0001 versus the ipsilateral side of PBS-treated group, two-way ANOVA with post hoc Tukey multiple comparison test. (B) Venus fluorescence (yellow) and P2Y12R and IBA1 immunostaining (magenta and cyan, respectively) in the SDH of Itgax-Venus mice with SpNT 21 days after PBS or IL-4 treatment (from day 14–16). Scale bars, 200 µm (middle), 100 µm (right). (C) Colocalization of Venus, P2Y12R, and IBA1. Scale bar, 20 µm. (D) Flow cytometric quantification for the number of CD11c+ (CD11b+CD45+Venus+) and total (CD11b+CD45+) microglia in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SpNT (n=6–7 mice). One-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunohistochemical analysis of the SDH (A) and the DRG (B) of naive WT mice and SpNT-WT mice with intrathecal injection of PBS or IL-4 (from day 14–16 post-SpNT). Immunofluorescence of CD169, CD11b, P2Y12R, and IBA1 in the SDH (L4) ipsilateral to the SpNT (day 17) (A) and of CCR2 and IBA1 in the DRG (L4) ipsilateral to the SpNT (day 17) (B). Scale bars, 100 μm (A) and 40 μm (B).
+
+### IL-4-induced remission of pain hypersensitivity requires spinal CD11c+ microglia
 
 To determine whether CD11c+ microglia are required for pain remission induced by IL-4, we used Itgax-DTR-EGFP mice in which the diphtheria toxin (DTX) receptor (DTR) and enhanced green fluorescence protein (EGFP) are expressed on CD11c+ cells (Kohno et al., 2022; Jung et al., 2002), and administered DTX intrathecally to these mice to deplete CD11c+ microglia in the spinal cord. Intrathecal IL-4 also induced behavioral remission of mechanical hypersensitivity in Itgax-DTR-EGFP mice, but the pain-reducing effect was eliminated by intrathecal injection of DTX on day 17 post-SpNT (Figure 2A). The depletion of EGFP+ (CD11c+) microglia in the SDH by DTX injection was confirmed (Figure 2B), indicating the necessity of spinal CD11c+ microglia for the pain-relieving effect of intrathecal IL-4. IL-4 also alleviated pain hypersensitivity in female mice, which was also dependent on CD11c+ microglia (Figure 3). In addition to SDH, CD11c+ cells have been shown to be present at the site of injury and in the DRG (Kohno et al., 2022). Thus, we examined the involvement of CD11c+ cells in the DRG in the pain-relieving effect of intrathecal IL-4 using our previously reported strategy that enables the selective depletion of CD11c+ cells in the periphery (Kohno et al., 2022). The intraperitoneal administration of DTX at a low dose (2 ng/g mouse) in SpNT mice treated with IL-4 on day 17 efficiently eliminated CD11c+ cells (also positive for IBA1) in the DRG on day 18 (Figure 4A). However, the number of CD11c+ microglia in the SDH was not significantly different between the PBS- and DTX-treated groups (Figure 4B). Under these conditions, we found that the elevated PWT observed in IL-4-treated mice on day 17 did not change 1 day after intraperitoneal administration of DTX (day 18; Figure 4C), suggesting that CD11c+ cells in the DRG are not involved in the IL-4-induced alleviating effect on neuropathic pain. Altogether, these data indicate that intrathecally administered IL-4 induces spinal microglia to be in a CD11c+ state, and that this induction is necessary for the ameliorating effect of IL-4 on neuropathic pain.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig2-v1.jpg)
 
-**Figure 2.:** + microglia.(A) Paw withdrawal threshold (PWT) of Itgax-DTR-EGFP mice before (Pre) and after SpNT (n=6–7 mice). IL-4 or PBS was intrathecally administrated from days 14–16 post-SpNT (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. ****p<0.0001 versus the ipsilateral side of PBS-PBS group, ††††p<0.0001 versus the ipsilateral side of IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. (B) Flow cytometric quantification for the number of CD11c+ microglia (CD11b+CD45+EGFP+) in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SpNT in Itgax-DTR-EGFP mice treated with PBS/PBS, IL-4/PBS, or IL-4/DTX (n=4–5 mice). One-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.Figure 2—source data 1.Figure 2 plots.
+**Figure 2.:** (A) Paw withdrawal threshold (PWT) of Itgax-DTR-EGFP mice before (Pre) and after SpNT (n=6–7 mice). IL-4 or PBS was intrathecally administrated from days 14–16 post-SpNT (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. ****p<0.0001 versus the ipsilateral side of PBS-PBS group, ††††p<0.0001 versus the ipsilateral side of IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. (B) Flow cytometric quantification for the number of CD11c+ microglia (CD11b+CD45+EGFP+) in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SpNT in Itgax-DTR-EGFP mice treated with PBS/PBS, IL-4/PBS, or IL-4/DTX (n=4–5 mice). One-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig3-v1.jpg)
 
-**Figure 3.:** Paw withdrawal threshold (PWT) of Itgax-DTR-EGFP mice before (Pre) and after SpNT (n=6 female mice). IL-4 or PBS was intrathecally administrated from days 14–16 post-SpNT (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. ****p<0.0001 versus the ipsilateral side of PBS-PBS group, †††p<0.001 versus the ipsilateral side of IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.Figure 3—source data 1.Figure 3 plots.
+**Figure 3.:** Paw withdrawal threshold (PWT) of Itgax-DTR-EGFP mice before (Pre) and after SpNT (n=6 female mice). IL-4 or PBS was intrathecally administrated from days 14–16 post-SpNT (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. ****p<0.0001 versus the ipsilateral side of PBS-PBS group, †††p<0.001 versus the ipsilateral side of IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig4-v1.jpg)
 
-**Figure 4.:** + cells in the DRG are involved in IL-4-induced remission of pain hypersensitivity.(A and B) Immunohistochemical analyses of CD11c+ cells (EGFP+ IBA1+) in the DRG (A) and SDH (B) on day 18 post-SpNT of Itgax-DTR-EGFP mice treated intrathecally with IL-4 (from days 14 to 16) (n=4–5 mice). DTX (2 ng/g) or PBS was intraperitoneally injected on day 17. The myeloid marker IBA1 was also stained in the SDH (B). Scale bars, 100 µm. Unpaired t-test. (C) Effect of DTX (2 ng/g) intraperitoneally injected (on day 17) on PWT of SpNT mice treated intrathecally with PBS or IL-4 (from days 14 to 16) (n=5 mice). Data are shown as mean ± SEM.Figure 4—source data 1.Figure 4 plots.
+**Figure 4.:** (A and B) Immunohistochemical analyses of CD11c+ cells (EGFP+ IBA1+) in the DRG (A) and SDH (B) on day 18 post-SpNT of Itgax-DTR-EGFP mice treated intrathecally with IL-4 (from days 14 to 16) (n=4–5 mice). DTX (2 ng/g) or PBS was intraperitoneally injected on day 17. The myeloid marker IBA1 was also stained in the SDH (B). Scale bars, 100 µm. Unpaired t-test. (C) Effect of DTX (2 ng/g) intraperitoneally injected (on day 17) on PWT of SpNT mice treated intrathecally with PBS or IL-4 (from days 14 to 16) (n=5 mice). Data are shown as mean ± SEM.
 
-## CD11c+ microglia appearance in the SDH is blunted in SNI model
+### CD11c+ microglia appearance in the SDH is blunted in SNI model
 
 To extend the therapeutic potential of CD11c+ microglia induced by IL-4 in neuropathic pain, we employed another model of neuropathic pain [speared nerve injury (SNI); transection of tibial and common peroneal nerves] (Decosterd and Woolf, 2000). Consistent with previous data (Decosterd and Woolf, 2000), SNI induced a long-lasting pain-hypersensitive state without spontaneous remission, at least until the last day of testing (day 56 post-SNI; Figure 5A), which was in stark contrast to the time course of pain hypersensitivity in the SpNT model. We found that the number of CD11c+ microglia in the SDH at 14 days after nerve injury was lower in the SNI model than in the SpNT model (Figure 5B). Quantitative analysis by flow cytometry confirmed that there were fewer CD11c+ SDH microglia in the SNI mice (Figure 5C). A blunted appearance was also observed on days 35 and 56 post-SNI. In contrast, the total number of microglia in the SDH was comparable between the two models at all time points tested, suggesting an impairment of the nerve injury-induced appearance of CD11c+ microglia in the SNI model. Furthermore, insulin-like growth factor 1 (IGF1) has been identified as a factor that is highly expressed in CD11c+ microglia and is necessary for their pain-remitting effect (Kohno et al., 2022). We quantified Igf1 mRNA expression in the spinal tissue or fluorescence-activated cell sorting (FACS)-isolated SDH microglia from nerve-injured mice (Figure 6). While Igf1 expression in sorted microglia increased in both models after injury, its levels were lower in microglia from SNI mice than in those from SpNT mice (Figure 6D). In addition, an increase in Igf1 mRNA expression in the tissue homogenate of the upper half of the SDH, where CD11c+ microglia accumulate (Kohno et al., 2022), was not observed in tissues from the SNI model (Figure 6E). Moreover, in FACS-isolated CD11chigh SDH microglia that highly expressed IGF1, the expression of Igf1 mRNA was significantly lower in the SNI model (Figure 6F). Thus, given that either the depletion of CD11c+ microglia or knockout of their IGF1 prevents the spontaneous remission of pain in the SpNT model (Kohno et al., 2022), the long-lasting pain-hypersensitive state in the SNI model could be related to the blunted increase in CD11c+ microglia in the SDH and their lower expression of IGF1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig5-v1.jpg)
 
-**Figure 5.:** + microglia in the SDH after SNI.(A) PWT of wild-type (WT) mice before (Pre) and after SpNT and SNI (n=5 mice). (B) Venus (yellow) and IBA1 immunostaining (magenta) in the SDH of SpNT and SNI mice on day 14. Scale bar, 200 µm. (C) Flow cytometric quantification of the number of CD11c+ (CD11b+CD45+Venus+) and total (CD11b+CD45+) microglia in the 3–4th lumbar SDH of Itgax-Venus mice after SpNT and SNI (n=3–5 mice). ****p<0.0001 versus the ipsilateral side of the SNI group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.Figure 5—source data 1.Figure 5 plots.
+**Figure 5.:** (A) PWT of wild-type (WT) mice before (Pre) and after SpNT and SNI (n=5 mice). (B) Venus (yellow) and IBA1 immunostaining (magenta) in the SDH of SpNT and SNI mice on day 14. Scale bar, 200 µm. (C) Flow cytometric quantification of the number of CD11c+ (CD11b+CD45+Venus+) and total (CD11b+CD45+) microglia in the 3–4th lumbar SDH of Itgax-Venus mice after SpNT and SNI (n=3–5 mice). ****p<0.0001 versus the ipsilateral side of the SNI group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig6-v1.jpg)
 
-**Figure 6.:** (A–C) Igf1 mRNA in total RNA extracted from sorted SDH microglia (A; n=4 mice), from tissue homogenate of the upper half of the SDH (B; n=3–4 mice), or from the sorted CD11chigh microglia (C; n=5–6 mice) in Itgax-Venus mice was quantified by qPCR on day 36 post-SpNT or SNI. Cells and tissues were collected from the contralateral (C) and ipsilateral (I) side to the SpNT or SNI. Values represent the relative ratio of Igf1 mRNA (normalized to the value for Actb mRNA) to the ipsilateral (A and C) or contralateral (B) side of SpNT mice. One-way ANOVA with post hoc Tukey multiple comparison test (A and B). Unpaired t-test (C). Data are shown as mean ± SEM.Figure 6—source data 1.Figure 6 plots.
+**Figure 6.:** (A–C) Igf1 mRNA in total RNA extracted from sorted SDH microglia (A; n=4 mice), from tissue homogenate of the upper half of the SDH (B; n=3–4 mice), or from the sorted CD11chigh microglia (C; n=5–6 mice) in Itgax-Venus mice was quantified by qPCR on day 36 post-SpNT or SNI. Cells and tissues were collected from the contralateral (C) and ipsilateral (I) side to the SpNT or SNI. Values represent the relative ratio of Igf1 mRNA (normalized to the value for Actb mRNA) to the ipsilateral (A and C) or contralateral (B) side of SpNT mice. One-way ANOVA with post hoc Tukey multiple comparison test (A and B). Unpaired t-test (C). Data are shown as mean ± SEM.
 
-## IL-4 alleviates SNI-induced pain hypersensitivity in CD11c+ microglia- and IGF1-dependent manners
+### IL-4 alleviates SNI-induced pain hypersensitivity in CD11c+ microglia- and IGF1-dependent manners
 
 Based on the above findings, we tested whether IL-4 could increase the number of CD11c+ microglia and resolve pain hypersensitivity in the SNI model. Intrathecal treatment with IL-4 in SNI mice from day 14 to day 16 significantly increased the number of CD11c+ microglia on day 21, almost all of which were positive for IBA1 and P2Y12R (Figure 7A–C). Similar to the data obtained for SpNT mice, the total number of microglia in the SDH was not significantly different between PBS- and IL-4-treated SNI mice (Figure 7C). Behaviorally, intrathecal IL-4 treatment alleviated the SNI-induced mechanical hypersensitivity (Figure 7D). Furthermore, the depletion of CD11c+ microglia in the SDH of IL-4-treated SNI mice by intrathecal administration of DTX on day 17 negated the ameliorating effect of IL-4 on pain hypersensitivity (Figure 8A and B). Moreover, the IL-4’s effect was not observed in Cx3cr1CreERT2/+;Igf1flox/flox mice treated with tamoxifen (Figure 8C), a treatment that enables selective knockout of the Igf1 gene in tissue-resident Cx3cr1+ cells (Parkhurst et al., 2013), the majority of which are microglia in the SDH (Kohno et al., 2022). Overall, intrathecally administered IL-4 exhibited a pain-remitting effect in the SNI model, which was dependent on CD11c+ microglia and IGF1.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig7-v1.jpg)
 
-**Figure 7.:** + microglia in the SDH and ameliorates pain hypersensitivity in the SNI mice.(A) Venus fluorescence (yellow) and P2Y12R and IBA1 immunostaining (magenta and cyan, respectively) in the SDH of Itgax-Venus mice with SpNT after PBS or IL-4 treatment. Scale bar, 200 µm. (B) Colocalization of Venus, P2Y12R, and IBA1. Scale bar, 20 µm. (C) Flow cytometric quantification for the number of CD11c+ (CD11b+CD45+Venus+) and total (CD11b+CD45+) microglia in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SNI (n=7 mice). One-way ANOVA with post hoc Tukey multiple comparison test. (D) Paw withdrawal threshold (PWT) of Itgax-Venus mice before (Pre) and after SNI (n=6–8 mice). IL-4 or PBS was intrathecally administrated from days 14 to 16 post-SNI (once a day for 3 days). *p<0.05, ***p<0.001 versus the ipsilateral side of PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.Figure 7—source data 1.Figure 7 plots.
+**Figure 7.:** (A) Venus fluorescence (yellow) and P2Y12R and IBA1 immunostaining (magenta and cyan, respectively) in the SDH of Itgax-Venus mice with SpNT after PBS or IL-4 treatment. Scale bar, 200 µm. (B) Colocalization of Venus, P2Y12R, and IBA1. Scale bar, 20 µm. (C) Flow cytometric quantification for the number of CD11c+ (CD11b+CD45+Venus+) and total (CD11b+CD45+) microglia in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SNI (n=7 mice). One-way ANOVA with post hoc Tukey multiple comparison test. (D) Paw withdrawal threshold (PWT) of Itgax-Venus mice before (Pre) and after SNI (n=6–8 mice). IL-4 or PBS was intrathecally administrated from days 14 to 16 post-SNI (once a day for 3 days). *p<0.05, ***p<0.001 versus the ipsilateral side of PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/105087/elife-105087-fig8-v1.jpg)
 
-**Figure 8.:** + microglia and IGF1-dependent manners.(A) Flow cytometric quantification for the number of CD11c+ microglia (CD11b+CD45+EGFP+) in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SNI in Itgax-DTR-EGFP mice treated with IL-4/PBS or IL-4/DTX (n=6 mice). One-way ANOVA with post hoc Tukey multiple comparison test. (B) PWT of Itgax-DTR-EGFP mice before (Pre) and after SNI (n=6 mice). IL-4 was intrathecally administrated from days 14 to 16 post-SNI (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. **p<0.01 versus the ipsilateral side of the IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. (C) PWT of Cx3cr1CreERT2/+;Igf1flox/flox mice before (Pre) and after SNI (n=5–7 mice). Tamoxifen or vehicle was administered 4 weeks before SNI to induce recombination. IL-4 was intrathecally administered from days 14 to 16 post-SNI (once a day for 3 days). ***p<0.001 versus the ipsilateral side of Corn oil group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.Figure 8—source data 1.Figure 8 plots.
+**Figure 8.:** (A) Flow cytometric quantification for the number of CD11c+ microglia (CD11b+CD45+EGFP+) in the 3–4th lumbar SDH contralateral (C) and ipsilateral (I) to SNI in Itgax-DTR-EGFP mice treated with IL-4/PBS or IL-4/DTX (n=6 mice). One-way ANOVA with post hoc Tukey multiple comparison test. (B) PWT of Itgax-DTR-EGFP mice before (Pre) and after SNI (n=6 mice). IL-4 was intrathecally administrated from days 14 to 16 post-SNI (once a day for 3 days). On day 17, DTX (0.5 ng/mouse) or PBS was intrathecally injected. **p<0.01 versus the ipsilateral side of the IL-4-PBS group, two-way ANOVA with post hoc Tukey multiple comparison test. (C) PWT of Cx3cr1CreERT2/+;Igf1flox/flox mice before (Pre) and after SNI (n=5–7 mice). Tamoxifen or vehicle was administered 4 weeks before SNI to induce recombination. IL-4 was intrathecally administered from days 14 to 16 post-SNI (once a day for 3 days). ***p<0.001 versus the ipsilateral side of Corn oil group, two-way ANOVA with post hoc Tukey multiple comparison test. Data are shown as mean ± SEM.
 
 ## Discussion
 
@@ -86,42 +94,318 @@ In this study, we showed an ability of IL-4, known as a T-cell-derived factor, t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>C57BL/6 J</td>
+      <td>The Jackson Laboratory Japan</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (include species here)</td>
+      <td>B6.Cg-Tg(Itgax-Venus)Mnz/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (include species here)</td>
+      <td>B6.FVB-1700016L21RikTg(Itgax-DTR/EGFP)57Lan/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:004509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (include species here)</td>
+      <td>B6.129P2(Cg)-Cx3cr1tm2.1(cre/ERT2)Litt/WganJ</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:021160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (include species here)</td>
+      <td>B6.129(FVB)-Igf1tm1Dlr/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:016831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-IBA1</td>
+      <td>Synaptic Systems</td>
+      <td>RRID:AB_2924932</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-P2Y12R</td>
+      <td>AnaSpec</td>
+      <td>RRID:AB_2298886</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP</td>
+      <td>MBL International</td>
+      <td>RRID:AB_591819</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD169</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2565640</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CCR2</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2893307</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Guinea pig IgG H&amp;L (Alexa Fluor 405)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2827755</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2576217</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 546</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2534093</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat Anti-CD16 /CD32 Monoclonal Antibody, Unconjugated, Clone 2.4G2</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_394657</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat Anti-CD11b Monoclonal Antibody, Alexa Fluor 647 Conjugated, Clone M1/70</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_396796</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD45</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_312971</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 785(TM) anti-mouse/human CD11b</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_2561373</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD206 (MMR)</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_10900231</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Murine IL-4</td>
+      <td>PeproTech</td>
+      <td>214–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Myelin Removal Beads II</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-096-433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MACS LS column</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-042-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA Micro-Prep kit</td>
+      <td>ZYMO</td>
+      <td>R1051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trisure</td>
+      <td>Bioline</td>
+      <td>BIO-38032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Prime Script reverse transcriptase</td>
+      <td>Takara</td>
+      <td>2680B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Premix Ex Taq (Probe qPCR)</td>
+      <td>Takara</td>
+      <td>RR390B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tamoxifen</td>
+      <td>SIGMA</td>
+      <td>T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria Toxin Solution</td>
+      <td>Wako</td>
+      <td>048–34371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>collagenase D</td>
+      <td>Roche</td>
+      <td>11088866001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dispase</td>
+      <td>GIBCO</td>
+      <td>17105041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAlater</td>
+      <td>Invitrogen</td>
+      <td>AM7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-aminoactinomycin D</td>
+      <td>Miltenyi Biotec</td>
+      <td>170-081-088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LSM700 Imaging System</td>
+      <td>Carl Zeiss</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytoFLEX SRT</td>
+      <td>Beckman Coulter</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSAria III</td>
+      <td>BD Biosciences</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio 3</td>
+      <td>Applied Biosystems</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 mice were purchased from Charles River Japan (Kanagawa, Japan). Itgax-Venus mice (B6.Cg-Tg(Itgax-Venus)Mnz/J) (Lindquist et al., 2004), Itgax-DTR-EGFP mice (B6.FVB-1700016L21RikTg(Itgax-DTR/EGFP)57Lan/J) (Jung et al., 2002), Cx3cr1CreERT2/+ mice (B6.129P2(Cg)-Cx3cr1tm2.1(cre/ERT2)Litt/WganJ) (Parkhurst et al., 2013), Igf1flox/flox mice (B6.129(FVB)-Igf1tm1Dlr/J) Liu et al., 1998 were purchased from Jackson Laboratory (Bar Harbor, ME). The data were obtained from male mice except for the data shown in Figures 1D, 3 and 7C. For induction of Cre recombinase, Cx3cr1CreERT2/+; Igf1flox/flox mice were injected subcutaneously with 4 mg of tamoxifen (Sigma, St. Louis, MO) dissolved in 200 μL corn oil (Wako, Osaka, Japan) twice with a 48 hr interval. Four weeks later, when gene-deleting CX3CR1+ cells in peripheral tissues including the DRG has been shown to be replaced by non-deleting cells (Parkhurst et al., 2013; Peng et al., 2016), the mice were subjected to nerve injury. All mice used were aged 5–14 weeks at the start of each experiment and were housed individually or in groups at a temperature of 22 ± 1°C with a 12 hr light–dark cycle and were fed food and water ad libitum. All animal experiments were conducted according to relevant national and international guidelines contained in the ‘Act on Welfare and Management of Animals’ (Ministry of Environment of Japan) and ‘Regulation of Laboratory Animals’ (Kyushu University) and under the protocols approved by the Institutional Animal Care and Use committee review panels at Kyushu University.
 
-## Peripheral nerve injury
+### Peripheral nerve injury
 
 We used two injury models, spinal nerve transection (SpNT) (Kohno et al., 2022; Masuda et al., 2017), which is a modified spinal nerve injury model (Ho Kim and Mo Chung, 1992), and spared nerve injury (SNI) (Decosterd and Woolf, 2000). For the SpNT model, under isoflurane (2%) anesthesia, a small incision at L3–S1 was made. The paraspinal muscle and fat were removed from the L5 transverse process, which exposed the parallel-lying L3 and L4 spinal nerves. The L4 nerve was then carefully isolated and cut while leaving the L3 spinal nerve intact. The wound and the surrounding skin were sutured with 5–0 silk. For the SNI model, according to a previously reported method (Cichon et al., 2018), under isoflurane (2%) anesthesia, the skin on the left thigh was open, and terminal branches of the sciatic nerve were exposed by separating the thigh muscle layer using scissors and blunt forceps. Two of the three branches, the tibial and common peroneal nerves, were tightly ligated with 7–0 Nylon (NM-01, WASHIESU MEDICAL), and a small portion of the nerves distal to the ligation was removed while leaving the sural nerve intact. The wound and the surrounding skin were sutured with 5–0 silk.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 According to our previously reported method (Kohno et al., 2022), mice were deeply anesthetized by i.p. injection of pentobarbital and perfused transcardially with phosphate buffered saline (PBS) followed by ice-cold 4% paraformaldehyde/PBS. Transverse L4 spinal cord sections (30 μm) or L4 dorsal root ganglion (DRG) sections (20 μm) were incubated for 48 hr at 4 °C with primary antibody for IBA1 (1:2000; Cat# 234 308, Synaptic Systems), P2Y12R (1:2000; Cat# AS-55043A, AnaSpec), CCR2 (1:500; Cat# ab273050, Abcam), APC-conjugated CD169 (1:500, Cat# 142417, Biolegend), PE-conjugated CD11b (1:1000, Cat# 101207, Biolegend), or GFP (1:1000; Cat# 598, MBL Life science). Tissue sections were incubated with secondary antibodies conjugated to Alexa Fluor 405 (1:1000, Abcam), 488, or 546 (1:1000, Molecular Probes) and mounted with Vectashield. Three to five sections from one tissue were randomly selected and analyzed using an LSM700 Imaging System (Carl Zeiss, Japan).
 
-## Behavioral test
+### Behavioral test
 
 To assess mechanical sensitivity, calibrated von Frey filaments (0.02–2.0 g, North Coast Medical, USA) were applied to the plantar surfaces of the hindpaws of mice with or without PNI (Kohno et al., 2022) and the 50% PWT was determined using the up–down method (Chaplan et al., 1994).
 
-## Intrathecal injection
+### Intrathecal injection
 
 Under 2% isoflurane anesthesia, a 30 G needle attached to a 25 μL Hamilton syringe was inserted into the intervertebral space between L5 and L6 spinal vertebrae in mice, as previously described (Kohno et al., 2022; Hylden and Wilcox, 1980). Recombinant Murine IL-4 was purchased from Peprotech (Cat# 214–14). IL-4 (40 ng/μL in PBS, 5 μL/mouse) or PBS as a control was intrathecally injected once a day for 3 days from day 14 post-PNI. DTX was purchased from Wako (Cat# 048–34371) and was injected intrathecally (0.1 ng/μL in PBS, 5 μL/mouse) or intraperitoneally (2 ng/g mouse) into Itgax-DTR-EGFP mice. Only mice whose hypersensitivity was attenuated by IL-4 treatment were used for the DTX-induced cell depletion experiment shown in Figure 4C (10 out of 12 mice were included) and Figure 8B (12 out of 15 mice were included).
 
-## Flow cytometry
+### Flow cytometry
 
 As previously described (Kohno et al., 2022), mice were deeply anesthetized by i.p. injection of pentobarbital and perfused transcardially with PBS to remove the circulating blood from the vasculature. The spinal cord was rapidly and carefully removed from the vertebral column and placed into ice-cold Hanks’ balanced salt solution (HBSS). The 3rd–4th lumbar (L3/4) segments (2 mm long) of the spinal dorsal horn (SDH) ipsilateral and contralateral to nerve injury were separated. Unilateral spinal tissue pieces were treated with pre-warmed 0.8 mL enzymatic solution [0.2 U/mL collagenase D (Cat# 11088866001; Roche) and 4.3 U/mL dispase (Cat# 17105041; GIBCO)] in HBSS containing 2% fetal bovine serum (FBS) for 30 min at 37 °C. The tissues were homogenized by passing through a 23 G needle attached with a 1 mL syringe and were further incubated for 15 min at 37 °C. After that, the tissues were homogenized by passing twice through a 26 G needle, and the enzymatic reaction was stopped by adding EDTA (0.5 M). To count the number of CD11c+ (Venus+ or EGFP+) microglia, cell suspension was blocked by incubating with Fc Block (Cat# 553142; BD Biosciences) for 5 min at 4 °C and immunostained with CD11b-AlexaFluor 647 (M1/70; 1:1000; Cat# 557686, BD Biosciences) and CD45-PE (1:1000; Cat# 103106, Biolegend) for 30 min at 4 °C in the dark. After washing, the pellet was resuspended in ice-cold HBSS-FBS and filtered through a 35 μm nylon cell strainer (BD Biosciences) to isolate tissue debris from the cell suspension. The total number of microglia (CD11b+ CD45+ cells) in the L3/4 spinal cord or SDH was analyzed using CytoFLEX SRT (Beckman Coulter) and FlowJo software (TreeStar). Microglia with Venus fluorescence higher in intensity than that observed in microglia of wild-type mice were analyzed as CD11c+ microglia.
 
-## Fluorescent-activated cell sorting (FACS)
+### Fluorescent-activated cell sorting (FACS)
 
 Spinal tissues were removed and homogenized as described above. Myelin debris was removed from the cell suspension using Myelin Removal Beads II and a MACS LS column (Miltenyi Biotec, Bergisch-Gladbach, Germany) according to the manufacturer’s protocol and our previously reported method (Kohno et al., 2022). After centrifugation (300 × g, 10 min, 4 °C), the cells were resuspended in HBSS containing 10% FBS. The cell suspension was blocked by incubating with Fc Block and immunostained with CD11b-Brilliant Violet 785 (1:1000; Cat# 101243, BioLegend), CD206-APC (1:200; Cat# 141708, BioLegend), and CD45-PE (1:1000; Cat# 103105, BioLegend) for 30 min at 4 °C in the dark. After washing, cell suspension was treated with 7-aminoactinomycin D (7-AAD; Miltenyi Biotec) and incubated for 10 min on ice for viability staining prior to cell sorting. CD11b+ CD45+ CD206neg 7-AADneg-singlet cells are gated as live microglia and sorted using FACSAria III (BD Biosciences) or CytoFLEX SRT. The sorted cells were directly collected in lysis buffer for total RNA extraction using the Quick-RNA Micro-Prep kit (ZYMO). CD11chigh microglia were collected as cells with Venus fluorescence higher than the median Venus fluorescence of all CD11c+ microglia (Kohno et al., 2022).
 
-## mRNA extraction from spinal cord homogenates
+### mRNA extraction from spinal cord homogenates
 
 Mice were deeply anesthetized by pentobarbital and perfused transcardially with ice-cold PBS followed by RNAlater Stabilization Solution (Cat# AM7021, Invitrogen). The isolated SDH tissue around the boundary between L3 and L4 segments was isolated and separated into the ipsilateral and contralateral sides, and the upper half portion of the SDH of each side was dissected as described previously (Kohno et al., 2022). Total RNA was extracted from tissue homogenates using Trisure (CAT# BIO-38032, Bioline, USA) according to manufacturer’s protocol and purified with the Quick-RNA Micro-Prep kit (ZYMO).
 
-## QPCR
+### QPCR
 
 As described previously (Kohno et al., 2022), the extracted RNA from the sorted cells or the tissue was transferred to reverse transcriptional reaction with Prime Script reverse transcriptase (2680B, Takara, Japan). Quantitative PCR (qPCR) was performed with Premix Ex Taq (Cat# RR390B, Takara, Japan) using QuantStudio 3 (Applied Biosystems, USA). Expression levels were normalized to the values for Actb. The sequences of TaqMan primer pairs and probe are described below: Actb: 5’-FAM-CCTGGCCTCACTGTCCACCTTCCA-TAMRA-3’ (probe), 5’-CCTGAGCGCAAGTACTCTGTGT-3’ (forward primer), 5’-CTGCTTGCTGATCCACATCTG-3’ (reverse primer); Igf1: 5’- /56-FAM/TCCGGAAGC/ZEN/AACACTCACATCCACAA/3IABkFQ/–3’ (probe), 5’- AGTACATCTCCAGTCTCCTCA-3’ (forward primer), 5’- ATGCTCTTCAGTTCGTGTGT-3’ (reverse primer).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All data are shown as mean ± s.e.m. Statistical significance was determined using the unpaired t-test, two-way ANOVA with post hoc Tukey’s multiple comparison test or one-way ANOVA with post hoc Tukey’s multiple comparison test using GraphPad Prism 7 software. Differences were considered significant at p<0.05.

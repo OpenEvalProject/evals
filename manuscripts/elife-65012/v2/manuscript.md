@@ -18,7 +18,7 @@
 
 ## Abstract
 
-A crucial component of social cognition is to observe and understand the social interactions of other individuals. A promising nonhuman primate model for investigating the neural basis of social interaction observation is the common marmoset ( Callithrix jacchus ), a small New World primate that shares a rich social repertoire with humans. Here, we used functional magnetic resonance imaging acquired at 9.4 T to map the brain areas activated by social interaction observation in awake marmosets. We discovered a network of subcortical and cortical areas, predominately in the anterior lateral frontal and medial frontal cortex, that was specifically activated by social interaction observation. This network resembled that recently identified in Old World macaque monkeys. Our findings suggest that this network is largely conserved between New and Old World primates and support the use of marmosets for studying the neural basis of social cognition.
+A crucial component of social cognition is to observe and understand the social interactions of other individuals. A promising nonhuman primate model for investigating the neural basis of social interaction observation is the common marmoset (Callithrix jacchus), a small New World primate that shares a rich social repertoire with humans. Here, we used functional magnetic resonance imaging acquired at 9.4 T to map the brain areas activated by social interaction observation in awake marmosets. We discovered a network of subcortical and cortical areas, predominately in the anterior lateral frontal and medial frontal cortex, that was specifically activated by social interaction observation. This network resembled that recently identified in Old World macaque monkeys. Our findings suggest that this network is largely conserved between New and Old World primates and support the use of marmosets for studying the neural basis of social cognition.
 
 ## Introduction
 
@@ -32,13 +32,141 @@ Here, we aimed to identify the neural circuits involved in social interaction ob
 
 In this study, we employed a block-design task that consisted of videos showing social interactions of two marmosets (social condition), two side-by-side videos showing a marmoset in each video interacting with its own environment (nonsocial condition), and phase-scrambled versions of these videos. In the social conditions, the actions performed in the videos included eating, playing, fighting, and grooming between two marmosets. In the nonsocial conditions, the actions performed in the videos included eating, exploring objects, looking around, and scratching. A more detailed description of these actions is provided in Tables 1 and 2. Three common marmosets were scanned, and eight runs per marmosets were used for group analysis (24 runs in total).
 
+**Table 1.**
+ Detailed description of the actions in each of the 'social interaction’ condition for each order displayed, each clip within a block (two clips of 6 s) and each repetition (two repetitions) within the run.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Social interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Order 1</td>
+      <td>Playing (roll over the other and touching the head)</td>
+      <td>Grooming (one is lying down, the other one is sitting and grooming the other one's body)</td>
+    </tr>
+    <tr>
+      <td>Grooming (one is lying down, the other is sitting and grooming the other's head)</td>
+      <td>Eating a biscuit (sharing food between a mother and her baby)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Order 2</td>
+      <td>Playing in the forest (roll over the other and touching all body parts)</td>
+      <td>Playing in the forest (roll over the other and touching all body parts including playful biting)</td>
+    </tr>
+    <tr>
+      <td>Grooming on a branch tree (one is lying down, the other one is sitting and grooming the other one's head)</td>
+      <td>Fighting and catching each other</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Order 3</td>
+      <td>Grooming on a branch tree (one is lying down, the other one is sitting and grooming the other one's head)</td>
+      <td>Fighting and catching each other</td>
+    </tr>
+    <tr>
+      <td>Playing (roll over the other and touching the head)</td>
+      <td>Grooming (one is lying down, the other one is sitting and grooming the other one's body)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Detailed description of the actions in each of the 'nonsocial interaction’ condition for each order displayed, each clip within a block (two clips of 6 s) and each repetition (two repetitions) within the run.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Nonsocial interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Order 1</td>
+      <td>Exploring a camera tripod</td>
+      <td>Eating (mostly chewing)</td>
+      <td>Eating banana peel</td>
+      <td>Scratching and exploring its environment</td>
+    </tr>
+    <tr>
+      <td>Eating lettuce while lying on a nest bed</td>
+      <td>Eating on a tree branch</td>
+      <td>Eating on a tree branch</td>
+      <td>Eating while sitting on a table and looking at the camera</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Order 2</td>
+      <td>Eating banana and other fruits, frontal face view</td>
+      <td>Eating while sitting on a table and looking at the camera</td>
+      <td>Exploring and looking at its hand</td>
+      <td>Eating fruits profile view</td>
+    </tr>
+    <tr>
+      <td>Frontal face view before eating sweet potatoes</td>
+      <td>Eating bananas and visually exploring</td>
+      <td>Looking backward, chasing insects</td>
+      <td>Looking backward before eating sweet potatoes</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Order 3</td>
+      <td>Eating lettuce while lying on in a nest bed</td>
+      <td>Eating on a tree branch</td>
+      <td>Eating on a tree branch</td>
+      <td>Eating while sitting on a table and looking at the camera</td>
+    </tr>
+    <tr>
+      <td>Frontal face view before eating sweet potatoes</td>
+      <td>Eating bananas and visually exploring</td>
+      <td>Looking backward, chasing insects</td>
+      <td>Looking backward before eating sweet potatoes</td>
+    </tr>
+  </tbody>
+</table>
+
 Figure 1 shows group maps for four conditions (social, social scrambled, nonsocial, and nonsocial scrambled conditions) on fiducial brain surface (Figure 1, right hemisphere; see Figure 1—figure supplement 1 for the left hemisphere and Figure 1—figure supplement 2 for individual analyses, cluster-defining threshold. p<0.05, α = 0.05 for all contrasts). Both social (Figure 1a) and nonsocial (Figure 1c) videos activated a large network including visual (V1, V2, V3, V4, V4T, V6, V6A, 19M, MT), temporal (FST, TE1, TE2, TE3, TEO, IPa), parietal (MIP, VIP, LIP, AIP, PGM), and frontal areas (45, 47L, 46v, 10, 8av, 8ad, 8C, 6DR). The scrambled versions (Figure 1b, d) showed strong activation in visual (V1, V2, V3, V4, V4T, MT) and temporal areas (FST, TEO, IPa). Activations were also found in frontal cortex (47L, 45, 8av). The scrambled version of the nonsocial condition (Figure 1d) also showed activation in S2E, 1/2, 3a, 3b. Overall, the social and nonsocial conditions elicited a similar network, substantially stronger than those elicited by the scrambled versions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig1-v2.jpg)
+
+**Figure 1.:** Maps are displayed on the right fiducial brain surface (lateral and medial views). The white line delineates the regions based on the atlas from Paxinos et al., 2011. The regions associated with yellow/orange scale correspond to t-scores ≥ 5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). Group maps for the left hemisphere and individual maps for both hemispheres are shown in Figure 1—figure supplement 1 and Figure 1—figure supplement 2, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Maps are displayed on the left fiducial brain surface (lateral and medial views). The white line delineates the regions based on the atlas from Paxinos et al., 2011. The regions associated with yellow/orange scale correspond to t-scores ≥ 5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Maps are displayed on both fiducial brain surface (lateral and medial views). The white line delineates the regions based on the atlas from Paxinos et al., 2011. The regions associated with yellow/orange scale correspond to t-scores ≥ 2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05) for monkeys 1 and 2; and t-scores ≥ 5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05) for monkey 3. The regions associated with blue scale correspond to t-scores ≤ –2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05) for monkeys 1 and 2; and t-scores ≥ −5.4 (p<0.001, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05) for monkey 3.
+
 To identify areas that were more active for the observation of social interactions, we compared the social with the nonsocial condition (Figure 2; see Figure 2—figure supplement 1 for individual analyses, cluster-defining threshold p<0.05, α = 0.05 for all contrasts). This analysis revealed stronger activations in frontal, somatosensory, and cingulate cortex for the social condition. Significant differences were present in frontal areas 10, 9, 14c, 14r, 45, 46d, 47L, 8ad, 8b, 8av, 8C, 6av, 6bv, and 6DC. More posteriorly, somatosensory areas S2I, S2PV, S2PR, 1/2, 3a, and 3b, and motor areas 4ab and ProM were more active for the social than nonsocial condition. We also observed activations in parietal areas (MIP, VIP), rostral temporal areas (STR, TPO, AuCPB, AuRPB), and in cingulate areas (25, 23b, and 31). The largest differences were present in motor/premotor cortex at the border of areas 4ab and 6DC, at the border of somatosensory area 1/2 and premotor areas 6av and 6bc, and in area 25 and orbitofrontal area 14. Differences between social and single interaction conditions are also found at the subcortical level in the SC, Tha, Amy, and CeB. Stronger activations for the nonsocial condition were mainly located in visual (V1, V2, V3, V4, V6), cingulate area 24b, and temporal areas (TF, TE2, TEO).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig2-v2.jpg)
+
+**Figure 2.:** Groups maps are displayed on the right and left fiducial marmoset brain surface (lateral, medial, ventral, and dorsal views) and coronal slices. The white line delineates the regions based on the atlas from Paxinos et al., 2011. Y-coordinates are calculated with respect to the anterior commissure (in millimeters). The regions associated with yellow/orange scale correspond to t-scores ≥ 2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). Nomenclature for coronal slices is as follows: Amy/LT: amygdala/lateral temporal; CeB: cerebellum; MIP: medial intraparietal area; Nacb: nucleus accumbens; SC: superior colliculus; Tha: thalamus; VIP: ventral intraparietal area. Individual maps for both hemispheres are shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Individual maps are displayed on the right and left fiducial marmoset brain surface (lateral, medial, ventral, and dorsal views) for monkeys 1–3. The white line delineates the regions based on the atlas from Paxinos et al., 2011. Y-coordinates are calculated with respect to the anterior commissure (in millimeters). The regions associated with yellow/orange scale correspond to t-scores ≥ 2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The group map is represented on the axial slices of the marmoset brain surface. The left hemisphere shows slightly lower tSNR than the right hemisphere. A, P, L, and R indicate anterior, posterior, left, and right orientation, respectively.
 
 Overall numerous activations looked very similar in both hemispheres but are less strong in the left hemisphere (Figure 2; see Figure 2—figure supplement 2 for temporal signal-to-noise ratio maps).
 
 To better control for low-level visual features, we also reported the interaction effect [social vs. social scrambled] minus [nonsocial vs. nonsocial scrambled] (Figure 3; see Figure 3—figure supplement 1 for individual analyses, cluster-defining threshold p<0.05, α = 0.05 for all contrasts). Overall, this analysis revealed most of the activations found by the previous contrast (Figure 2) but with less spread activations (Figure 3). Significant interaction effect was present in frontal areas 10, 9, 14c, 45, 46d, 47L, 8ad, 8b, 8C, 6bv, and 6DC, and more posteriorly, in somatosensory areas S2I, S2PR, 1/2, 3a, and 3b, motor area 4ab, and rostral temporal areas (STR, TPO, AuCPB). We still observed activations in parietal areas (VIP), in cingulate area 25, and at the subcortical level in the SC, Tha, Amy, and CeB. We did not observe any activation in area 8aV, indicating that the differences are not primarily related to saccades.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig3-v2.jpg)
+
+**Figure 3.:** Groups maps are displayed on the right and left fiducial marmoset brain surface (lateral, medial, ventral, and dorsal views) and coronal slices. The white line delineates the regions based on the atlas from Paxinos et al., 2011. Y-coordinates are calculated with respect to the anterior commissure (in millimeters). The regions associated with yellow/orange scale correspond to t-scores ≥ 2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). Nomenclature for coronal slices is as follows: Amy/LT: amygdala/lateral temporal; CeB: cerebellum; Nacb: nucleus accumbens; SC: superior colliculus; Tha: thalamus; VIP: ventral intraparietal area. Individual maps for both hemispheres are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65012/elife-65012-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Individual maps are displayed on the right and left fiducial marmoset brain surface (lateral, medial, ventral, and dorsal views) for monkeys 1–3. The white line delineates the regions based on the atlas from Paxinos et al., 2011. Y-coordinates are calculated with respect to the anterior commissure (in millimeters). The regions associated with yellow/orange scale correspond to t-scores ≥ 2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05). The regions associated with blue scale correspond to t-scores ≤ –2.3 (p<0.05, AFNI’s 3dttest++, cluster-size correction from Monte Carlo simulation, α = 0.05).
 
 By extracting the time series from 12 regions of interest defined by the Paxinos et al., 2011 atlas and based on the group activation maps, we assessed the differences of response magnitude between the four conditions (Figure 4). Some areas showed stronger activation for the social condition than for the nonsocial condition (paired t-tests, p<0.5; right area 25 p=0.0435; right area 10 p=0.0075; left area 10L p=0.0012; right area 14c p=0.0016; right area VIP p=0.0052; right area 6va p=0.027; right area 6vb p=0.021; right area 46d p=0.0186; left area 46d p=0.005; and right area 45 p=0.0291). These areas also showed stronger activations for the social condition than for its scrambled version (paired t-tests, p<0.05; right area 25 p=0.0355; right area 10 p=0.049; left area 10L p=0.011; right area 14c p=0.002; right area VIP p=0.0257; right area 6va p=0.038; right area 46d p=0.0074; and right area 45 p=2.8 10−6) except for right area 6vb and left 46d.
 
@@ -82,13 +210,13 @@ In summary, we have identified the neural circuitry for social interaction obser
 
 All experimental methods described were performed in accordance with the guidelines of the Canadian Council on Animal Care policy on the care and use of experimental animals and an ethics protocol #2017-114 approved by the Animal Care Committee of the University of Western Ontario.
 
-## Subjects and experimental setup
+### Subjects and experimental setup
 
 Three common marmosets (C. jacchus) completed this study (one female, two males). Their ages and weights at the time of the experiment were 30 months and 363 g (M1), 38 months and 410 g (M2), and 35 months and 310 g (M3), respectively. The animals were prepared for awake fMRI experiments by implanting an MRI-compatible head restraint/recording chamber (for details, see Johnston et al., 2018). Each animal was initially habituated to the MRI environment over the course of 3 weeks. This included the acclimatization to the animal holder (tube closed by neck and tail plates), the head-fixation system, and periodic sounds produced by the MRI sequences (for details, see Schaeffer et al., 2019a). The behavior of the animals was monitored throughout the training to assess the tolerance and well-being of the marmosets (Silva et al., 2011). Their progression was based on their performance on the behavioral scale defined by Silva et al., 2011.
 
 For MRI acquisition, the animal was placed in the sphinx position in an animal holder consisting of an MRI-compatible restraint system (Schaeffer et al., 2019a). The animal was first restrained using neck and tail plates, then the head was restrained by the fixation of the head chamber to the five-channel receive coil. An MRI-compatible camera (model 12M-i, 60 Hz sampling rate, MRC Systems GmbH, Heidelberg, Germany) was positioned in front of the animal holder to allow monitoring of the animals during the acquisition sessions by a veterinary technician. However, this camera and the setup did not allow a proper recording of eye movements as the pupil signal was frequently lost. In the MR scanner, the animal faced a translucent plastic screen placed at the front of the bore (119 cm from the animal’s head) where visual stimuli were displayed via back-projection after being reflected off of a first-surface mirror. Images were projected with a SONY VPL-FE40 projector. The maximum visual angle from the center to the side of the screen was 6.5°. Stimuli were presented via Keynote (version 10.1, Apple Incorporated, CA) and launched in synchronization with MRI TTL pulse triggers via a custom-written program running on a Raspberry Pi (model 3 B+, Raspberry Pi Foundation, Cambridge, UK).
 
-## Task and stimuli
+### Task and stimuli
 
 Four task conditions were presented: social condition videos where two marmosets directly interacted with each other (playing, grooming …) and nonsocial videos where two marmosets interacted with their own environment (eating, foraging) in two separate videos but displayed at the same time (Figure 1a, c, right panel). We chose real-world videos to maximize cognitive engagement (Finn and Bandettini, 2020; Meer et al., 2020). Videos were edited into 12 s clips using custom video-editing software (iMovie, Apple Incorporated). Two video clips were displayed within a block (6 s each), and 20 different videos clips were used in total. The videos within the same run were different between the two repetitions of the block condition but played following the same order. Tables 1 and 2 describe which actions were performed for each social (Table 1) and nonsocial (Table 2) blocks. Scrambled versions of social interaction and nonsocial interaction videos (Figure 1b, d, right panel) were created by random rotation of the phase information using a custom program (MATLAB, The MathWorks, Matick, MA). To preserve motion and luminance components, the same random rotation matrix was used for each frame in the scrambled conditions. Videos were presented in the center of the screen (7° height × 13° width) during acquisition sequences.
 
@@ -98,13 +226,13 @@ These four pseudo-randomized conditions were each displayed twice (social condit
 
 **Figure 5.:** Social condition videos, nonsocial condition videos, and their scrambled versions were displayed in a screen during task conditions blocks (12 s each) and separated by baseline blocks where a central dot was displayed in the center of the screen (18 s each). A gray background was displayed behind the dot and videos through the sequence.
 
-## Scanning
+### Scanning
 
 We performed data acquisition using a 9.4 T, 31 cm horizontal-bore magnet (Varian/Agilent, Yarnton, UK) and Bruker BioSpec Avance III HD console with the software package Paravision-6 (Bruker BioSpin Corp, Billerica, MA) at the Centre for Functional and Metabolic Mapping at the University of Western Ontario. We used an in-house, custom-built integrated receive coil with five channels (Schaeffer et al., 2019a) paired with a custom-built high-performance 15-cm-diameter gradient coil with 400 mT/m maximum gradient strength (xMR, London, Canada; Peterson et al., 2018). We used an in-house quadrature birdcage coil (12 cm inner diameter) for the transmit coil.
 
 For each animal, a T2-weighted structural image was acquired, to allow an anatomical registration, with the following parameters: repetition time (TR) = 5500 ms; echo time (TE) = 53 ms; field of view (FOV) = 51.2 × 51.2 mm; voxel size = 0.133 × 0.133 × 0.5 mm; number of slices = 42 (axial); bandwidth = 50 kHz; GRAPPA acceleration factor = 2. For functional imaging, gradient-echo-based, single-shot echo-planar images covering the whole brain were acquired over multiple sessions (TR = 1500 ms; TE = 15 ms; flip angle = 40°; FOV = 64 × 64 mm; matrix size = 128 × 128; voxel size = 0.5 mm isotropic; number of slices = 42 [axial]; bandwidth = 500 kHz; GRAPPA acceleration factor = 2 [anterior-posterior]).
 
-## Analysis
+### Analysis
 
 Monkey 1 performed 8 runs in four sessions, monkey 2 performed 11 runs in five sessions, and Monkey 3 performed 9 runs in four sessions. We selected eight runs per monkeys to have the same number of runs across subjects for the group analysis (the selection was based on the best engagement of the animal as assessed by visual monitoring during the sessions). Time series were preprocessed using AFNI (Cox, 1996), FSL (Smith et al., 2004), and ANTS software (Advanced Normalization Tools, Avants et al., 2011). Raw functional images were converted to NifTI format using dcm2niix (Li et al., 2016) and reoriented from the sphinx position using FSL. The images were then despiked (AFNI’s 3dDespike) and volume registered to the middle volume of each time series (AFNI’s 3dvolreg). The motion parameters from volume registration were stored for later use with nuisance regression. Images were smoothed by a 1.5 mm full-width at half-maximum Gaussian kernel to reduce noise (AFNI’s 3dmerge). An average functional image was then calculated for each session and linearly registered (FSL’s FLIRT) to each animal’s T2-weighted image – the 4D time-series data was carried over using this transformation matrix. Anatomical images were manually skull-stripped, and this mask was applied to the functional images in anatomical space. The T2-weighted images were then nonlinearly registered to the NIH marmoset brain atlas (Liu et al., 2018) using Advanced Normalization Tools and the resultant transformation matrices stored for later transformation (see below). The olfactory bulb was manually removed from the T2-weighted images of each animal prior to registration as it was not included in the template image.
 

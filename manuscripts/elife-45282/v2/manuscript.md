@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.45282.001 Studies suggest that placental nutrient supply adapts according to fetal demands. However, signaling events underlying placental adaptations remain unknown. Here we demonstrate that phosphoinositide 3-kinase p110α in the fetus and the trophoblast interplay to regulate placental nutrient supply and fetal growth. Complete loss of fetal p110α caused embryonic death, whilst heterozygous loss resulted in fetal growth restriction and impaired placental formation and nutrient transport. Loss of trophoblast p110α resulted in viable fetuses, abnormal placental development and a failure of the placenta to transport sufficient nutrients to match fetal demands for growth. Using RNA-seq we identified genes downstream of p110α in the trophoblast that are important in adapting placental phenotype. Using CRISPR/Cas9 we showed loss of p110α differentially affects gene expression in trophoblast and embryonic stem cells. Our findings reveal important, but distinct roles for p110α in the different compartments of the conceptus, which control fetal resource acquisition and growth.
+Studies suggest that placental nutrient supply adapts according to fetal demands. However, signaling events underlying placental adaptations remain unknown. Here we demonstrate that phosphoinositide 3-kinase p110α in the fetus and the trophoblast interplay to regulate placental nutrient supply and fetal growth. Complete loss of fetal p110α caused embryonic death, whilst heterozygous loss resulted in fetal growth restriction and impaired placental formation and nutrient transport. Loss of trophoblast p110α resulted in viable fetuses, abnormal placental development and a failure of the placenta to transport sufficient nutrients to match fetal demands for growth. Using RNA-seq we identified genes downstream of p110α in the trophoblast that are important in adapting placental phenotype. Using CRISPR/Cas9 we showed loss of p110α differentially affects gene expression in trophoblast and embryonic stem cells. Our findings reveal important, but distinct roles for p110α in the different compartments of the conceptus, which control fetal resource acquisition and growth.
 
 ## Introduction
 
@@ -40,9 +40,17 @@ Studies in mice have indicated that homozygous p110α deficiency, either by the 
 
 ## Results
 
-## Fetal and trophoblast p110α interplay to regulate growth of the conceptus
+### Fetal and trophoblast p110α interplay to regulate growth of the conceptus
 
 We found PI3K p110α was highly expressed in the placental transport labyrinthine zone and the endocrine junctional zone of the mouse placenta (Figure 1—figure supplement 1). We then halved the p110α expression in either the trophoblast or the fetal (epiblast-derived) lineages of the conceptus by crossing mice in which exons 18–19 of the Pik3ca gene were flanked by LoxP sites (Graupera et al., 2008), to Cyp19Cre (Wenzel and Leone, 2007) and Meox2Cre (Tallquist and Soriano, 2000) mice, respectively, referred to as Het-P and Het-F throughout. These Cre lines are active in opposite compartments of the conceptus; for Het-P the Cyp19Cre targets expression in the trophoblast lineages of the placenta but not fetus, labyrinthine fetal capillaries or mesenchyme in the chorion (Figure 1A and C). In contrast, in Het-F the Meox2Cre deletes p110α expression in the fetus and placental labyrinthine fetal capillaries and chorionic mesenchyme but not trophoblast (Figure 1B and C) (further information regarding the genetic crosses can be found in Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Validation that Cyp19Cre (A) and Meox2Cre (B) are active in opposite compartments in the conceptus by crossing lines to the tdTomato reporter and assessing placentas and fetuses on day 16 of pregnancy. Boxes in A and B are shown in high magnification in i and ii, respectively. Scale bar for fetuses and placentas in A and B = 2 mm and 1 mm, in i and ii = 200 μm, and in iii and iv = 20 μm, respectively. (C) qRT-PCR for Pik3ca gene normalized to Gapdh in whole homogenates of fetus and placenta of Het-P, Het-F, Het-U and Hom-P mutants on day 19 of pregnancy, expressed as a ratio of their respective wild-type control (WT, denoted as a dotted line). Gapdh expression was not affected by genotype. *p<0.05, **p<0.01, and ***p<0.001 versus WT, unpaired t test. n ≥ 4 per genotype. Het-F = heterozygous deficiency in the fetus, Het-P = heterozygous deficiency in the placenta, Het-U = heterozygous deficiency in the fetus and placenta, Hom-P = heterozygous deficiency in the fetus and homozygous deficiency in the placenta, Jz = Junctional zone, Lz = Labyrinth zone, T = Trophoblast.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative stained section shown with negative control shown in the figure inset.
 
 We then compared the fetal and placental growth phenotype of the conditional Het-P and Het-F on day 19 of pregnancy (term ~20 days) to conceptuses with global heterozygous p110α deficiency achieved using the ubiquitous expressing CMVCre line (Schwenk et al., 1995) (termed Het-U, Figure 1C). We found that compared to their wild-type (WT) littermates, there was no effect of heterozygous deficiency of p110α in the trophoblast on fetal or placental weight in Het-P mutants (Figure 2A). However, fetal and placental weights were 10–15% lower for Het-F and Het-U conceptuses (Figure 2B and C). The findings in Het-F and Het-U mutants are consistent with the proliferation defects observed in embryos with a deficiency in p110α (Bi et al., 1999; Foukas et al., 2006) and reveal for the first time that p110α in the embryo is important for determining the size of the placenta.
 
@@ -52,25 +60,170 @@ We then compared the fetal and placental growth phenotype of the conditional Het
 
 Although fetal and not trophoblast p110α deficiency reduced conceptus weight, both affected the structure of the placenta (Figure 3A–C). In the labyrinthine region of Het-P conceptuses, the volume of maternal blood spaces, fetal capillaries and surface area were reduced though trophoblast increased compared to their WT controls (Figure 3A). In Het-F conceptuses, the labyrinthine zone, fetal capillaries and trophoblast volume were decreased versus WT littermates (Figure 3B). In the ubiquitous p110α heterozygote (Het-U), the volume of the labyrinthine zone, fetal capillaries and trophoblast were reduced, surface area decreased and barrier to diffusion was greater, relative to WT littermates (Figure 3C). Reassuringly, the same defects in Het-U placental structure were previously observed for α/+mutants near term (Sferruzzi-Perri et al., 2016). The volume of the endocrine junctional zone in Het-P, Het-F or Het-U placentas was not significantly altered when compared to the respective WT controls (Figure 3—figure supplement 1). Taken together, these findings indicate that p110α in the fetal and trophoblast lineages of the conceptus interplay to regulate the development of the transport region in the placenta.
 
-## Fetal and trophoblast p110α both regulate placental resource allocation to fetal growth
+![Figure 3.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig3-v2.jpg)
+
+**Figure 3.:** (A) Het-P, (B) Het-F and (C) Het-U placental morphology on day 19 of pregnancy as determined by stereology. *p<0.05, **p<0.01, and ***p<0.001 versus WT, unpaired t test. Data presented as means ± SEM. Scale bar for hematoxylin and eosin-stained placental cross-sections is 500 μm. 6–10 placentas were assessed for each genotype for labyrinthine zone (Lz) volume and 4–5 analysed for Lz morphology.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Placental junctional zone volume on day 19 of pregnancy in Het-P (A), Het-F (B) and Het-U (C). n ≥ 6 placentas were assessed for each genotype. Data are presented as means ± SEM.
+
+### Fetal and trophoblast p110α both regulate placental resource allocation to fetal growth
 
 To assess whether morphological alterations in the placenta affect placental resource allocation to the fetus in Het-F, Het-U and Het-P, we measured the uni-directional maternal-fetal transfer of the non-metabolisable analogs of glucose (3H-methyl-D glucose; MeG) and a neutral amino acid (14C-methyl amino-isobutyric acid; MeAIB) on day 19 of pregnancy. We assessed fetal counts in relation to the estimated surface area for transport or to fetal weight, which respectively provided us with indices of the placental capacity for nutrient transfer and fetal growth relative to supply. We found that in compensation for the impaired labyrinthine development, Het-P and Het-U placentas transferred more MeG and MeAIB and Het-F more MeAIB per unit surface area compared to their respective WT littermates (Figure 4A–C). In agreement with these findings, mutant fetuses received either normal (MeG in all mutants and MeAIB in Het-P and Het-F) or increased amount of solutes (MeAIB in Het-U) for their size (Figure 4D–F). Moreover, the total fetal accumulation of these solutes was the same in the mutant and WT fetuses (Figure 4—figure supplement 1). These data suggest an adaptive response of both facilitated (MeG) and active (MeAIB) transport functions in placentas that are morphologically compromised by a lack of fetal or trophoblast p110α.
 
-## Fetal p110α is essential for embryonic development and trophoblast p110α is critical for its ability to up-regulate amino acid transport to match fetal demands for growth
+![Figure 4.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig4-v2.jpg)
+
+**Figure 4.:** (A–F) The capacity of the placenta to transport 3H-methyl-D glucose (MeG) and 14C-amino isobutyric acid (MeAIB) relative to surface area available or to fetal weight (D–F) on day 19 of pregnancy for Het-P (n = 15) (A, D), Het-F (n = 24) (B, E) and Het-U (n = 16) (C, F), expressed as a ratio of their respective WT control values (denoted as a dotted line, n = 21, 18 and 21, respectively). DPM = disintegrations per minute. *p<0.05 and ***p<0.001 versus WT, unpaired t test. Data presented as means ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The accumulation of 3H-methyl-D glucose (MeG) and 14C-amino isobutyric acid (MeAIB) on day 19 of pregnancy for Het-P (n = 15) (A, D), Het-F (n = 24) (B, E) and Het-U (n = 16) (C, F) with their respective WT control values (n = 21, 18 and 21, respectively). DPM = disintegrations per minute. Data presented as means ± SEM.
+
+### Fetal p110α is essential for embryonic development and trophoblast p110α is critical for its ability to up-regulate amino acid transport to match fetal demands for growth
 
 We wanted to know more about the regulation of placental resource allocation to the developing fetus when there is a loss of fetal and trophoblast p110α. In particular, we wondered whether adaptation of placental transport function would still occur in heterozygous mutants (Het-U) if the trophoblast or fetal lineages were completely deficient in p110α. To do this, we selectively deleted the remaining p110α from the trophoblast or the fetal compartment of Het-U mice, using Cyp19Cre and Meox2Cre, respectively (termed Hom-P and Hom-F, respectively). We found that deleting the remaining p110α from the fetal lineages was lethal between days 11 and 12 of pregnancy (Table 1). In contrast to the lethality of Hom-F embryos, we found viable Hom-P fetuses in late gestation (Figure 1C and Table 1—source data 1). The timing of Hom-F lethality was identical to mutants with constitutive homozygous deficiency of p110α (α/α; Foukas et al., 2006) and is consistent with the role of p110α in early murine embryonic development (Xu et al., 2009). Taken together, these findings highlight that p110α in the fetal, but not the trophoblast compartment of the conceptus, is obligatory for prenatal development.
 
+**Table 1.**
+ Deleting the remaining p110α from fetal compartment of the conceptus results in fetal lethality in Hom-F mutants between days 11 and 12 of pregnancy.Frequency of viable fetuses in a litter per gestational age are displayed, with the number of litters in parentheses.Table 1—source data 1.Deleting the remaining p110α from the trophoblast in Hom-P does not affect fetal viability at day 19 of pregnancy.Frequency of viable fetuses in a litter are displayed, with data from n = 15 litters. Offspring genotypes were determined by conventional PCR, and in the case of Cyp19Cre mutants, additionally by qRT-PCR to identify those with a sufficient level of Pik3ca deletion (frequency is in parentheses). When the cut off for Pik3ca deletion in the placenta using qRT-PCR was applied (<65% for Het-P and <30% for Hom-P), the frequency of Cyp19Cre mutants was ~50% less.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT</th>
+      <th>Het-F</th>
+      <th>Het-U</th>
+      <th>Hom-F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D10 (5)</td>
+      <td>23%</td>
+      <td>26%</td>
+      <td>34%</td>
+      <td>17%</td>
+    </tr>
+    <tr>
+      <td>D11 (6)</td>
+      <td>35%</td>
+      <td>23%</td>
+      <td>29%</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>D12 (2)</td>
+      <td>50%</td>
+      <td>25%</td>
+      <td>25%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>D13 (3)</td>
+      <td>39%</td>
+      <td>33%</td>
+      <td>28%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
 When comparing the growth of the Hom-P conceptuses to the control Het-U littermates, we found that fetal growth was restricted by a further 8% on day 19 of pregnancy (Table 2). However, despite the reduction in fetal growth, there was no difference in placental weight and labyrinthine morphology in Hom-P versus Het-U (Table 2). These observations suggest that the more severe reduction in fetal growth in Hom-P (relative to Het-U), was not caused by additional defects in the formation of the placental exchange region due to a complete loss of p110α in the trophoblast.
+
+**Table 2.**
+ Deleting the remaining p110α from the trophoblast reduces fetal weight but does not alter placental growth on day 19 of pregnancy, in Hom-P relative to Het-U controls.Conceptus weights are from n ≥ 18, Lz and Jz volume from n ≥ 6 and Lz morphology from n ≥ 4 per genotype. Data are presented as means ± SEM. * versus Het-U, p<0.05, unpaired t test.Table 2—source data 1.The effect of deleting the remaining p110α from the trophoblast in Hom-P on feto-placental growth relative to WT and Het-P.Hom-P * versus WT or † versus Het-P. *p<0.05 and ***p<0.001, †p<0.05 and †††p<0.001, unpaired t test. Conceptus weights are from n ≥ 15, Lz and Jz volume from n ≥ 6 and Lz morphology from n ≥ 4 per genotype on day 19 of pregnancy. Data are presented as means ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Het-U</th>
+      <th>Hom-P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fetus (mg)</td>
+      <td>1075 ± 31</td>
+      <td>994 ± 22*</td>
+    </tr>
+    <tr>
+      <td>Placenta (mg)</td>
+      <td>84 ± 3</td>
+      <td>89 ± 3</td>
+    </tr>
+    <tr>
+      <td>Labyrinthine zone (mm3)</td>
+      <td>38 ± 3</td>
+      <td>36 ± 2</td>
+    </tr>
+    <tr>
+      <td>Junctional zone (mm3)</td>
+      <td>31 ± 3</td>
+      <td>30 ± 2</td>
+    </tr>
+    <tr>
+      <td>Maternal blood spaces (mm3)</td>
+      <td>13 ± 3</td>
+      <td>11 ± 1</td>
+    </tr>
+    <tr>
+      <td>Trophoblast (mm3)</td>
+      <td>20 ± 1</td>
+      <td>22 ± 2</td>
+    </tr>
+    <tr>
+      <td>Fetal capillaries (mm3)</td>
+      <td>3 ± 1</td>
+      <td>4 ± 1</td>
+    </tr>
+    <tr>
+      <td>Barrier thickness (μm)</td>
+      <td>4.0 ± 0.2</td>
+      <td>3.9 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Surface area (mm2)</td>
+      <td>11 ± 1</td>
+      <td>10 ± 1</td>
+    </tr>
+  </tbody>
+</table>
 
 We wondered whether the greater reduction in fetal growth may have been caused by a defect in placental transport function (a failure of the placenta to adapt its transfer capacity) in the Hom-P versus the Het-U mutants. We found that Hom-P placentas transferred 30% less amino acid (MeAIB) for the surface area available than Het-U littermates (Figure 5A). Furthermore, Hom-P fetuses received less MeAIB solute for their size, as well as overall (Figure 5—figure supplement 1). As the Het-U placenta up-regulated its transport capacity (Figure 4C), this suggests that the greater reduction in fetal growth was due to an inability of the Hom-P placenta to adaptively increase amino acid transfer to the fetus. Placental glucose transfer capacity however, was not affected by a lack of placental p110α; transfer of MeG by the Hom-P placenta was equal to Het-U (Figure 5—figure supplement 1). Data on feto-placental growth and placental transfer in Hom-P compared to wild-type and Het-P, which in contrast, retain p110α in fetus, are shown in Table 2—source data 1 and Figure 5—source data 1. Collectively, our data suggest that the demand signals of the compromised feto-placental unit for more amino acids operate via p110α in the trophoblast.
 
-## Several genes downstream of p110α in the trophoblast are implicated in changes in placental phenotype to support the growing fetus
+![Figure 5.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig5-v2.jpg)
+
+**Figure 5.:** MeG and MeAIB transport relative to surface area available (A) or to fetal weight (B) on day 19 of pregnancy in Hom-P (n = 16), expressed as a ratio of Het-U control values (denoted as a dotted line, n = 16). DPM = disintegrations per minute. *p<0.05 versus Het-U, unpaired t test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** MeG and MeAIB accumulation on day 19 of pregnancy in Het-U control values (n = 16) and Hom-P (n = 16). DPM = disintegrations per minute. *p<0.05 versus Het-U, unpaired t test.
+
+### Several genes downstream of p110α in the trophoblast are implicated in changes in placental phenotype to support the growing fetus
 
 To identify genes responsible for the phenotypic differences observed between Het-U and Hom-P placentas at day 19 of pregnancy we compared their transcriptome using RNA-seq. We identified 97 differentially expressed genes, with 61 up- and 36 down-regulated in Hom-P versus Het-U placenta (Figure 6—source data 1). As expected, the FPKM (fragments per kilobase of transcript per million mapped reads) for the floxed exons, 18–19 of Pik3ca (Graupera et al., 2008) was diminished for Hom-P versus Het-U (Figure 6—figure supplement 1). Using DAVID functional annotation followed by REViGO filtering we found that genes that were down-regulated in Hom-P compared with Het-U placentas have been implicated in cytolysis and cell death, proteolysis, regulation of immune effector processes, whilst those that were up-regulated have proposed roles in cellular hormone metabolic processes (Figure 6—figure supplement 2). We confirmed using qRT-PCR the differential expression of several granzyme encoding genes, which are implicated in apoptosis (Gzmc, Gzmf, Gzme, Gzmd, Gzmb and Gzmg) (Figure 6—source data 1). Granzymes, as well as perforin-1 (which was also differentially expressed in the Hom-P versus Het-U placenta; Figure 6—source data 1) are enriched in uterine natural killer cells. However, we found no significant difference in uterine natural killer cell abundance between Hom-P and Het-U placentas (Figure 6—figure supplement 3). Moreover, paradoxically, we found increased levels of apoptosis in the junctional zone of the Hom-P relative to the Het-U placenta (Figure 6B and C). Inspecting the list of genes from the RNA-seq dataset revealed that expression of the main glucose and System A amino acid transporters (Slc2a, Slc38a) and their proposed regulators (Mtor, Tbc1d4) (Mîinea et al., 2005; Rosario et al., 2013) was not different between Hom-P and Het-U placentas. However, genes involved in water and oxygen transport (eg. Aqp1, Aqp5, Hba-a2) were altered (Figure 6—source data 1), suggesting that other transport capabilities of the placenta may be altered and contribute to the greater fetal growth restriction observed in the Hom-P versus Het-U. Other differentially expressed genes that were not featured in the pathway analysis have been implicated in regulating placental physiology (eg, Cdx2, Cited2, Prl5a1, Prl7c1, Psg19 and Psg22) and pregnancy outcome (eg, Fgl2, Acta2, Ngf and Nov/Ccn3) (Figure 6—source data 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig6-v2.jpg)
+
+**Figure 6.:** (A) Top-scoring biological processes enriched in Hom-P (n = 4) versus Het-U (n = 5) placentas on day 19 determined by RNA-seq (see also Figure 6—source data 1). GO terms enriched in up-regulated genes shown in red and those down-regulated in green. Three genes with the highest fold expression changes are indicated in parentheses. The line corresponds to p=0.05. (B) Representative photomicrographs of increasing magnification of cells in the placenta undergoing apoptosis in situ in Het-U and Hom-P mutants on day 19 of pregnancy. Arrows indicate cells undergoing cell death (Tunnel: TMR red, nuclei: DAPI). (C) Quantification of cells in the placenta undergoing apoptosis in situ for Het-U (n = 8) versus Hom-P (n = 8) on day 19 of pregnancy. Scale bar = 200 μm, Tunnel: TMR red, nuclei: DAPI, Jz = Junctional zone, Lz = labyrinth zone. *p<0.05, unpaired t test. Data presented as individual values with means ± SEM shown. (D) Transcription factors with binding sites enriched at the promoters of differentially expressed genes, as identified by Analysis of Motif Enrichment (AME). (E) Regulatory network built with the four TFs identified by AME analysis using ingenuity pathway analysis. In green are shown proteins that are down-regulated at mRNA level in Hom-P versus Het-P placentas, in blue are depicted TFs predicted as repressors and in orange TFs predicted as activators.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Validation performed by qRT-PCR for 16 genes by plotting the average FKPM values against the average fold change values of both technical and independent biological Het-U (n=5 and n=4, respectively) and Hom-P (n=4 and n=3, respectively) placental replicates on day 19 of pregnancy.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Representative sections stained with Dolichos biflorus agglutinin (DBA) to identify uterine natural killer cells on day 19 of pregnancy. Data presented as individual values with means ± SEM shown. n = 7 for Het-U and n = 5 for Hom-P.
+
 We next identified significant enrichment of binding sites for four transcription factors (STAT1, ARNT2, HMGA1 and MITF) at the promoters of genes differentially expressed between Hom-P and Het-U placenta (Figure 6D and E). The mRNA expression of the transcription factors were not altered in the Hom-P versus Het-U placenta (Figure 6—source data 1), although previous work has shown that their activity is modified by PI3K signaling (Mounayar et al., 2015; Sheu et al., 2017; Terragni et al., 2011; Zhang et al., 2018) and/or implicated in the development of pregnancy complications related to placental dysfunction (Than et al., 2018). Therefore, p110α operates via several genes in the trophoblast to alter placental phenotype to support fetal growth.
 
-## PI3K p110α loss differentially affects the expression of genes in the trophoblast and fetal cell lineages
+### PI3K p110α loss differentially affects the expression of genes in the trophoblast and fetal cell lineages
 
 We wanted to know whether the genes differentially expressed (DEGs) between Hom-P and Het-U placentas, were expressed in the trophoblast or embryonic lineage of the conceptus. Using histology, we assessed the expression of a few differentially expressed genes/proteins in the Hom-P and Het-U placenta (Acta2/ACTA2, Cited2/CITED2, Lum/LUM). We found that these were localized to both trophoblast (in junctional and labyrinthine zones) and epiblast-derived compartments (including fetal vessels in the labyrinthine zone) in the placenta (Figure 7—figure supplement 1). However, only the abundance of CITED2 protein followed a similar direction to the gene, in Hom-P compared with Het-U placentas.
 
@@ -79,6 +232,16 @@ We also compared our RNA-seq dataset with existing trophoblast and embryonic ste
 Functional analysis revealed that the DEGs enriched in TS cells have been implicated in the control of extracellular exosome, whereas those enriched in ES cells are involved in regulating gene expression and extracellular space (Figure 7—source data 1). These data suggested that p110α may modulate different types of genes in the trophoblast and fetal cell lineages of the conceptus and that some, but not all of the gene changes identified in our Hom-P versus Het-U analysis may be a direct consequence of p110α loss in the trophoblast.
 
 To explore these notions further, we deleted exons 18–19 of the Pik3ca gene using CRISPR/Cas9, to diminish p110α protein expression in TS cells (Figure 7A–C). We then quantified the expression of a subset of DEGs identified in vivo in the mutant p110α and wild-type TS cells (Figure 7D). These experiments were additionally performed in ES cells to assess if loss of p110α would have a similar effect on gene expression, as observed in mutant TS cells. Loss of p110α significantly reduced the expression of B2m in mutant TS cells (Figure 7D), similar to findings in vivo from the Hom-P versus Het-U placenta (Figure 6—source data 1). We also observed a trend for reduced expression of Mzp12 upon TS p110α loss, although this did not reach statistical significance with the small number of biological replicates used (p=0.079; Figure 7D). However, none of the other DEGs analyzed were affected by TS p110α deficiency. These data suggest that the mis-regulated pattern of genes identified in the Hom-P versus Het-U placenta represent a combination of both direct and secondary effects of trophoblast p110α loss.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig7-v2.jpg)
+
+**Figure 7.:** (A) Details of CRISPR/Cas9 design to delete exons 18–19 of Pik3ca in trophoblast or embryonic stem cells (TSC and ESC, respectively). The deletion in TSC (trophoblast stem cells) and ESC (embryonic stem cells) was confirmed by (B) qRT-PCR analysis of exons 18–19 of Pik3ca and (C) by Western blotting for p110α. (D) The expression of candidate genes in Pi3kca wildtype (WT) and mutant (Mut) TSC (n = 5 and n = 4, respectively) and ESC (n = 4 and n = 3, respectively). Data in (D) are normalized against housekeeping Sdha. *p<0.05, ****p<0.0001, two-ways ANOVA analysis followed by Fisher post hoc test. Data presented as means ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Data presented as individual values with means ± SEM shown. Data are from n = 7 for Het-U and n = 5 for Hom-P and were analysed by unpaired t test.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/45282/elife-45282-fig7-figsupp2-v2.jpg)
 
 Loss of p110α also had a more prominent impact on the expression of DEGs in ES cells. For instance, p110α deficiency significantly increased the expression of Cited2, Pdlim3, Creb3l1, Mgst1, Aldh1a3 in the ES cells (Figure 7D). For wildtype clones, the expression of the Pik3ca was overall, more uniform in ES than TS cells (Figure 7B). Moreover, loss of p110α tended to increase the expression of genes analyzed in ES cells, but decreased them in TS cells. Taken together, these data demonstrate that pathways downstream of p110α differentially affect the expression of genes in the trophoblast and fetal cell lineages of the conceptus.
 
@@ -108,46 +271,46 @@ Collectively, our data indicate that p110α plays distinct roles in the differen
 
 ## Materials and methods
 
-## Mice and genotyping
+### Mice and genotyping
 
 Mice were housed under dark:light 12:12 conditions with free access to water and chow in the University of Cambridge Animal Facility abiding by the UK Home Office Animals (Scientific Procedures) Act 1986 and local ethics committee. Home Office project license number is 70/7645. Mice in which exons 18 and 19 of the p110α gene were flanked by LoxP sites (Pik3caFl) on a C57Bl6 background were kindly provided by Dr Bart Vanhaesebroeck (University College London) and Dr Klaus Okkenhaug (Babraham Institute) (Graupera et al., 2008). These were time-mated with those expressing the Cre recombinase gene under the control of the trophoblast-specific human Cyp19 promoter (Wenzel and Leone, 2007), the embryonic Meox2 promoter (Tallquist and Soriano, 2000) or the ubiquitous CMV promoter (Schwenk et al., 1995). This achieved three models that had a ~ 50% decrease in p110α in the trophoblast, fetal lineages or whole conceptus, termed Het-P, Het-F and Het-U, respectively. Further crosses were performed on a second generation of Het-U mice to selectively delete the remaining p110α allele in the trophoblast using Cyp19Cre (Hom-P) or fetal lineage using Meox2Cre (Hom-F). See Figure 1—source data 1 for experimental crosses used. Note the wild-types for the Het-P and Het-U are the same animals and the Het-U were the controls for Hom-P. The genotypes of the fetuses/mice were determined by PCR using primers to detect Cyp19Cre (Fwd: GACCTTGCTGAGATTAGATC and Rev: AGAGAGAAGCATGTTTAGCTGG), Meox2Cre (Fwd: GGACCACCTTCTTTTGGCTTC, Rev: AAGATGTGGAGAGTACGGGGTAG, Cre: CAGATCCTCCTCAGAAATCAGC) and CMVCre (Cre Fwd: CGAGTGATGAGGTTCGCAAG, Cre Rev: TGAGTGAACGAACCTGGTCG, Internal control Fwd: ATGTCTCCAATCCTTGAACACTG and Internal control Rev: GCAGTGGGAGAAATCAGAACC). This was done using the following cycle conditions: 94°C, 3 min, then 35 cycles of 94°C for 30 s, 57°C for 30 s and 72°C for 90 s, and then 72°C for 7 min. Genotyping was also performed by PCR using primers for Pik3caFl (Fwd:CTAAGCCCTTAAAGCCTTAC, Rev:CAGCTCCCATCTCAGTTCA and Deletion: ACACACTGCATCAATGGC) as described previously (Graupera et al., 2008) and by real time PCR (qRT-PCR) using Taqman probes (Pik3ca: Mm00435672_g1 and Gapdh: Mm99999915_g1) to confirm deletion in whole fetal and placental tissue homogenates. Due to the mosaic activity of the Cyp19Cre (Wenzel and Leone, 2007) a cut-off for Pik3ca deletion in the placenta using qRT-PCR was set for <65% Het-P and <30% for Hom-P.
 
 To visualize the Cre recombinase activity, Cyp19Cre and Meox2Cre mice were mated to the Rosa26TdRFP reporter mouse line (Gt(ROSA)26Sor; purchased from the Jackson lab and a generous gift from Prof William Colledge, University of Cambridge) (Soriano, 1999). Fetuses and placentas were collected on day 16 of pregnancy, fixed in 4% (wt/vol) PFA, 30% (wt/vol) sucrose and then frozen in OCT (optimal cutting temperature media, TissueTek) for cryosectioning and staining in DAPI.
 
-## Placental nutrient transfer assays
+### Placental nutrient transfer assays
 
 The unidirectional materno-fetal clearance of the non-metabolisable radioactive tracers, 14C-methyl amino-isobutyric acid (MeAIB) and 3H-methyl D-Glucose (MeG) were measured under anesthesia with fentanyl-fluanisone (hypnorm):midazolam (hypnovel) in sterile water (1:1:2, Jansen Animal Health) (Sibley et al., 2004). A 200 μl bolus containing 3.5 µCi, of MeAIB (NEN NEC-671; specific activity 1.86GBq/mmol, Perkin Elmer, USA) and 3.5 µCi MeG (NEN NEC-377; specific activity 2.1GBq/mmol) in physiological saline (0.9% wt/vol) was injected into the maternal jugular vein. Two minutes after tracer injection, the dam was killed by cervical dislocation, uteri were collected and fetal and placental weights recorded. Entire litters of placentas were collected for morphological analyses or snap frozen in liquid nitrogen for quantification of gene expression. Fetuses were decapitated, entire fetal tails taken for DNA genotyping and then fetuses minced and lysed at 55°C in Biosol (National Diagnostics, Atlanta, USA). Fetal lysates were measured for beta emissions by liquid scintillation counting (Optiphase Hisafe II and Packard Tri-Carb, 1900; Perkin-Elmer USA) and radioactivity (DPM; disintegrations per minute) in the fetuses was used to calculate transfer relative to the estimated placental surface area or to fetal weight.
 
-## Placental morphological analyses
+### Placental morphological analyses
 
 Placentas were bisected and one half was fixed in 4% (wt/vol) paraformaldehyde, paraffin-embedding, exhaustively sectioned at 7 μm and stained with hematoxylin and eosin to analyse gross placental structure. The other half was fixed in 4% (wt/vol) glutaraldehyde, embedded in Spurr’s epoxy resin and a single, and 1 μm midline section was cut and then stained with toluidine blue for detailed analysis of labyrinthine zone (Lz) structure using the Computer Assisted Stereological Toolbox (CAST v2.0) program as previously described (Coan et al., 2004). Briefly, to determine the volume densities of each Lz component (fetal capillaries [FC], maternal blood spaces [MBS] and trophoblast), point counting was used and their densities were multiplied by the estimated volume of the Lz to obtain estimated component volumes. Surface densities of maternal-facing and fetal-facing interhaemal membrane surfaces were then determined by counting the number of intersection points along cycloid arcs in random fields of view. These were converted to absolute surface areas and the total surface area for exchange calculated (averaged surface area of MBS and FC). The mean interhaemal membrane thickness was determined by measuring the shortest distance between FC and the closest MBS at random starting locations within the Lz. Per Lz, 200 measurements were made. The harmonic mean thickness (barrier thickness) was calculated from the reciprocal of the mean of the reciprocal distances.
 
-## Placental in situ cell death staining
+### Placental in situ cell death staining
 
 Cells undergoing cell death were detected in paraffin-embedded sections of placenta using the In Situ Cell Death Detection Kit, TMR red (Sigma Aldrich), according to the manufacturer’s instructions. The proportion of TMR red to DAPI stained cells was determined in each placental section using Image J (freeware software).
 
-## Placental immuno-localisation of protein abundance
+### Placental immuno-localisation of protein abundance
 
 For localization of p110α, placental sections were washed with PBS to remove OCT and underwent antigen retrieval with citrate buffer before immunolabelling (antibody against p110α, Cell Signaling, C73F8, 1:75 dilution). Sections were treated with 0.5% Triton X-100 before immunolabelling. Bound antibody was detected using biotinylated goat anti-rabbit IgG (Abcam, ab6720) followed by streptavidin-conjugated horseradish peroxidase (Rockland, S000-03) and 3,3-diaminobenzidine (DAB) according to manufacturer instructions. Sections were lightly counterstained with hematoxylin and mounted in DPX. Negative controls were performed by omission of the primary antibody. For ACTA2 (R and D, MAB1420-SP, 5 μg/ml dilution), LUM (R and D, AF2745-SP, 5 μg/ml dilution), CITED2 (R and D, AF5005-SP, 3 μg/ml dilution) and Dolichos Biflorus Agglutinin lectin (DBA; Vector; B-1035; 6.6 μg/ml dilution) placental sections were de-paraffinized, rehydrated and subject to antigen retrieval prior to immunolabelling. Bound antibody against DBA, CITED2, ACTA2 and LUM was detected using biotinylated goat anti-rabbit (Abcam, ab6720), donkey anti-sheep (Abcam, ab97125), horse anti-mouse (Vector, BA-2000) and horse anti-goat (Vector, BA-9500), respectively. This was followed by incubation with streptavidin-conjugated horseradish peroxidase and visualization with DAB staining, as described previously. Sections were lightly counterstained with nuclear fast red and mounted in DPX. Analysis of each placental section was performed using Image J (freeware software).
 
-## Placental RNA sequencing (RNA-seq)
+### Placental RNA sequencing (RNA-seq)
 
 Total RNA was extracted from whole placental halves using the RNeasy Plus Mini Kit (Qiagen, UK) according to manufacturer’s instructions. RNA-seq libraries were prepared using TruSeq Stranded total RNA library preparation kit (Illumina) and barcoded libraries were combined and submitted for sequencing (50 bp single ended on a HiSeq2500) by the Wellcome Trust-MRC Institute of Metabolic Science Genomics Core Facility. The number of raw reads per library was between 14.3 and 33.4 million. Fastq files were aligned to mouse genome GRCm38 with TopHat (version 2.0.11; Kim 2013) using default settings (The mapping percentage varied between 96.2% and 98.3%). Differential expression was performed using Cuffdiff (version 2.1.1; Trapnell 2012) with the following settings; require a minimum of 5 alignments to conduct significance testing, perform bias correction, do initial estimation to weight multi-hits. Genes identified as differentially expressed (DEG) with Cuffdiff significance indicated as q value < 0.05 and 1.5-linear fold expression change. Pathway analysis was then determined using DAVID gene ontology (Huang et al., 2009) and redundant GO terms were filtered-out using REViGO (Supek et al., 2011). The RNA-seq data have been deposited in NCBI's Gene Expression Omnibus and are accessible through GEO Series accession number GSE126046 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126046).
 
 To search for enrichment of transcription factor binding sites at the promoters of DEG, we used Eukaryotic Promoter Database (EPD – https://epd.vital-it.ch/index.php) to retrieve the DNA sequences from 1,000 bp upstream to 100 bp downstream of the transcriptional start site. These sequences were then analysed using Analysis of Motif Enrichment (AME v4.12.0 – http://meme-suite.org/tools/ame) by selecting Mus musculus and HOCOMOCO Mouse (v11 FULL) as motif database. Transcription factors predicted by AME and Ingenuity Pathway Analysis (IPA) were then used for network visualization, performed using IPA.
 
-## CRISPR/Cas9 knockout in Trophoblast and Embryonic Stem Cells
+### CRISPR/Cas9 knockout in Trophoblast and Embryonic Stem Cells
 
 For CRISPR/Cas9-mediated deletion of Pik3ca, E14tg2a embryonic stem cells (obtained from the Mutant Mouse Regional Resource Center, UC Davis, USA) and TS-Rs26 trophoblast stem cells (a gift of the Rossant lab, Toronto, Canada) (both cell lines were tested and negative for mycoplasma) were transfected with Cas9.2A-eGFP plasmid (Plasmid 48138 Addgene) harboring guide RNAs flanking the exon 18 and exon 19 (http://CRISPR.mit.edu) (Figure 7). Transfection was carried out with Lipofectamine 2000 (ThermoFisher Scientific 11668019) reagent according to the manufacturer’s protocol. Knockout clones were confirmed by western blotting and by genotyping using primers spanning the deleted exons, and by reverse transcription followed by semi-quantitative PCR (RT-qPCR) with primers (AGGGAGCACAAGAGTACACCA and GGCATGCTGCCGAATTGCTA) within and downstream of the deleted exons, as shown in Figure 7. Values were normalized to Sdha expression. Three to five independent knockout clones were analysed for each cell line. The expression of fourteen genes found to be differentially regulated between Het-U and Hom-P placenta, were then assessed by qPCR in p110α deficient TS and ES cells.
 
-## Gene expression by qRT-PCR
+### Gene expression by qRT-PCR
 
 Total RNA was extracted from whole placental halves using the RNeasy Plus Mini Kit (Qiagen, UK) whereas total RNA was extracted from TS and ES cells using trizol (Invitrogen), chloroform and ethanol extraction. Multiscribe Reverse Transcriptase and random primers (Applied Biosystems) were used to synthesize cDNA from 2.5 ug of RNA. Samples were analysed in duplicate by qRT-PCR (7500 Fast Real-Time PCR System, Applied Biosystems, UK) using Sybr green chemistry and pairs of forward and reverse primers (Figure 7—source data 2). The expression of genes of interest were normalized to the expression of Gapdh or Sdha which was not affected by genotype. Data were analysed using the 2–ΔΔCT method for quantification.
 
-## Western blotting
+### Western blotting
 
 Protein expression was quantified using p110α antibody (1:500; Cell Signaling, 4249), as described previously (Sferruzzi-Perri et al., 2011).
 
-## Statistics
+### Statistics
 
 No explicit power analyses were used to predetermine sample size. Randomization was not used in our studies. Analyses of placental morphology and in situ cell death staining were conducted blinded to the genotype. The number of samples per group for each analysis is detailed in the legends of figures and footnotes of tables. Data are presented as mean ± SEM. Data were considered normally distributed and analysed using unpaired and paired t tests with Excel, as required or two-way ANOVA with GraphPad Prism 7. Data were considered statistically significant when p<0.05.

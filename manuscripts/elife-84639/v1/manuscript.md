@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02jzgtq86 Department of Data Science, Dana-Farber Cancer Institute Boston United States
+1. Department of Data Science, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
 2. Department of Biomedical Informatics, Blavatnik Institute, Harvard Medical School Boston United States
-3. https://ror.org/05a0ya142 Cancer Program, Broad Institute of MIT and Harvard Cambridge United States
+3. Cancer Program, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
 
 † Corresponding author
 

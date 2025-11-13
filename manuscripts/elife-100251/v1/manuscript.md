@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03efmqc40 Department of Psychology, Arizona State University Tempe United States
+1. Department of Psychology, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
 
 † Corresponding author
 

@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Human MAIT cells sit at the interface between innate and adaptive immunity, are polyfunctional and are capable of killing pathogen infected cells via recognition of the Class IB molecule MR1. MAIT cells have recently been shown to possess an antiviral protective role in vivo and we therefore sought to explore this in relation to HIV-1 infection. There was marked activation of MAIT cells in vivo in HIV-1-infected individuals, which decreased following ART. Stimulation of THP1 monocytes with R5 tropic HIV BAL potently activated MAIT cells in vitro. This activation was dependent on IL-12 and IL-18 but was independent of the TCR. Upon activation, MAIT cells were able to upregulate granzyme B, IFNγ and HIV-1 restriction factors CCL3, 4, and 5. Restriction factors produced by MAIT cells inhibited HIV-1 infection of primary PBMCs and immortalized target cells in vitro. These data reveal MAIT cells to be an additional T cell population responding to HIV-1, with a potentially important role in controlling viral replication at mucosal sites.
+Human MAIT cells sit at the interface between innate and adaptive immunity, are polyfunctional and are capable of killing pathogen infected cells via recognition of the Class IB molecule MR1. MAIT cells have recently been shown to possess an antiviral protective role in vivo and we therefore sought to explore this in relation to HIV-1 infection. There was marked activation of MAIT cells in vivo in HIV-1-infected individuals, which decreased following ART. Stimulation of THP1 monocytes with R5 tropic HIVBAL potently activated MAIT cells in vitro. This activation was dependent on IL-12 and IL-18 but was independent of the TCR. Upon activation, MAIT cells were able to upregulate granzyme B, IFNγ and HIV-1 restriction factors CCL3, 4, and 5. Restriction factors produced by MAIT cells inhibited HIV-1 infection of primary PBMCs and immortalized target cells in vitro. These data reveal MAIT cells to be an additional T cell population responding to HIV-1, with a potentially important role in controlling viral replication at mucosal sites.
 
 ## Introduction
 
@@ -50,35 +50,87 @@ Here, we investigated to what extent and by which mechanisms HIV-1 could activat
 
 ## Results
 
-## MAIT cells are activated by HIV-1 in vivo
+### MAIT cells are activated by HIV-1 in vivo
 
 To first address MAIT cell activation during HIV-1 infection, PD-1, granzyme B (GzmB), and TIM-3 protein levels were measured pre- and post-ART in donors with Primary and Chronic HIV-1 infection (PHI and CHI respectively) (Figure 1A and B). Expression of all three molecules was very low in healthy controls ex vivo (median: PD-1 = 0.85%, GzmB = 0%, and TIM-3 = 0.15%). Moderate levels of GzmB+ MAIT cells were detected during PHI at baseline (10.06%), which significantly decreased after ART (2.27%, p < 0.05). Granzyme B expression on MAIT cells was even higher in CHI donors, with a median of 55% (IQR: 41.2–93.9%) of cells being positive; however, these levels dramatically decreased following 1 year of ART (22.45%, p < 0.001). Activation-induced inhibitory receptors PD-1 and TIM-3 followed a similar pattern of expression to granzyme B during acute and chronic HIV-1 infection. There was a ~ 2.7-fold decrease in PD-1 and ~2.3-fold decrease of TIM-3 expressing MAIT cells after ART in PHI donors (p < 0.05 and p < 0.01, respectively). This was also observed in CHI, whereby lower percentages of PD-1 and TIM-3 in MAIT cells were detected post-ART (~6.4-fold [p < 0.01] and ~10.8 fold [p < 0.01], respectively). TIM-3 was also expressed at elevated levels in Elite and Viraemic controllers (EC and VC respectively), compared to Healthy controls (HC) (Figure 1—figure supplement 1), indicating some ongoing activation even with low levels of virus (Figure 1—source data 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative histograms showing upregulation of the activation/inhibitory markers PD-1, Granzyme B (GzmB) and TIM-3 in MAIT cells in chronic HIV-1 infection (CHI) compared to a healthy control (HC). (B) Increased expression of PD-1, GzmB, and TIM-3 on CD8+ CD161++ and Vα7.2+ MAIT cells during PHI and CHI chronic at baseline (BL) and 1 year post-ART (1 yr-Tx). Data points are biological replicates, shown as mean and standard deviation. *p < 0.05, **p < 0.01, *** p < 0.001, **** p < 0.0001; two-tailed t-tests.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Elevated but not statistically significant expression of TIM-3 on MAIT cells from Elite vs.Viraemic Controllers. Data points are biological replicates.
 
 To further assess the impact of HIV-1-induced activation on MAIT cells we tracked cell frequencies in blood in specific patient groups. While MR1-Tetramers loaded with the MAIT cell ligand 5-OP-RU represent the most reliable way to identify MAIT cells in the blood, they can also be identified as CD161++ Vα7.2+ cells, especially within the CD8+ population (Kurioka et al., 2017). In order to test whether this would also be the case in the gut, we co-stained CD161 and Vα7.2 with 5-OP-RU-loaded or control MR1-tetramers and assessed whether CD161++ Vα7.2+ cells stained positive for the tetramers (Figure 2—figure supplement 1). Within the CD8+ and double-negative (DN) populations, almost all CD161++ Vα7.2+ cells reacted with the 5-OP-RU-loaded tetramer but not the 6FP-loaded control tetramer, suggesting that the combination of high CD161 expression with Vα7.2 can be used to identify MAIT cells within the CD8 and DN T-cell populations in the gut. CD161++ Vα7.2+ expression on CD8+ T cells was comparable with the MR1-5-OP-RU+ tetramer and could identify the majority of MAIT cells within this compartment.
 
 As previously noted, loss of CD8+ MAIT cells was observed in HIV-1+ cohorts regardless of disease stage when compared to uninfected controls (Figure 2A&B). Looking at specific clinically defined populations, MAIT cell percentages were also very low in Long-Term Non-Progressors (LNTP), with a ~ 9 fold decrease in Elite controllers (ECs) and a ~ 17-fold decrease in Viraemic controllers (VCs) when compared to healthy controls (Figure 2B). Interestingly, a higher percentage of MAITs was observed in EC compared to those with chronic HIV-1 infection (median of 0.76% and 0.5% respectively, p < 0.05) indicating a potential relationship between MAIT cell frequency and divergent clinical outcomes. No recovery of MAIT cells in blood was observed in either CHI or PHI groups 1 year post-ART (Figure 2C&D). This observation was also consistent during long-term ART (up to 5 years), where MAIT cell percentages did not increase from 1 year post-ART (Figure 2E). Analysis of rectal vs blood derived MAIT frequencies in ART-treated patients revealed a clear positive correlation between the two compartments (rho = 0.69, p < 0.05) (Figure 2F), with relative enrichment of the cells in rectal tissue (Figure 2G). This indicates that both compartments are impacted in parallel and the decline in frequency in blood is unlikely to be accounted for by redistribution to the gut. These data taken together confirm and extend existing studies, indicating that MAIT cells are strongly activated in vivo by HIV-1 infection, varying according to levels of viral replication (Figure 2—source data 1).
 
-## HIV-1 activates MAIT cells in vitro
+![Figure 2.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative dot-plot showing loss of CD8+ MAIT cells, gated on CD161++ and Vα7.2+, in CHI compared to HC. (B) Loss of MAIT cells in peripheral blood in HIV-1+ donors at different HIV-1 stages PHI, CHI, EC (Elite Controllers), and VC (Viraemic controllers). (C) No recovery of MAIT cells post-ART in CHI. (D) No recovery of MAIT cells post-ART in PHI. (E) No recovery of MAIT cells following long-term ART. (F) Higher percentage of MAIT cells in rectal and illeal tissue compared to blood in matched PHI-treated donors. (G) MAIT cell percentages in the rectum compared to terminal ileum of PHI-treated donors. Data points are biological replicates, shown as mean and standard deviation. Spearman’s correlation was used to calculate rho and p value. *p < 0.05, **p < 0.01, *** p < 0.001, **** p < 0.0001; two-tailed t-tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative dot plot of CD161 and Vα7.2 versus MR1-5OPRU tetramer staining in T cell compartments. (B) Comparison of MAIT cell percentages identified using the two staining methods. (C) Proportion of MR1-5OPRU and MR1-Ac-6-FP tetramer-bound cells within CD8+, DN, and CD4+ populations. Data points are biological replicates.
+
+### HIV-1 activates MAIT cells in vitro
 
 We next addressed whether we could model HIV-1 activation of MAIT cells using an in vitro system to further define the mechanism of activation, which can vary between viral systems (Provine et al., 2021; van Wilgenburg et al., 2018), and which has not been previously demonstrated. THP-1 cells, a monocytic cell line, were infected with R5 tropic lab strain HIVBAL for 6 hr and then incubated overnight with enriched CD8+ T cells from peripheral blood from healthy donors. IFNγ production from the CD161++ Va7.2+ population was measured to determine MAIT cell activation and formaldehyde fixed E. coli was included as a positive control (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bar plots showing the percentage of MAIT cells expressing IFN-γ upon in vitro stimulation with fixed E. coli or HIVBAL in the presence or absence of blocking antibodies directed against IL-12 and IL-18. (B) Reduced frequency of GFP positive CEM-GXR cells following infection with HIVBAL (MOI = 0.2) and pre-treatment with stimulated supernatant from MAIT cells. Shown are representative dot plots (left) and cumulative column bars (right). (C) Inhibition of HIVJRFL-GFP infection in primary human PBMCs or CEM-CCR5 cells by addition of control or IL-12/18-treated supernatants obtained from MACS-enriched CD8s (left) or FACS-sorted MAIT cells (right). *p < 0.05, paired t-tests. Data were pooled from three independent experiments; error bars indicate the standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Increased IFN-γ expression from MAIT cells after infection with HIVBAL but not with an inactivated HIVJRFL virus. Data points are biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Titration of IL-12/18 stimulated MAIT cell supernatants on CEM-GXR cells infected with HIVBAL. Plotted are the means from two biological replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Dot plots showing increased intracellular activation and apoptosis marker expression (caspase 3) in MAIT cells after IL-12/18 stimulation. Data points are biological replicates.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Reduced p24 expression in Jurkat-Tat-R5 cells following incubation with stimulated supernatants from MAIT cells compared to unstimulated control supernatants. Addition of an IFNγ blocking antibody did not fully rescue the block to infection. Data points are biological replicates. Bar plot shown as mean and standard deviation. *p < 0.05; two-tailed t-tests. ns = not significant.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) MAIT cells and CEM-GXR cells in co-culture or physically separated in transwell plates were infected with HIVBAL and the number of GFP+ cells was measured. Data points are biological replicates. Bar plot shown as mean and standard deviation.
+
 In this system, HIVBAL was able to activate MAIT cells to similar levels as E. coli (15.98% and 19.65%; respectively) (Figure 3A), whereas an inactivated HIVJRFL primary viral isolate did not have this effect (Figure 3—figure supplement 1). Since IL-12 and IL-18 in combination have been shown to be important in TCR-independent triggering of MAIT cells by some viruses such as Dengue (van Wilgenburg et al., 2018 van Wilgenburg et al., 2016), we sought to analyze this in our system. Blocking antibodies to IL-12 and IL-18 inhibited MAIT cell activation with E. coli, as has been previously shown (Ussher et al., 2014; Kurioka et al., 2018), and importantly also blocked HIVBAL-mediated activation of MAIT cells (Figure 3A). This shows that HIV-1 can activate MAIT cells, similar to other viruses, in an IL12- and IL18-dependent manner.
 
-## MAIT cells possess antiviral activity against HIV-1
+### MAIT cells possess antiviral activity against HIV-1
 
 Since HIVBAL was able to activate MAIT cells in vitro, we sought to determine if viral stimulation of MAIT cells had an impact on HIV-1 infection. To that end, we set up an in vitro infection model, utilizing the CEM-GXR-GFP reporter cell line. Supernatants from unstimulated and IL-12/18 stimulated CD8+ enriched T cells were added to the reporter cells for 6 hr, followed by infection with HIVBaL and GFP expression was measured 4 days post infection (Figure 3B). GFP expression was highest in the positive control samples containing only HIVBAL (6.57%, p < 0.01) or HIVBAL plus the unstimulated supernatant (6.35%). However, this was significantly reduced when stimulated supernatant was added (2.75%, p < 0.01). This inhibition was also observed when a HIVJRFL-GFP virus was used instead (Figure 3C). The suppressive effect of MAIT cell-derived supernatants was evident irrespective of whether supernatants were derived from stimulated whole CD8s (Figure 3C, left) or from pure sorted MAIT cells (Figure 3C, right) or of the target cells used in the assay. The inhibition by the stimulated supernatants was also clearly titratable (Figure 3—figure supplement 2). Thus, IL12/18 stimulated MAIT cells are able to inhibit HIV-1 infection in vitro across a range of different reporter systems.
 
-## Activated MAIT cells secrete effector molecules
+### Activated MAIT cells secrete effector molecules
 
 Having observed that activated MAIT cells can exert an antiviral effect on HIVBAL, we next sought to determine which effector molecules were important for mediating this effect. IL-12/18-stimulated PBMCs from healthy donors showed increased expression of granzyme B (198-fold), IFN-γ(57-fold)and Caspase 3 (9-fold) in the MAIT cell population (CD8+ CD161++ Vα7.2+) (Figure 3—figure supplement 3). To first assess whether IFN-γ contributes to the anti-HIV-1 phenotype, Jurkat-tat-R5 cells were infected with HIVBAL in the presence of IFNγ blocking antibodies and levels of p24 was measured. However, there was no impact of the blocking antibodies on infection levels indicating that IFN-γ is not required for the inhibitory phenotype in our model system (Figure 3—figure supplement 4). Next, as we observed high GzmB-expression in MAITs from HIV-1-infected individuals (Figure 1) and in vitro upon stimulation (Figure 3—figure supplement 3) we sought to determine whether viral inhibition was dependent upon cell contact. However, CEM-GXR cells either co-cultured with MAIT cells or separated in transwell plates showed no suppression of HIV-1 (Figure 3—figure supplement 5) suggesting that direct cell contact is not necessary for the MAIT-derived inhibition of HIV-1 infection (Figure 3—source data 1).
 
-## Antiviral chemokines are secreted by MAIT cells in response to IL12/18 stimulation
+### Antiviral chemokines are secreted by MAIT cells in response to IL12/18 stimulation
 
 Interestingly, IL-12/18-stimulated MAIT cells also upregulated production of the antiviral chemokine MIP-1β (CCL4) (Figure 3—figure supplement 3). This chemokine is a ligand for the HIV-1 entry receptor CCR5 and hence can restrict HIV-1 infection by blocking viral entry. Expression of CCL4 indicated a potential novel antiviral function for MAIT cells. To examine this further, sorted MAIT cells were stimulated with IL-12/18 overnight and supernatants were analyzed using an ELISA to measure CCL4 (Figure 4A) or a cytometric bead array (CBA) to measure CCL3 (MIP1α) and CCL5 (RANTES) (Figure 4B), the other two known ligands for the CCR5 receptor. Higher levels of all three chemokines were expressed by stimulated MAIT cells compared to the unstimulated controls (CCL4 p = 0.125, CCL3 p = 0.0156, CCL5 p = 0.0078), although these differences were not statistically significant for CCL4. To further verify these findings, we measured intracellular expression levels of these chemokines by FACS. CD8+ enriched T cells were incubated overnight with IL-12 and IL-18 and chemokine expression from the CD161++ Va7.2+ population was assessed (Figure 4C). Although only CCL4 was detectable by this method, the results showed a significant increase in CCL4 expression in IL-12/18 stimulated MAIT cells compared to the unstimulated controls (p = 0.0169) confirming data from the stimulated MAIT supernatants (Figure 4A and B). Further, gating on all CCL4+ cells within the total CD8+ T cells, revealed that CD161++ Vα7.2+ cells are highly enriched within the CCL4-producing subset (Figure 4D), accounting on average for 60% of this population. Hence, MAIT cells likely represent the major source of CCL4 in our model system.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig4-v2.jpg)
+
+**Figure 4.:** (A) MAIT cells were FACS-sorted and the CCL4 (MIP-1β) concentration was measured in the supernatants by ELISA after 20 hr post stimulation with IL-12/18. (B) MAIT cells were FACS-sorted and the concentrations of CCL3 (MIP1α) and CCL5 (RANTES) were measured in the supernatants by cytometric bead array (CBA) after 20 hr post stimulation with IL-12/18. (C) Representative FACS-plots (left) and bar plots (right) depicting the expression of CCL4 by MAITs after incubation with IL-12/18 for 20 hr. MAIT cells were identified as CD161++ Vα7.2+ cells within MACS-enriched CD8s. (D) Representative FACS dot plots (left) and bar plots (right) showing the percentage of MAIT cells as identified by co-expression of Vα7.2 with high levels of CD161 within MACS-enriched CD8s and within all CCL4-expressing CD8 T cells from the same culture. CD8 T cells were stimulated with IL-12/18 for 20 hr. (E) Recovery of GFP-positive CEM-GXR cells following blocking of restriction factors (CCL3/4/5), after treatment with IL12/18 stimulated supernatant from CD8 cells and infection with HIVBAL. *p < 0.05, **p < 0.05, paired t-tests. Data were pooled from two independent experiments; error bars indicate the standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Intracellular expression (gMFI) of CXCL12 is increased with addition of 5-OPRU and decreased with a blocking antibody against MR1 (α MR1). Data points are biological replicates. Bar plot shown as mean and standard deviation. *p < 0.05, **p < 0.01; two-tailed t-tests.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50324/elife-50324-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative FACS plots showing infection of CEM-GXR cells with the CXCR4 tropic virus HIVLAI following pre-treatment with unstimulated or IL-12/18-stimulated MAIT cell supernatants. B. Bar graph showing HIVLAI infection of CEM-GXR cells after incubation with unstimulated or IL-12/18-stimulated MAIT cell supernatants. Data points are biological replicates. ns = not significant, paired two-tailed t-test.
+
 Subsequent profiling of the effector molecules produced by MAITs showed that they are also capable of producing CXCL12/SDF-1, the ligand for the alternative HIV-1 entry co-receptor, CXCR4. In contrast to CCL3, 4 and 5, CXCL12 induction required TCR signaling, as it was only observed in co-culture of MAIT cells with 5-OP-RU-loaded THP-1 cells (Figure 4—figure supplement 1). In accordance with these results, no anti-HIV-1 effect of IL-12/18-stimulated supernatants was observed when the CXCR4 tropic HIV-1LAI virus was used instead of HIVBAL to infect the target cells (Figure 4—figure supplement 2). Therefore, upon IL12/18 stimulation MAIT cells significantly increase expression of known HIV-1 restriction factors.
 
-## Antiviral chemokines mediate the inhibition of HIV-1 infection by MAIT cells
+### Antiviral chemokines mediate the inhibition of HIV-1 infection by MAIT cells
 
 As MAIT cells were able to produce three CCR5 binding factors, we aimed to determine their role in the anti-HIV-1 effect of MAIT cells. Using our CEM-GXR-GFP reporter cell - HIVBAL system, we added blocking antibodies to CCL3/4/5 and measured levels of viral infection. Strikingly, the addition of these blocking antibodies neutralized the inhibitory effect of the IL12/18-stimulated supernatant and restored GFP expression to levels equivalent to the control condition (Figure 4E). Taken together these data indicate that the anti-viral activity of MAIT cells in relation to HIV-1 is mediated at least in part by expression of the chemokines CCL3, CCL4, and CCL5 (Figure 4—source data 1).
 
@@ -104,7 +156,7 @@ Overall, these data, taken with other findings, suggest that the strong activati
 
 ## Materials and methods
 
-## Participant samples
+### Participant samples
 
 Participants with Primary HIV-1 (PHI) were recruited as either part of the HEATHER (HIV-1 Reservoir targeting with Early Antiretroviral Therapy) cohort or from the SPARTAC (Short Pulse Antiretroviral Therapy at HIV-1 Seroconversion) trial. For inclusion in the HEATHER cohort, participants with identified PHI commenced ART within 3 months of diagnosis, and did not have co-infection with Hepatitis B or C. For our study, cryopreserved PBMCs were used from the closest pre-therapy sample to seroconversion (baseline) and from a sample 9–15 months after commencement of ART (1 year). Only Baseline samples were used from the SPARTAC trial, which was a multi-centre, randomised controlled trial of short course ART during PHI, the full design of which is described elsewhere (Fidler et al., 2013).
 
@@ -112,47 +164,106 @@ Participants with Chronic HIV-1 (CHI) were recruited in Bloemfontein, located wi
 
 Long-term non-progressor (LTNP) samples were collected at various sites across New South Wales, Australia; samples were processed and stored at St. Vincent’s Centre of Applied Medical Research, Darlinghurst. Eligible subjects were HIV-1+, asymptomatic, diagnosed at least 8 years prior to enrolment, treatment naïve, and had an absolute CD4+ T cell count ≥500 cells/µL. Elite controllers (EC) had an undetectable viral load (median <1.7 Log) whilst viraemic controllers (VC) had a detectable viral load (median <5.8 Log) (Table 1).
 
-## Processing of tissue samples
+**Table 1.**
+ Participant cohort characteristics.CD4 T cell count and HIV-1 (log) viral load.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient cohort</th>
+      <th>Sample Number</th>
+      <th>CD4+ T cells (Count/μL) median (IQR)</th>
+      <th>Plasma viral load (log10 copies/mL) median (IQR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Healthy Donors</td>
+      <td>12</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PHI (SPARTAC)</td>
+      <td>8</td>
+      <td>596 (437–755)</td>
+      <td>5.04 (4.51–5.45)</td>
+    </tr>
+    <tr>
+      <td>PHI (HEATHER)</td>
+      <td>12</td>
+      <td>524 (437–656)</td>
+      <td>4.34 (3.19–4.88)</td>
+    </tr>
+    <tr>
+      <td>HEATHER GUT</td>
+      <td>11</td>
+      <td>-</td>
+      <td>&lt; 1.3</td>
+    </tr>
+    <tr>
+      <td>CHI</td>
+      <td>12</td>
+      <td>360 (72–646)</td>
+      <td>4.90 (3.55–5.59)</td>
+    </tr>
+    <tr>
+      <td>EC LTNP</td>
+      <td>9</td>
+      <td>780 (615–1013)</td>
+      <td>1.70 (1.60–1.70)</td>
+    </tr>
+    <tr>
+      <td>VC LTNP</td>
+      <td>10</td>
+      <td>633 (442–800)</td>
+      <td>5.18 (5.03–5.37)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Processing of tissue samples
 
 Rectal and terminal ileum biopsies (up to 12 from each site) were collected at endoscopy and immediately placed in complete media [RPMI-1640 media with 5% heat-inactivated fetal bovine serum (FBS), 0.04 mg/mL gentamicin, 100 IU/mL penicillin, 0.1 mg/mL streptomycin and 2 mM L-glutamine] and processed within 3 hours of sampling. Briefly, samples were washed in 1 mM dithiothreitol (DTT) solution and then with PGA solution (Hanks’ Balanced Salt Solution with 0.04 mg/mL gentamicin, 100 IU/mL penicillin and 0.1 mg/mL streptomycin). Biopsy samples subsequently underwent collagenase and mechanical digestion using Collagenase D (1 mg/mL) for 30 min and a gentle MACS dissociator (Miltenyi Biotec), respectively. The resulting cell suspension was then strained using a 70 µM filter, washed with a penicillin/streptomycin, glutamine and amphotericin (PGA) solution containing 500 ml Hank’s Balanced Salt Solution (HBSS) without Ca2+ and Mg2+, 5 ml penicillin (100 IU/mL) /streptomycin (0.1 mg/mL), 2 ml Gentamicin, (10 mg/mL) Amphotericin B (50 uL). The washed cells were then used for staining.
 
-## Flow cytometry
+### Flow cytometry
 
 Frozen PBMC were thawed using R10 medium (RPMI + L-glutamine+ Penicillin Streptomycin + 10% FCS) and subsequently stained with antibodies corresponding to either the chemokine/cytokine receptor, cytotoxic, or transcription factor panels (see below). A FoxP3 permeabilization kit (BD Pharmingen) was used for intracellular/intranuclear staining. Staining of the chemokine panel was carried out at 37 °C. Samples were acquired on an LSRII flow cytometer (BD Biosciences) using the FACSDiva software package (BD Biosciences). Prior to each run, all samples were fixed in 2% PFA. Samples were then analyzed using the Flowjo software package (FlowJo, LLC). Gating strategies were developed based on florescence-minus-one (FMO) controls.
 
-## Base panel
+#### Base panel
 
 Live/Dead dye (Invitrogen), CD4 (RPA-T4, BD Biosciences), CD3 (UCHT1), CD8 (5K1), Vα7.2 (3C10), and CD161 (191B8) [all Biolegend].
 
-## Activation/inhibitory receptor panel
+#### Activation/inhibitory receptor panel
 
 GzmB (GB11), PD-1 (EH12.1) and TIM-3(7D3) all Biolegend.
 
-## CD8 MACS enrichment
+### CD8 MACS enrichment
 
 CD8 T cells where enriched from whole PBMCs using a CD8 microbead-positive selection kit (Miltenyi) according to the manufacturer’s instructions. Briefly, whole PBMCs were isolated, washed in MACS buffer and incubated with CD8 microbeads for 15 min on ice. Cells were washed again and run over magnetic LS selection columns placed in a MACS magnet. After three rinsing steps, the columns were removed from the magnet and the enriched CD8 T cells were eluted from the columns. Enriched CD8 T cells were washed, counted and subjected to downstream experiments. A fraction of the enriched CD8 T cells were stained with Live/dead dye and CD8 antibodies to determine purity by FACS staining. On average enriched CD8 T cells had a viability >95% and a purity >96%.
 
-## MAIT cell sorting
+### MAIT cell sorting
 
 To obtain pure MAIT cells for functional analyses, MACS-enriched CD8s were isolated and stained for FACS-sorting with the following antibodies and dyes: CCR6 (Biolegend, G034E3), CD161 (Miltentyi, 191B8), CD8 (Biolegend, SK1) and near-infrared Live/Dead dye (Invitrogen). To avoid TCR-triggering by antibodies, no antibodies against Vα7.2 and CD3 were included in the sorting panel and MAIT cells were instead identified by surrogate markers as CD161hi CCR6+ cells. Sorting was performed on a MA-900 sorter (SONY) using a 100 µm sorting chip. To validate the sorting strategy and to determine the purity of the cells a small fraction of each sorted sample was stained with antibodies against CD3 and Vα7.2 as well as Live/Dead dye. Viability of sorted MAIT cells was on average >93% and > 98% of the sorted cells stained positive for Vα7.2. Samples, which contained considerable populations of dead ( > 15%) or Va7.2 negative ( > 10%) cells were excluded from downstream experiments.
 
-## Cell lines
+### Cell lines
 
 THP1 (ATCC), CEM-GXR (NIH AIDS Reagent Program), CEM-RR5 and Jurkat-Tat-R5 (both kindly provided by Quentin Sattentau) were maintained in RPMI 1640 media containing 10% FCS, L-glutamine and penicillin/streptomycin (Sigma-Aldrich). Cells were cultured every 3–4 days and incubated at 37 °C and 5% CO2. All cell lines used were mycoplasma negative.
 
-## In vitro stimulations of MAIT cells
+### In vitro stimulations of MAIT cells
 
 For the TCR-specific triggering of MAIT cells, PBMC-derived CD8 T cells were enriched over MACS columns and 2 × 105 cells were co-cultured with 1 × 105 THP1 (ATCC) cells which had been pulsed with 10 nM 5-OP-RU for 2 hr. Unpulsed THP1s were used as controls. CD8s and THP1s were cultured together for three or 6 days and the expression of CXCL12 in MAIT cells was assessed by flow cytometry. To ensure that the observed effects were TCR-mediated, an anti-MR1 blocking antibody (5 µg/mL, clone 26.5, Biolegend) was added to control wells. For cytokine-induced MAIT cell activation, 2 × 105 MACS-enriched CD8s or FACS-sorted MAIT cells were stimulated overnight with IL-12 and IL-18 (both at 50 ng/mL). The supernatants of these cultures were harvested and stored at –80 °C before being used to treat HIV-1-BAL infected cells or to assess the expression of viral restriction factors. Supernatant from unstimulated cultures was used as controls.
 
-## Intracellular cytokine staining assay
+### Intracellular cytokine staining assay
 
 2 × 105 MACS-enriched CD8 cells were incubated overnight with or without IL-12 and IL –18 (both at 50 ng/mL) at 37 °C. For the last 4 hr of incubation, Brefeldin A and monensin (Biolegend) were added to block the release of cytokines. Cells were harvested and permeabilized with Cytofix/perm (Becton Dickinson) and stained with intracellular antibodies to base panel as described above, and IFNỿ (B27, Biolegend), CCL4 (MIP-ẞ, FL3423L. BD or REA511, Miltentyi), Caspase-3 (C92-605, BD), CXCL12/SDF-1 (79018, R&Dsystems). MAIT cells were identified as CD161HIV-1α7.2+ cells.
 
-## Cytometric bead array and ELISA
+### Cytometric bead array and ELISA
 
 A total of 2 × 105 FACS-sorted MAIT cells were incubated overnight with or without IL-12 and IL –18 (both at 50 ng/mL) at 37 °C. Cells were pelleted by centrifugation and the supernatants of the cultures was harvested to assess MAIT-specific production of CCL3,4 and 5. CCL3 and 5 production was analyzed by a Cytometric bead array (BD) following the manufacturer’s instructions. Briefly, 50 µl of undiluted supernatant was iteratively mixed and incubated with beads and detection reagents specific for CCL3 or CCL5 and the resulting fluorescent signals were recorded on a LSR II flow cytometer (BD). Protein concentrations were calculated from these fluorescent values based on standard curves generated in each experiment from serially diluted CCL3 and CCL5-stocks with defined concentrations. The concentration of CCL4 in each supernatant was determined using a DuoSet ELISA kit (R&D) following the manufacturer’s instructions. The supernatant was serially diluted and a one in two dilution was used for the final analysis. The concentration was determined from a standard curve which was run in parallel.
 
-## In vitro virus experiments
+### In vitro virus experiments
 
 The THP1 monocytic cell line was incubated with the HIV-1 lab strain HIVBAL or aldrithiol (AT-2) inactivated HIVJRFL virus at an MOI of 0.2 for 6 hr at 37 °C. Positively bead (Thermo Scientific) selected CD8+ T cells were then added to the culture overnight at a ratio of 1:1 with THP1 cells. Anti-IL-12 and anti-IL-18 blocking antibodies (R&D) were used at 10 µg/mL and added to the culture prior to the addition of CD8+ cells. Formaldehyde-treated TOP10 E. coli cells (Thermofisher) were added to THP1 cells as a positive control. IFNỿ (B27, Biolegend) expression was then measured on an LSRII cytometer (BD biosciences).
 
@@ -162,6 +273,6 @@ Healthy donor PBMCs were incubated with unstimulated or IL-12/18-stimulated supe
 
 Transwell - For cell contact experiments, MAIT cells were either co-cultured with CEM-GXR cells or separated using Transwell plates (Corning). HIVBAL was then added and GFP was measured at day 4.
 
-## Statistical analysis
+### Statistical analysis
 
 Ex vivo data from six or more healthy donors and HIV-1+ donors (PBMC and Tissue), and four or more from in vitro stimulated samples were used for statistical calculations. All column graphs are presented as medians with inter-quartile ranges. Wilcoxon paired t test was used to analyze statistical data employing Prism 7.0 (GraphicPad, La Jolla, CA, USA) software. For unpaired samples the Mann-Whitney U test was used. p-Values < 0.05 were considered significant (* < 0.05, ** < 0.01, *** < 0.001, and **** < 0.0001).

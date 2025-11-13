@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01sbq1a82 Department of Biological Sciences, University of Delaware Newark United States
-2. https://ror.org/01sbq1a82 Department of Biological Sciences and Center for Bioinformatics and Computational Biology, University of Delaware Newark United States
+1. Department of Biological Sciences, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
+2. Department of Biological Sciences and Center for Bioinformatics and Computational Biology, University of Delaware Newark United States ([ROR:01sbq1a82](https://ror.org/01sbq1a82))
 
 † Corresponding author
 

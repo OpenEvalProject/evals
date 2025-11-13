@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04rq5mt64 Department of Pharmaceutical Sciences, University of Maryland School of Pharmacy Baltimore United States
-2. https://ror.org/00yf3tm42 Division of Applied Regulatory Science, Office of Clinical Pharmacology, Office of Translational Sciences, Center for Drug Evaluation and Research, United States Food and Drug Administration Silver Spring United States
-3. https://ror.org/05cf8a891 Department of Biochemistry, Department of Medicine, Department of Oncology, Montefiore Einstein Comprehensive Cancer Center, Albert Einstein College of Medicine New York United States
-4. https://ror.org/04a9tmd77 Department of Oncological Sciences, Icahn School of Medicine at Mount Sinai New York United States
+1. Department of Pharmaceutical Sciences, University of Maryland School of Pharmacy Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))
+2. Division of Applied Regulatory Science, Office of Clinical Pharmacology, Office of Translational Sciences, Center for Drug Evaluation and Research, United States Food and Drug Administration Silver Spring United States ([ROR:00yf3tm42](https://ror.org/00yf3tm42))
+3. Department of Biochemistry, Department of Medicine, Department of Oncology, Montefiore Einstein Comprehensive Cancer Center, Albert Einstein College of Medicine New York United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+4. Department of Oncological Sciences, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 
 ## Abstract
 
-Aberrant signaling of BRAF V600E is a major cancer driver. Current FDA-approved RAF inhibitors selectively inhibit the monomeric BRAF V600E and suffer from tumor resistance. Recently, dimer-selective and equipotent RAF inhibitors have been developed; however, the mechanism of dimer selectivity is poorly understood. Here, we report extensive molecular dynamics (MD) simulations of the monomeric and dimeric BRAF V600E in the apo form or in complex with one or two dimer-selective (PHI1) or equipotent (LY3009120) inhibitor(s). The simulations uncovered the unprecedented details of the remarkable allostery in BRAF V600E dimerization and inhibitor binding. Specifically, dimerization retrains and shifts the αC helix inward and increases the flexibility of the DFG motif; dimer compatibility is due to the promotion of the αC-in conformation, which is stabilized by a hydrogen bond formation between the inhibitor and the αC Glu501. A more stable hydrogen bond further restrains and shifts the αC helix inward, which incurs a larger entropic penalty that disfavors monomer binding. This mechanism led us to propose an empirical way based on the co-crystal structure to assess the dimer selectivity of a BRAF V600E inhibitor. Simulations also revealed that the positive cooperativity of PHI1 is due to its ability to preorganize the αC and DFG conformation in the opposite protomer, priming it for binding the second inhibitor. The atomically detailed view of the interplay between BRAF dimerization and inhibitor allostery as well as cooperativity has implications for understanding kinase signaling and contributes to the design of protomer selective RAF inhibitors.
+Aberrant signaling of BRAFV600E is a major cancer driver. Current FDA-approved RAF inhibitors selectively inhibit the monomeric BRAFV600E and suffer from tumor resistance. Recently, dimer-selective and equipotent RAF inhibitors have been developed; however, the mechanism of dimer selectivity is poorly understood. Here, we report extensive molecular dynamics (MD) simulations of the monomeric and dimeric BRAFV600E in the apo form or in complex with one or two dimer-selective (PHI1) or equipotent (LY3009120) inhibitor(s). The simulations uncovered the unprecedented details of the remarkable allostery in BRAFV600E dimerization and inhibitor binding. Specifically, dimerization retrains and shifts the αC helix inward and increases the flexibility of the DFG motif; dimer compatibility is due to the promotion of the αC-in conformation, which is stabilized by a hydrogen bond formation between the inhibitor and the αC Glu501. A more stable hydrogen bond further restrains and shifts the αC helix inward, which incurs a larger entropic penalty that disfavors monomer binding. This mechanism led us to propose an empirical way based on the co-crystal structure to assess the dimer selectivity of a BRAFV600E inhibitor. Simulations also revealed that the positive cooperativity of PHI1 is due to its ability to preorganize the αC and DFG conformation in the opposite protomer, priming it for binding the second inhibitor. The atomically detailed view of the interplay between BRAF dimerization and inhibitor allostery as well as cooperativity has implications for understanding kinase signaling and contributes to the design of protomer selective RAF inhibitors.
 
 ## Introduction
 
@@ -30,6 +30,22 @@ In the adaptive drug resistance mechanism, RAF dimerization renders the monomer-
 
 The kinase domain of the BRAF monomer has a typical kinase structure: a primarily β-sheet N-terminal domain connected to a helical C-terminal domain by a flexible hinge (Figure 1). Like other kinases, the catalytic activity of BRAF depends on the conformation of two motifs: the αC-helix, which contains the conserved residue Glu501, and the DFG motif on the activation loop (a-loop), which contains the conserved ATP-binding (via magnesium) residue Asp594. In the active state, both the αC helix and DFG adopt the IN conformation, dubbed CIDI. In this state, the αC helix is positioned inward such that αC-Glu501 and the catalytic Lys483 form a salt bridge; meanwhile the DFG motif is also IN, meaning DFG-Asp594 is near Lys483 often in a salt-bridge distance. An inactive conformation can be achieved if either or both the αC helix and DFG motif adopt an OUT state. Specifically, αC-out involves an outward movement of the αChelix, while DFG-out involves the sidechains of the DFG Asp594 and Phe595 exchanging regions, that is Phe595 facing the ATP binding site and Asp594 facing the αC-helix.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig1-v1.jpg)
+
+**Figure 1.:** Left. Cartoon representation of the BRAFV600E dimer in complex with PHI1 (PDB: 6P7G Cotto-Rios et al., 2020, two protomers are colored tan and grey). The αC-helix, a-loop, and c-loop are colored orange, yellow, and pink, respectively. Right. A zoomed-in view of a PHI1-bound protomer. PHI1 and the sidechains of DFG-Asp594, αC-Glu501, catalytic Lys483, and HRD-His574 are shown as sticks.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Left. Visualization of the BRAFV600E dimer (PDB ID: 6 P7G) (Cotto-Rios et al., 2020). The αC helix is colored brown and PHI1 is colored cyan. The dimer interface residues H477, H510, and D595 are shown in sticks. Right. A zoomed-in view of the interactions between H477 in protomer A (light brown color) and H510 or D595 in the protomer B (grey color).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Left. Calculated probabilities of the neutral (HID in blue, HIE in orange) and charged (HIP in green) states for H477 (left) and H510 (right) at pH 7.5. The probabilities of protonation states for either histidine is nearly identical between the two protomers. As a default in the CpHMD program (Harris et al., 2022), the charged HIP state was defined by, $\lambda<0.2$ while the neutral states were defined by $\lambda>0.8$ and $χ<0.2$ (HID) or $χ<0.8$ (HIE). The last 5 ns of the replica runs were used for the calculation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Running average probability of each protonation/tautomer state for H477 and H510 at pH 7.5 as a function of simulation time (top plots for protomer A and bottom plots for protomer B). Convergence of the probability occurs after roughly 2 ns, with little change after 5 ns.
+
 In the BRAF dimer, the two protomers are arranged side by side and the dimer interface involves the C-terminal end of the αC helix (Figure 1). Current monomer-selective BRAFV600E inhibitors bind in the αC-out conformation, whereas the dimer-selective or equipotent inhibitors bind in the αC-in conformation (Supplementary file 1A). Thus, the αC conformation has been the center of attention in numerous structural and biochemical studies to understand RAF signaling and inhibitor activities (Rajakulendran et al., 2009; Thevakumaran et al., 2015; Karoulia et al., 2016).
 
 In a recent study, Gavathiotis and coworkers discovered a modification to the dimer-compatible inhibitor Ponatinib which can increase the dimer selectivity by more than three fold (Cotto-Rios et al., 2020). The novel inhibitor, named Ponatinib hybrid inhibitor 1 (PHI1), extends the headgroup of Ponatinib by replacing the methylpiperazine with the 4-(2-aminoethyl) morpholino group. Remarkably, PHI1 showed more potent inhibition of the second protomer in the BRAFV600E dimer; in contrast, Ponatinib and equipotent inhibitors, for example LY3009120 or LY, AZ-628, and TAK-632, are non-cooperative (Cotto-Rios et al., 2020). The co-crystal structure of BRAFV600E in complex with PHI1 (PDB: 6P7G) (Cotto-Rios et al., 2020) revealed that the morpholine group extends the ligand-kinase interaction from the type-II pocket (occupied by all DFG-out inhibitors) to the center of αC helix, allowing a hydrophobic interaction with Asn500 next to the αC-Glu501 (Figure 1). The co-crystal structures show that this interaction is not available with the shorter Ponatinib (PDB ID: 6P3D; Cotto-Rios et al., 2020) or equipotent inhibitors, for example LY3009120 (LY, PDB ID: 5C9C; Peng et al., 2015). Gavathiothis and coworkers noticed that PHI1 stabilizes the αC helix in a slightly different IN conformation as compared to Ponatinib and hypothesized that the additional interaction with Asn500 is a key to the dimer selectivity of PHI1, as it may be unfavorable in monomer binding (Cotto-Rios et al., 2020). Shortly after, a biochemical study supported by the molecular dynamics (MD) simulations suggested that restriction of the αC helix movement is the basis for the difference between dimer-selective and equipotent inhibitors (Adamopoulos et al., 2021); however, the detailed mechanism remains elusive.
@@ -38,9 +54,17 @@ Prompted by the open questions regarding dimer selectivity and binding cooperati
 
 ## Results and discussion
 
-## Analysis of the co-crystal structures suggests the h-bond formation with αC-Glu501 as a key requirement for dimer binding
+### Analysis of the co-crystal structures suggests the h-bond formation with αC-Glu501 as a key requirement for dimer binding
 
 To understand the preference of BRAFV600E inhibitors for the monomer vs. dimer form, we first examined all published co-crystal structures in complex with the monomer-selective and dimer-compatible (i.e. dimer-selective and equipotent) inhibitors (see Supplementary file 1, table 1 for a complete list). We first noticed that the monomer-selective inhibitors, for example Vemurafenib (VEM, PDB ID: 5JRQ; Grasso et al., 2016), do not occupy BP-III, whereas most dimer-compatible inhibitors do. This can be explained by the observation that the monomer-selective inhibitors bind in the DFG-in, whereas most dimer-compatible inhibitors bind in the DFG-out conformation–BP-III is occupied by Phe595 in the DFG-in conformation, so the pocket is only available in the DFG-out conformation (Figure 2a). Note, the equipotent inhibitor SB590885 (PDB ID: 2FB8; King et al., 2006) does not occupy BP-II or BP-III, as it binds in the DFG-in conformation (Supplementary file 1, table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig2-v1.jpg)
+
+**Figure 2.:** a) Left. Visualization of the back pockets (BPs) in BRAFV600E in complex with PHI1. BP-I, BP-II, and BP-III are colored blue, orange, and green, respectively. BP definitions of Liao, 2007) are followed. (a) Right. Chemical structures of the example dimer selective (PHI1), equipotent (LY3009120 or LY), and monomer selective (Vermurafenib or VEM) inhibitors of BRAFV600E. Portions of structures are highlighted according to the BPs they occupy in the co-crystal structure (PDB IDs: 6P7G, 5C9C, and 4RZV). (b) Protein-ligand interaction fingerprints for PHI1, LY, and VEM in BRAFV600E according to the co-crystal structures (PDB IDs: 6P7G, 5C9C, and 4RZV). White indicates no interaction, while grey, blue, and red indicate hydrophobic, h-bond donor (H-donor) and acceptor (H-acceptor) interactions, respectively. These interactions were calculated by KLIFS (Kooistra et al., 2016) and manually verified and corrected. A h-bond was defined using the donor-accept distance cutoff of 3.5 Å, and a hydrophobic contact cutoff of 4 Å was used for aromatic interactions and 4.5 Å for non-aromatic interactions. For simplicity, aromatic face-to-face interactions are indicated as hydrophobic. An extensive list of monomer-selective and dimer-compatible inhibitors with co-crystal structures is given in Supplementary file 1A. (c,d) Inhibition of ERK1/2 T202/Y204 phosphorylation in SKMEL239 (c) and SKMEL239-C4 (d) melanoma cells (50,000 cells/well) following one hour treatment at 37° C by PHI1, LY3009120, and Vemurafenib in different concentrations. Normalized values and non-linear regression fits of ERK phosphorylation % are shown for different compounds. Error bars represent mean ± SEM with n=3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The chemical group responsible for forming the hydrogen bonds with E501 and/or D594 are circled in red.
 
 The co-crystal structure analysis revealed an important distinction between the monomer-selective and dimer-compatible inhibitors, namely, the former binds in the αC-out whereas the latter binds in the αC-in conformation. The interaction fingerprints showed that while most monomer-selective inhibitors make a hydrophobic contact with Leu505 next to the conserved RKTR motif at the end of the αC helix, only the dimer-compatible inhibitors interact with αC-Glu501 by donating a h-bond (e.g. from an amide group in PHI1 and LY) to the carboxylate sidechain of Glu501 (Figure 2b). Glu501 rests above BP-II in the DFG-out conformation (called BP-II-out) and may interact with the catalytic Lys483 (see later discussion), which makes up a part of BP-I. Interestingly, even though SB590885 binds in the DFG-in conformation, it can also donate a h-bond to Glu501 through an oxime hydroxyl group (PDB ID: 2FB8; King et al., 2006). This h-bond stabilizes the salt-bridge between the catalytic Lys483 and Glu501 such that the αC helix position is further inward (according to the KLIFs definition, see later discussion) as compared to the co-crystal structures in complex with other dimer-compatible inhibitors (Supplementary file 1A).
 
@@ -52,7 +76,7 @@ In addition to analyzing the co-crystal structures, we also tested the inhibitio
 
 In light of the above finding and given the central location of Glu501 on the αC helix, we hypothesized that the ability to form a h-bond with Glu501 is required by dimer-compatible inhibitors, as the h-bonding would restrict the αC helix to the αC-in conformation as observed in the co-crystal structures of all dimer-compatible inhibitors. This restriction was also suggested as a key for dimer selectivity in the recent study by Poulikakos and coworkers (Adamopoulos et al., 2021). However, the crystal structures do not provide an explanation for why the ability to induce the αC-in conformation enables the inhibitor to favor dimeric BRAFV600E over monomeric BRAFV600E. Thus, to test the hypothesis regarding the role of h-bond with the Glu501 and to dissect the mechanism of dimer selectivity, we conducted a series of MD simulations of the monomeric and dimeric BRAFV600E in the absence and presence of two dimer-compatible inhibitors (see below).
 
-## Overview of the MD simulations of the monomeric and dimeric BRAFV600E
+### Overview of the MD simulations of the monomeric and dimeric BRAFV600E
 
 The dimer interface of BRAFV600E contains two histidines, His477 and His510. His510 forms a h-bond with His477 of the opposite protomer, while His477 is also in a potential salt bridge distance from Asp595 of the opposite protomer (Figure 1—figure supplement 1).
 
@@ -62,21 +86,110 @@ To rigorously determine protonation states, we applied the all-atom continuous c
 
 Based on the CpHMD determined protonation states, we carried out a series of fixed-charge MD simulations of the monomeric and dimeric BRAFV600E in the ligand-free state (apo) or in complex with the PHI1 or LY inhibitor in each protomer (holo). To investigate the cooperativity of inhibitor binding, MD simulations were also conducted where only one protomer is complexed with the PHI1 or LY inhibitor (mixed). Each simulation lasted 5 μs and was repeated three times for statistical significance; in total, 135 μs trajectory data was collected (Table 1) and the last 3 μs of each repeat was used for analysis.
 
+**Table 1.**
+ Summary of the fixed-protonation-state MD simulations (aggregate time of 135 μs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>System</th>
+      <th>Simulation time</th>
+      <th>Starting structure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Apo monomer</td>
+      <td>3x5μs</td>
+      <td>6P7G(A)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Apo dimer</td>
+      <td>3x5μs</td>
+      <td>6P7G (inhibitors removed)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Holo monomer:PHI1</td>
+      <td>6x5μs</td>
+      <td>6P7G (A:PHI1 or B:PHI1)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Holo monomer:LY</td>
+      <td>3x5μs</td>
+      <td>5C9C (A:LY)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mixed dimer:PHI1</td>
+      <td>3x5μs</td>
+      <td>6P7G (apo A; B:PHI1)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Holo dimer:2PHI1</td>
+      <td>3x5μs</td>
+      <td>6P7G (A:PHI1, B:PHI1)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Mixed dimer:LY</td>
+      <td>3x5μs</td>
+      <td>5C9C (A:LY; apo B)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Holo dimer:2LY</td>
+      <td>3x5μs</td>
+      <td>5C9C (A:LY; B:LY)</td>
+    </tr>
+  </tbody>
+</table>
+
 We note that enhanced sampling methods were not used due to several challenges. First, the BRAF dimer is weakly associated, with αC helix forming a part of the dimer interface (Figure 1a). Enhanced sampling (particularly of αC helix) would likely lead to dimer dissociation. Second, biased sampling methods such as metadynamics may lead to unrealistic conformational states due to the slow relaxation of some parts of the protein to accommodate the conformational change directed by the reaction coordinate. For example, our unpublished metadynamics simulations of a monomer kinase showed that enhancing the DFG conformational change resulted in distortion of the kinase structure.
 
-## Dimerization restrains and shifts αC inward while increasing the flexibility of DFG
+### Dimerization restrains and shifts αC inward while increasing the flexibility of DFG
 
 In order to understand why an inhibitor prefers binding with a dimer or monomer BRAFV600E, it is important to understand the difference in the conformation and dynamics between the apo monomeric and dimeric BRAFV600E. We focus on the αC helix and DFG motif due to their flexibility and importantly specific interactions with the inhibitors (Figure 2). Following KLIFS (Kanev et al., 2021), the αC position is characterized by the distance between Ile582 on β7 (representing a stable reference point) and the center of mass of the Cα atoms of Asn500, Glu501, and Val502 (representing the center of the αC helix); a distance below 19.6 Å defines the αC-in while a distance above defines the αC-out states. We also examined the salt-bridge formation between the αC-Glu501 and catalytic Lys483; a minimum sidechain distance below 4.5 Å is an alternative way to define the αC-in states (Tsai et al., 2019; Sultan et al., 2018). These two definitions are consistent and offers complementary information (see later discussion). The holo PHI1-bound structure (PDB: 6P7G) has both protomers resolved with the αC positions of 19.1 and 19.0 Å, suggesting that the αC helix is in but close to the boundary (19.6 Å) with αC-out according to the KLIFS definition (Kanev et al., 2021).
 
 Unlike in the co-crystal structures of dimer-compatible inhibitors, the simulations of the apo monomer and dimer revealed that the αC helix mostly samples the αC-out state. Compared to the apo monomer, the αC position is not only more restrained but also shifted inward by about 1 Å in the apo dimer, as seen from the increase of the peak height and the left-shift of the peak position in the probability distributions, from 23.2 to 22.0 Å (Figure 3a, Figure 3—figure supplement 1). The flexibility of the αC position in the apo BRAFV600E is consistent with a previous MD study (Maloney et al., 2021) Enabled by the αC inward movement, the probability of salt-bridge formation between Glu501 and Lys483 is increased by two-fold in the apo dimer (∼25%) relative to the apo monomer (∼12%, Figure 3b, Supplementary file 1B). The enhanced but nonetheless unstable Glu501–Lys483 salt bridge indicates that dimerization primes the αC-helix for adopting the αC-in state, for example upon interacting with a dimer-compatible inhibitor.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-v1.jpg)
+
+**Figure 3.:** (a–f) Probability distribution of the αC position, probability of the Lys483–Glu501 salt bridge, and probability distribution of the DFG pseudo dihedral angle in the apo monomer (blue), apo dimer (orange), PHI1-bound dimer (green), and LY-bound dimer BRAFV600E (red). The αC position is defined by the distance between the Cα of Ile582 on β7 and the Cα center of mass of Asn500, Glu501, and Val502 (Kanev et al., 2021). A salt bridge between Lys483 and Glu501 is defined by a cutoff distance of 4 Å between the nitrogen of Lys483 and the nearest carboxylate oxygen of Glu501; the standard deviation of the probability across replicas (n=3) are shown as error bars. The DFG pseudo dihedral is defined by the Cα atoms of Ile592, Gly593, Asp594, and Phe595 (Möbitz, 2015). (g–j) Density plots of the αC position vs. the minimum distance between Glu501 and the amide group of PHI1 (g ,i) or LY (h, j) in the holo dimer (g, h) or holo monomer (i, j) BRAFV600E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Time series plots of the αC-helix position (left column) and DFG dihedral (right column) for each apo protomer simulated. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Time series plots of the αC-helix position (left column) and DFG dihedral (right column) for each holo protomer simulated. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Time series of the minimum distance between E501 carboxylate oxygens and the proton donor of LY (N5 or N6) and PHI1 (N4). Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Time series of the αC-helix position for inhibited monomer and dimer simulations. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Time series plots of the root-mean-square deviation (RMSD) of the protomer in each monomer simulation. The RMSD was calculated using heavy atoms of the protomer backbone, excluding residues on the a-loop and αC-helix. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
 In contrast to the αC helix, the motion of the DFG motif is significantly enhanced, as evident from the significant widening of the probability distribution of the DFG pseudo dihedral (Figure 3c, Figure 3—figure supplement 1), defined by the Cα atoms of Ile592 (DFG-2), Gly593 (DFG-2), Asp594 (DFG-Asp), and Phe595 (DFG-Phe; Möbitz, 2015). Based on a cutoff of 140°, the DFG pseudo dihedral has been found to discriminate between the DFG-in and DFG-out states of kinases (Möbitz, 2015; Tsai et al., 2019). Accordingly, the distributions indicate that the DFG motif samples the DFG-out state in both apo monomer and dimer, with the DFG pseudo dihedral of ∼210°; however, the dimeric DFG is capable of occasionally sampling the DFG-in state due to the increased flexibility (Figure 3c). While this does suggest dimerization loosens the DFG motif, our simulations do not appropriately model the DFG-out/-in transition as the DFG-in state is only occasionally sampled (Figure 3—figure supplement 1).
 
-## PHI1 and LY binding induces the αC-in state to varying degrees and shifts DFG out
+### PHI1 and LY binding induces the αC-in state to varying degrees and shifts DFG out
 
 Having understood how dimerization modulates the conformational dynamics of the αC helix and DFG motif, we proceeded to explore conformational changes induced by the dimer-compatible inhibitors PHI1 and LY. Interestingly and as expected, both inhibitors further restrain the motion of the αC helix, with its position sampling a narrower range of 4 Å, as compared to 7 Å in the apo dimer (Figure 3d, Figure 3—figure supplement 2). Importantly, the αC position is shifted inward by at least 2.7 Å in the holo relative to the apo dimer, and PHI1 induces a larger shift, to 18.3 Å as compared to 19.3 Å in the presence of LY (Figure 3d, Figure 3—figure supplement 2). The inward shift of the αC helix by the two inhibitors is also reflected in the stabilization of the Glu501–Lys483 salt bridge, which is promoted in the presence of LY (60% vs 25% in the apo dimer) and is completely locked in the presence of PHI1 (Figure 3e, Supplementary file 1B). Although the DFG motif is also significantly restrained through inhibitor binding, the DFG pseudo dihedral in the holo dimer is shifted outward by 80° in complex with either PHI1 or LY (210° in the apo dimer vs. 290° in the holo dimer, Figure 3f, Figure 3—figure supplement 2).
 
-## H-bond formation with Glu501 is critical for dimer selectivity by shifting αC helix inward
+### H-bond formation with Glu501 is critical for dimer selectivity by shifting αC helix inward
 
 The monomer-selective inhibitors do not contact the center of the αC helix and their co-crystal structures only adopt αC-out state (Figure 2b). To test our hypothesis that the h-bond formation with Glu501 is critical for restricting the αC helix to the αC-in states, we examined the density plots of the αC position vs. the distance between the amide nitrogen of PHI1 or LY and the carboxylate of Glu501 in the holo dimer simulations (Figure 3g, h, Figure 3—figure supplement 3). In the PHI1-bound dimer simulations, the PHI1–Glu501 h-bond is stable with only occasional breakages, as seen from the density maximum centered at the N4–Glu501 distance of 2.9 Å and αC position ∼18 Å (Figure 3g, Figure 3—figure supplement 3).
 
@@ -88,17 +201,29 @@ To further dissect the mechanism of dimer selectivity, we examined the h-bond in
 
 The correlation between the αC position and the LY–Glu501 interaction confirms our hypothesis that the h-bond interaction between the inhibitor and Glu501 is a key for restraining the αC helix and shifting it to the αC-in states. Since dimerization already restricts the motion of the αC helix and shifts it inward in the apo dimer, inhibitors capable of interacting with Glu501 can bind to the dimer via a conformational selection mechanism in addition to induced fit. On the other hand, conformational selection cannot be exploited for these inhibitors to bind the monomer, as the αC position in the apo monomer is outward. Compared to the equipotent inhibitors, the dimer-selective inhibitors such as PHI1 form much stronger h-bond with Glu501, which shifts the αC helix further inward. The latter may lead to a larger entropic penalty for the monomer binding as compared to the equipotent inhibitors.
 
-## PHI1 or LY binding has similar stabilizing effect on the dimer interface of BRAFV600E
+### PHI1 or LY binding has similar stabilizing effect on the dimer interface of BRAFV600E
 
 The aforementioned data demonstrates the importance of considering entropic penalty in monomer binding as a contributor to dimer selectivity. To rule out the possibility that the different degree of dimer (de)stabilization may also be a contributing factor for dimer selectivity, we turned to the difference contact network analysis (Yao et al., 2018). In this analysis, the BRAFV600E dimer was first partitioned into four different communities based on the the residue-residue contacts, which resulted in each community largely corresponding to the N-lobe (blue or grey) and C-lobe (red or orange) of either protomer (Figure 4 left). Then, a community-community difference contact network between the apo and holo dimer simulation sets was calculated and mapped onto a graph, where the vertices represent the communities and blue and red edges represent the increased and decreased contact probabilities due to inhibitor binding (Figure 4 right). Since we are interested in testing the dimer stability in the presence of PHI1 or LY, the interprotomer contact probabilities(between N-lobe:A and N-lobe:B or C-lobe:B; between C-lobe:A and C-lobe:B or N-lobe:A) were calculated and summed up. Interestingly, for both PHI1 and LY, the total interprotomer contact probability is increased (by 0.3) in the holo relative to the apo simulations. This net increase is mainly due to the N-lobe:A to C-lobe:B interactions which compensates for the decrease in the C-lobe:A to C-lobe:B contacts. This analysis demonstrates that both the dimer-selective and equipotent inhibitors have the same slightly stabilizing effect on the BRAFV600E dimer interface; this rules out the possibility that the dimer selectivity is due to the different degree of dimer stabilization between the dimer-selective and equipotent inhibitors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig4-v1.jpg)
 
-**Figure 4.:** V600E.Left. The N-lobe (blue for A; grey for B) and C-lobe (red for A; orange for B) of each protomer in the BRAFV600E dimer are separated into different communities according to the difference contact network analysis (Yao et al., 2018). Right. The average number of interprotomer contacts was calculated for the apo and holo BRAFV600E dimer. (PHI1 top or LY(bottom)). The difference between the holo and apo contacts is shown in the graph form for PHI1 (top) and LY (bottom), and the sum (0.3) is given. Interprotomer contacts are shown as blue (more contacts in holo simulations) or red (more contacts in apo simulations) edges. The difference contact network analysis was performed using the dCNA program (Yao et al., 2018). The cutoff distance defining a contact was 4.5 Å; the threshold for determining a stable contact was set to 0.7, and the number of communities was set to 4.
+**Figure 4.:** Left. The N-lobe (blue for A; grey for B) and C-lobe (red for A; orange for B) of each protomer in the BRAFV600E dimer are separated into different communities according to the difference contact network analysis (Yao et al., 2018). Right. The average number of interprotomer contacts was calculated for the apo and holo BRAFV600E dimer. (PHI1 top or LY(bottom)). The difference between the holo and apo contacts is shown in the graph form for PHI1 (top) and LY (bottom), and the sum (0.3) is given. Interprotomer contacts are shown as blue (more contacts in holo simulations) or red (more contacts in apo simulations) edges. The difference contact network analysis was performed using the dCNA program (Yao et al., 2018). The cutoff distance defining a contact was 4.5 Å; the threshold for determining a stable contact was set to 0.7, and the number of communities was set to 4.
 
-## Positive cooperativity of PHI1 is due to the allosteric modulation of the αC and the DFG conformation in the opposite protomer
+### Positive cooperativity of PHI1 is due to the allosteric modulation of the αC and the DFG conformation in the opposite protomer
 
 As previously mentioned, PHI1 was found to exert a more potent inhibition of the second protomers of the BRAFV600E dimer, whereas LY demonstrated similar potency in the inhibition of the two protomers (Cotto-Rios et al., 2020). To shed light on this cooperativity mechanism, we examined the simulations of the mixed BRAFV600E dimers in which only one protomer is in complex with PHI1 or LY. We first compared the αC helix position of the apo protomer in the mixed dimers (Figure 5a, Figure 5—figure supplement 1). Surprisingly, the αC helix of the apo protomer in the PHI1-bound mixed dimer is restrained and shifted inward by 1 Å relative to the apo dimer; in contrast, the position of the corresponding αC helix in the LY-bound mixed dimer remains the same but becomes slightly more flexible (blue and grey, Figure 5a left, Figure 5—figure supplement 1). Consistent with the inward shift of the αC helix, the Glu501–Lys483 salt bridge has a lower average probability and a larger fluctuation in the apo dimer and the apo protomer of the LY-mixed dimer, as compared to the apo protomer of the PHI1-mixed dimer (blue and grey, Figure 5a middle).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig5-v1.jpg)
+
+**Figure 5.:** (a) The αC helix position, probability of the Glu501–Lys483 salt bridge, and DFG pseudo dihedral of the apo protomer in the one PHI1- (blue) or one LY-bound (orange) mixed dimer simulations. As a reference, the apo dimer data is shown in grey. (b) The same quantities as in (a) but for the holo protomer in the one PHI1- (blue) or LY-bound (orange) mixed dimer simulations. As a reference, the two PHI1- and LY-bound holo dimer data are shown in green and red, respectively. The standard deviation of the probability across replicas (n=3) is shown in error bars. (c) Snapshot from both mixed dimers, after aligning the PHI1- (cyan) and LY-bound (orange) holo protomers (gray). The αC-helix of the apo protomer is highlighted in cyan for PHI1-bound and orange for LY-bound mixed dimer. For simplicity, only the apo protomer from the PHI1-bound mixed dimer is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Time series plots of the αC-helix position (left column) and DFG dihedral (right column) for each protomer simulated in the mixed simulations. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Time series plots of the RMSD of the protomer in each dimer simulation. The RMSD was calculated using heavy atoms of the protomer backbone, excluding residues on the a-loop and $\alpha$ C-helix. Each of the three replicas are represented as a separate line; for simplicity, a stride of 10 ns was used while plotting.
 
 These data suggest that PHI1 binding in one protomer allosterically modulates the αC helix in the second apo protomer such that it moves inward and becoming more favorable for binding the second PHI1.
 
@@ -110,13 +235,13 @@ Consistent with the change in the DFG conformation between the holo (two inhibit
 
 Consistent with the effect of the second PHI1 on the αC position of the first PHI1-bound protomer, binding of the second PHI1 shifts the peak of the DFG distribution for both protomers further outward, as shown by the 30° larger DFG pseudo dihedral in the holo dimer relative to the mixed dimer (green and blue in Figure 5b right; Figure 5—figure supplement 1, Figure 3—figure supplement 2). In contrast, there is no significant difference in the DFG pseudo dihedral between the LY-mixed and holo dimers. These data suggest that while the binding of the first PHI1 pushes the DFG outward, binding of the second PHI1 has an allosteric effect, shifting the DFG of the opposite protomer further outward.
 
-## Concluding discussion
+### Concluding discussion
 
 We explored the mechanism of dimer selectivity and cooperativity of BRAFV600E inhibitors using MD simulations of the dimeric and monomeric BRAFV600E, in the absence and presence of one or two dimer-selective (PHI1) or equipotent (LY) inhibitor(s). The simulations uncovered the atomic details of the remarkable allostery in BRAFV600E dimerization and ligand binding (Figure 6), which offer explanation for why some BRAF inhibitors are monomer selective while others are dimer compatible, that is selective or equipotent. Specifically, our data showed that dimerization of BRAFV600E leads to the restriction and an inward shift of the αC helix position relative to the monomer (Figure 6 top panel), which explains why inhibitors that can stabilize the αC-in states are dimer compatible whereas those that cannot are monomer selective. The fact that both dimerization and inhibitor binding induces αC to move inward contributes to the phenomenon of drug-induced RAF dimerization (Hatzivassiliou et al., 2010; Lavoie et al., 2013; Karoulia et al., 2016).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95334/elife-95334-fig6-v1.jpg)
 
-**Figure 6.:** V600E inhibitors.Top left. In the monomeric BRAFV600E, the αC-helix (orange) is very flexible and exclusively samples the out states. Top right. Upon dimerization, the αC-helix is restrained and shifts inward, while the DFG-motif maintains its conformation but gains significant flexibility. Bottom right. When the first PHI1 molecule binds, its amide linker donates a h-bond to the carboxylate of Glu501 (orange stick) in the first protomer, which locks the αC helix to the αC-in state; it also shifts and restricts the DFG-motif into the DFG-out state through the interaction with the DFG-Asp backbone. The αC-helix in the second unbound protomer is also affected, shifting in the direction of the inhibitor-bound state towards αC-in. Thus, the allosteric pre-organization primes the second protomer for accepting a second PHI1 molecule. Bottom left. When the second PHI1 molecule binds, the αC helix and DFG-motif in both protomers are shifted and fully locked into the αC-in and DFG-out states.
+**Figure 6.:** Top left. In the monomeric BRAFV600E, the αC-helix (orange) is very flexible and exclusively samples the out states. Top right. Upon dimerization, the αC-helix is restrained and shifts inward, while the DFG-motif maintains its conformation but gains significant flexibility. Bottom right. When the first PHI1 molecule binds, its amide linker donates a h-bond to the carboxylate of Glu501 (orange stick) in the first protomer, which locks the αC helix to the αC-in state; it also shifts and restricts the DFG-motif into the DFG-out state through the interaction with the DFG-Asp backbone. The αC-helix in the second unbound protomer is also affected, shifting in the direction of the inhibitor-bound state towards αC-in. Thus, the allosteric pre-organization primes the second protomer for accepting a second PHI1 molecule. Bottom left. When the second PHI1 molecule binds, the αC helix and DFG-motif in both protomers are shifted and fully locked into the αC-in and DFG-out states.
 
 The co-crystal structure analysis and MD simulations identified a h-bond donor (e.g. an amide linker in the dimer-selective PHI1 or the equipotent LY) as a key for dimer compatibility; the h-bond with the carboxylate of Glu501 stabilizes the αC helix in the αC-in states. Two factors make Glu501 a special and critical anchoring point for inducing the αC-in states. First, it is located at the center of the αC helix, which makes it easier (as opposed to the end of the helix) to induce a helix movement. Second, the h-bonding between the inhibitor and Glu501 is synergistic with the Lys483–Glu501 salt-bridge formation. In contrary, the lack of a h-bond with Glu501, for example in VEM, Debrafenib, or PLX7904, results in the monomer selectivity.
 
@@ -134,26 +259,26 @@ The work presented here has implications for understanding the molecular mechani
 
 ## Methods
 
-## Intracellular homogeneous TR-FRET assay
+### Intracellular homogeneous TR-FRET assay
 
 SKMEL239 and SKMEL239-C4 cells were plated at 50,000 cells/well in white TC-treated 96-well plates in 100 µl complete growth media (DMEM). Cells were incubated with the various RAF inhibitors for 1 hr at 37 °C, 5% CO2. ERK phosphorylation was measured using the THUNDER Extreme Phospho-ERK1/2 (T202/Y204) TR-FRET Cell Signaling Assay Kit (Bioauxillium) according to directions for the Standard 2-Plate Assay Protocol for Adherent Cells. Cells were lysed for 30 min at RT under shaking. Lysates were transferred to a white 384-well plate, sealed and incubated with the detection mix antibody at RT for 4 hr. TR-FRET signal was measured at 615 nm and 665 nm excitation using a TECAN SPARK plate reader.
 
-## System preparation for simulations
+### System preparation for simulations
 
 Simulations were prepared using a crystal structure of BRAFV600E in complex with either PHI1 (PDB ID: 6P7G; Cotto-Rios et al., 2020) or LY (PDB ID: 5C9C; Peng et al., 2015). The initial structure of the apo simulations was taken from 6P7G. The a-loop is not resolved in either protomer in 5C9C, but is resolved for protomer B in 6P7G. Thus, the missing a-loop in the protomer B of 6P7G and in both protomers in 5C9C were built by rotating and translating the resolved a-loop from the first protomer using the alignment tool in PyMOL (Schrödinger, 2015). Chain B (which has the resolved a-loop) was first aligned to chain A using all residues except for the a-loop and the two end residues that connect it to the rest of the protein. Following the alignment, chain B except for the a-loop and its two end residues were deleted. The N-terminus was acetylated and the C-terminus was amidated. Hydrogen atoms were added using the HBUILD facility in the CHARMM package (version c37a2; Brooks et al., 2009).
 
-## All-atom continuous constant pH molecular dynamics (CpHMD) simulations
+### All-atom continuous constant pH molecular dynamics (CpHMD) simulations
 
 The recently developed all-atom particle mesh Ewald CpHMD (PME-CpHMD) (Harris et al., 2022) with the asynchronous pH replica exchange sampling protocol (Wallace and Shen, 2011; Henderson et al., 2020) was used to determine the protonation and tautomer states of histidines. To prepare for the CpHMD simulations, the histidine residues were first set to HIP with the dummy hydrogens on the Nδ and Nε atoms. The system was solvated in a rectangular water box with at least 10 Å distance between the protein and the boundary (∼23,000 water molecules). The protein was represented by the AMBER ff14SB force field (Maier et al., 2015) and water by the TIP3P model (Jorgensen et al., 1983). The dimer structure was briefly minimized for 500 steps (first 200 were using steepest decent, following 300 used conjugate gradient) with a harmonic force constant of 100 kcal/mol/Å2 applied on all heavy atoms of the protein. This was followed by 100 ps of heating to 300 K using the PME-CpHMD simulations at pH 7.0 with the restraints still applied. Once heated the restraints were gradually removed in six stages: in the first two stages the protein heavy atoms were restrained with a force constant of 100 and 10 kcal/mol/Å2; in the next four stages only the backbone heavy atoms were restrained with a force constant of 10, 1.0, 0.1, and 0.0 kcal/mol/Å. Each stage was simulated for 250 ps, for a total of 1.5 ns. A cutoff of 12 Å was used for the nonbonded interactions.
 
-The equilibrated structure was then used to initiate the pH replica exchange PME-CpHMD simulations. The asynchronous pH replica exchange sampling protocol (Wallace and Shen, 2011; Henderson et al., 2020) was used to accelerate convergence of the coupled protonation and conformational states (Wallace and Shen, 2011). Five replicas were created at different pH conditions, from pH 6.5–8.5. Each replica was first equilibrated to its pH by repeating the final four stages of equilibration mentioned above. The pH replica exchange CpHMD was then conducted for 10 ns with attempted swaps of neighboring pH conditions occurring every 2 ps. All other settings are identical to Harris et al., 2022. For the calculation of protonation and tautomer state probabilities, the λ and x values above 0.8 or below 0.2 were used (default setting in the CpHMD analysis package Henderson et al., 2022). At pH 7.5 His477 was protonated at both Nε and Nδ while His510 was protonated at Nε only. These protonation/tautomeric states were used for all convention (fixed-protonation-state) simulations below.
+The equilibrated structure was then used to initiate the pH replica exchange PME-CpHMD simulations. The asynchronous pH replica exchange sampling protocol (Wallace and Shen, 2011; Henderson et al., 2020) was used to accelerate convergence of the coupled protonation and conformational states (Wallace and Shen, 2011). Five replicas were created at different pH conditions, from pH 6.5–8.5. Each replica was first equilibrated to its pH by repeating the final four stages of equilibration mentioned above. The pH replica exchange CpHMD was then conducted for 10 ns with attempted swaps of neighboring pH conditions occurring every 2 ps. All other settings are identical to Harris et al., 2022. For the calculation of protonation and tautomer state probabilities, the $\lambda$ and $x$ values above 0.8 or below 0.2 were used (default setting in the CpHMD analysis package Henderson et al., 2022). At pH 7.5 His477 was protonated at both Nε and Nδ while His510 was protonated at Nε only. These protonation/tautomeric states were used for all convention (fixed-protonation-state) simulations below.
 
-## Conventional fixed-protonation-state MD simulations
+### Conventional fixed-protonation-state MD simulations
 
 Eight BRAFV600Esystems were simulated, consisting of monomeric and dimeric BRAFV600E either in the presence or absence of PHI1 or LY (see Table 1). Monomer systems were prepared by eliminating one protomer from the prepared dimer structure. In the apo monomer and dimer systems, ligand(s) was removed. In the mixed or holo systems, one or both inhibitors from the co-crystal structure was kept. The protein was then placed in a rectangular water box with a minimum distance of 10 Å between the protein and edges of the water box using the LEaP program (Case et al., 2020). Based on the protonation states determined using CpHMD, sodium and chloride ions were added to neutralize the system and reach a physiological ionic strength of 0.15 M.
 
 The conventional (fixed-protonation-state) MD simulations were carried out using the AMBER20 MD package (Case et al., 2020). The proteins was represented by the ff14SB force field (Maier et al., 2015) while inhibitors were parameterized by the general AMBER force field (GAFF) method (Wang et al., 2004). The TIP3P model (Jorgensen et al., 1983) was used to represent water. The Leapfrog integrator was used to propagate the coordinates. The SHAKE algorithm was applied to bonds involving hydrogen to allow for a 2-fs time step. Additionally, the hydrogen mass re-partitioning (Hopkins et al., 2015) was used to redistribute the mass between hydrogens and their bonded heavy atoms to allow for a 4-fs time step. A nonbonded cutoff of 8 Å was used as in the ff14SB validation study (Maier et al., 2015) while the electrostatic potentials were computed using the particle-mesh Ewald method (Darden et al., 1993) with a real-space cut-off of 12 Å and a sixth-order interpolation with approximately 1 Å grid spacing. Each system underwent minimization using 1000 steps of steepest descent followed by 19000 steps of conjugate gradient while the heavy atoms were harmonically restrained using a force constant of 100 kcal/mol/Å2. Following minimization, the system was heated to 300 K over 1 ns under an NVT ensemble using a Langevin thermostat (Feller et al., 1995) with collision frequency of 1 ps–1 for temperature control. The systems then underwent a 6-stage equilibration in which the backbone restraints were gradually reduced to 10, 5, 2, 1, 0.1 and 0 kcal/mol/Å2 over the course of 100 ns under a NPT ensemble. A Monte-Carlo barostat (Case et al., 2020) was used to control pressure at 1 bar using a relaxation time of 1.0 ps. Each system were run in three replicates each starting from different random velocity seeds and each run lasted 5 μs.
 
-## Simulation data analysis
+### Simulation data analysis
 
 CPPTraj (Roe and Cheatham, 2013) was used to analyze the protomer conformation (αC-helix position, DFG pseudo dihedral, etc.) and visualizations were produced using PyMOL (Schrödinger, 2015). The contact network analysis was conducted using the open source code developed by Yao and Hamelberg (https://github.com/The-Hamelberg-Group/dcna; Yao et al., 2018; The-Hamelberg-Group, 2023). Unless otherwise noted, the last three μs trajectory frames were used for analysis. All probability distributions were created by combining the last three μs of each replica for each system, with each distribution consisting of 50 bins. Unless specified, distributions contain quantities from both protomers in dimeric simulations.

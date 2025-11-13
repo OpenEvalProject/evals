@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.40372.001 The meiotic chromosome axis plays key roles in meiotic chromosome organization and recombination, yet the underlying protein components of this structure are highly diverged. Here, we show that ‘axis core proteins’ from budding yeast (Red1), mammals (SYCP2/SYCP3), and plants (ASY3/ASY4) are evolutionarily related and play equivalent roles in chromosome axis assembly. We first identify ‘closure motifs’ in each complex that recruit meiotic HORMADs, the master regulators of meiotic recombination. We next find that axis core proteins form homotetrameric (Red1) or heterotetrameric (SYCP2:SYCP3 and ASY3:ASY4) coiled-coil assemblies that further oligomerize into micron-length filaments. Thus, the meiotic chromosome axis core in fungi, mammals, and plants shares a common molecular architecture, and likely also plays conserved roles in meiotic chromosome axis assembly and recombination control.
+The meiotic chromosome axis plays key roles in meiotic chromosome organization and recombination, yet the underlying protein components of this structure are highly diverged. Here, we show that ‘axis core proteins’ from budding yeast (Red1), mammals (SYCP2/SYCP3), and plants (ASY3/ASY4) are evolutionarily related and play equivalent roles in chromosome axis assembly. We first identify ‘closure motifs’ in each complex that recruit meiotic HORMADs, the master regulators of meiotic recombination. We next find that axis core proteins form homotetrameric (Red1) or heterotetrameric (SYCP2:SYCP3 and ASY3:ASY4) coiled-coil assemblies that further oligomerize into micron-length filaments. Thus, the meiotic chromosome axis core in fungi, mammals, and plants shares a common molecular architecture, and likely also plays conserved roles in meiotic chromosome axis assembly and recombination control.
 
 ## Introduction
 
@@ -47,9 +47,25 @@ Here, we address these questions and establish that the molecular architecture o
 
 ## Results
 
-## Budding Red1 forms filaments from coiled-coil tetramer units
+### Budding Red1 forms filaments from coiled-coil tetramer units
 
 In budding yeast, the chromosome axis is made up of the HORMAD protein Hop1, its binding partner Red1, and cohesin complexes containing the meiosis-specific kleisin subunit Rec8 (Klein et al., 1999; Zickler and Kleckner, 1999). We and others have outlined the assembly mechanisms of Hop1, which binds short ‘closure motifs’ in its own C-terminal tail and in Red1 through its conserved HORMA domain (Figure 1A) (West et al., 2018; Woltering et al., 2000). Red1 is less well-understood. This protein possesses a conserved N-terminal domain immediately followed by a Hop1-binding closure motif, an extended linker domain with high predicted disorder, and a C-terminal domain that mediates Red1 self-association and is predicted to adopt a coiled-coil structure (Figure 1A) (Hollingsworth and Ponte, 1997; West et al., 2018; Woltering et al., 2000). Prior genetic studies isolated two point-mutations in the Red1 C-terminal domain, I743A (Eichinger and Jentsch, 2010) and I758R (Lin et al., 2010), that each strongly affect both SC assembly and spore viability in S. cerevisiae. While these phenotypes were attributed to effects on binding other meiotic chromosome-associated proteins, these residues’ location within a predicted coiled-coil domain prompted us to consider instead that the observed defects may be due to disruption of a Red1 oligomer important for meiotic chromosome axis function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of S. cerevisiae (Sc) chromosome axis proteins Hop1 and Red1, and Zygosaccharocmyces zouxii (Zr) Red1. Yellow regions indicate Hop1-binding closure motifs (West et al., 2018). For S. cerevisiae Red1, the positions of two previously-identified mutations in the C-terminal domain that disrupt axis function, I743A (Eichinger and Jentsch, 2010) and I758R (Lin et al., 2010), are shown. See Figure 1—figure supplement 1A for sequence alignment of the Red1 C-terminal domain. (B) SEC-MALS analysis of purified His6-MBP-Zr Red1705-798. Calculated molecular weight of a monomer = 55.9 kDa; Measured molecular weight = 4783 kDa (~85 mer). (C) Representative negative-stain electron micrographs of purified untagged Zr Red1705-798. See Figure 1—figure supplement 2A for additional full micrographs, and Figure 1—figure supplement 2B for micrographs of His6-MBP-Zr Red1705-798. (D) SEC-MALS analysis of purified His6-MBP-Zr Red1705-791 and His6-MBP-Zr Red1705-798 I715R. (E) SEC-MALS analysis of purified Zr Red1705-791 and Zr Red1705-798 I715R (as in panel D, but with His6-MBP tag removed). (F) Table summarizing SEC-MALS results from (D) and (E). (G) Schematic of Zr Red1 C-terminal domain oligomerization. Wild-type Zr Red1705-798 forms homotetramers that further oligomerize into extended filaments. Removal of the C-terminal seven amino acids (Zr Red1705-791) or mutations of I715 to arginine (Zr Red1705-798 I715R) results in loss of filament formation but maintenance of tetramer formation. (H) Representative surface-spread mid-meiotic prophase nuclei from wild-type (top row), and red1 mutant alleles: red1-Sc1-734:Zr707-798 (second row), red1-Sc1-734:Zr707-791 (third row), and red1-Sc1-734:Zr707-798 I715R] (bottom row). Spore viability for each homozygous strain is shown in blue (n = 52–128, see Materials and Methods). Mid-meiotic prophase chromosomes are stained with DAPI to label DNA (white), anti-Red1 (magenta), and anti-Gmc2 (green). Scale bar, 1 μm. See Figure 1—figure supplement 3B–E for additional images. (I) Quantification of the distribution of Red1 on meiotic chromosomes at 3 hr and 5 hr after introduction into sporulation medium (n = 30–50 cells for each strain and time-point). ‘foci + short linear’=cells with abundant foci and short linear stretches of Red1 staining; ‘abundant foci’=cells with more than 25 strong Red1 foci; ‘few foci’=cells with fewer than 25 weak Red1 foci. See Figure 1—figure supplement 3F–H for further quantification of Red1, Gmc2, and polycomplex assembly.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence alignment of budding-yeast Red1 proteins. Yellow boxes indicate the two isoleucine residues in S. cerevisiae Red1 (I743, I758) whose mutation strongly affects spore viability (Eichinger and Jentsch, 2010; Lin et al., 2010). The magenta box indicates the region of Zr Red1 necessary for assembly of high-order oligomers. (B) SEC-MALS analysis of purified His6-MBP-Sc Red1731-827 (red), and His6-MBP-Sc Red1731-827 I743R (yellow) and His6-MBP-Sc Red1731-827 I758R (gray).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Micrographs of untagged Zr Red1705-798 filaments. Yellow dotted boxes indicate the area of micrographs shown in Figure 1C. Darkly-stained regions are crystallized uranyl formate stain. (B) Micrographs of His6-MBP-Zr Red1705-798 filaments. The high density of MBP tags along these filaments means that individual MBP molecules are not discernable.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Western blot showing expression of wild-type and mutant Red1 proteins in meiosis. While Red1 is largely degraded by 5 hr post meiotic induction in the wild-type strain, all three mutant strains show a delay in Red1 degradation. Asterisk indicates a non-specific band in the RED1 strain. (B) Representative surface-spread mid-meiotic prophase nuclei from wild-type cells, at 3 and 5 hr after transfer to sporulation media. Mid-meiotic prophase chromosomes are stained with DAPI to label DNA (white), anti-Red1 (green), and an antibody against the SC structural protein, Gmc2 (magenta). Scale bar, 1 μm. (C) Representative surface-spread mid-meiotic prophase nuclei from red1-Sc1-734:Zr707-798 cells, stained as above. (D) Representative surface-spread mid-meiotic prophase nuclei from red1-Sc1-734:Zr707-791 cells, stained as above. (E) Representative surface-spread mid-meiotic prophase nuclei from red1-Sc1-734:Zr707-798I715R cells, stained as above. (F) Quantification of Red1 spatial distribution on meiotic chromosomes. n = 30–50 for each condition. ‘foci + short linear’=cells with abundant foci and short linear stretches of Red1 staining; ‘abundant foci’=cells with more than 25 strong Red1 foci; ‘few foci’=cells with fewer than 25 weak Red1 foci. (G) Quantification of Gmc2 spatial distribution on meiotic chromosomes. n = 30–50 for each condition. ‘long linear’=cells with chromosome-length stretches of Gmc2 staining; ‘foci + short linear’=cells with abundant foci and short linear stretches of Gmc2 staining; ‘foci’=cells with foci but no visible linear stretches of Gmc2 staining. (H) Quantification of Gmc2-containing polycomplex formation in mid-meiotic prophase cells. n = 30–50 for each condition.
 
 To test this idea, we expressed in E. coli, and purified the Red1 C-terminal domain from several budding yeasts, and found that uniformly, these proteins formed large assemblies as measured by size-exclusion chromatography (Figure 1B and data not shown). We examined one Red1 construct, Zygosaccharomyces rouxii (Zr) Red1705-798, by negative-stain electron microscopy. We observed filaments up to several microns in length (Figure 1C), suggesting that the large assemblies of purified Red1 C-terminal domain are not disordered aggregates but rather represent a biologically relevant structure. In the course of construct optimization, we also cloned and purified a truncated Zr Red1 construct missing the C-terminal seven residues of the protein (Zr Red1705-791). Strikingly, this construct did not form assemblies in solution, but rather formed stable homotetramers as measured by size-exclusion chromatography coupled to multi-angle light scattering (SEC-MALS; Figure 1D–F). Together, these data suggest that the Red1 C-terminal domain forms coiled-coil homotetramers that associate end-to-end to form extended filaments.
 
@@ -57,9 +73,33 @@ We next examined the effects of mutating Zr Red1 I715 and M730, which are equiva
 
 When combined with prior findings that the Sc RED1-I743A mutant shows low spore viability, our finding that mutating Sc Red1 I743 specifically disrupts filament assembly suggests that filament formation by Red1 may be critical for meiotic chromosome axis structure and function. To test this idea, we replaced the coiled-coil region of S. cerevisiae Red1 (residues 734–827) with the equivalent region of Zr Red1 (residues 707–798) to generate a chimeric Red1 protein (red1-Sc1-734:Zr707-798) that we could engineer with predictable effects based on our in vitro data. We next specifically disrupted filament formation in this chimeric construct by removing residues 792–798 (red1-Sc1-734:Zr707-791) or mutating Zr Red1 I715 to arginine (red1-Sc1-734:Zr707-798I715R). All three chimeric Red1 constructs were expressed equivalently to wild-type Red1 (Figure 1—figure supplement 3A), but only the full-length chimera supported appreciable levels of spore viability (54% viable spores for red1-Sc1-734:Zr707-798 versus 2% for red1-Sc1-734:Zr707-791 and 9% for red1-Sc1-734:Zr707-798I715R; Figure 1H). We next examined chromosome localization of the chimeric Red1 constructs in meiotic prophase, and their ability to support synaptonemal complex assembly. We found that the full-length chimeric protein (Red1-Sc1-734:Zr707-798) localized robustly to meiotic chromosomes and supported synaptonemal complex assembly, albeit less efficiently than wild-type Red1 (Figure 1H–I). Both truncation of the Red1 C-terminus (Red1-Sc1-734:Zr707-791) and the I715R mutation (Red1-Sc1-734:Zr707-798I715R) caused a strong defect in chromosome localization of Red1, and a near-complete loss of synaptonemal complex formation with a corresponding increase in polycomplex formation (Figure 1H–I, Figure 1—figure supplement 3). In both mutant strains, chromosomes were also less well-defined in DAPI staining than in either wild-type or Red1-Sc1-734:Zr707-798 cells (Figure 1H, Figure 1—figure supplement 3), suggesting defects in chromosome axis assembly and chromosome compaction. We conclude that Red1 filament formation is important for robust chromosome localization of Red1, and absolutely critical for proper assembly of the chromosome axis and, by extension, the synaptonemal complex. Finally, these data also suggest that the previously-identified deleterious effects of the Sc Red1 I743A and I758R mutations (Eichinger and Jentsch, 2010; Lin et al., 2010) may be due to disruption of Red1 filament assembly.
 
-## SYCP2 is an interaction hub for the mammalian chromosome axis
+### SYCP2 is an interaction hub for the mammalian chromosome axis
 
 The mammalian chromosome axis comprises cohesin complexes with several meiosis-specific subunits (Biswas et al., 2016; Fukuda et al., 2014; Ward et al., 2016; Winters et al., 2014); two meiotic HORMAD proteins, HORMAD1 and HORMAD2 (Fukuda et al., 2010); and the coiled-coil proteins SYCP2 and SYCP3 (Li et al., 2011; Llano et al., 2012). We have previously shown that both HORMAD1 and HORMAD2 possess short motifs at their extreme C-termini that associate with these proteins’ N-terminal HORMA domains (Kim et al., 2014), strongly suggesting that these motifs constitute closure motifs equivalent to that previously identified in the S. cerevisiae Hop1 C-terminus (Niu et al., 2005; West et al., 2018). SYCP2 has been proposed as a distant homolog of budding-yeast Red1, and possesses a similar domain structure: an N-terminal ordered domain that may mediate the protein’s association with chromosomes (Feng et al., 2017), followed by an extended disordered region and a C-terminal domain of ~175 residues predicted to form a coiled-coil. Instead of self-associating like Red1, however, the SYCP2 coiled-coil domain binds the shorter coiled-coil protein SYCP3 (Figure 2A, Figure 2—figure supplement 1) (Tarsounas et al., 1997; Yang et al., 2006). Additionally, co-expression of SYCP2 and SYCP3 in cultured cells results in the assembly of large filamentous structures that incorporate both proteins, suggesting a capacity for self-assembly of SYCP2:SYCP3 complexes (Pelttari et al., 2001).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of M. musculus (Mm) chromosome axis proteins, with underlines indicating fragments used for yeast two-hybrid analysis. The SYCP2 NTD (residues 1–394) forms a globular structure with unknown function (Feng et al., 2017). See Figure 2—figure supplement 1 for detailed coiled-coil and alpha-helix predictions of the SYCP2 and SYCP3 C-terminal domains. Yellow regions indicate putative HORMAD-binding closure motifs (Figure 2—figure supplement 3). (B) Yeast two-hybrid analysis of SYCP2 truncations versus SYCP3 and the HORMAD2 HORMA domain (residues 1-241). AD: Gal4 activation domain fusion; BD: Gal4 DNA-binding domain fusion. Stringent selection on -LEU-TRP-HIS-ADE (-LTHA) media is shown; see Figure 2—figure supplement 2 for complete yeast two-hybrid results and for coexpression of SYCP2 fragments with HORMAD21-241. (C) SDS-PAGE analysis of purified Mm SYCP21325-1500:SYCP384-248 complexes, with an N-terminal MBP tag on SYCP2 (left) or with the tag removed (right). (D) Representative negative-stain electron micrograph of purified Mm SYCP21325-1500:SYCP384-248. See Figure 2—figure supplement 4A for additional full micrographs. (E) Representative negative-stain electron micrographs of purified His6-MBP-Mm SYCP21325-1500:SYCP384-248. See Figure 2—figure supplement 4B for additional full micrographs. (F) Quantification of inter-MBP spacing in micrographs of His6-MBP-Mm SYCP21325-1500:SYCP384-248 filaments. The measured spacing of 23.1 ± 3.3 nm (mean ±standard deviation from 23 measured intervals) is equivalent to the length of a ~160 residue coiled-coil (0.146 nm rise per residue). (G) Representative negative-stain electron micrographs of purified His6-MBP-Mm SYCP21325-1500:SYCP384-254. See Figure 2—figure supplement 5 for additional full micrographs. (H) Schematic summary of negative-stain electron microscopy results: Mm SYCP21325-1500:SYCP384-248 forms individual filaments assembled from ~23 nm units, while re-addition of the highly-conserved C-terminal six residues of SYCP3 (249–254; shown in gray below schematic) causes self-association/bundling of these filaments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic highlighting predicted α-helical regions (colored blocks, bottom; from PSI-PRED server v. 3.3; Buchan et al., 2013) and total coiled-coil propensity (graphs, top; from MULTICOIL server v. 1.0; Wolf et al., 1997) for human and mouse SYCP2 C-terminal region. (B) Schematic highlighting predicted α-helical regions (colored blocks, bottom; from PSI-PRED server) and total coiled-coil propensity (graphs, top; from MULTICOIL server) for human and mouse SYCP3.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Yeast two-hybrid analysis of SYCP3 and HORMAD2 versus SYCP2 fragments. AD: indicated proteins were cloned into pGADT7 (Gal4 activation domain fusion); BD: indicated proteins were cloned into pBridge (Gal4 DNA-binding domain fusion). -LEU-TRP: non-selective; -LEU-TRP-HIS: weak selection; -LEU-TRP-HIS-ADE: stringent selection. (C) Co-expression and Ni2+-pulldown of His6-MBP Mm SYCP2 fragments with untagged HORMAD21-241 reveals the minimal HORMAD-binding closure motif in SYCP2 as residues 395–414. (D) Fluorescence polarization assay measuring binding of Mm HORMAD22-241 (blue) and Mm HORMAD22-241:SYCP2390-429 complex (gray) to a HORMAD2282-306 peptide. Kd values were calculated from triplicate data.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Sequence alignment of minimal HORMAD2-binding region of mammalian SYCP2. M. musculus (Mm) and H. sapiens (Hs) sequences are noted. ‘Minimal closure motif’ denotes residues 395–414; truncation beyond this minimal region reduces detected binding by co-expression and Ni2+ pulldown (see Figure 2—figure supplement 2C). (B) Sequence alignment of the HORMAD1 C-terminus. (C) Sequence alignment of the HORMAD2 C-terminus, which is homologous to the HORMAD1 C-terminal region. Black line at top indicates the HORMAD2-CTD peptide used in Figure 2—figure supplement 2D.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Negative-stain electron micrographs of Mm SYCP21325-1500:SYCP384-248 filaments. Yellow dotted box indicates the area of micrograph shown in Figure 2D. (B) Micrographs of Mm SYCP21325-1500:SYCP384-248 filaments with the N-terminal His6-MBP tag on SYCP2 intact. Yellow dotted box indicates the area of micrograph shown in Figure 2E.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Yellow dotted boxes indicate areas of micrographs used in Figure 2G.
 
 To outline protein-protein interactions within the mammalian chromosome axis, we used yeast two-hybrid assays to test for interactions between SYCP2, SYCP3, and HORMAD2. We identified a short region of SYCP2 directly following the protein’s ordered N-terminal domain (residues 395–414) that binds the HORMAD2 HORMA domain in both yeast two-hybrid and when co-expressed in E. coli (Figure 2B, Figure 2—figure supplement 2A–C). This region shares homology to HORMAD1 and HORMAD2 C-termini, suggesting that it constitutes a closure motif (Figure 2A, Figure 2—figure supplement 3). The location of the putative SYCP2 closure motif—directly following the ordered N-terminal domain—is also equivalent to the location of the budding-yeast Red1 closure motif, lending support to the idea that SYCP2 and Red1 are homologs. We directly tested binding of the isolated HORMAD2 HORMA domain (residues 1–241) to a peptide encoding the putative closure motif of HORMAD2, and detected robust binding (Figure 2—figure supplement 2D). Further, a pre-assembled complex of HORMAD2 and the putative SYCP2 closure motif showed no binding to the HORMAD2 closure motif peptide, indicating that these sequences compete for binding to the HORMAD2 HORMA domain (Figure 2—figure supplement 2D). Finally, despite the overall similarity between HORMAD1 and HORMAD2, we have so far been unable to demonstrate an interaction between SYCP2 and HORMAD1. While this is at least partially due to poor expression and solubility of M. musculus HORMAD1 in our assays (not shown), it remains possible that SYCP2 only interacts directly with HORMAD2, while HORMAD1 is recruited by HORMAD2 (Kim et al., 2014) and potentially other chromosome axis components.
 
@@ -67,7 +107,7 @@ Our yeast two-hybrid assays also confirmed that the coiled-coil regions of SYCP2
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of the predicted coiled-coil regions of M. musculus SYCP2 and SYCP3, with truncations used for co-expression/size exclusion chromatography analysis in panels (B) and (C). (B) Superose-6 size exclusion chromatography analysis of truncated Mm SYCP2:SYCP3 complexes. All complexes were purified after co-expression using an N-terminal His6-MBP tag on SYCP2. Upper panel: truncation of the SYCP2 coiled-coil C-terminus, from 1325 to 1500 (black) to 1325–1479 (magenta), all co-expressed with SYCP384-248. Lower panel: truncation of SYCP3 coiled-coil N-terminus, from 84 to 248 (black) to 105–248 (green), all co-expressed with SYCP31325-1500. Magenta dotted line indicates elution profile of MBP-SYCP21325-1479:SYCP3105-248 complex (Mm SYCP2CC:SYCP3CC), used for SEC-MALS in panel (C). Lower right: SDS-PAGE analysis of purified Mm SYCP2CC:SYCP3CC complex (with His6-MBP tag removed). (C) SEC-MALS analysis of purified His6-MBP-Mm SYCP2CC:SYCP3CC complex. Calculated molecular weight of a 2:2 heterotetramer = 161.4 kDa; Measured molecular weight = 158.6 kDa. (D) Thermofluor melting-temperature (T) analysis for mMm SYCP2CC:SYCP3CC (red) versus a homotetrameric Mm SYCP3CC complex (green). Thick colored lines represent an average of three independent measurements, with standard deviation represented by thin vertical black lines.
+**Figure 3.:** (A) Schematic of the predicted coiled-coil regions of M. musculus SYCP2 and SYCP3, with truncations used for co-expression/size exclusion chromatography analysis in panels (B) and (C). (B) Superose-6 size exclusion chromatography analysis of truncated Mm SYCP2:SYCP3 complexes. All complexes were purified after co-expression using an N-terminal His6-MBP tag on SYCP2. Upper panel: truncation of the SYCP2 coiled-coil C-terminus, from 1325 to 1500 (black) to 1325–1479 (magenta), all co-expressed with SYCP384-248. Lower panel: truncation of SYCP3 coiled-coil N-terminus, from 84 to 248 (black) to 105–248 (green), all co-expressed with SYCP31325-1500. Magenta dotted line indicates elution profile of MBP-SYCP21325-1479:SYCP3105-248 complex (Mm SYCP2CC:SYCP3CC), used for SEC-MALS in panel (C). Lower right: SDS-PAGE analysis of purified Mm SYCP2CC:SYCP3CC complex (with His6-MBP tag removed). (C) SEC-MALS analysis of purified His6-MBP-Mm SYCP2CC:SYCP3CC complex. Calculated molecular weight of a 2:2 heterotetramer = 161.4 kDa; Measured molecular weight = 158.6 kDa. (D) Thermofluor melting-temperature (Tm) analysis for Mm SYCP2CC:SYCP3CC (red) versus a homotetrameric Mm SYCP3CC complex (green). Thick colored lines represent an average of three independent measurements, with standard deviation represented by thin vertical black lines.
 
 The experiments above were conducted with a construct of SYCP3, residues 84–248, lacking the C-terminal six residues of this protein. These residues have been previously shown to be critical for formation of large homotypic SYCP3 filaments when the protein is overexpressed in mammalian tissue-culture cells (Baier et al., 2007; Yuan et al., 1998), and for formation of large SYCP3 assemblies in vitro (Syrjänen et al., 2014).We next purified an SYCP2:SYCP3 complex containing these residues, Mm SYCP21325-1500:SYCP384-254, and visualized the complex by negative-stain electron microscopy. We found that this complex forms filaments equivalent to Mm SYCP21325-1500:SYCP384-248, but that in contrast to the truncated complex, filaments containing the full SYCP3 C-terminus tended to self-associate into bundles (Figure 2G). Given the high conservation of these residues and their importance for large-scale SYCP3 assembly in multiple assays, we propose that the SYCP3 C-terminus may mediate bundling of SYCP2:SYCP3 filaments as an important step in assembly of the mammalian meiotic chromosome axis (Figure 2H). As we do not observe bundling in filaments of budding-yeast Red1 (Figure 1C) or plant axis core proteins (see below), this tendency to bundle may be specific to the mammalian chromosome axis.
 
@@ -75,15 +115,55 @@ We next sought to further dissect the SYCP2:SYCP3 filament assembly. We progress
 
 Prior work on H. sapiens SYCP3 has shown that this protein self-associates to form coiled-coil homoetramers in vitro (Syrjänen et al., 2014). We found that Mm SYCP3CC also forms homotetramers in the absence of SYCP2CC (not shown), and when we determined the structure of Mm SYCP3CC by x-ray crystallography, we observed an antiparallel coiled-coil homotetramer similar in structure to H. sapiens SYCP3 (Figure 4—figure supplement 1). We were unable to determine a structure of the SYCP2CC:SYCP3CC heterotetramer. As SYCP2 and SYCP3 share limited sequence homology in their coiled-coil region, we reasoned that SYCP3 homotetramers may form through promiscuous coiled-coil interactions in the absence of SYCP2. To compare the stability of Mm SYCP3CC homotetramers with Mm SYCP2CC:SYCP3CC heterotetramers, we measured their melting temperatures (Tm) using a dye-binding assay. We found that the SYCP2CC:SYCP3CC heterotetramer is more stable than SYCP3CC on its own (56.0°C Tm versus 52.5°C; Figure 3D), supporting the idea that the heterotetrameric complex is the preferred state when both proteins are present.
 
-## The SYCP2:SYCP3 complex is an antiparallel heterotetramer
+### The SYCP2:SYCP3 complex is an antiparallel heterotetramer
 
 While the SYCP3CC homotetramer is likely not the favored state in the presence of SYCP2, its structure may nonetheless be informative as to the structure of SYCP2CC:SYCP3CC. Given its 2:2 stoichiometry and our observed effects on filament formation from truncating opposite ends of SYCP2 and SYCP3, we reasoned that SYCP2CC:SYCP3CC may form a complex with two SYCP2 protomers oriented parallel to one another, and antiparallel to two SYCP3 protomers. To test this idea, we generated a series of Hs and Mm SYCP2:SYCP3 constructs with the two proteins fused end-to-end through a short peptide linker (Figure 4A). One such construct, Hs SYCP387-230-[GSGASG]-SYCP21352-1508 (termed Hs SYCP3CC-SYCP2CC fusion hereon), was highly-expressed in E. coli and formed a stable dimer by SEC-MALS, equivalent to an SYCP2:SYCP3 heterotetramer (Figure 4B). We were unable to crystallize this complex, so we turned instead turned to small-angle x-ray scattering, which provides low-resolution size and shape information on macromolecular complexes in solution. SAXS can provide a reliable measure of a particle’s maximum dimension (dmax) and radius of gyration (Rg), as well as, for cylindrical particles, the cross-sectional radius of gyration (Rc) (Feigin and Svergun, 1987; Glatter and Kratky, 1982). Analysis of the Hs SYCP3CC-SYCP2CC fusion by SAXS showed that this complex’s dmax, Rg, and Rc closely match theoretical values calculated from the crystal structure of the Hs SYCP3CC homotetramer (Figure 4C–E, Figure 4—figure supplement 2). Further, the intra-particle distance distribution function calculated from the SAXS scattering curve also closely matched the profile calculated from the Hs SYCP3CC crystal structure (Figure 4C). We next performed SAXS on the same Hs SYCP3CC-SYCP2CC fusion containing a ~ 43 kDa MBP tag fused to its N-terminus (Figure 4—figure supplement 3). The measured intra-particle distance distribution of this construct agreed closely to a model containing two MBP monomers at the same end of an SYCP2:SYCP3 tetramer, rather than opposite ends, supporting our model in which the two SYCP3CC-SYCP2CC monomers are arranged parallel to one another in the complex. Finally, we also performed SAXS analysis on the heterotetrameric Mm SYCP2CC:SYCP3CC complex (Figure 4—figure supplement 4). This complex partially aggregated in solution, precluding detailed analysis, but showed results broadly consistent with the Hs SYCP3CC-SYCP2CC fusion. Overall, these data show that the SYCP2CC:SYCP3CC complex forms an extended coiled-coil tetramer with an overall structure similar to that of the SYCP3 homotetramer.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-v2.jpg)
+
+**Figure 4.:** (A) Design of the H. sapiens SYCP3CC-SYCP2CC fusion, based on the idea that SYCP2 and SYCP3 helices pack antiparallel in the 2:2 heterotetrameric structure. (B) SEC-MALS analysis of purified His6-MBP-Hs SYCP3CC-[GSGASG]-SYCP2CC. Measured molecular weight (167.7 kDa) is equivalent to the calculated molecular weight of a homodimer (equivalent to a 2:2 heterotetramer of SYCP2 and SYCP3; 163.7 kDa). (C) Intra-particle distance distribution (P(r)) curve for the Hs SYCP3CC-SYCP2CC fusion construct derived from small-angle x-ray scattering (SAXS) analysis (magenta), compared to the calculated distance distribution of the Hs SYCP3CC homotetramer structure (PDB ID 4CPC; dotted black line) (Syrjänen et al., 2014). Lower: table comparing radius of gyration (Rg), cross-sectional radius of gyration (Rc), and maximum dimensions (dmax) of the Hs SYCP3CC-SYCP2CC fusion (calculated from SAXS; see Figure 4—figure supplement 2) and the Hs SYCP3CC homotetramer (calculated from the crystal structure). See Figure 4—figure supplement 3 for SAXS analysis of Hs MBP-SYCP3CC-SYCP2CC, and Figure 4—figure supplement 4 for SAXS analysis of the Mm SYCP2CC:SYCP3CC complex. (D) Structure of the Hs SYCP3CC homotetramer structure (PDB ID 4CPC; dotted black line) (Syrjänen et al., 2014), with two parallel chains (N-termini left) colored green, and the other two chains (N-termini right) colored gray. We determined the crystal structure of the M. musculus SYCP3CC homotetramer in two different crystal forms (Figure 4—figure supplement 1A–D). This structure resembles the structure of Hs SYCP3CC in the central coiled-coil region, but adopts a distinct, more disordered structure near both ends. (E) Model of an Hs SYCP2CC:SYCP3CC 2:2 heterotetramer, with two SYCP3 chains colored green as in panel (D) (N-termini left), and two SYCP2 chains colored magenta (N-termini right). Sequence register was derived from aligning SYCP2 and SYCP3 sequences. (F) Schematic of crosslinking mass spectrometry (XLMS) results on the Hs SYCP3CC-SYCP2CC fusion. Crosslinks observed at least eight times are colored yellow, and crosslinks observed at least 20 times are colored orange. See Supplementary file 2–4 and Figure 4—figure supplement 5 for full results. 9 of 10 high-scoring crosslinks support the antiparallel subunit arrangement shown in panel (E).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequence alignment of H. sapiens and M. musculus SYCP3, with fragments crystallized as homotetramers highlighted. (B) Homotetramer structure of H. sapiens SYCP366-230 (PDB ID 4CPC) (Syrjänen et al., 2014). Two parallel chains are shown as rainbows, with the two antiparallel chains colored gray. (C) and (D) Homotetramer structures of Mm SYCP3105-248 (SYCP3CC) in P1 and P21 crystal forms. Both structures are shown in the same orientation as Hs SYCP3, and are colored equivalently. The structures overlay closely with Hs SYCP3 in the central region (boxed in panel (C); Cα r.m.s.d. ~1.5 Å over residues of all four chains (residues 133–210 of Mm SYCP2; 115–192 of Hs SYCP2); but differ substantially near the ends, where Ms SYCP3 residues 212–218 loop out from the coiled-coil and interact with symmetry-related complexes, thereby altering the register of the antiparallel α-helices. See Supplementary file 1 for data collection and refinement statistics of the two Mm SYCP3CC structures. (E) Closeup view of the SYCP3CC P21 crystal form, with simulated-annealing composite all-omit 2Fo-Fc map at 1.0 σ shown in gray. (F) Closeup view of the SYCP3CC P1 crystal form, with selenomethionine anomalous difference map at 4.0 σ shown in blue. The majority of methionine locations show strong anomalous difference peaks.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Small-angle x-ray scattering (SAXS) curves on the Hs SYCP3CC-SYCP2CC fusion construct at three different protein concentrations. (B) Guinier analysis of the low-scattering-angle region to determine radius of gyration (Rg) (Feigin and Svergun, 1987). (C) Cross-sectional radius of gyration (Rc) analysis (Glatter and Kratky, 1982).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic models of two possible orientations of subunits in the His6-MBP-SYCP3CC-SYCP2CC fusion complex. In the ‘parallel-antiparallel’ model (top), the two His6-MBP tags are located on the same end of the complex. In the ‘antiparallel-antiparallel’ model, the two His6-MBP tags are located on opposite ends of the complex. (B) Small-angle x-ray scattering (SAXS) curves on the Hs His6-MBP-SYCP3CC-SYCP2CC fusion complex, at three different protein concentrations. (C) Intra-particle distance distribution of Hs His6-MBP-SYCP3CC-SYCP2CC fusion (magenta), compared to the calculated distance distribution for the ‘parallel-antiparallel’ (dark grey) and ‘antiparallel-antiparallel’ (light grey) models. (D) Guinier analysis of the low-scattering-angle region to determine radius of gyration (Rg) (Feigin and Svergun, 1987). (E) Cross-sectional radius of gyration (Rc) analysis (Glatter and Kratky, 1982).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Small-angle x-ray scattering (SAXS) curves on the Mm SYCP2CC:SYCP3CC complex, at three different protein concentrations. The high slope in the low-scattering-angle region of the scattering curves indicates aggregation in the sample cell. (B) Intra-particle distance distribution of Mm SYCP2CC:SYCP3CC (magenta), compared to the calculated distance distribution of the Hs SYCP3CC homotretramer crystal structure (Syrjänen et al., 2014). (C) Guinier analysis of the low-scattering-angle region to determine radius of gyration (Rg) (Feigin and Svergun, 1987). (D) Cross-sectional radius of gyration (Rc) analysis (Glatter and Kratky, 1982). The non-linearity evident in residual values, and the larger values of both Rg and Rc in Mm SYCP2CC:SYCP3CC compared to the Hs SYCP3CC-SYCP2CC fusion, are attributable to aggregation.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Schematic model for the register of a hypothetical SYCP2:SYCP3 heterotetrameric complex, based on sequence alignments between the two proteins and the structure of Hs SYCP3CC (Syrjänen et al., 2014). (B) Schematic of 55 unique crosslinks (listed in Supplementary file 2–3) detected by crosslinking mass spectrometry (XLMS) mapped onto an antiparallel model of the SYCP2:SYCP3 complex. Top: 15 intra-SYCP3 crosslinks. Bottom: 13 intra-SYCP2 crosslinks. Middle: SYCP2-SYCP3 crosslinks. Crosslinks are colored by the number of times each was observed: 1–7 gray, 8–19 yellow, 20 or more orange. (C) Schematic of SYCP2-SYCP3 crosslinks mapped onto a parallel model of the complex.
+
 Our reconstitution and SAXS analysis of the SYCP3CC-SYCP2CC fusion supported a model of the SYCP2:SYCP3 tetramer in which two SYCP2 monomers are arranged parallel to one another, and antiparallel to two SYCP3 monomers. To further confirm this model, we used cross-linking mass spectrometry (XLMS), which identifies pairs of lysine residues whose side-chains are in close proximity in a native complex. We identified 55 cross-links in the Hs SYCP3CC-SYCP2CC fusion construct: 15 within the SYCP3 region, 13 within SYCP2, and 27 between SYCP3 and SYCP2 (Supplementary file 2, Supplementary file 3). Of the 27 cross-links identified between SYCP2 and SYCP3, ten were observed at least 8 times in our mass spectrometry experiments. Using sequence alignments and the structures of H. sapiens and M. musculus SYCP3, we generated physical models for SYCP2:SYCP3 where the monomers are arranged either parallel or antiparallel, and mapped all identified crosslinks onto these models (Figure 4F, Figure 4—figure supplement 5, Supplementary file 4). In agreement with our SAXS data, the crosslinking data strongly support a heterotetramer model with two SYCP2 monomers arranged parallel to one another and antiparallel to two SYCP3 monomers. We propose that these heterotetrameric SYCP2:SYCP3 complexes associate end-to-end to form extended filaments, which can potentially further associate with one another (bundle) through the SYCP3 C-terminus to form the foundation of the chromosome axis.
 
-## Plant ASY3 binds HORMADs and forms filaments with ASY4
+### Plant ASY3 binds HORMADs and forms filaments with ASY4
 
 In higher plants, the chromosome axis comprises meiosis-specific cohesin complexes (Bhatt et al., 1999; Cai et al., 2003; Lam et al., 2005; Zamariola et al., 2014); two meiotic HORMAD proteins, ASY1 and ASY2 (Caryl et al., 2000): and two coiled-coil proteins, ASY3 and ASY4 (Chambon et al., 2018; Ferdous et al., 2012; Osman et al., 2018). ASY3 is required for axis localization of ASY1, and its disruption causes a strong defect in crossover formation (Ferdous et al., 2012). Despite low sequence identity with either Red1 or SYCP2, ASY3 has been proposed as a functional homolog of Red1 based on phenotypic similarities plus the presence of a conserved C-terminal domain with predicted coiled-coil character (Figure 5A) (Ferdous et al., 2012). ASY4 was recently identified by two groups as a short protein with high homology to the ASY3 coiled-coil domain, that also interacts with ASY3 (Chambon et al., 2018; Osman et al., 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of Arabidopsis thaliana chromosome axis proteins, with truncations used for yeast two-hybrid assays shown for ASY1, ASY3, and ASY4. Colored in blue and green are ASY3 constructs that interact with the ASY1 HORMA domain (blue) and ASY4 (green). (B) Yeast two-hybrid analysis of A. thaliana ASY1, ASY3, and ASY4. AD: Gal4 activation domain fusion; BD: Gal4 DNA-binding domain fusion. Stringent selection on -LEU-TRP-HIS-ADE (-LTHA) media is shown; see Figure 5—figure supplement 1 for complete results. (C) SDS-PAGE analysis of purified His6-MBP-tagged closure motifs in ASY3 (residues 2–50) and ASY1 (residues 570–596) in complex with untagged ASY1 HORMA domain (residues 1–234). Complexes were purified using Ni2+ affinity and size-exclusion chromatography. (D) Sequence alignment of the putative closure motif regions of At ASY1 (residues 568–596) and ASY3 (residues 8–35). The two regions show weak homology with a central region enriched in hydrophobic residues, bracketed on both sides by positively-charged residues. See Figure 5—figure supplement 2 for sequence alignments of both regions. (E) SDS-PAGE analysis of purified His6-MBP-ASY3605-793:ASY4FL complexes used for negative-stain EM analysis (panel F). (F) Representative negative-stain electron micrographs of purified His6-MBP-ASY3605-793:ASY4FL filaments. See Figure 5—figure supplement 3 for additional full micrographs. (G) Quantification of inter-MBP spacing in micrographs of His6-MBP-Mm SYCP21325-1500:SYCP384-248 filaments. The measured spacing of 23.0 ± 2.9 nm (mean ±standard deviation from 41 measured intervals) is equivalent to the length of a ~160 residue coiled-coil (0.146 nm rise per residue). Predicted coiled-coil regions of ASY3 and ASY4 are ~145 and ~180 residues, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Yeast two-hybrid analysis of A. thaliana ASY1 HORMA domain, ASY1 C-terminal domain, and ASY3. AD: indicated proteins were cloned into pGADT7 (Gal4 activation domain fusion); BD: indicated proteins were cloned into pBridge (Gal4 DNA-binding domain fusion). -LEU-TRP: non-selective; -LEU-TRP-HIS: weak selection; -LEU-TRP-HIS-ADE: stringent selection. (B) Yeast two-hybrid analysis of A. thaliana ASY4 and ASY3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Sequence alignment of 32 plant ASY1 C-terminal domains. (B) Sequence alignment of 32 plant ASY3 N-terminal domains.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/40372/elife-40372-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Negative-stain electron micrographs of A. thaliana His6-MBP-ASY3605-793:ASY4FL filaments. Yellow dotted boxes indicate the area of micrographs shown in Figure 5F.
 
 To define protein-protein interactions within the plant chromosome axis, we used yeast two-hybrid assays to test interactions between A. thaliana ASY1, ASY3, and ASY4. We found that the ASY1 N-terminal HORMA domain (residues 1–234) interacts with its own extreme C-terminus (residues 558–596), revealing that this protein possesses a C-terminal closure motif like its orthologs in C. elegans, mammals, and fungi (Figure 5B). We further identified an ASY1 HORMA domain-interacting region at the N-terminus of ASY3 (residues 1–50; Figure 5B). This region contains a highly-conserved motif of ~30 residues with limited sequence homology to the ASY1 C-terminus (Figure 5D, Figure 5—figure supplement 2), suggesting that both regions act as HORMAD-binding closure motifs. To verify these interactions, we co-expressed each putative closure motif (fused to an N-terminal His6-MBP tag) with the ASY1 HORMA domain in E. coli. Both His6-MBP-ASY32-50 and His6-MBP-ASY1570-596 co-purified with untagged ASY1 HORMA domain through Ni2+-affinity and size exclusion chromatography (Figure 5C), demonstrating a high-affinity interaction. These findings show that plant meiotic HORMADs, like those from fungi and mammals, can interact with closure motif sequences both at their own C-termini and in the N-terminal region of a Red1-like axis core protein.
 
@@ -113,9 +193,313 @@ A further mystery involves plant ASY3, which appears to entirely lack a Red1/SYC
 
 ## Materials and methods
 
-## Cloning and protein purification
+**Key resources table**
 
-## Mammalian proteins
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>strain AH109</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>strain Y187</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta2 (DE3) pLysS</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>S288c genomic DNA</td>
+      <td>Invitrogen</td>
+      <td>cat. # 69240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Z. rouxii)</td>
+      <td>NRRL Y-229 genomic DNA</td>
+      <td>ATCC</td>
+      <td>cat. # 2623D-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>HORMAD1 cDNA</td>
+      <td>TransOMIC Technologies</td>
+      <td>BC051129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>HORMAD2 cDNA</td>
+      <td>TransOMIC Technologies</td>
+      <td>BC120781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>SYCP2 cDNA</td>
+      <td>Harvard PlasmID</td>
+      <td>MmCD0083242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>SYCP3</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>SYCP2</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>SYCP3</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>ASY1</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>ASY3</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>ASY4</td>
+      <td>GeneArt</td>
+      <td></td>
+      <td>Synthesized gene fragment</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Red1 antibody (1)</td>
+      <td>Gift from G. S. Roeder</td>
+      <td></td>
+      <td>used for immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Red1 antibody (2)</td>
+      <td>Gift from N. Hollingsworth</td>
+      <td></td>
+      <td>used for Western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal Anti-Gmc2 antibody</td>
+      <td>Prosci Inc.</td>
+      <td></td>
+      <td>used for immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit HRP antibody</td>
+      <td>Jackson Immunoresearch</td>
+      <td>111-035-003</td>
+      <td>used for Western blotting</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pGADT7</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pBridge</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Macrolab vector 2CT</td>
+      <td>UC Berkeley Macrolab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Macrolab vector 13S-A</td>
+      <td>UC Berkeley Macrolab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Macrolab vector 2 ST</td>
+      <td>UC Berkeley Macrolab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TEV protease</td>
+      <td>David Waugh, National Cancer Institute</td>
+      <td>Clone pRK793</td>
+      <td>Purified in-house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mm HORMAD2 closure motif peptide</td>
+      <td>Biomatik, Inc.</td>
+      <td></td>
+      <td>Sequence: FITC-Ahx-EPSFESSRKKKKVSEPVTVFIPNRK</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HisTrap HP column</td>
+      <td>GE Life Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Q HP column</td>
+      <td>GE Life Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 column</td>
+      <td>GE Life Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D0/D12 BS3 (bis-sulfosuccinimidylsuberate</td>
+      <td>Creative Biomolecules</td>
+      <td>cat. # BS3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAPD</td>
+      <td>https://github.com/RAPD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AIMLESS</td>
+      <td>http://www.ccp4.ac.uk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TRUNCATE</td>
+      <td>http://www.ccp4.ac.uk</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>autoxds</td>
+      <td>Stanford Synchrotron Radiation Lightsource</td>
+      <td></td>
+      <td>In-house script</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ARCIMBOLDO</td>
+      <td>http://chango.ibmb.csic.es</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>http://www.phenix-online.org/download/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHASER</td>
+      <td>http://www.phaser.cimr.cam.ac.uk/index.php/Phaser_Crystallographic_Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RESOLVE</td>
+      <td>https://solve.lanl.gov</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>https://www2.mrc-lmb.cam.ac. uk/personal/pemsley/coot/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ATSAS</td>
+      <td>https://www.embl-hamburg.de/biosaxs/software.html</td>
+      <td></td>
+      <td>SAXS analysis suite</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xQuest</td>
+      <td>http://prottools.ethz.ch/orinner/public/htdocs/xquest/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad software - https://www.graphpad.com</td>
+      <td>version 7</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and protein purification
+
+#### Mammalian proteins
 
 For yeast two-hybrid analysis, M. musculus genes were PCR-amplified from cDNA (SYCP2: Harvard PlasmID clone MmCD00083242; HORMAD1: TransOMIC technologies clone BC051129; HORMAD2: TransOMIC technologies clone BC120781) or synthesized DNA fragment (SYCP3; GeneArt) and inserted by ligation-independent cloning into modified pBridge and pGADT7 vectors (Clontech). For co-expression, M. musculus SYCP2 and SYCP3 fragments were separately cloned into UC Berkeley Macrolab vectors 2CT (SYCP2; AmpR, N-terminal His6-MBP fusion) or 13S-A (SYCP3; SpecR, no tag) by ligation-independent cloning. For expression of SYCP3 alone, M. musculus SYCP3105-248 was cloned into UC Berkeley Macrolab vector 2 ST (N-terminal His6-SUMO fusion). The H. sapiens SYCP2-SYCP3 fusion construct was assembled by multi-part PCR from synthesized-fragment templates (GeneArt) and inserted into vector 2CT by ligation-independent cloning. For co-expression of M. musculus SYCP2:HORMAD2 complexes, a polycistronic expression cassette was assembled by PCR and inserted into vector 2CT, yielding a final vector encoding His6-MBP-tagged SYCP2 fragments plus untagged HORMAD21-241.
 
@@ -125,55 +509,55 @@ For size-exclusion chromatography-based assays of SYCP2:SYCP3 filament formation
 
 For size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS), 100 μL purified proteins at 2–5 mg/mL was injected onto a Superdex 200 Increase 10/300 GL column (GE Life Sciences) in a buffer containing 20 mM HEPES pH 7.5, 300 mM NaCl, 5% glycerol, and 1 mM DTT. Light scattering and refractive index profiles were collected by miniDAWN TREOS and Optilab T-rEX detectors (Wyatt Technology), respectively, and molecular weight was calculated using ASTRA v. six software (Wyatt Technology).
 
-## Fungal proteins
+#### Fungal proteins
 
 Zygosaccharomyces rouxii Red1 constructs were amplified by PCR and inserted by ligation-independent cloning into UC Berkeley Macrolab vector 2CT (AmpR, N-terminal His6-MBP fusion) for expression in E. coli. Proteins were expressed and purified as above.
 
-## Plant proteins
+#### Plant proteins
 
 Full-length codon-optimized genes for Arabidopsis thaliana ASY1, ASY3, and ASY4 were synthesized (GeneArt) and inserted by ligation-independent cloning into modified pBridge and pGADT7 vectors (Clontech) for yeast two-hybrid analysis, or cloned into UC Berkeley Macrolab vectors 2CT/13S-A for expression in E. coli. Truncations were amplified by PCR and similarly cloned.
 
 For co-purification of the ASY1 HORMA domain with putative closure motif peptides, putative closure motifs (ASY32-50 and ASY1570-596) in vector 2CT (N-terminal His6-MBP fusion) and ASY11-234 in vector 13S-A (untagged) were co-transformed into E. coli strain Rosetta 2(DE3) pLysS, and grown in the presence of ampicillin, spectinomycin and chloramphenical to an OD600 of 0.9 at 37°C, induced with 0.25 mM IPTG, then grown for a further 16 hr at 18°C prior to harvesting by centrifugation. For purification, cells were lysed by sonication, then clarified lysates were purified by Ni2+ affinity (HisTrap HP; GE Life Sciences) and size exclusion chromatography (Superdex 200; GE Life Sciences). For purification of ASY3:ASY4 for electron microscopy, ASY3605-793 in vector 2CT (N-terminal His6-MBP fusion) and full-length ASY4 in vector 13S-A (untagged) were co-transformed into E. coli strain Rosetta 2(DE3) pLysS, and grown in the presence of ampicillin, spectinomycin and chloramphenical to an OD600 of 0.9 at 37°C, induced with 0.25 mM IPTG, then grown for a further 16 hr at 18°C prior to harvesting by centrifugation, and purified as above.
 
-## Yeast two-hybrid
+### Yeast two-hybrid
 
 For yeast two-hybrid analysis, plasmids were transformed into AH109 and Y187 yeast strains (Clontech), and transformants were selected using CSM -Leu (for pGADT7 vectors) and CSM -Trp (pBridge vectors) media. Haploid yeast strains were mated overnight at room temperature, and diploids were selected using CSM -Leu-Trp media. Diploids were patched onto low-stringency (CSM -Leu-Trp-His) and high stringency media (CSM -Trp-Leu-His-Ade), grown for 1–3 days at 30°C, and imaged.
 
-## Fluorescence polarization
+### Fluorescence polarization
 
 An N-terminal FITC-Ahx labeled Mm HORMAD2288-306 peptide was synthesized (BioMatik), resuspended in DMSO, then diluted into binding buffer (20 mM Tris pH 7.5, 300 mM NaCl, 10% glycerol, 1 mM DTT, 0.1% NP-40). Fifty μL reactions containing 50 nM peptide plus up to 50 μM bait proteins were incubated 60 min at room temperature, then fluorescence polarization was read in 384-well plates using a TECAN Infinite M1000 PRO fluorescence plate reader. All binding curves were done in triplicate. Binding data were analyzed with Graphpad Prism v. seven using a single-site binding model.
 
-## Electron microscopy
+### Electron microscopy
 
 For negative-stain electron microscopy, protein complexes were passed over a size exclusion column (Superdex 200 Increase 10/300 GL; GE Life Sciences) in EM buffer (300 mM NaCl, 20 mM Tris-HCl pH 7.5, 1 mM DTT), and peak fractions were diluted to ~0.01 mg/mL in EM buffer. Samples were spotted on freshly glow-discharged carbon coated copper grids, blotted into a thin film, and stained using 2% of uranyl formate. Electron micrographs were acquired on a Tecnai F20 Twin transmission electron microscope (FEI, Hillsboro OR) operating at 200 kV on a Tietz F416 4K × 4K CMOS camera (TVIPS, Gauting, Germany). For untagged Zr Red1705-798 and MBP-ASY3605-793:ASY4FL, micrographs were acquired on a FEI Talos F200C with 4K × 4K CMOS camera (Thermo Fisher Scientific). Micrographs of His6-MBP-SYCP21325-1500:SYCP384-248 and MBP-ASY3605-793:ASY4FL were analyzed using ImageJ to determine the average spacing of MBP densities on the respective filaments.
 
-## Thermofluor melting assays
+### Thermofluor melting assays
 
 For measurement of melting temperature, 45 uL 0.1 mg/mL purified protein in gel-filtration buffer (20 mM Tris-HCl pH 7.5, 300 mM NaCl, 10% glycerol, 1 mM DTT) was mixed with 5 uL 50X SYPRO orange dye (Life Technologies; 5X final concentration) and pipetted into an optically-clear qPCR plate. SYPRO fluorescence was measured in a Bio-Rad CFX96 qPCR machine in FRET mode (excitation 450–490 nm, emission 560–580) using a temperature range 25–95°C in 0.5° steps (15 s hold per step). Triplicate measurements were averaged, buffer-subtracted, then the derivative of the fluorescence was calculated. The maximum value of the derivative curve (highest rate of change in fluorescence) is assigned as the Tm. N-terminal His6-MBP and His6-SUMO on SYCP21325-1479:SYCP3105-248 and SYCP3105-248, respectively, were removed prior to Tm analysis.
 
-## Crystallization and structure determination of M. musculus SYCP3 homotetramer
+### Crystallization and structure determination of M. musculus SYCP3 homotetramer
 
 When co-expressed in E. coli, M. musculus SYCP3 is expressed at much higher levels than SYCP2 (not shown). We found that while M. musculus SYCP2CC is insoluble when expressed without SYCP3CC, SYCP3CC is able to form soluble homotetramers. While optimizing expression constructs, we co-expressed M. musculus His6-SUMO-SYCP3105-248 with untagged SYCP21325-1472, purified the resulting complex, and identified crystallization conditions. Crystals were obtained in hanging drop format by mixing protein (50–80 mg/mL) with two parts well solution containing 100 mM Tris-HCl pH 8.5, 16% PEG 4000, and 100–200 mM sodium acetate. Later analysis showed that these crystals contain SYCP3 homotetrameric complexes, rather than SYCP2:SYCP3 heterotetramers. Because of the tendency of SYCP3CC to form homotetrameric complexes, all other analysis with SYCP2CC:SYCP3CC complexes was performed with complexes expressed with tagged SYCP2 and untagged SYCP3.
 
 SYCP3 homotetramer crystals were cryoprotected by the addition of 20% sucrose, then diffraction data was collected at the Advanced Photon Source, beamline 24ID-C. Despite identical growth conditions and similar shape, crystals belonged to two different space groups (P1 and P21; Supplementary file 1). Data collected at the Advanced Photon Source were indexed and scaled by RAPD (https://github.com/RAPD), which used XDS (Kabsch, 2010) for indexing and data reduction, and the CCP4 programs AIMLESS (Evans and Murshudov, 2013) and TRUNCATE (Winn et al., 2011) for scaling and conversion to structure factors. Data collected at the Stanford Synchrotron Radiation Lightsource was indexed and scaled by the autoxds script, which uses XDS, AIMLESS, and TRUNCATE as above. An initial model was determined by ARCIMBOLDO_LITE (Sammito et al., 2015) in its COILED_COIL mode (Caballero et al., 2018) using a merged P21 dataset assembled from three individual datasets from different crystals, cut to a final resolution of 2.5 Å. ARCIMBOLDO (Millán et al., 2015) uses PHASER (McCoy et al., 2007) to place individual α-helices by eLLG (expected log likelihood-gain)-guided molecular replacement (Oeffner et al., 2018), then expand partial solutions with SHELXE (Usón and Sheldrick, 2018) through density modification and autotracing into a complete model (Usón et al., 2007). Phases from the initial ARCIMBOLDO model (393 residues) were used to identify selenomethionine sites, which were then supplied to the Phenix Autosol module (Terwilliger et al., 2009) for phase calculation in PHASER (McCoy et al., 2007; Read and McCoy, 2011), density modification including two-fold NCS averaging in RESOLVE (Terwilliger, 2003), and initial model building in RESOLVE. Initial models from ARCIMBOLDO and RESOLVE were manually rebuilt in COOT and refined in phenix.refine (Adams et al., 2010) against a single 2.5 Å-resolution dataset collected from crystals of selenomethionine-substituted protein. The register of all four protein chains in the final model, and their identity as SYCP3CC, were verified by anomalous difference maps showing the location of selenomethionine residues. While ARCIMBOLDO successfully determined the structure in the P1 crystal form, the initial P1 model used for rebuilding and refinement was generated by molecular replacement in PHASER using the P21 model. The P1 model was refined against a 2.2 Å-resolution dataset generated by merging five independent datasets collected at APS beamline 24ID-E and SSRL beamline 14–1.
 
-## Support statement - Advanced Photon Source NE-CAT beamline 24ID-C
+#### Support statement - Advanced Photon Source NE-CAT beamline 24ID-C
 
 This work is based upon research conducted at the Northeastern Collaborative Access Team beamlines, which are funded by the National Institute of General Medical Sciences from the National Institutes of Health (P41 GM103403). The Pilatus 6M detector on 24-ID-C beam line is funded by a NIH-ORIP HEI grant (S10 RR029205). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
 
-## Support statement - Stanford Synchrotron Radiation Lightsource beamline 14–1
+#### Support statement - Stanford Synchrotron Radiation Lightsource beamline 14–1
 
 Use of the Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, is supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences under Contract No. DE-AC02-76SF00515. The SSRL Structural Molecular Biology Program is supported by the DOE Office of Biological and Environmental Research, and by the National Institutes of Health, National Institute of General Medical Sciences (including P41GM103393). The contents of this publication are solely the responsibility of the authors and do not necessarily represent the official views of NIGMS or NIH.
 
-## Small-angle X-ray scattering (SAXS)
+### Small-angle X-ray scattering (SAXS)
 
 For SAXS, Mm SYCP2CC:SYCP3CC was diluted to 1, 3, or 6 mg/mL in a buffer containing 20 mM Tris-HCl pH 8.5, 300 mM NaCl, 2% glycerol, and 1 mM DTT. Both His6-MBP-tagged and untagged Hs SYCP3CC-SYCP2CC fusion was diluted to 2, 4 or 8 mg/mL in a buffer containing 20 mM Tris-HCl pH 7.5, 300 mM NaCl, 2% glycerol, and 1 mM DTT. SAXS data were collected at the SIBYLS Beamline 12.3.1 at the Advanced Light Source, Lawrence Berkeley National Lab (which is funded by DOE BER Integrated Diffraction Analysis Technologies (IDAT) program and NIGMS grant P30 GM124169-01, ALS-ENABLE) (Dyer et al., 2014). For each sample, thirty 0.3 s exposures were taken and integrated, for a total exposure time of 10 s. Exposures were radially averaged and buffer-subtracted to yield SAXS scattering curves. SAXS data analysis was performed with ScÅtter (https://bl1231.als.lbl.gov/scatter/) and the ATSAS SAXS analysis suite (https://www.embl-hamburg.de/biosaxs/software.html) (Dyer et al., 2014).
 
-## Crosslinking mass spectrometry (XLMS)
+### Crosslinking mass spectrometry (XLMS)
 
 For cross-linking of Hs SYCP3CC-SYCP2CC, the protein was diluted to 1 mg/mL in a buffer containing 20 mM HEPES pH 7.5, 300 mM NaCl, 10% glycerol, and 1 mM DTT. Crosslinking was performed by addition of 0.2, 0.5, or 1 mM isotopically-coded D0/D12 BS3 (bis-sulfosuccinimidylsuberate; Creative Molecules) for 60 min at room temperature. The reaction was quenched by the addition of 100 mM NH4HCO3 and further incubation at 30°C for 10 min. Quenched reactions were supplemented with 8M urea to a final concentration of 6M. Subsequent to reduction and alkylation, crosslinked proteins were digested with Lys-C (1:50 w/w, Wako) for 3 hr, diluted with 50 mM ammonium bicarbonate to 1M urea and digested with trypsin (1:50 w/w, Promega) overnight. Crosslinked peptides were purified by reversed phase chromatography using C18 cartridges (Sep-Pak, Waters). Crosslink fractions by peptide size exclusion chromatography and analyzed by tandem mass spectrometry (Orbitrap Elite, Thermo Scientific) (Herzog et al., 2012). Fragment ion spectra were searched and crosslinks identified by the dedicated software program xQuest (Walzthoeni et al., 2015). All unique detected crosslinks are listed in Supplementary file 2 and Supplementary file 3.
 
-## Yeast genetics and imaging
+### Yeast genetics and imaging
 
 All yeast strains were derived from the SK1-related diploid strain NH144 (Supplementary file 5) (de los Santos and Hollingsworth, 1999; Hollingsworth et al., 1995). For Sc-Zr Red1 chimeras, a homologous recombination template was generated to replace residues 734–827 with residues 705–798 (wild-type or I715R) or 705–791 of Zr Red1, followed by a KanMX selection marker, and integrated into the RED1 locus. For spore viability, cells were grown on YPD agar, patched onto SPO medium (1% KOAc) for 48–72 hr, then tetrads were dissected onto YPD agar and grown 3 days for analysis. Spore viability was 95.3% (122 viable spores out of 128) for RED1, 54% for red1-Sc1-734:Zr707-798 (28 viable out of 52), 2% for red1-Sc1-734:Zr707-791 (1 viable out of 56), and 9.4% for red1-Sc1-734:Zr707-798I715R] (12 viable out of 128).
 

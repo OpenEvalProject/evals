@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04bgfm609 Stowers Institute for Medical Research Kansas City United States
-2. https://ror.org/036c9yv20 Department of Cell Biology and Physiology, University of Kansas Medical Center Kansas City United States
+1. Stowers Institute for Medical Research Kansas City United States ([ROR:04bgfm609](https://ror.org/04bgfm609))
+2. Department of Cell Biology and Physiology, University of Kansas Medical Center Kansas City United States ([ROR:036c9yv20](https://ror.org/036c9yv20))
 
 † Corresponding author
 
@@ -34,17 +34,49 @@ Finally, we address the molecular underpinning of how VSNs establish anatomical 
 
 ## Results
 
-## Cell types in the VNO
+### Cell types in the VNO
 
 We dissected mouse VNOs from postnatal day 14 (P14) juveniles and P56 adults. Cells were dissociated in the presence of actinomycin D to prevent procedure-induced transcription. From four adult (P56) and four juvenile (P14) mice (equal representation of sexes) we obtained sequence reads from 34,519 cells. The samples and replicates were integrated for cell clustering. In two-dimensional UMAP space, 18 cell clusters can be clearly identified (Figure 1A). These clusters were curated using known cell markers (Figure 1B). There was no obvious difference in the presence of cell clusters between juvenile and adult VNOs (Figure 1C) or between male and female sexes (Figure 1D). Although there were differences in gene expression profiles between the ages (Figure 1—figure supplement 1) and sexes (Figure 1—figure supplement 2), the list of significantly differentially expressed genes did not appear to be influential for the neuronal lineage and cell type specification, or related to cell adhesion molecules, which were the main focuses of this study.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig1-v1.jpg)
+
+**Figure 1.:** UMAP visualization of integrated cell-type clusters for whole-VNO single-cell RNA-seq. (B) Cell-type marker-gene normalized expression across the cell clusters. C. UMAP of cell-type clusters split by age. (D) UMAP of cell-type clusters split by sex. (E) A representative image of transcript distribution for 9 genes in a VNO slice using the Molecular Cartography platform Resolve Biosciences. Insets (a and b) show the magnified image of areas identified in the main panel. Individual cell shapes can be determined from the transcript clouds. (F) Spatial location of individual VNO cells color-coded according to cell type prediction based on the spatial transcriptomic analysis. (G) Location of cell belonging to HBC, GBC, INP, and LP cell types, respectively. Heat indicates confidence of predicted values. BL: basal lamina; MZ: marginal zone.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Volcano plot of gene expression differences between P14 and P56 (Wilcoxon rank sum test, FDR ≤ 0.05). (B) 16 significantly differentially expressed genes with largest positive or negative log2-fold-change values (Wilcoxon rank sum test, FDR ≤ 0.05). (C) 50 significantly enriched GO terms with largest positive or negative log2-fold-change values (GSEA Permutation testing w/ FDR ≤ 0.05).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Volcano plot of gene expression differences between male and female mice (Wilcoxon rank sum test, FDR ≤ 0.05). (B) 16 significantly differentially expressed chemosensory receptors with largest positive or negative log2-fold-change values (Wilcoxon rank sum test, FDR ≤ 0.05). (C) 35 significantly enriched GO terms (GSEA Permutation testing w/ FDR ≤ 0.05).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic indicating quantification of cells in the marginal, intermediate, and main zones. (B) Stacked bar-plot of cell-type proportions by VNO zone (Wilcoxon rank sum test, FDR ≤ 0.05). (C) Box plots of GBC, INP, and immature VSN cell counts by zone, across 13 slides.
 
 Clustering confirmed all previously identified cell types but also revealed some surprises. The largest portion of cells belonged to the neuronal lineage, including the globose basal cells (GBC), immediate neuronal progenitors (INPs), the immature and mature VSNs, and a population of cells that do not co-cluster with either VSN type (see below). There were substantial numbers of sustentacular cells (SCs), horizontal basal cells (HBCs), and ms4-expressing microvillus cells (MVs). Cells engaged in adaptive immune responses, including microglia and T-cells, were also detected. A population of Fpr-1 expressing cells that were distinctive from the VSNs expressing the Fpr family of genes formed a separate class. These were likely resident cells mediating innate immune responses. We also identified the olfactory ensheathing cells (OECs) and a population of lamina propria (LP) cells, which share molecular characteristics with what we have found in the MOE (Wu et al., 2022).
 
 To obtain the spatial location of the various cell types, we selected 100 target genes based on the scRNA-seq results. Using probes for these genes, we used the Molecular Cartography platform to perform spatial molecular imaging (Figure 1E). Based on molecular clouds and DAPI nuclei staining, we segmented the cells and quantified gene expression profiles to cluster the cells. We then map individual cell clusters onto their spatial locations in VNO slices. Unlike previous studies that relied on a few markers to identify cell types, our approach relied on the spatial transcriptome to calculate the probability that a cell belongs to a specific class. This analysis revealed that the VSNs and supporting cells are located in the pseudostratified neuroepithelium (Figure 1F). The LP cells are located along the LP underlying the neuroepithelium as found in the MOE (Figure 1F and G). Surprisingly, however, there are few HBCs located along the basal lamina, in direct contrast to the MOE (Figure 1F and G). Most of the HBCs are found in the non-neuronal epithelium surrounding the blood vessel, with few near the marginal zone. The marginal zone is thought to be the neurogenic region (Takami and Graziadei, 1991; Mombaerts et al., 1996; Gronowitz et al., 2021). We quantified the distribution of cell types in various regions of the VNO neuroepithelia (Figure 1—figure supplement 3A) and found significantly more GBCs, INPs, and immature VSNs in the marginal zone than in the main zone (Figure 1—figure supplement 3B and Figure 1—figure supplement 3C). A previous study suggested neurogenic activity in the medial zone (Brann and Firestein, 2010), but we did not find evidence in support of that conclusion, which was largely based on BrdU staining of mitotic cells without lineage-specific information. Based on our transcriptomic analysis, we conclude that neurogenic activity is restricted to the marginal zone.
 
-## Novel classes of sensory neurons in the VNO
+### Novel classes of sensory neurons in the VNO
 
 To better understand the developmental trajectory of the VSNs, we segregated the cells in the neuronal lineage from the whole dataset (Figure 2A). The neuronal lineage consists of the GBCs, INPs, immature neurons as determined by the expression of Gap43 and Stmn2 genes (Figure 2—figure supplement 1A and B), and the mature VSNs. Cells expressing Xist, which is expressed in female cells, were intermingled with those from males (Figure 2—figure supplement 1C). This observation is consistent with our previous studies using bulk sequencing indicating that the cell types are not sexually dimorphic (Duyck et al., 2017). It is also consistent with physiological responses of the VSNs to various stimuli (He et al., 2008; He et al., 2010; Holy et al., 2000; Tolokh et al., 2013; Arnson et al., 2010). For further analyses, therefore, we did not segregate the samples according to sex.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP visualization of cell-type clusters for the neuronal lineage. (B) Expression of Gnai2 and Gnao1 in the neuronal lineage. (C) Expression of Cnga2 and Gnal in the OSN lineage. (D–E) Location of mOSNs (D) and sVSNs (E) in a VNO slice. Color indicates prediction confidence. (F) Heatmap of normalized expression for a select set of mutually differentially expressed genes between sVSNs and mature V1Rs, V2Rs, and OSNs. (G) Enriched gene ontology (GO) terms in sVSNs when compared with V1R and V2R VSNs, respectively (GSEA Permutation testing w/ FDR ≤ 0.05). (H) Box plots of normalized expression for Muc2, Obp2a, Obp2b, and Lcn3 across mature sensory neurons (Wilcoxon rank sum test, FDR ≤ 0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Normalized Gap43 and Stmn2 expression in the neuronal lineage. (C) Normalized. Xist expression in the neuronal lineage, split by sex. (D) Violin plot of normalized Gnai2. expression in mature V2R neurons, split by sample. (E–G) Total number of genes, counts, and percent ribosomal gene expression detected in mature neurons, split by cell type (Wilcoxon rank sum test, FDR ≤0.05). (H) Heatmap of 503 significant (Wilcoxon rank sum test, FDR ≤0.001, fold-change ≥1.5) differentially expressed genes in sVSNs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A-D) Feature plots showing odor binding protein gene expression (Muc2, Obp2a, Obp2b, and Lcn3). (E–L) Top upregulated genes in sVSNs. (M–T) Top downregulated genes in sVSNs.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) VNO neuronal lineage cell-types in UMAP space. (B) V1R, V2R, and sVSN lineage. pseudotimes in UMAP space. (C) Volcano plot of mOSN gene expression versus all other cells. from the neuronal lineage (Wilcoxon rank sum test, FDR ≤0.05). (D) 45 significant GO terms enriched in OSNs versus all other cells (GSEA Permutation testing w/ FDR ≤0.05).
 
 The VSNs are clearly separated into the V1R and V2R clusters as distinguished by the expression of Gnai2 and Gnao1, respectively (Figure 2B). Surprisingly, we observed that a portion of the V2R cells also expressed Gnai2. These cells were primarily from adult, but not juvenile male mice (Figure 2—figure supplement 1D). Past studies based on Gnai2 and Gnao1 expression would have identified this group of cells as V1R VSNs, but the transcriptome-based classification places them as V2R VSNs. The signaling mechanism of this group of cells may be different from the canonical V2R VSNs.
 
@@ -56,11 +88,19 @@ We also identify a distinct set of cells expressing the odorant receptors (ORs) 
 
 Differential gene expression analysis (Figure 2—figure supplement 3C) reveals an enrichment for multiple GO terms related to cilium (Figure 2—figure supplement 3D), consistent with the ciliated nature of OSNs. We thus mark the cells as canonical OSNs. Spatial mapping reveals that the OSNs are mainly in the neuroepithelium, with some cells concentrated in the marginal zone (Figure 2D).
 
-## Developmental trajectories of the neuronal lineage
+### Developmental trajectories of the neuronal lineage
 
 The VNO develops from the olfactory pit during the embryonic period and continues to develop into postnatal stages (Garrosa et al., 1998; Suárez, 2011; Katreddi and Forni, 2021). Neurons regenerate in adult animals (Giacobini et al., 2000; Martínez-Marcos et al., 2000). Cell types in the vomeronasal lineage have been shown to be specified by BMP and Notch signaling (Katreddi et al., 2022; Naik et al., 2020), and coordinated by transcription factors (TFs) including Bcl11b/Ctip2, C/EBPγ, ATF5, Gli3, Meis2, and Tfap2e (Enomoto et al., 2011; Lin et al., 2018; Nakano et al., 2019; Taroc et al., 2020; Rawson et al., 2010; Chang and Parrilla, 2016). Recent scRNA-seq studies of the VNO have helped identify Notch signaling as a specifier of the apical and basal lineages and have provided insight into the distinct transcriptional profiles of the basal and apical program (Katreddi et al., 2022; Lin et al., 2022). Despite these advances in understanding the role of individual genes in VNO development, the transcriptional program that specifies the lineages is not known.
 
 To explore VSN development, we performed pseudotime inference analysis of the V1R and V2R lineages for P14 and P56 mice using Slingshot (Figure 3A; Street et al., 2018). We set GBCs as the starting cluster and mVSNs as terminal clusters. A minimum spanning tree through the centroids of each cluster was calculated using the first fifty principal components and fit with a smooth representation to assign pseudotime values along the principal curve of each lineage. Cell density plots for both the V1R and V2R lineage reveal a higher portion of immature VSNs at P14 than at P56. For the mature VSNs, the P14 samples have peaks at an earlier pseudotime than the P56 mice (Figure 3B). This result indicates the VSNs in juvenile mice are developmentally less mature than their counterparts in adults, but these differences do not distinguish them in obvious ways (Figure 1C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig3-v1.jpg)
+
+**Figure 3.:** (A) PCA plot of V1R and V2R pseudotime principal curves across cell types. (B) Cell density plots across pseudotime for P14 and P56 mice (Two-sided Kolmogorov-Smirnov test). (C) Heatmap showing expression in pseudotime for genes that differentially expressed between the V1R and V2R lineages. Heat indicates Z-score values. (D) Zoomed in UMAP of cell types early in the neuronal lineage. (E–I) Feature plots for select genes expressed early in the neuronal lineage. (J) UMAP of INP, iVSN, iOSN, and mOSN cell types. (K–U) Normalized expression of candidate genes for V1R/V2R/OSN lineage determination. (V) A simplified model for lineage determination by transcription factors in VNO sensory neurons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Violin plot of normalized expression for Neurog1 (A) and Neurod1 (B) split by cell type. (C–R) Feature plots of normalized gene expression for early differentially expressed genes between V1R, V2R, and OSN lineages. (S and T) Feature plots of normalized expression for Notch1 (S) and Dll4 (T).
 
 On the other hand, we have identified dynamic changes in transcriptomes associated with the V1R and V2R lineages. There were 2037 significantly differentially expressed genes between V1R and V2R lineages (Figure 3C). While V1R and V2R lineages shared some of the genes in the early stages of development, most show distinct expression patterns between the two. To determine the transcriptional program associated with the lineages, we examined the expression sequence of individual transcription factors and signaling molecules from the gene list.
 
@@ -76,9 +116,21 @@ Based on these patterns, we propose a model of molecular cascades that specify t
 
 The downregulation of Sp8 and the expression of Fezf1, Tshz2, and Olig2 are required for commitment to the OSN lineage. Downregulation of Sp8 is not required for the V2R lineage, which begin expressing Tfap2e. Neurod1 is expressed in all INPs. These patterns of expression suggest that both the OSN and V1R lineages required the expression of specific transcription factors. The V2R lineage, on the other hand, appears to rely on factors inherited from the early INPs. This suggests the possibility that the V2R lineage is a default path for the VSNs.
 
-## Receptor expression in the VSNs
+### Receptor expression in the VSNs
 
 We quantified the expression of V1Rs, V2Rs, and ORs to gain insights into how chemosensory cues may be encoded by the VNO. For comparison, we also included OR expression from the MOE (Wu et al., 2022). Within each class of receptors, the probability of expression of a gene follows a power law distribution except for the lower ranked genes (Figure 4—figure supplement 1A). The sharp deviation from the power law curve for the lower ranked receptors is likely from technical dropout of genes expressed at low levels as they cannot be effectively captured by the scRNA-seq platforms. We plotted the relationship between total reads and the number of cells expressing a given receptor, and the average reads per cell for the receptors (Figure 4A–H). We observed weak correlations between the total reads and the cell number expressing a given V1R or a V2R (Figure 4A and B). This non-uniform distribution of VR genes is consistent with our observation from bulk sequencing results (Duyck et al., 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig4-v1.jpg)
+
+**Figure 4.:** (A-D) Expression level of individual receptor (total raw counts) plot against the number of cells expressing the receptor for V1R (A), V2R (B), VNO-Olfr (C), and MOE-Olfr (D). (E-H) Ranked distribution of average expression per cell for the four receptor classes. Inset pie charts show the number of cells expressing a receptor at the specified range. (I and J) Heatmaps showing the Pearson correlation coefficient of transcription factor expression among the V1Rs (I) or V2Rs (J). (K) A simplified model of transcription factor selection in mVSNs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Log scale rank-frequency distribution plots for V1R, V2R, VSN-OR, and OSN-OR. (B–D) Number of cells expressing (nCells) vs. total raw counts for V1R, V2R, and VSN-OR. (E–F). Rank by average count distributions for V1R, V2R, and VSN-OR.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Distribution density plot showing relationship between similarity of transcription factor (TF) gene expression profiles and receptor sequence similarity. (B–C) Heatmaps showing the. V1R-TF (B) and V2R-TF (C) associations. Heat shows average expression level for TF genes for a given receptor type.
 
 Most V1Rs and V2Rs are expressed by less than 1500 cells (out of 34,519). Most VRs are expressed at less than 100 counts per cell (Figure 4E and F). Several V1Rs, including Vmn1r184, Vmn1r89, Vmn1r196, Vmn1r43, and Vmn1r37, are highly expressed in individual cells (Figure 4A). Vmn1r196, Vmn1r43, and Vmn1r37 are also expressed at the highest level per cell. Some others, including Vmn1r183, Vmn1r81, and Vmn1r13, are expressed in large numbers of cells but have low expression in individual cells. Notably, the two highest expressed receptors recognize female pheromone cues. Vmn1r89, also known as V1rj2, is one of the receptors that detects female estrus signals. Vmn1r184 is one of the receptors for the female identity pheromone (Isogai et al., 2011; Haga-Yamanaka et al., 2015; Haga-Yamanaka et al., 2014). The functions of Vmn1r196, Vmn1r43, and Vmn1r37, however, are unknown. We did not detect the expression of 45 V1Rs, which may be the result of technical dropout (Figure 4E).
 
@@ -96,9 +148,17 @@ There is a high correlation among a large portion of V1Rs (Figure 4I). By analyz
 
 Different from the V1Rs, we observed islands of high similarity of TF expression among the V2Rs, indicating that receptors in these islands share the same set of TFs (Figure 4J). We identify correlation between individual TFs with V2Rs (Figure 4—figure supplement 2C). Whereas Tfap2e is involved in specifying the V2R fate, it is only associated with the expression of a subset of V2Rs. Pou2f1 and Atf5 are more strongly associated with other subsets of receptors. Unlike the V1Rs, there is a disparate set of TFs associated with the V2Rs, suggesting that the V2R choice may be determined by combinations of TFs. Based on the prevalence of individual transcription factors in association with the VRs, we propose a model of transcriptional cascade that may be involved in receptor choice (Figure 4K). For the V2Rs, Tfap2e+ cells can be further specified by Ikzf4, Tcf4, and Trps1. In Ikzf4-negative cells, Batf3, Atf5, Pbx2, and Pou2f1 can specify receptor types, respectively. In the Tfap2e- cells, receptors can be specified by Pou2f1, Rlf, and Batf3.
 
-## Co-expression of chemosensory receptors
+### Co-expression of chemosensory receptors
 
 We next investigated co-expression of receptors in individual cells. Since we applied SoupX to limit ambient RNA contamination and Scrublet to remove doublet cells, we set a stringent criterion in counting receptors expressed by single cells (Young and Behjati, 2020). V1R and V2R genes on average constitute ~2% of total reads per cell, and the ORs constitute less than 1% of the total reads per cell (Figure 5—figure supplement 1A–C). On average, the V2Rs have significantly more than one receptor per cell (Figure 5—figure supplement 1B). Using Shannon Index to measure uniqueness of receptor expression in individual cells, we found that the mature VSN and OSNs have relatively high specificity, but many cells show significantly higher index values, indicating that they expressed multiple receptors (Figure 5A). In support of this observation, there are significant representations of the second and third highest expressed receptors in all three types of neurons (Figure 5—figure supplement 1D–G).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig5-v1.jpg)
+
+**Figure 5.:** (A) Shannon Indices showing the specificity of receptor expression. High values indicate more co-expressions. (B–C) Prevalence and level of receptor co-expression by age and cell- type for the V1R (B) and V2R (C) lineages, respectively. (D–F) Circos plot of genomic loci for significantly co-expressed receptor pairs in the V1R (D) V2R, (E) and across-type populations (F). (G–K) Detection of receptor gene co-expression using Molecular Cartography. Individual dots represent single molecules. Colors represent different receptor genes. DAPI stain is shown as gray. Scale bar: 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97356/elife-97356-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A-C) Percent of all read counts from a receptor gene (A), number of receptor species present. per cell (B), and total counts from vomeronasal receptors (C), separated by cell type (Wilcoxon rank sum test, FDR ≤0.05). (D–G) Proportions of first, second, and third most expressed receptor gene as percent of total receptor counts, separated by cell type.
 
 To further reduce contributions of spurious, random low-level expression, we only consider those receptors with at least 10 raw counts per cell and are found in at least five cells to evaluate co- expression among receptors. We split cells into groups according to cell-type, age, and neuronal lineage and plot the percentage of cells expressing zero, one, two, and three or more species (Figure 5B–C). This analysis shows that receptor expression specificity increases as the lineages progressed from progenitors into mature neurons. Immature neurons have more cells co- expressing receptors than mature cells. More co-expressions are observed in the younger animals than the older ones. This line of evidence indicates that the co-expression we have found is not from experimental artifacts but reflects real biological events. Contamination would not be selectively enriched in immature cells and not present in the INP cells.
 
@@ -118,7 +178,7 @@ Given the high incidents of co-expression between receptors in the Vmn1r55-64 cl
 
 We confirmed the co-expression among genes from the V2R genes (Figure 5H; Silvotti et al., 2011; Francia et al., 2015). Consistent with previous reports (Silvotti et al., 2011; Silvotti et al., 2007), Vmn2r2, Vmn2r3, Vmn2r6, and Vmn2r7 are comingled in several cells, but Vmn2r1 is not co-expressed with these four broadly expressed V2Rs (Figure 5H). Outside of the Vmn2r1-7 group, we find that Vmn2r81 is co-expressed with Vmn2r20 or Vmn2r24 but without any of the Vmn2r1-7 transcripts (Figure 5H). We detected more incidents of co-expression between Fpr3 and Fpr-rs4, and between Fpr3, Fpr-rs3, Fpr-rs4 with V1Rs than with V2Rs (Figure 5I and J). We also found co-expressions that are not predicted by the single cell analysis (Figure 5K). The discrepancy likely can be attributed to the relatively low-level expression of one of the receptor genes. This type of co-expression may not pass the strict criteria we set for the single cell analysis.
 
-## A surface molecule code for individual receptor types
+### A surface molecule code for individual receptor types
 
 VSNs expressing a given receptor type project to the AOB to innervate glomeruli distributed in quasi-stereotypical positions (Rodriguez et al., 1999; Belluscio et al., 1999; Haga et al., 2010). The high number of glomeruli innervated by a given VSN type raises the question about mechanisms that specify the projection patterns and the connection between the VSNs and the mitral cells. For a genetically specified circuit that transmits pheromone and other information to trigger innate behavioral and endocrine responses, there must be molecules that instruct specific connections among neurons. Several studies have revealed the requirement of Kirrel2, Kirrel3, Neuropilin2 (Nrp2), Epha5, and Robo/Slit in vomeronasal axon targeting to the AOB (Brignall et al., 2018; Prince et al., 2013; Knöll et al., 2001; Walz et al., 2002; Cloutier et al., 2002; Knöll et al., 2003; Prince et al., 2009). However, how individual guidance molecules or their combinations specify connectivity of individual VSN types is completely unknown. Here, we leverage the unbiased dataset to identify surface molecules that may serve as code for circuit specification.
 
@@ -130,7 +190,7 @@ We identified 307 putative axon guidance (AG) molecules, including known cell su
 
 Based on these associations, and supported by existing literature, we propose a model of the specification of separate groups of VRs. In this model, Robo2 separates the rostral vs. caudal AOB. Robo2 +V2 R neurons project to the caudal AOB, whereas Robo2- V1R cells project to the rostral AOB (Knöll et al., 2003; Prince et al., 2009; Cloutier et al., 2004). Among V1Rs, Kirrel2 expression distinguishes between two groups of cells (Brignall et al., 2018; Wang et al., 2021). The Kirrel2 +population can be further separated into Epha5 +and Epha5- population (Prince et al., 2013; Wang et al., 2021). The Epha5 +population can be separated further by Pcdh10 expression. In the Kirrel2- cells, Epha5, Pcdh10, Tenm4, and Tenm2 mark separate groups. Ncam1, Epha5, and Cntn4 may contribute to specifying small sets of cells. For the V2Rs, Pcdh9, Cntn4, Tenm4, Tenm2, and Pcdh17 have a decreasing range of expression, which may be used to specify increasingly refined connection. Notably, even though Kirrel2 and Pcdh10 are mostly detected in the V1Rs, they are also expressed by small sets of the V2Rs.
 
-## Transcriptional regulation of receptor and axon guidance cues
+### Transcriptional regulation of receptor and axon guidance cues
 
 The specification of a vomeronasal circuit needs to be tied to receptor expression. We next address whether a transcriptional code is associated with both VR and AG molecule expression. We calculated pairwise similarity among the receptors according to their expression of TF and AG genes (Figure 7A). The result shows that V1R and V2R are distinctively separated. Besides a small group of broadly expressed V2Rs, all VR types are unique in their gene expression. Fpr types are more similar in their expression profile with the V1Rs, but the OR types are intermingled with both VR types.
 
@@ -160,102 +220,364 @@ In direct contrast, V2R VSNs likely use combinations of transcription factors to
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
 
-## Lead contact
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus; 2 females, 2 males)</td>
+      <td>C57BL/6</td>
+      <td>In-house breeding</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; 4 males, 4 females)</td>
+      <td>CD-1</td>
+      <td>In-house breeding</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM Single Cell 3’ GEM, Library and Gel Bead Kit v3.1</td>
+      <td>10 X Genomics</td>
+      <td>1000120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChromiumSingle Cell 3’ GEM, Library &amp; Gel Bead Kit v3.0</td>
+      <td>10 X Genomics</td>
+      <td>1000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNase I (RNase free)</td>
+      <td>NEB</td>
+      <td>M0303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Papain</td>
+      <td>Calbiochem</td>
+      <td>5125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>62247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>L-cysteine</td>
+      <td>Calbiochem</td>
+      <td>243005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BSA</td>
+      <td>Sigma-Aldrich</td>
+      <td>A8806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Frozen section media</td>
+      <td>Leica</td>
+      <td>3801481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DRAQ5</td>
+      <td>Invitrogen</td>
+      <td>65-0880-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HBSS</td>
+      <td>VWR</td>
+      <td>VWRL0121-0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PBS</td>
+      <td>Gibco</td>
+      <td>10010023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Urethane</td>
+      <td>Sigma-Aldrich</td>
+      <td>U2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaSeq S1</td>
+      <td>Illumina</td>
+      <td>20012865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Fiji ImageJ</td>
+      <td>Goldstein et al., 2018</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPath v0.4.3</td>
+      <td>Bankhead et al., 2017</td>
+      <td>https://qupath.github.io</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>Hao et al., 2021</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto | bustools</td>
+      <td>Melsted et al., 2019</td>
+      <td>https://www.kallistobus.tools</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DropletUtils</td>
+      <td>Lun et al., 2019</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DropletUtils.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/illustrator</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoupX</td>
+      <td>Young and Behjati, 2020</td>
+      <td>https://cran.r-project.org/web/packages/SoupX/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clustree</td>
+      <td>Zappia and Oshlack, 2018</td>
+      <td>https://cran.r-project.org/web/packages/clustree/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>Wickham et al., 2016</td>
+      <td>https://cran.r-project.org/web/packages/ggplot2/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>glmGamPoi</td>
+      <td>Ahlmann-Eltze and Huber, 2021</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/glmGamPoi.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vegan</td>
+      <td>Oksanen et al., 2019</td>
+      <td>https://cran.r-project.org/web/packages/vegan/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scrublet v0.2.3</td>
+      <td>Wolock et al., 2019</td>
+      <td>https://github.com/swolock/scrublet</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>reticulate</td>
+      <td>Ushey et al., 2017</td>
+      <td>https://cran.r-project.org/web/packages/reticulate/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneOverlap</td>
+      <td>Shen, 2019</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/GeneOverlap.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>circlize</td>
+      <td>Gu et al., 2014</td>
+      <td>https://cran.r-project.org/web/packages/circlize/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slingshot</td>
+      <td>Street et al., 2018</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/slingshot.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tradeSeq</td>
+      <td>Van den Berge et al., 2020</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/tradeSeq.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>msigdbr</td>
+      <td>Dolgalev, 2020</td>
+      <td>https://cran.r-project.org/web/packages/msigdbr/vignettes/msigdbr-intro.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fgsea</td>
+      <td>Korotkevich et al., 2021</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/fgsea.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molecular Cartography</td>
+      <td>Resolve Biosciences</td>
+      <td>https://resolvebiosciences.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by C. Ron Yu (https://www.ryu@stowers.org).
 
-## Data and code availability
+#### Data and code availability
 
 All RNA-seq data are available from the NCBI GEO server (GSE252365). All original data generated in this study will be available for download at Stowers original data repository upon publication. No custom generated computer code was used for analysis.
 
 An HTML file containing relevant figures and statistics from the study, as well as tables showing co-expression and differential expression results, can be accessed at the following URL: https://ronyulab.github.io/VNO-Atlas/.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Wildtype CD1 postnatal day 14 (P14) pups and adults (P56) were used for the experiment. Both sexes were randomly assigned to the experiment. All animals were maintained in Stowers LASF with a 14:10 light cycle and provided with food and water ad libitum. Experimental protocols were approved by the Institutional Animal Care and Use Committee (IACUC) (#2022–151) at Stowers Institute and in compliance with the NIH Guide for Care and Use of Animals.
 
-## Methods
+### Methods
 
-## scRNA library preparation and sequencing
+#### scRNA library preparation and sequencing
 
 Mice VNOs were dissected in cold oxygenated ACSF following Ma et al., 2011. Dissected epitheliums were dissociated in papain solution (20 mg/mL papain and 3 mg/mL L-cysteine in HBSS) with RNase-free DNase I (10unit) at 37 °C for 15–20 mins. 0.01% BSA in PBS was added to the digestion solution before filtering with 70 µm and 30 µm filters (pluriSelect).
 
 Dissociated cells were washed twice in 0.01% BSA with final volume 1 mL, followed by Draq5 (25 µM) and DAPI (0.5 µg/mL) staining 5 min on ice. Draq5+/DAPI- cells (live/nucleated cells) were sorted on BD Influx cytometer (BD Bioscience) with 100 µm nozzle. Dissociated sorted cells were assessed for concentration and viability via Luna-FL cell counter (Logos Biosystems). Cells deemed to be at least 90% viable were loaded on a Chromium Single Cell Controller (10 x Genomics), based on live cell concentration. Libraries were prepared using the Chromium Next GEM Single Cell 3' Reagent Kits v3.1 (10X Genomics) according to manufacturer’s directions. Resulting cDNA and short fragment libraries were checked for quality and quantity using a 2100 Bioanalyzer (Agilent Technologies) and Qubit Fluorometer (Thermo Fisher Scientific). With cells captured estimated at ~5500–8000 cells per sample, libraries were pooled and sequenced to a depth necessary to achieve at least 40,000 mean reads per cell on an Illumina NovaSeq 6000 instrument utilizing RTA and instrument software versions current at the time of processing with the following paired read lengths: 28*8*91 bp.
 
-## scRNA-Seq pre-processing and QC-filtering
+#### scRNA-Seq pre-processing and QC-filtering
 
 Gene-by-cell barcode count matrices were generated from raw FASTQ files using the kallisto|bustools (v0.48.0|v0.41.0; Bray et al., 2016; Melsted et al., 2019; Melsted et al., 2021) workflow with the Mus musculus genome assembly GRCm39 (mm39) and GTF gene annotation files retrieved from ENSEMBL release 104 (Howe et al., 2021). All downstream QC-filtering and analysis was performed in an R environment (v4.0.3) (R Development Core Team, 2013). Empty droplets were estimated and filtered from the data using the barcodeRanks function of the DropletUtils package (v1.10.3; Regev, 2019; Lun et al., 2019) with the lower bound of UMI-counts set to 100. The count data was then imported into R (v4.0.3) using the Seurat package (v4.3.0; Hao et al., 2021) and ambient RNA contamination was automatically estimated with the autoEstCont function and removed with the adjustCounts function from the SoupX package (v1.5.2; Young and Behjati, 2020). Cell barcodes representing multiplets were identified and removed with Scrublet (v0.2.3; Wolock et al., 2019) interfacing with Python using reticulate (v1.30; Ushey et al., 2017; Kevin and Tang, 2023). Cell barcodes expressing <750 genes, >2.5 standard deviations above the mean number of genes or counts, or >5% of reads originating from mitochondrial genes were removed from the downstream analysis.
 
-## scRNA-Seq integration and clustering
+#### scRNA-Seq integration and clustering
 
 To cluster cells from multiple samples, raw gene counts for each sample were normalized with the SCTransform function (v0.3.2; Hafemeister and Satija, 2019) using the glmGamPoi method from the glmGamPoi package (v1.6.0; Ahlmann-Eltze and Huber, 2021), samples were then integrated using the Seurat integration pipeline. After principal component analysis (PCA) the dimensionality of the whole integrated VNO dataset was estimated to be 25 based on visual identification of an ‘elbow’ using the output from the ElbowPlot function. The shared nearest neighbor graph was constructed with the FindNeighbors function. Then, using the FindClusters function, an optimal resolution of 0.7 was chosen for the discovery of broad cell types in the VNO by running the clustree function from the clustree package (v0.30; Zappia and Oshlack, 2018) to evaluate cluster-level mean expression for a curated list of VNO cell-type marker-genes in a range of resolutions between 0 and 1, with intervals of 0.1; optimal resolution was considered the lowest resolution at which the expression of Neurod1 and Ascl1 diverge into two clusters, as these genes are unique marker-genes for immediate neural progenitors (INPs) and GBCs respectively. At 0.7 resolution 31 clusters were observed.
 
-## Differential gene expression analysis and cell labeling
+#### Differential gene expression analysis and cell labeling
 
 Clusters were assigned to cell-types using a list of marker-genes: Omp was used to broadly mark mature neurons, Gnai2, Gng13, and Meis2 marked the V1R subtype, Gnao1, Robo2, and Tfap2e marked the V2R subtype, Gnal and Cnga2 marked OSNs, Gap43, Stmn2, Bcl11b, and Lhx2 marked immature neurons, Neurod1 and Neurog1 marked INPs, Ascl1 and Ccnd1 marked GBCs, Krt5 and Krt14 marked HBCs, Sox9 and Hepacam2 marked MVs, Fezf2 and Sox2 marked SCs, S100b and Plp1 marked OECs, Cd34 and Cdh5 marked Endothelial cells, Acta2, Col1a2, and Mgp marked LP cells, Dock2 marked immune cells, Cx3cr1 and Ctss marked Microglia, and Il7r and Trbc2 marked T-cells. First, we ran the FindAllMarkers function on the clustered normalized counts, limited to genes present in ≥50% of each cluster’s cells with an absolute value log2 fold-change ≥0.5; additionally, we ran the FeaturePlot function to plot expression of the marker-genes in 2D UMAP space. Clusters were then manually assigned to one cell-type both by visually ascertaining marker-gene expression overlap with cluster identity and by statistically validating significant marker-gene enrichment within cluster.
 
-## Neuronal lineage
+#### Neuronal lineage
 
 Cells labeled as GBC, INP, iVSN, iOSN, mVSN, mOSN, or sVSN were subset from the integrated whole VNO dataset, split by animal sample, then re-integrated and re-clustered, as described above. The FindNeighbors function was run using 12 PCs and the FindClusters function was run with a resolution of 6.0 which resulted in 84 clusters. Clusters were assigned to cell-types as described previously, while a further distinction between early and late INPs was inferred from the expression of Ascl1, Neurod1, Neurog1, and Gap43 in 2D UMAP space.
 
 Differential gene expression analysis was performed between the novel sVSN cluster and the mature V1R, V2R, and OSN clusters, independently, running the FindMarkers function with the logfc.threshold and min.pct parameters set to 0 to accommodate downstream gene set enrichment analysis (GSEA).
 
-## Gene set enrichment analysis
+#### Gene set enrichment analysis
 
 Gene ontology (GO) terms from the biological process, molecular function, and cellular compartment categories along with their associated gene sets were retrieved with the msigdbr function from the msigdbr package (v7.5.1; Dolgalev, 2020). Ranked Wald test differential expression results between sVSNs and V1R/V2R mVSNs, respectively, were input into the stats parameter of the fgsea function from the fgsea package (v1.20.0; Korotkevich et al., 2021; Subramanian et al., 2005) along with the GO term gene sets. The top significant GO terms were plotted using the ggplot function from the ggplot2 package.
 
-## Sex and age differences
+#### Sex and age differences
 
 To examine broad differences in gene expression between male and female mice and between P14 and P56 mice, we ran the FindMarkers function on the normalized count data using all cells in the neuronal lineage, all genes present in the data, and no threshold on log2 fold-change.
 
 Significant differential gene expression results (padj ≤0.05) from the male/female and the P14/P56 test were used for GSEA, and the results were plotted using the ggplot function from the ggplot2 package.
 
-## Immediate neural progenitors and immature vomeronasal sensory neurons
+#### Immediate neural progenitors and immature vomeronasal sensory neurons
 
 Cells previously identified as early and late INP, iVSN, iOSN, or mOSN, were subset from the neuronal dataset, split and reintegrated, as above, using 15 PCs and a resolution of 2.5, resulting in 30 clusters. Differential gene expression analysis was performed with the FindMarkers function between two clusters showing either V1R or V2R like properties but previously identified uniformly as early INPs in the whole neuronal lineage dataset. The FeaturePlot function, from the Seurat package, was used to show normalized expressions for genes of interest.
 
-## Trajectory inference and differential gene expression analysis
+### Trajectory inference and differential gene expression analysis
 
-## V1R/V2R lineage determination
+#### V1R/V2R lineage determination
 
 To explore transcriptional differences over pseudotime between V1R and V2R VSNs, we subset GBCs, early and late INPs, V1R and V2R iVSNs, and mVSNs from the neuronal dataset, split the data by sample and reintegrated, then performed PCA. Trajectory inference analysis was performed with the Slingshot function from the Slingshot package (v1.8.0; Street et al., 2018) using the first 12 PCs and cell type labels from the neuronal dataset, with an input starting cluster of GBCs and two input end clusters for V1R and V2R mVSNs. To determine the nknots parameter for the fitGAM function from the tradeSeq package (v1.4.0; Van den Berge et al., 2020), we ran the evaluateK function with the raw count matrix, and the pseudotime and cell weight values output from Slingshot. We then ran the fitGAM with nknots = 5. We then ran the patternTest function to test for differences in gene expression patterns over pseudotime between the V1R and V2R lineages.
 
-## Pseudotime analysis of sVSNs
+#### Pseudotime analysis of sVSNs
 
 To determine whether sVSNs represent an immature version of canonical VSNs, we performed trajectory inference analysis on the neuronal lineage with only cells belonging to the OSN lineage removed. Using the Slingshot function, we input the first 5 PCs and set the starting cluster to GBCs and three end-clusters to V1R mVSNs, V2R mVSNs, and sVSNs, respectively. Pseudotime values were assigned to cells based on their lineage membership and were subsequently plotted with the FeaturePlot function.
 
-## Gene co-expression analysis
+### Gene co-expression analysis
 
-## VR co-expression
+#### VR co-expression
 
 To investigate cell-level diversity of VR species across all cells in the neuronal dataset we calculated the Shannon diversity index for the raw gene counts for all Vmn1r, Vmn2r, Olfr, and Fpr genes using the diversity function from the vegan R package (v2.6–4) (Oksanen et al., 2019) with default parameters. To determine what proportion of cells in the neuronal lineage had one, two, or three or more receptor species, we set a threshold of ≥10 raw counts for a receptor to be considered ‘present’. To test whether co-expressing VR species were significant, using the same raw-count threshold of ≥10, we gathered a list of all cell barcodes where a receptor was observed, for all receptors. Using the lists of cell barcodes associated with the receptors, we ran the newGOM function from the GeneOverlap R package (v1.26.0; Shen, 2019), which calculates p-values using Fisher’s exact test on a contingency table. p-Values were then corrected for multiple testing using the Benjamini-Hochberg procedure.
 
 Using the circlize R package (v0.4.15; Gu et al., 2014), we plotted all co-expressed receptor pairs on circos plots showing each receptors genetic location and the number of cells expressing the pair, for all significant pairings (padj ≤0.05).
 
-## VR co-expression with axon guidance (AG) and transcription factor (TF) genes
+#### VR co-expression with axon guidance (AG) and transcription factor (TF) genes
 
 To ascertain VR co-expression with AG genes expressed at the plasma membrane, and with DNA binding TF genes, respectively, we used the Mouse Genome Informatics database to find all genes associated with the biological process gene ontology (GO) term ‘axon guidance’, or with the molecular function GO term ‘DNA-binding transcription factor activity’. For the axon guidance gene set, we subset genes that were expressed at the plasma membrane. We set the VR raw count threshold to ≥10 counts and the AG and TF gene raw count threshold to ≥3. Then, using the cell barcodes associated with each VR and the cell barcodes associated with candidate AG and TF genes, we ran the newGOM function to find significant co-expression (padj ≤0.05) for all VRxAG and VRxTF pairs.
 
-## VR-specific co-expression of AG and TF genes
+#### VR-specific co-expression of AG and TF genes
 
 To test whether AGs and TFs co-expressed for a given VR, we gathered all cell-barcodes where there was significant VRxAG or VRxTF co- expression. Then, using the same contingency table scheme as above, we looked for significant co-expression (padj ≤0.05) between all AGs and TFs previously found to co-express with a given VR.
 
-## Spatial transcriptomics
+#### Spatial transcriptomics
 
-## Samples
+##### Samples
 
 VNO tissues were dissected from 7 to 8 weeks old C57BL/6 J mice. Briefly, mice were anesthetized with urethane at a dose of 2000 mg/kg body weight. Following general anesthesia, mice heads were decapitated, and the lower jaw was removed by cutting the mandible bone with scissors. The ridged upper palate tissue was peeled off to expose the nasal cavity. A surgical blade was inserted between the two upper incisors to expose the VNO. The whole VNO was carefully extracted by holding onto the tail bone and slowly lifting it up from the nasal cavity.
 
 The dissected VNO was immediately transferred to cold 1 X PBS on ice, and subsequently embedded in frozen section media (Leica Surgipath FSC 22, Ref # 3801481) and frozen on liquid nitrogen. Frozen samples were sectioned at 10 µm thickness using the Thermo Scientific CryoStar NX70 cryostat. VNO sections were placed within capture area of cold slides that were provided by Resolve Biosciences. Slides were sent to Resolve Biosciences on dry ice for spatial transcriptomics analysis. Resolve Molecular Cartography protocols remain proprietary and were not disclosed. The probe design, tissue processing, imaging, spot segmentation, and image preprocessing were all performed using the Resolve Biosciences platform. Names and ENSEMBL IDs for genes probed are available in this study’s public repository at https://ronyulab.github.io/VNO-Atlas/.
 
-## Analysis
+##### Analysis
 
 Regions of interest in the VNO were selected on brightfield images provided by Resolve Biosciences using Fiji ImageJ (Goldstein et al., 2018). Cell segmentation on final images was performed in QuPath v0.4.3 (Bankhead et al., 2017). Detected gene transcripts were then assigned to the segmented cells, thereby creating a gene-count matrix for each sample. To predict cell types, count matrices for all samples were imported into R then normalized using the SCTransform function with the glmGamPoi method. The samples were then integrated using the Seurat integration pipeline. Both the integrated whole VNO scRNA-seq dataset and the integrated Resolve molecular cartography dataset were renormalized with SCTransform with the default method using ncells = 3000, then RunPCA was called on the renormalized data. Using the whole VNO scRNA-seq dataset as a reference and the molecular cartography dataset as a query, we ran the FindTransferAnchors function, then we ran the TransferData function to create a table of prediction score values for each cell in the spatial dataset. Cells were then labeled by type using the maximum prediction score for each cell.
 
 Images showing co-localization of VRs were obtained in ImageJ using genexyz Polylux (v1.9.0) tool plugin from Resolve Biosciences.
 
-## Region of neurogenesis
+### Region of neurogenesis
 
 To test the hypothesis that neurogenesis occurs in the marginal zone of the VNO we first set a minimum cell-type prediction-score threshold of ≥ 0.3; all cells below the threshold were labeled ‘unknown’. Then we used the simple features R package, sf (v1.0.16) to delineate regions of interest in the VNO. We excluded the non-neuronal region of the VNO from the analysis. Using the intersectional boundary between neural and non-neuronal epithelia as the center, we quantified the cells falling within a 750-pixel radius as in the marginal zones. Those fall out of the 750-pixel but within a 1500-pixel radius were quantified as in the intermediate zones. All remaining cells were classified as occurring in the ‘main zone’. Plots displaying the results were created using the function, ggplot, from the R package ggplot2 (Wickham et al., 2016).

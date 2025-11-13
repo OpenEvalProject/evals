@@ -17,7 +17,7 @@
 
 ## Abstract
 
-In Shaker K + channels, the S4-S5 linker couples the voltage sensor (VSD) and pore domain (PD). Another coupling mechanism is revealed using two W434F-containing channels: L361R:W434F and L366H:W434F. In L361R:W434F, W434F affects the L361R VSD seen as a shallower charge-voltage (Q-V) curve that crosses the conductance-voltage (G-V) curve. In L366H:W434F, L366H relieves the W434F effect converting a non-conductive channel in a conductive one. We report a chain of residues connecting the VSD (S4) to the selectivity filter (SF) in the PD of an adjacent subunit as the molecular basis for voltage sensor selectivity filter gate (VS-SF) coupling. Single alanine substitutions in this region (L409A, S411A, S412A, or F433A) are enough to disrupt the VS-SF coupling, shown by the absence of Q-V and G-V crossing in L361R:W434F mutant and by the lack of ionic conduction in the L366H:W434F mutant. This residue chain defines a new coupling between the VSD and the PD in voltage-gated channels.
+In Shaker K+ channels, the S4-S5 linker couples the voltage sensor (VSD) and pore domain (PD). Another coupling mechanism is revealed using two W434F-containing channels: L361R:W434F and L366H:W434F. In L361R:W434F, W434F affects the L361R VSD seen as a shallower charge-voltage (Q-V) curve that crosses the conductance-voltage (G-V) curve. In L366H:W434F, L366H relieves the W434F effect converting a non-conductive channel in a conductive one. We report a chain of residues connecting the VSD (S4) to the selectivity filter (SF) in the PD of an adjacent subunit as the molecular basis for voltage sensor selectivity filter gate (VS-SF) coupling. Single alanine substitutions in this region (L409A, S411A, S412A, or F433A) are enough to disrupt the VS-SF coupling, shown by the absence of Q-V and G-V crossing in L361R:W434F mutant and by the lack of ionic conduction in the L366H:W434F mutant. This residue chain defines a new coupling between the VSD and the PD in voltage-gated channels.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Here, we studied in detail the role of these residues in the coupling between th
 
 ## Results
 
-## Single alanine substitutions disrupt the VS-SF coupling in L361R:W434F channels
+### Single alanine substitutions disrupt the VS-SF coupling in L361R:W434F channels
 
 One at a time, we introduced the mutations L409A, S411A, S412A, and F433A in a Shaker-IR L361R:W434F background. Shaker-IR L361R:W434F channel studies indicate the mutation W434F actively changes VSD activation dynamics when bearing L361R mutation, evidenced by crossing Q-V and G-V curves. We found that Q-V and G-V curves do not cross each other when any of the alanine substitutions are performed in the presence of the W434F mutation (Figure 2A-F, Table 1). This indicates that the side chain volume in residues L409, S411, S412, and F433 is the base for the communication between the SF and the VSD. The Q-V curves from all mutants containing L361R were satisfactorily fitted with a two-state model equation and the best-fitted values for all curves used in this study are summarized in Table 1. A two-state model equation can satisfactory fit Q-V curves from sensors that appear to populate three or more conformational states during activation, but it does so by underestimating the total gating charges per sensor (Bezanilla and Villalba-Galea, 2013). Another possibility is that the W434F stabilizes the resting state of L361R VSD channel, affecting the VSD activation and/or deactivation, seen as a right shift in the Q-V curve. Altogether, it may be possible that channels bearing L361R mutations have more closed states than WT channels (an issue we did not pursue further in the present study).
 
@@ -47,7 +47,658 @@ One at a time, we introduced the mutations L409A, S411A, S412A, and F433A in a S
 
 **Figure 2.:** (A) Conductance-voltage (G-V) (black) and charge-voltage (Q-V) (W434F-vermilion) curves from Shaker-IR-WT channels. Note the Q-V curve is displaced to more hyperpolarized potentials with respect to the G-V curve. (B) G-V (black) and the Q-V curves (W434F-vermilion) curves from Shaker-IR-L361R:W434F channels. Note that G-V crosses Q-V (W434F-vermilion), but not the Q-V when K+ is depleted (blue). Adapted from Carvalho-de-Souza and Bezanilla, 2018. (C), (D), (E), and (F) are, respectively, G-V (black) and Q-V (W434F-vermilion) curves for Shaker-IR-L361R:L409A, Shaker-IR-L361R:S411A, Shaker-IR-L361R:S412A, and Shaker-IR-L361R:F433A channels. Note that when any of the residues L409, S411, S412, or F433 are mutated to Ala, the Q-V curve (W434F) does not cross the associated G-V curve, indicating the disruption of the VS-SF coupling. Continuous lines over Q-V and G-V curves are the best fit of Equations 4 and 2 (two-state model), except the Q-V curve for WT channels that was fitted by Equation 3 (three-state model). Best-fitted values are listed in Table 1. Plotted data are mean ± SEM (N = 4-8).
 
-## Effects by L366H mutation in S4 is consistent with a VS-SF coupling
+**Table 1.**
+ Best-fitted values for all the mutants studied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutant</th>
+      <th colspan="12">Q-V</th>
+      <th colspan="6">G-V</th>
+      <th colspan="6">Inac-V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">V0</td>
+      <td colspan="3">z0</td>
+      <td colspan="3">V1</td>
+      <td colspan="3">z1</td>
+      <td colspan="3">V1/2G</td>
+      <td colspan="3">zG</td>
+      <td colspan="3">V1/2Inac</td>
+      <td colspan="3">zInac</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−26.0</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>2.9</td>
+      <td>±</td>
+      <td>0.2</td>
+      <td>−36</td>
+      <td>±</td>
+      <td>0</td>
+      <td>4.6</td>
+      <td>±</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>W434F</td>
+      <td>−51.9</td>
+      <td>±</td>
+      <td>1.9</td>
+      <td>1.7</td>
+      <td>±</td>
+      <td>0.2</td>
+      <td>−46.5</td>
+      <td>±</td>
+      <td>1.1</td>
+      <td>3.4</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R*</td>
+      <td>−124.3</td>
+      <td>±</td>
+      <td>1.1</td>
+      <td>1.5</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−89.7</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td>2.2</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:W434F</td>
+      <td>−81.5</td>
+      <td>±</td>
+      <td>0.3</td>
+      <td>1.0</td>
+      <td>±</td>
+      <td>0.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:L409A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−69.4</td>
+      <td>±</td>
+      <td>1.1</td>
+      <td>1.8</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:L409A:W434F</td>
+      <td>−76.2</td>
+      <td>±</td>
+      <td>1.1</td>
+      <td>1.1</td>
+      <td>±</td>
+      <td>0.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:S411A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−79.2</td>
+      <td>±</td>
+      <td>1.2</td>
+      <td>1.7</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:S411A:W434F</td>
+      <td>−97.4</td>
+      <td>±</td>
+      <td>0.5</td>
+      <td>1.2</td>
+      <td>±</td>
+      <td>0.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:S412A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−76.4</td>
+      <td>±</td>
+      <td>1.0</td>
+      <td>1.8</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:S412A:W434F</td>
+      <td>−93.2</td>
+      <td>±</td>
+      <td>0.5</td>
+      <td>1.1</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>±</td>
+      <td></td>
+      <td></td>
+      <td>±</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:F433A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−50.1</td>
+      <td>±</td>
+      <td>1.0</td>
+      <td>1.6</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L361R:F433A:W434F</td>
+      <td>−89.3</td>
+      <td>±</td>
+      <td>1.7</td>
+      <td>0.9</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L366H</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−52.5</td>
+      <td>±</td>
+      <td>1.2</td>
+      <td>1.6</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L366H:W434F</td>
+      <td>−87.2</td>
+      <td>±</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−52</td>
+      <td>±</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L366H:V478W</td>
+      <td>−89.8</td>
+      <td>±</td>
+      <td>0.5</td>
+      <td>1.1</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L409A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.2</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>1.8</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−20.6</td>
+      <td>±</td>
+      <td>0.5</td>
+      <td>3.5</td>
+      <td>±</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>L409A:W434F</td>
+      <td>−62.4</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>2.2</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−36.3</td>
+      <td>±</td>
+      <td>0.2</td>
+      <td>4.2</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S411A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−11.9</td>
+      <td>±</td>
+      <td>1.0</td>
+      <td>1.9</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−28.7</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td>4.4</td>
+      <td>±</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>S411A:W434F</td>
+      <td>−67.2</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>1.7</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−44.4</td>
+      <td>±</td>
+      <td>0.4</td>
+      <td>3.1</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S412A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−20.0</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>2.5</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−28.0</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>3.9</td>
+      <td>±</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>S412A:W434F</td>
+      <td>−60.9</td>
+      <td>±</td>
+      <td>0.6</td>
+      <td>1.7</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−37.2</td>
+      <td>±</td>
+      <td>0.3</td>
+      <td>3.5</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F433A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>6.6</td>
+      <td>±</td>
+      <td>0.7</td>
+      <td>1.7</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td>−14.6</td>
+      <td>±</td>
+      <td>0.8</td>
+      <td>2.6</td>
+      <td>±</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>F433A:W434F</td>
+      <td>−44.0</td>
+      <td>±</td>
+      <td>0.3</td>
+      <td>1.8</td>
+      <td>±</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Q-V calculated by K+ depletion. Please note that L361R, L361R:W434F, L361R:S412A:W434F, L361R:F433A:W434F, L366H:W434F, L366H:V478W, L366H:S412A:W434F, and F433A:W434F, a two-state model Boltzmann equation, Equation 4, was used to fit the Q-V curves._
+
+### Effects by L366H mutation in S4 is consistent with a VS-SF coupling
 
 The single amino acid mutation L366H added to a non-conductive Shaker-IR W434F channel background (L366H:W434F) yields a conductive one. Currents recorded from L366H:W434F channels appear to be highly expressed, as they clearly show gating currents followed by a slower rising current consistent with a K+ conductance 1–2 times larger (Figure 3a–c). This is, however, a much smaller macroscopic conductance to gating currents ratio than in wild-type channels (typically two orders of magnitude or more). These data indicate that, although L366H:W434F channels are conductive, their unitary conductance and/or open probability are dramatically decreased.
 
@@ -59,7 +710,7 @@ Several features of the ionic currents carried by the L366H:W434F channels indic
 
 Moreover, G-V curves from L366H mutants in the absence and in the presence of W434F mutation have very similar voltage dependency and voltage sensitivity (Figure 3f, Table 1). This observation further reinforces the notion that the PD of L366H:W434F channels is conductive and suggests that the canonical coupling underlying channel gating seems to be unaltered in this double mutant. Q-V curves measured in L366H channels with V478W mutation, that prevents inner gate (bundle crossing) opening (Kitaguchi et al., 2004) or W434F (after conductance blockade by 4-AP), are also practically identical (Figure 3g – Table 1). This implies that the W434F mutation does not affect VSD movements in the particular case of L366H-mutant VSD.
 
-## Single alanine substitutions in the chained residues eliminate VS-SF coupling in L366H:W434F channels
+### Single alanine substitutions in the chained residues eliminate VS-SF coupling in L366H:W434F channels
 
 If L366H and W434F are interacting and this interaction is carried out by the same coupling pathway as demonstrated for L361R and W434F case (Figures 1 and 2), then the ionic K+ currents through L366H:W434F channels should be decreased to levels comparable to the W434F phenotype when a similar alanine mutation strategy is used. Consistently, mutating L409, S411, or S412 to alanine in L366H:W434F channels, the K+ currents were greatly depressed leaving only gating currents to be observed (Figure 4). Once again, the magnitude of gating current recorded attests to the high level of protein expression. Peak of ionic currents from all triple mutants were remarkably small (to ~0.3 µA at 60 mV), indicating L409, S411, and S412 are also involved in the VS-SF coupling in L366H:W434F channels. Due to low expression levels, we were unable to record gating currents from L366H:F433A:W434F triple-mutant channels.
 
@@ -67,7 +718,7 @@ If L366H and W434F are interacting and this interaction is carried out by the sa
 
 **Figure 4.:** (A) Typical currents from L366H:W434F channels elicited in symmetric 120 mM K+ solutions as indicated. (B), (C), and (D) are currents also elicited in symmetric K+ solutions for L409, S411, or S412 mutated to alanine in L366H:W434F channels, respectively. Voltage protocol used is the same shown in Figure 3a. Note that K+ currents are not present in recording shown in B, C, and D, indicating the disruption of the VS-SF coupling. (E) I-V relationship taken from the peaks of K+ currents show that when L409, S411, and S412 are mutated to Ala, the K+ currents are dramatically diminished. The small remaining current is indistinguishable from leak. Data shown as mean ± SEM (N=4).
 
-## Effects of single alanine mutations on C-type inactivation and VSD to pore conduction coupling
+### Effects of single alanine mutations on C-type inactivation and VSD to pore conduction coupling
 
 Even though alanine substitutions of amino acids within the connecting chain have been an effective strategy to delineate the VS-SF coupling, it is important to understand the functional consequences of such mutations in regular Shaker-IR-WT channels. We assessed the influence of those alanine mutations on the slow inactivation process and on Q-V and G-V curves (Figure 5). The weighted inactivation time constants (τInac) for WT, L409A, S411A, S412A, and F433A were assessed by fitting a double exponential equation to the decaying phase of K+ currents elicited by long (19 s) depolarized voltage pulses (Figure 5a–e). While the τInac was essentially identical for F433A and WT, it was considerably slower for L409A, S411A, and S412A (Figure 5f). The fraction of the fast component of the inactivation for L409A and S411A was smaller when compared to WT, but similar for S412A and F433A (Figure 5g).
 
@@ -79,13 +730,65 @@ Some of the alanine substitutions (L409A, S411A, and F433A) led to significant r
 
 Altogether, from these results we learned that, apart from F433A, alanine substitutions in the VS-SF coupling have little or no effect in the dynamics of WT VSD. Nevertheless, those same residues are crucially important for the channel VSD to pore conduction coupling. It involves both activation and inactivation processes even though the overall effects were small. Notably, the available current at very positive voltages was considerably increased when mutations S412A and F433A are present in the channels (Figure 5h,k and l), showing the importance of the residues to stabilize the inactivation conformation at the SF.
 
-## Interaction between members of the chain does not depend on W434F mutation
+### Interaction between members of the chain does not depend on W434F mutation
 
 We further explored the role of the VS-SF coupling by assessing a possible interaction between residues S411 and F433. The rationale for using those residues lays on their proximity in the protein, according to molecular models available. Another motivation to study the interaction between these two residues is that they have not been previously implicated with a noncanonical electromechanical coupling as shown for S412 (Fernández-Mariño et al., 2018). These two residues also do not affect the inactivation of the channels as W434F mutation does (Perozo et al., 1993). To record gating currents by a mechanism that does not involve the SF and W434F, we used the V478W mutation at the bundle crossing region. This mutation prevents ionic conduction (Kitaguchi et al., 2004; Pau et al., 2017) and does not affect the movement of the VSD (Kitaguchi et al., 2004). Therefore, we can assess the interaction between S411 and F433, in the absence of W434F. We used the thermodynamic mutant cycle and the generalized interaction-energy analysis to calculate this interaction (Chowdhury et al., 2014; Chowdhury and Chanda, 2012; Figure 6). This method uses the median voltage (VMedian) from the Q-V curves to estimate the free energy of activation. The VMedian values calculated are shown in Table 2. The interaction between S411 and F433 is +2.00 ± 0.76 kcal/mol and is above the cutoff value of 1.8 kcal/mol, as previously established for this kind of analysis (Chowdhury et al., 2014; Fernández-Mariño et al., 2018). Therefore, this data supports that the connecting chain operates in the WT channels, independent of the presence of W434F mutation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63077/elife-63077-fig6-v2.jpg)
 
-**Figure 6.:** (A) Q-V for Shaker-IR-V478W (black), Shaker-IR-S411A:V478W (blue), Shaker-IR-F433A:V478W (orange), and Shaker-IR-S411A:F433A:V478W (purple). (B) Diagram showing the thermodynamic mutant cycle analysis used to estimate the interaction between residues S411 and F433. The energies were calculated using the generalized interaction-energy analysis (GIA). The V and energy calculated for each channel are shown in MedianTable 2. Data shown as mean ± SEM (N=4-8).
+**Figure 6.:** (A) Q-V for Shaker-IR-V478W (black), Shaker-IR-S411A:V478W (blue), Shaker-IR-F433A:V478W (orange), and Shaker-IR-S411A:F433A:V478W (purple). (B) Diagram showing the thermodynamic mutant cycle analysis used to estimate the interaction between residues S411 and F433. The energies were calculated using the generalized interaction-energy analysis (GIA). The VMedian and energy calculated for each channel are shown in Table 2. Data shown as mean ± SEM (N=4-8).
+
+**Table 2.**
+ VMedian and the free energy for the interacting residues S411 and F433.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutant</th>
+      <th colspan="3">VMedian (mV)</th>
+      <th colspan="3">G (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>V478W</td>
+      <td>−44.29</td>
+      <td>±</td>
+      <td>1.24</td>
+      <td>−13.90</td>
+      <td>±</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>S411A:V478W</td>
+      <td>−48.54</td>
+      <td>±</td>
+      <td>1.13</td>
+      <td>−15.24</td>
+      <td>±</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>F433A:V478W</td>
+      <td>−54.34</td>
+      <td>±</td>
+      <td>1.38</td>
+      <td>−17.06</td>
+      <td>±</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>S411A:F433A:V478W</td>
+      <td>−52.21</td>
+      <td>±</td>
+      <td>1.11</td>
+      <td>−16.39</td>
+      <td>±</td>
+      <td>0.35</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -107,52 +810,162 @@ In summary, we have shown that residues L409, S411, S412, F433, and W434F compri
 
 ## Materials and methods
 
-## Site-directed mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene Drosophila melanogaster</td>
+      <td>Shaker zH4 K+ channel with Inactivation removed</td>
+      <td>Hoshi et al., 1990 doi:10.1126/science.2122519</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis, female)</td>
+      <td>Oocytes</td>
+      <td>Nasco</td>
+      <td>#LM00531</td>
+      <td>Protocol #71475 (IACUC)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminopyridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>275875–1G</td>
+      <td>1 mM in dissolved in external solution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Site-directed mutagenesis
 
 Shaker zH4 K+ channel with fast inactivation removed (Hoshi et al., 1990), ∆6–46, and cloned into pBSTA vector was used. Mutations were performed using Quick-change II technology (Stratagene, La Jolla, CA), together with custom primers from Integrated DNA Technologies (Integrated DNA Technologies, Inc, Coralville, IA). Shaker cDNA and its mutants were sequenced, linearized by endonuclease NotI (New England Biolabs, Ipswich, MA), and cleaned up with a NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel, Bethlehem, PA). In vitro transcription kits were used to transcribe cDNA and generate cRNA (T7 RNA expression kit; Ambion Invitrogen, Thermo Fisher Scientific, Waltham, MA).
 
-## Oocytes preparation
+### Oocytes preparation
 
 Oocytes were harvested from Xenopus laevis in accordance with experimental protocols #71475 approved by the University of Chicago Institutional Animal Care and Use Committee (IACUC). Following the follicular membrane digestion by collagenase, oocytes were incubated in standard oocytes solution (SOS) containing in mM: 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 0.1 EDTA, 10 HEPES, and pH set to 7.4 with NaOH. SOS was supplemented with 50 µg/ml gentamycin to avoid contamination during incubation. After 6-24 hr of harvesting, defolliculated oocytes stage V-VI were injected with cRNA (5-100 ng diluted in 50 nl of RNAse free water) and incubated for 1-3 days at 12°C or 18°C prior to recording.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Ionic and gating currents were recorded using cut-open oocyte voltage-clamp method (Stefani and Bezanilla, 1998). Voltage-measuring pipettes were pulled using a horizontal puller (P-87 Model, Sutter Instruments, Novato, CA) to a tip resistance ranging from 0.2 to 0.5 MΩ. Currents were acquired by a setup comprising a Dagan CA-1B amplifier (Dagan, Minneapolis, MN) with a built-in low-pass four-pole Bessel filter for a cutoff frequency of 20–50 kHz. Using a 16-bit A/D converter (USB-1604, Measurement Computing, Norton, MA) for acquisition and controlled by an in-house software (GPatch64MC), data were sampled at 1 MHz, digitally filtered at Nyquist frequency and decimated for a storage acquisition rate of 50–200 kHz. Capacitive transient currents were compensated using a dedicated circuit. The voltage clamp was also controlled using the same in-house software and the 16-bit D/A converter of the same USB-1604 device.
 
 For ionic current measurements, the external solution was composed by (mM): K-methanesulfonic acid (MES) 12, Ca-MES 2, HEPES 10, EDTA 0.1, N-methyl-D-glucamine (NMDG)-MES 108, pH 7.4. For 120 mM external K+ solution, we replace NMDG with K+. The cut-open oocyte internal solution was composed by (mM): K-MES 120, EGTA 2, HEPES 10, pH 7.4. For gating current recordings, we replaced K+ by NMDG in both internal and external solutions. A conditioning hyperpolarized pre-pulse was used with different voltages to ensure that most of the channels were closed prior to the depolarizing pulses. The holding potential was set to −80 or −100 mV according to the mutant. Recordings were performed at room temperature (~17–18°C). All chemicals used were purchased from Sigma-Aldrich (St. Louis, MO).
 
-## Data analysis
+### Data analysis
 
-The peaks of macroscopic K+ currents were converted into conductance (G), using the equation below:(1)G=ImVm−RTFln⁡([K+]out[K+]in) where Im is the K+ current, Vm is the membrane voltage, R is the gas constant, T is the temperature in Kelvin, F is the Faraday constant. Kin and Kout are the intracellular and extracellular K+ concentrations, respectively.
+The peaks of macroscopic K+ currents were converted into conductance ($G$), using the equation below:
 
-Each G value was normalized by the maximum G of the experiment for averaging among experiments and plotting against Vm in order to obtain a G-V curve. The G-V curves were fitted using a two-state model with the following equation:(2)G(Vm)=11+exp⁡(zGFRT(V1/2−Vm) ),where zG is the apparent charge of the transition expressed in units of elementary charge (e0) and V1/2 is the voltage for 50% of the maximal conductance.
+$$
+G=\frac{I_{m}}{V_{m}−\frac{RT}{F}ln⁡(\frac{[K^{+}]_{out}}{[K^{+}]_{in}}) }
+$$
 
-The charge (Q) was calculated from the integral in time of the gating currents. They were normalized, averaged, and plotted against Vm to generate a Q-V curve. The Q-V curves were fitted using a three-state model (Lacroix et al., 2012):(3)Q(Vm)=N z1+z0(1+exp⁡(z1FRT(V1−Vm) ))1+exp⁡(z1FRT(V1−Vm) ) (1+exp⁡(z0FRT(V0−Vm) ) ) .where N is proportional to the number of VSDs, z0 and z1 are apparent charges for the first and the second lumped sequential transitions of the VSD movement, respectively, V0 and V1 are the membrane voltages that split the VSD into two states equally during the first and second transitions, respectively.
+where $I_{m}$ is the K+ current, $V_{m}$ is the membrane voltage, $R$ is the gas constant, $T$ is the temperature in Kelvin, $F$ is the Faraday constant. $K_{in}$ and $K_{out}$ are the intracellular and extracellular K+ concentrations, respectively.
 
-In some cases, a two-state model was used to best fit the Q-V curves, as shown below:(4)Q(Vm)=11+exp⁡(zqFRT(V1/2−Vm) ),where zG is the apparent charge of the transition expressed in units of elementary charge (e0) and V1/2 is the voltage for 50% of the maximal charge.
+Each $G$ value was normalized by the maximum $G$ of the experiment for averaging among experiments and plotting against $V_{m}$ in order to obtain a G-V curve. The G-V curves were fitted using a two-state model with the following equation:
 
-Inactivation time constants were taken from the decaying phase of K+ currents after sustained activation by depolarizing voltage pulses. They were fitted using a double exponential shown below:(5)y(t)=y0−A1exp⁡(−tτ1)− A2exp⁡(−tτ2).where A1 and A2 are the amplitudes from the first and the second exponential, respectively, τ1 and τ2 are the time constants for the first and second exponentials, respectively, and y0 is a baseline adjustment.
+$$
+G(V_{m})=\frac{1}{1+exp⁡(\frac{z_{G}F}{RT}(V_{1/2}−V_{m}) )},
+$$
 
-For simplicity and analysis purposes, we considered a weighted time constant, calculated by the following equation:(6)τw=A1 τ1+A2τ2A1+A2where τw is the weighted time constant.
+where $z_{G}$ is the apparent charge of the transition expressed in units of elementary charge ($e_{0}$) and $V_{1/2}$ is the voltage for 50% of the maximal conductance.
 
-In order to build Inac-voltage (Inac-V) curves for each mutant, the peak K+ currents from five to eight oocytes were taken from the test pulse as shown in Figure 5A. They were normalized by their maxima, averaged and plotted against Vm. A two-state model was used to fit the Inac-V curves by the equation below:(7)Inac(Vm)=A2+A1−A21+exp⁡(zInacFRT(V1/2Inac−Vm) ),where zInac is the apparent charge of the transition expressed in units of elementary charge (e0) and V1/2Inac is the voltage dependence of the inactivation process. A1 and A2 are the minimum and the maximum value from the data, respectively.
+The charge ($Q$) was calculated from the integral in time of the gating currents. They were normalized, averaged, and plotted against $V_{m}$ to generate a Q-V curve. The Q-V curves were fitted using a three-state model (Lacroix et al., 2012):
 
-We calculated the free energy (Gprocess) of the studied processes (second component of charge movement [Q2], conductance activation [G], and inactivation [Inac]) by using V1/2Process and zProcess from the Q-V, G-V, and Inac curves. We used the following equation to calculate the free energies:(8)GProcess=zProcessFVProcess.where Gprocess is the free energy involved in the process, zprocess is the apparent charge involved in the process, F is the Faraday constant, and Vprocess is the voltage necessary to complete half of the total process (the V1/2).
+$$
+Q(V_{m})=N \frac{z_{1}+z_{0}(1+exp⁡(\frac{z_{1}F}{RT}(V_{1}−V_{m}) ))}{1+exp⁡(\frac{z_{1}F}{RT}(V_{1}−V_{m}) ) (1+exp⁡(\frac{z_{0}F}{RT}(V_{0}−V_{m}) ) ) }.
+$$
 
-The shift EProcess of the studied process was calculated using the following equation:(9)ShiftEProcess=GMutant−GWT.
+where $N$ is proportional to the number of VSDs, $z_{0}$ and $z_{1}$ are apparent charges for the first and the second lumped sequential transitions of the VSD movement, respectively, $V_{0}$ and $V_{1}$ are the membrane voltages that split the VSD into two states equally during the first and second transitions, respectively.
 
-The standard error (SE) associated to the energies were calculated using the following equation:(10)δShiftEProcess=F(δzProcessV1/2Process)2+ (δV1/2ProcesszProcess)2.
+In some cases, a two-state model was used to best fit the Q-V curves, as shown below:
 
-To test the interaction between two residues, we used the thermodynamic mutant cycle, calculating the free energy using the generalized interaction-energy analysis that uses the VMedian  from the Q–V curves (Chowdhury and Chanda, 2012; Chowdhury et al., 2014). The free energy of activation (G) for a channel is calculated using the equation:(11)G=zFVMedian
+$$
+Q(V_{m})=\frac{1}{1+exp⁡(\frac{z_{q}F}{RT}(V_{1/2}−V_{m}) )},
+$$
 
-The uncertainty associated in G (δG) is:(12)(δG)=zFδVMedian
+where $z_{G}$ is the apparent charge of the transition expressed in units of elementary charge ($e_{0}$) and $V_{1/2}$ is the voltage for 50% of the maximal charge.
+
+Inactivation time constants were taken from the decaying phase of K+ currents after sustained activation by depolarizing voltage pulses. They were fitted using a double exponential shown below:
+
+$$
+y(t)=y_{0}−A_{1}exp⁡(−\frac{t}{\tau_{1}})− A_{2}exp⁡(−\frac{t}{\tau_{2}}).
+$$
+
+where $A_{1}$ and $A_{2}$ are the amplitudes from the first and the second exponential, respectively, $\tau_{1}$ and $\tau_{2}$ are the time constants for the first and second exponentials, respectively, and $y_{0}$ is a baseline adjustment.
+
+For simplicity and analysis purposes, we considered a weighted time constant, calculated by the following equation:
+
+$$
+\tau_{w}=\frac{A_{1} \tau_{1}+A_{2}\tau_{2}}{A_{1}+A_{2}}
+$$
+
+where $\tau_{w}$ is the weighted time constant.
+
+In order to build Inac-voltage (Inac-V) curves for each mutant, the peak K+ currents from five to eight oocytes were taken from the test pulse as shown in Figure 5A. They were normalized by their maxima, averaged and plotted against $V_{m}$. A two-state model was used to fit the Inac-V curves by the equation below:
+
+$$
+Inac(V_{m})=A_{2}+\frac{A_{1}−A_{2}}{1+exp⁡(\frac{z_{Inac}F}{RT}(V_{1/2Inac}−V_{m}) )},
+$$
+
+where $z_{Inac}$ is the apparent charge of the transition expressed in units of elementary charge ($e_{0}$) and $V_{1/2Inac}$ is the voltage dependence of the inactivation process. A1 and A2 are the minimum and the maximum value from the data, respectively.
+
+We calculated the free energy ($G_{process}$) of the studied processes (second component of charge movement [Q2], conductance activation [G], and inactivation [Inac]) by using $V_{1/2Process}$ and $z_{Process}$ from the Q-V, G-V, and Inac curves. We used the following equation to calculate the free energies:
+
+$$
+G_{Process}=z_{Process}FV_{Process}.
+$$
+
+where Gprocess is the free energy involved in the process, zprocess is the apparent charge involved in the process, F is the Faraday constant, and Vprocess is the voltage necessary to complete half of the total process (the V1/2).
+
+The shift $E_{Process}$ of the studied process was calculated using the following equation:
+
+$$
+ShiftE_{Process}=G_{Mutant}−G_{WT}.
+$$
+
+The standard error (SE) associated to the energies were calculated using the following equation:
+
+$$
+\deltaShiftE_{Process}=F\sqrt{(\deltaz_{Process}V_{1/2Process})^{2}+ (\deltaV_{1/2Process}z_{Process})^{2}}.
+$$
+
+To test the interaction between two residues, we used the thermodynamic mutant cycle, calculating the free energy using the generalized interaction-energy analysis that uses the $V_{Median}$ from the Q–V curves (Chowdhury and Chanda, 2012; Chowdhury et al., 2014). The free energy of activation (G) for a channel is calculated using the equation:
+
+$$
+G=zFV_{Median}
+$$
+
+The uncertainty associated in G (δG) is:
+
+$$
+(\deltaG)=zF\deltaV_{Median}
+$$
 
 The number of charges (z) was considered the same for all channels: 13.6 elementary charges (Schoppa et al., 1992; Aggarwal and MacKinnon, 1996; Seoh et al., 1996).
 
-The interaction free energy between residues S411 and F433 is:(13)ΔΔGS411:F433=(GS411A:F433A:V478W−GV478W)−[(GS411A:V478W−GV478W)+(GF433A:V478W−GV478W)]
+The interaction free energy between residues S411 and F433 is:
 
-The subscripts refer to channel used to calculate the free energy. The uncertainty associated to ∆∆GS411:F433δ∆∆GS411:F433 is given by:(14)δΔΔGS411:F433=δVMedianV478W2+δVMedianS411A:V478W2+δVMedianF433A:V478W2+δVMedianS411A:F433A:V478W2.
+$$
+ΔΔG_{S411:F433}=(G_{S411A:F433A:V478W}−G_{V478W})−[(G_{S411A:V478W}−G_{V478W})+(G_{F433A:V478W}−G_{V478W})]
+$$
 
-ΔVMedianV478W, δVMedianS411A, δVMedianF433A, and δVMedianS411A:F433A are, respectively, the standard error of the mean associated with the measurement of VMedian  for V478W, S411A:V478W, F433A:V478W, and S411A:F433A:V478W channels.
+The subscripts refer to channel used to calculate the free energy. The uncertainty associated to $\Delta\DeltaG_{S411:F433}$$\delta\Delta\DeltaG_{S411:F433}$ is given by:
+
+$$
+\deltaΔΔG_{S411:F433}=\sqrt{\deltaV_{MedianV478W}^{2}+\deltaV_{MedianS411A:V478W}^{2}+\deltaV_{MedianF433A:V478W}^{2}+\deltaV_{MedianS411A:F433A:V478W}^{2}}.
+$$
+
+$ΔV_{MedianV478W}$, $\deltaV_{MedianS411A}$, $\deltaV_{MedianF433A}$, and $\deltaV_{MedianS411A:F433A}$ are, respectively, the standard error of the mean associated with the measurement of $V_{Median}$ for V478W, S411A:V478W, F433A:V478W, and S411A:F433A:V478W channels.
 
 Matlab (The MathWorks, Inc, Natick, MA) and Origin9.0 (Origin Lab Corporation, Northampton, MA) were used for calculating G-Vs, Q-Vs, plotting and fitting the data. Data is shown as mean ± SEM.

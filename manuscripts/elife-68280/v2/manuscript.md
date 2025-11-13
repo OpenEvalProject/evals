@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Retinoic acid (RA) is an essential signaling molecule for cardiac development and plays a protective role in the heart after myocardial infarction (MI). In both cases, the effect of RA signaling on cardiomyocytes, the principle cell type of the heart, has been reported to be indirect. Here we have developed an inducible murine transgenic RA-reporter line using CreER T2 technology that permits lineage tracing of RA-responsive cells and faithfully recapitulates endogenous RA activity in multiple organs during embryonic development. Strikingly, we have observed a direct RA response in cardiomyocytes during mid-late gestation and after MI. Ablation of RA signaling through deletion of the Aldh1a1/a2/a3 genes encoding RA-synthesizing enzymes leads to increased cardiomyocyte apoptosis in adults subjected to MI. RNA sequencing analysis reveals Tgm2 and Ace1, two genes with well-established links to cardiac repair , as potential targets of RA signaling in primary cardiomyocytes, thereby providing novel links between the RA pathway and heart disease.
+Retinoic acid (RA) is an essential signaling molecule for cardiac development and plays a protective role in the heart after myocardial infarction (MI). In both cases, the effect of RA signaling on cardiomyocytes, the principle cell type of the heart, has been reported to be indirect. Here we have developed an inducible murine transgenic RA-reporter line using CreERT2 technology that permits lineage tracing of RA-responsive cells and faithfully recapitulates endogenous RA activity in multiple organs during embryonic development. Strikingly, we have observed a direct RA response in cardiomyocytes during mid-late gestation and after MI. Ablation of RA signaling through deletion of the Aldh1a1/a2/a3 genes encoding RA-synthesizing enzymes leads to increased cardiomyocyte apoptosis in adults subjected to MI. RNA sequencing analysis reveals Tgm2 and Ace1, two genes with well-established links to cardiac repair, as potential targets of RA signaling in primary cardiomyocytes, thereby providing novel links between the RA pathway and heart disease.
 
 ## Introduction
 
@@ -40,15 +40,35 @@ Here, we have developed a novel RA reporter line using CreERT2 technology (RAREC
 
 ## Results
 
-## A novel RARECreERT2 line recapitulates endogenous RA signaling in developing mouse embryos
+### A novel RARECreERT2 line recapitulates endogenous RA signaling in developing mouse embryos
 
 The RA signaling pathway is extremely dynamic, acting on various tissues at different stages of embryonic development (Duester, 2008; Niederreither and Dollé, 2008). In order to better understand the timing and identity of the cell types responding to RA, we developed a novel tamoxifen-inducible RA reporter line using CreERT2 technology (Figure 1A, schematic). Previous work has shown that RA signaling, activated by expression of Aldh1a2 in caudal regions of the embryo, is first detected around E7.5 (Rossant et al., 1991, Ang et al., 1996). To see if we could detect this early RA activity, we crossed our line with the Gt(ROSA)26Sortm1Sor reporter line (referred to as R26L) (Soriano, 1999) and administered tamoxifen (TAM) one day earlier, at E6.5, to account for tamoxifen processing and eventual reporter activation (Figure 1A–B). Strikingly, analysis of embryos at E9.5 via whole-mount X-gal staining demonstrated high reporter activity up to posterior hindbrain/pharyngeal regions of the embryo (Figure 1B, left panel). Administration of tamoxifen at E7.5 followed by analysis at E10.5 revealed a similar pattern of staining, as well as efficient labeling of the developing limbs (Figure 1B, right panel). The X-gal staining at both time-points closely matched the staining pattern observed with other RARE reporter lines such as the RARE-LacZ and RARE-Cre, and is consistent with the conserved roles of RA signaling role in embryo posteriorization, and limb bud formation (Rossant et al., 1991; Dollé et al., 2010; Durston et al., 1989; Sive et al., 1990; Stratford et al., 1999; Niederreither et al., 2002b). However, we detected very few X-gal+ cells in the forebrains of our RARECreERT2 embryos, a known site of RA activity (Rossant et al., 1991; Dollé et al., 2010; Ribes et al., 2006). To address this issue, we crossed our line with the Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo reporter line (referred to as mTmG) (Muzumdar et al., 2007), which expresses GFP protein upon Cre recombination and is more sensitive than the R26L line. Whole mount GFP immunofluorescence (IF) of embryos induced at E7.5 and sacrificed at E10.5 revealed efficient labeling of the forebrain (Figure 1C and Video 1). To examine the full spectrum of the RA response detected with the RARECreERT2 line, we repeated the lineage-tracing experiments with two pulses of tamoxifen at E7.5 and E8.5 to improve the overall recombination efficiency, and then analyzed embryos at E11.5, when most organs are further developed. Analysis of whole embryo sections by GFP IF revealed efficient and consistent labeling of various well-known RA-responsive organs such as the lungs (Malpel et al., 2000), liver (Brade et al., 2011), spinal cord (Sockanathan and Jessell, 1998), heart (Niederreither et al., 2001; Niederreither et al., 2002a), and differentiating somites (Rossant et al., 1991; Niederreither et al., 1999; Diez del Corral et al., 2003; Duester, 2007) in all embryos analyzed (Figure 1D). Somite-specific labeling, as revealed by co-IF for MyoD and GFP, was also detected with a single pulse at E8.5 followed by analysis at E11.5 (Figure 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme illustrating the strategy used to test the novel RARECreERT2 line during various stages of embryonic development. The RARECreERT2 line was crossed with the Rosa26LacZ (R26L) or the membrane targeted tandem dimer Tomato membrane targeted green fluorescent protein (mTmG) reporter lines and recombination was induced via tamoxifen (TAM) administration at multiple time-points. Gray arrowheads represent loxP sites. (B) Whole-mount X-gal staining of RARECreERT2 R26L embryos induced at embryonic day 6.5 (E6.5) or E7.5 followed by respective analyses at E9.5 or E10.5 demonstrates efficient labeling with the lacZ reporter. Notice the labeling of the forelimbs (Li) with the E7.5 pulse. (C) Whole-mount GFP IF of RARECreERT2 embryos crossed with the mTmG reporter, pulsed with tamoxifen at E7.5 and sacrificed at E10.5 reveals specific forebrain (Fo) labeling. (D) GFP IF on sagittal sections of E11.5 embryos pulsed with tamoxifen at E7.5 and E8.5. Labeling is detected in various organs and tissues with well described RA activity such as the heart (He), spinal cord (SC), hepatic primordium (HP), lung bud (LB), and developing somites (So). Heads were removed for analysis. (E) Co-IF with GFP and Myoblast determination protein (MYOD) antibodies reveals RA-responsive cells in developing somites when pulsed at E8.5 and analyzed at E11.5. (F) Embryos pulsed with tamoxifen at E7.5 and E8.5 and analyzed at E11.5 display efficient labeling of the neural retina (NR), lens (L) and retinal pigment epithelium (RPE) of the eye as determined by GFP IF. Data information: For all experiments, n = 3 embryos were analyzed and representative embryos shown. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) GFP IF on a RARECreERT2; mTmG embryo pulsed with tamoxifen at E8.5 and sacrificed at E11.5 reveals partial labeling of the neural retina (NR), lens (L) and retinal pigment epithelium (RPE) cells in the developing eye (n = 3 embryos analyzed). (B) Whole-mount X-gal staining of a RARECreERT2; R26L embryo pulsed at E8.5 and sacrificed at E10.5 reveals minor labeling of segments of the forebrain (Fo), heart (He) and somites (So) (n = 3 embryos analyzed). (C) GFP IF on a sagittal section of a RARECreERT2; mTmG embryo pulsed at E8.5 and analyzed at E11.5. Recombination is detected in the forebrain, heart, and a subset of somites (n = 3 embryos analyzed). (D) Light sheet microscopy (maximal projection) of a GFP immunostained RARECreERT2; mTmG embryo pulsed at E10.5 and analyzed at E12.5 (Scale bar 1000 µm) (n = 1 embryo analyzed).
+
+![Video 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-video1.mp4.jpg)
+
+**Video 1.:** Wholemount IF for GFP (green) and Gata binding protein 4 (Gata4)(purple) on E10.5 RARECreERT2; mTmG embryos injected with tamoxifen at E7.5.
+
 Another organ with a very well-characterized RA response is the eye. Aldh1a2 is detected in the optic vesicle as early as E8.5, where it is required for the transition from optic vesicle to optic cup (Niederreither et al., 1997; Wagner et al., 2000; Mic et al., 2004). As development proceeds, Aldh1a1 expression in the dorsal retina and Aldh1a3 expression in the surface ectoderm, lens placode, retinal pigment epithelium and, later, the ventral retina, continue to activate RA signaling in the eye (Matt et al., 2005; Dupé et al., 2003; McCaffery et al., 1991; Mic et al., 2000). Analysis of RARECreERT2 embryos pulsed with tamoxifen at E7.5 and E8.5 and analyzed at E11.5 revealed efficient GFP labeling of the lens placode, neural retina, and prospective retinal pigment epithelium cells, consistent with previously published data (Figure 1F; Mic et al., 2004). Embryos pulsed at E8.5 and analyzed at E11.5 also displayed labeling in the eye, although at a lower frequency (Figure 1—figure supplement 1A). These results are consistent with the fact that RA activity in the eye is continuous during initial stages of its development, since multiple pulses of tamoxifen lead to more efficient labeling when compared to only one shot of tamoxifen. Analysis of embryos pulsed at E8.5 and analyzed either at E10.5 (R26L) or E11.5 (mTmG) revealed labeling in the eyes, forebrain, heart, and somites, but the overall labeling efficiency was decreased when compared to earlier time-points (Figure 1—figure supplement 1B-C). Tamoxifen administration at E10.5 followed by light sheet microscopy analysis of whole embryos at E12.5 revealed a similar GFP labeling pattern as the E8.5 pulses (Figure 1—figure supplement 1D). In summary, the RARECreERT2 line efficiently labels organs and tissues with well described RA activity in a highly dynamic fashion, and its labeling efficiency peaks during early stages of embryogenesis.
 
-## Cardiomyocytes are highly responsive to RA signaling during embryonic development
+### Cardiomyocytes are highly responsive to RA signaling during embryonic development
 
 RA signaling is essential for cardiac formation and displays unique spatiotemporal patterns of activity in the heart (Ryckebusch et al., 2008; Xavier-Neto et al., 2015; Nakajima, 2019). During early stages of cardiac development, RA signaling is active in the venous pole of the heart. At later time-points, RA activity relocates to the heart’s outer layer, otherwise known as the epicardium (Moss et al., 1998; Xavier-Neto et al., 2000). A closer look at the hearts of E9.5 RARECreERT2 embryos stained with X-gal after TAM treatment at E6.5 revealed specific labeling of the venous pole derivatives (atria and outflow tract) (Figure 2A and Figure 2—figure supplement 1A), and minimal labeling of the developing ventricles, faithfully recapitulating the pattern observed with other RA reporters (Rossant et al., 1991; Dollé et al., 2010). Meanwhile, embryos pulsed with tamoxifen at E10.5 and analyzed at E13.5 exhibited very strong labeling of the heart ventricles with almost no labeling of the atria and outflow tract (Figure 2B), once again consistent with previously published data (Moss et al., 1998). Interestingly, analysis of E13.5 heart sections counterstained with eosin revealed the majority of the X-gal labeling to be within the myocardial wall of the heart and not the epicardium (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig2-v2.jpg)
+
+**Figure 2.:** (A) Whole-mount X-gal staining of RARECreERT2 embryos pulsed with tamoxifen at E6.5 and sacrificed at E9.5 reveals strong labeling of venous pole derivatives of the heart (outflow tract (OFT) and atria (AT)). Minimal labeling is detected in the right ventricle (RV) and left ventricle (LV) of hearts (n = 2 embryos analyzed). (B) Whole-mount X-gal staining of embryos pulsed with tamoxifen at E10.5 and sacrificed at E13.5 reveals strong ventral (v) and dorsal (d) labeling of the heart ventricles with minimal labeling of the atria and outflow tract (n = 2 embryos analyzed). (C) Administration of tamoxifen (TAM) at E9.5 to RARECreERT2; mTmG embryos followed by analysis at E11.5 reveals specific labeling of the epicardium (GFP+WT1+ cells) and myocardium (GFP+MF20+ cells) in developing hearts (n = 3 embryos analyzed). (D) Tamoxifen administration at E10.5 followed by analysis at E13.5 reveals strong labeling of the compact myocardium (C) and minor labeling of the trabecular layer (T) in developing hearts. Minimal labeling of the epicardium (WT1+ cells, inset) is detected at this time-point. Insets shown are from right ventricle of representative heart (n = 3 embryos analyzed). (E) Exogenous supplementation of all-trans Retinoic acid (RA) (10 mg/kg) to pregnant dams 4 hr prior to tamoxifen induction leads to increased labeling of the trabecular myocardium and epicardium (WT1+ cells, inset) in developing hearts at E13.5 when compared to non-RA-treated embryos in (D) (n = 3 embryos analyzed). (F) Supplementation of the RAR reverse agonist BMS493 (5 mg/kg) to pregnant dams 4 hr before and 4 hr after tamoxifen induction (extra two doses given in 8 hour interval 1 day after TAM induction) drastically reduces the number of GFP+ cells in RARECreERT2 hearts (n = 3 embryos analyzed). (G) Schematic illustrating strategy for isolating primary cardiomyocytes (CMs) from hearts of E18.5 RARECreERT2; mTmG embryos followed by 48 hr treatment with 1 µM RA. (H) RARECreERT2; mTmG primary cardiomyocytes respond directly to RA treatment as demonstrated by co-IF for GFP and Troponin T. No GFP staining is detected in DMSO-treated control (CTL) cells. (I) Dose-response relationship of primary cardiomyocytes to RA. Cells were isolated form neonatal RARECreERT2; mTmG hearts using the neonatal cardiomyocyte isolation kit (Miltenyi) and treated for 48 hr with varying doses of RA. Each data point represents the percentage of GFP+ cells from a single well. Columns are means ± SEM (at least nine technical replicates per treatment). See also Figure 2—source data 1. Data information: WT1 = Wilms’ tumour protein, TRO = Troponin T, MF20 = Myosin heavy chain. Scale bars mosaics: 100 µM, Close ups: 40 µM. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) X-gal and Eosin staining on sections of a RARECreERT2; R26L heart pulsed at E6.5 and sacrificed at E9.5 (from wholemount stainings in Figure 1). (B) X-gal and Eosin staining on sections of a RARECreERT2; R26L heart pulsed at E10.5 and sacrificed at E13.5 (from wholemount stainings in Figure 1). (C) qPCR analysis of primary cardiomyocytes isolated from E18.5 RARECreERT2; mTmG hearts and treated with 1 µM RA reveals upregulation of RA transcriptional targets (Rarb, Rbp1, Cyp2a1). Data are expressed as fold change vs. controls and columns are means ± SEM (n = 3 technical replicates). (D) Forty-eight hours treatment with increasing doses of RA on primary cardiomyocytes isolated from E18.5 RARECreERT2; mTmG hearts followed by Tomato (not activated RA) and GFP (activated by RA) analysis. Higher doses of RA lead to increased numbers of GFP+ cells. GFP+ cells can be detected with very low doses of RA (0.1 nM) (white arrow). Cardiomyocytes were isolated using the neonatal cardiomyocyte isolation kit (Miltenyi). (E) Administration of tamoxifen at E10.5 to embryos from a second RARECreERT2 line (line B) crossed with the mTmG line demonstrates a strong GFP response in the compact myocardium when analyzed at E14.5 (n = 3 embryos analyzed). Scale bars mosaic: 100 µM, close up 40 µm. Data information: AVC = atrioventricular canal, OFT = outflow tract, My = myocardium, Ep = epicardium, TOM = Tomato, TRO = Troponin T. p = 0.0047 (C, Rarb), p = 0.034 (C, Rbp1), p = 0.032 (C, Cyp26a1).
 
 To more precisely determine the cell-types labeled by the RARECreERT2 line during mid stages of gestation, we conducted lineage tracing experiments with the mTmG reporter allele, and then performed co-IF with GFP and epicardial (WT1 (Wilms’ tumour protein)) or myocardial (MF20 (myosin heavy chain))-specific antibodies. Administration of tamoxifen at E9.5 followed by analysis at E11.5 revealed GFP localization in both WT1+ and MF20+ cells (Figure 2C). Meanwhile, tamoxifen administration at E10.5 followed by analysis at E13.5 revealed high labeling of MF20+ cardiomyocytes, but only minor labeling of WT1+ epicardial cells (Figure 2D). The cardiomyocyte-specific labeling was highest in the compact layer, with minimal GFP+ cells observed in trabecular cardiomyocytes (Figure 2D, left panel). Taken together, these data demonstrate that as heart development proceeds, cardiomyocyte precursors of the compact layer increasingly become the major RA-responsive cell-type.
 
@@ -58,7 +78,7 @@ To better characterize the dynamics of RA signaling in cardiomyocytes, we perfor
 
 Finally, to ensure the in vivo cardiomyocyte response was not an artefact of our transgenic line, we performed lineage-tracing experiments with a second RARECreERT2 line (Line B). Administration of tamoxifen at E10.5 followed by analysis at E14.5 revealed a nearly identical pattern of GFP staining in the compact myocardium when compared to our original line (Figure 2—figure supplement 1E). Altogether, these data demonstrate that the cardiomyocyte-specific labeling observed with the RARECreERT2 line is a reliable response that can be influenced by exogenous activation or inactivation of the RA pathway.
 
-## Cardiomyocyte-specific RA signaling is active during late stages of heart development
+### Cardiomyocyte-specific RA signaling is active during late stages of heart development
 
 Although the role of RA signaling during heart looping and myocardial compaction is well described, it is unclear whether retinoids continue to play an important role after E13.5 (Zaffran et al., 2014). We next decided to look at later time-points of heart development by administering tamoxifen at E14.5 and sacrificing embryos at E18.5. Strikingly, we observed a high number of GFP+ cells, mainly cardiomyocytes (Figure 3A). We also noticed that many of the labeled cells were located deep within the compact layer (Figure 3A, white arrows), a striking observation given that at these time-points ALDH1A2 protein is believed to be restricted to the epicardium (Moss et al., 1998). To see if this deep labeling was simply due to clonal expansion of cardiomyocytes located near the epicardium, we traced cells for a shorter period of time by giving a pulse at E15.5 and analyzing at E17.5. Once again, we observed cardiomyocyte-specific labeling, both near the epicardium as well as deeper within the myocardial wall (Figure 3B). Many of the GFP+ cardiomyocytes located away from the epicardium were separated from other cells (Figure 3B, white arrows), suggesting their response arises from a local source of RA, independently of the epicardium.
 
@@ -68,25 +88,53 @@ Although the role of RA signaling during heart looping and myocardial compaction
 
 During cardiac formation, ALDH1A2 is the main enzyme responsible for RA synthesis and its loss of function leads to cardiac defects at both early and mid-stages of development (Niederreither et al., 2001; Lin et al., 2010; Braitsch et al., 2012). Whether or not ALDH1A2 has a role at later time-points is unknown since full Aldh1a2-null embryos as well as Aldh1a2-null embryos rescued by a short-term RA supplementation die at E9.5 and E13.5, respectively (Niederreither et al., 2001; Lin et al., 2010). To see if the RA response detected after E13.5 was linked to Aldh1a2 expression, we performed IF with an anti-ALDH1A2 antibody at various stages of gestation. At E12.5 ALDH1A2 was, as previously shown, restricted to the epicardium. After E14.5, however, ALDH1A2 could be detected within the ventricular and interventricular walls. This expression pattern increased at later time-points, peaking at E18.5 (Figure 3C). To determine which cell-types were positive for ALDH1A2 we performed co-IF with various antibodies. No co-IF of ALDH1A2 with cardiomyocyte (MF20) (data not shown), smooth muscle (Transgelin) (data not shown) or endothelial (PECAM1) (Figure 3D) markers was detected. By contrast, ALDH1A2+ cells were positive for the intermediate filament marker Vimentin, suggesting them to be cardiac fibroblasts or connective tissue (Figure 3D). We next wanted to see if the ALDH1A2+ cells arose from the epicardium, which would be consistent with them being fibroblasts or other connective tissue cells. To this end, we performed lineage tracing experiments with the Wt1tm2(cre/ERT2)Wtp line (referred to as WT1CreERT2) (Zhou et al., 2008), which specifically labels the epicardium, crossed with the mTmG reporter. Tamoxifen induction at E10.5 followed by analysis at E16.5 revealed a significant portion of ALDH1A2+ cells within the ventricular wall were labeled with GFP, demonstrating they indeed originate from the epicardium (Figure 3E, white arrows). Taken together, these data suggest that epicardial cells and epicardial-derived cardiac fibroblasts that have migrated into deeper layers of the forming myocardium produce ALDH1A2, and that the local RA signal is received by neighboring cardiomyocytes (Figure 3F, schematic).
 
-## The RARECreERT2 line labels several cell-types, including cardiomyocytes, in adult hearts subjected to myocardial infarction
+### The RARECreERT2 line labels several cell-types, including cardiomyocytes, in adult hearts subjected to myocardial infarction
 
 RA signaling appears to play a protective role in the adult heart after acute damage (Minicucci et al., 2010; Zhu et al., 2015; Paiva et al., 2005). To further analyze RA signaling in cardiac repair, we subjected RARECreERT2 mice to surgical ligation of the left coronary artery (a widely used experimental myocardial infarction model). To label RA-responsive cells, one pulse of tamoxifen was given immediately after surgery, and a second pulse 48 hr later (Figure 4A, schematic). Strikingly, analysis of hearts 6 days after MI revealed drastic GFP enrichment in infarct hearts when compared to sham controls (Figure 4B). ALDH1A2 protein and mRNA levels were also enriched in infarcted hearts as shown by IF and qPCR analysis, respectively (Figure 4B–C). Interestingly, the staining pattern of GFP closely overlapped with ALDH1A2, suggesting it to be the major enzyme driving the RA response in infarct hearts, which is consistent with previous studies (Kikuchi et al., 2011). Aldh1a1 and Aldh1a3 mRNA levels were also upregulated as determined by qPCR analysis (Figure 4C); however, we could not detect ALDH1A1/A3 protein by IF using commercial antibodies (data not shown). A closer look at the staining patterns of ALDH1A2 and GFP revealed an increase in the number of positive cells particularly within the injury and border zones of damage (Figure 4B, F). Most ALDH1A2+ cells were GFP-negative (Figure 4D). Co-IF for GFP with various markers demonstrated that many different cell-types were responsive to RA. These included PECAM1+ coronary vessels, αSMA+ activated fibroblasts and/or smooth muscle cells and Troponin T+ cardiomyocytes (Figure 4E). Interestingly, a substantial portion of cardiomyocytes in the injury border zone, a region that is highly remodeled after MI, were also GFP+ (Figure 4G, white arrows).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig4-v2.jpg)
 
-**Figure 4.:** The RARECreERT2 line labels several cell-types, including cardiomyocytes, in adult hearts subjected to myocardial infarction.(A) Schematic illustrating the lineage tracing experiments performed in RARECreERT2; mTmG mice subjected to myocardial infarction (MI). Tamoxifen was administered twice (30 min and 48 hr after surgery) and hearts were analyzed 6 days post MI. (B) IF on infarct and sham hearts from RARECreERT2 mice reveals ALDH1A2 and GFP are highly enriched in and around the infarct zone (IZ) (marked by Sirius Red staining, dotted black line) while minimal ALDH1A2 and GFP staining is detected in sham hearts. BZ = border zone of injury. (C) qPCR analysis on RNA extracted from infarct and sham hearts reveals Aldh1a1,2 and 3 and Rbp1 are upregulated after MI. The RA targets Rarb and Cyp26a1 are not significantly altered. Data are expressed as fold change vs controls and columns are means ± SEM (n = 4 hearts). (D) Co-IF for ALDH1A2 and GFP demonstrates minimal co-staining in RARECreERT2 MI hearts. (E) Co-IF for GFP plus αSMA, PECAM1 or Troponin T demonstrates an RA response in activated fibroblasts/smooth muscle cells, coronary vessels, and cardiomyocytes respectively in RARECreERT2 MI hearts. (F) Closer analysis of RARECreERT2 infarct hearts reveals ALDH1A2 protein localization to the infarct zone and border zone. GFP+ cells also localize to both regions, and many of the GFP cells in the border zone are cardiomyocytes as demonstrated by co-IF for Troponin T (white arrows). Data information: TRO = Troponin T, SMA = smooth muscle actin, PEC = PECAM1. All statistics two tailed t-test assuming unequal variance, *p < 0.05, **p < 0.01, ns = not significant. Scale bars: mosaics 100 µM, close ups 40 µM. p = 0.017 (C, Aldh1a1), p = 0.042 (C, Aldh1a2), p = 0.048 (C, Aldh1a3), p = 0.0033 (C, Rbp1), p = 0.11 (C, Cyp26a1).
+**Figure 4.:** (A) Schematic illustrating the lineage tracing experiments performed in RARECreERT2; mTmG mice subjected to myocardial infarction (MI). Tamoxifen was administered twice (30 min and 48 hr after surgery) and hearts were analyzed 6 days post MI. (B) IF on infarct and sham hearts from RARECreERT2 mice reveals ALDH1A2 and GFP are highly enriched in and around the infarct zone (IZ) (marked by Sirius Red staining, dotted black line) while minimal ALDH1A2 and GFP staining is detected in sham hearts. BZ = border zone of injury. (C) qPCR analysis on RNA extracted from infarct and sham hearts reveals Aldh1a1,2 and 3 and Rbp1 are upregulated after MI. The RA targets Rarb and Cyp26a1 are not significantly altered. Data are expressed as fold change vs controls and columns are means ± SEM (n = 4 hearts). (D) Co-IF for ALDH1A2 and GFP demonstrates minimal co-staining in RARECreERT2 MI hearts. (E) Co-IF for GFP plus αSMA, PECAM1 or Troponin T demonstrates an RA response in activated fibroblasts/smooth muscle cells, coronary vessels, and cardiomyocytes respectively in RARECreERT2 MI hearts. (F) Closer analysis of RARECreERT2 infarct hearts reveals ALDH1A2 protein localization to the infarct zone and border zone. GFP+ cells also localize to both regions, and many of the GFP cells in the border zone are cardiomyocytes as demonstrated by co-IF for Troponin T (white arrows). Data information: TRO = Troponin T, SMA = smooth muscle actin, PEC = PECAM1. All statistics two tailed t-test assuming unequal variance, *p < 0.05, **p < 0.01, ns = not significant. Scale bars: mosaics 100 µM, close ups 40 µM. p = 0.017 (C, Aldh1a1), p = 0.042 (C, Aldh1a2), p = 0.048 (C, Aldh1a3), p = 0.0033 (C, Rbp1), p = 0.11 (C, Cyp26a1).
 
-## Depletion of RA signaling leads to larger infarct zones and increased apoptosis
+### Depletion of RA signaling leads to larger infarct zones and increased apoptosis
 
 Since our RARECreERT2 line showed a strong response in regions of the heart that are highly remodeled during cardiac repair, we next wanted to study the effects of MI on mice with reduced levels of RA signaling. Deletion of Aldh1a1/a2/a3 with the CAGGCreER line at E13.5, when Aldh1a2 is actively expressed, revealed drastically reduced staining for ALDH1A2 (Figure 5—figure supplement 1A,B) and qPCR analysis confirmed a very high ( > 90%) deletion efficiency (Figure 5—figure supplement 1C) in E18.5 hearts of triple Aldh1a-knockout mice (hereafter referred to as RAKO). This developmental analysis confirmed the efficacy of our approach and we decided to use the same Cre line for the Aldh1a deletion in adults. A previous report has shown that activation of the CAGGCreER transgene alone by tamoxifen injection followed by MI surgery does not lead to adverse remodeling effects when compared to control hearts without Cre (Konstandin et al., 2013). As control mice for MI experiments in adults, we therefore used floxed Aldh1a1/a2/a3 mice without the CAGGCreER transgene. To delete the enzymes, we injected mice five times with tamoxifen one week prior to surgery (Figure 5A, schematic). IF analysis demonstrated decreased ALDH1A2 immunoreactivity in RAKO hearts 6 days post MI (Figure 5B), and qPCR analysis revealed reasonable deletion efficiency, with around 70 % decrease of Aldh1a1 and Aldh1a2 mRNA levels (Figure 5C). Aldh1a3 mRNA levels were not significantly downregulated (Figure 5C). Incomplete deletion of Aldh1a genes was likely due to epigenetic silencing of their loci, since they are not actively expressed in adult hearts prior to MI (Kikuchi et al., 2011; this study). Consistently, PCR analysis of genomic DNA from mutant MI hearts revealed incomplete excision of Aldh1a2 and Aldh1a3 floxed alleles (Figure 5—figure supplement 1D-E). The low recombination was not due to poor activity of the CAGGCreER line, which, upon crossing with the Rosa26 based mTmG reporter, showed very efficient recombination in the adult heart (Figure 5—figure supplement 1F-G).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic illustrating strategy used to delete floxed alleles of the Aldh1a1,2,3 (Ald1,2,3) enzymes with the CAGGCreER line (mutant mice referred to as RAKOs). Five daily doses of tamoxifen were administered 1 week prior to surgery and operated hearts were analyzed 6 days post MI. (B) IF analysis reveals a significant decrease of ALDH1A2 protein in RAKOs when compared to CAGGCreER negative (control (CTL)) hearts. (C) qPCR analysis of RNA extracted from infarct hearts reveals significant decreases in Aldh1a1 and Aldh1a2 expression in RAKOs when compared to controls. Aldh1a3 expression is also reduced, though not significantly. Data are expressed as fold change vs. controls and columns are means ± SEM (n = 3 hearts). (D) Sirius red detection of collagen deposition demonstrates increased infarct size in RAKO hearts when compared to controls. See Figure 5—figure supplement 2A for representative images of all hearts analyzed. (E) Quantification of infarct size in RAKO and control hearts. The infarct areas were measured with ImageJ software and were normalized to the total area of the left ventricle. Columns are means ± SEM (n = 10 hearts). See also Figure 5—source data 1. (F) Active caspase three and TUNEL stainings reveal increased apoptosis in RAKO hearts when compared to controls. RAKO hearts have visible ‘patches’ of apoptotic cells (lower middle panel; white outline in lower right panel (magnified in inset)). (G) Quantification of TUNEL+ cells in RAKO and control infarct hearts using ImageJ software. Columns are means ± SEM (n = 6 hearts). See also Figure 5—source data 2. Data information: CASP3 = active caspase 3, TUN = TUNEL, IZ = infarct zone. All statistics two tailed t-test assuming unequal variance, *p < 0.05, ns = not significant. Scale bars: mosaics 100 µM, close ups 40 µM. p = 0.011 (C, Aldh1a1), p = 0.026 (C, Aldh1a2), p = 0.26 (C, Aldh1a3), p = 0.028 (E, RAKO), p = 0.010 (G, RAKO). See also Figure 5—figure supplements 1–3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of strategy to generate Aldh1a1,2,3 mutant E18.5 (RAKO) embryos during late cardiac development by tamoxifen injections at E13.5 and E14.5 followed by analysis at E18.5. (B) IF for ALDH1A2 reveals a dramatic reduction in ALDH1A2 immunoreactivity in RAKO E18.5 hearts when compared to controls. Very few cells are ALDH1A2+ (white arrow) in RAKO hearts. Representative images are from left ventricles (n = 3 hearts analyzed). (C) qPCR analysis of RNA from E18.5 hearts reveals a drastic reduction of Aldh1a2 expression in RAKO hearts when compared to controls. Data are expressed as fold change vs. controls and columns are means ± SEM (n = 6 embryos, 2 litters). Two tailed t-test assuming unequal variance, ***p < 0.001. p = 0.00030. (D–E) PCR analysis of genomic heart DNA from RAKO adults subjected to MI reveals excision of floxed Aldh1a2 (D) and Aldh1a3 (E) alleles (red arrowheads). Amplification of the non-excised alleles (green arrowheads) still occurs indicating incomplete recombination in RAKO hearts. (F) Schematic illustrating strategy used to test the recombination efficiency of the CAGGCreER line with the mTmG reporter allele. Tamoxifen was administered five times to CAGGCreER; mTmG adult males and hearts were analyzed 13 days after the final injection. Grey arrowheads represent loxP sites. (G) GFP IF on CAGGCreER; mTmG hearts reveals very efficient recombination in nearly all cell types. Two representative CAGGCreER; mTmG hearts shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Sirius red staining of various MI hearts reveals consistently larger infarct sizes (depicted by black dashed lines) in RAKO hearts when compared to control (CTL) (Aldh1a1/a2/a3fl CAGGCreER-negative mice) hearts. For each heart representative image from largest portion of infarct shown. (B) RAKO sham hearts do not display adverse remodeling defects or apoptosis as shown by sirius red staining (left) and active caspase 3 (CASP3) IF (right) (n = 3 hearts analyzed). (C) Co-IF for active caspase three and MF20 reveals that the apoptotic patches observed in RAKO mice after MI are cardiomyocytes. (D) Table showing that RAKO MI hearts exhibit a higher incidence of early death (prior to analysis at 6 days post MI) and more ‘apoptotic patches’.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) IF for phospho-ERK1/2 (pERK) reveals no major differences in RAKO MI hearts when compared to controls (CTL). (B) Quantification of pERK levels reveals no significant differences between RAKO and control hearts. Phospho-ERK pixel area was measured using ImageJ software and was normalized to total infarct area (estimated by DAPI staining). Columns are means ± SEM (n = 3 hearts). See also Figure 5—figure supplement 3—source data 1. (C) qPCR analysis of primary cardiomyocytes treated with RA (1 µM) for 48 hr demonstrates no significant difference in Adam10 expression. Data are expressed as fold change vs controls and columns are means ± SEM (n = 3 technical replicates). (D) qPCR analysis of primary cardiomyocytes treated with the RAR reverse agonist BMS493 (1 µM) for 48 hr demonstrates no significant difference in Adam10 expression. Data are expressed as fold change vs controls and columns are means ± SEM (n = 3). Data information: For all statistics, two tailed t-test assuming unequal variance, ns = not significant. p = 0.99 (B, RAKO), p = 0.84 (C, RA), p = 0.48 (D, BMS).
 
 To analyze the effects of depleting the RA pathway prior to MI, we measured the size of the infarct zones in RAKO and control mice. Strikingly, RAKO mice exhibited significantly increased infarct zones as revealed by collagen staining with Sirius red (Figure 5D–E and Figure 5—figure supplement 2A). Furthermore, RAKO mice showed increased rates of apoptosis as determined by active caspase three and TUNEL (Terminal deoxynucleotidyl transferase dUTP nick end labeling) staining (Figure 5F–G). No apoptosis was observed in RAKO mice subjected to sham surgery (Figure 5—figure supplement 2B). Interestingly, many of the apoptotic cells in RAKO mice were cardiomyocytes and they tended to concentrate in clusters or so called ‘patches’ that were positive for both active caspase3 and TUNEL (Figure 5F and Figure 5—figure supplement 2C). These patches were observed in 5 out of 10 RAKO mice and only 1 out of 11 control mice (Figure 5—figure supplement 2D, table). Moreover, RAKO mice exhibited higher mortality rates (Early death: RAKO 4 of 14 vs. CTL 0 of 11) before analysis at 6 days post MI (Figure 5—figure supplement 2D, table). Thus, dampening the RA response prior to MI leads to increased cardiomyocyte apoptosis and mortality, suggesting RA signaling plays a protective role in damaged heart muscle.
 
 A previous study using exogenous RA supplementation in mice subjected to ischaemia/reperfusion determined that the RA pathway reduced apoptosis in damaged hearts by modulating the MAP kinase pathway. This was suggested to be through direct transcriptional regulation of Adam10, a gene which encodes for a protease that cleaves and inactivates the RAGE10 (Receptor for Advanced Glycation End products) receptor, a positive regulator of the ERK1/2 MAP kinase pathway (Zhu et al., 2015). However, we did not observe any differences in ERK1/2 activation, as determined by IF for phospho-ERK1/2, in our RAKO mice (Figure 5—figure supplement 3A-B). Additionally, treatment of primary cardiomyocytes with RA or BMS493 did not lead to significant changes in Adam10 expression (Figure 5—figure supplement 3C-D). Taken together, these data suggest the anti-apoptotic effects of RA observed in our model of RA depletion to be unrelated to Adam10/MAP-Kinase signaling.
 
-## RA treatment in embryonic cardiomyocytes promotes a notable transcriptional response and regulates genes involved in cardiac repair, including Tgm2 and Ace1
+### RA treatment in embryonic cardiomyocytes promotes a notable transcriptional response and regulates genes involved in cardiac repair, including Tgm2 and Ace1
 
 The labeling of cardiomyocytes with our RARECreERT2 line, as well as the increase in apoptosis observed in Aldh1a-null mice after MI led us to hypothesize that RA signaling plays a protective role specifically in cardiomyocytes. To decipher the underlying mechanisms, we isolated primary cardiomyocytes from E18.5 hearts and treated them with 100 nM RA for 48 hr to mimic long-term exposure to RA, which is normally experienced after MI. We then extracted RNA and used the samples for high-throughput sequencing (Figure 6A, schematic). Analysis of the sequencing data identified several canonical RA targets such as Rarb, Cyp26b1 and Cyp26a1 to be top hits among all genes analyzed (Figure 6B, Supplementary file 1), and gene ontology analysis revealed enrichment of GO terms for inflammatory and DNA damage responses (Figure 6C and Figure 6—figure supplement 1). Furthermore, several genes previously shown to be important in cardiac development and MI were also determined to be either up or downregulated (Figure 6B). Of note, Tgm2, which has been shown to promote ATP synthesis and thus limit damage after MI, was significantly upregulated (Figure 6B; Szondy et al., 2006). We also noticed that RA treatment significantly repressed the expression of Angiotensin converting enzyme 1 (Ace1) (Figure 6B). ACE1 is responsible for converting angiotensin 1 into angiotensin 2, which in turn activates the renin angiotensin system and subsequent vasoconstriction. Upregulation of ACE1 has been observed in rodent hearts after MI and is generally considered to be harmful (Sun, 2010). Indeed, ACE inhibitors are commonly used to treat patients recovering from MI, and they have shown great success in various clinical trials (Flather et al., 2000). Moreover, a connection between RA signaling, the RAS system, and cardiomyocyte-specific apoptosis has been previously established in vitro (Palm-Leis et al., 2004; Guleria et al., 2011). Respective activation and repression of Tgm2 and Ace1 after 48 hr RA treatment was confirmed by qPCR analysis (Figure 6D). Tgm2 and Ace1 modulation by RA signaling was also observed with 9-hr RA-treatment (Figure 6E). Next, we treated cardiomyocytes with BMS493 for 48 hr, and observed that Tgm2 expression was repressed while Ace1 levels were increased, consistent with our hypothesis that both genes are regulated by RA signaling (Figure 6F). Ace1 is highly expressed by endothelial cells in the heart, and it is possible the repression of Ace1 by RA may be a result of contaminating endothelial cells. To address this issue, we removed endothelial cells from our cardiomyocyte cultures using CD31 magnetic beads, then treated enriched cardiomyocytes with RA for 48 hr (Figure 6—figure supplement 2A-B). Consistently, RA treatment repressed Ace1 expression (Figure 6G). Tgm2 and Ace1 were also upregulated in MI hearts when compared to sham controls (Figure 6—figure supplement 2C). Finally, to see if Tgm2 and Ace1 are direct or indirect RA targets, we treated cultured cardiomyocytes with RA for only 3 hours and added the translational inhibitor cycloheximide to block non-specific activation of Tgm2/Ace1. No changes in Tgm2 or Ace1 expression were detected with the 3 hr RA treatment with or without cycloheximide, suggesting that Tgm2 and Ace1 are indirect RA targets. Importantly, Rarb expression was still activated by 3 hr RA treatment with or without cycloheximide (Figure 6—figure supplement 2D). Taken together, these data show that RA can stimulate a significant transcriptional response in primary cardiomyocytes, and that some of the identified genes, such as Tgm2 and Ace1, which are likely indirect RA targets, are known to play important roles in cardiac repair.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic illustrating the strategy used to isolate primary cardiomyocytes from E18.5 hearts. Cultured cardiomyocytes were treated for 48 hr with 100 nM RA. RNA was extracted, libraries were prepared with oligo (dT) primers and single end sequencing was performed on RA-treated and DMSO-treated cells (n = 4 biological replicates). (B) Volcano plot analysis of RNA sequencing results performed with Graphpad software. Dotted line represents significance threshold equivalent to p < 0.05. Several canonical RA targets (Rarb; Cyp26a1; Cyp26b1; red) are significantly upregulated. Genes involved in cardiac repair such as Transglutaminase 2 (Tgm2) (red) and Angiotensin converting enzyme 1 (Ace1) (blue) are also significantly altered. DESeq analysis of genome aligned reads was performed using proprietary Genomatix software. Only the top 500 genes were included in the volcano plot analysis. Blue dots represent downregulated genes. (C) Gene ontology (GO) analysis of biological processes using Gorilla software. Only the top 500 genes were included in the GO analysis. (D) qPCR analysis confirms upregulation of Tgm2 and repression of Ace1 mRNA levels in primary cardiomyoctes treated with 1 µM RA for 48 hr (n = 3 technical replicates). (E) Acute nine hour 1 µM RA treatment in primary cardiomyocytes promotes Tgm2 upregulation and Ace1 repression as shown by qPCR analysis (n = 3 technical replicates). (F) Treatment of primary cardiomyocytes with the RAR signaling reverse agonist BMS493 (1 µM) for 48 hr reveals a decrease in Tgm2 expression and an increase in Ace1 expression levels as shown by qPCR analysis (n = 5, experiment performed once in triplicate and once in duplicate). (G) Removal of endothelial cells (endo) with CD31-magnetic beads followed by 48 hr 1 µM RA treatment on purified primary cardiomyocytes reveals significant repression of Ace1 expression as shown by qPCR analysis (n = 3 technical replicates). Data information: For all graphs data are expressed as fold change vs. controls and columns are means ± SEM. Tgm2 = Transglutaminase 2, Ace = angiotensin converting enzyme. All statistics two tailed t-test assuming unequal variance, *p < 0.05, **p < 0.01. p = 0.0046 (D, Rarb), p = 0.0025 (D, Tgm2), p = 0.011 (D, Ace), p = 0.0093 (E, Rarb), p = 0.0093 (E, Tgm2), p = 0.043 (E, Ace), p = 0.0041 (F, Rarb), p = 0.015 (F, Tgm2), p = 0.0020 (F, Ace), p = 0.0012 (G, Rarb), p = 0.0091 (G, Ace). See also Figure 6—figure supplements 1–2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Gene ontology analysis of biological processes altered in RA-treated primary cardiomyocytes using RNA sequencing data from top 500 deregulated genes. Analysis performed with Gorilla software (http://cbl-gorilla.cs.technion.ac.il/).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68280/elife-68280-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic showing strategy to remove endothelial cells from primary cardiomyocyte cultures using CD31-magnetic beads. MACS = magnetic activated cell sorting. (B) qPCR analysis of cell isolation from (A) reveals purified cardiomyocytes (CM) express very low levels of endothelial (Endo) markers (Pecam, Flk1) and high levels of Troponin T (TropT) (n = 3). Data are expressed as fold change vs controls and columns are means ± SEM. For statistics, two tailed t-test assuming unequal variance. (C) qPCR analysis reveals upregulation of Tgm2 and Ace1 in RARECreERT2 MI hearts when compared to sham controls. Data are expressed as fold change vs controls and columns are means ± SEM. For statistics, two tailed t-test assuming unequal variance was used. (D) qPCR analysis of E18.5 cardiomyocytes treated with RA for 3 hr with or without the protein synthesis inhibitor cycloheximide (CHX) reveals no significant changes in Ace1 and Tgm2 expression. Rarb expression is significantly upregulated after 3 hr RA treatment both with and without CHX. For statistics, two-way analysis of variance (ANOVA) performed. Data information: *p < 0.05, **p < 0.01, ***p < 0.001, ns = not significant. p = 0.0031 (B, Pecam), p = 0.0017 (B, Flk1), p = 0.0069 (B, TropT), p = 0.048 (C, Tgm2), p = 0.037 (C, Ace), p = 0.048 (D, Rarb, red), p = 0.00010 (D, Rarb, gray), p = 0.14 (D, Tgm2, red), p = 0.21 (D, Tgm2, gray), p = 0.91 (D, Ace, red), p = 0.78 (D, Ace, gray).
 
 ## Discussion
 
@@ -112,58 +160,642 @@ In summary, we have shown that cardiomyocytes are responsive to RA signaling and
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Aldh1a1</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 1353450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Aldh1a2</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 107928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Aldh1a3</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 1861722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Rarb</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 97857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Ace1</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 87874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Tgm2</td>
+      <td>Mouse genome informatics</td>
+      <td>MGI: 98731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>RARECreERT2</td>
+      <td>This paper</td>
+      <td>Tg(RARE-Hspa1b-cre/ERT2)RRID:MGI:6726566</td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>R26L</td>
+      <td>Soriano, 1999</td>
+      <td>Gt(ROSA)26Sortm1SorRRID:MGI:1861932</td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>mTmG</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)LuoRRID:MGI:3716464</td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>CAGGCreER</td>
+      <td>Hayashi and McMahon, 2002</td>
+      <td>Tg(CAG-cre/Esr1*)5AmcRRID:MGI:2182767</td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Aldh1a1fl</td>
+      <td>Matt et al., 2005</td>
+      <td></td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Aldh1a2fl</td>
+      <td>Vermot et al., 2006</td>
+      <td></td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>Aldh1a3fl</td>
+      <td>Dupé et al., 2003</td>
+      <td></td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>WT1CreERT2</td>
+      <td>Zhou et al., 2008</td>
+      <td>Wt1tm2(cre/ERT2)WtpRRID:MGI:3801682</td>
+      <td>Mixed genetic background</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary cardiomyocytes</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Freshly isolated from E18.5 embryonic hearts</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: AB13970RRID:AB_300798</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALDH1A2 (rabbit polyclonal)</td>
+      <td>SigmaAldrich</td>
+      <td>Cat#: ABN420</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myosin D (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc32758RRID:AB_627978</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MF20 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: AB_2147781RRID:AB_2147781</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-αSMA (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc53015RRID:AB_628683</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WT1 (mouse monoclonal)</td>
+      <td>Agilent</td>
+      <td>Cat#: M3561RRID:AB_2304486</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: AB24525RRID:AB_778824</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-active caspase 3 (rabbit polyclonal)</td>
+      <td>R &amp; D</td>
+      <td>Cat#: AF835RRID:AB_2243952</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-active caspase 3 (rabbit polyclonal)</td>
+      <td>R &amp; D</td>
+      <td>Cat#: AF835RRID:AB_2243952</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ERK (rabbit monoclonal)</td>
+      <td>Cell signalling technology</td>
+      <td>Cat#: 4370 SRRID:AB_2315112</td>
+      <td>F (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Troponin T (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: MA5-12960RRID:AB_11000742</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA4 (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc1237RRID:AB_2108747</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PECAM-1 (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc1506RRID:AB_2161037</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SM22a (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: AB14106RRID:AB_443021</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALDH1A3 (rabbit polyclonal)</td>
+      <td>SigmaAldrich</td>
+      <td>Cat#: HPA046271RRID:AB_10965992</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALDH1A1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab52492,RRID:AB_867566</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG Cy3(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 715-165-150;RRID:AB_2340813</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG, Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 715-605-151;RRID:AB_2340863</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG, Alexa Fluor 488(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 715-545-150;RRID:AB_2340846</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG Cy3(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 711-165-152;RRID:AB_2307443</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, Alexa Fluor 647(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 711-605-152;RRID:AB_2492288</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG, Alexa Fluor 647(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 705-605-147;RRID:AB_2340437</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgG, Alexa Fluor 488(donkey polyclonal)</td>
+      <td>Jackson immunoreseach</td>
+      <td>Cat#: 703-545-155;RRID:AB_2340375</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rarb_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GTCAGCGCTGGAATTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rarb_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CACCGGCATACTGCTCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rbp1_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TCTCCCTTCTGCACACACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rbp1_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GCCATTGGCCTTCACACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyp26a1_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GGAGCTCTGTTGACGATTGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyp26a1_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CCGGCTTCAGGCTACAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh1_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CATCTTGAATCCACCGAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh1_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GCCATCACTGTGTCATCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh2_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GGCAGGATATTGACGACTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh2_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TGAGCAGACACCGCTCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh3_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>AGTCGGTGCTATTCGCTCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Raldh3_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TGAGGATTGCCAAAGAGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyp26b1_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CACTTTGCCCAGGAGGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyp26b1_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CAGAAGGAAGTCTGGGCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ace1_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TGCAGCTCCTGGTACAGTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ace1_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>AAGATTGCCAAGCTCAATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adam10_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CTCAGGACCACTACTAGCAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adam10_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CCGTTTTTGAAAGGATGAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgm2_F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GGTTTTGCTTGGGTTCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgm2_R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>ACCTGCTGGCTGAGAGAGAT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In situ cell death detection kit, TMR red</td>
+      <td>Roche</td>
+      <td>Cat#: 12156792910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neonatal cardiomyocyte isolation kit, mouse</td>
+      <td>Miltenyi</td>
+      <td>Cat#: 130-100-825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleospin RNA, Mini kit for RNA purification</td>
+      <td>Machery Nagel</td>
+      <td>Cat#: 740955.250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: H6728</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corn oil</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: C8267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS493</td>
+      <td>TOCRIS</td>
+      <td>Cat#: 3509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antigen Unmasking Solution, Citrate-Based</td>
+      <td>Vector laboratories</td>
+      <td>Cat#: H-3300–250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Direct red 80</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 365,548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picric acid solution</td>
+      <td>VWR International</td>
+      <td>Cat#: 87897.18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin from porcine pancreas</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: T4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LightCycler 480 SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>Cat#: 04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphrine</td>
+      <td>Axience</td>
+      <td>Cat#: 03760087151244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isofluorane</td>
+      <td>Med'Vet</td>
+      <td>Cat#:0890402663435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin</td>
+      <td>VWR</td>
+      <td>Cat#: 24350.262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thimerosal</td>
+      <td>SigmaAldrich</td>
+      <td>Cat#: T8784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Low melting agarose</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 16520050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>https://fiji.sc/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Photoshop</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LightCycler 480 software</td>
+      <td>Roche</td>
+      <td>RRID:SCR_012155</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 The aim of the study was to investigate the role of endogenous Retinoic Acid (RA) signaling in the heart using a novel transgenic mouse RA-reporter (RARECreERT2) and an in vivo genetic approach of deletion of Aldh1a1, Aldh1a2, and Aldh1a3 genes (i.e. mice lacking all sources of RA in vivo, an approach validated in Chassot et al., 2020) to challenge the dogma that cardiomyocytes, the principle cell type of the heart, are not responsive to RA signaling both during embryonic development and after MI. The number of samples was determined on the basis of experimental approach, availability, and feasibility required to obtain definitive results. The numbers of replicates are specified in the appropriated Materials and Methods sections. The researchers were not blinded during data collection or analysis.
 
-## Mice
+### Mice
 
 All animal work was conducted according to national and international guidelines and was approved by the local ethics committee (PEA-NCE/2013/88). The R26L, mTmG, WT1CreERT2, Aldh1a1fl, Aldh1a2fl, Aldh1a3fl, and CAGGCreER lines have been described previously (Soriano, 1999; Muzumdar et al., 2007; Zhou et al., 2008; Matt et al., 2005; Vermot et al., 2006; Dupé et al., 2003; Hayashi and McMahon, 2002). For embryonic RARECreERT2 lineage tracing Cre activation was obtained by administration (gavage) of 200 mg/kg tamoxifen (Sigma-Aldrich) dissolved in corn oil (Sigma-Aldrich) to pregnant females at the indicated time-points. For adult myocardial infarction experiments (RARECreERT2 lineage tracing and Aldh1a1/a2/a3 deletion experiments), Cre activation was obtained by administration (intraperitoneal injection) of 100 mg/kg tamoxifen at the indicated time-points. Details of RA and BMS493 in vivo treatments are provided in the figure legends.
 
 For generation of RARECreERT2 mice, fertilized zygotes were obtained from super-ovulated B6D2F1 females mated to B6D2F1 males. Linearized DNA consisting of three copies of a 34 bp oligo (Rossant et al., 1991) containing the direct repeat 5 (DR5) RARE of the murine Rarb2 promoter upstream of the hsp68 promoter and CreERT2 gene was injected into the pronuclei of zygotes. Zygotes were then transferred into the oviducts of pseudo pregnant mice. All mice used in these experiments were heterozygous for the transgene and were back-crossed for more than five generations. Two founder lines were established yielding the expected RA-responses during embryonic development, and the line with the higher activity was used for further study.
 
-## Myocardial infarction surgeries
+### Myocardial infarction surgeries
 
 Transgenic males 8–10 week-old were subjected to permanent ligation of left-anterior descending coronary artery. One dose of buprenorphine (0.1 mg/kg) was administrated subcutaneously for pre-operative analgesia. After 30 min, they were anesthetized by inhalation of 4 % isoflurane in a filled chamber and immediately intubated for artificial ventilation to maintain a respiratory rate of 135 /min with pure oxygen mixed with 1–2% isoflurane. A left-sided thoracotomy was performed between the third and fourth ribs: the pericardium was cut open and ligation of the descending branch of the left coronary artery was made 2.5 mm under the tip of the left auricle using 8–0 silk suture. Sham operated mice underwent the same procedure, except no ligation around the left coronary artery was made. Subsequently, the intercostal space, muscles of the external thoracic wall and skin were sutured with 6/0 polyester. All animals received 0.5 ml saline IP post-surgery to compensate for fluid loss and 0.1 mg/kg of buprenorphrine subcutaneously for analgesia.
 
-## Whole-mount X-gal staining
+### Whole-mount X-gal staining
 
 For whole-mount X-gal analysis, embryos or dissected organs were fixed for 45 min in 0.1 % glutaraldehyde diluted in PBS, washed three times with wash buffer (2 mM MgCl2, 0.2% NP-40, 0.1 % sodium deoxycholate in sodium phosphate buffer) and then incubated overnight (O/N) at 37 °C in X-gal staining solution (washing buffer +5 mM potassium ferrocyanide, 5 mM potassium ferricyanide and 1 mg/ml X-Gal substrate). For analysis on sections, samples were fixed O/N in 4 % paraformaldehyde, embedded in paraffin, cut at 5 µM on a microtome, de-paraffinized and counterstained with eosin.
 
-## Whole-mount GFP staining
+### Whole-mount GFP staining
 
 Embryos were collected on their respective days and fixed with 4 % paraformaldehyde overnight at 4 °C. Embryos were dehydrated using an ascending concentration of methanol prepared in PBS, and bleached with 6 % hydrogen peroxide O/N at 4 °C. On the following day, embryos were rehydrated using a descending concentration of methanol. Embryos were quenched with 0.3 M Glycine with Triton X (prepared in PBS) for 4–6 hr at room temperature. The Triton X concentrations were decided based on the stage of the embryos (0.5 % Triton X concentration was used for E10.5 embryos and 1.0 % Triton X concentration was used for E12.5 embryos). Samples were blocked in PBSGT (0.2 % Gelatin (VWR)), Triton X and 0.1 g/L of Thimerosal ((SIGMA), prepared in PBS) for 2 days at room temperature. Chicken Anti-GFP antibody and goat Anti-GATA4 were diluted in PBSGT at 1:500 concentrations. Samples were incubated with primary antibody solutions, 24 hr for E10.5 embryos and 1 week for E12.5 embryos at room temperature. Samples were washed six or more times over a day with PBSGT. Secondary antibodies were diluted in PBSGT at 1:500 concentration. Embryos were incubated in secondary antibodies for one (E10.5) to three (E12.5) day(s) at room temperature. Embryos were washed six or more times over a day with PBSGT.
 
-## Image acquisition for whole-mount GFP staining
+### Image acquisition for whole-mount GFP staining
 
 The protocol was adjected from a previously described protocol (Hokimoto et al., 1996). Embryos were embedded in 1.0 % low melting agarose (Invitrogen) prepared in PBS. The embedded embryos were transferred into amber color glass vials and dehydrated with ascending concentrations of methanol. BABB solution was prepared by mixing one portion of benzyl alcohol (SIGMA) with two portions of benzyl benzoate (SIGMA). Samples were treated with 50 % BABB diluted in methanol for 3–4 hr. Samples were then treated with the BABB solution until they were settled at the bottom of the vial. Samples were stored and mounted for imaging in BABB solution at room temperature.
 
 Images were acquired using Zeiss LSM780 microscopy (or homemade light-sheet microscopy) at the PRISM Imaging Facility. 3D reconstructions and analysis were performed using Imaris software.
 
-## Immunofluorescence, histological analysis, and sirius red staining
+### Immunofluorescence, histological analysis, and sirius red staining
 
 For IF experiments, tissues were fixed overnight in 4 % paraformaldehyde, progressively dehydrated and embedded in paraffin. 5 µM thick sections were rehydrated, boiled in a pressure cooker for 2 min with Antigen Unmasking Solution (Vector laboratories) and blocked in PBS solution containing 10 % normal donkey serum and 3 % BSA. All antibodies were applied overnight at 4 °C at the concentrations listed in the antibody table (see Supplementary file 1). Secondary antibodies were diluted 1:400 and applied at room temperature for 1 hr. TUNEL stainings were performed as IF experiments with the TMRRed In situ dell death detection kit (Roche). Imaging was performed with a motorized Axio Imager Z1 microscope (Zeiss) coupled with an AxioCam MRm camera (Zeiss), and images were processed with AxioVision LE and ImageJ.
 
 For histological analysis, 5-µM-thick sections were stained with haematoxylin and eosin according to standard procedures. For Sirius red staining, 5-µM-thick sections were stained in Sirius red solution (Sirius red powder (SIGMA) dissolved in picric acid) for 1 hr at room temperature. Samples were then washed in acidified water before being dehydrated with three 100 % ethanol baths.
 
-## Isolation of primary cardiomyocytes and treatment with RA and BMS493
+### Isolation of primary cardiomyocytes and treatment with RA and BMS493
 
 E18.5 hearts were dissected, minced, and then digested in DMEM+ Trypsin (100 mg/ml) for three times 15 min at 37 °C with shaking. After each 15-min incubation, the supernatant was removed and 5 ml FBS was added to stop the reaction. After the digestion, all solutions were pooled, run through a 70 µM filter and then spun down for 5 minutes at 1600 rpm at 4 °C. The supernatant was then removed, and the pellet resuspended in DMEM +8 % FBS. The cells were then plated for 1–2 hr on uncoated plastic wells of six-well plates for fibroblasts to adhere. The non-adherent cells containing the cardiomyocytes were then resuspended and plated on collagen coated (50 µg/ml) wells of six-well plates. The next day the media was changed and the cardiomyocytes grown to 50–60% confluency before being treated. For RA (SIGMA) and BMS493 (TOCRIS) treatments, solutions were pre-diluted in 100 % ethanol before being added directly to the media at final concentrations of 100 nM (RA for RNA-seq) or 1 µM (BMS493 and RA for qPCR analysis). For RARECreERT2 activation in cultured cardiomyocytes, 4-Hydroxytamoxifen (4 µM) was supplemented together with RA, as indicated in the figure legends. For IF experiments, cells were fixed in PFA for 10 min on ice and antibody incubations were performed as described above.
 
 For live cell imaging and RA dose titration experiments, cardiomyocytes were isolated from RARECreERT2; mTmG P1-P5 hearts with the Neonatal Cardiomyocyte Isolation kit, mouse (Miltenyi 130-042-401) according to the manufacturer’s protocol. All cells isolated were counted as cardiomyocytes and were visualized and quantified via Tomato (not activated by RA) or GFP (activated by RA) (both from mTmG transgene) fluorescence. To avoid bias from FBS, cells were washed twice with PBS and media was replaced with KnockOut DMEM (Gibco 10829018) supplemented with 10 % KnockOut serum replacement (Gibco 10828028), 1 % MEM non-essential amino acids (Gibco 11140050) and 1 % GlutaMAX prior to RA treatments. Live cell imaging was performed with AxioObserver - Zeiss (2011) and images were acquired for a total of 48 hr. For dose titration experiments, cells were fixed in methanol, stained with anti-GFP antibody (Abcam: a13970), and revealed with anti-chicken Cy5 antibody (Jackson: 03-175-155). Images were taken on a Zeiss LSM780 microscope.
 
-## RT-qPCR
+### RT-qPCR
 
 RNA was extracted from the bottom halves of infarcted or sham adult hearts and primary cardiomyocytes using TRIzol reagent (Invitrogen), following the manufacturer’s instructions. For 3 hr RA treatment of cardiomyocyte experiments, the Nucleospin RNA kit (Machery Nagel) was used for RNA isolation. Reverse transcription was performed using the M-MLV reverse transcriptase in combination with oligo (dT) primers (Invitrogen) or random primers (Invitrogen) (3 hr RA treatment of cardiomyocytes). The cDNA was used as a template for quantitative PCR analysis using the SybrGREEN Master Kit (Roche) or the Universal probeLibrary system (3 hr RA treatment of cardiomyocytes) and a Light Cycler 1.5 (Roche). Primers used for the analysis are shown in Supplementary file 1. The expression levels were normalized to Gapdh. For each litter or experiment, ddCt values were normalized to one control dCt rather than the mean of control delta Cts. Primers (see primer table) were designed on the Universal Probe Library website (Roche).
 
-## RNA sequencing analysis
+### RNA sequencing analysis
 
 TRIzol RNA extraction was performed on four biological replicates of primary E18.5 cardiomyocytes treated with 100 nM atRA or DMSO as a control. Libraries were prepared on a Beckman Fxp Automation system, using the Illumina TruSeq stranded polyA chemistry kit. For each sample 500 ng was used as input for library preparation. Single end sequencing with an average of 20 million reads per sample was performed with the Illumina HiSeq 2000 at the EMBL sequencing center (Heidelberg, Germany). Sequences were aligned to the mouse mm10 reference genome with Burrows-Wheeler Aligner (bwa) version 0.7.12-r104 using standard parameters. Differential analysis of gene expression was calculated with the DESeq2 program from proprietary Genomatix software with a cutoff value of p < 0.05 (see Supplementary file 1). The raw data files have been submitted to GEO database (GSE161429).
 
-## Quantification of collagen and IF stainings on sections
+### Quantification of collagen and IF stainings on sections
 
 For collagen staining quantification, the infarct areas from six sections per heart stained with Sirius Red were measured with ImageJ software and divided by the total area of the left ventricular wall. For phospho-ERK1/2 staining levels, the positive areas for four to five sections per heart were measured with ImageJ software and divided by the area of the left ventricular wall. For TUNEL quantification, the number of positive cells were calculated for four sections per heart with ImageJ software, and then divided by the total number of cells (DAPI+) in the left ventricular wall. For all analyses, sections were on average spaced by 40 µM, covering a total area of at least 250–400 µM.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample sizes (individual embryos, litter numbers, and wells (in vitro experiments)) are reported in each figure legend. All cell counts were performed in standardized microscopic fields using either the ImageJ cell counter plug in or user-defined macros. All statistical analyses were conducted using Graphpad Prism. Data normality was tested by Shapiro-Wilk normality test and variances between groups were tested using F-test. Means between two groups were compared using two-tailed unpaired student’s t-test and means between multiple groups were compared using two-way analysis of variance (ANOVA) followed by Tukey’s multiple comparison tests. Statistical outliers were calculated using the Grubb’s test. Results are displayed as arithmetic mean ± standard error of mean (SEM). Where indicated results are shown as fold change vs. controls. Statistically significant data are indicated as: * p < 0.05, **p < 0.01, and ***p < 0.001. Non-significant data is indicated as ns.

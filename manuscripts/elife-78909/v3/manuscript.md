@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Information School, University of Wisconsin-Madison Madison United States
-2. https://ror.org/036jqmy94 College of Education, The University of Iowa Iowa City United States
+1. Information School, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. College of Education, The University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
 
 † Corresponding author
 
@@ -33,15 +33,107 @@ Based on self-reported gender identification, the sample contains 4,425 (57.0%) 
 
 ## Results
 
-## Parenthood and its overall compatibility with academic careers
+### Parenthood and its overall compatibility with academic careers
 
 Our results show significant gender differences in the parenthood status of academics. Across all disciplines, career stages, and races, a large majority (73.7%) of the respondents have at least one child. However, women (71.4%) are less likely than men (76.7%) to have children (OR = 0.82, 95% CI [0.73, 0.91], P=0.000; see Table S6 in Supplementary file 2) and are more likely to have fewer children (Tobit coefficient = −0.14, 95% CI [-0.22,–0.07], P=0.000). This trend is different from the general population in the United States, where the percentage of adult women who have children is higher than that of adult men, and the average number of children mothers have is higher than that of fathers (Monte, 2017; National Center for Health Statistics, 2021). Our results further show that the gender difference in parenthood status of academics is highly related to career considerations: For those with children, women are more likely than men to report that the number of children they have is related to career considerations (OR = 2.34, 95% CI [2.08, 2.63], P=0.000). Among those without children, women (59.9%) are more likely than men (43.2%) to report that career considerations played a role in their parenthood status (OR = 2.10, 95% CI [1.69, 2.62], P=0.000; see Table S7 in Supplementary file 2), while controlling for discipline, career stage, and race.
 
 The gender difference in parenthood status in academia is likely due to the different perceptions of parenting compatibility with academic careers by women and men: Parenthood is perceived as less compatible with academic careers by women than by men (see Table 1). Women are more likely than men to report a negative impact on their career due to children (OR = 0.46, 95% CI [0.41,0.51], P=0.000). More specifically, 71.3% of mothers reported a negative child impact on their career, while only 48.6% of fathers indicated so. In contrast, 25.2% of fathers reported a positive impact on their career due to children, while only 14.1% of mothers indicated so. When aggregated by career stage (see Table S4 in Supplementary file 1 for the categorization), women are more likely to report more negative child impact during each career stage: trainee (OR = 0.34, 95% CI [0.20,0.61], P=0.000), early career (OR = 0.52, 95% CI [0.39,0.70], P=0.000), middle career (OR = 0.47, 95% CI [0.40,0.56], P=0.000), and late career (OR = 0.43, 95% CI [0.37,0.51], P=0.000).
 
+**Table 1.**
+ Child impact on career for parents.Odds ratio (women/men) values were based on ordinal logistic regression. Standard errors were clustered at the institution level. Control variables include discipline, race, and type of partner job.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">All</th>
+      <th colspan="2">Trainee</th>
+      <th colspan="2">Early career</th>
+      <th colspan="2">Middle career</th>
+      <th colspan="2">Late career</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Women</th>
+      <th>Men</th>
+      <th>Women</th>
+      <th>Men</th>
+      <th>Women</th>
+      <th>Men</th>
+      <th>Women</th>
+      <th>Men</th>
+      <th>Women</th>
+      <th>Men</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Negative (%)</td>
+      <td>71.3</td>
+      <td>48.6</td>
+      <td>79.3</td>
+      <td>60.2</td>
+      <td>79.1</td>
+      <td>66.4</td>
+      <td>75.5</td>
+      <td>59.1</td>
+      <td>60.9</td>
+      <td>37.3</td>
+    </tr>
+    <tr>
+      <td>Neutral (%)</td>
+      <td>14.7</td>
+      <td>26.2</td>
+      <td>9.6</td>
+      <td>21.2</td>
+      <td>9.7</td>
+      <td>16.5</td>
+      <td>13.1</td>
+      <td>19.1</td>
+      <td>20</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Positive (%)</td>
+      <td>14.1</td>
+      <td>25.2</td>
+      <td>11.1</td>
+      <td>18.6</td>
+      <td>11.2</td>
+      <td>17.1</td>
+      <td>11.4</td>
+      <td>21.9</td>
+      <td>19.2</td>
+      <td>29.7</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>3,105</td>
+      <td>2,530</td>
+      <td>208</td>
+      <td>118</td>
+      <td>618</td>
+      <td>333</td>
+      <td>1,172</td>
+      <td>745</td>
+      <td>1,107</td>
+      <td>1,334</td>
+    </tr>
+    <tr>
+      <td>OR, 95% CI, p-value</td>
+      <td colspan="2">0.46 [0.41,0.51], P=0.000</td>
+      <td colspan="2">0.34 [0.20,0.61], P=0.000</td>
+      <td colspan="2">0.52 [0.39,0.70], P=0.000</td>
+      <td colspan="2">0.47 [0.40,0.56], P=0.000</td>
+      <td colspan="2">0.43 [0.37,0.51], P=0.000</td>
+    </tr>
+  </tbody>
+</table>
+
 With limited generalizability due to insufficient sample size, we found that, of the 28 non-binary participants in our survey, 18 (64.3%) have been ever committed to a partnership. Seven of them have children, among which six (85.7%) indicated that having children has a negative impact on their career development, and all seven (100%) respondents reported career considerations played a role in the number of children they have.
 
-## Gender gaps in subjective career achievements
+### Gender gaps in subjective career achievements
 
 We operationalized the measurement of subject career achievements using respondents’ self-reported satisfaction over research, career, and recognition by scholarly communities. Our results show that women academics, in general, are attached with lower levels of subjective career achievement than their male counterparts (see Table S8 in Supplementary file 2). Specifically, women are less likely than men to be satisfied with their research (OR = 0.76, 95% CI [0.68,0.85], P=0.000) and feel recognized by their scholarly communities (OR = 0.77, 95% CI [0.68,0.87], P=0.000).
 
@@ -51,7 +143,7 @@ The seemingly unrelated estimation (SUEST) analysis further shows that there is 
 
 For the non-binary respondents, five (71.4%) out of seven parents are not satisfied with their research achievements, compared with four (36.4%) out of 11 non-parents. For career satisfaction, four (57.1%) out of seven parents expressed disagreement, compared with two (18.2%) out of 11 non-parents. For scholarly recognition, one (16.7%) out of six parents expressed disagreement, compared with two (18.2%) out of 11 non-parents. Yet, the results should be interpreted with limited generalizability due to the limited sample size.
 
-## Gender gaps in objective career achievements
+### Gender gaps in objective career achievements
 
 We operationalized the measurement of objective career achievements for academics using publication-based indicators, given the “currency” role that scientific publications play in the academic reward system (Fogarty, 2009). The publication-based indicators used in this study include annual relative publication (ARP), average relative citation (ARC), and annual relative coauthor (ARCo). These indicators are used as measures for research productivity, citation, and the extent of collaboration, as normalized by discipline and time. The normalization was performed due to the varying scholarly practices across disciplines and the cumulative advantage in research achievements (such as citations) over time (see Materials and methods).
 
@@ -69,7 +161,7 @@ Overall, our results reveal the potential existence of both “motherhood penalt
 
 For non-binary respondents, the ARP is 1.34 for parents and 1.36 for non-parents, the ARC is 1.58 for parents and 1.79 for non-parents, and the ARCo is 0.92 for the parents and 0.98 for the non-parents. The limited descriptive analysis shows that parenthood may also be related to the career achievements of the non-binary respondents. However, given the small sample size, the above comparisons may lack statistical power and therefore be interpreted with limited generalizability.
 
-## Gender gaps in work-family conflict and partner support
+### Gender gaps in work-family conflict and partner support
 
 When asked about factors that impeded their career, both genders agreed that work-family conflict is the major obstacle: 71.8% of women and 68.0% of men indicated they experienced “a little” to “substantial” levels of work-family conflict that impeded their career development, regardless of their parenthood status. However, the gender gap in work-family conflict is more significant in the parent group than in the non-parent group: Our results show that mothers are more likely than fathers to experience higher levels of work-family conflict (OR = 1.31, 95% CI [1.19,1.45], P=0.000), but this does not hold for non-parent academics (OR = 1.05, 95%CI=[0.85,1.28], P=0.662) (see Table S12 in Supplementary file 2). Additionally, work-family conflict may occur in various forms related to childbearing and childrearing. When work-family conflict is categorized into the three types of conflicts, our results show that mothers are more likely than fathers to experience higher levels of time-based (OR = 1.77, 95% CI [1.59,1.97], P=0.000), strain-based (OR = 1.62, 95% CI [1.47,1.80], P=0.000), and behavior-based (OR = 1.28, 95% CI [1.14,1.43], P=0.000) work-family conflict. Meanwhile, the levels of conflict in all three forms are higher for parents than for non-parents, as expected. We also observed significant gender gaps in the non-parent group regarding time-based (OR = 1.53, 95% CI [1.28,1.82], P=0.000), strained-based (OR = 1.22, 95% CI [1.00,1.49], P=0.049), and behavior-based (OR = 1.46, 95% CI [1.14,1.87], P=0.003) conflict, indicating that women are more likely to experience these conflicts than men even without children.
 
@@ -81,7 +173,7 @@ Mothers are also less likely than fathers to receive higher levels of decision s
 
 **Figure 2.:** (A) Percentage of women and men experiencing “substantial” conflict; (B) Odds ratio (women/men) for experiencing work-family conflict; (C) Percentage of women and men receiving “substantial” partner support; (D) Odds ratio (women/men) for receiving partner support. The (women/men) odds ratio values were based on logistic regression. Control variables include discipline, career stage, partner job type, and race. Standard errors were clustered at the institution level. SUEST was used to compare the odds ratio values between parent and non-parent group.
 
-## The mediation effect of work-family conflict and partner support
+### The mediation effect of work-family conflict and partner support
 
 While the above findings suggest the gender gaps in academics’ objective and subjective career achievements, it is unclear what roles work-family conflict and partner support play in forming these gaps. We then used mediation effect analysis to unveil the possible mediating role of work-family conflict and partner support. To increase the interpretability of variables, we first extracted four factors from the three types of work-family conflict and six forms of partner support (nine variables in total) based on principal component analysis and varimax rotation, with each attached with at least one variable contributing significantly (factor loading ≥0.5) to the factor. The four factors explained 66.69% of the total variance. The labels for the four factors are work-family conflict (including time-, strain- and behavior-based conflict), financial support, professional support (including technical and network support), and general support (including emotional, decision, and time support, all of which do not require special skills or economic power) (see Table S6 in Supplementary file 2).
 
@@ -111,7 +203,7 @@ Our mediating effect analysis results provide new evidence for the claim that fa
 
 By combining large-scale survey and bibliometric data, we reveal the decisive role of parenthood in the current gender gap in academia and the underlying mechanisms of how parenting-related conflicts and support mediate the gap. Previous studies asserted the importance of various forms of support from governments and institutions (Morgan et al., 2021). Yet, our results show that family is another new battleground: assistance and support provided by partners in time, emotional and decisional support are also vital. Addressing gender inequality in academia is a task requiring collective intelligence. In addition to parenting-related support by governments and institutions, which could be sometime inadequate due to restrictions on resources and regulations in the U.S., the support from partners and families will also help narrow the gender gap in academia.
 
-## Limitations
+### Limitations
 
 Like many other survey-based studies, our research is not immune to potential bias caused by the self-selection of respondents. Given the topic of our survey, it is not surprising that a higher proportion of women than men in the population may have responded (see Table S6 in Supplementary file 2). Future efforts on this topic should consider strategies to encourage more responses from men academics to ensure the representativeness of both genders. We also restricted our survey to be sent to individuals associated with institutions in the U.S. or Canada only, considering the similarity between the “laddered” academic systems between the two countries and their distinctions from other countries and regions. But this omitted the rising research power in other countries and areas and restricted the generalizability of our findings to the scientific workforce in North America. Future research may examine this issue in other countries and regions of the world to understand the gender gap in the global scientific workforce.
 
@@ -121,13 +213,13 @@ Furthermore, we operationalized objective career achievement in productivity, ci
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 This study relies on two data sources: a large-scale survey distributed to 99,168 researchers and their publication profiles from the WoS database by Clarivate Analytics. For the survey, we extracted from WoS 396,674 researchers who published at least one paper from 2000–2019,, were affiliated with an institution located in the United States or Canada and had a valid email address associated with them. We then randomly sampled 99,168 researchers (25%) from the population and sent a survey with 53 questions about parenting and career development in 2019 through Qualtrics (see Supplementary file 3). A total of 10,333 respondents initiated the survey, of which 9,105 finished. An analysis of the attrition failed to identify a common point of departure, suggesting individual variability in dropout rather than failed survey construction. This study’s final number of respondents is 7,764 after removing respondents lacking information for critical variables of interest (see Table S1 in Supplementary file 1). We also collected data for non-binary academics, who were excluded from our analysis due to an insufficient sample (n=28). The University of Iowa’s Institutional Review Board approved the study (IRB No. 201901776). All respondents gave informed consent before participating in the survey.
 
 To assess the objective career achievement of respondents, we extracted the bibliographic records for individuals, including productivity (for which our proxy was papers), citation (for which our proxy was citation), and extent of collaboration (for which our proxy was unique coauthors). Recognizing the difference in the publication practices across disciplines and the cumulative nature of these measures, we normalized the three indicators of objective career achievement by discipline and time (see Supplementary file 1). We then use the annual relative publication (ARP), average relative citation (ARC), and annual relative coauthor (ARCo) as indicators for productivity, citation, and extent of collaboration.
 
-## Statistical analysis
+### Statistical analysis
 
 This study used binary logistic regression, ordinal logistic regression, linear regression, and Tobit regression model to explore the gender difference in academic careers, depending on the measurement scale of outcome variables. In logistic regression analysis, the odds ratio (OR) of gender (women over men) is computed to explore the role of gender in outcome variables. An OR value lower than 1 indicates women are less likely to produce the outcome than men. Linear regression analysis yields a coefficient for gender (women = 1 and men = 0) rather than odds ratio, where a value below (above) 0 indicates that being a woman has a negative (positive) impact on the outcome measure. We used the Tobit regression model to estimate the relationship between parents’ gender and child number, which is censored as the survey took six as a threshold for child number.
 

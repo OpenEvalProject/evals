@@ -17,19 +17,19 @@
 
 ### Affiliations
 
-1. https://ror.org/05bqach95 Department of Clinical Laboratory Sciences and Medical Biotechnology, College of Medicine, National Taiwan University Taipei Taiwan
-2. https://ror.org/05bqach95 Center of Genomic and Precision Medicine, National Taiwan University Taipei Taiwan
-3. https://ror.org/05bqach95 Department of Laboratory Medicine, National Taiwan University Taipei Taiwan
-4. https://ror.org/05bqach95 Genome and Systems Biology Degree Program, National Taiwan University and Academia Sinica Taipei Taiwan
-5. https://ror.org/05vn3ca78 Institute of Biomedical Sciences, National Chung Hsing University Taichung Taiwan
-6. https://ror.org/03nteze27 Department of Internal Medicine, National Taiwan University Hospital Taipei Taiwan
-7. https://ror.org/00tk6s776 Institute of Biomedical Sciences, Academia Sinica Taipei Taiwan
+1. Department of Clinical Laboratory Sciences and Medical Biotechnology, College of Medicine, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
+2. Center of Genomic and Precision Medicine, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
+3. Department of Laboratory Medicine, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
+4. Genome and Systems Biology Degree Program, National Taiwan University and Academia Sinica Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))
+5. Institute of Biomedical Sciences, National Chung Hsing University Taichung Taiwan ([ROR:05vn3ca78](https://ror.org/05vn3ca78))
+6. Department of Internal Medicine, National Taiwan University Hospital Taipei Taiwan ([ROR:03nteze27](https://ror.org/03nteze27))
+7. Institute of Biomedical Sciences, Academia Sinica Taipei Taiwan ([ROR:00tk6s776](https://ror.org/00tk6s776))
 
 † Corresponding author
 
 ## Abstract
 
-Heat shock protein (HSP) 40 has emerged as a key factor in both innate and adaptive immunity, whereas the role of HLJ1, a molecular chaperone in HSP40 family, in modulating endotoxin-induced sepsis severity is still unclear. During lipopolysaccharide (LPS)-induced endotoxic shock, HLJ1 knockout mice shows reduced organ injury and IFN-γ (interferon-γ)-dependent mortality. Using single-cell RNA sequencing, we characterize mouse liver nonparenchymal cell populations under LPS stimulation, and show that HLJ1 deletion affected IFN-γ-related gene signatures in distinct immune cell clusters. In CLP models, HLJ1 deletion reduces IFN-γ expression and sepsis mortality rate when mice are treated with antibiotics. HLJ1 deficiency also leads to reduced serum levels of IL-12 in LPS-treated mice, contributing to dampened production of IFN-γ in natural killer cells but not CD4 + or CD8 + T cells, and subsequently to improved survival rate. Adoptive transfer of HLJ1-deleted macrophages into LPS-treated mice results in reduced IL-12 and IFN-γ levels and protects the mice from IFN-γ-dependent mortality. In the context of molecular mechanisms, HLJ1 is an LPS-inducible protein in macrophages and converts misfolded IL-12p35 homodimers to monomers, which maintains bioactive IL-12p70 heterodimerization and secretion. This study suggests HLJ1 causes IFN-γ-dependent septic lethality by promoting IL-12 heterodimerization, and targeting HLJ1 has therapeutic potential in inflammatory diseases involving activated IL-12/IFN-γ axis.
+Heat shock protein (HSP) 40 has emerged as a key factor in both innate and adaptive immunity, whereas the role of HLJ1, a molecular chaperone in HSP40 family, in modulating endotoxin-induced sepsis severity is still unclear. During lipopolysaccharide (LPS)-induced endotoxic shock, HLJ1 knockout mice shows reduced organ injury and IFN-γ (interferon-γ)-dependent mortality. Using single-cell RNA sequencing, we characterize mouse liver nonparenchymal cell populations under LPS stimulation, and show that HLJ1 deletion affected IFN-γ-related gene signatures in distinct immune cell clusters. In CLP models, HLJ1 deletion reduces IFN-γ expression and sepsis mortality rate when mice are treated with antibiotics. HLJ1 deficiency also leads to reduced serum levels of IL-12 in LPS-treated mice, contributing to dampened production of IFN-γ in natural killer cells but not CD4+ or CD8+ T cells, and subsequently to improved survival rate. Adoptive transfer of HLJ1-deleted macrophages into LPS-treated mice results in reduced IL-12 and IFN-γ levels and protects the mice from IFN-γ-dependent mortality. In the context of molecular mechanisms, HLJ1 is an LPS-inducible protein in macrophages and converts misfolded IL-12p35 homodimers to monomers, which maintains bioactive IL-12p70 heterodimerization and secretion. This study suggests HLJ1 causes IFN-γ-dependent septic lethality by promoting IL-12 heterodimerization, and targeting HLJ1 has therapeutic potential in inflammatory diseases involving activated IL-12/IFN-γ axis.
 
 ## Introduction
 
@@ -41,51 +41,111 @@ We demonstrated that HLJ1 knockout in mice protects against LPS- and CLP-induced
 
 ## Results
 
-## HLJ1 deficiency protected mice against lethal endotoxic shock
+### HLJ1 deficiency protected mice against lethal endotoxic shock
 
 To address the question of whether HLJ1 participates in regulating LPS-induced systemic inflammatory responses, HLJ1-deficient (Dnajb4−/−) mice and wild-type littermates (Dnajb4+/+) were intraperitoneally injected with LPS derived from Gram-negative bacteria. Dnajb4+/+ and Dnajb4−/− mice showed similar survival rates when LD50 dose of LPS (10 mg/kg) was used (Figure 1A), but Dnajb4−/− mice were significantly more resistant to LPS-induced sepsis and exhibited longer survival than Dnajb4+/+ mice when subjected to a higher lethal dose of LPS (20 mg/kg) (Figure 1B). Since LPS is known to induce systemic immune responses, we analyzed complete blood counts (CBCs) of peripheral blood and pathological changes in the mice injected with LPS. The two genotypes had similar counts and percentages of white blood cells, neutrophils, lymphocytes, monocytes, and eosinophils at 4 and 8 hr post-LPS injection (Figure 1—figure supplement 1A). Although LPS is known to cause liver dysfunction and damage, serum aspartate transaminase (ALT) levels, an indicator of liver damage, were slightly reduced in Dnajb4−/− mice at 8 hr after LPS injection (Figure 1—figure supplement 1B). Since LPS possesses a high affinity for high-density lipoprotein (HDL) and low-density lipoprotein (LDL), causing it to be carried in the circulation and transported to the liver, we also examined serum levels of HDL and LDL. The quantities of both lipoproteins were slightly reduced at 4 hr postinjection, but there was no difference between the two genotypes (Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig1-v2.jpg)
+
+**Figure 1.:** Dnajb4−/− mice survive better than Dnajb4+/+ mice after high-dose LPS injection. Kaplan–Meier analysis of the overall survival of 6- to 8-week-old Dnajb4+/+ mice and Dnajb4−/− mice injected with (A) LD50 (10 mg/kg, n = 10–11 mice/group) or (B) high-dose (20 mg/kg, n = 19 mice/group) LPS. Log-rank Mantel-Cox test was used to compare survival curve. (C) Mice were i.p. injected with low-dose LPS (4 mg/kg) and after 24 hr serum levels of organ dysfunction markers BUN, creatinine, ALT, and AST were analyzed from n = 5–6 mice group. BUN, p = 0.037; creatinine, p = 0.048; ALT, p = 0.049; AST, p = 0.060. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. *p < 0.05; ns, not significant. (D) Representative images of H&E staining of kidney sections from mice treated with 4 mg/kg LPS. Scale bar: 200 μm. Black arrows indicate kidney injury.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Six to eight weeks Dnajb4+/+ and Dnajb4−/− mice were injected with lipopolysaccharide (LPS) of high dose (20 mg/kg). After 4 and 8 hr, blood was collected for analyzing percentage and counts of neutrophils (NEUT), lymphocytes (LYMPH), monocytes (MONO), eosinophils (EOS), and white blood cells (WBC) (n = 5–7 mice). (B) Serum from LPS-injected mice (n = 5–9) were analyzed for ALT levels. (C) Serum from n = 5–10 LPS-injected mice were analyzed for HDL and LDL levels. Data are mean ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test.
+
 The effect of HLJ1 deletion on organ dysfunction was also demonstrated by using a non-lethal dosage of LPS (4 mg/kg) which was able to cause moderate endotoxemia and resemble human endotoxemia. At 24 hr after LPS administration, Dnajb4−/− mice exhibited significantly lower serum levels of BUN, creatinine, and ALT when comparing to Dnajb4+/+ mice (Figure 1C). H&E staining showed kidney injury at the histology level after LPS treatment, while Dnajb4−/− mice showed less severe kidney injury than Dnajb4+/+ mice (Figure 1D). These results indicated the organ dysfunction caused by LPS can be alleviated after HLJ1 deletion.
 
-## HLJ1 deletion alleviates IFN-γ-dependent septic death
+### HLJ1 deletion alleviates IFN-γ-dependent septic death
 
 Cytokine overproduction caused by a dysregulated immune response to infection is a cause of septic shock and multiple organ failure, and can contribute to sepsis-associated death. It is thus important to quantify cytokine levels during the endotoxemia. We thus used a bead-based immunoassay to determine serum levels of multiple LPS-induced cytokines and chemokines. IL-1α levels decreased significantly in Dnajb4−/− mice (Figure 2A). Notably, Dnajb4−/− mice showed significantly lower serum levels of IFN-γ when compared with Dnajb4+/+ mice. We further confirmed the result via ELISA and found that, indeed, serum IFN-γ levels were significantly lower in Dnajb4−/− mice than in Dnajb4+/+ mice (Figure 2B), whereas no difference was observed in IL-1α levels between the two genotypes after LPS induction (Figure 2—figure supplement 1A). The effect of HLJ1 deletion on IFN-γ production was also demonstrated by using a lower dose of LPS (4 mg/kg) which was able to cause moderate endotoxemia. In line with the effects found during severe endotoxemia, HLJ1 deletion led to reduced serum levels of IFN-γ when mice were challenged with a non-lethal dose of LPS (Figure 2C). To confirm that the mitigation of LPS-induced septic death in Dnajb4−/− mice was not due to a change in their susceptibility to IFN-γ, we analyzed the correlation between serum levels of IFN-γ and survival status (Figure 2D). As it turned out, mice bearing high serum levels of IFN-γ died, while those with low levels survived, regardless of genotype, suggesting that HLJ1 deletion does not confer increased susceptibility to IFN-γ. When Dnajb4+/+ mice were injected with anti-IFN-γ neutralizing antibodies prior to LPS treatment, they exhibited significantly improved survival (Figure 2E). However, the survival rate of Dnajb4−/− mice was only slightly improved after IFN-γ neutralization. These results indicated that HLJ1 enhanced septic death by augmenting IFN-γ signaling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig2-v2.jpg)
+
+**Figure 2.:** (A) Serum from Dnajb4+/+ and Dnajb4−/− mice administered with lipopolysaccharide (LPS) was analyzed at the indicated time points to quantify 11 cytokines via a cytokine bead array. IL-1α, p = 0.03; 4 hr IFN-γ, p = 0.027; 8 hr IFN-γ, p = 0.04; n = 5–8 per group. (B) Serum IFN-γ levels were quantified using ELISA 8 hr (n = 20–22) and 18 hr (n = 8–9) after LPS injection. 8 hr IFN-γ, p < 0.001; 18 hr IFN-γ, p = 0.039. (C) Mice (n = 8 biological replicates) were injected with lower dose 4 mg/kg LPS and after 8 hr serum was collected for quantification of IFN-γ levels. p = 0.005. (D) Correlation between survival status and serum IFN-γ levels in Dnajb4+/+ and Dnajb4−/− mice injected with 20 mg/kg LPS (n = 6 mice/group). (E) Kaplan–Meier analysis of overall survival of Dnajb4+/+ and Dnajb4−/− mice (n = 9–10) injected with 100 μg anti-IFN-γ neutralizing antibodies 1 hr before LPS (20 mg/kg) challenge. Dnajb4+/+ versus Dnajb4−/− mice, p = 0.015; Dnajb4+/+ versus Dnajb4+/++anti-IFN-γ, p = 0.007. Data presented are means ± standard deviation (SD). Significance was calculated by using two-tailed, unpaired Student’t t-test. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Serum IL-1α levels from n = 8–9 mice were quantified 8 hr after 20 mg/kg lipopolysaccharide (LPS) injection. (B) After 4 or 8 hr, the RNA from n = 6–8 total livers were isolated and gene expression levels were quantified via quantitative real-time PCR (qRT-PCR). IL-6, p = 0.033. (C) Serum levels of IL-6 in Dnajb4+/+ and Dnajb4−/− mice were quantified via ELISA 4 hr (n = 11–14) and 8 hr (n = 4–7) after LPS administration. (D) Quantification of liver-resident macrophages in LPS-challenged mice. Representative photographs of F4/80 immunofluorescence staining from liver sections of phosphate-buffered saline (PBS) or LPS-injected Dnajb4+/+ and Dnajb4−/− mice. Eight hours after LPS injection, mice were sacrificed and liver was fixed, dehydrated, embedded, cryosectioned into 8 μm thickness, and incubated with anti-F4/80 antibodies to stain mature macrophages (red). (E) Quantitation of F4/80+ macrophages. Positively stained cells were counted at ×400 magnification in 6 fields from 3 sections/mouse and from 5 mice/group. Data are mean ± standard deviation (SD). Significance was calculated by using two-tailed, unpaired Student’t t-test. *p < 0.05.
+
 Since LPS-induced inflammatory liver injury features activation of the NF-κB pathway and the production of multiple inflammatory cytokines for subsequent IFN-γ activation, we next focused on the cytokines and chemokines generated by hepatic macrophages after LPS stimulation. Transcription levels of proinflammatory cytokines IL-1β, TNF-α, and MCP-1 did not differ significantly between genotypes, but IL-6 was downregulated in Dnajb4−/− livers compared with Dnajb4+/+ livers (Figure 2—figure supplement 1B). Serum levels of IL-6 were slightly lower in Dnajb4−/− mice than in Dnajb4+/+ mice after LPS challenge (Figure 2—figure supplement 1C). Kupffer cells are the macrophages of the liver, and they are responsible for clearing bacteria and endotoxins from the blood stream. In response to LPS stimulation, liver-resident Kupffer cells release proinflammatory cytokines and nitric oxide to initiate the inflammatory cascade. We therefore examined the number of Kupffer cells and liver mononuclear cells via F4/80 fluorescent staining, which showed no significant difference between Dnajb4−/− and Dnajb4+/+ mice (Figure 2—figure supplement 1D, E). This suggested that HLJ1 deficiency has little impact on macrophage infiltration before and after LPS administration.
 
-## HLJ1 deficiency resulted in reduced IFN-γ-related signatures in scRNA-seq analysis
+### HLJ1 deficiency resulted in reduced IFN-γ-related signatures in scRNA-seq analysis
 
 To comprehensively identify HLJ1 as a potential immune modulator in specific immune cells, as well as to understand the underlying mechanism by which HLJ1 regulates LPS-induced immune responses in the liver, we performed a scRNA-seq analysis of hepatic nonparenchymal cells. We acquired a t-distributed stochastic neighbor embedding (t-SNE) map of 11,651 single-cell transcriptomes from the livers of Dnajb4+/+ and Dnajb4−/− mice injected with either LPS or saline (Figure 3A). Since apoptotic mammalian cells express mitochondrial genes and export the gene transcripts to the cytoplasm, we performed quality control to exclude cells with high levels of mtDNA expression and retain only high-quality cells (Figure 3—figure supplement 1A, right panel). We also excluded cells with excessive unique molecular identifier (UMI) counts and genes (Figure 3—figure supplement 1A, left and middle panel). The 1917 excluded cells appeared to uniformly distributed across genotypes (Figure 3—figure supplement 1B). Distinct clusters on the t-SNE visualization revealed nine cell types that were identified based on well-known marker genes published in previous studies (Xiong et al., 2011; Zhao et al., 2011; Figure 3, Figure 3—figure supplement 1C, D). LPS stimulation significantly altered gene expression and cell clustering patterns in both genotypes (Figure 3A). HLJ1 was abundant in all cell types, without significant differences among clusters (Figure 3C). We analyzed differentially expressed genes with absolute log-fold changes greater than 0.25 and p values less than 0.05 after LPS induction based on their cell type. In LPS-treated mice, HLJ1 deletion led to most genes being significantly upregulated in dendritic cells, followed by macrophages, and then B cells; on the other hand, downregulated genes were mainly found in macrophages, dendritic cells, and neutrophils (Figure 3D). We therefore selected genes with significant changes in macrophages and dendritic cells for pathway analysis.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig3-v2.jpg)
+
+**Figure 3.:** (A) Mice were injected with 20 mg/kg lipopolysaccharide (LPS), or phosphate-buffered saline (PBS) as a control, and after 8 hr hepatic nonparenchymal cells were isolated for scRNA-seq analysis. The plot shows the t-distributed stochastic neighbor embedding (t-SNE) visualization of liver nonparenchymal cell clusters based on 11,651 single-cell transcriptomes. B, B cells; T, T cells; NK, NK cells; HSC, hepatic stellate cells; Div, dividing cells; DC, dendritic cells; Mac, macrophages; Neut, neutrophils; PLT, platelets. (B) Expression levels of representative known marker genes for each cluster. (C) Visualization of expression distribution of the Dnajb4 gene in each cluster of cells in PBS-treated Dnajb4+/+ mice. Data presented are means ± standard deviation (SD). (D) Cell-type distribution and log-transformed expression fold change (logFC) for upregulated (red) and downregulated (blue) genes from a comparison of LPS-treated Dnajb4+/+ mice with LPS-treated Dnajb4−/− mice. The Wilcoxon rank-sum test was used to identify differentially expressed genes (p < 0.05, |logFC| > 0.25). Enrichment analysis showing ranked pathway signatures associated with up- and downregulated genes (p < 0.05, |logFC| > 0.25) from a comparison of macrophages (E) and dendritic cells (F) from LPS-injected Dnajb4+/+ mice with those from Dnajb4−/− mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cells with unique molecular identifier (UMI) count of greater than 30,000, fewer than 500, or greater than 6000 genes, and >10% of total expression from mitochondrial genes were excluded. (B) t-Distributed stochastic neighbor embedding (t-SNE) visualization of 1917 excluded cells in which UMI count of greater than 30,000, fewer than 500, or greater than 6000 genes, and >10% of total expression from mitochondrial genes. (C) Heat map and (D) dot plot of known marker genes expression in each cell cluster.
+
 Enrichment analysis of these significant genes from LPS-injected Dnajb4+/+ and Dnajb4−/− mice revealed differential expression not only in IFN-γ-activated signaling pathways, but also in MHC class-I-related signals in macrophages (Figure 3E). In dendritic cells, the differentially expressed genes were mainly enriched in IFN-γ-stimulated immune-response pathways and macrophage migration inhibitory factor (MIF) signaling pathways (Figure 3F). Hence, we focused on IFN-γ expression levels in individual cells and found that there were indeed significantly fewer IFN-γ-positive cells in LPS-injected Dnajb4−/− mice than Dnajb4+/+ mice (Figure 4—figure supplement 1A). The extent of IFN-γ induction depended on cell type: LPS treatment led to significantly elevated IFN-γ transcription in NK, T, and B cells, but not in other cell types (Figure 4—figure supplement 1B). The violin plot analysis was further split according to Dnajb4−/− and Dnajb4+/+ genotypes as well as treatment (Figure 4A). IFN-γ expression patterns at the single-cell level among NK, T, and B cells indicated specific distinct clusters of IFN-γ-positive cells in the livers of LPS-injected mice compared to those of control mice (Figure 4B). T and B cells in LPS-treated Dnajb4+/+ and Dnajb4−/− mice exhibited comparable levels of IFN-γ, but the number of IFN-γ-positive NK cells was lower in Dnajb4−/− mice (Figure 4A, B). Indeed, process network analysis showed that significantly differentially expressed genes from the NK cells of LPS-treated Dnajb4+/+ and Dnajb4−/− mice were mainly enriched in inflammatory pathways involving IFN-γ signaling and IFN-γ-related NK cell cytotoxicity (Figure 4C). To further validate the results from the scRNA-seq analysis, we analyzed hepatic IFN-γ expression levels via quantitative real-time PCR (qRT-PCR). We found that there were lower levels of IFN-γ transcripts in Dnajb4−/− mice than in Dnajb4+/+ mice 4 and 8 hr after LPS injection (Figure 4D). These results suggested that HLJ1 plays an important role in promoting severe systemic immune responses via the enhancement of IFN-γ production mediated by NK cells and the alteration of the IFN-γ-related gene signature in endotoxin-induced sepsis.
 
-## Intracellular IFN-γ decreased in splenic NK cells after HLJ1 deletion
+![Figure 4.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig4-v2.jpg)
+
+**Figure 4.:** (A) Violin plot showing IFN-γ expression levels in each type of cell. Significance was calculated using the Wilcoxon rank-sum test. (B) t-Distributed stochastic neighbor embedding (t-SNE) visualization of IFN-γ expression profiles in NK, T, and B cells isolated from Dnajb4+/+ and Dnajb4−/− mice injected with LPS. Significance was calculated using the Wilcoxon rank-sum test. (C) Enrichment analysis showing ranked network signatures associated with up- and downregulated genes (p < 0.05, |logFC| > 0.25) from a comparison of NK cells from LPS-injected Dnajb4+/+ mice with NK cells from Dnajb4−/− mice. (D) Dnajb4+/+ and Dnajb4−/− mice (n = 4-9 mice/group) were injected with LPS and, at the indicated time points, whole liver mRNA was extracted for the measurement of hepatic IFN-γ expression levels via quantitative real-time PCR (qRT-PCR). p = 0.026 and p = 0.014 for the 4 and 8 hr groups, respectively. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. *p < 0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) IFN-γ gene expression levels in each cell. Significance was calculated using the Wilcoxon rank-sum test; p = 0.009. (B) IFN-γ expression patterns in B (p < 0.001), T (p < 0.001), and natural killer (NK) (p < 0.001) cells and other clusters in lipopolysaccharide (LPS)-treated mice. Significance was calculated using the Wilcoxon rank-sum test. **p < 0.01, ***p < 0.001.
+
+### Intracellular IFN-γ decreased in splenic NK cells after HLJ1 deletion
 
 In the spleen, IFN-γ is mainly produced by NK and T cells, which led to systemic immune response and even mortality during acute inflammation as well as septic shock (Chiche et al., 2011; Kunze et al., 2019). We analyzed splenic T and NK cell populations in Dnajb4+/+ and Dnajb4−/− mice and found the percentages (Figure 5—figure supplement 1A, B) and number (Figure 5—figure supplement 1C) of splenic CD4+, CD8+, NK, and B cell populations in LPS-treated Dnajb4−/− mice were similar to those in Dnajb4+/+ mice. To further validate our scRNA-seq data showing that IFN-γ was mainly secreted by NK cells (Figure 4A, B) and identify the cell type responsible for the reduced IFN-γ levels in spleens of Dnajb4−/− mice, we performed flow cytometry analysis by intracellular staining for IFN-γ in B, T, and NK cells isolated from spleens. In LPS-treated mice, the percentage of IFN-γ+ CD4+ and IFN-γ+ CD8+ T cells was slightly lower in LPS-injected Dnajb4−/− mice than in Dnajb4+/+ mice, while that of IFN-γ+ NK cells were significantly lower (Figure 5A), which is in accordance with our findings from the scRNA-seq analysis of mouse hepatic cells. Transcriptional levels of IFN-γ were also lower in the spleens of LPS-treated Dnajb4−/− mice than in Dnajb4+/+ mice (Figure 5B), which implied weakened upstream signaling leading to reduced IFN-γ levels. We therefore tested the responsiveness of isolated NK cells to IL-12, an upstream stimulator inducing NK cells to produce IFN-γ, in vitro. The purity of primary NK cells from spleens of both genotypes was up to ~90% (Figure 5C). We then stimulated the cells with recombinant mouse IL-12p70 for 24 hr, and quantified the supernatant IFN-γ via ELISA. The result indicated that IFN-γ expression was induced in an IL-12p70-dependent manner, and the amount of supernatant IFN-γ produced by HLJ1-deleted NK cells was comparable to that produced by wild-type NK cells in response to IL-12p70 stimulation (Figure 5D). Combined, these results suggested that HLJ1 deletion leads to reduced IFN-γ production in not only hepatic but also splenic NK cells, whereas HLJ1 deficiency alters neither the sensitivity to IL-12p70 nor the ability to secrete IFN-γ of NK cells.
 
-## HLJ1 deletion protect mice from CLP-induced organ dysfunction and septic death
+![Figure 5.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig5-v2.jpg)
+
+**Figure 5.:** (A) Dnajb4+/+ and Dnajb4−/− mice (n = 4 per group) were injected intraperitoneally with 20 mg/kg lipopolysaccharide (LPS), and splenocytes were isolated after 2.5 hr. Expression of intracellular IFN-γ levels in Dnajb4+/+ and Dnajb4−/− NK, CD4+ T, and CD8+ T cells were detected via flow cytometry analysis. NK cells, p = 0.004. Representative samples are shown. (B) RNA from n = 4 mice spleens were isolated 4 hr after LPS administration, and transcriptional levels of IFN-γ were quantified via quantitative real-time PCR (qRT-PCR); p = 0.014. (C) Expression of NK1.1 in primary NK cells isolated from Dnajb4+/+ and Dnajb4−/− mice (n = 5 per group) was detected via flow cytometry. Representative samples are shown. (D) Primary NK cells purified from Dnajb4+/+ and Dnajb4−/− mice spleens were treated with 10 ng/ml IL-12p70 for 24 hr and supernatant IFN-γ was quantified using ELISA (n = 4–5 biological replicates). Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. *p < 0.05, **p < 0.01, n.s., not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CD4+, CD8+ T cell, and B cell population and (B) natural killer (NK) cell population are presented as percentage. Splenic immune cells were isolated from lipopolysaccharide (LPS)-treated Dnajb4+/+ and Dnajb4−/− mice (n = 4 mice/group) and were identified with surface markers of B, CD4+ T, and CD8+ T cells by flow cytometry. (C) Immune cells population are presented as total number. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test.
+
+### HLJ1 deletion protect mice from CLP-induced organ dysfunction and septic death
 
 To address the question whether HLJ1 also regulates IFN-γ-dependent septic shock in live infection model, we performed CLP (cecal ligation and puncture) surgery which more resembles clinical disease and human sepsis. CLP significantly induced transcriptional levels of IFN-γ in the liver of Dnajb4+/+ mice comparing to mice receiving sham surgery while Dnajb4−/− mice showed significantly lower IFN-γ mRNA than Dnajb4+/+ mice (Figure 6A). This phenomenon was not restricted to the liver since lower expression of splenic IFN-γ was also found in Dnajb4−/− mice (Figure 6B). The CLP surgery resulted in severe renal and liver damage while Dnajb4−/− mice showed alleviated organ dysfunction with significantly lower serum levels of BUN, creatinine, and AST (Figure 6C). H&E staining showed kidney injury at the histology level after CLP, while Dnajb4−/− mice showed less severe kidney injury than Dnajb4+/+ mice (Figure 6D). However, there was no significant difference in survival between Dnajb4+/+ and Dnajb4−/− mice (Figure 6E). We hypothesized that severe bacteremia contributed to mortality in mice that did not receive any treatment, so we treat mice with systemic antibiotics. As a result, Dnajb4−/− mice displayed significantly improved survival compared with Dnajb4+/+ mice when they received daily systemic antibiotics after CLP surgery (Figure 6E). These results implicated that the agent responsible for bacteria clearance can be combined with immune modulation such as HLJ1-targeting strategy to improve the outcome of sepsis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig6-v2.jpg)
 
-**Figure 6.:** (A) CLP or sham surgery were performed on Dnajb4 and +/+Dnajb4 mice, and after 18 hr whole liver mRNA was extracted for the measurement of IFN-γ expression levels via quantitative real-time PCR (qRT-PCR) (−/−n = 5–6). p < 0.001. (B) Spleen mRNA was also extracted for the measurement of IFN-γ expression levels via qRT-PCR (n = 5–6). p = 0.031. (C) Serum levels of BUN, creatinine, ALT, and AST were analyzed 18 hr after sham (n = 3) or CLP surgery (n = 5–8). BUN, p = 0.024; creatinine, p = 0.005; ALT, p = 0.225; AST, p = 0.048. (D) Representative images of H&E staining of sham and CLP mouse kidney sections. Scale bar: 200 μm. Black arrows indicate kidney injury. (E) Kaplan–Meier analysis of overall survival of Dnajb4 and +/+Dnajb4 mice. Mice were i.p. injected with 25 mg/kg imipenem/cilastatin (Primaxin) immediately after CLP. Antibiotic treatment was continued twice per day throughout the observation period (−/−n = 8–11 per group). Dnajb4 + CLP + Primaxin versus −/−Dnajb4 + CLP + Primaxin, p = 0.013; −/−Dnajb4 + CLP versus −/−Dnajb4 + CLP + Primaxin, p = 0.010. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001, ns, not significant.−/−Figure 6—source data 1.Figure 6A–C, E.
+**Figure 6.:** (A) CLP or sham surgery were performed on Dnajb4+/+ and Dnajb4−/− mice, and after 18 hr whole liver mRNA was extracted for the measurement of IFN-γ expression levels via quantitative real-time PCR (qRT-PCR) (n = 5–6). p < 0.001. (B) Spleen mRNA was also extracted for the measurement of IFN-γ expression levels via qRT-PCR (n = 5–6). p = 0.031. (C) Serum levels of BUN, creatinine, ALT, and AST were analyzed 18 hr after sham (n = 3) or CLP surgery (n = 5–8). BUN, p = 0.024; creatinine, p = 0.005; ALT, p = 0.225; AST, p = 0.048. (D) Representative images of H&E staining of sham and CLP mouse kidney sections. Scale bar: 200 μm. Black arrows indicate kidney injury. (E) Kaplan–Meier analysis of overall survival of Dnajb4+/+ and Dnajb4−/− mice. Mice were i.p. injected with 25 mg/kg imipenem/cilastatin (Primaxin) immediately after CLP. Antibiotic treatment was continued twice per day throughout the observation period (n = 8–11 per group). Dnajb4−/− + CLP + Primaxin versus Dnajb4−/− + CLP + Primaxin, p = 0.013; Dnajb4−/− + CLP versus Dnajb4−/− + CLP + Primaxin, p = 0.010. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001, ns, not significant.
 
-## HLJ1 contributes to IL-12-dependent IFN-γ production and lethality
+### HLJ1 contributes to IL-12-dependent IFN-γ production and lethality
 
 Since we have found the transcriptional levels of IFN-γ were lower in Dnajb4−/− mice liver (Figure 4D) and, in addition, IL-12/18–IFN-γ axis has been reported to contributed to LPS-induced septic death, we therefore analyzed the transcriptional levels of IL-12 and IL-18 in the liver. Intriguingly, hepatic IL-12 were lower in Dnajb4−/− than in Dnajb4+/+ mice, although IL-18 expression levels were similar in the two genotypes (Figure 7A). Serum levels of IL-12p70 were also dramatically decreased in HLJ1-deficient mice (Figure 7B). To investigate the impact of IL-12 on IFN-γ production in the context of HLJ1 deficiency, we administered anti-IL-12 neutralizing antibodies into both genotypes intraperitoneally 1 hr before the LPS challenge. The serum IL-12 induced by LPS was efficiently neutralized by the antibodies, and serum IFN-γ was also dramatically reduced in both genotypes (Figure 7C). It is noteworthy that the serum levels of IFN-γ in anti-IL-12 antibody-injected Dnajb4−/− mice were comparable to those in Dnajb4+/+ mice during sepsis, indicating that HLJ1 enhances IFN-γ expression mainly through IL-12 regulation (Figure 7C). More importantly, IL-12 neutralization significantly reduced the mortality of Dnajb4+/+ mice, which displayed similar survival to Dnajb4−/− mice when challenged with LPS (Figure 7D). However, IL-12 neutralization did not significantly improve the survival of Dnajb4−/− mice, indicating that HLJ1 enhanced sepsis death via IL-12 regulation. Combined, these results suggested that HLJ1 is required for LPS-induced IL-12 production, subsequent IFN-γ release, and eventual sepsis death.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig7-v2.jpg)
 
-**Figure 7.:** Dnajb4 and +/+Dnajb4 mice were intraperitoneally injected with 20 mg/kg lipopolysaccharide (LPS). (−/−A) After 4 or 8 hr, the RNA from n = 6–8 total livers were isolated and gene expression levels were quantified via qRT-PCR. IL-12b, p = 0.029. (B) Serum levels of IL-12p70 in LPS-treated Dnajb4 and +/+Dnajb4 mice were quantified via ELISA 4 hr (−/−n = 11–14) and 8 hr (n = 4–7) after LPS administration. 4 hr IL-12p70, p < 0.001; 8 hr IL-12p70, p = 0.033. (C) Dnajb4 and +/+Dnajb4 mice were intraperitoneally injected with anti-IL-12 neutralizing antibodies 1 hr prior to the injection of 20 mg/kg LPS. After the administration of LPS and anti-IL-12 antibodies, the serum was collected at the indicated time points and analyzed for IL-12 and IFN-γ levels. (−/−D) Kaplan–Meier analysis of overall survival of Dnajb4 and +/+Dnajb4 mice injected with 100 μg anti-IL-12 neutralizing antibodies 1 hr before the 20 mg/kg LPS challenge (−/−n = 9–11 per group). Dnajb4 versus +/+Dnajb4 mice, p = 0.014; −/−Dnajb4 versus +/+Dnajb4 + anti-IL-12, p = 0.007. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001, ns, not significant.+/+Figure 7—source data 1.Figure 7A–D.
+**Figure 7.:** Dnajb4+/+ and Dnajb4−/− mice were intraperitoneally injected with 20 mg/kg lipopolysaccharide (LPS). (A) After 4 or 8 hr, the RNA from n = 6–8 total livers were isolated and gene expression levels were quantified via qRT-PCR. IL-12b, p = 0.029. (B) Serum levels of IL-12p70 in LPS-treated Dnajb4+/+ and Dnajb4−/− mice were quantified via ELISA 4 hr (n = 11–14) and 8 hr (n = 4–7) after LPS administration. 4 hr IL-12p70, p < 0.001; 8 hr IL-12p70, p = 0.033. (C) Dnajb4+/+ and Dnajb4−/− mice were intraperitoneally injected with anti-IL-12 neutralizing antibodies 1 hr prior to the injection of 20 mg/kg LPS. After the administration of LPS and anti-IL-12 antibodies, the serum was collected at the indicated time points and analyzed for IL-12 and IFN-γ levels. (D) Kaplan–Meier analysis of overall survival of Dnajb4+/+ and Dnajb4−/− mice injected with 100 μg anti-IL-12 neutralizing antibodies 1 hr before the 20 mg/kg LPS challenge (n = 9–11 per group). Dnajb4+/+ versus Dnajb4−/− mice, p = 0.014; Dnajb4+/+ versus Dnajb4+/+ + anti-IL-12, p = 0.007. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001, ns, not significant.
 
-## HLJ1 functions in macrophages to maintain the IL-12/IFN-γ axis in vivo and promote septic death
+### HLJ1 functions in macrophages to maintain the IL-12/IFN-γ axis in vivo and promote septic death
 
 When the host is exposed to bacterial endotoxins, macrophages initiate inflammatory responses by sensing microbial products and produce various proinflammatory cytokines, including IL-12. To understand whether HLJ1 functions in macrophages to mediate LPS-induced IL-12 secretion, we performed macrophage transplantation. This was achieved by depleting macrophages and Kupffer cells with clodronate liposomes, followed by adoptive transfer of macrophages from other mice. We injected bone marrow-derived macrophages (BMDMs) intravenously into the mice at 48 hr after the intravenous administration of clodronate liposomes. This was followed by LPS treatment at 72 hr and blood sampling at 76 and 80 hr (Figure 8A). The administration of clodronate liposomes efficiently depleted most of the liver-resident macrophages in both mice genotypes, since we observed few F4/80-positive cells after this process (Figure 8B). Serum levels of IL-12 and IFN-γ in the LPS-treated mice were significantly reduced as a result of this depletion (Figure 8C). After the depletion, the LPS-treated Dnajb4−/− mice into which Dnajb4+/+ BMDMs had been transplanted exhibited higher serum levels of IL-12 and IFN-γ than those into which Dnajb4−/− BMDMs had been transplanted (Figure 8C). Similarly, macrophage-depleted Dnajb4+/+ mice receiving Dnajb4−/− BMDM transplantation and LPS treatment showed lower serum levels of IL-12 and IFN-γ when compared to with those receiving Dnajb4+/+ BMDMs. Adoptive transfer of Dnajb4+/+ BMDMs into Dnajb4−/− mice led to dramatically elevated mortality rates following an LPS challenge compared to Dnajb4+/+ mice transplanted with Dnajb4+/+ BMDMs (Figure 8D). In contrast, the survival of LPS-treated Dnajb4+/+ mice was significantly improved when they were transplanted with Dnajb4−/− BMDMs (Figure 8D). To understand whether transplanted macrophages would function in the liver microenvironment, we stained F4/80+ cells in the liver of BMDM-transplanted mice. As a result, macrophages went to the liver when they were adoptively transferred back into mice (Figure 8—figure supplement 1A, B). Combined, these results indicated that HLJ1 in macrophages is indispensable for maintaining IL-12-mediated IFN-γ production and contributing to septic death in vivo.
 
-## HLJ1 helps IL-12p35 folding and heterodimeric IL-12p70 production
+![Figure 8.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig8-v2.jpg)
+
+**Figure 8.:** (A) 200 μl clodronate liposomes (Clo-Lip) were administered intravenously to Dnajb4+/+ and Dnajb4−/− mice to deplete their endogenous macrophages. After 48 hr, the mice were intravenously injected with 1 × 106 bone marrow-derived macrophages (BMDMs) isolated from Dnajb4+/+ or Dnajb4−/− mice. After BMDM transplantation, Dnajb4+/+ and Dnajb4−/− mice were administered with 20 mg/kg lipopolysaccharide (LPS) and serum was collected at 4 or 8 hr for IL-12 or IFN-γ quantification, respectively. (B) Representative photographs of F4/80 immunofluorescence staining of liver sections from phosphate-buffered saline (PBS) liposome or clodronate liposome-injected Dnajb4+/+ and Dnajb4−/− mice. The liver was fixed, dehydrated, embedded, cryosectioned into slices 8 μm thick, and incubated with anti-F4/80 antibodies to stain the mature macrophages (green). The scale bar represents 100 μm. (C) Mice transplanted with Dnajb4+/+ BMDMs (Dnajb4+/+ MΦ) or Dnajb4−/− BMDMs (Dnajb4−/− MΦ) were administered LPS, and serum from n = 4–5 mice was analyzed for IL-12p70 and IFN-γ levels via ELISA. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. (D) Kaplan–Meier analysis of the overall survival of LPS-injected Dnajb4+/+ and Dnajb4−/− mice transplanted with Dnajb4+/+ and Dnajb4−/− BMDMs (n = 9–10 per group). For Dnajb4+/++Dnajb4+/+ MΦ versus Dnajb4+/++Dnajb4−/− MΦ, p = 0.037. For Dnajb4−/−+Dnajb4−/− MΦ versus Dnajb4−/−+Dnajb4+/+ MΦ, p = 0.036. Log-rank Mantel-Cox test was used to compare survival curve. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative photographs of F4/80 immunofluorescence staining from liver sections of Dnajb4+/+ and Dnajb4−/− mice with BMDMs adoptive transfer or with Clo-Lip alone. 24 hr after i.v. injection of BMDMs, mice were sacrificed and liver was fixed, dehydrated, embedded, cryosectioned into 8 μm thickness, and incubated with anti-F4/80 antibodies to stain mature macrophages (red). (B) Quantitation of F4/80+ macrophages. Positively stained cells were counted at ×400 magnification in 6 fields from 3 sections/mouse and from 5 mice/group. Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test.
+
+### HLJ1 helps IL-12p35 folding and heterodimeric IL-12p70 production
 
 Macrophages are major innate immune cells responsible for IL-12 production in response to an endotoxin challenge, which leads to organ dysfunction and even septic shock. We isolated and differentiated BMDMs to investigate the underlying molecular mechanism of HLJ1-modulated IL-12 expression in macrophages. Up to 98% of BMDMs were obtained when differentiated under macrophage colony-stimulating factor (M-CSF) stimulation, demonstrating that the ability to differentiate did not differ between the genotypes (Figure 9—figure supplement 1A). When treated with LPS plus recombinant IFN-γ, Dnajb4−/− BMDMs generated significantly less supernatant IL-12p70 in culture medium than Dnajb4+/+ BMDMs, but comparable quantities of IL-6 (Figure 9A, Figure 9—figure supplement 1B). Since intracellular IL-12 subunits were folded and assembled to allow secretion of biologically active heterodimeric IL-12, we assessed the ability to heterodimerization by using sandwich ELISA specifically detecting IL-12p70 heterodimer in BMDM cell lysate. Intracellular levels of heterodimeric IL-12p70 in Dnajb4−/− BMDM were also lower than in Dnajb4+/+ BMDM (Figure 9B), suggesting that HLJ1 maintains the levels of IL-12p70 in macrophages.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig9-v2.jpg)
+
+**Figure 9.:** (A) Bone marrow-derived macrophages (BMDMs) isolated from n = 6–7 Dnajb4+/+ and Dnajb4−/− mice were treated with 10 ng/ml lipopolysaccharide (LPS) and 20 ng/ml IFN-γ. Supernatant was collected at the indicated time points, and IL-12p70 was quantified via ELISA. 12 hr, p = 0.003; 24 hr, p = 0.003. (B) LPS/IFN-γ-treated BMDMs from n = 4–5 mice were lysed at the indicated time points and intracellular IL-12p70 was quantified via ELISA. 5 hr, p = 0.006; 8 hr, p = 0.012. (C) IL-12a, IL-12b, IL-6, and IL-18 expression was determined via quantitative real-time PCR (qRT-PCR) in LPS/IFN-γ-treated BMDMs isolated from n = 5 mice. (D) Intracellular IL-12p40 and HLJ1 expression levels were analyzed in LPS/IFN-γ-treated BMDMs isolated from Dnajb4+/+ (+/+) and Dnajb4−/− (−/−) mice. Representative samples of n = 3–5 biological replicates are shown. GAPDH served as a loading control. In comparisons with the 0 hr group (right panel): 2 hr, p = 0.001; 4 hr, p < 0.001; 8 hr, p = <0.001; 16 hr, p = 0.02. (E) The influence of human HLJ1 knockdown on the redox state of human IL-12p35 was analyzed via non-reducing sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE). 293T cells were (co-)transfected with the indicated IL-12p35 subunits and shRNA targeting HLJ1. The percentage of high-molecular-weight (HMW) and low-molecular-weight (LMW) IL-12p35 species in the presence or absence of shHLJ1 was quantified (right panel, n = 4 biological repeats for shHLJ1- and control-transfected cultures; p = 0.001). Where indicated, samples were treated with β-mercaptoethanol (β-Me) after cell lysis to provide a standard for completely reduced protein. GAPDH served as a loading control. Data presented are means ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) F4/80+ BMDMs analyzed with flow cytometry. Bone marrow cells were isolated from Dnajb4+/+ and Dnajb4−/− mouse and differentiated with M-CSF (10 ng/ml) for 7 days. (B) Dnajb4+/+ and Dnajb4−/− BMDMs isolated from n = 4 mice were treated with 100 ng/ml LPS and supernatants were collected at the indicated time points and IL-6 was analyzed by ELISA. (C) Transcriptional levels of il12a, il12b, il6, and il18 in BMDMs isolated from n = 4–5 mice were quantified by quantitative real-time PCR (qRT-PCR). Data are mean ± standard deviation (SD). Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/76094/elife-76094-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A, B) HLJ1 and STAT3 protein levels and phosphorylation levels in LPS-treated 6–8 weeks Dnajb4+/+ (+/+) and Dnajb4−/− (−/−) mouse liver were determined. Representative samples are showed from n = 4 per group. Data are mean ± standard deviation (SD). Image J software was used to quantify the intensity and statistical analysis was performed by using the two-tailed, unpaired Student’s t-test. n.s., not significant. (C) Dnajb4+/+ and Dnajb4−/− mice were administrated with 20 mg/kg LPS and after 4 hr serum was collected for analysis of IL-12p70 and HLJ1 expression by ELISA and western blotting, respectively. For western blotting, 4 μl serum were used for each lane and total proteins in the acrylamide gel were stained as internal control. p value and r value were calculated from 14 samples by Spearman’s correlation coefficient testing.
 
 To understand how HLJ1 affects IL-12 expression, we performed qRT-PCR to evaluate the transcription levels of IL-12. Unexpectedly, we observed no difference in the mRNA levels of either IL-12p35 or IL-12p40 (subunits of IL-12p70) between Dnajb4+/+ and Dnajb4−/− BMDMs upon treatment with either LPS/IFN-γ (Figure 9C) or LPS alone (Figure 9—figure supplement 1C), indicating that HLJ1 deletion has no effect on IL-12 transcriptional regulation. However, our previous in vivo result showed the transcriptional levels of IL-12 was reduced after HLJ1 deletion (Figure 7A). The reason for the discrepancy might be that Dnajb4−/− mice did not have enough IFN-γ to prime upstream IL-12p40 gene promoter in vivo, while in vitro isolated macrophages from both genotypes were treated with similar dosage of exogenous IFN-γ and LPS in the culture medium for priming and activating the cells. Therefore, in vitro macrophages transcribed IL-12 gene without being interfered by endogenous IFN-γ-producing NK cells. Next, we examined mRNA levels of the proinflammatory cytokines IL-6 and IL-18, which did not differ significantly between the two genotypes (Figure 9 and Figure 9—figure supplement 1C). We wondered if HLJ1 affects the quantity of IL-12 subunits, so we immunoblotted IL-12p40, a scaffold protein to maintain assembly induced folding and secretion of IL-12, from LPS/IFN-γ-stimulated BMDM cell lysate, but we observed no significant difference between the genotypes (Figure 9D).
 
@@ -111,52 +171,265 @@ In conclusion, we have demonstrated the previously unknown role of HLJ1 as a reg
 
 ## Materials and methods
 
-## Mice and animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>HLJ1 (Dnajb4)</td>
+      <td>GenBank</td>
+      <td>MGI:1914285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>HLJ1 knockout mice (Dnajb4−/−) in C57BL/6 background</td>
+      <td>Medical College, National Taiwan University</td>
+      <td>N/A</td>
+      <td>National Core Facility for Biopharmaceuticals – A4, Ministry of Science and Technology, Taiwan (https://ncfb.nycu.edu.tw/en/a4.html)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>EpithelialKidney; Embryo</td>
+      <td>ATCC</td>
+      <td>293T</td>
+      <td>Transfected with HLJ1-shRNA containing vectors</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>HLJ1shRNA</td>
+      <td>National RNAi Core Facility (Academia Sinica, Taiwan)</td>
+      <td>TRCN0000419874 NM_007034</td>
+      <td>Transfected construct to express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct(Homo sapiens)</td>
+      <td>IL-12p35 overexpression</td>
+      <td>Origene</td>
+      <td>RC211224NM_000882</td>
+      <td>Transfected construct to express the human IL12A</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary NK cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Bone marrow-derived macrophages</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-12(Clone: C17.8)(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 505310</td>
+      <td>WB (1:1000)Neutralization (100 and 500 μg/mouse)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IFN-γ(Clone: XMG1.2)(Rat monoclonal)</td>
+      <td>BioXCell</td>
+      <td>Cat# BE0055</td>
+      <td>Neutralization (100 μg/mouse)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-12A(Clone: EPR5736)(Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab133751</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dnajb4 (HLJ1)(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 13064-1-AP</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 [CI:A3-1](Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6640</td>
+      <td>ICC/IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng_F</td>
+      <td>Arterioscler Thromb Vasc Biol. 2005 Apr;25(4):791–6.</td>
+      <td>qRT-PCR primer</td>
+      <td>AGCAACAGCAAGGCGAAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng_R</td>
+      <td>Arterioscler Thromb Vasc Biol. 2005 Apr;25(4):791–6.</td>
+      <td>qRT-PCR primer</td>
+      <td>CTGGAC CTGTGGGTTGTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12a_F</td>
+      <td>PNAS July 10, 2012 109 (28) 11200–11205</td>
+      <td>qRT-PCR primer</td>
+      <td>AAGAACGAGAGTTGCCTGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL12a_R</td>
+      <td>PNAS July 10, 2012 109 (28) 11200–11205</td>
+      <td>qRT-PCR primer</td>
+      <td>TTGATGGCCTGGAACTCTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12b_F</td>
+      <td>J Immunol March 1, 2019, 202 (5) 1406–1416</td>
+      <td>qRT-PCR primer</td>
+      <td>GAAGTTCAACATCAAGAGCAGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12b_R</td>
+      <td>J Immunol March 1, 2019, 202 (5) 1406–1416</td>
+      <td>qRT-PCR primer</td>
+      <td>AGGGAGAAGTAGGAATGGGG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IFN-γ</td>
+      <td>Peprotech</td>
+      <td>Cat# 315-05</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>Peprotech</td>
+      <td>Cat# 315-02</td>
+      <td>10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IFN-γ ELISA</td>
+      <td>Biolegend</td>
+      <td>Cat# 430804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-12 ELISA</td>
+      <td>Biolegend</td>
+      <td>Cat# 433604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex</td>
+      <td>Biolegend</td>
+      <td>Cat# 740446</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liposome-encapsulated clodronate</td>
+      <td>Liposoma</td>
+      <td>Car# C-025</td>
+      <td>100 μl/10 gbw</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaCore software</td>
+      <td>Clarivate https://portal.genego.com/</td>
+      <td></td>
+      <td>Pathway analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>Version 8.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Loupe browser</td>
+      <td>10× genomics https://www.10xgenomics.com/products/loupe-browser</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipopolysaccharide (LPS) from E. coli O111:B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L2630</td>
+      <td>Low-dose 4 mg/kgLD50 10 mg/kgHigh-dose 20 mg/kg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and animal experiments
 
 The HLJ1 knockout (Dnajb4−/−) mouse was generated by the gene targeting strategy to delete exon2 of Dnajb4 gene at the embryonic stage. The syngeneic genetic background of Dnajb4 was achieved by backcrossing to C57BL/6 mouse strain over ten generations. Mice deficient in HLJ1 exhibited elevated ER stress-mediated abnormal lipogenesis (paper submitted). All mice were hosted in a pathogen-free facility, maintained in filter-topped cages under standard 12 hr light–dark cycle, and fed standard rodent chow and water ad libitum. All experimental procedures performed were approved by the Institutional Animal Care and Use Committee (IACUC) with IACUC number 20120515, 20201050, and 20220115 at National Taiwan University Medical College. Liver and spleen were excised into adequate size for immunoblotting and qRT-PCR analysis. At the indicated time points, blood was collected from submandibular and complete blood counts were analyzed with IDEXX ProCyte Dx. Serum levels of HDL and LDL were analyzed with Cobas c111 (Roche).
 
-## LPS administration and analysis
+### LPS administration and analysis
 
 The intraperitoneal LPS injection strategy of endotoxemia mouse model was based on previous studies (Samie et al., 2018; Silva et al., 2019; Starr et al., 2010). In survival analysis, 6- to 8-week-old mice were intraperitoneally injected with non-lethal dose (4 mg/kg) or LD50 dose (10 mg/kg) or higher dose (20 mg/kg) LPS (Sigma-Aldrich, L2630) from E. coli O111:B4. For organ pathology analysis, mice were injected with 4 mg/kg LPS and sacrificed 24 hr after injection. Mouse kidney and liver were fixed and parafilm-embedded and sectioned for H&E staining. Serum levels of BUN, creatinine, ALT, and AST were analyzed by AU680 (Beckman Coulter). For cytokine neutralization, mice were i.p. injected with 100 μg anti-IL-12 (C17.8) or anti-IFN-γ (XMG1.2) 1 hr before LPS administration.
 
-## Cecal ligation and puncture
+### Cecal ligation and puncture
 
 CLP and sham surgery were performed according the protocol published in previous study (Au – Toscano et al., 2011). In brief, 6- to 8-week-old mice were anesthetized and practiced a 1-cm midline laparotomy and cecum was exposed with adjoining intestine. The cecum was tightly ligated with a 6.0 silk suture at >1 cm distance from the distal end and was perforated twice with 19 G needle. The cecum was gently squeezed to extrude a small amount of feces to produce sepsis outcome and was returned to the peritoneal cavity. Afterwards, mice were resuscitated with 1 ml of normal saline subcutaneously. Eighteen hours after CLP, mRNA levels of IFN-γ in liver and spleen were analyzed with qRT-PCR. Serum levels of BUN, creatinine, ALT, and AST were analyzed by AU680 (Beckman Coulter). For histological analysis, mouse kidney was fixed with 10% formalin for 48 hr, followed by dehydration, parafilm-embedding and section for H&E staining. For survival rate analysis, 25 mg/kg Primaxin (Merck) was used immediately after CLP and treatment were continued twice per day throughout the observation period.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Dnajb4+/+ and Dnajb4−/− mice were intraperitoneally injected with 20 mg/kg LPS and sacrificed 8 hr postinjection. Largest liver lobe of n = 3 mice from same group were pooled together and grinded with gentleMACS Dissociators. Mouse hepatic parenchymal cells were digested and nonparenchymal cells were isolated by Mouse Liver Dissociation Kit (Miltenyi Biotec). Isolated cells passed through 40 µm cell strainer were treated with Red Blood Cell Lysis Solution (Miltenyi Biotec) to lyse blood cells. To acquire cells with >90% viability, dead cells were removed with Dead Cell Removal Kit (Miltenyi Biotec). Briefly, cells were pelleted by centrifugation at 300 × g for 5 min and resuspended in buffer containing dead cell removal microbeads and incubated at room temperature for 15 min. Cell suspension was applied to the MS columns (MACS Cat# 130-042-201) and effluent containing live cells was collected. Live cells were then centrifuged at 300 × g for 5  min, resuspended in cold 0.04% bovine serum albumin (BSA)/phosphate-buffered saline (PBS) and counted with Bio-Rad’s TC20 automated cell counter. Live cells were prepared for scRNA-seq with the Chromium Single Cell 3′ Reagent Kits v3 (10× Genomics) according to the user guide. Briefly, ~4800 cells were wrapped into each gel bead in emulsion (GEMs, 10× Genomics) at a concentration of 500–1000 cells/μl on Single Cell 3′ Chips v3 (10× Genomics) by using 10× Chromium controller. For reverse transcription incubation, GEMs were transferred to Bio-Rad C1000 Touch Thermal Cycler, followed by post GEMs-RT Cleanup, cDNA Amplification according to the manufacturer’s instructions. Qubit dsDNA HS Assay Kit (Invitrogen) was used to quantified cDNA concentration and single-cell transcriptome libraries were constructed using the 10× Chromium Single Cell 3′ Library (10× Genomics, v3 barcoding chemistry). Quality control was performed with Agilent Bioanalyzer High Sensitivity DNA kit (Agilent Technologies). Libraries were then purified, pooled, and analyzed on Illumina NovaSeq 6000 S2 Sequencing System with 150 bp paired-end reads. scRNA-seq data analysis.
 
 More than two billion scRNA-seq reads were processed and analyzed with the default parameters of CellRanger single-cell software suite (v3.1.0). Base calling files generated by Illumina sequencer were demultiplexed according to the sample index. Sequences were then aligned to the mm10 reference for whole transcriptome analysis. Multiple samples were aggregated for the following analysis. Loupe browser and Seurat (v4.0.0) were used to perform visualization, quality control, normalization, scaling, PCA dimension reduction, clustering, and differential expression analysis (Stuart et al., 2019). Cells with UMI count of greater than 30,000, fewer than 500, or greater than 6000 genes, and >10% of total expression from mitochondrial genes were excluded (Figure 3—figure supplement 1A). The remaining 11,651 cells were unsupervised clustered after aligning the top 12 dimensions and setting resolution to 0.5. The identity for each cluster was assigned according to marker genes for known nonparenchymal cell types in the mouse liver (Xiong et al., 2011; Miao et al., 2019). Differentially expressed genes with absolute log-fold change greater than 0.25 and p value less than 0.05 were used for pathway and network enrichment analysis on the Metacore website. The scRNA-seq data were deposited to GEO as raw and processed files with accession number GSE182137.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RNA was isolated with TRI reagent (Sigma) and reverse transcribed with High-Capacity cDNA Reverse Transcription Kits (Applied Biosystems) according to the manufacturer’s instructions. The cDNA was used for qRT-PCR analysis with Power SYBR Green PCR Master Mix (Applied Biosystems) performed on the ABI-7500 Fast Real Time PCR system. The mRNA expression level was normalized to the amount of GAPDH gene expression, and the values were calculated using the comparative threshold cycle method (2−ΔCt).
 
-## Multiplex bead array and ELISA
+### Multiplex bead array and ELISA
 
 Serum sample were taken at 0, 4, 8, 18, after 20 mg/kg LPS injection. Cytokine array was performed with LEGENDplex Mouse inflammation Panel (Biolegend) according to the manufacturer’s protocol. Data analysis was proceeded by using LEGENDplex Data Analysis Software. Mouse serum levels of IFN-γ, IL-1α, and IL-6 were quantified with Mouse IFN-γ ELISA MAX Deluxe Set (Biolegend), Mouse IL-1α ELISA MAX Deluxe Set (Biolegend), and Mouse IL-6 ELISA MAX Deluxe Set (Biolegend) according to the manufacturer’s protocol. Mouse serum, BMDMs supernatant, and intracellular IL-12p70 were quantified by using ELISA MAX Deluxe Set Mouse IL-12 (p70; Biolegend).
 
-## Flow cytometry
+### Flow cytometry
 
 Mouse spleens were grinded and connective tissues were removed to obtain splenocytes. Pelleted cells were resuspended by 2 ml ACK lysis buffer and incubated for 1 min to lyse red blood cells, followed by a wash with 10 ml 0.2% BSA (bovine serum albumin) in PBS. Pelleted splenocytes were resuspended in 0.2% BSA in PBS containing anti-CD16/CD32 antibodies (Biolegend) to block the Fc receptors before staining. After incubation for 10 min at 4°C, 50 μl diluted antibodies including anti-CD19, CD3, CD4, CD8, and NK1.1 antibody (Biolegend) were added and incubated for 30 min in the dark. Stained cells were washed twice with 0.2% BSA in PBS, resuspended in 300 μl 0.2% BSA in PBS, and then analyzed by CytoFLEX flow cytometer (Beckman Coulter). For intracellular IFN-γ staining, mice were injected with 20 mg/kg LPS and after 2.5 hr splenocytes were isolated. Splenocytes were fixed and permeabilized with 100 μl BD cytofix/cytoperm (BD biosciences) for 20 min after surface staining. BD Perm/Wash Buffer (BD biosciences) was used to wash the cells. Pelleted cells were resuspended in BD Perm/Wash Buffer containing anti-IFN-γ antibodies (Biolegend) for 30 min and analyzed by CytoFLEX flow cytometer.
 
-## Cell culture and transfections
+### Cell culture and transfections
 
 293T cells were cultured in Dulbecco’s modified Eagle medium (DMEM) (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum (FBS) (Merck Millipore), 100 units/ml penicillin, 100 µg/ml streptomycin, 0.25 µg/ml Amphotericin B (Thermo Fisher Scientific) and 2 mM L-glutamine (Thermo Fisher Scientific) at 37°C and 5% CO2. Cells were free from Mycoplasma detected by Mycoplasma Detection Kit (BioSmart, BSMP101). HLJ1-shRNA-containing vectors were obtained from the National RNAi Core Facility (Academia Sinica, Taiwan). Plasmid containing human IL-12p35 cDNAs were obtained from Origene. One day before transfection, 2 × 105/well 293T cells were plated on 6-well dishes. Cotransfection was carried out in 6-well dishes using lipofectamine 2000 reagent (Thermo Fisher Scientific) by adding 1.2 μg of HLJ1-shRNA and 2 μg of IL-12p35 plasmid DNA according to the protocol of the manufacturer. For primary NK cell experiment, pelleted splenocytes isolated from mice spleen were resuspended in 0.2% BSA in PBS for NK cells purification with Mouse NK Cell Purification Kit (Miltenyi Biotec) according to the manufacturer’s protocol. Purified NK cells were surface-stained with anti-NK1.1 antibodies (Biolegend) for flow cytometry analysis, or were cultured in RPMI 1640 medium (Thermo Fisher Scientific) containing 10% FBS, 100 units/ml penicillin, 100 µg/ml streptomycin, 0.25 µg/ml Amphotericin B, and 2 mM L-glutamine and treated with 10 ng/ml recombinant IL-12p70 (Peprotech) for 24 hr for supernatant IFN-γ analysis.
 
-## BMDM isolation and activation
+### BMDM isolation and activation
 
 Bone marrow was flushed from murine femur and tibia and isolated cells were cultured in complete DMEM (Thermo Fisher Scientific) supplemented with 10 ng/ml M-CSF (Peprotech) (Trouplin et al., 2013). Three days after treatment, culture medium was replaced with fresh complete DMEM with 10 ng/ml M-CSF. At day 7, 106/well differentiated macrophages were seeded into 6-well dishes. The next day BMDMs were classically activated with LPS (10 ng/ml) plus recombinant IFN-γ (Peprotech) (20 ng/ml), or stimulated with LPS alone (100 ng/ml).
 
-## Macrophage depletion and reconstitution
+### Macrophage depletion and reconstitution
 
 Liposome-based macrophage depletion followed by BMDM reconstitution was described previously (Au – Weisser et al., 2012). Liposome-encapsulated clodronate (Liposoma) (100 μl per 10 g body weight) was i.v. administrated to deplete macrophages 3 days before LPS challenge. Adoptive transfer of macrophages was performed by i.v. injecting 1 × 106 BMDMs 2 days after macrophage depletion.
 
-## Immunoblotting experiments
+### Immunoblotting experiments
 
 Cells and mouse tissues were lysed in M-PER or T-PER Tissue Protein Extraction Reagent (Thermo Fisher Scientific) containing additional 1× PhosStop (Sigma) phosphatase inhibitor and 1× protease inhibitor cocktail (Sigma) and protein was extracted according to the manufacturer’s protocol. For non-reducing sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gels, 20 mM N-ethylmaleimide (NEM) (Sigma) was added to the lysis buffer. Samples were supplemented with 0.25 volumes of 4× sample buffer containing either 2-Me for reducing SDS–PAGE or 80 mM NEM for non-reducing SDS–PAGE. Samples were run on 10% SDS–PAGE gels, transferred to PVDF membranes, and blotted with anti-IL-12p35 (Abcam, Cat. ab133751), anti-IL-12p40 (Biolegend, Cat. 505310), anti-HLJ1 (Proteintech, Cat. 13064-1-AP), or anti-GAPDH (Proteintech, Cat. 60004-1-Ig) antibodies. ImageJ Software was used to semiquantify the western blotting results.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed by using the two-tailed, unpaired Student’s t-test with equal variance assumed. Log-rank Mantel–Cox test was used to compare survival curve. Correlation between serum HLJ1 and IL-12 was analyzed by using nonparametric Spearman’s correlation test. In scRNA-seq, differentially expressed genes of specific cell types were identified by using a Wilcoxon rank-sum test. Differences were considered statistically significant when p < 0.05.

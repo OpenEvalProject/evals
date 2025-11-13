@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.41482.001 In a previous study we established forward genetics in the choanoflagellate Salpingoeca rosetta and found that a C-type lectin gene is required for rosette development (Levin et al. , 2014). Here we report on critical improvements to genetic screens in S. rosetta while also investigating the genetic basis for rosette defect mutants in which single cells fail to develop into orderly rosettes and instead aggregate promiscuously into amorphous clumps of cells. Two of the mutants, Jumble and Couscous, mapped to lesions in genes encoding two different predicted glycosyltransferases and displayed aberrant glycosylation patterns in the basal extracellular matrix (ECM). In animals, glycosyltransferases sculpt the polysaccharide-rich ECM, regulate integrin and cadherin activity, and, when disrupted, contribute to tumorigenesis. The finding that predicted glycosyltransferases promote proper rosette development and prevent cell aggregation in S. rosetta suggests a pre-metazoan role for glycosyltransferases in regulating development and preventing abnormal tumor-like multicellularity.
+In a previous study we established forward genetics in the choanoflagellate Salpingoeca rosetta and found that a C-type lectin gene is required for rosette development (Levin et al., 2014). Here we report on critical improvements to genetic screens in S. rosetta while also investigating the genetic basis for rosette defect mutants in which single cells fail to develop into orderly rosettes and instead aggregate promiscuously into amorphous clumps of cells. Two of the mutants, Jumble and Couscous, mapped to lesions in genes encoding two different predicted glycosyltransferases and displayed aberrant glycosylation patterns in the basal extracellular matrix (ECM). In animals, glycosyltransferases sculpt the polysaccharide-rich ECM, regulate integrin and cadherin activity, and, when disrupted, contribute to tumorigenesis. The finding that predicted glycosyltransferases promote proper rosette development and prevent cell aggregation in S. rosetta suggests a pre-metazoan role for glycosyltransferases in regulating development and preventing abnormal tumor-like multicellularity.
 
 ## Introduction
 
@@ -35,11 +35,78 @@ Here we report on the largest class of mutants from the original rosette defect 
 
 ## Results
 
-## Rosette defect mutants form amorphous clumps of cells through promiscuous cell adhesion
+### Rosette defect mutants form amorphous clumps of cells through promiscuous cell adhesion
 
 The original rosette defect screen performed by Levin et al. (2014) yielded nine mutants that were sorted into seven provisional phenotypic classes. For this study, we screened 21,925 additional clones and identified an additional seven mutants that failed to form proper rosettes in the presence of Algoriphagus RIFs. (For this study, we used Algoriphagus outer membrane vesicles as a source of RIFs, as described in Woznica et al., 2016). Comparing the phenotypes of the 16 total rosette defect mutants in the presence and absence of RIFs allowed us to classify four broad phenotypic classes: (1) Class A mutants that have wild type morphologies in the absence of RIFs and entirely lack rosettes in the presence of RIFs, (2) Class B mutants that have wild type morphologies in the absence of RIFs and develop reduced levels of rosettes with aberrant structures in the presence of RIFs, (3) Class C mutants that produce large clumps of cells in both the presence and absence of RIFs while forming little to no rosettes in the presence of RIFs, and (4) a Class D mutant that exist primarily as solitary cells, with no linear chains of cells detected in the absence of RIFs and no rosettes detected in the presence of RIFs (Supplementary file - Table S1).
 
 Of the 16 rosette defect mutants isolated, seven mutants fell into Class C. For this study, we focused on four Class C mutants — Seafoam, Soapsuds, Jumble, and Couscous (previously named Branched in Levin et al., 2014) — that form amorphous, tightly packed clumps of cells, both in the presence and absence of RIFs, but never develop into rosettes (Table 1; Figure 1A,B). We found that the clumps contain a few to hundreds of mutant cells that pack together haphazardly, unlike wild type rosettes in which all cells are oriented with their basal poles toward the rosette center and their apical flagella extending out from the rosette surface (Alegado et al., 2012; Levin et al., 2014; Woznica et al., 2016). Moreover, in contrast with the structural stability and shear resistance of wild type rosettes (Figure 1A) (Levin et al., 2014), the cell clumps formed by Class C mutants were sensitive to shear and separated into solitary cells upon pipetting or vortexing the culture (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig1-v2.jpg)
+
+**Figure 1.:** (A) Wild type cells are unicellular or form linear chains in the absence of rosette inducing factors (RIFs) and develop into organized spherical rosettes when cultured with RIFs. Rosettes are resistant to shear force and survive vortexing. Four class C mutants — Seafoam, Soapsuds, Couscous, and Jumble — form disordered clumps of cells in the presence and absence of RIFs. The clumps are not resistant to vortexing and fall apart into single cells. (B) Class C mutants do not form any detectable rosettes. Rosette development was measured as the % of cells in rosettes after 48 hr in the presence of RIFs and is shown as mean ± SEM. n.d. = no detected rosettes. (C) Class C mutants quickly aggregated into large clumps after disruption by vortexing. After vortexing, wild type and mutant cells were incubated for 30 min in the absence of RIFs and clump sizes were quantified by automated image analysis. Data are presented as violin boxplots, showing the median cell number (horizontal line), interquartile range (white box), and range excluding outliers (vertical line). All mutants had significantly larger masses of cells (K-S test, ****p < 0.0001) than found in cultures of wild type cells. (D) Clumping occurred within minutes after vortexing in the Class C mutants without RIFs, revealing that the clumps form by aggregation and not through cell division. DIC images obtained at 0, 15, and 30 min post-vortexing. Scale bars = 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Wild type, Jumble, and Couscous cells were vortexed and diluted to 1 × 105 cells/ml. Either no addition, DMSO, or 250 μM aphidicolin were added to wild type, Jumble, and Couscous. After 24 hr, cells were counted and imaged. (A) Aphidicolin successfully blocked cell division, while the no addition control and DMSO control grew for all conditions. Mean density plotted ±S.D for three technical replicates on the same day as imaged. (B) In wild type cells, no chains were observed in the aphidicolin-treated cells, but they were able to successfully grow chains when cultured either with no addition or only DMSO. For Jumble and Couscous, clumps formed in all conditions. Clumps formed in the presence of aphidicolin appear smaller, perhaps due to the lower cell density of the cultures or the lack of cell division, both of which may contribute to clump size. Scale bar = 20 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Mutant and wild type cells were plated at a density of 1 × 104 cells/ml and counted every 12 hr to assess growth. Mean density plotted ±SD (n = 2 biological replicates with three technical replicates).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Jumble and Couscous were cultured for 24 hr, either without RIFs or with RIFs. To perform the clumping assay, cells cultured either with or without RIFs were vortexed and then incubated for 30 min. Wild type cells without RIFs were included as a negative control. Clump sizes were quantified by automated image analysis. Data are presented as violin boxplots, showing the median cell number (horizontal line), interquartile range (white box), and range excluding outliers (vertical line). There were no significant differences in clump size in mutants treated with RIFs or without RIFs (K-S test, n.s. = not significant, p > 0.05).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Fluorescent mWasabi expressing wild type cells uninduced or induced to form rosettes by the addition of RIFs were mixed with either Jumble or Couscous cells and imaged after 30 min. Mutant cells adhered non-specifically to each other and wild type cells. Scale bar = 20 μm.
+
+**Table 1.**
+ Phenotypes of wild type and Class C mutants
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>% cells in rosettes</th>
+      <th>Cell interactions</th>
+      <th colspan="2">Successful outcross?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wild type</td>
+      <td>87.7</td>
+      <td>Non-clumping</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Seafoam</td>
+      <td>0</td>
+      <td>Clumping</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Soapsuds</td>
+      <td>0</td>
+      <td>Clumping</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Couscous</td>
+      <td>0</td>
+      <td>Clumping</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Jumble</td>
+      <td>0</td>
+      <td>Clumping</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 Following exposure to shear, we observed that mutant cells re-aggregated into new clumps within minutes, while wild type cells never formed clumps (Figure 1C,D; rare cell doublets were likely due to recent cell divisions). Within 30 min after disruption by shear force, cell clumps as large as 75, 55, 32, and 23 cells formed in Couscous, Soapsuds, Seafoam, and Jumble mutant cultures, respectively. Moreover, blocking cell division with the cell cycle inhibitor aphidicolin did not prevent clump formation (Figure 1—figure supplement 1). Both the speed of clump reformation (less than the ~6 hr required for a single cell division (Levin et al., 2014; Figure 1—figure supplement 2) and the observation of cell clumping in the absence of cell division (Figure 1—figure supplement 1) demonstrate that cell aggregation alone is sufficient to drive clump formation. Indeed, each of the mutants tested also displayed a mild defect in cell proliferation (Figure 1—figure supplement 2).
 
@@ -47,7 +114,7 @@ Therefore, the cell clumps are not aberrant rosettes, which never form through a
 
 The fact that the seven clumping/aggregating Class C mutants isolated in this screen were also defective in rosette development suggests a direct link between promiscuous cell adhesion and failed rosette development.
 
-## Improving genetic mapping in S. rosetta through bulk segregant analysis
+### Improving genetic mapping in S. rosetta through bulk segregant analysis
 
 We next set out to identify the causative mutation(s) underlying the clumping and rosette defect phenotypes in each of these mutants. In the Levin et al. (2014) study, the Rosetteless mutant was crossed to a phenotypically wild type Mapping Strain (previously called Isolate B in Levin et al., 2014) and relied on genotyping of haploid F1s at 60 PCR-verified genetic markers that differed between the Rosetteless mutant and the Mapping Strain (Levin et al., 2014). The 60 markers were distributed unevenly across the 55 Mb genome and proved to be insufficient for mapping the Class C mutants for this study. Compounding the problem, the low level of sequence polymorphism among S. rosetta laboratory strains and abundance of repetitive sequences in the draft genome assembly (Fairclough et al., 2013; Levin et al., 2014) made it difficult to identify and validate additional genetic markers, while genotyping at individual markers proved labor intensive and costly.
 
@@ -57,9 +124,29 @@ To test whether a bulk segregant approach would work in S. rosetta, we first ana
 
 Mapping crosses were carried out for the four clumping/rosette defect mutants characterized in this study (Seafoam, Soapsuds, Jumble, and Couscous) and all four crosses yielded heterozygous diploids, demonstrating that they were competent to mate. As observed in prior studies of S. rosetta mating (Levin et al., 2014; Woznica et al., 2017), the diploid cells each secreted a flask-shaped attachment structure called a theca and were obligately unicellular. Therefore, the heterozygous diploids were not informative about whether the mutations were dominant or recessive as the phenotypes could only be detected in haploid cells. For Seafoam and Soapsuds, we isolated heterozygous diploids, but never recovered F1 offspring with the mutant phenotype (Table 1). The inability to recover haploids with either clumping or rosette defect phenotypes from the Seafoam × Mapping Strain and Soapsuds × Mapping Strain crosses might be explained by any of the following: (1) the clumping/rosette defect phenotypes are polygenic, (2) meiosis defects are associated with the causative mutations, and/or (3) mutant fitness defects allowed wild type progeny to outcompete the mutant progeny. In contrast, heterozygous diploids from crosses of Jumble and Couscous to the Mapping Strain produced F1 haploid progeny with both wild type and mutant phenotypes and thus allowed for the successful mapping of the causative genetic lesions, as detailed below.
 
-## Jumble maps to a putative glycosyltransferase
+### Jumble maps to a putative glycosyltransferase
 
 Following the bulk segregant approach, we identified five sequence variants in Jumble that segregated with both the clumping and rosette defects. Only one of these – at position 1,919,681 on supercontig 1 – had sequencing coverage of at least 0.25X of the average sequence coverage of the rest of the genome (Figure 2A; Supplementary file - Table S3). In a backcross of mutant F1 progeny to the Mapping Strain, we confirmed the tight linkage of the SNV to the rosette defect phenotype (Figure 2B). Moreover, all F2 progeny that displayed a rosette defect also had a clumping phenotype. Given the tight linkage of both traits with the SNV and the absence of any detectable neighboring sequence variants, we infer that the single point mutation at genome position 1:1,919,681 causes both the clumping and rosette defect phenotypes in Jumble mutants.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig2-v2.jpg)
+
+**Figure 2.:** (A) Jumble has a predicted transmembrane domain (marked TM) and secondary structure (alpha helices marked by black rectangles). Structural homology algorithms predict that Jumble is structurally related to well-characterized glycosyltransferases (Figure 2—figure supplement 2B). The mutant gene has a T to C mutation at nucleotide 1109 that causes an amino acid substitution of proline to leucine at amino acid position 305. (B) A backcross of a mutant F1 progeny to the Mapping Strain yielded nine rosette-forming F2 isolates with the wild type T allele and twelve clumpy F2 isolates with the jumblelw1 C allele. The inheritance significantly deviated from expected Mendelian inheritance of unlinked traits and confirmed the tight linkage between the jumblelw1 allele and the clumpy, rosetteless phenotype. X2 = Chi squared value, d.f. = degrees of freedom. (C,D) Transgenic expression of jumble-mTFP and mTFP-jumble rescued rosette development in the Jumble mutant, but jumblelw1-mTFP, mTFP-jumblelw1, or mTFP did not. RIFs were added immediately after transfection and 40 μg/ml puromycin was added 24 hr post-transfection to select for transformants. (C) Rosette development was measured as the % of cells in rosettes 72 hr post-transfection and shown as mean ± SD. n.d. = no detected rosettes. (n = 200 cells counted from each of 3 technical replicates; two biological replicates). (D) Rosettes transgenically complemented with jumble-mTFP in the Jumble mutant appeared phenotypically wild type and most cells in rosettes had detectable fluorescent expression at the apical base of the cell. Representative rosette shown. (E–H) To examine localization, Jumble-mWasabi or Jumblelw1-mWasabi (cyan) under the efl promoter were co-expressed with membrane marker-mCherry (magenta) in wild type S. rosetta. Jumble-mWasabi localizes to the apical pole of cells grown (E) without RIFs or (G) with RIFs, consistent with the localization of the Golgi apparatus. When expressed in otherwise wild type cells grown (F) without RIFs or (H) with RIFs, the mutant Jumblelw1-mWasabi incorrectly localizes to the ER and food vacuole. Boxes indicate the inferred location of the Golgi apparatus at the apical pole of the cell. The food vacuole (asterisk) was often visualized due to autofluoresence from ingested bacteria or through accumulation of the fluorescent markers in the food vacuole, perhaps through autophagy. For reference, arrows indicate the base of the flagellum although the flagellum may not be visible in the plane of focus shown. Scale bars = 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Flow chart of the steps used in mapping cross and bulk segregant analysis.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) S. rosetta Jumble amino acid sequence was aligned to the predicted sequences encoded by homologs from nine other choanoflagellate species, first identified by best reciprocal BLAST using the transcriptomes reported in Richter et al. (2018). Red asterisk indicates the location of the causative mutation in the S. rosetta jumble gene. (B) The structure of Jumble protein predicted by HHphred (teal) was aligned to the catalytic domain of human polypeptide N-acetylgalactosaminyltransferase 4 (GalNAc-T4; purple). The mutated leucine at 305 is found in a predicted alpha helix.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** S. rosetta Jumble protein sequence was aligned to predicted/unannotated protein sequences from four fungal species identified by best reciprocal BLAST: Saitoella complicata (NCBI accession XP_019021578.1), Dactylellina haptotyla (NCBI accession EPS43829.1), Naematelia encephala (NCBI accession ORY22834.1), and Tuber magnatum (NCBI accession PWW71609.1).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) A transmission electron micrograph shows the ultrastructure of S. rosetta. The Golgi apparatus has been pseudo-colored pink and labelled. Image provided courtesy of Kent McDonald and adapted from Booth et al. (2018). (B) Jumblelw1-mWasabi fusion protein shows partial co-localization with the mCherry-ER marker when expressed in wild type S. rosetta. Dashed line marks the inferred location of the nucleus. Scale bar = 1 μm.
 
 The mutation causes a T to C transition in a gene hereafter called jumble (GenBank accession EGD72416/NCBI accession XM_004998928; Figure 2A). The jumble gene contains a single exon and is predicted to encode a 467 amino acid protein containing a single transmembrane domain. Following the convention established in Levin et al. (2014), the mutant allele, which is predicted to confer a leucine to proline substitution at amino acid position 305, is called jumblelw1.
 
@@ -69,9 +156,17 @@ We next sought to determine the function and phylogenetic distribution of the ju
 
 Glycosyltransferases play essential roles in animal development (Sawaguchi et al., 2017; Zhang et al., 2008) and cell adhesion (Müller et al., 1979; Stratford, 1992). Their biochemical functions include transferring an activated nucleotide sugar, also called a glycosyl donor, to lipid, protein, or carbohydrate acceptors (Lairson et al., 2008). Target acceptors in animals include key signaling and adhesion proteins such as integrins and cadherins, whose activities are regulated by N- and O-linked polysaccharide modifications, also referred to as N- and O-linked glycans (Larsen et al., 2017; Zhao et al., 2008). Notably, many well-characterized glycosyltransferases act in the Golgi apparatus, where they glycosylate molecules that are trafficked through the secretory system (El-Battari, 2006; Tu and Banfield, 2010). To investigate the localization of Jumble, we transfected wild type cells with a jumble-mWasabi gene fusion transcribed under the control of the S. rosetta efl promoter. Jumble-mWasabi protein localized to the apical pole of the cell body near the base of the flagellum. Based on comparisons with transmission electron micrographs of S. rosetta and other choanoflagellates, Jumble-mWasabi localization corresponds to the location of the Golgi apparatus, for which there is not yet a fluorescent marker in S. rosetta (Figure 2E,G; Figure 2—figure supplement 4A) (Leadbeater, 2015). In contrast, Jumblelw1-mWasabi, was distributed in a tubular pattern throughout the cell and co-localized with an endoplasmic reticulum (ER) marker (Figure 2F,H; Figure 2—figure supplement 4B) (Booth et al., 2018). The ER localization of Jumblelw1 is consistent with the hypothesis that the missense mutation disrupts proper protein folding as often misfolded proteins are retained in the ER and targeted for degradation (Kopito, 1997). The failure of the Jumblelw1 protein to localize properly at the Golgi apparatus strongly suggests a loss of function.
 
-## Couscous maps to a lesion in a predicted mannosyltransferase
+### Couscous maps to a lesion in a predicted mannosyltransferase
 
 We followed a similar strategy to map the genetic lesion(s) underlying the Couscous mutant phenotype. Using the bulk segregant approach on F1 mutant offspring from a Couscous × Mapping Strain cross, we identified eight sequence variants that segregated with the clumping and rosette defect phenotypes, of which only one – a single nucleotide deletion at position 462,534 on supercontig 22 – had sequencing coverage at least 0.25X of the average sequence coverage of the rest of the genome (Figure 3A; Supplementary file - Table S4). The tight linkage of the deletion to both the clumping and rosette defect phenotypes was further confirmed by genotyping the sequence variant in F2 mutants resulting from backcrosses of F1 mutants to the Mapping Strain (Figure 3B). Given the tight linkage, we infer that the deletion at position 462,534 on supercontig 22 causes both clumping and the disruption of rosette development in Couscous mutant cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig3-v2.jpg)
+
+**Figure 3.:** (A) Couscous has a predicted signal sequence (S), a PAN/Apple domain (PAN), and a mannosyltransferase domain. The causative lesion is a 1-base pair deletion at nucleotide position 2447 that causes a frameshift at amino acid 728, resulting in 75 amino acids that do not align between the wild type and mutant (Cous) sequences, and an early stop codon (*) at amino acid 803. (B) Independent backcrosses of two individual mutant F1 progeny to the Mapping Strain yielded 38 rosette-forming F2 isolates with the wild type GCCC allele and 51 clumpy F2 isolates with the couscouslw1 GCC allele. The inheritance significantly deviated from expected Mendelian inheritance of unlinked traits and confirmed the tight linkage between the couscouslw1 allele and the clumpy, rosetteless phenotype. X2 = Chi squared value, d.f. = degrees of freedom. (C, D) Rosette formation in Couscous mutant cells can be rescued by transgenic expression of couscous-mTFP or mTFP-couscous, but not couscouslw1-mTFP, mTFP-couscouslw1, or mTFP alone. RIFs were added immediately after transfection and 40 μg/ml puromycin was added 24 hr post-transfection to select for positive transformants. (C) Rosette development (mean ± SD) was measured as the % of cells in rosettes 72 hr after transfection and treatment with RIFs. n.d. = no detected rosettes. (n = 200 cells counted from each of 3 technical replicates; two biological replicates). (D) Rosettes transgenically complemented with couscous-mTFP in the Couscous mutant appeared phenotypically wild type. Representative rosette shown. Scale bar = 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The predicted mannosyltransferase domain from S. rosetta was aligned to the alpha-mannosyltransferase domain of MNN2 genes from S. cerevisiae (NCBI accession NP_009571.1) and C. albicans (NCBI accession XP_710276.1). Red asterisks highlight the conserved DXD motif of many glycosyltransferases. (B) The transgenes mCherry-membrane marker and Couscous-mWasabi fusion protein were expressed in wild type S. rosetta. The Couscous fusion localized to puncta distributed throughout the cell (to the exclusion of an unidentified organelle; circle) and faintly at the cell collar. Scale bar = 5 μm.
 
 The single nucleotide deletion at position 462,534 on supercontig 22 lies in a four-exon gene, hereafter called couscous (GenBank accession EGD77026/NCBI accession XM_004990809). The mutation causes a predicted frameshift leading to an early stop codon in the mutant protein, Couscouslw1 (Figure 3A). As with the Jumble mutant, we were able to rescue rosette formation in a portion of the population by transfecting cells with either a couscous-mTFP or mTFP-couscous gene fusion under the efl promoter (Figure 3C,D), thereby increasing confidence in the mapping results.
 
@@ -79,11 +174,27 @@ The predicted Couscous amino acid sequence contains a specific type of glycosylt
 
 In wild type cells transfected with a couscous-mWasabi transgene under the efl promoter, Couscous was found in puncta scattered throughout the cytosol, collar and cell membrane (Figure 3—figure supplement 1B,C). While Couscous-mWasabi was clearly not localized to the Golgi, the puncta may co-localize with the ER, where glycosyltransferases are also known to function (El-Battari, 2006; Tu and Banfield, 2010). However, despite attempting to co-transfect cells with couscous-mWasabi and a marker of the ER (mCherry fused to a C-terminal HDEL ER retention signal sequence (Booth et al., 2018)), we were unable to detect any cells expressing both gene fusions. In addition, it is possible that the fusion of Couscous to a fluorescent protein or its overexpression interfered with its proper localization in S. rosetta. Therefore, we are currently uncertain about the subcellular localization of Couscous protein.
 
-## Jumble and Couscous mutants lack proper sugar modifications at the basal pole
+### Jumble and Couscous mutants lack proper sugar modifications at the basal pole
 
 Because both Jumble and Couscous have mutations in predicted glycosyltransferases, we hypothesized that the abundance or distribution of cell surface sugars, called glycans, on Jumble and Couscous mutant cells might be altered. To investigate the distribution of cell surface glycans, we stained live S. rosetta with diverse fluorescently labelled sugar-binding lectins. Of the 22 lectins tested, 21 either did not recognize S. rosetta or had the same staining pattern in wild type, Jumble and Couscous cells (Supplementary file - Table S5).
 
 The remaining lectin, jacalin, bound to the apical and basal poles of wild type cells (Figure 4A,B,B’). Jacalin also brightly stained the ECM filling the center of rosettes in a pattern reminiscent of the Rosetteless C-type lectin (Levin et al., 2014) (Figure 4A,B’), although the two were not imaged simultaneously because jacalin does not bind after cell fixation and labelled Rosetteless antibodies accumulate strongly in the food vacuoles of live cells. In contrast with wild type cells, the basal patch of jacalin staining was absent or significantly diminished in Couscous and Jumble mutants, both in the presence and absence of RIFs (Figure 4C–F). Interestingly, the apical patch of jacalin staining in mutant cells appeared similar to wild type cells. This may explain the lack of a clear difference in bands detected with jacalin by western blot between wild type and mutants whole cell lysates (Figure 4—figure supplement 1). Transformation of Jumble cells with mTFP-jumble not only rescued rosette development (Figure 2C,D), but also restored the wild type glycosylation pattern, as revealed by jacalin staining in the center of complemented rosettes (Figure 4—figure supplement 2). The same was true for Couscous cells, in which transformation with couscous-mTFP rescued both rosette development and the wild type glycosylation pattern (Figure 3C,D; Figure 4—figure supplement 2). Thus, the glycosylation defects in Jumble and Couscous mutant cells were directly linked to the genetic lesions in jumble and couscous, respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig4-v2.jpg)
+
+**Figure 4.:** FITC-labelled jacalin binds the apical and basal poles of wild type single cells (B) and becomes enriched in the ECM in the center of rosettes (A, B’ boxed region from A). Although FITC-jacalin staining appeared normal at the apical poles of Jumble (C) and Couscous (D) mutant cells, FITC-jacalin staining at the basal poles of cells was undetectable in cells grown either in the absence (-RIFs; C, D) or presence (+RIFs; C’, D’) of RIFs. Arrows mark the apical pole and arrowheads mark the basal pole. (E) Cartoon depicts how jacalin fluorescence was measured. Starting with micrographs of FITC-jacalin stained cells, a line was drawn tracing from one edge of the collar around the cell body to the other edge of the collar, and the underlying fluorescent signal was normalized for cell size and background intensity. (F) The average normalized fluorescence intensity of jacalin measured in at least 59 cells for each condition was graphed against the normalized length of the cell body (n = 2 biological replicates). Jumble and Couscous -/+RIFs have reduced jacalin binding at the basal pole compared to wild type -/+RIFs. Gray shadows indicate 95% confidence intervals. Scale bars = 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Whole cell lysates from E. pacifica (co-cultured prey bacteria), wild type S. rosetta, Couscous, and Jumble were probed with jacalin. No clear differences in banding pattern were observed among the S. rosetta strains, except for a small band ~25 kD in the Couscous lysate that is likely from E. pacifica contamination. Tubulin was probed as a loading control.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) Biotinylated-jacalin labelled with streptavidin Alexa Fluor 647 has the same localization pattern in the absence (A, C, E) and in the presence (B, D, F) of RIFs as that observed with FITC-labelled jacalin (Figure 4A–D). In wild type cells, jacalin binds the apical and basal poles of single cells (A) and becomes enriched at the center of wild type rosettes (B). In the mutants Jumble (C, D) and Couscous (E, F), jacalin staining was severely reduced at the basal poles both in the absence (C, E) and in the presence (D, F) of RIFs, while the apical pole staining appeared similar to wild type single cells. (G, I) Transfection of Jumble (G) and Couscous (I) with mTFP alone did not restore jacalin localization to the basal pole. Shown here in the presence of RIFs. (H, J) However, Jumble (H) and Couscous (J) complemented with mTFP-jumble or couscous-mTFP, respectively, form rosettes with jacalin localized in the center as observed in wild type rosettes. Arrows mark the apical pole and arrowheads mark the basal pole. Scale bar = 5 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41482/elife-41482-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Jumble and Couscous cells grown without and with RIFs were stained for Rosetteless (magenta), tubulin (gray), and actin (cyan). In uninduced Jumble and Couscous cells, Rosetteless staining localizes to the basal pole, similar to wild type cells. Following treatment of wild type cells with RIFs, Rosetteless staining becomes highly enriched in the center of rosettes and must be imaged with less gain for clarity (0.3% laser power, gain = 650 indicated by green boxes), while Rosetteless is not enriched or apparently secreted from the basal poles of Jumble or Couscous cells (2% laser power, gain = 800). Scale bar = 20 μm.
 
 The loss of basal jacalin staining in Jumble and Couscous mutants indicated that jumblelw1 and couscouslw1 either disrupt proper trafficking of sugar-modified molecules to the basal pole of cells or alter the glycosylation events themselves. Thus, we examined whether the basal secretion of Rosetteless protein was disrupted in the mutant strains. In both Jumble and Couscous cells, Rosetteless protein properly localized to the basal pole, but its expression did not increase nor was it secreted upon treatment with RIFs, as normally occurs in wild type cells (Figure 4—figure supplement 3). Because Rosetteless is required for rosette development, this failure to properly upregulate and secrete Rosetteless might contribute to the rosette defect phenotype in Jumble and Couscous cells.
 
@@ -107,17 +218,237 @@ The clumping, rosette defect mutants underscore the differences between cell agg
 
 ## Materials and methods
 
-## Media preparation, strains, and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Salpingoeca  rosetta)</td>
+      <td colspan="2">jumble</td>
+      <td>NA</td>
+      <td>GenBank accession EGD72416/NCBI accession XM_004998928;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. rosetta)</td>
+      <td colspan="2">couscous</td>
+      <td>NA</td>
+      <td>GenBank accession EGD77026/NCBI accession XM_004990809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">wt</td>
+      <td>PMID: 24139741</td>
+      <td>ATCC PRA-390; accession number SRX365844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">Mapping Strain</td>
+      <td>PMID: 24139741</td>
+      <td>accession numberSRX365839</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">Jumble</td>
+      <td>PMID: 25299189</td>
+      <td>accession number SRR7866767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">Couscous</td>
+      <td>PMID: 25299189</td>
+      <td>accession number SRR7866768</td>
+      <td>Previously named Branched</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">Seafoam</td>
+      <td>PMID: 25299189</td>
+      <td>accession number SRR8263910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. rosetta)</td>
+      <td colspan="2">Soapsuds</td>
+      <td>PMID: 25299189</td>
+      <td>accession number SRR8263909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Algoriphagus macihipongenesis)</td>
+      <td colspan="2">Algoriphagus macihipongenesis</td>
+      <td>PMID: 22368173</td>
+      <td>ATCC BAA-2233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Echinicola pacifica)</td>
+      <td colspan="2">Echinicola pacifica</td>
+      <td>PMID: 16627637</td>
+      <td>DSM 19836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio fishceri)</td>
+      <td colspan="2">Vibrio fishceri ES114</td>
+      <td>PMID: 15703294</td>
+      <td>ATCC 700601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-Rosetteless</td>
+      <td>PMID: 25299189</td>
+      <td></td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">mCherry plasma membrane marker</td>
+      <td>PMID: 30281390</td>
+      <td>RRID:Addgene_109094; Addgene ID NK624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">mCherry ER marker</td>
+      <td>PMID: 30281390</td>
+      <td>RRID:Addgene_109096; Addgene ID NK644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::jumble-mWasabi</td>
+      <td>this paper</td>
+      <td>Addgene ID NK690</td>
+      <td>pUC19 backbone with 5’ S. rosetta elongation factor L (efl) promoter, jumble, mWasabi, and 3’ UTR from actin; assembled by Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::jumblelw1-mWasabi</td>
+      <td>this paper</td>
+      <td>Addgene ID NK691</td>
+      <td>pUC19 backbone with 5’S. rosetta elongation factor L (efl) promoter, jumblelw1, mWasabi, and 3’ UTR from actin; assembled by Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::couscous-mWasabi</td>
+      <td>this paper</td>
+      <td>Addgene ID NK692</td>
+      <td>pUC19 backbone with 5’ S. rosetta elongation factor L (efl) promoter, couscous, mWasabi, and 3’ UTR from actin; assembled by Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-mTFP</td>
+      <td>this paper</td>
+      <td>Addgene ID NK676</td>
+      <td>pUC19 backbone with 5’ S. rosetta elongation factor L (efl) promoter, S. rosetta codon optimized puromycin resistance gene (pac), mTFP, and 3’ UTR from actin; assembled by Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-jumble-mTFP</td>
+      <td>this paper</td>
+      <td>Addgene ID NK694</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; jumble inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-jumblelw1-mTFP</td>
+      <td>this paper</td>
+      <td>Addgene ID NK695</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; jumblelw1 inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-mTFP-jumble</td>
+      <td>this paper</td>
+      <td>Addgene ID NK696</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; jumble inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-mTFP-jumblelw1</td>
+      <td>this paper</td>
+      <td>Addgene ID NK697</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; jumblelw1 inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-couscous-mTFP,</td>
+      <td>this paper</td>
+      <td>Addgene ID NK698</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; couscous inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-couscouslw1-mTFP</td>
+      <td>this paper</td>
+      <td>Addgene ID NK699</td>
+      <td>Parent vector: pEFl5'- Actin3'::pac-P2A-mTFP; couscouslw1 inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-mTFP-couscous</td>
+      <td>this paper</td>
+      <td>Addgene ID NK700</td>
+      <td>Parent vector: pEFl5'-Actin3':: pac-P2A-mTFP; couscous inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pEFl5'-Actin3'::pac-P2A-mTFP-couscouslw1</td>
+      <td>this paper</td>
+      <td>Addgene ID NK701</td>
+      <td>Parent vector: pEFl5'-Actin3':: pac-P2A-mTFP; couscouslw1 inserted using Gibson assembly</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">FITC-labelled jacalin</td>
+      <td>Vector Labs</td>
+      <td>RRID:AB_2336460; Vector Labs: Cat. No.FLK-4100</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">biotinylated jacalin</td>
+      <td>Vector Labs</td>
+      <td>RRID:AB_2336541; Vector Labs: Cat. No. B-1155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">Streptavidin Alexa Fluor 647 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: Cat. No. 32357</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Media preparation, strains, and cell culture
 
 Unenriched artificial seawater (ASW), AK artificial seawater (AK), cereal grass media (CG), and high nutrient (HN) media were prepared as described previously (Booth et al., 2018; Levin et al., 2014; Levin and King, 2013). The wild type strain, from which each mutant was generated, was the described strain SrEpac (ATCC PRA-390; accession number SRX365844) in which S. rosetta is co-cultured monoxenically with the prey bacterium Echinicola pacifica (DSM 19836, Levin et al., 2014; Levin and King, 2013; Nedashkovskaya et al., 2006). Seafoam, Soapsuds, and Couscous (previously named Branched) were generated through X-ray mutagenesis and Jumble was generated by EMS mutagenesis as documented in Levin et al. (2014). In Levin et al. (2014), Branched/Couscous was not thoroughly characterized and was named based on the hypothesis that the clumps formed through cell divisions that resulted in unusually branched chain colonies. (Wild type chain colonies are primarily linear, with rare branches.) Our thorough characterization of the mutant in this study revealed that the clumps form through aggregation and not through branching cell divisions. In order for the mutant name to better reflect the phenotype, we renamed it Couscous. For routine culturing, wild type and mutant cultures were diluted 1:10 every 2–3 days in 5% (v/v) HN media in ASW. The Mapping Strain, (previously called Isolate B in Levin et al., 2014) used for mapping crosses (accession number SRX363839) was grown in the presence of rosette-inducing A. machipongonensis bacteria (ATCC BAA-2233). The Mapping Strain was maintained in 25% (v/v) CG media diluted in ASW and passaged 1:10 every 2–3 days. For transfection of S. rosetta, cells were maintained in 5% (v/v) HN media in AK (Booth et al., 2018). Rosette formation initially was assayed using both live A. machipongonensis and A. machipongonensis outer membrane vesicles (OMVs) prepared as in Woznica et al. (2016). For each strain tested, both methods of rosette induction resulted in similarly low/non-existent percentages of cells in rosettes and visually similar clumps for Class C mutants (Supplementary file - Table S1). Therefore, unless stated otherwise, rosette induction was performed with A. machipongonensis OMVs and referred to here as rosette inducing factors (RIFs).
 
-## Imaging and quantifying rosette phenotypes
+### Imaging and quantifying rosette phenotypes
 
 To image rosette phenotypes (Figure 1A), cells were plated at a density of 1 × 104 cells/ml in 3 ml 5% (v/v) HN media in ASW either with or without Algoriphagus RIFs. Cultures were imaged after 48 hr of rosette induction in 8-well glass bottom dishes (Ibidi 15 μ-Slide eight well Cat. No. 80826) that were coated with 0.1 mg/ml poly-D-lysine (Sigma) for 15 min and washed 3 times with water to remove excess poly-D-lysine. For imaging wild type and mutant cultures in the presence and absence of RIFs (Figure 1A top two panels), 200 μl of cells were plated with a wide bore pipette tip for minimal disruption and allowed to settle for 5 min. For images of vortexed cells (Figure 1A bottom panel), 200 μl of cells were vortexed for 15 s before plating and imaged within 10 min of plating to prevent re-clumping. Cells were imaged live by differential interference contrast microscopy using a Zeiss Axio Observer.Z1/7 Widefield microscope with a Hammatsu Orca-Flash 4.0 LT CMOS Digital Camera and a 63x/NA1.40 Plan-Apochromatic oil immersion lens with 1.6X optivar setting.
 
 To quantify rosette induction (Figure 1B), cells were plated at a density of 1 × 104 cells/ml in 3 ml 5% (v/v) HN media in ASW with RIFs. After 48 hr, an aliquot of cells was vortexed vigorously for 15 s and fixed with formaldehyde. To determine the percentage of cells in rosettes, the relative number of single cells and cells within rosettes were scored using a hemocytometer. Rosettes were counted as a group of 3 or more cells with organized polarity relative to a central focus after exposure to vortexing.
 
-## Imaging and quantification of cell clumping
+### Imaging and quantification of cell clumping
 
 Clumps were quantified using a modified protocol from Woznica et al. (2017) (Figure 1C; Figure 1—figure supplement 3). Mutant cells, and to some extent wild type cells, will adhere to glass. Therefore, to prevent cells from simply sticking to the bottom of the 8-well glass bottom dishes (Ibidi 15 μ-Slide eight well Cat. No. 80826), the dishes were coated with 1% BSA for 1 hr and washed 3 times with water to remove any residual BSA. Importantly, the addition of BSA to the imaging dishes did not cause wild type cells to stick to the bottom of the dishes or to each other. Cells were diluted to 5 × 105 cells/ml, vortexed for 15 s to break apart any pre-formed clumps and plated in the BSA pre-treated dishes. For quantification, DIC images were taken using a Zeiss Axio Observer.Z1/7 Widefield microscope with a Hammatsu Orca-Flash 4.0 LT CMOS Digital Camera and a 20x objective. Images were collected for each strain from 10 distinct locations throughout the well.
 
@@ -125,7 +456,7 @@ Images were batch processed in ImageJ for consistency. To accurately segment the
 
 To examine whether cell division was required for clump formation, we used aphidicolin to block cell division (Figure 1—figure supplement 1). Cells in vortexed wild type, Jumble, and Couscous cultures were counted and diluted to 1 × 105 cells/ml in 5% (v/v) HN media in AK. For each strain, either 250 μM aphicidolin, an equal volume of a DMSO control, or no additional control were added to each condition. After 24 hr, DIC images were taken using a Zeiss Axio Observer.Z1/7 Widefield microscope with a Hammatsu Orca-Flash 4.0 LT CMOS Digital Camera and a 40x air objective.
 
-## Performing mapping crosses
+### Performing mapping crosses
 
 Mapping crosses for each mutant strain (Seafoam, Soapsuds, Jumble, and Couscous) with Mapping Strain (previously described as Isolate B) were attempted using both methods previously shown to induce mating in S. rosetta: nutrient limitation for 11 days and addition of 2.5–5% Vibrio fischeri (ATCC 700601) conditioned media (Levin and King, 2013; Woznica et al., 2017). Both methods were effective at inducing mating for all attempted crosses; here, we report which method was used to generate data for each individual cross. Cells induced to mate were plated by limiting dilution to isolate diploid clones. Clonal isolates were allowed to grow for 5–7 days and screened for populations of thecate cells, as these are the only documented diploid cell type (Levin et al., 2014; Woznica et al., 2017). From each population of thecate cells, we extracted DNA from 75 μl of cells by scraping cells from the plate, harvesting and pelleting the cells, resuspending in 10 μl of base solution (25 mM NaOH, 2 mM EDTA), transferring samples into PCR plates, boiling at 100°C for 20 min, followed by cooling at 4°C for 5 min, and then adding 10 μl Tris solution (40 mM Tris-HCl, pH 7.5). We used 2 μl of this sample as the DNA template for each genotyping reaction. We identified heterozygous strains through genotyping by PCR at a single microsatellite genotyping marker at position 577,135 on supercontig 1 (Forward primer: GACAGGGCAAAACAGACAGA and Reverse primer: CCATCCACGTTCATTCTCCT) that distinguishes a 25 bp deletion in the Mapping Strain (199 bp) from the strain used to generate the mutants (217 bp). Isolates containing PCR products of both sizes were inferred to be diploid. Meiosis was induced by rapid passaging every day in CG medium.
 
@@ -135,27 +466,27 @@ For the successful cross of Jumble to the Mapping Strain, we induced mating by s
 
 For the successful Couscous cross, we induced mating using V. fisheri conditioned media using the approach of Woznica et al. (2017). A mixture of 1 × 106 Couscous and Mapping Strain cells at stationary growth were pelleted and resuspended in 5% (v/v) V. fischeri conditioned media in ASW. After 24 hr, the cells were pelleted, resuspended in 5% (v/v) HN media in ASW, and allowed to recover for 24 hr. We then isolated clones by limiting dilution in 10% (v/v) CG media in ASW. The probability of clonal isolation in this step was between 0.97–0.98. We extracted DNA as described above and identified heterozygous clones through genotyping by PCR at a single microsatellite genotyping marker on supercontig 1. Four clonally isolated heterozygous populations, containing almost exclusively thecate cells, were identified. To induce meiosis, heterozygotes were passaged 1:2 in 25% (v/v) CG media in ASW every 1–2 days for 8 days. As soon as rosettes and swimming cells were observed, we repeated clonal isolation (probability of clonal isolation 0.78–0.97). We collected any clonally isolated populations that formed rosettes or clumps and ignored any wells containing thecate cells assuming that these represented diploid cells that had not undergone meiosis. Only 14.6% of non-thecate isolates were clumps; this deviation from a Mendelian ratio (χ2=225.63, df = 1, p<5.34−51) may indicate a potential fitness defect of the mutant phenotype. Isolates were genotyped with the marker on supercontig 1 to ensure that independent assortment indeed occurred. In total, 22 clumpy F1s were collected for bulk segregant analysis.
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 Jumble, Couscous, Seafoam, and Soapsuds were whole genome sequenced individually to identify the mutation(s) carried in each strain. To do this, Jumble, Couscous, Seafoam, and Soapsuds cells were grown to stationary phase in 500 ml of 5% (v/v) HN media in ASW. To generate pooled genomic DNA for bulk segregant analysis, we grew up 5 × 106 cells of each of the 38 F1s with the rosetteless phenotype from the Rosetteless ×Mapping Strain cross (Levin et al., 2014), 5 × 106 cells of each of the 30 F1s with the clumpy phenotype from the Jumble × Mapping Strain cross, and 5 × 106 cells of each of the 22 F1s with the clumpy phenotype from the Couscous × Mapping Strain cross. For each cross, the F1 cells were pelleted, frozen, and combined during lysis for DNA extraction. For all samples, we performed a phenol-chloroform DNA extraction and used a CsCl gradient to separate S. rosetta DNA from contaminating E. pacifica DNA by GC content (King et al., 2008).
 
 Multiplexed, 100 bp paired-end libraries were prepared and sequenced on an Illumina HiSeq 2000 for the Jumble, Couscous, Seafoam, and Soapsuds mutant DNA alone. Multiplexed, 150 bp paired-end libraries were prepared and sequenced on an Illumina HiSeq 2500 for the Rosetteless ×Mapping Strain cross and the Jumble x Mapping Strain cross pooled DNA. For the Couscous × Mapping Strain cross DNA, a multiplexed, 300 bp paired-end library was prepared and sequenced on an Illumina MiSeq. Raw reads are available at the NCBI Short Read Archive with the BioProject identifier PRJNA490902. BioSample and SRA accession numbers are as follows: Jumble mutant-SAMN10061445 and SRR7866767, Couscous mutant-SAMN10061446 and SRR7866768, Seafoam mutant-SAMN10501893 and SRR8263910, Soapsuds mutant- SAMN10501894 and SRR8263909, Rosetteless × Mapping Strain cross-SAMN10061447 and SRR7866769, Jumble × Mapping Strain cross-SAMN10061448 and SRR7866770, and Couscous × Mapping Strain cross- SAMN10061449 and SRR7866771. Raw reads were trimmed with TrimmomaticPE (Bolger et al., 2014) to remove low quality base calls. Trimmed reads were mapped to the S. rosetta reference genome (Fairclough et al., 2013) using Burrows-Wheeler Aligner (Li and Durbin, 2009), and we removed PCR duplicates with Picard (http://broadinstitute.github.io/picard/). We realigned reads surrounding indel calls using GATK (DePristo et al., 2011) and called variants using SAMtools and bcftools (Li et al., 2009).
 
-## Bulk segregant sequencing analysis
+### Bulk segregant sequencing analysis
 
 No large region of the genome (i.e. haplotype block) was found to co-segregate with the mutant phenotype in any of the crosses, likely because of the sparse, uneven distribution of genetic markers and/or high recombination rates. Sequence variants from the pooled samples were culled using vcftools vcf-isec (Danecek et al., 2011): (1) to keep only any sequence variants in the pooled samples that were shared with the parental mutant strain since any causative mutations should be present in both the pooled sample and the parental mutant strain, and (2) to remove any sequence variants in the pooled samples that were shared with the Mapping Strain (Isolate B), wild type (previously Isolate C), or the unmutagenized control from the Rosetteless mutagenesis (C2E5) since any of these sequence variants should not be causative for rosette defects (Levin et al., 2014; Levin and King, 2013). The remaining variants were filtered by quality: depth >2, quality score >10, and reference allele not N. The remaining list represents high quality variants in the pooled population that are shared with the mutant to the exclusion three different strains competent to form rosettes. Segregating variants were determined by dividing the number of reads that map to the alternative allele by the total number of high quality reads determined by SAMtools and bcftools (Li et al., 2009); any variants with >99% of reads that map to the alternative allele were considered variants that segregated with the mutant phenotype.
 
-## Backcrosses
+### Backcrosses
 
 To test the linkage of clumpy phenotype and the predicted causative mutation from the bulk segregant analysis, F1s with the clumpy phenotype from the Jumble × Mapping Strain and Couscous ×Mapping Strain were backcrossed to the Mapping Strain. For the Jumble F1 backcross, 1 × 106 cells grown up from a clonally isolated F1 with the clumpy phenotype from Jumble ×Mapping Strain and 1 × 106 Mapping Strain cells were mixed, pelleted, and resuspended in 10 ml of 5% (v/v) V. fischeri conditioned media in ASW. After 24 hr, the V. fischeri conditioned media was replaced with 25% (v/v) CG media in ASW and cells were plated to limiting dilution. Clonally isolated thecate populations were genotyped by PCR of the microsatellite on supercontig 1 as described above and four heterozygous diploids populations were identified (probability of clonal isolation 0.79–0.95). The heterozygotes were rapidly passaged for 2 weeks to induce meiosis before being plated for clonal isolation (probability of clonal isolation 0.95–0.98). 12 F2s with the clumpy phenotype and 9 F2s with the rosette phenotype were identified (Figure 2B). Their DNA was extracted using the Base-Tris method described above and the region around the causal mutation was amplified. The resultant PCR product was digested for 4 hr with BfaI, which cleaves the mutant allele but not the wild type allele, and products of the digest were distinguished by agarose gel electrophoresis.
 
 For the two Couscous F1 backcrosses, 2.5 × 105 cells from either one of two F1s with the clumpy phenotype from Couscous × Mapping Strain cross and 2.5 × 105 Mapping Strain cells were mixed, pelleted, resuspending in 0.5 ml of 2.5% (v/v) V. fischeri conditioned media in ASW. After 24 hr, V. fischeri conditioned media was replaced with 25% (v/v) CG media in ASW and cells were plated to limiting dilution (probability of clonal isolation 0.85–0.97). Clonally isolated thecate populations were genotyped by PCR of the microsatellite on supercontig 1 as described above and three heterozygous diploids (six total) were identified in each cross. Isolates were rapidly passaged for 2 weeks to induce meiosis before being plated for clonal isolation (probability of clonal isolation 0.88–0.97). 51 F2s with the clumpy phenotype and 38 F2s with the rosette phenotype were identified (Figure 3B); their DNA was extracted using the Base-Tris method described above, the region around the causal mutation was amplified, and the resultant PCR product was Sanger sequenced.
 
-## Jumble and Couscous domain and structure prediction and alignment
+### Jumble and Couscous domain and structure prediction and alignment
 
 Protein domains encoded by jumble (Figure 2A) and couscous (Figure 3A) were predicted using Interpro (Finn et al., 2017), PFAM (Finn et al., 2016), and the NCBI Conserved Domain Search (Marchler-Bauer et al., 2017). Structural homology analysis of Jumble was performed with Phyre2 (Kelley et al., 2015) and HHphred (Zimmermann et al., 2018). The structure of the human N-acetylgalactosaminyltransferase 4 (GlcNAc T4) catalytic domain (HHphred: E-value 7.5−19) was aligned to the predicted Jumble structure generated by HHphred using the PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC (Figure 2—figure supplement 2B). Other choanoflagellate homologs of jumble were determined by reciprocal BLAST of the 20 sequenced choanoflagellate transcriptomes (Richter et al., 2018) and alignment was performed with ClustalX (Larkin et al., 2007) (Figure 2—figure supplement 2A). Four fungal homologs [Saitoella complicata (NCBI accession XP_019021578.1), Dactylellina haptotyla (NCBI accession EPS43829.1), Naematelia encephala (NCBI accession ORY22834.1), and Tuber magnatum (NCBI accession PWW71609.1)] were identified by best reciprocal BLAST using the S. rosetta Jumble protein sequence and aligned with ClustalX (Larkin et al., 2007) (Figure 2—figure supplement 3).The alignment of Couscous to yeast MNN2 glycosyltransferase domains was performed with ClustalX (Larkin et al., 2007) (Figure 3—figure supplement 1A).
 
-## Generating transgenic constructs
+### Generating transgenic constructs
 
 Jumble (GenBank accession EGD72416/NCBI accession XM_004998928) and Couscous (GenBank accession EGD77026/NCBI accession XM_004990809) were cloned from wild type cDNA prepared as described in Booth et al. (2018). Jumblelw1 was cloned from cDNA prepared from the Jumble mutant. Couscouslw1 could not be cloned from cDNA directly (possibly because of low mRNA levels due to nonsense mediate decay or simply because of high GC content of the gene). However, the 1 bp deletion in Couscouslw1 was confirmed by Sanger sequencing of genomic Couscous DNA. Site directed mutagenesis of the wild type gene was used to generate the mutant allele.
 
@@ -163,21 +494,21 @@ For complementation (Figures 2C,D and and 3C,D), constructs were generated from 
 
 For fluorescent localization (Figure 2E–H, Figure 2—figure supplement 4B, Figure 3—figure supplement 1B,C), constructs were generated from a pUC19 backbone with a 5’ S. rosetta elongation factor L (efl) promoter, mWasabi, and 3’ UTR from actin. Copies of jumble (Addgene ID NK690), jumblelw1 (Addgene ID NK691), and couscous (Addegene ID NK692) were inserted either 5’ of the mWasabi separated by a flexible linker sequence (SGGSGGS) through Gibson cloning. Plasma membrane and ER markers from Booth et al. (2018) were used as previously described (Addgene ID NK624 and NK644).
 
-## S. rosetta transfection and transgene expression
+### S. rosetta transfection and transgene expression
 
 Transfection protocol was followed as described in Booth et al. (2018) (http://www.protocols.io/groups/king-lab). Two days prior to transfection, a culture flask (Corning, Cat. No. 353144) was seeded with Jumble, Couscous, or wild type cells at a density of 5,000 cells/ml in 200 ml of 5% (v/v) HN in AK. After 36–48 hr of growth, bacteria were washed away from the cells in three consecutive rounds of centrifugation and resuspension in sterile AK. After the final wash, the cells were resuspended in a total volume of 100 μl AK and counted on a Luna-FL automated cell counter (Logos Biosystems). The remaining cells were diluted to a final concentration of 5 × 107 cells/ml and divided into 100 μl aliquots. Each aliquot of cells pelleted at 2750 x g, resuspend in priming buffer (40 mM HEPES-KOH, pH 7.5; 34 mM Lithium Citrate; 50 mM L-Cysteine; 15% (w/v) PEG 8000; and 1 μM papain), and incubated at room temperature for 30 min to remove extracellular material coating the cells. Priming buffer was quenched with 50 mg/ml bovine serum albumin-fraction V (Sigma). Cells were pelleted at 1250 x g and resuspend in 25 μl of SF buffer (Lonza). Each transfection reaction was prepared by adding 2 μl of ‘primed’ cells to a mixture of 16 μl of SF buffer, 2 μl of 20 μg/ μl pUC19; 1 μl of 250 mM ATP, pH 7.5; 1 μl of 100 mg/ml Sodium Heparin; and 1 μl of each reporter DNA construct at 5 μg/μl. Transfections were carried out in 96-well nucleofection plate (Lonza) in a Nucleofector 4d 96-well Nucleofection unit (Lonza) with the CM-156 pulse. Immediately after nucleofection, 100 μl of ice-cold recovery buffer (10 mM HEPES-KOH, pH 7.5; 0.9 M Sorbitol; 8% (w/v) PEG 8000) was added to the cells and incubated for 5 min. The whole volume of the transfection reaction plus the recovery buffer was transferred to 1 ml of 5% (v/v) HN in AK in a 12-well plate. After cells recovered for 1 hr, 5 μl of a 10 mg frozen E. pacifica pellet resuspend in 1 ml of AK was added to each well and RIFs were added if looking at rosette induction.
 
-## Transgenic complementation
+### Transgenic complementation
 
 For complementation, Jumble mutants were transfected with the following plasmids: (1) pEFl5'-Actin3'::pac-P2A-Jumble-mTFP (Addgene ID NK694), (2) pEFl5'-Actin3'::pac-P2A-Jumblelw1-mTFP (Addgene ID NK695), (3) pEFl5'-Actin3'::pac-P2A-mTFP-Jumble (Addgene ID NK696), (4) pEFl5'-Actin3'::pac-P2A-mTFP-Jumblelw1 (Addgene ID NK697), and (5) pEFl5'-Actin3'::pac-P2A-mTFP (Addgene ID NK676); and Couscous with the following plasmids: (1) pEFl5'-Actin3'::pac-P2A-Couscous-mTFP (Addgene ID NK698), (2) pEFl5'-Actin3'::pac-P2A-Couscouslw1-mTFP (Addgene ID NK699), (3) pEFl5'-Actin3'::pac-P2A-mTFP-Couscous (Addgene ID NK700), (4) pEFl5'-Actin3'::pac-P2A-mTFP-Couscouslw1 (Addgene ID NK701), and (5) pEFl5'-Actin3'::pac-P2A-mTFP (Addgene ID NK676). Transformed cells were grown an additional 24 hr after transfection to allow for transgene expression, and then 40 μg/ml puromycin was added for selection. Selection occurred for 48 hr before rosette induction was counted by hemocytometer. After vortexing for 15 s and fixing with formaldehyde, 200 cells of each transfection well were counted on a hemocytometer to determine percentage of cells in rosettes (Figure 2C, Figure 3C). Complementation was repeated on two biological replicates with three technical transfection replicates each. Representative rosette images (Figure 2D, Figure 3D) were taken on by confocal microscopy using Zeiss Axio Observer LSM 880 a C-Apochromat 40x/NA1.20 W Korr UV-Vis-IR water immersion objective.
 
-## Live cell imaging
+### Live cell imaging
 
 Glass-bottom dishes for live cell imaging were prepared by corona-treating and poly-D-lysine coating as described in Booth et al. (2018). Transfected cells were prepared for microscopy by pelleting 1–2 ml of cells and resuspend in 200 μl of 4/5 ASW with 100 mM LiCl to slow flagellar beating. Cells were plated on glass-bottom dishes and covered by 200 μl of 20% (w/v) Ficoll 400 dissolved in 4/5 ASW with 100 mM LiCl. Confocal microscopy was performed on a Zeiss Axio Observer LSM 880 with an Airyscan detector and a 63x/NA1.40 Plan-Apochromatic oil immersion objective.
 
 Confocal stacks were acquired in super-resolution mode using ILEX line scanning and two-fold averaging and the following settings: 35 nm x 35 nm pixel size, 100 nm z-step, 0.9–1.0 μsec/pixel dwell time, 850 gain, 458 nm laser operating at 1–6% laser power, 561 nm laser operating at 1–2% laser power, 458/561 nm multiple beam splitter, and 495–550 nm band-pass/570 nm long-pass filter. Images were processed using the automated Airyscan algorithm (Zeiss).
 
-## Lectin staining and jacalin quantification
+### Lectin staining and jacalin quantification
 
 All FITC labeled lectins from kits I, II, and III from Vector Lab (FLK-2100, FLK-3100, and FLK-4100) were tested for recognition in wild type, Jumbled, and Couscous (Supplementary file - Table S5). Cells were plated on poly-D-Lysine coated wells of a 96-well glass bottom plate, lectins were added at a concentration of 1:200 and imaged immediately using Zeiss Axio Observer.Z1/7 Widefield microscope with a Hammatsu Orca-Flash 4.0 LT CMOS Digital Camera and a 20x objective. For further jacalin image analysis (Figure 4), cells were plated on a poly-D-Lysine coated glass bottom dish, 1:400 FITC labelled jacalin and 1:200 lysotracker Red DN-99 (overloaded to visualize the cell body) and were imaged immediately by confocal microscopy using Zeiss Axio Observer LSM 880 a 63x/NA1.40 Plan-Apochromatic oil immersion objective. Images were taken with the following settings: 66 nm x 66 nm pixel size, 64 nm z-step, 0.34 μsec/pixel dwell time, 488 nm laser operating at 0.2% laser power with 700 master gain, and 561 nm laser operating at 0.0175% laser power with 750 master gain. Fifteen unique fields of view chosen based on lysotracker staining. Induced cells were treated with RIFs for 24 hr before imaging.
 
@@ -185,19 +516,19 @@ To process images, Z-stack images were max projected using ImageJ. Individual ce
 
 To examine jacalin localization for the Jumble and Couscous rescue experiments (Figure 4—figure supplement 2), FITC-conjugated jacalin could not be used due to its overlapping emission spectrum with the mTFP fusion protein used for complementation. Therefore, cells were incubated with 1 mg/ml biotinylated jacalin (Vector Labs, Cat. No. B-1155) for 5 min at room temperature and pelleted at 3000xg for 5 min. Once the supernatant was removed, the cells were incubated with 1:1000 Streptavidin Alexa Fluor 647 conjugate (Thermo Fisher Scientific, Cat. No. 32357) for 5 min at room temperature to fluorescently label the jacalin. The cells were then pelleted at 3000xg for 5 min, the supernatant was removed, and the cells were resuspended in ASW and plated for imaging. Jacalin localization was imaged by confocal microscopy using a Zeiss Axio Observer LSM 880 with a 63x/NA1.40 Plan-Apochromatic oil immersion objective.
 
-## Wild type and mutant clumping assays
+### Wild type and mutant clumping assays
 
 Wild type cells transfected with the puromycin resistance gene and mWasabi separated by the P2A self-cleaving peptide under the efl promoter and maintained in 40 μg/ml puromycin to enrich for positive transformants. For clumping assays, equal numbers of mWasabi-wt cells either without RIFs or treated with RIFs for 24 hr prior to the assay were mixed with either Jumble or Couscous, vortexed, and plated on BSA treated 8-well glass bottom dishes. DIC and fluorescent images were obtained after 30 min using Zeiss Axio Observer.Z1/7 Widefield microscope with a Hammatsu Orca-Flash 4.0 LT CMOS Digital Camera and a 40x/NA1.40 Plan-Apochromatic lens (Figure 1—figure supplement 4).
 
-## Wild type and mutant growth curves
+### Wild type and mutant growth curves
 
 All cells strains were plated at a density of 1 × 104 cells/ml in 3 ml 5% (v/v) HN media in AK. Every 12 hr an aliquot of cells was vortexed vigorously for 15 s, fixed with formaldehyde, and counted by hemacytometer. Curves were generated from the average ±SD from two biological replicates with three technical replicates each (Figure 1—figure supplement 2).
 
-## Jacalin western blot
+### Jacalin western blot
 
 Whole cell lysates were made from pelleting 1 × 107 cells at 4C at 3000 x g and resuspending in lysis buffer (20 mM Tris-HCl, pH 8.0; 150 mM KCl; 5 mM MgCl2; 250 mM Sucrose; 1 mM DTT; 10 mM Digitonin; 1 mg/ml Sodium Heparin; 1 mM Pefabloc SC; 0.5 U/μl DNaseI; 1 U/μl SUPERaseIN). Cells were incubated in lysis buffer for 10 min on ice and passed through a 30G needle 5x. Insoluble material was pelleted at 6000 x g for 10 min at 4C. Lysate (1 × 106 cells/sample) was run on a 4–20% TGX mini-gel (Bio-Rad) for 45 min at 200 V and transferred onto 0.2 μm nitrocellulose membrane using the Trans-Blot Turbo Transfer System (Bio-Rad) with semi-dry settings 25V for min. The blot was blocked for 30 min with Odyssey PBS Block (Li-cor). The blot was probed with biotinylated jacalin (1:4,000; Vector Labs) and E7 anti-tubulin antibody (1:10,000; Developmental Studies Hybridoma Bank) diluted in block for 1 hr, and then with IRDye 800 streptavidin (1:1,000; Li-cor) and IRDye 700 mouse (1:1,000; Li-cor) in PBST [PBS with %1 Tween 20 (v/v)]. Blot was imaged on Licor Odyssey (Figure 4—figure supplement 1).
 
-## Rosetteless immunofluorescence staining and imaging
+### Rosetteless immunofluorescence staining and imaging
 
 Immunofluorescence (Figure 4—figure supplement 3) was performed previously described in Levin et al. (2014) with the modifications for better cytoskeleton preservation described in Booth et al. (2018). Two ml of dense wild type, Jumble, and Couscous cells, that were either uninduced or induced with RIFs for 24 hr, were allowed to settle on poly-L-lysine coated coverslips (BD Biosciences) for 30 min. Cells were fixed in two steps: 6% acetone in cytoskeleton buffer (10 mM MES, pH 6.1; 138 KCl, 3 mM MgCl2; 2 mM EGTA; 675 mM Sucrose) for 5 min and then 4% formaldehyde diluted in cytoskeleton buffer for 20 min. The coverslips were gently washed three times with cytoskeleton buffer. Cells were permeabilized with permeabilization buffer [100 mM PIPES, pH 6.95; 2 mM EGTA; 1 mM MgCl2; 1% (w/v) bovine serum albumin-fraction V; 0.3% (v/v Triton X-100)] for 30 min. Cells were stained with the anti-Rosetteless genomic antibody at 3.125 ng/μl (1:400), E7 anti-tubulin antibody (1:1000; Developmental Studies Hybridoma Bank), Alexa fluor 488 anti-mouse and Alexa fluor 647 anti-rabbit secondary antibodies (1:1000 each; Molecular Probes), and 6 U/ml rhodamine phalloidin (Molecular Probes) before mounting in Prolong Gold antifade reagent with DAPI (Molecular Probes).
 

@@ -28,15 +28,39 @@ Here, we used a single-cell transcriptomic approach to establish a molecular cel
 
 ## Results
 
-## Single-Cell RNA-Seq of the Drosophila larval brain reveals different categories of characteristic cell-types
+### Single-Cell RNA-Seq of the Drosophila larval brain reveals different categories of characteristic cell-types
 
 To investigate cellular and molecular diversity in the Drosophila larval brain, we performed single-cell transcriptomics analysis by applying 10X Genomics technology. In short, we dissected the CNS of late first instar larvae and separated the brain lobes from the VNC to enrich for cells populating the larval brain (Figure 1A). We obtained a cell atlas of the first instar larval brain with a total of 9353 cells and a median of 1658 genes per cell. The atlas is composed by cells from two different feeding conditions, normal feeding and 4 hr starvation prior brain dissection. Each experimental condition was treated separately and the libraries obtained were sequenced, aggregated and processed according to the standard pipeline for 10X single cell gene expression. In summary, the normal dataset comprised 4708 cells with a median of 1434 genes per cell and 836,393 mean reads per cell. While the starvation dataset comprised 4645 cells with a median of 1962 genes per cell and 545,512 mean reads per cell (Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental procedure. Drosophila late first instar larval brains/ventral nerve cords (VNC) were dissected and the VNCs were removed. Brains were collected and dissociated into a suspension of single cells. (B) Cell atlas of the larval brain reveals five main cell-types: neurons, NPCs, glial cells, UNs and other cell-types, represented in a Seurat UMAP plot. Groups are color coded. (C) Cell-types are recognized based on the expression of previously characterized marker-genes. A simplified heatmap illustrates this process: a subgroup of cholinergic neurons expresses the pan-neuronal marker elav and ChAT, a protein that catalyzes the biosynthesis of the neurotransmitter acetylcholine; NPCs are recognized by the expression of Notch and dpn and glial cells by repo expression. (D–D’’) Validation of the markers used to identify the different cell-types within the larval brain by immunostainings. The images display one lobe of the larval brain. Nuclei were labeled with DAPI and cellular borders with Dlg (disc large). Scale bar: 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Dimensional reduction, UMAP plot, of the total of cells considered for the analysis. Initially, 29 clusters were manually annotated (upper panel). Due to the similar expression profiles between different cell groups, clusters were combined to generate a simplified UMAP plot with 15 clusters of cells (lower panel). (B) The main cell-types identified are physically separated in the UMAP plot representation. Marker genes are used to confer cell identities: Elav for neurons, Notch for NPCs and repo for glial cells. Gene expression levels are color coded. NPCs: neural progenitor cells, UNs: undifferentiated neurons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Non-neural cells can be distinguished from the total number of cells. These cells are considered to be ‘contaminations’ and arise from reminiscent tissue attached to the brain during and after dissection: lymph gland, hemocytes, corpora allata, ring gland, gut and muscle (red cells). PG, prothoracic gland; CA/RG/G, corpora allata, ring gland and guts; Hs, hemocytes and MCs, muscular cells.
+
 To characterize the cellular population of the larval brain under normal feeding conditions, we further analyze the 4708 cells belonging to the normal experimental condition. These cells were filtered, scaled and normalized using Seurat R package (Butler et al., 2018; Stuart et al., 2018). The resulting 4349 cells, with 12,942 genes detected, were later clustered generating 29 initial cell-clusters that were subsequently visually represented using a novel learning technique for dimensional reduction, Uniform Manifold Approximation and Projection (UMAP) (McInnes et al., 2018) (Figure 1—figure supplement 1A). Clusters were manually annotated based on previously identified marker genes for specific cell-types, typically assessing the top 10 differentially expressed genes across clusters (Figure 1—source data 1). Among the 29 clusters, we distinguished five main cell type categories: differentiated neurons, NPCs, glial cells, undifferentiated neurons and a group of non-neural cells (Figure 1B). Differentiated neurons could be defined by the expression of the pan-neuronal marker embryonic lethal abnormal vision (elav), presynaptic genes or widely expressed neurotransmitters, NPCs by Notch (N) or deadpan (dpn) expression, and glial cells by the expression of reversed polarity (repo) (Figure 1C,D, Figure 1—figure supplement 1B). Some of these cells displayed particular overlaps between their expression profiles, enabling a more simplified version of the UMAP plot with only 15 clusters (Figure 1—figure supplement 1A). Within these clusters we distinguished mushroom body Kenyon Cells (KC), neurons expressing distinct peptides and neurotransmitter-releasing neurons, among the differentiated cells. While in the group of non-neural cells, we could differentiate cells coming from the ring gland, corpora allata, imaginal discs, hemolymph, lymph gland and fat tissue (Figure 1—figure supplement 2A). The identification of these last category demonstrates that during the dissection protocol, while the VNC was removed, different organs remained at least partly attached to the brain. Interestingly these cells clustered separately, further highlighting the power of the methodology.
 
-## Mapping neural progenitor cell diversity reveals presence of characteristic neurogenic cell-types
+### Mapping neural progenitor cell diversity reveals presence of characteristic neurogenic cell-types
 
 Several clusters showed prominent expression of key genes involved in different steps of neurogenesis. We could identify a population of Notch (N) positive cells, divided into several clusters closely located in our dimensionality reduction representation. To further confirm the identity of these cells, we analyzed the expression of known NPCs markers. In addition to N, these cells were expressing dpn, asense (ase), klumpfuss (klu), pointed (pnt) and prospero (pros) (Figure 2—figure supplement 1A). During embryonic development, neuroblasts are known to follow a temporally sequential expression of transcription factors, also known as temporal cascade: Hunchback (Hb), Kruppel (Kr), Pdm1/Pdm2 (Pdm), Castor (Cas) and Grainy head (grh) (Allan and Thor, 2015). The early cascade gene Kr was observed to be expressed in differentiated cells, while the late gene grh was almost exclusively expressed in cells from the neurogenic clusters (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig2-v2.jpg)
+
+**Figure 2.:** (A) Expression-pattern of genes from the temporal cascade distinguish population of cells. Two dimensions UMAP plot labeling genes from the temporal cascade. Grh, grainy head in green and Kr, Kruppel in red. Grh is broadly expressed in the recently born neuroprogenitors, while Kr is expressed in mature cells. (B) Re-analysis of the neurogenic populations by sub-clustering the original NPCs population, plotted in a Seurat UMAP plot, identifies 11 sub-populations of cells. NPCs are further divided into neuroblasts and optic lobe epithelium (OLE). (C) lncRNAs are present in NPCs expression profile. Color coded UMAP plot showing the abundance of long non-coding RNAs (lncRNAs). The scale represents gene expression levels. (D) OLE can be distinguished from the remaining neuroblasts based on the expression of characterized marker genes. Dot size corresponds to the percentage of cells expressing a particular gene, while color intensity represents gene expression levels. (E) Cell-cycle scores can be estimated transcriptionally. UMAP plot showing the different NPCs color coded based on cell-cycle phases. The pie graph illustrates the percentage of NPCs in each phase, G1, G2M and S. (F) EdU incorporation and NPCs proliferation. Immunostaining of the larval brain illustrating Dpn+ proliferating NPCs at 16 hr ALH. Proliferation index (PI) was calculated as the ratio between Dpn+EdU+ NPCs and Dpn+ NPCs. Error bars represent standard error. N = 5. Nuclei were labeled with DAPI. Scale bar: 20 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Two dimensions UMAP plot labeling neurogenic marker genes: dpn, klu, ase, erm, pnt and pros. Localization of the neurogenic population in the original dataset is outlined with a dash line. (B) The original NPCs were sub-clustering, re-analyzed and represented in UMAP plots, indicating the expression of neurogenic marker genes: dpn, klu, ase, erm, pnt and pros. Gene expression level is color coded.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) On top, UMAP plot showing the localization of the undifferentiated neurons (UNs) in the original representation. Bottom, zoom into the UNs displaying the expression of neuronal marker genes: elav, Syt1, nrv3, and other upregulated genes: br, hdc, unk, Thor, scyl and hig. Gene expression level is color coded.
 
 To further resolve NPCs, we sub-clustered all the neurogenic populations, obtaining a new representation for these cells now grouped in 11 clusters (Figure 2B). Next, we examined the top differentially expressed genes among each group and we observed a high degree of similarity in their transcriptional programs. Interestingly, we detected a high number of cells expressing long non-coding RNAs (lncRNAs); some of them with reported functions, as it was the case of cherub (lncRNA:CR43283), known to be involved in tumorigenesis and in normal brain development (Landskron et al., 2018; Malin and Desplan, 2018), but also lncRNAs with unknown functions, like lncRNA:CR30009 (Figure 2C). In parallel, we observed expression of genes reported to be actively transcribed in the optic lobe neuroepithelium, such as Ocho (Ocho), Twin of m4 (Tom) and Bearded (Brd) (Egger et al., 2010) in a subpopulation of cells; therefore, this group of cells was annotated as the optic lobe epithelium (OLE) (Figure 2D). In addition to these genes, we identified basic helix-loop-helix (bHLH) transcription factors, such as E(spl)m8-HLH and E(spl)mgamma-HLH (Figure 2D). The remaining clusters showed different combinations of the following genes, all reported to be involved in neurogenesis: deadpan (dpn), klumpfuss (klu), asense (ase), earmuff (erm), pointed (pnt) and prospero (pros), among others (Figure 2—figure supplement 1B).
 
@@ -44,15 +68,27 @@ Knowing that NPCs upon embryogenesis, beside mushroom body and lateral neurobla
 
 In close proximity to the neurogenic population in the UMAP plot, we identified two clusters of cells that lack expression of neurogenic marker genes, but express neuronal markers such as elav, Syt1 (Synaptotagmin 1) and nervana 3 (nrv3). However, these clusters lacked of marked expression of genes required for neurotransmitter biosynthesis. In addition, we found high expression of headcase (hdc) and unkempt (unk), two genes implicated in controlling proper timing of neural differentiation (Avet-Rochex et al., 2014). Other genes enriched in these cells were Thor, scylla (scyl), hikaru genki (hig) and Broad-Z3 (br) (Figure 2—figure supplement 2A). Since these cells clustered in vicinity of NPCs, apart from the remaining differentiated neurons, their lack of neurotransmitter markers and their expression of differentiation genes, we labeled these cells as presumptive undifferentiated neurons (UNs): UNs 1 and UNs 2. However, further analyses and validations are required to establish their bona fide identity.
 
-## Neuronal cell-types co-express different neuroactive molecules
+### Neuronal cell-types co-express different neuroactive molecules
 
 We next analyzed the population of mature cells, more precisely those cells positive for synaptic markers: synaptobrevin (nSyb) and synaptotagmin (Syt) (DiAntonio et al., 1993), and evaluated the expression of genes involved in the release or synthesis of neurotransmitters: glutamate (Glu), acetylcholine (ACh), gamma-aminobutyric acid (GABA) and monoamines. We classified cells as glutamatergic, cholinergic, GABAergic and monoaminergic neurons; as they expressed: vesicular glutamate transporter (VGlut), vesicular acetylcholine transporter (VAChT), Glutamic acid decarboxylase 1 (Gad1) or vesicular monoamine transporter (Vmat), respectively. Glu and Ach were found to be the most abundant neurotransmitters, as they were each expressed in 24% of the total number of neurons. GABAergic and monoaminergic neurons occupied the third and fourth place, with 17% and 10% of the total number of neurons, respectively. (Figure 3A–B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig3-v2.jpg)
+
+**Figure 3.:** (A) Neurons are classified based on the expression of neurotransmitters. Seurat UMAP plot showing the distribution of the five main neuronal cell-types. (B) Simplified heatmap, representing neuronal subpopulations. Genes displayed are the main markers analyzed to identify neuronal cell-identities. The x axis represents individual cells, each line corresponds to one neuron. Gene expression levels are color coded. (C) Neurotransmitters are co-expressed in a subset of neurons. Dot size corresponds to the percentage of cells expressing a particular gene, while color intensity represents gene expression levels. (D) UpSet plot (Conway et al., 2017) illustrating the co-expression of neurotransmitters. Light and bold numbers represent number of cells and percentages of cells, respectively. The percentages were calculated based on positive cells for a particular neurotransmitter or a combination of them, in comparison to the total of neurons from the dataset. (E) Co-expression analysis based on the simultaneous expression of ple and VGlut. Blend UMAP plot showing only ple positive cells. Cells co-expressing ple and VGlut are shown in yellow. Threshold: 0,4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Neurotransmitters are co-expressed with monoamines. VGlut and ple overlapping. (B–C) Neurotransmitters co-expression. Subsets of Glutamatergic/GABAergic neurons and GABAergic/Cholinergic neurons. Neurons with the overlap of interest are circled with a dashed-line and pointed with arrows. Nuclei were labeled with DAPI. Scale bar: 10 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Re-clustering analysis of monoaminergic neurons revealed an enrichment of Dopaminergic neurons. UMAP plot indicating the expression of dopaminergic marker genes: Vmat, ple and Ddc, against other aminergic markers: Tbh, Tdc2 and SerT. (B) The remaining aminergic neurons can be identified in different clusters in the original UMAP plot, validating the co-expression between neurotransmitters. Gene expression levels are color coded.
 
 In past years, the co-existence of more than one neurotransmitter in the same neuron has been extensively studied in mammals. A neuron could release multiple neurotransmitter types from the same synaptic vesicle, from different vesicles at the same synapse or even at different synaptic boutons (Vaaga et al., 2014). The recent publications on the Drosophila adult brain cell atlas re-opened this subject, by providing a list of co-expressed neuroactive molecules in the brain (Croset et al., 2018; Davie et al., 2018; Nässel, 2018). Therefore, we investigated the phenomenon of dual or multiple transmitter neurons in the larval brain. We analyzed all the possible combinations of the four very well-known marker genes for neurotransmitters: VGlut; VAChT; Gad1 and Vmat. Remarkably, we found an overlap in all combinations, although the occurrence of these events represents a small fraction in the whole dataset. Dual-transmitter neurons were more frequent than triple-transmitter neurons, with the three highest overlap occurring between VGlut and Vmat (3%), followed by VGlut and VAChT (2%) and VGlut and Gad1 (2%). Triple-transmitter expressing neurons only represent approximately 1% of the total of neurons (Figure 3C–E). Next, we validated these observations with immunostainings. We observed an overlapping between VGlut and pale (ple), a tyrosine hydroxylase involved in the synthesis of dopamine (Neckameyer and Quinn, 1989); as well as between VGlut and Gad1 and VAChT and Gad1 (Figure 3—figure supplement 1). Thereby, a subset of neurons actively co-expressed different neurotransmitters, showing that this phenomenon also occurs in the Drosophila larval brain.
 
 Next, we further characterized the group of monoaminergic neurons, defined by the expression of Vmat. We analyzed the expression of specific markers: dopa decarboxylase (Ddc), Tyramine β hydroxylase (Tbh)/Tyrosine decarboxylase 2 (Tdc2) (Monastirioti et al., 1996; Roeder, 2005) and serotonin transporter (SerT); in order to recognize dopaminergic (DA), octopaminergic(OA)/tyraminergic(TA) and serotonergic neurons, respectively. Interestingly, only Ddc and ple were expressed at high levels in monoaminergic neurons, therefore this cluster was labeled as dopaminergic neurons (Figure 3—figure supplement 2A). OA/TA and serotonergic neurons were displayed in different clusters, always in the presence of another neurotransmitter, further supporting our findings of dual expression of transmitter-molecules in the larval brain neurons (Figure 3—figure supplement 2B).
 
-## Characterization of neuropeptide expression in the Drosophila larval brain
+### Characterization of neuropeptide expression in the Drosophila larval brain
 
 Among the population of mature cells, we found a cluster of cells that differentially expressed genes involved in protein synthesis, as well as the pan-neuronal marker elav. Since neuropeptide biogenesis requires the protein synthesis machinery, we wondered if these neurons were peptidergic. After analyzing the different genes being expressed, we observed that these cells contained different known neuropeptides, therefore we classified them as peptidergic neurons. The different neuropeptides followed different expression patterns; some were broadly expressed, while others were only expressed in a small number of cells.
 
@@ -72,7 +108,7 @@ Next, we identified a set of neurons involved in the release of Corazonin (Crz),
 
 Finally, we analyzed the expression of genes required for neurotransmitter synthesis and transport in peptidergic neurons. We observed that PDF neurons were mostly glutamatergic, while IPCs, PTTH and CRZ neurons seemed to be more promiscuous, co-releasing different neurotransmitters. These findings are in agreement with the notion that a single neuron could in principle make use of different types of molecules for intercellular communication (Figure 4F).
 
-## Larval mushroom body characterization identifies three major cell-types
+### Larval mushroom body characterization identifies three major cell-types
 
 A well-studied structure in the Drosophila brain is the mushroom body (MB), a region where olfactory learning and memory take place (Davis, 2011). In the adult fly each MB consists of approximately 2000 neurons, called Kenyon cells (KCs), these cells are produced by four mushroom body neuroblasts (MBNBs) per hemisphere, that arise during embryogenesis and continue dividing until pupal stages (Kunz et al., 2012). The neurons populating the larval MB, are embryonic-born KCs (Pauls et al., 2010). We next addressed if we could identify KCs based on known marker genes for the adult MB.
 
@@ -80,7 +116,7 @@ We first sub-clustered the population identified as mushroom body, identifying t
 
 On the other hand, MBNBs were found to be constantly proliferating, as their cell-cycle scores indicated (Figure 5A). Moreover, these cells expressed characteristic neuroprogenitor marker genes, such as N, asense (ase), Delta (Dl) and tailless (tll). In addition, target of Poxn (tap), a gene playing a key role during mushroom body development was also upregulated in this cell population (Figure 5B). Finally, MBUNs expressed the neuronal markers, nSyb and VAChT, but at lower levels in comparison to MBKCs, indicating that they are not yet fully differentiated. Therefore, the particular composition and expression profiles of the MB cells could explain its location in the UMAP plot, as they are found closer to the NPCs than to neuronal clusters.
 
-## Characterization of glial cell-types populating the larval brain
+### Characterization of glial cell-types populating the larval brain
 
 A major cell-type of the brain are the glial cells. Different types have been described in the adult brain: cortex, surface, neuropil and astrocyte like glia (Croset et al., 2018; Konstantinides et al., 2018). To identify the glial cell populations in the larval brain, we selected the marker genes for each cell-type and evaluated their expression. We observed three different clusters: astrocytes/neuropil glia, cortex/chiasm glia and surface glia, enriched for specific marker genes (Figure 6A).
 
@@ -90,9 +126,25 @@ A major cell-type of the brain are the glial cells. Different types have been de
 
 Astrocytes like glia were identified based on expression of known marker genes: astrocyte leucine-rich repeat molecule (alrm), Excitatory amino acid transporter 1 (Eaat1), GABA transporter (Gat), Glutamine synthetase 2 (Gs2) and wunen-2 (wun2) (Huang et al., 2015). Since we found another cluster of cells expressing Eaat1 and Gs2 in addition to ebony (e), and knowing that the last one is only expressed in neuropil glia, we annotated this cluster as astrocytes/neuropil glia. Then, cortex/chiasm glia was identified by the expression of wrapper (wrapper) (Konstantinides et al., 2018; Noordermeer et al., 1998) and hoepel1 (hoe1). Lastly, surface glia was characterized by the following marker genes: I'm not dead yet (Indy) and CG6126 (Figure 6B).
 
-## Starvation effects on larval brain cellular composition
+### Starvation effects on larval brain cellular composition
 
 Changes in the nutritional state of a brain may alter ongoing transcriptional programs and require additional or parallel ones. Here we focused on understanding how distinct cell-types respond to a specific brain state. Therefore, we set out to alter the availability of nutrients by starving first instar larvae for four hours. We observed that at this time point the initial larval population was reduced approximately two times, indicating the strong effect that starvation has on the survival rate (Figure 7—figure supplement 1). We then compared both larval brain cell atlases, normal versus starvation. We found that both datasets overlap for most clusters containing cells from each condition, with two clusters being present in only one condition. This suggests that after starvation, some cell-types were more strongly affected than others and that the changes in their transcriptional programs made them cluster separately (Figure 7A). Therefore, we proceeded to identify each cluster in order to understand where the effect of starvation had an impact on the larval brain cellular composition (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig7-v2.jpg)
+
+**Figure 7.:** (A) Starvation reveals sensitive cell types. Overlapping UMAP plots for the normal and starved condition, evidence the overall similarity among cell atlases, with few exceptions. (B) Integration across conditions recapitulates the principal cell types largely described in the previous sections. (C) A closer look to the Neurons X reveals its composition. Different neurotransmitters seemed to be equally expressed in the cells of Neurons X cluster. (D) UNs 1 and UNs 2 shared common features. The dot plot representation illustrates some of the marker genes for this particular cell type and the effect of starvation on their expression levels. Dot size corresponds to percentage of cells expressing a particular gene, while color intensity represents gene expression levels.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Upon 4 hr of starvation, the population of first instar larvae was reduced to approximately 45% of the initial number. Error bars represent standard error. N = 5.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) UNs were quantified based on the combination of high and low expression levels of hdc and elav, respectively. (B) UNs cells were quantified prior and after starvation. Upon nutrient restriction, the number of UNs was drastically reduced. Error bars represent standard error. Student’s t test, *p<0,0001. N = 5.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Homogeneity in cell cycle phases across the different cells populating the NPCs clusters. G1, G1 phase; G2M, G2/Mitosis phases; S, S phase. (B) Cell-cycle scores are affected after 4 hr of starvation. Less mitotic NPCs could indicate a lower activation rate.
 
 First, we manually annotated the different cell clusters upon combining the two conditions, resulting in approximately the same cell-types largely described above. Among all the clusters, only two were missing after starvation: UNs 2 and Neurons X. To characterize these cell-types, we analyzed their expression profiles and we found that Neurons X exhibited a combination of different neurotransmitters that could be further subdivided into smaller clusters based on the expression of particular neurotransmitters (Figure 7C). Thus, a subset of cells of different neurotransmitter identities respond probably in a similar way so that they now form a joint cluster. Nevertheless, it is also possible that cells populating these clusters were stochastically lost during sample preparation and its posterior manipulation.
 
@@ -100,9 +152,17 @@ The second cluster missing upon starvation was UNs 2, which showed an overall si
 
 In early larval stages neuroblasts are arrested in G0 or G2 phases of the cell-cycle (Otsuki and Brand, 2018) and a complex signaling mechanism between fat-body, glial cells and neuroblasts triggers their reactivation upon nutrient-sensing (Chell and Brand, 2010; Sousa-Nunes et al., 2011). Thus, we evaluated how cell-cycle marker genes expression was affected by the lack of nutrients. We observed that the above described cell-cycle heterogeneity was maintained upon starvation, but the proportion among cell cycle phases was altered. In addition, we noticed a decreased number of cells in G2M phases, and an increase in G1 and S phases; suggesting that upon starvation neuroblasts do not exit quiescence and therefore less cells undergo mitosis (Figure 7—figure supplement 3).
 
-## Transcriptional responses to starvation
+### Transcriptional responses to starvation
 
 Once cell identities were assigned, we investigated changes at the transcriptional level. First we analyzed the expression of genes involved in fatty acid metabolism (Zinke et al., 2002). We found withered (whd), a carnitine O-palmitoyltransferase, being primarily upregulated in glial cells upon starvation. Moreover, other genes with key roles in fat catabolism were also upregulated, as was the case of the long-chain-fatty-acid-CoA ligase, pudgy (pdgy) and the Lipase 4 (Lip4). Among genes that were downregulated after starvation we found the fatty acid synthase 1 (FASN1) (Figure 8A). These results indicate that under nutrient-stressful conditions, glial cells potentiate catabolic pathways to survive, and pause anabolic pathways to avoid energy waste.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig8-v2.jpg)
+
+**Figure 8.:** (A) Genes involved in fat acid metabolism are up and downregulated upon starvation in glial cells. Composed violin plot showing changes in gene expression across experimental conditions. Violin plots represent the probability density of the data integrated with kernel density estimation. Wider sections represent higher probability of cells with the indicated gene expression level, while skinnier sections represent lower probability. Each violin plot is split by condition, half corresponds to the normal condition and half to starved condition. Conditions are color coded. (B) Neuropeptides respond differently to nutrient restriction, some of them were upregulated and some others downregulated. Blue indicates high expression, while gray indicates low expression. (C) lncRNAs are also affected by starvation. lncRNA:CR40469 and lncRNA:CR42862 positive cells vary after nutrient restriction. In red, cells expressing a particular lncRNA; in gray, remaining cells. Pie graphs represent the percentage of lncRNA positive cells in the total of NPCs and glial cells. (D) Genes downstream of REPTOR/REPTOR-BP complex are affected upon starvation. Barplot showing changes in the number of cells expressing a particular gene, upon TORC1 downregulation due to starvation. Experimental conditions are color coded.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50354/elife-50354-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Comparison in the expression of lncRNAs before and after starvation, displayed in Seurat UMAP plot. In red, cells expressing a particular lncRNA and in gray, remaining cells. Pie graphs represent the percentage of lncRNA positive cells versus the total of NPCs and glial cells.
 
 Next, to determine genes up or downregulated upon starvation, we scatter plotted the average expression of cells under normal feeding condition and starvation (Supplementary file 2, Source data 1). To identify outliers, we calculated the average fold change across conditions. We observed that the expression profile of differentiated cells, like neurons releasing neurotransmitters, remained invariable; indicating that their expression programs were not affected by the lack of nutrients. We found that upon food deprivation many neuropeptides were upregulated, which are known to regulate feeding behavior. Leucokinin (Lk) and Adipokinetic hormone (Akh) expression appeared upregulated after starvation, a predictable result since Lk negatively regulates food intake and Akh triggers accumulation and availability of storage lipids and glycogen (Gáliková et al., 2015; Yurgel et al., 2019). Moreover, the neuropeptides Hug and SIFa, controlling growth and metabolism and promoting feeding behavior upon hunger signals (Martelli et al., 2017), respectively; were both upregulated after starvation. Additionally, the upregulated neuropeptides identified in our dataset were also regulating water homeostasis and locomotor activity, as it was the case for the Ion transport peptide (ITP). In contrast, other neuropeptides were downregulated as Allatostatin A (AstA), which has been previously reported to reduce feeding and promote sleep, regulated by Pdf expression (Chen et al., 2016) (Figure 8B). These results suggest that cells involved in feeding behavior and homeostasis are more sensitive to starvation than the remaining cell types, and that genes associated to these mechanisms show the strongest and fastest response to food deprivation in order to alert larvae about their stressful environment.
 
@@ -128,39 +188,221 @@ Furthermore, the availability of the wildtype brain cell atlas as well as the st
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970, RRID:AB_300798</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fischer</td>
+      <td>Cat# A-6455, RRID:AB_221570</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dpn (Guinea pig polyclonal)</td>
+      <td>Spéder and Brand, 2014</td>
+      <td></td>
+      <td>IF(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dlg (Mouse monoclonal)</td>
+      <td>Iowa H.B.</td>
+      <td>Cat# 4F3, RRID:AB_528203</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fas2 (Mouse monoclonal)</td>
+      <td>Iowa H.B.</td>
+      <td>Cat# 1D4, RRID:AB_528235</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-hdc (Mouse monoclonal)</td>
+      <td>Iowa H.B.</td>
+      <td>Cat# U33, RRID:AB_10659722</td>
+      <td>IF(1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-repo (Mouse monoclonal)</td>
+      <td>Iowa H.B.</td>
+      <td>Cat# 8D12, RRID:AB_528448</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-prt (Rabbit polyclonal)</td>
+      <td>David E. Krantz</td>
+      <td></td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB152, RRID:AB_390204</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Elav (Rat monoclonal)</td>
+      <td>Iowa H.B.</td>
+      <td>Cat# 7E8A10</td>
+      <td>IF(3:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DsRed (Rabbit polyclonal)</td>
+      <td>Takara Bio</td>
+      <td>Cat# 632496, RRID:AB_10013483</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa 647 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21244, RRID: AB_2535812</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa 488 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11008, RRID: AB_143165</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa 647 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21235, RRID: AB_2535804</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Guinea pig Alexa 488 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11073, RRID: AB_2534117</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken Alexa 488 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11039, RRID: AB_2534096</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat Alexa 647 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21247, RRID: AB_141778</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Guinea pig Alexa 647 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21450, RRID: AB_2535867</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VGlut-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID: BDSC_24635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myrGFP</td>
+      <td>BDSC</td>
+      <td>RRID: BDSC_32198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gad1-GFP</td>
+      <td>BDSC</td>
+      <td>RRID: BDSC_59304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VAChT-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID: BDSC_39078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8::RFP</td>
+      <td>BDSC</td>
+      <td>RRID: BDSC_32219</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 Drosophila melanogaster Canton-S was used as the wild type strain. Other fly strains used are described in the key resources table.. All flies were kept at 25°C in a 12 hr/12 hr light-dark cycle in vials containing conventional cornmeal agar medium.
 
-## Larval culture
+### Larval culture
 
 Larvae were grown and kept at 25°C in the same conditions as the adult flies and late first instar larvae were collected at 16 hr after larval hatching (ALH). For the starved condition, larvae were collected at 12 ALH, quickly washed to remove food leftovers and transferred to a Petri dish with 2% of agar, humidified with PBS, for 4 hr at 25°C.
 
-## Survival rate
+### Survival rate
 
 Larvae were grown as described before and at 12 ALH transferred to a Petri dish with 2% of agar, humidified with PBS at 25°C. After 4 hr of starvation, dead and alive larvae were counted and the percentages were calculated based on the initial number of larvae in the Petri dishes.
 
-## Immunofluorescence
+### Immunofluorescence
 
 First instar larval brains were dissected in ice-cold PBS, placed on a 22 × 22 cover slip and fixed in 4% paraformaldehyde for 18 min at room temperature with slow agitation. Fixed brains were washed three times in PBST (PBS 0,3% Triton X-100), for 20 min each, at room temperature with slow agitation. All these steps were performed in a Columbia staining jar. Primary antibodies (see Key resources table) were prepared in PBST and the cover slips with the brains were incubated overnight at 4°C in a humid chamber. Primary antibody solutions were removed and brains were washed again three times in PBST for 20 min each at room temperature with slow agitation. Next, the secondary antibody (see Key resources table) solutions were added and incubated as described. After overnight incubation, secondary antibody solutions were removed and washes with PBST were performed. Brains were mounted in Vectashield (Vector Laboratories) antifade mounting medium. Images were acquired using Leica TCS SP5 confocal microscope and images were assembled using Fiji and Adobe Illustrator CC 2018. DAPI was added together with the secondary antibodies.
 
-## EdU incorporation
+### EdU incorporation
 
-Larval brains were dissected in ice-cold PBS and immediately incubated in PBS containing 200 µg/ml of EdU (Thermo Fischer Scientific - C10637) for 30 min at room temperature. Brains were quickly washed with PBS and fixed in 4% paraformaldehyde for 18 min at room temperature. Upon fixation, brains were washed with PBST and EdU detection was performed following the manufacturer’s recommendations. Dpn antibody staining was executed as described above. The proliferation index (PI) was calculated with following formula. PI=Dpn+EdU+Dpn+
+Larval brains were dissected in ice-cold PBS and immediately incubated in PBS containing 200 µg/ml of EdU (Thermo Fischer Scientific - C10637) for 30 min at room temperature. Brains were quickly washed with PBS and fixed in 4% paraformaldehyde for 18 min at room temperature. Upon fixation, brains were washed with PBST and EdU detection was performed following the manufacturer’s recommendations. Dpn antibody staining was executed as described above. The proliferation index (PI) was calculated with following formula.
 
-## Brain dissection, dissociation and single cell suspension
+$$
+PI=\frac{Dpn^{+}EdU^{+}}{Dpn^{+}}
+$$
+
+### Brain dissection, dissociation and single cell suspension
 
 First instar larvae (40-45) were collected and quickly washed in water to remove food leftovers and yeast. Larvae were placed in drops of ice-cold PBS on the inside of a plastic petri dish lid. Fine forceps were used to dissect the larval brain. Once the larval brain was exposed, the ventral nerve cord was cut out using a pair of pin holders (Figure 1A), and the intact brain-lobes were collected in a low DNA binding tube containing 250 µl of ice-cold RNA free PBS for a maximum of one hour. The tubes containing the brains were centrifuged at 2000 rpm for 5 min at 4°C. After centrifugation, the supernatant was carefully removed and replaced with 200 µl of collagenase (1 mg/ml Sigma-Aldrich C9722) and incubated for 1 hr at 25°C with continuous agitation. To guarantee full brain digestion, the suspension was pipetted up and down each 10 min. The enzymatic reaction was arrested by diluting the suspension with 1 ml of PBS 0.04% BSA (Thermo Fischer Scientific AM2616). After washing the cells, the cell suspension was filtered through a 40 µm Flowmi Cell strainer (Bel-Art H13680-0040). The filtered suspension was centrifuged at 2000 rpm for 5 min at 4°C. The supernatant was discarded, cells were resuspended in 50 µl of PBS 0.04% BSA and further dissociation was ensured by gently pipetting the entire volume, approximately 200 times. Cell concentration was determined using a hemocytometer (Neubauer improved – Optik Labor) under a Leica DM 100 led microscope.
 
-## 10x genomics and sequencing
+### 10x genomics and sequencing
 
 scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Library and Gel Bead Kit v3 (10X Genomics), according to the manufacturer’s protocol (User Guide). Chips were loaded after calculating the accurate volumes using the ‘Cell Suspension Volume Calculator Table’. With an initial single-cell suspension concentration equal to 1000 cells/µl, we targeted to recover approximately 10,000 cells. Once GEMs were obtained, reverse transcription and cDNA amplification steps were performed. Sequencing was done on Illumina NovaSeq 6000 S2 flow cell generating paired-end reads. Different sequencing cycles were performed for the different reads, R1 and R2. R1, contained 10X barcodes and UMIs, in addition to an Illumina i7 index. While R2 contained the transcript-specific sequences.
 
-## 10x data processing
+### 10x data processing
 
 The sequenced libraries were processed according to Cell Ranger (version 2.2.0) count and aggr (aggregation) pipelines, provided by 10X Genomics. The reference genome was built based on the 3rd 2018 FlyBase release (D. melanogaster r6.22). The number of cells detected at the end of each experiment was determined by Cell Ranger with the number of barcodes associated with cell-containing partitions, estimated from the barcode UMI count distribution. Two final datasets were obtaining upon aggregation of individual experiments, non-starved and starved datasets, producing single feature-barcode matrices. The first one was built aggregating the libraries from three biological replicates, corresponding to larvae kept in conventional cornmeal agar medium prior to dissection (considered as the normal condition). This dataset resulted in a total of 4708 cells with a median of 1434 genes per cell. The second dataset was built in a similar way, but aggregating libraries from two biological replicates, corresponding to larvae starved for 4 hr prior to dissection (considered as the starvation condition), resulting in a dataset of 4645 cells with a median of 1962 genes per cell. The different aggregations were carried without specifying any normalization mode.
 
-## Seurat data processing
+### Seurat data processing
 
 Seurat version 3.0 (Butler et al., 2018; Satija et al., 2015; Stuart et al., 2018) pipeline was adapted and executed on the normal (non-starved) dataset and on a combination of both conditions: ‘normal’ and ‘starvation’ datasets. The matrices produced by cell ranger were processed and duplets, or eventually multiplets, were discarded based on the overall gene expression per cell. Cell quality was assessed by the percentage of mitochondrial gene expression per cell. Thus, cells with unique feature counts between 200 and 4500, and with less than 20% of mitochondrial genes were kept for downstream processing. Additionally, genes expressed in at least one cell were considered for the analysis. The final processed datasets resulted in 4349 and 4347 cells with a total of 12,942 and 13,589 identified genes, for the non-starved and starved datasets, respectively. Once Seurat objects were built, pre-processing steps were performed before downstream analysis. First, a log-normalization with a scale factor of 10,000 was applied to normalize gene expression of individual cells by the total gene expression of each dataset. Second, a linear transformation was executed to remove unwanted source of variation. Lastly, highly variable genes were determined applying FindVariableFeatures function with default parameters, producing a total of 2000 variables genes following the R package developer’s recommendations.
 
@@ -168,24 +410,24 @@ Upon preprocessing, the highly variable genes were considered for the dimensiona
 
 Integration between conditions was performed by identifying common anchors across both datasets, normal and starvation, to later combine them into a single Seurat object by applying the ‘IntegrateData’ function, which produced a batch-corrected expression matrix. The pipeline was applied with default parameters. Downstream analysis was performed as described above. Finally, Identification of differentially expressed genes across conditions was achieved by comparing the expression profile of each cluster across experimental conditions. These results were later represented in scatter plots to visualize outliers. For simplicity, only genes with a fold change higher than one or smaller than −1 were labeled in these representations. In the case where many genes resulted as outliers, only the top 10 genes with the highest scored were included in the graphs (Supplementary file 2, Source data 1).
 
-## Cell-cycle scoring
+### Cell-cycle scoring
 
 Cell cycle phase scores were assigned by applying ‘CellCycleScoring’ function from Seurat R package, by providing a list of marker genes for S and G2 and M (G2/M) phases. Cells that did not express marker genes for neither phases S nor G2/M, were considered to be in G1 phase.
 
-## Re-clustering and further seurat analyisis
+### Re-clustering and further seurat analyisis
 
-## Neural progenitor cells
+#### Neural progenitor cells
 
 Cells characterized as neurogenic were reanalyzed and subclustered, keeping only those cells with more than 200 expressed genes per cell. The data was normalized and a new PCA was computed. Then, 13 PCs were chosen, as previously described, and clusters were visualized in a UMAP plot, with a resolution equal to 1. Identities were assigned after analyzing differentially expressed genes, following the same principle described above.
 
-## Glial cells
+#### Glial cells
 
 For glial cells, a similar analysis was performed. In this case, 11 PCs with a resolution equal to one were selected to generate a UMAP plot and represent new clusters. Cell identities were assigned after visually evaluating enriched marker genes expression.
 
-## Mushroom body
+#### Mushroom body
 
 MB cells were reanalyzed, subclustered and identified, as it was described for NPCs. This time 10 PCs were chosen and clusters were visualized in a UMAP plot, with a resolution of 0.8.
 
-## Peptidergic neurons
+#### Peptidergic neurons
 
 Peptidergic neurons were reanalyzed individually. This particular analysis only considered cells with high expression levels of the peptide of interest. In this way, IPCs and PDF, PTTH and CRZ neurons were selected as follows: Ilp2 >4, Pdf >4, PTTH >3 and Crz > 6, respectively. Subsequent analysis was performed based on the expression of reported marker genes for each cell-type.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.29917.001 Urodynamic status must interact with arousal and attentional processes so that voiding occurs under appropriate conditions. To elucidate the central encoding of this visceral demand, multisite recordings were made within a putative pontine-cortical micturition circuit from the pontine micturition center (PMC), locus coeruleus (LC) and medial prefrontal cortex (mPFC) during cystometry in unanesthetized rats. PMC neurons had homogeneous firing patterns, characterized by tonic activity and phasic bursts that were temporally associated with distinct phases of the micturition cycle. LC and cortical activation became synchronized 20-30 s prior to micturition. During this pre-micturition interval, a theta oscillation developed in the LC, the mPFC desynchronized and LC-mPFC coherence increased in the theta frequency range. The temporal offset between the shift in LC-mPFC network activity and micturition may allow time to disengage from ongoing behaviors unrelated to micturition and initiate specific voiding behaviors so that micturition occurs in environmentally and socially appropriate conditions.
+Urodynamic status must interact with arousal and attentional processes so that voiding occurs under appropriate conditions. To elucidate the central encoding of this visceral demand, multisite recordings were made within a putative pontine-cortical micturition circuit from the pontine micturition center (PMC), locus coeruleus (LC) and medial prefrontal cortex (mPFC) during cystometry in unanesthetized rats. PMC neurons had homogeneous firing patterns, characterized by tonic activity and phasic bursts that were temporally associated with distinct phases of the micturition cycle. LC and cortical activation became synchronized 20-30 s prior to micturition. During this pre-micturition interval, a theta oscillation developed in the LC, the mPFC desynchronized and LC-mPFC coherence increased in the theta frequency range. The temporal offset between the shift in LC-mPFC network activity and micturition may allow time to disengage from ongoing behaviors unrelated to micturition and initiate specific voiding behaviors so that micturition occurs in environmentally and socially appropriate conditions.
 
 ## Introduction
 
@@ -25,17 +25,70 @@ The pontine micturition center (PMC) is central to a circuit that is positioned 
 
 To begin to test components of this model we recorded unit activity from PMC neurons and/or LC neurons along with local field potentials (LFP) from the medial prefrontal cortex (mPFC) simultaneously with urodynamic endpoints measured during in vivo cystometry in unanesthetized rats (Figure 1A,B, Figure 1—figure supplement 1–1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29917/elife-29917-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic showing proposed circuitry engaged during micturition and recording sites. The PMC (red oval) projects to lumbosacral preganglionic parasympathetic neurons that give rise to cholinergic input to the detrusor and produce contraction. A population of PMC spinal-projecting neurons are retrogradely labeled from the LC (blue triangle) which is just caudal, dorsal and lateral to the PMC. LC neurons project widely throughout the cortex. In the present study, single unit activity was recorded from PMC neurons and/or LC neurons and local field potential activity was recorded from the medial prefrontal cortex (yellow rectangle). Neuronal recordings were obtained simultaneously with in vivo cystometry recordings from an implanted bladder catheter. (B) Representative Prussian blue histological verification of a recording in the LC (left) and the PMC (right). For the LC photomicrograph CB (Cerebellum), Me5 (mesencephalic trigeminal nucleus) and the arrow points to the LC. For the PMC photomicrograph, the arrow points to the ventricle and the arrowheads point to the mesencephalic trigeminal nucleus. Figure 1—figure supplement 1 shows a section slightly rostral to this with a lesion created by the wires (C) Raw waveform traces showing spikes from three PMC neurons and simultaneously recorded bladder pressure (BP mm Hg) during two micturition cycles. (D) Ratemeter records of the same cells shown in C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29917/elife-29917-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The lesion produced by the wire bundle can be seen here on the left and cells of Barrington’s nucleus can be seen on the contralateral side (blue arrow). Arrowheads point the cells of the mesencephalic trigeminal nucleus. Asterisks indicate the ventricle. Cerebellum (CB).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29917/elife-29917-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Bladder pressure (BP, mm Hg), micturition volume (MV, ml).
+
 ## Results
 
-## Relationship between PMC neuronal activity and bladder pressure
+### Relationship between PMC neuronal activity and bladder pressure
 
 After the first micturition cycle, subsequent cycles in rats became regular, with bladder pressure gradually increasing to a peak, at which point micturition occurred and bladder pressure fell to 0 mm Hg (Figure 1—figure supplement 1–2). Single unit activity was recorded from 36 PMC neurons from three rats during in vivo cystometry. Figure 1C,D shows activity from three single units recorded on one channel in the PMC during two micturition cycles. Whether depicted as the raw waveform trace (Figure 1C) or rate (Figure 1D), the pattern of PMC neuronal discharge was relatively homogeneous and this was true across all three rats (Figures 1C, D and 2A). The PMC has been proposed to function as a switch such that neuronal activation results in micturition (de Groat, 2006). Consistent with this, in all rats, PMC neurons discharged during micturition until bladder pressure decreased to zero and the bladder was empty (Figures 1C, D and 2A). Figure 2B shows the change in discharge rate associated with micturition for the individual cells shown in the example rasters. Most neurons increased their discharge rate and no recorded neurons were inhibited at this time. All PMC neurons also exhibited burst activity at different times with respect to micturition (Table 1). This was particularly apparent within the 20 s period following micturition during which bursts averaging 28 ± 1 Hz frequency and 606 ± 66 ms in duration occurred (Table 1, Figures 1C, 2A and C). These post-micturition bursts were sometimes associated with a very small, transient increase in bladder pressure (Figure 2A asterisks). Notably, in all PMC cells similar bursts (28 ± 2 Hz, 432 ± 35 ms duration) occurred regularly during inter-micturition intervals when bladder pressure was low (Table 1, Figure 1C). Burst activity was rare during the pre-micturition period (20 s prior to micturition). Notably, some cells were distinguished by tonic discharge between bursts (Figure 1C, first and third cells).
+
+**Table 1.**
+ Burst analysis of PMC neurons*
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Interval</th>
+      <th># Bursts†</th>
+      <th>#spikes/burst</th>
+      <th>ISI (ms)</th>
+      <th>Duration (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-micturition</td>
+      <td>0.3 ± 0.1</td>
+      <td>4.9 ± 0.2</td>
+      <td>54 ± 2</td>
+      <td>263 ± 14</td>
+    </tr>
+    <tr>
+      <td>Intermicturition  Interval</td>
+      <td>12.3 ± 1.9</td>
+      <td>12.4 ± 1.2</td>
+      <td>38 ± 1</td>
+      <td>432 ± 35</td>
+    </tr>
+    <tr>
+      <td>Post-micturition</td>
+      <td>2.7 ± 0.5</td>
+      <td>18.4 ± 2.7</td>
+      <td>40 ± 3</td>
+      <td>606 ± 66</td>
+    </tr>
+  </tbody>
+</table>
+
+_*values are means ± SEM determined from 36 cells from 3 rats.†Mean #bursts/cell/micturition cyclePre-micturition = 20 s before micturitionIntermicturition interval = 120 s after first and 120 s before the following micturitionPost-micturition = 20 s after micturition_
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29917/elife-29917-fig2-v1.jpg)
 
 **Figure 2.:** (A) Each panel shows PMC cell rasters and bladder pressure (BP in mm Hg) during a representative micturition cycle from each of the three rats. Note that some PMC units discharge even when BP is relatively low. Activity increases prior to peak micturition pressure and a burst of activity occurs after bladder emptying when BP returns to baseline. A slight rise in BP is temporally associated with this burst (asterisks). (B) Pairwise pre-and post-micturition firing rate changes (Hz) for individual neurons shown in the rasters in A. Pre-micturition rates were determined from the period between 40–50 s prior to peak BP and Post-micturition rates were determined from 0 to 10 s sec after peak micturition pressure. For all three panels the mean post rates were greater than mean pre-rates as indicated by the Student’s t-test value (matched pairs) in the figure. (C) Heatmap of all PMC neurons recorded from the three rats showing discharge rate in Hz (coded by color scale on right) for the period of 50 s before and 50 s after micturition indicated by time = 0. For most cells, data are shown for two micturition cycles indicative of technical reproducibility. Note firing occurring 0–20 s after micturition. Bin size = 10 s.
 
-## Relationship between LC activity and bladder pressure
+### Relationship between LC activity and bladder pressure
 
 LC neuronal activity was recorded from 51 neurons of 4 rats. As described in previous studies in unanesthetized rats (Aston-Jones and Bloom, 1981a), LC neurons were spontaneously active throughout the recordings although discharge rate fluctuated with the micturition cycle. Figure 3A,E shows how activity of LC units of one representative rat is temporally correlated to bladder pressure. In contrast to PMC neurons, LC neurons consistently increased their discharge rate 10–30 s prior to micturition and this activation ceased with micturition (Figure 3A,B,C,E). The distribution of latencies between significant LC activation and micturition ranged between 0 and 65 s with most cells having a latency between 10–30 s (Figure 3D).
 
@@ -49,7 +102,7 @@ For one rat, the proximity of the LC and the PMC allowed for detection and recor
 
 **Figure 4.:** (A) Histological verification of recording sites in the PMC. The track of the electrode wires can be seen and the most medial track impinges on the lateral part of the PMC (black arrow). Asterisks indicate the ventricle and the blue arrow points to the mesencephalic trigeminal nucleus. (B) Histological verification of the recording site in the LC of the same rat which is apparent as the Prussian blue reaction product. Arrows and asterisks as in A. (C) Spike rasters of multiple BN neurons (red) and LC neurons (blue) recorded from the same rat during a micturition cycle. The lower panel shows bladder pressure recorded simultaneously. Note that LC neuronal activation precedes PMC neuronal activation and both occur prior to peak micturition pressure. Likewise, after bladder pressure returns to baseline, LC neurons become activated and this precedes activation of PMC neurons.
 
-## LC-cortical synchrony during micturition cycles
+### LC-cortical synchrony during micturition cycles
 
 The LC neuronal activation, occurring 10–30 s prior to micturition, was temporally correlated with mPFC desynchronization (Figure 5A1, A2). Simultaneous local field potential recordings (LFP) in LC and mPFC demonstrate a shift from low frequency activity at baseline (e.g., Figure 5B1, 0–47 s) to a prominent theta oscillation in the LC during the pre-micturition period (e.g., Figure 5B1, 47–77 s). This was accompanied by a desynchronization of the mPFC (Figure 5A2, B2). Interestingly, although the mPFC LFP magnitude was small during the 30 s period prior to micturition relative to the preceding baseline interval, there was still evidence of a theta oscillation in the mPFC during this time as well (white arrowheads in Figure 5B2, Figure 6B, cf., red and black lines). This effect was consistent as indicated by the mean power spectra of LC and mPFC LFP activity generated from each of 3 rats recorded across 8 micturition cycles (3, 2, and 3 for the individual rats) (Figure 6A,B). Thus, LC activity recorded from 60 to 30 s before micturition shifted from mixed low frequency activity to a prominent theta oscillation occurring 30–0 s before micturition. In concert, the mPFC power spectrum shifted from high amplitude, low frequency activity (0–5 Hz) to much lower amplitude oscillations and a decrease of power in all frequencies, characteristic of desynchronization. An increase in coherence between the LC and mPFC in the theta frequency characterized this pre-micturition interval (Figure 6C). This change in LC and mPFC LFP activity reverted with bladder emptying (Figure 5).
 
@@ -65,21 +118,21 @@ The LC neuronal activation, occurring 10–30 s prior to micturition, was tempor
 
 The current study combined multisite neuronal recordings with cystometry to demonstrate how neuronal activity within a pontine micturition circuit is coordinated with bladder pressure and micturition in the unanesthetized rat. Neuronal activity was relatively homogeneous both within the PMC and the LC. As predicted, PMC neuronal activity was temporally correlated with micturition. However, a novel finding was the consistent high frequency bursts of activity following micturition and the repeated patterns of similar bursts during the intermicturition interval when bladder pressure was low. These patterns suggest that the PMC is more than an on-off switch in the regulation of micturition. Importantly, the findings demonstrated a temporal offset between LC neuronal activation and micturition during which a theta oscillation develops in the LC, LC-mPFC coherence is increased and the mPFC becomes desynchronized. These changes in the LC-mPFC network activity may facilitate the initiation of voiding behaviors prior to micturition by increasing arousal and shifting attention towards visceral demands.
 
-## Caveats
+### Caveats
 
 The present findings should be interpreted with consideration of certain technical limitations. In vivo cystometry was used to monitor and regulate micturition cycles. However, it does not mimic natural micturition cycles, which would be longer in the absence of steady bladder infusion. Although the multiwire recording technique allows for sampling activity from multiple neurons within the same nucleus, the results are inevitably biased toward activity that the wires can record from and that can be reliably discriminated. We cannot rule out the possibility that certain neuronal populations in a nucleus were not sampled. This may be a particular problem for PMC which is neurochemically heterogeneous (Sutin and Jacobowitz, 1988). This is less of a caveat for the LC, which is relatively homogeneous in the rat (Aston-Jones et al., 1995). Only females were used in the study because the bladder surgery is somewhat easier. The surgery was relatively complex because of the need to electrophysiologically localize brain electrodes as well as to implant the catheter, so that we chose to use females. Therefore, there is a caveat that our interpretations may not extend to both sexes. However, we previously demonstrated the same temporal correlation between cortical activation and peak bladder pressure in male rats (Kiddoo et al., 2006; Rickenbacher et al., 2008).
 
-## PMC neuronal activity
+### PMC neuronal activity
 
 Most previous studies of PMC neuronal activity with relation to bladder pressure were done in anesthetized rats or cats with the bladder distended under isotonic conditions such that reflex contractions would occur (Willette et al., 1988; Tanaka et al., 2003; de Groat and Wickens, 2013). Three general neuronal types were identified in these conditions, neurons that discharge before and during reflex bladder contractions, neurons that are inhibited during contractions and active between contractions and neurons that fire transiently at the beginning of the contractions. The majority of recorded neurons in those studies were of the second type. One study recorded activity throughout the pons and medulla during cystometry in the absence of anesthesia in the decerebrate cat (Sugaya et al., 2003). This study also reported neurons that were either activated, inhibited or unaffected during the contraction with the majority being inhibited. Notably, in that study the mapping of these neuronal types demonstrated that nearly all neurons that were inhibited during bladder contraction were ventral to the region corresponding to the PMC, whereas most neurons within the PMC were activated during bladder contraction.
 
 The present study is unique in recording single unit activity from the PMC in the intact unanesthetized and freely moving rat during cystometry. PMC neurons recorded in this study were homogeneous in the temporal correlation of their discharge pattern with the micturition cycle and resembled the previously described excitatory neurons. Notably, the present results are consistent with recent studies using photometry to measure the calcium currents in genetically-identified CRF-PMC neurons in unanesthetized mice during cystometry (Hou et al., 2016). These studies demonstrated a signal that was most prominent coincident with and up to 10 s after micturition. The present unit recordings have temporal resolution to detect changes in discharge rates and patterns such as bursts, that underlie the encoding of information. The post-micturition burst was consistent across all PMC neurons. If this results in increased glutamate release, it could be a mechanism to assure complete emptying. However, CRF is co-localized with glutamate in PMC neurons (Hou et al., 2016) and evidence suggests that CRF is inhibitory in this pathway and may counteract the excitatory effects of glutamate neurotransmission (Pavcovich and Valentino, 1995). Higher frequency bursts that favor neuropeptide release could be a mechanism for switching the function of the nucleus from one that facilitates active emptying to one that facilitates storage by countering detrusor contraction. Repetition of this high frequency burst during the intermicturition phases when bladder pressure is low would also be consistent with that. Future studies of simultaneous manipulation and recording of PMC neurons during cystometry would better address this question.
 
-## LC neuronal activity
+### LC neuronal activity
 
 Rat LC neurons are relatively homogeneous in that they are all noradrenergic and have similar electrophysiological properties (Aston-Jones et al., 1995). A characteristic property of LC neurons of both anesthetized and unanesthetized rats is their activation by salient sensory stimuli of all modalities (Aston-Jones and Bloom, 1981b). LC neurons are also activated by diverse physiological stimuli including hypotension and non-noxious distention of the bladder or colon (Elam et al., 1985; Elam et al., 1986; Valentino and Wehby, 1988; Page et al., 1992; Lechner et al., 1997). In the present study, LC neuronal recordings during in vivo cystometry in unanesthetized rats revealed an exquisite sensitivity of LC neurons in that they become tonically activated approximately 20 s prior to micturition and in most cases before the steady pressure rise to micturition threshold (Figures 3 and 5). Possibly, this is a response to bladder wall stretching rather than an increase in intravesicular pressure. The timing of activation of LC neurons and PMC neurons with respect to micturition argues against our hypothesis that PMC projections to the LC drive its activation by bladder stimuli. This was particularly apparent in the one case in which both LC and PMC neurons could be recorded in the same subject. However, because only a small subpopulation of PMC neurons project to the LC, it is possible that our neuronal sampling did not detect PMC-LC projection neurons (Valentino et al., 1996). Previous lesion studies provided evidence that LC activation by colonic distention was mediated by PMC but bladder distention was not examined in that study (Rouzade-Dominguez et al., 2001). Another route by which the LC could receive bladder information is through the ventrolateral periaqueductal gray (vlPAG). Anterogradely labeled vlPAG fibers innervate both PMC and the rostromedial peri-LC and synaptically contact LC dendrites in this region (Bajic et al., 2000). The PAG then could regulate both the LC and the PMC in response to bladder related stimuli. The apparent lack of temporal coordination between LC and PMC neuronal discharge could then be explained if they received distinct vlPAG afferents.
 
-## Coordination between the bladder, LC and cortical activity
+### Coordination between the bladder, LC and cortical activity
 
 The LC-norepinephrine system densely innervates the mPFC and modulates its activity and executive functions (Arnsten and Li, 2005; Arnsten, 2011). Regionally selective pharmacological activation of the LC or activation using Designer Receptor Exclusively Activated by Designer Drug (DREADD) technology produces a desynchronization of the cortical EEG (an arousal response) (Berridge and Foote, 1991; Vazey and Aston-Jones, 2014). Moreover, LC activation by certain stimuli is necessary for their ability to elicit cortical arousal (Valentino et al., 1991). This includes bladder distention produced by injection of saline in anesthetized rats (Page et al., 1992). In addition to increasing arousal, the LC-norepinephrine system has been implicated in shifting attention towards salient stimuli (Aston-Jones and Bloom, 1981b; Aston-Jones and Cohen, 2005). The present results identified an important temporal relationship between LC activity, mPFC activity and bladder pressure, with LC and cortical activation being synchronized to occur approximately 20 s prior to micturition. The examination of network activity in the LC and between the LC and mPFC revealed that during this pre-micturition interval when LC neuronal activity is elevated, network activity shifts from low frequency oscillations to a prominent theta oscillation. At the same time mPFC activity desynchronizes as characterized by a decreased power in all frequencies but LC-mPFC coherence, specifically in the theta frequency, is increased. This network shift that is temporally offset from micturition may be a neural code to increase arousal and reset behavior prior to micturition so that voiding occurs in appropriate environments.
 
@@ -87,11 +140,11 @@ Taken together, the present results highlight the complex synchronization of pon
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Female adult Sprague-Dawley rats (Charles River, Wilmington, MA) were maintained in a temperature and light controlled environment (20°C, 12 hr light-dark cycle, lights on at 0700 hr) with food and water available ad libitum. Rats were housed 2/cage until the day of surgery. The care and use of animals were approved by the Children’s Hospital of Philadelphia Institutional Animal Care and Use Committee.
 
-## Surgery for electrode implantation
+### Surgery for electrode implantation
 
 Surgery was performed at least 1 week after arrival at the animal facility. Surgery for implantation of an 8-microwire bundle electrode (NB Labs, Denison, TX) into the locus coeruleus (LC) was identical to that previously described (Curtis et al., 2012). Briefly, rats were anesthetized with an isoflurane-air mixture and positioned in a stereotaxic frame. Body temperature was maintained at 37.5o C by a feedback controlled heating unit. A hole (4 mm diameter) was drilled in the skull centered at 3.7 mm caudal and 1.2 mm lateral to lambda for approaching the LC. Additional holes were drilled to insert skull screws for fixing the microwire bundle electrode to the skull with dental cement.
 
@@ -101,22 +154,22 @@ Surgery was similar for targeting of the electrode into the PMC, which is just r
 
 Rats had an additional depth electrode (tungsten microelectrode, 250 μm diameter) implanted into the medial prefrontal cortex (mPFC) (+3.2 AP, −0.6 ML, −3.0 DV) for mPFC local field potential (LFP) recordings. Animals were allowed 3 days to recover before bladder catheter implantation.
 
-## Surgery for bladder catheter implantation
+### Surgery for bladder catheter implantation
 
 At least 2 days after the electrode implantation, rats were anesthetized with isoflurane and a small cut was made between the scapulae to provide an exit for the bladder catheter. A midline incision was made in the abdomen to access the bladder. A 5-French umbilical artery catheter was tunneled subcutaneously from the hole between the scapulae to the abdomen. The catheter end, which had been previously cauterized and flared, was brought intraperitoneally and inserted into the bladder dome and sutured above the flare. The exposed catheter end was connected to a port that allowed infusion of saline into the bladder.
 
-## Experimental protocol
+### Experimental protocol
 
 Three days after the bladder catheter implantation rats were placed into a cystometry chamber (Med Associates, St. Albans, CT). Sterile saline was continuously infused (100 μl/min) through the bladder catheter while urodynamic endpoints, including bladder pressure and the timing of micturition were recorded on-line for 1 hr using cystometry equipment (Medical Associates, St. Albans, VT) and software (Cystometry Analysis Software, SOF-522, Catamount R and D, St. Albans, VT). Neuronal activity was recorded from PMC neurons and/or LC neurons and LFPs were recorded simultaneously through micturition cycles. Figure 1A illustrates points along the pontine-cortical micturition circuit at which recordings were taken. Single unit LC waveforms were discriminated and sorted using the WaveMark template-matching algorithm in Spike2 (Cambridge Electronic Design, CED, v7.09, Cambridge, England), as described previously (Curtis et al., 2012). Local field potentials (LFPs) from LC were obtained from one of the wires of the multiwire bundle (sampled at 780 Hz, filtered from 1 to 150 Hz). Electrode recordings in the mPFC were amplified at a gain of 5000 and band pass filtered between 1–150 Hz.
 
-## Neuronal firing analysis
+### Neuronal firing analysis
 
 LC neuronal firing rate (in Hz) was estimated in 5 s time bins as the total number of spikes in each time bin divided by duration of time bin in seconds. For each neuron, the z-score was calculated by subtracting the mean average background firing rate from the firing rate and then divided by the standard deviation. The examples showing the spike rasters are accompanied by histograms showing the z-score firing rate in 1 s bins. The average across animals were estimated in 5 s bins. For burst analysis the following criteria were used: the maximum interspike interval defining burst onset was 80 ms, interspike intervals < 160 ms, number of spikes > 4.
 
-## Spectral analysis
+### Spectral analysis
 
 To obtain time-frequency decomposition of the LFP signals, power spectral density was estimated using multitaper spectral estimators (Chronux toolbox scripts with MATLAB; three tapers, moving windows of 2 s width and 0.5 s overlap,±1 Hz bandwidth and displayed using interpolated smoothing between 0–20 Hz).
 
-## Histology
+### Histology
 
 At the end of the experiment, rats were anesthetized and current was passed through the electrode (10 mA, 15 s). Rats were transcardially perfused with 60 ml of 10% potassium ferrocyanide in 0.1 M phosphate buffered saline to form a Prussian blue reaction product for identification of the recording site. Frozen sections were cut on a cryostat and stained with neutral red for visualization of the Prussian blue labeled recording site (Figure 1B). Data were used only from histologically identified cases. There was no removal of outliers.

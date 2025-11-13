@@ -18,11 +18,19 @@
 
 ## Abstract
 
-10.7554/eLife.48629.001 Kinesin-1 and cytoplasmic dynein are microtubule (MT) motors that transport intracellular cargoes. It remains unclear how these motors move along MTs densely coated with obstacles of various sizes in the cytoplasm. Here, we tested the ability of single and multiple motors to bypass synthetic obstacles on MTs in vitro. Contrary to previous reports, we found that single mammalian dynein is highly capable of bypassing obstacles. Single human kinesin-1 motors fail to avoid obstacles, consistent with their inability to take sideways steps on to neighboring MT protofilaments. Kinesins overcome this limitation when working in teams, bypassing obstacles as effectively as multiple dyneins. Cargos driven by multiple kinesins or dyneins are also capable of rotating around the MT to bypass large obstacles. These results suggest that multiplicity of motors is required not only for transporting cargos over long distances and generating higher forces, but also for maneuvering cargos on obstacle-coated MT surfaces.
+Kinesin-1 and cytoplasmic dynein are microtubule (MT) motors that transport intracellular cargoes. It remains unclear how these motors move along MTs densely coated with obstacles of various sizes in the cytoplasm. Here, we tested the ability of single and multiple motors to bypass synthetic obstacles on MTs in vitro. Contrary to previous reports, we found that single mammalian dynein is highly capable of bypassing obstacles. Single human kinesin-1 motors fail to avoid obstacles, consistent with their inability to take sideways steps on to neighboring MT protofilaments. Kinesins overcome this limitation when working in teams, bypassing obstacles as effectively as multiple dyneins. Cargos driven by multiple kinesins or dyneins are also capable of rotating around the MT to bypass large obstacles. These results suggest that multiplicity of motors is required not only for transporting cargos over long distances and generating higher forces, but also for maneuvering cargos on obstacle-coated MT surfaces.
 
 ## Introduction
 
 Kinesin and dynein move towards the plus- and minus-ends of MTs, respectively, and play major roles in intracellular cargo transport, cell locomotion, and division (Reck-Peterson et al., 2018; Verhey et al., 2011). Although these motors have complementary functions on MTs, they have distinct structural and mechanistic features. Kinesin-1 contains a globular motor domain that binds the MT and hydrolyzes ATP. Two identical motor domains are connected by a short neck-linker to a common tail (Figure 1A) (Verhey et al., 2011). In vitro studies have shown that kinesin moves by coordinated stepping of its motor domains, in a manner akin to human walking (Yildiz et al., 2004; Asbury et al., 2003). It follows a single protofilament track on the MT and almost exclusively steps forward without frequent sideways or backward motion (Ray et al., 1993; Can et al., 2014). Unlike kinesin, dynein’s motor domains are large heterohexameric rings of AAA+ ATPase subunits that connect to the MT through a coiled-coil stalk (Figure 1A) (Roberts et al., 2013). Stepping of the dynein motor domains is not tightly coordinated (DeWitt et al., 2012; Qiu et al., 2012). Instead, either monomer can take a step while the other serves as an MT tether (DeWitt et al., 2012; Reck-Peterson et al., 2018). Dynein has a large diffusional component in its stepping behavior, resulting in frequent sideways and backward steps (DeWitt et al., 2012). Differences in the stepping behaviors between these motors may influence their cellular functions (Hancock, 2014).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of single-molecule motility assays on surface-immobilized MTs decorated with streptavidin-coated QD585 obstacles. Human kinesin-1, yeast dynein, and mammalian DDB are labeled with QD655 at their tail domain. (B) Example fluorescent images of QD585 obstacles on MTs at different QD concentrations. (C) The linear density of QDs on MTs at different QD concentrations (mean ± SD, from left to right n = 97, 98, 104 and 90 MTs from two technical replicates). (D) Kymographs show the motility of QD655-labeled motors on MTs with or without QD obstacles. The QD585 signal is not shown. (E) Mobile fraction, velocity and run length for all three motors were all normalized to the no QD condition (mean ± SD, three independent experiments). Run-length values represent decay constants derived from a single exponential decay fit. From left to right, n = 271, 423, 405 for kinesin, 315, 407, 197, 168 for yeast dynein, and 636, 502, 356, 509 for DDB.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Mobile fraction, (B) velocity and (C) run length of single motors on surface-immobilized MTs in the presence of QD obstacles (mean ± SD). From left to right, n = 271, 423, 405 for kinesin, 315, 407, 197, 168 for yeast dynein, and 636, 502, 356, 509 for DDB, three independent experiments. (D) A representative kymograph of TMR-kinesin motility in the absence of obstacles on surface-immobilized MTs. The assay was performed in 1 mM ATP. (E) The inverse cumulative distribution (1-CDF) of distances traveled by single TMR-labelled kinesin motors was fit to a single-exponential decay to calculate the motor run length (mean ± SEM, n = 422 traces from two independent experiments).
 
 Intracellular transport takes place in a highly crowded and dynamic cytoplasm. The MT network is densely decorated with obstacles such as MT-associated proteins (MAPs), stationary organelles, protein aggregates, MT defects, opposing motor traffic and other cytoskeletal filaments (Dixit et al., 2008; Che et al., 2016; Liang et al., 2016). It is not well understood how motors transport cargos efficiently throughout the cell despite these challenges. Previous in vitro studies suggested that motors need to take sideways steps to avoid obstacles on their path (Schneider et al., 2015). In agreement with this idea, kinesin motility is strongly inhibited by obstacles such as catalytically-inactive motors, MAPs or cell extract (Schneider et al., 2015; Dixit et al., 2008; Telley et al., 2009). While these motors can occasionally bypass obstacles by detaching and reattaching to neighboring protofilaments, they stall or detach from the MT in most cases (Schneider et al., 2015; Leduc et al., 2012). Kinesin-2, a different kinesin family member with faster MT detachment/reattachment kinetics (Feng et al., 2018) and increased side-stepping ability (Hoeprich et al., 2014), bypasses obstacles more successfully than kinesin-1. Dynein was expected to be less sensitive to obstacles than kinesin because of its elongated structure and frequent sideways stepping (DeWitt et al., 2012). Yet, in vitro studies on isolated mammalian dynein observed that the motor reverses direction when encountering a MAP obstacle rather than bypassing it (Dixit et al., 2008; Soundararajan and Bullock, 2014). However, these studies were conducted before it was understood that mammalian dynein alone is autoinhibited and its activation requires assembly with dynactin and a cargo adaptor (Schlager et al., 2014; McKenney et al., 2014; Trokter et al., 2012). Therefore, how active dynein motors bypass obstacles on MTs is not well understood (Ruensern Tan et al., 2019; Elshenawy et al., 2019).
 
@@ -32,7 +40,7 @@ Here, we challenge single- and multi-motor cargos of kinesin and dynein with qua
 
 ## Results
 
-## Single dyneins, but not kinesins, bypass obstacles
+### Single dyneins, but not kinesins, bypass obstacles
 
 Previous studies used rigor motors (Schneider et al., 2015), cell extracts (Telley et al., 2009) or MAPs (Dixit et al., 2008) to study how motors move in the presence of obstacles. Because some of these obstacles have complex binding kinetics to MTs, vary in size, and interact with motors directly, it is difficult to discern how their presence on the MT obstructs motility. We sought a model obstacle that stably attached to the MT, had a well-defined size and formed no specific interactions with motors. To this end, we decorated biotinylated MTs with streptavidin-conjugated QDs (25 nm in diameter) (DeWitt et al., 2012). These QDs have a bright and photostable fluorescent emission, which enable us to measure their linear density along MTs.
 
@@ -40,31 +48,103 @@ We studied the motility of human kinesin-1, yeast cytoplasmic dynein, and mammal
 
 The surface density of QD obstacles was varied, with a maximum decoration of 12 QDs µm−1 (Figure 1B,C). Consistent with dynein’s ability to take side-steps, we found that single yeast dynein and DDB motors walked processively even at the highest QD density tested (Figure 1D,E, Figure 1—figure supplement 1, Video 1) (DeWitt et al., 2012). We did not see evidence of motor reversals when DDB encountered a QD obstacle, suggesting that previously observed reversals of mammalian dynein might be due to diffusive motion of this motor in the absence of dynactin and a cargo adaptor (McKenney et al., 2014; Schlager et al., 2014; Trokter et al., 2012). While mobile fraction, velocity and run length of yeast dynein were reduced 30–70% by increasing density of QDs, DDB motility was less sensitive to obstacles. In comparison to dynein motors, kinesin motility was severely affected by the QDs (Figure 1D,E). The majority of kinesins became stuck on the MT with the addition of QDs (Figure 1D,E). At low QD density (1–2 µm−1), the mobile fraction was reduced 90%, while the run length and velocity were reduced by 60% compared to the 0 QDs µm−1 (p=0.0003, Figure 1E, Video 2). Kinesin motility could not be analyzed at higher QD densities because we did not detect processive runs longer than 250 nm under these conditions. Collectively, these results show that kinesin remains bound to an MT but is unable to move forward when it encounters a QD obstacle.
 
-## Kinesin pauses longer than dynein when encountering QD obstacles
+![Video 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-video1.mp4.jpg)
+
+**Video 1.:** DDB motors were labeled with QD655 at their N-termini. Single-molecule motility of DDB in the presence of no obstacles (top) or 25 nM QD585 obstacles (bottom) on surface-immobilized MTs. The fluorescence signal of QD585 obstacles was collected in a separate channel, and not displayed. The sample was excited with a 1.7 kW cm−2488 nm laser beam under the epifluorescence mode. Images were acquired at 10 Hz.
+
+![Video 2.](https://cdn.elifesciences.org/articles/48629/elife-48629-video2.mp4.jpg)
+
+**Video 2.:** Kinesin motors were labeled with QD655 at their C-termini. Single-molecule motility of kinesin in the presence of no obstacles (top) or 25 nM QD585 obstacles (bottom) on surface-immobilized MTs. The fluorescence signal of QD585 obstacles was collected in a separate channel, and not displayed. The sample was excited with a 1.7 kW cm−2488 nm laser beam under the epifluorescence mode. Images were acquired at 10 Hz.
+
+### Kinesin pauses longer than dynein when encountering QD obstacles
 
 We next investigated how obstacles affected the pausing behavior of motors. Even at the lowest QD density, most kinesin motors were immotile throughout the recording, suggesting that kinesin has a high likelihood of permanently pausing when encountering a QD. Trajectories of the remaining processive motors were interspersed with frequent pauses (Figure 2—figure supplement 1). We analyzed the trajectories of these motors before they permanently paused or dissociated from the MT and calculated the residence times of motors per distance traveled (Figure 2A). Residence times were composed of two distinct states. A fast state corresponded to processive motility of the motor along MTs, and a slow state represented transient pauses in motility (Figure 2B). We calculated the density and length of pauses from the frequency and decay time of the slow state (Figure 2B). Strikingly, kinesin pause density increased two-fold and pause time increased four-fold at 2 QDs µm−1. In contrast, pause density and duration of yeast dynein and DDB were only modestly increased by the QD density (Figure 2C). Transient pauses may correspond to detachment of kinesin when encountering an obstacle and reattachment to a nearby protofilament (Schneider et al., 2015). However, this mechanism is not robust enough to efficiently bypass obstacles, and kinesin motility stalls permanently usually after a few transient pauses in motility. Dynein also pauses frequently in the presence and absence of QD obstacles (Figure 2—figure supplement 2). However, unlike kinesin, it rarely pauses permanently even at the highest density of QDs (Figure 1D,E).
 
-## Kinesin quickly detaches from MTs decorated with antibody obstacles
+![Figure 2.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig2-v2.jpg)
+
+**Figure 2.:** (A) (Left) Representative traces of yeast dynein, DDB, and kinesin in the absence of QD obstacles on surface-immobilized MTs. (Right) Residence times of the motors in each section of the traces. (B) The inverse cumulative distribution (1-CDF) of kinesin residence times at different obstacle concentrations were fit to a single exponential decay. The residuals of that fit (shown here) are fit to a single exponential decay (solid line) to calculate the density and duration of kinesin pausing. (C) Density and duration of the pauses of the three motors. Pause densities (pauses/µm) are normalized to the 0 QDs µm−1 condition. Kinesin pausing behavior at 7 and 12 QDs µm−1 could not be determined because the motor was nearly immobile under these conditions. From left to right, n = 535, 520, 158, 29 for yeast dynein, 511, 449, 391, 276 for DDB, and 570, 127, 112 for kinesin. Error bars represent SEM calculated from single exponential fit to residence times.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative kymographs reveal frequent pauses in kinesin motility in the presence of 1 QD µm−1 (top row) or 2 QD µm−1 (bottom row). Most pauses were permanent throughout recording. Processive traces interspersed with transient pauses were used in pause analysis in Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) An example trajectory simulated with a pause density of 0.8 µm−1 in the absence of tracking noise (see Materials and methods for the parameters used to generate these trajectories). (B) An example trajectory simulated with 100 nm root mean squared (RMS) noise. (C) Localization error calculated for 1000 simulated traces closely agrees with 100 nm noise added to the traces. (D) Localization error calculated for 500 experimental traces of the three motors. (E) Optimization of the bin size and sliding window size for the pause analysis. Noisy traces were simulated using 0.8 µm−1 pause density, down-sampled with given window size (the number of data points) and residence time was calculated for a given bin size (distance traveled by motor). The analysis revealed that pause density was slightly underestimated even under optimal conditions. The combination of bin size and window size that resulted in the highest pause density was used to analyze experimental traces. (F) Traces were simulated with a pause density of 0.3 µm−1. Calculated pause density from simulations was insensitive to the 0–100 nm added tracking noise. The density of detected pauses decreases at higher noise. (G) The inverse cumulative distribution of pause density and duration were determined from residence time histograms through a two-step process. (Left) All non-zero residence times were fit to a single exponential distribution. (Right) Zoomed view of the blue rectangle on the left. The residuals of this fit (plotted in Figure 2B) were fit to a single exponential decay to determine pause time and density. (H) The pause density analysis of single motors on surface-immobilized MTs without normalization. From left to right, n = 535, 520, 158, 29 for yeast dynein, 511, 449, 391, 276 for DDB, and 570, 127, 112 for kinesin. Error bars represent SE calculated from single exponential fit to residence time histograms.
+
+### Kinesin quickly detaches from MTs decorated with antibody obstacles
 
 Previous studies have reported that kinesin motors detach when encountering catalytically ‘dead’ motors or MAPs on the MT rather than getting stuck (Telley et al., 2009; Schneider et al., 2015). It is possible that bulky obstacles such as QDs may hinder motor movement more than proteins. To test this idea, we labeled kinesin motors with Cy3 dye instead of a QD. In assembling the dynein complex, mouse BicDR1 with a C-terminal SNAP tag was labeled with LD555 and incubated with dynein/dynactin (Urnavicius et al., 2018). In addition, we decorated the MTs with anti-tubulin antibody obstacles (Figure 3A). Because antibodies are small in size (~150 kDa), they likely block fewer protofilaments than QD obstacles (Figure 3—figure supplement 1). Similar to QD obstacles, we see that single kinesin motors are more strongly inhibited by antibody obstacles than DDB (p=0.013 for velocity and 0.01 for run length, two-tailed t-test, Figure 3B,C, Videos 3–4). Kinesin run length and velocity were reduced by ~70% at 20 µg/mL antibody (p=0.01 and 0.0001, respectively, two-tailed t-test, Figure 3C). In contrast to QD-obstacles, there was not a significant difference between the mobile fraction of kinesin and dynein at 20 µg/mL antibody (p=0.15, two-tailed t-test). Consistent with a previous study that used rigor kinesin as an obstacle (Schneider et al., 2015), we did not observe extended pauses of kinesin motors. Thus, antibody obstacles inhibit kinesin by causing them to detach rather than pausing for extended periods. Collectively, our results show that single kinesins detach from MT when encountering small protein obstacles. However, kinesin motors that carry a rigid QD cargo are more likely to pause when encountering a bulkier obstacle on an MT.
 
-## Obstacle avoidance of single motors on freely suspended MTs
+![Figure 3.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig3-v2.jpg)
+
+**Figure 3.:** (A) Kinesin and dynein were labeled with organic dyes and their motility was tested in the presence and absence of anti-tubulin antibody on MTs. (B) Kymographs of TMR-kinesin and LD555-DDB walking on MTs in the absence and presence of 20 µg/mL antibody obstacle. (C) Quantification of how antibody obstacles affect motor motility. All data are normalized to the no antibody condition (mean ± SD, two independent experiments). From left to right, n = 185, 232, 199, 197 motors for kinesin and 104, 224, 262, 308 motors for DDB.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The schematics represent the cross-sectional view of a motor bypassing an obstacle by taking sideways steps on an MT. Increasing the size of the obstacle or the cargo attached to the motor is expected to reduce the number of protofilaments that support motility (white). The protofilaments that are blocked by the obstacle/cargo are shown in red.
+
+![Video 3.](https://cdn.elifesciences.org/articles/48629/elife-48629-video3.mp4.jpg)
+
+**Video 3.:** Kinesin motors labeled with TMR walk on MTs in the presence (right) and absence (left) of antibody obstacles. MT fluorescence was recorded in a separate channel (not shown). There was a notable reduction in velocity and run length in the presence of antibody on the MT. Images were acquired at 5 Hz under TIRF illumination.
+
+![Video 4.](https://cdn.elifesciences.org/articles/48629/elife-48629-video4.mp4.jpg)
+
+**Video 4.:** DDB motors labeled with LD555 walk on MTs in the presence (right) and absence (left) of tubulin antibody obstacles. MT fluorescence was recorded in a separate channel (not shown). DDB motors were less affected by antibody obstacles than kinesin. Images were acquired at 5 Hz under TIRF illumination.
+
+### Obstacle avoidance of single motors on freely suspended MTs
 
 On surface-immobilized MTs, motors cannot access protofilaments facing the coverslip. As a result, surface immobilization may serve as an additional obstacle as the motors attempt to bypass the QDs. MTs in the cell, however, are freely suspended in 3D. This may allow motors to fully explore the MT surface and more successfully bypass the obstacles. To test this possibility, we constructed ‘MT bridges’ by immobilizing MT ends to polydimethylsiloxane (PDMS) ridges on either end of a 10 µm deep valley (Figure 4A,B, Figure 4—figure supplement 1). Similar to surface-immobilized MTs, DDB and yeast dynein were able to walk at the highest QD concentration tested on MT bridges (Figure 4C). Interestingly, yeast dynein’s run length was 2.5-fold higher on MT bridges compared to surface-immobilized MTs at 12 QD µm−1 (p<0.001, two-tailed t-test, Figure 1E, Figure 4C), suggesting that this motor bypasses obstacles more successfully by exploring the entire MT surface. However, we did not observe a significant improvement in kinesin motility on MT bridges in comparison to surface-immobilized MTs (Figure 1E, Figure 4C). The mobile fraction was reduced by 75% at 1 QD µm−1 compared to the no obstacle condition, and motility could not be detected at 7 QDs µm−1. Similar to surface-immobilized MTs, frequent pauses were observed in kinesin motility in the presence of QD obstacles on MT bridges (Figure 4—figure supplement 2). These results suggest that kinesin is intrinsically limited by its ability to side-step to adjacent protofilaments when it encounters obstacles on an MT.
 
-## Multi-kinesin cargos bypass obstacles on MTs
+![Figure 4.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of a single-molecule motility assay on MT bridges coated with QD obstacles (not to scale). (B) An example image of Cy5-labeled MT bridges in the microfabricated chamber. PDMS ridges (arrows) are visible due to the autofluorescence. (C) Mobile fraction, velocity and run length of motors along MT bridges were normalized to the no QD condition (mean ± SD, three independent experiments). From left to right, n = 199, 187, 106 for kinesin, 129, 107, 163, 135 for yeast dynein, and 192, 206, 330, 276 for DDB.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Workflow for bridge microfabrication. The photoresist is spun and patterned on a silicon wafer. PDMS is then cast on top of the photoresist and silanized to produce a reactive surface. (B) Helium ion microscopy shows a top view of patterned PDMS. (C) Scanning electron microscopy shows the side view of patterned PDMS (top) and the zoomed view of this image reveals that the walls have sharp edges (bottom). (D) Image of the flow chamber used for experiments. (E) Example fluorescent images of QD585 obstacles on MT bridges at different QD concentrations. (F) Mobile fraction, velocity and run length of single motors on MT bridges without normalization (mean ± SD, two independent experiments). From left to right, n = 199, 187, 106 for kinesin, 129, 107, 163, 135 for yeast dynein, and 192, 206, 330, 276 for DDB.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative kymographs reveal frequent pauses in kinesin motility in the presence of 1 QD µm−1 on suspended MT bridges. Most pauses were permanent throughout recording.
+
+### Multi-kinesin cargos bypass obstacles on MTs
 
 In cells, cargos are often carried by multiple motors, which increases collective force generation and enables transport of the cargo over longer distances (Derr et al., 2012; Rai et al., 2016; Encalada et al., 2011; Levi et al., 2006) as well as at slightly higher velocities (Nelson et al., 2014). We asked whether multiple motors can transport cargo under conditions in which single motors are unable to walk along MTs. To test this, 500 nm cargo beads were coated with multiple kinesins or DDB motors (Figure 5A). In the absence of QD obstacles, the beads were highly processive and did not detach until they reached the end of the MT. When the beads were incubated with a low concentration (50 nM) of kinesin motors, we detected processive motility of beads, albeit with frequent pausing, on MTs decorated with 7 QDs µm−1 (Figure 5B). This was a density at which single kinesins were completely inhibited (Figure 1E). However, motility of these beads was severely inhibited at 12 QDs µm−1. Surprisingly, when beads were incubated with a higher concentration (1.5 µM) of kinesin, their mobile fraction was unaffected by the decoration of MTs with 12 QDs µm−1 (Figure 5B,C, Figure 5—figure supplement 1, Video 5). Similarly, multiple DDBs transported beads to the minus-ends of MTs regardless of the surface density of QDs with no decrease in mobile fraction (Figure 5B,C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of bead motility driven by multiple motors along surface-immobilized MTs decorated with QD obstacles (not to scale). (B) Kymographs reveal the motility of beads coated with kinesin or DDB in the presence and absence of QD obstacles. Diffusion of unattached beads creates a background in the kymograph. To the right of each kymograph is an illustration of the bead motility on the MT. (C) Mobile fraction and velocity of beads were normalized to the no QD condition (mean ± SD). From left to right, n = 154, 189 bead traces for 50 nM kinesin, 323, 338, 336 for 1.5 µM kinesin, and 279, 184, 67 for DDB from three independent experiments. (D) Representative traces for 1.5 µM kinesin on beads in the absence and presence of antibody obstacle. The dashed red line indicates the plus-end of the MT. (E) Quantification of mobile fraction and velocity of kinesin-driven beads. From left to right, n = 145, 198, 141, 201 beads.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mobile fraction and (B) velocity of beads driven by multiple motors on surface-immobilized MTs in the presence of QD obstacles (mean ± SD, three independent experiments). The mobile fraction of the beads was higher than 95% in the absence of QD obstacles. From left to right, n = 154, 189 traces for 50 nM kinesin, 323, 338, 336 traces for 1.5 µM kinesin, and 279, 184, 67 traces for 200 nM DDB.
+
+![Video 5.](https://cdn.elifesciences.org/articles/48629/elife-48629-video5.mp4.jpg)
+
+**Video 5.:** 500 nm diameter beads were labeled with 1.5 µM kinesin. Beads move along surface-immobilized MTs in the presence of no obstacles (left) or 166 nM obstacles (right). Boxes highlight the processive motility of beads along a surface-immobilized MTs (not labeled). In addition, freely diffusing beads in the chamber come in and out of focus during imaging. Images were acquired at 10 Hz under brightfield illumination.
+
 The analysis of the individual trajectories of dynein-driven beads showed that the velocity decreased by 28% in the presence 12 QD µm−1 (p=0.02, two-tailed t-test, Figure 5C), comparable to a 19% decrease of the velocity of single dyneins under the same conditions (p=0.05, two-tailed t-test, Figure 1E). The velocity of kinesin-driven beads also decreased by 25% decrease when exposed to 12 QDs µm−1 (p=0.02, two-tailed t-test, Figure 5C). We also tested if multi-kinesin cargoes were able to walk on antibody-coated MTs better than single kinesin motors. For beads coated with 1.5 µM of kinesin, run length and mobile fraction were unaffected by 20 µg/mL antibody (Figure 5D,E). Remarkably, all beads walked until they reached the end of the MT (Figure 5D, Video 6). Mobile fraction was also not reduced (p=0.73, Figure 5E). Similar to QD-obstacles, multi-motor kinesin exhibited reduced velocity at 20 µg/mL antibody (p=0.04, Figure 5E). Therefore, while single kinesins are strongly affected by obstacles on MTs, a team of kinesins can carry cargo beads over long distances along MTs densely decorated with obstacles as well as dyneins.
 
-## Multi-motor cargos rotate around the MT to avoid large obstacles
+![Video 6.](https://cdn.elifesciences.org/articles/48629/elife-48629-video6.mp4.jpg)
+
+**Video 6.:** Beads coated with 1.5 µM kinesin motors walk on MTs in the presence (right) and absence (left) of antibody obstacles. MT fluorescence was recorded in a separate channel (not shown). Images were acquired at 5 Hz under brightfield illumination. Motility of monodisperse beads was analyzed, while clumps of beads were excluded from the analysis.
+
+### Multi-motor cargos rotate around the MT to avoid large obstacles
 
 Avoiding obstacles larger than a QD, such as a stationary organelle or intersecting cytoskeletal filament, may require cargoes to rotate to the other side of the MT before continuing forward movement (Verdeny-Vilanova et al., 2017). In vivo studies have observed both anterograde and retrograde cargos to bypass stationary organelles (Che et al., 2016). It has been proposed that rotation of cargoes around the MT requires the presence of both kinesin and dynein motors on the cargo or the distortion of the lipid cargo (Hancock, 2014; Kaplan et al., 2018; Verdeny-Vilanova et al., 2017). To test whether a single type of motor can rotate a rigid cargo around the MT, we tracked beads driven by multiple kinesins or dyneins on MT bridges. If the beads were positioned below the MT when they reached the end of the bridge, they were challenged to bypass the PDMS wall (Figure 6A). Remarkably, we observed that most of these beads rotated to the top of the MT with no forward motion before they continued along the MTs (77 ± 13% kinesin beads and 85 ± 5% dynein beads, mean ± SD, Figure 6B,C, Videos 7 and 8). This movement was different from the previously observed helical movement of kinesin- or dynein-driven cargos around the MT (Can et al., 2014; Nitzsche et al., 2008), in which rotation is accompanied by forward translational movement. 29% and 24% of kinesin- and dynein-driven beads, respectively, paused before moving forward (Figure 6B,C), similar to intracellular cargos that encounter stationary organelles (Che et al., 2016). In contrast to strong inhibition of single kinesins by obstacles, beads driven by multiple kinesins paused for a shorter period than dynein-driven beads when they encountered the wall (3.8 ± 0.2 s vs 7.8 ± 1.0 s, mean ± SEM, Figure 6D). Only 23% of kinesin beads and 15% of dynein beads either got stuck or detached from MTs at the PDMS wall. We concluded that cargos driven by multiple motors can bypass large obstacles by rotating around the circumference of the MT.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48629/elife-48629-fig6-v2.jpg)
 
 **Figure 6.:** (A) Schematic of multi-motor bead motility on MT bridges. The position of the bead in the z-axis is determined from changes in bead intensity under brightfield illumination. If a bead is positioned below the MT when it reaches the PDMS wall, it must move to the top of the MT (red dotted curve) before continuing forward. (B) Kymographs reveal how beads driven by kinesins and DDBs move when they encounter the PDMS wall (below). (Pass) The bead rotates around the MT as evidenced by light to dark transitions in the bead intensity at the wall before continuing forward. (Pause/pass) The bead paused for more than 1 s at the wall before rotating around the MT and moving forward. (Detach/stuck) The bead failed to pass the wall and either detached (left) or got stuck on an MT (right). (C) The percentage of the pass, pause/pass and detach/stuck events for the beads positioned below the MT when they encounter the PDMS wall (mean ± SD, two independent experiments). The number of beads is shown in parentheses. p-values are calculated using two-tailed t-test for pass, pause/pass and stuck, and z-score calculation for detach. (D) The inverse cumulative distribution of pause times for kinesin and DDB beads. A fit to a single exponential decay (solid curves) revealed that pause duration of DDB-driven beads is longer than kinesin-driven beads (F-test, p=0.0001, n = 16 pauses for kinesin and 11 for DDB).
+
+![Video 7.](https://cdn.elifesciences.org/articles/48629/elife-48629-video7.mp4.jpg)
+
+**Video 7.:** The box highlights the processive motility of a bead driven by multiple kinesins on an MT bridge (unlabeled) suspended over the PDMS ridges. The valley (dark) is in the center of the movie while the PDMS ridges (light) are on either side. As the bead reaches the PDMS wall (light/dark interface), the bead intensity shifts from light to dark before the bead continues to walk on the PDMS ridge. Images were acquired at 10 Hz under brightfield illumination.
+
+![Video 8.](https://cdn.elifesciences.org/articles/48629/elife-48629-video8.mp4.jpg)
+
+**Video 8.:** The box highlights the processive motility of a bead driven by multiple DDBs on an MT bridge (unlabeled) suspended over the PDMS ridges. The valley (dark) is in the center of the movie while the PDMS ridges (light) are on either side. As the bead reaches the PDMS wall (light/dark interface), the bead intensity shifts from light to dark before the bead continues to walk on the PDMS ridge. Images were acquired at 10 Hz under brightfield illumination.
 
 ## Discussion
 
@@ -74,70 +154,290 @@ Multi-motor teamwork also proved beneficial for both types of motors when challe
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Amino quantum dot (655)</td>
+      <td>ThermoFisher</td>
+      <td>Q21521MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin quantum dot (585)</td>
+      <td>ThermoFisher</td>
+      <td>Q10111MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>APTES</td>
+      <td>Sigma</td>
+      <td>440140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin antibody (mouse monoclonal)</td>
+      <td>Sigma, Tub 2.1</td>
+      <td>T5201</td>
+      <td>Dilution range 0–20 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Kinesin-1</td>
+      <td>Belyy et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Yeast dynein heavy chain</td>
+      <td>Reck-Peterson et al., 2006</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BicD2 (amino acids 1–400)</td>
+      <td>Schlager et al., 2014</td>
+      <td>Addgene 111862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human cytoplasmic dynein complex</td>
+      <td>Zhang et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Acetone</td>
+      <td>Sigma</td>
+      <td>270725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Ethanol</td>
+      <td>Sigma</td>
+      <td>459828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IgG Sepharose Beads</td>
+      <td>GE Healthcare</td>
+      <td>17096902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Glutaraldehyde</td>
+      <td>Fisher Scientific</td>
+      <td>G1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PDMS</td>
+      <td>Sylgard 184 Silicone Elastomer</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma</td>
+      <td>G2133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Catalase</td>
+      <td>Sigma</td>
+      <td>C3155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Taxol</td>
+      <td>Sigma</td>
+      <td>T7191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pig Brain Dynactin</td>
+      <td>Schlager et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pig Brain Tubulin</td>
+      <td>Castoldi and Popov, 2003</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>ATP</td>
+      <td>Sigma</td>
+      <td>A3377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA beads</td>
+      <td>Thermo Scientific</td>
+      <td>88221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Fugene HD transfection reagent</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>HaloTag Ligand succinimidyl ester</td>
+      <td>Promega</td>
+      <td>P6751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>SU-8 2010 photoresist</td>
+      <td>Microchem</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Super Active Latex Beads</td>
+      <td>Thermo Fisher</td>
+      <td>C37481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Sulfo-NHS</td>
+      <td>Thermo Fisher</td>
+      <td>24510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>EDC</td>
+      <td>Thermo Fisher</td>
+      <td>22980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>U-track</td>
+      <td>Jaqaman et al., 2008</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (anti-rabbit polyclonal)</td>
+      <td>Covance</td>
+      <td>N/A</td>
+      <td>Used at0.4 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse BicDR1 (full length)</td>
+      <td>Urnavicius et al., 2018</td>
+      <td>Adapted from Addgene 111585</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 A human kinesin-1 coding sequence expressing amino acids 1–560 was fused to GFP, HaloTag and a 6xHis tag on the C-terminus (hK560::GFP::HaloTag::6xHis) (Belyy et al., 2016). The N-terminus of yeast cytoplasmic dynein was replaced with a HaloTag and a GST dimerization tag (HaloTag-GST-Dyn1331kDa, consisted of amino acids 1219–4093 of the dynein heavy chain) (Reck-Peterson et al., 2006). A full length human cytoplasmic dynein construct consisted of the dynein heavy chain tagged with an N-terminal SnapTag, cloned into a pOmniBac vector, and fused to a plasmid that contained dynein intermediate chain, light intermediate chain and three different light chains (Tctex, Roadblock and LC8), as described (Schlager et al., 2014). We used a dynein mutant that does not form the autoinhibited phi-conformation (Zhang et al., 2017) to facilitate assembly of the DDB complex. The BicD2N construct consisted of GFP fused to the first 400 amino acids of mouse BicD2 (Schlager et al., 2014). The mouse BicDR1consisted of SNAP tag fused to the C-terminus of the full-length protein (Urnavicius et al., 2018).
 
-## Kinesin purification
+### Kinesin purification
 
 Rosetta cells transformed with kinesin plasmid were grown in a 5 mL culture overnight. This culture was added to 1 L of LB media and grown for 3 hr until the OD600 reached 0.7. Cells were induced with fresh 100 µM IPTG, put on ice until the temperature reached 20 degrees Celcius and incubated overnight at 20 degrees at 180 RPM. After harvesting cells at 4785 RCF for 15 min in a JLA 8.1 rotor, 500 mL cell pellets were incubated with 40 mL lysis buffer (50 mM sodium phosphate monobasic pH 8.0, 250 mM sodium chloride, 2 mM magnesium chloride, 20 mM imidazole, 1 mM ATP, 10 mM beta-mercaptoethanol (BME), 1 mM phenylmethylsulfonyl fluoride (PMSF)). Cells were lysed with a sonicator and spun in a Ti70 rotor at 117734 RCF for 30 min. The supernatant was incubated with 6 mL of washed Ni-NTA bead slurry (HisPur, Thermo Scientific) for 1 hr at four degrees. Beads were collected in a BioRad column and washed in wash buffer (50 mM sodium phosphate monobasic pH 6, 250 mM sodium chloride, 1 mM magnesium chloride, 20 mM imidazole, 100 µM ATP, 10 mM BME). Protein was eluted in elution buffer (50 mM sodium phosphate monobasic pH 7.2, 250 mM sodium chloride, 1 mM magnesium chloride, 500 mM imidazole, 100 µM ATP, 10 mM BME) and snap-frozen in liquid nitrogen after addition of 20% glycerol.
 
-## Yeast dynein purification
+### Yeast dynein purification
 
 Yeast cells were cultured on YPAD plates for 2–3 days. A 10 mL culture was grown overnight in YP media with 1 mL of 25% dextrose + 0.04% adenine supplements at 30 degrees. 2 mL of the culture was then added to 100 mL of 1.25x YP media supplemented with 10 mL of 20% raffinose. After 9 hr of growth, the entire culture was added to 1.8 L of YP media supplemented with 200 mL of 20% (w/v) galactose. Cells were cultured at 30 degrees with shaking (200 rpm) overnight until the OD600 reached 1.5. After harvesting cells at 4785 RCF for 15 min in a JLA 8.1 rotor, cells were frozen dropwise and lysed while frozen in a coffee grinder. 50 mL of lysis buffer (30 mM HEPES pH 7.4, 50 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 10% glycerol, 1 mM dithiothreitol, 100 µM ATP, 1 mM PMSF) was added to a 1 L yeast pellet. Cells were spun at 360562 RCF for 45 min in a Ti70 rotor. The supernatant was incubated with washed IgG beads (IgG Sepharose 6 Fast Flow, GE Healthcare) for 1 hr with gentle rolling. Beads were collected using a BioRad disposable column, washed with wash buffer (lysis buffer with 125 mM KCl) and TEV buffer (10 mM Tris pH 8, 150 mM KCl, 10% glycerol, 1 mM tris(2-carboxyethyl)phosphine, 100 µM ATP, 1 mM PMSF). Beads were transferred to an Eppendorf tube and eluted with TEV protease for 1 hr. Beads were then spun down and the supernatant was snap-frozen in 20% glycerol.
 
-## Purification of mammalian dynein-dynactin
+### Purification of mammalian dynein-dynactin
 
 Human dynein, mouse BicD2N, mouse BicDR1 and pig brain dynactin were purified as previously described (Zhang et al., 2017). Further information can also be found on Invitrogen's Bac-to-Bac Baculovirus Expression System Guide (Invitrogen). Briefly, plasmids containing genes of interest were transformed into DH10Bac competent cells and plated on LB agar plates with kanamycin, gentamycin, tetracycline, Blue-gal, and isopropyl beta-D-1-thiogalactopyranoside. An overnight culture of a colony grown in 2X YT media with kanamycin, gentamycin and tetracycline and the bacmid was purified from these cells. Cells were lysed and neutralized using Qiagen miniprep buffers P1, P2, and P3. DNA was then precipitated with isopropanol and spun down for 10 min at 13,000 RCF at 4°C. The DNA pellet was washed three times with 70% ethanol, air-dried and resuspended in Qiagen's EB buffer.
 
 Bacmid was used within a few days for transfecting Sf9 cells. All insect cell culture was courtesy of Berkeley's Cell Culture Facility. The cells have not been authenticated or tested for mycoplasma contamination. 2 mL of Sf9 cells at 500,000 cells/mL was aliquoted into a 6-well dish and allowed to attach for 10 min. 1 microgram of bacmid DNA was diluted in ESF 921 media (Expression systems, no antibiotic or serum), mixed with 6 µL of Fugene HD transfection reagent (Promega) and incubated for 15 min at room temperature. Media on the cells was removed and replaced with 0.8 mL of ESF 921 media. The Fugene/DNA mix was added dropwise on the cells. The dish was sealed with Parafilm and incubated for 72 hr. 24 hr into this incubation, 1 mL of extra ESF 921 media was added to the cells. After removing the media and spinning, 1 mL of the supernatant (P1 virus) was added to 50 mL of Sf9 cells at a density of 1 million cells/mL. Following a 72 hr incubation, the media was spun down and the supernatant (P2 virus) was harvested. 10 mL of the P2 virus was used to infect 1 L of Sf9 cells at 1 million cells/mL and expression proceeded for 72 hr. Cells expressing the protein of interest were harvested at 4000 RCF for 10 min and resuspended in 50 mL lysis buffer (50 mM HEPES pH 7.4, 100 mM NaCl, 10% glycerol, 1 mM DTT, 100 µM ATP, 2 mM PMSF and 1 tablet of protease inhibitor cocktail). Lysis was performed using 15 loose and 15 tight plunges of a Wheaton glass dounce. The lysate was clarified using a 45 min, 360562 RCF spin in a Ti70 rotor and incubated with 2 mL IgG beads (IgG Sepharose 6 Fast Flow, GE Healthcare) for 2 hr. Beads were washed with lysis buffer and TEV buffer (50 mM Tris pH 7.4, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 10% glycerol, 1 mM dithiothreitol, 100 µM ATP). Beads were then collected and incubated with TEV protease overnight to elute the protein. Finally, the protein was concentrated and snap-frozen in liquid nitrogen after the addition of 20% glycerol.
 
-## Glass silanization
+### Glass silanization
 
 Glass slides were functionalized with aminopropyltriethoxysilane (APTES) and glutaraldehyde to allow for covalent attachment of MTs, as described previously (Nicholas et al., 2014). APTES (Sigma, 440140) aliquots were prepared in 5 mL cryotubes (Corning, 430656) using glass pipettes, capped under nitrogen atmosphere, snap-frozen upright in liquid nitrogen and stored in −80°C. Glass slides were sonicated in a 2% Mucasol (Sigma, Z637181) prepared in hot water and then rinsed thoroughly in water. Slides were then baked on a hot plate (Benchmark, BSH1002) to remove excess water for 5 min. To create functional silanol groups, slides were treated with oxygen plasma (PETS Reactive Ion Etcher) at 200 mTorr oxygen, 55 W for 1 min. Slides were rinsed briefly in acetone (Sigma, 270725) and immersed in a 2% (v/v) APTES in acetone for 1 min. APTES aliquots were added to acetone before warming to room temperature. After silane treatment, the slides were rinsed in acetone and baked on a 110°C hot plate for 30 min. To remove silane unbound to the glass, slides were sonicated sequentially in ethanol (Sigma, 459828) and water for 5 min. Following this treatment, slides were again baked at 110°C for 30 min. An 8% glutaraldehyde solution (Fisher Chemical, G1511) was prepared in water and 1 mL drops of the solution were made on Parafilm. Slides were incubated functionalized-side down on the glutaraldehyde solution drops for 30 min in a sealed container. Finally, the slides were washed and sonicated in water for 10 s to remove loosely absorbed glutaraldehyde and stored in a sealed container at room temperature up to 1 week.
 
-## Labeling
+### Labeling
 
 Motors were labeled with QDs modified with a HaloTag or SnapTag ligand. Amino-PEG-QDs (Thermo, Q21521MP) were labeled with HaloTag ligand by reaction with N-hydroxysulfosuccinimide reactive Halo-Tag ligand (Promega, P6751) or Snap-Tag ligand for 30 min at room temperature. QDs were then exchanged into 25 mM borate pH 8.5 using Amicon 100K centrifugal filters and stored in that buffer. 2 µM of these QDs were mixed with 100–500 nM motors fused with a SNAPTag or HaloTag for 10 min on ice. For labeling with dye, HaloTag-Cy3 was added to kinesin while it was bound to beads during the purification. Excess dye was washed away before eluting the protein. A similar procedure was used to label SNAP-BicDR1.
 
-## Motility assays
+### Motility assays
 
 Tubulin was purified from pig brain and labeled with biotin or fluorophores as described (Castoldi and Popov, 2003; Nicholas et al., 2014). The final percentage of biotin on the MT was less than 5%. To perform motility assays, biotinylated MTs were diluted in BRB80 (80 mM PIPES pH 6.8, 1 mM EGTA, 1 mM magnesium chloride) supplemented with 10 µM taxol and flowed into a chamber made with two pieces of double-sided tape between an APTES-silanized slide and an unmodified coverslip. Chamber was then passivated with BRB80 supplemented with 1 mg/mL casein (Sigma, C5890), 1 mM DTT and 10 µM taxol. The chamber was incubated with different dilutions of streptavidin-coated QDs (Invitrogen, Q10111MP) or monoclonal anti-β-tubulin antibody produced in mouse (T5201, Sigma). At low QD concentrations, the linear density of QD-obstacles on the MT was measured by counting the number of fluorescent spots from TIRF images. At higher QD concentrations, the linear density was estimated from the ratio of total fluorescence signal on an MT to the fluorescence intensity of a single QD.
 
 BRB80 (above), DLB (30 mM HEPES pH 7.2, 2 mM magnesium chloride, 1 mM EDTA, 10% glycerol) and MB (30 mM HEPES pH 7.0, 5 mM MgSO4, 1 mM EGTA) buffers were used for assaying the motility of kinesin, yeast dynein, and DDB, respectively. Motor-QD mixtures were flowed into the chamber, bound to the MT and washed to remove unbound motor and QD. For experiments with antibody obstacles, dye- labeled kinesin-1 or BicDR1 were used. Finally, motor-specific buffer supplemented with 1 mg/mL casein, 1 mM tris(2-carboxyethyl) phosphine (TCEP), 100 µM ATP, glucose oxidase, catalase, and 0.8% dextrose were flown into the chamber. Run-length and velocity were determined by selecting the beginning and end of each trace in ImageJ. Cumulative frequencies of run lengths were fit to a single exponential function. Reported run lengths are the half-life values. The mobile fraction was calculated by dividing the number of moving motors over the total number of motors observed in the kymograph.
 
-## Microscopy
+### Microscopy
 
 Microscopy was performed using a custom-built fluorescence microscope equipped with a Nikon Ti-E Eclipse microscope body, a 40 × 1.15 NA long-working-distance water immersion objective (Nikon, N40XLWD-NIR), and a perfect focusing system (DeWitt et al., 2012). The sample position was controlled using an automated microscope stage (Microstage 20E, MadCityLabs). The sample was excited in the epifluorescence mode using 488, 561 and 633 nm laser beams (Coherent). Fluorescence image was split into two channels using OptoSplit2 (Cairn instruments) and detected by an electron-multiplied CCD Camera (Andor Ixon, 512 × 512 pixels).
 
-## Single-molecule tracking and pause analysis
+### Single-molecule tracking and pause analysis
 
-Single-particle tracking was performed using Utrack (Jaqaman et al., 2008). Tracks were split into 1D motion along the long axis of the MT and perpendicular direction as described (DeWitt et al., 2015). All tracks were manually reviewed to exclude tracks with jumps greater than 100 nm. Localization error was calculated using high pass filtering of the trajectories by calculating xi′=xi+1− xi2, where x is the position of the probe along the MT axis and i is the frame number. This operation omits unidirectional motility and pauses at lower frequencies, leaving only the Gaussian noise associated with the trace. σx' is defined as the localization error. Under our imaging conditions, the localization error of QDs was typically between 20-40 nm (Figure 2—figure supplement 1). Pause analysis was performed as described (DeWitt et al., 2015). Briefly, the track was divided into distance bins and the residence time within each bin was calculated. All non-zero residence times were fit to a single exponential decay. The residuals were then fit to a single exponential decay. The decay time and amplitude of this second fit were defined as the average pause time and pause density, respectively.
+Single-particle tracking was performed using Utrack (Jaqaman et al., 2008). Tracks were split into 1D motion along the long axis of the MT and perpendicular direction as described (DeWitt et al., 2015). All tracks were manually reviewed to exclude tracks with jumps greater than 100 nm. Localization error was calculated using high pass filtering of the trajectories by calculating $x_{i}^{′}=\frac{x_{i+1}− x_{i}}{\sqrt{2}}$, where $x$ is the position of the probe along the MT axis and i is the frame number. This operation omits unidirectional motility and pauses at lower frequencies, leaving only the Gaussian noise associated with the trace. $\sigma_{x^{'}}$ is defined as the localization error. Under our imaging conditions, the localization error of QDs was typically between 20-40 nm (Figure 2—figure supplement 1). Pause analysis was performed as described (DeWitt et al., 2015). Briefly, the track was divided into distance bins and the residence time within each bin was calculated. All non-zero residence times were fit to a single exponential decay. The residuals were then fit to a single exponential decay. The decay time and amplitude of this second fit were defined as the average pause time and pause density, respectively.
 
-## Simulations
+### Simulations
 
 Optimum running window averaging and bin size were calculated from simulated traces generated in MatLab. Experimentally determined noise, velocity and pause distributions were used to generate traces (Figure 2—figure supplement 1). A particle takes 8 nm unidirectional steps with exponentially distributed dwell times of 0.015 and 0.59 s, mimicking the characteristic times of processive motility and pausing of kinesin motors, respectively. The trace was then resampled to the imaging rate of 10 Hz. Random Gaussian noise was added to each position to introduce localization error. Simulations were used to determine whether the localization error in traces interferes with pause detection.
 
-## Microfabrication
+### Microfabrication
 
 PDMS bridges were generated using soft lithography (Qin et al., 2010; Théry and Piel, 2009). Briefly, SU-8 2010 negative photoresist (Microchem) was spun on to a silicon wafer to 10 µm thickness. After a soft bake, the photoresist was exposed to UV light through a patterned, film photomask (Fine Line Imaging) on an OAI 200 Lithographic Mask Aligner. The pattern was developed after a hard bake using SU-8 developer (Microchem). To render the surface less adhesive, the master was treated with trichloro(1H,1H,2H,2H-perfluorooctyl)silane vapor. Sylgard 184 (Dow Corning) base and curing agent were mixed in a 10:1 ratio by mass and degassed. After pouring over the master, the PDMS was cured for 1 hr at 80°C (Figure 1—figure supplement 2). Features were confirmed with helium ion microscopy and scanning electron microscopy. The PDMS was then removed from the mask and baked for an additional 1 week at 80°C. To extract low molecular weight species that diffuse to the surface and alter surface chemistry (Eddington et al., 2006), PDMS was incubated, in sequence, with triethylamine, ethyl acetate, and acetone and allowed to dry overnight in an oven.
 
-## MT bridges
+### MT bridges
 
 Silanization of PDMS was similar to glass with a few modifications. Ethanol was used as the solvent rather than acetone, as it is less likely to swell the PDMS (Lee et al., 2003). The patterned surface was plasma oxidized at 50 W and 200 mTorr for 1 min. The slab was then immediately immersed in a 5% (v/v) solution of APTES in HPLC-grade ethanol (Sigma, 459828) for 20 min. After rinsing in 95% ethanol/water, the PDMS was baked 40 min on a hot plate. To remove unbound silane, PDMS was rinsed in pure ethanol and then water, and baked for an additional 40 min. Finally, PDMS was incubated for 1 hr in an 8% glutaraldehyde solution. Excess glutaraldehyde was removed by rinsing in water and the functionalized PDMS was stored at room temperature for 1 week. To create a flow chamber, uncured PDMS was spin-coated on a coverslip to a thickness of 100 µm. After baking, a channel was cut in the PDMS-coated coverslip, and the surface was plasma oxidized. The PDMS block with the bridge pattern was placed functional-side down on the coverslip, creating a flow cell (Figure 1—figure supplement 2). Motility assays were performed as described for single-molecule assays. The sample was imaged using a 1.4 NA oil-immersion condenser (Nikon) under brightfield illumination.
 
-## Anti-GFP coating beads
+### Anti-GFP coating beads
 
 Latex beads were coated with anti-GFP antibody as described (Belyy et al., 2016). To prevent clumping of the beads when incubated with high concentrations of motors, we used ‘CML’ beads (ThermoFisher, C37481), which have a high density of carboxyl groups that facilitate charge repulsion. 200 µL of 0.5 µm diameter CML beads (4% solids) were washed three times in activation buffer (10 mM MES, 100 mM sodium chloride, pH 6.0) by centrifugation for 6 min at 7,000 g. Final resuspension was in 200 µL activation buffer. Beads were then sonicated for 1 min in a bath sonicator (Vevor). Separately, fresh 4 mg/mL solutions of EDC (1-ethyl-3-(3-dimethyl aminopropyl)carbodiimide hydrochloride, ThermoFisher) and Sulfo-NHS (N-hydroxysulfosuccinimide) were prepared in water. 5 µL each of fresh EDC and Sulfo-NHS solutions were added to the beads. Beads were sonicated for 1 min and nutated for 30 min at room temperature. After three washes in PBS, beads were resuspended in 200 µL PBS and mixed with 200 µL 0.4 mg/mL anti-GFP antibody overnight with nutation. Custom-made anti-GFP antibodies (Covance) were purified by GFP affinity chromatography. The beads were passivated by incubating with 10 mg/mL bovine serum albumin (BSA) overnight. Finally, beads were washed five times in PBS and stored at 4°C with 1 mg/mL BSA supplement.
 
-## Bead motility assay
+### Bead motility assay
 
 For bead motility assays, anti-GFP beads were diluted two-fold in water and sonicated for 1 min to disperse the beads. GFP-tagged kinesin motors were incubated with beads for 10 min. The excess motor was then washed from the beads by diluting the mixture into 100 µL BRB80 supplemented with 1 mg/ml casein (BRB-C) and centrifuging at 8,000 g for 3 min. The supernatant was removed and the pellet was resuspended in 15 µL BRB-C supplemented with 1 mM TCEP, 100 µM ATP, glucose oxidase, catalase, and 0.4% dextrose. Beads were then flown into a flow chamber after surface-immobilization of biotinylated MTs. DDB experiments were performed similarly with a few exceptions. The GFP handle was on the cargo adaptor (BicD2N-GFP). We used a dynein mutant that does not form the autoinhibited phi-conformation (Zhang et al., 2017) to facilitate assembly of the DDB complex. 1 µL each of 1 µM human dynein complex, pig brain dynactin, and BicD2N-GFP were mixed at a 1:1:1 molar ratio and incubated for 15 min before mixing with the beads. The mixture was pelleted at 8,000 g, resuspended in 15 µL MB supplemented with 1 mg/mL casein, 1 mM TCEP, 100 µM ATP, glucose oxidase, catalase and dextrose and added to the flow chamber.
 
-## Statistical analysis
+### Statistical analysis
 
 Each measurement was performed with at least three independent replicates, and the exact number of repetitions is reported for each experiment. Each statistical analysis method is explicitly stated in the main text and/or figure legend. ‘n’ refers to the number of motors analyzed across all experimental replicates. ‘Independent experiments’ mean data collected on different days using the same protein preparation. However, all major findings were repeated with multiple different protein preparations. Standard deviations (SD) represent differences between independent experiments. When reported, standard error (SEM) refers to the error of the fit.
 
-## Data and materials availability
+### Data and materials availability
 
 Data has been deposited in Dryad Digital Repository and can be currently accessed at https://doi.org/10.6078/D1P09W.

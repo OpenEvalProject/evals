@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.48601.001 Mask family proteins were discovered in Drosophila to promote the activity of the transcriptional coactivator Yorkie (Yki), the sole fly homolog of mammalian YAP (YAP1) and TAZ (WWTR1). The molecular function of Mask, or its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17), remains unclear. Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP as well as a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES), suggesting a role in nucleo-cytoplasmic transport. Here we show that Mask acts to promote nuclear import of Yki, and that addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth. Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets. Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm, and are co-regulated during mechanotransduction.
+Mask family proteins were discovered in Drosophila to promote the activity of the transcriptional coactivator Yorkie (Yki), the sole fly homolog of mammalian YAP (YAP1) and TAZ (WWTR1). The molecular function of Mask, or its mammalian homologs Mask1 (ANKHD1) and Mask2 (ANKRD17), remains unclear. Mask family proteins contain two ankyrin repeat domains that bind Yki/YAP as well as a conserved nuclear localisation sequence (NLS) and nuclear export sequence (NES), suggesting a role in nucleo-cytoplasmic transport. Here we show that Mask acts to promote nuclear import of Yki, and that addition of an ectopic NLS to Yki is sufficient to bypass the requirement for Mask in Yki-driven tissue growth. Mammalian Mask1/2 proteins also promote nuclear import of YAP, as well as stabilising YAP and driving formation of liquid droplets. Mask1/2 and YAP normally colocalise in a granular fashion in both nucleus and cytoplasm, and are co-regulated during mechanotransduction.
 
 ## Introduction
 
@@ -32,21 +32,53 @@ Here we show that the Mask family of ankyrin-repeat domain proteins, which featu
 
 We began by examining whether Mask family proteins have a role in regulating the subcellular localisation of Yki, as we were unable to identify a direct transcriptional activation function for Mask in a GAL4 reporter assay (Figure 1—figure supplement 1). Previously, we ruled out a possible role for Mask in promoting Yki nuclear import based on antibody staining for Yki in mask10.22 null mutant clones in the Drosophila wing disc, where Yki is mostly cytoplasmic (Sidor et al., 2013). Recently, a Yki-GFP knock-in line revealed robust nuclear localisation of Yki in the mechanically stretched cells of the Drosophila ovarian follicle cell epithelium (Fletcher et al., 2018). We therefore induced mask10.22 null mutant clones induced in the developing follicle cell epithelium, in which an endogenously tagged Yki-GFP knock-in is cytoplasmic at stage 10 but becomes strongly nuclear during stage 11 as the columnar cells are stretched mechanically (Fletcher et al., 2018) (Figure 1A,B). We find that Yki-GFP is lost from the nucleus and accumulates in the cytoplasm in mask mutant cells (Figure 1C–F). These findings indicate that Mask proteins are required for normal nuclear localisation of Yki.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig1-v2.jpg)
+
+**Figure 1.:** (A) Stage 10 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of stretch cells (anterior) and cytoplasm of columnar cells (posterior). (A’) Magnification of columnar cells. (B) Stage 11 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of stretch cells (anterior) and nucleus of flattening columnar cells caused by growth of the oocyte (posterior). (B’) Magnification of flattening columnar cells. (C) Stage 10 Drosophila egg chamber containing null mutant clones of mask (marked by absence of nuclear RFP, red) display cytoplasmic Yki-GFP. (C’) Yki-GFP single channel. (D) Stage 11 Drosophila egg chamber containing null mutant clones of mask (marked by absence of nuclear RFP, red) display cytoplasmic Yki-GFP. (D’) Yki-GFP single channel. (E) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in (C) n = 7 clones. (F) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in (D) n = 12 clones.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Drosophila S2 cells were transfected with a UAS.Luciferase reporter gene and various GAL4 linked constructs, including GAL4 DNA binding domain (DBD) alone, GAL4-DBD-Yki and GAL4-DBD-Mask. No effect of Mask on luciferase reporter activity was measured, while Yki had a very strong transcriptional activity on the UAS.Luciferase reporter gene.
+
 The above observations suggest a potential role for Mask in nuclear import of Yki. Mask family proteins have a conserved nuclear localisation signal (NLS) located just C-terminal to the second ankyrin repeat domain (Figure 2A). To test whether this NLS is required for the function of Mask in vivo, we generated a mask CRISPR-knockin lacking the NLS motif (mask∆NLS), which was homozygous lethal but showed normal expression of the mutant protein and localisation to the cytoplasm in clones (Figure 2—figure supplement 1). Consistent with a role for Mask in nuclear import, clones of follicle cells homozygous for the mask∆NLS allele show a strong decrease in nuclear Yki-GFP and a corresponding increase in the level of cytoplasmic Yki-GFP (Figure 2B–D). These results demonstrate the essential requirement for the NLS motif in Mask function and support a key role for Mask in Yki nuclear import.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of the Mask family proteins and their conserved domains and motifs. (B) Stage 13 Drosophila egg chamber with endogenously tagged Yki-GFP (green) localised to the nucleus of flattening columnar cells. Nuclear localised RFP is also shown (red). (C) Stage 13 Drosophila egg chamber with endogenously tagged Yki-GFP (green) containing homozygous mutant clones for a CRISPR-knockin mask∆NLS mutant allele, marked by the absence of nuclear RFP (red). Note that Yki-GFP is no longer localised to the nucleus of flattening columnar cells in the mask∆NLS mutant clone. (D) Quantification of nuclear:cytoplasmic ratio of Yki-GFP in multiple mask∆NLS mutant clones as shown in (C) n = 22 clones.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The Nuclear Localisation Signal (NLS) region of the wild-type Mask protein is indicated in red. This region was deleted in the mask∆NLS allele. (B) Clones homozygous for the FRT mask∆NLS allele were induced by flp-FRT recombination over an FRT nlsRFP marker chromosome. Loss of nlsRFP indicates the homozygous cells. Note normal expression and cytoplasic localization of the Mask∆NLS protein. (C) Clones homozygous for the null mutant allele of FRT82 mask10.22 show a loss of Mask protein.
 
 Since the phenotypic characterisation of mask mutants focused on the proliferating epithelia of Drosophila, such as the developing wing (Sansores-Garcia et al., 2013; Sidor et al., 2013), we sought to examine the role of Mask in regulating Yki-GFP in this tissue. Yki is known to be primarily cytoplasmic in the developing wing, which is composed of densely packed columnar epithelial cells (Oh and Irvine, 2008) (Figure 3A). Since clones overexpressing Yki (MARCM clones expressing tub.Gal4 UAS.Yki) were shown to require Mask in order to drive cell proliferation in the wing (Sidor et al., 2013), we examined whether Mask affects the nuclear localisation of overexpressed Yki. We find that overexpressed Yki is readily detected in both nucleus and cytoplasm in control MARCM clones, but not in mask mutant MARCM clones, where the level of nuclear Yki is reduced relative to the level of Yki in the cytoplasm (Figure 3A). To test the function of Mask in nuclear import of endogenous Yki, we examined the peripodial epithelium, which features strongly nuclear Yki-GFP. We find that silencing of Mask expression by RNAi in the peripodial epithelium with Ubx.Gal4, prevents the normally strongly nuclear Yki-GFP localisation in these cells (Figure 3B). These results confirm that Mask is required for the nuclear localisation of both endogenous and overexpressed Yki in the developing wing of Drosophila.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig3-v2.jpg)
 
-**Figure 3.:** Drosophila wings.(A) Columnar epithelium of the wing imaginal disc from third instar larva showing mostly cytoplasmic localisation of endogenously tagged Yki-GFP (left). MARCM clones expressing Yki with the GAL4/UAS system show both nuclear and cytoplasmic Yki localisation, as detected by Yki antibody staining (nlsGFP+). MARCM clones for a null mask mutant allele show reduced nuclear Yki (nlsGFP+). n = 6 clones. (B) Squamous peripodial epithelium from the wing imaginal disc from third instar larva showing mostly nuclear localisation of endogenously tagged Yki-GFP (left). Silencing of Mask expression by ubx.Gal4 driven UAS.mask-IR (inverted repeat hairpin RNAi) in the peripodial epithelium is sufficient to reduce nuclear Yki-GFP localisation.
+**Figure 3.:** (A) Columnar epithelium of the wing imaginal disc from third instar larva showing mostly cytoplasmic localisation of endogenously tagged Yki-GFP (left). MARCM clones expressing Yki with the GAL4/UAS system show both nuclear and cytoplasmic Yki localisation, as detected by Yki antibody staining (nlsGFP+). MARCM clones for a null mask mutant allele show reduced nuclear Yki (nlsGFP+). n = 6 clones. (B) Squamous peripodial epithelium from the wing imaginal disc from third instar larva showing mostly nuclear localisation of endogenously tagged Yki-GFP (left). Silencing of Mask expression by ubx.Gal4 driven UAS.mask-IR (inverted repeat hairpin RNAi) in the peripodial epithelium is sufficient to reduce nuclear Yki-GFP localisation.
 
 The above results suggest that the reduced level of nuclear Yki may account for the failure of overexpressed Yki to drive cell proliferation in mask mutant clones in the developing wing. To test this notion, we linked an ectopic nuclear localisation sequence (NLS) and an epitope tag (HA) to Yki and expressed it in wild-type and mask mutant MARCM clones in the wing. We confirm that MARCM clones expressing tub.Gal4 UAS.Yki-NLS-HA are able to restore both nuclear localisation of Yki and cell proliferation in mask mutant cells (Figure 4A–G; Sidor et al., 2013). We note that even Yki-NLS-HA is still mildly less nuclear and more cytoplasmic when expressed in mask mutant cells compared to wild-type cells, and that this may therefore explain the mild difference in growth between these two types of clones (Figure 4E–G). We find similar results in the eye imaginal disc (Figure 4H–K). Thus, linkage of a nuclear localisation sequence to Yki can largely bypass the requirement for mask in Yki-driven cell proliferation in vivo. These results indicate that the primary function of Mask is to promote nuclear localisation of Yki in Drosophila.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig4-v2.jpg)
 
-**Figure 4.:** mask mutant cells.(A) Wing imaginal disc containing control MARCM clones (nlsGFP+, green). (B) Wing imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (C) Wing imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (D) Wing imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones. (E) Quantification of average clone sizes in A-D. (F) Close-up view of control MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (G) Close-up view of null mutant mask MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (H) Eye imaginal disc containing control MARCM clones (nlsGFP+, green). (I) Eye imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (J) Eye imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (K) Eye imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones.
+**Figure 4.:** (A) Wing imaginal disc containing control MARCM clones (nlsGFP+, green). (B) Wing imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (C) Wing imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (D) Wing imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones. (E) Quantification of average clone sizes in A-D. (F) Close-up view of control MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (G) Close-up view of null mutant mask MARCM clones expressing nlsYkiHA in red (marked by nlsGFP+, green). DAPI in blue. (H) Eye imaginal disc containing control MARCM clones (nlsGFP+, green). (I) Eye imaginal disc containing null mutant mask MARCM clones (nlsGFP+, green) are almost eliminated. (J) Eye imaginal disc containing control MARCM clones also expressing nlsYkiHA (nlsGFP+, green) proliferate more strongly than controls. (K) Eye imaginal disc containing null mutant mask MARCM clones also expressing nlsYkiHA (nlsGFP+, green) are rescued for their growth and survival to a level similar to wild-type clones.
 
 To extend these findings to mammals, we performed siRNA knockdown experiments in human HEK293T and Caco2 cells. In both cases, silencing of Mask1 (ANKHD1) was sufficient to reduce both nuclear localisation of YAP and total YAP levels, as measured by immunostaining or western blotting of cell lysates (Figure 5A–C). Notably, double siRNA against Mask1/2 causes apoptosis of transfected cells, indicating that the two proteins act redundantly (Figure 5C; Figure 5—figure supplement 1). Furthermore, we generated double conditional floxed mice for Mask1 (ANKHD1) and Mask2 (ANKRD17). The double floxed Mask1/2 mice were used to generate intestinal organoids, which were then infected with GFP-tagged Adenoviral Cre (AdCre-GFP) to drive deletion of Mask1/2 in clones. Clonal deletion of Mask1/2 resulted in a strong reduction in YAP levels compared to surrounding wild-type cells (Figure 5D) and clone sizes were typically only 1–2 cells, with cells frequently undergoing extrusion from the epithelium and death (Figure 5—figure supplement 2). We find a similar effect of Mask1 siRNA on TAZ localisation (Figure 5—figure supplement 3). These findings show that mammalian Mask1/2 have a conserved function in nuclear import of YAP but are additionally required to stabilise the YAP protein.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-v2.jpg)
+
+**Figure 5.:** (A) HEK293T cells display nuclear YAP localisation after transfection with control scrambled siRNA, and low levels of cytoplasmic YAP localisation after transfection with Mask1 siRNA oligonucleotides. (B) Western analysis of Mask1 and YAP after transfection of HEK293T cells with control scrambled or Mask1 siRNA oligonucleotides (left). Quantification of the nuclear:cytoplasmic ratio of YAP subcellular localisation after transfection of HEK293T cells with control scrambled or Mask1 siRNA oligonucleotides as shown in A (right). (C) Caco2 intestinal epithelial cells transfected with control or Mask1 or Mask1/2 siRNA oligonucleotides and immunostained for YAP or stained with DAPI to mark nuclei. (D) Intestinal organoids freshly cultured from Mask1/2 double conditional knockout mice, in which Ad-Cre was used to induce clonal knockout of both Mask1 and Mask2 in single cells (marked by Ad-Cre-GFP in red). Note the dramatic reduction in YAP protein levels (n = 12 organoids).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Caco2 intestinal epithelial cells are eliminated following transfection of both Mask1/2 siRNAs. No YAP-negative or Mask1-negative cells remain. (B) HaCat skin epithelial cells are eliminated following transfection of both Mask1/2 siRNAs. No YAP-negative or Mask 1-negative cells remain.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Mouse intestinal organoids derived from Mask1/2 double floxed conditional knockout mice were cultured in Matrigel and infected with Ad-Cre-GFP (green) before immunostaining for YAP (red) and phalloidin (purple)/DAPI (blue). Note that Ad-Cre-GFP clones do not grow larger than single cells and tend to be extruded from the epithelium. Representative examples of n = 25 organoids are shown.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/48601/elife-48601-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Human Caco2 epithelial cells were transfected with scrambled siRNA (control) or specific siRNAs targeting Mask1 and then immunostained for TAZ, Mask1 and Nuclei (with DAPI). Silencing of Mask1 reduces the expression level of both Mask1 and TAZ proteins, with TAZ also showing a cytoplasmic localization in the absence of Mask1.
 
 We next tested whether overexpression of Mask1/2 might be sufficient to cause mis-regulation of YAP in human cells. We find that overexpression of either Mask1 or Mask2 caused strong stabilisation of YAP protein levels in Caco2 cells (Figure 6A,B). Furthermore, overexpression of Mask1 in HEK293T cells, which are known to generate high levels of expression, caused formation of abnormally large droplets containing both Mask1 and YAP proteins (Figure 6). We speculate that Mask proteins may cluster/polymerise YAP to drive colloidal phase separation – a classic mechanism of cellular compartmentalisation (Hardy, 1899; Iborra, 2007; Walter and Brooks, 1995; Wilson, 1899). Recent work has shown that cells expressing GFP-tagged YAP can exhibit colloidal phase separation and formation of YAP liquid droplets in both nucleus and cytoplasm after treatment with 25% PEG to induce macromolecular crowding (Cai et al., 2018). Our findings suggest that endogenous YAP may also phase separate when it becomes stabilised and concentrated by clustering with Mask family proteins.
 
@@ -84,58 +116,58 @@ In conclusion, our results identify novel molecular mechanisms regulating the Yk
 
 ## Materials and methods
 
-## Drosophila genetics
+### Drosophila genetics
 
 All Drosophila strains have been previously described in Sidor et al. (2013) and Fletcher et al. (2018) or are available from Bloomington Drosophila Stock Centre, with the exception of the mask∆NLS allele, which was generated in this study, as follows. CRISPR/Cas9-mediated genome editing by homology-dependent repair (HDR) of Mask/CG33106 3R (95F3-95F5) using one guide RNA and a dsDNA plasmid donor was used to knockin a cassette, PBacDsRed, into the injection strain w1118. Genome editing involved deleting a 48 bp nuclear localization sequence (NLS) ‘CGTCGTCGTGAGCGCaagaagaagaagaagatggagaagaaagaggagaagCGCCGTCAA’ and replacement by PBacDsRed. This cassette contains a 3XP3-DsRed that facilitated the genetic screening and was then excised by Piggy Bac transposase to enable normal expression of the gene. Only one TTAA motif was left after transposition that is embedded in nearby mutated silenced mutation from GTCAAG to GTtAAG encoded in VK. The following guide RNAs were used:
 
-## gRNA 1
+#### gRNA 1
 
-## gRNA 2
+#### gRNA 2
 
 Validation of the exised allele was performed by sequencing after PCR across the excised region. Genomic DNA was obtained from single fly of each stock following single-fly DNA prep.Injection strain w1118was used as a negative control. PCR was performed using KOD-FX (TOYOBO) on BioRad S1000 Thermal Cycler.100bp DNA Ladder from GenePurewas used as reference. There was a 737bp-product in the injection strain control. The product length was 2373 bp before excision of the PBacDsRed cassette and 677 bp after excision using the following PCR primers:
 
-## Induction of clones in Drosophila
+### Induction of clones in Drosophila
 
 Mosaic tissues were generated using the FLP/FRT and the MARCM system with a heat shock promoter (hs) to drive the expression of the FLP recombinase. Clones in imaginal discs were induced by heat shocking larvae at 60 hr (±12 hr) of development and larvae were dissected at the third instar stage. Clones in ovarian follicle cells were induced by heat shocking adult females fed with yeast for 3 days before dissection at various times after heat shock.
 
-## Fluorescent immunostaining
+### Fluorescent immunostaining
 
-## Drosophila
+#### Drosophila
 
 Ovaries and imaginal discs were dissected in PBS, fixed for 20 mins in 4% paraformaldehyde in PBS, washed for 30 min in PBS/0.1% Triton X-100 (PBST) and blocked for 15 min in 5% normal goat serum/PBST (PBST/NGS). Primary antibodies were diluted in PBST/NGS and samples were incubated overnight at 4°C (Fletcher et al., 2018). The following primary antibodies were used:
 
 Secondary antibodies (all from Molecular Probes, Invitrogen) were used at 1:500 for 2–4 hr prior to multiple washes in PBST and staining with DAPI at 1 μg/ml for 10-30mins prior to mounting on slides in Vectashield (Vector labs).
 
-## Human cells
+#### Human cells
 
 All cell lines were obtained from the Francis Crick Institute Cell Services Core Facility and are certified mycoplasma-free. Cells were fixed and stained by standard procedures using the following antibodies:
 
 DNA was stained with DAPI. Samples were imaged with a Leica SP5 Confocal Microscope.
 
-## siRNA methods
+#### siRNA methods
 
-## siRNAs
+##### siRNAs
 
 three different pools of siRNAs were used at a final concentration of 300 nM (75 nM of each individual siRNA):
 
 Cells were plated in 12 well plates and transfected with siRNA pools using the Lipofectamine RNAiMax reagent (invitrogen). Cells were harvested after 48 hr and analysed by immunostaining or western blot.
 
-## Luciferase assay in S2 cells
+#### Luciferase assay in S2 cells
 
 The luciferase assay was performed in sextuplicates in a 96 well plate. Cells were transfected with 20 ng of each DNA plasmid per well. 48 hr after transfection, cells were lysed and tested for Luciferase and Renilla activity using the Dual-luciferase reporter assay system kit (Promega) and a luminometer.
 
-## Mouse genetics
+### Mouse genetics
 
 All experiments were carried out in accordance with the United Kingdom Animal Scientific Procedures Act (1986) and UK home office regulations under project license number 70/7926. For the generation of the Mask1/2 double conditional knockouts, the following EUCOMM ES cell lines were used:
 
-## Organoid cultures
+### Organoid cultures
 
 Intestinal crypts were isolated from the proximal part of the small intestine of 6–10 weeks Mask1 fl/fl Mask2 fl/fl mice (generated from EUCOMM ES cells for this study) as follows. The whole gut was harvested and washed in cold DPBS (#14190250, Gibco). The most proximal 5 cm were cut open, and the villi scraped off with a coverslip. The remaining tissue was cut in 0.5 cm pieces, washed several times by pipetting up and down in 8 mL fresh DPBS, and incubated in DPBS + 2 mM EDTA for 30 min at 4°C. Crypts were then mechanically extracted by vigorous shaking in DPBS, and filtered through a 70 µM Nylon cell strainer (#352350, Falcon). After several low speed washes in ADF-12 (#12634–010, Gibco), isolated crypts were resuspended and plated in Matrigel (#354230, Corning). Organoids were cultured in IntestiCult medium (#06005, Stemcell technologies) supplemented with Primocin antibiotic (1:50, ant-pm-2, Invivogen), either in 24-well plates for maintenance, or in 8-well chambers (#80827, Ibidi) for Ad-Cre-GFP infection and immunostaining. Passages were performed by resuspending Matrigel-embedded organoids in cold DPBS and transferring them to a Falcon tube using a 2 mL syringe with a 27 G ½ needle (BD Microlance #300635) to break them up. After two low speed washes in ADF-12, organoids were resuspended and plated in Matrigel.
 
-## Organoid infection with Ad-Cre-GFP
+### Organoid infection with Ad-Cre-GFP
 
 Cre recombinase was expressed in organoids using Recombinant Adenovirus Ad-Cre-GFP from SignaGen Laboratories (#SL100706), which co-expresses GFP as a marker. The Ad-Cre-GFP virus was diluted in IntestiCult Medium to a concentration of 1.106 pfu/μl. Organoid infection was performed using the Mix and Seed approach from 5-day old Mask1 fl/fl; Mask2 fl/fl organoids were passaged into fresh Matrigel. Ad-Cre-GFP was added to the unpolymerized Matrigel-organoid mix at a final concentration of 5.106 pfu per 100 μl. Organoids were then plated in 8-well chambers and grown in IntestiCult medium for 3 days at 37°C.
 
-## Organoid fixation and staining
+### Organoid fixation and staining
 
 Organoids embedded in Matrigel were washed once in PBS, then incubated in fix solution (PBS + 4% formaldehyde) for 30 min. After two washes (5 min) in PBS, they were incubated in quenching solution (PBS + 50 mM NH4Cl), then washed again 3 times 5 min in PBS. Organoids were permeabilised in PBST (PBS + 0.3% Triton) for 30 min, then blocked for 30 min in Blocking solution (PBS + 0.1% Triton + 5% NGS). Immunostaining was performed by incubating with Mouse Anti-YAP 63.7 from Santa Cruz (sc-101199; 1 in 100) in blocking solution overnight at 4°C in a wet chamber. After three 30 min washes in PBS, organoids were incubated in secondary antibody, DAPI and Phalloidin-647 for 1 hr and 30 min at room temperature and washed again 3 times. After removal of the last wash, 80% glycerol was added to the wells at least one hour prior to imaging. Imaging was performed with a Leica SP5 laser-scanning confocal microscope.

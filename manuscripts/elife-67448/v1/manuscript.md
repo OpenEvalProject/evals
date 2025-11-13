@@ -12,18 +12,18 @@
 
 ### Affiliations
 
-1. https://ror.org/04mz5ra38 Environmental Microbiology and Biotechnology (EMB), Aquatic Microbial Ecology, University of Duisburg-Essen Essen Germany
-2. https://ror.org/03h2bxq36 Division of Molecular Microbiology, School of Life Sciences, University of Dundee Dundee United Kingdom
-3. https://ror.org/0245cg223 Molecular Biology of Archaea, Faculty of Biology, University of Freiburg Freiburg Germany
-4. https://ror.org/04mz5ra38 Group for Aquatic Microbial Ecology, Environmental Microbiology and Biotechnology, Faculty of Chemistry University Duisburg-Essen Essen Germany
-5. https://ror.org/04gnjpq42 Department of Biochemistry and Molecular Biology, Faculty of Biology, National and Kapodistrian University of Athens Athens Greece
-6. https://ror.org/04mz5ra38 Centre of Water and Environmental Research (ZWU), University of Duisburg-Essen Essen Germany
+1. Environmental Microbiology and Biotechnology (EMB), Aquatic Microbial Ecology, University of Duisburg-Essen Essen Germany ([ROR:04mz5ra38](https://ror.org/04mz5ra38))
+2. Division of Molecular Microbiology, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+3. Molecular Biology of Archaea, Faculty of Biology, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+4. Group for Aquatic Microbial Ecology, Environmental Microbiology and Biotechnology, Faculty of Chemistry University Duisburg-Essen Essen Germany ([ROR:04mz5ra38](https://ror.org/04mz5ra38))
+5. Department of Biochemistry and Molecular Biology, Faculty of Biology, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+6. Centre of Water and Environmental Research (ZWU), University of Duisburg-Essen Essen Germany ([ROR:04mz5ra38](https://ror.org/04mz5ra38))
 
 † Corresponding author
 
 ## Abstract
 
-Protein N-glycosylation is a post-translational modification found in organisms of all domains of life. The crenarchaeal N-glycosylation begins with the synthesis of a lipid-linked chitobiose core structure, identical to that in Eukaryotes, although the enzyme catalyzing this reaction remains unknown. Here, we report the identification of a thermostable archaeal β-1,4- N -acetylglucosaminyltransferase, named a rchaeal gl ycosylation enzyme 24 (Agl24), responsible for the synthesis of the N-glycan chitobiose core. Biochemical characterization confirmed its function as an inverting β-D-GlcNAc-(1→4)-α-D-GlcNAc-diphosphodolichol glycosyltransferase. Substitution of a conserved histidine residue, found also in the eukaryotic and bacterial homologs, demonstrated its functional importance for Agl24. Furthermore, bioinformatics and structural modeling revealed similarities of Agl24 to the eukaryotic Alg14/13 and a distant relation to the bacterial MurG, which are catalyzing the same or a similar reaction, respectively. Phylogenetic analysis of Alg14/13 homologs indicates that they are ancient in Eukaryotes, either as a lateral transfer or inherited through eukaryogenesis.
+Protein N-glycosylation is a post-translational modification found in organisms of all domains of life. The crenarchaeal N-glycosylation begins with the synthesis of a lipid-linked chitobiose core structure, identical to that in Eukaryotes, although the enzyme catalyzing this reaction remains unknown. Here, we report the identification of a thermostable archaeal β-1,4-N-acetylglucosaminyltransferase, named archaeal glycosylation enzyme 24 (Agl24), responsible for the synthesis of the N-glycan chitobiose core. Biochemical characterization confirmed its function as an inverting β-D-GlcNAc-(1→4)-α-D-GlcNAc-diphosphodolichol glycosyltransferase. Substitution of a conserved histidine residue, found also in the eukaryotic and bacterial homologs, demonstrated its functional importance for Agl24. Furthermore, bioinformatics and structural modeling revealed similarities of Agl24 to the eukaryotic Alg14/13 and a distant relation to the bacterial MurG, which are catalyzing the same or a similar reaction, respectively. Phylogenetic analysis of Alg14/13 homologs indicates that they are ancient in Eukaryotes, either as a lateral transfer or inherited through eukaryogenesis.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Here, we report the identification of the β-1,4-N-acetylglucosaminetransferase 
 
 ## Results
 
-## Identification of a Dol-PP-GlcNAc UDP-GlcNAc GlcNAc GT candidate in S. acidocaldarius
+### Identification of a Dol-PP-GlcNAc UDP-GlcNAc GlcNAc GT candidate in S. acidocaldarius
 
 To identify the GT that catalyzes chitobiose biosynthesis step in the N-glycosylation process in S. acidocaldarius, we searched for similar biosynthetic processes to identify potential homologs. The bacterial enzyme MurG transfers a GlcNAc residue from UDP-GlcNAc to the C4 hydroxyl group of MurNAc-(pentapeptide)-PP-undecaprenol to produce the lipid-linked β-(1,4) disaccharide known as lipid II (Men et al., 1998; Ha et al., 1999). Although MurG does not synthesize chitobiose-like S. acidocaldarius does, the enzyme uses a similar lipid-linked acceptor and an identical sugar donor (UDP-GlcNAc) and therefore presents a valid candidate for evaluation. MurG has been classified in the Carbohydrate Active Enzyme database (http://www.cazy.org/) as a family 28 GT (Lombard et al., 2014). Until now, only a few archaeal organisms possess GT28 family homologs. These organisms include members of the archaeal orders Methanobacteriales and Methanopyrales, which have been described that synthesize pseudomurein as a component of their cell wall structure (Kandler and König, 1978; König et al., 1982; Albers and Meyer, 2011), and Salinadaptatus halalkaliphilus 2447, a recently described member of the Halobacteriales.
 
@@ -55,41 +55,249 @@ Using the Escherichia coli MurG protein sequence (WP_063074721.1; EC 2.4.1.227) 
 
 In contrast to Euryarchaeota, where the genes of the N-glycosylation enzymes are clustered with the OST aglB, clustering of GT genes is uncommon in Crenarchaeota, including Sulfolobales (Kaminski et al., 2013; Nikolayev et al., 2020). Interestingly, the gene saci1262 is located only eight genes downstream of the OST aglB (saci1274) in S. acidocaldarius (Figure 1—figure supplement 1), while the genes coding for identified enzymes involved in the N-glycosylation, for example, aglH (saci0093), agl3 (saci423), and agl16 (saci0807) are distantly scattered across the entire genome.
 
-## Detailed bioinformatics comparison of Saci1262 with Alg14/13 and MurG
+### Detailed bioinformatics comparison of Saci1262 with Alg14/13 and MurG
 
 Sequence and domain comparisons of the eukaryotic Alg13 and Alg14 to MurG and Saci1262 revealed that Alg14 corresponds to the N-terminal part of MurG/Saci1262, while Alg13 resembled the C-terminal part of MurG/Saci1262 (Figure 1A). Both the N-terminal (aa1–152) and C-terminal (aa153–327) parts of Saci1262 showed very low sequence identity to Alg14 and Alg13, with 15% and 16%, respectively. Interestingly, fused homologs of Alg14 and Alg13 have been reported in the Kinetoplastea Leishmania and Trypanosoma, similar to S. acidocaldarius (Averbeck et al., 2007). While a fusion with the reverse domain order was recognized in the Eukaryotes Entamoeba histolytica (Bickel et al., 2005) and Dictyostelium discoideum (Averbeck et al., 2007; Figure 1A). An interesting difference in these proteins from the three domains of life is the presence of an N-terminal transmembrane domain (TMD) in most of eukaryotic Alg14 proteins (aa 5–25), which is missing in the bacterial MurG, archaeal Saci1262-like enzymes, as well as in the Alg13-14 fusion of E. histolytica and D. discoideum. The TMD is predicted to facilitate the association of Alg14 with the ER membrane and to participate in recruitment of Dol-PP-GlcNAc to the membrane (Lu et al., 2012). The introduction of this TMD appears to have emerged later in the evolution of Eukaryotes, and the interaction with the ER or cytoplasmic membrane is not solely dependent on a TMD, as the presence of hydrophobic patches and protein–protein interactions with membrane proteins are also proposed to facilitate this interaction (Ha et al., 2000).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig1-v1.jpg)
+
+**Figure 1.:** (A) Simplified comparison of the Alg14-like (darker) or Alg13-like (light color) domain in bacterial MurG (violet), eukaryotic Alg14-13 (gray), and archaeal Saci1262 (orange) homologs. The transmembrane domain is depicted in black. (B) Protein sequences were aligned with Clustal Omega (Sievers and Higgins, 2018) (for the full alignment, see Figure 1—figure supplement 2). Sequences derived from (i) three bacterial (violet background) MurGs: Escherichia coli (C4ZRI5), Streptococcus pyogenes (Q1J5S6), and Bacillus subtilis (P37585); (ii) eukaryotic (gray background) Alg14-13: Leishmania major (Q4Q7Q3), an artificial Alg14-13 fusion from Saccharomyces cerevisiae (P38242-P53178) and Homo sapiens (Q96F25-Q9NP73-2); (iii) the crenarchaeal (orange background) Saci1264 homologs: Ignicoccus hospitalis (A8ABI4), Pyrodictium occultum (A0A0V8RRP5), Hyperthermus butylicus (A2BMN2), Desulfurococcus amylolyticus (B8D4 × 8), Staphylothermus marinus (A3DMX3), Metallosphaera sedula (A4YH37), Sulfurisphaera tokodaii (Q973C9), Sulfolobus acidocaldarius (Q4J9C3), Acidianus brierleyi (A0A2U9IGN7), and Saccharolobus solfataricus (Q97VW9). Selected sequences from pseudomurein producing Euryarchaeota with higher sequence similarity to the MurG are aligned (turquoise background): Methanopyrus kandleri (Q8TYD0), Methanothermus fervidus (E3GWY2), Methanobacterium formicicum (A0A089ZDB2), Methanothermobacter marburgensis (D9PUE1). Conserved amino acids (65% threshold) are highlighted in color corresponding to the amino acids: G, S, T, P (orange), K, R, H (red), F, W,Y (blue), A, D, E, C, Q, N (black), and V, L, I, M (green). The end of the Alg14-like domain and start of Alg13-like domains are indicated by the change from dark to light background color. (C) MurG (PDB: 3s2u; shown as ribbon) bound to UDP-GlcNAc (shown as sticks, green carbon, blue nitrogen, red oxygen) and orientation toward the cell membrane (bottom). The Alg13-like domain (light violet) and Alg14-like domain (dark violet) are labelled. Conserved His and Glu residues in Alg14 are shown as red sticks. (D) Strict consensus (65%) and Weblogo from the sequence alignment shown in (B). Bar heights correspond to the observed frequency, highly conserved motifs or amino acids are enlarged below, including conserved motifs G(x)GGH15 (Loop I) and E114 (for the full Weblogo, see Figure 1—figure supplement 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Illustrated are the genes Saci1260 until Saci1276. The gene saci1262 (SACI_RS06030), displayed in black, is annotated to encode a polysaccharide biosynthesis protein. The gene aglB (saci1274, SACI_RS06085), displayed with a bold border, encodes the N-oligosaccharyltransferase, catalyzing the transfer of the lipid-linked N-glycan onto the target protein.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Sequences derived from (i) three bacterial (violet background) MurGs: Escherichia coli (C4ZRI5), Streptococcus pyogenes (Q1J5S6), and Bacillus subtilis (P37585); (ii) eukaryotic (gray background) Alg14- 13: Leishmania major (Q4Q7Q3), an artificial Alg14-13 fusion from Saccharomyces cerevisiae (P38242-P53178) and Homo sapiens (Q96F25- Q9NP73-2); (iii) the crenarchaeal (orange background) Saci1264 homologs: Ignicoccus hospitalis (A8ABI4), Pyrodictium occultum (A0A0V8RRP5), Hyperthermus butylicus (A2BMN2), Desulfurococcus amylolyticus (B8D4 × 8), Staphylothermus marinus (A3DMX3), Metallosphaera sedula (A4YH37), Sulfurisphaera tokodaii (Q973C9), Sulfolobus acidocaldarius (Q4J9C3), Acidianus brierleyi (A0A2U9IGN7), and Saccharolobus solfataricus (Q97VW9). Selected sequences from pseudomurein producing Euryarchaeota with higher sequence similarity to the MurG are aligned (turquoise background): Methanopyrus kandleri (Q8TYD0), Methanothermus fervidus (E3GWY2), Methanobacterium formicicum (A0A089ZDB2), Methanothermobacter marburgensis (D9PUE1). Conserved amino acids (65% threshold) are highlighted in color corresponding to the amino acids: G, S, T, P (orange), K, R, H (red), F, W, Y (blue), A, D, E, C, Q, N (black), and V, L, I, M (green). The end of the Alg14-like domain and start of Alg13-like domains are indicated by the change from dark to light background color. Boxed: area of the sugar donor-binding site, in E. coli MurG the amino acids A264, L265, T266, E269, Q288, and Q289 have been shown to interact with UDP-GlcNAc.
+
 The amino acid sequence alignment of the representative bacterial MurG, eukaryotic Alg14-13, and archaeal homologs revealed conservation of specific patches and individual residues (Figure 1B and D). The overall topology of Saci1262 is identical to MurG, which consists of two domain folds separated by a deep cleft corresponding to a GT-B fold structure (Ha et al., 2000; Hu et al., 2003; Figure 1C). Despite the low sequence identity, a similar structural topology of Saci1262 to Alg14-13 and MurG was not surprising, as GTs in general showed only a limited number of structural folds. GTs mainly possessed a GT-A or GT-B fold, whereas OSTs and a number of recently characterized GTs displayed a GT-C, GT-D, or GT-E fold, respectively (Mestrom et al., 2019). Crystal structures of the bacterial MurG (PDB:3s2U, 1F0K, 1NLM) and the C-terminal half of the eukaryotic Alg13 (PDB:2jzc) showed typical GT-B structural characteristics (Ha et al., 2000; Hu et al., 2003; Wang et al., 2008; Raman et al., 2010; Brown et al., 2013; Figure 2). The N-terminal part of Alg13 contains a Rossmann-like fold with a mixed parallel and antiparallel β-sheet rather than the conventional Rossmann fold found in all GT-B enzymes, indicating a unique topology among GTs (Wang et al., 2008). The N-terminal helix of Alg14 and MurG is proposed to be the membrane association domain (Chantret et al., 2005; Lu et al., 2012). We have generated a Saci1262 structural model to investigate potential features via SWISS-MODEL (Waterhouse et al., 2018), which is in agreement with the model obtained from AlphaFold (Jumper et al., 2021; Figure 2, doi.org/10.7910/DVN/9KSWQR). Previous studies have compared the structures of MurG and Alg13, including a model for Alg14 (Gao et al., 2008). The formation of the Alg14-Alg13 complex is mediated by a short C-terminal α-helix of Alg13 in cooperation with the last three amino acids of Alg14 (Gao et al., 2008). In the Alg13 crystal structure, this C-terminal helix associates with itself, as Alg14 is missing. The orientation is predicted to be similar to the linker in MurG and the change is indicated by the black arrow (in Figure 2A; Gao et al., 2008). The structural model of Saci1262 is also predicted to contain a C-terminal helix, which interacts with the N-terminal part of the protein Figure 2A.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig2-v1.jpg)
+
+**Figure 2.:** (A) Structural comparison of the eukaryotic Alg13 (PDB:2ks6) with a structural model of Alg14, the bacterial MurG (PDB: 3s2u), and the structural model of the crenarchaeal Saci1262 (archaeal glycosylation enzyme 24 [Agl24]). Structural models were built with SWISS-MODEL (Waterhouse et al., 2018). Detailed results are listed in Supplementary file 2. The interactions of the N-terminal helices with the membrane are depicted with a yellow background. (B) Magnified and 90° rotated view into the active site of MurG (PDB: 3s2u) in complex with UDP-GlcNAc (sticks). The catalytic site is located in the cleft of both domains, with conserved H15 and E122 residues shown in sticks with green carbon, red oxygen, and blue nitrogen atoms.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The integration of the saci1262 deletion plasmid pSVA1312 in S. acidocaldarius MW001 (first selection) was monitored by PCR using the out primers of the upstream and downstream region of saci1262 and the genomic DNA from two first selection colonies incorporate the plasmid (BM-A305 and BM-A-306). DNA from the background strain MW001 and the plasmid pSVA1312 were used as control, showing a PCR fragment corresponding to the flanking region including or excluding the saci1262 gene, respectively. (B) The segregation of pSVA1312 (second selection) was confirmed by PCR using the outer primers of the flanking region of saci1262 and the genomic DNA from second selection colonies. All PCR fragments gained from genomic DNA of second selection colonies correspond to the full-length saci1262 gene (2590 bp), while a deletion would result in a 1798 bp PCR fragment.
 
 We discovered a conserved GGxGGH14 motif (Saci1262) within the N-terminal sequences of MurG, Alg14, and Saci1262-like proteins (Figure 1D, Figure 1—figure supplement 2, and Figure 2B). This motif has been described in MurG sequences in an extended form (G13GTGGHX2PXLAXAX2LX9G39) (Crouvoisier et al., 2007). The conserved amino acids are located in the cavity between the two different structural domains next to the substrate-binding pocket. The crystal structure of MurG (PDB: 3s2u) in complex with UDP-GlcNAc shows the close proximity of the sugar donor to the conserved residues (Figure 2B; Brown et al., 2013). In proximity to the GGxGGH14 motif is the conserved glutamic acid (E114) (Figure 1D, Figure 1—figure supplement 2, and Figure 2B). The two conserved residues H14 and E114 are absent in the archaeal MurG-like GT28 family homologs of known pseudomurein-producing Archaea. Instead, aspartic acid (D) and leucine (L) are more frequently found replacing the H14 and E114 (Figure 1D and Figure 1—figure supplement 2). We propose that these residues might be required to accommodate the different sugar N-acetyltalosaminuronic acid of the lipid-linked acceptor molecule in the pseudomurein biosynthesis process.
 
-## The Saci1262 gene is essential in S. acidocaldarius
+### The Saci1262 gene is essential in S. acidocaldarius
 
 Due to the overall low sequence similarity of Saci1262 to Alg14-13 and MurG, we attempted to demonstrate the predicted function of Saci1262 in vivo by generating a deletion mutant of saci1262 in the genome of S. acidocaldarius. This deletion mutant should arrest the N-glycosylation process after the generation of Dol-PP-GlcNAc and should contain either non-glycosylated glycoproteins or N-glycosylated proteins containing only a single GlcNAc residue linked to the asparagine in the conserved N-glycosylation motif. The genomic integration by homologous recombination of the plasmid pSVA1312 via either the up- or downstream region of the saci1262 and the selection pyrEF genes was confirmed by PCR (Figure 2—figure supplement 1A). However, we were not successful in generating the marker-less in-frame saci1262 deletion mutant. An alternative approach was conducted aiming at deleting the saci1262 gene by a single homologous recombination step by the integration of the pyrEF selection cassette. All attempts to generate this gene disruption mutant failed. This strongly suggests that the saci1262 gene is essential in S. acidocaldarius, at least under the conditions tested. To exclude that the other GTs, identified in the bioinformatic homology search (Table S1), are involved in the N-glycosylation, marker-less deletion mutants of saci1907, saci1921, saci0807, saci1094, saci1201, saci1821, and Saci1249 were successfully generated. Only the deletion of saci0807, which has been characterized to encode the GT Agl16 that transfers the terminal glucose residue to the N-glycan (Meyer et al., 2013), showed a significant effect on the N-glycosylation of the S-layer proteins. Since we have previously shown that N-glycosylation is essential in Sulfolobus, and saci1262 the only candidate gene is which is essential, our data suggested that the protein encoded by saci1262 is potentially the second enzyme synthesizing the N-glycosylation chitobiose core.
 
-## Saci1262 transfers a single GlcNAc residue onto a GlcNAc pyrophosphate-linked acceptor molecule
+### Saci1262 transfers a single GlcNAc residue onto a GlcNAc pyrophosphate-linked acceptor molecule
 
 In agreement with the observed membrane association in S. acidocaldarius (Figure 3—figure supplement 1), Saci1262 was also found in the membrane fraction during its purification from E. coli. Recombinant Saci1262, produced in E. coli (Figure 3—figure supplement 2), was assayed to test the function of Saci1262 using the predicted nucleotide sugar donor UDP-GlcNAc and two synthetic acceptor substrates designed to mimic the native lipid-linked acceptor: C13H27-PP-GlcNAc (acceptor-1) or phenyl-O-C11H22-PP-GlcNAc (acceptor-2) (Figure 3A and C). The reaction products were purified and characterized. The MALDI-MS spectra obtained confirmed that Saci1262 transfers a single GlcNAc to both acceptor substrates when incubated with UDP-GlcNAc (Figure 3B and D). The Saci1262 assay revealed a shift of the peaks by 203 Da to m/z = 811 [M-1H + 2Na]+ and m/z = 833 [M-2H + 3Na]+ (Figure 3B), which corresponded to the addition of one dehydrated GlcNAc (203 Da). The same shift was observed for acceptor-2 (Figure 3D). With an extended reaction time, no additions of a further GlcNAc by Saci1262 could be detected. We also investigated Saci1262 promiscuity toward utilizing UDP-glucose as the sugar donor, but no mass shift was observed (Figure 3E), indicating that Saci1262 uses exclusively UDP-GlcNAc. Based on the confirmed function of Saci1262 as a GT, we named the protein as archaeal glycosylation enzyme 24 (Agl24), in agreement with the general naming procedure of N-glycosylation pathway components in Archaea (Eichler et al., 2013).
 
-## Activity of Agl24
+![Figure 3.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig3-v1.jpg)
+
+**Figure 3.:** Spectra obtained from the enzymatic reactions containing Saci1262-GFP and (A) acceptor-1, (B) acceptor-1 and UDP-GlcNAc, and Saci1262-GFP, (C) acceptor-2, (D) acceptor-2, and UDP-GlcNAc, (E) acceptor-2 and UDP-Glc. The conversion from acceptor-1 (608 m/z [M-1H + 2Na]+ and 630 m/z [M-2H + 3Na]+) or acceptor-2 (672 m/z [M-1H + 2Na]+ and 694 m/z [M-2H + 3Na]+) to the product (811 m/z [M-1H + 2Na]+ and 833 m/z [M-2H + 3Na]+) or (875 m/z [M-1H + 2Na]+ and 897 m/z [M-2H + 3Na]+) was observed only when UDP-GlcNAc was used as nucleotide sugar donor.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Different fractions of Sulfolobus acidocaldarius cells expressing the His-tagged version of Saci1262 (39.7 kDa) and Agl3 (48.1 kDa) or the mixture of the two strains (1:1 ratio) were loaded onto a 7.5% SDS-PAGE. The loaded fractions correspond to the resuspended cells expressing saci1262 (Saci1262-C) or agl3 (Agl3-C), and after mixture (in a 1:1 ratio) and cell disruption of the two strains, the supernatant after ultracentrifugation (S–UC), and membrane pellet (Mem-P). One SDS-PAGE was transferred onto PVDF membrane and probed with Anti-His Immunoblot (upper panel), while the second SDS-PAGE was stained with Coomassie brilliant blue as a loading control (lower panel). (B) As the expression of saci1262 was slightly higher than agl3 (based on optimized Ara-promotor), the amount of the membrane fraction was increased threefold (Mem-P*) to exclude a missing signal of Agl3 in A. (C) Prediction of transmembrane helices in archaeal glycosylation enzyme 24 (Agl24), by the TMHMM Server v. 2.0 (http://www.cbs.dtu.dk/services/TMHMM/) confirmed the lack of any transmembrane domain. (D) Secondary protein structure prediction by the Jpred Server. The top line corresponds to the amino acid sequence of Saci1262/Agl24, the second line represents extended (E), helical (H), and other (-) types of secondary structure, respectively (Drozdetskiy et al., 2015).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative HPLC chromatogram of the archaeal glycosylation enzyme 24 (Agl24) enzymatic reaction product formation. NE = no enzyme control; UMP = uridine monophosphate; UDP = uridine diphosphate; UDP-GlcNAc = uridine diphosphate N-acetylglucosamine. The top trace shows a reinjection of the purified Agl24 product used for subsequent NMR analysis. (B) Agl24 Kmapp for UDP-GlcNAc determination.
+
+### Activity of Agl24
 
 Since S. acidocaldarius is a thermophilic microorganism, with an optimal growth temperature of 75°C (Brock et al., 1972), the temperature dependency of the Agl24 activity was investigated using our established mass spectrometry assay. The substrates are stable at the conditions tested and MALDI analysis of the negative control lacking the enzyme revealed only the acceptor-1 mass (Figure 4A). At elevated temperatures, the peak intensity from the product increased while the peak intensity of the acceptor molecule was reduced (Figure 4B–F). Highest activity was detected at 70°C, close to the optimal growth temperature of S. acidocaldarius. Furthermore, the addition of EDTA did not affect the activity of Agl24, demonstrating that Agl24 is a metal-independent GT (Figure 5, Figure 5—figure supplement 1). This result agrees with the lack of a conserved Asp-X-Asp (DxD) motif in the Agl24 sequence, which has been shown to be important to coordinate the metal ions in A-fold GTs, whereas GT-B GTs are metal ion-independent (Lairson et al., 2008; Gloster, 2014).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig4-v1.jpg)
 
-**Figure 4.:** glycosylation enzyme 24 (Agl24) reaction at different temperatures.Spectra obtained from the purified enzymatic reaction mix with only acceptor-1 (A), acceptor-1, UDP-GlcNAc, and Agl24-GFP wild-type (WT) at 30°C (B), 40°C (C), 50°C (D), 60°C (E), and 70°C (F). Conversion of the acceptor-1 (608 m/z [M-1H + 2Na] and 630 m/z [M-2H + 3Na]) toward the product (811 m/z [M-1H + 2Na] and 833 m/z [M-2H + 3Na]) is dependent on the applied temperature. Above 50°C, the increase in the level of the product at the expense of the level of the acceptor is clearly visible.
+**Figure 4.:** Spectra obtained from the purified enzymatic reaction mix with only acceptor-1 (A), acceptor-1, UDP-GlcNAc, and Agl24-GFP wild-type (WT) at 30°C (B), 40°C (C), 50°C (D), 60°C (E), and 70°C (F). Conversion of the acceptor-1 (608 m/z [M-1H + 2Na] and 630 m/z [M-2H + 3Na]) toward the product (811 m/z [M-1H + 2Na] and 833 m/z [M-2H + 3Na]) is dependent on the applied temperature. Above 50°C, the increase in the level of the product at the expense of the level of the acceptor is clearly visible.
 
-## Conserved His14 is essential for Agl24 function
+![Figure 5.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig5-v1.jpg)
+
+**Figure 5.:** Spectra obtained from the purified enzymatic reaction mix with acceptor-1 (608 m/z [M-1H + 2Na] and 630 m/z [M-2H + 3Na]), UDP-GlcNAc and (A) Agl24-GFP wild-type (WT), (B) Agl24-H14A-GFP, (C) Agl24-E114A-GFP, and (D) Agl24-GFP WT with addition of 10 mM EDTA. The activity was significantly reduced in the H14A mutants, while a similar amount of product (811 m/z [M-1H + 2Na] and 833 m/z [M-2H + 3Na]) was obtained in the E114A mutant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Spectra obtained from the purified enzymatic reaction mix with acceptor-1, UDP-GlcNAc, and Agl24-GFP without the addition of metal cations (A), with the addition of 1 mM MnCl2 (B), 1 mM MgCl2 (C), or 10 mM EDTA (D). In all cases the acceptor-1 (608 m/z [M-1H + 2Na] and 630 m/z [M-2H + 3Na]) was converted to the product (811 m/z [M-1H + 2Na] and 833 m/z [M-2H + 3Na]), indicating the metal cations are not required for enzymatic activity.
+
+### Conserved His14 is essential for Agl24 function
 
 Two conserved amino acid residues were targeted by mutagenesis to investigate their role in the Agl24 enzyme. The product where the H14 histidine within the conserved GGH14 motif, found in all Alg14 (GSGGH), MurG (GGxGGH), and Agl24 (GGH) homologs, was replaced by an alanine, was inactive (Figure 5B). This demonstrated that this highly conserved residue, located next to the nucleotide-binding site, is important for enzyme function. This GGxGGH motif and a subsequent second glycine-rich motif (GGY) have been proposed to enable MurG to be involved in an interaction with the diphosphate group of the lipid acceptor, as these two motifs resemble phosphate-binding loops of nucleotide-binding proteins (Baker et al., 1992; Carugo and Argos, 1997). Alanine substitution of the conserved His residue in MurG resulted in undetectable activity and loss of ability to complement a temperature-sensitive MurG mutant (Hu et al., 2003; Crouvoisier et al., 2007). By contrast, the substitution of the conserved residue E114, opposite of the nucleotide-binding site, had no effect on the activity of Agl24 (Figure 5C). In MurG this glutamic acid residue is found in a conserved H124EQN127 motif (E. coli), proposed to coordinate the lipid acceptor (Hu et al., 2003; Crouvoisier et al., 2007). The MurG E125A variant was able to complement the thermosensitive MurG E. coli strain, but the remaining activity was 860-fold lower than that of the wild-type MurG (Crouvoisier et al., 2007).
 
-## Agl24 is an inverting β-1,4-N-acetylglucosamine transferase
+### Agl24 is an inverting β-1,4-N-acetylglucosamine transferase
 
 For a kinetic analysis of Agl24, an HPLC assay was used to monitor the conversion of the mono-GlcNAcylated-PP-lipid acceptor-2 substrate to the bi-GlcNAcylated product (Figure 3—figure supplement 3A, B). A Km value for acceptor-2 could not be determined using this system, due to significant substrate inhibition above 0.5 mM, however, a Km(app) for UDP-GlcNAc was determined: (UDP-GlcNAc)Km = 1.37 ± 0.13 mM, Vmax = 32.5 ± 0.9 pmol min–1. These results agree with the Km values of other GT enzymes, which typically exhibit Km affinities for their respective nucleotide sugars in the high micromolar range, reflecting the estimated intracellular concentrations of the nucleotide sugar (Varki et al., 1999). A 1H NMR analysis confirmed that the enzymatic product contained two GlcNAc residues with different linkage types based on the presence of two differently coupled anomeric protons (Figure 6 and Figure 6—figure supplement 1). One anomeric proton appeared as a doublet of doublets (5.35 ppm, JH1-H2 = 3.1 Hz, JH1-P = 7.2 Hz), typical of an α-linked GlcNAc residue (Table 1). Another anomeric signal appeared as a doublet with a large J coupling value (4.49 ppm, JH1-H2 = 8.5 Hz), indicative of a β-linked GlcNAc residue. The substrate acceptor-2 contained an α-linked GlcNAc; this strongly suggested the terminal GlcNAc introduced by Agl24 was β-linked. Experiments using 1D total correlation spectroscopy (TOCSY, Figure 6—figure supplement 1) and 2D COSY (Figure 6—figure supplement 2) deciphered the detailed proton signals from each of the two sugar rings. In addition, HSQC experiments (Figure 6—figure supplement 3) were used to assign the identity of each proton and carbon signal. The C4 signal of the α-GlcNAc residue was shifted to 79.6 ppm, strongly suggesting that the terminal β-GlcNAc was linked at this position. This was further supported by a relative increase in the shift of the H4 proton of the α-GlcNAc residue compared to the un-modified acceptor (Zorzoli et al., 2019). Relative shifts of other protons reported for the acceptor aligned with our experimental data. In conclusion, a combination of 1H NMR and 1D and 2D TOCSY, COSY, and HSQC experiments confirmed that Agl24 is an inverting β-1,4-GlcNAc transferase.
 
-## The eukaryotic GTs Alg14 and Alg13 are closely related to Asgard homologs
+![Figure 6.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig6-v1.jpg)
+
+**Figure 6.:** Spectra were acquired in D2O at 293 K on a Bruker AVANCE III HD 500 MHz NMR spectrometer fitted with a 5 mm QCPI cryoprobe. Chemical shifts are reported with respect to the residual HDO signal at δH 4.70 ppm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** To visualize all protons of the α-linked GlcNAc residue, irradiation was set for the shift of H1’ and H2’ (top). To visualize protons of the β-linked GlcNAc, irradiation of H1” was sufficient to see all protons (bottom).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig6-figsupp2-v1.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Note the signal for C4’ is significantly shifted (79.6 ppm) due to the presence of the glycosidic linkage at this position.
+
+**Table 1.**
+ 1H and 13C chemical shifts of the in vitro archaeal glycosylation enzyme 24 (Agl24) reaction product.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lipid</th>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3–8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12, 14</th>
+      <th>13, 15</th>
+      <th>16</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1H NMR</td>
+      <td>3.79</td>
+      <td>1.51</td>
+      <td>1.16–1.26</td>
+      <td>1.33</td>
+      <td>1.66</td>
+      <td>3.98</td>
+      <td>6.92</td>
+      <td>7.26</td>
+      <td>6.92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13C NMR</td>
+      <td>66.8</td>
+      <td>30.3</td>
+      <td>28.8</td>
+      <td>28.7</td>
+      <td>28.7</td>
+      <td>68.8</td>
+      <td>115.6</td>
+      <td>130.1</td>
+      <td>121.8</td>
+    </tr>
+    <tr>
+      <td>α-GlcNAc</td>
+      <td></td>
+      <td>1’</td>
+      <td>2’</td>
+      <td>3’</td>
+      <td>4’</td>
+      <td>5’</td>
+      <td>6’a</td>
+      <td>6’b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1H NMR</td>
+      <td>5.35</td>
+      <td>3.896</td>
+      <td>3.8</td>
+      <td>3.58</td>
+      <td>3.83</td>
+      <td>3.73</td>
+      <td>3.57</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13C NMR</td>
+      <td>94.25</td>
+      <td>53.65</td>
+      <td>70</td>
+      <td>79.65</td>
+      <td>71.69</td>
+      <td>60.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β-GlcNAc</td>
+      <td></td>
+      <td>1”</td>
+      <td>2”</td>
+      <td>3”</td>
+      <td>4”</td>
+      <td>5”</td>
+      <td>6”a</td>
+      <td>6”b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1H NMR</td>
+      <td>4.49</td>
+      <td>3.64</td>
+      <td>3.45</td>
+      <td>3.34</td>
+      <td>3.38</td>
+      <td>3.8</td>
+      <td>3.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13C NMR</td>
+      <td>101.55</td>
+      <td>56.14</td>
+      <td>74.01</td>
+      <td>70.38</td>
+      <td>76.27</td>
+      <td>61.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### The eukaryotic GTs Alg14 and Alg13 are closely related to Asgard homologs
 
 In order to determine the phylogenetic relationship between the eukaryotic N-glycosylation GTs Alg13 and Alg14 with their archaeal and bacterial homologs, an extensive phylogenetic analysis was performed. We reconstructed phylogenies of Alg13/EpsF (Figure 7A) and Alg14/EpsE (Figure 7B) with bacterial MurG sequences as outgroup. Agl24-like homologs form a clade containing Crenarchaeota, Bathyarchaeota, and one Baldrarchaeota (Asgard). These Agl24-like sequences are found in all Crenarchaeota genomes from the orders Fervidicoccales, Acidilobales, Desulfurococcales, and Sulfolobales, but not in members of the order Thermoproteales (Figure 7—figure supplement 1, Figure 7—figure supplement 2, Figure 7—figure supplement 5, and doi.org/10.7910/DVN/9KSWQR). The Bathyarchaeota (14 sequences, mainly from Genome Taxonomy Database (GTDB) order o__B26-1) form a strongly supported monophyletic branch within Crenarchaeota (Figure 7—figure supplement 1 and Figure 7—figure supplement 2) resulting from a single lateral transfer event.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-v1.jpg)
+
+**Figure 7.:** The phylogenies were rooted using the MurG sequences from the corresponding (Lombard, 2016) datasets as the respective outgroup. Black dots indicate strongly supported branches (ultrafast bootstrap ≥ 95 and aLRT SH-like support ≥ 80). Red dots indicate the position of the minimal ancestor deviation (MAD) outgroup-free root in phylogenies without the MurG outgroup (doi.org/10.7910/DVN/9KSWQR). Clades of interest (archaeal glycosylation enzyme 24 [Agl24]-like containing Saci1262, Asgard lineages, and Eukaryotes) are colored. Taxa names are given according to common usage, with a few exceptions where the Genome Taxonomy Database (GTDB) classification was necessary for accuracy. The uncollapsed trees with numerical branch supports are given in Figure 7—figure supplement 1 and Figure 7—figure supplement 2, respectively. The concatenated dataset tree and its uncollapsed version are given in Figure 7—figure supplement 3 and Figure 7—figure supplement 4, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The tree was rooted using the MurG sequences from the corresponding (Lombard, 2016) dataset as outgroup. Branch supports are given as SH-aLRT (%)/ultrafast bootstrap (%). The red dot indicates the position of the minimal ancestor deviation (MAD) outgroup-free root in phylogenies without the MurG outgroup.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The tree was rooted using the MurG sequences from the corresponding (Lombard, 2016) dataset as outgroup. Branch supports are given as SH-aLRT (%)/ultrafast bootstrap (%). The red dot indicates the position of the minimal ancestor deviation (MAD) outgroup-free root in phylogenies without the MurG outgroup .
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Black dots indicate strongly supported branches (ultrafast bootstrap ≥ 95 and aLRT SH-like support ≥ 80). Clades of interest (archaeal glycosylation enzyme 24 [Agl24]-like containing Saci1262, Asgard lineages, and Eukaryotes) are colored. Taxa names are given according to common usage, with a few exceptions where the Genome Taxonomy Database (GTDB) classification was necessary for accuracy. The tree was rooted by the minimal ancestor deviation (MAD) outgroup-free method.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** The tree was rooted by the minimal ancestor deviation (MAD) outgroup-free method. Branch supports are given as SH-aLRT (%)/ultrafast bootstrap (%).
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/67448/elife-67448-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** The BLAST analyses (https://blast.ncbi.nlm.nih.gov) of Agl24 (Q4J9C3) with the restriction to Crenarchaeota (Taxid:28889; 126 genomes) revealed 100 sequences (30–100% sequence identity), lacking any homology within the 27 genomes of the order Thermoproteaces. The orders of Crenarchaeaota are background colored: Fervidicoccales (green), Acidilobales (blue), Desulfurococcales (orange), Sulfolobales (yellow), Thermoproteales (red).
 
 The sister clade of Agl24 consists of the eukaryotic Alg13 and Alg14, as well as EpsF-like and EpsE-like sequences from Archaea and Bacteria. With the exception of Perkinsela sp. in Alg13/EpsF, Eukaryotes are monophyletic and form a strongly supported monophyletic branch with an Asgard lineage, Thorarchaeota for Alg13 and Odinarchaeota for Alg14. Other closely related archaeal sequences are mainly from Verstraetearchaeota. These, along with the EpsE/EpsF archaeal sequences (mainly from Euryarchaeota and DPANN) are interspersed with bacterial homologs indicating multiple interdomain transfers. The function of EpsE and EpsF has been studied in Lactobacillales, where these enzymes are involved in exopolysaccharide production (Kolkman et al., 1997; De Vuyst et al., 2001). Similar to Alg14-13, the combined activity of EpsE and EpsF links either a glucose (Glc) from UDP-Glc (Kleerebezem et al., 1999, van Kranenburg et al., 1999), or a galactose (Gal) from UDP-Gal via a β-1,4 linkage to lipid-linked glucose acceptors (van Kranenburg et al., 1999), creating either a lipid-linked cellobiose or a lactose, respectively. As opposed to Agl24 and the other exclusively archaeal clades in our phylogeny, most EpsE/EpsF and Alg14/Alg13-related genes are split. This indicates a single gene split event at the base of that clade, followed by multiple independent re-fusion events across Bacteria, Archaea (e.g., some Thorarchaeota), and Eukaryotes (Kinetoplastids, Amoebozoa; in the latter with gene order inversion).
 
@@ -119,59 +327,59 @@ The homologs of eukaryotic GTs in members of the TACK and Asgard superphyla are 
 
 ## Materials and methods
 
-## Strains and growth conditions
+### Strains and growth conditions
 
 The strain S. acidocaldarius MW001 (ΔpyrE) (Wagner et al., 2012) and all derived modified strains (Supplementary file 3) were grown in Brock medium at 75°C, pH 3, adjusted using sulfuric acid. The medium was supplemented with 0.1% w/v NZ-amine and 0.1% w/v dextrin as carbon and energy source (Brock et al., 1972). Selection gelrite (0.6%) plates were supplemented with the same nutrients, with the addition of 10 mM MgCl2 and 3 mM CaCl2. For the second selection plates, 10 mg mL–1 uracil and 100 mg mL–1 5-fluoroorotic acid were added. For the growth of the uracil auxotrophic mutants, 10 mg mL–1 uracil was added to the medium. Cell growth was monitored by measuring the optical density at 600 nm. Protein expression in S. acidocaldarius was conducted in medium supplemented with 0.1% w/v NZ-amine and 0.1% w/v L-arabinose as carbon and energy source. All E. coli strains, DH5α, BL21, or ER1821, were grown in LB media at 37°C in a shaking incubator at 200 rpm. According to the antibiotic resistance in the transformed vector(s), media were supplemented with the antibiotics carbenicillin (amp) at 100 μg mL–1 and/or kanamycin (kan) at 50 μg mL–1.
 
-## Construction of deletion plasmids
+### Construction of deletion plasmids
 
 The predicted function of agl24 was verified via the generation of the lipid-linked chitobiose core of the N-glycan. Therefore, a marker-less deletion mutant of this gene was constructed in S. acidocaldarius MW001, as previously described (Wagner et al., 2012). Used primers and generated plasmid are given in Supplementary file 3, the strain MW001, auxotrophic for uracil biosynthesis, was transformed with the plasmid pSVA1312. Therefore, two ~1000 bp DNA fragments, one from the upstream and one from the downstream regions of agl24 (saci1262) gene, were PCR amplified. Restriction sites ApaI and BamHI were introduced at the 5′ ends of the upstream forward primer (4168) and of the downstream reverse primer (4165), respectively. The upstream reverse primer (4163) and the downstream forward primer (4164) were each designed to incorporate 15 bp of the reverse complement strand of the other primer, resulting in a 30 bp overlap stretch. The overlapping PCR fragments were purified, digested with ApaI and BamHI, and ligated in the digested plasmid pSVA407, containing pyrEF (Wagner et al., 2012).
 
-## Generation of a linear Agl24up-pyrEF-Agl24down fragment for the direct agl24::pyrEF replacement
+### Generation of a linear Agl24up-pyrEF-Agl24down fragment for the direct agl24::pyrEF replacement
 
 To further underline the essential role of agl24 in S. acidocaldarius, a disruption of the agl24 gene by direct homologous integration of the pyrEF cassette was performed. For this approach, 387 bp of the agl24 upstream region, the full 1525 bp of the pyrEF cassette, and 1011 bp of the agl24 downstream region were PCR amplified using the primers: 4168 + 6336, 4115 + 4116, and 6337 + 6338, respectively. At the 5′ ends of the upstream forward primer (4168) and of the downstream reverse primer (6338) restriction sites ApaI and BamHI were introduced, respectively. The pyrEF forward primer (4115) was designed to incorporate 40 bp of the upstream reverse primer (6336) resulting in a 40 bp overlapping stretch. The pyrEF reverse primer (4116) and the downstream forward primer (6337) were designed to incorporate the reverse complement strand of the other primer, resulting in a 46 bp overlapping stretch. The upstream, pyrEF, and downstream fragments were fused by an overlapping PCR, using the 3′ ends of each fragment as primers. The 2904 bp overlap PCR fragment gained, was amplified using the outer primers (4168 and 6338), digested with ApaI and BamHI, and ligated into the p407 vector predigested with the same restriction enzymes. The resulting plasmid, pSVA3338 (agl24up-pyrEF-agl24down), was used to transform E. coli DH5α and selected on LB-plates containing 50 mg mL–1 ampicillin. The accuracy of the plasmid was verified by sequencing. Before transformation in S. acidocaldarius, the plasmid was digested with ApaI and BamHI to create the linear agl24up-pyrEF-agl24down fragment.
 
-## Generation of Agl24 expression plasmids for the production of Agl24 in S. acidocaldarius and E. coli
+### Generation of Agl24 expression plasmids for the production of Agl24 in S. acidocaldarius and E. coli
 
 Cellular localization studies were carried out using N- and C-terminal fusion proteins of Agl24. The agl24 gene was amplified from genomic DNA of S. acidocaldarius introducing NcoI and PstI restriction sites at the 5′ ends of the primers 4176 and 4177, respectively. The PCR fragment was cloned into pSVA1481, yielding vector pSVA1336 containing an inducible arabinose promoter and agl24-strep-his10. The plasmid was digested with NcoI and EagI and the insert agl24-strep-his10 was ligated into pSVA1481 containing an inducible maltose promoter, yielding pSVA1337. The N-terminal strep-his10-tev-agl24 was cloned using the primer pair 4180 and 4181, which incorporated the restriction sites NcoI and NotI, respectively. The insert was ligated into pSVA2301 containing an inducible maltose promoter yielding pSVA1339.
 
 For heterologous expression of agl24 in E. coli, the plasmid pHD0499 was generated. The GFP-His8-tagged agl24 gene was constructed by amplifying the full-length agl24 gene from S. acidocaldarius genomic DNA with the primer pair A596 and A597. The PCR fragment was cloned in-frame into the vector pWaldo (Waldo et al., 1999) using XhoI and KpnI restriction sites, generating a C-terminal fusion with a TEV cleavage site, GFP, and His8 tag. For the generation of Agl24 mutants of the conserved mutants H15 and E114, a quick-change mutagenesis PCR was applied using the primers: A597 and A684 or A685 and A686, respectively.
 
-## Transformation and selection of the deletion mutant in S. acidocaldarius
+### Transformation and selection of the deletion mutant in S. acidocaldarius
 
 Generation of competent cells was performed based on the protocol of Kurosawa and Grogan, 2005. Briefly, S. acidocaldarius strain MW001 was grown to an OD600 between 0.1 and 0.3 in Brock medium supplemented with 0.1% w/v NZ-amine and 0.1% dextrin. Cooled cells were harvested by centrifugation (2000× g at 4°C for 20 min). The cell pellet was washed three times successively in 50, 10, and 1 mL of ice-cold 20 mM sucrose (dissolved in demineralized water) after mild centrifugation steps (2000× g at 4°C for 20 min). The final cell pellet was resuspended in 20 mM sucrose at an OD600 of 10.0 and stored in 50 µL aliquots at –80°C; 400–600 ng of methylated pSVA1312 or the linearized Agl24up-pryEF-Agl24down fragment were added to a 50 µL aliquot of competent MW001 cells and incubated for 5 min on ice before transformation in a 1 mm gap electroporation cuvette at 1250 V, 1000 Ω, 25 mF using a Bio-Rad gene pulser II (Bio-Rad, Plano, TX). Directly after transformation, 50 µL of a 2× concentrated recovery solution (1% sucrose, 20 mM β-alanine, 20 mM malate buffer pH 4.5, 10 mM MgSO4) were added to the sample and incubated at 75°C for 30 min under mild shaking conditions (150 rpm). Before plating, the sample was mixed with 100 µL of heated 2× concentrated recovery solution and twice 100 µL were spread onto gelrite plates containing Brock medium supplemented with 0.1% NZ-amine and 0.1% dextrin. After incubation for 5–7 days at 75°C, large brownish colonies were used to inoculate 50 mL of Brock medium containing 0.1% NZ-amine and 0.1% dextrin, which were incubated for 3 days at 78°C. Cultures confirmed by PCR to contain the genomically integrated plasmid were grown in Brock medium supplemented with 0.1% NZ-amine and 0.1% dextrin to an OD of 0.4. Aliquots of 40 µL were spread on second selection plates, supplemented with 0.1% NZ-amine and 0.1% dextrin and 10 mg mL–1 uracil, were incubated for 5–7 days at 78°C. Newly formed colonies were streaked on fresh second selection plates to ensure single colony selection before each colony was screened by PCR for the genomic absence, presence, or modification of the agl24 gene.
 
-## Expression of Agl24 in S. acidocaldarius
+### Expression of Agl24 in S. acidocaldarius
 
 Plasmid transformation of S. acidocaldarius cells was performed as described above for the deletion mutants. Cells were spread onto gelrite plates containing Brock medium supplemented with 0.1% NZ-amine and 0.1% dextrin. After incubation for 5–7 days at 75°C, large brownish colonies were used to inoculate 50 mL of Brock medium containing 0.1% NZ-amine and 0.1% dextrin and incubated for 3 days at 78°C. Presence of the expression plasmid was confirmed by PCR. For induction of expression the strains were grown either in Brock medium supplemented with either 0.1% NZ-amine and 0.1% dextrin (MALpromotor) or with 0.1% NZ-amine and 0.1% L-arabinose (ARApromotor) to an OD600 of 1.0.
 
-## Expression and purification of recombinant Agl24 protein from E. coli
+### Expression and purification of recombinant Agl24 protein from E. coli
 
 For heterologous Agl24 protein expression, 6 × 1 L LB medium was inoculated with 10 mL from an overnight BL21 culture previously transformed with pHD0499. Cells were grown at 16°C overnight in auto-induction medium (Studier, 2014) containing 30 µg mL–1 kanamycin. The cells were harvested by centrifugation at 4200× g for 25 min and used to isolate the membrane fractions. All subsequent purification steps were carried out at 4°C. Cells were fractionated by passing four times through an Avestin C3 High Pressure Homogeniser (Biopharma, UK), followed by a 20 min low speed spin at 4000× g. The resulting supernatant was centrifuged at 200,000× g for 2 hr to obtain the membrane fraction and 2–3 g of membranes were routinely used for isolation of Agl24-GFP-His8 proteins. Samples were solubilized in 18 mL Buffer 1 (500 mM NaCl, 10 mM Na2HPO4, 1.8 mM KH2PO4 2.7 mM KCl, pH 7.4, 20 mM imidazole, 4 mM TCEP) with the addition of 1% n-dodecyl-β-maltoside (DDM) for 2 hr at 4°C. The sample was twofold diluted with Buffer 1 and centrifuged at 200,000× g for 2 hr. The supernatant was loaded onto a Ni-Sepharose 6 Fast Flow (GE Healthcare) column with 1 mL of prewashed Ni-NTA-beads. The column was washed with 20 mL of wash buffer (500 mM NaCl, 10 mM Na2HPO4, 1.8 mM KH2PO4 2.7 mM KCl, pH 7.4, 20 mM imidazole, 0.4 mM TCEP, 0.03% DDM) and eluted with 5 × 1 mL elution buffer (500 mM NaCl, 10 mM Na2HPO4, 1.8 mM KH2PO4 2.7 mM KCl, pH 7.4, 250 mM imidazole, 0.4 mM TCEP, 0.03% DDM). Elution fractions were combined, and imidazole was removed using a HiPrep 26/10 desalting column (GE Healthcare) equilibrated with the following Buffer (1× PBS, 0.03% DDM, 0.4 mM TCEP). Protein concentration was determined using a Bradford reaction (Bio-Rad) and purity was confirmed by SDS-PAGE analysis. The concentrated fractions were separated by SDS-PAGE and stained with Coomassie blue. Protein identity was confirmed by tryptic peptide mass fingerprinting, and the level of purity and molecular weight of the recombinant protein was determined by matrix-assisted laser desorption/ionization time-of-flight mass spectrometry (MALDI-TOF). The analysis was provided by the University of Dundee ‘Fingerprints’ Proteomics Facility.
 
-## Agl24 activity
+### Agl24 activity
 
 Activity was measured in 100 µL reaction volume containing 1 mM UDP-D-GlcNAc, 1 mM acceptor molecule, 5 mM MgCl2, and 5 µg of purified Agl24 in TBS Buffer (150 mM NaCl, 50 mM Tris-HCl, pH 7.6). The reaction was performed in a PCR cycler at 60 °C for 12 hr.
 
-## MS analysis
+### MS analysis
 
 MALDI-TOF was used to analyze the acceptors and products of the Agl24 in vitro assay. At least three repeats were performed, where 100 μL reaction samples were purified over 100 mg Sep-Pak C18 cartridges (Waters) pre-equilibrated with 5% EtOH. The bound samples were washed with 800 µL of H2O and 800 µL of 15% EtOH, eluted in two fractions with (1) 800 µL of 30% EtOH and (2) 800 µL of 60% EtOH. The two elution fractions were dried in a SpeedVac vacuum concentrator and resuspended in 20 µL of 50% MeOH. A 1 µL sample was mixed with 1 µL of 2,5-dihydroxybenzoic acid matrix (15 mg mL–1 in 30:70 acetonitrile, 0.1% TFA), and 1 µL was added to the MALDI grid. Samples were analyzed by MALDI in an Autoflex Speed mass spectrometer set up in reflection positive ion mode (Bruker, Germany).
 
-## HPLC analysis
+### HPLC analysis
 
 With the exception of kinetics reactions, which are detailed below, Agl24 reactions were analyzed using an HPLC assay with, typically, 50 µL samples containing 2.5 mM UDP-GlcNAc, 1.5 mM lipid acceptor, and 1.8 µg of purified Agl24 in a TBS buffer containing 5 mM MgCl2 (150 mM NaCl, 50 mM Tris-HCl, pH 7.5). Reactions were left at 60°C (or alternative temperatures) for the desired time and quenched with one equivalent of acetonitrile to precipitate Agl24. Following filtration to remove precipitate, reactions were injected onto an XBridge BEH Amide OBD Prep column (130 Å, 5 µM, 10 × 250 mm) at a flow rate of 4 mL min–1 using a Dionex UltiMate 3000 system (Thermo Scientific) fitted with a UV detector optimized to detect the O-phenyl functional group of the acceptor molecule at 270 nm. Each run was 35 min using running Buffer A (95% acetonitrile, 10 mM ammonium acetate, pH 8) and Buffer B (50% acetonitrile, 10 mM ammonium acetate, pH 8). A linear gradient from 20% to 80% Buffer B was performed over 20 min, followed by an immediate drop back to 20% Buffer B for the remaining 15 min of the run to re-equilibrate the column to starting conditions. The Agl24 reaction substrates and products typically eluted 8–11 min into a run. For kinetic analyses, assays were performed in triplicate (with the exception of 1 mM concentration which was only performed in duplicate) and altered to contain a fixed concentration of lipid acceptor (0.5 mM) while varying the concentration of UDP-GlcNAc (0.5, 0.75, 1, 1.5, 3, 6, 9, 12 mM). Reactions were run for 10 hr before being quenched and, after completion, areas of substrate and product peaks were calculated to determine the reaction conversion. Conversion over 10 hr was converted to pmol per minute, and the resulting data were analyzed using GraphPad Prism v8 to generate a Michaelis–Menten curve and the resulting kinetic data.
 
-## NMR analysis
+### NMR analysis
 
 The HPLC-purified Agl24 products from three to five reactions each (0.5–2 mg) were combined and dried using a Christ RVC 2–25 speed vacuum fitted with a Christ CT 02–50 cold-trap to remove excess acetonitrile, then freeze dried (Alpha 1–2 LDplus, Christ) to remove residual water. Products were subsequently dissolved in 600 µL of D2O and NMR spectra were recorded at 293 K. The spectra were acquired on a Bruker AVANCE III HD 500 MHz NMR Spectrometer equipped with a 5 mm QCPI cryoprobe. For 1D TOCSY experiments, H1’ was irradiated at 5.35 ppm, H2’ was irradiated at 3.90 ppm, and H1” was irradiated at 4.49 ppm (Figure 6—figure supplement 1). A combination of 1H 1H COSY, 1D TOCSY, and 1H 13C HSQC experiments were used to fully assign the 1H and 13C signals for the Agl24 reaction product. Full 1H and 13C chemical shift assignments can be found in Table 1 and are recorded with respect to the residual HDO signal at 4.7 ppm.
 
-## BLAST searches and homology modeling of Saci1262
+### BLAST searches and homology modeling of Saci1262
 
 To identify homologs of MurG (WP_063074721.1), Alg13 (NP_011468.1), Alg14 (NP_009626.1), and Alg14-13 fusion (NP_009626.1 + NP_011468.1) in S. acidocaldarius, a DELTA BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi) was performed with the standard parameters (Boratyn et al., 2012). Homology modeling of Saci1262 (Agl24) was performed on the SWISS-MODEL server (Waterhouse et al., 2018) with default parameters.
 
 The obtained sequences of the MurG, Alg14-14, and Saci1262 homologs were alignment with Clustal Omega (Sievers and Higgins, 2018) with standard parameter and visualized with Geneious Prime 2020 (Biomatters, Ltd. New Zealand) with an amino acids conservation threshold of 65%.
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 To search for homologs of Alg14-13 in Archaea, Bacteria, and Eukaryotes, we constructed a local database for each domain. The Archaea database (2424 genomes) contained all representative genomes from GTDB r202 (Parks et al., 2022), plus the Asgard genomes from Liu et al., 2021 (NCBI BioProject identifier PRJNA680430). We downloaded them as nucleotide contigs with ncbi-genome-download (https://github.com/kblin/ncbi-genome-download; (Meyer, 2021 copy archived at swh:1:rev:79b71d322f7194ccc44aa3b543a05c38ad271cfb)) and predicted protein sequences with Prokka 1.14.0 (Seemann, 2014). For Bacteria (25,118 genomes), we used all entries on NCBI Genome as of 2019/06/01, dereplicated at species level through a combination of rpS3 clustering and dRep (Olm et al., 2017). We then downloaded the genomes from NCBI as protein fasta trying first GenBank, then RefSeq, and finally GenBank nucleotide contigs followed by predicting protein sequences with Prodigal (Hyatt et al., 2010). For Eukaryotes (1611 genomes), we used all entries on NCBI Genome as of 2019/06/01, taking one genome per species based on the txids using the completion status to pick said genome (in order of preference: Reference, Representative, Complete, Chromosome, Scaffold, and finally Contig state).
 

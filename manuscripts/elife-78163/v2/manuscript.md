@@ -24,16 +24,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04ehecz88 Hillman Cancer Center, University of Pittsburgh Medical Center Pittsburgh United States
-2. https://ror.org/03v76x132 Department of Pathology, Yale University New Haven United States
-3. https://ror.org/02pttbw34 Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States
-4. https://ror.org/03j7sze86 Yale Cancer Center, Yale School of Medicine New Haven United States
-5. https://ror.org/03v76x132 Yale Cancer Biology Institute, Department of Pharmacology, Yale University West Haven United States
-6. https://ror.org/04a9tmd77 Mount Sinai Center for Therapeutics Discovery, Icahn School of Medicine at Mount Sinai New York United States
-7. https://ror.org/04a9tmd77 Departments of Pharmacological Sciences and Oncological Sciences, Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States
-8. https://ror.org/008zs3103 Department of Biosciences, Rice University Houston United States
-9. https://ror.org/00jmfr291 Department of Pathology, University of Michigan, Ann Arbor Ann Arbor United States
-10. https://ror.org/03taz7m60 Department of Medicine, Department of Biochemistry and Molecular Medicine, University of Southern California Los Angeles United States
+1. Hillman Cancer Center, University of Pittsburgh Medical Center Pittsburgh United States ([ROR:04ehecz88](https://ror.org/04ehecz88))
+2. Department of Pathology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+4. Yale Cancer Center, Yale School of Medicine New Haven United States ([ROR:03j7sze86](https://ror.org/03j7sze86))
+5. Yale Cancer Biology Institute, Department of Pharmacology, Yale University West Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Mount Sinai Center for Therapeutics Discovery, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+7. Departments of Pharmacological Sciences and Oncological Sciences, Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+8. Department of Biosciences, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+9. Department of Pathology, University of Michigan, Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+10. Department of Medicine, Department of Biochemistry and Molecular Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 11. Yale Stem Cell Center, Yale School of Medicine New Haven United States
 12. Department of Internal Medicine (Section of Medical Oncology), Yale School of Medicine New Haven United States
 13. Yale Center for Immuno-Oncology, Yale School of Medicine New Haven United States
@@ -56,59 +56,99 @@ Here, we established an in vivo screening platform that identified WDR5 as a key
 
 ## Results
 
-## The establishment of in vivo lung metastasis screening platform
+### The establishment of in vivo lung metastasis screening platform
 
 To identify actionable epigenetic targets for breast cancer metastasis, we conducted parallel in vivo and in vitro functional screens using an inducible, barcoded short hairpin RNA (shRNA) library (Figure 1A). We first compiled a list of epigenetic regulators based on: (1) if they could be targeted with existing pharmacological agents, (2) if their expression correlated with poor survival in multiple independent datasets (hazard ratio >1 and p-value<0.05), or (3) if their expression was increased in the lung metastatic cell subpopulation MDA-MB-231-LM2 (LM2) cells when compared to the parental TNBC cell line MDA-MB-231. We designed our screen using the LM2 cells because they reproducibly generate lung metastasis, and lung is the most frequent site of distant relapse in TNBC patients (Lin et al., 2008; Minn et al., 2005). Accordingly, we tested the knockdown efficiency of 327 shRNAs targeting 89 epigenetic regulators and selected one shRNA with the best knockdown efficiency per target gene (Supplementary file 1a). We then subcloned these 89 shRNAs into the doxycycline (DOX) inducible and barcoded pINDUCER10 lentivirus to generate a focused knockdown-validated shRNA library (Figure 1—figure supplement 1A; Meerbrey et al., 2011). Included in this library were positive control shRNAs against BUD31 (shBUD31) and SAE2 (shSAE2), which were previously shown to be essential for LM2 cell proliferation, along with shRNAs against CHEK1 and STAMBP, which served as negative controls (Hsu et al., 2015; Kessler et al., 2012).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of in vivo and in vitro screening work flow. Epigenetic regulator inducible knockdown cell lines were mixed in equal numbers (pool of 8–10 lines) with control cell lines and injected into control or doxycycline (DOX) treated mice (625 mg/kg) intravenously or cultured under control or DOX (1 μg/mL) treated condition. Both lungs (in vivo) and cells (in vitro) were harvested for gDNA and subjected to barcode quantitative PCR as the screening output. (B) Volcano plot showing the results of the in vivo screen. Each data point is an average of 10–20 mice. Discovery hits are selected using p<0.05 and log2FC (fold change)>0.8 or log2FC <−0.8. (C) Log2FC of the in vivo screen results versus log2FC of the in vitro screen results for each of the epigenetic regulators. Discovery hits are selected as in (B). (D) Western blot analysis of the indicated proteins in LM2 cells harboring inducible control (shCtrl) or WDR5 targeting (shWDR5-1 and shWDR5-2) shRNA after 3 days of DOX induction. (E) WST-1 proliferation assays of LM2 cells from (D) after indicated days of DOX treatment. Each symbol indicates mean ± SD for representative experiment performed in quadruplicate (n=4, unpaired two-side Student’s t test). ****p<0.0001 (shCtrl versus shWDR5-1) and ****p<0.0001 (shCtrl versus shWDR5-2). (F–G) Colony formation assays of LM2 cells from (D) after 9 days of either control or DOX treatment. Representative images (F) and quantification (G) are shown (n=3, unpaired two-side Student’s t test). p=0.057 (shCtrl −DOX versus shCtrl +DOX), ****p<0.0001 (shWDR5-1 −DOX versus shWDR5−1 +DOX), and **p=0.0025 (shWDR5-2 −DOX versus shWDR5−2 +DOX). (H) Normalized bioluminescence unit (BLU) signals of lung metastasis of mice injected intravenously with LM2 cells from (D) and kept under DOX chow. The data represent mean ± SEM (shCtrl: n=6; shWDR5-1: n=7; shWDR5-2: n=5). **p=0.0012 (shCtrl versus shWDR5-1) and *p=0.017 (shCtrl versus shWDR5-2). (I–J) Box plots of relative BLU of indicated cell line at day 7 (I), p=0.1375 (shCtrl versus shWDR5-1), *p=0.0173 (shCtrl versus shWDR5-2), and day 50 (J), **p=0.0012 (shCtrl versus shWDR5-1), *p=0.017 (shCtrl versus shWDR5-2), post-injection normalized to its day 0 value. (K) Tumor volume measurements of mice injected into the fourth mammary fat pad with LM2 cells harboring inducible control or shWDR5-1. The data represent mean ± SEM. ****p<0.0001 (shCtrl versus shWDR5-1). (L) Representative BLU images of mice in (K) at day 61. Significance determined using unpaired two-tailed Mann–Whitney test (shCtrl: n=14; shWDR5-1: n=13). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. For gel source data, see Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the pINDUCER10 plasmid. LTR, long terminal repeat; PSI, retroviral Ψ packaging element; RRE, Rev response element; TRE2, TRE2 promoter; Ubc, ubiquitin C promoter; rtTA3, reverse tetracycline-controlled transactivator 3; IRES, internal ribosome entry site; Puro, puromycin resistance. (B–C) Relative abundance of cells stably expressing positive control shRNAs against BUD31 and SAE2 (B) and negative control shRNAs against CHEK1 and STAMBP (C) after the indicated days of in vitro culture under control or doxycycline (DOX) (1 μg/mL) treatment. Data normalized to abundance at the time of minipool mixture (day 0). Representative data are shown from one minipool experiment (n=4, unpaired two-side Student’s t test). (D) Representative data of lung metastasis signal from mice injected with a minipool and fed with either DOX (625 mg/kg) or regular chow at the indicated time point. ns, not significant. (E) Relative abundance of barcode for shRNA against WDR5 and positive/negative controls in lung tissue from control and DOX-treated mice. (F) Representative image of primary tumor from mice injected into the fourth mammary fat pad with LM2 cells harboring inducible control or shWDR5-1 at day 62. (G) Quantification of primary tumor weight from mice in (F) at day 62. Each dot represents one tumor. (H) Relative bioluminescence units (BLU) of the primary tumors from mice in (F) at day 61 post-injection (shCtrl: n=14; shWDR5: n=13). (I–J) Quantification of ex vivo BLU signals of the lungs (I) and liver (J) from mice in (F) at day 62 post-injection. Each dot represents one animal (shCtrl: n=8; shWDR5: n=7). Significance determined using unpaired two-tailed Mann–Whitney test. *p<0.05; **p<0.001; ***p<0.001; ****p<0.0001.
 
 LM2 cells were infected with individual shRNAs targeting 64 epigenetic regulators and control shRNA from this library. To ensure that any particular hairpin had enough representation and was above the detection limit for in vivo screening, a subset of knockdown cell lines against 8–10 epigenetic regulators and the control cell lines were combined together in equal numbers into seven minipools. We cultured these minipools in either control or DOX conditions for up to 10 doublings, then extracted gDNA from the pooled shRNA infected cells collected. Quantitative PCR (qPCR) analysis of gDNA confirmed that shBUD31 and shSAE2 were significantly depleted in the DOX-treated pools (Figure 1—figure supplement 1B). On the other hand, the amount of shSTAMBP and shCHEK1 expressing cells did not change significantly in most control or DOX conditions, while shCHEK1 cells increased slightly after 10 days of DOX treatment (Figure 1—figure supplement 1C). We next determined whether our controls perform similarly in vivo. Minipools were then injected intravenously and treated with either control or DOX (in animal chow for in vivo conditions). After 50 days, tumor-bearing lung tissue was collected and processed for gDNA extraction. We then compared the barcode abundance between control and DOX-treated lung tissue using qPCR analysis of gDNA. The results were normalized to the day 0 value.
 
 We found that DOX treatment does not in itself affect the in vivo kinetics of lung metastatic growth (Figure 1—figure supplement 1D). In a representative minipool, shBUD31 and shSAE2 consistently dropped-out in the DOX-treated condition, whereas shSTAMBP remained unchanged (Figure 1—figure supplement 1E). shCHEK1 was enriched significantly, which is likely indirectly due to the depletion of other shRNA expressing cell lines in the minipools (Figure 1—figure supplement 1E). From the in vivo screen, we identified 14 significant hits (p<0.05, log2FC >0.8 or log2FC <−0.8, FC:+DOX/−DOX), and among these, 7 were drop-out hits where shRNA representation significantly decreased, while 7 were enrichment hits where shRNA representation significantly increased (Figure 1B, Supplementary file 1b). Many of these in vivo drop-out candidates were drop-out candidates in vitro (Figure 1C, Supplementary file 1b). For example, our screen identified drop-out shRNAs against MCM6, an essential eukaryotic genome replication factor, and CSNK2A1, previously shown to enhance metastatic growth of MDA-MB-231 cells (Bae et al., 2016; Figure 1B and C). Thus, many of these epigenetic targets may be, at least in part, required for the cell intrinsic fitness of metastatic cells.
 
-## Decreasing WDR5 reduces breast cancer cell growth and lung metastasis
+### Decreasing WDR5 reduces breast cancer cell growth and lung metastasis
 
 Among the top hits and potential therapeutic targets that were identified, we focused on WDR5 because it can be inhibited by small molecules, and shWDR5 was the second most significantly depleted shRNA in vivo (after shMCM6). WDR5 is known canonically as a scaffolding protein that recognizes and binds to methylated H3K4, allowing the modification of H3K4 trimethylation by the KMT2 protein complex (Wysocka et al., 2005). More recently, WDR5 has been discovered to physically interact with and guide MYC to its transcriptional targets (Thomas et al., 2015b). WDR5 has also been implicated in the growth of metastatic breast cancer cells, although the mechanism underlying this function of WDR5 is not clearly delineated (Punzi et al., 2019).
 
 We first confirmed the knockdown effect of WDR5 in individual unpooled LM2 cells and by using independent shRNAs against WDR5 (shWDR5-1 and shWDR5-2). Following 3 days of shRNA induction in vitro (Figure 1D), both shRNAs against WDR5 caused a significant but modest decrease in cell proliferation when compared to a control shRNA (shCtrl) over 5 days (Figure 1E). In addition, using long-term in vitro colony formation assays over 9 days, we found a profound impact of WDR5 knockdown on the in vitro clonogenic ability of LM2 cells (Figure 1F and G). We next asked whether both shRNAs affect lung metastasis outgrowth in vivo. We induced knockdown for 3 days in vitro before injecting LM2 cells into the tail vein of mice and monitoring lung metastatic colonization and outgrowth over 50 days. We observed a significant impairment on lung colonization by LM2 cells as early as day 7 post-injection (Figure 1H and I). At the end point (day 50), the average lung metastatic burden in the mice with shWDR5 cells was 5.7- or 16.5-fold lower than that in mice with LM2 cells expressing the control shRNA (Figure 1H and J). In addition to metastatic colonization from circulation, we tested whether knockdown of WDR5 affects tumor growth and metastasis from the orthotopic mammary fat pad. We observed a significant decrease in mammary tumor growth in the shWDR5 group compared to control tumors (Figure 1K and L, Figure 1—figure supplement 1F-H). Notably, we observed an even larger decrease in lung and liver metastasis from the mammary fat pad tumors in the shWDR5 group as compared to shCtrl, which suggests a potential metastasis-specific function of WDR5 (compare Figure 1—figure supplement 1I-J to Figure 1—figure supplement 1H). Taken together, we showed that WDR5 is independently required for the cellular outgrowth, tumorigenic, and lung colonizing capacities of LM2 TNBC cells.
 
-## WDR5 depletion significantly reduces breast cancer cell growth across multiple breast cancer subtypes
+### WDR5 depletion significantly reduces breast cancer cell growth across multiple breast cancer subtypes
 
 Next, we tested the requirement for WDR5 in other cell line models and from distinct breast cancer subtypes. To this end, we reduced WDR5 in additional breast cancer lines spanning three established molecular subtypes: TNBC (MDA-MB-453 and HCC1143), estrogen receptor positive (MCF7, T47D, and MDA-MB-361), and HER2+ (UACC893, BT474, and SKBR3) (Figure 2A). WDR5 knockdown significantly reduced the clonogenic outgrowth of all the tested cell lines (Figure 2B and C), suggesting that WDR5 enhances tumor cell growth across multiple breast cancer subtypes. As we were particularly interested in evaluating the therapeutic potential of targeting WDR5 in TNBC, we next tested the efficacy of a known WDR5 inhibitor, OICR-9429, which is a small molecule antagonist of the WDR5-KMT2 interaction (Grebien et al., 2015). We treated LM2 cells with OICR-9429 at 20 μM for 9 days, and this also significantly reduced their colony formation ability (Figure 2D and E). Similar results were found when using OICR-9429 to treat two other TNBC cell lines, MDA-MB-453 and 4T1, although we noted that growth inhibition was more significant in MDA-MB-453 cells when using 30 μM of OICR-9429 (Figure 2F and G, Figure 2—figure supplement 1A and B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot analyses of WDR5 in the indicated cell lines infected with either control or WDR5-targeting hairpins with or without 3 days of doxycycline (DOX) (1 μg/mL) induction. (B–C) Colony formation assays of indicated control or shWDR5-1 cell lines from (A) after 9 days of DOX (1 μg/mL) treatment. Representative images (B) and quantification (C) are shown (n=3, unpaired two-side Student’s t test). **pMDA-MB-453=0.0011, ****pHCC1143 <0.0001, *pMCF7=0.0263, ****pT47D<0.0001, ****pMDA-MB-361<0.0001, **pUACC893=0.0017, ***pBT474=0.0004, and *pSKBR3=0.0156. Cell lines are grouped by breast cancer molecular subtype. (D–G) Colony formation assays of LM2 (D) and MDA-MB-453 (F) after 9 days of either control or OICR-9429 treatment at the indicated concentration. Representative images (D and F) and quantification (E and G) are shown (n=3, unpaired two-side Student’s t test). ****pLM2 <0.0001 (dimethyl sulfoxide (DMSO) versus OICR-9429 20 μM), **pMDA-MB-453=0.0018 (DMSO versus OICR-9429 20 μM), and ****pMDA-MB-453<0.0001 (DMSO versus OICR-9429 30 μM). (H) Western blot analysis of WDR5 in LM2 cells treated with MS67, MS67N, or OICR-9429 at the indicated concentrations for 18 hr. Band intensities of WDR5 were quantified by image J and normalized by those of vinculin control. (I–J) Colony formation assays of LM2 after 9 days of treatment with control, OICR-9429, MS67N, or MS67 at the indicated concentrations. Representative images (I) and quantification (J) are shown (n=3, unpaired two-side Student’s t test). **p0.5μM=0.0012 (MS67N versus MS67), **p2.5μM = 0.0033 (DMSO versus OICR-9429), and ****p2.5μM <0.0001 (MS67N versus MS67). For gel source data, see Figure 2—source data 1 and Figure 2—source data 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Colony formation assays of 4T1 after 9 days of either control or 20 μM OICR-9429 treatment for 9 days. Representative images (A) and quantification (B) are shown (n=3, unpaired two-side Student’s t test). (C) Western blot analysis of WDR5 in MDA-MB-453 treated with MS67, MS67N, or OICR-9429 at the indicated concentrations for 18 hr. Band intensities were quantified by image J. (D–E) Western blot analysis of WDR5 in LM2 (D) or MDA-MB-453 (E) treated with 2.5 μM MS67 or MS67N for the indicated durations. Band intensities were quantified by image J and normalized by the those of vinculin control. (F–G) Colony formation assays of MDA-MB-453 after 9 days of treatment with control, OICR-9429, MS67N, or MS67 at the indicated concentrations. Representative images (F) and quantification (G) are shown (n=3, unpaired two-side Student’s t test). *p<0.05; **p<0.001; ***p<0.001; ****p<0.0001. For gel source data, see Figure 2—figure supplement 1—source data 1, Figure 2—figure supplement 1—source data 2 and Figure 2—figure supplement 1—source data 3.
+
 As the effective concentration of OICR-9429 is relatively high and may lead to off-target effects, we sought to test the effect of our recently published WDR5 degrader MS67, which recruits WDR5 to Cullin4-CRBN E3 ubiquitin ligase complex for proteasome-mediated degradation (Yu et al., 2021). We first evaluated the effect of MS67 on degrading WDR5 in LM2 and MDA-MB-453 cells. We found that MS67, but not the negative control MS67N, which does not bind to CRBN, nor OICR-9429, induced WDR5 degradation at a concentration as low as 0.02 μM (Figure 2H, Figure 2—figure supplement 1C). Specifically, at 2.5 μM MS67, we achieved ~80% WDR5 degradation in LM2 cells and ~70% of degradation in MDA-MB-453 cells (Figure 2H, Figure 2—figure supplement 1C). Additionally, the maximal degradation can be achieved at 8 hr post-treatment, and this effect remains stable for 72 hr in both LM2 and MDA-MB-453 cells (Figure 2—figure supplement 1D and E). Finally, we compared MS67-induced WDR5 degradation to OICR-9429 treatment on the clonogenic outgrowth of LM2 and MDA-MB-453 cells. We found that MS67 leads to ~50% growth inhibition at 0.5 μM and ~80% inhibition at 2.5 μM (Figure 2I and J, Figure 2—figure supplement 1F and G). Importantly, the effect of 2.5 μM MS67 treatment is comparable to shRNA knockdown and more potent than 20 μM OICR-9429 treatment in LM2 and MDA-MB-453 cells, while 2.5 μM of OICR-9429 treatment only caused a modest effect (compare Figures 1F, G, 2B, Figure 2—figure supplement 1F and G). In summary, MS67-mediated WDR5 degradation showed improved growth inhibition of breast cancer cells when compared to the OICR-9429 compound.
 
-## WDR5 targeting decreases RP gene expression and global translation rates
+### WDR5 targeting decreases RP gene expression and global translation rates
 
 To identify the molecular effects of WDR5 depletion in TNBC cells, we performed transcriptomic profiling of control and WDR5 knockdown cells. In addition to the MDA-MB-231 lung metastatic LM2 cells, we also tested the effect of WDR5 knockdown in independent MDA-MB-231 subpopulations that metastasize more readily to the brain (BrM3) or bone (BoM) (Bos et al., 2009; Kang et al., 2003). Because WDR5 has previously been shown to facilitate active transcription (Ang et al., 2011; Wysocka et al., 2005), we used spike-in RNA for normalization and found no changes in global RNA levels 3 days after shWDR5-1 induction (Jiang et al., 2011). Our analyses identified differentially expressed genes (DEGs) in all three organotropic-metastatic cell subpopulations (Figure 3A). In general, inhibition of WDR5 led to more down-regulated genes than up-regulated genes, which supports previous findings that WDR5 generally promotes transcriptional activation (Wysocka et al., 2005; Figure 3A). Certain DEGs were preferentially regulated in LM2, BrM3, or BoM cells, suggesting that WDR5 can regulate genes in a manner that is dependent on the metastatic proclivities of different breast cancer cell subpopulations (Figure 3B). On the other hand, we also found DEGs (264 down-regulated and 118 up-regulated) that were shared across all lines (Figure 3B, Supplementary file 1c), indicative of some conserved WDR5 function across metastatic breast cancer cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bar graph summarizing the number of differentially expressed genes (DEGs) after WDR5 silencing across three MDA-MB-231 organotropic sublines (LM2-lung; BrM3-brain; BoM-bone). (B) Venn diagram showing the number of overlap or distinct down-regulated genes (left) and up-regulated genes (right) after WDR5 knockdown in the MDA-MB-231 organotropic sublines. (C) Gene ontology results using the down-regulated gene set shared by all three MDA-MB-231 organotropic sublines analyzed with Enrichr. (D) Volcano plot of DEGs after WDR5 knockdown in LM2. Shared DEGs across all lines highlighted in dark red and RP genes highlighted in light red. The top 10 differentially expressed RPs are labeled. (E) RT-quantitative PCR (qPCR) validation of selected DEGs in LM2 cells harboring shCtrl, shWDR5-1, or shWDR5-2 after doxycycline (DOX) (1 μg/mL) induction for 3 days. For WDR5, ****p<0.0001 (shWDR5-1 −DOX versus +DOX) and ***p=0.0002 (shWDR5-2 −DOX versus +DOX); for RPL7, **p=0.0014 (shWDR5-1 −DOX versus +DOX), and **p=0.0012 (shWDR5-2 −DOX versus +DOX); for RPL9, *p=0.0106 (shWDR5-1 −DOX versus +DOX) and **p=0.0024 (shWDR5-2 -DOX versus +DOX); for RPL31, ***p=0.0007 (shWDR5-1 −DOX versus +DOX) and ****p<0.0001 (shWDR5-2 −DOX versus +DOX); for RPL32, **p=0.0016 (shWDR5-1 −DOX versus +DOX) and **p=0.0018 (shWDR5-2 −DOX versus +DOX); for RPS14, **p=0.0015 (shWDR5-1 −DOX versus +DOX) and **p=0.0084 (shWDR5-2 −DOX versus +DOX). (F) RT-qPCR validation of selected DEGs in LM2 cells after DMSO or OICR-9429 treatments at the indicated concentration for 3 days. For RPL7, **p=0.0068 (DMSO versus OICR-9429 10 μM) and *p=0.0138 (DMSO versus OICR-9429 20 μM); for RPL32, *p0.0268 (DMSO versus OICR-9429 10 μM) and *p=0.0106 (DMSO versus OICR-9429 20 μM); for RPS14, **p=0.0032 (DMSO versus OICR-9429 10 μM) and **p=0.0024 (DMSO versus OICR-9429 20 μM). (G) RT-qPCR validation of selected DEGs in LM2 cells after DMSO, OICR-9429, MS67N, or MS67 treatments at the indicated concentration for 48 hr. Significance determined by comparing each treatment to DMSO control (n=4, unpaired two-side Student’s t test). For RPL32, *p=0.0171 (DMSO versus OICR-9429 2.5 μM), **p=0.0056 (DMSO versus MS67 0.5 μM), and **p=0.0031 (DMSO versus MS67 2.5 μM); for RPS14, **p=0.0068 (DMSO versus MS67N 0.5 μM), *p=0.0303 (DMSO versus MS67N 2.5 μM), and **p=0.0033 (DMSO versus MS67 2.5 μM). (H–J) Normalized translation rates as measured by incorporation of methionine analog homopropargylglycine (HPG) over time and evaluated by flow cytometry. Each data point represents the slope of HPG incorporation for at least three time points using median fluorescence intensity from an independent experiment. LM2 cells from (E) following 3 days of DOX (1 μg/mL) induction (H), ****pshWDR5-1<0.0001, *pshWDR5-2=0.0230, LM2 cells following 3 days of control or OICR-9429 treatment at 20 μM (I), **p=0.0043, and LM2 cells following 3 days of MS67N or MS67 treatment at 2.5 μM (J), *p=0.0128, were tested. (n=3, one sample t test). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gene ontology results using the up-regulated gene set shared by three MDA-MB-231 organotropic sublines analyzed with Enrichr. (B–C) Volcano plot of genes differentially expressed after WDR5 knockdown in BrM3 (B) and BoM (C). Shared differentially expressed genes (DEGs) across all lines highlighted in dark red and RPs (RPL and RPS) highlighted in light red. The top 10 differentially expressed RPs are labeled. (D) RT-quantitative PCR (qPCR) validation of selected DEGs in MDA-MB-453 cells after control or OICR-9429 treatments at the indicated concentrations for 3 days. (E) RT-qPCR validation of selected DEGs in MDA-MB-453 cells after DMSO, 2.5 μM OICR-9429, MS67N, or MS67 treatment for 3 days. Significance determined by comparing each treatment to DMSO control (n=4, unpaired two-side Student’s t test). (F) Representative translation efficiency overtime using the indicated LM2 cell lines with continuous treatment of DOX (1 μg/mL). 100 μg/mL cycloheximide (CHX) was used as a control to completely block de novo protein translation. (G) Normalized translation rates of MDA-MB-453 cells following 3 days of control or 30 μM OICR-9429 treatment (n=4, one sample t test). Significance determined using one sample t test. *p<0.05; **p<0.001; ***p<0.001; ****p<0.0001.
+
 We then performed Enrichr analysis on both the up- or down-regulated DEGs and found that the most enriched and significant gene ontology in the shared down-regulated DEGs was cytoplasmic RPs (Figure 3C, Figure 3—figure supplement 1A, Supplementary file 1d). The combined score for this enrichment was 18-fold higher than the next enriched ontology for the shared down-regulated DEGs, demonstrating the significance of this WDR5 regulated pathway (Figure 3C, Supplementary file 1d). Notably, among the 474 down-regulated DEGs in LM2 cells, 51 (11%) encoded for RP genes (Figure 3D). A similar enrichment pattern was observed in BrM3 and BoM cells (Figure 3—figure supplement 1B and C). After inducing WDR5 knockdown with both hairpins for 3 days in LM2 cells, we confirmed down-regulation of all the tested RP genes. These included the top two down-regulated RPs, RPL7 and RPL31, which were consistently reduced by a ~50% (Figure 3E). We next tested whether WDR5 targeting with either OICR-9429 or MS67 would have similar effects on gene expression. Treatment of LM2 and MDA-MB-453 cells with 10 or 20 μM of OICR-9429 for 3 days decreased RPL7 and other RP genes as predicted (Figure 3F, Figure 3—figure supplement 1D). We next evaluated the gene-regulatory effect of MS67, which is a more effective inhibitor of WDR5. MS67 treatment at 2.5 μM significantly down-regulate several RP genes whereas OICR-9429 and MS67N did not have as significant of an effect at these lower concentrations (Figure 3G, Figure 3—figure supplement 1E). As down-regulation of RP genes expression implies a decrease in ribosome biogenesis, we also measured protein translation rates in TNBC cells where WDR5 was pharmacologically or genetically blocked. Accordingly, WDR5 silencing impaired global protein translation rates (Figure 3H, Figure 3—figure supplement 1F). OICR-9429 treatment or MS67-mediated degradation also caused decreases in protein translation in both LM2 and MDA-MB-453 cell lines (Figure 3I and J, Figure 3—figure supplement 1G). Taken together, our data demonstrates that either genetic or pharmacological inhibition of WDR5 can suppress RP gene expression and global translation in breast cancer cells.
 
-## The WDR5-binding motif (WBM)-binding sites are required for WDR5-dependent cell growth and RP gene expression
+### The WDR5-binding motif (WBM)-binding sites are required for WDR5-dependent cell growth and RP gene expression
 
 We next sought to identify which of WDR5’s multiple molecular function(s) is required for RP gene expression and breast cancer cell growth. WDR5 is canonically part of the mammalian KMT2A complex, which also consists of WRAD proteins (WDR5, RBBP5, ASH2L, and DPY30). Only KMT2A and RBBP5 interact directly with WDR5, and the complex has recently been elucidated by cryo-electron microscopy (Park et al., 2019; Figure 4A). WDR5 is a donut-shaped protein with two important binding pockets, WDR5-interacting (WIN) and WBM (Guarnaccia and Tansey, 2018; Figure 4A and B). KMT2A binding to the WIN site can be disrupted by point mutation F133A on WDR5 (Guarnaccia et al., 2021; Patel et al., 2008). On the other hand, RBBP5 and c-MYC have been shown to bind at the WBM site, which can be disrupted by point mutations N225A and V268E (Guarnaccia et al., 2021; Thomas et al., 2015b). In addition to the F133A, N225A, and V268E mutants, WDR5 mutants K7Q and 1-25Δ were recently shown to specifically impact ciliogenesis (Kulkarni et al., 2018).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig4-v2.jpg)
+
+**Figure 4.:** (A) WDR5 protein structure and key residues in the WIN and WBM sites that interact with binding partners. (B) Schematic of WDR5 with the indicated mutation sites. (C) Western blot analysis of the indicated proteins in LM2 inducible shWDR5 cells over-expressing wild-type (WT) WDR5 or WDR5 mutants. Cells were collected after 3 days of control or doxycycline (DOX) (1 μg/mL) induction. (D) Western blot analysis of the indicated proteins after immunoprecipitation using anti-Flag antibody in the LM2 shWDR5 cells over-expressing green fluorescent protein (GFP), WT WDR5, or WDR5 mutants. (E–F) Colony formation assays of cells expressing GFP, WT WDR5, or WDR5 mutants in inducible shControl (shCtrl) or shWDR5 cell lines after 9 days of control or DOX treatment. Representative images (E) and quantification (F) are shown. DOX-treated wells were compared to their respective controls for each cell line (n=3, unpaired two-side Student’s t test). pWT = 0.4047, ***pGFP = 0.0002, p1-25Δ=0.0854, *pK7Q=0.0104, pF133A=0.8448, **pN225A=0.0014, and **pV268E=0.0027. (G) RT-quantitative PCR analysis of the indicated mRNAs in LM2 from (E) induced with DOX (1 μg/mL) for 3 days. Significance determined by comparing each treatment to WT control (n=4, unpaired two-side Student’s t test). For RPL9, ****pGFP <0.0001, ****p1-25Δ<0.0001, ***pK7Q=0.0002, ****pN225A<0.0001, and ***pV268E=0.0006; for RPL31, **pGFP = 0.0045, ***p1-25Δ=0.0007, **pK7Q=0.0027, **pN225A=0.0027, and *pV268E=0.0307; for RPS14, ****pGFP <0.0001, ****p1-25Δ<0.0001, ****pK7Q<0.0001, ****pN225A<0.0001, and ***pV268E=0.0005. For gel source data, see Figure 4—source data 1 and Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Chromatin immunoprecipitation (ChIP)-quantitative PCR data of the indicated over-expression condition using primers for either the promoter or 800 bp downstream control at the RPL7 (left) or RPL31 (right) gene locus. ChIP was performed using the anti-Flag to pull down WDR5 (A) and H3K4me3 (B). Significance determined by comparing promoter enrichment of WT to other over-expressing conditions using unpaired two-tailed Student’s t test.
 
 Based on this information, we performed a structure function analysis of WDR5 by constitutively expressing shRNA-resistant wild-type (WT) WDR5 or the aforementioned WDR5 mutants with C-terminal 3XFlag-tag in LM2 cells, where endogenous WDR5 was concomitantly reduced. Following DOX induction, we confirmed ectopic WDR5 (mutant or WT) expression in the indicated mutant cell lines, whereas endogenous WDR5 levels were significantly repressed (Figure 4C). Using co-immunoprecipitation (Co-IP) assays, we observed that the F133A but not N25A or V268E mutations abrogate the binding of WDR5 to KMT2A. In contrast, mutants N225A and V268E but not F133A reduced the binding of WDR5 to RBBP5 by more than 50% as expected (Figure 4D). We next determined which WDR5 interacting site is required for cell growth. Consistently, shWDR5 cells expressing GFP control had severely impacted colony formation, while expression of WT WDR5 rescued this growth defect (Figure 4E and F). The N-terminal mutant 1-25Δ or K7Q has either a similar or slightly lower ability to rescue WDR5-dependent cell growth, respectively. Surprisingly, the WIN site mutant F133A was able to rescue the colony formation phenotype, while neither N225A nor V268E effectively rescued cell growth. These results suggest that the WBM but not the WIN-binding ability of WDR5 is required for WDR5-dependent growth of TNBC cells.
 
 We next tested whether the different WDR5 mutants affected WDR5 binding to the promoter of RP genes and alter H3K4me3 levels in LM2 cells. Chromatin immunoprecipitation and qPCR (ChIP-qPCR) analysis showed that the F133A mutant binds to the promoter of RPL7 and RPL31 less efficiently, while N225A and V268E mutants bind chromatin similarly as the WT protein (Figure 4—figure supplement 1A). Surprisingly, all mutants maintained a similar level of H3K4me3 (Figure 4—figure supplement 1B), suggesting that WDR5 binding to chromatin is not required for maintaining H3K4me3 at the RP gene promoters tested in this context. More importantly, the N-terminal and F133A mutants rescued the expression of RP genes, whereas the N225A and V268E mutants did not (Figure 4G). Altogether, these data suggest that, in LM2 cells, WBM but not WIN binding by WDR5 is important for the maintenance of RP gene expression.
 
-## Metastatic cell growth and lung colonization do not require the KMT2 complex components
+### Metastatic cell growth and lung colonization do not require the KMT2 complex components
 
 The surprising observation that WIN binding by WDR5 is dispensable for breast cancer cell growth prompted us to directly test the requirement for the canonical KMT2 complex components in LM2 cells (Figure 5A). We first confirmed efficient knockdown of seven complex components (KMT2A, RBBP5, DPY30, HCFC1, CXXC1, WDR82, and BOD1L1), each with two independent shRNA after 3 days of DOX induction (Figure 5B and C). We first directly asked if KMT2A is required for LM2 cell growth and lung metastasis as KMT2A is a catalytic subunit of the H3K4 methyltransferase complex and was seemingly depleted in our screen (Figure 1B and C). However, depleting KMT2A with multiple shRNAs did not reproducibly affect in vitro colony formation and in vivo lung metastasis growth (Figure 5D–F). This result is also consistent with the phenotype observed from the F133A mutant and suggests that KMT2A is dispensable for WDR5-dependent cell growth. We next assessed whether RBBP5, DPY30, and HCFC1 are required for RP gene expression and cell growth. RP gene expression was not changed after knockdown of RBBP5, DPY30, or HCFC1 (Figure 5G). Furthermore, most of these KMT2 complex components are not required for the growth of LM2 cells (Figure 5H and I). The exception was upon knockdown of HCFC1 which resulted in a 40% decrease in colony formation (Figure 5H and I), likely due to the role of HCFC1 in cell cycle control (Antonova et al., 2019; Xiang et al., 2020). While RBBP5, DPY30, and HCFC1 are common to the KMT2 complexes, CXXC1 and WDR82 are distinct to the SET1A/B complexes, and BOD1L1 is specific to the SET1B complex (Figure 5A). Thus, we asked whether WDR5 regulates the growth phenotype specifically through SET1A/B complexes by perturbing CXXC1, WDR82, or BOD1L1. However, knockdown of these components also did not decrease RP gene expression and colony formation (Figure 5G–I). Therefore, the KMT2 complexes are not the major effectors of WDR5-dependent metastatic cell growth in the LM2 model.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic of subunit composition of several KMT2 complexes. (B) Western blot analyses of the indicated proteins in LM2 cells transduced with inducible shRNA targeting KMT2A, RBBP5, DPY30, HCFC1, CXXC1, and WDR82. Cells were collected after 3 days of doxycycline (DOX) (1 μg/mL) treatment. (C) RT-quantitative PCR (qPCR) analysis of BOD1L1 in LM2 cells transduced with two independent hairpins targeting BOD1L1. Cells were collected after 3 days of DOX treatment (n=4, unpaired two-side Student’s t test). (D–E) Colony formation assay of LM2 shCtrl or shKMT2A cells (shKMT2A-1 and shKMT2A-2) after 9 days of treatment with control or DOX. Representative images (D) and quantification (E) are shown (n=3, unpaired two-side Student’s t test). (F) Normalized bioluminescence unit (BLU) signals of lung metastasis at day 66 of mice injected intravenously with LM2 cells from (B) and fed with DOX chow. The data represent mean ± SEM. Significance determined using unpaired two-tailed Mann–Whitney test. ns, not significant; p=0.2857 (shCtrl versus shKMT2A-1) and p=0.5556 (shCtrl versus shKMT2A-2). (G) RT-qPCR analysis of the noted RP genes in LM2 cells transduced with the indicated inducible shRNAs. Cells were collected after 3 days of DOX treatment. Significance determined by comparing each treatment to shCtrl. (H–I) Colony formation assay of LM2 cells from (G) after 9 days of either control or DOX treatment. Representative images (H) and quantification (I) are shown (n=3, unpaired two-side Student’s t test). ***p=0.0005 (shHCFC1 #1 −DOX versus shHCFC1 #1 +DOX) and **p=0.0039 (shHCFC1 #2 −DOX versus shHCFC1 #2 +DOX). For gel source data, see Figure 5—source data 1.Figure 5—source data 1.Figure 5B.
+**Figure 5.:** (A) Schematic of subunit composition of several KMT2 complexes. (B) Western blot analyses of the indicated proteins in LM2 cells transduced with inducible shRNA targeting KMT2A, RBBP5, DPY30, HCFC1, CXXC1, and WDR82. Cells were collected after 3 days of doxycycline (DOX) (1 μg/mL) treatment. (C) RT-quantitative PCR (qPCR) analysis of BOD1L1 in LM2 cells transduced with two independent hairpins targeting BOD1L1. Cells were collected after 3 days of DOX treatment (n=4, unpaired two-side Student’s t test). (D–E) Colony formation assay of LM2 shCtrl or shKMT2A cells (shKMT2A-1 and shKMT2A-2) after 9 days of treatment with control or DOX. Representative images (D) and quantification (E) are shown (n=3, unpaired two-side Student’s t test). (F) Normalized bioluminescence unit (BLU) signals of lung metastasis at day 66 of mice injected intravenously with LM2 cells from (B) and fed with DOX chow. The data represent mean ± SEM. Significance determined using unpaired two-tailed Mann–Whitney test. ns, not significant; p=0.2857 (shCtrl versus shKMT2A-1) and p=0.5556 (shCtrl versus shKMT2A-2). (G) RT-qPCR analysis of the noted RP genes in LM2 cells transduced with the indicated inducible shRNAs. Cells were collected after 3 days of DOX treatment. Significance determined by comparing each treatment to shCtrl. (H–I) Colony formation assay of LM2 cells from (G) after 9 days of either control or DOX treatment. Representative images (H) and quantification (I) are shown (n=3, unpaired two-side Student’s t test). ***p=0.0005 (shHCFC1 #1 −DOX versus shHCFC1 #1 +DOX) and **p=0.0039 (shHCFC1 #2 −DOX versus shHCFC1 #2 +DOX). For gel source data, see Figure 5—source data 1.
 
-## Inhibition of WDR5 and mTOR cooperatively reduces translation and TNBC growth
+### Inhibition of WDR5 and mTOR cooperatively reduces translation and TNBC growth
 
 Hyperactivation of growth signaling pathways can increase protein synthesis, and inhibition of translation is being actively explored as a therapeutic avenue for cancer treatment (Bhat et al., 2015; Grzmil and Hemmings, 2012). Several mTOR inhibitors have been approved or are being tested in clinal trials, including the first generation mTOR inhibitors, everolimus and temsirolimus, and the second generation mTOR inhibitor, OSI-027 (Zheng and Jiang, 2015). Everolimus and temsirolimus are rapalogs that allosterically inhibit mTORC1, while OSI-027 is an ATP-competitive inhibitor that inhibits both mTORC1 and mTOCR2 (Zheng and Jiang, 2015). Everolimus has been approved to treat post-menopausal women with advanced hormone receptor positive, HER2 negative breast cancer in combination with an aromatase inhibitor exemestane (Baselga et al., 2012). Because cancer cells could develop resistance to inhibitors of protein translation and this class of drugs may not directly cause tumor cell death (Rozengurt et al., 2014; Zheng and Jiang, 2015), identifying other regimens which synergize with mTOR inhibitors is warranted.
 
 Interestingly, during the course of titrating mTOR inhibitors in our cell model, we noted that the treatment with OSI-027 or everolimus alone caused an up-regulation of RP gene expression (Figure 6—figure supplement 1A-D), which may be due to an adaptive feedback effect on proteostasis following mTOR inhibition. Importantly, treatment with the WDR5 inhibitor OICR-9429 partially or completely blocked this adaptive induction of RP genes (Figure 6—figure supplement 1A and B). Moreover, while mTOR inhibitors were confirmed to down-regulate phosphorylated S6 protein kinase (S6K) and translation initiation factor 4E binding protein 1 (4E-BP1), WDR5 inhibition reduced RP genes expression and translation independently of this signaling pathway (Figure 6A, Figure 6—figure supplement 1E and F).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot analysis of the indicated proteins in LM2 cells treated for 3 days with or without 20 μM OICR-9429 in combination with control, 2 μM OSI-027, 2.5 μM temsirolimus, or 5 nM everolimus. (B) Western blot analysis of the indicated proteins in MDA-MB-453 treated for 3 days with or without 30 μM OICR-9429 in combination with control, 0.5 μM OSI-027, or 1 nM everolimus. (C) Normalized translational rates in LM2 cells from (A) (n=3, one sample t test). *p=0.0166 (DMSO versus OICR-9429), ***p=0.0001 (DMSO versus OSI-027), ** p=0.0099 (DMSO versus OICR-9429 +OSI-027), **p=0.0080 (DMSO versus everolimus), **p=0.0047 (DMSO versus OICR-9429+), *p=0.0232 (OSI-027 versus OICR-9429 +OSI-027), and *p=0.00352 (everolimus versus OICR-9429 +everolimus). (D) Normalized translational rates in MDA-MB-453 cells from (B) (n=3, one sample t test). *p=0.0107 (DMSO versus OICR-9429), ****p<0.0001 (DMSO versus OSI-027), ****p<0.0001 (DMSO versus OICR-9429 +OSI-027), **p=0.0012 (DMSO versus everolimus), ***p=0.0005 (DMSO versus OICR-9429 +everolimus), ****p<0.0001 (OSI-027 versus OICR-9429 +OSI-027), and *p=0.0370 (everolimus versus OICR-9429 +everolimus). (E–F) Colony formation assay of LM2 treated for 8 days with or without 20 μM OICR-9429 in combination with control or 2 μM OSI-027. Representative images (E) and quantification (F) are shown. ****p<0.0001 (DMSO versus OICR-9429), ****p<0.0001 (DMSO versus OSI-027), ****p<0.0001 (DMSO versus OICR-9429 +OSI-027), ****p<0.0001 (OICR-9429 versus OICR-9429 +OSI-027), and *p=0.0233 (OSI-027 versus OICR-9429 +OSI-027). (G–H) Colony formation assay of LM2 cells treated for 8 days with or without 20 μM OICR-9429 in combination with control or 5 nM everolimus. Representative images (G) and quantification (H) are shown. **p=0.0043 (DMSO versus OICR-9429), **p=0.0011 (DMSO versus everolimus), ***p=0.0004 (DMSO versus OICR-9429 +everolimus), **p=0.0042 (OICR-9429 versus OICR-9429 +everolimus), and *p=0.0272 (everolimus versus OICR-9429 +everolimus). (I–J) Colony formation assay of MDA-MB-453 treated for 10 days with or without 30 μM OICR-9429 in combination with control or 0.5 μM OSI-027. Representative images (I) and quantification (J) are shown. **p=0.0018 (DMSO versus OICR-9429), ***p=0.0009 (DMSO versus OSI-027), ****p<0.0001 (DMSO versus OICR-9429 +OSI-027), ****p<0.0001 (OICR-9429 versus OICR-9429 +OSI-027), and *p=0.011 (OSI-027 versus OICR-9429 +OSI-027). (K–L) Colony formation assay of MDA-MB-453 cells treated for 10 days with or without 30 μM OICR-9429 in combination with control or 1 nM everolimus. Representative images (K) and quantification (L) are shown (n=3, unpaired two-side Student’s t test). ***p=0.0002 (DMSO versus OICR-9429), ***p=0.0002 (DMSO versus everolimus), ****p<0.0001 (DMSO versus OICR-9429 +everolimus), ****p<0.0001 (OICR-9429 versus OICR-9429 +everolimus), and ***p=0.0003 (everolimus versus OICR-9429 +everolimus). Calculation of coefficients of drug interaction (CDIs) is described in Materials and methods section. Significant synergy is labeled with (#). For gel source data, see Figure 6—source data 1 and Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RT-quantitative PCR (qPCR) of selected differentially expressed genes (DEGs) in LM2 after DMSO, 2 μM OSI-027, 20 μM OICR-9429, or combined treatment for 3 days. (B) RT-qPCR of selected DEGs in MDA-MB-453 after DMSO, 0.5 μM OSI-027, 30 μM OICR-9429, or combined treatment for 3 days. (C) RT-qPCR of selected DEGs in LM2 after DMSO or 5 nM everolimus treatment for 3 days. (D) RT-qPCR of selected DEGs in MDA-MB-453 after DMSO or 1 nM everolimus treatment for 3 days. Significance determined by comparing each treatment to DMSO control (n=4, unpaired two-side Student’s t test). (E) Western blot analysis of the indicated proteins in LM2 shCtrl, shWDR5-1, and shWDR5-2 with or without hairpin induction by doxycycline (DOX) (1 μg/mL) for 3 days. (F) Western blot analysis of indicated proteins in LM2 shWDR5-1 with or without DOX (1 μg/mL) induction in combination with 3 days of control, 2 μM OSI-027, or 5 nM everolimus treatment. (G) Normalized translational rates of LM2 shWDR5 cells from (A) following 3 days of control, 2 μM OSI-027, or 5 nM everolimus treatment (n=3, one sample t test). (H–I) Colony formation assay of LM2 shWDR5 with or without hairpin induction by DOX in combination with control or 2 μM OSI-027 treatment for 8 days. Representative images (H) and quantification (I) are shown. (J–K) Colony formation assay of LM2 shWDR5 cells with or without hairpin induction by DOX in combination with control or 5 nM everolimus treatment for 8 days. Representative images (J) and quantification (K) are shown. (L–M) Colony formation assay of LM2 with or without 20 μM OICR-9429 in combination with control or 2.5 μM temsirolimus treatment for 8 days. Representative images (M) and quantification (L) are shown (n=3, unpaired two-side Student’s t test). *p<0.05; **p<0.001; ***p<0.001; ****p<0.0001. Calculation of coefficients of drug interaction (CDIs) is described in Materials and methods section. Significant synergy is labeled with (#). For gel source data, see Figure 6—figure supplement 1—source data 1 and Figure 6—figure supplement 1—source data 2.
+
 Based on these results, we postulated that the inhibition of WDR5 and mTOR could cooperatively decrease TNBC protein translation, cell growth, and survival. As such we first treated LM2 and MDA-MB-453 cells for 3 days using OICR-4129 or the three mTOR inhibitors, everolimus, temsirolimus, and OSI-027. The levels of phosphorylated S6K and translation initiation factor 4E-BP1 were decreased in both cell lines after everolimus or temsirolimus treatment, while OSI-027 treatment only showed strong inhibition of mTOR signaling in the MDA-MB-453 cells (Figure 6A and B). Similar mTOR signaling inhibition was observed in LM2 cells expressing shWDR5, confirming that mTOR regulation is independent of WDR5 (Figure 6—figure supplement 1F). Next, we compared the global translation rates of LM2 or MDA-MB-453 cells, when WDR5 was inhibited genetically or pharmacologically in combination with mTOR inhibitors OSI-027 or everolimus. The overall translation was decreased when combining WDR5 inhibition or WDR5 knockdown with mTOR inhibition (Figure 6C and D, Figure 6—figure supplement 1G). This combinatorial effect on protein translation correlated with an additive inhibition of clonogenic outgrowth (Figure 6—figure supplement 1H–1K). Moreover, both OSI-027 and everolimus act synergistically with WDR5 inhibition in both LM2 and MDA-MB-453 cells (Figure 6E-L), while temsirolimus showed an additive effect in LM2 cells (Figure 6—figure supplement 1L and M). We next tested the effects of MS67-mediated WDR5 degradation in combination with mTOR inhibition. MS67 treatment alone also did not affect mTOR signaling (Figure 7A and B). Interestingly, MS67 acts synergistically with both OSI-027 and everolimus in inhibiting translation in MDA-MB-453 cells (Figure 7C). Furthermore, we found that 5 µM MS67 is more effective than 20 µM OICR-9429 at inhibiting colony outgrowth when combined with either OSI-027 or everolimus in LM2 cells (compare Figure 6E–H to Figure 7D–G). Importantly, we found that OSI-027 had better synergistic effects (based on coefficients of drug interactions) with WDR5 inhibition when compared to everolimus (Figure 7D–G), suggesting that mTORC2 could be critical for clonogenic outgrowth in the context of WDR5 inhibition. Moreover, we observed increased cleaved caspase 3 level in the combined treatment group in MDA-MB-453 cells (Figure 6B), suggesting the combination of WDR5 inhibition and OSI-027 induces apoptosis.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78163/elife-78163-fig7-v2.jpg)
 
-**Figure 7.:** (A) Western blot analysis of the indicated proteins in LM2 cells treated for 3 days with 2.5 μM MS67N or MS67 in combination control, 2 μM OSI-027, or 5 nM everolimus. (B) Western blot analysis of the indicated proteins in MDA-MB-453 cells treated for 3 days with 2.5 μM MS67N or MS67 in combination with control, 0.5 μM OSI-027, or 1 nM everolimus. (C) Normalized translational rates in MDA-MB-453 cells from (B) (n=3, one sample t test). *p=0.0209 (MS67N versus MS67), ****p<0.0001 (MS67N versus MS67N +OSI-027), ****p<0.0001 (MS67N versus MS67 +OSI-027), ****p<0.0001 (MS67N versus MS67N +everolimus), ****p<0.0001 (MS67N versus MS67 +everolimus), ****p<0.0001(MS67N +OSI-027 versus MS67 +OSI-027), and ****p<0.0001(MS67N +everolimus versus MS67 +everolimus). (D–E) Colony formation assay of LM2 cells treated for 9 days with 5 μM MS67N or MS67 in combination with control or 2 μM OSI-027. Representative images (D) and quantification (E) are shown. ****p<0.0001 (MS67N versus MS67), ****p<0.0001 (MS67N versus MS67N+OSI-027), ****p<0.0001 (MS67N versus MS67 +OSI-027), ***p=0.0004 (MS67 versus MS67 +OSI-027), and ****p<0.0001 (MS67N+OSI-027 versus MS67 +OSI027). (F–G) Colony formation assay of LM2 cells with 5 μM MS67N or MS67 in combination with control or 5 nM everolimus for 9 days. Representative images (F) and quantification (G) are shown. ***p=0.0005 (MS67N versus MS67), ***p=0.0004 (MS67N versus MS67N +everolimus), ***p=0.0002 (MS67N versus MS67 +everolimus), ***p=0.0003 (MS67 versus MS67 +everolimus), and ***p=0.0008 (MS67N +everolimus versus MS67 +everolimus). (n=3, unpaired two-side Student’s t test). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Calculation of coefficients of drug interaction (CDIs) is described in Materials and methods section. Significant synergy is labeled with (#). For gel source data, see Figure 7—source data 1 and Figure 7—source data 2.Figure 7—source data 1.Figure 7A.Figure 7—source data 2.Figure 7B.
+**Figure 7.:** (A) Western blot analysis of the indicated proteins in LM2 cells treated for 3 days with 2.5 μM MS67N or MS67 in combination control, 2 μM OSI-027, or 5 nM everolimus. (B) Western blot analysis of the indicated proteins in MDA-MB-453 cells treated for 3 days with 2.5 μM MS67N or MS67 in combination with control, 0.5 μM OSI-027, or 1 nM everolimus. (C) Normalized translational rates in MDA-MB-453 cells from (B) (n=3, one sample t test). *p=0.0209 (MS67N versus MS67), ****p<0.0001 (MS67N versus MS67N +OSI-027), ****p<0.0001 (MS67N versus MS67 +OSI-027), ****p<0.0001 (MS67N versus MS67N +everolimus), ****p<0.0001 (MS67N versus MS67 +everolimus), ****p<0.0001(MS67N +OSI-027 versus MS67 +OSI-027), and ****p<0.0001(MS67N +everolimus versus MS67 +everolimus). (D–E) Colony formation assay of LM2 cells treated for 9 days with 5 μM MS67N or MS67 in combination with control or 2 μM OSI-027. Representative images (D) and quantification (E) are shown. ****p<0.0001 (MS67N versus MS67), ****p<0.0001 (MS67N versus MS67N+OSI-027), ****p<0.0001 (MS67N versus MS67 +OSI-027), ***p=0.0004 (MS67 versus MS67 +OSI-027), and ****p<0.0001 (MS67N+OSI-027 versus MS67 +OSI027). (F–G) Colony formation assay of LM2 cells with 5 μM MS67N or MS67 in combination with control or 5 nM everolimus for 9 days. Representative images (F) and quantification (G) are shown. ***p=0.0005 (MS67N versus MS67), ***p=0.0004 (MS67N versus MS67N +everolimus), ***p=0.0002 (MS67N versus MS67 +everolimus), ***p=0.0003 (MS67 versus MS67 +everolimus), and ***p=0.0008 (MS67N +everolimus versus MS67 +everolimus). (n=3, unpaired two-side Student’s t test). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Calculation of coefficients of drug interaction (CDIs) is described in Materials and methods section. Significant synergy is labeled with (#). For gel source data, see Figure 7—source data 1 and Figure 7—source data 2.
 
 Collectively, our data identified WDR5-mediated protein translation as a potential vulnerability, which could be therapeutically leveraged in TNBC cells treated with first- or second-generation mTOR inhibitors.
 
@@ -128,74 +168,462 @@ Finally, we discovered that multiple mTOR inhibitors can act synergistically wit
 
 ## Materials and methods
 
-## Antibodies and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>IP (1:50), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vinculin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>V9131</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>T5168</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WDR5 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#13105</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RBBP5 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#13171</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KMT2A/MLL1-C (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#14197</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CXXC1 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#12585</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HCFC1 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#69690</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WDR82 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#99715</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho p70S6K (Thr389) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9202</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho 4E-BP1 (Thr37/46) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2855</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-4E-BP1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9644</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase 3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9661</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DPY30 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A304-296A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho S6 (Ser240/244) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#5364</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S6 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2217</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-M2 Flag (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#14793</td>
+      <td>Chromatin immunoprecipitation (ChIP) (10 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab8580</td>
+      <td>ChIP (10 µg)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pINDUCER-10 (plasmid)</td>
+      <td>Meerbrey et al., 2011</td>
+      <td></td>
+      <td>Inducible shRNA knockdown with red fluorescent protein reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pINDUCER-10-Blasticidin (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Version of pINDUCER-10 with blasticidin selection marker</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFlag-CMV-14-WDR5</td>
+      <td>Addgene</td>
+      <td>#59974</td>
+      <td>WDR5 plasmid used for subcloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR-211</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#12536017</td>
+      <td>Used for cloning WDR5 into expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-PSK-hygro-DEST</td>
+      <td>Addgene</td>
+      <td>#19066</td>
+      <td>Used for cloning WDR5 into expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-231</td>
+      <td>ATCC</td>
+      <td>HTB-26</td>
+      <td>MDA-MB-231 expressing Luciferase</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-231-LM2</td>
+      <td>Joan Massagué lab, Memorial Sloan Kettering Cancer Center</td>
+      <td></td>
+      <td>Lung metastatic derivative of MDA-MB-231</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-231-BoM</td>
+      <td>Joan Massagué lab, Memorial Sloan Kettering Cancer Center</td>
+      <td></td>
+      <td>Bone metastatic derivative of MDA-MB-231</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-231-BrM3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Brain metastatic derivative of MDA-MB-231</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCC1143</td>
+      <td>ATCC</td>
+      <td>CRL-2321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-453</td>
+      <td>ATCC</td>
+      <td>HTB-131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MCF7</td>
+      <td>ATCC</td>
+      <td>HTB-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>T47D</td>
+      <td>ATCC</td>
+      <td>HTB-133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-361</td>
+      <td>ATCC</td>
+      <td>HTB-27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>UACC893</td>
+      <td>ATCC</td>
+      <td>CRL-1902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>BT474</td>
+      <td>ATCC</td>
+      <td>HTB-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SKBR3</td>
+      <td>ATCC</td>
+      <td>HTB-30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>4T1</td>
+      <td>ATCC</td>
+      <td>CRL-2539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Puromycin</td>
+      <td>ThermoFischer Scientific</td>
+      <td>A1113802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Blasticidin</td>
+      <td>ThermoFischer Scientific</td>
+      <td>A1113902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Doxycycline</td>
+      <td>ThermoFischer Scientific</td>
+      <td>#446060050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>MS67</td>
+      <td>Yu et al., 2021</td>
+      <td></td>
+      <td>WDR5 degrader</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>MS67N</td>
+      <td>Yu et al., 2021</td>
+      <td></td>
+      <td>WDR5 degrader control</td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>OICR-9429</td>
+      <td>Sigma</td>
+      <td>SML1209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>OSI-027</td>
+      <td>Cayman Chemical</td>
+      <td>#17379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Everolimus</td>
+      <td>Cayman Chemical</td>
+      <td>#11597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Temsirolimus</td>
+      <td>Cayman Chemical</td>
+      <td>#11590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>R studio</td>
+      <td>R studio</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>STAR</td>
+      <td>STAR</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GENCODEv96</td>
+      <td>GENCODEv96</td>
+      <td>RRID:SCR_014966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>PyMol</td>
+      <td>PyMol</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay and kit</td>
+      <td>Cell proliferation reagent WST-1</td>
+      <td>Roche</td>
+      <td>#11644807001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay and kit</td>
+      <td>TruSeq Stranded mRNA Library Prep</td>
+      <td>Illumina</td>
+      <td>#20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay and kit</td>
+      <td>High-capacity cDNA Reverse Transcription Kit</td>
+      <td>ThermoFisher</td>
+      <td>#4368813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay and kit</td>
+      <td>Click-iT Cell Reaction Buffer Kit</td>
+      <td>ThermoFisher</td>
+      <td>C10269</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and chemicals
 
 For Co-IP and western blots, the following antibodies were obtained commercially: mouse anti-Flag (M2, F1804), mouse anti-vinculin (V9131), and mouse anti-tubulin (T5168) (Sigma, St. Louis, MO); rabbit anti-WDR5 (#13105), rabbit anti-RBBP5 (#13171), rabbit anti-KMT2A/MLL1-C (#14197), rabbit anti-CXXC1(#12585), rabbit anti-HCFC1 (#69690), rabbit anti-WDR82 (#99715), rabbit anti-phospho p70 S6K (Thr389) (#9205), rabbit anti-p70 S6K (#9202), rabbit anti-phospho 4E-BP1 (Thr37/46) (#2855), rabbit anti-4E-BP1 (#9644), and anti-cleaved caspase 3 (#9661) (Cell Signaling Technology, Danvers, MA, USA); rabbit anti-DPY30 (A304-96A) (Bethyl Laboratories, Montgomery, TX, USA).
 
 For drug treatment experiments, WDR5 inhibitor OICR-9429 (Sigma, SML1209 and Cayman Chemical, #16095) and control OICR-0547 (Structural Genomics Consortium), and mTOR inhibitors, OSI-027 (Cayman Chemical, #17379), everolimus (Cayman Chemical, #11597), and temsirolimus (Cayman Chemical, #11590) were used. Compounds of WDR5 degrader MS67 and negative control MS67N were synthesized in Jian Jin’s lab.
 
-## Plasmids and virus generation
+### Plasmids and virus generation
 
 Frozen bacterial stocks harboring the shRNA library were generated by the Westbrook lab. pGIPZ plasmid harboring hairpins and barcodes were digested with Xho I and Mlu I and subcloned into the pINDUCER10 plasmid. The list of hairpin sequences and shRNA knockdown efficiency is available in Supplementary file 1a. For cloning of the WDR5 mutants, BP (atttB x attP) cloning primers were designed against p3XFlag-CMV-14-WDR5. Two-step PCR was performed to generate shRNA resistant mutant WDR5. Briefly, two sets of primers were designed such that they overlap at the site of mutagenesis. The product from the PCR was then used for BP (Thermo Fisher, # 11789020) or LR (attL x attR, Thermo Fisher, #11791020) reaction into pDONR-211 or pLenti-PSK-hygro-DEST. p3XFlag-CMV-14-WDR5 was a gift from Debu Chakravarti (Addgene, #59974). A list of cloning oligos is available in Supplementary file 1e.
 
 For virus generation, HEK293T cells were transfected with 1.2 µg each of VSV-G, TAT, RAII, and HyPM packaging plasmids along with 11.2 µg of lentiviral plasmid. OptiMEM and TransIT-293 Transfection Reagent (Mirus, MIR2700) were used following manufacturer protocol. Viruses were collected at 48 hr and 72 hr and filtered through a 0.45 μm filter.
 
-## Cell culture and stable cell lines generation
+### Cell culture and stable cell lines generation
 
 MDA-MB-231 and its metastatic derivatives, MDA-MB-231-LM2 (LM2), MDA-MB-231-BoM (BoM) and MDA-MB-231-BrM3 (BrM3) breast cancer cells and HEK293T cells were cultured in Dulbecco’s Modified Eagle Medium supplemented with 10% fetal bovine serum and 100 U/mL penicillin and 100 µg/mL streptomycin. LM2 and BoM have been previously described and were obtained from J. Massagué (Memorial Sloan Kettering Cancer Center, New York) (Minn et al., 2005; Kang et al., 2003). BrM3 is a metastatic derivative generated by subjecting MDA-MB-231-BrM2 cells to one round of in vivo selection (Bos et al., 2009). HCC1143, MDA-MB-453, MCF7, T47D, MDA-MB-361, UACC893, BT474, SKBR3, and 4T1 breast cancer cells were cultured in RPMI1640 supplemented with 10% fetal bovine serum, 100 U/mL penicillin, and 100 µg/mL streptomycin. Cells were periodically tested for mycoplasma contamination and were negative, and they were authenticated using short tandem repeat profiling with GenePrint 10 system (Promega, #B9510).
 
 For generation of cell lines, viruses harboring pINDUCER10-puromycin or pINDUCER10-blasticidin constructs were titrated using the target cell lines. Cells were infected at an multiplicity of infection of 1 and selected using either 0.8 µg/mL puromycin or 10 µg/mL blasticidin. For generation of cell lines harboring WDR5 mutants, optimal viral dose was determined empirically by western blot visualization to assess equal expression of WDR5 across mutant cell lines. LM2 cells with re-introduction of WDR5 mutants were selected with 800 µg/mL hygromycin.
 
-## Minipool generation for in vitro and in vivo screening
+### Minipool generation for in vitro and in vivo screening
 
 Minipools were created by equally mixing 8–10 individual LM2 cell lines harboring pINDUCER10 hairpins targeting each epigenetic modifier together with two LM2 positive control cell lines (shBUD31 and shSAE2) and two negative control cell lines (shCHEK1 and shSTAMBP). For in vitro screening, minipool cells were plated into 10 cm dishes with or without 1 μg/mL of DOX. A portion of minipool cells were collected as day 0 samples as the controls. Every 2 days, the cells were pelleted, and all samples were proceeded to gDNA isolation and gDNA qPCR. For in vivo screening, 5×105 minipool cells were injected into nude mice through tail vein. Lung metastases were monitored weekly with in vivo live imaging. At the end point, the mice were sacrificed, and the lung tissue was harvested for gDNA isolation and gDNA qPCR. For the screening readout analyses, all qPCR results were normalized to the value from day 0. The fold change was obtained from +DOX/−DOX for both in vitro and in vivo screen. A table of complete results of both in vivo and in vitro screens is available in Supplementary file 1b.
 
-## Animal studies
+### Animal studies
 
 Female athymic Nude-Foxn1nu immunodeficient (6–8 weeks old) mice (Envigo) were used for lung-metastasis experiments with human cell lines. For in vivo screening, 5×105 cells were injected via tail vein in 0.1 mL saline. For WDR5 in vivo validation experiment, cells were treated with DOX for 3 days prior to injection, and 2×105 cells were injected via tail vein in 0.1 mL saline. Mice were placed on DOX chow (Envigo, TD.01306) 5 days prior to injection. All the in vivo metastasis signals, including lung metastasis and whole-body metastasis, were monitored by weekly bioluminescence imaging with an IVIS system coupled to Living Image acquisition and analysis software (Xenogen). Luminescence signals were quantified at the indicated time points as previously described. Values of luminescence photon flux of each time point were normalized to the value obtained immediately after xenografting (day 0).
 
 For mammary fat pad tumor assays, control and shWDR5-1 LM2 cells (1×106) were resuspended in 0.1 mL of saline and matrigel (Corning, #356231) mix and then injected into mammary fat pad (the fourth mammary glands) of non-obese diabetic-severe combined immunodeficiency (NOD-SCID) mice (6 weeks old). Tumor were monitored every 7 days by measuring the tumor length (L) and width (W). Tumor volume was calculated as V=L×W2/2. Mice were euthanized when primary tumors reached 1000 mm3. All animal procedures have been approved by the Institutional Animal Care and Use Committee of Yale University under animal protocol 2021–11286.
 
-## Lung tissue harvest and gDNA isolation
+### Lung tissue harvest and gDNA isolation
 
 Mice were sacrificed and whole body perfused with 10 mL of PBS. For gDNA isolation, the harvested lungs were placed into a microcentrifuge tube and snap frozen with liquid nitrogen. The frozen tissues were then placed into an aluminum block on dry ice. Each tube of the lung tissue was allowed to thaw enough for further mincing with surgical scissors and then refrozen by dipping them in liquid nitrogen bath. This process was repeated two to three times until no visible tissue chunk was observed. 60 mg of homogenized tissue was then aliquoted out and processed with the QIAmp DNA mini kit (Qiagen 51304) following manufacturer’s protocols.
 
-## Western blot and Co-IP
+### Western blot and Co-IP
 
 Cells were lysed in 1× high salt lysis buffer (50 mM Tris-HCl pH 8, 320 mM NaCl, 0.1 mM EDTA, 0.5% NP-40, and 10% glycerol) or [radioimmunoprecipitation assay (RIPA) buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1% sodium deoxycholate, and 0.1% sodium dodecyl sulfate (SDS)) supplemented with 1× protease inhibitor (Roche cOmplete 11836153001). Cell lysates were vortexed and centrifuged, and the supernatants were subjected to protein quantification by Bradford reagent (Bio-Rad 5000006) and sample preparation by sample buffer (10% glycerol, 50 mM Tris-HCl [pH 6.8], 2% SDS, 0.01% bromophenol blue, and 8% β-mercaptoethanol). Protein samples were resolved by SDS-PAGE according to the standard protocol and transferred onto 0.45 μm nitrocellulose membranes (Bio-Rad 1620115) and blotted with the primary and secondary antibodies as described.
 
 For Co-IP experiments, cells were lysed with RIPA buffer. The prepared protein extracts were precleared with protein A/G beads (Pierce, #20421) for 1 hr at 4°C then incubated with anti-Flag M2 affinity gel for 2 hr for Co-IP, followed by western blot analysis.
 
-## Colony formation assays and WST-1 cell proliferation assays
+### Colony formation assays and WST-1 cell proliferation assays
 
 Colony formation assays were done by seeding single cells in 6 or 12 well plates. Media was replenished every 3 days with indicated treatments. Colonies were fixed in 4% para-formaldehyde (PFA), followed by 0.5% crystal violet staining for 30 min at room temperature and rinsed with water. Quantification was performed using the ImageJ software plugin ColonyArea. Statistical significance was determined using unpaired, two-tailed Student’s t test performed on intensity values from ColonyArea. For WST-1 cell proliferation assays (#11644807001, Roche), cells were seeded in 96 well plate for indicated days growth and then were assayed according to the manufacturer’s instructions.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Cells from knockdown control or shWDR5-1 group were harvested with QIAzol Lysis Reagent (Qiagen) and homogenized using QIAshredder tubes (Qiagen). For each cell line, shRNA expression was induced with DOX (1 μg/mL) for 3 days, and three biological replicates were harvested at different passages. RNA isolation was performed using miRNeasy with on-column DNase digestion. External RNA controls consortium spike-in RNA was added in proportion to the number of cells obtained during cell counts. Library generation was performed using TruSeq stranded mRNA library prep kit (Illumina). Paired-end sequencing was performed using an Illumina HiSeq4000 sequencer, generating an average of 59 million reads per library. Reads were aligned to hg38, and gene counts to GENCODEv96 transcripts were obtained using STAR aligner v2.7.0 with default parameters. The hg38 and GENCODEv96 annotations were appended to include the ERCC sequences. DESeq2 was used to obtain differential gene expression, and HTSFilter was used to filter for expressed genes. Significant differences were identified using a Benjamini-Hochberg adjusted p-value cut-off of 0.05. RNA-seq data have been deposited into the National Center for Biotechnology Information Gene Expression Omnibus database under GSE196666.
 
-## RT-qPCR and barcode qPCR
+### RT-qPCR and barcode qPCR
 
 Total RNA was extracted using the RNeasy Plus Mini Kit (Qiagen 74136), and reverse transcription was performed using High-capacity cDNA Reverse Transcription kit (ThermoFisher 4385614). The resulting cDNA was diluted with water, and Fast SYBR Green Master Mix (ThermoFisher 4385614) was used for real-time PCR. GAPDH was utilized as loading controls. Samples were run in quadruplicate, and the experiments were performed at least three times. Primer sequences are listed in Supplementary file 1f.
 
 For barcode qPCR, barcode primers were designed to amplify only 1 barcode sequence among the 89 unique barcodes in the entire library. The primer set targeting the tetracycline response element (TRE) element in pINDUCER10 was used for normalization. The full list of barcode qPCR primers used for detection of hairpin abundance is available in Supplementary file 1g.
 
-## Translation rate assay
+### Translation rate assay
 
 Cells were starved of L-methionine for 30 min and subsequently incubated with 50 μM homopropargylglycine (HPG; Life Technologies #C10186) for 1–4 hr in treatment media. Cells were then trypsinized and fixed in 4% PFA. A Click-IT kit (Life Technologies #C10269) used to label HPG. Labeled cells were analyzed using an Cytoflex flow cytometer. Translation rates were determined based on the slope of HPG incorporation over time. Significance determined using one sample t test to compare each treatment value to the hypothetical value 1 for the DMSO control.
 
-## Chromatin immunoprecipitation qPCR
+### Chromatin immunoprecipitation qPCR
 
 Cells growth in 15 cm dishes were washed with PBS and cross-linked with 1% formaldehyde in DMEM media for 10 min and quenched with 0.125 M glycine for 5 min. Cells were washed with cold PBS and scraped and pooled. Following washes, cell pellets were lysed in sonication buffer (20 mM Tris pH 8.0, 2 mM EDTA, 0.5 mM EGTA, 1× protease inhibitor, 0.5% SDS, and 0.5 mM phenylmethanesulfonyl fluoride (PMSF)) at a concentration of 3 mL per 1×108 cells for 10 min. Sonication was performed using the Qsonica Q800R sonicator (Qsonica) set to 70% amplitude, 15 s on and 45 s off for a total of 30 min on. Sonicated materials were precleared with 50% protein A agarose (ThermoFisher 20421). Antibodies were added into precleared material and rotated overnight at 4°C. 50% protein A slurry was then added, and the tubes were rotated at 4°C for 2 hr. In order to reverse crosslinks and purify DNA, NaCl was added to elute ChIP material and incubated overnight at 65°C and then digested with proteinase K. Glycotube (ThermoFisher AM9515) was added as co-precipitant and phenol-chloroform isolation, and ethanol precipitation was performed to isolate ChIP DNA. All sample DNA pellets were resuspended in 200 μL of water. 2 μL of DNA was used for each qPCR reaction, and reactions were performed in quadruplicate.
 
-## 3D protein visualization
+### 3D protein visualization
 
 Protein crystal structure 2H14 (apo-WDR5) was downloaded from the Protein Data Bank and visualized using PyMol (The PyMOL Molecular Graphics System, Version 2.0 Schrdinger, LLC).
 
-## Analysis of in vitro drug interaction
+### Analysis of in vitro drug interaction
 
 We employed coefficient of drug interaction to determine cytotoxicity. The coefficient of drug interaction (CDI) is calculated as follows: CDI = AB/(A×B). According to the colony formation intensity or translation rates of each group, AB is the ratio of the combination group to the control group; A or B is the ratio of the single agent group to the control group. Thus, CDI value <1, =1, or >1 indicates that the drugs are synergistic, additive, or antagonistic, respectively. A CDI <0.7 indicates a significant synergistic effect (Otahal et al., 2020; Zhao et al., 2014).
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons between two groups were performed using an unpaired two-side Student’s t test unless indicated otherwise. Graphs represent either group mean values ± SEM or individual values (as indicated in the figure legends). For animal experiments, each tumor graft was an independent sample. All experiments were reproduced at least three times.

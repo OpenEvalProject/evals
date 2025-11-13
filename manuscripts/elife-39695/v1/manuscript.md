@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39695.001 The formation of misfolded protein aggregates is a hallmark of neurodegenerative diseases. The aggregate formation process exhibits an initial lag phase when precursor clusters spontaneously assemble. However, most experimental assays are blind to this lag phase. We develop a quantitative assay based on super-resolution imaging in fixed cells and light sheet imaging of living cells to study the early steps of aggregation in mammalian cells. We find that even under normal growth conditions mammalian cells have precursor clusters. The cluster size distribution is precisely that expected for a so-called super-saturated system in first order phase transition. This means there exists a nucleation barrier, and a critical size above which clusters grow and mature. Homeostasis is maintained through a Szilard model entailing the preferential clearance of super-critical clusters. We uncover a role for a putative chaperone (RuvBL) in this disassembly of large clusters. The results indicate early aggregates behave like condensates. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+The formation of misfolded protein aggregates is a hallmark of neurodegenerative diseases. The aggregate formation process exhibits an initial lag phase when precursor clusters spontaneously assemble. However, most experimental assays are blind to this lag phase. We develop a quantitative assay based on super-resolution imaging in fixed cells and light sheet imaging of living cells to study the early steps of aggregation in mammalian cells. We find that even under normal growth conditions mammalian cells have precursor clusters. The cluster size distribution is precisely that expected for a so-called super-saturated system in first order phase transition. This means there exists a nucleation barrier, and a critical size above which clusters grow and mature. Homeostasis is maintained through a Szilard model entailing the preferential clearance of super-critical clusters. We uncover a role for a putative chaperone (RuvBL) in this disassembly of large clusters. The results indicate early aggregates behave like condensates.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -31,25 +31,49 @@ A direct experimental readout of the very early nucleation steps, ideally direct
 
 Here, we elucidate the early formation mechanism of misfolded protein aggregates directly in mammalian cells. We use super-resolution microscopy in fixed cells and light sheet microscopy in living cells to capture the nucleation stage of aggregate formation (Figure 1A). We find that precursor clusters exist in cells even under normal growth conditions. Moreover, the size distribution of these precursor clusters is robustly consistent with a textbook example of classical nucleation theory. Classical nucleation theory considers a simple question: Given a collection of molecules, if a subset of the molecules cluster together, would this raise or lower the energy of the system. It makes a specific prediction about the distribution of cluster sizes. An alternative mechanism, such as a vectorial active transport that locally clusters monomers, is unlikely to result in the same cluster size distribution.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of traditional experimental readouts of protein aggregation. Such measurements are blind to the nucleation phase but begin to show signal during the growth phase and stationary phase. (B) Conventional fluorescence image of Synphilin1-Dendra2 in mammalian cell. (C) Super resolved reconstruction of the same cell reveals multiple sub-diffractive aggregates (see Figure 1—figure supplement 1 for representative DBSCAN images). (D) log-log plot of the free energy from the distribution of aggregate sizes (see Box 1) reveal a low-n asymptote of slope 2/3, reminiscent of a surface energy limited system ($an^{\frac{2}{3}}$) (See Figure 1—figure supplement 3 for evidence for homogenous decoration of clusters by Synphilin1). (E) Plot of the resultant after correction of surface energy: by fitting an n2/3 surface energy term from the asymptote of (D) and subtracting it from the data,the resultant data is strikingly linear, and has a negative slope, suggesting the second term ($−bn$). (F) Fit of the distribution of aggregate sizes to the full function $an^{\frac{2}{3}}-bn$ to obtain the a and b parameters. The parameters define the nucleation barrier height and critical aggregate size (see Figure 1—figure supplement 2 for expression level control and alternative tracer control, see Figure 1—figure supplement 5 for application to in neuronal precursor cells). (G) Schematic of the energy function, as predicted for a super-saturated system undergoing first order phase transition. The line is dashed after the critical size to highlight that the functional form is experimentally valid only below this size. The barrier height and critical radius from the fit in F are represented (see Figure 1—figure supplement 4 for larger schematic and definition of terms in text). Data is from 25,000 aggregates from 28 fixed cells. Errors represent s.e.m. All cells imaged in this figure were fixed cells. Log refers to the natural logarithm (base ‘e’) (see Figure 1—figure supplement 5 for control in neuronal precursor cell line).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each subfigure contains - super-resolved reconstruction (centre) a pointillist image of clusters identified by the DBSCAN algorithm (left) and a zoomed in region with super-resolution (top right) and DBSCAN (bottom right) images. Conditions represented are – (A) Plain dendra2 (unfused) control, (B) Synphilin-Dendra2 untreated cells. (C) 30 min MG132 treatment. (D) 120 minutes MG132 treatment. (E) 150 min MG132 treatment. (F) 180 minutes MG132 treatment. (G) RuvBL knockdown. (H) AZC treatment, and (I) Rapamycin treatment. All cells represented in the figure are fixed cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A Representative cells with different Synphilin expression levels – Left panels, high expression level cells with average fluorescence intensity ~15,000 counts (arbitrary units). Right panels, Low expression level cells with average fluorescence intensity ~3500 counts (arbitrary units). (B) Sub-critical size distributions for three data sets – high expression (5 cells), low expression (5 cells) and with alpha Synuclein-Dendra2 as alternative aggregate marker. Log refers to the natural log (base ‘e’). The sub-critical size distributions show no detectable change despite the widely different expression levels.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The number of localizations assigned to individual clusters by DBSCAN versus the volume (cube of radius) over which these localizations were spread out. (A) For small clusters there is a distinct linear scaling. (B) For larger clusters, the linear scaling becomes poor at a scale experimentally found to be close to the focal depth (dotted vertical line) of our system. All our analysis concentrates on clusters in low n range where both the linear scaling holds and the theoretical predictions are expected to apply. (A) corresponds to data from ~30 nm to ~400 nm cluster radius, while all our fits utilized data below 200 nm in size).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic showing the difference between bulk and surface interactions in the formation of a condensate. Molecules buried in the centre of a cluster contribute the full free energy difference per molecule from being in the condensate while molecules at the edge contribute a reduced fraction of the full free energy gain per molecule. This is what necessitates a positive correction term $an^{2/3}$ to the total free energy difference caused by formation of a cluster of n molecules. (B) The shape of the free energy cost function for cluster formation in the sub-saturated (light grey S < 1), saturated (grey S = 1) and super-saturated (dark grey S > 1) cases. (C) Expanded view of the super-saturated case from B with definitions of terms referred to in the text. In the super-saturated state (black curve in B) unlike in the sub-saturated state (light grey curve in B) the system is not in equilibrium. Here the free energy function has a maximum at a critical size above which a cluster is favoured to grow at the expense of the saturation level. In the sub-saturated case, the distribution of cluster, being thermodynamically unfavourable fluctuations from the equilibrium monomer phase, follows a Boltzmann distribution in size. However, during the process of condensation, and if maintained at constant super-saturation by monomer input, the distribution of cluster sizes for sub-critical sizes is also well approximated by the Boltzmann distribution (Slezov, 2009).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Plotted is the energy of cluster formation ($-Log(P(n)$ as described in Box 1 versus $n$ for clusters in normal growth conditions for (i) MCF10A cells with clusters marked with Synphilin (circles), (ii) Neuro2A cells with clusters marked by alpha Synuclein (stars). For the range of values < $n~1000000$ where the Neuro2A data set begins to exhibit a high noise level due to smaller size of data set, the two distributions are indistinguishable. Log refers to the natural log (base ‘e’). Untreated cell data is from the normalized distribution of 10,000 clusters from 10 cells, Neuro2A data from 3000 clusters from 5 cells.
+
 The details of classical nucleation theory are revealing about how cells maintain homeostasis. The so-called homogenous nucleation is a prototypical mechanism by which first order phase transitions proceed (Kalikmanov, 2013; Sear, 2007; Slezov, 2009). A first-order phase transition describes the discontinuous changes needed for a system to go from a dispersed phase to a condensed phase (or vice versa). This may correspond to the concentration of a single component from its dispersed phase (for example condensation) or the demixing of some components from a multicomponent mixture (for example liquid-liquid phase separation). In these cases, there exists a saturation concentration above which the system transitions from dispersed to clustered phase – or from the mixed to the de-mixed phase. The saturation point then categorizes systems in two possible regimes, either sub-saturated or super-saturated. In the sub-saturated regime, the concentration of monomers is lower than the saturation concentration. The system can form clusters, but the clusters spontaneously lose molecules and dissolve. The sub-saturated state is a stable state in that the system remains in the dispersed or mixed phase. In contrast, in a super-saturated state – when the ambient concentration is above the saturation concentration - there exists a critical cluster size, below which clusters spontaneously dissolve, and above which clusters will spontaneously grow. The super-saturated state is metastable because clusters reaching a size above the critical size will grow at the expense of the dispersed phase. The condensed phase is favoured, and the concentration of monomers in the disperse phase –that is the super-saturation level of the system– gradually decreases as larger clusters absorb monomers from the ambient environment. The theory of first order phase transitions makes a distinct prediction for the distribution of the dissolving clusters which can be used to distinguish sub-saturated from super-saturated states.
 
 Because cells under normal growth conditions do not show large growing clusters traced by Synphilin1, the naive hypothesis is that the cell is in a sub-saturated state, which is normally a steady state. However, we find that even under normal growth conditions, the distribution of clusters suggest the cells are in a super-saturated state, which is normally not a steady state. Rather, our results suggest that cells maintain homeostasis through a so-called Szilard model of non-equilibrium steady-state super-saturation (Farkas, 1927; Slezov, 2009). The Szilard model describes how a system can be maintained in steady state super-saturation if there is a mechanism to constantly clear the largest clusters. This size-dependent clearance of large aggregates appears to be mediated by the putative chaperone RuvbL.
 
 ## Results
 
-## Super-resolution imaging of fixed cells suggests classical nucleation theory underlies aggregate formation
+### Super-resolution imaging of fixed cells suggests classical nucleation theory underlies aggregate formation
 
 We engineered mammalian cell lines expressing Synphilin1 - a tracer of aggregates in Parkinson’s disease (Chung et al., 2001; Tanaka et al., 2004; Wakabayashi et al., 2000) - fused to a fluorescent protein Dendra2 (Chudakov et al., 2007). Dendra2 is a green to red photo-convertible protein that enables photo-activation localization microscopy (PALM) (Betzig et al., 2006), a single-molecule based super-resolution (Betzig et al., 2006; Hess et al., 2006; Rust et al., 2006) approach we used previously to study protein clustering in mammalian cells (Cho et al., 2016; Cisse et al., 2013). How Synphilin1 is recruited to aggregates is not fully understood. However, this protein is a commonly used tracer for well-studied misfolded protein aggregates such as Lewy bodies (Tanaka et al., 2004; Wakabayashi et al., 2000). Here, we concentrate on sub-diffractive Synphilin1 traced aggregates whose size distribution we measure. We checked that neither the expression level of Synphilin1 tracer protein nor the identity of the tracer (alternative tracer alpha-Synuclein) have any detectable effect on the size distribution of sub-diffractive clusters (Figure 1—figure supplement 2). This suggests that Synphilin1 in our sub-diffractive clusters merely serves as a tracer and does not on its own affect cluster formation at the expression levels tested.
 
 Wide-field epi-illumination (conventional) imaging of Synphilin1 in a fixed cell showed a diffuse cytoplasmic signal without any apparent aggregation (Figure 1B) as expected for a normal (i.e. without drug treatments) cell. However, super-resolution imaging of the same cell clearly revealed a large population of sub-diffractive clusters (Figure 1C).
 
-We characterized the properties of these sub-diffractive clusters using density based spatial clustering of applications with noise (DBSCAN) (Ester et al., 1996) (Figure 1—figure supplement 1). We measured the radius and the number of localization events (corresponding to the fluorescent photo-activation and detection events) (see Materials and methods and Figure 1—figure supplement 3). We find that the number of localization events in a cluster, scales with the cube of the measured cluster radius This suggest that, at the relevant cluster sizes, the fluorescent detection events of the Synphilin1 tracer protein may be spread throughout the cluster volume at uniform density (Figure 1—figure supplement 3). Only clusters with a radius greater than our localization accuracy [estimated to be ~20nm (Cho et al., 2016)] are interpreted in our analysis. For the analysis that follows, we defined the cluster size as a variable ‘n’, given by n=(R1 nm)3 where R is the measured cluster radius in nanometres (Figure 1—figure supplement 3). Here, the parameter n is proportional to, but different from the actual number of molecules in a cluster; the proportionality constant is determined by the density of all monomers in the cluster which is not known.
+We characterized the properties of these sub-diffractive clusters using density based spatial clustering of applications with noise (DBSCAN) (Ester et al., 1996) (Figure 1—figure supplement 1). We measured the radius and the number of localization events (corresponding to the fluorescent photo-activation and detection events) (see Materials and methods and Figure 1—figure supplement 3). We find that the number of localization events in a cluster, scales with the cube of the measured cluster radius This suggest that, at the relevant cluster sizes, the fluorescent detection events of the Synphilin1 tracer protein may be spread throughout the cluster volume at uniform density (Figure 1—figure supplement 3). Only clusters with a radius greater than our localization accuracy [estimated to be ~20nm (Cho et al., 2016)] are interpreted in our analysis. For the analysis that follows, we defined the cluster size as a variable ‘n’, given by $n=(\frac{R}{1 nm})^{3}$ where R is the measured cluster radius in nanometres (Figure 1—figure supplement 3). Here, the parameter n is proportional to, but different from the actual number of molecules in a cluster; the proportionality constant is determined by the density of all monomers in the cluster which is not known.
 
-Following our observation of sub-diffractive clusters in the cell, we searched for signs of a thermodynamically driven first order phase transition in which spontaneous nucleation and growth mechanisms arise (Slezov, 2009). In condensation, the free energy change accompanying the clustering of n molecules into a single condensate is: ∆G=an2/3±bn [See Box 1]. The first term is the surface term and accounts for the interfacial energy of the n2/3∝R2 molecules on the surface of the condensate; the parameter ‘a’ serves as (positive) surface energy parameter. The second term is the bulk term and depends on the total number of molecules in the volume (n1∝R3) of the cluster; ‘b’ serves as a (positive) bulk energy parameter, and the positive or negative signs in front depends on whether the system is sub-saturated or super-saturated respectively [See Box 1]. The theory of first order phase transitions allows the determination of the free energy directly from the distribution of cluster sizes (which will follow Pn=Ae-∆G/kBT but with corresponding positive or negative bulk energy term in the free energy differentiating between sub- or super- saturation respectively) [See Box 1]
+Following our observation of sub-diffractive clusters in the cell, we searched for signs of a thermodynamically driven first order phase transition in which spontaneous nucleation and growth mechanisms arise (Slezov, 2009). In condensation, the free energy change accompanying the clustering of n molecules into a single condensate is: $\DeltaG=an^{2/3}\pmbn$ [See Box 1]. The first term is the surface term and accounts for the interfacial energy of the $n^{2/3}∝R^{2}$ molecules on the surface of the condensate; the parameter ‘a’ serves as (positive) surface energy parameter. The second term is the bulk term and depends on the total number of molecules in the volume ($n^{1}∝R^{3})$ of the cluster; ‘b’ serves as a (positive) bulk energy parameter, and the positive or negative signs in front depends on whether the system is sub-saturated or super-saturated respectively [See Box 1]. The theory of first order phase transitions allows the determination of the free energy directly from the distribution of cluster sizes (which will follow $Pn=Ae^{-\DeltaG/k_{B}T}$ but with corresponding positive or negative bulk energy term in the free energy differentiating between sub- or super- saturation respectively) [See Box 1]
 
-To test the applicability of this theory to our data, we examine the distribution of cluster sizes. For either a sub-saturated or a super-saturated system the free energy as a function of cluster size is ΔG(n)=−kBTLog(P(n)) [for n<nc, in the super-saturated case (Slezov, 2009)] where kB is the Boltzmann constant, T the temperature (in Kelvin); P(n) represents the histogram (formally the normalized distribution function) of cluster sizes, and nc the size of maximum ΔG [Figure 1—figure supplement 4 and (Slezov, 2009)]. That any of this is valid for the formation of endogenous aggregates inside living cells – complex, highly regulated, multicomponent entities forming in an intrinsically non-equilibrium environment in vivo – we could not a priori know. However, by investigating the features of the experimentally measured ΔG(n)=−kBTLog(P(n)) we find the energetics of a condensing super-saturated system. Since classical nucleation theory makes predictions on the distribution of sub-critical clusters, we consider the behavior of our experimentally measured free energy function ΔG(n)=−kBTLog(P(n)) for low n values(Log refers to the natural log (Base ‘e’)). The log-log plot of our experimentally measured ΔG(n) reveals a linear asymptote of slope =γ1=2/3 for small n values (Figure 1D). This evokes a system dominated by a surface energy (n2/3∝R2) for small clusters. We then fitted the first few data points of ΔG(n), corresponding to the smallest clusters, to estimate a surface energy term an2/3 and subtracted it off of the data (ΔG(n)-an2/3) to obtain the resultant after surface correction. The resultant was linear (γ2=1) to within our experimental uncertainty suggestive of a bulk (volumetric, n1∝R3) energy contribution (Figure 1E). Moreover the slope is negative, indicating that the (negative) bulk energy term (-bn) minimizes the free energy. A positive surface tension balanced by negative bulk energy is the key signature of a super-saturated condensing system; the combination gives rise to a well-defined maximum free energy representing the free energy barrier for nucleation (ΔG(nc)), and the corresponding critical cluster size nC=2a3b3 above which clusters are thermodynamically stable and will spontaneously grow. By contrast, a sub-saturated system has the same surface term (an2/3), but a positive (+bn) bulk term such that there is no maximum to the free energy and therefore no regime for stable cluster growth (Slezov, 2009). Therefore, the analysis of the cluster size distribution in unstressed cells reveals the precise energetics of a super-saturated system undergoing first-order phase transition (Abraham, 1974; Slezov, 2009).
+To test the applicability of this theory to our data, we examine the distribution of cluster sizes. For either a sub-saturated or a super-saturated system the free energy as a function of cluster size is $ΔG(n)=−k_{B}TLog(P(n))$ [for n<nc, in the super-saturated case (Slezov, 2009)] where $k_{B}$ is the Boltzmann constant, $T$ the temperature (in Kelvin); P(n) represents the histogram (formally the normalized distribution function) of cluster sizes, and nc the size of maximum $ΔG$ [Figure 1—figure supplement 4 and (Slezov, 2009)]. That any of this is valid for the formation of endogenous aggregates inside living cells – complex, highly regulated, multicomponent entities forming in an intrinsically non-equilibrium environment in vivo – we could not a priori know. However, by investigating the features of the experimentally measured $ΔG(n)=−k_{B}TLog(P(n))$ we find the energetics of a condensing super-saturated system. Since classical nucleation theory makes predictions on the distribution of sub-critical clusters, we consider the behavior of our experimentally measured free energy function $ΔG(n)=−k_{B}TLog(P(n))$ for low n values(Log refers to the natural log (Base ‘e’)). The log-log plot of our experimentally measured $ΔG$(n) reveals a linear asymptote of slope =$\gamma_{1}=2/3$ for small n values (Figure 1D). This evokes a system dominated by a surface energy ($n^{2/3}∝R^{2})$ for small clusters. We then fitted the first few data points of $ΔG$(n), corresponding to the smallest clusters, to estimate a surface energy term $an^{2/3}$ and subtracted it off of the data $(ΔG$(n)-$an^{2/3})$ to obtain the resultant after surface correction. The resultant was linear (γ2=1) to within our experimental uncertainty suggestive of a bulk (volumetric, $n^{1}∝R^{3})$ energy contribution (Figure 1E). Moreover the slope is negative, indicating that the (negative) bulk energy term (-bn) minimizes the free energy. A positive surface tension balanced by negative bulk energy is the key signature of a super-saturated condensing system; the combination gives rise to a well-defined maximum free energy representing the free energy barrier for nucleation $(ΔG(n_{c}))$, and the corresponding critical cluster size $n_{C}=\frac{2a}{3b}^{3}$ above which clusters are thermodynamically stable and will spontaneously grow. By contrast, a sub-saturated system has the same surface term $(an^{2/3})$, but a positive (+bn) bulk term such that there is no maximum to the free energy and therefore no regime for stable cluster growth (Slezov, 2009). Therefore, the analysis of the cluster size distribution in unstressed cells reveals the precise energetics of a super-saturated system undergoing first-order phase transition (Abraham, 1974; Slezov, 2009).
 
-By fitting the data, plotted as -Log(P(n)) to the functional form ΔG(n) =an2/3−bn(Figure 1F) (where for the case described in Box 1, a=[36π1/3]σv12/3/kBT is the dimensionless surface energy, b=Log(cambcsat) is the dimensionless bulk energy term and ΔG(n) is consequently in units of kBT), we obtain the two parameters a=1.07×10-3±0.06×10-3 and b=4.3 ×10−6 (±3×10−7) (best fit, mean ± (s.e.m)) which determine the thermodynamic properties of the condensation process (Figure 1G and Figure 1—figure supplement 4). Using these parameters, we can now extract two important biophysical properties of the process: the critical radius and the nucleation barrier (see Materials and methods). The nucleation barrier is ΔG= 7.2 (±0.5) kBT, and the critical radius (i.e. the radius above which clusters will spontaneously grow) is Rc=162 (±4) nm (mean ± (s.e.m)) (Materials and methods).
+By fitting the data, plotted as -Log(P(n)) to the functional form $ΔG(n) =an^{2/3}−bn$(Figure 1F) (where for the case described in Box 1, $a=[36\pi^{1/3}]\sigmav_{1}^{2/3}/k_{B}T$ is the dimensionless surface energy, $b=Log(\frac{c_{amb}}{c_{sat}})$ is the dimensionless bulk energy term and $ΔG(n)$ is consequently in units of $k_{B}T$), we obtain the two parameters $a=1.07\times10^{-3}\pm0.06\times10^{-3}$ and $b=4.3 \times10^{−6} (\pm3\times10^{−7})$ (best fit, mean $\pm$ (s.e.m)) which determine the thermodynamic properties of the condensation process (Figure 1G and Figure 1—figure supplement 4). Using these parameters, we can now extract two important biophysical properties of the process: the critical radius and the nucleation barrier (see Materials and methods). The nucleation barrier is $ΔG=$ 7.2 (±0.5) kBT, and the critical radius (i.e. the radius above which clusters will spontaneously grow) is Rc=162 (±4) nm (mean $\pm$ (s.e.m)) (Materials and methods).
 
 Because the critical radius Rc is below the optical diffraction limit, this explains why a super-resolution technique was required to measure it. However, we were surprised that the value was as big as it is, because it is much higher than what would be predicted if a few monomers were sufficient to nucleate a stable cluster. Our results suggest that the initial clusters likely form through a condensation of weakly interacting monomers.
 
@@ -57,7 +81,7 @@ We tested if these conclusions were generalizable to another cell type by perfor
 
 In summary, we developed a high-resolution imaging assay to look at the distribution of aggregate (cluster) sizes in fixed cell snapshots. We exploited the theoretical premise that in the distribution of cluster sizes below the critical size (sub-critical), the distribution can be approximated as a Boltzmann distribution. From this distribution we get the free energy. The resulting free energy terms extracted from the data were a surface tension term balanced by a linear bulk term, exactly as expected for the condensation of a super-saturated system. The free energy calculation allows us to determine the nucleation energy barrier and the critical cluster size (above which the clusters grow stably) for the aggregation inside mammalian cells. We could also determine how these quantities change under varying conditions. An important conclusion in this section is that even under normal growth conditions mammalian cells are super-saturated.
 
-## Super-saturation can be tuned by the levels of endogenous aggregating polypeptides
+### Super-saturation can be tuned by the levels of endogenous aggregating polypeptides
 
 To test our model, we study how drug treatments affect its parameters. As noted before, the energetics of nucleation and growth depend on two parameters corresponding to a bulk term and a surface term. These parameters derive from the microscopic biochemical interactions within the system, and should depend on the concentration of aggregating proteins (which affects the bulk term) and on their energy of interactions.
 
@@ -65,21 +89,29 @@ A major constituent of Synphilin1-traced aggregates is believed to be endogenous
 
 In Figure 2A–F we find that Rapamycin increases the nucleation barrier and critical radius, consistent with expectation for reduced super-saturation. A similar effect is also observed in treatments with the translational inhibitor cycloheximide (Figure 2—figure supplement 1). In contrast, treatment with either MG132 or AZC decreases the nucleation barrier and critical radius, consistent with expectation for increased super-saturation. Therefore, over a range of complex pharmacological perturbations –with simple intuition of how the perturbation would affect the saturation– the measured effects match the expectation from classical nucleation theory.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig2-v1.jpg)
+
+**Figure 2.:** and RuvBL-dependent mechanism clears super-critical clusters: (A–F) Representative super-resolved reconstruction and free energy functional fit for AZC- (A and B), MG132-(C and D), and Rapamycin- (E and F) treated cells. Distribution functions were computed from 2500 to 10,000 clusters from 7 to 10 cells in each condition. Red-hot colour code is used to indicate the relative density of detections in A, C, E. Gray plot in B, D, F represents the functional fit for untreated cells for comparison. (G) Representative super-resolution reconstruction for an untreated cell showing many sub-diffractive aggregates (dark red) but few large aggregates (red hot). (H) Schematic of the observed effects of the different pharmacological treatments. (I) Representative super-resolution reconstruction for a RuvBL depleted cell and zoomed view of large (red hot) aggregates. (J) –Log(P(n)) versus n curve from 7000 clusters from 9 RuvBL depletion cells shows almost no effect on the sub-critical distribution. (K–M), quantification of the effect of the perturbations and comparisons of relative changes in the distributions of aggregate size (violin plot, (K), Rc (L) and the measure nucleation barrier; (M) the range of values in L and M is chosen to illustrate the main differences. Error bars in L and M represent s.e.m in fit estimation (Materials and methods). All cells imaged in this figure were fixed cells. Log refers to the natural log (base ‘e’) (See Figure 2 – figure supplement 1 for combined effect of AZC and MG).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Violin plots of data from untreated (Black) and amino acid substitute AZC treated (Blue) cells. Data is from 10,000 untreated clusters (10 cells) and 4000 AZC clusters (seven cells). (B) Violin plots of data from untreated (Black), proteasome inhibitor MG132 (grey) and the combination of AZC +MG132 (Blue) cells. AZC +MG data is from 8000 clusters from seven cells. (C) Violin plots of cluster sizes, with HSP70 inhibitor Ver155008 in DMSO (grey), and DMSO control (black). Data is of 4000 clusters from five cells. (D) Sub-critical cluster size distribution and bar graph of critical radius for cycloheximide treated cells. Data is from 4500 clusters from 5 cells. (E–G) The sub-critical cluster size distribution is plotted for various times after MG132 treatments. Data is from 4000 to 7000 clusters from 5 to 10 cells at the various time points. In (C–G) Log refers to the natural log (base ‘e’).
+
 In summary, in this section we tested the effect of different pharmacological perturbations. We also confirmed here that the expression of the labelled tracer (Synphilin1) is not the main driving force for clustering, consistent with the previous characterization that the tracer labels aggregates that are mostly composed of misfolded polypeptides (JA, 2006; Meriin et al., 2012; Park et al., 2017; Tanaka et al., 2004). We find that the theoretical model holds robustly under different drug treatments that globally affect protein quality control: a drug that reduces global protein synthesis, thereby reducing the concentration of misfolded polypeptides is found to reduce super-saturation (i.e. increase the nucleation barrier and Rc) while a drug that promotes misfolding of newly synthesized protein is found to increase the super-saturation (i.e. decreasing the nucleation barrier, and Rc).
 
-## RUVBL-dependent mechanism clears super-critical clusters
+### RUVBL-dependent mechanism clears super-critical clusters
 
 The picture emerging from our analysis is that even untreated cells are super-saturated. In super-saturated systems if even one cluster reaches the critical size it should spontaneously grow; that cluster will come to dominate the system and absorb monomers until the system is no longer super-saturated. A violin plot of cluster sizes from untreated cells (Figure 2K, black) indicates that while a large population of small cluster sizes is apparent (indicated by the width of the violin plot in Figure 2K), there is a small minority of clusters (<5%) that have reached a size greater than Rc. Therefore, despite the fact that clusters do reach the critical size, such a population of super-critical clusters seems to be suppressed in healthy cells; this is corroborated by images of untreated cells that are distinctly devoid of large super-critical clusters (Figure 2G). In the theory of first-order phase transition, this observation is suggestive of a model with strict requirements: There ought to be a clearance mechanism that acts on the super-critical clusters without significantly affecting the sub-critical distribution.
 
-Because a AAA+ ATPase, RuvBL, was previously suggested as a potential protein disaggregase in mammalian cells and in yeast (Zaarur et al., 2015), we tested whether RuvBL may be involved in the clearance of super-critical clusters. Consistent with this hypothesis, we find that knocking down RuvBL1 in untreated cells results in the appearance of large clusters (Figure 2I, compare to untreated cell Figure 2G). A violin plot of cluster sizes from RuvBL knocked-down cells shows a clear population of large cluster sizes. Some clusters have radii greater than 1μm, a size range that we observed previously only after hours of proteasome inhibition (Figure 2K). These results implicate RuvBL in the clearance of large clusters from untreated cells (see Figure 3 for further tests of RuvBL).
+Because a AAA+ ATPase, RuvBL, was previously suggested as a potential protein disaggregase in mammalian cells and in yeast (Zaarur et al., 2015), we tested whether RuvBL may be involved in the clearance of super-critical clusters. Consistent with this hypothesis, we find that knocking down RuvBL1 in untreated cells results in the appearance of large clusters (Figure 2I, compare to untreated cell Figure 2G). A violin plot of cluster sizes from RuvBL knocked-down cells shows a clear population of large cluster sizes. Some clusters have radii greater than 1$\mum$, a size range that we observed previously only after hours of proteasome inhibition (Figure 2K). These results implicate RuvBL in the clearance of large clusters from untreated cells (see Figure 3 for further tests of RuvBL).
 
-Importantly, we find that upon RuvBL knockdown, Rc=157 ±6 nm did not change significantly from Rc in control untreated cells (162 ±4 nm) (Figure 2J) suggesting that RuvBL knockdown did not significantly change the sub-critical distribution. This observation implies that RuvbL did not affect the concentration of aggregating molecules or their interactions, unlike, for instance, proteasome inhibition, and AZC incubation which reduced Rc (Figure 2B, D, E). Our data indicate that RuvBL-dependent clearance of clusters acts preferentially on clusters that have reached a size above Rc, without changing the sub-critical distribution or the nucleation process.
+Importantly, we find that upon RuvBL knockdown, $R_{c}=157\pm6nm$ did not change significantly from $R_{c}$ in control untreated cells ($162\pm4nm$) (Figure 2J) suggesting that RuvBL knockdown did not significantly change the sub-critical distribution. This observation implies that RuvbL did not affect the concentration of aggregating molecules or their interactions, unlike, for instance, proteasome inhibition, and AZC incubation which reduced $R_{c}$ (Figure 2B, D, E). Our data indicate that RuvBL-dependent clearance of clusters acts preferentially on clusters that have reached a size above $R_{c}$, without changing the sub-critical distribution or the nucleation process.
 
 We also tested whether the classical HSP70-mediated pathway for disaggregation was involved at this stage. HSP70 is known to disaggregate amyloid fibrils (Gao et al., 2015) and the chemical Ver155008 inhibits HSP70 (Massey et al., 2010). However, here, using HSP70 inhibitor Ver155008 we were not able to generate a substantial population of super-critical clusters (Figure 2—figure supplement 1). This suggests that the RuvBL mechanism is likely distinct from HSP70 mediated disaggregation.
 
 In summary, the ultimate end point of the phase transition that occurs in super-saturated systems should be the formation of a large macroscopic condensed phase. We found it very surprising that cells are super-saturated yet they do not have many super-critical clusters under normal growth conditions. We argue that there exists a mechanism that preferentially clears large aggregates without significantly affecting the pre-nucleated distribution of aggregates. We identify a putative protein chaperone (RuvBL) that is key to this clearance mechanism.
 
-## The Szilard model for non-equilibrium steady state accounts for the genetic and pharmacological stresses tested
+### The Szilard model for non-equilibrium steady state accounts for the genetic and pharmacological stresses tested
 
 Without a specific mechanism in place to maintain the state, a super-saturated distribution is transient and unstable. Even if new monomers are continuously produced, super-critical clusters spontaneously absorb monomers faster than new clusters can form. One mechanism, attributed to Leo Szilard (Farkas, 1927; Slezov, 2009), was proposed to maintain a super-saturated distribution at steady state, through the preferential clearance of super-critical clusters.
 
@@ -91,11 +123,11 @@ The Szilard mechanism maintains a non-equilibrium steady state through the conti
 
 One implication of the Szilard model is that accumulation of super-critical clusters could result from two independent mechanisms: increase in super-saturation (for example by proteasome inhibition or by increased expression of polypeptides) or alternatively by decreasing clearance (e.g. RuvBL knock down). To test this inter-dependence, we performed the treatment by proteasome inhibitor MG132 followed by washout, in cells with or without RuvBL knockdown. In all cases, after MG132 washout the free energy barrier returned to close to that of normal, untreated cells, suggesting that regardless of RuvBL knockdown, MG132 acted to increase the super-saturation in a reversible manner (Figure 3C–E). However, after washout the clearance of the super-critical clusters (which existed during MG132 treatment) was only possible in the controls with normal levels of RuvBL. On the other hand, in the cells where RuvBL was knocked down, although the free energy barrier returned close to normal untreated level, a population of super-critical clusters remained after MG132 wash-out, corroborating the fact that RuvBL was necessary for the clearance of the super-critical clusters. These experiments lend further support for RuvBL’s role as a part of a super-critical cluster clearance mechanism and help to demonstrate how cellular relaxation and adaptation after complex combinations of perturbations can be fully explained by the Szilard steady state model.
 
-## Live cell imaging data further support the model of super-critical clusters as condensates
+### Live cell imaging data further support the model of super-critical clusters as condensates
 
 All the analysis and conclusions thus far were driven by a free energy function extracted from a distribution of cluster sizes in fixed cell snapshots. This model has implications about the clusters, which can be tested in living cells. First, we aimed to test whether the same free energy function describes the distribution of clusters in live cells. This required the development of a light-sheet-based imaging assay where the brightness of the cluster is used as a proxy for cluster size. The distribution obtained by light sheet imaging is biased toward brighter (i.e. larger sized) clusters compared to super-resolution imaging. Nonetheless we are able to resolve enough of the sub-critical distribution and verify that the same free energy function describes the live cell data. Secondly, we used this live cell data to estimate the surface tension of the cluster-cytoplasm interface. We found that the surface tension is comparable to previous estimates of phase-separated condensates in the literature. Third, we measured the growth kinetics of the few super-critical clusters found in the living cells. We found that the growth and behavior of the super-critical clusters was entirely consistent with the model – suggested by our analysis in the sub-critical regime- of cluster formation by condensation. In particular, we found that growth and shrinkage was size dependent as expected from classical nucleation theory. We also found clusters underwent merger events (~1 mergers visible per cell imaged over ten minutes) as would be expected of condensates.
 
-## Cluster size quantification in living cells corroborate fixed cell data
+### Cluster size quantification in living cells corroborate fixed cell data
 
 To study the nucleation process directly in living cells, the relatively fast motion of clusters in living cells precluded our previously developed quantitative live cell super-resolution approaches (Cho et al., 2016; Cisse et al., 2013). Here, we develop a complementary, light sheet based, approach to study aggregation directly in the living cells. We opted for a non-diffractive, lattice light sheet (Chen et al., 2014) approach to selectively illuminate a thin optical sheet in the living cells; the reduced background of excited molecules we anticipated would give us sufficient contrast to detect sub-diffractive clusters as bright diffraction-limited spots.
 
@@ -103,25 +135,29 @@ We found that the light sheet reveals many condensates as diffraction-limited sp
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39695/elife-39695-fig4-v1.jpg)
 
-**Figure 4.:** (A) 2D maximum intensity projection of 3D direct imaging of Dendra2-Synphilin1 traced aggregates in a representative cell imaged with light sheet microscope. (B) Using the relative intensities rather than the radius as a measure of aggregate size, we may plot distributions that reproduce all the features of the fixed cell measurements (N=2800 aggregates from 22 cells). Insets: log-linear plot. (C) The free energy functional fit (yielding (best fit a=0.166±.01 and b=0.011±.001 s.e.m)) of the live cell data corroborates the conclusions of the condensation through first order phase transition. Here, the variable parameter N is an estimate of the number of fluorescent Dendra2-Synphilin imaged per aggregate and Log refers to the natural log (base ‘e’). All cells imaged in this figure were live cells.±
+**Figure 4.:** (A) 2D maximum intensity projection of 3D direct imaging of Dendra2-Synphilin1 traced aggregates in a representative cell imaged with light sheet microscope. (B) Using the relative intensities rather than the radius as a measure of aggregate size, we may plot distributions that reproduce all the features of the fixed cell measurements (N=2800 aggregates from 22 cells). Insets: log-linear plot. (C) The free energy functional fit (yielding $a=0.166\pm.01andb=0.011\pm.001$(best fit $\pm$ s.e.m)) of the live cell data corroborates the conclusions of the condensation through first order phase transition. Here, the variable parameter N is an estimate of the number of fluorescent Dendra2-Synphilin imaged per aggregate and Log refers to the natural log (base ‘e’). All cells imaged in this figure were live cells.
 
-We obtain a live cell cluster size distribution (Figure 4B and C) that corroborates our conclusions. The distribution fits well to the functional form ΔG(N) =aN2/3−bN, and the measured nucleation barrier in live cell is ~6.6 (±0.7) kBT in agreement with the 7.2 (±0.5) kBT barrier measured by fixed cell super-resolution in Figure 1.
+![Video 1.](https://cdn.elifesciences.org/articles/39695/elife-39695-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/39695/elife-39695-video2.mp4.jpg)
+
+We obtain a live cell cluster size distribution (Figure 4B and C) that corroborates our conclusions. The distribution fits well to the functional form $ΔG(N) =aN^{2/3}−bN$, and the measured nucleation barrier in live cell is ~6.6 (±0.7) kBT in agreement with the 7.2 (±0.5) kBT barrier measured by fixed cell super-resolution in Figure 1.
 
 The critical cluster is estimated to have Nc = 1400 (±300) labeled, fluorescent molecules in a live cell. Taken together with the super-resolution measured Rc, this suggests a spacing of (Nc/Rc) at most one Dendra2-Synphilin every 15 nm. Therefore, given a Stokes radius of Dendra2 ~1.5 nm, the labeled molecules occupy only about a thousandth of the volume of a cluster. This supports further that the clusters are likely heterogeneous and composed of far more unlabeled endogenous proteins than the fluorescent tracer (Synphilin 1) that labels aggregates.
 
-## Estimation of surface tension at the condensate-cytoplasm interface
+### Estimation of surface tension at the condensate-cytoplasm interface
 
-The live cell measurements allow us to make bounded estimates for the surface tension of the condensate-cytoplasm interface. Estimates for the surface tension allow for direct comparison between condensates formed in a wide range of systems, and in different studies. Briefly, the measured value of a plays the role of a surface tension in the theory, a∗=(r12σkbT), with r1 the length-scale of a monomer (taken to be ~1nm), σ the surface tension; we previously noted that our definition of n in fixed cells (or N in live cells) were correct up to a multiplicative constant. While this does not affect our ability to calculate the critical radius and nucleation barrier (see materials and methods), it does impact our estimate of the individual parameter a. Nonetheless, we can still provide bounds on the value of the surface tension at the condensate-cytoplasm interface.
+The live cell measurements allow us to make bounded estimates for the surface tension of the condensate-cytoplasm interface. Estimates for the surface tension allow for direct comparison between condensates formed in a wide range of systems, and in different studies. Briefly, the measured value of $a$ plays the role of a surface tension in the theory, $a^{∗}=(\frac{r_{1}^{2}\sigma}{k_{b}T})$, with $r_{1}$ the length-scale of a monomer (taken to be ~1nm), $\sigma$ the surface tension; we previously noted that our definition of n in fixed cells (or N in live cells) were correct up to a multiplicative constant. While this does not affect our ability to calculate the critical radius and nucleation barrier (see materials and methods), it does impact our estimate of the individual parameter $a$. Nonetheless, we can still provide bounds on the value of the surface tension at the condensate-cytoplasm interface.
 
-In the fixed cell data we measure the radius R with high spatial resolution and then calculate R3   but ntot=R3ρ where ρ is the density of polypeptides in the cluster which is an unknown. In the live cell measurements we measure the total intensity I and calculate N=I/ISingle mol but again ntot=Nk with k unknown. So both N=I/ISingle mol = ntot/k and n=R3=ntot/ρ are only measures of the total number of molecules up to a proportionality factor. Therefore from our fits we in fact get a=a*ρ2/3 and b=b*ρ from the fixed cell data a=a*k2/3 and b=b*k from live cell data - where starred parameters represent the real energetic terms if we had measured the total number of molecules. Since surface tension is determined by a∗=(r12σkbT), and we do not know a*, we need to use bounds on ρ, k in order to estimate the surface tension.
+In the fixed cell data we measure the radius R with high spatial resolution and then calculate $R^{3}$ but $n_{tot}=R^{3}ρ$ where $ρ$ is the density of polypeptides in the cluster which is an unknown. In the live cell measurements we measure the total intensity I and calculate $N=I/I_{Singlemol}$ but again $n_{tot}=Nk$ with k unknown. So both $N=I/I_{Singlemol}$ = $n_{tot}/k$ and $n=R^{3}=n_{tot}/ρ$ are only measures of the total number of molecules up to a proportionality factor. Therefore from our fits we in fact get $a=a^{*}ρ^{2/3}andb=b^{*}ρ$ from the fixed cell data $a=a^{*}k^{2/3}andb=b^{*}k$ from live cell data - where starred parameters represent the real energetic terms if we had measured the total number of molecules. Since surface tension is determined by $a^{∗}=(\frac{r_{1}^{2}\sigma}{k_{b}T})$, and we do not know $a^{*}$, we need to use bounds on $ρ$, $k$ in order to estimate the surface tension.
 
-For upper bounds - from live cell data we know that ntot is greater than the number of molecules that are fluorescing (only Synphilin1-Dendra2). That is, the real parameter a* is less than the measured parameter a. Consequently the surface tension calculated from the measurement over-estimates the real surface tension and is an upper bound – since the measured parameter a (from live cell data) was 0.166 at 310K (assuming ambient temperature as the temperature) and using a∗=(r12σkbT), this works out to σ<6×10−4N/m. From fixed cell data, taking as input from the live cell measurements that a critical cluster has at least 1400 molecules (the number of Synphilin molecules estimated by intensity measurements), and that the critical cluster size is measured to be 162 nm, we can estimate a lower bound on the density. That density is at least 3.3×10-4 molecules per nm3. Since the measured value of a was 0.001 we can use a=a*ρ2/3 to get an upper bound on the real value of a and consequently on the surface tension this works out to σ<8×10−4N/m.
+For upper bounds - from live cell data we know that $n_{tot}$ is greater than the number of molecules that are fluorescing (only Synphilin1-Dendra2). That is, the real parameter $a^{*}$ is less than the measured parameter $a$. Consequently the surface tension calculated from the measurement over-estimates the real surface tension and is an upper bound – since the measured parameter $a$ (from live cell data) was 0.166 at 310K (assuming ambient temperature as the temperature) and using $a^{∗}=(\frac{r_{1}^{2}\sigma}{k_{b}T})$, this works out to $\sigma<6\times10^{−4}N/m$. From fixed cell data, taking as input from the live cell measurements that a critical cluster has at least 1400 molecules (the number of Synphilin molecules estimated by intensity measurements), and that the critical cluster size is measured to be 162 nm, we can estimate a lower bound on the density. That density is at least $3.3\times10^{-4}moleculespernm^{3}$. Since the measured value of $a$ was 0.001 we can use $a=a^{*}ρ^{2/3}$ to get an upper bound on the real value of $a$ and consequently on the surface tension this works out to $\sigma<8\times10^{−4}N/m$.
 
-Lower bounds may be obtained by noting that the density of the cluster cannot be more than 1 molecule per nm3. This value corresponds to the size of proteins involved in the process. Using this value of ρ=1 molecule per  nm3 we can compute the value of a* to be at least the measured value a (a= 0.001 in fixed cells) and consequently establish a lower bound of σ>4×10−6Nm.
+Lower bounds may be obtained by noting that the density of the cluster cannot be more than 1 molecule per nm3. This value corresponds to the size of proteins involved in the process. Using this value of $ρ=1moleculepernm^{3}$ we can compute the value of $a^{*}$ to be at least the measured value $a$ ($a$= 0.001 in fixed cells) and consequently establish a lower bound of $\sigma>4\times10^{−6}\frac{N}{m}.$
 
-Interestingly, the values σ∼10−6 to 10−4N/m are similar to the order-of-magnitude estimate for the surface tension of in vivo liquid droplets more apparent in large oocytes and embryos. For example a surface tension around 10-5N/m was estimated for the nucleolar interface in oocytes (Brangwynne et al., 2011) or 10-6N/m for germline P-granules liquid droplets interface with the cytoplasm in c. elegans (Brangwynne et al., 2009). The comparable values of surface tensions suggest that despite differences in their sizes, our diffraction-sized clusters may have the same droplet-like properties as previously reported large in vivo condensates. It is also feasible that cluster formation mechanism described in this study may be in play in the formation of larger in vivo condensates reported in other studies.
+Interestingly, the values $\sigma∼10^{−6} to 10^{−4}N/m$ are similar to the order-of-magnitude estimate for the surface tension of in vivo liquid droplets more apparent in large oocytes and embryos. For example a surface tension around $10^{-5}N/m$ was estimated for the nucleolar interface in oocytes (Brangwynne et al., 2011) or $10^{-6}N/m$ for germline P-granules liquid droplets interface with the cytoplasm in c. elegans (Brangwynne et al., 2009). The comparable values of surface tensions suggest that despite differences in their sizes, our diffraction-sized clusters may have the same droplet-like properties as previously reported large in vivo condensates. It is also feasible that cluster formation mechanism described in this study may be in play in the formation of larger in vivo condensates reported in other studies.
 
-## Live cell cluster dynamics reveal key signatures associated with condensing systems
+### Live cell cluster dynamics reveal key signatures associated with condensing systems
 
 Nucleation and growth describes the evolution of a system toward matured, stable clusters. In our live cell imaging, we expected most of the clusters to be unstable because they were either sub-critical or under the influence of RuvBL clearance. Consistent with this expectation, comparable to fixed cells, we find that less than eight percent (<8%) of clusters were in the super-critical size range needed for stability, and most of the tracked clusters did not last as long as the full duration of our live cell experiments (6 min). Of the few that survived, we measured the dynamics of a representative population: we investigated the growth and shrinkage dynamics of 30 individual clusters from seven living cells imaged with the light sheet at 15 s time interval over 6 min. These represent a pool of the largest clusters; smaller clusters than this pool did not last the full 6 min of imaging or could not be tracked.
 
@@ -131,7 +167,7 @@ First, by normalizing the cluster intensity at t = 0, we find that individual 
 
 **Figure 5.:** (A) Aggregate growth and diminution kinetics over a period of 6 min from 30 long-lived aggregates from seven cells. Here, the intensity is normalized to the initial intensity. Color code: red are growing intensity, blue are diminishing intensity, and black represent no change (<10%) between start and end time points. (B) The intensity time traces of the individual aggregates show a clear difference in the global trend with the initially larger aggregates also corresponding to the growing (red) aggregates, and initially smaller aggregates shrinking (blue). Instantaneously all aggregates exhibit individual steps of both growth and diminution, and one small aggregate out of the 30, was seen to grow more than 10%. (C) Schematic depicting the expectations from Ostwald ripening: This coarsening/ripening behavior that large aggregates grow larger while small aggregates diminish is a key dynamic signature of a fluid in phase transition. (D and E) The aggregates coalesce. (D) A montage three aggregates successively coalescing into one aggregate over the period of ~6 min. (E) The intensity trace of the three clusters in (D) shows that in each time upon merging the new droplet is the sum of the two precursor aggregates. Also see Figure 5; Video 1 associated with 4D and 4E and Figure 5; Video 2 for more examples). All cells imaged in this figure were live cells.
 
-This coarsening behavior, that large clusters tend to grow larger while smaller clusters tend to shrink, is a key dynamic signature of complex systems in phase transition, an example of which is the well-known phenomenon of Ostwald ripening (Ostwald, 1897) where larger clusters, owing to the lower curvature at their surface have a reduced pressure differential (Laplace pressure ΔP=2σ/r) across their surface and consequently reduced solubility relative to smaller clusters. Within the framework illustrated in Figure 1 and Figure 4, coarsening can be understood by the fact that smaller condensates have a higher surface to volume ratio and therefore a higher free energy than large condensates; as such, above the critical barrier, large clusters spontaneously grow larger, and in steady state this happens at the detriment of smaller aggregates which will shrink.
+This coarsening behavior, that large clusters tend to grow larger while smaller clusters tend to shrink, is a key dynamic signature of complex systems in phase transition, an example of which is the well-known phenomenon of Ostwald ripening (Ostwald, 1897) where larger clusters, owing to the lower curvature at their surface have a reduced pressure differential (Laplace pressure $ΔP=2\sigma/r$) across their surface and consequently reduced solubility relative to smaller clusters. Within the framework illustrated in Figure 1 and Figure 4, coarsening can be understood by the fact that smaller condensates have a higher surface to volume ratio and therefore a higher free energy than large condensates; as such, above the critical barrier, large clusters spontaneously grow larger, and in steady state this happens at the detriment of smaller aggregates which will shrink.
 
 Instantaneously, any given cluster can exhibit growth and shrinkage steps. And a few small aggregates will stochastically grow to reach super-critical sizes. Consistent with this view, in the time traces of Figure 5B one of the smaller aggregates has grown (red) over the imaging window. These reversible steps are consistent with a thermodynamically driven, probabilistic process.
 
@@ -161,11 +197,203 @@ While our investigation has focused on aggregates related to Parkinson’s disea
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MCF10A</td>
+      <td>ATCC</td>
+      <td>ATCC:CRL10317 RRID: CVCL_0598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line  (H. sapiens)</td>
+      <td>Neuro2A</td>
+      <td>ATCC</td>
+      <td>ATCC:CCL131 RRID: CVCL_0470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Synphilin-GFP</td>
+      <td>Zaarur et al., 2008</td>
+      <td>n/a</td>
+      <td>Generated by Sherman lab - published Zaarur et al., 2008, backbone pCXsbr</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Human Alpha Synuclein</td>
+      <td>Addgene</td>
+      <td>51437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Dendra 2</td>
+      <td>Clonetech USA</td>
+      <td>PDendra2C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Synphilin-Dendra2</td>
+      <td>This Paper</td>
+      <td>n/a</td>
+      <td>Generated from synphilin-gfp and dendra two plasmid above. Available from Cisse lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>alpha Synuclein Dendra2</td>
+      <td>This paper</td>
+      <td>n/a</td>
+      <td>Generated from human alpha Synuclein and Dendra two plasmid above. Available from Cisse lab</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>siGENOME Non-Targeting siRNA #5</td>
+      <td>Dharmacon</td>
+      <td>D-001210–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>siGENOME RUVBL1 siRNA</td>
+      <td>Dharmacon</td>
+      <td>(D-008977–04)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Sigma Aldrich</td>
+      <td>M8699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Sigma Aldrich</td>
+      <td>R8781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma Aldrich</td>
+      <td>C7698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azetidine-2-Carboxylic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>A0760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin</td>
+      <td>Sigma Aldrich</td>
+      <td>C8052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human Insulin</td>
+      <td>Sigma Aldrich</td>
+      <td>I9278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leboqitz L15 medium</td>
+      <td>Sigma Aldrich</td>
+      <td>11415064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrocortisone</td>
+      <td>Sigma Aldrich</td>
+      <td>H0888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dbCAMP</td>
+      <td>Sigma Aldrich</td>
+      <td>D0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ver155008</td>
+      <td>Sigma Aldrich</td>
+      <td>SML0271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher</td>
+      <td>13778030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xtremegene 9</td>
+      <td>Sigma Aldrich</td>
+      <td>6365779001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>qSR</td>
+      <td>Andrews et al. (2018)</td>
+      <td></td>
+      <td>Software made available on repository - http://github.com/cisselab/qSR/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lattice Light sheet processing code</td>
+      <td>Chen et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multiple Target tracking(MTT)</td>
+      <td>Sergé et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 'Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Ibrahim Cisse (icisse@mit.edu)
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Cell lines were generated from MCF-10A (human breast epithelial) cells grown in 50:50 DMEM/F-12 medium supplemented with 5% horse serum, 20 ng/ml epidermal growth factor, 0.5 μg/ml hydrocortisone (Sigma Aldrich), 10 μg/ml human insulin (Sigma Aldrich), and 100 ng/ml cholera toxin (Sigma Aldrich). In all cases, medium was supplemented with Penicillin-Streptomycin and incubated at 37°C in an atmosphere of 5% CO2 in a water-saturated atmosphere.
 
@@ -177,9 +405,9 @@ Neuro2A was maintained in culture in growth medium consisting of 45% of DMEM hig
 
 Differentiation to neuronal state was achieved by simultaneous lowering of serum content to 1% and addition of 0.5 mM dbcAMP (Sigma Aldrich, USA) as suggested in ATCC product manuals. In 2 days of growth, distinctly neuronal morphology was established in ~75% of the cells in culture and alpha Synuclein expression was observed throughout the cell but was enhanced at the tips of the finger-like processes of the cell. The neuronal state of N2A cells under dbcAMP differentiation has been established in the literature (Tremblay et al., 2010)
 
-## Method details
+### Method details
 
-## Genetic and pharmacological treatments
+#### Genetic and pharmacological treatments
 
 The various pharmacological and genetic stresses were applied as follows-
 
@@ -197,13 +425,13 @@ Amino acid substitution: Cells were incubated for 3 hr in normal growth medium c
 
 RUVBL depletion: For siRNA transfection, we used Lipofectamine RNAiMAX (Invitrogen) and followed the manufacturer’s reverse-transfection protocol. For a well on a 24-well plate, we mixed 0.4 μl of the reagent with 2 μl of 10 μM siRNA in 100 μl of OptiMEM and added the mixture to 400 μl of a cell suspension in the well. 24–28 hr later the transfection was stopped and the cells were plated for an experiment conducted the next day. We used the following siRNAs purchased from Dharmacon: siGENOME Non-Targeting siRNA #5 and siGENOME RUVBL1 siRNA (D-008977–04) this stress was measured on two separate occasions (independently cultured and plated imaging dishes).
 
-## Cellular fixation
+### Cellular fixation
 
 Fixation was carried out by 4% Paraformaldehyde (Electron Microscopy Sciences, USA) for 15 min at room temperature. In tests to investigate possible fixation artefacts we varied fixation Paraformaldehyde concentrations and temperatures including a variety of fixation timescales from fixation in. 05% paraformaldehyde at 4C for 16 hr to the conventional fixation for 15 min. Cells were then mostly imaged immediately after fixation but were never stored longer than 5 days before imaging. The storage was at 4C under Phosphate buffered saline in dark conditions. There was no noticeable difference between cells imaged immediately after fixation and a few days after. Different fixation rates showed no difference in the resulting cluster size distributions:
 
-## Imaging
+### Imaging
 
-## Super-resolution imaging
+#### Super-resolution imaging
 
 For imaging, Cells were plated on 25 mm round glass coverslips (CS-25R) from Warner Instruments (Hamden, CT) for 12–24 hr in the specified growth conditions. Cells were either fixed and imaged or imaged live after reaching 50–75% confluence. All imaging was carried out in Leibowitz’s L-15 medium. To conduct PALM Super resolution imaging, we used an optical system built using a Nikon Eclipse Ti microscope with a 100 × oil immersion objective (NA 1.40). Pre-converted Dendra2 was excited by a 488 nm laser line. Photo-activation of Dendra2 was carried out with a 405 nm laser line and in the post-converted state Dendra2 was excited by a 561 nm laser line. These laser lines were, expanded, re-collimated and focussed on the back focal plane of the Microscope in an external optical path using an achromatic beam expander (AC254-040-A and AC508-300-A, from THORLABS, Newton, NJ) and an achromatic converging lens (#45–354, from Edmund Optics, Barrington, NJ). Image data was collected using an Andor iXon Ultra 897 EMCCD camera. The laser power densities used for post-converted Dendra2 were 0.5 W/cm2 (405 nm) and 3.2 kW/cm2 (561 nm) on the image plane.
 
@@ -211,25 +439,25 @@ For live cell imaging the L15 media was supplemented with 10% Fetal Bovine Serum
 
 For fixed cell super-resolution imaging, movies with 10,000 frames, each averaged over 50 ms of exposure time, were acquired with both the excitation and photo-converting lasers on continuously.
 
-## Lattice light sheet imaging
+### Lattice light sheet imaging
 
 For Lattice Light Sheet Microscopy (Chen et al., 2014), cells were plated on gelatine-coated coverslips 24–48 hr before imaging and grown as described above. Imaging took place in L15 medium supplemented with 10% FBS. A lattice light sheet consisting of 61 Bessel beams was generated with an annulus of inner/outer numerical aperture NA 0.44/0.55. Illumination power was 1.3 mW measured before the illumination objective. Volumetric image data with a temporal resolution of 15 s/volume (300 frames) was acquired by stepping cells through the light sheet in intervals of 0.3 µm with 50 ms exposure time using a sCMOS camera (Orca Flash v4.2, Hamamatsu). Images were processed (deskewed) using a modified version of MATLAB (The Mathworks) code supplied by Chen et al. (2014). Analysis was performed on maximum intensity projections of images stacks.
 
-## Super-resolution reconstruction
+### Super-resolution reconstruction
 
 To identify single molecules in raw images of photo-converted Dendra2 fluorescence, the intensity signals were analysed using an adapted version of the multiple-target tracking algorithm (MTT) (Sergé et al., 2008) then we used our open software qSR for visualization, super-resolution reconstruction and DBSCAN. Briefly, for each frame, the point-spread function (PSF) of spatially separated individual fluorophores was detected and fitted to a two-dimensional Gaussian distribution. The centre of the fit yielded the position of single molecules with nanometre accuracy. Super-resolution reconstruction images were generated by superimposing a 2D Gaussian curve with the same intensity value central position and standard deviation as found by the fitting procedure. Finally, the positions of single molecules were fed into the DBSCAN (Ester et al., 1996) implementation custom written to extract meaningful distribution functions from the resulting data. Representative super resolved reconstructions along with zoom-ins showing DBSCAN efficacy in all measured conditions are shown in Figure 1—figure supplement 1.
 
-## Quantification and analysis
+### Quantification and analysis
 
-## DBSCAN image analysis
+#### DBSCAN image analysis
 
 DBSCAN, density-based scanning is a powerful computational technique for identifying correlations in a variety of data (Ester et al., 1996). Using two user chosen parameters, m and r, the algorithm combs through a data set of spatial coordinates – corresponding here to the super resolved localizations from Dendra2 – classifying the points as belonging to clusters if there are at least m points from that cluster within a radius r of the point. Our implementation was included in Andrews et al. (2018) and Andrews et al. (2017).
 
 Parameter choice will depend on the total density of localizations and the relative strength of local density fluctuations constituting clusters, both of these are influenced by imaging conditions. Therefore, parameters must be chosen by careful comparison to an unclustered control dataset acquired keeping total density of localizations as close to constant as possible. Across all data sets we consider the first 10,000 frames (50 ms integration time) for each cell in all experimental treatments and with constant imaging conditions.
 
-We chose r as 40 nm and m as 10. Our choice of parameters was based on running the algorithm on cells transfected with plain Dendra2 as our unclustered control. While super-resolution maps with ~50000 localizations in ~(25μm)2 area for Dendra2 cells gave between 50 and 150 clusters/cell, with the same localization density in Synphilin-Dendra2 cells we found of the order of 1000 clusters per cell. Changing r and m by a factor of 2 did not significantly affect the number of clusters found. Thus our parameter choice (and factors of two on either side of our parameter choice) was effectively eliminating noise and not missing clusters. Lastly, we visually inspected the localization maps and DBSCAN cluster allocations and never encountered a problem. Representative super resolved reconstructions along with zoom-ins showing DBSCAN efficacy in all measured conditions are shown in Figure 1—figure supplement 1.
+We chose r as 40 nm and m as 10. Our choice of parameters was based on running the algorithm on cells transfected with plain Dendra2 as our unclustered control. While super-resolution maps with ~50000 localizations in ~$(25\mum)^{2}$ area for Dendra2 cells gave between 50 and 150 clusters/cell, with the same localization density in Synphilin-Dendra2 cells we found of the order of 1000 clusters per cell. Changing r and m by a factor of 2 did not significantly affect the number of clusters found. Thus our parameter choice (and factors of two on either side of our parameter choice) was effectively eliminating noise and not missing clusters. Lastly, we visually inspected the localization maps and DBSCAN cluster allocations and never encountered a problem. Representative super resolved reconstructions along with zoom-ins showing DBSCAN efficacy in all measured conditions are shown in Figure 1—figure supplement 1.
 
-## Analysis of cluster size distributions (Super-resolution)
+### Analysis of cluster size distributions (Super-resolution)
 
 Computation of the cluster size distribution functions was carried out in the following steps:
 
@@ -237,22 +465,22 @@ DBSCAN was run on 10,000 frames for each cell in a given experimental condition.
 
 For each cluster identified by DBSCAN, the number of localizations making up the cluster and their spatial spread as estimated by drawing a convex hull around the points (Radius R) were tabulated. Data from all cells in similar conditions were collated. Since our uncertainty in super-resolved molecular positions is ~20 nm we discarded all clusters (collections of points with at least m = 10 neighbours) with diameter spanning less than 50 nm.
 
-Next for each cluster we calculated the quantity n=(R in nm/1nm)3. In each experimental condition, we have ~ 10000 clusters collated from ~ 10 cells. In data from untreated cells, > 90% of these clusters had n values less than n=2×106. In highly clustered experimental data sets such as 180 minutes post proteasome inhibition, the proportion of large clusters increased. However, the majority of clusters were still less than n=2×106. The value of n corresponding to a critical size was always less than n=2×106 depending on the experimental condition. The cluster size distribution functions in the main text and this supplement were fit to the theoretical form solely in the sub-critical range where the theory is valid (which is also where the majority of our cluster data lay).
+Next for each cluster we calculated the quantity $n=(Rinnm/1nm)^{3}$. In each experimental condition, we have ~ 10000 clusters collated from ~ 10 cells. In data from untreated cells, > 90% of these clusters had n values less than $n=2\times10^{6}$. In highly clustered experimental data sets such as 180 minutes post proteasome inhibition, the proportion of large clusters increased. However, the majority of clusters were still less than $n=2\times10^{6}$. The value of n corresponding to a critical size was always less than $n=2\times10^{6}$ depending on the experimental condition. The cluster size distribution functions in the main text and this supplement were fit to the theoretical form solely in the sub-critical range where the theory is valid (which is also where the majority of our cluster data lay).
 
-The cluster size distribution functions in each experimental condition were computed from normalized histograms of the collated cluster n values from that experimental condition with a constant bin size across all data sets (Δn=3×104). The main concern is to have enough data to be able to choose sufficiently small bins to effectively sample the fastest variations in the underlying distribution function without hitting a noise floor. This is the Nyquist criterion for binning. With more than 5000 clusters ranging for each condition from n=1.5×104 to n=2×106 (the sub-critical regime) we had sufficient data that even bins of size Δn=5000– dividing the sub-critical regime into ~400 bins – resulted in histograms that were noiseless enough to fit and sampling the distribution very accurately. Data reported is with Δn=3×104 the results of fitting the distribution function are insensitive to changing the bin size down to Δn=5000 (<2% change in estimated Rc).
+The cluster size distribution functions in each experimental condition were computed from normalized histograms of the collated cluster n values from that experimental condition with a constant bin size across all data sets ($Δn=3\times10^{4}$). The main concern is to have enough data to be able to choose sufficiently small bins to effectively sample the fastest variations in the underlying distribution function without hitting a noise floor. This is the Nyquist criterion for binning. With more than 5000 clusters ranging for each condition from $n=1.5\times10^{4}$ to $n=2\times10^{6}$ (the sub-critical regime) we had sufficient data that even bins of size $Δn=5000$– dividing the sub-critical regime into ~400 bins – resulted in histograms that were noiseless enough to fit and sampling the distribution very accurately. Data reported is with $Δn=3\times10^{4}$ the results of fitting the distribution function are insensitive to changing the bin size down to $Δn=5000$ ($<2%$ change in estimated $R_{c}$).
 
-For ease of presentation, we note that the probability distribution function is Probn= Ae-∆G(n) where A enforces normalization. However A is determined by the fit parameters a and b since ∫0ncProbn=1 implies =1/∫0nce-∆G(n). Then -Log(Probn=∆Gn-Log(A), where Log refers to the natural log (base ‘e’). Therefore, in order to read the nucleation barrier directly from the –Log(P(n) curve, we must add an offset Log(A). Equivalently this amounts to a self-consistent normalization of our experimentally measured distribution function such that A is 1. This procedure just contributes an offset to the –Log(P(n)) curves without affecting critical radius and permits ease of presentation as it allows direct reading of the barrier height from the – Log(P(n)) graphs.
+For ease of presentation, we note that the probability distribution function is $Probn=Ae^{-\DeltaG(n)}$ where A enforces normalization. However A is determined by the fit parameters a and b since $\int_{0}^{n_{c}}Probn=1$ implies $=1/\int_{0}^{n_{c}}e^{-\DeltaG(n)}$. Then $-Log(Probn=\DeltaGn-Log(A)$, where Log refers to the natural log (base ‘e’). Therefore, in order to read the nucleation barrier directly from the –Log(P(n) curve, we must add an offset $Log(A)$. Equivalently this amounts to a self-consistent normalization of our experimentally measured distribution function such that A is 1. This procedure just contributes an offset to the –Log(P(n)) curves without affecting critical radius and permits ease of presentation as it allows direct reading of the barrier height from the – Log(P(n)) graphs.
 
-Fitting of the experimentally measured cluster size distribution functions to the theoretical functional form was carried out using the Mathematica implementation of least squares linear regression routine included in the LinearModelFit command. Errors in values of Rc reported standard error of the mean from the best fit (computed, for instance using the MeanConfidenceBand object property of the LinearModelFit package in Mathematica).
+Fitting of the experimentally measured cluster size distribution functions to the theoretical functional form was carried out using the Mathematica implementation of least squares linear regression routine included in the LinearModelFit command. Errors in values of $R_{c}$ reported standard error of the mean from the best fit (computed, for instance using the MeanConfidenceBand object property of the LinearModelFit package in Mathematica).
 
-The range of n values for fitting data is important to determine. The theoretical form is only expected to hold below the critical size and diverges above the critical size. This sets an upper bound on range of data to use. However, the more data points you include the tighter the error bars on the fit parameters. The fitting range was determined self consistently by fitting data up to that value of n which was 80% of the critical radius predicted by the fit. In practice, this amounted to fitting up to n∼8×105 for the case of 180 min of proteasome inhibition (when the predicted critical size was n~1×106) and fitting up to n~1.5×106 for the case of untreated cells where the critical size corresponded to n~2×106. The larger error bars in the 3 hour proteasome inhibited case than in the untreated cell reflect both the greater spread in the data (fewer total clusters) and smaller available fitting range. The residuals in Fig. 1 depend slightly on the data range used to fit and subtract the n2/3 term and consequently only qualitative conclusions (such as the sign of slope) should be drawn from relative comparisons between data sets fit identically. Our procedure was to always fit the range n < 2×105 in all data sets and using bin size 5000 in this range.
+The range of n values for fitting data is important to determine. The theoretical form is only expected to hold below the critical size and diverges above the critical size. This sets an upper bound on range of data to use. However, the more data points you include the tighter the error bars on the fit parameters. The fitting range was determined self consistently by fitting data up to that value of n which was 80% of the critical radius predicted by the fit. In practice, this amounted to fitting up to $n∼8\times10^{5}$ for the case of 180 min of proteasome inhibition (when the predicted critical size was $n~1\times10^{6}$) and fitting up to $n~1.5\times10^{6}$ for the case of untreated cells where the critical size corresponded to $n~2\times10^{6}$. The larger error bars in the 3 hour proteasome inhibited case than in the untreated cell reflect both the greater spread in the data (fewer total clusters) and smaller available fitting range. The residuals in Fig. 1 depend slightly on the data range used to fit and subtract the n2/3 term and consequently only qualitative conclusions (such as the sign of slope) should be drawn from relative comparisons between data sets fit identically. Our procedure was to always fit the range n < $2\times10^{5}$ in all data sets and using bin size 5000 in this range.
 
-The distribution of sub-critical cluster sizes P(n) is a Boltzmann distribution only in terms of the extensive variable ntot, the total number of polypetides in the cluster. Our analysis has been in terms of the defined parameter n=(R1 nm)3. As defined, n should be proportional to the total number of molecules in the cluster as we image only a fraction of fluorescently detected molecules which constitute only one species in our aggregates (Figure 1—figure supplement 3). However, the critical radius and nucleation barrier may be computed immune to a multiplicative constant in the definition of n=(R1 nm)3. This can be seen by asking what would happen were we to misrepresent the cluster size ntot by an arbitrary multiplicative factor k. Then ntot, the real cluster size would be replaced by n'=kntot. The free energy measured in terms of n' would be ΔG(n′)=−b′n′+a′n′2/3. The relation between primed parameters and the unprimed – true – parameters would be b=b'k and a=a'k2/3. Now the true value of the barrier height is ΔG(ntotc)=−bntotc+antotc2/3 with ntotc=2a3b3 the critical size. If we used the scaled variables b’ and a’ we would get
+The distribution of sub-critical cluster sizes P(n) is a Boltzmann distribution only in terms of the extensive variable $n_{tot}$, the total number of polypetides in the cluster. Our analysis has been in terms of the defined parameter $n=(\frac{R}{1 nm})^{3}.$ As defined, n should be proportional to the total number of molecules in the cluster as we image only a fraction of fluorescently detected molecules which constitute only one species in our aggregates (Figure 1—figure supplement 3). However, the critical radius and nucleation barrier may be computed immune to a multiplicative constant in the definition of $n=(\frac{R}{1 nm})^{3}$. This can be seen by asking what would happen were we to misrepresent the cluster size $n_{tot}$ by an arbitrary multiplicative factor k. Then $n_{tot}$, the real cluster size would be replaced by $n^{'}=kn_{tot}$. The free energy measured in terms of $n^{'}$ would be $ΔG(n^{′})=−b^{′}n^{′}+a^{′}n^{′2/3}$. The relation between primed parameters and the unprimed – true – parameters would be $b=b'k$ and $a=a'k^{2/3}$. Now the true value of the barrier height is $ΔG(n_{tot}_{c})=−bn_{tot_{c}}+an_{tot_{c}}^{2/3}$ with $n_{tot}_{c}=\frac{2a}{3b}^{3}$ the critical size. If we used the scaled variables b’ and a’ we would get
 
-ΔG(nc′)=−b′nc′+a′nc′2/3= -b'2a'3b'3+a'(2a'3b'3 )2/3
+$ΔG(n_{c}^{′})=−b^{′}n_{c}^{′}+a^{′}n_{c}^{′}^{2/3}$= $-b'\frac{2a^{'}}{3b^{'}}^{3}+a'(\frac{2a'}{3b'}^{3})^{2/3}$
 
-On substitution, the factor k cancels out to yield ΔG(nc′)= −bnc+a nc23=ΔG(nc). That is, even if we had cluster size parameter n incorrect by a multiplicative factor, we can measure the barrier height (in terms of KT assuming ambient temperature as the relevant factor for thermalization). Similarly any multiplicative error made in converting R to n’ can be shown to cancel when converting n'c back to Rc. For estimation of critical radius, we used the turning point of the fit function ΔG(n) to estimate critical size and then converted from nc to Rc This procedure makes the determination of Rc independent of any multiplicative factor in the definition of n as this same factor appears in nc and is cancelled out on going back from nc to Rc.
+On substitution, the factor k cancels out to yield $ΔG(n_{c}^{′})= −bn_{c}+a n_{c}^{\frac{2}{3}}=ΔG(n_{c})$. That is, even if we had cluster size parameter $n$ incorrect by a multiplicative factor, we can measure the barrier height (in terms of KT assuming ambient temperature as the relevant factor for thermalization). Similarly any multiplicative error made in converting R to n’ can be shown to cancel when converting $n'_{c}$ back to Rc. For estimation of critical radius, we used the turning point of the fit function $ΔG$(n) to estimate critical size and then converted from nc to Rc This procedure makes the determination of Rc independent of any multiplicative factor in the definition of n as this same factor appears in nc and is cancelled out on going back from nc to Rc.
 
-## Analysis of live cell (light sheet) data
+### Analysis of live cell (light sheet) data
 
 Light sheet data was analyzed to extract both distribution of cluster intensity and time evolution.

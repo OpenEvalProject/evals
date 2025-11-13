@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45973.001 The deactivated CRISPR/Cas9 (dCas9) is now the most widely used gene activator. However, current dCas9-based gene activators are still limited by their unsatisfactory activity. In this study, we developed a new strategy, the CRISPR-assisted trans enhancer, for activating gene expression at high efficiency by combining dCas9-VP64/sgRNA with the widely used strong CMV enhancer. In this strategy, CMV enhancer DNA was recruited to target genes in trans by two systems: dCas9-VP64/csgRNA-sCMV and dCas9-VP64-GAL4/sgRNA-UAS-CMV. The former recruited trans enhancer by annealing between two short complementary oligonucleotides at the ends of the sgRNA and trans enhancer. The latter recruited trans enhancer by binding between GAL4 fused to dCas9 and UAS sequence of trans enhancer. The trans enhancer activated gene transcription as the natural looped cis enhancer. The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells, with much higher activation efficiency than that of current dCas9 activators.
+The deactivated CRISPR/Cas9 (dCas9) is now the most widely used gene activator. However, current dCas9-based gene activators are still limited by their unsatisfactory activity. In this study, we developed a new strategy, the CRISPR-assisted trans enhancer, for activating gene expression at high efficiency by combining dCas9-VP64/sgRNA with the widely used strong CMV enhancer. In this strategy, CMV enhancer DNA was recruited to target genes in trans by two systems: dCas9-VP64/csgRNA-sCMV and dCas9-VP64-GAL4/sgRNA-UAS-CMV. The former recruited trans enhancer by annealing between two short complementary oligonucleotides at the ends of the sgRNA and trans enhancer. The latter recruited trans enhancer by binding between GAL4 fused to dCas9 and UAS sequence of trans enhancer. The trans enhancer activated gene transcription as the natural looped cis enhancer. The trans enhancer could activate both exogenous reporter genes and variant endogenous genes in various cells, with much higher activation efficiency than that of current dCas9 activators.
 
 ## Introduction
 
@@ -33,45 +33,87 @@ In this study, mimicking the natural enhancer activating gene expression by a lo
 
 ## Results
 
-## Principle of gene activation by a CRISPR-assisted trans enhancer
+### Principle of gene activation by a CRISPR-assisted trans enhancer
 
 The principle of activating gene expression by a CRISPR-assisted trans enhancer is schematically illustrated in Figure 1a. A capture sgRNA (csgRNA) was produced by adding a capture sequence to the 3′ end of a normal sgRNA sequence. A linear stick-end CMV (sCMV) enhancer was produced by adding a 3′ end single-strand overhang. The overhang can anneal with the csgRNA capture sequence. When dCas9 protein was guided to the promoter of the target gene by csgRNA, sCMV could be recruited by csgRNA. The recruited sCMV may activate the transcription of the target gene like a natural looped cis enhancer. Because the dCas9/csgRNA-anchored sCMV functions as a transcription factors in trans, we named it a trans enhancer to distinguish it from the natural cis enhancer.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig1-v2.jpg)
 
-**Figure 1.:** trans enhancer and evaluation of designed csgRNAs.(a) Schematic illustration of the principle of gene expression activation by the CRISPR-assisted trans enhancer. A capture sequence is added to the 3′ end of sgRNA, which is used to capture a trans CMV enhancer with a single-stranded overhang that can anneal with the capture sequence of sgRNA. The captured trans CMV enhancer may function like the natural looped cis enhancer to activate transcription of the gene of interest, including exogenous and endogenous genes. (b) In vitro target DNA cutting by the Cas9-csgRNA complex. DNA fragments (732 bp) amplified from the HNF4α promoter region were, respectively, cut by the Cas9/csgRNA and Cas9/sgRNA complexes. csgRNA1, csgRNA2 and csgRNA3 had the same target sequence but different capture sequences.
+**Figure 1.:** (a) Schematic illustration of the principle of gene expression activation by the CRISPR-assisted trans enhancer. A capture sequence is added to the 3′ end of sgRNA, which is used to capture a trans CMV enhancer with a single-stranded overhang that can anneal with the capture sequence of sgRNA. The captured trans CMV enhancer may function like the natural looped cis enhancer to activate transcription of the gene of interest, including exogenous and endogenous genes. (b) In vitro target DNA cutting by the Cas9-csgRNA complex. DNA fragments (732 bp) amplified from the HNF4α promoter region were, respectively, cut by the Cas9/csgRNA and Cas9/sgRNA complexes. csgRNA1, csgRNA2 and csgRNA3 had the same target sequence but different capture sequences.
 
-## Effect of capture sequence on the function of sgRNA
+### Effect of capture sequence on the function of sgRNA
 
 To determine whether the capture sequence affects the function of sgRNA, we prepared a normal sgRNA and three csgRNAs targeting the same site of the HNF4α promoter. The three csgRNAs had different capture sequences. We used these sgRNAs to associate with the Cas9 endonuclease to cut a 732 bp HNF4α promoter fragment. The results indicated that the target DNA could be digested by all sgRNAs (Figure 1b), indicating that the capture sequence did not affect the sgRNA function.
 
-## Activation of exogenous reporter gene by trans enhancer
+### Activation of exogenous reporter gene by trans enhancer
 
 To determine whether the CRISPR-assisted trans enhancer activates gene expression, we constructed a reporter construct of HNF4α promoter (pEZX-HP-ZsGreen). 293 T cells were then transfected with various vectors (Figure 2a, Figure 2—figure supplement 1). The transfection indicated that ZsGreen expression could be successfully activated by dCas9/csgRNA2-sCMV but not activated by dCas9/csgRNA2-blunt CMV (bCMV). Although the dCas9/csgRNA2-sCMV showed a similar activation level to Cas9-VP64/sgRNA, it was far inferior to cis CMV enhancer. To improve the performance of trans CMV, we tried transfecting 293 T cells with dCas9-VP64/csgRNA2-sCMV. The results indicated that ZsGreen expression was highly activated by the transfection. In contrast, the dCas9-VP64/csgRNA2-bCMV showed a similar activation level to dCas9-VP64/sgRNA. These data revealed that the trans CMV not only truly functioned in trans via dCas9/csgRNA, but also synergistically interacted with dCas9-fused VP64. Subsequent transfections indicated that ZsGreen expression could also be highly activated by combination of dCas9-VP64, sCMV and other two csgRNAs, csgRNA1 and csgRNA3.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-v2.jpg)
+
+**Figure 2.:** (a) Transcriptional activation of reporter gene ZsGreen in various cells transfected by different vectors. The florescence intensity of cells was analyzed by flow cytometry and is shown as the mean fluorescence intensity (MFI). Transfections: DVS, dCas9-VP64/sgRNA; DSC, dCas9/csgRNA-sCMV; DVSC, dCas9-VP64/csgRNA-sCMV. (b) Comparison between trans enhancer and VPR. Cells were transfected with three different transcriptional activation systems to activate reporter gene ZsGreen. The florescence intensity of cells was analyzed by flow cytometry and the number of cells with certain fluorescence intensity was counted. Transfections: Lipo, lipofectin; DVS, dCas9-VP64/sgRNA; DVPRS; dCas9-VPR/csgRNA; DVSC, dCas9-VP64/csgRNA-sCMV.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cells were transfected by various vectors. Cells were photographed with a fluorescent microscope and their florescence was analyzed by flow cytometry. The reporter gene activation efficiency was indicated by the percentage of cells with green fluorescence over the threshold (cells in Q1-UR quadrant).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig2-figsupp4-v2.jpg)
+
 To further verify the function of CRISPR-assisted trans enhancer, we transfected six different cell lines with reporter construct and dCas9-VP64/csgRNA2-sCMV, dCas9/csgRNA2-sCMV, or dCas9-VP64/sgRNA (Figure 2b; Figure 2—figure supplement 2–4). The results revealed that dCas9-VP64/csgRNA2-sCMV always showed the highest gene activation efficiency in all cell lines. Additionally, dCas9/csgRNA2-sCMV always showed higher activity than dCas9-VP64/sgRNA. These results indicate that genes could be activated by the CRISPR-assisted trans enhancer. Importantly, the trans sCMV could synergistically function with dCas9-fused VP64 in gene activation.
 
-## Comparison of trans CMV enhancer with VPR
+### Comparison of trans CMV enhancer with VPR
 
 Having shown that VPR is a more potent transcriptional activation domain than VP64, we next compared the trans enhancer with VPR. 293T and HepG2 cells were, respectively, transfected with reporter construct and dCas9-VP64/csgRNA, dCas9-VPR/csgRNA, or dCas9-VP64/csgRNA-sCMV (Figure 2c). The results showed that dCas9-VPR/csgRNA had better activity than dCas9-VP64/csgRNA as previously reported. However, the dCas9-VP64/csgRNA-sCMV always showed significantly higher activity than dCas9-VPR/csgRNA.
 
-## Activation of endogenous genes by trans enhancer
+### Activation of endogenous genes by trans enhancer
 
 To further evaluate the activity of CRISPR-assisted trans enhancer, we activated endogenous genes with trans sCMV. csgRNAs targeting ten different genes was designed and their linear expression vectors were produced. Seven different cell lines were transfected with dCas9-VP64/csgRNA2-sCMV, dCas9-VP64/sgRNA and dCas9/csgRNA2-sCMV (Figure 3—figure supplement 1). The quantitative PCR (qPCR) detection of gene expression revealed that almost all genes were most significantly activated by dCas9-VP64/csgRNA2-sCMV in all cells. Moreover, most genes were more significantly activated by dCas9/csgRNA-sCMV than dCas9-VP64/sgRNA in all cells. These results suggest that the CRISPR-assisted trans enhancer could be used to activate variant endogenous genes in various cells. In addition, by activating the HNF4α gene in 293 T cells, we found that dCas9-VP64/csgRNA-sCMV had better activity than dCas9-VPR/csgRNA-sCMV in activating endogenous genes (Figure 3—figure supplement 2).
 
 It has been reported that the cancer cells HepG2 and PANC1 can be differentiated into normal liver- and pancreas-like cells by exogenously expressing transcription factor HNF4α and E47. In the above assays, we found that the endogenous HNF4α and E47 genes were highly activated by the CRISPR-assisted trans enhancer in HepG2 and PANC1 cells (Figure 3). To further confirm the cellular effects of HNF4α and E47 activation, we detected expressions of other genes related to the differentiation of the two cancer cells (Figure 4). The results indicated that the genes related to stemness (CD133 and CD90) and pluripotency (Oct3/4, Sox2, Nanog, c-Myc, LIN28, and Klf4) were down-regulated, but those related to normal liver (GS, BR, ALDOB, CYP1a2, PEPCK, APOCIII, G-6-P, and HPD) and pancreas (MIST1, PRSS2, CELA3A, and CPA2) functions were highly up-regulated in HepG2 and PANC1 cells. Additionally, the cell cycle arrest-related gene p21 (HepG2 and PANC1) and TP53INP1 (PANC1) were highly up-regulated.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-v2.jpg)
+
+**Figure 3.:** 294T, HepG2 and PANC1 cells were transfected with three different transcriptional activation systems to activate expression of 10 endogenous genes. Gene transcription was detected by qPCR and the expression level is shown as the relative RNA expression fold to house-keeping gene GAPDH. Data are shown as mean ± SD, n = 3. The statistical difference was analyzed using the Student’s t test. *, p<0.05; **, p<0.01; NS, no significant statistical difference. Transfection: DVS, dCas9-VP64/sgRNA; DSC, dCas9/csgRNA2-sCMV; DVSC, dCas9-VP64/csgRNA2-sCMV.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A549, HeLa, SKOV, and HT29 cells were transfected with three different transcriptional activation systems to activate the expression of 10 endogenous genes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The 293 T cell was transfected with various vectors to activate the endogenous HNF4α gene. The HNF4α and GAPDH genes were detected with qPCR.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig4-v2.jpg)
 
 **Figure 4.:** (a and b) Changes of gene expression in the HNF4α-activated HepG2 cells (a) and E47-activated PANC-1 cells (b). The gene transcription was detected by qPCR and the expression level is shown as the relative RNA expression fold to house-keeping gene GAPDH. Data are shown as mean ± SD, n = 3. The statistical difference was analyzed by Student’s t test. *, p<0.05; **, p<0.01; NS, no significant statistical difference. Transfection: Lipo, lipofectin; DVS, dCas9-VP64/sgRNA; DVSC, dCas9-VP64/csgRNA2-sCMV.
 
-## Activation of genes by other trans enhancers
+### Activation of genes by other trans enhancers
 
 To explore whether other enhancers could be also used as trans enhancers, we fabricated the blunt- and stick-end versions of two other widely used promoters EF1a and PGK (bEF1a, bPGK, sEF1a, and sPGK). 293 T cells were co-transfected with these trans enhancers and dCas9-VP64/csgRNA and reporter construct. The results indicated that the ZsGreen expression was also activated by the two trans enhancers; however, the activation levels were lower than that of sCMV (Figure 5a, Figure 5—figure supplement 1). All other transfections as controls did not activate ZsGreen expression (Figure 5a, Figure 5—figure supplement 1). The qPCR detection of HNF4α expression in the same transfected 293 T cells revealed that the endogenous HNF4α gene expression was also significantly activated by three stick-end trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b). Subsequent HepG2 cell transfections with the same trans enhancers and dCas9-VP64/csgRNA indicated that the endogenous HNF4α gene expression could also be significantly activated by all stick-ended trans enhancers, but not activated by all blunt-ended trans enhancers (Figure 5b). These results indicate that the variant enhancers could be used as the CRISPR-assisted trans enhancer.
 
-## Activation of genes by the GAL4/UAS-based trans enhancer
+![Figure 5.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig5-v2.jpg)
+
+**Figure 5.:** (a) Activation of exogenous reporter gene ZsGreen. The fluorescence intensity of cells was analyzed with flow cytometry. (b) Activation of endogenous HNF4α gene in 293T and HepG2 cells with two new trans enhancers, sEF1a and sPGK. The sCMV was used as a positive control for comparison. The blunt-end trans enhancers (bEF1a and bPGK) were also used as controls. Data are shown as mean ± SD, n = 3. The statistical difference was analyzed using Student’s t test. *, p<0.05; **, p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Activation of exogenous ZsGreen gene in 293 T cells with two new trans enhancers, sEF1a and sPGK. (b) Flow cytometry analysis of ZsGreen expression.
+
+### Activation of genes by the GAL4/UAS-based trans enhancer
 
 To further improve in vivo application of the CRISPR-assisted trans enhancer, we tried realizing the trans enhancer with the GAL4-UAS system. A dCas9-VP64-GAL4 expression vector and a UAS-CMV trans enhancer was constructed. Two forms of trans UAS-CMV enhancers, linear UAS-CMV (LUAS-CMV) and circular UAS-CMV (CUAS-CMV), were expected to be recruited to the target gene by the dCas9-VP64-fused GAL4 (Figure 6a). By transfecting 293 T cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV and reporter construct, the ZsGreen expression of the exogenous reporter gene was significantly activated by both LUAS-CMV and CUAS-CMV, but not activated by all transfections as controls (Figure 6b, Figure 6—figure supplement 1). By transfecting 293T and HepG2 cells with dCas9-VP64-GAL4/sgRNA-LUAS-CMV/CUAS-CMV, the expression of endogenous HNF4α gene was highly activated in the two cells (Figure 6c). More importantly, both trans LUAS-CMV and CUAS-CMV enhancers showed significantly higher activity than the trans sCMV (Figure 6c). In contrast, all transfections as controls did not activate the expression of endogenous HNF4α gene in the two cells (Figure 6c). These results reveal that the CRISPR-assisted trans enhancer could be better realized with the GAL4-UAS system.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic show of gene activation using the GAL4-UAS-based CRISPR-assisted trans enhancer. (b) Activation of exogenous reporter gene ZsGreen. The fluorescence intensity of cells was analyzed with flow cytometry. (c) Activation of endogenous HNF4α gene in 293T and HepG2 cells with the GAL4-UAS-based CRISPR-assisted trans enhancer. The sCMV was used as a positive control for comparison. Three other transfections were used as controls. LUAS-CMV, linear UAS-CMV; CUAS-CMV, circular UAS-CMV. Data are shown as mean ± SD, n = 3. The statistical difference was analyzed by Student’s t-test. *, p<0.05; **, p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45973/elife-45973-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Activation of exogenous ZsGreen gene in 293 T cells with the GAL4-UAS-based CRISPR-assisted trans enhancer. (b) Flow cytometry analysis of ZsGreen expression.
 
 ## Discussion
 
@@ -89,7 +131,7 @@ In this study, we selected 10 endogenous genes to be activated by the CRISPR-ass
 
 ## Materials and methods
 
-## Vector construction
+### Vector construction
 
 A lac operon fragment was amplified from pEASY-Blunt-simple (Transgen) using primers Lac-px-F and Lac-px-R. The product was ligated into px458 (Addgene) to construct px458-lac using BbsI (NEB) and BsaI (NEB). The U6-sgRNA-lac fragment was amplified from px458-lac using primers U6-F and U6-R/U6-1-R/U6-2-R/U6-3-R. The products were cloned into the pEASY-Blunt-simple to produce pEASY-sgRNA and pEASY-csgRNA (Supplementary file 2), which were used to construct particular sgRNA/csgRNA expressing plasmids. The sgRNAs targeting genes of interest were designed by CHOPCHOP. Chemically synthesized complementary oligonucleotides containing sgRNA/csgRNA targets were annealed and ligated into pEASY-sgRNA/pEASY-csgRNA. The ligation reaction consisted of 10 U BbsI (NEB), 120 U T4 DNA ligase (NEB), 1 × T4 DNA ligase buffer, 0.1 mg/mL bovine serum albumin, and 50 ng plasmid pEASY-csgRNA. The reaction was run as follows: 10 rounds of 37 °C5 min and 16°C 10 min, 37°C 30 min, and 80°C 5 min. The reaction was then used to transfect DH5α competent cells. The white clones were screened by blue-white screening on LB agar plates with 100 µg/mL ampicillin, 40 µL of 20 mg/mL X-gal, and 40 µL of 0.1 M IPTG. The vectors were validated by sequencing, then the linear sgRNA/csgRNA expression vectors were amplified from the validated pEASY-sgRNA/pEASY-csgRNAs using primers U6-F and U6-R/U6-1-R/U6-2-R/U6-3-R. The primer U6-R was used to amplify the normal sgRNA expression template (named as U6-sgRNA) from pEASY-sgRNA. The primer U6-1/2/3 R was used to amplify the csgRNA expression template (named as U6-csgRNA) from pEASY-csgRNA. The PCR products were purified with PCR clean kit (Axygen) and used to transfect cells as sgRNA/csgRNA expression vector.
 
@@ -101,26 +143,26 @@ The GAL4 fragment was amplified from pGBKT7 (MiaoLing Plasmid Sharing Platform) 
 
 The sequences of all PCR primers used in the above vector construction are shown in the Supplementary file 1–Table 1. The chemically synthesized complementary oligonucleotides used to construct pEASY-sgRNA/pEASY-csgRNA are shown in the Supplementary file 1–Table 2. The functional sequences of all linear and plasmid vectors are provided as Supplementary file 3.
 
-## DNA cutting with Cas9-csgRNA
+### DNA cutting with Cas9-csgRNA
 
 A sgRNA targeting the HNF4α promoter sequence was selected. The sgRNAs were prepared by in vitro transcription using T7 RNA polymerase (NEB). The sgRNA transcription template was amplified from pEASY-csgRNA using primers HNF4α-T7-F and U6-R/U6-1-R/U6-2-R/U6-3-R. A normal sgRNA (HNF4α-sgRNA) and three csgRNAs (HNF4α-csgRNAs) were prepared. A 732 bp HNF4α promoter fragment was amplified from pEZX-HP-ZsGreen using primers HNF4α-sP-F and HNF4α-sP-R. The sequences of PCR primers are shown in the Supplementary file 1-Table 1. The Cas9 digestion reaction (30 μL) consisted of 1 × Cas9 Nuclease Reaction Buffer, 1 µM Cas9 Nuclease (NEB), and 300 nM HNF4α-sgRNA or HNF4α-csgRNA. The reaction was incubated at 25°C for 10 min. Then 400 ng of purified 732 bp HNF4α promoter fragment was added to the reaction and incubated at 37°C for 15 min. Finally, the Cas9 nuclease was inactivated at 65°C for 10 min. The reaction was run with 1.5% agarose gel electrophoresis.
 
-## Cell lines
+### Cell lines
 
 All cells including 293T, HepG2, PANC1, A549, HeLa, SKOV3, and HT29 were obtained from the Shanghai Institutes for Biological Sciences, Chinese Academy of Sciences. The identity was authenticated by STR profiling. Mycoplasma contamination testing was performed and no mycoplasma contamination was ensured.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM) or Roswell Park Memorial Institute (RPMI) 1640 medium supplemented with 10% FBS, 100 units/mL penicillin, and 100 µg/mL streptomycin. Cells at >70% confluence in each well of a 12-well plate were transfected with various combinations (see figures) of linear or plasmid vectors, including pcDNA-dCas9, pcDNA-dCas9-VP64, pcDNA-dCas9-VPR, U6-sgRNA, U6-csgRNA, sCMV, bCMV, and pEZX-HP-ZsGreen, using Lipofectamine 2000 (ThermoFisher Scientific) according to the manufacturer’s instructions. The transfected cells were incubated at 37°C and 5% CO2 for 36 h. Cells were then imaged with a fluorescence microscope (Olympus) at 200 × magnification.
 
-## Flow cytometry
+### Flow cytometry
 
 The fluorescence intensity of cells was quantified with flow cytometry (Calibur). Ten-thousand cells were measured for each transfection. Flow cytometry data analysis and figure preparation were done using BD software.
 
-## Quantitative PCR
+### Quantitative PCR
 
 The total RNA was extracted from cells using TRIzol (Invitrogen). The complementary DNA (cDNA) was synthesized with 3 μg of total RNA using the Hifair III SuperMix (Yeasen). Gene transcription was detected with quantitative PCR (qPCR) using the Hieff qPCR SYBR Green Master Mix (Yeasen) according to the manufacturer’s instructions. GAPDH was used as an internal reference to analyze the relative mRNA expression of different genes. The sequences of PCR primers are shown in the Supplementary file 1-Table 3 and 4. The qPCR programs were run on StepOne Plus (Applied Biosystems). Each qPCR detection was performed in at least three technical replicates. Melting curve analysis was performed. Data analysis was performed using the Applied Biosystems StepOne software v2.3, and Ct values were normalized with that of GAPDH. The relative expression level of target mRNAs was calculated as relative quantity (RQ) according to the equation: RQ = 2-ΔΔCt.
 
-## Statistical analyses
+### Statistical analyses
 
 Each cell transfection for detecting gene expression activation by trans enhancer was performed in three biological replicates. In each biological replicate, at least three technical replicates (three replicate wells) were performed. In qPCR detection of gene expression, the mean RQ value of technical replicates was used as the RQ value of one biological replicate. The mean RQ value of three biological replicates was used to calculate the final mean and standard deviation (SD). Data were analyzed by Student’s t test when comparing two groups. Data are shown as mean ± SD, and differences were considered significant at p<0.05.

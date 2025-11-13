@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Older age is a strong shared risk factor for many chronic diseases, and there is increasing interest in identifying aging biomarkers. Here, a proteomic analysis of 1301 plasma proteins was conducted in 997 individuals between 21 and 102 years of age. We identified 651 proteins associated with age (506 over-represented, 145 underrepresented with age). Mediation analysis suggested a role for partial cis -epigenetic control of protein expression with age. Of the age-associated proteins, 33.5% and 45.3%, were associated with mortality and multimorbidity, respectively. There was enrichment of proteins associated with inflammation and extracellular matrix as well as senescence-associated secretory proteins. A 76-protein proteomic age signature predicted accumulation of chronic diseases and all-cause mortality. These data support the use of proteomic biomarkers to monitor aging trajectories and to identify individuals at higher risk of disease to be targeted for in depth diagnostic procedures and early interventions.
+Older age is a strong shared risk factor for many chronic diseases, and there is increasing interest in identifying aging biomarkers. Here, a proteomic analysis of 1301 plasma proteins was conducted in 997 individuals between 21 and 102 years of age. We identified 651 proteins associated with age (506 over-represented, 145 underrepresented with age). Mediation analysis suggested a role for partial cis-epigenetic control of protein expression with age. Of the age-associated proteins, 33.5% and 45.3%, were associated with mortality and multimorbidity, respectively. There was enrichment of proteins associated with inflammation and extracellular matrix as well as senescence-associated secretory proteins. A 76-protein proteomic age signature predicted accumulation of chronic diseases and all-cause mortality. These data support the use of proteomic biomarkers to monitor aging trajectories and to identify individuals at higher risk of disease to be targeted for in depth diagnostic procedures and early interventions.
 
 ## Introduction
 
@@ -43,19 +43,352 @@ To address the limitations of our previous US-based study, here we examined asso
 
 ## Results
 
-## Association of protein abundance and chronological age
+### Association of protein abundance and chronological age
 
 Plasma proteomic profiling was conducted on 997 individuals (45% men, 55% women) between the ages of 21–98 years (average 66.3 ± 15.4 years) from the baseline visit of the InCHIANTI study (Table 1, Table 1—source data 1). A global burden of chronic diseases calculated as the number of 15 common chronic diseases that affected the participants at the time of assessment, hereafter referred to as multimorbidity, was progressively higher at older ages. The prevalence of all common diseases except for chronic obstructive pulmonary disease and Parkinson’s disease was higher in the older age groups (Table 1, Table 1—source data 1). Of the 997 participants, 504 (50.6%) died over the 18 year follow-up period.
 
+**Table 1.**
+ Clinical and demographic characteristics of 997 InCHIANTI subjects at baseline visit.Table 1—source data 1.Phenotypic data of the InCHIANTI study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Overall</th>
+      <th colspan="2">20–60 years</th>
+      <th colspan="2">60–70 years</th>
+      <th colspan="2">70–80 years</th>
+      <th colspan="2">80+ years</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td colspan="2">997</td>
+      <td colspan="2">203</td>
+      <td colspan="2">285</td>
+      <td colspan="2">380</td>
+      <td colspan="2">129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (yrs)</td>
+      <td>66.3</td>
+      <td>(15.4)</td>
+      <td>40.1</td>
+      <td>(11.1)</td>
+      <td>66.4</td>
+      <td>(2.2)</td>
+      <td>73.9</td>
+      <td>(2.7)</td>
+      <td>84.9</td>
+      <td>(3.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>% Women</td>
+      <td>549</td>
+      <td>(55.1)</td>
+      <td>106</td>
+      <td>(52.2)</td>
+      <td>152</td>
+      <td>(53.3)</td>
+      <td>207</td>
+      <td>(54.5)</td>
+      <td>84</td>
+      <td>(65.1)</td>
+      <td>0.097</td>
+    </tr>
+    <tr>
+      <td>% Ripoli</td>
+      <td>517</td>
+      <td>(51.9)</td>
+      <td>98</td>
+      <td>(48.3)</td>
+      <td>147</td>
+      <td>(51.6)</td>
+      <td>192</td>
+      <td>(50.5)</td>
+      <td>80</td>
+      <td>(62.0)</td>
+      <td>0.084</td>
+    </tr>
+    <tr>
+      <td>% death</td>
+      <td>504</td>
+      <td>(50.6)</td>
+      <td>9</td>
+      <td>(4.4)</td>
+      <td>109</td>
+      <td>(38.2)</td>
+      <td>259</td>
+      <td>(68.2)</td>
+      <td>127</td>
+      <td>(98.4)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Follow-up time (yrs)</td>
+      <td>15.0</td>
+      <td>(4.9)</td>
+      <td>18.4</td>
+      <td>(1.6)</td>
+      <td>16.6</td>
+      <td>(3.8)</td>
+      <td>14.1</td>
+      <td>(4.8)</td>
+      <td>8.7</td>
+      <td>(4.0)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Number of common diseases</td>
+      <td>1.3</td>
+      <td>(1.3)</td>
+      <td>0.3</td>
+      <td>(0.5)</td>
+      <td>1.2</td>
+      <td>(1.1)</td>
+      <td>1.7</td>
+      <td>(1.3)</td>
+      <td>2.3</td>
+      <td>(1.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>375</td>
+      <td>(37.6)</td>
+      <td>18</td>
+      <td>(8.9)</td>
+      <td>120</td>
+      <td>(42.1)</td>
+      <td>168</td>
+      <td>(44.2)</td>
+      <td>69</td>
+      <td>(53.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>183</td>
+      <td>(18.4)</td>
+      <td>22</td>
+      <td>(10.8)</td>
+      <td>36</td>
+      <td>(12.6)</td>
+      <td>88</td>
+      <td>(23.2)</td>
+      <td>37</td>
+      <td>(28.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Cognitive impairment</td>
+      <td>177</td>
+      <td>(17.8)</td>
+      <td>3</td>
+      <td>(1.5)</td>
+      <td>29</td>
+      <td>(10.2)</td>
+      <td>82</td>
+      <td>(21.6)</td>
+      <td>63</td>
+      <td>(48.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>103</td>
+      <td>(10.3)</td>
+      <td>4</td>
+      <td>(2.0)</td>
+      <td>32</td>
+      <td>(11.2)</td>
+      <td>47</td>
+      <td>(12.4)</td>
+      <td>20</td>
+      <td>(15.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Lower extremities joint disease</td>
+      <td>84</td>
+      <td>(8.4)</td>
+      <td>1</td>
+      <td>(0.5)</td>
+      <td>18</td>
+      <td>(6.3)</td>
+      <td>49</td>
+      <td>(12.9)</td>
+      <td>16</td>
+      <td>(12.4)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Peripheral artery disease</td>
+      <td>76</td>
+      <td>(7.6)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>14</td>
+      <td>(4.9)</td>
+      <td>39</td>
+      <td>(10.3)</td>
+      <td>23</td>
+      <td>(17.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Anemia</td>
+      <td>74</td>
+      <td>(7.4)</td>
+      <td>10</td>
+      <td>(4.9)</td>
+      <td>13</td>
+      <td>(4.6)</td>
+      <td>28</td>
+      <td>(7.4)</td>
+      <td>23</td>
+      <td>(17.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Ischemic heart disease</td>
+      <td>54</td>
+      <td>(5.4)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>16</td>
+      <td>(5.6)</td>
+      <td>27</td>
+      <td>(7.1)</td>
+      <td>11</td>
+      <td>(8.5)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Chronic obstructive pulmonary disease</td>
+      <td>50</td>
+      <td>(5.0)</td>
+      <td>3</td>
+      <td>(1.5)</td>
+      <td>18</td>
+      <td>(6.3)</td>
+      <td>23</td>
+      <td>(6.1)</td>
+      <td>6</td>
+      <td>(4.7)</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>48</td>
+      <td>(4.8)</td>
+      <td>1</td>
+      <td>(0.5)</td>
+      <td>18</td>
+      <td>(6.3)</td>
+      <td>24</td>
+      <td>(6.3)</td>
+      <td>5</td>
+      <td>(3.9)</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Stroke</td>
+      <td>34</td>
+      <td>(3.4)</td>
+      <td>1</td>
+      <td>(0.5)</td>
+      <td>3</td>
+      <td>(1.1)</td>
+      <td>22</td>
+      <td>(5.8)</td>
+      <td>8</td>
+      <td>(6.2)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Congestive heart failure</td>
+      <td>28</td>
+      <td>(2.8)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>6</td>
+      <td>(2.1)</td>
+      <td>16</td>
+      <td>(4.2)</td>
+      <td>6</td>
+      <td>(4.7)</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Hip fracture</td>
+      <td>22</td>
+      <td>(2.2)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>3</td>
+      <td>(1.1)</td>
+      <td>12</td>
+      <td>(3.2)</td>
+      <td>7</td>
+      <td>(5.4)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Chronic kidney disease</td>
+      <td>8</td>
+      <td>(0.8)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>2</td>
+      <td>(0.5)</td>
+      <td>6</td>
+      <td>(4.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Parkinson's disease</td>
+      <td>6</td>
+      <td>(0.6)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>2</td>
+      <td>(0.7)</td>
+      <td>2</td>
+      <td>(0.5)</td>
+      <td>2</td>
+      <td>(1.6)</td>
+      <td>0.354</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data represent mean (SD) for continuous variables and n (%) for categorical variable._
+
 The association of 1301 SOMAmers with chronological age was examined using a linear model. Of the 1301 proteins tested, 651 proteins (506 overrepresented and 145 underrepresented with age) were associated with chronological age at Benjamini-Hochberg false discovery rate (B-H FDR)≤0.05 (Figure 1A; Figure 1—source data 1). The percent variation in protein abundances explained by age ranged from 0.3% to 50.6%. When the analysis was adjusted for the burden of chronic disease, 537 proteins (82.5%) remained significantly associated with age, with small effects on the strength of the association. Specifically, the effect size (or beta estimates) of the regression model changed by 30% or more in only 35 of these proteins (6.5%). These findings suggest that the majority of variance in these proteins was accounted by age ‘per se’ rather than age-related differences of health status. To validate the finding, we used data from a cohort 240 healthy subjects from the Baltimore Longitudinal Study on Aging (BLSA) and the Genetic and Epigenetic Signatures of Translational Aging Laboratory Testing (GESTALT) using in the previous publication (Tanaka et al., 2018). Of the 651 proteins that were significantly associated with age in the InCHIANTI study, 60% (395 proteins) were significantly associated with age in the BLSA/GESTALT study. To identify additional age-associated proteins, a meta-analysis of associations results from the BLSA-GESTALT and the InCHIANTI study was performed. There were 735 proteins associated with age 596 higher abundance with age, 139 lower abundance with age; (Figure 1—figure supplement 1, Figure 1—source data 2). We compared these findings with results from the INTERVAL/LonGenity study using the 3K SOMAscan platform, with 1.3K SOMAscan platform used in the InCHIANTI study. Of the 735 age-associated proteins, 511 were measured in the INTERVAL/LonGenity study and 346 (68%) proteins were significantly associated with age, and more importantly for 286 (56%) proteins, the directions of age association were concordant (Figure 1B). There were 224 novel age-associated proteins discovered in the 1.3K platform.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig1-v2.jpg)
+
+**Figure 1.:** (A) The volcano plot displays the results from the association of 1301 proteins with chronological age in the InCHIANTI study (N = 997; Figure 1—source data 1). The figure displays the effect size, or the beta coefficient for age (βage) from the linear model, against significance presented as the -log10(P-value). Of the 1301 proteins, 651 proteins associated were associated with age. (B) Comparison of the age-associated proteins discovered using the 1.3K SOMAscan platform in the INCHIANTI/BLSA/GESTALT studies (Figure 1—source data 2) with the analysis using the 3K SOMAscan platform in the INTERVAL/LONGEVITY study (Lehallier et al., 2019). There were 346 proteins that were significant in both studies, and 286 of these proteins the direction of association with age were concordant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The results from the InCHIANTI study and BLSA/GESTALT (Tanaka et al., 2018) study was completed using the inverse-variance meta-analysis. Volcano plot displays the meta-analysis results for the 1301 proteins. The figure displays the effect size, or the beta coefficient for age (βage) from the linear model, against significance presented as the -log10(P-value).
 
 Next, we examined whether association between protein abundance with age was modified by sex. Of the 1301 proteins tested, there were 427 proteins with sex differences in protein abundance, 328 of which were overrepresented in women and 99 overrepresented in men (Figure 2A, Figure 2—source data 1). As expected, the most significant differences were observed for proteins with known sex differences such as PSA (higher in men), and FSH, leptin, HCG (higher in women) which can be considered as powerful positive controls. To test the robustness of these association, these results were compared to results from INTERVAL study (Lehallier et al., 2019). Of the 427 proteins associated with sex in the InCHIANTI study, 294 (68.9%) were measured in the INTERVAL study (Figure 2—source data 1). Of these, 230 proteins (78.2%) were associated with sex in the same direction with the INTERVAL study, reflecting the robustness of sex-associated proteins. Next, we tested whether sex modified any of the associations between age and protein abundances. Overall, we discovered 50 proteins that showed significant differences in the association with age-by-sex (Figure 2B, Figure 2—source data 1). The most significant sex-difference was observed for sex hormone-binding globulin, that showed a strong significant rise with aging in men but no age-trend in women (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig2-v2.jpg)
 
-**Figure 2.:** (A) Volcano plot displaying the results from the association of 1301 proteins with sex in the InCHIANTI study (Figure 2—source data 1). There were 427 proteins (black circles) with differential expression by sex. The figure displays the effect size, or the beta coefficient for sex (βage) where a positive value are proteins with overrepresentation in women, and a negative value are proteins overrepresented in men. The y-axis show the significance presented as the -log10 (P-value). (B) Volcano plot displaying the analysis to explore the differences in age association by sex (Figure 2—source data 1). The values represent the beta estimates for the interaction term between sex and age from the linear model. There were 50 proteins (black circles) with differential age association by sex. A positive effect size are proteins where the age association is more positive in women, conversely a negative effect size reflect proteins where the age association is more positive in men. (C) Scatterplot displaying the relationship between protein sex hormone binding globulin (SHBG) and age stratified by sex. In men, SHBG values were higher in older ages (+) whereas no age association was observed in women (Δ).Figure 2—source data 1.
+**Figure 2.:** (A) Volcano plot displaying the results from the association of 1301 proteins with sex in the InCHIANTI study (Figure 2—source data 1). There were 427 proteins (black circles) with differential expression by sex. The figure displays the effect size, or the beta coefficient for sex (βage) where a positive value are proteins with overrepresentation in women, and a negative value are proteins overrepresented in men. The y-axis show the significance presented as the -log10 (P-value). (B) Volcano plot displaying the analysis to explore the differences in age association by sex (Figure 2—source data 1). The values represent the beta estimates for the interaction term between sex and age from the linear model. There were 50 proteins (black circles) with differential age association by sex. A positive effect size are proteins where the age association is more positive in women, conversely a negative effect size reflect proteins where the age association is more positive in men. (C) Scatterplot displaying the relationship between protein sex hormone binding globulin (SHBG) and age stratified by sex. In men, SHBG values were higher in older ages (+) whereas no age association was observed in women (Δ).
 
-## Age–protein association and mediation by methylation
+### Age–protein association and mediation by methylation
 
 Several lines of research suggest that DNA methylation affects gene transcription and by this mechanism may also affect protein expression. Given the robust literature indicating that DNA methylation changes systematically with aging, we tested whether the association of protein abundance and age can be explained in part by age-related changes in DNA methylation in circulating white blood cells. In 460 subjects with both methylation and proteomic data, a mediation analysis was conducted to test the hypothesis that changes in protein concentrations with aging are mediated by epigenetic regulation, namely changes in percent methylation in CpG sites located within 10 kb of the protein coding gene. This was performed in four steps. In the first step, we identified proteins that were associated with age in the subcohort with both proteomic and methylation data. Of the 651 age-associated proteins in the full cohort, a subset of 499 proteins were significantly associated with age in this sub-cohort. Of these 499 age-associated proteins, 485 were expressed by genes on autosomal chromosomes. Since some of the aptamer probes target protein complexes, those 485 proteins were encoded by 494 genes. In the second step, we identify age-associated CpG loci. Of the 472,138 CpG sites measured, 170,780 were significantly associated with age. There was significant enrichment of age-associated CpG loci within 10 kb of genes coding for age-associated proteins compared with genes coding for other proteins assayed by the SOMAscan assay used here (41.8% vs 37.9% respectively, p=0.0001). In the third step, the existence of a possible mediation effect was tested by regressing protein abundance with age, adjusted for age-associated CpG. For 449 out of the 494 genes, there was at least one CpG that mediated the association between age and protein abundance (Psobel <0.05; Supplementary file 1A). On average 7.8% (range 0.3–31.2%) of the age-associated CpG methylation mediated the association between age and protein abundance. The percent mediation ranged from 2% to 100%. The most significant mediation was observed for ectonucleotide pyrophosphatase/phosphodiesterase 7 (ENPP7), member of the ectonucleotide pyrophosphatase/phosphodiesterase family implicated in phospholipids and cholesterol metabolism with a CpG cg15739835. There is a positive association of ENPP7 abundance with age, and this association is attenuated when adjusted for cg15739835 methylation (Figure 3A). There is negative association between cg15739835 methylation with age, reflecting lower methylation at older age at this CpG site (Figure 3B). These data suggest that the higher abundance in ENPP7 at older age may be explained by lower gene silencing since methylation is reduced at older age.
 
@@ -63,27 +396,27 @@ Several lines of research suggest that DNA methylation affects gene transcriptio
 
 **Figure 3.:** Mediation analysis in 460 subjects with DNA methylation and proteomic data was conducted with Baron and Kenny method (Supplementary file 1A). The most significant mediation was observed for ectonucleotide pyrophosphatase/phosphodiesterase 7 (ENPP7). (A) Scatterplot displaying the association of plasma ENPP7 with age (solid line) and attenuation of the association after adjustment for methylation at cg15739835. (B) Scatterplot displaying the negative association between methylation at cg15739835 with age.
 
-## Association of age-related proteins with all-cause mortality
+### Association of age-related proteins with all-cause mortality
 
 The association of age-associated proteins with all-cause mortality was tested with cox proportional hazards model. Of the 651 age-associated proteins in the InCHIANTI study, the model for 26 proteins violated the proportional hazards assumption. Of the remaining 625 proteins, 497 proteins were associated with all-cause mortality and 193 of them remained significantly associated with mortality after adjusting for covariates (age, sex, study site) (Figure 4—source data 1). For the 26 proteins where the proportional hazard assumption was not met, stratified analyses showed that 25 of the proteins were predictive of all-cause mortality in the first time interval of 10 or 15 years (Figure 4—source data 2). Among the proteins that were associated with age, there was an enrichment for inflammatory pathways (TNF-activated receptor activity and chemokine receptor binding), regulation of gene expression (DNA methylation, meiosis, epigenetic regulation of gene expression), and extracellular matrix (activation of matrix metalloproteinases, basement membrane, extracellular matrix organization) (Figure 4A). The most frequent pathway annotations among proteins were interleukin-10 signaling (35.71%), EPH receptor signaling (28.57%), and chemokines (7.14%). Cellular senescence is widely regarded as a basic aging process that drives numerous pathologies of aging via the secretion of a protein milieu known as the senescence-associated secretory phenotype (SASP) (Coppé et al., 2008). Senescent cells and the SASP are a potential source of circulating pro-aging factors in plasma (Wiley et al., 2019). We previously reported an enrichment of core SASP factors among plasma biomarkers of healthy aging (Tanaka et al., 2018; Basisty et al., 2020). Among 175 mortality-associated proteins that increased with age, we identified 13 core SASP factors, including 3 of the four top core SASP signature proteins recently described (Basisty et al., 2020) - GDF15, MMP1, and STC1 – and other extensively reported classical SASP factors (IGFBP2 and 4, TIMP1 and 2, and IL-6) (Figure 4B). Chronological age alone was a strong predictor of all-cause mortality (C-index 0.78). The plasma proteins most predictive of all-cause mortality in a univariate model were GDF15 C-index 0.75IGFBP2 (C-index 0.73), and B2M (C-index 0.72). After adjustment for age, sex and study site (C-index 0.79), the most predictive proteins were GDF15 (C-index 0.80), TFF3 (C-index 0.80), and PI3 (C-index 0.80; Figure 4C). In a multi-protein model, the best model is composed of 8 predictors, which includes age and proteins IGFBP2, MMP12, EGFR, NPPB, GDF15, PI3, and GHR (C-index 0.84, Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig4-v2.jpg)
 
-**Figure 4.:** Of the 651 age-associated proteins, 218 was associated with all-cause mortality (Figure 4—source data 1). (A) Pathway enrichment analysis of age-associated proteins predictive of all-cause mortality. (B) There were 13 core senescence-associated secretory proteins (SASP) among the proteins that predict mortality. (C) Scatterplot displaying the performance (c-index) of plasma proteins that predict all-cause mortality (y-axis) against the proportion of variance in age that is explained by the biomarker (Rsq) on the x-axis. (D) Forest plot to display the effect of 8 plasma proteins that significantly predicted all-cause mortality in a multi-protein model.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** Of the 651 age-associated proteins, 218 was associated with all-cause mortality (Figure 4—source data 1). (A) Pathway enrichment analysis of age-associated proteins predictive of all-cause mortality. (B) There were 13 core senescence-associated secretory proteins (SASP) among the proteins that predict mortality. (C) Scatterplot displaying the performance (c-index) of plasma proteins that predict all-cause mortality (y-axis) against the proportion of variance in age that is explained by the biomarker (Rsq) on the x-axis. (D) Forest plot to display the effect of 8 plasma proteins that significantly predicted all-cause mortality in a multi-protein model.
 
-## Association of age-related proteins with multimorbidity
+### Association of age-related proteins with multimorbidity
 
 We next tested the association of age-related proteins with prospective development of 15 common diseases (see Materials and methods). On average, there was an increase in 0.18 comorbid diseases per year over a 10 year follow-up period in the study cohort. Of the 651 age-associated proteins, 549 proteins were associated with changes in multimorbidity, and 295 proteins remained significantly associated with subsequent rates of change in multimorbidity after adjustment for covariates (baseline age, sex, study site) (Figure 5—source data 1). Morbidity-associated proteins were strongly enriched for inflammatory pathways (interleukin-7 signaling, cytokine receptor interaction, senescence-associated secretory phenotype), regulation of IGF transport and uptake by IGFBPs, regulation of gene expression (HDMs demethylate histones, meiosis, SIRT1 negatively regulates rRNA, histone modifications, DNA methylation), and amyloid fiber formation (Figure 5A). However, the most frequent pathway annotations were cell proliferation (42.4%), receptor regulator activity (20.3%), and chemotaxis (10.2%). Among 247 multimorbidity-associated proteins that increased with age, we identified 17 core SASP factors, including three top core SASP proteins - GDF15, MMP1, and STC1 – and other extensively reported classical SASP factors (IGFBP2, 4, 5, and 7, TIMP1 and 2) (Figure 5B). Among the SASP, 11 proteins were associated both with mortality and multimorbidity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig5-v2.jpg)
 
-**Figure 5.:** Of the 651 age-associated proteins, 295 was associated with all-cause mortality (Figure 5—source data 1). (A) Pathway enrichment analysis of age-associated proteins predictive of multimorbidity. (B) There were 13 core senescence-associated secretory proteins (SASP) among the proteins that predict mortality. Scatterplot displaying the proportion of variance (Rsq) of age explained by protein (x-axis) with relationship (Rsq) with protein with baseline multimorbidity (y-axis) (C) and trajectory of multimorbidity over 10 years in subjects free of disease at baseline (y-axis) (E). Forest plot to display the effect of six and five plasma proteins that predict baseline (D) and trajectory of multimorbidity (F).Figure 5—source data 1.
+**Figure 5.:** Of the 651 age-associated proteins, 295 was associated with all-cause mortality (Figure 5—source data 1). (A) Pathway enrichment analysis of age-associated proteins predictive of multimorbidity. (B) There were 13 core senescence-associated secretory proteins (SASP) among the proteins that predict mortality. Scatterplot displaying the proportion of variance (Rsq) of age explained by protein (x-axis) with relationship (Rsq) with protein with baseline multimorbidity (y-axis) (C) and trajectory of multimorbidity over 10 years in subjects free of disease at baseline (y-axis) (E). Forest plot to display the effect of six and five plasma proteins that predict baseline (D) and trajectory of multimorbidity (F).
 
 As expected, older chronological age was significantly associated with greater increase in the number of comorbid diseases (β = 0.005 (0.002), p<0.001). The proteins most significantly associated with prospective rise of multimorbidity were GDF15 (b = 0.072 [0.003], B-H FDR = 8.64×10−88), NPPB (b = 0.066 [0.003], B-H FDR = 9.27×10−71), and PTN (b = 0.064 [0.003], p=5.01×10−65). After adjustment for age, sex and study site, the proteins most significantly associated with prospective rise of multimorbidity were GDF15 (b = 0.044 [0.04], B-H FDR = 4.370.53 × 10−19), NPPB (b = 0.038 [0.004], B-H FDR = 2.78×10−18), and TFF3 (b = 0.033 [0.004], B-H FDR = 4.90×10−17); Figure 5C. The most predictive multi-protein model included age and proteins NPPB, GDF15, MMP12, SMOC1, TNFRSF1B, and FSTL3 (Adj-Rsq = 0.43, Figure 5D).
 
 We further investigated whether age-associated proteins can predict development of multimorbidity in subjects who were free of disease at baseline (N = 310). On average, there was an increase in 0.13 comorbid diseases per year over a 10 year follow-up period in these participants. Of the 651 age-associated proteins, 285 proteins were associated with increase in multimorbidity, and 20 proteins were associated independent of age, sex and study site (Figure 5—source data 1). The proteins most significantly associated with prospective rise of multimorbidity were PTN (b = 0.052 [0.01], B-H FDR = 0.004), TNFRSF1A (b = 0.038 [0.004], B-H FDR = 0.004), and ANGPT2 (b = 0.036 [0.009], B-H FDR = 0.007); Figure 5E. The most predictive multi-protein model included age and proteins PTN, MMP12, CHI3L1, FABP3, and CCDC80 (Adj-Rsq = 0.45, Figure 5F).
 
-## Differential protein expression across age-span
+### Differential protein expression across age-span
 
 Lehallier et al. described important non-linear expression of proteins with age, with distinct waves of differential expression at the fourth, sixth and eight decade of life (Lehallier et al., 2019). Using the sliding-window analysis developed by the group, we explored whether similar patterns of proteomic changes could be observed in our data. Consistent with the results from the study by Lehallier and colleagues (Lehallier et al., 2019), there was a peak wave of differential expression at 78 years of age where 635 proteins were differentially expressed using a 20 year age bin (Supplementary file 1B). These findings were confirmed in analyses that used alternative age bins of 10 and 30 years (Figure 6A). There were no clear peaks at younger decades. Of the proteins identified at older age (at 78 years), 63% had been already captured using a linear model. To explore the clinical significance of the proteins identified using linear models in the sliding-window analysis, we tested whether there was enrichment of proteins associated with age-related diseases in the ranked list of age-associated proteins at 78 years, 61 years, and 41 years as well as age-associated proteins from the linear model. There was significant enrichment of proteins associated with all-cause mortality (Figure 6B) and multimorbidity (Figure 6C) in proteins identified in the linear model and at 61 years and 78 years but not at 41 years.
 
@@ -91,7 +424,7 @@ Lehallier et al. described important non-linear expression of proteins with age,
 
 **Figure 6.:** (A) Differential expression of protein across different ages was explored suing a sliding-window analysis using an age window of 10, 20, and 30 years (Supplementary file 1B). Peak association was observed at age 78 while no clear peaks were observed at younger ages. Cumulative number of proteins associated with all-cause mortality (A) and multimorbidity (B) was compared in the ranked age-associated proteins at the different age waves (41, 61 and 78 years) and from the linear models.
 
-## Mendelian randomization
+### Mendelian randomization
 
 To explore causal relationship between genetically determined plasma proteins and age-related phenotypes, we implemented a MR strategy using genetic variants from previously published protein quantitative trait loci (pQTL) analyses of plasma proteins for 10 proteins (GDF15, MMP12, NPPB, GHR, PI3, SMOC1, TNFRSF1B, IGFBP2, EGFR, FSTL3) identified across analyses of multimorbidity and mortality (Sun et al., 2018). Aging traits that reflect the diseases in the multimorbidity index were targeted as outcomes, including hypertension, type 2 diabetes, ischemic heart disease, myocardial infarction, ischemic stroke, cardioembolic stroke, prostate cancer, lung cancer, ovarian cancer, Parkinson’s disease, depressive disorder, Alzheimer’s disease, and rheumatoid arthritis as binary variables, as well as bone mineral density, estimated bone mineral density (BMD), hemoglobin and blood cell distribution width as continuous traits (Supplementary file 1C). We found that genetically higher NPPB was associated with lower risk of hypertension (OR = 0.974 [0.947, 0.981]); MMP12 with lower risk of CHD (OR = 0.94 [0.91, 0.98]), MI (OR = 0.94 [0.90, 0.98]), and ischemic stroke (OR = 0.90 [0.84, 0.96]); PI3 with increased risk of MI (OR = 1.07 [1.00, 1.15]), both ischemic (OR = 1.12 [1.01, 1.25]) and cardioembolic stroke (OR = 1.26 [1.02, 1.55]), lung cancer (OR = 1.20 [1.06, 1.36]), and rheumatoid arthritis (OR = 1.11 [1.01, 1.23]); SMOC1 with higher eBMD (β = 0.03 [0.01, 0.06]), Hb (β = 0.05 [0.02, 0.07]), lower RDW (β = −0.10 [-0.13,–0.08]); and GHR with lower eBMD (β = −0.05 [-0.09,–0.01]) (Figure 7A,B). No significant results were observed with genetic instruments for GDF15 and TNFRSF1B.
 
@@ -99,11 +432,23 @@ To explore causal relationship between genetically determined plasma proteins an
 
 **Figure 7.:** A two-sample Mendelian randomization (MR) was conducted for 18 age-related disease and endophenotypes using genetic instrument identified in the INTERVAL study for seven age-associated proteins (Sun et al., 2018) and (Supplementary file 1C). Forest plot displaying the results from the two-way MR for age-related disease (A) and endophenotypes (B).
 
-## Proteomic signatures of age
+### Proteomic signatures of age
 
 We show that individual age-related proteins are predictive of both all-cause mortality and accumulation of multimorbidity independent of chronological age. We previously developed proteomic signature of chronological age based on 76 proteins (Supplementary file 1D; Tanaka et al., 2018). Recent data suggest that the proteomic clock developed based on the aptamer-based technology is robust. Interestingly, Lehallier et al developed a parsimonious proteomic clock based on nine proteins using data from the ~3000 protein SOMAscan platform (Lehallier et al., 2019). Of the nine proteins in this proteomic clock, six proteins were measured by the 1.3K platform used in the InCHIANTI study, and five out of the six proteins measured are part of the 76-protein signature. There is high correlation between the predicted age based on the two proteomic clocks (r = 0.88; Figure 8—figure supplement 1) as well as the measure of age acceleration based on the two clocks (r = 0.65; Figure 8—figure supplement 1).
 
 We tested whether the 76-protein signature of age is associated with all-cause mortality and multimorbidity in the InCHIANTI study. The correlation between predicted age (PROage) from the 76-protein signature and observed chronological age in the InCHIANTI study was 0.87 (Figure 8A). Since the BLSA/GESTALT cohort included subjects who were free of physical and cognitive diseases, we applied the same health criteria to the InCHIANTI study. When examining just within the subjects that met the ‘healthy’ criteria, the correlation between PROage and observed age was 0.91. In the subjects who did not meet the ‘healthy’ criteria, the correlation was lower at 0.76 (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig8-v2.jpg)
+
+**Figure 8.:** A proteomic age predictor was created using 76 proteins and a measure of protein biological age was calculated as the residuals (PROaccel) from the regression model of chronological age with predicted age (PROage; Supplementary file 1D). (A) Scatter plot of PROage with chronological age. The correlation was higher in subjects free of disease (circle) compared to subject with co-morbidities (cross). Subjects that were greater PROaccel display greater increase in multimorbidity (B) and in higher risk for all-cause mortality in subjects older than 65 years of age (C). The proteomic age was compared with existing epigenetic age clocks. The proteomic signature of age was consistent with other aging clocks including methylation age (Horvath, 2013) (D), GRIMage (Lu et al., 2019) (E), and phenotypic age (Levine et al., 2015) (F). Age acceleration or measure of biological age based on proteomic signature was not correlated with biological aging measured by methylation clock (G), but was correlated with biological age based on GRIMage (H) and phenotypic age (I).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The 76-protein age predictor was compared with the parsimonious 9-protein model developed by Lehallier (Lehallier et al., 2019). The scatter plot displays the correlation between the two proteomic signature of age (A) and the measure of age acceleration (deviation of predicted age and observed age) based on 76 proteins (x-axis) with the 9-protein model (y-axis) (B).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/61073/elife-61073-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The association of age-associated proteins with trajectory of multimorbidity was examined in 310 subjects that were free of chronic diseases at baseline. Being biologically older (proteomic signature of age is greater than chronological age) displays greater increase in multimorbidity during a 10 year follow period.
 
 To determine whether PROage can be used as a measure of ‘biological’ age, we examined its association with two important age-related phenotypes: number of coexisting chronic diseases (multimorbidity) and all-cause mortality. Both PROage and chronological age were significantly associated with the number of coexisting diseases (p<0.05). We considered the measure of biological age as the residuals (PROaccel) from the regression line between PROage and age. Having a positive PROaccel would indicate that the individual is older than their chronological age based on proteomic data. We categorized the subjects as fast- vs slow-agers based on having positive or negative PROaccel values, respectively. In subjects over 65 years, there was an average increase of 0.21 comorbidities per year. And in subjects who were ‘biologically’ older there was greater increase in number of comorbidities by 0.03 diseases per year compared to subjects who were biologically younger (p=1.17×10−5; Figure 8B). The association of PROaccel remained significant and the point estimate remained at an annual change of 0.03 after account for non-linear effects with the inclusion of quadratic and/or cubic term for age in the model. We further tested is PROaccel was predictive of developing chronic diseases in subjects free of disease at baseline. We found that independently of chronological age, being biologically older was associated with faster accumulation of age-related diseases by 0.05 diseases per year (p=0.004; Figure 8—figure supplement 2).
 
@@ -131,41 +476,41 @@ In summary, in this study 651 age-associated proteins were identified that are a
 
 ## Materials and methods
 
-## Subjects and methods
+### Subjects and methods
 
 The InCHIANTI study is a community-based cohort study based in the Tuscan region of Italy. This study was conducted in the ‘Invecchiare in Chianti’ (Aging in the Chianti Area, InCHIANTI) study. The InCHIANTI study is a population-based epidemiological study aimed at evaluating factors that influence mobility in the older population living in the Chianti region in Tuscany, Italy. Details of the study have been previously reported (Ferrucci et al., 2000). Briefly, 1616 residents were selected from the population registry of Greve in Chianti (a rural area: 11,709 residents with 19.3% of the population older than 65 years of age) and Bagno a Ripoli (Antella village near Florence; 4704 inhabitants, with 20.3% older than 65 years of age). The participation rate was 90% (n = 1453) and subjects' age ranged between 21 and 102 years. Overnight fasted blood samples were used for genomic DNA extraction and genotyping. The study protocol (exemption #11976) was approved by the Italian National Institute of Research and Care of Aging Institutional Review and Medstar Research Institute (Baltimore, MD) and approved by the Internal Review Board of the National Institute for Environmental Health Sciences (NIEHS). All participants provided written informed consent.
 
 Sociodemographic information (age, sex) was obtained during a structured interview. Mortality data were evaluated for up to 20 years following the baseline visit (1998–2000), assessed using the mortality general registry maintained by the Tuscany Region and through death certificates submitted to the Registry office of the municipality of residence immediately after death (Zuliani et al., 2017). Whole blood white blood cell differential count was assessed using a Coulter Counter (LH 750 Hematology Autoanalyzer, Beckman Coulter Inc, Brea, CA). Multimorbidity was ascertained based on the presence of 15 diseases (hypertension, diabetes, ischemic heart disease, congestive heart failure, stroke, chronic obstructive pulmonary disease, cancer, Parkinson’s disease, hip fracture, lower extremities joint disease, anemia, PAD, cognitive impairment, chronic kidney disease, and depression) as previously described (Fabbri et al., 2015).
 
-## Proteomic assessment
+### Proteomic assessment
 
 Proteomic profiles for 1322 SOMAmers were assessed using the 1.3 k SOMAscan Assay at the Trans-NIH Center for Human Immunology, Autoimmunity, and Inflammation (CHI), National Institute of Allergy and Infectious Diseases, National Institutes of Health (Bethesda, MD, USA) using the same methods as previously published (Tanaka et al., 2018). Out of the 1322 SOMAmer reagents, 12 hybridization controls, four viral proteins (HPV type 16, HPV type 18, isolate BEN, isolate LW123) and 5 SOMAmers that were reported to be non-specific (P05186; ALPL, P09871; C1S, Q14126; DSG2, Q93038; TNFRSF25, Q9NQC3; RTN4) were removed, thus leaving 1301 SOMAmer reagents in the final analysis. There are 46 SOMAmer reagents that target multicomplex proteins of two or more unique proteins. There are 49 UniProt IDs that are measured by more than one SOMAmer reagent. Thus, the 1301 SOMAmer reagents target 1297 UniProt IDs. Of note, there are four proteins (P05413; FABP3, P48788; TINNI2, P19429; TINNI3, P01160; NPPA) in the final protein panel that are rat homologues of human proteins.
 
 The experimental process for proteomic assessment and data normalization has been previously described (Candia et al., 2017; Cheung et al., 2017). The data reported are SOMAmer reagent abundance in relative fluorescence units (RFU). The abundance of the SOMAmer reagent represents a surrogate of protein concentration in the plasma sample. Data normalization was conducted in three stages. First, hybridization control normalization removes individual sample variance on the basis of signaling differences between microarray or Agilent scanner. Second, median signal normalization removes inter-sample differences within a plate due to technical differences such as pipetting variation. Finally, calibration normalization removes variance across assay runs. Furthermore, there is an additional inter-plate normalization process that utilizes CHI calibrators that allows normalization across all experiments conducted at the CHI laboratory (Candia et al., 2017; Cheung et al., 2017).
 
-## Genome-wide DNA methylation assessment
+### Genome-wide DNA methylation assessment
 
 Details of DNA methylation assessment and QC filtering in the InCHIANTI study have been described elsewhere (Moore et al., 2016). In brief, genomic DNA was extracted from buffy coat samples (white blood cells) collected at the baseline visit and methylation status of ~480,000 CpG were assessed with Illumina Infinium HumanMethylation450 BeadChip (Illumina Inc, San Diego, CA) using manufacturer’s protocol. Quality filtering (bead count, detection rate) and normalization was performed using the DASEN method in the watermelon R package (Pidsley et al., 2013). After filtering CpG with cross-reactive probes, on polymorphic position, and on X or Y chromosomes, 472,139 markers in 460 subjects with both proteomic and methylation data were used for analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Unless noted otherwise, statistical analysis was performed using R, a language and environment for statistical computing and graphics. Protein RFU abundances were natural-log transformed and outliers outside 4SD were removed. Associations of protein with chronological age were assessed by linear regression using the lm function adjusting for sex and study site (base model). A second model was examined with further adjustments for the presence of chronic diseases. The proportion of variation explained by age was calculated as the difference between the adjusted R-square between a model with and without age, while adjusting for sex and study site. To test for differences in age-protein association by sex, an age-by-sex interaction term was included in the base model. For all analyses, a Benjamini–Hochberg false discovery rate (FDR) was applied using the p.adjust function to adjust for multiple testing. Associations were considered significant at FDR < 0.05. A meta-analysis of results from the BLSA/GESTALT study (Tanaka et al., 2018) and InCHIANTI study was performed using a fixed effect inverse-variance meta-analysis using the command-line tool METAL (Willer et al., 2010). Differential expression or non-linear association of proteins with age was conducted using Differential Expression - Sliding-Window ANalysis (DE-SWAN) R package (Lehallier et al., 2019) using an age window of 10, 20 and 30 years. A q-value threshold of ≤0.05 was considered significant.
 
 Association of protein with all-cause mortality was analyzed using follow-up time to death as the time variable. Cox proportional hazard models were assessed adjusting for covariates (age, sex, and study site) using the coxph function from the survival package. For each fully adjusted model, the proportional hazards assumption was tested by examining the correlation of scaled Schoenfeld residuals against time using the cox.zph function. A global p-value≤0.05 was considered a violation of proportional hazard assumption (26 proteins). For these proteins, a stratified analysis was conducted by splitting the follow-up period into two or three intervals and including an interaction term between protein and time-interval strata in the model. Based on the plots of the Schoenfeld residuals versus transformed time, follow-up time was split into two intervals at the mean follow-up year (15 years) for 18 proteins, or into 3 intervals at 12 and 18 years (1st and 3rd quarter) for the remaining eight proteins. To investigate the association of age-related protein with trajectories of multimorbidity, the slope was extracted from a linear mixed model that repeated measurement of number of multi-morbidities over a 10 year period. The associations between slope and age-related protein levels were modeled using linear regression adjusting for covariates. In addition to the single-protein model, for both all-cause mortality and multimorbidity, we used the least absolute shrinkage and selection (LASSO) method (implemented via the glmnet function) to perform variable selection and construct parsimonious multi-protein models. To compare the effect sizes of each protein on mortality or multimorbidity, protein abundances were z-transformed to zero mean and unit variance.
 
-## Mendelian randomization
+### Mendelian randomization
 
 To explore the causal relationship between age-related plasma proteins with chronic diseases, we used a two-sample MR approach. This is accomplished by identifying genetic instrument variable for the exposure (plasma protein levels) and outcome variable (chronic diseases) the estimating the causal effect. The plasma proteins that were associated with all-cause mortality and multimorbidity in the multi-protein models (protein list here) were targeted for MR analysis. Protein quantitative trait loci (pQTL) for these plasma protein levels were selected from a pQTL analyses conducted in the INTERVAL study (Sun et al., 2018). For all proteins except GDF15, there was only one genetic variant that was significantly associated with protein levels; NPPB (rs198389), GDF15 (rs45543339, rs1227734), MMP12 (rs28381684), PI3 (rs16989763), GHR (rs150036324), TNFRSF1B(rs5746017), and SMOC1(rs1958078; Table S4). The chronic disease outcomes tested included 18 trait/diseases (hypertension, type 2 diabetes, ischemic heart disease, coronary heart disease, ischemic heart disease, cardioembolic stroke, chronic kidney disease, prostate cancer, lunch cancer, ovarian cancer, Parkinson’s disease, depressive disorder, Alzheimer’s disease, rheumatoid arthritis, spine bone mineral density, hemoglobin, bone mineral density, red blood cell distribution width) that reflect the 15 diseases used to ascertain multimorbidity status (Hemani et al., 2018). For genetic instrument with one genetic variant, the causal effect was estimated using the Wald ratio (Lawlor et al., 2008). For GDF15, where two genetic variants comprised the genetic instrument, an inverse-variance weighted (IVW) linear regression was used (Bowden et al., 2015). All analysis was conducted using the twosampleMR package in MR-base (Hemani et al., 2018).
 
-## Mediation analysis using methylation
+### Mediation analysis using methylation
 
 Baron and Kenny method was used to test whether age-associated changes in protein levels are mediated by DNA methylation (Baron and Kenny, 1986) in a subset of 460 individuals with both proteomic and genome-wide methylation data. The residuals of proteins and methylation values after adjustment for key covariates were used for this analysis. That is, for protein RFU, residuals after adjustment for sex and study site, and for methylation residual after adjustment for sex, study site, batch, and percentage of neutrophils, lymphocytes, monocytes, eosinophils, and basophils were used. For all age-associated proteins, DNA methylation site (CpGs) positioned 10 kb within each gene (cis-CpG) were tested for association with age. Enrichment of age-associated CpG was tested using fisher’s exact test. The age-associated CpG identified were used in subsequent mediation analyses. In the first step, age-associated proteins were identified by regressing protein residuals on age using a linear regression model. In the second step, age-associated CpG methylation was identified by regressing methylation residuals on age using a linear model. In the final step, a linear model regressing protein residual on age adjusting for methylation residuals was tested. Significance of the mediation effect was tested using the Sobel test (Sobel, 1982). A non-significant direct effect of age on protein in the final model (adjusted for methylation) was considered as complete mediation, while a significant direct effect in the final model was considered as partial mediation.
 
-## Proteomic signature of age
+### Proteomic signature of age
 
 A predicted proteomic age (PROage) signature was constructed as a linear combination of the regression coefficients for 76 proteins from the penalized regression model that was previously published (Tanaka et al., 2018). A measure of proteomic biological age was calculated as the residuals from the regression model of chronological age with PROage (PROaccel). Individuals with positive PROaccel are considered to have accelerated aging, while those with negative PROaccel are considered to be aging slower. The association of PROaccel with the number of multimorbidity at baseline was assessed using Poisson regression. The association of PROaccel with all-cause mortality was assessed using Cox regression.
 
-## Pathway enrichment and visualization
+### Pathway enrichment and visualization
 
 Gene set over-representation analyses were performed using the ConsensusPathDB-human tool, release 34 (15.01.2019) (Kamburov et al., 2013). Curated pathways for enrichment analysis were referenced from the following databases: Gene Ontology, WikiPathways, and Kegg pathways, and Reactome. Pathways were required to have a minimum of three observed proteins and a p-value<0.01. Gene ontology terms were restricted to levels 3–5. For morbidity-associated proteins (Figure 5A), all pathways with enrichment q-values <0.05 were kept, and the top 25 pathways were plotted. For mortality-associated proteins (Figure 4A), all pathways with enrichment q-values <0.25 were kept. One duplicate named pathway appearing from multiple source databases was omitted manually. For background reference, a list of all 1301 proteins measured in the SOMAscan assay were used. Tables containing the pathways, observed corresponding proteins, reference pathway annotations, statistics, and source databases are included as a supplementary file (Supplementary file 1E).
 

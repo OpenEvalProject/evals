@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.29968.001 Defective Ca 2+ handling is a key mechanism underlying hepatic endoplasmic reticulum (ER) dysfunction in obesity. ER Ca 2+ level is in part monitored by the store-operated Ca 2+ entry (SOCE) system, an adaptive mechanism that senses ER luminal Ca 2+ concentrations through the STIM proteins and facilitates import of the ion from the extracellular space. Here, we show that hepatocytes from obese mice displayed significantly diminished SOCE as a result of impaired STIM1 translocation, which was associated with aberrant STIM1 O-GlycNAcylation. Primary hepatocytes deficient in STIM1 exhibited elevated cellular stress as well as impaired insulin action, increased glucose production and lipid droplet accumulation. Additionally, mice with acute liver deletion of STIM1 displayed systemic glucose intolerance. Conversely, over-expression of STIM1 in obese mice led to increased SOCE, which was sufficient to improve systemic glucose tolerance. These findings demonstrate that SOCE is an important mechanism for healthy hepatic Ca 2+ balance and systemic metabolic control.
+Defective Ca2+ handling is a key mechanism underlying hepatic endoplasmic reticulum (ER) dysfunction in obesity. ER Ca2+ level is in part monitored by the store-operated Ca2+ entry (SOCE) system, an adaptive mechanism that senses ER luminal Ca2+ concentrations through the STIM proteins and facilitates import of the ion from the extracellular space. Here, we show that hepatocytes from obese mice displayed significantly diminished SOCE as a result of impaired STIM1 translocation, which was associated with aberrant STIM1 O-GlycNAcylation. Primary hepatocytes deficient in STIM1 exhibited elevated cellular stress as well as impaired insulin action, increased glucose production and lipid droplet accumulation. Additionally, mice with acute liver deletion of STIM1 displayed systemic glucose intolerance. Conversely, over-expression of STIM1 in obese mice led to increased SOCE, which was sufficient to improve systemic glucose tolerance. These findings demonstrate that SOCE is an important mechanism for healthy hepatic Ca2+ balance and systemic metabolic control.
 
 ## Introduction
 
@@ -39,6 +39,22 @@ Given that obesity leads to impaired ER Ca2+ handling and this is a key mechanis
 
 In order to determine the impact of obesity on SOCE in the liver, we isolated primary hepatocytes from lean wild-type (WT) and genetically obese (Lepob/ob) mice and measured Ca2+ influx through STIM/Orai1 using the ratiometric calcium dye, Fura-2AM (Poenie and Tsien, 1986). First, the cells were incubated in Ca2+-free medium, and ER Ca2+ store depletion was induced by the addition of the SERCA inhibitor thapsigargin (Tg). In agreement with earlier reports (Arruda et al., 2014) the initial rise in cytosolic Ca2+ induced by Tg, which reflects the ER Ca2+ content, was significantly lower in hepatocytes isolated from obese animals compared with WT cells (Figure 1A). Next, we induced SOCE through STIM/Orai1 by substituting the Ca2+-free media with a media containing 2 mM Ca2+. As depicted in Figure 1A, the Ca2+ entry in primary hepatocytes from obese mice was markedly reduced relative to control cells. To further confirm that the observed Ca2+ entry was mediated by SOCE, we added the SOCE inhibitor 2-apb, which completely blocked Ca2+ influx in both genotypes (Figure 1A, dotted lines). This finding is consistent with a report of impaired SOCE in the steatotic hepatocytes from Zucker rats (Wilson et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left panel: representative Fura-2AM based cytosolic Ca2+ measurements in primary hepatocytes isolated from wild type (WT) and leptin-deficient (Lepob/ob) obese mice. ER Ca2+ stores were depleted with 1 µM thapsgargin (Tg), a SERCA inhibitor. SOCE was evaluated by substituting the extracellular media (0 mM Ca2+) with media containing 2 mM Ca2+. Dashed lines show Ca2+ measurements in the presence of 50 µM 2-Aminoethoxydiphenyl borate (2-APB). Right panel: quantification of Tg-induced Ca2+ release (reflecting ER Ca2+ content) and SOCE based on the measurements shown in (A), n = 160 WT and n = 250 Lepob/ob cells for Tg response and n = 234 WT and n = 303 Lepob/ob cells for SOCE response. Data were pooled across six independent experiments. *p<0.0001 (B) Left panel: Immunoblot analysis of protein expression levels in total liver lysate from WT and Lepob/ob mice, Right panel: quantification of the western blots n = 4, representative of 4–5 experiments. (C and D) Confocal images of immunofluorescence staining for endogenous STIM1 in primary hepatocytes from WT and Lepob/ob animals, treated with DMSO (vehicle, NT) or 1 µM Tg for 10 and 30 min. NT refers to ‘not Tg treated’ (E) Quantification of STIM1 puncta/cluster number in the bottom and middle cross-section of non-treated (DMSO) hepatocytes from WT and Lepob/ob animals.n = 5–6 fields (WT) and 4–5 fields (Lepob/ob), representative of 4 independent experiments, *p=0.02 #p=0.003 (F) Quantification of pixel intensity in a set area (125 × 125 pixels) of the middle section of the cells from WT and Lepob/ob animals, treated with 1 µM Tg or vehicle (quantification methods depicted in Figure 1—figure supplement 1 F), n = 4–9 cells, representative of 4 independent experiments, *p=0.02 #p=0.008 (G) Representative profile plots of STIM1 levels (pixel intensities) in a defined area (box) across cells treated with DMSO or 1 µM Tg for 10 or 30 min. Left: cells from WT animals, right: cells from Lepob/ob animals. (H) Quantification of STIM1 translocation by calculating the ratio between the mean STIM1 pixel intensity at a selected area of the edge of the cell relative to the same measurement performed in the cytosolic area near the edge of the cell, n = 3–4 ratios per cell, quantified in 2–8 cells for each condition *p<0.0001 **p=0.009 (I and J) Representative TIRF images of STIM1 and Na+K+-ATPase (PM marker) in cells from WT (I) and Lepob/ob mice (J) treated with 1 µM Tg or vehicle for 10 min. NT refers to “not Tg treated. For all graphs, error bars denote s.e.m. Scale: 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left panel: mRNA expression levels of indicated genes evaluated by qPCR in liver lysates from WT and Lepob/ob mice. Error bars denote s.e.m. n = 8 WT and n = 7 Lepob/ob for STIM1, n = 4 WT and n = 3 Lepob/ob for STIM2 and Orai1, *p=0.0025. Right panel: Lean and 16 weeks HFD-fed animals. n = 7 WT and Lepob/ob for STIM1, n = 3 WT and Lepob/ob for STIM2 and Orai1, *p=0.001 and #p=0.013. 18S was used as an endogenous control. (B) Left panel: Immunoblot analysis for the indicated proteins in total liver lysates from lean and 16 weeks HFD-fed animals; Right panel: protein quantifications. n = 3 Lean and n = 4 HFD. (C) Validation of STIM1 antibody for protein staining in primary hepatocytes derived from WT and STIM1- deficient animal (D) Confocal images of immunofluorescence staining for endogenous STIM1 in primary hepatocytes from WT and Lepob/ob animals, treated with DMSO (vehicle) or 1 µM Tg for 20 min. Scale: 10 um. (E) Histogram analysis of STIM1 pixel intensity measured in a defined region of the primary hepatocytes presented in Figure 1C and D, *p=0.02 (F) Schematic representation of the quantification analysis performed on confocal images shown in Figure 1C and D. For all graphs, error bars denote s.e.m.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Confocal images of immunofluorescence staining for endogenous STIM1 in primary hepatocytes from lean (chow) and animals fed a HFD for 3, 5, 7 and 11 weeks following treatment with DMSO (vehicle) or 1 µM Tg for 10 min. (B) Quantification of STIM1 translocation by calculating the ratio and fold change between the mean STIM1 pixel intensity at a selected area of the edge of the cell relative to the same measurement performed in the cytosolic area near the edge. Right panel: Quantification of STIM1 puncta intensity above 800 in a cross-section of the cell. Graphs show average of 4 ratios per cell, quantified in 5 cells per field in four fields for each condition *p<0.001 (C) Body weight, fed glucose and insulin levels from animals fed chow or HFD for the indicated time. n = 2 per condition. For all graphs, error bars denote s.e.m.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** STIM2 translocation is quantified by calculating of the edge/cytosol signal ratio. n = 10 WT NT, n = 31 WT Tg and n = 30 Lepob/ob NT and n = 43 Lepob/ob Tg, *p=0.0009, #p=0.0002.For all graphs, error bars denote s.e.m.
+
 As we observed impaired SOCE in hepatocytes from obese animals we next evaluated whether the expression levels of the main SOCE components were altered in obesity. As shown in Figure 1—figure supplement 1A, we did not detect differences in expression of Orai1 in the livers of mice with genetic or high-fat diet (HFD)-induced obesity. Despite a modest increase in the mRNA levels of stim1 and stim2, protein levels of STIM1, STIM2 and Orai1 remained unchanged in the livers of mice with both genetic and diet induced obesity (Figure 1B and Figure 1—figure supplement 1B). However, phospho-JNK (pJNK), a marker of inflammatory stress (Hirosumi et al., 2002) and phospho-Calmodulin kinase (pCaMKII), a marker of elevated cytosolic Ca2+ (Ozcan et al., 2012), were increased in the livers of obese animals (Figure 1B and Figure 1—figure supplement 1B). Thus decreased Ca2+ import through SOCE in hepatocytes derived from obese mice appears to be independent of the expression levels of critical SOCE components.
 
 We therefore asked whether the decreased Ca2+ import through SOCE in hepatocytes from obese mice was a result of a functional alteration in STIM1 translocation in the ER membrane. To evaluate the activity of STIM1 proteins in obesity, we first validated antibodies for endogenous immunostaining (Figure 1; Figure 1—figure supplement 1C). Next, we isolated primary hepatocytes from lean and obese mice, induced Ca2+ store depletion with Tg and determined STIM1 localization by immunostaining. As shown in Figure 1C and D and Figure 1—figure supplement 1D, while STIM1 was evenly distributed in the ER membrane of resting cells, Tg treatment led to a dramatic translocation to areas of the ER membrane in close proximity with the PM. This effect was observed within 5–10 min of Tg treatment and persisted for 30 min. However, in cells from obese (Lepob/ob) mice, STIM1 distribution at baseline was punctate throughout the entire ER (Figure 1D and quantified in Figure 1E), and its translocation to areas of ER/PM junction in response to Tg was dramatically impaired. As shown in Figure 1F and Figure 1—figure supplement 1E, in WT cells, Tg treatment increased the number of high-intensity pixels, indicating the formation of the punctate structures, which represent oligomerization of STIM proteins. In contrast, hepatocytes derived from obese mice displayed higher intensity pixel counts at baseline with no further increase following Tg treatment. Defective STIM1 translocation in hepatocytes from obese animals is also illustrated in the line graphs showing the representative intensity profile of individual cells before and after Tg treatment (Figure 1G and also see Figure 1—figure supplement 1F for image analysis details). In WT cells, Tg treatment increased the signal intensity at the edge of the cell and decreased it in the cytosol, quantified as the STIM1 ratio between these compartments (Figure 1H). In hepatocytes from obese mice, the average signal intensity at baseline was higher than in WT cells, and did not change significantly in response to Tg (Figure 1H), indicating that STIM1 translocation is markedly defective in these cells.
@@ -51,6 +67,14 @@ Next, we examined the activation and translocation of STIM2 in cells from lean (
 
 In order to gain insight into mechanisms underlying this phenomenon, we considered the possibility that altered STIM1 post-translational modification could be involved in its defective translocation capacity in the context of obesity. Two known post-translational modifications of STIM1 which influence its trafficking are phosphorylation and O-GlcNAcylation (Pozo-Guisado et al., 2013; Zhu-Mauldin et al., 2012). Phosphorylation of STIM1 at Ser621 and Ser575 regulate its interaction with the microtubule plus-end-tracking protein EB1, enabling STIM1 to move in the ER membrane (Pozo-Guisado et al., 2013). Therefore, we asked whether a reduction in STIM1 phosphorylation at these sites may explain its defective trafficking in obesity. Surprisingly however, we found that phosphorylation of STIM1 at Ser621 and Ser575 was actually increased in liver lysates from obese mice (Figure 2A). This indicates that lack of phosphorylation at these residues does not underlie the defective translocation of STIM1, and suggests that hepatic STIM1 may be released from EB1 in the basal state, potentially as a response to the decreased ER Ca2+ level observed in hepatocytes from obese mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of the phosphorylation level of STIM1 at Ser575 and Ser621 and of ERK phosphorylation in total liver lysates from WT and Lepob/ob animals (B) Immunoblot analysis of O-GlcNAcylation of total lysates extracted from primary hepatocytes derived from WT and Lepob/ob animals in the presence or absence of overnight treatment with 10 µM of PugNac, an inhibitor of O-GlcNAcase. (C) Immunoprecipitation of O-GlcNAcylated proteins derived from WT and Lepob/ob hepatocytes followed by immunoblotting for STIM1. Cells from STIM1-deficient mice (STIM1ΔLiver) were used as a negative control. (D) Total lysates from WT or Lepob/ob hepatocytes treated or not with 10 µM of PugNac overnight were incubated with biotinylated, succinylated WGA and precipitated with streptavidin-conjugated beads. The recovered proteins were used for immunoblotting for STIM1. An aliquot of each precipitate was run in a gel and silver stained. (E) Immunoprecipitation of STIM1 in total lysates from primary hepatocytes derived from WT and Lepob/ob animals followed by immunoblotting for OGT. Input for OGT and STIM1 in the total lysates prior to immunoprecipitation is shown (F) Immunoprecipitation of STIM1-Flag from total lysates stably expressing STIM-Flag in the presence or absence of OGT followed by immunoblotting for O-GlcNac and OGT. (G) Confocal images of endogenous immunofluorescent staining of STIM1 in Hepa1-6 cells transfected with OGT, treated with DMSO or 1 µM Tg stimulation. Non-transfected cells present in the same dish were used as controls for quantification. OGT expressing cells were identified by the presence of RFP expression. NT refers to ‘not Tg treated’ (H) Number of STIM1 puncta quantified per cell, n = 7–14 cells per group, representative of 3 independent experiments, *p=0.0003 #p=0.03. (I) Quantification of STIM1 translocation by calculating the ratio between STIM1 protein signal at the edge of cell relative to the cytosol close by. For OGT n = 60–64 areas and for OGT +n = 22–30 areas per group, representative of 3 independent experiments,*p<0.0001 #p=0.004 (J) Left panel: representative Fura-2AM based cytosolic Ca2+ measurements in Hepa1-6 cells overexpressing pcDNA control or OGT. Right panel: quantification of Ca2+ influx through SOCE. n = 51 (pcDNAt +DMSO) n = 61 (OGT +PugNAc) *p=0.0007. (K and L) Immunoblot analysis and densitometric quantification of OGT and OglcNAc expression in primary hepatocytes from Lepob/ob animals infected with adenovirus expressing scrambled shRNA (shSCR) and shRNA against OGT (shOGT) for 48 hr. (M) Confocal images of immunofluorescence staining for endogenous STIM1 in primary hepatocytes from Lepob/ob animals expressing scrambled shRNA (shSCR) and shRNA against OGT (shOGT) for 48 hr. NT refers to ‘not Tg treated’ (N) Quantification of STIM1 translocation by calculating the ratio between the mean STIM1 pixel intensity at a selected area of the edge of the cell relative to the same measurement performed in the cytosolic area near the edge of the cell, n = 3 ratios per cell, 5 cells per field in four fields per condition,*p=0.04 # p<0.001.For all graphs, error bars represent s.e.m. Scale: 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunoblot analysis of STIM1 from cells derived from animals on chow or HFD for 3, 5 and 11 weeks incubated with biotinylated, succinylated WGA and precipitated with streptavidin-conjugated beads. (B) Immunoblot analysis of total O-GlcNAcylation in total lysates from Hepa1-6 cells non-transfected or transfected with pcDNA empty vector or pcDNA expressing OGT (C) Immunoblot analysis of Flag and OGT in total lysates of HEK293 cells stably overexpressing STIM1-Flag in the presence or absence of overexpression of OGT.
+
 STIM1 can also be modified by O-linked N-acetyl glucosamine (O-GlcNAc), a post-translational modification of serine or threonine amino acids. Previous work has shown that STIM1 O-GlcNAcylation impairs the ability of the protein to move in the ER membrane and to form punctate structures (Zhu-Mauldin et al., 2012). Additionally, conditions of nutrient and substrate excess, including obesity, lead to increase in cellular O-GlcNAcylation levels (Vosseller et al., 2002; Yang and Qian, 2017; Dentin et al., 2008; Yang et al., 2008). These studies indicate the possibility that metabolic stress may interfere with SOCE via O-GlcNAcylation of STIM1, which disrupts its proper trafficking. To test this hypothesis, we first examined global O-GlcNAcylation in primary hepatocytes from WT and obese mice. As shown in Figure 2B, and in agreement with previous observations (Baldini et al., 2016), global O-GlcNAcylation was higher in hepatocytes derived from obese animals compared with their controls. This effect was amplified by treatment with PugNac, a specific inhibitor of O-GlycNAcase (OGA), the enzyme that catalyzes removal of OglcNAc sugars from proteins. Next, we performed immunoprecipitation of O-GlcNAc-modified proteins using an OglcNAc-specific antibody from hepatocyte lysates. We found that STIM1 was present among the OglcNAcylated proteins and it was more abundant in cells from obese mice (Figure 2C). As a complementary approach, we utilized biotinylated-succinylated wheat germ agglutinin (succinylated-WGA), a lectin that preferentially binds N-acetylglucosamine versus other sugars (Baldini et al., 2016; Hu et al., 2010). Following precipitation with streptavidin-conjugated magnetic beads, STIM1 was detected in the pool of proteins modified by O-GlcNac at higher levels in samples derived from obese animals relative to WT controls (Figure 2D). Additionally, as shown in Figure 2E, OGT precipitates with STIM1 in hepatocytes derived from obese animals, indicating that OGT and STIM1 exist in a complex in obesity, consistent with higher levels of O-GlcNac-modified STIM1 in this condition. To explore whether STIM1 is also modulated by OglcNAcylation in the HFD context and study the time course of this modification, we isolated hepatocytes from animals fed a HFD for 3, 5 and 11 wks and pull down STIM1 using succinylated-WGA. As shown in Figure 2—figure supplement 1A, STIM1 was progressively modified by O-GlcNac in this context starting at 3 weeks on HFD.
 
 In order to test if O-GlcNAc modification may alter STIM1 function in hepatocytes, we first overexpressed OGT in Hepa1-6 cells. As expected, overexpression of OGT strongly increased global protein modification with O-GlcNac (Figure 2—figure supplement 1B). We then co-expressed OGT and STIM1 tagged with a Flag peptide (Figure 2—figure supplement 1C) to determine whether STIM1 can be directly O-GlcNacylated by OGT in this system. Immunoprecipitation of STIM1-Flag with a Flag specific antibody demonstrated its enhanced O-GlcNAc modification in OGT overexpressing cells (Figure 2F). Additionally, STIM1 is able to directly bind to OGT in this cell model (Figure 2F), similar to what we observed in hepatocytes derived from obese animals (Figure 2E). Having established this cellular system with enhanced STIM1 O-GlcNacylation, we then assessed its translocation in cells transfected with OGT labeled with RFP, using un-transfected cells in the same culture plate as internal controls for quantification (Figure 2G). These experiments showed that STIM1 puncta formation and translocation following Tg treatment was markedly impaired in cells overexpressing OGT compared with control cells (Figure 2G,H and I). Additionally, overexpression of OGT led to a significant impairment in SOCE compared with the controls (Figure 2J), with no significant differences in the response to Tg (data not shown).
@@ -58,6 +82,18 @@ In order to test if O-GlcNAc modification may alter STIM1 function in hepatocyte
 Next, to determine whether inhibition of the O-GlcNac modification could rescue STIM1 translocation defect in Lepob/ob cells, we used adenoviral gene delivery to express an shRNA targeting OGT to down-regulate OGT and thus the O-GlcNacylation capacity of the cell. As can be seen in Figure 2K and L, the expression of OGT shRNA lead to a 60% decrease in its expression and activity. As shown in Figure 2M and N, down-regulation of OGT resulted in increased STIM1 translocation capacity compared with cells expressing a scrambled shRNA. Taken together these data indicate that increased modification of STIM1 by OglcNAc could, at least in part, underlie defective STIM1 translocation and reduced hepatic SOCE in the context of obesity.
 
 We then started to investigate the impact of defective STIM1-mediated SOCE on ER homeostasis, cellular stress responses and metabolic regulation in STIM1-deficient hepatocyte cell models. These included primary hepatocytes derived from mice with genetic STIM1 deficiency specifically in the liver (stim1fl/fl Alb;Cre, identified here as stim1ΔLIVER) and Hepa1-6 cells stably expressing shRNAs targeting stim1 (Figure 3—figure supplement 1A) or stim2 (Figure 3—figure supplement 1B) (identified here as shSTIM1 and shSTIM2 respectively). Primary hepatocytes derived from stim1ΔLIVER mice displayed lower ER Ca2+ content and absence of Tg-triggered SOCE compared to controls (stim1fl/fl) (Figure 3A). Similarly, Hepa 1–6 cells in which STIM1 expression was down regulated showed markedly blunted SOCE (Figure 3—figure supplement 1C). Imbalances in ER Ca2+ content trigger cellular stress responses through various pathways (Arruda and Hotamisligil, 2015; Fu et al., 2012; Ozcan and Tabas, 2016). In order to examine these responses in our cellular models of STIM deficiency, we measured phosphorylation of JNK as a benchmark measure of cellular stress and inflammatory activation, and phosphorylation of eIF2α as a marker of UPR activation. As shown in Figure 3B, in stim1fl/fl control cells, treatment with Tg induced phosphorylation of JNK and eIF2α at 30 min followed by a decrease in phosphorylation levels back to baseline after 90 min. However, in STIM1-deficient cells, the phosphorylation of JNK and eIF2α was enhanced at baseline and these cells displayed a stronger and more persistent response to Tg, with stress markers only returning to basal levels at 120 min. A similar profile was observed in Hepa1-6 cells with shRNA-mediated suppression of STIM1 (Figure 3—figure supplement 1D). Interestingly, suppression of STIM2 alone did not alter the cellular response to Tg (Figure 3—figure supplement 1E). Altogether, these data demonstrate that absence of core components of SOCE leads to elevated and prolonged stress responses in hepatocytes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left panel: representative Fura-2AM-based cytosolic Ca2+ measurements in primary hepatocytes isolated from stim1fl/fl and stim1ΔLIVER mice. Right panel: quantification of Tg-induced Ca2+ release (reflecting ER Ca2+ content) and SOCE. Error bars denote s.e.m. n = 98 WT and n = 116 stim1ΔLIVER for Tg response and n = 69 stim1fl/fl and n = 101 stim1ΔLIVER for SOCE. Cells were pooled across four independent experiments. *p<0.0001 (B) Immunoblot analysis and quantification of the expression levels of stress markers in primary hepatocytes isolated from stim1fl/fl and stim1ΔLIVER mice. n = 6 samples in each group, pooled across three independent experiments for pJNK and n = 2 for peIF2α, *p=0.0138 #p<0.0001. (C) Immunoblot analysis and quantification of insulin signaling before and after 3 nM insulin (Ins) treatment for the indicated time points in primary hepatocytes isolated from stim1fl/fl and stim1ΔLIVER mice. n = 4–5 samples in each group, pooled across two independent experiments for pIR. *p=0.011 and pAKT *p=0.03 and #p=0.0088 (D) Primary hepatocytes isolated from stim1fl/fl and stim1ΔLIVER animals treated or not with a mixture containing 1 mM Oleic Acid and 40 µM palmitic acid for 16 hr. Lipid droplets were stained in green with BODIPY and the nucleus in blue with DAPI. Scale: 10 µm. (E) Glucose output derived from primary hepatocytes isolated from stim1fl/fl and stim1ΔLIVER mice kept on a HFD, n = 4 stim1fl/fl and n = 4 stim1ΔLIVER*p=0.046 (F) Schematic representation of the protocol for adenovirus-mediated transient hepatocyte knockdown of STIM1 (G) Immunoblot analysis of the indicated proteins in total liver lysates derived from stim1+/+ n = 4 and n = 4 stim1fl/fl mice, both groups expressing liver-specific Cre recombinase (ad Alb;Cre) adenovirus. (H and I) 16 hr fasting blood glucose levels (H) and insulin (I) in animals of the indicated genotypes. *p=0.0094 stim1+/+ versus stim1fl/fl and #p<0.0001 stim1fl/+ versus stim1fl/fl (J) Glucose tolerance test (GTT) in stim1+/+, stim1fl/+ and stim1fl/fl animals expressing adenoviral Alb;Cre recombinase *p<0.04; Right panel: quantification of area under the curve from GTT. n = 5 stim1+/+, n = 6 stim1fl/+, n = 8 stim1fl/fl animals, *p=0.03 stim1+/+, versus stim1fl/fl and #p=0.01 stim1fl/+ versus stim1fl/fl, representative of 2 independent experiments. For all graphs, error bars denote s.e.m.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Immunoblot analysis and quantification of expression levels of indicated proteins in Hepa 1–6 cells stably expressing shRNA against STIM1 (A) or STIM2 (B). n = 3 for SCR and STIM1 shRNA, *p=0.0005 in (A) and s.e.m. n = 3 for SCR and STIM2 shRNA, *p<0.0001 in (B). (C) Left panel: representative Fura-2AM based cytosolic Ca2+ measurements in Hepa1-6 cells stably expressing a control scrambled shRNA or shRNA against STIM1. Right panel: quantification of Tg induced Ca2+ release (reflecting ER Ca2+ content) and SOCE. n = 79–92 cells in each group, pooled across five independent experiments. *p<0.0001 (D) Left panel: Immunoblot analysis of indicated proteins in total lysates of Hepa 1–6 cells stably expressing scrambled shRNA or shRNA against STIM1 treated with DMSO or 100 nM thapsgargin (Tg) for the indicated time points. Right panel: quantification of Immunoblots. n = 4 shRNA SCR and shRNA STIM1, *p=0.04 #p=0.02 for pJNK and *p=0.03 for peIF2. (E) Immunoblot analysis of indicated proteins in total lysates Hepa 1–6 cells stably expressing scrambled shRNA or shRNA against STIM2 treated with DMSO or 100 nM thapsgargin (F) Immunoblot analysis of expression levels of markers of insulin signaling in total lysates of Hepa 1–6 cells expressing shScramble and shSTIM1 treated with 3 nM insulin (Ins) treatment for the indicated time points. (G) Immunoblot analysis of expression levels of markers of insulin signaling in total lysates of Hepa 1–6 cells expressing shScramble and shSTIM1 treated with 3 nM insulin (Ins) treatment for the indicated time points. For al graphs, error bars denote s.e.m.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Right panel: Immunoblot analysis of expression levels of indicated proteins in liver lysates from of stim1fl/fl and STIM1 hepatocyte-specific knockout stim1ΔLIVER. Left panel: Quantification of immunoblots. n = 5 stim1fl/fl, n = 3 stim1fl/+, n = 5 stim1ΔLIVER, *p<0.001 #p<0.0057. (B) Weight gain curves of stim1fl/fl and stim1ΔLIVER on chow (n = 5 stim1fl/fl, n = 8 stim1ΔLIVER) or HFD (n = 21 stim1fl/fl, n = 6 stim1ΔLIVER). Representative of 2 independent experimental cohorts. *p=0.02. (C) Glucose tolerance test at 6 weeks on HFD, n = 10 stim1fl/fl, and n = 7 stim1ΔLIVER (D) Markers of in vivo insulin signaling evaluated by immunoblot analysis of total liver lysates from animals injected with insulin (0.75 U/kg) through the portal vein. Tissues were collected 3 min after injection. Right panel: phospho-protein level quantification normalized to total protein levels. n = 3 for stim1fl/fl and n = 6 for stim1ΔLIVER, *p=0.02. (E) Liver triglyceride content in stim1fl/fl n = 11 and n = 7 stim1ΔLIVERn = 10 on 6 weeks HFD. (F) Glucose tolerance test at 20 weeks on HFD, n = 11 stim1fl/fl, and n = 16 stim1ΔLIVER representative of 2 independent cohorts. (G) Markers of in vivo insulin signaling performed in similar conditions as in D. (H) Liver triglyceride content in stim1fl/fl n = 6 and stim1ΔLIVERn = 6 on 20 weeks HFD. (I) Quantification of micro and macrovesicular steatosis in liver sections stained with Hematoxylin and Eosin. stim1fl/fl n = 6 stim1ΔLIVERn = 4, p=0.01. For all graphs, error bars denote s.e.m.
 
 Increased cellular stress and inflammation are associated with impaired insulin action and defective glucose and lipid metabolism (Fu et al., 2012; Hirosumi et al., 2002; Hotamisligil, 2017). Accordingly, we found that primary hepatocytes derived from stim1ΔLIVER mice displayed impaired phosphorylation of IRβ and AKT in response to insulin relative to cells from stim1fl/fl littermates (Figure 3C). Likewise, gene silencing of stim1 in Hepa1-6 cells resulted in decreased insulin signaling (Figure 3—figure supplement 1F). Additionally, primary hepatocytes isolated from stim1ΔLIVER mice maintained on HFD showed higher levels of glucose production stimulated by the gluconeogenesis substrates glycerol, pyruvate and glutamine compared to stim1fl/fl derived hepatocytes (Figure 3E). In agreement with our finding that STIM2 suppression does not amplify stress responses, we found that STIM2-deficient cells retained normal insulin responsiveness (Figure 3—figure supplement 1G).
 
@@ -71,6 +107,18 @@ In light of the mild in vivo metabolic phenotype of constitutive hepatocyte-spec
 
 Based on these observations, and the marked SOCE defect associated with obesity we hypothesized that recovery of SOCE function in the livers of obese mice could improve metabolic homeostasis in obesity. To test this hypothesis, we used a hepatocyte-specific adenovirus system to exogenously express either GFP (control) or STIM1-YFP in the Lepob/ob primary hepatocytes and mice (Figure 4A). The functionality of the STIM1-YFP fusion protein has been verified previously (Liou et al., 2005) and confirmed by us (Video 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunoblot analysis of STIM1-YFP expression levels in total lysates from livers isolated from Lepob/ob mice transduced with adenovirus (Ad) expressing GFP or STIM1-YFP. (B–C) Confocal images of immunofluorescence staining for endogenous STIM1 in primary hepatocytes from Lepob/ob mice expressing adGFP (B) or adSTIM1-YFP (C) treated with DMSO (vehicle) and 1 µM Tg. NT refers to ‘not Tg treated’. (D) Quantification of STIM1 translocation by calculating the ratio between the mean STIM1 pixel intensity at a selected area of the edge of the cell relative to the same measurement performed in the cytosol. n = 26 adGFP NT and Tg treated and n = 16 adSTIM1-YFP NT and n = 19 Tg treated *p=0.0023, #p=0.0015. Scale: 10 µm. (E) Transmission Electron Micrographs of primary hepatocytes isolated from Lepob/ob animals expressing STIM1-HRP, treated with DMSO or treated 1 µM Tg for 10 min. Scale: 500 nm. (F) Immunoblot analysis and densitometric quantification of OglcNac and STIM1 expression in primary hepatocytes from Lepob/ob animals infected with AdGFP and AdSTIM1-YFP adenovirus for 24 hr. Quantification reflects the sum of the endogenous and exogenous STIM1 (G) Left: Representative Fura-2AM-based cytosolic Ca2+ measurements in primary hepatocytes isolated from Lepob/ob animals expressing adGFP or adSTIM1-YFP. Right: Quantification of Tg-induced Ca2+ release (reflecting ER Ca2+ content) and SOCE measurements . n = 126 adGFP and n = 83 adSTIM1-YFP cells for Tg response and n = 127 adGFP and n = 62 adSTIM1-YFP cells for SOCE, representative of 5 independent experiments. *p<0.0001. For all graphs. error bars denote s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Transmission Electron Micrographs of primary hepatocytes isolated from Lepob/ob animals, expressing adGFP or adSTIM1-YFP.
+
+![Video 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-video1.mp4.jpg)
+
+**Video 1.:** Primary Hepatocytes were infected with STIM1-YFP, treated with 1 uM Tg and YFP fluoresce was recorded over the period of time indicated in the movie.
+
 Using this approach, we asked whether exogenous expression of STIM1-YFP would be sufficient to overcome the SOCE defects in primary hepatocytes from obese animals. As shown in Figure 4B, in control Lepob/ob cells expressing GFP, STIM1 formed puncta at baseline and Tg-induced translocation of the protein was impaired, as we previously observed (Figure 1D). Delivery of STIM1-YFP lead to a significant increase in the protein level in liver cells. Interestingly, in non treated cells, we observed that some degree of the STIM1 protein was already localized in areas of close contact with the plasma membrane even prior to stimulation (Figure 4C). Additionally, exogenously expressed STIM1 was able to translocate towards the plasma membrane after Tg treatment (Figure 4C and D). To examine STIM1 translocation in Lepob/ob hepatocytes with higher resolution, we also performed TEM in cells expressing exogenous STIM1 fused with HRP. STIM1-HRP-expressing cells were fixed and treated with diaminobenzidine (DAB) in the presence of H2O2. HRP catalyzes the polymerization and deposition of DAB, which recruits electron-dense osmium, providing contrast and revealing the localization of STIM1. As shown in Figure 4E, exogenous delivery of STIM1-HRP resulted in rescue of translocation in cells from obese animals in a manner similar to that observed in lean, wild type cells. Taken together, these data indicate that exogenously increasing the amount of STIM1 protein is sufficient to partially overcome the STIM1 translocation defect in cells from obese mice.
 
 The ability of STIM1-YFP overexpression to overcome, at least in part, the translocation defect of endogenous STIM1 in Lepob/ob cells suggests that at least some proportion of STIM1 in this setting may escape the O-GlycNac modification. To examine the degree of O-GlcNacylation of overexpressed STIM1-YFP in Lepob/ob cells, we used an O-GlcNac specific antibody to immunoprecipitate all proteins modified by O-GlycNacylation in GFP or STIM1 YFP overexpressing cells and examined STIM1 protein by immunoblotting. As shown in Figure 4F, STIM1-YFP overexpression resulted in an ~20 fold increase in the expression of STIM1 protein. However, the amount of O-GlcNac modified STIM1 did not increase proportionally, indicating that in fact a significant amount of the overexpressed STIM1 escapes this post translation modification.
@@ -80,6 +128,14 @@ Additionally, it has been previously shown that overexpression of STIM1 in HeLa 
 After verifying that overexpression of STIM1-YFP was able to rescue STIM1 translocation defects in obese cells, we examined whether this actually resulted in improved SOCE. As shown in Figure 4G overexpression of STIM1-YFP in Lepob/ob cells resulted in increased ER Ca2+ and SOCE compared to control cells. Thus, overexpression of STIM1 was a successful intervention to overcome the STIM translocation and SOCE defects, resulting in improved ER calcium handling.
 
 Next, we asked whether the effects of the overexpression of STIM1-YFP in Lepob/ob primary hepatocytes would impact overall metabolism in vivo, and evaluated the effect of liver-specific STIM1 expression on systemic glucose metabolism in the Lepob/ob mice following the protocol displayed in Figure 5A. Introduction of STIM1 by adenovirus gene delivery led to increased STIM1 protein levels in the liver. Interestingly, increased STIM1 expression was also accompanied by increased mRNA expression of Orai1 and with an increase in SERCA (Atp2a2) mRNA and protein levels (Figure 5B and C). This is in accordance with previous work showing that the modulation of expression STIM1 affects the expression of other Ca2+ channels or pumps, as SERCA, likely due to alterations in cytosolic Ca2+ levels (Abell et al., 2011). Remarkably, liver-specific overexpression of STIM1 led to a significant improvement in glucose tolerance relative to control (adGFP) animals as evaluated by a glucose tolerance test (Figure 5D). Improved glucose tolerance resulting from overexpression of STIM1 was associated with enhanced in vivo insulin signaling evaluated by direct insulin injection into the livers that resulted in increased AKT phosphorylation (Figure 5E). Additionally, expression of genes involved in glycolysis were increased in livers overexpressing STIM1, accompanied by decreased levels of PCK1 (PEPCK), a rate limiting enzyme for gluconeogenesis (Figure 5F and G).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the protocol for adenovirus mediated STIM1- YFP expression in Lepob/ob mice (B) mRNA expression levels of indicated genes evaluated by qPCR, normalized to 18S, n = 9 for WT and n = 10 for STIM1-YFP pooled from two independent experiments, *p=0.04 (C) Left panel: Immunoblot analysis of indicated proteins in liver total lysates from Lepob/ob mice expressing GFP or STIM1-YFP. Right panel: quantifications of the blots. n = 3 adGFP and n = 4 adSTIM1-YFP, *p=0.001 (D) Glucose tolerance tests in Lepob/ob mice after adGFP (control) and adSTIM1-YFP expression with quantifications of area under the curve. n = 7 adGFP and n = 11 adSTIM1-YFP animals, representative of 3 independent experiments.*p=0.022 (E) Markers of in vivo insulin signaling evaluated by immunoblot analysis of total liver lysates from animals injected with insulin (0.75 U/kg) through the portal vein. Tissues were collected 3 min after injection. Right panel: phospho-protein level quantification normalized to total protein levels. n = 3 for adGFP and n = 4 for adSTIM1-YFP, *p=0.0003. (F and G) mRNA expression levels of indicated genes evaluated by qPCR, normalized to 18S, n = 9 for both WT and STIM1-YFP pooled from two independent experiments. *p<0.01 # p<0.04. (H) Liver triglyceride content in Lepob/ob animals expressing adGFP (control) and adSTIM1-YFP pooled from three independent cohorts. n = 14 adGFP and 17 adSTIM1-YFP, *p=0.042. For all graphs, error bars denote s.e.m.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29968/elife-29968-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) mRNA expression levels of indicated genes evaluated by qPCR, normalized to 18S, n = 8 for WT and n = 9 for STIM1-YFP pooled from two independent experiments, *p<0.02.
 
 Given the reported role of STIM1 in lipid metabolism, we also evaluated if overexpression of STIM1 impacted the excessive lipid accumulation in the livers of Lepob/ob animals. As shown in Figure 5H, exogenous expression of STIM1 led to a reduction in total Tg content in the liver tissue of Lepob/ob mice compared to controls expressing GFP. Accordingly, STIM1 overexpression led to increase mRNA expression of genes involved in fatty acid oxidation, such as CPT1, while no change was observed in genes involved in lipogenesis (Figure 5—figure supplement 1A and B). Based on these results we conclude that SOCE is critical for glucose and lipid metabolism and that increasing hepatic SOCE through overexpression of STIM1 is able to revert, at least in part, the deleterious impact of obesity on systemic glucose homeostasis.
 
@@ -97,72 +153,328 @@ Finally, we show here that exogenous expression of STIM1 in primary hepatocytes 
 
 ## Materials and methods
 
-## General animal care and study design
+### General animal care and study design
 
 All in vivo studies are approved by the Harvard Medical Area Standing Committee on Animals. Unless stated otherwise, mice were maintained from 4 to 20 weeks on a 12-hour-light/12 hr-dark cycle in the Harvard T.H. Chan School of Public Health pathogen-free barrier facility with free access to water and to a standard laboratory chow diet (PicoLab Mouse Diet 20 #5058, LabDiet). No specific power analysis was used to estimate sample size. The sample size and number of replicates for this study were chosen based on previous experiments performed in our lab and others (Arruda et al., 2014; Fu et al., 2011).
 
-## Animal models of obesity
+### Animal models of obesity
 
 We used two mouse models of obesity, the leptin-deficient Lepob/ob mouse, and HFD-induced obesity. For the former, wild-type mice in the C57BL/6J genetic background (Stock no. 000664) and Lepob/ob mice (Stock no. 000632) were purchased from Jackson Laboratories at 6–7 weeks of age and used for experimentation between 8–12 weeks of age. For the latter, male C57BL/6J mice were purchased from Jackson Laboratories and placed on HFD (D12492: 60% kcal% fat; Research Diets) for up to 20 weeks. Control mice of the same age were fed with a low fat diet (PicoLab Mouse Diet 20 #5053, LabDiet). In animal experiments, all measurements were included in the analysis unless they fell more than two standard deviations from the mean.
 
-## STIM1 hepatocyte-specific deficient mice
+### STIM1 hepatocyte-specific deficient mice
 
 Mice carrying floxed alleles for stim1 (referred here as stim1fl/fl) on a C57BL/6J background were kindly provided by Dr. Anjana Rao, La Jolla Institute for Allergy and Immunology. To generate hepatocyte-specific STIM deficient mice, stim1fl/fl mice were bred to C57BL/6J mice expressing CRE recombinase under the control of the albumin promoter (Alb;Cre). Alb;Cre -mediated recombination of floxed stim1 alleles was detected in genomic DNA by PCR. Age-matched littermates were used for the study of adult mice. For HFD studies, pups were placed on low-fat control diet (5053) for 1 week at weaning, followed by up to 20 weeks on HFD. The control chow group remained on low-fat diet. For the adenovirus-mediated stim1 down-regulation study, stim1fl/+ (het) animals were crossed to each other to generate a group containing stim1+/+, stim1fl/+ and stim1fl/fl homozygous mice. Pups of the three genotypes were weaned and fed a low-fat diet (5053) for 1 week followed by 4 weeks of HFD. The animals were transferred to a BL2 facility where they received adenovirus-expressing Alb;Cre-recombinase (1 × 109 IFU/mouse) intravenously. Metabolic studies were performed between day 7–12 after infection. The animals were sacrificed after 14 days of infection for ex vivo experiments.
 
-## Adenovirus-mediated overexpression of STIM1
+### Adenovirus-mediated overexpression of STIM1
 
 For exogenous STIM1 expression, purified, de-salted adenovirus (serotype 5, Ad5) expressing STIM1-YFP was purchased from Vector BioLabs with the agreement of Dr. Alexei Tepikin from University of Liverpool. The adenovirus was administered to 8–10 week-old Lepob/ob mice intravenously, at a titer of 1 × 109 IFU/mouse. Metabolic studies were performed between day 7–12 after infection. The animals were sacrificed after 14 days of infection for ex vivo experiments.
 
-## Glucose tolerance tests
+### Glucose tolerance tests
 
 Animals were subjected to an intraperitoneal (i.p.) glucose injection (lean: 1.5 g kg−1, obese: 0.5–1.0 g kg−1) after overnight fasting, and blood glucose levels were measured throughout the first 120 min of the metabolic response.
 
-## Liver triglyceride measurements
+### Liver triglyceride measurements
 
 Liver tissues (approximately 100 mg) were homogenized in 1.2 mL of water. Next, 100 µL of the homogenate was transferred to a 1.5 mL tube and 125 µL of chloroform and 250 µL of Methanol were added. Samples were vortexed briefly and incubated for 5 min. Additional 125 µL of chloroform was added. Next, 125 µL of water was added and samples were vortexed and centrifuged at 3000 rpm for 20 min at 4°C. Around 150 µL of the lower phase was collected in a 1.5 mL tube and dried (evaporated) in a heated vacuum oven. Thereafter, lipids were re-suspended in 300 uL of ethanol. Triglyceride in this solution was measured by a Randox Tg Kit (cat number TR213) from Randox Laboratories.
 
-## Primary hepatocyte isolation
+### Primary hepatocyte isolation
 
 Animals were anesthetized using 2 mg/ml xylazine combined with 2 mg/ml ketamine in PBS and the livers were perfused with 50 mL of buffer I (content described below) through the portal vein with an osmotic pump set to the speed of ~4 mL/min until the liver turned pale. The speed was gradually increased until ~7 mL/min afterwards. When the entire buffer I had been infused, it was substituted for 50 mL of buffer II. The buffers should be kept at ~37°C during the entire procedure. After perfusion, the primary hepatocytes were carefully released and sedimented at 500 rpm for 2 min, washed two times and suspended with Williams E medium supplemented with 5% CCS and 1 mM glutamine (Invitrogen, CA). To separate live from dead cells, the solution of hepatocytes was layered on a 30% Percoll gradient and centrifuged ~1500 rpm for 10–15 min. The healthy cells were recovered at the bottom of the tube and plated for experimentation. Buffer I contained: 11 mM Glucose; 200 µM EGTA; 1.17 mM MgSO4 heptahydrated; 1.19 mM KH2PO4; 118 mM NaCl; 4.7 mM KCl; 25 mM NaHCO3, pH 7.32. Buffer II contained: 11 mM Glucose; 2.55 mM CaCl2; 1.17 mM MgSO4 heptahydrated; 1.19 mM KH2PO4; 118 mM NaCl; 4.7 mM KCl; 25 mM NaHCO3; BSA (fatty acid free) 7.2 mg/mL; 0.18 mg/mL of Type IV Collagenase (Worthington Biochem Catalog: LS004188). BSA and collagenase were added immediately before use.
 
-## Glucose production assay
+### Glucose production assay
 
 Primary hepatocytes derived from stim1fl/fl and stim1ΔLIVER animals kept on high fat diet were isolated and incubated in fresh William’s E medium with 5% fetal bovine serum (FBS) for 4 hr and thereafter, incubated in 0.1% FBS overnight. Next day, cells were washed twice and incubated with DMEM without glucose (Invitrogen) supplemented with 10 mM HEPES in the presence of 2 mM pyruvate, 2 mM glutamate and 20 mM glycerol for 4 hr. The glucose concentrations in the media were determined by Amplex Red glucose/glucose oxidase assay system (Invitrogen).
 
-## Total protein extraction, immunoprecipitation and western blotting
+### Total protein extraction, immunoprecipitation and western blotting
 
 Liver tissues were homogenized in cold lysis buffer containing 50 mM Tris-HCl (pH 7.4), 2 mM EGTA, 5 mM EDTA, 30 mM NaF, 10 mM Na3VO4, 10 mM Na4P2O7, 40 mM glycerophosphate, 1 % NP-40, and 1% protease inhibitor cocktail. After ~20 min incubation under mild agitation in the cold, the homogenates were centrifuged for 15 min at 9000 rpm to pellet cell debris, and protein concentrations were determined by BCA. Finally, the samples were diluted in 5x Laemmli buffer and boiled for 5 min. The protein lysates were subjected to SDS-polyacrylamide gel electrophoresis, as previously described (Arruda et al., 2014; Fu et al., 2012). The antibodies used in this study are listed in Table 2. All the immunoblots were incubated with primary antibody overnight at 4°C, followed by incubation with secondary antibody conjugated with horseradish peroxidase (Amersham Biosciences) for 1–3 hr at room temperature. Individual membranes were visualized using the enhanced chemiluminescence system (Roche Diagnostics). Immunoprecipitation (IP): For the immunoprecipitation studies, primary antibodies against STIM1 and O-GlcNAc were cross-linked on to protein-A magnetic beads with Dimethylpimelimidate (DMP). Cells lysates were prepared in a IP lysis buffer containing 50 mM Tris-HCl (pH 7.4), 1 mM EDTA, 150 mM NaCl, 10 mM Na3VO4, 1 % NP-40, and 1% protease inhibitor cocktail and 10 µM of PugNac. Protein content was adjusted to be the same in all samples and 300–400 µg of protein were incubated with the beads overnight. The next day, samples were washed 3x with IP buffer and eluted in Laemmli buffer and boiled for 5 min. Immunoblotting was performed as described above. For the IP of Flag tagged STIM1, the lysates were incubated with anti-flag M2 magnetic beads from Sigma and eluted by competition with 3x flag peptide.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Tissues in TRIzol (Invitrogen) were disrupted using TissueLyser (Qiagen). To obtain RNA, trizol homogenates were mixed with chloroform vortexed thoroughly and centrifuged 12000 g for 20 min at 4°C. The top layer was transferred to another tube and mixed with isopropanol and centrifuged again at 12000 g for 20 min at 4°C. The RNA found in the precipitate was washed twice with 70% Ethanol and diluted in RNAse free water. Complementary DNA was synthesized using iScript RT Supermix kit (Biorad). Quantitative real-time PCR reactions were performed in duplicates or triplicates on a ViiA7 system (Applied Biosystems) using SYBR green and custom primer sets or primer sets based on Harvard primer bank. Gene of interest cycle thresholds (Cts) were normalized to 18S ribosomal RNA (Rn18s) house keeper levels by the ΔΔCt. The primers used for qPCR are listed in Table 1.
 
-## Endogenous protein staining and confocal imaging
+**Table 1.**
+ List of primers used for qPCR measurements and sequences of the shRNA used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">List of SYBR green primers for real-time PCR</th>
+    </tr>
+    <tr>
+      <th>Gene name</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>stim1</td>
+      <td>TGAAGAGTCTACCGAAGCAGA</td>
+      <td>AGGTGCTATGTTTCACTGTTGG</td>
+    </tr>
+    <tr>
+      <td>stim1</td>
+      <td>ACAGTGAAACATAGCACCTTCC</td>
+      <td>TCAGTACAGTCCCTGTCATGG</td>
+    </tr>
+    <tr>
+      <td>stim2</td>
+      <td>CGAAGTGGACGAGAGTGATGA</td>
+      <td>GGAGTGTTGTTCCCTTCACATT</td>
+    </tr>
+    <tr>
+      <td>orai1</td>
+      <td>GATCGGCCAGAGTTACTCCG</td>
+      <td>TGGGTAGTCATGGTCTGTGTC</td>
+    </tr>
+    <tr>
+      <td>Itpr1</td>
+      <td>GGGTCCTGCTCCACTTGAC</td>
+      <td>CCACATCTTGGCTAGTAACCAG</td>
+    </tr>
+    <tr>
+      <td>Atp2a2</td>
+      <td>CTGTGGAGACCCTTGGTTGT</td>
+      <td>CAGAGCACAGATGGTGGCTA</td>
+    </tr>
+    <tr>
+      <td>Gck</td>
+      <td>ACCAAGCGGTATCAGCATGTG</td>
+      <td>TGGACTTCTCTGTGATTGGCA</td>
+    </tr>
+    <tr>
+      <td>Hk2</td>
+      <td>ATGATCGCCTGCTTATTCACG</td>
+      <td>CGCCTAGAAATCTCCAGAAGGG</td>
+    </tr>
+    <tr>
+      <td>Hk3</td>
+      <td>TGCTGCCCACATACGTGAG</td>
+      <td>GCCTGTCAGTGTTACCCACAA</td>
+    </tr>
+    <tr>
+      <td>Pkm</td>
+      <td>GGTGGCTCTGGATACAAAGGG</td>
+      <td>CACACTTCTCCATGTAAGCGT</td>
+    </tr>
+    <tr>
+      <td>Gpi</td>
+      <td>CTCAAGCTGCGCGAACTTTTT</td>
+      <td>GGTTCTTGGAGTAGTCCACCAG</td>
+    </tr>
+    <tr>
+      <td>Pgm1</td>
+      <td>CAGAACCCTTTAACCTCTGAGTC</td>
+      <td>TCATTCATTCGAGAAATCCCTGC</td>
+    </tr>
+    <tr>
+      <td>Pgm2</td>
+      <td>GCGGAATGGGATGAACAAGGA</td>
+      <td>GGTCATTGATGTAGCAAAACCCT</td>
+    </tr>
+    <tr>
+      <td>Pck1</td>
+      <td>CTGCATAACGGTCTGGACTTC</td>
+      <td>GCCTTCCACGAACTTCCTCAC</td>
+    </tr>
+    <tr>
+      <td>G6pc</td>
+      <td>CTGAGCGCGGGCATCATAAT</td>
+      <td>GATTCTTAGGATCGCCCAGAAAG</td>
+    </tr>
+    <tr>
+      <td>Pgc1a</td>
+      <td>CCC TGC CAT TGT TAA GAC C</td>
+      <td>TGC TGC TGT TCC TGT TTT C</td>
+    </tr>
+    <tr>
+      <td>Ppara</td>
+      <td>TATTCGGCTGAAGCTGGTGTA</td>
+      <td>CTGGCATTTGTTCCGGTTCT</td>
+    </tr>
+    <tr>
+      <td>Cpt1</td>
+      <td>GCTGGAGGTGGCTTTGGT</td>
+      <td>GCTTGGCGGATGTGGTTC</td>
+    </tr>
+    <tr>
+      <td>Slc25a20</td>
+      <td>AGTCGGACCTTGACCGTGT</td>
+      <td>GACGAGCCGAAACCCATCAG</td>
+    </tr>
+    <tr>
+      <td>Scd1</td>
+      <td>TTC TTG CGA TAC ACT CTG GTG C</td>
+      <td>CGG GAT TGA ATG TTC TTG TCG T</td>
+    </tr>
+    <tr>
+      <td>Fas</td>
+      <td>GGA GGT GGT GATA GCC GG TAT</td>
+      <td>TGG GTA ATC CATA GAG CCC AG</td>
+    </tr>
+    <tr>
+      <td>Serbpc1</td>
+      <td>GGAGCCATGGATTGCACATT</td>
+      <td>GGCCCGGGAAGTCACTGT</td>
+    </tr>
+    <tr>
+      <td>18S</td>
+      <td>AGTCCCTGCCCTTTGTACACA</td>
+      <td>CGATCCGAGGGCCTCACTA</td>
+    </tr>
+    <tr>
+      <td colspan="3">Oligonucleotides for shRNA</td>
+    </tr>
+    <tr>
+      <td>stim1</td>
+      <td>CCGGCCGAAACATCCATAAGCTGATCTCGA GATCAGCTTATGGATGTTTCGGTTTTTTG</td>
+      <td>TRCN0000193877</td>
+    </tr>
+    <tr>
+      <td>stim2</td>
+      <td>CCGGGACGAAGTAGACCACAAGATTCTCG AGAATCTTGTGGTCTACTTCGTCTTTTTTG</td>
+      <td>TRCN0000187841</td>
+    </tr>
+    <tr>
+      <td>ogt</td>
+      <td>CCGGCCCATTTCTTTCAGCAGAAATCTCGA GATTTCTGCTGAAAGAAATGGGTTTTTG</td>
+      <td>TRCN0000110395</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ List of antibodies used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Antibodies used in western blots</th>
+    </tr>
+    <tr>
+      <th>Antibody</th>
+      <th>Vendor</th>
+      <th>Catalog number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STIM1</td>
+      <td>Cell signaling</td>
+      <td>#4916</td>
+    </tr>
+    <tr>
+      <td>STIM2</td>
+      <td>Cell signaling</td>
+      <td>#4917</td>
+    </tr>
+    <tr>
+      <td>ORAI1</td>
+      <td>Sigma</td>
+      <td>SAB3500126</td>
+    </tr>
+    <tr>
+      <td>SERCA2b</td>
+      <td>Cell Signaling</td>
+      <td>#4388</td>
+    </tr>
+    <tr>
+      <td>pJNK</td>
+      <td>Cell signaling</td>
+      <td>#81E11</td>
+    </tr>
+    <tr>
+      <td>peIF2alpha</td>
+      <td>Cell signaling</td>
+      <td>#3597</td>
+    </tr>
+    <tr>
+      <td>CHOP</td>
+      <td>Cell Signaling</td>
+      <td>mab# 2895</td>
+    </tr>
+    <tr>
+      <td>pAKT</td>
+      <td>Santa Cruz</td>
+      <td>7985R</td>
+    </tr>
+    <tr>
+      <td>AKT</td>
+      <td>Santa Cruz</td>
+      <td>8312</td>
+    </tr>
+    <tr>
+      <td>IR</td>
+      <td>Santa Cruz</td>
+      <td>711</td>
+    </tr>
+    <tr>
+      <td>pIR</td>
+      <td>Calbiochem</td>
+      <td>407707</td>
+    </tr>
+    <tr>
+      <td>OGT</td>
+      <td>Cell Signaling</td>
+      <td>#5368</td>
+    </tr>
+    <tr>
+      <td>O-GlcNAc (CTD110.6)</td>
+      <td>Cell Signaling</td>
+      <td>#12938</td>
+    </tr>
+    <tr>
+      <td>Flag M2</td>
+      <td>Sigma</td>
+      <td>SLBD9930</td>
+    </tr>
+    <tr>
+      <td>pCamKII</td>
+      <td>Cell Signaling</td>
+      <td>#12716</td>
+    </tr>
+    <tr>
+      <td>β-tubulin</td>
+      <td>Abcam</td>
+      <td>ab 21058</td>
+    </tr>
+    <tr>
+      <td>pSTIM1</td>
+      <td>provided by Dr. Martin-Romero, University of Extremadura, Spain</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Endogenous protein staining and confocal imaging
 
 For thapsigargin (Tg) stimulation, primary hepatocytes or Hepa1-6 cells were seeded on 3.5 mm round glass dishes (1.5 mm) in Williams Medium in the presence of 5% CCS overnight at 37°C, 5% CO2. The following morning, cells were washed, and in the afternoon they were incubated for a few minutes in Ca2+-free medium (described in the Ca2+ imaging section) followed by 1 µM Tg treatment (or vehicle, DMSO) for the duration indicated in the figure legends. Cells were fixed with 4% paraformaldehyde for 10 min at room temperature (RT) and washed 3x in PBS, before a 20 min permeabilization using 0.2% Triton-X100 in 2% BSA at RT. Primary antibodies were diluted 1:200 for STIM1 (Cell Signaling #4916), 1:100 for STIM2 (Cell Signaling #4917), for Na+/K+ ATPase α−1 -Alexa Fluor 488 (Sigma #16–243) and for Anti-KDEL antibody, Alexa fluor 488 (Abcam, ab184819) in PBS and the cells were incubated in this solution over night at 4°C in the dark. The next day, cells were washed 3x, including one long wash for more than 10 min. Secondary antibody was diluted 1:2500 in PBS, and the cells were incubated with it at RT for 1 hr in the dark. The cells were washed 3x, including one long wash, and if needed, Hoechst was used as nuclear marker, diluted 1:1000 in PBS for 10 min at RT. For the experiments described in Figure 1—figure supplement 1D, Figure 1—figure supplement 2A,B cells were imaged at the Confocal and Light Microscopy Core Facility at the Dana Farber Cancer Institute with a Yokogawa CSU-X1 spinning disk confocal system (Andor Technology, South Windsor, CT) with a Nikon Ti-E inverted microscope (Nikon Instruments, Melville, NY), using a 60x or 100x Plan Apo objective lens with a Hamamatsu OrcaER camera. Andor iQ software (Andor Technology, South Windsor, CT) was used for acquisition parameters, shutters, filter positions and focus control. For Figures 1C, D, 3G and 5D, cells were imaged at the Harvard Medical School Imaging Core with a Yokogawa CSU-X1 spinning disk confocal system (Andor Technology, South Windsor, CT) with an iXon EMCCD camera and Metamorph was the software used for acquisition parameters, shutters, filter positions and focus control. For Figure 2H cells were image with a Yokogawa CSU-X1 spinning disk confocal system (Andor Technology, South Windsor, CT) with a Nikon Ti-E inverted microscope (Nikon Instruments, Melville, NY), using a 60x or 100x Plan Apo objective lens with Zyla cMOS camera and NIS elements software was used for acquisition parameters, shutters, filter positions and focus control.
 
-## Confocal image analysis
+### Confocal image analysis
 
 Image analysis was performed using Fiji software. All the images in the same experiment were analyzed using the same parameters. For Figure 1E, puncta number was counted using a custom made macro. After background subtraction of 15, images were subject to ‘Filter Gaussian blur’ of 1.00 and a threshold was set to define puncta from background signal. In order to localize the individual puncta ‘Find Maxima’ tool was used and puncta were counted using ‘Analyze Particles’ tool. For Figure 2J, images were background subtracted and single cells or groups of cells either expressing OGT or not (identified by RFP expression), were cropped from the original image. Puncta above a threshold of 50 were counted using ‘Analyze Particles’, and normalized to number of cells in the field. Puncta pixel intensities: For Figure 1F and Figure 1—figure supplement 2B, a 125 × 125 pixels box was placed in a representative region of the cell and pixel intensities were recorded in the entire box using a custom made macro. Intensities were distributed into a histogram with R, and plotted in Prism. No further normalization was performed, as the same number of pixels was evaluated in all the images.
 
 Plot profile in Figures 1G, 2L and 5E: A thin box of 40 × 250 pixels was placed across the cell and the average intensity contained in the box was plotted as a profile with Fiji. Edge/cyto measurements: for Figures 1H, 2N,5D, Figure 1—figure supplement 2B: A small box was hand-drawn at a region of the edge of the cell (at the PM), and the same size box was placed right next to the edge, in the cytoplasmic region. The mean STIM signal across each box was recorded, and the ratio between the reading at the edge of the cell and in the cytoplasm was derived after background signal subtraction. Such pairs of boxes were drawn in four representative places in each cell, from 2 to 5 cells per field. Areas were chosen only on cell membranes containing neighbor cells.
 
-## Total internal reflection fluorescence (TIRF) microscopy
+### Total internal reflection fluorescence (TIRF) microscopy
 
 For the TIRF images, cells were stained as described above using anti-STIM1 antibody and anti- Na+/K+ ATPase α−1, Alexa Fluor 488 antibody to stain the PM. In each experiment epifluorescence images were acquired and the PM marker was used to define the PM area for the TIRF imaging. The images were acquired a Zeiss Elyra PS.1 microscope with a 60 or 100 × 1.46 N.A. oil immersion TIRF objective (Carl Zeiss GmbH, Germany) in TIRF mode with an Andor EM-CCD camera (512 × 512 pixels) at the Harvard center for Biological Imaging, Cambridge, MA.
 
-## Cytosolic Ca2+imaging using Fura-2 AM and Fluo-4
+### Cytosolic Ca2+imaging using Fura-2 AM and Fluo-4
 
 Cells were loaded with 4 μM Fura-2AM and 1 µM Pluronic F-127 in HBSS for ~60 min at room temperature. Before imaging, the cells were washed and kept in a medium containing 10 mM Hepes, 150 mM NaCl, 4 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM D-glucose, pH 7.4. Ca2+-free medium was prepared similarly to the buffer described above, in the absence of CaCl2 and in the presence of 2 mM EGTA and 3 mM MgCl2. Cells were stimulated with 1 µM Tg for indirect ER Ca2+ measurements, and in some cases supplemented with 100 µM 2-APB for SOCE inhibition. Ratiometric Fura-2AM imaging was performed by alternatively illuminated with 340 and 380 nm light for 250 ms (Lambda DG-4; Sutter Instrument Co.), using an Olympus IX70 with 40x objective. Emission light >510 nm was captured using a CCD camera (Orca-ER; Hamamatsu Photonics). Both channels were collected every 5 s, background corrected and analyzed with Slidebook and custom-made R-scripts. For the Fluo-4 experiments described in Figure 2J, the same procedure described above as used except that the cells were incubate with Fluo-4 for 30 min to 1 hr. The images were acquired on a Leica SP8X and LAS X software was used for acquisition parameters, shutters, filter positions and focus control.
 
-## Cell culture
+### Cell culture
 
 Loss of function experiments were performed in Hepa1-6 cells (a mouse hepatocyte cell line from ATCC, derivative of the BW7756 mouse hepatoma that arose in C57/L mouse) for STIM1, STIM2 and ORAI1. This cell line was negative for mycoplasma testing. Five different shRNA sequences targeting different regions of each gene were obtained from MISSION shRNA Library (Sigma) along with the Scramble shRNA control. Stable cell lines were generated by lentiviral infection of Hepa1-6 cells overnight in media (DMEM and 10% CCS and polybrene). After infection cells were incubated in growth media (DMEM and 10% CCS) and selected with 3 µg/µl puromycine. The knockdown efficiency of each shRNA was evaluated by western blot analysis and the experiments were done with the sequence that generated the highest efficiency. Cells were frozen at passage two after selection and fresh cells were thawed for each experiment. The sequences of the shRNA used in the study are listed in Table 1. For the overexpression of OGT, a hOGT/RFP co-expression plasmid was generated using a self-cleaving P2A peptide linker. RFP was first cloned into pcDNA6 Myc/His B (Life Technologies V22120) at BamHI/XhoI sites. OGT-P2A was generated by PCR (F: 5’-CCC GGT ACC GCC ACC ATG GCGTCTTCCGTGGGCAA; R: 5’- CCC GGA TCC AGG TCC AGG GTT CTC CTC CAC GTC TCC AGC CTG CTT CAG CAG GCT GAA GTT AGT AGC TCC GCT TCC TGCTGACTCAGTGACTTC) and cloned into the above vector at KpnI/BamHI sites.The OGT-RFP plasmid was transfected into, cells using lipofectamine 2000 overnight in OptiMEM media and the experiment done after 36–48 hr after transfection. For the STIM1-flag pull downs, 3xFLAG-mSTIM1 was generated by PCR (F: 5’- CCC GGATCC GCC ACC ATG GAC TAC AAA GAC CAT GAC GGT GAT TAT AAA GAT CAT GAC ATC GAT TAC AAG GAT GAC GAT GAC AAG GATGTGTGCGCCCGTCTTGCCCTGT; R: 5’- CCC GCGGCCGC TTA CTA CTTCTTAAGAGGCTTCTTAA) and cloned into pENTR1A no CCDB vector (Addgene #17398) at BamHI/NotI sites and then transferred to pLenti CMV Puro DEST (w118-1) (Addgene # 17452) using Gateway LR Clonase II Enzyme Mix (Life Technologies 11791). STIM1-flag was transfected in HEK293T cells and after 24–36 hours cells were trated with 3 ug/mL of puromycin for selection and a stable cell line was generated.
 
-## Insulin treatment in vivo and in vitro and lipid loading
+### Insulin treatment in vivo and in vitro and lipid loading
 
 For insulin signaling studies, cells were serum deprived for 4 hr before stimulus with 3 nM of insulin for 3 and 6 min. Cells were washed in ice-cold PBS and snap-frozen in liquid nitrogen. For the insulin infusions in vivo, following 6 hr of food withdrawal, mice were anaesthetized with an intraperitoneal injection of 2 mg/ml xylazine and 2 mg/ml ketamine, and insulin (0.75 IU kg−1) or phosphate buffered saline (PBS) in 200 µl volume was infused into the portal vein. Three minutes after infusion, tissues were removed and frozen in liquid nitrogen and kept at –80°C until processing. For lipid loading experiments primary hepatocytes were isolated in the morning and kept in Williams E medium. After the cells were settled, Williams medium containing 1 mM Oleic acid and 40 µM palmitic acid was added to the culture. Cells before and after 16 hr of lipid loading and stained with BODIPY and Hoechst to visualize lipid droplets and nucleus, respectively.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 For TEM, primary hepatocytes were fixed in a 1:1 ratio in a fixative buffer and Williams Medium. The fixative buffer contained: 4 parts of FP stock (2.5% PFA, 0.06% picric acid in 0.2M Sodium Cacodylate buffer pH 7.4) and 1 part of 25% glutaraldehyde for at least 2 hr. The samples were then placed in propyleneoxide for 1 hr and infiltrated in a 1:1 mixture of propyleneoxide and TAAB 812 Resin mixture (Marivac Canada Inc. St. Laurent, Canada). Sectioning and imaging: ultrathin sections (about 90 nm) were generated using a Reichert Ultracut-S microtome, JEOL microscope. Images were recorded with an AMT 2 k CCD camera. For the STIM-HRP labeled cells, primary hepatocytes were infected with adenovirus expressing STIM1-HRP. The construct was kindly provided by Dr. Lewis from Stanford University and cloned in an adenovirus (serotype 5, Ad5). Primary hepatocytes were fixed in a buffer containing 2% glutaraldehyde in 0.1 M sodium cacodylate at room temperature for 1 hr, then quickly moved to ice and washed with 0.1 M sodium cacodylate buffer for 10 min. HRP was visualized with 0.5 mg ml diaminobenzidine and 0.03% hydrogen peroxide in 0.1 M sodium cacodylate buffer for 5 min-20min. The reaction was stopped by five washes with cold 0.1 M sodium cacodylate buffer.

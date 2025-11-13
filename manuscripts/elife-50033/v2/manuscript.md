@@ -13,7 +13,7 @@
 
 ## Abstract
 
-The recognition of pathogens and subsequent activation of defense responses are critical for the survival of organisms. The nematode Caenorhabditis elegans recognizes pathogenic bacteria and elicits defense responses by activating immune pathways and pathogen avoidance. Here we show that chemosensation of phenazines produced by pathogenic Pseudomonas aeruginosa , which leads to rapid activation of DAF-7/TGF-β in ASJ neurons, is insufficient for the elicitation of pathogen avoidance behavior. Instead, intestinal infection and bloating of the lumen, which depend on the virulence of P. aeruginosa , regulates both pathogen avoidance and aversive learning by modulating not only the DAF-7/TGF-β pathway but also the G-protein coupled receptor NPR-1 pathway, which also controls aerotaxis behavior. Modulation of these neuroendocrine pathways by intestinal infection serves as a systemic feedback that enables animals to avoid virulent bacteria. These results reveal how feedback from the intestine during infection can modulate the behavior, learning, and microbial perception of the host.
+The recognition of pathogens and subsequent activation of defense responses are critical for the survival of organisms. The nematode Caenorhabditis elegans recognizes pathogenic bacteria and elicits defense responses by activating immune pathways and pathogen avoidance. Here we show that chemosensation of phenazines produced by pathogenic Pseudomonas aeruginosa, which leads to rapid activation of DAF-7/TGF-β in ASJ neurons, is insufficient for the elicitation of pathogen avoidance behavior. Instead, intestinal infection and bloating of the lumen, which depend on the virulence of P. aeruginosa, regulates both pathogen avoidance and aversive learning by modulating not only the DAF-7/TGF-β pathway but also the G-protein coupled receptor NPR-1 pathway, which also controls aerotaxis behavior. Modulation of these neuroendocrine pathways by intestinal infection serves as a systemic feedback that enables animals to avoid virulent bacteria. These results reveal how feedback from the intestine during infection can modulate the behavior, learning, and microbial perception of the host.
 
 ## Introduction
 
@@ -25,37 +25,69 @@ Here we show that chemosensation of P. aeruginosa metabolites, which leads to th
 
 ## Results
 
-## P. aeruginosa infection elicits C. elegans avoidance in a phenazine-independent manner
+### P. aeruginosa infection elicits C. elegans avoidance in a phenazine-independent manner
 
 Because P. aeruginosa-produced phenazines lead to induction of the neuromodulator DAF-7/TGF-β in the ASJ neuron pair (Meisel et al., 2014), we studied the role of phenazines in the elicitation of the pathogen avoidance behavior. P. aeruginosa uses a well-characterized biosynthetic pathway to generate four different phenazines (Dietrich et al., 2006) (Figure 1A). Phenazine-1-carboxylic acid, the precursor of all other phenazines produced by P. aeruginosa, is synthesized from chorismate by a full set of functional phenazine-1-carboxylic acid biosynthetic enzymes encoded by the phzA1-G1 and phzA2-G2 operons (Dietrich et al., 2006). Phenazine-1-carboxylic acid can be modified by other enzymes to make 1-hydroxyphenazine, phenazine-1-carboxamide, or pyocyanin (Figure 1A). Phenazine-1-carboxamide, but not other phenazines, activates DAF-7/TGF-β expression in ASJ neurons (Meisel et al., 2014). We tested whether any of the four purified phenazines produced by P. aeruginosa elicited avoidance when added to lawns of E. coli. We found that animals exposed to E. coli lawns containing phenazine-1-carboxamide, which is required for the activation of DAF-7/TGF-β expression in ASJ neurons (Meisel et al., 2014), did not exhibit the avoidance behavior (Figure 1B). Additionally, the animals did not avoid E. coli lawns with added phenazine-1-carboxylic acid and pyocyanin (Figure 1B). In contrast, the animals did avoid lawns of E. coli containing 1-hydroxyphenazine (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig1-v2.jpg)
 
-**Figure 1.:** C. elegans avoidance of P. aeruginosa during infection.(A) Phenazine synthesis pathway of P. aeruginosa. (B) Time course of the percent occupancy of N2 animals on E. coli lawns containing 20 µg of pyocyanin, phenazine-1-carboxamide, and phenazine-1-carboxylic acid. For the control, the animals were exposed to solvent mock E. coli lawns. (C) Time course of the percent occupancy of N2 animals on E. coli lawns containing 1-hydroxyphenazine. For the control, the animals were exposed to solvent mock E. coli lawns. (D) Representative photomicrographs of N2 animals exposed for 8 hr to E. coli lawns containing 20 µg of phenazine-1-carboxylic acid (PCA), 1-hydroxyphenazine (1-HPZ), pyocyanin (PYO), and phenazine-1-carboxamide (PCN). For the control, the animals were exposed for 8 hr to solvent mock E. coli lawns. Arrows point to the border of the intestinal lumen. (E) Quantification of the diameter of the intestinal lumen of N2 animals exposed for 8 hr to E. coli lawns containing 20 µg of different phenazines. ***p<0.001 via the t test. n.s., non-significant. (F) Percent of animals alive after 24 hr of exposure to E. coli lawns containing 20 µg of different phenazines. The bars show the means ± SD from three independent experiments. ***p<0.001 via the t test. n.s., non-significant. (G) Representative survival plots of N2 animals on different phenazine synthesis pathway mutants of P. aeruginosa. p-value relative to WT, n.s., non-significant. (H) Time course of the percent occupancy of N2 animals on lawns of different phenazine synthesis pathway mutants of P. aeruginosa.
+**Figure 1.:** (A) Phenazine synthesis pathway of P. aeruginosa. (B) Time course of the percent occupancy of N2 animals on E. coli lawns containing 20 µg of pyocyanin, phenazine-1-carboxamide, and phenazine-1-carboxylic acid. For the control, the animals were exposed to solvent mock E. coli lawns. (C) Time course of the percent occupancy of N2 animals on E. coli lawns containing 1-hydroxyphenazine. For the control, the animals were exposed to solvent mock E. coli lawns. (D) Representative photomicrographs of N2 animals exposed for 8 hr to E. coli lawns containing 20 µg of phenazine-1-carboxylic acid (PCA), 1-hydroxyphenazine (1-HPZ), pyocyanin (PYO), and phenazine-1-carboxamide (PCN). For the control, the animals were exposed for 8 hr to solvent mock E. coli lawns. Arrows point to the border of the intestinal lumen. (E) Quantification of the diameter of the intestinal lumen of N2 animals exposed for 8 hr to E. coli lawns containing 20 µg of different phenazines. ***p<0.001 via the t test. n.s., non-significant. (F) Percent of animals alive after 24 hr of exposure to E. coli lawns containing 20 µg of different phenazines. The bars show the means ± SD from three independent experiments. ***p<0.001 via the t test. n.s., non-significant. (G) Representative survival plots of N2 animals on different phenazine synthesis pathway mutants of P. aeruginosa. p-value relative to WT, n.s., non-significant. (H) Time course of the percent occupancy of N2 animals on lawns of different phenazine synthesis pathway mutants of P. aeruginosa.
 
 We observed that animals feeding on E. coli lawns that were supplemented with 1-hydroxyphenazine, but not other phenazines, showed bloating of the intestinal lumen (Figure 1D,E). Bloating of the intestine is known to elicit microbial avoidance behavior, including the avoidance of E. coli (Kumar et al., 2019; Singh and Aballay, 2019a). Therefore, the avoidance of E. coli lawns containing 1-hydroxyphenazine was likely caused by intestinal bloating of the animals induced by the toxin (Figure 1D,E). We also observed that animals feeding on E. coli lawns supplemented with 1-hydroxyphenazine, but not other phenazines, showed drastically reduced survival (Figure 1F). More than 50% of the animals feeding on E. coli lawns containing 1-hydroxyphenazine died within 24 hr, while animals feeding on control E. coli lawns or E. coli lawns containing other phenazines remained alive at the same time point (Figure 1F). However, P. aeruginosa mutants deficient in phenazine production were not compromised in their ability to kill C. elegans compared with wild-type P. aeruginosa (Figure 1G), suggesting that the addition of 1-hydroxyphenazine may have non-physiological effects. Moreover, all the phenazine mutants induced an avoidance behavior that was indistinguishable from that caused by the wild-type P. aeruginosa (Figure 1H). These results suggest that while high amounts of externally added 1-hydroxyphenazine elicit microbial avoidance behavior, the normal amount of phenazines produced by P. aeruginosa during infection is insufficient for induction of the avoidance behavior.
 
-## P. aeruginosa-induced daf-7 expression in ASJ neurons is insufficient for eliciting pathogen avoidance
+### P. aeruginosa-induced daf-7 expression in ASJ neurons is insufficient for eliciting pathogen avoidance
 
 C. elegans is initially attracted towards lawns of P. aeruginosa, and after an initial phase of interaction, the animals begin to avoid the bacterial lawns. However, the initial phase of interaction before elicitation of the avoidance behavior is variable, leading to different avoidance kinetics in various studies (Hao et al., 2018; Hilbert and Kim, 2017; Ma et al., 2017; Martin et al., 2017; Meisel et al., 2014; Singh and Aballay, 2019a; Sun et al., 2011). It is likely that the variations in avoidance kinetics are due to differences in the production of P. aeruginosa factors governing the avoidance behavior. We reasoned that different growing conditions for the P. aeruginosa lawns might be responsible for the differences in avoidance behaviors. We observed that one of the major differences in bacterial lawn preparations is the variation in incubation periods of P. aeruginosa on agar plates before animal exposure (Hao et al., 2018; Hilbert and Kim, 2017; Ma et al., 2017; Meisel et al., 2014; Singh and Aballay, 2019a; Sun et al., 2011). To examine whether the differences in culture conditions of P. aeruginosa on agar plates before transferring C. elegans could be the underlying reason for the different avoidance kinetics, we varied the P. aeruginosa incubation times (Figure 2A). The avoidance behavior of the animals was enhanced with the incubation period of the P. aeruginosa lawns (Figure 2B). Animals exposed to P. aeruginosa lawns that were incubated at 37°C for 24 hr followed by 25°C for 48 hr (referred to as 72 hr lawn) showed a significantly enhanced avoidance rate in comparison to animals exposed to P. aeruginosa lawns that were incubated at 37°C for 12 hr (referred to as 12 hr lawn) (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme for obtaining P. aeruginosa preparations with varying times and temperatures of incubation on SK plates. (B) Percent lawn occupancy of N2 animals after 8 hr of incubation on different preparations of P. aeruginosa. The black symbols represent individual data points. The bars show the means ± SD from three independent experiments. ***p<0.001 via the t test. (C) Time course of the percent occupancy of N2 animals on 12 and 72 hr lawns of P. aeruginosa. (D) Time course of induction of daf-7p::GFP on 12 and 72 hr lawns of P. aeruginosa. The ASI and ASJ chemosensory neurons are labeled. The drawing depicts the arrangement of the ASI and ASJ neurons in C. elegans head. (E) Quantification of induction of daf-7p::GFP in the ASJ chemosensory neuron on 12 and 72 hr lawns of P. aeruginosa over time. n.s., non-significant via the t test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Quantification of induction of daf-7p::GFP in the ASI chemosensory neuron on 12 and 72 hr lawns of P. aeruginosa over time. n.s., non-significant via the t test.
+
 We tested whether the differences in avoidance kinetics exhibited by the animals on 12 and 72 hr lawns could be due to differences in the induction of daf-7 expression in ASJ neurons. We found that while animals exposed to 12 hr lawns showed robust induction of daf-7 expression in ASJ neurons that did not differ from animals exposed to 72 hr lawns (Figure 2D,E), animals exposed to 12 hr lawns exhibited a delayed avoidance compared with animals exposed to 72 hr lawns (Figure 2C). In addition, the induction of daf-7 expression in ASI neurons was not significantly different in animals exposed to 12 or 72 hr lawns (Figure 2—figure supplement 1). Because the induction of daf-7 expression in ASJ neurons was indistinguishable in animals on 12 and 72 hr lawns, the results suggest that the induction of daf-7 expression in ASJ may not be the only cause of the elicitation of avoidance behavior.
 
-## Bloating of the intestinal lumen underlies the avoidance behavior towards P. aeruginosa
+### Bloating of the intestinal lumen underlies the avoidance behavior towards P. aeruginosa
 
 Because 1-hydroxyphenazine induces both avoidance behavior and intestinal bloating (Figure 1C,D), we tested whether bloating could account for the faster avoidance exhibited by animals exposed to the 72 hr lawn compared with those exposed to the 12 hr lawn. We found that animals exposed to 72 hr lawns showed bloated intestines as early as 8 hr, while the lumens of animals exposed to 12 hr lawns for 8 hr were comparable to those of animals fed E. coli (Figure 3A–C). Because bloating of the intestine leads to the induction of genes that are part of the NPR-1 neuroendocrine pathway (Singh and Aballay, 2019a), we examined the expression levels of the npr-1, flp-18, and flp-21 genes. As shown in Figure 3D, animals exposed to 72 hr lawns, but not to 12 hr lawns, showed higher expression levels of the npr-1, flp-18, and flp-21 genes compared with the control animals on E. coli.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative photomicrographs of N2 animals exposed for 8 hr to E. coli lawns, and 12 and 72 hr lawns of P. aeruginosa. Representative photomicrographs of the head and tail regions are shown. Arrows point to the border of the intestinal lumen. (B and C) Quantification of the diameter of the intestinal lumen of N2 animals exposed for 8 hr to E. coli lawns, and 12 and 72 hr lawns of P. aeruginosa from the head (B) and tail (C) regions. ***p<0.001 and *p<0.05 via the t test. n.s., non-significant. (D) Gene expression analysis of N2 animals grown on E. coli until the young adult stage, followed by incubation for 8 hr on E. coli lawns, and 12 and 72 hr lawns of P. aeruginosa. The black symbols represent individual data points. ***p<0.001, **p<0.01, and *p<0.05 via the t test. n.s., non-significant. (E) Time course of the percent occupancy of the control (EV) as well as nol-6 RNAi animals on 72 hr lawns of P. aeruginosa. (F) Representative photomicrographs of N2 animals grown on control and nol-6 RNAi exposed for 8 hr to 72 hr lawns of P. aeruginosa. Arrows point to the border of the intestinal lumen. (G) Quantification of the diameter of the intestinal lumen of N2 animals grown on control and nol-6 RNAi exposed for 8 hr to 72 hr lawns of P. aeruginosa. ***p<0.001 via the t test. (H) Time course of induction of daf-7p::GFP in ASJ neurons in animals grown on control and nol-6 RNAi and exposed to 72 hr lawns of P. aeruginosa. n.s., non-significant via the t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Time course of the percent occupancy of control (EV) as well as nol-6 RNAi animals on 12 hr lawns of P. aeruginosa. (B) Representative photomicrographs of nol-6 RNAi animals exposed for 8 and 24 hr to 72 hr lawns of P. aeruginosa. Arrows point to the border of the intestinal lumen. (C) Quantification of the diameter of the intestinal lumen of nol-6 RNAi animals exposed for 8 and 24 hr to 72 hr lawns of P. aeruginosa. ***p<0.001 via the t test. (D) Time course of induction of daf-7p::GFP in ASI neurons in animals grown on control and nol-6 RNAi and exposed to 72 hr lawns of P. aeruginosa. n.s., non-significant via the t test.
+
 To further confirm the relationship between avoidance behavior and intestinal bloating of animals exposed to 72 hr lawns, we studied avoidance in animals deficient in the nol-6 gene. Previous studies have shown that RNA interference (RNAi)-mediated knockdown of nol-6, a nucleolar RNA-associated protein, reduces bloating of the intestinal lumen caused by bacterial infection (Fuhrman et al., 2009). We found that nol-6 RNAi delayed pathogen avoidance (Figure 3E, Figure 3—figure supplement 1A). Animals deficient in nol-6, which failed to avoid P. aeruginosa at 8 hr (Figure 3E), did not exhibit intestinal bloating at the same time point when exposed to 72 hr lawns (Figure 3F,G). Consistent with the idea that bloating induces pathogen avoidance, nol-6 RNAi animals exposed to 72 hr lawns avoided P. aeruginosa at 24 hr (Figure 3E), at which time they also exhibited intestinal bloating (Figure 3—figure supplement 1B,C). These results indicate that nol-6 RNAi animals are not generally defective in avoidance behavior, and the delayed avoidance behavior is due to delayed intestinal bloating. Despite diminishing the avoidance behavior, knockdown of nol-6 did not affect the induction of daf-7 expression in either ASJ (Figure 3H) or ASI neurons (Figure 3—figure supplement 1D). Taken together, these results suggest that bloating of the intestine, but not induction of daf-7 in ASJ neurons, underlies the avoidance behavior.
 
-## P. aeruginosa virulence correlates with pathogen avoidance behavior
+### P. aeruginosa virulence correlates with pathogen avoidance behavior
 
 We next tested whether the enhanced intestinal bloating of animals exposed for 8 hr to 72 hr lawns was due to increased bacterial colonization compared with animals exposed to 12 hr lawns for the same time. We found that while animals exposed to 12 hr lawns showed a consistent increase in intestinal colonization, animals exposed to 72 hr lawns did not show any increase in colonization during the first 8 hr of exposure (Figure 4A). These results indicate that intestinal bloating on 72 hr lawns is independent of bacterial colonization. Thus, we investigated whether the survival of animals on the two types of lawns was different. Animals exposed to 72 hr lawns died significantly faster than animals exposed to 12 hr lawns (Figure 4B), indicating that the virulence of P. aeruginosa was higher on 72 hr than on 12 hr lawns.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig4-v2.jpg)
+
+**Figure 4.:** (A) Time course of colony-forming units (CFU) per animal of N2 animals exposed to 12 and 72 hr lawns of P. aeruginosa-GFP. (B) Representative survival plots of N2 animals on 12 and 72 hr lawns of P. aeruginosa. p<0.0001. (C) Time course of the percent occupancy of N2 animals on 72 hr lawns of different mutants of P. aeruginosa. (D) Representative photomicrographs of daf-7p::GFP expressing animals exposed for 4 hr to lawns of different mutants of P. aeruginosa. The drawing depicts the arrangement of the ASI and ASJ neurons in C. elegans head. (E) Quantification of daf-7p::GFP in the ASJ chemosensory neuron pair in animals exposed for 4 hr to lawns of different mutants of P. aeruginosa. ***p<0.001 via the t test. n.s., non-significant. (F) Correlation of the mean lawn occupancy time (t50 occupancy) to the corresponding levels of daf-7p::GFP in the ASJ chemosensory neuron pair in animals exposed to different P. aeruginosa mutants. (G) Correlation of the mean lawn occupancy time (t50 occupancy) to the corresponding mean survival time (t50 survival) in animals exposed to different P. aeruginosa mutants.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative survival plots of N2 animals on different mutants of P. aeruginosa. p values for all mutants compared with WT are p<0.0001. (B) Quantification of daf-7p::GFP in the ASI chemosensory neuron pair in animals exposed for 4 hr to lawns of different mutants of P. aeruginosa. n.s., non-significant via the t test.
+
 It has been shown that a non-virulent P. aeruginosa strain deficient in the gene gacA, a global activator of gene expression and virulence, fails to elicit C. elegans avoidance (Hao et al., 2018; Singh and Aballay, 2019a). P. aeruginosa gacA mutants are also hampered in the induction of daf-7 in the ASJ chemosensory neuron (Meisel et al., 2014). Thus, it is not clear whether the inability of P. aeruginosa gacA mutants to elicit an avoidance behavior is due to reduced daf-7 induction in the ASJ neuron or to their reduced virulence. To distinguish between these two possibilities and to test the role of P. aeruginosa virulence in C. elegans avoidance behavior, we tested the induction of daf-7 in ASJ neurons and avoidance behavior elicited by several strains of P. aeruginosa with reduced virulence. We selected a diverse set of P. aeruginosa mutants that have attenuated virulence in C. elegans (Feinbaum et al., 2012). We confirmed that all the studied P. aeruginosa mutants exhibited reduced virulence compared with wild-type P. aeruginosa (Figure 4—figure supplement 1A). All of these mutants were also deficient in the elicitation of pathogen avoidance behavior (Figure 4C). We next tested the induction of daf-7::GFP in the ASJ neurons upon exposure to the aforementioned P. aeruginosa mutants. We found that while kinB and rhlR mutants of P. aeruginosa were deficient in the induction of daf-7 in ASJ neurons, the induction of daf-7 by lasR, lysC, and ptsP mutants was comparable to the induction by wild-type P. aeruginosa (Figure 4D,E). The induction of daf-7 expression in ASI neurons by all of these P. aeruginosa mutants was indistinguishable from the induction by wild-type P. aeruginosa (Figure 4—figure supplement 1B). The levels of daf-7 induction in the ASJ neurons induced by different P. aeruginosa mutants did not show any correlation with the mean occupancy of the animals on P. aeruginosa mutant lawns (Figure 4F). In contrast, the mean survival of the animals on different P. aeruginosa mutants showed a strong correlation with the mean occupancy of the animals on P. aeruginosa mutant lawns (Figure 4G). Taken together, these results show that the virulence of P. aeruginosa, and not its ability to induce daf-7 in ASJ neurons, correlates with C. elegans avoidance behavior.
 
-## Neuroendocrine signaling involved in the control of aerotaxis behavior regulates associative learning of pathogens
+### Neuroendocrine signaling involved in the control of aerotaxis behavior regulates associative learning of pathogens
 
 Based on the finding that intestinal bloating caused by infection, and not chemosensation of P. aeruginosa phenazines, elicits the avoidance behavior, we hypothesized that intestinal infection may be responsible for the associative learning of pathogens. It is known that prior exposure to P. aeruginosa for several hours enables C. elegans to preferentially choose nonpathogenic E. coli over P. aeruginosa (Zhang et al., 2005). Similarly, in a two-choice assay, when naïve animals were given a choice between E. coli and P. aeruginosa, the animals changed their preference from P. aeruginosa to E. coli after 8 hr of exposure (Figure 5A,B). The P. aeruginosa choice index (CI), described in Figure 5A, measures the preference of animals for P. aeruginosa with values ranging from −1 to 1. The values 1,–1, and 0 indicate that all animals are on P. aeruginosa, all animals are away from P. aeruginosa, and an equal number of animals is on P. aeruginosa and E. coli, respectively. Because aerotaxis plays a role in pathogen avoidance (Meisel et al., 2014; Reddy et al., 2009; Singh and Aballay, 2019a; Styer et al., 2008), we examined whether aerotaxis is also important for changes in preference from pathogenic to nonpathogenic bacteria.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of the two-choice preference assay. Animals are transferred to the center of plates equidistant from the lawns of P. aeruginosa and E. coli. The number of animals on both lawns is counted at a given time and used to calculate the P. aeruginosa choice index (CI). (B) Time course of the P. aeruginosa CI of N2 animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (C) Representative photomicrographs of cysl-2p::GFP-expressing animals exposed for 24 hr to E. coli and P. aeruginosa lawns. (D) Quantification of cysl-2p::GFP levels in animals exposed for 24 hr to E. coli and P. aeruginosa lawns. The quantification was conducted using a COPAS Biosort machine to measure the mean GFP signal and the length of individual animals. The GFP signal of each animal was normalized to its length. The data are plotted as a box and whisker plot from over 100 animals for each condition. ***p<0.001 via the t test. (E) Time course of the P. aeruginosa CI of N2 and daf-7(ok3125) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (F) Time course of the P. aeruginosa CI of N2 and npr-1(ad609) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (G) Time course of the P. aeruginosa CI of N2 and daf-7(ok3125);npr-1(ad609) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Time course of the percent occupancy of N2 and daf-7(ok3125) animals on P. aeruginosa lawns. (B) Time course of the percent occupancy of N2 and npr-1(ad609) animals on P. aeruginosa lawns. (C) Time course of the percent occupancy of N2 and daf-7(ok3125);npr-1(ad609) animals on P. aeruginosa lawns.
 
 We reasoned that if animals experience different levels of oxygen on lawns of different bacteria, aerotaxis-regulating pathways might affect the microbial preference. It is known that P. aeruginosa lawns have lower oxygen levels than E. coli lawns (Gray et al., 2004; Reddy et al., 2011). To determine whether the animals on E. coli and P. aeruginosa respond to the different levels of oxygen of the two types of lawns, we used the cysl-2p::GFP reporter strain. Expression of the gene cysl-2 is regulated by hypoxia-inducible factor 1 (HIF-1), a transcription factor that is induced by low levels of oxygen (Ma et al., 2012). Since HIF-1 is degraded at higher and accumulates at lower oxygen levels (Jiang et al., 2001), the expression levels of cysl-2 correlate inversely with the oxygen levels experienced by the animals. We found that animals exposed for 24 hr to P. aeruginosa lawns had higher GFP levels compared with those exposed to E. coli lawns (Figure 5C,D).
 
@@ -63,7 +95,23 @@ We observed that the loss of function mutants daf-7 and npr-1, which are deficie
 
 The genetic interactions for oxygen preference have been well characterized in C. elegans (Chang et al., 2006; Chang and Bargmann, 2008). The increased preference for low oxygen in loss of function npr-1 and daf-7 mutants requires the function of the transient receptor potential channel vanilloid (TRPV) genes osm-9 and ocr-2 (Chang et al., 2006). Because loss of function ocr-2 and osm-9 mutants have an increased preference for high oxygen levels (Chang et al., 2006), and because E. coli lawns have relatively higher oxygen levels (Gray et al., 2004; Reddy et al., 2011), we reasoned that these mutants should rapidly change their preference to E. coli if given the choice between E. coli and P. aeruginosa. First, we studied whether the loss of function mutants ocr-2(ak47) and osm-9(yz6) showed enhanced avoidance of P. aeruginosa lawns. As expected, ocr-2(ak47) and osm-9(yz6) animals exhibited a strong enhancement of avoidance behavior (Figure 6A, Figure 6—figure supplement 1A). These animals also showed a rapid change in preference to E. coli lawns in the two-choice assay (Figure 6B, Figure 6—figure supplement 1B). The preference for high oxygen in ocr-2(ak47) and osm-9(yz6) mutants is suppressed by the loss of function mutation in egl-9, a negative regulator of HIF-1 (Chang and Bargmann, 2008). Consistent with the function of EGL-9, we observed that the egl-9 mutation suppressed both the enhanced pathogen avoidance and E. coli preference of osm-9(yz6) animals (Figure 6C,D). These results show that aerotaxis regulates both P. aeruginosa avoidance and changes in microbial preference.
 
-## Intestinal bloating controls the change in microbial preference upon infection by activating aerotaxis pathways
+![Figure 6.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig6-v2.jpg)
+
+**Figure 6.:** (A) Time course of the percent occupancy of N2 and osm-9(yz6) animals on P. aeruginosa lawns. (B) Time course of the P. aeruginosa CI of N2 and osm-9(yz6) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (C) Time course of the percent occupancy of osm-9(yz6), osm-9(yz6);egl-9(sa307), and egl-9(sa307) animals on P. aeruginosa lawns. (D) Time course of the P. aeruginosa CI of osm-9(yz6), osm-9(yz6);egl-9(sa307), and egl-9(sa307) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (E) Time course of the P. aeruginosa CI of N2 animals grown on RNAi control bacteria, as well as bacteria for RNAi against aex-5 and egl-8 in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. EV, empty vector RNAi control. (F) Time course of the P. aeruginosa CI of N2, aex-5(sa23), and egl-8(n488) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. (G) Time course of the P. aeruginosa CI of N2 animals grown on nol-6 RNAi as well as control bacteria in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli. EV, empty vector RNAi control.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Time course of the percent occupancy of N2 and ocr-2(ak47) animals on P. aeruginosa lawns. (B) Time course of the P. aeruginosa choice index (CI) of N2 and ocr-2(ak47) animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The P. aeruginosa choice index (CI) of N2 animals in a two-choice preference assay containing one lawn of each P. aeruginosa and E. coli after 2 hr of incubation in a hypoxia chamber purged with 5% oxygen. The control animals were incubated for 2 hr at ambient oxygen. ***p<0.001 via the t test.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/50033/elife-50033-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Representative photomicrographs of N2 animals that were incubated on E. coli-GFP lawns for 24 hr either at ambient oxygen levels or 8% oxygen levels in a hypoxia chamber. (B) Representative photomicrographs of the head regions of N2 animals that were incubated on E. coli-GFP lawns for 24 hr either at ambient oxygen levels or 8% oxygen levels in a hypoxia chamber. Arrows point to the border of the intestinal lumen. (C) Quantification of the diameter of the intestinal lumen of N2 animals that were incubated on E. coli-GFP lawns for 24 hr either at ambient oxygen levels or 8% oxygen levels in a hypoxia chamber. n.s., non-significant via the t test.
+
+### Intestinal bloating controls the change in microbial preference upon infection by activating aerotaxis pathways
 
 While the above results showed that aversive learning and changes in microbial preference require aerotaxis pathways, they do not provide insights into the signaling during microbial infection that leads to changes in microbial preference. Bloating of the intestinal lumen upon pathogen infection activates the NPR-1/GPCR and DAF-7/TGF-β pathways, which results in a preference towards high oxygen (Singh and Aballay, 2019a). Thus, we reasoned that animals with bloated intestines should show much more rapid learning and change in preference to E. coli in the two-choice assay. We examined the change in preference from P. aeruginosa to E. coli in the two-choice assay of aex-5 and egl-8 knockdown animals. Knockdown of these genes caused bloating of the intestinal lumen and led to enhanced avoidance of P. aeruginosa (Singh and Aballay, 2019a). As shown in Figure 6E,F, inhibition of these genes by RNAi and mutations also elicited a rapid change in preference to E. coli lawns in the two-choice assay. We were also able to elicit a rapid preference towards E. coli by exposing the animals to 5% oxygen (Figure 6—figure supplement 2). Exposure to low oxygen levels alone does not affect either intestinal bacterial colonization or bloating (Figure 6—figure supplement 3).
 
@@ -91,66 +139,304 @@ Our studies indicate that chemosensation of P. aeruginosa phenazines, which lead
 
 ## Materials and methods
 
-## Bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115</td>
+      <td>Source BioScience</td>
+      <td>HT115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5α-GFP</td>
+      <td>Frederick M Ausubel laboratory</td>
+      <td>DH5α-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA14</td>
+      <td>Frederick M Ausubel laboratory</td>
+      <td>PA14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14-GFP</td>
+      <td>Frederick M Ausubel laboratory</td>
+      <td>PA14-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 kinB</td>
+      <td>Deborah Hung laboratory</td>
+      <td>PA14 kinB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 lasR</td>
+      <td>Deborah Hung laboratory</td>
+      <td>PA14 lasR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 lysC</td>
+      <td>Jason A Papin laboratory</td>
+      <td>PA14 lysC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 rhlR</td>
+      <td>Thomas K Wood laboratory</td>
+      <td>PA14 rhlR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 phz</td>
+      <td>Lars Dietrich laboratory</td>
+      <td>PA14 phz</td>
+      <td>Lacks both phzA1-G1 and phzA2-G2 operons</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 phzH</td>
+      <td>Lars Dietrich laboratory</td>
+      <td>PA14 phzH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 phzM</td>
+      <td>Lars Dietrich laboratory</td>
+      <td>PA14 phzM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 phzS</td>
+      <td>Lars Dietrich laboratory</td>
+      <td>PA14 phzS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14 ptsP</td>
+      <td>Meta Kuehn laboratory</td>
+      <td>PA14 ptsP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2 Bristol</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ksIs2 [daf-7p::GFP + rol-6(su1006)]</td>
+      <td>CGC</td>
+      <td>FK181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>nIs470 [cysl-2p::GFP + myo-2p::mCherry]</td>
+      <td>CGC</td>
+      <td>DMS640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ocr-2(ak47)</td>
+      <td>CGC</td>
+      <td>CX4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>osm-9(yz6)</td>
+      <td>CGC</td>
+      <td>JY190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>aex-5(sa23)</td>
+      <td>CGC</td>
+      <td>JT23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>egl-8(n488)</td>
+      <td>CGC</td>
+      <td>MT1083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>egl-9(sa307)</td>
+      <td>CGC</td>
+      <td>JT307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>npr-1(ad609)</td>
+      <td>CGC</td>
+      <td>DA609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>daf-7(ok3125)</td>
+      <td>CGC</td>
+      <td>RB2302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>osm-9(yz6);egl-9(sa307)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>daf-7(ok3125);npr-1(ad609)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientificsoftware/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica LAS v4.6</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td>https://www.leica-microsystems.com/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hypoxia chamber</td>
+      <td>STEMCELL Technologies</td>
+      <td>CAT# 27310</td>
+      <td>https://www.stemcell.com/products/hypoxia-incubator-chamber.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains
 
 The following bacterial strains were used: Escherichia coli OP50, E. coli HT115(DE3), E. coli DH5α-GFP, Pseudomonas aeruginosa PA14, P. aeruginosa PA14-GFP, P. aeruginosa PA14 ΔkinB, P. aeruginosa PA14 ΔlasR, P. aeruginosa PA14 ΔlysC, P. aeruginosa PA14 ΔrhlR, P. aeruginosa PA14 Δphz (lacking both the phzA1-G1 and phzA2-G2 operons), P. aeruginosa PA14 ΔphzH, P. aeruginosa PA14 ΔphzM, P. aeruginosa PA14 ΔphzS, and P. aeruginosa PA14 ΔptsP. The cultures of these bacteria were grown in Luria-Bertani (LB) broth at 37°C.
 
-## C. elegans strains and growth conditions
+### C. elegans strains and growth conditions
 
 C. elegans hermaphrodites were maintained on E. coli OP50 at 20°C unless otherwise indicated. Bristol N2 was used as the wild-type control unless otherwise indicated. Strains FK181 ksIs2 [daf-7p::GFP + rol-6(su1006)], DMS640 nIs470 [cysl-2p::GFP + myo-2p::mCherry], CX4544 ocr-2(ak47), JY190 osm-9(yz6), JT23 aex-5(sa23), MT1083 egl-8(n488), JT307 egl-9(sa307), DA609 npr-1(ad609), and RB2302 daf-7(ok3125) were obtained from the Caenorhabditis Genetics Center (University of Minnesota, Minneapolis, MN). The osm-9(yz6);egl-9(sa307) and daf-7(ok3125);npr-1(ad609) double mutants were obtained by standard genetic crosses. The daf-7(ok3125) and daf-7(ok3125);npr-1(ad609) hermaphrodites were maintained on E. coli OP50 at 15°C.
 
-## RNA interference (RNAi)
+### RNA interference (RNAi)
 
 RNAi was used to generate loss-of-function RNAi phenotypes by feeding nematodes E. coli strain HT115(DE3) expressing double-stranded RNA (dsRNA) homologous to a target gene (Fraser et al., 2000; Timmons and Fire, 1998). RNAi was carried out as described previously (Singh and Aballay, 2017). Briefly, E. coli with the appropriate vectors were grown in LB broth containing ampicillin (100 μg/mL) and tetracycline (12.5 μg/mL) at 37°C overnight and plated onto NGM plates containing 100 μg/mL ampicillin and 3 mM isopropyl β-D-thiogalactoside (IPTG) (RNAi plates). RNAi-expressing bacteria were allowed to grow overnight at 37°C. Gravid adults were transferred to RNAi-expressing bacterial lawns and allowed to lay eggs for 2 hr. The gravid adults were removed, and the eggs were allowed to develop at 20°C to young adults for subsequent assays. The RNAi clones were from the Ahringer RNAi library.
 
-## P. aeruginosa lawn avoidance assays
+### P. aeruginosa lawn avoidance assays
 
 The bacterial cultures were grown by inoculating individual bacterial colonies into 2 mL of LB broth and growing them for 10–12 hr on a shaker at 37°C. Then, 20 µL of the culture was plated onto the center of 3.5-cm-diameter standard slow-killing (SK) plates (modified NGM agar plates (0.35% instead of 0.25% peptone)). The plates were then incubated under the following conditions: 37°C for 12 hr; 37°C for 24 hr; 37°C for 24 hr followed by 25°C for 24 hr; and 37°C for 24 hr followed by 25°C for 48 hr. The P. aeruginosa lawns obtained upon incubation at 37°C for 12 hr were used for avoidance assays unless otherwise indicated. Thirty synchronized young gravid adult hermaphroditic animals grown on E. coli HT115(DE3) containing control vector or an RNAi clone targeting a gene were transferred outside the indicated bacterial lawns, and the numbers of animals on and off the lawns were counted at the specified times for each experiment. Three 3.5-cm-diameter plates were used per trial in every experiment. The experiments were performed at 25°C. The percent occupancy was calculated as (Non lawn/Ntotal)×100. At least three independent experiments were performed.
 
-## E. coli lawn avoidance with purified phenazines
+### E. coli lawn avoidance with purified phenazines
 
 E. coli OP50 cultures were grown by inoculating individual bacterial colonies into 10 mL of LB broth and growing them for 10–12 hr on a shaker at 37°C. The cultures were concentrated 10–20-fold, and 20 µL was plated onto the center of 3.5-cm-diameter modified NGM agar plates and incubated at 37°C for 12 hr. The stock solutions of different phenazines, which were prepared in ethanol, were diluted to either 10 or 20 µg in M9 salt solution to a final volume of 20 µL and added onto the E. coli lawns. For control plates, the equivalent amount of ethanol was mixed with M9 salt solution and added onto the E. coli lawns. These plates were then incubated at room temperature for 30 min before seeding with 20 synchronized young gravid adult hermaphroditic animals. The experiments were performed at 25°C. The percent occupancy was calculated as (Non lawn/Ntotal)×100. At least three independent experiments were performed.
 
-## Two-choice preference assays
+### Two-choice preference assays
 
-P. aeruginosa and E. coli HT115 cultures were grown by inoculating individual bacterial colonies into 2 mL and 10 mL of LB broth, respectively, and growing them for 10–12 hr on a shaker at 37°C. E. coli HT115 cultures were concentrated 10 to 20-fold before seeding on plates. Then, 20 µL of each inoculum was plated diagonally opposite onto 3.5-cm-diameter SK plates and incubated at 37°C for 12 hr. The plates were cooled to room temperature for at least 30 min before seeding with animals. Thirty synchronized young gravid adult hermaphroditic animals grown on E. coli HT115(DE3) containing control vector or an RNAi clone targeting a gene were transferred to the center of plates equidistant from both the lawns. For the experiments at 5% oxygen, the hypoxia chamber containing the plates was purged with 5% oxygen (balanced with nitrogen) for 5 min at a flow rate of 25 L/min. The chamber was then sealed and incubated at 25°C. For control, the two-choice assay plates were incubated at ambient oxygen. The numbers of animals on both lawns were counted at the specified times for each experiment. Three 3.5-cm-diameter plates were used per trial in every experiment. Experiments were performed at 25°C. The P. aeruginosa choice index (P. aeruginosa CI) was calculated as follows:P. aeruginosa CI=[No. of worms on P. aeruginosa-No. of worms on E. coli][No. of worms on P. aeruginosa+No. of worms on E. coli]
+P. aeruginosa and E. coli HT115 cultures were grown by inoculating individual bacterial colonies into 2 mL and 10 mL of LB broth, respectively, and growing them for 10–12 hr on a shaker at 37°C. E. coli HT115 cultures were concentrated 10 to 20-fold before seeding on plates. Then, 20 µL of each inoculum was plated diagonally opposite onto 3.5-cm-diameter SK plates and incubated at 37°C for 12 hr. The plates were cooled to room temperature for at least 30 min before seeding with animals. Thirty synchronized young gravid adult hermaphroditic animals grown on E. coli HT115(DE3) containing control vector or an RNAi clone targeting a gene were transferred to the center of plates equidistant from both the lawns. For the experiments at 5% oxygen, the hypoxia chamber containing the plates was purged with 5% oxygen (balanced with nitrogen) for 5 min at a flow rate of 25 L/min. The chamber was then sealed and incubated at 25°C. For control, the two-choice assay plates were incubated at ambient oxygen. The numbers of animals on both lawns were counted at the specified times for each experiment. Three 3.5-cm-diameter plates were used per trial in every experiment. Experiments were performed at 25°C. The P. aeruginosa choice index (P. aeruginosa CI) was calculated as follows:
+
+$$
+P.aeruginosaCI=\frac{[No.ofwormsonP.aeruginosa-No.ofwormsonE.coli]}{[No.ofwormsonP.aeruginosa+No.ofwormsonE.coli]}
+$$
 
 At least three independent experiments were performed.
 
-## Intestinal colonization and bloating assay at 8% oxygen
+### Intestinal colonization and bloating assay at 8% oxygen
 
 E. coli DH5α-GFP cultures were grown by inoculating individual bacterial colonies into 25 mL of LB broth containing ampicillin (100 µg/mL) and growing them for 10–12 hr on a shaker at 37°C. The cultures were concentrated 10–20-fold, and 300 µL were plated onto the center of 6-cm-diameter NGM agar plates containing ampicillin (100 µg/mL) and incubated at 25°C for 48 hr. Fifty synchronized young gravid adult hermaphroditic N2 animals were transferred to plates containing E. coli DH5α-GFP lawns. The plates were then placed in a hypoxia chamber and the lids of the plates were removed. The hypoxia chamber was then purged with 8% oxygen (balanced with nitrogen) for 5 min at a flow rate of 25 L/min. The chamber was then sealed and incubated at 25°C for 24 hr. The control plates were incubated at ambient oxygen. After 24 hr of incubation, the animals were imaged for bacterial colonization and intestinal lumen diameter quantification.
 
-## C. elegans killing assays on Pseudomonas aeruginosa PA14
+### C. elegans killing assays on Pseudomonas aeruginosa PA14
 
 The C. elegans killing assays were carried out on wild-type P. aeruginosa PA14 lawns that were incubated at 37°C for 12 hr, or 37°C for 24 hr followed by 25°C for 48 hr. The bacterial lawns were prepared as described above. For full-lawn killing assays, 20 µL of an overnight culture of P. aeruginosa PA14 variants grown at 37°C was spread on the complete surface of 3.5-cm-diameter SK plates. The plates were incubated at 37°C for 12 hr and then cooled to room temperature for at least 30 min before seeding with synchronized young gravid adult hermaphroditic animals. The killing assays were performed at 25°C, and live animals were transferred daily to fresh plates. Animals were scored at the times indicated and were considered dead when they failed to respond to touch. The killing assays with different P. aeruginosa PA14 mutants were carried out on full lawns.
 
-## Quantification of intestinal bacterial loads
+### Quantification of intestinal bacterial loads
 
 Intestinal bacterial loads were quantified as described previously (Singh and Aballay, 2019a). Briefly, P. aeruginosa-GFP lawns were prepared as described above. The plates were cooled to room temperature for at least 30 min before seeding with young gravid adult hermaphroditic animals. The assays were performed at 25°C. At the indicated times of exposure, the animals were transferred from P. aeruginosa-GFP plates to the center of fresh E. coli plates for 10 min to eliminate P. aeruginosa-GFP stuck to their body. Animals were transferred to the center of a new E. coli plate for 10 min to further eliminate external P. aeruginosa-GFP. Animals were transferred to fresh E. coli plates a third time for 10 min. Subsequently, ten animals/condition were transferred into 50 µL of PBS plus 0.01% Triton X-100 and ground. Serial dilutions of the lysates (101, 102, 103, 104) were seeded onto LB plates containing 50 µg/mL of kanamycin to select for P. aeruginosa-GFP cells and grown overnight at 37°C. Single colonies were counted the next day and represented as the number of bacterial cells or CFU per animal. Three independent experiments were performed for each condition.
 
-## daf-7p::GFP induction assays
+### daf-7p::GFP induction assays
 
 To measure the induction of daf-7p::GFP in the ASI and ASJ neuron pairs, 12 hr (incubated at 37°C for 12 hr) or 72 hr (incubated at 37°C for 24 hr followed by 25°C for 48 hr) lawns of wild-type P. aeruginosa PA14 were used. The bacterial lawns were prepared as described above. The plates were cooled to room temperature for at least 30 min before seeding with daf-7p::GFP reporter young gravid adult hermaphroditic animals. These plates were incubated at 25°C for the indicated times, and then the animals were prepared for fluorescence imaging. To measure the induction of daf-7p::GFP upon exposure to different P. aeruginosa PA14 mutants, the bacterial lawns were prepared by incubation at 37°C for 12 hr. Young gravid adult hermaphroditic daf-7p::GFP animals were transferred to these plates and incubated at 25°C for 4 hr before preparing the animals for fluorescence imaging. The fluorescence intensity in the ASI and ASJ neurons was quantified using Image J software.
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Fluorescence imaging was carried out as described previously (Singh and Aballay, 2017) with slight modifications. Briefly, the animals were anesthetized using an M9 salt solution containing 50 mM sodium azide and mounted onto 2% agar pads. The animals were then visualized using a Leica M165 FC fluorescence stereomicroscope.
 
-## Quantification of intestinal lumen bloating
+### Quantification of intestinal lumen bloating
 
 After the indicated treatment, the animals were anesthetized using an M9 salt solution containing 50 mM sodium azide, mounted onto 2% agar pads, and imaged. The diameter of the intestinal lumen was measured using the Leica LAS v4.6 software. At least 10 animals were used for each condition.
 
-## cysl-2p::GFP induction assays
+### cysl-2p::GFP induction assays
 
 Synchronized young gravid adult hermaphroditic cysl-2p::GFP animals grown on E. coli HT115 were transferred onto E. coli HT115 and P. aeruginosa lawns. P. aeruginosa and E. coli HT115 cultures were grown by inoculating individual bacterial colonies into 2 mL and 10 mL of LB broth, respectively, and growing them for 8–10 hr on a shaker at 37°C. E. coli HT115 cultures were concentrated 10 to 20-fold before seeding on plates. Then, 20 µL of each inoculum was plated onto the center of 3.5-cm-diameter SK plates. For full lawns of P. aeruginosa, 20 µL of inoculum was spread to completely cover the surface of 3.5-cm-diameter SK plates. The plates were incubated at 37°C for 12 hr and then cooled to room temperature for at least 30 min before seeding with synchronized young gravid adult hermaphroditic cysl-2p::GFP animals. The COPAS Biosort machine (Union Biometrica) was used to measure the time of flight (length) and fluorescence of individual worms. At least 100 worms were measured for each condition.
 
-## RNA isolation and quantitative reverse transcription-PCR (qRT-PCR)
+### RNA isolation and quantitative reverse transcription-PCR (qRT-PCR)
 
 Animals were synchronized by egg laying. Approximately 35 N2 gravid adult animals were transferred to 10 cm RNAi plates seeded with E. coli HT115 and allowed to lay eggs for 4 hr. The gravid adults were then removed, and the eggs were allowed to develop at 20°C. The animals were grown on the E. coli HT115 plates at 20°C until the young adult stage. Subsequently, the animals were transferred to 3.5-cm-diameter SK plates seeded with 20 µL of P. aeruginosa and pre-incubated at either 37°C for 12 hr or 37°C for 24 hr followed by 25°C for 48 hr. The control animals were maintained on E. coli HT115. After transfer of the animals, the plates were incubated at 25°C for 8 hr. Subsequently, the animals were collected, washed with M9 buffer, and frozen in TRIzol reagent (Life Technologies, Carlsbad, CA). Total RNA was extracted using the RNeasy Plus Universal Kit (Qiagen, Netherlands). Residual genomic DNA was removed using TURBO DNase (Life Technologies, Carlsbad, CA). A total of 6 μg of total RNA was reverse-transcribed with random primers using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Foster City, CA).
 
 qRT-PCR was conducted using the Applied Biosystems One-Step Real-time PCR protocol using SYBR Green fluorescence (Applied Biosystems) on an Applied Biosystems 7900HT real-time PCR machine in 96-well-plate format. Twenty-five-microliter reactions were analyzed as outlined by the manufacturer (Applied Biosystems). The relative fold-changes of the transcripts were calculated using the comparative CT(2-ΔΔCT) method and normalized to pan-actin (act-1,–3, −4). The cycle thresholds of the amplification were determined using StepOnePlus software (Applied Biosystems). All samples were run in triplicate. The primer sequences have been described earlier (Singh and Aballay, 2019a).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The statistical analysis was performed with Prism 8 (GraphPad). All error bars represent the standard deviation (SD). The two-sample t test was used when needed, and the data were judged to be statistically significant when p<0.05. In the figures, asterisks (*) denote statistical significance as follows: *, p<0.05, **, p<0.001, ***, p<0.0001, as compared with the appropriate controls. The Kaplan-Meier method was used to calculate the survival fractions, and statistical significance between survival curves was determined using the log-rank test. All experiments were performed in triplicate.

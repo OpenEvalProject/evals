@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Insect pests negatively affect crop quality and yield; identifying new methods to protect crops against insects therefore has important agricultural applications. Our analysis of transgenic Arabidopsis thaliana plants showed that overexpression of pentacyclic triterpene synthase 1 , encoding the key biosynthetic enzyme for the natural plant product (3E)-4,8-dimethyl-1,3,7-nonatriene (DMNT), led to a significant resistance against a major insect pest, Plutella xylostella . DMNT treatment severely damaged the peritrophic matrix (PM), a physical barrier isolating food and pathogens from the midgut wall cells. DMNT repressed the expression of PxMucin in midgut cells, and knocking down PxMucin resulted in PM rupture and P. xylostella death. A 16S RNA survey revealed that DMNT significantly disrupted midgut microbiota populations and that midgut microbes were essential for DMNT-induced killing. Therefore, we propose that the midgut microbiota assists DMNT in killing P. xylostella . These findings may provide a novel approach for plant protection against P. xylostella .
+Insect pests negatively affect crop quality and yield; identifying new methods to protect crops against insects therefore has important agricultural applications. Our analysis of transgenic Arabidopsis thaliana plants showed that overexpression of pentacyclic triterpene synthase 1, encoding the key biosynthetic enzyme for the natural plant product (3E)-4,8-dimethyl-1,3,7-nonatriene (DMNT), led to a significant resistance against a major insect pest, Plutella xylostella. DMNT treatment severely damaged the peritrophic matrix (PM), a physical barrier isolating food and pathogens from the midgut wall cells. DMNT repressed the expression of PxMucin in midgut cells, and knocking down PxMucin resulted in PM rupture and P. xylostella death. A 16S RNA survey revealed that DMNT significantly disrupted midgut microbiota populations and that midgut microbes were essential for DMNT-induced killing. Therefore, we propose that the midgut microbiota assists DMNT in killing P. xylostella. These findings may provide a novel approach for plant protection against P. xylostella.
 
 ## Introduction
 
@@ -35,9 +35,33 @@ While characterizing the function of pentacyclic triterpene synthase 1 (PEN1),
 
 ## Results
 
-## DMNT repels and kills P. xylostella larvae
+### DMNT repels and kills P. xylostella larvae
 
 While investigating the function of the A. thaliana gene PEN1 (at4g15340), we noticed that PEN1-overexpressing transgenic plants exhibited strong resistance to P. xylostella infestation (Figure 1A, B), and the P. xylostella larvae fed on 35Spro:PEN1 transgenic plants showed significantly lower survival rate than those on the non-transgenic control (Figure 1C). PEN1 has been reported to be a key enzyme in the biosynthesis of the volatile homoterpene DMNT (Sohrabi et al., 2015), which was confirmed by our gas chromatography-mass spectrometry (GC-MS) analysis on 35Spro:PEN1 transgenic plants. DMNT was enriched and could be highly induced by P. xylostella infestation (Figure 1—figure supplement 1A–D), suggesting that DMNT might play a role in plant resistance against this chewing insect. To validate this hypothesis, we synthesized DMNT and sprayed the chemical on Brassica napus leaves before feeding of P. xylostella larvae; this bioassay demonstrated that much less of the DMNT-treated leaves was eaten compared to the control leaves (Figure 1D). To determine if P. xylostella larvae sensed DMNT and avoided the volatile chemical, we set up an insect preference test (Figure 1—figure supplement 2). We placed forage containing DMNT or paraffin oil as control at either end of a glass test tube and positioned fourth-instar P. xylostella larvae in the center of the tube. As shown in Figure 1E, significantly more larvae moved away from the DMNT side after 10–120 min, indicating that P. xylostella larvae perceived and avoided the DMNT (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-v2.jpg)
+
+**Figure 1.:** (A) Pentacyclic triterpene synthase 1 (PEN1) overexpression in A. thaliana results in high resistance to P. xylostella infestation. PEN1 encodes the key enzyme responsible for DMNT biosynthesis in Arabidopsis plants. (B) PEN1 is overexpressed in 35Spro:PEN1 transgenic Arabidopsis plants. (C) 35Spro:PEN1 transgenic Arabidopsis plants cause lower survival of P. xylostella than wild type control. (D) B. napus plants sprayed with DMNT show strong resistance to P. xylostella larvae. (E) P. xylostella larvae can sense and are repelled by DMNT. The preference test system is illustrated in Figure 1—figure supplement 2. (F) DMNT treatment significantly lowers the survival of P. xylostella larvae. (G) Phenotypic comparison between DMNT-fed larvae and control larvae (treated with the DMNT solvent paraffin oil). (H) Growth inhibition of P. xylostella larvae by DMNT. (I) Reduced pupation of P. xylostella larvae by DMNT treatment. Error bars represent the standard error of six independent biological replicates, with 15 larvae per replicate. Asterisks indicate significant differences (*p<0.05, **p<0.01, ***p<0.001, ns, not significant; two-tailed unpaired t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gas chromatography-mass spectrometry analysis of DMNT in Col-0 and 35Spro:PEN1 transgenic A. thaliana plants. The DMNT standard is shown at the bottom. (B) Ionogram traces of DMNT captured from Col-0 and 35Spro:PEN1 transgenic plants. (C) A linear standard curve of DMNT quantification, which was dissolved in methanol. (D) DMNT in 35Spro:PEN1 transgenic A. thaliana plants can be continuously induced by P. xylostella infestation for 3–21 hr. Asterisks in (D) indicate significant differences (*p<0.05, ***p<0.001; two-tailed unpaired t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The horizontal box indicates the glass test tube. Equal amounts of activated carbon are placed at both ends of the test tube to avoid air contamination. The air flow is generated by an air pump. In all experiments, (3E)-4,8-dimethyl-1,3,7-nonatriene (DMNT) and control samples are placed on either end of the glass test tube, while 15 P. xylostella larvae are put on the platform located in the center of the test tube for the choice test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) DMNT shows no dosage-dependent effects on the end of survival or pupation (B) of P. xylostella larvae. Error bars in (A, B) represent the standard error of six biological replicates, with 15 larvae per replicate. Asterisks indicate significant differences (*p<0.05; ns, not significant; two-tailed unpaired t-test).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** First- to fourth-instar P. xylostella larvae were tested. (A) Survival rate. (B) Body weight. (C) Pupation rate. (D) Eclosion rate. Error bars represent the standard error of six biological replicates, with 15 P. xylostella larvae per replicate. Asterisks indicate significant differences (*p<0.05, **p<0.01, ***p<0.001; ns, not significant; two-tailed unpaired t-test).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A, C) Reduced forage intake in P. xylostella larvae fed with DMNT. (B, D) Reduction in defecation of DMNT-fed P. xylostella larvae compared to the control. Error bars in (C, D) represent the standard error of six biological replicates, each consisting of 15 P. xylostella larvae. The same amount of forage was used in all assays. (E) The length of DMNT-treated P. xylostella is different from that of starved larvae. Asterisks indicate significant differences (*p<0.05, **p<0.01; ns, not significant; two-tailed unpaired t-test).
 
 We next investigated whether this compound was effective at killing pests directly by feeding second-instar larvae with forage containing DMNT or paraffin oil as control and scoring survival rates. Indeed, exposure to DMNT for 48 hr resulted in the death of ~20% of larvae, which increased to 50% after 120 hr; meanwhile, the larva growth and pupation rates were also severely affected (Figure 1F–I). To assess the potential dose dependence of DMNT-mediated lethality on P. xylostella larvae, we allowed larvae to feed on forage containing 0.7, 7, or 70 μM DMNT. Although the overall survival and pupation rates of P. xylostella larvae significantly decreased at all concentrations, we observed no significant effect of dosage (Figure 1—figure supplement 3A, B), in agreement with results obtained with the root-rot pathogen Pythium irregulare (Sohrabi et al., 2015). Considering the fact that DMNT in A. thaliana plants can be continuously induced by P. xylostella infestation, accumulating to ~70 ng/g after 3–21 hr (Figure 1—figure supplement 1C, D), and in contrast DMNT injected in forage for bioassays will become less due to volatilizing along with the process of experiments, we selected the dosage of 7 μM DMNT for further studies.
 
@@ -47,35 +71,79 @@ P. xylostella larvae appeared to display significantly lower forage intake and l
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig2-v2.jpg)
 
-**Figure 2.:** P. xylostella larvae is damaged by (3E)-4,8-dimethyl-1,3,7-nonatriene (DMNT) treatment.(A) Larvae die earlier from treatment with DMNT than from starvation. (B) Decreased lipase activity in the midgut of P. xylostella larvae upon DMNT treatment. (C) The principle of the Smurf test. Larvae are fed with forage loaded with the dye erioglaucine disodium salt for 1 hr before returning to normal forage without dye. After 6 hr, the extent of dye retention is monitored. (D) Representative images of DMNT-treated larvae showing dye retention, as evidenced by their blue appearance, like the Smurf cartoon character. (E) Quantification of results shown in (D). The different letters in (A) indicate a significant difference (one-way ANOVA). Error bars in (B, E) represent the standard error of six independent biological replicates, with 15 larvae per replicate. Asterisks in (B, E) indicate significant differences (*p<0.05, **p<0.01, ns, not significant; two-tailed unpaired t-test).  Figure 2—source data 1.P. xylostella larvae is damaged by (3E)-4,8-dimethyl-1,3,7-nonatriene (DMNT) treatment.
+**Figure 2.:** (A) Larvae die earlier from treatment with DMNT than from starvation. (B) Decreased lipase activity in the midgut of P. xylostella larvae upon DMNT treatment. (C) The principle of the Smurf test. Larvae are fed with forage loaded with the dye erioglaucine disodium salt for 1 hr before returning to normal forage without dye. After 6 hr, the extent of dye retention is monitored. (D) Representative images of DMNT-treated larvae showing dye retention, as evidenced by their blue appearance, like the Smurf cartoon character. (E) Quantification of results shown in (D). The different letters in (A) indicate a significant difference (one-way ANOVA). Error bars in (B, E) represent the standard error of six independent biological replicates, with 15 larvae per replicate. Asterisks in (B, E) indicate significant differences (*p<0.05, **p<0.01, ns, not significant; two-tailed unpaired t-test).
 
-## DMNT treatment damages the midgut barrier of P. xylostella larvae
+### DMNT treatment damages the midgut barrier of P. xylostella larvae
 
 To determine the possible cause of pest death brought upon by DMNT, we carried out the ‘Smurf test’ to assay leakage problems in the midgut of insects. This test uses the blue dye erioglaucine disodium salt; the molecular weight of this dye is 792.85, too big to pass passively through the intestinal barrier, making it a useful tool to reveal the status of epithelium lining in the intestines (Amcheslavsky et al., 2009; Rera et al., 2012; He et al., 2017). We added the dye to forage, allowed larvae to feed for 1 hr, before returning them to forage without dye for 6 hr (Figure 2C). At the end of the feeding period, control larvae had defecated the dye and showed no obvious accumulation of the dye in their body. In contrast, DMNT-treated larvae retained significant amounts of dye in the midgut and the surrounding tissues (Figure 2D), effectively turning the larvae blue, like the Smurf cartoon character. A quantitative assessment of blue (Smurf) and normal (no Smurf) larvae showed that DMNT treatment resulted in three times as many Smurf larvae as no Smurf larvae (Figure 2E). These results suggested that DMNT caused lesions at the larval midgut and resulted in higher permeability.
 
-## The PM is damaged by DMNT
+### The PM is damaged by DMNT
 
 We dissected and isolated larval PM from control and DMNT-treated larvae to perform a comparative analysis of the structure under a stereomicroscope. After DMNT treatment for 48 hr, the PM became thin and loose, whereas the PM of control samples remained intact and plump (Figure 3A, B). To further document the observed midgut damages, we performed transverse sections on larvae treated with DMNT for 24–48 hr. Hematoxylin-eosin (HE) staining revealed that the PM of control larvae was thick and intact (Figure 3C, E), whereas the PM of larvae treated with DMNT for 24 hr was thin and discontinuous in some regions (Figure 3D). This effect became more pronounced after 48 hr of exposure to DMNT as the PM was completely corrupted and the intestinal content got close to the intestine wall, with several enterocyte cells spilling from the epithelial wall (Figure 3F). We validated these results by transmission electron microscopy (Figure 3G, H).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig3-v2.jpg)
 
-**Figure 3.:** (A, B) PM ultrastructure of control (A) and DMNT-fed (B) P. xylostella larvae for 48 hr. Note the thin and delicate PM in DMNT-fed larvae. (C–F) Transverse section and hematoxylin-eosin staining show damage of the PM by DMNT after exposure for 24 hr (C, D) and 48 hr (E, F). (G, H) The PM is damaged by DMNT feeding, as shown by transmission electron microscopy. Arrowheads indicate the PM. es: delimits the ectoperitrophic space; gc: goblet cells; cc: columnar cells.  Figure 3—source data 1.
+**Figure 3.:** (A, B) PM ultrastructure of control (A) and DMNT-fed (B) P. xylostella larvae for 48 hr. Note the thin and delicate PM in DMNT-fed larvae. (C–F) Transverse section and hematoxylin-eosin staining show damage of the PM by DMNT after exposure for 24 hr (C, D) and 48 hr (E, F). (G, H) The PM is damaged by DMNT feeding, as shown by transmission electron microscopy. Arrowheads indicate the PM. es: delimits the ectoperitrophic space; gc: goblet cells; cc: columnar cells.
 
-## DMNT represses the expression of the mucin-like gene PxMucin
+### DMNT represses the expression of the mucin-like gene PxMucin
 
 To investigate the molecular mechanism underlying the function of DMNT function on P. xylostella larvae, we performed a whole transcriptome sequencing (RNA-seq) analysis. Compared with the control, after 12 hr DMNT treatment, there were 189 genes differentially expressed with a minimum cutoff of twofold change; among these 189 genes, 62 were upregulated and 127 were downregulated (Supplementary file 1). Enrichment analysis at the Kyoto Encyclopedia of Genes and Genomes indicated that these differentially expressed genes belonged to more than 20 different metabolic pathways, including tyrosine, purine and carbon metabolism, proteasome, wax, and longevity regulation, which coincide with the developmental defects of P. xylostella larvae (Figure 4—figure supplement 1). A gene PxMucin, encoding a mucin-like protein, caught our attention as its protein was reported to accumulate in the PM (Sarauer et al., 2003; Israni and Rajam, 2017; Figure 4A). After DMNT treatment for 48 hr, PxMucin transcript levels were significantly downregulated compared to control larvae (Figure 4B, C). We then synthesized double-stranded RNA (dsRNA) designed against PxMucin using an in vitro transcription technique and fed P. xylostella larvae with A. thaliana leaves coated with this dsRNA to induce RNA interference (RNAi) of the target gene in the insect gut (Figure 4A, Supplementary file 2). This dsRNA significantly downregulated endogenous PxMucin in the dsRNA-fed larvae (Figure 4D, E) and resulted in a significant reduction in growth, survival, and pupation rates, as well as lighter larval bodies (Figure 4F–I). Furthermore, transverse sections of dsRNA-fed larvae indicated that the PM structure became thin and disappeared in some regions (Figure 4J, K), observations that were similar to the DMNT-treated larva (Figure 3), suggesting that DMNT may disrupt the PM partially through the repression of PxMucin expression.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig4-v2.jpg)
+
+**Figure 4.:** (A) Gene structure of PxMucin. Boxes represent exons, and horizontal lines represent introns. The horizontal dashed line indicates the targeted regions by double-stranded RNA (dsRNA). (B, C) DMNT treatment downregulates the expression of PxMucin. (D, E) Successful RNA interference (RNAi) of PxMucin by dsRNA feeding. (F–I) Larvae fed with dsRNA against PxMucin show impaired body development (F), weight (G), survival (H), and pupation (I) rates. (J, K) PM structure from control larvae (J) and larvae-fed PxMucin dsRNA (K). Note how PxMucin dsRNA feeding phenocopies DMNT treatment. Error bars in (B–E) represent the standard error of three independent biological replicates, with 30 P. xylostella larvae per replicate. Error bars in (G–I) represent the standard error of six independent biological replicates, with 15 P. xylostella larvae per replicate. Asterisks indicate significant differences (*p<0.05, **p<0.01, ***p<0.001, ns, not significant; two-tailed unpaired t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of the pathway enrichment from the differently expressed genes after DMNT treatment is shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Peritrophin 1 like. (C, D) Chondroitin. (E, F) Mucin 2 like. RPL32 and RPS13 were used as internal control Fu et al., 2013 for qRT-PCR. Error bars represent the standard error of three biological replicates. p values of statistical tests are shown in figures (two-tailed unpaired t-test).
+
 In addition, to check if the dsRNA treatment downregulates other possible genes except for PxMucin, we used the amino acid sequence of PxMucin to search for its homologs from NCBI protein database and detected three genes, peritrophin 1 like (LOC105381868), chondroitin proteoglycan 2 like (LOC119693213), and mucin 2 like (LOC105395714), which have 37%, 55%, and 36% protein homology with PxMucin, respectively. The followed qRT-PCR analysis showed that there was no significant difference in the expression levels of these three genes between the dsRNA-treated and non-treated control (Figure 4—figure supplement 2). These results suggest that the dsRNA against PxMucin likely has low off-target, and the developmental defects of the dsRNA-treated P. xylostella larvae were mainly caused by the downregulation of PxMucin.
 
-## Gut microbes are essential for DMNT function
+### Gut microbes are essential for DMNT function
 
 Previous research reported that the microbiota of the mosquito midgut is essential for the maintenance of PM integrity (Rodgers et al., 2017). To test whether antibiotics have similar effect on P. xylostella PM and larva development, we added an antibiotic cocktail into forage, which effectively decreased the midgut microbiota (Figure 5—figure supplement 1). We therefore fed second-instar larvae with forage laced with antibiotics. In contrast to the results obtained in mosquito, antibiotic treatment had no significant influence on the survival or pupation rates of P. xylostella larvae (Figure 5A, B). Consistent with this observation, transverse section and HE staining indicated that the PM was intact even after the removal of the midgut microbiota by the antibiotic cocktail, suggesting that the formation and/or maintenance of the P. xylostella PM are not dependent on the midgut microbiota (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) Removal of the microbiota by antibiotics alone has no influence on larval survival (A) or pupation rates (B). DMNT treatment was used as a control. (C, D) Removal of the microbiota by treatment with antibiotics eliminates the adverse DMNT-mediated effects on the survival (C) and pupation (D) rates of larvae. (E–H) Comparison of peritrophic matrix (PM) structure in control larvae (E), larvae treated with DMNT alone, (F) or in combination with antibiotics (H). Note the disruption of the PM, whereas treatment with the antibiotic cocktail alone has no effects (G). (I, J) Enterococcus faecalis (E. f) can invade midgut cells when the PM is disrupted by DMNT treatment (J), but is restricted within the PM in controls (I). Arrows indicate E. f cells stained with dye. Arrowheads indicate the PM. es: delimits the ectoperitrophic space; gc: goblet cells; cc: columnar cells. The different letters in (A–D) indicate a significant difference (one-way ANOVA).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Multiple replicates were carried out with the same concentrations of antibiotics added to forage to feed P. xylostella larvae, with similar results. The antibiotic cocktail contains 100 kU/mL penicillin, 100 mg/mL streptomycin, and 50 mg/mL gentamycin.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) 48-hr treatment with antibiotics. (B) 72-hr treatment with antibiotics. Arrowheads indicate the PM. es: delimits the ectoperitrophic space; gc: goblet cells; cc: columnar cells. The antibiotic cocktail contains 100 kU/mL penicillin, 100 mg/mL streptomycin, and 50 mg/mL gentamycin.
+
 To test whether midgut microbes contribute to DMNT-induced insect death, we next exposed larvae to a combination of antibiotics and DMNT. Our results indicated that the effects of DMNT on P. xylostella were completely abolished upon the addition of antibiotics (Figure 5C, D, Figure 5—figure supplement 1). These results also raised the possibility that the loss of DMNT toxicity following antibiotic treatment extended to protection of the PM structure against DMNT-induced damage. We therefore carried out transverse sections and HE staining of treated larvae to test this hypothesis. Quite on the contrary, the midgut section showed a similarly damaged PM structure upon treatment with either DMNT alone, or with the combination of DMNT and antibiotics, suggesting that an active population of gut microbiota contributes to the DMNT-induced PM damage that kills larvae, but that gut microbiota do not directly affect the PM (Figure 5E–H). In addition, we determined that the midgut microbiota could pass the PM barrier and invade midgut cells more easily when the PM was damaged by DMNT compared to controls (Figure 5I, J).
 
-## DMNT causes an imbalance in the gut microbe populations
+### DMNT causes an imbalance in the gut microbe populations
 
 We further investigated the composition of the internal microbiota within the midgut system upon DMNT treatment. A principal component analysis of midgut microbes based on 16S ribosomal DNA sequencing indicated that the DMNT treatment significantly disturbed the microbiota composition in the midgut of P. xylostella larvae (Figure 6A, B, Figure 6—figure supplement 1), with the abundance of 18 phyla, such as proteobacteria and firmicutes, showing strong changes after DMNT treatment (Figure 6A). As an example, the firmicutes bacterium Enterococcus was enriched around 85-fold in DMNT-treated larvae relative to the control (Figure 6B, Figure 6—figure supplement 2, Supplementary file 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig6-v2.jpg)
+
+**Figure 6.:** (A) Relative abundance of 18 phyla in response to DMNT treatment. (B) Effect of DMNT treatment on Enterococcus microbial populations. (C, D) Feeding with gut microbes decreases the survival (C) and pupation (D) rates of larvae treated with DMNT. Error bars represent the standard error of six independent biological replicates, with 15 P. xylostella larvae each. The different letters in (C, D) indicate a significant difference (one-way ANOVA).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Principal component analysis of the 16S rDNA sequencing results. DMNT-treated samples cluster separately from control samples (p=0.006).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Asterisks indicate significant differences (*p<0.05; two-tailed unpaired t-test).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The antibiotic cocktail contains 100 kU/mL penicillin, 100 mg/mL streptomycin, and 50 mg/mL gentamycin.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/63938/elife-63938-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Error bars represent the standard error of three independent biological replicates, with 30 P. xylostella larvae per replicate. Asterisks indicate significant differences (**p<0.01, ns, not significant; two-tailed unpaired t-test).
 
 To further explore the role of the midgut microbiota in the context of DMNT-induced killing of P. xylostella larvae, we performed additional experiments such as providing gut microbes in forage as a pathogen. To prepare second-instar ‘antibiotics-treated’ P. xylostella larvae, we inoculated larval eggs on plastic paper and put it close to forage containing antibiotics to ensure the larvae could eat antibiotics immediately after hatching; we found that when the larvae grew to second instar stage, the microbiota in gut were nearly killed by the antibiotic cocktail (Figure 6—figure supplement 3). Without DMNT, gut microbe feeding significantly decreased the survival or pupation rates of the larvae compared with the antibiotics-treated controls, and strikingly the addition of gut microbes alongside DMNT strongly enhanced the effects of DMNT treatment, all larvae died at 120 hr, and no larvae pupated in the end (Figure 6C, D). In addition, we detected the gene expression level of an immune factor lysozyme. RT-PCR results showed that the lysozyme expression of larvae gut was significantly downregulated from 48 to 72 hr after DMNT treatment, suggesting that DMNT-treated larvae had a weakened ability to resist pathogen invasions (Figure 6—figure supplement 4).
 
@@ -95,86 +163,173 @@ In conclusion, we described the interplay between the natural metabolite DMNT, m
 
 ## Materials and methods
 
-## Plant materials and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>PEN1</td>
+      <td>Sohrabi et al., 2015</td>
+      <td>At4g15340 (Tair)</td>
+      <td>35Spro:PEN1-Nos construction</td>
+    </tr>
+    <tr>
+      <td>Gene (Plutella xylostella)</td>
+      <td>PxMucin</td>
+      <td>Sarauer et al., 2003; Israni and Rajam, 2017</td>
+      <td>LOC105381635(NCBI)</td>
+      <td>qRT-PCR assay</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Enterococcus sp.)</td>
+      <td>Enterococcus faecalis (E. f)</td>
+      <td>This paper</td>
+      <td>ATCC29212 (http://www.bncc.org.cn/)</td>
+      <td>Gram staining</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T7 RiboMAX express RNAi synthesis kit</td>
+      <td>This paper</td>
+      <td>Promega, catalog number P1700</td>
+      <td>Double-stranded RNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipase activity</td>
+      <td>This paper</td>
+      <td>Jiancheng Company (http://www.njjcbio.com, catalog: A054-1-1)</td>
+      <td>Lipase enzyme activity assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dye erioglaucine disodium salt</td>
+      <td>Amcheslavsky et al., 2009; Rera et al., 2012; He et al., 2017</td>
+      <td>Sigma-Aldrich, cas: 3844-45-9, molecular weight: 792.85, color index number 42090</td>
+      <td>‘Smurf’ treatment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antibiotic cocktail</td>
+      <td>Rodgers et al., 2017</td>
+      <td>Solarbio, P1410</td>
+      <td>Killing gut microbes</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMNT</td>
+      <td>Huang and Yang, 2007</td>
+      <td></td>
+      <td>Chemical synthesis of DMNT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td>statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Polydimethylsiloxane solid phase micro-extraction (SPME) fibers</td>
+      <td>Sohrabi et al., 2015</td>
+      <td>100 μm, DVB/CAR/PDMS, Supelco, Inc, Bellefonte, PA</td>
+      <td>Collection of volatile compounds</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant materials and growth conditions
 
 A. thaliana Col-0 seeds were ordered from Nottingham Arabidopsis Stock Centre (http://arabidopsis.info), and B. napus seeds were ordered from Wuhan Weimi Company. These plants were grown under a long-day photoperiod (16 hr light/8 hr dark) at 22℃. LED light intensity was set as 153 μmol m–2 s–1. Humidity was set at 70%. Also, 3-week-old A. thaliana seedlings and 5-week-old B. napus were used for bioassays.
 
-## Generation of transgenic Arabidopsis plants overexpressing PEN1
+### Generation of transgenic Arabidopsis plants overexpressing PEN1
 
 The PEN1 (at4g15340) coding region was amplified by PCR from a cDNA of the Col-0 accession and ligated into the pLGNL-35S vector after digestion with appropriate restriction enzymes. The vector places PEN1 transcription under the control of the Cauliflower mosaic virus (CaMV) 35S promoter and uses the nopaline synthase (Nos) terminator. The 35Spro:PEN1-Nos construct was introduced into Agrobacterium (Agrobacterium tumefaciens) strain GV3101 and transformed into Col-0 plants by the floral dipping method. We selected transformants using hygromycin (20 mg/mL) in Murashige and Skoog (MS) medium without sucrose, and the stable T3 lines were used for bioassays.
 
-## GC-MS of DMNT in 35Spro:PEN1 transgenic plants
+### GC-MS of DMNT in 35Spro:PEN1 transgenic plants
 
 Three-week-old A. thaliana seedlings grown on Murashige and Skoog growth medium (MS-glucose) were used for DMNT measurement. The plant growth condition is: long-day photoperiod (16 hr light/8 hr dark), at 22°C. One-gram seedlings were weighed and transferred into 50 mL glass bottles. Volatile compounds were collected with polydimethylsiloxane solid phase micro-extraction (SPME) fibers (100 μm, DVB/CAR/PDMS, Supelco, Inc, Bellefonte, PA) for 1 hr at room temperature with a headspace absorption method. Volatile compounds were released by heating at 250°C for 5 min and detected in gas chromatography (Agilent 7890A)-mass spectrometry (Agilent 5975C) platform. The machine was set as: air flow: 1 mL/min, temperature gradient: 5°C/min, from 40°C to 220°C (2 min hold), 20°C/min, from 220°C to 240°C (2 min hold). The separated compounds were analyzed with NIST11 mass spectrometer. DMNT was dissolved in methanol and analyzed with the same procedure as a comparison standard. Col-0 was used as a control for the analysis on 35Spro:PEN1 transgenic plants. To test the DMNT content in P. xylostella-infested plants, we used 35Spro:PEN1 transgenic plants that were infested with second-instar P. xylostella larvae for 3 to 21 hr.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Total RNA from the whole body of second-instar P. xylostella larva was extracted with TRIzol RNA preparation method (Invitrogen, CA) and quantified and qualified with NanoDrop ND-1000 spectrometer (NanoDrop, Wilmington, DE). RNA intactness was inspected with Bioanalyzer 2100 (Agilent, CA) and Agarose electrophoresis method. The RNA samples with required quality (concentration >50 ng/μL, RIN >7.0, OD260/280 > 1.8, total RNA >1 μg) were used for further experiments. Poly(A) RNA was purified twice with oligo(dT) magnetic beads (Dynabeads Oligo(dT), catalog number 25-61005, Thermo Fisher). The purified mRNA was fragmented with NEBNextR Magnesium RNA Fragmentation Module kit (catalog number E6150S) at 94°C for 5–7 min. The fragmented RNA was reverse-transcribed with Invitrogen SuperScript II Reverse Transcriptase (catalog number 1896649) to synthesize first-strand cDNA. Escherichia coli DNA polymerase I (NEB, catalog number m0209) and RNase H (NEB, catalog number m0297) were used to synthesize second-strand cDNA. During the synthesis, dUTP Solution (Thermo Fisher, catalog number R0133). cDNA was ligated to adaptors and then digested with UDG enzyme (NEB, catalog number m0280). DNA Library was prepared with PCR method. High-throughput sequencing was performed in Lianchuan Company with illumina Novaseq 6000 platform following normal DNA sequencing procedures (http://www.lc-bio.com/). The raw data generated by sequencing were preprocessed, using cutadapt to filter out unqualified sequences to obtain clean data, and then proceed to the next step of analysis. The specific processing steps are as follows: (1) remove the adapter (Adaptor) of reads; (2) remove reads that contain N (N means that the base information cannot be determined) more than 5%; (3) remove low-quality reads (the number of bases with a quality value Q ≤ 10 accounts for 20% of the entire read above); (4) count the original sequencing amount, effective sequencing amount, Q20, Q30, GC content, and conduct a comprehensive evaluation. Then use Hisat to compare the preprocessed Valid Data with reference genome (https://www.ncbi.nlm.nih.gov/genome/11570?genome_assembly_id=40127). Reads Per Kilobase of exon model per Million mapped reads (RPKM) or Fragments Per Kilobase of exon model per Million mapped reads (FPKM) were used to measure the abundance of gene expression. Finally, we used edgeR to perform difference analysis on the genes assembled and quantified by StringTie (the threshold of significant difference is |log2foldchange| ≥ 1, p<0.05).
 
-## Insects and bacteria
+### Insects and bacteria
 
 The eggs of P. xylostella were purchased from Henan Jiyuan Baiyun Company in China (http://www.keyunnpv.cn/) and incubated in a growth chamber set to 26°C, 16 hr light/8 hr dark. The hatched larvae were fed with commercial forage until a specific stage, as specified in the text, and transferred to bioassay tests.
 
 Enterococcus faecalis ATCC29212 was purchased from the BeNa Culture Collection in China (http://www.bncc.org.cn/) and cultured in growth medium (in 100 mL medium: 0.3 g beef paste, 1.0 g peptone, and 0.5 g NaCl) at 37°C according to the company’s instructions.
 
-## Preference test of P. xylostella larvae upon DMNT treatment
+### Preference test of P. xylostella larvae upon DMNT treatment
 
 We designed an in-house insect preference test device to measure the preference of P. xylostella larvae (Figure 1—figure supplement 2). Forage, containing the indicated amounts of DMNT and the solvent paraffin oil, was placed at each end of the glass test tube. Along with the air flow generated by a pump (1 mL/min), we placed 15 P. xylostella larvae in the center of the test tube for each assay. After 10–120 min, the number of larvae that had moved to either end of the glass tube were scored and compared to determine larvae preferences. To avoid any influence from the experimental setup, we swapped the DMNT and control paraffin oil positions in half of our assays. All assays were repeated at least six times with consistent results.
 
-## No-choice test of P. xylostella larvae
+### No-choice test of P. xylostella larvae
 
 Except when testing different concentrations of DMNT, all bioassays in this study used 7 μM DMNT and second-instar P. xylostella larvae. For each assay, we performed six independent replicates, each consisting of 15 larvae. The experiments were carried out in clear Petri dishes wrapped with surgical tape (3M Micropore) for air ventilation. Within each dish, we placed three forage blocks (diameter 1.5 cm, height 0.8 cm) and added 15 μL of 0.1 mg/mL DMNT dissolved in paraffin oil (Sigma) as solvent on top of each block to bring the final DMNT concentration in forage to 7 μM. The same volume of paraffin oil was used as controls. After different lengths of DMNT exposure, the survival, body weight, pupation, and eclosion data were collected and compared.
 
-## Lipase enzyme activity assay in P. xylostella larva midguts
+### Lipase enzyme activity assay in P. xylostella larva midguts
 
 The entire midguts of 90 P. xylostella larvae were isolated by hand and quickly frozen in liquid nitrogen. Lipase activity was assayed with a commercial kit from Jiancheng Company (http://www.njjcbio.com, catalog: A054-1-1) according to the manufacturer’s instructions with a spectrophotometer. Briefly, the substrate buffer was warmed to 37°C before the assays. The midguts of P. xylostella larvae were homogenized in 25 μL homogenization solution and transferred into 25 μL buffer #4 and 2 mL pre-warmed substrate buffer. The mixture was quickly moved to a spectrophotometer to check the absorbance (A1) at 420 nm. The mixture was then transferred to a water bath set to 37°C for incubation. After 10 min, the mixture was transferred to the spectrophotometer to measure the absorbance (A2). As a control, 2 mL substrate solution was mixed with 50 μL 0.9% NaCl solution for absorbance measurement at 420 nm (As). Enzyme activity was calculated according to the equation: [(A1–A2)/As]×(454 µmol/L)×[reaction volume (2.05 mL)/sample volume (0.025 mL)]/reaction time (10 min)/protein concentration of sample (gprot/L).
 
-## Starvation test of P. xylostella larvae
+### Starvation test of P. xylostella larvae
 
 Second-instar P. xylostella larvae were selected randomly for DMNT and starvation tests in separated Petri dishes. DMNT dissolved in paraffin oil was injected into forage, and the same amount of paraffin oil was put into the Petri dishes for starvation test. After 12–36 hr, the mortality of P. xylostella larvae was monitored and recorded.
 
-## Antibiotic cocktail treatment of P. xylostella larvae
+### Antibiotic cocktail treatment of P. xylostella larvae
 
 We prepared a cocktail of antibiotics by mixing penicillin, streptomycin, and gentamycin at the working concentration of 1 kU/mL, 1 mg/mL, and 0.5 mg/mL, respectively. Forage blocks were immersed in an antibiotic cocktail solution for 30 s, air-dried and fed to second-instar P. xylostella larvae with or without DMNT in specific experiments. To test whether bacteria were killed by the antibiotic cocktail, we dissected the midgut from P. xylostella larvae 72 hr after treatment under sterile conditions and transferred the tissues into 1 mL LB medium for a 48 hr incubation at 37°C. The 30 μL culture was then spread onto LB plates containing no antibiotics for growth at 37°C for 48 hr, after which we determined bacterial growth. Before dissecting guts, the surface of whole larva body was disinfected with 75% ethanol. To prepare second-instar ‘antibiotics-treated’ P. xylostella larva caterpillars, we first inoculated larval eggs on plastic paper and put it close to forage containing antibiotics to ensure the larvae could reach and eat antibiotics immediately after hatching. To test whether bacteria were killed by the antibiotic cocktail, we dissected the midgut from second-instar P. xylostella larvae and transferred the tissues into 50 μL LB medium, then spread it on LB solid medium for incubation overnight at 37°C. All experiments were performed in a sterile hood to avoid contamination. As control, we performed the same experiment with P. xylostella larvae not exposed to antibiotic treatment.
 
-## Smurf assay of P. xylostella midgut permeability
+### Smurf assay of P. xylostella midgut permeability
 
 The assay was carried out using the dye erioglaucine disodium salt (Sigma-Aldrich, cas 3844-45-9, molecular weight 792.85, color index number 42090) as described with some modifications (Amcheslavsky et al., 2009; Rera et al., 2012; He et al., 2017). Briefly, third-instar P. xylostella larvae were fed with forage containing DMNT for 48 hr. Forage was then replaced with fresh forage containing 0.3125 mg/mL dye, and larvae were allowed to feed for 1 hr before being given fresh forage with no added DMNT or dye. After 6 hr, the larvae were photographed under a stereomicroscope. Six biological replicates were prepared for the treatment and control, with 15 larvae per replicate. When the midguts are intact, the dye will pass through together with feces; if the midguts are damaged, the dye will penetrate into larval tissues and remain inside the body, thus turning larvae blue (hence the name of the assay).
 
-## Effects of intestinal microbiota on the PM of P. xylostella larvae
+### Effects of intestinal microbiota on the PM of P. xylostella larvae
 
 To prepare the gut microbes, we dissected the midgut from 45 P. xylostella larvae and transferred the tissues into 200 mL medium incubation at 37°C. After 48 hr, we collected the gut microbes by centrifugation at 2841 g for 15 min and then added 1×PBS (phosphate buffer saline) for later use. Before dissecting guts, the surface of whole larvae was disinfected with 75% ethanol. All experiments were performed in a sterile hood to avoid contamination.
 
-## Dissection of midgut and PM of P. xylostella larvae
+### Dissection of midgut and PM of P. xylostella larvae
 
 P. xylostella larvae were narcotized by ice incubation for 30 min, and then immersed in sterile 1×PBS solution (pH 7.2). The entire midguts were dissected and one end of midgut was opened with an anatomical needle. The other end of the midgut was handled with a forceps and gently shaken in the PBS solution, allowing the PM to float out. PM features were inspected and imaged under a Leica stereoscope.
 
-## Transverse sections of P. xylostella larvae
+### Transverse sections of P. xylostella larvae
 
 P. xylostella larvae were fixed in 1% formaldehyde in 1×PBS under gentle vacuum and later embedded in paraffin, following dehydration with a graded ethanol series. Individual larvae were sectioned on a microtome at the middle position of the body and de-waxed with a series of xylene solutions before staining with HE staining solution on slides (Rodgers et al., 2017). The slides were then scanned to obtain images on a high-resolution scanner (Pannoramic Scanner, DESK).
 
-## Chemical synthesis of DMNT
+### Chemical synthesis of DMNT
 
 DMNT was synthesized according to published literature with minor modifications (Huang and Yang, 2007). The purity of all batches of DMNT was determined by nuclear magnetic resonance.
 
-## Sequencing of 16S ribosomal DNA from midgut microbiota
+### Sequencing of 16S ribosomal DNA from midgut microbiota
 
 After feeding for 72 hr, P. xylostella larvae were dissected to collect the content of their midguts. Before dissecting guts, the surface of whole larva body was disinfected with 75% ethanol. Eight independent biological replicates were performed, each comprising 15 P. xylostella larvae. Gut microbe DNA was extracted with E.Z.N.Z Stool DNA Kit (D4015, Omega, lnc.). The conserved regions of 16S ribosomal DNA were amplified by PCR, separated in 2% agarose gels, purified with AMPure XT beads (Beckman Coulter Genomics, Danvers, MA), and quantified by Qubit (Invitrogen). The amplicon pools were prepared for sequencing and the size and quantity of the amplicon library were assessed on Agilent 2100 Bioanalyzer (Agilent) and with the Library Quantification Kit for Illumina (Kapa Biosciences, Woburn, MA), respectively. The libraries were sequenced on NovaSeq PE250 platform.
 
-## Data analysis
+### Data analysis
 
 Samples were sequenced on an Illumina NovaSeq platform according to the manufacturer's recommendations, provided by LC-Bio. Paired-end reads were assigned to samples based on their unique barcode and truncated by cutting off the barcode and primer sequence. Paired-end reads were merged using FLASH. Quality filtering on the raw reads was performed under specific filtering conditions to obtain the high-quality clean tags according to the fqtrim (v0.94). Chimeric sequences were filtered using Vsearch software (v2.3.4). After dereplication using DADA2, we obtained the feature table and feature sequence. Alpha diversity and beta diversity were calculated by normalizing to the same sequences randomly. Then according to SILVA (release 132) classifier, feature abundance was normalized using relative abundance of each sample. Alpha diversity is applied in analyzing the complexity of species diversity for a sample through five indices, including Chao1, Observed species, Goods coverage, Shannon, and Simpson, and all these indices in our samples were calculated with QIIME2. Beta diversity was calculated by QIIME2, and the graphs were drawn by R package. Blast was used for sequence alignment, and the feature sequences were annotated with SILVA database for each representative sequence. Other diagrams were implemented using the R package (v3.5.2). This work was performed by Lianchuan Company (http://www.lc-bio.com/).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses in this study were performed in the SPSS 16.0 package as two-tailed unpaired t-tests, ANOVA, or Kaplan–Meier survival analysis using default parameters with no data transformation (http://www.spss.com). Replication numbers for all assays are listed in the figure legends.
 
-## dsRNA synthesis and treatment
+### dsRNA synthesis and treatment
 
 dsRNA was synthesized with the T7 RiboMAX express RNAi synthesis kit (Promega, catalog number P1700) as described in the manufacturer’s instructions. The primers for RNAi of PxMucin (LOC105381635) are listed in Supplementary file 2, and the length of dsRNA is 502 bp.
 
 To test the function of PxMucin on the growth of P. xylostella larvae, 20 μL PxMucin dsRNA (500 ng/μL) was spread onto the leaves of 2-week-old A. thaliana plants, which were used to feed first-instar P. xylostella larvae. A dsRNA for the green fluorescent protein (GFP) was used as a negative control, and the length of dsRNA is 463 bp. GFP fragment was amplified with PCR method using pCambia-1305GFP plasmid as DNA template. After feeding for 24–96 hr, the survival, weight, and pupation rates were scored for all larvae. Six biological replicates were set up for each treatment, each replicate consisting of 15 larvae. After the larvae had fed for 24 hr, the midgut tissues were dissected for RNA extraction using Trizol method, reverse transcription with one-step cDNA synthesis kit (Takara), and PxMucin expression analysis by quantitative PCR techniques (Roche, Light Cycler 480C), three biological replicates were performed, with each biological replicate including 30 larvae. The positions of the qRT-PCR analysis primers are as shown in Figure 4A, with the forward primer on exon 7 and the reverse primer in intron 7. The primer sequences are listed in Supplementary file 2. In addition, after 48 hr of feeding, larvae were processed for sections and HE staining to observe the effects of PxMucin RNAi on PM.
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 Total RNA of P. xylostella larva midgut was extracted with TRIzol (TaKaRa) RNA preparation method, and 1 μg RNA was used for reverse transcription to synthesize cDNA. The specific primers are listed in Supplementary file 2. PxRPL32 and PxRPS13 were used as reference genes (Fu et al., 2013). The primers for PxLysozyme were designed by Xia et al., 2018.

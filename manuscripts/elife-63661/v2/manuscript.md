@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Overflow metabolism refers to the production of seemingly wasteful by-products by cells during growth on glucose even when oxygen is abundant. Two theories have been proposed to explain acetate overflow in Escherichia coli – global control of the central metabolism and local control of the acetate pathway – but neither accounts for all observations. Here, we develop a kinetic model of E. coli metabolism that quantitatively accounts for observed behaviours and successfully predicts the response of E. coli to new perturbations. We reconcile these theories and clarify the origin, control, and regulation of the acetate flux. We also find that, in turns, acetate regulates glucose metabolism by coordinating the expression of glycolytic and TCA genes. Acetate should not be considered a wasteful end-product since it is also a co-substrate and a global regulator of glucose metabolism in E. coli . This has broad implications for our understanding of overflow metabolism.
+Overflow metabolism refers to the production of seemingly wasteful by-products by cells during growth on glucose even when oxygen is abundant. Two theories have been proposed to explain acetate overflow in Escherichia coli – global control of the central metabolism and local control of the acetate pathway – but neither accounts for all observations. Here, we develop a kinetic model of E. coli metabolism that quantitatively accounts for observed behaviours and successfully predicts the response of E. coli to new perturbations. We reconcile these theories and clarify the origin, control, and regulation of the acetate flux. We also find that, in turns, acetate regulates glucose metabolism by coordinating the expression of glycolytic and TCA genes. Acetate should not be considered a wasteful end-product since it is also a co-substrate and a global regulator of glucose metabolism in E. coli. This has broad implications for our understanding of overflow metabolism.
 
 ## Introduction
 
@@ -33,13 +33,23 @@ In this work, we used a systems biology approach to clarify the origin, control,
 
 ## Results
 
-## Construction of a kinetic model of E. coli metabolism
+### Construction of a kinetic model of E. coli metabolism
 
 Following a top-down systems biology approach (Bruggeman et al., 2007), we constructed a coarse-grained kinetic model of E. coli metabolism that links acetate metabolism with glucose uptake and growth (Figure 1A). This model includes three processes: (i) glucose transport and its conversion into acetyl-CoA by the glycolytic pathway, (ii) utilisation of acetyl-CoA in the TCA cycle (energy conservation) and anabolic pathways (production of building blocks) for growth, and (iii) acetate metabolism, i.e., the reversible conversion of acetyl-CoA into acetate via phosphotransacetylase (Pta), acetate kinase (AckA), and an acetate exchange reaction between the cell and its environment.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig1-v2.jpg)
+
+**Figure 1.:** We performed 13C-labelling experiments to calibrate the model and evaluated the goodness of fit for different topologies (B). The initial model (model 1), which does not include inhibition of the glycolytic pathway and TCA cycle by acetate, did not fit the data satisfactorily. Adding inhibition by acetate of glycolysis (model 2) or of the TCA cycle (model 3) improved the fit, but both pathways had to be inhibited (model 4) for the goodness-of-fit criterion to be satisfied. In (B), the horizontal line represents the 95% confidence threshold for the variance-weighted sum of squared residuals (SSR). The best fits of the experimental data obtained with model 4 are shown in (C), where the shaded areas represent the 95% confidence interval on the fits. The best fits obtained with the alternative models (models 1–3) are shown in Figure 1—figure supplements 1–3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig1-figsupp3-v2.jpg)
+
 This initial model included two compartments, 6 species, 6 reactions, and 24 parameters. The value of 14 parameters were taken directly from the literature (Enjalbert et al., 2017; Millard et al., 2017; Kadir et al., 2010). To estimate the remaining parameters, we performed three growth experiments on 13C-glucose (15 mM) plus different concentrations of 12C-acetate (1, 10, and 30 mM), as detailed in Enjalbert et al., 2017. These experiments were designed to demonstrate that E. coli simultaneously produces acetate from glucose and consumes it from the environment (Enjalbert et al., 2017). They provide information on the forward and reverse fluxes of acetate between the cell and its environment (Enjalbert et al., 2017), and thereby improve the calibration of the model. The model was extended with isotopic equations to account for the propagation of 13C label (Enjalbert et al., 2017; Millard et al., 2015), and parameters were estimated by fitting concentration time courses of glucose, biomass, and acetate and 13C-enrichment of acetate (see Materials and methods). This initial model (model 1) did not fit the data satisfactorily (Figure 1B, Figure 1—figure supplement 1, Materials and methods). Adding inhibition of the glycolytic pathway by acetate (model 2) to account for the reduction in glucose uptake at high acetate concentrations improved the fits of the biomass, glucose, and acetate concentration profiles but not of the acetate labelling profiles (Figure 1—figure supplement 2). Similarly, adding inhibition of the TCA cycle by acetate (model 3) slightly improved the fit of the acetate labelling profile but not of the glucose and biomass concentration profiles (Figure 1—figure supplement 3). A sufficiently accurate fit was only achieved when both pathways were inhibited (model 4; Figure 1B,C). These modifications suggest the existence of an unknown regulatory program that makes E. coli sensitive and responsive to acetate concentration, and provide a mechanistic rationale for the reported ‘toxicity’ of acetate to E. coli (Enjalbert et al., 2017; Wilbanks and Trinh, 2017; Luli and Strohl, 1990; Pinhal et al., 2019).
 
-## Acetate regulates glucose uptake, glycolysis, and the TCA cycle at the transcriptional level
+### Acetate regulates glucose uptake, glycolysis, and the TCA cycle at the transcriptional level
 
 A key hypothesis required for the model to fit the experimental data is that acetate inhibits the flux capacity of both the glycolytic pathway and the TCA cycle in E. coli. In this model, the aim of the simplified description of inhibition by acetate was to represent the integrated response of E. coli metabolism to acetate, with no a priori knowledge of the underlying molecular mechanism(s). To determine whether this inhibition actually occurs in vivo at the transcriptional level, we monitored gene expression in E. coli grown on glucose (15 mM) plus acetate at different concentrations (0, 10, 50, or 100 mM).
 
@@ -47,15 +57,27 @@ Transcriptomic results revealed a global and progressive remodelling of gene exp
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig2-v2.jpg)
 
-**Figure 2.:** E. coli transcriptome to changes in acetate concentration (0, 10, 50, or 100 mM) during growth on glucose (15 mM).The changes in gene expression are shown in (A). Each line represents the expression of a single gene relative to its expression level measured in the absence of acetate. Up- and downregulated genes are shown in red and green, respectively. The Venn diagrams (B) represent the total number of genes upregulated (left) and downregulated (right) by at least a factor of 2 under each condition and during growth on glucose in the absence of acetate but at the same growth rate as in the presence of 100 mM acetate (0.35 hr−1, extrapolated from the data from Esquerré et al., 2014). Biological functions modulated by the presence of acetate (based on Gene Ontology analysis) are shown in (C), with the corresponding p-values. The expression levels of central metabolic genes are shown in (D). The data were obtained from four independent biological replicates for each condition.Figure 2—source data 1.E. coli transcriptome to changes in acetate concentration (0, 10, 50, or 100 mM) during growth on glucose (15 mM).
+**Figure 2.:** The changes in gene expression are shown in (A). Each line represents the expression of a single gene relative to its expression level measured in the absence of acetate. Up- and downregulated genes are shown in red and green, respectively. The Venn diagrams (B) represent the total number of genes upregulated (left) and downregulated (right) by at least a factor of 2 under each condition and during growth on glucose in the absence of acetate but at the same growth rate as in the presence of 100 mM acetate (0.35 hr−1, extrapolated from the data from Esquerré et al., 2014). Biological functions modulated by the presence of acetate (based on Gene Ontology analysis) are shown in (C), with the corresponding p-values. The expression levels of central metabolic genes are shown in (D). The data were obtained from four independent biological replicates for each condition.
 
 At the level of the central metabolism (Figure 2D), acetate reduces the expression of all genes that code for the glucose phosphotransferase system (PTS) (ptsGHI, crr), without inducing the expression of alternative systems of glucose internalisation and phosphorylation (galP, mglABC, glf, glk, manXYZ) that could have compensated for reduced PTS activity and the corresponding inhibition of glucose uptake (Lim and Jung, 2017; Ruyter et al., 1991). Expression of upper glycolytic genes remained stable, with the exception of two isoenzymes that were overexpressed in the presence of acetate: fbaB, a gluconeogenic enzyme, and pfkB, which contributes little to phosphofructokinase activity on glucose (<10%) (Fraenkel, 1986; Scamuffa and Caprioli, 1980; Long and Antoniewicz, 2019; Daldal et al., 1982). In contrast, the expression of most of the lower glycolysis genes (pgk, gapA, gpmA, eno, pykF, aceE) was reduced by 15–40% at 100 mM acetate. At this concentration, acetate also inhibits the expression of virtually all TCA cycle genes (gltA, acnAB, icd, lpd, sucABCD, sdhABCD, fumABC, mdh) by 30–67%. In terms of acetate metabolism, the expression of pta and ackA, which code for enzymes in the Pta-AckA pathway, remained remarkably stable at all acetate concentrations. Expression of pyruvate oxidase (poxB) was increased by a factor of 8 in the presence of acetate, though this promiscuous enzyme contributes to acetate metabolism mainly in the stationary phase and apparently not under our conditions (Enjalbert et al., 2017; Pinhal et al., 2019; Martínez-Gómez et al., 2012; Dittrich et al., 2005). Expression of acetyl-CoA synthetase (acs) – which converts acetate to acetyl-CoA with a high affinity – decreased with increasing acetate concentration, indicating that under glucose excess, the presence of acetate does not activate acetate recycling through the Pta-AckA-Acs cycle (Enjalbert et al., 2017; Valgepea et al., 2010).
 
 These data confirm our hypothesis that acetate gradually modulates both the flux capacity of E. coli to produce acetyl-CoA from glucose and its capacity to utilise acetyl-CoA as a source of energy and of anabolic precursors for growth. Acetate does not appear to influence the flux capacity of the acetate pathway itself, which is also consistent with the proposed model.
 
-## Testing the model
+### Testing the model
 
 We tested the model by predicting the response of E. coli to new perturbations and comparing the results with experimental data (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig3-v2.jpg)
+
+**Figure 3.:** We used the model to simulate (i) steady-state glucose and acetate fluxes in glucose-limited chemostat cultures at dilution rates of 0.1–0.5 hr−1 (A), (ii) the growth rates and glucose and acetate fluxes during growth on glucose at various acetate concentrations (B), and (iii) the time courses of the changes in glucose and acetate concentrations during exponential growth on glucose after a pulse of either acetate or water (C). Model predictions are represented by lines and experimental data are shown as dots (the error bars represent one standard deviation), the shaded areas represent the 95% confidence intervals on the predictions. Predictions obtained with the alternative models (models 1–3) are shown in Figure 3—figure supplements 1–3. The predictive accuracy was compared between models based on the variance-weighted sum of squared residuals between simulated and experimental data (Figure 3—figure supplements 1–4).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig3-figsupp4-v2.jpg)
 
 First, we checked that the model could reproduce the established growth-rate dependence of acetate production in E. coli. We modified the model to simulate glucose-limited chemostat experiments (by adding reactions for glucose feed and medium outflow), and we predicted the steady-state glucose and acetate fluxes at different dilution rates (from 0.1 to 0.5 hr−1). Since the present model cannot account for the activation of acetyl-CoA synthetase – involved in acetate assimilation – under glucose limitation (Valgepea et al., 2010), model simulations were compared to experimental data collected on a Δacs strain (Renilla et al., 2012). The simulated profiles of acetate production as a function of growth and glucose uptake rates were in excellent agreement with experimental data (Figure 3A), indicating that the model accurately captures the effects of glucose limitation on growth and acetate fluxes.
 
@@ -67,35 +89,45 @@ Overall, the predictions of the model are in agreement with experimental finding
 
 To assess the functional importance of regulation by acetate, we predicted the response of E. coli to the same perturbations with alternative models (i.e., without inhibition of the glycolytic and/or TCA cycle pathways, models 1–3). The simulations in the absence of inhibition are qualitatively different (Figure 3—figure supplements 1–3). For instance, model 1 predicts a constant glucose uptake flux at all acetate concentrations, and even, contrary to observations, an increase in the growth rate with the acetate concentration. We compared the predictive accuracy of all the models by calculating the variance-weighted sum of squared residuals between the simulated and experimental data (Figure 3—figure supplement 4). The most accurate predictions for all perturbations are those from the model with dual inhibition (model 4), followed by those from the single-inhibition models (models 2 and 3) and finally those produced by the no-inhibition model (model 1). The predicted data are thus only qualitatively and quantitatively consistent with observations when inhibition by acetate is included, indicating that the regulatory role of acetate in E. coli is functionally important.
 
-## Intracellular control of acetate flux is distributed around the acetyl-CoA node
+### Intracellular control of acetate flux is distributed around the acetyl-CoA node
 
-We used a metabolic control analysis of this kinetic model to determine the degree of control exerted by each reaction on acetate flux (Figure 4). Flux control coefficients (CEJ) quantify the impact of small changes in the rate of each reaction (typically from a change in the enzyme concentration E) on each flux (J) (Kacser and Burns, 1973; Heinrich and Rapoport, 1974).
+We used a metabolic control analysis of this kinetic model to determine the degree of control exerted by each reaction on acetate flux (Figure 4). Flux control coefficients ($C_{E}^{J}$) quantify the impact of small changes in the rate of each reaction (typically from a change in the enzyme concentration E) on each flux (J) (Kacser and Burns, 1973; Heinrich and Rapoport, 1974).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig4-v2.jpg)
 
-**Figure 4.:** Each column represents a controlling reaction (E) and each row, a flux (J). Red and blue cells represent negative and positive flux control coefficients (), respectively, with darker (lighter) tones indicating stronger (weaker) control.CEJ
+**Figure 4.:** Each column represents a controlling reaction (E) and each row, a flux (J). Red and blue cells represent negative and positive flux control coefficients ($C_{E}^{J}$), respectively, with darker (lighter) tones indicating stronger (weaker) control.
 
 Metabolic control analysis revealed that rather than being controlled entirely from within the acetate pathway, acetate flux is controlled to a similar degree by the acetate pathway (with a flux control coefficient of 0.76), glycolysis (0.88), and the TCA cycle (−0.64). The balance between acetyl-CoA production and demand (i.e., between glycolytic and TCA fluxes), therefore has a strong effect on acetate production. As expected, this control is positive for glycolysis (since it produces acetyl-CoA) and negative for the TCA cycle (since it consumes acetyl-CoA). Still, acetate flux is controlled to a large extent from within the acetate pathway, mainly by AckA (0.69), with a small contribution from acetate transport (0.07). Overall, acetate flux control is distributed around the acetyl-CoA node.
 
-## Intracellular flux control patterns shift with the acetate concentration
+### Intracellular flux control patterns shift with the acetate concentration
 
 Since control of acetate flux is distributed around the acetyl-CoA node, we tested how flux changes around this node might affect its control properties. Given that the concentration of acetate is a major determinant of acetate flux (Figure 3), we performed metabolic control analyses for a broad range of acetate concentrations (from 0.1 to 100 mM).
 
 The control exerted by the acetate pathway on acetate flux decreases non-linearly as the acetate concentration increases (Figure 5A), highlighting a progressive shift of the control from inside to outside the acetate pathway. This is contrary to the classical behaviour in which the control exerted by a metabolic pathway increases as it becomes saturated, i.e., where the flux reaches the capacity of the uptake pathway at high substrate concentrations (Wegner et al., 2015; Moreno-Sánchez et al., 2008). The control exerted by the acetate pathway gradually shifts towards the glycolytic and TCA pathways (Figure 5B,C). Discontinuous control patterns are observed for the latter pathways at a concentration of about 10 mM, i.e., around the concentration threshold at which the acetate flux switches from production to consumption and is zero (Enjalbert et al., 2017). The sum of the control coefficients of the glycolytic and TCA blocks, which represent the overall control exerted by E. coli metabolism on the acetate flux (Figure 5D), increases with the acetate concentration and compensates for the decrease in control from the acetate pathway. The ratio of the control coefficients of glycolysis and the TCA cycle show that control shifts from the glycolytic pathway to the TCA cycle as the acetate concentration increases (Figure 5E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig5-v2.jpg)
+
+**Figure 5.:** The shaded areas represent the 95% confidence intervals. Flux control coefficients calculated with the alternative models (models 1–3) are shown in Figure 5—figure supplements 1–3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig5-figsupp3-v2.jpg)
+
 Overall, these results reveal how intracellular flux control patterns are strongly modulated by the extracellular concentration of acetate, with the control exerted by the acetate pathway being transferred progressively to the glycolytic and TCA pathways as the acetate concentration increases.
 
 Here again, we tested the impact of regulation by acetate on the control properties of E. coli by comparing the results obtained with different models (Figure 5—figure supplements 1–3). The individual control profiles of the glycolytic and TCA pathways are qualitatively similar in all the models. However, the control profiles of the acetate pathway differ drastically in the absence of inhibition (model 1) and with partial inhibition (models 2 and 3), from the results with dual inhibition (model 4). In models 1–3, the control exerted by the acetate pathway remains constant at low to moderate acetate concentrations and tends to increase at high acetate concentrations, indicating that the progressive transfer of control from the acetate pathway to the rest of the metabolism as a function of the acetate concentration emerges specifically from the inhibition by acetate of both the glycolytic and the TCA cycle pathways.
 
-## Regulation of E. coli metabolism by acetate
+### Regulation of E. coli metabolism by acetate
 
 Metabolic control analysis identified the controlling steps, i.e., the reactions that alter the acetate flux if their rates are modified (e.g., through changes in enzyme concentrations). However, more information is needed to understand the mechanisms involved in flux responses to perturbations of an external parameter such as the acetate concentration. Indeed, while a metabolic reaction may exert some control on a given flux, this does not necessarily mean that it is involved in the observed flux response. For instance, AckA exerts some control on the acetate flux, but its expression appears to be constant at all acetate concentrations (Figure 2), hence it does not regulate the acetate flux at the transcriptional level.
 
-To identify the regulatory routes that are actually involved in the response of E. coli to changes in acetate concentration, we used the concept of response coefficients (RAceJace), which express the dependence of a system variable (here the acetate flux, Jace) on an external effector (the concentration of acetate). The partitioned response relationship (Kacser and Burns, 1973; Cornish-Bowden, 1995) allows the flux response to a perturbation in acetate concentration channelled through a given reaction i (viRAceJace) to be quantified, as detailed in the Materials and methods section. Since acetate regulates more than one reaction, the partitioned response coefficients provide a quantitative understanding of the different routes through which the acetate flux is regulated by the acetate concentration. We calculated the partitioned response coefficients of the acetate flux to the acetate concentration via (i) the acetate pathway, which represents the contribution of direct metabolic regulation, and via (ii) the glycolytic and (iii) the TCA pathways, where acetate acts indirectly by modulating the flux capacity (Figure 6A). As expected, regulation is minimal when acetate does not significantly modulate the acetate flux, i.e., at low and high acetate concentrations, and is maximal at concentrations that strongly modulate its flux (Figure 6B–D). Setting the response threshold of 0.1 – i.e., that a relative change of x % in the acetate concentration should lead to a relative flux response of at least (0.1×x) % via the regulatory route considered – we determined that acetate acts as a regulator over a range of concentrations spanning three orders of magnitude (between 0.2 and 100 mM).
+To identify the regulatory routes that are actually involved in the response of E. coli to changes in acetate concentration, we used the concept of response coefficients ($R_{Ace}^{J_{ace}}$), which express the dependence of a system variable (here the acetate flux, Jace) on an external effector (the concentration of acetate). The partitioned response relationship (Kacser and Burns, 1973; Cornish-Bowden, 1995) allows the flux response to a perturbation in acetate concentration channelled through a given reaction i ($^{v_{i}}R_{Ace}^{J_{ace}}$) to be quantified, as detailed in the Materials and methods section. Since acetate regulates more than one reaction, the partitioned response coefficients provide a quantitative understanding of the different routes through which the acetate flux is regulated by the acetate concentration. We calculated the partitioned response coefficients of the acetate flux to the acetate concentration via (i) the acetate pathway, which represents the contribution of direct metabolic regulation, and via (ii) the glycolytic and (iii) the TCA pathways, where acetate acts indirectly by modulating the flux capacity (Figure 6A). As expected, regulation is minimal when acetate does not significantly modulate the acetate flux, i.e., at low and high acetate concentrations, and is maximal at concentrations that strongly modulate its flux (Figure 6B–D). Setting the response threshold of 0.1 – i.e., that a relative change of $x$ % in the acetate concentration should lead to a relative flux response of at least $(0.1\timesx)$ % via the regulatory route considered – we determined that acetate acts as a regulator over a range of concentrations spanning three orders of magnitude (between 0.2 and 100 mM).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63661/elife-63661-fig6-v2.jpg)
 
-**Figure 6.:** Escherichia coli.The different routes through which acetate flux can be regulated by the acetate concentration are shown in (A). Dotted lines represent indirect (hierarchical) regulation, and straight lines represent direct (metabolic) regulation. The strengths of the three regulatory routes are respectively shown in (B–D), and their relative contributions are shown in (E). The shaded areas represent the 95% confidence intervals.
+**Figure 6.:** The different routes through which acetate flux can be regulated by the acetate concentration are shown in (A). Dotted lines represent indirect (hierarchical) regulation, and straight lines represent direct (metabolic) regulation. The strengths of the three regulatory routes are respectively shown in (B–D), and their relative contributions are shown in (E). The shaded areas represent the 95% confidence intervals.
 
 Based on the regulatory strength of each interaction, we determined the relative contribution of each interaction to the observed flux response (Figure 6E), revealing two distinct modes of regulation that depend on the acetate concentration and remain remarkably stable over a broad range of concentrations. At low acetate concentrations (<10 mM), the main regulatory route (50–60%) is direct metabolic regulation via the acetate pathway, with the remaining flux response being accounted for by indirect regulation through the TCA cycle (35–40%) and glycolysis (5–10%). This regulatory pattern remains stable before changing abruptly at ~10 mM when the acetate flux reverses. Above this threshold, direct regulation by acetate accounts for about 40% of the observed flux response, glycolysis, about 20%, and the TCA cycle, roughly 40%. This pattern then remains stable up to 100 mM.
 
@@ -119,60 +151,404 @@ Microorganisms other than E. coli are similarly capable of co-consuming glucose
 
 ## Materials and methods
 
-## Strain and conditions
+### Strain and conditions
 
 E. coli K-12 MG1655 was grown in M9 medium (Nicolas et al., 2007) complemented with 15 mM glucose. Sodium acetate (prepared in a 1.6 M solution at pH 7.0) was added up to the required concentration. The cells were grown in shake flasks at 37°C and 200 rpm, in 50 mL of medium. For the isotope labelling experiments, unlabelled glucose was replaced by U-13C6-glucose (Eurisotop, France). Growth was monitored by measuring the optical density (OD) at 600 nm using a Genesys 6 spectrophotometer (Thermo, USA), and a conversion factor of 0.37 gDW/L/OD unit (Revelles et al., 2013) was used to determine the biomass concentration.
 
-## Transcriptomics experiments
+### Transcriptomics experiments
 
 Cells were grown in flasks in M9 minimal media with 15 mM glucose and 0, 10, 50, or 100 mM acetate. In mid-exponential growth phase (OD600nm = 1), 4 mL of each culture was centrifuged for 90 s at 14,000 rpm, the supernatant was discarded, and the pellets were immediately frozen in liquid nitrogen. Total RNA was extracted using a Qiagen RNAeasy MiniKit and quantified using a Nanodrop spectrophotometer. Double-stranded complementary DNA (cDNA) synthesis and array processing were performed by One-Color Microarray-Based gene Expression Analysis (Agilent Technologies). The images were analysed with the software DEVA (v1.2.1). All array procedures were performed using the GeT-Biopuces platform (http://get.genotoul.fr). Four independent biological replicates were analysed for each condition. For each data set, the log2 intensities obtained in the presence of acetate were divided by the log2 intensities obtained in the absence of acetate. These ratios were then normalised by the log2 median intensity. Genes whose expression level differed by a factor of 2 or more between the two conditions were used for further analysis. Gene ontology analyses were performed using Ecocyc (https://ecocyc.org), p-values were estimated using Fisher exact test with Bonferroni correction. The transcriptomics data can be downloaded from the ArrayExpress database (http://www.ebi.ac.uk/arrayexpress) under accession number E-MTAB-9086. Theoretical expression data at a given growth rate were obtained by extrapolating the data from Esquerré et al., 2014.
 
-## Metabolomics experiments
+### Metabolomics experiments
 
 Extracellular concentrations of labelled and unlabelled glucose and acetate were quantified during growth by 1D 1H-NMR on a Bruker Ascend 800 MHz spectrometer equipped with a 5 mm QCI cryoprobe (Bruker, Germany), as detailed previously (Millard et al., 2014). Briefly, 150 µL of filtered broth (0.2 μm, Sartorius, Germany) were mixed with 50 µL of D2O containing TSPd4 (3-(trimethylsilyl)-1-propanesulfonic acid-tetra deuterated, used as internal standard) at a concentration of 10 mM. A sequence using presaturation (ZGPR) was used for water signal suppression, with a 30° pulse and a relaxation delay between scans of 10 s to ensure full signal recovery. A total of 32 scans were accumulated (64 k data points with a spectral width of 16 ppm) after 4 dummy scans. From each spectrum, we quantified glucose and unlabelled and labelled acetate. Spectra were processed using TopSpin v3.2 (Bruker).
 
-## Model construction and analysis
+### Model construction and analysis
 
 All models are provided in SBML and COPASI formats in the Supplementary Information (Supplementary file 1) and at https://github.com/MetaSys-LISBP/acetate_regulation; Millard, 2021; copy archived at swh:1:rev:c8bcf8fad3459269df30dba7e52c81e62ca181d0. The calibrated kinetic model has also been deposited in the Biomodels database (https://www.ebi.ac.uk/biomodels) (Chelliah et al., 2015) with the identifier MODEL2005050001. Model analysis was performed using COPASI (v4.27, Hoops et al., 2006) with the CoRC package (COPASI R Connector v0.7.1, https://github.com/jpahle/CoRC, Förster and Bergmann, 2021) in R (v3.6.1, https://www.r-project.org). The scripts used to perform the simulations, to analyse the models and to generate the figures are provided in the Supplementary Information (Supplementary file 1) and at https://github.com/MetaSys-LISBP/acetate_regulation to ensure reproducibility and reusability.
 
-## Model construction
+#### Model construction
 
 The model contains six reactions, six species, and two compartments (the environment and the cell, with a cell volume of 1.77 × 10−3 (L/gDW) Chassagnole et al., 2002; Figure 1A). Model units are litre (L) for volumes, hour (hr) for time, and millimole (mmol), and gram dry weight (gDW) for amounts of metabolites and biomass, respectively. All reactions are listed in Table 1. Glycolysis (which produces acetyl-CoA from glucose) and the TCA cycle (which utilises acetyl-CoA to produce biomass) were modelled using irreversible Michaelis-Menten kinetics. Growth rates were calculated from the flux of the TCA cycle assuming a constant biomass production yield from acetyl-CoA, in keeping with observations (Enjalbert et al., 2017; Pinhal et al., 2019). Acetate exchange between the cell and its environment was modelled as a saturable process using reversible Michaelis-Menten kinetics (Millard et al., 2017), and the Pta-AckA pathway was modelled using the detailed kinetics of the Pta and AckA enzymes used in previous models (Enjalbert et al., 2017; Millard et al., 2017; Kadir et al., 2010).
 
-The differential equations, which describe the progression of the variables over time as a function of the system's rates, balance the concentrations of extracellular (biomass, glucose, and acetate) and intracellular (acetate, acetyl-CoA, and acetyl-phosphate) species:dGLCdt=vglycolysis⋅X⋅VcellVenv [+vfeed−D⋅GLC]dACEenvdt=vacetate_exchange⋅X⋅VcellVenv [−D⋅ACEenv]dXdt=X⋅vgrowth [−D⋅X]dACCOAdt=1.4⋅vglycolysis−vTCAcycle−vPtadACPdt=vPta−vAckAdACEcelldt=vAckA−vacetate_exchange
+**Table 1.**
+ Reactions included in the kinetic model of glucose and acetate metabolism of Escherichia coli.
 
-Terms within square brackets are required only to simulate chemostat experiments (at dilution rate D and with a glucose feed defined by vfeed).
 
-Reaction rates were modelled using the following rate laws:vglycolysis=Vmaxglycolysis⋅GLCGLC+Km_GLC [⋅11+ACEenvKi_ACE]vTCA_cycle=VmaxTCA_cycle⋅ACCOAACCOA+Km_ACCOA [⋅11+ACEenvKi_ACE]vAckA=VmaxAckA⋅(ACP⋅ADP−ACEcell⋅ATPKeq)Km_ACP⋅Km_ADP(1+ACPKm_ACP+ACEcellKm_ACE)⋅(1+ADPKm_ADP+ATPKm_ATP)vPta=VmaxPta⋅(ACCOA⋅P−ACP⋅COAKeq)Km_ACCOA⋅Km_P1+ACCOAKm_ACCOA+PKi_P+ACPKi_ACP+COAKm_COA+ACCOA⋅PKm_ACCOA⋅Km_P+ACP⋅COAKm_ACP⋅Km_COAvAcetate_exchange=VmaxAcetate_exchange⋅(ACEcell−ACEenvKeq)Km_ACE1+ACEcellKm_ACE+ACEenvKm_ACEvGrowth=vTCA_cycle⋅Y
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Reaction</th>
+      <th>Rate law</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glucose_feed</td>
+      <td>ø → GLC</td>
+      <td>C</td>
+      <td rowspan="4">Glucose inflow and medium outflow to simulate chemostat experiments</td>
+    </tr>
+    <tr>
+      <td>Acetate_outflow</td>
+      <td>ACEenv → ø</td>
+      <td>MA</td>
+    </tr>
+    <tr>
+      <td>Biomass_outflow</td>
+      <td>X → ø</td>
+      <td>MA</td>
+    </tr>
+    <tr>
+      <td>Glucose_outflow</td>
+      <td>GLC → ø</td>
+      <td>MA</td>
+    </tr>
+    <tr>
+      <td>Glycolysis</td>
+      <td>GLC → 1.4 × ACCOA</td>
+      <td>IMM</td>
+      <td>Stoichiometric coefficient taken from Millard et al., 2014</td>
+    </tr>
+    <tr>
+      <td>TCA_cycle</td>
+      <td>ACCOA → ø</td>
+      <td>IMM</td>
+      <td>Utilisation of AcCoA by the TCA cycle</td>
+    </tr>
+    <tr>
+      <td>Pta</td>
+      <td>ACCOA ↔ ACP</td>
+      <td>RMM</td>
+      <td>Rate law from Enjalbert et al., 2017; Millard et al., 2017; Kadir et al., 2010</td>
+    </tr>
+    <tr>
+      <td>AckA</td>
+      <td>ACP ↔ ACEcell</td>
+      <td>RMM</td>
+      <td>Rate law from Enjalbert et al., 2017; Millard et al., 2017; Kadir et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Acetate_exchange</td>
+      <td>ACEcell ↔ ACEenv</td>
+      <td>RMM</td>
+      <td>Rate law from Millard et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Growth</td>
+      <td>X → 2 × X</td>
+      <td>MA</td>
+      <td>Rate calculated from the TCA cycle flux, assuming a constant biomass yield (Enjalbert et al., 2017; Pinhal et al., 2019)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: C: constant flux; MA: mass action; RMM: reversible Michaelis-Menten; IMM: irreversible Michaelis-Menten._
+
+The differential equations, which describe the progression of the variables over time as a function of the system's rates, balance the concentrations of extracellular (biomass, glucose, and acetate) and intracellular (acetate, acetyl-CoA, and acetyl-phosphate) species:
+
+$$
+\frac{dGLC}{dt}=v_{glycolysis}⋅X⋅\frac{V_{cell}}{V_{env}} [+v_{feed}−D⋅GLC]
+$$
+
+
+
+$$
+\frac{dACE_{env}}{dt}=v_{acetate_exchange}⋅X⋅\frac{V_{cell}}{V_{env}} [−D⋅ACE_{env}]
+$$
+
+
+
+$$
+\frac{dX}{dt}=X⋅v_{growth} [−D⋅X]
+$$
+
+
+
+$$
+\frac{dACCOA}{dt}=1.4⋅v_{glycolysis}−v_{TCA_{cycle}}−v_{Pta}
+$$
+
+
+
+$$
+\frac{dACP}{dt}=v_{Pta}−v_{AckA}
+$$
+
+
+
+$$
+\frac{dACE_{cell}}{dt}=v_{AckA}−v_{acetate_exchange}
+$$
+
+Terms within square brackets are required only to simulate chemostat experiments (at dilution rate $D$ and with a glucose feed defined by $v_{feed}$).
+
+Reaction rates were modelled using the following rate laws:
+
+$$
+v_{glycolysis}=\frac{Vmax_{glycolysis}⋅GLC}{GLC+Km_GLC} [⋅\frac{1}{1+\frac{ACE_{env}}{Ki_ACE}}]
+$$
+
+
+
+$$
+v_{TCA_cycle}=\frac{Vmax_{TCA_cycle}⋅ACCOA}{ACCOA+Km_ACCOA} [⋅\frac{1}{1+\frac{ACE_{env}}{Ki_ACE}}]
+$$
+
+
+
+$$
+v_{AckA}=\frac{\frac{Vmax_{AckA}⋅(ACP⋅ADP−\frac{ACE_{cell}⋅ATP}{Keq})}{Km_ACP⋅Km_ADP}}{(1+\frac{ACP}{Km_ACP}+\frac{ACE_{cell}}{Km_ACE})⋅(1+\frac{ADP}{Km_ADP}+\frac{ATP}{Km_ATP})}
+$$
+
+
+
+$$
+v_{Pta}=\frac{\frac{Vmax_{Pta}⋅(ACCOA⋅P−\frac{ACP⋅COA}{Keq})}{Km_ACCOA⋅Km_P}}{1+\frac{ACCOA}{Km_ACCOA}+\frac{P}{Ki_P}+\frac{ACP}{Ki_ACP}+\frac{COA}{Km_COA}+\frac{ACCOA⋅P}{Km_ACCOA⋅Km_P}+\frac{ACP⋅COA}{Km_ACP⋅Km_COA}}
+$$
+
+
+
+$$
+v_{Acetate_exchange}=\frac{\frac{Vmax_{Acetate_exchange}⋅(ACE_{cell}−\frac{ACE_{env}}{Keq})}{Km_ACE}}{1+\frac{ACE_{cell}}{Km_ACE}+\frac{ACE_{env}}{Km_ACE}}
+$$
+
+
+
+$$
+v_{Growth}=v_{TCA_cycle}⋅Y
+$$
 
 As detailed in the Results section, we constructed four different versions of this model, i.e., with or without (non-competitive) inhibition of the glycolytic and/or TCA cycle pathways by acetate (terms within square brackets). This regulatory term represents the immediate, integrated response of E. coli metabolism to changes in acetate concentration, with no a priori knowledge on the underlying molecular mechanisms. The controlling species is defined as being extracellular acetate, i.e., the initial environmental signal sensed by the cells. Similar results and conclusions are obtained if the controlling species is the intracellular acetate pool.
 
-Finally, these models were extended with isotopic equations for parameter estimation, as detailed in Enjalbert et al., 2017 and Millard et al., 2015. Briefly, all reactions (except biomass synthesis) were considered separately for unlabelled and labelled metabolites. Rate laws of reversible reactions were decomposed into their forward and reverse components to account for the bidirectional isotope exchange that arise from reversibility and significantly affects the distribution of isotopes through the network. For instance, the isotopically extended balance of acetyl-CoA corresponds to:dACCOA0dt=GLC0GLC0+GLC1⋅1.4⋅vglycolysis+ACP0ACP0+ACP1⋅vPtareverse−ACCOA0ACCOA0+ACCOA1⋅(vTCAcycle+vPtaforward)dACCOA1dt=GLC1GLC0+GLC1⋅1.4⋅vglycolysis+ACP1ACP0+ACP1⋅vPtareverse−ACCOA1ACCOA0+ACCOA1⋅(vTCAcycle+vPtaforward)where subscripts 0 and 1 refer to the unlabelled and labelled metabolites, respectively.
+Finally, these models were extended with isotopic equations for parameter estimation, as detailed in Enjalbert et al., 2017 and Millard et al., 2015. Briefly, all reactions (except biomass synthesis) were considered separately for unlabelled and labelled metabolites. Rate laws of reversible reactions were decomposed into their forward and reverse components to account for the bidirectional isotope exchange that arise from reversibility and significantly affects the distribution of isotopes through the network. For instance, the isotopically extended balance of acetyl-CoA corresponds to:
 
-## Concentration of cofactors
+$$
+\frac{dACCOA_{0}}{dt}=\frac{GLC_{0}}{GLC_{0}+GLC_{1}}⋅1.4⋅v_{glycolysis}+\frac{ACP_{0}}{ACP_{0}+ACP_{1}}⋅v_{Pta}^{reverse}−\frac{ACCOA_{0}}{ACCOA_{0}+ACCOA_{1}}⋅(v_{TCA_{cycle}}+v_{Pta}^{forward})
+$$
+
+
+
+$$
+\frac{dACCOA_{1}}{dt}=\frac{GLC_{1}}{GLC_{0}+GLC_{1}}⋅1.4⋅v_{glycolysis}+\frac{ACP_{1}}{ACP_{0}+ACP_{1}}⋅v_{Pta}^{reverse}−\frac{ACCOA_{1}}{ACCOA_{0}+ACCOA_{1}}⋅(v_{TCA_{cycle}}+v_{Pta}^{forward})
+$$
+
+where subscripts 0 and 1 refer to the unlabelled and labelled metabolites, respectively.
+
+#### Concentration of cofactors
 
 Concentrations of cofactors were taken from a published kinetic model of the Pta-AckA pathway (Enjalbert et al., 2017; ADP = 0.61 mM, ATP = 2.40 mM, CoA = 1.22 mM, P = 10 mM).
 
-## Parameter estimation
+#### Parameter estimation
 
-The values of 14 of the 24 parameters were taken directly from the literature (Table 2). Parameters whose values are not available from elsewhere, which do not have a real biochemical value, or for which biochemical measurements are generally not representative of intracellular conditions (e.g., Vmax) were estimated to optimally reproduce 152 experimental data points obtained from E. coli K-12 MG1655 grown on 13C-glucose (15 mM) plus 12C-acetate (1, 10, or 30 mM). These data included time-course concentrations of biomass, glucose, and acetate and 13C-labelling of acetate. The parameters p were estimated by minimising the objective function f defined as the weighted sum of squared errors:f(p)=∑i(xi−yi(p)σi)2where xi is the experimental value of data point i, with an experimental standard deviation σi, and yi(p) is the corresponding simulated value. The objective function f was minimised with the particle swarm optimisation algorithm (2,000 iterations with a swarm size of 50). The experimental and fitted data are shown in Figure 1 and provided in the Supplementary Information (Supplementary file 1). Values and 95% confidence interval of the estimated parameters are given in Table 3.
+The values of 14 of the 24 parameters were taken directly from the literature (Table 2). Parameters whose values are not available from elsewhere, which do not have a real biochemical value, or for which biochemical measurements are generally not representative of intracellular conditions (e.g., Vmax) were estimated to optimally reproduce 152 experimental data points obtained from E. coli K-12 MG1655 grown on 13C-glucose (15 mM) plus 12C-acetate (1, 10, or 30 mM). These data included time-course concentrations of biomass, glucose, and acetate and 13C-labelling of acetate. The parameters p were estimated by minimising the objective function f defined as the weighted sum of squared errors:
 
-## Goodness-of-fit analysis
+$$
+f(p)=\sumi(\frac{x_{i}−y_{i}(p)}{\sigma_{i}})^{2}
+$$
+
+where xi is the experimental value of data point i, with an experimental standard deviation σi, and yi(p) is the corresponding simulated value. The objective function f was minimised with the particle swarm optimisation algorithm (2,000 iterations with a swarm size of 50). The experimental and fitted data are shown in Figure 1 and provided in the Supplementary Information (Supplementary file 1). Values and 95% confidence interval of the estimated parameters are given in Table 3.
+
+**Table 2.**
+ Values of kinetic parameters taken from the literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reaction</th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">AckA</td>
+      <td>Keq</td>
+      <td>174</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Kadir et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Km_ACE</td>
+      <td>7</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Fox and Roseman, 1986</td>
+    </tr>
+    <tr>
+      <td>Km_ACP</td>
+      <td>0.16</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Fox and Roseman, 1986</td>
+    </tr>
+    <tr>
+      <td>Km_ADP</td>
+      <td>0.5</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Fox and Roseman, 1986</td>
+    </tr>
+    <tr>
+      <td>Km_ATP</td>
+      <td>0.07</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Fox and Roseman, 1986</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Pta</td>
+      <td>Keq</td>
+      <td>0.005</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Km_ACCOA</td>
+      <td>0.2</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Campos-Bermudez et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Ki_ACP</td>
+      <td>0.2</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Campos-Bermudez et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Km_COA</td>
+      <td>0.029</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Campos-Bermudez et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Ki_P</td>
+      <td>13.5</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Campos-Bermudez et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Km_ACP</td>
+      <td>0.7</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017; Campos-Bermudez et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Km_P</td>
+      <td>6.1</td>
+      <td>Enjalbert et al., 2017; Millard et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Glycolysis</td>
+      <td>Km_GLC</td>
+      <td>0.02</td>
+      <td>Jahreis et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Acetate exchange</td>
+      <td>Keq</td>
+      <td>1</td>
+      <td>Intracellular and extracellular concentrations equilibrate over time</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Values and 95% confidence intervals of the estimated parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reaction</th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>95 % CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AckA</td>
+      <td>Vmax</td>
+      <td>3.4 × 105</td>
+      <td>2.8 × 105 – 5.5 × 105</td>
+    </tr>
+    <tr>
+      <td>Pta</td>
+      <td>Vmax</td>
+      <td>9.8 × 105</td>
+      <td>4.9 × 104 – 9.9 × 106</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Glycolysis</td>
+      <td>Vmax</td>
+      <td>5.6 × 103</td>
+      <td>5.3 × 103 – 5.9 × 103</td>
+    </tr>
+    <tr>
+      <td>Ki_ACE</td>
+      <td>36.7</td>
+      <td>30.9 – 46.9</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TCA cycle</td>
+      <td>Km_ACCOA</td>
+      <td>24.8</td>
+      <td>8.4 – 615.4</td>
+    </tr>
+    <tr>
+      <td>Vmax</td>
+      <td>7.4 × 105</td>
+      <td>2.4 × 105 – 1.7 × 106</td>
+    </tr>
+    <tr>
+      <td>Ki_ACE</td>
+      <td>2.3</td>
+      <td>1.8 – 3.4</td>
+    </tr>
+    <tr>
+      <td>Growth</td>
+      <td>Y</td>
+      <td>1.0 × 10−4</td>
+      <td>9 × 10−5 – 1.1 × 10−4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Acetate exchange</td>
+      <td>Vmax</td>
+      <td>4.8 × 105</td>
+      <td>8 × 104 – 1.5 × 106</td>
+    </tr>
+    <tr>
+      <td>Km_ACE</td>
+      <td>33.2</td>
+      <td>1.5 – 99.8</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Goodness-of-fit analysis
 
 We used χ2 statistical tests to assess the goodness of fit of each model and determine whether they described the data with sufficient accuracy. The minimised variance-weighted sum of squared residuals (SSR) is a stochastic variable with a χ2 distribution. The acceptable threshold for SSR values is χ²(α, d), where d represents the number of degrees of freedom and is equal to the number of fitted measurements n minus the number of estimated independent parameters p. The parameter α was set to 0.95 to define a 95% confidence threshold and models with SSRs above this threshold were rejected since they cannot accurately reproduce the experimental data.
 
-## Model validation
+#### Model validation
 
 A total of 170 experimental data (extracellular fluxes and concentrations) were collected from the literature to evaluate the predictive power of each model. These data, which were not used to train or fit the models, were obtained for E. coli K-12 MG1655 and its close derivative strain BW25113 grown on different concentrations of glucose and/or acetate, as detailed in the Results section and in Renilla et al., 2012; Enjalbert et al., 2017; Pinhal et al., 2019. The steady-state and dynamic responses of E. coli to the corresponding perturbations were predicted using each model (Figure 3). The residual error (SSR) was calculated for each model from the simulated and experimental validation data (Figure 3—figure supplement 4) to identify the model that yielded the most accurate predictions.
 
-## Metabolic control and regulation analyses
+#### Metabolic control and regulation analyses
 
-Scaled flux control coefficients (CEJ), which represent the fractional change in the steady-state flux J in response to a fractional change in the rate of the reaction E (Kacser and Burns, 1973; Heinrich and Rapoport, 1974; Cornish-Bowden, 1995), were calculated as follows:CEJ=∂lnJ∂lnE
+Scaled flux control coefficients ($C_{E}^{J}$), which represent the fractional change in the steady-state flux J in response to a fractional change in the rate of the reaction E (Kacser and Burns, 1973; Heinrich and Rapoport, 1974; Cornish-Bowden, 1995), were calculated as follows:
 
-Similarly, we defined the response coefficient (RAceJace) which represents the dependence of the acetate flux (Jace) on the extracellular concentration of acetate (Kacser and Burns, 1973; Cornish-Bowden, 1995):RAceJace=∂lnJace∂lnAce
+$$
+C_{E}^{J}=\frac{\partiallnJ}{\partiallnE}
+$$
 
-The partitioned response relationship (Kacser and Burns, 1973; Cornish-Bowden, 1995) was used to quantify the flux response (viRAceJace) to a change in acetate concentration channelled through reaction i. The effect of the acetate concentration on the rate of reaction i (vi) is described by the elasticity coefficient εAcevi, and the resulting change in vi then propagates through the system depending on the control exerted by reaction i on the acetate flux (CviJace):viRAceJace=CviJace⋅εAceviwithεAcevi=∂lnvi∂lnAce
+Similarly, we defined the response coefficient ($R_{Ace}^{J_{ace}}$) which represents the dependence of the acetate flux (Jace) on the extracellular concentration of acetate (Kacser and Burns, 1973; Cornish-Bowden, 1995):
 
-## Global sensitivity analyses
+$$
+R_{Ace}^{J_{ace}}=\frac{\partiallnJ_{ace}}{\partiallnAce}
+$$
+
+The partitioned response relationship (Kacser and Burns, 1973; Cornish-Bowden, 1995) was used to quantify the flux response ($^{v_{i}}R_{Ace}^{J_{ace}}$) to a change in acetate concentration channelled through reaction i. The effect of the acetate concentration on the rate of reaction i ($v_{i}$) is described by the elasticity coefficient $\epsilon_{Ace}^{v_{i}}$, and the resulting change in $v_{i}$ then propagates through the system depending on the control exerted by reaction i on the acetate flux ($C_{v_{i}}^{J_{ace}}$):
+
+$$
+^{v_{i}}R_{Ace}^{J_{ace}}=C_{v_{i}}^{J_{ace}}⋅\epsilon_{Ace}^{v_{i}}
+$$
+
+with
+
+$$
+\epsilon_{Ace}^{v_{i}}=\frac{∂lnv_{i}}{∂lnAce}
+$$
+
+#### Global sensitivity analyses
 
 We used a Monte-Carlo approach (Saa and Nielsen, 2017) to determine the 95% confidence intervals on (i) the fits of the experimental data (Figure 1), (ii) the estimated parameters (Table 3), (iii) the predicted responses to perturbations (Figure 3), and (iv) the flux control and regulation coefficients (Figures 5 and 6). For this purpose, we generated 500 simulated sets of calibration data with noise added according to experimental standard deviations. For each of these artificially noisy data sets, we carried out complete computational analyses (i.e., including parameter estimation – starting from random initial parameter values, simulation of the responses to different perturbations, and metabolic control and regulation analyses). We calculated the mean value and 95% confidence intervals around each parameter and each variable (i.e., concentrations, fluxes, flux control coefficients, and response coefficients) from the distribution of values obtained for the 500 data sets.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.48496.001 Bacteriophage PR772, a member of the Tectiviridae family, has a 70 nm diameter icosahedral protein capsid that encapsulates a lipid membrane, dsDNA, and various internal proteins. An icosahedrally averaged CryoEM reconstruction of the wild-type virion and a localized reconstruction of the vertex region reveal the composition and the structure of the vertex complex along with new protein conformations that play a vital role in maintaining the capsid architecture of the virion. The overall resolution of the virion is 2.75 Å, while the resolution of the protein capsid is 2.3 Å. The conventional penta-symmetron formed by the capsomeres is replaced by a large vertex complex in the pseudo T = 25 capsid. All the vertices contain the host-recognition protein, P5; two of these vertices show the presence of the receptor-binding protein, P2. The 3D structure of the vertex complex shows interactions with the viral membrane, indicating a possible mechanism for viral infection.
+Bacteriophage PR772, a member of the Tectiviridae family, has a 70 nm diameter icosahedral protein capsid that encapsulates a lipid membrane, dsDNA, and various internal proteins. An icosahedrally averaged CryoEM reconstruction of the wild-type virion and a localized reconstruction of the vertex region reveal the composition and the structure of the vertex complex along with new protein conformations that play a vital role in maintaining the capsid architecture of the virion. The overall resolution of the virion is 2.75 Å, while the resolution of the protein capsid is 2.3 Å. The conventional penta-symmetron formed by the capsomeres is replaced by a large vertex complex in the pseudo T = 25 capsid. All the vertices contain the host-recognition protein, P5; two of these vertices show the presence of the receptor-binding protein, P2. The 3D structure of the vertex complex shows interactions with the viral membrane, indicating a possible mechanism for viral infection.
 
 ## Introduction
 
@@ -32,15 +32,209 @@ Here we present the high-resolution structure of bacteriophage PR772 using elect
 
 ## Results
 
-## High resolution capsid map at 2.3 Å
+### High resolution capsid map at 2.3 Å
 
 The structure of bacteriophage PR772 was determined by electron cryo-microscopy. The overall resolution determined by Fourier shell correlation (FSC) @0.143 was 2.75 Å (Figure 1—figure supplement 1). The local resolution estimated using the two unfiltered final half maps with ResMap (Kucukelbir et al., 2014) showed that most of the capsid was resolved to 2.3 Å (Figure 1A and B). The resolution of the regions that interact with the inner lipid bilayer was lower at about 3.2 Å (Figure 1C). The areas around the icosahedral five-fold axes had resolutions varying between 2.3–3.0 Å (Figure 1D–F). At a root mean square deviation (RMSD; deviation away from noise as visualized in Coot, where noise is 0) of 4.2, the side chains of the amino acid residues were visible for most of the capsid region. The inner membrane layers of lipid, protein and dsDNA were smeared due to averaging and symmetry mismatch. The resolution in most of the regions was high enough (3.2 Å – 2.3 Å) to build a de-novo model of the asymmetric unit comprising of P3 (Figure 2—figure supplement 1), P30 (Figure 2—figure supplement 2), P5 (Figure 4—figure supplement 3), P31 (Figure 4—figure supplement 3) and P16 (Figure 6—figure supplement 1) into the icosahedrally averaged CryoEM map (Figure 1H and Table 1) (Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig1-v2.jpg)
+
+**Figure 1.:** (A) The local resolution estimate of the CryoEM map from ResMap. The map shows the distribution of resolution in different regions. (Visualized using USCF Chimera, with volume viewer parameters: Style surface, step 1 and level 0.037, Plane 418, Axis Y, Depth 23). Most of the capsid that was used for model building is resolved at 2.3 Å. (B, C and D) Show the quality of the map in different regions. (B) Quality of the map at the core of the capsid protein P3 (Chain B, residues 162–173) where the local resolution estimate is 2.3 Å. (C) Quality of the map close to the membrane (P3 Chain B, residues 18–35) where the resolution is estimated to 3.2 Å. (D) Quality of the map close to the five-fold vertex of the icosahedral viral particle. The black vertical line represents the five-fold axis. (E and F) The initial model fit of P5 residues 108-121(in pink) and P31 residues 113–126 (in yellow) to the same region of the map using Phenix: Find helix and sheets with respective protein sequences as input. (G) The post processed map of PR772 and the scale bar represents 10 nm. (H) The map:model fit of the asymmetric unit as seen from the inside of the viral particle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** FSC@0.143 is 2.75 Å and the FSC@0.5 is 3.02 Å. The phase randomization to test model bias was done at 3.59 Å.
+
+**Table 1.**
+ Data collection, Processing and Model refinement parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Magnification (x)</td>
+      <td>130000</td>
+    </tr>
+    <tr>
+      <td>Å/pix</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>Energy Filter with Slit (eV)</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Frames per Micrograph</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Total Dose (e- /Å2)</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Micrographs</td>
+      <td>3220</td>
+    </tr>
+    <tr>
+      <td>Defocus Range (μm)</td>
+      <td>0.8–2.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data Processing</td>
+    </tr>
+    <tr>
+      <td>Micrographs</td>
+      <td>3200</td>
+    </tr>
+    <tr>
+      <td>Frames used</td>
+      <td>4–40</td>
+    </tr>
+    <tr>
+      <td>Å/pix</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>Particles (Total)</td>
+      <td>46348 (56275)</td>
+    </tr>
+    <tr>
+      <td>Symmetry Applied</td>
+      <td>I4</td>
+    </tr>
+    <tr>
+      <td>Overall Resolution@FSC0.143 (Å)</td>
+      <td>2.75*</td>
+    </tr>
+    <tr>
+      <td>B-factor (Å2)</td>
+      <td>−104.93*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model Refinement</td>
+    </tr>
+    <tr>
+      <td>Composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Atoms</td>
+      <td>41731 (Hydrogens: 0)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CCmask</td>
+      <td>0.7961</td>
+    </tr>
+    <tr>
+      <td>CCvolume</td>
+      <td>0.7941</td>
+    </tr>
+    <tr>
+      <td>ADP (B-factors)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iso/Aniso</td>
+      <td>41731/0</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>101.95</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Angles (O)</td>
+      <td>0.806</td>
+    </tr>
+    <tr>
+      <td>EMRinger Score</td>
+      <td>5.40</td>
+    </tr>
+    <tr>
+      <td>MolProbity validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clash score, all atoms</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.57</td>
+    </tr>
+    <tr>
+      <td>Rotamer Outliers (%)</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured (%)</td>
+      <td>93.04</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>6.83</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.13</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Calculated by RELION_
+
 The CryoEM 3D reconstruction of PR772 shows that the viral particle follows a pseudo T = 25 lattice architecture with a (h,k) of (0,5) resulting in an icosahedral structure with 20 large trisymmetrons and 12 penta-symmetrons (Caspar and Klug, 1962; Wrigley, 1969). However, the analysis revealed that the penta-symmetrons were hetero-pentamers. Each of these trisymmetrons have 36 copies of P3, the major capsid protein (MCP), arranged as 12 trimers, each of which structurally appears to be hexagonal in shape. At the fivefold vertices, typical penta-symmetrons are replaced by vertex complexes to complete the icosahedral shell. With a pseudo T = 25 architecture, PR772 is one of the larger wild type viruses resolved to a resolution below 3 Å.
 
-## Major Capsid Protein and its conformations
+### Major Capsid Protein and its conformations
 
 P3 is the major capsid protein, which builds up the trisymmetrons of the capsid, and it is the most abundant protein found in bacteriophage PR772 (Figure 2A). The P3 monomers (subunits a, b and c) are interlocked to form a trimer that appears as a hexon (Figure 2B–K). They exhibit the double-barrel trimer arrangement, as previously seen in viruses of the adenovirus linage (Benson et al., 1999; Reddy et al., 2010). The Leu130 - Ala150 loops from subunits a, b and c of P3 interact with each other in a cyclic manner at the centre of the trimer complex to stabilize it (Figure 2). The monomers have a similar structure in bulk, with minor differences to accommodate the more significant variations in the C and N-terminal conformations. The asymmetric unit has four such unique trimers along with P30, P16 and a penton protein. Figure 2B–K show the four unique trimers and their subunit arrangement.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig2-v2.jpg)
+
+**Figure 2.:** (A) (visualized from the outside of the viral particle) The four unique P3 trimers (represented in four different colors) and their arrangement forming the trisymmetron bound by the P30 dimers (in gray). The C-terminal region and the N-terminal region of P3 subunits are colored in red and blue respectively. The highlighted regions show the locking of P30 (in black) by the C-terminal region of the neighboring P3 subunits, leading to the formation of a hinge-like mechanism which is not seen in PRD1. (B) Schematic representation of the P3 trimers and the subunit arrangement to form a hexagonal capsomer (as viewed from outside) and (C), (D), (E,) (F) are aligned to this view. (G) It is the orthogonal view to the schematic (B) and (H), (I), (J), (K) are aligned to this view. Different views of trimer 1 (C,H), trimer 2 (D,I), trimer 3 (E,J) and trimer 4 (F,K) show the variation in the N-terminal (shown as blue cylinders with the arrow heads pointing towards the C-terminal) and C-terminal (shown as red planks with the arrow heads pointing towards the C-terminal) region of P3 subunits. N and C termini are shown as spheres with respective colors. They are colored to match (A). The yellow pentagons are a schematic representation of the penton.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, C and E) represents the model of subunits a, b and c respectively of the trimer labeled two in Figure 2. (B, D and F) represents the stereo images of the model of subunit a, b and c fit into their respective CryoEM maps. The N-terminal conformations of P3 in (A, C and E) represent the helix turn helix, the long helix and the long helix with a kink respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The model of the tape-like protein, P30. (B) The stereo images of the model fitted into the CryoEM map.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Shows the superposition of twelve P3 subunits that form the asymmetric unit. (B) Shows all the N-terminal regions of P3, isolated from (A). (C) Shows all the C-terminal regions of P3, isolated from (A). (B) and (C) shows the structural variability in the C and N-terminal regions of P3. (D, E and F) Shows the superposition of two P3 subunits, one with helix turn helix conformation of the N-terminal regions of P3 (gray) and the other with a long helical conformation of the N-terminal region of P3 (cyan). (E) and (F) highlight the loop formed by Tyr351-Val358 residues. Here, the P3 subunit with helix turn helix conformation of the N-terminal regions (gray) shows that the loop formed by Tyr351-Val358 residues is flipped compared to the loop in the P3 subunit with a long helical conformation of the N-terminal regions (cyan).
 
 The N-terminal of the P3 monomers have three different conformations; a helix turn helix, a long helix and a long helix with a kink (Figure 2—figure supplement 1). Figure 2D is a good schematic to visualize all N-terminal conformations in a single trimer (subunit a shows the helix-turn helix, subunit b shows the long helix and subunit c shows the helix with a kink). When the N-terminal adopts a helix turn helix, the shorter helix close to the N-terminal is bent away from the lipid membrane and interacts with the adjacent subunit of the trimer. The long helix with a kink behaves similar to a helix turn helix where the kink twists the helix away from the membrane but it is not embedded deeply into the adjacent subunit of the trimer. To accommodate the helix turn helix or the helix with a kink in the P3 subunits, the loop formed by residue Tyr351 – Val358 in these subunits is flipped. In case of the long helical conformation, the N-terminal residues Met1 – Gln6 anchor the P3 subunit to the lipid membrane (Figure 3A).
 
@@ -52,19 +246,63 @@ The N-terminal region of subunit a is more flexible as compared to the same regi
 
 The C-termini are more variable as compared to the N-termini of the trimers. They adopt four different conformations; one conformation is a long strand extending towards the lipid membrane and found in subunit b of all trimers (Figure 2C–F,H–K). The second conformation extends away from the membrane into the peripheral space between the trimers and it is also the most common C-terminal conformation. Two of the four instances in subunit a (Figure 2D,E,I,J) and two of the four instances in subunit c (Figure 2E,F,J,K) adopt this conformation. The third conformation is seen in subunit a of trimer 1, where the C-terminal runs parallel to the long N-terminal helix of the same subunit and it is embedded into the adjacent trimer 1 of the neighboring trisymmetron (Figure 2C,H). The fourth type of C-terminal conformation is seen in 2 instances of subunit c when they reside close to P30 (Figure 2C,D,H,I). Here, the C-terminal is elongated and runs towards the lipid membrane, grazing it.
 
-## Penton base is a heteropentamer of P5 and P31
+### Penton base is a heteropentamer of P5 and P31
 
 The penton region of the icosahedrally symmetrized CryoEM map of PR772 was sectioned from the whole viral map using UCSF Chimera (Goddard et al., 2007). To generate an initial model for de-novo model building of the penton region, PHENIX (Adams et al., 2010): Find Helices and Strands was used with both RESOLVE and PULCHAR options enabled. Due to the high sequence similarity between P31 and the N-terminal domain of P5, we could not rule out that any of these two proteins or if a mixture of these two proteins could potentially form the penton base. Therefore, two initial models were generated. One model used the P31 protein sequence and the other used the P5 protein sequence as part of the input. In the initial observation of all the predicted segments of the two models, the P31 protein segment with residues 112–126 and the P5 protein segment with residues 107–121 occupied the same region of the sectioned map (Figure 1E,F). On closer inspection of the side chains from the two models and their fit into the CryoEM map densities in this region, the P5 protein side chains fit clearly at 3.2 RMSD and the P31 side chains could only be fitted at RMSD values lower than 2.6. As the CryoEM map was generated by an icosahedrally symmetrized reconstruction, we assumed that the densities of P5 and P31 were averaged. This hinted that the penton base could be a heteropentamer formed by both P5 and P31.
 
 With the assumption that the penton base could be a heteropentamer, the P5 N-terminal domain (residues 1–124) and P31 (residues 1–126) were modeled using the icosahedrally averaged map at ~3.0 and~2.2 RMSD respectively in Coot (Emsley et al., 2010) (Figure 4E and Figure 4—figure supplement 3). The prominence of the amino acid side chain densities varied based on the protein sequence conservation between P5 and P31 (Figure 4—figure supplement 1). All identities and most of the conserved substitutions in the sequence alignment resulted in clearer well-defined amino acid side chain densities and the non-conserved substitutions resulted in amino acid side chain densities that were averaged between the respective side chain densities (Figure 1D–F and Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-v2.jpg)
+
+**Figure 4.:** (A) Icoshedrally averaged CryoEM map of PR772 showing the smeared densities at the five-fold vertices (Visualized using USCF Chimera, with volume viewer parameters: Style solid, step 1 and level 0.065, Plane 418, Axis Y, Depth 23). (B) Magnified image of a vertex showing the smearing of densities due to mismatch in symmetry. (C) Typical top view of the vertex map from the localized asymmetric reconstruction ﻿shown as a gray surface and the highlighted region is magnified in (D). In (D), the three stem-like protrusions (indicated by blue arrows) which interact with one another to form the stalk are shown. (E) The structure of P31 (yellow) and P5 (pink, residues 1–124) are superimposed and P31 terminates close to the five-fold (indicated by a yellow arrow) and P5 (residues 121–124) continues upward. (F) The N-terminal domain of P5 and P31 are fitted into the localized reconstruction vertex map as rigid bodies and the P5 residues 121–124 fit into the stem-like density shown in (D). (G) Shows Gly7 and Gly8 residues at the N-terminal end of the P5 subunit and the two conformations (regular conformation as a bright pink structure and the special conformation as a pale pink structure). (H) Shows how the two conformations of the N-terminal region of P5 interact with the neighboring protein. The regular confirmation of the N-terminal end of P5 (bright pink) hugs the neighboring penton subunit whereas the special conformation (pale pink) is wedged in-between the P3 trimers (green).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The protein sequence of N-terminal domain of P5 and P31 show 38.3% identity and 71.3% similarity.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** P5 and P31 models are shown in pink and yellow respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) and (C) are the models of P31 and the N-terminal domain of P5 respectively. (B) and (D) are the stereo images of P31 and the N-terminal domain of P5 fitted into the CryoEM map respectively.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) shows the overview of the map:model for the adjacent subunits of P31(yellow) and N-terminal domain of P5 (pink). Blue box highlights the region shown in (B). (B) shows the stereo view of the region highlighted in (A). The P5 residues Trp121 - Gly124 (shown as pink sticks) extend upwards filling the map density, but there is no contribution from P31 (shown as yellow sticks). Trp126 of P31 is the terminal residue.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The typical conformation showing the N-terminal region that hug the neighboring subunit of the penton base. (B) Special conformation of the N-terminal region that can be wedged in-between the P3 trimers. The low occupancy of the special N-terminal conformation leads to poor map intensities due to map sharpening. So, the unsharpened filtered maps are used in the above image to fit the models.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) and (B) are maps generated by focused classification. (C) and (D) are maps generated by localized asymmetric reconstruction. The maps generated by both the methods show the heteropentameric nature of the penton with only three subunits showing the formation of stalk.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** As viewed from the side, (A–D) shows inter-digiting and hugging of the N-terminal residues of P31 (shown in shades of yellow) and P5 (shown in shades of pink) that stabilize the penton. The 5-fold axis is shown as a black bar.
+
 Another unexpected feature was observed at a lower RMSD of about 1.0, a branching of the density close to the N-terminal region of either P31 or P5. One prominent branch, which was earlier used for modeling and another branch that is only visible at lower RMSD. This suggested that the N-terminal region of either the P31 or P5 could have an alternate conformation. On inspecting the residues from both the P31 model and the N-terminal domain model of P5, that were close to the branch region, P31 was ruled out as a potential candidate. P31 has Val11-Thr10-Met9 residues, which could not be fitted into the branched density without severely distorting the Cα backbone. P5 in the same region has Ser9-Gly8-Gly7. The 2 Glycine residues provided the needed backbone (Cα chain) flexibility that could facilitate this ‘special case’ of N-terminal conformation (Figure 4G and Figure 4—figure supplement 5). In a typical arrangement, the N-terminal ends of both P5 and P31 would hug its neighboring subunit counter-clockwise and stabilize the penton complex (Figure 4—figure supplement 7). In the special case as described above, the N-terminal end of the P5 protein wedges itself between two adjacent P3 subunits (Figure 4H).
 
 In the icosahedrally symmetrized reconstruction, at lower contour levels (0.065 in chimera), the map showed smeared densities above the 5-fold vertices of the viral particle (Figure 4A–B). This could be due to a symmetry mismatch of the proteins present in the region. Accordingly, the smeared region over the five-fold vertex was isolated and resolved by capsid signal subtraction followed by localized asymmetric (C1) reconstruction (see Materials and methods). All the classes generated by 3D classification showed a single protruding density except one of the classes, which revealed two significant densities; one poorly resolved knob-like density and another more well resolved density closely interacting with one of the monomers of the penton (Figure 5—figure supplement 1). On closer inspection of every 3D class generated during the process of localized asymmetric reconstruction, we noticed that three of the subunits of the penton base had a stem-like protrusion close to the 5-fold axis, extending outwards and interacting with each other forming a thick stalk (Figure 4C–D). The other two subunits lacked the stem-like protrusion. The class that revealed the two significant densities also showed that one of the densities interacted with the thick stalk (Figure 5A–B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig5-v2.jpg)
+
+**Figure 5.:** Localized asymmetric reconstruction of the vertex complex showing the two protruding densities as gray surfaces where (A) is the side view and (B) is the top view. P2 (orange), P5 N-terminal base (bright pink) and P31 (yellow) structures fitted into these map densities. (C) Isolated CryoEM density that represents the P2 subunit. It represents the region highlighted by the blue box in (A) and (B). (D and E) Superimposed vertex maps with P2 bound (yellow) and without P2 bound (gray). In classes where P2 is bound to P5, the stalk region is nudged by ≈35.60 when compared to the classes where P2 is not bound to P5. Chimera: Volume Trace tool was used to place the red spheres in the density and Chimera: Measure Angles tool to determine the angles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Top row shows all the maps that were generated by the localized reconstruction followed by initial 3D classification without image alignment and the bottom row shows the 45o tilted counterparts of the maps displayed in the top row. The map highlighted by the blue rectangle shows the class that was selected and the 3D classification was further refined with local image alignment. In this case, the resolution of the localized reconstruction was about 10 Å. No tight masks were used during the 3D classification to avoid any masking bias. This results in a lower resolution map but the maps are more reliable.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–D) Show the distribution of coulombic electrostatic potential on the surface of P2 and P5 where red represents negative potential, blue represents positive potential and white for neutral. (E–H) Show the distribution of hydrophobic residues on the surface of P2 and P5 (according to Kyte and Doolittle scale) where purple represents least hydrophobic residues, brown represents most hydrophobic residues and white for neutral residues. The highlighted regions on all the images shows the region of interaction between the N-terminal domain of P5 and P2.
+
 The number and arrangement of P5 and P31 forming the penton were confirmed by two independent methods, a localized asymmetric reconstruction and a focused classification to a resolution of 4.41 Å and 4.25 Å, respectively (Figure 4—figure supplement 6). All the classes from the 3D classification by localized reconstruction showed that only three subunits formed the stem-like protrusion that interacted with one another to form a thicker stalk. P31 terminates close to the fivefold and thus cannot form the stem-like protrusion whereas P5 residues (121-124) continue up and outward and these residues have the potential to form the stem-like protrusion (Figure 4E and Figure 4—figure supplement 4). Three copies of the model of the P5 N-terminal base were fitted into the penton density from the localized asymmetric reconstruction. These models did indeed fit the density (Figure 4F). The overall map:model correlation reduced when the models of P31 and P5 N-terminal domain were swapped with each other in the localized reconstruction and the focused classification density maps. The orientation and alignment of P5 residues (121-124) also confirm previous predictions, which showed the formation of a triple helix with a collagen-like motif (residues 124–140) (Huiskonen et al., 2007; Caldentey et al., 2000). The poorly resolved knob-like density represents the trimerized C-terminal domain of P5 (Caldentey et al., 2000; Merckel et al., 2005). By this it can be concluded that 3 copies of P5 and 2 copies of P31 form the penton base in PR772 (Figure 4F).
 
-## P2 monomer is bound to P5 and stabilized by the P5 stalk
+### P2 monomer is bound to P5 and stabilized by the P5 stalk
 
 With the localized asymmetric reconstruction and focused classification methods, the structure and composition of the penton base was established. It is now known that the stalk-like density observed, emanating from the penton base, is built with three copies of the P5 protein, forming a collagen-like motif and eventually the unresolved knob domain.
 
@@ -74,9 +312,29 @@ The interaction of P5 with P2 can be compared to a ball and socket joint, for in
 
 The occupancy of P2 on the 5-fold vertices appears to be significantly lower in bacteriophage PR772 than what was observed from other members of the Tectiviridae family. The 3D classification of the signal subtracted and isolated vertices revealed that only 467,631 sub-particles from a total of 3,340,224 extracted sub-particles, showed the presence of a density representing P2. This accounts for 16% of all the sub-particles used or about two vertices in an intact viral particle, assuming an equal distribution among the viral particles.
 
-## Overall architecture of PR772
+### Overall architecture of PR772
 
 P30 adopts an extended conformation in an intact viral particle and it is found wedged in between the trisymmetrons (Figure 2A, Figure 6—figure supplement 2). Two copies of P30, interlocked at the N-terminal hook, span between the adjacent vertices. In an intact viral particle, P30 forms a cage-like structure, which stabilizes the trisymmetrons themselves and also interact with the neighboring trisymmetrons to form a closed network (Figure 2A and Figure 6—figure supplement 2). The residues Tyr62 – Ile64 and Val32 – Arg35 of P30 form beta sheets with residues Thr384 – Leu386 from subunit c of P3 trimer one and residues Thr384 – Asn388 from subunit c of P3 trimer two respectively (Figure 2A highlighted regions). These C-terminal regions of P3 are sandwiched between P30 and the lipid membrane (Figure 2A highlighted regions). P30 is also sandwiched between two adjacent P3 subunits of the trimer from a neighboring trisymmetron (Figures 2A and 6B and Figure 6—video 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig6-v2.jpg)
+
+**Figure 6.:** (A) Shows the difference in interaction (pointed by red arrow) of the C-terminal Gly84 of P30 (orange) with P5 (bright pink), P31 (yellow) and P3 (green). The hydrophobic intraction of P30 with P5 is more obvious. (B) Shows the P3-P30-P16 complex (the view is similar to (A) but one copy of P16 and P30 are shown and the penton proteins are hidden), P16 (blue) locks the two adjacent P3 trimers (trimer 1)(green) and the P30 protein (orange).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The model of P16. (B) The stereo images of the model fitted into the CryoEM map.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) P30 monomer and its fit into the CryoEM density map. (B) interlocked N-terminal hook forming the dimer that spans between two adjacent vertices. Residues Met1-Val32 are involved the formation of the N-terminal hook. (C) Complete P30 cage that stabilizes the trisymmetrons and in turn the whole particle.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–C) Difference density map (blue) at the vertex region where the densities of the penton (P31 and P5) are shown in transparent gray. (A, D), (B, E) and (C, F) show the top, side and the bottom view of the difference density map, respectively.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48496/elife-48496-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Shows bacteriophage PR772 approaching the host membrane with the receptor. (B) The trimeric knob domain of P5 recognizes the host. The binding of the trimeric knob of P5 is transient. (C) High-affinity P2 binding to the surface receptor stabilizes the host binding. The binding is irreversible and attaches the virus to the host membrane. (D) P2 binding disturbs of the vertex complex by pulling the P5. (E) The disordered vertex complex disrupts the interactions between P5 and P30 resulting in a cascade that leads to the disruption of the P30 cage that stabilizes the viral capsid. (F) Disrupted P30 cage, destabilizes other adjacent vertices and the interactions that anchor the viral membrane. (G) P16 anchors into the host membrane and facilitates the formation of the membranous tube. (H) Destabilized viral membrane collapses and the dsDNA is delivered into the host.
 
 Five copies of P16 bridge the penton to the five trisymmetrons that meet at the vertex complex. The structure of P16 was only partially resolved. The long C-terminal trans-membrane helix of P16 (Leu7 - Ala28) was poorly resolved and barely visible at 0.6 RMSD. The high-resolution structure of the disorganized region (Tyr58 - Ile96) of P16 also evades us. It was poorly resolved with no visible side chains and part of the density map representing the Cα backbone was missing even at very low RMSD. Due to poor signal to noise ratios, these regions were not modeled, but the difference density map of the vertex region and the modeled penton showed that the C-alpha backbone continued into the empty pocket beneath the penton and also interacts with the penton close to the 5-fold axes (Figure 6—figure supplement 3). However, the partial model shows that P16 forms a clamp-like complex using the loop Asn44 -Val55 and helix Asn101 - Ala115, which attaches onto the loop Val242 - Tyr247 of one of the P3 subunits of trimer one and locks it with the adjacent P3 subunit of trimer one from the neighboring trisymmetrons (Figure 6B). This further locks the P3-P30-P3 sandwich and makes it stable. As was mentioned earlier, to accommodate the P30 protein in the P3-P30-P16 complex (Figure 6 and Figure 6—video 1), the loop formed by residues Tyr351-Val358 of the P3 subunit in trimer one is flipped compared to the orientation seen in this loop of the P3 subunit with a N-terminal long helix (Figure 2—figure supplement 3D–F).
 
@@ -112,27 +370,27 @@ Figure 7 shows our model of the vertex complex in PR772. Using this model, we pr
 
 ## Materials and methods
 
-## Preparation and purification of PR772
+### Preparation and purification of PR772
 
 Bacteriophage PR772 (ATCC BAA-769-B1) was propagated on Escherichia coli K12 J53-1. It was purified as previously described (Reddy et al., 2017) and further concentrated to facilitate testing various concentrations of the viral sample during grid optimization for CryoEM. This method yielded about 2–4 mL of viral particles with a concentration of 1 mg/mL using 10–20 agar plates. The sample was further concentrated to 20 mg/mL by using an ultracentrifuge. The sample was added into an ultracentrifuge tube and then a solution of Caesium Chloride in buffer (HEPES 20 mM, NaCl 100 mM, MgSO41 mM, EDTA 1 mM, pH 8.0) at a density of 1.34 g/mL (g/cm−3) was gently layered on top. The mixture was centrifuged at 100,000 × g for 30 mins. The intact viral particles migrated to the top as a fine band and the broken particles along with any free DNA that was released from the broken particles stayed at the bottom of the tube. The top band with the intact viral particles was extracted using a needle and syringe. The concentrated sample was dialyzed over-night with the above-mentioned buffer to remove caesium chloride.
 
-## CryoEM grid preparation and data collection
+### CryoEM grid preparation and data collection
 
 The condition for CryoEM grid preparation was optimized for collecting a large number of particle images. For vitrification of the viral sample by plunge freezing into liquid ethane, we used a Vitrobot Mark IV (ThermoFisher). The best grid condition with uniform sample distribution was obtained by applying 3 μL of 7 mg/mL concentrated viral sample solution on a glow-discharged C-Flat grid CF-2/2–2C under 100% humidity at room temperature.
 
 The data were collected on a Titan KRIOS (ThermoFisher) equipped with a K2 Summit (Gatan) direct electron detector and a GIF Quantum LS (Gatan) energy filter. All the data were collected at a magnification of 130 k in EFTEM mode with a pixel size of 1.06 Å. The slit width of the energy filter was 20 eV. The dose rate was 4.4 e- per Å2 per second with a total exposure of 9 s resulting in a total dose of ~40 e-/Å2. The total dose was distributed over 40 frames in each movie. 3220 movies were collected.
 
-## Image processing
+### Image processing
 
 The movie frames were corrected for beam induced sample motion and aligned using MotionCor2 (Zheng et al., 2017). The first 3 frames of the movies were skipped and the rest were aligned. These aligned frames were averaged with and without dose weighting. The non-dose weighted image stacks were used to estimate defocus and correct CTF using CTFFIND4 (Rohou and Grigorieff, 2015). All estimated fits of defocus and CTF were visually inspected. All images with significant astigmatism or a prominent ring due to crystalline ice around 3–4 Å were discarded.
 
-## Whole particle reconstruction
+### Whole particle reconstruction
 
 A total of ~3200 images were used to auto pick 56275 particles using template matching in RELION (Scheres, 2012) (version 2.1 beta 1) (Kimanius et al., 2016). The 2D classes generated by 2D classification of 710 manually picked particles were used as templates for auto-picking. The auto-picked particles were binned 2 × during the extraction (box size of 429 × 429 and 2.12 Å/pix). Extensive reference free 2D classification was performed to remove any particle images with ethane contaminants or broken/empty viral particles. The classes with good 2D averages were selected and the particles from these classes were extracted. This resulted in 51893 particles that were used for 3D classification. RELION: 3D initial model tool, which is based on stochastic gradient descent, was used to generate an ab-initio reference map for 3D classification. The 2 × binned particle images were used to generate a low-resolution icosahedrally averaged map. This low-resolution map was used as a reference for 3D classification. The 3D classification was performed with icosahedral symmetry (I4) applied. The most dominant class, with 46348 particles, was selected and the particles were extracted for final refinement. Icosahedral symmetry (I4) was also applied during the final refinement. The refinement with the 2 × binned particles reached Nyquist sampling (~4.24 Å here). The particles from the final iteration step of the refinement were re-extracted without binning and further refined. The reference map was also scaled to match the new box and pixel size (858 × 858 and 1.06 Å/pix respectively) using e2proc3d.py from EMAN2.1 package (Bell et al., 2016) (Supplementary file 3).
 
 After refinement, the maps were corrected for Ewald sphere effects using RELION 3.0 beta 2. These maps were post-processed. A soft binary mask was generated using the 15 Å low pass filtered map extended by 10 pixels and with a soft edge of 15 pixels. An initial binarization threshold of 0.001 was used to include all the map features (i.e, internal membrane, etc) in the mask. This was used as a solvent mask during post processing. The map was corrected for the detector’s Modulation Transfer Function (MTF) and sharpened with an inverse B-factor. Overall gold standard FSC@0.143 was estimated using two independently processed half maps. ResMap (Kucukelbir et al., 2014) was used to estimate the variation of resolution across the two unfiltered half maps.
 
-## Localized asymmetric reconstruction of the five-fold vertex
+### Localized asymmetric reconstruction of the five-fold vertex
 
 The vertex complex was reconstructed using 2x binned particles by localized reconstruction (Ilca et al., 2015). Particle images from one half map were symmetry expanded (icosahedral to C1) and signal subtracted to remove the signal of the viral capsid and the genome from the particle images. Sub-particles representing each of the vertex region, with a box size of 100 × 100 pixels were extracted from the signal subtracted particles. This produced about 3,340,224 sub-particles. These particles were 3D classified without imposing symmetry and disabling image re-alignment. An initial reference map was produced by back projecting the extracted sub-particles using the previously calculated Euler angles. This initial reference map was low pass filtered to 45 Å and used as a reference map during 3D classification. The resolution of the expectation step was limited to 10 Å and a spherical mask of diameter 200 Å was added using the mask diameter and flatten solvent options provided by RELION to reduce the effects of systematic noise due to signal subtraction.
 
@@ -140,14 +398,14 @@ The classes generated from the 3D classification were analyzed and the particles
 
 To improve the resolution of the penton base region, another set of 3D classification was performed without limiting the e-step to 10 Å using the same set of sub-particles but applying a soft-mask around the penton.
 
-## Focused classification of the Penton base
+### Focused classification of the Penton base
 
 To validate the penton map generated from the localized reconstruction, we also applied a different method, focused classification using the 2x binned particles. The particle representing the final converged map were symmetry expanded using relion_particle_symmetry_expand command. Similar to the localized reconstruction, signal subtraction was performed to remove the signal of the viral capsid and the genome from the particle images using relion_project command. We used the final converged map (without post-processing) from the icosahedrally averaged reconstruction to generate projections for signal subtraction. 3D classification with the signal subtracted particles was performed without imposing symmetry and disabling image re-alignment. The penton region extracted from the icosahedrally averaged map was low pass filtered to 45 Å and used as a reference map. A soft mask, around the penton region, was generated by extending the binary map of the penton region extracted from the icosahedrally averaged map by three pixels with a soft edge of 4 pixels. This was used as a focus mask to constrain the 3D classification to this region.
 
-## Model building and refinement
+### Model building and refinement
 
 Modeling the whole particle was difficult owing to the large size of the particle and the limited RAM available. The whole viral map was sectioned using the sub-region selection option in Chimera. The sectioned maps were optimized by local sharpening using PHENIX: Autosharpen (Terwilliger et al., 2018). These sectioned maps were used to generate a crude model using PHENIX: find helix and loops (Adams et al., 2010). The crude model was further used for de-novo modeling of the proteins in Coot (Emsley et al., 2010). These models were further refined using PHENIX: Real space refinement to improve the model. All the models were individually refined and put together to form the asymmetric model. The model of the asymmetric unit was further refined against a new map encasing the asymmetric unit using PHENIX-Real space refinement. The model of the asymmetric unit was validated with MolProbity (Chen et al., 2010), Mtriage (Afonine et al., 2018) (Supplementary file 4) and EMRinger (Barad et al., 2015).
 
-## Data availability
+### Data availability
 
 ﻿CryoEM Density maps and atomic models that support the findings of this study have been deposited in the Electron Microscopy Database and the Protein Databank with the accession codes EMD-4461 (Whole particle reconstruction), EMD-4462 (Vertex Complex), EMD-10237 (Localized reconstruction of the penton region), EMD-10238 (Focused Classification of the penton region) and PDB ID 6Q5U (Atomic model of the asymmetric unit).

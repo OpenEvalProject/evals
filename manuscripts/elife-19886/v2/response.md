@@ -72,11 +72,7 @@ Author response image 1.
 Bax immunostaining from WT slices (top) and germline BaxKO slices (bottom), using both standard (left) and antigen-retrieval methods (right).
 We are unaware of an antibody that reliably identifies Bax in hippocampal slices.
 
-DOI: http://dx.doi.org/10.7554/eLife.19886.027
-
 We are unaware of an antibody that reliably identifies Bax in hippocampal slices.
-
-DOI: http://dx.doi.org/10.7554/eLife.19886.027
 
 Reviewer #2:
 
@@ -133,11 +129,7 @@ Author response image 2.
 Examples from six randomly selected experiments showing FV versus stimulus intensity relationships.
 Although the average graph (bottom right) suggests saturation of FVs around 200 µV (dotted line), the individual experiments reveal high variability in maximum FVs and saturation points (bottom left). We monitored saturation during each experiment and stopped stimulating when saturation was apparent (i.e. slice A,D,E).
 
-DOI: http://dx.doi.org/10.7554/eLife.19886.028
-
 Although the average graph (bottom right) suggests saturation of FVs around 200 µV (dotted line), the individual experiments reveal high variability in maximum FVs and saturation points (bottom left). We monitored saturation during each experiment and stopped stimulating when saturation was apparent (i.e. slice A,D,E).
-
-DOI: http://dx.doi.org/10.7554/eLife.19886.028
 
 Reviewer 3 is correct that the averaged FV and fEPSP data shown in Author response image 3E gives the appearance saturation. The averaged data, however, is not a good indicator of saturation in individual experiments because the stimulus-response relationships are highly variable between slices. We have illustrated this variability in a few examples of raw data and their average (Author response image 2). The raw data shows variability both in the maximum FV amplitude (ordinate) as well as the stimulus intensity at which the maximum FV amplitude is achieved (the point of saturation on the abscissa). Hence the “linear range” of the stimulus response in each experiment occurs across a variable range of stimulus intensities. The goal of our stimulating protocol was to stimulate at multiple points within the linear range to acquire useful data across that range, but not above it. When saturation appeared (i.e. Slice A, D, E), we did not acquire responses at higher stimulus intensities. This results in variability in the stimulus intensities and intervals used (compare slice B versus E), and fewer data points in the averages for the highest range of stimulus intensities. Each individual response includes a range of FV amplitudes with a minimal number of saturated FVs. We have added the following description to the Methods to clarify how the experiments were performed:
 
@@ -152,11 +144,6 @@ But if we accept the latter premise, the argument that there is a reduced synapt
 As shown in Author response image 3 and described above, we did not include saturated responses in our analysis. The fEPSP versus FV relationship is linear.
 10.7554/eLife.19886.029
 Author response image 3.
-
-
-DOI: http://dx.doi.org/10.7554/eLife.19886.029
-
-DOI: http://dx.doi.org/10.7554/eLife.19886.029
 
 To wit, in the fEPSP slope vs FV plot (Figure 1E, right panel), the two BaxKOim data points at 100 and 200 microV are clearly (and probably significantly) smaller than their control counterparts.
 

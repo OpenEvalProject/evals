@@ -27,17 +27,17 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Division of Human Biology, Fred Hutchinson Cancer Center Seattle United States
+1. Division of Human Biology, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 2. University of Washington Molecular and Cellular Biology Program Seattle United States
-3. https://ror.org/007ps6h72 Division of Vaccine and infectious Diseases, Fred Hutchinson Cancer Center Seattle United States
-4. https://ror.org/007ps6h72 Division of Public Health Sciences, Translational Research Program, Fred Hutchinson Cancer Center Seattle United States
-5. https://ror.org/040gcmg81 Laboratory of Genitourinary Cancer Pathogenesis, Center for Cancer Research, National Cancer Institute, NIH Bethesda United States
-6. https://ror.org/043mz5j54 Division of Hematology/Oncology, Department of Medicine, University of California, San Francisco San Francisco United States
-7. https://ror.org/02r109517 Department of Pathology and Laboratory Medicine, Weill Cornell Medicine New York United States
-8. https://ror.org/007ps6h72 Center for Data Visualization, Fred Hutchinson Cancer Center Seattle United States
+3. Division of Vaccine and infectious Diseases, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+4. Division of Public Health Sciences, Translational Research Program, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+5. Laboratory of Genitourinary Cancer Pathogenesis, Center for Cancer Research, National Cancer Institute, NIH Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+6. Division of Hematology/Oncology, Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+7. Department of Pathology and Laboratory Medicine, Weill Cornell Medicine New York United States ([ROR:02r109517](https://ror.org/02r109517))
+8. Center for Data Visualization, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 9. University of Washington Departments of Medicine and Genome Sciences Seattle United States
-10. https://ror.org/007ps6h72 Translational Data Science Integrated Research Center, Fred Hutchinson Cancer Center Seattle United States
-11. https://ror.org/007ps6h72 Division of Basic Sciences, Fred Hutchinson Cancer Center Seattle United States
+10. Translational Data Science Integrated Research Center, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+11. Division of Basic Sciences, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 
 † Corresponding author
 
@@ -59,9 +59,21 @@ Here, we have created an atlas of prostate cellular composition and phenotypic e
 
 ## Results
 
-## Characterization of WT and Ptenfl/fl ventral prostates at single cell resolution
+### Characterization of WT and Ptenfl/fl ventral prostates at single cell resolution
 
 To determine the cellular architecture of prostate cancer initiation, we conducted single-cell RNA sequencing (scRNAseq) of the ventral prostates of 6-month-old wild-type (WT) and PB-Cre4;Ptenfl/fl;ROSA26-rtTA-IRES-eGFP (herein referred to as Ptenfl/fl, see Methods) prostate cancer mice (Figure 1A). We chose the ventral lobe because it has been well-characterized throughout prostate cancer progression at a deep molecular level and for the abundance of cellular populations (Hsieh et al., 2012; Hsieh et al., 2015; Liu et al., 2019). In the Ptenfl/fl model, exon 5 of the tumor suppressor Pten is deleted within basal and luminal epithelial cells of the prostate and mice uniformly develop prostate cancer (Wang et al., 2003). PTEN is a negative regulator of the oncogenic PI3K-AKT-mTOR signaling pathway, which is deregulated in nearly all advanced prostate cancer patients (Taylor et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig1-v1.jpg)
+
+**Figure 1.:** (A) Simplified schematic of single-cell RNA sequencing of WT and Ptenfl/fl ventral prostates. (B) UMAP of WT and Ptenfl/fl epithelial cells. Left, both conditions superposed; middle, WT only; right, Ptenfl/fl only. Epithelial cell types are demarcated by color (red = basal, light blue = luminal progenitor, dark blue = intermediate, green = differentiated). (C) Relative abundance of epithelial cells in WT (n=3) and Ptenfl/fl (n=2) mice. Y-axis shows the % composition of each sample by cell type (***p<0.001, negative binomial test). Data presented as +/-SD. (D) Top GSEA results enriched in Ptenfl/fl compared to WT for each epithelial subtype. Intermediate cells in Ptenfl/fl were compared to luminal progenitor cells in WT. All pathways are enriched with FDR <0.05. (E) Proliferation signature (CCP) composite score in epithelial cells, clustered by condition (Data presented as +/-SD, *p<0.05, n.s.=not significant, permutation test). N/A indicates missing data due to no cells being present in the condition. WT n=3, Ptenfl/fl n=2. (F) UMAP visualization of cell cycle phase assignment per cell, showing % cells in non-G1 (S or G2/M) (black border = WT basal cells, blue border = hypo-proliferative basal cells in Ptenfl/fl, and red border = hyper-proliferative basal cells in Ptenfl/fl. *p<0.05, chi-square test). (G) GSEA between hyper- and hypo-proliferative basal clusters in Ptenfl/fl. All pathways are enriched with FDR <0.05. (H) RNA velocity analysis of Ptenfl/fl epithelial cells; highlighted section shows intersection of basal and intermediate cells. (I) Pseudotime trajectories drawn by Palantir through the basal and intermediate compartments, with hypo-proliferating basal cells as the designated start point. (J) Expression of important cell fate and differentiation regulators along basal-intermediate trajectory.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP visualization of all cells in WT and Ptenfl/fl ventral prostates, colored and labeled by cell ID. (B) Violin plots of rtTA-eGFP transgene expression. Left, transgene expression in WT and Ptenfl/fl mice. Right, expression in Ptenfl/fl cell types. (C) Heatmap of composite scores of published prostate epithelial subtype signatures in basal, urethral, luminal progenitor, and differentiated cells in WT mice (left). Dot plot of epithelial biomarker gene expression in WT mice (right). (D) UMAP visualization of epithelial cells in WT prostates, colored and labeled by cell ID. (E) UMAP visualization of epithelial cells in Ptenfl/fl prostates, colored and labeled by cell ID. (F) UMAP visualization of published intermediate cell biomarkers in WT and Ptenfl/fl mice. (G) UMAP visualization of urethral, luminal progenitor, and intermediate cells in WT and Ptenfl/fl mice, colored and labeled by cell ID. (H) UMAP visualization of Psca, pan-epithelial and luminal biomarkers in urethral, luminal progenitor, and intermediate cells in WT and Ptenfl/fl mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bar plot of cell cycle phase assignments in WT basal cells and Ptenfl/fl hyper- and hypo-proliferative basal cells. (B) Bar plot of CCP signature composite score in WT (n=3) basal cells and Ptenfl/fl (n=2) hyper- and hypo-proliferative basal cells (Data presented as +/-SD). (C) Trajectory analysis of Ptenfl/fl epithelial cells. (D) Top 3000 highly variable genes in Ptenfl/fl basal and intermediate cells, clustered by expression pattern along the basal-intermediate (top) or hypo-proliferative basal-hyper-proliferative basal (bottom) trajectories drawn via Palantir (Figure 1I). (E) UMAP visualization of luminal biomarkers in epithelial cells in WT and Ptenfl/fl mice. Black circles indicate luminal-intermediate transition zone.
 
 Quality control and filtering (read count thresholds and excluding cells with high mitochondrial content) resulted in transcriptomes from 24,079 total cells across five samples (Supplementary file 1A-C). Using SingleR, we identified epithelial, stromal, and immune cell types (Aran et al., 2019; Figure 1—figure supplement 1A). To confirm that the epithelial cells in the Ptenfl/fl model underwent Cre-mediated recombination, we measured the frequency of rtTA-eGFP fusion mRNA in WT and Ptenfl/fl mice. The rtTA-eGFP transcript was present in 14.5% of Ptenfl/fl epithelial cells (Figure 1—figure supplement 1B). Given that on average ~1200 genes/cell were detected and ~24,000 genes were identified overall, we expect the average transcript to be found in ~5% of cells in the dataset. Therefore, our finding suggests widespread recombination, and therefore loss of Pten, within the epithelial compartment. Importantly, recombination was not observed in WT mice or non-epithelial cell types (Figure 1—figure supplement 1B).
 
@@ -69,7 +81,7 @@ We further defined the epithelial population in WT mice via signatures and bioma
 
 We then examined epithelial cell subtypes in Ptenfl/fl mice. We identified basal, urethral, and canonical luminal cells, as well as a large cluster of cells similar to WT luminal progenitor cells, characterized by expression of Krt4/Tacstd2/Ppp1r1b but not Psca (Figure 1—figure supplement 1E–F). Clustering urethral cells with luminal progenitor and this new Ptenfl/fl cluster, we find that the urethral cells cluster apart from the other cell types and express significantly lower levels of prostate luminal or pan-epithelial markers (Krt8, Krt18, Epcam) (Figure 1—figure supplement 1G–H). This supports the hypothesis that we have identified both urethral and prostate cells, and likely indicates a prostatic origin for the Ptenfl/fl cluster. We designated Krt4+/Tacstd2+/Ppp1r1b+ cells in Ptenfl/fl mice as ‘intermediate’ cells (Figure 1—figure supplement 1E).
 
-## Pten loss generates differentially proliferating populations and a dominance of intermediate luminal cell states from multiple cellular origins
+### Pten loss generates differentially proliferating populations and a dominance of intermediate luminal cell states from multiple cellular origins
 
 Next, we sought to determine how the epithelial compartment is remodeled in the context of tumor initiation. We excluded the urethral cluster because it is not prostatic in origin and therefore is less likely to significantly impact cellular dynamics in prostate cancer. We observed a dramatic increase in the proportion of intermediate cells in Ptenfl/fl mice compared to luminal progenitor abundance in the WT setting (Figure 1B–C). To investigate potential mechanisms of this expansion of the intermediate population, we identified differentially expressed genes (DEG) and performed gene set enrichment analysis (GSEA) on each epithelial subtype, comparing the WT and Ptenfl/fl epithelial compartments (Ptenfl/fl basal:WT basal, Ptenfl/fl intermediate:WT luminal progenitor, Ptenfl/fl luminal:WT luminal) (Supplementary file 1D). We noted enrichment of oncogene and tumor suppressor pathways in the Ptenfl/fl mice, including upregulation of AKT and mTOR, which are expected in this model. We also observed increased Wnt signaling and metabolic processes across all epithelial cell types. Interestingly, both epithelial cell migration and proliferation were enriched in most epithelial cells (Figure 1D). These findings suggest that intermediate cell expansion could be mediated by increased proliferation of luminal progenitors, or by increased transdifferentiation of other cell types, which has been widely characterized in WT settings (Karthaus et al., 2020; Mevel et al., 2020; Kwon et al., 2021).
 
@@ -79,9 +91,17 @@ We further characterized the basal subclusters in Ptenfl/fl mice by performing D
 
 Multiple studies have suggested that prostate luminal cells can phenotype switch to intermediate-like states under conditions such as castration (Karthaus et al., 2020; Guo et al., 2020). To verify whether luminal populations may contribute to the intermediate cell state, we plotted the expression of genes canonically expressed in prostate luminal cells and found that while luminal cells did express these genes most strongly, there was overlap with a population of intermediate cells immediately adjacent to the luminal cells in Ptenfl/fl mice (Figure 1—figure supplement 2E). This suggests that luminal cells may phenotype switch into an intermediate state and retain some identity markers in the context of Pten loss. It is also possible that luminal progenitor cells contribute to the intermediate population, as Krt4+ cells within the proximal and distal prostate have been described as tumor initiating cells after Pten loss (Guo et al., 2020). Overall, our findings support multiple cells of origin for Krt4+ intermediate cells in Ptenfl/fl mice, including phenotype switching of basal and luminal cells, as well as potential expansion of luminal progenitor cells. In vivo lineage tracing studies using highly precise Cre-drivers will likely be necessary to fully disentangle the cellular origins of intermediate cell states in the Ptenfl/fl prostate cancer model.
 
-## Immune infiltration increases in Ptenfl/fl mice and is pro-tumorigenic
+### Immune infiltration increases in Ptenfl/fl mice and is pro-tumorigenic
 
 Our GSEA of all three epithelial cell types showed an enrichment for immune-related pathways in Ptenfl/fl mice, suggesting increased immunogenic signaling relative to WT mice (Figure 2A). To determine the impact of epithelial Pten loss on immune cells, we calculated the relative abundance of immune cells in WT and Ptenfl/fl mice. We found that T cells, macrophages, neutrophils, and dendritic cells were all significantly expanded in the Ptenfl/fl mouse; in fact, only B cells were not expanded compared to WT (Figure 2—figure supplement 1A–B). Immune infiltration has previously been characterized as immunosuppressive in PTEN null prostate tumors (Garcia et al., 2014). Therefore, we expected these expanding immune populations to be immunosuppressive and therefore pro-tumorigenic. To test this hypothesis, we assigned activation states or subtypes to immune cells based on known biomarkers (Figure 2B, Figure 2—figure supplement 1C–E). First, we characterized the neutrophil population as myeloid-derived suppressor cells (MDSCs) based on published biomarkers (Alshetaiwi et al., 2020; Figure 2—figure supplement 1C). We also found three macrophage cell states: tumor-associated macrophages (TAMs), M2-activated macrophages, and M1-activated macrophages. Interestingly, the M1 cells expressed the AR-dependent markers Sbp and Defb50 and as a result, we termed them tissue-resident macrophages (TRM, Figure 2—figure supplement 1D). Finally, we characterized three T cell subtypes: CD8+ T cells, gamma-delta T cells, and natural killer T (NKT) cells. CD8+ and gamma-delta T cells expressed the markers of exhaustion and immunosuppression Pdcd1 and Ctla4, suggesting their cytotoxic activity may be dampened in the context of Pten loss (Figure 2—figure supplement 1E). All these cell types except for NKT cells and TRMs are expanded in Ptenfl/fl mice, implying a potential role for these immune cells in establishing or maintaining a pro-tumorigenic prostate tumor microenvironment (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig2-v1.jpg)
+
+**Figure 2.:** (A) Top immune-related GSEA results enriched in Ptenfl/fl compared to WT mice for each epithelial subtype. All pathways are enriched with FDR <0.05. (B) UMAP visualization of immune cells labeled by cell subtype or state. (C) Relative abundance of immune cells in WT (n=3) and Ptenfl/fl (n=2) mice. Y-axis shows the % composition of each sample by cell type (Data presented as +/-SD, ***p<0.001, n.s.=not significant, negative binomial test). (D) Dot plot of signaling interactions between macrophages and epithelial cells. Y-axis, ligand-receptor pairs from CellphoneDB database. X-axis, cell-cell pairings. Interactions are directional: the first gene in a pair is expressed in the first cell in the cell-cell interaction. (E) Dot plot of epithelial ligand and macrophage receptor gene expression in WT and Ptenfl/fl mice. (F) Dot plot of Ccr1 and Ccr1 ligand expression in MDSCs and macrophages in WT and Ptenfl/fl ventral prostates. MDSCs are only present in Ptenfl/fl and therefore do not have a WT row (denoted by asterisk). (G) Plot of signaling interactions between CD8 +T cells and epithelial cells and macrophages. (H) Dot plot of CD8+ T cell receptors and epithelial and macrophage ligand gene expression in WT and Ptenfl/fl ventral prostates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) UMAP of immune cells in WT and Ptenfl/fl prostates, labeled by cell types. (B) Relative abundance of immune cell types in WT (n=3) and Ptenfl/fl (n=2) mice (***p<0.001, n.s.=not significant, negative binomial regression test). (C) Heatmap of immune cell type biomarker expression in WT and Ptenfl/fl mice; neutrophil cells express MDSC markers. Log-transformed read counts. (D) Heatmap of marker expression in macrophage cell subtypes. Log-transformed read counts. (E) Heatmap of marker expression in T cell subtypes. Log-transformed read counts. (F) Plot of ligand-receptor interactions between fibroblast and macrophage subtypes. (G) Dot plot of Ccr2 ligand expression in fibroblasts in WT and Ptenfl/fl ventral prostates. (H) Dot plot of Ccr2 expression in macrophage subtypes in WT and Ptenfl/fl ventral prostates. (I) Dot plot of signaling interactions between epithelial cells and MDSCs.
 
 M2 macrophages, TAMs, and MDSCs are generally pro-tumorigenic (Zaynagetdinov et al., 2011; Chanmee et al., 2014; Garcia et al., 2014). Together with exhausted CD8+ T cells, this suggests a broadly pro-tumorigenic immune environment. We hypothesized that cell-cell signaling originating from tumor epithelial cells may play an important role in recruiting immune cells to the prostate. To probe cell-cell interactions in our system, we used a ligand-receptor database and interaction algorithm that classifies the strength of specific ligand-receptor interactions between cell groups (Efremova et a., 2020). We found key interactions between epithelial subtypes and M2 macrophages and TAMs, such as interactions targeting the Cd74 receptor, that point to active recruitment (Figure 2D, Supplementary file 2). Ligands in the epithelial basal, intermediate, and differentiated cell populations were more highly expressed in Ptenfl/fl mice than in WT mice, which corresponds to the increased macrophage abundance in Ptenfl/fl mice (Figure 2E).
 
@@ -93,9 +113,17 @@ Finally, we examined interactions between epithelial cells and T cells. We found
 
 Overall, our data suggests that pro-tumorigenic macrophages are recruited by epithelial and fibroblast signaling in Pten null tumors. These macrophages then assist tumor signaling in remodeling the immune environment, including recruiting and exhausting cytotoxic CD8+ T cells and attracting pro-tumorigenic MDSCs. Given ligand expression data, M2 macrophages may be mainly responsible for MDSC recruitment and TAMs for CD8+ T cell recruitment. These findings reveal a complex signaling system with multiple coordinated sources of ligand expression working in tandem to build a microenvironment favorable to tumor escape from immunological suppression.
 
-## Castration-induced intermediate cell heterogeneity drives resistance to androgen deprivation
+### Castration-induced intermediate cell heterogeneity drives resistance to androgen deprivation
 
 Having examined epithelial and immune populations in prostate cancer initiation, we sought to determine how these cells reorganize over the course of castration resistance. It has been shown that castration of Ptenfl/fl mice leads to the emergence of AR-low tumors (Liu et al., 2019). As such, we conducted scRNAseq in 6 months old Ptenfl/fl mice with and without castration at 4 months of age and evaluated the changes that occurred in the epithelial compartment (Figure 3A). Castration caused the intermediate luminal cell population to expand while the differentiated luminal cells disappeared entirely (Figure 3B–C). We hypothesized that androgen deprivation may differentially affect epithelial subtypes. To investigate this, we generated an AR activity score using a 20-gene signature (Hieronymus et al., 2006) and found that WT luminal progenitor cells had high AR activity, but Ptenfl/fl intermediate cells exhibited very low AR activity in both intact and castrated Pten-null conditions. On the contrary, differentiated luminal cells retained high AR activity in Ptenfl/fl mice (Figure 3D). This suggests that loss of Pten in intermediate luminal cells decreases their reliance on AR signaling and induces expansion of this compartment upon castration. While it is possible that castration is lethal to differentiated luminal cells, previous studies have shown that they are able to phenotype switch into an intermediate state in AR-low conditions (Karthaus et al., 2020). Therefore, it is likely that this increase in intermediate cell abundance in Ptenfl/fl castrate mice is due to lineage plasticity in luminal cells. Notably, there were no significant changes in proliferation between the intact and castrate conditions in basal or intermediate cells (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig3-v1.jpg)
+
+**Figure 3.:** (A) Simplified schematic of setup for single-cell sequencing of Ptenfl/fl intact and Ptenfl/fl castrated (cx) ventral prostates. (B) Split UMAP visualizations of Ptenfl/fl and Ptenfl/fl cx epithelial cells. (C) Relative abundance of epithelial cells in Ptenfl/fl intact (n=2) and cx (n=3) prostates. Y-axis shows the % composition of each sample by cell type (Data presented as +/-SD, ***p<0.001, n.s.=not significant, negative binomial test). (D) Androgen Receptor (AR) gene signature composite score in epithelial cells, clustered by condition (Data presented as +/-SD, *p<0.05, permutation test). N/A indicates missing data due to no cells being present in the condition. WT n=3, Ptenfl/fl intact n=2, Ptenfl/fl cx n=3. (E) UMAP visualization of intermediate cells in Ptenfl/fl intact and cx prostates. Left, colored by condition; right, colored by clusters 0–5. (F) Relative abundance of intermediate clusters. Top, intact Ptenfl/fl(n=2); bottom, Ptenfl/fl cx (n=3) (Data presented as +/-SD). (G) Heatmap of composite score for AR, CCP, and Reactome translation gene signatures in intermediate clusters. (H) Heatmap of composite score for AR, CCP, and Reactome translation gene signatures in WT intact and castrate basal and luminal cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Composite score of CCP signature in WT, Ptenfl/fl intact, and Ptenfl/fl cx epithelial cells (Data presented as +/-SD, *p<0.05, permutation test) (B) Heatmap of top differentially expressed genes across intermediate clusters 0–5. Blue arrows, basal markers; green arrows, AR-dependent genes; red arrows, ribosomal or translation machinery genes. (C) Top GSEA results for genes upregulated in intermediate clusters 1 and 4. All pathways are enriched with FDR <0.05. (D) Heatmap of ribosomal gene expression in basal cells in Ptenfl/fl intact and Ptenfl/fl cx mice. (E) UMAP visualization of AR signaling status in intermediate cells in Ptenfl/fl intact and Ptenfl/fl cx mice. (F) Relative abundance of intermediate cells with high, medium, or low AR signaling in Ptenfl/fl intact (n=2) and Ptenfl/fl cx (n=3) mice (Data presented as +/-SD, *p<0.05, ***p<0.001, negative binomial regression test). (G) UMAP visualization of epithelial cells in WT intact, WT cx, Ptenfl/fl intact, and Ptenfl/fl cx mice, colored and labeled by cell ID.
 
 Given the increase in intermediate cells associated with castration resistant tumor growth, we next asked how castration modulates phenotypic diversity in this population. We isolated and re-clustered intermediate cells from Ptenfl/fl intact and castrated mice and found six distinct clusters (Figure 3E). The majority of intact Ptenfl/fl intermediate cells (62.8%) congregated in a single cluster (cluster 3), while castrated Ptenfl/fl intermediate cells were widely distributed over four unique groups (clusters 0, 1, 2, and 4) (Figure 3F). DEG analysis showed high expression of AR-dependent genes Sbp, Defb50, and Spink1 in cluster 3, suggesting this cell population may have high AR signaling activity relative to other intermediate cells (Figure 3—figure supplement 1B, Supplementary file 3A-F). This cluster represents cells close to differentiated luminal cells on the epithelial UMAP (Figure 3B) and may indicate a luminal origin that could explain retaining high AR activity. Similarly, we observed high expression of the basal cell markers Krt5 and Krt15 in cluster 1 (Figure 3—figure supplement 1B; this cluster corresponds to the intermediate cells proximal to basal cells on the epithelial UMAP (Figure 3B)). This supports our hypothesis that some intermediate cells are derived from basal transdifferentiation in the context of cancer, while others may have luminal origins. We also noted multiple ribosomal genes upregulated in clusters 1 and 4, suggesting increased translational signatures in these clusters (Figure 3—figure supplement 1B). GSEA confirmed enrichment of multiple translation pathways in clusters 1 and 4 (Figure 3—figure supplement 1C). We also investigated whether castration leads to increased translational signatures in basal cells. We found that several genes encoding ribosomal proteins were overexpressed in castrated basal cells compared to intact Ptenfl/fl mice (Figure 3—figure supplement 1D). Together, these findings demonstrate that castration promotes increased heterogeneity of the intermediate cell populations and potentially diversifies cell-type-specific translation dependence in both basal and intermediate cells in the context of Pten loss.
 
@@ -103,29 +131,127 @@ To further characterize the functional differences in castration resistant inter
 
 Our findings raise the question of what aspects of intermediate cell heterogeneity are driven by castration versus loss of Pten? To address this question, we performed single-cell RNA sequencing on 9 WT castrated mouse prostates, which we binned into three replicates to overcome small tissue yields due to atrophy in castrated WT prostates. We found that non-basal cells in WT castrate mice aggregate into one clustered region separate from both WT intact luminal cells and Ptenfl/fl intermediate cells, but interestingly were closest to WT luminal progenitor cells (Figure 3—figure supplement 1G). We evaluated the changes in AR activity, translation, and proliferation in basal and luminal cells between WT intact and castrated cells. We found that similar to Ptenfl/fl intermediate cells, lower AR activity was associated with an increase in a translation signature. However, unlike the Ptenfl/fl intermediate cells we observed a decrease in the proliferation signature (Figure 3H). These findings demonstrate that castration plays an important role in translational heterogeneity in intermediate cells. However, the change in proliferation is likely related to loss of Pten.
 
-## Castrate intermediate cell signature correlates with advanced prostate cancer and worse patient outcomes
+### Castrate intermediate cell signature correlates with advanced prostate cancer and worse patient outcomes
 
 Given the widespread use of the Ptenfl/fl model (Ding et al., 2011; Svensson et al., 2011; Hsieh et al., 2012; Garcia et al., 2014; Hsieh et al., 2015; Ku et al., 2017; Allott et al., 2018; Antoch et al., 2020; Morel et al., 2021; Quaglia et al., 2021) and our new understanding of cellular dynamics in the context of disease progression, we sought to determine which cell type and context most closely correlated with human prostate cancers that went on to resist androgen deprivation therapy (ADT). To this end, we used a gene signature of ADT resistance derived from human prostate tumors prior to treatment with ADT plus the AR inhibitor enzalutamide, in a neoadjuvant setting (Figure 4A) (NCT02430480) (Karzai et al., 2021; Wilkinson et al., 2021; Ku et al., 2021). We generated DEG lists for each epithelial cell type (basal, intermediate, luminal) comparing WT and Ptenfl/fl or Ptenfl/fl intact and castrated prostates and performed enrichment analysis using the ADT resistance signature. Out of all the cell types, castrated intermediate cells compared to intact intermediate cells exhibited the most enrichment for the resistance signature (Figure 4B). The top five genes from the resistance signature that were upregulated in castrated intermediate cells were ATP1B1, BST2, CP, IGFBP3, and PTTG1. Importantly, these genes were downregulated in cluster 3 of our intact intermediate cells compared to castrate clusters, demonstrating specificity for aggressive disease (Figure 4—figure supplement 1A). Furthermore, all five genes were upregulated in human tumors that exhibited pathologic resistance to ADT (Figure 4—figure supplement 1B). Lastly, we sought to investigate whether these genes were associated with worse outcomes for prostate cancer patients. We examined disease-free survival (DFS) of patients stratified by high or low expression of the five top genes across two major prostate cancer cohorts (Network, 2015; Taylor et al., 2010). We found that patients whose tumor samples expressed high levels of any of these five enriched genes experienced significantly shorter disease-free survival (Figure 4C, Figure 4—figure supplement 1C). We also analyzed patients with PTEN loss or PI3K/AKT pathway dysregulation from the TCGA dataset and found the same trend (Figure 4—figure supplement 1D). These results suggest that the castrate intermediate cell state in the Ptenfl/fl may correlate with poor patient outcomes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig4-v1.jpg)
+
+**Figure 4.:** (A) Diagram of clinical trial used to establish gene signature of androgen deprivation treatment resistance (NCT02430480). (B) Enrichment plot of ADT resistance gene signature relative to intermediate cell DEGs between Ptenfl/fl and Ptenfl/fl cx (adjusted p-value = 0.00381). (C) Kaplan-Meier curve of disease-free survival for prostate cancer patients in TCGA database with or without high RNA expression of top correlated genes from B. Red line, patients with normal expression of all genes; blue line, patients with expression of at least 1 gene with TPM (transcripts per million) in the 80th percentile or above. (D) UMAP of tumor cells from human patient samples. Red, primary cancer; blue, metastatic cancer. (E) UMAP visualization of per-cell computed score for 5-gene signature from (B-C) in human cancer samples. (F) UMAP visualization of per-cell computed score for 5-gene signature from (B-C) in PR and PRN mouse models. Pie charts indicate proportion of cells with zero, low, intermediate, or high signature scores. (G) Stacked bar chart showing proportion of cells from PR or PRN mice in each scoring category for the 5-gene signature.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heatmap of top 5 resistance genes in intermediate clusters, labeled by AR status and condition (intact or castrate). (B) Heatmap of the top 5 genes enriched in castrated intermediate cells (Figure 4B) and their expression in ADT non-responder (NR), intermediate responder (IR), and excellent responder (ER) patients. (C) Kaplan-Meier curve of disease-free survival of patients in the Taylor et al., 2010 cohort, separated by expression of the top 5 resistance genes in castrated intermediate cells. Red line, normal expression of top 5 genes; blue line, patients with expression of at least 1 gene with TPM in the 80th percentile or above. (D) Kaplan-Meier curve of disease-free survival of patients in the TCGA database, filtered for PTEN loss or PI3K/AKT pathway dysregulation, separated by expression of the top 5 resistance genes in castrated intermediate cells. Red line, normal expression of top 5 genes; blue line, patients with expression of at least 1 gene with TPM (transcripts per million) in the 80th percentile or above.
 
 Given our finding that a 5-gene signature derived from castrate intermediate cells correlates to human clinical phenotypes, we investigated if this signature is enriched in metastatic disease. We integrated single-cell RNA sequencing data from primary prostate cancers (n=11) (Song et al., 2022) and metastatic prostate cancers (n=6) (Dong et al., 2020) and found that primary and metastatic cells clustered separately (Figure 4D). We generated a composite score of our 5-gene signature on a per-cell basis and visualized it on the UMAP. We observed an enrichment of the signature only in metastatic patients (Figure 4E). Importantly, the cluster containing this signature was composed of cells from five out of the six metastatic samples. These findings show that our 5-gene signature is enriched in human metastatic prostate cancer.
 
 Finally, a possible confounding factor in this model is that physical castration of the Ptenfl/fl model alone could be driving the expression of the 5-gene signature. To investigate this, we examined single-cell sequencing data from an orthogonal non-castrated mouse model of cancer progression (Brady et al., 2021). This study used prostate specific autochthonous models including a double knockout Pten-/-/Rb1-/- mouse (PR) and a triple mutant Pten-/-/Rb1-/-/Nmyc+ mouse (PRN). PRN mice generate prostate tumors with significantly stronger castration resistance compared to PR mice (Brady et al., 2021). Single-cell RNA sequencing data in this study was produced without castration in both PR and PRN mice, resulting in a model of cancer progression outside of physical castration. We overlaid our 5-gene resistance signature on UMAPs of both mouse models and found strong enrichment of the signature in PRN mice compared to PR mice (Figure 4F–G). These results reveal that the 5-gene signature is likely not driven by castration alone. Together, our findings demonstrate that a gene signature generated through a specific cell-type within murine prostate cancer closely correlates with human CRPC and worse outcomes in patients.
 
-## Androgen deprivation decreases immune cell abundance but activates Tnf signaling
+### Androgen deprivation decreases immune cell abundance but activates Tnf signaling
 
 Androgen deprivation induces a host of physiological changes in the prostate, including modulations of immune signaling (Sha et al., 2015; Lopez-Bujanda et al., 2021). Having observed significant epithelial changes in castrated Ptenfl/fl mice, we next investigated the consequences of castration on the immune environment. We observed a significant decline in the abundance of all 3 macrophage subtypes, as well as CD8+ T cells, relative to intact Ptenfl/fl mice (Figure 5A–B). We performed ligand-receptor interaction analysis to understand how androgen deprivation disrupts cell-cell signaling patterns (Supplementary file 4). We found that epithelial signaling to macrophage cells was still intact, with relatively little change in ligand or receptor expression (Figure 5—figure supplement 1A–B). However, the Ccl2/7/11-Ccr2 signaling axis from fibroblasts to M2 macrophages and TAMs was entirely ablated in castrated Ptenfl/fl mice (Figure 5C). Ccr2 expression was significantly decreased in macrophages, and Ccl2/7/11 were all dramatically decreased in fibroblasts (Figure 5D). This suggests that fibroblast-mediated macrophage recruitment is interrupted by androgen deprivation. Indeed, androgen signaling is known to promote pro-tumorigenic macrophage function as well as macrophage recruitment via Ccr2 expression, lending credence to this hypothesis (Lai et al., 2009; Cioni et al., 2020; Becerra-Diaz et al., 2020). TRMs also decreased in abundance, but they were not targeted by fibroblast signaling and epithelial signaling was uninterrupted. Given the expression of AR-dependent genes in this macrophage subtype (Figure 2—figure supplement 1D), we speculated that loss of androgen signaling could be deleterious to this population. Indeed, in intact Pten fl/fl mice TRMs had high AR activity relative to other macrophage subtypes, and this activity was decreased by castration (Figure 5—figure supplement 1C). This suggests that castration interrupts fibroblast-mediated pro-tumorigenic M2 and TAM recruitment and depletes the androgen-dependent tissue-resident macrophage reservoir, leading to decreased macrophage abundance in the prostate.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig5-v1.jpg)
+
+**Figure 5.:** (A) Combined UMAP visualization of immune cells in Ptenfl/fl and Ptenfl/fl cx ventral prostates. (B) Relative abundance of immune cells in Ptenfl/fl intact (n=2) and cx (n=3) mice. Y-axis shows the % composition of each sample by cell type (Data presented as +/-SD, *p<0.05, **p<0.01, ***p<0.001, n.s=not significant, negative binomial test). (C) Dot plot of signaling interactions between macrophages and fibroblasts. (D) Dot plot of Ccr2 expression in M2 macrophages and TAMs (left). Dot plot of Ccr2 ligand expression in fibroblasts in Ptenfl/fl intact and cx mice (right). (E) Dot plot of signaling interactions between CD8+ T cells and epithelial and macrophage cells in Ptenfl/fl intact and cx mice. (F) Dot plot of epithelial and macrophage ligands and CD8+ T cell receptor gene expression in Ptenfl/fl intact and cx mice. (G) Dot plot of Tnf signaling interactions between myeloid and epithelial/fibroblast cells in Ptenfl/fl intact and cx prostates. (H) Scatter plot of TCGA PRAD study patient signature composite scores. Y-axis, TNF signaling signature score; X-axis, AR signaling signature score (Pearson’s correlation).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot of signaling interactions between macrophage subtypes and epithelial cells in Ptenfl/fl intact and Ptenfl/fl cx prostates. (B) Dot plot of epithelial ligand and macrophage receptor gene expression in Ptenfl/fl intact and Ptenfl/fl cx ventral prostates. (C) Composite score of AR signaling signature in macrophage subtypes in Ptenfl/fl intact and Ptenfl/fl cx prostates (Data presented as +/-SD). (D) Scatter plot of TCGA PRAD study patient signature composite scores, filtered for patients harboring PTEN mutations. Y-axis, TNF signaling signature score; X-axis, AR signaling signature score (Pearson’s correlation).
 
 Macrophages likely contribute to CD8+ T cell recruitment in intact Ptenfl/fl mice (Figure 2G–H); we speculated that macrophage-mediated signaling might be interrupted in the context of castration and cause a decrease in CD8+ T cell abundance. Indeed, while epithelial-CD8+ interactions were mostly intact, Cd86-Cd28/Ctla4 signaling from M2 macrophages and TAMs was disrupted, and Cd86 expression was greatly reduced in both M2s and TAMs (Figure 5E). In addition, receptor expression was decreased in CD8+ T-cells, including suppressive markers Ctla4 and Pdcd1 (Figure 5F). These findings suggest that depletion of the macrophage population causes a decrease in both CD8+ T cell recruitment and suppression, possibly leading to more cytotoxic but less abundant CD8+ T cells in castrated Ptenfl/fl mice.
 
 Finally, Tnf signaling has previously been implicated as a pro-tumorigenic factor in AR low prostate cancer (Mizokami et al., 2000; Sha et al., 2015). Accordingly, we examined Tnf interactions in our ligand-receptor analysis and found a striking enrichment of Tnf pathway activity in castrated mice. Specifically, pro-tumorigenic myeloid cells (M2 macrophages, TAMs, and MDSCs) expressing Tnf interact with multiple receptors in epithelial cells and fibroblasts (Figure 5G). To investigate whether this association held true in human prostate cancer, we correlated a 200 gene signature of Tnf activity (Griss et al., 2020) with AR signaling activity in the prostate cancer TCGA dataset (Network, 2015). We found a significant inverse correlation between TNF and AR activity in human patients, validating our finding that TNF signaling is induced in prostate cancer upon castration (Figure 5H). This correlation also held true when only considering patients with PTEN loss (Figure 5—figure supplement 1D). We conclude that castration in the Ptenfl/fl mouse provokes several large-scale cellular signaling changes that result in decreased macrophage and CD8+ T cell populations and increased Tnf signaling.
 
-## Translation inhibition in AR-low prostate cancer is lethal to basal and intermediate cells and disrupts pro-tumorigenic signaling
+### Translation inhibition in AR-low prostate cancer is lethal to basal and intermediate cells and disrupts pro-tumorigenic signaling
 
 Deregulated mRNA translation rates have previously been implicated in aberrant gene expression and aggressive AR-low prostate cancer in the Ptenfl/fl mouse (Liu et al., 2019; Lim et al., 2021). However, understanding how the per cell requirement for aberrant translation enables tumor heterogeneity has been technically challenging. Therefore, it remains to be determined which prostate cancer epithelial cell types require increased translation for androgen independent growth. Given the strong correlation between proliferation and translation observed in both basal and intermediate cells (Figure 3, Figure 3—figure supplement 1D), we hypothesized that inhibiting translation in the Ptenfl/fl mouse could be deleterious to both cell types. To investigate this possibility, we used the PB-Cre4;Ptenfl/fl;ROSA26-rtTA-IRES-eGFP;TetO-4ebp1M mouse model (herein referred to as Ptenfl/fl;4ebp1M). In this model, Cre-mediated recombination leads to Pten loss and expression of the rtTA protein in both basal and intermediate cells (Figure 1—figure supplement 1B). When mice are treated with doxycycline, a mutant Eif4ebp1 transgene (4ebp1M) is expressed (Hsieh et al., 2015). eIF4EBP1 is a negative regulator of translation initiation and functions via inhibition of eIF4F complex assembly (Schuster and Hsieh, 2019). This mutant allele cannot be inactivated via mTOR-mediated phosphorylation and its expression robustly inhibits eIF4F complex formation and translation initiation in prostate epithelia (Figure 6A). Using this model, we sought to determine the epithelial cell type specific dependencies of castration resistant prostate cancer. Here, doxycycline was administered starting at 4 months of age, simultaneously with castration, and prostates were collected at 6 months of age.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig6-v1.jpg)
+
+**Figure 6.:** (A) Simplified schematic of the eIF4F translation initiation complex and how the 4EBP1M protein functions in the Ptenfl/fl;4ebp1M mouse model when treated with doxycycline. (B) UMAP visualization of epithelial cells in Ptenfl/fl cx and Ptenfl/fl;4ebp1M cx prostates, colored by genotype. (C) Violin plot of rtTA-eGFP transgene expression in epithelial cells in each Ptenfl/fl condition. Plot shows only cells expressing the transgene; each dot represents a cell. Percentages represent the proportion of transgene-positive cells in each condition. (D) Dot plot of top GSEA results from DEG analysis of transgene-positive basal cells in Ptenfl/fl;4ebp1M cx mice compared to Ptenfl/fl cx ventral prostates. All pathways are enriched with FDR <0.05. (E) Dot plot of Tnf signaling interactions between myeloid and epithelial/fibroblast cells in Ptenfl/fl cx and Ptenfl/fl;4ebp1M cx mice. (F) Dot plot of Tnf and Tnf ligand expression in myeloid cells, epithelial cells, and fibroblasts in Ptenfl/fl cx and Ptenfl/fl;4ebp1M cx prostates. Red boxes highlight ligands with decreased expression in Ptenfl/fl;4ebp1M cx mice. (G) Plot of Egfr signaling interactions between epithelial cells and fibroblasts in Ptenfl/fl intact, Ptenfl/fl cx, and Ptenfl/fl;4ebp1M cx prostates. (H) Dot plot of Egfr and Egfr ligand expression in epithelial cells and fibroblasts in Ptenfl/fl intact, Ptenfl/fl cx, and Ptenfl/fl;4ebp1M cx ventral prostates. Red boxes highlight ligands with decreased expression in Ptenfl/fl;4ebp1M cx mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79076/elife-79076-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Interactive website can be found at https://atlas.fredhutch.org/hsieh-prostate/.
+
 Initially, no major differences were observed in the UMAP comparing all epithelial cells in castrated Pten fl/fl mice with or without 4ebp1M (Figure 6B). However, we noted a striking (~10-fold) depletion of the rtTA-eGFP transgene which is required for 4ebp1M induction in Ptenfl/fl;4ebp1M basal and intermediate epithelial cells compared to the Ptenfl/fl model (Figure 6C, Table 1). We hypothesized that translation inhibition in AR-low prostate cancer might be lethal or confer a competitive disadvantage to AR low epithelial cells, and that the bulk of the remaining epithelia did not express the 4ebp1M and were simply castrate cells that did not express the transgene. To test this hypothesis, we performed DEG analysis only on transgene-positive cells, comparing castrated cells with or without 4ebp1M. We found many more differentially expressed genes between these groups in basal cells (465 differentially expressed genes) than in the non-filtered analysis (56 DEGs) (Supplementary file 5A-B). We did not observe a significant change in the number of DEGs between castrated Ptenfl/fl and Ptenfl/fl;4ebp1M intermediate cells when filtering for rtTA-eGFP+ cells. This may be due to the high phenotypic diversity in this compartment and the very low proportion of transgene-positive intermediate cells after 4ebp1M induction (<1%, Table 1) causing a lack of robustness in the DEG analysis.
 
+**Table 1.**
+ Transgene abundance in PTEN mouse epithelia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Cell Type</th>
+      <th>Ptenfl/fl</th>
+      <th>Ptenfl/fl cx</th>
+      <th>Ptenfl/fl;4ebp1M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Basal</td>
+      <td>All</td>
+      <td>1795</td>
+      <td>2718</td>
+      <td>1565</td>
+    </tr>
+    <tr>
+      <td>rtTA-eGFP+</td>
+      <td>255(14.2%)</td>
+      <td>422(15.5%)</td>
+      <td>41(2.6%)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Intermediate</td>
+      <td>All</td>
+      <td>2391</td>
+      <td>8230</td>
+      <td>4760</td>
+    </tr>
+    <tr>
+      <td>rtTA-eGFP+</td>
+      <td>438(18.3%)</td>
+      <td>1073(13.0%)</td>
+      <td>43(0.90%)</td>
+    </tr>
+  </tbody>
+</table>
+
 Interestingly, upon performing pathway analysis on basal cell DEGs we found enrichment of pathways relating to translation, cell cycle arrest, and apoptosis, and observed downregulation of mitochondrial function and mTORC1 signaling pathways (Figure 6D). These findings suggest that remaining transgene-positive basal cells in the Ptenfl/fl;4ebp1M mice may be undergoing cell cycle arrest, interruption of growth processes such as inhibition of the mTOR pathway, and apoptosis. We also noted that in the basal compartment, the proportion of hyperproliferative cells had decreased drastically (Table 2). This suggests that highly proliferative basal cells are more dependent upon high translation than less proliferative basal cells.
+
+**Table 2.**
+ Basal proliferative subset proportions in rtTA-eGFP+ cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Basal Subset</th>
+      <th>Hypo-proliferative</th>
+      <th>Hyper-proliferative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ptenfl/fl</td>
+      <td>188 (73.7%)</td>
+      <td>60 (23.5%)</td>
+    </tr>
+    <tr>
+      <td>Ptenfl/fl cx</td>
+      <td>313 (74.1%)</td>
+      <td>98 (23.2%)</td>
+    </tr>
+    <tr>
+      <td>Ptenfl/fl;4ebp1M</td>
+      <td>38 (97.4%)</td>
+      <td>1 (2.6%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Given the large-scale changes in epithelial populations caused by 4ebp1M induction in castrated Ptenfl/fl mice, we next asked how cell-cell signaling between the remaining epithelial cells and other compartments were affected by the loss of basal and intermediate cell populations through translation inhibition (Supplementary file 5C). We found that Tnf signaling was greatly decreased between myeloid and epithelial cells (Figure 6E–F). In addition, epithelial-fibroblast and inter-epithelial Egfr signaling also decreased significantly (Figure 6G–H). Egfr activity is associated with worse cancer prognosis, and inhibition of Egfr signaling has been proposed as a therapeutic approach in advanced prostate cancer (Kim et al., 2006; Guérin et al., 2010; Xiong et al., 2020). Overall, these findings show that both basal and intermediate cancer cell types require increased translation initiation to maintain castration resistance and that aberrant mRNA translation is required for tumor heterogeneity. Furthermore, translation inhibition of distinct epithelial populations can impact the local tumor microenvironment.
 
@@ -145,80 +271,80 @@ Finally, we tested the hypothesis that high translation rates were important to 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 PB-Cre4 mice which express a Cre recombinase transgene under the control of the rat Pbsn (probasin) promoter in the prostate epithelium were obtained from the Mouse Models of Human Cancer Consortium (now Jax #026662). Ptenfl/fl (Jax #006440) and Rosa-LSL-rtTA (Jax #005670) mice were obtained from the Jackson Laboratory. TetO-4ebp1M mice which express an inducible mutant Eif4ebp1 transgene were generated as previously described (Hsieh et al., 2010). All mice were maintained in the C57BL/6 background under specific pathogen–free conditions, and experiments conformed to the guidelines as approved by the Institutional Animal Care and Use Committee of Fred Hutchinson Cancer Research Center.
 
-## Surgical castration and activation of the 4EBP1M transgene
+### Surgical castration and activation of the 4EBP1M transgene
 
 Surgical castrations were performed in 4- to 5-month-old mice under isoflurane anesthesia. Postoperatively, mice were monitored daily for 5 days. To activate the 4EBP1M transgene, doxycycline (Sigma-Aldrich) was administered in the drinking water at 2 g/liter immediately after castration, and euthanasia was performed 8 weeks after castration.
 
-## Tissue dissociation for single-cell RNA sequencing
+### Tissue dissociation for single-cell RNA sequencing
 
 Ventral prostate lobes from C57BL/6 J WT, Ptenfl/fl, Ptenfl/fl;4ebp1M mice were dissected, washed with chilled 1 X PBS, and then minced with a scalpel into small pieces (~1 mm) in a petri dish. Paired lobes from a single mouse were collected and dissociated into one sample for scRNA-seq. The tissue was digested with DMEM/F12/Collagenase/Hyaluronidase/FBS (StemCell technologies, Vancouver, Canada) for 1 hr at 37 °C on a slowly shaking/rotating platform. The tissue was further digested in 0.25% Trypsin-EDTA (Invitrogen, Carlsbad, CA) on ice for 30 minutes, and followed by suspension in Dispase (Invitrogen, Carlsbad, CA, 5 mg/mL) and DNase I (Roche Applied Science, Indianapolis, IN, 1 mg/mL). Any cell clumps were dissociated by gently pipetting up and down. The dissociated cells were then passed through 70 μm cell strainers (BD Biosciences, San Jose, CA) to achieve single cell suspension. The suspension was resuspended with 3 ml PBS (Life Technologies) with 2% fetal calf serum (FCS) (Gemini Bioproducts, West Sacramento, CA) and immediately placed on ice. Viable cells were counted by Vi-Cell XR Cell Viability Analyzer (Beckman Coulter, Brea, CA) and then diluted accordingly to reach the targeted cell concentration.
 
-## Single-cell RNA sequencing library preparation
+### Single-cell RNA sequencing library preparation
 
 3’ single-cell RNA libraries were generated according to the protocol outlined in Single Cell 3’ Reagent Kits v2 User Guide 10 X Genomics. Briefly, cells and reverse transcription reagents were partitioned into oil-based Gel Beads in Emulsion (GEMs), with each GEM containing a unique 10 x barcode. Cells were then lysed and underwent reverse transcription resulting in barcoded cDNA. The cDNA was then collected and amplified prior to undergoing library construction in which P5, P7, and a unique sample index were added.
 
 At least two mouse prostates were prepared and sequenced for each condition in order to obtain >10,000 cells/condition, resulting in n=3 for WT mice, n=2 for Ptenfl/fl mice, n=3 for Ptenfl/fl mice, and n=2 for Ptenfl/fl;4ebp1M mice. Individual mouse prostates were considered biological replicates. The 10 libraries generated in this manner were pooled and sequencing was performed on an Illumina NovaSeq 6000 using the v1.5 S1-100 flow cell and reagent kit. Sequencing configuration was paired-end 26x8 × 96 and Illumina RTA version v3.3.5 was used. This generated a median of 58.7 million reads/sample with a median 54.60% saturation, median 90.70% Q30 fraction, 13,746 average reads/cell, and 6.2 reads/UMI.
 
-## Alignment and filtering of reads
+### Alignment and filtering of reads
 
 Two transgene transcripts (Cre, rtTA-eGFP) were added to the mm10 transcriptome to detect transgenes expressed in the Ptenfl/fl and Ptenfl/fl;4ebp1M mice. Kallisto v0.45.1 (Bray et al., 2016) was used to demultiplex all samples into FASTQ files and align reads to the modified mm10 transcriptome. DropletUtils package (Lun et al., 2019; Griffiths et al., 2018) was used to filter out empty or duplexed cell droplets. Cells with fewer than 200 or greater than 5000 detected genes, fewer than 500 or greater than 25,000 detected UMIs and cells with >15% mitochondrial reads were filtered from subsequent analysis.
 
-## PCA, UMAP, and clustering
+### PCA, UMAP, and clustering
 
 R package Seurat v4.0.4 (https://satijalab.org/seurat/) was used to construct a Principal Component Analysis (PCA) for the entire dataset using the 2000 most variable genes as features. The Uniform Manifold Approximation and Projection (UMAP) dimension reduction technique was used for visualization and the R function ‘FindClusters()’ with resolution = 0.2 was used to generate 43 clusters.
 
-## Cell type identification
+### Cell type identification
 
 The SingleR package v1.6.1 was used to assign initial cell type identities to each cluster. These IDs were verified and refined using expression patterns of published biomarkers. For epithelial cells, cell subtypes (basal, intermediate, differentiated) were assigned using published gene signatures from other single-cell RNA sequencing projects. For immune cells, broad cell types (T cells, macrophages) were divided into activation states via known biomarkers (e.g. Cd8a for CD8 T cells and Mrc1 for M2-activated macrophages). Stromal cell types were also determined via biomarkers.
 
-## Relative cell abundance
+### Relative cell abundance
 
 To compare the abundance of specific cell populations while controlling for sample library size, the percentage composition of each sample was calculated by cell type. Statistical significance was generated via a negative binomial regression test to determine whether a given cell type was over- or under-represented between conditions.
 
-## Gene signature enrichment
+### Gene signature enrichment
 
 The GSVA package v1.40.1 (Hänzelmann et al., 2013) was used to generate composite scores for gene signatures such as a 20-gene AR activity signature or the 30-gene CCP proliferation signature. Due to the sparse nature of single-cell transcriptomes, the data was pseudo-bulked by sample and cell type to generate more robust analyses. Statistical analysis was performed via permutation test with 10,000 permutations.
 
-## Differential expression and gene set enrichment analysis
+### Differential expression and gene set enrichment analysis
 
 Differential gene expression was computed using Seurat functions with a threshold log2 fold-change >0.25 or<–0.25 and FDR <0.05. Upregulated and downregulated genes were further filtered by setting a log2 fold-change threshold = log2(1.25) = ~0.32. Gene names were converted from mouse to human via the biomaRt package (Durinck et al., 2009) and GSEA was performed using the MsigDB database with the C2, C5, C6, C7, Hallmark, KEGG, BioCarta, and Reactome gene sets. Resulting enriched pathways were filtered via a threshold of FDR <0.05.
 
-## Trajectory, RNA velocity, and pseudotime
+### Trajectory, RNA velocity, and pseudotime
 
 Monocle3 (Cao et al., 2019; Qiu et al., 2017; Trapnell et al., 2014) and velocyto (La Manno et al., 2018) were used to draw trajectory paths and RNA velocity maps, respectively, through the epithelial compartment of the Ptenfl/fl intact mice. Palantir (Setty et al., 2019) was used to delineate gene expression dynamics across pseudotime in basal and intermediate cells in Ptenfl/fl intact mice.
 
-## Ligand-receptor interactions
+### Ligand-receptor interactions
 
 Ligand-receptor interactions between cell types were determined via the CellphoneDB package v2.0.0 (Efremova et al., 2020). Only interaction with p-value <0.05 were included in the final analysis.
 
-## Cell cycle assignment
+### Cell cycle assignment
 
 Cell cycle phases for single cells were determined using the Seurat cell cycle function, which includes gene lists denoting the G2M and S phases. Gene names were converted from human to mouse using the biomaRt package to match our data, then the CellCycleScoring function was used to assign each cell either S, G2M, or G1 phase. Chi-squared test was used to determine whether the proportions of G1 cells were significantly different between clusters or conditions.
 
-## Human gene signature of ADT resistance and correlation to mouse data
+### Human gene signature of ADT resistance and correlation to mouse data
 
 Tumor samples were laser capture microdissected from prostate cancer biopsies prior to undergoing six months of neoadjuvant androgen deprivation therapy plus enzalutamide and ranked based on volume of residual tumor in each patient, as previously described (Karzai et al., 2021; Wilkinson et al., 2021; Ku et al., 2021). Separately, differentially expressed genes (DEGs) derived from the PTEN null intact and castrate basal or intermediate cells were converted from mouse to human gene symbols using getLDS function from the biomaRt package v2.48.3 for R/Bioconductor (Durinck et al., 2009). Gene set enrichment analysis (GSEA) was performed on the basal vs. intermediate DEGs set against the top 50 genes associated with treatment resistance, and the top five leading edge genes from GSEA were used to stratify samples. Survival analysis was performed using the survival package in R on the TCGA prostate adenocarcinoma (Network, 2015) (n=490) and MSKCC (Taylor et al., 2010) (n=140) datasets. A cancer sample was considered “altered” if the expression of at least one of the five leading edge genes was greater than the 80th percentile for the entire cohort (TCGA or MSKCC, respectively).
 
-## Integration of single-cell data from human patients
+### Integration of single-cell data from human patients
 
 Sequencing data from human primary tumor samples was contributed by Dr. Franklin Huang. Data from human metastatic tumor samples was obtained from the GEO repository of Dong et al., 2020. All primary and metastatic samples were processed individually via the standard Seurat workflow. The primary sample object was filtered to only retain confirmed malignant cells. All objects were integrated into a Seurat object using a standard workflow (available here) and visualized via the UMAP dimension reduction method. The AddModuleScore function was used to compute the 5-gene signature score for every cell and was visualized via the FeaturePlot function.
 
-## Orthogonal mouse model
+### Orthogonal mouse model
 
 Data from individual Pten-/-/Rb1-/- (PR) and Pten-/-/Rb1-/-/Nmyc+ (PRN) mice were aggregated using the cellranger aggr pipeline and visualized using Loupe Cell Browser. Quantification of gene expression signatures was performed using the sum of log 2 -transformed normalized UMI counts across all genes in the signature. Cells were stratified into equal-sized tertiles (low, intermediate, high) based on the maximum value of the signature score. Cells with no detectable UMI counts of any signature genes were assigned to the zero category.
 
-## TCGA analysis of TNF activity
+### TCGA analysis of TNF activity
 
 The Cancer Genome Atlas (TCGA) PRAD cohort containing 493 primary prostate tumor samples with RNA-seq expression values was utilized for analysis of signature scores. We used the RSEM values hosted by the cBioPortal (http://www.cbioportal.org, study: prad_tcga_pan_can_atlas_2018.) Single sample enrichment scores were calculated using GSVA (Hänzelmann et al., 2013) with default parameters using genome-wide log2 RSEM values as input. The pathways used were from MSigDBv7.4 (HALLMARK_TNFA_SIGNALING_VIA_NFKB) and the 10-gene androgen-regulated (AR) signature from Bluemn et al., 2017. In analyses restricted to samples with PTEN biallelic loss, 94 samples were used which had either 2 copy loss or 1 copy loss and a non-synonymous mutation annotated as a putative driver mutation in cBioPortal. Pearson’s correlation coefficient was used to study the relationships between signature scores shown in scatterplots using the cor.test function in R.
 
-## Data and code availability
+### Data and code availability
 
 The single-cell RNA sequencing data files are available on the GEO database at GSE171336 and can be accessed using token: ijmfokccrhepvub. The code used to process and analyze the data is available at https://github.com/sonali-bioc/GermanosProstatescRNASeq/, (copy archived at swh:1:rev:5a376d7b77d034e9bd09ce4787337ee33fda8448; Arora, 2022). All other data associated with this study are present in supplementary materials and tables.
 
-## Interactive website
+### Interactive website
 
 The web-based data Atlas was developed utilizing open-source technologies, including React for the application framework, Material UI for interface components, and Apache EChart for visualizations. All data were extracted from Seurat HDF5 files into web-optimized CSV, Arrow, and Binary files. All site data and assets are stored in Amazon S3 and served through Amazon CloudFront, a global content delivery network (CDN) service built for high-speed, low-latency performance and security. The site is hosted at https://atlas.fredhutch.org/hsieh-prostate/.

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Contrary to dogma, evolutionarily young and dynamic genes can encode essential functions. We find that evolutionarily dynamic ZAD-ZNF genes, which encode the most abundant class of insect transcription factors, are more likely to encode essential functions in Drosophila melanogaster than ancient, conserved ZAD-ZNF genes. We focus on the Nicknack ZAD-ZNF gene, which is evolutionarily young, poorly retained in Drosophila species, and evolves under strong positive selection. Yet we find that it is necessary for larval development in D. melanogaster. We show that Nicknack encodes a heterochromatin-localizing protein like its paralog Oddjob , also an evolutionarily dynamic yet essential ZAD-ZNF gene. We find that the divergent D. simulans Nicknack protein can still localize to D. melanogaster heterochromatin and rescue viability of female but not male Nicknack- null D. melanogaster . Our findings suggest that innovation for rapidly changing heterochromatin functions might generally explain the essentiality of many evolutionarily dynamic ZAD-ZNF genes in insects.
+Contrary to dogma, evolutionarily young and dynamic genes can encode essential functions. We find that evolutionarily dynamic ZAD-ZNF genes, which encode the most abundant class of insect transcription factors, are more likely to encode essential functions in Drosophila melanogaster than ancient, conserved ZAD-ZNF genes. We focus on the Nicknack ZAD-ZNF gene, which is evolutionarily young, poorly retained in Drosophila species, and evolves under strong positive selection. Yet we find that it is necessary for larval development in D. melanogaster. We show that Nicknack encodes a heterochromatin-localizing protein like its paralog Oddjob, also an evolutionarily dynamic yet essential ZAD-ZNF gene. We find that the divergent D. simulans Nicknack protein can still localize to D. melanogaster heterochromatin and rescue viability of female but not male Nicknack-null D. melanogaster. Our findings suggest that innovation for rapidly changing heterochromatin functions might generally explain the essentiality of many evolutionarily dynamic ZAD-ZNF genes in insects.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ The ZAD-ZNF gene family in Drosophila is ideal for studying the relationship bet
 
 ## Results
 
-## ZAD-ZNFs genes are dynamic and diverse in Drosophila
+### ZAD-ZNFs genes are dynamic and diverse in Drosophila
 
 We searched Flybase to identify all genes in D. melanogaster that encode a ZAD domain (PF07776; Pfam database, Pfam.org). We found 91 ZAD-ZNF genes distributed across Chromosomes 2, 3, and X. 37 ZAD-ZNF genes occur in 13 gene clusters, containing two or more tandemly-arrayed ZAD-ZNF genes. Of these, many ZAD-ZNF genes share intron/exon structures with their neighbors and likely arose via segmental duplication. In contrast, seven ZAD-ZNF genes (CG3032, CG4318, CG9215, CG44002, CG17361, CG7963, CG17359) lack introns found in their closest relatives; we infer that these genes were likely born via retrotransposition.
 
@@ -51,25 +51,1120 @@ Next, we surveyed ZAD-ZNF genes in all 12 previously sequenced and annotated Dro
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig1-v1.jpg)
 
-**Figure 1.:** ZAD-ZNF genes across Drosophila.Phylogeny of 12 Drosophila genomes with a scale bar showing approximate divergence times (Drosophila 12 Genomes Consortium, 2007). The number of ZAD-containing genes in each Drosophila species genome (Supplementary file 1) is indicated by black bars.
+**Figure 1.:** Phylogeny of 12 Drosophila genomes with a scale bar showing approximate divergence times (Drosophila 12 Genomes Consortium, 2007). The number of ZAD-containing genes in each Drosophila species genome (Supplementary file 1) is indicated by black bars.
 
-## Rapidly evolving ZAD-ZNF genes are frequently essential in D. melanogaster
+### Rapidly evolving ZAD-ZNF genes are frequently essential in D. melanogaster
 
 These rapid changes in ZAD-ZNF gene repertoires suggested that selection might favor their genetic innovation. We investigated whether evolutionary retention is a predictor of essentiality. We took advantage of the fact that knockdown or knockout phenotypes have been characterized for almost all D. melanogaster genes. Indeed, 85 of 91 D. melanogaster ZAD-ZNF genes have associated phenotypic outcomes (summarized in Supplementary file 1). Of these, knockdown or knockout of 22 ZAD-ZNF genes showed complete lethality or sterility in D. melanogaster, whereas the other 63 were determined not to be essential.
 
 Of the 61 ZAD-ZNF genes with orthologs retained in all 12 annotated Drosophila species’ genomes, we found that 14 are essential for either fertility or viability in D. melanogaster, whereas 42 genes are not (five genes have no phenotypic data available). In comparison, we found that 8 of the 30 genes not universally conserved in Drosophila species are essential, whereas 21 are not (one has no phenotypic data available). Thus, somewhat surprisingly, we find that genes not globally retained over Drosophila evolution are just as likely to encode a necessary function in D. melanogaster as genes that have been strictly maintained over 40 million years of Drosophila evolution (8:21 versus 14:42, p=0.8, two-tailed Fisher’s exact test) (Table 1). These findings further support the idea that gene families subject to rapid evolutionary turnover may become involved in essential functions.
 
+**Table 1.**
+ Links between ZAD-ZNF gene dynamism and essentiality.(A) ZAD-ZNF genes are just as likely to be essential whether or not they are conserved across all 12 Drosophila species. Note that five genes for which phenotypic data is not available were not included in these analyses. (B) Positively-selected ZAD-ZNFs (via McDonald-Kreitman test, Table 2) are more likely to be essential than ZAD-ZNFs that have not evolved under positive selection. D. simulans lacks one of the 91 D. melanogaster genes and no data on essentiality is available for six genes. p-values were calculated by two-tailed Fisher’s exact test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Conservation of ZAD-ZNFs is not correlated with essentiality in Drosophila</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZAD-ZNFs</td>
+      <td>Essential</td>
+      <td>Not essential</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>conserved across Drosophila</td>
+      <td>14</td>
+      <td>42</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>not conserved across Drosophila</td>
+      <td>8</td>
+      <td>21</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td colspan="4">Positively selected ZAD-ZNFs are more likely to be essential than ZAD-ZNFs not under positive selection in D. melanogaster</td>
+    </tr>
+    <tr>
+      <td>ZAD-ZNFs</td>
+      <td>Essential</td>
+      <td>Not essential</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>not under positive selection</td>
+      <td>14</td>
+      <td>59</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>positive selection</td>
+      <td>8</td>
+      <td>4</td>
+      <td>0.0016</td>
+    </tr>
+  </tbody>
+</table>
+
 Gene duplication and loss is only one form of genetic innovation. We also analyzed the D. melanogaster ZAD-ZNF genes for signatures of recent positive selection. We performed McDonald-Kreitman tests of ZAD-ZNF orthologs found in both D. melanogaster and the closely-related species, D. simulans. The McDonald-Kreitman test assesses sequence diversity within a species versus divergence between species by comparing the ratio of non-synonymous (amino-acid altering, or replacement) to synonymous substitutions fixed during the divergence of the two species (Dn: Ds), to that of non-synonymous to synonymous polymorphisms within a species (Pn: Ps) (McDonald and Kreitman, 1991). The Pn: Ps ratio is a proxy for functional constraint acting on a gene within species and is expected to be similar to Dn: Ds between species under the null hypothesis. However, a higher than expected number of fixed non-synonymous changes would indicate the action of adaptive evolution during species divergence (McDonald and Kreitman, 1991).
 
 We took advantage of previous efforts that sequenced the genomes of hundreds of D. melanogaster strains and a reference D. simulans strain (Lack et al., 2016; Langley et al., 2012) to perform the McDonald-Kreitman test using the Popfly server (popfly.uab.cat) (Hervas et al., 2017). Of the 91 D. melanogaster ZAD-ZNF genes, only CG2202 is absent in D. simulans. We found that 12 out of the remaining 90 ZAD-ZNFs show evidence for recent adaptive evolution, i.e., have an excess of fixed non-synonymous changes (Dn) (Table 2). Using D. yakuba as an outgroup species, we also polarized fixed differences between D. melanogaster and D. simulans to assess whether the lineage leading to D. melanogaster showed evidence of positive selection in these 12 ZAD-ZNF genes. We found that 5 out of 12 genes showed evidence of positive selection with this polarized McDonald-Kreitman test (Table 2).
+
+**Table 2.**
+ Positively selected ZAD-ZNFs.Summary statistics for the McDonald-Kreitman (MK) test (with statistically significant values at p<0.05). The number of polymorphisms within D. melanogaster at synonymous (Ps) and non-synonymous (Pn) sites are compared to the number of all fixed synonymous (Ds) and non-synonymous (Dn) changes between D. melanogaster and D. simulans. A polarized MK test only considers synonymous (Ds) and non-synonymous (Dn) changes that were fixed along the lineage leading to D. melanogaster. MK test statistics were calculated either for the whole gene or individual domains. A neutrality index (N.I.) of <1 suggests an excess of fixed non-synonymous changes between species (i.e., positive selection). Phenotypes of these genes are taken from sources that are listed in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">ZAD-ZNF gene (mutant phenotype)</th>
+      <th rowspan="2">Region</th>
+      <th rowspan="2">Alignment length (codons)</th>
+      <th colspan="6">McDonald-Kreitman test (unpolarized)</th>
+      <th colspan="4">Polarized changes(D. melanogaster)</th>
+      <th colspan="2">Polarized changes (D. simulans)</th>
+      <th rowspan="2">Total polarized Dn</th>
+      <th rowspan="2">Total polarized Ds</th>
+    </tr>
+    <tr>
+      <th>p-value</th>
+      <th>Dn</th>
+      <th>Ds</th>
+      <th>Pn</th>
+      <th>Ps</th>
+      <th>NI</th>
+      <th>p-value</th>
+      <th>Dn</th>
+      <th>Ds</th>
+      <th>NI</th>
+      <th>Dn</th>
+      <th>Ds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Nnk (CG17802) (lethal)</td>
+      <td>full-length</td>
+      <td>448</td>
+      <td>0.007</td>
+      <td>52</td>
+      <td>24</td>
+      <td>14</td>
+      <td>20</td>
+      <td>0.323</td>
+      <td>0.041</td>
+      <td>17</td>
+      <td>8</td>
+      <td>0.329</td>
+      <td>26</td>
+      <td>16</td>
+      <td>43</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>71</td>
+      <td>0.119</td>
+      <td>6</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.167</td>
+      <td>0.058</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.000</td>
+      <td>3</td>
+      <td>2</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>216</td>
+      <td>0.019</td>
+      <td>34</td>
+      <td>10</td>
+      <td>9</td>
+      <td>10</td>
+      <td>0.265</td>
+      <td>0.070</td>
+      <td>11</td>
+      <td>3</td>
+      <td>0.245</td>
+      <td>15</td>
+      <td>7</td>
+      <td>26</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>136</td>
+      <td>0.091</td>
+      <td>6</td>
+      <td>11</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0.000</td>
+      <td>0.155</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0.000</td>
+      <td>4</td>
+      <td>6</td>
+      <td>6</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Odj (CG7357) (lethal)</td>
+      <td>full-length</td>
+      <td>438</td>
+      <td>0.000</td>
+      <td>40</td>
+      <td>32</td>
+      <td>5</td>
+      <td>25</td>
+      <td>0.160</td>
+      <td>0.002</td>
+      <td>18</td>
+      <td>15</td>
+      <td>0.167</td>
+      <td>16</td>
+      <td>17</td>
+      <td>34</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>73</td>
+      <td>0.197</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000</td>
+      <td>0.248</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>138</td>
+      <td>0.053</td>
+      <td>18</td>
+      <td>9</td>
+      <td>4</td>
+      <td>8</td>
+      <td>0.250</td>
+      <td>0.309</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0.400</td>
+      <td>9</td>
+      <td>5</td>
+      <td>14</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>135</td>
+      <td>0.099</td>
+      <td>2</td>
+      <td>7</td>
+      <td>0</td>
+      <td>11</td>
+      <td>0.000</td>
+      <td></td>
+      <td>0</td>
+      <td>4</td>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Trem (CG4413) (female sterile)</td>
+      <td>full-length</td>
+      <td>442</td>
+      <td>0.015</td>
+      <td>31</td>
+      <td>30</td>
+      <td>3</td>
+      <td>14</td>
+      <td>0.207</td>
+      <td>0.335</td>
+      <td>6</td>
+      <td>13</td>
+      <td>0.464</td>
+      <td>21</td>
+      <td>17</td>
+      <td>27</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>77</td>
+      <td>0.571</td>
+      <td>2</td>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000</td>
+      <td></td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>192</td>
+      <td>0.036</td>
+      <td>18</td>
+      <td>13</td>
+      <td>2</td>
+      <td>8</td>
+      <td>0.181</td>
+      <td>0.407</td>
+      <td>4</td>
+      <td>7</td>
+      <td>0.438</td>
+      <td>13</td>
+      <td>6</td>
+      <td>17</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>133</td>
+      <td>0.239</td>
+      <td>3</td>
+      <td>10</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0.000</td>
+      <td>0.338</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0.000</td>
+      <td>2</td>
+      <td>5</td>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Zw5 (CG2711) (lethal)</td>
+      <td>full-length</td>
+      <td>590</td>
+      <td>0.004</td>
+      <td>55</td>
+      <td>51</td>
+      <td>6</td>
+      <td>22</td>
+      <td>0.253</td>
+      <td>0.120</td>
+      <td>15</td>
+      <td>23</td>
+      <td>0.418</td>
+      <td>28</td>
+      <td>28</td>
+      <td>43</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>78</td>
+      <td>0.125</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td>0.285</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>229</td>
+      <td>0.251</td>
+      <td>32</td>
+      <td>17</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.398</td>
+      <td>0.867</td>
+      <td>7</td>
+      <td>8</td>
+      <td>0.857</td>
+      <td>16</td>
+      <td>9</td>
+      <td>23</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>217</td>
+      <td>0.060</td>
+      <td>12</td>
+      <td>25</td>
+      <td>0</td>
+      <td>8</td>
+      <td>0.000</td>
+      <td>0.159</td>
+      <td>3</td>
+      <td>11</td>
+      <td>0.000</td>
+      <td>7</td>
+      <td>14</td>
+      <td>10</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CG2712 (viable)</td>
+      <td>full-length</td>
+      <td>524</td>
+      <td>0.003</td>
+      <td>70</td>
+      <td>36</td>
+      <td>15</td>
+      <td>24</td>
+      <td>0.321</td>
+      <td>0.210</td>
+      <td>21</td>
+      <td>19</td>
+      <td>0.565</td>
+      <td>37</td>
+      <td>15</td>
+      <td>58</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>80</td>
+      <td>0.161</td>
+      <td>10</td>
+      <td>6</td>
+      <td>3</td>
+      <td>6</td>
+      <td>0.300</td>
+      <td>0.569</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.500</td>
+      <td>7</td>
+      <td>4</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>231</td>
+      <td>0.089</td>
+      <td>45</td>
+      <td>14</td>
+      <td>10</td>
+      <td>8</td>
+      <td>0.389</td>
+      <td>0.106</td>
+      <td>16</td>
+      <td>4</td>
+      <td>0.313</td>
+      <td>18</td>
+      <td>8</td>
+      <td>34</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>190</td>
+      <td>0.038</td>
+      <td>15</td>
+      <td>14</td>
+      <td>2</td>
+      <td>10</td>
+      <td>0.187</td>
+      <td>0.759</td>
+      <td>3</td>
+      <td>11</td>
+      <td>0.733</td>
+      <td>12</td>
+      <td>3</td>
+      <td>15</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="5">D19B (CG10270) (viable)</td>
+      <td>full-length</td>
+      <td>774</td>
+      <td>0.005</td>
+      <td>11</td>
+      <td>42</td>
+      <td>3</td>
+      <td>66</td>
+      <td>0.174</td>
+      <td>0.049</td>
+      <td>4</td>
+      <td>20</td>
+      <td>0.227</td>
+      <td>5</td>
+      <td>21</td>
+      <td>9</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>72</td>
+      <td>0.121</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0.000</td>
+      <td>0.134</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>171</td>
+      <td>0.182</td>
+      <td>6</td>
+      <td>12</td>
+      <td>2</td>
+      <td>13</td>
+      <td>0.308</td>
+      <td>0.347</td>
+      <td>0</td>
+      <td>6</td>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>4</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>257</td>
+      <td></td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>25</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>3</td>
+      <td></td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>C2H2-2</td>
+      <td>78</td>
+      <td></td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>7</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>2</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="6">CG7386 (lethal)</td>
+      <td>full-length</td>
+      <td>688</td>
+      <td>0.002</td>
+      <td>78</td>
+      <td>38</td>
+      <td>28</td>
+      <td>36</td>
+      <td>0.379</td>
+      <td>0.117</td>
+      <td>26</td>
+      <td>18</td>
+      <td>0.538</td>
+      <td>47</td>
+      <td>19</td>
+      <td>73</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>72</td>
+      <td>0.858</td>
+      <td>3</td>
+      <td>6</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1.200</td>
+      <td>0.506</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2.400</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>116</td>
+      <td>0.118</td>
+      <td>12</td>
+      <td>5</td>
+      <td>13</td>
+      <td>1</td>
+      <td>5.417</td>
+      <td>0.133</td>
+      <td>4</td>
+      <td>2</td>
+      <td>6.500</td>
+      <td>7</td>
+      <td>3</td>
+      <td>11</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>C2H2-1</td>
+      <td>21</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>C2H2-2</td>
+      <td>163</td>
+      <td>0.005</td>
+      <td>14</td>
+      <td>7</td>
+      <td>5</td>
+      <td>16</td>
+      <td>0.156</td>
+      <td>0.639</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.625</td>
+      <td>12</td>
+      <td>3</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>C2H2-3</td>
+      <td>78</td>
+      <td>0.098</td>
+      <td>2</td>
+      <td>6</td>
+      <td>3</td>
+      <td>1</td>
+      <td>9.000</td>
+      <td>0.540</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.000</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CG17359 (lethal)</td>
+      <td>full-length</td>
+      <td>344</td>
+      <td>0.000</td>
+      <td>43</td>
+      <td>17</td>
+      <td>3</td>
+      <td>14</td>
+      <td>0.085</td>
+      <td>0.000</td>
+      <td>18</td>
+      <td>6</td>
+      <td>0.071</td>
+      <td>20</td>
+      <td>11</td>
+      <td>38</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>82</td>
+      <td>0.157</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.111</td>
+      <td>0.540</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.333</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>134</td>
+      <td>0.000</td>
+      <td>28</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0.029</td>
+      <td>0.001</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0.000</td>
+      <td>15</td>
+      <td>4</td>
+      <td>24</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>105</td>
+      <td>0.064</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td>0.040</td>
+      <td>6</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">wek (CG4148) (lethal; maternal effect lethal)</td>
+      <td>full-length</td>
+      <td>473</td>
+      <td>0.001</td>
+      <td>29</td>
+      <td>42</td>
+      <td>3</td>
+      <td>30</td>
+      <td>0.145</td>
+      <td>0.596</td>
+      <td>3</td>
+      <td>19</td>
+      <td>0.633</td>
+      <td>16</td>
+      <td>23</td>
+      <td>19</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>70</td>
+      <td>0.206</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td></td>
+      <td>0</td>
+      <td>3</td>
+      <td></td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>194</td>
+      <td>0.012</td>
+      <td>22</td>
+      <td>19</td>
+      <td>3</td>
+      <td>14</td>
+      <td>0.185</td>
+      <td>0.456</td>
+      <td>3</td>
+      <td>7</td>
+      <td>0.500</td>
+      <td>11</td>
+      <td>12</td>
+      <td>14</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>157</td>
+      <td>0.074</td>
+      <td>5</td>
+      <td>17</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0.000</td>
+      <td></td>
+      <td>0</td>
+      <td>6</td>
+      <td></td>
+      <td>4</td>
+      <td>11</td>
+      <td>4</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CG10321 (viable)</td>
+      <td>full-length</td>
+      <td>835</td>
+      <td>0.001</td>
+      <td>28</td>
+      <td>50</td>
+      <td>9</td>
+      <td>63</td>
+      <td>0.255</td>
+      <td>0.007</td>
+      <td>11</td>
+      <td>20</td>
+      <td>0.260</td>
+      <td>14</td>
+      <td>29</td>
+      <td>25</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>69</td>
+      <td></td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>546</td>
+      <td>0.008</td>
+      <td>24</td>
+      <td>38</td>
+      <td>8</td>
+      <td>42</td>
+      <td>0.302</td>
+      <td>0.072</td>
+      <td>8</td>
+      <td>15</td>
+      <td>0.357</td>
+      <td>13</td>
+      <td>22</td>
+      <td>21</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>146</td>
+      <td>0.024</td>
+      <td>3</td>
+      <td>7</td>
+      <td>0</td>
+      <td>15</td>
+      <td>0.000</td>
+      <td>0.010</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>4</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="6">mld (CG34100) (lethal)</td>
+      <td>full-length</td>
+      <td>2021</td>
+      <td>0.020</td>
+      <td>84</td>
+      <td>70</td>
+      <td>37</td>
+      <td>57</td>
+      <td>0.541</td>
+      <td>0.328</td>
+      <td>32</td>
+      <td>36</td>
+      <td>0.730</td>
+      <td>37</td>
+      <td>32</td>
+      <td>69</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>70</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>1143</td>
+      <td>0.282</td>
+      <td>63</td>
+      <td>51</td>
+      <td>30</td>
+      <td>34</td>
+      <td>0.714</td>
+      <td>0.824</td>
+      <td>24</td>
+      <td>25</td>
+      <td>0.919</td>
+      <td>29</td>
+      <td>24</td>
+      <td>53</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>linker-2</td>
+      <td>278</td>
+      <td>0.075</td>
+      <td>6</td>
+      <td>8</td>
+      <td>2</td>
+      <td>13</td>
+      <td>0.205</td>
+      <td>0.292</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0.308</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>C2H2-1</td>
+      <td>81</td>
+      <td>0.237</td>
+      <td>4</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000</td>
+      <td>0.290</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>C2H2-2</td>
+      <td>110</td>
+      <td>0.427</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.250</td>
+      <td>0.121</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.000</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td colspan="17"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CG4282 (viable)</td>
+      <td>full-length</td>
+      <td>652</td>
+      <td>0.030</td>
+      <td>13</td>
+      <td>32</td>
+      <td>2</td>
+      <td>25</td>
+      <td>0.197</td>
+      <td>0.061</td>
+      <td>6</td>
+      <td>16</td>
+      <td>0.213</td>
+      <td>8</td>
+      <td>15</td>
+      <td>14</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>ZAD</td>
+      <td>75</td>
+      <td>0.053</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td>0.121</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.000</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>linker</td>
+      <td>248</td>
+      <td>0.252</td>
+      <td>9</td>
+      <td>18</td>
+      <td>1</td>
+      <td>7</td>
+      <td>0.286</td>
+      <td>0.433</td>
+      <td>4</td>
+      <td>11</td>
+      <td>0.393</td>
+      <td>6</td>
+      <td>6</td>
+      <td>10</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>C2H2</td>
+      <td>290</td>
+      <td></td>
+      <td>0</td>
+      <td>11</td>
+      <td>0</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>3</td>
+      <td></td>
+      <td>0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
 
 Subsequently, we used a domain-restricted analysis to define which of the three protein domains (ZAD, linker, or ZNF) were subject to positive selection. Although we found evidence of domain-specific positive selection in eight cases (two in the case of the polarized McDonald-Kreitman test), we were unable to define the domain subject to positive selection in four cases, due to small numbers of intra-species polymorphisms (Table 2). One gene (CG7386) showed signatures of adaptive evolution in its ZAD domain, whereas three genes (CG2712, CG7386, CG10321) showed evidence of adaptive evolution in the ZNF domain. Unexpectedly, we found that the linker domain has evolved under positive selection in six ZAD-ZNF genes. The biochemical function of these linker domains is largely unexplored as they lack predicted structural motifs (Chung et al., 2002; Chung et al., 2007), are highly variable in length and sequence even between orthologs, and are predicted to encode intrinsically disordered domains (Ishida and Kinoshita, 2007). Our findings implicate the poorly characterized linker region in mediating the adaptive potential of several ZAD-ZNF genes.
 
 Using this signature of positive selection in a subset of ZAD-ZNF genes, we evaluated whether positively selected genes encode essential functions. Intriguingly, we found that 8 of 12 ZAD-ZNF genes that have evolved under positive selection are essential, whereas only 14 of the remaining 73 genes that have been phenotypically assayed are essential (six have no phenotypic data available). Thus, contrary to the dogma, we find that ZAD-ZNF genes that are subject to positive selection are more likely to be essential for viability or fertility (8:4 versus 14:59, two-tailed Fisher’s exact test, p=0.0016) (Table 1). Our findings not only imply that several essential ZAD-ZNF genes evolve rapidly, but also raise the possibility that rapid evolution of some ZAD-ZNF genes might be critical for organismal viability.
 
-## The Oddjob-Nicknack cluster of ZAD-ZNF genes evolves dynamically in Drosophila
+### The Oddjob-Nicknack cluster of ZAD-ZNF genes evolves dynamically in Drosophila
 
 To further investigate the biological basis for the correlation between positive selection and gene essentiality, we decided to focus on one cluster of ZAD-ZNF genes on chromosome 3 of D. melanogaster (Figure 2A). This cluster of five genes contains two of the eight positively-selected, essential genes in D. melanogaster: Oddjob (Odj, CG7357) and CG17802; both also show evidence of positive selection in the polarized McDonald-Kreitman test (Table 2). Odj is the best-characterized gene in this cluster. The Oddjob protein interacts with Heterochromatin Protein 1a (HP1a), dynamically localizes to heterochromatin, and is required for heterochromatin-mediated gene silencing, or position-effect variegation (Swenson et al., 2016). Knockdown or over-expression of Odj is lethal in D. melanogaster, although the functional basis for this lethality is still unknown (Schertel et al., 2015). In keeping with the Oddjob nomenclature theme of ‘James Bond henchmen,’ and the mutant phenotype (described below), we renamed CG17802 as Nicknack, or Nnk. This cluster of ZAD-ZNF genes also includes three genes that do not evolve under positive selection (CG17801, CG17806, and CG17803) in D. melanogaster (Figure 2A). Although previous studies found that the knockdown of CG17801 in the germline led to de-repression of HetA and Blood transposable elements in the ovary, CG17801 knockdown did not significantly impair fertility or viability (Czech et al., 2013). The other two ZAD-ZNF genes in this cluster (CG17803, CG17806) have not been previously investigated.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic of the Oddjob-Nicknack cluster of ZAD-ZNF genes in D. melanogaster. (B) Viability of adult flies ubiquitously knocked down for each Odj-Nnk cluster member. The vertical axis shows a ratio of the observed/expected number of knockdown progeny per cross; each cross is represented by a point. Ubiquitous knockdown of either Odj or Nnk greatly reduces adult viability. Horizontal bars represent the mean and one standard deviation. We compared controls and ZAD-ZNF knockdowns using a two-tailed Student’s t-test; ** denotes p-value<0.01. (C) Phylogenomic analysis of the Odj-Nnk cluster shows that Oddjob, CG17801 and CG17806 all date back to the origin of the Drosophila genus. However, Oddjob is the only gene within the cluster retained in all queried Drosophila species; CG17801 has been lost within the obscura clade and in D. takahashii, whereas CG17806 has undergone numerous gains and losses. CG17803 arose in the ancestor of D. melanogaster and D. ananassae but was lost in D. eugracilis. Nicknack arose in the ancestor of D. melanogaster and D. pseudoobscura, duplicated in D. biarmipes and D. takahashii, but was independently lost in D. ananassae and the D. elegans/D. rhopaloa lineage.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bootstrap numbers in support of each orthology group (as a percentage of 100 bootstrap trials) are reported. Numbers next to the species names refer to lineage-specific gene duplications within orthology groups (Figure 2C).
 
 We evaluated the functional roles of all five ZAD-ZNF genes in the Odj-Nnk cluster by generating knockdowns using an Actin5C-Gal4 driver and RNAi constructs specific to each gene (Figure 2B) to generate ubiquitous knockdown of individual genes in the resulting zygotes. Consistent with previous results (Schertel et al., 2015), we found that the ubiquitous knockdown of Odj or Nnk is lethal. In contrast, we found that knockdowns of CG17801, CG17803 and CG17806 are viable (Figure 2B). Based on these results, we conclude that the two positively-selected members of this ZAD-ZNF cluster – Odj and Nnk – are both essential, confirming the unexpected correlation we previously observed between positive selection and gene essentiality in the ZAD-ZNF gene family (Table 1B).
 
@@ -77,43 +1172,63 @@ To gain deeper insight into the evolutionary dynamics of the Odj-Nnk cluster, we
 
 To more rigorously identify orthologs, we conducted phylogenetic analyses (Figure 2—figure supplement 1) using a multiple alignment of the ZNF domain (Supplementary file 2). Our phylogenomic analyses reveal that Odj-Nnk cluster evolution was highly dynamic during the evolution of the Drosophila genus (summarized in Figure 2C). Although Oddjob orthologs are present throughout 40 million years of Drosophila evolution, no other member of the D. melanogaster Odj-Nnk cluster is universally present in Drosophila species. In addition to Odj, CG17801 and CG17806 also date back prior to the origin of Drosophila but unlike Odj, CG17801 and CG17806 have since been lost in some species (Figure 2C). While CG17801 has been lost in the obscura group,CG17806 underwent multiple independent duplication and loss events. CG17803 arose in the ancestor of D. melanogaster and D. ananassae and underwent two independent losses. Finally, Nnk appears to have arisen in the ancestor of D. melanogaster and D. pseudoobscura (~30 mya, Figure 1), and later experienced multiple independent duplications and losses (Figure 2C). We note that our estimates for the age of Nnk are higher than those reported previously (Chen et al., 2010), likely because the prior estimate was based on fewer sequenced species. Based on these analyses, we conclude that, despite its essential function in D. melanogaster, Nnk is not universally conserved in Drosophila species.
 
-## Nicknack is an essential ZAD-ZNF gene in D. melanogaster
+### Nicknack is an essential ZAD-ZNF gene in D. melanogaster
 
 Nnk has a dramatic evolutionary history: young evolutionary age, differential retention, positive selection. Yet, it serves an essential function in D. melanogaster based on our and other previous analyses. However, this claim of essentiality has been challenged by two previous findings. First, the screen that originally identified Nnk as an essential gene used the KK RNA-interference (RNAi) collection from the Vienna Drosophila Stock Center (VDRC) (Figure 3A; Chen et al., 2010). Many lines in this ‘KK’ collection were later found to harbor a second-site mutation that caused lethality as a result of ectopic tiptop expression when crossed to GAL4-driver lines (Green et al., 2014; Vissers et al., 2016). As a result of its dependence on the KK lines, the claim of Nnk essentiality remained ambiguous. A second Nnk mutant allele, created by CRISPR-Cas9-mediated mutagenesis (hereafter referred to as CRISPR-null), had a four base pair deletion within the coding sequence of the gene that created a frameshift and a premature stop codon within the linker domain of Nnk (Kondo et al., 2017; Figure 3A). Although this deletion was homozygous lethal, it was unexpectedly viable when paired with a deficiency covering this ZAD-ZNF cluster (Kondo et al., 2017), again challenging the result that Nnk is an essential gene.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig3-v1.jpg)
 
-**Figure 3.:** Nicknack RNAi and mutant alleles.(A) Schematic of Nnk gene. The Nnk gene contains four coding exons and encodes a full-length protein containing ZAD, linker, and ZNF domains. The CRISPR-null is a 4 bp deletion within exon 2 (Kondo et al., 2017): this deletion creates a frameshift and a premature stop codon within the linker region. The VDRC RNAi KK line creates double-stranded RNA corresponding to a region of exon 2 (schematized). (B) Schematic of Nnk-rescue transgene design, which contains the genomic region 1 kb upstream of the Nnk start codon and 1 kb downstream of the stop codon. The region targeted by the RNAi construct (highlighted) was recoded by synonymous mutations in the Nnk-rescue transgene to make it resistant to RNAi. Upon ubiquitous knockdown of Nnk using Act5c-GAL4 driven RNAi, adult viability is very low, but is significantly restored by the RNAi-resistant Nnk-rescue transgene. Horizontal bars represent the mean and error bars represent one standard deviation of replicates of single-pair matings for each cross. Vertical axis represents the observed/expected number of progeny from each cross. Asterisks indicate p<0.01, two-tailed Student’s t-test. (C) piggyBac-null is a piggyBac insertion in the 5’ UTR of Nnk that contains a fluorescent reporter (DsRed) driven by an eye specific promoter (3xP3) and flanked by stop codons in all three reading frames which terminate translation through Nnk (Schuldiner et al., 2008). Excision of this piggyBac insertion restores viability. (D) Allelic combinations of CRISPR/piggyBac-nulls/genetic deficiencies were tested, in some cases in the presence of the Nnk-rescue transgene, to investigate and confirm Nnk essentiality (Figure 3—source data 1).Figure 3—source data 1.Nnk disruption alleles can be all rescued significantly with a Nnk-mel rescue transgene.Total number of flies counted across all replicates are shown. Numbers in parentheses refer to expected numbers in case of full rescue. The Nnk-mel rescue allele can rescue otherwise inviable piggyBac-null/piggyBac-null, CRISPR-null/CRISPR-null, and Nnk progeny.RNAi/Act5C-Gal4
+**Figure 3.:** (A) Schematic of Nnk gene. The Nnk gene contains four coding exons and encodes a full-length protein containing ZAD, linker, and ZNF domains. The CRISPR-null is a 4 bp deletion within exon 2 (Kondo et al., 2017): this deletion creates a frameshift and a premature stop codon within the linker region. The VDRC RNAi KK line creates double-stranded RNA corresponding to a region of exon 2 (schematized). (B) Schematic of Nnk-rescue transgene design, which contains the genomic region 1 kb upstream of the Nnk start codon and 1 kb downstream of the stop codon. The region targeted by the RNAi construct (highlighted) was recoded by synonymous mutations in the Nnk-rescue transgene to make it resistant to RNAi. Upon ubiquitous knockdown of Nnk using Act5c-GAL4 driven RNAi, adult viability is very low, but is significantly restored by the RNAi-resistant Nnk-rescue transgene. Horizontal bars represent the mean and error bars represent one standard deviation of replicates of single-pair matings for each cross. Vertical axis represents the observed/expected number of progeny from each cross. Asterisks indicate p<0.01, two-tailed Student’s t-test. (C) piggyBac-null is a piggyBac insertion in the 5’ UTR of Nnk that contains a fluorescent reporter (DsRed) driven by an eye specific promoter (3xP3) and flanked by stop codons in all three reading frames which terminate translation through Nnk (Schuldiner et al., 2008). Excision of this piggyBac insertion restores viability. (D) Allelic combinations of CRISPR/piggyBac-nulls/genetic deficiencies were tested, in some cases in the presence of the Nnk-rescue transgene, to investigate and confirm Nnk essentiality (Figure 3—source data 1).
 
 Given these ambiguous results and the importance of Nnk for our claims of ZAD-ZNF essentiality despite evolutionary innovation, we re-investigated whether Nnk is essential for viability in D. melanogaster. We found several lines of evidence to support the conclusion that it is indeed essential (Figure 3B–D). First, we began by validating the RNAi line used in the original study (Chen et al., 2010), which first identified Nnk as a young, essential gene. We found that the Nnk VDRC RNAi line does not have an insertion upstream of the tiptop gene, which is associated with lethality in other KK lines (Green et al., 2014; Vissers et al., 2016). Second, we were able to rescue this lethality via complementation with an intact Nnk-mel rescue transgene. This Nnk-mel rescue transgene was flanked by regulatory sequences from the endogenous locus (1 kb segments upstream and downstream of endogenous Nnk) and recoded via mutations in synonymous sites to make it resistant to RNAi knockdown (Figure 3B; Supplementary file 4). Endogenous levels of Nnk expression are too low for us to validate expression of the transgene. However, our ability to rescue Nnk knockdown-mediated inviability strongly imply that the recoded transgene is appropriately expressed (Figure 3B).
 
 To rule out any indirect effects arising from RNAi knockdown, we also examined two previously generated mutant alleles of Nnk. The first is a piggyBac insertion two bp upstream of the start codon in the 5’ UTR of Nnk (Schuldiner et al., 2008; Figure 3C). This piggyBac insertion, which is marked by a DsRed reporter driven by an eye-specific promoter, is flanked by stop codons in all three reading frames, which prevents translation downstream of the insertion. We refer to this insertion as a piggyBac-null allele of Nnk. We found that this insertion allele is homozygous lethal but viability can be fully rescued upon mobilization of the piggyBac element, which repairs the intact 5’ UTR in a ‘scarless’ fashion to restore Nnk function (schematized in Figure 3C). Furthermore, piggyBac-null flies can also be rescued by the Nnk-rescue transgene (Figure 3D; Figure 3—source data 1). Second, we re-examined the previously-generated CRISPR-null Nnk allele (Kondo et al., 2017; Figure 3A). Contrary to previous results, we found that this allele is lethal when paired with a Nnk-spanning deficiency (BL9207, Figure 3D) and also fails to complement the piggyBac-null allele (Figure 3D; Figure 3—source data 1; Supplementary file 4). Moreover, the Nnk-rescue transgene can restore the viability of the CRISPR-null Nnk allele (Figure 3D; Figure 3—source data 1). Based on all these results, we conclude that Nnk is unambiguously an essential gene in D. melanogaster.
 
-## Nicknack is required for larval development in D. melanogaster
+### Nicknack is required for larval development in D. melanogaster
 
 Next, we investigated the developmental stage at which Nnk-null progeny die. For this, we crossed Nnk-null heterozygotes to each other (Figure 4A). These flies contain the piggyBac insertion upstream of the Nnk gene (Figure 3C) on one chromosome, along with a balancer chromosome (TM3G) marked with GFP and carrying a wildtype Nnk allele. Progeny homozygous for the balancer chromosome TM3G die as early embryos. Consequently, all larvae lacking GFP expression are Nnk-null homozygotes whereas those that are heterozygous express the GFP encoded on the balancer. We conducted egg-lay experiments from crosses between heterozygote Nnk-null flies and tracked the developmental progression of GFP-negative, Nnk-null progeny relative to their GFP-expressing heterozygote siblings. We found that Nnk-null progeny progress through embryogenesis at the same rate as their heterozygote siblings and are morphologically indistinguishable from heterozygotes until the L1 larval stage. The Nnk-null larvae are able to move toward and consume yeast paste much like their heterozygote siblings. However, when heterozygote siblings molt into the L2 stage 48 hr after egg laying (AEL), Nnk-null larvae do not molt (Figure 4B). Instead, 48 hr AEL, Nnk-null larvae progressively become unable to move or eat, eventually dying by 60 hr AEL.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig4-v1.jpg)
 
-**Figure 4.:** Nicknack-null larvae arrest in early larval development.(A) Schematic of cross to generate homozygous piggyBac-null larvae and age-matched control (heterozygote) siblings. Tm3G homozygous progeny are not shown, as they die as early embryos. (B) 24 hr after egg laying (AEL), Nnk-null larvae are morphologically indistinguishable from control larvae. 48 hr AEL, Nnk-null larvae are significantly smaller than the age-matched controls and have failed to undergo the first larval molt. (C) Adding sterols (cholesterol, 7DH or 20E) to the food of control (w1118) larvae did not alter their ability to develop to L3 larvae within 60 hr AEL. Npc1a-null larvae (Npc1a57/Npc1a57) used as a control do not develop on food supplemented with yeast alone but can be partially rescued (>40% molting into L3 larvae) with the addition of cholesterol, 7DH, or 20E. In contrast, Nnk-null mutants fail to progress through development even with the addition of dietary sterols. Vertical axis shows the percentage of L1 larvae that progressed to L3 larvae. Graphs show mean of three replicates with error bars showing standard deviation; n > 100 for all genotypes and treatments. (D, E) Scatter plots showing RNA-seq results for all expressed genes at 24 hr (D) and 48 hr (E) AEL. X-axis indicates the expression (normalized abundance) of genes in control larvae whereas the Y-axis shows the expression of genes in Nnk-null larvae at the same time point. Magenta dots represent genes significantly over- and under-expressed in Nnk-null larvae (green dot represents expression of Nnk itself). (F) Overall correlations between transcriptome profiles of three replicates each for control and Nnk-null larvae reveals that Nnk-null transcriptomes 48 hr AEL are more similar to transcriptomes of control and Nnk-null larvae 24 hr AEL than they are to age-matched controls, reflecting their developmental delay. Sample-to-sample Spearman R2 distance matrix with hierarchical clustering using raw read counts of all 11,428 expressed genes.
+**Figure 4.:** (A) Schematic of cross to generate homozygous piggyBac-null larvae and age-matched control (heterozygote) siblings. Tm3G homozygous progeny are not shown, as they die as early embryos. (B) 24 hr after egg laying (AEL), Nnk-null larvae are morphologically indistinguishable from control larvae. 48 hr AEL, Nnk-null larvae are significantly smaller than the age-matched controls and have failed to undergo the first larval molt. (C) Adding sterols (cholesterol, 7DH or 20E) to the food of control (w1118) larvae did not alter their ability to develop to L3 larvae within 60 hr AEL. Npc1a-null larvae (Npc1a57/Npc1a57) used as a control do not develop on food supplemented with yeast alone but can be partially rescued (>40% molting into L3 larvae) with the addition of cholesterol, 7DH, or 20E. In contrast, Nnk-null mutants fail to progress through development even with the addition of dietary sterols. Vertical axis shows the percentage of L1 larvae that progressed to L3 larvae. Graphs show mean of three replicates with error bars showing standard deviation; n > 100 for all genotypes and treatments. (D, E) Scatter plots showing RNA-seq results for all expressed genes at 24 hr (D) and 48 hr (E) AEL. X-axis indicates the expression (normalized abundance) of genes in control larvae whereas the Y-axis shows the expression of genes in Nnk-null larvae at the same time point. Magenta dots represent genes significantly over- and under-expressed in Nnk-null larvae (green dot represents expression of Nnk itself). (F) Overall correlations between transcriptome profiles of three replicates each for control and Nnk-null larvae reveals that Nnk-null transcriptomes 48 hr AEL are more similar to transcriptomes of control and Nnk-null larvae 24 hr AEL than they are to age-matched controls, reflecting their developmental delay. Sample-to-sample Spearman R2 distance matrix with hierarchical clustering using raw read counts of all 11,428 expressed genes.
 
 The Nnk-null larval arrest phenotype is reminiscent of previous findings with the ZAD-ZNF genes Séance, Ouija Board and Molting Defective, which encode proteins necessary for expression of the Spookier and Neverland genes required for ecdysone biosynthesis (Uryu et al., 2018; Neubueser et al., 2005; Komura-Kawa et al., 2015). Defects in any of the Séance, Ouija Board and Molting Defective ZAD-ZNF genes leads to arrest of larval development and death (Uryu et al., 2018; Neubueser et al., 2005; Komura-Kawa et al., 2015). However, this lethality can be rescued by supplementing the diet with ecdysone or by overexpression of ecdysone biosynthetic enzymes, bypassing the requirement for these three ZAD-ZNF genes. We therefore, tested whether dietary supplementation with an ecdysone precursor, cholesterol (7DH, or 7-Dehydrocholesterol) or ecdysone (20E, or 20-Hydroxyecdysone) could bypass or significantly delay the death of Nnk-null larvae (Figure 4C). We found that it could not. In contrast, the same dietary supplementation is able to significantly restore the viability of Npc1a larvae, which lack an essential transporter of cholesterol (Figure 4C). Based on these results, we conclude that Nnk plays an essential role in larval progression in D. melanogaster that is distinct from known steps of the ecdysone biosynthesis pathway.
 
-## Transcriptional consequences of Nicknack knockout in D. melanogaster larvae
+### Transcriptional consequences of Nicknack knockout in D. melanogaster larvae
 
 To further investigate our developmental findings, we also performed RNA-seq analyses, comparing the transcriptomes of Nnk-null larvae to their age-matched heterozygote siblings. We compared the two genotypes at each of two important time-points. First, we compared transcriptomes 24 hr AEL, when the two genotypes are morphologically indistinguishable L1 larvae. At this timepoint, we find that 249 genes (2.4% of all expressed genes) are differentially expressed between Nnk-null larvae and control larvae, with 116 genes at least two-fold upregulated and 133 genes two-fold downregulated in Nnk-null larvae (Figure 4D). Among genes downregulated in Nnk-null L1 larvae, we find a significant over-representation of functional categories related to proteolysis and sterol transport (both important functions during larval development), as well as dopamine monooxygenase activity (Supplementary file 3). In contrast, we find that genes related to lysosome, cytochrome P450s (also important for larval molts), and eye-related functions are upregulated upon Nnk loss.
 
 Second, we performed comparisons 48 hr AEL when the Nnk-null larvae are significantly smaller and appear developmentally arrested compared to their age-matched controls. At this timepoint, we find that 3027 (28.1% of all expressed genes) genes are differentially expressed, with 1301 genes at least two-fold upregulated and 1726 genes two-fold downregulated in the Nnk-null mutants compared to the age-matched controls (Figure 4E). Thus, there are significantly more genes affected by Nnk loss by 48 hr AEL. Intriguingly, clustering samples by the transcriptional profile of all genes shows that Nnk-null larvae at 48 hr AEL are transcriptionally more similar to control larvae at 24 hr AEL of either genotype than they are to age-matched control larvae (Figure 4F). The transcriptional status of Nnk-null larvae therefore mirrors the phenotypes we observe, displaying a severe developmentally arrested phenotype and transcriptional profile at 48 hr AEL (Figure 4B).
 
-## Nicknack encodes a heterochromatin-localizing protein in D. melanogaster
+### Nicknack encodes a heterochromatin-localizing protein in D. melanogaster
 
 Most of the Odj-Nnk cluster of ZAD-ZNF genes are functionally uncharacterized. Since Odj encodes a protein that is highly enriched in pericentric heterochromatin (Swenson et al., 2016), we speculated that its close paralog, Nnk, might also encode a protein with heterochromatic localization in D. melanogaster cells. To test this possibility, we used transient transfections to introduce epitope-tagged Odj and Nnk genes into D. melanogaster Schneider 2 (S2) cells and induced their expression with a heat-shock promoter (Figure 5A). Upon induction, we confirm that Oddjob has a broad localization pattern within heterochromatin (marked by histone H3 lysine nine methylation, H3K9me3 and outlined with a dashed line, Figure 5A). We found that the Nnk-encoded protein also localizes to heterochromatin, but its localization is restricted to discrete foci, unlike Oddjob (Figure 5A). Since heat-shock induction can alter chromatin properties in cells, we also employed a complementary transient transfection strategy in which we expressed mCherry epitope-tagged Odj and Nnk genes under the control of a constitutive pCopia promoter in S2 cells. These analyses also revealed a broad heterochromatic localization of Odj contrasting with discrete foci within heterochromatin for Nnk protein (Figure 5B). These foci do not overlap with centromeres (identified by the centromeric histone Cid) or dual-strand piRNA clusters (marked by the piRNA-binding HP1 protein Rhino) (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig5-v1.jpg)
+
+**Figure 5.:** (A) Odj and Nnk proteins localize within the heterochromatic chromocenter, marked by H3K9me3 staining (magenta, outlined with dashed line) of D. melanogaster S2 cells. Whereas Oddjob localizes broadly to heterochromatin, Nicknack localizes to discrete foci within heterochromatin. All images are of representative nuclei from S2 cells transfected with a Venus-tagged ZAD-ZNF (yellow) under the control of an inducible heatshock-promoter. DAPI marks DNA in each nucleus. Scale bar = 2 μm. (B) Constitutive pCopia-driven expression confirms the broad Odj and discrete Nnk localization within heterochromatin of D. melanogaster S2 cells (dashed line outlines nucleus). Scale bar = 1 μm. (C) ChIP-seq analyses confirms that Odj binding is highly enriched throughout heterochromatin, whereas Nnk localizes only to some regions within heterochromatin, and to the 4th chromosome; note that S2 cells do not have an intact Y chromosome (Lee et al., 2014). The y-axis represents normalized ChIP-versus-input log2 ratios, using IGV to visualize and smooth data. Numbers on the y-axis give the range of ratios displayed for each factor.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Venus-tagged Nnk or Odj proteins were induced via heat shock, and nuclei were imaged with either (A) Cid (to mark centromeres) or (B) Rhino (to mark dual-strand piRNA clusters). As shown in Figure 5, Odj has a broad heterochromatin localization whereas Nnk localizes to discrete foci, which do not overlap with centromeres or dual-strand piRNA clusters. Inset refers to specific foci to highlight the absence of significant overlap. Scale bars = 2 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Alignment of the two PxVxL motifs in Oddjob across Drosophila species show that the first PxVxL motif in linker region is highly conserved while the second PxVxL motif, within the ZNF domain, is not. (B) Mutation of the PxVxL motif within the linker region changes Odj’s (magenta) broad localization to discrete foci within heterochromatin like Nnk (yellow). Mutation of the PxVxL motif within the ZNF has no significant change in localization of Odj within heterochromatin (marked by HP1a, cyan). Scale bars = 1 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Higher resolution view of a selected 168 kb region in the heterochromatic region of chromosome 2L, using IGV for visualization. We show log2 (ChIP/input) ratios for the first replicate each for Nicknack and Oddjob, as well as for two negative control samples (Rsf1mut and Acf1mut) that highlight ‘phantom peak’ regions where false positive signals often occur (Jain et al., 2015). (B) ChIP-seq signals (log2 ChIP/input) in regions of 10 kb surrounding all TSSs in the genome, visualized using deepTools. We split TSSs into groups according to whether they are in active chromatin in S2 cells, according to modENCODE’s ‘TSS-proximal’ state, and further split the active TSSs according to whether they are in cytogenetic heterochromatin or euchromatin. In the heatmap region of the plot (variably shaded boxes), very narrow rows represent 10 kb regions surrounding each TSS, and the color scale shows the ChIP/input ratio, with columns for each ChIP/input comparison. Graphs above heatmaps show mean signal profiles for each region type, with inactive TSSs in yellow, euchromatic active TSSs in light blue, and heterochromatic TSSs in dark blue. For both Nicknack and Oddjob, the first replicate showed the strongest signal and the third replicate showed the weakest signal, likely due to use of different batches of antibody. While inactive TSSs show very little signal in any sample, almost all active TSSs have ChIP signal in the ‘phantom’ samples as well as the Oddjob and Nicknack samples, indicating that this signal could represent a ChIP-seq artifact (Jain et al., 2015). However, for both Nicknack and Oddjob (but not the ‘phantom’ samples), ChIP signal is stronger and more broadly distributed at active TSSs within heterochromatin than at active TSSs within euchromatin, suggesting that some true signal remains.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Scatter plots showing RNA-seq results for all expressed genes at 24 hr AEL. X-axis indicates the expression (normalized abundance) of genes in control larvae whereas the Y-axis shows the expression of genes in Nnk-null larvae at the same time point. Gray dots represent euchromatic genes, whereas black dots represent heterochromatin-embedded genes, with magenta dots represent heterochromatic genes that are significantly over- and under-expressed in Nnk-null larvae. (B) Some repeat elements are misregulated in Nnk-null larvae. We used an approach similar to that of Day et al., 2010 to obtain aggregate counts of reads mapping to all instances of each repeat type. Most repeat types are expressed at similar levels in control larvae 24 hr AEL and Nnk-null larvae 24 hr AEL, but a few (shown in magenta) are misregulated. Six repeat types are de-repressed in Nnk-null larvae, and two types are expressed at lower levels (absolute log2-fold-change>=1, adjusted p-value<=0.05). (C) Detailed view of misregulated repeats. Bars show triplicate means of normalized expression levels in reads per million sequenced (RPM), and dots show individual triplicate values.
 
 Odj has a broad heterochromatic localization in D. melanogaster cells, which could result from direct interaction with HP1a (Swenson et al., 2016). Indeed, Odj has two potential PxVxL motifs, which are putative interaction sites for HP1a (Smothers and Henikoff, 2000), in the linker and ZNF domains (Figure 5—figure supplement 2A). Investigating Odj orthologs in other Drosophila species revealed that the PxVxL motif in the linker domain is well-conserved, but the one in the ZNF domain is not. We found that mutation of the putative HP1a-interaction site in the linker domain (V164A) converted Odj localization from a broad to a discrete pattern that at least partially overlapped with Nnk (Figure 5—figure supplement 2B). In contrast, mutation of the second putative PxVxL site (V321A) did not significantly affect Odj localization. Our results suggest that the putative PxVxL motif in the Odj linker region is a major contributor to Oddjob’s broad localization to heterochromatin potentially by mediating a direct interaction with HP1a. In the absence of this interaction, Oddjob and Nnk (which lacks a canonical PxVxL motif) localize similarly to discrete foci within heterochromatin (Figure 5B). Our findings suggest that altered protein–protein interactions or DNA-binding specificity via the linker domain may provide a means for functional diversification between closely-related ZAD-ZNF paralogs.
 
 To gain deeper insight into the heterochromatic localization of Nnk and Odj, we performed chromatin immunoprecipitation and sequencing (ChIP-seq) using transient transfection of S2 cells with the epitope-tagged pCopia constructs for Odj and Nnk. Consistent with its cytological localization (Figure 5A and B), we found that Odj was highly enriched throughout the large chromosome regions previously defined as pericentric heterochromatin (Hoskins et al., 2015) whereas Nnk-bound regions are more narrowly distributed within heterochromatin (Figure 5C). Finer-scale analyses suggested that Nnk and Odj signals are enriched close to transcription start sites classified by modENCODE as residing in TSS-proximal chromatin in S2 cells, both in heterochromatin and euchromatin (Figure 5—figure supplement 3; Ho et al., 2014). However, many of these regions overlap with false positive ‘phantom peaks’ previously identified in ChIP-seq experiments in S2 cells (Jain et al., 2015; Figure 5—figure supplement 3). While some heterochromatic TSSs could still represent true binding, we are more confident that the broader occupancy we observe outside TSSs represents Odj and Nnk’s true localization. Moreover, we did not observe a significant effect of Nnk loss on heterochromatin-embedded gene expression at the larval L1 stage via RNA-seq analyses (Figure 4D, Figure 5—figure supplement 4). Instead, we found that some heterochromatin-embedded repetitive elements are derepressed upon Nnk loss (Figure 5—figure supplement 4). Based on these results, we hypothesize that rather than acting as a transcription regulator for specific heterochromatin-embedded genes like its paralogs Séance, Ouija Board and Molting Defective (Uryu et al., 2018), Nnk may instead repress expression from heterochromatic repeats.
 
-## D. simulans Nnk can rescue female, but not male viability of Nnk-null D. melanogaster
+### D. simulans Nnk can rescue female, but not male viability of Nnk-null D. melanogaster
 
 Our analyses revealed Nnk is an evolutionarily young, differentially-retained gene that is essential for larval development in D. melanogaster. Nnk has also evolved under dramatic positive selection in just the 2.5 million-year divergence between D. melanogaster and D. simulans, having undergone 52 fixed non-synonymous differences in the 439 aa protein-coding region (Table 2). Given the intriguing correlation between essentiality and positive selection that we had observed in the ZAD-ZNF genes, we investigated whether positive selection of Nnk has affected its function.
 
@@ -121,7 +1236,7 @@ We first assayed the subcellular localization of epitope-tagged Nnk orthologs fr
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63368/elife-63368-fig6-v1.jpg)
 
-**Figure 6.:** D. simulans Nicknack localizes to D. melanogaster heterochromatin but can only partially rescue essential function.(A) Venus-tagged D. melanogaster Nnk (Nnk-mel) or Venus-tagged D. simulans Nnk (Nnk-sim) (yellow) localize to foci within the heterochromatic chromocenter marked by H3K9me3 (magenta, dashed line) in D. melanogaster S2 cells. Each image is of a representative S2 cell nucleus with DAPI marking DNA. Scale bar = 2 μm. (B) Transient co-transfection of Venus-tagged Nnk-sim (magenta) and FLAG-tagged Nnk-mel (yellow) shows that they overlap in their localization to discrete heterochromatic foci in D. melanogaster S2 cells. Scale bar = 2 μm. (C) Schematic of rescue Nnk-sim transgene, which contains the genomic region 1 kb upstream of the Nnk start codon and 1 kb downstream of the stop codon, but with the D. simulans coding region (dark gray) from start to stop codon, including introns. The region of Nnk-mel targeted by the RNAi hairpin is highlighted by the red line; because of its divergence and codon-optimization, the Nnk-sim rescue transgene is resistant to RNAi. (D) Ability of Nnk-mel and Nnk-sim transgenes to rescue ubiquitous knockdown of Nnk using Act5C-GAL4 drivers. The vertical axis represents the observed/expected progeny in each cross. Without Nnk transgene, there are significantly fewer Nnk knockdown male and female progeny recovered than expected. Nnk-mel transgene is able to rescue Nnk-RNAi depletion in both males and females. Nnk-sim transgene is able to rescue Nnk-RNAi knockdown females significantly better than knockdown males. Filled circles represent number of female adult progeny and open triangles represent number of male adult progeny recovered from single-pair matings. Horizontal bars show the mean and standard deviation.
+**Figure 6.:** (A) Venus-tagged D. melanogaster Nnk (Nnk-mel) or Venus-tagged D. simulans Nnk (Nnk-sim) (yellow) localize to foci within the heterochromatic chromocenter marked by H3K9me3 (magenta, dashed line) in D. melanogaster S2 cells. Each image is of a representative S2 cell nucleus with DAPI marking DNA. Scale bar = 2 μm. (B) Transient co-transfection of Venus-tagged Nnk-sim (magenta) and FLAG-tagged Nnk-mel (yellow) shows that they overlap in their localization to discrete heterochromatic foci in D. melanogaster S2 cells. Scale bar = 2 μm. (C) Schematic of rescue Nnk-sim transgene, which contains the genomic region 1 kb upstream of the Nnk start codon and 1 kb downstream of the stop codon, but with the D. simulans coding region (dark gray) from start to stop codon, including introns. The region of Nnk-mel targeted by the RNAi hairpin is highlighted by the red line; because of its divergence and codon-optimization, the Nnk-sim rescue transgene is resistant to RNAi. (D) Ability of Nnk-mel and Nnk-sim transgenes to rescue ubiquitous knockdown of Nnk using Act5C-GAL4 drivers. The vertical axis represents the observed/expected progeny in each cross. Without Nnk transgene, there are significantly fewer Nnk knockdown male and female progeny recovered than expected. Nnk-mel transgene is able to rescue Nnk-RNAi depletion in both males and females. Nnk-sim transgene is able to rescue Nnk-RNAi knockdown females significantly better than knockdown males. Filled circles represent number of female adult progeny and open triangles represent number of male adult progeny recovered from single-pair matings. Horizontal bars show the mean and standard deviation.
 
 Next, we examined the consequences of Nnk positive selection on viability in D. melanogaster. We created a D. simulans Nnk ‘rescue’ transgene (Figure 6C). This rescue transgene is similar to the D. melanogaster Nnk-rescue construct (Figure 3B), except that it contains the D. simulans Nnk coding sequence (codon-optimized to D. melanogaster) with 1 kb Nnk-flanking sequences from D. melanogaster (Supplementary file 4). We introduced this D. simulans Nnk-rescue transgene into the same attP site on D. melanogaster X chromosome as the D. melanogaster Nnk-rescue transgene via PhiC31-mediated transgenesis (Figure 6D). The attP-insertion rescue design allowed us to put the transgene in the same genetic location in the Nnk-mel and Nnk-sim rescue crosses, normalizing for variability in expression of transgenes. This allowed a near-isogenic comparison of the D. simulans and D. melanogaster Nnk transgenes’ ability to rescue inviability of Nnk-null D. melanogaster flies, despite their high level of sequence divergence. Unfortunately, low levels of endogenous Nnk expression did not allow us to assess whether the expression levels of both Nnk transgenes were equivalent.
 
@@ -143,45 +1258,45 @@ Based on our findings, we hypothesize that constant adaptation in ZAD-ZNF genes 
 
 ## Materials and methods
 
-## Phylogenomic analysis of ZAD-ZNF genes in Drosophila
+### Phylogenomic analysis of ZAD-ZNF genes in Drosophila
 
 We used the Flybase database (http://flybase.org) to identify all ZAD-containing proteins (Pfam motif PF07776) in 12 sequenced and annotated Drosophila species (Drosophila 12 Genomes Consortium, 2007). Using NCBI’s Conserved Domains search, we identified other domains found in the ZAD-containing proteins (Marchler-Bauer et al., 2017). To estimate the evolutionary age of these ZAD-containing genes, we used OrthoDB to identify orthologs of the 91 ZAD-containing proteins across Drosophila (Zdobnov et al., 2017). We used the divergence between the two most distantly-related species that still encoded and ortholog to calculate the minimum age of each gene using timetree.org (Kumar et al., 2017). If orthologs were identified in basally-branching but not later-branching species by OrthoDB, we defined this as a loss of the ZAD-ZNF gene in the lineage. The repertoire of different ZAD-ZNF genes in different Drosophila species inferred from our analysis is summarized in Supplementary file 1.
 
-## Defining gene essentiality
+### Defining gene essentiality
 
 We used FlyBase gene summaries (FlyBase.org) and published studies when available to define gene essentiality. Our criteria for essentiality were broad: if there was a lethal allele reported in any assay, we counted the gene as essential for viability in D. melanogaster. Supplementary file 1 summarizes the phenotypic data (and its source) that we used to classify the ZAD-ZNF genes into either essential or non-essential categories.
 
-## Analyses of positive selection
+### Analyses of positive selection
 
 For the McDonald-Kreitman test, we extracted the gene of interest from D. melanogaster population genetic datasets available through Popfly (www.popfly.com) and removed low frequency (<0.05) variants from the dataset to minimize the effects of false positives and low-frequency variants that may not have been subject to selection (Hervas et al., 2017; Fay et al., 2002). We used a manually trimmed alignment of the D. melanogaster filtered dataset and the reference D. simulans sequence for the McDonald-Kreitman test (http://mkt.uab.es/mkt/; McDonald and Kreitman, 1991; Egea et al., 2008). We also carried out a polarized McDonald-Kreitman test in which we only analyzed non-synonymous and synonymous sites that were fixed along the lineage leading to D. melanogaster, after its divergence from D. simulans, inferred using D. yakuba as an outgroup species, except for the Trem gene where we used D. erecta outgroup instead because the D. yakuba ortholog aligned poorly to D. melanogaster and D. simulans.
 
-## Viability studies
+### Viability studies
 
 We used an Act-GAL4/CyO-GFP driver for ubiquitous knockdown. The RNAi lines used to specifically target Oddjob cluster genes are the VDRC KK or GD lines: Oddjob (27971), CG17803 (38869), CG17801 (29501), CG17806 (40106) and Nicknack (102311). RNAi controls used for the experiment were Cid (43856) and HP1B (26097) for the ubiquitous knockdown. Ubiquitous knockdown of Cid produced no viable progeny. We crossed five virgin females carrying Act-GAL4/CyO-GFP to 3 males of each RNAi line. We allowed the females to lay eggs for 3 days and flipped the flies into fresh vials three times. Each cross was performed in triplicate. Progeny were counted 10–15 days after each cross was set up. A minimum of 20 CyO-GFP males and 20 CyO-GFP females (i.e., control genotype) were required for us to quantify the crosses. Each cross is represented by a point on the graph and shown as a ratio of observed (number of knockdown or rescue progeny counted in each cross) over expected (the number of expected knockdown or rescue progeny from Mendelian segregation inferred by inheritance of the balancer chromosome). If the knockdown has no effect on viability or the rescue is 100% effective, the observed/expected = 1. If the knockdown of the essential gene is 100% penetrant or the rescue is ineffective, the observed/expected = 0. Plotting and statistical analyses were conducted using Graphpad Prism 8 software.
 
-## Defining orthologs
+### Defining orthologs
 
 Since Oddjob cluster genes experienced numerous independent segmental duplications, it was not possible to determine orthologs by synteny alone. Instead, we used TBLASTN (Gertz et al., 2006) to identify candidate orthologs of Oddjob cluster genes, using the genes in D. melanogaster as queries. We used a reciprocal blast search strategy to identify potential orthologs and further investigated these candidates by making a maximum likelihood phylogenetic tree (LG substitution model in PhyML with 100 bootstrap replicates) of a manually trimmed protein alignment (constructed using Clustal Omega program [Thompson et al., 2002] in the Geneious package, www.geneious.com) (Supplementary file 2, Figure 2—figure supplement 1). We assigned orthologs based on genes that formed a monophyletic clade with the each of the D. melanogaster Oddjob cluster genes. We mapped these Oddjob cluster orthologs back to each genome assembly to determine the composition of the Oddjob locus across Drosophila species. In cases where there were other ZAD-ZNFs present, we blasted them against the D. melanogaster genome to examine if there were any orthologs present in D. melanogaster. If the top hit was not a member of the Oddjob locus, we did not include it in the tree. In the case where there are partial ZAD-ZNFs (containing just the ZAD domain or the zinc-finger domains), we performed a blast search against the D. melanogaster genome. If the top hit was a member of the Oddjob cluster, we assigned orthology by making a phylogenetic tree with all other Oddjob cluster orthologs. Our phylogenomic inferences are dependent on the accuracy and state of completion of genomes from other Drosophila species, which can vary.
 
-## Nnk-rescue transgene design, construction, and crosses
+### Nnk-rescue transgene design, construction, and crosses
 
 We designed a D. melanogaster recoded transgene comprising a 3.3 kb fragment containing the genomic region of Nicknack plus 1 kb upstream and downstream of the start and stop codons, based on the D. melanogaster reference assembly. We recoded the sequence targeted by the VDRC RNAi KK line (103211) by making synonymous changes at each codon. The synonymous changes made the gene resistant to RNAi knockdown but did not alter the amino-acid sequence of Nnk. The recoded region spans 270 base pairs that corresponds to the region targeted by the VDRC RNAi KK line (103211). The resulting sequence was synthesized by GENEWIZ Co. Ltd. (Suzhou, China) and cloned into a plasmid we generated that contains 3xP3-DsRed attP, which produces fluorescent red eyes in the adult to mark the presence of the transgene. To generate the D. simulans transgenic allele, we codon-optimized the D. simulans Nnk coding sequence for the D. melanogaster genome using IDT’s codon-optimization tool. The resulting sequence was synthesized by GENEWIZ Co. Ltd. (Suzhou, China) and swapped for the D. melanogaster Nnk coding sequence in the plasmid described above, using the NEBuilder kit (New England Biolabs). We submitted transgenic constructs to The BestGene Inc (Chino Hills, CA) for injection into the X-chromosome attP18 line (BL 32107) using PhiC31 site-specific integration (Groth et al., 2004).
 
 For the transgene rescue cross, we crossed five virgin female flies bearing one copy of Nnk-rescue transgene (on the X chromosome) and the RNAi allele (on the second chromosome) to 3 Act5C-GAL4/CyO-GFP males. We allowed the females to lay eggs for 3 days and flipped the cross three times. We set up each cross in triplicate and progeny were counted after 10–15 days. The description of the observed/expected calculation can be found in ‘viability studies’ section. Each cross had at least three replicates. All flies were raised at 25°C.
 
-## Characterization of Nnk-null mutants
+### Characterization of Nnk-null mutants
 
 We placed 50–75 flies heterozygous for the Nnk-null allele (Nnk pBac null/TM3G) or for the Nnk CRISPR allele (Nnk CRISPR/TM3G) into a small embryo collection cage containing a grape-juice plate with a thin strip of yeast paste and collected embryos for 3 hr at 25°C. We transferred the larvae to fresh grape-juice plates containing yeast paste daily and scored developmental stage by mouth hook morphology. We used fluorescence to distinguish between heterozygotes (GFP-positive larvae) and homozygotes (GFP-negative larvae). For the trans-heterozygote evaluation, we crossed 30–40 virgin female Nnk CRISPR/TM3G to 10 Nnk pBac null/TM3G males. Crosses were done in triplicate and at least 100 progeny were counted per cross.
 
-## Larval collection for RNA-sequencing
+### Larval collection for RNA-sequencing
 
 We placed 50–75 flies heterozygous for the Nnk-null allele (Nnk pBac/TM3G) into a small embryo collection cage containing a grape-juice plate with a thin strip of yeast paste and collected embryos for 3 hr at 25°C. The first time point was collected 24 hr after egg laying (AEL) and the second 48 AEL. We transferred the larvae to fresh grape-juice plates containing yeast paste daily.
 
-## RNA extractions and library preparation
+### RNA extractions and library preparation
 
 Whole larvae (~30 animals at 24 hr AEL and ~20 animals at 48 hr AEL for each sample; RNA from each time point and genotype was prepared in triplicate) were ground in a 1.5 mL Eppendorf tube containing 50 μL of TRIzol reagent using a DNase, RNase and DNA free 1.5 mL pestle. 450 μL of TRIzol reagent was added after grinding. Immediately, we added 500 μL of chloroform and the tube was inverted gently 2–3 times. We removed the aqueous phase into a fresh tube containing 1 mL of 200 proof EtOH and mixed by inversion. The mixture was then bound to a Zymo-spin column according to the manufacturer's instructions (Zymo Research). We followed the DNase extraction and purification protocol outlined in the RNA Clean and Concentrator kit (Zymo Research). We eluted the RNA in 15 μL of DNase/RNase-free water and immediately placed the samples at −80°C. We checked the quality of the samples with a 2200 Tapestation (Agilent Technologies) and selected samples that had an RNA integrity number >9.0 for library preparation. Library construction and Illumina 150 bp paired-end RNA-sequencing were conducted at Novogene Bioinformatics Technology Co., Ltd (Beijing, China).
 
-## Transcriptome data analysis
+### Transcriptome data analysis
 
 We used Kallisto (Bray et al., 2016) to quantify abundances of the D. melanogaster reference transcriptome (refMrna.fa for dm6, obtained from UCSC Genome Browser Oct 16th, 2018, which contains 34,114 transcripts). For each transcript, we acquired the gene name using R (org.Dm.eg.db). Kallisto counts were read into R using the tximport package (Soneson et al., 2015) and using the summarizeToGene function, we summarized alternative splice-form counts into a single count per gene. We used DESeq2 to identify differentially expressed genes with adjusted p-value<=0.05 and absolute log2(fold change)>=1 (Anders and Huber, 2010), comparing Nnk-null larvae to controls for each timepoint separately. Before performing each comparison, we excluded genes with low expression (<100 counts total across all samples): this filtering yields 10,574 ‘expressed’ genes in 24 hr AEL larvae, and 10,758 ‘expressed’ genes in 48 hr AEL larvae. The RNA-seq data has been deposited in the SRA database with the accession number PRJNA643855.
 
@@ -189,11 +1304,11 @@ We performed Gene Ontology (GO) enrichment analysis on each of four gene lists: 
 
 To estimate expression levels aggregated across all instances of each repeat type, we took an approach similar to that of Day et al., 2010. Here, rather than mapping reads to the typical reference genome assembly, we constructed a ‘repeat assembly’, where we used RepeatMasker annotations for dm6 (obtained from UCSC) to extract and concatenate all instances of each repeat type, adding 75 bp flanking sequences (half the length of each read) and inserting 150 N bases between each instance. The repeat assembly therefore consists of a single ‘chromosome’ for each repeat type. We then used BWA-mem to map sequences as single reads (not paired-ends) to the repeat assembly (Li, 2013), and samtools to count reads mapping to each repeat type (‘chromosome’). We combined counts for pairs of simple repeats that represent the reverse-complement of one another. We used DESeq2 to perform statistical analyses on raw counts, using the total number of sequenced fragments as size factors (Love et al., 2014). We normalized counts by dividing each by the number of reads sequenced for that sample in millions.
 
-## Dietary sterol supplementation
+### Dietary sterol supplementation
 
 To evaluate the ability of dietary sterols to rescue Nnk-null phenotype, we carried out sterol supplementation as previously outlined (Uryu et al., 2018). Briefly, we mixed together 20 mg of dry yeast in 38 µL of water. To this yeast paste, we added either 2 µL of EtOH (negative control) or 2 µL of EtOH plus cholesterol (Sigma), 7-dehydrocholestrol (Sigma) or 20-hydroxyecdysone. Stocks used for these experiments were balanced over GFP-balancers (Npc1a57/CyO-GFP and Nnk-null/TM3G). The control used for these experiments was the w1118 stock. Eggs were laid on yeasted grape-juice plates for 3 hr at 25°C. 24 hr AEL, GFP-negative larvae were transferred onto grape plates containing fresh yeast paste at 25°C. For 72 hr AEL, larvae were transferred to fresh grape-juice plates containing yeast paste daily and scored for their developmental stage based on the morphology of their mouth hooks. Npc1a57/CyO-GFP stocks were a kind gift from Leo Pallanck (Fluegel et al., 2006).
 
-## Tissue culture and transfection
+### Tissue culture and transfection
 
 Oddjob cluster genes were amplified from genomic DNA from D. melanogaster and D. simulans and directionally cloned into pENTER/D-TOPO (ThermoFisher) according to the manufacturer’s instructions. We verified that clones had the appropriate insertions by sequencing. We used LR clonase II (ThermoFisher) to get each Oddjob cluster gene into the Drosophila Gateway Vector destination vector to express the gene of interest with an N-terminal Venus tag under the control of the D. melanogaster Hsp70 promoter (pHVW). For Rhino localization in S2 cells, the Rhino gene was cloned into the Drosophila Gateway Vector destination vector to enable expression of Rhino with an N-terminal 3xFlag tag under the control of the D. melanogaster Hsp70 promoter (pHFW). Nnk and Odj were also cloned into pCopia vectors containing N-terminal and C-terminal mCherry epitope tags, respectively, and HP1a was previously tagged with mCerulean at the N-terminus.
 
@@ -201,7 +1316,7 @@ Schneider 2 cells were obtained from the Drosophila Genomics Resource Center (Bl
 
 For the heatshock vector transfections, cells were transferred to coverslips for 30–45 min prior to starting the immunohistochemistry protocol. 0.5% sodium citrate hypotonic solution was added to the coverslip for 10 min to swell cells, which was then spun at 1900 rpm for 1 min in a Cytospin III to remove the cytoplasm from the cells. The sodium citrate was immediately removed and cells were subsequently fixed. For fixation, 4% PFA + PBST (PBS + 0.1% Triton) was added to the cells for 10 min. Coverslips were then washed in PBST and blocked for 30 min in PBST + 3% BSA. Cells were incubated with primary antibody overnight at 4°C in a humid chamber. For immunolocalization, the following dilutions of primary antibodies were used: GFP (Abcam AB13970) 1:1000, H3K9me3 (Abcam AB8898) 1:500 M2 FLAG (Sigma-Aldrich F4042) 1:1000. After washing with PBST three times for 10 min per wash, the following fluorescent secondary antibodies were used at 1:1000 dilution: goat anti-chicken (Invitrogen Alexa Fluor 488, A-11039), goat anti-rabbit (Invitrogen Alexa Fluor 568, A-11011) and goat anti-mouse (Invitrogen Alexa Fluor 568, A-11031). The cells were incubated with 1x DAPI in the final wash and mounted in SlowFade Gold Mounting Medium (ThermoFisher). We imaged cells on a Leica TCS SP5 II confocal microscope with LASAF software and images were processed using ImageJ and were representative of the cell population.
 
-## ChIP-seq analyses
+### ChIP-seq analyses
 
 S2 cells transfected with either mCherry-Nnk or Odj-mCherry for 72 hr were fixed with 1% paraformaldehyde for 10 min and sheared with Bioruptor sonicator (Diagenode) to obtain chromatin. Chromatin fragments were confirmed to contain DNA in the 200–500 bp size range using a Bioanalyzer (Agilent). Each immunoprecipitation was performed on chromatin from 2 × 107 S2 cells by overnight incubation with Protein-G Dynabeads and 5 µg of anti-mCherry antibody (Novus). Library construction from immunoprecipitated DNA was conducted using TruSeq sample preparation kits (Illumina). 150 bp paired-end sequences were generated by the Vincent J. Coates Genomics Sequencing Laboratory at UC Berkeley.
 

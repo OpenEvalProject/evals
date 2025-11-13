@@ -39,39 +39,67 @@ Here, we further explore the interaction between H. armigera, HaDV2, and Bt-cott
 
 ## Results
 
-## HaDV2 infection increases Cry1Ac tolerance in H. armigera
+### HaDV2 infection increases Cry1Ac tolerance in H. armigera
 
 Previous laboratory bioassays suggested that when a Cry1Ac-susceptible strain of H. armigera was infected with HaDV2, it increased its tolerance to the Cry1Ac toxin (Xu et al., 2014). To explore the generality of this finding, we first analyzed the effect of HaDV2 infection in different H. armigera populations that differ in their susceptibility to Cry1Ac due to different mechanisms of resistance. Two susceptible H. armigera strains infected with HaDV2 (96S and LF) both showed 1.5 times greater tolerance to Cry1Ac toxin, relative to their corresponding non-infected controls (Supplementary file 1a and b). In the case of the Cry1Ac-resistant strains (BtR, 96CAD, LFC2, LF5, LF60, LF120, and LF240), infection with HaDV2 again showed a significant increase in their tolerance relative to the corresponding strains without HaDV2 infection, ranging between 30% and 130% enhanced tolerance (Figure 1). The slope of the regression line is significantly greater than one (t-test: t=2.853, df=6, p=0.029), suggesting that the benefits of carrying HaDV2 may increase with increasing levels of Bt tolerance. Logistic regression confirmed that for a given strain of H. armigera, larvae harboring HaDV2 were significantly more tolerant to Cry1Ac (GLM: Strain: χ28=36.57, p<0.0001, log10 (Cry1Ac toxin concentration): χ21=848.16, p<0.0001; Strain*log10(Cry1Ac toxin concentration): χ28=97.30, p<0.0001; HaDV2-status: χ21=9.53, p=0.0020). However, there was no evidence that the benefits of hosting HaDV2 are affected by the tolerance level of the H. armigera strain, as reflected in the LC50 of the non-infected insects (χ21=0.06, p=0.80). At 8 days post-hatching, H. armigera larvae were significantly lighter (t=10.164, df=32, p<0.0001, n=17) and had lower HaDV2 viral loads in individuals feeding on diet containing Bt than the ones without Bt (t=4.527, df=32, p<0.0001, n=17), suggesting that Bt decreased the replication rate of HaDV2 by suppressing the growth of H. armigera larvae (Figure 1—figure supplement 1).
 
-## HaDV2 infection reduces the fitness cost of H. armigera associated with Cry1Ac-resistance evolution
+![Figure 1.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig1-v2.jpg)
+
+**Figure 1.:** The x-axis is the LC50 of different strains (LF, 96S, LF5, LF60, LF120, LF240, LFC2, 96CAD, and BtR) without HaDV2 infection (HaDV2-negative); the y-axis is the LC50 of different strains (LF, 96S, LF5, LF60, LF120, LF240, LFC2, 96CAD, and BtR) with HaDV2 infection (HaDV2-positive). The regression line is described by the following equation: y=1.2794x+2.8726, R²=0.9606, F=11.99, df=1,7 (p<0.0085).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The body weight of larvae feeding on diet with and without Bt at 8th day after hatching (t=10.164, df=32, p<0.0001, n=17). (B) The logarithm of HaDV2 copy number to base 10 per larva feeding on diet with and without Bt (t=4.527, df=32, p<0.0001, n=17). ‘***’ stands for p<0.001.
+
+### HaDV2 infection reduces the fitness cost of H. armigera associated with Cry1Ac-resistance evolution
 
 To determine whether infection with HaDV2 reduces the costs associated with evolving resistance to Bt, a range of fitness traits (Supplementary file 1c) were measured in four strains of H. armigera that have different Bt-resistance levels (LF, LF5, LF60, and LF240) and were infected or not infected with HaDV2. Enhanced Bt-resistance in H. armigera LF, LF5, LF60, and LF240 strains was associated with lower larval survival rates, prolonged larval and pupal development (in both sexes), reduced pupal weight, lower adult emergence rate, and reduced fecundity and egg hatch rate; in contrast, sex ratio at emergence and the longevity of adults of both sexes were not influenced by the capacity to resist Cry1Ac toxin (Figure 2; Supplementary file 1c and d). When traits were combined to estimate the fundamental net reproductive rates of the four H. armigera strains, R0 (Wang et al., 2016), this revealed that in the absence of HaDV2 infection, the fitness of the most Bt-resistant strain (LF240) was around 40% of that of the most Bt-susceptible strain (LF), consistent with a large fitness cost of resistance (Figure 3); strains with intermediate levels of resistance (LF5 and LF60) suffered a lower cost of resistance (c. 30% reduction in fitness).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig2-v2.jpg)
 
-**Figure 2.:** Helicoverpaarmigera strains’ larval (A), and pupal (B,C) with or without HaDV2 infection.(A) The x-axis is the larval development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the larval development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.0977x−0.0036, R²=0.9921, F=176.678, df=1.2, p=0.006. (B) The x-axis is the female pupal development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the female pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.3072x−0.0208, R²=0.9879, F=125.211, df=1.2, p=0.008. (C) The x-axis is the male pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the male pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.0836x−0.003, R²=0.8482, F=7.581, df=1.2, p=0.110.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) The x-axis is the larval development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the larval development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.0977x−0.0036, R²=0.9921, F=176.678, df=1.2, p=0.006. (B) The x-axis is the female pupal development rate (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the female pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.3072x−0.0208, R²=0.9879, F=125.211, df=1.2, p=0.008. (C) The x-axis is the male pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) without HaDV2 infection (HaDV2-negative); the y-axis is the male pupa period (1/duration) of different strains (LF, LF5, LF60, and LF240) with HaDV2 infection (HaDV2-positive), y=1.0836x−0.003, R²=0.8482, F=7.581, df=1.2, p=0.110.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig3-v2.jpg)
+
+**Figure 3.:** Mean R0 is calculated as the number of female offspring per female that reaches adulthood. The bars are bootstrapped standard errors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The model is based on that by Himler et al., 2011, where F=R0(HaDV2−)/R0(HaDV2+), which equals 0.7385 for LF and 0.6667 for LF240. The predicted prevalence of HaDV2 in generation t+1 (It+1) is calculated as follows: It+1=It/{[(1–It)*F]+It}, where It is the proportion of infected H. armigera in generation t and 1–It is the proportion uninfected. The model shows that from a starting frequency of 1%, the prevalence of HaDV2 infection would increase in Bt-cotton-growing areas to >97% after 20 or 27 generations for LF240 or LF strain H. armigera, respectively.
 
 Infection with HaDV2 rescued, or partially rescued, this fitness loss, in all four H. armigera strains showing a significant increase in R0 relative to their non-infected counterparts, averaging around 38% higher (paired t-test: t=4.831, df=3, p=0.017; Figure 3). Indeed, when infected with HaDV2, the R0 values of two of the three resistant strains (LF5 and LF60) were comparable to that of the non-infected susceptible (LF) strain (Figure 3).
 
 To quantify the fitness cost associated with Cry1Ac-tolerance in the more realistic context of multiple plant defenses, the growth rate of the different strains of H. armigera larvae was also analyzed on Bt-cotton plant leaves. Larval weight after 9 days growth was significantly affected by the cotton variety (Bt or non-Bt) and by the HaDV2 infection-status (Supplementary file 1e and f), with larvae generally being heavier when fed with non-Bt-cotton than with Bt-cotton, and heavier for HaDV2-infected larvae than for larvae not infected with HaDV2; larvae were also heavier when they expressed lower levels of Bt-resistance, indicating that the cost of resistance is reflected in larval growth (Supplementary file 1e and f). None of the interactions between these three main effects explained any additional variation (model comparison with and without interaction terms: F=0.601, df=14, p=0.86), suggesting that the effects of host plant, H. armigera strain, and infection-status on larval growth were additive.
 
-## HaDV2 infection levels in field populations of H. armigera have increased over the adoption period of Bt-cotton
+### HaDV2 infection levels in field populations of H. armigera have increased over the adoption period of Bt-cotton
 
 To determine if infection with HaDV2 could increase the performance of H. armigera when exposed to Bt-cotton in the field, we collected H. armigera moths from Xiajin (Shandong Province) and Anci (Hebei Province) in northern China, two locations where Bt-cotton has been widely planted over the last decade (An et al., 2015). Across two successive years, the prevalence of HaDV2 was extremely high (98% of 637 larvae in 2015; 97% of 180 larvae in 2016). Moreover, across both years, the relative average development rates (RADRs) (An et al., 2015) of individuals infected with HaDV2 were significantly higher than that of larvae not infected with the virus (0.62 vs. 0.52 in 2015; 0.61 vs. 0.53 in 2016) (linear model: infection status: F=28.80; df=1.815, p<0.0001; year: F=2.10, df=1.814, p=0.15; infection*year: F=0.57, df=1.813, p=0.57) (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig4-v2.jpg)
 
-**Figure 4.:** The data were collected from field-collected insects from Xiajin and Anci in 2015 and 2016. RADR, relative average development rate.Figure 4—source data 1.Figure 4.
+**Figure 4.:** The data were collected from field-collected insects from Xiajin and Anci in 2015 and 2016. RADR, relative average development rate.
 
 Given the apparent selective advantage of HaDV2 infection for insects feeding on Bt-cotton, we predicted that over time we would observe an increase in HaDV2 infection rates in the field and that this would be associated with a temporal increase in average development rates for larvae feeding on Bt-cotton plants. As predicted, over the 10-year period between 2007 and 2016, at both Xiajin and Anci provinces, HaDV2 infection rates increased significantly over time (logistic regression: Xiajin: χ21=405.79, p<0.0001; Anci: χ21=325.21, p<0.0001) (Figure 5A and B). Associated with this, there was a significant temporal increase in larval development rates (RADR) at both locations (linear models: Xiajin: F=5.474, df=1.8, p=0.047; Anci: F=23.256, df=1.8, p=0.0047) (Figure 5C and D). Moreover, across the 10 years at both monitoring locations, there was a strong positive association between HaDV2 infection levels and RADRs, consistent with a possible causal relationship between these two temporal trends (linear models: Xiajin: F=23.826, df=1.9, P=0.001; Anci: F=13.676, df=1.9, P=0.006) (Figure 5E and F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig5-v2.jpg)
 
-**Figure 5.:** (A) Relation between HaDV2 infection rate of larvae in Xiajin populations and planting year of Bt-cotton. Logistic regression model of HaDV2 infection rate, logit (y) = 0.49473x−993.1444, R²=0.8591, χ2=405.79, df=1, p<0.0001. (B) Relation between HaDV2 infection rate of larvae in Anci populations and planting year of Bt-cotton. Logistic regression model of HaDV2 infection rate, logit (y) = −0.0105x2+42.1986x−42501.98515, R²=0.877, χ2=325.21, df=1, p<0.0001. (C) Relation between RADR of larvae in Xiajin populations and planting year of Bt-cotton. Linear model of RADR, y=0.009x−17.595, R²=0.406, F=5.474, df=1.8, p=0.047. (D) Relation between RADR of larvae in Anci populations and planting year of Bt-cotton. Linear model of RADR, y=0.016x−32.340, R2=0.744, F=23.256, df=1.8, P=0.001. (E) Relationship of larvae RADR in Xiajin population and HaDV2 infection rate during the years 2007–2016, each data point is a different year, in the Linear model of RADR, y=0.183x+0.438, R²=0.749, F=23.826, df=1.9, p=0.001. (F) Relationship of larvae RADR in Anci populations and HaDV2 infection rate during the years 2007–2016, each data point is a different year, in the Linear model of RADR, y=0.213+0.408, R²=0.625, F=13.676, df=1.9, p=0.006. The bars are the standard error of the mean RADR for the field-derived strains tested in each year. RADR, relative average development rate.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Relation between HaDV2 infection rate of larvae in Xiajin populations and planting year of Bt-cotton. Logistic regression model of HaDV2 infection rate, logit (y) = 0.49473x−993.1444, R²=0.8591, χ2=405.79, df=1, p<0.0001. (B) Relation between HaDV2 infection rate of larvae in Anci populations and planting year of Bt-cotton. Logistic regression model of HaDV2 infection rate, logit (y) = −0.0105x2+42.1986x−42501.98515, R²=0.877, χ2=325.21, df=1, p<0.0001. (C) Relation between RADR of larvae in Xiajin populations and planting year of Bt-cotton. Linear model of RADR, y=0.009x−17.595, R²=0.406, F=5.474, df=1.8, p=0.047. (D) Relation between RADR of larvae in Anci populations and planting year of Bt-cotton. Linear model of RADR, y=0.016x−32.340, R2=0.744, F=23.256, df=1.8, P=0.001. (E) Relationship of larvae RADR in Xiajin population and HaDV2 infection rate during the years 2007–2016, each data point is a different year, in the Linear model of RADR, y=0.183x+0.438, R²=0.749, F=23.826, df=1.9, p=0.001. (F) Relationship of larvae RADR in Anci populations and HaDV2 infection rate during the years 2007–2016, each data point is a different year, in the Linear model of RADR, y=0.213+0.408, R²=0.625, F=13.676, df=1.9, p=0.006. The bars are the standard error of the mean RADR for the field-derived strains tested in each year. RADR, relative average development rate.
 
-## Across regions the HaDV2 infection rates increase with increasing exposure to Bt-cotton
+### Across regions the HaDV2 infection rates increase with increasing exposure to Bt-cotton
 
 To further test the association between H. armigera densovirus infection levels and the adoption of Bt-cotton, we monitored HaDV2 infection rates at 36 locations across 16 provinces during the period 2014–2016, including locations planted with transgenic Bt-cotton (29 monitoring points across 12 provinces) and locations where Bt-cotton has not been planted (9 monitoring points across 4 provinces) (Figure 6; Supplementary file 1g). Across all 3 years, HaDV2 infection levels in H. armigera were significantly higher at locations where Bt-cotton was planted (mean=82%) than in those where it was not (15%) (Figure 6—figure supplement 1) (logistic regression: crop (Bt vs. non-Bt): χ21=354.15, p<0.0001). There was also a significant year-by-crop interaction (χ21=24.13, p<0.0001) due to HaDV2 infection levels being uniformly high across the 3 years at sites growing Bt-cotton (81–90%), whereas infection levels gradually increased from 2014 to 2016 at non-Bt sites (12%, 16%, and 44%, respectively).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig6-v2.jpg)
+
+**Figure 6.:** The red proportion of circles refers to infected individuals, and the blue refers to non-infected individuals. There are significant differences in HaDV2 infection rates between the 29 Bt-cotton planting points and 7 non-Bt-cotton planting points (code: 12, 29, 30, 31, 32, 49, and 50). The sample information was summarized in Supplementary file 1g.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The detailed information is summarized in Supplementary file 1g.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) DNA from HaDV2 positive individual as template. M=Marker, 1=1324.9 ng/µL, 2=132.49 ng/µL, 3=13.249 ng/µL, 4=1.3249 ng/µL, 5=0.13249 ng/µL, and 6=0.013249 ng/µL. (b) Plasmids as template. M=Marker, 1=3 ng/µL (6.185×108 copies/µL), 2=3×10−1 ng/µL (6.185×107 copies/µL), 3=3×10−2 ng/µL (6.185×106 copies/µL), 4=3×10−3 ng/µL (6.185×105 copies/µL), 5=3×10−4 ng/µL (6.185×104 copies/µL), 6=3×10−5 ng/µL (6.185×103 copies/µL), 7=3×10−6 ng/µL (6.185×102 copies/µL), 8=3×10−7 ng/µL (61.85 copies/µL), and 9=3×10−8 ng/µL (6.185 copies/µL).
 
 Moreover, across the provinces where Bt-cotton is grown, the mean prevalence of HaDV2 in H. armigera between 2014 and 2016 increased with the number of years since Bt-cotton was first introduced (χ21=173.59, p<0.0001) (Figure 7A and Figure 6—figure supplement 1) and also increased as the proportion of cotton that was transgenic increased (χ21=5.34, p=0.021) (Figure 7B). HaDV2 prevalence was not correlated with the proportional area of any of the other crops grown (χ21<1.310, p>0.25). Adding environmental variables to this minimal model, either singly or in combination, did not significantly improve the model fit (average rainfall: χ21=0.110, p=0.74; average temperature: χ21=0.155, p=0.69; average altitude: χ21=0.001, p=0.98; rainfall+temperature+altitude: χ23=0.572, p=0.90). These results are consistent with the notion that the benefits of HaDV2 infection are greatest for H. armigera exposed to Cry1Ac-producing cotton and that selection favoring HaDV2 infection increases the longer the insects are exposed to the Bt-cotton.
 
@@ -79,21 +107,29 @@ Moreover, across the provinces where Bt-cotton is grown, the mean prevalence of 
 
 **Figure 7.:** (A) Temporal changes in the infection rate of HaDV2 since the introduction of Bt-cotton. (B) Changes in the infection rate of HaDV2 according to the proportion of Bt-cotton in all cotton. Each symbol represents an individual province sampled for densovirus over three years (2014–2016); the mean virus prevalence (± standard error) over those 3 years is shown. Symbol size reflects sampling effort and represents data from >1500 insects. Circles represent the 12 provinces where Bt-cotton is grown; squares are the 4 provinces where Bt-cotton is not grown. The solid line represents the logistic regression (± standard error, shaded zone) describing the relationship between virus prevalence and years since the introduction of Bt-cotton to a province for the 12 Bt-cotton-growing provinces only. The dashed line extrapolates this regression line to Year 0. The detailed information is summarized in supplementary file 1g and Figure 6—figure supplement 1.
 
-## HaDV2 infection activated the immune pathways in the cotton bollworm
+### HaDV2 infection activated the immune pathways in the cotton bollworm
 
 To try to understand better the mechanisms increasing the Cry1Ac tolerance levels and enhanced fitness of HaDV2-infected insects, we conducted an RNA sequencing experiment (Supplementary file 1h).
 
 The principal component analysis of the transcriptome with differentially expressed genes (DEGs) data clearly distinguished HaDV2-positive from HaDV2-negative individuals at three different time points: 24, 48, and less so at 72 hr after HaDV2 inoculation (Figure 8A,B,C). Taken together with the hierarchical clustering of these DEGs, these results suggest that the HaDV2 has a major effect on the gene expression profiles of their hosts.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig8-v2.jpg)
+
+**Figure 8.:** (A–C) PCA of global gene expression of DEGs at 24 (A), 48 (B), and 72 hr (C) after HaDV2 inoculation. Blue stands for HaDV2-positive samples and red stands for HaDV2-negative samples. (D–F) Heatmaps of –log10 p-values of KEGG pathways representing the upregulated and downregulated DEGs at 24 (D), 48 (E), and 72 hr (F). ‘*’ indicates the significantly enriched pathways (p<0.05). Red color shows upregulation pathways, green color shows downregulation pathways, gray color shows no value, the redder/greener the color, the lower p-values. DEG, differentially expressed gene; PCA, principal component analysis.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The quantity of DEGs with log2(FPKM) related to the expression of the Jak-STAT signaling pathway at 24 hr (A) and 48 hr (i); the insect hormone biosynthesis pathway at 24 hr (B); the insulin signaling pathway at 24 hr (C) and 48 hr (G); the AMPK signaling pathway at 24 hr (D); the mTOR signaling pathway at 24 hr (E); the ABC transporters at 48 hr (F); the steroid hormone biosynthesis pathway at 48 hr (H) and 72 hr (J); the protein digestion and absorption pathway at 72 hr (K). V−=HaDV2-negative individuals, V+=HaDV2-positive individuals. Colors in log2(FPKM) indicate the gene expression levels, the hotter (redder) the color, the higher the gene expression level. The two columns in V− and V+ represent two replications.
+
 We performed pathway enrichment analysis on the DEGs, focusing particular attention on pathways related to the development and immune systems (Figure 8D,E,F). Genes in Jak-STAT immune signaling pathway, which are related to some antiviral and antibacterial mechanisms, were significantly enriched and upregulated in the HaDV2-infected larvae at 24 and 48 hr (Figure 8D,E and Figure 8—figure supplement 1A,B), but not at 72 hr (Figure 8F). Interestingly, genes in ABC transporters pathway at 48 hr (Figure 8—figure supplement 1C), the mitogen-activated protein kinase (MAPK) signaling and lysosome pathways at 72 hr (Figure 8—figure supplement 1D,E), which are related to antimicrobial immune response, are significantly enriched and upregulated (Figure 8E,F). Genes in pathways related to development were also significantly enriched, for example, insulin, the mammalian target of rapamycin (mTOR), AMP-activated protein kinase (AMPK) signaling, and the insect hormone biosynthesis pathways at 24 hr (Figure 8—figure supplement 1F,G,H,I), steroid hormone biosynthesis and insulin signaling pathways at 48 hr (Figure 8—figure supplement 1J,K), and the mTOR, protein digestion and absorption, and steroid hormone biosynthesis pathways at 72 hr. These results may help to explain why HaDV2-positive individuals developed more quickly than non-infected insects.
 
-## HaDV2 decreased the effect of Bt on H. armigera
+### HaDV2 decreased the effect of Bt on H. armigera
 
 There was a total of 1573 significant DEGs in HaDV2-negative insects after exposure to Cry1Ac (673 upregulated and 900 downregulated). We focused on DEGs and pathways related to Bt tolerance and immune systems. Seven ABC transporter genes, which are related to immunity, were differentially expressed (four upregulated and three downregulated) (Figure 9A); eight trypsin genes, which are related to the conversion of the protoxin to activated toxin, were differently expressed (six upregulated and two downregulated) (Figure 9B); two carboxylesterase genes, which are related to the detoxification of Bt by the insect, were upregulated; and two Bt toxin receptors genes, alkaline phosphatase (ALP) and aminopeptidase N (APN), which are related to Bt resistance, were downregulated (Figure 9C). Genes in the MAPK signaling pathway, which is related to antimicrobial immune response, was also significantly downregulated (Figure 9D).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/66913/elife-66913-fig9-v2.jpg)
 
-**Figure 9.:** Helicoverpa armigera after HaDV2 infection and Cry1Ac exposure.The quantity of DEGs with log2(FPKM) related to the expression of (A) the ABC transporters; (B) trypsin; (C) Bt receptors and carboxylesterase genes; (D) the MAPK signaling pathway; (E) the drug metabolism pathways. DV−=HaDV2-negative individuals, DV+=HaDV2-positive individuals. Bt−=larvae were fed on the artificial diet without Cry1Ac, Bt+=larvae were fed on the artificial diet containing 1 µg/mL Cry1Ac. Colors in log2(FPKM) indicate the gene expression levels, the hotter (redder) the color, the higher the gene expression level. The three columns represent three biological replicates. DEG, differentially expressed gene; MAPK, mitogen-activated protein kinase.
+**Figure 9.:** The quantity of DEGs with log2(FPKM) related to the expression of (A) the ABC transporters; (B) trypsin; (C) Bt receptors and carboxylesterase genes; (D) the MAPK signaling pathway; (E) the drug metabolism pathways. DV−=HaDV2-negative individuals, DV+=HaDV2-positive individuals. Bt−=larvae were fed on the artificial diet without Cry1Ac, Bt+=larvae were fed on the artificial diet containing 1 µg/mL Cry1Ac. Colors in log2(FPKM) indicate the gene expression levels, the hotter (redder) the color, the higher the gene expression level. The three columns represent three biological replicates. DEG, differentially expressed gene; MAPK, mitogen-activated protein kinase.
 
 In contrast, there were only 249 significant DEGs in HaDV2-positive insects after exposure to Cry1Ac (165 upregulated and 84 downregulated). One trypsin gene was downregulated; genes in the ascorbate and aldarate metabolism pathway, which is related to carbohydrate metabolism were upregulated; genes in drug metabolism – cytochrome P450 pathway, metabolism of xenobiotics by cytochrome P450 pathway and drug metabolism – and other enzymes pathways, which are related to detoxification, were also upregulated (Figure 9E).
 
@@ -123,48 +159,226 @@ Whilst data from the field are inevitably correlational, when combined with the 
 
 ## Materials and methods
 
-## Bt toxins
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Helicoverpa armigera)</td>
+      <td>LF</td>
+      <td>Collected from Langfang, Hebei Province, in 1998</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>96S</td>
+      <td>Collected from Xinxiang, Henan Province, in 1996,</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>BtR</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>96CAD</td>
+      <td>Cry1Ac-resistant strains (with a cadherin mutation) selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LFC2</td>
+      <td>Cry1Ac-resistant strains (with an ABCC2 mutation) selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LF5</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LF30</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LF60</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LF120</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>LF240</td>
+      <td>Cry1Ac-resistant strains selected from the susceptible strain on artificial diets</td>
+      <td></td>
+      <td>See Materials and methods, Laboratory strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. armigera)</td>
+      <td>Adult female bollworm moths</td>
+      <td>Collected from field</td>
+      <td></td>
+      <td>See Materials and methods, Collection of field strains</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Helicoverpa armigera densovirus-1)</td>
+      <td>HaDV2</td>
+      <td>(Xu et al., 2014) DOI: 10.1371/journal.ppat.1004490</td>
+      <td></td>
+      <td>See Materials and methods, HaDV2 preparation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEASY-T1 cloning vector</td>
+      <td>TransGen, Beijing, China</td>
+      <td></td>
+      <td>See Materials and methods, Detection of HaDV2 in wild populations of H. armigera</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HaDV-F</td>
+      <td>(Xu et al., 2014) DOI: 10.1371/journal.ppat.1004490</td>
+      <td></td>
+      <td>GGATTGGCCTGGGAAATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HaDV-R</td>
+      <td>(Xu et al., 2014) DOI: 10.1371/journal.ppat.1004490</td>
+      <td></td>
+      <td>CGTTGTTTTTATATCCGAGG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cry1Ac</td>
+      <td>Dow AgroSciences (Indianapolis, IN)</td>
+      <td></td>
+      <td>See Materials and methods, Bt toxins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>POLO Plus LeOra Software</td>
+      <td>POLO Plus LeOra Software, Berkeley</td>
+      <td></td>
+      <td>Probit analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLASTx</td>
+      <td>BLASTx</td>
+      <td>RRID:SCR_004870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Bowtie – 0.12.7</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>RSEM – v1.1.17</td>
+      <td>RRID:SCR_013027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEseq2</td>
+      <td>DEseq2</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RADR</td>
+      <td>(An et al., 2015) Doi: org/10.1002/ps.3807</td>
+      <td></td>
+      <td>The relative average development rates</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bt toxins
 
 Cry1Ac was obtained as a gift from Dow AgroSciences (Indianapolis, IN) in product formulation MVPII (20%). To avoid degradation, Cry1Ac protoxin was stored at −80°C. To exclude the possibility of a decline in protoxin potency over time, the susceptible strains (LF) were used as the internal control in different years (Cao et al., 2014).
 
-## Laboratory strains
+### Laboratory strains
 
 Different H. armigera strains were used: two susceptible strains (LF and 96S) and eight Cry1Ac-resistant strains (BtR, 96CAD, LFC2, LF5, LF30, LF60, LF120, and LF240), with different resistance ratios due to different resistant mechanisms (Liang et al., 2008; Xiao et al., 2014). The Bt-susceptible strains, LF and 96S, were collected from Langfang, Hebei Province, in 1998, and Xinxiang, Henan Province, in 1996, respectively. They had been continuously cultured in the laboratory without exposure to Bt toxin. The resistant strains were selected from the susceptible strain on artificial diets (Cao et al., 2014; Liang et al., 2008); 96CAD (with a cadherin mutation) and LFC2 (with an ABCC2 mutation, unpublished) are two near-isogenic lines isolated from BtR and LF60 resistant strains, respectively (Xiao et al., 2017). All strains were reared on artificial diet. Rearing, selection, and bioassays were conducted at 25±1°C, photoperiod 14L:10D, and 75±10% relative humidity. To test whether the Bt could change the replication rate of HaDV2 in their hosts, newly hatched larvae from single pair matings, which both the parents and larvae were with low dose of HaDV2, fed on artificial diets with either Bt (0.5 µg/g) or without Bt and quantified larval growth and virus titers 8 days later using the qPCR method (Xu et al., 2014).
 
-## Collection of field strains
+### Collection of field strains
 
 Adult female bollworm moths were collected from 1000 W light traps in two counties 360 km apart: Xiajin County, Shandong Province (with an intensive cotton planting area), and in Anci County, Hebei Province (with a multiple-crop farming system that includes cotton). The history of Bt-cotton deployment in the two locations during 2007–2013 has been reported previously (An et al., 2015). In the two counties, H. armigera female moths were trapped from June to October in all years, as previously reported (An et al., 2015).
 
-## HaDV2 preparation
+### HaDV2 preparation
 
 HaDV2-containing liquid fluids were prepared as described previously (Xu et al., 2014). Briefly, the collected individual moths were ground in liquid nitrogen completely. About 10 mg of powder were transferred to a clean 1.5 mL tube and DNA was extracted. PCR reactions were undertaken to detect the presence of HaDV2 using specific primers, HaDV-F: GGATTGGCCTGGGAAATGAC and HaDV-R: CGTTGTTTTTATATCCGAGG. The remaining debris of HaDV2-positive individuals was transferred to 1 mL phosphate-buffered saline buffer on ice. The homogenate was centrifuged and the liquid supernatant was subsequently filtered with 0.22 µm membrane filter (Sigma-Aldrich). The HaDV2-containing filtered liquid (200 µL per tube) was collected and stored immediately at −80°C. Quantification of the virus was performed using the qPCR method (Xu et al., 2014).
 
-## Detection of HaDV2 in wild populations of H. armigera
+### Detection of HaDV2 in wild populations of H. armigera
 
 Samples of larvae or adults were collected at 12 locations in 2014, 20 in 2015, and 18 in 2016 (Supplementary file 1g). Infection rates with HaDV-2 were determined using the PCR method described in Xu et al., 2012 and the virus detection limits were tested with DNA extracted from HaDV2-positive individuals and the plasmid generated with the fragments amplified with the primers for detection of HaDV2 and pEASY-T1 cloning vector (TransGen, Beijing, China). This showed that the detection limit for HaDV2 with PCR method was >61.85 copies/µL or 0.13 ng/µL DNA (Figure 6—figure supplement 2).
 
-## Bioassays
+### Bioassays
 
 H. armigera strains were reared and assessed simultaneously for susceptibility to Cry1Ac, as previously reported (Liang et al., 2008). In brief, the susceptibility was evaluated by feeding H. armigera larvae with an artificial diet containing different concentrations of Cry1Ac toxin. Newly hatched larvae were first orally inoculated with either filtered-liquid containing HaDV2 or filtered-liquid from uninfected individuals. After that, they were placed in each treatment Petri dish for 2 days to ensure that larvae ingested the treated diet. They were then transferred individually on Cry1Ac-contaminated artificial diet in plastic wells (depth: 1.5 cm, vol. 3 mL) in 24-well plates. The plates were covered with a plastic lid to prevent escape and 72 larvae were tested per Cry1Ac concentration. After 7 days, the mortality was recorded and body mass of individuals that were still alive was measured. Both dead larvae and those with a body mass of less than 5 mg were recorded as dead. For each strain, the median lethal concentration (LC50) value was determined using a Probit analysis (POLO Plus LeOra Software, Berkeley) and the resistance level to Cry1Ac indicated by the resistance ratio was calculated with LC50 of the tested strains divided by the LC50 of the susceptible strain.
 
-## Assessment of fitness cost
+### Assessment of fitness cost
 
 To test the impact of HaDV2 infection on the fitness cost of its host, life-table parameters of the different strains were analyzed on artificial diet. The oral inoculation method was the same as previously described. Thirteen fitness components (life history parameters) were obtained with life-table techniques (Supplementary file 1c and 1d). The components considered were: (i) survival rate from the 1st to 5th larval instar (0–1), (ii) survival rate from the 5th instar to the pupal stage (0–1), (iii) duration of larval development (days), (iv) pupal weight (mg), (v) female pupal development period (days), (vi) male pupal development period (days), (vii) adult emergence rate (0–1), (viii) proportion of females (or sex ratio) (0–1), (ix) copulation rate (0–1), (x) female adult longevity (days), (xi) male adult longevity (days), (xii) fecundity (number of eggs laid), and (xiii) hatching rate (0–1). The net reproductive rate (R0) was calculated for each H. armigera strain (Cao et al., 2014) as R0=Nt+1/Nt, where Nt is the population size of the parent generation and Nt+1 is that of its next generation. When R0>1, it indicates a higher number of female offspring produced than that of the parental females. We used 30 larvae per repeat and three repeats for each treatment.
 
 To analyze the fitness cost associated with Cry1Ac-resistance, the larval weight of the different strains was analyzed on Bt/non-Bt-cotton. Newly hatched larvae were first orally inoculated with either filtered-liquid containing HaDV2 or filtered-liquid from non-infected individuals. After that, they were placed in each treatment Petri dish for 2 days to ensure that larvae ingested the treated diet. They were then transferred individually onto Bt-cotton (Zhongmian 29) or non-Bt-cotton (Zhongmian 24) leaf in plastic wells in 24-well plates. After 9 days, the weight of individuals was measured. Each treatment had 48 larvae with three repeats.
 
-## Bioassay of F1 generation on Bt and non-Bt diets
+### Bioassay of F1 generation on Bt and non-Bt diets
 
 To obtain F1 generation offspring of each of the laboratory strains, one virgin adult male and one virgin adult female were paired in a 250 mL clear plastic cup. Adult females collected from the field were placed individually into 250 mL clear plastic cups and covered with gauze to provide a substrate for egg laying. Eggs were collected on a daily basis. At larval hatch, 24 neonates from each female line were placed on non-Bt diet, and 24 neonates were placed on Cry1Ac-containing diet (1 μg of Cry1Ac/g diet). The concentration of Bt Cry1Ac protoxin was 1.0 μg/g diet. The composition of the diet was previously described (Chen et al., 2015). Rearing, selection, and bioassays were conducted at 27±2°C with a photoperiod of 14:10 h L:D and a relative humidity of 75±10%. Larvae were scored for the developmental stage after 6 days. Larval instar was determined on the basis of head capsule and body size.
 
-## Analyzing the effects of the HaDV2 on its hosts by transcriptome analysis
+### Analyzing the effects of the HaDV2 on its hosts by transcriptome analysis
 
 To determine the effect of HaDV2 on H. armigera at a transcriptomic level, we collected samples of the HaDV2-negative and HaDV2-positive individuals from single pairs of H. armigera and performed RNA-seq, using larvae at 24, 48, and 72 hr after hatching. Briefly, newly hatching larvae were fed on filtered liquid with/without HaDV2 as described previously (Xu et al., 2014). Samples were collected at 24, 48, and 72 hr and there were two groups of 30 individuals for each group per trial (Supplementary file 1h). The Trinity (v2.0.6) software (Grabherr et al., 2011) was used to assemble the clean reads with default parameters. BLASTx was performed to align the assembled contigs from Trinity to the database of NR, String, Swissprot, and KEGG for functional annotation. The e-value cutoff was set at 1E−5 for further analysis. For gene expression analysis, the reads from 12 libraries were mapped to the assembled contigs using Bowtie 0.12.7 (Langmead et al., 2009) with no more than two mismatches within the ﬁrst 28 bp. The read counts accumulated on the contigs were normalized as fragments per kilobase of exon model per million mapped reads (FPKM) values (Trapnell et al., 2010). Quantitative analysis for each unigene was estimated using FPKM values by RSEM (v1.1.17) software (Li and Dewey, 2011) with default parameters. Then the R package DEseq2 (Love et al., 2014) was used to get the significantly differential expressed unigenes at different comparisons. The threshold to determine the significantly differential expressed unigenes was ‘fold change≥1.5 and the p<0.05’. The hierarchical clustering method was applied to analyze the expression pattern of significantly differentially expressed unigenes in different samples. Significantly enriched KEGG pathways were identified using the Fisher’s exact test (p<0.05) (Klopfenstein et al., 2018).
 
-## RNA sequence analysis
+### RNA sequence analysis
 
 Offspring from a single uninfected breeding pair were reared to produce the N-strain (uninfected) laboratory culture. Neonate N-strain larvae were first orally inoculated with either filtered-liquid containing HaDV2 (108 copies/μL) or filtered-liquid from non-infected individuals (control). One hundred N-strain neonates were placed in each treatment Petri-dish for 2 days to ensure that larvae ingested the treated diet. They were then transferred to a 24-well plate (one individual per well: diameter=1.5 cm; height=2 cm) containing the artificial diet containing 1 µg/mL Cry1Ac toxins. After 48 hr, the larvae were collected and stored at −80°C for transcriptome sequencing. Twenty larvae were pooled together as a sample. A total of 12 samples were sequenced including three replications of four treatments (HaDV2-Bt−, HaDV2−Bt+, HaDV2+Bt−, and HaDV2+Bt+).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The RADRs were calculated according to An et al., 2015. In brief, the RADR for a line was calculated as the average body length rating of larvae from that line reared on the Bt diet divided by the average rating of larvae from that line reared on the non-Bt diet. Multivariate two-factor variance analysis was conducted with IBM SPSS 20. Student’s t-test or ANOVA with Tukey-test post hoc comparisons were used to determine the level of significance. Simple linear regression model was used to analyze the temporal trends of H. armigera, including RADR and HaDV2 infection rate, from 2007 to 2016. Simple linear regression model was also used to analyze the association relationship of RADR and HaDV2 infection rate in different years. Logistic regression, using the R statistical package (version 3.3.3) (R Development Core Team, 2017), was used to test the association between HaDV2 infection rate and environmental variables (rainfall and temperature) and altitude the proportional cover of the main crops (cotton, rice, corn, wheat, beans, tubers, oil-producing crops, and vegetables), the Bt status of the cotton crop, and the number of years since the introduction of Bt-cotton to a province (defined as the year in which Bt-cotton comprised at least 10% of the cotton grown in a province).

@@ -16,15 +16,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01zkghx44 George W Woodruff School of Mechanical Engineering, Georgia Institute of Technology Atlanta United States
-2. https://ror.org/01cwqze88 Ocular and Stem Cell Translational Research Section, Ophthalmic Genetics and Visual Function Branch, National Eye Institute, National Institute of Health Bethesda United States
-3. https://ror.org/01zkghx44 Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology Atlanta United States
-4. https://ror.org/013sk6x84 GENIE Project Team, Janelia Research Campus Howard Hughes Medical Institute Ashburn United States
-5. https://ror.org/00hj8s172 Department of Electrical Engineering, Columbia University New York United States
-6. https://ror.org/03czfpz43 Department of Cell Biology, Emory University Atlanta United States
-7. https://ror.org/042nb2s44 Department of Brain and Cognitive Science, Massachusetts Institute of Technology Cambridge United States
-8. https://ror.org/042nb2s44 McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States
-9. https://ror.org/006w34k90 Howard Hughes Medical Institute Cambridge United States
+1. George W Woodruff School of Mechanical Engineering, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
+2. Ocular and Stem Cell Translational Research Section, Ophthalmic Genetics and Visual Function Branch, National Eye Institute, National Institute of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
+4. GENIE Project Team, Janelia Research Campus Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+5. Department of Electrical Engineering, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+6. Department of Cell Biology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+7. Department of Brain and Cognitive Science, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+8. McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+9. Howard Hughes Medical Institute Cambridge United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Scaling traditional, manual patch clamp apparatus to multiple pipettes, in order
 
 Recently, patch clamp recording efficiency and throughput has increased due to improvements in automated pressure control systems, new algorithms for automated pipette movements guided by visual or electrical signals, and pipette cleaning, rather than reuse (Wu et al., 2016; Kodandaramaiah et al., 2018; Kodandaramaiah et al., 2012; Koos et al., 2021; Stoy et al., 2017; Harrison et al., 2015; Holst et al., 2019). In this way, we have previously developed a robotic system, ‘the PatcherBot’, capable of performing unattended, multi-hour patch clamp experiments in brain slices, with a whole cell success rate of 51%(Kolb et al., 2019). These advances rely on the concurrent discovery that pipettes can be reused, rather than replaced after each recording attempt (Kolb et al., 2016; Landry et al., 2021; Yip, 2023). These improvements have enabled novel drug screening assays (Perszyk et al., 2021), deep in-vivo recordings (Stoy et al., 2017), voltage indicator screening, and fluorescent cell targeted patch clamp (Wu et al., 2016).
 
-In the field of connectomics and synaptic physiology, several groups have developed methods for obtaining semi-automated patch clamp recordings of synaptically connected neurons (Wang et al., 2015; Peng et al., 2019; Perin and Markram, 2013; Kodandaramaiah et al., 2018; Campagnola et al., 2022). In the most impressive examples, large-scale connectomics studies have recently emerged from the Allen Institute for Brain Science and Geiger lab. At the Allen Institute, 20,949 connections were probed in the mouse brain (Campagnola et al., 2022). The efficiency of this effort over 1700 experiments, on average, yielded around 12 potential connections probed per experiment. The Allen Institute leveraged an eight-pipette setup that successfully connected to an average of four neurons per recording, resulting in an average of 12 possible connections (n2−n=12) per experiment.
+In the field of connectomics and synaptic physiology, several groups have developed methods for obtaining semi-automated patch clamp recordings of synaptically connected neurons (Wang et al., 2015; Peng et al., 2019; Perin and Markram, 2013; Kodandaramaiah et al., 2018; Campagnola et al., 2022). In the most impressive examples, large-scale connectomics studies have recently emerged from the Allen Institute for Brain Science and Geiger lab. At the Allen Institute, 20,949 connections were probed in the mouse brain (Campagnola et al., 2022). The efficiency of this effort over 1700 experiments, on average, yielded around 12 potential connections probed per experiment. The Allen Institute leveraged an eight-pipette setup that successfully connected to an average of four neurons per recording, resulting in an average of 12 possible connections ($n^{2}−n=12$) per experiment.
 
 Peng et al. used the pipette reuse method (Kolb et al., 2016) to increase the number of potential connections probed from 12 to 41 (approximately n=7 cells patched simultaneously) on a comparable eight pipette apparatus (Peng et al., 2019). Notably, these papers from the Allen Institute and the Geiger lab used eight manipulators, currently obtainable by only a handful of labs due to complexity and cost.
 
@@ -54,19 +54,27 @@ Recognizing how much effort and skill is necessary to obtain many simultaneous r
 
 ## Results
 
-## Mathematical modeling
+### Mathematical modeling
 
-The total possible number of connections probed using the traditional method of synaptic patch clamp recording can be expressed as a function of number of recorded cells (n), and number of pipettes in the multi-patch apparatus (p), as(1)possible connectionstraditional=np(p2−p).
+The total possible number of connections probed using the traditional method of synaptic patch clamp recording can be expressed as a function of number of recorded cells ($n$), and number of pipettes in the multi-patch apparatus ($p$), as
 
-Similarly, the total possible number of connections probed using the patch-walking method can be expressed as(2)possible connectionspatch−walk=(p2−p)+2(p−1)(n−p).
+$$
+possible connections_{traditional}=\frac{n}{p}(p^{2}−p).
+$$
 
-To visualize the advantage of patch-walking over the traditional method, these two equations can be represented as a matrix of potential probed connections. For example, the total number of possible connections using the traditional method and patch-walking for a two pipette apparatus is depicted in Figure 1A and B, respectively. Using these equations, patch-walking is always preferable in practice for n>p. Furthermore, one can expect the improvement in number of connections probed to approach double as n approaches infinity. For practical cases (apparatus with 2–8 pipettes), patch-walking yields 80–92% more probed connections, or efficiency, for experiments with 10–100 cells than the traditional synaptic connection searching method.
+Similarly, the total possible number of connections probed using the patch-walking method can be expressed as
+
+$$
+possible connections_{patch−walk}=(p^{2}−p)+2(p−1)(n−p).
+$$
+
+To visualize the advantage of patch-walking over the traditional method, these two equations can be represented as a matrix of potential probed connections. For example, the total number of possible connections using the traditional method and patch-walking for a two pipette apparatus is depicted in Figure 1A and B, respectively. Using these equations, patch-walking is always preferable in practice for $n>p$. Furthermore, one can expect the improvement in number of connections probed to approach double as $n$ approaches infinity. For practical cases (apparatus with 2–8 pipettes), patch-walking yields 80–92% more probed connections, or efficiency, for experiments with 10–100 cells than the traditional synaptic connection searching method.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97399/elife-97399-fig1-v1.jpg)
 
 **Figure 1.:** (A-B) Schematically, for patch clamp apparatus with two pipettes in search of synaptically connected neurons to record; colored squares represent connections that can be probed using the traditional approach (A) as compared to patch-walking (B). In this schematic, n=8 cells were patched by P=2 pipettes, either in groups of two (A), which yields two possible connections, or by walking across the tissue (B), which yields almost double the number of possible connections. (C) A multi-patching apparatus with two pipettes was built with automated pressure control and manipulator movement. (D) The software interface used for patch-walking. On the left is the view of the brain slice under the microscope, with the two pipettes highlighted by triangles and user selected cell locations indicated by red circles. On the right are plots used to monitor each step of the patch clamp process: neuron hunting, gigasealing, and membrane test waveform (to monitor break-in state).
 
-## Dual-patching experiment
+### Dual-patching experiment
 
 We built the apparatus (Figure 1C) and developed the software (Figure 1D) to perform patch-walking with two manipulators. We first conducted a dual-patch throughput experiment for two pipettes patching in a brain slice without testing for connectivity. In 33 patching attempts (18 attempts for pipette 1 and 15 attempts for pipette 2), we achieved whole cell success rates for pipette 1 of 44.4% (n=8/18 successful whole cells) and pipette 2 of 46.7% (n=7/15 successful whole cells). This is similar to success rates for manual patching as well as previously reported automated patch clamp robots (43–51% for Kolb et al., 2019). This result demonstrates the expected throughput and yield of these independent, uncoordinated pipettes.
 
@@ -82,7 +90,7 @@ We demonstrate a connectivity matrix similar to those done by previous labs such
 
 According to Perin et al., 2011, at an intersomatic distance of 91.6 ± 0.171 μm, the expected connection probability is 16.9% for each paired recording. Assuming they are independent, we would expect greater than 50% probability of getting at least one connection after just three paired recordings. According to binomial probability theory, we had a probability of 89% to find 3 connections with 29 paired recordings.
 
-Figure 3 shows a connectivity matrix (as in Figure 1B), a spatial representation of the cells patched cells and connection probed, as well as a representative connection found between two cells. The matrix in Figure 3A shows the whole cell current clamp protocol described previously (black traces in leftmost column). During paired recordings, one cell would be stimulated in current clamp (traces along the diagonal). Recording color corresponds to a pair of cells tested for connectivity as in Figure 1, where each color has two traces because each pair of cells can be connected bidirectionally. The nomenclature for each row and column is n.p where n represents the cell number, in this case ranging from 1 to 7, since 7 total cells were patched between both pipettes, and p labeled either a or b represents each of the two pipettes. Cell 7 exhibited signs of decreased cell health, likely due to the duration of the experiment and increasing physical disruptions to the slice during patch-walking. The representative connection shown in more detail in Figure 3C was found between cells 1 and 2, with pre-synaptic cell 1 (black) stimulated and cell 2 (red) recording in voltage clamp the post synaptic currents elicited.
+Figure 3 shows a connectivity matrix (as in Figure 1B), a spatial representation of the cells patched cells and connection probed, as well as a representative connection found between two cells. The matrix in Figure 3A shows the whole cell current clamp protocol described previously (black traces in leftmost column). During paired recordings, one cell would be stimulated in current clamp (traces along the diagonal). Recording color corresponds to a pair of cells tested for connectivity as in Figure 1, where each color has two traces because each pair of cells can be connected bidirectionally. The nomenclature for each row and column is $n.p$ where $n$ represents the cell number, in this case ranging from 1 to 7, since 7 total cells were patched between both pipettes, and $p$ labeled either a or b represents each of the two pipettes. Cell 7 exhibited signs of decreased cell health, likely due to the duration of the experiment and increasing physical disruptions to the slice during patch-walking. The representative connection shown in more detail in Figure 3C was found between cells 1 and 2, with pre-synaptic cell 1 (black) stimulated and cell 2 (red) recording in voltage clamp the post synaptic currents elicited.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97399/elife-97399-fig3-v1.jpg)
 
@@ -104,7 +112,7 @@ Future applications and variations in patch-walking could include the use of cha
 
 ## Methods
 
-## Automated patch clamp apparatus
+### Automated patch clamp apparatus
 
 We designed and implemented an experimental apparatus to demonstrate the utility of patch-walking. The apparatus features a standard electrophysiology rig with two PatchStar micromanipulators. Samples (mouse brain slices) were imaged using a 40 X objective (LUMPLFL40XW/IR, NA 0.8, Olympus) on a motorized focus drive, illuminated under differential interference contrast microscopy (DIC) with an infrared light-emitting diode (780 nm), and captured with a Rolera Bolt camera (QImaging). We used a peristaltic pump (120 S/DV, Watson-Marlow) to perfuse the brain slices with buffer solution. We utilized the brain slice sample holder with integrated cleaning and rinse solution chambers as described previously (Kolb et al., 2016). We followed the cleaning protocol as suggested by Kolb et al., 2016, however we did not include rinsing in the cleaning protocol because recent literature found that there is no impediment to the whole cell yield or quality of recording (Landry et al., 2021; Peng et al., 2019).
 
@@ -114,15 +122,15 @@ For real-time electrophsyiology feedback and collection, we used the Multiclamp 
 
 Following brain slice preparation and pipette fabrication, filling, and installation, pipette location was calibrated according to Kolb et al., 2019 for all pipettes, resulting in a ‘home’ position as described for each pipette.
 
-## Brain slice preparation
+### Brain slice preparation
 
 All animal procedures were in accordance with the US National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee at the Georgia Institute of Technology (A100359). For the brain slice experiments, male mice (C57BL/6, P19–P36, Charles River) were anesthetized with isofluorane, and the brain was quickly removed. Coronal sections (300 µm thick) were then sliced on a vibratome (Leica Biosystems VT1200S) while the brain was submerged in ice-cold sucrose solution containing (in mM) 40 NaCl, 4 KCl, 1.25 NaH2PO4·H2O, 7 MgCl2, 25 NaHCO3, 10 D-Gluocse, 0.5 CaCl2·2H2O, 150 Sucrose (pH 7.3–7.4, 300–310 mOsm). The slices were incubated at 37 °C for 1 hr in neuronal artificial cerebro-spinal fluid (aCSF) consisting of (in mM) 124 NaCl, 2.5 KCl, 1.25 NaH2PO4·H2O, 1.3 MgCl2, 26 NaHCO3, 10 D-Glucose, 2 CaCl2·2H2O, 1 L-Ascorbate·H2O (pH 7.3–7.4, 290–300 mOsm). Prior to recording, the slices were maintained at room temperature for at least 15 min (22–25 °C). The sucrose solution and neuronal ACSF were bubbled with 95%O2/5%CO2. Recordings were performed in mouse primary visual area and somatosensory cortex.
 
-## Patch-clamp recording
+### Patch-clamp recording
 
 Borosilicate pipettes were pulled on the day of the experiment using a horizontal puller (P-1000, Sutter Instruments) to a resistance of 4–6 MΩ. The intracellular solution was composed of (in mM) 135 K-Gluconate, 10 HEPES, 4 KCl, 1 EGTA, 0.3 Na-GTP, 4 Mg-ATP, 10 Na2-phosphocreatine (pH: 7.2–7.3, 290–300 mOsm). Recordings were performed at room temperature with constant perfusion of oxygenated neuronal aCSF. Pipette pressure during patch clamp steps was digitally controlled and pipettes were cleaned according to Kolb et al., 2016; Kolb et al., 2019, as previously described.
 
-## Patch-walking experimental method
+### Patch-walking experimental method
 
 The patch-walking algorithm is depicted schematically in Figure 4. At the beginning of each patch-walking experiment, cells are first selected by the user. For each slice experiment, we selected 8–10 healthy cells located 20–100 µm below the surface of the tissue. These cells were spread across an area of approximately 200 µm x 200 µm (note the field of view under ×40 magnification is approximately 50 µm). These cell locations with three dimensional coordinates are stored in a cell queue for subsequent patch attempts. From these cell coordinates, the robot computes the distance between the pipettes’ respective home positions and each cell.
 
@@ -136,10 +144,10 @@ The ‘patch cell’ step in Figure 1 includes the following: neuron hunting, ne
 
 We define a paired recording as a pair of cells which are simultaneously patch clamped using the patch-walking experimental method. We define probed connections as twice the number of paired recordings, because the connections can be bi-directional. We define possible connections as the theoretical upper limit of probed connections given a number of pipettes and number of cells recorded. Probed connections is, practically speaking, less than possible connections since patch clamp yield is 30–80%based on our experience with the PatcherBot, depending on sample preparation and tissue and cell type.
 
-## Recording quality criteria
+### Recording quality criteria
 
 The access resistance for the neurons in paired recordings were below 40 MΩ, similar to the metric used by Kolb et al., 2019, and if the access changed above 50 MΩ, we stopped recording from that neuron. If the seal quality decreased during recording, the cell is excluded from analysis.
 
-## Connectivity testing
+### Connectivity testing
 
 We tested for connectivity in a manner similar to that done previously by Perin et al., 2011 and the Allen Institute for Brain Science (Campagnola et al., 2022). To perform connectivity testing between two simultaneously patched neurons, we performed the following procedure. The BNC cables were manually moved from the NI DAQ to the Digitizer to enable Clampex control of the cells (rather than LabView). Two protocols were run in order to test for the two possible directions of connectivity. For each protocol, one pipette sent a stimulus in current clamp mode to elicit five action potentials at 20 Hz while the other pipette holding in voltage clamp recorded post-synaptic currents, held at –70 mV. Following this bi-directional measurement, the BNC cables were replaced manually to resume patch-walking.

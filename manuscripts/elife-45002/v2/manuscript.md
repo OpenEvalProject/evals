@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.45002.001 Ribosome biogenesis is a complex and energy-demanding process requiring tight coordination of ribosomal RNA (rRNA) and ribosomal protein (RP) production. Given the extremely high level of RP synthesis in rapidly growing cells, alteration of any step in the ribosome assembly process may impact growth by leading to proteotoxic stress. Although the transcription factor Hsf1 has emerged as a central regulator of proteostasis, how its activity is coordinated with ribosome biogenesis is unknown. Here, we show that arrest of ribosome biogenesis in the budding yeast Saccharomyces cerevisiae triggers rapid activation of a highly specific stress pathway that coordinately upregulates Hsf1 target genes and downregulates RP genes. Activation of Hsf1 target genes requires neo-synthesis of RPs, which accumulate in an insoluble fraction and presumably titrate a negative regulator of Hsf1, the Hsp70 chaperone. RP aggregation is also coincident with that of the RP gene activator Ifh1, a transcription factor that is rapidly released from RP gene promoters. Our data support a model in which the levels of newly synthetized RPs, imported into the nucleus but not yet assembled into ribosomes, work to continuously balance Hsf1 and Ifh1 activity, thus guarding against proteotoxic stress during ribosome assembly.
+Ribosome biogenesis is a complex and energy-demanding process requiring tight coordination of ribosomal RNA (rRNA) and ribosomal protein (RP) production. Given the extremely high level of RP synthesis in rapidly growing cells, alteration of any step in the ribosome assembly process may impact growth by leading to proteotoxic stress. Although the transcription factor Hsf1 has emerged as a central regulator of proteostasis, how its activity is coordinated with ribosome biogenesis is unknown. Here, we show that arrest of ribosome biogenesis in the budding yeast Saccharomyces cerevisiae triggers rapid activation of a highly specific stress pathway that coordinately upregulates Hsf1 target genes and downregulates RP genes. Activation of Hsf1 target genes requires neo-synthesis of RPs, which accumulate in an insoluble fraction and presumably titrate a negative regulator of Hsf1, the Hsp70 chaperone. RP aggregation is also coincident with that of the RP gene activator Ifh1, a transcription factor that is rapidly released from RP gene promoters. Our data support a model in which the levels of newly synthetized RPs, imported into the nucleus but not yet assembled into ribosomes, work to continuously balance Hsf1 and Ifh1 activity, thus guarding against proteotoxic stress during ribosome assembly.
 
 ## Introduction
 
@@ -36,43 +36,83 @@ In this study, we uncover a novel regulatory pathway, hereafter referred to as t
 
 ## Results
 
-## Topoisomerase depletion triggers a rapid repression of RP genes and activation of proteostasis genes
+### Topoisomerase depletion triggers a rapid repression of RP genes and activation of proteostasis genes
 
 In an effort to better understand the role of the two major eukaryotic DNA topoisomerases in protein-coding gene transcription, we generated yeast strains in which Top1, Top2, or both of these enzymes are rapidly degraded by the auxin-induced degron (AID) method (Nishimura et al., 2009) and confirmed by western blotting that significant depletion of either protein was obtained between 10 and 20 min following auxin addition to the medium, and that Top2 depletion, as expected, prevents cell growth (Figure 1—figure supplement 1A,B). We then performed ChIP-seq analysis of RNA polymerase II (RNAPII) in the Top1-AID, Top2-AID and Top1/2-AID strains at 20 and 60 min following auxin addition (Figure 1A–C, Supplementary file 1). As expected (Brill et al., 1987; Brill and Sternglanz, 1988), the absence of Top2 had little or no effect on RNAPII distribution (Figure 1B). However, Top1 depletion triggered a rapid response at two specific groups of genes: upregulation of Hsf1 target genes and downregulation of RP genes (Figure 1A,D; Figure 1—figure supplement 1C,D). Remarkably, this response was transient, as both groups of genes returned to normal levels (i.e. before auxin addition) by 60 min. This re-equilibration was dependent upon Top2 since it failed to occur in the Top1/2-AID strain, where prolonged auxin treatment led to significant dysregulation of many other RNAPII-transcribed genes (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig1-v2.jpg)
+
+**Figure 1.:** (A, B, C) Scatter plots (top panels) and box plots (bottom panels) comparing RNAPII binding (as measured by Rpb1 ChIP-seq) in Top1-AID (A), Top2-AID (B) and Top1/2-AID (C) strains at the indicated times following either auxin or vehicle addition to the media. Indicated gene categories (RP, n = 138; ribosome biogenesis [RiBi], n = 229; Msn2 target genes, n = 45; and Hsf1 target genes, n = 19) are color-coded on the scatter plots and displayed separately on the box plots, together with all remaining genes as a fifth class (others, n = 4610). (D) Genome browser tracks showing RNAPII (Rpb1) ChIP-seq read counts at the indicated positions on chromosomes X, XIII and VII at 0, 20, or 60 min following auxin addition to Top1-AID (top panels) and Top1/2-AID (bottom panel) strains. Gene names and open reading frame (ORF) positions are shown above. (E) Ifh1 occupancy, measured by qPCR ChIP at the RPL30 and RPL39 promoters 20 min following auxin addition to cultures of Top1-AID and Top1/2-AID strains. Bar height indicates the average and error bars the range of n = 4 biological replicates. (F) Schematic representation of protocol for Hsf1-FRB nuclear depletion (anchor-away) induced by rapamycin (Rapa) followed by Top1-AID depletion. (G) Box plots showing RNAPII (Rpb1) ChIP-seq signal following Hsf1-FRB nuclear depletion by anchor-away (-Hsf1, left panel), Top1-AID degradation (auxin, middle panel) or both Hsf1-FRB and Top1-AID depletion (auxin / -Hsf1, right panel) for the five functional groups described in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Tenfold serial dilution of Top1-AID or Top1/2-AID cells spotted onto rich medium and grown at 30°C for 24 or 48 hr with or without auxin treatment. (B) Top1 or Top2 tagged as indicated were detected by western blot using antibodies against Myc or AID antibody in a whole-cell extract. Ponceau red stain served as a loading control (bottom panel). (C) GO of genes that are upregulated (Rpb1-ChIP) more than two times following Top1 depletion. (D) Circle diagram showing number of RP genes in the 146 genes downregulated more than two times following Top1 depletion. (E–F) Rap1 (E) or Fhl1 (F) occupancy at the RPL30 and RPL39 promoters at 20 min following Top1 or Top1/2 depletion. (G) 10-fold serial dilution of anchor away cells background spotted onto rich medium and grown at 30°C for 40 hr with (Auxin, Rapamycin) or without treatment (vehicle).
 
 Since upregulation of proteostasis-related genes and downregulation of RP genes are characteristic of many different stress responses, we decided to quantify the effect of Top1 depletion on transcription all gene groups that have been classified as part of the general ‘Environmental Stress Response’ (ESR; Gasch et al., 2000), which include an additional group of stress-induced genes regulated by the Msn2/4 TFs and a large suite of genes involved in ribosome biogenesis (RiBi genes). This analysis shows clearly that Top1 depletion, as well as depletion of both Top1 and Top2 (at the early 20 min time point), triggers a highly specific stress response linked to RP genes and Hsf1 target genes (Figure 1A–C). Such a targeted response is unlikely to result from a global topological effect on RNAPII recruitment but would instead appear to be the consequence of the activation of a specific signaling pathway that is more restricted in nature than the ESR.
 
 To explore the target(s) of this hypothetical signaling pathway at RP genes, we monitored by qPCR ChIP the promoter association of three TFs (Rap1, Fhl1 and Ifh1) that operate at the majority (>90%) of these 138 genes (Knight et al., 2014). Interestingly, we found that the activator Ifh1 is rapidly released from RP gene promoters after topoisomerases depletion (Figure 1E), whereas Rap1 and Fhl1, which bind directly to RP promoter DNA, are not affected (Figure 1—figure supplement 1E–F). To confirm that Hsf1 is indeed required for upregulation of genes following Top1 depletion, we used the anchor-away technique (Haruki et al., 2008) to rapidly remove Hsf1 from the nucleus (30 min treatment with rapamycin; Solís et al., 2016) before initiating Top1-AID degradation by auxin addition (Figure 1F). Efficient nuclear depletion of Hsf1 was confirmed by the inability of the Hsf1-FRB, Top1-AID strain to form colonies in the presence of rapamycin (Figure 1—figure supplement 1G). Note that the strain used in this and all other anchor-away experiments contains the TOR1-1 mutation and is thus resistant to the normal physiological consequences of rapamycin treatment, which inactivates the growth-promoting TORC1 kinase (Heitman et al., 1991; Loewith and Hall, 2011). This experiment revealed that Hsf1 nuclear depletion completely abolishes activation of stress genes following Top1 depletion without affecting down-regulation of RP genes (Figure 1G). Therefore, activation of stress-induced genes following Top1 depletion is completely Hsf1-dependent, whereas repression of RP genes is independent of Hsf1 or the induction of its target genes. We would also note that the stress pathway induced by Top1 depletion is unusually restricted in comparison to many other stress responses that are often grouped together as the Environmental Stress Response (ESR; Gasch et al., 2000), since Msn2/4 target genes are not induced and RiBi genes are not downregulated (Figure 1A,G).
 
-## Top1 depletion arrests ribosome biogenesis and activates a ribosomal assembly stress response
+### Top1 depletion arrests ribosome biogenesis and activates a ribosomal assembly stress response
 
 Although it may seem surprising that depletion of topoisomerases can induce a Hsf1-dependent stress response, formation of distinct nuclear foci by the Btn2 aggregase and perinuclear accumulation of the proteasome subunit Pre6 following Top1/2 degradation (Figure 2—figure supplement 1A,B) both point to the induction of proteotoxic stress in the nucleus (Miller et al., 2015a). Top1 was initially identified through a mutation (mak1) defective in large ribosomal subunit production (Thrash et al., 1985) and was later shown to be required for proper rRNA synthesis (Brill et al., 1987; El Hage et al., 2010; French et al., 2011). Consistent with these findings, we observed a strong reduction of pre-rRNA synthesis as shown by decreased [3H]-adenine pulse-labeling of the RNAPI-transcribed 35S pre-rRNA, and two co-transcriptionally cleaved products, 27S and 20S pre-rRNAs, as early as 10 min after initiation of Top1 (or Top1 and Top2) depletion by addition of auxin to the medium (Figure 2—figure supplement 1C). This decreased rRNA synthesis is accompanied by an elongation defect, as shown by the accumulation of truncated pre-rRNAs that were initially described by the Tollervey laboratory (El Hage et al., 2010; Figure 2A). Further downstream, the rapid defect in rRNA production caused by inhibition of RNAPI elongation leads to unbalanced production of 40S and 60S ribosomal subunits, with a marked deficiency of the large (60S) subunit relative to the small (40S) subunit (Figure 2B). This would be expected to create a disequilibrium between RP and rRNA production, and more specifically an excess of unassembled RPs. Consistent with this, we detect accumulation of both and large and small subunit proteins (Rpl3 and Rps8, respectively) in trailing fractions of polysome gradients (Figure 2C). These observations strongly suggest that RPs fail to be incorporated normally into ribosomes immediately following topoisomerase degradation. In addition, this sedimentation profile may also reflect the presence of disassembling or incompletely assembled pre-60S particles. RPs are known to be prone to aggregation (David et al., 2010; Pillet et al., 2017; Rand and Grant, 2006; Weids et al., 2016) and recent reports show that newly synthetized, unassembled RPs accumulate in aggregates in response to ribosome assembly stress (Sung et al., 2016a; Sung et al., 2016b). Significantly, we also observed accumulation of RPs in an insoluble fraction following topoisomerase degradation (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig2-v2.jpg)
+
+**Figure 2.:** (A) Northern blot of 5’ETS1-containing rRNAs prepared from cultures of wild-type, Top1-AID, Top2-AID and Top1/2-AID cells that had been pulse-labeled for 2 min with [3H] adenine at the indicated times following addition of auxin to the media. Total RNAs were extracted and samples were separated on agarose gels, transferred to a nylon membrane and first directly autoradiographed to reveal pulse labeling of nascent rRNAs (see Figure 2—figure supplement 1C). The membrane was next hybridized with a 32P-labeled oligonucleotide probe allowing detection of all species containing 5’ETS1 (ACGACAAGCCT-ACTCGAATTCGT). Truncated pre-rRNA fragments, first identified in cells lacking Top1 (El Hage et al., 2010), are indicated (*). (B) Polysome sedimentation profiles (OD260) of WT, Top1-AID, Top2-AID, and Top1/2-AID strains 20 min following auxin treatment (large panels, as indicated). The top of each gradient (fractions 7 to 11), corresponding to 40S and 60S subunit peaks, is expanded below, where peak height differences (60S:40S ratio) are indicated. (C) Total cell extracts prepared from the indicated fractions of sedimentation profiles of WT and Top1/2-AID strains (from B) were TCA precipitated and analyzed by Western blot following SDS-PAGE, using an antibody against Rpl3 and Rps8, as indicated. (D) Total (left panels) and detergent-insoluble pellet (right panels) fractions isolated from lysates of Top1/2AID cells treated (+) or not (-) with auxin were analyzed by SDS-PAGE and Coomassie blue staining (top panels) or immunoblotting with the indicated antibodies (bottom panels). The pellet fraction is overloaded 25-fold compared to the total extract fractions. (E, F, G) Scatter plots (top panels) comparing RNAPII (Rpb1) ChIP-Seq read counts for individual genes in Utp8-AID (E) or Utp13-AID (F) cells after 20 min of auxin or vehicle treatment, or WT cells after 20 min of treatment with diazaborine or vehicle (G) (y-axis: auxin or diazaborine) for 20 min versus non-depleted cells (x-axis, Vehicle). Each dot represents a gene (5041 genes in total) and genes are color-coded according to functional groups, as in Figure 1A. Bottom panels display the corresponding box plots for the four indicated gene categories plus all other genes (others).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A Top1/2-AID strain expressing Btn2-eGFP and Nop1-mCherry was grown to exponential phase and cell samples were used for fluorescence microscopy analysis after 20 min of vehicle (Veh) treatment (mock depletion; top panels) or auxin (Aux) treatment (Top1/2 depletion; bottom panels). The number of Btn2-eGFP foci per cell was quantified and is presented in the panel to the right. 75–100 cells were quantified for each experiment, and the data are reported as averages from two experiments, with standard deviations indicated. (B) A Top1/2-AID strain expressing Pre6-eGFP and Nop56-mCherry was grown exponentially and cell samples were used for fluorescence microscopy analysis after 20 min of Top1/2 depletion by auxin treatment (Aux) or mock depletion (Veh). The number of cells where Pre6-eGFP showed a peri-nuclear localization was quantified and is presented as a percentage. 75–100 cells were quantified for each experiment, and the data are reported as averages from two experiments, with standard deviations indicated. (C) Yeast cells (either wild type, Top1-AID, Top2-AID or Top1/2-AID, as indicated) were grown synthetic glucose medium lacking adenine to mid-log phase at which point auxin was added (to 0.5 mM) and cells were then pulse labeled with [3H] adenine for 2 min at different time points after auxin addition (T = 0, 10, 20, 30 min). RNAs were extracted and samples were separated on agarose gels, transferred to a nylon membrane. After documenting 3H labeling by autoradiography, the same membrane was used for the Northern blot shown in Figure 2A. (D) RNAPII ChIP occupancy at the RPL30 and RPL39 promoters or at the SSA4 and HSP42 promoters at 20 min following Top1 and Top2 depletion.
 
 The observations described above led us to hypothesize that the transcriptional response to Top1 degradation is a consequence of defective ribosome assembly, perhaps driven by the proteotoxic stress caused by the accumulation of unassembled RPs. To challenge this idea, we measured the transcriptional response to three different perturbations to ribosome biogenesis: depletion of two essential ribosome assembly factors (Utp8 and Utp13) and treatment of cells with diazaborine. Utp8p is a member of the t-UTP subcomplex of 90S pre-ribosomes and its depletion inhibits rDNA transcription, leading to a reduction of the primary 35S pre-rRNA transcript and subsequent processing intermediates (Gallagher et al., 2004). In contrast, depletion of Utp13 (a member of the UTP-B subcomplex) interferes with downstream processing and synthesis of 40S subunits and causes decreased 18S rRNA levels without affecting the levels of the 25S or 5.8S rRNAs (Gallagher et al., 2004). Diazaborine, an inhibitor of the essential Drg1 AAA-ATPase, rapidly blocks mid-late steps of 60S subunit maturation (Loibl et al., 2014). Remarkably, all these treatments triggered a similar transcriptional response to that which occurs following Top1 depletion, namely a specific downregulation of RP genes and upregulation of Hsf1 target genes (Figure 2E–G; Supplementary file 2), which we refer to as the ‘Ribosome Assembly STress Response’ (RASTR).
 
 Hsf1 activity is stimulated by many different types of cellular stress, including stalled ribosomes. A pioneering study reported that a set of proteins termed the RQC binds to 60S ribosomal subunits containing stalled polypeptides and leads to their degradation. In the process, the RQC triggers a specific stress signal that leads to Hsf1 target gene activation (Brandman et al., 2012). Thus, cells lacking a component of the RQC, the Tae2 protein, fail to activate Hsf1 following translational stress. To ask if RASTR might be related to the RQC, we induced Top1/2 degradation in tae2-Δ cells. We found that activation of two Hsf1 target genes (SSA1 and HSP42) and downregulation of two RP genes (RPL30 and RPL39) was unaffected by deletion of TAE2 (Figure 2—figure supplement 1D) and conclude that RQC does not play a role in RASTR. These results highlight that cells have developed distinct mechanisms to adapt the Hsf1 transcriptional program to defects in both ribosome activity and ribosome assembly.
 
-## Ifh1 sequestration in an insoluble nuclear fraction during RASTR is driven by RP accumulation
+### Ifh1 sequestration in an insoluble nuclear fraction during RASTR is driven by RP accumulation
 
 Although many studies would support the notion that Hsf1 activation during RASTR occurs through sequestration of its inhibitory partner Hsp70 by RP aggregates (Krakowiak et al., 2018; Shi et al., 1998; Zheng et al., 2016), it is less clear how ribosome assembly stress could trigger release of Ifh1 from RP gene promoters. We reported previously that the association of Ifh1 with RP gene promoters in growing cells is rapidly disrupted (within 5 min) following inhibition of the growth-promoting TORC1 kinase by addition of rapamycin to the medium (Schawalder et al., 2004). More recently (Albert et al., 2016), we found that stable release of Ifh1 from RP gene promoters (measured 20 min after rapamycin addition) requires its C-terminal domain together with a complex of proteins containing casein kinase 2 (CK2) and two RiBi factors, Utp22 and Rrp7, with which Ifh1 interacts to form the CURI complex (Rudra et al., 2007). Thus, in ifh1-ΔC cells the truncated protein is rapidly released but later returns to RP gene promoters following TORC1 inhibition. This led us to propose two distinct mechanisms controlling the promoter release of Ifh1 following stress: one operating at a short timescale (<5 min) and the other on a long timescale (~20 min). Interestingly, ifh1-ΔC promoter release is stable following Top1 depletion, suggesting that an unknown mechanism regulates Ifh1 during RASTR (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig3-v2.jpg)
+
+**Figure 3.:** (A) Ifh1 occupancy at the RPL30 and RPL37A promoters 20 min following vehicle, rapamycin or auxin treatment of Top1/2-AID strains expressing either WT Ifh1 (IFH1) or a C-terminal truncated allele (ifh1-∆C). Bar height indicates the average and error bars the range of N = 4 biological replicates. (B) Box plots showing the kinetics of RNAPII ChIP-seq changes at Hsf1 target and RP genes at the indicated time points (minutes) following auxin treatment in Top1/2-AID (top panel) or Top1-AID (bottom panel) strains. (C) A Top1/2-AID strain expressing Ifh1-eGFP and Nhp6-mCherry was grown exponentially and cell samples were used for fluorescence microscopy analysis after 20 min of auxin (Aux) or vehicle (Veh) treatment. (D) TOM1 (top panels) and tom1-Δ (bottom panels) strains expressing Ifh1-eGFP and Nhp6-mCherry were grown exponentially and cell samples were used for fluorescence or transmission microscopy analysis, as indicated. (E) Tenfold serial dilutions of IFH1, ifh1-AA (ifh1 680A/681A) or ifh1-6 cells transformed in either TOM1 or tom1-Δ backgrounds (as indicated) were grown in YPD medium for 44 hr at 30°C before being photographed. (F) Scatter plot comparing average number of peptides purified in an insoluble fraction from Top1/2-AID cells treated for 20 min with either auxin (y-axis, Auxin) or vehicle (x-axis, Vehicle). Each dot represents a protein, color-coded according to functional group as above (green: RP, red: Hsf1 target gene product, yellow: RiBi protein, gray: others), with some specific proteins indicated by arrows. (G) Gene Ontology and p-values of protein groups that are the most enriched in the insoluble fraction following Top1/2-AID depletion (Δ > 3 peptides in insoluble fraction after topoisomerase depletion compared to vehicle in all experiments, n = 3 biological replicates).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatter plot comparing iBAQ abundances (Δ-iBAQ: intensity-Based Absolute Quantification) of peptides recovered from an insoluble fraction of bortezomib-treated wild type (x-axis) or tom1-Δ cells (y-axis). Each dot represents a protein, color-coded according to functional group as above (green: RP, red: Hsf1 target gene product, yellow: RiBi protein, gray: others), with some specific proteins indicated by arrows. Raw data are from Sung et al. (2016a); Sung et al. (2016b). (B) Box plot showing number of peptides corresponding to large (RPL) or small (RPS) ribosomal proteins recovered from insoluble fraction in cells treated for 20 min with either auxin (Aux) or vehicle (Veh).
 
 The fact that RP gene repression and Hsf1 target gene activation occur with identical kinetics following RASTR activation (Figure 3B), and that Ifh1 concentrates in nuclear foci rapidly after topoisomerase depletion (Figure 3C), suggests that Ifh1 could be sensitive to the accumulation of unassembled RPs in the nucleus, as is presumably the case for Hsf1. Several lines of evidence are consistent with this hypothesis. To begin with, in cells lacking Tom1, an E3 ligase required for degradation of unassembled RPs (Sung et al., 2016a; Sung et al., 2016b), but not in TOM1 cells, Ifh1 accumulates in prominent nuclear foci even in the absence of stress (Figure 3D). This suggests that Ifh1 aggregates in cells that are unable to efficiently degrade excess RPs, even under optimal growth conditions. Consistent with this, the published mass spectrometry data of insoluble fractions from cells either treated with the proteasome inhibitor bortezomib or lacking Tom1 clearly identified Ifh1, together with RPs, RiBi proteins and two Hsp70 proteins, Ssa1 and Ssa2, inhibitory partners of Hsf1 (Figure 3—figure supplement 1A). These data indicate that Ifh1 could be trapped in an insoluble cellular fraction in the absence of Tom1 and thus decrease the pool of Ifh1 able to bind with RP gene promoters. To test this possibility, we combined deletion of TOM1 with a mutant allele of IFH1 (ifh1-AA) that weakens its interaction with RP gene promoters. Remarkably, tom1-Δ is synthetically lethal with ifh1-AA (Figure 3E) supporting the notion that RP aggregation could directly impact on Ifh1 promoter binding. Lastly, to exclude the possibility that the genetic interaction between TOM1 and the mutated allele of IFH1 could be linked to the growth defect of this mutation, we examined another mutated allele of IFH1 (ifh1-6) that triggers a similar growth defect (Figure 3E). Importantly, we showed in a previous study that this ifh1-6 mutant protein remains bound at high levels to RP genes promoter even under stress conditions (Albert et al., 2016). Remarkably, tom1-Δ is not synthetically lethal with ifh1-6 (Figure 3E), supporting the notion that genetic interaction with ifh1-AA is directly linked to the ability of Ifh1 to bind RP gene promoters.
 
 To assess directly whether Ifh1 is sequestered in aggregates during RASTR, we analyzed by mass spectrometry the insoluble fraction following topoisomerase depletion. As previously reported for tom1-Δ cells (Sung et al., 2016a), the insoluble fraction is enriched in chaperones and RPs (Figure 3F,G). We also noted a strong increase in RiBi factors, primarily those implicated in biogenesis of the large ribosomal subunit (Figure 3G). Importantly, Ifh1 was never detected in an insoluble fraction in the absence of stress but was invariably detected in these fractions following topoisomerase depletion (Supplementary file 3). This rapid sequestration of Ifh1 may be sufficient to explain the observed downregulation of RP genes during RASTR.
 
-## Neo-synthetized RPs are required for RASTR activation
+### Neo-synthetized RPs are required for RASTR activation
 
 Given their fast turnover rate, nuclear accumulation in the absence of ribosome assembly and propensity to aggregate, unassembled RPs could be ideally positioned to rapidly signal ribosome biogenesis defects (Sung et al., 2016a; Milkereit et al., 2001). To evaluate the importance of newly synthetized RPs in RASTR, we blocked their production by cytoplasmic anchoring of Ifh1 before topoisomerase depletion (Figure 4A). It is important to note that Ifh1 binding is highly specific to RP genes (Knight et al., 2014) and that the transcriptional effect of its nuclear depletion is restricted to RP genes and a very small number of additional targets (Supplementary file 4). Although Ifh1 depletion by anchor-away may not be complete (the strain still grows on plates containing rapamycin, albeit slowly, even though Ifh1 is essential for growth; Figure 4—figure supplement 1A), it nonetheless leads to a significant and highly specific decrease in RP gene transcription as measured by RNAPII ChIP-seq (Figure 4B; Supplementary file 4). Interestingly, Ifh1 depletion also leads to aberrant rRNA processing (Figure 4C) as would expected in conditions where RP levels become limiting (Reiter et al., 2011). Remarkably, we noted that 60 min of Ifh1 anchoring alone, in the absence of topoisomerase depletion, also caused a significant down-regulation of Hsf1 target genes (Figure 4D; Supplementary file 4) even though Ifh1 is absent from the promoters of these genes (Figure 4—figure supplement 1B), suggesting that the Hsf1 transcriptional program is continuously influenced by RP production. Consistent with this idea, we found that upregulation of Hsf1 target genes was either abolished or strongly reduced (Figure 4E,F,G; Supplementary file 4) when Top1 or Top1 and Top2 were degraded following nuclear depletion of Ifh1, indicating that RP production is required for Hsf1 target gene activation during RASTR.
 
-## Cells balance RP production and Hsf1 activity even in the absence of stress
+![Figure 4.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of protocol for Ifh1-FRB nuclear depletion (0–60 min of rapamycin treatment) followed by Top1-AID or Top1/2-AID degradation (auxin treatment, 40–60 min). (B) Scatter plot comparing RNAPII (Rpb1) ChIP-seq in Ifh1-FRB cells either rapamycin-treated for 60 min (y-axis, -Ifh1, Ifh1-FRB nuclear depletion) or untreated (x-axis, Vehicle, no Ifh1-FRB depletion). Categorization and color coding of genes as above. (C) Northern blots of pre-rRNA after 0 or 60 min of Ifh1-FRB nuclear depletion by anchor-away (-Ifh1) or vehicle (Veh) treatment of Ifh1-FRB strain. (D) Box plots of the data shown in (B) for the indicated five gene categories, showing fold-change upon Ifh1-FRB nuclear depletion compared to mock-treated cells. (E) Scatter plots comparing RNAPII (Rpb1) ChIP-seq in Top1-AID Ifh1-FRB cells either auxin-treated (y-axis, Aux, left panel) or auxin- plus rapamycin-treated (y-axis, Aux / -Ifh1, right panel) treated, as described in (A), versus untreated cells (x-axis, vehicle, both panels). (F) As in (E), but for Top1/2-AID Ifh1-FRB cells. (G) Box plots showing RNAPII (Rpb1) ChIP-seq change after rapamycin and/or auxin treatment for Hsf1 target genes in Top1-AID Ifh1-FRB cells (left) or Top1/2-AID Ifh1-FRB cells (right). Asterisks show significant difference according to student’s t-test (*: p<0.05, ***: p<0.001, ns: Not significant), p-value is indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tenfold serial dilution of anchor away cells background spotted onto rich medium and grown at 30°C for 40 hr with (Auxin, Rapamycin) or without treatment (vehicle). (B) Average Ifh1 ChIP-seq signal related to the TSS at promoters of RP or Hsf1 genes.
+
+### Cells balance RP production and Hsf1 activity even in the absence of stress
 
 As an alternative approach to test the requirement for de novo RP synthesis to initiate RASTR we used cycloheximide treatment, which blocks all translational elongations, thus leading to rapid depletion of the nuclear pools of RPs (Figure 5A; Gorenstein and Warner, 1977; Warner, 1977; Reiter et al., 2011; Lam et al., 2007). As reported by others (Reiter et al., 2011), we confirmed that cycloheximide alone also triggers a rapid arrest of rRNA processing (Figure 5B). Quite strikingly, we observed a transcriptional response to cycloheximide treatment exactly opposite to that induced by RASTR, namely Hsf1 target gene downregulation and RP gene upregulation (Figure 5C; Supplementary file 5). This finding suggests that even in unstressed cells RP production may contribute to a basal level of Hsf1 activation while at the same time limiting Ifh1 activity at RP gene promoters.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic related to experiments in subsequent panels describing the effect of cycloheximide treatment on de novo RP production and auxin treatment on Top1-AID (or Top1/2-AID) degradation. (B) Northern blots of pre-rRNA after 0, 5, 10, and 20 min of cycloheximide (CHX) treatment. (C) Scatter plot comparing RNAPII (Rpb1) ChIP-seq after 20 min of cycloheximide treatment (y-axis, CHX) to that of non-treated cells (x-axis, vehicle) at the indicated groups of target genes. (D) Scatter plots comparing RNAPII ChIP-seq in auxin-treated to untreated cells (left panel) and in auxin + cycloheximide (CHX)-treated to untreated cells (right panel). In both cases cells express Top1-AID. (E) Scatter plots comparing RNAPII ChIP-seq as in (D), but for Top1/2-AID cells. (F) Box plots showing RNAPII ChIP-seq fold-change for Hsf1 target genes after cycloheximide (CHX) and/or auxin (Aux) treatment of Top1-AID or Top1/2-AID cells, as indicated (data taken from experiments shown in D and E). p-Values are shown above the indicated comparisons together with significance according to student’s t-test (***: p<0.001, ns: not significant). (G–H) Top1/2-AID strains expressing Rpl25-eGFP (G) or Ifh1-eGFP (H) and Nhp6-mCherry were grown exponentially and samples were used for fluorescence microscopy analysis after 20 min of auxin (top) or vehicle treatment (bottom), in the absence (left) or presence (right) of cycloheximide (CHX).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45002/elife-45002-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Box plots showing RNAPII ChIP-seq fold-change for Hsf1 target genes after auxin (Aux) and/or cycloheximide (CHX) treatment of Top1-AID or Top1/2-AID cells, as indicated. (B) A tom1-Δ strain expressing Ifh1-eGFP and Nhp6-mCherry was grown to mid-exponential phase and cell samples were used for fluorescence microscopy analysis following 20 min of vehicle (top panels) or cycloheximide (CHX; bottom panels) treatment. (C) Ifh1 occupancy at the RPL30 promoter 20 min following cycloheximide (CHX, red) or vehicle (Veh, blue) treatment in wild type (TOM1) or tom1-Δ cells. (D) Ifh1 occupancy at the RPL30 and RPL37A promoters 0 or 20 min following mock or Top1/2-AID depletion (- or Aux) in the presence (CHX) or absence (-) of cycloheximide. (E, F) Numbers of cells where Rpl25-eGFP (E) or Ifh1-eGFP (F) nuclear foci were identified, presented as a percentage. In each experiment 75–100 cells were used for the quantification. Data are reported as averages from two experiments, with standard deviations indicated.
 
 Significantly, treatment of cells undergoing Top1 or Top1/2 depletion with cycloheximide (auxin + CHX) completely abolished both RP gene repression and activation of Hsf1 target genes (Figure 5D,E; Supplementary file 5). Indeed, Hsf1 target gene activation under these conditions is lower than in untreated cells and not significantly different than that seen in cells treated with cycloheximide alone (Figure 5—figure supplement 1A). These findings clearly demonstrate that RASTR is dependent upon de novo protein synthesis. Importantly, it was recently reported that cycloheximide treatment efficiently prevents aggregation of newly synthesized RPs following proteasome inhibition (Sung et al., 2016a). Perhaps as a direct consequence of this, we found that CHX treatment also leads to strong reduction of Ifh1-eGFP nuclear foci that are observed in cells lacking the ubiquitin ligase Tom1, which is specifically required for efficient degradation of unassembled RPs (Sung et al., 2016a; Sung et al., 2016b; Figure 5—figure supplement 1B). Furthermore, Ifh1 dis-aggregation following cycloheximide exposure is associated with increased Ifh1 binding at a RP gene promoter, which becomes significant in tom1-Δ cells (Figure 5—figure supplement 1C). Similarly, cycloheximide treatment also prevents the release of Ifh1 from RP gene promoters in response to the activation of RASTR by topoisomerase depletion (Figure 5—figure supplement 1D). Considered as a whole, these data suggest that both RP and Ifh1 subnuclear structures (aggregates) are dynamic, promoted by de novo RP production upon RASTR initiation, and capable of influencing Ifh1 promoter binding. Consistent with this view, we observed a large increase in cells that accumulate RP (Rpl25) or Ifh1 nuclear aggregates during RASTR that is abolished in the presence of cycloheximide (Figure 5F,G; Figure 5—figure supplement 1E, F).
 
 Taken together with the strong reduction of Hsf1 target gene activation following Ifh1 cytoplasmic anchoring, both in the presence and absence of topoisomerase degradation, our observations on the effect of cycloheximide highlight the interwoven nature of RP and Hsf1 target gene regulons and support the notion that unassembled, aggregated RPs constitute the primary RASTR-induced signal capable of regulating both Ifh1 and Hsf1 activities, albeit in an opposite direction. More generally, these data indicate that newly synthetized RPs, in both stressed and unstressed cells, operate as a central hub in coordinating the expression of RP genes themselves with the Hsf1-dependent activation of chaperone and proteasome genes.
 
-## RASTR is the first transcriptional response to environmental stress
+### RASTR is the first transcriptional response to environmental stress
 
 We next turned our attention to the potential involvement of RASTR during more general stress responses that might also rapidly affect ribosome assembly. In an initial set of experiments, we inactivated the conserved growth-promoting TORC1 kinase by treatment of cells with rapamycin, which is known to mimic a major part of the environmental stress response, including osmotic and redox stress, as well as carbon, nitrogen, phosphate or amino acid starvation (Loewith and Hall, 2011). As reported previously, rapamycin triggers a rapid arrest of rRNA processing (Figure 6A) and a decrease of RP and RiBi gene expression (Figure 6B,C; Supplementary file 6). Interestingly, we noted that Hsf1 target genes are transiently up- and downregulated at 5 and 20 min, respectively, following rapamycin addition (Figure 6B,C; Supplementary file 6), suggesting that RASTR is activated at the early time point but shortly thereafter turned off. Consistent with this view, it has been reported that RP production ceases around 15 min after rapamycin treatment (Reiter et al., 2011), which we suggest would turn off the signal for RASTR, thus explaining the downregulation of Hsf1 target genes observed at 20 min.
 
@@ -114,30 +154,166 @@ Our work also provides insights into the connection between ribosome assembly an
 
 ## Materials and methods
 
-## ChIP-Seq
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>C7698</td>
+      <td>Materials and methods subsection: Yeast strains and growth</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Sigma</td>
+      <td>R8781</td>
+      <td>Materials and methods subsection: Yeast strains and growth</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Auxin</td>
+      <td>Sigma</td>
+      <td>1288G</td>
+      <td>Materials and methods subsection: Yeast strains and growth</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diazaborine</td>
+      <td>Provided by H Bergler. Zisser et al., 2018</td>
+      <td>PMID: 29294095</td>
+      <td>Materials and methods subsection: Yeast strains and growth</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq ChIP Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>IP-202-9001DOC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody, rabbit polyclonal</td>
+      <td>Anti-RNA polymerase II CTD repeat YSPTSPS (phospho S5)</td>
+      <td>Abcam</td>
+      <td>ab5131</td>
+      <td>Rabbit polyclonal; (1 ug per ChIP (50 ml OD = O0.5)</td>
+    </tr>
+    <tr>
+      <td>Antibody, rabbit polyclonal</td>
+      <td>Anti-Rap1</td>
+      <td>N/A Schawalder et al., 2004 (PMID:15616569)</td>
+      <td>RRID: AB_2801428</td>
+      <td>Rabbit polyclonal; (5 ul per ChIP (50 ml OD = O0.5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpl3</td>
+      <td>Provided by Warner, 1977.</td>
+      <td>PMID: 9121443</td>
+      <td>Results, Figure 5. Mouse monoclonal; 1:10 000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpl6</td>
+      <td>Provided by O Gadal</td>
+      <td></td>
+      <td>Rabbit polyclonal; 1:10 000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rps8</td>
+      <td>Provided by G Dieci</td>
+      <td></td>
+      <td>Rabbit polyclonal; 1:10 000</td>
+    </tr>
+    <tr>
+      <td>Antibody, rabbit polyclonal</td>
+      <td>antibody Ifh1</td>
+      <td>N/A (Knight et al., 2014) PMID: 25085421</td>
+      <td>AB_2801429</td>
+      <td>Rabbit polyclonal (2 ul per ChIP (50 ml OD = O0.5)</td>
+    </tr>
+    <tr>
+      <td>Antibody, rabbit polyclonal</td>
+      <td>Antibody Fhl1</td>
+      <td>N/A (Knight et al., 2014) PMID: 25085421</td>
+      <td>AB_2801431</td>
+      <td>Rabbit polyclonal (2 ul per ChIP (50 ml OD = O0.5)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Saccharomyces cerevisiae, W303</td>
+      <td>W303: MATa/MATα leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15</td>
+      <td>Thomas &amp; Rothstein, 1989. PMID: 2645056. Experimental procedures, Strains. Table 1.</td>
+      <td>See Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Primary sequence files</td>
+      <td>GEO</td>
+      <td>accession number GSE125226</td>
+      <td>Materials and methods subsection: Plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-link-GFPEnvy-SpHis5 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_60782</td>
+      <td>Materials and methods subsection: Plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RPL25-envyGFP-plasmid</td>
+      <td>This paper</td>
+      <td>Plasmid #1037</td>
+      <td>Materials and methods subsection: Plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315-RPL25-eGFP</td>
+      <td>Milkereit et al. (2001) PMID: 11313466</td>
+      <td></td>
+      <td>Materials and methods subsection: Plasmid constructions</td>
+    </tr>
+  </tbody>
+</table>
+
+### ChIP-Seq
 
 Cultures of 50 mL in YPAD were collected at OD6000.4–0.8 for each condition. The cells were crosslinked with 1% formaldehyde for 5 min at room temperature and quenched by adding 125 mM glycine for 5 min at room temperature. Cells were washed with ice-cold HBS and resuspended in 3.6 mL of ChIP lysis buffer (50 mM HEPES-Na pH 7.5, 140 mM NaCl, 1 mM EDTA, 1% NP-40, 0.1% sodium deoxycholate) supplemented with 1 mM PMSF and 1x protease inhibitor cocktail (Roche). Samples were aliquoted in Eppendorf tubes and frozen. After thawing, the cells were broken using Zirconia/Silica beads (BioSpec). The lysate was spun at 13,000 rpm for 30 min at 4°C and the pellet was resuspended in 300 μl ChIP lysis buffer + 1 mM PMSF and sonicated for 15 min (30 s ON - 60 s OFF) in a Bioruptor (Diagenode). The lysate was spun at 7000 rpm for 15 min at 4°C. Antibody (1 μg / 300 μL of lysate, Abcam ab5131) was added to the supernatant and incubated for 1 hr at 4°C. Magnetic beads were washed three times with PBS plus 0.5% BSA and added to the lysates (30 μL of beads/300 μL of lysate). The samples were incubated for 2 hr at 4°C. The beads were washed twice with (50 mM HEPES-Na pH 7.5, 140 mM NaCl, 1 mM EDTA, 0.03% SDS), once with AT2 buffer (50 mM HEPES-Na pH 7.5, 1 M NaCl, 1 mM EDTA), once with AT3 buffer (20 mM Tris-Cl pH 7.5, 250 mM LiCl, 1 mM EDTA, 0.5% NP-40, 0.5% sodium deoxycholate) and twice with TE. The chromatin was eluted from the beads by resuspension in TE + 1% SDS and incubation at 65°C for 10 min. The eluate was transferred to an Eppendorf tube and incubated overnight at 65°C to reverse the crosslinks. The DNA was purified using High Pure PCR Cleanup Micro Kit (Roche). DNA libraries were prepared using TruSeq ChIP Sample Preparation Kit (Illumina) according to manufacturer’s instructions. The libraries were sequenced using an Illumina HiSeq 2500 and the reads were mapped to the sacCer3 genome assembly using HTSStation (shift = 150 bp, extension = 50 bp; David et al., 2014). To compare depleted versus non-depleted cells, we divided the signal from the + auxin and/or rapamycin and/or cycloheximide samples by the signal from the – auxin and/or rapamycin and/or cycloheximide (vehicle) samples and log2 transformed this value. All data from publicly available databases were mapped using HTS Station (http://htsstation.epfl.ch; David et al., 2014).
 
-## Yeast strains, primer DNAs and cell growth
+### Yeast strains, primer DNAs and cell growth
 
 Strains used in this study are listed in Supplementary file 7. For ChIP-qPCR, the primer sequences used a listed in Supplementary file 8. Experiments were typically performed with log phase cells harvested between OD600 0.4 and 0.8. Anchor-away of FRB-tagged proteins was induced by the addition of rapamycin (1 mg/ml of 90% ethanol/10% Tween stock solution) to a final concentration of 1 μg/ml (Haruki et al., 2008). Depletion of AID-tagged protein was induced by the addition of auxin (3-indoloacetic acid) at 500 μM final concentration. Arrest of translation was induced by the addition of cycloheximide to a final concentration of 25 μg/ml. Cells are treated with diazaborine to a final concentration of 50 ug/ml.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Cells were grown overnight at 30°C in SC medium (0.67% nitrogen base without amino acids (BD), 2% dextrose supplemented with amino acids mixture (AA mixture; Bio101), adenine, and uracil). Cells were diluted and were harvested when OD600 reached 0.4. Cells were spread on slides coated with an SC medium patch containing 2% glucose. Stacked images were recorded (Intelligent Imaging Innovations) at a spinning disc confocal inverted microscope (Leica DMIRE2) using the 100x oil objective and an Evolve EMCCD Camera (Photometrics).
 
-## Insoluble fraction purification and mass spectrometry
+### Insoluble fraction purification and mass spectrometry
 
 Isolation of protein aggregates from yeast cells was performed as described previously (Koplin et al., 2010) with slight modifications. 50 OD600 units (50 ml) of exponentially growing cells were harvested, and cell pellets were frozen in liquid N2. The cell pellets were resuspended in 1 ml lysis buffer (20 mM Na-phosphate pH 6.8, 10 mM DTT, 1 mM EDTA, 0.1% Tween, 1 mM PMSF, protease inhibitor cocktail and 100 units/ml zymolyase) and incubated at 30° C for 30 min. Chilled samples were treated by tip sonication (20%, 10 s, 2x) and centrifuged for 20 min at 600 g at 4°C. Aggregated proteins were pelleted at 16,000 g for 20 min at 4°C. After removing supernatants, insoluble proteins were washed once with Wash I buffer (20 mM Na-phosphate pH 6.8, 500 mM NaCl, 5 mM EDTA, 2% NP-40, 1 mM PMSF, and protease inhibitor cocktail), and centrifuged at 16,000 g for 20 min at 4°C. Insoluble proteins were washed with Wash II buffer (20 mM Na-phosphate pH 6.8, ice-cold), pelleted and sonicated (2x for 10 s) in 40 μl of Wash II buffer. For analysis by SDS-PAGE (4–12% acrylamide) and subsequent western blotting, proteins were first boiled in Laemmli buffer. 1x of the total cell lysate and 25x of the insoluble pellet fraction were separated and analyzed by Coomassie Blue staining or immunoblotting. Proteins were identified by shotgun mass spectrometry analysis at the Functional Genomics Center Zurich (ETH, Zurich) following TCA precipitation (20%) and acetone washing, according to posted procedures. Database searches were performed by using the Mascot (SwissProt, all species; SwissProt, yeast) search program, using very stringent settings in Scaffold (1% protein FDR, a minimum of 2 peptides per protein, 0.1% peptide FDR).
 
-## Polysome gradients
+### Polysome gradients
 
 Yeast cells growing exponentially were treated or not with auxin for 20 min. 50 µg/mL cycloheximide (Sigma) was added directly to the culture medium. Cells were collected by centrifugation, rinsed with buffer K [20 mM Tris-HCl pH 7.4, 50 mM KCl, 10 mM MgCl2] supplemented with 50 µg/mL cycloheximide and collected again by centrifugation. Dry pellets were resuspended with approximately one volume of ice-cold buffer K supplemented with 1 mM DTT, 1 × Complete EDTA-free protease inhibitor cocktail (Roche), 0.1 U/µL RNasin (Promega) and 50 µg/mL cycloheximide. About 250 µL of ice-cold glass beads (Sigma) were added to 500 µL aliquots of the resuspended cells and cells were broken by vigorous shaking, three times 2 min, separated by 2 min incubations on ice. Extracts were clarified through two successive centrifugations at 13,000 rpm and 4°C for 5 min and quantified by measuring absorbance at 260 nm. About 30 A260 units were loaded onto 10–50% sucrose gradients in buffer K, and then centrifuged for 150 min at 39,000 rpm and 4°C in an Optima L-100XP Ultracentrifuge (Beckman-Coulter) using a SW41Ti rotor without brake. Following centrifugation, 18 fractions of 500 µl each were collected from the top of the gradients with a Foxy Jr. apparatus (Teledyne ISCO). The absorbance at 254 nm was measured during collection with a UA-6 device (Teledyne ISCO).
 
-## Pulse labeling, RNA extraction and Northern hybridization
+### Pulse labeling, RNA extraction and Northern hybridization
 
 Metabolic labeling of pre-rRNAs was performed as previously described (Tollervey et al., 1993) with the following modifications. Strains were grown in synthetic glucose medium lacking adenine to an OD600 of 0.8. Auxin (0.5 mM) was next added to the cultures and cells were labeled for 2 min with [2,8-3H]-adenine (NET06300 Perkin Elmer) at 0, 10, 20 and 30 min following the addition of auxin. Cell pellets were frozen in liquid nitrogen. RNA extractions and Northern hybridizations were performed as previously described (Beltrame and Tollervey, 1992). For high-molecular-weight RNA analysis, 2 μg of total RNA were glyoxal denatured and resolved on a 1.2% agarose gel. Note that Northern hybridization was performed on [2,8-3H]-adenine labeled RNA. The membrane was first exposed to reveal neo-synthetized transcripts, and subsequent Northern hybridization revealed rRNA transcript abundance.
 
-## Data availability
+### Data availability
 
 Read counts for all RNAPII ChIP-seq experiments (integrated counts over the complete open reading frame of all protein-coding genes) are given in Supplementary file 1–6. Primary processed sequence files will be made available at Gene Expression Omnibus (GEO accession number GSE125226).

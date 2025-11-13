@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Anatomy, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Physical Therapy and Rehabilitation Science, University of California San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Bakar Aging Research Institute, University of California, San Francisco San Francisco United States
+1. Department of Anatomy, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Physical Therapy and Rehabilitation Science, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Bakar Aging Research Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -27,55 +27,287 @@ In this study, we report that microglia in the adult mouse hippocampus, a brain 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Cx3cr1Cre-ER</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:021160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Tmem119Cre-ER</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:031820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Tgfb1-flox</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:MMRRC_065809-JAX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neural Dissociation Kits (P)</td>
+      <td>Miltenyi</td>
+      <td>130-092-628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Myelin Removal Beads</td>
+      <td>Miltenyi</td>
+      <td>1130-096-731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b-APC</td>
+      <td>eBioscience</td>
+      <td>17-0112-82, RRID:AB_469343</td>
+      <td>FACS 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45-PE</td>
+      <td>eBioscience</td>
+      <td>12-0451-82, RRID:AB_465668</td>
+      <td>FACS 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD48-Pacific Blue</td>
+      <td>BioLegend</td>
+      <td>103417, RRID:AB_756139</td>
+      <td>FACS 1:200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeSeq2 (1.42.1)</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cd11b magnetic beads</td>
+      <td>Miltenyi</td>
+      <td>130-126-725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger (v5.0.1)</td>
+      <td>10x Genomics</td>
+      <td>RRID:SCR_021160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (v3.2.1)</td>
+      <td>https://satijalab.org/seurat/articles/install_v5</td>
+      <td>RRID:SCR_007322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle3 (v1.3.4)</td>
+      <td>https://cole-trapnell-lab.github.io/monocle3/docs/installation/</td>
+      <td>RRID:SCR_018685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scorpius (v1.0.9)</td>
+      <td>https://github.com/rcannood/SCORPIUS; Cannoodt, 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1, rabbit</td>
+      <td>Wako</td>
+      <td>019-19741, RRID:AB_839504</td>
+      <td>1:1000 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD68, rat</td>
+      <td>Bio-Rad</td>
+      <td>MCA1957, RRID:AB_322219</td>
+      <td>1:250 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NFKB p65, rabbit</td>
+      <td>SantaCruz</td>
+      <td>sc-372, RRID:AB_632037</td>
+      <td>1:500 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1, guinea pig</td>
+      <td>Synaptic Systems</td>
+      <td>234-004, RRID:AB_2493179</td>
+      <td>1:1000 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C1q, rabbit</td>
+      <td>Abcam</td>
+      <td>ab182451, RRID:AB_2732849</td>
+      <td>1:1000 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C3, rat</td>
+      <td>Abcam</td>
+      <td>ab11862, RRID:AB_2066623</td>
+      <td>1:1000 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S6, rabbit</td>
+      <td>Cell Signaling</td>
+      <td>2217, RRID:AB_331355</td>
+      <td>1:500 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KLF2, rabbit</td>
+      <td>Bioss</td>
+      <td>bs-2772R, RRID:AB_10857057</td>
+      <td>1:250 IHC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>Peprotech</td>
+      <td>315-02</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGFβ1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PHG9204</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CX-5461</td>
+      <td>EMD Millipore</td>
+      <td>509265</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb1 RNAScope Probe</td>
+      <td>ACD</td>
+      <td>443571C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>https://ggplot2.tidyverse.org/</td>
+      <td>RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were performed in accordance with the protocols approved by the UCSF IACUC. Animals were housed in SPF barrier facilities and provided continuous food and water along with environmental enrichment. Aging characterizations were performed on an inhouse C57BL/6J mouse colony where 2-month-old mice were purchased from Jackson Laboratories (Stock 000664) and aged in the UCSF Parnassus barrier facility. Timed pregnant females were obtained for isolation of primary microglia from newborn pups. Male mice were used in all experiments. B6.129P2(Cg)-Cx3cr1tm2.1(cre/ERT2)Litt/WganJ (Cx3cr1Cre-ER) (Stock 021160), C57BL/6-Tmem119em1(cre/ERT2)Gfng/J (Tmem119Cre-ER) (Stock 031820), and C57BL/6J-Tgfb1em2Lutzy/Mmjax (Tgfb1flox) (Stock 65809-JAX) mice were obtained from Jackson Laboratories. Mice were bred to obtain Cx3cr1Cre-ER/+ or Tmem119Cre-ER/+ with either Tgfb1wt/wt, Tgfb1fl/wt, or Tgfb1fl/fl. As Cx3cr1Cre-ER is a knock-in/knock-out allele for the microglia homeostatic gene Cx3cr1, all mice tested were Cx3cr1Cre-ER +/wt. To induce recombination and deletion of Tgfb1 by CRE-ER, we injected tamoxifen for 5 days at 90 mg/kg daily, and mice were analyzed after 60 days.
 
-## Parabiosis
+### Parabiosis
 
 Parabiosis surgery followed previously described procedures (Smith et al., 2015). Mirror-image skin incisions at the left and right flanks were made through the skin, and shorter incisions were made through the peritoneum. The peritoneal openings of the adjacent parabionts were sutured together with chromic gut suture (MYCO Medical, GC635-BRC). Apposing elbow and knee joints from each parabiont were sutured together (Coated VICRYL Suture, Ethicon, J386) and the skin of each mouse was stapled (9 mm Autoclip, Clay Adams, 427631) to the skin of the adjacent parabiont. Each mouse was injected subcutaneously with Carpofen, Enrofloxacin, and Buprenex as directed for pain and monitored during recovery. For overall health and maintenance behavior, several recovery characteristics were analyzed at various times after surgery, including pair weights and grooming behavior.
 
-## Bulk microglia RNA-Seq
+### Bulk microglia RNA-Seq
 
 Microglia were isolated from C57BL6/J, Tgfb1 cHet, and Tgfb1 cKO using FACS. Briefly, mice were sedated with ketamine followed by perfusion with 30 mL of ice-cold phosphate buffered saline (PBS). The entire brain was removed, then the hippocampus was sub-dissected. Single-cell suspensions were generated by enzyme-mediated (papain) and mechanical dissociation using Miltenyi Neural Dissociation Kits (P) (Miltenyi, 130-092-628) according to the manufacturer’s instructions. Myelin was depleted from the suspensions using Myelin Removal Beads (Miltenyi, 130-096-731). Cells were labeled with CD11b-APC (eBioscience, 17-0112-82, RRID:AB_469343) and CD45-PE (eBioscience, 12-0451-82, RRID:AB_465668), then sorted at 4°C into Tri Reagent with a FACS AriaII (BD). The gating strategy for microglia isolation is to collect Cd11b+Cd45Intermediate cells. During the collection of control and Tgfb1 microglia, CD48 was detected in Cd11b+Cd45Intermediate cells using CD48-Pacific Blue (BioLegend, 103417, RRID:AB_756139). FlowJo was used to analyze flow cytometry data. RNA was isolated from microglia using Tri Reagent (Sigma-Aldrich, T9424). RNA pellets were resuspended in 5 uL TE buffer.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig1-v1.jpg)
+
+**Figure 1.:** (A) UMAP plot of microglia separated into transcriptional clusters (n=1 pool of five animals for each age). (B) Superimposition of ages onto the UMAP plot with dashed lines signifying relative cluster demarcation. (C) Percent composition of each cluster by age. (D) Dotplot of expression of cluster markers sorted by age. Percent of cells expressing the gene and average normalized expression are represented. (E) Violin plots of genes with dynamic age-related expression patterns. (F) Representative images and quantification of C1q (yellow), C3 (red), and Iba1 (cyan) staining in the hilus and molecular layer (ML) of 6- and 24-month-old mice (n=4–5 mice per group; mixed effects analysis followed by Dunnett’s multiple comparisons; *p<0.05, **p<0.01, ****p<0.0001). (G) Number of differentially expressed genes from the 6-month timepoint at each age. Bars above the intersect represent increased expression and those below represent decreased expression. (H) The average expression change at all ages for genes differentially regulated genes at individual ages represented by the color scheme in (B, I, J, K), Volcano plots of differentially expressed genes in microglia between 6 and 12 months (I), 6 and 18 months (J), and 6 and 24 months (K) and corresponding gene ontology analysis of genes with significantly increased (brown) or decreased (green) expression for each comparison. Data are shown as mean ± s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP plot of all Cd11b+ cells. Several adjacent clusters of microglia were identified, as well as a cluster of proliferating microglia. Smaller populations of peripheral immune cell types – macrophages and neutrophils – were identified. Clusters of astrocytes and vascular cells were also found. Overall, greater than 82% of cells were microglia (n=1 pool of five animals for each age). (B) Dotplot showing expression (average expression and percent of cells expressing) of top two markers for each cluster. (C) UMAP plots with expression levels of microglia markers superimposed onto cells. Notice that peripheral immune cells express microglia markers; however, they are distinguished from microglia based on marker expression from (B). (D–G) Volcano plots of differential gene expression for the clusters identified in Figure 1A compared to every other cluster for homeostatic (D), transition (E), activation (F), and interferon (G) microglia clusters. (H) Cluster composition of non-proliferating microglia by age. (I) Standardized variation of non-proliferating microglia for each age.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Diagram depicting ages utilized for immunohistochemical analysis. (B) Diagram of the hippocampus labeled with the regions analyzed. (C) Illustration of subregions analyzed by immunohistochemistry. (D) Representative images and quantification of IBA1 (cyan)/CD68 (red)-positive microglia across hippocampal subregions in 3- and 24-month-old mice. Scale bars are 10 μM (n=5 per group; t-test with Holm–Sidak correction; *p<0.05, **p<0.01). (E) Heatmap of the quantification of activated microglia across ages and subregions. (F) Representative wide-field images of IBA1 (cyan)/CD68 (red) in the dentate gyrus in 3- and 24-month-old mice. Scale bars are 100 μM. (G) Representative wide field images of Iba1 (cyan)/NFKB p65 (yellow) in the dentate gyrus in 3- and 24-month-old mice. Scale bars are 100 μM. (H) Representative images and quantification of Iba1 (cyan)/NFKB p65 (yellow) staining across hippocampal subregions. Scale bars are 10 μM (n=5 per group; t-test with Holm–Sidak correction; *p<0.05, **p<0.01, ****p<0.0001). (I) Heatmap of the quantification of NFKB signal in microglia across ages and subregions. n=4–5 mice per condition.
+
 RNA was transformed into RNA-Seq libraries using an adapted version of the Smart-Seq2 protocol (Trombetta et al., 2014). Briefly, 5 ng of total RNA was reverse transcribed with SuperScript II (Thermo Fisher, 18064014) supplemented with betaine and MgCl2 using an oligo-dT RT primer (AAGCAGTGGTATCAACGCAGAGTACT(30)VN) with a PCR binding site and a template switching oligonucleotide (5′ AAGCAGTGGTATCAACGCAGAGTACATrGrG+G) with a homotypic PCR binding site. Betaine and MgCl2 were added to enhance the reaction. After reverse transcription, whole transcriptome amplification by PCR was performed for 12 cycles using KAPA HiFi HotStart ReadyMix (Roche, 7958935001) with a PCR primer (AAGCAGTGGTATCAACGCAGAGT). The PCR reaction was cleaned up with Ampure XP beads (Beckman Coulter, A63881). In addition, after the whole transcriptome PCR amplification step, qPCR was performed to determine the presence of microglia-specific transcripts (Cx3cr1) and housekeeping genes (Gapdh). The amplified DNA was diluted to a concentration of 0.5 ng/uL and subjected to tagmentation with the Illumina Nextera XT kit (Illumina, FC-131-1096). Each sample was PCR amplified with a unique set of Nextera indices. Bulk microglia RNA-Seq libraries were sequenced on an Illumina HiSeq, while in vitro microglia RNA-Seq libraries were sequenced on an Illumina Nova-Seq.
 
-## RNA-Seq analysis
+### RNA-Seq analysis
 
 FASTQ reads were pseudo aligned to the mouse transcriptome (GRCm39 cDNA from Ensembl) using kallisto (Bray et al., 2016) with default parameters. Next, transcript abundance estimates were imported into DeSeq2 (Love et al., 2014). Differential expression analysis was performed using DeSeq2 using the Wald significance test. Gene ontology analysis was performed with Panther (Ashburner et al., 2000; Carbon et al., 2021; Mi et al., 2019). Principal component analysis (PCA) plots were generated with the plotPCA function included with DeSeq2 and graphed with ggplot2. Heatmaps were generated with the pheatmap package in R.
 
 The overlap between gene expression differences in aging and lipopolysaccharides LPS treatment was determined using genes significantly changed between the 6- and 24-month-old timepoints in the scRNA-Seq data and the control and LPS-treated primary microglia. χ2 test was used to determine the significance of the overlap between these two datasets. The Venn diagram was generated using the VennDiagram package in R.
 
-## 10x Genomics single-cell RNA-sequencing
+### 10x Genomics single-cell RNA-sequencing
 
 10x single-cell RNA-Seq libraries were generated from Cd11b+ cells isolated from the hippocampi of an aging cohort of mice consisting of 6-, 12-, 18-, and 24-month-old C57BL/6J mice that were all collected and processed on the same day in an interspersed order. Mice were sedated with ketamine followed by perfusion with ice-cold PBS. Subsequently, the entire brain was removed from the mouse followed by sub-dissection of the hippocampus. For each age, hippocampi from five mice were pooled during the dissection step in HBSS at 4°C. Single-cell suspensions were generated by enzyme-mediated (papain) and mechanical dissociation using Miltenyi Neural Dissociation Kits (P). The papain dissociation was done at 37°C for 10 minutes with three trituration steps. All other processing steps were performed at 4°C. Myelin was depleted from the suspensions using Myelin Removal Beads (Miltenyi). Microglia were enriched using Cd11b magnetic beads (Miltenyi, 130-126-725). Cell viability was determined to be over 95%. Single-cell RNA-Seq 3’ libraries were generated from the cell suspension using 10x Genomics Chromium Single-Cell 3’ Solution. Libraries were sequenced on the Illumina Nova-Seq. Cell Ranger demultiplexed and mapped (using bcl2fastq) reads, followed by alignment (with STAR), and generation of single-cell expression matrices (Zheng et al., 2017).
 
 The isolation protocol for the Tgfb1 genetic mouse model was modified. We added transcriptional and translational inhibitors (Actinomycin D [Sigma-Aldrich, A1410], Anisomycin [Sigma-Aldrich, A9789], and Triptolide [Sigma-Aldrich, T3652]) to prevent transcriptional changes due to ex vivo activation (Marsh et al., 2022). We utilized the concentrations presented in Marsh et al., 2022.
 
-## Single-cell RNA-Seq analysis
+### Single-cell RNA-Seq analysis
 
-## Seurat
+#### Seurat
 
 The single-cell gene expression matrices generated by Cell Ranger were loaded into Seurat (Butler et al., 2018).
 
-## Aging microglia dataset
+### Aging microglia dataset
 
 Cells were filtered according to the following parameters: genes >1000 & RNA count >10,000 & mitochondrial percentage <5. The count data was log normalized. The 2500 most variable genes were identified using the ‘vst’ method. The expression data was scaled and centered. PCA was performed, the first 25 PCAs were used to identify nearest neighbors, and interconnected clusters were identified with a resolution of 0.4. UMAP was used to visualize the results. Preliminary dimensionality reduction and visualization with UMAP using 25 PCAs and 25 nearest neighbors in Seurat identified a large microglia cluster, plus sparse clusters consisting of astrocytes, vascular cells, neutrophils, and macrophages. Hexb, P2ry12, Tmem119, and Slc2a5 are used as markers to identify microglia in the preliminary clustering, while Nrxn1 (neurons), Tm4sf1 (vasculature), Dclk1 (astrocytes), Sdpr (vasculature smooth muscle), Abcb1a (pericyte/vasculature), and Foxq1 (macrophages) identified other cell types. The data was then subsetted on the non-proliferating microglial clusters (to avoid confounds associated with the cell cycle). The top 1500 most variable genes in the subsetted microglia were identified using the ‘vst’ method. The data was scaled and centered. PCA was performed, the first eight PCAs were used to identify nearest neighbors, and interconnected clusters were identified with a resolution of 0.25. UMAP was used to visualize the results using 8 PCAs and 100 nearest neighbors. Gene enrichment and differential expression analysis were performed on the filtered dataset to determine the differences between ages.
 
-## Tgfb1 cKO microglia dataset
+### Tgfb1 cKO microglia dataset
 
 Cells were prefiltered according to the following parameters: Hexb > 4 & Tmem119 > 1 & Cx3cr1 > 4 & Top2a < 1 & Mki67 < 1 nFeature_RNA > 1000 & nFeature_RNA < 6000 & nCount_RNA > 2000 & nCount_RNA < 40,000 & percent.mt < 10. Data was integrated using IntegrateData and scaled. PCA was performed, the first 50 PCAs were used to identify nearest neighbors, and interconnected clusters were identified with a resolution of 0.35. UMAP was used to visualize the results. Preliminary dimensionality reduction and visualization with UMAP using 50 PCAs identified a large microglia cluster, plus clusters of other cell types. The non-proliferative microglia clusters were subsetted for further analysis (the macrophage cluster was differentiated from the microglia cluster based on increased expression of Mcp1, Pf4, and Ms4a7). The data was scaled and centered. PCA was performed, the first 10 PCAs were used for UMAP dimensionality reduction and identify nearest neighbors, and interconnected clusters were identified with a resolution of 0.20.
 
-## Monocle 3
+#### Monocle 3
 
 Monocle 3 was used to generate the pseudotime analysis (Qiu et al., 2017a; Qiu et al., 2017b; Trapnell et al., 2014; Cao et al., 2019). Data was imported from Seurat analysis and a Monocle dataset was generated. The dataset was preprocessed with normalization of the data and PCA generation. Next, the preprocessed data underwent further non-linear dimensionality reduction using UMAP. Cells were clustered, and trajectories were determined for cells within a cluster. For determining ‘pseudotime’ aging of microglia, the root node of the pseudotime trajectory was manually placed in the cluster of 6-month cells. The graph segments of the pseudotime trajectories resulting in inflammatory activation were chosen for further analysis. Graph autocorrelation analysis was performed on the inflammatory trajectory using Moran’s I, which determines if genes are expressed in focal regions of graph space. A cutoff q-value of 0.005 was set as significant for focal expression. Subsequently, coregulated modules were determined using Louvain community analysis at an optimized resolution of 0.0078. The modules were then overlaid onto the UMAP plot to determine the region of the trajectory with focal expression of the module. The 10 most significant genes of each module as determined by q-value were used to construct the heatmaps in Figure 3F and I. The significant genes of each module were used to determine the effects of manipulations in the presence of LPS in Figure 3J.
 
-## Scorpius
+#### Scorpius
 
 Scorpius was used to generate a secondary pseudotime analysis that confirmed the results of the Monocle 3 analysis (Saelens et al., 2019). Data was imported from Seurat analysis as a SingleCellExperiment and dimensionality was reduced. A trajectory plot was generated followed by a trajectory inference. Candidate marker genes were identified using the gene_importances command. Subsequently, gene expression modules were generated with the extract_modules command and visualized using a heatmap.
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 Mice were sedated with ketamine followed by perfusion with 30 mL of ice-cold PBS. Brains were collected from PBS perfused mice and fixed overnight at 4°C in 4% paraformaldehyde in PBS. The brains were washed with PBS and immersed in 30% sucrose (in PBS), and then stored at 4°C until the brains sank. 40 μM coronal sections were sliced using a microtome at –20°C. Sections were stored in cryopreservation buffer (40% PB buffer [0.02 M sodium phosphate monobasic, 0.08 M sodium phosphate dibasic, pH 7.4], 30% glycerol, 30% ethylene glycol) at –20°C until staining. Hippocampal sections were washed three times in TBST. Sections were permeabilized in pretreatment buffer (0.1% Triton-X in TBST) with rocking for 1 hour at room temperature. After three washes in TBST, sections were blocked in 5% goat serum for 2 hours (for IBA1/CD68 double stain) or 5% donkey serum (NFKB/Iba1 and C1q/C3/Iba1 stains). Blocking buffer was replaced with primary antibody mixture and incubated overnight at 4°C with rocking. The following primary antibodies were used: rabbit anti-IBA1 (1:1000, Wako, Cat# 019-19741, RRID:AB_839504), rat anti-CD68 (1:250, Bio-Rad, Cat# MCA1957, RRID:AB_322219), rabbit anti-NFKB p65 (1:500, Santa Cruz, Cat# sc-372, RRID:AB_632037), guinea pig anti-Iba1 (1:1000, Synaptic Systems, Cat# 234-004, RRID:AB_2493179), rabbit anti-C1q (1:1000, Abcam, Cat# ab182451, RRID:AB_2732849), rat anti-C3 (1:1000, Abcam, Cat# ab11862, RRID:AB_2066623), rabbit anti-S6 (1:500, Cell Signaling, Cat# 2217, RRID:AB_331355), and rabbit anti-KLF2 (1:250, Bioss, Cat# bs-2772R, RRID:AB_10857057). The sections were washed three times with TBST. Subsequently, secondary antibody solution was added to the sections and incubated at room temperature with rocking for 2 hours. The following secondary antibodies were used: goat anti-rabbit AlexaFluor 488 (Life Technologies, Cat# A-11008, RRID:AB_143165), goat anti-rat AlexaFluor 555 (Life Technologies, Cat# A-21434, RRID:AB_2535855), donkey anti-guinea pig AlexaFluor 488 (Jackson Immuno, Cat# 706-545-148, RRID:AB_2340472), donkey anti-rabbit AlexaFluor 555 (Life Technologies, Cat# A-31572, RRID:AB_162543), and donkey anti-rat AlexaFluor 647 (Jackson Immuno, Cat# 712-606-150, RRID:AB_2340695). The sections were washed three times with TBST, with the first wash containing Hoescht 33342 (Invitrogen, H3570) at a concentration of 1 μg/mL. The sections were transferred to phosphate buffer and mounted on frosted slides. Coverslips were mounted with Prolong Gold Antifade (Thermo Fisher, P10144) reagent after the sections were dried. Slides were imaged at ×20 magnification on a Zeiss LSM 800 or LSM900 for a final resolution of 0.312 μM/pixel. 8–9 z-planes were imaged at 3 μM intervals. The hippocampus was imaged, and the tiled images were stitched together with Zeiss ZenPro software. 2–3 hippocampal sections were imaged from each sample.
 
@@ -83,39 +315,39 @@ Images were analyzed with FIJI. Maximum intensity projections of Z-stacked image
 
 Additionally, we tested whether autofluorescence from aged tissue was interfering with our signal using TrueBlack Lipofuscin Autofluorescence Quencher (Cell Signaling, Cat# 92401). Using the IBA1/CD68 doublestain, we obtained very similar results for microglia activation. Furthermore, our KLF2 stain was performed with TrueBlack.
 
-## In vitro treatment of microglia
+### In vitro treatment of microglia
 
 Mixed glial cultures were generated from p1 C57BL/6J male pups. Cortices and hippocampi were isolated from the pups, and meninges were removed. The tissue was broken up by repeatedly pipetting up and down, followed by dissociation with Trypsin. Single-cell suspensions were plated on poly-l-lysine-coated flasks in Dulbeco’s minimal eagle media (DMEM) (Thermo Fisher, 11965-118) supplemented with 10% fetal bovine serum (FBS) (Gemini Bio-Products, 900-208) and antibiotic mix (Penicillin/Streptomycin) (Genesee Scientific, 25-512) and incubated at 37°C in 5% CO2. Media were changed after 4 days to remove debris. Microglia were isolated after 14 days by agitating the plates to dislodge microglia, then transferring the supernatant of each sample evenly among 4 wells of a 24-well plate. Microglia were incubated for 16 hours followed by replacement with serum-free macrophage SFM media (Thermo Fisher, 12065074) supplemented with M-CSF (10 ng/mL) (Peprotech, 315-02) and antibiotic mix. After 24 hours, microglia were treated with RNA polymerase I Inhibitor 2, CX-5461 (100 nM) (EMD Millipore, 509265) or human TGFβ1 recombinant protein (10 ng/mL) (Thermo Fisher Scientific, PHG9204) for 24 hours followed by the addition of LPS (200 ng/uL) from Escherichia coli (Sigma-Aldrich, L2018) for 8 hours and ATP (10 nM) (InvivoGen, tlrl-atpl) for 30 minutes. Tri Reagent was added to the culture plate, and the plates were shaken for 5 minutes. RNA was isolated according to the manufacturer’s instructions. RNA-Seq libraries were generated as above for the bulk RNA-Seq.
 
-## RNAscope
+### RNAscope
 
 RNAscope was performed with the RNAscope Multiplex Fluorescent Reagent Kit v2 (ACD, 323110). 40 μM coronal sections were washed with tris buffered saline with Tween 20 (TBST), then incubated with hydrogen peroxide for 45 minutes at 25°C. After washing with TBST, the sections were incubated in Target Retrieval Buffer at 95°C for 10 minutes. The sections were mounted on slides and dried overnight. The sections were treated with RNAscope Protease III for 10 minutes at 40°C. Sections were washed in water four times. Sections were incubated with Tgfb1 probe (ACD, 443571-C2) for 2 hours at 40°C. The sections were washed twice with RNAscope wash buffer. The sections were incubated with AMP1 for 30 minutes, AMP2 for 30 minutes, AMP3 for 15 minutes, HRP-C2 for 15 minutes, TSA Plus Cy3 (1:1000, PerkinElmer, SKU NEL744001KT) for 30 minutes, and HRP-Blocker for 15 minutes; all at 40°C with washes with RNAscope wash buffer between every incubation. RNA-Protein Co-Detection Ancillary Kit (ACD, 323180) buffer was used to block the sections before incubating with rabbit anti-IBA1 (1:500, Wako, Cat# 019-19741, RRID:AB_839504) overnight at 4°C. Sections were washed three times in TBST. Sections were incubated with secondary antibody solution with goat anti-rabbit AlexaFluor 488 (1:1000, Life Technologies, Cat# A-11008, RRID:AB_143165) for 2 hours at room temperature. The sections were washed three times with TBST, with the first wash containing Hoescht 33342 (Invitrogen, H3570) at a concentration of 1 μg/mL. Coverslips were mounted with Prolong Gold Antifade (Thermo Fisher, P10144) reagent after the sections were dried. Slides were imaged at ×40 magnification on a Zeiss LSM 900. 10 z-planes were imaged at 1 μM intervals.
 
 Images were analyzed with FIJI. Maximum intensity projections of Z-stacked images were constructed. Images were converted to 8-bit images and the Tgfb1 was thresholded. For each section, the intensity of 5–7 individual Tgfb1 puncta was averaged to get the average puncta intensity of that section. The intensity of all Tgfb1 signal in clearly identifiable individual IBA1 cells was measured for 20–25 cells in the molecular layer of the hippocampus. The mean Tgfb1 count per microglia for each sample was calculated by dividing the average Tgfb1 intensity in IBA1 cells by the average puncta intensity.
 
-## Contextual fear conditioning
+### Contextual fear conditioning
 
 In this task, mice learned to associate the environmental context (fear conditioning chamber) with an aversive stimulus (mild foot shock; unconditioned stimulus [US]) during the training phase enabling testing for hippocampal-dependent contextual fear conditioning. To also assess amygdala-dependent cued fear conditioning, the mild foot shock was paired with a light and tone cue (conditioned stimulus [CS]) during the training phase. Conditioned fear was displayed as freezing behavior. Specific training parameters are as follows: tone duration is 30 seconds; level is 70 dB, 2 kHz; shock duration is 2 seconds; intensity is 0.6 mA. This intensity is not painful and can easily be tolerated but will generate an unpleasant feeling. More specifically, on day 1 each mouse was placed in a fear-conditioning chamber and allowed to explore for 2 minutes before delivery of a 30-second tone (70 dB) and light ending with a 2-second foot shock (0.6 mA). 2 minutes later, a second CS-US pair was delivered. On day 2, each mouse was first placed in the fear-conditioning chamber containing the same exact context, but with no CS or foot shock. Freezing was analyzed for 2 minutes and represented as the percentage of time that the mouse froze over the 2 minutes. 1 hour later, the mice were placed in a new context containing a different odor, floor texture, chamber walls, and shape. Animals were allowed to explore for 2 minutes before being re-exposed to the CS. Freezing was analyzed for 30 seconds following the CS and represented as the percentage of time that the mouse froze over those 30 seconds. Determination of freezing behavior was performed using FreezeScan video tracking system and software (Cleversys, Inc). Single outliers were removed using the extreme studentized deviate method (Grubbs’ test) with an alpha of 0.05.
 
-## Novel object recognition
+### Novel object recognition
 
 The novel object recognition task was adapted from a previously described protocol (Leger et al., 2013). Specifically, during the habituation phase (day 1), mice could freely explore an empty open-field arena for 10 minutes (motor activity and anxiety [time in center] were measured during this phase). During the training phase (day 2), two identical objects were placed in the habituated arena, and mice could explore the objects for 5 minutes. For the testing phase (day 3), one object was replaced with a novel object, and mice could explore the objects for 5 minutes. Time spent exploring each object was quantified using the Smart Video Tracking Software (Panlab; Harvard Apparatus). Two different sets of objects are used. To control for any inherent object preference, half of the mice are exposed to object A as their novel object and half to object B. To control for any potential object-independent location preference, the location of the novel object relative to the trained object is also varied. The objects were chosen based on their ability to capture the animal’s interest, independent of genetic background or age. To determine percent time with novel object, we calculate (Time with novel object)/(Time with Trained Object + Time with Novel Object) * 100. In this preference index, 100% indicates full preference for the novel object, and 0% indicates full preference for the trained object. A mouse with a value of 50% would have spent equal time exploring both objects. Mice that did not explore both objects for 5 seconds during the training phase or testing phase were excluded from analysis. Single outliers were removed using the extreme studentized deviate method (Grubbs’ test) with an alpha of 0.05.
 
-## Y maze
+### Y maze
 
 The Y maze task was conducted using an established forced alternation protocol (Belarbi et al., 2011). During the training phase, mice were placed in the start arm facing the wall and allowed to explore the start and trained arm for 5 minutes, while entry to the third arm (novel arm) was blocked. The maze was cleaned between each mouse to remove odor cues, and the trained arm was alternated between mice. The mouse was then removed to its home cage. After 30 minutes, the block was removed, and the mouse was returned to the start arm and allowed to explore all three arms for 5 minutes. Time spent in each arm was quantified using the Smart Video Tracking Software (Panlab; Harvard Apparatus). The percent time in the novel arm was defined as time in the novel arm divided by time spent in the novel and trained arms during the task.
 
-## Datasets
+### Datasets
 
 All RNA-Seq and scRNA-Seq data have been deposited in the Gene Expression Omnibus and are publicly available as of the date of publication. The following datasets were generated for this article and deposited in Gene Expression Omnibus: aging single-cell RNA-Seq (GSE179358), in vitro-treated primary microglia (GSE179611), Tgfb1 cKO microglia RNA-Seq (GSE190007), and Tgfb1 cKO microglia single-cell RNA-Seq (GSE211340). The following publicly available datasets were analyzed in this article: mouse model of Alzheimer’s disease microglia single-cell RNA-Seq (GSE127892) (Sala Frigerio et al., 2019) and heterochronic parabiosis microglia single-cell RNA-Seq (GSE193093) (Pálovics et al., 2022).
 
-## Statistics
+### Statistics
 
 Sample sizes were determined from performing power analysis based off previous results in the laboratory. A minimum sample size of n=3 for immunohistochemistry (IHC) analysis and n=9 for behavioral analysis was determined to be appropriate for detecting significant differences (α=0.05) at a power of 0.8. Sample randomization was not performed as independent variables were age and genotype. Researchers were blinded throughout histological assessments with groups being unblinded at the end of each experiment upon statistical analysis. Data are expressed as mean ± s.e.m with individual sample values being shown. Statistical analysis was performed with Prism 8.0 (GraphPad), R, DESeq2, Seurat, or Monocle 3. Comparisons of means in histology experiments were analyzed with multiple t-tests followed by Holm–Sidak correction or mixed effects analysis followed by Dunnett’s multiple comparisons (Prism). Changes in expression for aggregated gene sets were determined with one-sample t-tests with the expected value of 0 in log2 space (null hypothesis of no change). Differential expression analysis in DESeq2 was based on Wald’s significance test of the negative binomial distribution. Differential expression analysis of single-cell RNA-Seq data in Seurat was performed using non-parametric Wilcoxon rank sum tests. Autocorrelation analysis to determine focal expression Monocle 3 was done using Moran’s I. The significance of gene set overlap was determined using the χ2 test with R. All data generated or analyzed in this study are included in this article.
 
 ## Results
 
-## Complementary single-cell transcriptional and immunohistochemical analysis reveals the dynamics of heterogeneous hippocampal microglia aging
+### Complementary single-cell transcriptional and immunohistochemical analysis reveals the dynamics of heterogeneous hippocampal microglia aging
 
 Previously, single-cell transcriptional profiling of microglia uncovered a diversity of responses during development and in response to pathology aggregated over multiple brain regions (Hammond et al., 2019; Li et al., 2023; Keren-Shaul et al., 2017; Masuda et al., 2019; Li et al., 2019; Kracht et al., 2020). Microglia have region-specific transcriptional states, so we decided to focus our analyses on the hippocampus (Grabert et al., 2016), a region with well-reported functional differences during aging (Fan et al., 2017). Correspondingly, we investigated age-related transcriptional heterogeneity by performing scRNA-Seq on hippocampal CD11b-positive cells isolated from mice across numerous life stages at mature (6 months), middle-age (12 months), aged (18 months), and old age (24 months) using a commonly employed pooling strategy (Lee et al., 2023; Millet et al., 2024; Harrington et al., 2023) (n=1 pool of five biological replicates for each age) to reveal the dynamics of microglia aging. 82% of cells isolated with CD11b were identified as microglia using canonical markers with a small subset being proliferative (Figure 1—figure supplement 1A-C). Dimensionality reduction revealed that non-proliferative microglia were grouped into interconnected clusters that contained homeostatic, transition, and activated states, along with a semi-distinct cluster with interferon activation (Figure 1A, Figure 1—figure supplement 1D–G). Overlaying microglia ages onto the clusters revealed progression from a homeostatic state in younger microglia to an activated state in old microglia, suggesting that gradual transcriptional changes occur during microglial aging (Figure 1B and C, Figure 1—figure supplement 1H). Furthermore, the heterogeneity of microglial transcriptional programs increased with age (Figure 1—figure supplement 1I). Expression of Cx3cr1 and Itgam exemplified the homeostatic state, while B2m, Apoe, Cd48, and Lyz2 depict the activated state (Figure 1D). Interestingly, several immediate early genes (Jun, Klf2, Fos), as well as the purinergic receptor gene P2ry12, exhibited transient increases in expression at middle-age (Figure 1D). Alternatively, the interferon cluster represents a small proportion of the overall microglia population with little age-related changes in the number of these cells, but augmented expression of interferon genes during aging (Figure 1A, C, and D, Figure 1—figure supplement 1G). Thus, gene expression changes exhibited unique patterns during aging, with certain genes showing age-related decreases (e.g., Tgfbr1) or increases (e.g., Apoe), while a subset of genes (e.g., Tgfb1) have peaks of expression at middle age (Figure 1D, E, and G; Supplementary file 1). Several complement genes implicated in age-related synaptic loss (Udeochu et al., 2016; Shi et al., 2015) (e.g., C1q and C3) demonstrated progressive age-related transcriptional increases, and the increased complement activity in microglia was confirmed by immunohistochemistry (Figure 1E and F).
 
@@ -123,15 +355,31 @@ The effects of aging on microglia could be progressive or sudden, so we investig
 
 As scRNA-Seq analysis revealed transcriptional heterogeneity during hippocampal microglial aging, we next assessed microglial phenotypic diversity across hippocampal subregions that could mirror the differential impact of aging across these hippocampal subregions at a functional level (Kozareva et al., 2019; Seki and Arai, 1995). We subdivided the adult hippocampus into functional units and quantified accumulation of puncta of the lysosomal marker CD68 in microglia to identify activation in the dentate gyrus (DG), molecular layer (ML), granule cell layer (GC), hilus, CA3, and CA1 at 3, 6, 12, 18, and 24 months of age (Figure 1—figure supplement 2A–C). We find striking spatial differences in microglial activation patterns during aging, with the GC, hilus, CA3, and outer CA1 regions showing robust microglia activation that increases beginning at middle age, while the ML and inner CA1 exhibit no age-related activation (Figure 1—figure supplement 2D–F). Additionally, we characterized the levels of the pro-inflammatory transcription factor NFKB p65 in microglia during aging (Taniguchi and Karin, 2018). Microglia-specific expression of NFKB p65 demonstrates region- and age-specific accumulation that mirrors, in part, age-related microglial CD68 increase (Figure 1—figure supplement 2G–I). These results indicate temporally defined and spatially heterogeneous microglia activation within the aging hippocampus that complements the identification of heterogeneous transcriptional activation of microglia during aging.
 
-## Trajectory analysis indicates that aging microglia pass through intermediate states
+### Trajectory analysis indicates that aging microglia pass through intermediate states
 
 To determine the transcriptional progression of microglia aging toward an activated state, we performed pseudotime analysis of the scRNA-Seq data using Monocle and observed several trajectories (Figure 2A). We find that the pseudotime trajectories progressed along the biological ages of the mice, indicating the suitability of this analysis for modeling aging progression in microglia (Figure 2B). We focus our analysis on one trajectory with two semi-distinct subbranches that terminated in transcriptional inflammatory activation since the alternate branch had minimal transcriptional differences between the beginning and end of the trajectory (Figure 2B and C). To gain insight into the transcriptional states of microglial aging along this inflammatory trajectory, we used spatial autocorrelation analysis and identified five expression modules of coregulated genes (Figure 2B and C; Supplementary file 2). We named these modules according to the most enriched GO pathways and known roles of prominent genes for microglia. This trajectory proceeds from high expression of homeostatic genes and mitochondrial processes (module 1) to transient expression of stress response genes and Tgfb1 (module 2), of which TGFβ signaling is critical for microglia development (Butovsky et al., 2014; Bedolla et al., 2024). A concerted increase in the expression of ribosomal genes (module 3) precedes one subbranch of inflammatory activation (module 4), while the other myeloid activation subbranch (module 5), characterized by B2m and C1qc expression, proceeds independently of increased ribosomal gene expression. GO analysis of genes specifically upregulated at 12 months showed an enrichment of stress response pathways (Figure 2—figure supplement 1A and B), corroborating the findings of the pseudotime analysis that intermediate stages of microglial aging pass through stress response pathways. We complemented Monocle pseudotime analysis using another distinct trajectory analysis (Scorpius) that uncovered similar progression through stress–response and translational intermediate states, followed by inflammatory activation (Figure 2—figure supplement 1C and D). We further corroborate the transient nature of the intermediate stress response module (module 2), observing KLF2 expression that peaks at 18 months of age by immunohistochemistry (Figure 2H) and Tgfb1 expression that has a transient peak at 12 months of age by RNAscope (Figure 3B). Thus, pseudotime trajectory analysis identifies a progression of intermediate states of microglial aging.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig2-v1.jpg)
+
+**Figure 2.:** (A) Pseudotime trajectories of microglia from an anchor point located in 6-month microglia presented in a UMAP plot (n=1 pool of five animals for each age). (B) Microglia ages superimposed over pseudotime trajectories. (C) Gene expression modules representing sections of the inflammatory aging trajectory over the right half of the UMAP plot (left). Modules were discovered using Moran’s I autocorrelation test. Top gene ontology terms and representative genes in each module (right). (D) Dotplot of pseudotime modules sorted by age. Percent of cells expressing the gene and average normalized expression are represented. (E–G) Average gene expression changes for each aging module represented as log2 fold change of 12 months (E), 18 months (F), or 24 months (G) over 6 months. (H) Representative images and quantification of KLF2 (magenta) and IBA1 (cyan) staining in the hippocampus across ages (n=3 mice per group; one-way ANOVA with Tukey’s post-hoc test; *p<0.05). (I) Diagram of the heterochronic parabiosis model with the comparisons made in scRNA-Seq. (J) Representative images and quantification of CD68 (red) and IBA1 (cyan) staining in the hippocampus of isochronic young (IY) and heterochronic young (HY) (n=5 mice per group; unpaired Student’s t-test; ***p<0.001). (K) Average gene expression changes for each aging module represented as log2 fold change of heterochronic young (HY) over isochronic young (IY) adult parabionts. Data from Pálovics et al., 2022. (L) Diagram of microglia surrounding an Aβ plaque. (M) Average gene expression changes for each aging module represented as log2 fold change of the AppNL-G-F genotype (AD) over wildtype (WT). Data from Sala Frigerio et al., 2019 (one-sample t-test with the expected value of 0 [no change]; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Data are shown as mean ± s.e.m.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plot of differential gene expression of 12-month microglia versus all other ages with significant genes in teal. (B) Gene ontology analysis of biological processes enriched in those genes with increased expression at 12 months of age. (C) Representative images and quantification of CD68 (red) and IBA1 (cyan) staining in the hippocampus of isochronic young (IY) and heterochronic young (HY) along with a diagram of the comparisons (n=5 mice per group; unpaired Student’s t-test; ***p<0.001). Data are shown as mean ± s.e.m. (D) Dotplot of pseudotime modules in young (Y), isochronic young (IY), and heterochronic young (HY) parabiont microglia. Data is from Pálovics et al., 2022. Percent of cells expressing the gene and average normalized expression are represented. (E) Volcano plots of differential gene expression of AppNL-G-F genotype (AD) over wildtype (WT) microglia at 6 (left) and 12 months of age. Significant genes are in teal. Data is from Pasciuto et al., 2020. (F) Dotplot of pseudotime modules across ages (3, 6, 12, and 21 months old) and genotypes (AppNL-G-F genotype (AD) over C57Bl/6 (WT)). Data is from Sala Frigerio et al., 2019. (G) Percent of cells expressing the gene and average normalized expression are represented.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representation of the microglia aging trajectory over the UMAP plot highlighting the region of peak Tgfb1 expression. (B) Representative RNAscope images and quantification of Tgfb1 (red) expression in IBA1 (cyan) cells across ages (n=5 per group; one-way ANOVA with Dunnett’s post hoc test; *p<0.05). (C) Dotplot of the expression values of TGFB1 signaling components from scRNA-Seq of aging hippocampal microglia (6-, 12-, 18-, and 24-month-old). Percent of cells expressing the gene and average normalized expression are represented. (D) Schematic of the heterochronic parabiosis model and quantification of hippocampal microglia expression of Tgfb1 from isochronic young (IY) and heterochronic young (HY) adult parabionts. Data derived from Pálovics et al., 2022. (E) Top gene ontology terms for the set of genes with significantly decreased expression in bulk microglia RNA-Seq following TGFB1 treatment compared to control (DMSO) in LPS-treated microglia (n=5 per group). (F) Heatmap of top 10 genes in each aging module following TGFB1 compared to DMSO in LPS-treated microglia. (G) Average gene expression changes for each aging module represented as log2 fold change of TGFB1 treatment over DMSO (one-sample t-test with the expected value of 0 [no change]; *p<0.05, ***p<0.001, ****p<0.0001). (H) Representation of the microglia aging trajectory over the UMAP plot highlighting the stage where CX-5461 modulates the trajectory. (I) Representative images of S6 (magenta) and Iba1 (cyan) staining in the hippocampus of 6- and 24-month-old mice and quantification across aging (n=3 mice per group; one-way ANOVA with Tukey’s post hoc test; *p<0.05, **p<0.005, ****p<0.0001). (J) Schematic of the heterochronic parabiosis model and quantification of hippocampal microglia expression of translation module from isochronic young (IY) and heterochronic young (HY) adult parabionts. Data derived from Pálovics et al., 2022 (one-sample t-test with the expected value of 0 [no change]; **p<0.01). (K) Top gene ontology terms for the set of genes with significantly decreased expression in bulk microglia RNA-Seq following CX-5461 treatment compared to control (DMSO) in LPS-treated microglia (n=3 per group) (L) Heatmap of top 10 genes in each aging module following CX-5461 compared to DMSO in LPS-treated microglia. (M) Average gene expression changes for each aging module represented as log2 fold change of CX-5461 treatment over DMSO (one-sample t-test with the expected value of 0 [no change]; *p<0.05, **p<0.01, ****p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of percentage of Tgfb1 RNAscope signal within IBA1 cells. (B) Quantification of IHC of pTGFBR1 signal in IBA1 cells across ages (n=4–5 mice per group; one-way ANOVA; *p<0.05). (C) Quantification of the expression of TGFB1 signaling components from Figure 3C. Expression values for the genes are represented as Z-scores (n=12 genes with reads in >25% of cells; Friedman test followed by Dunn’s multiple comparisons test; *p<0.05, ***p<0.001). (D) Dotplot of the expression values of TGFB1 signaling components in young (Y), aged (A), isochronic young (IY), and heterochronic young (HY) parabiont microglia. Data is from Pálovics et al., 2022. Percent of cells expressing the gene and average normalized expression are represented. UMAP plot of Tgfb1 scRNA-Seq colored by genotype. (E) Dotplot of the expression values of TGFB1 signaling components in aging microglia categorized by the expression of Tgfb1 into quartiles with Q1 having the lowest expression of Tgfb1 and Q4 having the highest expression. (F) Quantification of the expression of TGFB1 signaling components from (E). Expression values for the genes are represented as Z-scores (n=12 genes with reads in >25% of cells; Friedman test followed by Dunn’s multiple comparisons test; *p<0.05, ***p<0.001). (G) Dotplot of the expression values of selected TGFB signaling targets (activated and repressed, genes found in both Butovsky et al., 2014 and Qin et al., 2018) in aging microglia categorized by the expression of Tgfb1. (H) Heatmap of gene expression changes in the top 10 genes in each aging module induced by LPS. (I) Overlap between microglia gene expression changes induced by LPS and aging (χ2<2.2e-16). (J) PCA plot of pharmacological manipulations with or without LPS treatment.
 
 The gene-level dynamics of microglia aging are further revealed when interrogating the modules at each timepoint. Expression of several genes in the homeostatic cluster, including Cx3cr1 and Tgfbr1, progressively decline throughout the aging timeline (Figure 2D). Stress–response gene expression peaks at early timepoints during aging, while those genes in the translation module have coherent upregulation at 24 months of age (Figure 2D). The top-ranked genes in the inflammation module gradually increase their expression throughout aging in a consistent manner (Figure 2D). Alternatively, several genes in the myeloid activation module have expression peaks at 12 (Cst3, Selplg) or 18 months (Ctss, Cd9) of age (Figure 2D). When the modules are collapsed into metagenes, we observe that the homeostatic module is reduced early on in aging, while the stress response module follows later (Figure 2E–G). The ribosomal and inflammatory modules display augmented expression at latter ages (Figure 2E–G). Alternatively, the myeloid activation consistently has slightly increased expression throughout aging. These results suggest that with advancing age microglia lose homeostatic and stress response functions, while increasing their translational and inflammatory capacity.
 
 Next, we used models of pro-aging systemic interventions (Bieri et al., 2023) and age-related neurodegenerative disease (Ransohoff, 2016) to determine their impact on hippocampal microglia aging trajectories. First, we used the heterochronic parabiosis model (Pálovics et al., 2022) to investigate whether exposure to an aged systemic environment could promote progression of young adult microglia along the identified aging trajectory (Figure 2I). Performing immunohistochemistry for IBA1 and CD68, we reveal that an aged systemic environment activates microglia (Figure 2J). Next, we utilized publicly available scRNA-Seq datasets of parabiosis (Pálovics et al., 2022) and Alzheimer’s disease (Sala Frigerio et al., 2019) models to investigate the transcription consequences of these interventions on microglia aging trajectories. Analyzing the scRNA-Seq dataset from Pálovics et al., 2022, we find that hippocampal microglia from young adult heterochronic parabionts have decreased expression of homeostatic genes (module 1), while having increased expression of ribosomal genes (modules 3), inflammatory activation genes (module 4), and myeloid activation genes (module 5) (Figure 2K, Figure 2—figure supplement 1E). Using scRNA-Seq from Sala Frigerio et al., we analyzed the AppNL-G-F transgenic mouse model data at 12 months of age to determine the effects of Alzheimer’s disease pathology on microglial aging (Sala Frigerio et al., 2019; Figure 2L). We observe exaggerated advancement along the aging trajectory in AppNL-G-F mice compared to controls, as expression is shifted toward the age-associated modules (Figure 2M, Figure 2—figure supplement 1F and G). These shifts in gene expression posit that the aged systemic and diseased environments drive adult microglia advancement along an aging-associated transcriptional trajectory.
 
-## Intermediate states of microglia aging act as modulators of age-related trajectory progression
+### Intermediate states of microglia aging act as modulators of age-related trajectory progression
 
 Next, we sought to further corroborate microglial age-related molecular changes associated with individual intermediate states in the aging hippocampus. Specifically, we assessed changes in the intermediate stress response (module 2) and translation (module 3) modules by examining expression of Tgfb1 (Figure 3A and B) and the ribosomal protein S6 (Figure 3G and H), respectively. The vast majority (>95%) of Tgfb1 signal localized to microglia at every age (Figure 3—figure supplement 1A), indicating microglia are the predominant source for hippocampal TGFB1. Consistent with scRNA-Seq analysis (module 2) (Figure 1E), we observed highest Tgfb1 expression in microglia by middle-age using RNAscope (Figure 3B). TGFBR1 activation was reduced during aging in hippocampal microglia (Figure 3—figure supplement 1B), and the genes involved in the TGFβ signaling pathway exhibited age-related expression changes with several having peak expression at 12 months of age (Figure 2C, Figure 3—figure supplement 1C). Next, we examined at a transcriptional level whether TGFβ1 is likely to act in an autocrine or paracrine fashion in microglia. To do so, we interrogated our scRNA-Seq dataset, leveraging the variation in microglia Tgfb1 expression to probe the relative activity of TGFβ1. High expression of downstream TGFβ signaling pathway components in microglia with high Tgfb1 expression would point to autocrine mechanisms while, alternatively, high expression of downstream TGFβ signaling pathway components in microglia with low Tgfb1 expression would point to paracrine mechanisms. We observed highest expression of TGFβ signaling pathway components and targets in microglia with the highest expression of Tgfb1 (Figure 3—figure supplement 1E–G), suggesting an autocrine mechanism of action. Additionally, consistent with an increase in translational components found during the scRNA-Seq analysis (module 3), we observed increased expression of ribosomal protein S6 (Figure 3I; Yi et al., 2021) by immunohistochemistry.
 
@@ -139,13 +387,25 @@ To complement hippocampal aging analysis, we assessed the impact of the aging sy
 
 To investigate the role of the intermediate stress response (module 2) and translation (module 3) modules in mediating advancement through microglial activation states, we used an in vitro approach. Primary microglia were treated with LPS, which induced gene expression changes with a significant overlap to aging, as well as expression changes in aging modules genes (Figure 3—figure supplement 1H and I; Supplementary file 3). We administered TGFB1 to activate TGFβ signaling (module 2) (Figure 3) and CX-5461 to inhibit RNA Pol I synthesis and interfere with translation (module 3) (Figure 3H) in the context of microglial activation. TGFB1 treatment modified the transcriptional states of LPS-treated microglia (Figure 3—figure supplement 1J) and caused decreased expression of genes in GO terms related to inflammatory immune processes after LPS stimulation (Figure 3E). TGFB1 treatment reduced expression of later aging modules (modules 2, 3, and 4) and restored expression of the homeostatic gene Cx3cr1 (Figure 3F and G), suggesting that TGFBβ signaling acts as an aging modulator during microglial stress response. Targeting translation (module 3) with CX-5461 attenuated expression of genes in GO terms related to immune processes after LPS stimulation (Figure 3K; Supplementary file 3), as well as decreased expression of genes in modules 2, 3, and 4, while restoring expression of homeostatic genes in module 1 (Figure 3). Interestingly, CX-5461 treatment had no effect on genes in module 5, which is located on an independent myeloid activation trajectory from altered translational gene expression (Figure 3L and M). These in vitro perturbation data identify active roles for intermediate states in mediating advancement along aging-associated inflammatory trajectories.
 
-## Mimicking age-related changes in microglia-derived TGFB1 promotes microglial advancement along an aging-associated inflammatory trajectory in vivo
+### Mimicking age-related changes in microglia-derived TGFB1 promotes microglial advancement along an aging-associated inflammatory trajectory in vivo
 
 Having uncovered roles for intermediate states in advancing microglia along aging-associated trajectories in vitro, we next investigated the role of individual aging modules in adult microglia in vivo. We elected to disrupt the transition from homeostasis to inflammatory activation by targeting microglia-derived TGFB1, a key marker of the stress response intermediate state (module 2). While TGFB1 is critical for microglia development (Bedolla et al., 2024; Spittau et al., 2020), the role of microglia-derived TGFB1 in regulating microglia homeostasis during aging remains to be defined.
 
 We generated Tgfb1flox/flox, Tgfb1flox/wt, and Tgfb1wt/wt mice carrying an inducible Cx3cr1Cre-ER gene, in which Tgfb1 is excised specifically in mature (7–8 months) microglia upon tamoxifen administration (Tgfb1 cKO, Tgfb1 Het, and WT, respectively) (Figure 4A). To disrupt the age-related increase in microglia Tgfb1 observed between mature and middle-age (Figures 1E and 3B), mature mice were administered tamoxifen and molecular changes were assessed two months later (Figure 4A). We find that microglia activation, as measured by CD68/IBA1 immunohistochemistry, exhibited genotype-dependent effects (Figure 4—figure supplement 1A). We performed scRNA-Seq on microglia isolated from WT, Tgfb1 Het, and Tgfb1 cKO mature mice (n=2 pools of three animals per genotype) and detected genotype-dependent changes in Tgfb1expression levels, as well as effectors of TGFB1 signaling (Figure 4—figure supplement 1B). Dimensionality reduction and clustering of cells from scRNA-Seq revealed readily identifiable clusters based on marker expression (Figure 4B). Composition of these clusters were dependent on the microglia genotype, with WT microglia representing the largest fraction of the homeostatic cluster and Tgfb1 cKO microglia representing the largest fraction of the activated cluster (Figure 4C, Figure 4—figure supplement 1C). Next, we assessed whether deletion of Tgfb1 in mature adult microglia impacted advancement along aging-associated inflammatory trajectories. Interestingly, when we analyze the effects of Tgfb1 dosage on the aging modules, we find that the loss of a single Tgfb1 allele reduces expression of homeostatic genes (module 1), while increasing expression of translation-related genes (module 3) (Figure 4D and E). In addition to a decrease in the expression of homeostatic genes (module 1), loss of both Tgfb1 alleles caused a greater increase in the expression of translation-related genes (module 3) and led to a profound increase in inflammatory activation genes (module 4) (Figure 4D and F). Results were corroborated in an independent cohort of mature Tgfb1 cKO mice, in which we detected altered levels of immune- and age-related cell surface markers (Figure 4—figure supplement 1D and E), transcriptional alterations that significantly overlapped with aging (Figure 4—figure supplement 1F–H; Supplementary file 4), and progression along the aging-associated inflammatory trajectories (Figure 4—figure supplement 1). These data indicate that microglia-derived TGFB1 is both necessary for expression of youth-associated homeostatic genes and prevents aberrant microglia inflammatory activation, further suggesting that TGFBβ signaling acts as a modulator in mediating advancement along aging-associated inflammatory trajectories.
 
-## Mimicking age-related changes in microglia-derived TGFB1 impairs hippocampal-dependent cognitive function
+![Figure 4.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of in vivo manipulation schema of Module 2. Mature (7–8 months) littermate Cx3cr1Cre-ER/+; Tgfb1flox/flox (cKO), Cx3cr1Cre-ER/+; Tgfb1flow/wt (Het), and Cx3cr1Cre-ER/+; Tgfb1wt/wt (WT) mice were administered tamoxifen and subject to hippocampal microglia scRNA-Seq and behavior analysis two months later. (B) UMAP plot of microglia separated into transcriptional clusters (n=2 pools of three animals per genotype). (C) Stacked bar plot of the normalized relative percentage of cells of each genotype in the identified clusters. (D) Dotplot of expression of aging module markers sorted by genotype. Percent of cells expressing the gene and average normalized expression are represented. (E, F) Average gene expression changes for each aging module represented as log2 fold change of either Het over WT (E) or KO over WT (F) (one-sample t-test with the expected value of 0 [no change]; *p<0.05, ****p<0.0001). (G) Novel object recognition task. (Top) Diagram of the training and testing phases of the novel object recognition paradigm. (Bottom) Quantification of the NOR testing phase represented as a percentage of time spent with the novel object (over the total time spent interacting with the objects) (n=9–13 per genotype; one-sample t-test with the expected value of 50 [equal time spent with each object]; ***p<0.001) (differences between groups determined by one-way ANOVA; **p<0.01). (H) Contextual fear conditioning. (Top) Diagram of the fear conditioning paradigm. (Bottom) Quantification of the percentage of time mice froze in the contextual fear conditioning testing phase (n=14–16 per genotype; one-way ANOVA; *p<0.05). Data are shown as mean ± s.e.m. (I) Schematic of in vivo manipulation of Tgfb1 at young and mature ages. Young (2 month) or mature (7–8 months) littermate Tmem119Cre-ER/+; Tgfb1flox/flox (cKO), Tmem119Cre-ER/+; Tgfb1flow/wt (Het), and Tmem119Cre-ER/+; Tgfb1wt/wt (WT) mice were administered tamoxifen and subject to behavioral analysis two months later. (J, K) Quantification of the NOR testing phase represented as a percentage of time spent with the novel object (over the total time spent interacting with the objects) for young (J) and mature (K) Tmem119Cre-ER::Tgfb1 mice n=12–26 in young and n=10–16 in mature mice per genotype; one-sample t-test with the expected value of 50 (equal time spent with each object; *p<0.05, ***p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative images and quantification of IBA1 (cyan)/CD68 (red)-positive microglia in wildtype, Tgfb1 cHet, and Tgfb1 cKO hippocampi (n=3–5; one way ANOVA with Tukey post hoc test; *p<0.05). (B) Dotplot of the expression values of TGFB1 signaling components from scRNA-Seq of Tgfb1 WT, cHet, and cKO microglia (n=2 pools of three animals per genotype). (C) UMAP plot of Tgfb1 scRNA-Seq colored by genotype. (D) FACS plots of gating strategy for microglia isolation for RNA-Seq in cHet and cKO hippocampi. Quantification of the flow cytometry analysis of CD11b and CD45 (n=3–5; mixed effects analysis; *p<0.05, ****p<0.0001). (E) Example histogram and quantification of CD48 in control and Tgfb1 cKO FACS-sorted microglia (n=3–5 per group; t-test; ****p<0.0001). (F) Top gene ontology terms associated with genes significantly increased in microglia bulk RNA-Seq in Tgfb1 cKO samples (n=3–5 samples per genotype). (G) Top gene ontology terms associated with genes significantly decreased in microglia bulk RNA-Seq in Tgfb1 cKO samples. (H) Overlap between concordant microglia gene expression changes induced by Tgfb1 knockout and aging. (χ2<2.2e-16). (I) Heatmap of gene expression of the top 10 genes in each aging module in control and Tgfb1 cKO microglia. (J) Average gene expression changes for each aging module represented as log2 fold change of Tgfb1 cKO over control (one-sample t-test with the expected value of 0 [no change]; ****p<0.0001). Data are shown as means ± s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97671/elife-97671-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Freezing during the cued fear conditioning phase of the fear conditioning test for the Cx3cr1Cre-ER::Tgfb1 cohort. The percent freezing was calculated for the last 30 seconds of the test following the conditioned stimulus (n=13–16 per genotype). (B) Diagram and results of Y maze test for the Cx3cr1Cre-ER::Tgfb1 cohort. Results are presented as preference for the novel arm versus the trained armed (time in novel arm/(time in novel arm + trained arm) × 100) (n=14–16 per genotype). (C) Percent time in the center of the open field and distance traveled during the open-field test for the Cx3cr1Cre-ER::Tgfb1 cohort (n=14–16 per genotype). (D, F) Results of Y maze test for the young (D) and mature (F) Tmem119-Cre-ER::Tgfb1 cohort (n=8–16 per genotype for young and n=10–16 per genotype for mature). (E, G) Percent time in the center of the open field and distance traveled during the open-field test for the Tmem119Cre-ER::Tgfb1 cohort (n=12–26 per genotype for young and n=10–16 per genotype for mature). Data are shown as mean ± s.e.m.
+
+### Mimicking age-related changes in microglia-derived TGFB1 impairs hippocampal-dependent cognitive function
 
 It is becoming increasingly apparent that microglia interact with other cell types in the brain to influence cognitive function (Salter and Beggs, 2014; Cserép et al., 2021). Given that manipulating the levels of microglia-derived TGFB1 altered microglia homeostasis and progression along aging-associated trajectories, we next investigated the functional consequence of the loss of microglia-derived TGFB1 on cognition. We assessed hippocampal-dependent learning and memory in WT, Tgfb1 Het, and Tgfb1 cKO mature mice using novel object recognition and contextual fear conditioning – behavioral paradigms that are sensitive to age-related impairments (Horowitz et al., 2020; Traschütz et al., 2018). During novel object recognition testing, WT mature mice were biased toward a novel object relative to a familiar object while neither Tgfb1 Het nor Tgfb1 cKO mature mice showed any preference (Figure 4G). During contextual fear conditioning testing, Tgfb1 Het and Tgfb1 cKO mature mice exhibited less freezing compared to WT controls (Figure 4H). Alternatively, we assessed amygdala-dependent fear memory by cued fear conditioning (Figure 4—figure supplement 2A; Phillips and LeDoux, 1992) and short-term spatial reference memory by Y maze (Figure 4—figure supplement 2B; Kraeuter et al., 1916) and observed no differences across genotypes. As a control, we also profiled general health using an open-field paradigm and observed no differences in total distance traveled or time spent in the center of the open field, indicative of normal motor and anxiety functions (Figure 4—figure supplement 2C).
 

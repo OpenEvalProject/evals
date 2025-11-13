@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Chemistry, 100 Washington Square East, Silver Building, New York University New York United States
-2. https://ror.org/0190ak572 Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University New York United States
-3. https://ror.org/0190ak572 Courant Institute of Mathematical Sciences, New York University New York United States
-4. https://ror.org/02n96ep67 New York University-East China Normal University Center for Computational Chemistry, New York University Shanghai Shanghai China
+1. Department of Chemistry, 100 Washington Square East, Silver Building, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Simons Center for Computational Physical Chemistry, 24 Waverly Place, Silver Building, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Courant Institute of Mathematical Sciences, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. New York University-East China Normal University Center for Computational Chemistry, New York University Shanghai Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
 
 † Corresponding author
 
@@ -36,11 +36,35 @@ Overall, our study provides new evidence on the regulation of chromatin architec
 
 ## Results
 
-## TF binding mediates the formation of microdomains
+### TF binding mediates the formation of microdomains
 
 Protein binding to chromatin fibers has been shown to produce regions of enriched contacts in Micro-C or Hi-C maps. For example, loops associated with chromosome domain boundaries overlap with CTCF binding regions (Rao et al., 2014). Similarly, the enrichment of Hi-C contacts can be used as a reporter of the strength of interaction between a pair of TF binding sites (Ma et al., 2018). Finally, the binding of TFs, cofactors, or chromatin modifiers produces fine-scale domains, smaller than TADs, that can be identified as stripes and dots in Micro C maps (Hsieh et al., 2020).
 
 To better understand how TF binding position affects chromatin architecture, we simulate 50-nucleosome uniform fibers of 26, 44, and 62 bp linker DNAs, as well as 50-nucleosome life-like fibers with TF binding in four different scenarios (Figure 1). Interestingly, contact maps of fibers with both medium (44 bp) (Figure 1A) and long (62 bp) (Figure 1B) linker DNAs show clear regions of high-frequency contact, or microdomains, as a result of the TF binding, that are dependent on the TF binding positions. In fibers with short linkers (Figure 1C), like 26 bp, the formation of microdomains is less clearly identified in the contact maps. Namely, high-intensity regions close to the diagonal are diffuse and not as well defined as in the fibers with 44 and 62 bp linkers. See for example, topologies 2 and 3 in panels A, B, and C of Figure 1. On the other hand, other topologies, like topologies 1 and 4, allow the identification of microdomains. The 44 and 62 bp linker fibers are less compact and more globular than the 26 bp linker fiber (Perišić et al., 2010). Additionally, these fibers are more sensitive to changes in salt concentration and the presence of LH (Perišić et al., 2010; Portillo-Ledesma et al., 2022). The presence of more diffuse microdomains in 26 bp fibers can be explained by the rigidity of short-linker fibers in which the linker DNA dictates fiber architecture and produces a highly bent 10 nm ladder-like form (Collepardo-Guevara and Schlick, 2014) with low sensitivity to external and internal parameters, such as LH binding (Portillo-Ledesma et al., 2022; Perišić et al., 2010; Routh et al., 2008). Thus, longer linker DNAs that give chromatin fibers more flexibility, facilitate their folding modulation by TF binding.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-v1.jpg)
+
+**Figure 1.:** 50-nucleosome chromatin fibers with: (A) 44 bp linkers, (B) 62 bp linkers, (C) 26 bp linkers, and (D) Nonuniform linkers simulated with four different TF topologies. At the top, for the 44 bp system, we show an ideal zigzag fiber coloring in red the DNA with TF binding regions. Arcs show the possible binding geometries. The binding positions and geometries that define each topology are the same in all systems. For each system, we show the cumulative contact map calculated from 10 independent trajectories and a representative fiber structure also showing in red the TF binding regions. Additional representative structures are shown in Figure 1—figure supplements 3–6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** DBSCAN clustering (Ester et al., 1996) was performed on distance matrices obtained from the contact maps with nucleosome resolution (d=1/freq) and using minpoint = 5 and epsilon = 3 and 2 for the 62 and 44 bp systems, respectively. Internucleosome interactions in one dimension are plotted as Int.Freq. vs. i±k.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** DBSCAN clustering (Ester et al., 1996) was performed on distance matrices obtained from the contact maps with nucleosome resolution (d=1/freq) and using minpoint = 5 and epsilon = 2 and 1.4 for the life-like and 26 bp system, respectively. Internucleosome interactions in one dimension are plotted as Int.Freq. vs. i±k.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp6-v1.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (Top) Sedimentation coefficient and end-to-end distance evolution; (Middle) average triplet angle evolution; and (Bottom) sample energy evolution for the 26 bp system with five transcription factor (TF) binding regions.
 
 Similar to the 44 and 62 bp uniform systems, microdomains emerge in ensemble-based contact maps of life-like fibers (Figure 1D). Due to the fiber polymorphism triggered by variations in the linker DNA (Collepardo-Guevara and Schlick, 2014), the microdomains are slightly more diffuse than in the 44 and 62 bp uniform fibers (Figure 1A and B). Thus, TF binding positions define the organization of life-like chromatin fibers, but the irregularity of the fibers smooths out this effect compared to uniform systems; fibers that combine short and long linkers form fluid heterogeneous bent ladders that accommodate TF binding in a more relaxed way than compact 30 nm regular forms.
 
@@ -52,13 +76,21 @@ Importantly, the contact maps that reveal microdomains are ensemble-based maps i
 
 **Figure 2.:** The 10 single-trajectory contact maps for the 62 bp system Topology 1 (five Transcription factor (TF) binding regions) at left reveals various microdomains. The large ensemble-based contact map at right obtained by summing the 10 individual contact maps reveals all possible microdomains contacts.
 
-## TF binding effect is regulated by linker DNA length, histone acetylation, and LH density
+### TF binding effect is regulated by linker DNA length, histone acetylation, and LH density
 
 As we have shown previously, histone acetylation affects chromatin compaction (Collepardo-Guevara et al., 2015), size, and compaction of nucleosome clutches (Portillo-Ledesma et al., 2021), and can produce the segregation of domains (Rao et al., 2017). Similarly, LH density controls chromatin higher-order folding and compaction (Portillo-Ledesma et al., 2022; Perišić et al., 2019; Grigoryev et al., 2016), and the size and compaction of nucleosome clutches (Portillo-Ledesma et al., 2021). In addition, LH binding and tail acetylation act cooperatively to direct fiber folding (Bascom and Schlick, 2017).
 
 To investigate how TF binding and other chromatin regulators, such as LH and tail acetylation act together to modulate chromatin architecture, we study TF binding in the presence of LH and tail acetylation for fibers with different linker DNAs. In particular, we determine TF saturation curves for fibers with uniform linkers (26, 35, 44, 53, 62, 70, and 80 bp), and for nonuniform “life-like” fibers (see Methods) by measuring both packing ratios and sedimentation coefficients at increasing TF concentration (percentage of linker DNA beads that can bind TF), from 0 to 100%.
 
 As we see from Figure 3A and Figure 3—figure supplement 1, when the linker DNA is short, such as 26 and 35 bp, TF binding does not increase the packing ratio of the fiber. However, the sedimentation coefficient increases significantly from 0 to 25% [TF], and then remains flat. This indicates that TF binding saturation occurs at a concentration of 25% and that higher TF concentrations do not affect fiber folding. Namely, fibers cannot fold into a more compact form due to excluded volume interactions. As clearly shown by the fiber configurations of the 26 bp system (Figure 4), while in the absence of TF the fiber has a ladder-like extended structure (short linkers), it folds over itself when TF is bound, explaining the higher sedimentation coefficients. On the other hand, for medium and long linker fibers, both packing ratios and sedimentation coefficients increase upon TF binding (Figure 3A). The longer linkers allow nucleosomes to approach closer to one another upon TF binding, increasing the packing ratio. Additionally, the longer the linker DNA, the larger the change in packing ratio upon TF binding at a concentration of 25%. Similar to the short linker fibers, TF binding also produces a more globular fiber (Figure 4) with a higher sedimentation coefficient (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig3-v1.jpg)
+
+**Figure 3.:** Graphs (A–C) show packing ratios and sedimentation coefficients as a function of TF concentration for the 26 bp, 44 bp, 62 bp, and life-like fibers in different conditions: (A) systems without LH and acetylation; (B) systems with four acetylation islands; and (C) systems with LH density ρ = 1. Average and standard deviation values are obtained from ensembles of 1000 structures. At the top left, we show the fiber axis (red trace) and position of nucleosomes (blue dots) for a 70 bp chromatin fiber to illustrate the increase of packing ratio (number of nucleosomes per 11 nm of fiber length) upon TF binding. At the top right, we show a 70 bp linker chromatin fiber to illustrate the decrease of chromatin global size upon TF binding. Results including uniform systems with 35, 53, 70, and 80 bp are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Systems without linker histone (LH) and acetylation; (B) systems with four acetylation islands; and (C) systems with LH density ρ = 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig4-v1.jpg)
 
@@ -74,15 +106,73 @@ For short linker fibers like 26 and 35 bp, as we saw in the wildtype system, no 
 
 Finally, for life-like fibers (Figure 3C), the trends in packing ratio and sedimentation appear similar to those of the wildtype systems (Figure 3A). Interestingly, the increase in packing ratio upon TF binding at a 25% concentration is slightly higher than for the wildtype system (0.85 vs. 0.45 increase). This indicates that the simultaneous binding of LH and TF to life-like fibers is better accommodated than in uniform fibers. Thus, fiber fluidity triggered by variations of linker DNA (Collepardo-Guevara and Schlick, 2014) modulates the effect of protein binding on chromatin architecture.
 
-## TF binding-mediated compaction as possible mechanism of gene locus repression
+### TF binding-mediated compaction as possible mechanism of gene locus repression
 
 Myc helps maintain cell pluripotency and inhibits differentiation by activating genes needed for pluripotency and repressing genes that trigger differentiation (Smith et al., 2010; Krepelova et al., 2014). For example, the embryonic ectoderm development gene, Eed, expresses a protein member of the Polycomb-group (PcG) family required for silencing pluripotency genes upon embryonic stem cell (ESC) differentiation (Obier et al., 2015). Thus, in ESCs, Eed is repressed so that cell differentiation is suppressed. To determine the mechanism of gene repression in Eed by Myc:Max, we fold de novo the Eed gene in the presence and absence of TF binding. To study Eed gene activation upon cell differentiation, we additionally simulate the folding of Eed with and without TF binding, and with increasing LH density (ρ) to 0.8 LH/nucleosome, the level observed in mouse somatic cells (Woodcock et al., 2006).
 
 Figure 5A shows the ensemble-based contact map for the Eed gene with and without TF binding. We see that TF binding increases the number and frequency of internucleosome contacts. The density of the matrix increases by ∼9% upon TF binding. On the right upper corner of the contact maps, there is a clear difference: microdomains emerge as product of the TF binding. Contact maps obtained from single trajectories (Figure 5B) clearly show that TF binding increases hairpin motifs (medium-range contacts) and hierarchical loops (long-range contacts); these motifs are evident from diagonal and perpendicular regions to the main diagonal of the map (Grigoryev et al., 2016). Such an increase in local loop interactions is also observed in the plot of contact frequency versus genomic distance (Figure 5—figure supplement 1) showing that while short local interactions slightly decrease upon TF binding, local loop interactions increase markedly. These folding motifs increase fiber compaction (Figure 5C). Fiber configurations show that upon TF binding, the TF binding regions are in close proximity, producing a more compact fiber.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ensemble-based nucleosome contact maps obtained from 20 independent trajectories of the Eed gene in the absence and presence of TF binding. (B) Nucleosome contact maps obtained from a single trajectory of the Eed gene in the absence and presence of TF binding. (C) Representative chromatin fibers of the Eed gene in the absence and presence of TF binding. In magenta are shown the TF binding regions. Linker histones (LHs) are shown in cyan.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig5-figsupp1-v1.jpg)
+
 Furthermore, the fiber sedimentation coefficient increases, while the radius of gyration decreases, upon TF binding (Table 1). Such radii of gyration measurements agree with experimentally and theoretically determined radii of gyrations for similar size fibers (Kadam et al., 2023; Boettiger et al., 2016) (e.g. our 62 ± 14 nm Rg is similar to the 43 ± 9 nm Rg predicted for 26 kb regions in Drosophila cells Boettiger et al., 2016). Significantly, we find that the TF binding region 1, which overlaps with the promoter region, becomes occluded, thus less accessible. As reported in Table 1, the area and volume of the promoter region are reduced ∼1.5 times upon TF binding. Thus, Eed mechanism of repression by Myc:Max involves the compaction and occlusion of the promoter region due to increased fiber folding. A less accessible promoter will impair gene transcription.
 
+**Table 1.**
+ Compaction parameters: Sedimentation coefficient and radius of gyration for the entire Eed system, and area and volume for the promoter region of Eed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fiber Rg (nm)</th>
+      <th>Fiber Sc (S20,w)</th>
+      <th>Promoter area (nm2)</th>
+      <th>Promoter volume (nm3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eed</td>
+      <td>62 ± 14</td>
+      <td>162 ± 19</td>
+      <td>252 ± 45</td>
+      <td>1753 ± 239</td>
+    </tr>
+    <tr>
+      <td>Eed + TF</td>
+      <td>60 ± 13</td>
+      <td>171 ± 18</td>
+      <td>171 ± 42</td>
+      <td>1262 ± 202</td>
+    </tr>
+    <tr>
+      <td>Eed + 0.8 LH</td>
+      <td>61 ± 9</td>
+      <td>173 ± 15</td>
+      <td>196 ± 47</td>
+      <td>1447 ±123</td>
+    </tr>
+    <tr>
+      <td>Eed + 0.8 LH + TF</td>
+      <td>57 ± 8</td>
+      <td>175 ±16</td>
+      <td>210 ± 46</td>
+      <td>1420 ± 104</td>
+    </tr>
+  </tbody>
+</table>
+
 Upon cell differentiation, LH density increases to ∼0.8 LH/nucleosome (Woodcock et al., 2006), and Eed needs to be activated so the polycomb protein is expressed and the pluripotency genes are repressed. Thus, to determine how such an LH density increase upon cell differentiation might affect Eed repression and help its activation, we study the Eed gene loci with an LH density ρ = 0.8. When ρ increases, the fiber becomes more compact and less flexible (Figure 6 and Table 1) due to the repressive effect of LH binding (Portillo-Ledesma et al., 2022; Luque et al., 2014). This change in fiber compaction and flexibility modulates the impact of TF. Similar to the effect observed for the 26 bp system in Figure 3, the Myc:Max dimers cannot interact when the fiber becomes more rigid and straight due to LH binding. Indeed, from the 20 trajectories ran for this system, only one trajectory has dimers engaged, and thus, the systems with ρ = 0.8 with and without TF exhibit similar properties (Table 1), structures (Figure 6), and genomic contacts (Figure 6—figure supplement 1). These results implicate LH in the activation of genes by impairing the effect of repressive proteins.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig6-v1.jpg)
+
+**Figure 6.:** (A) Ensemble-based nucleosome contact maps obtained from 20 independent trajectories of the Eed gene with an LH density of 0.8 LH/nucleosome in the absence and presence of transcription factor (TF) binding. (B) Representative chromatin fibers of the Eed gene in the absence and presence of TF binding showing that the two TF binding regions remain apart upon TF binding. In magenta are shown the TF binding regions. LHs are shown in cyan.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91320/elife-91320-fig6-figsupp1-v1.jpg)
 
 ## Discussion
 
@@ -106,7 +196,7 @@ Although our implicit modeling of TF binding is a simple strategy, it provides c
 
 ## Methods
 
-## Chromatin mesoscale model
+### Chromatin mesoscale model
 
 Briefly, our chromatin mesoscale model contains coarse-grained elements that define the nucleosome cores, linker DNA, histone core tails, and LH (Bascom and Schlick, 2017; Arya and Schlick, 2006; Collepardo-Guevara and Schlick, 2014; Perišić et al., 2010; Figure 7A). In particular, cores composed of eight histone proteins and ∼147 bp of DNA are described as rigid cylinders with 300 Debye-Hückel charges distributed on their irregular surface calculated by the DiSCO algorithm (Zhang et al., 2003). Linker DNA connecting nucleosomes is treated with a combined worm-like chain and bead model (Jian et al., 1997) based on the charged colloidal cylinder approach derived by Stigter, 1977 where each bead has a salt-dependent charge and a resolution of ∼9 bp. Histone tails (Arya and Schlick, 2006) and LHs (Luque et al., 2014; Perišić et al., 2019) are coarse-grained as five residues per bead with the Levitt-Warshel united-atom protein model. The charges on histone tails beads are calculated as the sum of the five amino acids that compose the bead, whereas charges on LH beads are determined by the DiSCO algorithm. Acetylation of histone tails is modeled by alternatively folded rigid tails with altered force constants for stretching and bending with energies 100 times larger than wildtype tails (Collepardo-Guevara et al., 2015). Tail coordinates are determined separately for wildtype and acetylated tails, by swapping coordinates when a change occurs. The new tail configuration after the swapping is subject to a standard Metropolis acceptance/rejection criterion based on the changes in local electrostatic energy (Bascom and Schlick, 2017).
 
@@ -114,23 +204,31 @@ Briefly, our chromatin mesoscale model contains coarse-grained elements that def
 
 **Figure 7.:** (A) Coarse-grained chromatin elements (nucleosome core, linker DNA, histone tails, and linker histone, LH) form chromatin fibers at the kb level. (B) Crystal structure of Myc:Max forming a heterotetramer that binds to sequence-distant DNA regions. (C) Schematic representation of Myc:Max heterodimers and heterotetramers. (D) Illustration of our implicit modeling of Myc:Max binding to chromatin fibers: distance constraints following Hooke’s spring law are enforced when two linker DNAs with Myc:Max bound are in close spatial proximity (20 nm) and at at least 30 linker DNAs apart. (E) Design of the Eed gene loci using Mnase-seq data to position nucleosome free regions (NFRs) (orange track) and Chip-seq data to position LHs (blue track) and Myc:Max binding regions (green track).
 
-The potential energy function of the model includes stretching, bending, and twisting terms for the linker DNA (ES, EB, ET), stretching and bending terms for histone tails (EtS, EtB) and LHs (ElhS, ElhB), and excluded volume (EV) and electrostatic (EC) terms for all beads as:(1)E(r)=ES+EB+ET+EtS+EtB+ElhS+ElhB+EV+EC,
+The potential energy function of the model includes stretching, bending, and twisting terms for the linker DNA ($E_{S}$, $E_{B}$, $E_{T}$), stretching and bending terms for histone tails ($E_{tS}$, $E_{tB}$) and LHs ($E_{lhS}$, $E_{lhB}$), and excluded volume ($E_{V}$) and electrostatic ($E_{C}$) terms for all beads as:
+
+$$
+E(r)=E_{S}+E_{B}+E_{T}+E_{tS}+E_{tB}+E_{lhS}+E_{lhB}+E_{V}+E_{C},
+$$
 
 where r is the collective position vector.
 
 Further details on the method parameters can be found in Bascom and Schlick, 2017; Arya and Schlick, 2006; Collepardo-Guevara and Schlick, 2014; Perišić et al., 2010.
 
-## TF Binding modeling
+### TF Binding modeling
 
-Based on the crystal structure (PDBID 1NKP) of the Myc:Max complex (Figure 7B) showing that heterotetramers can bind to sequence-distant regions, we simulate the binding of Myc:Max implicitly (Figure 7C) by adding restraints between two genome loci bi and bj (Figure 7D). In particular, a harmonic energy penalty of the form:(2)Ebibj=k(lbibj−l0)2
+Based on the crystal structure (PDBID 1NKP) of the Myc:Max complex (Figure 7B) showing that heterotetramers can bind to sequence-distant regions, we simulate the binding of Myc:Max implicitly (Figure 7C) by adding restraints between two genome loci $b_{i}$ and $b_{j}$ (Figure 7D). In particular, a harmonic energy penalty of the form:
 
-is applied to two target DNA linker beads. Here l0 is selected as 13 nm based on the distance between the two DNA chains in the crystal structure, and k is set to 20 kcal/molnm2 as this value ensures that the energy penalty is not strong enough to produce overlapping of DNA beads or cores, but small compared to the total energy of the system.
+$$
+E_{b_{i}b_{j}}=k(l_{b_{i}b_{j}}−l_{0})^{2}
+$$
+
+is applied to two target DNA linker beads. Here $l_{0}$ is selected as 13 nm based on the distance between the two DNA chains in the crystal structure, and $k$ is set to 20 $kcal/molnm^{2}$ as this value ensures that the energy penalty is not strong enough to produce overlapping of DNA beads or cores, but small compared to the total energy of the system.
 
 During each trajectory, two DNA beads that have TF bound can engage in a constraint if the distance between them is less than 20 nm and if they are separated by at least 30 beads. If during the simulation, two beads that were engaged in a constraint separate more than 20 nm, the constraint is eliminated.
 
-## Systems
+### Systems
 
-## TF binding to different regions
+#### TF binding to different regions
 
 To determine the effect of TF binding location on chromatin architecture, we simulate 50-nucleosome fibers without LH and histone acetylation, and with short, medium, or long linker DNA lengths, such as 26, 44, and 62 bp. Additionally, because real-life chromatin fibers are non uniform, we also simulate a life-like fiber with the linker DNAs that follow the distribution of linkers found in mouse embryonic stem cells (mESCs) (Voong et al., 2016): 30% for 26 bp, 17% for 35 bp, 15% for 44 bp, 13% for 53 bp, 9% for 62 bp, 7% for 70 bp, and 9% for 80 bp, as determined in our previous work (Portillo-Ledesma et al., 2022).
 
@@ -138,17 +236,17 @@ For each system, we study four different binding patterns (see Figure 1A):
 
 Note that by binding region we mean a region whose linker DNA beads are marked by one Myc:Max dimer.
 
-## TF binding at increasing concentrations
+#### TF binding at increasing concentrations
 
 To determine the interplay between TF binding and chromatin internal parameters like LH, histone acetylation, and linker DNA length, we study TF binding at increasing concentrations such as 0, 25, 50, 75, and 100%. In particular, we study 50-nucleosome fibers of 26, 35, 44, 53, 62, 70, and 80 bp linker DNAs, as well as life-like fibers in three conditions:
 
 In these three conditions, TFs are allowed to bind to any linker DNA region. TF concentration is calculated as the percentage of linker DNA beads that can bind TF.
 
-## Gene repression by Myc:Max binding
+#### Gene repression by Myc:Max binding
 
 In the mm9 mouse genome assembly, Eed is located on chr7:97,103,164–97,129,486, occupying ∼26 kbp. To build Eed, Mnase-seq data (GSM2083107) (Mieczkowski et al., 2016) of mESCs were used to position nucleosome-free regions (NFRs). In particular, the data were downloaded in bedGraph format from the Genome Omnibus Expression (GOE) repository and loaded into the UCSC Genome Browser without further processing. NFRs were visually inspected and identified as genomic regions with the absence of signal. Details of MNase-seq data processing can be found at the GEO site where the data are deposited. As shown in Figure 7E, 7 NFRs can be identified. NFRs 1 and 2 are long and we model them with ∼350 bp, whereas NFRs 3–7 are short, and we model them with ∼200 bp. Similar to the life-like fibers, the linker length distribution of mESCs (Voong et al., 2016) was used to determine the distribution of nonuniform linker lengths, and the nucleosome repeat length (NRL) typical of mESCs, 189 bp (Woodcock et al., 2006), was used to calculate the number of nucleosomes in the 24 kbp fiber (length of the fiber without the NFRs), obtaining 129 nucleosomes. In the Eed gene, two binding regions for Myc:Max have been detected with Chip-seq experiments (GSE48175) (Krepelova et al., 2014; Figure 7E). One between 97,128,221 and 97,129,793 bp, and a second one between 97,124,070 and 97,124,896 bp. Thus, in the Eed model, these regions are defined as TF binding regions 1 and 2 (Figure 7E). Similarly, LH positions were determined based on Chip-seq data (GSE46134) (Cao et al., 2013) where peaks with frequencies at least 10% of the highest frequency peak were selected (Figure 7E), producing a density of 0.37 LH/nucleosome, close to the average LH density of 0.5 found in mESCs (Woodcock et al., 2006). Histone acetylation was not introduced in the model, as analyzed Chip-seq data (Zhang et al., 2022b; Shen et al., 2012; Zhang et al., 2022a) show no acetylation in the Eed region. To determine the role of LH in the Eed activation mechanism, we additionally simulate the Eed system (with and without TF) with LH density ρ = 0.8 (LHs randomly distributed), as found in mouse somatic cells (Woodcock et al., 2006). The list of linker DNAs, LH positions, and Myc:Max positions are detailed in Supporting Table 1.
 
-## Simulation and analysis
+### Simulation and analysis
 
 Each system is sampled with Monte Carlo (MC) simulations. For the 50-nucleosome systems, we use 50 million MC steps and 10 independent replicas. For the Eed system of 129 nucleosomes, we use 70 million MC steps and 20 independent replicas. All replicas are started from different random seeds and a DNA twisting angle of 0, +12, or –12 degrees to mimic natural variations (Drew and Travers, 1985). Frames are saved every 100,000 MC steps.
 
@@ -156,24 +254,40 @@ The MC moves include a global pivot move that selects the shorter fiber end pass
 
 Trajectory convergence is monitored by the system energy and global (end-to-end distance and sedimentation coefficient) and local (nucleosome triplet angle) parameters (Figure 1—figure supplement 7) over the entire ensemble (10 trajectories for each 50-nucleosome system and 20 trajectories for the Eed gene). For the 50-nucleosome systems, the last 10 million steps, or 100 structures, of each of the 10 trajectories are used to create ensembles of 1000 structures per system. For the Eed gene systems, we create ensembles of 2000 structures with the last 10 million steps of 20 trajectories. These ensembles are analyzed to calculate fiber packing ratio, sedimentation coefficients, radius of gyration, and volume and area of the promoter region.
 
-The fiber packing ratio is calculated as:(3)Pr=11∗NCFl,
+The fiber packing ratio is calculated as:
 
-where NC is the total number of nucleosomes and Fl is the fiber length calculated by defining the fiber axis with a cubic smoothing spline interpolation to the nucleosomes x, y, and z coordinates; see details in the supporting information of Portillo-Ledesma et al., 2022.
+$$
+P_{r}=\frac{11∗N_{C}}{Fl},
+$$
 
-Sedimentation coefficients are calculated as:(4)S20,w=((S1−S0)∗ρ+S0)∗(1+R1NC∑i∑j1Rij),
+where $N_{C}$ is the total number of nucleosomes and $Fl$ is the fiber length calculated by defining the fiber axis with a cubic smoothing spline interpolation to the nucleosomes $x$, $y$, and $z$ coordinates; see details in the supporting information of Portillo-Ledesma et al., 2022.
 
-where S0 and S1 are the sedimentation coefficients of a mononucleosome without LH (S0=11.1S) (Garcia-Ramirez et al., 1992) and with LH (S1=12S) (Butler and Thomas, 1998), respectively, ρ is the LH density on the fiber, R1 is the radius of a nucleosome (R1= 5.5 nm), NC is the number of nucleosomes in the chromatin fiber, and Rij is the distance between the nucleosomes i and j.
+Sedimentation coefficients are calculated as:
 
-The radius of gyration, which describes the overall dimension of the chromatin fiber, is measured as the root mean squared distance of each nucleosome from the center of mass according to:(5)Rg2=1NC∑j=1NC(rj−rmean)2,
+$$
+S_{20,w}=((S_{1}−S_{0})∗ρ+S_{0})∗(1+\frac{R_{1}}{N_{C}}\sumi\sumj\frac{1}{R_{ij}}),
+$$
 
-where NC is the number of nucleosomes, rj is the center position of the nucleosome core j, and rmean is the average of all core positions.
+where $S_{0}$ and $S_{1}$ are the sedimentation coefficients of a mononucleosome without LH ($S_{0}=11.1S$) (Garcia-Ramirez et al., 1992) and with LH ($S_{1}=12S$) (Butler and Thomas, 1998), respectively, $ρ$ is the LH density on the fiber, $R_{1}$ is the radius of a nucleosome ($R_{1}=$ 5.5 nm), $N_{C}$ is the number of nucleosomes in the chromatin fiber, and $R_{ij}$ is the distance between the nucleosomes $i$ and $j$.
+
+The radius of gyration, which describes the overall dimension of the chromatin fiber, is measured as the root mean squared distance of each nucleosome from the center of mass according to:
+
+$$
+R_{g}^{2}=\frac{1}{N_{C}}\sumj=1N_{C}(r_{j}−r_{mean})^{2},
+$$
+
+where $N_{C}$ is the number of nucleosomes, $r_{j}$ is the center position of the nucleosome core j, and $r_{mean}$ is the average of all core positions.
 
 The volume and area of the Eed promoter region that overlaps with the TF binding region 1 are calculated using the alpha shape function of Matlab. With alphaShape, a bounding area or volume is created to envelop the nucleosome coordinates. We use an alpha value of 100 to create a loose shape. In particular, we use the x, y (for area) or x, y, z (for volume) coordinates of nucleosomes 123–129 as vertices, as they are located in the promoter region.
 
-Interactions among nucleosomes are calculated every 100,000 MC steps for each trajectory, normalized across all trajectory frames, and summed to create a contact map that we plot at a logarithmic scale. Two nucleosomes i and j are considered to be in contact if any element of nucleosome i, such as core, tails, or linker DNA, is less than 2 nm from any element of nucleosome j. These matrices are calculated in both bp and nucleosome resolution.
+Interactions among nucleosomes are calculated every 100,000 MC steps for each trajectory, normalized across all trajectory frames, and summed to create a contact map that we plot at a logarithmic scale. Two nucleosomes $i$ and $j$ are considered to be in contact if any element of nucleosome $i$, such as core, tails, or linker DNA, is less than 2 nm from any element of nucleosome $j$. These matrices are calculated in both bp and nucleosome resolution.
 
-Internucleosome interaction matrices at nucleosome resolution are decomposed into one-dimensional plots that depict the magnitude of i, i±k interactions, or contact patterns, as follows:(6)I(k)=∑i=1NCI′(i,i±k)∑j=1NCI(j),
+Internucleosome interaction matrices at nucleosome resolution are decomposed into one-dimensional plots that depict the magnitude of $i$, $i\pmk$ interactions, or contact patterns, as follows:
 
-where NC is the number of nucleosomes, I is the internucleosome interaction matrix, and k is the number of nucleosomes between cores i and j.
+$$
+I(k)=\frac{\sumi=1N_{C}I^{′}(i,i\pmk)}{\sumj=1N_{C}I(j)},
+$$
 
-To estimate the number of microdomains in each system, we convert the interaction matrices in nucleosome resolution to distance matrices by calculating the inverse of each element in the matrix (d=1/frequency) and perform a clustering analysis with the DBSCAN algorithm (Ester et al., 1996). To define the clusters, we set the parameter minpoints as five for every system, and the radius of search, ε, as 3 for the 62 bp system, 2 for the 44 bp and life-like systems, and 1.4 for the 26 bp system.
+where $N_{C}$ is the number of nucleosomes, $I$ is the internucleosome interaction matrix, and $k$ is the number of nucleosomes between cores $i$ and $j$.
+
+To estimate the number of microdomains in each system, we convert the interaction matrices in nucleosome resolution to distance matrices by calculating the inverse of each element in the matrix ($d=1/frequency$) and perform a clustering analysis with the DBSCAN algorithm (Ester et al., 1996). To define the clusters, we set the parameter $minpoints$ as five for every system, and the radius of search, ε, as 3 for the 62 bp system, 2 for the 44 bp and life-like systems, and 1.4 for the 26 bp system.

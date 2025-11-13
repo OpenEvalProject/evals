@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/048tbm396 Rita Levi-Montalcini Department of Neurosciences, University of Turin Turin Italy
-2. https://ror.org/048tbm396 Department of Psychology, University of Turin Turin Italy
+1. Rita Levi-Montalcini Department of Neurosciences, University of Turin Turin Italy ([ROR:048tbm396](https://ror.org/048tbm396))
+2. Department of Psychology, University of Turin Turin Italy ([ROR:048tbm396](https://ror.org/048tbm396))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ In the current study, we posited that applying rTMS to the aPFC could influence 
 
 ## Results
 
-## aPFC-focused rTMS effects on implicit defensive reactions toward threat-predictive and new cues
+### aPFC-focused rTMS effects on implicit defensive reactions toward threat-predictive and new cues
 
 To explore the effects of an aPFC-centered rTMS on the implicit responses to a learned threat, we designed a three-session experiment starting with a threat learning session followed by an implicit retention test and a follow-up implicit retest (Figure 1).
 
@@ -47,7 +47,152 @@ To explore the effects of an aPFC-centered rTMS on the implicit responses to a l
 
 During the learning session, participants learned to associate an auditory cue (conditioned stimulus [CS], 800 Hz) with a mild electric stimulation (unconditioned stimulus [US], individually calibrated intensity) in a given environment (context A). We adopted a single-cue learning paradigm because it more ecologically reflects real-life traumatic experiences (Resnik and Paz, 2015; Wong and Lovibond, 2017; Grosso et al., 2018; Concina et al., 2018; Grosso et al., 2017). To validate the between-groups homogeneity in the painful stimuli perception, we compared the post-conditioning US ratings and observed no significant differences between groups (Student’s unpaired t-test, t(58) = 0.799, p=0.428, ηp2 = 0.011) (Table 1). We also did not observe significant differences between groups in skin conductance responses (SCRs) to the CS during the preconditioning phase (t(58) = 0.418, p=0.677, ηp2 = 0.003), to the CS during the conditioning phase (2 × 15 mixed ANOVA; main effect of group: F(1,52) = 2.367, p=0.130, ηp2 = 0.044; main effect of trial: F(8.762,455.600) = 13.366, p<0.001, ηp2 = 0.204; group × trial interaction: F(8.762,455.600) = 1.619, p=0.109, ηp2 = 0.030; Student’s unpaired t-test on the averaged response, t(58) = 1.290, p=0.202, ηp2 = 0.028), nor to the US during the conditioning phase (t(58) = 1.011, p=0.316, ηp2 = 0.017) (Figure 2—figure supplement 1).
 
+**Table 1.**
+ Experimental groups’ descriptive, experimental, and clinical data.The table reports, for each experimental condition, sample size (N), sex distribution (F = female, M = male), mean age, State-Trait Anxiety Inventory Form Y (STAI-Y) State subscale score during session 1 (S1), session 2 (S2), and session 3 (S3), and Trait subscale score, US current intensity (mA), post-conditioning US rating, rTMS resting motor threshold (rMT), rTMS power, and discomfort stimulation (DS) current intensity (mA). All data are mean ± standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>N</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>STAI-Y State (S1)</th>
+      <th>STAI-Y State (S2)</th>
+      <th>STAI-Y State (S3)</th>
+      <th>STAI-Y Trait</th>
+      <th>US (mA)</th>
+      <th>US rating</th>
+      <th>rTMS rMT</th>
+      <th>rTMS power</th>
+      <th>DS(mA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aPFC</td>
+      <td>30</td>
+      <td>18 F 12 M</td>
+      <td>24.45 ± 3.78</td>
+      <td>30.97 ± 4.07</td>
+      <td>32.47 ± 7.16</td>
+      <td>30.60 ± 6.04</td>
+      <td>39.27 ± 6.18</td>
+      <td>4.92 ± 2.06</td>
+      <td>5.28 ± 0.90</td>
+      <td>58.20 ± 6.40</td>
+      <td>39.73 ± 1.11</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Sham</td>
+      <td>30</td>
+      <td>18 F 12 M</td>
+      <td>23.35 ± 2.35</td>
+      <td>33.23 ± 5.86</td>
+      <td>32.70 ± 7.74</td>
+      <td>31.87 ± 6.51</td>
+      <td>38.77 ± 4.02</td>
+      <td>4.88 ± 2.45</td>
+      <td>5.47 ± 0.88</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>OC</td>
+      <td>30</td>
+      <td>18 F 12 M</td>
+      <td>24.14 ± 2.62</td>
+      <td>32.33 ± 5.51</td>
+      <td>31.53 ± 7.57</td>
+      <td>30.60 ± 6.75</td>
+      <td>39.03 ± 5.12</td>
+      <td>4.99 ± 3.17</td>
+      <td>5.28 ± 1.06</td>
+      <td>60.90 ± 6.67</td>
+      <td>39.70 ± 1.47</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>dlPFC</td>
+      <td>30</td>
+      <td>18 F 12 M</td>
+      <td>23.91 ± 3.15</td>
+      <td>31.70 ± 5.40</td>
+      <td>30.83 ± 7.04</td>
+      <td>30.13 ± 5.88</td>
+      <td>39.17 ± 5.85</td>
+      <td>5.16 ± 2.43</td>
+      <td>5.57 ± 1.45</td>
+      <td>58.77 ± 5.89</td>
+      <td>39.90 ± 0.40</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>aPFC-E</td>
+      <td>21</td>
+      <td>13 F 8 M</td>
+      <td>24.39 ± 2.43</td>
+      <td>31.71 ± 4.89</td>
+      <td>30.90 ± 5.66</td>
+      <td>30.48 ± 4.96</td>
+      <td>38.29 ± 6.21</td>
+      <td>5.13 ± 1.86</td>
+      <td>5.43 ± 0.94</td>
+      <td>58.67 ± 7.16</td>
+      <td>39.52 ± 1.54</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Sham-E</td>
+      <td>21</td>
+      <td>13 F 8 M</td>
+      <td>23.83 ± 2.73</td>
+      <td>33.10 ± 5.59</td>
+      <td>31.48 ± 5.54</td>
+      <td>30.38 ± 7.73</td>
+      <td>38.29 ± 5.22</td>
+      <td>5.27 ± 3.19</td>
+      <td>5.31 ± 1.31</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ctrl discomfort</td>
+      <td>10</td>
+      <td>5F5M</td>
+      <td>22.34 ± 3.67</td>
+      <td>34.40 ± 4.20</td>
+      <td>36.50 ± 6.47</td>
+      <td>34.20 ± 5.98</td>
+      <td>39.70 ± 4.03</td>
+      <td>6.97 ± 4.14</td>
+      <td>5.65 ± 1.11</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6.65 ± 2.25</td>
+    </tr>
+  </tbody>
+</table>
+
+_aPFC = anterior prefrontal cortex; dlPFC = dorsolateral prefrontal cortex; rTMS = repetitive transcranial magnetic stimulation; US = unconditioned stimulus; OC = occipital cortex._
+
 One week later, we tested the implicit memory of the learned association in control sham-stimulated subjects and in those who received rTMS over the aPFC shortly before the memory test. To locate this brain region, which corresponds to the BA 10 (Hanlon et al., 2018), we positioned the coil over the frontopolar midline electrode (Fpz) adopting the international 10‒20 electroencephalogram (EEG) coordinate system (Jasper, 1958) since previous rTMS studies (Guhn et al., 2014; Herrmann et al., 2017; Karmann et al., 2016) ensured this placement reached the aPFC. An offline 10 min session of 1 Hz-rTMS targeting this neural site (aPFC, n = 30) was applied immediately before memory retrieval (Figure 2A). Control subjects underwent a 10 min sham stimulation procedure over the same cortical area (sham, n = 30).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig2-v1.jpg)
+
+**Figure 2.:** (A) Simulation of rTMS effects on the neural tissue of the medial aPFC (medial Brodmann area 10 [BA 10]), performed with SimNIBS 4.0 software. The magnitude of the electric field is expressed in V/m. (B, C) Dot plot and line chart representing the mean skin conductance responses (SCRs) elicited by the CS during the conditioning session and test session in the two different conditions. Groups’ reactions were not different during the conditioning phase, whereas during the test phase the group stimulated over the aPFC (n = 30) showed attenuated implicit reactions relative to the sham condition (n = 30). The aPFC group displayed reduced autonomic reactions to the CS from conditioning to test, while the sham group showed an increase in defensive responses. (D, E) Implicit reactions to all the tones (NS1, CS, and NS2) during the test session were decreased in the aPFC group relative to the sham group. Although we found a significant main effect of group and no group × tone interaction effect, we reported the statistical significance marks of simple main effects. (F) Implicit reactions to the US2 during the test session were not different between conditions, showing no rTMS effects on the overall electrodermal responsivity. (G, H) In the follow-up session, the aPFC group enduringly demonstrated reduced implicit reactions to the CS relative to the sham group and to the conditioning phase. (I) Implicit reactions to the US2 during the follow-up session were not different between groups. *p<0.05, **p<0.01, ***p<0.001. All data are mean and SEM. 2 × 2 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (B, C, G, H); 2 × 3 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (D, E); Student’s unpaired t-test (F, I).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dot plot representing the mean skin conductance responses (SCRs) elicited by the CS during the preconditioning phase in the aPFC group (n = 30) compared with the sham group (n = 30). Implicit reactions were not significantly different. (B) Mean SCRs elicited by the US during the conditioning phase in the aPFC group compared with the sham group. Responses were not significantly different. (C) Mean SCRs evoked by the CS over the 15 trials of the conditioning phase, and averaged SCRs (trials 1–15) in the aPFC and sham groups. Autonomic reactions were not significantly different. All data are mean and SEM. Student’s unpaired t-test (A–C); 2 × 15 mixed ANOVA (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mean discomfort ratings provided by the subjects of the ctrl discomfort group (n = 10) during the 10 min discomfort-inducing procedure. (B) Dot plot representing the mean skin conductance responses (SCRs) elicited by the CS during the conditioning phase and the test phase in the ctrl discomfort group and the sham group (n = 30). The groups’ reactions were not significantly different during the conditioning phase as well as during the test phase (2 × 2 mixed ANOVA; main effect of group: F(1,38) = 0.712, p=0.404; main effect of phase: F(1,38) = 1.713, p=0.198; group × phase interaction: F(1,38) = 0.956, p=0.335). (C) In the follow-up session, SCRs to the CS did not differ between groups (2 × 2 mixed ANOVA; main effect of group: F(1,38) = 1.335, p=0.255; main effect of phase: F(1,38) = 0.042, p=0.838; group × phase interaction: F(1,38) = 0.175, p=0.678). All data are mean and SEM.
 
 Memory retention was tested in a different environment from that where the learning had occurred (context B) to avoid any contextual influence on retrieval (Manassero et al., 2019; Ameli et al., 2001; Maren et al., 2013; Sacco and Sacchetti, 2010; Sacchetti et al., 1999). Indeed, the context shift for this session mirrors a real-life treatment setting, which unlikely takes place in the threatening location. To test implicit threat memory, we performed an implicit recognition task in which subjects were exposed to the CS while being recorded in their evoked autonomic reactions (i.e., electrodermal SCRs). No US shocks were delivered during this phase. Besides the CS, participants were presented with two novel but perceptually similar tones (NS1, 1000 Hz; NS2, 600 Hz) to study threat generalization. Auditory frequencies of NSs were selected to obtain a slowly decaying gradient of defensive tunings (Manassero et al., 2019; Onat and Büchel, 2015; Laufer et al., 2016). To test the effects of rTMS on memory retention, we compared the between-group differences as well as the within-group differences from the acquisition phase to the testing phase through a 2 × 2 mixed ANOVA. This analysis yielded a nonsignificant main effect of group (F(1,58) = 2.015, p=0.161, ηp2 = 0.034), a nonsignificant main effect of phase (F(1,58) = 0.053, p=0.818, ηp2 = 0.001), and a significant group × phase interaction (F(1,58) = 13.445, p=0.001, ηp2 = 0.188). Simple main effects analysis revealed no significantly different mean CS-evoked SCRs between groups during the conditioning phase (p=0.506; Bonferroni corrected). On the contrary, during the test phase subjects who received rTMS over the aPFC exhibited weakened CS-related SCRs than those observed in the sham group (p=0.006; Bonferroni corrected). Moreover, the aPFC group showed reduced autonomic responses to the CS from conditioning to test (p=0.008; Bonferroni corrected), whereas the sham group displayed increased mean SCRs to the CS from conditioning to test (p=0.018; Bonferroni corrected) (Figure 2B and C). This data indicates that the rTMS procedure affected SCRs triggered by memory retrieval performed shortly after rTMS. To the best of our knowledge, this is the first evidence that brain stimulation may promptly attenuate implicit defensive reactions during memory retrieval.
 
@@ -63,13 +208,13 @@ These findings support an enduring effect of the aPFC-rTMS in attenuating the lo
 
 An important aspect to consider is that rTMS application over the forehead can be subjectively perceived as unpleasant. We, therefore, investigated whether an rTMS-related discomfort before memory retrieval might have provoked habituation to unpleasant stimulations, leading to a reduction in SCR levels during CS presentations. We repeated the entire experiment in one further group (ctrl discomfort, n = 10) by replacing the rTMS procedure with a 10 min discomfort-inducing procedure over the same site of the forehead to mimic the rTMS-evoked unpleasant sensations in the absence of neural stimulation effects. This group showed no significantly different CS-evoked SCR levels to those of the sham group during the test session as well as during the follow-up session (Figure 2—figure supplement 2). Thus, the discomfort experienced during the rTMS procedure did not contribute to the reduction of electrodermal responses observed in the aPFC-stimulated group.
 
-## aPFC-focused rTMS effects on the explicit memory recognition and perceptual discrimination
+### aPFC-focused rTMS effects on the explicit memory recognition and perceptual discrimination
 
 We then investigated the effect of rTMS over the aPFC on the retention of explicit-declarative threat memories. A further group of subjects that received the identical 1 Hz-rTMS procedure over the aPFC (aPFC-E, n = 21) and a further control group (sham-E, n = 21) underwent an explicit two-alternative forced-choice (2AFC) recognition task, in which they were presented with a random sequence of tone pairs, each composed of the CS and one of the two NSs. Subjects were asked to consciously identify which stimulus of each pair was the one previously paired with the US (i.e., the CS) and to provide a subjective confidence level for each choice using a scale ranging from 0 (completely unsure) to 10 (completely sure) (Manassero et al., 2019; Manassero et al., 2022). Both groups reported nonsignificantly different post-conditioning US ratings (t(40) = 0.339, p=0.737, ηp2 = 0.003) and successfully identified the CS amongst the NSs with an accuracy level above the 50% chance level (aPFC-E: t(20) = 9.226, p<0.001, ηp2 = 0.810; sham-E: t(20) = 14.240, p<0.001, ηp2 = 0.910). A between-groups comparison (t(40) = 1.114, p=0.272, ηp2 = 0.030) showed no differences in the explicit recognition accuracy (Figure 3A). The two groups were not differently confident when making their choices (t(40) = 0.842, p=0.405, ηp2 = 0.017) (Figure 3B), thereby supporting the lack of rTMS-related effects.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig3-v1.jpg)
 
-**Figure 3.:** (A) During the test session, explicit recognition patterns were not different between the group stimulated over the aPFC (n = 21) and the sham group (n = 21). (B) During the test session, confidence ratings did not differ between the two conditions. (C) During the follow-up session, aPFC-E and sham-E groups identified the CS between the NSs in a not different manner. (D) During the follow-up session, aPFC-E and sham-E groups were not differently confident about their explicit choices. All data are mean and SEM. Student’s unpaired t-test (A–D).Figure 3—source data 1.
+**Figure 3.:** (A) During the test session, explicit recognition patterns were not different between the group stimulated over the aPFC (n = 21) and the sham group (n = 21). (B) During the test session, confidence ratings did not differ between the two conditions. (C) During the follow-up session, aPFC-E and sham-E groups identified the CS between the NSs in a not different manner. (D) During the follow-up session, aPFC-E and sham-E groups were not differently confident about their explicit choices. All data are mean and SEM. Student’s unpaired t-test (A–D).
 
 Next, since a previous study (Roesmann et al., 2022) targeting the vmPFC modulated perceptual discrimination processes, we implemented a 2AFC perceptual task in which we investigated the ability of participants to sensory discriminate between the CS and the two NSs by collecting binary ‘same or different’ judgments as well as confidence ratings. The perceptual discrimination test yielded no significant between-groups differences in accuracy (t(40) = 1.362, p=0.181, ηp2 = 0.044) as well as confidence levels (t(40) = 0.917, p=0.365, ηp2 = 0.021). Indeed, both groups discriminated the CS from the NSs with high precision (aPFC-E: 0.980 ± 0.015 SEM; sham-E: 1.000 ± 0.000 SEM) and with no different confidence levels (aPFC-E: 9.409 ± 0.153 SEM; sham-E: 9.586 ± 0.117 SEM), thereby showing no rTMS effects on sensory abilities.
 
@@ -79,9 +224,17 @@ During the follow-up session, explicit recognition patterns demonstrated an over
 
 As in the case of the previous session, we did not observe significant between-group differences in the perceptual discrimination (t(40) = 1.000, p=0.323, ηp2 = 0.024) and the respective confidence ratings (t(40) = 0.149, p=0.882, ηp2 < 0.001). Indeed, the discrimination accuracy (aPFC-E: 1.000 ± 0.000 SEM; sham-E: 0.993 ± 0.007 SEM) and the self-assessed confidence (aPFC-E: 9.598 ± 0.147 SEM; sham-E: 9.633 ± 0.182 SEM) were high in each condition.
 
-## Topographical selectivity of rTMS effects on implicit defensive responses to threat-predictive and new cues
+### Topographical selectivity of rTMS effects on implicit defensive responses to threat-predictive and new cues
 
 To ascertain the topographical selectivity, in one further condition (OC, n = 30) we applied the rTMS over the left occipital cortex as an active control site (Figure 4A) and contrasted its implicit reactions with those of the group stimulated over the aPFC.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig4-v1.jpg)
+
+**Figure 4.:** (A) Simulation of rTMS effects on the neural tissue of the left OC (BA 18/19), performed with SimNIBS 4.0 software. The magnitude of the electric field is expressed in V/m. (B, C) Dot plot and line chart representing the mean skin conductance responses (SCRs) elicited by the CS during the conditioning session and test session in the OC group (n = 30) compared with the same aPFC group of Figure 2 (n = 30). The two groups did not differently respond during the conditioning phase, but during the test phase the group stimulated over the aPFC showed weaker reactions than the OC group. While the defensive reactions of the aPFC group decreased from conditioning to test, those of the OC group remained not differently high. (D, E) Implicit reactions to NSs during the test session did not differ between groups. In the OC group, the responses elicited by the NS2 were lower than those evoked by the CS and the NS1. (F) Implicit reactions to the US2 during the test session were not different between groups. (G, H) In the follow-up session, the aPFC group persisted in showing reduced implicit reactions to the CS relative to the OC group. Defensive reactions of both groups decreased from the conditioning phase. Although we found a significant main effect of phase and no group × phase interaction effect, we reported the statistical significance marks of simple main effects. (I) Implicit reactions to the US2 during the follow-up session were not different between groups. *p<0.05, ***p<0.001. All data are mean and SEM. 2 × 2 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (B, C, G, H); 2 × 3 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (D, E); Student’s unpaired t-test (F, I).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dot plot representing the mean skin conductance responses (SCRs) elicited by the CS during the preconditioning phase in the aPFC group (n = 30) compared with the OC group (n = 30). Implicit reactions were not significantly different. (B) Mean SCRs elicited by the US during the conditioning phase in the aPFC group compared with the OC group. Responses were not significantly different. (C) Mean SCRs evoked by the CS over the 15 trials of the conditioning phase, and averaged SCRs (trials 1–15) in the aPFC and OC groups. Autonomic reactions were not significantly different. All data are mean and SEM. Student’s unpaired t-test (A–C); 2 × 15 mixed ANOVA (C).
 
 No differences emerged between the two conditions in terms of post-conditioning US ratings (t(58) = 0.000, p=1.000, ηp2 = 0.000) (Table 1), SCR responses to the CS during the preconditioning phase (t(58) = 1.037, p=0.304, ηp2 = 0.018), to the CS during the conditioning phase (2 × 15 mixed ANOVA; main effect of group: F(1,54) = 0.124, p=0.726, ηp2 = 0.002; main effect of trial: F(9.368,505.856) = 13.341, p<0.001, ηp2 = 0.198; group × trial interaction: F(9.368,505.856) = 0.994, p=0.445, ηp2 = 0.018; Student’s unpaired t-test on the averaged response, t(58) = 0.162, p=0.872, ηp2 < 0.001), and to the US during the conditioning phase (t(58) = 1.210, p=0.231, ηp2 = 0.025) (Figure 4—figure supplement 1).
 
@@ -91,9 +244,17 @@ No significant between-group differences were observed in implicit responses to 
 
 The distinctive pattern toward the learned threatening cue persisted during the follow-up session (2 × 2 mixed ANOVA; main effect of group: F(1,58) = 2.141, p=0.149, ηp2 = 0.036; main effect of phase: F(1,58) = 26.023, p<0.001, ηp2 = 0.310; group × phase interaction: F(1,58) = 3.167, p=0.080, ηp2 = 0.052). The aPFC group continued to react more dimly to the CS compared to the OC group (p=0.026; Bonferroni corrected). Both the aPFC (p<0.001; Bonferroni corrected) and the OC (p=0.022; Bonferroni corrected) groups showed decreased responses relative to conditioning (Figure 4G and H). Conversely, no significant differences were observed in SCRs evoked by US2 during the follow-up session (t(58) = 0.574, p=0.568, ηp2 = 0.006) (Figure 4I).
 
-## Comparison between the effects of rTMS administered over the anterior versus the dorsolateral prefrontal cortex
+### Comparison between the effects of rTMS administered over the anterior versus the dorsolateral prefrontal cortex
 
 Next, we asked whether the findings we obtained by targeting the aPFC were finely specific for this site or, alternatively, they overlapped with those observed by targeting other prefrontal sub-regions. For this purpose, in one further group (dlPFC, n = 30) we applied the same rTMS procedure over the left dorsolateral PFC (Figure 5A) and then compared the implicit patterns of this group with those displayed by the aPFC condition. We selected the left dlPFC since previous studies (e.g., Raij et al., 2018) targeted the left hemisphere for testing the rTMS effects on the PFC, and some evidence (see Marković et al., 2021) suggested that inhibitory tDCS and rTMS over the left dlPFC may disrupt threat memory consolidation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig5-v1.jpg)
+
+**Figure 5.:** (A) Simulation of rTMS effects on the neural tissue of the left dlPFC (BA 8/9), performed with SimNIBS 4.0 software. The magnitude of the electric field is expressed in V/m. (B, C) Dot plot and line chart representing the mean skin conductance responses (SCRs) elicited by the CS during the conditioning session and test session in the dlPFC group (n = 30) compared with the same aPFC group of Figure 2 (n = 30). The two conditions did not differently react during the conditioning phase, whereas during the test phase the group stimulated over the aPFC displayed lower reactions than the dlPFC group. Implicit reactions of the aPFC group decreased from conditioning to test, while those of the dlPFC group increased. (D, E) Implicit reactions to NSs during the test session did not differ between groups. In the dlPFC group, the responses elicited by the NS2 were lower than those evoked by the CS. (F) The two groups did not differently react to the US2 during the test session. (G, H) In the follow-up session, the aPFC group persisted in more dimly reacting to the CS relative to the dlPFC group and to the conditioning phase. (I) Implicit reactions to the US2 during the follow-up session were not different between groups. *p<0.05, **p<0.01, ***p<0.001. All data are mean and SEM. 2 × 2 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (B, C, G, H); 2 × 3 mixed ANOVA followed by Bonferroni-adjusted post hoc comparisons (D, E); Student’s unpaired t-test (F, I).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85951/elife-85951-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Dot plot representing the mean skin conductance responses (SCRs) elicited by the CS during the preconditioning phase in the aPFC group (n = 30) compared with the dlPFC group (n = 30). Implicit reactions were not significantly different. (B) Mean SCRs elicited by the US during the conditioning phase in the aPFC group compared with the dlPFC group. Responses were not significantly different. (C) Mean SCRs evoked by the CS over the 15 trials of the conditioning phase, and averaged SCRs (trials 1–15) in the aPFC and dlPFC groups. Autonomic reactions were not significantly different. All data are mean and SEM. Student’s unpaired t-test (A–C); 2 × 15 mixed ANOVA (C).
 
 We found no significant differences between the two conditions in the post-conditioning US ratings (t(58) = 0.908, p=0.368, ηp2 = 0.014) (Table 1), in SCRs to the CS during the preconditioning phase (t(58) = 0.967, p=0.337, ηp2 = 0.016), to the CS during the conditioning phase (2 × 15 mixed ANOVA; main effect of group: F(1,51) = 0.026, p=0.873, ηp2 = 0.001; main effect of trial: F(8.026,409.333) = 12.135, p<0.001, ηp2 = 0.192; group × trial interaction: F(8.026,409.333) = 1.042, p=0.403, ηp2 = 0.020; Student’s unpaired t-test on the averaged response, t(58) = 0.378, p=0.707, ηp2 = 0.002), and to the US during the conditioning phase (t(58) = 1.752, p=0.085, ηp2 = 0.050) (Figure 5—figure supplement 1).
 
@@ -129,27 +290,27 @@ Since prevention of relapse is the main challenge for therapies dedicated to pos
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All participants (n = 183) were healthy volunteers (mean age: 23.86 ± 2.90, 74 males and 109 females) with no history of psychiatric disorders, neurological illnesses, cardiovascular diseases, illegal drug use, musical training, or any other exclusion criteria for rTMS administration (Rossi et al., 2021). During the pre-experimental screening phase, each volunteer was also administered the State-Trait Anxiety Inventory Form Y (Spielberger et al., 1983; Pedrabissi and Santinello, 1989), and those who showed a score >80 in the sum of the two subscales (State + Trait anxiety) were not included in the sample (see Table 1 for all groups’ mean State-Trait Anxiety Inventory scores). Participants were then randomly assigned to each experimental condition, based on sex and age (see Table 1 for all groups’ mean age and sex distribution). We discarded 11 participants because of a complete absence of SCRs during the test session, leaving a total of 172 participants. Each participant provided written informed consent after receiving a complete description of the experimental procedures. All experimental procedures were performed in accordance with the ethical standards of the Declaration of Helsinki and were approved by the Bioethics Committee of the University of Turin (protocols nos. 19961 and 161427).
 
-## Auditory stimuli
+### Auditory stimuli
 
 Auditory stimuli were pure sine wave tones with oscillation frequencies of 800 Hz (CS), 1000 Hz (NS1), and 600 Hz (NS2), lasting 6 s with onset/offset ramps of 5 ms. Tones were digitally generated using Audacity 2.1.2 software (Audacity freeware). The unconditioned threatening stimulus (US2) consisted of a woman scream sample lasting 4 s. All auditory stimuli were binaurally delivered through headphone speakers (Direct Sound EX29) at 50 dB intensity. All experimental scenarios were controlled by Presentation 21.1 software (NeuroBehavioral Systems, Berkeley, CA).
 
-## Preconditioning
+### Preconditioning
 
 This phase consisted of the presentation of four trials of the CS (800 Hz) with an inter-trial interval (ITI) randomly ranging between 21 s and 27 s. SCRs were recorded during this phase to provide a baseline response pattern to the 800 Hz tone for each participant. At the end of this phase, participants were asked to confirm whether the tones were easily audible but not too loud or annoying.
 
-## Unconditioned stimulus calibration procedure
+### Unconditioned stimulus calibration procedure
 
 Before starting with the calibration procedure, systolic and diastolic blood pressure was measured to prevent possible hypo-arousal reactions caused by basal hypotension. The US consisted of a mild electrical shock (train pulse at 50 Hz lasting 200 ms, with a single pulse duration of 1000 µs) generated with a DC stimulator (DS7A Constant Current Stimulator, Digitimer). Impulses were delivered through a bar stimulating electrode connected by a Velcro strap on the upper surface of the dominant hand’s index finger. The electrical stimulation intensity was individually calibrated through a staircase procedure (Manassero et al., 2019; Manassero et al., 2022; Cornsweet, 1962), starting with a low current near the perceptible tactile threshold (~0.5 mA). Participants were asked to rate the painfulness of each train pulse on a scale ranging from 0 (not painful at all), 1 (pain threshold) to 10 (highly painful if protracted in time). At the end of the procedure, the US amplitude was then set at the current level (mA) corresponding to the mean rating of ‘7’ on the subjective analog scale.
 
-## Conditioning
+### Conditioning
 
 After a 1 min resting period, participants underwent a single-cue auditory threat conditioning, which consisted of the presentation of 15 trials of the CS (CS, 800 Hz), with an ITI randomly ranging between 21 s and 27 s. The CS co-terminated with the US 12 times (80% reinforcement rate). Subjects were not informed about any possible CS-US contingency. To validate the threat learning experience, immediately following this phase subjects rated the painfulness of the US using the same analog scale as in the preconditioning calibration procedure (see Table 1 for all groups’ US current intensity and US analog ratings).
 
-## Transcranial magnetic stimulation
+### Transcranial magnetic stimulation
 
 Transcranial magnetic stimulation was performed with a Magstim Rapid (Wilker et al., 2014) Stimulator (Magstim Co., Whitland, Dyfed, UK). A 70 mm figure-of-eight coil was positioned over the subject’s M1 cortical area at the optimum scalp position to elicit a contraction of the contralateral abductor pollicis brevis muscle. Resting motor threshold (rMT) was defined as the minimum stimulation intensity that induced a visible finger movement in at least 5 out of 10 single pulses over the right-hand area of the left primary motor cortex (Guhn et al., 2014; Westin et al., 2014). After having determined each individual’s rMT, we applied a single train of 1 Hz-rTMS (Ando et al., 2015; Salatino et al., 2019) for a total duration of 10 min (600 pulses) to the target area. The rTMS intensity was set at 80% of the rMT for subjects whose rMT was ≤50% of the machine’s maximum deliverable power (e.g., the intensity corresponded to 40% of the maximum power when the rMT was equal to 50% of the same parameter). For subjects with an rMT > 50%, the stimulation intensity was always set to a ceiling corresponding to 40% of the machine’s maximum deliverable power (see Table 1 for each group’s mean rMT and mean stimulation intensity). During the rTMS procedure, participants were seated in a comfortable recliner that we adjusted to allow their upper body to be in a sloped position, thus ensuring an optimal positioning of the coil.
 
@@ -157,33 +318,33 @@ To target the medial anterior portion of the prefrontal cortex (BA 10; aPFC and 
 
 All participants were blinded to their experimental condition (i.e., active or sham) and were not informed about the potential cognitive or emotional effects of the stimulation.
 
-## Discomfort-inducing procedure
+### Discomfort-inducing procedure
 
 The discomfort-inducing procedure mirrored the rTMS protocol and consisted of the delivery of mild electrical shocks (single 1 Hz train of 600 pulses lasting 10 min, with a single pulse duration of 500 µs to mimic the duration of a single TMS pulse) generated with a DC stimulator (DS7A Constant Current Stimulator, Digitimer). Impulses were delivered through two cup-stimulating electrodes attached to the surface of the subject’s forehead in correspondence with Fpz according to the 10–20 EEG system. As in the case of the US calibration, the electrical stimulation intensity was individually calculated through a staircase procedure (Cornsweet, 1962), starting with a low current near the perceptible tactile threshold (~0.5 mA). Participants were asked to evaluate the perceived discomfort of each pulse on a scale from 0 (no discomfort) to 10 (high discomfort). At the end of the procedure, the shock amplitude was set at the current level (mA) corresponding to the mean rating of ‘4’ on the subjective analog scale. To quantify the habituation to the uncomfortable stimulations, at the end of every minute of the 10 min procedure (i.e., every 60 pulses), subjects were requested to rate the level of the present discomfort on the same scale adopted during the calibration procedure.
 
-## Implicit recognition test
+### Implicit recognition test
 
 After a 1 min resting period, participants underwent this task, which consisted of the presentation of 12 auditory stimuli in a completely random sequence: 4 × CS, 4 × NS1, 4 × NS2, with an ITI whose duration randomly ranged between 21 s and 27 s. SCRs were recorded throughout this phase, and the stimulating electrode was kept attached to create the expectation of receiving the US (Ameli et al., 2001). Differently from other paradigms (Onat and Büchel, 2015; Lissek et al., 2014; Dunsmoor et al., 2017; Holt et al., 2014), here no shocks were delivered to avoid any reacquisition effect (Manassero et al., 2019; Manassero et al., 2022).
 
-## Implicit unconditioned threatening test
+### Implicit unconditioned threatening test
 
 This task was designed to elicit an unconditioned electrodermal response and consisted of the presentation of four trials of a woman scream sample lasting 4 s, with an ITI randomly ranging between 21 s and 27 s. SCRs were recorded throughout this phase, and the stimulating electrode was kept attached.
 
-## 2AFC explicit recognition test
+### 2AFC explicit recognition test
 
 This procedure involves the presentation of two stimuli on each trial and the subject chooses the one that was previously encoded (i.e., the first or the second one). As in our previous works (Manassero et al., 2019; Manassero et al., 2022), a 2AFC design was preferred over a new-old paradigm, which involves one single stimulus on each trial, and the subject judges whether the stimulus has been previously encoded (old), or whether it is new. Our choice was motivated by the evidence that a 2AFC task improves recognition performance and discourages response biases such as the familiarity-based decision bias, namely the heuristic to endorse novel cues as ‘old’ when their familiarity is high (Macmillan and Creelman, 2004).
 
 The task consisted of the presentation of 16 tone-pairs, each composed of the CS (800 Hz) and one of the two NSs (NS1, 1000 Hz or NS2, 600 Hz) in a completely random sequence: 4 × CS vs. NS1, 4 × NS1 vs. CS, 4 × CS vs. NS2, 4 × NS2 vs. CS. On each trial, the two stimuli were presented with an intra-trial interval of 1000 ms. After each pair offset, an ITI randomly ranging between 21 s and 27 s occurred. Participants were explained that in each couple of sounds there was a tone that they had heard on the first session (1 week before or, in the case of the follow-up session, 2 weeks before) and a new tone. Participants were then instructed to recognize and verbally report which one (the first or the second) was the tone heard in the first session, paired with the US-shock (CS). Participants were further asked to verbally provide a confidence rating about each response, on a scale from 0 (completely unsure) to 10 (completely sure). No feedback was supplied. As in the implicit task, the stimulating electrode was kept attached, but no shock was delivered.
 
-## 2AFC perceptual discrimination test
+### 2AFC perceptual discrimination test
 
 The task consisted of the presentation of seven pairs of auditory stimuli (i.e., CS vs. NS1, NS1 vs. CS, CS vs. NS2, NS2 vs. CS, CS vs. CS, NS1 vs. NS1, NS2 vs. NS2) with a 1000 ms intra-pair interval in a completely random sequence (ITI randomly ranging between 21 s and 27 s). For each pair, subjects were asked to report whether the two tones were ‘the same tone or different tones’ and to provide a confidence rating on an analog scale from 0 (completely unsure) to 10 (completely sure). No feedback was supplied, and the stimulating electrode was kept attached.
 
-## Psychophysiological recording and analysis
+### Psychophysiological recording and analysis
 
 Event-related SCRs were used as an implicit index of defensive responses. To record the autonomic signal, two Ag-AgCl non-polarizable electrodes filled with isotonic paste were attached to the index and middle fingers of the non-dominant hand by Velcro straps. The transducers were connected to the GSR100C module of the BIOPAC MP-150 system (BIOPAC Systems, Goleta, CA) and signals were recorded at a channel sampling rate of 1000 Hz. SCR waveforms were analyzed offline using AcqKnowledge 4.1 software (BIOPAC Systems) and performed blindly to the subject’s experimental condition and the randomized sequence of stimuli. Each SCR was evaluated as event-related if the trough-to-peak deflection occurred 1–6 s (for the CS and the NSs) or 1–4 s (for the US2) after the stimulus onset, the duration was comprised between 0.5 and 5.0 s, and the amplitude was greater than 0.02 μS. Responses that did not fit these criteria were scored zero. To account for inter-individual variability, these raw values were then scaled according to each participant’s average unconditioned response by dividing each response by the mean US response during the conditioning phase (Schiller et al., 2010; Battaglia et al., 2018). Scaled SCR data were square-root transformed to normalize the distributions (Lykken and Venables, 1971).
 
-## Statistical analyses
+### Statistical analyses
 
 We computed the appropriate sample size based on a power analysis performed through G*Power 3.1.9.2. For the main statistics, that is, mixed ANOVA (within–between interaction) with two groups and two measurements, with the following input parameters: α = 0.05, power (1-β) = 0.95, and a hypothesized effect size (f) = 0.25, the estimated sample size resulted in n = 30 per experimental group.
 

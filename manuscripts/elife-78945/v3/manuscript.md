@@ -18,16 +18,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Morningside Graduate School of Biomedical Sciences, University of Massachusetts Medical School Worcester United States
-2. https://ror.org/0464eyp60 Program in Molecular Medicine, University of Massachusetts Medical School Worcester United States
-3. https://ror.org/0464eyp60 Department of Surgery, University of Massachusetts Medical School Worcester United States
-4. https://ror.org/0464eyp60 Diabetes Center of Excellence, University of Massachusetts Medical Center Worcester United States
+1. Morningside Graduate School of Biomedical Sciences, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Program in Molecular Medicine, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+3. Department of Surgery, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Diabetes Center of Excellence, University of Massachusetts Medical Center Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
 ## Abstract
 
-Mechanisms that control ‘beige/brite’ thermogenic adipose tissue development may be harnessed to improve human metabolic health. To define these mechanisms, we developed a species-hybrid model in which human mesenchymal progenitor cells were used to develop white or thermogenic/beige adipose tissue in mice. The hybrid adipose tissue developed distinctive features of human adipose tissue, such as larger adipocyte size, despite its neurovascular architecture being entirely of murine origin. Thermogenic adipose tissue recruited a denser, qualitatively distinct vascular network, differing in genes mapping to circadian rhythm pathways, and denser sympathetic innervation. The enhanced thermogenic neurovascular network was associated with human adipocyte expression of THBS 4 , TNC , NTRK3, and SPARCL1 , which enhance neurogenesis, and decreased expression of MAOA and ACHE , which control neurotransmitter tone. Systemic inhibition of MAOA, which is present in human but absent in mouse adipocytes, induced browning of human but not mouse adipose tissue, revealing the physiological relevance of this pathway. Our results reveal species-specific cell type dependencies controlling the development of thermogenic adipose tissue and point to human adipocyte MAOA as a potential target for metabolic disease therapy.
+Mechanisms that control ‘beige/brite’ thermogenic adipose tissue development may be harnessed to improve human metabolic health. To define these mechanisms, we developed a species-hybrid model in which human mesenchymal progenitor cells were used to develop white or thermogenic/beige adipose tissue in mice. The hybrid adipose tissue developed distinctive features of human adipose tissue, such as larger adipocyte size, despite its neurovascular architecture being entirely of murine origin. Thermogenic adipose tissue recruited a denser, qualitatively distinct vascular network, differing in genes mapping to circadian rhythm pathways, and denser sympathetic innervation. The enhanced thermogenic neurovascular network was associated with human adipocyte expression of THBS4, TNC, NTRK3, and SPARCL1, which enhance neurogenesis, and decreased expression of MAOA and ACHE, which control neurotransmitter tone. Systemic inhibition of MAOA, which is present in human but absent in mouse adipocytes, induced browning of human but not mouse adipose tissue, revealing the physiological relevance of this pathway. Our results reveal species-specific cell type dependencies controlling the development of thermogenic adipose tissue and point to human adipocyte MAOA as a potential target for metabolic disease therapy.
 
 ## Introduction
 
@@ -39,21 +39,37 @@ Here, we report that human adipose tissue generated in mice maintains species-sp
 
 ## Results
 
-## Formation of functional hybrid adipose depots from human cells
+### Formation of functional hybrid adipose depots from human cells
 
 To generate cells for implantation we derived mesenchymal progenitor cells from human subcutaneous adipose tissue (Rojas-Rodriguez et al., 2019) as detailed in Materials and methods, and injected cell suspensions subcutaneously into each flank of nude mice (Figure 1—figure supplement 1A, B). Discernible adipose tissue pads, and circulating human adiponectin, were detected in all mice (Figure 1—figure supplement 1C, D), demonstrating that human adipocytes were able to develop into hybrid tissue and secrete characteristic adipokines for an extended period after implantation. To monitor adipocyte development, we performed immunohistochemistry of the excised tissue with an antibody to Perilipin 1 (PLIN1), which delineates lipid droplets. This analysis revealed a progressive increase in cell size over a period of 16 weeks (Figure 1A). Notably, human adipocytes developed from implanted cells exceeded the size of mouse endogenous subcutaneous white adipocytes as early as week 4 after implantation and continued to enlarge to match the mean size of adipocytes in the human tissue from which progenitor cells were obtained (Figure 1A and B). The change in mean adipocyte size was mostly attributable to a shift from multilocular to unilocular adipocytes (Figure 1C), suggesting that as lipid droplets enlarge during development they also coalesce. Expression of human PLIN1 was relatively stable from weeks 4 to 16 (Figure 1D, top panels), but ADIPOQ expression decreased as adipocyte size increased (Figure 1D, lower panels), mimicking the known inverse correlation between ADIPOQ production and adipocyte hypertrophy (Robciuc et al., 2016). Importantly, there was no detectable expression of mouse Plin1 or Adipoq, in the hybrid tissue (Figure 1D, right top and lower panels), indicating that adipocytes in the developed depots are exclusively of human origin. These results indicate that adipocytes continue to develop in the mouse while retaining fundamental features of human adipose tissue, such as large adipocyte size and adiponectin expression.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig1-v3.jpg)
+
+**Figure 1.:** (A) Representative images of PLIN1 (green) and DAPI (blue) staining of WIM at the indicated weeks after implantation, and of inguinal mouse and subcutaneous human adipose tissue, scale bar = 50 µm. (B) Quantification of droplet size of PLIN1-stained implants and tissues. Each symbol represents the mean area of all cells within three random fields of a single implant or tissue section. Bars represent the means and SEM of n=3 n=3, n=6, n=4, implants at weeks 2, 4, 8, and 16 respectively, and n=3 for independent human or mouse adipose tissue samples. Statistical significance of the differences between samples was calculated using one-way ANOVA with Tukey’s adjustment for multiple comparisons, and exact p-values are shown. (C) Density distribution plot of droplet size of developing implants and control tissue. Each density distribution represents the combined density of all samples for each group (n=3–6). (D) RT-PCR of excised implants using species- specific probes for genes indicated. Values were normalized to those obtained from human or mouse adipose tissue samples exemplified in A. Symbols are the means of technical duplicates for each implant, and bars are the means and SEM of n=3, n=6 and n=4 implants at weeks 4, 8, and 16, respectively. Statistical significance of the differences between samples was calculated using one-way ANOVA with Tukey’s adjustment for multiple comparisons, and exact p-values are shown. (E) Representative images of white implants (WIM) and thermogenic implants (TIM) at 8 weeks of development, grid size = 0.5 cm. (F) Weight in mg of each excised implant from bi-laterally implanted mice. Bars are the mean and SEM of n=20 and n=24 implants for WIM and TIM, respectively. (G) Circulating human-specific adiponectin (ng/ml) from bilaterally implanted mice. Symbols are the mean of technical duplicates for n=2, n=9, and n=10 mice implanted with Matrigel alone (MG), WIM or TIM, respectively. (H) Whole mounts of WIM and TIM at 8 weeks after implantation stained for PLIN1 (top panels), or with H&E. Arrowheads highlight clusters of dense, multilocular droplets in TIM. (I) Mean droplet size (arbitrary units) in WIM and TIM. Symbol represent the mean areas of all cells from two independent sections from each implant. Bars represent the mean and SEM of n=6 and n=4 WIM and TIM implants, respectively. Statistical significance of the difference was calculated using unpaired, one-tailed Student t-test and resulting p-value is shown. (J) Density distribution plot of droplet size of WIM and TIM. Each density distribution represents the average density of all samples for each group. (K, L) RT-PCR of excised implants using human-specific probes for the genes indicated. Symbols are the means of technical duplicates for each implant, and bars are the means and SEM of n=14 and n=12 for UCP1, and n=7 and n=6 for LINC00473, in WIM and TIM, respectively. Values were normalized to the lowest expression level in the entire data set of n=26 implants. Statistical significance of the differences was calculated using unpaired, two-tailed Student t-tests, and exact p-values are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of differentiated adipocytes and single cell suspension used for implantation, scale bar = 25 µm. (B) Representative image of bilateral flank implantation, scalebar = 0.5 cm. (C) Excised implants at 4, 8, and 16 weeks of development, grid size = 0.5 cm. (D) Circulating human adiponectin at indicated weeks after implantation. Symbols represent the mean of technical duplicates for each individual mouse, bars represent the mean and range of n=2, n=3, and n=2 mice for weeks 4, 8, and 16, respectively.
+
 We then asked whether depots formed from white or thermogenically induced adipocytes would differ from each other. Mice were implanted with cells that were treated with vehicle (White IMplanted = WIM) or forskolin (Thermogenic IMplanted = TIM), and developed depots analyzed after 8 weeks of implantation. The macroscopic features and weight of TIM and WIM were similar (Figure 1E and F), as was the average concentration of circulating human adiponectin in mice harboring TIM compared to WIM (Figure 1G). However, multilocular adipocytes could be detected in wholemount staining of TIM, by either PLIN1 immunostaining of whole mounts (Figure 1H, top panels, white arrows) or by H&E staining of tissue sections (Figure 1H, lower panels, black arrows). Image quantification revealed a significant decrease in mean droplet size in TIM (Figure 1I), resulting from a higher density of small droplets (Figure 1J), which are typically seen in thermogenic adipocytes. Expression of human UCP1 was higher in TIM (Figure 1K), and expression of LINC00473, a log non-coding RNA which is detected specifically in human thermogenic adipocytes (Tran et al., 2020), was exclusively detected in TIM (Figure 1L). These results indicate that thermogenic features of implanted cells are maintained for a minimum of 8 weeks in vivo during which adipose tissue continues to develop from implanted cells.
 
-## Beige adipocytes develop into adipose tissue with a denser neurovascular architecture
+### Beige adipocytes develop into adipose tissue with a denser neurovascular architecture
 
 Thermogenic adipose tissue in mice is characterized by higher vascular and innervation density (Chi et al., 2018; Chi et al., 2021). To determine whether WIM and TIM development was accompanied by differences in vascularization we stained whole-mounts and thin sections from excised implants with endothelial cell stain isolectin (Figure 2A). We first analyzed the dynamics of vascular development in WIM over time after implantation. We detected dispersed endothelial cells as early as week 2 in whole-mount specimens (Figure 2A, top panels), and between weeks 4 and 8, a well-developed vascular network, closely resembling that seen in human adipose tissue, was observed. Vessels formed in apposition to enlarging adipocytes, as seen in sections co-stained with isolectin and antibodies to PLIN1 (Figure 2A, lower panels). The total intensity of isolectin staining, relative to PLIN1 staining to account for adipocyte mass, did not differ over time (Figure 2B). However, the mean size of vascular structures significantly increased between weeks 4 and 8 (Figure 2C), corresponding with the appearance of discernible vessels. Expression of mouse vascular endothelial cadherin (Cdh5) did not differ over time, consistent with the intensity of isolectin staining (Figure 2D, left panel), and was exclusively of mouse origin as human CDH5 was undetectable (Figure 2D, right panel). These results indicate that endothelial cells invade the emerging tissue early in development, and subsequently mature into morphologically discernable vessels. Even though all vasculature was of mouse origin, the vascular network was morphologically indistinguishable from human WAT (Figure 2A, comparing Week 16 with human adipose tissue [Human AT]).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative images of isolectin staining of WIM at the indicated weeks after implantation, and of inguinal mouse and subcutaneous human adipose tissue, scale bar = 50 µm. (B) Total isolectin staining in implants. Each symbol represents the sum of the areas of particles stained by isolectin, normalized to the total area stained by Plin1, of three random fields from a single implant. Bars represent the means and SEM of n=2, n=3, n=5, n=4, implants at weeks 2, 4, 8, and 16, respectively. C. Mean size of isolectin-stained particles. Each symbol represents the mean area of particles stained by isolectin in three random fields per implant. Bars represent the means and SEM of n=5, n=5, n=16, n=11, implants at weeks 2, 4, 8, and 16, respectively. Significance of the differences between samples was calculated using one-way ANOVA with Tukey’s adjustment for multiple comparisons, and exact P-values are shown. (D) RT-PCR of excised implants using species-specific probes for CDH5/Cdh5. Values were normalized to those obtained from mouse adipose tissue samples. Symbols are the means of technical duplicates for each implant, and bars are the means and SEM of n=3, n=6, and n=4 implants at weeks 4, 8, and 16 respectively. (E) Representative images of thin sections (upper panels) and whole mounts (lower panels) of WIM and TIM after 8 weeks of implantation, stained with isolectin. (F, G) Total isolectin staining of thin sections and whole mounts, assessed as in (B). Bars represent the means and SEM of n=5, implants for thin sections, and n=3 for whole mounts of WIM and IM, respectively. Significance of the differences between samples was calculated using unpaired two-tailed Student t-tests. (H) Mean size of isolectin-stained particles in WIM and TIM, analyzed as in (C). Bars represent the means and SEM of n=5, implants. (I, J) RT-PCR of excised implants using mouse-specific (I) and human-specific (J) probes for the genes indicated. Values were normalized to those obtained from mouse and human adipose tissue samples. Symbols are the means of technical duplicates for each implant, and bars are the means and SEM of n=7, and n=6 WIN and TIM implants respectively. Significance of the differences between WIM and TIM for each gene was calculated using one-way ANOVA with the Holm-Sidak adjustment for multiple comparisons, and exact p-values are shown. (K) Representative images of thin sections WIM and TIM after 8 weeks of implantation, stained for isolectin (red), tyrosine hydroxylase (TH, green) and DAPI (blue). (L) Total TH staining, where bars represent the means and SEM of n=5, and n=4 sections of WIM and TIM, respectively. Significance of the differences between samples was calculated using un-paired two-tailed Student t-test and the exact p-value is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of thin sections WIM and TIM after 8 weeks of implantation, stained for F4/80 (red), CD45 (green) and DAPI (blue). (B) Macrophage staining, where symbols are the mean of three independent sections per implant, and bars represent the means and SEM of n=4 and n=5, WIM and TIM implants, respectively. Data represents the cells stained with both CD45 and F4/80, normalized to DAPI to account for section size. Significance of the differences was calculated using un-paired 2-tailed Student t-test and the exact p-value is shown.
 
 We then compared the vasculature between TIM and WIM after 8 weeks of implantation in thin sections (Figure 2E, upper panels) and whole-mount fragments (Figure 2E, lower panels). Total intensity of isolectin staining relative to PLIN1 staining was increased in TIM (Figure 2F), as was the non-normalized intensity of isolectin in whole-mount specimens (Figure 2G). The overall size of vascular structures was not different between WIM and TIM (Figure 2H), suggesting that vessel maturation was unaffected. Gene expression levels of Cdh5 were higher in TIM (Figure 2I), but those of human adipocyte genes ADIPOQ or PLIN1, were not different between TIM and WIM (Figure 2J). These results indicate that thermogenic adipocytes induce the formation of a denser vascular network compared to non-thermogenic cells. We next asked whether TIM would have higher content of blood cells, which we would expect if the newly formed vascular network was functional. For this we measured the hematopoietic cell marker CD45 and the macrophage marker F4/80 (Figure 2—figure supplement 1). We find that TIM had significantly higher number of macrophages compared to WIM, proportional to the increase in vasculature, and consistent with a denser, functional vascular network.
 
 Sympathetic innervation often accompanies the development of vasculature (Carmeliet, 2003; Pellegrinelli et al., 2018; Reinert et al., 2014). To determine whether development of TIM was accompanied by sympathetic nerve recruitment, we imaged implants for tyrosine hydroxylase (TH) and isolectin. Punctate staining consistent with nerve terminals was detected in all implants, with some overlapping with isolectin (Figure 2K). Quantification revealed significantly higher TH staining in TIM compared to WIM (Figure 2L), indicating enhanced sympathetic recruitment in conjunction with enhanced vascularization.
 
-## Development and maintenance of TIM thermogenic phenotype is not cell autonomous
+### Development and maintenance of TIM thermogenic phenotype is not cell autonomous
 
 To determine whether maintenance of the thermogenic phenotype in-vivo depends on the neurovascular network or is an autonomous property of the cells, we examined the capacity of adipocytes to retain thermogenic gene expression in culture. We compared adipocytes that were never stimulated to adipocytes that were chronically stimulated with Forskolin (Fsk), and with adipocytes from which Fsk was withdrawn after a period of chronic stimulation (Figure 3A). Removal of Fsk from chronically stimulated adipocytes resulted in a rapid increase in droplet size, which reached the size seen in cells that were never exposed to Fsk within days of removal (Figure 3B and C). Forskolin withdrawal also resulted in a sharp decrease in UCP1 (Figure 3D) and LINC00473 (Figure 3E) expression, with values becoming statistically non-different from non-induced adipocytes within 5 days of withdrawal. Interestingly, the expression of LINC00473 decreased even in the presence of chronic Fsk stimulation, while UCP1 levels continued to increase over time, revealing different pathways of adaptation to chronic stimulation. Irrespective of these gene-specific differences, these results indicate that the thermogenic phenotype of adipocytes in vitro is completely reversed within days of withdrawal of stimulation. We conclude that adipocytes lack the capacity to autonomously maintain a thermogenic phenotype, and that vascularization and innervation generated following implantation are likely to play a critical role in sustaining their thermogenic properties.
 
@@ -63,7 +79,7 @@ To determine whether maintenance of the thermogenic phenotype in-vivo depends on
 
 We then examined whether implanted adipocytes might have systemic effects that would impact host adipose depot thermogenic state. The weights of mouse inguinal white and interscapular brown adipose tissue (iWAT and iBAT, respectively) were similar between mice implanted with either WIM or TIM (Figure 3F), but the iWAT, which in athymic nude mice is noticeably beige, looked ‘whiter’ in mice harboring TIM compared to WIM (Figure 3G). This morphological difference was associated with lower Ucp1 expression in iWAT of TIM-implanted mice, while no differences were seen in iBAT (Figure 3H). These results indicate that hybrid thermogenic depots influence endogenous thermogenic adipose tissues, potentially through similar feedback mechanisms that take place when mouse thermogenic tissues are transplanted into mice (Schulz et al., 2013).
 
-## Distinct gene expression features of adipocytes and host cells in WIM and TIM
+### Distinct gene expression features of adipocytes and host cells in WIM and TIM
 
 To explore underlying mechanisms by which WIM and TIM elicit differential vascularization and innervation, we performed bulk RNA sequencing after 8 weeks of implantation. To distinguish transcriptomes corresponding to either mouse or human cells, fastq files were aligned to both genomes, and resulting reads were classified as either of human or mouse origin using the XenofilteR R-package, and we then used mouse genes to infer the mouse cell types that comprise WIM and TIM (Figure 4A). As a framework we used single-cell datasets from Burl et al., 2018, who profiled stromovascular cells from both inguinal and gonadal mouse depots. Consistent with their findings, we distinguish 9 clusters, corresponding to adipose stem cells at distinct stages of differentiation, vascular endothelial cells, vascular smooth muscle cells, lymphocytes, dendritic cells, macrophages, neutrophils, and an unidentified cluster (Figure 4B). The most prominent host-derived cell populations in WIM and TIM, predicted by dampened weighted least squares deconvolution (DWLS, Tsoucas et al., 2019; https://github.com/dtsoucas/DWLS; Tsoucas, 2021), were adipose stem/progenitor cells, macrophages, and vascular endothelial cells, with vascular smooth muscle cells, dendritic cells, and other immune cells at very low numbers. No detectable differences in the relative proportion of mouse cell types within WIM and TIM were observed (Figure 4C). It is interesting to note that mouse progenitor cells infiltrating the developing tissue did not differentiate into adipocytes, as the expression of mouse Plin1 and Adipoq in WIM and TIM is negligible (Figure 2I).
 
@@ -83,6 +99,14 @@ To identify genes that might be most relevant to the maintenance of the thermoge
 
 A lower expression of ACHE and MAOA in adipocytes would be expected to enhance neurotransmitter tone and maintenance of the thermogenic phenotype. Indeed, in mouse models, Maoa activity has been implicated in the regulation of norepinephrine stimulated adipose tissue lipolysis and browning, but its expression has been localized to a specific macrophage population (Camell et al., 2017; Pirzgalska et al., 2017; Rogers et al., 2012). Our finding of MAOA transcripts in WIM and TIM suggested expression in human adipocytes. To compare the levels of MAOA expression between species, we leveraged a recently published dataset that harmonizes single nuclei and single cell sequencing of mouse and human subcutaneous and visceral adipose tissues to generate a comprehensive atlas of adipose tissues transcripts (Emont et al., 2022). While single-cell and single-nuclei transcriptomics are biased to detect more highly expressed genes, the approach allows reasonable comparison between cells within a species. In human adipose tissues, MAOA transcripts (Figure 6A, top row) were clearly detected and abundant in the population of cells expressing ADIPOQ, which correspond to adipocytes (Figure 6A, left). Markers for endothelial cells (CDH5), and diverse markers for macrophage and monocytes (CCR2, CD14, CD68, and ADGRE1) could be detected in the corresponding cell types, but MAOA and ADIPOQ (as expected) transcripts were virtually undetectable in cells other than adipocytes. In mouse adipose tissues (Figure 6A, right), Maoa transcripts were detected at low levels in adipocytes, macrophages, and endothelial cells, with the highest level of transcript expression being detected in cells of the mesothelium. High levels of transcripts for Adipoq were detected in adipocytes, and various macrophage and monocyte markers could be detected in immune cell types. Both human and mouse adipocytes also contained transcripts for SLC22A3, the major extra-neuronal catecholamine transporter required for norepinephrine clearance (Figure 6A, bottom row). These results indicate species-specific, high-level expression of MAOA in human adipocytes. Parallel RT-PCR and western blotting analysis of human adipocytes during differentiation in vitro indicate that transcriptional levels of MAOA closely reflect protein expression (Figure 6B), suggesting that transcriptomic data reflect protein abundance.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig6-v3.jpg)
+
+**Figure 6.:** (A) Dot plots of indicated genes generated using data from Emont et al., 2022, available here (B) RT-PCR and western blotting at indicated days following induction of differentiation in human adipocytes. Samples were prepared from two independent wells and subjected to western blotting with an antibody to MAOA that recognizes the mouse and human proteins (CellSignaling #75330). The intensity of the single detected band was quantified, and values plotted in the right Y axis. RT-PCR results are plotted in the left Y axis. Symbols represent the fold difference over the lowest value in the dataset and bars the mean and SEM of n=4 independent cultures. (C) Representative images of human and mouse subcutaneous adipose tissue stained with antibodies to MAOA (CellSignaling #75330 for mouse, CellSignaling #73030 for human), and PLIN1, and counterstained with DAPI. Bars = 100 um. (D) Confocal images of human adipose tissue stained with antibodies to PLIN1, MAOA (CellSignaling #73030), and mtHSP70 and counterstained with DAPI. Projection of 15 images taken at 0.5 µm intervals (bar=10 um) and indicated segment in 3D projections illustrating localization of nucleus, mitochondria and MAOA to the region between the lipid droplet and the cell periphery (bars = 3 um). (E) WIM and vicinal mouse adipose tissue, stained for PLIN1, MAOA (CellSignaling #75330), and DAPI, with red dotted line indicating boundary between hybrid tissue and endogenous adipose tissue. Bar = 100um. (F) Immune cell showing staining for MAOA. Bar = 10 µm. (G) Intensity of MAOA (left panel) and PLIN1 (right panel) relative to DAPI in 5 independently analyzed regions from each of n=4 WIM and n=4 TIM thin sections, as described in Materials and methods. Statistical significance of the differences was assessed using two-tailed student t-tests, and exact values are shown. (H) Experimental timeline for exposure on mice harboring WIM to clorgyline or cold. (I) Weight of mice at 7- and 8 weeks (J) Weights of dissected tissues at 8 weeks. (K) RT-PCR for human UCP1. (L) RT-PCR for human ADIPOQ. For (K and L), bars represent the mean and S.E.M and symbols correspond to each independent implant (n=7–8 implants). M. RT-PCR for mouse Ucp1 in excised inguinal adipose tissue (n=7–8 fat pads). Bars represent the mean and S.E.M and symbols correspond to each independent fat pad. (I-M) Statistical significance of the differences was assessed using one-way ANOVA with Dunett’s multiple comparison correction, and exact values are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78945/elife-78945-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Bars represent the mean and S.E.M and symbols correspond to each measurement from n=3–4 implants assayed in duplicate.
+
 To directly assess MAOA protein expression in adipocytes, we performed high resolution confocal imaging of human and mouse adipose tissues, and quantitative immunostaining of WIM and TIM. At lower magnification, sections of human adipose tissue displayed clear staining for MAOA, but no specific staining could be detected in numerous sections of inguinal mouse adipose tissue. In contrast, both tissues were clearly stained for the lipid droplet protein PLIN1 (Figure 6C). At higher resolution, MAOA could be seen localized between the lipid droplet, marked by perilipin staining, and the periphery of the cell, where it co-localized with mitochondrial HSP70, consistent with its reported localization to the outer mitochondrial membrane (Figure 6D). Imaging of implants confirmed that MAOA protein is detected in human adipocytes within the implant, but not in vicinal endogenous mouse adipocytes (Figure 6E), despite being detectable in some sections in mouse immune cells infiltrating the implant (Figure 6F). To assess whether the lower expression of MAOA in TIM, detected by bulk RNA sequencing, was observable at the protein level, we stained thin sections of excised implants with antibodies to PLIN1 and MAOA, as well as DAPI to control for cellularity of the sections. MAOA staining was lower on average in sections from TIM compared to WIM (Figure 6G, left panel), while PLIN staining was not different between conditions (Figure 6G, right panel).
 
 Monoamine oxidases are major mechanisms by which norepinephrine, epinephrin and serotonin are degraded (Tipton, 2018), and clorgyline, a specific, irreversible inhibitor of MAOA have been used in the treatment of depression for many years (Lipper et al., 1979). To determine whether expression of MAOA in human adipocytes might be functionally relevant, we treated mice harboring WIM with a low dose of the clorgyline for 2 weeks. A low dose was used to minimize its effects on endogenous brain and peripheral mouse Maoa. A separate cohort of mice was gradually acclimated to low ambient temperature as an alternative method to enhance adrenergic tone (Figure 6H). Neither treatment resulted in significant changes in body weights (Figure 6I), nor in weights of most tissues except for a decrease in inguinal subcutaneous adipose tissue weight in cold-acclimated mice (Figure 6J), which was expected given the reliance of BAT on peripheral lipolysis to sustain thermogenesis. However, implants from clorgyline-treated mice expressed significantly elevated UCP1 (Figure 6K), with no change in ADIPOQ expression (Figure 6L). Effects on other genes associated with thermogenesis did not achieve statistical significance, potentially due to the low doses of clorgyline and mild cold exposure conditions employed (Figure 6—figure supplement 1). Ucp1 in mouse subcutaneous adipose tissue was not affected by clorgyline, despite it being responsive to cold stimulation (Figure 6M), demonstrating that the effect of clorgyline was specific for human adipocytes.
@@ -101,11 +125,105 @@ Correlations between human adipocyte MAOA and thermogenesis can be inferred from
 
 ## Materials and methods
 
-## Human Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Adipose tissue progenitor cell</td>
+      <td>Corvera Laboratory</td>
+      <td>Mesenchymal progenitor cells</td>
+      <td>Cells used in this paper are generated from small fragments of surgically excised male or female human adipose tissue cultured in MatriGel, in the presence of normocin, penicillin and streptomycin. Cultures are recovered using dispase, expanded by two passages using trypsin, and frozen. Cells are then thawed and used for in experiments with no further passaging. Cells are not transformed, nor cultured beyond three passages and are therefore not routinely tested for mycoplasma nor subject to further authentication. Adipose tissue from which the primary cells are derived is obtained in accordance with the UMass Chan Institutional Review Board IRB ID 14734_13</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Perilipin-1(Rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>#9349</td>
+      <td>IF(1:500),</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAOA (Rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>#73030</td>
+      <td>IF(1:500)WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAOA(Rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>#75330</td>
+      <td>IF(1:500)WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine hydroxylase(Rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>#AB152</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>#282747</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80(Rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>#6640</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Adiponectin ELISA</td>
+      <td>Invitrogen</td>
+      <td>#KHP0041</td>
+      <td>Serum diluted 1:50</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isolectin GS-IB4 AlexaFluor-647 conjugate</td>
+      <td>Invitrogen</td>
+      <td>#I32450</td>
+      <td>Staining,1:200</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ulex Europaeus Agglutinin I DyLight 594</td>
+      <td>Vector Laboratories</td>
+      <td>#DL-1067–1</td>
+      <td>Staining,1:200</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>#D1306</td>
+      <td>Counterstaining1 µg/mL</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human Subjects
 
 Abdominal adipose tissue was collected from de-identified, discarded tissue of patients undergoing panniculectomy, with approval from the University of Massachusetts Institutional Review Board (IRB ID 14734_13).
 
-## Generation of cells and implants
+### Generation of cells and implants
 
 Small pieces of fat (~1 mm3) from the excised human adipose tissue were embedded in Matrigel (200 explants/10 cm dish) and cultured for 14 days as described before (Rojas-Rodriguez et al., 2019). Single- cell suspensions were obtained using dispase and plated into 150 mm tissue culture dishes. After 72 hr, cells were split 1:2, grown for an additional 72 hr, recovered by trypsinization and frozen. To generate the implants, ~10E7 cells were thawed into each 150 mm plate, and after 72 hr split 1:2 at a dense seeding density of ~8E6 cells per 150 mm plate. Upon confluence (approximately 72 hr after plating), differentiation was induced by replacing the growth media with DMEM +10% FBS, 0.5 mM 3-isobutyl-1- methylxanthine, 1 µM dexamethasone, and 1 μg/mL insulin (MDI). MDI media was changed daily for 72 hr at which time the differentiation medium was replaced by DMEM +10% FBS, 50% of which was replaced every 48 hr for 10 days. After 10 days of differentiation, a subset of cells was stimulated daily for 7 days with forskolin (1 µM final concentration) to induce the thermogenic phenotype. Single-cell suspensions of differentiated and thermogenic-induced adipocytes were obtained by incubation for 7–10 min in Trypsin (1 X)/collagenase (0.5 mg/mL). Proteases were quenched by dilution into culture media, cells pelleted by centrifugation at 500 rpm for 10 min.
 
@@ -115,31 +233,83 @@ A cohort of mice were randomized at 6 weeks post-implantation to either pharmaco
 
 At each experimental time point, mice were sacrificed, and developed implants were dissected and snap frozen until further analysis. All procedures were performed in accordance with the University of Massachusetts Medical School’s Institutional Animal Care and use Committee protocol PROTO202100015.
 
-## Human-specific adiponectin ELISA
+### Human-specific adiponectin ELISA
 
 Blood was obtained through cardiac puncture, centrifuged, and the plasma was collected and stored at –80 °C. A human-specific adiponectin ELISA (Invitrogen KHP0041) was used to measure the concentration of human adiponectin in mouse blood.
 
-## RNA extraction and quantitative PCR
+### RNA extraction and quantitative PCR
 
 Implants were placed on TRIzol (Invitrogen) and homogenized with Tissuelyser (Qiagen). Total RNA was reverse transcribed using the iScript cDNA Synthesis Kit (Bio-Rad) per manufacturer’s protocol. Either SYBR Green or PrimePCR Probes (Bio-Rad) were used to detect amplification of human- and mouse-specific genes using the following primers:
 
-## RNA-Seq
+<table>
+  <thead>
+    <tr>
+      <th>Primers</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human RPL4</td>
+      <td>GCCTGCTGTATTCAAGGCTC</td>
+      <td>GGTTGGTGCAAACATTCGGC</td>
+    </tr>
+    <tr>
+      <td>Mouse Rpl4</td>
+      <td>CCCCTCATATCGGTGTACTCC</td>
+      <td>ACGGCATAGGGCTGTCTGT</td>
+    </tr>
+    <tr>
+      <td>Human PLIN1</td>
+      <td>ACCAGCAAGCCCAGAAGTC</td>
+      <td>CATGGTCTGCACGGTGTATC</td>
+    </tr>
+    <tr>
+      <td>Mouse Plin1</td>
+      <td>CTGTGTGCAATGCCTATGAGA</td>
+      <td>CTGGAGGGTATTGAAGAGCCG</td>
+    </tr>
+    <tr>
+      <td>Human CDH5</td>
+      <td>CTGCTGCAGGGTCTTTTTCT</td>
+      <td>AGGGCATGATGGTCAGTCTC</td>
+    </tr>
+    <tr>
+      <td>Mouse Cdh5</td>
+      <td>TACTCAGCCCTGCTCTGGTT</td>
+      <td>TGGCTCTGTGGTGCAGTTAC</td>
+    </tr>
+    <tr>
+      <td>Human UCP1</td>
+      <td>AAGTCCAAGGTGATTGCC</td>
+      <td>TTACCACAGCGGTGATTGTTC</td>
+    </tr>
+    <tr>
+      <td>Mouse Ucp1</td>
+      <td>GTGAACCCGACAACTTCCGAA</td>
+      <td>TGCCGAGCAAGCTGAAACTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA-Seq
 
 RNA was extracted from white and thermogenic implants using the TRIzol method. Library preparation was performed using the TruSeq cDNA library construction (Illumina). Samples were processed on the Illumina HiSeq 550 sequencing system with the NextSeq 500/550 High Output kit v2.5 (Illumina, Cat. No. 20024906). The generated fastq files were loaded into the DolphinNext platform (https://dolphinnext.umassmed.edu/) and the Bulk RNA sequencing pipeline was used. The. fastq files were aligned to both the human (hg38) and the mouse (mm10) genome. The resulting alignments were processed using the R-package XenofilteR to classify reads as either of human or mouse origin. Reference (https://github.com/PeeperLab/XenofilteR; Netherlands Cancer Institute - Genomics Core Facilty, 2022; Kluin et al., 2018) for more details on XenofilteR source code. Once aligned, the files were run through RSEM for normalization. Differential expression analysis was performed using the DEBrowser platform (https://debrowser.umassmed.edu/). Gene ontology analysis was performed by combining results from TopFunn (https://toppgene.cchmc.org/).
 
-## Single-cell RNA-Seq processing
+### Single-cell RNA-Seq processing
 
 Single-cell RNA sequencing data was obtained from data from Sun et al., 2020 (https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-8564/) and (Burl et al., 2018) (https://www.ncbi.nlm.nih.gov/sra/?term=SRP145475). The provided.fastq files were loaded into DolphinNext and processed using the Cell Ranger pipeline. The output files from Cell Ranger were then loaded into the Seurat (https://satijalab.org/seurat/index.html). We removed unwanted cells from the data by sub-setting features as follow: nFeature_RNA >100 & nFeature_RNA <5,000. We then proceeded to normalize the data using a logarithmic normalization method with a scale factor of 10,000. We then applied a linear transformation to scale the data followed by dimension reduction analysis (PCA). Following PCA analysis we determined that the first 8 principal component analysis were optimal for further analysis. To cluster the cells, we performed non-linear dimension reduction analysis using the UMAP algorithm. Analysis was done using the first 8 principal components and a resolution of 0.3. Finally, differentially expressed genes for each cluster were identified to determine biomarkers for cell cluster identification.
 
-## Cell predictor using DWLS deconvolution
+### Cell predictor using DWLS deconvolution
 
 Source code for DWLS deconvolution can be found at https://github.com/dtsoucas/DWLS, (Solivan-Rivera, 2022 copy archived at swh:1:rev:b73dd13d915575f5becf3cdd1a566877e73605d7). Briefly, metadata from the Seurat object was used to generate a matrix containing the reads from the scRNA and one containing the cluster labels for each gene. A signature matrix was generated using the MAST function provided with the DWLS deconvolution code. Only genes in common between the scRNA and the bulk RNA dataset were used for prediction. DWLS deconvolution was performed using the solveDampenedWLS function and proportions of predicted cells were plotted.
 
-## Single nuclei RNA-Seq processing
+### Single nuclei RNA-Seq processing
 
 Seurat objects for single-nuclei RNA sequencing was kindly provided by the Wolfrum lab, who published their analysis (Sun et al., 2020). Briefly, the Seurat objects containing the raw data were loaded the Seurat package, and two different samples were processed: single nuclei from human brown adipose tissue, single nuclei from mouse brown adipocytes. Briefly, for the human brown adipose tissue dataset, we first removed unwanted cells from the data by sub-setting features as follow: nCount_RNA >1000 & nCount_RNA <8000 & prop. mito <0.3. We then normalized the data using a logarithmic normalization with a scale factor of 10000. We followed this by applying a linear transformation to scale the data followed by dimension reduction analysis (PCA). We determined that the first 10 principal component analysis were optimal for further analysis. To cluster the cells, we performed non-linear dimension reduction analysis using the UMAP algorithm. Analysis was done using the first 8 principal components and a resolution of 0.3. For the mouse brown adipocytes, we first removed unwanted cells from the data by sub-setting features as follow: nFeature_RNA >1000 & nFeature_RNA <5000. We then normalized the data using a logarithmic normalization with a scale factor of 10,000. We followed this by applying a linear transformation to scale the data followed by dimension reduction analysis (PCA). We determined that the first 8 principal component analysis were optimal for further analysis. To cluster the cells, we performed non-linear dimension reduction analysis using the UMAP algorithm. Analysis was done using the first 8 principal components and a resolution of 0.2. Finally, clusters names were assigned using SingleR (https://github.com/dviraran/SingleR; dviraran, 2020; Aran et al., 2019). The human primary cell atlas (Mabbott et al., 2013) was used as a reference to identify clusters based on differentially expressed genes of human brown adipose tissue.
 
-## Histochemistry and quantification
+### Histochemistry and quantification
 
 All samples were fixed in 4% paraformaldehyde overnight at 4 °C and thoroughly washed with PBS. Tissue sections (8 µm) were mounted on Superfrost Plus microscope slides (Fisher Scientific) and stained with hematoxylin and eosin. For whole-mount staining, tissue fragments (~1 mm3) were stained and mounted between 1.5 mm coverslips sealed with ProLong Gold Antifade Reagent (Life Technologies). Mouse vasculature was detected using isolectin GS-IB4 AlexaFluor-647 conjugate (Invitrogen I32450) and human vasculature using Ulex Europaeus Agglutinin I (UEA I), DyLight 594 (Vector Laboratories DL-1067–1). Nuclei were stained using DAPI (Life Sciences 62249). Perilipin-1 was detected with an antibody that recognizes both human and mouse protein (CellSignaling #9349). MAOA was detected using CellSignaling #73030 (human) or CellSignaling #75330 (human and mouse). To identify sympathetic nerves an antibody for Tyrosine Hydroxylase was used (Millipore Sigma - AB152). Macrophages were identified by co-staining using antibodies for CD45 (Abcam – ab282747) and F4/80 (Abcam – ab6640). Mitochondrial HSP70 was detected using Invitrogen MA3-028. Tissue sections were imaged using ZEISS Axio Scan Z1. Whole-mount images were acquired using an Olympus IX81 microscope (Center Valley, PA) with dual Andor Zyla sCMOS 4.2 cameras (Belfast, UK) mounted on an Andor TuCam two camera adapter (Belfast, UK). To prevent visual biases, entire sections were imaged using a scanning microscope.
 
@@ -147,14 +317,14 @@ Image analysis was performed using the open software platform FIJI. A single mon
 
 To quantify MAOA levels between WIM and TIM, thin sections from n=4 each explant were stained for PLIN1, MAOA and DAPI. Whole sections were imaged using a TissueFAX SL tissue cytometer using ×20 magnification. Images were collated using the TissueFAXS 7 viewer and imported into FIJO for further analysis. Thresholds were applied to all sections in each channel equally, and MAOA and PLIN1 intensities were divided by the DAPI intensity in each region to account for cellularity. To account for differences in section sizes, 5 equally sized subsections of each image were analyzed and used to determine differences between WIM and TIM.
 
-## Thermogenic withdrawal of cultured adipocytes
+### Thermogenic withdrawal of cultured adipocytes
 
 Cells (~6.0 × 106) were thawed and seeded on 6-well plates, differentiated into white adipocytes, and stimulated with forskolin as described above. After chronic forskolin stimulation, a subset of cells was removed from daily stimulation for 10 days. Images were taken and samples were placed on TRIzol (Invitrogen) at days 0, 2, 5, 7, and 10 of withdrawal. Samples were homogenized using the Tissuelyser (QIAGEN), and total RNA was then isolated for analysis as described above.
 
-## Materials availability
+### Materials availability
 
 The count data and processed data for bulk RNASeq has been deposited in the Gene Expression Omnibus under the accession number GSE200141.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes ranged from five to seven biological replicates for each experiment and were based on variance associated with each parameter tested as assessed in prior studies (Min et al., 2016; Rojas-Rodriguez et al., 2019; Rojas-Rodriguez et al., 2020) Statistical analysis was performed using GraphPad Prism 9. Statistical tests and exact p values are described in each figure legend. Data were tested for normality before use of parametric tests, and when normality could not be verified, non-parametric tests were used. Statistical significance between groups was estimated using ordinary one-way ANOVA corrected for multiple comparisons as described in each figure legend.

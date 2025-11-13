@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.11147.001 Electron microscopy-based connectomics aims to comprehensively map synaptic connections in neural tissue. However, current approaches are limited in their capacity to directly assign molecular identities to neurons. Here, we use serial multiplex immunogold labeling (siGOLD) and serial-section transmission electron microscopy (ssTEM) to identify multiple peptidergic neurons in a connectome. The high immunogenicity of neuropeptides and their broad distribution along axons, allowed us to identify distinct neurons by immunolabeling small subsets of sections within larger series. We demonstrate the scalability of siGOLD by using 11 neuropeptide antibodies on a full-body larval ssTEM dataset of the annelid Platynereis . We also reconstruct a peptidergic circuitry comprising the sensory nuchal organs, found by siGOLD to express pigment-dispersing factor, a circadian neuropeptide. Our approach enables the direct overlaying of chemical neuromodulatory maps onto synaptic connectomic maps in the study of nervous systems. DOI: http://dx.doi.org/10.7554/eLife.11147.001
+Electron microscopy-based connectomics aims to comprehensively map synaptic connections in neural tissue. However, current approaches are limited in their capacity to directly assign molecular identities to neurons. Here, we use serial multiplex immunogold labeling (siGOLD) and serial-section transmission electron microscopy (ssTEM) to identify multiple peptidergic neurons in a connectome. The high immunogenicity of neuropeptides and their broad distribution along axons, allowed us to identify distinct neurons by immunolabeling small subsets of sections within larger series. We demonstrate the scalability of siGOLD by using 11 neuropeptide antibodies on a full-body larval ssTEM dataset of the annelid Platynereis. We also reconstruct a peptidergic circuitry comprising the sensory nuchal organs, found by siGOLD to express pigment-dispersing factor, a circadian neuropeptide. Our approach enables the direct overlaying of chemical neuromodulatory maps onto synaptic connectomic maps in the study of nervous systems.
 
 ## Introduction
 
@@ -39,31 +39,104 @@ We established siGOLD using larval stages of Platynereis dumerilii, a marine ann
 
 ## Results
 
-## Multiplex neuron identification with siGOLD on serial sections
+### Multiplex neuron identification with siGOLD on serial sections
 
-In order to selectively label individual neurons in large-scale serial EM datasets, we established an immunoEM procedure to label ultrathin sections with neuronal cell-type specific antibodies. We reasoned that immunoEM performed on only a few layers from a large series of sections could identify neuron profiles that contain the antigen (
+In order to selectively label individual neurons in large-scale serial EM datasets, we established an immunoEM procedure to label ultrathin sections with neuronal cell-type specific antibodies. We reasoned that immunoEM performed on only a few layers from a large series of sections could identify neuron profiles that contain the antigen (Figure 1A). We first performed immunoEM on 40-nm serial sections from the ventral nerve cord (VNC) of a 72 hr post-fertilization (hpf) Platynereis larva (specimen HT9-5, Figure 1B,C). For specimen preparation, we used a conventional serial TEM protocol including high-pressure freezing, fixation with a freeze substitution medium containing 2% osmium tetroxide and 0.5% uranyl acetate, and embedding in Epon. We also developed a procedure for the safe handling of several grids in parallel during the immunostaining and contrasting procedure. We optimized the immunolabeling protocol to achieve high specificity for immunoEM and high ultrastructural detail. In our protocol, we use secondary antibodies coupled to ultra small gold particles and a silver-enhancement procedure. We also fine-tuned the contrast-staining protocol to optimize contrast for both gold labeling and ultrastructural detail.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic flowchart of the siGOLD labeling approach from high-pressure freezing and freeze substitution (HPF-FS) to tracing and 3D reconstruction. Ni, nickel grid, Cu, copper grid. (B) SEM micrograph of a 72 hpf Platynereis larva. (C) Schematic of the HT9-5 sample showing the position of the ventral nerve cord (VNC), ventral view. Colored lines indicate where cross-sections through the VNC were taken, near the base of the circumesophageal connectives at the level of the first commissure. Layer number(s) followed by neuropeptide ID are indicated for each colored line. Dashed line indicates the gap (approximately 10 missing sections) between the first and second series of sections. Scale bar: (B) 50 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.003
+**Figure 1.:** (A) Schematic flowchart of the siGOLD labeling approach from high-pressure freezing and freeze substitution (HPF-FS) to tracing and 3D reconstruction. Ni, nickel grid, Cu, copper grid. (B) SEM micrograph of a 72 hpf Platynereis larva. (C) Schematic of the HT9-5 sample showing the position of the ventral nerve cord (VNC), ventral view. Colored lines indicate where cross-sections through the VNC were taken, near the base of the circumesophageal connectives at the level of the first commissure. Layer number(s) followed by neuropeptide ID are indicated for each colored line. Dashed line indicates the gap (approximately 10 missing sections) between the first and second series of sections. Scale bar: (B) 50 μm.
 
-In preliminary tests, we found strong and localized labeling in neurites using 11 different polyclonal antibodies generated against short amidated neuropeptides of Platynereis (Table 1).10.7554/eLife.11147.004Table 1.List of antibodies usedDOI: http://dx.doi.org/10.7554/eLife.11147.004NP precursor nameAbbreviationAntigenFMRFamideFMRFa(C)FMRFaRYamideRYa(C)VFRYaMyoinhibitory peptide/Allatostatin BMIP(C)AWNKNSMRVWa or (C)VWaRGWamideRGWa(C)RGWa or (C)GWaProenkephalinPENK(C)YGDLSFSNSNYaLuqinLUQ(C)WRPQGRFaAllatotropinATO(C)GFRTGAYDRFSHGFaPigment dispersing factorPDF(C)NPGTLDAVLDMPDLMSLaLeucokininLEUC(C)KFTPWAaFVamideFVa(C)AHRFVa or (C)FVaFVRIamideFVRIa(C)FVRIaThe full name and abbreviation of neuropeptide precursors that contain the neuropeptides used for immunoEM. The FMRFa, RYa, MIP short and long, RGWa, FVa short and long, and FVRIa antibodies have been described previously (Conzelmann and Jékely, 2012; Conzelmann et al., 2011; Conzelmann et al., 2013a; Jékely et al., 2008). All 11 neuropeptides are amidated (a). A Cys (C) was added to the N-terminus of each peptide to allow coupling during immunization and affinity purification. All antibodies were generated in rabbits. For FVa long, a rat antibody was also generated.
+In preliminary tests, we found strong and localized labeling in neurites using 11 different polyclonal antibodies generated against short amidated neuropeptides of Platynereis (Table 1).
 
-To test the specificity and reproducibility of immunoEM with the 11 neuropeptide-antibodies, we collected two sets of transverse serial sections from the first trunk segment of the HT9-5 specimen. Four to 18 consecutive serial sections were collected on each EM grid for immunoEM. For each antibody, we stained two grids separated by a serial distance of approximately 50 sections (
+**Table 1.**
+ List of antibodies used
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NP precursor name</th>
+      <th>Abbreviation</th>
+      <th>Antigen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FMRFamide</td>
+      <td>FMRFa</td>
+      <td>(C)FMRFa</td>
+    </tr>
+    <tr>
+      <td>RYamide</td>
+      <td>RYa</td>
+      <td>(C)VFRYa</td>
+    </tr>
+    <tr>
+      <td>Myoinhibitory peptide/Allatostatin B</td>
+      <td>MIP</td>
+      <td>(C)AWNKNSMRVWa or (C)VWa</td>
+    </tr>
+    <tr>
+      <td>RGWamide</td>
+      <td>RGWa</td>
+      <td>(C)RGWa or (C)GWa</td>
+    </tr>
+    <tr>
+      <td>Proenkephalin</td>
+      <td>PENK</td>
+      <td>(C)YGDLSFSNSNYa</td>
+    </tr>
+    <tr>
+      <td>Luqin</td>
+      <td>LUQ</td>
+      <td>(C)WRPQGRFa</td>
+    </tr>
+    <tr>
+      <td>Allatotropin</td>
+      <td>ATO</td>
+      <td>(C)GFRTGAYDRFSHGFa</td>
+    </tr>
+    <tr>
+      <td>Pigment dispersing factor</td>
+      <td>PDF</td>
+      <td>(C)NPGTLDAVLDMPDLMSLa</td>
+    </tr>
+    <tr>
+      <td>Leucokinin</td>
+      <td>LEUC</td>
+      <td>(C)KFTPWAa</td>
+    </tr>
+    <tr>
+      <td>FVamide</td>
+      <td>FVa</td>
+      <td>(C)AHRFVa or (C)FVa</td>
+    </tr>
+    <tr>
+      <td>FVRIamide</td>
+      <td>FVRIa</td>
+      <td>(C)FVRIa</td>
+    </tr>
+  </tbody>
+</table>
+
+_The full name and abbreviation of neuropeptide precursors that contain the neuropeptides used for immunoEM. The FMRFa, RYa, MIP short and long, RGWa, FVa short and long, and FVRIa antibodies have been described previously (Conzelmann and Jékely, 2012; Conzelmann et al., 2011; Conzelmann et al., 2013a; Jékely et al., 2008). All 11 neuropeptides are amidated (a). A Cys (C) was added to the N-terminus of each peptide to allow coupling during immunization and affinity purification. All antibodies were generated in rabbits. For FVa long, a rat antibody was also generated._
+
+To test the specificity and reproducibility of immunoEM with the 11 neuropeptide-antibodies, we collected two sets of transverse serial sections from the first trunk segment of the HT9-5 specimen. Four to 18 consecutive serial sections were collected on each EM grid for immunoEM. For each antibody, we stained two grids separated by a serial distance of approximately 50 sections (Figure 1C). We imaged the VNC region in each section at a resolution of 2.22 nm/pixel followed by stitching and alignment of the images. We found strong and localized labeling in only a small subset of neurites for each antibody (Figure 2A, Shahidi, et al., 2015). In consecutive sections, the same neurite was often strongly labeled with the same antibody (Figure 2A, FVa, layers 1–5). In sections collected on different grids that were labeled with different antibodies, we found distinct patterns of neurite-specific labeling (Figure 2B,C). In many sections, we could observe dense core vesicles (DCVs) in the cytoplasm of the gold-labeled neurites, indicative of the peptidergic nature of these cells (Figure 2A–F, Shahidi, et al., 2015). In high-resolution (0.22 nm/pixel) images, we could observe gold labeling associated with DCVs (Figure 2D–F), suggesting that our immunoEM procedure labeled mature neuropeptides residing inside these vesicles. Several ultra-small gold particles were not enlarged during the silver-enhancement procedure but were also associated with DCVs (Figure 2D–F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative micrographs with immunogold labeled axons for the neuropeptide antibodies indicated. For the FVa neuropeptide antibody, five adjacent sections are shown (FVa Layer 1–5). (B, C) Neurite-specific labeling in adjacent sections (seven sections apart) labeled with different antibodies. (D–F) High-resolution micrographs of immunogold labeled, silver-enhanced gold particles (arrows), and unenhanced ultra small gold particles (arrowheads) Scale bar: (A-C) 1 μm; (D–F) 200 nm. High-resolution images are available in (Shahidi, et al., 2015).DOI: http://dx.doi.org/10.7554/eLife.11147.005
+**Figure 2.:** (A) Representative micrographs with immunogold labeled axons for the neuropeptide antibodies indicated. For the FVa neuropeptide antibody, five adjacent sections are shown (FVa Layer 1–5). (B, C) Neurite-specific labeling in adjacent sections (seven sections apart) labeled with different antibodies. (D–F) High-resolution micrographs of immunogold labeled, silver-enhanced gold particles (arrows), and unenhanced ultra small gold particles (arrowheads) Scale bar: (A-C) 1 μm; (D–F) 200 nm. High-resolution images are available in (Shahidi, et al., 2015).
 
-Next, we comprehensively scored the distribution of gold particles in the VNC series (
+Next, we comprehensively scored the distribution of gold particles in the VNC series (Figure 3). We selected all neurites that were labeled with two or more gold particles in any of the immunoEM sections and traced these neurites across all sections. We also selected 50 control neurites along a coronal transect spanning the VNC and traced these across all sections (Figure 3A). We then counted all gold particles in each traced neurite and tabulated the results (Figure 3—source data 1). The gold particles were also summed for each antibody to show a concise summary of all gold labels (Figure 3B and D). Since not all ultra-small gold particles were enhanced during silver-enhancement (Figure 2D–F) and non-enhanced particles are not visible on the lower resolution images we used for scoring, the gold counts likely underestimate the intensity of gold labeling.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig3-v2.jpg)
 
-**Figure 3.:** Platynereis specimen (HT9-5).(A, C) Anterior view of EM cross-section through the VNC near the first commissure. Dorsal side of larva is to the top. Strongly labeled neurites were analyzed across the whole VNC region. Control axon profiles were analyzed along a transect (dotted line), two axon profiles were sampled every 1 μm. Total of 72 and 63 axons were examined for the first and second series of sections respectively (an approximately 10-section gap occurs between the two series). Colored cell profiles indicate gold labeled neuropeptidergic axons. Different shades of a color represent an approximation of labeling intensity. Positive axons are tagged with neuron number, neuropeptide name, and total number of gold particles per total number of layers for that neuropeptide. (B, D) Tables show number of gold particles per axon for each neuropeptide. All strongly labeled axons across the VNC and control axons along the sampled transect are shown. Data were arranged according to the spatial distribution of the corresponding neurites in the VNC. Each sampled axon was traced across all layers and counted for its total number of gold particles. Columns indicate neurons and an ID with ‘n’ is given to each neuron in the first series of sections and ‘N’ for neurons in the second series of sections. Rows indicate neuropeptide immunogold labels. Different shades of the same color indicate intensity of gold labeling. Totals are shown for each row (neuropeptide) and each column (axon profile). In the final column of each table, the total number of layers stained for each neuropeptide is shown. Scale bar: 5 μm. Gold scores are available in Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.11147.00610.7554/eLife.11147.007Figure 3—source data 1.(Sheet 1) Detailed gold counts throughout all layers analyzed from the HT9-5 specimen. (Sheet 2) Tabulated data shown in  Figure 3B,D. (Sheet 3) DCV counts and gold counts in selected neurites.DOI: http://dx.doi.org/10.7554/eLife.11147.007
+**Figure 3.:** (A, C) Anterior view of EM cross-section through the VNC near the first commissure. Dorsal side of larva is to the top. Strongly labeled neurites were analyzed across the whole VNC region. Control axon profiles were analyzed along a transect (dotted line), two axon profiles were sampled every 1 μm. Total of 72 and 63 axons were examined for the first and second series of sections respectively (an approximately 10-section gap occurs between the two series). Colored cell profiles indicate gold labeled neuropeptidergic axons. Different shades of a color represent an approximation of labeling intensity. Positive axons are tagged with neuron number, neuropeptide name, and total number of gold particles per total number of layers for that neuropeptide. (B, D) Tables show number of gold particles per axon for each neuropeptide. All strongly labeled axons across the VNC and control axons along the sampled transect are shown. Data were arranged according to the spatial distribution of the corresponding neurites in the VNC. Each sampled axon was traced across all layers and counted for its total number of gold particles. Columns indicate neurons and an ID with ‘n’ is given to each neuron in the first series of sections and ‘N’ for neurons in the second series of sections. Rows indicate neuropeptide immunogold labels. Different shades of the same color indicate intensity of gold labeling. Totals are shown for each row (neuropeptide) and each column (axon profile). In the final column of each table, the total number of layers stained for each neuropeptide is shown. Scale bar: 5 μm. Gold scores are available in Figure 3—source data 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Number of DCVs scored along 100 layers in selected neurites in the HT9-5 dataset. The gold counts for the corresponding profiles are shown in Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.11147.008
+**Figure 3—figure supplement 1.:** Number of DCVs scored along 100 layers in selected neurites in the HT9-5 dataset. The gold counts for the corresponding profiles are shown in Figure 3—source data 1.
 
 Our quantifications revealed a high neurite-specificity of immunogold labeling with all 11 neuropeptide antibodies (Figure 3). In sections where we omitted the primary antibody, we did not see any gold labeling in any of the traced neurites (Figure 3B). The VNC in our sample contained approximately 1600 neurite cross-sections and the majority of these showed no gold labeling. However, for each antibody we could identify a small number of neurites that consistently showed strong labeling across different sections (Figure 3, Figure 3—source data 1). The pattern of the labeled neurites in the VNC showed bilateral symmetry, supporting the labeling of specific peptidergic neuron populations on the left and right sides of the body. Most neurites that were labeled on one grid were also strongly labeled on their grid pair with the same antibody separated by approximately 50 sections. There were some exceptions, for example neurite n5 that was labeled strongly with the FVamide antibody in layers 18–23 but not in layers 69–74 (Figure 3—source data 1). To determine whether the lack of labeling was due to the lack of DCVs in these sections, we scored the number of DCVs across all sections for selected neurites (Figure 3—figure supplement 1). We found that DCVs were non-uniformly distributed in the neurites and some sections completely lacked DCVs. Importantly, we only detected gold labeling on sections that contained DCVs in the respective neurite (Figure 3—source data 1).
 
@@ -71,65 +144,264 @@ siGOLD also allowed us to detect the coexpression of some neuropeptides in the s
 
 To test whether the antibodies specifically recognize the neuropeptides used for immunization, we performed morpholino-mediated knockdown experiments of proneuropeptide expression. The specificity of the MIP antibody was demonstrated previously (Williams et al., 2015). We performed microinjections with 10 different translation-blocking morpholinos, one targeting each remaining proneuropeptide. We then performed triple IF in whole-mount 72 hpf larval samples using an acetylated tubulin antibody, a rat FVa antibody, and the respective rabbit neuropeptide antibodies. The acetylated tubulin antibody allowed us to exclude developmental abnormalities caused by morpholino injection. The rat FVa antibody provided a further control to exclude that morpholino injection affected proneuropeptide processing in general. For 8 out of 10 antibodies (FVa, FMRFa, ATO, FVRIa, PDF, RGWa, PENK, LEUC), morpholino injection strongly reduced IF signal with the respective antibody (Figure 4—figure supplement 1). For the FMRFa antibody, we did not detect staining in the VNC following morpholino injection but we could still detect staining in the head. The FMRFa antibody therefore likely recognizes other antigens, such as other RFa peptides in the head (Conzelmann et al., 2013b). For the RYa and LUQ antibodies, we did not see a reduction in staining intensity in the VNC following morpholino injection. These two antibodies may cross-react with other R[Y F]amide peptides as suggested by the labeling of an overlapping set of neurites with the FMRFa, LUQ, and RYa antibodies (Figure 3). Without knowing the exact antigen specificity for these antibodies, we can nevertheless use them as specific markers of R[Y|F]amidergic neurons.
 
-## Comparison of siGOLD labeling to whole-mount immunofluorescence
+### Comparison of siGOLD labeling to whole-mount immunofluorescence
 
-siGOLD labeling of consecutive sections with 11 antibodies revealed the arrangement of several peptidergic neurites in the VNC (
+siGOLD labeling of consecutive sections with 11 antibodies revealed the arrangement of several peptidergic neurites in the VNC (Figure 3). To test if this spatial arrangement is consistent between siGOLD and IF labeling of whole specimens, we analyzed the labeling with all 11 antibodies in whole-mount Platynereis 72 hpf larval samples. All antibodies labeled subsets of longitudinal axons spanning the entire length of the VNC and occurring in different mediolateral positions (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig4-v2.jpg)
 
-**Figure 4.:** Platynereis larvae with antibodies raised against neuropeptides labels distinct subsets of neuronal tracks in the VNC.(A) Ventral view of Platynereis VNC, stained with an anti-acetylated tubulin antibody. This is the registered average VNC generated from scans of 36 larvae. (B–L) Whole-mount IF of Platynereis larvae with an antibody raised against (B) FVa, (C) RGWa, (D) FVRIa, (E) RYa, (F) PDF, (G) LEUC, (H) LUQ, (I) MIP, (J) ATO, (K) PENK, (L) FMRFa. Whole-mount scans were cropped to show only the VNC region. Scale bar: 20 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.009
+**Figure 4.:** (A) Ventral view of Platynereis VNC, stained with an anti-acetylated tubulin antibody. This is the registered average VNC generated from scans of 36 larvae. (B–L) Whole-mount IF of Platynereis larvae with an antibody raised against (B) FVa, (C) RGWa, (D) FVRIa, (E) RYa, (F) PDF, (G) LEUC, (H) LUQ, (I) MIP, (J) ATO, (K) PENK, (L) FMRFa. Whole-mount scans were cropped to show only the VNC region. Scale bar: 20 μm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Whole-mount IF of 72 hpf uninjected control Platynereis larvae and larvae micro-injected with translation-blocking morpholinos (MOs) targeting different neuropeptide precursor genes. FVa-knockdown and control larvae were stained with an antibody raised against FVa and counterstained with acetylated tubulin. All other control and knockdown larvae were co-stained with an antibody raised against FVa and an antibody raised against the MO target peptide indicated and counterstained with acetylated tubulin. All larvae are shown in ventral view. For each neuropeptide, three control larvae (top) and three MO-knockdown larvae (bottom) are shown. (A) FVa knockdown and control larvae with antibody raised against FVa. (B) FMRFa knockdown and control larvae with antibody raised against FMRFa. (C) LUQ knockdown and control larvae with antibody raised against LUQ. (D) ATO knockdown and control larvae with antibody raised against ATO. (E) FVRIa knockdown and control larvae with antibody raised against FVRIa. (F) PDF knockdown and control larvae with antibody raised against PDF. (G) RGWa knockdown and control larvae with antibody raised against RGWa. Note that the staining in the head is eliminated following knockdown. The staining in the VNC was too weak in these samples. (H) RYa knockdown and control larvae with antibody raised against RYa. (I) PENK knockdown and control larvae with antibody raised against PENK. (J) LEUC knockdown and control larvae with antibody raised against LEUC. Scale bar: 30 µm.DOI: http://dx.doi.org/10.7554/eLife.11147.010
+**Figure 4—figure supplement 1.:** Whole-mount IF of 72 hpf uninjected control Platynereis larvae and larvae micro-injected with translation-blocking morpholinos (MOs) targeting different neuropeptide precursor genes. FVa-knockdown and control larvae were stained with an antibody raised against FVa and counterstained with acetylated tubulin. All other control and knockdown larvae were co-stained with an antibody raised against FVa and an antibody raised against the MO target peptide indicated and counterstained with acetylated tubulin. All larvae are shown in ventral view. For each neuropeptide, three control larvae (top) and three MO-knockdown larvae (bottom) are shown. (A) FVa knockdown and control larvae with antibody raised against FVa. (B) FMRFa knockdown and control larvae with antibody raised against FMRFa. (C) LUQ knockdown and control larvae with antibody raised against LUQ. (D) ATO knockdown and control larvae with antibody raised against ATO. (E) FVRIa knockdown and control larvae with antibody raised against FVRIa. (F) PDF knockdown and control larvae with antibody raised against PDF. (G) RGWa knockdown and control larvae with antibody raised against RGWa. Note that the staining in the head is eliminated following knockdown. The staining in the VNC was too weak in these samples. (H) RYa knockdown and control larvae with antibody raised against RYa. (I) PENK knockdown and control larvae with antibody raised against PENK. (J) LEUC knockdown and control larvae with antibody raised against LEUC. Scale bar: 30 µm.
 
-To display the spatial relationships of 11 distinct IF labels, we employed image registration to a reference template of whole-body confocal scans. High-accuracy image registration of different specimens is possible in
+To display the spatial relationships of 11 distinct IF labels, we employed image registration to a reference template of whole-body confocal scans. High-accuracy image registration of different specimens is possible in Platynereis, due to the stereotypic anatomy and neuronal connectivity of the larvae (Asadulina et al., 2012; Randel et al., 2015; Tomer et al., 2010). For optimal VNC registration, we generated an unbiased average whole-body reference template based on the non-rigid registration of the acetylated tubulin IF signal from 36 specimens. We aligned whole-body confocal scans of IF specimens to this reference using non-rigid image registration (Figure 5A,B; Video 1). We then took virtual cross sections from this registered dataset to analyze the spatial relationships of distinct peptidergic axons (Figure 5C–E). The arrangement of peptidergic axons in the VNC reconstructed by IF and image registration was similar to that of the VNC reconstructed by siGOLD (Figure 5F–H). To allow a more direct comparison of the spatial relationship of peptidergic axons, we performed double IF with each of the RGWa, PDF, and LEUC antibodies generated in rabbits in combination with a FVa antibody generated in rats. The spatial relationships of the neurites labeled with the RGWa, PDF, and LEUC antibodies relative to six prominent FVa neurites was very similar between IF and siGOLD (Figure 5I,J). We could also detect the coexpression of FVa and PDF in some axons, both by double-IF and siGOLD. The high specificity of immunoEM, the reproducibility of labeling across sections, and the spatial correspondence of the labels between siGOLD and whole-mount IF indicate that we could accurately identify different peptidergic neurites in a serial EM dataset.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Ventral overview of individual registered full-body IF with antibodies raised against 11 different neuropeptides (colors). Image is cropped to show only the VNC in the first segment. White dashed box indicates the region where a 5 μm virtual transverse section shown in (C–E) was taken. (C–E) 5 μm virtual transverse section of individual registered full-body IFs from (A, B) in anterior view to indicate their spatial position in the VNC relative to each other. (C) RGWa, FVa, PENK, MIP, (D) FVRIa, PDF, LUQ, FMRFa (E) RYa, LEUC, ATO. (F) Schematic overview of (C–E) indicating relative positioning of individual registered antibody stainings in the VNC, anterior view. (G, H) Reconstruction of neurites labeled by siGOLD in the VNC of specimen HT9-5 with antibodies raised against 11 different neuropeptides, (G) anterior view, (H) ventral view. For comparison with registered IF labeling in (A–F). (I) Position of neurites in specimen HT9-5 siGOLD-labeled with FVa and RGWa (top), FVa and PDF (middle), and FVa and LEUC antibodies (bottom). For comparison with double-IF in (J). (J) 2 μm virtual transverse sections of the VNC of 72 hpf Platynereis larvae double-stained with the FVa antibody (orange) and the RGWa (yellow, top), the PDF (blue, middle) or the LEUC (brown, bottom) antibodies. Scale bars: (A–E) 15 μm, (F–J) 5 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.01110.7554/eLife.11147.012Figure 5—source data 1.The reference is based on the registration and averaging of the acetylated tubulin signal from 36 whole-body confocal stacks. The file is a mult-image TIFF stack and can be opened e.g. with Fiji or ImageJ. DOI: http://dx.doi.org/10.7554/eLife.11147.012
+**Figure 5.:** (A, B) Ventral overview of individual registered full-body IF with antibodies raised against 11 different neuropeptides (colors). Image is cropped to show only the VNC in the first segment. White dashed box indicates the region where a 5 μm virtual transverse section shown in (C–E) was taken. (C–E) 5 μm virtual transverse section of individual registered full-body IFs from (A, B) in anterior view to indicate their spatial position in the VNC relative to each other. (C) RGWa, FVa, PENK, MIP, (D) FVRIa, PDF, LUQ, FMRFa (E) RYa, LEUC, ATO. (F) Schematic overview of (C–E) indicating relative positioning of individual registered antibody stainings in the VNC, anterior view. (G, H) Reconstruction of neurites labeled by siGOLD in the VNC of specimen HT9-5 with antibodies raised against 11 different neuropeptides, (G) anterior view, (H) ventral view. For comparison with registered IF labeling in (A–F). (I) Position of neurites in specimen HT9-5 siGOLD-labeled with FVa and RGWa (top), FVa and PDF (middle), and FVa and LEUC antibodies (bottom). For comparison with double-IF in (J). (J) 2 μm virtual transverse sections of the VNC of 72 hpf Platynereis larvae double-stained with the FVa antibody (orange) and the RGWa (yellow, top), the PDF (blue, middle) or the LEUC (brown, bottom) antibodies. Scale bars: (A–E) 15 μm, (F–J) 5 μm.
 
-## Application of siGOLD to a whole-body connectome dataset
+![Video 1.](https://cdn.elifesciences.org/articles/11147/elife-11147-media1.mp4.jpg)
+
+**Video 1.:** Ventral view of 72 hpf Platynereis. VNC (grey) of average whole-body reference template stained with acetylated tubulin, generated from scans of 36 individuals. Onto this reference scaffold, we project individual registered immunostaining patterns generated by the different neuropeptide antibodies. In order of appearance: FVa (orange), RGWa (yellow), LEUC (brown), FVRIa (lavender), RYa (forest green), LUQ (magenta), MIP (aqua), ATO (sky blue), FMRFa (lime green), PENK (red), PDF (royal blue).
+
+### Application of siGOLD to a whole-body connectome dataset
 
 Next, we tested siGOLD on a whole-body EM series of 5056 sections encompassing an entire 72 hpf Platynereis larva (specimen HT9-4) (Randel et al., 2015). During sectioning of this larva, we set aside series of 1–6 sections for later immunoEM (Figure 6—source data 1).
 
-In the full-body series, we used the 11 rabbit antibodies (
+In the full-body series, we used the 11 rabbit antibodies (Table 1) to label a total of 154 sections (3% of all sections) distributed along the length of the larva (Figure 6A). We used at least two grids for each antibody, separated by up to 1000 sections. Gold labeling in a whole-body context allowed us to identify several strongly labeled neurite profiles throughout the body. It is worth noting that sections were successfully gold labeled up to 3 years after sectioning the specimen, demonstrating the long-term stability of neuropeptide antigens in Epon sections.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic of the HT9-4 specimen showing the position of the VNC (grey), ventral view. The entire larva was fully sectioned and imaged. Colored lines indicate the position of sections that were used for immunolabeling. For each line, layer number(s) followed by the name of the neuropeptide that was immunogold-labeled in those layers are indicated. (B) Ventral and anterior views of all fully traced immunogold-labeled peptidergic neurons. Detailed layer information is available in Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.11147.01410.7554/eLife.11147.015Figure 6—source data 1.The table is updated from ( Randel et al., 2015) with the information on all immunoEM layers.DOI: http://dx.doi.org/10.7554/eLife.11147.015
+**Figure 6.:** (A) Schematic of the HT9-4 specimen showing the position of the VNC (grey), ventral view. The entire larva was fully sectioned and imaged. Colored lines indicate the position of sections that were used for immunolabeling. For each line, layer number(s) followed by the name of the neuropeptide that was immunogold-labeled in those layers are indicated. (B) Ventral and anterior views of all fully traced immunogold-labeled peptidergic neurons. Detailed layer information is available in Figure 6—source data 1.
 
-We identified and traced 83 neurons (67 of them with a soma;
+We identified and traced 83 neurons (67 of them with a soma; Figure 6B; Video 2) with different peptidergic identities. We mapped the distribution of peptidergic axons crossing a section in the first trunk segment in a position comparable to that of HT9-5 and found similar patterns across both siGOLD-labeled larvae and the IF samples (Figure 7A,B; compare to Figure 5). For selected neurons, we quantified the number of gold particles in every immunolabeled section in HT9-4 (Figure 8, Figure 9). These counts again demonstrated that we could repeatedly label the same neurons in different sections, often spaced several hundred sections apart.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig7-v2.jpg)
 
-**Figure 7.:** (A) TEM image of a VNC cross-section with the segmented profiles of peptidergic neurites identified by siGOLD. Different colors represent different neuropeptide-antibody labeling. (B) Segmented profiles of peptidergic axons in a cross-section through the VNC near the base of the circumesophageal connectives at the first commissure. All traced neuropeptidergic axons crossing the VNC at that level in the HT9-4 specimen are shown. Scale bar: (B) 5 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.016
+**Figure 7.:** (A) TEM image of a VNC cross-section with the segmented profiles of peptidergic neurites identified by siGOLD. Different colors represent different neuropeptide-antibody labeling. (B) Segmented profiles of peptidergic axons in a cross-section through the VNC near the base of the circumesophageal connectives at the first commissure. All traced neuropeptidergic axons crossing the VNC at that level in the HT9-4 specimen are shown. Scale bar: (B) 5 μm.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig8-v2.jpg)
 
-**Figure 8.:** (A, G) Full body IF labeling of FVa and PDF-positive cells, ventral view and anterior view, respectively. Note that (A) is 72 hpf and (G) is 48 hpf. Arrowheads point to neuron cell-bodies that were traced in EM reconstructions. (B–F, H–L) Fully reconstructed neurons, identified using the siGOLD method in the full body HT9-4 dataset. Dashed arrows indicate immunogold labeled layers along the neurite, layer number(s) and number of gold particles per layer are shown. Reconstructed FVa (B–F) and PDF (H–L) positive cells. Scale bars: (A) 50 μm; (G) 30 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.017
+**Figure 8.:** (A, G) Full body IF labeling of FVa and PDF-positive cells, ventral view and anterior view, respectively. Note that (A) is 72 hpf and (G) is 48 hpf. Arrowheads point to neuron cell-bodies that were traced in EM reconstructions. (B–F, H–L) Fully reconstructed neurons, identified using the siGOLD method in the full body HT9-4 dataset. Dashed arrows indicate immunogold labeled layers along the neurite, layer number(s) and number of gold particles per layer are shown. Reconstructed FVa (B–F) and PDF (H–L) positive cells. Scale bars: (A) 50 μm; (G) 30 μm.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig9-v2.jpg)
 
-**Figure 9.:** (A, C) Full body IF labeling of RGWa and MIP-positive cells in 72 hpf larvae, anterior views. Arrowheads point to neurons that were traced in EM reconstructions. (B, D) Traced neurons, identified using the siGOLD method in the full body HT9-4 dataset. Dashed arrows indicate immunogold-labeled layers along the neurite, layer number(s) and the number of gold particles per layer are shown. Reconstructed RGWa (B) and MIP (D) positive cells. Scale bars: (A, C) 30 μm.DOI: http://dx.doi.org/10.7554/eLife.11147.018
+**Figure 9.:** (A, C) Full body IF labeling of RGWa and MIP-positive cells in 72 hpf larvae, anterior views. Arrowheads point to neurons that were traced in EM reconstructions. (B, D) Traced neurons, identified using the siGOLD method in the full body HT9-4 dataset. Dashed arrows indicate immunogold-labeled layers along the neurite, layer number(s) and the number of gold particles per layer are shown. Reconstructed RGWa (B) and MIP (D) positive cells. Scale bars: (A, C) 30 μm.
 
-The reconstruction of several neurons in the whole-body serial EM dataset allowed us to further test the specificity of the immunogold labels by comparing the morphology and position of reconstructed neurons to neurons that were identified by whole-body IF. We found comparable cellular morphologies and positions for six FVa, several PDF (Figure 8), two RGWa, and four MIP neurons (Figure 9) between siGOLD and IF. This close anatomical correspondence further supports the specificity of siGOLD and demonstrates that the method can be used to unambiguously tag fully reconstructed neurons in serial EM.10.7554/eLife.11147.019Video 2.3D view of the 72 hpf HT9-4 larva showing fully-traced peptidergic neurons identified by siGOLD.Ventral view of the 72 hpf Platynereis siGOLD-tagged peptidergic neurons are shown in the following colors: FVa (orange), RGWa (yellow), LEUC (brown), FVRIa (lavender), RYa (forest green), LUQ (magenta), MIP (aqua), ATO (sky blue), FMRFa (lime green), PENK (red), PDF (royal blue). Other non-labeled traced neurons (grey) provide the outline of the larva.DOI: http://dx.doi.org/10.7554/eLife.11147.019
+The reconstruction of several neurons in the whole-body serial EM dataset allowed us to further test the specificity of the immunogold labels by comparing the morphology and position of reconstructed neurons to neurons that were identified by whole-body IF. We found comparable cellular morphologies and positions for six FVa, several PDF (Figure 8), two RGWa, and four MIP neurons (Figure 9) between siGOLD and IF. This close anatomical correspondence further supports the specificity of siGOLD and demonstrates that the method can be used to unambiguously tag fully reconstructed neurons in serial EM.
 
-## Connectome reconstruction of a siGOLD-labeled peptidergic circuit
+![Video 2.](https://cdn.elifesciences.org/articles/11147/elife-11147-media2.mp4.jpg)
 
-The whole-body serial EM dataset combined with siGOLD labeling allows the reconstruction of circuits of neurons with specific peptidergic identities. To demonstrate this, we focused on the nuchal organs in the
+**Video 2.:** Ventral view of the 72 hpf Platynereis siGOLD-tagged peptidergic neurons are shown in the following colors: FVa (orange), RGWa (yellow), LEUC (brown), FVRIa (lavender), RYa (forest green), LUQ (magenta), MIP (aqua), ATO (sky blue), FMRFa (lime green), PENK (red), PDF (royal blue). Other non-labeled traced neurons (grey) provide the outline of the larva.
+
+### Connectome reconstruction of a siGOLD-labeled peptidergic circuit
+
+The whole-body serial EM dataset combined with siGOLD labeling allows the reconstruction of circuits of neurons with specific peptidergic identities. To demonstrate this, we focused on the nuchal organs in the Platynereis larval head as an example. The nuchal organ is a paired putative chemosensory organ in the annelid head with sensory neurons projecting a sensory dendrite into an olfactory pit. The olfactory pit is covered by cuticle and is associated with a patch of motile cilia (Figure 10A–C; Video 3) (Purschke, 2005). We found that several sensory neurons of the nuchal organs (SNnuch) were strongly labeled by the PDF antibody in three different PDF-labeled sections in the head (Figure 6A; Table 2). Of the 35 SNnuch cells we identified, 15 were labeled with the PDF antibody, with some of the neurons showing strong gold labeling in multiple sections (Table 2). This is consistent with the labeling of the nuchal organ with the PDF antibody in IF (Figure 8G). We traced all SNnuch neurons and identified their direct postsynaptic targets. We found that the most strongly connected neurons, receiving up to 22 synapses from SNnuch cells, were two pairs of interneurons (INarc) with a unique biramous morphology and contralaterally projecting axons (Figure 10D–F; Figure 10—figure supplement 1; Video 4). Two of the INarc neurons were previously shown to be postsynaptic to the photoreceptor cells of the larval eyespots and have connections to the ventral motorneurons (Randel et al., 2015). This represents a potential functional path linking the nuchal organs to the locomotor apparatus. We also identified several other neurons that received a few synapses from the SNnuch cells, including two interneurons (INRGWa-dcr1, INRGWa-dcl1) that were identified by siGOLD labeling to express the RGWa neuropeptide (Figure 9A,B). Additionally, 87 neurons received only one synapse from one of the SNnuch cells (Figure 10—figure supplement 2). The strong connectivity of the INarc cells to the nuchal organ relative to these other neurons suggests that the INarc cells represent the functionally relevant targets in the circuit.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig10-v2.jpg)
 
-**Figure 10.:** (A, B) SEM image of the nuchal organs (arrowhead) in the dorsal-posterior head of a 72 hpf Platynereis larva, dorsal view. Boxed area is shown enlarged in (B). Arrowheads point at motile cilia above the olfactory pit. (C) TEM image of a cross section of the nuchal organ showing the olfactory pit with sensory neurons and microvilli. Arrowheads point at sensory cilia. Sensory endings in the olfactory pit are highlighted in magenta, an epithelial cell underneath the cuticle is highlighted in blue. (D) 3D reconstruction of the nuchal organ circuit. SNnuch neurons (red), and INarc (orange) interneurons are shown. The photoreceptor cells of the adult eyes are shown in blue as a reference. (E, F) 3D reconstruction of INarc (orange) interneurons. (G) Graph representation of SNnuch connectivity. Nodes represent neurons or groups of neurons, edges represent synaptic connections. The number of synapses is indicated on each arrow. Edge thickness is proportional to the square root of the number of synapses. (H, I) Presynaptic sites (red dots) in SNnuch neurons and adult-eye photoreceptor cells (PRC) with their soma on the right (H) or left (I) side of the body. (J, K) Peptidergic synapses in SNnuch neurons. (L) A glutamatergic synapse in an adult eye photoreceptor cell. Scale bar: (A) 30 μm; (C) 1 μm; (L) 150 nm.DOI: http://dx.doi.org/10.7554/eLife.11147.020
+**Figure 10.:** (A, B) SEM image of the nuchal organs (arrowhead) in the dorsal-posterior head of a 72 hpf Platynereis larva, dorsal view. Boxed area is shown enlarged in (B). Arrowheads point at motile cilia above the olfactory pit. (C) TEM image of a cross section of the nuchal organ showing the olfactory pit with sensory neurons and microvilli. Arrowheads point at sensory cilia. Sensory endings in the olfactory pit are highlighted in magenta, an epithelial cell underneath the cuticle is highlighted in blue. (D) 3D reconstruction of the nuchal organ circuit. SNnuch neurons (red), and INarc (orange) interneurons are shown. The photoreceptor cells of the adult eyes are shown in blue as a reference. (E, F) 3D reconstruction of INarc (orange) interneurons. (G) Graph representation of SNnuch connectivity. Nodes represent neurons or groups of neurons, edges represent synaptic connections. The number of synapses is indicated on each arrow. Edge thickness is proportional to the square root of the number of synapses. (H, I) Presynaptic sites (red dots) in SNnuch neurons and adult-eye photoreceptor cells (PRC) with their soma on the right (H) or left (I) side of the body. (J, K) Peptidergic synapses in SNnuch neurons. (L) A glutamatergic synapse in an adult eye photoreceptor cell. Scale bar: (A) 30 μm; (C) 1 μm; (L) 150 nm.
 
 ![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig10-figsupp1-v2.jpg)
 
-**Figure 10—figure supplement 1.:** nuch and INarc neurons.(A, D) Four examples of SNnuch sensory neurons with the presynaptic (red) and postsynaptic sites shown. (E, H) Morphology of the four INarc interneurons with the presynaptic (red) and postsynaptic sites shown.DOI: http://dx.doi.org/10.7554/eLife.11147.021
+**Figure 10—figure supplement 1.:** (A, D) Four examples of SNnuch sensory neurons with the presynaptic (red) and postsynaptic sites shown. (E, H) Morphology of the four INarc interneurons with the presynaptic (red) and postsynaptic sites shown.
 
 ![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/11147/elife-11147-fig10-figsupp2-v2.jpg)
 
-**Figure 10—figure supplement 2.:** nuch cells to all postsynaptic targets.All postsynaptic targets of the SNnuch neurons are listed.DOI: http://dx.doi.org/10.7554/eLife.11147.022
+**Figure 10—figure supplement 2.:** All postsynaptic targets of the SNnuch neurons are listed.
+
+**Table 2.**
+ Number of gold particles in SNnuch neurons in three layers labeled with the PDF antibody.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Layer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Layer</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SNnuch</td>
+      <td>703</td>
+      <td>723</td>
+      <td>787</td>
+      <td>SNnuch</td>
+      <td>703</td>
+      <td>723</td>
+      <td>787</td>
+    </tr>
+    <tr>
+      <td>r1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>l1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>r3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>l4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l6</td>
+      <td>0</td>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>r7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>r8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>l8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>r9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r12</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>l12</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r13</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>l13</td>
+      <td>9</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>r14</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l14</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>r15-r20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>l15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Number of gold particles in SNnuch neurons identified in three different immunogold layers labeled with the PDF antibody in all SNnuch sensory neurons._
+
+![Video 3.](https://cdn.elifesciences.org/articles/11147/elife-11147-media3.mp4.jpg)
+
+**Video 3.:** Reconstruction of the nuchal organ from the dorsal head of the 72 hpf Platynereis larva dataset HT9-4. The nuchal organ consists of three multiciliated cells and 16 sensory cells which project a sensory cilium and branching microvilli into an olfactory pit just below the cuticular layer.
+
+![Video 4.](https://cdn.elifesciences.org/articles/11147/elife-11147-media4.mp4.jpg)
+
+**Video 4.:** The nuchal organ sensory cells (SNnuch, red) connect to two pairs of INarc interneurons (orange). The adult eye photoreceptors (dark blue) are shown for reference. Several other neurons are shown in pale grey to highlight the shape of the larval nervous system.
 
 Mapping the position of presynaptic sites of SNnuch cells revealed that these cells form synapses bilaterally (Figure 10 H, I). This is in contrast to the adult eye photoreceptor cells that only form ipsilateral synapses (Figure 10 H, I) (Randel et al., 2014).
 
@@ -161,35 +433,35 @@ The direct overlaying of chemical neuromodulatory maps onto synaptic connectomic
 
 ## Materials and methods
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Fixation and embedding was carried out on 72 hpf Platynereis larvae (HT9-4 and HT9-5) as described previously (Conzelmann et al., 2013a). Forty nanometer serial sections were cut on a Reichert Jung Ultracut E microtome using a 45º DiATOME Diamond knife. The sections were collected on single-slotted copper grids (NOTCH-NUM 2_1 mm, Science Service, Munich) with Formvar support film. For the HT9-5 serial sections, the samples were collected on single-slotted nickel grids coated with Formvar support film. The ribbons of sections were picked up from underneath and on the under-side (the notch side) of the grids. This method allowed the section ribbons to stay afloat and stretch while being dried in the oven, eliminating most wrinkles from the sections. The section statistics for the HT9-4 specimen (or NAOMI) were previously described (Randel et al., 2015) and an updated table with the immunoEM information is shown in Figure 6—source data 1. For HT9-5, 200 sections were cut from the VNC (first segment) and imaged for tracing, segmentation and analysis.
 
-## Grid handling
+### Grid handling
 
 To meet the demand for consistent section processing in large-scale serial reconstruction projects, we have developed an effective method of grid handling based on a method first described in Rowley and Moran (1975). The following method has proven safe for contrast staining, immunolabeling, and carbon coating. It stabilizes the grids during the staining procedures and saves time by eliminating the need for one-by-one grid manipulation.
 
 A 6 × 12 hole microwell mini tray plate (NUNC™ Brand MicroWell® Mini Trays) was cut into two 3 × 12 hole plate strips. Holes were drilled through each of the plate’s micro-cups using a fine drill to later allow the plastic support film to dry evenly on both sides. Plates were rinsed with 75% ethanol, followed by distilled water, then sonicated to eliminate dust and burr particles. This procedure produced two lightweight plates similar to that described in Rowley and Moran (1975) with the additional benefit of 'raised', separated walls. This approach prevents cross-contamination by diffusion of solutions during the staining and labeling procedures. A strip of Formvar support film was used to coat the microwell mini plate on the topside of the plate. A small water droplet (10 µl) was placed on each hole of the plate on the support film using a filtered syringe. A grid containing previously cut sections was placed (sections facing up) on each droplet and dried in the 50ºC oven until the grids and the plastic support film had fused. Grids were then ready for immunolabeling and contrast staining by inverting and matching to the micro-cups of a full mini tray with desired solutions (Figure 1A – Mini tray).
 
-## Contrasting
+#### Contrasting
 
 Dried sections were contrast stained with drops of 2% aqueous uranyl acetate for 6 min. Grids were washed by gently lowering the entire plate into a clean glass beaker of filtered distilled water. Excess water was wicked away with filter paper, and the grids were dried at 50°C for 1–2 min. Next, the grids were stained with drops of Sato’s triple lead stain (Hanaichi et al., 1986) for 4 min. Grids were washed and dried as described above and dried at 50°C for 1 min. Grids were then carbon coated before being imaged with a FEI TECNAI Spirit electron microscope.
 
-## Immunogold silver-enhancement method
+### Immunogold silver-enhancement method
 
 For immunoEM, we have eliminated the etching step prior to primary antibody incubation. We have observed that the treatment with the etching solution destroys ultrastructural integrity. In our technique, the use of sheep serum and bovine serum albumin mixed with Tween-20 at pH of 7.9 greatly enhanced the immunogold signal.
 
 The following protocol was performed over a 1-day period and is an optimized version of a protocol by Stierhof (Stierhof et al., 1991) for Epon-embedded sections. All incubations up to the silver enhancement point were done in the TBST-BGN (Tris buffer saline with Tween-20, BSA, Fish Gelatin and Normal Sheep Serum, pH 7.9; see section below on preparing the buffer). First, sections were blocked with TBST-BGN for 10 min; blocked sections were then incubated with primary antibody (1:25 dilution) in TBST-BGN for 2 hr. Grids were washed twice with TBST-BGN for 5 min, and then incubated with secondary goat anti-rabbit IgG antibody with gold conjugates (AURION Ultra Small Immunogold Reagents; size 0.8 nm) at 1:50 dilution for 1 hr. Grids were then washed with TBST-BGN twice for 5 min, then washed twice with filtered distilled water for 5 min, followed by fixation with 1% glutaraldehyde in filtered distilled water for 5 min. Sections were washed in filtered distilled water twice for 5 min. Silver enhancement was applied with Aurion silver-enhancement kit for up to 47 min. The time interval of silver enhancement was dependent on temperature and concentration of the silver-enhancement solution. Gold size growth was approximately 15–20 nm within this time interval, a size appropriate for observation of gold particles in EM. Silver enhancement was stopped with three 3-min washes in filtered distilled water. Excess water was gently wicked from the back of the plate and individual holes with wedges of Whatman filter paper. Grids were dried in a 50°C oven and then contrasted (see above).
 
-## Preparation of blocking and wash buffer solution
+### Preparation of blocking and wash buffer solution
 
 Buffer concentration and consistency is very important in immunological reactions. We compared many protocols to achieve the best buffer for our experiments. We found that a saline buffer with Tris, Tween, bovine serum albumin (BSA), fish Gelatin, and normal serum (TBST-BGN), worked well. Our solutions were always freshly prepared on the day of the experiment. To prepare the buffer for immunoEM, three separate solutions were made: (1) 0.61 g Trizma, 0.90 g NaCl, and 70 ml of distilled water, (2) 1.0 g of BSA, 1.5 ml normal sheep serum, 500 µl Tween-20, and 20 ml distilled water, and (3) 0.01 g of fish Gelatin and 10 ml of distilled water. Solution 3 was heated to dissolve and then cooled before being added to solutions 1 and 2. Finally, solutions 1–3 were combined and gently mixed. The buffer solution was then adjusted to pH of 7.9 using 1 M HCl and syringe filtered with a 0.45 µm filter.
 
-## Imaging and post-processing
+### Imaging and post-processing
 
 Image acquisition of TEM serial sections was performed on a FEI TECNAI Spirit transmission electron microscope equipped with an UltraScan 4000 4X4k digital camera using the image acquisition software Digital Micrograph (Gatan Software Team Inc., Pleasanton) and SerialEM (Mastronarde, 2005). The images for the HT9-4 and HT9-5 samples were scanned at a pixel resolution of 5.71 nm/pixel and 2.22 nm/pixel, respectively. Image stitching and alignment were accomplished using TrakEM2 (Cardona et al., 2010; Cardona et al., 2012). All structures were segmented manually as area-lists, and exported into 3Dviewer and Blender as previously described (Asadulina et al., 2015). Tracing and annotation of the connectome were performed with CATMAID, a collaborative annotation toolkit for large-scale image data (Saalfeld et al., 2009; Schneider-Mizell et al., 2015).
 
-## IF and image registration
+### IF and image registration
 
 Antibodies were generated by immunizing rats or rabbits with synthetic, amidated peptides. Some of the antibodies were used in previous studies (Conzelmann and Jékely, 2012; Conzelmann et al., 2011; Conzelmann et al., 2013a; Jékely et al., 2008). All peptides contained an N-term Cys that was used for coupling. Antibodies were affinity purified from sera as previously described (Conzelmann and Jékely, 2012). Immunostainings were carried out as previously described (Conzelmann and Jékely, 2012). For triple IF, we used secondary antibodies coupled to three different fluorophores (FVa rat, AF488 secondary antibody rat; other neuropeptide rabbit, AF647 secondary antibody rabbit; acetylated-tubulin mouse, high-fidelity AF555 secondary antibody mouse).
 
@@ -197,6 +469,6 @@ For image registration, an average full-body acetylated tubulin reference templa
 
 Imaris was used for image processing (adjusting brightness and contrast uniformly) and to take virtual cross-sections of the VNC for comparison with siGOLD samples.
 
-## Morpholino injection
+### Morpholino injection
 
 Morpholino injections were performed as previously described (Conzelmann et al., 2013a). We used the following morpholinos to target the various neuropeptide precursor genes (GeneTools, LLC): Pdu-FMRFa-start MO CCACTGGTCCCTCATGGCAGGGTTT, Pdu-PDF-start MO CTGAACTGTCTTGCTTGATCCCATC, Pdu-ATO-start MO CACAGGACTACCTTCATTTTTCTGA, Pdu-LUQ-start MO GTATTTGCACAACATAGTGATAGTC, Pdu-PENK-start MO GAGGAGGACCACCAATATCTTCATC, Pdu-RYa-start MO TATAGACATGACACCTTGTTGGAGT, Pdu-LEUC-start2 MO TCTTGGCTGAACTCATTGCGGCC, Pdu-FVa-start MO CCATCCGCCCACGCTCATATGCATC, Pdu-FVRIa-start MO CCCCCTTCATACTGTCACAACGGAC, Pdu-RGWa-start MO CGACGACCCCCTGTAGCTTCATGTC.

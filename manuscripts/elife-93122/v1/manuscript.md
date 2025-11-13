@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Psychiatry, University of Cambridge Cambridge United Kingdom
+1. Department of Psychiatry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 

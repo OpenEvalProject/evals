@@ -21,7 +21,7 @@
 
 ## Abstract
 
-While zebrafish is emerging as a new model system to study human diseases, an efficient methodology to generate precise point mutations at high efficiency is still lacking. Here we show that base editors can generate C-to-T point mutations with high efficiencies without other unwanted on-target mutations. In addition, we established a new editor variant recognizing an NAA protospacer adjacent motif, expanding the base editing possibilities in zebrafish. Using these approaches, we first generated a base change in the ctnnb1 gene, mimicking oncogenic an mutation of the human gene known to result in constitutive activation of endogenous Wnt signaling. Additionally, we precisely targeted several cancer-associated genes including cbl . With this last target, we created a new zebrafish dwarfism model. Together our findings expand the potential of zebrafish as a model system allowing new approaches for the endogenous modulation of cell signaling pathways and the generation of precise models of human genetic disease-associated mutations.
+While zebrafish is emerging as a new model system to study human diseases, an efficient methodology to generate precise point mutations at high efficiency is still lacking. Here we show that base editors can generate C-to-T point mutations with high efficiencies without other unwanted on-target mutations. In addition, we established a new editor variant recognizing an NAA protospacer adjacent motif, expanding the base editing possibilities in zebrafish. Using these approaches, we first generated a base change in the ctnnb1 gene, mimicking oncogenic an mutation of the human gene known to result in constitutive activation of endogenous Wnt signaling. Additionally, we precisely targeted several cancer-associated genes including cbl. With this last target, we created a new zebrafish dwarfism model. Together our findings expand the potential of zebrafish as a model system allowing new approaches for the endogenous modulation of cell signaling pathways and the generation of precise models of human genetic disease-associated mutations.
 
 ## Introduction
 
@@ -29,11 +29,19 @@ With the recent technological advances in precise gene editing, the use of zebra
 
 Recently, a CRISPR/Cas9-based technology has been developed to precisely edit single bases of DNA without introducing DSBs in human cells (Koblan et al., 2018; Komor et al., 2016; Komor et al., 2017). The method is based on the fusion of a Cas9-D10A nickase with a cytidine deaminase giving rise to a cytidine base editor (CBE). CBE converts C-to-T bases in a restricted window of 13–19 nucleotides (nt) upstream of the PAM sequence (Figure 1A). In zebrafish, a CBE was shown to work but with limited efficiencies, inducing less than 29% of gene editing and, in most cases, at least 5% of unwanted INDEL (insertion or deletion) mutations were also detected (Carrington et al., 2020; Zhang et al., 2017). For these reasons, this editing strategy has not been so far favored by the zebrafish community. However, since this first generation of CBEs, several studies in cell culture have optimized and engineered new base editor variants with increased gene-editing efficiency reaching up to 90% without creating undesired INDEL mutations (Koblan et al., 2018). A recent study reported the use of a second-generation CBE to generate a zebrafish model of human ablepharon macrostomia syndrome (Zhao et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65552/elife-65552-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the cytidine base editor technology. (B) Activation of Wnt signaling via S33L mutation in β-catenin. 1 dpf Tg(7xTCF-Xla.Siam:GFP) representative embryos injected with BE4-gam mRNA and ctnnb1 (S33L) sgRNA or control scrambled sequence. The upper panel shows an overall increase of GFP-positive cells in the head/anterior region upon the injection of the BE4-gam mRNA and ctnnb1 (S33L) sgRNA compared to the control situation. The lower panel shows maximal z-projection of lateral view of the injected embryos where ectopic GFP signal in retinal progenitor cells (white stars) can be detected, whereas control embryos do not show any fluorescence in the retina at this stage. (C–G) DNA sequencing chromatogram of targeted loci with the BE4-gam and obtained C-to-T conversion efficiencies. The chromatograms correspond to the highest efficiency reported for the single embryos analyzed as detailed in Table 2. (C) S33L mutation in β-catenin upon C-to-T conversion in ctnnb1 reached 73% of gene-editing efficiency. The other edited C led to a silent mutation GAC (D) to GAT (D). (D) Q94* mutation in Tek upon C-to-T conversion in tek reached 18% of gene-editing efficiency. (E) Q273* mutation in Bap1 upon C-to-T conversion in bap1 reached 14% of gene-editing efficiency. (F) Q21* mutation in p53 upon C-to-T conversion in tp53 reached 73% of gene-editing efficiency. (G) Q170* mutation in p53 upon C-to-T conversion in tp53 reached 86% of gene-editing efficiency. For (C) and (E), the reverse complement of the sgRNA sequence is shown. Scale bars: (B) 50 µm. (D–G) Numbers in the boxes represent the percentage of each base at that sequence position. In red are highlighted the base substitutions introduced by base editing, while the original bases are in blue. The color code of the chromatogram is indicated in the upper left corner (Adenine green, Cytosine blue, Thymine red, Guanine black). The distance from the PAM sequence of the targeted C base is indicated below each chromatogram. It is considered that the quantifications under 5% are due to the background signal from Sanger sequencing and are thus non-significant (Kluesner et al., 2018).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65552/elife-65552-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** List of all the targeted loci in this study. In red are highlighted the targeted C bases, underlined are the sgRNAs and in green the associated PAM sequences. Sequences are oriented from 5’ to 3’.
+
 Recent progress has also been made on the generation of CBEs able to recognize other PAM sequences, allowing to broaden gene-editing possibilities (Jakimo et al., 2018; Koblan et al., 2018). Thus, base editing offers a complementary and powerful approach in zebrafish to introduce specific single-nucleotide variants into the zebrafish genome. Here based on these technological advances, we optimized these second-generation gene-editing tools in zebrafish. As reported in ex vivo studies (Koblan et al., 2018), we tested different CBE variants and obtained highly efficient C-to-T conversion, reaching up to 91% efficiency without unwanted mutations and expanded base editing possibilities using a CBE variant recognizing the NAA PAM. Furthermore, compared to previous studies, here we used these tools to target Wnt signaling, thus proving that endogenous pathways can be modulated in their natural context. Finally, we demonstrated the power of this technology for introducing precise mutations in human cancer-associated genes with high efficiency in zebrafish and created a new fish model for dwarfism.
 
 ## Results and discussion
 
-## BE4-gam base editing for the endogenous activation of Wnt signaling pathway
+### BE4-gam base editing for the endogenous activation of Wnt signaling pathway
 
 To date, the main strategies used in zebrafish to study the constitutive activation of signaling pathways and to dissect their role during embryonic development or tumorigenesis were based on overexpressing mutated genes. To gain further insights and to complement these studies, an important requirement is to have the ability to maintain the endogenous genetic and regulatory contexts by generating mutations of endogenous genes in vivo.
 
@@ -41,9 +49,342 @@ To address this challenge, we decided to introduce an activating mutation in the
 
 We first aimed at introducing this mutation in the genome of the zebrafish by using the Base Editor 4 fused to the gam domain (BE4-gam) (Figure 1A). This CBE was indeed one of the first variants of CBEs to show high efficiency of gene editing and fewer INDELs formation in cultured cells (Komor et al., 2017). We injected the BE4-gam mRNA and synthetic ctnnb1 S33L sgRNA into one-cell stage Tg(7xTCF-Xla.Siam:GFP) zebrafish embryos to directly monitor the effect of the introduced mutation on the activity of the canonical Wnt signaling (Moro et al., 2012). Upon ctnnb1 S33L sgRNA injection, we observed an increase of GFP-positive cells at 1 dpf (n = 39/50 embryos) compared to the control embryos (n = 27 embryos) resulting from three independent experiments. By confocal imaging we quantified ectopic activation of the pathway in retinal progenitor cells and observed an average of 12 GFP-positive clones per retina, while GFP-positive cells were never detected in the retina of control injected Tg(7xTCF-Xla.Siam:GFP) embryos (n = 4 each) (Figure 1B). Using this strategy, we observed base editing in five of eight randomly chosen embryos and were able to reach up to 73% of editing efficiency in single embryo analysis (Table 1, Table 2). In addition, we also observed the conversion of another cytidine within the PAM [−19, –13 bp] window leading to a silent mutation (GAC-to-GAT (D)) in four of the eight analyzed embryos with up to 74% efficiency (Figure 1C, Table 1, Table 2, Figure 1—figure supplement 1).
 
+**Table 1.**
+ Base-editing efficiency using different CBE variants.Number of edited embryos randomly chosen after injection of CBE mRNA and sgRNA. The efficiency varies between non-detected (n.d.) and 91% depending on the targeted locus, the sgRNA, and the CBE used. Editing efficiency was quantified by editR analysis (Kluesner et al., 2018), which does not detect editing efficiency below 5%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Targeted gene CBE used induced mutation</th>
+      <th>ctnnb1 (S33L)  BE4-gam</th>
+      <th>tp53 (Q170*) BE4-gam</th>
+      <th colspan="2">cbl (W577*)  BE4-gam</th>
+      <th>kras (E62K)  BE4-gam</th>
+      <th>Kras (E62K) ancBE4max</th>
+      <th>dmd (Q8*) BE4-gam</th>
+      <th>dmd (Q8*) ancBE4max</th>
+      <th colspan="2">rb1 (W63*) ancBE4max</th>
+      <th>nras (G13S) spymac-ancBE4max</th>
+      <th>tp53 (Q170*)spymac-ancBE4max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of edited embryos</td>
+      <td>5/8</td>
+      <td>7/8</td>
+      <td colspan="2">8/10</td>
+      <td>0/8</td>
+      <td>4/7</td>
+      <td>0/8</td>
+      <td>2/4</td>
+      <td colspan="2">8/8</td>
+      <td>2/4</td>
+      <td>1/4</td>
+    </tr>
+    <tr>
+      <td>Highest obtained efficiency</td>
+      <td>73%</td>
+      <td>86%</td>
+      <td>C16 35%</td>
+      <td>C15 50%</td>
+      <td>n.d.</td>
+      <td>19%</td>
+      <td>n.d.</td>
+      <td>14%</td>
+      <td>C17 91%</td>
+      <td>C16 65%</td>
+      <td>19%</td>
+      <td>16%</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Editing efficiency quantification.Editing quantification of up to 10 single embryos randomly chosen after injection of indicated CBE mRNA and sgRNA. The efficiency varies between non-detected (n.d.) to 91% in a single embryo depending on the targeted locus, the sgRNA, and the CBE used. Editing efficiency was quantified by editR analysis (Kluesner et al., 2018), which does not detect editing efficiency below 5%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Targeted gene CBE used</th>
+      <th>Number of edited embryos</th>
+      <th colspan="3">Emb. 1</th>
+      <th colspan="3">Emb. 2</th>
+      <th colspan="3">Emb. 3</th>
+      <th colspan="3">Emb. 4</th>
+      <th colspan="3">Emb. 5</th>
+      <th colspan="3">Emb. 6</th>
+      <th colspan="3">Emb. 7</th>
+      <th colspan="3">Emb. 8</th>
+      <th>Emb. 9</th>
+      <th>Emb. 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctnnb1 (S33L)  BE4-gam</td>
+      <td>5/8</td>
+      <td>C15 74%</td>
+      <td>C13 73%</td>
+      <td></td>
+      <td>C15 n.d.</td>
+      <td>C13 40%</td>
+      <td></td>
+      <td>C15 44%</td>
+      <td>C13 25%</td>
+      <td></td>
+      <td>C15 7%</td>
+      <td>C13 16%</td>
+      <td></td>
+      <td>C15 n.d.</td>
+      <td>C13 11%</td>
+      <td></td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>tek (Q94*)  BE4-gam</td>
+      <td>5/8</td>
+      <td>C14 18%</td>
+      <td>C13 8%</td>
+      <td></td>
+      <td>C14 10%</td>
+      <td>C13 n.d.</td>
+      <td></td>
+      <td>C14 8%</td>
+      <td>C13 n.d.</td>
+      <td></td>
+      <td>C14 6%</td>
+      <td>C13 n.d.</td>
+      <td></td>
+      <td>C14 8%</td>
+      <td>C13 9%</td>
+      <td></td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Bap1 (Q273*)  BE4-gam</td>
+      <td>4/8</td>
+      <td colspan="3">14%</td>
+      <td colspan="3">12%</td>
+      <td colspan="3">9%</td>
+      <td colspan="3">8%</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q21*)  BE4-gam</td>
+      <td>6/8</td>
+      <td colspan="3">63%</td>
+      <td colspan="3">33%</td>
+      <td colspan="3">37%</td>
+      <td colspan="3">58%</td>
+      <td colspan="3">8%</td>
+      <td colspan="3">50%</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q170*)  BE4-gam</td>
+      <td>7/8</td>
+      <td colspan="3">86%</td>
+      <td colspan="3">46%</td>
+      <td colspan="3">51%</td>
+      <td colspan="3">62%</td>
+      <td colspan="3">45%</td>
+      <td colspan="3">20%</td>
+      <td colspan="3">33%</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>cbl (W577*)  BE4-gam</td>
+      <td>8/10</td>
+      <td>C16 35%</td>
+      <td>C15 50%</td>
+      <td></td>
+      <td>C16 19%</td>
+      <td>C15 31%</td>
+      <td></td>
+      <td>C16 22%</td>
+      <td>C15 38%</td>
+      <td></td>
+      <td>C16 25%</td>
+      <td>C15 41%</td>
+      <td></td>
+      <td>C16 20%</td>
+      <td>C15 35%</td>
+      <td></td>
+      <td>C16 7%</td>
+      <td>C15 9%</td>
+      <td></td>
+      <td>C16 7%</td>
+      <td>C15 12%</td>
+      <td></td>
+      <td>C16 10%</td>
+      <td>C15 17%</td>
+      <td></td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>kras (E62K)  BE4-gam</td>
+      <td>0/8</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>kras (E62K) ancBE4max</td>
+      <td>4/7</td>
+      <td>C17 19%</td>
+      <td>C16 21%</td>
+      <td></td>
+      <td>C17 8%</td>
+      <td>C16 11%</td>
+      <td></td>
+      <td>C17 6%</td>
+      <td>C16 8%</td>
+      <td></td>
+      <td>C17 9%</td>
+      <td>C16 10%</td>
+      <td></td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>dmd (Q8*) BE4-gam</td>
+      <td>0/8</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>dmd (Q8*) ancBE4max</td>
+      <td>2/4</td>
+      <td colspan="3">14%</td>
+      <td colspan="3">6%</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>sod2 (Q145*) ancBE4max</td>
+      <td>8/8</td>
+      <td colspan="3">64%</td>
+      <td colspan="3">45%</td>
+      <td colspan="3">21%</td>
+      <td colspan="3">54%</td>
+      <td colspan="3">52%</td>
+      <td colspan="3">24%</td>
+      <td colspan="3">26%</td>
+      <td colspan="3">33%</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>rb1 (W63*) ancBE4max</td>
+      <td>8/8</td>
+      <td>C19 n.d.</td>
+      <td>C17 91%</td>
+      <td>C16 65%</td>
+      <td>C19 21%</td>
+      <td>C17 79%</td>
+      <td>C16 75%</td>
+      <td>C19 n.d.</td>
+      <td>C17 27%</td>
+      <td>C16 18%</td>
+      <td>C19 13%</td>
+      <td>C17 81%</td>
+      <td>C16 60%</td>
+      <td>C19 8%</td>
+      <td>C17 48%</td>
+      <td>C16 33%</td>
+      <td>C19 13%</td>
+      <td>C17 76%</td>
+      <td>C16 64%</td>
+      <td>C19 13%</td>
+      <td>C17 78%</td>
+      <td>C16 69%</td>
+      <td>C19 21%</td>
+      <td>C17 77%</td>
+      <td>C16 63%</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>nras (G13S) spymac-ancBE4max</td>
+      <td>2/4</td>
+      <td colspan="3">19%</td>
+      <td colspan="3">18%</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q170*) spymac-ancBE4max</td>
+      <td>1/4</td>
+      <td colspan="3">16%</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">n.d.</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 With these results, we demonstrated that it is now possible to constitutively and efficiently activate important developmental signaling pathways in their endogenous context, as we show here for Wnt signaling. Furthermore, several studies have implicated the S33L β-catenin mutation in tumorigenesis, making it possible to study the role of this oncogenic mutation in cancer development in zebrafish. In order to test the potential of CBE targeting in cancer modeling, we next decided to use it to target a series of tumor suppressor genes and oncogenes using the same editing strategy applied to endogenous β-catenin.
 
-## Base-editing strategies for the generation of human cancer mutations
+### Base-editing strategies for the generation of human cancer mutations
 
 Zebrafish is a powerful model system to study cancer genetics in vivo (Cagan et al., 2019; Cayuela et al., 2018). However, a robust method for modeling cancer-associated mutations in zebrafish is still lacking to date. We decided to create predictable premature stop codons in tumor suppressor genes and to generate activating mutations in oncogenes of the RAS family (Li et al., 2018) in order to test the ability of CBEs to induce cancer-related mutations in zebrafish.
 
@@ -53,25 +394,25 @@ More recently, a new CBE variant, the ancBE4max, has been engineered and optimiz
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65552/elife-65552-fig2-v2.jpg)
 
-**Figure 2.:** SpymacCas9 recognizing NAA PAM.(A–F) DNA sequencing chromatogram of targeted loci with the ancBE4max (in A–D) or ancBE4max-SpymacCas9 (in E,F) and obtained C-to-T conversion efficiencies. (A) E62K mutation in Kras upon C-to-T conversion in kras reached 19% gene-editing efficiency. The other edited C led to a silent mutation CAG (Q) to CAA (Q). (B) Q8* mutation in Dmd upon C-to-T conversion in dmd reached 14% of gene-editing efficiency. (C) Q145* mutation in Sod2 upon C-to-T conversion in sod2 reached 64% of gene-editing efficiency. (D) W63* mutation in Rb1 upon C-to-T conversion in rb1 reached 21% for the C19 base, 79% for C17, and 75% for the C16 of gene-editing efficiency. (E) G13S mutation in Nras upon C-to-T conversion in nras reached 19% of gene-editing efficiency. (F) Q170* mutation in p53 upon C-to-T conversion in tp53 reached 16% of gene-editing efficiency. For (A, D–F), the reverse complement of the sgRNA sequence is shown. (A–F) The chromatograms correspond to the efficiency reported for the single embryos provided in the first column of Table 2. The numbers in the boxes represent the percentage of each base at that sequence position. In red are highlighted the base substitutions introduced by base editing, while the original sequence is in blue. The color code of the chromatogram is indicated in the upper left corner (Adenine green, Cytosine blue, Thymine red, and Guanine black). The distance from the PAM sequence of the targeted C base is indicated below each chromatogram. It is considered that the quantifications under 5% are due to the background signal from Sanger sequencing and are thus non-significant (Kluesner et al., 2018).
+**Figure 2.:** (A–F) DNA sequencing chromatogram of targeted loci with the ancBE4max (in A–D) or ancBE4max-SpymacCas9 (in E,F) and obtained C-to-T conversion efficiencies. (A) E62K mutation in Kras upon C-to-T conversion in kras reached 19% gene-editing efficiency. The other edited C led to a silent mutation CAG (Q) to CAA (Q). (B) Q8* mutation in Dmd upon C-to-T conversion in dmd reached 14% of gene-editing efficiency. (C) Q145* mutation in Sod2 upon C-to-T conversion in sod2 reached 64% of gene-editing efficiency. (D) W63* mutation in Rb1 upon C-to-T conversion in rb1 reached 21% for the C19 base, 79% for C17, and 75% for the C16 of gene-editing efficiency. (E) G13S mutation in Nras upon C-to-T conversion in nras reached 19% of gene-editing efficiency. (F) Q170* mutation in p53 upon C-to-T conversion in tp53 reached 16% of gene-editing efficiency. For (A, D–F), the reverse complement of the sgRNA sequence is shown. (A–F) The chromatograms correspond to the efficiency reported for the single embryos provided in the first column of Table 2. The numbers in the boxes represent the percentage of each base at that sequence position. In red are highlighted the base substitutions introduced by base editing, while the original sequence is in blue. The color code of the chromatogram is indicated in the upper left corner (Adenine green, Cytosine blue, Thymine red, and Guanine black). The distance from the PAM sequence of the targeted C base is indicated below each chromatogram. It is considered that the quantifications under 5% are due to the background signal from Sanger sequencing and are thus non-significant (Kluesner et al., 2018).
 
 It is interesting to note that in general all the cytidine bases present in the PAM [−19, –13] bp window can be edited by the CBE, with a higher efficiency for the cytidine bases located in the middle of this window while editing was below detection levels for cytidines located only 12 bp upstream (Figure 2D). With the use of ancBE4max CBE, these results highlight the importance of the cytidine distance from the PAM for efficient editing in zebrafish as shown previously in cell culture assays (Gaudelli et al., 2017).
 
-## Expanding gene-editing possibilities in zebrafish using a CBE recognizing NAA PAM
+### Expanding gene-editing possibilities in zebrafish using a CBE recognizing NAA PAM
 
 Due to the PAM-dependent restriction of the editing window, many mutations could not be generated so far. We therefore decided to expand the editing possibilities in zebrafish by associating SpymacCas9 recognizing NAA PAMs with the efficient conversion capacity of the ancBE4max. To this end, we replaced the PAM-interacting motif (PIM) domain of the SpCas9 with the one of the SpymacCas9 in the ancBE4max (Jakimo et al., 2018). The inserted PIM domain was codon optimized for zebrafish. Using this newly generated ancBE4max-SpymacCas9, we were able to reproduce the human G13S mutation in Nras oncogene in zebrafish in 2 out of 4 randomly analyzed embryo with up to 19% of efficiency reached in single embryo analysis (Figure 2E, Table 1, Table 2). We also introduced a stop codon by a C-to-T conversion in the tp53 gene in 1 out of 4 randomly analyzed embryo with 16% efficiency (Figure 2F, Table 1, Table 2). These results demonstrate that in addition to the classical NGG PAM it is now also possible to target NAA PAMs in zebrafish, thereby significantly expanding the range of cytidine bases that can be converted. For these new CBEs, we added a function in our script to choose the PAM recognized by the Cas9-D10A of the chosen CBE to generate the desired base editing (Source code 1). Together with the use of the ancBE4max and ancBE4max-SpymacCas9 CBE variants, we were now able to target mutations that could not be generated with the BE4-gam base editor and reproduce a wider range of human cancer mutations in zebrafish.
 
 Genetic alterations that lead to oncogene activation and/or tumor suppressor inactivation are responsible for tumorigenesis. It is indeed well-established that in cancer patients, a series of genetic mutations in tumor suppressor genes and/or oncogenes are combined to all together lead to the appearance of the disease (Dash et al., 2019). With these efficient genetic tools that are now established in zebrafish, we have the possibility to rapidly test precise combinations of mutations identified in cancer patients.
 
-## Precise gene editing in the cbl tumor suppressor gene for the generation of human disease phenotypes in zebrafish
+### Precise gene editing in the cbl tumor suppressor gene for the generation of human disease phenotypes in zebrafish
 
 With the technological advances in CRISPR/Cas9 gene editing, zebrafish has become an even more attractive system for modeling human genetic diseases. Among the chosen loci to test the efficiency of the BE4-gam, we targeted the tumor suppressor gene encoding for Cbl, an E3 ubiquitin ligase, that is found mutated in Noonan syndrome patients presenting short stature and other bone malformations among several other phenotypes (Martinelli et al., 2010). In human, activating mutations in the fibroblast growth factor receptor 3 (FGFR3) gene are a leading cause of dwarfism achondroplasia and related dwarf conditions. Indeed, FGFR3 hyperactivation triggers intracellular signaling within the chondrocytes of the growth plate which terminates its proliferation and bone growth (Harada et al., 2009). Interestingly, another study based on in vitro systems reported that some of these activating mutations in FGFR3 disrupt c-Cbl-mediated ubiquitination that serves as a targeting signal for lysosomal degradation and termination of receptor signaling (Cho et al., 2004). Using the CBE BE4-gam as previously described, we obtained up to 50% of gene-editing efficiency (Figure 3A, Table 1, Table 2), with 80% of the analyzed embryos showing the expected editing (n = 10 randomly analyzed embryos). Four of 15 adults carried the Cbl W577* mutation in germ cells and one of these carriers transmitted it to 28% of its F1 offspring (44 of 153 analyzed fish carried the mutation). The target sequence was analyzed in the F1 embryos and no INDELs were found (Figure 3B). The zygotic homozygous mutant fish (cbl−/−) deriving from the incross of two heterozygous parents (cbl+/−) did not develop any obvious phenotype and could be grown to adulthood. This could be due to the fact that in zebrafish, maternal factors stored as mRNAs and proteins in the egg can compensate for zygotic loss of function during embryonic stages. In order to obtain maternal-zygotic mutants (MZ cbl−/−) that lacked wild-type cbl mRNAs and proteins provided by the mother, cbl−/− mutant parents were incrossed. As controls, the cbl+/+ siblings of the cbl−/− mutant fish were incrossed in parallel. Interestingly, 24% of the MZ cbl−/− mutants displayed a significantly reduced overall growth and size by 3 months post-fertilization, while 100% of the progeny of the cbl+/+ sibling fish showed a normal body size (means: 2.7 cm for the wild-type controls and 1.96 cm for the dwarf MZ cbl−/−, Figure 3C,D). Furthermore, this dwarf phenotype was never observed in any of the fish derived from the incrosses of the wild-type stocks used to generate this mutant line, while it was observed in the progeny of two other crosses of the cbl−/− line. Although we cannot formally exclude the presence of a distinct maternal zygotic mutation linked to the cblW577* allele, our data strongly support the role of Cbl W577* in the observed phenotype. Four germline mutations located in the RING domain of Cbl (Q367P, K382E, D390Y, and R420Q) have been previously identified and associated to Noonan syndrome and related phenotypes (Martinelli et al., 2010). Our results are in line with the growth defect phenotypes observed in these patients and directly implicate Cbl loss-of-function as a cause of bone malformations in an animal model. In addition, a point mutation in zebrafish Cbl (H382Y) has been implicated in myeloproliferative disorders. Unlike our mutant, cblH382Y mutant fish do not survive to adulthood, suggesting that the CblW577* premature stop reported here may have different consequences on the multiple functions of Cbl (Peng et al., 2015). Although not lethal, it would be of interest to assess whether any hematopoietic defects are present in our MZ cbl−/− mutants or whether this phenotype is only linked to the CblH328Y substitution found in the LDD731 zebrafish mutant (Peng et al., 2015). Our model represents a powerful in vivo system to dissect the role of Cbl in bone morphogenesis and to explain the human phenotypes related to bone malformations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65552/elife-65552-fig3-v2.jpg)
 
-**Figure 3.:** cbl maternal zygotic mutant fish show a reduced growth phenotype.(A) DNA sequencing chromatogram of targeted cbl gene with the BE4-gam. W577* mutation in Cbl upon C-to-T conversion in cbl reached 50% for the C16 base and 35% for the C15 base of gene-editing efficiency. The chromatogram refers to the efficiency reported for the embryo provided in the first column of Table 2. The numbers in the boxes represent the percentage of each base at that sequence position. In red are highlighted the base substitutions introduced by base editing, while the original sequence is in blue. The color code of the chromatogram is indicated in the upper left corner (Adenine green, Cytosine blue, Thymine red, and Guanine black). The distance from the PAM sequence of the targeted C base is indicated below the chromatogram. It is considered that the quantifications under 5% are due to the background signal from Sanger sequencing and are thus non-significant (Kluesner et al., 2018). (B) Sequencing of individual clones of a pool of F1 embryos from a founder carrying the W577* mutation in Cbl. TGG-to-TAA precise mutation was found in 8 of 21 clones. No editing or INDELs were detected in all other clones. (C) Three months post-fertilization (mpf) cbl wild type derived from the incross of wild-type siblings (upper panel) and dwarf maternal zygotic (MZ) mutant fish found in 24% of the progeny (lower panel). (D) Quantification of the body length of the cbl controls and of the dwarf +/+MZ cbl. The dwarf fish show a significant reduced size at three mpf compared to the wild-type controls. n = 8 for each group. Mann–Whitney test, p=0,0002. Scale bars: (−/−C) 5 mm.
+**Figure 3.:** (A) DNA sequencing chromatogram of targeted cbl gene with the BE4-gam. W577* mutation in Cbl upon C-to-T conversion in cbl reached 50% for the C16 base and 35% for the C15 base of gene-editing efficiency. The chromatogram refers to the efficiency reported for the embryo provided in the first column of Table 2. The numbers in the boxes represent the percentage of each base at that sequence position. In red are highlighted the base substitutions introduced by base editing, while the original sequence is in blue. The color code of the chromatogram is indicated in the upper left corner (Adenine green, Cytosine blue, Thymine red, and Guanine black). The distance from the PAM sequence of the targeted C base is indicated below the chromatogram. It is considered that the quantifications under 5% are due to the background signal from Sanger sequencing and are thus non-significant (Kluesner et al., 2018). (B) Sequencing of individual clones of a pool of F1 embryos from a founder carrying the W577* mutation in Cbl. TGG-to-TAA precise mutation was found in 8 of 21 clones. No editing or INDELs were detected in all other clones. (C) Three months post-fertilization (mpf) cbl wild type derived from the incross of wild-type siblings (upper panel) and dwarf maternal zygotic (MZ) mutant fish found in 24% of the progeny (lower panel). (D) Quantification of the body length of the cbl+/+ controls and of the dwarf MZ cbl−/−. The dwarf fish show a significant reduced size at three mpf compared to the wild-type controls. n = 8 for each group. Mann–Whitney test, p=0,0002. Scale bars: (C) 5 mm.
 
-## Conclusions
+### Conclusions
 
 In our work, we took advantage of base editors to generate C-to-T point mutations at unprecedented high efficiencies (up to 91%) without detecting any unwanted mutations that were often problematic when using CBEs in zebrafish. In comparison, previous work has reported an efficiency reaching a maximum of 29% using the BE3 (Zhang et al., 2017). Another more recent study employed the ancBE4max variant in zebrafish with a slight difference of efficiency that might be due to the choice of the specific locus targeted, the synthesis of the sgRNA (homemade vs commercially synthetized) and the injection mode (yolk vs cell) (Carrington et al., 2020). More recently, Zhao et al., 2020 have shown similar efficiencies as we obtained in our study. To expand the gene-editing possibilities in this animal model, we established in addition a new editor variant recognizing the NAA PAM. Using these approaches, we first performed the endogenous and constitutive activation of Wnt signaling by introducing the S33L mutation in β-catenin. In addition, we demonstrated using these strategies that we were able to precisely target several cancer-associated genes for which so far only transgenic over-expressions or imprecise deletions were used to elucidate their functions. Among our targets, the introduced mutation in the cbl gene allowed us to generate a new zebrafish model for dwarfism.
 
@@ -81,15 +422,102 @@ Finally, the high efficiencies of CBEs obtained in this study should encourage f
 
 ## Materials and methods
 
-## Fish lines and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(7xTCF-Xla.Siam:GFP)</td>
+      <td>ZIRC</td>
+      <td>ZFIN ID:ZBD-ALT-110113–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV_BE4-gam (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:#100806 RRID:Addgene_100806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV_ancBE4max (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene:#112094 RRID:Addgene_112094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+_ancBE4max-SpymacCas9 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Cloning Kit</td>
+      <td>New England Biolabs</td>
+      <td>Catalog# E5520S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Ultra kit</td>
+      <td>Ambion</td>
+      <td>Catalog# AM1345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE Sp6 kit</td>
+      <td>Ambion</td>
+      <td>Catalog# AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR clean-up gel extraction kit</td>
+      <td>Macherey-Nagel</td>
+      <td>Catalog# 740609.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phusion high-fidelity DNA polymerase</td>
+      <td>ThermoFisher</td>
+      <td>Catalog# F-530XL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SequenceParser.py</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Source code 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish lines and husbandry
 
 Zebrafish (Danio rerio) were maintained at 28°C on a 14 hr light/10 hr dark cycle. Fish were housed in the animal facility of our laboratory which was built according to the respective local animal welfare standards. All animal procedures were performed in accordance with French and European Union animal welfare guidelines. Animal handling and experimental procedures were approved by the Committee on ethics of animal experimentation. The Tg(7xTCF-Xla.Siam:GFP) line was kindly provided by Sophie Vriz (Moro et al., 2012).
 
-## Molecular cloning
+### Molecular cloning
 
 To generate the pCS2+_ancBE4max-SpymacCas9 plasmid, the SpymacCas9 PIM domain sequence has been codon optimized for expression in zebrafish using online software from IDT and synthesized with the first UGI sequence as G-block from IDT. Then, three fragments have been inserted into pCS2+ plasmid linearized with Xho1 using the NEBuilder HiFi DNA Assembly Cloning Kit (New England Biolabs # E5520S): a first fragment of 4161 bp of the ancBE4max to the PIM domain (amplified using the primers F-5′-CGATTCGAATTCAAGGCCTCATGAAACGGACAGCCGAC-3′ and R-5′-CGGTCTGGATCTCGGTCTTTTTCACGATATTC-3′), the Gblock fragment of 803 bp (amplified using the primers F-5′-AAAGACCGAGATCCAGACCGTGGGACAG-3′ and R-5′-TCCCGCCGCTATCCTCGCCGATCTTGGAC-3′), and a third fragment of 654 bp of the rest of the ancBE4max from the PIM domain (amplified using the primers F-5′-CGGCGAGGATAGCGGCGGGAGCGGCGGG-3′ and R-5′-CTCACTATAGTTCTAGAGGCTTAGACTTTCCTCTTCTTCTTGGGCTCGAATTCGCTGCCGTCG-3′). pCMV_BE4-gam (a gift from David Liu, Addgene plasmid # 100806; Anzalone et al., 2019) has been used to generate BE4-gam mRNAin vitro. This plasmid was linearized with Pme1 restriction enzyme and mRNAs were synthesized by in vitro transcription with 1 µl of GTP from the kit added to the mix, followed by Poly(A) tailing procedure and lithium chloride precipitation (using the mMESSAGE mMACHINE T7 Ultra kit #AM1345, Ambion). pCMV_ancBE4max (pCMV_AncBE4max was a gift from David Liu [Addgene plasmid # 112094]) has been linearized using AvrII restriction enzyme; mRNAs were synthesized by in vitro transcription with 1 µl of GTP from the kit added to the mix and lithium chloride precipitation (using the mMESSAGE mMACHINE T7 Ultra kit #AM1345, Ambion). The pCS2+_ancBE4max-SpymacCas9 has been linearized using KpnI restriction enzyme; mRNAs were synthetized by in vitro transcription with 1 µl of GTP added to the mix and lithium chloride precipitation (using the mMESSAGE mMACHINE Sp6 kit #AM1340, Ambion).
 
-## sgRNA design
+### sgRNA design
 
 A sequenceParser.py python script was developed and used to design sgRNAs for the creation of a stop codon. The first function of the script is to ask which PAM will be used to then execute the rapid detection of codons that are in the right editing windows from this predefined PAM to generate a STOP in frame after C-to-T conversion. The ORF sequence file extension is .txt and the letters in lower cases. The script can be executed from the command line interface (such as the terminal or PowerShell console) using Python version 3.
 
@@ -97,28 +525,140 @@ Efficiencies of sgRNAs were validated using CRISPOR online tool (Haeussler et al
 
 List of the crRNAs used in this study and the targeted C bases for each targeted locus. Sequences are oriented from 5′ to 3′:
 
-crRNA sequence used for base editing (5'−3')ctnnb1 (S33L)CTGGACTCAGGAATACACTCtek (Q94*)GGAGCTCCAGGTGACGGTAGbap1 (Q273*)GACTCAGCAAGAATCAGGCCtp53 (Q21*)AGTATTCAGCCCCCAGGTGGtp53 (Q170*)CAATCAGCGAGCAAATTACAkras (E62K)CCTCCTGACCTGCAGTGTCCdmd (Q8*)CCACAGGACCAATGGGAGGAsod2 (Q145*)GCTGTTCAGGGCTCAGGCTGrb1 (W63*)TCTCCATGCATGATCACAGAnras NAA (G13S)AACACCTCCTGCTCCCACAAtp53 NAA (Q170*)ATCAGCGAGCAAATTACAGGcbl (W577*)AGTTCCAGTCTGGCATGTTG
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>crRNA sequence used for base editing (5'−3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctnnb1 (S33L)</td>
+      <td>CTGGACTCAGGAATACACTC</td>
+    </tr>
+    <tr>
+      <td>tek (Q94*)</td>
+      <td>GGAGCTCCAGGTGACGGTAG</td>
+    </tr>
+    <tr>
+      <td>bap1 (Q273*)</td>
+      <td>GACTCAGCAAGAATCAGGCC</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q21*)</td>
+      <td>AGTATTCAGCCCCCAGGTGG</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q170*)</td>
+      <td>CAATCAGCGAGCAAATTACA</td>
+    </tr>
+    <tr>
+      <td>kras (E62K)</td>
+      <td>CCTCCTGACCTGCAGTGTCC</td>
+    </tr>
+    <tr>
+      <td>dmd (Q8*)</td>
+      <td>CCACAGGACCAATGGGAGGA</td>
+    </tr>
+    <tr>
+      <td>sod2 (Q145*)</td>
+      <td>GCTGTTCAGGGCTCAGGCTG</td>
+    </tr>
+    <tr>
+      <td>rb1 (W63*)</td>
+      <td>TCTCCATGCATGATCACAGA</td>
+    </tr>
+    <tr>
+      <td>nras NAA (G13S)</td>
+      <td>AACACCTCCTGCTCCCACAA</td>
+    </tr>
+    <tr>
+      <td>tp53 NAA (Q170*)</td>
+      <td>ATCAGCGAGCAAATTACAGG</td>
+    </tr>
+    <tr>
+      <td>cbl (W577*)</td>
+      <td>AGTTCCAGTCTGGCATGTTG</td>
+    </tr>
+  </tbody>
+</table>
 
-## Micro-injection
+### Micro-injection
 
 Prior injections, a mix of 2 µL of the Alt-R CRISPR-Cas9 crRNA (100 pmol/µL) and 2 µL of Alt-R CRISPR-Cas9 tracrRNA (100 pmol/µL) from IDT was incubated at 95°C for 5 min, cooled down at room temperature, and then kept on ice to form the synthetic sgRNA complex. One nanoliter of another mix containing CBE mRNA (600 ng/μL) and the synthetic sgRNA complex (43 pmol/μL) was then injected into the cell at one-cell stage zebrafish embryos.
 
-## Genotyping
+### Genotyping
 
 To genotype the cbl mutant line, a PCR was performed with primers Fwd-5′-GTACGCCTGGAGACCCATCTC-3′ and Rev-5′-CTTTTGGACTGTCATAATCCGATGC-3′. The PCR product was digested with the restriction enzyme BsrI, which cut only on the WT allele. The WT allele resulted in two fragments (300 bp and 69 bp) and the mutant allele only one fragment (369 bp).
 
-## Whole-embryo DNA sequencing
+### Whole-embryo DNA sequencing
 
 A series between 4 and 10 single embryos randomly chosen was analyzed for each target sequence, and the embryo with the highest efficiency is shown. Generally, between 25% and 100% embryos were positive for gene editing, that is showed >16% expected sequence modification. For genomic DNA extraction, each single embryo was digested for 1 hr at 55°C in 0.5 mL lysis buffer (10 mM Tris, pH 8.0, 10 mM NaCl, 10 mM EDTA, and 2% SDS) with proteinase K (0.17 mg/mL, Roche Diagnostics) and inactivated 10 min at 95°C. To sequence and check for frequency of mutations, each target genomic locus was PCR-amplified using Phusion High-Fidelity DNA polymerase (ThermoFisher Scientific, # F-530XL). PCR products have been extracted from an agarose gel and purified (using the PCR clean-up gel extraction kit #740609.50, Macherey-Nagel), and Sanger sequencing was performed by Eurofins. Sequence analyses were achieved using ApE software and quantifications of the mutation rate done using editR online software (Kluesner et al., 2018). For the verification of cbl mutant F1 embryos, tek, bap1 and tp53 mutations, PCR fragments were subsequently cloned into the pCR-bluntII-TOPO vector (Invitrogen). Plasmid DNA was isolated from single colonies and sent for sequencing. Mutant alleles were identified by comparison with the wild-type sequence using ApE and Geneious softwares.
 
 Primer sequences used to amplify the targeted loci:
 
-tek (Q94*)ATCTCAGACGTGACTCTGGTGAACTTCCTGTAGCATCTTGTAGGTGTAGbap1 (Q273*)TTGTTTATTTTTCAGGACCATGGGGCACCTGAAGGTATTGGTGTTTCTTGtp53 (Q21*)CTTTGCATAAGAAACAACATCCCGAGTTCAACACTGAAAACCAAAAGAGGtp53 (Q170*)ATATCTTGTCTGTTTTCTCCCTGCTGTCCTACAAAAAGGCTGTGACATACkras (E62K)CGTTCCACTATGTCCACACATTTAGAACAGTACATTTTCTGCATACTCGCdmd (Q8*)AGGGCTCCTTCCTTTTTCTGTTTATTGATCGAGTTTTGATGATTTCTCCGsod2 (Q145*)GCATATGGCTGGAAATGATGAACCGCACTTTATGTGCATTCACTGAGGrb1 (W63*)TCTGTCAACTGTTGTTTTTCCAGACTTCAATATCTGCCACACATACCTCAnras (G13S)CCTTTTCTCTCTTTTTGTCTGGGTGCGCAATCTCACGTTAATTGTAGTGTcbl (W577*)GTACGCCTGGAGACCCATCTCCTTTTGGACTGTCATAATCCGATGC
+<table>
+  <thead>
+    <tr>
+      <th>tek (Q94*)</th>
+      <th>ATCTCAGACGTGACTCTGGTGAAC</th>
+      <th>TTCCTGTAGCATCTTGTAGGTGTAG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bap1 (Q273*)</td>
+      <td>TTGTTTATTTTTCAGGACCATGGGG</td>
+      <td>CACCTGAAGGTATTGGTGTTTCTTG</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q21*)</td>
+      <td>CTTTGCATAAGAAACAACATCCCGA</td>
+      <td>GTTCAACACTGAAAACCAAAAGAGG</td>
+    </tr>
+    <tr>
+      <td>tp53 (Q170*)</td>
+      <td>ATATCTTGTCTGTTTTCTCCCTGCT</td>
+      <td>GTCCTACAAAAAGGCTGTGACATAC</td>
+    </tr>
+    <tr>
+      <td>kras (E62K)</td>
+      <td>CGTTCCACTATGTCCACACATTTAG</td>
+      <td>AACAGTACATTTTCTGCATACTCGC</td>
+    </tr>
+    <tr>
+      <td>dmd (Q8*)</td>
+      <td>AGGGCTCCTTCCTTTTTCTGTTTAT</td>
+      <td>TGATCGAGTTTTGATGATTTCTCCG</td>
+    </tr>
+    <tr>
+      <td>sod2 (Q145*)</td>
+      <td>GCATATGGCTGGAAATGATGAACC</td>
+      <td>GCACTTTATGTGCATTCACTGAGG</td>
+    </tr>
+    <tr>
+      <td>rb1 (W63*)</td>
+      <td>TCTGTCAACTGTTGTTTTTCCAGAC</td>
+      <td>TTCAATATCTGCCACACATACCTCA</td>
+    </tr>
+    <tr>
+      <td>nras (G13S)</td>
+      <td>CCTTTTCTCTCTTTTTGTCTGGGTG</td>
+      <td>CGCAATCTCACGTTAATTGTAGTGT</td>
+    </tr>
+    <tr>
+      <td>cbl (W577*)</td>
+      <td>GTACGCCTGGAGACCCATCTC</td>
+      <td>CTTTTGGACTGTCATAATCCGATGC</td>
+    </tr>
+  </tbody>
+</table>
 
-## Imaging
+### Imaging
 
 Embryos were oriented in low-melting agarose 0.6% with an anesthetic (Tricaine 0.013%) diluted in egg solution. The inverted laser scanning confocal microscope Zeiss CLSM-LSM780 was used for high-resolution microscopy, employing a 40× water immersion objective. Z-stacks were acquired every 1–2 µm. Leica MZ10F was used to image the whole embryos the cbl mutant adult fish. Image analyses were performed with ImageJ software.
 
-## Body size quantifications
+### Body size quantifications
 
 Eight control wild-type siblings and eight dwarf MZcbl–/– in total were used to measure the body size using a millimetric ruler. The length measured was from mouth to trunk. A non-parametric t-test with the Mann–Whitney correction was applied to determine significance in growth. The software used was Prism 7 (GraphPad).

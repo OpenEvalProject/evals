@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Institute for Language, Communication, and the Brain, Aix-Marseille University Marseille France
-2. https://ror.org/019kqby73 Aix Marseille Université, INSERM, INS, Institut de Neurosciences des Systèmes Marseille France
-3. https://ror.org/05jrr4320 APHM, Hôpital de la Timone, Service de Neurophysiologie Clinique Marseille France
+1. Institute for Language, Communication, and the Brain, Aix-Marseille University Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+2. Aix Marseille Université, INSERM, INS, Institut de Neurosciences des Systèmes Marseille France ([ROR:019kqby73](https://ror.org/019kqby73))
+3. APHM, Hôpital de la Timone, Service de Neurophysiologie Clinique Marseille France ([ROR:05jrr4320](https://ror.org/05jrr4320))
 
 † Corresponding author
 
 ## Abstract
 
-To what extent does speech and music processing rely on domain-specific and domain-general neural networks? Using whole-brain intracranial EEG recordings in 18 epilepsy patients listening to natural, continuous speech or music, we investigated the presence of frequency-specific and network-level brain activity. We combined it with a statistical approach in which a clear operational distinction is made between shared , preferred, and domain- selective neural responses. We show that the majority of focal and network-level neural activity is shared between speech and music processing. Our data also reveal an absence of anatomical regional selectivity. Instead, domain-selective neural responses are restricted to distributed and frequency-specific coherent oscillations, typical of spectral fingerprints. Our work highlights the importance of considering natural stimuli and brain dynamics in their full complexity to map cognitive and brain functions.
+To what extent does speech and music processing rely on domain-specific and domain-general neural networks? Using whole-brain intracranial EEG recordings in 18 epilepsy patients listening to natural, continuous speech or music, we investigated the presence of frequency-specific and network-level brain activity. We combined it with a statistical approach in which a clear operational distinction is made between shared, preferred, and domain-selective neural responses. We show that the majority of focal and network-level neural activity is shared between speech and music processing. Our data also reveal an absence of anatomical regional selectivity. Instead, domain-selective neural responses are restricted to distributed and frequency-specific coherent oscillations, typical of spectral fingerprints. Our work highlights the importance of considering natural stimuli and brain dynamics in their full complexity to map cognitive and brain functions.
 
 ## Introduction
 
@@ -38,9 +38,61 @@ In an effort to take into account all the above challenges and to precisely quan
 
 ## Results
 
-## Anatomical regional neural activity is mostly non-domain selective to speech or music
+### Anatomical regional neural activity is mostly non-domain selective to speech or music
 
 To investigate the presence of domain selectivity during ecological perception of speech and music, we first analyzed the neural responses to these two cognitive domains in both a spatially and spectrally resolved manner, with respect to two baseline conditions: one in which patients passively listened to pure tones (each 30 ms in duration), the other in which they passively listened to isolated syllables (/ba/ or /pa/, see Methods). Here, we will report the results using pure tones data as baseline, but note that the results using syllables data as baseline are highly similar (see Figures 2—6 and corresponding figure supplements).We classified, for each canonical frequency band, each channel into one of the categories mentioned above, i.e., shared, selective, or preferred (Figure 1A), by examining whether speech and/or music differ from baseline and whether they differ from each other. We also considered both activations and deactivations, compared to baseline, as both index a modulation of neural population activity, and both have been linked with cognitive processes (Pfurtscheller and Lopes da Silva, 1999; Proix et al., 2022). However, because our aim was not to interpret specific increase or decrease with respect to the baseline, we here simply consider significant deviations from the baseline. In other words, when estimating selectivity, it is the strength of the response that matters, not its direction (activation, deactivation). Overall, neural responses are predominantly shared between the two domains, accounting for ~70% of the channels which showed a significant response compared to baseline (Figures 2 and 3). The preferred category is also systematically present, accounting for 3–15% of significant neural responses, across frequency bands. Selective responses are more present in the lower frequency bands (~30% up to the alpha band), and quite marginal in the HFa band (6–12%).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig2-v1.jpg)
+
+**Figure 2.:** (A–F) Neural responses to speech and/or music for the six canonical frequency bands. Only significant activations compared to the baseline condition (pure tones listening) are reported (see Figure 2—figure supplement 2 for uncategorized, continuous results). Nested pie charts indicate: (1) in the center, the percentage of channels that showed a significant response to speech and/or music. (2) The outer pie indicates the percentage of channels, relative to the center, classified as shared (white), selective (light gray), and preferred (dark gray). (3) The inner pie indicates, for the selective (plain) and preferred (pattern) categories, the proportion of channels that were (more) responsive to speech (red) or music (blue). Brain plots indicate: Distribution of shared (white) and selective (red/blue) stereotactic EEG (sEEG) channels projected on the brain surface. Results are significant at q<0.01 (N=18).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Neural responses to speech and/or music for the six canonical frequency bands. Only significant activations compared to the baseline condition (syllables listening) are reported. Same conventions as in Figure 2. Results are significant at q<0.01 (N=18).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Same conventions as in Figure 2. Results are significant at q<0.01 (N=18).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Distribution of uncategorized, continuous t-values from the speech vs. music permutation test, projected on the brain surface. Only stereotactic EEG (sEEG) channels for which speech and/or music is significantly stronger (left column) or weaker (right column) than the baseline condition (pure tones listening) are reported. Channels for which the speech vs. music contrast is significant are circled in black. Channels for which the speech vs. music contrast is not significant are circled in white. Results are significant at q<0.01 (N=18).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig3-v1.jpg)
+
+**Figure 3.:** (A–F) Neural responses to speech and/or music for the six canonical frequency bands. Only significant deactivations compared to the baseline condition (pure tones listening) are reported. Same conventions as in Figure 2. Results are significant at q<0.01 (N=18).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) Neural responses to speech and/or music for the six canonical frequency bands. Only significant deactivations compared to the baseline condition (syllables listening) are reported. Same conventions as in Figure 2. Results are significant at q<0.01 (N=18).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A-F) Neural responses to speech and/or music for the six canonical frequency bands. Same conventions as in Figure 2. Results are significant at q<0.01 (N=18).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig4-v1.jpg)
+
+**Figure 4.:** (A-F) Percentage of channels that exclusively respond to speech (red) or music (blue) across different frequency bands. For each plot, the first (leftmost) value corresponds to the percentage (%) of channels displaying a selective response in a specific frequency band (either activation or deactivation, compared to the baseline condition of pure tones listening). In the next value, we remove the channels that are significantly responsive in the other domain (i.e. no longer exclusive) for the following frequency band (e.g. in panel A: speech selective in delta; speech selective in delta XOR music responsive in theta; speech selective in delta XOR music responsive in theta XOR music responsive in alpha; and so forth). The black dots at the bottom of the graph indicate which frequency bands were successively included in the analysis. Note that channels remaining selective across frequency bands did not necessarily respond selectively in every band. They simply never showed a significant response to the other domain in the other bands.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A-F) Percentage of channels that selectively respond to speech (red) or music (blue) across different frequency bands, compared to the baseline condition (syllable listening). Same conventions as in Figure 4.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig5-v1.jpg)
+
+**Figure 5.:** (A–F) Population prevalence of shared or selective responses for the six canonical frequency bands, per anatomical region (note that preferred responses are excluded). Only significant activations compared to the baseline condition (pure tones listening) are reported. Regions (on the x-axis) were included in the analyses if they had been explored by minimally two patients with minimally two significant channels. Patients were considered to show regional selective processing when all their channels in a given region responded selectively to either speech (red) or music (blue). When regions contained a combination of channels with speech selective, music selective, or shared responses, the patient was considered to show shared (white) processing in this region. The height of the lollipop (y-axis) indicates the percentage of patients over the total number of explored patients in that given region. The size of the lollipop indicates the number of patients. As an example, in panel F (high-frequency activity [HFa] band), most lollipops are white with a height of 100%, indicating that, in these regions, all patients presented a shared response profile. However, in the left inferior parietal lobule (IPL, left) one patient (out of the seven explored) shows speech selective processing (filled red circle). A fully selective region would thus show a fixed-color full height across all frequency bands. Abbreviations according to the Human Brainnetome Atlas (Fan et al., 2016).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–F) Population prevalence of shared or selective responses for the six canonical frequency bands, per anatomical region. Only significant activations compared to the baseline condition (syllables listening) are reported. Same conventions as in Figure 5.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig6-v1.jpg)
+
+**Figure 6.:** (A–F) Population prevalence of shared or selective responses for the six canonical frequency bands, per anatomical region. Only significant deactivations compared to the baseline condition (pure tones listening) are reported. Same conventions as in Figure 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–F) Population prevalence of shared or selective responses for the six canonical frequency bands, per anatomical region. Only significant deactivations compared to the baseline condition (syllables listening) are reported. Same conventions as in Figure 5.
 
 The spatial distribution of the spectrally resolved responses corresponds to the network typically involved in speech and music perception. This network encompasses both ventral and dorsal auditory pathways, extending well beyond the auditory cortex and hence beyond auditory processing that may result from differences in the acoustic properties of our baseline and experimental stimuli. This is the case for overall responses but also when only looking at shared responses. For instance, HFa shared responses represent 74–86% of the overall significant HFa responses, and are visible in the left superior and middle temporal gyri, inferior parietal lobule, and the precentral, middle, and inferior frontal gyri (Figures 2F and 3F). The left hemisphere appears to be more strongly involved, but this result is biased by the inclusion of a majority of patients with a left hemisphere exploration (Figure 1C and D and Supplementary file 1). Also, when inspecting left and right hemispheres separately, the patterns of shared, selective, and preferred responses remain similar across hemispheres across frequency bands (see Figure 2—figure supplement 3 and Figure 3—figure supplement 2 for activation and deactivation, respectively). Both domains displayed a comparable percentage of selective responses across frequency bands (Figure 4, first values of each plot). When considering separately activation (Figure 2) and deactivation (Figure 3) responses, speech and music showed complementary patterns: for low frequencies (<15 Hz) speech selective (and preferred) responses were mostly deactivations and music responses activations compared to baseline, and this pattern reversed for high frequencies (>15 Hz).
 
@@ -50,15 +102,31 @@ Critically, we found no evidence of anatomical regional selectivity, i.e., of a 
 
 Overall, these results reveal an absence of regional selectivity to speech or music under ecological conditions. Instead, selective responses coexist in space across different frequency bands. But, while selectivity may not be striking at the level of anatomical regional activity, it may still be present at the network level. To investigate this hypothesis, we explored the connectivity between the auditory cortex and the rest of the brain. And, to functionally define the auditory cortex for each patient, we first investigated the relation between the auditory signal itself and the brain response to identify which sEEG channels (spatial) best encode the dynamics of the auditory stimuli.
 
-## Low-frequency neural activity best encodes acoustic dynamics
+### Low-frequency neural activity best encodes acoustic dynamics
 
 We linearly modeled the neurophysiological responses to continuous speech and music using temporal response functions (TRFs). Based on previous studies (Oganian and Chang, 2019; Zion Golumbic et al., 2013; Zuk et al., 2021), we compared four TRF models. From both stimuli, we extracted the continuous, broadband temporal envelope (henceforth ‘envelope’) and the discrete acoustic onset edges (henceforth ‘peakRate’; see Methods) and we quantified how well these two acoustic features are encoded by either the low-frequency (LF) band (1–9 Hz) or the high-frequency amplitude (80–120 Hz) bands. For each model, we estimated the percentage of total channels for which a significant encoding was observed during speech and/or music listening. The model for which most channels significantly encoded speech and/or music acoustic features corresponded to the model in which LF neural activity encoded the peakRates (Figure 7A). In general, the LF activity encodes the acoustic features in significantly more channels than the HFa amplitude (peakRate & LF vs. peakRate & HFa amplitude comparison: t=13.39, q<0.0001; peakRate & LF vs. envelope & HFa amplitude comparison: t=9.55, q<0.0001). Note that this effect is not caused by the asymmetric comparison of bandpassed LF to HFa amplitude as model comparisons using the same extraction technique for both signals did not change the results (Figure 7—figure supplement 1). Then, while the peakRates are encoded by numerically more channels than the instantaneous envelope, this difference was not significant (peakRate & LF vs. envelope & LF comparison: t=1.93, q=0.42).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig7-v1.jpg)
+
+**Figure 7.:** (A) Model comparison. On the top left a toy model illustrates the use of Venn diagrams comparing the winning model (peakRate in low frequency [LF]) to each of the three other models for speech and music (pooled). Four TRF models were investigated to quantify the encoding of the instantaneous envelope and the discrete acoustic onset edges (peakRate) by either the LF band or the high-frequency amplitude. The ‘peakRate & LF’ model significantly captures the largest proportion of channels, and is, therefore, considered the winning model. The percentages on the top (in bold) indicate the percentage of total channels for which a significant encoding was observed during speech and/or music listening in either of the two compared models. In the Venn diagram, we indicate, out of all significant channels, the percentage that responded in the winning model (left) or in the alternative model (right). The middle part indicates the percentage of channels shared between the winning and the alternative model (percentage not shown). q-Values indicate pairwise model comparisons (Wilcoxon signed-rank test, FDR-corrected). (B and C) peakRate & LF model: Spatial distribution of stereotactic EEG (sEEG) channels wherein LF neural activity significantly encodes the speech (red) and music (blue) peakRates. Higher prediction accuracy (Pearson’s r) is indicated by increasing color saturation. All results are significant at q<0.01 (N=18). (D) Anatomical localization of the best encoding channel within the left hemisphere for each patient (N=15), as estimated by the ‘peakRate & LF’ model (averaged across speech and music). These channels are all within the auditory cortex and serve as seeds for subsequent connectivity analyses. (E) TRFs averaged across the seed channels (N=15), for speech and music. (F) Prediction accuracy (Pearson’s r) of the neural activity of each seed channel, for speech and music.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Models were investigated to quantify the encoding of the instantaneous envelope and the discrete acoustic onset edges (peakRate) by either the LF amplitude or the HFa amplitude. The ‘peakRate & LF amplitude’ model significantly captures the largest proportion of channels, and is, therefore, considered the winning model. Same conventions as in Figure 7A.
+
 Furthermore, we show that the peakRates are encoded by the LF neural activity throughout the cortex, for both speech and music (Figure 7B and C). More precisely, the regions wherein neural activity significantly encodes the acoustic structure of the stimuli go well beyond auditory regions and extend to the temporo-parietal junction, motor cortex, inferior frontal gyrus, and anterior and central sections of the superior and middle temporal gyrus. In particular, the strongest encoding values for speech are observed in the typical left-hemispheric language network, comprising the upper bank of the superior temporal gyrus, the posterior part of the inferior frontal gyrus, and the premotor cortex (Malik-Moraleda et al., 2022). Still, as expected, the best cortical tracking of the acoustic structure takes place in the auditory cortex, for both speech and music (Figure 7D). In other words, the best encoding channels are the same for speech and music and are those located closest to—or in—the primary auditory cortex. While the left hemisphere appears to be more strongly involved, this result is biased by the inclusion of a majority of patients with a left hemisphere exploration (see Figure 1C and D and Supplementary file 1). Proportionally, we found no difference in the number of significant channels between hemispheres (i.e. speech: 41% and 44% for left and right hemispheres respectively; music: 22% and 24% for left and right hemispheres, respectively). Finally, the peakRate & LF model, i.e., the model that captures the largest proportion of significant channels during speech and/or music perception (Figure 7A), yields for both classes of stimuli a similar TRF shape (Figure 7E) as well as similar prediction accuracy scores (Pearson’s r), of up to 0.55 (Figure 7F).
 
-## Connections of the auditory cortex are also mostly non-domain selective to speech or music
+### Connections of the auditory cortex are also mostly non-domain selective to speech or music
 
 Seed-based connectivity analyses first revealed that, during speech or music perception, the auditory cortex is mostly connected to the rest of the brain through slow neural dynamics, with ~33% of the channels showing coherence values higher than the surrogate distribution at delta rate, and only ~12% at HFa (Figure 8, see also Figure 8—figure supplement 1 for uncategorized, continuous results). Across frequencies, most of the significant connections are shared between the two cognitive domains (~70%), followed by preferred (~15%) and selective connections (~12%). Selectivity is nonetheless homogeneously present in all frequency bands (Figure 8). Importantly, selectivity is again frequency-specific (Figure 9). Estimating the cross-frequency channel selectivity, the percentage of total connections being selective to speech or music is at zero for all frequency bands except for the delta range (speech = 0.19%; music = 0.06%). Hence, selectivity is only visible at the level of frequency-specific distributed networks. Finally, here again no anatomical regional selectivity is observed, i.e., not a single cortical region is solely selective to speech or music. Rather, in every cortical region, the majority of patients show shared responses at the regional level, as estimated by the population prevalence analysis (Figure 10).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig8-v1.jpg)
+
+**Figure 8.:** (A–F) Significant coherence responses to speech and/or music for the six canonical frequency bands (see Figure 8—figure supplement 1 for uncategorized, continuous results). The seed was located in the left auditory cortex (see Figure 7D). Same conventions as in Figure 2, except for the center percentage in the nested pie charts which, here, reflects the percentage of channels significantly connected to the seed. Results are significant at q<0.01 (N=15).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Distribution of uncategorized, continuous differences in coherence values between speech and music, projected on the brain surface. Same conventions as in Figure 8. Results are significant at q<0.01 (N=15).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig9-v1.jpg)
 
@@ -66,7 +134,7 @@ Seed-based connectivity analyses first revealed that, during speech or music per
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/94509/elife-94509-fig10-v1.jpg)
 
-**Figure 10.:** A-F) canonical frequency bands (N=15).Same conventions as in Figure 5.
+**Figure 10.:** Same conventions as in Figure 5.
 
 ## Discussion
 
@@ -86,17 +154,17 @@ In conclusion, our results point to a massive amount of shared neural response t
 
 ## Methods
 
-## Participants
+### Participants
 
 18 patients (10 females, mean age 30 years, range 8–54 years) with pharmacoresistant epilepsy participated in the study. All patients were French native speakers. Neuropsychological assessments carried out before sEEG recordings indicated that all patients had intact language functions and met the criteria for normal hearing. In none of them were the auditory areas part of their epileptogenic zone as identified by experienced epileptologists. Recordings took place at the Hôpital de La Timone (Marseille, France). Patients provided informed consent prior to the experimental session, and the experimental protocol was approved by the Institutional Review Board of the French Institute of Health (IRB00003888).
 
-## Data acquisition
+### Data acquisition
 
 The sEEG signal was recorded using depth electrodes shafts of 0.8 mm diameter containing 10–15 electrode contacts (Dixi Medical or Alcis, Besançon, France). The contacts were 2 mm long and were spaced from each other by 1.5 mm. The locations of the electrode implantations were determined solely on clinical grounds. Patients were included in the study if their implantation map covered at least partially the Heschl’s gyrus (left or right). The cohort consists of 13 unilateral implantations (10 left, 3 right) and 5 bilateral implantations, yielding a total of 271 electrodes and 3371 contacts (see Figure 1C and D for electrodes localization).
 
 Patients were recorded either in an insulated Faraday cage or in the bedroom. In the Faraday cage, they laid comfortably in a chair, the room was sound attenuated, and data were recorded using a 256-channel amplifier (Brain Products), sampled at 1 kHz and high-pass filtered at 0.016 Hz. In the bedroom, data were recorded using a 256-channel Natus amplifier (DeltaMed system), sampled at 512 Hz, and high-pass filtered at 0.16 Hz.
 
-## Experimental design
+### Experimental design
 
 Patients completed three separate sessions. In one session they completed the main experimental paradigm and the two additional sessions served as baseline for the spectral analysis (see below).
 
@@ -106,17 +174,17 @@ In the two baseline sessions, patients passively listened to two more basic type
 
 In the Faraday cage, a sound Blaster X-Fi Xtreme Audio, an amplifier Yamaha P2040 and Yamaha loudspeakers (NS 10M) were used for sound presentation. In the bedroom, stimuli were presented using a Sennheiser HD 25 headphone set. Sound stimuli were presented at 44.1 kHz sample rate and 16 bits resolution. Speech and music excerpts were presented at ~75 dBA (see Figure 1B).
 
-## General preprocessing related to electrodes localization
+### General preprocessing related to electrodes localization
 
 To increase spatial sensitivity and reduce passive volume conduction from neighboring regions (Mercier et al., 2017; Mercier et al., 2022), the signal was offline re-referenced using bipolar montage. That is, for a pair of adjacent electrode contacts, the referencing led to a virtual channel located at the midpoint locations of the original contacts. To precisely localize the channels, a procedure similar to the one used in the iELVis toolbox and in the FieldTrip toolbox was applied (Groppe et al., 2017; Stolk et al., 2018). First, we manually identified the location of each channel centroid on the post-implant CT scan using the Gardel software (Medina Villalon et al., 2018). Second, we performed volumetric segmentation and cortical reconstruction on the pre-implant MRI with the Freesurfer image analysis suite (documented and freely available for download online at http://surfer.nmr.mgh.harvard.edu/). This segmentation of the pre-implant MRI with SPM12 provides us with both the tissue probability maps (i.e. gray, white, and cerebrospinal fluid [CSF] probabilities) and the indexed-binary representations (i.e. either gray, white, CSF, bone, or soft tissues). This information allowed us to reject electrodes not located in the brain. Third, the post-implant CT scan was coregistered to the pre-implant MRI via a rigid affine transformation and the pre-implant MRI was registered to MNI152 space, via a linear and a non-linear transformation from SPM12 methods (Penny et al., 2011), through the FieldTrip toolbox (Oostenveld et al., 2011). Fourth, applying the corresponding transformations, we mapped channel locations to the pre-implant MRI brain that was labeled using the volume-based Human Brainnetome Atlas (Fan et al., 2016).
 
 Based on the brain segmentation performed using SPM12 methods through the FieldTrip toolbox, bipolar channels located outside of the brain were removed from the data (3%). The remaining data (Figure 1C) was then bandpass filtered between 0.1 and 250 Hz, and, following a visual inspection of the power spectral density profile of the data, when necessary, we additionally applied a notch filter at 50 Hz and harmonics up to 200 Hz to remove power line artifacts (N=12). Finally, the data were downsampled to 500 Hz.
 
-## Artifact rejection
+### Artifact rejection
 
 To define artifacted channel we used both the broadband signal and the amplitude of the HFa. This latter was obtained by computing, with the Hilbert transform, the analytic amplitude of four 10-Hz-wide sub-bands spanning from 80 to 120 Hz. Each sub-band was standardized by dividing it by its mean and, finally, all sub-bands were averaged together (Ossandón et al., 2012; Vidal et al., 2012). Channels with a variance greater than 2*IQR (interquartile range, i.e. a non-parametric estimate of the standard deviation)—on either the broadband or high-frequency signals—were tagged as artifacted channels (on average 18% of the channels). Then the data were epoched in non-overlapping segments of 5 s (2500 samples). To exclude artifacted epochs, epochs, wherein the maximum amplitude (over time) summed across non-excluded channels was greater than 2*IQR, were tagged as artifacted epochs. Overall, 6% of the speech epochs and 7% of the music epochs were rejected. Channels and epochs defined as artifacted were excluded from subsequent analyses, except if specified otherwise (see TRF analysis section).
 
-## Spectral analysis
+### Spectral analysis
 
 Six canonical frequency bands were investigated: delta (1–4 Hz), theta (5–8 Hz), alpha (8–12 Hz), beta (18–30 Hz), low-gamma (30–50 Hz), and HFa (80–120 Hz). To prevent edge artifacts, prior to extracting the power spectrum, epochs were zero-padded on both sides with 3.5 s segments which were later removed. For each patient, channel, epoch, and frequency band, the power of the neural signal was calculated using the Welch approach on discrete Fourier transform from the SciPy-Python library (Virtanen et al., 2020) and then averaged across the relevant frequencies to obtain these six canonical bands.
 
@@ -124,7 +192,7 @@ For each canonical band and each channel, we classified the time-averaged neural
 
 For each frequency band and channel, the statistical difference between conditions was estimated with paired sample permutation tests based on the t-statistic from the MNE-Python library (Gramfort et al., 2014) with 1000 permutations and the tmax method to control the family-wise error rate (Groppe et al., 2011; Nichols and Holmes, 2002). In tmax permutation testing, the null distribution is estimated by, for each channel (i.e. each comparison), swapping the condition labels (speech vs music or speech/music vs baseline) between epochs. After each permutation, the most extreme t-scores over channels (tmax) are selected for the null distribution. Finally, the t-scores of the observed data are computed and compared to the simulated tmax distribution, similar as in parametric hypothesis testing. Because with an increased number of comparisons, the chance of obtaining a large tmax (i.e. false discovery) also increases, the test automatically becomes more conservative when making more comparisons, as such correcting for the multiple comparison between channels.
 
-## TRF analysis
+### TRF analysis
 
 We used the TRF to estimate the encoding of acoustic features by neural activity. Two acoustic features were extracted from our stimuli (speech, music): the envelope and the peakRate. To estimate the temporal envelope of the two stimuli, the acoustic waveforms were decomposed into 32 narrow frequency bands using a cochlear model, and the absolute value of the Hilbert transform was computed for each of these narrowband signals. The broadband temporal envelope (henceforth ‘envelope’) resulted from the summation of these absolute values. The acoustic onset edges (henceforth ‘peakRate’) were defined as peaks in the rate of change (first derivative) of the envelope (Doelling et al., 2014; Oganian and Chang, 2019). Finally, both the envelopes and peakRates were downsampled to 100 Hz and z-scored to be mapped to the neural data.
 
@@ -132,7 +200,7 @@ All computations of the TRF used the pymTRF library (Steinkamp, 2019), a Python 
 
 Models were finally compared in terms of the percentage of channels that significantly encoded the acoustic structure of speech and/or music. This percentage was estimated at the single-subject level and combined with non-parametric Wilcoxon signed-rank tests at the group level to define the winning model. In other words, the winning model is the model for which the percentage of channels significantly encoding speech and/or music acoustic features is the largest. Multiple comparison across pairs of models was controlled for with a FDR correction.
 
-## Connectivity analysis
+### Connectivity analysis
 
 We examined the frequency-specific functional connectivity maps in response to speech and music, between the entire brain and the auditory cortex using a seed-based approach (we dismissed the channels immediately neighboring the seed channel). As seed, we selected, per patient, the channel that best encoded the speech and music acoustic features (see TRF analysis; Figure 7D). We used spectral coherence as a connectivity measure for all canonical bands (see above) and all analyses were performed using the MNE-Python library (Gramfort et al., 2014). Our rationale to use coherence as functional connectivity metric was threefold. First, coherence analysis considers both magnitude and phase information. While the absence of dissociation can be criticized, signals with higher amplitude and/or SNR lead to better time-frequency estimates (which is not the case with a metric that would focus on phase only and therefore would be more likely to include estimates of various SNR). Second, we choose a metric that allows direct comparison between frequencies. As, at high frequencies phase angle changes more quickly, phase alignment/synchronization is less likely in comparison with lower frequencies. Third, we intend to align to previous work which, for the most part, used the measure of coherence most likely for the reasons explained above.
 
@@ -140,6 +208,6 @@ For each frequency band, we classified each channel into selective, preferred, o
 
 Statistical significance was assessed for each frequency band and channel using surrogate data with 1000 iterations, which were generated by modifying the temporal structure of the sEEG signal recorded at the seeds (i.e. shuffling the epochs) prior to computing connectivity. This process led to a total of 1000 connectivity values, which were used as null distribution to calculate the probability threshold associated with genuine connectivity.
 
-## Population prevalence
+### Population prevalence
 
 For both the spectral and the connectivity analyses, in order to make sure that the results are not driven by the heterogeneity of electrode locations across patients, we examined, for each region, the proportions of patients showing only shared or selective responses. That is, for both the spectral and connectivity results, we examined results representativeness as follows: for each anatomical region wherein at least two patients have at least two significantly responsive channels, we computed the percentage of patients that showed a pattern of selective (i.e. all channels selective to speech or music) or a shared (i.e. a mixture of channels responding to speech and/or music) responses. This approach is inspired by the population prevalence, where an equivalent metric is introduced (i.e. the maximum a posterior estimate; see Ince et al., 2021).

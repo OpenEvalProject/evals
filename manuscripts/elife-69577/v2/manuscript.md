@@ -52,11 +52,103 @@ We previously showed that a vaccine-induced gene signature identified in B cells
 
 ## Results
 
-## Gene signature is absent in a human HIV vaccine trial that did not show efficacy
+### Gene signature is absent in a human HIV vaccine trial that did not show efficacy
 
 Since the gene signature associated with protection within the vaccinated group in multiple studies from different sources and regimens, we wanted to further confirm that this signature was truly associated with protection by looking for its presence or absence in a human vaccine trial that failed to show efficacy (Supplementary file 1a). We screened for this gene signature in whole-transcriptome data within participants vaccinated with the DNA/rAd5 HIV-1 preventive vaccine in the HVTN 505 human efficacy trial. Immunizations in this trial were halted prior to reaching the clinical endpoint due to lack of efficacy (Hammer et al., 2013). When comparing infection status within vaccinated individuals, enrichment of this gene signature, as defined by the normalized enrichment score (NES), was not significant in transcriptome data from sorted B cells or monocytes 1 month after the final immunization (NES=–1.18, p=0.09 and NES=1.12, p=0.18, respectively). This finding further supports our hypothesis that this gene signature is associated with protection, as summarized in Table 1.
 
-## Genes from this signature are the strongest correlate of protection in RV144
+**Table 1.**
+ Gene signature associates with vaccine protection in multiple trials.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Vaccine regimen</th>
+      <th>Species</th>
+      <th>Partial protection</th>
+      <th>N</th>
+      <th>Method</th>
+      <th>Protective signature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09–11</td>
+      <td>Ad26/gp140</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>10</td>
+      <td>RNA-seq</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>13–19</td>
+      <td>Ad26/gp140</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>11</td>
+      <td>RNA-seq</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>13–19</td>
+      <td>A26/Ad26+ gp140</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>12</td>
+      <td>RNA-seq</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>13–19</td>
+      <td>Ad26/MVA+ gp140</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>9</td>
+      <td>RNA-seq</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALVAC-SIV/gp120</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>27</td>
+      <td>Microarray</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DNA-SIV/ALVAC+ gp120</td>
+      <td>NHP</td>
+      <td>Y</td>
+      <td>12</td>
+      <td>Microarray</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>RV144</td>
+      <td>ALVAC/gp120</td>
+      <td>Human</td>
+      <td>Y</td>
+      <td>170</td>
+      <td>Microarray</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>HVTN 505</td>
+      <td>DNA/rAd5</td>
+      <td>Human</td>
+      <td>N</td>
+      <td>42</td>
+      <td>RNA-seq</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genes from this signature are the strongest correlate of protection in RV144
 
 In previous analyses of NHP preclinical studies, we utilized a composite gene expression score (GES) consisting of an average of standardized expression of the specific number of enriched genes in one study to predict infection status in an independent study using the overlapping expressed genes from the first study (Ehrenberg et al., 2019). While this method is successful in evaluating gene signatures in studies using similar vaccine strategies, we wanted to explore this approach across different studies using diverse platforms. For each independent study, we computed a GES derived from genes within the geneset that were enriched in uninfected donors by averaging standardized expression and showed that it associates with decreased HIV-1 infection (Figure 1). The magnitude of the GES and total number of enriched genes present in the gene signature are specific to each study and are higher in the uninfected compared to infected animals in the two NHP preclinical trials evaluating the mosaic Ad26 vaccine (09–11 and 13–19), including the different arms of the 13–19 study (13–19 a-b) (Figure 1A–C). Further, in the RV144 trial, the GES of 63 enriched genes in the gene signature also was higher in the vaccinated individuals that remained uninfected (Figure 1D). The number of enriched genes in each study might vary due to global differences in the vaccine strategies, but we consistently observed that higher GES associated with protection from HIV acquisition. We took advantage of the composite GES measurement to compare it with the other known primary correlates of HIV-1 infection risk in the human RV144 trial. IgG antibodies binding to the variable regions 1–2 (V1V2) of the HIV-1 Envelope (Env) have been shown to correlate with decreased risk of infection, while IgA binding to Env associated with increased risk of infection (Haynes et al., 2012). We show that the association of the GES in RV144 is a stronger correlate of reduced risk of infection than the previously described V1V2-specific IgG antibodies (Figure 2A). Cumulative incidence curves of HIV-1 infection showed decreased rates of infection among vaccine recipients with high GES (Figure 2B). Estimated vaccine efficacy (VE) was higher among vaccine recipients with higher GES (Figure 2C). The distribution of area under the receiver operating characteristic curve (AUC) and accuracy suggested that GES was also able to predict HIV-1 infection (Figure 2D). The effect of GES was also tested in RV144 vaccine and placebo participants who became infected during the trial (Rolland et al., 2012). If the GES was associated with VE, we would expect that vaccinees with a high GES would not get infected, hence vaccinees who became infected should have lower GES than placebo participants (who reflect the entire distribution of GES). This was observed across 43 breakthrough participants, with a significant difference among participants infected with single HIV-1 founder variants (N=29) (Figure 2—figure supplement 1). These findings strengthen the hypothesis that the GES is associated with VE.
 
@@ -64,7 +156,15 @@ In previous analyses of NHP preclinical studies, we utilized a composite gene ex
 
 **Figure 1.:** GES computed from enriched genes in the geneset is higher in the uninfected compared to infected vaccinated NHP and humans. (A) Ad26/gp140 (09–11 NHP SIV challenge study, 58 enriched genes, N=10), (B) Ad26/gp140 (13–19 NHP SHIV challenge study, 58 enriched genes, N=11), (C) Ad26/Ad26+ gp140 (13–19 NHP SHIV challenge study, 68 enriched genes, N=12), and (D) ALVAC/gp 120 (RV144 human efficacy trial, 63 enriched genes, N=170). Statistical significance was calculated by either Mann-Whitney or unpaired t-test. NHP, non-human primate; SHIV, simian-human immunodeficiency virus; SIV, simian immunodeficiency virus.
 
-## Gene signature associates with an antibody effector function in a human vaccine trial
+![Figure 2.](https://cdn.elifesciences.org/articles/69577/elife-69577-fig2-v2.jpg)
+
+**Figure 2.:** A GES of the 63 enriched genes in the RV144 study was examined as a continuous variable (N=170). (A) GES is associated with lower odds of HIV acquisition compared to the other two primary correlates of risk. Variables were measured at week 26, 2 weeks post last vaccination. For each variable, the OR is reported per 1-SD increase. Transcriptome data was available only in a subset of the 246 donors. (B) Probability of acquiring HIV-1 is lower in individuals with higher GES. (C) Vaccine efficacy is increased significantly in individuals with high GES. (D) Distribution of AUC and accuracy plotted after repeating the process 1000 times showed that GES could predict HIV-1 infection with AUC of 0.67±0.08 and with accuracy of 0.81±0.04. GES, gene expression score.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69577/elife-69577-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** GES was significantly higher in the placebo (blue) compared to vaccine recipients (red) among the RV144 participants with single-founder breakthrough infection (p<0.05). Numbers indicate the number of participants plotted. Asterisks indicate significant pairwise differences by the Mann-Whitney test. GES, gene expression score.
+
+### Gene signature associates with an antibody effector function in a human vaccine trial
 
 Immune responses correlating with this signature can provide additional insights into mechanisms that could be harnessed to improve vaccine design. We previously showed in the NHP studies that the protective gene signature that was enriched in uninfected monkeys after Ad26/gp140 vaccination was also associated with higher magnitude of ADCP (Ehrenberg et al., 2019). In the RV144 human trial a number of immunological parameters were previously measured as part of the immune-correlates analysis, but not ADCP. The RV306 immunogenicity trial that employed a similar prime-boost RV144 vaccine regimen with additional late boosts provided us with a unique opportunity to test if the gene signature was associated with ADCP (Pitisuttithum et al., 2020). We generated transcriptome-wide gene expression data from peripheral blood 2 weeks after the RV144 vaccine regimen (prior to the additional boosts) and assessed for enrichment of the gene signature with the magnitude of ADCP measured at the same time point in 24 participants. The gene signature with 118 enriched genes was significantly associated with higher magnitude of ADCP (NES=3.0, p<0.001) (Figure 3A, Supplementary file 1b). Using the same geneset, 93 genes were found to be enriched in a subset of overlapping participants (N=21), where samples were collected 3 days after the RV144 immunizations (NES=2.5, p<0.001) (Figure 3A, Supplementary file 1b). The model built using ADCP GES from day 3 was able to predict ADCP responses measured 2 weeks after the last vaccination with an accuracy of 0.71. The receiver operator characteristic (ROC) curve illustrates the discriminating ability of the classifier from the day 3 training data set (AUC=0.8, 95% confidence interval [CI]: 0.6–0.99, p=0.01) and the week 2 testing data set (AUC=0.73, 95% CI: 0.5–0.95, p=0.03) to predict ADCP responses (Figure 3B). To evaluate these findings in the context of an efficacy trial, a GES from the list of enriched genes associating with ADCP from both time points was computed in the RV144 study. ADCP GES from both time points correlated strongly with the protective RV144 GES (Rho=0.74, p=2.2e−16, Rho=0.75, p=2.2e−16) (Figure 3C–D). Given the strong correlation in RV144 for the enriched genes from both time points with infection status, we investigated the overlapping 82 genes from day 3 and week 2 time points in a prediction analysis (Figure 4A–B). In addition to being able to successfully predict ADCP magnitude, the genes also show a very clear distinction between the high versus low ADCP groups at both time points (Figure 4C, Supplementary file 1b). To gain understanding of the potential role of the 82 genes, we used GeneMANIA to explore the gene function of the 82 overlapping genes based on physical interaction, co-expression, co-localization, and shared pathways. There were 41 genes that belonged to specific top pathways including the immune system, innate immune system, signaling by interleukins, hallmark inflammatory response, hallmark TNFA signaling via NFKB, cell-cell communication, interleukin-10 signaling, signal regulatory protein family interactions, and pentose phosphate pathway (Figure 4D, Supplementary file 1c). A focused search for gene ontology (GO) terms identified four genes with phagocytosis pathway membership (TYROBP, SIRPA, SIRPB1, and RAB20) (Supplementary file 1d).
 
@@ -76,7 +176,7 @@ Immune responses correlating with this signature can provide additional insights
 
 **Figure 4.:** (A) There were 82 overlapping genes between the day 3 (N=21) and week 2 (N=24) ADCP enriched genes in the RV306 study. (B) The model using GES obtained from the 82 genes was also able to predict ADCP responses measured 2 weeks after vaccination with an accuracy of 0.71. The ROC curve illustrates the discriminating ability of the classifier from the day 3 training data set (AUC=0.81, 95% CI: 0.62–1, p=0.007) and the week 2 testing data set (AUC=0.75, 95% CI: 0.53–0.97, p=0.02) to predict ADCP responses. (C) Heatmap showing the hierarchical clustering of gene expression of the 82 genes (day 3 and week 2 after 4th vaccination) when stratified by magnitude of ADCP responses measured 2 weeks after the 4th immunization. (D) The list of 82 ADCP enriched genes was uploaded in GeneMANIA. Edges represent physical interactions, co-expression, co-localization, and shared pathways. Circles depict the 82 genes, gold circles are the four genes that belong to the gene ontology Phagocytosis pathway, blue circles are genes that are directly connected to them, diamonds indicate related pathways, and the color of the edge indicates the type of connection. ADCP, antibody-dependent cellular phagocytosis; CI, confidence interval; GES, gene expression score; ROC, receiver operator characteristic.
 
-## Pathways and genes shared between ADCP and vaccine protection phenotypes
+### Pathways and genes shared between ADCP and vaccine protection phenotypes
 
 These findings demonstrate a strong link of the geneset with both vaccine protection and ADCP in NHP and human studies. We sought to broaden our understanding of the relationship between the different enriched genes in the geneset and establish some of the top pathways with gene membership from the different studies. Networks and associated pathways from genes that were significantly enriched with either the ADCP or infection phenotypes from the 09–11, 13–19, RV144, and RV306 studies were determined using GeneMANIA. The top pathways were the immune system, innate immune system, H1F1 TF pathway, hypoxia, TNFA signaling via NFKB, cytokine signaling, inflammation response, signaling by interleukins, and IL-10 signaling (Figure 5A). The genes with the most connections were TYROBP, FPR1, CD14, CCR1, TNFRSF1B, CD68, CD63, CEBPD, and LST1. Clustering on the enriched genes to identify highly interconnected regions in the GeneMANIA network showed that TYROBP, FPR1, CD14, TNFRSF1B, CD68, and LST1 were all members of the cluster with the greatest number of genes (Figure 5B). There were no specific enriched genes that were common to all studies (Supplementary file 1b). Pathway enrichment analysis of the 63 genes in the RV144 signature revealed that the top non-redundant enriched clusters with gene membership were myeloid leukocyte activation, lysosome, and cellular response to oxidative stress genes (Figure 5C).
 
@@ -84,9 +184,21 @@ These findings demonstrate a strong link of the geneset with both vaccine protec
 
 **Figure 5.:** A meta-analysis of pathways including enriched genes with reduced infection or higher ADCP was performed. (A) Genes that were enriched in at least one of the nine ADCP or infection status analyses (178) were used as input for GeneMANIA in Cytoscape. The connections between the different genes and the top MSigDB and Reactome pathways are shown. Each gene is represented by a circle and size is proportional to the number of connections with other genes or pathways. The color of each node indicates the enrichment status in the different studies. (B) Clustering of the enriched genes from the different studies. The color of each node represents the membership in a cluster and size is proportional to the number of connections with other genes or pathways. (C) Pathway enrichment analysis results of the 63 enriched genes that associated with reduced infection in the RV144 study. ADCP, antibody-dependent cellular phagocytosis.
 
-## Cellular origin of the protective genes by single-cell transcriptomics
+### Cellular origin of the protective genes by single-cell transcriptomics
 
 To dissect the cellular origin of these genes, we performed simultaneous detection of mRNA and cell surface expression from single cells using the cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) technology in a subset of the vaccinated RV306 participants (Figure 6A). This technology allows simultaneous detection of cell surface markers and mRNA gene expression from the same single cells. Our analyses revealed that a majority of the genes in the RV144 signature were expressed in cells of the myeloid lineage, with monocyte subsets having the highest average gene expression (Figure 6B). A subset of 32 genes were also significantly associated with decreased risk of acquisition in a univariate analysis (odds ratio [OR]<1.0, p<0.05, q<0.1) (Figure 6C). A GES of the 32 significant genes is also associated with decreased risk of acquisition, increased VE, and was able to predict infection status in RV144 (Figure 6—figure supplement 1A-D). A stepwise logistic regression analysis identified specific genes (SEMA4A, SLC36A1, SERINC5, IL17RA, CTSD, CD68, and GAA) to have independent associations with reduced risk of acquisition and was mainly expressed in the monocyte compartment (Figure 6D). CD14+ monocytes also had the greatest number of DEGs that were associated with ADCP, which was not dependent on the frequency of the cell subset (Figure 6E, Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69577/elife-69577-fig6-v2.jpg)
+
+**Figure 6.:** Single-cell CITE-seq in vaccinated participants (N=12) who received the RV144 vaccine regimen (day 3 after last vaccination) identified expression of the genes in the signature in cells from the myeloid lineage. (A) Clustering based on cell surface expression of CITE-seq data. (B) Heatmap of the mRNA expression of the 63 genes from the RV144 signature from single cells. Columns represent single cells from different protein cell subsets and rows the mRNA gene expression. (C) Radar plot showing significant genes in the signature that associated with decreased risk of infection in RV144 (p<0.05, q<0.1) (N=170). (D) Feature plots of the expression of the most protective genes show that SEMA4A, IL17RA, CTSD, CD68, and GAA were mainly expressed in monocytes. (E) CD14+ monocytes had the highest number of differentially expressed genes (DEGs) when comparing high versus low ADCP (2 weeks after vaccination) from single-cell CITE-seq vaccinated participants who received the RV144 vaccine regimen (day 3 after last vaccination). ADCP, antibody-dependent cellular phagocytosis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69577/elife-69577-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** A GES of the 32 enriched genes that were also significantly associated with decreased risk of acquisition in a univariate analysis in the RV144 study was examined as a continuous variable (N=170). (A) GES is associated with lower odds of HIV acquisition compared to the other two primary correlates of risk. Variables were measured at week 26, 2 weeks post last vaccination. For each variable, the OR is reported per 1-SD increase. Transcriptome data was available only in a subset of the 246 donors. (B) Probability of acquiring HIV-1 is lower in individuals with higher GES. (C) Vaccine efficacy is increased significantly in individuals with high GES. (D) Distribution of AUC and accuracy plotted after repeating the process 1000 times showed that GES could predict HIV-1 infection with AUC of 0.69±0.08 and with accuracy of 0.81±0.04. GES, gene expression score; OR, odds ratio.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69577/elife-69577-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Frequencies of each cell subset were calculated for each sample. For the cell subsets with average frequencies >1 % of the sample, there were no significant differences between the frequencies of the cell subsets in the ADCP high versus low samples. ADCP, antibody-dependent cellular phagocytosis.
 
 ## Discussion
 
@@ -104,37 +216,37 @@ Our data demonstrate the potential to discover novel protective correlates using
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The aim of the study was post hoc analyses of a protective gene expression signature identified previously in five SIV/HIV vaccine studies with efficacy and immune response data (Ehrenberg et al., 2019). To enable interpretation of this gene signature, bulk RNA-seq, scRNA-seq, and functional data were generated in clinical samples from the RV306 and HVTN 505 human trials. The RV306 vaccine trial was conducted in Thailand and all participants received the primary RV144 ALVAC/gp120 vaccine series, with additional late boosts assigned to specific groups (Pitisuttithum et al., 2020). Bulk RNA-seq was performed in 24 participants 2 weeks after the RV144 vaccine regimen (week 26). Additionally, RNA-seq was also performed 3 days after the same primary endpoint. The HVTN 505 trial used a DNA/rAd5 vaccine regimen to test safety and efficacy in a US population (Hammer et al., 2013). PBMC collected 1 month after the final immunization (month 7) was available from 47 vaccines in the HVTN 505 study for RNA-seq (Hammer et al., 2013). The infection status of the vaccinees (22 cases and 25 controls) was categorized based on infection status between months 7 and 24. Microarray transcriptome data from PBMC and immune response data for 170 vaccinated individuals from the RV144 study at time point 2 weeks post last vaccination was used for correlates analyses (Fourati et al., 2019; Haynes et al., 2012). All studies were approved by the participating local and international institution review boards. Informed consent was obtained from all participants in the different trials included in this study (Hammer et al., 2013; Pitisuttithum et al., 2020).
 
-## Bulk transcriptomics
+### Bulk transcriptomics
 
 RNA was extracted from sorted B cells (Aqua live/dead−CD20+CD3−) and monocytes (Aqua live/dead−CD20−CD3−CD56−HLA-DR+CD14+) from PBMC of HVTN 505 vaccinees using RNAzolRT (MRC Inc) as per recommendations from the manufacturer. For the preparation of mRNA libraries, polyadenylated transcripts were purified on oligo-dT magnetic beads, fragmented, reverse transcribed using random hexamers, and incorporated into barcoded cDNA libraries based on the Illumina TruSeq platform. Next, libraries were validated by electrophoresis, quantified, pooled, and clustered on Illumina TruSeq v2 flow cells. Clustered flow cells were sequenced on an Illumina HiSeq (2000/4000) using 2×75 base paired-end runs. Total RNA from RV306 participants was extracted from whole blood collected in PAXgene Blood RNA tubes using associated RNA extraction (both QIAGEN; Germantown, MD) and GlobinClear purification kits (Thermo Fisher Scientific; Waltham, MA) as per the manufacturer’s suggestions. RNA-seq was performed using the SMART-Seq technology (Picelli et al., 2014; Ramsköld et al., 2012). Briefly, cDNA was generated from 10 ng of RNA using the SMART-Seq v4 UltraLow Input RNA Prep Kit (Takara Bio Inc) as per the manufacturer’s suggestions, with control RNA spiked-in (Thermo Fisher Scientific). Sequencing libraries were generated using the Nextera XT DNA Sample Prep Kit (Illumina, San Diego, CA). Concentration of each sample in the pooled libraries was determined using the paired-end 300-cycle MiSeq Reagent Nano Kit v2 (2×150 bp) on a MiSeq instrument (both Illumina). Next-generation sequencing was performed on a final adjusted library pool using the paired-end 300-cycle NovaSeq 6000 S2 XP Reagent Kit (2×150 bp) on a NovaSeq instrument (both Illumina) as per the manufacturer’s instructions. Fastp v0.19.7 and Trimmomatic v0.33 with default parameters were used to trim low-quality bases from both ends of each read (Bolger et al., 2014; Chen et al., 2018). Trimmed reads were aligned to the human genome (GRCh38 build 88–92) using HISAT2 v2.1.0 or the STAR aligner (v2.4.2a) and HTSeq (v0.6.1–0.9.1) was used for counting (Dobin et al., 2013; Kim et al., 2015; Anders et al., 2015). Trimmed mean of M-values normalization method, as implemented in the R package edgeR, was used for normalization (Robinson et al., 2010).
 
-## Single-cell transcriptomics
+### Single-cell transcriptomics
 
 Simultaneous evaluation of mRNA and cell surface expression from single cells was performed using feature barcoding (FB) technology from 10× Genomics, based on the CITE-seq technology (Stoeckius et al., 2017). Cell hashing (HTO) was used in conjunction with the 10× Genomics 5’V(D)J Feature Barcoding Kit to generate single-cell mRNA gene expression (GEX) and antibody-derived tag (ADT) libraries (Stoeckius et al., 2017; Stoeckius et al., 2018). Briefly, PBMC from 12 samples were hashed using TotalSeq-C anti-human Hashtag antibodies and combined into two batches. In each batch, surface proteins were stained with a cocktail of 53 TotalSeq-C antibodies (BioLegend). Antibody concentrations were either predetermined by titration (Kotliarov et al., 2020) or used at a default concentration. 50,000 cells from each batch were loaded onto each of four wells of a Chromium chip, and GEX and ADT (HTO and FB) libraries were constructed following the manufacturer’s protocol. Libraries were pooled and quantitated using a MiSeq Nano v2 reagent cartridge. Final libraries were sequenced on the NovaSeq 6000, S4 reagent cartridge (2×100 bp) (Illumina).
 
-## CITE-seq data analyses
+### CITE-seq data analyses
 
 FASTQ files were demultiplexed with bcl2fastq v2.20 (Illumina). Alignment and counting were performed using Cell Ranger v3.1.0 (10× Genomics) and the human reference files provided by 10× Genomics (human genome GRCh38 and Ensembl annotation v93). The average number of genes per cell was 1453 and the average number of unique molecular identifiers was 4248. The mean read depth per cell was approximately 65,000–84,000. The minimum fraction of reads mapped to the genome was 88% and sequencing saturation was above 85% for all lanes, with an average of 88%. The computational analysis of ADT data was performed using the Seurat v3.1 package (Stuart et al., 2019). HTO expression matrices were CLR (Centered Log-Ratio) normalized and demultiplexed using MULTIseqDemux. The FB matrices from the Seurat objects were split into cell-positive and negative droplet matrices using the HTO demultiplexing results, and were used for DSB (Denoised and Scaled by Background) normalization (Kotliarov et al., 2020) (https://cran.r-project.org/web/packages/dsb/index.html). Only cells with <10% mitochondrial genes were retained, and cells were assigned to specific donors using the HTO demultiplexing results. A total of 53,777 single cells remained after the quality control process. The gene expression matrices for all samples were normalized and integrated into a single object in Seurat (Stuart et al., 2019). Based on the workflow described in Kotliarov et al., a distance matrix was generated from cell surface protein features (Kotliarov et al., 2020). This matrix was used for shared-nearest-neighbor finding and clustering at resolution=0.5. Neighbor finding and clustering were performed on the integrated gene expression data at a resolution=0.75 and dimensions=1:30. A tSNE (t-distributed stochastic neighbor embedding) was generated from the protein data PCA. Seurat was used to generate a heatmap, dotplot, and featureplots. Differential gene expression testing was performed within each cluster between the high and low ADCP groups using Seurat’s FindMarkers function. ADCP DEG was filtered to genes with >10% expression in either group, a log fold change >0.25, and a Bonferroni p<0.05.
 
-## ADCP assay
+### ADCP assay
 
 The antibody effector function ADCP was measured as previously described (Ackerman et al., 2011; Tay et al., 2019a; Tay et al., 2016). Briefly, A244 gp120 Env-coated fluorescent beads were incubated at 37°C for 2 hr with diluted plasma (1:50) collected at week 26, 2 weeks after administration of the RV144 vaccination series. Anti-CD4 monoclonal antibody-treated THP-1 cells (human monocytic cell line; ATCC TIB-202) (treated for 15 min at 4°C) were added to immune complexes and spinoculated for 1 hr at 4°C to allow phagocytosis to occur. Supernatant was removed, cells were washed, and fixed in paraformaldehyde. Phagocytosis was measured by flow cytometry and a phagocytosis score was calculated as follows: phagocytosis score=(% pos*MFI of Sample)/(% pos*MFI of no-antibody PBS control). The HIV-1 CD4 binding-site broadly neutralizing antibody (bnAb), CH31, was used as a positive control, and the influenza receptor binding site-specific bnAb, CH65, was used as a negative control. Results are representative of two independent experiments.
 
-## Pathway analyses
+### Pathway analyses
 
 Association of the protective gene signature with infection (HVTN 505) or magnitude of median ADCP (RV306) responses were analyzed using the Gene Set Enrichment Analysis (GSEA) method as described previously (Ehrenberg et al., 2019; Subramanian et al., 2005). GSEA was performed on vaccinated HVTN 505 participants at the visit seven time points, 1 month after the last immunization. RNA-seq was performed on samples prior to infection, but participants were categorized based on their infection status. GSEA was performed on 45 RV306 RNA-seq samples that also had ADCP scores obtained at the week 26 (week 2 after the 4th vaccination) time point. Participants were categorized into high and low ADCP groups based on the median values of ADCP measured in a total of 79 vaccinated participants. The RNA-seq gene expression values at the day 3 and week 2 time points were then analyzed for gene enrichment using a gene set of 200 genes, obtained from the Broad Institute (GSE29618_BCELL_VS_MONOCYTE_DAY7_FLU_VACCINE_DN), between the two groups of samples. The gene signature of interest was considered significantly enriched using a threshold of NES≥1.4 and p<0.001 as described previously (Ehrenberg et al., 2019). The 178 genes enriched with ADCP or infection status in any of the nine analyses, as well as the 82 genes overlapping in enrichment between the two RV306 time points, were used as search terms in GeneMANIA in the Cytoscape software (Montojo et al., 2010; Warde-Farley et al., 2010). We selected connections such as co-expression, co-localization, pathway, and physical interactions, as well as Reactome and MSigDB for Attributes. Zero additional genes and up to 10 additional attributes were found with GO biological process-based weighting. The genes in the nine-analysis network were clustered further using the MCODE algorithm in the clusterMaker2 Cytoscape plugin with default settings (Morris et al., 2011). Pathway enrichment analysis of the 63 genes enriched in the RV144 infection analysis was performed using Metascape with default parameters, database v20210201 (Zhou et al., 2019).
 
-## Correlates of protection
+### Correlates of protection
 
 Composite GES was computed as the average of standardized expression of normalized enriched genes in the gene signature in different vaccine studies. The samples in each vaccine study were grouped into outcomes after challenge or infection status after immunization (Barouch et al., 2015; Barouch et al., 2018; Rerks-Ngarm et al., 2009). Logistic regression was used for evaluating the association between GES and HIV-1 infection in the RV144 study. The fitting methods accommodate the two-phase sampling design via maximum likelihood estimation (Breslow and Holubkov, 1997). Cumulative HIV-1 incidence curves were plotted for the three subgroups of vaccine recipients defined by tertiles into the lower, middle, and upper third of the GES (Low, Medium, and High subgroups), as well as for the entire placebo group HIV negative at week 24 (N=6267 subjects) for reference. These curves were estimated using the Kaplan-Meier method with inverse probability weighting that accounted for the sampling design. Next, VE for the GES subgroups versus the entire placebo group was estimated as one minus the odds of infection in vaccine recipients with Low/Medium/High response divided by the odds of infection in the entire placebo group HIV-1 negative at week 24 of enrollment in the study. The RV144 prediction analysis was implemented by logistic regression. The data set was randomly split into training and testing sets in a 7:3 ratio, while retaining class distributions within the groups. The training data set consisted of 119 individuals while the test data set consisted of 51 individuals. A logistic regression of GES was fit on to the training data set (Prentice et al., 2015). The model’s discriminative ability was evaluated by generating a ROC curve and the corresponding AUC on the test data set. The prediction accuracy of the model was also assessed on the test data set. The probability that gives minimum misclassification error was chosen as the cutoff. This process was repeated 1000 times and the distribution of the resulting AUC and accuracy were demonstrated by a histogram with a density curve. Similar analysis was performed using a GES computed from the 32 genes that were significantly associated with HIV acquisition.
 
 Among 121 RV144 participants who became infected during the trial and had their HIV-1 genome sequenced at diagnosis, 43 had GES measurements computed from microarray data (Fourati et al., 2019; Rolland et al., 2012). Vaccine and placebo groups were compared overall and after stratifying infections with single HIV-1 founders.
 
-## Other statistical analyses
+### Other statistical analyses
 
 Logistic regression that accounted for the sampling design was used for the univariate analyses of the 63 enriched genes. A radar plot of the significant genes was generated to illustrate OR and 95 % CIs. All ORs were reported per 1-SD increase. Significant genes resulted from univariate logistic regressions of the 63 enriched genes were further analyzed with a multivariate stepwise logistic regression to identify genes that were independently associated with HIV protection. Akaike information criterion was used to identify the optimal set of genes. The expressed enriched genes associated with higher magnitude of ADCP in RV306 at day 3 and 2 weeks post the RV144 vaccine regimen were used to compute the ADCP GES in RV144. Spearman correlation was calculated between the ADCP GES from the two time points and the infection GES, respectively.
 

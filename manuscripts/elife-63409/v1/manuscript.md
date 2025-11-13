@@ -19,7 +19,7 @@
 
 ## Abstract
 
-COVID-19 CG ( covidcg.org ) is an open resource for tracking SARS-CoV-2 single-nucleotide variations (SNVs), lineages, and clades using the virus genomes on the GISAID database while filtering by location, date, gene, and mutation of interest. COVID-19 CG provides significant time, labor, and cost-saving utility to projects on SARS-CoV-2 transmission, evolution, diagnostics, therapeutics, vaccines, and intervention tracking. Here, we describe case studies in which users can interrogate (1) SNVs in the SARS-CoV-2 spike receptor binding domain (RBD) across different geographical regions to inform the design and testing of therapeutics, (2) SNVs that may impact the sensitivity of commonly used diagnostic primers, and (3) the emergence of a dominant lineage harboring an S477N RBD mutation in Australia in 2020. To accelerate COVID-19 efforts, COVID-19 CG will be upgraded with new features for users to rapidly pinpoint mutations as the virus evolves throughout the pandemic and in response to therapeutic and public health interventions.
+COVID-19 CG (covidcg.org) is an open resource for tracking SARS-CoV-2 single-nucleotide variations (SNVs), lineages, and clades using the virus genomes on the GISAID database while filtering by location, date, gene, and mutation of interest. COVID-19 CG provides significant time, labor, and cost-saving utility to projects on SARS-CoV-2 transmission, evolution, diagnostics, therapeutics, vaccines, and intervention tracking. Here, we describe case studies in which users can interrogate (1) SNVs in the SARS-CoV-2 spike receptor binding domain (RBD) across different geographical regions to inform the design and testing of therapeutics, (2) SNVs that may impact the sensitivity of commonly used diagnostic primers, and (3) the emergence of a dominant lineage harboring an S477N RBD mutation in Australia in 2020. To accelerate COVID-19 efforts, COVID-19 CG will be upgraded with new features for users to rapidly pinpoint mutations as the virus evolves throughout the pandemic and in response to therapeutic and public health interventions.
 
 ## Introduction
 
@@ -29,9 +29,21 @@ Since the beginning of the pandemic, SARS-CoV-2 genomic data has been accumulati
 
 To address this challenge, we built COVID-19 CoV Genetics (COVID-19 CG, covidcg.org), a performant, interactive, and fully scalable web application that tracks SARS-CoV-2 single-nucleotide variants (SNVs), lineages, and clades without sub-sampling. COVID-19 CG is a free, open access interface that allows users to adapt analyses according to their dates and locations of interest (Figure 1A,B; data processing workflow in Figure 1—figure supplement 2). Users can also select and compare trends in SARS-CoV-2 lineage, clade, or SNV frequency across multiple locations (Figure 1C) as we will demonstrate using case studies. COVID-19 CG provides functionalities that are complementary to other existing public browsers (see Discussion) and were designed to empower these specific user groups:
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-v1.jpg)
+
+**Figure 1.:** (A) Users can select SARS-CoV-2 genomes according to lineage, clade, or single-nucleotide variation (SNV), virus gene or protein, and location(s). Genomes can also be filtered by metadata and specifically analyzed at genomic coordinates of interest, such as the target sites of 665 commonly used diagnostic primers and probes. (B) In the ‘Compare lineages/clades/SNVs’ tab, users can visualize SARS-CoV-2 lineages, clades, or SNVs by location, define their date range of interest, and see the corresponding SNVs at the nucleotide or amino acid level. Lineage/clades/SNVs can be sorted by frequency and name/position. (C) In the ‘Compare locations’ tab, users can compare the frequencies of specific lineages, clades, or SNVs in multiple locations over time.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Data shown as of January 2, 2021. (A) Sequence deposition in GISAID continues at a steady pace, albeit there is a lag between collection (red line) and submission date (blue line). The rate of sequence submission has grown to ~50,000,000 genomes per month. (B) One hundred and thirty-five countries have deposited SARS-CoV-2 genomes in GISAID. (C) The number of SARS-CoV-2 variants with more than four nonsynonymous (NS) mutations continues to increase.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63409/elife-63409-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (1) Sequences and metadata are automatically downloaded and ‘ingested’ on a daily basis. Data for https://covidcg.org is downloaded from a custom GISAID endpoint, but can be configured for any data provider, for example, GenBank (see Methods for details). (2) Based on best practices, we filter out sequences on NextStrain’s exclusion list, non-human SARS-CoV-2 genomes, <29,700,700 nt, or with >5% ambiguous base calls (van Dorp et al., 2020b). (3) Single-nucleotide variations (SNVs) at the nucleotide and amino acid level are determined by aligning (via bowtie2) each sequence to the WIV04 reference, a high quality December 2019 genome recommended by GISAID; NextStrain uses the 100% identical Wuhan-Hu-1 (Langmead et al., 2009). Importantly, spurious SNVs and probable sequencing errors are filtered out prior to downstream analysis. (4) Viral lineages (defined by the pangolin tool) and clades are provided by GISAID. In accordance with pangolin, SNVs present in >90% of sequences within each lineage are assigned as lineage-defining SNVs. (5) The curated data and metadata, SNVs, and lineage-assigned SNVs are associated with their respective sequence identifier and compiled into a compact data set. (6) These data are uploaded onto the COVID-19 CG web application. (7) New analyses will be built into the COVID-19 CG application throughout the course of the pandemic. (8–10) Features and modules that integrate knowledge from other COVID-19 initiatives are continuously incorporated into COVID-19 CG.
+
 Vaccine and therapeutics developers can inform the design and testing of their vaccine, antibody, or small molecule by using COVID-19 CG to rapidly identify all of the variants in their targeted SARS-CoV-2 protein or antigen, alongside the frequency of each variant in their geographical location(s) of interest. Scientists can use COVID-19 CG to generate hypotheses and determine whether the variants present in the location of vaccine/therapeutic implementation may impact their product-specific interaction interface or antigen.
 
-## Case study of SNVs in the receptor binding domain of the SARS-CoV-2 spike
+### Case study of SNVs in the receptor binding domain of the SARS-CoV-2 spike
 
 Analyzing SNVs by geography and time is critical as the frequency of each SNV may vary significantly across different regions over time. For instance, as of December 2020, an S477N mutation in the receptor binding domain (RBD) has become dominant in Australia (69% of Australian SARS-CoV-2 genotypes, all time) although it constitutes less than 6% of SARS-CoV-2 genotypes globally (Figure 2A). SNV frequency in a given region can also shift over time, for example, an RBD N439K mutation not found in Ireland prior to July was present in 42% of the genomes collected mid-July through September, peaking in August and gradually fading after (Figure 2B). Another rare RBD S477N mutation, which was found in only 1% of the Australian SARS-CoV-2 sequences before June, has constituted 84% of the sequenced June through December genomes (Figure 2C). This geographical and temporal variation is important to incorporate into the design and testing of therapeutic antibodies (such as those under development as therapeutics by Regeneron that specifically target the SARS-CoV-2 spike RBD), as well as mRNA or recombinant protein-based vaccines. This will help to assure developers of the efficacy of their therapeutics and vaccines against the SARS-CoV-2 variants that are present in the intended location of implementation.
 
@@ -43,7 +55,7 @@ In addition, COVID-19 CG can be harnessed to track changes in SARS-CoV-2 evoluti
 
 Diagnostics developers can evaluate their probe, primer, or point-of-care diagnostic according to user-defined regional and temporal SARS-CoV-2 genomic variation. More than 665 established primers/probes are built into COVID-19 CG, and new diagnostics will be continually incorporated into the browser as they become publicly available. Users can also input custom coordinates or sequences to evaluate their own target sequences and design new diagnostics.
 
-## Case study of SNVs that could impact the sensitivity of diagnostic primers
+### Case study of SNVs that could impact the sensitivity of diagnostic primers
 
 A recent preprint alerted us to the finding that a common G29140T SNV, found in 22.3% of the study’s samples from Madera County, California, was adversely affecting SARS-CoV-2 detection by the NIID_2019-nCoV_N_F2 diagnostic primer used at their sequencing center; the single SNV caused a ~ 30-fold drop in the quantity of amplicon produced by the NIID_2019-nCov_N_F2/R2 primer pair (Vanaerschot et al., 2020). We used COVID-19 CG to detect other SNVs that could impact the use of this primer pair, discovering that there are SARS-CoV-2 variants in several countries with a different C29144T mutation at the very 3’ end of the same NIID_2019-nCoV_N_F2 primer (Figure 3A). The authors of the preprint, Vanaerschot et al. noted that SNVs could impact assay accuracy if diagnostic primers and probes are also being used to quantify viral loads in patients. We found that at least 10 other primer pairs could potentially be at risk in different geographical regions due to SNVs that appear proximal to the 3’ ends of primers (Figure 3B–K): China-CDC-N-F and R; NIH, Thailand, WH-NIC N-F; US CDC 2019-nCoV-N1-R; US CDC 2019-nCoV-N2-F; ARTIC-V3_nCoV-2019_11_RIGHT; ARTIC-V3_nCoV-2019_13_LEFT; ARTIC-V3_nCoV-2019_34_LEFT; ARTIC-V3_nCoV-2019_39_LEFT (note that the ARTIC primers are used for nanopore sequencing; Tyson et al., 2020); WHO N_Sarbarco_R1; and Institut Pasteur, Paris 12759Rv. Labs and clinics can use COVID-19 CG (https://covidcg.org) to check their most commonly used primers and probes against the SARS-CoV-2 sequences that are prevalent in their geographical regions. We reiterate Vanaerschot et al.’s exhortation that SARS-CoV-2 detection strategies should ideally target multiple viral genes and check for concordant Ct values. In addition, scientists have cautioned against lab-specific errors that exist among the available SARS-CoV-2 genomes, often co-localizing with commonly used primer binding sites (Turakhia et al., 2020). These errors appear to be specific to particular labs and do not affect all of the genomes on the GISAID database. Therefore, we have added a caution to our site and a link to the evolving list of problematic sites (Issues with SARS-CoV-2 sequencing data, 2020) so that users are made aware of these potential errors in some subsets of the genomes deposited on GISAID.
 
@@ -57,7 +69,7 @@ Researchers and public health professionals can use COVID-19 CG to gain insights
 
 **Figure 4.:** Images were downloaded from the Compare Lineages tab of covidcg.org on December 29, 2020: The spike D614 variants are shown in gray, and the G614 variants are shown in green. Plots displaying different population dynamics were deliberately selected. Time is shown on the horizontal axis and the number of sequences is shown on the vertical axis; these differ per country depending on when and how many samples were collected and whether the sequences were deposited onto GISAID by December 29, 2020.
 
-## Case study of Australia’s new dominant SARS-CoV-2 variant
+### Case study of Australia’s new dominant SARS-CoV-2 variant
 
 In September 2020, we observed that the SARS-CoV-2 spike S477N mutation had become more prevalent in Australia (Figure 5A). Globally, the S477N mutation was first detected in a single sample of lineage B.1.1.25 that was collected on March 19, 2020, in Victoria, Australia, and became the dominant SARS-CoV-2 variant in the region between June and September (Figure 5B). In particular, the set of SNVs that co-occur with the S477N mutation in Australia (all time, as well as prior to May 2020 before the most recent outbreak) are different from the set of co-occurring SNVs in the United Kingdom (Figure 5C) — suggesting that the S477N mutation occurred separately in the Australian and the UK lineages. However, COVID-19 CG only reflects data contributed to GISAID. Variants of interest could be present in other countries, but not yet known to the public because the sequencing centers in those countries have not collected or deposited their data in GISAID. Furthermore, in instances where only a singular, sporadic variant is detected (no sustained transmission), there is also the possibility of sequencing error resulting in incorrect lineage assignment. Due to these caveats, the genetic data must be used in combination with other types of data, such as from contact tracing efforts, before it is possible to draw conclusions about the international transmission of SARS-CoV-2 variants. In the case of the S477N variant that is now dominating in Australia, the sequencing data alone indicate that the local transmission of this variant in Australia since March 2020 or earlier cannot be ruled out.
 
@@ -81,40 +93,40 @@ Coordinated sequencing and contact tracing efforts (e.g., in the United Kingdom
 
 ## Materials and methods
 
-## Data pipeline
+### Data pipeline
 
 Our data processing pipeline is written with the Snakemake scalable bioinformatics workflow engine (Köster and Rahmann, 2012), which modularizes our workflow and enables reproducibility and compatibility with cloud-computing. All code and relevant documentation are hosted on an open-source, publicly available GitHub repository (https://github.com/vector-engineering/COVID19-CG; Chen, 2021; copy archived at swh:1:rev:e9558dc11b31b908f3af142e403d33e91d417b8a), providing example data for users to validate our pipeline.
 
 Data analysis is broken up into two Snakemake pipelines: (1) ingestion and (2) main. The ingestion pipeline downloads, chunks, and prepares metadata for the main analysis, and the main pipeline analyzes sequences, extracts SNVs, and compiles data for display in the web application. Configuration of the pipeline and the web application is defined by a single YAML file.
 
-## Data ingestion
+### Data ingestion
 
 At the time of publication, two ingestion workflows are available: workflow_genbank_ingest and workflow_gisaid_ingest. While the GISAID ingestion pipeline is provided as open source, it utilizes a custom GISAID endpoint and is intended only for internal use. Both ingestion pipelines are designed to be run daily and chunk sequence data in order to minimize expensive reprocessing/realignment in the downstream main analysis step. In addition, these ingest pipelines clean the provided sequence metadata by removing unwanted fields, renaming fields, and fixing typos (see ‘Metadata Cleaning’ for details).
 
-## Metadata cleaning
+### Metadata cleaning
 
 We clean metadata with the aim of preserving the original intent of the authors and data submitters while presenting simpler and unified versions to end users. Sequencing metadata is cleaned to remove obvious typos, and to unify labels with the same meaning, for example, ‘MinION’ and ‘Nanopore MinION.’ Location metadata is cleaned with the goal of simplifying the location selector in the sidebar. Locations with excessive children are collapsed to the nearest upper hierarchical grouping. For example, if a state has individual data for 200+ towns, these towns will be collapsed to the county level in order to facilitate easier data browsing. Typos and clear identities are also unified to prevent the display of duplicate locations in the application.
 
-## Sequence preprocessing
+### Sequence preprocessing
 
 Based on best practices, we filter out sequences meeting any of the following criteria: (1) present on the NextStrain’s exclusion list (https://github.com/nextstrain/ncov/blob/master/defaults/exclude.txt; Hadfield et al., 2018), (2) genomes from non-humans (animals, environmental samples, etc.), (3) genome length less than 29,700 nt, or (4) >5% ambiguous base calls. Sequences which pass all preprocessing filters are carried onto the next steps.
 
-## SNV assignments
+### SNV assignments
 
 SNVs and insertions/deletions (indels) at the nucleotide and amino acid level are determined using bowtie2 by aligning each sequence to the WIV04 reference sequence (WIV04 is a high quality December 2019 genome that is 100% identical to the other commonly used publicly available SARS-CoV-2 genome reference Wuhan-Hu-1/NC_045512.2, excepting the length of the poly(A) tail). Spurious SNVs and probable sequencing errors, defined as less than three global occurrences, are filtered out prior to downstream analysis. SNVs involving ambiguous base calls (‘N’ in the original sequences) are ignored. Indels resulting in frameshifts are ignored, and SNVs/indels occurring in non-protein-coding regions are ignored when determining SNVs/indels on the AA level.
 
-## Lineage/clade analysis
+### Lineage/clade analysis
 
 Viral lineages, as defined by the pangolin tool (Rambaut et al., 2020), and clades (Tang et al., 2020) are provided by GISAID. In accordance with pangolin, SNVs present in >90% of sequences within each lineage/clade will be assigned as lineage/clade-defining SNVs.
 
-## Application compilation
+### Application compilation
 
 The web application is written in Javascript and primarily uses the libraries React.js, MobX, and Vega. The code is compiled into Javascript bundles by webpack. Sequence data and metadata are combined and compressed into one file, which is downloaded by the web application on page load. This allows us to regularly update the data on https://covidcg.org.
 
-## Application deployment
+### Application deployment
 
 COVID CG (https://covidcg.org) is hosted by Google Cloud Run. The application code is assembled into a Docker image (see Dockerfile), with a build environment (node.js) and deployment environment (NGINX).
 
-## Data availability
+### Data availability
 
 All of the data shown in this manuscript and displayed on COVID CG (https://covidcg.org) are downloaded from the GISAID EpiCov database (https://www.gisaid.org). All code and relevant documentation are hosted on an open-source, publicly available GitHub repository (https://github.com/vector-engineering/COVID19-CG).

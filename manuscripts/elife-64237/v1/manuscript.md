@@ -38,45 +38,53 @@ With this goal, in this study we assessed the role of gut microbiota as a transm
 
 ## Results
 
-## Maternal microbiome regulates skeletal maturation
+### Maternal microbiome regulates skeletal maturation
 
 To investigate the extent to which maternal microbiome affects the skeleton of the offspring we made use of two strains of mice, C3H/HeN and C57BL/6 purchased from Taconic biosciences (herein referred to as TAC mice) raised in conventional conditions or GF conditions. C3H/HeN mice have higher indices of bone volume and bone stracture as compared to C57BL/6 mice. Conventional TAC C57BL/6 mice were raised in a vivarium that contains SFB, which are potent microbial inducers of Th17 cell expansion in intestinal tissue (Ivanov et al., 2009). Conventional TAC C3H/HeN mice were raised in a SFB- facility. In these experiments, we transferred fecal material of each conventional mouse strain to GF mating pairs of the other mouse strain, i.e. transfer fecal material from a conventioanlly raised C57BL/6 to a GF C3H/HeN breeding pairs, and vice versa. We then assessed bone structure and turnover in 16-week-old female mice of the F1 generation produced by the conventionalized breeding pairs, which were colonized with the mother’s microbiome from birth (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig1-v1.jpg)
 
-**Figure 1.:** (A) Diagram of the experimental outline. Fecal material from conventional C57BL/6 (low BMD) or C3H/HeN (high BMD) mice was transferred to germ-free mating pairs of the other strain. Bone structure and turnover were analyzed in 16-week-old female mice of the F1 generation to determine the influence of the donor microbiota on post-natal skeletal development. (B) Fecal microbiome composition in C57BL/6 (BL6) mice and C3H/HeN (C3H) mice. (C) Quantitative PCR (qPCR) analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX, a marker of bone resorption. (K) Serum levels of osteocalcin (OCN), marker of bone formation. n = 9–12 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.Figure 1—source data 1.
+**Figure 1.:** (A) Diagram of the experimental outline. Fecal material from conventional C57BL/6 (low BMD) or C3H/HeN (high BMD) mice was transferred to germ-free mating pairs of the other strain. Bone structure and turnover were analyzed in 16-week-old female mice of the F1 generation to determine the influence of the donor microbiota on post-natal skeletal development. (B) Fecal microbiome composition in C57BL/6 (BL6) mice and C3H/HeN (C3H) mice. (C) Quantitative PCR (qPCR) analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX, a marker of bone resorption. (K) Serum levels of osteocalcin (OCN), marker of bone formation. n = 9–12 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.
 
 Microbiome sequencing confirmed that the bacterial community structure was different in conventional C57BL/6 and C3H/HeN mice (Figure 1B). We also confirmed the absence of SFB in GF C57BL/6 mice that were colonized with C3H/HeN microbiome, and the presence of SFB in C3H/HeN germ-free mice that were colonized with C57BL/6 microbiome (Figure 1C). Herein, we referred to mice colonized with fecal material from donor of the different genetic background as ‘discordant’ mice, whereas mice colonized with fecal material from a donor of the same genetic background are referred to as ‘concordant’ mice. At 16 weeks of age C3H/HeN concordant mice had higher bone volume/total volume ratio (BV/TV) compared to concordant C57BL/6 mice (Figure 1D). SFB+ mice have a lower BV/TV compared to SFB- mice (Yu et al., 2020; Hathaway-Schrader et al., 2020). Corroborating the relevance of SFB for skeletal maturation, we showed that the discordant C3H/HeN mice had lower femur BV/TV ratio, trabecular number (Tb.N), and trabecular thickness (Tb.Th), and higher trabecular separation (Tb.Sp) than concordant C3H/HeN mice (Figure 1D–G). By contrast, concordant and discordant C57BL/6 mice had similar indices of trabecular volume and structure (Figure 1D–G). Moreover, cortical area (Ct.Ar) and cortical thickness (Ct.Th), which are indices of cortical bone structure, were higher in concordant C3H/HeN mice than in concordant C57BL/6 mice, while discordant C3H/HeN mice had lower Ct.Ar and Ct.Th than concordant C3H/HeN mice (Figure 1H,I). Analysis of C57BL/6 mice cortical structure revealed that Ct.Ar and Ct.Th were higher in discordant than in concordant mice (Figure 1H,I). Together, these findings indicate that TAC C57BL/6 microbiome worsen trabecular and cortical bone maturation. Mechanistic studies revealed that serum CTX, a marker of bone resorption, was higher in concordant C57BL/6 mice than in concordant C3H/HeN mice. Moreover, C3H/HeN microbiome lowered CTX levels in C57BL/6 mice, while C57BL/6 microbiome increased bone resorption in C3H/HeN mice (Figure 1J). By contrast, all groups of mice had similar serum levels of osteocalcin, a marker of bone formation (Figure 1K).
 
 Since C57BL/6 microbiome is SFB+ and C3H/HeN microbiome is SFB-, and SFB is a potent inducer of intestinal Th17 cell expansion (Ivanov et al., 2009), we assessed the number of Th17 cells in Peyer’s Patches (PP) and the BM (Figure 2—figure supplement 1). Because the measurement of the absolute number of PP Th17 cells is technically challenging due to variability of the size of the collected PP tissue, PP Th17 cells were quantified as percentage of total CD4+ T cells. We confirmed that the number of PP Th17 cells and the levels of small intestine (SI) tissue Il17a transcripts were higher in all groups of mice with SFB+ microbiome than in those with SFB- microbiome (Figure 2A,B). In addition, the number of Th17 cells and the levels of Il17a mRNA in the BM were also higher in all mice with an SFB+ microbiome, as compared to those with SFB– microbiome (Figure 2C–E). IL-17 stimulates the release of further inflammatory cytokines. Accordingly, we found the levels of Tnfa mRNA were higher in the BM and SI and of mice with SFB+ microbiome (Figure 2G,H). BM Receptor activator of nuclear factor kappa-Β ligand (Rankl), also known as tumor necrosis factor ligand superfamily member 11 (Tnfsf11) was higher in mice with SFB+ microbiome (Figure 2I), although SI Tnfsf11 mRNA levels were similar in all groups (Figure 2J). These data suggest that the signal to expand BM Th17 cells originates in the intestine, and requires Th17 cell-inducing bacteria, such as SFB to be a component of the microbiome. Critically, these data show proof of principle that acquisition of maternal microbiome at birth affects the postnatal skeletal development of the offspring regardless of its genetic strain.
 
-## Cohabitation regulated skeletal development
+![Figure 2.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig2-v1.jpg)
+
+**Figure 2.:** (A) Relative frequency of Th17 cells (IL-17+ CD4+ T cells) in PP. (B) SI Il17a mRNA levels. (C,D) Relative and absolute frequency of BM Th17 cells. (E) BM Il17a mRNA levels. (F) SI Tnfa mRNA levels. (G) BM Tnfa mRNA levels. (H) SI Tnfsf11 mRNA levels. (I) BM Tnfsf11 mRNA levels. n = 10 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Following red blood cell lysis, single cell suspensions were prepared from Payer’s patches and BM and stained with antibodies to the indicated antigens and live/dead cell dye. Gated regions are numbered from R1 to R6. The figure shows one representative gating of flow cytometric plot.
+
+### Cohabitation regulated skeletal development
 
 Cohabitation is a key non-genomic factor that influences the development over time of species structure in the microbiota of humans (Faith et al., 2013) and mice (Robertson et al., 2019). To evaluate the role of cohabitation on skeletal maturation, 10-week-old female C57BL/6 mice purchased from Jackson Laboratory (herein referred to as JAX mice) and C57BL/6 TAC mice were housed separately, or co-housed for 4 weeks (Figure 3A). Confirming earlier reports (Ivanov et al., 2009), we found JAX and TAC mice to have distinct microbiome composition and diversity (Figure 3B). Importantly, while TAC mice were SFB+, JAX mice were SFB- (Figure 3C), a finding concordant with previous reports (Farkas et al., 2015). As expected, co-housing of JAX and TAC mice equalized the composition of the microbiome, and lead to SFB colonization within the JAX mice (Figure 3B,C). JAX C57BL/6 mice that were housed alone had a higher femoral BV/TV, Tb.N and Tb.Th and lower Tb.Sp than TAC mice housed alone (Figure 3D–G), although they did have similar cortical structure (Figure 3H,I). Co-housing of JAX mice with TAC mice resulted in the equalization of all indices of trabecular volume and structure, although it did not affect cortical bone indices (Figure 3D–I). TAC mice housed alone had higher levels of serum CTX than JAX mice housed alone (Figure 3J). Co-housing of JAX and TAC mice increased the serum levels of CTX in JAX mice, leading to the equalization of CTX levels. By contrast, all groups of mice had similar levels of serum osteocalcin (Figure 3K). These findings indicate that post-natal skeletal development is infleunced by cohabitation via a microbiome dependent mechanism that affects bone resorption.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig3-v1.jpg)
 
-**Figure 3.:** (A) Diagram of the experimental outline. 10-week-old female JAX and TAC mice were housed separately, or co-housed for 4 weeks. (B) Effects of co-housing on the composition and frequency of microbiome. (C) Quantitative PCR analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX. (K) Serum levels of OCN. n = 8–9 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by two-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ****p<0.0001 compared to indicated groups.Figure 3—source data 1.
+**Figure 3.:** (A) Diagram of the experimental outline. 10-week-old female JAX and TAC mice were housed separately, or co-housed for 4 weeks. (B) Effects of co-housing on the composition and frequency of microbiome. (C) Quantitative PCR analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX. (K) Serum levels of OCN. n = 8–9 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by two-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ****p<0.0001 compared to indicated groups.
 
 We found that TAC mice had a higher number of PP and BM Th17 cells and higher expressions of SI and BM Il17a transcripts compared to JAX mice (Figure 4A–E). Co-housing resulted in an increase in Th17 cells and Il17a mRNA in JAX mice. As a result, at the end of the cohabitation period, Th17 cells and Il17a transcript were similar in gut tissues and BM of TAC mice and cohoused JAX mice compared to JAX mice housed alone (Figure 4A–E). In addition, TAC mice housed alone had higher expression of SI and BM Tnfa than JAX mice housed alone, while co-housing of the two groups increased the levels of Tnfa transcripts in JAX mice, up to levels of TAC mice (Figure 4F,G). Finally, while SI Tnfsf11 mRNA levels were similar in all groups (Figure 4H), expression of Tnfsf11 in the BM was higher in TAC mice than in JAX mice housed alone. However, BM Tnfsf11 mRNA levels increased in JAX mice as a result of co-housing with TAC mice (Figure 4I). These data suggest that co-housing of JAX mice with TAC mice induced bone loss in JAX mice by expanding BM Th17 cells and increasing osteoclastogenic cytokine levels.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig4-v1.jpg)
 
-**Figure 4.:** (A) Relative frequency of Th17 cells (IL-17+ CD4+ T cells) in PP. (B) SI Il17a mRNA levels. (C,D) Relative and absolute frequency of BM Th17 cells. (E) BM ll17a mRNA levels. (F) SI Tnfa (TNF) mRNA levels. (G) BM Tnfa mRNA levels. (H) SI Tnfsf11 mRNA levels. (I) BM Tnfsf11 mRNA levels. n = 8–9 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.Figure 4—source data 1.
+**Figure 4.:** (A) Relative frequency of Th17 cells (IL-17+ CD4+ T cells) in PP. (B) SI Il17a mRNA levels. (C,D) Relative and absolute frequency of BM Th17 cells. (E) BM ll17a mRNA levels. (F) SI Tnfa (TNF) mRNA levels. (G) BM Tnfa mRNA levels. (H) SI Tnfsf11 mRNA levels. (I) BM Tnfsf11 mRNA levels. n = 8–9 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.
 
-## Fecal microbiome transfer (FMT) from C57BL/6 TAC mice to antibiotic treated C3H/HeN JAX mice induced bone loss in C3H/HeN TAC mice
+### Fecal microbiome transfer (FMT) from C57BL/6 TAC mice to antibiotic treated C3H/HeN JAX mice induced bone loss in C3H/HeN TAC mice
 
 Although the gut microbiota in mature animals and humans is resistant to colonization by new organisms, extensive and prolonged microbicidal interventions such as a long-term course of antibiotics may elicit enduring changes (Yatsunenko et al., 2012). To investigate the impact on post-natal skeletal development of microbiome changes occurring after the establishment and consolidation of the original microbiome, FMTs were carried out across two strains of mice, and antibiotic treatments were employed. Specifically, groups of 8-week-old female TAC C57BL/6 and TAC C3H/HeN were treated with a cocktail of broad-spectrum antibiotics (Ampicillin; 0.5 g/L, Vancomycin; 0.25 g/L, Neomycin; 0.25 g/L, and Metronidazole; 0.5 g/L) for 2 weeks. 24 hr after the completion of the antibiotic treatment, mice were subjected to oral gavage of a liquid suspension of fecal material from either TAC C57BL/6 mice or TAC C3H/HeN mice (Figure 5A). The recipient mice were housed in sterile cages in an isolated environment for 8 weeks before sacrifice (Figure 5A). Analysis showed that donor C57BL/6 and C3H/HeN mice had distinct microbiome composition and diversity, and that FMT led to the establishment of the donor microbiome in the host mouse (Figure 5B). We confirmed that SFB was present in donor C57BL/6 mice, and that antibiotic treated mice subjected to FMT with fecal material from these mice were also SFB+(Figure 5C). In-vitro µCT analysis showed that donor C3H/HeN mice had higher femoral BV/TV, Tb.N, Tb.Th and lower Tb.Sp compared to C57BL/6 mice (Figure 5D–G). C3H/HeN mice also had higher indices of cortical structure compared to C57BL/6 mice (Figure 5H,I). FMT from donor C57BL/6 mice to antibiotic treated C3H/HeN mice altered all indices of trabecular volume and structure in the recipient C3H/HeN mice (Figure 5D–G). In addition, FMT from C57BL/6 mice to antibiotic treated C3H/HeN mice induced cortical bone loss in the recipient C3H/HeN mice (Figure 5H,I). Conversely, FMT from donor C3H/HeN mice did not affect indices of trabecular and cortical bone in recipient C57BL/6 mice (Figure 5D–I). These data suggested that gut microbiota of C57BL/6 mice has modulatory influences on both trabecular and cortical bone structure. In order to investigate the mechanism of bone loss induced by the transfer of C57BL/6 to antibiotic treated C3H/HeN mice, we measured serum levels of markers of bone resorption and bone formation. Analysis showed that serum levels of CTX were significantly higher in antibiotic treated C57BL/6 mice and C3H/HeN mice colonized with C57BL/6 microbiome (Figure 5J). However, FMT had no effect on the levels of osteocalcin in all experimental groups (Figure 5K). These data indicate that the bone loss that occurred following the transfer of a C57BL/6 microbiome to recipient mice was due to increasing bone resorption.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig5-v1.jpg)
 
-**Figure 5.:** (A) Diagram of the experimental outline. (B) Fecal microbiome composition in C57BL/6 (BL6) mice and C3H/HeN (C3H) mice. (C) Quantitative PCR analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX. (K) Serum levels of OCN. n = 9–10 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.Figure 5—source data 1.
+**Figure 5.:** (A) Diagram of the experimental outline. (B) Fecal microbiome composition in C57BL/6 (BL6) mice and C3H/HeN (C3H) mice. (C) Quantitative PCR analysis of Sfb and total bacterial 16S rRNA genes in fecal samples. (D) Femoral trabecular bone volume fraction (BV/TV). (E) Trabecular number (Tb.N). (F) Trabecular thickness (Tb.Th). (G) Trabecular separation (Tb.Sp). (H) Cortical Area (Ct.Ar). (I) Cortical thickness (Ct.Th). (J) Serum levels of CTX. (K) Serum levels of OCN. n = 9–10 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.
 
 Additional studies revealed that C57BL/6 donor mice had higher numbers of PP and BM Th17 cells, and higher expression of Il17a transcripts compared to C3H/HeN donor mice (Figure 6A–E). FMT of fecal material from C57BL/6 donor mice to antibiotic treated to C3H/HeN mice resulted in increased Th17 cell numbers and Il17a transcript in recipient mice (Figure 6A–E). In addition, antibiotic treated C3H/HeN mice colonized with fecal material from C57BL/6 donor had higher levels of Tnfa mRNA in the SI and BM compared to donor C3H/HeN mice (Figure 6F,G). While SI Tnfsf11 mRNA levels were similar in all groups (Figure 6H), expression of Tnfsf11 in the BM was higher in donor C57BL/6 TAC than in C3H/HeN mice. Moreover, BM Tnfsf11 mRNA levels were increased in antibiotic treated mice colonized with C57BL/6 (Figure 6I). These data indicate that the transfer of the C57BL/6 TAC microbiome to an antibiotic treated mouse of a different strain resulted in the induction of an inflammatory environment that led to increased bone resorption and net bone loss. The data also suggest that colonization following a major disruption to the microbiome can change the microbiome composition and induce skeletal phenotypic alterations.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64237/elife-64237-fig6-v1.jpg)
 
-**Figure 6.:** (A) Relative frequency of Th17 cells (IL-17+ CD4+ T cells) in PP. (B) SI Il17a mRNA levels. (C,D) Relative and absolute frequency of BM Th17 cells. (E) BM Il17a mRNA levels. (F) SI Tnfa (TNF) mRNA levels. (G) BM Tnfa mRNA levels. (H) SI Tnfsf11 mRNA levels. (I) BM Tnfsf11 mRNA levels. n = 9–10 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.Figure 6—source data 1.
+**Figure 6.:** (A) Relative frequency of Th17 cells (IL-17+ CD4+ T cells) in PP. (B) SI Il17a mRNA levels. (C,D) Relative and absolute frequency of BM Th17 cells. (E) BM Il17a mRNA levels. (F) SI Tnfa (TNF) mRNA levels. (G) BM Tnfa mRNA levels. (H) SI Tnfsf11 mRNA levels. (I) BM Tnfsf11 mRNA levels. n = 9–10 mice per group. Data were expressed as mean ± SEM. All data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by 2-way ANOVA and post hoc tests applying the Bonferroni correction for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared to indicated groups.
 
 ## Discussion
 
@@ -100,52 +108,279 @@ In summary, our data showed that the gut microbiome is a non-genomic heritable f
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat# JAX:000664, RRID:IMSR_JAX:000664</td>
+      <td>Mice for in vivo experiments</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>C57BL/6NTac</td>
+      <td>Taconic biosciences</td>
+      <td>Cat# TAC:b6, RRID:IMSR_TAC:b6</td>
+      <td>Mice for in vivo experiments</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>C3H/HeNTac</td>
+      <td>Taconic biosciences</td>
+      <td>Cat# TAC:c3h, RRID:IMSR_TAC:c3h</td>
+      <td>Mice for in vivo experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A9393</td>
+      <td>For Microbiota depletion</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vancomycin</td>
+      <td>Selleckchem</td>
+      <td>Cat# S2575</td>
+      <td>For Microbiota depletion</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neomycin Sulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 1062540100</td>
+      <td>For Microbiota depletion</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M3761</td>
+      <td>For Microbiota depletion</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Life Technologies</td>
+      <td>Cat# 15596018</td>
+      <td>Cells Sample collection for total RNA isolation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zombie NIR</td>
+      <td>Biolegend</td>
+      <td>Cat# 423105</td>
+      <td>FACS (0.1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell Activation Cocktail (without Brefeldin A)</td>
+      <td>Biolegend</td>
+      <td>Cat# 423301</td>
+      <td>Cell Activation Cocktail</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monensin Solution</td>
+      <td>Biolegend</td>
+      <td>Cat# 420701</td>
+      <td>Monensin for cell activation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fixation Buffer</td>
+      <td>Invitrogen</td>
+      <td>Cat# 2178648</td>
+      <td>For cell fixation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Permeabilization Buffer</td>
+      <td>Invitrogen</td>
+      <td>Cat# 2229113</td>
+      <td>Cell Permeabilization Buffer</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD16/32 (clone 93) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101302, RRID:AB_312801</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 510-CD45 (clone 30-F11) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103138, RRID:AB_2563061</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 421-TCRβ (clone H57-597) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 109230, RRID:AB_2562562</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 700-CD3 (clone 17A2) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100216, RRID:AB_493697</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cy5.5-CD4 (clone RM4-5) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100540, RRID:AB_893326</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV 711-CD8 (clone 53–6.7) (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 100748, RRID:AB_2562100</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse PE-IL-17A (clone eBio17B7) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-7177-81, RRID:AB_763582</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>sequenced-based reagent</td>
+      <td>cDNA Synthesis kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18080–051</td>
+      <td>For RT-PCR</td>
+    </tr>
+    <tr>
+      <td>sequenced-based reagent</td>
+      <td>SYBR GREEN</td>
+      <td>Applied Biosciences</td>
+      <td>Cat# 4367659</td>
+      <td>For RT-PCR</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Osteocalcin</td>
+      <td>Immunodiagnostic systems Ltd.</td>
+      <td>Cat# AC-12F1</td>
+      <td>For the measurement of serum levels of Osteocalcin</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>CTX</td>
+      <td>Immunodiagnostic systems Ltd.</td>
+      <td>Cat# AC-06F1</td>
+      <td>For the measurement of serum levels of CTX</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>DNA Stool Qiagen kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 51604</td>
+      <td>For the 16S and SFB PCR</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Flow cytometry</td>
+      <td>LSR II system</td>
+      <td>BD Biosciences</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>Tree Star, Inc</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MicroCT-40 scanner</td>
+      <td>Scanco</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>QIIME</td>
+      <td>Open Source</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All in vivo experiments were carried out in female mice. All conventionally raised mice entering Emory University were shipped to the same room in the same vivarium within the Whitehead Biomedical Research Building. All conventionally raised mice were maintained under a general housing environment and fed sterilized food (5V5R chow) and autoclaved water ad libitum. GF pregnant dam mice used for the FMT experiment were housed in a Tecniplast ISOcage P - Bioexclusion System within the Emory Gnotobiotic Animal Core. All mice were acclimatized within our facility for 3 days before experimentation.
 
-## FMT in GF dams
+### FMT in GF dams
 
 Conv. R C57BL/6 and C3H/HeN mice and GF C3H/HeN mice were purchased from Taconic biosciences (Rensselaer, NY). Fecal material from 16 week-old Conv.R C57BL/6 and C3H/HeN mice was transferred into GF pregnant C57BL/6 and C3H/HeN mice of the opposite genotype (or same genotype to generate controls) through oral gavage on alternate days between E4 and E15 as described (Gomez de Agüero et al., 2016). Pregnancies were timed according to the day of vaginal plug. Fecal material donor mice were housed in Tecniplast bio-exclusion ISO cages to maintain the original microbiota until 16 weeks of age. Pregnant mice and offspring were housed in hermetically sealed ISO bio-exclusion cages. Once weaned, the offspring was housed alone in bio-exclusion ISO cages until the pups reach 16 weeks of age. To control for host-microbiome reciprocal interactions, the microbiome of each group of donor mice were normalized by routinely exchanging bedding between cages.
 
-## Co-Housing
+### Co-Housing
 
 For the co-housing experiment, 10-week-old female Conv.R C57BL/6 mice were purchased from TAC and JAX laboratories. All the mice were fed sterile water and chow. Control groups were housed separately for 4 weeks. Experimental groups were co-housed with mice purchased from the other vendor that is JAX mice were co-housed with TAC mice for 4 weeks. Since mice are coprophagic, co-housing caused equalization of gut microbiome. After 4 weeks of co-housing mice were sacrificed.
 
-## FMT in conv. R. C57BL/6 and C3H/HeN mice
+### FMT in conv. R. C57BL/6 and C3H/HeN mice
 
 8-week-old female Conv.R C57BL/6 and C3H/HeN mice were purchased from Taconic. All mice were fed sterile water and 5V5R chow. Prior to FM, recipient mice were treated with broad- spectrum antibiotics (Abx) (1 mg/mL ampicillin, 0.5 mg/mL vancomycin, 1 mg/mL neomycin sulfate, 1 mg/mL metronidazole) in drinking water for 2 weeks starting at the age of 8 weeks. 24 hr after completion of the antibiotic treatment, a liquid suspension of fecal material was gavaged into recipient mice for three consecutive days using methods previously established in our laboratory (Yu et al., 2020; Li et al., 2020).
 
-## Microbiota analysis
+### Microbiota analysis
 
 For microbiome analysis fecal pellets were collected from mice at sacrifice and DNA extracted from fecal samples using the MoBio DNA isolation kit. The V4 region of the 16S genes were amplified using the methods of Caporaso et al., 2011. Amplicons were sequenced on an Illumina MiSeq instrument at the Emory Integrated Genomics Core (EIGC). Analysis of the sequencing reads were done by the Emory Integrated Computational Core (EICC) using standard methodology for microbiome analysis. Briefly, the raw sequence was processed via QIIME, using closed-reference OTU picking and the Greengenes reference database. The resulting files were then moved into R and analyzed using the phyloseq package. Data processing involved demultiplexing, QC filtering (Edgar et al., 2011), OTU representation (Edgar, 2010), taxonomy assignment via a reference database (Caporaso et al., 2010a; McDonald et al., 2012; Wang et al., 2007) and phylogeny and diversity analysis (Lozupone et al., 2007) using the QIIME (Caporaso et al., 2010b) and MOTHUR (Schloss et al., 2009) pipelines.
 
-## In-vitro μCT measurements
+### In-vitro μCT measurements
 
 μCT scanning and analysis was performed as reported previously (Tyagi et al., 2018; Grassi et al., 2016; Li et al., 2015), using Scanco μCT-40 scanner. Voxel size was 12 μm3 for in-vitro measurements of femur. For the femoral trabecular region, we analyzed 70 slices, beginning 50 slices below the distal growth plate. Femoral cortical bone was assessed using 80 continuous CT slides located at the femoral midshaft. X-ray tube potential was 70 kVp, 114 μA, and integration time was 200 ms for the in-vitro measurements. We used the thresholding approach described by Bouxsein et al., 2010. which is recommended by Scanco, the μCT-40 manufacturer, and involves a visual inspection and comparison of preview and slice-wise gray scale 2D images. The same threshold value was used for all measurements.
 
-## Excision of Peyer’s patches (PP) from small intestine
+### Excision of Peyer’s patches (PP) from small intestine
 
 Peyer’s patches (PP) cell isolation was performed as described (Tyagi et al., 2018; Lefrancois and Lycke, 2001). Briefly, the small intestine was removed and flushed of fecal content. PPs were excised and collected in 1 mL cooled RPMI1640. PPs were dissociated using the plunger of a 2.5 mL syringe and gently forced through a 70 μm cell strainer placed over a 50 mL tube. A single cell suspension was used for measuring the number of Th17 cells in PP by flow cytometry.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry was performed on a LSR II system (BD Biosciences) and data were analyzed using FlowJo software (Tree Star, Inc, Ashland, OR). For cell surface staining: cells were stained with anti-mouse purified CD16/32 (clone 93), BV 510-CD45 (clone 30-F11), BV 421-TCRβ (clone H57-597), AF 700-CD3 (clone 17A2), PerCP/Cy5.5-CD4 (clone RM4-5) and BV 711-CD8 (clone 53–6.7) (BD Biosciences). The live cells were discriminated by Zombie NIR Fixable Viability Kit (Biolegend). For intracellular staining, cells were incubated with cell activation cocktail (Biolegend) in the presence of Monensin Solution at 37°C for 12 hr. Anti-mouse PE-IL-17A (clone eBio17B7) was added after cell fixation and permeabilization with Intracellular Fixation and Permeabilization Buffer Set (Thermo Fisher).
 
-## Markers of bone turnover
+### Markers of bone turnover
 
 Markers of bone turnover, Osteocalcin (OCN) and C-terminal cross-linked telopeptide (CTX) were measured in serum by ELISA kit (Immunodiagnostic Systems Ltd. (Boldon, UK)).
 
-## DNA extraction from fecal samples
+### DNA extraction from fecal samples
 
 Stool samples were collected directly into sterile tubes from live animals and snap-frozen before DNA extraction. Relative bacteria gene copies of Conv.R mice and antibiotic treated mice were confirmed at the end of the treatment period by fecal DNA extraction (DNA Stool Qiagen kit) as described in manufacture’s protocol and subsequent qPCR using 515F (GTGCCAGCMGCCGCGGTAA) and 806R (GGACTACHVGGGTWTCTAAT) primers. Conv.R mice and water were used as positive and negative control, respectively.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted from whole BM cells and small intestine using Trizol (Invitrogen). cDNA was synthesized from 1 mg total RNA with the superscript III first strand cDNA synthesis kit (Invitrogen). The mRNA expression levels of genes were analyzed by RT-PCR using an ABI Prism 7000 or One Step Plus Sequence Detection System and SYBR GREEN PCR Master Mix (Applied Biosystems, Foster City, CA, USA). Changes in relative gene expression between groups were calculated using the 2–ΔΔCt method with normalization to 18S rRNA as previously described. All the primers used were designed by Primer Express Software v2.0 (Applied Biosystems) and most were validated in previous investigations (Grassi et al., 2016; Li et al., 2015). The primer sequences we used are as followed. 5’- ATTCGAACGTCTGCCCTATCA −3’ (forward) and 5’- GTCACCCGTGGTCACCATG −3’ (reverse) for 18 s rRNA. 5’- AACTCCAGGCGGTGCCT AT −3’ (forward) and 5’- TGCCACAAGCAGGAATG AGA −3’ (reverse) for Tnfa mRNA. 5’- TGACGCCCACCTACAAC ATC −3’ (forward) and 5’- CATCATGCAGTTCCGTCA GC −3’ (reverse) for Il17a mRNA. 5’- 5′-CCTGATGAAAGGAGGGAGCA −3′ (forward) and 5’- TGGAATTCAGAATTGCCCGA −3’ (reverse) for Tnfsf11 mRNA.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are expressed as Mean ± SEM. Data were normally distributed according to the Shapiro-Wilk normality test. Data were analyzed by two-way ANOVA. This analysis included the main effects for animal strain and fecal matter transfer. When the statistical interaction was statistically significant (p<0.05) then tests were used to compare the differences between the treatment means for each animal strain, applying the Bonferroni correction for multiple comparisons.
 
-## Study approval
+### Study approval
 
 All the animal procedures were approved by the Institutional Animal Care and Use Committee of Emory University.

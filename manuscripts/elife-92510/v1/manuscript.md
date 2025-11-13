@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/023rffy11 Laboratory for Retinal Regeneration, RIKEN Biosystems Dynamics Research (BDR) Kobe Japan
+1. Laboratory for Retinal Regeneration, RIKEN Biosystems Dynamics Research (BDR) Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
 2. VC Cell Therapy Inc Kobe Japan
-3. https://ror.org/0197nmd03 Ritsumeikan University Shiga Japan
-4. https://ror.org/023rffy11 Laboratory for Prediction of Cell Systems Dynamics, RIKEN Center for Biosystems Dynamics Research (BDR) Suita Japan
+3. Ritsumeikan University Shiga Japan ([ROR:0197nmd03](https://ror.org/0197nmd03))
+4. Laboratory for Prediction of Cell Systems Dynamics, RIKEN Center for Biosystems Dynamics Research (BDR) Suita Japan ([ROR:023rffy11](https://ror.org/023rffy11))
 5. Kobe City Eye Hospital, Department of Ophthalmology Kobe Japan
 6. Knowledge Palette, Inc Kawasaki Japan
 7. Vision Care, Inc Kobe Japan
@@ -39,25 +39,59 @@ Our recent invention, ALPS, enables the characterization of a cell that is actua
 
 ## Results
 
-## ALPS enabled photographing each cell before RNA extraction
+### ALPS enabled photographing each cell before RNA extraction
 
 iPSC-RPE cells were produced from two human iPSC-lines of the Center for iPS Cell Research and Application (CiRA; iPSC-lines 201B7 and 253G1). The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6, MiTF, and Bestrophin by immunostaining; and PEDF and VEGF by ELISA. Hexagonal morphology and pigmentation were also confirmed qualitatively (Figure 1A). Normally the degree of pigmentation of RPE cells increases during the culture period, culminating when the cells become confluent, and returns less pigmented when they are replated at sparse density. It is also normal that even at the most confluent state, RPE cells show diverse degrees of pigmentation (Figure 1A). To characterize the cells with different degrees of pigmentation, 2304 cells of iPSC-RPE (96 cells each from two different dishes of 12 independent cultures of iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1—source data 1) were photographed under a light microscope (Figure 1B photos) and picked as single-cells by ALPS. The intensities of red, green, and blue channels were measured for each cell (Figure 1B plots). Because of the strong correlation (r>0.99) between the three channels (Figure 1—video 1), we used the intensity of the blue channel, or the average intensity of the three channels (so-called brightness), as a proxy for the color intensity of each cell.
 
-## Dark or white iPSC-RPE cells did not form a specific cluster by single-cell transcriptome analysis
+![Figure 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig1-v1.jpg)
+
+**Figure 1.:** (A) Human-induced pluripotent stem cell-derived RPE cell (iPSC-RPE) in vitro shows a diverse degree of pigmentation among the cells. Scale bar = 20 μm. ( B) Each cell was photographed under a light microscope and picked by ALPS. The intensities of red, green, and blue were measured. As there was no difference among the three intensities, the intensity of blue wavelength was used to represent the color intensity of each cell (see also Figure 1—video 1).
+
+### Dark or white iPSC-RPE cells did not form a specific cluster by single-cell transcriptome analysis
 
 The iPSC-RPE cells photographed and picked by ALPS were then subjected to RNA extraction followed by single-cell RNA sequencing analysis. To compare the gene expression profiles of our iPSC-RPE lines with other commercially available RPE cells, human fetal primary RPE cells purchased from Lonza were photographed and picked by ALPS after cultured for 6 and 12 weeks as well (Figure 1—source data 1). The t‐distributed stochastic neighbor embedding (t‐SNE) plot of the transcriptomes of iPSC-RPE cells, Lonza-RPE cells together with undifferentiated human iPSCs and human fibroblasts showed our iPSC-RPE and Lonza-RPE in different clusters (Figure 2A and B). Although the parameters for t‐SNE were adjusted to have all the iPSC-RPEs (iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1—source data 1) mingle regardless of the original iPSC-line or the culture period (Figure 2A), our iPSC-RPE was divided in four sub-clusters (Figure 2B). The major 2 clusters (cluster-0 and –1) did not show critical differences in the expressions of key factors of the RPE (Figure 2—figure supplement 1) or the gene-ontology terms (Figure 2—figure supplement 2). Interestingly, cluster-8 consists of 32 cells showed the expression of proliferation marker MKI67 which was not expressed in other clusters besides cluster-4 that represented iPSC (Figure 2—figure supplement 3). Unlike iPSCs in cluster-4, the iPSC-RPE cells of cluster-8 did not show the expression of an iPSC-marker LIN28A (Figure 2—figure supplement 3) denying the possibility of cluster-8 being a residual of iPSCs after RPE differentiation. It could be possible that cluster-8 implies the existence of an adult stem cell population of the RPE.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-v1.jpg)
+
+**Figure 2.:** Two-dimension plotting of the gene expression profile of each cell colored by the cell types (A), clusters defined by gene expression profiles (B) or color intensities (C), and a violin plot quantitatively showing color intensities of the cells in each cluster (D). Human-induced pluripotent stem cell-derived RPE cells (iPSC-RPE) formed a different cluster from Lonza-retinal pigment epithelium (RPE). (B) iPSC-RPE cells were a heterogeneous population consisting of four sub-clusters. (C, D) Either very black or very white cells did not localize to a specific sub-cluster of iPSC-RPE.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp3-v1.jpg)
+
 When the t-SNE plot was displayed with the color intensity of each cell, either deeply or lightly pigmented cells did not localize to a particular cluster (Figure 2C). Violin plots quantifying color intensities of the cells in each cluster showed all clusters having both dark- and light-colored cells (Figure 2D). Interestingly, Lonza-RPE showed biased distribution of cell color among the three clusters (cluster-2,–3, and –7), having highly pigmented cells in cluster-2 and –3 but not in –7 (Figure 2C and D). These results indicated the degree of pigmentation of our iPSC-RPE did not associate with a specific gene expression profile defined by t-SNE.
 
-## There was no strong correlation between the color of iPSC-RPE and the gene expression
+### There was no strong correlation between the color of iPSC-RPE and the gene expression
 
 As no correlation between the color and gene expression profile was revealed in our iPSC-RPE by clustering analysis, next we sought the correlation of individual genes with the color of the cells. When each of the 280,47 genes was analyzed for the correlation coefficient between its expression level and the color intensity in each cell, even for the gene with the highest positive- or negative-correlation with the color, the coefficient was 0.565 and –0.445, respectively (Figure 3). The gene with the highest correlation was CST3 (correlation coefficient 0.565) that encodes cystatin C, a cysteine-proteinase inhibitor. As melanin, the material of the color, is cysteine-rich (D'Alba and D’Alba and Shawkey, 2019), it is reasonable to have increased level of melanin under upregulated CST3 that inhibits cysteine-targeted degradation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig3-v1.jpg)
+
+**Figure 3.:** List of the genes with positive (A) and negative (B) correlations to color intensities of iPSC-RPE cells are shown. Even for the gene with the highest correlation to the color, the correlation value was 0.565. Notably, the melanin-synthesis enzymes TYRP1 and tyrosinase (TYR) both showed only weak correlations (correlation value = 0.458 and 0.434, respectively). Program source code to create these plots is available in Figure 3—source code 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** When cultured in vitro, retinal pigment epitheliums (RPEs) become more pigmented at higher cell density, and return less pigmented when re-plated to lower cell density. The material of the color in RPE is melanin, which is synthesized by the enzymes such as TYRP1 and TYR, although the expressions of TYRP1 and TYR were not strongly correlated with the color of RPE (Figure 3A). The interpretation for this could be. (i) When RPEs contact each other, the nature as protective epithelial cell makes them to synthesize melanin, with upregulation of TYRP1 and TYR. (ii) With a sufficient amount of melanin, TYRP1 and TYP become downregulated. (iii) Melanin will be divided among the daughter cells or secreted, which makes the cells less pigmented. (iv) When the amount of melanin becomes lower, TYRP1 and TYR become upregulated again. This model interprets the colors of iPSC-RPE cells are representing not a stable characteristic but a temporal condition of each cell, which makes it reasonable for the iPSC-RPE cells not having a specific gene expression profile associated with the degree of pigmentation (as shown in Figure 2).
+
 Intriguingly, the expressions of the genes directly related to the production of melanin were not the highest for the correlation with the color. For example, correlation coefficients between the expressions of the enzymes for melanin-synthesis, TYR and TYRP1, and color intensities were 0.434 and 0.458, respectively (Figure 3A). In other words, the darkest cells were not necessarily expressing the highest level of TYR or TYRP1 mRNAs. This suggests the degree of pigmentation is dynamically regulated in each cell, and there is a time-lag between mRNA expression, production of the enzymes, and synthesis of melanin (descriptive image in Figure 3—figure supplement 1).
 
-## Biological aspects that correlated with the pigmentation of iPSC-RPE
+### Biological aspects that correlated with the pigmentation of iPSC-RPE
 
 Having the results suggesting the color of iPSC-RPE may not be an indicator of the expression levels of RPE markers (Figure 2—figure supplement 1), next, we sought then which biological aspects underlie the degree of pigmentation of iPSC-RPE cells. For this purpose, we re-analyzed the transcriptome of our iPSC-RPE cells shown in Figure 1A. First, we calculated the weighted sum of the RGB channels, the so-called brightness, and used it as a proxy for the pigmentation level. Then, by gene set enrichment analysis (GSEA) (Korotkevich et al., 2021), we identified 15 biological pathways enriched in darker cells regardless of cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), which included pathways involved in important functions the RPE, such as lysosome- and complement-related pathways (Figure 4). Among lysosome-related genes, PASP and CTSD correlated with the color intensity of the cells at correlation coefficients 0.34 and 0.31, respectively (Figure 4—figure supplement 1). Among complement-related genes, C1R, C1S, and C3 correlated with the color intensity of the cells at correlation coefficients 0.31, 0.31, and 0.27, respectively (Figure 4—figure supplement 2). This correlation was partially consistent with the analysis of independent genes (Figure 3), which showed complement-related genes C1R, C1QTNF5, and C1S, and lysosome-related gene CTSD within the top 20 of the genes that had a positive correlation with color intensity (Figure 3A list on the right).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-v1.jpg)
+
+**Figure 4.:** GSEA revealed 15 pathways that had a high correlation with the intensities of the color of iPSC-RPE. Among them, there were lysosome-related and complement-related pathways.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp3-v1.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp4-v1.jpg)
 
 Gene set related to retinoid recycling, an important feature of the RPE to supply the photoreceptor with retinal, showed weak correlation with the color intensity of iPSC-RPE cells with correlation coefficients of genes such as RDH11, BCO1, RDH10, DHRS3, and RDH5 at 0.25, 0.20, 0.16, 0.12, and 0.11, respectively (Figure 4—figure supplement 3). The gene set related to melanin synthesis, including the genes such as DCT, TYRP1, and TYR, showed less correlation with the color intensity of iPSC-RPE (Figure 4—figure supplement 4), which was consistent with the analysis of TYRP1 and TYR shown in Figure 3.
 
@@ -71,7 +105,87 @@ Without the exposure to pathogens or photoreceptor outer segments, in vitro pigm
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Human iPSC 201B7 (HPS4290)</td>
+      <td>RIKEN BRC / National BioResource Project of the MEXT/AMED, Japan</td>
+      <td></td>
+      <td>doi:10.1038/nbt1374</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human iPSC 253G1 (HPS0002)</td>
+      <td>RIKEN BRC / National BioResource Project of the MEXT/AMED, Japan</td>
+      <td></td>
+      <td>doi:10.1038/nbt1374</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human embryonic RPE (line #476621)</td>
+      <td>Lonza</td>
+      <td>Lonza: #476621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human dermal fibroblasts</td>
+      <td>doi: 10.1167/iovs.14-15619</td>
+      <td>TLHD1</td>
+      <td>obtained from a healthy male donor</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bravo NGS workstation</td>
+      <td>Agilent Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v4</td>
+      <td>doi:10.1038/nbt.3192; doi:10.1038/nbt.4096; doi:10.1016/j.cell.2019.05.031; doi:10.1016/j.cell.2021.04.048</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v4.2.1</td>
+      <td>R Development Core Team, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>weighted sum of the background-corrected intensities</td>
+      <td>International Telecommunication Union, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene Set Enrichment Analysis; GSEA-preranked</td>
+      <td>GenePattern.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The study was approved by the ethical committees of the Institute of Biomedical Research and Innovation Hospital and the RIKEN Center for Developmental Biology, Japan. Human iPSC-lines 201B7 (HPS4290) and 253G1 (HPS0002) (Nakagawa et al., 2008) were provided by the RIKEN BRC through the National BioResource Project of the MEXT/AMED, Japan. iPSCs were cultured and differentiated into RPE cells as described previously (Kamao et al., 2014). Briefly, to differentiate human iPSCs into RPE cells, human iPSCs were cultured on gelatin-coated dishes in differentiation medium (GMEM (Sigma-Aldrich, St. Louis, MO) supplemented with 1 mM sodium pyruvate, 0.1 mM non-essential amino acids (Sigma-Aldrich), and 0.1 mM 2-mercaptoethanol (Sigma-Aldrich)) with 20% KnockOut Serum Replacement (KSR; Invitrogen, Waltham, MA) for four days, 15% KSR for six days, and 10% KSR for 20 days. Y-27632 (10 μM; FUJIFILM Wako, Osaka, Japan), SB431542 (5 μM; Sigma-Aldrich), and CKI7 (3 μM; Sigma-Aldrich) were added for the initial 18 days. After the emergence of pigmented cells, the medium was switched to SFRM (DMEM/F12 [7:3] supplemented with B27 (Invitrogen), 2 mM L-glutamine).
 
@@ -79,31 +193,43 @@ Lonza-RPE cells (line #476621; Lonza, Basel, Switzerland) were maintained in SFR
 
 Human dermal fibroblasts were obtained from a healthy donor and cultured as described previously (Sugita et al., 2015).
 
-## Cell preparation for ALPS
+### Cell preparation for ALPS
 
 Cell concentrations was measured using Hemocytometer Standard Specification (Improved Neubauer) (HIRSCHMANN LAB, Baden-Württemberg, Germany). 3 ml of PBS (D-PBS(-) without Ca and Mg, #14249–95, Nacalai Tesque, Kyoto, Japan) containing 0.25–1.0×104 cells were added onto a dish (PrimeSurface Dish 35, #MS-9035X, Sumitomo Bakelite, Tokyo, Japan).
 
-## Imaging, isolation, and RNA-seq for single-cells
+### Imaging, isolation, and RNA-seq for single-cells
 
 Live cell imaging, cell picking, and single-cell digital RNA-seq (Shiroguchi et al., 2012; Ogawa et al., 2017) were performed as described previously (Jin et al., 2023) except for the following: In total, 4032 cells (Figure 1—source data 1) were measured and analyzed. Cell images (400 pixels ×330 pixels; 0.36 μm/pixel) were captured by both bright field and fluorescent channels (filter unit: mCherry C-FLL-C, Nikon Co., Tokyo, Japan) with 20X objective (N.A. 0.7) and a color camera (Color Camera Nikon DS-Ri2, Nikon Co.). Exposure times for bright field and fluorescence were 10 ms and 100 ms, respectively. For both channels, Z-stacks (21 planes) were recorded at 1 μm interval. Randomly selected cells were picked (‘random selection’ of ALPS Jin et al., 2023). For the picked single cells, library preparation including cell lysis, RNA fragmentation, cDNA generation with molecular barcode attachment, amplification, and purification was performed using the Bravo NGS workstation (Agilent Technologies, Santa Clara, CA) and thermal cyclers (Mastercycler X50s; Eppendorf, Hamburg, Germany). The libraries were mixed using different indexes, and sequenced on HiSeq (150 cycle; Illumina, San Diego, CA) using custom primers. Detected number of RNA molecules for each gene in each cell was counted based on molecular barcodes.
 
 To estimate the RGB values of the cells within the cell images, first, the average intensities (0–255) per pixel for R, G, and B channels, respectively, of a circular area with a radius of 50 pixels at the position (195, 169 (coordinates in pixel)) of each cell image that covered the cell, and the area other than the circular area (background) were calculated. Then, for each image and each channel, the average intensity of the background was subtracted from the average intensity of the circular area. Finally, for each cell and each channel, the mean and standard deviation of the subtracted average circular area intensities of all 21 Z-stack images were obtained. The circular area images of iPSC-RPE cells are illustrated in Figure 1B.
 
-## Single-cell transcriptome analysis
+### Single-cell transcriptome analysis
 
 Single-cell RNA-seq data were analyzed using Seurat v4 (Satija et al., 2015; Butler et al., 2018; Stuart et al., 2019; Hao et al., 2021) with R v4.2.1 (R Development Core Team, 2022). For cluster analyses in Figure 2, the following parameters were used:
 
-## Brightness calculation
+### Brightness calculation
 
-The brightness value Y for each cell was calculated by taking a weighted sum of the background-corrected intensities of the RGB channels (International Telecommunication Union, 2022):Y=(0.299,0.587,0.114)⋅(Rcorr,Gcorr,Bcorr),
+The brightness value $Y$ for each cell was calculated by taking a weighted sum of the background-corrected intensities of the RGB channels (International Telecommunication Union, 2022):
 
-where the background-corrected intensities of the RGB channels were obtained by adding a virtual white background to delta intensities of RGB channels of each cell:(Rcorr,Gcorr,Bcorr)=(255,255,255)+(ΔR,ΔG,ΔB).
+$$
+Y=(0.299,0.587,0.114)⋅(R_{corr},G_{corr},B_{corr}),
+$$
 
-If the corrected intensity exceeded 255, it was replaced by the maximum value below 255 (there was only one such case). The resultant cellular brightness Y∈0,255 had a skewed distribution around the background brightness value, 255. Then, normalized brightness Ynorm was obtained by logit transformation, so that its range takes the entire real number.Ynorm=log⁡(Y255−Y)
+where the background-corrected intensities of the RGB channels were obtained by adding a virtual white background to delta intensities of RGB channels of each cell:
 
-The normalized brightness Ynorm∈-∞,∞ was approximately normally distributed.
+$$
+(R_{corr},G_{corr},B_{corr})=(255,255,255)+(ΔR,ΔG,ΔB).
+$$
 
-## Pathway enrichment analysis
+If the corrected intensity exceeded 255, it was replaced by the maximum value below 255 (there was only one such case). The resultant cellular brightness $Y\in0,255$ had a skewed distribution around the background brightness value, 255. Then, normalized brightness $Y_{norm}$ was obtained by logit transformation, so that its range takes the entire real number.
+
+$$
+Y_{norm}=log⁡(\frac{Y}{255−Y})
+$$
+
+The normalized brightness $Y_{norm}\in-∞,∞$ was approximately normally distributed.
+
+### Pathway enrichment analysis
 
 For each of the three RPE cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), we explored biological pathways correlated with pigmentation levels according to the following steps:
 

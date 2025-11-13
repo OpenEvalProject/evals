@@ -12,4 +12,4 @@
 
 ## Abstract
 
-The influence of time on the drought response of Brassica rapa , an agriculturally important species of plant, has been clarified.
+The influence of time on the drought response of Brassica rapa, an agriculturally important species of plant, has been clarified.

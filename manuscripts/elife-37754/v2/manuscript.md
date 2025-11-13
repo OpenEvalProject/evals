@@ -57,7 +57,7 @@
 
 ## Abstract
 
-10.7554/eLife.37754.001 Amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD) represent two ends of a disease spectrum with shared clinical, genetic and pathological features. These include near ubiquitous pathological inclusions of the RNA-binding protein (RBP) TDP-43, and often the presence of a GGGGCC expansion in the C9ORF72 (C9) gene. Previously, we reported that the sequestration of hnRNP H altered the splicing of target transcripts in C9ALS patients (Conlon et al., 2016). Here, we show that this signature also occurs in half of 50 postmortem sporadic, non-C9 ALS/FTD brains. Furthermore, and equally surprisingly, these ‘like-C9’ brains also contained correspondingly high amounts of insoluble TDP-43, as well as several other disease-related RBPs, and this correlates with widespread global splicing defects. Finally, we show that the like-C9 sporadic patients, like actual C9ALS patients, were much more likely to have developed FTD. We propose that these unexpected links between C9 and sporadic ALS/FTD define a common mechanism in this disease spectrum.
+Amyotrophic lateral sclerosis (ALS) and frontotemporal dementia (FTD) represent two ends of a disease spectrum with shared clinical, genetic and pathological features. These include near ubiquitous pathological inclusions of the RNA-binding protein (RBP) TDP-43, and often the presence of a GGGGCC expansion in the C9ORF72 (C9) gene. Previously, we reported that the sequestration of hnRNP H altered the splicing of target transcripts in C9ALS patients (Conlon et al., 2016). Here, we show that this signature also occurs in half of 50 postmortem sporadic, non-C9 ALS/FTD brains. Furthermore, and equally surprisingly, these ‘like-C9’ brains also contained correspondingly high amounts of insoluble TDP-43, as well as several other disease-related RBPs, and this correlates with widespread global splicing defects. Finally, we show that the like-C9 sporadic patients, like actual C9ALS patients, were much more likely to have developed FTD. We propose that these unexpected links between C9 and sporadic ALS/FTD define a common mechanism in this disease spectrum.
 
 ## Introduction
 
@@ -73,11 +73,19 @@ In this study, we have investigated whether the biochemical ‘signature’ we d
 
 ## Results
 
-## Patient stratification based on graded inclusion of hnRNP H-regulated exons
+### Patient stratification based on graded inclusion of hnRNP H-regulated exons
 
 C9 expansion is the most common known cause of ALS/FTD. However, a large majority of cases, especially amongst the 90% that are sporadic in origin, are of unknown etiology. When initially characterizing hnRNP H-dependent splicing events, we compared C9ALS/FTD patients to neurological controls and SOD1 ALS (not believed to proceed through a mechanism of RBP dysfunction or aggregation; Ling et al., 2013), but not to sALS/FTD (Conlon et al., 2016). Indeed, sALS/FTD is a mechanistic unknown and may constitute a wide range of molecular subtypes. Given that TDP-43 and hnRNP H appear to interact (Appocher et al., 2017; Ling et al., 2010; Sephton et al., 2011) in a manner that is largely RNA dependent (Freibaum et al., 2010), it is reasonable to speculate that changes in RNA binding and/or solubility of one might impact the other, leading to more complex patterns of splicing dysregulation.
 
 We first set out to determine whether splicing patterns specific to C9ALS/FTD could be distinguished from those related to ALS/FTD more generally. To do this, we initially analyzed whether sALS/FTD patients display splicing changes similar to those we described in C9 patients (Conlon et al., 2016) (Figure 1a). Specifically, we measured alternative exon inclusion by 32P-RT-PCR of oligo(dT)-selected RNA samples purified from post-mortem cerebellum from 50 sporadic patients: 32 classified as ALS (without cognitive/behavioral involvement), seven as ALS-FTD (symptoms of both disorders during the patient’s life), and 11 as FTD with motor neuron disease (FTD-MND) defined by a lack of clinical ALS symptoms yet the presence of pathological MN degeneration at autopsy. We also included two patients carrying pathogenic SOD1 variants, and four patients carrying C9 repeat expansions, for a total of 56 cases (Supplementary file 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig1-v2.jpg)
+
+**Figure 1.:** (a) List of hnRNP H target exons, separated into enhanced and repressed categories. (b) (Top) Simplified diagram of enhanced and repressed exons with relative binding of hnRNP H (H1). (Bottom) Depiction of expected product when H1 levels are at normal physiological levels (above dashed line) or low (hnRNP H deficient; below dashed line). (c–e) Representative PCR gels of all patient samples for two enhanced exons (ARRB2 and PPP1R12C) and one repressed exon (OS9). Pink boxes show samples F09-F13 that consistently exhibited large magnitudes of change in inclusion. (f) Graph of CSS by group: nonALS, C9ALS, like-control and like-C9. Each point represents the CSS of an individual patient. Red dashed line marks the cutoff of 3 standard deviations below the control mean. Error bars are plotted to the SEM. (g) Comparison of percent exon inclusion of 18 hnRNP H-target exons between like-control and like-C9 patient replicate values. Exons are ordered by enhanced exons (KIF1C-PCBP2) followed by repressed exons (RPL10-HNRPDL). Error bars are plotted to the SEM. (t test p value: *=0.05, **=<0.01, ***=<0.0001, ****=<0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–q) Representative PCR gels from all genes that are significantly altered between like-control and like-C9. In some instances, single samples failed to amplify thus leading to blank lanes. All reactions were repeated and re-run individually or in small groups (data not shown). Loading convention is gel 1: sALS 1–28, gel 2: sALS 29–41; FTD 1–15. Sample information can be found in Supplementary file 1A. Arrows indicate the position of exon inclusion (top) and exclusion (bottoms) products.
 
 To assay hnRNP H-dependent splicing changes, we selected 18 known hnRNP H target exons that we previously found are differentially included in C9ALS/FTD compared to individuals without neurological symptoms and SOD1 ALS controls (Figure 1a). Four of the targets were hnRNP H-repressed exons, meaning hnRNP H normally represses inclusion when physiological levels of the protein are high, and the other 14 were hnRNP H-enhanced exons, which respond with decreased inclusion when hnRNP H levels are low (Figure 1b). Results obtained with two enhanced exons (from ARRB2 and PPP1R12C) and one repressed exon (from OS9) are shown in Figure 1c–e. Representative gels for all other genes analyzed are shown in Figure 1—figure supplement 1. The data revealed dramatic differences across many of the patient samples. We observed several patients that consistently had the lowest levels of enhanced exon inclusion for all 14 exons, and noticed that these same patients had the highest levels of repressed exon inclusion (e.g. boxed FTD-MND samples 9–13; Figure 1c–e). Other patients consistently displayed the opposite trend, or a milder version of both.
 
@@ -87,13 +95,21 @@ We then wished to determine which, if any, of the sporadics had exon inclusion v
 
 We next wished to determine, for every individual hnRNP H-regulated exon we analyzed, if each patient displayed similar relative change in inclusion values as for all the other exons. To this end, we first re-calculated the CSS for each combination of 13 enhanced exons and plotted a best-fit line for each gene in the case where it was excluded from the average, using each patient’s percent exon inclusion value for that gene as a Y-coordinate. Indeed, we found that each individual gene followed the trend of the patients’ average CSS (Figure 2a; simplified to show three best- and one worst-fit lines, all others are shown in Figure 2—figure supplement 1), with the same patients consistently showing the most severe changes, and others consistently showing the most mild. Some genes had extremely good fit to a linear model (GABBR1, r-square = 0.90, ARRB2, r-square = 0.88), while others displayed the trend without as good a fit (PAN2, r-square = 0.40). We also averaged the four hnRNP H repressed exons, and plotted this value as a Y coordinate (Figure 2b). As expected, the patients with the lowest values of hnRNP H-enhanced exon CSS had the highest levels of average repressed exon inclusion, as the data fit well to an inverse linear relationship (r-square = 0.75).
 
-## Like-C9 sALS/FTD display increased hnRNP H insolubility
+![Figure 2.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig2-v2.jpg)
+
+**Figure 2.:** (a) Linear regression of percent exon inclusion (PEI) for each enhanced target exon compared to the average inclusion of all other enhanced exons. Clockwise from upper left: GABBR1, DOLPP1, PAN2, ARRB2, with r-square = 0.90, 0.86, 0.40, 0.88, respectively. (b) Linear regression of percent exon inclusion for the average of four repressed target exons compared to the average inclusion of all enhanced exons. R-square = 0.75. (c) (Upper) Diagram of biochemical fractionation and resultant fractions. (Lower) Representative example of 6 like-control and six like-C9 samples, western blotted for actin (cortex homogenate fraction) and hnRNP H (SOL, SS, SI). (d) Summary graph percent insoluble hnRNP H in motor cortex of like-controls versus like-C9s. Samples for which motor cortex was unavailable were excluded from this analysis. Each point represents a single patient with replicate values. Error bars are plotted to the SEM. (t test p value: *=0.05, **=<0.01, ***=<0.0001, ****=<0.0001). (e) Linear regression of percent insoluble hnRNP H compared to CSS, r-square = 0.58.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a–j) Linear regression all remaining genes not shown in Figure 2a. Percent exon inclusion (PEI) for each hnRNP H-target exon is plotted as a Y-coordinate compared to the average percent inclusion of all other hnRNP H-enhanced exons. R-square values are displayed.
+
+### Like-C9 sALS/FTD display increased hnRNP H insolubility
 
 The above results defined a cohort of patients that displayed graded splicing dysregulation similar to what we observed in C9ALS patients. We next asked whether these patients also displayed increased levels of sarkosyl-insoluble hnRNP H, indicative of functional sequestration (see Conlon et al., 2016). To this end, we performed biochemical fractionation of motor cortex from all cases where tissue was available, with two independent replicates per case (Figure 2c). While we performed RNA analysis with cerebellum for abundance and RNA quality reasons, for fractionation we used motor cortex as it is a primary site of disease-specific degeneration. Given the historical range of our cohort, for some samples motor cortex was unavailable, and thus we omitted those cases from our analysis. We then analyzed equivalent amounts of each fraction, soluble (SOL), sarkosyl soluble (SS), and sarkosyl insoluble (SI), by Western blot (WB), and calculated the percentage of insoluble hnRNP H in each case. Using 39 samples (18 like-control and 21 like-C9), we found that the average percent insoluble hnRNP H was 69.2 in like-C9s, and 38.9 in like-control, or 1.78 times higher in like-C9, a highly significant increase in aggregated protein (p<0.0001) (Figure 2d; all average percent insolubility values are shown by patient in Supplementary file 1A). This enrichment closely resembles the 1.9-fold increase we previously reported in seven C9ALS/FTD (56.1% insoluble) compared to controls (30.0% insoluble).
 
 We next wished to quantify the relationship, if any, between splicing severity and hnRNP H insolubility. We therefore performed the same regression analysis as we did above with splicing changes, except with percent sarkosyl-insoluble hnRNP H. We found that the general trend was for patients with large changes in splicing to have high insoluble hnRNP H (Figure 2e; r-square = 0.58). These observations suggest that hnRNP H is differentially sequestered, with patients showing a gradient of decreasing soluble hnRNP H that correlates with increasing splicing dysfunction. The correspondence between hnRNP H’s biochemical solubility and its predicted transcriptomic effects across distal brain regions from the same patients strongly supports the notion that this is an intrinsic, brain-wide property of each patient. Reinforcing this view, we also examined available postmortem pathological reports from 26 of the sporadic ALS/FTD patients. Significantly, 19 of these were noted to exhibit focal loss of Purkinje neurons in the cerebellum (Supplementary file 1A), confirming that regions of the brain undergoing robustly measured splicing defects did indeed experience neuronal degeneration. This further justifies our choice to correlate changes measured in the cerebellum with changes in the cortex.
 
-## Insolubility of hnRNP H correlates with that of the ALS-linked RBPs TDP-43 and FUS
+### Insolubility of hnRNP H correlates with that of the ALS-linked RBPs TDP-43 and FUS
 
 We previously provided evidence that the insolubility of hnRNP H in C9ALS brains was due to formation of aggregated assemblies with long, repetitive, G quadruplex-forming RNA (Conlon et al., 2016). However, in the sporadic cases analyzed here, the source of hnRNP H insolubility/aggregation is unknown. To investigate this question, and to understand the significance of the observed gradient of hnRNP H insolubility and splicing dysregulation, we considered the possibility that it is related to insolubilities of other proteins with similar functions and/or domain structures. For example, as mentioned above, TDP-43 displays histopathological evidence of cytoplasmic accumulation/aggregation in virtually all ALS cases. Is this relevant to the biochemical insolubility we observed with hnRNP H?
 
@@ -111,7 +127,19 @@ The above results were unanticipated, and we therefore wished to examine propert
 
 The results of this analysis confirm and extend the observations we made with the 180,000 x G fractionation. They support the idea that the insolubility we initially described for hnRNP H (Figure 4a) extends to other MN disease-related proteins (Figure 4b–e), but is not a general property of like-C9 brains. The non-disease associated proteins (Figure 4f and g) did not display any insolubility, except for U2AF65 (Figure 4h), which had low levels of insoluble protein in six of ten like-C9s, or 9.2% on average (Figure 4i). Intriguingly, a fraction of SMN was insoluble in all the like-C9 cases with a range from 8.1–61.8%, or 31.1% on average, but in none of the like-controls. For comparison, hnRNP H and hnRNP A1 were insoluble in like-C9s with a range from 16.0 to 77.5% and 29.4 to 94.7% (Figure 4i). Despite the important role of SMN in snRNP assembly, and thus in splicing per se, its relatively low average insolubility in like-C9s suggests it is only partially deficient and thus present at levels sufficient to facilitate snRNP assembly, and far higher than levels seen in SMA (Lefebvre et al., 1997). The low levels of U2AF65 and presence of the four abundant hnRNP proteins in the insoluble fraction is supportive of the like-C9s having alterations in the soluble concentration of a limited set of auxiliary splicing factors, yet maintaining sufficient concentrations of the core factors necessary for splicing.
 
-## Reciprocal insolubilities of hnRNP H and TDP-43 reveal TDP-43 LOF is exclusive to like-C9s
+![Figure 4.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig4-v2.jpg)
+
+**Figure 4.:** (a–h) Low-speed (21,000 x G) fractionation experiment with 20 patients listed in Figure 3a. Western blot hnRNP H (a), TDP-43 (b), FUS (c), hnRNP A1 (d), SMN (e), Histone H3 (f), C9ORF72 (g), U2AF65 (h). SOL = soluble, SS = sarkosyl soluble, SI = sarkosyl insoluble. (i) Quantification of low-speed centrifugation of 20 patients with replicate values. Error bars are plotted to the SEM. (j) Linear regression of percent insoluble protein for targets in (a–h) plotted against CSS. R-square is listed. (k) Heatmap of spearman correlation coefficients for each pairwise comparison of percent insoluble protein at 180,000 or 21,000 x G (180 k and21k, respectively). (l) Western blots of hnRNP H (top) and TDP-43 (bottom) following IP with protein A/G magnetic beads alone, TDP-43 antibody, or control (FLAG) antibody from two patient brains (F5 and F11). The abbreviations ms and rb stand for mouse antibody and rabbit antibody, respectively. Protein species are indicated by arrows at right, and positions of size markers are shown on the left.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative western blot of 21,000 x G motor cortex fractionation from eight controls (six nonALS and two SOD1 ALS) and 14 C9+ ALS/FTD patients. Membranes are shown from top-bottom: cortex homogenate (western blot actin), Sarkosyl insoluble fraction (western blot hnRNP H), and same membrane (western blot TDP-43), with arrows differentiating TDP-43 from residual hnRNP H signal.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Summary quantification of rt-PCR of 18 TDP-43 splicing targets with six most like-control (highest CSS) and six most like-C9 (lowest CSS) patients. Signifcant events, using a more permissive cutoff (p<0.10, t test) are indicated with a bracket that is pink if the direction of change indicates TDP-43 LOF in like-C9, or blue and dashed if the direction of change indicates TDP-43 LOF in like-control. (p value: *=0.05, **=<0.01, ***=<0.0001, ****=<0.0001; values between 0.05 and 0.10 are displayed numerically).
+
+### Reciprocal insolubilities of hnRNP H and TDP-43 reveal TDP-43 LOF is exclusive to like-C9s
 
 The similarity between hnRNP H and TDP-43 insolubilities in the like-C9 samples suggests that a common process or factor may be functioning to bring about their aggregation to correspondingly severe degrees. Supporting this idea, insolubility of each protein displayed an inverse relationship with CSS (Figure 4j), and correlation analysis of the measured insolubilities of all these RBPs (at both 180,000 and 21,000 x G) amongst this set of 20 patients revealed highly significant correlation for each pairwise combination (Figure 4k). The top pairwise combinations between different proteins were between hnRNP H and TDP-43 at both 180,000 and 21,000 x G (Figure 4k; Spearman r = 0.95 for both). Supporting the idea that primary insolubility of hnRNP H can drive insolubility of these other factors, we performed fractionation at 21,000 x G with 13 C9 patients and found similar correlation between hnRNP H and TDP-43 (Spearman r = 0.71) (Figure 4—figure supplement 1).
 
@@ -123,11 +151,19 @@ The above differential TDP-43 insolubility is in sharp contrast with the much mo
 
 The above observation suggests that insolubility of TDP-43, as well as hnRNP H, is not related to TDP-43 histopathology. Given that hnRNP H insolubility is correlated with splicing dysfunction of a set of validated targets, we next asked whether TDP-43 LOF-associated splicing changes also occurred more in the like-C9 cases than in like-controls. To assay TDP-43-dependent splicing, we selected targets from previously published TDP-43 knockdown (KD) and CLIP studies (Tollervey et al., 2011) and analyzed them as above by 32P RT-PCR (Figure 4—figure supplement 2). For 18 targets that produced appropriate products, we compared the percent inclusion values from the six most like-control and six most like-C9 patients (six highest and lowest CSS, respectively). Using a t-test for each event, and a more permissive cutoff for statistical significance (p<0.10), we found that 10 of the 18 events displayed significant changes. Of these events, eight were as predicted consistent with the like-C9 group having lower concentrations of functional TDP-43, while the other two displayed the opposite trend. These results suggest that TDP-43-regulated splicing events demonstrate differential exon inclusion amongst sALS/FTD patients with TDP-43 pathology, with the patients demonstrating biochemically insoluble TDP-43 displaying greater TDP-43 LOF.
 
-## RNA-sequencing reveals widespread splicing defects that correlate with protein insolubility
+### RNA-sequencing reveals widespread splicing defects that correlate with protein insolubility
 
 Our investigation into splicing dysfunction initially focused specifically on hnRNP H splicing targets. However, the results described thus far imply that the splicing changes due to decreased levels of functional hnRNP H are complemented by shortages of other RBPs such as TDP-43. We therefore analyzed transcriptome-wide splicing on a larger cohort of patients (28 sALS/FTD cases described above for which hnRNP H solubility and clinical data was available and an additional 13 confirmed C9ALS/FTD cases) using RNA-seq of RNA purified from cerebellum. As controls, we used a combined group of six neurologically normal individuals and five SOD1-ALS individuals, with only two of these 11 samples coming from our previously categorized control group (Supplementary file 1A). The decision to include SOD1 in the control group was made because SOD1-ALS represents the only known form of ALS marked by the absence of TDP-43 (or FUS) inclusions (Mackenzie et al., 2007).
 
 To analyze splicing patterns globally and without bias, we regrouped the patients in a manner independent of previously measured hnRNP H splicing. Instead, we divided the 28 sALS/FTD patients into three groups based on clinical diagnosis and hnRNP H insolubility: ALS-hnRNP H low insolubility (ALSlow; 7 patients), ALS-hnRNP H high insolubility (ALShigh; 13 patients) and FTD (FTD; 8 patients) (Supplementary file 1A). The first two groups consisted of patients with ALS only, and with measured hnRNP H insolubility being below or above 50%, respectively (Figure 5a). The FTD group consisted of those patients with clinical diagnoses of FTD. Interestingly, this group contained the five most severely like-C9 patients. Of the 11 FTD-MND patients in our cohort that were subjected to RNA-seq, only two, F3 and F7, had insolubility below 50%, and therefore were not included in this analysis, but rather used as test cases to ascertain the predictive power of the clustering with respect to insolubility. A fourth patient group consisted of C9ALS and ALS/FTD patients (C9). The average percentage insoluble hnRNP H (180,000 x G) in each group was 26.4 in ALSlow, 59.4 in C9, 67.3 in ALShigh and 79.6 in FTD (Figure 5b). In order to rule out differential hnRNP H levels in the cerebellum of these patients, we performed WB of tissue from 26 of the samples, and observed that there were no changes in overall hnRNP H abundance between these groups (Figure 5c).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig5-v2.jpg)
+
+**Figure 5.:** (a) Percent insoluble hnRNP H of 28 samples in RNA-seq analysis reveals 50% as a natural boundary between ALSlow (7 patients) and ALShigh (13 samples) samples. Percent insoluble hnRNP H of FTD patients (8 patients) is also shown. (b) RNA-seq groups plotted by CSS and percent insoluble hnRNP H. All samples used in RNA-seq differential splicing (DS) analysis groups are shown. (c) Western blots of hnRNP H (top) and histone H3 (middle) from whole-tissue homogenates from cerebellum of 26/28 samples used in RNA-seq analysis. Two ALShigh cases (s1 and s20) were excluded in order to fit all samples on one gel. Grayscale heatmap displays percent insoluble hnRNP H (bottom). (d) Venn diagram of all splicing events found to be significantly different between each patient RNA-seq group and the combined control/SOD1ALS group with PSI magnitude filtering (|∆PSI| ≥ 0.1). (e) Heatmap of all events in (d), except for the 6576 events found to have significant DS exclusively in FTD. Blue-red color scale represents Z-score for normalized PSI. Four rows above heatmap display whether each sample was included in the groupings used for the identification of DS events, termed 'In analysis' (black = yes, white = no), gender (pink = female, blue = male), Patient subtype (see key), and percent insolubility hnRNP H (180,000 x G), ranging from light (low insolubility) to dark (high insolubility) gray. Yellow is shown for cases without insolubility data. Patients are arranged by subtype, with increasing insolubility from left to right, where data is available.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Venn diagram of all events found to be significantly different between each group and the combined control/SOD1ALS group with no PSI magnitude filtering.
 
 We next compared differential splicing (DS) events in each of the four patient groups to the controls. For this analysis, we used the annotation-free method Leafcutter (Li et al., 2018). Variations in intron splicing were considered significant in ALS/FTD when the Percentage Spliced Index (PSI) compared to control differed by more than 10% (|∆PSI| ≥ 0.1) with a 10% FDR cutoff (see Materials and methods). To confirm our assumption that neurological normal and SOD1 ALS could be grouped as one, we compared these two groups and indeed found very few (23) detectable splicing differences (|∆PSI| ≥ 0.1). The paucity of splicing defects in these patients contrasted with 1300–1400 DS events in ALShigh and C9 groups and several thousand in the FTD group (Figure 5d; events listed in Supplementary file 1B), with 488 events overlapping between C9, FTD and ALShigh. Comparison of events without filtering for the magnitude of the change in PSI revealed an even greater proportion of overlapping events between the FTD, C9 and ALShigh groups (Figure 5—figure supplement 1). As validation of our like-C9 nomenclature, with or without filtering respectively, only 27 or 8% of all events detected in C9 were unique to that group; the remainder were detected in ALShigh, FTD or both (like-C9 collectively). Of the remaining 73% of events that were detected in C9 (with filtering), approximately half (48%) were shared with both other groups, while 40 and 12% of events, respectively, were exclusively shared with FTD or ALShigh (Figure 5d). The higher degree of overlap of C9 with FTD likely reflects the fact that with few exceptions, this group had the largest average change in PSI for each event. Furthermore, the ALSlow group had an insignificant number of events, even without filtering, upholding our definition of like-control for splicing in general.
 
@@ -137,13 +173,37 @@ Hierarchical clustering of splice junctions revealed two distinct groups of even
 
 We next sought to identify significant splicing changes in our dataset that best correlate with hnRNP H insolubility. We therefore ranked events according to their correlation to insolubility (Supplementary file 1C; 100 most correlated events) and plotted several. The results (Figure 6a) demonstrate that splicing of these transcripts was, as expected, affected by variations in soluble hnRNP H levels. Amongst these correlated events, the relationship to hnRNP H insolubility varied; for example, splicing changes at hnRNPA3 followed a linear relationship similar to BBS, GABRG2 and CCDC136; in turn, splicing changes at hnRNPH1 occurred only when hnRNP H insolubility was above 60%, primarily in FTD patients and some C9 patients. RIOK3 and several of the top 100 most correlated events with hnRNP H insolubility presented exponential trends similar to hnRNPH1 splicing defects. Perhaps this indicates that some events are regulated in compensatory fashions by many factors (see below), and only undergo change in inclusion when soluble levels of multiple RBPs are severely compromised.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-v2.jpg)
+
+**Figure 6.:** (a) Examples of events amongst the 100-most correlated to insolubility, with Leafcutter (LC) PSI plotted on the X-axis and insolubility (%) on the Y-axis. DS events are shown for the following genes (clockwise, from upper left): BBS2, GABRG2, HNRNPA3, HNRNPH1, RIOK3 and CCDC136 (events listed in Supplementary file 1C). (b) Heatmap of 100 events most correlated/anti-correlated (absolute value Spearman coefficient) with hnRNP H insolubility. Blue-red color scale represents Z-score for normalized PSI. Four rows above heatmap display whether each sample was included in the groupings used for the identification of DS events, termed 'In analysis' (black = yes, white = no), gender (pink = female, blue = male), Patient subtype (see key), and percent insolubility hnRNP H (180,000 x G), ranging from light (low insolubility) to dark (high insolubility) gray. Yellow is shown for cases without insolubility data. Patients are arranged by subtype, with increasing insolubility from left to right, where data is available. (c) Gene set enrichment analysis of top 200 dysregulated splicing events correlated to hnRNP H insolubility. (d) Heatmap of significant DS events that occur in a set of common splicing factor genes, simplified to the single most changed event per gene (hnRNPs, SR proteins, ALS-related RBPs or SMN; events listed in Supplementary file 1D). The same four rows apply as in (b). (e) Bar graph depicting that patients like-C9 are 3.8-times more likely to have symptoms of FTD than patients like-control (Fisher’s exact test, Odds ratio (OR) = 3.8, p=0.032).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** All coordinates are mapped to GRCh38/hg38.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** All coordinates are mapped to GRCh38/hg38.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Heatmap of 489 (488 between FTD, C9 and ALShigh plus one between all four groups) overlapping events from Figure 5d, with hierarchical clustering. Blue-red color scale represents Z-score for normalized PSI. Four rows above heatmap display whether each sample was included in the groupings used for the identification of DS events, termed 'In analysis' (black = yes, white = no), gender (pink = female, blue = male), patient subtype (see key), and percent insolubility hnRNP H (180,000 x G), ranging from light (low insolubility) to dark (high insolubility) gray. Yellow is shown for cases without insolubility data.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Heatmap of non-intersecting events (Figure 5d) comprised of the top 20 events (magnitude |∆PSI|) from each group (FTD, C9, ALShigh), and all three events from ALSlow. Patients are arranged according to vertical dendogram. Blue-red color scale represents Z-score for normalized difference in PSI. Four rows above heatmap display whether each sample was included in the groupings used for the identification of DS events, termed 'In analysis' (black = yes, white = no), gender (pink = female, blue = male), Patient subtype (see key), and percent insolubility hnRNP H (180,000 x G), ranging from light (low insolubility) to dark (high insolubility) gray. Yellow is shown for cases without insolubility data.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/37754/elife-37754-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** A model of a multi-RBP proteinopathy, where several disease-related proteins (hnRNP H, TDP-43, FUS, hnRNP A1) can exist in different states: free/soluble, phase separated into reversible granules, and trapped in overly mature granules or aggregated RNA/protein assemblies. The relative balance of these states can be influenced by known ALS/FTD mutations, or normal fluctuations due to experience, thus altering the cellular distribution of RBPs between diffuse and localized/sequestered states. We envision a theoretical ‘toxicity boundary’ beyond which RBPs are disproportionately in the highly concentrated state, and functional levels of soluble protein are low. We propose that the distance past this boundary, or magnitude of the imbalance between free and local RBP concentrations, is correlated to a greater involvement of cortical neuron dysfunction, whereas mild imbalance is sufficient only to cause MN death. Thus our model implies a gradient in vulnerability, with spinal MNs being more sensitive to this imbalance than cortical MNs, which are more vulnerable than neurons (such as spindle/VE (Von economo)) that are predominantly affected in FTD.
+
 Broadly, the 100 events with the highest correlation with hnRNP H insolubility displayed variable splicing strength (intron exclusion ratios) across the cohort (Figure 6b; events listed in Figure 6—figure supplement 1), analogous to the pattern seen for all events (Figure 5e). Notably, among the highly correlated DS events were many in transcripts encoding RBPs (Figure 6c), such as splicing regulators, which generally followed the same pattern of PSI changes relative to insolubility in each group (Figure 6d; heatmap events listed in Figure 6—figure supplement 2; all events listed in Supplementary file 1D). Interestingly, several of the events found to affect RBPs (FUS exon 7, hnRNP A1 exon 8, hnRNP D exon 7 and TIA-1 exon 5) have been the subject of intensive inquiry for their potential roles in disease (Deshaies et al., 2018; Zhou et al., 2013) as well regulating splicing and interactions with other hnRNPs (Gueroussov et al., 2017; Izquierdo and Valcárcel, 2007). This observation raises the possibility that insolubility of the disease-associated RBPs leads to specific alterations in RNA splicing that compound defects in those same RBPs and others, thereby exacerbating the magnitude and extent of splicing dysregulation (see Discussion).
 
 Beyond the RBPs, several of the DS events were consistent with possible direct roles in disease pathology. One especially noteworthy example was the increased skipping of MAPT exon 10, observed in C9, ALShigh and FTD (Supplementary file 1B). Alternative inclusion of this exon perturbs a delicate balance between 3-repeat and 4-repeat Tau, and genetic mutations in exon 10 or the surrounding intron are a significant cause of familial FTD (Ghetti et al., 2015). While it is compelling to think that specific splicing changes could drive disease pathologies, the myriad of biologically interesting events suggests caution in attributing too much meaning to any individual event.
 
 We next recapitulated this stratification of patient groups using hierarchical clustering. Using the 489 differential events that were common to all groups (488 common to ALShigh, C9 and FTD, and one common to ALSlow as well) (Figure 6—figure supplement 3), patients with similar insolubility measurements were grouped close to one another. To further support the hypothesis that all DS events are due to insolubility and not particular clinical distinctions, clustering of patients based on the top events that were unique to each grouping (20 from each ALShigh, C9 and FTD, and all three events in ALSlow) also ordered the patients according to insolubility (Figure 6—figure supplement 4). Regardless of whether clustering was performed with either the most shared (Figure 6—figure supplement 3) or the most divergent (Figure 6—figure supplement 4) events, the two groups separated by the farthest distance contained almost exactly the same patients, whereas the controls (neurological normal and SOD1) clustered together with the patients with the lowest insolubility, including samples not in the original ALSlow group. In summary, we conclude that widespread, global splicing differences occur in ALS and FTD, and these can be explained by biochemical insolubility of RBPs, with corresponding severity across distinct brain regions.
 
-## Like-C9 patients have a higher incidence of FTD
+### Like-C9 patients have a higher incidence of FTD
 
 In the above analysis based on solubility groupings, the FTD samples were noteworthy in that they displayed the highest hnRNP H insolubility, as well as the most numerous and acute PSI changes. However, several sporadic and C9 ALS patients with high insolubility had similar DS patterns, implying that the excessive events were not somehow specific to the FTD clinical diagnosis, but rather the result of exceptionally high insolubility of RBPs, which occurs at a greater rate in FTD than ALS. This suggests a possible relationship between patients identified as like-C9 and FTD.
 
@@ -169,30 +229,152 @@ The observation that defects in mRNA splicing may have relevance to ALS was made
 
 ## Materials and methods
 
-## Acquisition of patient materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Patient brains samples</td>
+      <td>NA</td>
+      <td>All identifiers are provided in Supplementary file 1A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hnRNP H (rabbit)</td>
+      <td>Bethyl, A300-511</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hnRNP H (rabbit, Co-IP)</td>
+      <td>ThermoFisher, PA5-27610</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TDP-43 (rabbit)</td>
+      <td>Proteintech, 10782–2-AP</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TDP-43 human specific (mouse)</td>
+      <td>Proteintech, 60019–2-Ig</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hnRNP A1 (mouse)</td>
+      <td>Sigma, 4B10</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FUS (mouse)</td>
+      <td>Santa Cruz Biotechnologies, H-6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (rabbit)</td>
+      <td>Sigma, G9545</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>U2AF65 (mouse)</td>
+      <td>Sigma, U4758</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMN (mouse)</td>
+      <td>Sigma, S2944</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3 (rabbit)</td>
+      <td>Abcam, 1791</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG-M2 (mouse)</td>
+      <td>Sigma, F1804</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (rabbit)</td>
+      <td>Sigma, A2066</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C9ORF72 (rabbit)</td>
+      <td>Novus, 1086CGP</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leafcutter</td>
+      <td></td>
+      <td>Li et al. (2018)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Acquisition of patient materials
 
 Human patient brains were donated for research by next of kin. Samples were acquired from the New York Brain Bank. C9 expansion testing was performed by repeat-primed PCR in the Clinical Pathology lab of Columbia University Medical Center. All available clinical and pathological records were collected and used to summarize patient demographics and disease features. Additional samples were obtained by the New York Genome Center as part of the Target ALS post-mortem core.
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was extracted from patient cerebellum, polyA selected, reverse-transcribed, and amplified by 32P-PCR for 33 cycles with established primers as previously described (Conlon et al., 2016). Products were electrophoresed side-by-side on 6% native PAGE and exposed to phosphor. Percent inclusions were measured using ImageQuant, and replicate data from two independent RNA extractions per sample were graphed and analyzed with Graphpad for Prism. All primer sequences for hnRNP H (Conlon et al., 2016) and TDP-43 (Tollervey et al., 2011) targets were previously published. Primer sequences (5’−3’) for ACHE are as follows: 4F: GAACCGCTTCCTCCCCAAATT; 5aR: CAGCCTCCCCATGGGTGAA; 5bR: GTGGAACTCGGCCTTCCACT.
 
-## Biochemical fractionation
+### Biochemical fractionation
 
 Biochemical fractionation using Sarkosyl-containing buffers was performed as previously described (Conlon et al., 2016), with 21,000 x g centrifugation (15 minutes) substituted for 180,000 x g (30 minutes) where indicated. All three fractions, soluble, sarkosyl soluble and sarkosyl insoluble, were western blotted simultaneously, and the band intensities of each fraction were quantified using ImageJ from a single exposure.
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed as previously described (Conlon et al., 2016). Antibodies used in include Actin (Sigma, A2066), hnRNP H (Bethyl, A300-511), TDP-43 (Proteintech, 10782–2-AP), FUS (Santa Cruz Biotechnologies, H-6), GAPDH (Sigma, G9545), hnRNP A1 (Sigma, 4B10), Histone H3 (Abcam, 1791), SMN (Sigma, S2944), U2AF65 (Sigma, U4758), C9ORF72 (Novus, 1086CGP), FLAG-M2 (Sigma, F1804). All primary antibodies were incubated in Pierce Protein-free blocking buffer.
 
-## Co-Immunoprecipitation
+### Co-Immunoprecipitation
 
 Fractionation was performed as described (Conlon et al., 2016) with the following exceptions: after the 180,000 x g centrifugation, the insoluble pellet was washed briefly with milliQ water, then incubated in 20 mM Tris, 100 mM KCl (supplemented with 10 mM phenylmethylsulfonyl fluoride (PMSF) and 10 μg/ml each of aprotinin, leupeptin and pepstatin [a/l/p]) equal to 5% the volume of the Sarksosyl soluble-fraction. The pellet was incubated with rotation for 24 hr at 4°C, then centrifuged briefly at 5000 x g. One microliter of elutant (without debris) was diluted into a final volume of 50 μl IP buffer (50 mM Tris pH 7.5, 150 mM NaCl, 0.5% NP-40, 10% glycerol with 10 mM PMSF and 10 μg/ml each of a/l/p) with either 0.5 ug TDP-43 antibody (Proteintech, 60019–2-Ig), 0.5 μg FLAG-M2 antibody (Sigma) or nothing, and incubated at 4°C for 60–100 min with rotation. One ul of input was removed and stored at 4°C. Protein A/G beads (Pierce; 10 μl per sample) were washed three times with 1 mL IP buffer, the resuspended in 25 μl IP buffer. Beads were then mixed with the 50 μl sample, and incubated for 16–24 hr at 4°C with rotation. Supernatants were separated from beads on a magnetic stand, and beads were washed three times with 1 mL high-salt IP buffer (50 mM Tris pH 7.5, 500 mM NaCl, 0.5% NP-40, 10% glycerol with 10 mM PMSF and 10 μg/ml each of a/l/p), with 5 min rotation at 4°C with each wash. Beads were centrifuged briefly (<10 s) at 500 x g after the third wash, and residual liquid was fully removed. Beads were eluted for 5–8 min with 100 mM glycine, pH 2.0 at room temperature, then immediately neutralized with 100 mM Tris pH 10.0. The eluent was mixed with 4X SDS sample buffer, boiled, electrophoresed by 8% SDS-PAGE, and western blotted with hnRNP H (ThermoFisher, PA5-27610) and TDP-43 (Proteintech, 10782–2-AP) antibodies.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Total RNA was extracted from flash-frozen post-mortem cerebellum tissue in Trizol/Chloroform and purified using a Qiagen RNeasy minikit column. Starting form 500 ng total RNA input, rRNA depletion and library preparation were performed according to the manufacturer’s conditions using the KAPA Stranded RNA-Seq Kit with RiboErase and unique Illumina-compatible indexes (NEXTflex RNA-seq Barcodes, BioScientific). Multiplexed libraries 550 bp in length were sequenced PE 125 (Illumina HiSeq 2500).
 
-## Computational methods
+### Computational methods
 
 Forty to sixty million filtered reads were aligned to GRCh38 using STAR (2.5.2a) (Dobin and Gingeras, 2015). Differential splicing analysis was performed using the LeafCutter annotation-free algorithm (Li et al., 2018). The package was implemented with default parameter settings per the author’s recommendations: at least 50 split reads must support the cluster with introns up to 500 kb. Only clusters with p-adjusted <0.1 were considered for further analysis (a lower p-adjusted cutoff proved to be too stringent, with no significant clusters listing for the ALSlow analysis). We used gender as an additional co-variate to prevent events attributable to gender from cluttering the results. Variations in intron splicing were considered significant in ALS/FTD when the Percentage Spliced Index (PSI) compared to control differed by more than 10% (|∆PSI| ≥ 0.1) with 10% FDR cutoff. Differential splicing events were then mapped to gene names to identify events of interest using Gencode version 25.

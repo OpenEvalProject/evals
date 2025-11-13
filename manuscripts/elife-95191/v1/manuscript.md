@@ -19,19 +19,19 @@
 
 ### Affiliations
 
-1. https://ror.org/057qpr032 Université de Bordeaux, INSERM, U1312, BRIC Bordeaux France
-2. https://ror.org/02cp04407 Université de Limoges, INSERM, U1308, CAPTuR Limoges France
-3. https://ror.org/057qpr032 Plateforme OncoProt, Université de Bordeaux, CNRS, INSERM, TBM-Core, US5, UAR3457 Bordeaux France
-4. https://ror.org/057qpr032 Plateforme Protéome, Université de Bordeaux, Bordeaux Proteome Bordeaux France
-5. https://ror.org/057qpr032 Bordeaux Imaging Center, Université de Bordeaux, CNRS, INSERM, BIC Bordeaux France
-6. https://ror.org/057qpr032 Université de Bordeaux, CNRS, Interdisciplinary Institute for Neuroscience, IINS, Bordeaux Bordeaux France
-7. https://ror.org/057qpr032 Plateforme d'histologie, Université de Bordeaux, CNRS, INSERM, TBM-Core, US5, UAR3457 Bordeaux France
+1. Université de Bordeaux, INSERM, U1312, BRIC Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+2. Université de Limoges, INSERM, U1308, CAPTuR Limoges France ([ROR:02cp04407](https://ror.org/02cp04407))
+3. Plateforme OncoProt, Université de Bordeaux, CNRS, INSERM, TBM-Core, US5, UAR3457 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+4. Plateforme Protéome, Université de Bordeaux, Bordeaux Proteome Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+5. Bordeaux Imaging Center, Université de Bordeaux, CNRS, INSERM, BIC Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+6. Université de Bordeaux, CNRS, Interdisciplinary Institute for Neuroscience, IINS, Bordeaux Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+7. Plateforme d'histologie, Université de Bordeaux, CNRS, INSERM, TBM-Core, US5, UAR3457 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
 
 † Corresponding author
 
 ## Abstract
 
-Immune checkpoint inhibitors have produced encouraging results in cancer patients. However, the majority of ß-catenin-mutated tumors have been described as lacking immune infiltrates and resistant to immunotherapy. The mechanisms by which oncogenic ß-catenin affects immune surveillance remain unclear. Herein, we highlighted the involvement of ß-catenin in the regulation of the exosomal pathway and, by extension, in immune/cancer cell communication in hepatocellular carcinoma (HCC). We showed that mutated ß-catenin represses expression of SDC4 and RAB27A , two main actors in exosome biogenesis, in both liver cancer cell lines and HCC patient samples. Using nanoparticle tracking analysis and live-cell imaging, we further demonstrated that activated ß-catenin represses exosome release. Then, we demonstrated in 3D spheroid models that activation of β-catenin promotes a decrease in immune cell infiltration through a defect in exosome secretion. Taken together, our results provide the first evidence that oncogenic ß-catenin plays a key role in exosome biogenesis. Our study gives new insight into the impact of ß-catenin mutations on tumor microenvironment remodeling, which could lead to the development of new strategies to enhance immunotherapeutic response.
+Immune checkpoint inhibitors have produced encouraging results in cancer patients. However, the majority of ß-catenin-mutated tumors have been described as lacking immune infiltrates and resistant to immunotherapy. The mechanisms by which oncogenic ß-catenin affects immune surveillance remain unclear. Herein, we highlighted the involvement of ß-catenin in the regulation of the exosomal pathway and, by extension, in immune/cancer cell communication in hepatocellular carcinoma (HCC). We showed that mutated ß-catenin represses expression of SDC4 and RAB27A, two main actors in exosome biogenesis, in both liver cancer cell lines and HCC patient samples. Using nanoparticle tracking analysis and live-cell imaging, we further demonstrated that activated ß-catenin represses exosome release. Then, we demonstrated in 3D spheroid models that activation of β-catenin promotes a decrease in immune cell infiltration through a defect in exosome secretion. Taken together, our results provide the first evidence that oncogenic ß-catenin plays a key role in exosome biogenesis. Our study gives new insight into the impact of ß-catenin mutations on tumor microenvironment remodeling, which could lead to the development of new strategies to enhance immunotherapeutic response.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Based on these considerations, the current study investigated the role of exosom
 
 ## Results
 
-## Silencing of mutated ß-catenin increases exosome biogenesis-associated gene expression in HepG2 cells
+### Silencing of mutated ß-catenin increases exosome biogenesis-associated gene expression in HepG2 cells
 
 CTNNB1 mutations in HCC are often monoallelic, leaving a wild-type allele in tumor cells. To study the oncogenic ß-catenin specifically, we made use of the dual ß-catenin knockdown (KD) HepG2 model we published recently (Gest et al., 2023). The transcriptional analysis of HepG2 KD cells revealed that the expression of 1973 genes (log2(Fold-change) >0.5 and<−0.5) is modulated upon mutated ß-catenin silencing (Gest et al., 2023; Figure 1a). Gene ontology analysis (FunRich) performed on upregulated genes showed that mutated ß-catenin silencing enhanced significantly the expression of genes linked to specific cellular components, including exosomes (Figure 1b). Moreover, silencing of the mutated ß-catenin led to the overexpression of 17 genes associated with exosome biogenesis, such as RAB27A and SDC4 (Figure 1c). Similarly, proteomic analysis of HepG2 KD cells revealed exosomes as the main cellular component displaying up-regulated proteins upon mutated ß-catenin silencing (Figure 1d–e). Consistent with the transcriptomic analysis, we found Rab27a and Syndecan-4 among up-regulated proteins (Figure 1f), even if the variability was found for Syndecan-4 protein levels. These results suggest the involvement of mutated ß-catenin in the regulation of the exosomal pathway.
 
@@ -51,21 +51,115 @@ CTNNB1 mutations in HCC are often monoallelic, leaving a wild-type allele in tum
 
 **Figure 1.:** (a–f) HepG2 cells were transfected with siRNAs targeting mutated ß-catenin or control siRNAs. (a) Volcano plot of deregulated genes identified by microarray based-transcriptomic analysis. Red and blue dots indicated respectively significantly up- and down-regulated genes. (b) Upregulation of cellular component genes using FunRich software. (c) Upregulated genes associated with exosome biogenesis pathway. The graph indicates the fold change (FC) when comparing the mutated ß-catenin silencing condition with the control condition. (d) Volcano plot of deregulated proteins identified by mass spectrometry. Red and blue dots indicated respectively significantly up- and down-regulated proteins. (e) Upregulation of cellular component proteins identified using FunRich software. (f) Upregulated proteins associated with exosome biogenesis pathway. The graph indicates the fold change when comparing the mutated ß-catenin silencing condition with the control condition. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant.
 
-## Stable depletion of mutated ß-catenin increases exosome secretion in the HepG2 cell model
+### Stable depletion of mutated ß-catenin increases exosome secretion in the HepG2 cell model
 
 In the model presented above, siRNAs were used to transiently silence mutated ß-catenin expression in HepG2 cells (Gest et al., 2023). To improve this method, the same sequences were used to develop an inducible shRNA strategy to stably inhibit the expression of the mutated ß-catenin. Through the use of doxycycline-inducible promoters, we were able to regulate the expression of shRNAs over time for more in-depth and specific investigations of ß-catenin function in various cellular processes. In HepG2 cells, this strategy reduced protein expression by 62% for mutated ß-catenin and by 42% for CyclinD1, a ß-catenin-positive transcriptional target (Figure 2a). The model was also validated regarding mRNA expression of several ß-catenin transcriptional targets. We noted a decrease in the expression of CCND1 and AXIN2 (positive targets) and an increase in the expression of ARG1 expression (negative target) (Figure 2—figure supplement 1). Also, as previously described with the siRNA strategy (Gest et al., 2023), after mutated ß-catenin depletion in HepG2 cells, we observed an increase in the number and size of bile canaliculi (BC), feature of more differentiated cells (Figure 2—figure supplement 2). Nanoparticle-tracking analysis (NTA) revealed that depleting mutated ß-catenin using either siRNA or shRNA increased the number of secreted particles (Figure 2b, Figure 2—figure supplement 3). The particle mean size (100–150 nm), unaltered by either approach, was consistent with the size of typical small EVs, such as exosomes (Figure 2b, Figure 2—figure supplement 3). To analyze the exosomal release in living HepG2 cells, we used a pH-sensitive reporter (CD63-pHluorin) that allowed the visualization of MVB–PM fusion by total internal reflection fluorescence (TIRF) microscopy (Verweij et al., 2018). The tetraspanin CD63 is a well-known exosome surface marker (Jeppesen et al., 2019; Kowal et al., 2016). In cells expressing CD63-pHluorin, we could detect multiple discrete increases in the fluorescence signal at the PM over the time suggesting ongoing fusion of CD63-pHluorin–positive acidic vesicles with the PM (Figure 2—figure supplement 4). We found that mutated ß-catenin depletion in HepG2 cells significantly increased the number of fusion events associated with secreted exosomes (Figure 2c, Video 1 and Video 2). EVs released by HepG2 cells were next isolated by differential ultracentrifugation and characterized (Figure 2d). First, western-blot analysis of isolated EVs confirmed the expression of the CD63 exosomal marker. It is noteworthy that we observed an increase in CD63 expression after mutated ß-catenin depletion, suggesting an overall increase in the exosomal fraction (Figure 2e). This increased expression of CD63 was also confirmed with the proteomic analysis of HepG2 KD cells (Figure 1f). Moreover, the WT and the mutated forms of the ß-catenin protein were also found in HepG2-derived EVs, and the expression of mutated ß-catenin was decreased relative to the cells of origin (Figure 2e). Using transmission electron microscopy (TEM), we demonstrated that HepG2-derived EVs have the morphology (flat cup-shaped) and size (50–150 nm) of typical exosomes (Yang et al., 2019; Figure 2f and Figure 2—figure supplement 5). To better understand the regulation of exosome secretion by mutated ß-catenin, we next used TEM to visualize MVBs, the origin of exosomes. We observed a higher number of MVBs per cell and an increase in their diameter upon removal of mutated ß-catenin (Figure 2g). Taken together these results highlight that mutated ß-catenin represses exosome secretion.
 
-## Mutated ß-catenin decreases Syndecan-4 and Rab27a expression in liver cancer cell lines
+![Figure 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-v1.jpg)
+
+**Figure 2.:** (a–g) HepG2-shßCat MUT and HepG2-shCtrl cells were treated with doxycycline (DOX) to silence or not mutated ß-catenin. (a) Analysis of ß-catenin and CyclinD1 expression by western-blot. Stain-free was used as a loading control. Graphs show the quantification of seven independent experiments. (b) Nanoparticle tracking analysis of supernatant. Graphs show the quantification of seven independent experiments. (c) Quantification of CD63-pHluorin MVB–PM fusion events visualized by live total internal reflection fluorescence (TIRF) microscopy. Depicted data are representative of three independent experiments, each dot represents one cell. Images represent the cell mask (white) and red dots corresponding to fusion events. Scale bar: 10 µm. (d) Extracellular vesicles (EVs) isolation protocol. Created with BioRender.com, and published using a CC BY-NC-ND license with permission (e) Analysis of ß-catenin and CD63 expression in HepG2-derived EVs. Stain-free was used as a loading control. Graphs show the quantification of four independent experiments. (f) Transmission electron microscopy images of HepG2-derived EVs by close-up. Scale bar: 100 nm. The graph shows the diameter quantification of EVs (n=93). (g) Electron microscopy images of HepG2 shCtrl and shßcat MUT cells showing multivesicular bodies (MVBs) (yellow arrowheads). Scale bar: 2 µm (zoom: 500 nm). The graphs show the quantification of the number of multivesicular bodys (MVBs) per cell and the MVB diameter. (a–g) Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ***p<0.001; ns, non-significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Analysis of CCND1, AXIN2, and ARG1 mRNA expression by RT-qPCR. HepG2 cells were treated with doxycycline to express either a control shRNA (shCtrl) or a shRNA targeting mutated ß-catenin (shßcat MUT). The graph shows the quantification of six independent experiments. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (left panel) Cells were stained using fluorescent phalloidin and imaged by confocal microscopy. Images are showing bile canaliculi (BC). Scale bar: 5 µm. (right panel) Quantification of BC area, perimeter, and percentage of cells forming BC. Depicted data are representative of three independent experiments with twenty BC per experiment, each dot represents one BC. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; ***p<0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The graphs show the quantification of the number of particles (left panel) and of the particle size (right panel) of seven independent experiments. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; ns, non-significant.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** CD63-pHluorin MVB–PM fusion events were visualized by live TIRF microscopy in HepG2 cells treated with doxycycline to express a shRNA targeting mutated ß-catenin (shßcat MUT). Scale bar: 1 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Transmission electron microscopy images of HepG2-derived EVs by wide-field (yellow arrowheads). HepG2 cells were treated with doxycycline to express either a control shRNA (shCtrl) or a shRNA targeting mutated ß-catenin (shßcat MUT). Scale bar: 500 nm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/95191/elife-95191-video1.mp4.jpg)
+
+**Video 1.:** Cells were recorded under TIRF illumination on a microscope (IX83; Olympus) for 2 min. Videos show exocytic events (suddenly appearing fluorescent dots) corresponding to MVB-PM fusion.
+
+![Video 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-video2.mp4.jpg)
+
+**Video 2.:** Cells were recorded under TIRF illumination on a microscope (IX83; Olympus) for 2 min. Videos show exocytic events (suddenly appearing fluorescent dots) corresponding to MVB-PM fusion.
+
+### Mutated ß-catenin decreases Syndecan-4 and Rab27a expression in liver cancer cell lines
 
 To explore the molecular aspect of the alteration of exosome secretion, we first attempted to confirm the data obtained in our transcriptomic and proteomic approaches. In HepG2 cells, we confirmed that transient (Figure 3—figure supplement 1) and stable (Figure 3a–b) mutated ß-catenin depletion increased gene and protein expression of both SDC4 and RAB27A. Due to the lack of efficient antibodies against SDC4, we were unable to analyze SDC4 protein expression by Western-Blot. However, we were able to confirm the increased expression of Syndecan-4 and Rab27a by immunofluorescence (Figure 3c–d). We then extended these results to other liver cancer cell lines. We analyzed SDC4, RAB27A, ARG1, and AXIN2 basal mRNA expression in five different liver cancer cell lines, each with a different CTNNB1 mutational status, and identified positive correlations between SDC4 and RAB27A with ARG1 (ß-catenin-negative target) and negative correlations between SDC4 and RAB27A with AXIN2 (ß-catenin-positive target) (Figure 3—figure supplement 2). Upon analyzing the basal expression of Rab27a protein in these five cell lines, we identified a negative correlation between ß-catenin and Rab27a expression (Figure 3—figure supplement 3). In the two liver cancer cell lines bearing a ß-catenin point mutation (Huh6 and SNU398 cells), inducible shRNA strategy with doxycycline reduced ß-catenin protein expression by 63% and 49%, respectively (Figure 3—figure supplement 4). Associated with that reduction in ß-catenin protein expression we observed a decrease in CCND1 and AXIN2 mRNA expression and an increase in ARG1 mRNA expression in both cell lines (Figure 3—figure supplement 5). As in HepG2 cells, ß-catenin depletion also increased SDC4 and RAB27A gene expression and Rab27a protein expression in Huh6 and SNU398 cells treated with doxycycline (Figure 3e–h). In order to mimic the ß-catenin activation in a non-mutated HCC cell line, we treated Huh7 cells with a GSK3 inhibitor (CHIR99021) limiting ß-catenin phosphorylation and degradation. This CHIR99021 treatment increased ß-catenin protein expression (2.37-fold) (Figure 3i) and induced its translocation into the nucleus in Huh7 cells (Figure 3j) where concomitant deregulation of ß-catenin transcriptional targets was observed (Figure 3—figure supplement 6). Consistent with our earlier data using HepG2 cells, CHIR99021 treatment decreased SDC4 and RAB27A gene expression, and Rab27a protein level in Huh7 cells (Figure 3k–l). Then, we used TIRF microscopy to analyze exosomal release in living Huh7 cells expressing CD63-pHluorin. We found that CHIR99021 treatment significantly decreased the number of fusion events in Huh7 cells (Figure 3m, Video 3 and Video 4). All together, these results revealed that ß-catenin mutation/activation represses the expression of syndecan-4 and Rab27A, two proteins involved in exosome biogenesis, in association with repression of exosomal secretion.
 
-## Mutated ß-catenin promotes immune evasion in HCC cells through exosomes
+![Video 3.](https://cdn.elifesciences.org/articles/95191/elife-95191-video3.mp4.jpg)
+
+**Video 3.:** Cells were recorded under total internal reflection fluorescence (TIRF) illumination on a microscope (IX83; Olympus) for 2 min. Videos show exocytic events (suddenly appearing fluorescent dots) corresponding to MVB-PM fusion.
+
+![Video 4.](https://cdn.elifesciences.org/articles/95191/elife-95191-video4.mp4.jpg)
+
+**Video 4.:** Cells were recorded under total internal reflection fluorescence (TIRF) illumination on a microscope (IX83; Olympus) for 2 min. Videos show exocytic events (suddenly appearing fluorescent dots) corresponding to MVB-PM fusion.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-v1.jpg)
+
+**Figure 3.:** (a–d) HepG2 cells were treated with doxycycline (DOX) to express either a control shRNA (shCtrl) or a shRNA targeting mutated ß-catenin (shßcat MUT). (a) Analysis of SDC4 and RAB27A mRNA expression by qRT-PCR. Graphs show the quantification. (b) Analysis of Rab27a protein expression by western-blot. Stain-free was used as a loading control. The graph shows the quantification. (c–d) Epifluorescence images of HepG2 shCtrl and shßcat MUT cells stained with Syndecan-4 and Rab27a antibodies (red), Phalloidin (green), Hoechst (blue). Scale bar: 20 µm. Graphs show the quantification of the fluorescence intensity per image and divided per nuclei. Depicted data are representative of three independent experiments, each dot represents one image. (e) Analysis of SDC4 and RAB27A mRNA expression in Huh6 cells expressing either a control shRNA (shCtrl) or a shRNA targeting ß-catenin (shßcat) treated with DOX. The graph shows the quantification. (f) Analysis of SDC4 and RAB27A mRNA expression in SNU398 cells expressing either a control shRNA (shCtrl) or a shRNA targeting ß-catenin (shßcat) treated with DOX. The graph shows the quantification. (g–h) Analysis of Rab27a protein expression in Huh6 (g) or SNU398 (h) cells expressing either a control shRNA (shCtrl) or a shRNA targeting ß-catenin (shßcat). Stain-free was used as a loading control. The graphs show the quantification. (i–m) Huh7 cells treated with DMSO or CHIR99021 (3 µM) for 48 hr. (i) Analysis of ß-catenin expression by western blot. The graph shows the quantification. (j) Epifluorescence images of cells stained with ß-catenin antibody (red), Phalloidin (green), Hoechst (blue). Scale bar: 20 µm. (k) Analysis of SDC4 and RAB27A mRNA expression by qRT-PCR. The graphs show the quantification. (l) Analysis of Rab27a protein expression by western-blot. The graph shows the quantification. (m) Quantification of CD63-pHluorin MVB–PM fusion events visualized by live total internal reflection fluorescence (TIRF) microscopy. Depicted data are representative of three independent experiments; each dot represents one cell. Images represent the cell mask (white) and red dots corresponding to fusion events. (a–m) All graphs show the quantification of at least three independent experiments. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Analysis of SDC4 and RAB27A mRNA expression by qRT-PCR (left panel) and of ß-catenin and Rab27a protein expression by Western blot (right panel) in HepG2 cells transfected with control (siCtrl) or mutated ß-catenin targeting (sißcat MUT) siRNA. The graphs show the quantification of at least four independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05; **p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (Upper panel) Analyses of SDC4 and RAB27A basal mRNA expression by qRT-PCR. The graphs show the quantification of five independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05. (Lower panel) Pearson’s correlation analyses of SDC4 and RAB27A with ARG1 or AXIN2 basal mRNA expression in HepG2, SNU398, Huh6, Huh7, and Hep3B cell lines.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Analysis of ß-catenin and Rab27a expression by western blot. Stain-free was used as a loading control. Graphs show the quantification of three independent experiments. On the right-hand graph, protein expression was subjected to Pearson’s correlation coefficient analysis.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Analysis of ß-catenin protein expression in Huh6 and SNU398 cells expressing either a control shRNA (shCtrl) or a shRNA targeting ß-catenin (shßcat) treated with doxycycline (DOX). The graphs show the quantification of nine (Huh6 cells) and three (SNU398 cells) independent experiments. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. **p<0.01; ***p<0.001.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Analysis of CCND1, AXIN2, and ARG1 mRNA expression in Huh6 and SNU398 shCtrl and shßcat cells treated with doxycycline (DOX). The graph shows the quantification of three independent experiments. Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Analysis of AXIN2 and ARG1 mRNA expression in Huh7 cells treated with DMSO or CHIR99021 (3 µM). The graphs show the quantification of four independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. **p<0.01.
+
+### Mutated ß-catenin promotes immune evasion in HCC cells through exosomes
 
 Our next goal was to investigate the possible role of mutated ß-catenin in HCC immune escape. We used 3D spheroid models from two liver cancer cell lines (HepG2 and Huh7) and after 24 hr co-culture of spheroids with Peripheral Blood Mononuclear Cells (PBMC), immune cell infiltration was evaluated by flow cytometry (Figure 4a–b). First of all, we assessed the capability of PBMC to invade spheroids formed from Huh7 cells treated with CHIR9901. We observed a decrease in PBMC infiltration and an increase in tumor cell survival in Huh7 cells were treated with CHIR9901 compared to the results seen in the control condition (Figure 4c). Of note, we confirmed that CHIR99021 increased ß-catenin and decreased Rab27a protein expression in Huh7 spheroids with no impact on the cell viability (Figure 4—figure supplement 1). Next, we showed that the depletion of mutated ß-catenin protein enhanced PBMC infiltration in HepG2 cells associated with a decrease in tumor cell survival (Figure 4d). We verified that mutated ß-catenin protein was correctly depleted in HepG2 spheroids, with an increase in Rab27a protein expression and no impact on cell viability (Figure 4—figure supplement 2). Altogether, these results confirm the involvement of mutated ß-catenin in immune evasion. We next sought to investigate the role of exosomes in this process. In order to blunt exosome secretion, we used siRNA directed against Rab27a in spheroids formed with HepG2 cells depleted of mutated ß-catenin. Rab27a depletion decreased the number of secreted particles without any effect on cell viability in HepG2 shßcat MUT spheroids (Figure 4—figure supplement 3). Furthermore, depletion of Rab27a decreased PBMC infiltration associated with an increase of tumor cell survival (Figure 4e). Taken together, these results strongly suggest a determinant role for exosomes in immune cell infiltration.
 
-## CTNNB1 mutations are associated with low expression of exosomal biogenesis-associated genes in HCC patient samples
+![Figure 4.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig4-v1.jpg)
+
+**Figure 4.:** (a) Peripheral blood mononuclear cells (PBMC) infiltration analysis protocol. Created with BioRender.com, and published using a CC BY-NC-ND license with permission. (b) Images of HepG2 spheroids expressing a control shRNA incubated or not with PBMC for 24 hr. (c) Analysis of PBMC infiltration and tumor cell survival in Huh7 spheroids treated with DMSO or CHIR99021. (d) Analysis of PBMC infiltration and tumor cell survival in HepG2 spheroids expressing control shRNA (shCtrl) or shRNA targeting mutated ß-catenin (shßcat MUT). (e) Analysis of PBMC infiltration and tumor cell survival in HepG2 spheroids co-expressing shRNA targeting mutated ß-catenin (shßcat MUT) and control siRNA (siCtrl) or siRNA targeting Rab27A (siRab27A). (c–e) Graphs show the quantification of six independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (Right panel) ß-catenin and Rab27a expressions were analyzed by western-blot in Huh7 spheroids treated with DMSO or CHIR99021 (3 µM). (Left panel) Cell viability of Huh7 spheroids (DMSO and CHIR99021). All graphs show the quantification of at least three independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ns, non-significant.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** HepG2 cells were treated with doxycycline (DOX) to express either a control shRNA (shCtrl) or a shRNA targeting mutated ß-catenin (shßcat MUT) and grown in spheroids. (left panel) ß-catenin and Rab27a expressions were analyzed by western-blot. (right panel) Cell viability of HepG2 shCtrl and shßcat MUT spheroids. Graphs show the quantification of at least three independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05; ns, non-significant.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Analysis of Rab27a expression in HepG2 spheroids co-expressing shßcat MUT and control siRNA (siCtrl) or siRNA targeting Rab27A (siRab27A) (left panel). Cell viability of HepG2 shßcat MUT spheroids treated with siCtrl or siRab27a (middle panel). Nanoparticle tracking analysis of supernatant from HepG2 shßcat MUT spheroids treated with siCtrl or siRab27a (right panel). All graphs show the quantification of at least three independent experiments. Results are expressed as Mean ± SEM, one or two-tailed Student’s t-test analysis. *p<0.05; **p<0.01; ns, non-significant.
+
+### CTNNB1 mutations are associated with low expression of exosomal biogenesis-associated genes in HCC patient samples
 
 To determine whether markers of exosomal biogenesis are deregulated in HCC human samples, we assessed the expression of SDC4 and RAB27A using public transcriptomic data from two different cohorts (Figure 5a: TGCA data sets from Cbioportal, Figure 5b; Boyault et al., 2007). In both sets of data, we showed that SDC4 and RAB27A gene expressions were significantly reduced in CTNNB1-mutated HCCs compared to non-mutated tumors (Figure 5a–b). Furthermore, Pearson’s correlation analysis of these two cohorts revealed that RAB27A and SDC4 gene expression were positively correlated with the expression of ARG1 and PCK1 (ß-catenin-negative targets) (Benhamouche et al., 2006) and negatively correlated with the expression of GLUL, CCND1, AXIN2, LGR5, FAT1, and BMP4 (ß-catenin-positive targets) (Figure 5—figure supplement 1). We then performed immunohistochemical analysis on 56 human HCC samples with or without CTNNB1 mutations (Figure 5—figure supplement 2). We found that tumors strongly positive for glutamine synthetase (a well-known ß-catenin-positive target in the liver Cadoret et al., 2002), were correlated with low levels of Rab27a protein expression (Figure 5c), supporting the link between ß-catenin activation and regulation of exosomal secretion through a decrease in Rab27a expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig5-v1.jpg)
+
+**Figure 5.:** (a) Analysis of SDC4 and RAB27A mRNA expression in ß-catenin mutated (red) and non-mutated (blue) HCC (Cbioportal cohort, n=366). (b) Analysis of SDC4 and RAB27A mRNA expression in ß-catenin mutated (red) and non-mutated (blue) HCC (Boyault et al. cohort, n=56). (c) Immunohistochemistry (IHC) analysis of glutamine synthetase (GS) and Rab27a in HCC samples presenting or not ß-catenin mutations. Scale bar: 1 mm. (T: tumoral, NT: non tumoral). The upper graphs show the quantification of the percentage of cells positive for GS or Rab27A. The analysis was split into two cohorts (circle and triangle). The lower graph shows the Pearson correlation between Rab27a and GS protein expression (n=56). Results are expressed as Mean ± SEM, two-tailed Student’s t-test analysis, or Pearson correlation test. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (Upper panel) Analysis of SDC4 and RAB27A mRNA expression in ß-catenin-mutated (red) and non-mutated (blue) HCC (Cbioportal cohort n=366). (Lower panel) Analysis of SDC4 and RAB27A mRNA expression in ß-catenin mutated (red) and non-mutated (blue) HCC (Boyault et al. cohort n=56). Results are expressed as Pearson correlation test. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95191/elife-95191-fig5-figsupp2-v1.jpg)
 
 ## Discussion
 
@@ -81,86 +175,387 @@ In conclusion, this study is the first description of the oncogenic ß-catenin a
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hepatocellular carcinoma</td>
+      <td>ATCC</td>
+      <td>HepG2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hepatocellular carcinoma</td>
+      <td>ATCC</td>
+      <td>Huh7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hepatocellular carcinoma</td>
+      <td>ATCC</td>
+      <td>SNU398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hepatoblastoma</td>
+      <td>Perret (Paris, France)</td>
+      <td>Huh6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>AllStars negative-control siRNA</td>
+      <td>Qiagen</td>
+      <td>SI03650318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA toß-catenin</td>
+      <td>Eurofins Genomics Gest et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to Rab27A</td>
+      <td>Sigma</td>
+      <td>MISSION EHU091501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pCMV-Sport6-CD36-pHluorin</td>
+      <td>Addgene</td>
+      <td>Plasmid#130901</td>
+      <td>TIRF experiment</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Tet-pLKO-puro lentivirus vector</td>
+      <td>Addgene</td>
+      <td>plasmid#21915</td>
+      <td>Lentiviral construct to transfect and express the shRNA.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>pLKO-Tet-On-shRNA-Control</td>
+      <td>Addgene</td>
+      <td>plasmid#398398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK3 inhibitor CHIR99021</td>
+      <td>Sigma</td>
+      <td>SML1046</td>
+      <td>3 µM</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>PBMC</td>
+      <td>EFS</td>
+      <td></td>
+      <td>Freshly isolated from human blood</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTrace Violet</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td>5 µM, FACS experiment to detect immune cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium Iodide</td>
+      <td>Sigma</td>
+      <td>P4170</td>
+      <td>1/500 dilution, FACS experiment to detect dead cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCND1_F</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>CATCAAGTGTGACCCGGACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCND1_R</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>CCTCCTCCTCAGTGGCCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AXIN2_F</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>TGCTCTGTTTTGTCTTAAAGGTCTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AXIN2_R</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>ACAGATCATCCCATCCAACACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ARG1_F</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>GTGGACAGACTAGGAATTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ARG1_R</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>TCCAGTCCGTCAACATCAAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RAB27A_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGCCATAGCACTCGCAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RAB27A_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGACCATTTGATCGCACCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDC4_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGATGAGGATGTAGTGGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDC4_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACAACTTCAGGGCCGATCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 S_F</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>GTAACCCGTTGAACCCCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 S _R</td>
+      <td>Gest et al., 2023</td>
+      <td>PCR primers</td>
+      <td>CCATCCAATCGGTAGTAGCG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ß-catenin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610154</td>
+      <td>WB: 1/2000,IF: 1/400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cyclin D1 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-20044</td>
+      <td>WB: 1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rab27a (rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>69295</td>
+      <td>WB: 1/1000,IF: 1/800,IHC: 1/100 pH6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD63 (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>SAB4301607</td>
+      <td>WB: 1/500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SDC4 (rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>12236</td>
+      <td>IF: 1/200</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst</td>
+      <td>Sigma</td>
+      <td>34580</td>
+      <td>IF: 1/1000, to detect nucleus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>488 phalloidin</td>
+      <td>Interchim</td>
+      <td>YE5180</td>
+      <td>IF: 1/200, to detect F-actin</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Glutamine synthetase (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610517</td>
+      <td>IHC: 1/400 pH6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human HepG2 and Huh7 cell lines were grown in 4.5 g/L glucose Dulbecco’s modified Eagle’s Medium (DMEM, Gibco) supplemented with 10% FBS (Fetal Bovine Serum, Sigma). Human Huh6 cells were grown in 1 g/L glucose DMEM, (Gibco) supplemented with 10% FBS. Human SNU398 cells were grown in Roswell Park Memorial Institute medium (RPMI 1640, Gibco) supplemented with 10% FBS. Heat-inactivated FBS was used (30 min, 56 °C). All cell lines were cultured in a humidified atmosphere containing 5% CO2 and 37 °C and mycoplasma contamination was checked regularly by PCR. All cell lines, except Huh6, were purchased from the American Type Culture Collection (ATCC). The Huh6 cell line was generously provided by C. Perret (Paris, France).
 
-## Transfection
+#### Transfection
 
 DNA transfections were performed using the Lipofectamine 3000 transfection Reagent according to the manufacturer’s instructions (Invitrogen). The following plasmid was used: pCMV-Sport6-CD36-pHluorin (Plasmid#130901, Addgene). siRNA oligos were transfected into cells using Lipofectamine RNAiMax Reagent according to the manufacturer’s protocol (Invitrogen). A reverse transfection was performed on day 1, a second forward transfection on day 2 and experiments were conducted on day 5. siRNA ß-catenin MUT (Eurofins Genomics) was previously reported (Gest et al., 2023), siRNA RAB27A (MISSION EHU091501, Sigma) targets human RAB27A. The AllStars negative-control siRNA from Qiagen was used as control siRNA.
 
-## Lentiviral infection
+#### Lentiviral infection
 
 HEK293T cells were seeded (2.5×106) on a 10 cm plate coated with poly-L-lysine (Sigma) to obtain a confluence of 50–70% at the time of the infection. The next day, 600 µL of Opti-MEM (Gibco), 22 µL of Mirus LT1 transfection reagent (Mirus), and 4 µg of lentiviral plasmids of packaging vector (pPAX, pSD11) and lentiviral plasmid of interest were added on cells and incubated for 48 hr to allow the production of viruses. Then supernatant was harvested, centrifuged at 2500 rpm for 3 min to remove dead cells and debris, filtered, and used directly to infect cells or stored at –80 °C. After infection with lentiviral particles, cells were selected with puromycin treatment (2 µg/mL) for 1 week.
 
-## shRNAs
+#### shRNAs
 
 The Tet-pLKO-puro lentivirus vector (plasmid#21915) and the control shRNA lentivirus vector (pLKO-Tet-On-shRNA-Control, plasmid#398398) were purchased from Addgene (Watertown, USA). The construction of the two shRNA lentivirus vectors targeting the human ß-catenin was performed following the Tet-pLKO Manual given by Addgene (plasmid#21915). The shRNA sequences used were the same as previously described (Gest et al., 2023): the 5’-ACCAGTTGTGGTTAAGCTCTT-3 sequence to target the human ß-catenin in Huh-6 and SNU398 cells, and the 5’-TGTTAGTCACAACTATCAAGA-3’ sequence to target specifically the mutated form of ß-catenin in HepG2 cells. shRNAs were induced with doxycycline (1 µg/mL) in Huh6 cells for 5 days (2 treatments) and in HepG2 and SNU398 cells for 7 days (3 treatments).
 
-## Drug treatment
+#### Drug treatment
 
 Huh7 cells were treated with the GSK3 inhibitor CHIR99021 (3 µM, Sigma) for 48 hr before cell analysis. DMSO was used as control.
 
-## Spheroid formation
+#### Spheroid formation
 
 Human Huh7 cells treated with either DMSO or CHIR99021 (3 µM; Sigma) for 48 hr were seeded (20,000 cells per well in 100 µL) in non-adherent conditions (ultra-low attachment 96 wells plate, Costar) in filtered 4.5 g/L glucose Dulbecco’s modified Eagle’s Medium (DMEM, Gibco) supplemented with 10% exosome free FBS. Human HepG2 cell line was transfected with either control shRNA or shRNA directed against mutated β-catenin (shBcat MUT) and induced with doxycycline (1 µg/mL, three rounds in one week). HepG2 shßcat MUT were also transfected with siRNA targeting Rab27a the day before the seeding for the reverse transfection (day 0) and the day of the seeding for the second forward transfection (day 1). 10,000 HepG2 cells were seeded per well in non-adherent conditions (ultra-low attachment 96 wells plate, Costar) in 100 µL filtrated 4.5 g/L glucose Dulbecco’s modified Eagle’s Medium (DMEM, Gibco) supplemented with 10% exosome free FBS for 96 hr. The induction of shRNA was maintained by adding doxycycline in each well (1 µg/mL in 50 µL) on the day of the seeding and 48 hr after.
 
-## Peripheral blood mononuclear cell (PBMC) infiltration
+#### Peripheral blood mononuclear cell (PBMC) infiltration
 
 After 96 hr of formation, Huh7 and HepG2 spheroids were co-cultured with CellTrace Violet (Life Technologies) labeled PBMC. Briefly, PBMC were isolated from donor blood (EFS Bordeaux) using a Ficoll (Eurobio Scientific) density gradient centrifugation. The obtained cells were then centrifuged (10 min, 1500 rpm) and washed several times in PBS 1 X. The remaining red blood cells were lysed by incubation in an ACK lysing buffer (Gibco), and the platelets were eliminated by centrifugation (10 min, 900 rpm). PBMC were then stained with Cell Trace Violet (5 μM, 20 min, 37 °C, 106 cells/mL) and added to the wells (ratio tumor cells per spheroid:PBMC = 1:5, in 50 µL) for a 24 hr co-culture. After 24 hr, spheroids were collected, washed twice with PSB 1 X, and dissociated with trypsin 0.25%-EDTA (10 min, 37 °C, Gibco). Cells were then pelleted by centrifugation, resuspended in 200 µL of MACS buffer (PBS 1 X Dutscher, 0.5% FBS Eurobio Scientific, 0.4% EDTA 0.5 mM Euromedex), and labeled with Propidium Iodide (1/500 dilution, Sigma-Aldrich). The proportion of immune cells infiltrated in spheroids and tumor cells survival was then analyzed by flow cytometry (CantoII cytometer, BD Biosciences, Le Pont de Claix, France) and data analysis was performed with the FlowJo software (version 10.8.1).
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 Total RNA was extracted from cells using the kit NucleoSpin RNA (Macherey-Nagel). RNA was then reverse transcribed using material from Thermo Fisher Scientific. qPCR was performed using the SYBR Green SuperMix (Quanta) using a C1000 Real-Time System (Bio-Rad). Data were normalized using the r18S gene as endogenous control and fold change was calculated using the comparative Ct method (-ddCt). All primers used are listed in Table 1.
 
-## Western blot
+**Table 1.**
+ qPCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCND1</td>
+      <td>CATCAAGTGTGACCCGGACTG</td>
+      <td>CCTCCTCCTCAGTGGCCTTG</td>
+    </tr>
+    <tr>
+      <td>AXIN2</td>
+      <td>TGCTCTGTTTTGTCTTAAAGGTCTTGA</td>
+      <td>ACAGATCATCCCATCCAACACA</td>
+    </tr>
+    <tr>
+      <td>ARG1</td>
+      <td>GTGGACAGACTAGGAATTGGC</td>
+      <td>TCCAGTCCGTCAACATCAAAAC</td>
+    </tr>
+    <tr>
+      <td>RAB27A</td>
+      <td>GAAGCCATAGCACTCGCAGAG</td>
+      <td>ATGACCATTTGATCGCACCA</td>
+    </tr>
+    <tr>
+      <td>SDC4</td>
+      <td>CGATGAGGATGTAGTGGGGC</td>
+      <td>GACAACTTCAGGGCCGATCA</td>
+    </tr>
+    <tr>
+      <td>18 S</td>
+      <td>GTAACCCGTTGAACCCCATT</td>
+      <td>CCATCCAATCGGTAGTAGCG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blot
 
 Total proteins were extracted from cells or EVs using RIPA lysis buffer (0.1% SDS, 1% NP40, 0.15 M NaCl, 1% sodium deoxycholate, 25 mM Tris HCl pH 7.4) supplemented with protease and phosphatase inhibitors (Roche). Proteins were then denaturated in Laemmli buffer (Bio-Rad) at 95 °C for 5 min. 40 µg of protein extract was loaded on 10% polyacrylamide gels (TGX Stain-Free FastCast, Bio-Rad). Membranes were blocked with 5% BSA-TBST (5% BSA Sigma, TBS 1 x Euromedex, 0,1% Tween20 Sigma) for 30 min and incubated with primary antibodies (diluted in 5% BSA-TBST) overnight at 4 °C. The following primary antibodies were used: ß-catenin (1:2000, mouse, 610154, BD Biosciences), Cyclin D1 (1:1000, mouse, sc-20044, Santa Cruz), Rab27a (1:1000, rabbit, 69295, Cell signaling), CD63 (1:500, rabbit, SAB430160, Sigma). Membranes were then incubated with secondary antibodies (1:5000 diluted in 5% BSA-TBST) for 30 min. The following secondary antibodies were used: IRDye 680CW conjugated goat anti-rabbit IgG (H&L) (LI-COR), IRDye 800CW conjugated goat anti-mouse IgG (H&L) (LI-COR). Acquisitions were performed using the ChemiDoc Imaging System (Bio-Rad). Intensities were measured using the ImageLab software (Bio-Rad).
 
-## EVs isolation and characterization
+### EVs isolation and characterization
 
 Cells (2 million) were cultured in medium (7 mL) supplemented with EV-depleted FBS (obtained by ultracentrifugation for 16 hr at 120,000 g, using an Optima XPN-80 centrifuge with a 45.Ti rotor). EVs were isolated 72 hr after by differential centrifugation at 4 °C: 5 min at 300 g, 5 min at 2000 g, 40 min at 18,000 g and 120 min at 120,000 g. EV pellets were washed in PBS, centrifuged again at 120,000 g for 120 min, resuspended in PBS (or RIPA lysis buffer), and stored at –80 °C.
 
-## Nanoparticle tracking analysis (NTA)
+#### Nanoparticle tracking analysis (NTA)
 
 Number and size of particles were detected using the NS300 instrument (Malvern Panalytical Ltd., Malvern, UK) equipped with a 488 nm laser and a high-sensitivity scientific CMOS camera. Particles are tracked and sized based on Brownian motion and diffusion coefficient. Particles were diluted in PBS to obtain a concentration within the recommended range (30–120 particles/frame). Five 60 s videos were acquired for each sample with the following conditions: cell temperature 25 °C, syringe speed—22 µL/s, camera level 14. Videos were subsequently analyzed with NanoSight Software NTA3.3.301 (Malvern Panalytical Ltd., Malvern, UK), which identified and tracked the center of each particle under Brownian motion to measure the average distance the particles moved on a frame-by-frame basis.
 
-## Electron microscopy
+### Electron microscopy
 
-## Cells
+#### Cells
 
 Cells were fixed in EM fixative solution (1.6% Ga in PB 0.1 M pH 7.4) for 1 hr at room temperature and then centrifuged. Cell pellets were embedded in 1% agarose. Samples were washed three times with PB 0.1 M and postfixed in 1.5% potassium ferrocyanide, 2% aqueous osmium tetroxide solution in PB 0.1 M for 1 hr at room temperature. Before and between each of the following incubations, samples were washed three times with distilled water. Samples were first incubated in fresh thiocarboxyhydrazide (TCH) solution for 20 min at room temperature. In a second postfixation step, a 2% osmium tetroxide solution was added to samples for 30 min at room temperature. Samples were then serially dehydrated in ethanol (35%, 35%, 50%, 70%, 80%, 90%, 100%, 100%, 100%; 2 min each), incubated in a solution of 50% ethanol and 50% Epon resin for 2 hr and incubated in 100% Epon resin overnight at room temperature. Epon resin was then renewed for another 4 hr of incubation. At the end, samples were embedded in a pure resin and cured by incubation at 60 °C for 48 hr. Ultramicrotomy was done with a Diatome 35° Diamond knife and a Leica EM-UC7 ultracut. Sections (70 nm thick) were collected on 200 mesh copper grid. Images were acquired using a transmission electron microscope (Hitachi H7650) at 80Kv equipped with an Orius Camera (Gatan) managed by Digital Micrograph software. The quantification of the number of MVBs was performed by counting visible MVBs and then dividing per the cell surface using ImageJ software. The quantification of the MVB diameter was performed using ImageJ software.
 
-## EVs
+#### EVs
 
 Cell supernatant fluid was concentrated using an Amicon Ultra-15 centrifugal filter from 6 mL to 500 µL at 4000 g during 30 min (100 k, Merk Millipore). EVs were isolated using the IZON qEV original 35 nm size exclusion column (Izon science) according to the manufacturer’s instructions. EVs were then concentrated as mentioned previously and resuspended in an equal volume of 4% PFA in PBS (2% PFA final). 20 µL drops of the resuspended exosomes were then absorbed for 20 min at RT on hydrophilic carbon-coated grids. After PBS rinses, grids were placed on drops of 1% glutaraldehyde in PBS for 5 min. Several washes were done with distilled water, and grids were then transferred on a filtered drop of pH7 uranyl-oxalate solution, for 5 min in the dark. Grids were then transferred in drops of filtered 4% aqueous uranyl acetate/2,3 M methylcellulose (1 V for 9 V) on a petri dish covered with parafilm on ice for 10 min in the dark. Grids were then removed, one at time, with a stainless-steel loop, and excess fluid were blotted by gently touching the edge of the loop with a Whatman No. 1 filter paper. Grids were air-dried while still on the loop, torn off, and stored in a grid storage box. Observations were done with a TEM Hitachi H7650 at 80kV equipped with a Gatan Orius camera.
 
-## Label-free quantitative proteomics
+### Label-free quantitative proteomics
 
 Three independent biological replicates were performed on total protein extracts from human HepG2 cells transfected with control siRNA or ß-catenin mutated siRNA. 10 μg of proteins were loaded on a 10% acrylamide SDS-PAGE gel and proteins were visualized by Colloidal Blue staining. Migration was stopped when samples had just entered the resolving gel and the unresolved region of the gel was cut into only one segment. The steps of sample preparation and protein digestion by the trypsin were performed as previously described (Campion et al., 2021). NanoLC-MS/MS analysis were performed using an Ultimate 3000 RSLC Nano-UPHLC system (Thermo Scientific, USA) coupled to a nanospray Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific, California, USA). Each peptide extract was loaded on a 300 μm ID × 5 mm PepMap C18 precolumn (Thermo Scientific, USA) at a flow rate of 10 μL/min. After a 3 min desalting step, peptides were separated on a 50 cm EasySpray column (75 μm ID, 2 μm C18 beads, 100 Å pore size, ES903, Thermo Fisher Scientific) with a 4–40% linear gradient of solvent B (0.1% formic acid in 80% ACN) in 57 min. The separation flow rate was set at 300 nL/min. The mass spectrometer operated in positive ion mode at a 2.0 kV needle voltage. Data were acquired using Xcalibur 4.4 software in a data-dependent mode. MS scans (m/z 375–1500) were recorded at a resolution of R=120,000 (@ m/z 200), a standard AGC target, and an injection time in automatic mode, followed by a top speed duty cycle of up to 3 s for MS/MS acquisition. Precursor ions (2–7 charge states) were isolated in the quadrupole with a mass window of 1.6 Th and fragmented with HCD@28% normalized collision energy. MS/MS data was acquired in the ion trap with rapid scan mode, a 20% normalized AGC target, and a maximum injection time in dynamic mode. Selected precursors were excluded for 60 s. Protein identification was done in Proteome Discoverer 2.5. Mascot 2.5 algorithm was used for protein identification in batch mode by searching against a Uniprot Homo sapiens database (75,793 entries, released September 3, 2020). Two missed enzyme cleavages were allowed for the trypsin. Mass tolerances in MS and MS/MS were set to 10 ppm and 0.6 Da. Oxidation (M) and acetylation (K) were searched as dynamic modifications and carbamidomethylation (C) as static modifications. Raw LC-MS/MS data were imported in Proline Studio for feature detection, alignment, and quantification (Bouyssié et al., 2020). Protein identification was accepted only with at least two specific peptides with a pretty rank = 1 and with a protein FDR value less than 1.0% calculated using the ‘decoy’ option in Mascot. Label-free quantification of MS1 level by extracted ion chromatograms (XIC) was carried out with parameters indicated previously. The normalization was carried out on median of ratios. The inference of missing values was applied with 5% of the background noise. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Deutsch et al., 2023) partner repository with the dataset identifier: PXD043841.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cultured cells were fixed with 4% PFA for 10 min, permeabilized with Triton-X100 0.1% (Sigma) for 10 min, and incubated in 4% BSA-PBS for 15 min to prevent non-specific binding. Cells were then incubated at room temperature with primary antibodies (diluted in 4% BSA-PBS) for 45 min and with secondary antibodies (1:200 diluted in 4% BSA-PBS) for 30 min. The following primary antibodies were used: ß-catenin (1:400, mouse, 610154, BD Biosciences), Rab27a (1:800, rabbit, 69295, Cell signaling), SDC4 (1:200, rabbit, 12236, Cell signaling). The following secondary antibodies were used: 547 H donkey anti-mouse IgG (H&L) (FP-SB4110-T, Interchim) and 547 H donkey anti-rabbit IgG (H&L) (FP-SB5110, Interchim). Nuclei were stained with Hoechst (1:1000, 34580, Sigma) and actin was stained with 488 phalloidin (1:200, FP-YE5180, Interchim). Coverslips were mounted on microscope slides using Fluoromount-G mounting media (SouthernBiotech) and were imaged under epifluorescence microscope (Zeiss) using the 63 X oil immersion objective and SP5 confocal microscope (Leica). Images were analyzed using ImageJ software.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Human samples
+#### Human samples
 
 The total number of human HCC samples is 56 and has been provided by 2 cohorts obtained at different times (Figure 5—figure supplement 2). Experiments for each cohort have been performed by two different experimenters (cohort 1: NDS, cohort 2: IM) and using two different batches of Rab27a antibody.
 
-## Experiment
+#### Experiment
 
 Paraffin-embedded human HCC samples were cut into 3.5 µm thick tissue sections and processed for immunohistochemistry with the EnVision FLEX kit material (K800021-2, Agilent Dako) according to the manufacturer’s instructions. Briefly, tissue sections were put on slides (TOM-1190, Matsunami) and placed on automatic staining racks at room temperature to be deparaffinized. Slides were immersed in a 75 °C pre-warmed Target Retrieval Solution Low pH (50 x) (K8005) in the Dako PTlink tank. The tank was then heated up to 95 °C, slides were incubated for 20 min and allowed to cool to 75 °C. Afterwards, tumor sections were soaked for 5–10 min in Dako Wash Buffer. Slides were placed on the automatic staining racks of the Dako Autostainer and peroxidase blocking reagent was added for 10 min. Sections were rinsed with Dako Wash Buffer and antibodies were applied for 45 min according to the following dilutions (Dako Antibody Diluent): Glutamine synthetase (1:400, pH6, mouse, 610517, BD Biosciences), Rab27a (1:100, pH6, rabbit, 69295, Cell Signalling), SDC4 (1:200, pH6, P11820-1-A, Proteintech). Two solutions were then applied to the slides with washing with Dako Wash Buffer before and between each application: HorseRadish Peroxidase for 20 min and substrate working solution. Finally, slides were rinsed with water and hematoxyline counterstaining was performed before mounting on coverslips (Eukitt classic mounting medium).
 
-## Total internal reflection fluorescence (TIRF) imaging and analysis
+### Total internal reflection fluorescence (TIRF) imaging and analysis
 
 Coverslips were placed in an imaging chamber, perfused at 37 °C with Hepes Buffer Saline (HBS) solution (135 mM NaCl, 5 mM KCl, 0.4 mM MgCl2, 1.8 mM CaCl2, 1 mM D-glucose, and 20 mM HEPES) and were adjusted to pH 7.4 and to 305 mOsm. Imaging was performed with an Olympus IX83 inverted microscope equipped for (TIRF) microscopy with a 100x, 1.49 NA objective (UAPON100XOTIRF), a laser source (Cobolt Laser 06-DPL 473 nm, 100 mW), and an ILas2 illuminator (Gataca Systems) with a penetration depth set to 100 nm. Emitted fluorescence was filtered with a dichroic mirror (R405/488/561/635) and an emission filter (ET525/50 m, Chroma Technology) and recorded by an electron-multiplying charge-coupled device (EMCCD) camera (QuantEM 512 C, Teledyne Photometrics). Movies were acquired for 2 min at 10 Hz for exocytosis. To achieve good signal/noise ratio required for event detection and further analysis, fluorescence was bleached by high laser power illumination prior to acquisition of the full movie. MetaMorph 7.8 software was used for all acquisitions. Semi-automatic detection of exocytic events and their quantification were conducted using custom-made MATLAB scripts previously described (Jullie et al., 2014; Sposini et al., 2017; Bakr et al., 2021).
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Public transcriptomic data of 366 HCC patient samples were provided from the Cancer Genome Atlas Research Network, downloaded from the cBioPortal site, and divided into two groups according to the presence or not of CTNNB1 hotspot mutations (respectively, 94 and 272 samples per group) by Genome data. Public transcriptomic data of 56 HCC patient samples were provided from the (Boyault et al., 2007) article and divided into two groups according to the presence or not of CTNNB1 mutations (respectively, 17 and 39 samples per group).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as mean ± SEM and are representative of at least three experiments. Statistical tests were carried out using GraphPad Prism software version 8.0.2 (GraphPad Software, San Diego, CA, USA). Statistical significance (p<0.05 or less) was determined using Student’s t-test or analysis of variance (ANOVA). Values of p are indicated as follows: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; ns, non-significant.

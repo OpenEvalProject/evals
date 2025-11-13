@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03yjb2x39 Department of Chemistry, University of Calgary Calgary Canada
-2. https://ror.org/01pxwe438 Department of Biology, McGill University Montréal Canada
-3. https://ror.org/03yjb2x39 Department of Biochemistry and Molecular Biology, University of Calgary Calgary Canada
-4. https://ror.org/043mz5j54 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States
-5. https://ror.org/043mz5j54 Department of Pharmaceutical Chemistry, California Institute for Quantitative Biosciences, University of California, San Francisco San Francisco United States
+1. Department of Chemistry, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+2. Department of Biology, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+3. Department of Biochemistry and Molecular Biology, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
+4. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Department of Pharmaceutical Chemistry, California Institute for Quantitative Biosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -38,13 +38,33 @@ Greater clarity on the primary modes of MT engagement would help address the str
 
 ## Results
 
-## Preparation of the DCX–MT construct
+### Preparation of the DCX–MT construct
 
 DCX possesses two structured domains, each flanked by regions of disorder, which could allow it to adopt various mechanisms of MT lattice engagement (Figure 1A, B). The activity of the recombinantly purified DCX was confirmed using three different methods (Figure 1—figure supplement 1). In a turbidity assay, adding DCX to purified α/β tubulin-induced MT polymerization, consistent with previous reports (Taylor et al., 2000; Horesh et al., 1999; Moores et al., 2006; Bechstedt and Brouhard, 2012). The effect saturates at 10–20 µM DCX, in line with previous claims of a 1:1 binding ratio (DCX:α/β-tubulin) (Moores et al., 2006). A pelleting assay confirmed a 1:1 stoichiometry. Finally, using a fluorescence image analysis, we observed MT lengths decrease with increasing DCX concentration, confirming a role in MT nucleation (Moores et al., 2004). There were no signs of extensive MT bundling.
 
-## Sampling the equilibrated interaction with photoactivated crosslinking
+![Figure 1.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig1-v2.jpg)
+
+**Figure 1.:** (A) The disordered regions of DCX sequence predicted using PrDOS (Ishida and Kinoshita, 2007). (B) Schematic representations of the four orientational challenges to the elucidation of the DCX–microtubule (MT)-binding mode. In each case, a minimal DCX construct is shown, comprising NDC (red), linker (black), and CDC cyan. α- and β-tubulin are shown with white and light gray rectangles, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The purity of DCX-Light and DCX-Heavy isotopically labeled sample was evaluated on 8% SDS-PAGE gel. (B) Turbidity measurement at 340 nm versus time for Tubulin (10 μM) with different concentrations of DCX (1, 5, 10 and 20 μM) in the presence of 1mM GTP. Samples containing Tubulin with even low DCX concentrations produced a signiﬁcant augmentation in scattering, confirming the formation of microtubules (MTs). The right graph is the zoomed-in view of the negative control containing Tubulin (10 μM) + GTP (1 mM ) in black and Tubulin + DCX (1 μM) + GTP (1 mM ) in red. (C) MT polymerization in the presence of different concentrations of DCX (2.5-30 μM). The tested Tubulin concentration was 10 μM and GTP concentration was 1 mM. The control lane is devoid of DCX. (S) denotes supernatant and (P) denotes pellet. (D) The length distribution of MTs polymerized in the presence of 5 and 10 μM DCX concentrations (the average MT length was 5.0±3.3 and 2.6±1.7 µm, respectively). There is a significant difference between the two populations at p = 0.001. The horizontal line indicates the median value, the box indicates the 25th and 75th percentiles (N~120). (E) Fluorescence microscopy evaluation of MTs polymerized in the presence of DCX at 5 and 10 μM concentrations. No bundling was observed. Scale bar = 10 µm.
+
+### Sampling the equilibrated interaction with photoactivated crosslinking
 
 Many different crosslinking reagents are available for measuring site-to-site distances, but most are not appropriate for structural characterization of dynamic systems. The inherent flexibility of DCX renders it susceptible to ‘kinetic trapping’ on the MT lattice when using conventional long-lived reagents (Ziemianowicz et al., 2019), thus potentially scrambling the sites of interaction. That is, conformations not representative of the structural ensemble can be selected based simply on higher reaction rates. Therefore, we used a heterobifunctional crosslinker (LC-SDA) for MT interactions that has been demonstrated to minimize this effect (Ziemianowicz et al., 2019, Rafiei and Schriemer, 2019). The first coupling is to accessible nucleophiles through a conventional NHS ester and the second coupling to any surface-accessible residue through laser-initiated carbene chemistry. When applied to the saturated DCX–MT state, the method generated a dense set of 362 unique crosslinks, well distributed among the domains and subunits (Figure 2A and Supplementary file 1), including 124 interprotein crosslinks between DCX and α/β-tubulin.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig2-v2.jpg)
+
+**Figure 2.:** (A) Two-dimensional crosslinking map linking α−β-tubulin and DCX at specific residues. NDC and C-terminal DC (CDC) domains of DCX sequence are shown with red and cyan, respectively. Intraprotein crosslinking sites are shown in black and interprotein crosslinks in purple. A subset of interprotein crosslinking sites observed between peptides with a shared sequence are shown in red loops. The crosslinking map is produced using xVis (Grimm et al., 2015). (B) Inter- and intra-DCX crosslinking sites differentiated using a protein isotopic labeling technique. Three categories are defined, where the ratios of intensities for the inner and outer doublet in the mixed state are variable. The crosslinking map is produced using xiNET online tool (Combe et al., 2015). (C) Two-dimensional crosslinking map linking DCXs at specific residues. NDC and CDC domains of DCX are shown in red and cyan, respectively. Shared inter and intra XLs are shown as inter (green) and intra (purple) DCX crosslinks. Unique inter-DCX crosslinking sites are shown in black. In all cases, when there is ambiguity in the crosslinking site, a single crosslinking site pair was used for visualization.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The two MS1 scans for two candidate DCX peptides are shown as the examples. The highlighted mass to charge ratios (M/Zs) are corresponding to a range of species from fully 14N to fully 15N species. The corresponding sample area for light and heavy species is shown in the inserted tables.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The X-axis IDs are crosslinked residues. The experimental procedure for each sample is schematically represented in right. Only two peptides were shared among different samples (221-193 an 264-345). The two peptides were also observed in the H/L sample (negative control) but no HL or LH species were observed.
 
 These datasets were then used for integrative structure determination. Given the multiplicity of binding modes that are possible between DCX and the MT lattice, we reasoned that an incremental approach to modeling focused on determining the major interaction modes would be necessary for computational efficiency. Thus, we formulated the modeling exercise into four stages: (1) identify the primary binding domain using only crosslink restraints between MT and structured DCX domains, (2) evaluate if MT engagement induces DCX dimerization using inter-DCX crosslink restraints, (3) determine if CDC can adopt a domain-swappable (open state) conformation using only DCX crosslinks, and finally (4) determine the orientation(s) of DCX on the MT lattice, constrained by major modes determined in 1–3 and the full set of crosslinking data. These modeling stages were developed with available crystal structures, cryo-EM maps, and the XL-MS restraints as required, using a four-step workflow (Rout and Sali, 2019; Alber et al., 2007; Webb et al., 2018; Figure 3).
 
@@ -52,25 +72,57 @@ These datasets were then used for integrative structure determination. Given the
 
 **Figure 3.:** (1) Data gathering, including chemical crosslinking, atomic structures (MT structure, PDB 6EVZ; NDC structure, DCX component of PDB 4ATU; CDC structure, PDB 5IP4), and cryo-EM map EMD 2095. (2) Representation of subunits and translation of the data into spatial restraints, including crosslinking distance restraints, atomic structures, cryo-EM map, and physical restraints (steric effect or excluded volume restraint and connectivy restraint). (3) Monte-Carlo conformational sampling to obtain an ensemble of structures needed to satisfy the input data. (4) Statistical analysis of the computed models and clustering the sample models into distinct groups of structures, followed by the analysis in terms of accuracy and precision.
 
-## NDC is the main MT-binding domain
+### NDC is the main MT-binding domain
 
 A minimal MT ‘repeat unit’ was established for modeling, consisting of two α-tubulin and four β-tubulin subunits. This repeat unit contains all possible lateral and longitudinal tubulin–tubulin interactions found in the main B-lattice state. As DCX is excluded from A-lattice interactions (Fourniol et al., 2010; Manka and Moores, 2018), this lattice type was not built into our model representation. The NDC and CDC domains were then tested separately for their occupancy of the major binding site. Integrative modeling was performed in two ways: first using only crosslinks, and then crosslinks combined with the available DCX–MT EM density map (Liu et al., 2012). This approach allowed us to determine, by comparison, how well the crosslinking data alone could locate the expected binding site and thus validate the quality of the crosslinks. The results are shown in Figure 4.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig4-v2.jpg)
+
+**Figure 4.:** (A) The centroid structure for the main cluster of models produced by IMP for NDC–MT guided exclusively by crosslinking mass spectrometry (XL-MS) restraints. (B) The centroid structure for the main cluster of models produced by IMP for CDC–MT guided exclusively by XL-MS restraints. (C) The centroid structure for the main cluster of models produced by IMP NDC–MT for XL-MS restraints combined with the EM density map. (D) The centroid structure for the main cluster of models produced by IMP CDC–MT guided by XL-MS restraints and combined with the EM density map. The fractional crosslink satisfaction (defined as <35 Å) versus RMSD to the canonical binding site (PDB 4ATU) for all models in the main structural cluster is presented for each modeling scenario. α- and β-tubulin are shown as light and dark gray, respectively. NDC is shown in red, and CDC in cyan. (E) Expansions of the NDC orientations from modeling, compared to cryo-EM based NDC–MT structure (PDB 4ATU).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The distribution of scores for the models computed for MT-NDC, using only crosslinking data (500,000 models). (b) The number of models randomly selected for model samples A (yellow) and sample B (red), from 10 different modeling runs. (c) The score convergence for models in samples A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant, the magnitude of the difference is small, as demonstrated by the Kolmogorov–Smirnov two-sample test statistic, D, of 0.006. Thus, the two score distributions are effectively equal. (d) The distribution of scores for the models computed for MT-NDC, using both crosslinking data and EM map (500,000 models). (e) The number of models randomly selected for model samples A (yellow) and B (red), obtained from 10 different modeling runs. (f) The score convergence for the models in samples A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant, the magnitude of the difference is small, as demonstrated by the Kolmogorov–Smirnov two-sample test statistic, D, of 0.031. Thus, the two score distributions are effectively equal.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) The distribution of scores for the models computed for MT-CDC, using only crosslinking data (500,000 models). (b) The number of models randomly selected for model samples A (yellow) and B (red), from 10 different modeling runs. (c) The score convergence for models in samples A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant, the magnitude of the difference is small, as demonstrated by the Kolmogorov–Smirnov two-sample test statistic, D, of 0.010. Thus, the two score distributions are effectively equal. (d) The distribution of scores for the models computed for MT-CDC, using both crosslinking data and EM map (500,000 models). (e) The number of models randomly selected for model samples A (yellow) and B (red), from 10 different modeling runs. (f) The score convergence for models in samples A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant, the magnitude of the difference is small, as demonstrated by the Kolmogorov–Smirnov two-sample test statistic, D, of 0.034. Thus, the two score distributions are effectively equal.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The centroid structure for the 2nd major cluster of models produced by IMP for NDC-MT (A) and CDC-MT (B) guided exclusively by XL-MS restrains; alpha-Tubulin and beta-Tubulin are shown as light and dark grey, respectively. NDC is shown in red, and CDC is shown in cyan. The fraction crosslink satisfaction (defined as <35 Å) versus RMSD to canonical binding site (PDB 4ATU) for all models present in the main structural cluster is presented for each modeling scenarios.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Two-dimensional crosslinking map linking alpha/beta-Tubulin and DCX at specific residues using (A) DSS and (B) EDC. NDC and CDC domains of DCX sequence are shown with red and cyan, respectively. A subset of inter-DCX crosslinking sites observed among peptides with a shared sequence are shown in red loops. The crosslinking map is produced using xVis online tool [10]. The centroid structure for the major cluster of models produced by IMP for NDC-MT guided exclusively by XL-MS restrains produced by DSS crosslinker (C) and EDC (D). The centroid structure for the major cluster of models produced by IMP for CDC-MT guided exclusively by XL-MS restrains produced by DSS crosslinker (E) and EDC (F); alpha-Tubulin and beta-Tubulin are shown as light and dark grey, respectively. NDC is shown in red, and CDC is shown in cyan. The fraction crosslink satisfaction (defined as <35 Å) versus RMSD to canonical binding site (PDB 4ATU) for all models present in the main structural cluster is presented for each modeling scenarios.
 
 Two major clusters of solutions were obtained for each domain when using the crosslinks alone (Figure 4—figure supplement 1, Figure 4—figure supplement 2, and Supplementary file 2). For NDC–MT, the top cluster contained 48% of all models (cluster precision of 23.4 Å) and identified a site at the junction of the four tubulin dimers resembling the site identified by cryo-EM, albeit with a slightly altered orientation (Figure 4A, E). The most accurate models, as measured by RMSD from the expected site also had the highest crosslink utilization rate (Figure 4A). The next major cluster, containing 36% of models (cluster precision of 25.0 Å), was identified at the partial binding site at the edge of the repeat unit and thus can be ignored (Figure 4—figure supplement 3). The top cluster for CDC–MT contained 50% of the individual models (cluster precision 27.0 Å) and identified a different location, on the interprotofilament junction of two α-tubulin subunits (Figure 4B and Supplementary file 2). These models are diffusive in their accuracy and crosslink utilization rate. The second cluster, containing 23% of models (cluster precision of 30.0 Å), was identified in the lumenal region of the MT lattice (Figure 4—figure supplement 3).
 
 The addition of the EM data to the integrative modeling input, not surprisingly, returned the same binding site for NDC–MT (Figure 4C). A single distinct cluster was generated that contained 80% of all models (with a cluster precision 6.0 Å) and it corrected the orientation of the domain (Figure 4E). Conversely, the addition of the EM data forced the relocation of CDC to the major binding site, well removed from the one generated by crosslinking alone. Although 58% of all models clustered with a precision 5.9 Å, the crosslink utilization rate dropped considerably (Figure 4D). Taken together, the high congruency between crosslinking and cryo-EM data confirms the location of NDC at the junction, whereas the variable localization of the CDC and a weaker restraint set suggests, at best, a secondary binding site. Thus, for successive stages of modeling, the NDC was located at the primary binding site and the CDC was left free to move. We note that our modeling used PDB 5IP4 for the CDC domain. A recent CDC structure (PDB 6RF2, Manka and Moores, 2020) is structurally very similar (RMSD of 5.1 Å). As this value is lower than the precision of our integrative method, we used 5IP4 throughout.
 
-## DCX self-associates on the MT lattice through CDC and C-tail domains
+### DCX self-associates on the MT lattice through CDC and C-tail domains
 
 We next evaluated if DCX could form higher-order assemblies, and if so, which subunits are involved. To differentiate intersubunit crosslinks from intrasubunit crosslinks, we used heavy isotopes (15N) installed metabolically during DCX expression. The incorporation of 15N was assessed by LC–MS/MS, demonstrating >99% incorporation (Figure 2—figure supplement 1). Then, a 1:1 mixture of light and heavy labeled DCX (14N:15N) was used in place of light DCX in sample preparation, followed by crosslinking. Intra- and interprotein crosslinks were differentiated based on the characteristic MS1 pattern of crosslinked peptides. We identified three types of crosslinking signatures reflective of intraprotein crosslinks, interprotein crosslinks, or a mixed state where both types can exist simultaneously although at different levels (Figure 2B). This latter category is identifiable through a variable intensity pattern of the ‘inner doublet’ (Melchior et al., 2016). We then explored if the interprotein labeling patterns could be generated without the addition of tubulin, which would indicate some measure of self-interaction in the free form, possibly dimerization or higher-order associations. We found that only under extreme cases (i.e., DCX denaturation, refolding, and concentrating) could we induce a small amount of interprotein crosslinking, and only at two sites (Figure 2—figure supplement 2). Thus, DCX self-association is a MT-dependent phenomenon, consistent with previous reports (Moores et al., 2006). In total, we obtained 32 unique intra-DCX crosslink sites, 5 unique inter-DCX crosslink sites as well as 45 unique crosslink sites in the mixed group, both inter-DCX and intra-DCX (Figure 2C and Supplementary file 3). Interestingly, >80% of the inter-DCX crosslinks identified involve the CDC domain and the C-tail, which indicates that DCX self-associates on the MT lattice through its C-terminal regions. While the inter-DCX crosslinks cannot distinguish between a dimeric state or higher-order assemblies, we chose to proceed with modeling the dimeric state as probable form of self-association based on the crystallographic model (Rufer et al., 2018).
 
-## On-lattice dimer shows a preference for an open state
+### On-lattice dimer shows a preference for an open state
 
 Before attempting to model the full dimeric structure using all available crosslink data, we explored if the subset of DCX–DCX crosslinks could indicate how the DCX–MT interaction might induce a dimerization event. Specifically, we performed integrative modeling to test if the data could distinguish between an interaction dominated by the globular CDC structure observed in the free form (PDB 5IP4, Burger et al., 2016) or an open state reflective of a ‘domain-swapped’ dimerization as suggested by recent crystallographic studies (PDB 6fNZ, Rufer et al., 2018). Two full-length DCX molecules were modeled on an expanded MT lattice to allow for all possible orientations of dimerized DCX (i.e., three protofilaments of three α/β-tubulin dimers each, Figure 5A). Pairs of NDCs were placed at the confirmed junctional binding sites in four possible orientations: laterally across the protofilaments, longitudinally along the axis of the protofilaments, or in one of two diagonal geometries. These multiple scenarios require assessment as the placement of the anchoring interactions could dictate the success of the dimerization event.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig5-v2.jpg)
+
+**Figure 5.:** (A) The dimeric DCX–MT centroid model of the main clusters of models generated using only DCX–DCX crosslinking restraints. Four different relative positions of fixed NDC on the MT lattice were assessed (lateral, longitudinal, diagonal 1, and diagonal 2); α- and β-tubulin are shown as light and dark gray, respectively. NDC, linker, CDC, and C-tail regions are shown as red, orange, cyan, and green, respectively. CDC structure is represented as either globular or open (domain-swappable) conformations. (B) The fractional XL satisfaction (defined as <35 Å) for the main cluster of models generated for each modeling scenario. (C) The relative orientation of the dimeric CDC structures in the centroid model of the main cluster using the domain swappable CDC conformation; green is CDC (monomer 1) and purple is CDC (monomer 2). (D) The crystal structure of domain-swapped CDC dimer (PDB 6FNZ).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) The distribution of scores for the models computed for MT-dimeric DCX using the globular CDC structure (100,000 models). (b) The number of models randomly selected for model samples A (yellow) and B (red), from 10 different modeling runs. (c) The score convergence for the models in sample A and B. (d) The distribution of scores for the models computed for MT-dimeric DCX using the open CDC structure (100,000 models). (e) The number of models randomly selected for model samples A (yellow) and sample B (red), from 10 different modeling runs. (f) The score convergence for models in sample A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant for each modeling run, as the magnitude of the difference is small, demonstrated by the Kolmogorov–Smirnov two-sample test statistic for each modeling run (lateral-globular: 0.010, lateral-open: 0.013, longitudinal-globular:0.014, longitudinal-open: 0.011, diagonal1-globular:0.023, diagonal1-open:0.015, diagonal 2-globular:0.019, and diagonal 2-open:0.014.) Thus, the two score distributions are effectively equal for each modeling run.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66975/elife-66975-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) The distribution of scores for the models computed for the MT-dimeric DCX using globular CDC structure (320,000 models). (b) The number of models randomly selected for model samples A (yellow) and B (red), from 10 different modeling runs. (c) The score convergence for models in sample A and B. (d) The distribution of scores for all the models computed for MT-dimeric DCX using the open CDC structure (320,000 models). (e) The number of models randomly selected for model samples A (yellow) and B (red), from 10 different modeling runs. (f) The score convergence for models in samples A and B. The nonparametric Kolmogorov–Smirnov two-sample test (two-sided) indicates that the difference between the two score distributions is insignificant for each modeling run, as the magnitude of the difference is small, demonstrated by the Kolmogorov–Smirnov two-sample test statistic for each modeling run (lateral-globular: 0.010, lateral-open: 0.010, longitudinal-globular:0.009, longitudinal-open:0.006, diagonal1-globular: 0.007, diagonal1-open:0.010, diagonal 2-globular:0.016, and diagonal 2-open: 0.010). Thus, the two score distributions are effectively equal for each modeling run.
+
 In all modeling scenarios, we obtained major clusters of solutions (>98% of models) with a cluster precision of 21–25 Å (Figure 5—figure supplement 1 and Supplementary file 2), each capable of supporting both globular and domain-swapped modes (Figure 5A). An analysis of the overall fit to all DCX–DCX crosslinks shows a weak preference for the latter (Figure 5B), but we cannot discriminate with high confidence based on utilization rates alone. However, an inspection of the centroid model for the main cluster of solutions shows a head-to-tail conformation with strong similarity to the domain-swapped structure (Figure 5C, D). We note that no symmetry constraints were enforced during the modeling and it only is guided by crosslinking data. Taken together, there appears a preference for the open conformation through a domain swapping event in the CDC. Although dimerization through the globular domains remains possible, a conformational change induced by a lattice interaction could readily explain why dimerization in solution is not possible.
 
-## DCX may not adopt a unique orientation on MTs
+### DCX may not adopt a unique orientation on MTs
 
 We next modeled the DCX–MT interaction with the complete set of crosslinks, to determine if the addition of crosslinks between DCX and MT (in particular) could orient the dimer on the MT lattice. We imposed a set of restrictions based on the findings described above. That is, for the full modeling exercise, we assumed that NDC binds to the MT lattice at the junctional binding site and DCX dimerizes on MT lattice specifically through CDC and C-tail regions. We carried over the degree of ambiguity in the nature of the dimerization event by modeling with both open and globular CDC structures and assessed all four possible orientations for the dimer. For each of the resulting eight modeling exercises, one major cluster was obtained with a sampling precision of 14–20 Å, containing more than 99% of all the individual models (cluster precision of 26–31 Å) (Figure 5—figure supplement 2 and Supplementary file 3). We could detect no preferred orientation for the DCX dimer on the lattice, based on crosslink usage. The distribution of crosslinks shows they accommodate all the orientations equally well (Figure 6A). This dispersion suggests that an underlying heterogeneity in lattice engagement is possible.
 
@@ -80,7 +132,7 @@ We next modeled the DCX–MT interaction with the complete set of crosslinks, to
 
 Finally, to evaluate if the C-terminal tails engage the MT lattice in a preferred orientation and if they participate in stabilizing the interaction, we inspected the density maps of the ensemble of models for each of the orientations (Figure 6B). In all cases, regardless of the orientation, the tails are located distal to the lattice and adopt an averaged orientation perpendicular to the long axis of the dimer.
 
-## The C-terminal tail plays a minor role in DCX cooperativity
+### The C-terminal tail plays a minor role in DCX cooperativity
 
 To explore the contribution of the C-terminal tail alone in stabilizing the interaction of DCX on the lattice, we generated an R303X truncation mutation observed in clinical isolates (des Portes et al., 1998a), which removes the bulk of this disordered region. We tested whether this mutation reduced the cooperativity of DCX binding to paclitaxel-stabilized MTs (taxol MTs). We mixed a low concentration full-length wild-type DCX-mCherry construct with either a wild type (WT) or a truncated (R303X) DCX-GFP construct (Figure 7A). In the case of high cooperativity, we would anticipate soluble DCX to be recruited to the lattice by the DCX already bound. In other words, if there is a high level of WT DCX-mCherry binding, there should also be a high-level DCX-WT-GFP binding. If a C-tail truncation reduces cooperativity, we would expect less binding between DCX-R303X-GFP and DCX-mCherry. This would result in a lower correlation between the mCherry and GFP intensities on the MT lattice.
 
@@ -112,7 +164,241 @@ Finally, the success of this integrative modeling technique relies heavily upon 
 
 ## Materials and methods
 
-## Expression and purification of DCX
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>DCX</td>
+      <td>UniProtKB</td>
+      <td>O43602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Sus scrofa)</td>
+      <td>α-Tubulin</td>
+      <td>UniProtKB</td>
+      <td>P02550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Sus scrofa)</td>
+      <td>β-Tubulin</td>
+      <td>UniProtKB</td>
+      <td>P02554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Arctic Express (DE3)</td>
+      <td>Agilent</td>
+      <td>230,192</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England BioLabs Inc.</td>
+      <td>C2527</td>
+      <td>Mix and Go competent cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (Mouse monoclonal)</td>
+      <td>Applied Biological Materials</td>
+      <td>G020</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T4026</td>
+      <td>(1:20 dilution in BRB80)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DCX-WT-pHAT-HUS</td>
+      <td>Gift of Dr. Susanne Bechstedt</td>
+      <td></td>
+      <td>Human doublecortin (1–365) plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DCX-WT-pHAT-HUGS</td>
+      <td>Gift of Dr. Susanne Bechstedt</td>
+      <td></td>
+      <td>GFP version of Human doublecortin (1–365) plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DCX-R303X-pHAT-HUGS</td>
+      <td>Gift of Dr. Susanne Bechstedt</td>
+      <td></td>
+      <td>GFP version of Human doublecortin (1–302) plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DCX-WT-pHAT-HUCS</td>
+      <td>Gift of Dr. Susanne Bechstedt</td>
+      <td></td>
+      <td>mCherry version of Human doublecortin (1–365) plasmid</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human doublecortin (1–365)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli Arctic Express cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GFP-doublecortin (1–365)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21 cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GFP-doublecortin (1-302)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21 cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mCherry-doublecortin (1-365)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21 cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>α/β-Tubulin</td>
+      <td>Cytoskeleton</td>
+      <td>TL590M-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Rhodamine-labeled α/β-tubulin</td>
+      <td>Cytoskeleton</td>
+      <td>T240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin–HRP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>N100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2133-10KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>E3289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel</td>
+      <td>European Pharmacopoeia Reference Standard</td>
+      <td>Y0000698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Docetaxel</td>
+      <td>Sigma-Aldrich</td>
+      <td>01885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atto 633 NHS-ester</td>
+      <td>ATTO-TEC GmbH</td>
+      <td>AD 633-35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LC-SDA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26,168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21,655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDC</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>22,980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xVis</td>
+      <td>https://xvis.genzentrum.lmu.de/login.php</td>
+      <td></td>
+      <td>PMID:25956653</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xiNET</td>
+      <td>http://crosslinkviewer.org/</td>
+      <td></td>
+      <td>PMID:25648531</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMP</td>
+      <td>https://integrativemodeling.org/</td>
+      <td>v.2.12</td>
+      <td>PMID:22272186</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mass Spec Studio</td>
+      <td>https://www.msstudio.ca</td>
+      <td>V2.0</td>
+      <td>PMID:25242457</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrackMate</td>
+      <td>https://imagej.net/plugins/trackmate/</td>
+      <td></td>
+      <td>PMID:27713081</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of DCX
 
 The production method for DCX was described previously (Bechstedt and Brouhard, 2012). Briefly, the plasmid for human DCX (sp|O43602|DCX_HUMAN/1–365) includes an N-terminal polyhistidine (6His) tag and a StrepTag II (DCX-pHAT-HUS). Additional plasmids contained these tags as well as a C-terminal GFP label (DCX-pHAT-HUGS) or a C-terminal mCherry label (DCX-pHAT-HUCS). A fourth plasmid for the 303X mutant includes an N-terminal polyhistidine (6His) tag and a StrepTag II, and a C-terminal GFP label (DCX-R303X-pHAT-HUGS). Plasmids were transfected and grown in E. coli BL21. Briefly, 100 ml 2YT was supplemented with 100 µg/ml ampicillin and 20 µg/ml gentamycin at 32°C overnight and cells grown to OD600 ~1–3. Cells were resuspended in fresh media and grown at 37°C to mid-log phase (OD600 ~0.6–1.0). DCX expression was induced by addition of IPTG(Isopropyl ß-D-1-thiogalactopyranoside) and incubated for 16 hr at 18°C. Cells were harvested by centrifugation and stored at −80°C until use.
 
@@ -120,39 +406,39 @@ For the expression of isotopically labeled DCX, DSB126 (DCX-pHAT-HUS) was grown 
 
 For protein purification, for either state, DCX-expressing cells were thawed and resuspended in cold lysis buffer (50 mM Tris–HCl pH 8, 300 mM NaCl, 10 mM imidazole, 10% glycerol, complete protease inhibitor, 1 mM PMSF(phenylmethylsulfonyl fluoride)) and lysed by sonication (Qsonica, Newtown, USA) on ice. After centrifugation, the supernatant was loaded onto a HisTrap column (5 ml, Cat. No. 17-5248-01, GE Healthcare) pre-equilibrated with lysis buffer. The column was washed with His-Buffer A (50 mM Tris–HCl pH 8, 300 mM NaCl, 10 mM imidazole, 1 mM PMSF) a protein eluted with a gradient of 0–100% His-Buffer B (50 mM Tris–HCl pH 8, 300 mM NaCl, 250 mM imidazole, 1 mM PMSF). Fractions were collected and analyzed by western blot, probed with anti-His (Applied Biological Materials Inc, Richmond, Canada) and streptavidin–HRP(horseradish peroxidase) (Thermo Fisher Scientific). DCX-containing fractions were dialyzed (MWCO 6–8 kDa) in Strep-Buffer A (100 mM Tris–HCl pH 8, 150 mM NaCl, 1 mM EDTA) at 4°C overnight. The dialyzed DCX sample was centrifuged to remove any precipitates before loading onto a Strep-Trap (1 ml, Cat. No. 29-0486-53, GE Healthcare) column. After washing with Strep-Buffer A, DCX was eluted with a gradient of 0–100% Strep-Buffer B (100 mM Tris–HCl pH 8, 150 mM NaCl, 1 mM EDTA, 2.5 mM D-desthiobiotin, 10% glycerol [VWR Life Science]). Fractions were analyzed by western blot as above and DCX-containing fractions were dialyzed in BRB80 (80 mM PIPES(piperazine-N,N′-bis(2-ethanesulfonic acid)), 1 mM EGTA(ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid), 1 mM MgCl2, pH 6.8) and supplemented with 1 mM GTP (Enzo Life Sciences, Farmingdale, USA). After centrifugation, the supernatant was concentrated on an Amicon MWCO 10 kDa unit (Millipore). The concentration of DCX was determined by Nanodrop (Thermo Fisher).The light-DCX protein used in this study was prepared in two separate batches (one for method optimization) and the heavy-DCX from one batch.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Porcine Tubulin at 1:5 ratio (rhodamine-labeled: unlabeled) (Cat. No. T240 and TL590M-A, respectively, Cytoskeleton, Inc, Denver, USA) was reconstituted to 4.0 mg/ml in cold polymerization buﬀer, BRB80. Centrifugation was performed at 16,800 × g for 10 min at 4°C to pellet any aggregates. The supernatant was diluted in warm BRB80 to 10 µM (1.0 mg/ml) and supplemented with 10 µM DCX and incubated at 37°C for 90 min. The resulting DCX–MT constructs were diluted 100 times in warm resuspension buffer (BRB80, 10 μM Docetaxel) immediately before fluorescence microscopy. Diluted sample was placed on a glass slide and covered with cover glass (glass slides were acid-etched overnight before use and rinsed thoroughly). MTs were imaged using an AxioObserver epifluorescence microscope with an oil immersion objective (EC Plan Apo ×100/1.3, Carl Zeiss MicroImaging GmbH, Jena, Germany) equipped with CCD camera Zeiss AxioCam MRm Rev. 3 FireWire. Images were taken using 100% light source intensity and 4-s exposure time. Microscopy images were processed to adjust for contrast using Zen Blue software (version 2.3). MT length measurement was performed using standard measurement tools in ImageJ (Schindelin et al., 2012).
 
-## Turbidity assay
+### Turbidity assay
 
 Tubulin (10 µM) and different concentrations of DCX (0–20 µM) were premixed in BRB80 + GTP (1 mM) on ice and transferred to a 396-well plate. The plate was transferred to the temperature controlled (37°C) spectrophotometer (Molecular Devices FilterMax F5 spectrophotometer equipped with a 340-nm filter). Turbidity measurements were taken every 13 s for over 70 min. Data were normalized to a preliminary time point and the pathlength was corrected to 1 cm.
 
-## Cooperativity assay
+### Cooperativity assay
 
 Taxol MTs were prepared from bovine tubulin as previously described (Bechstedt et al., 2014). Briefly, on the day of each experiment, taxol MTs were prepared by polymerizing a 1:30 molar ratio of Atto 633 NHS-ester (ATTO-Tec, AD 633-35) labeled:unlabeled tubulin. The cover glass was cleaned in acetone, 50% methanol, and 0.5 M KOH, then exposed to air plasma for 3 min at 30–40 cc/min, finally silanized by soaking in 0.1% Dichlorodimethylsilane (Sigma-Aldrich, 440272) in n-heptane for at least 3 hr. Sample chambers were assembled to create flow channels for solution exchange as described previously (Gell et al., 2010). Channels were prepared by flowing in anti-β-tubulin (Sigma-Aldrich, T4026) followed by blocking with 1% Pluronic F-127. Channels were rinsed with 10 channel volumes of BRB80 before flowing in taxol MTs and placing the chamber on the microscope stage, where the objective was heated to 32°C with a CU-501 Chamlide lens warmer (Live Cell Instruments). DCX-mCherry and DCX-GFP were mixed on ice in imaging buffer (BRB80, 0.1 mg/ml bovine serum albumin, 10 mM dithiothreitol, 250 nM glucose oxidase, 64 nM catalase, 40 mM D-glucose, 0.01% (wt/vol) methylcellulose, and 10 µM paclitaxel) before flowing into the channel and sealing with nail polish. For each field of view, all three signals (GFP, mCherry, and Atto 633) were imaged at an exposure time of 1 s and with wavelength-specific filter cubes (Chroma). At least three fields of view were imaged for each concentration of DCX-mCherry. Images were recorded on a Prime 95B CMOS camera (Photometrics) with a pixel size of 107 nm.
 
-## Analysis of DCX cooperativity
+### Analysis of DCX cooperativity
 
 To correct for chromatic aberations, images were processed in FIJI by applying a 0.5 px median and subtracting their 10 px Gaussian-filtered form. The three images of a single field of view (DCX-GFP, DCX-mCherry, and Atto-633 taxol MTs) were aligned using the positions of fiducial particles detected in TrackMate. For each field of view, the Atto-633 taxol MT signal was used to generate mask by Otsu thresholding in FIJI, ignoring pixels outside of the MT region defined by the mask. We quantified the colocalization of DCX-mCherry and DCX-GFP by measuring the Pearson correlation coefficient of the mCherry and GFP signal along the MTs, using the scipy.stats.pearsonr function.
 
-## Crosslinking
+### Crosslinking
 
 Porcine Tubulin was reconstituted to 4.0 mg/ml in cold BRB80 polymerization buffer supplemented with 1 mM GTP. Centrifugation was performed at 16,800 × g for 10 min at 4°C to pellet any aggregates. The supernatant was diluted to 1.0 mg/ml (10 µM) in the presence of 10 µM DCX and incubated at 37°C for 90 min to induce polymerization. Succinimidyl 6-(4,4′-azipentanamido)hexanoate (LC-SDA; Thermo Scientific) crosslinking was performed by adding the reagent to final 1 mM concentration. The sample was incubated for 10 min at 37°C, followed by 5 s of photolysis at 355 nm (50 × 100 mJ laser pulse of a 10-ns pulse width using an Nd:YAG laser, YG 980; Quantel, Les Ulis, France) (Ziemianowicz et al., 2019). DSS crosslinking was performed using 1 mM crosslinker concentration followed by 30-min incubation at 37°C. EDC crosslinking was performed with the same crosslinker concentration and incubation time, in the presence of 2 mM Sulfo-NHS. All chemicals were purchased from Sigma-Aldrich, unless mentioned otherwise. The crosslinking experiment was repeated several times for the purpose of optimization. Final results are the accumulated identifications across two replicate analyses.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Crosslinked DCX–MT was separated from free protein by centrifugation. The supernatant was removed, and the pellet washed once with warm BRB80 (37°C) and then dissolved in 50 mM ammonium bicarbonate solution to a final protein concentration of 1 mg/ml. Cysteines were reduced by adding DTT to a final concentration of 10 mM with heating to 90°C for 10 min, and then alkylation by addition of chloroacetamide to a final concentration of 50 mM at 37°C for 30 min. Trypsin (Thermo Scientific) was added to an enzyme-to-substrate ratio of 1:50 and incubated overnight at 37°C with nutation (150 rpm). Digestion was quenched by adding formic acid to a final concentration of 2%. Samples were aliquoted and either lyophilized for size-exclusion chromatography (SEC) or desalted using ZipTip C18 pipette tips (Merck Millipore Ltd, Ireland) for LC–MS/MS analysis. For SEC, samples were reconstituted in SEC buffer consisting of 30% acetonitrile (LC–MS grade, Thermo Scientific) and 0.1% FA (Fluka) and crosslinked peptides were enriched by separation on a Superdex Peptide PC 3.2/30 column (GE Healthcare), using an Agilent 1100 chromatography system at 95 μl/min with fraction collection. Fractions were lyophilized. SEC fractions and unenriched samples were reconstituted in 0.1% formic acid and based on the UV absorbance trace, approximately 1 pmol injected onto an Acclaim PepMap 100 guard column (75 μm × 2 cm C18, 3 μm particles, 100 Å; Thermo Scientific) and separated on a 50 cm PepMap RSLC C18 (75 μm × 50 cm, 2 μm particles, 100 Å; Thermo Scientific) coupled to an Orbitrap Fusion Lumos (Thermo Scientific). Peptides were separated with a gradient consisting of 56 min at 5–28% B, 17 min at 28–40% B, followed by 10 min 40–95% B and regenerated at 95% B for 10 min. Mobile phase A was 0.1% FA in water, and mobile phase B was 0.1% FA in 80% I. The flow rate was 300 nl/min. The mass spectrometer was operated in positive ion mode, in OT/OT mode with MS resolution set at 120,000 (350–1300 m/z) and MS2 resolution at 15,000. The max injection time was set at 50 and 100 ms for MS1 and MS2 scans, respectively. The AGC target was set at 400,000 and 100,000 for MS1 and MS2, respectively. Higher-energy collisional dissociation was used to generate MS2 spectra, for charge states 4+ and higher. A normalized collision energy of 32% was used with an isolation width of 1.2 m/z.
 
-## DCX dimerization analysis
+### DCX dimerization analysis
 
 14N-DCX (light) and 15N-DCX (heavy) were mixed in 1:1 ratio and then applied to tubulin as above. To explore dimerization and/or aggregation, the light–heavy mixture was processed using a few different approaches: (1) mixture incubated at 10 µM for 2 hr at 37°C with tubulin, (2) mixture incubated at 10 µM for 2 hr at 37°C without tubulin, (3) mixture diluted to 2 µM followed by concentration to ≥10 µM and incubation at 37°C for 2 hr without tubulin, (4) mixture denatured in 3 M guanidyl-HCl in phosphate-buffered saline overnight followed by buffer exchange into BRB80 and concentration to ≥10 µM and incubation at 37°C for 2 hr without tubulin. A negative control sample was also prepared by crosslinking heavy and light DCX separately and mixing them immediately prior to LC–MS/MS analysis. All samples were crosslinked by LC-SDA and processed as above, using only the nonenriched samples.
 
-## XL-MS data analysis
+### XL-MS data analysis
 
 Raw LC–MS/MS data were imported into CRIMP v2 (the crosslinking plugin in the Mass Spec Studio, https://www.msstudio.ca) (Sarpe et al., 2016) along with the Fasta files of the Tubulin isoforms identified previously (TB-α–1A, TB-α–1B, TB-α–1C, TB-α–1D, TB-α–4A, and TB-β, TB-β–2B, TB-β–4A, TB-β–4B, TB-β–3, TB-β–5) (Rafiei and Schriemer, 2019). The minor impurities in the recombinantly purified DCX did not have an impact on crosslinking results. For crosslinked peptide searching, methionine oxidation and carbamidomethylation of cysteines were selected as variable and fixed modifications, respectively. Crosslinked peptides were searched using the following parameters: MS accuracy, 5 ppm; MS/MS accuracy, 10 ppm; E-threshold, 70; enzyme, trypsin (K/R only); m/z range: 350 and 1300; peptide length range: 3–50 residues. All crosslinking results filtered at an estimated 1% FDR(false discovery rate) level were manually validated. Monoisotopic ion identification in MS1 was confirmed in all hits and only crosslinked peptides with a good fit of the measured isotopic envelope to the theoretical isotopic pattern were accepted. Crosslinking data were exported as CSV files and data from all SEC fractions combined. For isotopically labeled proteins, CRIMP was customized to search all heavy–light peptide combinations.
 
-## DCX–MT integrative structure modeling
+### DCX–MT integrative structure modeling
 
 We used integrative structure modeling (ISM) to assess how our generated crosslinking data, along with the previously computed EM map, prior structural information and physical principles, could model the interaction between the domains of DCX and the MT lattice. Briefly, data and information were transformed into spatial restraints used to construct a scoring function and then we searched for model configurations that satisfy all restraints. To assess whether NDC or CDC binds to MT, we performed ISM using the MT lattice and either CDC or NDC along with intermolecular crosslinks between each domain and MT. The convergence of each of the DCX domains to the observed binding site in the EM map using only the crosslinking data was analyzed. In addition, the satisfaction of the crosslinking restraint was computed while enforcing a restraint using the EM density of the domain of DCX bound to MT to guide the domain to this observed site, with the better models identified by those that better satisfy the crosslinks.
 
@@ -160,11 +446,11 @@ We assessed the nature of the DCX dimerization event by performing ISM using two
 
 ISM protocols were built using the Python Modeling Interface (PMI) package of the open-source Integrative Modeling Platform (IMP) package (Webb et al., 2018) version 2.10 (https://integrativemodeling.org). Specifically, ISM proceeds through four stages: (1) gathering data, (2) representing subunits and translating data into spatial restraints, (3) sampling configurations of the system representations to produce an ensemble of models that satisfies the restraints, and (4) analyzing and validations the ensemble structures (Figure 3).
 
-## Stage 1: gathering data
+### Stage 1: gathering data
 
 The 124 unique crosslinks identified between DCX and α−β-tubulin, along with 74 unique inter- and intra- DCX crosslinks identified in this study informed the spatial proximities of the CDC and NDC with respect to MT lattice and each other. An EM map containing MT and DCX (EMDB 2095; Liu et al., 2012) at 8.0 Å resolution was used to inform the binding mode of DCX with respect to the MT lattice. The map was prepared as follows. First, the cryo-EM structure for MT polymerized in the presence of DCX (6EVZ Manka and Moores, 2018) was fitted into the EM map using UCSF Chimera tools. Second, the EM volumes corresponding to the MT structure were erased using Erase tool in Chimera, leaving only the DCX density. The representation of the MT lattice was derived from the high-resolution structure built based on the cryo-EM structure for MT polymerized in the presence of DCX (PDB: 6EVZ Manka and Moores, 2018). The representation of the NDC globular domain was informed by the PDB structure 4ATU (Liu et al., 2012) and the representation of the globular domain of CDC informed by either the crystal structures of the globular (PDB 5IP4; Burger et al., 2016) and domain-swapped (PDB 6FNZ; Rufer et al., 2018) configurations.
 
-## Stage 2: system representation and translation of data into spatial restraints
+### Stage 2: system representation and translation of data into spatial restraints
 
 The information above was used to define the representation of the system, the scoring function that guides the search for configurations that satisfy the information, filtering of models and validation of the final ensembles. One representation of the MT lattice was constructed based on the coordinates of the PDB structure (6EVZ; Manka and Moores, 2018), with components simultaneously represented as beads of a single residue each and up-to-10 residues-per-bead. An additional 4-dimer width MT lattice representation was made using the same PBD structure (6EVZ) of MT lattice and symmetry replication tools in UCSF Chimera (Kim et al., 2003).
 
@@ -172,16 +458,16 @@ Residues of NDC (51–140) and CDC (174–251 for globular and 174–253 for ope
 
 The information was then encoded into spatial restraints computable on the system representation. Our scoring function consisted of the sum of four component restraints. (1) The chemical crosslink restraint utilized the identified chemical crosslinks to construct a Bayesian scoring function (Gutierrez et al., 2020) that restrained distances between crosslinked residues. Restraint distances of 30 Å for LC-SDA and DSS, and 25 Å for EDC were used. The ambiguity of crosslink sites due to the presence of multiple copies of the same protein was considered. In these cases, the joint probability of satisfying the restraint over all possible combinations is computed (Molnar et al., 2014). (2) The EM restraint utilized a Bayesian scoring function based on the cross-correlation of the overlap of the model and experimental density. Densities of the model components and experimental data were approximated using a Gaussian Mixture Model (Bonomi et al., 2019). (3) The excluded volume restraint prevents parts of the system from occupying the same space. This restraint is applied to the low-resolution representation of the system (10 residues per bead). (4) The sequence connectivity restraint was used to restraint chemical components known to be covalently linked. The restraint was applied as a harmonic upperdistance bound on the distance between adjoining beads in sequence. The center of the harmonic was defined as twice the sum of the radii of the two beads, the radii computed from the excluded volume of the bead.
 
-## Stage 3: configurational sampling
+### Stage 3: configurational sampling
 
 The search for model configurations that satisfy the restraints used Gibbs sampling, based on the Metropolis Monte-Carlo algorithm and accelerated via replica exchange. Initial positions of system components were randomized with exception of MT being fixed for all cases, and NDCs being fixed for dimeric-DCX modeling scenarios. The set of Monte-Carlo moves consisted of random rotation and translation of rigid bodies (up to 4.0 Å and 0.5 radians, respectively) and random translations of the individual beads not in rigid bodies of up to 4 Å. Model configurations were saved every 10 steps. For each modeling protocol, 8–10 independent sampling runs were initiated using 20–40 replicas and run for 100,000–500,000 steps each, resulting in 100,000–500,000 models for each protocol.
 
-## Stage 4: analyzing and validating model ensembles
+### Stage 4: analyzing and validating model ensembles
 
 The resulting ensemble of model configurations were analyzed to estimate the structural precision, ensure appropriate consistency with the input data and suggest more informative future experiments. The models were first filtered for those that satisfy the input data. After filtering, we used analysis and validation protocols published previously (Ishida and Kinoshita, 2007). Briefly, analysis began by assessing the thoroughness of structural sampling and computation of the sampling precision, the RMSD threshold at which clustering produces indistinguishable results for two independent sets of computed models (e.g., the output of runs 1–5 and 6–10), using protocols previously described (Viswanath et al., 2017). Upon computation of the sampling precision, the entire set of models was clustered at this precision or higher to ensure that resulting model clusters reflect the uncertainty in sampling in input information. The centroid models of clusters were then filtered to remove the models where NDC/CDC is located on the MT edges (where another tubulin monomer will fit in a full MT structure). These model clusters were further assessed by computing their precision (structural variability – average RMSD to the centroid model) and quantifying their fit to the input information.
 
 These final models were validated by ensuring that the models satisfied the crosslinking data used to compute it. Crosslink satisfaction was also used to determine which modeling configurations were more plausible than others. The fraction crosslink satisfaction was computed both for each individual model configuration in a cluster and the entire cluster. A crosslink was deemed to be satisfied if the crosslink distance in an individual model configuration was less than 35 Å for LC-SDA and DSS and 30 Å for EDC. A crosslink was deemed to be satisfied in a model cluster (called cluster crosslink satisfaction in Table S2 in Supplementary file 2) if at least one configuration in the cluster has a crosslink distance less than the distance thresholds described above. Also, RMSD calculation was performed between each individual model present in the clusters and the NDC component of PDB structure 4ATU. RMSD calculation for CDC–MT models was performed using an aligned globular CDC structure (PDB 5IP4) into the NDC component of cryo-EM based structure (PDB 4ATU). The full details of sampling precision, clustering threshold, cluster’s population, etc. for all modeling scenarios are presented in Table S2 in Supplementary file 2.
 
-## Data availability
+### Data availability
 
 The DCX–MT integrative models, including final structures, modeling details, and input experimental data, were deposited into the PDB-dev repository for integrative models (https://www.pdb-dev.com) accession number PDBDEV_00000071, PDBDEV_00000072, PDBDEV_00000073, and PDBDEV_00000074. All LC–MS/MS data generated to support the findings of this study have been deposited with the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD033167.

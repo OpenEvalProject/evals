@@ -24,18 +24,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Department of Neurology and Neurosurgery, Structural Genomics Consortium, The Montreal Neurological Institute, McGill University Montreal Canada
-2. https://ror.org/01pxwe438 Advanced BioImaging Facility (ABIF), McGill University Montreal Canada
-3. https://ror.org/04h699437 NIHR Respiratory BRC, Department of Respiratory Sciences, University of Leicester Leicester United Kingdom
-4. https://ror.org/0168r3w48 Department of Neuroscience, UC San Diego La Jolla United States
-5. https://ror.org/01pxwe438 The Neuro's Early Drug Discovery Unit (EDDU), Structural Genomics Consortium, McGill University Montreal Canada
-6. https://ror.org/03dbr7087 Structural Genomics Consortium, University of Toronto Toronto Canada
+1. Department of Neurology and Neurosurgery, Structural Genomics Consortium, The Montreal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Advanced BioImaging Facility (ABIF), McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+3. NIHR Respiratory BRC, Department of Respiratory Sciences, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
+4. Department of Neuroscience, UC San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+5. The Neuro's Early Drug Discovery Unit (EDDU), Structural Genomics Consortium, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+6. Structural Genomics Consortium, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
 ## Abstract
 
-Antibodies are critical reagents to detect and characterize proteins. It is commonly understood that many commercial antibodies do not recognize their intended targets, but information on the scope of the problem remains largely anecdotal, and as such, feasibility of the goal of at least one potent and specific antibody targeting each protein in a proteome cannot be assessed. Focusing on antibodies for human proteins, we have scaled a standardized characterization approach using parental and knockout cell lines (Laflamme et al., 2019) to assess the performance of 614 commercial antibodies for 65 neuroscience-related proteins. Side-by-side comparisons of all antibodies against each target, obtained from multiple commercial partners, have demonstrated that: ( i ) more than 50% of all antibodies failed in one or more applications, ( ii ) yet, ~50–75% of the protein set was covered by at least one high-performing antibody, depending on application, suggesting that coverage of human proteins by commercial antibodies is significant; and ( iii ) recombinant antibodies performed better than monoclonal or polyclonal antibodies. The hundreds of underperforming antibodies identified in this study were found to have been used in a large number of published articles, which should raise alarm. Encouragingly, more than half of the underperforming commercial antibodies were reassessed by the manufacturers, and many had alterations to their recommended usage or were removed from the market. This first study helps demonstrate the scale of the antibody specificity problem but also suggests an efficient strategy toward achieving coverage of the human proteome; mine the existing commercial antibody repertoire, and use the data to focus new renewable antibody generation efforts.
+Antibodies are critical reagents to detect and characterize proteins. It is commonly understood that many commercial antibodies do not recognize their intended targets, but information on the scope of the problem remains largely anecdotal, and as such, feasibility of the goal of at least one potent and specific antibody targeting each protein in a proteome cannot be assessed. Focusing on antibodies for human proteins, we have scaled a standardized characterization approach using parental and knockout cell lines (Laflamme et al., 2019) to assess the performance of 614 commercial antibodies for 65 neuroscience-related proteins. Side-by-side comparisons of all antibodies against each target, obtained from multiple commercial partners, have demonstrated that: (i) more than 50% of all antibodies failed in one or more applications, (ii) yet, ~50–75% of the protein set was covered by at least one high-performing antibody, depending on application, suggesting that coverage of human proteins by commercial antibodies is significant; and (iii) recombinant antibodies performed better than monoclonal or polyclonal antibodies. The hundreds of underperforming antibodies identified in this study were found to have been used in a large number of published articles, which should raise alarm. Encouragingly, more than half of the underperforming commercial antibodies were reassessed by the manufacturers, and many had alterations to their recommended usage or were removed from the market. This first study helps demonstrate the scale of the antibody specificity problem but also suggests an efficient strategy toward achieving coverage of the human proteome; mine the existing commercial antibody repertoire, and use the data to focus new renewable antibody generation efforts.
 
 ## Introduction
 
@@ -47,9 +47,17 @@ To begin the process of large-scale antibody validation and to provide a large e
 
 ## Results
 
-## Assembling KO cell lines and antibodies
+### Assembling KO cell lines and antibodies
 
 Our initiative has thus far validated antibodies for 65 protein targets, which were chosen by disease charities, academia, and industry without consideration of antibody coverage. The list is comprises 32 Alzheimer’s disease (AD)-related proteins that were community-nominated through an NIH-funded project on dark AD genes (https://agora.adknowledgeportal.org/), 22 proteins nominated within the amyotrophic lateral sclerosis (ALS) Reproducible Antibody Platform project, 5 Parkinson’s disease (PD)-linked proteins nominated by the Michael J. Fox Foundation, and 6 proteins nominated by industry (Figure 1A). Within the 65 target proteins, 56 are predicted intracellular and 9 are predicted secreted. The description of each protein target is indicated in Figure 1—source data 1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig1-v2.jpg)
+
+**Figure 1.:** (A) The funders of the targets analyzed in this study and the number of targets proposed by each are indicated. (B) Bioinformatic analyses of nominated proteins using Uniprot to determine their molecular mass, unique Uniprot ID and published/expected subcellular distribution. In parallel, analyses of the Cancer Dependency Map (‘DepMap’) portal provided RNA sequencing data for the designated target, which guided our selection of cell lines with adequate expression for the generation of custom KO cell lines. A subset of cell lines amenable for genome engineering were prioritized. (C) Receive relevant KO cell lines or generate custom KO lines and (D) receive antibodies from manufacturing partners. All contributed antibodies were tested in parallel by (E) WB using WT and KO cell lysates ran side-by-side, (F) IP followed by WB using a KO-validated antibody identified in (E) and by (G) IF using a mosaic strategy to avoid imaging and analysis biases. (H) Antibody characterization data for all tested antibodies were presented in a form of a protein target report. All reports were shared with participating companies for their review. (I) Reviewed reports were published on ZENODO, an open access repository. ALS-RAP=amyotrophic lateral sclerosis-reproducible antibody platform, AD = Alzheimer’s disease, MJFF = Michael J. Fox Foundation. KO = knockout cell line.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representations of a successful antibody (left schematic), specific, non-selective antibody (middle schematic), and a non-successful antibody (right schematic) for WB. (B) Schematic representations of a successful antibody (left schematic) and non-successful antibodies (middle and right schematics) for IP. (C) Schematic representation of the mosaic strategy used (left schematic). WT cells are labelled with a fluorescent cell dye (green), and KO cells are labelled with a different fluorescent cell dye (magenta) plated together as a mosaic. Schematic representations of a successful antibody (antibody #1) and a non-successful antibody (antibody #2) for IF are shown.
 
 The proteins were searched to determine the Uniprot identifier, the predicted molecular mass, and whether the protein is secreted or intracellular (Figure 1B). Our strategy was predicated on identifying a parental cell line that expressed sufficient levels of the target protein to be detected by an antibody with a binding affinity of 1–50 nM. To identify candidate lines, we searched the Cancer Dependency Map Portal (DepMap) using the ‘Expression 22Q1’ database, which houses the RNA-level analysis of >1800 cancer cell lines (Ghandi et al., 2019; Figure 1B). After our initial experience with a few dozen targets comparing RNA expression and the ability to detect a clear signal, we selected 2.5 log2(TPM +1) as an RNA-level threshold to select a candidate cell line to create a KO. Among the cell lines showing expression above this level, we prioritized a group of 8 common cell line backgrounds representing different cell/tissue types because their doubling time is short, and they are amenable to CRISPR-Cas9 technology (Figure 1B). These 8 cell lines were used in 62 out of the 65 antibody characterization studies (Figure 1—source data 1).
 
@@ -57,37 +65,57 @@ After identifying candidate cell lines for each target, we either obtained KO li
 
 All available antibodies from all companies were tested side-by-side in parental and KO lines. The protocols used were established by our previous work (Laflamme et al., 2019) and refined in collaboration with antibody manufacturers. On occasion, our protocols differed from those the companies used in their internal characterization. All antibodies were tested for all three applications (except that secreted proteins were not tested in IF), independent of the antibody manufacturers’ recommendations. We received on average 9.5 antibodies per protein target contributed from an average of five different antibody manufacturers (Figure 1E, F and G). Companies often contributed more than one antibody per target (Figure 1—source data 1).
 
-## Antibody and cell line characterization
+### Antibody and cell line characterization
 
 For WB, antibodies were tested on cell lysates for intracellular proteins or cell media for secreted proteins (Figure 1E). For 55/65 of the target proteins, we identified one or more antibodies that successfully immunodetected their cognate protein, identifying well-performing antibodies and validating the efficacy of the KO lines. For the remaining nine targets, we identified at least one specific, non-selective antibody that detects the cognate protein by WB, but also recognizes unrelated proteins, that is, non-specific bands not lost in the KO controls. All 614 antibodies were tested by IP on non-denaturing cell lysates for intracellular proteins or cell media for secreted proteins, using WB with a successful antibody from the previous step to evaluate the immunocapture (Figure 1F). All antibodies against intracellular proteins were tested for IF using a strategy that imaged a mosaic of parental and KO cells in the same visual field to reduce imaging and analysis biases (Figure 1G).
 
 For each protein target, we consolidated all screening data into a report, which is made available without restriction on ZENODO, a data-sharing website operated by CERN. On ZENODO, all 65 reports are gathered under the Antibody Characterization through Open Science (YCharOS) community: https://ZENODO.org/communities/ycharos/ (Figure 1I). Prior to release, each antibody characterization report underwent technical peer review by a group of scientific advisors from academia and industry (Figure 1H).
 
-## Coverage of human proteins by renewable antibodies
+### Coverage of human proteins by renewable antibodies
 
 The Antibody Registry (https://www.antibodyregistry.org, RRID:SCR_006397) indicates that there are ~1.6 million antibodies covering ~96% of human proteins (Bandrowski et al., 2023), with 53% covered by at least five renewable antibodies (Figure 2A, Figure 2—source data 1). Approximately 21% of human proteins are covered by only one or two renewable antibodies, and ~15% have no renewable antibodies available (Figure 2A). In our set of 65 proteins, and from the manufacturers represented, 49 were covered by at least 3 renewable antibodies, 15 by 1 or 2 renewable antibodies, and 1 was not covered by any renewables (Figure 1—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig2-v2.jpg)
 
-**Figure 2.:** (A) Cumulative plot showing the percentage of the human proteome that is covered by polyclonal antibodies (blue line) and renewable antibodies (monoclonal +recombinant; orange line). The number of antibodies per protein was extracted from the Antibody Registry database. (B) Percentage of target proteins covered by minimally one renewable successful antibody (orange column) or covered by only successful polyclonal antibodies (blue column) is shown for each indicated applications using a bar graph. Lack of successful antibody (‘none’) is also shown (black column).Figure 2—source data 1.The Antibody Registry was queried with a set of Uniprot-derived protein names representing 16,262 human proteins. The number of polyclonal and monoclonal antibodies (representing recombinant and mouse monoclonal antibodies) that match the protein list is shown.
+**Figure 2.:** (A) Cumulative plot showing the percentage of the human proteome that is covered by polyclonal antibodies (blue line) and renewable antibodies (monoclonal +recombinant; orange line). The number of antibodies per protein was extracted from the Antibody Registry database. (B) Percentage of target proteins covered by minimally one renewable successful antibody (orange column) or covered by only successful polyclonal antibodies (blue column) is shown for each indicated applications using a bar graph. Lack of successful antibody (‘none’) is also shown (black column).
 
 We found a well-performing renewable antibody for 50 targets in WB (Figure 2B, left bar graph), for 49 targets in IP (Figure 2B, middle bar graph), and for 30 targets in IF (Figure 2B, right bar graph). For some proteins lacking coverage by renewable antibodies or lacking successful renewable antibodies, well-performing polyclonal antibodies were identified (Figure 2B). Some proteins were not covered by any successful antibodies depending on application; notably ~40% of our protein set lacked a successful antibody for IF (Figure 2B, right bar graph).
 
-## Recombinant antibody performance
+### Recombinant antibody performance
 
 The antibody set constituted 258 polyclonal antibodies, 165 monoclonal antibodies and 191 recombinants. For WB, 27% of the polyclonal antibodies, 41% of the monoclonal antibodies and 67% of the recombinant antibodies immunodetected their target protein (Figure 3, left bar graph). For IP, trends were similar: 39%, 32% and 54% of polyclonal, monoclonal and recombinants, respectively (Figure 3, middle bar graph). For IF, we tested 529 antibodies against the set of intracellular proteins; 22% of polyclonal antibodies, 31% of monoclonal antibodies, and 48% of recombinant antibodies generated selective fluorescence signals in images of parental versus KO cells (Figure 3, right bar graph). Thus, recombinant antibodies are on average better performers than polyclonal or monoclonal antibodies in each of the applications. It should be noted that recombinant antibodies are newer protein reagents compared to polyclonal and monoclonal hybridomas, and their superior performance could be a consequence of enhanced internal characterization by the commercial suppliers.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig3-v2.jpg)
+
+**Figure 3.:** The percentage of successful antibodies based on their clonality is shown using a bar graph, for each indicated application. The number of antibodies represented in each category is indicated above the corresponding bar.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representation of a 2x2 contingency table used to apply the McNemar Test as well as the equation of the chi-square (Χ2) statistic used. Analysis of antibody performance correlation represented as a contingency table and as a double y-axis graph between (B) WB and IP, (C) IF and IP and (D) IF and WB. n/s=non-significant.
+
 Our analyses also inform the characterization pipelines to use for newly generated renewable antibodies. Currently, it is common to use WB as the initial screen (Lund-Johansen and Browning, 2017). However, we find that success in IF is the best predictor of performance in WB and IP (Figure 3—figure supplement 1).
 
-## Optimizing an antibody characterization strategy
+### Optimizing an antibody characterization strategy
 
 While the parental versus KO method is the consensus superior method for antibody validation (Laflamme et al., 2019; Ellis et al., 2023; Davies et al., 2013; Lutz et al., 2022), not all antibodies on the market are characterized this way, largely due to cost and the range of alternative methods (Uhlen et al., 2016). To assess if the cost of KO characterization is justified, we compared the performance of antibodies in our dataset to the performance predicted by the characterization methods used by the companies. In all, 578 of the 614 antibodies tested were recommended for WB by the manufacturers. Of these, 44% were successful, 35% were specific but non-selective, and 21% failed (Figure 4—figure supplement 1, left bar graph). Most antibodies are not recommended for IP by the suppliers, perhaps because they are not tested. Of 614 antibodies, 143 were recommended for IP, and 58% enriched their cognate target from cell extracts. Interestingly, of the 471 remaining antibodies that had no recommendation for IP, 37% were able to enrich their cognate antigen (Figure 4—figure supplement 1, middle bar graph). In this regard, the manufacturers are not sufficiently recommending their successful products. Of the 529 antibodies tested in IF, 293 were recommended for this application by the suppliers and 236 were not. Only 39% of the antibodies recommended for IF were successful (Figure 4—figure supplement 1, right bar graph).
 
 We next investigated if antibody validation strategies have equal scientific value. Broadly, antibodies are characterized using genetic approaches, which exploit KO or knockdown (KD) samples as controls, or using orthogonal approaches, which rely on known information about the target protein of interest as a correlate to validate performance. For WB, 61% of antibodies were recommended by manufacturers based on orthogonal approaches, 30% based on genetic approaches and 9% using other strategies. For IF, 83% of the antibodies were recommended based on orthogonal approaches, 7% using genetic approaches and 10% using other strategies (Figure 4A). For WB, 80% of the antibodies recommended by the manufacturers based on orthogonal strategies and 89% of antibodies recommended based on genetic strategies could detect the intended target protein (Figure 4B, left bar graph). For IF, 38% of the antibodies recommended by the manufacturers based on orthogonal strategies were confirmed using KO cells as controls. Of the 20 antibodies validated by the manufacturers for IF on the basis of genetic strategies, we confirmed the performance of 16 (80%) (Figure 4B, histogram right). Of the four antibodies that failed in our hand, one has already been withdrawn from the market by the manufacturer. Thus, while orthogonal strategies are somewhat suitable for WB, genetic strategies generate far more robust characterization data for IF.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig4-v2.jpg)
+
+**Figure 4.:** (A) Percentage of antibodies validated by suppliers using one of the indicated methods for WB or IF showed using a bar graph with stacked columns. The percentage corresponding to each section of the bar graph is shown directly in the bar graph. Orthogonal = orthogonal strategies, genetic = genetic strategies. (B) Percentage of successful (light gray), specific, non-selective (dark gray-only for WB) and unsuccessful (black) antibodies according to the validation method used by the manufacturer for WB and IF as compared to the KO strategy used in this study. Data are shown using a bar graph with stacked columns. The percentage corresponding to each section of the bar graph is shown directly in the bar graph. The number of antibodies analyzed corresponding to each condition is shown above each bar. (C) Percentage of publications that used antibodies that successfully passed validation (correct usage) or to antibodies that were unsuccessful in validation (incorrect usage) showed using a bar graph with stacked columns. The number of publications was found by searching CiteAb. The percentage corresponding to each section of the bar graph is shown in the bar graph and the number of publications represented in each category is shown above the corresponding bar. (D) Percentage of publications that used an unsuccessful antibody for IF from (C) that provided validation data for the corresponding antibodies. Data is shown as a bar graph. The number of publications represented in each category is shown above the corresponding bar.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Percentage of successful or unsuccessful antibodies for the indicated applications are shown using a bar graph with stacked columns. Antibodies were divided according to whether they were recommended or not recommended by the manufacturers for the indicated applications. The percentage corresponding to each section of the bar graph is shown in the graph, and the total number of antibodies represented in each category is indicated above the corresponding bar.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91645/elife-91645-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The percentage of antibodies removed from the market, or for which catalogue recommendations were modified following assessment of our data by our antibody manufacturing partners. The number of antibodies represented in each category is indicated above the corresponding bar.
+
 From a total of 409 antibodies that presented conflicting data between our characterization data and antibody supplier’s recommendations, the participating companies have withdrawn 73 antibodies from the market and changed recommendations for 153 antibodies (Figure 4—figure supplement 2). In turn, high-quality antibodies are being promoted. We expect to see additional changes and an overall improvement in the general quality of commercial reagents as more antibody characterization reports are generated.
 
-## Antibodies and reproducible science
+### Antibodies and reproducible science
 
 The availability of renewable, well-characterized antibodies would be expected to enhance the reproducibility of research. To assess the bibliometric impact of underperforming antibodies, we used the reagent search engine CiteAb (https://www.citeab.com/) to quantify how antibodies in our dataset have been used in the literature. We identified 2010 publications that employed one of the 180 antibodies we tested for WB. Of those, 69% used a well-performing antibody that specifically immunodetected its target protein by WB, while 31% used an antibody unsuccessful in our protocol (Figure 4C). For IP, 105 publications employed 41 of our tested antibodies while 65% of these used a well-performing antibody but 35% employed an antibody unable to immunocapture its target protein (Figure 4C). For IF, we found 548 publications that employed 80 of the antibodies we tested. Of these publications, 22% used an antibody unable to immunolocalize its target protein (Figure 4C), with 88% containing no validation data (Figure 4D). If our results are representative, this suggests that 20–30% of figures in the literature are generated using antibodies that do not recognize their intended target, and that more effort in antibody characterization is highly justified.
 
@@ -117,9 +145,40 @@ Overall, this project provides the global life sciences community with a tremend
 
 ## Materials and methods
 
-## Data analysis
+### Data analysis
 
 Performance of each antibody was retrieved from the corresponding ZENODO report or publication (Figure 1—source data 1), for WB, IP and IF, and analyzed following the performance criteria described in Table 1. Antibody properties, application recommendations and antibody characterization strategies were taken from the manufacturers' datasheets. Throughout the manuscript, renewable antibodies refer to monoclonal antibodies from hybridomas and to recombinant antibodies (monoclonal and polyclonal recombinant antibodies) generated in vitro.
+
+**Table 1.**
+ Antibody performance criteria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Successful antibody for western blot</td>
+      <td>A successful primary antibody immunodetects the target protein, and the signal observed in the WT lysate is lost in the KO lysates (Figure 1—figure supplement 1A). The antibody does not recognize other proteins under the conditions tested.</td>
+    </tr>
+    <tr>
+      <td>Specific, non-selective antibody for western blot</td>
+      <td>The primary antibody specifically recognizes the target protein, but also unrelated protein(s) (Figure 1—figure supplement 1A).</td>
+    </tr>
+    <tr>
+      <td>Successful antibody for immunoprecipitation</td>
+      <td>Under the conditions used, a successful primary antibody immunocaptures the target protein to at least 10% of the starting material (Figure 1—figure supplement 1B).</td>
+    </tr>
+    <tr>
+      <td>Successful antibody for immunofluorescence</td>
+      <td>A successful primary antibody immunolocalizes the target protein by generating a fluorescence signal in WT cells that is at least 1.5-fold higher than the signal in KO cells (Figure 1—figure supplement 1C). Signal provided by such antibody staining can be easily distinguished from unspecific background and noise.</td>
+    </tr>
+  </tbody>
+</table>
 
 For Figure 2A, the analysis of the antibody coverage of human proteins was performed as previously described (Bandrowski et al., 2023) and antibodies were divided into polyclonal and renewable categories.
 
@@ -127,8 +186,55 @@ To evaluate the number of citations corresponding to each tested antibody (Figur
 
 We asked participating antibody suppliers to indicate the number of antibodies eliminated from the market, and the number of antibodies for which there was a change in recommendation due to their evaluation of our characterization data (Figure 4—figure supplement 2).
 
-The correlation of antibody performance between two applications were evaluated by the McNemar test, followed by the chi-square statistic (Figure 3—figure supplement 1). The number of antibodies was reported in each corresponding cell of the 2x2 contingency tables, and chi-square statistic was computed as follows: X2=(b-c)2/b+c. The null hypothesis is pb = pc (where p is the population proportion). Note that these hypotheses relate only for the cells that assess change in status, that is cell b which contains the number of antibodies which passed application #2, but failed application #1, whereas cell c contains the number of antibodies which passed application #1, but failed application #2. The test measures the effectiveness of antibodies for one application (from fail to pass) against the other application (change from pass to fail). If pb = pc, the performance of one application is not correlated with the performance of another application, whereas if pb <or > pC, then antibody performance from one application can inform on the performance of the other application. The computed value is compared to the chi-square probability table to identify the p-value (degree of freedom is 1). The percentage of antibodies indicated in the double y-axis graph was computed by dividing the number of antibodies in the corresponding cell to the total number of antibodies (sum of cell a, b, c and d).
+The correlation of antibody performance between two applications were evaluated by the McNemar test, followed by the chi-square statistic (Figure 3—figure supplement 1). The number of antibodies was reported in each corresponding cell of the 2x2 contingency tables, and chi-square statistic was computed as follows: $X2=(b-c)2/b+c$. The null hypothesis is pb = pc (where p is the population proportion). Note that these hypotheses relate only for the cells that assess change in status, that is cell b which contains the number of antibodies which passed application #2, but failed application #1, whereas cell c contains the number of antibodies which passed application #1, but failed application #2. The test measures the effectiveness of antibodies for one application (from fail to pass) against the other application (change from pass to fail). If pb = pc, the performance of one application is not correlated with the performance of another application, whereas if pb <or > pC, then antibody performance from one application can inform on the performance of the other application. The computed value is compared to the chi-square probability table to identify the p-value (degree of freedom is 1). The percentage of antibodies indicated in the double y-axis graph was computed by dividing the number of antibodies in the corresponding cell to the total number of antibodies (sum of cell a, b, c and d).
 
 The number of articles corresponding to each human target protein was assessed by searching the NIH protein database (https://www.ncbi.nlm.nih.gov/protein/) on May 4, 2023.
 
-## Resource information (alphabetical order)
+### Resource information (alphabetical order)
+
+<table>
+  <thead>
+    <tr>
+      <th>Name of the resource</th>
+      <th>RRID</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody Registry</td>
+      <td>RRID:SCR_006397</td>
+      <td>https://antibodyregistry.org</td>
+    </tr>
+    <tr>
+      <td>Cancer Dependency Map Portal (DepMap)</td>
+      <td>RRID:SCR_017655</td>
+      <td>https://depmap.org/portal/</td>
+    </tr>
+    <tr>
+      <td>CiteAb</td>
+      <td>RRID:SCR_009653</td>
+      <td>https://www.citeab.com</td>
+    </tr>
+    <tr>
+      <td>F1000research (YCharOS Gateway)</td>
+      <td>-</td>
+      <td>https://f1000research.com/ycharos</td>
+    </tr>
+    <tr>
+      <td>NIH protein database</td>
+      <td>-</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein/</td>
+    </tr>
+    <tr>
+      <td>Universal Protein Resource (Uniprot)</td>
+      <td>RRID:SCR_002380</td>
+      <td>https://www.uniprot.org/</td>
+    </tr>
+    <tr>
+      <td>ZENODO (YCharOS community)</td>
+      <td>-</td>
+      <td>https://zenodo.org/communities/ycharos</td>
+    </tr>
+  </tbody>
+</table>

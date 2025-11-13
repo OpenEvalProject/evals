@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Antigens (Ags) with multivalent and repetitive structure elicit IgG production in a T-cell-independent manner. However, the mechanisms by which such T-cell-independent type-2 (TI-2) Ags induce IgG responses remain obscure. Here, we report that B-cell receptor (BCR) engagement with a TI-2 Ag but not with a T-cell-dependent (TD) Ag was able to induce the transcription of Aicda encoding activation-induced cytidine deaminase (AID) and efficient class switching to IgG3 upon costimulation with IL-1 or IFN-α in mouse B cells. TI-2 Ags strongly induced the phosphorylation of protein kinase C (PKC)δ and PKCδ mediated the Aicda transcription through the induction of BATF, the key transcriptional regulator of Aicda . In PKCδ-deficient mice, production of IgG was intact against TD Ag but abrogated against typical TI-2 Ags as well as commensal bacteria, and experimental disruption of the gut epithelial barrier resulted in fatal bacteremia. Thus, our results have revealed novel molecular requirements for class switching in the TI-2 response and highlighted its importance in homeostatic commensal-specific IgG production.
+Antigens (Ags) with multivalent and repetitive structure elicit IgG production in a T-cell-independent manner. However, the mechanisms by which such T-cell-independent type-2 (TI-2) Ags induce IgG responses remain obscure. Here, we report that B-cell receptor (BCR) engagement with a TI-2 Ag but not with a T-cell-dependent (TD) Ag was able to induce the transcription of Aicda encoding activation-induced cytidine deaminase (AID) and efficient class switching to IgG3 upon costimulation with IL-1 or IFN-α in mouse B cells. TI-2 Ags strongly induced the phosphorylation of protein kinase C (PKC)δ and PKCδ mediated the Aicda transcription through the induction of BATF, the key transcriptional regulator of Aicda. In PKCδ-deficient mice, production of IgG was intact against TD Ag but abrogated against typical TI-2 Ags as well as commensal bacteria, and experimental disruption of the gut epithelial barrier resulted in fatal bacteremia. Thus, our results have revealed novel molecular requirements for class switching in the TI-2 response and highlighted its importance in homeostatic commensal-specific IgG production.
 
 ## Introduction
 
@@ -29,47 +29,87 @@ In a TD immune response, stimulation with CD40L and cytokines, such as IL-4 and 
 
 ## Results
 
-## A TI-2 Ag induces B-cell proliferation and potentiates CSR to IgG
+### A TI-2 Ag induces B-cell proliferation and potentiates CSR to IgG
 
 Considering the unique structure of TI-2 Ags, it is plausible that the engagement of the BCR with TI-2 Ags and TD Ags differently induces downstream signaling that leads to B-cell activation, although this idea has not been tested properly so far. We tested this in vitro by stimulating NP-specific B cells with the TD Ag NP-CGG or the TI-2 Ag NP-Ficoll to compare their ability to induce signaling, proliferation, and antibody production. NP-specific B cells were prepared from Igk−/− mice (expressing only λ isotype light chain) carrying a VH B1-8 knock-in gene encoding a VH region which binds to NP when coupled with a λ light chain. Although NP-CGG induced little proliferation and no IgM production, NP-Ficoll induced strong proliferation and IgM production, whereas neither induced IgG production (Figure 1A and B). Thus, although NP-Ficoll alone can strongly activate B cells, additional stimulation seemed to be required for induction of class switching, similar to a previous report that anti-δ mAb/dextran and TLR ligands synergistically induced AID and CSR (Pone et al., 2012). Indeed, NP-Ficoll induced IgG production, generation of IgG+ cells and Aicda transcription in the presence of TLR ligands, LPS, R-848, or CpG, while NP-CGG did so marginally (Figure 1—figure supplement 1A-C). Besides TI-1 Ags, such as TLR ligands, we sought to identify costimulating molecules that induce class switching in the TI-2 response, some of which were suggested previously (Magri et al., 2014; Balázs et al., 2002). Since IgG3 is the most dominant class-switched Ig isotype produced in a TI-2 response, we screened various cytokines for their ability to promote the production of IgG3 in the presence of NP-Ficoll, and identified IL-1α, IL-1β, and IFNα as efficient costimuli for IgG3 production (Figure 1—figure supplement 1D and Figure 1C). These cytokines, together with NP-Ficoll, induced generation of IgG3+ cells (Figure 1D), as well as IgG1+ and IgG2b+ cells to a lesser extent (Figure 1—figure supplement 1E). In the presence of these cytokines, NP-Ficoll was far more potent than NP-CGG for IgG3 production, IgG3+ cell generation, Sµ-Sγ3 CSR (detectable as the Iγ3-Cµ transcript from the switch circle DNA) (Xu et al., 2012; Kinoshita et al., 2001), and the induction of Aicda transcription (Figure 1C–E). NP-Ficoll or each of these cytokines alone could not induce those responses (Figure 1C–E). Collectively, these results indicate that BCR signaling elicited by TI-2 Ag engagement is pivotal for the TI-2 B-cell response, namely induction of proliferation and antibody production, as well as potentiation of CSR to IgG.
 
-## PKCδ is required for IgG production and AID expression induced by TI-2 Ag stimulation
+![Figure 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) Naive B cells purified from the spleen of Igk−/− B1-8flox/+ mice were stimulated with NP-CGG or NP-Ficoll. (A) 3H-thymidine incorporation on day 3. (B) IgM and IgG concentrations in the culture supernatants on day 3. (C–E) Igk−/− B1-8flox/+ B cells were stimulated with none (–), NP-CGG, or NP-Ficoll and IL-1α, IL-1β, or IFNα, as indicated. (C) Enzyme-linked immunosorbent assay (ELISA) of IgG3 in the culture supernatant on day 3. AU, arbitrary units. (D) Representative flow cytometric plots on day 3 with the numbers indicating percentages of IgG3+ B cells (top). The frequencies of IgG3+ cells among the B cells (bottom). (E) quantitative reverse-transcription polymerase chain reaction (qRT-PCR) analysis of the circle Iγ3-Cµ and Aicda transcripts on day 2. Data are means ± standard deviations (SDs) of two (B and C), two to three (D), or three (A) biological replicates or three technical replicates (E). The data are representative of at least three (A and B) or two (C–E) independent experiments. *p < 0.05; ***p < 0.001; ****p < 0.0001; p values were calculated by one- (B) or two (C and D)-way analysis of variance (ANOVA) with Tukey’s test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Igk−/− B1-8flox/+ naive B cells were stimulated with nothing (–), NP-CGG, or NP-Ficoll in the presence of LPS, R-848, or CpG. (A) IgG concentration in the culture supernatants on day 3. (B) Representative flow cytometric plots on day 3 showing percentages of IgG+ B cells. (C) qRT-PCR analysis of Aicda transcripts on day 2. (D and E) Igk−/− B1-8flox/+ naive B cells were stimulated with NP-Ficoll and each indicated cytokine. (D) IgG3 in the culture supernatants on day 4 titrated by enzyme-linked immunosorbent assay (ELISA). AU, arbitrary units. (E) Representative flow cytometric profiles of IgG1, IgG2b, IgG2c, and IgG3 on day 3 (left) and the ratio of B cells expressing these IgG subclasses estimated from the flow cytometry data (right). Data are means of three biological replicates (E), means ± standard deviations (SDs) of two biological replicates (A), or three technical replicates (C). The data are representative of two independent experiments. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001; p values were calculated by two-way analysis of variance (ANOVA) with Tukey’s test (A).
+
+### PKCδ is required for IgG production and AID expression induced by TI-2 Ag stimulation
 
 By Western blot analyses for BCR signaling using NP-specific B cells, we noticed that NP-Ficoll-induced phosphorylation of PKCδ tyrosine 311 (Y311), indicative of activation of the kinase (Balasubramanian et al., 2006), more strongly than NP-CGG (Figure 2A). PKCδ belongs to a novel PKC subfamily (Salzer et al., 2016), whose function in the immune response remains elusive. Thus, we analyzed the role of PKCδ in the TI-2 response using PKCδ-deficient (Prkcd−/−) mice. B cells from Prkcd−/− mice normally proliferate and produce IgM when stimulated with NP-Ficoll alone (Figure 2—figure supplement 1A, B). Upon costimulation with NP-Ficoll and IL-1α, IL-1β, and IFNα, Prkcd−/− B cells produced comparable levels of IgM but markedly reduced levels of IgG3 compared to Prkcd+/+ cells (Figure 2B). As class switching occurs along with cell division (Deenick et al., 1999), we analyzed the frequency of IgG3+ cells at each cell division using B cells labeled with CellTrace Violet (CTV). While cell division was almost equivalent between these cells after costimulation with any of the cytokines and NP-Ficoll (Figure 2—figure supplement 1C), the frequencies of IgG3+ cells barely increased at any points of cell division in Prkcd−/− cells in contrast to Prkcd+/+ cells (Figure 2C). Therefore, PKCδ is necessary for generation of IgG3+ cells regardless of cell division. Accordingly, Igh locus CSR to IgG3 assessed by the circle Iγ3-Cµ transcript and the expression of Aicda transcripts were attenuated in Prkcd−/− B cells (Figure 2D). Collectively, these results suggest that PKCδ mediates the expression of AID and class switching to IgG3 induced by BCR stimulation with TI-2 Ag and IL-1/IFNα costimulation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of the indicated molecules in Igk−/− B1-8flox/+ B cells stimulated with NP-CGG or NP-Ficoll for the indicated time periods. (B–D) Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ B cells were stimulated with NP-Ficoll and IL-1α, IL-1β, or IFNα. The B cells were labeled with CellTrace Violet (CTV) before culture in C. (B) Enzyme-linked immunosorbent assay (ELISA) of IgM and IgG3 in the culture supernatants on day 5. AU, arbitrary units. (C) Representative flow cytometric plots of the B cells on day 3 showing percentages of IgG3+ B cells (left). The frequencies of IgG3+ cells at each cell division number (right). (D) qRT-PCR analysis of the circle Iγ3-Cµ and Aicda transcripts on day 2. Data are means ± standard deviations (SDs) of two (B) or three (C) biological replicates or three technical replicates (D). The data are representative of at least three (A and B) or two (C and D) independent experiments. *p < 0.05; **p < 0.01; ***p < 0.001; p values were calculated by unpaired multiple t-test (B and C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ naive B cells were cultured with medium alone (–) or NP-Ficoll. (A) 3H-thymidine incorporation on day 3. (B) IgM concentration in the culture supernatant on day 4. (C) The histogram of CellTrace Violet (CTV) in cells analyzed in Figure 2C. (D–G) Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ naive B cells were cultured with NP-Ficoll and LPS, R-848, or CpG (D and E) or LPS, R-848, or CpG alone (F and G). (D and F) IgM and IgG concentrations in the culture supernatants on day 3. (E and G) qRT-PCR analysis of Aicda transcripts on day 2. Data are means ± standard deviation (SD) of three (A) or two to three (B), and two (D and F) biological replicates, or three technical replicates (E and G). The data are representative of two independent experiments. *p < 0.05; ***p < 0.001; p values were calculated by unpaired multiple t-test (A, B, and D).
+
 Prkcd−/− B cells also exhibited defects in the production of IgG and Aicda transcripts, but normal IgM production, upon stimulation with NP-Ficoll and TLR ligands (Figure 2—figure supplement 1D, E), but no defects in the production of IgM, IgG, and Aicda transcripts, upon stimulation with TLR ligands alone (Figure 2—figure supplement 1F, G). Together with the above results, PKCδ appears to be selectively required for TI-2-Ag-mediated BCR signaling to potentiate CSR to produce IgG.
 
-## PKCδ mediates IgG production in a TI-2 response in vivo
+### PKCδ mediates IgG production in a TI-2 response in vivo
 
 We next evaluated the contribution of PKCδ to IgG production in a TI-2 immune response using mice carrying loxP-flanked Prkcd alleles and Cd19-cre allele that lack Prkcd specifically in B cells (referred to herein as Cd19cre/+ Prkcdff/f). We first examined the cellularity of mature B-cell subpopulations in such mice and their control (Cd19cre/+ Prkcd+/+). The numbers of follicular and marginal zone B cells in spleens were comparable between these mice, whereas those of splenic and peritoneal B1 cell populations were slightly increased in Cd19cre/+ Prkcdff/f mice (Figure 3—figure supplement 1A). Thus, PKCδ is dispensable for the development of B cells, as previously described (Mecklenbräuker et al., 2002; Miyamoto et al., 2002).
 
 To analyze the role of PKCδ in a TI-2 response, we immunized Cd19cre/+ Prkcdff/f and the control mice with NP-Ficoll. Although the production of serum anti-NP IgM was slightly enhanced in Cd19cre/+ Prkcdff/f mice, that of anti-NP IgG3 was severely suppressed (Figure 3A), and so was that of anti-NP IgG1, IgG2b, and IgG2c (Figure 3B). We then analyzed PCs in the spleen 1 week after immunization. Among the NP-specific PCs, the proportion and the number of IgG3- and IgG2b-producing PCs were severely decreased in Cd19cre/+ Prkcdff/f mice compared to the control mice, whereas the number of IgM+ PCs was comparable between the two groups (Figure 3C). Therefore, PKCδ is required for the generation of IgG+ PCs and the subsequent production of IgG in the TI-2 response.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig3-v2.jpg)
+
+**Figure 3.:** (A–C) Cd19cre/+ Prkcd+/+ and Cd19cre/+ Prkcdf/f mice were immunized with NP-Ficoll. (A) Enzyme-linked immunosorbent assay (ELISA) of serum anti-NP IgM and IgG3 at the indicated weeks. (B) ELISA of serum anti-NP IgG1, IgG2b, and IgG2c at 2 weeks after immunization. (C) Representative flow cytometric plots of the spleen cells on day 7 after immunization. The numbers indicate the percentage of cells in each gate (left). The frequencies of IgM+, IgG2b+, and IgG3+ cells among NP-binding plasma cells (PCs; NP+ CD138+; middle) and the numbers of such cells per 1 × 107 total lymphocytes (right) are plotted. (D) ELISA of anti-PPS3 IgM and IgG3 in the serum of Cd19cre/+ Prkcd+/+ and Cd19cre/+ Prkcdf/f mice at the indicated weeks after immunization with PPS3. Results are presented in AU, arbitrary units (A, B, and D). Small horizontal bars are the means of six to eight (A and B), five (C), and eight (D) biological replicates. Each symbol represents an individual mouse. The data are representative of three (A and C) or two (B and D) independent experiments. *p < 0.05; **p < 0.01; ****p < 0.0001; p values were calculated by unpaired multiple (A, C, and D) or two-tailed unpaired Welch’s t-test (B).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flow cytometric analysis of spleen cells and peritoneal cavity cells of Cd19cre/+ Prkcd+/+ and Cd19cre/+ Prkcd fl/fl mice. Gating strategy of follicular B cells (Fo B; CD19+CD43−CD21+CD23+), marginal zone B cells (MZ B; CD19+CD43−CD21highCD23low), B1a cells (CD19+CD43+CD5+), and B1b cells (CD19+CD43+CD5−) in the spleen is shown (left). The numbers of Fo B, MZ B, B1a, and B1b cells in spleen (middle) and peritoneal cavity (right) are plotted. (B) Enzyme-linked immunosorbent assay (ELISA) of anti-NP IgM, IgG1, and IgG3 in the sera of Cd19cre/+ Prkcd+/+ and Cd19cre/+ Prkcd fl/fl mice at indicated weeks after immunization with NP-CGG in alum. AU, arbitrary units. Small horizontal bars are the means of four (A) or six (B) biological replicates. Each symbol represents an individual mouse. The data are representative of three (A) or two (B) independent experiments. *p < 0.05; ****p < 0.0001; p values were calculated by unpaired multiple t-test.
+
 The capsular polysaccharides of Streptococcus pneumoniae, such as pneumococcal polysaccharide serotype 3 (PPS3), are also classified as TI-2 Ags, and immunization with PPS3 is known to induce an Ag-specific IgG3 response (McLay et al., 2002). Thus, we next immunized Cd19cre/+ Prkcdff/f and control mice with PPS3. Although early production of anti-PPS3 IgM was modestly enhanced in Cd19cre/+ Prkcdff/f mice, production of anti-PPS3 IgG3 was ablated in these mice (Figure 3D). Thus, PKCδ appears to be generally required for IgG production in response to a variety of TI-2 Ags.
 
 We next assessed whether PKCδ is also required for IgG production in a TD response. After immunization with NP-CGG, the production of anti-NP IgM was transiently enhanced in Cd19cre/+ Prkcdff/f mice at 1 week, whereas anti-NP IgG1 and IgG3 titers were normal in these mice (Figure 3—figure supplement 1B). These data indicated that PKCδ signaling is required for IgG production in a TI-2 response, but not in a TD response.
 
-## PKCδ mediates class switching through induction of AID in a TI-2 response in vivo
+### PKCδ mediates class switching through induction of AID in a TI-2 response in vivo
 
 We next assessed whether PKCδ mediates IgG production through class switching in an in vivo TI-2 response. To discriminate Ag-specific B-cell responses, we transferred CTV-labeled naive B cells from B1-8hi CD45.1 mice into C57BL/6 (B6) mice, which were immunized with NP-Ficoll on the next day and analyzed by flow cytometry 3 days later. About 30% of the splenic donor cells were IgG3+ in the mice transferred with control B cells, whereas only about 3% were IgG3+ in recipients of Cd19cre/+ Prkcdff/f B cells (Figure 4A). IgG3+ cells emerged at the second cell division and their frequency was increased as the cell division proceeded in the cells of control mice, whereas the frequency of IgG3+ cells was extremely low in the cells of Cd19cre/+ Prkcdff/f mice at any point of cell division (Figure 4A). Thus, PKCδ mediates the generation of IgG3+ cells in a manner unrelated to cell division.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) B cells purified from Prkcd+/+ Cd19cre/+ B1-8 hi or Prkcdf/f Cd19cre/+ B1-8 hi mice were labeled with CellTrace Violet (CTV) and transferred into B6 mice, which were immunized with NP-Ficoll on the next day. Spleen cells were analyzed 3 days later. (A) Representative flow cytometric plots of the spleen cells with the numbers indicating percentages of the cells within the neighboring gates (left). The frequency of IgG3+ cells among whole donor B cells (CD45.1+ CD19+ CD138–) (middle) and at each cell division number (right) are shown. (B) qRT-PCR analysis of the indicated transcripts in the donor B cells collected as in Figure 4—figure supplement 1A. (C) Prkcd+/+ Cd19cre/+ B1-8 hi or Prkcdf/f Cd19cre/+ B1-8 hi B cells transduced with an empty vector (Ev) or vectors expressing AID or PKCδ were transferred into B6 mice that had been immunized with NP-Ficoll on the previous day as in Figure 4—figure supplement 1B. Representative flow cytometry plots of the donor cells transduced with the vectors (CD45.1+GFP+, gated as in Figure 4—figure supplement 1C) (left) and the frequency of IgG3+ cells among the CD45.1+GFP+ cells (right) on day 3 after transfer. Small horizontal bars are the means of five (A) or six to nine (C) biological replicates. Each symbol represents an individual mouse (A, middle; C). The symbols are the means of five biological replicates (A, right). Data are means ± standard deviations (SDs) of three technical replicates pooled from five mice (B). The data are representative of three (A) or two (B) independent experiments or is pooled from two independent experiments (C). ns, not significant (p > 0.05); **p < 0.01; ****p < 0.0001; p values were calculated by unpaired multiple t-test (A) or one-way analysis of variance (ANOVA) with Tukey’s test (C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sorting strategy for donor B cells used in Figure 4B. The starting population was spleen cells of B6 mice transferred with Prkcd+/+ Cd19cre/+ B1-8 hi or Prkcdf/f Cd19cre/+ B1-8 hi, CD45.1+ B cells and immunized with NP-Ficoll 3 days previously. CD45.1+ cells were enriched by a MACS system (left) and then donor B cells (CD45.1+CD19+CD138−) were further sorted by flow cytometry (right). (B and C) Strategy for retrovirus (Rv) transduction and the analysis of the TI-2 response (B, left). B cells collected from Prkcd+/+ Cd19cre/+ B1-8 hi or Prkcdf/f Cd19cre/+ B1-8 hi mice immunized with NP-Ficoll 1 day previously were infected with Rv and cultured for 1 day. Some Rv-transduced cells were further cultured in medium for 6 hr and analyzed by flow cytometry. Representative data of the cells transduced with pMXs-IRES-GFP empty vector (Ev) is shown (B, right). Other Rv-transduced cells were transferred into B6 mice that had been immunized with NP-Ficoll on the previous day. Spleen cells of recipient mice were analyzed or used for cell sorting 3 or 4 days later. Gating strategy of donor cells transduced with vectors (CD45.1+ GFP+) and the expression profile of IgG3 are shown (C, left). After the enrichment of CD45.1+ cells by a MACS system, the vector-transduced donor B cells (CD45.1+ GFP+ CD19+ CD138–) were sorted as shown (C, right). The data are representative of at least three independent experiments.
 
 We next analyzed molecular events associated with CSR in sorted donor cells (Figure 4—figure supplement 1A). The amounts of the Iγ3-Cµ circle transcripts and the Iµ-Cγ3 early postswitch transcripts were far less in Cd19cre/+ Prkcdff/f B cells compared to control cells, indicating fewer CSR events in the former in vivo (Figure 4B). The expression of Iµ-Cµ and Iγ3-Cγ3 germline transcripts was comparable between the Cd19cre/+ Prkcdff/f B cells and the control cells, whereas the expression of Aicda was substantially reduced in the former (Figure 4B). These results indicate that PKCδ mediates CSR to IgG3 through upregulation of AID mRNA, but not through the activation of Ig gene S regions in B cells responding to TI-2 Ags in vivo.
 
 To examine whether the reduction of AID is a primary reason for the impaired generation of IgG3+ cells from PKCδ-deficient B cells, we transduced AID into in vivo primed Cd19cre/+ Prkcdff/f B1-8hi B cells and transferred them into B6 mice that had been immunized with NP-Ficoll 1 day previously (Figure 4—figure supplement 1B). The reconstitution of AID expression restored IgG3 class switching to a frequency comparable to the same cells reconstituted with PKCδ (Figure 4—figure supplement 1C and Figure 4C). Collectively, these results indicate that PKCδ mediates class switching to IgG3 by upregulating the expression of AID in the TI-2 response.
 
-## PKCδ upregulates the transcription of Aicda through BATF
+### PKCδ upregulates the transcription of Aicda through BATF
 
 It has been shown that expression of Aicda gene is regulated by various transcriptional factors (Vaidyanathan et al., 2014; Tran et al., 2010; Crouch et al., 2007). To assess the role of PKCδ in Aicda gene expression, we quantified expression levels of the genes encoding such transcription factors in PKCδ-sufficient and PKCδ-deficient B cells collected from mice immunized with NP-Ficoll. Among the genes tested, we found that the amount of Batf mRNA was markedly lower in Cd19cre/+ Prkcdff/f B cells than in control cells (Figure 5A). The expression of BATF mRNA and protein was induced by in vitro stimulation with NP-Ficoll alone in PKCδ-sufficient B cells, but only marginally in PKCδ-deficient B cells (Figure 5B and C), whereas BATF expression was not induced by NP-CGG (Figure 5B and Figure 5—figure supplement 1A). IL-1α, IL-1β, or IFNα did not augment the phosphorylation of PKCδ nor induce Batf expression nor enhance the NP-Ficoll-induced Batf expression (Figure 5B and Figure 5—figure supplement 1B-D). Collectively, these data indicate that PKCδ induces the expression of BATF downstream of the BCR in the TI-2 response.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig5-v2.jpg)
+
+**Figure 5.:** (A) qRT-PCR analysis of the transcripts of the indicated genes in Prkcd+/+ Cd19cre/+ B1-8 hi or Prkcdf/f Cd19cre/+ B1-8 hi donor B cells (CD45.1+CD19+CD138−) purified as in Figure 4—figure supplement 1A from the recipient mice immunized with NP-Ficoll 3 days previously. Shown is the relative expression of each gene in Prkcdf/f Cd19cre/+ cells to that in Prkcd+/+ Cd19cre/+ cells. (B) qRT-PCR analysis of Batf transcripts in Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ B cells cultured with medium alone (–) or with the indicated stimuli for 2 days. (C) Immunoblot analysis in Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ B cells stimulated with NP-Ficoll for the indicated times. (D and E) B1-8hi B cells transduced with knockdown vectors for luciferase (shControl) or BATF (shBATF) were transferred into B6 mice that had been immunized with NP-Ficoll on the previous day as in Figure 4—figure supplement 1B, and their spleen cells were analyzed on day 4 after transfer. (D) qRT-PCR analysis of Aicda and Batf transcripts in the vector-transduced donor B cells (CD45.1+ GFP+ CD19+ CD138−) collected as in Figure 4—figure supplement 1C. (E) Representative flow cytometric plots of the transduced donor cells with the numbers indicating the percentage of IgG3+ cells (left) and the frequency of the IgG3+ cells among such cells (right) gated as in Figure 4—figure supplement 1C. (F and G) Prkcdf/f Cd19cre/+ B1-8 hi B cells transduced with Ev or vectors expressing BATF or PKCδ were transferred into B6 mice that had been immunized with NP-Ficoll on the previous day, and their spleen cells were analyzed 3 days after transfer. (F) qRT-PCR analysis of Aicda transcripts in the vector-transduced donor B cells. (G) Representative flow cytometric plots of the transduced donor cells with the numbers indicating the percentage of IgG3+ cells (left) and the frequency of the IgG3+ cells among such cells (right). Data are means ± standard deviations (SDs) of three technical replicates (A, B, D, and F). Samples were pooled from five to eight mice (D and F). Small horizontal bars are the means of four (E) or eight to nine (G) biological replicates. Each symbol represents an individual mouse (E and G). The data are representative of two independent experiments (A–F) or are pooled from two independent experiments (G). ***p < 0.001; ****p < 0.0001; p values were calculated by two-tailed unpaired Student’s t-test (E) or one-way analysis of variance (ANOVA) with Tukey’s test (G).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Immunoblot analysis of Igk−/− B1-8flox/+ B cells stimulated with the indicated reagents for the indicated times (A and C) or 5 min (B). (D) qRT-PCR analysis of Batf transcripts in Prkcd+/+ Igk−/− B1-8flox/+ or Prkcd−/− Igk−/− B1-8flox/+ B cells cultured with the indicated reagents for 2 days. The data are representative of two independent experiments.
+
 It was reported that BATF binds to a regulatory region of the Aicda gene to directly promote its expression and that IgG3 production against TNP-Ficoll was impaired in Batf−/− mice (Ise et al., 2011). Therefore, we next asked whether the defect of BATF expression is responsible for the suppression of AID expression and IgG3+ cell generation in PKCδ-deficient mice. First, we knocked down BATF in B1-8hi B cells and transferred them into mice immunized with NP-Ficoll. Both the expression of Aicda and the frequency of IgG3+ cells were significantly decreased in BATF knockdown cells compared with the mock-transduced control cells (Figure 5D and E). Conversely, forced expression of BATF in B1-8hi Cd19cre/+ Prkcdff/f B cells partially but significantly restored Aicda expression and the generation of IgG3+ cells in the recipient mice immunized with NP-Ficoll (Figure 5F and G). Taken together, these data indicate that PKCδ mediates expression of AID and class switching to IgG3 through upregulation of BATF expression in B cells undergoing a TI-2 response.
 
-## PKCδ is required for homeostatic antibacterial IgG3 production and protection against bacteremia
+### PKCδ is required for homeostatic antibacterial IgG3 production and protection against bacteremia
 
 Recent works have revealed that commensal microbes induce an IgG response and confer protection against systemic bacterial infection (Zeng et al., 2016). Among antibacterial IgG, IgG3 is most abundant and produced in a TI manner (Ansaldo et al., 2019; Koch et al., 2016). Therefore, we assessed the contribution of PKCδ in IgG-mediated antibacterial responses. To standardize the microbiota, we cohoused control and Cd19cre/+ Prkcdff/f mice over 4 weeks and serum antibodies against fecal bacteria were titrated. Production of serum antibacterial IgM, IgG1, and IgG2b was not changed significantly, but that of IgG3 was severely impaired in Cd19cre/+ Prkcdff/f mice (Figure 6A). Antibacterial IgG2c was undetectable in both mouse groups (data not shown). Given that PKCδ was required for production of all IgG subclasses in the anti-NP TI-2 response (Figure 3), the PKCδ-independent production of antibacterial IgG1 and IgG2b may be attributable to TD responses, as reported for IgG1 (Ansaldo et al., 2019), while antibacterial IgG3 is mainly produced by the TI-2 response.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72116/elife-72116-fig6-v2.jpg)
 
-**Figure 6.:** Cd19 and cre/+ Prkcd+/+Cd19 mice were cohoused for at least 4 weeks and treated with 3 % dextran sodium sulfate (DSS) for 7 days. (cre/+ Prkcdf/fA) Serum IgM, IgG1, IgG2b, and IgG3 against fecal bacteria after cohousing were quantified by enzyme-linked immunosorbent assay (ELISA). AU, arbitrary units. (B) Colony-forming unit (CFU) of aerobes and anaerobes in the blood 7 days after DSS treatment. (C) Kaplan–Meier survival plot of 16 (Cd19) and 12 (cre/+ Prkcd+/+Cd19) mice at indicated days. Small horizontal bars are the means of 7 (cre/+ Prkcdff/fA), or 15 (Cd19) or 11 (cre/+ Prkcd+/+Cd19) in (cre/+ Prkcdff/fB), biological replicates. Data were obtained from 16 (Cd19) or 12 (cre/+ Prkcd+/+Cd19) mice in (cre/+ Prkcdff/fC). Each symbol represents an individual mouse (A and B). The data are representative of two independent experiments (A) or pooled from two independent experiments (B and C). **p < 0.01; ***p < 0.001; p values were calculated by two-tailed unpaired Welch’s t-test (A), unpaired multiple t-test (B), or log-rank test (C).Figure 6—source data 1.Figure 6A and B.
+**Figure 6.:** Cd19cre/+ Prkcd+/+ and Cd19cre/+ Prkcdf/f mice were cohoused for at least 4 weeks and treated with 3 % dextran sodium sulfate (DSS) for 7 days. (A) Serum IgM, IgG1, IgG2b, and IgG3 against fecal bacteria after cohousing were quantified by enzyme-linked immunosorbent assay (ELISA). AU, arbitrary units. (B) Colony-forming unit (CFU) of aerobes and anaerobes in the blood 7 days after DSS treatment. (C) Kaplan–Meier survival plot of 16 (Cd19cre/+ Prkcd+/+) and 12 (Cd19cre/+ Prkcdff/f) mice at indicated days. Small horizontal bars are the means of 7 (A), or 15 (Cd19cre/+ Prkcd+/+) or 11 (Cd19cre/+ Prkcdff/f) in (B), biological replicates. Data were obtained from 16 (Cd19cre/+ Prkcd+/+) or 12 (Cd19cre/+ Prkcdff/f) mice in (C). Each symbol represents an individual mouse (A and B). The data are representative of two independent experiments (A) or pooled from two independent experiments (B and C). **p < 0.01; ***p < 0.001; p values were calculated by two-tailed unpaired Welch’s t-test (A), unpaired multiple t-test (B), or log-rank test (C).
 
 We further asked whether regulation of commensal bacteria is defective in the PKCδ-deficient mice. Dextran sodium sulfate (DSS) treatment is known to disrupt the gut epithelium and to allow intestinal bacteria to translocate throughout the body. Subsequently, it leads to fatal bacteremia in the absence of microbiota-specific IgG (Zeng et al., 2016). After the treatment with DSS, Cd19cre/+ Prkcdff/f mice exhibited increased numbers of aerobic and anaerobic bacteria in the blood compared to control mice (Figure 6B). Accordingly, the mortality of Cd19cre/+ Prkcdff/f mice was significantly higher than that of control mice (Figure 6C). Collectively, these results suggest that IgG3 production by a TI-2 response via PKCδ prevents lethal bacteremia.
 
@@ -99,50 +139,577 @@ Several reports uncovered the potential contribution of the dysregulated microbi
 
 ## Materials and methods
 
-## Mice and immunizations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6NCrSlc (B6)</td>
+      <td>Japan SLC Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6 CD45.1</td>
+      <td>RIKEN BRC</td>
+      <td>RBRC00144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B1-8flox/+</td>
+      <td>doi:10.1016/S0092-8674(00)80373–6.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B1-8hi</td>
+      <td>doi:10.1038/ni776.</td>
+      <td>JAX stock #007775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd19cre/+</td>
+      <td>doi:10.1038/376352a0.</td>
+      <td>JAX stock #006785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Prkcd−/−</td>
+      <td>RIKEN BRC</td>
+      <td>RBRC00457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Prkcdf/f</td>
+      <td>RIKEN BRC</td>
+      <td>RBRC06462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Igk−/−</td>
+      <td>doi:10.1002/j.1460–2075.1993.tb05722.x.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cy7 anti-mouse CD19 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115,530</td>
+      <td>Flow cytometry (1/200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin Rat Anti-Mouse CD43 (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 20,737</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-mouse CD138 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 142,508</td>
+      <td>Flow cytometry (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Rat Anti-Mouse IgG3 (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 565,808</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45.1 Monoclonal Antibody (A20), APC (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 17-0453-82</td>
+      <td>Flow cytometry (1/200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD21/CD35 (CR2/CR1) Antibody (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 123,407</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD5 Antibody (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100,605</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG2c, Human ads-FITC (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1079-02</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat F(ab')2 Anti-Mouse IgG2b, Human ads-FITC (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1092-02</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat F(ab')2 Anti-Mouse IgG3, Human ads-FITC (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1102-02</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD23 Antibody (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101,607</td>
+      <td>Flow cytometry (1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse IgG2b (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 406,707</td>
+      <td>Flow cytometry (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-mouse CD19 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 115,520</td>
+      <td>Flow cytometry (1/200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG Fc-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1033-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG, Human ads-UNLB (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1030-01</td>
+      <td>ELISA (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG1, Human ads-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1070-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG1, Human ads-UNLB (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1070-01</td>
+      <td>ELISA (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG2b, Human ads-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1090-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG2b, Human ads-UNLB (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1090-01</td>
+      <td>ELISA (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG2c, Human ads-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1079-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG3, Human ads-UNLB (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1100-01</td>
+      <td>ELISA (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG3, Human/Bovine/Horse SP ads-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1103-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgM, Human ads-HRP (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1020-05</td>
+      <td>ELISA (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgM, Human ads-UNLB (Goat Polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1020-01</td>
+      <td>ELISA (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH mAb (Mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>Cat# M171-3</td>
+      <td>WB (1/3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SP1 antibody (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab227383</td>
+      <td>WB (1/5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BATF (D7C5) Rabbit mAb (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8638</td>
+      <td>WB (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-PKCdelta (Tyr311) Antibody (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2055</td>
+      <td>WB (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKC δ Antibody (C-17) (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-213</td>
+      <td>WB (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-IRES-GFP</td>
+      <td>other</td>
+      <td></td>
+      <td>Dr. Kitamura (University of Tokyo)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-BATF-IRES-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BATF (M. musculus)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-AID-IRES-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AID (M. musculus)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-PKCδ-IRES-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PKCδ (M. musculus)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSIREN-GFP shLuciferase (shControl)</td>
+      <td>doi:10.1016/j.celrep.2020.108333.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSIREN-GFP shBATF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Taget sequence (5′–3′): ACCCTGGACTGTCATGAATGA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVSV-G</td>
+      <td>Clontech</td>
+      <td>Cat# 631,530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo(dT)20 Primer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18418020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP46-Ficoll</td>
+      <td>Biosearch Technologies</td>
+      <td>Cat# F-1420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP40-CGG</td>
+      <td>doi:10.1038/ni.3508.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP14-BSA-Alexa Fluor 647</td>
+      <td>doi:10.1038/ni.3508.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cytokines</td>
+      <td colspan="2">See Supplementary file 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fixation/Permeabilization Solution Kit</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 554,714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 28,106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74,004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thunderbird SYBR qPCR Mix</td>
+      <td>TOYOBO</td>
+      <td>Cat# QPS-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperPrep II Cell lysis &amp; RT Kit for qPCR</td>
+      <td>TOYOBO</td>
+      <td>Cat# SCQ-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTraceTM Violet (CTV) Cell proliferation Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C34557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PPS3</td>
+      <td>ATCC</td>
+      <td>Cat# 169X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>Sigma</td>
+      <td>Cat# L2880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R-848</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-r848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CpG ODN 1826</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-1826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fixable Viability Dye eFluor 506</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65-0866-18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOTAP Liposomal Transfection Reagent</td>
+      <td>Sigma</td>
+      <td>Cat# 11202375001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRI Reagent</td>
+      <td>Sigma</td>
+      <td>Cat# T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI Max (Mw 40,000)</td>
+      <td>Polysciences</td>
+      <td>Cat# 24765-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ReverTra Ace</td>
+      <td>TOYOBO</td>
+      <td>Cat# TRT-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KOD Fx Neo DNA polymerase</td>
+      <td>TOYOBO</td>
+      <td>Cat# KFX-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3 H] thymidine</td>
+      <td>PerkinElmer</td>
+      <td>Cat# NET027001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anti-APC MicroBeads</td>
+      <td>MicroBeads</td>
+      <td>Cat# 130-090-855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GoTaq Green Master Mix</td>
+      <td>Promega</td>
+      <td>Cat# M712B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS</td>
+      <td>MP Biomedicals</td>
+      <td>Cat# 9011-18-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brain Heart Infusion Agar</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 221,570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and immunizations
 
 C57BL/6NCrSlc (B6) mice were purchased from Japan SLC. All the following mice were backcrossed to the B6 or B6-CD45.1 strain: B1-8flox/+ mice (Lam et al., 1997), B1-8hi mice (Shih et al., 2002), Igk–/– mice (Chen et al., 1993), Cd19cre/+ mice (Rickert et al., 1995), and Prkcd–/– mice (Miyamoto et al., 2002). Prkcd fl/fl mice on the B6 background were developed by Drs. Niino, Shioda, and Sakimura (Niino et al., 2021) and purchased from the RIKEN BioResource Center (RBRC06462). Mice were immunized i.p. with 100 µg of NP46-Ficoll (F-1420; Biosearch Technologies), 1 µg of PPS3 (169 X; American Type Culture Collection) or 100 µg of NP40-CGG in alum (Haniuda et al., 2016) unless otherwise noted. For flow cytometry of spleen cells, mice were immunized i.v. with 100 µg of NP46-Ficoll. Sex-matched 7–14-week-old mice were used for all experiments. All mice were maintained in the Tokyo University of Science (TUS) mouse facility under specific pathogen-free conditions. Mouse procedures were performed under protocols approved by the TUS Animal Care and Use Committee (Approval No. S19017 and S20011).
 
-## B-cell culture
+### B-cell culture
 
 Spleen cells were stained with a cocktail of biotinylated Abs for CD4, CD8, CD43, CD49b, Ter119, and Streptavidin Particles Plus DM, from which naive B cells were purified by magnetic negative sorting using the IMag system (BD Biosciences) and MACS system (Miltenyi Biotec), as described previously (Nojima et al., 2011). B cells were cultured in RPMI-1640 medium (Wako) supplemented with 10% heat-inactivated fetal bovine serum, 10 mM HEPES pH 7.5, 1 mM sodium pyruvate, 50 mM 2-mercaptoethanol, 100 U/ml penicillin, and 100 mg/ml streptomycin (GIBCO). Typically, B cells were cultured at 2 × 105 /ml in the presence of the following stimuli at the indicated doses, unless otherwise noted: NP46-Ficoll (10 ng/ml), NP40-CGG (10 ng/ml), LPS (1 µg/ml, L2880; Sigma), R-848 (1 µg/ml, tlrl-r848; InvivoGen), CpG ODN 1826 (1 µg/ml, tlrl-1826; InvivoGen), IL-1α (1 ng/ml, 211–11 A; Pepro Tech), IL-1β (1 ng/ml, 211-11B; Pepro Tech), or IFNα (100 ng/ml, 752802; Biolegend). Concentrations of cytokines used in Figure 1—figure supplement 1D are shown in Supplementary file 1.
 
-## Retroviral transduction
+### Retroviral transduction
 
 To produce retrovirus, pSIREN- or pMXs-based plasmids were cotransfected together with pVSVG into Plat-E cells (kindly provided by T. Kitamura, University of Tokyo) using PEI Max (Mw 40,000, 24765-1; Polysciences). The virus-containing supernatant was harvested 2 days after transfection. For retroviral transduction, B cells were preactivated in vivo: B1-8hi mice were injected i.p. with 50 µg of NP-Ficoll, and then B cells were purified from the spleens of these mice on the next day. These B cells were mixed with the virus-containing supernatant and spin infected at 2000 rpm, 37°C for 90 min with 10 mg/ml DOTAP Liposomal Transfection Reagent (11202375001; Sigma). One day later, the cells were harvested and 5 × 105 cells were transferred into B6 mice that had been immunized i.v. with NP-Ficoll on the previous day. This strategy is summarized in Figure 4—figure supplement 1B.
 
-## Proliferation assay
+### Proliferation assay
 
 The proliferation assay was performed as described previously (Fukao et al., 2014). Naive B cells were cultured at 5 × 104 cells/well in 96-well plates for 72 hr, with the last 8 hr in the presence of [3H] thymidine (1 mCi/well, NET027001MC; PerkinElmer). Incorporated [3H] thymidine was counted by a BetaPlate scintillation counter (Wallac, Gaithersburg, MD).
 
-## Flow cytometry
+### Flow cytometry
 
 Single-cell suspensions from spleen or peritoneal cavity were prepared, red blood cells were lysed with ammonium chloride buffer and then cells were incubated with anti-CD16/32 Ab (2.4G2) to block FcγRs. Cultured B cells were collected in MACS buffer (phosphate-buffered saline [PBS] supplemented with 0.5 % BSA, 2 mM ethylenediaminetetraacetic acid [EDTA]) at the indicated days of culture. Cells were stained with Abs and reagents on ice (for splenocytes) or at room temperature (for cultured B cells). For the staining of IgM, IgG, and NP-binding Ig, Fixation/Permeabilization Solution Kit (554714; BD Biosciences) was used according to the manufacturer’s protocol to detect total (surface and intracellular) proteins, after surface staining of other molecules. NP-binding Ig was stained with NP14-BSA-Alexa Fluor 647 (Haniuda et al., 2016). Dead cells were stained with Fixable Viability dye eFluor 506 (65-0866-18; Thermo Fisher Scientific) before cell fixation and excluded from analysis. All samples were analyzed using FACSCanto II, FACSAria II or III (BD Biosciences) with FlowJo software (Tree Star, Inc).
 
-## Cell division analysis
+### Cell division analysis
 
 Naïve B cells were resuspended in PBS at 5 × 106 cells/ml and labeled with 5 µM of CTV Cell proliferation Kit (C34557; Thermo Fisher Scientific) at 37 °C for 20 min according to the manufacturer’s protocol. Collected cells were analyzed by flow cytometry as described above. Cell divisions were determined using the proliferation platform of FlowJo.
 
-## Adaptive transfer and donor B-cell purification
+### Adaptive transfer and donor B-cell purification
 
 1 × 106 CD45.1 B1-8hi naive B cells were transferred into B6 mice, which were then immunized i.v. with NP-Ficoll on the next day. Donor B cells were magnetically enriched from pooled spleens of recipient mice using APC-conjugated anti-CD45.1 and anti-APC MicroBeads (130-090-855; Miltenyi Biotec), with the MACS system (Miltenyi Biotec). After enrichment, cells were further stained with respective Abs and sorted using FACSAria II or III (BD Biosciences) as shown in Figure 4—figure supplement 1A. Rv-transduced donor B cells were enriched as described above and sorted as shown in Figure 4—figure supplement 1C.
 
-## RT-PCR and qPCR
+### RT-PCR and qPCR
 
 TRI Reagent (T9424; Sigma) or RNeasy Micro (74004; QIAGEN) was used to isolate total RNA from B cells. cDNA was generated from total RNA using ReverTra Ace (TRT-101; TOYOBO) with an oligo(dT)20 primer (18418020; Thermo Fisher Scientific) according to the manufacturer’s protocols. For the analysis of a small number of cells, cDNA was generated from cell lysates with SuperPrep II Cell lysis & RT Kit for qPCR (SCQ-401; TOYOBO) according to the manufacturer’s protocols. Quantitative real-time PCR (qPCR) was performed using Thunderbird SYBR qPCR Mix (QPS-201; TOYOBO) with the 7500 fast Real-time PCR system or Quant-Studio 3 (Applied Biosystems). For quantification of gene expression levels, each sample was normalized to the expression of a control housekeeping gene, Gapdh or Rps18. The relative fold change in expression of each gene compared to a control sample, set as 1.0, was calculated with the 2-ddCT method. Primers used in this study are listed in Supplementary file 1. The germline and postswitched transcripts were analyzed with the following primer sets: germline Iµ-Cµ transcripts: Iµ Fw1 and Cµ Rv; Iγ3-Cγ3 transcripts: inner Iγ3 Fw and Cγ3 Rv; postswitched Iµ-Cγ3 transcripts: Iµ Fw2 and Cγ3 Rv. For the measurement of the circle Iγ3-Cµ transcript, cDNA was generated with external Cµ Rv primer from total RNA as described above, and preamplified with external Iγ3 Fw primer and Cµ Rv primer using GoTaq Green Master Mix (M712B; Promega). Preapplication products were purified with QIAquick PCR Purification Kit (28104; QIAGEN) and circle Iγ3-Cµ transcript was quantified with inner Iγ3 Fw primer and Cµ Rv primer by qPCR as described above. Specific amplification of the circle Iγ3-Cµ transcript was confirmed by analyzing the sequence of the qPCR products in advance. The expression of the Iγ3-Cµ transcript was normalized to the expression of Rps18 in cDNA generated with oligo(dT)20 primer from the same RNA sample.
 
-## Enzyme-linked immunosorbent assay
+### Enzyme-linked immunosorbent assay
 
 Concentrations of total IgM, IgG, or IgG subclasses and of Ag-specific Igs (where indicated) were assessed by titration of culture supernatants or sera by enzyme-linked immunosorbent assay (ELISA). Total and NP-specific antibodies were measured as described previously (Fukao et al., 2014; Nojima et al., 2011), with NP13.6-BSA used for coating plates for the latter. PPS3-specific IgM and IgG3 were detected using 96-well plates coated with PPS3. Bacteria-specific antibody was detected as described previously (Zeng et al., 2016). Heat-killed fecal bacteria isolated from Prkcd+/+ Cd19cre/+mice and Prkcdf/f Cd19cre/+mice cohoused at least for 4 weeks were mixed and used for plate coating.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed with 1% NP-40 lysis buffer or RIPA buffer (40 mM Tris–HCl pH 7.5, 150 mM NaCl, 1% NP-40, 1 % sodium deoxycholate, 0.1 % SDS, and 1 mM EDTA) supplemented with protease and phosphatase inhibitors. Lysates were sonicated and mixed with sample buffer and dithiothreitol and boiled. Lysates were resolved on sodium dodecyl sulfate-polyacrylamide gel electrophoresis and transferred to polyvinylidene fluoride (PVDF) membranes (Millipore), followed by immunoblotting as previously described (Haniuda et al., 2020).
 
-## DSS-induced bacteremia
+### DSS-induced bacteremia
 
 Prkcd+/+ Cd19cre/+mice and Prkcdf/f Cd19cre/+ female mice were cohoused at 1:1 ratio from 4 weeks of age. After at least 4 weeks, cohoused mice were administered 3 % DSS (9011-18-1; MP Biomedicals) in drinking water for 7 days and then switched to regular water. On the day of the last DSS administration, blood samples were collected from mice and cultured on Brain Heart Infusion Agar (221570; BD Bioscience) under aerobic or anaerobic conditions for 24 hr to measure CFU.
 
-## Statistical analysis
+### Statistical analysis
 
 Biological replication is derived from multiple biological samples (mouse or cell). Technical replication consisted of multiple samples derived from one biological sample. All statistical analyses were performed using GraphPad Prism eight software. Comparisons between two groups were performed by a two-tailed unpaired Student’s t-test, Welch’s t-test (in case F-test is significant: p < 0.05), or multiple t-test (for grouped data). Comparisons between multiple groups were performed by one or two-way analysis of variance with Tukey’s multiple comparison. Survival of DSS-treated mice was analyzed by Kaplan–Meier survival plot using log-rank test. In all cases, *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001; ns, not significant (p > 0.05).

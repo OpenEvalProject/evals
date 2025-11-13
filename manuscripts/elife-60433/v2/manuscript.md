@@ -26,7 +26,7 @@ Here we first asked whether cortical activity could reflect the rhythm of disyll
 
 ## Results
 
-## Neural encoding of words in isochronously presented narratives
+### Neural encoding of words in isochronously presented narratives
 
 We first presented semantically coherent stories that were synthesized as an isochronous sequence of syllables (Figure 1A, left). To produce a metrical structure in stories, every other syllable was designed to be a word onset. More specifically, the odd terms in the metrical syllable sequence always corresponded to the initial syllable of a word, that is, word onset, while the even terms corresponded to either the second syllable of a disyllabic word (73% probability) or a monosyllabic word (23% probability). In the following, the odd terms of the syllable sequence were referred to as σ1, and the even terms as σ2. Since syllables were presented at a constant rate of 4 Hz, the neural response to syllables was frequency tagged at 4 Hz. Furthermore, since every other syllable in the sequence was the onset of a word, neural activity synchronous to word onsets was expected to show a regular rhythm at half of the syllabic rate, that is, 2 Hz (Figure 1A, right).
 
@@ -38,17 +38,33 @@ As a control condition, we also presented stories with a nonmetrical structure (
 
 When listening to the stories, one group of participants was asked to attend to the stories and answer comprehension questions presented at the end of each story. The task was referred to as story comprehension task, and the participants correctly answered 96 ± 9% and 94 ± 9% questions for metrical and nonmetrical stories, respectively. Another group of participants, however, were asked to watch a silent movie while passively listening to the same set of stories as those used in the story comprehension task. The silent movie was not related to the auditorily presented stories, and the participants did not have to answer any speech comprehension question. The task was referred to as movie watching task. The electroencephalogram (EEG) responses to isochronously presented stories are shown in Figure 2A and C. The response spectrum was averaged over participants and EEG electrodes.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig2-v2.jpg)
+
+**Figure 2.:** Response spectrum is averaged over participants and EEG electrodes. The shaded area indicates one standard error of the mean (SEM) across participants. Stars indicate significantly higher power at 2 or 4 Hz than the power averaged over four neighboring frequency bins (two on each side). *p<0.05, **p<0.001 (bootstrap, false discovery rate [FDR] corrected). The color of the star is the same as the color of the spectrum. The topography on the top of each plot shows the distribution of response power at 2 Hz and 4 Hz. The five black dots in the topography indicate the position of electrodes FCz, Fz, Cz, FC3, and FC4. (A–D) Response spectrum for isochronous speech and amplitude-modulated speech during two tasks. To facilitate the comparison between stimuli, the red curves in panels A and C are repeated in panels B and D, respectively. (E) Response spectrum when the participants listen to natural speech. In this analysis, the response to natural speech is time warped to simulate the response to isochronous speech, and then transformed into the frequency-domain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The x-axis is the EEG electrodes and the electrode index, from 1 to 64, which goes from left to right. The approximate scalp position of each electrode is shown at the bottom right corner. Individual results are shown as cyan dots. For each EEG electrode, the 2-Hz power averaged over participants is shown by a red or black dot, and the 95% confidence interval across participants is shown by a vertical bar. The dot and bar are red if the 2-Hz power is significantly stronger than the power averaged over four neighboring frequency bins (p<0.05, bootstrap, false discovery rate [FDR] corrected) and black otherwise.
+
 Figure 2A shows the responses from the participants attentively listening to the stories in story comprehension task. For metrical stories, two peaks were observed in the EEG spectrum, one at 4 Hz, that is, the syllable rate (p=0.0001, bootstrap, false discovery rate [FDR] corrected) and the other at 2 Hz, that is, the rate of disyllabic words (p=0.0001, bootstrap, FDR corrected). For nonmetrical stories, however, a single response peak was observed at 4 Hz (p=0.0001, bootstrap, FDR corrected), while no significant response peak was observed at 2 Hz (p=0.27, bootstrap, FDR corrected). A comparison of the responses to metrical and nonmetrical stories was performed, and a significant difference was observed at 2 Hz (p=0.0005, bootstrap, FDR corrected, Figure 3A) but not at 4 Hz (p=0.40, bootstrap, FDR corrected, Figure 3B). The response topography showed a centro-frontal distribution.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig3-v2.jpg)
+
+**Figure 3.:** (A and B) Response power at 2 and 4 Hz. Color of the bars indicates the stimulus. Black stars indicate significant differences between different types of speech stimuli while red stars indicate significant differences between tasks. *p<0.05, **p<0.01 (bootstrap, false discovery rate [FDR] corrected). Throughout the manuscript, in all bar graphs of response power, the response power at a target frequency is subtracted by the power averaged over four neighboring frequency bins (two on each side) to reduce the influence of background neural activity. (C) The difference in 2-Hz response phase between the σ1- and σ2-amplified conditions at 2 Hz. The phase difference is averaged across participants, and the polar histogram shows the distribution of phase difference across 64 electrodes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The x-axis is the EEG electrode index, from 1 to 64, which goes from left to right. The approximate scalp position of each electrode is shown at the central right corner. Individual results are shown as cyan dots. For each EEG electrode, the 2-Hz phase averaged over participants is shown by a red or black dot, and the 95% confidence interval across participants is shown by a vertical bar. The dot and bar are red if the inter-participant phase coherence is significantly higher than chance (p<0.05, see Materials and methods, false discovery rate [FDR] corrected) and black otherwise. To facilitate the comparison between the σ1- and σ2-amplified conditions, the mean phase in the σ1-amplified condition is repeated in the plot for the σ2-amplified condition as blue dots. (A–D) 2-Hz response phase for Experiments 1–4. The inter-participant phase coherence shows different patterns between the σ1- and σ2-amplified conditions during the story comprehension task. (E) Topographical distribution of the 2-Hz phase difference between the σ1- and σ2-amplified conditions. The phase difference is calculated for each participant and each electrode, and then averaged over participants. The black dots indicate the electrodes showing a significant phase difference between the σ1- and σ2-amplified conditions (p<0.05, bootstrap, false discovery rate [FDR] corrected).
 
 When participants watched a silent movie during story listening, however, a single response peak was observed at 4 Hz for both metrical (p=0.0002, bootstrap, FDR corrected) and nonmetrical stories (p=0.0002, bootstrap, FDR corrected) (Figure 2C). The response peak at 2 Hz was not significant for either kind of stories (p>0.074, bootstrap, FDR corrected). A comparison of the responses to metrical and nonmetrical stories did not find significant difference at either 2 Hz (p=0.22, bootstrap, FDR corrected, Figure 3A) or 4 Hz (p=0.39, bootstrap, FDR corrected, Figure 3B). Furthermore, the 2-Hz response was significantly stronger in the story comprehension task than in the movie watching task (p=0.0004, bootstrap, FDR corrected, Figure 3A). These results showed that cortical activity was synchronous to the word rhythm during attentive speech comprehension. When attention was diverted, however, the word-rate response was no longer detected.
 
-## Neural encoding of words in natural spoken narratives
+### Neural encoding of words in natural spoken narratives
 
 Next, we asked whether cortical activity was synchronous to disyllabic words in natural speech processing. The same set of stories used in the isochronous speech condition was read in a natural manner by a human speaker and presented to participants. The participants correctly answered 95 ± 4% and 97 ± 6% comprehension questions for metrical and nonmetrical stories, respectively. In natural speech, syllables were not produced at a constant rate (Figure 1C), and therefore the syllable and word responses were not frequency tagged. Nevertheless, we time warped the response to natural speech and made the syllable and word responses periodic. Specifically, the neural response to each syllable in natural speech was extracted and realigned to a constant 4-Hz rhythm using a convolution-based procedure (Jin et al., 2018; see Materials and methods for details). After time-warping analysis, cortical activity synchronous to the word onsets was expected to show a 2-Hz rhythm, the same as the response to the isochronous speech (Figure 2E).
 
 The spectrum of the time-warped response was averaged over participants and EEG electrodes (Figure 2E). For metrical stories, two peaks were observed in spectrum of the time-warped response, one at 4 Hz (p=0.0002, bootstrap, FDR corrected) and the other at 2 Hz (p=0.0007, bootstrap, FDR corrected). For nonmetrical stories, however, a single response peak was observed at 4 Hz (p=0.0002, bootstrap, FDR corrected), while no significant response peak was observed at 2 Hz (p=0.37, bootstrap, FDR corrected). A comparison of the responses to metrical and nonmetrical stories was performed and found a significant difference at 2 Hz (p=0.036, bootstrap, FDR corrected, Figure 3A) but not at 4 Hz (p=0.09, bootstrap, FDR corrected, Figure 3B). These results demonstrated that cortical activity was synchronous to the word rhythm in natural spoken narratives during attentive speech comprehension.
 
-## Neural responses to amplitude-modulated speech
+### Neural responses to amplitude-modulated speech
 
 To investigate potential interactions between neural encoding of linguistic units and relevant acoustic features, we amplitude modulated the isochronous speech at the word rate, that is, 2 Hz. The amplitude modulation (AM) was achieved by amplifying either σ1 or σ2 by a factor of 4 (Figure 1D), creating two conditions: σ1-amplified condition and σ2-amplified condition. Such 2-Hz AM provided an acoustic cue for the word rhythm. The speech was referred to as amplitude-modulated speech in the following. When listening to amplitude-modulated speech, the participants correctly answered 94 ± 12% and 97 ± 8% comprehension questions in the σ1- and σ2-amplified conditions, respectively.
 
@@ -60,7 +76,7 @@ The Fourier transform decomposes an arbitrary signal into sinusoids and each com
 
 The 2-Hz response phase difference between the σ1- and σ2-amplified conditions is shown in Figure 3C. The phase difference, when averaged across participants and EEG electrodes, was 41° (95% confidence interval: −25–91°) during the story comprehension task and increased to 132° (95% confidence interval: 102–164°) during the movie watching task (see Figure 3—figure supplement 1 for response phase in individual conditions).
 
-## Separate the responses to words and word-rate AM
+### Separate the responses to words and word-rate AM
 
 In the previous section, we analyzed the difference in 2-Hz response phase difference between the σ1- and σ2-amplified conditions. A 0° phase difference indicated that the 2-Hz response was only synchronous to word onsets, while a 180° phase difference indicated that the 2-Hz response was only synchronous to amplified syllables. A phase difference between 0° and 180° indicated that neural response synchronous to word onsets and neural response synchronous to amplified syllables both exist, but the phase analysis could not reveal the strength of the two response components. Therefore, in the following, we extracted the neural responses to words and the 2-Hz AM by averaging the responses across the σ1- and σ2-amplified conditions in different manners.
 
@@ -68,7 +84,7 @@ To extract the neural response to words, we averaged the neural response wavefor
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig4-v2.jpg)
 
-**Figure 4.:** (A–D) Neural responses in σ1- and σ2-amplified conditions are aligned based on either word onsets (AB) or amplified syllables (CD), and averaged to extract the 2-Hz response synchronous to words or AM, respectively. Panels A and C illustrate the procedure. The red and blue curves illustrate the response components synchronous to word onsets and the AM respectively, which are mixed in the electroencephalogram (EEG) measurement and shown separately for illustrative purposes. The spectrum and topography in panels B and D are shown the same way as they are shown in Figure 2. *p<0.05, **p<0.001 (bootstrap, false discovery rate [FDR] corrected). (E) Response power at 2 Hz. Black stars indicate significant differences between the word and AM responses, while red stars indicate a significant difference between tasks. *p<0.05, **p<0.01 (bootstrap, FDR corrected). (F) The left panel shows the power difference between the word and AM responses in single electrodes. The right panel shows the difference in normalized topography, that is, topography divided by its maximal value. Black dots indicate electrodes showing a significant difference between the word and AM responses (p<0.05, bootstrap, FDR corrected).Figure 4—source data 1.
+**Figure 4.:** (A–D) Neural responses in σ1- and σ2-amplified conditions are aligned based on either word onsets (AB) or amplified syllables (CD), and averaged to extract the 2-Hz response synchronous to words or AM, respectively. Panels A and C illustrate the procedure. The red and blue curves illustrate the response components synchronous to word onsets and the AM respectively, which are mixed in the electroencephalogram (EEG) measurement and shown separately for illustrative purposes. The spectrum and topography in panels B and D are shown the same way as they are shown in Figure 2. *p<0.05, **p<0.001 (bootstrap, false discovery rate [FDR] corrected). (E) Response power at 2 Hz. Black stars indicate significant differences between the word and AM responses, while red stars indicate a significant difference between tasks. *p<0.05, **p<0.01 (bootstrap, FDR corrected). (F) The left panel shows the power difference between the word and AM responses in single electrodes. The right panel shows the difference in normalized topography, that is, topography divided by its maximal value. Black dots indicate electrodes showing a significant difference between the word and AM responses (p<0.05, bootstrap, FDR corrected).
 
 For the word response, a significant response peak was observed at 2 Hz during both story comprehension task (p=0.0001, bootstrap, FDR corrected) and movie watching task (p=0.011, bootstrap, FDR corrected, Figure 4B). The response power was significantly stronger in the story comprehension task than that in the movie watching task (p=0.0008, bootstrap, FDR corrected, Figure 4E). During the movie watching task, a significant 2-Hz word response was observed when amplitude-modulated speech was presented (p=0.011, bootstrap, FDR corrected, Figure 4B), while no significant 2-Hz word response was observed when isochronous speech was presented (p=0.074, bootstrap, FDR corrected, Figure 2C). This finding indicated that the 2-Hz AM facilitated word processing during passive listening.
 
@@ -82,7 +98,7 @@ During the story comprehension task, the 2-Hz response power averaged across ele
 
 An analysis of individual electrodes showed the 2-Hz word response was significantly stronger than the 2-Hz AM response in centro-frontal electrodes during the story comprehension task (p<0.05, bootstrap, FDR corrected, Figure 4F, left). To further compare the spatial distribution of 2-Hz word and AM responses, on top of their power difference, we normalized the response topography by dividing its maximum value. Significant difference was found in the normalized topography between the 2-Hz word and AM responses in temporal electrodes (p<0.05, bootstrap, FDR corrected, Figure 4F, right). These results suggested that the 2-Hz word and AM responses had distinct neural sources.
 
-## Neural responses to amplitude-modulated speech: a replication
+### Neural responses to amplitude-modulated speech: a replication
 
 The responses to amplitude-modulated speech suggested that the brain encoded words and acoustic cues related to words in a different manner. Furthermore, the word-related acoustic cues seemed to facilitate word processing during passive listening, but not significantly enhance the word response during attentive listening. To further validate these findings, we conducted a replication experiment to measure the neural response to amplitude-modulated speech in a separate group of participants. These participants first performed the movie watching task and then the story comprehension task. During the story comprehension task, the participants correctly answered 96 ± 8% and 95 ± 9% questions in the σ1-amplified and σ2-amplified conditions, respectively.
 
@@ -90,9 +106,25 @@ We first analyzed the spectrum of response to σ1- and σ2-amplified speech. Con
 
 We then separately extracted the word and AM responses following the procedures described in Figure 4A and C. Similar to previous results, in the spectrum (Figure 5A and B), a significant 2-Hz word response was observed during both tasks (story comprehension task: p=0.0001, bootstrap; movie watching task: p=0.0003, bootstrap, FDR corrected), and a significant 2-Hz AM response was also observed during both tasks (story comprehension task: p=0.0001, bootstrap; movie watching task: p=0.0001, bootstrap, FDR corrected). Furthermore, the 2-Hz word response exhibited significantly stronger power than the 2-Hz AM response during the story comprehension task (p=0.0036, bootstrap, FDR corrected, Figure 5C), and the two responses showed distinct topographical distribution (Figure 5D). In sum, the results obtained in the replication experiment were consistent with those from the original experiment. A follow-up comparison of the results from the original and replication experiments suggested that the 2-Hz word response exhibited significantly stronger power during the movie watching task in the replication experiment than the original experiment (p=0.0008, bootstrap, FDR corrected).
 
-## Time course of EEG responses to words
+![Figure 5.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig5-v2.jpg)
+
+**Figure 5.:** (A and B) Spectrum and topography for the word response (A) and amplitude modulation (AM) response (B). Colored stars indicate frequency bins with stronger power than the power averaged over four neighboring frequency bins (two on each side). *p<0.05, **p<0.001 (bootstrap, false discovery rate [FDR] corrected). The topography on the top of each plot shows the distribution of response power at 2 Hz and 4 Hz. (C) Response power at 2 Hz. Black stars indicate significant differences between the word and (AM) responses, while red stars indicate a significant difference between tasks. *p<0.05, **p<0.01 (bootstrap, FDR corrected). (D) Power difference between the word and AM responses in individual electrodes are shown in the left panel. To further illustrate the difference in topographical distribution instead of the response power, each response topography is normalized by dividing its maximum value. The difference in the normalized topography is shown in the right panel. Black dots indicate electrodes showing a significant difference between the word and AM responses (p<0.05, bootstrap, FDR corrected).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) Response spectrum averaged over participants and EEG electrodes. The shaded area indicates one standard error of the mean (SEM) across participants. Stars indicate significantly higher power at 2 Hz or 4 Hz than the power averaged over four neighboring frequency bins (two on each side). The color of the star is the same as the color of the spectrum. The topography on the top of each plot shows the distribution of response power at 2 Hz and 4 Hz. The five black dots in the topography indicate the position of electrodes FCz, Fz, Cz, FC3, and FC4. (C and D) Phase difference between the σ1- and σ2-amplified conditions at 2 Hz. The phase difference is averaged across participants, and the polar histogram shows the distribution of phase difference from 64 electrodes.
+
+### Time course of EEG responses to words
 
 The event-related potential (ERP) responses evoked by σ1 and σ2 are separately shown in Figure 6. The ERP analysis was restricted to disyllabic words so that the responses to σ1 and σ2 represented the responses to the first and second syllables of disyllabic words respectively. When participants attended to speech, the ERP responses to σ1 and σ2 showed significant differences for both isochronous (Figure 6A) and natural speech (Figure 6B). When participants watched a silent movie, a smaller difference was also observed between the ERP responses to σ1 and σ2 (Figure 6A). The topography of the ERP difference showed a centro-frontal distribution. For isochronous speech, the ERP latency could not be unambiguously interpreted for isochronous speech, given that the stimulus was strictly periodic. For natural speech, the ERP responses to σ1 and σ2 differed in a time window around 300–500 ms.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig6-v2.jpg)
+
+**Figure 6.:** The ERP responses evoked by σ1 and σ2 are shown in red and black, respectively. The ERP response is averaged over participants and electrodes. The shaded area indicates 1 SEM across participants. The gray lines on top denote the time intervals in which the two responses are significantly different from each other (p<0.05, cluster-based permutation test). The topography on top is averaged over all time intervals showing a significant difference between the two responses in each plot. Time 0 indicates syllable onset.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60433/elife-60433-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The ERP responses evoked by σ1 and σ2 are shown in red and black, respectively. The ERP response is averaged over participants and electrodes. The shaded area indicates 1 SEM across participants. The gray lines on top denote the time intervals in which the two responses are significantly different from each other (p<0.05, cluster-based permutation test). The topography on top is averaged over all time intervals showing a significant difference between the two responses in each plot. Time 0 indicates syllable onset.
 
 The ERP results for amplitude-modulated speech are shown in Figure 6C and D. When participants attended to speech, a difference between the ERP responses to σ1 and σ2 was observed in both σ1- and σ2-amplified conditions (Figure 6C). During passive listening, however, a significant ERP difference was observed near the onset of the amplified syllable. These results were consistent with the results in the replication experiment (Figure 6—figure supplement 1).
 
@@ -100,7 +132,7 @@ The ERP results for amplitude-modulated speech are shown in Figure 6C and D. W
 
 Speech comprehension is a complex process involving multiple stages, for example, encoding of acoustic features, extraction of phonetic features, and processing of higher-level linguistic units such as words, phrases, and sentences. Here, we investigate how low-frequency cortical activity encodes linguistic units and related acoustic features. When participants naturally listen to spoken narratives, we observe that cortical activity is synchronous to the rhythm of spoken words. The word synchronous response is observed whether participants listen to natural speech or synthesized isochronous speech that removes word-related acoustic cues. Furthermore, when introducing an AM cue to the word rhythm, neural responses to words and the AM cue are both observed and they show different spatial distribution. In addition, when participants are engaged in a story comprehension task, the word response exhibits stronger power than the AM response. The AM cue does not clearly modulate the word response during story comprehension task (Figure 2B), but can facilitate word processing when attention is diverted: The word response is not detected for isochronous speech (Figure 2C), but is detected for amplitude-modulated speech during passive listening (Figures 4B and 5A). In sum, these results show that both top-down linguistic knowledge and bottom-up acoustic cues separately contribute to word synchronous neural responses.
 
-## Neural encoding of linguistic units in natural speech
+### Neural encoding of linguistic units in natural speech
 
 In speech, linguistic information is organized through a hierarchy of units, including phonemes, syllables, morphemes, words, phrases, sentences, and discourses. These units span a broad range of time scales, from tens of milliseconds for phonemes to a couple of seconds for sentences, and even longer for discourses. It is a challenging question to understand how the brain represents the hierarchy of linguistic units, and it is an appealing hypothesis that each level of linguistic unit is encoded by cortical activity on the relevant time scale (Ding et al., 2016a; Doumas and Martin, 2016; Giraud and Poeppel, 2012; Goswami, 2019; Keitel et al., 2018; Kiebel et al., 2008; Meyer and Gumbert, 2018). Previous fMRI studies have suggested that neural processing at different levels, for example, syllables, words, and sentences, engages different cortical networks (Blank and Fedorenko, 2020; Hasson et al., 2008; Lerner et al., 2011). Magnetoencephalography (MEG)/Electroencephalogram (EEG) studies have found reliable delta- and theta-band neural responses that are synchronous to speech (Ding and Simon, 2012; Luo and Poeppel, 2007; Peelle et al., 2013), and the time scales of such activity are consistent with the time scales of syllables and larger linguistic units.
 
@@ -110,7 +142,7 @@ On the other hand, cortical activity synchronous to linguistic units, such as wo
 
 A comparison of the responses to natural speech and isochronous speech showed that responses to word and syllable were weaker for natural speech, suggesting that strict periodicity in the stimulus could indeed boost rhythmic neural entrainment. Although the current study and previous studies (Ding et al., 2018; Makov et al., 2017) observe a word-rate neural response, the study conducted by Kösem et al., 2016 does not report observable neural activity synchronous to perceived word rhythm. A potential explanation for the mixed results is that Kösem et al., 2016 repeat the same word in each trial while the other studies present a large variety of words with no immediate repetitions in the stimuli. Therefore, it is possible that low-frequency word-rate neural response more strongly reflects neural processing of novel words, instead of the perception of a steady rhythm (see also Ostarek et al., 2020).
 
-## Mental processes reflected in neural activity synchronous to linguistic units
+### Mental processes reflected in neural activity synchronous to linguistic units
 
 It remains elusive what kind of mental representations are reflected by cortical responses synchronous to linguistic units. For example, the response may reflect the phonological, syntactic, or semantic aspect of a perceived linguistic unit and it is difficult to tease apart these factors. Even if a sequence of sentences is constructed with independently synthesized monosyllabic words, the sequence does not sound like a stream of individual syllables delivered at a constant pace. Instead, listeners can clearly perceive each sentence as a prosodic unit. In this case, mental construction of sentences is driven by syntactic processing. Nevertheless, as long as the mental representation of a sentence is formed, it also has an associated phonological aspect. Previous psycholinguistic studies have already demonstrated that syntax has a significant impact on prosody perception (Buxó-Lugo and Watson, 2016; Garrett et al., 1966).
 
@@ -122,13 +154,13 @@ In speech processing, multiple factors contribute to the word response and these
 
 Finally, it should be mentioned that we employed AM to manipulate the speech envelope, given that the speech envelope is one of the strongest cues to drive stimulus-synchronous cortical response. However, the AM is only a weak prosodic cue compared with other variables such as timing and pitch contour (Shen, 1993). Furthermore, stress is strongly modulated by context and does not affect word recognition in Chinese (Duanmu, 2001). Future studies are needed to characterize the modulation of language processing by different prosodic cues and investigate the modulatory effect across different languages.
 
-## Attention modulation of cortical speech responses
+### Attention modulation of cortical speech responses
 
 It has been widely reported that cortical tracking of speech is strongly modulated by attention. Most previous studies demonstrate that in a complex auditory scene consisting of two speakers, attention can selectively enhance neural tracking of attended speech (Ding and Simon, 2012; Zion Golumbic et al., 2013). These results strongly suggest that the auditory cortex can parse a complex auditory scene into auditory objects, for example, speakers, and separately represent each auditory object (Shamma et al., 2011; Shinn-Cunningham, 2008). When only one speech stream was presented, cross-modal attention can also modulate neural tracking of the speech envelope, but the effect is much weaker (Ding et al., 2018; Kong et al., 2014).
 
 Consistent with previous findings, in the current study, the 4-Hz syllable response was also enhanced by cross-modal attention (Figure 3B). The 2-Hz AM response power, however, was not significantly modulated by cross-modal attention (Figures 4D and 5B), suggesting that attention did not uniformly enhance the processing of all features within the same speech stream. Given that the 2-Hz AM does not carry linguistic information, the result suggests that attention selectively enhances speech features relevant to speech comprehension. This result extends previous findings by showing that attention can differentially modulate different features within a speech stream.
 
-## Time course of the neural response to words
+### Time course of the neural response to words
 
 The neurophysiological processes underlying speech perception has been extensively studied using ERPs (Friederici, 2002). Early ERP components, such as the N1, mostly reflect auditory encoding of acoustic features, while late components can reflect higher-level processing of lexical, semantic, or syntactic processing (Friederici, 2002; Friederici, 2012; Sanders and Neville, 2003). In the current study, for isochronous speech, response latency cannot be uniquely determined: Given that syllables are presented at a constant rate of 4 Hz, a response with latency T cannot be distinguished from responses with latency T ± 250 ms. The periodic pattern in the stimulus design enables accurate prediction of its timing in the brain, and therefore the responses observed could turn out to be predictive instead of reactive.
 
@@ -140,35 +172,35 @@ In sum, the current study suggests that bottom-up acoustic cues and top-down lin
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Sixty-eight participants (20–29 years old, mean age, 22.6 years; 37 females) took part in the EEG experiments. Thirty-four participants (19–26 years old, mean age, 22.5 years; 17 females) took part in a behavioral test to assess the naturalness of the stimuli. All participants were right-handed native Mandarin speakers, with no self-reported hearing loss or neurological disorders. The experimental procedures were approved by the Research Ethics Committee of the College of Medicine, Zhejiang University (2019–047). All participants provided written informed consent prior to the experiment and were paid.
 
-## Stories
+### Stories
 
 Twenty-eight short stories were constructed for the study. The stories were unrelated in terms of content and ranged from 81 to 143 in word count (107 words on average). In 21 stories, word onset was metrically organized and every other syllable was a word onset, and these stories were referred to as metrical stories (Figure 1A). In the other seven stories, word onset was not metrically organized and these stories were referred to as nonmetrical stories (Figure 1B). In an ideal design, metrical stories should be constructed solely with disyllabic words to form a constant disyllabic word rhythm. Nevertheless, since it was difficult to construct such materials, the stories were constructed with disyllabic words and pairs of monosyllabic words. In other words, in between two disyllabic words, there must be an even number of monosyllabic words. After the stories were composed, the word boundaries within the stories were further parsed based on a Natural Language Processing (NLP) algorithm (Zhang and Shang, 2019). The parsing result confirmed that every other syllable in the story (referred to as σ1 in Figure 1A) was the onset of a word. For the other syllables (referred to as σ2 in Figure 1A), 77% was the second syllable of a disyllabic word while 23% was a monosyllabic word.
 
 Similarly, nonmetrical stories used as a control condition were composed with sentences with an even number of syllables. Nevertheless, no specific constraint was applied to word duration, and the odd terms in the syllable sequence were not always a word onset. Furthermore, in each sentence, it was required that at least one odd term was not a word onset.
 
-## Speech
+### Speech
 
 Each story was either synthesized as an isochronous sequence of syllables or naturally read by a human speaker.
 
-## Isochronous speech
+#### Isochronous speech
 
 All syllables were synthesized independently using the Neospeech synthesizer (http://www.neospeech.com/, the male voice, Liang). The synthesized syllables were 75–354 ms in duration (mean duration 224 ms). All syllables were adjusted to 250 ms by truncation or padding silence at the end, following the procedure in Ding et al., 2016a. The last 25 ms of each syllable were smoothed by a cosine window and all syllables were equalized in intensity. In this way, the syllables were presented at a constant rate of 4 Hz (Figure 1A and B). In addition, a silence gap lasting 500 ms, that is, the duration of two syllables, was inserted at the position of any punctuation, to facilitate story comprehension.
 
-## Natural speech
+#### Natural speech
 
 The stories were read in a natural manner by a female speaker, who was not aware of the purpose of the study. In natural speech, syllables were not produced at a constant rate and the boundaries between syllables were labeled by professionals (Figure 1C). The total duration of speech was 1122 s for the 21 metrical stories and 372 s for the seven nonmetrical stories. A behavioral test showed that most participants did not perceive any difference between the metrical and nonmetrical stories (Supplementary file 1).
 
-## Amplitude-modulated speech
+#### Amplitude-modulated speech
 
 Amplitude modulation (AM) was applied to isochronous speech to create a word-rate acoustic rhythm (Figure 1D). In σ1-amplified condition, all σ1 syllables were amplified by a factor of 4. In σ2-amplified condition, all σ2 syllables were amplified by a factor of 4. Such 2-Hz AM was clearly perceivable but did not affect speech intelligibility, since sound intensity is a weak cue for stress (Zhong et al., 2001) and stress does not affect word recognition in Mandarin Chinese (Duanmu, 2001). A behavioral test suggested that when listening to amplitude-modulated speech, a larger number of participants perceived σ1-amplified speech as more natural than σ2-amplified speech (Supplementary file 1).
 
-## Experimental procedures and tasks
+### Experimental procedures and tasks
 
-## Behavioral test
+#### Behavioral test
 
 A behavioral test was conducted to assess the naturalness of the stimuli. The test was divided into two blocks. In block 1, the participants listened to a metrical story and a nonmetrical story read by a human speaker, which were presented in a pseudorandom order. The stories were randomly selected from the story set. Each story ranged from 53 to 66 s in duration. After listening to each story, the participants were asked to write a sentence to summarize the story and fill out a questionnaire. Block 2 was of the same procedure as block 1, except that the metrical and nonmetrical stories were replaced with σ1- and σ2-amplified speech.
 
@@ -178,37 +210,37 @@ The second question was to check the naturalness of the stories read. Twenty-fou
 
 In block 2, only one question was asked. Participants had to compare the naturalness and accessibility of σ1-amplified speech or σ2-amplified speech. Fifteen participants (44%) perceived σ1-amplified speech as being more natural, two participants (6%) perceived the σ2-amplified speech as being more natural, and the rest 17 participants (50%) thought there was no difference in naturalness between the two conditions. In sum, relatively more participants thought the σ1-amplified speech was more natural.
 
-## EEG experiment
+### EEG experiment
 
 The study consisted of four EEG experiments. Experiments 1–3 involved 16 participants respectively, and Experiment 4 involved 20 participants. Experiments 1 and 4 both consisted of two blocks with stories presented in a randomized order within each block. In Experiments 2 and 3, all stories were presented in a randomized order in a single block.
 
-## Experiment 1
+#### Experiment 1
 
 Synthesized speech was presented in Experiment 1. The experiment was divided into two blocks. In block 1, participants listened to isochronous speech, including seven metrical stories and seven nonmetrical stories. In block 2, the participants listened to amplitude-modulated speech, including 7 σ1-amplified stories and 7 σ2-amplified stories. All 14 stories presented in block 2 were metrical stories and did not overlap with the stories used in block 1. Participants were asked to keep their eyes closed while listening to the stories. After listening to each story, participants were required to answer three comprehension questions by giving oral responses. An experimenter recorded the responses and then pressed a key to continue the experiment. The next story was presented after an interval randomized between 1 and 2 s (uniform distribution) after the key press. The participants took a break between blocks.
 
-## Experiment 2
+#### Experiment 2
 
 Speech stimuli used in Experiment 2 were the same as those used in Experiment 1, while the task was different. The participants were asked to watch a silent movie (The Little Prince) with subtitles and ignored any sound during the experiment. The stories were presented ~5 min after the movie started to make sure that participants were already engaged in the movie watching task. The interval between stories was randomized between 1 and 2 s (uniform distribution). The movie was stopped after all 28 stories were presented. The experiment was followed up with questions on the awareness of stories being presented during the movie watching task, and 87.5% participants (N = 14) reported that they did not notice any story.
 
-## Experiment 3
+#### Experiment 3
 
 Experiment 3 used the same set of stories as those used in Experiment 1, but the stories were naturally read by a human speaker. The task was of the same design as that in Experiment 1. Participants listened to 21 metrical stories and seven nonmetrical stories. Participants took a break after every 14 stories.
 
-## Experiment 4
+#### Experiment 4
 
 Experiment 4 was designed to test whether the results based on amplitude-modulated speech was replicable in a different group of participants. All stories used in Experiment 4 were metrical stories and each story was presented once. In block 1, participants were asked to watch a silent movie (The Little Prince) with subtitles and ignored any sound during the task. Amplitude-modulated speech (5 σ1-amplified and 5 σ2-amplified stories) were presented ~5 min after the movie started. The interval between stories was randomized between 1 and 2 s (uniform distribution). Block 1 was followed up with questions on the awareness of stories being presented during the movie watching task, and 15% participants (N = 3) reported that they did not notice any story during the task. Note that the percentage of participants reporting no awareness of the presentation of stories was much lower in Experiment 4 than that in Experiment 2. A potential explanation was that Experiment 4 only presented amplitude-modulated speech and the consistent presence of word-rate acoustic cues facilitated word recognition. In Experiment 2, however, as amplitude-modulated speech was mixed with isochronous speech, the lack of consistent presence of AM cue diminished its effect. After block 1 was finished, the participants took a break.
 
 In block 2, participants listened to amplitude-modulated speech (5 σ1-amplified stories and 5 σ2-amplified stories) with their eyes closed. At the end of each story, three comprehension questions were presented, and answers were to be given with oral responses. The experimenter recorded the responses and then pressed a key to continue the experiment. The next story was presented after an interval randomized between 1 and 2 s (uniform distribution) after the key press.
 
-## Data recording and preprocessing
+### Data recording and preprocessing
 
 Electroencephalogram (EEG) and electrooculogram (EOG) were recorded using a Biosemi ActiveTwo system. Sixty-four EEG electrodes were recorded. Two additional electrodes were placed at the left and right temples to record the horizontal EOG (right minus left), and two electrodes were placed above and below the right eye to record the vertical EOG (upper minus lower). Two additional electrodes were placed at the left and right mastoids and their average was used as the reference for EEG (Ding et al., 2018). The EEG/EOG recordings were low-pass filtered below 400 Hz and sampled at 2048 Hz.
 
 All preprocessing and analysis in this study were performed using MATLAB (The MathWorks, Natick, MA). The EEG recordings were down-sampled to 128 Hz, referenced to the average of mastoid recordings, and band-pass filtered between 0.8 Hz and 30 Hz using a linear-phase finite impulse response (FIR) filter (6 s Hamming window, −6 dB attenuation at the cut-off frequencies). A linear-phase FIR filter causes a constant time delay to the input. The delay equals to N/2, where N was the window length of the filter (Oppenheim et al., 1997). The delay was compensated by removing the first N/2 samples in the filter output. To remove ocular artifacts in EEG, the horizontal and vertical EOG were regressed out using the least-squares method (Ding et al., 2018). Occasional large artifacts in EEG/EOG, that is, samples with magnitude >1 mV, were removed from the analysis (Jin et al., 2018).
 
-## Data analysis
+### Data analysis
 
-## Frequency-domain analysis
+#### Frequency-domain analysis
 
 The EEG responses during the gap between sentences and the responses to the first two syllables of each sentence were removed from analysis to avoid the responses to sound onsets. The EEG responses to the rest of the sentence, that is, from the third syllable to the last syllable of each sentence, were then concatenated.
 
@@ -216,17 +248,17 @@ To further remove potential artifacts, the EEG responses were divided into 7 s t
 
 Then, the response averaged over trials was transformed into the frequency-domain using Discrete Fourier transform (DFT) without any additional smoothing window. Therefore, the frequency resolution of the DFT analysis was 1/7 Hz. The response power, that is, the square of the magnitude of the Fourier coefficients, was grand averaged over EEG electrodes and participants. The phase of the Fourier coefficients were averaged using the circular mean (Fisher, 1995). The 2-Hz phase difference between the σ1- and σ2-amplified conditions was averaged over participants in each electrode.
 
-## Time-warping analysis
+#### Time-warping analysis
 
 In natural speech used in Experiment 3, syllables were not produced at a constant rate, and therefore the responses to syllables and words were not frequency tagged. However, the neural response to natural speech could be time warped to simulate the response to isochronous speech (Jin et al., 2018). In the time-warping analysis, we first extracted the ERP response to each syllable (from 0 to 750 ms), and simulated the response to 4-Hz isochronous speech using the following convolution procedure: s(t) = Σj hj(t)*δ(t –0.25j), where s(t) was the time-warped response, δ(t) was the Dirac delta function, and hj(t) was the ERP evoked by the jth syllable. The word index j ranged from one to the total number of syllables in a story.
 
 In the time-warping procedure, it was assumed that the syllable response was time-locked to the syllable onsets and the word response was time-locked to word onsets. The frequency-domain analysis was subsequently applied to the time-warped response, following the same procedure as adopted in the analysis of the response to isochronous speech.
 
-## Time-domain analysis
+#### Time-domain analysis
 
 Time-domain analysis was only applied to the responses to disyllabic words, and the responses to monosyllabic words were not analyzed. The ERP responses to the first and second syllables of each disyllabic word were separately extracted and averaged across all disyllabic words. The ERP response to each syllable was baseline correlated by subtracting the mean response in a 100 ms window before the syllable onset.
 
-## Statistical test
+### Statistical test
 
 In the frequency-domain analysis, statistical tests were performed using bias-corrected and accelerated bootstrap (Efron and Tibshirani, 1994). In the bootstrap procedure, data of all participants were resampled with replacement 10,000 times. To test the significance of the 2-Hz and 4-Hz peaks in the response spectrum (Figures 2A–E, 3B and D, and 4A and B), the response amplitude at the peak frequency was compared with the mean power of the neighboring four frequency bins (two bin on each side, one-sided comparison). If the response power at 2 Hz or 4 Hz was stronger than the mean power of the neighboring bins N times in the resampled data, the significance level could be calculated as (N + 1)/10,001 (Jin et al., 2018).
 
@@ -238,6 +270,6 @@ In the time-domain analysis (Figure 6), the significance of ERP difference betwe
 
 When multiple comparisons were performed, the p-value was adjusted using the false discovery rate (FDR) correction (Benjamini and Hochberg, 1995).
 
-## Post-hoc effect size calculation
+### Post-hoc effect size calculation
 
 On top of showing the 2-Hz response power from individual participants and individual electrodes in Figure 2—figure supplement 1, an effect size analysis was applied to validate that the sample size was appropriate to observe the 2-Hz response. To simplify the analysis, we calculated the effect size based on a paired t-test to compare the power at 2 Hz and the power averaged over four neighboring frequencies. Since the response power was not subject to a normal distribution, such a t-test had lower power than, for example, the bootstrap test. However, based on the t-test, the 2-Hz response remained significantly stronger than the mean response averaged over neighboring frequency bins in all conditions shown in Supplementary file 2. The effect size of the t-test was calculated using the G*Power software (version 3.1) (Faul et al., 2007). We calculated d and power based on the mean and standard deviation of the 2-Hz response (reported in Supplementary file 2). The power was above 0.8 for all conditions, suggesting that the sample size was big enough even for the more conservative t-test.

@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Affective Brain Lab, Department of Experimental Psychology, University College London London United Kingdom
-2. https://ror.org/02jx3x895 The Max Planck UCL Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom
-3. https://ror.org/042nb2s44 Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States
+1. Affective Brain Lab, Department of Experimental Psychology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. The Max Planck UCL Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+3. Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
 
 † Corresponding author
 
@@ -40,19 +40,43 @@ To that end, over six experiments 951 participants engaged in simulated social m
 
 ## Results
 
-## Participants use ‘trust’ and ‘distrust’ buttons to discern true from false information (Experiment 1)
+### Participants use ‘trust’ and ‘distrust’ buttons to discern true from false information (Experiment 1)
 
 In a first step, we examined whether participants used ‘trust’ and ‘distrust’ reactions to discern true from false information more so than ‘like’ and ‘dislike’ reactions. In Experiment 1, participants saw 100 news posts taken from the fact-checking website Politifact (https://www.politifact.com; see Figure 2). Half of the posts were true, and half were false. Participants were given the opportunity to react to each post using ‘like’, ‘dislike’, ‘trust’, and ‘distrust’ reaction buttons. They could select as many buttons as they wished or none at all (skip). Five participants were excluded according to pre-determined criteria (see Materials and methods for details). Thus, 106 participants (52 Democrats, 54 Republican, Mage = 40.745, SDage ± 14.479; female = 54, male = 52) were included in the analysis. See Figure 2—figure supplement 1 for full instructions.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig2-v1.jpg)
+
+**Figure 2.:** Participants observed a series of 100 posts in random order (50 true, 50 false). Their task was to react using one or more of the ‘like’, ‘dislike’, ‘trust’, or ‘distrust’ buttons or to skip. The task was self-paced.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** At the start of the experiment participants received extensive instructions explaining the task.
+
 We then examined whether participants used the different reaction buttons to discern true from false information. Discernment was calculated as follows, such that high numbers always indicate better discernment:
 
-For ‘like’:Discernment=Proplikestrue−Proplikesfalse
+For ‘like’:
 
-For ‘dislike’:Discernment=Propdislikesfalse−Propdislikestrue
+$$
+Discernment=Prop_{likestrue}−Prop_{likesfalse}
+$$
 
-For ‘trust’:Discernment=Proptruststrue−Proptrustsfalse
+For ‘dislike’:
 
-For ‘distrust’:Discernment=Propdistrustsfalse−Propdistruststrue
+$$
+Discernment=Prop_{dislikesfalse}−Prop_{dislikestrue}
+$$
+
+For ‘trust’:
+
+$$
+Discernment=Prop_{truststrue}−Prop_{trustsfalse}
+$$
+
+For ‘distrust’:
+
+$$
+Discernment=Prop_{distrustsfalse}−Prop_{distruststrue}
+$$
 
 With Prop indicating the proportion of that response out of all true posts, or out of all false posts, as indicated.
 
@@ -60,21 +84,53 @@ These discernment scores were calculated for each participant separately and the
 
 The results reveal that participants’ use of ‘(Dis)Trust’ reaction buttons (M = 0.127; SE = 0.007) was more discerning than their use of ‘(Dis)Like’ reaction buttons (M = 0.047; SE = 0.005; F(1,104) = 95.832, p < 0.001, partial η2 = 0.48, Figure 3). We additionally observed an effect of valence (F(1,105) = 17.33, p < 0.001, partial η2 = 0.14), with negatively valenced reaction buttons (e.g., ‘dislike’ and ‘distrust’, M = 0.095, SE = 0.007) being used in a more discerning manner than positively valenced reaction buttons (e.g., ‘like’ and ‘trust’, M = 0.087, SE = 0.005) and an effect of political orientation (F(1,104) = 25.262, p < 0.001, partial η2 = 0.2), with Democrats (M = 0.115, SE = 0.007) being more discerning than Republicans (M = 0.06, SE = 0.005). There was also an interaction of type of reaction and political orientation (F(1,104) = 24.084, p < 0.001, partial η2 = 0.19), which was characterized by Democrats showing greater discernment than Republicans in their use of ‘(Dis)Trust’ reaction buttons (F(1,104) = 33.592, p < 0.001, partial η2 = 0.24), but not in their use of ‘(Dis)Like’ reaction buttons (F(1,104) = 2.255, p = 0.136, partial η2 = 0.02). Importantly, however, both Democrats (F(1,51) = 93.376, p < 0.001, partial η2 = 0.65) and Republicans (F(1,53) = 14.715, p < 0.001, partial η2 = 0.22) used the ‘(Dis)Trust’ reaction buttons in a more discerning manner than the ‘(Dis)Like’ reaction buttons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig3-v1.jpg)
+
+**Figure 3.:** ‘Distrust’ and ‘trust’ reactions were used in a more discerning manner than ‘like’ and ‘dislike’ reactions. Y axis shows discernment between true and false posts. For positive reactions (e.g., ‘likes’ and ‘trusts’), discernment is equal to the proportion of positive reactions for true information minus false information, and vice versa for negative reactions (‘dislikes’ and ‘distrusts’). X axis shows reaction options. Data are plotted as box plots for each reaction button, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range and whiskers indicate 1.5 × interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals’ mean discernment data are shown separately as gray dots. Symbols above each box plot indicate significance level compared to 0 using a t-test. N=106, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Experiment 4 is a replication of Experiment 1, in which participants (N=50) observe posts (half true half false) and can respond by clicking all, none or some of the following buttons: ‘like’, ‘dislike’, ‘trust’, and ‘distrust’ (see Materials and methods for details). Y axis shows discernment. For positive reactions (e.g., ‘likes’ and ‘trusts’) discernment is equal to the proportion of those reactions in response to true posts minus false posts, and vice versa for negative reactions (‘dislikes’ and ‘distrusts’). A 2 (type of reaction: ‘trust’ and ‘distrust’/‘like’ and ‘dislike’) by 2 (valence: positive, i.e., ‘like’, ‘trust’/negative, i.e., ‘dislike’, ‘distrust’) within-subject analysis of variance (ANOVA) revealed an effect of type of feedback (F(1,49) = 51.996, p < 0.001, partial η2 = 0.51): participants used ‘(Dis)Trust’ (M = 0.111; SE = 0.01) in a more discerning manner than ‘(Dis)Like’ (M = 0.03; SE = 0.006). There was also an effect of valence (F(1,49) = 7.147, p = 0.01, partial η2 = 0.13): participants used negative reactions (M = 0.082; SE = 0.011) in a more discerning manner than positive reactions (M = 0.06, SE = 0.006). Participants’ used all reaction buttons, except ‘dislike’, to discern between true and false posts (‘like’: M = 0.053; SE = 0.008; t(49) = 6.982, p < 0.001, Cohen’s d = 0.987; ‘trust’: M = 0.066; SE = 0.01; t(49) = 6.641, p < 0.001, Cohen’s d = 0.939; ‘dislike’: M = 0.007; SE = 0.008; t(49) = 0.883, p = 0.381, Cohen’s d = 0.125; ‘distrust’: M = 0.157; SE = 0.014; t(49) = 11.312, p < 0.001, Cohen’s d = 1.6). Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 × interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals’ mean discernment data are shown separately as gray dots. Symbols above each box plot indicate significance level compared to 0 using a t-test. ***p < 0.001.
+
 One-sample t-tests against zero further revealed that participants’ use of each reaction button discerned true from false information (‘like’: M = 0.06; SE = 0.006; t(105) = 10.483, p < 0.001, Cohen’s d = 1.018; ‘trust’: M = 0.099; SE = 0.01; t(105) = 9.744, p < 0.001, Cohen’s d = 0.946; ‘dislike’: M = 0.034; SE = 0.007; t(105) = 4.76, p < 0.001, Cohen’s d = 0.462; ‘distrust’: M = 0.156; SE = 0.01; t(105) = 15.872, p < 0.001, Cohen’s d = 1.542).
 
 Thus far, we have shown that participants use ‘(Dis)Trust’ reaction buttons in a more discerning manner than ‘(Dis)Like’ reaction buttons. As social media platforms care about overall engagement not only its quality, we examined how frequently participants used the different reaction buttons. An ANOVA with the same specifications as above was conducted, but this time submitting frequency of reaction as the dependent variable. We found that participants used ‘(Dis)Trust’ reaction buttons more often than ‘(Dis)Like’ reaction buttons (percentage use of reaction out of all trials: ‘trust’: M = 28.057%; ‘distrust’: M = 34.085%; ‘like’: M = 18.604%; ‘dislike’: M = 23.745%; F(1,104) = 36.672, p < 0.001, partial η2 = 0.26). In addition, negative reaction buttons (‘distrust’ and ‘dislike’: M = 28.915%, SE = 1.177) were used more frequently than positive reaction buttons (‘trust’ and ‘like’: M = 23.33%, SE = 1.133; F(1,105) = 16.96, p < 0.001, partial η2 = 0.07). No other effect was significant. Interestingly, we also found that participants who skipped more posts were less discerning (R = −0.414, p < 0.001). Together, the results show that the new reaction options increase engagement.
 
 The results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of reaction and valence (see Supplementary files 1 and 2). The results also replicate in an independent sample (Experiment 4, see Materials and methods for details; and Figure 3—figure supplement 1, Supplementary file 3).
 
-## ‘Trust’ and ‘distrust’ incentives improve discernment in sharing behavior (Experiment 2)
+### ‘Trust’ and ‘distrust’ incentives improve discernment in sharing behavior (Experiment 2)
 
 Thus far, we have shown that participants use ‘(Dis)Trust’ reaction buttons in a more discerning manner than ‘(Dis)Like’ reaction buttons. Thus, an environment which offers ‘(Dis)Trust’ feedback is one where the number of ‘carrots’ (in the form of ‘trusts’) and the number of ‘sticks’ (in the form of ‘distrusts’) are directly associated with the veracity of the posts. It then follows that submitting participants to such an environment will increase their sharing of true information (to receive ‘trusts’) and reduce their sharing of misinformation (to avoid ‘distrusts’).
 
-To test this, we ran a second experiment. A new group of participants (N = 320) were recruited to engage in a simulated social media platform. They observed the same 100 posts (50 true, 50 false) shown to the participants in Experiment 1, but this time instead of reacting to the posts they could either share the post or skip it (see Figure 4 and Figure 4—figure supplements 1 and 2 for full instructions). They were told that if they chose to share a post, it would be shared to their feed such that the other participants would be able to see the post and would then be able to react to it in real time (feedback). Depending on the environment participants were in, which varied between subjects, they could receive feedback in the form of the number of users who (1) ‘disliked’, (2) ‘liked’, (3) ‘distrusted’, or (4) ‘trusted’ their posts. We also included a (5) baseline condition, in which participants received no feedback. If participants selected to skip, they would observe a white screen asking them to click continue. Data of 32 participants were not analyzed according to pre-determined criteria (see Materials and methods for details). Two-hundred and eighty-eight participants (146 Democrats, 142 Republicans, Mage = 38.073, SDage ± 13.683; female = 147, male = 141) were included in the analysis (see Materials and methods for details).Discernment=Proprepoststrue−Proprepostsfalse
+To test this, we ran a second experiment. A new group of participants (N = 320) were recruited to engage in a simulated social media platform. They observed the same 100 posts (50 true, 50 false) shown to the participants in Experiment 1, but this time instead of reacting to the posts they could either share the post or skip it (see Figure 4 and Figure 4—figure supplements 1 and 2 for full instructions). They were told that if they chose to share a post, it would be shared to their feed such that the other participants would be able to see the post and would then be able to react to it in real time (feedback). Depending on the environment participants were in, which varied between subjects, they could receive feedback in the form of the number of users who (1) ‘disliked’, (2) ‘liked’, (3) ‘distrusted’, or (4) ‘trusted’ their posts. We also included a (5) baseline condition, in which participants received no feedback. If participants selected to skip, they would observe a white screen asking them to click continue. Data of 32 participants were not analyzed according to pre-determined criteria (see Materials and methods for details). Two-hundred and eighty-eight participants (146 Democrats, 142 Republicans, Mage = 38.073, SDage ± 13.683; female = 147, male = 141) were included in the analysis (see Materials and methods for details).
+
+$$
+Discernment=Prop_{repoststrue}−Prop_{repostsfalse}
+$$
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-v1.jpg)
+
+**Figure 4.:** In Experiment 2 on each of 100 trials participants observed a post (50 true, 50 false content). They then chose whether to share it or skip (self-paced). They were told that if they chose to share a post, it would be shared to their feed such that other participants would be able to see the post and react to it in real time (feedback). Depending on the environment participants were in, they could either observe the number of (1) ‘dislikes’ (N = 45), (2) ‘likes’ (N = 89), (3) ‘distrusts’ (N = 49), or (4) ‘trusts’ (N = 46) feedback. The feedback was in fact the number of reactions gathered from Experiment 1, though the participants believed the reactions were in real time as indicated by a rotating cogwheel (1 s). Once the feedback appeared, participants could then click continue. If participants selected to skip, they would observe a white screen asking them to click continue (self-paced). In the Baseline environment (N = 59) participants received no feedback. Experiment 3 was identical to Experiment 2 with two distinctions: (1) Depending on the environment participants were in, they could either observe the number of (i) both ‘dislikes’ and ‘likes’ (N = 128), (ii) both ‘distrusts’ and ‘trusts’ (N = 137), or (iii) no feedback (Baseline, N = 126). (2) In Experiment 3, we selected 40 posts (20 true, 20 false) to which Republicans and Democrats had on average reacted to similarly using the ‘trust’ button in Experiment 1. Discernment was calculated for each participant by subtracting the proportion of sharing false information from the proportion of sharing true information. High discernment indicates greater sharing of true than false information.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** At the start of the experiment participants received extensive instructions explaining the task. Depending on which condition they were assigned to participants would receive Instructions for either the (a) Baseline environment, (b) Like environment, (c) Dislike environment, (d) Trust environment, or (e) Distrust environment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** At the start of the experiment participants received extensive instructions explaining the task. Depending on which condition they were assigned to participants would receive Instructions for either the (a) Baseline environment, (b) Like & Dislike environment, or (c) Trust & Distrust environment.
 
 These scores were submitted into a between-subject ANOVA with type of feedback (‘trust’ and ‘distrust’/‘like’ and ‘dislike’/Baseline), valence (positive, i.e., ‘like’, ‘trust’/negative, i.e., ‘dislike’, ‘distrust’ vs neutral/no feedback) and political orientation (Republican/Democrat) as factors. We also allowed for an interaction of political orientation and type of feedback.
 
 We observed an effect of type of feedback (F(1,281) = 15.2, p < 0.001, partial η2 = 0.051), such that participants shared more true than false information in the ‘(Dis)Trust’ environments (M = 0.18, SE = 0.018) than the ‘(Dis)Like’ environments (M = 0.085, SE = 0.019, F(1,225) = 14.249, p < 0.001, partial η2 = 0.06) and Baseline environment (M = 0.084, SE = 0.025; F(1,150) = 10.906, p = 0.001, partial η2 = 0.068, Figure 5a). Moreover, participants who received ‘trust’ feedback (M = 0.176, SE = 0.026) were more discerning in their sharing behavior than those who received ‘like’ feedback (M = 0.081, SE = 0.021, F(1,131) = 10.084, p = 0.002, partial η2 = 0.071). Those who received ‘distrust’ feedback (M = 0.175, SE = 0.026) were more discerning than those who received ‘dislike’ feedback (M = 0.092, SE = 0.039, F(1,90) = 5.003, p = 0.028, partial η2 = 0.053). We further observed a trend interaction between type of feedback and political orientation (F(1,281) = 2.939, p = 0.055, partial η2 = 0.02). While Democrats (M = 0.213; SE = 0.014) were generally more discerning than Republicans (M = 0.017; SE = 0.016; F(1,281) = 77.392, p < 0.001, partial η2 = 0.216), this difference was smaller in those who received ‘(Dis)Trust’ feedback (M = 0.082, SE = 0.034) compared to those who received ‘(Dis)Like’ feedback (M = 0.23, SE = 0.03; F(1,224) = 4.879, p = 0.028, partial η2 = 0.021) and by trend smaller than those who received no feedback (M = 0.229, SE = 0.045; F(1,149) = 3.774, p = 0.054, partial η2 = 0.025). There was no difference between the latter two (F(1,188) = 0.00, p = 0.988, partial η2 = 0.00). No other effects were significant. Overall engagement, measured as percentage of posts shared out of all trials, did not differ across environments (F(1,281) = 1.218, p = 0.271, partial η2=0.004; Mean % posts shared out of all trials: Baseline = 27.712%; Dislike = 35.889%; Like = 33.258%; Distrust = 32.51%; Trust = 30.435%; see Supplementary file 4 for means for true and false posts).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig5-v1.jpg)
+
+**Figure 5.:** (a) Participants (N=288) operating in an environment where ‘(Dis)Trust’ feedback was introduced shared more true information relative to false information than participants operating in an environment where only ‘(Dis)Like’ feedback was available, or no feedback at all (Baseline) Y axis shows discernment, that is, proportion of true posts shared minus proportion of false posts shared. X axis shows the group environment (type of feedback). (b) This was the case regardless of the topic of the post (politics, science, health, environment, society, other). Bubble size corresponds to number of the posts included in the study. Diagonal dashed line indicates point of equivalence, where discernment in equal across the ‘(Dis)Like’ and ‘(Dis)Trust’ environments. As can be seen, all circles are above the dashed line indicating that in all cases discernment is greater in an environment that offers ‘(Dis)Trust’ feedback. Y axis shows discernment in the ‘(Dis)Trust’ environment, X axis shows discernment in the ‘(Dis)Like’ environment. (c) Experiment 3 (N=391) showed the same results as Experiment 2. Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 × interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals’ mean discernment data are shown separately as gray dots; symbols above each box plot indicate significance level compared to 0 using a t-test.***p < 0.001, **p < 0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Experiment 5 and (b) Experiment 6 are replications of Experiments 2 and 3. (a) In Experiment 5 participants (N=261) observed the same 100 posts (50 true, 50 false) shown to participants in Experiment 4, but instead of reacting to the posts they could either share the post or skip it. Depending on their group, participants would then receive feedback from other participants in the form of the number of either (1) ‘dislikes’, or (2) ‘likes’, or (3) ‘distrusts’, or (4) ‘trusts’. The Baseline group received no feedback (see Materials and methods for details). On the Y axis is ‘Discernment’ = proportion of sharing true information − proportion of sharing false information. A between-subject analysis of variance (ANOVA) on discernment with type of feedback (‘trust’ and ‘distrust’/‘like’ and ‘dislike’/Baseline) and valence (positive, i.e., ‘like’, ‘trust’/negative, i.e., ‘dislike’, ‘distrust’ vs neutral/no feedback) revealed an effect of type of feedback (F(1,257) = 8.112, p = 0.005, partial η2 = 0.031): discernment was greater in the ‘(Dis)Trust’ conditions (M = 0.236, SE = 0.019) than the ‘(Dis)Like’ (M = 0.111, SE = 0.022; F(1,212) = 7.682, p = 0.006, partial η2=0.035) and Baseline (M = 0.102, SE = 0.026; F(1,163) = 16.246, p < 0.001, partial η2 = 0.087) conditions. No other effects were significant. (b) Experiment 6 (N=150) was the same as Experiment 5, but with three groups: Baseline group (receiving no feedback), 'Trust & Distrust’ group, in which participants received both the number of Trust and Distrust feedback, and a ‘Like & Dislike’ environment, in which participants received the number of Like and Dislike feedback (see Materials and methods and for details). Once again, an ANOVA revealed a main effect of type of feedback (F(1,147) = 11.150, p < 0.001, partial η2 = 0.132): participants in the ‘Trust and Distrust’ group were more discerning (M = 0.264, SE = 0.023) than those in the ‘Like and Dislike’ (M = 0.147, SE = 0.027; F(1,101) = 11.122, p = 0.001, partial η2 = 0.099) and baseline (M = 0.106, SE = 0.026; F(1,101) = 21.141, p < 0.001, partial η2 = 0.173) groups. Data are plotted as box plots for each reaction, in which horizontal lines indicate median values, boxes indicate 25/75% interquartile range, and whiskers indicate 1.5 × interquartile range. Diamond shape indicates the mean discernment per reaction. Individuals’ mean discernment data are shown separately as gray dots; symbols above each box plot indicate significance level compared to 0 using a t-test . ***p < 0.001, **p < 0.01.
 
 Results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of reaction and valence (see Supplementary files 5 and 6). Results replicate in an independent sample (Experiment 5, see Materials and methods for details; and Figure 5—figure supplement 1, Supplementary file 7).
 
@@ -86,7 +142,7 @@ The posts included in the experiment covered a range of topics including politic
 
 Thus far, our results show that changing the incentive structure of social media platforms by coupling the number of ‘carrots’ and ‘sticks’ with information veracity could be a valuable tool to reduce the spread of misinformation. If feedback promotes discernment in sharing behavior, it is plausible that it may in turn improve belief accuracy. To test this, we asked participants at the end of the experiment to indicate how accurate they thought a post was on a scale from inaccurate (0) to accurate (100). Participants’ error in estimating whether a post was true or false was calculated as follows: for false posts error was equal to the participants’ accuracy rating and for true posts it was equal to 100 minus their rating. Participants’ average error scores were entered into a between-subject ANOVA with type of feedback and valence of feedback, as well as political orientation and its interaction with feedback type. We observed an effect of type of feedback (F(1,281) = 7.084, p = 0.008, partial η2 = 0.025), such that participants were more accurate (less errors) when they received ‘(Dis)Trust’ feedback (M = 47.24, SE = 0.938) compared to ‘(Dis)Like’ feedback (M = 50.553, SE = 0.851, F(1,224) = 7.024, p = 0.009, partial η2 = 0.03). We further observed an effect of political orientation (F(1,281) = 11.402, p < 0.001, η2 = 0.039), with Democrats (M = 47.264, SE = 0.773) being more accurate than Republicans (M = 51.117, SE = 0.802). No other effects were significant. All results hold when controlling for demographics, when not including political orientation in the analysis, and allowing for an interaction between type of feedback and valence (see Supplementary file 8). We replicated these results in Experiment 5. We again, observed an effect of feedback type (F(1,258) = 4.179, p = 0.042, partial η2 = 0.016), such that participants were more accurate (less errors) when they received ‘(Dis)Trust’ feedback (M = 35.717, SE = 0.65) compared to ‘(Dis)Like’ feedback (M = 37.63, SE = 0.767; F(1,212) = 3.955, p = 0.048, partial η2 = 0.018) and also more accurate than those who received no feedback (Baseline, M = 39.73, SE = 0.886; F(1,162) = 11.759, p < 0.001, partial η2 = 0.068). No other effects were significant. These results hold when allowing for an interaction between type of feedback and valence (see Supplementary file 9).
 
-## ‘Trust’ and ‘distrust’ incentives together improve discernment in sharing behavior (Experiment 3)
+### ‘Trust’ and ‘distrust’ incentives together improve discernment in sharing behavior (Experiment 3)
 
 Given that Experiment 2 revealed that receiving ‘trust’ or ‘distrust’ feedback separately improves discernment, it is likely that the coupled presentation of both will jointly also improve discernment. To test this, we ran a third experiment with a new group of participants. The task was identical to Experiment 2 (see Figure 4), but this time we included three between-subject environments: a Baseline environment, in which participants received no feedback, a ‘Trust & Distrust’ environment, in which participants observed both the number of trust and the number of distrust feedback, and a ‘Like & Dislike’ environment, in which participants observed both the number of like and the number of dislike feedback.
 
@@ -102,7 +158,7 @@ At the end of Experiment 3, we again asked participants to indicate how accurate
 
 Taken together these findings suggest that changing the incentive structure of social media platforms, such that ‘carrots’ and ‘sticks’ are strongly associated with veracity promotes discernment in sharing behavior, thereby reducing the spread of misinformation.
 
-## ‘(Dis)Trust’ incentives improve discernment in sharing behavior by increasing the relative importance of evidence consistent with discerning behavior
+### ‘(Dis)Trust’ incentives improve discernment in sharing behavior by increasing the relative importance of evidence consistent with discerning behavior
 
 Next, we set out to characterize the mechanism by which the new incentive structure increased discernment. Imagine you observe a post on social media, and you need to decide whether to share it – how do you make this decision? First, you examine the post. Second, you retrieve existing knowledge. For example, you may think about what you already know about the topic, what you heard others say, you may try to estimate how others will react to the post if you share it, and so on. This process is called ‘evidence accumulation’ – you gradually accumulate and integrate external evidence and internal evidence (memories, preferences, etc.) to decide. Some of the evidence you retrieve will push you toward a ‘good’ response that promotes veracity (i.e., posting a true post and skipping a false post) and some will push you toward a ‘bad’ response that obstructs veracity (i.e., posting a false post and skipping a true post). We can think of the evidence that pushes you toward a response that promotes veracity as ‘signal’. Using computational modeling it is possible to estimate how much a participant is influenced (‘pushed’) by signal relative to noise, by calculating a parameter known as a ‘drift rate’ in a class of models known as drift-diffusion models (DDM). One possibility then is that in the ‘(Dis)Trust’ environment evidence toward responses that promote veracity is given more weight than toward responses that obstruct veracity (i.e., the drift rate is larger), thus people make more discerning decisions.
 
@@ -112,6 +168,88 @@ To test the above possible mechanisms, we modeled our data using the DDM (Ratcli
 
 We next examined which of the parameters were different in the different environments (see Tables 1 and 2, and Supplementary files 13 and 14 for highest density interval [HDI] comparisons). To that end, we calculated the difference in posterior distributions of each parameter for each pair of incentive environments (‘(Dis)Trust’ vs ‘(Dis)Like’, ‘(Dis)Trust’ vs Baseline, ‘(Dis)Like’ vs Baseline) and report the 95% HDI of the difference. If the 95% HDI of the distribution does not overlap with zero, we infer a credible difference between the two incentive environments.
 
+**Table 1.**
+ Group estimates for drift-diffusion model (DDM) in Experiment 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Estimate</th>
+      <th>Baseline</th>
+      <th>‘(Dis)Like’</th>
+      <th>‘(Dis)Trust’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distance between decision thresholds (α)</td>
+      <td>2.15395% CI [2.09; 2.214]</td>
+      <td>2.37395% CI [2.281; 2.466]</td>
+      <td>2.40395% CI [2.280; 2.529]</td>
+    </tr>
+    <tr>
+      <td>Non-decision time (t0)</td>
+      <td>7.02595% CI [6.898; 7.154]</td>
+      <td>6.93695% CI [6.802; 7.071]</td>
+      <td>6.68195% CI [6.425; 6.94]</td>
+    </tr>
+    <tr>
+      <td>Starting point (z)</td>
+      <td>0.49795% CI [0.486; 0.508]</td>
+      <td>0.49195% CI [0.483; 0.50]</td>
+      <td>0.4895% CI [0.471; 0.49]</td>
+    </tr>
+    <tr>
+      <td>Drift rate (v)</td>
+      <td>0.09895% CI [0.039; 0.158]</td>
+      <td>0.1095% CI [0.056; 0.145]</td>
+      <td>0.21695% CI [0.17; 0.262]</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Group estimates for drift-diffusion model (DDM) in Experiment 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Estimate</th>
+      <th>Baseline</th>
+      <th>‘(Dis)Like’</th>
+      <th>‘(Dis)Trust’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distance between decision thresholds (α)</td>
+      <td>2.23895% CI [2.153; 2.328]</td>
+      <td>2.20795% CI [2.132; 2.286]</td>
+      <td>2.20995% CI [2.134; 2.286]</td>
+    </tr>
+    <tr>
+      <td>Non-decision time (t0)</td>
+      <td>6.995% CI [6.762; 7.04]</td>
+      <td>7.05195% CI [6.918; 7.186]</td>
+      <td>7.07695% CI [6.944; 7.208]</td>
+    </tr>
+    <tr>
+      <td>Starting point (z)</td>
+      <td>0.595% CI [0.49; 0.51]</td>
+      <td>0.595% CI [0.49; 0.511]</td>
+      <td>0.48995% CI [0.476; 0.5]</td>
+    </tr>
+    <tr>
+      <td>Drift rate (v)</td>
+      <td>0.00695% CI [−0.027; 0.037]</td>
+      <td>0.03795% CI [0.002; 0.069]</td>
+      <td>0.1295% CI [0.086; 0.155]</td>
+    </tr>
+  </tbody>
+</table>
+
 For both Experiment 2 (see Figure 6a) and Experiment 3 (see Figure 6c) we observed a meaningful difference in the drift rate. In particular, in the ‘(Dis)Trust’ environments the drift rate was larger (Experiment 2: v = 0.216; Experiment 3: v = 0.12) than in the‘(Dis)Like’ environments (Experiment 2: v = 0.01; 95% HDI of difference [0.048; 0.183], Experiment 3: v = 0.037; 95% HDI of difference [0.032; 0.135]) or no feedback environment (Experiment 2: v = 0.098; 95% HDI of difference [0.041; 0.195]; Experiment 3: v = 0.006; 95% HDI of difference [0.061; 0.167]). The Baseline and ‘(Dis)Like’ environments did not differ for drift rate (Experiment 2: 95% HDI of difference: [−0.075; 0.08]; Experiment 3: 95% HDI of difference [−0.016; 0.079]). This suggests that relative to the other environments, in the ‘(Dis)Trust’ environments evidence consistent with a ‘veracity-promoting’ response is weighted more than ‘evidence’ consistent with a ‘veracity-obstructing’ response. We replicate these results in Experiments 5 and 6 (see Supplementary files 15–18).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85767/elife-85767-fig6-v1.jpg)
@@ -120,9 +258,17 @@ For both Experiment 2 (see Figure 6a) and Experiment 3 (see Figure 6c) we observ
 
 While in Experiment 2 the decision threshold in the Baseline environment was lower than the other two environments, and non-decision time (t0) higher than in the ‘(Dis)Trust’, these differences are not replicated in Experiment 3. More importantly, neither decision threshold nor non-decision time differed between the ‘(Dis)Trust’ and ‘(Dis)Like’ environments (see Tables 1 and 2 and Supplementary files 13 and 14 for HDI comparisons).
 
-Model parameters could be successfully recovered with data simulated using group-level parameters from Experiments 2 and 3 separately (for details, see Materials and methods, see Figure 6b, d, Supplementary files 19 and 20). This was done by fitting the model to simulated data, in the same way as for the experimental data. We sampled 2000 times from the posteriors, discarding the first 500 as burn in. The same pattern of results was reproduced with the simulated data as with real participants’ data (Figure 7). For each experiment, we ran two separate one-way ANOVAs to assess the effect of type of feedback on discernment: one for the real data and one for the simulated data. We remind the reader that we entered responses into our DDM as either ‘veracity-promoting’ (true post shared or false post skipped) or ‘veracity-obstructing’ (false post shared or true post skipped). Thus, discernment here is calculated as:Discernment=Propveracity−promotingresponses−Propveracity−obstructingresponses
+Model parameters could be successfully recovered with data simulated using group-level parameters from Experiments 2 and 3 separately (for details, see Materials and methods, see Figure 6b, d, Supplementary files 19 and 20). This was done by fitting the model to simulated data, in the same way as for the experimental data. We sampled 2000 times from the posteriors, discarding the first 500 as burn in. The same pattern of results was reproduced with the simulated data as with real participants’ data (Figure 7). For each experiment, we ran two separate one-way ANOVAs to assess the effect of type of feedback on discernment: one for the real data and one for the simulated data. We remind the reader that we entered responses into our DDM as either ‘veracity-promoting’ (true post shared or false post skipped) or ‘veracity-obstructing’ (false post shared or true post skipped). Thus, discernment here is calculated as:
 
-Which is equal to:Discernment=Proprepoststrueposts+skipsfalseposts−Proprepostsfalseposts+skipstrueposts
+$$
+Discernment=Prop_{veracity−promotingresponses}−Prop_{veracity−obstructingresponses}
+$$
+
+Which is equal to:
+
+$$
+Discernment=Prop_{repoststrueposts+skipsfalseposts}−Prop_{repostsfalseposts+skipstrueposts}
+$$
 
 As expected, we observed an effect of type of feedback in both the simulated (Experiment 2: F(1,285) = 3.795, p = 0.024, η2 = 0.026; Experiment 3: F(1,388) = 7.843, p = 0.001, η2 = 0.039, Figure 7b, d), and the experimental data (Experiment 2: F(1,287) = 7.049, p = 0.001, η2 = 0.047; Experiment 3: F(1,388) = 11.166, p < 0.001, η2 = 0.054). That is, discernment was higher in ‘(Dis)Trust’ environments relative to ‘(Dis)Like’ environments or no feedback environments (Figure 7a, c, see Supplementary files 21 and 22 for pairwise comparisons and Supplementary file 23 for correlations between real and recovered individual-level parameters).
 
@@ -150,65 +296,65 @@ This study lays the groundwork for integration of the new incentive structure in
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
-## Power calculations
+#### Power calculations
 
 Sample sizes for all experiments were computed based on our pilot study (see Experiments 4–6). Power calculations were performed using g*Power (Faul et al., 2009) to achieve power of 0.8 (beta = 0.2, alpha = 0.05; Experiment 1: partial η2 = 0.51; Experiment 2: Cohen’s d = 0.33; Experiment 3: Cohen’s d = 0.327).
 
-## Participants (Experiment 1)
+#### Participants (Experiment 1)
 
 One-hundred and eleven participants residing in the USA completed the task on Prolific Academic. Exclusion criteria were pre-established. Data of four participants who failed more than two memory checks were excluded from further analysis (see below). Thus, data of 107 participants were analyzed (52 Democrats, 54 Republican, 1 Other, Mage = 40.579, SDage ± 14.512; female = 55, male = 52; Non-White = 20, White = 87). Participants received £7.50 per hour for their participation in addition to a memory test performance-related bonus. For all experiments presented in this article, ethical approval was provided by the Research Ethics Committee at University College London (#3990/003) and all participants gave informed consent. All experiments were performed in accordance with the principles expressed in the Declaration of Helsinki. All samples were politically balanced for Democrats and Republicans. All experiments were replicated using biological replicates (Experiments 4–6).
 
-## Participants (Experiment 2)
+#### Participants (Experiment 2)
 
 Three-hundred and twenty participants completed the task on Prolific Academic. Data of four participants who failed more than two memory checks were excluded from further analysis (see below for details). Thus, data of 316 participants were analyzed (146 Democrats, 142 Republican, 28 Other, Mage = 37.598, SDage ± 13.60; female = 157, male = 157, other = 2, Non-White = 77, White = 239). Participants received £7.50 per hour for the participation in addition to a memory test performance-related bonus.
 
-## Participants (Experiment 3)
+#### Participants (Experiment 3)
 
 Four-hundred and nine participants completed the task on Prolific Academic. Data of three participants who failed more than two memory checks were excluded from further analysis (see Participants Experiment 1 for details). Further data of three participants who suspected that the feedback provided did not stem from real participants were excluded. Thus, data of four-hundred and three participants were analyzed (194 Democrats, 197 Republican, 12 Other, Mage = 35.179, SDage ± 11.051; female = 204, male = 194, other = 4, Non-White = 85, White = 218). Participants received £7.50 per hour for their participation in addition to a memory test performance-related bonus.
 
-## Participants (Experiment 4)
+#### Participants (Experiment 4)
 
 Fifty participants residing in the USA completed the task on Prolific Academic (25 Democrats, 8 Republican, 17 Other, Mage = 33.16, SDage ±9.804; females = 24, male = 25, other = 1, Non-White = 15, White = 35). No participants failed the attention checks. Participants received £7.50 per hour for their participation in addition to a memory test performance-related bonus.
 
-## Participants (Experiment 5)
+#### Participants (Experiment 5)
 
 Two-hundred and sixty-one participants completed the task on Prolific Academic (132 Democrats, 90 Republican, 39 Other, Mage = 34.824, SDage ± 12.632; females = 122, males = 131, others = 8, Non-White = 84, White = 177). Participants received £7.50 per hour for their participation in addition to a memory test performance-related bonus.
 
-## Participants (Experiment 6)
+#### Participants (Experiment 6)
 
 One-hundred and fifty participants completed the task on Prolific Academic (74 Democrats, 14 Republican, 62 Other, Mage = 34.2, SDage ± 12.489; females = 70, males = 77, others = 3, Non-White = 39, White = 150). Participants received £7.50 per hour for their participation in addition to a memory test performance-related bonus.
 
-## Task (Experiment 1)
+#### Task (Experiment 1)
 
 Participants engaged in a simulated social media platform where they saw 100 news posts, each consisting of an image and a headline (see Figure 2, Supplementary file 24 for stimuli and ratings). Half of the posts were true, and half were false. They covered a range of different topics including COVID-19, environmental issues, politics, health, and society. They were all extracted from fact-checking website Politifact (https://www.politifact.com). For each post, participants had the option to either ‘like’, ‘dislike’, ‘trust’, or ‘distrust’ the post, or they could choose to ‘skip’ the post. They could press as many options as they wished (i.e., ‘like’ and ‘distrust’ for example). Participants were informed that if they chose to react to a post other users would be able to see their reactions. They were asked to treat the platform as they would any other social media network. The order in which reaction buttons appeared on screen was counterbalanced across participants. Participants also indicated their age, gender, ethnicity, and political orientation. The task was coded using the Qualtrics online platform (https://www.qualtrics.com).
 
-## Memory/attention check
+#### Memory/attention check
 
 At the end of the experiment, participants were presented with five posts and had to indicate whether these were old or new. This is to ensure that participants were attentive during the experiment. Participants who failed more than two of the memory checks were excluded from the analysis.
 
-## Task (Experiment 2)
+#### Task (Experiment 2)
 
 In Experiment 2, participants engaged in a simulated social media platform where they saw the same 100 posts (50 true, 50 false) shown to participants in Experiment 1. Participants had to either ‘repost’ or ‘skip’ each post (see Figure 4). They were told that if they decided to repost, then the post would be shared to their feed, and they would observe other participants’ reaction to it. We used a between-subject design with five environments. Depending on the environment participants were randomly assigned to, they could either see (1) how many people disliked the post, (2) how many people liked the post, (3) how many people distrusted the post, or (4) how many people trusted the post. We also included a Baseline environment, in which participants received no feedback. Due to logistic constraints, the feedback was not collected in real time but was instead taken from participants’ reactions in Experiment 1. The participants, however, believed the reactions were provided in real time as indicated by a rotating cogwheel (1 s). If participants selected to skip, they would also observe a rotating cogwheel (1 s) and then a screen asking them to click continue. The average duration of the white screen (M = 2.351 s; SE = 0.281) was not different from the average duration of feedback (M = 2.625 s; SE = 0.245; t(233) = 0.853, p = 0.395, Cohen’s d = 0.056). Though the duration of trials in which participants chose to skip (M = 9.046, SE = 0.38) was slightly shorter than those in which they chose to share (M = 9.834, SE = 0.358; t(233) = 2.044, p = 0.042, Cohen’s d = 0.134). Thereafter, participants were presented with all the posts again and asked to indicate if they believed the post was accurate or inaccurate on a continuous scale from 0 = inaccurate to 100 = accurate. Finally, participants completed a short demographic questionnaire assessing age, gender, ethnicity, and political orientation. The task was self-paced. The task was coded using JsPsych and Javascript.
 
-## Task (Experiment 3)
+#### Task (Experiment 3)
 
 Experiment 3 (see Figure 4) was identical to the task used in Experiment 2 with three exceptions:
 
-## Task (Experiments 4–6)
+#### Task (Experiments 4–6)
 
 The tasks and analysis in Experiments 4–6 were identical to those used in Experiments 1–3 except for the following differences:
 
-## Statistical analysis
+### Statistical analysis
 
-## Statistical analysis (Experiment 1)
+#### Statistical analysis (Experiment 1)
 
 We examined whether participants used the different reaction buttons to discern true from false information. For positive reactions (e.g., ‘likes’ and ‘trusts’) discernment is equal to the proportion of those reactions for true information minus false information, and vice versa for negative reactions (‘dislikes’ and ‘distrusts’). Proportions were calculated for each participant and then entered into a 2 (type of reaction: ‘trust’ and ‘distrust’/‘like’ and ‘dislike’) by 2 (valence: positive, i.e., ‘like’, ‘trust’/negative, i.e., ‘dislike’, ‘distrust’) within-subject ANOVA. Political orientation was also added as a between-subject factor (Republican/Democrat), allowing for an interaction of political orientation and type of reaction to assess whether participants with differing political beliefs used the reaction buttons in different ways. We performed one-sample t-tests to compare discernment (equal to the proportion of those reactions for true information minus false information, and vice versa for negative reactions) against zero to assess whether each reaction discerned between true and false information. To examine whether participants’ frequency of use of each reaction option differed we again ran a within-subject ANOVA, but this time with percentage frequency of reaction option used as the dependent variable. We computed a Pearson’s correlation across participants between frequency of skips and discernment.
 
 One participant selected ‘other’ for political orientations. This participant was not included in the analysis because political orientation was included in analyses, and such small group sizes could heavily skew results. All statistical tests conducted in the present article are two sided. Analysis was conducted using IBM SPSS 27 and R Studio (Version 1.3.1056). All statistical tests conducted in the present article are two sided. All results of interest hold when controlling for demographics (age, gender, and ethnicity; see Supplementary files 9–16).
 
-## Discernment analysis (Experiments 2 and 3)
+#### Discernment analysis (Experiments 2 and 3)
 
 Discernment is calculated for each participant by subtracting the proportion of sharing false information from the proportion of sharing true information. High discernment indicates greater sharing of true than false information. In Experiment 2, scores were submitted into an ANOVA with type of feedback (‘(Dis)Trust’ vs ‘(Dis)Like’ vs Baseline), valence of feedback (positive, i.e., ‘like’, ‘trust’ vs negative, i.e., ‘dislike’, ‘distrust’), political orientation and an interaction of political orientation and type of feedback. To assess whether frequency of posts shared differed we used the same ANOVA, this time with percentage of posts shared out of all trials as the dependent variable.
 
@@ -216,7 +362,7 @@ To test whether ‘(Dis)Trust’ feedback improves belief accuracy, we transform
 
 Analysis of Experiment 3 followed that of Experiment 2 with the difference being that we had three type of feedback environments (Baseline, ‘Like & Dislike’, and ‘Trust & Distrust’) and of course no valence of feedback (as all environments were mixed valence or no valence). Data of participants who selected ‘other’ for political orientations (Experiment 2 = 28, Experiment 3 = 12) were not analyzed, because political orientation was included in the analyses variable, and small group sizes of ‘other’ could heavily skew results.
 
-## Drift-diffusion modeling (Experiments 2 and 3)
+#### Drift-diffusion modeling (Experiments 2 and 3)
 
 To assess whether being exposed to an environment with ‘(Dis)Trust’ feedback impacted the parameters of the evidence accumulation process in our data compared to Baseline and ‘(Dis)Like’ feedback we analyzed our data using drift-diffusion modeling. To that end we ran three separate models – one for each type of feedback and included the following parameters: (1) t(0), amount of non-accumulation/non-decision time; (2) α, distance between decision thresholds; (3) z, starting point of the accumulation process; and (4) v, drift rate, is the rate of evidence accumulation.
 
@@ -224,6 +370,6 @@ We used the HDDM software toolbox (Wiecki et al., 2013) to estimate the paramete
 
 We then compared parameter estimates using 95% HDI. Specifically, for each comparison (‘(Dis)Trust’ vs ‘(Dis)Like’, ‘(Dis)Trust’ vs Baseline, ‘(Dis)Like’ vs Baseline) we calculated the difference in the posterior distributions and reported the 95% HDI of the difference. If this HDI did not include zero, we consider there to be a meaningful difference between the two feedback types compared. To validate the winning model, we used each group’s parameters obtained from participants’ data to simulate log-transformed response times and responses separately for each feedback type. We used the exact number of subjects and number of trials as in the experiments. Simulated data were then used to (1) perform model recovery analysis and (2) to compare the pattern of participants’ response to the pattern of simulated responses, separately for each group. We sampled 2000 times from the posteriors, discarding the first 500 as burn in. Simulation and model recovery analysis were performed using the HDDM software toolbox (Wiecki et al., 2013). One-way ANOVAs were computed to examine if simulated data reproduced the behavioral pattern from experimental data. To that end, discernment was entered into a one-way ANOVA with type of feedback as the independent variable for Experiments 2 and 3 separately. Note, that as we did not enter veracity of the post into our DDM and instead entered responses as either ‘veracity-promoting’ (true post shared or false post skipped) or ‘veracity-obstructing’ (false post shared or true post skipped). Thus, discernment was calculated as the proportion of true posts shared and false posts skipped minus the proportion of true posts skipped and false posts shared.
 
-## Analysis (Experiments 4–6)
+#### Analysis (Experiments 4–6)
 
 The analyses were identical to those in Experiment 1–3 except that the samples were not politically balanced (see Participants Experiments 4–6), as such analysis did not take into account political orientation.

@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Integrative Biology, University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Center for Quantitative Cell Imaging, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01y2jtd41 Department of Neuroscience, University of Wisconsin-Madison Madison United States
-4. https://ror.org/05cb4rb43 Morgridge Institute for Research Madison United States
+1. Department of Integrative Biology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Center for Quantitative Cell Imaging, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Neuroscience, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. Morgridge Institute for Research Madison United States ([ROR:05cb4rb43](https://ror.org/05cb4rb43))
 5. National Innovation Center for Advanced Medical Devices Shenzen China
 6. Department of Biology and Psychology, Georg-August-University Göttingen Germany
 
@@ -40,63 +40,127 @@ In this study, we reveal critical functions for KLC4 in sensory axon branching a
 
 ## Results
 
-## klc4 is expressed during early development
+### klc4 is expressed during early development
 
 klc genes encode proteins with conserved functional domains including the heptad repeat region that mediates binding to KHC, six cargo-binding tetratricopeptide repeats (TPRs), a C-terminal lipid-binding amphipathic helix, and an LFP motif that mediates KLC auto-inhibition (Figure 1A; Antón et al., 2021; Cockburn et al., 2018; Morfini et al., 2016; Pernigo et al., 2018; Zhu et al., 2012). As a first step toward understanding developmental functions of KLC4, we investigated the expression of zebrafish klc4 at different stages of development. Zebrafish klc4 has two alternative splice isoforms, one long and one short, both of which are also present in other vertebrates including mice and humans. In zebrafish, the long klc4 transcript encodes a full length protein of 620 amino acids while the short isoform is predicted to encode a 185 amino acid protein, ending just before the LFP motif (Figure 1—figure supplement 1A). To determine whether both transcripts are expressed during development, we performed non-quantitative reverse transcriptase-PCR with transcript-specific primers on RNA extracted from embryos during early development (Figure 1B, Figure 1—figure supplement 1A). We found that both isoforms are expressed throughout early development, with expression detectable at 2 hours post fertilization (hpf) and continuing through the initial period of neuronal axon outgrowth, pathfinding and branching, between 16 and 28 hpf (Figure 1B). We next used in situ hybridization to determine the spatial expression pattern of klc4 during development, using a riboprobe that binds both transcripts. At 24 hpf, klc4 is expressed in clusters of neurons in the telencephalon, epiphysis, diencephalon, ventral midbrain and hindbrain, and in the trigeminal and the posterior lateral line (pLL) ganglia (Figure 1C and D). In the spinal cord, klc4 is strongly expressed in the Rohon-Beard sensory neurons, and at lower levels in other neuron populations (Figure 1E). At 48 hpf, klc4 continues to be expressed broadly in the nervous system with high expression levels in the trigeminal ganglia, pLL ganglia, and RB neurons (Figure 1F, G and H). A riboprobe that only binds the long isoform shows a similar expression pattern to the probe that recognizes both isoforms (Figure 1I, J and K), indicating the full-length klc4 mRNA is present in developing neurons. The early expression of klc4 in diverse neural populations in both the central and peripheral nervous system suggests it has functions in neural development.
 
-## Generation of klc4 mutants
+![Figure 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram of the highly conserved domains of KLC4. Arrows indicate where mutation occurs in humans and in our zebrafish mutant. (B) Qualitative RT-PCR showing both long and short klc4 isoforms are expressed throughout development. (C–D) In situ hybridization for klc4 mRNA shown in lateral view (C) or dorsal view (D) of the head in wild type 24 hpf embryos. (E) Lateral view of trunk showing klc4 expression in Rohon-Beard sensory neurons in a 24 hpf wild type embryo. (F–G) klc4 expression in the lateral view (F) or dorsal view (G) of the head of a 48 hpf wild type embryo. (H) Lateral view of trunk showing klc4 expression in the spinal cord of a 48 hpf wild type embryo. (I–K) Lateral (I,K) and dorsal (J) views of klc4 long isoform specific in situ hybridization in wild type 24 hpf embryos. Lateral (L,N) and dorsal (M) views of klc4 in situ hybridization in 24 hpf klc4uw314 mutant embryo head (L,M) and trunk (N) showing little expression of klc4. Te = telencephalon, dien = diencephalon, mb = midbrain, hb = hindbrain, tg = trigeminal ganglion, pllg = posterior lateral line ganglion, rb = rohon beard neuron.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram of the primer design for the RT-PCR of the long and short isoforms of klc4. For the long isoform, the primers were designed for regions of exon 8 (fwd) and exon 12 (rev), which are not contained in the short isoform. The amplified product is 421 bp. For the short isoform, the primers were designed against exon 2 (contained in long isoform) and the short isoform 3’UTR (not contained in long isoform). The amplified product is 523 bp. (B) The sequence alignment around the 25 bp deletion within exon 3 contained in klc4uw314 mutants.
+
+### Generation of klc4 mutants
 
 To assess the role of KLC4 during neural development, we used CRISPR/Cas9 to generate klc4 mutants. We used a guide RNA targeting exon 3 of klc4, which encodes a part of the N-terminal heptad repeat region. One resulting allele, klc4uw314, has a 25 bp deletion in exon 3 from 404bp to 428bp in the heptad repeat region that leads to an early stop after 9 missense amino acids (Figure 1A, Figure 1—figure supplement 1B). Heterozygous klc4uw314 mutants were outcrossed to wild type (AB strain) fish for three generations to remove any off-target mutations from the background. In situ hybridization analysis of homozygous klc4uw314 mutant embryos showed virtually no klc4 mRNA expression, suggesting that the mutant transcript undergoes nonsense-mediated decay (Figure 1L, M and N).
 
-## klc4uw314 mutants show reduced branching of RB peripheral sensory axons
+### klc4uw314 mutants show reduced branching of RB peripheral sensory axons
 
 Because klc4 is highly expressed in spinal RB sensory neurons, we first analyzed the effects of klc4 mutation on their axon growth and morphology. We crossed the klc4uw314 mutants with a transgenic line in which RB neurons are labeled with membrane-targeted GFP [Tg(–3.1ngn1:gfp-caax)] (Andersen et al., 2011) and used light sheet microscopy to image RB axon development across the whole embryo (Figure 2A and B). Inspection of mutant embryos revealed that RB peripheral axon branches appeared less dense and displayed less overall innervation of the sensory field compared to wild type (Figure 2A and B, Figure 2—videos 1 and 2). To quantify these differences we labeled sensory neurons with anti-HNK1 antibody at 24 hpf (Figure 2C, D and E). We counted the number of axons that crossed eight regions of interest drawn at standardized intervals from the central axon fascicle, proceeding from dorsal to ventral (Figure 2—figure supplement 1). Consistent with our visual impression of reduced branching, mutant embryos had consistently fewer axons at each ROI (Figure 2F). The reduction in branches at the most dorsal levels in the mutant embryos may indicate an effect on initiation of the peripheral axon, which most often forms as a branch from the central axon near the cell body (Andersen et al., 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Stills taken at approximately 24 hpf from long term light sheet movies of wild type (A) or klc4uw314 mutant (B) embryo development Scale bar = 150µm. (C) Diagram of a 24 hpf embryo indicating the area over the yolk tube extension imaged for axon analysis, with the standard region used for analysis outlined by the white dashed rectangle. (D–E) Representative examples of HNK-1 stained embryos showing peripheral axon branching in wild type (D) and klc4uw314 I embryos. (F–G) Quantification of axon branching across three technical replicates in wild type (n=32) and klc4uw314 mutant (n=32) embryos (F) and DMSO (n=12) and kinesore (n=17) treated embryos (G). Error bars = SEM. Statistical significance was measured by comparing the area under the curve for (F–G) using t-test. For (F), *p=0.0378 for entire graph. For (G), *p=0.0484 for shaded region. (H–I) Representative examples of HNK-1 stained embryos showing peripheral axon branching in DMSO (H) and kinesore treated (I) embryos. Scale bars for D,E,H,I = 50 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A standard sized ROI (ROItrunk) from the trunk over the yolk tube extension is selected with the top of the ROItrunk aligned to the bottom of the central axon fascicle. Eight 3 µm ROIs (white and green, ROIn, n=1–8) are selected at regularly spaced intervals along ROItrunk. Each ROIn is duplicated and then thresholded into a binary image. This binary image is run through Particle Analysis in ImageJ, which counts the number of particles present with gating for size and shape characteristics. We use the number of particles counted to represent the number of branches passing through ROIn.
+
 As an alternative approach to understand the role of KLCs in axon branching, and to develop a more time-resolved means to disrupt KLC function, we took a pharmacological approach. Specifically, embryos were treated with Kinesore, a small molecule that has been shown to interfere with the interaction between the KLC TPR repeat domain and cargo adaptor proteins, while also relieving KLC auto-inhibition and activating kinesin-1’s ability to cross-link MTs and regulate MT dynamics (Randall et al., 2017). We found that treatment of wild type embryos with 100 µM Kinesore during early stages of peripheral axon arborization, from 17 hpf to 24 hpf, caused a reduction in axon branch number in ventral regions at 24 hpf of a similar magnitude to that seen in klc4uw314 mutants (Figure 2G-I), although more dorsal branching appears unaffected. These results give further evidence that properly regulated KLC-cargo interactions or kinesin-1-MT interactions during axon outgrowth are important for successful axon branching.
 
-## KLC4 is required for stabilization of axon branches
+### KLC4 is required for stabilization of axon branches
 
 To investigate which specific dynamic processes during branching are affected by klc4 loss of function, we used live confocal imaging. Zebrafish RB axons branch by two mechanisms: growth cone bifurcation (GCB) and interstitial back branching (IB) (Gibson and Ma, 2011). To determine if GCB, IB or both were defective in mutants, we used the Tg(–3.1ngn1:gfp-caax) transgenic line (Andersen et al., 2011). Z-stacks of RB peripheral axon arbors were collected every 1–1.5 min for 2–4 hr beginning from approximately 18 hpf. The number of branch initiation and retraction events during a 2-hr time window were counted and categorized as either a GCB (Figure 3A, white arrows) or IB event (Figure 3A, magenta arrows). Surprisingly, we found no difference in the rate of branch initiation between klc4uw314 mutant and wild-type embryos (Figure 3C). In both conditions, new branches were initiated via GCB more frequently than IB, but there was no difference in the proportion of GCB versus IB branching events between wild-type and klc4uw314 mutants.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig3-v2.jpg)
+
+**Figure 3.:** (A) A wild type axon forms stable branches by growth cone bifurcation (GCB, white arrows) and interstitial branching (IB, magenta arrows) over the course of 38’ min. (B) A klc4uw314 mutant axon initiates a branch via GCB (0minutes, white arrow), but one branch begins to retract and is nearly fully gone after 66’ min (panel 3, white arrow). 20 µm scale bar. (C) Quantification of axon branch initiations per neuron per hour in wild type and mutant embryos wild type GCB mean = 2.22 branches/neuron/hr, N=11 neurons from 4 embryos. Klc4uw314 GCB = 2.13 branches/neuron/hr, N=14 neurons from 4 embryos. Wild type IB=0.99 branches/neuron/hr, N=10 neurons from 4 embryos. Klc4uw314 IB = 0.65 branches/neuron/hr, N=8 neurons from 4 embryos. Error bars = SEM. There was no significant difference in branch initiation between wild type and mutant axons. GCB P=0.73, IB P=0.15, Mann–Whitney test. (D) Quantification of branches that retracted after initiation in wild type and klc4uw314 embryos. Data are displayed as a branch loss ratio (branches retracted/total branching events). Branches created by either GCB or IB were both more likely to retract in klc4uw314 embryos (wild type GCB mean = 0.13, N=11 neurons from 4 embryos; klc4uw314 GCB = 0.58, N=14 neurons from 4 embryos; wild type IB = 0.10, N=10 neurons from 4 embryos; klc4uw314 IB = 0.62, N=8 neurons from 4 embryos). **p=0.0055, ****p<0.0001, Mann–Whitney test. Error bars = SEM. (E) Quantification of axon growth velocity. Axons in klc4uw314 mutants grow faster than in wild type. Wild type N=19 axons from 3 embryos. Klc4uw314 N=22 axons from 4 embryos. ***P=0.0001, Mann-Whitney test. Error bars = SEM.
+
 Nevertheless, the live imaging immediately suggested an explanation for the branch number deficit: failure of branches to persist. That is, following formation, while most of the branches in wild type animals were relatively stable and continued growing (Figure 3—video 1), those in the mutants often retracted after formation (Figure 3B, Figure 3—video 2). Quantification showed that in klc4uw314 mutants, 57.7% of GCB branches and 61.9% of IB branches retracted after initiating, compared to 14.2% of GCB and 11.8% of IB branches in wild type (Figure 3D). Mutants showed no significant directional bias to the retracted branches (on average, 52.5% of branches lost per neuron were anteriorly-directed, and 47.2% were posteriorly-directed. p=0.6588). This phenotype cannot be explained as a general axon growth defect, as klc4uw314 mutant axons grew at a faster rate than wild type axons (Figure 3E). Thus, these data suggest that KLC4 is required specifically for stabilization of axon branches.
 
-## Sensory axon arborization pattern is altered in klc4uw314 mutants
+### Sensory axon arborization pattern is altered in klc4uw314 mutants
 
 Peripheral sensory axons develop a distinctive arborization pattern to successfully innervate the sensory field. During this process, axons mutually repel each other upon contact (Sagasti et al., 2005; Liu and Halloran, 2005). Precise regulation of contact repulsion as well as branching are critical for effective tiling of the entire skin. To determine whether mutants have altered arborization and to quantify branching pattern in an unbiased manner, we developed an image analysis pipeline to measure axon directional orientation and overall axon abundance (Figure 4). We used OrientationJ (Rezakhaniha et al., 2011) to measure the fluorescence signal of aligned pixels at each orientation (Figure 4A and B) and created an axon directionality “profile” that represents the average signal at each 1.0 degree angle interval across multiple embryos (Figure 4C). In wild-type embryos, most axons are oriented in ventral-posterior and ventral-anterior directions, with a higher proportion of axon signal in posteriorly directed angles, peaking approximately between –50° and –85° (Figure 4A and C, Figure 4—figure supplement 1A). Little signal was detected in the horizontal (0 degrees) orientation. In contrast, klc4uw314 mutants had reduced overall axon signal compared to their wild-type cousins (Figure 4B and C, Figure 4—figure supplement 1B), consistent with the reduced branch density. Mutants showed an overall directional profile similar to wild type (Figure 4B and C). However, because differences in axon orientation between wild type and mutants may be masked by the overall difference in signal, we normalized the data and displayed it as a percentage of total signal at each angle. We found a small but significant increase in axons oriented in the posterior direction in klc4uw314 mutants, specifically those oriented between –20.5° and –50.5° (Figure 4D). There was no difference in the proportion of anterior-directed axons between wild type and klc4uw314 mutants (Figure 4—figure supplement 1C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) A representative region of axon analysis for a 24 hpf wild type (A) and klc4uw314 (B) embryo. The axons are color coded for directionality according to the legend in the upper left corner of (A). (C) Plot of axon directionality in 24 hpf wild type (green) and klc4uw314 mutants (magenta). (D) Axon directionality data was normalized to total signal and posterior angles are displayed to compare directional bias. Area under the curve was measured for shaded area and tested for statistical significance using a t-test. **P=0.0047. For (C–D), error bars = 95% CI. Wild type N=40 embryos, klc4uw314 N=23 embryos.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) All individual data points for the 40 wild-type embryos analyzed (dots), with the mean overlayed (dark green line). (B) All individual data points for the 23 klc4uw314 mutant embryos analyzed (dots), with the mean overlayed (magenta line). (C) Axon directionality data normalized to total signal with posterior and anterior data displayed. Error bars = 95% CI.
+
 To investigate what changes in axon behavior could generate the posterior orientation bias in mutants, we turned to live imaging. We analyzed the growth direction of actively extending axons by measuring the orientation angle of the distal-most axon shaft at each time point over 2–4 hr movies (Figure 5A) and displaying the distribution of growth angles as rose plots. We found klc4uw314 mutant axons had a preference for posterior growth paths, while wild-type axons had no anterior-posterior bias (Figure 5B and C). We then measured the angles between newly bifurcating sister branches. Prior to bifurcation, axons commonly grow in a posterior direction in both wild type and mutant embryos (Figure 5D). As growth cones bifurcate in wild-type embryos, the sister branches grow away from each other (Figure 5D’ and E, Figure 5—video 1), resulting in an average branch angle of 96.5 degrees 15 min after branch formation, and 91.7 degrees 75 min after branch formation (Figure 5E and G). This behavior results in axon arbors with an even distribution of axon orientation angles in wild-type embryos (Figure 4C). In klc4uw314 mutants, the newly formed branches did not separate as much, resulting in a shallower average angle of 79.7 degrees between sister branches 15 min after branch formation, and narrowing to 60.2 degrees after 75 min (Figure 5F and G, Figure 5—video 2). In fact, branches in klc4uw314 mutants at times failed to repel at all, instead appearing to collapse onto one another (see Figure 6B). These results suggest that KLC4 may be involved in mediating mutual repulsion between sister axon branches. Moreover, the posterior growth bias detected by automated orientation analysis in klc4uw314 mutant embryos (Figure 4C) is likely the result of branch separation failure. Because axons initially tend toward posterior growth, reduced branch separation or collapse of anteriorly directed branches onto the more posterior axon shaft leads to axon arbors with an overall increase in posterior orientation angles. Thus, our automated, population-scale method of axon orientation profiling led to the discovery of a branch separation defect, demonstrating the utility of the profiling method for revealing alterations in axon arbor pattern.
 
-## Peripheral axons in klc4uw314 mutants exhibit abnormal fasciculation behavior
+![Figure 5.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig5-v2.jpg)
+
+**Figure 5.:** (A) Illustration of how axon growth direction was measured. The angle between an axon’s position in each frame and the frame preceding it was measured. (B–C) These angles were plotted as rose plots to show growth direction distributions. Wild type axons grow evenly between anterior and posterior directions, while klc4uw314 mutant axons show a preference for posterior directed growth. Wild type N=19 axons from 3 embryos. Klc4uw314 N=22 axons from 4 embryos. (D) Stills from a live capture of wild type axon outgrowth, showing that axons often grow posteriorly, but anterior directed branches form over time (D’, white arrows). (E) As a branch forms in a wild type peripheral axon, the angle between sister branches remains consistent as axons grow apart. (F) In klc4uw314 mutants, sister branches do not grow as far apart and the sister branch angle narrows over time compared to wild type. All scale bars = 20 µm. (G) Quantification of the angle between newly formed sister branches at 15 and 75 min after branch creation. Wild type 15’ N=37 branches, klc4uw314 15’ N=36 branches, Wild type 75’ N=25 branches, klc4uw314 75’ N=18 branches. 4 embryos per genotype. *p=0.021, ***p=0.0003, One-way ANOVA. Error bars = 5-95th percentile.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig6-v2.jpg)
+
+**Figure 6.:** (A) In wild type embryos, the most common response to self or non-self contact between axons is retraction. Two neighboring axons in a wild type embryo make contact (time 0’) and within 30 min, one of the axons has retracted. (B–C) When axons make contact in klc4uw314 embryos, they often fasciculate instead of retracting. This happens with both self-contacts (B–C, sf) and non-self-contacts (C), nsf. All scale bars = 20 µm. (D) Fasciculations per neuron, separated by self or non-self, as well as all fasciculations combined. Wild type N=35 neurons in 4 embryos. Klc4uw314 N=37 neurons in 5 embryos. Error bars = SEM. (E) Fasciculation length was measured from the last frame of each 2 hr imaging period. Wild type N=3 fasciculations, klc4uw314 N=19 fasciculations. Mean with SEM displayed over individual data points. Because fasciculation events are rare in wild-type embryos and a length measurement is conditional on the event occurring, we could not apply a statistical test to assess the significance of the difference in fasciculation length.
+
+### Peripheral axons in klc4uw314 mutants exhibit abnormal fasciculation behavior
 
 Live imaging also revealed a broader defect in axon repulsion: normally, in wild type embryos when a peripheral axon growth cone contacts another axon (either a branch of the same neuron or of another neuron) it retracts or changes direction to grow away from the other axon, thus minimizing contact between axons (Sagasti et al., 2005; Liu and Halloran, 2005; Figure 6A). However, in klc4uw314 mutants, axons often fasciculate after such contacts and grow together for substantial distances (Figure 6B and C, Figure 6—video 1). In some cases, axons were fasciculated so tightly that they only became distinguishable as two axons when pulled apart by the force of a developing branch (Figure 6C, arrows, Figure 6—video 1, minutes 41–47, Figure 6—video 2, minutes 24–44). In wild-type embryos, all observed fasciculations (n=3) resolved by retraction or defasciculation, but only 46.5% of fasciculations (n=19) in klc4uw314 mutants were resolved in this manner. Fasciculation behavior was quantified by measuring the frequency and length of fasciculation events occurring during our live imaging period. We found that fasciculation events were rare in wild type embryos but occurred relatively frequently in mutants (Figure 6D). Fasciculations ranged from 7.5 to 60.5 µm in length in klc4uw314 mutants (Figure 6E). Together, these results show that KLC4 is important for the mutual repulsion needed to shape sensory arbors. The mutual repulsion normally exhibited by peripheral axons is in contrast to the fasciculation behavior of the central axons from the same neuron. The failure of klc4uw314 mutant peripheral axons to show repulsion suggests that KLC4 may be involved in the localization of factors controlling central versus peripheral axon behavior.
 
-## RB neurons have aberrant apical axons in klc4uw314 mutants
+### RB neurons have aberrant apical axons in klc4uw314 mutants
 
 RB neurons in klc4uw314 mutants also showed abnormal morphology suggestive of altered cell polarity. We found that some RB neurons in Tg(–3.1ngn1:gfp-caax);klc4uw314 mutant embryos and Kinesore-treated embryos projected a process from the apical cell body that crossed the midline within the dorsal spinal cord (Figure 7A and B, Figure 7—videos 1 and 2). Small apical protrusions sometimes form on RB neurons, especially in the anterior portion of the spinal cord, though they can be found nearly anywhere along the spinal cord. These processes are typically short, dynamic, and are most common early in development (18–24 hpf; Figure 7—video 3). In wild-type embryos, they rarely cross the midline of the spinal cord. We counted the number of midline crossing apical processes from images of anti-HNK-1-labeled embryos captured in the spinal cord overlying the yolk extension and found that 4% of neurons (n=1,509 neurons in 51 embryos) in klc4uw314 mutants had midline crossing processes compared to 1% in wild type embryos (n=608 neurons in 21 embryos) (Figure 7C). Similar results were obtained following treatment with Kinesore from 18 to 24 hpf, with 7% of Kinesore-treated neurons (n=433 neurons in 17 embryos) extending an apical protrusion that crossed the midline, compared to 2% of neurons in vehicle-treated control (n=436 neurons in 15 embryos) (Figure 7C). To further assess neuronal morphology and the pathways of the aberrant projections, we sparsely labeled individual RB neurons by injecting DNA encoding TagRFP-caax driven by the –3.1ngn1 promoter at the one-cell stage. This mosaic cell labeling showed that the apical processes grew to and fasciculated with the contralateral central axon fascicle in both klc4uw314 mutant and kinesore-treated embryos (Figure 7D and F), suggesting they may respond to cues directing central axon behavior despite emerging from an ectopic apical location. These results suggest that KLCs have a role in determining the location of axon emergence from the cell body.
 
-## Endosomal vesicle transport is altered in klc4uw314 mutants
+![Figure 7.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) Confocal projections (dorsal views) of partial z-stacks containing only the optical sections in the plane of the RB cell bodies within the spinal cord in a wild-type Tg(–3.1ngn1:gfp-caax) embryo (A), or a klc4uw314 Tg(–3.1ngn1:gfp-caax) embryo (B), with an apical protrusion from a neuron crossing the midline and reaching the contralateral side (white arrowhead). Scale bars = 20 µm. (C) The percentage of neurons per embryo that had an apical protrusion crossing the midline of the spinal cord was quantified. **p<0.0052, Mann–Whitney test. Mean with SEM displayed over individual data points. Wild type N=608 neurons from 21 embryos, klc4uw314 N=1496 neurons from 47 embryos, 2% DMSO N=429 neurons from 15 embryos, Kinesore N=595 neurons from 21 embryos. (D–F) Mosaic labeling of individual neurons by injection with –3.1ngn1:gfp-caax DNA into klc4uw314 mutants (D), DMSO-treated embryos I or kinesore-treated embryos (F) showing that apical protrusions (magenta arrowheads) can fasciculate onto the contralateral central axon.
+
+### Endosomal vesicle transport is altered in klc4uw314 mutants
 
 To begin exploring the mechanisms by which KLC4 affects axon arbor development, we imaged endosomal vesicle transport. We previously found that a properly functioning endosomal trafficking system is necessary for RB axon branching (Ponomareva et al., 2014; Ponomareva et al., 2016). Moreover, we showed that the kinesin adaptor Clstn1 is required for branching and that it functions in part by trafficking Rab5-labeled endosomal vesicles to branch points (Ponomareva et al., 2014). We used a previously described zebrafish Rab5c construct (Clark et al., 2011) to label Rab5-containing endosomes in vivo. We expressed GFP-Rab5c in individual RB neurons by injecting ngn1:GFP-Rab5c DNA into embryos at the one-cell stage (Figure 8A). We imaged vesicle movement using a high-speed swept field confocal microscope that allows imaging of rapid events in 3D. We captured z-stacks of RB axon arbors at 2–5 s intervals for 7–10 min periods and used kymography to quantify endosome dynamics (Figure 8A’). We found some alterations in transport. In klc4uw314 mutants, a smaller proportion of vesicles moved in the anterograde direction compared to wild type (Figure 8B), and the maximum anterograde vesicle run length was reduced (Figure 8C), suggesting that some aspects of Rab5 vesicle transport or a subset of Rab5 vesicles rely on KLC4 function. However, there was no significant difference in velocity of the Rab5 vesicles that were moving, suggesting these vesicles can attach to the motor without KLC4 (Figure 8D).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig8-v2.jpg)
+
+**Figure 8.:** (A) Live RB neuron expressing eGFP-Rab5c. Scale bar = 10 μm. (A’) Representative kymograph of axon segment boxed in magenta in (A).(B) Percentage of anterogradely moving vesicles out of all motile Rab5 vesicles in peripheral axons. The proportion of anterogradely moving vesicles is decreased in klc4314 mutants, *p=0.0372 by Mann-Whitney test; error bars = mean with SD. Wild type N=15 embryos, klc4314 N=15 embryos. (C) Average Rab5 vesicle run length and maximum anterograde vesicle run length in peripheral axons. *p=0.0358, ns p=0.5359, Mann-Whitney test. (D) Rab5 vesicle velocity in peripheral axons. NS by Mann-Whitney test (anterograde p=0.6505, retrograde p=0.0792), wild type N=12 embryos, klc4314 N=11 embryos. For all data, one neuron per embryo was analyzed. Error bars in box and whisker plots represent 5-95th percentile.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative image series of PA-GFP-Rab5 photoactivation. A region outlining the cell body is selected and photoactivated using a 405 nm laser (middle panel). Rab5 vesicles can then be visualized moving into the axon and into branch points (lower panel). (B) We quantified the accumulation of Rab5 at branch points by dividing the acquired images into 4 time periods (t1–t4) comprised of 7–8 min intervals and measuring the signal at branch points from maximum intensity projections of each time period (t1–t4). Signal was normalized to the signal at t1. There was no significant difference in the area under the curve between klc4+/+ and klc4uw314 mutants (p=0.1319, t-test, klc4+/+ N = 42 branches from 20 embryos, klc4uw314 N=18 branches from 8 embryos). Error bars = SEM.
+
 To determine whether KLC4 regulates Rab5 vesicular transport from the cell body specifically to axon branch points, we labeled Rab5c with photoactivatable GFP (PA-GFP). We co-injected ngn1:PA-GFP-Rab5c and ngn1:TagRFP-caax to label individual RB neurons. We photoactivated the GFP in the cell body during stages when peripheral axons are actively growing and branching, and captured images at ~1–2 min intervals for 30–40 min after photoactivation (Figure 8—figure supplement 1A). We previously reported that in wild type embryos, PA-GFP-Rab5c vesicles originating in the cell body appeared to accumulate at the peripheral axon initiation point and in secondary branch points within minutes of photoactivation (Ponomareva et al., 2014). To quantify vesicle accumulations at branch points over time, we divided the movies into 4 time periods (t1-t4), made maximum intensity projections of the z-stacks for t1-t4, and measured the fluorescent signal at branch points as a percentage of the signal at the first time period (t1). In both wild type and klc4 mutant neurons, the intensity increased similarly during this period, suggesting KLC4 does not play a significant role in vesicle delivery from the cell body to branch points (Figure 8—figure supplement 1B).
 
-## Microtubule dynamics are altered in klc4uw314 mutants
+### Microtubule dynamics are altered in klc4uw314 mutants
 
 Because local changes in MT dynamics are associated with axon branch formation, and MT invasion of nascent axon branches is required for branches to be stabilized and maintained (Yu et al., 1994; Dent and Kalil, 2001; Yu et al., 2008; Gallo, 2011; Armijo-Weingart and Gallo, 2017), we assessed whether the MT cytoskeleton is affected in klc4uw314 mutants. To visualize MT dynamics in vivo, we used the MT plus-tip binding protein EB3 fused to GFP (Stepanova et al., 2003). EB3-GFP binds to the plus ends of actively polymerizing MTs, which appear as moving GFP puncta or ‘comets’. We expressed EB3-GFP in RB neurons by injecting ngn1:EB3-GFP DNA, and imaged with a swept field confocal microscope. We captured z-stacks at 2–5 s intervals for periods ranging from 7 to 10 min and analyzed microtubule dynamics using kymography (Figure 9A, Figure 9—video 1). In axons, the majority of comets move in the anterograde direction, reflecting the plus-end-distal organization of MTs. We found no change in the percentage of retrograde comets between wild type and klc4uw314 mutants, suggesting KLC4 is not necessary for organization of MT polarity (Figure 9B and C). However, we found a significant increase in the frequency of anterograde comets in peripheral axons, but not central axons, in klc4uw314 mutant RB neurons (Figure 9B and D, Figure 9—figure supplement 1A), suggesting increased MT dynamics in peripheral axons. In addition, we found that the velocity of EB3-GFP comets, both anterograde and retrograde, was increased in peripheral and central axons in klc4uw314 mutants (Figure 9E, Figure 9—figure supplement 1B). There was no difference in the distance traveled by EB3-GFP comets in any condition (Figure 9—figure supplement 1C,D), although duration of anterograde comet runs was reduced in peripheral axons, consistent with their increased velocity (Figure 9—figure supplement 1E,F). Thus, the length of new MT polymer growth at plus ends is not affected in mutants, but mutant MTs polymerize faster, suggesting a role for KLC4 in regulating the growth rate of MT plus ends.
 
-## MTs in nascent branches are less stable in klc4uw314 mutants
+![Figure 9.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig9-v2.jpg)
+
+**Figure 9.:** (A-A”) Live RB neuron expressing EB3-GFP, scale bar = 10 μm. Magenta box in (A) indicates axon segment selected for kymograph in (A’). (A”) EB3 comets identified as anterogradely (green) or retrogradely (magenta) directed based on their angle. (B) Representative kymographs from peripheral axon segments of wildtype (top) or klc4uw314 (bottom). (C) Quantification of the percentage of retrograde comets out of all comets imaged for both peripheral and central axons. NS by Mann-Whitney test. (D) Peripheral axon comet frequency. ***p=0.0003, Mann-Whitney test. (E) Peripheral axon comet velocity. ***p=0.0004, *p=0.042, Mann-Whitney test. For all data, error bars = SEM. Wild type central N=8 segments, klc4uw314 central N=15 segments, Wild type peripheral N=26 segments, klc4uw314 peripheral N=48 segments. Wild type data from 10 neurons in 7 embryos. Klc4uw314 data from 13 neurons in 8 embryos. All comets in a kymograph were measured.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Central axon comet frequency. NS by Mann-Whitney test. (anterograde p=0.4664, retrograde p=0.7268) (B) Central axon comet velocity. *p<0.05, Mann-Whitney test. (C) Average distance traveled by peripheral axon comets. NS by Mann-Whitney test (anterograde p=0.1476, retrograde p=0.9288) (D) Average distance traveled by central axon comets. NS by Mann-Whitney test (anterograde p=0.3738, retrograde p=0.8836) (E) Average comet run time for peripheral axon comets. NS by Mann-Whitney test (***p=0.0001, NS p=0.1389) (F) Average comet run time for central axon comets. NS by Mann-Whitney test (anterograde p=0.3363, retrograde p=0.3196) For all data, error bars = SEM. Wild type central N=8 segments, klc4uw314 central N=15 segments, Wild type peripheral N=26 segments, klc4uw314 peripheral N=48 segments. Wild type data from 10 neurons in 7 embryos. Klc4uw314 data from 13 neurons in 8 embryos.
+
+### MTs in nascent branches are less stable in klc4uw314 mutants
 
 To ask whether MT dynamics are altered in newly forming branches, we co-injected ngn:EB3-GFP DNA with ngn:TagRFP-caax DNA to label cell membranes, and imaged EB3-GFP comets in nascent branches (Figure 10A). We found no difference in the frequency of comets in nascent branches between wild type and mutants (Figure 10B). EB3 comet frequency also did not differ between mutant and wild type when separated by branch type (IB vs GCB, data not shown, p>0.7 by t-test). However, because EB3-GFP comet frequency in peripheral axons overall is increased in klc4 uw314 mutants, the equivalent comet frequencies between mutant and wild type in nascent branches may represent a net reduction in MT polymerization into nascent branches in mutants.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig10-v2.jpg)
 
-**Figure 10.:** klc4 mutants.uw314(A) Still image of nascent RB branches expressing EB3-GFP in a live wild type embryo at 23hpf. (A’) Zoom in of the branches outlined in white in (A).(A”) EB3-GFP signal in nascent branches in (A’). (A’’’) Representative kymograph generated from nascent branch outlined in magenta in (A’). (B) Quantification of peripheral axon comet frequency. NS by Mann-Whitney test, p=0.8410. Wild type N=22 nascent branches from 9 embryos, klc4 N=25 nascent branches from 8 embryos. (uw314C-D’’) Representative examples of HNK-1 and acetylated tubulin stained embryos at 24hpf. White arrows in (C’-C’’) indicate nascent branches with tubulin acetylation. Magenta arrows in (D’-D’’) indicate nascent branches lacking tubulin acetylation. (E) Percentage of nascent branches containing acetylated tubulin out of all nascent branches. Fewer nascent branches contained acetylated tubulin in klc4 mutants. ****p<0.0001 by Mann-Whitney test. Wild type N=132 nascent branches from 15 embryos, and uw314klc4 N=143 nascent branches from 16 embryos. Scale bars = 20 μm. Error bars in box and whisker plots represent 5-95uw314th percentile.Figure 10—source data 1.Figure 10—source data 2.
+**Figure 10.:** (A) Still image of nascent RB branches expressing EB3-GFP in a live wild type embryo at 23hpf. (A’) Zoom in of the branches outlined in white in (A).(A”) EB3-GFP signal in nascent branches in (A’). (A’’’) Representative kymograph generated from nascent branch outlined in magenta in (A’). (B) Quantification of peripheral axon comet frequency. NS by Mann-Whitney test, p=0.8410. Wild type N=22 nascent branches from 9 embryos, klc4uw314 N=25 nascent branches from 8 embryos. (C-D’’) Representative examples of HNK-1 and acetylated tubulin stained embryos at 24hpf. White arrows in (C’-C’’) indicate nascent branches with tubulin acetylation. Magenta arrows in (D’-D’’) indicate nascent branches lacking tubulin acetylation. (E) Percentage of nascent branches containing acetylated tubulin out of all nascent branches. Fewer nascent branches contained acetylated tubulin in klc4uw314 mutants. ****p<0.0001 by Mann-Whitney test. Wild type N=132 nascent branches from 15 embryos, and klc4uw314 N=143 nascent branches from 16 embryos. Scale bars = 20 μm. Error bars in box and whisker plots represent 5-95th percentile.
 
 As another approach to assess MT stability in new branches, we fixed embryos at a stage of active branching (24 hpf) and double-labeled neurons with anti-HNK1 and an antibody to acetylated tubulin, a modification found on stable MTs (Webster and Borisy, 1989; Figure 10C and D). We analyzed terminal branches up to 10 μm in length formed by interstitial branching or bifurcation, then scored those with acetylated tubulin signal. We found a significant reduction in the percentage of nascent branches with acetylated tubulin in klc4uw314 mutants (Figure 10E). This finding suggests that KLC4 is required for MTs to stabilize in newly formed branches.
 
-## Larval and adult klc4uw314 fish show behavioral defects
+### Larval and adult klc4uw314 fish show behavioral defects
 
 The formation of functional neural circuits ultimately depends on the precise orchestration of cell biological processes during neural development. To ask whether KLC4 loss affects circuit function, we analyzed larval escape behavior in response to touch, a behavior mediated by sensory neurons. Larva at 3 days post-fertilization (dpf) were given a light tail touch, evoking a swim response (Figure 11A). The time of the swim response and number of swim bouts completed was measured for each larva. Klc4uw314 mutant larva swam for a longer total time (wild type median = 0.65 s, klc4uw314 1.49 s) and performed more swim bouts (wild type median = 1 bout, klc4uw314 mutants = 2 bouts) after touch stimulus than wild type larva (Figure 11B and C), suggesting KLC4 loss leads to hypersensitivity to touch.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig11-v2.jpg)
+
+**Figure 11.:** A 3 dpf larva is touched on the tail using a gel loading tip, provoking a swim response. (B) Larval response time was measured starting from beginning of swim to cessation of motion. (C) The number of swim bouts performed by each larva during total post-touch swim time was counted. For B-C, each point represents an individual larva. ***p=0.0005, Mann-Whitney test. Error bars = SEM. Wild type N=45, klc4uw314 N=41. 55 total larva were tested for each genotype, but larva that did not respond were not included in these data. (D) Schematic of the novel tank test design, with upper and lower zones demarcated by the center dotted line. (E) Percentage of fish per experiment that entered the upper zone of the tank during a 3-min exposure to a novel tank. Error bars = SEM. Each point represents one experiment day: wild type N=3 experiments with 30 total fish, klc4uw314 N=3 experiments with 39 total fish. (F) The time it took for individual fish to first cross into the upper zone during a 3-min exposure to a novel tank. Points represent individual fish, error bars = SEM. Wild type N=24, klc4uw314 N=8. Fish that did not cross into the upper zone are not represented in this data. NS by t-test, p=0.7766. (G) The total time fish spent in the upper zone of the novel tank during a 3-min exposure. Points represent individual fish, ***p=0.0002 by t-test, error bars = SEM. Wild type N=30, klc4uw314 N=39. (H) Percentage of fish to freeze per experiment during a 3-min exposure to the novel tank. Error bars = SEM. Each point represents one experiment day: wild type N=3 experiments with 30 total fish, klc4uw314 N=3 experiments with 39 total fish. (I) The total time fish spent frozen during a 3-min exposure to a novel tank. Points represent individual fish, ****p<0.0001 by Mann-Whitney test, error bars = SEM. Wild type N=30, klc4uw314 N=39.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Age-matched adult wild type and klc4uw314 mutant fish. Ruler tick marks represent 1 mm. (B) Body length measurements for age matched adult fish at 7 weeks and 9 weeks old. ****p<0.0001, **p=0.0024, *p=0.013, t-test. N is given in figure as individual fish. (C) Percentage of larvae consumed over an hour. **p=0.0090, t-test. Wild type N=31, klc4uw314 N=30.
 
 The cell biological defects found during development in klc4uw314 mutants seemed likely to lead to deficits in adult fish as well. Indeed, we found that klc4uw314 mutants are adult viable and fertile but are smaller in size than their wild-type siblings (Figure 11—figure supplement 1A). To measure body size in a controlled manner, we in-crossed F4 homozygous klc4uw314 mutants from both AB and mixed AB/TL backgrounds and separately in-crossed their wild-type (AB) siblings. The F5 embryos were born on the same day, raised side-by-side in an identical environment, and fed the same diet. We measured the body length of these fish at 7 weeks and at 9 weeks (Figure 11—figure supplement 1B). klc4uw314 mutants were on average 83.3% the size of their wild-type cousins at 7 weeks. This difference remained at 9 weeks, despite both the wild type and klc4uw314 mutant fish increasing in size, with klc4uw314 mutant fish measured at 84.6% the length of their wild-type cousins. Smaller body size has also been reported in klc1 mutant mice (Rahman et al., 1999), supporting the idea that KLCs are important for post-embryonic growth of the animal.
 
@@ -105,6 +169,14 @@ Multiple neural systems are affected in the human disease caused by KLC4 mutatio
 Freezing behavior in zebrafish in response to a novel environment has been previously described and interpreted as increased anxiety (Wong et al., 2010; Maximino et al., 2010; Ziv et al., 2013; Khan et al., 2017). To test whether klc4uw314 mutant fish show anxiety-like behavior, we used a novel tank diving test, which is similar in principle to the open field test used in rodents (Wong et al., 2010; Maximino et al., 2010). In this test, fish are introduced to an unfamiliar tank and allowed to explore. Zebrafish typically prefer to stay in the lower zone of the tank initially, and once they become acclimated, they begin to explore the upper regions of the tank (Figure 11D). We introduced adult animals (7 months old) to a novel tank and filmed their behavior for 3 min. Analysis revealed that 90.9% of wild type fish explored the upper zone of the tank during the 3-min window, compared to only 18.8% of the klc4uw314 mutant fish (Figure 11E). Of the animals that did explore the upper zone, both wild type and klc4uw314 mutant animals took an average of 100 s before their first cross into the upper zone (Figure 11F). Wild type animals spent an average of 14 s in the upper region of the tank, compared to just 3.26 s for klc4uw314 mutants (Figure 11G). Notably, freezing behavior, defined for this experiment as cessation of all movement except for gills for at least 3 s, was observed in an average of 43% of mutant fish, and only 3% of wild type fish (Figure 11H). 15.4% of klc4uw314 mutant fish, but no wild type animals, froze for the full 3-min duration of the experiment (Figure 11I).
 
 Studies in both zebrafish and rodents have shown that repeated exposure to the unfamiliar environment leads to habituation of the anxiety behavior. In zebrafish, habituation manifests as increased exploration of the upper zone and reduced freezing behavior. Fish that do not habituate to the novel environment or that worsen over multiple exposures are thought to demonstrate a depression-like phenotype (Ziv et al., 2013). Behaviors driven by increased anxiety are expected to lessen with repeat exposures. We tested the ability of klc4uw314 mutants to habituate to a novel environment after multiple exposures. In addition, because KLC4 and other kinesin-1 subunits have been implicated in neurodegenerative diseases, we sought to determine whether the anxiety-like behavior worsened with age. We challenged 1.25–1.5 year old klc4uw314 mutants and their wild type cousins by repeated exposure to a novel tank for 10 min, twice a week for 3 weeks in succession. The first exposure allowed us to test the effects of age. We found that increased age improved freezing response of klc4uw314 mutants, with only 29.2% (8 out of a total of 23) of individuals tested freezing for more than 3 s during first 3 min of exposure to the novel tank (Figure 12A). Aged wild-type animals worsened in performance, with 13.3% (3 out of 23) undergoing a bout of freezing behavior during first exposure. These numbers remained similar when the entire 10 min was analyzed (wt = 16.7%, mut = 29.2%, Figure 12B, Figure 12—figure supplement 1A). Mutant fish spent a longer period of time frozen than wild-type fish and underwent more total bouts of freezing per fish (Figure 12C, Figure 12—figure supplement 1B). Upon subsequent exposures to the same tank, klc4uw314 mutant freezing behavior worsened (Figure 12B, Figure 12—figure supplement 1A, B), with 50% of klc4uw314 mutants freezing by the sixth exposure, indicating that mutants fail to habituate freezing behavior. Mutants consistently froze for longer periods of time than wild type animals throughout all exposures (Figure 12B and C). Wild type animals performed approximately equally through subsequent exposures, undergoing less frequent freezing bouts and spending less time frozen than mutants (Figure 12B and C, Figure 12—figure supplement 1A, B). Wild-type fish also swam faster than klc4uw314 mutants and showed similar swim velocities when their total swim velocity (including pauses) was compared to their mobile swim velocity (with pauses in swimming subtracted) (Figure 12D). klc4uw314 swim mobile swim velocity was faster than their total swim velocity, reflecting that they spent a greater amount of time immobile (Figure 12D).
+
+![Figure 12.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig12-v2.jpg)
+
+**Figure 12.:** (A) Percentage of fish per experiment that froze during the first 3 min of a 10-min initial exposure to a novel tank. (B) Plot of the percentage of fish that froze during the course of six 10-min exposures to the same novel tank. (C) Plot of the average time spent frozen during the course of six 10-min exposures to the same novel tank. (D) Plot of the average total and mobile-only swim velocities of fish during each of six 10-min exposures to the same novel tank. Mobile-only velocity excludes periods of time the fish spent at a velocity of 0 cm/s (frozen). (E) Plot of the percentage of time that fish spent in the upper zone of the tank during the course of six 10-min exposures to the same novel tank. (E) Plot of the average time it took for a fish to first enter the upper zone of the tank during the course of six 10-min exposures to the same novel tank. For all data, N=4 groups per genotype, 23 total fish per genotype. Error bars = SEM. For figures D-F, videos that could not be automatically tracked were omitted (for WT, 6/138, for klc4uw314, 4/138).
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/74270/elife-74270-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** (A) The average number of freezing bouts per fish over the course of 6 exposures. (B) The number of fish that froze out of the total number of fish in the experiment. * indicates data for 3 fish lost from one exposure due to video equipment malfunction. These data could not be generated again since fish had already been exposed to the tank, so the group N for this exposure is 20 instead of 23.
 
 Interestingly, both wild type and klc4uw314 mutants did show habituation as measured by the percentage of time spent in the upper zone of the tank (Figure 12E). During the first exposure, mutant animals only spent 8.7% of the ten minute experiment window in the upper zone and took on average 170.2 s before exploring the upper zone. Wild-type animals explored the upper zone after an average of 80.0 s and spent 17.6% of the first exposure period in the upper zone (Figure 12E and F). At the time of the sixth exposure, however, both wild type and klc4uw314 mutants increased their time spent in the upper zone, and mutants entered the upper zone faster than in their first exposure (Figure 12E and F). Wild type animals took on average 79.7 s to explore the upper zone and spent an average of 25.4% of the experiment period in the upper zone. klc4uw314 mutants performed similarly, spending 23.1% of the experiment period in the upper zone, but taking on average 129.0 s to explore the upper zone (Figure 12E and F). Thus, the failure of klc4uw314 mutants to habituate freezing behavior is specific rather than reflecting a general deficit in habituation.
 
@@ -128,35 +200,269 @@ Whether developmental defects in RB neurons contribute to adult circuit function
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>klc4</td>
+      <td>Ensembl</td>
+      <td>ENSDARG00000086985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB</td>
+      <td>ZIRC</td>
+      <td>ZL1</td>
+      <td>Wildtype Strain of Zebrafish</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>TL</td>
+      <td>ZIRC</td>
+      <td>ZL86</td>
+      <td>Wildtype Strain of Zebrafish</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(–3.1ngn1:gfp-caax)</td>
+      <td>Andersen et al., 2011</td>
+      <td>Tg(ngn:gfp-caax)</td>
+      <td>Transgenic line labelling sensory axons, AB/TL background</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3.1ngn1:trfp-caax</td>
+      <td>Andersen et al., 2011</td>
+      <td>Tg(ngn:trfp-caax)</td>
+      <td>Plasmid for labelling sensory axons</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3.1ngn1-mcherry-caax</td>
+      <td>Andersen et al., 2011</td>
+      <td>Tg(ngn:mcherry-caax)</td>
+      <td>Plasmid for labelling sensory axons</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3.1ngn1:eb3-caax</td>
+      <td>Stepanova et al., 2003; Ponomareva et al., 2014</td>
+      <td>Tg(ngn:eb3-gfp)</td>
+      <td>Plasmid for labelling microtubule plus ends</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3.1ngn1:GFP-rab5c</td>
+      <td>Clark et al., 2011; Ponomareva et al., 2014</td>
+      <td>Tg(ngn:GFP-rab5c)</td>
+      <td>Plasmid for labelling Rab5c vesicles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3.1ngn1:PA-gfp-Rab5c</td>
+      <td>Ponomareva et al., 2014</td>
+      <td>Tg(ngn:PA-gfp-Rab5c)</td>
+      <td>Plasmid for labelling Rab5c vesicles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>klc4 in situ probe</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences listed in methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>klc4 long isoform specific in situ probe</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences listed in methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>short isoform RT primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences listed in methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>long isoform RT primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences listed in methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>klc4 gRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence listed in methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cas9 protein with NLS</td>
+      <td>PNA Bio</td>
+      <td>NC0789474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo-Fisher</td>
+      <td>15596026</td>
+      <td>For RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kinesore</td>
+      <td>Chembridge Hit2Lead library</td>
+      <td>#6233307</td>
+      <td>Kinesin1 targeting small molecule</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III</td>
+      <td>Invitrogen</td>
+      <td>18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DIG RNA labelling kit</td>
+      <td>Roche</td>
+      <td>11175025910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligo dT</td>
+      <td>Invitrogen</td>
+      <td>18418020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Random Hexamers</td>
+      <td>Invitrogen</td>
+      <td>N8080127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HNK1 (mouse monoclonal)</td>
+      <td>ZIRC</td>
+      <td>ZN-12</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-acetylated tubulin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>T6793</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG AlexaFluor 488 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-21121</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG2b AlexaFluor 647 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-21141</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPRscan</td>
+      <td>Moreno-Mateos et al., 2015</td>
+      <td></td>
+      <td>https://www.crisprscan.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISP-ID</td>
+      <td>Dehairs et al., 2016</td>
+      <td></td>
+      <td>http://crispid.gbiomed.kuleuven.be/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ToxTrac</td>
+      <td>Rodriguez et al., 2018</td>
+      <td></td>
+      <td>Animal Tracking Freeware</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OrientationJ</td>
+      <td>Rezakhaniha et al., 2011</td>
+      <td></td>
+      <td>Used to quantify orientation of axons</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>Graph making software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chemotaxis Tool</td>
+      <td>Ibidi</td>
+      <td></td>
+      <td>https://ibidi.com/chemotaxis-analysis/171-chemotaxis-and-migration-tool.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult zebrafish (Danio rerio) were kept in a 14/10 hr light/dark cycle. Embryos were maintained at 28.5 °C and staged as hours postfertilization (hpf) as described previously (Kimmel et al., 1995). Wild type AB strain or transgenic Tg(−3.1ngn1:GFP-CAAX) (Andersen et al., 2011) (AB/TL background) embryos were used for all experiments. In experiments using the Tg(−3.1ngn1:GFP-CAAX) line as a background, wild type is used to refer to Tg(−3.1ngn1:GFP-CAAX), klc4+/+ animals. All animals in these studies were handled in accordance with the National Institutes of Health Guide for the care and use of laboratory animals, and the University of Wisconsin Institutional Animal Care and Use Committee (IACUC). These studies were approved by the University of Wisconsin IACUC (protocols L005692 and L005704).
 
-## CRISPR/Cas9 mutagenesis
+### CRISPR/Cas9 mutagenesis
 
 A guide RNA targeting zebrafish klc4 (5’-GAGCGTGGCACAGCTGGAGGAGG-3’) was designed by using CRISPRScan (crisprscan.org) and synthesized as previously described (Shah et al., 2015; Moreno-Mateos et al., 2015). To generate klc4uw314 mutants, embryos at the very early one-cell stage were injected with 374.5 ng/µl of the guide RNA targeted to zebrafish klc4 complexed with 800 ng/µl of Cas9 protein with NLS (PNA Bio). Injection volume was approximately 1 nL. F0 adult fish were pair-mated to determine individuals carrying germ line mutations. A subset of individuals with germ line mutations were outcrossed to wild type AB fish. F1 fish were raised and genotyped by PCR and sequencing, using CRISP-ID (http://crispid.gbiomed.kuleuven.be/) to assist in sequence unmixing (Dehairs et al., 2016). The klc4uw314 allele was found to have a 25 bp deletion. Fish heterozygous for klc4uw314 were outcrossed to wild type AB fish until the F3 generation. F3 klc4uw314 heterozygotes were in-crossed to generate F4 klc4uw314 homozygotes. All homozygous mutants in this study were F5-F6 generation mutants from homozygous parents, unless otherwise specified. Adults and embryos described as “wild type cousins” of klc4uw314 mutants were generated by crossing F4 klc4+/+ siblings from the F3 klc4uw314/+ in-cross.
 
-## RT-PCR
+### RT-PCR
 
 RNA was extracted from zebrafish embryos at specified ages with Trizol (Thermo-Fisher), followed by chloroform extraction and isopropanol precipitation. cDNA was generated from embryo-derived RNA using the Superscript III reverse transcriptase kit and a 50:50 mixture of oligo dT and random hexamer primers (Invitrogen). We designed PCR primers to amplify specific klc4 isoforms. A reverse primer unique to the short isoform’s 3’ UTR was designed for the klc4 short isoform, with the forward primer in exon 2 (Fwd: 5’-GCGCAAATCAGTGGAGATGATAGAGC-3’, Rev: 5’-GCATAGTGGCGCGGTAGGTA-3’). A set of primers for exons exclusive to the long isoform of klc4 (spanning exons 7 through 12) was designed for the long isoform (Fwd: 5’- CAGAGAGAAGGTGCTGGG –3’, Rev: 5’- GGTGGTGTTCACTGTTGG-3’). PCR was then run to test for presence of the isoforms in cDNA from each embryonic age.
 
-## In situ hybridization
+### In situ hybridization
 
 A digoxigenin-labeled riboprobe complementary to a region spanning exons 2–3 of the klc4 mRNA, which are contained in both long and short isoform mRNAs, was synthesized by in vitro transcription using T7 RNA polymerase with a DIG RNA labeling kit (Roche). The template for transcription was made using PCR on zebrafish cDNA with the following primers: Fwd: 5’-GCGCAAATCAGTGGAGATGATAGAGC-3’, Rev: 5’-TAATACGACTCACTATAGCTCCAGATGTTTCTTCTCCTCC-3’. A second probe recognizing a region in exons 8–11, found only in the long isoform, was synthesized using PCR on zebrafish cDNA with the following primers: Fwd: 5’-CAG AGA GAA GGT GCT GGG-3’, Rev: 5’- TAATACGACTCACTATAG GGTGGTGTTCACTGTTGG-3’. Whole-mount in situ hybridization was performed as previously described (Halloran et al., 1999).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Embryos were fixed overnight at room temperature in 4% paraformaldehyde in 0.1 M PO4 buffer, then rinsed with PBS/0.1% Tween-20 (PBST) and blocked with incubation buffer (IB: 2 mg/mL BSA, 1% Sheep Serum, 1% DMSO, 0.5% Triton X-100 in PBS) for at least 1 hr. Embryos were incubated overnight at 4 °C with monoclonal anti-HNK1 antibody in IB (ZN-12, 1:250; Zebrafish International Resource Center), rinsed in PBST, then incubated with anti-mouse AlexaFluor 488 secondary antibody (1:1000; Invitrogen) for at least 2 hr at room temperature or overnight at 4 °C. For double labeling with anti-acetylated tubulin (T6793, 1:1000, Sigma), the IgG subtype-specific secondary antibodies anti-mouse IgG1 AlexaFluor 488 and anti-mouse IgG2b AlexaFluor 647 (1:1000, Invitrogen) were used.
 
-## Microinjection and Mosaic Expression
+### Microinjection and Mosaic Expression
 
 DNA expression constructs were made using the Multisite Gateway Cloning System (Invitrogen) into Tol2 vectors (Kwan et al., 2007). Zebrafish embryos at the one-cell stage were injected with ~10 pg –3.1ngn1:EB3-GFP DNA (Lee et al., 2017) to visualize microtubule dynamics. For experiments to image individual neuron morphology, embryos were injected with ~12 pg 3.1ngn1:mCherry-CAAX DNA (Andersen et al., 2011).
 
-## Kinesore treatment
+### Kinesore treatment
 
 Kinesore was acquired from the Hit-2-Lead library (Chembridge, compound #6233307) and suspended in DMSO for a stock concentration of 100 mM. Embryos treated with Kinesore were dechorionated at 17 hpf and placed in E3 containing 150 µM Kinesore and 2% DMSO. Controls were treated with 2% DMSO in E3 for the same time period.
 
-## Live Imaging
+### Live Imaging
 
 Light sheet imaging was performed on a custom multi-view light sheet microscope as described previously (Daetwyler et al., 2019). The detection objective was either an Olympus UMPLFLN 10 x W (NA 0.3) or a Nikon CFI75 Apochromat 25xC W (NA 1.1) with a 400 mm tube lens (TL400-A) for 50 x total magnification. Briefly, the Tg(3.1ngn1:GFP-CAAX) wild type or mutant embryos were mounted in an FEP tube (0.8 mm inner diameter, 1.2 outer diameter, Bola) suspended in 0.02% tricaine in E3 with an agarose plug to prevent leakage.
 
@@ -164,42 +470,42 @@ For live confocal imaging, embryos were anesthetized in 0.02% tricaine and mount
 
 High speed imaging of EB3-GFP comets was performed with the Opterra Swept-Field confocal microscope equipped with a Nikon Plan Apo VC 100 x oil immersion objective (NA 1.40). Embryos were imaged at stages between 18 and 26 hpf, during peripheral axon outgrowth. EB3-GFP comets in nascent branches were imaged at stages between 22 and 25 hpf with a Nikon Plan Apo 60 x oil immersion objective (NA 1.40). Z-stacks of 5–30 1 μm optical sections were captured at 2–5 s time intervals, for total durations between 7 and 10 min. High speed imaging of Rab5 vesicle dynamics was done with the Opterra Swept-Field confocal and the Nikon Plan Apo 100 x oil objective (NA 1.40). Embryos were imaged between 22 and 26 hpf. Z-stacks of 5–30 μm optical sections were captured at 2–5 s time intervals for a total duration of 7–10 min. Photoactivation and imaging of PA-GFP-Rab5 were performed on the Olympus FV1000 confocal using a 60 X UplanSApo oil immersion objective (NA 1.35). A region of interest encompassing the cell body was activated with the 405 nm laser during the scan of one Z-plane in the cell body. Z-stacks of 1 µm optical sections were captured every 30–170 s for durations ranging from 26 to 34 minutes (average 29.22 minutes, median 28.84 minutes).
 
-## Axon outgrowth analysis
+### Axon outgrowth analysis
 
 To measure the speed of axon outgrowth, the area immediately behind the growth cone was measured using the Manual Tracking plugin in FIJI (Fabrice Cordelières). The generated data was loaded into the Chemotaxis and Migration Tool (Ibidi, https://ibidi.com/chemotaxis-analysis/171-chemotaxis-and-migration-tool.html) to generate velocity measurements and rose plot histograms. Rose plots were re-plotted in MATLAB (MathWorks) using secplot (Matthew Foster, https://www.mathworks.com/matlabcentral/fileexchange/14174-secplot).
 
-## Branch analysis
+### Branch analysis
 
 Custom macros for FIJI (Schindelin et al., 2012) were written to automate branch analysis. Briefly, stacks were processed to be maximum intensity projections and oriented with anterior to the left. A rectangular ROI was selected over the posterior region of the yolk tube extension such that the top of the selection was aligned with the bottom of the central RB axons. A tubeness filter was applied to reduce non-axonal background. A histogram of axon directionality was generated for the ROI using OrientationJ (Rezakhaniha et al., 2011). To measure differences in axon directional distribution, we computed the area under the curve (AUC) for the regions to be compared. We then performed a t-test using the resulting mean and standard error to determine significance. To measure axon branch density, eight ROIs measuring 3 µm in height were generated at regularly spaced intervals from dorsal to ventral (Figure 2—figure supplement 1). These selections were individually thresholded, binarized, and the number of objects contained in each ROI was determined using the Analyze Particles function. To analyze acetylated tubulin signal in nascent branches, terminal branches up to 10 µm in length were scored based on the presence or absence of visible acetylated tubulin signal. Total proportion of nascent branches with signal was compared between wild type and mutant embryos.
 
-## Kymography
+### Kymography
 
 Hyperstacks of EB3-GFP or GFP-Rab5c images were assembled using FIJI (Schindelin et al., 2012) and segments of axons were traced for kymography using the segmented line tool. For peripheral axons, a segment was defined as an area of axon between two branch nodes, or between the first visible portion of axon and the first node of branching. Growth cones and filopodia were excluded from analysis. For analysis of EB3-GFP in nascent branches, only branches < 10 µm long were analyzed. For unbranched central axons, a segment was defined as the entire visible length of either the ascending or descending central axon within each field of view. Kymographs were made using the Multi Kymograph plugin (developed by J. Rietdorf and A. Seitz, European Molecular Biology Laboratory, 2004). Comet or vesicle parameters were measured from the resulting kymographs. To measure Rab5 accumulation at branch points, movies were divided into 4 time periods (t1-t4), each containing 7–8 min. Maximum intensity projections were made for t1-t4 and the fluorescent signal at branch points was measured for each maximum intensity projection. Background signal from the branch point prior to activation was subtracted from measured t1-t4 values, and then all values were normalized to the signal at the t1 period. Comparisons between experimental conditions were made using the Mann-Whitney test for non-parametric data.
 
-## Adult Body Size Measurements
+### Adult Body Size Measurements
 
 Zebrafish were raised for this experiment by in-crossing wildtype or klc4uw314 homozygous siblings. Larva were placed in 3 L tanks side-by-side and subjected to the same light cycle and feeding schedule during rearing. At 7 weeks and 9 weeks, fish were briefly anesthetized with 0.02% tricaine, placed on white waterproof surface, measured with a ruler, and photographed.
 
-## Larval touch assay
+### Larval touch assay
 
 To assess responsiveness to touch, 3 dpf zebrafish larva were individually placed in a 6 cm dish and allowed to acclimate for 2 min. A tail touch was administered to the end of the tail using a gel loading tip attached to a long applicator stick. The tail touch was given from a side angle to avoid looming stimulus. A high-speed camera was used to acquire 50 frames per second for a total of 1050 frames (21 s). The response time of each larva was measured from the first movement after a touch to the cessation of movement for more than 15 frames (inter-bout pauses only lasted ~7–8 frames). Some wild type and klc4 mutant larva did not respond to an initial touch (10 wild type, 14 mutant), and these samples were excluded from analysis.
 
-## Feeding experiment
+### Feeding experiment
 
 Feeding experiments were conducted as in Howe et al., 2018. Briefly, adult zebrafish were isolated in individual 1 L tanks without food for 48 hr, then 50 larval zebrafish were added to each tank. The fish were allowed to feed on the larvae for one hour, then removed from the tank to allow counting of the remaining larvae. All tested animals were of AB background.
 
-## Novel tank diving test
+### Novel tank diving test
 
 The evening before an experiment, fish were moved to the behavior experiment room and allowed to acclimate overnight. Exposure to novel tank was carried out in the morning, and the order of which genotype received exposure first was randomized. The novel tank had 3 opaque sides to block potential views of other fish and one clear side for imaging. The water in the novel tank was changed between groups. Fish were netted from their 3 L home tank, released into the novel tank, and allowed to explore for 3 min before being removed and placed into a recovery tank. All tested animals were of AB background.
 
-## Habituation experiment
+### Habituation experiment
 
 Two weeks prior to an experiment, adults were sorted into separate 3 L tanks with 5–6 individuals of the same genotype in each. Experiment was conducted in a similar manner as described above, but fish were allowed to explore for 10 min before removal. Novel tank exposure was repeated on the same groups twice a week for 3 weeks. Exposures were conducted a minimum of two days apart. The experiment was repeated for another 3 weeks with an additional two groups of 6 fish per genotype. All tested animals were of AB background. When possible, groups were divided into similar ratios of male and female fish for a total of 11 females and 12 males within each genotype. The group compositions were as follows: wild type: group 1 (3 females [F], 2 males [M]) group 2, (3 F, 3 M), group 3 (3 F, 3 M), group 4 (2 F, 4 M), klc4uw314: group 1 (2 F, 3 M), group 2, (3 F, 3 M), group 3 (3 F, 3 M), group 4 (3 F, 3 M).
 
-## Automated tracking of adults
+### Automated tracking of adults
 
 For the habituation experiment, automated tracking of zebrafish through ToxTrac (Rodriguez et al., 2018) was used to quantify swim velocity and percent of time spent in the upper zone. When necessary for accurate tracking, background subtraction was performed on movies prior to using ToxTrac. This was accomplished by subtracting the first frame of each movie (showing only the empty tank) from subsequent frames in the movie via FIJI (Schindelin et al., 2012). Operations were performed using Clij2 where possible to speed up processing time (Haase et al., 2019).
 
-## Statistics
+### Statistics
 
 Statistical analyses and graphs were generated with Graphpad Prism. See figure legends for details on sample sizes, specific statistical tests used, error bars and p values. Data were checked for normality using Anderson-Darling test, D’Agostino & Pearson test, and Shapiro-Wilk test before deciding on a statistical test. Non-normal data were tested for significance using a Mann-Whitney test. In some cases, the N values were too low to perform a statistical test (Figure 6E, Figure 11E and H, Figure 12A). In Figure 6E, the N for wild type is low because fasciculation events are very rare in wild type and obtaining a value for fasciculation length is contingent on the event occurring. For the behavioral data shown in Figure 11E and H and Figure 12A, multiple animals were tested in each trial, but N is the number of individual behavioral trial days (N=3, which is too low to test for normality). In all these cases, individual data points are shown for comparison. Data tested using the Mann-Whitney test were independent of each other and comprised ordinal or continuous numbers.

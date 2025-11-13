@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Molecular and Cellular Physiology, Stanford University School of Medicine Stanford United States
-2. https://ror.org/00f54p054 Program in Immunology, Stanford University School of Medicine Stanford United States
-3. https://ror.org/006w34k90 Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States
+1. Department of Molecular and Cellular Physiology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Program in Immunology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -24,21 +24,200 @@ Interleukin 27 (IL-27) is a heterodimeric cytokine that functions to constrain T
 
 Cytokines are secreted factors that mediate cell-cell communication in the immune system (Spangler et al., 2015). Binding of cytokines to cell surface receptors, in most cases, leads to activation of receptor-associated Janus Kinase (JAK) proteins, which phosphorylate each other as well as downstream Signal Transducer and Activator of Transcription (STAT) proteins, triggering nuclear translocation and regulation of gene expression. Cytokines can be classified by their use of shared receptors which transduce signals for multiple cytokines within a family. Interleukin-6 signal transducer (IL-6ST), also known as glycoprotein 130 (gp130), is a shared receptor that mediates signaling of multiple cytokines including IL-6, IL-11, and IL-27. Unlike other gp130 family cytokines, IL-27 is a heterodimeric cytokine consisting of a four-helix bundle, IL-27p28 (p28), with similarity to IL-6, complexed with a secreted binding protein, Epstein-Barr Virus-Induced 3 (Ebi3), with homology to type I cytokine receptors (Pflanz et al., 2002). IL-27 signals through a receptor complex consisting of IL-27Rα (TCCR/WSX-1) and gp130 expressed on T cells, NK cells, monocytes, dendritic cells, B cells as well as subsets of endothelial and epithelial cells (Pflanz et al., 2002; Pflanz et al., 2004; Heng et al., 2008; Figure 1A). Binding of IL-27 to its receptor subunits triggers the activation of receptor-associated JAK1 and JAK2 leading to phosphorylation of STAT1 and STAT3 (Lucas et al., 2003; Owaki et al., 2008; Wilmes et al., 2021). Functionally, IL-27 signaling serves to constrain inflammation by antagonizing differentiation of pro-inflammatory Th17 cells (Stumhofer et al., 2006), stimulating T-bet expression in regulatory T cells (Tregs) (Hall et al., 2012), and inducing production of the anti-inflammatory cytokine IL-10 (Stumhofer et al., 2007). The important role of IL-27 in constraining inflammation has prompted the development of antagonist antibodies, one of which is currently being developed as a cancer immunotherapy (Patnaik et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78463/elife-78463-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon representation of the components of the IL-27 quaternary signaling complex. gp130 (red), p28 (blue), Epstein-Barr Virus-Induced 3 (Ebi3; purple), IL-27Rα (green), with domains excluded from the imaged constructs in gray. The D1 Ig domain of gp130 is represented by red, with an additional dark red outline to distinguish it from FNIII domains in gp130, Ebi3, and IL-27Rα. (B) Reference-free 2D averages from cryoEM of the IL-27 quaternary complex. (C) Refined and sharpened cryoEM density maps of IL-27 quaternary complex, colored as in (A). (D) Ribbon representation of the atomistic modeling of IL-27 quaternary complex, colored as in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78463/elife-78463-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Workflow for cryoEM data processing. Representative micrograph, reference free 2D averages, and cryoEM maps at the various stages of processing. Depicted maps were z-flipped prior to model building. (B) Local resolution estimation of the finalized cryoEM map of IL-27 quaternary complex (Punjani et al., 2017). (C) FSC curve of the IL-27 quaternary complex reconstruction using gold-standard refinement calculated from unmasked and masked half maps. (D) Orientational distribution of the IL-27 quaternary complex reconstruction. (E) Representative cryoEM density regions of p28, IL-27Rα, Epstein-Barr Virus-Induced 3 (Ebi3), and gp130.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78463/elife-78463-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** 38 Å separate resolved residues at the C-terminus of p28 and the N-terminus of gp130; a distance easily accommodated by the 20 a.a. GS linker and unresolved residues (~110 Å).
+
 Although IL-27 is a member of the gp130 family, its heterodimeric composition is similar to IL-12 and IL-23, which are cytokines that share a p40 subunit analogous to Ebi3. In this system, the p40 subunit of IL-12 and IL-23 directly engages the shared receptor IL-12Rβ1 in a manner distinct from IL-6 and related cytokines (Glassman et al., 2021a). Given the diverse receptor assembly mechanisms used by cytokine receptors, we sought to determine the structure of IL-27 in complex with its signaling receptors, gp130 and IL-27Rα, by cryoEM.
 
 Here we report the 3.47 Å resolution structure of the complete IL-27 receptor complex. In this structure, the central IL-27 cytokine engages IL-27Rα through a composite interface consisting of p28 and the D2 domain of Ebi3. A conserved tryptophan residue at the tip of p28 then engages the D1 domain of gp130 to facilitate quaternary complex assembly. This receptor assembly mechanism bears striking resemblance to that of IL-6 but is distinct from IL-12 and IL-23, indicating divergent receptor binding modes for heterodimeric cytokines.
 
 ## Results
 
-## CryoEM structure of the IL-27 quaternary complex
+### CryoEM structure of the IL-27 quaternary complex
 
 Interleukin 27 (p28/Ebi3) signals through a receptor complex composed of IL-27Rα and the shared receptor gp130 (Figure 1A). The extracellular domain of IL-27Rα consists of five fibronectin type III (FNIII) domains (D1–5) of which the N-terminal D1–D2 constitute a cytokine-binding homology region (CHR). gp130 has a similar domain architecture but with the addition of an N-terminal immunoglobin (Ig) domain (D1). Initial attempts at reconstituting a soluble receptor complex through mixing of IL-27, IL-27Rɑ D1–D2, and gp130 D1–D3 resulted in dissociation on size-exclusion chromatography due to the low affinity of gp130. To stabilize the complex, we expressed p28 fused to gp130 through a long (20 a.a.) flexible linker which enabled us to purify the complete IL-27 receptor complex by size exclusion chromatography. Importantly, the long linker did not constrain the binding mode, with ~110 Å of unresolved residues spanning a distance of 38 Å between termini (Figure 1—figure supplement 2), but rather raised the effective concentration of gp130. The complex was vitrified and subject to single-particle cryoEM analysis. The quaternary complex was determined to a resolution of 3.47 Å (Figure 1—figure supplement 1 and Table 1). All domains of IL-27 and IL-27Rα, as well as D1 of gp130 had well resolved cryoEM density (Figure 1B-C, Figure 1—figure supplement 1E), with local resolution estimates near and exceeding 3 Å in this region (Figure 1—figure supplement 1B). The local resolution for the D2 density of gp130 is lower, yet able to be built with confidence, while D3 density was interpretable for domain placement (Figure 1C, Figure 1—figure supplement 1B).
 
+**Table 1.**
+ CryoEM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>IL-27 Complex (PDB 7U7N/EMD-26382)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (keV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>–0.8 to –2.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.839</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images</td>
+      <td>6,387,370</td>
+    </tr>
+    <tr>
+      <td>Final particle images</td>
+      <td>548,147</td>
+    </tr>
+    <tr>
+      <td>Map resolution FSC threshold (Å)</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB)</td>
+      <td>AlphaFold</td>
+    </tr>
+    <tr>
+      <td>Model resolution FSC threshold (Å)</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>189.6</td>
+    </tr>
+    <tr>
+      <td>Model Composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>7,284</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>884</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>102.97</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>114.62</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.610</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>8.81</td>
+    </tr>
+    <tr>
+      <td>EMringer score</td>
+      <td>2.33</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.37</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.63</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
 The IL-27 quaternary complex exhibits a molecular architecture containing ‘sites 1–3’, as seen in other gp130 family cytokines (Boulanger et al., 2003) and as hypothesized previously (Skiniotis et al., 2008; Figure 1D). In this structure, IL-27 bridges IL-27Rα and gp130 to initiate downstream signaling through JAK1 and JAK2 (Ferrao et al., 2016; Pradhan et al., 2010). Within IL-27, the four-helical bundle of p28 packs against the hinge between Ebi3 D1 and D2 in a site 1 interaction. Opposite Ebi3, IL-27Rα D1-D2 engages the helical face of p28 in an interaction stabilized by stem contact between the D2 domains of IL-27Rα and Ebi3 to form a site 2 interaction. On the posterior face of IL-27, the D1 domain of gp130 binds to a conserved tryptophan at the tip of p28 to make a classical site 3 interaction (Boulanger et al., 2003).
 
-## Site 1–3 interface architecture of the IL-27 quaternary complex
+### Site 1–3 interface architecture of the IL-27 quaternary complex
 
 A site 1 interface between p28 and Ebi3 is used to form the heterodimeric cytokine IL-27. In this interaction, the alpha helices A and D, the AB loop, and the C-terminus of p28 pack tightly against the hinge region between D1 and D2 of Ebi3 (Figure 2A, B). This interaction is mediated by a variety of hydrogen bonds between p28 and the hinge region of Ebi3, particularly along alpha helices A and D of p28. At the center of this interface is p28 R219 which is coordinated by D207 and T209 in Ebi3. Extending from this region, a hydrophobic patch of residues on the C-terminus and AB loop of p28 (F94, W97, L223, W232) packs against residues in the Ebi3 hinge (F97, F157, I160). The extensive and hydrophobic nature of this interface is consistent with the observation that co-expression of p28 and Ebi3 is required for efficient cytokine secretion (Pflanz et al., 2002).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78463/elife-78463-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ribbon representation of the IL-27 quaternary signaling complex, containing gp130 (red), p28 (blue), Epstein-Barr Virus-Induced 3 (Ebi3; purple), and IL-27Rα (green). Regions containing sites 1, 2, and 3 are boxed in purple, green, and red, respectively. (B) Two views of the site 1 interface, colored as in (A). (C) The site 2 interface, composed of a site 2a, p28 to IL-27Rα, interaction, and a site 2b, Ebi3 to IL-27Rα, interaction. All proteins are colored as in (A). (D,E) The site 3 interface, composed of a site 3a, p28 to gp130, interaction, and a site 3b, Ebi3 to IL-27Rα, interaction. All proteins are colored as in (A). (F) Structural overlay of site 3 interacting domains from IL-27 complex, IL-6 complex (PDB 1P9M), and viral IL-6 (vIL-6) complex (PDB 1L1R). IL-27 quaternary complex colored as in (A), IL-6 ternary complex in orange (IL-6) and yellow (gp130), and vIL-6 binary complex in green (vIL-6) and teal (gp130).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78463/elife-78463-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ribbon representation of the IL-27 quaternary signaling complex, containing gp130 (red), p28 (blue), Epstein-Barr Virus-Induced 3 (Ebi3; purple), and IL-27Rα (green). Regions containing sites 1, 2, and 3 are boxed in purple, green, and red, respectively. (B) CryoEM density of the site 1 interaction. Colored as in (A). (C) CryoEM density of the site 2 interaction. Colored as in (A). (D) CryoEM density of the site 3 interaction. Colored as in (A).
 
 Opposing the Ebi3-binding site, p28 engages the hinge region of IL-27Rα (Figure 2C, site 2 a). This interaction is stabilized by stem-stem contacts between the D2 domains of IL-27Rα and Ebi3 (Figure 2C, site 2b). Alpha helices A and C of p28 form the bulk of the site 2a interaction. In contrast to the site 1 interaction which forms the holo-cytokine, the site 2a interaction is more limited both in terms of hydrophobicity and buried surface area (Site 1: 1,339.4 Å2, Site 2a: 810.4 Å2) (Krissinel and Henrick, 2007). One notable feature of this interface is the contribution of a 13 amino acid polyglutamic acid region in p28. This region is not well resolved in the cryoEM density, but may form an alpha helix (polyE helix) and contact R74 and K77 in the IL-27Rɑ D1 domain. Cytokine binding is stabilized by ‘stem-stem’ interactions between D2 FNIII domains of IL-27Rα and Ebi3. This site 2b interaction is characterized by a high degree of shape and charge complementarity with an arginine-rich patch of Ebi3 (R143, R171, R194) packing against the positively charged base of IL-27Rɑ D2 domain (D138, D142, E146). The composite nature of IL-27Rɑ binding explains, in part, the inability of p28 to mediate IL-27 signaling in the absence of Ebi3 (Stumhofer et al., 2010).
 
@@ -64,26 +243,134 @@ Resolution of the complete IL-27 receptor complex reveals how this therapeutical
 
 ## Materials and methods
 
-## Cloning and protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human embryonic kidney cells</td>
+      <td>GIBCO</td>
+      <td>Expi293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pD649-IL-27Rα (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See: Methods - Cloning and protein expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pD649-Ebi3 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See: Methods - Cloning and protein expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pD649-p28-gp130 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See: Methods - Cloning and protein expression</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data collection software</td>
+      <td>SerialEM</td>
+      <td>SerialEM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data processing software</td>
+      <td>Structura Biotechnology Inc.</td>
+      <td>cryoSPARC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data sharpening software</td>
+      <td>Sanchez-Garcia et al., 2021</td>
+      <td>DeepEMhancer</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Initial modeling software</td>
+      <td>Jumper et al., 2021</td>
+      <td>AlphaFold</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphics software</td>
+      <td>Pettersen et al., 2021</td>
+      <td>UCSF ChimeraX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeling and refinement software</td>
+      <td>Adams et al., 2010</td>
+      <td>Phenix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeling and refinement software</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>Coot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Model validation software</td>
+      <td>Barad et al., 2015</td>
+      <td>EMRinger</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Model validation software</td>
+      <td>Chen et al., 2010</td>
+      <td>MolProbity</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and protein expression
 
 Human IL-27Rα (D1-D2, residues 36–231), Ebi3 (residues 21–228), and p28 (residues 29–243)-(GGGGS)4-gp130 (D1-D3, residues 23–321) were cloned into the expression vector pD649. All components were expressed with signal sequence of influenza hemagglutinin and IL-27Rα and Ebi3 contained C-terminal 6-His tags for affinity purification. Proteins were co-expressed in Expi293F cells (GIBCO) maintained in Expi293 Expression Media (GIBCO) at 37 °C with 5% CO2 and gentle agitation.
 
-## Material availability
+#### Material availability
 
 The expression plasmids for the IL-27 complex are available from KCG (https://kcgarcia@stanford.edu) by request.
 
-## Protein purification
+### Protein purification
 
 IL-27 quaternary complex was purified by Ni-NTA chromatography followed by size exclusion chromatography with a Superdex 200 column (GE Lifesciences). Fractions containing pure IL-27 complex were pooled and stored at 4°C until vitrification.
 
-## Cryo-electron microscopy
+### Cryo-electron microscopy
 
 Aliquots of 3 μL of IL-27 quaternary complex were applied to glow-discharged Quantifoil (1.2/1.3) grids. The grids were blotted for 3 s at 100% humidity with an offset of 3 and plunge frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher). Grid screening and preliminary dataset collection occurred at Stanford cEMc. Final grids were imaged on a 300 kV FEI Titan Krios microscope (Thermo Fisher) located at the HHMI Janelia Research Campus and equipped with a K3 camera and energy filter (Gatan). Movies were collected at a magnification of ×105,000, corresponding to a 0.839 Å per physical pixel. The dose was set to a total of 50 electrons per Å2 over an exposure of 50 frames. Automated data collection was carried out using SerialEM with a nominal defocus range set from –0.8 to –2.0 μM. 18,168 movies were collected.
 
-## Image processing
+### Image processing
 
 All processing was performed in cryoSPARC (Punjani et al., 2017) unless otherwise noted (Figure 1—figure supplement 1). The 18,168 movies were motion corrected using patch motion correction and micrographs were binned to 0.839 Å per pixel. The contrast transfer functions (CTFs) of the flattened micrographs were determined using patch CTF and 6,387,370 particles were picked using blob picking and subsequently template picking. A subset of 2,008,987 particles were used in reference-free 2D classification. A particle stack containing 109,536 2D cleaned particles was used to generate three ab initio models, one of which resembled a complete complex. This ab initio model was then used against two junk classes in six rounds of iterative heterogenous refinement to reduce the full particle stack to 548,147 particles. These particles were refined using cryoSPARC non-uniform refinement (Punjani et al., 2020) followed by local refinement with a mask excluding gp130 D3 domain to achieve a resolution of 3.47 Å. Resolution was determined at a criterion of 0.143 Fourier shell correlation gold-standard refinement procedure. The final map was sharpened using deepEMhancer (Sanchez-Garcia et al., 2021).
 
-## Model building and refinement
+### Model building and refinement
 
 AlphaFold models (Jumper et al., 2021) of IL-27Rα, Ebi3, p28, and gp130 were docked into the map using UCSF Chimera X (Pettersen et al., 2021). The resultant model was then refined using Phenix real space refine (Adams et al., 2010) and manual building in Coot (Emsley and Cowtan, 2004). The final model fit the map well (EMRinger [Barad et al., 2015] score 2.33) and produced a favorable MolProbity score of 1.60 (Chen et al., 2010) with side-chain rotamers occupying 97.37% Ramachandran favored and 0.00% outliers (Table 1).

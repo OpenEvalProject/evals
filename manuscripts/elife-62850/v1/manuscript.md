@@ -34,7 +34,7 @@
 
 ## Abstract
 
-Understanding the regulatory architecture of phenotypic variation is a fundamental goal in biology, but connections between gene regulatory network (GRN) activity and individual differences in behavior are poorly understood. We characterized the molecular basis of behavioral plasticity in queenless honey bee ( Apis mellifera ) colonies, where individuals engage in both reproductive and non-reproductive behaviors. Using high-throughput behavioral tracking, we discovered these colonies contain a continuum of phenotypes, with some individuals specialized for either egg-laying or foraging and ‘generalists’ that perform both. Brain gene expression and chromatin accessibility profiles were correlated with behavioral variation, with generalists intermediate in behavior and molecular profiles. Models of brain GRNs constructed for individuals revealed that transcription factor (TF) activity was highly predictive of behavior, and behavior-associated regulatory regions had more TF motifs. These results provide new insights into the important role played by brain GRN plasticity in the regulation of behavior, with implications for social evolution.
+Understanding the regulatory architecture of phenotypic variation is a fundamental goal in biology, but connections between gene regulatory network (GRN) activity and individual differences in behavior are poorly understood. We characterized the molecular basis of behavioral plasticity in queenless honey bee (Apis mellifera) colonies, where individuals engage in both reproductive and non-reproductive behaviors. Using high-throughput behavioral tracking, we discovered these colonies contain a continuum of phenotypes, with some individuals specialized for either egg-laying or foraging and ‘generalists’ that perform both. Brain gene expression and chromatin accessibility profiles were correlated with behavioral variation, with generalists intermediate in behavior and molecular profiles. Models of brain GRNs constructed for individuals revealed that transcription factor (TF) activity was highly predictive of behavior, and behavior-associated regulatory regions had more TF motifs. These results provide new insights into the important role played by brain GRN plasticity in the regulation of behavior, with implications for social evolution.
 
 ## Introduction
 
@@ -54,7 +54,7 @@ Recent advances in machine learning and automatic behavioral tracking have enabl
 
 ## Results
 
-## Extensive variation in behavior across laying workers
+### Extensive variation in behavior across laying workers
 
 To define the behavior of individual bees, we deployed a high-resolution, automatic behavior monitoring system on six LW colonies in which each bee (n = 800 per colony) was individually barcoded, similar to Gernat et al., 2018. Our extension of this system identifies the location and heading direction of each individual once per second, and uses convolutional neural networks and machine learning to detect behaviors (Gernat et al., 2020). For each individual across seven days of tracking (when bees were 15–21 days old), egg-laying events and foraging trips were detected from images of the hive interior and entrance (Figure 1A). A total of 115,281 egg-laying events and 96,086 foraging trips were predicted for the six colonies (Supplementary file 1).
 
@@ -66,13 +66,31 @@ Colonies exhibited considerable variation in the proportion of bees engaged in e
 
 The daily and lifetime behavior of each bee was summarized using two behavioral scores: the ‘specialist’ score, which describes how specialized an individual was on either egg-laying or foraging, and the ‘generalist’ score, which describes how much an individual performed both egg-laying and foraging. Scores were derived from daily normalized ranks within colonies to allow comparison across days and colonies with differing overall activity levels; bees that performed neither egg-laying nor foraging across the experiment have both specialist and generalist scores of 0. Scores were mapped onto a two-dimensional color space for visualization of behavior over time (Figure 2A; Figure 2—figure supplements 1–2; Supplementary file 1).
 
-## Influence of worker source colony on behavior
+![Figure 2.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig2-v1.jpg)
+
+**Figure 2.:** (A) Daily rank-normalized behavior of individuals (rows) selected for brain RNAseq and ATACseq analysis converted to 2D colorspace from specialist and generalist scores. (B) Principal Component Analysis (PCA) of behavioral variation for individuals chosen for brain RNAseq and ATACseq analysis. Metrics included number of eggs laid, number of foraging events, proportion of foraging trips with evidence of nectar collection, proportion of trips with evidence of pollen collection, and proportion of trips with evidence of both nectar and pollen collection. (C) Euler diagram for overlaps of pairwise differentially expressed genes (DEGs) between behavioral groups. Note that one gene was overlapping between F vs. G and G vs. L (but not F vs. L) and is not represented in the diagram due to graphical constraints. (D) Euler diagram for overlaps of genes proximal to pairwise differentially accessible chromatin peaks (DAPs) between behavioral groups. (E) PCs from PCA of brain transcriptomic profiles regressed against specialist score (PC1: R2 = 0.947, p<0.0001; PC2: R2 = 0.838, p<0.001). (F) PCs from PCA of brain chromatin accessibility regressed against specialist score (PC2: R2 = 0.584, p<0.001; PC3: R2 = 0.543, p<0.0001; PC4: R2 = 0.187, p<0.0045; PC1: p>0.05). L: layer, G: generalist, F: forager.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Colored rectangles indicate specialist and generalist scores represented in 2D color space as shown in legend. Individuals are sorted by median lifetime specialist score. Single-drone inseminated (SDI) queen source is shown to the right of each row for colonies D-F, where workers were known offspring of two SDI queens per colony. In colonies A-C workers were offspring of naturally mated queens.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Solid lines indicate bees from source colonies headed by a naturally-mated queen, while dashed lines indicate bees from source colonies headed by queens instrumentally inseminated with semen from a single drone (SDI). Colonies used as sources for behavioral tracking included W28, W2, R25, and R45.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Distributions are significantly different (p<0.0001, Kolmogorov-Smirnov test).
+
+### Influence of worker source colony on behavior
 
 To study the influence of source colony (including genetics and development) on behavior, experimental colonies were assembled with workers from different source colonies headed by unrelated queens. A subset of source colonies (4/6) was pre-screened for worker egg-laying in queenless laboratory cages and showed variation in the timing and extent of egg-laying (Figure 2—figure supplement 3). Bees in colonies A-C were derived from colonies with naturally mated queens. Queens of Apis mellifera mate multiply with up to ~20 males and produce workers with a mix of paternal genotypes (Adams et al., 1977; Estoup et al., 1994; Lobo and Kerr, 1993); workers derived from these colonies were therefore assumed to be a mix of many patrilines. In contrast, experimental colonies D-F were assembled of workers obtained from two different source colonies, each of which was headed by a queen artificially inseminated with the semen of a single different drone (SDI). Workers within each SDI source colony are highly genetically related compared with workers from a naturally mated queen colony (average relatedness = 0.75 due to haplodiploidy).
 
 Using SDI colonies allowed us to more easily explore whether the genetic and environmental differences between source colonies would lead to segregation of reproductive and non-reproductive behavior when mixed into the same (queenless) environment. In both colonies D and E, which were replicates of the same two SDI queens’ offspring, the behavior of workers differed considerably by source: one source colony (SDI 1) comprised the majority of foragers, while the other (SDI 2) contained the majority of egg-layers (Figure 1B; Figure 2—figure supplement 2). In colony F the two SDI source colony progeny contributed more equally to foraging, while the most specialized egg-laying bees were predominantly from just one source colony (Figure 1B; Figure 2—figure supplement 2, SDIs 3 and 4). However, even in colonies where SDI source was clearly influential, specialized foragers and layers were identified from both sources, indicating that colony genetics and development are not the only contributors to individual variation in the likelihood of performing these behaviors. Similar patterns of specialization were observed in colonies A-C and D-F (Figure 1B; Figure 2—figure supplement 2), indicating that they were not an artifact of decreased intracolonial genetic diversity.
 
-## Specialized behavioral groups are highly transcriptionally and epigenetically distinct
+### Specialized behavioral groups are highly transcriptionally and epigenetically distinct
 
 A subset of highly specialized foragers, egg-layers, and generalist individuals were selected from two experimental colonies (from only one source SDI colony each, to minimize genetic variation among individuals) for brain gene expression and chromatin accessibility profiling (Figure 2A). Sampled individuals were among those with the most extreme specialist and generalist scores within each colony, and were assigned to behavioral groups based upon their lifetime behavior. Principal component analysis (PCA) on behavioral data for these individuals shows these three groups are behaviorally distinct, with generalists intermediate and more variable than forager and layer groups (Figure 2B).
 
@@ -82,21 +100,37 @@ Forager vs. layer DEGs were enriched for cytoplasmic translation and transport g
 
 In addition to differences in brain gene expression, layers and foragers showed differences in accessible chromatin in the brain based on the Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq; Buenrostro et al., 2013). 1794 differentially accessible peaks (DAPs; FDR < 0.05) were identified between foragers and layers, proximal to 1207 genes (Figure 2D; Supplementary file 4). Forager-biased DEGs and genes proximal to forager-biased DAPs overlapped significantly, 1.2x more than expected by chance (p=0.01 for hypergeometric test of overlap). Genes proximal to peaks of accessible chromatin (regardless of differential status) were on average more highly expressed than genes without proximal peaks (p<0.0001, Kolmogorov-Smirnov test), supporting a signal of transcriptional activation near ATAC-seq peaks (Figure 2—figure supplement 4). No DAPs were identified for foragers relative to generalists, and there were only 16 DAPs (assigned to 13 genes) for generalists relative to layers (Figure 2D). These 13 genes also had DAPs for foragers relative to layers (Figure 2D). DAPs between foragers and layers were enriched for 148 GO terms (FDR < 0.05), including developmental processes, morphogenesis, and metabolism (Supplementary file 4). Similar to differentially expressed genes, GO enrichment signal came from those DAPs with a bias in foragers (i.e. more accessible in foragers relative to layers); no significantly enriched GO terms were identified from layer-biased peaks, despite 44% of differential peaks being more accessible in layers compared to foragers.
 
-## Brain gene expression and chromatin accessibility are correlated with behavioral variation
+### Brain gene expression and chromatin accessibility are correlated with behavioral variation
 
 Our high-resolution behavioral data allowed us to test whether molecular and behavioral variation were connected not only at the group level, but for individuals as well. Using PCA, we found that degree of individual behavioral specialization was significantly correlated with measures of both brain gene expression and chromatin accessibility (Figure 2E–F). Among PCs for gene expression, PCs 1 and 2, which explained 31.1 and 11.9% of the total variance in gene expression, respectively, were significantly correlated with individual behavioral specialist score (Figure 2E). Generalists showed intermediate values of these PCs, consistent with an intermediate brain transcriptomic profile. Genes with extreme PC loading values (upper and lower 5% of loadings) for PC1 were enriched for transmembrane and ion transport, functions related to aerobic and cellular respiration, and energy transport (Supplementary file 5). PC2 extreme loading genes were enriched for processes relating to detection of light, phototransduction, and sensory perception (Supplementary file 5). Extreme loadings for both PC1 and PC2 overlapped significantly with DEGs in the pairwise comparison of layers and foragers (PC1: RF = 1.2, p=1.39e-06, PC2: RF = 1.7, p=8.39e-91).
 
 Similarly, PCA of chromatin accessibility data revealed PCs that were correlated with behavioral variation. Accessibility PCs 2, 3, and 4 were all significantly correlated with the individual behavioral specialist score (Figure 2F). Genes with extreme PC loading values for each correlated PC showed enrichment for multiple GO terms, including biological processes related to cell-cell adhesion, locomotion, axon guidance, neuron projection guidance, and synapse organization (Supplementary file 6). Many GO terms (11 of 37) were enriched for extreme loading genes of both PCs 2 and 3, while synapse organization was the only enriched term for loadings of PC4.
 
-## GRN activity links molecular and behavioral phenotypes
+### GRN activity links molecular and behavioral phenotypes
 
 To test the role of TF and gene regulatory plasticity in the regulation of LW behavioral phenotypes, we conducted TF motif analyses and brain GRN reconstruction (Chandrasekaran et al., 2011), individualized for each bee. The activity of many TF modules (TFs and their predicted targets) showed significant correlations with individual variation in several behavioral metrics, including numbers of eggs laid (50 TF modules), number of foraging trips (74 TF modules), and proportion of returning foraging trips with pollen loads (41 TF modules) (Figure 3A; Supplementary file 8). At the individual level, 23 TF modules were correlated with all nine behavioral and physiological metrics (Figure 3—figure supplement 1; Supplementary file 8). These behaviorally correlated TF modules include TFs involved in JH signaling (usp, Kr-h1, and Blimp-1), histone acetylation (trx), neuronal remodeling (Kr-h1, Hr51, trx), and circadian rhythms (opa and Hr51).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig3-v1.jpg)
+
+**Figure 3.:** (A) Circos plot representing a subset of significant correlations between behaviors (top) and expression of TF modules (bottom). Lines connecting behaviors with TF modules indicate significant associations. TF modules included are those mentioned in the main text or in other figures, and five of nine traits are included for simplicity. All significant correlations between behaviors and TF modules are given in Supplementary file 8. For behaviors, p indicates proportion (e.g. p(pollen) is the proportion of returning foraging trips where the bee carried pollen). (B) Motifs enriched within DAPs show maximum binding probabilities near peak summits. (C) Motifs enriched in promoter regions of forager >layer DEGs show elevated binding probabilities ~ 3 kb upstream of and overlapping TSSs. Motif names and sequences are from FlyFactor (Zhu et al., 2011) for Drosophila melanogaster.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Edges indicate known interactions based on MIST database for Drosophila melanogaster. First-order PPI indicates one intermediate protein between linked nodes, while second-order PPI indicates two intermediate proteins. PPI = protein protein interaction.
 
 In addition to the correlations between TF module activity and behavior, many TF motifs were enriched in peaks of differential accessibility or in the regulatory regions of DEGs between specialized layers and foragers. 77 out of 223 motifs (functionally validated in Drosophila melanogaster, Zhu et al., 2011) were enriched in layer vs. forager DAPs (q-val <0.01, Supplementary file 7), and 14 motifs were specifically enriched in the regulatory regions of forager-upregulated DEGs (q-val <0.2, Supplementary file 7). Nine motifs were common to both sets (Figure 3B–C), including binding sites for TFs involved in regulating nervous system development (hairy, side, sr, and klu), transcription (max/mnt), juvenile hormone (JH) signaling (tai and tai/met), chromatin modification (trl), and circadian rhythms (cwo). These motifs were centrally enriched within DAPs (Figure 3B), and showed two peaks of elevated binding probability in the promoter regions of forager-biased DEGs, one ~ 3 kb upstream of transcriptional start sites (TSSs) and a second overlapping TSSs (Figure 3C). By contrast, only two TF motifs were significantly enriched in the regulatory regions of specialist vs. generalist DEGs (mad and ken, Supplementary file 7), and no motifs were enriched within DAPs between generalists and either specialist group (Supplementary file 7), likely due in part to the small number of DAPs distinguishing generalists and specialists (Figure 2D). Many of the motifs enriched within DAPs or DEG promoters are binding sites for TFs that were themselves differentially expressed, including cwo, tai/met, side, h, and sr (Supplementary file 3).
 
 Across individuals, GRN activity was largely consistent within each behavioral group (Figure 4A), with TF module activity most distinct between layers and foragers. The relationship between TF expression and behavior was so strong that it was possible to predict individual behavior based solely upon the expression of TFs in the brain using a machine-learning algorithm and leave-one-out cross validation (Figure 4B; Figure 4—figure supplement 1). TF expression correctly predicted 100% of foragers and 94% of layers. By contrast, it was not possible to predict generalists based on brain TF expression (only 1 of 8 correctly classified).
 
-## Comparative analyses of LW colony behavioral phenotypes and other social insect phenotypes
+![Figure 4.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig4-v1.jpg)
+
+**Figure 4.:** (A) TF modules (rows) with significant up/downregulation in at least 10 individuals, sorted by hierarchical clustering. Individuals (columns) are ordered by specialist score, with darkly colored blocks indicating correctly classified individuals based on TF expression prediction analysis and lightly colored blocks indicating incorrect classification. TF modules showed patterns of differentiation between L and F, while G were more variable in module activity. Labeled modules are those with TFs shown in panel (B) or discussed in text. (B) Class prediction analysis based on brain TF expression correctly classified all but one specialist (L: layer, F: forager) but only one generalist (G). Normalized expression (logCPM) of 4 of the top 20 informative TFs for class prediction analysis are shown (others in Figure 4—figure supplement 1). Median of points is represented by bold horizontal line within shaded 95% confidence interval, with length of shape and smoothed curve showing range and density of data, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Points are colored by behavioral group (Layer: purple, Generalist: orange, Forager: green). Although some of the top predictors individually show weak correlation with specialist score, the random forest machine-learning algorithm combined multiple weak predictors together in a single model to accurately classify the three behavioral groups, suggesting the TFs act combinatorially to influence behavior.
+
+### Comparative analyses of LW colony behavioral phenotypes and other social insect phenotypes
 
 The performance of both egg laying and foraging by individuals in LW colonies, previously reported in Naeger et al., 2013, is unusual for honey bees; these behaviors are otherwise confined to separate castes (queens and workers). This raises the question of whether the mechanisms underlying LW behavior reflect caste-related molecular differences. We compared our gene expression results to previous studies of queens, workers, and worker subcastes in various species of social insects to ask whether the molecular architecture of LW phenotypes may be useful in the context of understanding additional social phenotypes.
 
@@ -106,13 +140,104 @@ In addition, differences in brain gene expression between egg-layers and forager
 
 Additionally, forager vs. layer DEGs in this study were enriched for genes identified as under selection in two studies of social evolution. Forager vs. layer DEGs overlapped significantly with genes undergoing positive selection in honey bees (RF = 1.1, p=0.015; Harpur et al., 2014; Supplementary file 9) and across highly eusocial species relative to solitary or primitively eusocial species (Woodard et al., 2011; Supplementary file 9). Genes under selection in highly eusocial lineages were enriched specifically for genes identified here as upregulated in foragers relative to layers (RF = 1.4, p=0.009), but not for layer-biased DEGs (p=0.106) (Supplementary file 9). Forager vs. layer DEGs were not significantly enriched for genes that were identified in a third study as under selection in social lineages of bees (p=0.262; Kapheim et al., 2015; Supplementary file 9). Many of the forager vs. layer DEGs also found to be undergoing positive selection were related to metabolism (Supplementary file 9).
 
-## TFs involved in LW plasticity previously implicated in social evolution
+### TFs involved in LW plasticity previously implicated in social evolution
 
 Given that differences in brain gene expression between egg-layers and foragers reflect caste-related differences, we also tested whether there is overlap between TFs involved in LW plasticity and those previously implicated in social evolution. Indeed, many of the TFs we identified above as related to behavioral plasticity based on motif enrichment, group predictive analysis, or brain GRN activity were previously known to be associated with social behavior on an evolutionary timescale. A comparative analysis of the genomes of ten bee species (Kapheim et al., 2015) identified 13 TF motifs with associations between binding strength and social complexity. Nine of those 13 motifs were also detected above as enriched within specialist DAPs or DEG regulatory regions (p=0.015, hypergeometric test of overlap), and 6 of those nine are binding sites for TFs included in the above individualized GRNs. Along with TF module correlation and behaviorally-predictive TF expression, these results highlight a set of 15 TFs as compelling candidates in social plasticity and evolution, with significant associations in at least 3 of the five analyses (Figure 5; Table 1). The 15 TFs have functions related to known mechanisms associated with social behavior, including brain development (Hamilton et al., 2016), JH signaling (Woodard et al., 2011), and chromatin changes via histone acetylation (Simola et al., 2016).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62850/elife-62850-fig5-v1.jpg)
 
 **Figure 5.:** Names given are for Drosophila melanogaster motifs (Zhu et al., 2011), with homology to honey bee genes as in Kapheim et al., 2015. Color of bar in first two columns indicates whether there was stronger enrichment among forager-biased (green) or layer-biased (purple) peaks or genes.
+
+**Table 1.**
+ Description of 15 candidate TFs regulating specialist behavioral phenotypes in Figure 5.Names given are for Drosophila melanogaster motifs (Zhu et al., 2011), with homology to honey bee genes as in Kapheim et al., 2015. Function summaries are adapted from D. melanogaster gene annotations from FlyBase (release FB2020_05; FlyBase Consortium et al., 2019). Note that terms related to ‘regulation of transcription’ apply to most TFs but were omitted for brevity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motif</th>
+      <th>TF name</th>
+      <th>Function(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cwo</td>
+      <td>clockwork orange</td>
+      <td>circadian regulation of gene expression; dendrite morphogenesis</td>
+    </tr>
+    <tr>
+      <td>tai/met</td>
+      <td>taiman, Mondo</td>
+      <td>ecdysone receptor co-activator; lipid and carbohydrate metabolism</td>
+    </tr>
+    <tr>
+      <td>side</td>
+      <td>sidestep, E(spl)mgamma-HLH</td>
+      <td>pattern specification; neurogenesis; neuronal stem cell maintenance</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>hairy</td>
+      <td>cell morphogenesis; tracheal system development; cellular metabolism</td>
+    </tr>
+    <tr>
+      <td>sr</td>
+      <td>stripe</td>
+      <td>central nervous system development</td>
+    </tr>
+    <tr>
+      <td>max</td>
+      <td>Max</td>
+      <td>cell and organismal growth</td>
+    </tr>
+    <tr>
+      <td>dpn</td>
+      <td>deadpan</td>
+      <td>adult locomotory behavior; neuroblast development</td>
+    </tr>
+    <tr>
+      <td>usf</td>
+      <td>Usf</td>
+      <td>[unknown]</td>
+    </tr>
+    <tr>
+      <td>med</td>
+      <td>Medea</td>
+      <td>dorsal-ventral patterning; activin receptor signaling; eye morphogenesis; germ-line stem cell division and maintenance; neuron development</td>
+    </tr>
+    <tr>
+      <td>opa</td>
+      <td>odd paired</td>
+      <td>embryogenesis; midgut development; adult head morphogenesis; neural stem cell development; circadian rhythm</td>
+    </tr>
+    <tr>
+      <td>bab1</td>
+      <td>bric a brac 1</td>
+      <td>pattern formation; ovary morphogenesis; abdominal pigmentation; olfactory receptor neuron fate diversity</td>
+    </tr>
+    <tr>
+      <td>deaf1</td>
+      <td>Deformed epidermal autoregulatory factor-1</td>
+      <td>embryo development; regulation of immune response</td>
+    </tr>
+    <tr>
+      <td>crebA</td>
+      <td>Cyclic-AMP response element binding protein A</td>
+      <td>salivary gland development; cuticle development</td>
+    </tr>
+    <tr>
+      <td>sug</td>
+      <td>sugarbabe</td>
+      <td>regulates expression of insulin-like peptides and genes involved in lipid and carbohydrate metabolism</td>
+    </tr>
+    <tr>
+      <td>usp</td>
+      <td>ultraspiracle</td>
+      <td>cell migration; response to ecdysone; germ cell development; metamorphosis; mushroom body development; neuron remodeling</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -136,9 +261,96 @@ Our discovery of intermediate generalist phenotypes in laying worker colonies, a
 
 ## Materials and methods
 
-## Bees and colony setup
+**Key resources table**
 
-## Source colonies
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (A. mellifera)</td>
+      <td>queens</td>
+      <td>Honey Bee Insemination Service, Washington State University</td>
+      <td></td>
+      <td>SDI colonies</td>
+    </tr>
+    <tr>
+      <td>Biological sample (A. mellifera)</td>
+      <td>workers</td>
+      <td>University of Illinois Bee Research Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA HT kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>FC-121–1031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td></td>
+      <td>RRID:SCR_011848</td>
+      <td>v0.36</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td></td>
+      <td>RRID:SCR_015899</td>
+      <td>v2.5.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bwa</td>
+      <td></td>
+      <td>RRID:SCR_010910</td>
+      <td>v0.7.17</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td></td>
+      <td>RRID:SCR_006525</td>
+      <td>v2.10.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R project for statistical computing</td>
+      <td>R Core Team</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bees and colony setup
+
+#### Source colonies
 
 Honey bee colonies were maintained according to standard beekeeping practices at the University of Illinois Bee Research Facility in Urbana, Illinois. One-day-old adult worker bees were obtained by removing sealed honeycomb frames of late-stage pupae from source colonies in the field and housing them in an incubator inside emergence cages at 34°C and 50% relative humidity. Bees were removed from frames daily to collect adults less than 24 hr old.
 
@@ -146,57 +358,57 @@ Prior to establishing the colonies of barcoded bees, 16 source colonies were scr
 
 To reduce genetic variation among bees used for sequencing, experimental colonies D-F were established from a mix of two source colonies each headed by a queen of either A. mellifera ligustica or A. mellifera carnica origin who had been artificially inseminated with semen from a single drone (SDI) (queen rearing and inseminations performed by Sue Cobey, Honey Bee Insemination Service; Washington State University; US stocks of bees are primarily, but not completely ligustica or carnica). Experimental colonies A-C were established from naturally mated, A. mellifera ligustica source colonies. Honeycomb frames of late-stage pupae were removed from source colonies and maintained in an indoor incubator. Worker bees were collected from these frames each day to obtain 0–24 hr old individuals for barcoding. A total of 800 bees were used for each experimental colony, collected and barcoded over 1–2 days upon eclosion (Supplementary file 10).
 
-## Barcoding bees
+#### Barcoding bees
 
 Bees were tagged with ‘bCode’ barcodes as in Gernat et al., 2018. Unique sets of bCodes were used to differentiate bees barcoded on different days, as well as to differentiate bees from different source colonies in colonies D-F. To attach bCodes to bees, workers were anesthetized on ice and then positioned using soft forceps (BioQuip, Compton, CA). A small drop of Loctite Super Glue Gel Control (Henkel, Düsseldorf, Germany) was applied to the center of the thorax of each bee, followed by a bCode positioned with its left and right edge parallel to the anteroposterior axis of the bee. Bees were carefully placed in plastic dishes until they recovered from cold anesthetization, at which point the glue was dry. After waking, all bees were placed in a large container with Fluon-coated walls (Insect-a-Slip, BioQuip) where honey was provided ad libitum until placement into a custom observation hive, described below. At the end of each barcoding day, bees were carefully transferred into the observation hive.
 
-## Behavioral tracking
+### Behavioral tracking
 
-## Hive monitoring
+#### Hive monitoring
 
 Barcoded bees were housed in a glass-walled observation hive with a one-sided plastic honeycomb frame, as in Gernat et al., 2018. Bees were unable to access the back side of the honeycomb, and could exit the hive through a plastic tube to the outside. Colonies were maintained in a dark room with a heater and humidifier that kept the room at approximately 32°C and 50% relative humidity.
 
 Infrared light (not visible to bees) was used to illuminate the hive from both the front and back while capturing hive images. Images were acquired at one-second resolution with a monochrome Prosilica GX6600 machine vision camera (Allied Vision, Stadtroda, Germany) fitted with a Nikkor AF 135 mm f/2 D DC prime lens (Nikon, Minato City, Japan). Additional details about image acquisition can be found in Gernat et al., 2018. Images were saved to a redundant array of independent disks, then copied onto a computing cluster (Biocluster, UIUC) for analysis after the end of each experimental recording period.
 
-## Entrance monitoring
+#### Entrance monitoring
 
 Colonies of barcoded bees were given access to the outside via a tube connected through an exterior wall of the Bee Research Facility to an entrance equipped with an automated flight activity monitor as in Geffre et al., 2020. This monitor included a maze to slow down incoming and outgoing bees, and a Raspberry Pi camera (five megapixel v1.3, Adafruit, New York, NY) that imaged the maze twice per second from 07:00 until 19:00 daily. The camera was controlled by a Raspberry Pi 2B computer running the Raspian eight operating system. Images were acquired using the raspistill program and the following options: -n -ISO 400 w 2593 h 1400 -cfx 128:128 -x none -e jpg -q 90 -tl 500 t 595000 -bm.
 
-## Barcode detection
+### Barcode detection
 
 Barcodes were detected in hive images as in Gernat et al., 2018 and filtered to facilitate subsequent behavioral analyses. Filtering involved removal of potential tracking errors, including removal of barcodes that did not pass read error correction. In addition, records for barcodes that were read twice in the same image were removed, as were hive image records of the same barcode identified more than 5 cm/second between successive detections, which are likely to be misidentifications. An average of 94.51% of detections remained after these filtering steps (range across colonies: 91.94–97.11%). Finally, the time of death of each bee was estimated using the last time she was observed for at least 4 min during a 5 min window above the third row of honeycomb cells from the bottom of the hive; dead bees tend to accumulate below this level prior to being removed by other bees (Gernat et al., 2018). Records for bees following their time of death were filtered out so behavioral scores (below) were calculated only over times in which bees were alive.
 
 In entrance monitor images, barcodes were similarly detected as in hive images, but with parameters adjusted for images produced by the Raspberry Pi camera. Fast-moving bees were not filtered out in entrance images, because bees do move quickly through the entrance monitor and due to the relatively small number of bees that fit into the maze, spurious fast movement due to bCode decoding errors is unlikely.
 
-## Egg-laying detector
+### Egg-laying detector
 
-## Annotated image library
+#### Annotated image library
 
 Hive images from three experimental colonies and across 12 different days were used for manual annotation of egg-laying events. The software Fiji (Schindelin et al., 2012) was used to mark the bCode positions of all workers laying eggs in an initial set of 1500 hive images, followed by an additional set of 782 images, each annotated by three independent observers. After the initial identification of egg-laying bees in these images, the two seconds before and after each egg-laying event were also annotated for those bees. Bees not marked as laying eggs with visible bCodes were considered non-egg-laying for training of the CNN, below.
 
-## CNN training and performance estimation
+#### CNN training and performance estimation
 
 Two convolutional neural networks (CNNs) were trained on the annotated egg-laying images, using TensorFlow (Abadi et al., 2016). Methods are described fully in Gernat et al., 2020 and are presented briefly here. The first CNN used images cropped to include just a small rectangular region behind the barcode of each bee. For egg-laying bees, these images show the honeycomb, because their abdomen is backed into the comb and thus not visible. For non-layers, these images show the abdomen. The CNN was trained to differentiate between these two cases. The second CNN was applied to images of bees that were identified as potential egg-layers by the first CNN. It used slightly larger images that showed the entire bee and was trained to use information about the bee’s posture and her immediate surroundings to identify false positives, which were subsequently filtered out.
 
 Application of a CNN to an image results in a score between 0 and 1 that reflects the likelihood of that image showing the event of interest. Deciding whether a score is sufficiently high for assuming that the event took place involves thresholding that score. To choose thresholds for each CNN score and a minimum egg-laying duration, a calibration set of images, which were not used for training the CNNs, was used to estimate the performance of the egg-laying detector for different threshold combinations. Thresholds were chosen from this calibration set to maximize the detector’s positive predictive value, then were applied to an independent test set of images that had also never been seen by the detector to obtain unbiased performance values. Based on the performance estimation on the test set of images, the egg-laying detector had the following performance: 99.71% accuracy, 35.39% sensitivity, 100% specificity, 100% positive predictive value, and 99.71% negative predictive value. Minimizing false positives came at a cost to sensitivity, but bees who lay eggs will likely do so more than once over the course of the experiment and can thus still be identified as egg-layers (honey bees possess multiple ovarioles, each of which can develop eggs simultaneously [Hess, 1942]). Egg-laying detections were further aggregated into events: subsequent detections that occurred within 10 s and 11.2 mm (the width of two honeycomb cells) of one another were assumed to belong to the same egg-laying event and were merged.
 
-## Filtering and annotation of entrance data
+### Filtering and annotation of entrance data
 
 Raw detections of bees in the entrance were filtered as in Geffre et al., 2020. Briefly, a bee must traverse at least one-third the distance of the entrance monitor to be counted, and traversals that occurred within 10 s of each other were merged into a single event. These traversal events were then determined to be incoming or outgoing based on the positional coordinates of the bee at the start and end times of each event. Numbers of foraging trips (Supplementary file 1) was inferred from series of outgoing and incoming events.
 
 Incoming foraging trips were additionally annotated with trophallaxis data to determine whether a forager likely returned with nectar. CNNs trained to identify pairs of bees engaged in trophallaxis as well as the direction of trophallaxis (i.e. which bee was donor and which was recipient; Gernat et al., 2020) were used to annotate incoming trips for all bees. Parameters used for the detector resulted in the following performance metrics based on test images: 88.7% sensitivity, 99.6% specificity, 90.4% positive predictive value, 99.6% negative predictive value, and 88.9% accuracy in determining trophallactic role (donor or receiver) of each bee. If a bee was a trophallaxis donor within 5 min after returning from a trip (Seeley, 2009), with no trophallaxis reception prior to the donation, that foraging trip was annotated as a nectar trip. Additionally, incoming trips were manually annotated for pollen on the hindlegs of returning bees for colonies D-F. Combining these nectar and pollen data for each trip, the proportion of foraging trips with nectar (‘p.nectar’), pollen (‘p.pollen’) or both (‘p.both’) were calculated per bee in these colonies.
 
-## Specialist and generalist scores
+### Specialist and generalist scores
 
 In order to characterize the activity of egg-laying and foraging for each bee, two behavioral scores were created. The ‘specialist’ score describes how specialized an individual was on either egg-laying (scores near −1) or foraging (scores near +1) relative to other bees in the colony; bees that consistently performed both egg-laying and foraging, or that performed neither behavior, have specialist scores near 0. The generalist score ranges from 0 to 1 and describes the degree to which an individual performed both egg-laying and foraging behaviors, differentiating bees with specialist scores near 0 based on the performance (or not) of egg-laying and foraging. Scores were created by first counting the number of egg-laying and foraging events per day. Bees were then ranked for each behavior relative to other bees in the colony on the same day, with tying ranks being assigned the minimal rank (e.g. if three bees were tied between the 4th and 8th ranked bees, they all received a rank of 5). Ranks were then normalized by dividing by the maximum rank, so that all ranks were in the range [0,1]. The normalized rank space for each bee (i.e. normalized egg-laying rank and normalized foraging rank) was then mapped to behavioral scores (and corresponding color space) using the following formulae in polar coordinates (ρ,θ) on the two-dimensional rank space: generalist score = (1/2)ρ2sin42θ, specialist score = sin(θ-π/4)ρ4cos42θ. Note that the numerical value of the scores has no biological meaning, but is simply a mapping from rank space to the space of colors as shown in Figure 2—figure supplement 1.
 
-## Selection of bees for sequencing
+### Selection of bees for sequencing
 
 The median of specialist and generalist scores was weighted to emphasize the latter part of the experiment; days 15–21 received a weight of 1–7, respectively, and each day’s score was multiplied by this weight. These scores were used to characterize the overall behavior of each bee in the colony. The rank approach allowed for normalization across days with different overall levels of activity in the colony, and the median score across days provides an overall assessment of the lifetime behavior of each bee. These weighted median scores were used to rank all bees, and the top ranking specialists and generalists from two colonies were selected for brain RNA sequencing (RNAseq) and Assay for Transposase-Accessible Chromatin using sequencing (ATACseq). Scores for each sequenced bee (n = 45, 25 from colony E, 20 from colony F), as well as total numbers of detected egg-laying and foraging events per bee, are provided in Supplementary file 2.
 
 To examine variation in behavior within and among groups, principal component analysis (PCA) was performed on the following set of behavioral traits (see also Supplementary file 2): number of eggs laid, number of foraging events, proportion of trips with evidence of nectar collection, proportion of trips with evidence of pollen collection, and proportion of trips with evidence of both nectar and pollen. PCA was performed in R using the prcomp function and plotted using the ggplot2 package.
 
-## Tissue dissection and homogenization
+### Tissue dissection and homogenization
 
 At the end of behavioral tracking, bees were collected from each colony and stored at −80°C. All colonies were collected between 21:00-23:00 to ensure foragers were inside the hive. For bees selected for sequencing, abdomens of each bee were carefully removed on dry ice and incubated for 16 hr at −20°C in RNA-later ICE (Life Technologies, Carlsbad, CA). Ovaries were imaged and assessed for ovary development using a 1–5 scale adapted from Hess, 1942 to assign an ovary score; a score of 3–5 indicates ovary activation. These dissections confirmed that egg-layers and generalists had activated ovaries, while many foragers did not. Ovary scores, as well as number of ovarioles as determined from dissections, are given in Supplementary file 2.
 
@@ -204,27 +416,27 @@ The head of each bee was freeze-dried at 300 milliTorr for 55 min, and whole bra
 
 Brains were individually homogenized in 150 µL phosphate buffered saline (1X PBS, Corning, Corning, NY, cat. #21–040-CV) with protein inhibitor complex (PIC, Complete Tablets, EDTA-free Protease Inhibitor Cocktail from Roche, Basel, Switzerland, cat. #04693132001) using a motorized pestle for 20 s. 50 µL of this homogenate was then pipetted into 450 µL cold PBS+PIC and placed on ice for ATAC-seq library preparation (see below). The remaining 100 µL homogenate was mixed with 500 µL RLT buffer (Qiagen, Hilden, Germany) with 1% β-mercaptoethanol for use in the Qiagen RNeasy Mini Kit RNA extraction protocol (see below).
 
-## RNAseq library preparation and sequencing
+### RNAseq library preparation and sequencing
 
 Whole brain RNA was extracted from the 600 µL homogenate in RLT buffer after an additional 30 s homogenization following the Qiagen RNeasy Mini Kit protocol, including a DNase (Qiagen) treatment to remove genomic DNA. RNA quantities were determined for each sample using a Qubit RNA HS Assay Kit (Invitrogen, Carlsbad, CA). High RNA integrity for all samples was confirmed with Bioanalyzer 2100 RNA Pico chips (Agilent, Santa Clara, CA) prior to library preparation.
 
 RNAseq libraries were constructed and sequenced by the W.M. Keck Center for Comparative and Functional Genomics at the Roy J. Carver Biotechnology Center (University of Illinois at Urbana-Champaign). Libraries were constructed from 500 ng RNA per sample using the TruSeq Stranded mRNA HT kit (Illumina, San Diego, CA) on an ePMotion 5075 robot (Eppendorf, Hamburg, Germany). Libraries were uniquely barcoded, quantified, and pooled for sequencing across 6 lanes with 100 nt single-end sequencing on the Illumina HiSeq 4000.
 
-## ATACseq library preparation and sequencing
+### ATACseq library preparation and sequencing
 
 The 500 µL tissue homogenate was additionally homogenized by aspirating through a 20 gauge needle followed by a 23 gauge needle five times each. Samples were centrifuged at 500 g for 5 min at 4°C. Supernatant was removed, and cells were resuspended in 50 µL cold PBS+PIC. 15 µL of this cell suspension (approximately 1/10th of the total brain,~100k cells) was placed into a new microcentrifuge tube, and this was centrifuged at 500 g for 5 min at 4°C as an additional cell washing step. Supernatant was removed, and cells were gently resuspended in 50 µL cold lysis buffer prepared as in Buenrostro et al., 2015. The remainder of the ATACseq library protocol followed Buenrostro et al., 2015, with the exception of the final purification step, where a 0.8:1 ratio of Ampure XP beads (Beckman Coulter, Brea, CA) to sample was used to purify each library. In addition to sample libraries, input libraries were constructed from thoracic genomic DNA from a random bee from each colony per sequencing batch using 50 ng of genomic DNA (extracted using the Gentra Puregene Tissue Kit from Qiagen, cat. #158667, following manufacturer’s protocol for DNA purification from 25 mg tissue but with 6 µL proteinase K and 4 µL RNase A at the appropriate steps). Genomic DNA was transposed with Nextera Tn5 Transposase (Nextera Kit, Illumina) following the ATACseq protocol immediately following the cell lysis step (Buenrostro et al., 2015), again using an 0.8:1 Ampure XP bead clean-up at the end of the protocol. A Qubit dsDNA HS Assay Kit (Invitrogen) was used to quantify each library, and library size and quality was assessed using a Bioanalyzer High-Sensitivity DNA Analysis kit (Agilent).
 
 ATACseq libraries, including input libraries, were pooled at equal nM concentrations and a bead clean-up (0.8:1 ratio of Ampure XP beads to sample) was performed on the pool prior to submission for sequencing. QC on the final pool was performed using qPCR and an AATI Fragment Analyzer by the Keck Center. Libraries were sequenced across three lanes with 100 nt paired-end sequencing on the Illumina HiSeq 4000 by the Keck Center.
 
-## Data processing and analysis
+### Data processing and analysis
 
-## RNAseq
+#### RNAseq
 
 Sequencing of RNAseq libraries (n = 45, 25 from colony E, 20 from colony F) produced 1,487,641,973 reads which survived quality and adapter trimming using Trimmomatic (version 0.36, parameters used: ILLUMINACLIP: 2:35:30 LEADING:20 TRAILING:20 MINLEN:30). Trimmed reads were aligned to the A. mellifera HAv3.1 genome (NCBI accession GCA_003254395.2) using STAR (version 2.5.3) and default parameters, resulting in an average of 96.7% reads mapping uniquely. The program featureCounts from the Subread package (version 1.5.2) was used to assign mapped reads to gene features from the GFF file from NCBI associated with the A. mellifera HAv3.1 genome. On average, 84.8% of uniquely mapped reads were assigned to gene features using featureCounts.
 
 Gene counts were imported into R for differential expression analysis using edgeR. Genes with less than 1 CPM in at least two samples were removed, and remaining count values were normalized using the TMM method. Gene-wise variances were calculated by estimating tagwise dispersions in edgeR on filtered gene count matrices for each group separately and plotted using ggplot2. Tagwise dispersion estimates were followed by quasi-likelihood F-tests for each pairwise comparison of groups, with FDR correction for multiple testing. Differentially expressed genes (DEGs, FDR < 0.05) for each pairwise comparison are given in Supplementary file 3.
 
-## ATACseq
+#### ATACseq
 
 ATACseq libraries (n = 48, 25 from colony E, 20 from colony F, three input libraries) produced 1,110,401,018 paired-end reads which survived quality and adapter trimming using Trimmomatic (version 0.38, parameters used: ILLUMINACLIP: 2:15:10 HEADCROP:10 LEADING:20 TRAILING 20 SLIDINGWINDOW:4:15 MINLEN:30). An average of 98.1% of reads mapped to the A. mellifera HAv3.1 genome using bwa mem (version 0.7.17, default parameters). Duplicates were marked and removed prior to further processing using picard (version 2.10.1, average duplication level 30.2%).
 
@@ -232,31 +444,31 @@ Peaks were called from deduplicated BAM files using MACS2 (version 2.1.1, comman
 
 Peak counts were imported into R for differential accessibility analysis using edgeR. Peaks with less than 1 CPM in at least two samples were removed, and remaining count values were normalized using the TMM method. Gene-wise variances were calculated by estimating tagwise dispersions in edgeR on filtered gene count matrices for each group separately and plotted using ggplot2. Tagwise dispersion estimates were followed by quasi-likelihood F-tests for each pairwise comparison of groups, with FDR correction for multiple testing. Differentially accessible peak (DAP, FDR < 0.05) results for each pairwise comparison are given in Supplementary file 4.
 
-## Functional annotation of differential expression and chromatin accessibility
+### Functional annotation of differential expression and chromatin accessibility
 
-## Differential expression
+#### Differential expression
 
 Differentially expressed gene (DEG) lists were functionally annotated using Gene Ontology (GO) by first mapping putative orthologs between A. mellifera and Drosophila melanogaster using reciprocal best BLASTP hits (e-value cutoff = 1e-5). Only DEGs with putative D. melanogaster orthologs were included for GO enrichment, and the background list used was all tested genes (those which passed the minimum expression threshold) with putative D. melanogaster orthologs. Enrichment tests for biological processes were conducted using GOrilla (Eden et al., 2009) with all significant DEGs (FDR < 0.05) against the background list. GO enrichment results for all DEG lists are given in Supplementary file 3.
 
-## Differential accessibility
+#### Differential accessibility
 
 To functionally annotate DAPs, the midpoint coordinates of the 11,614 peaks identified with MACS2 were assigned to genes based on proximity to honey bee gene features (A. mellifera HAv3.1 genome). The following features were considered per gene: promoters (1 kb upstream), introns, exons, 5’ UTR, 3’ UTR, upstream (10 kb upstream), and downstream (10 kb). Peaks not associated with any gene feature were classified as intergenic. When peaks were associated with multiple genes (e.g. the intron of one gene and the promoter of another), they were assigned to individual genes based on the following priority: promoter (highest priority), exon, 5’ UTR, 3’ UTR, intron, upstream, downstream (lowest priority). If a peak was present in the same highest priority class for multiple genes, it was randomly assigned to one gene. In this way, each peak was assigned to either a single gene or considered intergenic. Of the 11,614 peaks, 1822 were assigned to the promoter region of a gene, 776 to exons, 1326 to 5’ UTRs, 273 to 3’ UTRs, 4666 to introns, 1155 to upstream regions, 773 to downstream regions, and 823 peaks were located in intergenic regions.
 
 As before with GO enrichment for DEGs, differentially accessible peaks (DAPs) were functionally annotated by mapping peak-associated genes to putative orthologs in D. melanogaster using BLASTP. The background list for enrichment analyses was the list of peaks which met the minimum accessibility count threshold for analysis and which had putative orthologs in D. melanogaster. GOrilla (Eden et al., 2009) was used for enrichment tests. GO enrichment results for all DAP lists are given in Supplementary file 4.
 
-## Motif enrichment of DAPs and DEG regulatory regions
+### Motif enrichment of DAPs and DEG regulatory regions
 
 TF motif enrichment analysis in this study was performed similarly to the methods described in Whitney et al., 2014. The overall approach is as follows, with details below. For each TF motif, (1) genomic windows were scored for the presence of the motif, (2) window scores were combined into scores for genomic segments of interest, representing either gene regulatory regions or accessibility peaks, (3) a set of motif targets was created using a fixed cutoff on the segment scores, and (4) a statistical test for enrichment was performed between segments that were motif targets and those that were significant in differential analysis.
 
-## Motif scores for genomic windows
+#### Motif scores for genomic windows
 
 First, we divided the honey bee genome (version HAv3.1, NCBI accession GCA_003254395.2) into 500 bp windows with 250 bp shifts. We gathered a collection of 223 representative TFs (Kapheim et al., 2015) and downloaded their DNA binding specificities (motifs) characterized as position weight matrices (PWMs) from FlyFactorSurvey (Zhu et al., 2011). Separately for each TF motif, we ran the Stubb algorithm (Sinha et al., 2003) on all genomic windows to score them for the presence of that TF’s binding sites. Tandem repeats in the windows were masked using the Tandem Repeat Finder (Benson, 1999) before calculating the Stubb scores to avoid scoring the repeats as weak binding sites. Since the honey bee genome has significant local G/C heterogeneity (Sinha et al., 2006), we converted the raw Stubb scores for each window into G/C content-normalized empirical p-values. This was done by determining the rank of each window among all genomic windows of similar G/C content (when grouped into 20 G/C bins).
 
-## Scores for genomic segments
+#### Scores for genomic segments
 
 We defined two different collections of genomic segments (accessibility peaks and gene regulatory regions) to analyze with motif enrichment in this study. Since the genomic segments may overlap with a variable number of our genomic windows, we defined a length-adjusted motif score for each segment. This score was calculated using the score of the best scoring window in that segment for the given motif and the number of windows overlapping the segment, as follows: scseg = 1 – (1 - pvalbest)N where, scseg = length-adjusted motif score for the segment, N = number of windows that overlap with the scoring window, and pvalbest = best G/C normalized empirical p-value among the N overlapping windows.
 
-## Statistical test for TF enrichment
+#### Statistical test for TF enrichment
 
 TF enrichment was analyzed for two sets of regions: DAPs (Differentially Accessible Peaks) and DEGs (Differentially Expressed Genes) (Supplementary file 7).
 
@@ -268,7 +480,7 @@ All p-values were then converted to q-values using the ‘qvalue’ function in 
 
 For motifs enriched both within DAPs and DEG upstream regions, CentriMo (Bailey and Machanick, 2012) from MEME Suite was used to calculate and plot the probability of motif binding across 2 kb windows centered on the peak summit for DAPs and 7 kb windows (5 kb upstream and 2 kb downstream of the transcriptional start site (TSS)) for DEGs. These probabilities are shown in Figure 3B-C.
 
-## Individualized gene regulatory network (GRN) analysis
+### Individualized gene regulatory network (GRN) analysis
 
 To understand how TFs orchestrate transcriptional changes in the brain, we reconstructed a gene regulatory network (GRN) model using the ASTRIX approach (Chandrasekaran, 2014; Chandrasekaran et al., 2011). ASTRIX uses gene expression data to identify interactions between TFs and their target genes. The ASTRIX algorithm has been previously used to infer brain GRN models for various organisms including the honey bee (Bukhari et al., 2017; Saul et al., 2017; Shpigler et al., 2017). These models showed significantly high accuracy in predicting gene expression changes in the brain and identified TFs that regulate social behaviors.
 
@@ -282,6 +494,6 @@ Finally, to identify TF modules associated with expression changes in each indiv
 
 We used a Random Forests classification algorithm for predicting individual behavioral group from TF expression levels. A leave-one-out cross validation analysis was performed wherein the algorithm was trained using data from the remaining 44 individuals and then used to predict the behavior of the 45th individual using its TF levels. The model achieved an accuracy of 82% in predicting behavior. Performance of the model was evaluated by comparison with random shuffling of the behavior labels. We made predictions 100 times with a different set of shuffled labels and compared the accuracy of predictions (i.e. total individuals for which behavioral group was correctly predicted) between the random model and the Random Forest algorithm using a t-test (p=1×10−8). This suggests that TF expression levels can accurately forecast the behavior of the individual, especially for specialists. The relative importance of each TF in predicting behavior was determined using Out-of-bag predictor importance estimation, wherein each predictor’s value is permuted and the corresponding impact on model accuracy is determined (importance scores given in Supplementary file 8). The random forest classification algorithm was implemented in MATLAB with default parameters for the number of predictors sampled (square root of the number of predictors, in this case 258 TFs) and default values for the tree depth (n - 1, where n is the training data size).
 
-## Selection of candidate TFs involved in specialized phenotypes
+### Selection of candidate TFs involved in specialized phenotypes
 
 Candidate TFs displayed in Figure 5 were drawn from multiple analyses presented in this paper and in Kapheim et al., 2015. ‘Enriched within DAPs’ indicates enrichment of the TF motif within forager vs. layer DAPs from the analysis of ATACseq data within this manuscript (see Motif enrichment of DAPs and DEG promoters and Supplementary file 7). Similarly, ‘Enriched near DEGs’ indicates enrichment of the TF motif among putative regulatory regions of forager vs. layer DEGs (see Motif enrichment of DAPs and DEG promoters and Supplementary file 7). ‘Module correlated with behavior’ indicates that TF module activity is significantly correlated with at least one behavioral metric across individuals (see Individualized Gene Regulatory Network (GRN) analysis and Supplementary file 8). ‘Group Predictive TF’ indicates the TF is among the 20 most informative for predicting individual group membership based on TF expression (see Individualized Gene Regulatory Network (GRN) analysis and Supplementary file 8). ‘Implicated in eusocial evolution’ indicates that the TF motif was previously found to be associated with social evolution in Kapheim et al., 2015.

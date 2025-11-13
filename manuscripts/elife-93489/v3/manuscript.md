@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05ggn0a85 Department of Biochemistry and Microbiology, University of Chemistry and Technology Prague Czech Republic
-2. https://ror.org/04nfjn472 Institute of Organic Chemistry and Biochemistry of Czech Academy of Science Prague Czech Republic
+1. Department of Biochemistry and Microbiology, University of Chemistry and Technology Prague Czech Republic ([ROR:05ggn0a85](https://ror.org/05ggn0a85))
+2. Institute of Organic Chemistry and Biochemistry of Czech Academy of Science Prague Czech Republic ([ROR:04nfjn472](https://ror.org/04nfjn472))
 
 † Corresponding author
 
@@ -42,41 +42,77 @@ Data presented in this study indicate that the interaction of M-PMV Gag with the
 
 ## Results
 
-## Interaction of M-PMV (myr+)MAPP with liposomes triggers MA myristoyl switch and subsequent proteolytic processing at the MA/PP junction
+### Interaction of M-PMV (myr+)MAPP with liposomes triggers MA myristoyl switch and subsequent proteolytic processing at the MA/PP junction
 
 M-PMV maturation occurs upon the interaction of M-PMV ICAPs with the PM during and after buddin-g. However, as we have already shown, the myristoylated M-PMV MA extended with 18 amino acid residues from the downstream PP domain of Gag and a His-tag anchor [ (myr+)MAPP] is cleaved very poorly by M-PMV protease (Prchal et al., 2011). The mechanism that could trigger proteolytic processing of membrane-bound myristoylated Gag is the exposure of myristoyl from the hydrophobic pocket of MA, the myristoyl switch. Therefore, we sought to confirm that interaction with liposomes enables cleavage at the MA/PP junction in (myr+)MAPP. We compared the efficiency of cleavage of both M-PMV (myr−)MAPP and (myr+)MAPP bound to liposomes mimicking the phospholipid composition of the PM inner leaflet (Doktorova et al., 2017). As previously observed (Prchal et al., 2011), in the absence of liposomes, (myr−)MAPP was quickly cleaved by M-PMV protease (Figure 1A), but cleavage of (myr+)MAPP was significantly delayed (Figure 1B). Our new data reveal that binding of (myr+)MAPP to liposomes significantly enhances the cleavage kinetics (Figure 1B). Therefore, we propose that the interaction of (myr+)MAPP with liposomes triggers the myristoyl switch that subsequently enables efficient cleavage at the MA/PP junction of M-PMV (myr+)Gag.
 
-## The affinity of myristoyl for the hydrophobic pocket of MA modulates MA cleavage from the rest of Gag
+![Figure 1.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig1-v3.jpg)
+
+**Figure 1.:** (A) (myr−)MAPP, (B) (myr+)MAPP, (C) ‘myrOUT’ mutant (myr+)MAPP I51A, and (D) ‘myrIN’ mutant (myr+)MAPP A79V were cleaved by M-PMV protease in the absence or presence of liposomes mimicking the plasma membrane (PM) inner leaflet. All the experiments were performed in three biological replicates with the same results. Source data – Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The positions of mutated residues are indicated in previously published structure (Prchal et al., 2012): I51 (green) and A79 (yellow). Myristoyl is shown in red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** HN-HSQC spectra of WT (myr+)MAPP (blue) overlaid with the same spectra of I51A (red, panel A) and A79V (red, panel B) mutants. Signals of WT HN groups that are not overlapped by signals of mutant are assigned.
+
+### The affinity of myristoyl for the hydrophobic pocket of MA modulates MA cleavage from the rest of Gag
 
 To study the effect of myristoyl switch on the accessibility of (myr+)MAPP C-terminus to the M-PMV protease, we prepared mutants that either facilitate myristoyl release (myrOUT) or prevent the switch (myrIN) by reducing or enhancing the hydrophobicity of the protein core, respectively. To design the ‘myrOUT’ mutant, we identified large hydrophobic amino acid residue I51 which is in direct contact with the myristoyl in M-PMV (myr+)MAPP (9) and substituted it with alanine (I51A) (Figure 1—figure supplement 1). For the ‘myrIN’ mutant, we introduced the A79V mutation previously suggested to affect myristate accessibility in M-PMV (myr+)MA (36) (Figure 1—figure supplement 1). None of these mutations lie near the cleavage site of the MA/PP junction, to exclude the possibility of its direct structural alteration. We also measured HN-HSQC spectra of both (myr+)MAPP mutant proteins and compared them with the WT spectrum. We observed bigger chemical shift changes only for the signals of residues in proximity of the mutation which proves that neither mutation has altered the overall fold of the protein (Figure 1—figure supplement 2).
 
 Here, we show that ‘myrOUT’ (myr+)MAPP mutant was cleaved more efficiently than WT (myr+)MAPP (compare Figure 1B, C), but less efficiently than the WT (myr−)MAPP (Figure 1A), that fully mimics the ‘myrOUT’ conformation. The effect of the ‘myrIN’ substitution in (myr+)MAPP was apparent only upon interaction with liposomes, when preventing the switch should reduce cleavage efficiency compared to the WT (myr+)MAPP. As expected, in the absence of liposomes, both the ‘myrIN’ mutant (Figure 1D) and WT (myr+)MAPP (Figure 1B) were cleaved poorly. More importantly, in the presence of liposomes, the cleavage of ‘myrIN’ mutant was slower than that of WT (myr+)MAPP (compare Figure 1B and B). These results show that the myristoyl switch enables cleavage of (myr+)MAPP by M-PMV protease and the sequestered myristoyl delays the cleavage.
 
-## Liposome interaction and myristoyl switch induce (myr+)MAPP oligomerization
+### Liposome interaction and myristoyl switch induce (myr+)MAPP oligomerization
 
 Based on the known structure of the M-PMV (myr−)MA trimer (Vlach et al., 2009), we designed a mutant allowing covalent cross-linking of monomers to enrich transiently formed MA trimers. We used an approach similar to that of Tedbury et al., 2016 for HIV-1 MA. They introduced cysteines at positions G62 and S66 of HIV-1 MA, allowing spontaneous disulfide bridge formation between MA molecules. Accordingly, we replaced threonine at position 69 of M-PMV MAPP with a cysteine residue for trimer stabilization. In the M-PMV (myr−)MA trimer, T69 is located directly opposite C62 from the neighboring MA monomer (Figure 2A). Thus, its replacement with cysteine allows spontaneous formation of a disulfide bridge under non-reducing conditions and stabilizes the trimeric form of MA.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig2-v3.jpg)
+
+**Figure 2.:** (A) Previously published structure of wild-type (WT) (myr−)MA trimer (Vlach et al., 2009) with residues 62 (yellow) and 69 (red) highlighted. (B) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel showing oligomers of T69C (myr+)MAPP formed upon the interaction of T69C (myr+)MAPP with liposomes, stabilized by disulfide bridges under non-reducing conditions. non-red – non-reducing conditions; red – reducing conditions; *monomer, **dimer, ***trimer, and ****tetramer. Source data – Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel showing monomer of (myr+)MAPP wild-type (WT) and oligomers of (myr+)MAPP T69C formed upon the interaction with liposomes, stabilized by disulfide bridges under non-reducing conditions. non-red – non-reducing conditions; *monomer, **dimer, and ***trimer. Source data – Figure 2—figure supplement 1—source data 1.
+
 Under reducing conditions the (myr+)MAPP T69C mutant remained monomeric both in the absence and in the presence of liposomes. Under non-reducing conditions, the (myr+)MAPP T69C mutant remained predominantly monomeric, with a small fraction of dimers. However, in the presence of liposomes under non-reducing conditions, the oligomeric fraction of the protein increased significantly, and dimers, trimers, and tetramers were formed (Figure 2B). This suggests that the MA myristoyl switch that occurs after MA interaction with liposomes promotes MA oligomerization. Notably, the WT (myr+)MAPP, which features two surface-exposed cysteines (C42 and C62), does not undergo oligomerization under identical conditions (Figure 2—figure supplement 1). This suggests, that random cysteine exposure does not lead to the formation of disulfide bridges in the WT (myr+)MAPP, indicating that the presence of surface-exposed cysteines is insufficient to induce non-specific oligomerization. This is in contrast to the (myr+)MAPP T69C, where oligomerization is supported by the addition of cysteine in position 69 (Figure 2A – red) which can form disulfide bridge with cysteine 62 (Figure 2A – yellow).
 
-## Myristoyl exposure modulates the accessibility of MA junction with PP
+### Myristoyl exposure modulates the accessibility of MA junction with PP
 
 We used hydrogen–deuterium exchange (HDX)-mass spectrometry (MS) to map in detail the observed differences in (myr+)MAPP and (myr−)MAPP behavior. The hydrogen exchange rates of backbone amides which are indicative of their surface exposure and availability were determined at 4°C in the time interval ranging from 2 to 120 s, corresponding to 0.075 to 4.5 s at 37°C. The statistically significant differences (CI98% = ±0.410 Da) were detected in regions 16–33, 67–85, and 89–110 (Figure 3—figure supplement 1, Figure 3—source data 1). In Figure 3B, the first two regions of (myr−)MAPP showed considerable HDX decrease (Figure 3B, blue shaded segments), while the 89–110 regions displayed a significant increase (Figure 3B, red shaded segment in deuterium accessibility compared to (myr+)MAPP). The red shaded segment shows that the absence of myristoyl in (myr−)MAPP can destabilize the alpha-helical secondary structure in the K92-L110 region, allowing it to unfold and become more flexible to facilitate proteolytic cleavage.
 
-## Mutation that induces the myristoyl switch increases the dynamics of the (myr+)MAPP structure
+![Figure 3.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig3-v3.jpg)
+
+**Figure 3.:** Comparison of hydrogen–deuterium exchange (HDX) rates of backbone amide hydrogens for (myr+)MAPP WT with HDX rates of other protein forms. Panels A–D: Heat maps show the HDX rate of identified peptides indicated as blue rectangles above the amino acid numbering. HDX is shown in rainbow colors (A) or in blue–white–red color scale for differential heat maps (B–D) as percent relative fractional uptake (RFU, %) at the corresponding time points. Regions without HDX data are shown as white spaces. (A) The HDX heat map of (myr+)MAPP WT. (B) Differential HDX heat map of (myr−)MAPP WT compared to (myr+)MAPP WT. (C) Differential HDX heat map of (myr+)MAPP I51A compared to (myr+)MAPP WT. (D) Differential HDX heat map of (myr+)MAPP A79V compared to (myr+)MAPP WT. In differential HDX maps the less accessible amino acids/regions are displayed in blue, while more accessible ones are in red. (E) The previously published NMR structure of (myr+)MAPP (Prchal et al., 2012, RCSB PDB: 5LMY) with protease cleavage site shown in orange, myristoyl in red, residues 96–110 in light violet, and first four helices of MA are numbered. Graphs show differences in HDX exchange rates in the 90–108 regions around the protease cleavage site represented by peptides 90–102 and 101–108 for different forms of MAPP protein. Related source data – Figure 3—source data 1, Figure 3—source data 2, and Figure 3—source data 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The butterfly plot shows the HDX differences between WT (myr+)MAPP and WT (myr−)MAPP over the time (see also Figure 3—source data 1). Peptides with significant differences in HDX are arranged according to their positions in MAPP. Confidence threshold (CI98%) is displayed as a dotted black line. The value of confidence threshold was calculated as ±0.410 Da.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The butterfly plot shows the HDX differences between wild-type (WT) (myr+)MAPP and I51A (myr+)MAPP over the time (see also Figure 3—source data 2). Peptides with significant differences in HDX are arranged according to their positions in MAPP. Confidence threshold (CI98%) is displayed as a dotted black line. The value of confidence threshold was calculated as ±0.478 Da.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** The butterfly plot shows the HDX differences between wild-type (WT) (myr+)MAPP and A79V (myr+)MAPP over the time (see also Figure 3—source data 3). Peptides with significant differences in HDX are arranged according to their positions in MAPP. Confidence threshold (CI98%) is displayed as a dotted black line. The value of confidence threshold was calculated as ±0.410 Da.
+
+### Mutation that induces the myristoyl switch increases the dynamics of the (myr+)MAPP structure
 
 To confirm the effect of the myristoyl switch, we monitored differences between deuterium incorporation into the ‘myrOUT’ mutant I51A and WT (myr+)MAPP (Figure 3—figure supplement 2). The I51A amino acid substitution induced a structural transition from (myr+)MAPP to (myr−)MAPP-like (Figure 3—source data 2). Specifically, we observed changes in regions 89–110 (Figure 3C and C-terminal red shaded segment), well indicated by peptides 90–102 and 101–108, respectively (Figure 3E). The peptides 90–102 and 101–108 became more exposed in the I51A (myr+)MAPP mutant compared to WT (myr+)MAPP. The effect of the mutation strongly resembles WT (myr−)MAPP in deuterium exchange rate, as I51A (myr+)MAPP reaches similar values through the whole monitored time course (Figure 3E).
 
-## A mutation that prevents the myristoyl switch stabilizes the (myr+)MAPP core and alpha helix in the protease cleavage site
+### A mutation that prevents the myristoyl switch stabilizes the (myr+)MAPP core and alpha helix in the protease cleavage site
 
 Using HDX-MS, we observed changes in the structural dynamics of the ‘myrIN’ mutant A79V (myr+)MAPP compared to WT (myr+)MAPP (Figure 3D and C-terminal blue shaded segment; Figure 3—figure supplement 3; Figure 3—source data 3). The A79V mutation considerably stabilized the protein core. The regions 89–110, which harbor the protease cleavage site, initially (after 2 s) exhibited even lower HDX levels in the A79V mutant compared to WT. A gradual increase in deuteration with a plateau reached after 20 s (Figure 3E, peptides 90–102) or beyond 120 s (Figure 3E, peptides 101–108) for both WT and the A79V (myr+)MAPP mutant reflects slower HDX kinetics caused by secondary structure present in the region comprising the protease cleavage site. In contrast, WT (myr−)MAPP and the I51A (myr+)MAPP mutant reached near-maximal deuteration levels at the initial time point (2 s) and maintained an almost-constant level during the measured time period (Figure 3E, peptides 90–102 and 101–108). This suggests the absence of structure in their 89–110 regions.
 
-## A myristoyl switch modulates the secondary structure of the protease cleavage site between the M-PMV Gag MA and PP domains
+### A myristoyl switch modulates the secondary structure of the protease cleavage site between the M-PMV Gag MA and PP domains
 
 Analysis of the previously reported structure (Prchal et al., 2012) of (myr+)MAPP identified an alpha helix spanning residues 98–106 that directly interacts with the myristoyl moiety. This region contains the M-PMV protease cleavage site located between residues 100 and 101 at the boundary of MA and PP (Figure 4A). Direct comparison with the structure of non-myristoylated MAPP [(myr−)MAPP], which structurally mimics the protein with exposed myristoyl, was not possible due to the non-specific oligomerization of (myr−)MAPP, that lead to the broadening of the signals from the protein central part. However, we were able to assign the chemical shifts of backbone residues 95–119 in (myr−)MAPP. The chemical shift of the backbone atom of a protein strongly depends on the local structure. We then used TALOS+ software (Shen et al., 2009), which compares the observed chemical shifts of backbone atoms with a large database of proteins with known structures to predict the secondary structure of this region (Supplementary file 1). This analysis showed that this entire region is unstructured in (myr−)MAPP (Figure 4B, Supplementary file 2). The same analysis of (myr+)MAPP predicted an alpha-helical region between residues 98 ann– 103. This indicates that the presence of the C-terminal fifth helix in M-PMV MA depends on sequestration of the N-terminal myristoyl in the hydrophobic pocket of the protein.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig4-v3.jpg)
 
-**Figure 4.:** Prchal et al., 2012), position and secondary structure of the cleavage site between MA and PP.(A) The protease cleavage site in (myr+)MAPP is shown in orange, myristoyl in red, residues 96–110 in light violet. The first four helices of MA (blue) are numbered, the myristoyl is shown in red. (B) Backbone chemical shifts analysis of (myr+)MAPP and (myr−)MAPP proteins using TALOS+ software. CSI (Chemical Shift Index) 0 indicates that residue is in the loop region, CSI −1 indicates that residue is in alpha-helical region. The protease cleavage site is shown in orange, residues 96–110 in light violet. The first four helices of MA (blue) are numbered.
+**Figure 4.:** (A) The protease cleavage site in (myr+)MAPP is shown in orange, myristoyl in red, residues 96–110 in light violet. The first four helices of MA (blue) are numbered, the myristoyl is shown in red. (B) Backbone chemical shifts analysis of (myr+)MAPP and (myr−)MAPP proteins using TALOS+ software. CSI (Chemical Shift Index) 0 indicates that residue is in the loop region, CSI −1 indicates that residue is in alpha-helical region. The protease cleavage site is shown in orange, residues 96–110 in light violet. The first four helices of MA (blue) are numbered.
 
 ## Discussion
 
@@ -100,42 +136,42 @@ As mentioned above, unlike HIV-1 (myr+)MA, M-PMV (myr+)MAPP does not oligomerize
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93489/elife-93489-fig5-v3.jpg)
 
-**Figure 5.:** Vlach et al., 2009).Previously published ribbon structure of (myr−)MA wild-type dimer (Vlach et al., 2009) showing positions of residues T69 (in red), C62 (in yelow), and C42 (in orange).
+**Figure 5.:** Previously published ribbon structure of (myr−)MA wild-type dimer (Vlach et al., 2009) showing positions of residues T69 (in red), C62 (in yelow), and C42 (in orange).
 
 Our findings reveal that the PM interaction induces myristoyl exposure from the hydrophobic core of M-PMV MA. The myristoyl switch then supports both proteolytic separation of MA from the downstream part of Gag and MA oligomerization. Broadly, these results suggest that similar mechanisms of functional modulation may occur in domains of other myristoylated proteins. For example, recoverin and calcium- and integrin-binding protein 2 exploit a myristoyl switch to modulate calcium binding (Ames et al., 1997). Thus, myristoyl exposure-triggered structural changes may have more general validity and may play various regulatory roles in other N-terminally myristoylated proteins.
 
 ## Materials and methods
 
-## Vectors
+### Vectors
 
 All mutations in the vector pET22bMAPPHis (Prchal et al., 2011) were introduced using Efficient Mutagenesis Independent of Ligation (EMILI) (Füzik et al., 2014). The mutation responsible for amino acid substitution I51A was introduced using primers MAPPHisI51Af GGAACCGCAGATATTAAACGGTGGCGTAGAG and MAPPHisI51Ar CGTTTAATATCTGCGGTTCCCTCTTGCGG, for the amino acid substitution A79V using primers MAPPHisA79Vf TAACTGTTTTCTCTTACTGGAACTTAATTAAAGAATTGATAGATAAG and MAPPHisA79Vr TAAGAGAAAACAGTTACTGGGACTTTCTCCG, and for amino acid substitution T69C using primers MAPPHisT69Cf TATTACAATTGTTTTGGCCCGGAGAAAGTCCC and MAPPHisT69Cr GGGCCAAAACAATTGTAATAGTCTTGGAAACAGTCG.
 
-## Recombinant protein production and purification
+### Recombinant protein production and purification
 
 All (myr−) and (myr+)MAPPs were produced in E. coli BL21 (DE3) cultivated in LB medium and purified using metal affinity chromatography on Ni-NTA agarose according to a previously published protocol (Prchal et al., 2011). The (myr+)MAPP T69C protein was purified under reducing conditions (buffers containing 0,05% mercaptoethanol). Uniformly isotopically labeled proteins were produced using M9 minimal medium (Sambrook et al., 2001) with [U-5N]NH4Cl and D-[U-13C]glucose (CIL, USA). The identities of the prepared proteins and the degrees of myristoylation were confirmed using MALDI (Matrix Assisted Laser Desorption/Ionization-Time Of Flight)-TOF/TOF mass spectrometry on an Autoflex speed mass spectrometer (Bruker Daltonics). The 13 kDa form of M-PMV protease was prepared using a previously published protocol (Zábranský et al., 1998).
 
-## Liposome preparation
+### Liposome preparation
 
 To prepare liposomes mimicking the PM inner leaflet (Doktorova et al., 2017), individual lipids (purchased from Avanti Polar Lipids, Inc) were dissolved in chloroform or in chloroform/methanol/water (20:9:1) in the case of PI(4,5)P2 and thoroughly mixed to a final lipid concentration of 5 mg/ml. To obtain 250 µl of lipid mixture, we mixed 310 µg of cholesterol, 400 µg of phosphatidylethanolamine, 75 µg of phosphatidylcholine, 290 µg of phosphatidylserine, 38 µg of PI(4,5)P2, and 140 µg of phosphatidylinositol. Chloroform was evaporated, and the lipid mixture was resuspended in a protease cleavage buffer or in phosphate-buffered saline (PBS). Liposomes were formed using a mini-extruder (Avanti Polar Lipids, Inc) with a 100 nm polycarbonate filter.
 
-## MAPP cleavage by M-PMV protease
+### MAPP cleavage by M-PMV protease
 
 All (myr−) and (myr+)MAPP proteins were cleaved by M-PMV protease in the protease cleavage buffer (50 mM acetate, pH 5.3, 300 mM NaCl, 0.05% mercaptoethanol). Briefly, 80 µg of each protein solution was incubated with 2 U of protease (1 U of M-PMV protease cleaves 100 µg of (myr−)MAPP in 1 hr) in a total volume of 220 µl of protease cleavage buffer in the absence or presence of 20 µl liposomes. Aliquots (20 μl each) were collected at time intervals of 1, 2, 4, and 24 hr, resuspended in 2× reducing protein loading buffer (PLB), and analyzed by Tris-Tricine sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE).
 
-## Interaction of (myr+)MAPP T69C with liposomes
+### Interaction of (myr+)MAPP T69C with liposomes
 
 A 40 µg portion of (myr+)MAPP T69C solution in PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4·2H2O, 2 mM KH2PO4, pH 7.4, reducing PBS contains 0.05% mercaptoethanol) was mixed with liposome suspension in a 1:1 (vol/vol) ratio to obtain a total volume of 100 µl. Protein diluted 1:1 with reducing PBS was used as a control. The samples were dialyzed overnight either against non-reducing or reducing PBS. Aliquots were collected, resuspended in 2× non-reducing PLB, and analyzed by Tris-Tricine SDS–PAGE.
 
-## Hydrogen–deuterium exchange
+### Hydrogen–deuterium exchange
 
 For HDX labeling experiments, 0.2 mM wild-type (WT) (myr−)MAPP, WT (myr+)MAPP, and the I51A, I86A, A79L, and A79V mutants were mixed with D2O in a 1:9 ratio. Samples were incubated at 4°C for 0, 2, 5, 10, 20, or 120 s and quenched with an equal volume of quench buffer (8 M urea, 1 M glycine, pH 2.51). In case of the (myr+)MAPP I51A mutant, 200 mM TCEP (Tris(2-carboxyethyl)phosphine) was added to the quench buffer to increase its sequence coverage. The HDX experiments were performed in triplicates for each labeling time point.
 
-## Liquid chromatography–mass spectrometry analysis
+### Liquid chromatography–mass spectrometry analysis
 
 Peptides were identified by tandem MS of non-deuterated proteins. Samples were injected into a refrigerated UPLC (Ultra Performance Liquid Chromatography) system (NanoAcquity, Waters) with chromatographic elements held at 0°C. The samples were then passed through a pepsin protease column (Enzymate Protein Pepsin Column, 300 Å, 5 µm, 2.1 mm × 30 mm, Waters) at 15°C and flow rate of 100 µl min−1 (0.1% vol/vol FA), and the generated peptides were trapped and desalted for 3 min on a VanGuard pre-column (2.1 mm × 5 mm Waters Acquity UPLC BEh C18 (pore size 1.7 µm)). Peptides were then separated in gradient of acetonitrile for 12 min over an Acquity UPLC column (1 mm × 100 mm, 1.7 µm BEH C18) for 12 min (10–35% CH3CN vol/vol and 0.1% vol/vol FA, flow rate 40 µl min−1). The MS spectra were acquired with a Synapt G2 mass spectrometer (ESI-Q/TOF; Waters) in mass range from 50 to 2000 m/z with Leu-enkephalin serving as a continuous (lock-spray) calibration standard and performing a scan every 0.4 s. The list of peptides was obtained by using ProteinLynx Global SERVER (PLGS; Waters) version 3.0.2 with processing parameters as follows: chromatographic peak width – automatic, MS TOF (Mass Spectrometry Time Of Flight) resolution – automatic, lock mass for charge +1 – 556.2771 Da/e, lock mass window – 0.25 Da, low energy threshold – 135.0 counts, elevated energy threshold – 30.0 counts, and intensity threshold – 750.0 counts. PLGS workflow parameters were as follows: searching against fasta file containing forward and reverse sequences of examined proteins and Pepsin (Uniprot code P00791), peptide tolerance and fragment tolerance – automatic, minimum fragment ion matches per peptide – 3, minimum fragment ion matches per protein – 7, minimum peptide matches per protein – 1, primary digest reagent – non-specific, number of missed cleavages 3, oxidation of methionines as a variable modifier reagent, false discovery rate 5, monoisotopic mass of peptides with charge +1. The LC analysis of labeled samples was identical to that of non-deuterated samples.
 
 DynamX 3.0 (Waters) was used to filter peptides for the determination of HDX differences between examined proteins by selecting those having the length up to 25 amino acids, presenting 0.3 fragment per amino acid and showing mass error for the precursor ion below 10 ppm. In addition, only the peptides that were identified in at least three out of five of the acquired MS/MS files and having a minimum signal intensity 3000 with retention time RSD (Relative Standard Deviation) up to 5% were used for further analysis. MS Files were processed according to the parameters as follow: both chromatographic peak width and MS TOF resolution as automatic, 556.2771 Da as a lock mass for charge +1, lock mass window 0.25 Da, low energy threshold 130, and elution time range to search in for the data 2.5–9 min. DynamX advanced processing parameters were not applied.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 All NMR data were collected on a Bruker AvanceIII 600‐MHz NMR spectrometer equipped with a cryoprobe (Bruker BioSpin, GmbH, Germany). The backbone atoms of myrMA were assigned using the standard set of triple-resonance experiments (HNCA, HN(CO)CA, HNCACB, CBCA(CO)NH, and HNCO). An estimate of CSI and the backbone dihedral angles Φ and Ψ was performed with TALOS+ software and was based on the 1HN, 13CO, 13Cα, 13Cβ, and 15NH chemical shifts. The data were processed with TopSpin (Bruker BioSpin GmbH, version 3.6) and analyzed using CcpNmr analysis (Vranken et al., 2005). Structures were visualized with the PyMOL Molecular Graphics System (Version 2.0, Schrödinger, LLC).

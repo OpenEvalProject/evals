@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03kgsv495 The Gonda Brain Research Center, Bar Ilan University Ramat Gan Israel
-2. https://ror.org/019kqby73 Aix Marseille Univ, Inserm, INS, Inst Neurosci Syst Marseille France
-3. https://ror.org/05rrcem69 Department of Psychiatry and Behavioral Sciences, University of California, Davis Sacramento United States
-4. https://ror.org/05rrcem69 MIND Institute, University of California, Davis Sacramento United States
+1. The Gonda Brain Research Center, Bar Ilan University Ramat Gan Israel ([ROR:03kgsv495](https://ror.org/03kgsv495))
+2. Aix Marseille Univ, Inserm, INS, Inst Neurosci Syst Marseille France ([ROR:019kqby73](https://ror.org/019kqby73))
+3. Department of Psychiatry and Behavioral Sciences, University of California, Davis Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+4. MIND Institute, University of California, Davis Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -39,13 +39,13 @@ This novel ecological approach and the rich repertoire of neurophysiological met
 
 The current dataset is extremely rich, consisting of many different behavioral, neural, and physiological responses. In reporting these results, we have separated between metrics that are associated with paying attention to the teacher (behavioral performance, neural tracking of the teacher’s speech, and looking at the teacher), those capturing responses to the irrelevant sound-events (ERPs and event-related changes in SC and gaze); as well as more global neurophysiological measures that may be associated with the listeners’ overall ‘state’ of attention or arousal (alpha- and beta-power and tonic SC).
 
-## Paying attention to the teacher
+### Paying attention to the teacher
 
 First, we tested whether there are differences between individuals with and without AD(H)D in metrics associated with focusing ones’ attention on the teacher – accuracy on answering comprehension questions, neural speech tracking of the teacher’s speech, and the gaze-patterns of focusing overt attention toward the teacher.
 
 Due to the difference in number of trials statistical testing of between-group differences were performed separately for the Events and Quiet conditions (when applicable), and comparisons between conditions are evaluated only qualitatively.
 
-## Behavioral accuracy
+#### Behavioral accuracy
 
 Participants demonstrated overall good performance on the comprehension task, achieving an average accuracy of 87.87% (±6.77% SEM). This serves as verification that participants followed the instructions, listened to teacher’s speech and understood the content of the mini-lessons. Performance levels were similarly good in both the Events and Quiet conditions, indicating that the presence of occasional sound-events did not disrupt overall understanding of the mini-lessons. No significant differences in performance were found between groups, in either condition [Events: t(47) = 1.052, p = 0.297, Cohen’s d = 0.30, Bayes Factor (BF10) = 0.448 (weak support of H0); Quiet: t(47) = 1.004, p = 0.320, Cohen’s d = 0.28, BF10 = 0.430 (weak support for H0); Figure 1].
 
@@ -53,15 +53,23 @@ Participants demonstrated overall good performance on the comprehension task, ac
 
 **Figure 1.:** Shown separately for the attention deficit (hyperactivity) disorder (AD(H)D) and Control groups, in the Quiet and Events conditions. Bar graphs represent average accuracy levels across participants and error bars represent the SEM. No significant differences were found between groups in either condition (n.s).
 
-## Speech tracking of teacher’s speech
+#### Speech tracking of teacher’s speech
 
 We conducted speech-tracking analysis of the neural response to the teacher’s speech, using both an encoding and decoding approach. As noted in the methods section, speech-tracking analysis could only be performed reliably in the Events condition, and we used a multivariate approach to account for variance in the neural activity due to the presence of event-sounds (see Figure 2—figure supplement 1 for comparison with univariate analysis).
 
 The temporal response functions (TRFs) estimated in response to the teachers’ speech were similar across both groups showing the typical negative peak at ~100 ms (N1), followed by a positive peak ~200 ms (P2), and the model’s predictive power following the traditional mid-central topography associated with auditory responses (Figure 2A, B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/103235/elife-103235-fig2-v1.jpg)
+
+**Figure 2.:** (A) Topographical distribution of the predictive power values, estimated using the multivariate encoding model, in the ADHD and Control groups. No significant differences were observed between groups. (B) Temporal response functions (TRFs) estimated for each group in the Events condition, based on the average of electrodes FC1, FC2, and FCz, which exhibited the strongest activity for the two main components. Shaded areas represent the SEM. Below the TRFs, topographies of the main component are presented. (C) Bar graphs showing the average reconstruction correlation of the decoding model (Pearson’s r) in each group. The ADHD group showed slightly lower reconstruction correlations for the teacher’s speech, though the effect did not reach statistical significance (p = 0.057). Error bars represent the SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103235/elife-103235-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In the main manuscript, we report the TRF estimated to capture the response to the teacher’s speech using a multivariate model, that takes into account both the acoustic envelope of the speech as well as the sound-events. Here, we compared TRF estimation using this multivariate encoding model versus a univariate encoding model comprised only the speech-envelope as a single regressor. (A) Grand-average TRFs (across both groups) reflecting the neural tracking response of the teacher’s speech, estimated for the Events condition using both a univariate and multivariate model, as well as for the Quiet condition (univariate model). Shading represent the standard error of the mean (SEM). The estimated TRFs to the speech were qualitatively similar using both approaches, and were also similar to those estimated in the Quiet condition, which did not contain additional event-sound, lending additional credibility to the approach. (B) Grand-average TRF estimated for the regressor representing the audio of the event-sounds, in the multivariate model of the Events condition. Shaded areas represent the SEM. This analysis is akin to calculating the event-related potential (ERP) to event-sounds (given the linear nature of the model), and the resulting TRF is qualitatively similar to the ERPs reported in Figure 6. (C) Topographical distribution (top) and bar graph (bottom) depicting the predictive power values (Pearson’s r) in the Events condition for the univariate and multivariate encoding models. When comparing the predictive power of the univariate and multivariate models, both models yielded significant predictive power relative to null-permutations, however the multivariate model was able to explain a larger degree of the variance in the neural response [t(48) = 10.354, p < 0.0001, Cohen’s d = 1.268, Bayes Factor (BF10) = +100 (Extreme evidence for H1)]. These results indicate that including a regressor that captures the time-course of the sound-events in addition to a regressor capturing the speech stimulus allowed the model to more faithfully capture the neural representation of the entire virtual reality (VR) classroom soundscape (Crosse et al., 2021). Therefore, this approach is preferable when analyzing neural response to stimuli embedded in realistically noisy contexts. That said, the spatio-temporal TRF itself can be reliably extracted for the speech stimulus using both a univariate and a multivariate model.***p < 0.0001.
+
 No significant between-group differences were found in the predictive power of the encoding model (averaged across electrodes), and Bayes analysis indicates moderate support for the null hypothesis [t(47) = 0.23, p = 0.814, Cohen’s d = 0.067, BF10 = 0.15]. However, when using a decoding model, which considers all electrodes in one model, we did find slightly lower reconstruction correlations for the teacher’s speech in the AD(H)D group relative to controls [t(47) = –1.948, p = 0.057, Cohen’s d = –0.557, BF10 = 1.308 (weak/moderate support for H1); Figure 2C].
 
-## Looking at the teacher
+#### Looking at the teacher
 
 Analysis of gaze-patterns showed that, as expected, participants spent most of the time looking at the teacher (60.2 ± 20.9% SEM of each trial). However, we also note the large variability across participants, with some focusing almost exclusively on the teacher (near 100%) and others spending less than 40% of the trial looking at the teacher. When not looking at the teacher, the next most popular places to look at were the blackboards behind the teacher, to the right and to the left (Figure 3A). We tested whether the amount of time spent looking at the teacher and the number of gaze-shifts away from the teacher were modulated by Group (AD(H)D vs. Control) separately in each Condition (Quiet and Events). No significant differences were found, however BF analysis indicated that the null hypotheses was not strongly supported [Percent gaze-time at teacher: Events Condition: t(47) = –0.899, p = 0.372, Cohen’s d = –0.257, BF10 = 0.397 (weak support for H0); Quiet Condition: t(47) = –0.597, p = 0.553, Cohen’s d = –0.170, BF10 = 0.33 (weak support for H0); Number of gaze-shifts away from teacher: Events Condition: t(47) = 1.265, p = 0.211, Cohen’s d = 0.361, BF10 = 0.547 (weak support for H0); Quiet Condition: t(47) = 0.644, p = 0.522, Cohen’s d = 0.184, BF10 = 0.338 (weak support for H0); Figure 3C].
 
@@ -69,11 +77,11 @@ Analysis of gaze-patterns showed that, as expected, participants spent most of t
 
 **Figure 3.:** (A) Pie chart representing the average amount of time that participants spent looking at different areas within the virtual reality (VR) classroom. (B) Distribution of the proportion of gaze-time toward the teacher (top) and number of gaze-shifts performed away from the teacher (bottom), for all participants in the attention deficit (hyperactivity) disorder (AD(H)D) and Control groups. (C) Bar graph represents the average number of gaze-shifts performed away from the teacher, shown separately for the AD(H)D and Control groups, and for the Quiet and Events conditions. No significant differences were found in any comparison (n.s).
 
-## Responses to irrelevant sound-events
+### Responses to irrelevant sound-events
 
 Next, we tested whether neurophysiological responses to the event-sounds themselves differed between groups. The three event-related metrics tested here were: neural ERPs, transient changes in SC, and gaze-shifts following event-sounds. In addition, we compared the response to the two different event-types presented here (Artificial vs. Non-verbal human sounds).
 
-## Neural ERPs
+#### Neural ERPs
 
 Visual inspection of the neural ERPs showed three prominent centro-parietal components – a negative peak around 100 ms, which corresponds to the early sensory N1; followed by two positive peaks around 240 and 350 ms, which likely corresponds to the P2 and P3 responses, respectively (Figure 4).
 
@@ -83,7 +91,7 @@ Visual inspection of the neural ERPs showed three prominent centro-parietal comp
 
 Statistical analysis comparing ERPs in the AD(H)D vs. Control groups (collapsed across both Event-types) showed that the early N1 response was significantly larger in the AD(H)D group (p < 0.05, cluster correction; Figure 4A, B). However, no significant differences between groups were found for the later P2 response. When comparing ERPs to Artificial vs. Non-verbal human sounds we found that both the N1 and the P2 were significantly modulated by Event-type, with a larger N1 for the Artificial sounds and a larger P2 for the non-verbal human sounds (both p < 0.002, cluster correction; Figure 4C, D). A mixed ANOVA performed on the amplitudes of each component confirmed these main effects, but did not reveal any significant interaction between Group and Event-type [N1: Group [F(1, 47) = 6.15, p = 0.044, η2 = 0.11], Event-type [F(1, 47) = 63.82, p < 10–9, η2 = 0.57], interaction [F(1, 47) = 0.389, p = 0.24, η2 = 0.008]; P2: Group [F(1, 47) = 0.84, p = 0.36, η2 = 0.017], Event-type [F(1, 47) = 71.75, p < 10–9, η2 = 0.6], interaction [F(1, 47) = 0.07, p = 0.78, η2 = 0.001]; P3: Group [F(1, 47) = 0.028, p = 0.876, η2 = 0.0005], Event-type [F(1, 47) = 0.184, p = 0.669, η2 = 0.003], interaction [F(1, 47) = 0.166, p = 0.684, η2 = 0.003]; Figure 4].
 
-## Event-related increase in SC
+#### Event-related increase in SC
 
 Sound-events elicited clear event-related changes in the phasic SC response, which peaked 2–3 s after the sounds, and took another ~1 s to return to baseline (Figure 5A, B). This response is consistent with the well-documented orienting reflex, elicited following salient events.
 
@@ -93,7 +101,7 @@ Sound-events elicited clear event-related changes in the phasic SC response, whi
 
 A mixed ANOVA showed a significant main effects of Event-type, with a higher response following artificial sounds relative to non-verbal human sounds [F(1, 47) = 7.88, p = 0.007, η2 = 0.143], however there was no significant main effect of Group [F(1, 47) = 0.4, p = 0.53, η2 = 0.008] or interaction between them [F(1, 47) = 0.02, p = 0.87, η2 = 0.0005; Figure 5B, C].
 
-## Event-related gaze-shifts
+#### Event-related gaze-shifts
 
 We tested whether the sound-events triggered overt gaze-shifts away from the teacher, by quantifying the percentage of event-sound that were followed by at least one gaze-shift, and comparing this to control epochs taken from the Quiet condition. However, no significant differences were found, suggesting that the sound-events did not elicit more frequent overt gaze-shifts away from the teacher, relative to what might be observed when no sound-events are present [t(48) = 1.34, p = 0.18; Figure 6A]. We also tested whether the likelihood of performing event-related gaze-shifts was different for the two Event-types (Artificial vs. Non-verbal human sounds) or in the two Groups (AD(H)D vs. Control) but did not find any significant main effects or interactions [Group: F(47) = 0.18, p = 0.67, η2 = 0.003; Condition: F(47) = 2.25, p = 0.14, η2 = 0.045; Interaction: F(47) = 0.51, p = 0.47, η2 = 0.01; Figure 6B].
 
@@ -101,13 +109,13 @@ We tested whether the sound-events triggered overt gaze-shifts away from the tea
 
 **Figure 6.:** Attention deficit (hyperactivity) disorder (AD(H)D). (A) Bar graph showing the number of gaze-shifts performed in 2-s epochs following event-sounds versus control epochs, averaged across groups and sound types. No significant differences were found, suggesting that event-sounds were not more likely to elicit overt gaze-shifts. (B) Bar graph showing the number of gaze-shifts performed in 2-s epochs following each type of sound-event, separately for each group. No significant differences were found in any comparison. Error bars represent the SEM in all bar graphs.
 
-## Neurophysiological metrics associated with overall attention and arousal
+### Neurophysiological metrics associated with overall attention and arousal
 
 Besides analyzing neurophysiological metrics that can be directly associated with processing the teacher’s speech or with response to the sound-events, several additional neurophysiological measures have been associated more broadly with the listeners’ state of attention or arousal. These including spectral properties of the EEG (and specifically power in the alpha and beta range), the overall level of tonic and phasic SC, and spontaneous gaze-patterns.
 
 We tested whether these metrics differed between the two groups, separately in the Quiet and Events conditions.
 
-## Spectral EEG features
+#### Spectral EEG features
 
 Spectral analysis of the EEG focused on the two frequency bands for which clear peaks were detected in the periodic power-spectrum, after applying the FOOOF algorithm: alpha- (8–12 Hz) and beta-power (18–25 Hz; Figure 7A). Power in each frequency band was assessed for each participant at their personal peak within a pre-selected cluster of electrodes where each response was maximal (Figure 7). We tested whether power in either frequency differed significantly between Groups, using unpaired t-tests, separately for each Condition (Quiet and Event trials). However, none of the comparisons revealed any significant differences between groups, in either frequency band (Figure 7C) [Alpha-power: Events Condition: t(47) = –0.656, p = 0.514, Cohen’s d = –0.18, BF10=0.34 (weak evidence for H0); Quiet Condition: t(47) = –0.394, p = 0.695, Cohen’s d = –0.11, BF10 = 0.30 (moderate evidence for H0); Beta-power: Events Condition: t(47) = –1.01, p = 0.315, Cohen’s d = –0.29, BF10 = 0.43 (weak evidence for H0); Quiet Condition: t(47) = –0.484, p = 0.630, Cohen’s d = –0.14, BF10 = 0.314 (moderate evidence for H0)].
 
@@ -115,11 +123,11 @@ Spectral analysis of the EEG focused on the two frequency bands for which clear 
 
 **Figure 7.:** (A) Grand-average power spectral density (PSD) of the periodic portion of the EEG signal (after applying the FOOOF algorithm), shows two clear peaks corresponding to the alpha (8–12 Hz) and beta (15–25 Hz) bands. Shaded areas around waveforms represent the SEM. (B) Topographical distribution of the average alpha- and beta-power peaks, with the clusters of electrodes used to detect personal peaks in each frequency band marked by white circles. (C) Average alpha- and beta-power in Group (attention deficit (hyperactivity) disorder [AD(H)D] vs. Control) and condition (Quiet and Events). (D) Phasic and (E) tonic skin conductance levels in the same groups and conditions. No significant between-group difference was found in any comparison (n.s.). Bar graphs represent the mean values, and error bars represent the SEM.
 
-## Global SC levels
+#### Global SC levels
 
 No significant differences between the two Groups were observed for the global tonic or phasic SC metrics, in either the Events or Quiet condition [Phasic SC (Figure 7D, E): Events Condition: t(47) = –0.003, p = 0.99, Cohen’s d = –0.0009, BF10 = 0.285 (moderate evidence for H0); Quiet Condition: t(47) = –0.51, p = 0.61, Cohen’s d = –0.146, BF10 = 0.317 (moderate evidence for H0); Tonic SC: Events Condition: t(47) = –0.85, p = 0.398, Cohen’s d = –0.244, BF10 = 0.383 (weak evidence for H0); Quiet Condition: t(47) = –1.65, p = 0.104, Cohen’s d = –0.476, BF10 = 0.865 (weak evidence for H0)].
 
-## Multivariate analyses
+### Multivariate analyses
 
 The univariate analyses testing for between-group differences separately for each metric were complemented with a multivariate regression analysis, aimed at understanding the relative contribution of each neurophysiological metric to explaining between-group effects. For brevity, we focused on 10 key measures as described in the Methods section.
 
@@ -131,13 +139,147 @@ The pairwise Spearman’s correlations between all measures are shown in Figure 
 
 To test the contribution of each measure for predicting whether an individual was in the ADHD or control group we performed a logistic multiple regression analysis. An ‘omnibus’ model containing all 10 measures achieved χ2 = 15.6 with an AUC of 0.807 for predicting group allocation. We assessed the relative contribution (dominance) of each measure by comparing the AUC of the omnibus model to 10 models with a single measure held-out. Table 1 shows ΔAUC contributed by each measure, indicating that the two most dominant measures were the ERP-N1 (positive contribution) and Speech Decoding (negative contribution), which were also the only two measures whose addition to the model reduced the AIC. This result is consistent with our univariate results, and indicates that these two measures contribute independently to between-group differences. Together, these two measures contributed an AUC of 0.15 to the omnibus model, which corresponds to half of the model’s fit (Δχ2 = 11.8, p = 0.003 relative to a model with both measures held-out).
 
+**Table 1.**
+ Result of the dominance analysis of a multivariate logistic regression, describing the contribution of each measure for predicting whether an individual was in the ADHD or control group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Dominance (ΔAUC)</th>
+      <th>ΔAIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ERP-N1*</td>
+      <td>0.054</td>
+      <td>–5.13</td>
+    </tr>
+    <tr>
+      <td>Speech Decoding*</td>
+      <td>0.05</td>
+      <td>–3.29</td>
+    </tr>
+    <tr>
+      <td>TRF-P2</td>
+      <td>0.02</td>
+      <td>+0.18</td>
+    </tr>
+    <tr>
+      <td>Beta-power</td>
+      <td>0.01</td>
+      <td>+1.57</td>
+    </tr>
+    <tr>
+      <td>ERP-P2</td>
+      <td>0.005</td>
+      <td>+0.48</td>
+    </tr>
+    <tr>
+      <td>Event-related SC</td>
+      <td>–0.005</td>
+      <td>+1.69</td>
+    </tr>
+    <tr>
+      <td>TRF-N1</td>
+      <td>0.009</td>
+      <td>+1.42</td>
+    </tr>
+    <tr>
+      <td>Gaze-shifts</td>
+      <td>0.007</td>
+      <td>+1.64</td>
+    </tr>
+    <tr>
+      <td>Alpha-power</td>
+      <td>0.007</td>
+      <td>+1.6</td>
+    </tr>
+    <tr>
+      <td>Behavior</td>
+      <td>0.007</td>
+      <td>+1.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*indicate the factors that significantly reduced the model‘s AIC (p<0.05)._
+
 Since ADHD is arguably not a binary category but symptoms of attentional difficulties vary on a continuum, we complemented the logistic regression analysis with a multivariate linear regression analysis, using ASRS scores as a continuous dependent measure, reflecting the severity of ADHD symptoms. An ‘omnibus’ model containing all 10 achieved F(10, 38) = 1.48 (p = 0.18) with an R2 of 0.28 for predicting ASRS scores. We assessed the relative contribution (dominance) of each measure by comparing the R2 in the omnibus model (containing all 10 measures) to 10 models with a single measure held-out. Table 2 shows ΔR2 and ΔAIC contributed by each measure (smaller values are better). Interestingly, this analysis identified slightly different factors than the logistic regression analysis where individuals were grouped based on having a prior diagnosis of AD(H)D (Table 2). The most dominant measures, who contributed at least ΔR2 > 0.3 the model, were the ERP-N1 (β = 0.3), Gaze-shifts (β = 0.288), Alpha-power (β = 0.2) and ERP-P2 (β = –0.182). Although the omnibus model was not significant (see above), a multivariate regression model that contained only the four most dominant measures did significantly predicted ASRS scores (R2 = 0.227, p = 0.021), and collectively contributed ΔR2 = 0.225 (p = 0.032) to the omnibus model.
+
+**Table 2.**
+ Result of the dominance analysis of a multivariate linear regression, describing the contribution of each measure for predicting individual ASRS scores.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>ΔR2</th>
+      <th>ΔAIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ERP-N1</td>
+      <td>0.087</td>
+      <td>–3.58</td>
+    </tr>
+    <tr>
+      <td>Gaze-shifts</td>
+      <td>0.065</td>
+      <td>–2.23</td>
+    </tr>
+    <tr>
+      <td>Alpha-power</td>
+      <td>0.038</td>
+      <td>–0.49</td>
+    </tr>
+    <tr>
+      <td>ERP-P2</td>
+      <td>0.033</td>
+      <td>–0.22</td>
+    </tr>
+    <tr>
+      <td>Behavior</td>
+      <td>0.028</td>
+      <td>–0.14</td>
+    </tr>
+    <tr>
+      <td>Speech Decoding</td>
+      <td>0.021</td>
+      <td>+0.58</td>
+    </tr>
+    <tr>
+      <td>TRF-N1</td>
+      <td>0.006</td>
+      <td>+1.58</td>
+    </tr>
+    <tr>
+      <td>Event-related SC</td>
+      <td>0.001</td>
+      <td>+1.91</td>
+    </tr>
+    <tr>
+      <td>TRF-P2</td>
+      <td>0.008</td>
+      <td>+1.18</td>
+    </tr>
+    <tr>
+      <td>Beta-power</td>
+      <td>0</td>
+      <td>+1.97</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
 Recent years have seen a reckoning in the field of AD(H)D research, acknowledging that most current tools used for clinical assessments and research do not adequately capture the attentional challenges faced in real life (Hall et al., 2016; Barkley, 2019; Mulraney et al., 2022; Arrondo et al., 2024; Schweitzer and Zion Golumbic, 2024). We offer a new approach for advancing attention research, by utilizing VR to simulate real-life experiences together with comprehensive measurement of different neurophysiological responses. This combination affords a more objective and well-rounded description of how individuals deal with the plethora of stimuli and task demands of their environments. Here, we focused on VR classroom learning, since this is the context where many individuals, and particularly those with AD(H)D, experience difficulties in sustaining attention and avoiding distraction. Specifically, we evaluated neurophysiological measures related to focusing attention on the teacher and responses to irrelevant background sound-events alongside metrics associated more generally with levels of attention/engagement. We found that individuals diagnosed with AD(H)D exhibited significantly larger N1 response to background sound-events and somewhat reduced neural tracking of the teacher’s speech. These were also the two most dominant factors contributing to a multivariate classifier that could significantly predict whether an individual was diagnosed with AD(H)D. When considering the severity of AD(H)D symptoms as a continuous variable, variance across individuals was best explained by the combined contribution of the N1 and P2 response to sound-events, amplitude of alpha-power oscillations and the frequency of gaze-shifts away from the teacher. Together, these findings emphasize the variety of attentional challenges that individuals with AD(H)D may experience in realistic scenarios and provide novel insights into the underlying neurophysiological mechanisms.
 
-## Neurophysiological responses in the VR classroom associated with symptoms of AD(H)D
+### Neurophysiological responses in the VR classroom associated with symptoms of AD(H)D
 
 The finding with the largest effect size in this study was larger N1 response to background sound-events in individuals with AD(H)D. This response showed a significant univariate between-group effect, and was the most dominant contributor to predicting group-classification (AD(H)D vs. control) as well as the severity of AD(H)D symptoms. Enhanced N1 responses are often associated with heightened sensory sensitivity (Heil, 1997; Lütkenhöner and Klein, 2007), perceptual predictability (Chennu et al., 2013; Lange, 2013; Schwartze and Kotz, 2015), and may reflect a transient detector mechanism of surprising events that can potentially (though not necessarily) trigger an attention shift (Näätänen and Picton, 1987; Escera et al., 1998; Escera et al., 2003; Berti, 2013). Interestingly, most studies comparing auditory ERPs in individuals with and without AD(H)D, using more traditional paradigms (e.g., oddball), typically have not reported differences in early-sensory components such as the N1, but rather sometimes find group differences for later ERP responses (Barry et al., 2003; Gumenyuk et al., 2005; Kaiser et al., 2020; Peisch et al., 2021). As discussed below, we attribute these discrepancies to the non-ecological nature of most traditional paradigm. The current result is in line with increased sensory sensitivity to background events, which might be especially pertinent under ecological condition. In addition, we found that neural tracking of the teacher’s speech was reduced in the AD(H)D group, and this metric also emerged as a dominant predictor of AD(H)D diagnosis in multivariate between-group classification. Neural speech tracking of continuous speech is known to be modulated by attention, and is reduced when speech is not attended (Ding and Simon, 2012b; Mesgarani and Chang, 2012; Zion Golumbic et al., 2013; Petersen et al., 2017; Vanthornhout et al., 2019; Kaufman and Zion‐Golumbic, 2023). We are not aware of previous studies that directly investigated neural speech tracking in AD(H)D, however these results are consistent with reduced levels of sustained attention toward the teacher in this group.
 
@@ -147,13 +289,13 @@ However, adopting a binary perspective of AD(H)D can be misleading, as it does n
 
 It is important to note that although the current results had significant explanatory power of variance in AD(H)D symptoms, they are far from exhaustive with substantial variance still unexplained by these neurophysiological measures. In this regard it is important to bear in mind that the measures of AD(H)D themselves (diagnosis and ASRS scores) are also not entirely reliable, given the diversity diagnostic practice (Hall et al., 2016; Barkley, 2019; Mulraney et al., 2022; Arrondo et al., 2024; Schweitzer and Zion Golumbic, 2024) and the subjective nature of self-reports which are prone to bias (e.g., recency, salience, and generalization effects; Rabiner et al., 2010; Toplak et al., 2013; Brevik et al., 2020). What is clear, though, is that no single neurophysiological measure alone is sufficient for explaining differences between the individuals – whether through the lens of clinical diagnosis or through report of symptoms. These data emphasize the complex nature of attentional functioning, especially under realistic conditions, and that fact that ‘attentional challenges’ may manifest in a variety of different ways, indexed though different neurophysiological responses. Moving forward, we believe that by measuring multiple aspects of neural and physiological responses, and studying these in diverse and ecologically valid conditions, will ultimately lead to distilling specific neurophysiological patterns that can reliably generalize across contexts.
 
-## What about the P300?
+### What about the P300?
 
 Notably, the current results diverge from previous studies of distractibility in AD(H)D in several ways. In traditional ERP studies, distractibility by irrelevant stimuli is often associated with a family of late-latency positive neural responses (the P300 family), and specifically the P3a ERP component, which is typically observed at a latency of ~250–400 ms after hearing novel or surprising sounds (SanMiguel et al., 2010; Wetzel et al., 2013; Masson and Bidet-Caulet, 2019; Barry et al., 2020). Given this vast literature, we had assumed that background sound-events in our VR classroom would also elicit this response. Moreover, past studies have shown reduced P3a responses in individuals with AD(H)D (Barry et al., 2003; Gumenyuk et al., 2005; Kaiser et al., 2020; Peisch et al., 2021; Kwasa et al., 2023), leading us to expect a similar pattern here. However, here the early N1 response to sound-events was larger in the ADHD group but no differences were found for any of later responses. Moreover, visual inspection of the ERPs to Artificial and Non-verbal human sound-events illustrates that not all ecological sounds elicit the same time-course of responses in mid- to late time-windows.
 
 When comparing the current results from the VR classroom with more traditional ERP studies of distractibility, we must consider the vast differences in context and task requirements and the ‘functional status’ of background sound-events in these studies. The P3a is typically observed in tasks that require high levels of perceptual vigilance to discriminate between specific stimulus features, such as the pitch, duration or intensity of sounds presented in an oddball paradigm. In these tasks, so-called ‘novel’ or ‘distractor’ sounds/stimuli are presented as part of the sequence of stimuli that need to be discriminated, and these stimuli elicit a P3a (whereas target sounds elicit a somewhat similar P3b response; Barry et al., 2020). Accordingly, although these ‘distractor’ stimuli do not require an explicit response, they are in fact within the focus of participants’ endogenous attention, rather than truly ‘background’ stimuli (Makov et al., 2023). This differs substantially from the role of the novel sounds-events in the VR classroom task used here, where sound-events are clearly in the background– both spatially and semantically – and occur in parallel to an ongoing speech stimulus (the lecture) that participants are primarily paying attention to. In addition, the perceptual and cognitive demands of the VR Classroom – where participants are instructed to listen and understand the speech as they would in a real-life classroom – differ substantially from the highly vigilant demands of speeded-response tasks. These important differences in task and stimulus characteristic ultimately lead to a different treatment of novel sound-events by the brain, emphasizing the importance of considering context when comparing results across experimental designs (Makov et al., 2023; Mandal et al., 2024).
 
-## Null results – insufficient sensitivity or true lack of differences?
+### Null results – insufficient sensitivity or true lack of differences?
 
 Besides the lack of a reliable P300-like effect here, several additional measures that were evaluated here did not show any group-wise effects and did not contribute to explaining ASRS scores, despite previous literature suggesting that they might. Although null results are difficult to interpret fully, we find it worthwhile to note these here and briefly discuss potential reasons for the lack of group-related effects. Perhaps the most surprising null effect was the lack of differences in behavioral performance. Participants in both groups achieved similar behavioral performance in the Quiet and Events condition, suggesting that the presence of occasional sound-events ultimately did not ultimately impair their ability to understand the content of the mini-lectures (at least at the level probed by our comprehension questions). These results should be interpreted bearing in mind the details of the current task design – we deliberately chose a task that would mimic the level of information processing required in real-life learning contexts as opposed to speeded-response tasks used in traditional attention research that encourage failures of performance by creating perceptually ‘extreme’ conditions (Hall et al., 2016; Barkley, 2019; Arrondo et al., 2024). Moreover, the presence of occasional sound-events – while noticeable, was not design to be extremely adverse. Under these conditions, individuals with and without AD(H)D were able to maintain good performance despite the occasional acoustic disturbances (Mandal et al., 2024), indicating that neurophysiological indication of somewhat reduced attention do not necessarily translate to poorer behavioral outcomes. It is of course possible that larger behavioral effects would have emerged if task demands or the severity of acoustic disturbances were more challenging.
 
@@ -161,29 +303,29 @@ Besides neural evoked responses, background sound-events also elicited a transie
 
 Last, another interesting null result was the lack of overt-gaze-shifts following sound-events. Gaze-shifts are often considered a proxy for distractibility and capture of attention (Parkhurst et al., 2002; Geisler and Cormack, 2011; Nissens et al., 2017), particularly in individuals with AD(H)D. Accordingly, we had expected to find that sound-event elicited overt shifts toward the spatial location from which they were emitted. However, this was not the case, and individuals (in both groups) did not perform more gaze-shifts following sound-events relative to their baseline tendencies. A similar result was recently reported by our group in a VR café scenario, where that hearing semantically salient words in background speech (e.g., your name or semantic violations) did elicited neural and SC responses, but was not accompanied by gaze-shifts (Brown et al., 2023). These results might indicate that peripheral auditory stimuli are, generally, less effective than visual stimuli at capturing overt attention (Turoman and Vergauwe, 2024; Mandal et al., 2024), or that in ecological audiovisual settings individuals are less prone to move their eyes to search for the source of auditory disturbances, despite noticing them. These possibilities will be further investigated in follow-up VR studies, comparing the effects of irrelevant auditory and visual events.
 
-## General considerations
+### General considerations
 
 Before concluding, we note several important caveats, pertaining to the specific sample tested here. First, as noted, classification of the AD(H)D group was based on their prior clinical diagnosis, which likely varied across participants in terms of diagnosis approach and age of diagnosis. Although the two groups were distinguishable in their self-reported ASRS scores, a more reliable assessment of the severity of current AD(H)D symptoms might have been achieved if we had conducted a full clinical assessment of all participants, as per the acceptable clinical guidelines (American Psychiatric Association, 2022). Second, this study was conducted on adults, whereas the majority of AD(H)D research – and particularly all VR classroom studies – have focused on children (Pollak et al., 2009; Neguț et al., 2017; Schweitzer and Rizzo, 2022; Seesjärvi et al., 2022; Stokes et al., 2022). AD(H)D is primarily defined as a childhood condition and although it often persists into adulthood, with profound implications on professional and academics outcomes, how the nature of the deficit changes with age is still unknown (Barkley et al., 2008). Moreover, the adult cohort tested here included primarily university students, who do not represent all adults but rather are a subgroup with relatively high cognitive and learning abilities, who are accustomed to sitting in lectures for long periods of time (Henrich et al., 2010). Hence, it is possible that the lack of group differences in some metrics in the current dataset (and particularly in their behavioral outcomes) is because these individuals have learned to deal with distraction and have developed appropriate strategies, which allow them to thrive in academic settings. This caveat highlights the importance of considering sampling techniques in group-comparison studies, which sometimes limits their interpretation to more circumscribed sub-samples (Rad et al., 2018). At the same time, even if the current findings pertain only to this highly functioning academic subgroup of individuals with AD(H)D, they imply an impressive ability to adapt and cope with the naturally occurring distractions of realistic classrooms. Specifically, they suggest that withstanding distraction in real-life contexts may be improved through training and good habit-forming, even in individuals with AD(H)D. We hope to follow up on this research in the future, to deepen our understanding of the diversity within the AD(H)D and typical population and to better characterize attention and distractibility across different types of real-life scenarios.
 
-## Conclusions
+### Conclusions
 
 Paying attention in class requires both investing cognitive resources in processing the lesson itself (e.g., the teacher’s speech), and trying to minimize intrusions from background events. Here, we found that both of these operations are less effective in individuals who are diagnosed with AD(H)D or who report more severe symptoms of difficulties in everyday attention. Specifically, these individuals exhibit heightened sensory response to irrelevant sounds, reduced speech tracking of the teacher, a tendency toward more frequent gaze-shifts away from the teacher, and somewhat increased alpha-power. Interestingly, since these metrics were not correlated with each other, they likely represent different ways through which inattention or distraction may manifest, rather than a general ‘biomarker’ of inattention. Counter to some prevalent notions, these data suggest that AD(H)D may not be characterized by a specific ‘neural marker’ indicating attentional deficits, particularly when tested under ecological circumstances (Barkley, 2019; Faraone et al., 2021; Sonuga-Barke et al., 2023). Rather, they resonate with recent calls to revisit the parameters used for defining ‘attention-disorders’ and the need to adopt more nuanced and dimensional approach, as well as designing more ecologically valid means of testing, in order to better characterize and understand the complex nature of real-life attentional challenges (Marcus and Barry, 2011; Heidbreder, 2015; Morris et al., 2022; Elahi et al., 2024).
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty-four participants initially participated in the study; however, the data from five participants were excluded due to technical issues or their voluntary request to discontinue participation. The final sample consisted of 49 participants (21 male, 28 female; 46 right-handed, 3 left-handed). Of these participants, 24 had a prior clinical diagnosis of attention deficit hyperactivity disorder (AD(H)D group), and 25 participants did not (control group). The two groups were matched for age, which ranged between 20 and 38 years (mean age of all participants: 26.9 ± 3.0; AD(H)D participants: 26.7 ± 3.7; control participants: 25.7 ± 4.4). The majority of participants were university students. Participants in the AD(H)D group were questioned about their medication intake regimen, and the experiment was scheduled at least 12 hr after their last dose of medication. None of the participants (in either group) reported taking any other medications on a regular basis. The experimental protocol was approved by the ethics committee at Bar-Ilan University (protocol # ISU202112002), and all participants provided written informed consent prior to their involvement in the study and data collection procedures. Participants received financial compensation or course credit in exchange for their participation.
 
-## ASRS questionnaire
+### ASRS questionnaire
 
 All participants completed a self-report questionnaire assessing AD(H)D symptoms (ASRS-v1.1; Adler et al., 2006, Hebrew version: Zohar and Konfortes, 2010), which has been shown to have good psychometric properties high sensitivity for AD(H)D diagnosis (Kessler et al., 2005). Participants in the AD(H)D group were instructed to complete the questionnaire based on their experiences at a time when they are not taking medication. The questionnaire consists of 18 items, which are rated on a 5-point Likert scale ranging from 0 (never) to 4 (very often). ASRS scores for each participant were calculated as the total sum of marks across all items, as this has been shown to yield the highest sensitivity to AD(H)D diagnosis (Zohar and Konfortes, 2010). We did not try to categorize AD(H)D subtypes (e.g., inattention, hyperactivity, and combined) since these subtypes are less reliable in adulthood. As expected, the group diagnosed with AD(H)D exhibited significantly higher ASRS scores compared to the control group [t(47) = 8.49, p < 0.001; see Figure 9]. This outcome validates the group allocation and demonstrates the consistency between AD(H)D diagnosis and self-reported AD(H)D symptoms.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/103235/elife-103235-fig9-v1.jpg)
 
-**Figure 9.:** A) and bar graph (B) showing the distribution of ASRS scores in the attention deficit (hyperactivity) disorder (AD(H)D) and Control groups.Error bars represent standard error of the mean (SEM). This confirms group allocation, within the tested sample.***p < 0.001.
+**Figure 9.:** Error bars represent standard error of the mean (SEM). This confirms group allocation, within the tested sample.***p < 0.001.
 
-## The VR classroom: design and stimuli
+### The VR classroom: design and stimuli
 
 The VR classroom platform was developed using the Unity game engine (unity.com; JavaScript and C# programming). Development and programming of the VR classroom were done primarily in-house, using assets (avatars and environment) were sourced from pre-existing databases. The classroom environment was adapted from assets provided by Tirgames on TurboSquid (https://www.turbosquid.com/Search/Artists/Tirgames) and modified to meet the experimental needs. The avatars and their basic animations were sourced from the Mixamo library, which at the time of development supported legacy avatars with facial blendshapes (this functionality is no longer available in current versions of Mixamo). A brief video example of the VR classroom is available at https://osf.io/svjqg.
 
@@ -199,13 +341,13 @@ Besides the teacher’s lesson, short sounds (sound-events) were presented occas
 
 In the VR classroom, the loudness of the teacher’s speech was set to a comfortable level for each participant, as determined in a training trial. The precise intensity level cannot be measured reliably, since it is affected by the specific positioning of the foam earphone inserts in the participants’ ear, but was roughly between 60 and 70 dB SPL. The sound-events were played at a loudness level of 50% relative to the teacher’s voice (–3 dB SPL).
 
-## Experimental procedure
+### Experimental procedure
 
 The experiment was conducted in a sound attenuated room. After comfortably fitting the VR headset on the participant, the eye-tracker was calibrated and validated using a standard 9-point calibration procedure. Participants were then familiarized with the VR classroom scene, and performed two training trials – one without events-sounds and one with – for training and calibration purposes.
 
 The experiment consisted of 30 trials. In each trial, the avatar-teacher delivered a different mini-lesson and participants were instructed to pay attention to its content. They were not given any specific instructions regarding the other sounds or stimuli in the classroom. After each mini-lesson, participants answered four multiple-choice questions about its content (Figure 10C). Most trials (22) contained occasional background event-sound (Events condition; with 5 of both types sound-events per trial, separated by 3–7 s; Figure 10B), whereas 8 trials did not, serving as a Quiet baseline condition. In total, 104 sound-events were presented throughout the experiment (52 of each type). The order of mini-lecture presentation and their allocation to the Events or Quiet condition was randomized across participants.
 
-## EEG, GSR, and eye-gaze recordings
+### EEG, GSR, and eye-gaze recordings
 
 Neural activity was recorded using 64 active ag-agCl EEG electrodes (BioSemi) and was sampled at 1024 Hz. Electrooculographic (EOG) signals were also included in this recording, measured by three additional electrodes located above the right eye and on the external side of both eyes.
 
@@ -213,17 +355,17 @@ The SC response (Akash et al., 2018) was recorded using two passive Ni hon Kohde
 
 Eye-gaze data were recorded using the eye tracker embedded in the VR headset, which provides information about the x–y–z coordinate of the gaze in 3D space at each time-point, as well as automatic blink-detection. We defined several a priori regions of interest (ROIs) in the 3D classroom space, which included: ‘Teacher’, ‘Left Board’, ‘Right Board’, ‘Ceiling’, ‘Floor’, ‘Middle Window’, ‘Left Student’, ‘Right Student’. Note that the sound-events were emitted from the ROI labeled ‘Right Student’. Using a combined calculation of the participants’ head position and direction of the gaze vector, gaze data could be automatically classified to describe which ROI the participant looked at, at each point in time.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 To evaluate participants’ comprehension and memory retention, we calculated their accuracy on four multiple-choice questions following each trial (average correct responses). Between-group differences were assessed using unpaired t-tests, separately for the Quiet and Events conditions. These were evaluated separately (here and in all other analyses), given the imbalanced number of trials in each condition. The BF10 was also calculated for each pairwise comparison, to test the level of confidence for embracing or rejecting the null hypothesis (H0; BF10 thresholds used throughout: BF10 <1 indicates weak support of H0 and BF10 <0.25 indicates moderate/strong support of H0; BF10 >1 indicates weak support for rejecting H0 and BF10 >2.5 indicates moderate/strong support for rejecting H0).
 
-## EEG data analysis
+### EEG data analysis
 
 The EEG data were preprocessed using MATLAB with the FieldTrip toolbox (https://www.fieldtriptoolbox.org, version 20220729). The raw EEG data was referenced to linked right and left mastoids, then band-pass filtered between 0.5 and 40 Hz (fourth-order zero-phase Butterworth IIR filter), detrended and demeaned. Visual inspection was performed to identify and remove gross artifacts (excluding eye movements). Independent component analysis was then used to further remove components associated with horizontal or vertical eye movements and heartbeats, which were selected manually based on their characteristic time-course patterns and topographical distributions, consistent with known artifact signatures. Remaining noisy electrodes, containing extensive high-frequency activity or DC drifts, were interpolated using adjacent electrodes, either on the entire dataset or on a per-trial basis, as needed.
 
 Three types of analyses were applied to the clean EEG data: (1) Speech tracking analysis of the neural response to teacher’s speech, (2) ERPs analysis capturing the time-locked neural response to the Sound-events, and (3) Spectral analysis, looking specifically at ongoing power in two canonical frequency bands previously associated with attention: the alpha (6–15 Hz) and beta (13–30 Hz) ranges.
 
-## Speech tracking response (TRF)
+#### Speech tracking response (TRF)
 
 The clean EEG data were segmented into trials from the onset the teacher’s speech until the end of the trial. For this analysis, EEG data were further bandpass filtered between 0.8 and 20 Hz (fourth-order zero-phase Butterworth IIR filter), and downsampled to 100 Hz for computational efficiency. To ensure comparability across participants and conditions, the EEG data were normalized using z-score transformation. To estimate the neural response to the speech we performed speech-tracking analysis which estimates a linear TRF that best describes the relationship between features of the stimulus (S) and the neural response (R) in a given trial. Speech tracking analysis was conducted using the mTRF MATLAB toolbox (Crosse et al., 2016), using both an encoding and decoding approach. Speech-tracking analysis was limited only to the Events condition, since the Quiet condition contained substantially less data (eight trials; ~5 min of data in total), which was insufficient for obtaining a reliable speech-tracking response (predictive power non-significant vs. permutations of shuffled data, p = 0.43). For speech tracking in the Events condition we used a multivariate approach, and included the temporal envelopes of both the teacher’s speech and the sound-events as separate regressors (S) when modeling the neural response, so as to represent the entire soundscape they heard. For both regressors, we derived a broadband temporal envelope by filtering the audio through a narrow-band cochlear filterbank, extracting the narrowband envelopes using a Hilbert transform, and averaging across bands. The regressors were then downsampled to 100 Hz to match the EEG data and normalized using z-score.
 
@@ -237,23 +379,23 @@ For the decoding analysis we used time lags between S and R ranging from −400 
 
 Speech tracking analysis – using both encoding and decoding approaches – was performed separately for each Group (AD(H)D and Control). To test for between-group differences, we compared the models’ predictive power, using unpaired t-tests. We additionally calculated the BF10 for each comparison, to test the level of confidence for embracing or rejecting the null hypothesis.
 
-## Event-related response
+#### Event-related response
 
 To quantify neural responses to the sound-events, we estimated the time-locked ERPs. For this analysis, the clean EEG data were segmented into epochs ranging from –100 to 500 ms around each event. The data were further low-passed filtered at 12 Hz, as is common in ERP analysis (fourth-order zero-phase Butterworth IIR filter), and baseline corrected to the pre-stimulus period (−100 to 0 ms). ERPs were derived separately for each group (AD(H)D vs. Control) and Event-type (Artificial vs. Non-verbal human sounds). Visual inspection of the ERPs showed that they were dominated by two early components: the N1-component (75–200 ms) and later P2-component (210–260 ms), which primarily reflect auditory sensory responses, but are sometimes modulated by attention (Hillyard et al., 1973; Woldorff and Hillyard, 1991).
 
 Statistical analysis of the ERPs focused on the two simple effects, using a Monte-Carlo spatio-temporal cluster-based permutation test, across all electrodes and time-points. To test for difference in the ERPs between Groups, we used unpaired t-tests on the ERPs, averaged across Event-types. For this analysis, we had to set the cluster alpha-level to a very low level of p = 10–5, in order to obtain separate clusters for the N1 and P2 responses. To test for difference in the ERPs generated for the two Event-types, we use paired t-tests on the ERPs of all participant, irrespective of their group. For this analysis, the cluster alpha-level was set to p = 0.05. Last, to verify the main effects and in order to test for potential interactions between Group and Event-type, we extracted the peak amplitudes of the N1 and P2 component from each participant, and performed a mixed ANOVA with repeated measures, with the factors Group (AD(H)D vs. Control; between) and Event-Type (Artificial vs. Human non-verbal; within).
 
-## Spectral analysis
+#### Spectral analysis
 
 The third analysis performed on the EEG data was a spectral analysis. This analysis was performed on the clean EEG data, segmented into full trials (same segmentation used for the speech-tracking analysis). We calculated the EEG spectral power density (PSD) of individual trials using multitaper fast-fourier transform (FFT) with Hanning tapers (method ‘mtmfft’ in the fieldtrip toolbox). The PSDs were averaged across trials for each participant, separately for each electrode and condition (Quiet and Events). We used the FOOOF algorithm (Donoghue et al., 2020) to decompose the PSD into periodic (oscillatory) and aperiodic components. The periodic portion of the PSD showed clear peaks in the alpha (8–12 Hz) and beta (15–25 Hz) ranges, suggesting reliable oscillatory activity (Figure 7). Since the peaks of alpha and beta activity can vary substantially across individuals, for each participant, we identified the frequency with the largest amplitude within each range, focusing on a cluster of occipital–parietal electrodes (for alpha) or frontal–central electrodes (for beta), where these responses were largest. These were used for statistical analyses of between-group differences. assessed using unpaired t-tests, separately for the Quiet and Events conditions, in each frequency band, and the BF10 was calculated for each pairwise comparison to test the level of confidence for embracing or rejecting the null hypothesis.
 
-## SC data analysis
+#### SC data analysis
 
 The SC signal was analyzed using the Ledalab MATLAB toolbox (version 3.4.9; Benedek and Kaernbach, 2010; http://www.ledalab.de/). The raw data were downsampled to 16 Hz using FieldTrip’s ft_resampledata function, which applies a built-in anti-aliasing low-pass filter to prevent aliasing artifacts. Data were inspected manually for any noticeable artifacts (large ‘jumps’), and if present were corrected using linear interpolation in Ledalab. A continuous decomposition analysis (CDA) was employed to separate the tonic and phasic SC responses for each participant. The CDA was conducted using the ‘sdeco’ mode (signal decomposition), which iteratively optimizes the separation of tonic and phasic components using the default regularization settings. We tested for between-group differences in global SC levels (tonic and phasic responses separately, averaged across full trials) using unpaired t-tests, separately for the Quiet and Events conditions and the BF10 was calculated for each pairwise comparison.
 
 In addition, we analyzed event-related changes in SC following Sound-events. This analysis focused on a time-window between 0 and 5 s after the onset of Sound-events. Since changes in SC are relatively slow and peak between 2 and 3 s after a stimulus, the mean response between 0 and 1 s was used as a baseline and was subtracted from the signal. Statistical analysis focused the time-window surrounding the mean response between 2 and 3 s, extracted for each participant. A mixed ANOVA with repeated measures was used to test for main effects of Group (AD(H)D vs. Control; between factor), and Event-Type (Artificial vs. Non-verbal human; within factor) and the interaction between them.
 
-## Eye tracking data analysis
+### Eye tracking data analysis
 
 Eye-tracking data were used to study participants' spontaneous gaze-dynamics in the VR classroom throughout the entire trial and also to examine whether background Sound-events elicited overt gaze-shifts. Gaze-data preprocessing involved removing measurements around blinks (from –100 to 200 ms after) and any other data points marked as ‘missing data’ by the eye-tracker. Gaze-data were analyzed using Python, closely following recommended procedures for analysis of gaze-data in VR (Anderson et al., 2023). To assess gaze-patterns and detect gaze-shift, we calculated the Euclidean distance between adjacent data points, using the x, y, z coordinates in 3D space provided by the eye-tracker. ‘Fixations’ were defined as clusters of adjacent time-points within a radius of less than 0.01 distance from each other, lasting at least 80 ms. Each fixation was associated with a specific ROI in the VR classroom, indicating the object in the virtual space that the participant looked at. ‘Gaze-shifts’ were defined as transitions between two stable fixations.
 
@@ -261,7 +403,7 @@ To analyze spontaneous gaze-dynamics throughout an entire trial, we quantified t
 
 To determine whether background Sound-events elicited overt gaze-shifts, we segmented the gaze-data into 2-s long epochs around each Event-sound. As a control, we randomly chose a similar number of 2-s long epochs from the Quiet-condition. We then counted how many epochs included at least one gaze-shift away from the teacher, and used a paired t-test to determine whether the frequency of gaze-shifts was higher following Sound-events relative to the Control epochs (regardless of Group). We also used a mixed ANOVA to test for potential differences in the likelihood of gaze-shifts following the different event-types (Artificial vs. Human non-verbal), and for the two Groups (AD(H)D vs. Control). For this analysis, the proportion of gaze-shifts was normalized for each participant by subtracting the number of gaze-shifts following Sound-events relative to the control epochs.
 
-## Multivariate analyses
+### Multivariate analyses
 
 Besides testing for effects of Group in each metric individually, we also performed multivariate analyses to examine the relationship between the various metrics collected here and their ability to predict ADHD diagnosis (binary) and/or the severity of AD(H)D symptoms.
 

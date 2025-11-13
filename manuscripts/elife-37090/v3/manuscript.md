@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.37090.001 The composition of the human gut microbiome is well resolved, but predictive understanding of its dynamics is still lacking. Here, we followed a bottom-up strategy to explore human gut community dynamics: we established a synthetic community composed of three representative human gut isolates ( Roseburia intestinalis L1-82, Faecalibacterium prausnitzii A2-165 and Blautia hydrogenotrophica S5a33) and explored their interactions under well-controlled conditions in vitro. Systematic mono- and pair-wise fermentation experiments confirmed competition for fructose and cross-feeding of formate. We quantified with a mechanistic model how well tri-culture dynamics was predicted from mono-culture data. With the model as reference, we demonstrated that strains grown in co-culture behaved differently than those in mono-culture and confirmed their altered behavior at the transcriptional level. In addition, we showed with replicate tri-cultures and simulations that dominance in tri-culture sensitively depends on the initial conditions. Our work has important implications for gut microbial community modeling as well as for ecological interaction detection from batch cultures.
+The composition of the human gut microbiome is well resolved, but predictive understanding of its dynamics is still lacking. Here, we followed a bottom-up strategy to explore human gut community dynamics: we established a synthetic community composed of three representative human gut isolates (Roseburia intestinalis L1-82, Faecalibacterium prausnitzii A2-165 and Blautia hydrogenotrophica S5a33) and explored their interactions under well-controlled conditions in vitro. Systematic mono- and pair-wise fermentation experiments confirmed competition for fructose and cross-feeding of formate. We quantified with a mechanistic model how well tri-culture dynamics was predicted from mono-culture data. With the model as reference, we demonstrated that strains grown in co-culture behaved differently than those in mono-culture and confirmed their altered behavior at the transcriptional level. In addition, we showed with replicate tri-cultures and simulations that dominance in tri-culture sensitively depends on the initial conditions. Our work has important implications for gut microbial community modeling as well as for ecological interaction detection from batch cultures.
 
 ## Introduction
 
@@ -59,17 +59,277 @@ The three strains were grown as mono-, bi-, or tri-cultures in 2 L laboratory fe
 
 ## Results
 
-## Blautia hydrogenotrophica S5a33 consumes fructose and formate
+### Blautia hydrogenotrophica S5a33 consumes fructose and formate
 
 We first confirmed the cross-feeding interactions postulated for B. hydrogenotrophica S5a33 with small-volume screening experiments, in which the pH was not kept constant and the atmosphere contained 10% carbon dioxide and 10% hydrogen gas. We found that under these conditions, B. hydrogenotrophica S5a33 was able to grow heterotrophically on formate, which was entirely consumed. Although we did not quantify gasses during screening and therefore could not ascertain the consumption of carbon dixoide and hydrogen gas, we observed growth in the absence of an added carbon source, indicating autotrophic growth as described previously (Bernalier et al., 1996). Presumably, both formate and carbon dioxide are assimilated via the Wood-Ljungdahl pathway, of which all required genes are present in the genome of B. hydrogenotrophica S5a33 according to the AGORA database (Magnúsdóttir et al., 2017).
 
 We also found that B. hydrogenotrophica S5a33 grew on fructose, oligofructose and glucose, as reported by Rey et al. (2010) for B. hydrogenotrophica S5a36, and documented partial consumption of these saccharides. For glucose and fructose, the maximal OD tended to be lower than for formate (mean maximal ODs for glucose: 0.3, fructose: 0.6, formate: 1.3). In agreement with (Bernalier et al., 1996), we detected lactate in addition to acetate for these substrates and confirmed lactate production in the presence of fructose in the fermentor. Notably, when growing B. hydrogenotrophica S5a33 on formate but without fructose in the fermentor, carbon dioxide and hydrogen gas were produced besides acetate, but lactate was absent. B. hydrogenotrophica S5a33 also consumed small concentrations of galactose, but did not consume fucose, inulin or lactate. In conclusion, we confirmed the potential competition between B. hydrogenotrophica S5a33 and the two primary fermenters for fructose as well as the potential cross-feeding of formate.
 
-## Mono-culture dynamics does not follow standard Monod kinetics
+### Mono-culture dynamics does not follow standard Monod kinetics
 
 We employed pH-controlled mono-cultures to characterize the properties and growth kinetics of the individual strains in our model. Table 1 provides an overview of all of the fermentation experiments carried out, whereas Supplementary file 1 gives additional information for each experiment.
 
+**Table 1.**
+ Overview of fermentation experiments and model fitting results (RMSE: root mean square error).Means and standard deviations are reported across biological replicates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strains</th>
+      <th rowspan="2">Number of biological replicates</th>
+      <th rowspan="2">Added energy source and/or co-substrate</th>
+      <th colspan="7">Consumption (-)/production (+) of metabolites in mM</th>
+      <th rowspan="2">Carbon recovery (%)</th>
+      <th rowspan="2">O/R balance</th>
+      <th rowspan="2">Selected for parame-terization 1</th>
+      <th rowspan="2">RMSE parame-terization 1</th>
+      <th rowspan="2">Selected for parame-terization 2</th>
+      <th rowspan="2">RMSE parame-terization 2</th>
+    </tr>
+    <tr>
+      <th>Fructose</th>
+      <th>Acetate</th>
+      <th>Butyrate</th>
+      <th>Formate</th>
+      <th>Lactate</th>
+      <th>H2</th>
+      <th>CO2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monoculture fermentations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R. intestinalis L1-82</td>
+      <td>4</td>
+      <td>Fructose/acetate</td>
+      <td>−48.8 ± 0.9</td>
+      <td>−20.6 ± 2.4</td>
+      <td>58.5 ± 3.9</td>
+      <td>6.8 ± 1.2</td>
+      <td>3.9 ± 1.1</td>
+      <td>72.2 ± 4.9</td>
+      <td>84.0 ± 0.8</td>
+      <td>105 ± 14.3</td>
+      <td>0.86 ± 0.2</td>
+      <td>Yes</td>
+      <td>0.17 ± 0.04</td>
+      <td>No</td>
+      <td>0.83 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>F. prausnitzii A2-165</td>
+      <td>3</td>
+      <td>Fructose/acetate</td>
+      <td>−23.1 ± 1.1</td>
+      <td>−13.5 ± 0.8</td>
+      <td>29.8 ± 0.2</td>
+      <td>22.7 ± 0.9</td>
+      <td>1.8 ± 0.2</td>
+      <td>0.2 ± 0.2</td>
+      <td>19.3 ± 1.6</td>
+      <td>100.9 ± 3.4</td>
+      <td>1.05 ± 0.09</td>
+      <td>Yes</td>
+      <td>0.15 ± 0.08</td>
+      <td>Yes</td>
+      <td>0.15 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>B. hydrogenotrophica S5a33</td>
+      <td>3</td>
+      <td>Fructose/formate</td>
+      <td>−19.0 ± 5.6</td>
+      <td>23.0 ± 6.6</td>
+      <td>0.0 ± 0.0</td>
+      <td>−36.1 ± 1.8</td>
+      <td>6.0 ± 1.2</td>
+      <td>31.5 ± 7.7</td>
+      <td>26.0 ± 5.3</td>
+      <td>60.0 ± 2.1</td>
+      <td>0.76 ± 0.07</td>
+      <td>Yes</td>
+      <td>1.43 ± 0.27</td>
+      <td>No</td>
+      <td>3.53 ± 1.04</td>
+    </tr>
+    <tr>
+      <td>Bi-culture fermentations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R. intestinalis L1−82/F. prausnitzii A2-165</td>
+      <td>2</td>
+      <td>Fructose/acetate</td>
+      <td>−47.7 ± 2.2</td>
+      <td>−18.1 ± 2.7</td>
+      <td>56.3 ± 4.5</td>
+      <td>7.6 ± 2.7</td>
+      <td>4.3 ± 3.3</td>
+      <td>114 ± 16</td>
+      <td>85.7 ± 4.1</td>
+      <td>102.8 ± 0.3</td>
+      <td>0.79 ± 0</td>
+      <td>No</td>
+      <td>0.77 ± 0.06</td>
+      <td>No</td>
+      <td>0.68 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>R. intestinalis L1−82/B. hydrogenotrophica S5a33</td>
+      <td>2</td>
+      <td>Fructose/acetate</td>
+      <td>−46.5 ± 1.5</td>
+      <td>−7.5 ± 1.9</td>
+      <td>53.5 ± 4.7</td>
+      <td>−0.5 ± 0.8</td>
+      <td>2.2 ± 0.3</td>
+      <td>53.0 ± 3.0</td>
+      <td>74.9 ± 4.1</td>
+      <td>100.2 ± 0.6</td>
+      <td>0.94 ± 0.12</td>
+      <td>No</td>
+      <td>0.78 ± 0.36</td>
+      <td>Yes</td>
+      <td>0.3 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>R. intestinalis L1−82/B. hydrogenotrophica S5a33</td>
+      <td>2</td>
+      <td>Fructose</td>
+      <td>−48.0 ± 0.2</td>
+      <td>44.9 ± 5.4</td>
+      <td>27.9 ± 3.0</td>
+      <td>−1.0 ± 0.0</td>
+      <td>5.4 ± 2.4</td>
+      <td>33.1 ± 3.2</td>
+      <td>47.4 ± 3.9</td>
+      <td>91.6 ± 1.1</td>
+      <td>1.05 ± 0.06</td>
+      <td>No</td>
+      <td>0.9 ± 0.17</td>
+      <td>No</td>
+      <td>0.32 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>F. prausnitzii A2−165/B. hydrogenotrophica S5a33</td>
+      <td>2</td>
+      <td>Fructose/acetate</td>
+      <td>−49.3 ± 1.0</td>
+      <td>41.4 ± 11.7</td>
+      <td>30.7 ± 1.8</td>
+      <td>−1.2 ± 0.0</td>
+      <td>3.9 ± 1.6</td>
+      <td>56.2 ± 37.1</td>
+      <td>54.8 ± 33.3</td>
+      <td>91.6 ± 9.4</td>
+      <td>0.88 ± 0.25</td>
+      <td>No</td>
+      <td>0.6 ± 0.14</td>
+      <td>Yes</td>
+      <td>0.26 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>F. prausnitzii A2−165/B. hydrogenotrophica S5a33</td>
+      <td>1</td>
+      <td>Fructose</td>
+      <td>−47.0</td>
+      <td>62.5</td>
+      <td>25.5</td>
+      <td>−1.1</td>
+      <td>4.5</td>
+      <td>62.9</td>
+      <td>63.6</td>
+      <td>107.4</td>
+      <td>1.11</td>
+      <td>No</td>
+      <td>0.63</td>
+      <td>No</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>Tri-culture fermentations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R. intestinalis L1−82/F. prausnitzii A2−165/B. hydrogenotrophica S5a33</td>
+      <td>6</td>
+      <td>Fructose</td>
+      <td>−48.9 ± 1.3</td>
+      <td>38.4 ± 16.9</td>
+      <td>32.5 ± 5.5</td>
+      <td>−1.2 ± 0.1</td>
+      <td>7.4 ± 1.7</td>
+      <td>61.9 ± 3.2</td>
+      <td>57.1 ± 9.2</td>
+      <td>97.0 ± 3.1</td>
+      <td>0.84 ± 0.09</td>
+      <td>No</td>
+      <td>0.78 ± 0.27</td>
+      <td>No</td>
+      <td>0.58 ± 0.11</td>
+    </tr>
+  </tbody>
+</table>
+
 When grown in monoculture, R. intestinalis L1-82 consumed fructose and produced butyrate, carbon dioxide and hydrogen gas, as described previously (Falony et al., 2009c), as well as small amounts of lactate and formate (Figure 3A). Interestingly, there was no net consumption of acetate when more fructose than acetate was provided. Net acetate consumption has been found to correlate negatively with hydrogen gas production (Falony et al., 2009c), but here we saw that it also depended on the ratio of initial fructose and acetate. When given in equal concentrations, R. intestinalis L1-82 partially consumed acetate. Consequently, in all further experiments, when acetate was added, it was added at the same concentration as fructose.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig3-v3.jpg)
+
+**Figure 3.:** Biological replicates are plotted together in one panel, with their mean shown in bold. For each set of experiments, species abundances quantified by qPCR are plotted in the top half of the panel and metabolite concentrations in the bottom half. (A–C) Monocultures of Roseburia intestinalis L1-82 (RI), Faecalibacterium prausnitzii A2-165 (FP) and Blautia hydrogenotrophica S5a33 (BH). (D–F) The three co-culture combinations of RI, FP and BH with initial acetate. (G–H) Co-cultures of RI versus BH and FP versus BH without initial acetate. (I–J) The tri-culture replicates are separated into those dominated by RI and BH (I) and those dominated by FP and BH (J).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** For samples taken at the last time point, DNA was extracted and the V4 region of the 16S rRNA gene was amplified and sequenced. Raw reads are rarefied to 15,339 counts per sample and then converted into relative abundances. The top 10 taxa in each sample are shown. The abbreviations RI, FP and BH in sample identifiers stand for Roseburia intestinalis L1-82, Faecalibacterium prausnitzii A2-165 and Blautia hydrogenotrophica S5a33, respectively. The taxon Lachnospiraceae incertae sedis contains B. hydrogenotrophica S5a33. High relative abundances of potential contaminants (>10%) were found in one R. intestinalis L1-82 mono-culture (RI_16), one R. intestinalis L1-82/F. prausnitzii A2-165 co-culture (RI_FP_9) and one tri-culture (RI_FP_BH_10).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The RNA of two non-prokaryotic organisms reached noticeable abundances: the bacteriophage phiX174, which is used as a control in Illumina sequencing, and the yeast S. cerevisiae S288c, which probably came from the yeast extract employed in the medium. In most of the samples, these potential contaminants have transcriptome-size-corrected abundances below 5%, but in one sample (Blautia hydrogenotrophica S5a33 at 3 hr) the yeast RNA abundance reached 18%. Taxonomic assignment was carried out with MetaPhlAn2 and mash screen against the complete RefSeq genomes and plasmids database. Total read counts were corrected for transcriptome size (genome size in the case of the bacteriophage). The bacterial contamination observed in the Roseburia intestinalis L1-82 monoculture with 16S rRNA gene sequencing was not confirmed with RNA-seq. Row one refers to experiments RI_FP_BH_14, BH_16, FP_14 and RI_16, whereas row two refers to experiments RI_FP_BH_15, BH_15, FP_15 and RI_15.
 
 F. prausnitzii A2-165 in monoculture produced formate, less carbon dioxide and butyrate than R. intestinalis L1-82 and no hydrogen gas, but did not entirely consume fructose (Figure 3B). After having excluded a number of explanations — exposure to oxygen (by adding oxygen gas via sterile water), redox potential (by continuously adding the oxidizing agent potassium ferrocyanide trihydrate), pH (lowered to 5.8), a threshold requirement for fructose (halving the fructose concentration did not stop its consumption) or end-product inhibition (by adding initial butyrate) — we found that doubling the concentration of yeast extract lowered residual fructose concentrations. Adding fresh but autoclaved medium during the fermentation did not lower residual fructose concentrations, so we assumed that F. prausnitzii A2-165 was growth-limited by one or several heat-labile co-factor(s) present in the yeast extract. A recent flux balance analysis with a manually curated metabolic reconstruction suggests that the growth of F. prausnitzii A2-165 requires several amino acids (L-alanine, L-cysteine, L-methionine, L-serine and L-tryptophan) and the co-factors biotin (vitamin B7), cobalamin (vitamin B12), folic acid (vitamin B9), hemin, nicotinic acid, pantothenic acid and riboflavin (vitamin B2) (Heinken et al., 2014). With the exceptions of cobalamin and externally supplied hemin, these nutrients should be present in yeast extract according to the metabolic reconstruction of Saccharomyces cerevisiae iMM904 (Mo et al., 2009) and, furthermore, the amino acids should be present in other medium components (bacteriological peptone, soy peptone and tryptone). According to previous experimental findings as well as the flux balance analysis, F. prausnitzii A2-165 can grow in the presence of oxygen gas (Heinken et al., 2014; Khan et al., 2012), which is in agreement with our observation that the addition of low concentrations of oxygen gas does not alter its growth curve. F. prausnitzii A2-165 is assumed to transfer electrons to oxygen through extracellular redox mediators such as riboflavin (Khan et al., 2012; Prévoteau et al., 2015).
 
@@ -77,15 +337,31 @@ B. hydrogenotrophica S5a33 produced acetate, hydrogen gas, carbon dioxide and sm
 
 These unexpected behaviors defy simple kinetic models typically based on additive Monod functions and necessitate adjustment of the equations.
 
-## Prediction accuracy of the model parameterized on monocultures is strain-dependent
+### Prediction accuracy of the model parameterized on monocultures is strain-dependent
 
 We designed a model that described the dynamics of each strain and of key compounds (including fructose, formate, acetate, butyrate, hydrogen gas and carbon dioxide) with ordinary differential equations implementing a combination of additive and multiplicative Monod functions (see 'Materials and methods'). The model differentiates between substrates required for growth and co-substrates such as acetate that enhanced growth but were not required. It also took strain-specific differences in lag phases into account. As we observed that F. prausnitzii A2-165 did not deplete fructose, presumably because of a lack of co-factors, we introduced a dependency on an undefined metabolite referred to as ‘unknown compound’.
 
 We parameterized this model on selected monoculture experiments and then predicted monoculture dynamics (Figure 4A–C, Figure 4—figure supplement 1). The model reached high prediction accuracy for F. prausnitzii A2-165 and R. intestinalis L1-82, but did not describe well the experimental data for B. hydrogenotrophica S5a33 (see Table 1). More precisely, the model showed that B. hydrogenotrophica S5a33 did not consume formate and fructose as quickly as would be expected if its growth follows Monod kinetics. We confirmed culture homogeneity by analyzing the16S rRNA gene sequencing data of the last sample (Figure 3—figure supplement 1). A yeast contaminant (S. cerevisiae S288c) that was detected in the RNA-seq data for the B. hydrogenotrophica S5a33 monoculture samples (Figure 3—figure supplement 2) does not explain the incongruence between growth and energy source consumption, since (i) no contamination was observed on plates inoculated with bioreactor samples and incubated under anaerobic and aerobic conditions, (ii) S. cerevisiae would consume fructose, and (iii) no ethanol production was measured. We also found only small concentrations of potential peptide degradation products (isobutyric acid and isovaleric acid). We therefore assumed that B. hydrogenotrophica S5a33 in monoculture initially grew on undefined medium components and only later switched to formate and fructose, but the time resolution was insufficient to take this potentially biphasic growth into account.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig4-v3.jpg)
+
+**Figure 4.:** (A–C) Fit to monoculture experiments selected for parameterization. (D–F) Fit to selected co-culture experiments with initial acetate. (G–H) Fit to selected co-culture experiments without initial acetate. (I–J) Fit to tri-cultures dominated by Roseburia intestinalis L1-82 (RI) and Blautia hydrogenotrophica S5a33 (BH) versus Faecalibacterium prausnitzii A2-165 (FP) and BH, respectively. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. Transparent points indicate declining cell numbers; corresponding samples were not taken into account for model fitting. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments RI_8, RI_14, FP_4, FP_15 and BH_14.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Fit to Roseburia intestinalis L1-82 (RI) monoculture experiments. (D–F) Fit to Faecalibacterium prausnitzii A2-165 (FP) monoculture experiments. (G–I) Fit to Blautia hydrogenotrophica S5a33 (BH) monoculture experiments. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. The shaded regions indicate the length of the estimated strain-specific lag phases. The unknown compound represents an unspecified co-substrate assumed to be required by Faecalibacterium prausnitzii A2-165. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments RI_8, RI_14, FP_4, FP_15 and BH_14.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Fit to Roseburia intestinalis L1-82 (RI) and Faecalibacterium prausnitzii A2-165 (FP) bi-culture experiments. (C–F) Fit to RI and Blautia hydrogenotrophica S5a33 (BH) bi-culture experiments. (G–I) Fit to FP and BH bi-culture experiments. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. The shaded regions indicate the length of the estimated strain-specific lag phases. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments RI_8, RI_14, FP_4, FP_15 and BH_14.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Fit to tri-culture experiments dominated by Roseburia intestinalis L1-82 (RI) and Blautia hydrogenotrophica S5a33 (BH). (C–F) Fit to tri-culture experiments dominated by Faecalibacterium prausnitzii A2-165 (FP) and BH. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. The shaded regions indicate the length of the estimated strain-specific lag phases. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments RI_8, RI_14, FP_4, FP_15 and BH_14.
+
 We also compared model performance for R. intestinalis L1-82 with and without product inhibition by hydrogen gas. As we found no differences in model performance, we removed an initial hydrogen gas inhibition term.
 
-## Formate is cross-fed from butyrate producers to B. hydrogenotrophica S5a33
+### Formate is cross-fed from butyrate producers to B. hydrogenotrophica S5a33
 
 When growing F. prausnitzii A2-165 and B. hydrogenotrophica S5a33 together, we observed that fructose was entirely depleted and that acetate, butyrate, hydrogen gas, carbon dioxide and small concentrations of lactate were produced (Figure 3F). Interestingly, there was an initial production of formate, which was then consumed, confirming that formate was cross-fed from F. prausnitzii A2-165 to B. hydrogenotrophica S5a33. Formate consumption was also observed without initial acetate (Figure 3H).
 
@@ -93,27 +369,51 @@ In the bi-culture of R. intestinalis L1-82 and B. hydrogenotrophica S5a33, carbo
 
 Finally, when R. intestinalis L1-82 and F. prausnitzii A2-165 were co-cultivated, fructose and acetate were consumed and butyrate, formate, hydrogen gas and carbon dioxide were produced (Figure 3E). The finding that formate reached lower concentrations in this co-culture than in F. prausnitzii A2-165 monoculture already hints at a negative effect of R. intestinalis L1-82 on the growth of F. prausnitzii A2-165.
 
-## Comparison of mono- and co-culture data suggests ecological interactions
+### Comparison of mono- and co-culture data suggests ecological interactions
 
 Since Gause's early work on competition between yeast and Paramecium species (Gause, 1932; Gause, 1934), growth rates in mono- and bi-culture experiments have been compared to determine ecological interactions (e.g. de Vos et al., 2017; Freilich et al., 2011; Wang et al., 2017). The rationale is that the growth rates of mutualistic organisms grown in bi-culture should increase compared to their growth rates in monoculture, whereas the bi-culture growth rates of competitors should decrease compared to their growth rates in monoculture.
 
 When comparing maximal abundances, cross-feeding and competitive interactions were already apparent. Both F. prausnitzii A2-165 and B. hydrogenotrophica S5a33 reached significantly higher maximal bacterial counts in F. prausnitzii A2-165/B. hydrogenotrophica S5a33 bi-cultures and in tri-cultures with F. prausnitzii A2-165 dominance (Figure 3F,H and J) than they did in monoculture (Figure 3B and C), suggesting a mutualistic relationship (unpaired two-sided Wilcoxon F. prausnitzii A2-165: shift 0.4, 95% confidence interval 0.12–0.55, p-value 0.03; B. hydrogenotrophica S5a33: shift 0.5, 95% confidence interval 0.33–0.69, p-value 0.017). The maximal cell number of F. prausnitzii A2-165 tended to be lower when competing with R. intestinalis L1-82 (Figure 3E) than when grown alone (unpaired two-sided Wilcoxon: shift 0.47, 95% confidence interval −0.03 and 1.42, p-value 0.11). Interestingly, there was no difference in maximal bacterial counts for R. intestinalis L1-82 alone versus R. intestinalis L1-82 grown with F. prausnitzii A2-165 in bi-cultures or in tri-cultures with R. intestinalis L1-82 dominance (unpaired two-sided Wilcoxon: shift 0.07, 95% confidence interval −0.39 and 0.31, p-value 0.69), so that formally, their relationship could be described as amensalism (one organism is affected negatively whereas the other is not affected). Finally, according to the maximal bacterial counts, B. hydrogenotrophica S5a33 benefited more from the presence of F. prausnitzii A2-165 than from that of R. intestinalis L1-82 (unpaired two-sided Wilcoxon: shift 0.29, 95% confidence interval 0.06 and 0.93, p-value 0.008).
 
-## Model needs bi-culture data to predict tri-culture dynamics accurately
+### Model needs bi-culture data to predict tri-culture dynamics accurately
 
 When growing all three gut bacterial strains together, fructose was consumed and butyrate, acetate, carbon dioxide, hydrogen gas and lactate were produced. Formate was produced initially, peaked between 10 and 15 hr and was below the detection limit after 18 hr of fermentation (Figure 3I and J). We performed the tri-culture six times with varying species proportions in the inoculum and found that in all tri-cultures, B. hydrogenotrophica S5a33 was always dominant, together with either R. intestinalis L1-82 or F. prausnitzii A2-165 as co-dominant partner. In two out of the six cases, R. intestinalis L1-82 was co-dominant, whereas F. prausnitzii A2-165 was co-dominant in the remaining four. The result mattered for the final butyrate concentrations, which averaged 37.5 mM when R. intestinalis L1-82 won and 23.5 mM when F. prausnitzii A2-165 won.
 
 We attempted to describe tri-culture dynamics with the model parameterized on monocultures, but failed to obtain a good fit (see Table 1 and Figure 4—figure supplements 2 and 3). After a series of tests, we concluded that incorporating bi-culture data was necessary to describe tri-culture dynamics. We finally selected two F. prausnitzii A2-165 monocultures and the R. intestinalis L1-82/B. hydrogenotrophica S5a33 and F. prausnitzii A2-165/B. hydrogenotrophica S5a33 bi-cultures with initial acetate to parameterize our model. As a validation, we predicted the behavior of R. intestinalis L1-82/B. hydrogenotrophica S5a33 and F. prausnitzii A2-165/B. hydrogenotrophica S5a33 bi-cultures without initial acetate, which resulted in a good fit (Figure 5G and H, Figure 5—figure supplement 2). The model parameterized on mono- and bi-cultures fitted the tri-culture data better than the model parameterized on monocultures only (Table 1, Figure 4I and J, Figure 5I and J, Figure 4—figure supplement 3 and Figure 5—figure supplement 3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig5-v3.jpg)
+
+**Figure 5.:** (A–C) Fit to selected monoculture experiments. (D–F) Fit to selected co-culture experiments with initial acetate (D and F were included in parameterization). (G–H) Fit to selected co-culture experiments without initial acetate, which were not part of the parameterization. (I–J) Fit to tri-cultures dominated by Roseburia intestinalis L1-82 (RI) and Blautia hydrogenotrophica S5a33 (BH) versus Faecalibacterium prausnitzii A2-165 (FP) and BH, respectively. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. Transparent points indicate declining cell numbers; corresponding samples were not taken into account for model fitting. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments FP_4, FP_15, FP_BH_1, FP_BH_2 and RI_BH_4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Fit to Roseburia intestinalis L1-82 (RI) monoculture experiments. (D–F) Fit to Faecalibacterium prausnitzii A2-165 (FP) monoculture experiments. (G–I) Fit to Blautia hydrogenotrophica S5a33 (BH) monoculture experiments. Lines represent model predictions and dots represent observations. The whiskers represent technical variation across triplicates. The shaded regions indicate the length of the estimated strain-specific lag phases. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments FP_4, FP_15, FP_BH_1, FP_BH_2 and RI_BH_4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Fit to Roseburia intestinalis L1-82 (RI) and Faecalibacterium prausnitzii A2-165 (FP) bi-culture experiments. (C–F) Fit to Roseburia intestinalis L1-82 and Blautia hydrogenotrophica S5a33 (BH) bi-culture experiments. (G–I) Fit to FP and BH bi-culture experiments. Lines represent model predictions and dots represent observations. The shaded regions indicate the length of the estimated strain-specific lag phases. The whiskers represent technical variation across triplicates. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments FP_4, FP_15, FP_BH_1, FP_BH_2 and RI_BH_4.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A–B) Fit to tri-culture experiments dominated by Roseburia intestinalis L1-82 (RI) and Blautia hydrogenotrophica S5a33 (BH). (C–F) Fit to tri-culture experiments dominated by Faecalibacterium prausnitzii A2-165 (FP) and BH. Lines represent model predictions and dots represent observations. The shaded regions indicate the length of the estimated strain-specific lag phases. The whiskers represent technical variation across triplicates. The unknown compound represents an unspecified co-substrate assumed to be required by FP. Metabolites not included in the model are omitted from the plot. Experiment identifiers indicate which of the biological replicates is displayed. The model was parameterized on experiments FP_4, FP_15, FP_BH_1, FP_BH_2 and RI_BH_4.
+
 When inspecting the differences between the two parameterizations, we found that the model parameterized on monocultures predicted lower abundances for all three species in bi- and tri-cultures than they actually reached (Figure 4D–J, Figure 4—figure supplements 2 and 3). Vice versa, the model parameterized on mono- and bi-cultures predicted too high abundances for R. intestinalis L1-82 and B. hydrogenotrophica S5a33 in monoculture (Figure 5A and C, Figure 5—figure supplement 1; the F. prausnitzii A2-165 monoculture was included in the parameterization). According to the difference in maximal tri-culture cell counts predicted with the two parameterizations, B. hydrogenotrophica S5a33 did significantly better in tri-culture than expected on the basis of its monoculture growth (unpaired two-sided Wilcoxon: shift 83, 95% confidence interval 30–92, p-value: 0.002).
 
 The fact that a single model parameterization could not describe well both mono- and tri-culture dynamics is a sign of emergent behavior in the presence of interaction partners. When looking at the parameters inferred from mono- and bi-cultures (given in Supplementary file 2), B. hydrogenotrophica S5a33's consumption rates for formate and fructose and R. intestinalis L1-82's consumption rate for fructose were lower than their values obtained from mono-culture parameterization, whereas their maximal growth rates were not much affected (B. hydrogenotrophica S5a33) or increased (R. intestinalis L1-82). Thus, according to this analysis, less of the energy source is needed in the presence of an interaction partner than in monoculture.
 
-## Initial abundance and lag phase predict strain dominance in tri-culture
+### Initial abundance and lag phase predict strain dominance in tri-culture
 
 Next, we tested whether dominance in tri-culture could be predicted from lag phase and initial abundance. Towards this aim, we computed the F. prausnitzii A2-165/R. intestinalis L1-82 ratio in simulations with varying lag phase and initial abundance. Experimental observations of dominance agreed well with the model predictions (Figure 6A and D). Our systematic investigation also showed that there was a non-linear relationship between initial F. prausnitzii A2-165 abundance and R. intestinalis L1-82 dominance (Figure 6F). Thus, even when initial abundances, lag phases and species interactions were known, it is hard to predict the winner (and hence the resulting butyrate concentration) intuitively without a model in hand. The final abundances of the three strains in simulations were also non-linearly dependent on other parameters, including B. hydrogenotrophica S5a33's growth rate, its fructose consumption rate and its fructose half-saturation constant (Figure 6—figure supplement 1). These results underline that, in addition to kinetic parameters, initial conditions and lag phase can determine strain abundances in co-culture in a non-linear way.
 
-## Altered gene expression in response to interaction partners provides first insights into emergent behavior
+![Figure 6.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig6-v3.jpg)
+
+**Figure 6.:** (A) The tri-culture dynamics is simulated with different lag-phase values for Faecalibacterium prausnitzii A2-165 (FP) and Roseburia intestinalis L1-82 (RI) and the resulting end point abundance ratio of FP and RI is plotted in a heat map that is colored in blue for FP dominance and in red for RI dominance. The observed tri-culture data (black circles) are plotted according to the estimated experimental lag phases for RI and FP. The predicted RI or FP dominance agrees with the observed dominance in all six cases. (B, C) Simulations illustrate the dependency of the end point abundances (Xi(te)) of the three strains on the lag phase of RI and FP. (D) The tri-culture dynamics is simulated for varying initial abundances (init. abund.) of FP and RI and their resulting end point abundance ratio is visualized in a heat map. Three of the four FP-dominated experiments (13–15) and both RI-dominated experiments (10 and 11) are situated within their predicted region of dominance. (E, F) The end point abundance Xi(te) of the three strains is non-linearly dependent on the initial abundance of RI and FP in simulations, illustrating that dominance in batch is sensitive to initial conditions. All simulations were carried out with the model parameterized on mono- and bi-culture data (parameterization 2). Initial abundances are plotted in logarithmic scale. For the simulations in (A–C), the initial abundances of RI, FP and Blautia hydrogenotrophica S5a33 (BH) were set to 0.58, 0.04 and 0.21 108 counts/mL, respectively, whereas for the simulations in (D–F), the lag phase for RI, FP and BH were set to 0.33, 0.08 and 0.1 h, respectively. These initial abundance and lag-phase values represent the averages of observed initial abundances and estimated lag phases across all tri-culture experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37090/elife-37090-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** The abundance of Roseburia intestinalis L1-82 (RI), Faecalibacterium prausnitzii A2-165 (FP) and Blautia hydrogenotrophica S5a33 (BH) at the final time point is plotted, depending on the values of the maximal specific growth rate μ (A–C), the fructose half-saturation constant K (D–F) and the fructose uptake rate v (G–I).
+
+### Altered gene expression in response to interaction partners provides first insights into emergent behavior
 
 To further investigate the emergent behavior, we sequenced RNA for three time points and two biological replicates for each of the three monocultures and for the tri-culture with F. prausnitzii A2-165 co-dominance, and assessed significantly differential gene expression across all samples in mono- versus tri-cultures for all three strains (Supplementary file 3). In total, 9.3%, 10.9% and 7.0% of R. intestinalis L1-82's, F. prausnitzii A2-165's and B. hydrogenotrophica S5a33's protein-coding genes were significantly differentially expressed (protein numbers taken from UniProt; The UniProt Consortium, 2017).
 
@@ -143,25 +443,140 @@ Although our work highlighted a number of challenges to microbial community mode
 
 ## Materials and methods
 
-## Microorganisms and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Roseburia intestinalis), strain background (human feces)</td>
+      <td>Roseburia  intestinalis L1-82</td>
+      <td>Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ)</td>
+      <td>DSM_14610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Faecalibacterium prausnitzii), strain background (human feces)</td>
+      <td>Faecalibacterium prausnitzii A2-165</td>
+      <td>Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ)</td>
+      <td>DSM_17677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Blautia hydrogenotrophica), strain background (human feces)</td>
+      <td>Blautia hydrogenotrophica S5a33</td>
+      <td>Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ)</td>
+      <td>DSM_10507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan primer and probe for Roseburia intestinalis L1-82</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences provided in Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TaqMan primer and probe for Faecalibacterium prausnitzii A2-165</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences provided in Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>TaqMan primer and probe for Blautia  hydrogenotrophica S5a33</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequences provided in Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phenol-Free Total RNA Purification Kit</td>
+      <td>VWR International</td>
+      <td>N788-KIT</td>
+      <td>Coupled with DNase I treatment</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TURBO DNA-free KitTURBO DNase Treatment and Removal Reagents</td>
+      <td>Ambion (ThermoFisher Scientific)</td>
+      <td>AM1907</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator (RCC)−25 Kit</td>
+      <td>Zymo Research</td>
+      <td>R1017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA 6000 Pico Kit</td>
+      <td>Agilent Technologies</td>
+      <td>5067–1513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA 6000 Nano Kit</td>
+      <td>Agilent Technologies</td>
+      <td>5067–1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ribozero rRNA removal for Gram-positive bacteria</td>
+      <td>Illumina</td>
+      <td>MRZGP126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina TruSeq stranded mRNA library preparation kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2101</td>
+      <td>Library preparation was performed without the mRNA purification step</td>
+    </tr>
+  </tbody>
+</table>
+
+### Microorganisms and media
 
 Human isolates of Roseburia intestinalis A2-165 (DSM 14610T), Faecalibacterium prausnitzii L1-82 (DSM 17677T) and Blautia hydrogenotrophica S5a33 (DSM 10507T) were obtained from the Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ, Germany) and stored at −80°C in reinforced clostridial medium (RCM; Oxoid Ltd., Basingstoke, United Kingdom), supplemented with 25% (vol/vol) glycerol as a cryoprotectant.
 
 A recently published medium for colon bacteria (mMCB) that allows growth of F. prausnitzii A2-165 (Moens et al., 2016) was modified by adding nitrogen sources and trace elements as detailed below. This medium had the following composition (concentrations in g L−1): bacteriological peptone (Oxoid), 6.5; soy peptone (Oxoid), 5.0; yeast extract (VWR International, Darmstadt, Germany), 3.0; tryptone (Oxoid), 2.5; NaCl (VWR International), 1.5; K2HPO4 (Merck, Darmstadt, Germany), 1.0; KH2PO4 (Merck), 1.0; Na2SO4 (VWR International), 2.0; MgSO4·7H2O (Merck), 1.0; CaCl2·2H2O (Merck), 0.1; NH4Cl (Merck), 1.0; cysteine-HCl (Merck), 0.4; NaHCO3 (VWR International), 0.2; MnSO4·H2O (VWR International), 0.05; FeSO4·7H2O (Merck), 0.005; ZnSO4·7H2O (VWR International), 0.005; hemin (Sigma-Aldrich, Steinheim, Germany), 0.005; menadione (Sigma-Aldrich), 0.005; and resazurin (Sigma-Aldrich), 0.001. The medium was supplemented with 1 mL L−1 of selenite and tungstate solution (NaOH (Merck), 0.5; Na2SeO3·5H2O (Merck), 0.003; Na2WO4·2H2O (Merck), 0.004 and 1 L of distilled water) and 1 mL L−1 of trace element solution SL-10 (HCl (Merck, 25%, vol/vol; 7.7 M), FeCl2·4 H20 (Merck), 1.5; ZnSO4·7H2O (VWR International), 0.148; MnSO4·H2O (VWR International), 0.085; H3BO3 (Merck), 0.006; CoCl2·6 H20 (Merck), 0.19; CuSO4·5 H20 (VWR International), 0.0034; NiCl2·6 H20 (Merck), 0.024; and Na2MoO4·2 H20 (Merck), 0.036). Acetate (50 mM or 6.8 g L−1 of CH3COO−Na+3H2O (Merck)) was added to the medium for the mono-culture fermentations with R. intestinalis L1-82 and F. prausnitzii A2-165, whereas formate (50 mM or 3.4 g L−1 of HCOO−Na+ (VWR International)) was added to the medium for the mono-culture fermentations with B. hydrogenotrophica S5a33. The pH of the medium was adjusted to 6.8 and the medium was autoclaved at 210 kPa and 121°C for 20 min. After sterilization, D-fructose (Merck) was added as the sole energy source aseptically, at a final concentration of 50 mM fructose using sterile stock solutions obtained through membrane filtration using Minisart filters (pore size, 0.2 μm (Sartorius, Göttingen, Germany)).
 
-## Cultivation experiments in stationary bottles
+### Cultivation experiments in stationary bottles
 
 Mono-culture cultivation experiments for B. hydrogenotrophica S5a33 were performed in stationary glass bottles without controlling the pH (screening). The bottles contained 50 mL of heat-sterilized pH 6.8 mMCB medium, supplemented with 50 mM of D-fructose (Merck), D-glucose (Merck), D-galactose (Merck), L-fucose (Merck), sodium formate (VWR International), sodium acetate trihydrate (Merck), DL lactic acid (VWR International), oligofructose (Raftilose P95; Beneo-Orafti NV, Tienen, Belgium) or inulin (OraftiHP; Beneo-Orafti) as energy sources (Falony et al., 2009b). Additional cultivation experiments were performed in medium devoid of any main energy source to test autotrophic growth. For the cultivation experiments in bottles, stock solutions of fructose, glucose, galactose, fucose, sodium formate, sodium acetate trihydrate, and lactic acid were initially made anaerobically through autoclaving at 210 kPa and 121°C for 20 min. The solutions were subsequently filter-sterilized and transferred into glass bottles, which were sealed with butyl rubber septa that were pierced with a Sterican needle (VWR International) connected with a Millex-GP filter (Merck) to assure sterile conditions. For the cultivation experiments with lactate, the pH was adjusted to 6.8 under anaerobic conditions, using sterile solutions of sodium hydroxide (Merck). Stock solutions of oligofructose and inulin were made sterile by membrane filtration. The inocula were prepared as follows. Cells of the strains under study were transferred from −80°C to test tubes containing 10 mL of RCM that were incubated anaerobically at 37°C for 24 hr. Subsequently, the strains were propagated for 12 hr in glass bottles containing 50 mL of heat-sterilized pH 6.8 mMCB medium, supplemented with the energy source under study, always at a final concentration of 50 mM of fructose equivalents. These pre-cultures were finally added to the glass bottles aseptically. During the inoculum build-up, the transferred volume was always 5% (vol/vol). All bottles were incubated anaerobically at 37°C in a modular atmosphere-controlled system (MG anaerobic work station; Don Withley Scientific Ltd., West Yorkshire, United Kingdom) that was continuously sparged with a mixture of 80% N2, 10% CO2, and 10% H2 (Air Liquide, Paris, France). Samples for further analyses were withdrawn after 0, 6, 12, 24, 48, and 100 hr. All experiments were performed at least in duplicate.
 
-## Fermentation experiments
+### Fermentation experiments
 
 To prepare inocula, cells were transferred from −80°C to test tubes containing 10 mL of RCM, and incubated at 37°C for 24 hr. Subsequently, the strains were propagated twice for 12 hr in glass bottles containing 100 mL of mMCB medium (with acetate in the case of R. intestinalis L1-82 and F. prausnitzii A2-165, and with formate in the case of B. hydrogenotrophica S5a33), supplemented with fructose. All incubations were performed anaerobically in a modular atmosphere-controlled system (MG anaerobic workstation) that was continuously sparged with a mixture of 80% N2, 10% CO2, and 10% H2 (Air Liquide). The inocula were finally added aseptically to the fermentors. During the inoculum build-up, the transferred volume was always 5% (vol/vol). Fermentations were carried out in 2 L Biostat B-DCU fermentors (Sartorius) containing 1.5 L of mMCB medium supplemented with the co-substrates (acetate and/or formate) if necessary and 50 mM of D-fructose as the energy source. Anaerobic conditions during fermentations were assured by continuously sparging the medium with N2 (PraxAir, Schoten, Belgium) at a flow rate of 70 mL min−1. The fermentation temperature was kept constant at 37°C. A constant pH of 6.8 was imposed and controlled automatically, using 1.5 M solutions of NaOH and H3PO4. To keep the medium homogeneous, a gentle stirring of 200 rpm was applied. Temperature, pH, and agitation speed were controlled online (MFCS/win 2.1 software, Sartorius). Fermentations were followed for 48 hr, with samples taken at 10 min and 2 hr, 3 hr, 5 hr, 6 hr, 7 hr, 9 hr, 10 hr, 11 hr, 13 hr, 14 hr, 15 hr, 17 hr, 18 hr, 24 hr, 30 hr and 48 hr after inoculation. At selected time points (3 hr, 9 hr and 15 hr after inoculation), subsamples were treated for RNA extraction by adding 5 vol of RNAlater (Thermo Fisher Scientific). All mono- and tri-culture fermentations were performed in triplicate. All bi-culture fermentations were performed in duplicate, except for the bi-culture fermentation using medium lacking acetate with F. prausnitzii A2-165 and B. hydrogenotrophica S5a33, which was performed only once.
 
-## Addition of vitamin B12 to F. prausnitzii A2-165
+### Addition of vitamin B12 to F. prausnitzii A2-165
 
 F. prausnitzii A2-165 was grown in test tubes containing 10 mL of RCM each. Then 10, 50 and 100 μL of filter-sterilized (0.22 μm, Merck Millipore) 0.1 g/L vitamin B12 solution (Sigma-Aldrich) was added to reach a final concentration of 0.1, 0.5 and 1 mg/L, respectively, in the test tubes. For each of the three concentrations as well as for the control (without added B12), bacterial abundance was followed in three test tubes. Samples were taken after 24 hr and 48 hr and cell counts were obtained via flow cytometry as described below.
 
-## Quantification of bacterial abundance
+### Quantification of bacterial abundance
 
 During all experiments, the optical density at 600 nm (OD600) was measured against ultrapure water as blank with a VIS spectrophotometer (Genesys 20; Thermo Scientific, Waltham, MA, USA). Each measurement was performed in triplicate. Total bacterial abundance was also measured by flow cytometry, using an Accuri C6 flow cytometer (BD Biosciences, Erembodegem, Belgium), as described previously (Moens et al., 2016). All samples were diluted in filter-sterilized water (Vittel, France) to obtain a concentration between 1.0 × 103 and 5.0 × 106 cells mL−1. Flow cytometric analysis was performed by mixing 500 μL of sample with 5 μL of a 100 × SYBR Green I solution (Sigma-Aldrich) and 5 μL of a 500 mM ethylenediaminetetra acetic acid (EDTA) solution (Sigma-Aldrich). Afterwards, samples were left in the dark at room temperature for 15 min. Flow cytometric counts were obtained using an Accuri C6 flow cytometer (BD Biosciences), equipped with a 50 mW solid state laser (488 nm). Green fluorescence was measured in the FL1 channel (530 ± 15 nm) and all data were processed with the Cflow Plus software (Accuri). Gating was performed to distinguish signals from noise. All data were collected as a FL1/SSC density plot with a primary threshold of 10,000 on the FL1 channel. Measurements were performed in triplicate.
 
@@ -173,7 +588,7 @@ Primers and oligoprobes (listed in Supplementary file 5) were manually designed 
 
 Contamination was checked by aerobic and anaerobic plating on RCM agar and 16S rRNA gene amplicon sequencing of end point fermentation samples (48 hr). Sequencing was performed as described previously (D’hoe et al., 2018).
 
-## Metabolite profiling
+### Metabolite profiling
 
 Concentrations of fructose, as well as concentrations of formate, acetate, butyrate, lactate and ethanol, were determined through high-performance liquid chromatography (HPLC) with refractive index detection, using a Waters chromatograph (Waters, Milford, MA, USA) equipped with an ICSep ICE ORH-801 column (Transgenomic North America, Omaha, NE, USA), and applying external standards, as described previously (Falony et al., 2009b). Briefly, the mobile phase consisted of 5 mM H2SO4 at a flow rate of 0.4 mL min−1. The column temperature was kept constant at 35°C. Sample preparation involved a first centrifugation (4618 x g for 20 min at 10°C) for removal of cells and debris, followed by the addition of an equal volume of 20% (mass/vol) trichloroacetic acid for protein removal. For determining oligofructose and inulin consumption, samples were incubated at room temperature for 24 hr to assure complete hydrolysis of the polysaccharides. Subsequently, the samples were centrifuged (21,912 x g, 20 min, 4°C) and filtered (pore size of 0.2 μm; Uniflo 13 Filter Unit; GE Healthcare, Little Chalfont, UK), prior to injection (30 μL) into the column. Samples were analyzed in triplicate.
 
@@ -181,21 +596,71 @@ Concentrations of hydrogen gas and carbon dioxide in the fermentor gas effluents
 
 For an additional screening experiment with B. hydrogenotrophica S5a33 grown in the presence of 350 mM formate, the concentrations of ethanol, acetoin, acetic acid, propionic acid, butyric acid, isobutyric acid and isovaleric acid produced were determined by gas chromatography with flame ionization detection (GC-FID), using a FocusGC chromatograph (Interscience) equipped with a Stabilwax-DA column (Restek, Bellefonte, PA, USA), and applying external standards, as described previously (Moens et al., 2014). The samples were analyzed in triplicate.
 
-## Model definition
+### Model definition
 
-We modeled change of species abundances over time with the following three ordinary differential equations:dXRIdt=ΦRI(QRI,Sfructose,Sacetate)XRIdXFPdt=ΦFP(QFP,Sunknown,Sfructose,Sacetate)XFPdXBHdt=ΦBH(QBH,Sfructose,Sformate)XBHwhere X denotes species abundance, S metabolite concentration and Q a lag phase parameter. The growth rates are then defined as non-linear growth functions as described by Grivet (2001) and Smith and Waltman (1995), and assuming Monod kinetics (Monod, 1950):ΦRI(QRI,Sfructose,Sacetate)=ΓRI(QRI)μRISfructoseKRI−fructose+Sfructose⟮1+ωRISacetateKRI−acetate+Sacetate⟯ΦFP(QFP,Sunknown,Sfructose,Sacetate)=ΓFP(QFP)μFPSunknownKFP−unknown+SunknownSfructoseKFP−fructose+ Sfructose⟮1+ωFPSacetateKFP−acetate+Sacetate⟯ΦBH(QBH,Sfructose,Sformate)=ΓBH(QBH)μBH⟮SfructoseKBH−fructose+Sfructose+ωBHSformateKBH−formate+Sformate⟯where K is the Monod (half-saturation) constant, μ is the maximal specific growth rate and ω a weight parameter. Nutrient dependency can be either obligatory (growth without nutrient is not possible) or facultative (growth without nutrient is possible). For instance, the fructose uptake is multiplied with R. intestinalis L1-82's maximal growth rate, whereas its acetate uptake is modeled with an additive term. Therefore, in the absence of fructose, R. intestinalis L1-82's growth rate is zero, but this is not the case when acetate is absent. The weight parameter adjusts how strongly a facultative substrate contributes to the overall growth rate. The unknown compound models the dependency of F. prausnitzii A2-165 on an undetermined co-factor.
+We modeled change of species abundances over time with the following three ordinary differential equations:
+
+$$
+\frac{dX_{RI}}{dt}=Φ_{RI}(Q_{RI},S_{fructose},S_{acetate})X_{RI}
+$$
+
+
+
+$$
+\frac{dX_{FP}}{dt}=Φ_{FP}(Q_{FP},S_{unknown},S_{fructose},S_{acetate})X_{FP}
+$$
+
+
+
+$$
+\frac{dX_{BH}}{dt}=Φ_{BH}(Q_{BH},S_{fructose},S_{formate})X_{BH}
+$$
+
+where X denotes species abundance, S metabolite concentration and Q a lag phase parameter. The growth rates are then defined as non-linear growth functions as described by Grivet (2001) and Smith and Waltman (1995), and assuming Monod kinetics (Monod, 1950):
+
+$$
+Φ_{RI}(Q_{RI},S_{fructose},S_{acetate})=Γ_{RI}(Q_{RI})\mu_{RI}\frac{S_{fructose}}{K_{RI_{−}fructose}+S_{fructose}}⟮1+\omega_{RI}\frac{S_{acetate}}{K_{RI_{−}acetate}+S_{acetate}}⟯
+$$
+
+
+
+$$
+Φ_{FP}(Q_{FP},S_{unknown},S_{fructose},S_{acetate})=Γ_{FP}(Q_{FP})\mu_{FP}\frac{S_{unknown}}{K_{FP_{−}unknown}+S_{unknown}}\frac{S_{fructose}}{K_{FP_{−}fructose}+ S_{fructose}}⟮1+\omega_{FP}\frac{S_{acetate}}{K_{FP_{−}acetate}+S_{acetate}}⟯
+$$
+
+
+
+$$
+Φ_{BH}(Q_{BH},S_{fructose},S_{formate})=Γ_{BH}(Q_{BH})\mu_{BH}⟮\frac{S_{fructose}}{K_{BH_{−}fructose}+S_{fructose}}+\omega_{BH}\frac{S_{formate}}{K_{BH_{−}formate}+S_{formate}}⟯
+$$
+
+where K is the Monod (half-saturation) constant, μ is the maximal specific growth rate and ω a weight parameter. Nutrient dependency can be either obligatory (growth without nutrient is not possible) or facultative (growth without nutrient is possible). For instance, the fructose uptake is multiplied with R. intestinalis L1-82's maximal growth rate, whereas its acetate uptake is modeled with an additive term. Therefore, in the absence of fructose, R. intestinalis L1-82's growth rate is zero, but this is not the case when acetate is absent. The weight parameter adjusts how strongly a facultative substrate contributes to the overall growth rate. The unknown compound models the dependency of F. prausnitzii A2-165 on an undetermined co-factor.
 
 The lag phase function is defined as in Baranyi and Roberts (1994):
 
-Γi(Qi)=Qi1+Qi,
+$Γ_{i}(Q_{i})=\frac{Q_{i}}{1+Q_{i}}$,
 
 where i stands for R. intestinalis L1-82, F. prausnitzii A2-165 or B. hydrogenotrophica S5a33.
 
-The Qi variables follow exponential growth:dQidt=μiQi
+The Qi variables follow exponential growth:
+
+$$
+\frac{dQ_{i}}{dt}=\mu_{i}Q_{i}
+$$
 
 Thus, the larger the initial value of Qi, the shorter the lag phase.
 
-The changes of metabolite concentrations are then modeled as follows:dSfructosedt=−νRI,fructoseΦRIXRI−νFP,fructoseΦFPXFP−νBH,fructoseΦBH,fructoseXBHdSformatedt=αRI,formateΦRIXRI+αFP,formateΦFPXFP−νBH,formateΦBH,formateXBHdSacetatedt=−νRI,acetateΦRI,acetateXRI−νFP,acetateΦFP,acetateXFP+αBH,acetateΦBHXBHdSbutyratedt=αRI,butyrateΦRIXRI+αFP,butyrateΦFPXFPdSunknowndt=−νFP,unknownΦFPXFPdSH2dt=αRI,H2ΦRIXRI+αRI,H2ΦBHXBHdSCO2dt=αRI,CO2ΦRIXRI+αFP,CO2ΦFPXFP+αBH,CO2ΦBHXBHΦRI,acetate=ΓRI(QRI)μRIwRISfructoseKRI,fructose+SfructoseSacetateKRI,acetate+SacetateΦFP,acetate=ΓFP(QFP)μFPwFPSunknownKFP,unknown+SunknownSacetateKFP,fructose+SfructoseSacetateKFP,acetate+SacetateΦBH,fructose=ΓBH(QBH)μBHSfructoseKBH,fructose+SfructoseΦBH,fructose=ΓBH(QBH)μBHwBHSformateKBH,formate+Sformate
+The changes of metabolite concentrations are then modeled as follows:
+
+$$
+\frac{dS_{fructose}}{dt}=−ν_{RI,fructose}Φ_{RI}X_{RI}−ν_{FP,fructose}Φ_{FP}X_{FP}−ν_{BH,fructose}Φ_{BH,fructose}X_{BH}\frac{dS_{formate}}{dt}=\alpha_{RI,formate}Φ_{RI}X_{RI}+\alpha_{FP,formate}Φ_{FP}X_{FP}−ν_{BH,formate}Φ_{BH,formate}X_{BH}\frac{dS_{acetate}}{dt}=−ν_{RI,acetate}Φ_{RI,acetate}X_{RI}−ν_{FP,acetate}Φ_{FP,acetate}X_{FP}+\alpha_{BH,acetate}Φ_{BH}X_{BH}\frac{dS_{butyrate}}{dt}=\alpha_{RI,butyrate}Φ_{RI}X_{RI}+\alpha_{FP,butyrate}Φ_{FP}X_{FP}\frac{dS_{unknown}}{dt}=−ν_{FP,unknown}Φ_{FP}X_{FP}\frac{dS_{H_{2}}}{dt}=\alpha_{RI,H_{2}}Φ_{RI}X_{RI}+\alpha_{RI,H_{2}}Φ_{BH}X_{BH}\frac{dS_{CO_{2}}}{dt}=\alpha_{RI,CO_{2}}Φ_{RI}X_{RI}+\alpha_{FP,CO_{2}}Φ_{FP}X_{FP}+\alpha_{BH,CO_{2}}Φ_{BH}X_{BH}
+$$
+
+
+
+$$
+Φ_{RI,acetate}=Γ_{RI}(Q_{RI})\mu_{RI}w_{RI}\frac{S_{fructose}}{K_{RI,fructose}+S_{fructose}}\frac{S_{acetate}}{K_{RI,acetate}+S_{acetate}}Φ_{FP,acetate}=Γ_{FP}(Q_{FP})\mu_{FP}w_{FP}\frac{S_{unknown}}{K_{FP,unknown}+S_{unknown}}\frac{S_{acetate}}{K_{FP,fructose}+S_{fructose}}\frac{S_{acetate}}{K_{FP,acetate}+S_{acetate}}Φ_{BH,fructose}=Γ_{BH}(Q_{BH})\mu_{BH}\frac{S_{fructose}}{K_{BH,fructose}+S_{fructose}}Φ_{BH,fructose}=Γ_{BH}(Q_{BH})\mu_{BH}w_{BH}\frac{S_{formate}}{K_{BH,formate}+S_{formate}}
+$$
 
 The α and ν parameters are production and consumption rates, respectively.
 
@@ -207,15 +672,19 @@ Carbon dioxide and hydrogen gas consumption by B. hydrogenotrophica S5a33 is not
 
 The model definition is available as Source code 1 in Python (Model definition).
 
-## Model parameterization
+### Model parameterization
 
 We parameterized our model on monocultures alone (parameterization 1) and then on mono- and bi-cultures (parameterization 2). The model was fitted using the function fmin() from the scipy Python package (Jones et al., 2001), to minimize the normalized root mean square error (RMSE). During fitting, the biological replicate(s) of a mono- or bi-culture that gave the best overall fit were selected by trial and error.
 
-An initial estimate of the parameters was obtained by manually fitting the data iteratively. The initial concentration of the unknown compound was set to 30 mM. Samples taken after the end of the log phase, when the bacterial counts started to decline, were omitted from the fitting. Parameterization 2 consisted of several steps, as fitting all parameters at once did not lead to convergence, because of the nonlinear growth rates. First, parameters for F. prausnitzii A2-165 were obtained from two F. prausnitzii A2-165 monocultures. The consumption parameters of B. hydrogenotrophica S5a33 were obtained from F. prausnitzii A2-165/B. hydrogenotrophica S5a33 bi-cultures with initial acetate; afterwards, the maximal specific growth rates and half-saturation (Monod) constants were obtained from the same bi-cultures. The parameters for R. intestinalis L1-82 were obtained from a R. intestinalis L1-82/B. hydrogenotrophica S5a33 bi-culture with acetate. Lag phases were calculated as the time to reach Γi(Qi)=0.5:lagphase=−ln⁡(Qi(0))/μi
+An initial estimate of the parameters was obtained by manually fitting the data iteratively. The initial concentration of the unknown compound was set to 30 mM. Samples taken after the end of the log phase, when the bacterial counts started to decline, were omitted from the fitting. Parameterization 2 consisted of several steps, as fitting all parameters at once did not lead to convergence, because of the nonlinear growth rates. First, parameters for F. prausnitzii A2-165 were obtained from two F. prausnitzii A2-165 monocultures. The consumption parameters of B. hydrogenotrophica S5a33 were obtained from F. prausnitzii A2-165/B. hydrogenotrophica S5a33 bi-cultures with initial acetate; afterwards, the maximal specific growth rates and half-saturation (Monod) constants were obtained from the same bi-cultures. The parameters for R. intestinalis L1-82 were obtained from a R. intestinalis L1-82/B. hydrogenotrophica S5a33 bi-culture with acetate. Lag phases were calculated as the time to reach $Γ_{i}(Q_{i})=0.5$:
 
-Qi(0) was estimated by visual inspection of the log plots. Model parameters obtained and maximal abundances predicted with both parameterizations as well as estimated lag phases and experiment-specific RMSE values are provided in Supplementary file 2. Data and model fits were plotted with Python's matplotlib (Hunter, 2007).
+$$
+lagphase=−ln⁡(Q_{i}(0))/\mu_{i}
+$$
 
-## RNA extraction and sequencing
+$Q_{i}(0)$ was estimated by visual inspection of the log plots. Model parameters obtained and maximal abundances predicted with both parameterizations as well as estimated lag phases and experiment-specific RMSE values are provided in Supplementary file 2. Data and model fits were plotted with Python's matplotlib (Hunter, 2007).
+
+### RNA extraction and sequencing
 
 Total RNA was extracted from RNAlater-treated samples using the phenol-free total RNA purification kit coupled with DNase I treatment (VWR International) according to the manufacturer’s protocol for Gram-positive bacteria. A secondary DNAse digestion was performed using the Ambion TURBO DNA-free DNase Treatment and Removal Reagents Kit (Thermo Fisher Scientific), after which the samples were purified using the RNA Clean and Concentrator−25 kit (Zymo Research, Irvine, CA, USA) according to the manufacturer’s instructions.
 
@@ -223,7 +692,7 @@ The eluted RNA was stored at −80°C. The absence of DNA contamination was eval
 
 Library preparation encompassed the use of Ribozero rRNA removal for Gram-positive bacteria and the Illumina TruSeq stranded mRNA Library preparation kit (IIlumina, San Diego, CA, USA). Library preparation was performed without the mRNA purification step, according to the manufacturer’s instructions. The enriched libraries were sequenced on an Illumina NextSeq 500 instrument (paired-end, 2 × 76 bp reads, Mid output kit, Illumina). From the Illumina platform, paired-end reads in FASTQ format (CASAVA 1.8, Phred + 33) were obtained and separated into distinct files for each single-end read and for each sample.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 The analysis of the raw sequencing reads was performed as follows: reads were trimmed using Trimmomatic (Bolger et al., 2014) with the following parameters ‘CROP:74 HEADCROP:10 SLIDINGWINDOW:4:15 MINLEN:51’, to remove initial and last bases which had biases in their nucleotide content as reported by FastQC (Andrews, 2010), to remove stretches of low-quality bases and to keep reads with at least 51 bases after trimming. FastQC was re-run on the trimmed data to ensure that the previous biases were corrected. SortMeRNA (Kopylova et al., 2012) was used with default parameters and included databases to remove rRNA reads.
 
@@ -231,6 +700,6 @@ With the remaining non-rRNA reads, we ran MetaPhlAn2 (Truong et al., 2015) with 
 
 Differential gene expression analysis of the three cultured strains was performed with DESeq2 (Love et al., 2014). To remove the effect of the different bacterial compositions in the tri-culture samples, we extracted the reads from each strain prior to the differential expression analysis and analyzed each strain separately. In the DESeq2 design formula, we included two factors: type of culture (mono- or tri-culture) and time (3 hr, 6 hr and 15 hr). The results of the differential expression analyses were computed using a Wald test of the tri-culture versus the mono-culture samples. For each strain, we extracted the genes whose expression changed significantly (with Benjamini-Hochberg adjusted p-value<0.05) in tri-culture and mapped them to different functional annotations downloaded from the IMG database (Markowitz et al., 2012): COG categories, COG numbers and KO numbers. The RNA-seq data-processing code is available on GitHub (Lloréns-Rico, 2018; copy archived at https://github.com/elifesciences-publications/syntheticGutCommunity).
 
-## Availability of data and code
+### Availability of data and code
 
 RNA-seq results have been deposited in the Short Read Archive under the study identifier SRP136465 (https://www.ncbi.nlm.nih.gov/sra/SRP136465). Fermentation data have been submitted to Dryad (doi:10.5061/dryad.g83f29f). The model definition is provided in Source code 1 (Model definition). The RNA-seq data processing code is provided on GitHub (Lloréns-Rico, 2018; copy archived at https://github.com/elifesciences-publications/syntheticGutCommunity).

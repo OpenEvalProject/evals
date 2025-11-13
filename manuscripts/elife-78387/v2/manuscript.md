@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0488bnd65 Department of Chemical Physiology and Biochemistry, Oregon Health and Science University Portland United States
-2. https://ror.org/00yn2fy02 Portland State University EXITO Scholars Program, Portland State University Portland United States
+1. Department of Chemical Physiology and Biochemistry, Oregon Health and Science University Portland United States ([ROR:0488bnd65](https://ror.org/0488bnd65))
+2. Portland State University EXITO Scholars Program, Portland State University Portland United States ([ROR:00yn2fy02](https://ror.org/00yn2fy02))
 
 † Corresponding author
 
@@ -26,19 +26,35 @@ Sympathetic denervation following myocardial infarction (MI) is well documented 
 
 CSPGs are a diverse family of extracellular matrix proteins modified by chondroitin sulfate (CS) side chains that inhibit nerve regeneration in numerous injury paradigms including MI, spinal cord injury (SCI), and traumatic brain injury (TBI) (Brown et al., 2012; Gardner and Habecker, 2013; Lang et al., 2015; McKeon et al., 1999; Miller and Hsieh-Wilson, 2015; Yi et al., 2012). CSPGs are heterogeneous but all are composed of a core protein that is covalently linked to repeating disaccharide side chains known as glycosaminoglycans (GAGs). While some evidence suggests that the CSPG core protein itself plays a role in regulating axon outgrowth (Dou and Levine, 1994; Ughrin et al., 2003), the primary effect is thought to occur via the post-translational addition of sulfate to GAGs (Mencio et al., 2021; Miller and Hsieh-Wilson, 2015). CS-GAGs in scar tissues bind CSPG receptors like PTPσ (protein tyrosine phosphatase receptor sigma) on regenerating axons (Coles et al., 2011; Shen et al., 2009). CSPG sulfation is attached to specific locations of the CS-GAG by sulfotransferase enzymes, yielding unique structures that differentially affect axon outgrowth. Specifically, 4-sulfation (4S) and 6-sulfation (6S) of N-acetyl-galactosamine are critical regulators of axon outgrowth (Brown et al., 2012; Gilbert et al., 2005; Wang et al., 2008). 4S CS-GAGs are produced by the chondroitin-4-sulfotransferase, CHST11, while 4,6-tandem sulfated GAGs (4S,6S) are produced by a 4S-dependent chondroitin-6-sulfotransferase, CHST15 (Miller and Hsieh-Wilson, 2015). 4S CS-GAGs can also be removed by an endogenously expressed 4-sulfatase, arylsulfatase-B (ARSB) (Figure 1A; Pearson et al., 2018; Wang et al., 2008). Evidence from SCI and TBI indicate that tandem sulfated 4S,6S CS-GAGs potently suppress axon outgrowth (Brown et al., 2012; Gilbert et al., 2005). Removal of all CS-GAGs from cardiac scar tissue by treatment with the enzyme chondroitinase ABC (chABC) restores sympathetic axon outgrowth in vitro (Gardner and Habecker, 2013) but it remains unknown whether CSPG sulfation is critical to inhibit regeneration of peripheral nerves.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig1-v2.jpg)
+
+**Figure 1.:** (A) CSPG sulfation patterning schematic with key enzymes. (B) 4-Sulfation (4S CS-GAGs) or (C) 6-sulfation (6S CS-GAGs) quantification assessed by western blot in the healthy myocardium (unoperated) or cardiac scar 14 days after MI (MI). Quantification of n=6 animals per treatment group, mean optical density (OD) ± SD, Student’s t-test (Welch’s test), 4S ****p-value < 0 .0001, 6S **p-value = 0.003. (D) Example blot images for 4S CS-GAGs, 6S CS-GAGs, and total protein from two unoperated and two MI animals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Western blot quantification of (A) 4-sulfation (4S CS-GAGs). Statistics: one-way ANOVA (Tukey’s post-test), ns – not significant p-value = 0.989, 0.997, 0.955, 0.053 respectively left to right, comparisons to unoperated tissue, n=5 animals per group. (B) Western blot quantification of 6-sulfation (6S CS-GAGs). Statistics: one-way ANOVA (Tukey’s post-test), ns p-value = 0.999, **p-value = 0.001, ****p-value < 0.0001, comparisons to unoperated tissue, n=5 animals per group. (C) Example western blot images of A and B.
+
 Here, we show that 4,6-tandem sulfated CSPGs are enriched in the cardiac scar after MI, and that this sulfation is important for preventing nerve regeneration in the heart. Sulfation-related enzymes are altered in the heart after MI, and reducing sulfation of CS-GAGs by transient siRNA knockdown of Chst15 promotes reinnervation of the cardiac scar. Reinnervation decreases isoproterenol-induced arrhythmias.
 
 ## Results
 
-## 4,6-Sulfation of CS-GAGs increased in the heart after I/R
+### 4,6-Sulfation of CS-GAGs increased in the heart after I/R
 
 To establish whether CSPG sulfation occurs after MI caused by I/R, we used antibodies specific to 4S and 6S CS-GAGs (Yi et al., 2012) to compare CSPG sulfation in mouse unoperated left ventricle to day 14 post-I/R scar tissue. Day 14 represents a time point when scar tissue is relatively stable and sympathetic nerves are excluded from entering the scar. I/R led to increased 4,6-sulfation of CSPGs in the cardiac scar (Figure 1B–D). In contrast, CSPG levels are low in remote myocardium (Gardner and Habecker, 2013), and 4S is not altered after I/R (Figure 1—figure supplement 1).
 
-## Reducing 4S with ARSB promotes sympathetic neurite outgrowth in vitro
+### Reducing 4S with ARSB promotes sympathetic neurite outgrowth in vitro
 
 To test whether 4S of CS-GAGs prevented neurite outgrowth across CSPGs, we enzymatically removed 4S from purified CSPGs using the 4-sulfatase, ARSB. An effective ARSB dose was identified in pilot studies to remove 4S while leaving 6S intact (Figure 2—figure supplement 1). Dissociated sympathetic neurons from neonatal rats were then grown on CSPGs treated with vehicle or ARSB. Sympathetic neurite extension across untreated CSPGs was suppressed 40 hr post-plating compared to laminin alone, while ARSB treatment restored neurite outgrowth in a dose-dependent manner (Figure 2A and B). These results indicate that 4S of CS-GAGs inhibits sympathetic neurite extension.
 
-## Reducing 4S of cardiac scar tissue with ARSB restores sympathetic axon outgrowth ex vivo
+![Figure 2.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig2-v2.jpg)
+
+**Figure 2.:** (A) Example of neurite outgrowth experiment with arylsulfatase-B (ARSB). Data are mean neurite length ± SD at 9 locations per well and 3 wells per condition. (B) Removal of 4-sulfation with ARSB restores neurite outgrowth to control levels. Quantification of dissociated sympathetic neurite length at 40 hr post-plating on indicated plate coatings. Data are mean neurite length ± SD; one-way ANOVA (Dunnett’s post-test). All comparisons made to neurite outgrowth on laminin + CSPG; 0.3 μg/mL ARSB ns – not significant p-value = 0.193, laminin only *p=0.039, 0.6 μg/mL ARSB *p-value = 0.042, n=4 experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot of 4S content using purified chondroitin sulfate proteoglycans (CSPGs) upon treatment of increasing concentrations of ARSB; vehicle, 0.3, 0.6, and 1.2 μg/mL respectively left to right. (B) Western blot of 6S using purified CSPGs upon treatment of increasing concentrations of ARSB; vehicle, 0.3, 0.6, and 1.2 μg/mL respectively left to right. (C) Total protein loaded of purified CSPGs treated with increasing concentrations of ARSB; vehicle, 0.3, 0.6, and 1.2 μg/mL respectively left to right.
+
+### Reducing 4S of cardiac scar tissue with ARSB restores sympathetic axon outgrowth ex vivo
 
 We treated mouse myocardial I/R explants with ARSB to test whether removing 4S from CS-GAGs in cardiac scar tissue could restore sympathetic axon outgrowth in explant co-cultures (Figure 3A). Superior cervical ganglion (SCG) explants from neonatal mice were co-cultured with left ventricle tissue. Although SCG contain a relatively small number of cardiac sympathetic neurons, they provide a well-characterized model for axon outgrowth studies (Gardner and Habecker, 2013). Ganglion explants co-cultured with unoperated left ventricle displayed uniform axon outgrowth in all directions while explants cultured alongside cardiac scar tissue (10–14 days post-I/R) exhibited shorter axons growing in the direction of the scar tissue (Figure 3B–D). Interestingly, ARSB treatment (0.6 µg/mL) of scar tissue fully restored axon outgrowth towards the scar (Figure 3D), while growth away from the scar tissue was normal in all conditions (Figure 3E). ARSB treatment of control explants had no effect on axon outgrowth, suggesting its effects are through altering the cardiac scar rather than the ganglion. Together, these data suggest that reducing 4S of CS-GAGs in the cardiac scar is sufficient to enable sympathetic axon regeneration.
 
@@ -46,7 +62,7 @@ We treated mouse myocardial I/R explants with ARSB to test whether removing 4S f
 
 **Figure 3.:** (A) Explant co-culture schematic. Ganglion axon extension toward (0 degree) and away from (180 degree) myocardium was measured. (B) Example images of superior cervical ganglion (SCG) axon outgrowth in the presence of cardiac scar tissue (Myo) treated with or without arylsulfatase-B (ARSB). Lines show example measurement of axon extension 48 hr after plating. (C) Quantification of ganglion axon outgrowth toward myocardium of either healthy tissue (Unop) or scar tissue (myocardial infarction [MI]) treated with vehicle (5% DMSO) or ARSB (0.6 μg/mL). (D) Quantification of ganglion axon outgrowth away from myocardium of either healthy tissue (Unop) or scar tissue (MI) treated with vehicle (5% DMSO) or ARSB (0.6 μg/mL). Data are mean axon length ± SD. Statistics for C, D: one-way ANOVA (Dunnett’s post-test), comparisons made to vehicle-treated MI tissue; 0 degree quantification ****p<0.0001, 180 degrees quantification ns – not significant p-value = 0.204, 0.467, 0.355 left to right respectively, n=13 control tissue and n=9 MI tissue.
 
-## Expression of CSPG sulfation enzymes is altered after I/R
+### Expression of CSPG sulfation enzymes is altered after I/R
 
 To understand the mechanisms by which CS-GAG sulfation increases after I/R in mice, we examined protein levels of three critical CSPG sulfation enzymes, comparing post-MI expression to unoperated left ventricle. We examined chondroitin-4-sulfotransferase CHST11, 4S-dependent chondroitin-6-sulfotransferase CHST15 (4,6-tandem sulfation enzyme), and 4-sulfatase ARSB (Figure 1A). CHST11 levels decreased significantly within 24 hr, persisting until day 7 (Figure 4A and D), while CHST15 was increased significantly at days 7 and 14 post-MI (Figure 4B and D). ARSB levels decreased significantly by day 3 and remained low through day 14 (Figure 4C and D).
 
@@ -60,9 +76,17 @@ In light of protein changes in CSPG sulfation enzymes after I/R, we examined CS-
 
 **Figure 5.:** Western blot quantification of (A) 4-sulfation (4S CS-GAGs), (B) 6-sulfation (6S CS-GAGs), (C) NG2 core protein, and (D) Galectin-3 in the days after MI. Data are mean optical density (OD) ± SD. Statistics: one-way ANOVA (Dunnett’s post-test), comparisons to unoperated tissue; 4S, 24 hr ns – not significant p-value = 0.804, D3 ns p-value = 0.124, D7 ****p-value < 0.0001, D14 ****p-value < 0.0001; 6S, 24 hr ns p-value = 0.999, D3 ns p-value = 0.905, D7 ***p-value = 0.0001, D14 ***p-value = 0.0003; NG2, 24 hr ns p-value = 0.999, D3 ns p-value = 0.977, D7 *p-value = 0.031, D14 **p-value = 0.007; Galectin-3, 24 hr *p-value = 0.013, D3 ns p-value = 0.172, D7 ns p-value = 0.974, D14 ns p-value = 0.998; n=5 animals per group. (E) Example western blot images of A–D.
 
-## siRNA knockdown of Chst15 reduces 4,6-tandem sulfation of CSPGs and restores sympathetic axons in the cardiac scar after I/R
+### siRNA knockdown of Chst15 reduces 4,6-tandem sulfation of CSPGs and restores sympathetic axons in the cardiac scar after I/R
 
 To determine if CSPG sulfation suppresses sympathetic nerve regeneration after I/R in mice, we decreased 4,6-tandem sulfated CS-GAGs in vivo by reducing the expression of the Chst15 gene using silencing RNA (siRNA). After identifying siRNA that decreased Chst15 mRNA in myoblast-like C2C12 cells (Figure 6—figure supplement 1A,B), we tested the efficacy of our Chst15 siRNA in vivo. Intravenous delivery of 100 µg siChst15 reduced CHST15 protein compared to non-targeting control siRNA (Figure 6—figure supplement 1C). Mice were then treated with 100 µg siChst15 on days 3, 5, and 7 post-MI, leading to a significant reduction in 4S,6S CS-GAGs. Specifically, siChst15 reduced the amount of 6S present 10 days post-MI compared to non-targeting siRNA control (Figure 6A). By 10 days after MI, CHST15 protein levels had returned to normal suggesting that transient knockdown of CHST15 is sufficient to alter 4,6-sulfation of CS-GAGs (Figure 6—figure supplement 1D,E). Interestingly, siChst15 knockdown led to increased NG2 core protein expression compared to non-targeting siRNA control (Figure 6C). The sympathetic neuron marker Tyrosine Hydroxylase (TH) was increased significantly in cardiac scar tissue from siChst15-treated animals compared to non-targeting siRNA control animals (Figure 6D), suggesting successful sympathetic reinnervation of the cardiac scar.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig6-v2.jpg)
+
+**Figure 6.:** Western blot quantification of (A) 6-sulfation (6S CS-GAGs), (B) 4-sulfation (4S CS-GAGs), (C) NG2 core protein, and (D) the sympathetic neuron marker Tyrosine Hydroxylase (TH) in the cardiac scar after transient Chst15 knockdown or treatment with a non-targeting silencing RNA (siRNA) control. Tissue was collected 10 days after myocardial infarction (MI), n=7 animals per group. Data are mean optical density (OD) ± SD. Statistics: Student’s t-test (Welch’s test); 6S, *p-value = 0.028; 4S, ns – not significant p-value = 0.826; NG2, **p-value = 0.004; TH, *p-value = 0.043. (E) Western blot images of A–D.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78387/elife-78387-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) qPCR knockdown of siRNA pool in C2C12 cells in 3 days after knockdown. Data shown fraction of transcript remaining, siChst15-2 was most effective in knockdown of Chst15. This transcript was selected for in vivo studies. (B) Western blot of CHST15 protein knockdown in C2C12 cells to confirm efficacy of siChst15-2, comparison to non-targeting controls. (C) Tail vein injection in mouse to determine ideal dosing for in vivo siChst15 knockdown. Western blot of tail vein injection dosing trial for siChst15 with either 1 or 3 days of injections. CHST15 protein in left ventricle (LV) 48 hr after final tail vein injection, comparison to non-targeting controls, all unoperated (non-myocardial infarction [MI]) animals. (D) Full siRNA CHST15 experimental trial, CHST15 protein expression on D10 post-MI quantified, siRNA injection D3, -5, -7 post-MI, n=7 animals per treatment group. Statistics: Student’s t-test (Welch’s test), ns – not significant p-value = 0.833. (E) Western blot of CHST15 protein expression D10 post-MI in siRNA-treated animals. (F) NE content in the cardiac scar following siRNA treatment. NE was not increased with reinnervation, consistent with previous studies showing suppression of NE synthesis and reuptake by inflammatory cytokines (Parrish et al., 2010). Quantification of n=6 animals for non-targeting controls and Chst15 siRNA treatment. Statistics: Student’s t-test (Welch’s test), ns p-value = 0.345.
 
 To ensure that reinnervation of the cardiac scar occurred after Chst15 knockdown, we examined the infarct (labeled by fibrinogen) for TH-positive sympathetic nerve fibers by immunohistochemistry (IHC). IHC analysis in animals treated with a non-targeting siRNA control showed clear denervation of the infarct (Figure 7A) compared to a peri-infarct region adjacent to the scar (Figure 7B). Animals treated with an siRNA targeting Chst15 had restored TH-positive fibers in the infarct (Figure 7C) at the same innervation density as the peri-infarct region (Figure 7D). TH innervation density was significantly higher in the infarct of Chst15-targeted animals compared to non-targeting siRNA-treated animals (Figure 7E). Cardiac scar size was examined between the two groups and no significant difference existed (Figure 7G and H). To examine whether restoration of nerves reduced arrhythmia susceptibility, we examined arrhythmias by ECG after administration of the β-agonist isoproterenol and caffeine (Gardner et al., 2015; Wang et al., 2014). Restoration of nerves with Chst15 siRNA treatment reduced arrhythmias when compared to non-targeting siRNA control-treated animals (Figure 7F). These results indicate that reducing 4,6-tandem sulfated CS-GAGs in the cardiac scar after MI promotes sympathetic nerve regeneration back into the cardiac scar and reduces arrhythmia susceptibility after MI.
 
@@ -82,50 +106,319 @@ The inhibitory effects of CS-E on axon outgrowth in certain neuronal subtypes le
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>JacksonLaboratories</td>
+      <td>000664</td>
+      <td>Male and female mice used for I/R surgeries</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Rattus norvegicus)</td>
+      <td>Crl:CD(SD) Outbred</td>
+      <td>Charles River Laboratories</td>
+      <td>001</td>
+      <td>Newborn pups, P0-P2, male and female for sympathetic neuron cultures</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C2C12 myoblast</td>
+      <td>ATCC</td>
+      <td>CRL-1772</td>
+      <td>siRNA knockdown pilot studies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CHST11(Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA5-68129</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CHST15(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>14298-1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ARSB(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>13227-1-AP</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NG2(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB5320</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine hydroxylase(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB152</td>
+      <td>WB (1:1000)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Galectin-3(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>AB2785</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chondroitin-4-sulfate(Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB2030</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chondroitin-6-sulfate(Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB2035</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fibrinogen(Sheep polyclonal)</td>
+      <td>BioRad</td>
+      <td>4400-8004</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG secondary(Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A-11034</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sheep IgG secondary(Donkey polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A-21099</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit HRP-conjugated secondary(Mouse polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A16104</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse HRP-conjugated secondary(Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31430</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ponceau S</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A40000278</td>
+      <td>3–5 min stain, de-stain with ddH2O</td>
+    </tr>
+    <tr>
+      <td>Peptide/ recombinant protein</td>
+      <td>PageRuler Plus prestained ladder</td>
+      <td>ThermoFisher Scientific</td>
+      <td>26619</td>
+      <td>(7 μL) per well</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly-L-Lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8920</td>
+      <td>(0.01%) for plate coating</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Laminin</td>
+      <td>RND Systems</td>
+      <td>3400-010-02</td>
+      <td>(1 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Soluble CSPGs</td>
+      <td>Millipore</td>
+      <td>CC117</td>
+      <td>(2 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide/recombinant protein</td>
+      <td>NGF</td>
+      <td>Alomone Labs</td>
+      <td>N-100</td>
+      <td>(10 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide/recombinant protein</td>
+      <td>RecombinantARSB</td>
+      <td>RND Systems</td>
+      <td>4415-SU-010</td>
+      <td>(0.6 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide/recombinant protein</td>
+      <td>RecombinantChondroitinase ABC</td>
+      <td>RND Systems</td>
+      <td>6877 GH-020</td>
+      <td>(100 μU/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dharmafect</td>
+      <td>Horizon Discovery</td>
+      <td>T-2001-02</td>
+      <td>Use manufacturer’s protocol</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Chst15</td>
+      <td>Horizon Discovery</td>
+      <td>J-059417-09</td>
+      <td>(120 nM) – in vitro(100 μg) – in vivoAccell formulation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Non-targeting</td>
+      <td>Horizon Discovery</td>
+      <td>D-001910–01</td>
+      <td>(120 nM) – in vitro(100 μg) – in vivoAccell formulation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chst15 primer</td>
+      <td>ThermoFisherScientific</td>
+      <td>4331182</td>
+      <td>Manufacturer’s protocol</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh primer</td>
+      <td>ThermoFisherScientific</td>
+      <td>4448489</td>
+      <td>Manufacturer’s protocol</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C18 Column</td>
+      <td>Agilent</td>
+      <td>AG-588945-902</td>
+      <td>(50 × 4.6 mm, 5 μm)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoproterenol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:5985-95-2</td>
+      <td>(50 µg)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS:58-08-2</td>
+      <td>(3 mg)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Version 9</td>
+      <td>Statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.net/</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BZ-X 800</td>
+      <td>Keyence</td>
+      <td></td>
+      <td>Imaging of co-culture (2×) and cardiac tissue sections (20×)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Incucyte</td>
+      <td>Essen Biosciences</td>
+      <td></td>
+      <td>Imaging neurite outgrowth (20×)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6J mice obtained from Jackson Laboratories West (Sacramento, CA) were used for all experiments. All mice were kept on a 12 hr:12 hr light-dark cycle with ad libitum access to food and water. Age and gender-matched male and female mice 12–18 weeks of age were used for myocardial-ischemia reperfusion surgeries, as described below. Pregnant Sprague-Dawley rats were purchased from Charles River Laboratories (Wilmington, MA) for experiments with dissociated sympathetic neurons. SCG from male and female neonatal rats (P0-P2) were used to generate primary sympathetic neuron cultures. All rats were kept on a 12 hr:12 hr light-dark cycle with ad libitum access to food and water. All procedures were approved by the OHSU Institutional Animal Care and Use Committee and comply with the Guide for the Care and Use of Laboratory Animals published by the National Academies Press (8th edition).
 
-## Myocardial I/R surgery
+### Myocardial I/R surgery
 
 Anesthesia was induced with 4% isoflurane and maintained with 2% isoflurane. Mice were restrained supine, intubated, and mechanically ventilated. Core body temperature was monitored by a rectal probe and maintained at 37°C throughout the surgery. The left anterior descending coronary artery (LAD) was reversibly ligated for 40 min and then reperfused by release of the ligature. LAD occlusion was verified by a persistent S-T wave elevation, region-specific cyanosis, and wall motion abnormalities. Reperfusion was confirmed by return of S-T wave to baseline level and re-coloration of ventricle region distal to occlusion (Gardner and Habecker, 2013; Parrish et al., 2010).
 
-## Western blotting
+### Western blotting
 
 Cardiac scar tissue from the left ventricle was dissected at 24 hr, 3 days, 7 days, and 14 days following MI, and control left ventricle tissue from unoperated animals. Heart tissue was pulverized in a glass douncer in NP40 lysis buffer (50 mM Tris [pH 8.0], 150 mM NaCl, 2 mM EDTA, 10 mM NaF, 10% glycerol, and 1% NP-40) containing complete protease inhibitor cocktail (Roche), phosphatase inhibitor cocktails 2 and 3 (Sigma). Lysates sat on ice for 30 min with intermittent vortexing. Lysates were centrifuged (13 k rpm, 10 min, 4°C) and resolved on 4–12% Bis-Tris gradient gel (3–8% Tris-Acetate gel for Figure 5 sulfation studies) by SDS/PAGE, transferred to nitrocellulose membrane (GE Life Sciences), blocked in 5% nonfat milk, probed with either CHST11 (1:500; Invitrogen: PA5-68129), CHST15 (1:1000; Proteintech: 14298-1-AP), ARSB (1:500; Proteintech: 13227-1AP), NG2/CSPG4 (1:1000; Millipore: AB5320), TH (1:1000; Millipore: AB1542), or Galectin-3 (1:500; Abcam: AB2785) then probed with goat anti-rabbit (or mouse) HRP-conjugated secondary antibody (1:10,000; Thermo), and detected by chemiluminescence (Thermo Scientific). To detect sulfation of chondroitin-sulfate proteoglycans, lysates were treated according to the detailed deglycosylation protocol from Mariano Viapiano PhD lab website (Massey et al., 2008). Briefly, 50–100 µg of protein lysate was treated for 6–8 hr with chABC (100 µU/mL; R&D systems) before being subjected to traditional western blotting, probed with anti-chondroitin-4-sulfate (1:1000; Millipore: MAB2030) or anti-chondroitin-6-sulfate (1:1000; Millipore: MAB2035). Protein expression was quantified with ImageJ densitometry and normalized to total protein as measured by Ponceau staining.
 
-## Sympathetic outgrowth assay
+### Sympathetic outgrowth assay
 
 Cultures of dissociated sympathetic neurons were prepared from SCG of newborn rats as described (Dziennis and Habecker, 2003). Cells were pre-plated for 1 hr to remove non-neuronal cells, and then 5000 neurons/well were plated onto a 96-well plate (TPP) coated with (poly-L-lysine, 0.01%, Sigma-Aldrich) and either laminin (1 μg/mL, RND systems), laminin and CSPGs (2 μg/mL; Millipore), or laminin and CSPGs pre-treated with ARSB (0.3 or 0.6 µg/mL; R&D systems) for 6–8 hr. Neurons were cultured in serum free C2 medium (Pellegrino et al., 2011) supplemented with 10 ng/mL NGF (Alomone Labs), 100 U/mL penicillin G, and 100 μg/mL streptomycin sulfate (Invitrogen). Live cell imaging was carried out using an Incucyte Zoom microscope (Essen BioScience), with 20× phase images acquired every 2 hr over a 40 hr period. Neurite length was measured using Cell Player Neurotrack software (Essen BioScience) and was used to calculate the neurite growth rate.
 
-## Explant co-culture assay
+### Explant co-culture assay
 
 Explants were generated as previously described (Gardner and Habecker, 2013). Briefly, SCG were dissected from neonatal mice and placed into pre-marked tissue culture wells so that ganglia were approximately 1 mm from left ventricle tissue. LV tissue was taken from unoperated control animals or from hearts collected 10–14 days after I/R. Cardiac tissue from a single animal was split in half and cultured with the left or right ganglion from a single animal, this enabled tissue from the same mice to be treated with either vehicle (5% DMSO) or ARSB to remove 4S-CS GAGs. The ganglia and the cardiac tissue were co-cultured inside a Matrigel bubble surrounded by C2 media supplemented with 2 ng/mL NGF to ensure neuron survival and stimulate a basal level of axon outgrowth in all directions. ARSB was added directly to the media (0.6 µg/mL) at the time of plating and again 24 hr later. At 48 hr the explants were imaged by phase microscopy with a Keyence BZ-X microscope. Neurite length from the edge of the ganglia to the most distal tip of visible neurites was measured using ImageJ.
 
-## siRNA pool knockdown efficiency screen
+### siRNA pool knockdown efficiency screen
 
 A pool of four siRNAs targeting the Chst15 gene were purchased from Horizon Discovery (formerly GE Dharmacon) and were tested for their efficacy in reducing gene expression in C2C12 myoblasts. C2C12 myoblasts were plated on 12-well plates coated with collagen and were transfected with the various targeting and control siRNAs using the Dharmafect transfection reagent (3 µL of Dharmafect reagent per well with 120 nM siRNA). The next day wells were split using Versene (Gibco), one-third of the cells were collected for a 24 hr time point and the other two-thirds were split into two wells for 48 and 72 hr knockdown time points. Cells were processed using an RNA Mini-kit (Qiagen) to purify RNA. One µg of RNA was loaded into the cDNA reaction with the iScript cDNA synthesis kit. Gene expression was examined with multiplexed Taqman probes targeting Chst15 and Gapdh using 2 µL of cDNA template and Taqman reagents and measured with an ABI7500 Thermocycler. The delta delta ct method was used to calculate knockdown efficiency. Once an effective siRNA against Chst15 was identified, knockdown efficiency was measured at the protein level with C2C12 myoblasts 48 hr post-knockdown. CHST15 expression was assessed via western blot with a CHST15 antibody (1:1000; Proteintech: 14298-1-AP) normalized to GAPDH (1:1000; Thermo Scientific: MA1-16757); siRNA Chst15-2 was selected for larger scale production and used for in vivo studies.
 
-## In vivo siRNA treatment
+### In vivo siRNA treatment
 
 After MI surgery mice were treated with 100 µg of siRNA targeting Chst15 or a non-targeting control. siRNA was delivered systemically via tail-vein injection on days 3, 5, and 7 following MI. Tissue was collected at day 10 post-MI for western blot analysis of CSPG sulfation and the sympathetic neuron marker TH. siRNA used for this experiment was custom synthesized by Horizon Discovery; siAccell in vivo formulation.
 
-## Norepinephrine content analysis by HPLC
+### Norepinephrine content analysis by HPLC
 
 Norepinephrine (NE) levels in heart tissue were measured by high-performance liquid chromatography (HPLC) with electrochemical detectionLi, Knowlton et al. 2004. Frozen, pulverized tissue was weighed and homogenized in 300 µL of 0.1 M perchloric acid (PCA) containing 0.5 µM dihydroxybenzylamine (internal standard). The homogenate was centrifuged at 14,000 rpm for 4 min and NE in 100 µL of the supernatant was adsorbed onto 15 mg alumina, followed by 15 min of tumbling. The alumina was washed twice with ddH2O and the catechols desorbed with 150 µL of 0.1 M PCA. The catechols were separated by reversed-phase HPLC on a C18 column (Agilent Microsorb, 150 × 4.6 mm, 5 μm) and measured by an electrochemical detector (Coulochem III; ESA, Bedford, MA) with the electrode potential set at +180 mV as described previously (Parrish et al., 2010). The mobile phase used consisted of 75 mM sodium phosphate (pH 3.0), 1.7 mM sodium octane sulfonate, 3.0% acetonitrile. NE standards (0.5 µM) were processed in parallel with the tissue samples.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 TH (sympathetic nerve fibers) and fibrinogen (Fib; infarct/scar) staining was carried out as described previously (Gardner et al., 2015). Tissue was collected 10 days after surgery, fixed in 4% paraformaldehyde, frozen and 12 µm sections generated. To reduce autofluorescence sections were rinse 3 × 10 min in 10 mg/mL sodium borohydride and rinsed for 3 × 10 min in PBS. Slides were placed in 2% BSA, 0.3% Triton X-100 in PBS for 1 hr, and then incubated with rabbit anti-TH (1:1000; Millipore: AB1542) and sheep anti-fibrinogen (1:300; BioRad: 4400-8004) overnight. The following day the slides were incubated with Alexa-Fluor IgG-specific antibodies (Molecular Probes, 1:1000) for 1.5 hr and rinsed 3 × 10 min in PBS. Background autofluorescence was reduced further with a 30 min incubation in 10 mM CuSO4 (diluted in 50 mM ammonium acetate). Following this, slides were rinsed 3 × 10 min in PBS before mounting in 1:1 glycerol:PBS and visualized by fluorescence microscopy. Threshold image analysis of TH staining has been described previously (Gardner et al., 2015) but briefly, the threshold function in ImageJ was used to generate black and white images discriminating TH + nerves for six sections spanning 200 µm of the infarct/scar or peri-infarct region from each heart. Percent area TH + fiber density (20× field of view) was quantified within the infarct and the area immediately adjacent to the infarct (peri-infarct). Images were acquired with a Keyence BZ-X 800 microscope.
 
-## Quantification of infarct size
+### Quantification of infarct size
 
 Infarct size was determined 10 days after myocardial I/R injury and tissue was prepared for IHC as previously mentioned, but omitting the steps to reduce autofluorescence. Autofluorescence was used to image the infarct size. Scar tissue is notably lacking autofluorescence enabling easy identification of the infarct. Images were acquired with a Keyence BZ-X 800 microscope at 2× magnification and analyzed using Image J freehand selection tool. Left ventricle (LV) and infarct was outlined, measured, and the percent area of cardiac scar was determined by (infarct area/LV area) × 100. The scar was imaged in six sections across 200 µm of the infarct as previously described (Gardner et al., 2015).
 
-## Arrhythmia assessment
+### Arrhythmia assessment
 
 Anesthesia was induced with 4% isoflurane and maintained with 2% isoflurane in day 10 post-MI animals treated with siRNA. ECG leads were connected to monitor arrhythmias and animals were maintained at 37°C throughout the analysis. All parameters were monitored with Powerlab LabChart software (AD Instruments). A 30 min baseline was used to assess spontaneous arrhythmia susceptibility prior to administration of β-agonist isoproterenol (50 µg) and caffeine (3 mg) as described previously (Wang et al., 2014). Arrhythmias were measured for 30 min following drug administration and scored according to the modified Lambeth conventions (Curtis et al., 2013) on a scale of 0–4. Individual animals received a single score based on the most severe arrhythmia observed. 0 indicates no arrhythmia. 1 indicates 1–2 premature ventricular contractions (PVCs) followed by normal sinus rhythm of at least 2 beats. 2 indicates bigeminy (1 PVC followed by one normal sinus beat, repeating for 4 or more continuous cycles) or salvo (3–5 PVCs in a row). 3 indicates non-sustained ventricular tachycardia (nsVT) defined as 6 or more PVCs in a row lasting less than 30 s. 4 indicates sustained VT (>30 s) or Torsades de Pointes.
 
-## Statistics
+### Statistics
 
 Student’s t-test was used for comparisons of just two samples. Data with more than two groups were analyzed by one-way ANOVA using the Tukey’s post hoc test to compare all conditions or the Dunnet’s post-test when comparing to a single control group. Data with multiple variables was analyzed by two-way ANOVA. All statistical analyses were carried out using Prism 9.

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.29495.001 Quadrupeds, like most bipeds, tend to walk with an even left/right footfall timing. However, the phasing between hind and forelimbs shows considerable variation. Here, we account for this variation by modeling and explaining the influence of hind-fore limb phasing on mechanical work requirements. These mechanics account for the different strategies used by: (1) slow animals (a group including crocodile, tortoise, hippopotamus and some babies); (2) normal medium to large mammals; and (3) (with an appropriate minus sign) sloths undertaking suspended locomotion across a range of speeds. While the unusual hind-fore phasing of primates does not match global work minimizing predictions, it does approach an only slightly more costly local minimum. Phases predicted to be particularly costly have not been reported in nature.
+Quadrupeds, like most bipeds, tend to walk with an even left/right footfall timing. However, the phasing between hind and forelimbs shows considerable variation. Here, we account for this variation by modeling and explaining the influence of hind-fore limb phasing on mechanical work requirements. These mechanics account for the different strategies used by: (1) slow animals (a group including crocodile, tortoise, hippopotamus and some babies); (2) normal medium to large mammals; and (3) (with an appropriate minus sign) sloths undertaking suspended locomotion across a range of speeds. While the unusual hind-fore phasing of primates does not match global work minimizing predictions, it does approach an only slightly more costly local minimum. Phases predicted to be particularly costly have not been reported in nature.
 
 ## Introduction
 
@@ -31,49 +31,518 @@ To summarize the phenomena we wish to account for, we plot (Figure 1) published 
 
 **Figure 1.:** Sloth relationship from (Nyakatura et al., 2010); Primate from (Cartmill et al., 2002). Points show values for a diverse range of quadrupedal species (Table 1), tentatively classified into two groups using K-means: Group 1 – high duty factor, phase 40–50% including reptiles, amphibians, mouse and hippo (grey points); Group 2 – the ‘normal mammalian’ grouping, with lower duty factor and phase around or somewhat below 25% (black points). The regression line relating to the presented points is: phase (%)=130 DF – 66. Phases greater than 80% are rarely if ever observed in steady, level gaits.
 
-## Group 1: Duty factor near 0.8
+**Table 1.**
+ See Supplementary file 1 for further information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Median duty factor</th>
+      <th>Median phase (%)</th>
+      <th>N</th>
+      <th>SD duty factor</th>
+      <th>SD phase (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Group 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hamster* (Mesocricetus auratus)</td>
+      <td>0.70</td>
+      <td>45</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Giant Salamander (Andrias japonicus)</td>
+      <td>0.74</td>
+      <td>40</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iguana (Iguana iguana)</td>
+      <td>0.75</td>
+      <td>44</td>
+      <td>2</td>
+      <td>0.126</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>Komodo Dragon (Varanus komodoensis)</td>
+      <td>0.77</td>
+      <td>45</td>
+      <td>3</td>
+      <td>0.031</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Caiman (Caiman crocodilus)</td>
+      <td>0.78</td>
+      <td>43</td>
+      <td>2</td>
+      <td>0.049</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Hippo (Hippopotamus amphibius)</td>
+      <td>0.76</td>
+      <td>45</td>
+      <td>4</td>
+      <td>0.082</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Frog (Kassina maculata)</td>
+      <td>0.78</td>
+      <td>44</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bearded Dragon (Pogona vitticeps)</td>
+      <td>0.78</td>
+      <td>48</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Crocodile (Crocodylus palustris)</td>
+      <td>0.78</td>
+      <td>49</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leopard Gecko (Eublepharis macularius)</td>
+      <td>0.79</td>
+      <td>43</td>
+      <td>2</td>
+      <td>0.034</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Tiger Salamander (Ambystoma tigrinum)</td>
+      <td>0.80</td>
+      <td>40</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Monitor Lizard (Varanus salvator)</td>
+      <td>0.81</td>
+      <td>40</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tortoise (Centrochelys sulcata)</td>
+      <td>0.82</td>
+      <td>42</td>
+      <td>2</td>
+      <td>0.003</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Iguana (Conolophus pallidus)</td>
+      <td>0.84</td>
+      <td>47</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Marine Iguana (Amblyrhynchus cristatus)</td>
+      <td>0.85</td>
+      <td>41</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse* (Mus musculus)</td>
+      <td>0.86</td>
+      <td>40</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alligator (Alligator mississippiensis)</td>
+      <td>0.87</td>
+      <td>42</td>
+      <td>3</td>
+      <td>0.046</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>Group 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mongoose (Mungos mungo)</td>
+      <td>0.60</td>
+      <td>16</td>
+      <td>2</td>
+      <td>0.046</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td>Tapir (Tapirus indicus)</td>
+      <td>0.61</td>
+      <td>26</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rat (Rattus norvegicus)</td>
+      <td>0.62</td>
+      <td>36</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Brown Bear (Ursus arctos)</td>
+      <td>0.65</td>
+      <td>17</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hyena (Crocuta crocuta)</td>
+      <td>0.66</td>
+      <td>10</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cat (Felis catus)</td>
+      <td>0.66</td>
+      <td>21</td>
+      <td>2</td>
+      <td>0.060</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Pig (Sus domesticus)</td>
+      <td>0.66</td>
+      <td>26</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black Bear (Ursus americanus)</td>
+      <td>0.67</td>
+      <td>18</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Horse (Equus caballus)</td>
+      <td>0.67</td>
+      <td>24</td>
+      <td>2</td>
+      <td>0.015</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Zebra (Equus quagga)</td>
+      <td>0.67</td>
+      <td>24</td>
+      <td>28**</td>
+      <td>0.025</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Echidna (Tachyglossus aculeatus)</td>
+      <td>0.67</td>
+      <td>13</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Polar Bear (Ursus maritimus)</td>
+      <td>0.68</td>
+      <td>16</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rhino (Ceratotherium simum)</td>
+      <td>0.68</td>
+      <td>21</td>
+      <td>2</td>
+      <td>0.079</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Impala (Aepyceros melampus)</td>
+      <td>0.68</td>
+      <td>19</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lion (Panthera leo)</td>
+      <td>0.68</td>
+      <td>15</td>
+      <td>3</td>
+      <td>0.017</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Sheep (Ovis aries)</td>
+      <td>0.68</td>
+      <td>28</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Giraffe (Giraffa camelopardalis)</td>
+      <td>0.68</td>
+      <td>14</td>
+      <td>5</td>
+      <td>0.030</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Cow (Bos taurus taurus)</td>
+      <td>0.69</td>
+      <td>29</td>
+      <td>5</td>
+      <td>0.035</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Deer (Odocoileus virginianus)</td>
+      <td>0.69</td>
+      <td>31</td>
+      <td>2</td>
+      <td>0.049</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>Cheetah (Acinonyx jubatus)</td>
+      <td>0.70</td>
+      <td>18</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Giant Anteater (Myrmecophaga tridactyla)</td>
+      <td>0.70</td>
+      <td>27</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tapir (Tapirus terrestris)</td>
+      <td>0.70</td>
+      <td>26</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>American Buffalo (Bison bison)</td>
+      <td>0.71</td>
+      <td>16</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bobcat (Lynx rufus)</td>
+      <td>0.71</td>
+      <td>17</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Barbary Sheep (Ammotragus lervia)</td>
+      <td>0.71</td>
+      <td>26</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Raccoon (Procyon lotor)</td>
+      <td>0.71</td>
+      <td>14</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Goat (Capra aegagrus hircus)</td>
+      <td>0.72</td>
+      <td>23</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Llama (Lama glama)</td>
+      <td>0.72</td>
+      <td>17</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Camel (Camelus bactrianus)</td>
+      <td>0.72</td>
+      <td>21</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wildebeest (Connochaetes taurinus)</td>
+      <td>0.72</td>
+      <td>18</td>
+      <td>11**</td>
+      <td>0.017</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Donkey (Equus africanus asinus)</td>
+      <td>0.73</td>
+      <td>25</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Elephant (Elephas maximus)</td>
+      <td>0.73</td>
+      <td>19</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wombat (Lasiorhinus krefftii)</td>
+      <td>0.73</td>
+      <td>18</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Elephant (Loxodonta africana)</td>
+      <td>0.74</td>
+      <td>17</td>
+      <td>4</td>
+      <td>0.026</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Porcupine (Erethizon dorsatum)</td>
+      <td>0.75</td>
+      <td>29</td>
+      <td>2</td>
+      <td>0.051</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Group 1: Duty factor near 0.8
 
 Group 1 animals (Figure 1, Table 1) walk with a duty factor around 0.8 and phase between 40% and 50%. This group consists of 11 species of reptile, 3 amphibians and 3 mammals. Members of this group might be linked by being relatively slow (e.g. hippo), slow-muscled (‘cold-blooded’ – consider tortoise muscle properties [Woledge, 1968]) or very small (mouse). If so, their high duty factors might be considered a strategy to limit the muscle activation cost due to instantaneous power demands (see [Usherwood, 2016]) (an argument related to, but distinct from, that proposed in (Jayes and Alexander, 1980) for tortoises). The issues of differential scaling between work and power has been covered elsewhere, and related to the scaling of: jumping performance (Bennet-Clark, 1977), gait selection and dynamic similarity (Alexander and Jayes, 1983), posture (Usherwood, 2013) and ontogeny of bipedal gaits (Hubel and Usherwood, 2015). It is sufficient here to note that it is not surprising that slow, slow-muscled and small walking quadrupeds operate with high duty factors; one aim of this paper is to account for why phases of 40–50% are adopted in this group.
 
-## Group 2: Duty factors around 0.6 to 0.75
+### Group 2: Duty factors around 0.6 to 0.75
 
 Group 2 covers the majority of self-selected walking observed in upright, medium to large mammals: duty factors between around 0.6 and 0.75, and phases at or somewhat below 25%. A range of exceptions exists, notably some dogs [Hildebrand, 1968; Cartmill et al., 2002], which may adopt phases close to 0.5 (trotting) at higher speeds (lower duty factors). It appears likely that trotting mechanics can dominate at duty factors close to 0.5, equivalent to grounded running (Biknevicius and Reilly, 2006), and we do not attempt to include an account for this within the models of walking presented here.
 
-## Primates
+### Primates
 
 Primates appear to adopt a discretely different limb phasing at the duty factors of Group 2, close to 75% ([Cartmill et al., 2002; Hildebrand, 1967] sometimes termed a ‘diagonal sequence’). Some other quadrupeds (opossum, [Schmitt and Lemelin, 2002]) occupy a similar region, potentially due to their grasping forelimbs and/or to cope with the hazards of walking along branches with a risk of failure (Cartmill et al., 2002).
 
-## Sloth
+### Sloth
 
 Data published for 2-toed sloths locomoting with a suspended, under-branch quadrupedal gait (Nyakatura et al., 2010) cover a large range of duty factors. The relationship between duty factor and phase appears to contrast with that found across non-primate quadrupeds (Group 1 vs. Group 2): sloths adopt phases close to 25% at high duty factors (low speed), and 50% at lower duty factors (higher speeds).
 
-## Phases above 0.8
+### Phases above 0.8
 
 There appears to be no record of a steady gait occurring at this phase in nature.
 
 ## Theory methods
 
-## Model development
+### Model development
 
-A numerical model was developed to calculate the mechanical work requirements of all the limbs on the center of mass as a function of duty factor and phase for symmetrical quadrupedal gaits. Mass-normalized vertical, horizontal and lateral forces for each limb were modeled with sinusoidal waveforms (see Figure 2). Vertically, a half-sine force profile Fz,limb was used through time t over the stance period Tstance:
+A numerical model was developed to calculate the mechanical work requirements of all the limbs on the center of mass as a function of duty factor and phase for symmetrical quadrupedal gaits. Mass-normalized vertical, horizontal and lateral forces for each limb were modeled with sinusoidal waveforms (see Figure 2). Vertically, a half-sine force profile $F_{z,limb}$ was used through time t over the stance period Tstance:
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig2-v1.jpg)
 
-**Figure 2.:** A) net-vertical limb impulses, and a cyclic decelerate-accelerate fore-aft force; (B) net-vertical limb impulses and a reversed fore-aft force profile modeling suspended, sloth-like progression; (C) inclined limb impulses, accelerating with the hindlimbs and decelerating with the fore (fore force trace shown); (D) as for (C) with the addition of a small medial impulse for each limb.Overlying data (A, C, D) from a diverse range of quadrupedal species (see Figure 1), or only 2-toed sloth (B, [Nyakatura et al., 2010]). Overlying grey oval (A,C,D) denotes the region identified for primates by (Cartmill et al., 2002). Model C shifts the cost surface towards lower phases (arrow); Model D tips the surface, making higher phases more costly (denoted by +/−), and consequently the lower phase trough becomes the global minimum for each duty factor (dark blue line).
+**Figure 2.:** Overlying data (A, C, D) from a diverse range of quadrupedal species (see Figure 1), or only 2-toed sloth (B, [Nyakatura et al., 2010]). Overlying grey oval (A,C,D) denotes the region identified for primates by (Cartmill et al., 2002). Model C shifts the cost surface towards lower phases (arrow); Model D tips the surface, making higher phases more costly (denoted by +/−), and consequently the lower phase trough becomes the global minimum for each duty factor (dark blue line).
 
-(1)Fz,limb=Azsin(tTstance),
+$$
+F_{z,limb}=A_{z}sin(\frac{t}{T_{stance}}),
+$$
 
-where amplitude Az is sufficient to oppose gravity g for a given duty factor DF (DF=TstanceTstride, where Tstride is the period of a complete stride cycle):(2)Az=g8DF.
+where amplitude Az is sufficient to oppose gravity g for a given duty factor DF ($DF=\frac{T_{stance}}{T_{stride}}$, where Tstride is the period of a complete stride cycle):
 
-Fore-aft forces were modeled with a full sine wave with bias from a half sine-wave:(3)Fx,limb=Axsin(2tTstance)±Ax,biassin(tTstance),
+$$
+A_{z}=\frac{g}{8DF}.
+$$
 
-where the amplitude Ax, as a proportion of the vertical amplitude, would relate closely to stance angle. The maximum leg angle from vertical Φ can be approximated by considering an instant a quarter of the way through stance, assuming the combination of Fz,limb and Fx,limb to result in pure compression forces along the leg, and assuming the leg to sweep over the foot at a constant angular rate:(4)Φ≈2tan−1(Az2Ax)
+Fore-aft forces were modeled with a full sine wave with bias from a half sine-wave:
 
-Φ≈2tan−1(Az2Ax)A single value of Az/Ax (so a single stance angle) is used; we take no account of any variation in stance angle or stance length with duty factor or speed.
+$$
+F_{x,limb}=A_{x}sin(\frac{2t}{T_{stance}})\pmA_{x,bias}sin(\frac{t}{T_{stance}}),
+$$
 
-Fore-aft force profiles were supplemented with a bias (shown in the Ax,bias term of Equation 3) in which the hindlimbs provide a net forward impulse, counteracted by an equivalent backward impulse from the forelimbs. Finally, small medial forces Fy,limb were introduced, applied equally and medially by each leg. Both of these latter additions follow the half-sine waveform of the vertical force, but with much lower amplitudes (10% and 5% of vertical respectively). At this stage, these values merely serve to demonstrate tendencies; while their influences can easily be modeled, we do not explore this aspect of the parameter space quantitatively here as we have limited data on how they might vary with size, species, speed, duty factor etc.
+where the amplitude $A_{x}$, as a proportion of the vertical amplitude, would relate closely to stance angle. The maximum leg angle from vertical $Φ$ can be approximated by considering an instant a quarter of the way through stance, assuming the combination of $F_{z,limb}$ and $F_{x,limb}$ to result in pure compression forces along the leg, and assuming the leg to sweep over the foot at a constant angular rate:
 
-From the limb force profiles and timings relating to limb phasing, fluctuations in center of mass velocity VCoM→ were derived by integrating the sum of (mass normalized) limb forces through time (and then mean subtracting to give fluctuations about zero). Assuming a zero mean velocity vertically and laterally, and a positive mean forward velocity over a stride cycle, center of mass velocities were calculated. Note that the value of mean velocity, as long as sufficient to keep instantaneous fore-aft velocities always forward, has no bearing on the model results. The power demanded from each limb is given by:(5)Plimb=Flimb→⋅VCoM→=Fz,limbVz,CoM+Fx,limbVx,CoM+Fy,limbVy,CoM
+$$
+Φ≈2tan^{−1}(\frac{A_{z}\sqrt{2}}{A_{x}})
+$$
+
+$Φ≈2tan^{−1}(\frac{A_{z}\sqrt{2}}{A_{x}})$A single value of $A_{z}/A_{x}$ (so a single stance angle) is used; we take no account of any variation in stance angle or stance length with duty factor or speed.
+
+Fore-aft force profiles were supplemented with a bias (shown in the $A_{x,bias}$ term of Equation 3) in which the hindlimbs provide a net forward impulse, counteracted by an equivalent backward impulse from the forelimbs. Finally, small medial forces $F_{y,limb}$ were introduced, applied equally and medially by each leg. Both of these latter additions follow the half-sine waveform of the vertical force, but with much lower amplitudes (10% and 5% of vertical respectively). At this stage, these values merely serve to demonstrate tendencies; while their influences can easily be modeled, we do not explore this aspect of the parameter space quantitatively here as we have limited data on how they might vary with size, species, speed, duty factor etc.
+
+From the limb force profiles and timings relating to limb phasing, fluctuations in center of mass velocity $V_{CoM}→$ were derived by integrating the sum of (mass normalized) limb forces through time (and then mean subtracting to give fluctuations about zero). Assuming a zero mean velocity vertically and laterally, and a positive mean forward velocity over a stride cycle, center of mass velocities were calculated. Note that the value of mean velocity, as long as sufficient to keep instantaneous fore-aft velocities always forward, has no bearing on the model results. The power demanded from each limb is given by:
+
+$$
+P_{limb}=F_{limb}→⋅V_{CoM}→=F_{z,limb}V_{z,CoM}+F_{x,limb}V_{x,CoM}+F_{y,limb}V_{y,CoM}
+$$
 
 and the positive components of Plimb – for all legs – provide the mechanical work ‘cost’. Note that the instantaneous limb power is the sum of all the components of the right hand side: a positive power due to a vertical force and velocity at the same time as a negative power due to a horizontal force and velocity would cancel; a simple vaulting or pendulum action would be calculated as passive and demand no limb power.
 
@@ -83,13 +552,13 @@ While this method has much in common with the pioneering analytical work of Alex
 
 Our approach to studying work-minimizing strategies does not directly address the motivations behind the selection of stance angles, duty factors, fore-aft or lateral impulses, or details of force profiles more subtle than the sine-wave approximations use here. Clearly, many of these aspects may be related to work minimization provided the constraints of animal form; however, details may also relate to other geometric constraints - such as maximum allowable pitch or roll deviations as proposed by Jayes and Alexander for tortoises (Jayes and Alexander, 1980). Further, it should be emphasized that the approach taken here does not include any interplay between limb phasing and impulses or timing of forces through the stance; it is therefore incapable of approaching some aspects of passive vaulting or falling mechanics generally considered important in walking at above moderate speeds. Our approach therefore has limitations: many aspects of both energetics and stability (if indeed these two aspects should be separated) remain to be explored (e.g. [Wilshin et al., 2017]).
 
-## To summarize the key caveats
+#### To summarize the key caveats
 
 the model makes no attempt to account for the selection of duty factor – it merely calculates the implications of different phases for given duty factors and force profiles. It assumes limb forces through time are not influenced by phasing; while this appears broadly reasonable at moderate speeds, where fluctuations in horizontal velocity are small compared with mean velocity (and so the timecourse of changes in leg angle varies little), it certainly fails at exceedingly low speeds with near-stationary periods (as in grazing). The model is exceedingly simple: no account is taken of lateral bending, belly or tail ground contact, all of which may be relevant to some (but not all) amphibians and reptiles.
 
 This paper may, though, provide a default starting point for considering the mechanical energetic implications of footfall timing in quadrupedal walking, especially at moderate speeds.
 
-## Geometrical accounting for model results
+### Geometrical accounting for model results
 
 An ideal rolling wheel can support the weight of a vehicle moving over level ground without performing mechanical work because the forces opposing weight are orientated perpendicular to the velocity of the mass. The same is not true when driving up hill: some component of body weight is in the direction of velocity, and an engine is required to deliver power. The value of this principle, that the orientation between the force (or impulse) and velocity accounts for the demand for mechanical power (or work), can be couched in terms of collision mechanics. This reduction is becoming to be appreciated in the study of human and animal mechanics (e.g. Kuo, 2002; Ruina et al., 2005; Lee et al., 2011; see Bertram, 2016 for an overview). We use the principle here to provide tractable, intuitive accounts for the outputs of the numerical models described above. We link the outputs of the numerical, sine-based models to the principles of collision mechanics by highlighting the angles between center of mass velocities and limb forces at key instants, or the net effect of limb forces in the form of impulses. This approach to explaining the principles underlying differences in mechanical work demand supports the case that the mechanisms found are reasonably general and not merely a mathematical peculiarity of the specific sine-based assumptions of the model.
 
@@ -97,7 +566,7 @@ When approaching work calculations from a collisional perspective, the angle bet
 
 ## Model results and discussion
 
-## Numerical model results and mechanistic accounts
+### Numerical model results and mechanistic accounts
 
 The simplest form of the model (Figure 2A) has vertical limb forces of a half sine-wave of sufficient amplitude to support body weight (increasing with decreasing duty factor) and horizontal forces of a sine-wave of a suitable amplitude – we choose a value of −0.2 the vertical amplitude, approximately equivalent to a stance sweep-angle of 30 degrees. All results are broadly insensitive to this assumption; systematic changes in stance angle with speed or duty factor are not included, but in any case are negligible after the normalization at each duty factor. The implications of duty factor and phase can be calculated in terms of limb work, and presented as a cost surface, normalized for each duty factor (blue minimum, red maximum for each duty factor). The surface shows work minimization at phases of 50% and 0/100% at duty factors above 0.75, and 25%/75% at duty factors below 0.75. The DF = 0.75 cut-off is not exact; it is slightly higher with increasing horizontal force amplitude – or stance angle.
 
@@ -121,14 +590,14 @@ Up to this stage of model development, everything could be treated in a planar m
 
 The mechanism underlying this change can again be related to collision mechanics (Figure 4D), this time considering only the horizontal plane. Each hindlimb produces an impulse that accelerates the body both forward and medially; each forelimb provides backward and medial impulses. Figure 4D demonstrates the difference between low and high phases: with low phasing, each impulse acts more closely to perpendicular to the center of mass velocities, and so lower mechanical limb work is required. With the addition of medial impulses, the undesirability of a 95% phase becomes apparent. Just prior to front-right foot contact, the center of mass velocity is a near-maximal downward, forward and lateral, before being opposed by an impulse orientated upward, backward and medially: much of the kinetic energy of the body cannot be maintained with small-angle collisions. This phenomenon, and the importance generally of timing on the energetic consequences of impulses, can be experienced directly. A human can be asked to crawl with a pacing footfall pattern – this is usually achieved with ease. A phasing just off pacing, with the knee landing just before the hand, is also easily achieved with comfort (phase roughly 5%). However, the slight change the other way, with the right hand landing just prior to the right knee (phase around 95%) is physically very demanding, and very challenging to maintain for any duration.
 
-## Further discussion
+### Further discussion
 
-Both the limb-force-driven model and the geometric description of mechanism provide energetic accounts for selection of limb phasing in many quadrupeds undertaking slow locomotion. Phases somewhat below 50% are predicted at DF≈0.8; somewhat below 25% at DF≈0.65, with the reverse relation predicted for suspended sloth-like quadrupedal gaits. This provides a simple work-minimizing account for commonalities in quadrupedal gaits (Figure 2C) across extreme phylogenetic distance (Group 1 – Figure 1 – includes species that last shared a common ancestor around 300 million years ago), considerable difference in scale (Group 1 covers from hippo to mouse – a 500,000-fold difference in mass) and contrast in muscle properties (very ‘slow’ (tortoise [Woledge, 1968]) to ‘fast’ (mouse, e.g. [Askew and Marsh, 1997])). Group 2 (Figure 1), consisting of both familiar and exotic medium to large mammals walking at lower duty factors, approaches the even footfall or slightly lower phases predicted from simple planar collisional principles (Ruina et al., 2005; Usherwood et al., 2007). The advantage in terms of work minimization of near-25% vs. near-75% phase only becomes apparent when medial impulses are included (Figure 2D; Figure 4D).
+Both the limb-force-driven model and the geometric description of mechanism provide energetic accounts for selection of limb phasing in many quadrupeds undertaking slow locomotion. Phases somewhat below 50% are predicted at $DF≈0.8$; somewhat below 25% at $DF≈0.65$, with the reverse relation predicted for suspended sloth-like quadrupedal gaits. This provides a simple work-minimizing account for commonalities in quadrupedal gaits (Figure 2C) across extreme phylogenetic distance (Group 1 – Figure 1 – includes species that last shared a common ancestor around 300 million years ago), considerable difference in scale (Group 1 covers from hippo to mouse – a 500,000-fold difference in mass) and contrast in muscle properties (very ‘slow’ (tortoise [Woledge, 1968]) to ‘fast’ (mouse, e.g. [Askew and Marsh, 1997])). Group 2 (Figure 1), consisting of both familiar and exotic medium to large mammals walking at lower duty factors, approaches the even footfall or slightly lower phases predicted from simple planar collisional principles (Ruina et al., 2005; Usherwood et al., 2007). The advantage in terms of work minimization of near-25% vs. near-75% phase only becomes apparent when medial impulses are included (Figure 2D; Figure 4D).
 
 A purely energetic account is not found for the unusual phases used by many primates (and opossum, [Schmitt and Lemelin, 2002]); however, the cost landscape is such that the phases observed, while not meeting the absolute energetic minimum, may be in a region that achieves a nearly equivalent performance (see also [Sellers et al., 2013]). Some other account (perhaps associated with managing locomotion on unreliable substrates – [Cartmill et al., 2002]) is presumably required but beyond the scope of this study. Further support for the explanatory power of the model comes from cases where duty factors transitions over 0.75. The sloth data set has already been discussed. The case of a macaque through ontogeny ([Hildebrand, 1967]; a generally consistent theme appears to hold across a range of primates, [Hurov, 1982]) also appears to fit model predictions very nicely (Figure 5). When very young, the macaque used a very high duty factor, and phase just below trotting. As it matured, it adopted lower duty factors and both horse-like and primate-like phases, but avoided the previous phase. As adult, it adopted a purely adult primate-like phase. As discussed above, the models presented here cannot account for the adult primate phase, but can account for the avoidance of phases around 40% at low duty factors.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/29495/elife-29495-fig5-v1.jpg)
 
-**Figure 5.:** Hildebrand, 1967) for a macaque (Macaca mulatta) through development.Between 18 and 42 days (dashed line), high duty factors and phases close to 40% are observed. At 52 to 96 days (dotted lines), two regions are observed, before reaching the adult condition (solid line) typical of primates.
+**Figure 5.:** Between 18 and 42 days (dashed line), high duty factors and phases close to 40% are observed. At 52 to 96 days (dotted lines), two regions are observed, before reaching the adult condition (solid line) typical of primates.
 
 The driver behind the high duty factors of ‘reptile’, slow, small or juvenile gaits, while potentially related to the avoidance of excessive muscle activation for power demands, is not covered here. However, given high duty factors, phasing around 0.4 to 0.5 is consistent with limb work minimization. This provides an alternative account for the observation of these near-trotting (i.e. 0.4 to 0.5) phases in human infants (Patrick et al., 2009; Patrick et al., 2012): where previously they have been attributed to some immaturity in neural development (Patrick et al., 2012), they may actually be adaptive from a work minimization perspective. This has clear parallels with the contrasts between toddler and adult walking and running gaits (Hubel and Usherwood, 2015): might it be that we would do better viewing ontogeny of gait – whether quadrupedal or bipedal – first from an adaptive energetic framework before invoking some constraining limitation in the rate of neural development?

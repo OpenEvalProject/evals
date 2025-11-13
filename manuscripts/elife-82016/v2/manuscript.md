@@ -12,9 +12,9 @@
 1. Program in Physical Therapy, Washington University School of Medicine St. Louis United States
 2. Department of Orthopaedic Surgery, Washington University School of Medicine St Louis United States
 3. Departments of Neurology and Biomedical Engineering, Washington University School of Medicine St. Louis United States
-4. https://ror.org/00hj8s172 Departments of Orthopaedic Surgery and Biomedical Engineering, Columbia University New York United States
+4. Departments of Orthopaedic Surgery and Biomedical Engineering, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 5. Department of Cell Biology & Physiology, Washington University School of Medicine St. Louis United States
-6. https://ror.org/049mpkx27 Shriners Hospital for Children St. Louis United States
+6. Shriners Hospital for Children St. Louis United States ([ROR:049mpkx27](https://ror.org/049mpkx27))
 
 † Corresponding author
 
@@ -36,49 +36,77 @@ Taken together, these prior studies suggest that although NFκB signaling is a c
 
 ## Results
 
-## Tenotomy-induced atrophy of the rotator cuff muscles is sex-specific
+### Tenotomy-induced atrophy of the rotator cuff muscles is sex-specific
 
 Change in muscle mass was the first outcome assessed following tenotomy of the supraspinatus (SS) and infraspinatus (IS) muscles – the primary abductors in the RC. Although this study was primarily concerned with differences between genotypes (due to changes in NFκB signaling), differences were noted between males and females in the wildtype group. Specifically, at week 8 (W8) post-tenotomy, mass loss in the male SS and IS muscles outpaced that in female mice (Figure 1A). Further investigation in the other outcomes of the study suggests that these sex-specific muscle mass effects arose from sex-specific differences in the morphological mechanisms of atrophy. Atrophy is driven by three primary morphological adaptations: decreases in fiber sizes in the radial dimension (fiber atrophy), decreases in fiber numbers (hypoplasia), and decreases in fiber sizes in the longitudinal dimension (sarcomere subtraction). Only male mice demonstrated decreased fiber cross-sectional area (CSA) at W8 post- tenotomy (Figure 1B). Conversely, only female mice decreased fiber numbers at W8 post-tenotomy (Figure 1C). Female mice also decreased fiber lengths to a greater extent than male mice at both W2 and W8 (Figure 1D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig1-v2.jpg)
 
-**Figure 1.:** (A) Supraspinatus (SS) and infraspinatus (IS) muscles from male mice lose more mass than female muscles at 8 weeks (W8) post-tenotomy (TEN). Muscle mass is normalized to body mass and the average value from the sham group for each sex. (B) Type 2b fiber cross-sectional area (CSA), assessed in histological sections, is also significantly reduced in males compared with females at W8. (C) The total number of fibers counted per histological section is significantly reduced in the female SS compared with male at W8. (D) Prediction of fiber lengths from measured muscle lengths during physiological testing indicates that female SS muscles lose a greater fraction of their fiber length at both W2 and W8 post-tenotomy. (E) Predictions of the contributions of each morphological change (B–D) to the measured mass deficit (A). Change in (Δ) fiber length (dark gray), fiber number (light gray), and fiber CSA (white) show different trends for males and females at W2 and W8 post-tenotomy. (F) The mass deficit predicted by morphological changes and the mass deficit measured at W2 and W8 are significantly correlated. (A–D) Raw values were normalized to the average of the sham group of the same sex. N = 5–7 per group; *p<0.05, **p<0.01.Figure 1—source data 1.
+**Figure 1.:** (A) Supraspinatus (SS) and infraspinatus (IS) muscles from male mice lose more mass than female muscles at 8 weeks (W8) post-tenotomy (TEN). Muscle mass is normalized to body mass and the average value from the sham group for each sex. (B) Type 2b fiber cross-sectional area (CSA), assessed in histological sections, is also significantly reduced in males compared with females at W8. (C) The total number of fibers counted per histological section is significantly reduced in the female SS compared with male at W8. (D) Prediction of fiber lengths from measured muscle lengths during physiological testing indicates that female SS muscles lose a greater fraction of their fiber length at both W2 and W8 post-tenotomy. (E) Predictions of the contributions of each morphological change (B–D) to the measured mass deficit (A). Change in (Δ) fiber length (dark gray), fiber number (light gray), and fiber CSA (white) show different trends for males and females at W2 and W8 post-tenotomy. (F) The mass deficit predicted by morphological changes and the mass deficit measured at W2 and W8 are significantly correlated. (A–D) Raw values were normalized to the average of the sham group of the same sex. N = 5–7 per group; *p<0.05, **p<0.01.
 
 To better understand the relative impact of these morphological changes on muscle mass, a geometrical model was employed to predict the mass deficit from each change. Overall, changes in fiber length accounted for most of the mass deficit with tenotomy in both sexes (Figure 1E, purple). However, there were notable differences in the other sources. While changes in fiber CSA accounted for 25–30% of the mass loss in male mice at 2W and 8W, they accounted for none of the mass loss in female mice. In contrast, changes in fiber number account for 30–40% of the mass loss in females, but only 15–20% in males. To validate that our model captured the major sources of mass loss, we regressed the predicted mass deficit against the measured mass deficit for each muscle across both sexes. The measurements were significantly correlated (r2 = 0.41, p=0.002; Figure 1F). Additionally, the slope of the regression line was close to 1, indicating that the morphological measurements were able to account for the majority of muscle mass loss following tenotomy. Given these differences, all subsequent analyses investigating the effect of IKKβ knockdown and overexpression on tenotomy-induced muscle atrophy consider sex-specific effects.
 
-## IKKβ gain- and loss-of-function did not affect tenotomy-induced muscle atrophy
+### IKKβ gain- and loss-of-function did not affect tenotomy-induced muscle atrophy
 
 The gene encoding IKKβ (Ikbkb) was selectively deleted (IKKbMKD) or constitutively activated (IKKbMCA) in mature skeletal muscle fibers of 6–8-month-old transgenic mice. Tamoxifen treatment of IKKbMKD mice caused a 50–60% reduction in the expression of Ikbkb mRNA in supraspinatus muscles that was sustained through W8 (Figure 2A). Conversely, tamoxifen treatment of IKKbMCA mice caused a two- to threefold increase in Ikbkb expression at W8 (Figure 2B). Knockdown of Ikbkb expression decreased IKKβ protein levels by a comparable 50–60% (Figure 1C) while overexpression of constitutively active Ikbkb increased IKKβ protein levels by two- to threefold (Figure 2D). This deletion efficiency measured at the whole muscle level is comparable to other tamoxifen-inducible models in which satellite and interstitial cells also express the gene of interest. While the deletion efficiency in muscle fibers is likely higher than what is measured at the whole muscle level, it is likely incomplete and thus this model is referred to as knockdown rather than knockout. In male WT mice of the IKKbMKD cohort, Ikbkb expression significantly increased by 40–50% in response to tenotomy at both W1 and W8 post-tenotomy (Figure 2A). However, this effect was not seen in the WT mice of the IKKbMCA cohort (Figure 2B), nor was it evident at the protein level (Figure 2C). To ensure that a 50–60% reduction IKKβ protein was sufficient to impact NFκB signaling, we isolated the nuclear fraction from IKKbMKD and WT muscle and quantified NFκB subunits p50 and p65, which reflect the NFκB-proteasomal degradation axis. Nuclear p50 and p65 were reduced by more than 50% in IKKbMKD mice in both sham and tenotomy groups (Figure 2E), confirming inhibition of NFκB nuclear translocation. Furthermore, this assay was validated using positive controls (Figure 2—figure supplement 1). Thus, these genetic manipulations resulted in a consistent two- to three3fold knockdown or overexpression of IKKβ in both sexes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig2-v2.jpg)
+
+**Figure 2.:** (A) In mice with muscle-specific inducible IKKβ deletion (IKKbMKD), expression of the IKKβ gene (Ikbkb) was reduced 50–60% in male and female sham (SHM) and tenotomized (TEN) supraspinatus (SS) at week 1 (W1) and week 8 (W8) compared with wildtype (WT). (B) In mice with muscle-specific inducible overexpression of constitutively active IKKβ (IKKbMCA), Ikbkb expression was increased two- to threefold in SHM and TEN groups at W8. (C) Protein abundance of IKKβ was 50–60% lower in IKKbMKD compared with WT. (D) Protein abundance of IKKβ was two- to threefold higher in IKKbMCA compared with WT. (E) Protein abundance of NFκB subunits p50 and p65 in the nuclear fraction of SS muscles was reduced 50–60% in IKKbMKD compared with WT. N = 3–6 per group; *p<0.05, **p<0.01, ***p<0.005, ****p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Validation of the Active Motif nuclear extract kit against a literature-validated protocol designed for skeletal muscle (left). Western blot of nuclear p50 in protein extracts from a tibialis anterior (TA) muscle subjected to 50 eccentric contractions (ECC) 1 hr prior to harvest, the contralateral control TA (CTL), and two samples from the week 1 (W1) WT male sham (SHM) group (right). Nuclear p50 is expected to be elevated following eccentric exercise (Jiménez-Jiménez et al., 2008).
 
 In both sham and tenotomy groups, IKKβ conditional deletion caused a small increase in mass of the SS (Figure 3A) and IS (Figure 3B) muscles normalized to body mass. Three-way ANOVA applied within each treatment group showed a significant main effect of genotype in SS sham, SS tenotomy, and IS sham comparisons. However, only in the male SS at W1 post-tenotomy was the individual between-genotype comparison significant. To determine whether IKKβ conditional deletion uniquely affected the atrophic process post-tenotomy or simply increased muscle mass generally, tenotomized SS and IS muscle masses were normalized to the mass of the intact tibialis anterior (TA) of the same mouse. In this normalization scheme, no consistent difference was observed between genotypes in either muscle, either sex, or any timepoint. Conversely, overexpression of caIKKβ exacerbated tenotomy-induced atrophy to a very minor extent in both SS and IS muscles (Figure 3D and E), which resulted in a significant treatment × genotype interaction effect by three-way ANOVA. Normalizing to the mass of the TA eliminated these effects (Figure 3F). Tenotomized muscles in IKKbMKD mice exhibited the same sex specificity in mass loss (Figure 3A and B) as noted for their WT littermates (Figure 1). Tenotomized muscle mass from the IKKbMCA cohort did not show this effect when normalized to body mass, but there was a significant difference in body mass between sham and tenotomized male mice that may have obscured the atrophic sex specificity. Both SS and IS masses normalized to TA mass showed significant main effects of sex by two-way ANOVA (Figure 3F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig3-v2.jpg)
 
-**Figure 3.:** (A) Supraspinatus (SS) muscles from IKKbMKD mice had a minor increase in mass normalized to body mass in both SHM (left) and TEN (right) groups compared with WT. (B) Infraspinatus (IS) muscles from IKKbMKD mice similarly had a minor increase in normalized mass compared with WT. (C) When SS mass was normalized to tibialis anterior (TA) mass, there was no difference between IKKbMKD and WT groups. (D) IS muscles from IKKbMCA mice had a minor decrease in muscle mass in the TEN group at week 8 (W8) compared with WT. (E) IS muscles from IKKbMCA mice similarly had a minor decreased in normalized mass compared with WT in the TEN group only. (F) When SS mass was normalized to TA mass, there was no difference between IKKbMCA and WT groups. (A–F) Dotted lines are the average of all sham values included for reference. *p<0.05 between genotypes within the same sex and timepoint. †p<0.05 compared with week (W1) values within the same sex and genotype. N = 5–7 per group; &p<0.05 compared with sham values within the same sex and genotype.Figure 3—source data 1.
+**Figure 3.:** (A) Supraspinatus (SS) muscles from IKKbMKD mice had a minor increase in mass normalized to body mass in both SHM (left) and TEN (right) groups compared with WT. (B) Infraspinatus (IS) muscles from IKKbMKD mice similarly had a minor increase in normalized mass compared with WT. (C) When SS mass was normalized to tibialis anterior (TA) mass, there was no difference between IKKbMKD and WT groups. (D) IS muscles from IKKbMCA mice had a minor decrease in muscle mass in the TEN group at week 8 (W8) compared with WT. (E) IS muscles from IKKbMCA mice similarly had a minor decreased in normalized mass compared with WT in the TEN group only. (F) When SS mass was normalized to TA mass, there was no difference between IKKbMCA and WT groups. (A–F) Dotted lines are the average of all sham values included for reference. *p<0.05 between genotypes within the same sex and timepoint. †p<0.05 compared with week (W1) values within the same sex and genotype. N = 5–7 per group; &p<0.05 compared with sham values within the same sex and genotype.
 
-## IKKβ gain- and loss-of-function did not affect tenotomy-induced muscle function loss
+### IKKβ gain- and loss-of-function did not affect tenotomy-induced muscle function loss
 
 Following tenotomy, SS and IS muscles lose ~20–30% of their specific peak tetanic contractile tension (Figure 4; Meyer, 2022). This loss was not affected by IKKβ deletion or overexpression of caIKKβ in either muscle or either sex at any timepoint. Unlike mass loss, contractile deficits were similar between W2 and W8 in both sexes. This suggests that normalizing contractile tension to physiological cross-sectional area (PCSA) fully accounts for the ongoing mass loss.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig4-v2.jpg)
 
-**Figure 4.:** (A) Peak tetanic tension of supraspinatus (SS) muscles normalized to physiological cross-sectional area (PCSA) is not different between WT and IKKbMKD genotypes in sham (SHM) (left) and TEN (right) groups. (B) Peak tetanic tension of infraspinatus (IS) muscles is also not different between WT and IKKbMKD genotypes in SHM (left) and TEN (right) groups. (C) Peak tetanic tension of SS muscles is not different between WT and IKKbMCA genotypes in SHM and TEN groups. (D) Peak tetanic tension of IS muscles is not different between WT and IKKbMCA genotypes in SHM and TEN groups. N = 5–7 per group; &p<0.05 compared with sham values within the same sex and genotype.Figure 4—source data 1.
+**Figure 4.:** (A) Peak tetanic tension of supraspinatus (SS) muscles normalized to physiological cross-sectional area (PCSA) is not different between WT and IKKbMKD genotypes in sham (SHM) (left) and TEN (right) groups. (B) Peak tetanic tension of infraspinatus (IS) muscles is also not different between WT and IKKbMKD genotypes in SHM (left) and TEN (right) groups. (C) Peak tetanic tension of SS muscles is not different between WT and IKKbMCA genotypes in SHM and TEN groups. (D) Peak tetanic tension of IS muscles is not different between WT and IKKbMCA genotypes in SHM and TEN groups. N = 5–7 per group; &p<0.05 compared with sham values within the same sex and genotype.
 
-## Morphological adaptations following tenotomy were independent of IKKβ knockdown
+### Morphological adaptations following tenotomy were independent of IKKβ knockdown
 
 We next sought to explore whether the cellular underpinnings of the tenotomy-induced muscle mass loss and contractile dysfunction were modified by IKKβ knockdown. For these assays, we focused solely on the SS muscle since SS and IS responded similarly to tenotomy with regard to mass and contractile outcomes. Surprisingly, tenotomy caused relatively small changes in fiber CSA compared to other forms of atrophy for a similar mass loss. At W8 (the timepoint of maximal mass deficit), only type 2b fibers (Figure 5A, green) from male muscles exhibited a leftward shift in the histogram of CSA with tenotomy (Figure 5B, green), while type 2a fibers exhibited a rightward shift (Figure 5B, blue). Analysis of mean CSA of type 2a and type 2b fibers over time further illustrated this effect. There was a main effect of time in analysis of type 2a CSA by three-way ANOVA owing to the continued increase in CSA through W8 (Figure 5C). There was also a main effect of sex, with a significant sex x time interaction effect in type 2b CSA (Figure 5D) owing to the sex specificity presented in Figure 1. The mass loss unaccounted for by fiber CSA changes was due to decreases in fiber numbers and lengths (Figure 5E and F). Fiber length had an additional main effect of sex (Figure 5F) as the sex specificity presented in Figure 1 was evident in the IKKbMKD group as well. There were no significant main effects or interactions involving genotype by three-way ANOVA in any of the comparisons, indicating that IKKβ knockdown did not shift the mechanisms of mass loss. In contrast to morphological changes, three-way ANOVA of fiber-type distributions showed no consistent shifts in any fiber-type percentage as a function of tenotomy or IKKβ knockdown (Figure 5—figure supplement 1).
 
-## Tenotomy-induced structural pathology points to sex specificity in autophagy
+![Figure 5.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative fiber-type staining of histological sections from sham (SHM) and TEN WT supraspinatus (SS) muscles at week 8 (W8). Fiber types were identified by immunostaining against isoforms of myosin heavy chain – type 1 (red), type 2a (blue), type 2x (black), and type 2b (green) – and area was quantified by the laminin border (magenta). (B) Distribution of cross-sectional areas (CSA) for type 2a, 2x, and 2b fibers for male and female mice at W8. Histograms of type 2b fiber CSA in male mice are shifted to the left following TEN. (C) Average CSA of type 2a fibers and (D) average CSA of type 2b fibers across genotypes and timepoints within the TEN group. Only type 2b fiber CSA in males decreases following tenotomy. (E) Count of the total number of fibers in the SS cross-section across genotypes and timepoints within the TEN group. (F) Prediction of fiber length from measurements of muscle length during physiological testing at W2 and W8 within the TEN group. No data exist at week 1 because physiological testing was not performed at that timepoint. (C–F) The dotted lines are the average of all sham values included for reference for each sex. N = 5–7 per group; †p<0.05 compared with week (W1) values within the same sex and genotype.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Distribution of fiber types as quantified by myosin heavy chain isoform immunostaining on histological sections.
+
+### Tenotomy-induced structural pathology points to sex specificity in autophagy
 
 Next, we assessed metrics of structural pathology that are associated with tenotomy and thought to impact muscle contraction – fibrosis, fatty infiltration, and fiber degeneration – and related progenitor populations. Fibrosis and fatty infiltration are progressive in tenotomy (Rubino et al., 2007), and were therefore measured at W8 to capture the highest signal (Figure 6A). Fibrosis, assessed as the area fraction positive for Sirius Red, was elevated following tenotomy but without a main effect of genotype or sex, indicating that tenotomy induced fibrosis equally in WT and IKKβ knockdown males and females (Figure 6B). Fatty infiltration, assessed as the area fraction positive for Oil Red-O, was also elevated following tenotomy, an effect that was exacerbated in female mice due to the overall higher levels of intramuscular fat in females (Figure 6C; McHale et al., 2012). However, there was no main effect of genotype, again indicating that IKKβ knockdown did not affect the progression of fatty infiltration. Fiber degeneration was assessed on hematoxylin & eosin (H&E)-stained sections by a blinded rater counting necrotic fibers (active degeneration) and centrally nucleated fibers (regeneration) (Figure 6D). Across timepoints, there were no obvious necrotic fibers in tenotomized muscle, suggesting that active degeneration was either not occurring or missed at the timepoints chosen for assessment. However, there was a gradual increase in centrally nucleated fibers over time following tenotomy, which was exacerbated in males (Figure 6E). A blinded rater noted the appearance of basophilic puncta (hematoxylin-positive, DAPI-negative structures) in some H&E-stained sections (Figure 6D and F; single arrows). These were generally more prevalent in males than females, and this difference was exacerbated at 8W, where they were increased 20-fold over W1 levels (Figure 6G). These puncta stained positive for LC3 and p62, suggesting that they were autophagic vesicles. In line with the increase in fibrosis and fatty infiltration seen at W8, the population of fibro-/adipogenic progenitors (FAPs) identified by immunostaining for PDGFRα was increased at week 1 post-tenotomy (Figure 6H and I) in both sexes. In contrast, the population of satellite cells identified by nuclear Pax7 did not change with tenotomy at week 1, suggesting minimal regenerative response in the muscle following tendon transection. This aligns with the modest increase in central nuclei that account for less than 3% of fibers even at W8.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig6-v2.jpg)
 
-**Figure 6.:** (A) Representative Sirius Red and Oil Red-O staining of histological sections from sham (SHM) and TEN WT supraspinatus (SS) muscles at week 8 (W8). The red fraction in Sirius Red indicates concentrations of collagen, while the red fraction in Oil indicates intramuscular adipocytes. (B) Quantification of the fraction of the section area occupied by Sirius Red as a marker of fibrosis for male and female mice at W8 shows moderate increases with TEN in both genotypes. (C) Quantification of the fraction of section area occupied by Oil Red O as a marker of fatty infiltration for male and female mice at W8 shows significant increases with TEN in both genotypes. (D) Representative sections stained with H&E and laminin with DAPI used to identify centralized nuclei (double arrows) as hematoxylin and DAPI-positive structures central within the laminin boundary and other basophilic puncta (arrows) as hematoxylin-positive central structures negative for DAPI. (E) Quantification of fibers with centralized nuclei as a percentage of all fibers as a marker of regeneration across genotypes and timepoints within the TEN group. (F) Representative sections sequentially stained with LC3 or p62 followed by H&E to identify LC3/p62 and hematoxylin positivity in the same section. (G) Quantification of fibers with basophilic puncta as a percentage of all fibers across genotypes and timepoints within the TEN group. Basophilic puncta were more abundant in male SS sections at W8. (D, F) Dotted lines are the average of all sham values included for reference for each sex. N = 5–7 per group. (H) Representative immunostaining for PDGFRα (green) and Pax7 (red) identifying fibro-/adipogenic progenitors (FAPs) and satellite cells (SCs), respectively. (I) Quantification of FAPs shows an increase in tenotomized groups across genotypes and sexes. (J) Quantification of SCs shows no change with TEN. †p<0.05 compared with week (W1), #p<0.05 compared with W2, and &p<0.05 compared with sham values within the same sex and genotype.Figure 6—source data 1.
+**Figure 6.:** (A) Representative Sirius Red and Oil Red-O staining of histological sections from sham (SHM) and TEN WT supraspinatus (SS) muscles at week 8 (W8). The red fraction in Sirius Red indicates concentrations of collagen, while the red fraction in Oil indicates intramuscular adipocytes. (B) Quantification of the fraction of the section area occupied by Sirius Red as a marker of fibrosis for male and female mice at W8 shows moderate increases with TEN in both genotypes. (C) Quantification of the fraction of section area occupied by Oil Red O as a marker of fatty infiltration for male and female mice at W8 shows significant increases with TEN in both genotypes. (D) Representative sections stained with H&E and laminin with DAPI used to identify centralized nuclei (double arrows) as hematoxylin and DAPI-positive structures central within the laminin boundary and other basophilic puncta (arrows) as hematoxylin-positive central structures negative for DAPI. (E) Quantification of fibers with centralized nuclei as a percentage of all fibers as a marker of regeneration across genotypes and timepoints within the TEN group. (F) Representative sections sequentially stained with LC3 or p62 followed by H&E to identify LC3/p62 and hematoxylin positivity in the same section. (G) Quantification of fibers with basophilic puncta as a percentage of all fibers across genotypes and timepoints within the TEN group. Basophilic puncta were more abundant in male SS sections at W8. (D, F) Dotted lines are the average of all sham values included for reference for each sex. N = 5–7 per group. (H) Representative immunostaining for PDGFRα (green) and Pax7 (red) identifying fibro-/adipogenic progenitors (FAPs) and satellite cells (SCs), respectively. (I) Quantification of FAPs shows an increase in tenotomized groups across genotypes and sexes. (J) Quantification of SCs shows no change with TEN. †p<0.05 compared with week (W1), #p<0.05 compared with W2, and &p<0.05 compared with sham values within the same sex and genotype.
 
-## Knockdown of IKKβ did not induce the typical atrophic signaling pathways after tenotomy
+### Knockdown of IKKβ did not induce the typical atrophic signaling pathways after tenotomy
 
 We investigated which atrophic signaling pathways were active during the early and late phases of tenotomy responses. The ubiquitin-proteasome pathway may be activated during the early phase of tenotomy, consistent with a previous report (Valencia et al., 2017). While the typical atrogenes MuRF1 and MAFbx were not substantially elevated at W1, expression of Foxo3, an additional driver of both proteolysis and autophagy (Zhao et al., 2007), was significantly increased at W1 in female mice (Figure 7A). Expression of all three genes decreased at W8, suggesting that they are not driving late-stage atrophy. Consistent with this, protein ubiquitination, assessed by Western blot against ubiquitin, was modestly increased at W1 but not at W8 post-tenotomy (Figure 7B). To examine autophagy, we assessed gene expression and protein abundance of components of the autophagasome. While Becn1 and Bnip3 increased expression and Atg5 decreased expression significantly from W1 to W8, these changes were very minor (Figure 7C). Other components remained unchanged. Similarly, there were no differences in the LC3II/LC3I ratio or p62 at W1, but a modest increase at W8 with tenotomy, where three-way ANOVA showed a significant main effect of treatment (Figure 7D). Interestingly, three-way ANOVA of Gaparapl1, Becn1, and Bnip3 expression as well as protein levels for p62 found a main effect of sex owing to higher levels in male mice than female further supporting a sex specificity in autophagic processing. Overall, neither the ubiquitin-proteolysis nor autophagy-lysosome pathway were substantially affected by tenotomy at W1 or W8. Furthermore, knockdown of IKKβ did not impact these small effects. As the loss of muscle mass could be driven by decreased protein synthesis instead of increased protein degradation, we also assessed activation of the Akt/mTOR pathway, which can mediate increased protein synthesis in response to loading changes. We did not find any changes in phosphorylation of Akt, mTOR, or S6 ribosomal protein with tenotomy or IKKβ knockdown (Figure 7—figure supplement 1). Finally, there were no differences in myostatin expression, suggesting that tenotomy-induced atrophy is also not likely driven by myostatin (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig7-v2.jpg)
+
+**Figure 7.:** (A) Quantification of MuRF1, MAFbx, and Foxo3 gene expression normalized to GAPDH and week 1 (W1) WT male sham in male and female mice at W1 and week 8 (W8). (B) Quantification of the abundance of ubiquitin protein normalized to total protein stained with Ponceau at W1 and W8. (C) Quantification of Lc3b, Gabarapl1, Bnip3, Becn1, and Atg5 gene expression normalized to GAPDH and W1 WT male sham at W1 and W8. (D) Quantification of the ratio of LC3II to LC3I and p62 protein abundance at W1 and W8. N = 4–6 per group; #p<0.05 compared with male values within the same genotype. †p<0.05 compared with W1. &p<0.05 compared with sham values within the same sex and genotype, *p<0.05 compared with WT values within the same sex and treatment.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative Western blot for signaling proteins p-mTOR (Ser2448), mTOR, p-Akt (Ser473), Akt, pS6 ribosomal (ser235/236), and S6 ribosomal for week 1 (W1) male samples. Quantification of phosphorylated protein abundance relative to total respective protein abundance across treatment, genotype, and sex. (B) Western blot for signaling proteins p-mTOR (Ser2448), mTOR, p-Akt (Ser473), and Akt in muscle extracts from a tibialis anterior (TA) muscle subjected to 50 eccentric contractions (ECC) 1 hr prior to harvest, the contralateral control TA (CTL), a mouse treated with insulin (INS) 1 hr prior to harvest, and a saline (SAL)-treated control. p-mTOR and p-Akt are expected to be elevated relative to total mTOR and Akt with insulin treatment, but only p-mTOR is expected to elevated following eccentric contractions (Parkington et al., 2003). (C) Gene expression of myostatin (Mstn) at W1 and week 8 (W8). (D) Gene expression of Mstn in CTL, ECC, sham (SHM), and a 24-month-old moribund mouse (MORB).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82016/elife-82016-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Expression of MuRF1, MAFbx, and myostatin (Mstn) genes in a tibialis anterior (TA) muscle subjected to 50 eccentric contractions (ECC) 1 hr prior to harvest, the contralateral control TA (CTL), sham (SHM), and the infraspinatus from a 24-month-old moribund mouse (MORB). MuRF1 expression is expected to be elevated following eccentric exercise, while MAFbx remains unchanged and myostatin is decreased (Louis et al., 2007). Both MuRF1 and MAFbx are expected to be elevated in critical illness (Wollersheim et al., 2014). (B) Western blot of ubiquitin in muscle extracts from CTL, ECC, MORB, a mouse treated with insulin (INS) 1 hr prior to harvest, and a saline (SAL)-treated control. Ubiquitin is expected to be elevated with eccentric exercise and critical illness (Murton et al., 2008). (C) Western blot of LC3A/B in muscle extracts from CTL, ECC, MORB (and an age-matched control AGED), SAL, and INS. The ratio of LC3II/LC3I is elevated under increased autophagic flux, which is expected with eccentric exercise and critical illness, but not with insulin treatment (Banduseela et al., 2013; Langer et al., 2021).
 
 ## Discussion
 
@@ -102,23 +130,390 @@ In conclusion, we found that a twofold gain- or loss-of-function of IKKβ did no
 
 ## Methods
 
-## Study approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>C57BL/6J: Ikbkbtm2Cgn (mouse)</td>
+      <td>This paper</td>
+      <td>Ikbkbtm2Cgn</td>
+      <td>Originally generated by Manolis Pasparakis (Pasparakis et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>C57BL/6J: Ikbkbtm2Cgn (mouse)</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:008242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>C57BL/6J: Tg(ACTA1-cre/Esr1*)2Kesr/J (mouse)</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:025750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myosin heavy chain (slow, alpha-, and beta-) (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>BA-F8</td>
+      <td>IF (1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myosin heavy chain type IIA (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>SC-71</td>
+      <td>IF (1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myosin heavy chain type IIB (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>BF-F3</td>
+      <td>IF (1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-laminin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>11575</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- SQSTM1/p62 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5114</td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3A/B (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>12741</td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRα (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF1062</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax7 (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Pax7</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IKKβ (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8943</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mTOR (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2983</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-mTOR (Ser2448) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5536</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9272</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Akt (Ser473) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4060</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ubiquitin (rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>Z0458</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2066</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB p65 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8242</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB1 p105/p50 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>13586</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-histone H3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4499</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>9485</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nuclear Extract Kit</td>
+      <td>Active Motif</td>
+      <td>40010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>M.O.M. Mouse-on-moue Kit</td>
+      <td>Vector Laboratories</td>
+      <td>BMK-2202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MultiScribe reverse transcription kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antigen Retrieval Citra (pH-6.0)</td>
+      <td>Biogenex</td>
+      <td>HK086-5K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo32_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>AACCGGGAGGCCAGCTAAAGAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo32_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>TGGGCCTACAGAACAGACAGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trim63_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>GAGAACCTGGAGAAGCAGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trim63_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>CCGCGGTTGGTCCAGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mstn_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>CAGACCCGTCAAGACTCCTACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mstn_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>CAGTGCCTGGGCTCATGTCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxo3_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>ATCGCCTCCTGGCGGGCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxo3_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>ACGGCGGTGCTAGCCTGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lc3b_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>cactgctctgtcttgtgtaggttg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lc3b_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>tcgttgtgcctttattagtgcatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gabarapl1_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>catcgtggagaaggctccta</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gabarapl1_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>atacagctggcccatggtag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bnip3_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>AGGGCTCCTGGGTAGAACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bnip3_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>GCTGGGCATCCAACAGTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Becn1_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>AGCCTCTGAAACTGGACACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Becn1_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>CCTCTTCCTCCTGGGTCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg5_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>ggagagaagaggagccaggt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg5_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>gctgggggacaatgctaata</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>TGTGATGGGTGTGAACCACGAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>IDT</td>
+      <td>qPCR primers</td>
+      <td>GAGCCCTTCCACAATGCCAAAGT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study approval
 
 All animal work described was performed in accordance with the National Institutes of Health’s Guide for the Use and Care of Laboratory Animals and was approved by the Animal Studies Committee of the Washington University School of Medicine (IACUC 20-0459).
 
-## Experimental design
+### Experimental design
 
 Experiments were performed on male and female muscle-specific conditional IKKβ knockdown mice (IKKbMKD), muscle-specific conditionally active IKKβ mice (IKKbMCA), and respective littermate controls at 6–8 months of age. IKKβ-MKD mice were generated by breeding Ikbkbtm2Cgn (originally generated by Manolis Pasparakis; Pasparakis et al., 2002) mice with HSA-MCM (Jackson Labs; #025750) mice such that tamoxifen delivery induced deletion of the IKKβ gene in mature muscle fibers. IKKβ-CA mice were generated by breeding Gt(Rosa26)tm4(Ikbkb)Rsky (Jackson Labs; #008242) mice with HSA-MCM mice such that tamoxifen delivery induced expression of a constitutively active form of IKKβ in mature muscle fibers. Littermate mice that did not express Cre-recombinase were used as wildtype (WT) controls. Some data from WT mice have been reported previously (Meyer, 2022). Seven mice per group were randomly assigned in each design – IKKbMKD (three timepoints, two treatments, two genotypes, two sexes) and IKKbMCA (one timepoint, two treatments, two genotypes, two sexes) – for a total of 224 mice. Numbers per group for each outcome measure are provided for each figure and deviate from 7 in cases where muscles failed during testing, sample quality was poor or insufficient sample remained for the assay. Each mouse underwent tamoxifen treatment, bilateral tenotomy, or sham surgery followed by ex vivo muscle contractile testing and sacrifice. Muscles were then processed for additional measurements as described below: the SS from the right shoulder and the IS from the left shoulder were used for physiological testing and the SS from the left shoulder and the IS from the right shoulder were prepared for histology, qPCR, and Western blotting.
 
-## Surgical treatment
+### Surgical treatment
 
 Under continuous anesthesia (2% inhaled isoflurane at 2 L/min), both shoulders were prepared for sterile surgery. In a left lateral decubitus position, an ~3 mm incision was made through the skin from the acromial arch toward the mid-belly of the deltoid muscle, exposing the proximal deltoid. An incision was then made through the deltoid to expose the humerus. The humerus was then stabilized with one set of forceps while the acromial space was expanded with another forceps. Mice in the tenotomy group then had the tendons of the SS and IS muscles transected with microscissors. Mice in the sham group had no tendon transection. All mice then had the deltoid sutured to the trapezius muscle over the acromial arch with 5-0 absorbable Vicryl suture (Ethicon) and the skin incision closed with Vetbond suture glue (3M). The mice were then turned to lie on the right side and the same procedure was repeated for a bilateral treatment. This design was chosen to avoid the effects of altered use that could confound a contralateral control in a unilateral design. Following surgery, mice were provided analgesia and allowed free cage activity until the experimental end point.
 
-## Ex vivo muscle contractile testing
+### Ex vivo muscle contractile testing
 
 Mice assigned to the 2- and 8-week post-tenotomy outcome groups were anesthetized again at the experimental end point for ex vivo contractile testing of the SS and IS muscles as previously described (JOR and JCSM). The SS muscle was excised from the right side with its connection to the scapula and humeral head left intact. All other musculature was dissected free from the scapula, including the IS, which was prepared for histology as described below. The SS was then transferred to an ex vivo physiology rig (Aurora Scientific; 1300A) where it was immersed in Mammalian Ringers solution with the scapula secured to the arm of a dual force/length transducer (Aurora Scientific; 305C-LR) and the humeral head secured to a rigid post. Contraction was elicited by stimulation through parallel plate electrodes flanking the muscle. Muscle length was increased incrementally until the force of twitch contractions began to plateau. Then optimal length was determined by further adjusting length until peak tetanic tension was achieved. Muscle optimal length was then measured with a flexible ruler and the muscle was dissected from bony attachments, blotted, weighed, and flash-frozen for qPCR. All forces were normalized to physiological CSA, which was calculated from model-predicted fiber length and pennation angle values (Meyer, 2022). A similar procedure was then repeated on the left side for contractile testing of the IS and histological prep of the SS. Following testing, mice were euthanized. Mice assigned to the 1-week post-tenotomy outcome group were euthanized without contractile testing as the connective tissue ‘pseudo-tendon’ was too weak to sustain the connection to the humeral head during testing. Muscles that would have undergone contractile testing were flash-frozen in liquid nitrogen and the other muscles were prepared for histology as they were for the other groups.
 
-## Histological measurements
+### Histological measurements
 
 Muscles prepared for histology were affixed to cork at the distal end with tragacanth gum and frozen in liquid nitrogen cooled isopentane and stored at –80°C until sectioning. They were then transferred to a cryostat (Leica; CM1950) where they were transected at mid-belly with a razor blade. The proximal tip was stored at –80°C for Western blot and qPCR assays. The remainder was then sectioned at the mid-belly face at 10 μm for H&E, picrosirius red (Sirius Red), and Oil Red-O (ORO) staining and immunostaining for fiber typing by myosin heavy chain isoform (Developmental Studies Hybridoma Bank; BA-F8, SC-71, BF-F3; 1:30), fiber counting by laminin (Abcam; 11575; 1:400) outline, autophagic vesicle identification by p62 (Cell Signaling Technology [CST]; 5114; 1:100) and LC3A/B (CST; 12741; 1:100), FAP identification by platelet-derived growth factor α (PDGFRα) (R&D Systems; AF1062, 1:400), and satellite cells (SC) by Pax7 (Developmental Studies Hybridoma Bank; Pax7, 1:100).
 
@@ -126,18 +521,22 @@ Sections for ORO staining were mounted on pre-chilled slides and vapor-fixed for
 
 Immunostaining for p62, LC3A/B, PDGFRα, and Pax7 was performed on sections fixed in 4% paraformaldehyde for 15 min. Slides allocated for Pax7 underwent an additional step of antigen retrieval consisting of steaming in pre-heated Antigen Retrieval Citra (Biogenex; HK086-5K) for 15 min, followed by gradual cooling to room temperature and blocking with the M.O.M. (Mouse on Mouse) kit (Vector Laboratories) according to the manufacturer’s instructions. Slides allocated for p62 and LC3A/B were stained with H&E following imaging, allowing positive identification of p62/LC3 and hematoxylin in the same section. All other immunostaining was performed on fresh-frozen sections. With the exception of myosin heavy chain-stained sections, all immunostaining was counterstained with Hoechst 33342 (DAPI). Fiber area by fiber type was quantified on four 20× images from defined regions of the superficial and deep portion of the muscle using a semi-automated ImageJ macro. First, fiber ROIs are identified by thresholding the laminin signal using the Huang algorithm followed by selecting outlined regions by the Analyze Particles algorithm with manual deletion/addition of incorrect/missing regions. Then ROIs are typed by overlaying ROIs on channels stained with each myosin heavy chain type sequentially and scored as positive or negative by average signal. Type assignment is checked and errors corrected manually. Fiber number was quantified on 2× laminin stained images of the entire cross-section using the ROI identification portion of the algorithm. Central nuclei were defined as structures positive for hematoxylin and DAPI not adjacent to a laminin boundary and were counted manually through the entire cross-section. Basophilic puncta were defined as structures positive for hematoxylin but negative for DAPI and were counted manually through the entire cross-section. FAPs and SCs were counted manually on two nonoverlapping 10× images. FAPs were defined as structures positive for PDGFRα in the interstitium between laminin fiber boundaries. SCs were defined as Pax7-positive nuclei beneath the laminin boundary.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RNA was extracted from frozen muscle using a standard Trizol/chloroform extraction protocol. Briefly, muscle was bead homogenized in Trizol using a TissueLyser II (QIAGEN; 85300) and RNA extracted by addition of chloroform with centrifugation. RNA was precipitated in 50% isopropanol, washed in 75% ethanol, and dissolved in DNAse/RNAse free water. cDNA was generated using the MultiScribe reverse transcription kit (Applied Biosystems; 4368814) according to the manufacturer’s instructions. Transcript copies were detected using a fast SYBR Green PCR master mix (Applied Biosystems; 4385612). Primer sequences are listed in the Key Resources Table. Reactions were run in duplicate on a QuantStudio3 (Applied Biosystems) real-time PCR system. All expression values were normalized to GAPDH, and primers were validated against a positive control (Figure 2—figure supplement 1, Figure 7—figure supplements 1 and 2).
 
-## Western blotting
+### Western blotting
 
 Protein was extracted from frozen muscle in RIPA buffer supplemented with cOmplete Protease Inhibitor (Roche) with bead homogenization using a TissueLyser II (QIAGEN; 85300). Homogenized tissue was then solubilized for 1 hr at 4°C with agitation, centrifuged, and the protein concentration of the supernatant determined by a Pierce BCA assay (Thermo Fisher Scientific; 23225) according to the manufacturer’s instructions. Then, equivalent amounts of protein (40 μg) diluted in diH2O with Laemmli buffer were denatured and separated on 4–12% Bis-Tris gels (Invitrogen; NW04120). Protein was then transferred to polyvinylidene difluoride (PVDF) membrane, reversibly stained with Ponceau S and blocked in TBST+ (1× Tris-buffered saline with 2.5% fish gelatin, 0.1% sodium azide, and 0.5% tween). The following primary antibodies were applied overnight at 4°C at 1:1000 unless otherwise noted: IKKβ (CST; 8943), ubiquitin (Dako; Z0458), SQSTM1/p62 (CST; 5114), LC3A/B (CST; 12741), mTOR (CST; 2983), phospho-mTOR-ser2448 (CST; 5536), Akt (CST; 9272), phospho-Akt-ser473 (CST; 4060), and actin (Sigma; A2066; 1:10,000). To assay NFκB subunit translocation, protein from a subset of muscles was fractionated into nuclear and cytoplasmic components using a Nuclear Extract Kit (Active Motif; 40010) according to the manufacturer’s instructions. The nuclear fraction was validated against an established protocol (Dimauro et al., 2012) and separated, transferred, and blocked as described above. The following primary antibodies were applied overnight at 4°C at 1:1000 unless otherwise noted: p65 (CST; 8242), p50/105 (CST; 13586), Histone H3 (CST; 4499), and GAPDH (Abcam; 9485; 1:10,000). Following incubation, membranes were washed and incubated for 1 hr with the relevant secondary antibodies and imaged with a LI-COR Odyssey. Blot analysis was performed using Image Studio (LI-COR). Band intensities were normalized to an actin loading control with the exception of p50 and p65, which were normalized to histone H3 and ubiquitin that was normalized to Ponceau. When possible, antibodies were validated with a positive loading control (Figure 2—figure supplement 1, Figure 7—figure supplements 1 and 2).
 
-## Prediction of mass deficit from morphological measurements
+### Prediction of mass deficit from morphological measurements
 
-The relative contribution of fiber CSA, length, and number changes to the mass deficit was calculated by modeling fibers as cylinders. Under this assumption, the mass loss in a fiber (Δm) resulting from a decrease in fiber length (ΔFL) and decrease in fiber CSA (ΔFCSA) was calculated by multiplying the two and the density of muscle, ρ (Ward and Lieber, 2005). Then, the mass loss in the muscle was calculated by multiplying the mass loss in individual fiber types by the relative fraction of each fiber type (Rui et al., 2016) and the decrease in fiber number (ΔFN), according to Equation 1. This equation assumes that the density of muscle and the relative fraction of each fiber type is unchanged following tenotomy:(1)Δm=ΔFN∙ΔCSA1∙AF1+ΔCSA2a∙AF2a+ΔCSA2x∙AF2x+ΔCSA2b∙AF2b∙ΔFL∙ρ
+The relative contribution of fiber CSA, length, and number changes to the mass deficit was calculated by modeling fibers as cylinders. Under this assumption, the mass loss in a fiber (Δm) resulting from a decrease in fiber length (ΔFL) and decrease in fiber CSA (ΔFCSA) was calculated by multiplying the two and the density of muscle, ρ (Ward and Lieber, 2005). Then, the mass loss in the muscle was calculated by multiplying the mass loss in individual fiber types by the relative fraction of each fiber type (Rui et al., 2016) and the decrease in fiber number (ΔFN), according to Equation 1. This equation assumes that the density of muscle and the relative fraction of each fiber type is unchanged following tenotomy:
 
-## Statistical analyses and reproducibility
+$$
+Δm=ΔFN∙ΔCSA_{1}∙AF_{1}+ΔCSA_{2a}∙AF_{2a}+ΔCSA_{2x}∙AF_{2x}+ΔCSA_{2b}∙AF_{2b}∙ΔFL∙ρ
+$$
+
+### Statistical analyses and reproducibility
 
 Sample size was selected a priori using a power calculation (G*Power) with variance estimated from measures of SS mass and peak tetanic tension from a previous study. With n = 7, this study was predicted to be able to detect a 15% difference in sample means of both variables with α = 0.05 and (1-β) = 0.8. Following genotyping and nonrandomized group assignment, mice were given a numeric identifier and all experimenters were blinded to genotype. Cage-mates were assigned to a single treatment to enable true littermate controls. Between-group comparisons were made by two- or three-way ANOVA as indicated, with Sidak’s or FDR multiple testing correction applied, respectively. Normality was tested using the Shapiro–Wilk test. Actual numbers per group are indicated in each figure for each analysis. All results are presented as mean ± standard deviation. All statistical analyses were performed with GraphPad Prism.

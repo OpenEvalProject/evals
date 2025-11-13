@@ -35,35 +35,35 @@ A feature specific to the pathogenic NWMs is the use of human transferrin recept
 
 ## Results
 
-## Susceptibility of hTfR1 mice to JUNV infection
+### Susceptibility of hTfR1 mice to JUNV infection
 
 Wild-type (WT) mice are refractory to disease following JUNV challenge (Golden et al., 2015). To investigate whether expression of hTfR1 would confer susceptibility to disease following JUNV infection, groups of 3-week-old WT, hTfR1 heterozygous (HET) and hTfR1 homozygous (HOM) mice were challenged by intraperitoneal (i.p.) injection with a 105 fifty percent cell culture infectious dose (CCID50) of JUNV, or sham-infected, and observed for mortality and weight change (Figure 1A and B). On day 8 post-infection (p.i.), initial signs of lethargy and ruffling of fur accompanied weight loss in the cohort of hTfR1 HOM mice, which increased in severity until they succumbed to infection by day 16 p.i. JUNV disease was also observed in the hTfR1 HET mice but to a lesser degree with the mice exhibiting stagnated weight gain beginning on day 9 p.i with a single animal requiring euthanasia due to severe neurologic signs on day 14 p.i. In contrast, the WT mice showed no visibly apparent signs of illness, suggesting that expression of hTfR1 was necessary for the development of JUNV disease.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig1-v2.jpg)
 
-**Figure 1.:** Three-week-old WT, hTfR1 HET or hTfR1 HOM mice (n = 8–9/group) were infected i.p. with 105 CCID50 of JUNV and monitored daily. (A) Survival and (B) weight change of animals relative to the day of virus challenge (group mean and standard error of the mean; SEM) are shown. Sham-infected controls (n = 6) consisted of a mix of WT, hTfR1 HET and hTfR1 HOM hTfR1 mice. Aggregate data from two independent experiments. ***p=0.0003 and ****p<0.0001 compared to hTfR1 HOM mice.Figure 1—source data 1.
+**Figure 1.:** Three-week-old WT, hTfR1 HET or hTfR1 HOM mice (n = 8–9/group) were infected i.p. with 105 CCID50 of JUNV and monitored daily. (A) Survival and (B) weight change of animals relative to the day of virus challenge (group mean and standard error of the mean; SEM) are shown. Sham-infected controls (n = 6) consisted of a mix of WT, hTfR1 HET and hTfR1 HOM hTfR1 mice. Aggregate data from two independent experiments. ***p=0.0003 and ****p<0.0001 compared to hTfR1 HOM mice.
 
-## Age- and dose-dependent susceptibility of hTfR1 mice to lethal JUNV infection
+### Age- and dose-dependent susceptibility of hTfR1 mice to lethal JUNV infection
 
 To gain further insight into the susceptibility of hTfR1 HOM mice to lethal JUNV infection, groups of 3, 4, 5 and 6-week-old animals were challenged i.p. with 105 CCID50 of JUNV and observed for morbidity and mortality. The mice were also scored for clinical disease signalment to further characterize the disease course and presentation. As shown in Figure 2, susceptibility to JUNV disease decreased with age. Beginning one-week p.i., the 3-week-old mice started to display clinical disease signs accompanied by weight loss and uniform lethality by day 13 p.i. (Figure 2A,B and D). In the 4-week-old animals, clinical disease signs and stagnation in weight gain started to develop by day 8 p.i., with one animal succumbing to infection 13 days after JUNV challenge (Figure 2A,B and D). No mortality was observed in the 5-week-old animals despite notable weight loss and other signs of disease starting on day 8 p.i. (Figure 2A,C and D). There was no evidence of weight loss or observable clinical signs in the 6-week-old mice (Figure 2C and D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig2-v2.jpg)
 
-**Figure 2.:** Shown are (A) survival (n = 6/group for the 3- and 4-week-old mice, n = 3/group for the 5- and 6-week-old mice), (B) weight change in 3 to 4 week-old mice, (C) weight change in 5 to 6 week-old mice and D) clinical disease scores for each group infected i.p. with 105 CCID50 of JUNV. Open symbols in the weight change graphs indicate age-matched sham-infected controls (n = 3). The weight data are represented as the group mean and SEM of the percent change in weight of animals relative to their starting weights on the day of virus challenge. Clinical scoring is expressed as group mean and SEM. *p=0.0448 compared to age-matched sham-infected controls.Figure 2—source data 1.
+**Figure 2.:** Shown are (A) survival (n = 6/group for the 3- and 4-week-old mice, n = 3/group for the 5- and 6-week-old mice), (B) weight change in 3 to 4 week-old mice, (C) weight change in 5 to 6 week-old mice and D) clinical disease scores for each group infected i.p. with 105 CCID50 of JUNV. Open symbols in the weight change graphs indicate age-matched sham-infected controls (n = 3). The weight data are represented as the group mean and SEM of the percent change in weight of animals relative to their starting weights on the day of virus challenge. Clinical scoring is expressed as group mean and SEM. *p=0.0448 compared to age-matched sham-infected controls.
 
 Based on their susceptibility to lethal disease following JUNV challenge, we sought to determine the 50% and 90% lethal challenge doses (LD50 and LD90, respectively) in 3-week-old hTfR1 HOM mice. Groups of mice were challenged i.p. with serial log10 dilutions of JUNV (105, 104 and 103 CCID50) or sham-infected and observed for weight loss, other clinical disease signs and mortality. A JUNV challenge of 105 or 104 CCID50 resulted in uniform lethality by 15 and 18 days p.i., respectively, while 2 of 7 animals survived a challenge dose of 103 CCID50 (Figure 3A). The onset of weight loss and other clinical disease signs also occurred in a dose-dependent manner, with animals challenged with higher doses of virus developing disease earlier in the course of infection (Figure 3B and C). All animals inoculated with a challenge dose of 105 CCID50 started losing weight and exhibiting other clinical disease signs such as ruffled fur and lethargy by day 8 p.i. (Figure 3B and C). A one- to two-day delay in weight loss and other disease signs was observed in the groups challenged with 104 and 103 CCID50 of JUNV, respectively. Based on the mortality results in 3-week-old hTfR1 HOM mice, the JUNV LD50 was less than 1000 CCID50 and the LD90 was calculated to be 3793 CCID50.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig3-v2.jpg)
 
-**Figure 3.:** Shown are (A) survival (n = 7/JUNV challenge group, n = 3 sham-infected controls), (B) weight change relative to the day of virus challenge (group mean and SEM) and (C) clinical disease scores (group mean and SEM) for groups of mice infected i.p. with 105, 104 or 103 CCID50 of JUNV or sham-infected. LD90 = 3793; LD50 <1000 CCID50.Figure 3—source data 1.
+**Figure 3.:** Shown are (A) survival (n = 7/JUNV challenge group, n = 3 sham-infected controls), (B) weight change relative to the day of virus challenge (group mean and SEM) and (C) clinical disease scores (group mean and SEM) for groups of mice infected i.p. with 105, 104 or 103 CCID50 of JUNV or sham-infected. LD90 = 3793; LD50 <1000 CCID50.
 
-## Natural history and pathogenesis of JUNV infection in hTfR1 mice
+### Natural history and pathogenesis of JUNV infection in hTfR1 mice
 
 To gain insight into the pathogenesis of JUNV in the hTfR1 HOM mice, a natural history study was designed to investigate several virologic, clinical and laboratory parameters during the course of infection. To ensure uniform lethality, a challenge dose of 104 CCID50 was administered i.p. to 3-week-old animals. As shown in Figure 4A, the JUNV-challenged mice began to plateau in weight gain on day 9 p.i. and started to lose weight by day 10 p.i. Clinical disease signs were observed in a few mice as early as day 8 p.i., which corresponded with a sharp increase in serum IFN-α concentration (Figure 4B and C). By day 12 p.i., all mice in the day 12 sacrifice group had succumbed, with only 2 of 4 animals remaining in the group scheduled for sacrifice on day 14 p.i. These 2 mice were moribund and therefore euthanized on day 12 p.i. and assessed for IFN-α levels, viremia and tissue viral burden. High systemic concentrations of IFN-α were present in the serum of all JUNV-infected animals by day 10 p.i., with peak concentrations observed in the moribund day-12 mice (Figure 4C). The virus was first detected in the liver, spleen and brain on day 6 p.i. (Figure 4D). Thereafter, viral loads generally continued to increase and were detectable in other organs as the infection progressed. Viremia was undetectable in the mice until day 10 p.i. (Figure 4D). The two moribund mice that were euthanized on day 12 p.i. had substantial viral loads in serum and all tissues analyzed.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig4-v2.jpg)
 
-**Figure 4.:** Animals (n = 28) were infected i.p. with 104 CCID50 of JUNV and subsets of 4 mice were designated for euthanasia on days 2, 4, 6, 8, 10, 12 and 14 p.i. for blood and tissue collection and analysis. Due to death prior to sample collection on days 12 and 14, only 2 mice were available on day 12. Four sham-infected animals were included as controls and 3 (one per day) were euthanized on days 2, 6 and 10 for sample collection. (A) Weight change of animals relative to the day of virus challenge, (B) clinical disease scores (mean and SEM), (C) serum IFN-α concentrations and (D) tissue and serum viral titers (the x-axis represents the limit of detection) are shown. **p=0.0060, ****p<0.0001 compared to sham-infected normal controls. SI, sham-infected.Figure 4—source data 1.
+**Figure 4.:** Animals (n = 28) were infected i.p. with 104 CCID50 of JUNV and subsets of 4 mice were designated for euthanasia on days 2, 4, 6, 8, 10, 12 and 14 p.i. for blood and tissue collection and analysis. Due to death prior to sample collection on days 12 and 14, only 2 mice were available on day 12. Four sham-infected animals were included as controls and 3 (one per day) were euthanized on days 2, 6 and 10 for sample collection. (A) Weight change of animals relative to the day of virus challenge, (B) clinical disease scores (mean and SEM), (C) serum IFN-α concentrations and (D) tissue and serum viral titers (the x-axis represents the limit of detection) are shown. **p=0.0060, ****p<0.0001 compared to sham-infected normal controls. SI, sham-infected.
 
 Microscopic analysis revealed neutrophilic encephalitis and individual cell death (necrosis or apoptosis) in the brain and in the splenic red and white pulps in infected mice as early day 10 p.i. (not shown) with more moderate to severe lesions seen on day 12 p.i. (Figure 5). The splenic red and white pulp organization was normal, but mild to moderate individual cell necrosis or apoptosis was present in the white pulp and, to a lesser extent, in the red pulp (Figure 5F and H). The dead cells were presumed to be mainly lymphocytes or macrophages given the location in the white pulp. Immunohistochemistry (IHC) for JUNV antigen was performed on mice euthanized on day 12 p.i. Strong cytoplasmic immunoreactivity was present in neurons multifocally and randomly within the midbrain (Figure 6B and D), as well as the cerebral cortex, thalamus and hypothalamus (not shown). Moderate to strong cytoplasmic immunoreactivity was observed in mononuclear cells, mainly within the white pulp of the spleen (Figure 6F and H). JUNV antigen was not detected in the kidney, liver, intestine or lung tissue (not shown). The lack of IHC staining for viral antigen in certain tissues with measurable infectious viral loads may be due to a delay in the accumulation of JUNV antigen detectable by IHC, masking of antigen by prolonged formalin fixation of tissues and/or the sensitivity of the IHC staining technique.
 
@@ -75,19 +75,19 @@ Microscopic analysis revealed neutrophilic encephalitis and individual cell deat
 
 **Figure 6.:** Representative sections of brain (midbrain) from (A and C) a sham-infected mouse and (B and D) a JUNV-infected mouse at day 12 p.i. Note the presence of the virus in neurons (brown staining). (E and G) Spleen (white pulp) from a sham-infected control mouse. (F and H) Virus antigen in mononuclear cells in the spleen (white pulp) of a JUNV-infected mouse at day 12 p.i. Hematoxylin counterstain. A, B, E and F: 400 × magnification, bar = 50 μm. C, D, G and H: 1000 × magnification, bar = 20 μm.
 
-## Contribution of the type I IFN response in JUNV pathogenesis in hTfR1 mice
+### Contribution of the type I IFN response in JUNV pathogenesis in hTfR1 mice
 
 Severe cases of AHF are associated with elevated concentrations of serum IFN-α, which may contribute to disease severity (Levis et al., 1984; Levis et al., 1985). To investigate whether the type I IFN response contributes to the development of severe disease in hTfR1 HOM mice, we challenged cohorts of animals representing 6 different genetic backgrounds with JUNV. As expected, challenge of hTfR1 HOM mice with JUNV resulted in significant clinical disease, which progressed to uniform lethality within 2 weeks of infection (Figure 7A–C). In contrast, illness was not observed in hTfR1 HOM–IFN-α/β receptor (R)-deficient or hTfR1 HOM–IFN-α/β and -γR-deficient mice. At day 28 p.i., serum and tissue were collected from the surviving animals and titrated for infectious viral loads. JUNV was undetectable in WT mice and was present only in brain tissue of IFN-α/βR-deficient mice (Figure 7D). In contrast, IFN-α/β and -γR-deficient mice, and both IFN-α/βR and IFN-α/β and -γR-deficient mice expressing hTfR1, were harboring JUNV in most tissues.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig7-v2.jpg)
 
-**Figure 7.:** Mice (n = 3/group) of different phenotypic backgrounds were challenged with 105 CCID50 of JUNV and monitored daily for (A) survival, (B) weight change relative to the day of virus challenge (group mean and SEM), (C) clinical disease (group mean and SEM) and (D) tissue viral loads present on day 28 p.i. in surviving animals (virus was not detected in serum or intestine or in any WT mice). The x-axis represents the virus titer assay limit of detection. *p=0.0246 compared to WT mice or all other phenotypes.Figure 7—source data 1.
+**Figure 7.:** Mice (n = 3/group) of different phenotypic backgrounds were challenged with 105 CCID50 of JUNV and monitored daily for (A) survival, (B) weight change relative to the day of virus challenge (group mean and SEM), (C) clinical disease (group mean and SEM) and (D) tissue viral loads present on day 28 p.i. in surviving animals (virus was not detected in serum or intestine or in any WT mice). The x-axis represents the virus titer assay limit of detection. *p=0.0246 compared to WT mice or all other phenotypes.
 
 Because of the hybrid background of the genotypic variants of mice used in the initial experiment to assess the role of the type I IFN response in JUNV pathogenesis, we could not rule out the contribution of genetic variation to susceptibility to JUNV infection, disease and persistence. Thus, to further investigate the role of type I IFN in the lethal disease outcome in hTfR1 HOM mice, JUNV infection in the presence of temporary antibody-mediated blockade of type I IFN receptors was pursued. Administration of anti-IFN-α/βR monoclonal antibodies (mAbs) as a single dose the day prior to JUNV challenge, with or without additional maintenance dosing to continue to suppress the type I IFN response, was sufficient to protect hTfR1 HOM mice from lethal disease (Figure 8A). Notably, one of the mAb-treated mice in the one-week treatment group was euthanized on day 13 p.i. due to the development of recurring seizures of unknown etiology. While the vehicle placebo-treated animals displayed notable weight loss (>10%) and other disease signs starting on day 9 p.i., clinical disease was not observed in any of the anti-IFN-α/βR mAb-treated mice (Figure 8B and C). To a lesser extent than observed in the previous experiment in hTfR1 HOM mice lacking type I and type II IFN receptors, JUNV persisted in apparently healthy mAb-treated mice at the conclusion of the study (Figure 8D). Collectively, the findings from these two experiments indicate that the type I IFN response plays a central role in the development of severe disease associated with JUNV infection in mice expressing hTfR1.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55352/elife-55352-fig8-v2.jpg)
 
-**Figure 8.:** Animals (n = 3–4/group) were treated with a single 500 µg dose of IFN-α/βR-blocking mAb (with or without additional 250 µg maintenance doses every other day for one or two weeks) and infected i.p. the following day with 105 CCID50 of JUNV. The mice were monitored daily for (A) survival, (B) weight change relative to the day of virus challenge (mean and SEM), (C) clinical disease (mean and SEM) and (D) tissue viral loads in surviving animals on day 28 p.i. (virus was undetectable in serum, liver, lung, heart and intestine). The x-axis represents the virus titer assay limit of detection. *p=0.0114 comparing the two-week placebo treatment to the single and one-week mAb treatments; *p=0.0238 comparing the two-week placebo treatment to the two-week mAb treatment. Tx, treatment.Figure 8—source data 1.
+**Figure 8.:** Animals (n = 3–4/group) were treated with a single 500 µg dose of IFN-α/βR-blocking mAb (with or without additional 250 µg maintenance doses every other day for one or two weeks) and infected i.p. the following day with 105 CCID50 of JUNV. The mice were monitored daily for (A) survival, (B) weight change relative to the day of virus challenge (mean and SEM), (C) clinical disease (mean and SEM) and (D) tissue viral loads in surviving animals on day 28 p.i. (virus was undetectable in serum, liver, lung, heart and intestine). The x-axis represents the virus titer assay limit of detection. *p=0.0114 comparing the two-week placebo treatment to the single and one-week mAb treatments; *p=0.0238 comparing the two-week placebo treatment to the two-week mAb treatment. Tx, treatment.
 
 ## Discussion
 
@@ -105,50 +105,186 @@ In summary, our findings identify hTfR1-mediated entry and the type I IFN respon
 
 ## Materials and methods
 
-## Virus and cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6 hTfR1 knock-in mice (human TFRC replacing the mouse Tfrc)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>AG129 mice deficient in IFN-α/β receptor (R) and IFN-γR (Ifnar-/-; Ifngr-/-)</td>
+      <td>Washington University Medical School</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wild-type (WT) mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>hTfR1 heterozygous (HET) mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>hTfR1 homozygous (HOM) mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>IFN-α/βR-deficient mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>IFN-α/β and -γR-deficient mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>hTfR1 HOM–IFN-α/βR-deficient mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>hTfR1 HOM–IFN-α/β and -γR-deficient mice (hybrid C57BL/6 × 129 background)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Junín virus)</td>
+      <td>Recombinant JUNV Romero strain</td>
+      <td>University of Texas Medical Branch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-81 RRID:CVCL_0059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VeriKine Mouse Interferon Alpha ELISA Kit</td>
+      <td>PBL Assay Science</td>
+      <td>Cat# 42115–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG1 Fab (polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 115-007-185 RRID:AB_2632498</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-JUNV nucleoprotein antibody (QC03-BF11)</td>
+      <td>BEI Resources</td>
+      <td>Cat# NR-43775</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H+L) - HRP secondary antibody (polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# G-21040 RRID:AB_2536527</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFNAR-1 (anti-IFN-α/βR) monoclonal antibody (MAR1-5A3)</td>
+      <td>Bio X Cell</td>
+      <td>Cat# BE0241 RRID:AB_2687723</td>
+      <td>(500 µg primary dose; 250 µg maintenance dose)</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://www.graphpad.com)</td>
+      <td>RRID_SCR_002798</td>
+      <td>Version 8.4.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Virus and cells
 
 The molecular clone of the Romero strain of JUNV (Emonet et al., 2011) was kindly provided by Dr. Slobodan Paessler (University of Texas Medical Branch, Galveston, TX). The virus stock (107 CCID50/ml) was prepared from a single passage in Vero African green monkey kidney (ATCC CCL-81) cells (American Type Culture Collection, Manassas, VA) maintained in minimal essential medium (MEM) supplemented with 10% fetal bovine serum (HyClone, Logan, UT). Low-passage cells grown directly from the Vero stock generated from the first passage of the CCL-81 source vial obtained from ATCC were used for all experiments. The Vero cell stock was confirmed to be free of mycoplasma using the PlasmoTest – Mycoplasma Detection Kit (InvivoGen, San Diego, CA). The virus stock was diluted in MEM vehicle to achieve the desired viral doses in a 0.1 ml volume. All work with JUNV was conducted in enhanced biosafety level 3+ containment facilities at USU by Candid#1-vaccinated personnel.
 
-## Animals
+### Animals
 
 C57BL/6 hTfR1 knock-in (human TFRC replacing the mouse Tfrc) mice were obtained from Genentech (San Francisco, California) and have been previously described (Yu et al., 2014). Heterozygous (HET) hTfR1 mice were bred to produce homozygous (HOM) hTfR1 founders. The founding animals were backcrossed twice with AG129 mice, a 129/SvEv strain deficient in type I and type II IFN receptors (IFN-α/β and -γR-deficient), and the resulting hybrid animals were crossed to produce 1) WT, 2) hTfR1 HET, 3) hTfR1 HOM, 4) IFN-α/βR-deficient, 5) IFN-α/β and -γR-deficient, 6) hTfR1 HOM–IFN-α/βR-deficient and 7) hTfR1 HOM–IFN-α/β and -γR-deficient mice. The AG129 mice were kindly provided by Dr. Robert Shreiber (Washington University Medical School, St. Louis, MO). WT littermates and mice designated hTfR1 HET or hTfR1 HOM expressed both IFN-α/β and -γ receptors. All mice were genotyped for the presence or absence of mouse TfR1 and hTfR1 and type I and type II IFN receptors by PCR. Male and female animals were used in all studies.
 
-## Susceptibility of hTfR1 mice to lethal JUNV infection
+### Susceptibility of hTfR1 mice to lethal JUNV infection
 
 In 2 separate experiments, hybrid 3-week-old WT, hTfR1 HET and hTfR1 HOM mice (n = 8–9/virus challenge group, n = 6 for the sham-infected control group which included 2 mice of each genotype) were inoculated with 105 CCID50 of JUNV or sham-infected with MEM only via 0.1 ml i.p. injection. The number of mice per group was selected based on previous experience resolving differences in survival outcomes in uncharacterized rodent models of human viral diseases. Following JUNV challenge, the mice were weighed and observed daily for 21 days for morbidity and mortality. By 21 days p.i., survivors were generally recovering from the infection, as judged by normal activity and body condition.
 
-## Age-dependent susceptibility of hTfR1 HOM mice to lethal JUNV infection
+### Age-dependent susceptibility of hTfR1 HOM mice to lethal JUNV infection
 
 Cohorts of 3, 4, 5 and 6-week-old hTfR1 HOM mice (n = 6/JUNV infection group for the 3- and 4-week-old mice, n = 3/JUNV infection group for the 5- and 6-week-old mice and n = 3/age-matched sham-infected controls per age group) were challenged i.p. with 105 CCID50 of JUNV or sham-infected with MEM vehicle. Following challenge, the mice were weighed and monitored daily for morbidity and mortality for 28 days. For this and all subsequent experiments, clinical signs of disease were scored as 0 (not present) or 1 (present) based on the presence of the following disease signs: weight loss exceeding 10% of peak weight, lethargy, hunched posture, ruffled fur, tremors, paralysis, distended abdomen and bleeding. Animals with a cumulative clinical score greater than 6, experiencing weight loss greater than 30% compared to peak weight or unresponsive to external stimulus, were euthanized.
 
-## Lethal dose determination in hTfR1 HOM mice
+### Lethal dose determination in hTfR1 HOM mice
 
 To determine the LD50 and LD90 of JUNV in hTfR1 HOM mice, groups of 3-week-old mice (n = 7/virus challenge dose, n = 3/sham-infected control group) were inoculated by i.p. injection with one of three serial log10 dilutions (105, 104 or 103 CCID50) of JUNV or sham-infected with MEM. Mice were weighed the day before JUNV challenge and assigned to experimental groups to minimize sex and weight differences across the groups. For 28 days, the animals were weighed daily and assigned a score from 0 to 8 based on clinical signs of disease. The LD50 and LD90 values were calculated using Prism 8 (version 8.4.1; GraphPad, La Jolla, CA).
 
-## Natural history and pathogenesis of JUNV infection in hTfR1 HOM mice
+### Natural history and pathogenesis of JUNV infection in hTfR1 HOM mice
 
 Groups of 3-week-old hTfR1 mice were challenged with 104 CCID50 of JUNV or sham-infected. Mice were weighed the day before virus challenge and assigned to experimental groups to minimize sex and weight differences across the groups. Cohorts of 4 animals/group were euthanized every other day beginning on day 2 p.i. No animals survived beyond 12 days p.i. A single sham-infected control mouse was euthanized each day on days 2, 6 and 10 p.i. During the course of the experiment and prior to euthanasia, mice were weighed and evaluated daily for clinical disease signs. Blood samples were collected by submandibular vein puncture to obtain serum for analysis of IFN-α concentration and viremia. Following euthanasia, mice were transcardially perfused with sterile phosphate-buffered saline (PBS) before tissue samples of brain, liver, spleen, lung, heart, kidney and intestine were collected for determination of viral load and histopathology.
 
-## Determination of tissue and serum viral loads
+### Determination of tissue and serum viral loads
 
 Viral loads in tissues and serum were assayed using an infectious cell culture assay, as previously described (Gowen et al., 2007). Briefly, tissues were homogenized in a fixed volume of MEM and the homogenates and serum were serially diluted and added to quadruplicate wells of Vero cell monolayers in 96-well microtiter plates. Viral cytopathic effect was determined 10 days p.i., and the 50% endpoints were calculated by the Reed and Muench method (Reed, 1938). The assay limits of detection were 1.67 log10 CCID50 per ml of serum and 2.23 log10 CCID50/g of tissue.
 
-## Serum IFN-α analysis
+### Serum IFN-α analysis
 
 Serum IFN-α concentration for each mouse was determined using the VeriKine Mouse Interferon Alpha ELISA Kit (PBL Assay Science, Piscataway, NJ). The assay was completed following the manufacturer’s specifications.
 
-## Histopathology and immunohistochemistry (IHC)
+### Histopathology and immunohistochemistry (IHC)
 
 Samples of brain, liver, spleen, lung, heart, kidney and intestine of hTfR1 mice collected at 2, 4, 6, 8, 10 and 12 days p.i. were preserved in 10% neutral buffered formalin. Fixed tissue samples were processed and embedded in paraffin according to routine histologic techniques. Tissue sections, 5 µm thick, were stained with hematoxylin and eosin and examined by light microscopy by a board-certified pathologist who was blinded to the groups and day of euthanasia. Tissue lesions severity were scored as follows: 0 = no lesions, 1 = minimal, 2 = mild, 3 = moderate and 4 = severe. Formalin-fixed sections of spleen, liver, kidney, intestine, lung and brain from sham-infected and moribund JUNV-infected hTfR1 HOM mice at day 12 p.i. were also evaluated for the presence of JUNV antigen by IHC using a mouse mAb raised against the JUNV nucleoprotein (BEI Resources, Manassas, VA). Briefly, tissue sections were permeabilized with 0.5% Triton X-100 (Sigma-Aldrich, St. Louis, MO) for 5 min and the endogenous peroxidase activity was blocked for 15 min with 3% hydrogen peroxide. Prior to incubation with the primary anti-JUNV nucleoprotein mAb, the slides were incubated with blocking solution (PBS containing 10% normal goat serum and 0.2% Triton X 100) for 1 hr. To block background staining from endogenous mouse IgG, the tissue sections were incubated with goat anti-mouse IgG1 Fab (1:10 dilution; Jackson ImmunoResearch, West Grove, PA) for 1 hr. After blocking, the slides were incubated with mouse anti-JUNV nucleoprotein antibody, diluted 1:100 in blocking solution, for 24 hr. Finally, the slides were incubated for 1 hr with goat anti-mouse IgG (H+L)-HRP secondary antibody (1:100 dilution; Thermo Fisher Scientific, Waltham, MA) and developed using ImmPACT NovaRED Peroxidase Substrate (Vector Laboratories, Burlingame, CA) according to the manufacturer’s specifications. The slides were counterstained with hematoxylin.
 
-## Susceptibility of hTfR1 HOM mice lacking type I IFN receptor, or both type I and type II IFN receptors, to JUNV infection
+### Susceptibility of hTfR1 HOM mice lacking type I IFN receptor, or both type I and type II IFN receptors, to JUNV infection
 
 Cohorts of 3-week-old mice (n = 3/group) representing 6 different genetic profiles (WT, IFN-α/βR-deficient, IFN-α/β and -γR-deficient, hTfR1 HOM, hTfR1 HOM–IFN-α/βR-deficient and hTfR1 HOM–IFN-α/β and -γR-deficient) were challenged i.p. with 105 CCID50 JUNV. The number of mice per group was based on power analysis performed using commonly accepted values for type I error (0.05) and power (80%). After challenge, the animals were weighed and assigned a clinical score daily for 28 days. At the end of the study, serum and tissues were collected from the surviving animals and assessed for viral burden.
 
-## Blockade of the type I IFN receptor in hTfR1 HOM mice and susceptibility to JUNV infection
+### Blockade of the type I IFN receptor in hTfR1 HOM mice and susceptibility to JUNV infection
 
 Three-week-old hTfR1 HOM mice were weighed the day before JUNV challenge and assigned to experimental groups (n = 3–4/virus challenge group, n = 3 for the sham-infected group) to minimize sex and weight differences across the groups. The number of mice per group was based on power analysis performed using commonly accepted values for type I error (0.05) and power (80%). The mice were administered anti-IFN-α/βR mAbs (500 μg; MAR1-5A3; Bio X Cell, West Lebanon, NH) or placebo (PBS vehicle only) via i.p. injection, 24 hr before i.p. challenge with 105 CCID50 of JUNV. Following infection, specified groups of mice received additional i.p. injections of 250 μg of the anti-IFN-α/βR mAb or placebo every other day for 1 or 2 weeks. The animals were weighed and scored for clinical disease presentation daily for 28 days. At the conclusion of the study, serum and tissues were harvested from the surviving animals and viral loads determined.
 
-## Statistical analysis
+### Statistical analysis
 
 The log-rank test was used for the analysis of Kaplan-Meier survival curves. A one-way analysis of variance (ANOVA) with Dunnett’s multiple comparisons test was performed to compare differences in serum IFN-α concentrations. Weight change curves of groups where all animals survived were compared by two-way repeated-measures ANOVA with Sidak multiple comparisons test. All statistical evaluations were performed using Prism 8 (version 8.4.1). Results were considered significant if p≤0.05.

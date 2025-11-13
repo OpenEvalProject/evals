@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.15833.001 Epidermal barrier epithelia form a first line of defense against the environment, protecting animals against infection and repairing physical damage. In C. elegans, death-associated protein kinase (DAPK-1) regulates epidermal morphogenesis, innate immunity and wound repair. Combining genetic suppressor screens and pharmacological tests, we find that DAPK-1 maintains epidermal tissue integrity through regulation of the microtubule (MT) cytoskeleton. dapk-1 epidermal phenotypes are suppressed by treatment with microtubule-destabilizing drugs and mimicked or enhanced by microtubule-stabilizing drugs. Loss of function in ptrn-1 , the C. elegans member of the Patronin/Nezha/CAMSAP family of MT minus-end binding proteins, suppresses dapk-1 epidermal and innate immunity phenotypes. Over-expression of the MT-binding CKK domain of PTRN-1 triggers epidermal and immunity defects resembling those of dapk-1 mutants, and PTRN-1 localization is regulated by DAPK-1. DAPK-1 and PTRN-1 physically interact in co-immunoprecipitation experiments, and DAPK-1 itself undergoes MT-dependent transport. Our results uncover an unexpected interdependence of DAPK-1 and the microtubule cytoskeleton in maintenance of epidermal integrity. DOI: http://dx.doi.org/10.7554/eLife.15833.001
+Epidermal barrier epithelia form a first line of defense against the environment, protecting animals against infection and repairing physical damage. In C. elegans, death-associated protein kinase (DAPK-1) regulates epidermal morphogenesis, innate immunity and wound repair. Combining genetic suppressor screens and pharmacological tests, we find that DAPK-1 maintains epidermal tissue integrity through regulation of the microtubule (MT) cytoskeleton. dapk-1 epidermal phenotypes are suppressed by treatment with microtubule-destabilizing drugs and mimicked or enhanced by microtubule-stabilizing drugs. Loss of function in ptrn-1, the C. elegans member of the Patronin/Nezha/CAMSAP family of MT minus-end binding proteins, suppresses dapk-1 epidermal and innate immunity phenotypes. Over-expression of the MT-binding CKK domain of PTRN-1 triggers epidermal and immunity defects resembling those of dapk-1 mutants, and PTRN-1 localization is regulated by DAPK-1. DAPK-1 and PTRN-1 physically interact in co-immunoprecipitation experiments, and DAPK-1 itself undergoes MT-dependent transport. Our results uncover an unexpected interdependence of DAPK-1 and the microtubule cytoskeleton in maintenance of epidermal integrity.
 
 ## Introduction
 
@@ -28,71 +28,258 @@ Here we took a genetic approach to understanding DAPK-1’s functions in the epi
 
 ## Results
 
-## dapk-1 epidermal morphological defects can be suppressed or enhanced by loss of function in microtubule regulators
+### dapk-1 epidermal morphological defects can be suppressed or enhanced by loss of function in microtubule regulators
 
-To identify new
+To identify new dapk-1 interactors, we screened for genetic suppressors of dapk-1 epidermal phenotypes. All dapk-1 mutants display epidermal morphological (Mor) defects, with penetrance varying depending on the allele (Figure 1A, Figure 1—figure supplement 1A) (Tong et al., 2009). The Mor phenotype reflects a progressive accumulation of the cuticle and degeneration of the underlying epidermis at the extreme anterior and posterior, as well as the dorsal midline. dapk-1(ju4), which causes a missense alteration S179L in the DAPK-1 kinase domain, causes 100% of animals to display this aberrant morphology. We mutagenized dapk-1(ju4) animals and screened for suppression of the Mor phenotype (see Methods). We identified multiple extragenic suppressors of dapk-1(ju4), two of which are described here. One suppressor, ju698, causes a nonsense mutation in ptrn-1, which encodes the C. elegans member of the Patronin/CAMSAP/Nezha family of MT minus end binding proteins. A null allele ptrn-1(lt1) suppressed dapk-1(ju4) phenotypes to the same extent as ptrn-1(ju698) (Figure 1B; Figure 1—figure supplement 1C). Suppression of dapk-1(ju4) by ptrn-1(0) was rescued by a single-copy insertion (Mos-SCI) ptrn-1(+) transgene and by transgenes expressing PTRN-1 under the control of the dpy-7 promoter, specific to the larval epidermis, indicating that loss of PTRN-1 function in the larval epidermis is required for suppression of the dapk-1(ju4) phenotype.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig1-v2.jpg)
 
-**Figure 1.:** dapk-1 epidermal phenotypes are modified by mutations in cytoskeletal regulating genes.(A) Anterior epidermal morphology of wild type adult and aberrant morphology (Mor phenotype, red arrowhead) of dapk-1(ju4) animals; suppression by ptrn-1(ju698) and dhc-1(ju697). DIC images; scale bar, 10 μm. Anterior is to the left and dorsal up. (B) Loss of function in ptrn-1 or dhc-1 suppresses the anterior epidermal morphology defects of dapk-1(ju4) and dapk-1(gk219). Mor penetrance at 20°C; N>100 per genotype. Fisher’s exact test; ***p<0.001. Black stars in B are comparisons to WT; red stars are comparisons to dapk-1(ju4)DOI: http://dx.doi.org/10.7554/eLife.15833.002
+**Figure 1.:** (A) Anterior epidermal morphology of wild type adult and aberrant morphology (Mor phenotype, red arrowhead) of dapk-1(ju4) animals; suppression by ptrn-1(ju698) and dhc-1(ju697). DIC images; scale bar, 10 μm. Anterior is to the left and dorsal up. (B) Loss of function in ptrn-1 or dhc-1 suppresses the anterior epidermal morphology defects of dapk-1(ju4) and dapk-1(gk219). Mor penetrance at 20°C; N>100 per genotype. Fisher’s exact test; ***p<0.001. Black stars in B are comparisons to WT; red stars are comparisons to dapk-1(ju4)
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** dapk-1 phenotypes by loss of function in cytoskeletal regulators(A) Dissection microscope images of WT and Mor animals. (B) Schematic of DAPK-1 protein showing domains and locations of previous and newly identified alleles. (C) Suppression of dapk-1(ju4) Mor phenotypes by additional alleles of ptrn-1 and dhc-1, and rescue by PTRN-1(+) single copy insertion. ptrn-1 and dhc-1 single mutants display normal head morphology. (D) Partial suppression of dapk-1(ju4) by intragenic stop codon mutations. Mutants that modify dapk-1(ju4) do not induce epidermal defects in a dapk-1(+) background. The penetrance of dapk-1(gk219) resembles that of mutations in which the entire dapk-1 locus is deleted. N>100. Fisher’s exact test; ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.15833.003
+**Figure 1—figure supplement 1.:** (A) Dissection microscope images of WT and Mor animals. (B) Schematic of DAPK-1 protein showing domains and locations of previous and newly identified alleles. (C) Suppression of dapk-1(ju4) Mor phenotypes by additional alleles of ptrn-1 and dhc-1, and rescue by PTRN-1(+) single copy insertion. ptrn-1 and dhc-1 single mutants display normal head morphology. (D) Partial suppression of dapk-1(ju4) by intragenic stop codon mutations. Mutants that modify dapk-1(ju4) do not induce epidermal defects in a dapk-1(+) background. The penetrance of dapk-1(gk219) resembles that of mutations in which the entire dapk-1 locus is deleted. N>100. Fisher’s exact test; ***p<0.001.
 
 Our screen also identified a mutation in the dynein heavy chain, dhc-1(ju697), which results in a missense change G2537S in the fifth P-loop of DHC-1. Complete loss of function in dhc-1 causes lethality (Gonczy et al., 1999); an independent loss-of-function allele dhc-1(or195ts) fully suppressed dapk-1(ju4) morphological defects at 20°C (Figure 1B; Figure 1—figure supplement 1C). This suppression was rescued by a DHC-1::GFP single-copy insertion transgene (Figure 1B). PTRN-1 and other CAMSAP proteins interact with MT minus ends (Goodwin and Vale, 2010; Jiang et al., 2014), and dynein is critical for MT minus-end dependent transport and MT organization. We found that dhc-1(or195) or dhc-1(or195); ptrn-1(0) caused more complete suppression of dapk-1(ju4) phenotypes than did ptrn-1(0), suggesting DHC-1 might affect additional pathways required for dapk-1 function.
 
 We also isolated two intragenic suppressors, ju1143 and ju1145, which result in nonsense mutations (Q608stop and R48stop) in dapk-1(ju4) (Figure 1—figure supplement 1B). These mutations reduce the penetrance of dapk-1(ju4) Mor phenotypes from 100% to 40% and 30% respectively, and resemble the dapk-1(gk219) deletion allele and other newly generated deletions of the dapk-1 locus (Figure 1—figure supplement 1B,D). Although dapk-1(ju4) phenotypes are recessive, the identification of such intragenic suppressors suggests ju4 causes a gain of function (see Discussion). Both ptrn-1(lt1) and dhc-1(or195) completely suppressed dapk-1(gk219) morphological phenotypes (Figure 1B), suggesting loss of function in PTRN-1 or DHC-1 bypasses the requirement for DAPK-1.
 
-Based on our identification of two MT-interacting proteins in our suppressor screen we tested additional MT-associated factors, as well as orthologs of genes known to interact with DAPK1 or CAMSAPs (Table 1). Partial loss of function in unc-116, which encodes a kinesin-1 plus-end directed motor, suppressed dapk-1(ju4) morphological defects. DAPK family members have previously been implicated in MT stability, promoting function of the MT-associated protein tau via the Pin1 prolyl isomerase or the MARK kinase (Kim et al., 2014; Wu et al., 2011). However, loss of function in orthologs of these genes (ptl-1, pinn-1, par-1) did not modify dapk-1(ju4) phenotypes (Table 1), suggesting DAPK-1 regulates epidermal MTs via a novel mechanism.10.7554/eLife.15833.004Table 1.Suppressors and enhancers of dapk-1 morphological defects.DOI: http://dx.doi.org/10.7554/eLife.15833.004GeneAlleles and sequence changeMammalian orthologsA. Suppressors (forward screen)ptrn-1ju698CAMSAP/Patronin*lt1tm5597dhc-1ju697Dynein heavy chain*or195tsdapk-1ju1143(intragenic)ju1145B. Suppressors (candidates)unc-116e2310Kinesin-1sma-1e30Beta-heavy spectrinC. Enhancersklp-7tm2143Kinesin-13mei-1or642tsp60 kataninspas-1tm683Spastincat-4tm773GTP cyclohydrolase IF47G4.5ok2667p80 kataninD. No interactionebp-1tm1357Plus-end binding proteinebp-2gk756Plus-end binding proteinccpp-1ok1821Cytosolic Carboxypeptidaseccpp-6ok382Cytosolic Carboxypeptidasemcrs-1tm3681Microspherule Protein 1efa-6tm3124EFA6ttll-5tm3360Tubulin tyrosine ligase-likettll-11tm4059Tubulin tyrosine ligase-likettll-12tm4957Tubulin tyrosine ligase-likeunc-70e524β-Spectrindylt-2gk762Dynein light chaindnc-1or404tsp150 dynactinnud-1ok552NDE1/NDEL1nud-2ok949NDE1/NDEL1unc-14e57kinesin-1 adaptortbg-1t1465γ-tubulinptl-1ok621taupinn-1tm2235Pin1par-1zu310tsMARKSuppressors indicated * were tested for suppression of dapk-1(ju4) and dapk-1(gk219). Enhancers were tested with dapk-1(gk219). Genes in section D were mostly tested for interaction with dapk-1(ju4). dapk-1 tbg-1 double mutants were extremely sick, and a stable strain could not be obtained; n > 100 animals scored per genotype.
+Based on our identification of two MT-interacting proteins in our suppressor screen we tested additional MT-associated factors, as well as orthologs of genes known to interact with DAPK1 or CAMSAPs (Table 1). Partial loss of function in unc-116, which encodes a kinesin-1 plus-end directed motor, suppressed dapk-1(ju4) morphological defects. DAPK family members have previously been implicated in MT stability, promoting function of the MT-associated protein tau via the Pin1 prolyl isomerase or the MARK kinase (Kim et al., 2014; Wu et al., 2011). However, loss of function in orthologs of these genes (ptl-1, pinn-1, par-1) did not modify dapk-1(ju4) phenotypes (Table 1), suggesting DAPK-1 regulates epidermal MTs via a novel mechanism.
+
+**Table 1.**
+ Suppressors and enhancers of dapk-1 morphological defects.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Alleles and sequence change</th>
+      <th>Mammalian orthologs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">A. Suppressors (forward screen)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ptrn-1</td>
+      <td>ju698</td>
+      <td rowspan="3">CAMSAP/Patronin</td>
+    </tr>
+    <tr>
+      <td>*lt1</td>
+    </tr>
+    <tr>
+      <td>tm5597</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dhc-1</td>
+      <td>ju697</td>
+      <td rowspan="2">Dynein heavy chain</td>
+    </tr>
+    <tr>
+      <td>*or195ts</td>
+    </tr>
+    <tr>
+      <td rowspan="2">dapk-1</td>
+      <td>ju1143</td>
+      <td rowspan="2">(intragenic)</td>
+    </tr>
+    <tr>
+      <td>ju1145</td>
+    </tr>
+    <tr>
+      <td colspan="3">B. Suppressors (candidates)</td>
+    </tr>
+    <tr>
+      <td>unc-116</td>
+      <td>e2310</td>
+      <td>Kinesin-1</td>
+    </tr>
+    <tr>
+      <td>sma-1</td>
+      <td>e30</td>
+      <td>Beta-heavy spectrin</td>
+    </tr>
+    <tr>
+      <td colspan="3">C. Enhancers</td>
+    </tr>
+    <tr>
+      <td>klp-7</td>
+      <td>tm2143</td>
+      <td>Kinesin-13</td>
+    </tr>
+    <tr>
+      <td>mei-1</td>
+      <td>or642ts</td>
+      <td>p60 katanin</td>
+    </tr>
+    <tr>
+      <td>spas-1</td>
+      <td>tm683</td>
+      <td>Spastin</td>
+    </tr>
+    <tr>
+      <td>cat-4</td>
+      <td>tm773</td>
+      <td>GTP cyclohydrolase I</td>
+    </tr>
+    <tr>
+      <td>F47G4.5</td>
+      <td>ok2667</td>
+      <td>p80 katanin</td>
+    </tr>
+    <tr>
+      <td colspan="3">D. No interaction</td>
+    </tr>
+    <tr>
+      <td>ebp-1</td>
+      <td>tm1357</td>
+      <td>Plus-end binding protein</td>
+    </tr>
+    <tr>
+      <td>ebp-2</td>
+      <td>gk756</td>
+      <td>Plus-end binding protein</td>
+    </tr>
+    <tr>
+      <td>ccpp-1</td>
+      <td>ok1821</td>
+      <td>Cytosolic Carboxypeptidase</td>
+    </tr>
+    <tr>
+      <td>ccpp-6</td>
+      <td>ok382</td>
+      <td>Cytosolic Carboxypeptidase</td>
+    </tr>
+    <tr>
+      <td>mcrs-1</td>
+      <td>tm3681</td>
+      <td>Microspherule Protein 1</td>
+    </tr>
+    <tr>
+      <td>efa-6</td>
+      <td>tm3124</td>
+      <td>EFA6</td>
+    </tr>
+    <tr>
+      <td>ttll-5</td>
+      <td>tm3360</td>
+      <td>Tubulin tyrosine ligase-like</td>
+    </tr>
+    <tr>
+      <td>ttll-11</td>
+      <td>tm4059</td>
+      <td>Tubulin tyrosine ligase-like</td>
+    </tr>
+    <tr>
+      <td>ttll-12</td>
+      <td>tm4957</td>
+      <td>Tubulin tyrosine ligase-like</td>
+    </tr>
+    <tr>
+      <td>unc-70</td>
+      <td>e524</td>
+      <td>β-Spectrin</td>
+    </tr>
+    <tr>
+      <td>dylt-2</td>
+      <td>gk762</td>
+      <td>Dynein light chain</td>
+    </tr>
+    <tr>
+      <td>dnc-1</td>
+      <td>or404ts</td>
+      <td>p150 dynactin</td>
+    </tr>
+    <tr>
+      <td>nud-1</td>
+      <td>ok552</td>
+      <td>NDE1/NDEL1</td>
+    </tr>
+    <tr>
+      <td>nud-2</td>
+      <td>ok949</td>
+      <td>NDE1/NDEL1</td>
+    </tr>
+    <tr>
+      <td>unc-14</td>
+      <td>e57</td>
+      <td>kinesin-1 adaptor</td>
+    </tr>
+    <tr>
+      <td>tbg-1</td>
+      <td>t1465</td>
+      <td>γ-tubulin</td>
+    </tr>
+    <tr>
+      <td>ptl-1</td>
+      <td>ok621</td>
+      <td>tau</td>
+    </tr>
+    <tr>
+      <td>pinn-1</td>
+      <td>tm2235</td>
+      <td>Pin1</td>
+    </tr>
+    <tr>
+      <td>par-1</td>
+      <td>zu310ts</td>
+      <td>MARK</td>
+    </tr>
+  </tbody>
+</table>
+
+_Suppressors indicated * were tested for suppression of dapk-1(ju4) and dapk-1(gk219). Enhancers were tested with dapk-1(gk219). Genes in section D were mostly tested for interaction with dapk-1(ju4). dapk-1 tbg-1 double mutants were extremely sick, and a stable strain could not be obtained; n > 100 animals scored per genotype._
 
 CAMSAPs are thought to promote MT stability in part by protecting minus ends from the MT depolymerizing enzyme kinesin-13 (Goodwin and Vale, 2010). Consistent with this model, loss of function in klp-7/kinesin-13 strongly enhanced morphological defects of dapk-1(gk219), both in ptrn-1(+) and in ptrn-1(0) backgrounds (Figure 1B). Partial loss of function of the MT severing enzymes MEI-1/p60 katanin or SPAS-1/Spastin also enhanced dapk-1(gk219) Mor phenotypes. None of these mutants conferred morphological defects in a dapk-1(+) background (Figure 1—figure supplement 1D). These analyses suggest that aberrant dapk-1 function causes epidermal integrity to be sensitized to MT stability. dapk-1(ju4) defects were not suppressed by loss of function in several other genes implicated in MT dynamics (Table 1), suggesting a specific subset of MT regulators can affect epidermal morphogenesis.
 
-## PTRN-1/Patronin is required for the upregulated epidermal innate immune responses and accelerated wound repair in dapk-1(ju4) mutants
+### PTRN-1/Patronin is required for the upregulated epidermal innate immune responses and accelerated wound repair in dapk-1(ju4) mutants
 
-In
+In C. elegans sterile wounding or fungal infection induces expression of antimicrobial peptides (AMPs) in the epidermis (Couillault et al., 2004; Pujol et al., 2008). dapk-1(ju4) animals constitutively express high levels of AMPs such as nlp-29 and nlp-30, and this hyperactive epidermal immune response is genetically separable from dapk-1(ju4) epidermal morphological defects (Tong et al., 2009). To address whether the extragenic suppressors or enhancers of dapk-1 morphological defects also interacted with the innate immune response, we examined nlp-29 expression in dhc-1(or195) and unc-116(e2310). Neither mutant suppressed the elevated innate immune response in dapk-1(ju4) (Figure 2A; Figure 2—figure supplement 1B), as measured using a Pnlp-29-GFP transcriptional reporter. In contrast, ptrn-1(0) fully suppressed the elevated immune response of dapk-1(ju4) (Figure 2A,B). Among all suppressors tested, only PTRN-1 interacted with DAPK-1 in epidermal morphology and in innate immunity. Given the unique and specific genetic interactions of ptrn-1 and dapk-1, we focused our analysis on PTRN-1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig2-v2.jpg)
 
-**Figure 2.:** ptrn-1 suppresses dapk-1(ju4) innate immune and wound repair phenotypes.(A) dapk-1(ju4) animals display an elevated expression of the antimicrobial peptide nlp-29 (Pnlp-29-GFP, frIs7); this is suppressed by ptrn-1(0), whereas dhc-1(or195) and other mutations do not suppress (see also Figure 2—figure supplement 1A). Day 1 adults. (B) Quantitation of fluorescence intensity ratio (Green:Red, normalized to WT = 1) of animals in A, using the COPAS Biosort. N>100. Fisher’s exact test; ***p<0.001. pmk-1 is a MAPK required for activation of nlp-29 transcription; pmk-1 mutants serve as a negative control. (C) ptrn-1(0) suppresses the accelerated actin ring closure in dapk-1(ju4) mutants after needle wounding. The wound-triggered actin ring is visualized using Pcol-19-GFP::moesin (juIs352); scale, 10 µm. (D) Quantitation of actin ring diameter, mean ± SEM. One-way ANOVA and Dunn’s post-test; *p<0.05; **p<0.01; ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.15833.005
+**Figure 2.:** (A) dapk-1(ju4) animals display an elevated expression of the antimicrobial peptide nlp-29 (Pnlp-29-GFP, frIs7); this is suppressed by ptrn-1(0), whereas dhc-1(or195) and other mutations do not suppress (see also Figure 2—figure supplement 1A). Day 1 adults. (B) Quantitation of fluorescence intensity ratio (Green:Red, normalized to WT = 1) of animals in A, using the COPAS Biosort. N>100. Fisher’s exact test; ***p<0.001. pmk-1 is a MAPK required for activation of nlp-29 transcription; pmk-1 mutants serve as a negative control. (C) ptrn-1(0) suppresses the accelerated actin ring closure in dapk-1(ju4) mutants after needle wounding. The wound-triggered actin ring is visualized using Pcol-19-GFP::moesin (juIs352); scale, 10 µm. (D) Quantitation of actin ring diameter, mean ± SEM. One-way ANOVA and Dunn’s post-test; *p<0.05; **p<0.01; ***p<0.001.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** dapk-1 modifiers do not affect the dapk-1(ju4) constitutively active innate immune response.(A) Loss of function in unc-116, sma-1, or klp-7 does not drastically modify the elevated expression of the Pnlp-29-GFP transcriptional reporter in dapk-1(ju4) mutants. (B) dhc-1(or195) is epistatic to ptrn-1 for the innate immune response phenotype in dapk-1(+) background. (C) ptrn-1(0) suppresses the accelerated actin ring closure in dapk-1(gk219) mutants after needle wounding (Pcol-19-GFP::moesin, juIs352); scale, 10 µm. (D) Quantitation of C, mean ± SEM. Kruskal-Wallis and Dunn’s post test; *p<0.05; **p<0.01; ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.15833.006
+**Figure 2—figure supplement 1.:** (A) Loss of function in unc-116, sma-1, or klp-7 does not drastically modify the elevated expression of the Pnlp-29-GFP transcriptional reporter in dapk-1(ju4) mutants. (B) dhc-1(or195) is epistatic to ptrn-1 for the innate immune response phenotype in dapk-1(+) background. (C) ptrn-1(0) suppresses the accelerated actin ring closure in dapk-1(gk219) mutants after needle wounding (Pcol-19-GFP::moesin, juIs352); scale, 10 µm. (D) Quantitation of C, mean ± SEM. Kruskal-Wallis and Dunn’s post test; *p<0.05; **p<0.01; ***p<0.001.
 
 DAPK-1 acts in the epidermis to maintain epidermal morphology (Tong et al., 2009). Although epidermal development is overtly normal in ptrn-1(0) mutants, PTRN-1 acts redundantly with γ-tubulin and the ninein-like protein NOCA-1 to assemble noncentrosomal MT arrays essential for epidermal development (Wang et al., 2015). However, loss of function in γ-tubulin/TBG-1 did not suppress dapk-1(ju4) epidermal defects (Table 1), suggesting DAPK-1 specifically interacts with the PTRN-1 pathway.
 
 dapk-1 mutants also display accelerated epidermal wound closure, manifested by the rate of closure of actin rings that form around puncture wounds (Xu and Chisholm, 2011). We found that ptrn-1 mutations suppressed this accelerated wound closure to wild type rates (Figure 2C,D, Figure 2—figure supplement 1C,D). Moreover, ptrn-1(0) single mutants displayed significantly delayed wound closure compared to the wild type. Thus, DAPK-1 and PTRN-1 play antagonistic roles in epidermal development and in wound repair.
 
-## Pharmacological modulation of MT stability can suppress or enhance dapk-1 morphological defects
+### Pharmacological modulation of MT stability can suppress or enhance dapk-1 morphological defects
 
 Because the dapk-1 epidermal phenotypes are suppressed by loss of function in a MT stabilizing factor (Patronin/ptrn-1) and enhanced by loss of function in MT destabilizing factors (Kinesin-13/klp-7, Katanin/mei-1, Spastin/spas-1) we hypothesized that epidermal defects in dapk-1 mutants might result from excessive stabilization of epidermal MTs. We therefore tested whether drugs that depolymerize MTs (colchicine, nocodazole) or stabilize MTs (paclitaxel) could modify epidermal Mor defects. Some experiments used cat-4 mutants, which are defective in biopterin synthesis and display leaky cuticles and hypersensitivity to drugs (Loer et al., 2015).
 
-Colchicine treatment significantly suppressed the epidermal morphology defects of
+Colchicine treatment significantly suppressed the epidermal morphology defects of dapk-1(gk219) animals (Figure 3A). cat-4 itself strongly enhanced dapk-1(gk219), suggesting that dapk-1 is also sensitized to defects in cuticle integrity (Figure 3—figure supplement 1A). The morphological defects of dapk-1(gk219) cat-4 animals were suppressed by colchicine in a dose-dependent manner, and high concentrations of colchicine (5 mM) significantly suppressed dapk-1(ju4) phenotypes (Figure 3—figure supplement 1A). Conversely, treatment with the MT stabilizing drug paclitaxel enhanced dapk-1(gk219) morphological defects, consistent with Mor phenotypes in dapk-1(ju4) mutants being caused by hyper-stabilized MTs (Figure 3A). Indeed, paclitaxel treatment of wild type animals could induce dapk-1-like epidermal defects, albeit at very low penetrance (Figure 3A,B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig3-v2.jpg)
 
-**Figure 3.:** dapk-1 epidermal morphology defects are mimicked or enhanced by MT stabilization and suppressed by MT depolymerization.(A) MT stabilization by paclitaxel treatment induces dapk-1-like morphological defects in the wild type and in ptrn-1(0) mutants, and enhances the morphological defects of dapk-1(gk219). Colchicine treatment suppresses dapk-1(gk219) morphological defects. Statistics: Fisher’s exact test; ***p<0.001; n > 100 animals per condition. (B) DIC images of epidermal defects in representative wild type and ptrn-1(0) animals after paclitaxel treatment. (C) Confocal images of epidermal MT architecture in the heads of WT and dapk-1(ju4) L2 and L4 larvae (Pdpy-7-GFP::TBB-2, ltSi570). Yellow bracket indicates lateral epidermal ridge, red brackets mark dorsoventral epidermis overlying muscles. dapk-1(ju4) L4 animals display bundling of MTs in the lateral epidermis (yellow arrowhead) and disorganized circumferential MTs (white arrowhead). (D) Effects of MT drugs on epidermal MT organization (ltSi570) in heads of L4 animals. Treatment with colchicine causes loss of circumferential MT bundles (yellow asterisks). Treatment with low concentrations of paclitaxel (5 µM) causes circumferential bundles to be brighter and straighter than in wild type (blue arrow); higher concentrations of paclitaxel (15 µM) induce overt MT bundling (yellow arrow), crossing of circumferential MTs (green arrow), and dapk-1-like morphological defects (red arrowhead). All scale bars, 10 µm. (E) Treatment with 15 µM paclitaxel significantly increases the anisotropy of MT bundles in the lateral epidermis. Statistics, Kruskal-Wallis and Dunn’s post test; *p<0.05, ***p<0.001; N>8 animals.DOI: http://dx.doi.org/10.7554/eLife.15833.007
+**Figure 3.:** (A) MT stabilization by paclitaxel treatment induces dapk-1-like morphological defects in the wild type and in ptrn-1(0) mutants, and enhances the morphological defects of dapk-1(gk219). Colchicine treatment suppresses dapk-1(gk219) morphological defects. Statistics: Fisher’s exact test; ***p<0.001; n > 100 animals per condition. (B) DIC images of epidermal defects in representative wild type and ptrn-1(0) animals after paclitaxel treatment. (C) Confocal images of epidermal MT architecture in the heads of WT and dapk-1(ju4) L2 and L4 larvae (Pdpy-7-GFP::TBB-2, ltSi570). Yellow bracket indicates lateral epidermal ridge, red brackets mark dorsoventral epidermis overlying muscles. dapk-1(ju4) L4 animals display bundling of MTs in the lateral epidermis (yellow arrowhead) and disorganized circumferential MTs (white arrowhead). (D) Effects of MT drugs on epidermal MT organization (ltSi570) in heads of L4 animals. Treatment with colchicine causes loss of circumferential MT bundles (yellow asterisks). Treatment with low concentrations of paclitaxel (5 µM) causes circumferential bundles to be brighter and straighter than in wild type (blue arrow); higher concentrations of paclitaxel (15 µM) induce overt MT bundling (yellow arrow), crossing of circumferential MTs (green arrow), and dapk-1-like morphological defects (red arrowhead). All scale bars, 10 µm. (E) Treatment with 15 µM paclitaxel significantly increases the anisotropy of MT bundles in the lateral epidermis. Statistics, Kruskal-Wallis and Dunn’s post test; *p<0.05, ***p<0.001; N>8 animals.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) MT modulation of epidermal morphology in dapk-1 mutants. Colchicine suppresses the epidermal morphology defects of dapk-1(gk219) cat-4 in a dose-dependent manner. dhc-1(or195) and dapk-1(gk219) ptrn-1(0) backgrounds are hypersensitive to effects of paclitaxel. N>100. Fisher’s exact test; ***p<0.001. (B) Adult animal with Mor defects (white asterisk) and bundled MTs (yellow arrowheads) after paclitaxel treatment (Pcol-19-GFP::TBB-2, juSi239). Scale, 10 µm. (C) Treatment with colchicine does not induce nlp-29 expression, while only higher concentrations of colchicine can suppress the constitutively active nlp-29 expression of dapk-1(ju4) mutants; marker: Pnlp-29-GFP, frIs7. (D) Treatment with paclitaxel induces nlp-29 expression in ptrn-1(0) mutants, and to a lesser extent, in WT animals.DOI: http://dx.doi.org/10.7554/eLife.15833.008
+**Figure 3—figure supplement 1.:** (A) MT modulation of epidermal morphology in dapk-1 mutants. Colchicine suppresses the epidermal morphology defects of dapk-1(gk219) cat-4 in a dose-dependent manner. dhc-1(or195) and dapk-1(gk219) ptrn-1(0) backgrounds are hypersensitive to effects of paclitaxel. N>100. Fisher’s exact test; ***p<0.001. (B) Adult animal with Mor defects (white asterisk) and bundled MTs (yellow arrowheads) after paclitaxel treatment (Pcol-19-GFP::TBB-2, juSi239). Scale, 10 µm. (C) Treatment with colchicine does not induce nlp-29 expression, while only higher concentrations of colchicine can suppress the constitutively active nlp-29 expression of dapk-1(ju4) mutants; marker: Pnlp-29-GFP, frIs7. (D) Treatment with paclitaxel induces nlp-29 expression in ptrn-1(0) mutants, and to a lesser extent, in WT animals.
 
 ptrn-1(0) mutants display overtly normal epidermal morphology, but were six times more sensitive to the effects of paclitaxel compared to WT animals (Figure 3A,B). Paclitaxel also induced morphological defects in dapk-1(gk219) ptrn-1(0) double mutants (Figure 3—figure supplement 1A), although not to the same extent as in dapk-1(gk219) single mutants (Figure 3A). dhc-1(or195) single mutants were also hypersensitive to paclitaxel, compared to wild type (Figure 3—figure supplement 1A), possibly reflecting increased free tubulin concentration in these mutants. Taken together, these data are consistent with the model that dapk-1 mutants display excessively stabilized MTs that cause aberrant epidermal morphology.
 
 We also asked whether pharmacological manipulation of MTs affected the epidermal innate immune response. At high concentrations of colchicine we noted significant suppression of dapk-1(ju4) innate immune responses. Conversely, 5 μM paclitaxel induced Pnlp-29-GFP expression in 40% of ptrn-1(0) mutants, including in animals not displaying strong Mor phenotype (Figure 3—figure supplement 1B), while higher concentrations of paclitaxel (15 μM) could induce Pnlp-29-GFP in a subset of WT animals. Thus, destabilization of epidermal MTs can reverse the upregulation of epidermal innate immune responses in dapk-1 mutants, while hyper-stabilization of MTs is sufficient to induce the innate immune response, possibly by compromising epidermal integrity.
 
-## dapk-1 mutants display aberrant MTs resembling those of paclitaxel-stabilized animals
+### dapk-1 mutants display aberrant MTs resembling those of paclitaxel-stabilized animals
 
-The above analyses suggest
+The above analyses suggest dapk-1 mutants might display excessively stabilized MTs. We therefore analyzed epidermal MT architecture using the tubulin marker TBB-2::GFP (see Materials and methods; Figure 4—figure supplement 1A). In the lateral hyp7 epidermal syncytium MTs form a dense meshwork mostly oriented along the anteroposterior axis. In contrast, the dorsoventral compartment of hyp7, overlying body wall muscles, contains parallel circumferential MT bundles spaced 1–1.5 μm apart (Figure 3C; Figure 4—figure supplement 1B,C; Figure 4E). These arrays extend from the lateral epidermis to the dorsal or ventral midlines.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig4-v2.jpg)
 
-**Figure 4.:** dapk-1 defects in epidermal MT architecture are suppressed by ptrn-1.(A) ptrn-1(0) and dapk-1(ju4) display distinct effects on epidermal MT organization; MTs visualized in young adults (Pcol-19-GFP::TBB-2, juSi239). Left column, lateral views of the head; right column, dorsal view. ptrn-1(0) mutant adults display fewer circumferential MT bundles in the dorsoventral epidermis (red asterisks). dapk-1(ju4) mutants display increased bundling in the lateral epidermis (yellow arrowhead), quantified by anisotropy index in panel C. dapk-1(ju4) ptrn-1(0) double mutants display normal MT bundling in the lateral epidermis and reduced dorsoventral MTs (red asterisks). Mor phenotype, white asterisk. Scale, 10 µm. (B) Cartoon of MT organization in the C. elegans lateral and dorsoventral epidermis; colored boxes indicate ROIs used for quantitation of MT parameters in panels C–F. (C) dapk-1(ju4) animals display elevated MT bundle anisotropy in the lateral epidermis, which is suppressed by ptrn-1(0). (D–F) MT bundle length, density and crossing frequency in the dorsoventral epidermis is reduced in ptrn-1(0) and in dapk-1(ju4) ptrn-1(0) double mutants. N>8 animals per genotype. Bars show mean ± SEM. Kruskal-Wallis and Dunn’s post test; *p<0.05; **p<0.01; ***p<0.001. (G–I) Quantitation of epidermal EBP-2::GFP comet dynamics in the lateral and dorsoventral epidermis. N>10 animals per genotype.DOI: http://dx.doi.org/10.7554/eLife.15833.009
+**Figure 4.:** (A) ptrn-1(0) and dapk-1(ju4) display distinct effects on epidermal MT organization; MTs visualized in young adults (Pcol-19-GFP::TBB-2, juSi239). Left column, lateral views of the head; right column, dorsal view. ptrn-1(0) mutant adults display fewer circumferential MT bundles in the dorsoventral epidermis (red asterisks). dapk-1(ju4) mutants display increased bundling in the lateral epidermis (yellow arrowhead), quantified by anisotropy index in panel C. dapk-1(ju4) ptrn-1(0) double mutants display normal MT bundling in the lateral epidermis and reduced dorsoventral MTs (red asterisks). Mor phenotype, white asterisk. Scale, 10 µm. (B) Cartoon of MT organization in the C. elegans lateral and dorsoventral epidermis; colored boxes indicate ROIs used for quantitation of MT parameters in panels C–F. (C) dapk-1(ju4) animals display elevated MT bundle anisotropy in the lateral epidermis, which is suppressed by ptrn-1(0). (D–F) MT bundle length, density and crossing frequency in the dorsoventral epidermis is reduced in ptrn-1(0) and in dapk-1(ju4) ptrn-1(0) double mutants. N>8 animals per genotype. Bars show mean ± SEM. Kruskal-Wallis and Dunn’s post test; *p<0.05; **p<0.01; ***p<0.001. (G–I) Quantitation of epidermal EBP-2::GFP comet dynamics in the lateral and dorsoventral epidermis. N>10 animals per genotype.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** dapk-1 mutants.(A) Cartoon of C. elegans post-embryonic epidermis (hyp7 syncytium and lateral seam cells) showing the organization of MTs in the lateral and dorsoventral (muscle-adjacent) compartments. A large syncytium (hyp7) encloses most of the adult animal and forms two compartments: thin layers adjacent to the body wall muscle quadrants, and thickened ridges laterally and at the dorsal and ventral midlines (Figure 4—figure supplement 1A). The dorsoventral epidermis is extremely thin (~50 nm) along its apicobasal axis and is packed with arrays of hemidesmosome-like attachment structures that link muscles to the external cuticle. In contrast, the lateral epidermis is several μm thick and contains most nuclei. The two sets of MTs, in the lateral and in the dorsoventral epidermis, are seen throughout the hyp7 syncytium and in the smaller epidermal cells of the head and tail. (B) MT bundle density in WT and dapk-1(ju4) L2 and L4 animals. (C) dapk-1(ju4) adults display thinner MT bundles. (D–G) Quantitation of MT architecture in dapk-1(gk219). Graph colors refer to the ROIs in Figure 4B. All graphs: Kruskal-Wallis test and Dunn’s post-test; *p<0.05, ***p<0.001, N>8. (H) Confocal images of lateral epidermis (Pcol-19-GFP-TBB-2, juSi239). Yellow arrowhead, bundled MTs; white asterisk, Mor phenotype. Scale, 10 µm.DOI: http://dx.doi.org/10.7554/eLife.15833.010
+**Figure 4—figure supplement 1.:** (A) Cartoon of C. elegans post-embryonic epidermis (hyp7 syncytium and lateral seam cells) showing the organization of MTs in the lateral and dorsoventral (muscle-adjacent) compartments. A large syncytium (hyp7) encloses most of the adult animal and forms two compartments: thin layers adjacent to the body wall muscle quadrants, and thickened ridges laterally and at the dorsal and ventral midlines (Figure 4—figure supplement 1A). The dorsoventral epidermis is extremely thin (~50 nm) along its apicobasal axis and is packed with arrays of hemidesmosome-like attachment structures that link muscles to the external cuticle. In contrast, the lateral epidermis is several μm thick and contains most nuclei. The two sets of MTs, in the lateral and in the dorsoventral epidermis, are seen throughout the hyp7 syncytium and in the smaller epidermal cells of the head and tail. (B) MT bundle density in WT and dapk-1(ju4) L2 and L4 animals. (C) dapk-1(ju4) adults display thinner MT bundles. (D–G) Quantitation of MT architecture in dapk-1(gk219). Graph colors refer to the ROIs in Figure 4B. All graphs: Kruskal-Wallis test and Dunn’s post-test; *p<0.05, ***p<0.001, N>8. (H) Confocal images of lateral epidermis (Pcol-19-GFP-TBB-2, juSi239). Yellow arrowhead, bundled MTs; white asterisk, Mor phenotype. Scale, 10 µm.
 
 Chronic treatment with colchicine caused breakage and loss of circumferential MT bundles in the dorsoventral epidermis (Figure 3D); in the lateral compartment, MTs became sparse and less bundled than in the WT. Conversely, paclitaxel treatment caused circumferential MT bundles to be straighter and thicker (Figure 3D,E). At high paclitaxel concentrations (15 μM), circumferential MT bundles became disorganized and lateral MT bundles were thicker (Figure 3D,E). Thus, MT stabilization by paclitaxel results in MTs becoming straighter and more bundled.
 
@@ -100,65 +287,402 @@ We then examined MTs in dapk-1(ju4) mutants, focusing on the anterior epidermis,
 
 We next asked whether loss of function in PTRN-1 affected the disorganization of MT architecture in dapk-1(ju4). ptrn-1(0) mutant larvae have slightly fewer circumferential MT bundles (Wang et al., 2015). We found that ptrn-1(0) adults displayed a significant loss of circumferential MT bundles (~50% of WT; Figure 4A,E,F); remaining bundles were shorter than in the wild type (Figure 4D). Lateral MT bundles in ptrn-1(0) adults displayed normal anisotropy (Figure 4C). In dapk-1(ju4) ptrn-1(0) double mutants the number and length of circumferential MT bundles resembled that of ptrn-1(0) mutants (Figure 4D–F). However ptrn-1(0) suppressed the increased anisotropy of lateral MTs in dapk-1(ju4) to wild type levels (Figure 4C). These results indicate that antagonistic interactions between PTRN-1 and DAPK-1 balance MT architecture in the epidermis.
 
-We next assessed the effects of dapk-1 mutants on epidermal MT dynamics using the MT plus end marker EBP-2::GFP (EBP-GFP for brevity). EBP-GFP binds to growing MT plus ends and in vivo forms moving comets whose movement can be quantified by kymograph analysis (see Methods). We found that MT plus ends in the wild type adult epidermis were highly dynamic, with 0.09 ± 0.015 comets/μm2 in the lateral epidermis, and slightly more (0.12 ± 0.015 comets/μm2) in the dorsoventral epidermis (Videos 1,2). The overall density of comets in ptrn-1(0) animals was similar to that in wild type (Figure 4H), as previously reported for larvae (Wang et al., 2015). By contrast, dapk-1(ju4) mutants, as well as dapk-1(ju4) ptrn-1(0) double mutants, had significantly more comets in the lateral epidermis than in WT or ptrn-1(0) (Videos 3,4). In wild type adults, EBP-GFP comets grew at 0.35 ± 0.006 μm/s in the lateral epidermis, and 0.26 ± 0.01 μm/s in the dorsoventral epidermis, comparable to growth rates in the larval epidermis (Wang et al., 2015). MT growth rates in the lateral epidermis were significantly reduced in dapk-1(ju4) mutants, and increased in ptrn-1(0) single and in dapk-1(ju4) ptrn-1(0) mutants (Figure 4G). dapk-1(ju4) mutants thus display more slow-growing MT plus ends in the lateral epidermis, consistent with a partial stabilization of MT dynamics.10.7554/eLife.15833.011Video 1.EBP-GFP dynamics in adult lateral epidermis (Pcol-19).DOI: http://dx.doi.org/10.7554/eLife.15833.01110.7554/eLife.15833.012Video 2.EBP-GFP dynamics in adult dorsoventral epidermis.DOI: http://dx.doi.org/10.7554/eLife.15833.01210.7554/eLife.15833.013Video 3.EBP-GFP dynamics in adult lateral epidermis, dapk-1(ju4) background.DOI: http://dx.doi.org/10.7554/eLife.15833.01310.7554/eLife.15833.014Video 4.EBP-GFP dynamics in adult dorsoventral epidermis, dapk-1(ju4) background.DOI: http://dx.doi.org/10.7554/eLife.15833.014
+We next assessed the effects of dapk-1 mutants on epidermal MT dynamics using the MT plus end marker EBP-2::GFP (EBP-GFP for brevity). EBP-GFP binds to growing MT plus ends and in vivo forms moving comets whose movement can be quantified by kymograph analysis (see Methods). We found that MT plus ends in the wild type adult epidermis were highly dynamic, with 0.09 ± 0.015 comets/μm2 in the lateral epidermis, and slightly more (0.12 ± 0.015 comets/μm2) in the dorsoventral epidermis (Videos 1,2). The overall density of comets in ptrn-1(0) animals was similar to that in wild type (Figure 4H), as previously reported for larvae (Wang et al., 2015). By contrast, dapk-1(ju4) mutants, as well as dapk-1(ju4) ptrn-1(0) double mutants, had significantly more comets in the lateral epidermis than in WT or ptrn-1(0) (Videos 3,4). In wild type adults, EBP-GFP comets grew at 0.35 ± 0.006 μm/s in the lateral epidermis, and 0.26 ± 0.01 μm/s in the dorsoventral epidermis, comparable to growth rates in the larval epidermis (Wang et al., 2015). MT growth rates in the lateral epidermis were significantly reduced in dapk-1(ju4) mutants, and increased in ptrn-1(0) single and in dapk-1(ju4) ptrn-1(0) mutants (Figure 4G). dapk-1(ju4) mutants thus display more slow-growing MT plus ends in the lateral epidermis, consistent with a partial stabilization of MT dynamics.
+
+![Video 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-media1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/15833/elife-15833-media2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/15833/elife-15833-media3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/15833/elife-15833-media4.mp4.jpg)
 
 Finally, we analyzed the directionality of plus-end growth. In the lateral epidermis most EBP-GFP comets grew anteriorly or posteriorly, without a strong bias in directionality. Similarly, in the dorsoventral epidermis equal numbers of EBP-GFP comets grew towards or away from lateral epidermal ridges (Figure 4I). EBP-GFP comet directionality was normal in ptrn-1(0) mutant and dapk-1(ju4) ptrn-1(0) backgrounds. However, dapk-1(ju4) mutants displayed a significant bias in comet directionality in the dorsoventral epidermis, such that fewer comets grew away from the lateral epidermis. Thus, in dapk-1 mutants growing MTs are more confined to the lateral epidermis and less likely to extend into the dorsoventral epidermis.
 
-## Over-expression of the PTRN-1 CKK domain induces dapk-1-like morphology defects
+### Over-expression of the PTRN-1 CKK domain induces dapk-1-like morphology defects
 
-To understand how PTRN-1 might regulate epidermal MTs in the
+To understand how PTRN-1 might regulate epidermal MTs in the dapk-1 mutant we tested individual PTRN-1 domains. Like other CAMSAP proteins, PTRN-1 has three conserved regions: an N-terminal calponin homology (CH) domain, of unknown function; a central coiled-coil (CC) domain, known to interact with cytoskeleton associated proteins, and a C-terminal MT-binding CKK domain specific to CAMSAPs (Figure 5A). We expressed GFP-tagged fragments of PTRN-1 in the larval epidermis of dapk-1(ju4) ptrn-1(0) mutants as multicopy transgenes using the dpy-7 promoter. As shown above, expression of full-length PTRN-1 rescued the ptrn-1(0) suppression phenotypes (Figure 1B). Expression of the CKK domain alone also restored the dapk-1 epidermal morphology phenotype in dapk-1(ju4) ptrn-1(0) double mutants, whereas constructs lacking the CKK domain could not rescue, suggesting the CKK domain is required for PTRN-1 function (Figure 5B). However, constructs containing the CKK domain and either the CC or CH domain (i.e. ΔCH or ΔCC respectively) had significantly weaker rescuing activity compared to the CKK domain alone (Figure 5B). These observations suggest that the CKK domain is critical for PTRN-1 function in the epidermis and is inhibited by the CH or CC domains.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig5-v2.jpg)
 
-**Figure 5.:** dapk-1-like defects in epidermal morphology.(A) PTRN-1 domain organization. (B) Quantitation of epidermal defects in animals expressing different fragments of GFP::PTRN-1. N>100. Fisher’s exact test; ***p<0.001. (C) Representative DIC images of heads of animals expressing full length PTRN-1 or the CKK domain alone (dpy-7 promoter, juEx6697 and juEx6695), in ptrn-1(lt1). (D) Over-expression of the CKK domain is sufficient to induce Pnlp-29-GFP expression in ptrn-1(0) mutants (frIs7; juEx7385) and (E) speed up wound closure (juIs352; juEx6825). N>15, t-test; ***p<0.001. (F) Localization of full length GFP::PTRN-1 in the larval epidermis (juEx6697). White arrowhead points to a thick filament in the midbody lateral epidermis. PTRN-1 also localizes to puncta (blue arrow) and thin filaments (red arrowhead). All scale bars, 10 µm. (G) Localization of GFP-tagged PTRN-1 fragments in larval epidermis. (H) Colocalization of PTRN-1 CKK domain and MTs in anterior larval epidermis. Genotype: ptrn-1(lt1); juEx6825 (Pdpy-7-mKate2::CKK); ltSi570 (Pdpy-7-GFP::TBB-2). Asterisk indicates region devoid of MTs.DOI: http://dx.doi.org/10.7554/eLife.15833.015
+**Figure 5.:** (A) PTRN-1 domain organization. (B) Quantitation of epidermal defects in animals expressing different fragments of GFP::PTRN-1. N>100. Fisher’s exact test; ***p<0.001. (C) Representative DIC images of heads of animals expressing full length PTRN-1 or the CKK domain alone (dpy-7 promoter, juEx6697 and juEx6695), in ptrn-1(lt1). (D) Over-expression of the CKK domain is sufficient to induce Pnlp-29-GFP expression in ptrn-1(0) mutants (frIs7; juEx7385) and (E) speed up wound closure (juIs352; juEx6825). N>15, t-test; ***p<0.001. (F) Localization of full length GFP::PTRN-1 in the larval epidermis (juEx6697). White arrowhead points to a thick filament in the midbody lateral epidermis. PTRN-1 also localizes to puncta (blue arrow) and thin filaments (red arrowhead). All scale bars, 10 µm. (G) Localization of GFP-tagged PTRN-1 fragments in larval epidermis. (H) Colocalization of PTRN-1 CKK domain and MTs in anterior larval epidermis. Genotype: ptrn-1(lt1); juEx6825 (Pdpy-7-mKate2::CKK); ltSi570 (Pdpy-7-GFP::TBB-2). Asterisk indicates region devoid of MTs.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Localization of GFP-tagged fragments of the PTRN-1 coiled coil (CC) domain, in the head (left) and anterior lateral epidermis (right). Scale bars, 10 µm. (B) Quantitation of epidermal defects of transgenic animals expressing fragments of the CC domain. (C) The CKK domain localizes strongly to filaments in ptrn-1(+) but not so strongly in ptrn-1(0) backgrounds. (D) Expression of the CKK domain, but not of full-length PTRN-1, causes MT bundles to straighten (marker: ltSi570). (E) Full length PTRN-1 and the CC domain co-localize with MTs (Pdpy-7-mKate2::PTRN-1, juEx6762; Pdpy-7-mKate2::CC, juEx6822).DOI: http://dx.doi.org/10.7554/eLife.15833.016
+**Figure 5—figure supplement 1.:** (A) Localization of GFP-tagged fragments of the PTRN-1 coiled coil (CC) domain, in the head (left) and anterior lateral epidermis (right). Scale bars, 10 µm. (B) Quantitation of epidermal defects of transgenic animals expressing fragments of the CC domain. (C) The CKK domain localizes strongly to filaments in ptrn-1(+) but not so strongly in ptrn-1(0) backgrounds. (D) Expression of the CKK domain, but not of full-length PTRN-1, causes MT bundles to straighten (marker: ltSi570). (E) Full length PTRN-1 and the CC domain co-localize with MTs (Pdpy-7-mKate2::PTRN-1, juEx6762; Pdpy-7-mKate2::CC, juEx6822).
 
 Strikingly, expression of the CKK domain alone in ptrn-1(0) mutants caused highly penetrant Mor phenotypes, resembling those of dapk-1(ju4) (Figure 5B,C). This is in contrast to transgenic animals expressing full-length PTRN-1, which do not display such phenotypes. The CKK domain acts cell autonomously in the epidermis, as a pan-neuronal expression of the CKK domain in ptrn-1(0) mutants did not induce Mor phenotypes (not shown). Paralleling our rescue analysis, transgenes expressing the CKK domain and the CH or CC domains did not cause epidermal defects in ptrn-1(0) animals. Moreover, expression of the CKK domain only caused aberrant development in a ptrn-1(0) background and not in a wild type background (Figure 5B), suggesting that CKK domain activity is inhibited by endogenous PTRN-1. In addition, expression of the CKK domain in ptrn-1(0) mutants induced Pnlp-29-GFP expression, similar to that seen in dapk-1(ju4) mutants (Figure 5D), and accelerated wound closure (Figure 5E). These data are consistent with DAPK-1 and PTRN-1 acting antagonistically in epidermal development, and suggest that DAPK-1 might specifically inhibit the activity of the PTRN-1 CKK domain.
 
-## Localization of PTRN-1 along MTs, mediated by its CKK domain, correlates with defective epidermal morphogenesis
+### Localization of PTRN-1 along MTs, mediated by its CKK domain, correlates with defective epidermal morphogenesis
 
-In other CAMSAP proteins the CKK domain binds MTs (Baines et al., 2009), whereas the CC domain confers minus-end targeting (Goodwin and Vale, 2010). We therefore investigated whether PTRN-1 localization correlated with its effects on epidermal morphology. Full-length GFP::PTRN-1 localized to puncta and to short filaments that were either thin (0.22 ± 0.01 μm wide) or thick (0.38 ± 0.01 μm) (Figure 5F); the latter co-localized with MTs (Figure 5—figure supplement 1E). In contrast, the CKK domain localized to longer thin filaments (Figure 5G; Figure 5—figure supplement 1C) and co-localized with MTs (Figure 5H). GFP::PTRN-1(ΔCKK) was almost completely punctate (Figure 5G). Taken together, the CKK domain is critical for localization along MTs, and MT localization is necessary but insufficient to trigger aberrant epidermal morphology (Table 2).10.7554/eLife.15833.017Table 2.PTRN-1 Structure-function analysis.DOI: http://dx.doi.org/10.7554/eLife.15833.017LocalizationFunctionProtein FragmentPunctaThick filamentsThin filamentsRestore MorInduce MorCo-loc with MTsFull lengthxxxyesnoyesCH---nononoCCx--nonoyesCKK--xyesyesyesΔCKKx--nonoyesΔCHxx-yesnoNDΔCC--xyesnoNDΔCHCC1?x-NDnoNDΔCHCC1CC2--xNDslightlyNDΔCC2?x*xNDnoNDΔCC3x--NDnoNDNotes: *: Thick filaments present, but fewer compared to PTRN-1 full length or ΔCH. ?: unclear. ND: Not Determined.
+In other CAMSAP proteins the CKK domain binds MTs (Baines et al., 2009), whereas the CC domain confers minus-end targeting (Goodwin and Vale, 2010). We therefore investigated whether PTRN-1 localization correlated with its effects on epidermal morphology. Full-length GFP::PTRN-1 localized to puncta and to short filaments that were either thin (0.22 ± 0.01 μm wide) or thick (0.38 ± 0.01 μm) (Figure 5F); the latter co-localized with MTs (Figure 5—figure supplement 1E). In contrast, the CKK domain localized to longer thin filaments (Figure 5G; Figure 5—figure supplement 1C) and co-localized with MTs (Figure 5H). GFP::PTRN-1(ΔCKK) was almost completely punctate (Figure 5G). Taken together, the CKK domain is critical for localization along MTs, and MT localization is necessary but insufficient to trigger aberrant epidermal morphology (Table 2).
+
+**Table 2.**
+ PTRN-1 Structure-function analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Localization</th>
+      <th colspan="3">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Protein Fragment</td>
+      <td>Puncta</td>
+      <td>Thick filaments</td>
+      <td>Thin filaments</td>
+      <td>Restore Mor</td>
+      <td>Induce Mor</td>
+      <td>Co-loc with MTs</td>
+    </tr>
+    <tr>
+      <td>Full length</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CH</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>x</td>
+      <td>-</td>
+      <td>-</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CKK</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>ΔCKK</td>
+      <td>x</td>
+      <td>-</td>
+      <td>-</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>ΔCH</td>
+      <td>x</td>
+      <td>x</td>
+      <td>-</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>ΔCC</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>ΔCHCC1</td>
+      <td>?</td>
+      <td>x</td>
+      <td>-</td>
+      <td>ND</td>
+      <td>no</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>ΔCHCC1CC2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>x</td>
+      <td>ND</td>
+      <td>slightly</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>ΔCC2</td>
+      <td>?</td>
+      <td>x*</td>
+      <td>x</td>
+      <td>ND</td>
+      <td>no</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>ΔCC3</td>
+      <td>x</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ND</td>
+      <td>no</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: *: Thick filaments present, but fewer compared to PTRN-1 full length or ΔCH. ?: unclear. ND: Not Determined._
 
 The PTRN-1 CH domain did not confer subcellular localization, whereas fragments lacking the CH domain localized to filaments and puncta, resembling full length PTRN-1 (Figure 5G, Table 2). The PTRN-1 CC domain localized primarily to puncta, whereas constructs lacking this domain (ΔCC) did not form puncta or thick filaments (Figure 5G). Further dissections suggest the coiled-coil subregions of the CC domain have distinct roles such that CC1 and CC2 promote localization to puncta and thick filaments (Figure 5A; Figure 5—figure supplement 1A) and inhibit the CKK domain’s ability to induce epidermal morphology defects (Figure 5—figure supplement 1B).
 
 We hypothesized that the expression of the CKK domain in the absence of other PTRN-1 domains causes excessive MT stabilization and aberrant epidermal development. Both full-length PTRN-1 and CKK domain transgenes restored circumferential MTs to ptrn-1(0) mutants (Figure 5—figure supplement 1D). However, expression of the CKK domain in a ptrn-1(0) background caused circumferential MT bundles to be straighter than in wild type, resembling the effects of paclitaxel treatment (Figure 4—figure supplement 1D). ptrn-1(0) mutants expressing full-length PTRN-1 did not display straighter MT bundles or Mor phenotypes (Figure 5—figure supplement 1D). Thus the MT-stabilizing effects of the CKK domain can induce aberrant epidermal development, and are normally inhibited by other PTRN-1 domains.
 
-## dapk-1 mutants display increased PTRN-1 in the epidermis
+### dapk-1 mutants display increased PTRN-1 in the epidermis
 
-The above observations suggest that in
+The above observations suggest that in dapk-1(ju4) mutants, PTRN-1’s MT stabilization activity, mediated by its CKK domain, might be aberrantly active. We therefore assessed whether PTRN-1 localization or expression was altered in dapk-1(ju4) mutants. In the wild type, PTRN-1::GFP formed thick filaments or puncta in the anterior lateral epidermis, and sparse filaments in the body epidermis (Figure 6A). By contrast, in dapk-1(ju4) adults, PTRN-1::GFP formed twice as many thick filaments in the head (Figure 6B–E). The increased number of PTRN-1 filaments could reflect increased PTRN-1 expression in dapk-1(ju4), as multicopy GFP::PTRN-1 transgenes (Figure 5F) also displayed more filaments compared to those seen from a single-copy transgene. However, immunoblotting suggested overall PTRN-1 protein levels were lower in dapk-1(ju4) mutants compared to WT (Figure 6—figure supplement 1A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig6-v2.jpg)
 
-**Figure 6.:** dapk-1(ju4) mutants display aberrant PTRN-1 localization.(A) Localization of PTRN-1::GFP expressed from single-copy insertion in L4 stage anterior epidermis (left) and midbody lateral epidermis (right); transgene Pdpy-7-PTRN-1::GFP, ltSi541, in ptrn-1(0) or dapk-1(ju4) ptrn-1(0) background. Scale bars, 10 µm. (B) Schematic showing ROIs analyzed in the anterior epidermis. (C–E) Quantitation of PTRN-1 localization in ROIs indicated in B. Experiments performed at 25°C. N>8 animals per genotype. Bars indicate mean ± SEM. Student’s t-test; *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.15833.018
+**Figure 6.:** (A) Localization of PTRN-1::GFP expressed from single-copy insertion in L4 stage anterior epidermis (left) and midbody lateral epidermis (right); transgene Pdpy-7-PTRN-1::GFP, ltSi541, in ptrn-1(0) or dapk-1(ju4) ptrn-1(0) background. Scale bars, 10 µm. (B) Schematic showing ROIs analyzed in the anterior epidermis. (C–E) Quantitation of PTRN-1 localization in ROIs indicated in B. Experiments performed at 25°C. N>8 animals per genotype. Bars indicate mean ± SEM. Student’s t-test; *p<0.05.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** dapk-1.(A) PTRN-1 is not overexpressed in dapk-1(ju4) animals; western blot using anti-CePTRN-1. Control, anti-actin. (B,C) The number of PTRN-1 filaments in the head and lateral epidermis is sensitive to MT polymerization. Paclitaxel increases the number of PTRN-1 filaments, and colchicine decreases the number of PTRN-1 filaments in dapk-1(ju4) mutants. Color code according to the ROIs in Figure 6B. Mean ± SEM, N > 8 animals per genotype. Kruskal-Wallis and Dunn’s post-test; *p<0.05; ***p<0.001. (D) Co-immunoprecipitation of DAPK-1 and PTRN-1 in HEK293T cells.DOI: http://dx.doi.org/10.7554/eLife.15833.019
+**Figure 6—figure supplement 1.:** (A) PTRN-1 is not overexpressed in dapk-1(ju4) animals; western blot using anti-CePTRN-1. Control, anti-actin. (B,C) The number of PTRN-1 filaments in the head and lateral epidermis is sensitive to MT polymerization. Paclitaxel increases the number of PTRN-1 filaments, and colchicine decreases the number of PTRN-1 filaments in dapk-1(ju4) mutants. Color code according to the ROIs in Figure 6B. Mean ± SEM, N > 8 animals per genotype. Kruskal-Wallis and Dunn’s post-test; *p<0.05; ***p<0.001. (D) Co-immunoprecipitation of DAPK-1 and PTRN-1 in HEK293T cells.
 
 Increased PTRN-1 filaments in dapk-1 mutants might be secondary to an increase in MT number or stability. Consistent with this, paclitaxel treatment in ptrn-1(0) and dapk-1(ju4) ptrn-1(0) double mutants caused increased GFP::PTRN-1 filament formation (Figure 6—figure supplement 1B,C). The increased association of PTRN-1 with MTs in dapk-1(ju4) could reflect a positive feedback loop whereby stabilized MTs recruit more PTRN-1, resulting in further MT stabilization.
 
 To address how DAPK-1 might regulate PTRN-1 we examined whether DAPK-1 was capable of physical association with PTRN-1. Using co-immunoprecipitation in transfected HEK293T cells we found that PTRN-1 can be pulled down with DAPK-1 (Figure 6—figure supplement 1D), suggesting DAPK-1 and PTRN-1 might interact directly or as part of a complex.
 
-## DAPK-1 undergoes directional MT-dependent transport in the epidermis
+### DAPK-1 undergoes directional MT-dependent transport in the epidermis
 
-Our genetic and pharmacological analysis of the
+Our genetic and pharmacological analysis of the dapk-1 mutant defect in epidermal morphology suggests DAPK-1 might inhibit MT stability, possibly via negative regulation of PTRN-1 itself. DAPK-1 might act directly or indirectly on PTRN-1. Although DAPK family members have been shown to localize to the cytoskeleton, the subcellular location of DAPK relative to MTs or PTRN-1 has not been examined. To further address whether DAPK-1 might affect PTRN-1 or MTs directly, we examined the localization of functional GFP::DAPK-1. Unexpectedly, GFP::DAPK-1 formed discrete puncta that underwent rapid, directed movement within the larval or adult epidermis (dpy-7 promoter, Figure 7A–D, Video 5; col-19 promoter, Videos 6, 7). In the lateral epidermis GFP::DAPK-1 puncta moved along the anteroposterior body axis, occasionally reversing direction (Figure 7C). In contrast, puncta in the dorsoventral epidermis exhibited a bias in movement away from the lateral epidermis (Figure 7B,D). GFP::DAPK-1 puncta also aggregated at the edges of the epidermal ridges along the body (Figure 7A), as well as in the anterior epidermis, where morphological defects were prominent (Figure 7—figure supplement 1A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig7-v2.jpg)
 
-**Figure 7.:** (A,B) Representative images of GFP::DAPK-1 puncta in the larval epidermis (Pdpy-7-GFP::DAPK-1, juEx1774), showing lateral and dorsoventral regions, respectively. Dotted arrows indicate line scans used to generate kymographs in C,D. Orange arrowheads indicate clusters of GFP::DAPK-1 puncta at the boundary of the dorsoventral epidermis. Scale bars, 10 µm. (C) Kymographs of puncta in lateral epidermis (movie frame in A); inverted grayscale; x axis scale, 10 µm; y axis scale, 10 s. (D) Kymographs of puncta in dorsoventral epidermis (movie frame in B). (E) Density of motile GFP::DAPK-1 puncta in adult anterior lateral epidermis, with or without colchicine treatment (cat-4; Pcol-19-GFP::DAPK-1 juEx4781). N>20. (F) GFP::DAPK-1 puncta move faster than RAB-5 puncta or EBP-2 comets in the lateral epidermis (Pcol-19-GFP::DAPK-1, juEx4781). n>100. Bar charts show mean ± SEM. Statistics, Kruskal-Wallis test and Dunn’s post-test; *p<0.1, ***p<0.001. (G) Directionality of puncta or comet motion. Approximately equal numbers of RAB-5 puncta and EBP-2 comets move in each direction; only DAPK-1 displays a significant bias in the dorsoventral epidermis. (H) Reduced dynein/dhc-1 function slows GFP::DAPK-1 puncta; loss of ptrn-1 or mutation in unc-116/kinesin-1 has no effect; n>100. I. ptrn-1(0) mutants have reduced DAPK-1 puncta in the dorsoventral epidermis. J. DAPK-1 puncta directionality is unaffected in ptrn-1(0) or dhc-1 mutants.DOI: http://dx.doi.org/10.7554/eLife.15833.020
+**Figure 7.:** (A,B) Representative images of GFP::DAPK-1 puncta in the larval epidermis (Pdpy-7-GFP::DAPK-1, juEx1774), showing lateral and dorsoventral regions, respectively. Dotted arrows indicate line scans used to generate kymographs in C,D. Orange arrowheads indicate clusters of GFP::DAPK-1 puncta at the boundary of the dorsoventral epidermis. Scale bars, 10 µm. (C) Kymographs of puncta in lateral epidermis (movie frame in A); inverted grayscale; x axis scale, 10 µm; y axis scale, 10 s. (D) Kymographs of puncta in dorsoventral epidermis (movie frame in B). (E) Density of motile GFP::DAPK-1 puncta in adult anterior lateral epidermis, with or without colchicine treatment (cat-4; Pcol-19-GFP::DAPK-1 juEx4781). N>20. (F) GFP::DAPK-1 puncta move faster than RAB-5 puncta or EBP-2 comets in the lateral epidermis (Pcol-19-GFP::DAPK-1, juEx4781). n>100. Bar charts show mean ± SEM. Statistics, Kruskal-Wallis test and Dunn’s post-test; *p<0.1, ***p<0.001. (G) Directionality of puncta or comet motion. Approximately equal numbers of RAB-5 puncta and EBP-2 comets move in each direction; only DAPK-1 displays a significant bias in the dorsoventral epidermis. (H) Reduced dynein/dhc-1 function slows GFP::DAPK-1 puncta; loss of ptrn-1 or mutation in unc-116/kinesin-1 has no effect; n>100. I. ptrn-1(0) mutants have reduced DAPK-1 puncta in the dorsoventral epidermis. J. DAPK-1 puncta directionality is unaffected in ptrn-1(0) or dhc-1 mutants.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A) Representative images of GFP-tagged DAPK-1 protein fragments and their localization in the lateral epidermis in the head. (B) Velocity of DAPK-1 puncta, with or without colchicine treatment (cat-4; Pcol-19-GFP::DAPK-1 juEx4781). n>20. Velocity of mutant DAPK-1. (C) Quantitation of Mor induction or enhancement of different DAPK-1 fragments. N>100. Fisher’s exact test; ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.15833.021
+**Figure 7—figure supplement 1.:** (A) Representative images of GFP-tagged DAPK-1 protein fragments and their localization in the lateral epidermis in the head. (B) Velocity of DAPK-1 puncta, with or without colchicine treatment (cat-4; Pcol-19-GFP::DAPK-1 juEx4781). n>20. Velocity of mutant DAPK-1. (C) Quantitation of Mor induction or enhancement of different DAPK-1 fragments. N>100. Fisher’s exact test; ***p<0.001.
 
-As the pattern of GFP::DAPK-1 dynamics was reminiscent of the arrangement of the MT cytoskeleton, we assessed whether GFP::DAPK-1 dynamics were MT-dependent. In the lateral epidermis GFP::DAPK-1 puncta moved at 1.33 ± 0.028 µm/s; GFP::DAPK-1 movement in the dorsoventral epidermis was slightly slower (Table 3). Colchicine treatment severely reduced the number of moving GFP::DAPK-1 puncta (Figure 7E); movement of the remaining puncta was slightly slowed (Figure 7—figure supplement 1B). GFP::DAPK-1 puncta moved ~5 times faster than EBP-2::GFP comets (Figure 7F; Table 3). Moreover, in contrast to the unidirectional movement of GFP::DAPK-1 away from epidermal ridges plus-end growth occurred in both directions in the dorsoventral epidermis (Figure 7G). We infer that GFP::DAPK-1 dynamics reflect MT-based transport.10.7554/eLife.15833.025Table 3.Dynamics parameters in the epidermis.DOI: http://dx.doi.org/10.7554/eLife.15833.025Type of DynamicsTransgeneVelocity (mean ± SEM) μm s−1DirectionalityLateralDorso-ventralLateralDorso-ventralMT plus-end growthPcol-19-EBP-2::GFP0.30 ± 0.000.22 ± 0.007A→P P→ALat→DV DV→LatEarly endosome transportPdpy-7-GFP::RAB-50.96 ± 0.0140.93 ± 0.014A→P P→ALat→DV DV→LatDAPK-1Pdpy-7-GFP::DAPK-11.33 ± 0.0280.96 ± 0.021A→P P→ALat→DVDAPK-1Pcol-19-GFP::DAPK-11.26 ± 0.020.90 ± 0.017A→P P→ALat→DVNotes: A→P: Anterior to Posterior. P→A: vice versa. Lat→DV: Lateral to dorsoventral epidermis. DV→Lat: vice versa.
+![Video 5.](https://cdn.elifesciences.org/articles/15833/elife-15833-media5.mp4.jpg)
 
-MT-dependent transport within the mature C. elegans epidermis has not been previously characterized. To understand whether other cellular components are transported within the epidermis we examined an early endosome marker, GFP::RAB-5, as endocytosis has been implicated in innate immune responses (Dierking et al., 2011). GFP::RAB-5 formed motile puncta that were smaller and slower-moving than those of GFP::DAPK-1, and moved in both directions in the dorsoventral epidermis (Video 8; Figure 7F,G), suggesting GFP::DAPK-1 dynamics are distinct from endosomal transport.10.7554/eLife.15833.026Video 8.Pdpy-7-GFP::RAB-5 dynamics.DOI: http://dx.doi.org/10.7554/eLife.15833.026
+**Video 5.:** Lateral seam cells are in the center of the movie.
 
-We asked whether DAPK-1’s transport correlated with its functions in epidermal morphology. DAPK-1, like mammalian DAPK, contains an N-terminal kinase domain, a Calcium/Calmodulin binding domain, a set of ankyrin repeats, a P-loop, a cytoskeleton-interacting domain and a C-terminal death domain (Shiloh et al., 2013) (Figure 1—figure supplement 1A). Constructs lacking any one of these domains, or containing a K57A point mutation predicted to abolish kinase activity (Deiss et al., 1995), were unable to rescue dapk-1(ju4) nor did they induce dapk-1-like phenotypes (Figure 7—figure supplement 1C, Table 4). Uniquely, constructs lacking the kinase domain (ΔKinase) strongly enhanced the Mor phenotype of a partial loss of function allele dapk-1(ju469) (Figure 7—figure supplement 1C), and caused lethality in a ju4 mutant background (Table 4). The enhancement of dapk-1 phenotypes suggests DAPK-1(ΔKinase) inhibits DAPK-1 in a dominant-negative manner and may also inhibit parallel pathways.10.7554/eLife.15833.027Table 4.DAPK-1 structure-function analysis.DOI: http://dx.doi.org/10.7554/eLife.15833.027Protein FragmentPuncta?Motile?Rescues Mor*Induces Mor†Enhances Mor‡Lethal in dapk-1(ju4)Full LengthyesyesyesnononoΔ KinaseyesyesnonoyesyesΔ Kinase + CaM Bind Domain (BD)yesyesnonoyesyesΔ Cytoskeletal BDnonononononoΔ Death Domain + C terminusnonononononoKinase onlysomenononoNDNDCaM BD onlynonononoNDNDAnkyrin Domain onlysomenononononoCytoskeletal BD onlysomenononononoMid + DD + CtnonononononoS179L dapk-1(ju4)yesyesnoyesyesyesK57A (kinase dead)yesyesnonononoNotes: *: In dapk-1(ju4). †: In WT background. ‡: In dapk-1(ju469).
+![Video 6.](https://cdn.elifesciences.org/articles/15833/elife-15833-media6.mp4.jpg)
+
+**Video 6.:** Lateral seam is in center.
+
+![Video 7.](https://cdn.elifesciences.org/articles/15833/elife-15833-media7.mp4.jpg)
+
+**Video 7.:** Dorsal midline is at bottom of movie.
+
+As the pattern of GFP::DAPK-1 dynamics was reminiscent of the arrangement of the MT cytoskeleton, we assessed whether GFP::DAPK-1 dynamics were MT-dependent. In the lateral epidermis GFP::DAPK-1 puncta moved at 1.33 ± 0.028 µm/s; GFP::DAPK-1 movement in the dorsoventral epidermis was slightly slower (Table 3). Colchicine treatment severely reduced the number of moving GFP::DAPK-1 puncta (Figure 7E); movement of the remaining puncta was slightly slowed (Figure 7—figure supplement 1B). GFP::DAPK-1 puncta moved ~5 times faster than EBP-2::GFP comets (Figure 7F; Table 3). Moreover, in contrast to the unidirectional movement of GFP::DAPK-1 away from epidermal ridges plus-end growth occurred in both directions in the dorsoventral epidermis (Figure 7G). We infer that GFP::DAPK-1 dynamics reflect MT-based transport.
+
+**Table 3.**
+ Dynamics parameters in the epidermis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of Dynamics</th>
+      <th>Transgene</th>
+      <th colspan="2">Velocity (mean ± SEM) μm s−1</th>
+      <th colspan="2">Directionality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Lateral</td>
+      <td>Dorso-ventral</td>
+      <td>Lateral</td>
+      <td>Dorso-ventral</td>
+    </tr>
+    <tr>
+      <td>MT plus-end growth</td>
+      <td>Pcol-19-EBP-2::GFP</td>
+      <td>0.30 ± 0.00</td>
+      <td>0.22 ± 0.007</td>
+      <td>A→P P→A</td>
+      <td>Lat→DV DV→Lat</td>
+    </tr>
+    <tr>
+      <td>Early endosome transport</td>
+      <td>Pdpy-7-GFP::RAB-5</td>
+      <td>0.96 ± 0.014</td>
+      <td>0.93 ± 0.014</td>
+      <td>A→P P→A</td>
+      <td>Lat→DV DV→Lat</td>
+    </tr>
+    <tr>
+      <td>DAPK-1</td>
+      <td>Pdpy-7-GFP::DAPK-1</td>
+      <td>1.33 ± 0.028</td>
+      <td>0.96 ± 0.021</td>
+      <td>A→P P→A</td>
+      <td>Lat→DV</td>
+    </tr>
+    <tr>
+      <td>DAPK-1</td>
+      <td>Pcol-19-GFP::DAPK-1</td>
+      <td>1.26 ± 0.02</td>
+      <td>0.90 ± 0.017</td>
+      <td>A→P P→A</td>
+      <td>Lat→DV</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: A→P: Anterior to Posterior. P→A: vice versa. Lat→DV: Lateral to dorsoventral epidermis. DV→Lat: vice versa._
+
+MT-dependent transport within the mature C. elegans epidermis has not been previously characterized. To understand whether other cellular components are transported within the epidermis we examined an early endosome marker, GFP::RAB-5, as endocytosis has been implicated in innate immune responses (Dierking et al., 2011). GFP::RAB-5 formed motile puncta that were smaller and slower-moving than those of GFP::DAPK-1, and moved in both directions in the dorsoventral epidermis (Video 8; Figure 7F,G), suggesting GFP::DAPK-1 dynamics are distinct from endosomal transport.
+
+![Video 8.](https://cdn.elifesciences.org/articles/15833/elife-15833-media8.mp4.jpg)
+
+We asked whether DAPK-1’s transport correlated with its functions in epidermal morphology. DAPK-1, like mammalian DAPK, contains an N-terminal kinase domain, a Calcium/Calmodulin binding domain, a set of ankyrin repeats, a P-loop, a cytoskeleton-interacting domain and a C-terminal death domain (Shiloh et al., 2013) (Figure 1—figure supplement 1A). Constructs lacking any one of these domains, or containing a K57A point mutation predicted to abolish kinase activity (Deiss et al., 1995), were unable to rescue dapk-1(ju4) nor did they induce dapk-1-like phenotypes (Figure 7—figure supplement 1C, Table 4). Uniquely, constructs lacking the kinase domain (ΔKinase) strongly enhanced the Mor phenotype of a partial loss of function allele dapk-1(ju469) (Figure 7—figure supplement 1C), and caused lethality in a ju4 mutant background (Table 4). The enhancement of dapk-1 phenotypes suggests DAPK-1(ΔKinase) inhibits DAPK-1 in a dominant-negative manner and may also inhibit parallel pathways.
+
+**Table 4.**
+ DAPK-1 structure-function analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein Fragment</th>
+      <th>Puncta?</th>
+      <th>Motile?</th>
+      <th>Rescues Mor*</th>
+      <th>Induces Mor†</th>
+      <th>Enhances Mor‡</th>
+      <th>Lethal in dapk-1(ju4)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full Length</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Δ Kinase</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Δ Kinase + CaM Bind Domain (BD)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Δ Cytoskeletal BD</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Δ Death Domain + C terminus</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Kinase only</td>
+      <td>some</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>CaM BD only</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Ankyrin Domain only</td>
+      <td>some</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Cytoskeletal BD only</td>
+      <td>some</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Mid + DD + Ct</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>S179L dapk-1(ju4)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>K57A (kinase dead)</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: *: In dapk-1(ju4). †: In WT background. ‡: In dapk-1(ju469)._
 
 We examined the localization and dynamics of these truncated proteins. Both GFP::DAPK-1(ΔKinase) and GFP::DAPK-1(S179L) formed dynamic puncta that moved at normal or slightly slower velocities (Table 4; Figure 7—figure supplement 1B). Conversely GFP::DAPK-1 lacking either the cytoskeletal binding domain or the death domain did not form puncta (Figure 7—figure supplement 1A). No single domain was sufficient for the formation of motile puncta (Table 4). However, the kinase domain, ankyrin domain, and cytoskeleton-binding domain by themselves occasionally formed stationary puncta (Figure 7—figure supplement 1A). In summary, multiple non-kinase domains are required for formation of motile DAPK-1 puncta; formation of motile puncta could be necessary but not sufficient for DAPK-1 function.
 
@@ -168,7 +692,7 @@ We next asked whether DAPK-1 transport required motor proteins identified as dap
 
 C. elegans DAPK-1 acts as a negative regulator of epidermal maintenance and wound responses, through previously unknown mechanisms (Tong et al., 2009). Here, we identify a role for DAPK-1 in regulating the stability or the dynamics of the MT cytoskeleton. The MT minus end factor PTRN-1 is closely linked to DAPK-1 function. Moreover, DAPK-1 itself is transported along MTs, indicating a complex relationship between DAPK-1 and MT dynamics in epidermal growth and repair.
 
-## Normal and mutant functions of DAPK-1
+### Normal and mutant functions of DAPK-1
 
 We screened for suppression of morphological defects of the dapk-1(ju4) allele, which results in a missense S179L alteration in the peptide-binding ledge of the DAPK-1 kinase domain. This allele, unlike dapk-1(gk219) or deletions of the dapk-1 locus, causes fully penetrant morphological phenotypes. Our identification of stop codon mutations as intragenic revertants, as well as the finding that transgenic expression of S179L DAPK-1 induces Mor phenotypes, suggests dapk-1(ju4) is a gain of function mutation.
 
@@ -178,19 +702,17 @@ Our pharmacological data suggest DAPK-1’s normal function is to restrain epide
 
 Upregulation of the epidermal innate immune response observed in dapk-1(ju4) is genetically separable from epidermal morphology defects (Tong et al., 2009) (Figure 2A,B). Our analysis using MT drugs shows that the concentrations of drugs sufficient to suppress or induce morphological defects are insufficient to suppress or induce innate immune responses, consistent with previous observations (Zhang et al., 2015). Thus, epidermal morphology is more sensitive to MT disruption than is the innate immune response, and MT stabilization may affect innate immune responses indirectly via effects on epidermal integrity.
 
-## PTRN-1’s function in epidermal development and the MT cytoskeleton
+### PTRN-1’s function in epidermal development and the MT cytoskeleton
 
 The Patronin/CAMSAP family of MT minus end-binding proteins has become the focus of intense investigation in several organisms (Akhmanova and Hoogenraad, 2015). The sole C. elegans member of this family, PTRN-1, is dispensable for epidermal development in part due to a parallel pathway involving γ-tubulin and the Ninein-related protein NOCA-1 (Wang et al., 2015). ptrn-1(0) single mutant larvae show grossly wild-type epidermal MT plus-end dynamics and have slightly fewer circumferential MT bundles in the epidermis (Wang et al., 2015), a phenotype that worsens in adults (this work). Thus during postembryonic development the epidermis becomes more dependent on PTRN-1 and on noncentrosomal MT arrays. Although ptrn-1 is largely dispensable for epidermal morphology, its requirement becomes evident in wound repair in adults, paralleling the role of PTRN-1 in adult axon regeneration in C. elegans (Chuang et al., 2014). The requirement for PTRN-1 in repair but not in development may reflect the prominent role of noncentrosomal MT arrays in mature neurons and epithelia.
 
 The MT-binding PTRN-1 CKK domain is not only sufficient to rescue ptrn-1(0) suppression phenotypes, but can induce epidermal defects when overexpressed. Depending on the particular CAMSAP family member, the CKK domain can target MT minus ends, or can bind along the lattice (Goodwin and Vale, 2010; Jiang et al., 2014). In C. elegans PTRN-1 requires the CKK domain to localize to MTs in neurons and muscles (Richardson et al., 2014), and the CKK domain can stabilize neuronal MTs (Chuang et al., 2014), consistent with MT stability being a determinant of epidermal morphology.
 
-Little is known about how CKK domain activity is regulated, but our data suggest DAPK-1 might directly or indirectly inhibit CKK activity; moreover, the CH or CC domains of PTRN-1 appear to inhibit CKK activity. As the CC domain of PTRN-1 appears to target to minus ends, a possible mechanism is that in the absence of the CC domain, ectopic association of the CKK domain along the MT lattice (long thin filaments) results in aberrant MT stabilization. DAPK-1 might inhibit the activity of the CKK domain indirectly via the CC or CH domains (
+Little is known about how CKK domain activity is regulated, but our data suggest DAPK-1 might directly or indirectly inhibit CKK activity; moreover, the CH or CC domains of PTRN-1 appear to inhibit CKK activity. As the CC domain of PTRN-1 appears to target to minus ends, a possible mechanism is that in the absence of the CC domain, ectopic association of the CKK domain along the MT lattice (long thin filaments) results in aberrant MT stabilization. DAPK-1 might inhibit the activity of the CKK domain indirectly via the CC or CH domains (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15833/elife-15833-fig8-v2.jpg)
 
-**Figure 8.:** DOI: http://dx.doi.org/10.7554/eLife.15833.028
-
-## DAPK-1 and MT-dependent transport in the epidermis
+### DAPK-1 and MT-dependent transport in the epidermis
 
 To our knowledge, DAPK family members have not been previously shown to undergo MT-dependent transport. Many questions remain concerning the mechanism of DAPK-1 transport; here we speculate on the possible function of DAPK-1 motility in the C. elegans epidermis, and why aberrant DAPK-1 function should trigger altered epidermal morphology.
 
@@ -202,48 +724,48 @@ In conclusion, we have revealed an unexpected regulatory interaction between DAP
 
 ## Materials and methods
 
-## C. elegans genetics
+### C. elegans genetics
 
 Strains were maintained at 20–22.5°C on NGM agar plates with E. coli OP50, unless otherwise indicated. Epidermal morphology defects (Mor phenotypes) were scored in animals grown at 20°C unless stated otherwise. Strains were constructed using standard procedures, and were genotyped by PCR or sequencing. Previously described mutations include: dapk-1(ju4, gk219, ju469), ptrn-1(tm5597, lt1). New dapk-1 suppressor mutations and additional candidate genes tested are listed in Table 1. New transgenic strains are listed in Supplemental file 1A. Representative extrachromosomal arrays are listed. dapk-1 CRISPR deletions were generated by injecting 27 µM circular RNAs (crRNA) CACCATTAACATTCTCTCTC and ATACGAACGCATAATAA, dpy-10 crRNA as a co-injection marker, tracrRNA, and purified Cas9 protein (QB3 MacroLab, UC Berkeley), following published methods (Paix et al., 2015).
 
-## Molecular biology
+### Molecular biology
 
 New plasmids were made by Gateway cloning or by Gibson isothermal assembly. Site directed mutagenesis of the dapk-1 cDNA used Gibson assembly. Mutant versions of ptrn-1 cDNAs have been described (Chuang et al., 2014). New plasmids are listed in Supplemental file 1B.
 
-## dapk-1 suppressor screens, mapping, and whole genome sequencing
+### dapk-1 suppressor screens, mapping, and whole genome sequencing
 
 We mutagenized dapk-1(ju4) animals with 47 mM EMS using standard protocols and screened the F2 progeny (~5000 haploid genomes) for suppression of Mor phenotypes. dapk-1(ju4) suppressors were outcrossed once prior to extraction of genomic DNA and whole genome sequencing (BGI Americas). Sequence data were processed and analyzed using MAQgene (ju697, ju698) or a Galaxy workflow, comparing datasets to each other and to the wild type reference sequence in WS220. We used SNP mapping to locate suppressor ju698 to a 2.2 Mb interval within which we identified a stop codon mutation in ptrn-1. We mapped ju697 to chromosome I, where we identified a missense alteration in dhc-1.
 
-## Microtubule drug treatment
+### Microtubule drug treatment
 
 Solutions of drugs in M9 were pipetted onto small NGM agar plates (final concentrations 1–5 mM colchicine, 5–15 μM paclitaxel, all from Sigma-Aldrich, St Louis, MO). Plates were dried for 24 hr, then seeded with E. coli OP50. Two days later, the embryos were plated and allowed to develop at 20°C. Three days later, young adult animals were scored for epidermal defects or assayed for antimicrobial reporter gene expression. To visualize MTs after drug treatment, L4 animals were anesthetized in 0.5 mM levamisole and 2 μM paclitaxel or 2 mM colchicine solution for 2 hr before imaging.
 
-## Wounding assay
+### Wounding assay
 
 Needle wounding and actin ring quantitation were performed as described (Xu and Chisholm, 2011).
 
-## Imaging and analysis of epidermal protein dynamics
+### Imaging and analysis of epidermal protein dynamics
 
 We found that GFP::TBB-2, EBP-2::GFP, and GFP::DAPK-1 dynamics were inhibited by several anesthetics used to immobilize C. elegans for imaging, including muscimol, 1-phenoxy-2-propanol, and levamisole. GFP::DAPK-1 dynamics were also highly sensitive to physical stress; for example, immobilization in 10% agarose and 0.05 μm beads (Kim et al., 2013) immediately blocked dynamics. For the analyses reported here we immobilized animals in 0.5 mM levamisole solution for 50 min, then imaged dynamics in the next 30 min.
 
 We imaged subcellular dynamics using a custom-built microscope (Solamere Technologies) with a Yokogawa CSU-X spinning disk confocal head, a Photometrics Cascade II EM-CCD camera, and a Zeiss NA 1.46 objective. Images were acquired at 4.2 Hz, with exposure time 114 ms at 1000 x magnification, for 100 or 200 frames. We generated kymographs using Metamorph software and determined particle velocity by manual measurement of track angles. We manually counted moving puncta or comets in a 10 frame window, using a 200 μm2 region of interest (ROI) in the lateral epidermis or a 300 μm2 ROI in the dorsoventral epidermis.
 
-## Western blotting and co-immunoprecipitation
+### Western blotting and co-immunoprecipitation
 
 Worm protein samples were prepared by boiling 10 μl pellets of mixed-stage worms in SDS-mercaptoethanol solution. We detected PTRN-1 using antibody OD208A (Wang et al., 2015); we used the anti-actin antibody ACTN05 (Abcam, Cambridge, MA, C4) as a loading control. We used HRP-linked anti-rabbit IgG NA934V and anti-mouse NXA931 as secondary antibodies (GE Healthcare Lifesciences) at 1:1000 dilution in TBS, and added SuperSignal West Pico Chemiluminescent substrate (Thermo Fisher Scientific, Waltham, MA). The blot result was replicated once.
 
 To test co-immunoprecipitation, a 1:1 ratio of tagged DAPK-1 and PTRN-1 were co-transfected using Lipofectamine 2000 (Invitrogen) into HEK293 cells growing on poly-D-Lysine-coated plates (Sigma-Aldrich) in Opti-MEM (Thermo Fisher Scientific). After two days, cells were collected in cold PBS and lysed in lysis buffer (50 mM Tris-Cl pH 7.4, 150 mM NaCl, 1% NP40, 0.5 mM EDTA, 3 mM MgCl2) for 30 min at 4°C. M2-FLAG conjugated magnetic beads (Sigma) were used for IP, and mouse anti FLAG (F1807, Sigma, 1:1000) and anti HA (HA-7, Sigma, 1:5000) antibodies were used for western blotting. The co-IP was repeated twice.
 
-## Analysis of antimicrobial peptide reporter expression
+### Analysis of antimicrobial peptide reporter expression
 
 For visual comparisons of Pnlp-29-GFP/Pcol-12-dsRed (frIs7) expression we took images on a Zeiss compound microscope using a GFP long-pass filter set. To quantify Pnlp-29-GFP (frIs7) expression levels we used the COPAS C. elegans BIOSORT (Union Biometrica, Holliston MA) at the Troemel lab (UCSD). We calculated the ratio of green fluorescence to the internal control Pcol-12-dsRed.
 
-## Imaging and quantitation of epidermal MT and PTRN-1 distribution
+### Imaging and quantitation of epidermal MT and PTRN-1 distribution
 
 Quantitation of MT bundles (Pcol-19-GFP::TBB-2, juSi239): (1) We calculated the anisotropy index using the ImageJ plug-in FibrilTool (Boudaoud et al., 2014) analyzing a rectangular ROI of 100 μm2 in the anterior lateral epidermis. (2) We measured MT bundle length by drawing a line scan along a circumferential MT, from the edge of the lateral epidermis or the dorsal or ventral midline, to the end of the bundle. MT bundles detached from the epidermal ridges were not measured. (3) We counted MT bundles in a 40 μm ROI along the lateral epidermis along the anteroposterior axis. (4) We counted MT bundles crossing a 40 μm line in the dorsoventral region, including bundles not attached to the lateral or dorsoventral networks. For parameters 2–4 the ROI begins 40 μm behind the nose tip and extends 40 μm posteriorly. Schematics of ROIs are in Figure 4B.
 
 Quantitation of GFP::PTRN-1 filaments (Pdpy-7-GFP::PTRN-1, ltSi541): (1) Number of filaments in the dorsoventral regions of the head were counted in an ROI extending 40 μm from the nose tip (Figure 6B). (2) Filaments in the lateral head epidermis were counted in a 200 μm2 ROI, beginning 40 μm behind the nose. (3) Filaments were counted in the anterior lateral epidermis in a 200 μm2 ROI. A line of GFP > 1 μm was considered a filament. We did not examine the defective region to avoid quantifying changes in localization secondary to the aberrant epidermal morphology.
 
-## Statistics
+### Statistics
 
 All statistical analyses were performed with GraphPad Prism.

@@ -27,21 +27,73 @@ The bacterial outer membrane (OM) is a critical barrier that protects the cell f
 
 The Mla system, an ABC transporter in E. coli and related Gram-negative bacteria, has recently emerged as a key player in phospholipid transport across the bacterial envelope. Mla trafficks phospholipids between the IM and OM and is important for maintaining the outer membrane barrier (Malinverni and Silhavy, 2009; Chong et al., 2015; Thong et al., 2016; Abellón-Ruiz et al., 2017; Ekiert et al., 2017; Isom et al., 2017; Shrivastava et al., 2017; Powers and Trent, 2018; Yeow et al., 2018; Ercan et al., 2019; Hughes et al., 2019; Kamischke et al., 2019; Shrivastava and Chng, 2019). This system consists of three main parts: (1) an IM ABC transporter complex, MlaFEDB; (2) an OM complex, MlaA-OmpC/F; and (3) a soluble periplasmic protein, MlaC, which has been proposed to shuttle phospholipids between MlaFEDB and MlaA-OmpC/F (Figure 1A). The directionality of transport facilitated by the Mla pathway is still an area of intense research, with reports of both phospholipid import (Malinverni and Silhavy, 2009; Chong et al., 2015; Powers and Trent, 2018; Yeow et al., 2018) and export (Hughes et al., 2019; Kamischke et al., 2019). The IM complex, MlaFEDB, consists of four different proteins: MlaD, a membrane anchored protein from the MCE (Mammalian Cell Entry) protein family, which forms a homohexameric ring in the periplasm (Thong et al., 2016; Ekiert et al., 2017); MlaE (also called YrbE), a predicted integral inner membrane ABC permease; MlaF, an ABC ATPase; and MlaB, a STAS (Sulfate Transporter and Anti-Sigma factor antagonist) domain protein with possible regulatory function (Kolich et al., 2020). Crystal structures of MlaD (Ekiert et al., 2017) and MlaFB (Kolich et al., 2020) have provided insights into the function of individual domains and transporter regulation, but the structure of the transmembrane subunit, MlaE, has been lacking. MlaE lacks clear sequence similarity to proteins of known structure or function, suggesting it adopts a unique or divergent ABC transporter fold. Low-resolution cryo electron microscopy (cryo-EM) studies (Ekiert et al., 2017; Kamischke et al., 2019) have established the overall shape of the complex, but have not shed much light on how the various subunits of the MlaFEDB complex assemble and function. Thus, a structure of the MlaFEDB complex may provide important insights into the mechanisms of bacterial lipid transport, as well as the evolution and function of the MlaE/YrbE transporters, which are conserved from double-membraned bacteria to chloroplasts.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the Mla pathway (adapted from Kolich et al., 2020). The OmpC/F-MlaA complex (PDB 5NUP), periplasmic shuttle protein MlaC (PDB 5UWA), and MlaFEDB complex (PDB 5UW2 and 6XGY, EMDB-8610) are shown. (B) Schematic of the MlaFEDCB operon with N-terminal His-tag on MlaD, as reported previously (Ekiert et al., 2017). (C) 2D class averages from single-particle cryo-EM analysis of MlaFEDB in nanodiscs. (D) Final EM density map of MlaFEDB, colored by local resolution (EMD-22116). (E) Density map of MlaFEDB filtered to 6 Å, showing membrane scaffold protein (MSP) belts surrounding the edge of the lipid nanodisc. MlaF, slate blue; MlaE, pink; MlaD, green; MlaB, yellow; MSP, gray. The packing of the six TM helices from the MlaD subunits around the periphery of the MlaE core is apparent in the Top View. (F) Overview of the MlaF2E2D6B2 model (PDB 6XBD); colors as in E. Regions of disorder in MlaD linkers and C-termini are indicated by green dashed lines. The MlaD ring is tilted relative to MlaFEB, resulting in a complex that is asymmetric overall.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In column 2, an intermediate map is shown with the mask used during reconstructions in RELION, and in column 3, the map is shown with the ‘mask_refine’ automatically computed by cryoSPARC.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative micrograph. (B) Representative 2D classes. (C) Viewing direction distribution of the final model from cryoSPARC. (D) Gold-standard FSC curve.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative densities from the final map into which the model was built. (B) Density map filtered to 6 Å showing unmodeled density between TMC of MlaD (and TMF on the other side) and MlaF. This density is not well defined and may correspond to the His-Tag from MlaD, or an unknown ligand.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The EM (this study, PDB 6XBD) and X-ray ([Kolich et al., 2020] PDB: 6XGY) models were aligned on the MlaF dimer, and to illustrate differences, lines between alpha-carbons are shown using a modified version of the ColorByRMSD pymol script. (B) Cryo-EM density map of MlaFEDB. The C-terminal extension (red) of one MlaF monomer (pink) wraps around the other MlaF monomer (slate blue), placing a small helix at the MlaF/MlaB interface, consistent with the X-ray structure of MlaFB alone (Kolich et al., 2020). (C) Interaction between MlaF and the coupling helix of MlaE in the cryo-EM structure.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Elongated densities around the TM region and in the cleft formed by IF1 are shown in solid gray, which could potentially be either phospholipids or other molecules. Due to the ambiguous nature of the densities, we have not modeled any coordinates in these regions.
+
 ## Results
 
-## Overview of the MlaFEDB structure
+### Overview of the MlaFEDB structure
 
 To address how Mla drives lipid transport, we overexpressed the mla operon (Figure 1B), reconstituted the MlaFEDB ABC transporter complex in lipid nanodiscs containing E. coli polar lipids (see Materials and methods), and determined the structure using single-particle cryo-EM, with a nominal resolution of 3.05 Å (Figure 1C–E, Figure 1—figure supplements 1 and 2, Supplementary file 1). Although MlaFEDB was expected to exhibit twofold symmetry, initial reconstructions showed clear asymmetry in our maps, which we then refined without applying symmetry (Figure 1D, Figure 1—figure supplements 1 and 2, Supplementary file 2). Local resolution analysis showed that the entire complex is well-defined at ~2.8–3.5 Å resolution (Figure 1D, Figure 1—figure supplement 3A), allowing us to build a nearly complete model for MlaFEDB (Figure 1F), including a high-resolution structure of the MlaE transmembrane subunit. In addition, we resolved both coils of the membrane scaffold protein (MSP) belt surrounding the nanodisc (Bayburt et al., 2002) using the map filtered at 6 Å, thereby clearly defining the position of the transmembrane domain (Figure 1E, Figure 1—figure supplement 3A,B).
 
 The MlaFEDB transporter is significantly larger and more complicated than most other structurally characterized ABC transporters, consisting of a total of 12 polypeptide chains from four different genes, with a stoichiometry of MlaF2E2D6B2. At the center of the complex, a core ABC transporter module is formed from two copies each of the MlaF ATPase and the MlaE transmembrane domains (TMDs). Outside this ABC transporter core, MlaFEDB contains additional subunits not found in other ABC transporters: MlaD on the periplasmic side of the IM, and MlaB in the cytoplasm. A homohexameric ring of MCE domains from MlaD sits atop the periplasmic end of MlaE like a crown. This MCE ring is anchored in place by six MlaD transmembrane helices, which dock around the periphery of the MlaE TMDs (Figure 1F). On the cytoplasmic side, each of the MlaF ATPase subunits is bound to MlaB, a STAS domain protein that was recently reported to act as regulator of the MlaFEDB transporter (Kolich et al., 2020). The overall structure of the MlaF2B2 module is very similar to our recent MlaFB X-ray structure (PDB: 6XGY), apart from a small relative rotation between the MlaF helical and catalytic subdomains (Figure 1—figure supplement 4A). This rotation is similar to motions described in other ABC transporters (Karpowich et al., 2001; Smith et al., 2002; Orelle et al., 2010). An unusual C-terminal extension of each MlaF protomer wraps around the neighboring MlaF subunit and docks near the MlaFB interface, almost identical to the domain-swapped ‘handshake’ motif observed in the crystal structure of the MlaF2B2 subcomplex (Figure 1—figure supplement 4B; Kolich et al., 2020). While the MlaFEB subcomplex exhibits near-perfect twofold rotational symmetry at this resolution, the MlaD ring is clearly tilted relative to MlaE, resulting in a misalignment of the twofold symmetry axis of MlaFEB and the pseudo-sixfold axis of MlaD by approximately 6° (Figure 1F).
 
-## MlaE is distantly related to the TMDs of other ABC transporters
+### MlaE is distantly related to the TMDs of other ABC transporters
 
 The transmembrane subunits of ABC transporters play a central role in determining the transport mechanism and substrate specificity. Consequently, the structure of the MlaE subunit is of particular interest. Our cryo-EM structure reveals that the core TMD of MlaE consists of five transmembrane helices (TM1 - TM5) (Figure 2A and E–G). A coupling helix (CH) in the cytoplasm connects TM2 and TM3 and mediates the interaction between the TMDs of MlaE and the MlaF ATPase subunits (Figure 1—figure supplement 4C). A small periplasmic helix (PH) is found between TM3 and TM4 at the periplasmic side of MlaE. Two additional N-terminal helices are membrane embedded, which we call interfacial helices 1 and 2 (IF1 and IF2 [Chen et al., 2020]; discussed in more detail below). The IF1 helix is a 30-residue long, amphipathic N-terminal helix that lies parallel to the membrane within the cytoplasmic leaflet, and extends along the width of the MlaE dimer (Figures 2A and 3B). IF2 is angled relative to the plane of the membrane and is separated from TM1 by a kink within the lipid bilayer. Although the C-terminal portion of IF1 interacts with TM3 and TM4, the N-terminal half projects outward into the surrounding membrane, creating a cleft between the core TMD and the IF1 helix (Figure 3A,B). Additional EM densities were observed in this cleft (Figure 1—figure supplement 5), which may be phospholipids or other molecules; these ligands were not modeled explicitly as their identities are ambiguous.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig2-v2.jpg)
+
+**Figure 2.:** (A) MlaE dimer, with one protomer represented as surface, and the other as cartoon. (B–J) comparison of MlaE (PDB 6XBD) with the related transmembrane domains of ABC transporters, MacB and LptFG (PDB 5GKO and 6MHZ). (B, E, H) Topology diagrams. CH, coupling helix; PH, periplasmic helix; IF, interfacial helix (also called connecting helix in ABCG transporters); TM, transmembrane helix. (C, F, I) Schematics representing helices at the dimer interface, viewed from the periplasm (each circle represents a helix). (D, G, J) Cartoon view of monomer. See Figure 2—figure supplement 1 for comparisons with additional related transporters.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) MlaE, this paper, PDB 6XBD; (B) O-antigen transporter, PDB 6OIH; (C) TarG, PDB 6JBH; (D) ABCA1, PDB 5XJY, TMD2 shown; (E) ABCG5/G8, PDB 5DO7, G8 shown; (F) ABCG2, PDB 6HBU. Topology diagrams (first row); schematics representing helices at the dimer interface, viewed from the periplasm (each circle represents a helix) (second row); and cartoon views of monomers (third row) are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) TM5 helices (blue) are either a single continuous helix (MlaE, PDB 6XBD; LptG, PDB 6MHZ), a reentrant helix insertion (pink) (Wzm, PDB 6OIH; ABCG2, PDB 6HBU), or no helix (MacB, PDB 5GKO). (B) IF2 (brown) and TM1 (salmon) helices adopt a range of conformations, from IF2 being parallel to the membrane interface and forming a sharp angle with TM1 (left) to one continuous smooth helix for LptG (right). Top row, cartoon representation; bottom row, curvature color coded using Bendix (Dahl et al., 2012).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig3-v2.jpg)
+
+**Figure 3.:** (A) Structure of MlaFEDB complex, highlighting interacting regions between MlaE and MlaD. MlaD-TMA/D (cyan helices) interact with the core domain of MlaE (pink surface); MlaD-TMB/C/E/F (green helices) interact mostly with IF1 (red helices). The periplasmic end of the MlaE dimer interacts with the MlaD ring (shown in ‘open book’ representation, right). MlaD residues that interact with MlaE are shown in red, and MlaE residues that interact with MlaD are shown in green, as determined using COCOMAPS (Vangone et al., 2011). Below, a zoom of the positions on the TM helices of MlaD mutated to test interactions either with IF1 (green spheres) or the TM helices of MlaE (blue spheres) (related to panel E), (F) and (Figure 3—figure supplement 2C-E). (B) Periplasmic and cytoplasmic views highlighting the interaction between helices of MlaE and MlaD. Helices colored as in (A). (C) Genetic complementation of mlaD knockout with MlaD TM chimeras. 10-fold serial dilutions of the indicated cultures spotted on LB plates containing SDS+EDTA at the concentrations indicated, and incubated overnight. The mlaD knockout does not grow in the presence of SDS+EDTA, but can be rescued by the expression of WT MlaD from a plasmid. MlaD chimeras containing LptC or LetB TM helices fail to complement. Corresponding controls plated on LB only can be found in Figure 3—figure supplement 2A. (D) SDS-PAGE of recombinantly expressed and purified complexes formed in the presence of WT MlaD or MlaD chimeras containing LptC or LetB TM helices. (E) Genetic complementation of mlaD knockout with MlaD TM mutants. The assay is performed as in (C). F13A, A17F, A20F, V24F mutants complement, while a triple mutant (A17F/A20F/V24F; ‘3x Mutant’) fails to complement. Corresponding controls plated on LB only can be found in Figure 3—figure supplement 2C. (F) SDS-PAGE of recombinantly expressed and purified complexes formed in the presence of WT MlaD or the MlaD 3x Mutant. (G) Genetic complementation of mlaE knockout with MlaE IF1 truncation mutants. The assay is performed as in (C). Small deletions of the N-terminus of MlaE IF1 are tolerated, while larger deletions impair or completely abolish growth. Corresponding controls plated on LB only can be found in Figure 3—figure supplement 2D.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Conserved motifs are depicted at the interface between MlaE IF1 and the TM helices of MlaD. (B) Sequence alignment of MlaD (TM helix only) and (C) MlaE from 13 diverse bacterial species. Red, conserved glycine residues that are part of the interaction between IF1 and the TM helices of MlaD. Blue, the conserved residues that are part of the salt bridge and polar interactions around R97. Residue numbers correspond to E. coli sequences. Sequence alignments were done with MUSCLE (Edgar, 2004) implemented within Phenix.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Tenfold serial dilutions of the indicated cultures spotted on LB agar and incubated overnight (control for data in Figure 3C). (B) Western blot using an anti-MlaD antibody against wild-type and mutant forms of MlaD, showing expression levels in the cell lysate and membrane fraction after overexpression. Bands for MlaD monomer and hexamer are annotated, in addition to a band corresponding to lysozyme (used in the purification protocol). Asterisk denotes non-specific bands, also observed in an mlaD knockout strain. (C) Tenfold serial dilutions of the indicated cultures spotted on LB agar and incubated overnight (control for data in Figure 3E). (D) Genetic complementation of mlaD knockout with MlaD TM mutants. 10-fold serial dilutions of the indicated cultures spotted on LB plates containing SDS+EDTA at the concentrations indicated, and incubated overnight. The mlaD knockout does not grow in the presence of SDS+EDTA, but can be rescued by the expression of WT MlaD from a plasmid. All MlaD mutants complement. (E) Controls corresponding to (D), plated on LB only.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Illustration of the IF1 truncation mutants used in genetic complementation assays (related to Figure 3G). (B) 10-fold serial dilutions of the indicated cultures spotted on LB agar and incubated overnight (control for data in Figure 3G). (C) SDS-PAGE of recombinantly expressed and co-purified MlaFEDB complexes with truncations of MlaE IF1 (as in (A)), purified by pulling down His-MlaD.
+
 Despite negligible sequence similarity, the core MlaE fold is related to the TMDs of several other ABC transporters. MlaE most closely resembles the LPS exporter LptF/LptG (Thomas et al., 2020) and the macrolide antibiotic efflux pump MacB (Crow et al., 2017; Fitzpatrick et al., 2017; Okada et al., 2017; Figure 2B–J), but also shares similarities with the glycolipid flippases Wzm (Bi et al., 2018; Caffalette et al., 2019) and TarG (Chen et al., 2020) and the eukaryotic ABCA/ABCG families (Figure 2—figure supplement 1). However, MlaE also displays notable differences. First, previously determined structures from the above families contained either four TM helices (MacB) or six TM helices (all the rest). In contrast, MlaE is intermediate between these two groups; MacB contains TM1-TM4, MlaE contains TM1-TM5, and other transporters contain TM1-TM6 (Figure 2, Figure 2—figure supplement 1). Second, in both MlaE and LptFG, TM5 exists as one continuous helix, whereas TarG, Wzm, and ABCA/ABCG have a small insertion near the periplasmic end that results in a pair of reentrant helices (Figure 2—figure supplement 2A). Third, MlaE has a membrane-embedded helix preceding TM1, which we call IF2 (also called CnH [Lee et al., 2016], IF [Bi et al., 2018], or ‘elbow helix’). In MacB, TarG, Wzm, and ABCA/ABCG transporters, IF2 forms an amphipathic helix that runs roughly parallel to the membrane within the cytoplasmic leaflet, followed by a sharp turn and a separate TM1, which spans nearly the entire bilayer (Figure 2—figure supplement 2B). In contrast, LptFG has no clear IF2 counterpart, as these TMDs begin with TM1 forming a long, continuous helix (Figure 2—figure supplement 2B). In MlaE, this region adopts an intermediate configuration, where IF2 and TM1 are both involved in the first traverse of the membrane, but these two segments are distinguished by a clear kink in the middle of the bilayer (Figure 2—figure supplement 2B). Overall, the structure of the transmembrane region of MlaE differs significantly from previously determined structures, but has at its core a transporter domain conserved across a structurally diverse group of ABC transporters and shared between bacteria and eukaryotes.
 
-## Interactions between MlaE and MlaD
+### Interactions between MlaE and MlaD
 
 MlaE has three main modes of interaction with MlaD (Figure 3A). First, the MlaE core TMDs interact with two of the MlaD TM helices; second, the IF1 helices of the MlaE dimer interact with the remaining four MlaD TM helices; and third, the periplasmic end of the MlaE dimer interacts with the MlaD ring. Due to the symmetry mismatch between the pseudo-sixfold symmetric MlaD hexamer and the two-fold symmetric MlaFEB module, the six identical transmembrane helices of MlaD interact with MlaE in three non-equivalent ways (Figure 3B). The MlaD TMs from chains A and D (MlaD-TMA/D) are closely packed against the MlaE TMDs on opposite sides of the complex. The remaining four TM helices from MlaD are largely isolated in the membrane, and their main interactions are with the MlaE IF1 helices via helix crossing interactions, with MlaD-TMB/E and MlaD-TMC/F contacting IF1 residues 6–14 and 17–25, respectively (~84° crossing angle, Figure 3A, Figure 3—figure supplement 1). The residues of IF1 interacting with the MlaD-TMB/E and MlaD-TMC/F helices form two well-conserved LxxF/LG motifs, with the conserved Gly11 of each MlaD TM making close packing interactions with the two conserved Gly residues from IF1 (Gly10 and Gly21).
 
@@ -49,13 +101,37 @@ To test whether the MlaD TM helices are important for MlaFEDB complex assembly, 
 
 While MlaD-TMA/D helices interact intimately with the core MlaE TMD, MlaD-TMB/E and MlaD-TMC/F interact more loosely with MlaE, mostly through IF1. We constructed a series of mutations in MlaD and MlaE to probe the relative contributions of these interactions in the TM region. Single mutations in MlaD predicted to interfere with the interactions between MlaE and MlaD-TMA/D by creating steric clashes (Ala17Phe, Ala20Phe, or Val24Phe) or removing a bulky hydrophobic residue (Phe13Ala) had no effect on the complementation of an mlaD knockout strain (Figure 3A,E and Figure 3—figure supplement 2C). In contrast, a triple mutant (Ala17Phe/Ala20Phe/Val24Phe) failed to complement, but yielded intact MlaFEDB complexes when overexpressed and purified (Figure 3E and F). These results indicate that the interactions made by the MlaD-TMA/D helices may be redundant for MlaFEDB complex assembly because the remaining MlaD-TMB/E and MlaD-TMC/F helices can compensate. However, the interactions made by the MlaD-TMA/D helices are required for transporter function in cells, suggesting a possible role in mechanism, such as modulating conformational change. Next, we assessed the role of the interactions between the IF1 helix of MlaE and MlaD-TMB/E and MlaD-TMC/F. We generated truncation mutants of MlaE IF1 with 15 or 25 residues deleted from the N-terminus of IF1 (Δ1–15 aa and Δ1–25 aa), thereby removing the MlaD-TMC/F-binding site or both the MlaD-TMC/F and MlaD-TMB/E binding sites, respectively (Figure 3—figure supplement 3A). We used a similar genetic complementation assay to the one described above, but for an mlaE knockout, to assess the function of these variants in cells. We observed that both the Δ1–15 aa and Δ1–25 aa mutants fully restored growth of an mlaE knockout under these conditions, similar to complementation by the WT operon (Figure 3G, Figure 3—figure supplement 3B). Consistent with these results, when point mutations were introduced into MlaD at positions predicted to disrupt interactions with both conserved LxxF/LG motifs in IF1, all mutants tested were able to fully complement an mlaD knockout (Figure 3A, Figure 3—figure supplement 2D,E). All the MlaE truncation mutants expressed well, and formed complexes with MlaD, MlaF, and MlaB (Figure 3—figure supplement 3C), although we noted that all the mutants appeared to incorporate less MlaFB into the complex. The significance of MlaFB destabilization is not clear, although binding of MlaFB to MlaE was previously proposed to be weaker than is typically observed for ABC transporters, and reversible association/dissociation of the complex may be a mechanism of MlaFEDB regulation (Kolich et al., 2020). Thus, while the interactions between the IF1 helix of MlaE and the MlaD-TMB/E / MlaD-TMC/F helices are not strictly required, they likely still contribute to MlaFEDB complex stability. Taken together, our data suggest that the TM regions of MlaD cooperate to facilitate the assembly and stability of the MlaFEDB complex, and that the interactions formed by TMA/D may have an additional role in the function of the MlaFEDB transporter that remains to be unraveled. Finally, while the region of IF1 that interacts with MlaD appears to be dispensable, MlaE mutants with larger deletions only partially restored growth (Δ1–30 aa), or failed to complement (Δ1–39 aa), suggesting that the C-terminus of IF1 and/or the following loop has an essential function (Figure 3G).
 
-## MlaE adopts an outward-open conformation
+### MlaE adopts an outward-open conformation
 
 While the vast majority of ABC transporter structures adopt an inward-open conformation in the absence of nucleotide (Gerber et al., 2008; Kadaba et al., 2008; Aller et al., 2009; Manolaridis et al., 2018), our structure of MlaE is in the outward-open state (Figure 4A). This uncommon configuration was previously observed in the related transporters LptFG (Li et al., 2019; Owens et al., 2019) and MacB (Fitzpatrick et al., 2017), suggesting that Mla, Lpt, and MacAB may share some mechanistic features. The narrow outward-open pocket within MlaE encloses a volume of ~750 Å3 (estimated using CASTp [Tian et al., 2018]) and is primarily formed by TM1 and TM2, with some contribution from TM5 (Figure 4A). This is similar to LptFG, where TM1, TM2, and TM5 form a much larger pocket (volume of ~3000 Å3, estimated using CASTp [Tian et al., 2018], PDB: 6MHU [Li et al., 2019]) at the periplasmic side of the complex for LPS binding. The pockets in both transporters are largely hydrophobic in nature, consistent with binding to lipid substrates, although in LptFG the rim has a pronounced positive charge proposed to interact with phosphates on the LPS inner core (Li et al., 2019), while MlaE is more neutral.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-v2.jpg)
+
+**Figure 4.:** (A) Side view (left) and view from periplasm (right) of MlaE dimer highlighting the outward-open pocket formed by TM1 (salmon helices) and TM2 (orange helices). The boundary of the substrate-binding pocket was estimated using CASTp (Tian et al., 2018), and is displayed as a red surface. (B) Side view of MlaFEDB complex, showing the continuous hydrophobic channel running from the substrate-binding pocket in MlaE to the periplasmic space, through the pore of MlaD (red, tunnel boundary estimated with HOLLOW [Ho and Gruswitz, 2008]). (C) Side view cross-section of the hydrophobic channel between MlaE and MlaD showing two bound phospholipids in blue and magenta. (D) Lipids modeled with surrounding structural elements and key residues highlighted. EM density map is shown as mesh, at the same contour level for lipids and surrounding regions. The lateral channels that could accommodate lipid head groups are indicated by orange cones.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Extracytoplasmic lipid transport domains (green) from ABC transporters. MlaFEDB, PDB 6XBD; LptBEFGC, PDB 6MJP; ABCA1, PDB 5XJY.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) MlaE protomers (salmon) and nearby MlaD subunits (green) shown as a surface, with residues within 4.5 Å of lipid 1 colored blue and residues within 4.5 Å of lipid 2 colored magenta. (B) X-ray (orange, PDB 5UW2) and EM (green, PDB 6XBD) structures aligned on the whole hexamer, highlighting differences in the conformations of the pore lining loops of MlaD between the symmetric crystal structure and the asymmetric EM structure. (C) The EM and X-ray MlaD structures were aligned on chain A and, to illustrate the tilt and break in symmetry, lines were drawn between alpha-carbons using a modified version of the ColorByRMSD pymol script.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Center, MlaE dimer (gray ribbons) with sites of mutations indicated by spheres (lime), and the two bound lipids (magenta and blue sticks). Left, zoomed in view of the salt bridges formed by residues Arg97, Glu98, Lys205, and Asp250 (lime sticks), part of a larger polar interaction network including Gln73, Asp198, and Thr254 (black sticks). Right, zoomed in view of interactions between Tyr81 (lime) and bound lipids (blue and magenta). (B) Tenfold serial dilutions of the indicated cultures spotted on LB plates containing SDS and EDTA at the concentrations indicated and incubated overnight. The mlaE knockout grows poorly in the presence of SDS+EDTA, but can be rescued by the expression of WT MlaE or MlaE mutants. (C) Same as in (B), but plated on LB only.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** E. coli MlaC (PDB 5UWA) and P. putida MlaC (PDB 5UWB) are shown in cartoon representation and with a cross-section through the surface. Lipids are shown as yellow or magenta spheres.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The density map EMD-30355 deposited by Chi et al., 2020 shown with the corresponding model (PDB 7CGE). (B) Model from this work (PDB 6XBD) rigid-body docked into the same density map (EMD-30355).
+
 MlaD forms a hexameric MCE ring with a hydrophobic pore at the center (Ekiert et al., 2017). Similar hydrophobic tunnels have been observed through the MCE rings of PqiB and LetB (Ekiert et al., 2017; Isom et al., 2020), and phospholipids have been cross-linked inside the tunnel of LetB. Indeed, in our structure of the MlaFEDB complex, the pore of MlaD and the outward-open pocket of MlaE line up with each other, resulting in a continuous hydrophobic pathway that runs from the pocket of MlaE, through MlaD, and out into the periplasm (Figure 4B). Structurally diverse lipid transport domains have also been resolved for several other ABC transporters (Qian et al., 2017; Li et al., 2019; Owens et al., 2019; Figure 4—figure supplement 1), and are proposed to facilitate the movement of hydrophobic molecules through the aqueous extracellular/periplasmic environment.
 
-## Lipids are bound in the substrate-translocation pathway
+### Lipids are bound in the substrate-translocation pathway
 
 Additional density was apparent in the outward-open pocket of MlaE, which is the right size and shape to accommodate two diacyl phospholipids (Figure 4C,D). We modeled these as the most abundant PL species in E. coli, phosphatidylethanolamine, and these lipids make extensive contacts with both MlaE subunits, as well as MlaD (Figure 4—figure supplement 2A; see Materials and methods for additional details). Unlike recent structures of the LPS exporter bound to LPS, where all of the acyl chains project downward into the hydrophobic pocket of LptFG (Li et al., 2019; Tang et al., 2019), the lipids bound to MlaFEDB appear to be trapped in different conformations (Figure 4C), perhaps intermediates in the process of being transferred between MlaE and the MlaD pore. In one lipid molecule (lipid 1), both acyl chains are bound in the pocket of MlaE (Figure 4C,D). Strikingly, the second lipid (lipid 2) adopts an extended conformation, with one acyl chain reaching down into the MlaE pocket, while the other projects upwards to insert into a constriction in the MlaD pore formed by Leu106 and Leu107 (Figure 4D), which have previously been implicated in MlaD function (Ekiert et al., 2017). The upward-facing acyl chain of lipid 2 is sandwiched between two tyrosine residues (Tyr81 from each MlaE subunit), and these residues also contact one of the acyl chains of lipid 1. Mutations of Tyr81 to either a smaller (Ala) or a larger (Trp) hydrophobic residue had no effect on E. coli growth in the presence of SDS+EDTA (Figure 4—figure supplement 3), although a Tyr81Glu mutation was recently reported to impair MlaFEDB function (Tang, 2020) (see Discussion).
 
@@ -66,6 +142,16 @@ The presence of two lipid densities in our structure raises the possibility that
 Viewed from the side, the MlaD ring is tilted with respect to MlaFEB by approximately 6° (Figure 1F) and deviates from the expected sixfold symmetry observed in the crystal structure of MlaD and other MCE proteins (Figure 4—figure supplement 2B,C). Differences between subunits that result in symmetry breaking include re-organization of two of the six pore lining loops (containing Leu107) as well as domain level rearrangements in the ring (Figure 4—figure supplement 2B,C). This is particularly surprising, as the MlaFEB module is twofold symmetric in our EM structure, and the crystal structure of the MlaD ring in isolation exhibited near perfect sixfold symmetry. This raises the question: what is breaking the symmetry in our MlaFEDB structure? The clear asymmetric density for the two bound phospholipids suggests that the asymmetry of the MlaD ring and the configuration of the lipids is correlated; otherwise, the cryo-EM reconstruction would yield twofold symmetric lipid densities to match the twofold symmetric features of the MlaFEB module. Thus, the asymmetry in MlaD appears to arise from its asymmetric interactions with lipid 1 at the interface of MlaE and MlaD. Leu107 from MlaD chain F makes hydrophobic interactions with one of the fatty acid tails, perhaps stabilizing this side of the MlaD ring in closer proximity to MlaE and the lipid-binding pocket. The resulting conformational changes in the MlaD ring could be important for lipid translocation through the channel or perhaps even modulating the binding of MlaC to the transporter and facilitating lipid transfer between MlaD and MlaC (see Discussion).
 
 To assess whether phospholipids are bound in the pocket of MlaE in cells, we utilized a site-specific photocross-linking method (Isom et al., 2020) to detect binding of radiolabeled phospholipids in vivo. We incorporated the unnatural photocross-linking amino acid p-benzoyl-L-phenylalanine (BPA) (Chin et al., 2002) into the MlaE protein at five positions in the lipid-binding site (Leu70, Val77, Leu78, Tyr81, and Leu99), as well as Phe209 (protected in the MlaE core; not expected to contact lipids) or Trp149 (membrane exposed; expected to contact bulk membrane lipids) (Figure 5A). After cross-linking in cells that were grown in the presence of 32P orthophosphate to label total phospholipids, these MlaFEDB complexes were purified and analyzed by SDS-PAGE. We observed both a monomeric and dimeric form of MlaE, the latter of which was enriched in cross-linked samples where BPA had been incorporated at the dimer interface (Figure 5—figure supplement 1, Figure 5—figure supplement 2). However, as the level of dimerization was variable between mutants, we focused only on the monomeric band for our analysis (Figure 5B). Cross-linking at Trp149 and Phe209 resulted in high and low 32P signal, respectively, indicative of an abundance of phospholipids near the membrane-exposed Trp149 and very few phospholipids near the buried Phe209, as expected (Figure 5B). 32P incorporation into MlaE was induced by cross-linkers at all five positions in the outward-open lipid binding pocket, with particularly high signals for Tyr81 and Leu99 (Figure 5B). Furthermore, the uncross-linked controls showed a weak signal, indicating that the elevated 32P signal in the cross-linked samples was due to the formation of cross-links between BPA and phospholipids at those locations. Thus, the phospholipid-binding site observed in our MlaFEDB structure is occupied by phospholipids in vivo.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig5-v2.jpg)
+
+**Figure 5.:** (A) MlaE dimer (gray cartoon) showing sites of BPA cross-linker incorporation (spheres). Orange, residues in the lipid-binding pocket; red, residue buried within the MlaE core, designed as a negative control; green, residue facing the membrane environment, designed as a positive control. Bound lipids are shown in magenta and blue sticks. (B) SDS-PAGE of purified WT MlaFEDB and BPA mutants, either cross-linked or uncross-linked, and visualized by Coomassie staining (protein) or phosphorimaging (32P signal). Band corresponding to the MlaE monomer is shown here, and full gels are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62518/elife-62518-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Anti-His western blot against uncross-linked and cross-linked MlaE WT, and Tyr81BPA and Trp149BPA mutants.
 
 ## Discussion
 
@@ -85,21 +171,290 @@ Our data, together with other recent studies, suggest possible mechanisms for ph
 
 ## Materials and methods
 
-## Expression and purification of MlaFEDB for cryo-EM
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2 (DE3)</td>
+      <td>Novagen</td>
+      <td>#71400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli K-12 BW25113/wild-type</td>
+      <td>Coli Genetic Stock Center</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>T7 express E. coli</td>
+      <td>New England Biolabs (NEB)</td>
+      <td>#C2566H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>E. coli K-12 BW25113 ΔmlaD</td>
+      <td>This paper</td>
+      <td>bBEL182</td>
+      <td>Can be obtained from Bhabha-Ekiert lab, NYU Langone. Please see Materials and methods section ‘Phenotypic assays for mla mutants in E. coli’ for details of strain construction</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>E. coli K-12 BW25113 ΔmlaE</td>
+      <td>This paper</td>
+      <td>bBEL183</td>
+      <td>Can be obtained from Bhabha-Ekiert lab, NYU Langone. Please see Materials and methods section ‘Phenotypic assays for mla mutants in E. coli’ for details of strain construction</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MlaD (rabbit polyclonal)</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>(1:10,000). Provided by Henderson lab, University of Queensland</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG Antibody IRDye 800CW (Goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>#925–32211 RRID:AB_2651127</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Penta His Antibody, BSA-free (Mouse monoclonal)</td>
+      <td>Qiagen</td>
+      <td>#34660 RRID:AB_2619735</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG Antibody IRDye 800CW (Goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>#926–32210 RRID:AB_621842</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>For all plasmid info, please see Supplementary file 4</td>
+      <td>For all plasmid info, please see Supplementary file 4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ni Sepharose 6 Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>#17531802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Beads SM-2 Adsorbent Media</td>
+      <td>Bio-Rad</td>
+      <td>#1523920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 Increase 10/300</td>
+      <td>GE Healthcare</td>
+      <td>#28-9909-44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB Broth, Miller</td>
+      <td>BD Difco</td>
+      <td>#244620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB agar pre-mix</td>
+      <td>BD Difco</td>
+      <td>#244510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dodecyl sulfate (SDS)</td>
+      <td>Sigma</td>
+      <td>#L5750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylenediaminetetraacetic acid (EDTA)</td>
+      <td>Sigma</td>
+      <td>#ED2SS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>p-benzoyl-l-phenylalanine (BPA)</td>
+      <td>Bachem</td>
+      <td>#F-2800.0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>32P orthophosphoric acid</td>
+      <td>PerkinElmer</td>
+      <td>#NEX053010MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E. coli polar lipid extract</td>
+      <td>Avanti</td>
+      <td>#100600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v0.6 to 2.12</td>
+      <td>Punjani et al., 2017</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION2.1 to 3.1</td>
+      <td>Kimanius et al., 2016; Fernandez-Leiro and Scheres, 2017</td>
+      <td>RRID:SCR_016274</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php/Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td>https://docs.google.com/forms/d/e/1FAIpQLSfAQm5MA81qTx90W9JL6ClzSrM77tytsvyyHh1ZZWrFByhmfQ/viewform</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td>RRID:SCR_016500</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Pyem</td>
+      <td>Asarnow et al., 2019</td>
+      <td></td>
+      <td>https://github.com/asarnow/pyem or https://doi.org/10.5281/zenodo.3576630</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Echols et al., 2012; Liebschner et al., 2019</td>
+      <td>RRID:SCR_014224</td>
+      <td>http://www.phenix-online.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE</td>
+      <td>Edgar, 2004</td>
+      <td>RRID:SCR_011812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3DFSC Processing Server</td>
+      <td>Tan et al., 2017</td>
+      <td></td>
+      <td>https://3dfsc.salk.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COCOMAPS</td>
+      <td>Vangone et al., 2011</td>
+      <td></td>
+      <td>https://www.molnac.unisa.it/BioTools/cocomaps/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CASTp</td>
+      <td>Tian et al., 2018</td>
+      <td></td>
+      <td>http://sts.bioe.uic.edu/castp/index.html?2pk9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLLOW</td>
+      <td>Ho and Gruswitz, 2008</td>
+      <td>RRID:SCR_005729</td>
+      <td>http://hollow.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bendix</td>
+      <td>Dahl et al., 2012</td>
+      <td></td>
+      <td>https://www.ks.uiuc.edu/Research/vmd/plugins/bendix/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>https://pymol.org/2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DALI</td>
+      <td>Holm, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of MlaFEDB for cryo-EM
 
 To prepare a sample for cryo-EM, plasmid pBEL1200 (Ekiert et al., 2017), which contains the mlaFEDCB operon with an N-terminal His-tag on MlaD, was transformed into Rosetta 2 (DE3) cells (Novagen). For expression, overnight cultures of Rosetta 2 (DE3)/pBEL1200 were diluted 1:100 in LB (Difco) supplemented with carbenicillin (100 µg/mL) and chloramphenicol (38 µg/mL) and grown at 37°C with shaking to an OD600 of 0.9, then induced by addition of L-arabinose to a final concentration of 0.2% and continued incubation for 4 hr shaking at 37°C. Cultures were harvested by centrifugation, and the pellets were resuspended in lysis buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10% glycerol). Cells were lysed by two passes through an Emulsiflex-C3 cell disruptor (Avestin), then centrifuged at 15,000 xg for 30 min to pellet cell debris. The clarified lysates were ultracentrifuged at 37,000 rpm (F37L Fixed-Angle Rotor, Thermo-Fisher) for 45 min to isolate membranes. The membranes were resuspended in membrane solubilization buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10% glycerol, 25 mM DDM) and incubated for 1 hr, rocking at 4°C. The solubilized membranes were then ultracentrifuged again at 37,000 rpm for 45 min, to pellet any insoluble material. The supernatant was incubated with NiNTA resin (GE Healthcare #17531802) at 4°C, which was subsequently washed with Ni Wash Buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole, 10% glycerol, 0.5 mM DDM) and bound proteins eluted with Ni Elution Buffer (50 mM Tris pH 8.0, 300 mM NaCl, 250 mM imidazole, 10% glycerol, 0.5 mM DDM). MlaFEDB containing fractions eluted from the NiNTA column were pooled and concentrated before separation on a Superdex 200 16/60 gel filtration column (GE Healthcare) equilibrated in gel filtration buffer (20 mM Tris pH 8.0, 150 mM NaCl, 0.5 mM DDM). Fractions of MlaFEDB from size exclusion chromatography were pooled and used for incorporation into nanodiscs.
 
-## Reconstitution of MlaFEDB in lipid nanodiscs
+### Reconstitution of MlaFEDB in lipid nanodiscs
 
 For expression of the MSP, MSP1D1, overnight cultures of Rosetta 2 (DE3)/pMSP1D1 (Addgene #20061) were diluted 1:100 in LB (Difco, #244620) supplemented with kanamycin (50 µg/mL) and chloramphenicol (38 µg/mL) and grown at 37°C with shaking to an OD600 of 0.9, then induced by addition of IPTG to a final concentration of 1 mM and continued incubation for 3 hr shaking at 37°C. Cultures were harvested by centrifugation, and the pellets were resuspended in lysis buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole). Cells were lysed by two passes through an Emulsiflex-C3 cell disruptor (Avestin), then centrifuged at 38,000 xg to pellet cell debris. The clarified lysates were incubated with NiNTA resin (GE Healthcare #17531802) at 4°C, which was subsequently washed with Ni Wash Buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole) and bound proteins eluted with Ni Elution Buffer (50 mM Tris pH 8.0, 300 mM NaCl, 250 mM imidazole). The His-tag was cleaved using TEV protease.
 
 For nanodisc reconstitution, a protocol was adapted from Gao et al., 2016. 2.5 mg of E. coli polar lipid extract (Avanti #100600) were dissolved in 1 ml of chloroform in a glass test tube. The chloroform was then evaporated slowly under a stream of argon gas, to produce a thin film of lipids on the bottom of the tube, and further left to dry under vacuum for at least 2 hr. The lipids were then resuspended in 200 µL of lipid resuspension buffer (20 mM HEPES, 150 mM NaCl, 14 mM DDM, pH 7.4) and sonicated until the mixture was almost clear. The lipids, MSP1D1 and MlaFEDB were mixed at a molar ratio of 400:4:1, respectively, in nanodisc buffer (20 mM HEPES, 150 mM NaCl, pH 7.4), and left to incubate on ice for 30 min. Bio-Beads (Bio-Rad #1523920) were added (20 mg per 1 ml nanodisc mixture) and incubated for 1 hr, rocking at 4°C. A second batch of Bio-Beads were added and incubated at 4°C overnight. The following day, the Bio-Beads were removed and the sample separated on a Superdex 200 16/60 gel filtration column (GE Healthcare) equilibrated in nanodisc buffer (20 mM HEPES, 150 mM NaCl, pH 7.4). Fractions were assessed by SDS-PAGE and negative stain EM, and were pooled and concentrated for cryo-EM grid preparation.
 
-## Cryo-EM grid preparation and data collection
+### Cryo-EM grid preparation and data collection
 
 After size exclusion chromatography, 3 μL of MlaFEDB reconstituted into nanodiscs (at a final concentration of 0.95 mg/mL) was applied to 400 mesh quantifoil holey carbon grids 1.2/1.3 glow discharged for 12 s. The sample was then frozen in liquid ethane using the FEI Vitrobot Mark IV. Pre-screening of the grids was performed on Talos Arctica TEMs equipped with K2 cameras, operated at 200 kV, and located at PNCC (Portland, OR) or at NYU (New York, NY). Acquisition of the movies used for the final reconstruction was performed on a Titan Krios microscope (‘Krios 2’) equipped with Gatan K2 Summit camera controlled via Leginon (Suloway et al., 2005) and operated at 300 kV (located at the New York Structural Biology Center, NY). Image stacks of 30 frames were collected in super-resolution mode at 0.416 Å per pixel. Data collection parameters are shown in Supplementary file 1.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 The overall strategy is summarized in Figure 1—figure supplement 1. The initial preprocessing steps were all performed within RELION 2.1 (Kimanius et al., 2016; Fernandez-Leiro and Scheres, 2017). Movies were drift corrected with MotionCor2 (Zheng et al., 2017) and CTF estimation was performed using GCTF (Zhang, 2016). Approximately 1000 particles were selected manually and subjected to 2D classification. The resulting class averages were used as templates for subsequent automated particle picking of 1,283,606 particles that were extracted with a box size of 300 pixels. The data was then exported in cryoSPARC v 0.6 (Punjani et al., 2017) for further processing. After 2D classification, 731,205 particles were used to generate an ab-initio model subjected to heterogenous refinement of three classes. The 3rd class led to a map in agreement with the size and shape of a previously published low resolution reconstruction (Ekiert et al., 2017). A second round of heterogeneous classification was then run with the 376,885 particles from this class: only class three led to a high resolution map from 209,224 particles. A curation step was applied to only include particles with assignment probability greater than a threshold of 0.95, reducing the number of particles to 177,513. Particles were then imported back to RELION for additional rounds of local refinement after having re-extracted the particles with a 500 pixel box size. In RELION 3.1-beta, we performed local CTF and aberration refinement and then performed particle polishing (re-doing first motion correction with RELION’s own implementation of MotionCorr), which improved the resolution from ~3.5 Å to ~3.3 Å. A second round of CTF and aberration refinement further improved the resolution to ~3.2 Å. The data was then imported into cryoSPARC 2.12 for another round of refinement to 3.05 Å (some default parameters were modified: we used three extra final passes instead of 1, a batchsize epsilon of 0.0005, set the ‘optimize per particle defocus’ and ‘per group ctf parameters’ options to true). Average resolution was estimated using gold standard methods and implementations within RELION and cryoSPARC.
 
@@ -107,7 +462,7 @@ Other data processing strategies were explored but failed to bring additional in
 
 Transfer of data from cryoSPARC to RELION was performed using UCSF Pyem (Asarnow et al., 2019).
 
-## Model building
+### Model building
 
 The following models were used as a starting models for the MlaFEDB structure: for MlaFB, the X-ray structure, PDB ID: 6XGY (Kolich et al., 2020); for the MCE domain protein MlaD, PDB ID: 5UW2 (Ekiert et al., 2017); and for MlaE, a computationally predicted model (Ovchinnikov et al., 2015; Ekiert et al., 2017). Domains were docked as rigid bodies in Chimera (Pettersen et al., 2004), and manual model building was done in COOT (Emsley et al., 2010). The models were then iteratively refined using the real_space_refine algorithm in PHENIX (Echols et al., 2012; Liebschner et al., 2019), with rounds of manual model building in between using COOT. The six TM helices from the six MlaD subunits, not present in the construct used of the X-ray structure, were built de novo, but the loops connecting those helices to the core MCE domains were too flexible to be modeled. For the two MlaD TMA/D helices contacting IF2 and TM3 of MlaE, as well as the two MlaD TMB/E helices that contact IF1 on MlaE, the clear side chain density allowed unambiguous assignment of the sequence register. For the final MlaD TMC/F helices contacting IF1 of MlaE near the N-Terminus, the EM map was filtered to 6 Å to better visualize the density, as these helices are more flexible. The close helical packing geometry between IF1 and MlaD-TMB/E enforces a strong preference for glycine residues at the positions of closest contact (Gly21MlaE and Gly11MlaD, ~3.4 Å Cα-Cα) (Figure 3—figure supplement 1A). Gly is present at MlaD position 11 in 13/13 sequences analyzed, and at MlaE position 21 in 12/13 sequences analyzed (Figure 3—figure supplement 1B,C), suggesting that the interactions between IF1 and MlaD-TMB/E are specific and conserved. Gly11 of MlaD-TMB/E and residues of IF1 are part of a larger interaction motif (17-LxxFGxxxL-25) (Figure 3—figure supplement 1A). MlaD-TMC/F appears to interact with IF1 in a similar manner in the vicinity of MlaE Gly10 (Gly10MlaE and Gly11MlaD, ~3.5 Å Cα-Cα), which is part of a very similar conserved motif (6-LxxLGxxxI-14; Figure 3—figure supplement 1). While density for side chains in MlaD TMC/F is weak, the similarity in helix packing geometry and these two binding sites, along with only one available Gly for close helix packing in the MlaD TM helix suggest that the same surface of the MlaD TM is used for IF1 binding in these chains C and F as well. Consequently, we have used this Gly-Gly close packing to establish a likely sequence register for these TM helices. Due to the lower resolution, we did not model the side chains of these residues explicitly.
 
@@ -119,7 +474,7 @@ Using both the high-resolution map and its filtered version at 6 Å, we also mod
 
 The final model of the MlaFEDB complex is nearly complete, with two noteworthy areas of disorder. First, the loops between the TM helices and the MCE domains of MlaD could not be resolved (5–8 residues disordered in each). Second, the last 32 residues at the C-terminus of each MlaD chain (residues 153–183), which were disordered in previous X-ray structures (Ekiert et al., 2017), were also not visible in our EM structure.
 
-## Structure analysis and bioinformatics
+### Structure analysis and bioinformatics
 
 As structural deviations between MlaE and other ABC TMDs made database searches more difficult, we conducted a Dali search (Holm, 2019) initiated with MlaF to recover all of the PDB structures containing an ABC domain. These structures were then manually curated based upon the presence or absence of TMDs and further classified based upon the TMD fold.
 
@@ -127,26 +482,26 @@ In order to assess the conservation of MlaD and MlaE sequences across species, w
 
 The 3DFSC in Supplementary file 2 was measured using the Remote 3DFSC Processing Server (Tan et al., 2017). The interfaces between the different subunits of MlaFEDB, Lpt and ABCA/G proteins were analyzed using the COCOMAPS server (Vangone et al., 2011). The area of the cavities of MlaE and LptFG were estimated using CASTp (Tian et al., 2018) and HOLLOW (Ho and Gruswitz, 2008). The curvature of the IF2-TM1 helices was analyzed using Bendix (Dahl et al., 2012), and the corresponding figures generated with VMD software support which is developed with NIH support by the Theoretical and Computational Biophysics group at the Beckman Institute, University of Illinois at Urbana-Champaign. All other figures were made with Chimera (Pettersen et al., 2004) or PyMOL (Schrödinger, LLC). The PyMOL plugin, anglebetweenhelices (Schrödinger, LLC), was used to compute the angle between IF1 of MlaE and the TM helices of MlaD.
 
-## Phenotypic assays for mla mutants in E. coli
+### Phenotypic assays for mla mutants in E. coli
 
 Knockouts of mlaD and mlaE were constructed in E. coli BW25113 by P1 transduction from the Keio collection (Baba et al., 2006), followed by excision of the antibiotic resistance cassettes using pCP20 (Cherepanov and Wackernagel, 1995). Serial dilutions of the strains in 96-well plates were manually spotted (2 µL each) on plates containing LB agar or LB agar supplemented with 0.2% SDS and 0.30–0.35 mM EDTA, and incubated for 16 hr at 37°C. We find that this growth assay is very sensitive to the reagents used, particularly the LB agar (see Kolich et al., 2020). For the experiments reported here, we used Difco LB agar pre-mix (BD Difco #244510), a 10% stock solution of SDS (Sigma L5750), and a 500 mM stock solution of EDTA, pH 8.0 (Sigma ED2SS). Furthermore, we note that when the agar plates were incubated longer than 16 hr, we began to observe some clearing/loss of pigmentation of the bacterial spot dilutions.
 
 For complementation and/or testing the functionality of the various MlaD and MlaE mutants, a pBAD-derived plasmid harboring the mlaFEDCB operon was transformed into the appropriate knockout strain. To test the functionality of mutations in MlaD, we transformed the mlaD knockout strain with pBEL1198 (mlaFEDCB operon N-terminal His-tag on MlaE, see Supplementary file 4), or derivatives of this plasmid harboring the desired mutations in MlaD (MlaD TM replaced with LptC TM (pBEL2139), MlaD TM replaced with LetB TM (pBEL2138)), Gly11Phe (pBEL2290), Ile12Ala (pBEL2291), Gly11Phe and Ile12Ala (pBEL2292), Phe13Ala (pBEL2294), Ala17Phe (pBEL2295), Ala20Phe (pBEL2296), Val24Phe (pBEL2297), and a triple mutant of Ala17Phe, Ala20Phe and Val24Phe (pBEL2298), see (Supplementary file 4). For the MlaE mutants, we transformed the mlaE knockout strain with pBEL1200 (mlaFEDCB operon with N-terminal His-tag on MlaD, see Supplementary file 4), or derivatives of this plasmid harboring the desired mutations in MlaE (IF1 1–15 aa deletion (pBEL2093), IF1 1–25 aa deletion (pBEL2132), IF1 1–30 aa deletion (pBEL2092), IF1 1–39 aa deletion (pBEL2133), Tyr81Ala (pBEL2099), Tyr81Trp (pBEL2100), Arg97Ala (pBEL2098), Glu98Ala (pBEL2094), Lys205Ala (pBEL2095), and Asp250Ala (pBEL2097), see Supplementary file 4). We found that leaky expression from the pBAD promoter was sufficient for complementation of the phenotypes of both the mlaD and mlaE knockout strains, and thus no L-arabinose was added. We suspect that these constructs significantly over-produce MlaFEDCB proteins, and while some mutants tested confirmed our ability to detect loss-of-function mutations, it is possible that this over-expression may mask the impact of mutations that cause a moderate reduction in MlaFEDB activity.
 
-## Expression and purification of MlaFEDB mutants
+### Expression and purification of MlaFEDB mutants
 
 MlaFEDB mutants were expressed and purified by NiNTA affinity chromatography as described above. For studies involving mutations in MlaD, we used a construct with the WT mlaFEDCB operon with an N-terminal His-tag on MlaE (pBEL1198), or derivatives in which the MlaD TM was replaced with LptC TM (pBEL2139) or LetB TM (pBEL2138), or a triple mutation of MlaD Ala17Phe, Ala20Phe and Val24Phe (pBEL2298) was introduced. For studies involving mutations in MlaE, we used a construct with the WT mlaFEDCB operon with an N-terminal His-tag on MlaD (pBEL1200), or derivatives with the MlaE IF1 1–15 aa deletion (pBEL2093), MlaE IF1 1–25 aa deletion (pBEL2132), MlaE IF1 1–30 aa deletion (pBEL2092), or MlaE IF1 1–39 aa deletion (pBEL2133).
 
-## Western blot to detect MlaD TM chimera mutants
+### Western blot to detect MlaD TM chimera mutants
 
 In order to assess the expression and cellular localization of the MlaD mutants with the native TM replaced by the TM from LetB or LptC, each of the pBEL1198 derived plasmids (WT operon [pBEL1198], MlaD TM replaced with LptC TM [pBEL2139] and MlaD TM replaced with LetB TM [pBEL2138], see Supplementary file 4) were expressed and purified as described above (see Expression and purification of MlaFEDB). Following cell lysis and a low-speed spin to remove cell debris, a sample was collected, which we refer to as the ‘whole cell lysate’. The membranes were then isolated and solubilized as described above, and a sample was taken from the solubilized membranes, which we refer to as the ‘membrane fraction’. Of each sample, 10 µL were separated on an SDS-PAGE gel and transferred to a nitrocellulose membrane. The membranes were blocked in PBST containing 5% milk for 1 hr. The membranes were then incubated with primary antibody (rabbit polyclonal anti-MlaD (provided by Henderson lab, University of Queensland) at a dilution of 1:10,000) in PBST + 5% milk overnight at 4°C. The membranes were then washed three times with PBST and were incubated with goat anti-rabbit IgG polyclonal antibody (IRDye 800CW, LI-COR Biosciences #925–32211 at a dilution of 1:10,000) in PBST + 5% milk for 1 hr. The membranes were then washed three times with PBST and imaged using a LI-COR (LI-COR Biosciences).
 
-## Lipid cross-linking experiments
+### Lipid cross-linking experiments
 
 This method was adapted from Isom et al., 2020. T7express E. coli (NEB) were co-transformed with (1) plasmids to express MlaFEDCB (either the WT proteins using pBEL1198, or derivatives of this plasmid expressing Amber mutant MlaE variants for BPA incorporation (Tyr81Bpa [pBEL2057], Val77Bpa [pBEL2060], Leu78Bpa [pBEL2061], Leu70Bpa [pBEL2062], Leu99Bpa [pBEL2063], Trp149Bpa [pBEL2065] or Phe209Bpa [pBEL2066]); and (2) pEVOL-pBpF (Addgene #31190), which encodes a tRNA synthetase/tRNA pair for the in vivo incorporation p-benzoyl-l-phenylalanine (BPA) in E. coli proteins at the amber stop codon, TAG (Chin et al., 2002; Isom et al., 2017). Bacterial colonies were inoculated in LB broth supplemented with carbenicillin (100 µg/mL), chloramphenicol (38 µg/mL) and 1% glucose, and grown overnight at 37°C. The following day, bacteria were pelleted and resuspended in 32P Labeling Medium (a low phosphate minimal media: 1 mM Na2HP04, 1 mM KH2PO4, 50 mM NH4Cl, 5 mM Na2SO4, 2 mM MgSO4, 20 mM Na2-Succinate, 0.2x trace metals and 0.2% glucose) supplemented with carbenicillin (100 µg/mL) and chloramphenicol (38 µg/mL) and inoculated 1:33 in the 10 mL of the same medium. Bacteria were grown to OD 1.0 and a final concentration of 0.2% L-arabinose and 0.5 mM BPA (Bachem, #F-2800.0005), alongside 375 µCi 32P orthophosphoric acid (PerkinElmer, #NEX053010MC) were added and left to induce overnight.
 
 The following day, the cultures were spun down and resuspended in 1 mL of PBS, and the ‘cross-linked’ samples underwent cross-linking by treatment with 365 nM UV in a Spectrolinker for 30 min. Both the cross-linked and uncross-linked cells were then spun down and resuspended in 1 mL of lysozyme-EDTA resuspension buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole, 1 mg/mL lysozyme, 0.5 mM EDTA, 25 U/mL benzonase) and were incubated for 1 hr at room temperature. The cells then underwent eight cycles of freeze-thaw lysis by alternating between liquid nitrogen and a 37°C heat block. The lysate was pelleted at 20,000 xg for 15 min, and the pellets were resuspended in 133 µL of membrane resuspension buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10% glycerol and 25 mM DDM), and incubated, shaking, for 1 hr. The sample volume was then increased to 1 mL using 10 mM wash buffer (50 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole) and insoluble material was pelleted at 20,000 xg for 15 min. Each supernatant was then mixed with 25 µL of nickel beads (Ni Sepharose 6 Fast Flow) for 30 min. The beads were pelleted at 500 xg for 1 min and the supernatant collected. The beads were then washed four times with 40 mM wash buffer (50 mM Tris pH 8.0, 300 mM NaCl, 40 mM imidazole, 10% glycerol, 0.5 mM DDM) and finally resuspended in 50 µL of elution buffer (50 mM Tris pH 8.0, 300 mM NaCl, 300 mM imidazole, 10% glycerol, 0.5 mM DDM). The samples were then mixed with 5x SDS-PAGE loading buffer, and the beads spun down at 12,000 xg for 2 min. Eluted protein was analyzed by SDS-PAGE and stained using InstantBlue Protein Stain (Expedeon, #isb1l). Relative loading of the MlaE monomer band on the gel was estimated integrating the density of the corresponding bands in the InstantBlue-stained gel in ImageJ (Rueden et al., 2017), and this was used to normalize the amount of MlaE monomer loaded on a second gel, to enable more accurate comparisons between samples. The normalized gel was stained with InstantBlue and 32P signal was detected using a phosphor screen and scanned on a Typhoon scanner (Amersham). Three replicates of the experiment were performed, starting with protein expression. NB: earlier protocols using urea solubilization (Coudray, 2020) gave globally similar results but with variation in cross-linking efficiency between biological replicates; the improved protocol used here, purifying MlaFEDB under native conditions (without urea), has much lower variation between replicates.
 
-## Western blots to detect MlaE in cross-linked samples
+### Western blots to detect MlaE in cross-linked samples
 
 Samples were grown and induced as described above (see Lipid cross-linking experiments), but in the absence of 32P orthophosphoric acid. The Western blot was done as described above (in Western blots to detect MlaD TM mutants), but with an anti-His antibody (Qiagen, #34660 at a dilution of 1:5000) as primary, to detect His-tagged MlaE, and goat anti-mouse IgG polyclonal antibody (IRDye 800CW, LI-COR Biosciences #926–32210 at a dilution of 1:10,000) as the secondary antibody.

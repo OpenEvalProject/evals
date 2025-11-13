@@ -13,13 +13,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0220qvk04 Spine Center, Xinhua Hospital, Shanghai Jiaotong University School of Medicine Shanghai China
+1. Spine Center, Xinhua Hospital, Shanghai Jiaotong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 
 † Corresponding author
 
 ## Abstract
 
-It has been reported that loss of PCBP2 led to increased reactive oxygen species (ROS) production and accelerated cell aging. Knockdown of PCBP2 in HCT116 cells leads to significant downregulation of fibroblast growth factor 2 (FGF2). Here, we tried to elucidate the intrinsic factors and potential mechanisms of bone marrow mesenchymal stromal cells (BMSCs) aging from the interactions among PCBP2, ROS, and FGF2. Unlabeled quantitative proteomics were performed to show differentially expressed proteins in the replicative senescent human bone marrow mesenchymal stromal cells (RS-hBMSCs). ROS and FGF2 were detected in the loss-and-gain cell function experiments of PCBP2. The functional recovery experiments were performed to verify whether PCBP2 regulates cell function through ROS/FGF2-dependent ways. PCBP2 expression was significantly lower in P10-hBMSCs. Knocking down the expression of PCBP2 inhibited the proliferation while accentuated the apoptosis and cell arrest of RS-hBMSCs. PCBP2 silence could increase the production of ROS. On the contrary, overexpression of PCBP2 increased the viability of both P3-hBMSCs and P10-hBMSCs significantly. Meanwhile, overexpression of PCBP2 led to significantly reduced expression of FGF2. Overexpression of FGF2 significantly offset the effect of PCBP2 overexpression in P10-hBMSCs, leading to decreased cell proliferation, increased apoptosis, and reduced G0/G1 phase ratio of the cells. This study initially elucidates that PCBP2 as an intrinsic aging factor regulates the replicative senescence of hBMSCs through the ROS-FGF2 signaling axis. This study was supported by the National Natural Science Foundation of China (82172474).
+Background:It has been reported that loss of PCBP2 led to increased reactive oxygen species (ROS) production and accelerated cell aging. Knockdown of PCBP2 in HCT116 cells leads to significant downregulation of fibroblast growth factor 2 (FGF2). Here, we tried to elucidate the intrinsic factors and potential mechanisms of bone marrow mesenchymal stromal cells (BMSCs) aging from the interactions among PCBP2, ROS, and FGF2.Methods:Unlabeled quantitative proteomics were performed to show differentially expressed proteins in the replicative senescent human bone marrow mesenchymal stromal cells (RS-hBMSCs). ROS and FGF2 were detected in the loss-and-gain cell function experiments of PCBP2. The functional recovery experiments were performed to verify whether PCBP2 regulates cell function through ROS/FGF2-dependent ways.Results:PCBP2 expression was significantly lower in P10-hBMSCs. Knocking down the expression of PCBP2 inhibited the proliferation while accentuated the apoptosis and cell arrest of RS-hBMSCs. PCBP2 silence could increase the production of ROS. On the contrary, overexpression of PCBP2 increased the viability of both P3-hBMSCs and P10-hBMSCs significantly. Meanwhile, overexpression of PCBP2 led to significantly reduced expression of FGF2. Overexpression of FGF2 significantly offset the effect of PCBP2 overexpression in P10-hBMSCs, leading to decreased cell proliferation, increased apoptosis, and reduced G0/G1 phase ratio of the cells.Conclusions:This study initially elucidates that PCBP2 as an intrinsic aging factor regulates the replicative senescence of hBMSCs through the ROS-FGF2 signaling axis.Funding:This study was supported by the National Natural Science Foundation of China (82172474).
 
 ## Introduction
 
@@ -33,55 +33,93 @@ As mentioned above, our understanding of the interactions among PCBP2, ROS, and 
 
 ## Materials and methods
 
-## Hayflick model of cellular aging
+### Hayflick model of cellular aging
 
 The hBMSCs were obtained from healthy male individuals who underwent traumatic femoral or tibia shaft fracture treatment by intramedullary nailing. Cell extraction and passage were performed as previously described (Liu et al., 2021). hBMSCs were cultured in Dulbecco’s Modified Eagle Medium (DMEM) with high glucose containing 10% fetal bovine serum. It is well accepted that the expansion of BMSCs in culture will accelerate senescence, and the differentiation potential will decrease from the sixth generation. In the tenth generation, the average number of cumulative population doublings drops from 7.7 to 1.2 (Bonab et al., 2006). Thus, after passage of the hBMSCs, the third-generation cells were labeled as P3 (in vitro non-senescence model, P3-hBMSCs) and the tenth-generation cells were labeled as P10 (in vitro replication senescence model, P10-hBMSCs). The cells were incubated in an incubator at 37°C with 5% CO2, and the culture medium was changed every 2 days.
 
-## GSE95024 analysis
+### GSE95024 analysis
 
 The GSE95024 data was downloaded from the GEO database, including four groups of HCT116 cells with silenced PCBP2 and four groups of negative controls. R.3.5.2 software was used to screen out differentially expressed genes, and logFC≥2 and p<0.01 was regarded as significance. The STRING (https://string-db.org/cgi/input.pl) tool was used to predict the interaction among differentially expressed genes in protein levels.
 
-## Unlabeled quantitative proteomics
+### Unlabeled quantitative proteomics
 
 The hBMSC were lysed with RIPA, and the protein content of the cells was quantified using BCA Protein Assay kits (Abcam, USA). Dithiothreitol (1 M), 200 μL UA buffer, 40 μL trypsin buffer, 25 μL 25 mM NH4HCO3, and 50 μL 0.1% trifluoroacetic acid (TFA) were added in sequence and then centrifuged to obtain the peptides, which were quantified using the BCA kits. After desalting with an RP-C18 solid phase extraction column, the peptides were washed with 90% acetonitrile-water containing 0.1% TFA. After elution with 90% acetonitrile-water containing 0.1% TFA, the sample was reconstituted with 0.1% formic acid in water and finally analyzed using liquid chromatography/mass spectrometry (Thermo Electron Corporation, LCQ Deca XP MAX10).
 
-## Transfection
+### Transfection
 
 Cells were inoculated into 24-well plates, and when the cell confluence reached 30–50%, they were transfected with small interfering RNA (siRNA) to knock down PCBP2 (sequence: 5' -GGCCTATACCATTCAAGGA- 3'), or transfected with plasmids overexpressing PCBP2 or FGF2. In accordance with the transfection procedure provided by GenePharma (Shanghai Gene Pharmaceutical Technology Co., Ltd.), 48 hr after transfection, the cells were used for subsequent experiments.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 The extraction of total RNA and reverse transcription were performed according to our standard protocol, as described previously (Shi et al., 2017; Zheng et al., 2016). Reverse transcription was performed using Superscript II (Thermo Fisher Scientific) and Fast SYBR Green (Thermo Fisher Scientific) was used for quantitative PCR (qPCR). The sequences of the primers used were given in Table 1.
 
-## WB experiment
+**Table 1.**
+ The primers used in real-time quantitative PCR (qRT-PCR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Primer sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">PCBP2</td>
+      <td>Forward: 5'-ATFGTCATTTTAGCTGGATC-3'</td>
+    </tr>
+    <tr>
+      <td>Reverse: 5'-GATAGATCGTGAAATGCT-3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">FGF2</td>
+      <td>Forward: 5'-AGAAGAGCGACCCTCACATCA-3'</td>
+    </tr>
+    <tr>
+      <td>Reverse: 5'-CGGTLAGCACACACTCCTTTG-3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">β-Actin</td>
+      <td>Forward: 5’-GCTCTAGGCGGACTGTAC-3'</td>
+    </tr>
+    <tr>
+      <td>Reverse: 5'-CCATGCCAATGTTGTCTCTT-3'</td>
+    </tr>
+  </tbody>
+</table>
+
+_Three separate experiments were performed for each sample, and the 2-△△Ct value was used to calculate the relative expression._
+
+### WB experiment
 
 The steps for protein extraction and western blotting (WB) were the same as our previously published procedure (Shi et al., 2017). According to the WB protocol, the primary antibodies, all of which were human anti-rabbit antibodies PCBP2 (Abcam, USA), FGF2 (Abcam, USA), FRS2 (Abcam, USA), and α-tubulin (Cell Signaling Technology, CST, USA), were incubated with nitrocellulose (NC) membrane overnight at a dilution of 1:1500, and, then, incubated with secondary HRP-conjugated antibody (1:1000, rabbit anti-mouse antibody, Abcam, USA) for 1 hr. Finally, the proteins were detected using Pierce SuperSignal West Pico Chemiluminescence Detection Kits (Thermo Fisher, MA, USA), and image and protein density were photographed and calculated by ImageJ system, respectively.
 
-## CCK-8 experiment
+### CCK-8 experiment
 
 The cells were inoculated into 96-well plates with 2000 cells/well and cultured for 24 hr. Then, 10 μL of Cell Counting Kit-8 (CCK-8) reagent (WST-8/CCK8, ab228554, Abcam, USA) and 90 μL of serum-free medium were added to each well, and incubated for 2 hr in the 37°C, 5% CO2, and humid incubator. The absorbance was measured at 450 nm, and the experiment was repeated three times.
 
-## Detection of ROS
+### Detection of ROS
 
 The cells were seeded on a black 96-well microplate with a transparent bottom at 2.5×104 cells/well, and cultured overnight. The medium was then removed and 100 μL of 1× buffer was added to each well. Next, the 1× buffer was removed and 100 μL of diluted DCFDA solution added to stain the cells. The cells were incubated with diluted DCFDA solution in the dark for 45 min. The DCFDA solution was then removed, 100 μL of 1× buffer or 1× PBS added to each well, and fluorescence was measured immediately. In the presence of compound, medium or buffer, the fluorescence at Ex/Em = 485/535 nm was measured using automatic microplate reader (BioTek) end point mode.
 
-## Flow cytometry
+### Flow cytometry
 
 For apoptosis detection, after culturing the cells in six-well plates for 24 hr, the cells were collected and washed with incubation buffer, suspended with 100 µL of labeling solution, and incubated at room temperature for 10–15 min. Next, the fluorescent (SA-FLOUS) solution was added and incubated at 4°C in the dark for 20 min. Finally, the FITC fluorescence was detected at 515 nm and PI fluorescence was detected at 560 nm. Finally, samples were analyzed on FACSCalibur (BD Biosciences, San Jose, CA, USA). Data were analyzed with FlowJo software (Tree Star, Ashland, OR, USA).
 
 For cell cycle progression, after culturing the cells in six-well plate for 24 hr, the cells were collected and fixed with 75% ethanol at 4°C for 4 hr. Next, 400 µL of CCAA solution (PI staining solution, Engreen, New Zealand) and 100 µL RNase A (100 µg/mL) was added and incubated at 4°C in the dark for 30 min. Finally, samples were analyzed on FACSCalibur (BD Biosciences, San Jose, CA, USA). The generated histogram was used to calculate the ratio of cells in the G0/G1, S, or G2/M phases.
 
-## ROS inhibitor
+### ROS inhibitor
 
 5×106 hBMSCs were inoculated into six-well plates, after the corresponding number of cell passages, P3-hBMSCs and P10-hBMSCs were stimulated with 2 mM ROS inhibitor (NAC, KFS289, Beijing Baiolaibo Technology Co., Ltd.)
 
-## Statistical analysis
+### Statistical analysis
 
 Data were presented as the mean ± standard deviation (SD) for three repetitions per group. Student’s t-test was used to analyze the differences between two groups, and one-way ANOVA was used to analyze the differences between multiple groups. p-Value<0.05 was considered statistically significant.
 
 ## Results
 
-## Identification of DEPs in replicative senescent hBMSCs
+### Identification of DEPs in replicative senescent hBMSCs
 
 In our pilot study, unlabeled quantitative proteomics was used to analyze the proteins which were differentially expressed between P3-hBMSCs and P10-hBMSCs (Figure 1). The sequencing results showed that 50 proteins were differentially expressed, of which 25 were significantly upregulated and 25 were significantly downregulated in the replication senescent cells (Figure 2A). PCBP2 was among the 25 significantly downregulated proteins (Figure 2A, red arrow).
 
@@ -95,23 +133,23 @@ In our pilot study, unlabeled quantitative proteomics was used to analyze the pr
 
 Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses were performed, and a variety of GO functions and KEGG signaling pathways seemed to be associated with these 50 DEPs. In GO cellular component annotations, the DEPs were significantly enriched in vacuolar lumen pathways, mitochondrial ribosome pathways, and organellar ribosome pathways. With respect to molecular function, the cadherin binding pathway, lamin binding pathway, and cell adhesion molecule binding pathway were significantly enriched in these DEPs. GO Biological Process terms included the endomembrane system organization pathway, protein-containing complex disassembly pathway, and vesicle budding from membrane pathway (Figure 2B). Using KEGG pathway analysis, DEPs were significantly enriched in endocytosis pathways, terpenoid backbone biosynthesis pathways, and the ferroptosis pathway (Figure 2C). These 50 DEPs in senescent hBMSCs seemed to affect a wide range of biological functions and signaling pathways, which might be associated with the underlying causes of cellular aging.
 
-## Low expression of PCBP2 accentuated the characteristics of cell senescence in hBMSCs
+### Low expression of PCBP2 accentuated the characteristics of cell senescence in hBMSCs
 
 As shown in Figure 2A, the expression of PCBP2, a gene downstream of the ferroptosis pathway, was significantly downregulated in P10-hBMSCs. The real-time quantitative PCR (qRT-PCR) (Figure 3A) and WB (Figure 3B) assays confirmed that the expression of PCBP2 was significantly lower in P10-hBMSCs than in P3-hBMSCs. A siRNA that knocked down PCBP2 and a plasmid that overexpressed PCBP2 were constructed, and qRT-PCR and WB were used to evaluate the efficiency of knockdown and overexpression of PCBP2 in the cells (Figure 4). CCK-8 results showed that after overexpressing PCBP2, the viability of both P3-hBMSCs and P10-hBMSCs increased significantly (Figure 3C). On the contrary, after silencing PCBP2, the viability of both P3-hBMSCs and P10-hBMSCs weakened significantly (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92419/elife-92419-fig3-v1.jpg)
 
-**Figure 3.:** (A) Real-time PCR (RT-PCR) and (B) western blotting (WB) detection for the expression of PCBP2 in P3-hBMSCs and P10-hBMSCs. Cell Counting Kit-8 (CCK-8) assay for the effects of PCBP2 overexpression (C) and PCBP2 silencing (D) on the proliferation of P3-hBMSCs and P10-hBMSCs. Flow cytometry detection for the effects of PCBP2 overexpression (E) and PCBP2 silencing (F) on the cell cycle of P3-hBMSCs and P10-hBMSCs. The effects of PCBP2 overexpression (G) and PCBP2 silencing (H) on apoptosis of P3-hBMSCs and P10-hBMSCs were also detected by flow cytometry. Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and protein detection.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3B, indicating the relevant bands.
+**Figure 3.:** (A) Real-time PCR (RT-PCR) and (B) western blotting (WB) detection for the expression of PCBP2 in P3-hBMSCs and P10-hBMSCs. Cell Counting Kit-8 (CCK-8) assay for the effects of PCBP2 overexpression (C) and PCBP2 silencing (D) on the proliferation of P3-hBMSCs and P10-hBMSCs. Flow cytometry detection for the effects of PCBP2 overexpression (E) and PCBP2 silencing (F) on the cell cycle of P3-hBMSCs and P10-hBMSCs. The effects of PCBP2 overexpression (G) and PCBP2 silencing (H) on apoptosis of P3-hBMSCs and P10-hBMSCs were also detected by flow cytometry. Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and protein detection.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92419/elife-92419-fig4-v1.jpg)
 
-**Figure 4.:** The mRNA expression of PCBP2 after transfection with plasmids that overexpressed PCBP2 (A) and small interfering RNA (siRNA) that knocked down PCBP2 (B). The effect of overexpressing PCBP2 (C) and knocking-down PCBP2 (D) as detected by western blotting (WB). Notes: Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and proteins detection.Figure 4—source data 1.Figure 4C.Figure 4—source data 2.Figure 4C, indicating the relevant bands.Figure 4—source data 3.Figure 4D.Figure 4—source data 4.Figure 4D, indicating the relevant bands.
+**Figure 4.:** The mRNA expression of PCBP2 after transfection with plasmids that overexpressed PCBP2 (A) and small interfering RNA (siRNA) that knocked down PCBP2 (B). The effect of overexpressing PCBP2 (C) and knocking-down PCBP2 (D) as detected by western blotting (WB). Notes: Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and proteins detection.
 
 Using flow cytometry, we found that, compared with P3-hBMSCs, P10-hBMSCs tended to remain in the G0/G1 phase of the cell cycle (Figure 3E and F). In P3-hBMSCs with overexpression of PCBP2, the cell cycle had no significant change. However, in P10-hBMSCs with overexpression of PCBP2, the number of cells in the G0/G1 phase decreased, while the number of cells in the mitotic phase increased significantly (Figure 3E). Meanwhile, in PCBP2 knocked-down P3-hBMSCs, the cell cycle was significantly blocked, with the number of cells in GO/G1 significantly increased while the numbers of cells in S phase and G2/M phase significantly decreased (Figure 3F). In PCBP2 knocked-down P10-hBMSCs, the cell cycle was further arrested, with the number of GO/G1 phase cells significantly increased and the number of S phase and G2/M phase cells significantly decreased (Figure 3F). These results demonstrated that an appropriate amount of PCBP2 could maintain the normal cell cycle, and abnormally low expression of PCBP2 would lead to arrest of the cell cycle in normal cells.
 
 Flow cytometry also demonstrated that the cell apoptosis was substantially higher in P10-hBMSCs than in P3-hBMSCs (Figure 3G and H). Overexpression of PCBP2 significantly reduced apoptosis in both P3-hBMSCs and P10-hBMSCs (Figure 3G), whereas silencing of PCBP2 significantly increased apoptosis in both P3-hBMSCs and P10-hBMSCs (Figure 3H). These results suggested that the decreased expression of PCBP2 induced by cell replicative senescence might promote the apoptosis of senescent cells.
 
-## Low expression of PCBP2 accentuated the cell senescence of hBMSCs in a ROS-dependent way
+### Low expression of PCBP2 accentuated the cell senescence of hBMSCs in a ROS-dependent way
 
 It is well known that ROS may have important effects on the cellular functions of different cells (Milkovic et al., 2019). We used the functional gain-and-loss experiment to verify whether PCBP2 could influence the cellular functions of hBMSCs in a ROS-dependent pathway. The ROS detection results showed that overexpression of PCBP2 inhibited the production of ROS in both P3-hBMSCs and P10-hBMSCs (Figure 5A), while knockdown of PCBP2 increased the production of ROS in both P3-hBMSCs and P10-hBMSCs (Figure 5B). The increased ROS production caused by PCBP2 silence could be significantly rescued by adding 2 mM of antioxidant NAC to PCBP2 silenced P3-hBMSCs and P10-hBMSCs (Figure 5C). As shown in Figure 3, overexpression of PCBP2 promoted, while silencing PCBP2 inhibited the proliferation of P3-hBMSCs and P10-hBMSCs. Further, CCK-8 results showed that the antioxidant NAC could significantly reverse the decrease in cell proliferation of P3-hBMSCs and P10-hBMSCs induced by silencing PCBP2 (Figure 5D). Moreover, the flow cytometry result showed that compared with P3-hBMSCs+si-PCBP2 group, the apoptosis of P3-hBMSCs+si-PCBP2+NAC (2 mM) group was substantially reduced, with similar results obtained in the P10-hBMSCs (Figure 5E). In addition, with the introduction of NAC (2 mM) to PCBP2 silenced P3-hBMSCs and P10-hBMSCs, the proportion of cells in G0/G1 phase significantly reduced and the proportion of cells in S phase significantly increased. These results indicated that the low expression of PCBP2 induced by cell replicative senescence could inhibit cell proliferation, and induce cell apoptosis and cell arrest by increasing the production of ROS.
 
@@ -119,7 +157,7 @@ It is well known that ROS may have important effects on the cellular functions o
 
 **Figure 5.:** (A) Overexpression and (B) silencing of PCBP2 on ROS production in P3-human bone marrow mesenchymal stromal cells (hBMSCs) and P10-hBMSCs. (C) The inhibitory effect of 2 mM NAC on ROS production in P3-hBMSCs and P10-hBMSCs with silenced PCBP2. (D) Cell Counting Kit-8 (CCK-8) test showed that the antioxidant NAC significantly recovered the suppressed cell proliferation in P3-hBMSCs with silenced PCBP2. Flow cytometry was used to detect the effects of 2 mM NAC on the apoptosis (E) and cycle (F) of PBCP2 silenced P3-hBMSCs and P10-hBMSCs. Notes: Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001.
 
-## Antioxidant recovered the viability of senescent hBMSCs by suppressing FGF2 expression
+### Antioxidant recovered the viability of senescent hBMSCs by suppressing FGF2 expression
 
 In GSE95024, we found that after knockdown of PCBP2, 359 genes were significantly downregulated and 332 genes were significantly upregulated (Figure 6A), 17 of which were significantly enriched in pathways related to the role of proteoglycans in cancer (Figure 6B), including 7 downregulated genes: TIMP3, PAK1, HPSE2, HSPB2, PRKACB, WNT8B, and PLAUR, and 10 upregulated genes: CAV1, FRS2, CCND1, CAV2, AKT3, SHH, FGF2, PIK3R3, WNT7A, and THBS1. Analysis of a protein interaction network generated from the STRING database, in which these genes are involved, indicates that there is a significant correlation between FGF2 and the other genes (Figure 6C). Therefore, we further explored the regulatory role of PCBP2 on FGF2. The qRT-PCR results showed that overexpression of PCBP2 led to significantly reduced expression of the mRNA levels of FGF2 in both P3-hBMSCs and P10-hBMSCs (Figure 7A). When PCBP2 was silenced, the mRNA levels of FGF2 significantly increased in both P3-hBMSCs and P10-hBMSCs (Figure 7B). The results of WB demonstrated that overexpression of PCBP2 led to significantly reduced protein expressions of FGF2 in both P3-hBMSCs and P10-hBMSCs (Figure 7C) and downregulation of PCBP2 led to a converse result (Figure 7D). This upregulation of FGF2 from suppression of PCBP2 could be stopped by the antioxidant NAC (Figure 7E).
 
@@ -129,9 +167,9 @@ In GSE95024, we found that after knockdown of PCBP2, 359 genes were significantl
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92419/elife-92419-fig7-v1.jpg)
 
-**Figure 7.:** The regulation of FGF2 mRNA levels by overexpression (A) and silencing (B) of PCBP2 was detected by real-time PCR (RT-PCR) and was confirmed in protein levels via western blotting (WB) assay (C, D). (E) Upregulation of FGF2 protein level in P3-hBMSCs with silenced PCBP2 was stopped by 2 mM NAC. Notes: Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and proteins detection.Figure 7—source data 1.Figure 7C.Figure 7—source data 2.Figure 7C, indicating the relevant bands.Figure 7—source data 3.Figure 7D.Figure 7—source data 4.Figure 7D, indicating the relevant bands.Figure 7—source data 5.Figure 7E.Figure 7—source data 6.Figure 7E, indicating the relevant bands.
+**Figure 7.:** The regulation of FGF2 mRNA levels by overexpression (A) and silencing (B) of PCBP2 was detected by real-time PCR (RT-PCR) and was confirmed in protein levels via western blotting (WB) assay (C, D). (E) Upregulation of FGF2 protein level in P3-hBMSCs with silenced PCBP2 was stopped by 2 mM NAC. Notes: Data were presented as mean ± SD (n=3). *p<0.05, **p<0.01, and ***p<0.001; β-actin and α-tubulin were used as the internal references for mRNA and proteins detection.
 
-## Low expression of PCBP2 accentuated the senescent characteristics of hBMSCs through FGF2 overexpression
+### Low expression of PCBP2 accentuated the senescent characteristics of hBMSCs through FGF2 overexpression
 
 Then, the functional recovery experiment was used to verify whether PCBP2 regulates cell function through FGF2. CCK-8 results showed that compared with the PCBP2 overexpression group, the cell proliferation of P3-hBMSCs (Figure 8A) and P10-hBMSCs (Figure 8B) decreased significantly in the OE-PCBP2+OE-FGF2 group. We further used flow cytometry to detect cell apoptosis in each group. In P3-hBMSCs, overexpression of PCBP2 could significantly inhibit cell apoptosis, and overexpression of FGF2 does not significantly reverse the inhibitory effect of PCBP2 on apoptosis (Figure 8C). However, overexpression of FGF2 significantly reversed the apoptotic effect of PCBP2 on P10-hBMSCs (Figure 8D). In addition, compared with the OE-NC P3-hBMSCs and OE-NC P10-hBMSCs, the G0/G1 phase cell ratio was significantly reduced (Figure 8E) and the S phase cell ratio was significantly increased in the OE-PCBP2 group (Figure 8F). Moreover, compared with P3-hBMSCs (Figure 8E) and P10-hBMSCs (Figure 8F) in the OE-PCBP2 group, overexpression of FGF2 significantly reversed the PCBP2-induced cell, G0/G1 phase inhibition, and S phase promotion. In addition to G0/G1 phase and S phase, overexpression of FGF2 can significantly reverse the effect of PCBP2 on the G2/M phase of P10-hBMSCs (Figure 8F). These results indicated that the introduction of PCBP2 promotes cell proliferation and inhibits cell apoptosis and cell arrest by inhibiting the expression of FGF2.
 

@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Interdepartmental Neuroscience Program, Northwestern University Chicago United States
-2. https://ror.org/024mw5h28 Department of Neurology, University of Chicago Chicago United States
-3. https://ror.org/000e0be47 Department of Neurology, Northwestern University Chicago United States
+1. Interdepartmental Neuroscience Program, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Neurology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Department of Neurology, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -31,21 +31,108 @@ We hypothesized that if hippocampal receptivity to network input varies with the
 
 ## Results
 
-## Participants and stimulation protocol
+### Participants and stimulation protocol
 
 Data were collected from eight individuals with refractory epilepsy (two males; mean age ± standard deviation [SD]: 37 ± 10 years; range 28–55 years; Table 1) undergoing invasive electrophysiological monitoring as part of their inpatient clinical care at the Northwestern Memorial Hospital Comprehensive Epilepsy Center. All participants had stereotactic EEG (sEEG) depth macroelectrodes (Ad-Tech, Oak Creek, WI) implanted in hippocampus, amygdala, lateral temporal cortex, and orbitofrontal cortex, in addition to other regions. All stimulating electrodes were localized to lateral temporal cortex and adjacent white matter (Figure 1a, b; see Figure 1—animation 1).
 
+**Table 1.**
+ Participant characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Hemisphere of electrodes</th>
+      <th># hippocampal recording electrodes analyzed</th>
+      <th>Pulses delivered</th>
+      <th>Stimulation protocol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F</td>
+      <td>28</td>
+      <td>Right</td>
+      <td>3</td>
+      <td>1721</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>29</td>
+      <td>Left</td>
+      <td>3</td>
+      <td>1576</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>30</td>
+      <td>Left</td>
+      <td>3</td>
+      <td>1170</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>44</td>
+      <td>Left</td>
+      <td>4</td>
+      <td>241</td>
+      <td>0.5 Hz</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>55</td>
+      <td>Left</td>
+      <td>1</td>
+      <td>2566</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>47</td>
+      <td>Left</td>
+      <td>3</td>
+      <td>1036</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>31</td>
+      <td>Left</td>
+      <td>4</td>
+      <td>1766</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>29</td>
+      <td>Right</td>
+      <td>2</td>
+      <td>982</td>
+      <td>0.5 and 1 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78395/elife-78395-fig1-v2.jpg)
+
+**Figure 1.:** (a) Group-level electrode localization for lateral temporal stimulating electrodes (n = 14) and hippocampal recording electrodes (n = 18) plotted on an MNI template (Holmes et al., 1998). Amygdala and hippocampus are highlighted in yellow. Electrodes are enlarged ~500% for visualization purposes. Note: Imaging was unavailable in one subject (see Materials and methods: Electrode localization). Hippocampal recording electrodes did not align to the template brain hippocampus in one subject and are not shown in this image. (b) Locations of lateral temporal stimulating electrodes (top) and recording electrodes in hippocampus (bottom) in one sample participant. (c) Mean power spectral densities across all hippocampal recording electrodes (n = 23). Power was assessed during a recorded pre-stimulation rest period. Left: Mean power spectral density (red) and estimated 1/f fit (black). Right: Mean 1/f-corrected power spectral density across hippocampal recording electrodes. Significant peaks in oscillatory power marked in black. Error bars indicate ±1 standard error of the mean (SEM) across electrodes. (d) Phase-balanced grand average hippocampal evoked potential (EP) (i.e., 0°, 90°, 180°, and 270° phase bins contribute equally to the average) elicited by lateral temporal stimulation. Error bars indicate ±1 SEM across hippocampal recording electrodes. Identified early and late negative components are highlighted in blue and green. The y-axis shows negative values in the upwards direction to emphasize the negative-going EP components of interest.
+
 In seven participants, the experimental stimulation protocol consisted of trains of single pulses (see Materials and methods: sEEG recording and stimulation) delivered at either 0.5 Hz (~60 pulses per train) or approximately 1 Hz (with an interpulse interval range of 1–1.25 s, jittered pseudorandomly, ~1200 pulses per train; interpulse interval and range of jitter values were selected to enable data analysis for a secondary experiment). These train types were alternated with approximately 2 min of rest between trains. In one participant, stimulation was delivered at 0.5 Hz only. The number of stimulation pulses delivered ranged from 241 to 2566 (Table 1). Stimulation did not elicit seizure or clinically significant afterdischarges in any participant.
 
-## Hippocampal recordings showed narrowband oscillations within the 3–8 Hz theta range
+### Hippocampal recordings showed narrowband oscillations within the 3–8 Hz theta range
 
 To ensure the presence of theta activity in hippocampal LFPs, we assessed the power spectral densities of recordings taken during a rest period before the stimulation experiment. We estimated oscillatory power during this pre-stimulation period rather than during the experimental session to avoid contaminating the estimate with the evoked response to stimulation. We located narrowband oscillations by fitting a 1/f background distribution to the power spectrum (Figure 1c), subtracting this background, and estimating local peaks in the resultant curve (see Materials and methods: Analysis of narrowband theta activity). All analyzed hippocampal recording electrodes (as well as all amygdala and OFC control region recording electrodes) showed at least one narrowband oscillation in the 3–8 Hz range. Across hippocampal recording electrodes, multiple local peaks in oscillatory power were detected within the 3–8 Hz theta band (Figure 1c). Peaks where power was significantly greater than the 1/f background spectrum across electrodes were detected within the 3–8 Hz theta range at 5.3 and 6.3 Hz (t-test of corrected power versus 0, 5.3 Hz: t(22) = 3.4, p = 0.003; 6.3 Hz: t(22) = 3.3, p = 0.003). An additional peak was detected at 3.9 Hz; however, power at this lower frequency was only marginally above the 1/f background spectrum (3.9 Hz: t(22) = 1.9, p = 0.07). Peaks with significant power above background were also detected at 2.4, 11.0, and 17.7 Hz (Figure 1c; all p < 0.05 on t-test of corrected power versus 0).
 
-## Hippocampal evoked potentials showed characteristic early and late negative components
+### Hippocampal evoked potentials showed characteristic early and late negative components
 
 Hippocampal evoked-potential (EP) components were estimated to occur from 27 to 113 ms (early) and 114 to 208 ms (late) post-stimulation (Figure 1d; see Materials and methods: Quantification of hippocampal EPs). The observed component latencies were consistent with values reported by previous studies of human hippocampal response to direct electrical stimulation of polysynaptic afferents (e.g., Kubota et al., 2013; Novitskaya et al., 2020).
 
-## Hippocampal EP amplitudes varied according to theta phase at stimulation onset
+### Hippocampal EP amplitudes varied according to theta phase at stimulation onset
 
 We performed circular–linear analyses to determine whether hippocampal receptivity to lateral temporal stimulation varied continuously (i.e., sinusoidally) with the phase of the theta oscillation. We first assessed whether amplitudes of the early and late EP components (Figure 1d) varied with theta phase at stimulation onset (see Materials and methods: Theta-phase estimation). For each electrode, we computed circular–linear correlation between hippocampal phase at stimulation onset and component amplitude across stimulation trials. Permutation testing was used to assess whether periodicity in evoked response amplitude was above chance. Both early and late component amplitudes were significantly predicted by theta phase at stimulation onset (Figure 2a. Mean z-score ± SD, early: z = 1.3 ± 1.9; late: z = 1.2 ± 1.6. t-test of z-scores versus 0, early: t(22) = 3.3, p = 0.003, Cohen’s d = 0.7; late: t(22) = 3.7, p = 0.001, Cohen’s d = 0.8. Mean r ± SD, early: r = 0.080 ± 0.066; late: r = 0.076 ± 0.051).
 
@@ -57,7 +144,7 @@ To assess whether the phase–amplitude relationship was appropriately captured 
 
 In both stimulation-free and stimulation trials, the phase–amplitude relationship was strongest before and up to stimulation onset (Figure 2b, c). The asymmetric dropoff about t = 0 likely relates to the phase estimation method (i.e., amplitude before stimulation is more strongly predictive of phase because it contributes directly to the phase estimate; see Appendix 1—figure 1b). In stimulation-free trials, the phase–amplitude relationship timecourse following t = 0 was generally smooth and monotonic (Figure 2b). In contrast, stimulation trials exhibited local increases in circular–linear correlation (Figure 2c). Qualitatively, the local increases appeared to coincide with the early and late EP components (as plotted in Figure 1d). Using the same peak-finding method that identified peaks in the EP (see Materials and methods: Quantification of hippocampal EPs), we found peaks in the phase–amplitude relationship at +50 and +135 ms following stimulation onset, which aligns closely with the early and late EP components (+62 and +134 ms, respectively; Figure 2c). Stimulation trials also exhibited a sharp local decrease from approximately +0 to +5 ms following stimulation, likely due to phase-independent artifact during and immediately after the stimulation pulse (Figure 2c). These findings indicate that hippocampal theta phase at stimulation onset predicts its responsiveness to lateral temporal stimulation, and that these effects are well captured by analyses of characteristic early and late components of the hippocampal EP.
 
-## Hippocampal EP amplitudes varied for theta peak versus trough
+### Hippocampal EP amplitudes varied for theta peak versus trough
 
 Given the previous rodent findings of maximal differences in receptivity to input at specific hippocampal theta-phase angles (e.g., trough versus peak; Brankack et al., 1993; Hasselmo et al., 2002), we tested whether the phase-dependent responsivity of the hippocampus to stimulation identified in the analyses above varied for specific theta-phase angles. We estimated theta phase at stimulation onset for each trial (see Materials and methods: Theta-phase estimation) and binned trials to 90° intervals, centered on peak, trough, rising, and falling phases. By taking the means within each bin, we obtained average peak, trough, falling, and rising angle stimulation trials for each electrode (Figure 3a, c).
 
@@ -75,7 +162,7 @@ The early and late EP components showed significant amplitude differences follow
 
 No difference in EP amplitude was observed for rising versus falling stimulation conditions (Figure 3c) for either early or late components (Figure 4c. Paired t-test across hippocampal recording electrodes, early: t(22) = 0.45, p = 0.7, Cohen’s d = 0.04; late: t(22) = 0.55, p = 0.6, Cohen’s d = 0.03; mean falling − rising amplitude difference ± SD: early: diff = 1.1 ± 11.3 μV; late: diff = 1.6 ± 14.0 μV). As was the case in the overall EP, no differences were observed in the isolated response for falling versus rising stimulation (Figure 4d. Paired t-test across hippocampal recording electrodes, early: t(22) = 0.14, p = 0.9, Cohen’s d = 0.02; late: t(22) = 0.41, p = 0.7, Cohen’s d = 0.02; mean falling − rising amplitude difference ± SD, early: diff = 0.52 ± 16.6 μV; late: diff = 1.4 ± 16.2 μV).
 
-## Control regions did not show early-component-specific periodicity in the response to stimulation
+### Control regions did not show early-component-specific periodicity in the response to stimulation
 
 To assess whether theta dependence of EP amplitude was specific to hippocampus, we performed the same analyses on data from recording electrodes in amygdala (n = 9) and orbitofrontal cortex (n = 22). Data from control regions were acquired concurrently with the hippocampal data described above.
 
@@ -93,7 +180,7 @@ We hypothesized that the phase dependence of the late component may have been dr
 
 In contrast, for orbitofrontal EPs, we found no differences in either peak versus trough or rising versus falling trial amplitude in either early or late components (Figure 5g, h. Peak versus trough, early: t(21) = 0.51, p = 0.6, Cohen’s d = 0.04; late: t(21) = −0.77, p = 0.5, Cohen’s d = −0.1. Rising versus falling, early: t(21) = −0.59, p = 0.6, Cohen’s d = −0.04; late: t(21) = −0.08, p = 0.9, Cohen’s d = −0.007). While our response-isolation procedure revealed a marginal effect of peak versus trough stimulation on the orbitofrontal early-component amplitude (t(21) = 2.1, p = 0.05, Cohen’s d = 0.07), this effect may have been driven by poor performance of the sham-matching procedure for the orbitofrontal EP (see Figure 5g, h; we observe poor abolishment of the underlying theta oscillation for both trough and rising stimulation trials).
 
-## Analysis of variability across subjects
+### Analysis of variability across subjects
 
 As the previous analyses were performed across individual electrodes, we assessed whether the circular–linear and binned effects of theta phase on response component amplitude were present across subjects. For each subject, we obtained the mean z-scored circular–linear r across hippocampal electrodes for early and late components (as described for individual hippocampal electrodes in Materials and methods: Circular–linear analysis of theta phase and hippocampal response amplitude). Across subjects, we observed a positive phase–amplitude relationship in both early and late components (mean z-score ± SD, early: z = 1.0 ± 1.3; late: z = 1.1 ± 1.1). This effect was marginal across subjects in the early component and reached significance in the late component (t-test of z-scores versus 0, early: t(7) = 2.3, p = 0.06, Cohen’s d = 0.8; late: t(7) = 2.8, p = 0.03, Cohen’s d = 1.0).
 
@@ -115,11 +202,11 @@ This study used direct electrical stimulation as a proxy for endogenous network 
 
 ## Materials and methods
 
-## Electrode localization
+### Electrode localization
 
 sEEG electrodes were localized using MRIcron (v1.0.20190902; Rorden and Brett, 2000) and the Statistical Parametric Mapping package (SPM12; Penny et al., 2011). Pre-implant T1-weighted structural MRI and post-implant computed tomography (CT) were acquired as part of clinical care. For each subject, we performed tissue-type segmentation on the MRI (with default SPM12 tissue probability maps and warping parameters; see Ashburner and Friston, 2005; Mechelli et al., 2005) then normalized the MRI to MNI space (ICBM Average Brain template MNI152; Mazziotta et al., 1995). We applied this same transformation to the CT, which had been co-registered to the MRI by normalized mutual information. We then localized electrodes within MNI space by visual inspection of the CT. The anatomical location of each electrode was confirmed by atlas-guided inspection of the MRI (Allen Human Brain Atlas; Ding et al., 2016). We were unable to obtain imaging data for one subject and therefore relied on the electrode localization provided by the clinical team (comprising surrounding tissue type and anatomical structure for each electrode).
 
-## sEEG recording and stimulation
+### sEEG recording and stimulation
 
 sEEG depth electrodes (~1 mm diameter, ~2 mm contact length, 5–10 mm contact spacing; AD-Tech, Oak Creek, WI) were implanted prior to study participation according to clinical need. Recordings were acquired using a Neuralynx ATLAS system with a scalp electrode reference and ground. Data were recorded at a resolution of 0.15 μV (5000 μV input range) and a sampling rate of 20 or 32 kHz. Digital bandpass filters (FIR) from 0.1 to 5000 Hz were applied at the time of recording. Data were re-referenced offline to the common average of ipsilateral depth electrodes (Zhang and Jacobs, 2015; van der Meij et al., 2012) and downsampled to 1 kHz. Data were epoched about stimulation pulses and baseline corrected (epoch: −750 to 500 ms, baseline: −750 to −2 ms). To prune excessively noisy or artifactual data, epochs were excluded according to their signal range (excluded if >800 μV) and kurtosis (excluded if >2 SD over channelwise mean kurtosis. Mean epochs pruned per channel ± SD, hippocampus: n = 208 ± 329 epochs; amygdala: n = 275 ± 333 epochs; orbitofrontal cortex: n = 250 ± 347 epochs. Mean epochs included in analyses per channel ± SD, hippocampus: n = 1194 ± 599 epochs; amygdala: n = 1341 ± 348 epochs; orbitofrontal cortex: n = 1479 ± 263 epochs). Channels were excluded from analyses if <200 epochs remained following pruning. n = 3 hippocampal channels, n = 3 amygdala channels, and n = 5 orbitofrontal channels were excluded from analyses on this basis.
 
@@ -129,7 +216,7 @@ Stimulating electrodes used for the experiment were selected during a preliminar
 
 Participants remained in bed throughout the preliminary stimulation session and experimental session. They were not instructed to perform any task and were free to rest or otherwise occupy themselves. Study protocols were approved by the Northwestern University Institutional Review Board. All subjects provided written informed consent prior to participation.
 
-## Theta-phase estimation
+### Theta-phase estimation
 
 We estimated hippocampal theta (3–8 Hz) phase at the time of stimulation onset for each trial. This was done separately for each electrode because theta-phase shifts across space in the hippocampus. In depth penetrations of rodent CA1, theta phase is stable through the strata oriens and pyramidale then undergoes a gradual phase shift, resulting in a 180° phase difference at the fissure compared to dorsal layers (Brankack et al., 1993; Bragin et al., 1995). Rodent hippocampal theta phase has been found to fully reverse between the longitudinal poles (Patel et al., 2012) i.e., the ‘traveling wave’ model (Patel et al., 2012; Lubenov and Siapas, 2009). Monotonic phase shift across the long axis has also been demonstrated to occur within individual CA subfields (Lubenov and Siapas, 2009). In LFPs recorded along the human hippocampus via implanted depth electrodes, theta phase has been found to shift monotonically across the hippocampal long axis (Zhang and Jacobs, 2015). Studies of hippocampal theta in rodent models often estimate phase at the stratum lacunosum-moleculare of CA1, near the hippocampal fissure. Besides the benefit of fissural theta’s especially high amplitude (Brankack et al., 1993), this approach provides a unitary measure of hippocampal theta phase. In humans, it is not feasible to control for these spatial phase shifts by recording uniformly at any specific site in hippocampus. This is because electrodes are placed according to clinical need, and their locations vary across subjects in both laminar depth and location on the long axis.
 
@@ -139,31 +226,31 @@ We assessed the accuracy of this approach using stimulation-free pseudotrials. F
 
 Next, we created an ostensibly phase-balanced model of stimulation for each channel by binning stimulation trials at 90° intervals (centered at 0°, 90°, 180°, and 270°) and computing the grand average across bins. We added this model stimulation to each stimulation-free trial, yielding pseudotrials. We estimated pseudotrial phase angle at t = 0 using the approach described for stimulation trials and compared the estimates to the ground-truth phase angles.
 
-## Analysis of narrowband theta activity
+### Analysis of narrowband theta activity
 
 To assess whether theta-frequency activity was present in hippocampus and control regions, we characterized narrowband activity across the power spectrum during a continuous stimulation-free period (from the same recording as used in the main analysis; all rest periods had duration >90 s). We estimated oscillatory power at 50 logarithmically spaced frequency intervals from 1 to 50 Hz using the fast Fourier transform. To identify frequencies where reliable oscillations were present, we first estimated the background 1/f power spectrum using a robust linear fit to the log–log scaled power spectrum (Lega et al., 2012). We subtracted this background from the power spectrum and identified positive local maxima in the resultant curves, following four-frequency boxcar smoothing to eliminate noisy peaks (Lega et al., 2012). We performed this analysis for individual electrodes as well as for the mean power spectrum across all analyzed electrodes within each ROI. For each identified peak frequency, we assessed whether its power consistently exceeded the background 1/f spectrum by performing one-sample t-tests of the corrected spectrum power versus 0 across electrodes.
 
-## Quantification of hippocampal EPs
+### Quantification of hippocampal EPs
 
 As a measure of the hippocampal response to stimulation, we quantified the trialwise amplitudes of early and late components in the stimulation EP. We first estimated component timecourses for each electrode. To avoid phase-dependent differences in component shape or timecourse from biasing this estimate (i.e., in the case of non-uniform stimulation phase distributions), we computed a phase-balanced EP for each electrode by binning stimulation trials according to theta phase at stimulation onset (at 90° intervals, centered at 0°, 90°, 180°, and 270°) and computing the mean across bins. We then observed the grand average phase-balanced trial across electrodes. We quantified component timecourses by searching for the first two negative minima following stimulation artifact (on a search window of +20 to +500 ms after stimulation; see e.g., Kubota et al., 2013) on the grand average trial across electrodes. Component edges were estimated as the nearest inflection points within 150 ms of the local maximum. A minimum interval of 50 ms was required between peaks. For each trial, we computed the average signal amplitude across each component timecourse. This method was selected rather than peak estimation (as in e.g. Matsumoto et al., 2004) in order to produce a more noise-indifferent estimate for single trials.
 
-## Circular–linear analysis of theta phase and hippocampal response amplitude
+### Circular–linear analysis of theta phase and hippocampal response amplitude
 
 We performed circular–linear analyses to determine whether the hippocampal response varied continuously with theta phase at stimulation onset. For each electrode, we found the circular–linear correlation coefficient between phase at stimulation onset and component amplitude (Berens, 2009). We z-scored these values via permutation testing (n = 500), wherein each electrode’s trial phase values and component amplitudes were repeatedly randomly paired. The circular–linear correlations were evaluated using a one-sample t-test comparing the electrode z-scores against zero. To investigate the timecourse of the continuous phase–amplitude relationship, we performed a follow-up timepoint analysis. For each electrode, we computed the circular–linear correlation coefficient between phase at stimulation onset and EP amplitude at every timepoint. We identified peaks in the phase–amplitude relationship by searching for the first two maxima following stimulation artifact (on a search window of +20 to +500 ms after stimulation). This method was modified from our procedure to identify components in the EP amplitude timecourse (see Quantification of hippocampal EPs).
 
-## Comparison of hippocampal EPs by binned theta phase
+### Comparison of hippocampal EPs by binned theta phase
 
 To test how specific phase angles were related to hippocampal responsiveness to stimulation, we analyzed trials according to theta phase at stimulation onset. We estimated local broadband theta phase at stimulation onset for each trial and binned trials to 90° intervals, centered on peak, trough, rising, and falling phase angles. By taking the means within each bin, we obtained average peak, trough, rising and falling stimulation trials for each electrode. We then compared component amplitudes across peak versus trough and rising versus falling trials using paired t-tests.
 
-## Comparison of stimulation trials to phase-matched stimulation-free trials
+### Comparison of stimulation trials to phase-matched stimulation-free trials
 
 Direct comparison of component amplitudes according to phase at stimulation onset is complicated because oscillatory phase necessarily predicts future amplitude, regardless of any phase-dependent differences in the effects of stimulation on EPs. We therefore used stimulation-free trials to account for the ongoing theta oscillation. Stimulation-free trials were captured for each electrode at 100-ms intervals across stimulation-free periods at the beginning and end of the recordings. Stimulation-free trials were recorded and preprocessed using the same approach as stimulation trials (for trial pruning by kurtosis, kurtosis scores were compared only to other stimulation-free trials from the same channel). Phase was estimated for each trial at t = 0 using the same methods as for stimulation trials (i.e., truncating at +50 ms after stimulation onset, filtering, and applying the Hilbert transform). In order to more closely match the non-evoked activity present in the stimulation trials, we randomly resampled stimulation-free trials using the phase angle distributions of the stimulation trials as sampling weights.
 
-## Timepoint analysis of EP amplitude following stimulation at theta peak versus trough
+### Timepoint analysis of EP amplitude following stimulation at theta peak versus trough
 
 As a follow-up to our finding of peak versus trough effects on component amplitudes, we investigated whether phase dependence was temporally restricted to components. For each electrode, we computed the difference between average peak and trough trials at each timepoint. To assess the contribution of the non-evoked signal over time, we repeated this procedure on stimulation-free trials. To measure phase dependence related to the evoked signal, we compared peak–trough amplitude differences across stimulation and stimulation-free trials.
 
-## Oscillatory synchronization between the stimulation site and hippocampus
+### Oscillatory synchronization between the stimulation site and hippocampus
 
 Although we estimated hippocampal theta-phase angle at the time of stimulation onset to avoid bias from the evoked response, this timepoint is not the most relevant to hippocampal receptivity to external input. As stimulation was applied to lateral temporal network afferents and conveyed via polysynaptic signaling, there was likely some latency between stimulation onset and the relevant transmission to hippocampus (i.e., the timepoint when entorhinal input receptivity would be relevant).
 

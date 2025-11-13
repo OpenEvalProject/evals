@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05f82e368 Department of Developmental and Stem Cell Biology, Institut Pasteur, Université Paris Cité Paris France
-2. https://ror.org/02en5vm52 Sorbonne Université Paris France
+1. Department of Developmental and Stem Cell Biology, Institut Pasteur, Université Paris Cité Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+2. Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 
 † Corresponding author
 
@@ -36,9 +36,25 @@ To substantiate the significance of apico-basal polarity control in the EHT, we 
 
 ## Results
 
-## Apicobasal polarity determines emergence types
+### Apicobasal polarity determines emergence types
 
 Our previous work describing the morphodynamic evolution of cells emerging from the aortic floor through the EHT (hereafter designated as ‘EHT cells’), in the zebrafish embryo, revealed the unusual feature of a cell extruding from the plane of a tissue while maintaining its luminal/apical membrane until the very end of the release process, thus contributing to its peculiar crescent-shaped morphology (Kissa and Herbomel, 2010; Lancino et al., 2018, and see the cartoons in Figure 1A). However, to our knowledge, the polarity status of EHT cells has not been investigated so far and the maintenance of a bona fide apical domain has never been proven (with the luminal membrane enriched in apically targeted proteins and physically delimited by apical polarity factors and tight junction complexes Rodriguez-Boulan et al., 2004; Buckley and St Johnston, 2022). Importantly, the fate of this apical-luminal membrane, after the release, may lead to cells potentially endowed with specific functional features. For example, this membrane surface may be directly and fully exposed to the extracellular space or released in the cytoplasm of EHT cells for recycling and/or degradation, after emergence completion (for examples of different scenarios, see Figure 1A, and the legend for more details). Overall, this could lead to precursors of hematopoietic stem cells that, ultimately, may be differentially fated.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoons depicting the early and late steps of EHT cells emerging from the aortic floor (steps 1 and 2, as previously described in the zebrafish embryo, see Kissa and Herbomel, 2010; Lancino et al., 2018) and with hypothetical evolution of the luminal membrane (in green) before (3 and 4) and after the release 2’, the cell detaches from the endothelial layer via junction downregulation leading to exposure of the luminal membrane with le extracellular milieu; 3’, the luminal membrane is consumed via endocytic recycling (E) and/or lysosomal degradation (Lys) prior to detachment; 4’, the luminal membrane in 4 is released inside the cell (twisted arrow) before detachment. Grey area = nucleus. (B) PodocalyxinL2 (Podxl2) construct designed to establish transgenic fish lines. Cartoons representing full length (top drawing) and deleted Podxl2 (amino-acid sequence 341–587) in which the mucin domain (serine/threonine-rich O-glycosylation domain) is replaced by either eGFP or mKate2. The tetracystein-containing globular domain (subjected to N-glycosylation) was kept as favoring apical membrane retention. TMD, transmembrane domain; DTHL, (C)-terminal peptidic motif involved in partnership with PDZ domain containing proteins. (C, D) EHT performing cells visualized using Tg(Kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2) embryos and time-lapse sequences initiated at 55 hpf obtained with spinning disk confocal microscopy (imaging was performed at the boundary between the most downstream region of the AGM and the beginning of the caudal hematopoietic tissue). Top grey panels show the green, eGFP channels for eGFP-podxl2 only. Bottom panels show the merge between green and red (soluble RFP, in magenta) channels. Scale bars = 8 µm. (C) Single plane images of 2 EHT pol+ cells extracted from a time-lapse sequence at t=0 and t=45 min, with the right cell (eht cell 2) more advanced in the emergence process than the left one (eht cell1). Note the enrichment of eGFP-podxl2 at the luminal membrane (surrounding the cavity labeled with an asterisk) in comparison to the basal membrane (white arrow). Note also the evolution of the luminal membranes with time, with the aortic and eht cell 1 lumens still connecting at t=0 (green arrow), the apparent fragmentation of the cytosolic vacuole (2 asterisks for eht cell 1 at t=45 min) and the compaction of Podxl2-containing membranes for eht cell 2 at t=45 min. More details on the evolution of the connection between the aortic/eht cell lumens are shown in Figure 1—figure supplement 1A. (D) Single plane images of 2 EHT pol- cells extracted from a time-lapse sequence at t=30 min and t=210 min (see Figure 1—video 3 for the full-time lapse sequence), with the right cell (eht cell 2) slightly more advanced in the emergence than the left one (eht cell 1, with the latest attachment point between the emerging cell and the aortic floor (pink arrow)). Note, in comparison with the cells in panel (C), the ovoid shapes of cells, the absence of enrichment of eGFP-podxl2 at luminal membranes (green arrows) and the accumulation of eGFP-podxl2 at basal membrane rounded protrusions (white arrows).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Two EHT pol+ cells visualized using a Tg(Kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2) embryo and time-lapse sequence (initiated at 55 hpf) obtained with spinning disk confocal microscopy. The images (single z-planes) are extracted from the same time lapse sequence than the one used for Figure 1C. Green channel (eGFP-podxl2) only is shown. Green arrows point at the evolution of the connection between the aortic/eht cell lumens at t=0, 10, 30 min. Asterisks label the lumen delimited by the luminal/apical membranes. Scale bar = 8 µm. (B) Model summarizing and interpreting the temporal evolution of the luminal/apical membrane (in green, the asterisks mark the lumen of the apparent vacuole-like intracellular membrane structures) after the release of an EHT pol+ cell from the aortic floor. Step 1, the pseudo-vacuole filled with fluid and delimited by eGFP-podxl2 as visualized at t=65 min in (A) (and also at 45 min in Figure 1C, 2 asterisks) is consumed partly via budding (after sorting of eGFP-podxl2); these budding profiles can be seen on the left image (pink arrowheads) corresponding, for eht cell 1, to the plane 16 of the time point t=80 min of the time lapse sequence (see the Z-stack in Figure 1—video 2). Step 2, after sorting and budding, the cell remains with pseudo-endocytic Podxl2 containing membranes and the remaining vacuolar structures filled up with fluid regress, putatively by chasing water as illustrated in step 3. Step 4, the eht cell remains with pseudo-endocytic Podxl2 containing membranes that label newly born precursors of HSPCs. Note that since the cell remains in contact with the aortic floor while the pseudo-vacuole is regressing, the vacuole-like intracellular membrane proximal to aortic cells may never undergo fission (see Figure 1A, steps 4–4’) but gets consumed via budding and flattening upon water chase (steps 1–3 that are similar to Figure 1A, steps 3–3’). Scale bar = 8 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) EHT pol+ cell extrusion and division visualized using a Tg(Kdrl:Jam3b-eGFP;Kdrl:nls-mKate2) embryo and time-lapse sequence (initiated at 55 hpf) obtained using laser scanning confocal microscopy (single z-planes). This transgenic line allows the visualization of nuclei (nls-mKate2, magenta) and intercellular contacts as well as plasma membranes (eGFP-Jam3b, see Materials and methods and Figure 5 for more information). The eht 1 cell (white box) starts invaginating before t=0 min, and displays the characteristic luminal membrane invagination of EHT pol+ cells at t=40 min. At t=60 min, the cell undergoes mitosis. At t=80 min, the two daughter cells (eht 1’ and eht 1’’) are still contacting each other. At this point, they still have the slightly rounded morphology of post-mitotic cells. At t=200 min, the eht 1’ cell has resumed its extrusion and its luminal membrane is invaginated. By t=340 min, the extrusion of the eht 1’ cell is complete, and the cell remains in contact with the aortic floor. The eht 1’’ cell resumes its extrusion later, also displaying an invagination of its luminal membrane (but not visible on the same plane as for the eht 1’ cell). White asterisks label the lumen delimited by the luminal/apical membranes. (B) EHT pol- cell extrusion and division visualized using a Tg(Kdrl:Gal4;UAS:RFP;4XNR:eGFP-podxl2) embryo and time-lapse sequence (initiated at 54 hpf) obtained with spinning disk confocal microscopy (single z-planes), at the bottom of the trunk region. The eht 1 cell (white box) is undergoing extrusion at t=0 min, and displays the characteristic rounded/ovoid shape of EHT pol- cells at t=0 min and t=10 min. At t=20 min, the cell starts undergoing mitosis. At t=130 min, we can observe the two daughter cells (eht 1’ and eht 1’’) still contacting each other. From t=130 min to t=235 min, the two daughter cells slowly continue their extrusion, keep contacting each other, and increase their roundness, with partitioning of eGFP-podxl2 between the luminal and basal membranes. All throughout the time-lapse sequence, the eht 1 cell and, subsequently, the eht 1’ and eht 1’’ cells do not display any enrichment of eGFP-podxl2 at their luminal membranes. Scale bars = 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Single z-plane of a 55 hpf Tg(Kdrl:mKate2-podxl2;CD41:eGFP) embryo imaged using spinning disk confocal microscopy, in the trunk region. Top panel, left box (with 2 X magnification beneath): 2 EHT pol+ cells with EHT cell 1 more advanced in its emergence than EHT cell 2; mKate2-podxl2 expressed by EHT cell 1 is enriched at the apical pole of the cell, facing the aortic lumen (as is the case for eGFP-podxl2, see Figure 1C). Top panel, right box (with ×2 magnification beneath): 3 EHT pol- cells with mKate2-podxl2 localized relatively homogenously between luminal and abluminal membranes. All EHT pol+ and EHT pol- cells express cytosolic eGFP, as seen in top and bottom panels (2 channels images). Note that it is also the case for the he cell (hemogenic cell) in the aortic floor, in the middle of the image, top panel. Scale bar = 10 µm.
 
 To address the polarity status of EHT cells, we raised transgenic fish lines that express endogenous Podocalyxin (Podxl2, Herwig et al., 2011). Podocalyxin was shown to take part in the formation of the preapical domain during polarization and in the regulation of its oriented organization, in tissue culture (Meder et al., 2005; Bryant et al., 2014). Its contribution to lumenization in vivo, in the mouse aorta, has been described and it involves negative charge repulsion induced by their glycosyl residues (Strilić et al., 2009; Strilić et al., 2010).
 
@@ -52,19 +68,47 @@ Finally, we have estimated that the ratio between EHT pol+and EHT pol- cells is 
 
 Altogether, our results show that hematopoietic precursor cells emerging from the aortic floor do so with heterogeneity in their morphodynamic characteristics. They also suggest that the control of apico-basal polarity may be at the root of these specific emergence types.
 
-## The immature HE is not polarized
+### The immature HE is not polarized
 
 EHT pol+ and EHT pol- cells appear to emerge from the hemogenic endothelium (HE), the latter constituting the virtually exclusive cell population of the aortic floor just prior to the initiation of the EHT time-window (around 28 hpf, see Zhao et al., 2022). In this context, we addressed the polarity status of HE cells and its evolution throughout the EHT (Figure 2). Surprisingly, confocal microscopy using our eGFP-podxl2 and mKate2-podxl2 expressing fish lines revealed that HE cells do not appear to be polarized, based on the absence of Podxl2 enrichment at luminal membranes, at the initiation of the EHT time-window and later (at approximately 28–30 hpf, Figure 2—figure supplement 1 see also at 35 hpf Figure 2A, top left panel, green arrows and Figure 2—figure supplement 2 and at 48–55 hpf Figure 3—figure supplement 2A). Interestingly, the cytoplasm of characteristic elongated HE cells located on the aortic floor is filled with more-or-less large membrane vesicles that carry eGFP-podxl2 (the largest vesicles reaching approximately 30 µm in diameter). This suggests that HE cells contain a reservoir of eGFP-podxl2 membranes that may be subjected to exocytose; as such, HE cells may be comparable to endothelial cells organizing a vascular lumen and that have been proposed to exocytose large intracellular macropinocytic-like vacuoles when cultured in 3D extracellular matrices (Bayless and Davis, 2002; Davis et al., 2002) or, in vivo, in the zebrafish model (Kamei et al., 2006; Lagendijk et al., 2014). This finding is unexpected since HE cells are assumed to possess aortic cell characteristics (i.e exhibit an apicobasal polarity) as they are supposedly integrated in the aortic wall contemporarily to aortic precursors (Jin et al., 2005) and may have been taking part in the lumenization of the ancestral vascular cord, a process that takes place around 18–20 hpf. Consequently, loss of apicobasal polarity features of HE cells at 28–30 hpf may be part of the programme that initiates the EHT process.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig2-v1.jpg)
+
+**Figure 2.:** (A) Tg(Kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2) embryo imaged using spinning disk confocal microscopy. Black and white images show eGFP-podxl2 only. Images (single z-planes) were obtained from a time-lapse sequence (initiated at 35 hpf) lasting for 435 min (7.25 hr), with intervals of 15 min between each z-stack. Example of an HE cell with equal partitioning of eGFP-podxl2 between luminal and abluminal membranes (at t=0 min), with eGFP-podxl2 containing intra-cytosolic vesicles (one labeled with a green asterisk) and undergoing mitosis at t=30 min (HE cell 1’ and HE cell 1’’ are daughter cells). Note the inheritance of the largest micropinocytic-like vacuole by HE cell 1’ and its maintenance over time until EHT emergence initiation at t=180 min (green asterisk in 1.5 x magnified areas at t=60 and 90 min). At t=360 min (green box) EHT is proceeding and both fluorescence channels are shown; bottom panel: green (eGFP-podxl2), magenta (soluble RFP). The magenta arrow points at the basal side of the EHT pol+ cell (EHT cell 1’, on the right) that does not contain any detectable eGFP-podxl2; on the contrary, eGFP-podxl2 is enriched at the luminal/apical membrane (note that exocytosis of the large vacuolar structure may have contributed to increase the surface of the apical/luminal membrane [the green asterisk is surrounded by the apical/luminal membrane of the EHT pol+ cell]). The green arrow points at the abluminal membrane of the EHT cell derived from HE cell 1’’ (EHT cell 1’’) and that contains eGFP-podxl2 (with no evidence of a significant expansion of a luminal/apical membrane); this indicates that this cell is more likely to be an EHT pol- cell that did not sort the vesicular cargo to the luminal/apical membrane. Scale bar = 10 µm. (B) Hypothetical model summarizing the evolution of HE cells involving the tuning of apicobasal polarity to lead to cells competent for giving birth to either EHT pol+ or EHT pol- cells (including the release of large vesicular macropinocytic-like vacuoles preferentially toward the luminal membrane of future EHT pol+ cells). The polarity status of HE cells is proposed to evolve asynchronously throughout the entire EHT time window, leading to place-to-place ability to give birth to EHT cells (emergence of EHT pol+ and EHT pol- cells are both observed until 72 hpf, see main text).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Tg(Kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2) 30 hpf embryo imaged using spinning disk confocal microscopy. Top 2 panels: green (eGFP-podxl2) and red (soluble RFP, in magenta) channels. White arrows point at 2 individual EHT cells. Note that HE cell 1 protrudes long filopodia, some of which inside the aortic lumen (live imaging shows that they are moving along the blood flow, data not shown). Bottom 2 panels: 1.625 X magnification of EHT cell 1 and 2 in top panels. Green channel (eGFP-podxl2) only. Green arrows point at very large intracellular vesicles, the largest reaching approximately 30 µm. Asterisks mark the cytoplasm. Scale bar = 100 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Tg(Kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2) embryo imaged using spinning disk confocal microscopy. Images were obtained from discontinuous time-lapse sequences covering a period of 13 hr (from 35 – to – 48 hpf). Successive phases of the evolution of HE cells are visible, from a non-polarized status (with the accumulation of Podxl2-containing intra-cytosolic vesicles as well as cell division) to post-emergence EHT cells remaining beneath the aortic floor. The top panel is a z-projection of 69 consecutive z-sections interspaced by 0.3 µm; green (eGFP-podxl2) and red (soluble RFP, in magenta) channels are shown; 4 individual HE cells (1–4, green arrows)) are marked, with cells 1 and 4 more advanced in the process of emergence. All the other panels are z-sections focused on the aortic floor, allowing visualizing the progression of the EHT, in particular at 35 hpf (t=0), a timing point at which the separation between the luminal and basal membranes are equally labeled with eGFP-podxl2, attesting for the absence of apicobasal polarity (see cells 1 and 4, see also cell 1 at t=2.5 hr and cells 3’ and 3’’ at t=5 hr). Note, at t=2.5 and 5.0 hr, the presence of intracytoplasmic eGFP-podxl2-labeled vesicles inside HE cells, suggesting vesicular transport (white arrowheads, to be compared with images Figure 2—figure supplement 1, at 30 hpf). At 48 hpf (bottom panel), HE cells have emerged and remain, for some of them, in close contact with the aortic floor (after having performed mitosis (notably for HE cell 2 [the division is visualized at 5 hr] and for HE cell 3, each one giving rise to cells 2’ - 2’’ and 3’ - 3’’ respectively, all containing residual eGFP-podxl2 containing membranes as EHT signature). Scale bar = 80 µm.
 
 Although technically difficult for long hours (because of important variations in the volume of the balled yolk that trigger drifting of embryos), we have been able to follow over time non-polarized HE cells and to visualize the evolution of their vesicular content, starting at the initiation of the EHT time-window (around 35 hpf, see Figure 2 and Figure 2—figure supplement 2). Interestingly, we could follow a dividing HE cell for which the vesicular content labeled with eGFP-podxl2 appeared to partition unequally between daughter cells (Figure 2A, t=30 min, HE cell 1’ inherits the largest macropinocytic-like vacuole [green asterisk] and emerges unambiguously as an EHT pol+ cell [t=360 min, EHT cell 1’], with eGPF-podxl2 enriched at the apical/luminal membrane [surrounding the green asterisk] and virtually undetected at the basal membrane [magenta arrow]). This suggests that asymmetric inheritance of cytosolic vesicles containing apical proteins may contribute, presumably after delivery to the luminal membrane, to specify the apical membrane of EHT pol+ cells.
 
 Altogether, these results support the idea that the HE, at the initiation of the EHT time-window, is not polarized. Subsequently, HE cells establish – or not – apical and basal membrane domains, which characterizes EHT pol+or EHT pol- cell types, respectively (see our hypothetical model Figure 2B). In the case of EHT pol+ cells and while emergence is proceeding, apicobasal polarity is maintained (if not reinforced) until the release.
 
-## Interfering with Runx1 function alters HE maturation, the EHT progression, and the balance between EHT cell types
+### Interfering with Runx1 function alters HE maturation, the EHT progression, and the balance between EHT cell types
 
 To provide functional support to our findings and hypotheses on apico-basal polarity control in the gradual maturation of the HE throughout the EHT time-window, we thought of interfering with the activity of the transcription factor Runx1 whose expression is sensitive to fluid sheer stress (Adamo et al., 2009).
 
 To interfere with Runx1 function, we generated a Tg fish line that expresses a truncated form of Runx1 (dt-runx1; fish line Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) thereafter abbreviated Tg(dt-runx1)) deleted from its transactivation domain and carboxy-terminus but retaining its DNA-binding domain (the Runt domain aa 55–183, Kataoka et al., 2000; Burns et al., 2002; Kalev-Zylinska et al., 2002, see Figure 3C). Importantly, in this Tg fish line, dt-runx1 expression is restricted to the vascular system, hence excluding expression in the brain region that express Runx1 endogenously (see the aforementioned articles) and preventing biases owing to potential interference with neuronal functions. In addition, owing to the expression of eGFP concomitantly to dt-runx1 (the C-terminal eGFP is cleaved from dt-runx1 via a T2a site for endopeptidase, see cartoons at the top of panel C), this fish line allows for the easy selection of embryos for imaging and for phenotypic analysis. In preliminary experiments aimed at addressing the localization of dt-runx1 as well as its stability, we expressed it transiently and measured its proper targeting to the nucleus (the construct also contains a double HA (2xHA) epitope for immuno-detection, see Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig3-v1.jpg)
+
+**Figure 3.:** (A) Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) mutant embryos imaged using spinning disk confocal microscopy and analyzed in the AGM/trunk region. Z-projections of the dorsal aorta obtained from 52 to 55 hpf embryos. Top panel: fluorescence from the red channel is shown for the Tg(Kdrl:Gal4;UAS:RFP) control. Bottom panels: fluorescence in the green channel only is shown for the mutants (eGFP, released from the dt-runx1-eGFP cleavage). The black asterisks point at emerged cells that are in close contact with the aortic floor. Green arrows: EHT pol+ cells on aortic floor; magenta arrows: EHT pol+ cells in the lateral aortic wall; blue arrows: uncharacterized emerging cells; he: hemogenic cells. Scale bars = 20 µm. (B) Quantitative analysis of the dt-runx1 mutant phenotype. The analysis was carried out on Tg(Kdrl:Gal4;UAS:RFP) control embryos (n=3) and on Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) mutant embryos (n=7). Left top: hemogenic cell count (comprising hemogenic cells, labeled by ‘he’ on panel (A) as well as uncharacterized emerging cells, labeled by blue arrows on panel (A)). Left center: EHT pol+ cell count (sum of EHT pol+ cells emerging ventrally and laterally, respectively labeled by green and magenta arrows on panel (A)). Left bottom: EHT pol- cell count not shown on panel (A). Right: percentage of cell types in control and dt-runx1 embryos (proportions relative to total number of hemogenic and EHT undergoing cells). Statistical comparisons have been performed using two-sided unpaired Wilcoxon tests, all p-values are displayed. (C) Top: cartoons representing the zebrafish full-length runx1a amino acid sequence and the dt-runx1 mutant deleted from the trans-activation domain and of the C-terminus note that the construct encodes for a C-terminal fusion with eGFP that is released upon expression via a cleavable T2A peptide (introduced between the 2xHA tag and the N-terminus of eGFP, to prevent from potential steric hindrance). nls, nuclear localization signal. Bottom: image of an anti-HA tag immunofluorescence obtained after z-projection of the dorsal aorta of a 50 hpf Tg(dt-runx1) embryo. Note the localization of the 2xHA-tagged dt-runx1 protein in nuclei (some of them are pointed by red arrowheads) and of eGFP in nuclei and the cytosol of aortic cells. Scale bar = 25 µm. Raw images (z-stacks) for this figure (dt-runx1 phenotype analysis) are available at https://doi.org/10.5281/zenodo.10932245.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative image (Imaris 3D-rendering) of RNA-scope in situ hybridization for the hematopoietic marker myb in 48–50hpf Tg(Kdrl:eGFP) control embryos (left) and 48–50hpf Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) mutant embryos (right). Top row: 3D rendering without segmentation. The aorta is outlined with the white dashed lines. Center top row: Magnification of aortic segments (outlined with white boxes on the top rows). Cyan arrows: hemogenic cells (comprising characterized elongated hemogenic cells as well as EHT undergoing cells). Magenta arrows: hematopoietic cells in the sub-aortic space. Center bottom row: GFP + cells segmentation (white cellular outline) and RNAscope signal segmentation (magenta spots). Bottom row: Manual cell classification post segmentation. Aortic roof cells (virtually all negative for myb) are displayed in green, hemogenic and EHT cells in cyan and sub-aortic hematopoietic cells in magenta (all expressing myb). Scale bars = 10 µm. (B) Quantitative analysis of the dt-runx1 expressing mutant phenotype. Left: endothelial roof cell count (green segmented cells on panel (A)). Right: hemogenic/EHT cell count (cyan segmented cells on panel (A)). (C) myb-positive cell count in roof endothelial cells left, corresponding to green cells in panel (A), hemogenic/EHT cells (middle, corresponding to cyan cells in panel (A)) and hematopoietic cells in the sub-aortic region (right, corresponding to magenta cells in panel (A)). (D) Number of segmented RNA-scope myb dots per segmented roof cells (left panel) and hemogenic/EHT cells (right panel). For panels (B, C and D), statistical comparisons have been performed using two-sided unpaired Wilcoxon tests, all p-values are displayed. Analysis was carried out on n=4 control embryos and n=3 mutant embryos, with 2 aortic segments per embryo.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** 30–32 hpf and 48 - 55hpf embryos obtained from outcrossed Tg(Kdrl:mKate2-podxl2) X Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) fishes were imaged in the trunk (AGM) region using spinning disk confocal microscopy (single z-planes). (A) Two aortic segments imaged in control sibling embryos (not expressing the dt-runx1 mutant, hence negative for the cleaved eGFP). Typical HE cells are outlined in the white boxes (with the luminal and abluminal membranes clearly separated from each other owing to reduction of their surface area (in comparison to flat aortic cells) and elongation in the antero-posterior axis). Note the absence of enrichment of mKate2-podxl2 in luminal membranes in comparison to basal membranes (magenta arrows). (B) Two aortic segments in dt-runx1 expressing embryos. Images are depicting typical HE cells (in boxes) from hemogenic regions (as in A). Note the enrichment of mKate2-podxl2 in apical/luminal membranes (magenta arrows) in comparison to basal membranes (green arrows). Green: cytosolic eGFP released from the cleavage of dt-runx1-eGFP. Note that because of mosaicism, HE cell 2 does not express mkate2-podxl2. Scale bars = 20 µm. (C) Evolution of an EHT cell extracted from a 7 hr time-lapse sequence (0–420 min, starting from around 40hpf) and showing significant changes in its morphology throughout emergence. Note the sub-luminal and cytosolic localization of pools of Podxl2 (notably at t=30 min, magenta arrows) suggesting enhanced trafficking of the protein and relative instability of apical polarity, consistently with apparent fluctuation of the luminal membrane surface contacting the aortic lumen (green arrows, in particular at t=240 min). At t=420 min, the cell has emerged and Podxl2 containing membranes remain in close contact with the membrane contacting the aortic floor. Scale bar = 10 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) 3D-rendering of confocal spinning disk sections of the thymus region of 5 dpf Tg(kdrl:gal4;UAS:RFP) (left, control) and incrossed Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) (right, dt-runx1) larva. Thymic cells have been individually segmented. Scale bars = 10 µm. (B) Morphometric analysis of the thymus. Left: thymic volume (in µm3, corresponding to the sum of all thymic cell volumes). Center: cell count. Right: thymic cells volume (in µm3). Statistical comparisons have been performed using two-sided unpaired Wilcoxon tests, all p-values are displayed. Analysis was carried out on n=5 control embryos and n=5 mutant embryos.
 
 To characterize further the Tg(dt-runx1) fish line, we addressed the incidence of dt-Runx1 expression on HE and EHT cell populations during the EHT time-window as well as later on, at 5 days post-fertilization (5dpf) in the thymus, as a readout of hematopoiesis efficiency. We made the following observations:
 
@@ -80,9 +124,29 @@ Fifthly, hematopoiesis is affected far downstream of emergence, as attested by t
 
 Altogether, the results obtained upon expression of dt-runx1 show impairment of hematopoiesis and suggest that, for both EHT cell types, the progression throughout EHT is perturbed, and so until the release. The accumulation of morphologically characterized EHT pol+like cells that we observe may result from the sustained apicobasal polarity of the HE at early and later time points. Conversely, characterized EHT pol- cells did not accumulate, although we observed cells of uncharacterized morphology that could correspond to EHT pol- cells that did not evolve properly. In addition, our results suggest that precursors of HE cells are polarized, as is expected to be the case for non-hemogenic aortic cells, and that Runx1 is involved in controlling the molecular events that are tuning apico-basal polarity, starting at the initiation of the EHT time-window.
 
-## Interfering with Runx1 activity unravels its function in the control of Pard3ba expression and highlights heterogeneous spatial distribution of Pard3ba mRNAs along the aortic axis
+### Interfering with Runx1 activity unravels its function in the control of Pard3ba expression and highlights heterogeneous spatial distribution of Pard3ba mRNAs along the aortic axis
 
 We then explored the potential involvement of proteins of the Pard3 family during the EHT. We anticipated that interfering directly with Pard3 proteins would hamper the development of the aorta (in addition to other functions of polarized tissues that are essential for embryonic development) and rather searched for correlative evidence for the differential expression of Pard3 gene products in the hemogenic endothelium, EHT cells and the aortic endothelium, both in wild type and dt-Runx1 expressing embryos. To achieve this task, we analyzed the expression of mRNAs encoding for the four Pard3 proteins expressed in the zebrafish (Figure 4A) by combining qRT-PCR on FACS-sorted endothelial cells and whole-mount in situ hybridization at the cellular resolution, using RNAscope. All four Pard3 proteins are composed of three PDZ domains and two conserved regions upstream and downstream of these domains (CR regions, Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig4-v1.jpg)
+
+**Figure 4.:** (A) Pard3aa, ab, ba, and bb zebrafish gene products, with their accession numbers. The cartoon represents the common structures of the four proteins, with the three sequential PDZ domains (PDZ1-3), and the CR1 and CR3 conserved regions involved in oligomerization and atypical protein kinase C (aPKC) binding, respectively. The magenta arrows show the positioning of qRT-PCR primers, located in the PDZ1 domain (see Materials and ethods for primer sequences). (B) qRT-PCR analysis of genes expression levels of (left) the hematopoietic markers myb and runx1, (right) the four Pard3 mRNAs (encoding for Pard3aa, ab, ba, and bb) in cell populations isolated from FACS-sorted trunk vascular cells of 48–50 hpf control and mutant embryos (see Figure 4—figure supplement 1, Figure 4—figure supplement 2 and Materials and methods for cell isolation procedures). Graphs show the measured mean fold changes relative to the expression of ef1α and to the expression in RFP+ control cells. Statistical tests: two-sided unpaired two samples Wilcoxon test, all p-values are displayed. Analysis was carried out on n=3 for control and mutant conditions. (C) Representatives images (Imaris 3D-rendering) of RNAscope in situ hybridizations for Pard3ba in 48–50hpf Tg(Kdrl:eGFP) control embryos and Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) mutant embryos. The aorta is outlined with the white dashed lines. The RNAscope signal was segmented into spots and classified based on its localization: in aortic endothelial and hemogenic cells (magenta spots) or in extra-aortic tissues (grey spots, essentially residing in the sub-aortic space). Magenta dashed boxes delineate examples of mRNA Enriched Regions (MERs) in control and mutant embryos. Scale bars = 10 µm. (D) Pard3ba spots count per aortic segment. (E) Pard3ba spots count per hemogenic/EHT cells. (F) Cumulative Pard3ba spots count relative to hemogenic/EHT cell distance, averaged for each aortic segment, in control embryos (grey) and dt-runx1 mutant embryos (orange). (G) HE/EHT cell count relative to number of spots, all expressed per aortic segment (left), 50% Pard3ba spots attraction distance (in µm) (middle) or 75% Pard3ba spots attraction distance (in µm) (right). 50%/75% spots attraction distance corresponds to the distance from hemogenic/EHT cells within which 50%/75% of Pard3ba spots are located. Grey dash lines correspond to regression lines and light grey background correspond to the confidence interval (95%) of the regression model. Linear correlation coefficient (R, Pearson correlation) is displayed for each condition. For (D and E), statistical tests: two-sided unpaired two samples Wilcoxon test, all p-values are displayed. Analysis was carried out on n=5 control embryos and n=6 mutant embryos, 2 aortic segments per embryos. For (G) p-values were calculated using a t-test. Raw images (z-stacks) for this figure and Figure 4—figure supplement 3 (Pard3 mRNA expression in control and mutant conditions) are available at https://doi.org/10.5281/zenodo.10937428.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental strategy to isolate endothelial cells for subsequent gene expression analyses by qRT-PCR. 48hpf Tg(Kdrl:Gal4;UAS:RFP) whole embryos and trunk dissected regions (delimited by two magenta arrows) were treated to dissociate cells and populations of interest were sorted by FACS. n=2 experiments were performed for the whole embryo RFP+ cell population (left) and n=3 experiments were performed for the trunk RFP+ cell population (right). Subsequently, RNA was isolated from 20,000 negative cells (RFP-, black) and from 6500 to 9142 cells for the RFP expressing population (RFP+, magenta). The relative proportions of RFP+ and RFP- cells in the two conditions are displayed (table). (B, C) qRT-PCR analysis of gene expression levels of the hematopoietic markers myb and runx1 (B) and of the four Pard3 mRNAs (encoding for Pard3aa, ab, ba, and bb, (C)) in vascular and non-vascular cells from 48 to 50hpf whole embryos and dissected trunks. Graphs show the measured mean fold changes relative to ef1α. Statistical tests (two-sided unpaired two samples Wilcoxon test, all p-values are displayed) were only performed to compare expression levels in RFP + and RFP- cells isolated from trunk regions (three independent experiments).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A-C) Representative images (Imaris 3D-rendering) of RNAscope in situ hybridizations for Pard3aa, Pard3ba, and Pard3ab in 48–50hpf Tg(Kdrl:eGFP) control embryos. Images show the whole pattern of expression of Pard3aa, Pard3ba, and Pard3ab mRNAs in the trunk region (z-projections). Anatomical regions are outlined with white dashed lines, and roughly annotated based on location and with the support of transmitted light images (not shown). The aorta is outlined with magenta dashed lines. DLAV: dorsal longitudinal anastomotic vessels, SC: spinal cord, NT: notochord, SAS: sub-aortic space, PCV: posterior cardinal vein, PD: pronephric duct. Scale bars = 10 µm. (D) Representative images (Imaris 3D-rendering) of RNAscope in situ hybridizations for Pard3aa, Pard3ba, and Pard3ab from trunks narrowed down to aortic and sub-aortic regions of 48–50hpf Tg(Kdrl:eGFP) embryos. The aorta is outlined with white dashed lines. The RNAscope signals were segmented into spots and classified based on their localization: in aortic endothelial and hemogenic cells (magenta spots) or in extra-aortic tissues (grey spots). Scale bars = 10 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Experimental strategy to isolate endothelial cells from Tg(Kdrl:Gal4;UAS:RFP) and Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) embryos for subsequent gene expression analyses by qRT-PCR. Forty-eight hpf control (left) and dt-runx1 expressing mutant embryos (right) were dissected to isolate trunk regions (delimited by two magenta arrows) that were subsequently treated to dissociate cells and populations of interest were sorted by FACS. n=3 experiments were performed. RNA was isolated from 1900 to 3200 cells for the dt-runx1 mutant (green population) and from 6500 to 9142 cells for control RFP expressing cells (magenta population). (B) Representative images (Imaris 3D-rendering) of RNAscope in situ hybridizations for Pard3ba in 48–50hpf Tg(Kdrl:eGFP) control embryos (left) and dt-runx1 mutant embryos Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) (right). The aorta is outlined with the white dashed lines. The RNAscope signals were segmented into spots and classified based on their localization: in aortic endothelial and hemogenic cells (magenta spots) or in extra-aortic tissues (grey spots). Scale bars = 10 µm. (C) Hemogenic/EHT cell count per aorta segment, separated based on their pard3ba expression (with, from left to right, 0–4 Par3ba spots). Statistical tests: two-sided unpaired two samples Wilcoxon test, all p-values are displayed. Analysis was carried out on n=5 control embryos and n=6 mutant embryos, 2 aortic segments per embryo.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A, B) Representative images (Imaris 3D-rendering) of RNAscope in situ hybridizations for Pard3aa and Pard3ab in trunk regions of 48 - 50hpf Tg(Kdrl:eGFP) control embryos and Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) mutant embryos. The aorta is outlined with the white dashed lines. The RNAscope signals were segmented into spots; only the spots localized in the dorsal aorta are represented (magenta spots). Scale bars = 10 µm. (C) Pard3aa (left) and Pard3ab (right) spots count per aortic segment. Statistical tests: two-sided unpaired two samples Wilcoxon test, all p-values are displayed. Analysis was carried out on n=3 control embryos and n=3 mutant embryos.
 
 We first sought to measure expression of these different gene products in the vascular system of 48 hpf embryos and, more restrictively, in the trunk region. To do so, we dissociated and FACS-sorted cells of either whole embryos, or dissected trunks, using the Tg(Kdrl:Gal4; UAS:RFP) fish line in which soluble RFP is expressed in endothelial tissues (Figure 4—figure supplement 1A). RFP+ vascular cells were found the be slightly enriched in the trunk region, in comparison to whole embryos (Figure 4—figure supplement 1A see the table with 2.10 vs 0.95% of RFP+ cells in the trunk and the whole embryo, respectively). Using qRT-PCR on the FACS-sorted cells, we found that the hematopoietic markers myb and runx1 were heavily detected in RFP+ cell extracts in comparison to RFP- cells (Figure 4—figure supplement 1B); this suggests that part of the isolated RFP+ cells contain hemogenic and hematopoietic cells (at 48 hpf, it is expected that some newly born hematopoietic cells are retained in the sub-aortic space). When we measured the expression levels of the four Pard3, we observed, in comparison to control RFP- cells, the enrichment of Pard3aa and Pard3ba mRNAs in extracts from RFP+ cells isolated from whole embryos, and the opposite for Pard3ab and Pard3bb (Figure 4—figure supplement 1C). These differences were conserved with extracts from RFP+ cells isolated from trunk regions, except for Pard3ba for which important variations in mRNA quantities were obtained, blurring conclusions (we shall come back to this variability beneath). These results suggest that, at least based on the vascular system of whole embryos, Pard3aa and Pard3ba exert functions in endothelial cells, with the possibility of having more specific functions in aortic and HE cells. To discriminate between cell types expressing Pard3aa and Pard3ba (and in particular vascular cell types), we used RNAscope on whole mount Tg(Kdrl:eGFP) embryos, at 48 hpf. Confocal images focused on trunk regions show that Pard3aa is strongly expressed in cells of the spinal cord (potentially neuronal cells and/or radial glia), as well as in the notochord (Figure 4—figure supplement 2A). Interestingly, Pard3ba mRNAs are expressed in more restricted areas, in majority in the spinal cord, albeit to a much lesser extent than for Pard3aa as well as in the region of the pronephric duct and the gut epithelium (Figure 4—figure supplement 2B). By curiosity and because it appears to be the most highly expressed in the whole embryo (and hence may be ubiquitously expressed, including in the trunk region and in accordance to the Daniocell resource at https://daniocell.nichd.nih.gov/, Farrell et al., 2018; Sur et al., 2023), we also investigated on the expression of Pard3ab mRNAs (Figure 4—figure supplement 2C). We confirmed its relatively ubiquitous expression in comparison to Pard3aa and Pard3ba, with a massive expression in the spinal cord. To visualize more precisely expression levels in the vascular system in the trunk (more specifically in the aorta and the underlying vein), we zoomed in this region (Figure 4—figure supplement 2D) and observed a homogeneous localization of Pard3aa and Pard3ab mRNAs as well as, strikingly in the case of Pard3ba, a quite heterogeneous localization of mRNAs unequally concentrated along the aortic axis (Figure 4—figure supplement 2D middle panel and see also Figure 4C, top panel; these will be referred thereon as Pard3ba mRNA enriched regions (MERs)). Of notice, in the whole aorta, we observed more RNAscope signals for Pard3ab in comparison to Pard3aa and Pard3ba, including in some HE/EHT cells (Figure 4—figure supplement 2D, with positive HE/EHT cells indicated by blue arrows). This indicates that Pard3ab, consistently with the absence of variation upon dt-Runx1 expression (see beneath), is constitutively expressed in some HE/EHT cells (this may be also the case for Pard3aa but this should be taken with caution since its mRNAs are more in the limit of detection). We attempted to detect Pard3 proteins expressed in the vascular system, in the trunk region of the embryo, with available antibodies raised against other species and failed, possibly because of inter-species recognition limitation.
 
@@ -94,9 +158,21 @@ Finally and importantly, in wild-type embryos, the Pard3ba mRNAs are preferentia
 
 Altogether, these results unveil the Runx1-dependent control of Pard3ba specifically, during the EHT. In the aorta, AECs appear to be the main cell type that expresses this Pard3 protein and, unexpectedly, expression in these cells is sensitive to interference with our dt-Runx1 mutant. One plausible explanation is that AECs respond to Runx1-mediated signaling taking place in HE/EHT cells (see Discussion for other possibilities and further details). This suggests that a specific signalling axis is taking place between these different cell types that would control the expression of Pard3ba mRNAs and, consequently, downstream apico-basal polarity associated features carried out by the Pard3ba protein (example: the recycling mode of junctional complexes between EHT pol+ cells and endothelial neighbors, in comparison to EHT pol- cells, see beneath and Discussion). This potential intercellular signaling is supported by the proximity of Pard3ba mRNAs expressed in AECs to HE/EHT cells in MERs. These results also strengthen the importance of the interplay between HE/EHT cells and their direct endothelial neighbors (this interplay has been highlighted in Lancino et al., 2018 see also beneath).
 
-## Junctional recycling between EHT cell types and endothelial neighbors is differentially controlled
+### Junctional recycling between EHT cell types and endothelial neighbors is differentially controlled
 
 To investigate the functional links between apicobasal polarity and the peculiarities of EHT pol+ and EHT pol- emergence processes, we sought to follow the dynamics of Junctional Adhesion Molecules (JAMs) that belong to tight junction complexes (Garrido-Urbani et al., 2014). During apicobasal polarity establishment in epithelial and endothelial tissues, these molecules recruit the Pard3/aPKC complex, via a PDZ-binding peptide located in their extreme carboxy-terminus (Figure 5A, left cartoons and Itoh et al., 2001; Ebnet et al., 2001; Ebnet et al., 2018). In addition, JAMs are expressed in the vascular system and, in relation to this work, JAM3b is expressed in the aorta of the zebrafish embryo and promotes endothelial specification and hematopoietic development (Kobayashi et al., 2020).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cartoons representing homodimers of full-length JAMs with the C-terminal cytosolic part interacting with Pard3 (JAMs interact with the first PDZ domain of Pard3) as well as the constructs generated in this study and containing eGFP inserted between the Immunoglobulin-like (Ig) domains and the trans-membrane region (TMD). The constructs were obtained for zebrafish JAM2a and JAM3b. (B, C) 52 hpf Tg(kdrl:eGFP-Jam3b; kdrl:nls-mKate2) embryos were imaged in the trunk region (AGM) using spinning disc confocal microscopy. The panels are either maximum z-projections (top two) or single plane z-sections (bottom two, focusing on the aortic floor) of aortic segments, with either the merged nls-mkate2 and eGFP-Jam3b fluorescence signals (magenta and green) or the eGFP-Jam3b signal only (black and white images). Bottom of the figure: 2D-cartographies obtained after deploying aortic cylinders and showing the eGFP-Jam3b signals only. The white/black vertical dashed lines show the correspondence of the antero-posterior junctional reinforcements in the single z-sections (white arrows) on the respective 2D-cartographies resulting from the deployment of the aortic walls (obtained from the z-stacks). (B) Example of an EHT pol+ cell (cell 1, white arrows point at reinforcement of signal at antero-posterior junctions). On the 2D cartography, cell 1 (red) is contacting endothelial cells 2 and 3; note the reinforcement of eGFP-Jam3b signals along antero-posterior membrane interfaces perpendicular to blood flow (red arrows) as well as at the two tri-cellular junctions visible between cells 1, 2 and 3 (black arrows). (C) Example of two EHT pol- cells (cells 1 and 2, white arrows point at reinforcement of signal at antero-posterior junctions). On the 2D cartography, cells 1 and 2 (red) are contacting endothelial cells 3, 4, 6 and 3, 6 respectively; note the reinforcement of eGFP-Jam3b signals along antero-posterior membrane interfaces perpendicular to blood flow (red arrows) and endothelial cell 6 that has intercalated between endothelial cell 7 and EHT pol- cell 2 (blue arrow). In right margins, magenta and green arrowheads designate the aortic floor and roof, respectively. Scale bars = 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Top panel: EHT pol+ cell whose emergence depends on the constriction of circumferential actomyosin (orange, see Lancino et al., 2018) and the reduction of the membrane interface contacting endothelial neighbors shrinking along the longitudinal axis (horizontal double arrows) and in the 2D plane (endothelial neighbors are not depicted and are embedded in the blue X-Y plane). Presumably, the reduction of membrane interfaces relies on consumption via endocytosis. Green ovals: junctional complexes reinforced at antero-posterior poles. Green line: apical/luminal membrane with typical inward bending. Bottom panel: EHT pol- cell whose emergence depends on the dynamics of adhesion pools that move synchronously in 3D (X, Y, Z), both at antero-posterior poles (blue ovals) and at lateral sides of the emerging cell contacting endothelial neighbors (adjoining endothelial cells are not depicted and are embedded in the blue X-Y plane). Presumably, this type of emergence in which endothelial cells crawl over the EHT cell (curved arrows) involves, for the latter, a partial retrograde endocytic recycling of junctional complexes (opposite to the direction of emergence). Note that nuclei are not drawn at scale.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Localization of transiently expressed eGFP-Jam2a (A–D) and eGFP-Jam3b (E–G) in 52 hpf embryos, using spinning disk confocal microscopy. Plasmid constructs were expressed under the control of the heat shock Hsp70 promoter. For both constructs, expression was induced approximately 6 hr before imaging, by 1 hr balneation in 39 °C embryo medium. All images are maximum z-projections. (A, E) Ependymal cells. White and red arrows point at reinforcement of eGFP-Jam2a and eGFP-Jam3b at apical intercellular junctions and at basolateral membranes, respectively. (B) Pronephric tubule cells. White arrows point at the reinforcement of the eGFP-Jam2a signal at apical sides of membranes of polarized cells constituting pronephric tubules. The red arrow points at baso-lateral localization of eGFP-Jam2a. (C, F) Skin epithelial cells. White arrows point at the localization of eGFP-Jam2a and eGFP-Jam3b at lateral junctional interfaces between two neighboring cells. Red arrows point at tri-cellular junctions at which the density of eGFP-Jam2a and eGFP-Jam3b is reinforced. (D) Skin epithelial cells. White arrows point at membrane protrusions. (G) Striated muscle cells. Red arrows point at T-tubules (invagination of the sarcolemmal membranes); white arrows point at the plasma membranes of myofibrils. Scale bars = 20 µm.
 
 We envisaged a scenario whereby EHT pol+ cells, whose longitudinal interface with endothelial neighbors shrinks along the X axis of the X, Y 2D-plane, may have less mobile junctional pools than EHT pol- cells whose entire junctional interface moves along the X, Y, Z 3D-axes (Figure 5—figure supplement 1). In the case of EHT pol- cells, the consumption of the junctional interface with adjoining endothelial cells appears to result from the converging migration of endothelial neighbors crawling over the luminal membrane, based on interpretation of our time-lapse sequences (Figure 1—video 3). In this context, we favoured the analysis of junctional pools localized at antero-posterior sites of emerging cells as we have shown that they are enriched with tight junction components (Lancino et al., 2018). In addition and in the case of EHT pol+ cells, it is conceivable that these adhesion pools – spatially restricted owing to apicobasal polarity – contribute to anchoring the emerging cell in the 2D-plane (Figure 5—figure supplement 1, top panel).
 
@@ -104,11 +180,19 @@ To achieve our goal, we designed two constructs in which eGFP is introduced in t
 
 Using double transgenic Tg(kdrl:eGFP-Jam3b; kdrl:nls-mKate2) embryos at 48–55 hpf, we addressed the recycling capacity of junctional pools using Fluorescence Recovery After Photobleaching (FRAP; for more details, see Materials and methods). The labelling of nuclei with nls-mKate2 allowed to point at EHT pol+ and EHT pol- cells unambiguously because eGFP-Jam3b is essentially targeted to junctional interfaces and not labelling luminal/abluminal membranes (Figure 6A and B), except in few cases (Figure 5B, for an EHT pol+ cell); additionally, nuclei of EHT pol+ cells have a crescent shape (see Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig6-v1.jpg)
+
+**Figure 6.:** Forty-eight to 55 hpf Tg(kdrl:eGFP-Jam3b; kdrl:nls-mKate2) embryos were imaged using spinning disc confocal microscopy and illuminated for Fluorescence Recovery After Photobleaching (FRAP) in the trunk region (AGM, Aorta Gonad Mesonephros). (A, B) Panels are either maximum z-projections (top left) or single plane z-sections (bottom left and top right, focusing on the aortic floor) of aortic segments, with either the merged nls-mkate2 and eGFP-Jam3b fluorescence signals (magenta and green) or the eGFP-Jam3b signal only (black and white images). White arrows point at reinforcement of signal at antero-posterior junctional pools of an EHT pol+ cell (A) or of an EHT pol- cell (B), both marked by asterisks. Bottom right: 2D-cartographies obtained after deploying aortic cylinders and showing the eGFP-Jam3b signals only. Black arrows point at antero-posterior junctional pools, in particular at tri-junctional regions that exhibit increase in signal density (well visible in A black arrows). 2 and 3 endothelial cells are contacting the EHT pol+ cell (A) and the EHT pol- cell (B), respectively. In right margins, magenta and green arrowheads designate the aortic floor and roof, respectively. Scale bars = 20 µm. (C—G) FRAP analyses. EGFP-Jam3b junctional pools corresponding to the brightest spots inside junctional regions of interest were bleached for FRAP measurements (these high intensity pools were localized at the level of bi- and tri-junctions for endothelial cells (EC) and in tri-junctional regions for EHT pol+ and EHT pol- cells; all these junctional pools were systematically visualized by deploying each aortic segment before bleaching as shown in the 2D-cartographies in A and B as well as in Figure 6—figure supplement 1, see also Materials and methods). FRAP analysis concerned three types of junctional interfaces: between endothelial cells (EC – EC, black and grey), EHT pol- and endothelial cells (pol- – EC, brown), EHT pol+ and endothelial cells (pol+ – EC, blue). (C, D) Evolution of mean fluorescence intensity for each type of junctional interface over time (10 min), after photobleaching (t=0 s). (E) Median maximum amplitude of recovery of all determinations and for each type of junctional interface (maximum of simple exponential fitted curves). (F, G) Early fluorescence recovery. Early evolution (over the first 30 s) of the mean fluorescence intensity for each type of junctional interface over time after photobleaching (t=0 s). (F) The fitted lines correspond to linear regressions of mean fluorescence intensities. (G) Median values of fluorescence recovery slopes (linear regressions) of all determinations and for each type of junctional interface. (E, G) The number of biological replicate (n) is stated on the plots. Statistical tests: two-sided unpaired two samples Wilcoxon test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** After performing z-stack acquisitions in trunk regions followed by 2D-deployment of aortic segments (A-C), 4 different Tg(kdrl:eGFP-Jam3b; kdrl:nls-mKate2) 48–55 hpf embryos were illuminated for FRAP. Panels (A and B) are the entire segments from which cropped images of EHT pol+ and EHT pol- cells (black asterisks) and surroundings were extracted to build the panels A and B of Figure 6. Panels (C and D) are from two other embryos. The 2D-cartographies allow visualizing the junctions that were selected for FRAP, with the black arrows pointing at junctional interfaces between EHT and endothelial cells (all are in the area of tri-junctions) and the green arrows pointing at bi-junctions (Bj) or tri-junctions between endothelial cells (green asterisks). Scale bars = 20 µm.
+
 First and to set up our protocol, we spotted bi- and tri-junctional contacts between endothelial cells (Figure 6—figure supplement 1). Recycling parameters (fluorescence intensity recovery with time and maximum recovery amplitude (that addresses the mobile pool), Figure 6C) showed that bi-junctional contacts are less mobile than tri-junctions, with a higher dispersion of maximum recovery amplitude values for the latter (Figure 6E); this introduced a clear limitation for statistical significance of the results, although clear tendencies were observed for mean fluorescence intensity recovery (Figure 6C) and median values for maximum recovery amplitude, when recycling reached its equilibrium (Figure 6E). We then focused at antero-posterior sites of EHT pol+ and EHT pol- cells and more specifically in the region of tricellular junctions (shared by one EHT cell and two endothelial neighbors (Figure 6A, B and 2D-cartographies, black arrows) and for more examples in 2D-cartographies, see Figure 6—figure supplement 1, black arrows) that are clearly the most enriched with eGFP-Jam3b. In each experiment, eGFP-Jam3b pools at tricellular junctions between endothelial cells (EC-EC-EC) were also spotted for a comparative analysis. Measurements of fluorescence recovery intensities revealed a tendency of increase in the mobile fraction of eGFP-Jam3b at EHT pol+ – EC versus EHT pol- – EC junctional interfaces (see Figure 6D for fluorescence recovery curves and Figure 6E for median values [50% and 39% maximum recovery amplitudes after 10 min, respectively]). Although smaller, differences in recovery were also measured between EHT pol+ – EC and EHT pol- – EC junctional interfaces when focusing on the earliest time points (the first 30 s, Figure 6F), with the median value of early recovery slopes for the EHT pol+ - EC versus EHT pol- – EC junctional interfaces increased by 128% (Figure 6G).
 
 Altogether and unexpectedly regarding our initial scenario, these results indicate that tri-junctional pools localized at antero-posterior poles of EHT cells and enriched with eGFP-Jam3b molecules are significantly more dynamic for EHT pol+ cells in comparison to EHT pol- cells. Since EHT pol+ cells by virtue of apicobasal polarity establishment possibly assemble an apical endosome, this should favour a faster recycling of eGFP-Jam molecules (see Discussion for more details).
 
-## ArhGEF11/PDZ-Rho GEF plays essential functions during EHT progression
+### ArhGEF11/PDZ-Rho GEF plays essential functions during EHT progression
 
 Junctional maintenance and recycling are dependent on intracellular membrane trafficking, supported by sub-cortical actin remodelling and actomyosin contractility, which are controlled mainly by GTPases of the Rho family (Ridley, 2006; Olayioye et al., 2019). Owing to the significance of apicobasal polarity control on EHT features, as suggested by our work, we investigated which proteins may be essential for actin/actomyosin regulation and focused on regulators of Rho GTPases, in particular Rho GEFs that catalyse exchange of GDP for GTP to positively regulate their activity (Rossman et al., 2005). As for Pard3 proteins, several of these Rho GEFs contain one or several PDZ domain(s) that target most proteins to complexes acting at the apical side therefore interlinking actin/actomyosin regulation with cell polarity (Mack and Georgiou, 2014; Ebnet and Gerke, 2022). We focused on ine PDZ-domain containing Rho GEFs, all encoded by different genes in the zebrafish (Figure 7—figure supplement 1): ArhGEF11/PDZ-RhoGEF (thereafter shortened as ArhGEF11), ArhGEF12a, ArhGEF12b, PRex1, PRex2, Tiam1a, Tiam1b, Tima2a, Tiam2b. We first investigated their expression by Whole mount In Situ Hybridization (WISH) and found that all nine mRNAs are detected in the aorta, and for the vast majority at 30–32 and 48–50 hpf (Figure 7—figure supplement 2). Then, using qRT-PCR (Figure 7—figure supplement 1B), we measured and compared their expression levels in the trunk region (at 35 and 48 hpf), for dt-runx1 expressing embryos and controls. We found that, in comparison to controls, ArhGEF11, ArhGEF12b, Tiam1b and Tiam2a are significantly reduced upon dt-runx1 expression at 48 hpf, hence being positively controlled in the wild-type condition, when the emergence of EHT cells is peaking. This is consistent with a functional link between these Rho-GEFs, actomyosin and the control of junctional dynamics during EHT progression. We finally decided to focus on ArhGEF11 for the following reasons: (i) in comparison to Tiams that act on Rac1, ArhGEF11, and ArhGEF12 (which are close relatives and can form heterodimers Chikumi et al., 2004), are mostly acting on RhoA which is controlling apical constriction via the RhoA-Myosin II signalling axis; as we have shown previously (Lancino et al., 2018), EHT progression requires the constriction of circumferential actomyosin; (ii) ArhGEF11 was shown to regulate the integrity of epithelial junctions by interacting directly with the scaffolding protein ZO-1, hence connecting inter-cellular adhesion with RhoA-Myosin II (Itoh et al., 2012); (iii) ArhGEF11-mediated apical constriction is essential during tissue morphogenesis such as, for example, the neural tube formation in which epithelial cells, submitted to mediolateral contractile forces, constrict at their apical side thus triggering inward bending of the neural plate which leads to the formation of the neural tube (Nishimura et al., 2012). The EHT may share features with this process, that isthe anisotropic distribution of contractile forces controlling the plane of emergence; (iv) mammalian ArhGEF11 exhibits alternative splicing in its C-terminal region that controls tight junction stability via the regulation of RhoA activity (Lee et al., 2018) as well as cell migration and invasion (Itoh et al., 2017).
 
@@ -120,13 +204,45 @@ To investigate the function of ArhGEF11 on the junctional interface between HE/E
 
 We then characterized more in depth the MO and CRISPR phenotypes (Figure 7) and performed a quantitative analysis of the number and morphology of HE, EHT and adjoining endothelial cells, based on confocal images and subsequent segmentation of cell contours (using 2D deployment of the aortic cylinder).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-v1.jpg)
+
+**Figure 7.:** (A-C) Numeration and morphometric analyses of aorta and cell types for Tg(kdrl:eGFP-Jam3b; kdrl:nls-mKate2) ArhGEF11 exon 38 splicing morpholino-injected and control embryos (A), or for (Kdrl:eGFP-Jam3b; kdrl:ArhGEF11CRISPR-Cterdel+/+) homozygous ArhGEF11 C-ter deletion mutants and control siblings. (B) Forty-eight to 55 hpf embryos were imaged using spinning disk confocal microscopy. (Aa, Bb) 2D-cartographies obtained after deploying aortic cylinders and showing the eGFP-Jam3b signals only with cell contours delineated either in blue (endothelial cells), yellow (hemogenic cells, see Materials and methods for their morphological definition), red (morphologically characterized EHT cells, for controls), and small cells delineated by cyan boxes (morphologically uncharacterized EHT cells and putative post-mitotic cells remaining as pairs, included in the numeration as hemogenic cells). Cellular contours have been semi-automatically segmented along the cellular interfaces labeled with eGFP-Jam3b (see Materials and methods). Scale bars: 10 µm. (Aa’, Bb’) Left: numeration of endothelial, hemogenic and EHT-undergoing cells according to the position of their geometrical center (either on the aortic floor, or on the roof, or on the lateral side), for each condition; right: number of endothelial, hemogenic and EHT-undergoing cells in each condition calculated from the segmentation of 3x2D-projections per embryo and covering the entire aortic regions in the trunk. (Aa’’, Bb’’) Left: length of hemogenic cells (in the longest axis) in function of their orientation (°) relative to the blood flow axis (0–180°); right: distribution of the orientation of hemogenic cells relative to the blood flow axis, displayed as a mean distribution of cells per embryo. (Aa’’’, Bb’’’) Hemogenic cell elongation factors in arbitrary Units (scale factor given by the ratio between the first- and the second-best fitting ellipse diameters, the minimum value being 1 for a non-elongated object) represented as boxplot distribution of all segmented cells (left) or as the distribution of cell elongation factor per embryo (right), for controls and for interfering conditions as indicated. (Aa’’’’, Bb’’’’) Hemogenic cell area represented as boxplot distribution of all segmented cells (left) or as the distribution of cell area per embryo (right), for controls and for interfering conditions as indicated. (C) Aaortic perimeter (in µm) for controls and mutant conditions as indicated. Statistical tests: two-sided unpaired two samples Wilcoxon test. For the ArhGEF11 exon 38 splicing morpholino condition, analysis was performed on 2 x control (non-injected embryos) and 3 x embryos injected at the one-cell stage; for the CRISPR mutant condition, analysis was performed on 2 x wild-type siblings for control and 2 x homozygous mutant embryos whose DNA mutation was confirmed by sequencing. Three consecutive aortic segments per embryo were analyzed to cover the whole length of the dorsal aorta, in the trunk region (covering a distance of 990 µm per embryo). Raw images (z-stacks and 2D cartographies) for panel (A) and Figure 7—figure supplement 5 (morphometric analysis of aortic cells in control and ArhGEF11 morpholino splicing conditions) are available at https://doi.org/10.5281/zenodo.10937430. Raw images (z-stacks and 2D cartographies) for panel (B) and Figure 7—figure supplement 6 (morphometric analysis of aortic cells in control and ArhGEF11 CRIPSR mutant conditions) are available at https://doi.org/10.5281/zenodo.10937434.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Cartoons representing the domains composing the nine PDZ domain-containing RhoGEFs that were investigated in this study (all these RhoGEFs are encoded by different genes in the zebrafish; protein respective length is not drawn at scale). (B) Results obtained from three independent qRT-PCR experiments and performed on material extracted from trunk regions of 35 and 48 hpf embryos obtained from incrossed Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) adult fishes. Statistical tests: two-sided unpaired two samples Wilcoxon test, with p-values of significant differences. GEF: guanine nucleotide-exchange factor; PDZ: postsynaptic density protein of 95 kDa, Discs large and Zona occludens-1; PH: Plekstrin homology; RGS: regulator of G-protein signaling; DH: Dbl (diffuse B-cell lymphoma) homology; RBD: Ras-binding domain; DEP: Dishevelled Egl-10 and Plekstrin; InsPx4-PTPase: PtdIns(1,3,4,5)P4 phosphatidylinositol phosphatase; TIAM: T-cell-lymphoma invasion and metastasis; LARG: leukemia-associated Rho guanine-nucleotide exchange factor; PRex: PtdIns(3,4,5)P3-dependant Rac exchanger-1 and 2.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Note that all RhoGEFs are detected in the dorsal aorta of the trunk region (white arrowheads).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Domains of ArhGEF11, including its actin binding site (L/IIxxFE) and the position of exon 38 encoded peptide. The bottom cartoon represents a protein deleted from its DH-PH domains and C-terminus that are replaced by eGFP (PDZ-PRD-RGS-eGFP) to follow the localization of the truncated fusion protein in expressing cells. (B) Localization of the ArhGEF11 PDZ-PRD-RGS-eGFP fusion protein after transient expression in the aorta (expression was obtained after injection of the plasmid, at the one-cell stage, in the Tg(Kdrl:Gal4;UAS:RFP) fish line). Confocal images (z-projection) extracted from a time-lapse sequence (timing points t=0 and t=77 min) and showing either the eGFP channel only (left), or the merge between the green and the red channels (RFP labels the cytoplasm). Note the localization of PDZ-PRD-RGS-eGFP at membrane interfaces at early time point of the emergence and at the rim of an emerging cell (white arrowheads, second cell from the right) and its enrichment at antero-posterior sites of an EHT pol+ cell proceeding throughout emergence (right cell, at t=0 and t=77 min and bottom cartoons, green arrows point at localization/concentration of PDZ-PRD-RGS-eGFP). Scale bar = 10 µm.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Splicing MO interfering with integration of exon 38. Top panel: cartoon representing exons/introns (not drawn at scale) composing the 3-prime region of the gene encoding for ArhGEF11, with the position of the splicing MO. Middle panel: agarose gel showing the two alternative mRNAs encoding for ArhGEF11 in control animals (left track, control) and after injection of the MO at the one cell stage (right track,+MO at 2 and 5 ng). Bottom panel: ArhGEF11 DNA sequences obtained after RT-PCR, cloning and sequencing for 1 control and 2+MO clones (+MO1,+MO3). (B) Morphologies of control and +MO injected 48 hpf embryos. Note the absence of malformations. (C) Top panel: ArhGEF11 wild type and CRISPR-mediated 7 bp deletion in the 3-prime region of exon 38 leading to a frame-shift in the ORF and a downstream premature stop codon; middle panel: CRISPR del/C-ter nucleotide/aa sequence and wild type nucleotide/aa sequence covering the extreme C-ter of the full-length protein; bottom panel: CLUSTAL 2.1 multiple sequence alignment of mouse and zebrafish C-termini highlighting the sequences of spliced variants of potentially similar activity in the regulation of ArhGEF11 activity on RhoA. Accession numbers: NP_001003912.1 and NP_001027010.1 for the mouse and Danio rerio sequence, respectively. (D) Morphologies of control and homozygous ArhGEF11CRISPR-Cterdel+/+ 48 hpf embryos ((Kdrl:eGFP-Jam3b; kdrl:ArhGEF11CRISPR-Cterdel+/+) embryos). Note the edema in the cardiac region (35 hpf embryos also exhibited retardation in blood circulation). Raw image of agarose gel showing the 2 alternative mRNAs encoding for ArhGEF11 in control animals (left track, control) and after injection of the MO at the one cell stage (right track, +MO at 2 and 5 ng) are available at https://doi.org/10.5281/zenodo.11355396.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** Tg(kdrl:eGFP-Jam2a; kdrl:nls-mKate2) control (A, C, E) or MO-injected (B, D, F) embryos were imaged using spinning disk confocal microscopy (48–55 hpf time-window). Aorta segments (330 µm each) were imaged in the trunk region (AGM). The 2D-cartographies with delimited cellular contours in panels (A and B) are presented Figure 7A with the corresponding un-modified 2D-cartographies shown on top for unmasking of contours. Panels (A and C) illustrate two different segments from the same embryo. Panels (B, D, F) illustrate segments from three different embryos. (a–f) Maximum z-projections of merged nls-mkate2 and eGFP-Jam2a signals for control (a, c, e) and for ArhGEF11 exon 38 splicing morpholino (b, d, f) conditions. For panels (a) and (b), maximum z-projections of the eGFP-Jam2a signal only are also shown. (a’-f’) Single z-plane images of merged nls-mkate2 and eGFP-Jam2a signals for control (a’, c’, e’) and for ArhGEF11 exon 38 splicing morpholino (b’, d’, f’) conditions. For e’, the image is a composition of two different z-planes from the same field (the boundaries are marked with white ticks). In right margins, magenta and green arrowheads designate the aortic floor and roof, respectively. (a’’-f’’) 2D-cartographies (bottom, with delineated cellular contours) obtained from eGFP-Jam2a signals for control (a’’, c’’, e’’) and for the ArhGEF11 exon 38 splicing morpholino (b’’, d’’, f’’) conditions, respectively. Cell contours are delineated either in blue (endothelial cells), yellow (hemogenic cells), red (morphologically characterized EHT cells, red arrows), and small cells delineated by cyan boxes (morphologically uncharacterized EHT cells and putative post-mitotic cells remaining as pairs). Cellular contours have been semi-automatically segmented along the cellular interfaces labeled with eGFP-Jam3b (see Materials and methods). White and black arrows designate hemogenic cells with their nucleus visible on the z-section. Analyses were performed on 2 x control non-injected embryos and 3 x embryos injected at the one-cell stage with the ArhGEF11 exon 38 splicing MO. Scale bars = 20 µm.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp6-v1.jpg)
+
+**Figure 7—figure supplement 6.:** (Kdrl:eGFP-Jam3b; kdrl:ArhGEF11CRISPR-Cterdel+/+) homozygous ArhGEF11 C-ter deletion mutants (CRISPR ArhGEF11: panels B, D, F) and control siblings (Control: panels A, C, E) were imaged using spinning disk confocal microscopy (48-55hpf time-window). Note that the genetic background of the CRISPR fish line is (Kdrl:GAL4; UAS:RFP) thus allowing the red cytosolic staining of aortic and hemogenic cells. Aorta segments (330 µm each) were imaged in the trunk region. The 2D-cartographies with delimited cellular contours in panels (A and B) are presented Figure 7B with the corresponding un-modified 2D-cartographies shown on top for unmasking of contours. Panels (A, C) and (D, F) illustrate 2 different segments from the same embryo. (a–f) Maximum z-projections of merged nls-mkate2 and eGFP-Jam3b signals for control (a, c, e) and for the CRISPR mutant (b, d, f) conditions. For panels (a and b), maximum z-projections of the eGFP-Jam2a signal only are also shown. (a’-f’) Single z-plane images of merged nls-mkate2 and eGFP-Jam3b signals for control (a’, c’, e’) and for ArhGEF11 exon 38 splicing morpholino (b’, d’, f’) conditions. For b’ and d’, the image is a composition of 2 different z-planes from the same field (the boundaries are marked with white ticks). In right margins, magenta and green arrowheads designate the aortic floor and roof, respectively. (a’’-f’’) 2D-cartographies (bottom, with delineated cellular contours) obtained from eGFP-Jam3b signals for control (a’’, c’’, e’’) and for the CRIPR mutant (b’’, d’’, f’’) conditions, respectively. Cell contours are delineated either in blue (endothelial cells), yellow (hemogenic cells), red (morphologically characterized EHT cells, red arrows), and small cells delineated by cyan boxes (morphologically uncharacterized EHT cells). Cellular contours have been semi-automatically segmented along the cellular interfaces labeled with eGFP-Jam3b (see Materials and methods). White and black arrows designate hemogenic cells with their nucleus visible on the z-section. Analyses were performed on 2 x wild-type siblings for controls and 2 x mutant embryos whose mutation was confirmed by DNA sequencing. Scale bars = 20 µm.
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/91429/elife-91429-fig7-figsupp7-v1.jpg)
+
+**Figure 7—figure supplement 7.:** (A, B) Representative images of AGM region of double transgenic Tg(CD41:eGFP; Kdrl:nls-mKate2) embryos, injected with control (A) or ArhGEF11 exon 38 splicing morpholino (B) at 48–55hpf. The two top panels show maximum z-projection of aortic segments (top panels with the CD41:eGFP signal in green and the Kdrl:nls-mKate2 signal in magenta, bottom panel only with the CD41:eGFP signal in white). The three bottom panels show single z-planes extracted from the above z-projections. Automatically segmented GFP-positive cells are outlined in white. Magenta arrows point at double positives (GFPlow/kdrl + cells), corresponding to hemogenic/EHT cells. Blue arrows point at single positive (GFPlow/kdrl- cells) HSPC precursors. Green arrows point at circulating thrombocytes that were automatically eliminated from the segmentation. The asterisk labels a non-moving thrombocyte (GFPhigh/kdrl- cells). The aortic floor is outlined by the white dashed line. Scale bars = 10 µm. (C) GFP and mKate2 fluorescence intensity was automatically extracted for each segmented cell and normalized to background. Vertical and horizontal dashed lines on the plot and on the zoomed plot represent the threshold selected for the classification of mKate2+ versus mKate2- (1.05, horizontal line) and eGFPhigh versus eGFPlow (1.4, vertical line). (D) Hemogenic/EHT cell count. (E) HSPC precursors cell count. For (D and E) Statistical tests: two-sided unpaired two samples Wilcoxon test, all p-values are displayed. Analysis was carried out on n=8 control and n=6 mutant embryos.
+
 For the morphants, we found approximately a double amount of hemogenic cells in the aortic floor in comparison to controls (altogether localized on the floor and on the lateral sides of the aorta, see Figure 7A, panels in (a) for 2D-cartographies to visualize cell shapes, with the accumulation of hemogenic cells delineated in yellow for one morphant on the right and panels in (a’) for cell counts of endothelial, hemogenic and EHT cells either in the entire aorta in trunks [left] or, more precisely, the aortic floor and lateral aortic side and the roof[right]; see also Figure 7—figure supplement 5 for additional examples). Increase in the number of hemogenic cells in morphants in comparison to controls also concerned cells oriented more perpendicularly to the blood flow axis (toward the Y-axis, Figure 7A, see panels in (a’’)), consistently with variation in emergence angle, as we have shown previously (Lancino et al., 2018). This is accompanied by a significant reduction in the number of morphologically characterized EHT cells (Figure 7A and Figure 7—figure supplement 5). Similar results were obtained for the CRISPR homozygous deletion mutants, particularly regarding the accumulation of hemogenic cells, although with a smaller amplitude (Figure 7B, with the panels (b - b’’) mirroring the presentations of results obtained for morphants and internal controls in Figure 7A; see also Figure 7—figure supplement 6 for additional examples). Consistently, a significant increase in the aortic perimeter was found, at least for the morphants (Figure 7C). Of notice also, hemogenic cells in morphants are on average less elongated in comparison to control and to the CRISPR homozygous mutants (as well as less dispersed according to this parameter, compare Figure 7A, panel (a’’’) with Figure 7B, panel (b’’’), with visualization of the dispersion on right panels). Importantly, we observed for the morphants an accumulation of a less elongated cell population standing below the median value (Figure 7A, panel (a’’’); to some extent, this is reproduced as well when measuring hemogenic cell area, compare Figure 7A, panels in (a’’’’) with Figure 7B, panels in (b’’’’) for morphants and CRIPR mutants, respectively). Finally, the population of small cells in the morphants are of uncharacterized morphology, which means that they appear neither as EHT pol+nor as EHT pol- cells and may represent abortive emergences (Figure 7A and Figure 7—figure supplement 5, cells in cyan boxes).
 
 Additionaly, we assessed the impact of MO interference on ArhGEF11 exon 38 splicing on hematopoiesis using the Tg(CD41:eGFP) fish line. By performing live imaging on Tg(CD41:eGFP) X Tg(Kdrl:nls-mKate2) outcrosses (see Figure 7—figure supplement 7A and B for control embryos and morphants, respectively), we quantified the number of hemogenic/EHT cells in the aortic floor, based on fluorescence intensities as well as the number of newly generated hematopoietic stem and progenitor cells (HSPCs, that continue to express the hematopoietic eGFP reporter but stopped to express the vascular mKate2 reporter, Figure 7—figure supplement 7C). We show that, in agreement with our morphometric analysis, an increase in the number of hemogenic/EHT cells in the aortic floor in morphants in comparison to control embryos (Figure 7—figure supplement 7D, with median values of 14.0 and 22.5 hemogenic/EHT cells for controls and morphants, respectively). Additionally, we observe, despite the high variability in both controls and morphants, a relative diminution in the number of newly generated HSPC precursors (Figure 7—figure supplement 7E, with median values of 22.0 and 16.5 HSPCs for controls and morphants, respectively). This is consistent with our previous results showing an accumulation of HE/EHT cells in aortic floors of morphants and highlights the negative impact of this accumulation on the generation of HSPCs.
 
 Altogether, the morphants and CRISPR mutant phenotypes show that the progression throughout EHT is significantly impaired supporting the idea that ArhGEF11 exerts important functions in the process. Increase in the frequency of elongated cells for the CRISPR mutants in comparison to morphants suggests that interference triggered by the C-terminal deletion of ArhGEF11 is more effective at early time points. Interference with inclusion of exon 38 in morphants triggers an increase in the number of hemogenic cells of smaller area and reduced elongation indicating a more efficient progression throughout emergence in comparison to the CRISPR mutants, albeit with impairment at later stages. This may be due to alteration in the dynamics of endothelial cell intercalation which is required for emergence completion (which is also compatible with the accumulation of pairs of cells that may be post-mitotic and that do not spread apart because this also requires aortic cell intercalation).
 
-## ArhGEF11/PDZ-RhoGEF and its variant containing the exon 38 encoded sequence control junctional dynamics to support reduction of the hemogenic/endothelial interface and cell-cell intercalation
+### ArhGEF11/PDZ-RhoGEF and its variant containing the exon 38 encoded sequence control junctional dynamics to support reduction of the hemogenic/endothelial interface and cell-cell intercalation
 
 To investigate how ArhGEF11 controls the dynamic interplay between HE/EHT and endothelial cells, we characterized further the MO and CRISPR phenotypes, at the junctional level. To do so, we performed FRAP experiments using the Tg(Kdrl:eGFP-Jam3b) fish line that was injected at the one cell stage with the exon 38 splicing MO, or incrossing (Kdrl:eGFP-Jam3b x ArhGEF11CRISPR-Cterdel-/+) heterozygous fishes to obtaining homozygous mutants and wild-type alleles for control siblings.
 
@@ -142,11 +258,11 @@ Altogether and including our results presented Figure 7, these results reinforce
 
 Here, we bring new insight into the cell biology and mechanics of the EHT, using live confocal microscopy, RNAscope (to reveal the expression of mRNAs at the cellular resolution), and genetic interference. We show that the emergence of EHT cells is more complex than previously shown, with two types of EHT cells of highly different morphodynamics and apico-basal polarity status. We bring evidence suggesting that these differences take root in HE maturation that is primarily characterized by loss of apico-basal polarity that is then tuned by the activity of the transcription factor Runx1. This leads to two types of EHT cells whose respective emergence characteristics appear to rely, partly at least, on controlling the recycling of junctional complexes directly linked to apico-basal polarity features (the JAMs). Also, we reveal essential aspects of the interplay between HE/EHT cells and adjoining aortic endothelial cells. The first is based on a potential signalling cross talk, whose molecular components remain to be identified, controlling apico-basal polarity and its associated features, in space (and possibly also in time, because of EHT asynchrony over the EHT time-window). The second involves the control of the dynamics of junctional interfaces to reduce contacting surfaces between aortic and HE/EHT cells and to promote cell-cell intercalation for the ultimate release of EHT cells and proper sealing of the aortic floor.
 
-## EHT morphodynamics in the zebrafish embryo in comparison to amniotes
+### EHT morphodynamics in the zebrafish embryo in comparison to amniotes
 
 EHT cell emergence in the zebrafish embryo is relatively unique; cells extrude from the aortic floor toward the sub-aortic space and not in the aortic lumen, probably because of mechanical constraints on the aortic wall (discussed in Lancino et al., 2018). However, as a common feature in amniotes and the zebrafish, EHT cells appear to contain large vacuolar structures (which is also the case for HE cells in the zebrafish embryo, as we show); recently, this has been precisely described in chick and quail embryo models (Sato et al., 2023). In amniotes, in which EHT cells are round, these vacuoles appear to emanate from the abluminal membrane (facing the sub-aortic space) and not from the luminal membrane. In addition, these structures disappear before EHT completion, based on water chase by aquaporin activity Sato et al., 2023; it has been suggested that they contribute to exert mechanical force to initiate the detachment of the cell from the endothelial layer. We do not know the membranes from which the pseudo-vacuolar structures that we observe originate, particularly in the HE (they may be formed by transcytosis from the basal membrane, by endocytosis from the luminal membrane, or coming directly from the biosynthetic pathway). However, we can exclude that they contribute to the rounding of EHT pol- cells, as is the case for avians, since we do not see them during EHT pol- emergence. For EHT pol+ cells, according to our results (see Figure 2A and our hypothetical model Figure 2B), the most plausible scenario is that the apical/luminal membrane is established by fusion of cytosolic vacuolar structures or redistribution of internal pseudo-vacuoles connected to the luminal membrane. Subsequently, the dynamic properties of the EHT pol+ cell luminal/apical membrane allows its rapid evolution after EHT completion (see Figure 2—figure supplement 1). We propose that this is compatible with the activity of aquaporins in late EHT pol+ cells and/or shortly after their release, for water chase and vacuolar regression as proposed in our hypothetical model (see Figure 1—figure supplement 1B and the legend for details). Water chase activity would then be a common theme controlling the morphology and dynamics of EHT cells throughout vertebrates, although not for the same purposes.
 
-## Characteristics of the HE and complexity of pre-hematopoietic stem cell emergence
+### Characteristics of the HE and complexity of pre-hematopoietic stem cell emergence
 
 Heterogeneity in the identity and hematopoietic potential of cells emerging from the HE in the AGM has been recently shown in co-culture systems and in vivo in the mouse (Ganuza et al., 2017; Dignum et al., 2021) and in the zebrafish model (Tian et al., 2017; Xia et al., 2023); however, knowledge on the fundamental cell biological and molecular events leading to this complexity is still lacking. Here, we highlight functional aspects that may significantly contribute to this complexity and that take root in the cellular plasticity of the HE. We bring evidence suggesting that HE cells that become competent to initiate the EHT time-window (around 28–30 hpf) tune their apicobasal polarity status which endows them with the ability to support two emergence processes with radically different morphodynamic characteristics; eventually, this would lead to differentially fated cells, which remains to be determined.
 
@@ -158,7 +274,7 @@ Still, regarding the control of the balance orienting toward an EHT pol+ or an E
 
 Finally, we cannot totally exclude that EHT pol+ and EHT pol- cells would originate from different precursors. On this line, it has been shown that the aortic wall can home a transient veinous-fated progenitor cell population that will lead to the underlying vein via selective sprouting from 21 to 23 hpf (Herbert et al., 2009). This option would require a massive expansion of a minor fraction of the cell population remaining in the aortic floor since it is expected that most of it has been moving out toward the sub-aortic region, which is not in favour of this possibility. In addition, recent scRNAseq analysis of floor and roof aortic cells at 21 and 28 hpf has led, for both timing points, to two well-defined clusters defined only by aortic and hematopoietic signatures (Zhao et al., 2022).
 
-## Spatially restricted control of Pard3ba mRNAs by Runx1
+### Spatially restricted control of Pard3ba mRNAs by Runx1
 
 Recent work has identified Runx1 targets in the zebrafish embryo at 29 hpf Bonkhofer et al., 2019; however, the results do not point at any of the conventional apicobasal polarity organizers as being direct targets, although Pard3 and Pard6 mRNAs are clearly downregulated in the HE in comparison to aortic roof cells. Our work now strengthens the idea that understanding the mechanisms underlaying the EHT may require more than simply deducing from expression of mRNAs in the HE (including the corresponding proteins), as exemplified by members of the Pard3 family. Also, annotation of protein isoforms in reference databases needs to be improved so as to gain precise and accurate insight on mechanistic processes.
 
@@ -170,11 +286,11 @@ The increase of Pard3ba mRNAs detection, upon dt-Runx1 mutant expression, sugges
 
 Altogether, our results are consistent with the hypothesis that the variability in expression of Pard3ba mRNAs reflects the response to intrinsic fluctuations of the system over time and space and reinforce the idea that these conditions, mediated by Runx1 and environmental constraints imposed by the blood flow, tune apico-basal polarity. This tuning scenario would also explain the specific case of EHT pol+ cells that would then proceed as such upon exposition to positive apico-basal signaling when Runx1 activity is decreased, consistently with the tendency to accumulate EHT pol+ cells upon expression of our dt-Runx1 mutant. Unfortunately and presently, we cannot show a spatial proximity between EHT pol+ cells and Pard3ba MERs in situ (or the opposite for EHT pol- cells) owing to technical limitations with fixed embryos that do not allow the maintenance of EHT cell shapes. Resolving this issue in the future will be very informative, also to place cellular morphodynamics and gene expression regulation throughout the EHT, with spatial and temporal resolution.
 
-## The complexity of pre-HSC emergence and heterogeneity of hematopoietic stem cell and progenitor populations
+### The complexity of pre-HSC emergence and heterogeneity of hematopoietic stem cell and progenitor populations
 
 Currently, we do not know what would be the features that would endow the two cell types to behave differently after their release. Since post-EHT cells have to migrate in transient developmental niches (i.e. the CHT, the thymus, the pronephric region), these features may provide them with more or less ability to migrate in the sub-aortic space and pass throughout the wall of the underlying vein to conquest more distant niches (Murayama et al., 2006), or to remain in a local AGM niche and be exposed to specific signaling there, in the proximity to the aorta as it is the case for hematopoietic clusters in mammals and avians (Ciau-Uitz et al., 2014; Jaffredo and Yvernogeau, 2014). Beside their potential differences in colonizing different niches which would impact on their subsequent fate, these cells may also contribute to more or less transient waves of hematopoietic stem cells and progenitors that would be specific to the developmental period such as, for example, a restricted sub-set of T-lymphocytes that was described before (Tian et al., 2017). In the specific case of the Tian et al. work, the AGM was shown to produces transient T-lymphocytes proposed to be independent of long-lived HSCs according to a gradient that increases from the anterior to the posterior part of the trunk region, as well as from the aorta in the tail (the posterior blood island in the tail region that was proposed to give rise to hematopoietic precursors related to mammalian erythro-myeloid progenitors, Bertrand et al., 2007). Since the EHT pol+ and EHT pol- cells that we describe in our work are equally produced from the aorta in the trunk and in the tail regions (thus irrespective of the antero-posterior axis of the aorta), the one or the other of the two EHT types most probably does not directly relate to the first wave of T-lymphopoiesis arising from the aortic endothelium described in Tian et al., 2017.
 
-## The cell biology behind emergence control and morphodynamics
+### The cell biology behind emergence control and morphodynamics
 
 The intrinsic capacity of the HE, that we show here to be able to support two highly distinct emergence processes, in the zebrafish embryo, is very unique. Indeed, not only are they taking place contemporarily, but also can the two cell types proceed throughout emergence at a distance shorter than 50 µm, which accommodates the intercalation of a single adjoining endothelial cell. This may reflect the remarkable properties of the vascular system that needs to allow cellular extrusion and transmigration. The latter is particularly relevant in the context of developmental hematopoiesis since hematopoietic precursors that travel via blood circulation need to pass throughout the aortic wall to conquest their distant niches.
 
@@ -182,7 +298,7 @@ In the present work, we provide some of the mechanistic insights into the specif
 
 In regard to the different modes of junctional recycling between aortic and either EHT pol+ or EHT pol- cells for which be bring evidence using FRAP, we hypothesize that differences take root in the regulation of cell polarity features, such as for example the organization of an apical endosome in the case of EHT pol+ cells (which may be why recycling of eGFP-Jam molecules appears to be faster in EHT pol+ cells in comparison to EHT pol- cells, in relation to the recycling pathways undertaken by JAM molecules). In addition, since JAMs interact with Pard3 (Ebnet et al., 2003) this recycling, that would provide renewed JAM/Pard3 complexes at membrane junctions and sustained activation of the Pard3/Pard6/aPKC complex (Ebnet, 2017), may contribute to the maintenance/reinforcement of EHT pol+ cell polarity throughout the entire emergence process. Also, the regime of recycling may be regulated by an adjacent aortic endothelial cell that expresses Pard3ba and that controls trans-cellular JAMs pairing via signaling involving apico-basal polarity features. Finally, this turnover may be adapted to the mechanical tensions EHT pol+ cells are exposed to, in comparison to EHT pol- cells, owing to their specific morphodynamic features (ex: cellular bending); these tensions may be sensed by tri-cellular junctions which would be preferential sites for the renewal of junctional components whose half-life is reduced owing to submission to mechanical forces.
 
-## The cell biology behind emergence control and mechanics: the function of ArhGEF11/PDZ-RhoGEF in the dynamic interface between aortic and HE cells
+### The cell biology behind emergence control and mechanics: the function of ArhGEF11/PDZ-RhoGEF in the dynamic interface between aortic and HE cells
 
 Finally, regarding inter-cellular junctions and the control of their dynamics all along the EHT process, we also addressed the dynamic interface between aortic and HE cells. As for EHT cells, we focused more specifically on tri-junctional interfaces that have been proposed to sense tension and transmit the information to other types of junctional complexes (Bosveld et al., 2018); in the EHT context, the contracting hemogenic endothelium is additionally exposed to high mechanical tension owing to wall sheer stress imposed by the blood flow and that was proposed to regulate emergence efficiency (Lundin et al., 2020; Campinho et al., 2020; Chalin et al., 2021). In our work, we highlight one essential aspect of controlling junctional recycling which is during cell-cell intercalation which concerns either contacting HE cells lying on the aortic floor or HE/EHT cells after cytokinesis (as mentioned before, cell division is rather frequent during the EHT time window Zhao et al., 2022). In this context, we addressed the function of ArhGEF11/PDZ-RhoGEF which provides a functional link between cell polarity (with its PDZ-binding motif and its RGS domain that couples to G-protein coupled receptor signaling to regulate planar cell polarity Nishimura et al., 2012), cell adhesion (it binds to the tight junction associated regulatory protein ZO-1, Itoh et al., 2012), and cytoskeletal regulation/contraction (Itoh et al., 2012; Itoh, 2013), all three essential mechanistic components of morphogenetic movements and tissue remodelling. Since morphodynamic events leading to cell extrusion and to the control of cell migration do not only rely on the regulation of mRNAs levels but also on alternative splicing (Pradella et al., 2017) our interest for investigating the function of ArhGEF11 in EHT was raised by the fact that the protein undergoes changes in its biological properties via the alternative splicing of a small exon which leads to a modification of its C-terminus. We identified a splicing event in this region (concerning exon 38) for a potential zebrafish isoform ortholog. However, the precise function of this variant for the zebrafish protein, that was shown in the case of the mammalian isoform to induce cell migration and motility (Itoh et al., 2017) and to bind to the Pak4 kinase thus leading to the subsequent destabilization of tight junction complexes via loss of RhoA activation (Lee et al., 2018), remains to be established. On this line, our results consistently indicate that preventing exon 38 insertion interferes with EHT progression (as well as deleting the C-terminus of the protein as shown with our CRISPR mutant) and appears to impair intercalation of aortic cells between adjoining HE cells. Hence, the + exon 38 isoform, by regulating the dynamic interplay between HE and endothelial cells, would favour one of the essential steps of the EHT process leading to its completion and requiring the complete isolation of EHT cells to ensure the ultimate sealing of the aortic floor (see our former work Lancino et al., 2018). It remains to be established, as our measurements indicate, why the ArhGEF11 + exon 38 isoform appears to slow down junctional recycling which is counterintuitive with increasing the HE/endothelial dynamic interface. However, upon interference, we have been following Jam3b recycling which is only a sub-population of tight junction components that should be at play in the system. Finally, the EHT process on its whole may be submitted to a complex regime of alternating contraction and stabilization phases as we have shown previously in the context of EHT pol+ emergence and that may reflect the necessity to adapt to mechanical constraints imposed by the environment as well as the rearrangements of the HE/EHT/aortic cellular interface (Lancino et al., 2018). In this context, back and forth regulatory mechanisms, particularly involved in the control of the RhoA-Myosin II signaling axis partially regulated by ArhGEF11, may locally and at specific timing points change the turnover of junctional molecules, thus blurring the correlation between gross phenotype (here the organization of the HE/aortic interface) and very local and dynamic molecular events (for a complement to the discussion, see also the legend of the model presented Figure 8C).
 
@@ -190,21 +306,437 @@ Overall, our work highlights the complexity of pre-hematopoietic stem cell emerg
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (zebrafish Danio rerio)</td>
+      <td>AB</td>
+      <td>Zebrafish International Resource Center (ZIRC)</td>
+      <td>ZFIN: ZDB-GENO-960809–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:HsHRAS -mCherry): s916Tg</td>
+      <td>Chi et al., 2008</td>
+      <td>ZFIN ID: ZDB-ALT-090506–2</td>
+      <td>referred to as Tg(kdrl:Ras-mCherry)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(6.0itga2b:EGFP)</td>
+      <td>Lin et al., 2005</td>
+      <td>ZFIN ID: ZDB-ALT-051223–4</td>
+      <td>referred to as Tg(CD41:eGFP)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:eGFP)</td>
+      <td>Jin et al., 2005</td>
+      <td>ZFIN ID: ZDB-ALT-050916–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:nls-mKate2)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:Gal4;UAS:RFP)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:Gal4;UAS:RFP;4xNR:eGFP-Podxl2)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘Transient and stable transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:mKate2-Podxl2)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘Transient and stable transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:eGFP-Jam2a)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘Transient and stable transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:eGFP-Jam3b)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘Transient and stable transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘Transient and stable transgenesis’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish D. rerio)</td>
+      <td>Tg(ArhGEF11CRISPR-Cterdel-/+)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and Methods ‘CRISPR methodology and GEF11 mutant transgenic line screening’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pG1-flk1-MCS-tol2</td>
+      <td>Jin et al., 2005</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Transposase pCS-zT2TP</td>
+      <td>Suster et al., 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmKate2-f-mem</td>
+      <td>Evrogen</td>
+      <td>Cat# FP186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-rabbit Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11070</td>
+      <td>1/400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>MBL</td>
+      <td>Cat# 598</td>
+      <td>1/300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-HA</td>
+      <td>Sigma</td>
+      <td>Cat# 12ca5</td>
+      <td>1/50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-mouse HRP-conjugated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# G-21040</td>
+      <td>1/300</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Morpholino sih</td>
+      <td>Sehnert et al., 2002</td>
+      <td>ZDB-MRPHLNO-060317–4</td>
+      <td>CATGTTTGCTCTGATCTGACACGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Morpholino ArhGEF11 exon 38</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GAAATAAATGAAGCCCCACCTCCGT, see Materials and Methods ‘Morpholinos and injections’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for CRISPR: Alt-R CRISPR-Cas12a (Cpf1) crRNAs –1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>TATCACACACACATCACCTTCTA, see Materials and Methods ‘CRISPR methodology and GEF11 mutant transgenic line screening’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for CRISPR: Alt-R CRISPR-Cas12a (Cpf1) crRNAs –2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>TTTCTCAGCGCTCCTGACAGATG, see Materials and Methods ‘CRISPR methodology and GEF11mutant transgenic line screening’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for CRISPR: Alt-R CRISPR-Cas9 crRNAs</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>AGCCAATCGTCTGAGGACGG, see Materials and Methods ‘CRISPR methodology and GEF11 mutant transgenic line screening’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for CRISPR: Alt-R tracrRNA</td>
+      <td>IDT</td>
+      <td>Cat# 1072532</td>
+      <td>see Materials and Methods ‘CRISPR methodology and GEF11 mutant transgenic line screening’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for WISH: RNAscope Probe- Dr-myb-C3</td>
+      <td>ACD-Biotechne</td>
+      <td>Cat No. 558291 C3</td>
+      <td>Cat No. 558291 C2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for WISH: RNAscope Probe- Dr-pard3ab-C3</td>
+      <td>ACD-Biotechne</td>
+      <td>Cat No. 1282521 C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for WISH: RNAscope Probe- Dr-pard3ba-C2</td>
+      <td>ACD-Biotechne</td>
+      <td>Cat No. 1309581 C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligo for WISH: RNAscope Probe- Dr-pard3aa-C2</td>
+      <td>ACD-Biotechne</td>
+      <td>Cat No. 1305321 C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td>https://imaris.oxinst.com/</td>
+      <td>v10.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPRscan</td>
+      <td>Moreno-Mateos et al., 2015</td>
+      <td></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Pro2 software</td>
+      <td>Zeiss</td>
+      <td>https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QUANTSTUDIO DESIGN &amp; ANALYSIS 2</td>
+      <td>Thermofisher</td>
+      <td>https://apps.thermofisher.com/apps/da2/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph software</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com/products/cellular-imaging-systems/acquisition-and-analysis-software/metamorph-microscopy</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Acquisition-Imaging analysis-LAS X</td>
+      <td>Leica</td>
+      <td>http://www.leica-microsystems.com</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Analysis-Fiji</td>
+      <td>NIH</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Analysis Icy</td>
+      <td>de Chaumont et al., 2012</td>
+      <td>http://icy.bioimageanalysis.org/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Analysis TubeSkinner plugin for Icy</td>
+      <td>Lancino et al., 2018</td>
+      <td>https://icy.bioimageanalysis.org/plugin/tubeskinner/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Figures-Illustrator CC 2017.1.1</td>
+      <td>Adobe</td>
+      <td>http://www.adobe.com/cn/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Active contour plugin</td>
+      <td>Dufour et al., 2011</td>
+      <td>https://icy.bioimageanalysis.org/plugin/active-contours/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS software</td>
+      <td>Nikon</td>
+      <td>https://www.microscope.healthcare.nikon.com/en_EU/products/software/nis-elements</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td>RStudio Team, 2020</td>
+      <td>http://www.rstudio.com/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>Wickham, 2016</td>
+      <td>https://ggplot2.tidyverse.org</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>readr, version 2.1.5</td>
+      <td>Wickham et al., 2024a; Wickham et al., 2024b</td>
+      <td>https://github.com/tidyverse/readr</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cowplot</td>
+      <td>Wilke, 2020</td>
+      <td>https://wilkelab.org/cowplot/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dplyr, version 1.1.4</td>
+      <td>Wickham et al., 2023a; Wickham et al., 2023b</td>
+      <td>https://github.com/tidyverse/dplyr</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>wesanderson, version 0.3.6</td>
+      <td>Ram and Wickham, 2018</td>
+      <td>https://github.com/karthik/wesanderson</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>matrixStats, version 1.3.0</td>
+      <td>Bengtsson, 2024a 10/04/2024 10:05:00</td>
+      <td>https://github.com/HenrikBengtsson/matrixStats</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>stringr, version 1.5.1</td>
+      <td>Wickham, 2023a; Wickham, 2023b</td>
+      <td>https://github.com/tidyverse/stringr</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggsci, version 3.0.3</td>
+      <td>Xiao, 2024a; Xiao, 2024b</td>
+      <td>https://github.com/nanxstats/ggsci</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggpubr</td>
+      <td>Kassambara, 2020</td>
+      <td>https://rpkgs.datanovia.com/ggpubr/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggstatsplot</td>
+      <td>Patil, 2024</td>
+      <td>https://indrajeetpatil.github.io/ggstatsplot/index.html</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggbeeswarm, version 0.7.2</td>
+      <td>Clarke and Sherrill-Mix, 2023</td>
+      <td>https://github.com/eclarke/ggbeeswarm</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DT, version 0.33</td>
+      <td>Xie et al., 2024</td>
+      <td>https://github.com/rstudio/DT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciViews</td>
+      <td>Grosjean, 2019</td>
+      <td>https://www.sciviews.org/SciViews/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nls.multstart, version 1.3.0</td>
+      <td>Padfield and Matheson, 2023a; Padfield and Matheson, 2023b</td>
+      <td>https://github.com/padpadpadpad/nls.multstart</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
 List of primers: see Supplementary file 1.
 
-## Contact for reagent and resource sharing
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the corresponding Author, Anne A. Schmidt (anne.schmidt@pasteur.fr).
 
-## Zebrafish husbandry
+### Zebrafish husbandry
 
 Zebrafish (Danio rerio) of the AB background and transgenic fish carrying the following transgenes Tg(kdrl:ras-mCherry) (Chi et al., 2008); Tg(kdrl:nls-mKate2); Tg(kdrl:Gal4;UAS:RFP); Tg(kdrl:eGFP) (Jin et al., 2005); Tg(CD41:eGFP) (Lin et al., 2005); and the fish lines generated in this study: Tg(kdrl:Gal4;UAS:RFP;4xNR:eGFP-podxl2); Tg(kdrl:mKate2-Podxl2); Tg(kdrl:eGFP-Jam2a); Tg(kdrl:eGFP-Jam3b); Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP); Tg(ArhGEF11CRISPR-Cterdel-/+) were raised and staged as previously described (Kimmel et al., 1995). Adult fish lines were maintained on a 14 hr light/10 hr dark cycle. Embryos were collected and raised at either 28.5 or 24 °C in N-Phenylthiourea (PTU, Sigma-Aldrich, Cat# P7629)/Volvic source water (0.003% final) to prevent pigmentation complemented with 280 µg/L methylene blue (Sigma-Aldrich, Cat# M4159). Embryos used for imaging, extracting mRNA, or for WISH ranged from developmental stages 28-to-60 hpf and larvae used for imaging were of 3–5 dpf, precluding sex determination of the animals. The fish maintenance at the Pasteur Institute follows the regulations of the 2010/63 UE European directives and is supervised by the veterinarian office of Myriam Mattei.
 
-## mRNA extraction and cDNA synthesis
+### mRNA extraction and cDNA synthesis
 
 Total RNA was extracted from whole 48 hpf embryos for cDNA cloning or from pooled trunks at the desired developmental stages (30–32 hpf, 48–50 hpf time windows for qRT-PCR experiments; ~30 individuals per tube). Briefly, embryos were anesthetized using balneation in embryo medium supplemented with tricaine methanesulfonate (MS-222, Sigma-Aldrich Cat# A5040), at a final concentration of 160  µg/ml. RNA was extracted via organic extraction using TRIzol reagent (Invitrogen Cat# 15596026) according to the manufacturer’s guideline. gDNA contaminant was removed using TURBO DNase (Invitrogen Cat# AM2238) treatment according to the manufacturer’s guideline. Total RNA was stored at –80 °C. Reverse transcription of mRNA was performed using SuperScriptIV (Invitrogen Cat# 18090010) with OligodT primer. cDNA samples were stored at –20 °C until further processing (for quantitative real-time PCR, PCR, cloning and sequencing).
 
-## Transient and stable transgenesis
+### Transient and stable transgenesis
 
 The kdrl promoter (flk) (Jin et al., 2005) was used to drive endothelial expression of mKate2-podxl2, eGFP-Jam2a and eGFP-Jam3b, with eGFP (Clontech) and mKate2 (Evrogen) cDNAs amplified using overlapping primers for Gibson cloning. eGFP-podxl2, ArhGEF11(PDZ-PRD-RGS-eGFP) and dt-runx1-eGFP were amplified for cloning into a pG1-4XNR vector (built from the 4XNR (non-repetitive) 4 X UAS sequence less susceptible to methylation than the 14 X UAS described in Akitake et al., 2011). For the sequence of all the designed cloning primers, see the Key Resources Table.
 
@@ -220,23 +752,23 @@ For the construct designed to obtain the Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP
 
 For all constructs, cloning reactions were used to transform NEB 5-alpha Competent E. coli (NEB, Cat # C2987) and resistant clones then used for miniprep plasmid preparations (Nucleospin plasmid, Macherey-Nagel, Cat # 740588.50), followed by sequencing. Plasmid DNA from clones containing correct insertions where then used to transform E. coli TOP10 competent cells (Invitrogen, Cat # C404010) and purified using the endotoxin free NucleoBond Xtra Midi kit (Macherey Nagel, Cat# 740420.10). Transgenesis was then performed by co-injecting 1 nl of plasmid (at 25 ng/µl) mixed with tol2 transposase mRNA (at 25 ng/µl) transcribed from linearized pCS-zT2TP plasmid using the mMESSAGE mMACHINE SP6 kit (Ambion, Cat# AM1340). For stable transgenesis, embryos were screened for fluorescence between 24 hpf and 48 hpf and raised to adulthood. Founders with germline integration were then isolated by screening for fluorescence after outcrossing with AB adults and for establishment of the F1 generation.
 
-## CRISPR methodology and GEF11 mutant transgenic line screening
+### CRISPR methodology and GEF11 mutant transgenic line screening
 
-## CRISPR/Cas9 mutagenesis and isolation of founders
+#### CRISPR/Cas9 mutagenesis and isolation of founders
 
 A sgRNA was designed against the splice donor site at the end of exon 38 with the aim to interfere with the production of the splicing variant including its encoding sequence, using the CRISPRscan web tool (Moreno-Mateos et al., 2015). The sgRNA was obtained by annealing for 5 min at 95 °C equal volumes of 100 µM specific Alt-R crRNAs (IDT, Cat# sequence: AGCCAATCGTCTGAGGACGG) with 100 µM Alt-R generic tracrRNA (IDT, Cat# 1072532). Cas9 Nuclease Reaction Buffer (NEB Cat# B0386A) was added to obtain a final 45 µM sgRNA stock solution. For the generation of the sgRNAs–Cas9 complex, a mix containing 18 µM sgRNA and 12 µM Cas9 protein (EnGen Spy Cas9-NLS S. pyogenes, NEB Cat# M0646T) was incubated for 10 min at room temperature. For mutagenesis, 1 nl of the sgRNA-Cas9 complex was injected into one-cell stage embryos, that were subsequently raised until 48 hpf. Bulk genomic DNA (gDNA) was extracted from 60 injected and 60 non-injected control embryos. gDNA extraction proceeded as follows: pooled samples were incubated for 3 hr at 55 °C in lysis buffer (100 mM NaCl, 20 mM Tris-HCl pH 8, 25 mM EDTA, 0.5% SDS and 2 μg/μl proteinase K), purified using phenol:chloroform. Precipitation was done in 0.1 volume of 3 M NaAc and 2.5 volume of 100% ethanol for 20 min at –20 °C. Samples were centrifuged for 30 min at 4 °C before washing with 70% ethanol and resuspension in water. gDNA was used for PCR, using DNA polymerase Platinum SuperFi (Invitrogen Cat# 12351010) and the SM31-SM32bis couple of primers (TTTCACTTTCTCTCTGCCTCTTACA; AACTCTGTCCAGATGATTGAGGAGC) flanking the targeted region. PCR products were run on gel electrophoresis before gel extraction of bands of interest (with sizes corresponding to either a wild-type allele or a deleted allele) (Nucleospin gel and PCR clean-up, Macherey-Nagel Cat# 740609.50). Fragments were cloned into blunt-end TOPO vector (Invitrogen Cat# 45024), transformed into E. coli TOP10 competent cells and grown on selective medium. Twelve colonies for each PCR product were sent for sequencing. Mutant sequences contained either a 7 nucleotides deletion, or a mix of 1, 4 or 7 nucleotides deletions located at the same site (at the end of exon 38, see Figure 7—figure supplement 4A for the 7 nucleotides deletion), attesting of the proper functioning of our guide.
 
 A stable homogeneous mutant line was generated by injecting the sgRNA:Cas9 complex into one-cell stage Tg(kdrl:Gal4;UAS:RFP) embryos similarly to what was described above. A total of 100 embryos were raised until adulthood. Adult founders were identified by crossing adult F0 with AB fishes, and single embryo genotyping was performed on their progeny (10 embryos per adult fish). Briefly, single embryos were incubated in 40 µl 25 mM NaOH 0.2 mM EDTA and heated for 10 min at 95 °C, before cooling for 10 min at 4 °C and addition of 40 µl 40 mM Tris-HCl pH5 to stop the reaction. PCR was performed using 5 µl of template and specific primers (couple SM31-SM34 –TTTCACTTTCTCTCTGCCTCTTACA; ATAAATGAAGCCCCACCTCCGTCC – for wild-type (WT) allele and couple SM31-SM40 – TTTCACTTTCTCTCTGCCTCTTACA; ATGAAGCCCCACCTCAGACGATTGGC– for mutant allele). Presence of WT or mutant allele for each single embryo was assessed by the presence/absence of amplification band on gel electrophoresis. Four F0 founders were isolated, that had a transmission rate in the germline ranging from 20% to 80%. Progeny of the F0 founders and subsequent generations were raised separately until adulthood, and genotyped. After complete anesthesia (in fish water supplemented with 160 µg/ml tricaine methanesulfonate), a small tissue sample was collected from the caudal fin, placed into DNA extraction buffer (10 mM Tris pH8.2, 10 mM EDTA, 200mMNaCl, 0.5% SDS, 200 µg/ml proteinase K) and incubated 3 hrs at 50 °C. DNA precipitation and resuspension was performed as described above. Seven µL gDNA was used as template for PCR amplification using the primer couple SM31-SM32bis. Sequenced PCR products showed that all founders harbored the same 7 nucleotides deletion (see Figure 7—figure supplement 4A). All experiments relative to Figure 7 and Figure 8 were performed using the progenies of one heterozygous mutant F3 couple. For these experiments, genotyping on single embryos was performed on gDNA as mentioned above. Only WT homozygous and mutant homozygous embryos were kept for analysis.
 
-## Alternative Cpf1 approach
+#### Alternative Cpf1 approach
 
 As an alternative approach to the CRISPR/Cas9 deletion, we attempted to generate a second mutant line, using to CRISPR/Cpf1(Cas12a) system to delete a 315 nucleotides region encompassing exon 38 (with specific guides located in the introns before and after exon 38). The sequence of guides that have been tested are: TATCACACACACATCACCTTCTA and TTTCTCAGCGCTCCTGACAGATG. However, due to the structure of the intronic regions (repeat rich) and the necessary presence of specific PAM sequence, we only generated off-target deletions of intronic regions, without deletions of exon 38, leading us to focus on the CRISPR/Cas9 approach.
 
-## Morpholinos and injections
+### Morpholinos and injections
 
 Morpholinos were obtained from GeneTools (see Key Resources Table for sequences). The sih Tnnt2 translation start codon and flanking 5-prime sequence MO (Sehnert et al., 2002) as well as the ArhGEF11 exon 38 splice blocking MO (overlapping the exon 38/intron 38–39 boundary) were resuspended in ddH2O to obtain stock solutions at 2 mM and 1 mM, respectively. The sih MO (1.5 ng) and ArhGEF11 exon 38 MO (3 ng) were injected into one-cell stage zebrafish embryos, after dilution in ddH2O. For sih morphants, embryos that were used in the experiments were checked for absence of heart beating 24 hr after injection as well as before being used for dissection and RNA extractions at the 30–32 and 48–50 hpf time-windows. For measuring the efficiency of the ArhGEF11 exon 38 MO, total RNA was extracted from pools of injected and control embryos followed by mRNA reverse transcription. PCR on cDNA flanking the exon 38 was performed using DNA polymerase Platinum SuperFi (Invitrogen Cat# 12351010) and analyzed on gel electrophoresis before extraction, cloning and sequencing to verify the absence of the DNA sequence encoded by exon 38 (see Figure 7—figure supplement 4A).
 
-## Whole mount single molecule fluorescent in situ hybridization (RNAscope)
+### Whole mount single molecule fluorescent in situ hybridization (RNAscope)
 
 Forty-eight hpf Tg(kdrl:eGFP) and Tg(kdrl:Gal4;UAS:RFP;4xNR:dt-Runx1-eGFP) embryos were fixed in 4% formaldehyde (Electron Microscopy Sciences, Cat#15712) diluted in PBS/0.1% tween20 (PBST) for 2.5 hr at room temperature, rinsed with PBST and kept in 100% methanol at –20 °C until use. On the day of the experiment, embryos were rehydrated upon sequential incubations in 75%/50%/25% MeOH/ddH20 (each for 10 min at room temperature (RT)). Embryos were then incubated for 10 min in PBST. In subsequent steps of the RNAscope procedure, the Multiplex Fluorescent Reagent Kit v2 was used (Cat# 323100), that included H2O2; probe diluent (PD); wash buffer (WB); AMP1, AMP2, AMP3 buffers; HRP-C1, HRP-C2, HRP-C3 reagents; TSA buffer; HRP blocker. All incubations were performed in Eppendorf tubes, with a maximum of 20 embryos/tube, in a dry heating block. Embryos were then incubated with H2O2 for 10 min at RT, washed for 15 min in PBST at RT, incubated for 7 min at 37 °C with proteinase K in PBST (1/2000 from a glycerol stock at 20 mg/ml, Ambion, Cat#10259184), washed in PBST for 2x10 min at RT, and incubated for at least 2 hr at 40 °C in PD. Embryos were then incubated overnight at 40 °C with the Pard3aa-C2, Pard3ab-C3, Pard2ba-C2 RNAscope probes.
 
@@ -244,37 +776,37 @@ Next morning, embryos were washed for 2x10 min in WB. From that step on, extreme
 
 Images need to be analyzed with 3D-rendering (for example, with Imaris) to ensure the localization of RNAscope spots in a given cells.
 
-## Whole mount chromogenic in situ hybridization
+### Whole mount chromogenic in situ hybridization
 
 For the sequence of all the primers used to amplify probes (relative to PDZ-RhoGEFs, Figure 7—figure supplement 2), see the Key Resources Table. Whole-mount chromogenic in situ hybridization was performed as described in Lancino et al., 2018. Probes were synthetized using the manufacturer recommendation (T7 RNA polymerase, Promega, Cat# P2075, DIG-nucleotides, Jena Bioscence, Cat# NU-803-DIGX).
 
 Images were captured with the Zeiss Axio ZOOM V16 microscope with the Zen Pro2 software, with a brightfield transmitted light optics. Post-processing steps were performed using the Extended-Depth Focus method to combine in focus regions from multiple z-planes and convert into in a transmitted light z-stack to generate a unique in-focus image.
 
-## Immunofluorescence detection of the HA-tagged dt-runx1 deletion mutant
+### Immunofluorescence detection of the HA-tagged dt-runx1 deletion mutant
 
 Whole mount immunostaining was performed on hand-dechorionated 48 hpf Tg(dt-runx1) embryos to assess the localization of the 2XHA-tagged dt-runx1 protein in aortic cells. Briefly, embryos were fixed in 4% methanol free PFA (Polysciences Cat# 040181) for 3 hr at room temperature (RT) and washed in PBS/0.1% tween20 (PBT). Embryos were treated in successive baths of milliQ water supplemented with 0.1% tween20, then in cold acetone for 10 min at –20 °C and again in milliQ water plus 0.1% tween20. They were then washed in 1 X HBSS (Invitrogen Cat# 14025), and permeabilized for 45 min at RT in 1 X HBSS, 0.1% tween20, 5 mM CaCl2 and 0.1 mg/ml collagenase (Sigma-Aldrich Cat# C9891). Embryos were then rinsed in PBSDT and incubated in blocking solution 1×sheep serum (SS, Sigma Cat# S2263) for at least 4  hr at RT. They were then incubated overnight at 4 °C with primary antibodies in blocking solution: rabbit anti-GFP (MBL Cat# 598; 1/300) and mouse anti-HA (Sigma, Cat# 12ca5; 1/50). On the next day, embryos were washed several times in PBSDT and endogenous peroxidase activity was inactivated by treatment with 6%H2O2 (Sigma-Aldrich, Cat# H1009) for 1 hr at 4 °C. Embryos were then incubated in the NGS for at least 4  hrs and incubated overnight at 4 °C with secondary antibodies: goat anti-rabbit Alexa Fluor 488 (Invitrogen Cat# A11070; 1/400) and goat anti-mouse HRP-conjugated (Thermo Fisher Scientific Cat# G-21040; 1/300). Finally, embryos were rinsed several times first in PBSDT and after in PBT before HRP fluorescent revelation. Embryos were incubated for 45 min at RT in the dark in imidazole buffer (0.1  M imidazole (Sigma-Aldrich, Cat# I5513) in PBT supplemented with 1% H2O2) with Cy3 Tyramide Reagent (Cy3 NHS sigma Cat# PA13101, tyramide sigma Cat# T-2879, dimethyl formamide sigma Cat# T-8654 and triethylamine sigma Cat# T-0886). Final washes in PBT and in 6% H2O2 for POD inactivation were performed before embryos were mounted in low-melting agarose in 1 X PBT for fluorescence confocal imaging.
 
-## Quantitative real-time PCR gene expression analysis
+### Quantitative real-time PCR gene expression analysis
 
-## Preparation of samples
+#### Preparation of samples
 
 In a first line of experiments, expression of pard3 family genes by qRT-PCR as well as of some hematopoietic markers myb and runx1 was evaluated in our tissue of interest at 48–50hpf. Total RNA was obtained from FACS sorted vascular cells of control embryo using an incross of Tg(Kdrl:gal4;UAS:RFP) as well as non-vascular cells (as described below). Cells were collected from either whole embryos or from dissected trunks. Subsequently, to determine the impact of runx1 interference on pard3 family genes, total RNA was obtained from dissected trunk regions of 48-50hpf embryos from either incross of control Tg(Kdrl:gal4;UAS:RFP) or mutant Tg(Kdrl:dt-runx1-eGFP) fish lines. Analyses were carried on three biological replicates.
 
-## Cell dissociation and fluorescent activated cell sorting
+#### Cell dissociation and fluorescent activated cell sorting
 
 Single-cell suspension for FACS sorting was prepared using an optimized protocol adapted from multiple sources (Manoli and Driever, 2012; Samsa et al., 2016; Bresciani et al., 2018). All steps were performed with cooled solutions (4 °C), and samples were kept on ice throughout the processing to preserve the viability of the cells. Briefly, embryos were anesthetized using balneation in embryo medium supplemented with tricaine methanesulfonate (MS-222, Sigma-Aldrich Cat# A5040), at a final concentration of 640  µg/ml. Embryos were placed into a petri dish, rinsed in PBS supplemented with tricaine, and a majority of the medium was removed to prevent movement. Embryos were cut using a needle, and were then pooled in tubes and placed on ice until cell dissociation. Embryos trunks or whole embryos (around 120 or 60 respectively) were washed twice in PBS before centrifugation (300 x g for 1 min at 4 °C) and the supernatant was discarded. Embryos were incubated in 1 ml TrypLE medium (Life Technologies Cat# 12605–010) for 10 min on ice, with gentle pipetting every 3 mins, first with a P1000 pipette and subsequently with a P200 pipette. Samples were then centrifugated for 7 min at 300 g to remove the TrypLE and the cells were resuspended in 500 µl FACSmax medium (Genlantis Cat# T200100). Ultimately, samples were passed through a 40 μm cell strainer moistened with FACSmax buffer onto a 35 mm cell culture dish using a syringe plunger. The cell strainer and the dish were washed with 300 µl of FACS max and the flow-through was transferred to a FACS tube and kept on ice until sorting.
 
 Cell sorting was performed on a BD FACS AriaIII cell sorter. For all samples, gating was done on SSC-A vs. FSC-A to collect cells, and then on FSC-A vs. FSC-H to keep only single cells. For control embryos, RFP positive cells as well as RFP negative cells were collected. For dt-runx1 expressing mutant, all GFP positive cells (both RFP positive and RFP negatives) were collected, as well as RFP single positives cells (not used for qPCR) and double negative cells as internal controls. FASC sorted RFP single positives cells from dt-runx1 expressing mutants were not used as control for the study of gene expression for 2 reasons. First, due to the mosaicism of the line, very few cells were RFP single positive compared to the GFP positive cells. Second, RFP single-positive cells from dt-runx1 mutant embryos would have been indirectly exposed to runx1 interference (they would have been potentially in direct contact with their neighboring endothelial cells that express the dt-runx1 mutant) and thus would not be a true no interference condition.
 
-## RNA extraction from FACS-sorted cells
+#### RNA extraction from FACS-sorted cells
 
 Total RNA was extracted from sorted cell fractions using the RNeasy Qiagen kit (Qiagen, Cat # 74104). Briefly, cells were sorted directly into 100 µl lysis buffer, and RNA extraction was done immediately according to the manufacturer’s instructions. RNA was eluted twice with 15 µl RNA free H2O. Reverse transcription of mRNA was performed using SuperScriptIV (Invitrogen Cat# 18090010) with OligodT primer. cDNA samples were stored at –20 °C until further processing (for quantitative real-time PCR).
 
-## Real-time qPCR
+#### Real-time qPCR
 
 For the sequence of all the designed qRT-PCR primers, see the Key Resources Table. Primer couples were individually tested to assess their specificity as well as their efficiency. qRT-PCR was performed using Takyon Rox SYBR 2 x Master mix blue dTTP kit (Eurogentec Cat# UF-RSMT-B0701), with starting concentrations of template of around 10 ng/µl and primer concentrations of 0.5 µM, on a QuantStudio3 system (Applied Biosystems). Each reaction was performed in technical triplicates and in three biological replicates. Ct was determined automatically by the QUANTSTUDIO DESIGN & ANALYSIS 2 software on the Thermofisher cloud and exported to be analyzed manually. Standard deviation was calculated within the technical triplicates, and when superior to 0.3, obvious outliers were removed (Dixon’s Q test). The delta-delta-Ct method (double normalization to endogenous control — zebrafish elongation factor ef1α — and to control sample) was used to compare gene expression in control and altered conditions. The delta-Ct method (normalization to endogenous control ef1 α) was used to investigate expression of genes of interest in whole embryo and trunk vascular cells versus non-vascular cells.
 
-## In vivo confocal imaging
+### In vivo confocal imaging
 
 Embryos, dechorionated manually, were anesthetized using tricaine (Sigma Aldrich, Cat# A5040). They were then embedded on the side position in 1% low melting agarose (Promega, Cat# V2111) in a glass bottom 60μ-Dish (35 mm high; Ibidi, Cat# 81156). To avoid movements and pigmentation during image acquisitions, 1 x tricaine /1 x PTU Volvic water was incorporated to the low melting agarose and, after solidification, 1 ml of 1 x tricaine /1 x PTU Volvic water was added before sealing the dish.
 
@@ -284,11 +816,11 @@ For all the other confocal microscopy results, embryos were imaged using an Ando
 
 RNAscope is situ hybridization were imaged similarly to live sample, using a spinning disk confocal microscope (see in vivo confocal imaging paragraph above) after embedding the embryos in 1% low-melting agarose (Promega, Cat# V2111) in PBS 1 X in a glass bottom 60μ-Dish (35 mm high; Ibidi, Cat# 81156).
 
-## Morphological and morphometric analysis of aortic and hemogenic cells
+### Morphological and morphometric analysis of aortic and hemogenic cells
 
 For the morphometric analysis of the aorta and aortic cells, large z-stack of 48–55 hpf Tg(kdrl:eGFP-JAM3b; kdrl:nls-mKate2) or Tg(kdrl:eGFP-JAM2a; kdrl:nls-mKate2) encompassing the whole aortic depth were acquired with optimal z-resolution (0.3 µm z-step). For each embryo, three contiguous z-stacks of 330 µm width were acquired, allowing us to image the entirety of the AGM region, from the anterior to the posterior end of the elongated yolk.
 
-## Samples
+#### Samples
 
 For ArhGEF11 splicing morpholino experiment, three splicing morpholino injected embryos and two control non-injected siblings were kept for the analysis.
 
@@ -296,7 +828,7 @@ For ArhGEF11 CRISPR Cter deletion and when performing the experiments, imaging w
 
 For CRISPR mutant phenotype analyses, 2 mutant embryos and 2 wild type siblings were kept, after genotyping.
 
-## Image analysis
+#### Image analysis
 
 The following image analysis was performed on Icy software.
 
@@ -308,15 +840,15 @@ Each 2D-cartography was then manually pre-segmented using the ROI Polygon tool t
 
 Additionally, cells were manually classified into cell types according to morphometric parameters using as reference the original 3D z-stack and in particular the nls-mKate2 nuclear signal. EHT-undergoing cells were positioned on the floor of the aorta, have reduce antero-posterior axis length, luminal membrane inward bending for EHT pol+ cells and luminal membrane outward bending for EHT pol- cells, and a thickened nucleus. Hemogenic cells whose criteria were established in Lancino et al., 2018 (elongated in the antero-posterior axis, with lateral membranes not trespassing the equatorial plane of the aortic wall), are positioned on the floor of the aorta, systematically have a reduced width perpendicular to the blood flow and, importantly, a thickened nucleus that protrudes out of the aortic plane. Finally, endothelial cells have a flattened nucleus positioned high on the lateral side or on the roof of the aorta.
 
-## Measurement of the aortic perimeter
+### Measurement of the aortic perimeter
 
 An accurate measurement of the aortic perimeter was obtained using the z-stack generated for the aortic cells’ morphometric analysis. Briefly, the z-stack was rotated to face the lumen of the aorta and a ROI fitting the aortic perimeter was drawn by the user and optimized by the ‘Cell Contour’ plugin. The length of the perimeter was then extracted from the ROI statistics.
 
-## Fluorescence recovery after photobleaching (FRAP) measurements and analysis
+### Fluorescence recovery after photobleaching (FRAP) measurements and analysis
 
 Measurement of junctional turn-over was performed on 48–55 hpf Tg(kdrl:eGFP-JAM3b; kdrl:nls-mKate2) embryos using a Nikon Ti2e spinning disk microscope equipped with a sCMOS camera (Photometrics, Prime 95B, pixel size 11 µm, 1,200×1,200 pixels, QE 95%) and a 40 x water objective (Numerical Aperture 1.15, Working Distance 0.6 mm, xy pixel size of 0.27 µm). Embryos were mounted as previously described.
 
-## Samples
+#### Samples
 
 For ArhGEF11 splicing morpholino phenotypic analysis, 10 different embryos (injected with the splicing morpholino) obtained from 3 separate experiments and 30 control embryos (non-injected siblings or control morpholino injected siblings) obtained from 6 separate experiments were analyzed.
 
@@ -326,13 +858,13 @@ For ArhGEF11 CRISPR/Cas9 Cter deletion phenotypic analysis, 8 mutant embryos and
 
 Overall, the exact number of interfaces analyzed is written on each figure panel.
 
-## Acquisitions
+#### Acquisitions
 
 For each acquisition, a wide two channels z-stack of the aorta was generated to capture the whole aortic volume and generate a 2D-cartography of the aortic environment (Icy, plugin Tubeskinner). This 2D-cartography of the cellular contours and the z-stack with the cellular contours and nuclei were used jointly to identify un-ambiguously cellular and junctional types and define one or multiple single point regions of interest (ROIs) for subsequent bleaching and fluorescence recovery measurement.
 
 The sequence of acquisitions before/after bleach focused only on the eGFP-Jam3b signal to speed up the acquisition and improve the temporal resolution. The 5 steps of the acquisition can be recapitulated as follows and we obtained/performed: (1) a single z-stack of 20 µm centered on the plane of focus, (2) a 30 s time-lapse acquisition on the plane of focus to measure average pre-bleach intensity with an image every second, (3) a high-intensity stimulation of the ROIs (25% 300ms 488 FRAP laser exposure, leading to the bleaching of the Jam3b-eGFP signal), (4) a 3 min time-lapse acquisition on the plane of focus to measure fast post-bleach recovery with an image every second, and (5) a 7-min time lapse acquisition of 8 µm z-stack centered around focus plane with a 20 s time interval to measure slow post-bleach recovery. Each step was saved separately as.nd2 files.
 
-## Signal quantification and recovery analysis
+#### Signal quantification and recovery analysis
 
 File were converted from.nd2 to.tiff using FIJI batch converter, scale factor 1.00, bilinear interpolation, no average when downsizing, images read using bioformat.
 
@@ -344,42 +876,50 @@ All further analysis were performed using R for automatization.
 
 Briefly, for each ROI: the fluorescent signal was normalized to the background signal (Ibackground normalized = Iroi – Ibackground) then normalized to mean intensity pre-bleach (Inormalized = Ibackground normalized ROI post-bleach / Ibackground normalized ROI pre-bleach), and finally scaled Ifull scaled normalized = (Inormalized – min (Inormalized))/ (1– min (Inormalized)).
 
-A single exponential equation was used to fit the data using the nls:multistart package for parameter optimization:F(t)=A∗(1−e−t∗τ)
+A single exponential equation was used to fit the data using the nls:multistart package for parameter optimization:
+
+$$
+F(t)=A∗(1−e^{−t∗\tau})
+$$
 
 With A the maximum amplitude of the curve, t the time, and τ a constant defining the growth rate of the curve.
 
-The fitted curve allowed to extract quantitative information describing the recovery of each type of junction in different conditions: the mobile fraction of the bleached pool (corresponding to A, the amplitude of recovery) and the time of half recovery, related to the speed of recovery, that can be extracted from τ:Thalf−recovery=ln⁡(0.5)/(−τ)
+The fitted curve allowed to extract quantitative information describing the recovery of each type of junction in different conditions: the mobile fraction of the bleached pool (corresponding to A, the amplitude of recovery) and the time of half recovery, related to the speed of recovery, that can be extracted from τ:
+
+$$
+T_{half−recovery}=ln⁡(0.5)/(−\tau)
+$$
 
 A more precise description of the recovery speed was extracted from the observation of the early time period (until 30 s post bleach), were the fluorescence intensity increases uniformly. A first-degree polynomial equation was fitted to the data (using lm function from the stats package), and the coefficient corresponding to the slope of the fitted curve was used as a metric for speed of fluorescence recovery.
 
-## RNAscope image analysis
+### RNAscope image analysis
 
-## Myb
+#### Myb
 
 Phenotypic analysis of the impact of the dt-runx1 mutant on hematopoiesis was evaluated by investigating the in situ expression of myb, using the single-molecule in situ hybridization RNA-scope method, performed in control Tg(Kdrl:eGFP) and dt-runx1 mutant embryos Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) (analysis was performed on four and three biological replicates (embryos) for control and mutants respectively). For each embryo, two consecutive aortic segments were analyzed (each spanning over 5–6 intersegmentary vessels). It is roughly equivalent to the length to three consecutive aortic segments that we use for our live analysis each spanning over 3–4 intersegmentary vessel. Discrepancies between live and fixed samples are probably due to the morphological alterations caused by the fixation and permeabilization steps of the RNAscope protocol. 3D-rendering of the aorta and the sub-aortic space were generated using the Imaris Software (Oxford Instruments, version 10.1.0). Both cell volume (GFP signal) and RNAscope spots were simultaneously and automatically segmented using the “Cells” tool from Imaris, that segment individual cells (generates an outer surface) as well as RNA-scope signal within cells. Cells were subsequently manually classified, based on their localization and the shape of the cell. Roof endothelial cells are located dorsally to the aortic floor, and are flat and elongated. Due to morphological alteration of the tissues and the impossibility to discriminate EHT pol-, EHT pol+ cells and the uncharacterized hemogenic cells we observed in vivo, our hemogenic / EHT cells category comprises both characterized hemogenic cells (elongated cells with thick nuclei, located on the aortic floor), uncharacterized hemogenic cells and putative EHT-undergoing cells. Sub-aortic cells were classified based on their localization, and they comprise a mix of endothelial cells from the underlying posterior cardinal vein (visible only in the control embryos and not in the dt-runx1 mutant embryos, in which arterial structures are more specifically labeled compared to veinous structures) as well as newly generated hematopoietic cells. Finally, the ‘Statistics’ tool from Imaris allowed us to extract cell and RNA spots count information. The data plotting and statistical analysis was performed using R software.
 
-## Pard3
+#### Pard3
 
 Pard3 mRNAs (encoding for Pard3ba, Pard3ab, Pard3aa) in situ expression analysis was done similarly to that of myb, except that a second RNAscope signal segmentation was performed independently of the ‘Cells’ segmentation, using the ‘spots’ tool. This allowed to capture the majority of the Pard3 signal, that is expressed in aortic cells, but with a discrepancy in the intra-cellular localization of RNA transcript, that could not be detected when restricting the segmentation of RNAscope spots to spots located inside the GFP signal. After RNAscope segmentation using the ‘Spots’ tool, manual curation allowed us to select specifically RNAscope spots located in aortic tissues for subsequent analysis. The ‘Statistics’ and ‘object-object Statistics’ tools were used to extract relevant spatial and count information for subsequent analysis. A key information that we used for the spatial analysis was the average distance of Pard3ba spots to Hemogenic / EHT cells, as well as the cumulative number of spots within a distance from Hemogenic / EHT cells, to investigation spatial correlation between Hemogenic / EHT cells and Pard3ba expression. Analysis was performed in control Tg(Kdrl:eGFP) and dt-runx1 mutant embryos Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) (5 and 6 biological replicates (embryos) for control and mutants respectively, with 2 consecutive aortic segments analyzed per embryo).
 
-## Dt-runx1 phenotype analysis – cell count
+### Dt-runx1 phenotype analysis – cell count
 
 For the live dt-runx1 phenotype analysis, large z-stack of 48–55 hpf dt-runx1 expressing mutant (eGFP positive) and siblings control (eGFP negative) Tg(Kdrl:Gal4;UAS:RFP;4xNR:dt-runx1-eGFP) embryos, encompassing the whole aortic depth were acquired with optimal z-resolution (0.3 µm z-step). Three and seven biological replicates (embryos) for control and mutants were analyzed, respectively. For each embryo, three contiguous z-stacks of 330 µm width were acquired, allowing us to image the entirety of the AGM region. The resulting phenotype was assessed by manually counting EHT pol+and pol- cells (taking into account their position, ventral or lateral) as well as hemogenic cells. Classification was done manually, based on morphological criterias. EHT pol+ cells presented the typical EHT pol+ morphology, with clear luminal membrane invagination, that could be observed even in laterally emerging cells. EHT pol- cells displayed a clear rounded ovoid, with a clear shortening of the antero-posterior axis. Hemogenic cells correspond to endothelial cells located on the aortic floor, that are elongated along the antero-posterior axis, have a narrowed left-right axis and a thickened nucleus. Non characterized hemogenic cells were also included in this category: they correspond to cells that had potentially already advanced in the emerging process but whose morphology did not fit any of the typical EHT pol- and pol+ characteristics (no clear invagination nor clear concave protrusion in the aortic lumen).
 
-## Thymus phenotype analysis
+#### Thymus phenotype analysis
 
 To question one aspect of the hematopoietic phenotype of our dt-runx1 mutant, dt-runx1 expressing mutants (GFP +RFP-) as well as control siblings (RFP +GFP-) were imaged at 5dpf to analyze their developing thymus in vivo (analysis was performed on five mutant and five control larvae). Subsequent image analysis was performed using the Imaris software (Oxford Instruments). Individual thymic cells were automatically segmented using the ‘Surface’ tool. Cell count per thymus as well as morphometric information for each cell (volume) was automatically retrieve using the Imaris ‘Statistics’ tool, allowing us to compare the distribution of cell volume in mutant versus control embryos, as well as the total cellular volume of the thymus (sum of individual cell volumes) for each larva.
 
-## Impact of ArhGEF11 exon 38 splicing morpholino on hematopoiesis
+### Impact of ArhGEF11 exon 38 splicing morpholino on hematopoiesis
 
 After morpholino injection at the one cell stage, double transgenic Tg(CD41:eGFP; kdrl:nls-mKate2) embryos were raised until 48hpf and imaged using spinning disk confocal microscopy. The integrality of the dorsal aorta was imaged (corresponding to 3 contiguous segments), on 8 and 6 biological replicates (embryos) for controls and morphants respectively. Quantification of the number of hemogenic cells (double CD41:eGFP and kdrl:nls-mKate2 positive cells) as well as of hematopoietic cells (simple positive CD41:eGFP and kdrl:nls-mKate2 negative cells) was performed using a in house Fiji/R script. For the segmentation, only the eGFP channel is handled. An issue with the Tg(CD41:eGFP) background is the presence of circulating thrombocytes, that move faster than the speed of acquisition and thus generate multiple artefactual 2D objects (only presents in single Z-planes, compared to non-moving cells whose depth spans over 15–20 z-sections). These artefactual objects are removed during the pre-processing steps, by using a Faster Temporal Median algorithm (Jabermoradi et al., 2022). This algorithm, by calculating median value over rolling windows of 20 frames approximate cell depth and substracting it to the pixel values, removes the 2D outliers. The rest of the pre-processing steps consists of fluorescent signal filters to ease the subsequent segmentation (contrast enhancement, background substraction, 3D gaussian blur). The cells are segmented using a TopHat algorithm and touching objects are separated using a 3D distance Watershed (Legland et al., 2016). Once the objects are segmented, the total fluorescence intensity in both channels as well as the background fluorescence intensities are collected using the raw images (without any signal filters). The data are subsequently processed using R for plotting, threshold selection for classification as well as statistical comparisons.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests used are described for each figure panel in the legend. Since our samples are usually small, the test used is an unpaired two samples non-parametrical Wilcoxon mean comparison test, without a priori knowledge on sample distribution or homoscedasticity. In the context of FRAP experiments (relative to Figure 6 and Figure 8), for which we had larger sample size, we still decided not to assume that our data were normally distributed, because of the inherent variability of the biological events that are observed. Indeed, the EHT process is heterogeneous in time, with successive phases of contraction and stabilization, during which we can imagine that the dynamics of junctional recycling could vary. The distribution of speed and amplitude of recovery could thus correspond to a normal distribution, a bi- or multi-modal distribution, or a uniform distribution. In this case, the use of non-parametrical tests and the large variability we observed in the data reduces the power of statistical tests and our ability to confidently detect significant differences. In some cases, when our p-values were larger than the arbitrary threshold of 0.05, we refer to tendencies whose significance is legitimated by the overall consistency of the data (see for example between the results presented Figure 7 and Figure 8).
 
 Correlation analysis (relative to Figure 4F) was performed by calculating Pearson correlation coefficient and associated p-value (Student T-test) using R.
 
-## Software availability
+### Software availability
 
 All graphics and plots were generated using RStudio and packages including: ggplot2 (Wickham, 2016), readr (Wickham et al., 2024a), dplyr (Wickham et al., 2023a), stringr (Wickham, 2023a), ggstatsplot (Patil, 2024), ggpubr (Kassambara, 2020), wesanderson (Ram and Wickham, 2018), cowplot (Wilke, 2020), ggsci (Xiao, 2024a), ggbeeswarm (Clarke and Sherrill-Mix, 2023), viridis (Garnier, 2024), DT (Xie et al., 2024), SciViews (Grosjean, 2019), nls.multstart (Padfield and Matheson, 2023a), matrixStats (Bengtsson, 2024b).

@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.02851.001 The leishmaniases are vector-borne diseases that have a broad global distribution throughout much of the Americas, Africa, and Asia. Despite representing a significant public health burden, our understanding of the global distribution of the leishmaniases remains vague, reliant upon expert opinion and limited to poor spatial resolution. A global assessment of the consensus of evidence for leishmaniasis was performed at a sub-national level by aggregating information from a variety of sources. A database of records of cutaneous and visceral leishmaniasis occurrence was compiled from published literature, online reports, strain archives, and GenBank accessions. These, with a suite of biologically relevant environmental covariates, were used in a boosted regression tree modelling framework to generate global environmental risk maps for the leishmaniases. These high-resolution evidence-based maps can help direct future surveillance activities, identify areas to target for disease control and inform future burden estimation efforts. DOI: http://dx.doi.org/10.7554/eLife.02851.001
+The leishmaniases are vector-borne diseases that have a broad global distribution throughout much of the Americas, Africa, and Asia. Despite representing a significant public health burden, our understanding of the global distribution of the leishmaniases remains vague, reliant upon expert opinion and limited to poor spatial resolution. A global assessment of the consensus of evidence for leishmaniasis was performed at a sub-national level by aggregating information from a variety of sources. A database of records of cutaneous and visceral leishmaniasis occurrence was compiled from published literature, online reports, strain archives, and GenBank accessions. These, with a suite of biologically relevant environmental covariates, were used in a boosted regression tree modelling framework to generate global environmental risk maps for the leishmaniases. These high-resolution evidence-based maps can help direct future surveillance activities, identify areas to target for disease control and inform future burden estimation efforts.
 
 ## Introduction
 
@@ -48,71 +48,269 @@ Species distribution models provide a robust means of mapping these diseases at 
 
 ## Results
 
-## Evidence of leishmaniasis
+### Evidence of leishmaniasis
 
-For each province or state across the globe (classed as Admin 1 by the Food and Agriculture Organization's Global Administrative Unit Layers (
+For each province or state across the globe (classed as Admin 1 by the Food and Agriculture Organization's Global Administrative Unit Layers (FAO, 2008), totalling some 3450) evidence was collected regarding CL and VL presence or absence. An assessment of the consensus of this evidence ranging from comprehensive agreement on disease presence (+100%) to consensus of disease absence (−100%) was made. Figures 1A–4A present these evidence consensus maps, with full reasoning for each administrative unit's score outlined in the associated data set (Dryad data set doi: 10.5061/dryad.05f5h). For Brazil, it was possible to perform this analysis at the district level (classed as Admin 2) totalling some 5510 units. In total, 950 Admin 1 units from 84 countries reported a consensus on CL presence greater than indeterminate (a score of 0), with 310 Admin 1 units from 42 countries reporting a complete consensus on the presence of CL. In Brazil, 2469 Admin 2 regions recorded CL cases over the period of investigation. Consensus on the presence of VL (score greater than 0) was reported in 793 Admin 1 units from 77 countries, with 88 Admin 1 units from 32 countries reporting complete consensus on VL. In Brazil, 1320 Admin 2 units recorded VL cases.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig1-v2.jpg)
 
-**Figure 1.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.003
+**Figure 1.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1B.Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.DOI: http://dx.doi.org/10.7554/eLife.02851.004
+**Figure 1—figure supplement 1.:** Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig2-v2.jpg)
 
-**Figure 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.005
+**Figure 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Figure 2B.Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.DOI: http://dx.doi.org/10.7554/eLife.02851.006
+**Figure 2—figure supplement 1.:** Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig3-v2.jpg)
 
-**Figure 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.007
+**Figure 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Figure 3B.Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.DOI: http://dx.doi.org/10.7554/eLife.02851.008
+**Figure 3—figure supplement 1.:** Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.009
+**Figure 3—figure supplement 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.010
+**Figure 3—figure supplement 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of cutaneous leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig4-v2.jpg)
 
-**Figure 4.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.011
+**Figure 4.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Figure 4B.Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.DOI: http://dx.doi.org/10.7554/eLife.02851.012
+**Figure 4—figure supplement 1.:** Uncertainty was calculated as the range of the 95% confidence interval in predicted probability of occurrence for each pixel. Regions of highest uncertainty are in dark brown, with blue representing low uncertainty.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.013
+**Figure 4—figure supplement 2.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).DOI: http://dx.doi.org/10.7554/eLife.02851.014
+**Figure 4—figure supplement 3.:** (A) Evidence consensus for presence of the disease ranging from green (complete consensus on the absence: −100%) to purple (complete consensus on the presence of disease: +100%). The blue spots indicate occurrence points or centroids of occurrences within small polygons. (B) Predicted risk of visceral leishmaniasis from green (low probability of presence) to purple (high probability of presence).
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/02851/elife-02851-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Four scatterplots showing the relationship between non-zero estimated mean annual incidence (Alvar et al., 2012) and estimated population at risk derived from the cartographic approach for (A) New World cutaneous leishmaniasis, (B) New World visceral leishmaniasis, (C) Old World cutaneous leishmaniasis, and (D) Old World visceral leishmaniasis. For each country the bars represent the annual incidence estimate range.DOI: http://dx.doi.org/10.7554/eLife.02851.015
+**Figure 4—figure supplement 4.:** Four scatterplots showing the relationship between non-zero estimated mean annual incidence (Alvar et al., 2012) and estimated population at risk derived from the cartographic approach for (A) New World cutaneous leishmaniasis, (B) New World visceral leishmaniasis, (C) Old World cutaneous leishmaniasis, and (D) Old World visceral leishmaniasis. For each country the bars represent the annual incidence estimate range.
 
 Of the 10 countries (Afghanistan, Colombia, Brazil, Algeria, Peru, Costa Rica, Iran, Syria, Ethiopia, and Sudan) that contribute 75% of the global estimated CL incidence (Alvar et al., 2012), only Algeria did not have regions of complete evidence consensus on presence due to incomplete and non-contemporary case data. Similarly, of the six countries (Brazil, Ethiopia, Sudan, South Sudan, India, and Bangladesh) that report 90% of all VL cases (Alvar et al., 2012), all six had regions of complete consensus on VL.
 
 Figures 1A–4A also show the spatial distribution of occurrence data, defined as one or more reports of leishmaniasis in a given calendar year, collated from a variety of sources. Overall, there is a relatively broad geographic spread and good correspondence with the evidence consensus maps for each disease. Tunisia, Morocco and Brazil report the highest number of unique CL occurrences in any given year, whilst India reported the largest proportion of the VL occurrence data.
 
-Table 1 reports the sources and types of data within the occurrence database. Whilst the majority of occurrence records contain accurate point data (62%), the remainder were recorded at a provincial or district level. Occurrence records for the two diseases were relatively similar in number with a total of 6426 records for CL and 6137 for VL.10.7554/eLife.02851.016Table 1.Origin and spatial resolution of leishmaniasis occurrence dataDOI: http://dx.doi.org/10.7554/eLife.02851.016Origin and resolution of occurrence dataPoint dataProvince level dataDistrict level dataTotalCutaneous leishmaniasis Literature368087912205779 CNR-L5314731609 HealthMap31––31 GenBank6–17 Total424892612526426Visceral leishmaniasis Literature3050150010685618 CNR-L4292429482 HealthMap321–33 GenBank3–14 Total3514152510986137Each cell gives the number of occurrence records added to the data set by considering each additional datasource after removing duplicate records. Occurrence records are separated by spatial resolution—whether they are recorded as points (typically representing settlements) or as province level (admin 1) or district level (admin 2) data.
+Table 1 reports the sources and types of data within the occurrence database. Whilst the majority of occurrence records contain accurate point data (62%), the remainder were recorded at a provincial or district level. Occurrence records for the two diseases were relatively similar in number with a total of 6426 records for CL and 6137 for VL.
 
-## Modelled distribution of the leishmaniases
+**Table 1.**
+ Origin and spatial resolution of leishmaniasis occurrence data
 
-Figures 1B–4B show the global predicted environmental risk maps for CL and VL. Table 2 identifies the top five predictor variables in each of the four modelled regions (since CL and VL were modelled separately in the Old World and New World) as measured by average contribution to the boosted regression trees (BRT) submodels. Peri-urban and urban land cover is an important predictor of the distribution of CL in the Old World and of VL globally. Abiotic factors such as land surface temperature (LST) were better predictors of CL than of VL. In total, LST variables (annual minimum, maximum and mean) explain 21.99% of CL distribution in the Old World and 43.65% of CL distribution in the New World (with maximum LST having the highest relative contribution). Abiotic factors combined (including LST, normalised difference vegetation index (NDVI) and precipitation) accounted for 29.02% and 48.55% of VL distribution in the Old World and New World, respectively. Validation statistics for all models were high with a mean area under the receiver operator curve (AUC) above 0.97 and mean correlations above 0.85 for all models.10.7554/eLife.02851.017Table 2.Mean relative contribution of predictor variables to the ensemble BRT models of CL and VL in both the Old and New WorldDOI: http://dx.doi.org/10.7554/eLife.02851.017Top predictors of CLRelative contributionTop predictors of VLRelative contributionOld world Peri-urban extents47.34Peri-urban extents51.50 Minimum LST18.36Urban extents17.38 Urban extents9.01Maximum NDVI7.87 G-Econ7.33Minimum LST5.87 Minimum Precipitation4.95Maximum Precipitation4.00New World Maximum LST36.91Peri-urban extents25.90 Peri-urban extents18.61Urban extents21.24 Maximum precipitation12.06Mean LST9.18 Minimum precipitation6.21Mean NDVI7.83 Minimum LST4.39Maximum LST6.40LST = Land Surface Temperature, G-Econ = Geographically based Economic data, NDVI = Normalised Difference Vegetation Index.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Origin and resolution of occurrence data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Point data</th>
+      <th>Province level data</th>
+      <th>District level data</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cutaneous leishmaniasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>3680</td>
+      <td>879</td>
+      <td>1220</td>
+      <td>5779</td>
+    </tr>
+    <tr>
+      <td>CNR-L</td>
+      <td>531</td>
+      <td>47</td>
+      <td>31</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <td>HealthMap</td>
+      <td>31</td>
+      <td>–</td>
+      <td>–</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>GenBank</td>
+      <td>6</td>
+      <td>–</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>4248</td>
+      <td>926</td>
+      <td>1252</td>
+      <td>6426</td>
+    </tr>
+    <tr>
+      <td>Visceral leishmaniasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Literature</td>
+      <td>3050</td>
+      <td>1500</td>
+      <td>1068</td>
+      <td>5618</td>
+    </tr>
+    <tr>
+      <td>CNR-L</td>
+      <td>429</td>
+      <td>24</td>
+      <td>29</td>
+      <td>482</td>
+    </tr>
+    <tr>
+      <td>HealthMap</td>
+      <td>32</td>
+      <td>1</td>
+      <td>–</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>GenBank</td>
+      <td>3</td>
+      <td>–</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>3514</td>
+      <td>1525</td>
+      <td>1098</td>
+      <td>6137</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each cell gives the number of occurrence records added to the data set by considering each additional datasource after removing duplicate records. Occurrence records are separated by spatial resolution—whether they are recorded as points (typically representing settlements) or as province level (admin 1) or district level (admin 2) data._
+
+### Modelled distribution of the leishmaniases
+
+Figures 1B–4B show the global predicted environmental risk maps for CL and VL. Table 2 identifies the top five predictor variables in each of the four modelled regions (since CL and VL were modelled separately in the Old World and New World) as measured by average contribution to the boosted regression trees (BRT) submodels. Peri-urban and urban land cover is an important predictor of the distribution of CL in the Old World and of VL globally. Abiotic factors such as land surface temperature (LST) were better predictors of CL than of VL. In total, LST variables (annual minimum, maximum and mean) explain 21.99% of CL distribution in the Old World and 43.65% of CL distribution in the New World (with maximum LST having the highest relative contribution). Abiotic factors combined (including LST, normalised difference vegetation index (NDVI) and precipitation) accounted for 29.02% and 48.55% of VL distribution in the Old World and New World, respectively. Validation statistics for all models were high with a mean area under the receiver operator curve (AUC) above 0.97 and mean correlations above 0.85 for all models.
+
+**Table 2.**
+ Mean relative contribution of predictor variables to the ensemble BRT models of CL and VL in both the Old and New World
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Top predictors of CL</th>
+      <th>Relative contribution</th>
+      <th>Top predictors of VL</th>
+      <th>Relative contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Old world</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peri-urban extents</td>
+      <td>47.34</td>
+      <td>Peri-urban extents</td>
+      <td>51.50</td>
+    </tr>
+    <tr>
+      <td>Minimum LST</td>
+      <td>18.36</td>
+      <td>Urban extents</td>
+      <td>17.38</td>
+    </tr>
+    <tr>
+      <td>Urban extents</td>
+      <td>9.01</td>
+      <td>Maximum NDVI</td>
+      <td>7.87</td>
+    </tr>
+    <tr>
+      <td>G-Econ</td>
+      <td>7.33</td>
+      <td>Minimum LST</td>
+      <td>5.87</td>
+    </tr>
+    <tr>
+      <td>Minimum Precipitation</td>
+      <td>4.95</td>
+      <td>Maximum Precipitation</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>New World</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Maximum LST</td>
+      <td>36.91</td>
+      <td>Peri-urban extents</td>
+      <td>25.90</td>
+    </tr>
+    <tr>
+      <td>Peri-urban extents</td>
+      <td>18.61</td>
+      <td>Urban extents</td>
+      <td>21.24</td>
+    </tr>
+    <tr>
+      <td>Maximum precipitation</td>
+      <td>12.06</td>
+      <td>Mean LST</td>
+      <td>9.18</td>
+    </tr>
+    <tr>
+      <td>Minimum precipitation</td>
+      <td>6.21</td>
+      <td>Mean NDVI</td>
+      <td>7.83</td>
+    </tr>
+    <tr>
+      <td>Minimum LST</td>
+      <td>4.39</td>
+      <td>Maximum LST</td>
+      <td>6.40</td>
+    </tr>
+  </tbody>
+</table>
+
+_LST = Land Surface Temperature, G-Econ = Geographically based Economic data, NDVI = Normalised Difference Vegetation Index._
 
 In the New World, CL is predicted to occur primarily within the Amazon basin and other areas of rainforest. By contrast, VL is predicted to occur mainly along the coastline of Brazil, with sporadic foci across the rest of Southern and Central America. Outside of their main foci, both diseases are strongly associated with urban and peri-urban areas, resulting in a focal distribution throughout much of the New World.
 
@@ -144,7 +342,7 @@ Previous estimates of the leishmaniases' global burden have been complicated by 
 
 It should be noted that non-environmental drivers of transmission and morbidity, such as HIV immunosuppression and risk of infection via blood transfusions and intravenous drug usage, are not incorporated into our present models. The maps presented here can help inform the wider discussion of these factors and their impact on leishmaniasis (e.g., by identifying regions with greater risk for HIV and leishmaniasis co-infection) (Desjeux and Alvar, 2003). Similarly, the niche based models used here could enable a decoupling of environmental from social factors to assess the importance of the latter on leishmaniasis transmission in particular areas. It may indeed be the case that in some specific localities it is these non-environmental risk factors that are the main determinants of disease distribution.
 
-## Conclusions
+### Conclusions
 
 These maps represent evidence-based estimates of the current global distribution of the leishmaniases incorporating a comprehensive occurrence database and a rigorous statistical modelling framework with associated uncertainty statistics. We estimate that 1.71 billion and 1.69 billion individuals live in areas that are suitable for CL and VL transmission, respectively. These figures highlight the need for much greater awareness of this disease at a global scale. These maps provide an important baseline assessment and a strong foundation on which to base future burden estimates, target regions for control efforts and inform public health decisions.
 
@@ -152,33 +350,33 @@ These maps represent evidence-based estimates of the current global distribution
 
 A boosted regression tree (BRT) modelling framework was used to generate global predicted environmental risk maps for CL and VL. This framework required four key information components: (i) a map of the consensus of evidence for the global extents of the leishmaniases; (ii) a comprehensive data set of geopositioned CL and VL occurrence records; (iii) a suite of global, gridded data sets on environmental correlates of the leishmaniases; and (iv) pseudo-data to augment the occurrence records. In order to better capture the realised niche of these diseases, prediction by the model is restricted to those areas of known disease transmission, or where transmission is uncertain, as defined by the evidence consensus layer (i). The full procedures used to generate these components and the resulting risk and prevalence maps are outlined below.
 
-## Evidence consensus
+### Evidence consensus
 
 The methodology used for generating the definitive extents for the leishmaniases was adapted from work on dengue (Brady et al., 2012). Four primary evidence categories were used to determine a consensus on the presence or absence of the leishmaniases: (i) health reporting organisations; (ii) peer-reviewed evidence of local autochthonous transmission; (iii) case data; (iv) supplementary information. Cutaneous and visceral leishmaniasis were the two symptomatologies investigated: other forms of the disease were subset within these two – whilst VL contained cases of post-kala-azar dermal leishmaniasis, CL included diffuse, disseminated, and mucosal forms of the disease. Although limited amounts of data were available for some of these forms, their epidemiology is similar, and consequently this categorisation was seen as appropriate. Information was collected at provincial level (termed Admin 1 units by the Food and Agriculture Organization's (FAO) Global Administrative Unit Layers (GAUL) coding (FAO, 2008)) to better capture the focal nature of these diseases.
 
-## Health Reporting Organisation Evidence (scores between −3 and +3)
+#### Health Reporting Organisation Evidence (scores between −3 and +3)
 
 Two health reporting organisations were referenced, the Global Infectious Diseases and Epidemiology Online Network (GIDEON) (Edberg, 2005) and the World Health Organization (WHO) (WHO, 2010). The status of disease was recorded for each Admin 1 unit as either present, absent or unspecified. If both reported the disease as present, +3 was scored, if both reported absence, −3 was scored, with +2/−2 scored if one reporting body did not specify the presence or absence of the disease. If the two disagreed, or both were non-specific, 0 was scored reflecting the lack of a consensus on the status of that region.
 
-## Peer-reviewed evidence (scores between +2 and +6)
+#### Peer-reviewed evidence (scores between +2 and +6)
 
 A review of reported leishmaniases' cases was performed. Using PubMed and Web of Knowledge with ‘[admin1 province] leish*’ as the search parameters, articles from January 1960 until September 2012 were abstracted. Each abstract was imported into Endnote X4 and assessed for relevance. Papers that included reported cases on either CL or VL were then obtained. Cases were included if there was sufficient evidence to suggest that local autochthonous transmission had occurred. Where individuals from a non-endemic country had travelled to an endemic country (e.g., tourists and military personnel) and returned with an infection, this was included (as evidence for leishmaniasis in the foreign destination) since these typically represent immunologically naive individuals who have undergone more rigorous diagnostics in their home country, and thus represent a potentially more informed data source. Each paper was assessed for contemporariness and diagnostic accuracy. Contemporariness was graded in 3 bands: 2005–2012 = 3, 1997–2004 = 2 and 1997 and earlier = 1, as was diagnostic accuracy where 1 was scored for data that reported ‘confirmed’ cases without detailing methodologies implemented; 2 was scored where evidence of microscopy, serology, or the Montenegro skin test had been used; 3 was awarded to those studies that had used PCR or other molecular techniques (Reithinger and Dujardin, 2007). Contemporariness bins were based upon the potentially lengthy intrinsic incubation periods present with some Leishmania spp. as well as to accommodate the potential for epidemic cycles, where cases may only be detected in peak years and missed in the intervening baseline periods. The most contemporary and diagnostically accurate papers were then subset to maximise the consensus score for any given area.
 
-## Case data (scores between −6 and +6)
+#### Case data (scores between −6 and +6)
 
 Case data were derived from reports on the leishmaniases provided by national health officials (Alvar et al., 2012). A threshold value of 12 CL cases and 7 VL cases in a given province in a given year was deemed suitable by the authors to distinguish significant disease events from sporadic cases within that region. If cases were reported at or above the threshold and were dated no later than 2005, +6 was scored. If data existed below this threshold, indicating sporadic cases, or data indicated a history of reported cases in the region but with no evidence of time period, scores were assigned stratified by total annual healthcare expenditure (HE) per capita at average US$ exchange rates (WHO, 2011). This was used as a proxy to determine genuine sporadic reporting from inadequate surveillance. Three categories were defined—HE Low (<$100), HE Medium ($100 ≤ HE < $500), and HE High (≥$500). If sporadic cases were reported in an HE Low country, +4 was scored, whilst in an HE Medium country, +2 was scored, and in an HE High country, 0 was scored. If there were no reported case data available, HE Low countries scored +2, HE Medium countries scored −2 and HE High countries scored −6 (Brady et al., 2012).
 
-## Supplementary evidence
+#### Supplementary evidence
 
 Supplementary evidence was provided in cases where a consensus on presence or absence could not be reached using the aforementioned evidence types, typically with areas where the consensus value was close to 0%. For these regions, additional literature searches were undertaken to determine whether known vector species or infected reservoir hosts were reported in the region. The justification for each provincial scenario is outlined in the associated online databases (Dryad data set doi: 10.5061/dryad.05f5h). In total, this assessment was required in 24 countries.
 
 An overall consensus score for each administrative region was calculated by the sum of the scores in each category, divided by the maximum possible score, then expressed as a percentage. Consensus was defined as either complete (±75% to ±100%), good (±50% to ±74%), moderate (±25% to ±49%), poor (±1% to ±24%), or indeterminate (0%). Such a classification is intended more as a guide to the quality of evidence for the leishmaniases in an area, rather than as a strict classification of certainty. The full scores for each country are laid out in the associated online data sets (Dryad data set doi: 10.5061/dryad.05f5h).
 
-## Brazil and Peru
+#### Brazil and Peru
 
 The Brazilian Ministry of Health produces, via the Sistema de Informação de Agravos de Notificação (SINAN, 2013) reporting network, records of infections at the municipality level. This allowed for a more thorough evidence consensus to be performed at district level (termed Admin 2 FAO, 2008) within Brazil. As above, WHO and GIDEON status as well as peer-reviewed literature score were recorded, both aggregated to Admin 1 provincial level. Case data were then defined by the presence of a municipality reporting leishmaniasis between 2008 and 2011 inclusive, with positive reports scoring +6 and absence scoring −6. The overall consensus score was then calculated as above. In addition, provincial level case data for Peru was replaced by Ministry of Health information as it was more contemporary than that listed by Alvar et al. (2012).
 
-## Occurrence records
+### Occurrence records
 
 Two separate searches using PubMed and Web of Knowledge were undertaken using the search parameter “leish*,” and including articles up to December 2012, and their respective abstracts, were filtered for relevance. From these searches, 4845 articles were collated, with data recorded at the resolution of either a point or Admin 1 or 2 polygon. These were then geo-positioned using Google Maps (https://maps.google.co.uk/). Each entry was evaluated to ensure that non-autochthonous cases and duplicate entries were eliminated. Each occurrence was assigned a start and end date based upon the content of the paper, used to define the time period over which occurrences were reported.
 
@@ -190,61 +388,61 @@ Finally, data were provided from the curated strain archives of the Centre Natio
 
 All data were geopositioned as precisely as possible, which resulted in both point-level data (referring to cities, towns or villages) as well as polygon-level data (provinces or districts) with area no greater than one square decimal degree. All data that had been manually geopositioned were checked to ensure coordinates were plausible and then occurrences were standardised annually to remove intra-annual duplicates, so that each individual record used in our model represented an occurrence of leishmaniasis infections in a given 5 km × 5 km location or administrative unit for one given year. As a result, the occurrence data were independent of burden; a location with 200 cases in one year has equal weighting in the model as a location with just one reported case, since it was only the presence of the disease being modelled.
 
-## Environmental correlates
+### Environmental correlates
 
 Leishmania spp. are known to have anthroponotic, zoonotic, or sylvatic transmission cycles in nature (WHO, 2010; Ready, 2013) which is apparent in the focal nature of the disease; however, there are some key features of the environment that are important in determining the distribution of disease across the globe. Numerous models have been constructed for local transmission scenarios implicating various environmental features from temperature and precipitation to socioeconomic factors relating to standards of living in villages in endemic foci. For the modelling process, a suite of global gridded environmental, biologically plausible, correlates was generated.
 
-## Precipitation
+#### Precipitation
 
 Humidity and moisture, whether from rainfall or in the soil, have often been identified as important for the sandfly, with humidity influencing breeding and resting (Ready, 2013). Whilst relatively little is known about these breeding sites, of the few that have been identified, high humidity seems to be a common trait, including moist Amazonian soils, caves, animal burrows, and select human dwellings (Killick-Kendrick, 1999; Feliciangeli, 2004). Studies have indicated soil type and their moisture profiles as determinants of sandfly distribution (Bhunia et al., 2010; Elnaiem, 2011). Precipitation represents a good global proxy measure for moisture, and has been shown to play a prominent role in shaping disease distribution in previous leishmaniasis modelling efforts (Thomson et al., 1999; Elnaiem et al., 2003; Bhunia et al., 2010; Chamaille et al., 2010; Gonzalez et al., 2010, 2011; Elnaiem, 2011; Hartemink et al., 2011; Malaviya et al., 2011).
 
 Estimates of precipitation were obtained from the WorldClim database (www.worldclim.org). This resource, which is freely available online, provides data spanning from 1950 to 2000, describing monthly averages over this time, at a 1 km × 1 km resolution (Hijmans et al., 2005). Using this baseline, interpolated global climate surfaces were produced using ANUSPLIN-SPLINA software (Hutchinson, 1995). With the use of temporal Fourier analysis, seasonal and inter-annual variation in precipitation patterns, taken from the interpolated global surface, were used to calculate minimum and maximum monthly precipitation averages (Rogers et al., 1996; Scharlemann et al., 2008).
 
-## Temperature
+#### Temperature
 
 Temperature influences both the development of the infecting Leishmania parasite in the sandfly (Hlavacova et al., 2013) as well as the life cycle of the sandfly vectors. On one hand, studies have shown that with increasing temperatures, the metabolism of the sandfly increases, influencing oviposition, defecation, hatching, and adult emergence rates (Kasap and Alten, 2005; Benkova and Volf, 2007; Guzman and Tesh, 2000). On the other hand, higher temperatures have also been shown to increase mortality rates of adults (Benkova and Volf, 2007; Guzman and Tesh, 2000). Studies have integrated the effects of temperature on sandfly biting rates, sandfly mortality, and extrinsic incubation periods to produce maps of how the basic reproductive number of canine leishmaniasis varied spatially (Hartemink et al., 2011). Multiple studies have also implicated temperature (including maximum, minimum, and mean temperatures) as being an important explanatory variable for both sandfly and disease distribution (Thomson et al., 1999; Gebre-Michael et al., 2004; Bhunia et al., 2010; Chamaille et al., 2010; Fischer et al., 2010; Galvez et al., 2011; Fernandez et al., 2012; Branco et al., 2013).
 
 Using a similar methodology to generating precipitation surfaces, minimum, maximum, and mean monthly temperature values were generated (Hijmans et al., 2005).
 
-## Normalised difference vegetation index (NDVI) and land cover
+#### Normalised difference vegetation index (NDVI) and land cover
 
 Vegetation provides many roles in sandfly habitat and survival, ranging from maintaining the necessary moisture profile for both immature stages and adults, to a sugar resource for both male and female sandflies (Killick-Kendrick, 1999; Feliciangeli, 2004; Ready, 2013). Moreover, vegetation is an important resource for many mammals that sandflies feed on, and that potentially are Leishmania reservoirs. The importance of considering NDVI was demonstrated with respect to the distribution of the reservoir Psammomys obesus (sand rat) and the distribution of its primary food, chenopods (Toumi et al., 2012). NDVI has been implicated as a key explanatory variable in the distribution of leishmaniasis cases in several studies (Cross et al., 1996; Thomson et al., 1999; Elnaiem et al., 2003; Gebre-Michael et al., 2004; Elnaiem, 2011; Hartemink et al., 2011; Bhunia et al., 2012; Toumi et al., 2012; de Oliveira et al., 2012).
 
 The Advanced Very High Resolution Radiometer (AVHRR) NDVI product uses the spectral reflectance of AVHRR channels 1 and 2 (visible red and near infrared wavelength) to quantitatively assess the level of photosynthesising vegetation in a region (Hay et al., 2006). Using this data, compiled over multiple time intervals, patterns of NDVI were extracted for each gridded 1 km × 1 km cell.
 
-## Poverty
+#### Poverty
 
 Neglected tropical diseases and poverty are often found to be linked and the use of a purely economic variable was chosen to act as a proxy for a variety of important global risk factors for disease, including malnutrition, housing quality, and living with domesticated animals (Bern et al., 2010; Boelaert et al., 2009; Herrero et al., 2009; Malafaia, 2009; Zeilhofer et al., 2008).
 
 The G-Econ database (gecon.yale.edu) takes economic data, at the smallest administrative division available, and spatially rescales these data to create a 1o × 1o gridded surface of the globe (Nordhaus, 2006, 2008). This rescaling estimates the gross cell product of each grid cell, conceptually similar to gross domestic product, referring to the total market value of all final goods and services produced within 1 year, and can be considered as an indicator of overall standard of living within that area. Some cells provided multiple data; in these scenarios the best-quality information, as outlined by the quality field associated with the data, was used to select one value. All gross cell product values were then adjusted using purchasing power parity in US$ for the years 1990, 1995, 2000, and 2005, using national aggregates estimated by the World Bank (Nordhaus, 2006) and computed the mean across all years for each gridded cell globally. This adjusted measure was used as the indicator of poverty in the model.
 
-## Urbanisation
+#### Urbanisation
 
 Over the last few decades, there has been a tendency for the leishmaniases having a sylvatic/zoonotic transmission cycle to transition into the urban and peri-urban environment in response to increasing urbanisation trends (Harhay et al., 2011). The increasing overlap in habitat between suitable human and animal hosts and multiple available resting sites for adults can allow for transmission of disease to occur relatively easily (Singh et al., 2008; Poche et al., 2011; Uranw et al., 2013).
 
 The Gridded Population of the World version 3 (GPW3) population density database projected for 2010 was used. The core Global Rural–Urban Mapping Project Urban Extents surface used night-time light satellite imagery to differentiate urban areas (Balk et al., 2006); GPW3 is a revision which updates the criteria for urban areas to those areas where population density is greater than or equal to 1000 people per km2. Using the most up-to-date national censuses available and other demographic data resolved to the smallest available administrative unit, a gridded surface of 5 km × 5 km cells was generated. Each pixel could then be classified as urban, peri-urban, or rural.
 
-## Modelling with boosted regression trees
+### Modelling with boosted regression trees
 
 The boosted regression trees (BRT) methodology employed for mapping the leishmaniases is a variant of the model used in a previous analysis of dengue (Bhatt et al., 2013). Boosted regression tree modelling combines both regression trees, which build a set of decision rules on the predictor variables by portioning the data into successively smaller groups with binary splits (De'ath, 2007; Elith et al., 2008), and boosting, which selects the tree that minimises the loss of function, to best capture the variables that define the distribution of the input data. The core BRT setup followed standard protocol already defined elsewhere (Elith et al., 2008; Bhatt et al., 2013).
 
-## Pseudo-data generation
+#### Pseudo-data generation
 
 As BRT requires both the presence and absence data, the latter which is often hard to collate in an unbiased manner, pseudo-data had to be generated (Elith et al., 2008). There is no general consensus on how best to generate pseudo-data (Bhatt et al., 2013); however, several factors of the generation process are known to influence the predicted distribution and thus can be sources of potential bias (Phillips et al., 2009; Van Der Wal et al., 2009; Phillips and Elith, 2011; Barbet-Massin et al., 2012). In order to minimise such effects, pseudo-absence selection was directly related to the evidence consensus layer and restricted to a maximum distance (μ) from any occurrence point. Pseudo-presence data was also incorporated, again informed by the evidence consensus layer, to compensate for poor surveillance capacity in low prevalence regions. As in Bhatt et al. (2013) points were randomly located in regions above an evidence consensus threshold of −25, with regional placement probability weighted by evidence consensus scores, so that regions with higher evidence consensus contained more pseudo-presences than lower scoring areas. Since the occurrence data set is from a wide range of sources and institutions, this procedure aims to mitigate sampling bias. By referencing the evidence consensus layer for pseudo-data selection, detection bias was also mitigated.
 
-## ‘Ensemble’ analysis
+#### ‘Ensemble’ analysis
 
 There is no definitive procedure for choosing the best number of pseudo-data points to generate the most accurate predictive map. To account for the impact that these parameters might have on the model predictions, an ensemble BRT model was constructed with multiple BRT submodels fitted using pseudo-data points generated using different combinations of parameters na, np, and μ. The numbers of pseudo-absences (na) and pseudo-presences (np) were defined as a proportion of the total number of actual data occurrence records (6426 and 6137 for CL and VL). The proportions used for generating pseudo-absences were 2:1, 4:1, 6:1, 8:1, and 10:1, and pseudo-presences were 0.025:1, 0.05:1 and 0.1:1. The pseudo-data were also generated within a restricted maximum distance (μ) from any actual presence point, and μ was varied through 5 distances: 5, 10, 15, 20, and 25 arc degrees. All combinations of these parameter values resulted in a total of 75 (5na × 3np × 5μ) individual input data sets and BRT submodels (making up the BRT ensemble).
 
 For each disease, the 75 BRT submodels were used to predict a range of different risk maps (each at 5 km × 5 km resolution), and these were combined to produce a single mean ensemble risk map for each disease, also allowing for computation of the associated range of uncertainty in these predictions for every 5 km × 5 km pixel as shown in Figure 1—figure supplement 1, Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 4—figure supplement 1. For both diseases, the New World (the Americas) and Old World (Eurasia and Africa) were modelled separately in order to account for and explore any differences in the epidemiology of the diseases between these regions. This was done to differentiate the potential effect that the different vectors namely Lutzomyia spp. in the New World and Phlebotomus spp. in the Old World and their varying life histories, might have on the distribution of the diseases within these regions.
 
-## Summarising the BRT model
+#### Summarising the BRT model
 
 The relative importance of predictor variables was quantified for the final BRT ensemble. Relative importance is defined as the number of times a variable is selected for splitting, weighted by the squared improvement to the model as a result of each split and averaged over all trees (Friedman, 2001). These contributions are scaled to sum to 100, with a higher number indicating a greater effect on the response. To evaluate the ensemble's predictive performance, we used the area under the receiver operator curve (AUC) (Fleiss et al., 2003)—the area under a plot of the true positive rate versus false positive rate, reflecting the ability to discriminate between the presence and absence. An AUC value of 0.5 indicates no discriminative ability, and a value of 1 indicates perfect discrimination.
 
 It is important to note that this distribution modelling technique assesses pixel level risk, rather than population level risk. As such, the ensemble evaluates the likelihood of leishmaniasis presence based upon the covariates supplied. In reality, some other factors, such as national healthcare provisioning and standards of living will influence the true observed burden. Therefore, whilst these two levels of risk are inherently related, additional information, namely incidence data from many different populations, is required in order to assess the link quantitatively (Bhatt et al., 2013).
 
-## Estimation of population living in areas of environmental risk
+### Estimation of population living in areas of environmental risk
 
 Population living in areas of risk was estimated by using a threshold probability to reclassify the probabilistic risk maps into a binary risk map, then extracting the total human population in the ‘at risk’ areas using a gridded data set of human population density from 2010 (Balk et al., 2006; CIESIN/IFPRI/WB/CIAT, 2007). The threshold value was set such that 95% of the point occurrence records fell within the at risk area. 5% of occurrence points were allowed to fall outside the predicted risk area to account for errors which could have arisen either from errors in the occurrence data set or from inaccuracies in the predicted risk maps.
 

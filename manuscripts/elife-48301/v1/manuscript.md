@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.48301.001 Animal circadian rhythms persist in constant darkness and are driven by intracellular transcription-translation feedback loops. Although these cellular oscillators communicate, isolated mammalian cellular clocks continue to tick away in darkness without intercellular communication. To investigate these issues in Drosophila , we assayed behavior as well as molecular rhythms within individual brain clock neurons while blocking communication within the ca. 150 neuron clock network. We also generated CRISPR-mediated neuron-specific circadian clock knockouts. The results point to two key clock neuron groups: loss of the clock within both regions but neither one alone has a strong behavioral phenotype in darkness; communication between these regions also contributes to circadian period determination. Under these dark conditions, the clock within one region persists without network communication. The clock within the famous PDF-expressing s-LNv neurons however was strongly dependent on network communication, likely because clock gene expression within these vulnerable sLNvs depends on neuronal firing or light.
+Animal circadian rhythms persist in constant darkness and are driven by intracellular transcription-translation feedback loops. Although these cellular oscillators communicate, isolated mammalian cellular clocks continue to tick away in darkness without intercellular communication. To investigate these issues in Drosophila, we assayed behavior as well as molecular rhythms within individual brain clock neurons while blocking communication within the ca. 150 neuron clock network. We also generated CRISPR-mediated neuron-specific circadian clock knockouts. The results point to two key clock neuron groups: loss of the clock within both regions but neither one alone has a strong behavioral phenotype in darkness; communication between these regions also contributes to circadian period determination. Under these dark conditions, the clock within one region persists without network communication. The clock within the famous PDF-expressing s-LNv neurons however was strongly dependent on network communication, likely because clock gene expression within these vulnerable sLNvs depends on neuronal firing or light.
 
 ## Introduction
 
@@ -43,6 +43,14 @@ To investigate the effects of clock network communication on fly behavior, we si
 
 Both control strains show the expected morning and evening (M and E) anticipation increases, which are normal behavioral manifestations of clock function (Figure 1A, C and G). There is however no discernable activity anticipation in the silenced flies (Figure 1G). Only brief activity increases are visible, precisely at the day/night and night/day transitions (Figure 1B); these are startle responses (Rieger et al., 2003). Flies lacking PER show similar behavior (per01 Figure 1D and Figure 1H).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig1-v1.jpg)
+
+**Figure 1.:** (A–C) Silencing most of the clock network abolishes rhythmic LD behavior. GAL4 control (A) and UAS control (C) show bimodal activity patterns with M anticipation and E anticipation. Silenced flies (B) show no sign of anticipation neither in the morning nor in the evening. Flies show short activity increases at the transitions of day/night and night/day which are considered masking. Values in upper right-hand corner indicate the number of analyzed flies. (D) Behavior of per01 flies in LD 12:12. per01 mutants show behavior similar to clk856>Kir with no M anticipation, reduced E anticipation and short reactions to the light transitions. (E–F) Silencing PDF neurons alters LD behavior. (E) PDF-GS>Kir on Vehicle food does not express Kir. Flies show the typical bimodal activity with M and E anticipation peaks. The M peak is close to lights-on (ZT0) whereas the E peak is close to lights-off (ZT12). (F) Silencing the PDF neurons by adding RU 486 to the food causes an advanced E peak, similar to pdf01 flies. Values indicate the number of analyzed flies. (G) Morning Anticipation (MA) and Evening Anticipation (EA) calculated from A-C. Both controls show values significantly above 0.5 (p<0.0001 for all) indicating prominent anticipation to both peaks. Clk856>Kir flies on the other hand show no signs of anticipation as indicated by anticipation indices indistinguishable from 0.5 (p>0.6937) (H) Morning Anticipation (MA) and Evening Anticipation (EA) calculated from D-E. per01 flies show no MA (p=0.5744), whereas there is a slight increase of activity toward lights-off (p=0.0027). Silencing the PDF neurons did not abolish MA (p=0.0004) and showed a significantly bigger EA compared to per01 flies (p=0.0391). (I-K) PER protein cycling is largely unaffected by neuronal silencing in LD. PER cycling in control brains (black data points ± SEM, pooled GAL4 and UAS, n = 6–8) is highly synchronized with peak levels around ZT0. Silencing the clock network (red data points ± SEM, n = 5–7) had little effect on LD PER rhythms in sLNvs (F(1,49)=0.93, p=0.3391) (I) and LNds (F(1,49)=0.35, p=0.5547) (J). DN1s appear dampened after silencing but 2-way ANOVA shows no difference between control and experimental line (F(1,36)=2.98, p=0.0930) (K). (L-N) PDP1 protein cycling is largely unaffected by neuronal silencing in LD. PDP1 cycling in control brains (black data points ± SEM, pooled GAL4 and UAS, n = 5) is highly synchronized with peak levels around ZT18. Silencing the clock network (red data points ± SEM, n = 5) slightly increased LD PDP1 rhythms in sLNvs (F(1,32)=15.74, p=0.0004) (L) but no effect on LNds (F(1,32)=2.71, p=0.1093) (M) and only a slight effect on DN1s (F(1,32)=6.06, p=0.0194) (N).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Control (clk856-GAL4) and experimental (clk856-GAL4 UAS-Kir tub-GAL80ts) flies show bimodal activity at 18 degrees with an M and an E peak of activity. M anticipation is reduced in both cases due to the low temperature. At 30 degrees, control flies (upper panel) show a bimodal activity pattern with an M anticipation peak and an E anticipation peak. The E peak is delayed due to high temperatures. The experimental flies (lower panel) show no M or E peak at 30 degrees.
+
 To address possible developmental defects, we added tub-GAL80ts as an additional transgene to silence the clock network in an adult-specific manner. In this system, GAL80 is active at low temperatures (18°C) and inhibits GAL4 expression. By increasing the temperature to 30°C, GAL80 is inactivated, GAL4 is then functional and the clk856 network silenced (McGuire et al., 2003).
 
 At the low temperature, the controls and experimental lines show a typical wild-type bimodal activity pattern, which disappeared in experimental flies after switching to the high temperature (Figure 1—figure supplement 1). This effect was already visible on day one of high temperature exposure which shows that the clk856>Kir phenotype is not caused by defects during development. However, we cannot rule out chronic effects due to the prolonged period of network silencing.
@@ -52,6 +60,22 @@ We next compared the behavior to flies with silenced PDF neurons. Adult-specific
 How does network silencing affect the circadian molecular feedback loop? To address this issue, we assayed PER as well as PDP1 protein levels in individual clock neuron clusters at four different times during the LD cycle. Both proteins show robust cycling: PER peaks at the end of the night (ZT0), and PDP1 peaks slightly earlier than PER as expected (Hardin, 2011) (Figure 1I–1N). This indicates that network silencing has no detectable effect on clock protein timing or cycling amplitude in LD. These data further suggest that either the different neuron clocks are self-sustained, comparable to the mammalian liver, or that light can drive rhythmic gene expression even in absence of neuronal communication.
 
 To distinguish between these possibilities, we assayed behavior and molecular cycling in constant darkness (DD). Only 17% of the silenced flies were rhythmic, indicating that network silencing causes high levels of DD arrhythmicity (Figure 2A). To rule out developmental effects, we applied the tub-GAL80ts system as described above: 80 percent of the experimental flies were rhythmic at 18°C, but they were profoundly arrhythmic at 30°C with only two rhythmic flies (Figure 2—figure supplement 1). In contrast, adult-specific silencing of only the PDF neurons more weakly reduced rhythmicity (Figure 2A) and also caused a short period (Figure 2B), phenotypes that are essentially indistinguishable from those of the classical pdf01 mutant (Renn et al., 1999).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig2-v1.jpg)
+
+**Figure 2.:** (A) Percentage of rhythmic flies in DD. Silencing most of the clock neurons significantly reduces rhythmicity to less than 20 percent, suggesting that clock neuron activity is essential for rhythmic behavior output. None of the per01 flies were rhythmic as expected. Silencing the PDF neurons slightly decreased the level of rhythmicity. Number of flies analyzed same as shown in Figure 1. (B) Free-running period of rhythmic flies from (A). The few rhythmic flies of clk856>Kir show a significantly longer period (F(2,48)=14.355 p<0.001, p<0.01 for UAS and GAL4 control). Adult-specific silencing of the PDF neurons caused a significant period shortening (p=0.0214). Number of flies analyzed same as shown in Figure 1. (C–E) PER protein cycling in DD5. PER cycling in control brains (black data points ± SEM, pooled GAL4 and UAS, n = 8–11) is highly synchronized with peak levels around CT18. Silencing the clock network (red data points ± SEM, n = 5) had variable effects on PER rhythms: The sLNvs (C) dampen strongly upon silencing (p<0.0001). The LNds (D) show no significant differences in cycling amplitude (p=0.8905) and the DN1s strongly dampen (p=0.0195), similar to sLNvs (E). (F–H) PDP1 protein cycling in DD5. PDP1 cycling in control brains (black data points ± SEM, pooled GAL4 and UAS, n = 5) is highly synchronized with peak levels around CT18. Silencing the clock network (red data points ± SEM, n = 5) had similar effects as observed in PER rhythms: The sLNvs (F) dampen strongly upon silencing (p=0.0006). The LNds (G) show a higher cycling amplitude than control brains (p<0.0001) and the DN1s strongly dampen (p=0.0013) and appear to have a phase-advanced PDP1 peak (H).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) At 18 degrees we observe no decrease in rhythmicity in clk856>tubKir (dark red) compared to control (black) flies as expected. Increasing the temperature to 30 degrees (B) activates GAL4 and hence silences the neurons. Clk856>tubKir (red) flies get arrhythmic, whereas both controls (black) show high levels of rhythmicity. We observed no effect on free-running period at 18 degrees (C) but experimental flies showed the tendency toward a long period at 30 degrees (D), similar to clk856>Kir (Figure 2B). Values indicate the number of investigated flies.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Flies were raised at 18 degrees and entrained at 30 degrees to allow network silencing. Flies were collected in 6 hr intervals in the fifth day of constant darkness. Control flies (tub-GAL80ts UAS-Kir, black data points ± SEM, n = 10) show robust cycling with peak expression around ZT0 in LNds and sLNvs and around ZT18 in DN1s. Silencing the PDF neurons (pdf-GAL4 UAS-Kir tubGAL80ts, blue data points ± SEM, n = 10) only slightly affected PER cycling in the sLNvs, which retain robust PER rhythms. Similarly, the LNds remain rhythmic, but the DN1 rhythms get more irregular. Silencing the entire network neurons (clk856-GAL4 UAS-Kir tubGAL80ts, red data points ± SEM, n = 20) causes the sLNvs to get arrhythmic. The LNds show no reduction in cycling amplitude and only a slight shift in protein cycling. The DN1s show a reduction of PER cycling amplitude.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Actograms of individual flies recorded at 30 degrees for 3 days in LD 12:12 (indicated by yellow boxes). Flies were then transferred into constant darkness at 30 degrees (red area). Flies show no sign of rhythm due to the silencing of the network. We lowered the temperature to 18 degrees (blue area) to stop neuronal silencing. None of the flies re-established rhythmic behavior.
 
 To address why network silencing has such a profound effect, we assayed PER and PDP1 protein cycling after five days in constant darkness (DD5). As expected, all assayed clock neurons from control strains maintain robust and coordinated cycling in DD (Figure 2C–H); the sLNvs, LNds and DN1s peak slightly sooner than in LD, consistent with the slightly less than 24 hr circadian period in DD (Figure 2B).
 
@@ -63,11 +87,23 @@ To further address the molecular basis of the silencing dependence, we applied a
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig3-v1.jpg)
 
-**Figure 3.:** tim mRNA cycling in sLNvs and LNds shows similar trends as protein cycling as observed by FISH.(A) Representative brain showing tim (left panel), pdf (middle panel) and a composite of both channel (right panel). Tim probes label all clock neurons and glial cells, whereas the pdf probes only label sLNvs and lLNvs. (B–C) tim mRNA cycling in LD 12:12 in sLNvs (B) and LNds (C). Control flies (black data points ± SEM, pooled GAL4 and UAS, n = 10) show high amplitude cycling with peak levels at the beginning of the night. Silencing the clock network (red data points ± SEM, n = 5) has only little effect on cycling amplitude or timing in LD. (D–E) tim mRNA cycling in DD5 in sLNvs (D) and LNds (E). Control flies (black data points ± SEM, pooled GAL4 and UAS, n = 10) show high amplitude cycling with peak levels at the beginning of the night. Silencing the sLNvs (D) leads to an overall reduction of tim mRNA levels and a loss of rhythmicity. In the LNds (E) silencing did not decrease cycling amplitude or shifted peak mRNA expression.
+**Figure 3.:** (A) Representative brain showing tim (left panel), pdf (middle panel) and a composite of both channel (right panel). Tim probes label all clock neurons and glial cells, whereas the pdf probes only label sLNvs and lLNvs. (B–C) tim mRNA cycling in LD 12:12 in sLNvs (B) and LNds (C). Control flies (black data points ± SEM, pooled GAL4 and UAS, n = 10) show high amplitude cycling with peak levels at the beginning of the night. Silencing the clock network (red data points ± SEM, n = 5) has only little effect on cycling amplitude or timing in LD. (D–E) tim mRNA cycling in DD5 in sLNvs (D) and LNds (E). Control flies (black data points ± SEM, pooled GAL4 and UAS, n = 10) show high amplitude cycling with peak levels at the beginning of the night. Silencing the sLNvs (D) leads to an overall reduction of tim mRNA levels and a loss of rhythmicity. In the LNds (E) silencing did not decrease cycling amplitude or shifted peak mRNA expression.
 
 Network silencing therefore reveals different levels of autonomy and endogenous speeds among clock neuron clusters. This leads to a drifting apart of the different subgroups from their usual well-synchronized and robust clock protein expression pattern. Interestingly, it appears that these phase differences are too big to re-establish coordinated rhythms after one week of silencing; there is no indication of rhythmic behavior upon lowering the temperature in the tubGAL80ts experiment (Figure 2—figure supplement 3).
 
 The results to this point indicate that neuronal activity/communication is essential for rhythmicity as well as synchronized, high amplitude clock protein cycling in DD conditions. However, these results do not provide a hierarchy among the different groups, nor do they address a need for the circadian clock within these neurons. To distinguish between these possibilities and to develop a general knock-out strategy within the adult fly brain, we established a cell-specific CRISPR/Cas9 strategy to eliminate the circadian clock in individual clock neuron groups (Figure 4A). We applied the guide protocol introduced by Port and Bullock (2016) and cloned three guides targeting the coding sequence of per under UAS control and generated UAS-per-g flies. For a first experiment, we expressed the per-guides and Cas9 in most of the clock neuron network under clk856 control and performed behavioral (Figure 4B–4E) and immunocytochemical (Figure 4F–4H) assays.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic model of cell-specific knockout (KO) strategy. We generated a UAS-per-g line using the pCFD6 vector, allowing us to express three guides under the control of one UAS promoter (after Port and Bullock, 2016). We cloned three guides targeting the per CDS with guide one targeting the second exon shared by all transcripts and guides 2 and 3 targeting the 4th commonly shared exon. The guides will recruit the Cas9 protein and induce double-strand breaks and thereby cause mutations which lead to a non-functional protein. (B–E) Behavior of perKO using clk856-GAL4 in LD 12:12 reproduces per01 phenotype. Flies expressing Cas9 in the majority of the clock neurons (B) and flies with both UAS-constructs (D) show bimodal activity with an M anticipation peak around lights-on and an E anticipation peak around lights-off. KO of per using clk856-GAL4 (C) abolishes M and E anticipation similar to per01 flies. (E) Morning and Evening Anticipation are significantly reduced in the clk856-GAL4 mediated Knockout (MA: F(2,85)=18.6895, p<0.0001, p<0.01 for both controls. EA: F(2,85)=114.6644, p<0.0001, p<0.01 for both controls). Most importantly, both indices of the knockout strain are indistinguishable from per01 flies (MA: p=0.6667, EA: p=0.4884) (F–H) Immunocytochemistry of Control (clk856>Cas9) and KO (clk856>Cas9, perG) staining against PER (magenta) and PDF (cyan). Control flies show PER staining in both, sLNvs and lLNvs, whereas there is no detectable PER signal in the PDF cells in the KO strain (E). Similarly, we see six LNds in the control and two LNds in the experimental flies, showing that some neurons can escape (F) The number of PER+ DN1s is strongly reduced in the KO strain and we do not detect PER in the DN2 neurons (G). (I–L) A clock in LNd or PDF neurons is necessary for rhythmic behavior. Clk856-GAL4 mediated KO reduces rhythmicity to less than 10% (H). KO in PDF neurons (pdf-GAL4) (I) or in the LNds (MB122B-split-GAL4) (J) had no effect on rhythmicity. KO in both places (Mai179-GAL4) significantly decreases rhythmicity (K).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Mai179-GAL4 is expressed in 3 out of 6 LNds, the sLNvs and shows weakly and variable expression in DN1 and lLNv neurons. We performed PER (green) and PDF (magenta) staining in Mai179>Cas9 per-g flies and found that 3 LNds were PER+, the sLNvs were PER- and one of the lLNvs was PER-. This nicely reproduces the expression pattern mentioned above. Asterix represents successful KO. Similarly, repo-mediated KO rendered glial cells PER-negative, whereas all clock neuron clusters remained PER-positive. GMR-ss00681-split-GAL4 drives expression in the sLNvs and specifically removes PER from these cells without affecting other clock neuron clusters.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** All investigated genotypes showed high levels of rhythmicity, suggesting that the LNds and sLNvs are the key players in determining rhythmicity.
 
 This PERKO strategy abolished M and E anticipation in LD behavior without affecting the startle responses (Figure 4C and Figure 4E), and it also reduced the level of DD rhythmicity to below 10%; this reproduced network silencing as well as the canonical per01 behavioral phenotypes (Figures 1D and 2A). Not surprisingly perhaps given these robust phenotypes, immunohistochemistry indicates that the PERKO strategy works at more than 90% efficiency as determined by the loss of PER immunoreactivity in the lateral neuron clusters of the clk856>Cas9 per-g experiment (Figure 4F–4H). For example, there was no detectable nuclear PER signal in all PDF cells or in the DN2s (Figure 4F and H). There is also a marked reduction in the number of PER-positive DN1s in the dorsal brain; this is expected as the clk856-GAL4 line does not express in all DN1 neurons (Gummadova et al., 2009) (Figure 4H). Similarly, most LNds are PER-negative. There are however two LNds that remain PER-positive for some reason (Figure 4G), that is, there are a few cell escapers. We note that the PERKO strategy is also effective with weaker and more narrowly expressed GAL4 lines (Figure 4—figure supplement 1), indicating that it can be used to investigate the contribution of clocks in individual neuron subgroups to circadian behavior.
 
@@ -80,6 +116,77 @@ We also assayed the free-running DD periods of flies lacking PER in individual n
 ![Figure 5.](https://cdn.elifesciences.org/articles/48301/elife-48301-fig5-v1.jpg)
 
 **Figure 5.:** (A) Changes of free-running period upon KO. Red bars represent the change of period between the KO line and the GAL4 control (± SEM), green bars represent the change of period between the KO line and the UAS control (± SEM). (B) Model of neuronal communication and light influencing the Drosophila clock machinery. Silencing the clock network in DD causes a damping of molecular oscillations and a drifting apart from the common phase as indicated by the red waves. If network communication is allowed, the different neuronal sub-clusters are mostly in sync and show robust cycling, suggesting neuronal communication is essential for molecular oscillations. In a normal LD cycle light drives high amplitude and synchronized cycling even in the absence of neuronal communication, establishing a hierarchy of synchronization cues with light on the top.
+
+**Table 1.**
+ Changes in free-running period after PER knockout with different GAL4 drivers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GAL4 line used</th>
+      <th>Number of flies</th>
+      <th>Change compared to GAL4 control</th>
+      <th>Change compared to UAS control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dv-PDF-GAL4</td>
+      <td>6</td>
+      <td>−2.41 ± 0.37</td>
+      <td>−0.79 ± 0.37</td>
+    </tr>
+    <tr>
+      <td>Mai179-GAL4</td>
+      <td>6</td>
+      <td>−1.38 ± 0.68</td>
+      <td>−1.07 ± 0.68</td>
+    </tr>
+    <tr>
+      <td>GMR-ss00681</td>
+      <td>12</td>
+      <td>−1.39 ± 0.19</td>
+      <td>−0.56 ± 0.19</td>
+    </tr>
+    <tr>
+      <td>GMR-ss00367</td>
+      <td>32</td>
+      <td>−0.12 ± 0.13</td>
+      <td>−0.14 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>AstC-GAL4</td>
+      <td>16</td>
+      <td>0.11 ± 0.11</td>
+      <td>−0.26 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>GMR-ss1038</td>
+      <td>24</td>
+      <td>0.06 ± 0.11</td>
+      <td>0.06 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>VGlut-GAL4</td>
+      <td>11</td>
+      <td>0.10 ± 0.11</td>
+      <td>−0.26 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>GMR-ss00849</td>
+      <td>22</td>
+      <td>0.55 ± 0.13</td>
+      <td>0.54 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>MB122B</td>
+      <td>21</td>
+      <td>0.57 ± 0.11</td>
+      <td>0.76 ± 0.11</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -109,15 +216,305 @@ Some of the communication properties described here resemble what has been found
 
 ## Materials and methods
 
-## Fly strains and rearing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>clk856-GAL4</td>
+      <td>Gummadova et al., 2009</td>
+      <td>Flybase: FBtp0069616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_6595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pdf-GS-GAL4</td>
+      <td>Depetris-Chauvin et al., 2011</td>
+      <td>FBal0267534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>per01</td>
+      <td>Konopka and Benzer, 1971</td>
+      <td>FBal0013649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mai179-GAL4</td>
+      <td>Grima et al., 2004</td>
+      <td>FBal0124017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB122B-GAL4</td>
+      <td>Guo et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pdf-GAL4</td>
+      <td>Renn et al., 1999</td>
+      <td>FBtp0011844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>clk4.1M-GAL4</td>
+      <td>Zhang et al., 2010</td>
+      <td>FBtp0054012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Cas9.P2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_58986</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstC-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_52017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dvPDF-GAL4</td>
+      <td>Guo et al., 2014</td>
+      <td>FBtp0081543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w;CyO/Sco; MKRS/TM6B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_3703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VGlut-GAL4</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC_60312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss00650-GAL4</td>
+      <td>G Rubin, Janelia Research Campus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss01038-GAL4</td>
+      <td>G Rubin, Janelia Research Campus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss00849-GAL4</td>
+      <td>G Rubin, Janelia Research Campus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss00367-GAL4</td>
+      <td>G Rubin, Janelia Research Campus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss00681-GAL4</td>
+      <td>Liang et al. (2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-ss00645-GAL4</td>
+      <td>G Rubin, Janelia Research Campus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-GAL4</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC_1104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repo-GAL4</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC_7415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-GAL80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_7018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-per-g</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD6</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene73915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Stata SE15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Microsoft Office Excel</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ActogramJ</td>
+      <td>actogramj.neurofly.de</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PER Rabbit polyclonal</td>
+      <td>Stanewsky et al., 1998</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDF Mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>AB_760350</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDP1 Guinea pig polyclonal</td>
+      <td>Benito et al., 2007</td>
+      <td></td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>A-31575</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>A-11034</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>A-32732</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-guinea pig polyclonal</td>
+      <td>ThermoFisher</td>
+      <td>A-11073</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MIDI-Prep Kit</td>
+      <td>Qiagen</td>
+      <td>12143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Polymerase</td>
+      <td>NEB</td>
+      <td>M0491S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BbSI-Enzyme</td>
+      <td>NEB</td>
+      <td>R0539S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectashield</td>
+      <td>Vectorlabs</td>
+      <td>H-1000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and rearing
 
 All flies were reared on standard cornmeal medium at a temperature of 25°C, with the exception of adult-specific silencing experiments for which flies were raised at 18°C. The SS00849, SS00367, SS01038, SS00645, SS00650 lines were made and characterized by H Dionne and A Nern in the laboratory of G Rubin (Janelia Research Campus).
 
-## Fly line generation
+### Fly line generation
 
 We generated a UAS-per-g line following the protocol published by Port and Bullock (2016). In short, we digested the pCFD6 Vector (addgene #73915) with BbsI, PCR amplified two PCR fragments carrying three guides targeting the CDS of per and performed a Gibson Assembly to include those in the pCFD6 backbone. Positive clones were sent for injection to Rainbow Transgenic Flies Inc (Camarillo, CA, USA) and the transgene was inserted into the second chromosome by phi-recombinase using BL 8621. Flies were crossed to w1118 for screening and positive individuals were balanced using BL 3703. The following guide sequences were used:
 
-## Behavior recording and data analysis
+### Behavior recording and data analysis
 
 Individual 2–6 days old male flies were singularly transferred into glass tubes (diameter 0.5 mm) with food (2% agar and 4% sucrose) on one end and a cotton plug to close the tube on the other end. The tubes were placed into Drosophila Activity Monitors (DAM, Trikinetics) in a way that the infrared light beam was located in the center of the tube. A computer measured the number of light-beam interruptions caused by the movement of the fly in one-minute intervals.
 
@@ -127,13 +524,13 @@ DD behavior was analyzed using the first six days of constant darkness (DD1-6) u
 
 All experiments were performed at least twice using between 25–32 flies per genotype. Only flies surviving the whole LD or DD condition were used for data analysis. Data in this paper represent the first experiment performed.
 
-## Adult-specific silencing experiments
+### Adult-specific silencing experiments
 
 We raised the flies at 18 degrees and performed two separate sets of experiments: In the LD experiment, we recorded the behavior of the flies for 3 days at 18°C and switched to 30°C to silence the neurons and followed the behavioral change within the same sets of flies. We generated average activity at 18°C (days 2–3) and at 30°C (days 4–5) as described above.
 
 In a second set of experiments, we raised the two groups of flies at 18°C and then performed LD to DD experiments either at 18°C or 30°C. Flies were entrained for 3 days and then released into DD. In the 30°C experiment, we decreased the temperature back to 18°C at Circadian Time (CT) 0 after 6 days in DD to investigate possible emergence of rhythmic behavior after silencing. We continued recording the behavior for six more days in DD at 18°C.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 2–6 days old male flies were entrained in LD 12:12 at 25°C for three days and collected at ZT0 to analyze the CRISPR/Cas9 knockout strategy. To investigate clock protein cycling, 2–6 days old male flies were entrained in LD 12:12 at 25°C for 5 days and collected in 6 hr intervals around the clock. Similarly, flies were entrained for 5 days and released into DD for 5 more days to obtain cycling data at DD5. For adult-specific silencing experiments, flies were raised at 18°C. 2–6 days old male flies were collected and entrained for 5 days in LD 12:12 at 30°C and released in DD at 30°C for 5 days.
 
@@ -143,7 +540,7 @@ Confocal microscopy was performed using a Leica SP5 microscope. Sections of 1.5 
 
 Statistical analysis was performed either by 2-way ANOVA (Stata SE15) to check for time- and genotype dependency. To assess damping behavior, we subtracted the minimum average staining intensity (the lowest point of the cycling analysis) from individual brains from the highest timepoint. These values were compared using one-way ANOVA (statsa) or student’s t-test.
 
-## Fluorescent in-situ hybridization (fish)
+### Fluorescent in-situ hybridization (fish)
 
 2–6 days old male flies were entrained for 5 days in LD 12:12 and collected in 6 hr intervals around the clock. In a second set of experiments, flies were released into DD for 5 days and collected in 6 hr intervals. Flies were dissected fresh under red light to avoid phase-shifting the molecular machinery. Brains were subsequently fixed in 4% PFA in PBS for 55 min at RT. Afterwards, brains were washed 3 × 10 min in PBST and dehydrated as described in Long et al. (2017). Brains were kept in 100% EtOH until all time points were collected and all further steps were done simultaneously as described in Long et al. (2017).
 

@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03s65by71 Department of Molecular, Cell, and Developmental Biology, University of California, Santa Cruz Santa Cruz United States
-2. https://ror.org/00mjdtw98 Department of Biology and Chemistry, California State University Monterey Bay Seaside United States
-3. https://ror.org/05x2bcf33 Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States
+1. Department of Molecular, Cell, and Developmental Biology, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
+2. Department of Biology and Chemistry, California State University Monterey Bay Seaside United States ([ROR:00mjdtw98](https://ror.org/00mjdtw98))
+3. Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
 
 † Corresponding author
 
 ## Abstract
 
-Wolbachia , a vertically transmitted endosymbiont infecting many insects, spreads rapidly through uninfected populations by a mechanism known as cytoplasmic incompatibility (CI). In CI, a paternally delivered modification of the sperm leads to chromatin defects and lethality during and after the first mitosis of embryonic development in multiple species. However, whether CI-induced defects in later stage embryos are a consequence of the first division errors or caused by independent defects remains unresolved. To address this question, we focused on ~1/3 of embryos from CI crosses in Drosophila simulans that develop apparently normally through the first and subsequent pre-blastoderm divisions before exhibiting mitotic errors during the mid-blastula transition and gastrulation. We performed single embryo PCR and whole genome sequencing to find a large percentage of these developed CI-derived embryos bypass the first division defect. Using fluorescence in situ hybridization, we find increased chromosome segregation errors in gastrulating CI-derived embryos that had avoided the first division defect. Thus, Wolbachia action in the sperm induces developmentally deferred defects that are not a consequence of the first division errors. Like the immediate defect, the delayed defect is rescued through crosses to infected females. These studies inform current models on the molecular and cellular basis of CI.
+Wolbachia, a vertically transmitted endosymbiont infecting many insects, spreads rapidly through uninfected populations by a mechanism known as cytoplasmic incompatibility (CI). In CI, a paternally delivered modification of the sperm leads to chromatin defects and lethality during and after the first mitosis of embryonic development in multiple species. However, whether CI-induced defects in later stage embryos are a consequence of the first division errors or caused by independent defects remains unresolved. To address this question, we focused on ~1/3 of embryos from CI crosses in Drosophila simulans that develop apparently normally through the first and subsequent pre-blastoderm divisions before exhibiting mitotic errors during the mid-blastula transition and gastrulation. We performed single embryo PCR and whole genome sequencing to find a large percentage of these developed CI-derived embryos bypass the first division defect. Using fluorescence in situ hybridization, we find increased chromosome segregation errors in gastrulating CI-derived embryos that had avoided the first division defect. Thus, Wolbachia action in the sperm induces developmentally deferred defects that are not a consequence of the first division errors. Like the immediate defect, the delayed defect is rescued through crosses to infected females. These studies inform current models on the molecular and cellular basis of CI.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Here, through a combination of live and fixed analysis, we directly address whet
 
 ## Results
 
-## Wolbachia-induced CI produces late embryonic lethality in ~30% of embryos
+### Wolbachia-induced CI produces late embryonic lethality in ~30% of embryos
 
 We used a combination of fixed and live analyses to determine the timing of defects as CI-derived embryos progressed through the early blastoderm divisions, cellularization, gastrulation, and hatching. We compared four different crosses: (1) the wild-type cross (uninfected male × uninfected female), (2) the CI-inducing cross (infected male × uninfected female), (3) the rescue cross (infected male × infected female), and (4) the reciprocal cross (uninfected male × infected female) (Figure 1A). Unless otherwise noted, we performed all experiments with D. simulans stocks that shared the same genetic background and were infected or uninfected with Wolbachia (wRi) (see Materials and methods). We used D. simulans because CI is particularly pronounced in this species and results in defects both during and after the first zygotic mitosis (Callaini et al., 1997; Callaini et al., 1996; Lassy and Karr, 1996).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig1-v1.jpg)
+
+**Figure 1.:** (A) Wolbachia infection status is indicated by filled circles. Embryos were collected from each of the four crosses and either used for egg hatch assays or aged prior to fixing and staining DNA with propidium iodide (PI). (A’) Confocal imaging of PI-stained embryos allowed categorization of embryo stage as pre-blastoderm (cycles 2–9), syncytial blastoderm (cycles 10–13), or cellular blastoderms (cycle 14). Scale bars are 50 μm. *** = p = 2 x 10-16 χ-squared test. (B, B’) Comparison between blastulation rate (% of fixed embryos staged as progressing beyond cycle 9) and egg hatch rate between each of the four crosses. Each circle represents one biological replicate of an egg hatch assay. Black and magenta lines represent the average egg hatch rate and the blastulation rate, respectively. N values correspond to the total number of embryos scored. While the hatch rate from wild-type, rescue, and reciprocal crosses closely corresponded to the blastulation rate, the hatch rate from cytoplasmic incompatibility (CI) embryos was statistically significantly decreased compared to the blastulation rate. Displayed p values were determined by χ-squared tests. (C) Embryos were collected from wild-type and CI crosses and were used to either determine embryo stage (by 4',6-diamidino-2-phenylindole (DAPI) staining) or egg hatch percentage in paired assays (collections were from the same crosses within 1 hr of each other). (D, D’) Comparison between blastulation rate (% of fixed embryos staged as progressing beyond cycle 9) and egg hatch for each cross. Each circle represents a technical replicate of one egg hatch assay and one staging experiment. Dashed lines connect paired experiments. Black and magenta lines represent the average egg hatch rate and the blastulation rate, respectively. N values correspond to the total number of embryos scored. The difference between blastulation rate and hatch rate was statistically significant by a two-sided paired t-test. ** = p = 0.007. (D’). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Embryos were collected from wild-type and cytoplasmic incompatibility (CI) crosses and either used for egg hatch assays or aged and observed live. (A’) Live observation of dechorionated embryos under a high-power dissecting scope enabled categorization of embryo stage as pre-blastoderm, syncytial blastoderm, or cellular blastoderms. Scale bars are 50 μm. (B, B’) Comparison between blastulation rate and egg hatch rate between wild-type and CI crosses. Each circle represents one round of live categorization (biological replicates). Black and magenta lines represent the egg hatch rate and the average blastulation rate, respectively. N values correspond to the total number of embryos scored. Displayed p values were determined by χ-squared tests (*** = 2 x 10-4). See also Figure 1.
 
 To determine the timing of CI-induced embryonic lethal phases, we collected embryos from all four crosses and compared egg hatch rates to the percentage of embryos that had developed to at least nuclear cycle 10 (the syncytial blastoderm stage) (Figure 1A, A’). Consistent with previous results (Hoffmann et al., 1986), we observed a severe decrease in hatching for embryos derived from CI crosses (CI = 2%; N = 2397, compare to wild-type = 92%, N = 1208; rescue = 88%, N = 1281; reciprocal = 91%, N = 1299) (Figure 1B, B’). Thus, both CI-induced embryonic lethality and its corresponding rescue by maternally supplied Wolbachia are robust in D. simulans. Our analysis of fixed embryos revealed that the percentage of embryos that had developed to nuclear cycle 10 derived from wild-type (97%, N = 117), rescue (87%, N = 66), and reciprocal (100%, N = 47) crosses matched their respective hatch rates. However, unique to the CI cross, the percentage of CI-derived embryos that had developed to nuclear cycle 10 (28%, N = 159) was significantly higher than its hatch rate (2%, p = 2 × 10−16 by χ-squared test) (Figure 1B, B’). Therefore, a second lethal phase occurs at or after cortical nuclear cycle 10 that results in a significant proportion of the reduced egg hatch in CI-derived embryos.
 
@@ -49,7 +57,7 @@ As an independent means of determining the lethal phases of embryos derived from
 
 Therefore, consistent with previous results (Bonneau et al., 2018; Callaini et al., 1997; Callaini et al., 1996; Duron and Weill, 2006; Lassy and Karr, 1996), these data suggest at least two distinct lethal stages are associated with CI: the well-described lethal phase immediately following fertilization (~70% of embryos), and a second lethal phase that occurs well after the nuclei have undergone many rounds of syncytial and cellular mitoses (~30% of embryos). Significantly, rescue acts on both phases.
 
-## Late-stage CI embryos initially develop normally through pre-blastoderm syncytial divisions before exhibiting mitotic defects and nuclear fallout during blastulation
+### Late-stage CI embryos initially develop normally through pre-blastoderm syncytial divisions before exhibiting mitotic defects and nuclear fallout during blastulation
 
 In addition to late-stage lethality, CI-derived embryos exhibit cellular defects during later stages of development (Callaini et al., 1997; Callaini et al., 1996; Lassy and Karr, 1996; LePage et al., 2017). Since CI induces defective paternal chromosome segregation during the first embryonic division, which can result in either complete or partial loss of paternal chromosomes (Bonneau et al., 2018; Landmann et al., 2009; Tram et al., 2006), cellular defects in developed CI embryos may be due to holdover from errors during first division. One of the possible consequences of improper paternal chromosome segregation in the first division is daughter nuclei that inherit only part of the paternal chromosomes. This resulting segmental aneuploidy may then carry over into the subsequent mitoses (Lassy and Karr, 1996; LePage et al., 2017). Certainly, persistent DNA damage carried by the paternal chromatin could affect repeated syncytial divisions in the form of breakage–fusion–bridge cycles (McClintock, 1941; Titen and Golic, 2008).
 
@@ -63,7 +71,7 @@ As expected, wild-type-derived embryos exhibited abnormalities in 0% (0/64) of s
 
 Thus, CI-derived embryos that bypass the first lethal phase develop normally through nuclear cycles 2–9 and then exhibit a dramatic increase in abnormal segregation and nuclear organization during the cortical nuclear cycles (10–14). The normal development through nuclear cycles 2–9 suggests that the cortical division defects observed in the CI-derived embryos are not a direct consequence of abnormal first divisions but may instead be separate CI-induced defects. Significantly, as with the first division CI-induced defects, CI-induced cortical defects are rescued when infected males are crossed to infected females.
 
-## Blastoderm embryos from CI crosses have higher rates of nuclear fallout than embryos from wild-type or rescue crosses
+### Blastoderm embryos from CI crosses have higher rates of nuclear fallout than embryos from wild-type or rescue crosses
 
 To further explore the defects that arise in blastoderm CI embryos, we performed a more sensitive assay to score the number of abnormal cortical nuclei that recede into the interior of the embryo, known as nuclear fallout. Because the fidelity of cortical nuclear divisions is maintained by a mechanism that eliminates the products of abnormal divisions from the cortex (Sullivan et al., 1990), assaying nuclear fallout provides a quantitative measure of cortical division errors (Sullivan et al., 1993). This assay is sensitive due to the lack of gap phases in cortical divisions. Even in wild-type embryos, nuclear fallout is observed at a low level (Sullivan et al., 1993). Consequently, we used this assay to determine the effect of Wolbachia-induced CI on the cortical syncytial divisions.
 
@@ -77,27 +85,43 @@ The above analyses excluded the extreme posterior region of the embryo. This is 
 
 Previous work has shown that nuclear fallout occurs via detachment of the cortical nuclei from their centrosomes (Sullivan et al., 1993). To determine if the nuclear fallout in embryos from CI crosses is due to a similar detachment from centrosomes, we next fixed embryos from CI crosses and costained with DAPI and antibodies that recognize centrosomin, a key component of centrosomes (Megraw et al., 1999; Figure 3D). Receding nuclei create a gap in the normally dividing cortical surface nuclei. The centrosomes associated with the fallen nuclei (green arrows) remained on the cortex (Figure 3D). Thus, nuclei in CI embryos regularly detach from their centrosomes and recede from the cortex.
 
-## Lagging chromosomes are a proximal cause of nuclear fallout in CI-derived embryos
+### Lagging chromosomes are a proximal cause of nuclear fallout in CI-derived embryos
 
 To determine the primary cause of the errors leading to nuclei falling out from the cortical monolayer of normally dividing nuclei, we injected early embryos with rhodamine-labeled histones and performed live imaging on a confocal microscope. Live analysis allowed us to identify receding nuclei and analyze the proximal mitotic defects that led to nuclear fallout. For both CI- and wild-type-derived embryos, we observed nuclear fallout occurred almost exclusively during the telophase-to-interphase transition (Figure 4). This is likely the result of a failure of the nuclei to maintain association with their centrosomes following errors in the preceding division.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig4-v1.jpg)
+
+**Figure 4.:** (A) Comparison of when in the cell cycle nuclei fallout in both CI- and wild-type-derived embryos. (B) Nuclei that fallout (yellow and blue circles) exhibit severely lagging chromosomes in the previous division, while nuclei that remain at the cortex (magenta circle) exhibit normal chromosome segregation. Scale bar is 5 μm, and time is written in seconds. See also Figure 4—video 1. (C) Chromosome segregation errors were significantly more frequent for nuclei destined to fallout compared to neighboring nuclei (non-fallout) in both CI- (*** = p = 3.4 × 10–6 by χ-squared test) and wild-type-derived embryos (*** = p = 8.0 × 10–4 by χ-squared test). (D) Comparison of metaphase-to-anaphase timing between nuclei destined to fallout and their neighbors that remain at the cortex in both CI- and wild-type-derived embryos. ‘Early’ = fallout nuclei enter anaphase before their neighbors. ‘On-time’ = fallout and neighboring nuclei enter anaphase simultaneously. ‘Late’ = fallout nuclei enter anaphase after their neighbors. N values correspond to the number of cells scored (biological replicates). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A whole CI-derived gastrulating embryo is outlined. Scale bars are 100 μm. Examples of divisions observed in wild-type- (B) and CI- (C) derived gastrulating embryoss. While divisions from wild-type-derived embryos are normal, divisions from CI-derived embryos exhibit a variety of lagging/bridging chromosome segregation errors (arrows). Scale bars are 2 μm. (D, D’) Comparison of chromosome segregation errors in wild-type-, CI-, and rescue-derived gastrulating embryos. Each dot represents one embryo (D), and a summation is presented in (D’). **** = p = 7.7 x 10-7; *** = p = 8.6 x 10-4; and ** = p = 0.009 by Mann—Whitney tests. N values correspond to the number of embryos scored (biological replicates). See also Figure 4.
 
 We routinely observed that nuclear fallout in telophase/interphase was immediately preceded by defective sister chromatid separation during anaphase (Figure 4B, Figure 4—video 1). While nuclei in which sister chromatids had segregated normally (Figure 4B, magenta circles) remained on the surface and entered the next cell cycle, nuclei in which sister chromatids had severely lagged (Figure 4B, yellow and blue circles) immediately receded into the interior of the embryo during the subsequent interphase. In total, 70% of nuclei destined to fallout in CI-derived embryos were preceded by lagging or bridged chromosomes, as in wild-type-derived embryos (Figure 4C).
 
 Defects causing segregation errors in nuclei destined to fallout may also result in the activation of the spindle-assembly checkpoint that would have subsequently delayed entry into anaphase. Therefore, we compared the timing of the metaphase-to-anaphase transition in divisions that resulted in fallout to those of their neighboring normal divisions (Figure 4D). Only a small fraction of nuclei destined to fallout (22%) exhibited a delay in anaphase entry compared to their neighboring nuclei (‘late’). In contrast, the vast majority entered anaphase synchronously with (74%, ‘on-time’) or preceding (4%, ‘early’) their neighbors. Interestingly, in wild-type embryos, a greater fraction (40%) of nuclei destined to fallout delayed metaphase exit. Therefore, we were unable to regularly detect spindle-assembly checkpoint-mediated delays in CI embryos at our level of temporal resolution.
 
-## Defective chromosome segregation persists after cellularization in CI-derived embryos
+### Defective chromosome segregation persists after cellularization in CI-derived embryos
 
 Following completion of nuclear cycle 13, in an event known as cellularization, each syncytial nucleus is encompassed by an ingressing plasma membrane resulting in the simultaneous formation of individual cells (Sokac et al., 2022). After cellularization, gastrulation begins (Foe, 1989). Invaginations form the head furrow, and bilateral groups of cells throughout the embryo, referred to as mitotic patches, undergo another round of mitosis. We reasoned that CI-induced segregation defects might persist in these mitoses following cellularization.
 
 To examine if chromosome segregation defects occur in CI-derived embryos after the establishment of individual cells, we fixed and DAPI-stained gastrulating embryos from wild-type, CI, and rescue crosses (Figure 4—figure supplement 1A) and quantified the frequency of division errors in each cross (Figure 4—figure supplement 1B–D’). While chromosome segregation defects in gastrulating embryos from wild-type crosses occurred at a low rate (11%, N = 321 divisions/25 embryos), CI-derived embryos exhibited a significant increase in segregation defects (34%, N = 687 divisions/40 embryos) (p = 7.7 × 10–7 by Mann–Whitney test) (Figure 4—figure supplement 1D, D’). Significantly, we observed a reduction in segregation errors in embryos from the rescue cross (19%, N = 485 divisions/30 embryos) (p = 8.6 × 10–4 by Mann–Whitney test), although the level of segregation errors was still increased compared to that of wild-type embryos (p = 0.009 by Mann–Whitney test). Thus, CI-derived embryos exhibit increased chromosome segregation errors that begin in blastoderm stages and continue post-cellularization.
 
-## ~60% of CI-derived blastoderm embryos are haploid and strongly associated with embryonic lethality, while the remaining ~40% of are diploid
+### ~60% of CI-derived blastoderm embryos are haploid and strongly associated with embryonic lethality, while the remaining ~40% of are diploid
 
 Previous studies have linked late embryonic lethality to haploid development arising from CI-induced chromosome segregation defects during the first division (Bonneau et al., 2018; Callaini et al., 1997; Duron and Weill, 2006). Should CI be strong, paternal chromosomes are completely eliminated during the first division, and embryos develop bearing only the maternal chromosome complement (Tram et al., 2006). In diplo-diploid organisms, these haploid embryos then die before hatching (Bonneau et al., 2018; Callaini et al., 1997; Duron and Weill, 2006). Our observation of mitotic defects in CI-derived blastoderm and gastrulating embryos offers a potential additional explanation for late embryonic lethality. Therefore, we wished to reexamine the relationship between complete paternal chromosome exclusion resulting in haploidy and late embryonic lethality.
 
 To assess the relationship between haploidy and lethality in CI-derived embryos, we performed CI and rescue crosses in which the Wolbachia-infected fathers transmitted an egfp transgene to all their offspring (Figure 5A). The resulting embryos from these crosses should be genotypically identical. We additionally performed wild-type crosses with uninfected fathers bearing no transgene, serving as a negative control (Figure 5A). We selected embryos that developed to the cellular blastoderm stage and performed single embryo PCR with primers complementary to the paternally transmitted egfp transgene. The egfp transgene was always detected in embryos from the positive control rescue cross (~1.4 kb band) and never detected in our negative control embryos derived from uninfected males lacking the egfp transgene (Figure 5B). In contrast, we only detected the egfp transgene in 42% (N = 91) of CI-derived cellular blastoderms (Figure 5B, C). This indicates that while many of the CI-derived blastoderm embryos are diploid, a significant proportion of late-stage CI embryos are haploid. We regularly observed that the overall percentage of egfp-positive, diploid embryos correlated with the percentage of hatched eggs from paired egg hatch assays (Figure 5C’), suggesting only the egfp-negative, haploid embryos were failing to hatch. Thus, as previously reported (Bonneau et al., 2018; Callaini et al., 1997; Duron and Weill, 2006), haploidy due to loss of paternal chromosomes is linked with late embryonic lethality.
 
-## Late-stage defects are not due to large-scale chromosome fragmentation and mosaicism after the first division
+![Figure 5.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig5-v1.jpg)
+
+**Figure 5.:** (A) Embryos were collected from wild-type crosses or CI and rescue crosses in which the father was homozygous for an egfp transgene. Embryos were staged live, and cellular blastoderms were selected for single embryo PCR analysis with primers recognizing egfp. (B) A representative gel showing detection of egfp (asterisks) in all rescue-derived embryos and in a mix of CI-derived embryos. No egfp is detected in the wild-type control. See also Figure 5—source data 1. (C) Summary of the percentage of screened CI-derived cellular blastoderms in which either egfp was absent (haploid) or egfp was present (diploid). N values correspond to the number of embryos scored (biological replicates). (C’) Comparison of the percentages of embryos that had reached at least cycle 10 (% blastula), had detectable egfp bands (% egfp + embryos) and a concomitant egg hatch (% egg hatch). Each dot represents one technical replicate, and lines connect values for the same experiment. The percentage of egfp + embryos (diploids) was more associated with the percentage of eggs that hatched (p = 0.045 by Mann–Whitney test) than with the percentage of blastoderms screened (p = 0.001 by Mann–Whitney test), suggesting haploid embryos do not hatch. (D) Embryos were collected from wild-type crosses or CI and rescue crosses in which the father was homozygous for an egfp transgene. Embryos were staged live, and cellular blastoderms were selected for single embryo sequencing. If chromosome arms were not lost during the first division, the mean depth of reads mapping to the chromosome arm should be near the mean depth of reads mapping to the genome (black box). If chromosome arms were lost during the first division, the mean depth of reads aligning to that chromosome arm should be 50% of the mean depth of reads aligning to the genome (green box). In haploids, maternal chromosome arm loss would result in no reads mapping to that chromosome arm. (E) Sequenced embryos were sorted as haploid or diploid based on the depth of reads mapping to egfp. Each box represents the mean depth of reads aligning to that gene divided by the mean depth of reads aligning to the whole genome (‘mean genome depth’). White = 0% of mean genome depth; green = 50% of mean genome depth; gray = 100% of mean genome depth; black = 150% of mean genome depth. Consistent with no partial chromosome/chromosome arm loss, genes across all chromosomes were present at 100% mean genome depth for both haploids and diploids (or 50% for X-linked genes when embryos are male). See also Figure 5—figure supplement 1. See also Figure 5—source data 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Comparison of the mean depth of reads aligning to the reference genome (A), the mitochondrial genome (B), and the reference genome normalized to the mitochondrial genome (C) in wild-type-, CI-, and rescue-derived embryos. Each dot represents one embryo (biological replicate). Gray dots are embryos in which egfp was not detected (CI = haploids, wild-type = diploid). Green dots represent embryos in which egfp was detected (CI + rescue = diploids). Displayed p values were determined with Mann–Whitney tests. See also Figure 5.
+
+### Late-stage defects are not due to large-scale chromosome fragmentation and mosaicism after the first division
 
 Although we found haploidy to be strongly associated with late embryonic lethality, haploidy does not inherently cause the type of chromosome segregation errors we regularly observed in late CI-derived embryos (Debec, 1978; Tang et al., 2017). An alternative potential cause for the segregation errors characterized here is segmental aneuploidy due to an incomplete exclusion of the paternal chromosomes during the first division that does not disrupt early embryonic development. In this scenario, partial chromosome loss or chromosome fragmentation is transmitted from the first division through seemingly normal syncytial divisions and then causes the segregation errors seen in later developmental stages.
 
@@ -105,13 +129,25 @@ To test the possibility that fragmented paternal chromosomes are transmitted thr
 
 A separate, potentially interesting, outcome of this experiment is that we found CI-derived embryos regularly had less depth of reads mapping to their entire genome than either wild-type or rescue embryos (Figure 5—figure supplement 1). This was true for both haploid and diploid CI embryos. Normalizing the depth of reads aligning to the whole genome to the depth of reads aligning to the mitochondrial genome (which should be unchanged) for each embryo suggested differences in sequencing input may not fully explain the decrease in reads mapping to CI embryos (Figure 5—figure supplement 1C). Although we cannot exclude how any variation in sequencing multiple samples may affect these results, this finding raises the intriguing possibility of intrinsic differences in the chromatin of CI and wild-type-derived blastoderm embryos.
 
-## Late-stage mitotic errors in diploid CI-derived embryos are due to a second CI-induced defect temporally distinct from the first division defect
+### Late-stage mitotic errors in diploid CI-derived embryos are due to a second CI-induced defect temporally distinct from the first division defect
 
 Given neither haploidy nor chromosome fragmentation arising from the first division defect explains the mitotic errors we observed in CI-derived blastoderms and gastrulating embryos, we hypothesized that there is instead a second, CI-induced defect completely separate from the first division defect. To test this hypothesis, we asked if CI embryos that had completely ‘escaped’ the first division defect had increased mitotic errors during later developmental stages.
 
 As described above, late-stage embryos are either haploid, missing their complete paternal chromosome complement, or diploid, having escaped any first division defect to develop with both maternal and paternal chromosome sets (Figure 5E). These diploid embryos can be identified by the presence of a paternally derived chromosome, such as the Y chromosome, which is only detectable in diploids and never in haploids (Figure 5E). The D. simulans Y chromosome can be identified by FISH with Y-specific probes (Ferree and Barbash, 2009). Therefore, we fixed gastrulating embryos from wild-type, CI, and rescue crosses, labeled the Y chromosome with fluorescent probes to select embryos that had escaped the first division defect, counterstained with DAPI to score any mitotic defects.
 
 While Y-bearing gastrulating embryos from wild-type crosses (Figure 6) exhibited relatively normal chromosome segregation, we observed lagging and bridging chromosomes in Y-bearing embryos from CI crosses (Figure 6B, white arrow). Additionally, in Y-bearing embryos from rescue crosses, chromosome segregation proceeded normally (Figure 6C). The increase in chromosome segregation errors in Y-bearing CI-derived embryos (15%, N = 1095 divisions/23 embryos) compared to Y-bearing wild-type embryos (7%, N = 1758 divisions/45 embryos) was statistically significant (p = 6.7 × 10–6 by Mann–Whitney test) (Figure 6D, D’). As the diploid, Y-bearing embryos had completely escaped the first division defects, these results demonstrate that late-stage mitotic errors are due to a second CI-induced defect independent of the first division defect. The reduction of chromosome segregation errors in Y-bearing rescue-derived embryos (9%, N = 985 divisions/32 embryos) compared to Y-bearing CI-derived embryos was also statistically significant (p = 1.1 × 10–3 by Mann–Whitney test) (Figure 6D, D’), indicating maternally supplied Wolbachia also rescue this second defect.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig6-v1.jpg)
+
+**Figure 6.:** Gastrulating embryos from wild-type (A), CI (B), and rescue (C) crosses. Embryos are hybridized with probes that specifically recognize the D. simulans Y chromosome (green arrowheads) to select for diploidy (both maternal and paternal chromosome sets present) and counterstained with DAPI (magenta). Yellow boxes indicate zoomed in regions. Scale bars are 20 and 5 μm for unzoomed and zoomed images, respectively. (A) Diploid wild-type-derived embryos exhibit relatively normal chromosome segregation. (B) Diploid CI-derived embryos have elevated rates of bridging and lagging chromosomes (arrow). (C) Diploid rescue-derived embryos exhibit relatively normal chromosome segregation. (D) Comparison of the percentage of chromosome segregation errors observed in diploid wild-type-, CI-, and rescue-derived embryos. Each dot represents one embryo. N values correspond to the number of embryos scored (biological replicates). Asterisks indicate significance by Mann–Whitney tests. Wild-type to CI: p = 6.7 x 10-6; CI to rescue: p = 1.1 x 10-3. ns = 0.26. (D’) Summary of chromosome segregation errors in wild-type-, CI-, and rescue-derived embryos. See also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Diagram of the ‘egg-to-adult’ experiment. Eggs from egg hatch assays were placed in new collection bottles. Adults were collected from hatched eggs and counted for as long as flies were eclosing. (B, B’) Comparison of egg hatch rates and hatched egg-to-adult rates. Hatched eggs from CI crosses had significantly reduced rates of developing into adults, suggesting the existence of a CI-induced lethal phase during larval development. Maternally supplied Wolbachia rescues this larval lethality. Each dot represents the rates from one collection (biological replicate). Lines connect experiments performed simultaneously. Unless otherwise indicated, p values displayed were determined with Mann–Whitney tests. (C) Comparison of the strengths of early CI defects (as judged by hatching) and late CI defects (as judged by the hatched egg-to-adult rates). In general, higher lethality in hatching correlated to higher lethality during egg-to-adult development. Each dot represents one technical replicate. Lines connect the egg hatch rate and the hatched egg-to-adult rate for each experiment. N values correspond to the total number of embryos/hatched eggs scored. See also Figure 6.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81292/elife-81292-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Examples of non-Y chromosome-containing gastrulating embryos (haploid or diploid) with extensive chromosome segregation errors. No probes targeting the Y chromosome (green) were detected in these embryos. Embryos were counterstained with DAPI (magenta). The extent of errors observed in these embryos is not observed in Y chromosome-containing diploid embryos, suggesting these embryos may be haploid and more strongly experience the second set of cytoplasmic incompatibility (CI)-induced defects. Boxes indicate zoomed in regions. Scale bars are 20 and 5 μm for unzoomed and zoomed images, respectively. See also Figure 6.
 
 Although these CI-derived embryos are diploid and are likely to hatch despite the observed division defects, we found a subsequent decrease in the rate of hatched eggs that develop into adults in CI crosses compared to both wild-type and rescue crosses (Figure 6—figure supplement 1). We collected embryos from wild-type, CI, and rescue crosses and first performed egg hatch assays. Next, we determined the number of hatched eggs from these assays that then developed into adults (Figure 6—figure supplement 1). Similar to the increased lethality in embryos derived from CI crosses, we also observed statistically significant increased lethality in larvae derived from CI crosses compared to larvae derived from wild-type crosses (Figure 6—figure supplement 1, ‘hatched egg-to-adult’, p = 0.008 by Mann–Whitney test). This larval lethality was significantly reduced in the rescue cross (Figure 6—figure supplement 1, p = 0.03 by Mann–Whitney test). In total, out of 966 eggs collected from CI crosses, 137 hatched. Of those 137 hatched eggs, only 94 (69%) developed into adults (Figure 6—figure supplement 1). In contrast, 520 of 548 (95%) and 511/588 (87%) of hatched eggs from wild-type and rescue crosses, respectively, developed into adults (Figure 6—figure supplement 1). For the progeny of CI crosses, relatively stronger embryonic lethality was often associated with relatively stronger larval lethality (Figure 6—figure supplement 1). Therefore, Wolbachia action in the sperm may induce remarkably deferred CI defects that contribute to the selective advantage of infected females by promoting increased lethality during post-hatching development.
 
@@ -149,7 +185,178 @@ How and if these proteins also contribute to CI-induced late-embryo defects rema
 
 ## Materials and methods
 
-## Drosophila stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Wolbachia riverside)</td>
+      <td>Wolbachia (wRi)</td>
+      <td>O’Neill and Karr, 1990</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>Infected</td>
+      <td>Serbus et al., 2015</td>
+      <td></td>
+      <td>Infected with wRi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>Uninfected</td>
+      <td>Casper-Lindley et al., 2011</td>
+      <td></td>
+      <td>Generated by tetracycline-curing wRi-infected stocks</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila simulans)</td>
+      <td>egfp uninfected</td>
+      <td>Holtzman et al., 2010</td>
+      <td>NDSS: 14021-0251.275</td>
+      <td>Obtained from the National Drosophila Species Stock Center (NDSS)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila simulans)</td>
+      <td>egfp Wolbachia-infected</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Generated by crossing Wolbachia from infected stock into the egfp uninfected stock</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>egfp 5′</td>
+      <td>Cruachem</td>
+      <td>PCR primers</td>
+      <td>ATCAAGCTTGTGAGCAAGGGCGAGGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>egfp 3′</td>
+      <td>Cruachem</td>
+      <td>PCR primers</td>
+      <td>ACCTCGAGCTACTTGTACAGCTCGTCCATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Y-chr-488</td>
+      <td>Ferree and Barbash, 2009</td>
+      <td>FISH probe</td>
+      <td>(AAT-AAA-C)4 conjugated to Alexa488, synthesized by Integrated DNA technologies</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Rhodamine-labeled histone</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Recombinant rhodamine-histone fusion protein</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrosomin (Rabbit polyclonal)</td>
+      <td>Megraw et al., 1999</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-488 (Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11008</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila simulans)</td>
+      <td>D. simulans reference genome</td>
+      <td>Clark et al., 2007</td>
+      <td>WUGSC mosaic 1.0/droSim1 assembly</td>
+      <td>UCSC Genome Browser</td>
+    </tr>
+    <tr>
+      <td>Gene (Wolbachia riverside)</td>
+      <td>wRi reference genome</td>
+      <td>Klasson et al., 2009</td>
+      <td>CP001391.1</td>
+      <td>GenBank</td>
+    </tr>
+    <tr>
+      <td>Gene (p-egfp plasmid)</td>
+      <td>egfp</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA-MEM2</td>
+      <td>Md et al., 2019</td>
+      <td></td>
+      <td>Version 2.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard tools</td>
+      <td>Broad Institute</td>
+      <td></td>
+      <td>Version 2.27.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDTools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td></td>
+      <td>Version 2.26.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite Advanced Fluorescence</td>
+      <td>Leica</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team</td>
+      <td></td>
+      <td>Version 4.0.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>Wickham, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI in Vectashield</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# H-1200</td>
+      <td>DNA stain (1.5 µg/ml) in mounting media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Halocarbon oil</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# H8898</td>
+      <td>For mounting embryos for live imaging</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks
 
 All stocks were grown on standard brown food (Sullivan et al., 2000) at 25°C with a 12 hr light/dark cycle. Uninfected D. simulans stocks were generated by tetracycline-curing a w- Wolbachia (wRi)-infected stock (Casper-Lindley et al., 2011; Serbus et al., 2015). Uninfected and infected stocks were allowed to grow for many generations prior to their use. Throughout these experiments, we routinely checked for the presence/absence of Wolbachia by PCR with primers against the 16s rRNA gene of Wolbachia.
 
@@ -157,11 +364,11 @@ An uninfected egfp-bearing stock was obtained from the National Drosophila Speci
 
 Embryos were collected from crosses of 3- to 5-day-old flies (Figures 1—3, Figure 1—figure supplement 1) or 2- to 4-day-old flies (Figures 4—6, Figure 4—figure supplement 1). For experiments in Figures 1—3 embryos were collected for 4 days after the initial collection. For all other experiments, embryos were collected only on the initial collection.
 
-## Egg hatch assays
+### Egg hatch assays
 
 For experiments involving egg hatch assays (Figures 1 and 4, Figure 1—figure supplement 1), collected embryos were aged in a humid chamber at 25°C for at least 30 hr before hatched eggs were counted.
 
-## Embryo fixation
+### Embryo fixation
 
 For fixed experiments assaying embryo stage, abnormalities, and nuclear fallout, 1–6 hr (Figure 1A–B’), 2.5–3 hr (Figure 1C–D’), 0–4 hr (Figure 2), and 1–4 hr (Figure 3) embryos were dechorionated in bleach, washed thoroughly in water, and transferred to a 1:1 ratio of heptane and 32% paraformaldehyde (Electron Microscopy Sciences 15714) for 5 min. Paraformaldehyde was subsequently removed and replaced with methanol and shaken vigorously. Heptane was removed and embryos stored in methanol at 4°C. Embryos were mounted directly in PI (Figure 1A–B’) or DAPI with Vectashield (Vector H-1200) (Figures 1C–D'—3).
 
@@ -171,27 +378,27 @@ For fixed experiments assaying chromosome segregation errors in gastrulating emb
 
 For fixed experiments involving FISH (Figure 6, Figure 6—figure supplement 2), 2–5 hr embryos were dechorionated in bleach, washed thoroughly in water, and permeabilized in ice-cold heptane for 2.5 min. Embryos were fixed in an ice-cold 4% paraformaldehyde–46% PBS–50% heptane mixture for 10 min. Following removal of the paraformaldehyde–PBS solution, an equal volume of ice-cold methanol was added to the heptane and shaken vigorously. Heptane was then removed. Embryos were then stored at 4°C in methanol.
 
-## Live embryo staging
+### Live embryo staging
 
 For experiments involving live embryo staging (Figure 1—figure supplement 1, Figure 5), embryos were collected for 45 min, hand dechorionated, covered in halocarbon oil, and aged in a humid chamber at 25°C for 2.5 hr. Embryo stage was either scored after this time (Figure 1—figure supplement 1) or for every 60 min (Figure 5). Embryos were staged using an Olympus SZH10 high-powered dissecting scope. Live images presented in Figure 1—figure supplement 1 were acquired on a Zeiss Axiozoom V.16 microscope equipped with a Zeiss AxioCam HRm monochrome camera. Images were acquired with Zeiss Zen software.
 
-## Embryo injection
+### Embryo injection
 
 For live imaging experiments (Figure 4), 0.5–1.5 hr embryos were hand dechorionated, placed in halocarbon oil, and injected with rhodamine-labeled histone. Embryos were imaged directly after injection in areas adjacent to the injection site.
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 Alexa488-conjugated probes targeting the D. simulans Y-chromosome (AAT-AAA-C)4 (Ferree and Barbash, 2009) were synthesized by Integrated DNA Technologies (Coralville, IA, USA). Paraformaldehyde-fixed embryos were rehydrated in PBT (PBS + 0.05% Triton + 1% BSA). Embryos were washed in 4× saline sodium citrate (SSC), 10% formamide, 50 mM imidazole for 1 hr at 37°C. Embryos were hybridized with probes in hybridization buffer (4× SSC, 10% formamide, 0.0001% dextran sulfate) at 92°C for 3 min then 37°C overnight. Embryos were washed 3× in 2× SSC, 50% formamide for 10 min at 37°C, rinsed 4× in PBS, and counterstained with DAPI in Vectashield.
 
-## Confocal imaging
+### Confocal imaging
 
 Live and fixed embryo imaging was performed on an inverted Leica DMI6000 SP5 scanning confocal microscope. DAPI was excited with a 405 nm laser and collected from 410 to 480 nm. Alexa488 was excited with a 488 nm laser and collected from 518 to 584 nm. Rhodamine was excited with a 543 nm laser and collected from 555 to 620 nm. PI was excited with 514 and 543 nm lasers and collected from 627 to 732 nm. Embryos were imaged with either ×10/0.3, ×20/0.75, ×40/1.25 oil, or ×63/1.4 oil objectives. All imaging was performed at room temperature. Images were acquired with Leica Application Suite Advanced Fluorescence software. For live imaging experiments (Figure 4), timepoints between images were every 12–60 s depending on the size of the z-stack.
 
-## Single embryo PCR analysis
+### Single embryo PCR analysis
 
 Cellularized blastoderms were individually squashed and then lysed in 10 μl buffer containing Proteinase K and ThermoPol reaction buffer (New England BioLabs) for 45 min at 60°C then 10 min at 95°C. PCR was run with 1 μl sample in 20 μl total reaction volume, using primers targeting egfp (5′: ATCAAGCTTGTGAGCAAGGGCGAGGAGC; and 3′: ACCTCGAGCTACTTGTACAGCTCGTCCATGC) (Cruachem). PCR was run as: 10 min at 95°C, 31× (30 s at 95°C, 1 min at 60°C, 1 min at 72°C), 10 min at 72°C. PCR products were resolved on a 1% agarose gel. These conditions regularly produced an ~1.4 kb band only when the egfp transgene was present.
 
-## Single embryo sequencing
+### Single embryo sequencing
 
 Cellularized blastoderms were individually squashed, frozen in liquid nitrogen, and stored at −80°C. Library preparation (NexteraXT kit) and paired-end sequencing (Illumina HiSeq, 2 × 150 bp) was performed by Azenta Life Sciences (Indianapolis, IN, USA). As samples contained host DNA, Wolbachia (wRi) DNA, and an egfp insertion, we assembled a reference genome consisting of the D. simulans genome (WUGSC mosaic 1.0/droSim1 assembly, Clark et al., 2007, UCSC Genome Browser, Santa Cruz, CA, USA), a wRi genome (Klasson et al., 2009, GenBank CP001391.1), and the egfp sequence from the p-egfp plasmid (Addgene, Watertown, MA, USA). We additionally included a 714-bp randomized sequence as a negative control.
 
@@ -199,16 +406,16 @@ Reads were aligned to the reference genome using BWA-MEM2 (2.2.1) (Md et al., 20
 
 Percent depth of a gene was calculated by dividing the average depth across a gene by the average depth across the whole genome for that embryo and multiplying by 100%. Embryos were considered diploid if the mean depth of reads aligning to the egfp transgene was meaningful (around 50% for heterozygote embryos) and reads were distributed evenly across the entirety of the egfp transgene. To decrease stochastic noise and accurately assess potential chromosome loss, we analyzed five genes from each chromosome/chromosome arm (Y, X, 2L, 2R, 3L, 3R, 4). Chromosome/chromosome arm loss was considered if the depth of reads across multiple genes on a chromosome/chromosome arm dropped from either 100% to 50% (diploid) or from 100% to 0% (haploid). As a proof of concept, an example of natural chromosome ‘loss’ can be observed in male embryos (Y-linked genes present) in which the depth of reads mapping to genes on the X chromosome are ~50% of the mean genome depth (hemizygous).
 
-## Egg-to-adult assays
+### Egg-to-adult assays
 
 Egg hatch assays were performed using embryos collected from 2- to 4-day-old flies. Eggs were counted and transferred to a new collection plate in a new collection bottle. Hatched eggs were counted after at least 30 hr. Adults were counted for each plate for as long as new adults were eclosing.
 
-## Statistical analyses
+### Statistical analyses
 
 Independent runs of an experiment were considered technical replicates. For each experiment, different cells (for scoring mitotic abnormalities directly preceding nuclear fallout), embryos (for scoring abnormalities, chromosome segregation errors, egfp presence/absence, and sequencing), or crosses (for scoring egg hatch and egg-to-adult rates) were considered biological replicates. Specific sample sizes were not explicitly determined prior to experimentation. Instead, each experiment was performed independently at least three times (i.e., three technical replicates), with the exception of the sequencing experiment (Figure 5D, E, Figure 5—figure supplement 1) in which embryos were collected once and sequenced in two batches. Additionally, the egg hatch assay for Figure 1—figure supplement 1 was performed once. Independently collected data for embryo staging in Figure 1A were pooled. No data (e.g., outliers) were excluded from analyses. Experiments were analyzed unblinded.
 
 All statistical analyses were performed in R (4.0.5, R Core Team). The following statistical tests were used: χ-squared tests (Figure 1, Figure 1—figure supplement 1) were performed on pooled data, as the null hypothesis is the frequency of embryos reaching the blastoderm stage should equal the frequency of embryos hatching; χ-squared tests (Figure 4), as the null hypothesis is the frequency of chromosome segregation errors should be similar between ‘fallout’ and ‘non-fallout’ nuclei; two-sided paired t-test (Figure 1), as samples for hatch analysis and embryo staging were collected in pairs and data were normally distributed as determined by Shapiro–Wilk tests (wild-type hatch p = 0.6; wild-type blastulation p = 0.4, CI hatch p = 0.8, CI blastulation p = 0.2); two-sided Fisher’s exact test (Figure 2), as multiple percentages were compared with the null hypothesis that frequencies should not be different across different genotypes and/or developmental stages; Kruskal–Wallis test (Figures 3 and 6, Figure 4—figure supplement 1, Figure 6—figure supplement 1), as more than two distributions were compared with no assumption of normalcy; and Mann–Whitney tests (Figures 3 and 6, Figure 4—figure supplement 1, Figure 6—figure supplement 1), as two distributions were compared with no assumption of normalcy.
 
-## Figure preparation
+### Figure preparation
 
 Graphs were created in R using the ggplot2 package (Wickham, 2016). To improve the clarity of certain panels, images were adjusted for brightness and contrast in FIJI. Figures were assembled in Adobe Illustrator (Adobe, San Jose, CA, USA).

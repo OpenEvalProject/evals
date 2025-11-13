@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0384j8v12 Daffodil Centre, The University of Sydney, a joint venture with Cancer Council NSW Sydney Australia
-2. https://ror.org/01ej9dk98 School of Population and Global Health, University of Melbourne Victoria Australia
+1. Daffodil Centre, The University of Sydney, a joint venture with Cancer Council NSW Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+2. School of Population and Global Health, University of Melbourne Victoria Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
 3. Australian Centre for Prevention of Cervical Cancer Victoria Australia
-4. https://ror.org/03r8z3t63 The Kirby Institute, University of New South Wales Sydney Australia
+4. The Kirby Institute, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
 
 † Corresponding author
 
 ## Abstract
 
-COVID-19 disrupted school attendance in many countries, delaying routine adolescent vaccination against human papillomavirus (HPV) in some settings. We used Policy1-Cervix , a dynamic model simulating HPV transmission, natural history, vaccination, cervical screening, and diagnosis of HPV-related cancers, to estimate the impact on HPV-related cancers from disruptions to HPV vaccination in a high-income setting. A baseline scenario of no disruption to HPV vaccination was modelled, which assumed uptake of the nonavalent vaccine at the age of 12 by 82.4% of females and 75.5% of males, as is the coverage in Australia. Additional lifetime HPV-related cancer cases were calculated for three disruption scenarios affecting one birth cohort (2008; aged 12 in 2020) compared to the baseline scenario: (1) 1-year delay (no doses missed); (2) 1- to 7-year delay (slow catch-up); (3) no catch-up (herd effects only). A fourth scenario assumed no catch-up HPV vaccination for two birth cohorts, that is all individuals born in 2008 and in 2009 missed vaccination (worst-case scenario). Compared to 1532 HPV-related cancer cases estimated for the baseline no disruption scenario, we found a 1-year delay could result in ≤0.3% more HPV-related cancers ( n = 4) but the increase would be greater if catch-up was slower (5%; n = 70), and especially if there was no catch-up (49%; n = 750). Additional cancers for a single missed cohort were most commonly cervical (23% of the additional cases) and anal cancers (16%) in females and oropharyngeal cancers in males (20%). In the worst-case scenario of two birth cohorts missing vaccination, ≤62% more HPV-related cancers would be diagnosed ( n = 1892). In conclusion, providing catch-up of missed HPV vaccines is conducted, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer.
+COVID-19 disrupted school attendance in many countries, delaying routine adolescent vaccination against human papillomavirus (HPV) in some settings. We used Policy1-Cervix, a dynamic model simulating HPV transmission, natural history, vaccination, cervical screening, and diagnosis of HPV-related cancers, to estimate the impact on HPV-related cancers from disruptions to HPV vaccination in a high-income setting. A baseline scenario of no disruption to HPV vaccination was modelled, which assumed uptake of the nonavalent vaccine at the age of 12 by 82.4% of females and 75.5% of males, as is the coverage in Australia. Additional lifetime HPV-related cancer cases were calculated for three disruption scenarios affecting one birth cohort (2008; aged 12 in 2020) compared to the baseline scenario: (1) 1-year delay (no doses missed); (2) 1- to 7-year delay (slow catch-up); (3) no catch-up (herd effects only). A fourth scenario assumed no catch-up HPV vaccination for two birth cohorts, that is all individuals born in 2008 and in 2009 missed vaccination (worst-case scenario). Compared to 1532 HPV-related cancer cases estimated for the baseline no disruption scenario, we found a 1-year delay could result in ≤0.3% more HPV-related cancers (n = 4) but the increase would be greater if catch-up was slower (5%; n = 70), and especially if there was no catch-up (49%; n = 750). Additional cancers for a single missed cohort were most commonly cervical (23% of the additional cases) and anal cancers (16%) in females and oropharyngeal cancers in males (20%). In the worst-case scenario of two birth cohorts missing vaccination, ≤62% more HPV-related cancers would be diagnosed (n = 1892). In conclusion, providing catch-up of missed HPV vaccines is conducted, short-term delays in vaccinating adolescents are unlikely to have substantial long-term effects on cancer.
 
 ## Introduction
 
@@ -36,11 +36,274 @@ The aim of this study was to estimate the additional lifetime HPV-related cancer
 
 In the baseline scenario of no interruption to HPV vaccination, we estimate 2583 HPV-related cancer cases would be prevented in the 2008 cohort due to HPV vaccination, equating to 63% of all HPV-related cases (Table 1). The first disruption scenario (1-year delay) would result in four (0.3%) additional lifetime cancer cases and slightly fewer cases prevented overall (2579). Under a slow vaccination catch-up strategy or in the worse cases – no vaccination catch-up for either one or two cohorts – an additional 70 (5%), 750 (49%), and 1892 (62%) cancer cases, respectively, were predicted to occur. Figure 1 presents the estimated lifetime HPV-related cancer cases for all scenarios for the 2008 cohort (left) and combined 2008 and 2009 cohorts (right).
 
+**Table 1.**
+ Estimated number of human papillomavirus (HPV)-related cancer cases and cases prevented for vaccinated and unvaccinated cohorts, and four vaccination disruption scenarios.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Modelled scenarios</th>
+      <th colspan="5">Outcomes in 2008 birth cohort*</th>
+      <th colspan="5">Outcomes in 2008 and 2009 birth cohorts†</th>
+    </tr>
+    <tr>
+      <th>Total cases</th>
+      <th>Prevented cases (unvax comparator)</th>
+      <th>Additional cases (compared to no disruption)</th>
+      <th>% Prevented (unvax comparator)</th>
+      <th>% Additional(compared to no disruption)</th>
+      <th>Total cases</th>
+      <th>Prevented cases (unvax comparator)</th>
+      <th>Additional cases(compared to no disruption)</th>
+      <th>% Prevented (unvax comparator)</th>
+      <th>% Additional(compared to no disruption)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unvaxed</td>
+      <td>3923</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>7847</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No disruption</td>
+      <td>1532</td>
+      <td>2583</td>
+      <td></td>
+      <td>63</td>
+      <td></td>
+      <td>3061</td>
+      <td>4876</td>
+      <td></td>
+      <td>63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S1: 1-year delay</td>
+      <td>1537</td>
+      <td>2579</td>
+      <td>4</td>
+      <td>63</td>
+      <td>0.3</td>
+      <td>3066</td>
+      <td>4781</td>
+      <td>5‡</td>
+      <td>63</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>S2: 1- to 7-year delay</td>
+      <td>1603</td>
+      <td>2513</td>
+      <td>70</td>
+      <td>61</td>
+      <td>5</td>
+      <td>3133</td>
+      <td>4714</td>
+      <td>72‡</td>
+      <td>62</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>S3: no catch-up</td>
+      <td>2282</td>
+      <td>1833</td>
+      <td>750</td>
+      <td>45</td>
+      <td>49</td>
+      <td>3846</td>
+      <td>4001</td>
+      <td>785‡</td>
+      <td>53</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>S4: no catch-up (two missed cohorts)</td>
+      <td>2503</td>
+      <td>1613</td>
+      <td>970</td>
+      <td>39</td>
+      <td>63</td>
+      <td>4954</td>
+      <td>2893</td>
+      <td>1892</td>
+      <td>40</td>
+      <td>62</td>
+    </tr>
+  </tbody>
+</table>
+
+_No disruption: uninterrupted HPV vaccination in females and males at age 12 with status quo uptake; scenario 1: disruption with rapid catch-up, 1-year delay in HPV vaccine catch-up; scenario 2: disruption with slow catch-up, 1- to 7-year delay in HPV vaccine catch-up; scenario 3: disruption with no HPV vaccine catch-up (herd effects only; 2008 cohort affected); scenario 4: disruption with no HPV vaccine catch-up (herd effects only; 2008 and 2009 cohorts affected).*Includes outcomes specifically for the cohort consisting of females and males born in 2008 (any effects on the 2009 cohort are not included).†Includes outcomes specifically for the cohort consisting of females and males born in either 2008 or 2009.‡Differences between these additional cases compared to additional cases in the outcomes specific to the 2008 cohort (left-hand side of table) are additional cases in unvaccinated individuals in the 2009 cohort, due to a loss in the indirect protection they received from vaccination of the 2008 cohort in the No disruption scenario due to herd effects.vax: vaccine; unvaxed: unvaccinated i.e. assuming no HPV vaccination in cohort(s)._
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/85720/elife-85720-fig1-v1.jpg)
 
 **Figure 1.:** Scenarios include two HPV vaccination catch-up scenarios [S1: 1-year delay in vaccination (rapid); S2: 1- to 7-year delay in vaccination (slow)] and two scenarios modelling the absence of vaccination catch-up, varying in the cohort affected (S3: scenario 3 affecting the 2008 birth cohort; S4: scenario 4 affectioning the 2008 and 2009 birth cohorts).
 
 Table 2 shows a breakdown of HPV-related cancer cases developed over a lifetime by cancer type and sex for the disruption scenarios. In the worst-case scenarios of missed HPV vaccination, most of the additional cancers occurred in females, and the additional cancers were most commonly cervical and anal cancers (females) and oropharyngeal, followed by anal cancers (males). When combined across both sexes, the additional cancers were most commonly oropharyngeal (>80% of which were in males) and anal cancers (mostly in females).
+
+**Table 2.**
+ Estimated number of cancer cases in modelled scenarios according to sex and cancer type.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Modelled scenarios</th>
+      <th rowspan="2">Total cases (additional compared to no disruption)</th>
+      <th colspan="5">Females, N (additional compared to no disruption)</th>
+      <th colspan="3">Males, N (additional compared to no disruption)</th>
+    </tr>
+    <tr>
+      <th>Anal</th>
+      <th>Cervical</th>
+      <th>Oropharyngeal</th>
+      <th>Vaginal</th>
+      <th>Vulvar</th>
+      <th>Anal</th>
+      <th>Oropharyngeal</th>
+      <th>Penile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="10">2008 cohort</td>
+    </tr>
+    <tr>
+      <td>Unvaxed</td>
+      <td>3923</td>
+      <td>489</td>
+      <td>788</td>
+      <td>185</td>
+      <td>162</td>
+      <td>729</td>
+      <td>389</td>
+      <td>911</td>
+      <td>271</td>
+    </tr>
+    <tr>
+      <td>No disruption</td>
+      <td>1532</td>
+      <td>100</td>
+      <td>62</td>
+      <td>86</td>
+      <td>61</td>
+      <td>580</td>
+      <td>74</td>
+      <td>423</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>Scenario 1</td>
+      <td>1537 (4)*</td>
+      <td>101 (1)</td>
+      <td>63 (1)</td>
+      <td>86</td>
+      <td>61</td>
+      <td>580</td>
+      <td>75 (1)</td>
+      <td>424 (1)</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>Scenario 2</td>
+      <td>1603 (70)*</td>
+      <td>114 (14)</td>
+      <td>74 (12)</td>
+      <td>90 (4)</td>
+      <td>64 (3)</td>
+      <td>586 (6)</td>
+      <td>85 (11)</td>
+      <td>440 (17)</td>
+      <td>150 (4)</td>
+    </tr>
+    <tr>
+      <td>Scenario 3</td>
+      <td>2282 (750)*</td>
+      <td>236 (136)</td>
+      <td>250 (188)</td>
+      <td>121 (35)</td>
+      <td>96 (35)</td>
+      <td>632 (52)</td>
+      <td>175 (101)</td>
+      <td>593 (170)</td>
+      <td>180 (34)</td>
+    </tr>
+    <tr>
+      <td colspan="10">2008 and 2009 cohorts</td>
+    </tr>
+    <tr>
+      <td>Unvaxed</td>
+      <td>7847</td>
+      <td>978</td>
+      <td>1576</td>
+      <td>370</td>
+      <td>324</td>
+      <td>1458</td>
+      <td>778</td>
+      <td>1822</td>
+      <td>542</td>
+    </tr>
+    <tr>
+      <td>No disruption</td>
+      <td>3061</td>
+      <td>199</td>
+      <td>125</td>
+      <td>172</td>
+      <td>122</td>
+      <td>1160</td>
+      <td>148</td>
+      <td>845</td>
+      <td>292</td>
+    </tr>
+    <tr>
+      <td>Scenario 42008 cohort</td>
+      <td>2503 (971)*</td>
+      <td>276 (176)</td>
+      <td>303 (241)</td>
+      <td>131 (45)</td>
+      <td>107 (46)</td>
+      <td>647 (67)</td>
+      <td>205 (131)</td>
+      <td>644 (221)</td>
+      <td>190 (44)</td>
+    </tr>
+    <tr>
+      <td>2009 cohort</td>
+      <td>2451 (922)</td>
+      <td>268 (169)</td>
+      <td>285 (222)</td>
+      <td>129 (43)</td>
+      <td>104 (43)</td>
+      <td>644 (64)</td>
+      <td>199 (125)</td>
+      <td>634 (212)</td>
+      <td>188 (42)</td>
+    </tr>
+    <tr>
+      <td>Scenario 4 total</td>
+      <td>4954 (1892)*</td>
+      <td>544 (345)</td>
+      <td>588 (463)</td>
+      <td>260 (88)</td>
+      <td>211 (89)</td>
+      <td>1291 (131)</td>
+      <td>404 (256)</td>
+      <td>1278 (433)</td>
+      <td>378 (86)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Sum of cases may not add to ‘total cases’ due to rounding.Unvaxed: assuming no HPV vaccination in cohort(s); No disruption: HPV vaccination in females and males at age 12 with coverage of 82.4% in females and 75.5% in males; scenario 1: disruption with rapid catch-up, 1-year delay; scenario 2: disruption with slow catch-up, 1- to 7-year delay; scenario 3: disruption with no catch-up (herd effects only; 2008 cohort affected); scenario 4: disruption with no catch-up (herd effects only; 2008 and 2009 cohorts affected).*The number of additional cases presented in the table does not always match the difference between case figures stated for individual scenarios in Table 2, due to rounding._
 
 In the main analysis, we explicitly modelled primary HPV cervical screening as also occurring in these cohorts, which would allow the cervical screening programme to compensate, to some extent, for cervical cancers not prevented via HPV vaccination. In the sensitivity analysis that used an incidence-based approach, the number of additional cervical cancer cases predicted was larger and cervical cancers would have comprised around 35% of the additional HPV-related cancer cases (rather than around 17–25%, when screening was modelled) (Supplementary file 1D). The percentage increase in cases was similar but somewhat higher (e.g. 54% increase in cases for one missed cohort, compared to 49% increase when screening was modelled).
 
@@ -60,11 +323,11 @@ Our findings provide evidence that rapid catch-up of missed HPV vaccine doses wo
 
 ## Methods
 
-## Model
+### Model
 
 We used Policy1-Cervix, an established modelling platform of dynamic HPV transmission, HPV natural history, cervical screening, treatment, and cancer survival that has been validated across several settings. The dynamic HPV transmission component of Policy1-Cervix incorporates HPV vaccination and was used to estimate HPV incidence by age under scenarios of disruption to vaccination coverage, compared to a no disruption scenario. The number of lifetime cervical cancer cases was subsequently estimated for the cohorts affected after explicitly modelling cervical screening (5-yearly HPV screening starting from age 25) (Smith et al., 2021) to take into account that cervical screening may prevent some cancers that would otherwise have been prevented by vaccination. In addition, HPV incidence estimated by the dynamic HPV transmission model was used in a separate incidence-based model to project the lifetime number of non-cervical HPV-related cancers in both sexes (i.e. anal, oropharyngeal, penile, vaginal, and vulvar), as previously described (Kim et al., 2021). Data included age- and sex-specific incidence of each cancer and proportion of cases attributable to vaccine-targeted HPV types (Supplementary file 1A-C). In a sensitivity analysis, we also used an analogous incidence-based approach to also estimate the impact on cervical cancer, rather than explicitly allowing screening to prevent some of the cervical cancers which would arise due to missed vaccination. Further information on the Policy1-Cervix model can be found at https://www.policy1.org/models/cervix/documentation.
 
-## Scenarios
+### Scenarios
 
 A baseline scenario of uninterrupted HPV vaccination (status quo) assumed a two-dose uptake of HPV9 at age 12 of 82.4% among females and 75.5% among males. Three disruption scenarios were modelled affecting females and males born in 2008 cohort who were aged 12 in 2020 (322,115 people). Scenario 1 assumed a fast catch-up where vaccination was delayed by one year (but no doses were entirely missed); scenario 2 assumed a slow catch-up where vaccination was delayed between 1 and 7 years with an equal proportion being caught up each year; and scenario 3 assumed there was no catch-up, and therefore any protection in the cohort would be due to herd effects only. A fourth scenario was also conducted which assumed individuals born in 2008 and in 2009 (644,230 people), missed HPV vaccination at age 12, with no catch-up.
 

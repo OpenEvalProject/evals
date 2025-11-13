@@ -45,37 +45,123 @@ To analyze the hydration pattern of GPCRs, we used here an original strategy ini
 
 ## Results
 
-## GHSR labeling
+### GHSR labeling
 
 We used L-(7-hydroxycoumarin-4-yl)-ethylglycine as a reporter of receptor local hydration. This UAA contains the L-(7-hydroxycoumarin-4-yl) (7H4MC) moiety whose emission properties are correlated to the presence of water molecules in its vicinity (Amaro et al., 2015). 7H4MC-ethylglycine was synthesized as described in the Materials and methods section and introduced in GHSR using codon suppression technology (Wang et al., 2006). To analyze receptor activation in a relevant membrane-like environment, the labeled receptor was inserted into lipid nanodiscs formed by the scaffolding MSP1E3D1 protein and a POPC:POPG mixture (see Materials and methods) (Damian et al., 2012). Under such conditions, homogeneous nanodisc populations of functional receptors were obtained (Figure 1—figure supplement 1). Of importance, the active receptor was purified through a ligand affinity chromatography step to ensure all the receptors in our preparations were competent with regard to ligand binding (Ferré et al., 2019). Accordingly, we repeatedly demonstrated that the receptor obtained under such conditions is totally functional with regard to ligand binding, and that its pharmacological profile is closely related to that of GHSR expressed in HEK cell membranes (Ferré et al., 2019).
 
 7H4MC-ethylglycine was introduced at several, single positions within the TM domains of GHSR, namely Y812.42, W1042.65, Y1062.67, F1193.28, F1213.30, I1343.43, F1794.61, W2155.41, Y2325.58, V2686.40, F2726.44, Y3037.33, or S3157.45 (superscript numbers follow Ballesteros-Weinstein numbering [Ballesteros and Weinstein, 1995; Figure 1A]). In all the cases, protein expression yields markedly decreased but, with the exception of the F1193.28 mutant that was not expressed at a detectable level, the amounts of purified receptor obtained were still compatible with the fluorescence experiments, that is, in the range of a hundred of µg per liter of bacterial culture. However, the modified receptors bearing 7H4MC-ethylglycine at position Y812.42, W1042.65, Y1062.67, F1193.28, F1213.30, F1794.61, and Y3037.43 could not be purified through the ligand affinity chromatography step, indicating that replacing the native residue with 7H4MC-ethylglycine affected their three-dimensional fold and/or their ability to bind ligands. In addition, replacing W2155.41 with 7H4MC-ethylglycine markedly decreased the basal activity of the receptor, although this mutant could still bind its ligands and be activated by ghrelin. In contrast, for the other positions, that is, I1343.43, Y2325.58, V2686.40, F2726.44, and S3157.45, replacing the naturally occurring residue with 7H4MC-ethylglycine affected neither ghrelin binding nor the receptor-catalyzed Gq activation in a relevant manner (Figure 1B, C, Figure 1—figure supplement 2, 3, 4, 5, 6). Hence, only these mutants were considered in our analyses. As shown in Figure 1D, the modified proteins displayed an emission spectrum characteristic of the 7H4MC moiety, while the wild-type receptor had no significant emission signal when excited at the same wavelength. This indicates an efficient incorporation of the labeled UAA into the receptor.
 
-## GHSR local hydration
+![Figure 1.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-v1.jpg)
+
+**Figure 1.:** (A) Position of the labeled residues in GHSR sequence. Red labeling indicates positions that were deleterious to GHSR expression and/or function. Green labeling indicates positions that did not markedly affect the pharmacological properties of the isolated receptor and were considered in the present work. (B) FRET-monitored competition assays of ghrelin for binding to GHSR assembled into nanodiscs. (C) GTP turnover for Gq catalyzed by GHSR and its labeled counterparts in the absence of ligand (apo) or in the presence of 10 µM of JMV3011, ghrelin, JMV3002, or SPA (substance-P analog). (D) Normalized emission spectrum of the apo wild-type and labeled GHSR with λexc set at 320 nm. Data in (B) and (C) is the mean value ± SD of three experiments. Statistical analyses for the data in (C) are provided in Figure 1—figure supplement 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Size-exclusion profile of the GHSR-containing nanodiscs. The nanodiscs were run on an S200 increase column (10×300) using a 25 mM HEPES, 150 mM NaCl, 0.5 mM EDTA, pH 7.5 buffer as the eluent and a 0.2 mL/min flow rate. Inset: SDS-PAGE profile of the nanodiscs. The fractions eluted from the main peak were pooled as indicated and run on a 15% polyacrylamide-0.1% SDS gel with Coomassie blue staining.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The emission intensity of the dy647 acceptor at 665 nm and that of the Lumi4-Tb donor at 620 nm were measured after excitation of the donor at 337 nm. A 10−7 M concentration of fluorescent ghrelin was used, which is in the same range than that used in the competition plot in Figure 1B. For this assay, the Lumi4-Tb donor was attached to the N-terminus of either GHSR or the leukotriene B4 receptor BLT1 inserted into nanodiscs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The left panels show free GTP for the wild-type receptor and each of the mutants used in the present work in the absence or in the presence of ligands (ligands indicated in each panel). All data is from Figure 1. The right panels show the mean difference between the apo and each of the mutant for each condition with multiplicity-adjusted 95% confidence intervals.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic representation of the construct used. This construct includes a TEV cleavage site and two additional glycines 11 residues after the receptor N-terminus. (B,C) Size-exclusion chromatography (SEC) profile of amphipol (APol)-stabilized GHSR labeled with Lumi-4 Tb before (B) and after (C) cleavage with the TEV protease. The receptor in A8-35 after labeling and desalting was run on an S200 increase (5×150) GL column (GE Healthcare) using a 50 mM potassium phosphate, 100 M KCl, pH 7.7 buffer as the eluent and a 0.2 mL/min flow rate. UV absorbance (D) and fluorescence (E) of the labeled receptor before and after cleavage with TEV protease. In both cases, the receptor used corresponds to the main peak of the SEC. The fluorescence emission spectra were recorded with an excitation wavelength set at 337 nm, that is, at the maximum emission wavelength of the caged Tb.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Structure of the fluorescent ghrelin peptide used in the ligand-binding experiments. (B) RP-HPLC chromatogram; RT = 2.16 min, UV purity (214 nm) = 99%; (C) MS-ESI(+) spectrum: Mcalculated = 3150.6 g/mol, observed m/z 1051.2 [M+3H]3+, m/z 788.6 [M+4H]4+. (D) Isotopic pattern of [M+H]+, calculated Mmonoisotopic = 3148.5 Da; observed [M+H]+ m/z 3149.5; (E) MS/MS spectrum of parent ion m/z=3149.5.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** SDS-PAGE profile of the Gαqβ1γ2 trimer used in the functional assays. The G protein trimer was run on a 15% polyacrylamide-0.1% SDS gel, with Coomassie blue staining.
+
+### GHSR local hydration
 
 We then investigated whether the fluorescence properties of 7H4MC-ethylglycine could report on the local hydration features of GHSR. To this end, we analyzed the 7H4MC emission profile for each of the positions considered. An excitation wavelength of 320 nm was systematically used to excite the neutral form of the fluorophore (Amaro et al., 2015). The emission spectra were deconvoluted into their separate components using the procedure initially described (Amaro et al., 2015). A hydration parameter H was then determined that corresponded to the sum of the contributions of the anionic and tautomer forms. This parameter is an indicator of the extent of hydration at the position considered, as the higher the H parameter the higher local hydration (Amaro et al., 2015). A difference in the H parameter inferred for the 7H4MC probe at the different positions of the apo GHSR was observed depending on the position considered (Figure 2—figure supplement 1, 2). Indeed, all positions were hydrated to some extent, but some displayed a high H value characteristic of high hydration (3.43, 6.40) whereas others displayed a low H value suggestive of a lower local hydration (5.58, 6.44, 7.45). This indicates that 7H4MC fluorescence is a good indicator to discriminate between different local hydration states in the receptor structure. Besides, these data show that local hydration, as reported by 7H4MC fluorescence, depends on the region of the TM domain considered, with some regions more accessible to the solvent than others, even for closely related positions in the receptor structure (e.g., V2686.40 and F2726.44).
 
-## Impact of ligands on GHSR local hydration
+### Impact of ligands on GHSR local hydration
 
 We then used 7H4MC fluorescence to monitor the impact of ligand binding on the hydration pattern of GHSR. To this end, the H parameter was measured in the presence of saturating concentrations in ligands from different pharmacological classes, that is, the natural full agonist (ghrelin), a neutral antagonist (JMV3011), a Gq-biased partial agonist (JMV3002), and an inverse agonist (substance-P analog [SPA]) (M'Kadmi et al., 2015; Figure 2—figure supplement 3). Binding of JMV3011 to labeled GHSR was not accompanied by a measurable change in the hydration parameter for any of the positions considered (Figure 2, Figure 2—figure supplement 4). This is to be related to our previous observations demonstrating that binding of this compound was not associated with any change in the conformation of isolated GHSR (Mary et al., 2012; Damian et al., 2015). In contrast, changes in the H parameter were observed at some specific positions upon binding of either the full agonist ghrelin, the Gq-biased agonist JMV3002, or the inverse agonist SPA. Specifically, ghrelin binding was associated with an increase in the hydration parameter at position 5.58 while local hydration at position 6.44 decreased (Figure 2—figure supplement 4, 5, 6). Besides 5.58 and 6.44, no relevant change in the hydration parameter was observed for the other positions (Figure 2—figure supplement 4). This indicates that agonist-induced GHSR activation is accompanied by a concerted parallel increase and decrease of the local hydration in specific regions of the receptor, namely here TM5 and TM6. Interestingly, no change was observed for V2686.40 whereas a decrease in the H parameter was measured for the probe at F2726.44, although both positions are close in GHSR structure. This suggests that 7H4MC fluorescence is well adapted to monitor hydration changes in a very local environment and that changes in local hydration likely occur at specific, spatially restricted sites. Perhaps not surprisingly, binding of the inverse agonist SPA was accompanied by a change in the hydration parameter opposite to that observed with ghrelin, that is, the H parameter decreased and increased for positions 5.58 and 6.44, respectively (Figure 2, Figure 2—figure supplement 4), consistent with the opposite effect of ghrelin and SPA on GHSR activation and conformational landscape (Mary et al., 2012). Finally, the hydration pattern in the presence of JMV3002 was different from that observed in the presence of ghrelin. Indeed, while the binding of this compound was still accompanied by a decrease in the hydration parameter at position 6.44, as in the case of ghrelin binding, no change was observed for the probe at position 5.58 (Figure 2, Figure 2—figure supplement 4). This could be related to the differences in the pharmacological profile of the two compounds, as ghrelin is a full agonist whereas JMV3002 is a Gq partial agonist that triggers neither Gi activation nor arrestin recruitment (M'Kadmi et al., 2015).
 
-## Structural bases of the changes in water accessibility
+![Figure 2.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-v1.jpg)
+
+**Figure 2.:** H parameter for the 7H4MC-labeled GHSR in the absence of ligand (apo) and in the presence of JMV3011, ghrelin, JMV3002, or SPA (substance-P analog). All ligands were used at a 10 µM concentration. In all cases, the data represents the mean value ± SD of three experiments. Statistical analyses are provided in Figure 1—figure supplement 2 and 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The spectra were recorded in the absence of ligand. The labeling positions are given in a snake-like plot of GHSR (Shiimura et al., 2020) (A) (red: positions deleterious to GHSR function; green: positions considered in this work), and then indicated in each panel (B–F). The excitation wavelength was set to 320 nm with an emission intensity recorded between 340 and 600 nm. The gray curve represents the experimental emission spectrum (exp). The red, blue, green, and magenta spectra represent the decomposition of the experimental spectrum into its neutral (N), complexed (C), anionic (A), and tautomeric (T) components, respectively. The orange curve (fit) corresponds to sum of the individual N, C, A, and T curves.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The left panel shows the hydration parameter for each of the mutants in the absence of ligand. Data is from Figure 2. The right panel shows the mean difference between the apo state of each of the mutants taking the modified receptor at position 3.43 as a reference, with multiplicity-adjusted 95% confidence intervals.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The left panels show the hydration parameter for each of the mutants in the absence or in the presence of ligands. Data are from Figure 2. The right panels show the mean difference between the apo and the ligand-loaded states for each of the mutants with multiplicity-adjusted 95% confidence intervals.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** All ligands were used at a 10 µM concentration (JMV3011: antagonist, ghrelin: full agonist, JMV3002: Gq-biased agonist, substance-P analog [SPA]: inverse agonist). The excitation wavelength was set to 320 nm with an emission intensity recorded between 340 and 600 nm. The black curve represents the experimental emission spectrum (exp). The red one (fit) corresponds to sum of the individual curves after decomposition of the experimental spectrum into its neutral, complexed, anionic, and tautomeric components.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** All ligands were used at a 10 µM concentration (JMV3011: antagonist, ghrelin: full agonist, JMV3002: Gq-biased agonist, substance-P analog [SPA]: inverse agonist). The excitation wavelength was set to 320 nm with an emission intensity recorded between 340 and 600 nm. The black curve represents the experimental emission spectrum (exp). The red one (fit) corresponds to sum of the individual curves after decomposition of the experimental spectrum into its neutral, complexed, anionic, and tautomeric components.
+
+### Structural bases of the changes in water accessibility
 
 To provide a structural framework to our experimental observations and observe possible differences between the hydration pattern of inactive and active-like conformers of wild-type GHSR, we then ran five MD simulations of 5 µs for each conformational state of the receptor, totalizing 50 µs of all-atoms simulation. The crystal structure of the inactive, antagonist-loaded state of the receptor has been solved (Shiimura et al., 2020) and was used as a starting point for our MD studies. Besides, two cryo-EM structures of the ghrelin receptor in complex with ghrelin or a synthetic agonist and a Gq mimetic have been posted on the BioRxiv preprint server (https://doi.org/10.1101/2021.06.09.447478). However, since the coordinates of these structures are not yet available, we had to model an active-like state of GHSR in the absence of its cognate G protein (see Materials and methods). A projection of all conformers explored during our simulations confirmed their compatibility with experimental structures, describing mainly inactive and intermediate states (based on the classification in the GPCRdb; Pándy-Szekeres et al., 2018), the latter corresponding to an activated receptor without the G protein (Figure 3—figure supplement 1).
 
 Interestingly, analysis of the statistical water distribution in GHSR confirmed that differences in the hydration pattern could exist depending on its inactive/active states (Figure 3). More importantly, these differences effectively occurred in the regions where the 7H4MC-ethylglycine residue had been inserted in our experiments. Four out of five simulations starting from the X-ray (inactive) structure of GHSR converged toward a same hydration pattern (Figure 3A-D). In the last simulation (Figure 3E), the water statistically occupied a larger volume on the intracellular side of the receptor. Of interest, this distribution of water molecules in the inactive state was in agreement with the distribution described recently for other receptors of the same family using similar methods (Venkatakrishnan et al., 2019; Bertalan et al., 2020). In agreement with our experimental data, the water distribution in the inactive conformation of the receptor showed the presence of water molecules around F2726.44 whereas Y2325.58 was not solvated. Accordingly, I1343.43 was also in contact with water molecules. However, and in contradiction with our experiments, V2686.40 was not in contact with water molecule in the inactive state whereas S3157.45 was. V2686.40 occupies a central position in the receptor whereas S3157.45 is close to the interface between TM6 and TM7 (Figure 4). If insertion of 7H4MC-ethylglycine at positions 1343.43, 2325.58, and 2726.44 are more conservative in terms of residue size, the insertion of 7H4MC in place of a valine (V2686.40) or a serine (S3157.45) suggests a stronger adaptation of the receptor fold to these mutations. To clarify the possible orientations of 7H4MC-ethylglycine into the receptor, we thus computed adiabatic maps for positions 2686.40 and 3157.45 (Figure 4—figure supplement 1). In the case of 7H4MC-ethylglycine at position 2686.40, the adiabatic map confirmed that this large residue, in comparison to a valine, allowed interaction with solvent molecules (Figure 4—figure supplement 1). For the 3157.45 position, even the adiabatic map suggested that this residue could conserve its initial orientation toward the interior of the receptor and should be highly solvated.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig3-v1.jpg)
+
+**Figure 3.:** (E and J) panels show simulations where GHSR transited from inactive to active (E) or from active to inactive (J) states, respectively. The backbone of the protein is represented as a transparent-white cartoon, while the five positions at which the L-(7-hydroxycoumarin-4-yl) (7H4MC)-ethylglycine residue was inserted are shown in licorice. Blue or orange surfaces respectively describe the hydration of the receptor using a probability of 0.3. Volumetric maps were computed using the volmap tool of visual molecular dynamics (VMD).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Red and green squares represent inactive and active experimental structures, respectively, whereas the black squares stand for structures describing intermediates. Both purple squares represent either the experimental-inactive structure or the model-active conformer of growth hormone secretagogue receptor (GHSR). Blue dots represent the projections of all conformers obtained along our MD simulations starting from the inactive state, lighter-blue dots resulting from the simulation which transited from the inactive to the active conformations. In the same way, orange dots resulted from the projection of all conformers obtained from MD simulations starting from the active-like state, while dark-orange dots stand for the simulation where TM7 closed the intracellular side of the receptor.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-v1.jpg)
+
+**Figure 4.:** GHSR is represented in white ribbons. Volumetric maps in solid surface represent the water distribution with a probability of presence of 0.3. Meshes represent the most probable (probability of 0.3) positions of residues I1343.43, Y2325.58, V2686.40, F2726.44, and S3157.45 in both states. Snapshots representing the residues in their respective shapes are drawn in licorice for visualization. Volumetric maps were computed using the volmap tool of visual molecular dynamics (VMD).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The dark isocontours in mesh represent a probability of presence of the mutated residue of 0.3, while the light isocontours in mesh represent a probability of presence of water of 0.3. The protein backbone is represented in white tubes and the most probable orientation(s) of 7H4MC are represented in licorice. Volumetric maps were computed using the volmap tool of visual molecular dynamics (VMD).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Protein backbone is represented in cartoon; the green arrows emphasize the difference between the two models.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Protein atoms are represented as lines and cartoon, each receptor has been colored differently.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The receptor is represented as cartoon and black arrows represent the direction and amplitude of eigenvectors. (A and C) represent a side and an intracellular view of the first eigenvector respectively, while (B and D) represent a side and an intracellular view of the second eigenvector, respectively.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The receptor is represented in transparent cartoon colored by residue number from red (N-terminus) to blue (C-terminus). The Cα atoms kept for the PCA are represented in spheres.
+
 Interestingly, a different hydration pattern was found in the fifth simulation. This profile was explained by a spreading of TM6 during the simulation, thus leading to conformers close to those observed when starting from the active-like state (Figure 4—figure supplement 2). Accordingly, the resulting hydration pattern was very close to that obtained in the simulations starting from the active-like state (Figure 3F-I). In this pattern, water molecules were more uniformly distributed in the receptor including its lower, intracellular part. Indeed, the main structural difference between both states was the spreading of TM6 (Figure 4—figure supplement 2), which contributed to a large water influx into the intracellular moiety of the receptor. In this pattern, and in agreement with the fluorescence experiments, I1343.43, Y2326.44, and V2686.40 were all in close contact with water molecules whereas F2726.44 was flipped toward TM5, contributing to reduce its interactions with surrounding water (Figure 4—figure supplement 3). This structural feature was found to be conserved in all GPCRs (Figure 4).
 
 We also obtained a simulation starting from the active state that showed a different behavior from other simulations, that is, a closure and a loss of hydration in the intracellular part of the receptor due to a motion of TM7 inside the receptor (Figure 3J). Such a motion was compatible with the direction coded by the experimental structures and shown by principal component analysis (PCA), where the first two eigenvectors displayed this inward motion of TM7 concomitant to TM6 spreading (Figure 4—figure supplement 4). Accordingly, in this simulation, the resulting hydration pattern was very close to those observed in the simulations starting from the inactive state (Figure 3A-D).
 
-## Impact of lipids on GHSR local hydration
+### Impact of lipids on GHSR local hydration
 
 In their native environment, receptors are surrounded not only by the solvent but also by the lipid bilayer. To provide an illustration of the impact of the environment of the ghrelin receptor on its local hydration, we finally analyzed the effect of the lipid composition of the nanodiscs on 7H4MC fluorescence for the two positions that were affected by receptor activation. Specifically, we measured the hydration parameter for the probe at positions 5.58 and 6.44 with GHSR assembled into POPC:POPG nanodiscs in the absence or presence of phosphatidylinositol-4,5-bisphosphate (PIP2), a lipid that has been shown to impact on the activity of many different membrane proteins (Hammond and Burke, 2020) including GPCRs (Yen et al., 2018) and, more recently, the ghrelin receptor (Damian et al., 2021). As shown in Figure 5, the H parameter for the two positions that were sensitive to receptor activation was further affected by PIP2. Indeed, adding 2.5% of this lipid to the nanodiscs increased the H parameter for position 5.58 and concomitantly decreased that for position 6.44. PIP2 therefore exalted the effect of the full agonist ghrelin had on the receptor hydration features. This suggests that PIP2 further shifts the conformational equilibrium toward hydration pattern associated with the active-like conformation of GHSR, indicative of an allosteric coupling between the full agonist and PIP2 for stabilizing this state. This effect could explain the impact of PIP2 on GHSR-catalyzed G protein activation (Damian et al., 2021).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63201/elife-63201-fig5-v1.jpg)
 
-**Figure 5.:** H parameter for L-(7-hydroxycoumarin-4-yl) (7H4MC)-labeled GHSR assembled into nanodiscs containing or not phosphatidylinositol-4,5-bisphosphate (PIP2) (2.5% PIP2-to-total lipids molar ratio), in the presence of 10 µM ghrelin. The data represents the mean value ± SD of three experiments.Figure 5—source data 1.
+**Figure 5.:** H parameter for L-(7-hydroxycoumarin-4-yl) (7H4MC)-labeled GHSR assembled into nanodiscs containing or not phosphatidylinositol-4,5-bisphosphate (PIP2) (2.5% PIP2-to-total lipids molar ratio), in the presence of 10 µM ghrelin. The data represents the mean value ± SD of three experiments.
 
 ## Discussion
 
@@ -97,60 +183,301 @@ In closing, the combination of incorporation of 7H4MC-ethylglycine into protei
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>BL21(DE3) Escherichia coli</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0014</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEvol-aaRS</td>
+      <td>doi: 10.1021/ja062666k</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMSP1E3D1</td>
+      <td>Addgene</td>
+      <td>#20066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21a-α5-GHSR (transfected construct; Homo sapiens)</td>
+      <td>doi: 10.1074/jbc.M111.288324</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ghrelin</td>
+      <td>This work</td>
+      <td></td>
+      <td>Synthesis is described in the Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fluorescent ghrelin</td>
+      <td>This work</td>
+      <td></td>
+      <td>Labeling is described in the Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Thrombin</td>
+      <td>Sigma</td>
+      <td>T7009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GTPase-GloTM assay</td>
+      <td>Promega</td>
+      <td>V7681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7H4MC-ethylglycine</td>
+      <td>This work</td>
+      <td></td>
+      <td>Synthesis is described the Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Sigma</td>
+      <td>A9518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloramphenicol</td>
+      <td>Calbiochem</td>
+      <td>220551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Sigma</td>
+      <td>I6758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amphipol A8-35</td>
+      <td>Anatrace</td>
+      <td>A835 100 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-DDM</td>
+      <td>Anatrace</td>
+      <td>D310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl-hemisuccinate</td>
+      <td>Anatrace</td>
+      <td>CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>POPC</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>POPG</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PIP2</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850155P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Beads SM-2</td>
+      <td>BIO-RAD</td>
+      <td>1528920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lumi4-Tb NHS</td>
+      <td>CisBio</td>
+      <td>62TBSPEA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DY647P1-maleimide</td>
+      <td>Dyomics</td>
+      <td>647P1-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amine reactive Tb chelate</td>
+      <td>Fisher</td>
+      <td>11563467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NiNTA Superflow</td>
+      <td>Qiagen</td>
+      <td>30430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin-agarose</td>
+      <td>Thermofisher</td>
+      <td>20361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Superdex S200 increase 10×300 GL</td>
+      <td>GE Healthcare (Cytiva)</td>
+      <td>28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Source 15Q 4.6×100 PE</td>
+      <td>GE Healthcare (Cytiva)</td>
+      <td>17518101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZebaSpin 40K MWCO column</td>
+      <td>Thermofisher</td>
+      <td>87766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Version 8.4.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD</td>
+      <td>doi: 10.1016/0263-7855(96)00018-5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio3D</td>
+      <td>doi: 10.1093/bioinformatics/btl461</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrodinger LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gromacs 2020.3</td>
+      <td>doi: 10.5281/zenodo.3923645</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 MSP1E3D1(-) was expressed and purified in E. coli as described (Ritchie et al., 2009). 7H4MC-ethylglycine was synthesized as described (Amaro et al., 2015) with the exception that the final product was purified using reverse-phase HPLC.
 
-## Production of 7H4MC-labeled GHSR
+### Production of 7H4MC-labeled GHSR
 
 For labeling with 7H4MC-ethylglycine, the TAG amber codon was introduced at the positions indicated in Figure 1A by site-directed mutagenesis with the pET21a expression vector encoding human GHSR fused to the α5 integrin (Damian et al., 2012). The UAA solution was prepared by dissolving 263 mg of 7H4MC-ethylglycine in 10 mL 200 mM KOH solution and filter-sterilizing. The ghrelin receptor expression vector was co-transformed with the pEvol-aaRS carrying the engineered orthogonal tRNA and aminoacyl-tRNA synthase pair (Wang et al., 2006) in BL21(DE3) E. coli cells. Cultures were grown at 37°C in 2YT medium containing ampicillin and chloramphenicol until the OD600 reached 0.5–0.6. After centrifugation, cell pellets were resuspended in fresh 2YT-ampicillin-chloramphenicol medium containing 10 mL of the UAA solution. The culture was incubated again at 37°C until OD600 reached 1 and protein expression was induced by addition of IPTG and arabinose (1 mM and 0.02%, respectively). Cell growth was continued for 16 hr at 30°C. In all cases, GHSR purification and assembly into nanodiscs was carried out as described for the unlabeled receptor (Damian et al., 2012). Briefly, the α5-GHSR fusion protein was first purified from inclusion bodies as an SDS-unfolded protein using IMAC. After cleavage of the α5 integrin partner with thrombin, the resulting receptor was dialyzed in a 50 mM Tris-HCl, 1% SDS, pH 8 buffer. Amphipol (APol)-mediated folding was then carried out by adding APol A8-35 to the SDS-solubilized receptor at a 1:5 protein/APol weight ratio in the presence of 10 µM of JMV3011. After 30 min incubation at room temperature, GHSR folding was initiated by precipitating dodecyl sulfate as its potassium salt through addition of KCl to a final 200 mM concentration. The potassium dodecyl sulfate precipitate was then removed by two 15 min centrifugations at 16,100×g. The supernatant was extensively dialyzed against a 50 mM potassium phosphate, 150 mM KCl, 10 µM JMV3011, pH 8 buffer. APols were then exchanged to n-dodecyl-β-D-maltopyranoside (β-DDM) in the presence of cholesteryl hemisuccinate (CHS). To this end, the APol/GHSR complex was incubated for 2 hr at 4°C with 0.2% (w/v) β-DDM, 0.02% (w/v) CHS in a 50 mM Tris-HCl pH 8, 150 mM NaCl, 10 µM of the JMV3011 buffer. The sample was then loaded onto a pre-equilibrated HisTrap column and the resin washed with a 50 mM Tris-HCl pH 8, 150 mM NaCl, 0.2% (w/v) β-DDM, 0.02% (w/v) CHS, 10 µM JMV3011 buffer and then with a 50 mM Tris-HCl pH 8, 150 mM NaCl, 0.1% (w/v) β-DDM, 0.02% (w/v) CHS, 10 µM JMV3011 buffer. The protein was finally eluted from the column with the same buffer containing 200 mM imidazole and dialyzed into a 25 mM HEPES, 100 mM NaCl, 2 mM β-DDM, 0.02% (w/v) CHS, 10 µM JMV3011 buffer. For reconstitution into nanodiscs, the His-tagged receptor in 25 mM HEPES, 100 mM NaCl, 2 mM β-DDM was first bound onto a pre-equilibrated Ni-NTA superflow resin at a protein-to-resin ratio at 0.1–0.2 mg of receptor per mL of slurry (batch conditions). The receptor was then mixed with 10 µM of JMV3011, and with MSP1E3D1(-) and a POPC:POPG (3:2 molar ratio) mixture, in the absence or presence of PIP2 (2.5% PIP2-to-total lipid molar ratio), at a 0.1:1:75 receptor:MSP:lipid ratio, with the receptor still immobilized on the Ni-NTA matrix. After 1 hr incubation at 4°C, polystyrene beads (Bio-Beads SM-2) were added to the slurry at an 80% (w/v) ratio and incubated under smooth stirring for 4 hr at 4°C. The resin was then extensively washed with a 50 mM Tris-HCl pH 8, 150 mM NaCl buffer, and the His-tagged receptor eluted with the same buffer containing 200 mM imidazole. After extensive dialysis in a 25 mM HEPES, 150 mM NaCl, 0.5 mM EDTA, pH 7.5 buffer, active receptor fractions were purified using affinity chromatography (Ferré et al., 2019). To this end, the receptor in lipid discs was loaded on a streptavidin-agarose column where the biotinylated JMV2959 antagonist had been bound following manufacturer’s instructions. After washing with 25 mM Tris-HCl, 150 mM NaCl, pH 7.4, the bound proteins were recovered by washing the column with the same buffer containing 1 mM of the low affinity JMV4183 antagonist. This antagonist was then removed through extensive dialysis against a 25 mM Tris-HCl, 150 mM NaCl, 0.5 mM EDTA, pH 7.4 buffer. We previously demonstrated that under such conditions all the ligand is removed from its binding site on GHSR (Ferré et al., 2019). Homogeneous fractions of GHSR-containing discs were finally obtained through a size-exclusion chromatography step on an S200 increase column (10/300 GL) using the 25 mM Tris-HCl, 150 mM NaCl, 0.5 mM EDTA, pH 7.4 buffer as the eluent (Figure 1—figure supplement 1).
 
-## Receptor labeling for ligand-binding assays
+### Receptor labeling for ligand-binding assays
 
 To avoid any labeling of the scaffolding protein, labeling of the receptor N-terminus with the amine-reactive Tb chelate for the HTRF-monitored ligand-binding assays was carried out in the APol-folded state (Damian et al., 2012), that is, before insertion into the nanodiscs. To this end, the receptor in A8-35 was dialyzed in a 50 mM potassium phosphate, 100 M KCl, pH 7.7 buffer. This pH value was determined from a series of labeling reactions we first carried out at different pH to define the optimal value for labeling essentially the protein N-terminal α-amine and not the lysyl ε-amino groups (Damian et al., 2012), which display a higher pKa value (Grimsley et al., 2009). The amine-reactive chelate was added to the protein solution (dye-to-protein equimolar ratio), and the reaction was carried out overnight at 4°C under constant stirring. The conjugate was separated from any possible unreacted labeling reagent by desalting on a ZebaSpin 40K column. Specific labeling of the N-terminal amine was assessed in a pilot experiment by the absence of fluorescence of the labeled receptor after digestion with TEV of a construct we designed to determine if labeling indeed occurred essentially at the GHSR N-terminus (Figure 1—figure supplement 4). The receptor reconstitution procedure was then continued by exchanging the APol to β-DDM and assembly into nanodiscs, as described above.
 
-## Ghrelin1-18-DY647P1 synthesis
+### Ghrelin1-18-DY647P1 synthesis
 
 The structure of the fluorescent ghrelin peptide we used in the ligand-binding experiments is shown in Figure 1—figure supplement 5. H1Gly-2Ser-3Asp(n-octanoyl)-4Phe-5Leu-6Ser-7Pro-8Glu-9His-10Gln-11Arg-12Val13Gln-14Gln-15Arg-16Lys-17Glu-18Ser-19Cys-NH2 was synthesized by solid-phase peptide synthesis starting from Agilent Amphisphere 40 RAM resin using Fmoc chemistry, HATU/DIEA system for coupling, and piperidine/DMF for deprotection. All coupling steps (5 eq.) were performed twice for 10 min, except for 15Gln, 12Val, and 11Arg where the first coupling lasted 45 min. Final deprotection was performed with a TFA/TIS/H2O (95/2.5/2.5) mixture for 3 hr. After purification by preparative RP-HPLC, the peptide (0.845 eq.) was dissolved in 1 mL of sodium phosphate solution (pH 7) and 1 mL of acetonitrile and conjugated with 1 mg of DY-647P1-maleimide (Dyomics) for 3 hr. The fluorescent peptide was directly injected on a preparative RP-HPLC column and purified (Figure 1—figure supplement 5). Their identity and purity were evaluated by mass spectrometry analyses (Figure 1—figure supplement 5). Preparative RP-HPLC was run on a Gilson PLC 2250 Purification system instrument (Villiers le Bel, France) using a preparative column (Waters DeltaPak C18 Radial-Pak Cartridge, 100 Å, 40–100 mm, 15 µm particle size) in gradient mode with a flow rate 50.0 mL/min. Buffer A was 0.1% TFA in water, and buffer B was 0.1% TFA in acetonitrile.
 
-## LC/MS analyses
+### LC/MS analyses
 
 The LC/MS system consisted of an HPLC-ZQ (Waters) equipped with an ESI source. Analyses were carried out using a Phenomenex Kinetex column (C18, 100 Å, 100×2.1 mm2, 2.6 µm). A flow rate of 0.5 mL/min and a gradient of 0–100% B in 5 min were used: eluent A, water/0.1% HCO2H; eluent B, ACN/0.1% HCO2H. Positive ion electrospray (ESI+) mass spectra were acquired from 100 to 1500 m/z with a scan time of 0.2 s. Nitrogen was used for both the nebulizing and drying gas.
 
-## MALDI MS and MS/MS analyses
+### MALDI MS and MS/MS analyses
 
 Samples were analyzed from CHCA or SA matrix deposits, in positive ion mode with a Rapiflex (Bruker Daltonics) instrument. A pulsed Nd:YAG laser at a wavelength of 355 nm was operated at a 66.7 Hz frequency with a laser focus of 29%. Data were acquired with the Flex Control software (version 4.1, Bruker Daltonics). Spectra were integrated with the Flex Analysis software (version 4.0, Bruker Daltonics), the centroid algorithm was used to assign peaks. An acceleration voltage of 25.0 kV (IS1) was applied for a final acceleration of 21.95 kV (IS2) and lense voltage of 9.6 kV. The reflectron mode was used for the ToF analyzer (voltages of 26.3 and 13.8 kV). The delayed extraction time was 30 ns. Acquisitions were performed using a reflector detector voltage of 1.722 kV. MS data were processed with the Flex Analysis software (version 4.0, Bruker Daltonics). External calibration was performed with commercial peptide mixture (Peptide Calibration Standard II, Bruker Daltonics). Fragmentation experiments were performed under laser-induced dissociation conditions with the LIFT cell voltage parameters set at 19.0 kV (LIFT 1) and 3.7 kV (LIFT 2) for a final acceleration of 29.5 kV (reflector voltage) and a pressure in the LIFT cell around 4 × 10–7 mbar. The precursor ion selector was set manually to the first monoisotopic peak of the molecular ion pattern for all analyses. MS/MS data were processed with the Flex Analysis software (version 4.0, Bruker Daltonics). Mass lists were generated according to the following parameters: SNAP as peak detection algorithm, S/N threshold 3.
 
-## G protein production
+### G protein production
 
 A Gαqβ1γ2 heterotrimer composed of the wild-type rat Gαq and bovine Gβ1 subunits and of a bovine Gγ2 subunit tagged with a hexahistidine was expressed in sf9 cells and purified as described (Kozasa, 2004). For the functional assay, the protein was further purified by ion-exchange chromatography. To this end, the heterotrimer was isolated using a Source 15Q 4.6×100 PE column. After binding of the protein to the column in a 20 mM HEPES, 30 mM sodium chloride, 1 mM MgCl2, 0.05% DDM, 100 mM TCEP, 20 mM GDP, pH 7.5 buffer and washing with the same buffer, the heterotrimer was eluted with a linear gradient of 30–500 mM NaCl and the fractions containing the G protein trimer were pooled (see SDS-PAGE profile in Figure 1—figure supplement 6).
 
-## Functional assays
+### Functional assays
 
 Competition ligand-binding assays were performed using fluorescence energy transfer with a purified receptor labeled at its N-terminus with Lumi-4 Tb NHS and the dy647-labeled ghrelin peptide (Damian et al., 2015; Leyris et al., 2011). Increasing concentrations in the competing compound were added to a receptor:ghrelin peptide mixture (100 nM concentration range). After a 30 min incubation at 15°C, fluorescence emission spectra were recorded at the same temperature between 500 and 750 nm (Cary Eclipse spectrofluorimeter, Varian) with excitation at 337 nm. GTP turnover was assessed as described (Hilger et al., 2020). All experiments were carried out at 15°C. The receptor (200 nM) was first incubated with the isolated G protein (500 nM) and, when applicable, the ligand (10 µM) for 30 min in a 25 mM HEPES, 100 mM NaCl, 5 mM MgCl2, pH 7.5 buffer. GTP turnover was then started by adding GTP (1 µM) and the remaining amount was assessed after 15 min incubation at 15°C using the GTP-Glo assay (Promega).
 
-## 7-H4MC fluorescence measurements
+### 7-H4MC fluorescence measurements
 
 Fluorescence spectra were recorded with a Cary Eclipse spectrofluorimeter (Varian) equipped with a Peltier-based temperature control device. All experiments were carried out at 15°C. The emission spectra after excitation at 320 nm were recorded between 340 and 600 nm. The normalized emission intensity was fitted by means of nonlinear least-square procedure to the sum of peak function (Amaro et al., 2015). The R-square parameter was used to estimate the goodness of the fit.
 
-## Statistical analyses
+### Statistical analyses
 
 Data in different conditions were compared by one-way ANOVA followed by Dunnett’s multiple comparison test and reporting of multiplicity-adjusted p-values and confidence intervals (Michel et al., 2020). As stated in the legends of the corresponding figures, data are presented as mean ± SD of three experiments. All analysis steps, including the sample size, were decided before looking at the data. No data was removed from the analysis. No measure to avoid experimental bias was taken.
 
-## Modeling
+### Modeling
 
-## Building of an active-like model of GHSR
+#### Building of an active-like model of GHSR
 
 The structure of GHSR was first retrieved from the PDB (6KO5) (Shiimura et al., 2020) and used as a starting point for our study. We mutated back to wild-type amino acids the two mutations (T1303.39K and N188Q) that were present in the structure to match the wild-type sequence, and modeled the extracellular loop three ab initio (ECL3 – residue G293 to I300), with MODELLER 9.19 (Webb and Sali, 2016). Two cryo-EM structures of the ghrelin receptor in complex with ghrelin or a synthetic agonist and a Gq mimetic have been posted on the BioRxiv preprint server (https://doi.org/10.1101/2021.06.09.447478). However, the coordinates of these models are not yet available. Hence, in order to capture differences in the receptor hydration pattern upon activation, we generated an active-like model of GHSR by targeted molecular dynamics (TMD) simulations performed in an explicit membrane environment. First, we modeled the target conformation based on the dopamine D2 receptor coupled to Gi (Yin et al., 2020) (D2R:Gi, PDB id: 6VMS; sequence similarity: 33%) by homology modeling using MODELLER 9.19 (Webb and Sali, 2016). The sequence alignment between GHSR and D2 was achieved with ClustalW (Larkin et al., 2007). The best out of 100 models built by MODELLER, regarding DOPE score, was further selected as the target conformation for the subsequent TMD. The TMD simulation was run with NAMD 2.13 (Phillips et al., 2020), where the inactive experimental conformation was pushed toward the newly generated active conformation. Inactive GHSR was embedded in a lipid bilayer containing 156 POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), for a size of 80×80 Å2. The system was then solvated and neutralized with a NaCl concentration around 0.15 M (17,270 water molecules, 46 sodium, and 29 chloride ions) with CHARMM-GUI (Wu et al., 2014; Brooks et al., 2009; Jo et al., 2008). In order to limit the deviation from the initial experimental structure, the force during TMD was only applied to residues of the intracellular part of TM helix 6 (TM6, from S2526.24 to L2776.49), which are known to undergo the largest conformational changes during activation of all known GPCRs. All remaining atoms of GHSR were harmonically restrained in position using a force constant of 1 kcal/mol/Å2, but residues L2395.65 to A251 (ICL3), so that the loop could follow the motion of TM6. Prior to TMD, the system was minimized using 10,000 steps of conjugate gradient as implemented in NAMD 2.13 (Phillips et al., 2020), followed by successive short equilibration procedures in NVT and NPT ensembles, to reach a final temperature of 300 K and a pressure of 1 bar using CHARMM36m force field (Huang et al., 2017). We did not modify the equilibration procedure designed by CHARMM-GUI developers (Wu et al., 2014). The TMD simulation was performed in the NPT ensemble (300 K and 1 bar) over a period of 500 ps using a force constant of 200 kcal/mol/Å2 scaled down by the number of selected atoms in TM6 (477 atoms including hydrogens). Non-bonded interactions were truncated at a distance cut-off of 12 Å applying a switching function in the range 10–12 Å, while long range electrostatics were computed via particle mesh Ewald (PME).
 
-## MD simulations of inactive and active-like conformers of wild-type GHSR
+#### MD simulations of inactive and active-like conformers of wild-type GHSR
 
 The inactive (experimental) and active (modeled) conformers of GHSR were simulated by MD with Gromacs 2020.3 using the CHARMM36m force field (Huang et al., 2017). To fit to the experimental membrane composition used in this study, each conformer was embedded in a symmetric lipid bilayer of size 80×80 Å2, where each layer was composed of 20 cholesterol, 28 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoglycerol (POPG), 42 POPC, and 10 phosphatidylinositol-4,5-bisphosphate (PIP2) (including five PIP2 protonated on one phosphate group and five PIP2 protonated on the other phosphate group, named respectively POPI24 and POPI25 in CHARMM36m force field). Systems were solvated and their charges were neutralized with a NaCl concentration around 0.15 M (17,751 water, 170 sodium, and 47 chloride ions). The simulation setup was done with the CHARMM-GUI webserver (Wu et al., 2014; Brooks et al., 2009; Jo et al., 2008). Contrary to the TMD protocol, we did change the default CHARMM-GUI procedure for equilibration. Indeed, we added three additional equilibration steps to the default CHARMM-GUI procedure. We modified the harmonic restraints on atomic positions and the number of simulation steps to allow a smooth relaxation of the systems (Supplementary file 1). We reproduced this protocol five times for each system (active and inactive) modifying the starting velocities so that the convergence of the resulting data could be discussed. The production was run in the NPT ensemble (300 K and 1 bar) for 5 µs (leading to a simulation time of 50 µs in total). It is important to notice that, during production, all restraints and constraints were removed. For all simulations, direct non-bonded interactions were truncated at a distance cut-off of 12 Å applying a switching function in the 10–12 Å range, while long range electrostatics were computed via PME.
 
-## PCA of experimental structures
+#### PCA of experimental structures
 
 To delineate the possible motions described by the plethora of available GPCRs’ experimental structures, we retrieved 268 structures of class A GPCRs from the PDB. To homogenize these data, only the part corresponding to a single isolated receptor was conserved for further analysis, for instance removing the intra- and/or extracellular partner(s) if required or other copies of the same receptor in the case of dimeric structures. The sequences of all retrieved structures were then aligned with Clustal Omega (Larkin et al., 2007) with default parameters. To perform PCA of the resulting set of coordinates, the length of the resulting sequences also required to be homogenous. As a compromise between the number of structures considered (increasing the conformational diversity) and the length of the sequence common to all receptors (improving the structural description), we decided to discard a residue at a particular position of the alignment if the latter was missing in at least two structures out of the 268. In addition, a structure was discarded if it was the only one presenting a missing residue at a specific position. Using these criteria, only six structures were deleted from the initial set (PDB id: 5WB2, 4PY0, 5ZKP, 3RZE, 4RWA, and 4DAJ). In summary, 262 structures were considered, together describing a set of 164 conserved amino acids (GHSR numbering: 45, 46, 48–68, 76–102, 120–148, 162–179, 181, 212, 213, 215–219, 221–239, 261, 263–286, 310–324). The list of the considered PDB structures together with useful information, according to GPCRdb (Pándy-Szekeres et al., 2018), can be found in Supplementary file 2. Not surprisingly, the final selection covered most of the TM domains, ensuring a good description of the internal motions coded by the ensemble of experimental structures (Figure 4—figure supplement 5). On the contrary, most residues located in the extra- or intracellular loops were excluded. Because of the variability of residues at each position of the final alignment, the PCA was performed only on the coordinates of the Cα atoms with the R package Bio3D (Grant et al., 2006).
 
-## Analysis and figure generation
+#### Analysis and figure generation
 
 All analyses were run with VMD (Humphrey et al., 1996) and the R package Bio3D (Grant et al., 2006). Figures were generated using VMD and Pymol.

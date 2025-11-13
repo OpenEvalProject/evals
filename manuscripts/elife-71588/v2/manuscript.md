@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Excitation-contraction coupling (ECC) is the process by which electrical excitation of muscle is converted into force generation. Depolarization of skeletal muscle resting potential contributes to failure of ECC in diseases such as periodic paralysis, intensive care unit acquired weakness and possibly fatigue of muscle during vigorous exercise. When extracellular K + is raised to depolarize the resting potential, failure of ECC occurs suddenly, over a narrow range of resting potentials. Simultaneous imaging of Ca 2+ transients and recording of action potentials (APs) demonstrated failure to generate Ca 2+ transients when APs peaked at potentials more negative than –30mV. An AP property that closely correlated with failure of the Ca 2+ transient was the integral of AP voltage with respect to time. Simultaneous recording of Ca 2+ transients and APs with electrodes separated by 1.6mm revealed AP conduction fails when APs peak below –21mV. We hypothesize propagation of APs and generation of Ca 2+ transients are governed by distinct AP properties: AP conduction is governed by AP peak, whereas Ca 2+ release from the sarcoplasmic reticulum is governed by AP integral. The reason distinct AP properties may govern distinct steps of ECC is the kinetics of the ion channels involved. Na channels, which govern propagation, have rapid kinetics and are insensitive to AP width (and thus AP integral) whereas Ca 2+ release is governed by gating charge movement of Cav1.1 channels, which have slower kinetics such that Ca 2+ release is sensitive to AP integral. The quantitative relationships established between resting potential, AP properties, AP conduction and Ca 2+ transients provide the foundation for future studies of failure of ECC induced by depolarization of the resting potential.
+Excitation-contraction coupling (ECC) is the process by which electrical excitation of muscle is converted into force generation. Depolarization of skeletal muscle resting potential contributes to failure of ECC in diseases such as periodic paralysis, intensive care unit acquired weakness and possibly fatigue of muscle during vigorous exercise. When extracellular K+ is raised to depolarize the resting potential, failure of ECC occurs suddenly, over a narrow range of resting potentials. Simultaneous imaging of Ca2+ transients and recording of action potentials (APs) demonstrated failure to generate Ca2+ transients when APs peaked at potentials more negative than –30mV. An AP property that closely correlated with failure of the Ca2+ transient was the integral of AP voltage with respect to time. Simultaneous recording of Ca2+ transients and APs with electrodes separated by 1.6mm revealed AP conduction fails when APs peak below –21mV. We hypothesize propagation of APs and generation of Ca2+ transients are governed by distinct AP properties: AP conduction is governed by AP peak, whereas Ca2+ release from the sarcoplasmic reticulum is governed by AP integral. The reason distinct AP properties may govern distinct steps of ECC is the kinetics of the ion channels involved. Na channels, which govern propagation, have rapid kinetics and are insensitive to AP width (and thus AP integral) whereas Ca2+ release is governed by gating charge movement of Cav1.1 channels, which have slower kinetics such that Ca2+ release is sensitive to AP integral. The quantitative relationships established between resting potential, AP properties, AP conduction and Ca2+ transients provide the foundation for future studies of failure of ECC induced by depolarization of the resting potential.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To determine the mechanism underlying the failure of ECC, we measured generation
 
 ## Results
 
-## Failure of force generation correlates with failure of the Ca2+ transient
+### Failure of force generation correlates with failure of the Ca2+ transient
 
 To confirm the K+ concentration dependence of force generation previously reported (Cairns et al., 1997; Yensen et al., 2002; Pedersen et al., 2019), we perfused solution containing elevated concentrations of K+ and measured force. Measurement of twitch force in the mouse extensor digitorum longus (EDL) following elevation of extracellular K+ revealed an initial increase in force (Figure 1A, n = 3 muscles for each K+ concentration), which was followed by a decline that became faster with higher levels of extracellular K+ (Figure 1A). With return to solution containing normal K+, force recovered rapidly. The K+ concentration dependence of force 40 min after K+ infusion was steep: between 10 and 14 mM, force went from near normal to almost 0 (Figure 1A). These findings agree well with previous studies (Cairns et al., 1997; Yensen et al., 2002; Pedersen et al., 2019).
 
@@ -57,13 +57,13 @@ In normal extracellular K+, single APs generated a robust signal ΔF/F (Figure 3
 
 We next examined whether failure to generate APs was the mechanism underlying failure to trigger Ca2+ release from the SR. When extracellular K+ was 3.5 mM, AP peak averaged +30 to + 40 mV. With elevation of K+ to 10, 12, 14, and 16 mM, AP peaks ranged from near +10 mV to –40 mV (Figure 1C and D). When APs peak between –20 and –30 mV, small ΔF/F signals could be detected and when APs peak below –30 mV, ΔF/F was 0 (Figure 1D and F). These data suggest that failure of the Ca2+ transient and force generation occurs prior to failure to initiate APs.
 
-## Failure of ECC in individual fibers
+### Failure of ECC in individual fibers
 
 To obtain a more detailed understanding of the relationships between resting potential, AP peak, and ΔF/F, we recorded from individual fibers for 7 min during infusion of solution containing 16 mM K+. When extracellular K+ was kept at 3.5 mM, the ΔF/F was stable over time, with a slight trend towards increasing (Figure 2A and B, 1.16 at 7 min vs. initial value normalized to 1, p=0.07, n = 5 fibers).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71588/elife-71588-fig2-v2.jpg)
 
-**Figure 2.:** 2+ transient in individual fibers during depolarization of the resting potential.(A) The action potentials (APs) and ΔF/Fs during a 7 min recording for a fiber expressing GCAMP6f in 3.5 mM K+. The stimulus artifact in the AP traces has been eliminated for clarity. The trace shown is not continuous. A 5 ms block of time is shown for each AP, and a 1 s block of time is shown for each ΔF/F. The time base indicated is for the time between APs and ΔF/F. (B) The APs and corresponding ΔF/F for the four time points indicated in (A) on an expanded time scale. (C) APs and ΔF/F for a fiber during infusion of solution containing 16 mM K+ (indicated by the vertical and horizontal arrows). (D) The APs and corresponding ΔF/F for the four time points indicated in (C) on an expanded time scale. (E) Plot of AP peak versus resting potential during infusion of 16 mM K+ for 12 fibers. (F) Plot of ΔF/F versus resting potential for the 12 fibers shown in (E). The ΔF/F present at a resting potential of –70 mV was normalized to a value of 1 for each fiber. (G) Plot of normalized ΔF/F versus AP peak for the 12 fibers studied.
+**Figure 2.:** (A) The action potentials (APs) and ΔF/Fs during a 7 min recording for a fiber expressing GCAMP6f in 3.5 mM K+. The stimulus artifact in the AP traces has been eliminated for clarity. The trace shown is not continuous. A 5 ms block of time is shown for each AP, and a 1 s block of time is shown for each ΔF/F. The time base indicated is for the time between APs and ΔF/F. (B) The APs and corresponding ΔF/F for the four time points indicated in (A) on an expanded time scale. (C) APs and ΔF/F for a fiber during infusion of solution containing 16 mM K+ (indicated by the vertical and horizontal arrows). (D) The APs and corresponding ΔF/F for the four time points indicated in (C) on an expanded time scale. (E) Plot of AP peak versus resting potential during infusion of 16 mM K+ for 12 fibers. (F) Plot of ΔF/F versus resting potential for the 12 fibers shown in (E). The ΔF/F present at a resting potential of –70 mV was normalized to a value of 1 for each fiber. (G) Plot of normalized ΔF/F versus AP peak for the 12 fibers studied.
 
 With infusion of 16 mM K+, depolarization of the resting membrane potential was accompanied by graded reduction in the AP peak from a maximum ranging from +15 to + 35 mV down to –25 to –45 mV (Figure 2C, D and E). Between resting potentials of –65 to –52 mV, there was rapid reduction of the peak with further depolarization. To quantitate the relationship between depolarization of the resting potential and reduction in AP peak, we fit the data for individual fibers with Boltzmann equations. For these fits, the HV limit, which represents the minimal AP peak when resting potential was elevated, was constrained to be between –30 mV and –50 mV. The V50 for the resting potential at which AP peak was half maximal was –58.2 ± 3.3 mV, the slope factor k was 1.8 ± 0.6 mV, and the average value of the half-maximal AP peak at the V50 value was –15.5 ± 4.9 mV (n = 12 fibers from six mice).
 
@@ -71,7 +71,7 @@ With depolarization during infusion of 16 mM K+, there was an initial increase i
 
 We plotted the reduction in ΔF/F versus AP peak (Figure 2G) and fit the data with a Boltzmann equation (Equation 1). For these fits, the HV was fixed to 1 and the LV was fixed to 0. The ΔF/F was half maximal at an AP peak of –21.0 ± 4.0 mV with a slope factor of 5.9 ± 1.7 mV. This relationship between peak voltage and Ca2+ transient was within the range of values obtained from voltage-clamp studies of mouse muscle fibers (Wang et al., 1999; Ferreira Gregorio et al., 2017). These data suggest that APs peaking below –30 mV trigger little to no elevation of intracellular Ca2+ and hence generate little to no force.
 
-## AP integral correlates with the Ca2+ transient
+### AP integral correlates with the Ca2+ transient
 
 To identify properties of APs that would allow for accurate prediction of ΔF/F, the correlation between normalized AP amplitude and ΔF/F was examined. A loss of 11.6 ± 1.7 mV of resting potential was required to reduce AP amplitude from 90% to 10% of maximum. In contrast, ΔF/F was reduced from 90% to 10% of maximum with a loss of only 4.1 ± 2.4 mV of resting potential (p<1 × 10–6 vs. APs, n = 12, paired Student’s t-test). This difference led us to look for another AP parameter that more closely correlated with the reduction in ΔF/F.
 
@@ -79,7 +79,11 @@ As shown in Figure 2G, an AP peak above –30 mV is required to consistently tri
 
 To include changes in both AP half width and peak, the integral of AP voltage with respect to time was measured. The integral above –30 mV was used to account for the lack of ΔF/F when APs peaked below –30 mV. AP integral closely paralleled ΔF/F during depolarization of the resting potential (Figure 3A and B). When the normalized ΔF/F was plotted against normalized AP area, the mean R2 value was 0.86 ± 0.11 (Figure 3C, p<0.001 vs. the R2 value for ΔF/F vs. AP peak, n = 12 fibers, paired t-test). The R2 value was larger for AP area vs. ΔF/F because AP area more closely mimicked the rapid decrease in ΔF/F (Figure 3B).
 
-## Failure of AP propagation in individual fibers
+![Figure 3.](https://cdn.elifesciences.org/articles/71588/elife-71588-fig3-v2.jpg)
+
+**Figure 3.:** (A) The AP traces and ΔF/F recorded from two muscle fibers during infusion of 16 mM K+. A horizontal line at –30 mV represents the cutoff for measurement of AP area and normalized AP peak. APs peaking below –30 mV had peaks and areas set to 0. Below the AP, traces are the corresponding ΔF/F. The stimulus artifact has been truncated in the AP traces for clarity. (B) Plots of normalized AP peak, normalized AP area, and normalized ΔF/F versus resting potential for two fibers. The numbers 1–5 on each plot represent the points corresponding to the five AP and ΔF/F traces shown in (A). (C) Plots of the normalized ΔF/F versus either AP area or AP peak for the two fibers in (A) and (B). The line of identity is drawn on each plot as a reference. The R2 value for each relationship is shown on the graph.
+
+### Failure of AP propagation in individual fibers
 
 The correlation between Ca2+ transient and integrated AP peak above a threshold suggests a mechanism by which force generation can fail even in the presence of APs. Another possibility is that small APs triggered by depolarization may fail to propagate. To measure AP propagation, fibers were imaged with a ×5 objective and the current injecting and membrane potential measuring electrodes were separated by 1.6 mm. Impalement of the same fiber was achieved using the fluorescent signal generated by fibers expressing GCAMP6f (Figure 4A). The length constant of mouse EDL fibers is close to 0.5 mm (Riisager et al., 2014) such that depolarization due to passive spread of current from the current injecting electrode would be expected to be a minor contributor to depolarization of the membrane potential at the recording electrode. We confirmed that the 0.2 ms current injection used to trigger APs did not spread to the recording electrode: injection of 1000 nA of hyperpolarizing current for 0.2 ms caused no detectable voltage deflection (data not shown).
 
@@ -101,7 +105,7 @@ To confirm that APs generated at the current injecting electrode sometimes faile
 
 **Figure 5.:** (A, C) Eight superimposed, selected APs from two fibers during infusion of 16 mM K+. (B, D) The ΔF/F at the 20 regions of interest (ROIs) along the length of the fibers for each of the eight APs shown in (A, C). The upward-pointing arrow indicates the position of the stimulating electrode, the downward-pointing arrow indicates the position of the recording electrode. The dashed boxes indicate the ΔF/F furthest from the stimulating electrode. At the right are shown the eight superimposed ΔF/Fs for the ROI furthest from the stimulating electrode. In both (B) and (D), ECC was judged to have succeeded in stimulations 1–6, there were no indeterminate stimulations, and ECC was judged to have failed in stimulations 7 and 8. (E) Plots of muscle means from 10 mice for parameters when EEC succeeded versus when ECC failed. Each point represents an average of 2–5 muscle fibers from a muscle.
 
-## The role of Nav1.4 and Cav1.1 inactivation in depolarization-induced failure of ECC
+### The role of Nav1.4 and Cav1.1 inactivation in depolarization-induced failure of ECC
 
 When severe enough, depolarization of the resting membrane potential triggers both inactivation of Nav1.4 channels and inactivation of Ca2+ release from the SR (Ferreira Gregorio et al., 2017; Cannon, 2018; Hernández-Ochoa and Schneider, 2018). The trigger for Ca2+ release from the SR is gating charge movement of Cav1.1 channels, which has a midpoint of inactivation of –57 mV (Ferreira Gregorio et al., 2017); a membrane potential at which ΔF/F sharply decreases.
 
@@ -109,7 +113,7 @@ To determine whether inactivation of Nav1.4 channels and/or inactivation of SR C
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71588/elife-71588-fig6-v2.jpg)
 
-**Figure 6.:** 2+ release can be evoked after depolarization-induced failure of excitation-contraction coupling (ECC).(A) Shown are eight current injections and the corresponding action potentials (APs) in a fiber during infusion of 16 mM K+. Following >90% reduction in ΔF/F at the site of current injection, the duration of the current injection was increased to 5 ms to trigger an artificial ‘AP’ in stimulation #8. The ‘AP’ peak triggered is similar to the peak of the AP in that fiber prior to infusion of 16 mM K+ (stimulation #1). (B) The ΔF/F at the 20 regions of interest (ROIs) along the length of the fiber for each of the eight APs shown in (A). The upward-pointing arrow indicates the position of the stimulating electrode, the downward-pointing arrow indicates the position of the recording electrode. The dashed boxes indicate the ΔF/F closest to the stimulating electrode. (C) Eight superimposed ΔF/Fs for the ROI closest to the stimulating electrode. In the example shown, the 5 ms injection of current triggered a ΔF/F that was 87% of that triggered by an AP in that fiber at a resting potential of –70 mV. (D) Plot of muscle means from five muscles for ΔF/F triggered by a 5 ms current injection normalized to ΔF/F for APs from the same fibers at a resting potential of –70 mV.
+**Figure 6.:** (A) Shown are eight current injections and the corresponding action potentials (APs) in a fiber during infusion of 16 mM K+. Following >90% reduction in ΔF/F at the site of current injection, the duration of the current injection was increased to 5 ms to trigger an artificial ‘AP’ in stimulation #8. The ‘AP’ peak triggered is similar to the peak of the AP in that fiber prior to infusion of 16 mM K+ (stimulation #1). (B) The ΔF/F at the 20 regions of interest (ROIs) along the length of the fiber for each of the eight APs shown in (A). The upward-pointing arrow indicates the position of the stimulating electrode, the downward-pointing arrow indicates the position of the recording electrode. The dashed boxes indicate the ΔF/F closest to the stimulating electrode. (C) Eight superimposed ΔF/Fs for the ROI closest to the stimulating electrode. In the example shown, the 5 ms injection of current triggered a ΔF/F that was 87% of that triggered by an AP in that fiber at a resting potential of –70 mV. (D) Plot of muscle means from five muscles for ΔF/F triggered by a 5 ms current injection normalized to ΔF/F for APs from the same fibers at a resting potential of –70 mV.
 
 When the duration of current injection was increased to 5 ms, a 10–20 mV depolarization caused by opening of Na channels was superimposed on the depolarization caused current injection (Figure 6A). The ΔF/F triggered by the artificial ‘AP’ was normalized to the ΔF/F in that fiber triggered by an AP when resting potential was –70 mV. The mean ‘AP’ peak triggered by 5 ms current injection was 26.2 ± 6.3 mV (n = 13 fibers from five muscles) and was triggered at a mean resting potential of –51.6 ± 4.6 mV. The ΔF/F triggered by the ‘AP’ averaged 92% ± 10% of the ΔF/F triggered by APs from the same fiber at a resting potential of –70 mV (Figure 6C and D). While these data do not rule out partial inactivation of SR Ca2+ release, they suggest that following depolarization of the resting potential to –52 mV there is, at most, modest inactivation of SR Ca2+ release. We conclude that inactivation of Nav1.4, and the resultant failure of APs to sufficiently depolarize the fiber, is the primary mechanism underlying depolarization-induced failure of ECC.
 
@@ -117,7 +121,7 @@ When the duration of current injection was increased to 5 ms, a 10–20 mV depol
 
 While the steps underlying ECC in skeletal muscle have been well studied, the properties of APs necessary for successful ECC have not been determined. Elevation of extracellular K+ causes AP peaks to vary by 70 mV in amplitude, ranging from +30 to –40 mV. We combined intracellular recordings of APs at different distances from the stimulating electrode with Ca2+ imaging to determine the AP characteristics necessary for successful conduction and ECC. Ours is the first study to determine quantitative relationships between resting potential, APs, AP propagation, and the Ca2+ transients that trigger contraction during ECC in skeletal muscle. Understanding these relationships provides the foundation for future studies of depolarization-induced failure of ECC in various disease states such as periodic paralysis, ICU-acquired weakness, and perhaps fatigue during strenuous exercise.
 
-## APs peaking above –21 mV propagate
+### APs peaking above –21 mV propagate
 
 Several studies have suggested that failure of AP conduction can be an important contributor to failure of ECC in certain situations. Conduction velocity of mouse EDL muscle fibers has previously been measured using a three-electrode intracellular recording set up and by using a Ca2+ indicator dye (Riisager et al., 2014; Banks et al., 2018). Declines in AP peak and AP area and the resultant failure to conduct along the length of muscle fibers were found during prolonged repetitive stimulation of fibers (Riisager et al., 2014). Nonpropagating Ca2+ release triggered by depolarization at the end of fibers during bipolar extracellular stimulation has also previously been demonstrated (Hernández-Ochoa et al., 2016; Banks et al., 2018). However, as the findings were qualitative in nature, they did not make possible use of AP characteristics to predict success or failure of ECC.
 
@@ -125,11 +129,11 @@ We combined imaging of ΔF/F with recordings of APs to gauge the success or fail
 
 It has been suggested that failure of APs to propagate into t-tubules can contribute to reduction of Ca2+ release from the SR (Rassier and Minozzo, 2016). We propose that conduction of APs along the length of fibers fails prior to failure of APs to conduct into t-tubules. This hypothesis is based on our finding that APs can be generated that trigger a local Ca2+ signal in the region of the stimulating electrode. For this to occur, the AP must propagate into t-tubules near the stimulating electrode, but not along the length of the fiber. However, to definitively determine whether failure of APs to propagate into t-tubules is an early event in depolarization-induced failure of ECC, it would be necessary to directly measure t-tubule propagation.
 
-## The integral of AP voltage predicts the local Ca2+ transient
+### The integral of AP voltage predicts the local Ca2+ transient
 
 Our study and previous work suggest that Ca2+ release from the SR begins to be triggered at voltages of –30 to –20 mV and becomes maximal at voltages above +10 mV (Wang et al., 1999; Braubach et al., 2014). Because APs peaking below –30 mV do not trigger elevation of Ca2+, we set –30 mV as 0 and normalized AP peaks. Following normalization, the relationship between AP peak and the local Ca2+ transient was good, but we wished to determine whether a closer relationship could be identified. It has previously been reported that depolarization of the resting potential triggers widening of APs (Yensen et al., 2002), and a recent computer simulation study suggested that widening of APs contributes to the increase in Ca2+ signal that occurs following modest depolarization of the resting potential (Senneff and Lowery, 2021; see, however, Yensen et al., 2002). A previous study measured the area of the AP above –20 mV to estimate effects of changes in APs during repetitive stimulation on contractility (Riisager et al., 2014). To incorporate consideration of both peak voltage and AP width, we took the integral of AP voltage with respect to time. This measure of APs closely correlated with the decrease in local Ca2+ transient. AP integral did not correlate with the increase in Ca2+ transient occurring with mild depolarization of the resting potential. One contributor to this discrepancy may be the elevation in resting Ca2+ following depolarization of the resting potential (Pedersen et al., 2019).
 
-## Distinct AP properties controlling conduction and Ca2+ release
+### Distinct AP properties controlling conduction and Ca2+ release
 
 We propose that the AP parameter responsible for propagation is the peak voltage, whereas the AP property responsible for Ca2+ release in each region of the fiber is the integral of AP peak with respect to time. This hypothesis is based on the physiology of the channels involved in each of these steps in ECC. Propagation of APs along the length of fibers is governed by Na+ channels, which have rapid kinetics (Mantegazza et al., 2021). Because Na+ channels activate rapidly, the duration of even narrow APs in one section of the fiber is more than sufficient to trigger opening of Na+ channels in the adjacent region. Thus, widening of APs with depolarization of the resting potential would not be expected to enhance propagation. Our data is consistent with AP peak being the AP parameter responsible for successful conduction.
 
@@ -137,41 +141,79 @@ Release of Ca2+ from the SR is governed by gating of Cav1.1 channels in the t-tu
 
 Despite being controlled by different aspects of the AP, depolarization-induced failure of conduction and failure to trigger Ca2+ release occur almost simultaneously. While a localized Ca2+ transient was often present at the time of failure of AP propagation, minimal additional depolarization of the resting potential caused failure of the local Ca2+ transient as well. This is because widening of the AP can only compensate so much for reduction in AP peak. Once the AP peak is <–30 mV, no Ca2+ release is triggered regardless of increases in AP width. Very little additional depolarization of the resting membrane potential is needed to reduce AP peaks from –20 mV to –30 mV.
 
-## Inactivation of Nav1.4 rather than inactivation of SR Ca2+ release appears to cause depolarization-induced failure of ECC
+### Inactivation of Nav1.4 rather than inactivation of SR Ca2+ release appears to cause depolarization-induced failure of ECC
 
 Recording in individual fibers during infusion of 16 mM K+ resulted in higher AP peaks and thus larger Ca2+ transients at a given resting potential than were obtained from sampling fibers from muscles perfused with different concentrations of K+ (Figure 1C vs. Figure 2E and Figure 1E vs. Figure 2F). One potential explanation of this difference is the speed of depolarization. In recordings from individual fibers, infusion of 16 mM K+ triggered an ~30 mV depolarization over several minutes. When sampling fibers from muscles in solutions with varying K+ concentrations, muscles were incubated in each solution for 20 min prior to recording of APs. The prolonged depolarization allows for greater slow inactivation of Na+ channels (Ruff, 1996; Ruff, 1999; Rich and Pinter, 2003), such that AP peak decreased at more negative resting potentials. In rat EDL muscle fibers, slow inactivation occurs at resting potentials more negative than fast inactivation (Ruff, 1999; Rich and Pinter, 2003). Thus, in situations where muscle fibers are chronically depolarized, slow inactivation plays a critical role in reducing excitability.
 
 One factor that might contribute to failure of the Ca2+ transient is inactivation of SR Ca2+ release (Ferreira Gregorio et al., 2017; Hernández-Ochoa and Schneider, 2018). However, when 5 ms injections of current were used to trigger depolarization of inexcitable fibers with a mean resting potential of –52 mV, the average ΔF/F was ~90% as large as the maximal ΔF/F triggered by APs in the same fibers. While not definitive, these data suggest that inactivation of SR Ca2+ release is a minor contributor to failure of ECC triggered by depolarization of the resting potential. We hypothesize that inactivation of Nav1.4 and the resultant reduction in AP peak is the primary factor responsible for depolarization-induced failure of ECC.
 
-## Limitations
+### Limitations
 
 We used a voltage cutoff for the AP integral of –30 mV. This may not be the correct cutoff for all fibers. As shown in Figure 2G, there was a 15 mV range of AP peaks in different fibers at which there began to be a Ca2+ transient. The use of the AP integral as described in this work is a simplification of the underlying processes. Both the magnitude and time course of gating charge movement in response to membrane potential changes are complex and nonlinear (Ferreira Gregorio et al., 2017). The Ca2+ indicator used has slow kinetics and is high affinity. Saturation cannot be ruled out such that further work will need to be performed with dyes with more rapid kinetics and lower affinity to confirm conclusions regarding the relationship between AP properties and SR Ca2+ release.
 
-## Summary
+### Summary
 
 Ours is the first study of excitation contraction coupling to establish quantitative relationships between resting potential, generation of APs, conduction of APs, and generation of Ca2+ transients in individual fibers. Understanding these relationships provides the foundation for studies of failure of ECC triggered by depolarization of the resting potential.
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>GCAMP6f mice</td>
+      <td>Jackson Labs</td>
+      <td>Stock: cat #028865 crossed with cat# 030218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-benzyl-p-toluenesulfonamide (BTS)</td>
+      <td>TCI America</td>
+      <td>Prod. #: B3082</td>
+      <td>0.05 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>http://ced.co.uk/downloads/latestsoftware</td>
+      <td></td>
+      <td>Version 8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were performed in accordance with the policies of the Animal Care and Use Committee of Wright State University and were conducted in accordance with the United States Public Health Service’s Policy on Humane Care and Use of Laboratory Animals.
 
 Mice expressing GCAMP6f (Chen et al., 2013) in skeletal muscle were generated by crossing floxed GCAMP6f mice (Jackson Labs, B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ, cat #028865) with mice expressing parvalbumin promoter-driven Cre (Jackson Labs, B6.129P2-Pvalbtm1(cre)Arbr/J, cat# 030218). Mice were sacrificed using CO2 or isoflurane inhalation followed by cervical dislocation.
 
-## Solutions and temperature
+### Solutions and temperature
 
 All experiments were performed at 21–23°C within 4 hr of sacrifice. The same solutions were used for both force experiments and intracellular recording performed on EDL muscle fibers. The control solution contained (in mM) 118 NaCl, 3.5 KCl, 1.5 CaCl2, 0.7 MgSO4, 26.2 NaHCO3, 1.7 NaH2PO4, and 5.5 glucose and maintained at pH 7.3–7.4 by aeration with 95% O2 and 5% CO2. Solutions containing elevated concentrations of KCl (3.5, 10, 12, 14, and 16 mM) had corresponding reduction in NaCl (118, 111.5, 109.5, and 105.5 mM respectively).
 
-## Ex vivo force measurements
+### Ex vivo force measurements
 
 The EDL muscle was dissected, and the proximal tendon was tied with a 6-0 caliber silk suture to a bar attached to a custom recording chamber. The distal tendon was tied to a hook and attached to the force transducer (Aurora Scientific). The EDL was stimulated with two platinum electrodes placed parallel to the muscle in the bath. The force transducer was controlled by a 305C two-channel controller (Aurora Scientific) and digitized by a Digidata 1550B digitizer (Molecular Devices). A S-900 pulse generator (Dagan) was used to generate 1 ms 100 V pulse. The pulse generator was triggered using pCLAMP 11 data acquisition and analysis software with a sampling frequency of 10 kHz. No filtering was applied to the signal. Optimal length was determined by adjusting the tension of the muscle until maximal twitch force was achieved. During force recordings, the muscle was exposed to normal K+ solution for 20 min, followed by high K+ solution (10–16 mM) for 45 min, and then washed again with normal K+ solution for 25 min to follow recovery. The EDL was stimulated with a twitch pulse every 5 min, and force was recorded.
 
-## Ex vivo recordings of APs
+### Ex vivo recordings of APs
 
 To prevent contraction, muscles were loaded with 50 μM BTS (N-benzyl-p-toluenesulfonamide, Tokyo Chemical Industry, Tokyo, Japan, Cat#B3082) dissolved in DMSO for 45 min prior to recording. Muscle was stained with 10 µM 4-(4-diethylaminostyrl)-N-methylpyridinium iodide (Molecular Probes, discontinued). Muscle fibers were impaled with two sharp microelectrodes filled with 2 M potassium acetate solution containing 1 mM sulforhodamine 101 (Sigma-Aldrich, Cat#S7635) to allow for visualization. Resistances were between 15 and 30 MΩ, and capacitance compensation was optimized prior to recording. APs were evoked by a 0.2 ms injection of current ranging from 100 to 1000 nA. For recordings of APs during infusion of 16 mM K+, after threshold was determined current injection was increased to 150% of threshold and perfusion of 16 mM K+ was initiated. In studies of Ca2+ release following failure of ECC, depolarization was achieved by increasing the duration of current injection to 5 ms. Fibers with resting potentials more depolarized than –74 mV in solution containing 3.5 mM KCl were discarded. Sampling frequency was 10 kHz with a 5 kHz-low pass filter.
 
-## Imaging of ΔF/F
+### Imaging of ΔF/F
 
 Muscle expressing GCAMP6f was imaged without staining (LeiCa2+ I3 cube, band pass 450–490, long pass 515). Imaging was synchronized with triggering of APs using a Master-8 pulse generator (A.M.P.I., Jerusalem). Frames were acquired at 30 frames per second with a sCMOS camera (CS2100M-USB) using ThorCam software (Thorlab Inc, NJ). During infusion of solution containing high K+, APs were triggered every 5 s. Each AP was synchronized with capture of 48 frames at 30 frames/s. Images were analyzed using ImageJ (NIH).
 
@@ -179,12 +221,16 @@ To confirm that the sampling rate of 30 Hz was not missing an early peak in Ca2+
 
 For studies of the dependence of the Ca2+ transient on AP properties, fibers were imaged using a ×40 objective and a single ROI 50–100 μm from the current injecting electrode was analyzed. For studies of conduction of APs along the length of the fiber, fibers were imaged using a ×5 objective. Placement of both electrodes in the same fiber was accomplished using the fluorescence signal triggered along the length of the fibers expressing GCAMP6f after triggering of an AP. ROIs were selected at regular lengths along the length of the muscle fiber being stimulated. The signal between stimuli in each ROI was used to record background, which was subtracted from peak signal detected after stimulation.
 
-## Fitting of data with Boltzmann equations
+### Fitting of data with Boltzmann equations
 
-Data for AP peak vs. resting potential, Ca2+ image intensity vs. AP, and Ca2+ image intensity vs. resting potential were all fit to a Boltzmann equation:(1)Out=LV+HV-LV1+eV50-Vk
+Data for AP peak vs. resting potential, Ca2+ image intensity vs. AP, and Ca2+ image intensity vs. resting potential were all fit to a Boltzmann equation:
+
+$$
+Out=LV+\frac{HV-LV}{1+e^{\frac{V50-V}{k}}}
+$$
 
 where Out represents the dependent variable (either AP peak or Ca2+ image intensity), V is the independent voltage variable (either resting potential or AP peak), LV is the limiting value when V is very low (toward more negative), HV is the limiting value when V is very high (toward more positive), V50 is the value of V at which Out is halfway between HV and LV, and k is the slope factor. All voltages and the variable k are expressed in mV, and Ca2+ image intensity is in arbitrary units between 1 for maximum intensity for each experiment and 0.
 
-## Statistics
+### Statistics
 
 Two types of statistical comparisons were made. For recordings at a single time point, repeated ANOVA with n as the number of mice was used. For comparisons within individual fibers followed over time during infusion of 16 mM K+ and control fibers followed over time in 3.5 mM K+, the paired Student’s t-test was used with n as the number of fibers. The 12 fibers recorded from over time during infusion of 16 mM K+ came from five different mice, and the 5 control fibers maintained in 3.5 mM K+ came from three different mice. The numbers of animals and fibers for comparisons are described in the corresponding figure legends and text. All data are presented as mean ± SD. p<0.05 was considered to be significant.

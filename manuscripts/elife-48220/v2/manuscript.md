@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.48220.001 Innovations in metazoan development arise from evolutionary modification of gene regulatory networks (GRNs). We report widespread cryptic variation in the requirement for two key regulatory inputs, SKN-1/Nrf2 and MOM-2/Wnt, into the C. elegans endoderm GRN. While some natural isolates show a nearly absolute requirement for these two regulators, in others, most embryos differentiate endoderm in their absence. GWAS and analysis of recombinant inbred lines reveal multiple genetic regions underlying this broad phenotypic variation. We observe a reciprocal trend, in which genomic variants, or knockdown of endoderm regulatory genes, that result in a high SKN-1 requirement often show low MOM-2/Wnt requirement and vice-versa, suggesting that cryptic variation in the endoderm GRN may be tuned by opposing requirements for these two key regulatory inputs. These findings reveal that while the downstream components in the endoderm GRN are common across metazoan phylogeny, initiating regulatory inputs are remarkably plastic even within a single species.
+Innovations in metazoan development arise from evolutionary modification of gene regulatory networks (GRNs). We report widespread cryptic variation in the requirement for two key regulatory inputs, SKN-1/Nrf2 and MOM-2/Wnt, into the C. elegans endoderm GRN. While some natural isolates show a nearly absolute requirement for these two regulators, in others, most embryos differentiate endoderm in their absence. GWAS and analysis of recombinant inbred lines reveal multiple genetic regions underlying this broad phenotypic variation. We observe a reciprocal trend, in which genomic variants, or knockdown of endoderm regulatory genes, that result in a high SKN-1 requirement often show low MOM-2/Wnt requirement and vice-versa, suggesting that cryptic variation in the endoderm GRN may be tuned by opposing requirements for these two key regulatory inputs. These findings reveal that while the downstream components in the endoderm GRN are common across metazoan phylogeny, initiating regulatory inputs are remarkably plastic even within a single species.
 
 ## Introduction
 
@@ -47,11 +47,19 @@ In this study, we sought to determine whether the plasticity in regulatory logic
 
 ## Results
 
-## Extensive natural cryptic variation in the requirement for SKN-1 in endoderm specification within the C. elegans species
+### Extensive natural cryptic variation in the requirement for SKN-1 in endoderm specification within the C. elegans species
 
 The relationship between SKN-1 and Wnt signaling through POP-1 in the endoderm GRN has undergone substantial divergence in the Caenorhabditis genus (Lin et al., 2009). While neither input alone is absolutely required for endoderm specification in C. elegans, each is essential in C. briggsae, which has been estimated to have diverged from C. elegans ~ 20–40 Mya (Zhao et al., 2008; Cutter, 2008). In contrast to the C. elegans N2 laboratory strain, removal of either SKN-1 or POP-1 alone results in fully penetrant conversion of the E founder cell fate into that of the mesectodermal C blastomere and of E to MS fate, respectively, in C. briggsae (Lin et al., 2009). These findings revealed that the earliest inputs into the endoderm GRN are subject to substantial evolutionary differences between these two species (Figure 1B). We sought to determine whether incipient evolutionary plasticity in this critical node at the earliest stages of endoderm development might be evident even within a single species of the Caenorhabditis genus by assessing their requirement in C. elegans wild isolates and testing whether the quantitative requirements of each input were correlated.
 
 Elimination of detectable maternal SKN-1 from the laboratory N2 strain by either a strong (early nonsense) chromosomal mutation (skn-1(zu67)), or by RNAi knockdown, results in a partially penetrant phenotype: while the E cell adopts the fate of the C cell in the majority of embryos, and gut is not made,~30% of arrested embryos undergo strong gut differentiation, as evidenced by the appearance of birefringent, gut-specific rhabditin granules, or expression of elt-2::GFP, a marker of the developing and differentiated intestine (Figure 1C–H). In our experimental conditions, we found that RNAi of skn-1 in different N2-derived mutant strains gave highly reproducible results: 100% of the embryos derived from skn-1(RNAi)-treated mothers arrest (n > 100,000) and 32.0 ± 1.9% of the arrested embryos exhibited birefringent gut granules (Figure 2A; Supplementary file 1) over many trials by separate investigators. We found that the LSJ1 laboratory strain, which is derived from the same original source as N2, but experienced very different selective pressures in the laboratory owing to its constant propagation in liquid culture over 40 years (Sterken et al., 2015), gave virtually identical results to that of N2 (31.0% ± s.d 1.2%), implying that SKN-1-independent endoderm formation is a quantitatively stable trait. The low variability in this assay, and high number of embryos that can be readily examined (≥500 embryos per experiment), provides a sensitive and highly reliable system with which to analyze genetic variation in the endoderm GRN between independent C. elegans isolates.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig2-v2.jpg)
+
+**Figure 2.:** (A) Spectrum of skn-1(RNAi) effects across the C. elegans isolates. The effects of skn-1(RNAi) are quantified as the average percentage of arrested embryos with endoderm (y-axis). All wild isolates treated with skn-1(RNAi) resulted in 100% embryonic arrest (n > 500 embryos per replicate per isotype and at least two replicates per isotype). (B) Comparison of skn-1(RNAi) phenotype using two different gut markers (birefringent gut granules and MH33 staining of IFB-2) in five different genetic backgrounds. In all cases, no significant statistical difference was found between the two quantitative methods. Fisher’s exact test (NS p-value>0.05). (C) Comparison of skn-1(RNAi) and skn-1(zu67) effects on endoderm development in six different genetic backgrounds. For each color-coded strain, the first value is of the skn-1(RNAi) results (five replicates), while the second is the result for the skn-1(zu67) allele introgression (10 replicates). For all strains (with the exception of MY16), no significant statistical difference was found between the RNAi knockdown and corresponding skn-1(zu67) allele effects on endoderm development. Student t-test (NS p-value>0.05, * p-value<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** elegans isotypes. A minimum of two replicates were obtained, with >500 embryos per replicate (N = 3). Boxplot represents median with range bars showing upper and lower quartiles.
 
 To assess variation in SKN-1 requirement within the C. elegans species, we analyzed the outcome of knocking down SKN-1 by RNAi in 96 unique C. elegans wild isolates (Andersen et al., 2012). Owing to their propagation by self-fertilization, each of the isolates (isotypes) is a naturally inbred clonal population that is virtually homozygous and defines a unique haplotype. The reported estimated population nucleotide diversity averages 8.3 × 10−4 per bp (Andersen et al., 2012), and we found that a substantial fraction (29/97) of isotypes were quantitatively indistinguishable in phenotype between the N2 and LSJ1 laboratory strains (Figure 2A, Supplementary file 1). We found that all strains, with the exception of the RNAi-resistant Hawaiian CB4856 strain, invariably gave 100% embryonic lethality with skn-1(RNAi). However, we observed dramatic variation in the fraction of embryos with differentiated gut across the complete set of strains, ranging from 0.9% to 60% (Figure 2A). Repeated measurements with >500 embryos per replicate per strain revealed very high reproducibility (Figure 2—figure supplement 1), indicating that even small differences in the fraction of embryos generating endoderm could be reproducibly measured. Further, we found that some wild isolates that were subsequently found to have identical genome sequences also gave identical results.
 
@@ -65,9 +73,21 @@ We note that the strength of skn-1(RNAi) phenotype does not correlate with phylo
 
 **Figure 3.:** (A) skn-1(RNAi) phenotype of 97 isolates arranged with respect to the neighbor-joining tree constructed using 4,690 SNPs and pseudo-rooted to QX1211. Red asterisk indicates an example of closely related strains (MY23 and MY16) with similar phenotype, while black asterisks indicate example sister strains (JU778 and JU1491; JU561 and JU1652) with distinct phenotype. Phylogenetic relatedness and phenotype are not significantly correlated (Pagel’s λ = 0.42, p-value=0.14). (B) Worldwide distribution of skn-1(RNAi) phenotype across 97 wild isolates. Each circle represents a single isotype.
 
-## Cryptic variation in the quantitative requirement for MOM-2/Wnt, but not POP-1, in endoderm development
+### Cryptic variation in the quantitative requirement for MOM-2/Wnt, but not POP-1, in endoderm development
 
 The switch in the relationship of the SKN-1 and Wnt inputs between C. elegans (‘OR’ operator) and C. briggsae (‘AND’ operator) (Lin et al., 2009), and the extensive variation in the requirement for SKN-1 seen across C. elegans isolates, raised the possibility that the quantitative requirement for Wnt components might vary between unique isolates of C. elegans. It has been shown that signaling from Ras pathway varies in different C. elegans wild isolates and hyperactive Wnt signaling can compensate for reduced Ras activity in the vulva signaling network (Milloz et al., 2008; Gleason et al., 2002). Given that removal of the maternal Wnt input also results in a partially penetrant gut defect (through either knock-out or knockdown of Wnt signaling components), it is conceivable that a compensatory relationship may exist between the SKN-1 and Wnt inputs. We investigated this possibility by examining the requirement for the MOM-2/Wnt ligand in the same wild isolates that were tested for the SKN-1 gut developmental requirement. Indeed, we observed broad variation in the requirement for MOM-2/Wnt in activation of the endoderm GRN between isotypes. mom-2(RNAi) of 94 isotypes resulted in embryonic arrest, indicating that, as with skn-1(RNAi), mom-2(RNAi) was effective at least by the criterion of lethality. Two isotypes, CB4853 and EG4349, did not exhibit mom-2(RNAi)-induced lethality and were omitted from further analyses. In the affected strains, the fraction of mom-2(RNAi) embryos with differentiated gut varied from ~40% to~99% (Figure 4A, Supplementary file 1). As with skn-1(RNAi), the mom-2(RNAi) phenotype of isotypes N2, JU440, and JU1213 was further confirmed by immunostaining with IFB-2 (Figure 4B), again demonstrating that birefringence of gut granules is a reliable proxy for endoderm formation for this analysis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig4-v2.jpg)
+
+**Figure 4.:** (A) Spectrum of mom-2(RNAi) effects across the C. elegans isolates. The effects of mom-2(RNAi) are quantified as the average percentage of arrested embryos with endoderm (y-axis). Each column represents the mean for each wild isolate (n > 500 embryos were scored for each experiment with at least two replicates per isotype). (B) Comparison of mom-2(RNAi) phenotype using two different gut markers (birefringent gut granules and MH33 immunostaining of IFB-2) in three different genetic backgrounds. In all cases, no significant statistical difference was found between the two quantitative methods. Fisher’s exact test (NS p-value>0.05). (C) Comparison of the effect of mom-2(or42) on endoderm development after introgression into four different genetic backgrounds. At least three independent introgressed lines were studied for each wild isotype. The results were compared to N2; mom-2(or42). Student t-test (*** p-value<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mom-2(RNAi) phenotype of 94 isolates arranged with respect to the neighbor-joining tree constructed using 4,690 SNPs and pseudo-rooted to QX1211. Red asterisk indicates an example of closely related strains (JU394 and CB4851) with similar phenotypes, while black asterisks indicate examples sister strains (JU792 and JU1242; JU1440 and JT11398) with distinct phenotypes (λ = 6.94×10^−05, p-value=1). (B) Worldwide distribution of mom-2(RNAi) phenotype across 94 isolates. Each circle represents a single isolate.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Strains are shown on the x-axis and fraction of arrested embryos with endoderm are shown on the y-axis. The orange bars represent the results from mutant lines: MY16;pop-1(zu189), JU440;pop-1(zu189), and KR314;pop-1(zu189). Four introgressed lines were created for each new mutant strain. Black bars represent pop-1(RNAi) results on the wild isolates indicated. >200 embryos were scored per experiment.
 
 To assess whether the observed variation in the mom-2(RNAi) phenotype reflected differences in the GRN or RNAi efficacy, the mom-2(or42) allele was introgressed into three different genetic backgrounds chosen from the extreme ends of the phenotypic spectrum. mom-2(RNAi) of the laboratory N2 strain resulted in the developmental arrest of embryos. Of those,~90% contained differentiated endoderm, a result that was highly reproducible. In contrast, the introgression of an apparent loss-of-function allele, mom-2(or42), into the N2 strain results in a more extreme phenotype: only ~28% of embryos show endoderm differentiation (Figure 4C) (Thorpe et al., 1997). While this discrepancy can partly be explained by incomplete RNAi efficacy, it is notable that the penetrance of mom-2 alleles vary widely (Thorpe et al., 1997). We observed strain-specific variation in embryonic lethality response to RNAi of mom-2 between the different isotypes. However, we found that the mom-2(or42) introgressed strains show qualitatively similar effects to those observed with mom-2 RNAi. For example, the mom-2(or42) allele introgressed into the isotype JU1213 background resulted in a low fraction of arrested embryos with gut (5.7% ± s.d 2.4%; n = 2292), a more extreme effect than was seen with RNAi (34.0% ± s.d 1.5%; n = 1876). This is the strongest phenotype that has been reported for any known mom-2 allele. On the other hand, introgression of the mom-2 mutation gave rise to a significantly higher fraction of embryos with endoderm in isotypes DL226 (55.2% ± s.d 1.2%, n = 1377) and PB303 (65.5% ± s.d 4.9%, n = 2726), relative to the laboratory strain N2 (29.1% ± s.d 3.1%; n = 1693), consistent with the RNAi phenotypes (Figure 4C). These findings indicate that the differential requirement for MOM-2 is, at least in part, attributable to genetic modifiers in these strains. As with skn-1(RNAi), we found no correlation between the mom-2(RNAi) phenotype and phylogenetic relatedness or geographical distribution (Figure 4—figure supplement 1), suggesting rapid intraspecies developmental system drift.
 
@@ -75,9 +95,110 @@ As the MOM-2/Wnt signal is mediated through the POP-1 transcription factor, we s
 
 Our results contrast with those of Paaby et al. (2015), who reported that RNAi of 29 maternal-effect genes across a set of 55 wild isolates in liquid culture resulted in generally weaker effects on lethality than we observed. This difference is likely attributable to diminished and variable RNAi efficacy in the latter study owing to the different culture methods used (see Materials and methods) (Çelen et al., 2018; Gomez-Amaro et al., 2015). To assess this possibility further, we compared our results with those of Paaby et al. (2015) and found no correlation between the variation in fraction of embryos with gut and the lethality observed in that report with both mom-2(RNAi) and skn-1(RNAi) (Pearson’s R = 0.19, p=0.23; Pearson’s R = 0.22, p=0.17, respectively). In addition, Paaby et al. (2015) found that the genetically divergent strain QX1211 consistently showed weak penetrance across all targeted genes, while under our experimental conditions, QX1211 exhibited a slightly stronger skn-1(RNAi) phenotype (25.2% vs. 32.0%, Fisher’s exact test p-value=0.03) and a similar mom-2(RNAi) phenotype (90% vs. 90%, Fisher’s exact test p-value=0.9) compared to the N2 strains with fully penetrant lethality in all cases.
 
-## Genome-wide association studies (GWAS) and analysis of RILs identify multiple genomic regions underlying variation in the two major endoderm GRN inputs
+### Genome-wide association studies (GWAS) and analysis of RILs identify multiple genomic regions underlying variation in the two major endoderm GRN inputs
 
 We sought to examine the genetic basis for the wide variation in SKN-1 and Wnt requirements across C. elegans isolates and to evaluate possible relationships in the variation seen with the SKN-1 and Wnt inputs by performing GWAS using the available SNP markers and map (Andersen et al., 2012), adjusting for population structure by using Efficient Mixed-Model Analysis (EMMA) (Figure 5A,B) (Kang et al., 2008; Wang, 2002). This approach identified two significant closely-located positions on chromosome IV that underlie the variation in SKN-1 requirement (Figure 5A, Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig5-v2.jpg)
+
+**Figure 5.:** (A) Manhattan plot of skn-1(RNAi) GWAS. The red line indicates a genome-wide 1.5% FDR (permutation-based FDR, from 10,000 permutated results). Black line represents 3.0% FDR. The y axis is the –log10 of p-value. (B) Manhattan plot of mom-2 (RNAi) EMMA. The y axis is the –log10 of p-value. Genomic regions are shown on the x-axis. (C) Effect plots of the most strongly-linked SNPs from mom-2(RNAi) GWAS at position 3,362,389 bp on chromosome I and position 17,924,783 bp on chromosome V. Horizontal lines within each box represent the median, and the boxes represent 25th–75th percentile.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** A beta-distribution is observed (skewed to the right). Shapiro-Wilk normality test (W = 0.8682, p-value=1.207×10−7).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Heatmap of p-values for mom-2(RNAi) (left) and skn-1(RNAi) (right) as calculated in the GWAS analyses (see Figure 5A,B). Strength of association between genotype and endoderm formation phenotypes is represented as –log10(p-value), here depicted as a heatmap (lighter colors – weaker association, darker colors – stronger association). An overlap (indicated by arrowhead) is found in a small region of chromosome IV, but no further correlations are observed. Significant SNPs for skn-1(RNAi) GWAS are shown in Table 1.
+
+**Table 1.**
+ Significantly linked SNPs for skn-1(RNAi) GWAS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SNP</th>
+      <th>EMMA -log(p)</th>
+      <th>N2 allele</th>
+      <th>Variant allele</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IV: 5,079,371 bp</td>
+      <td>4.957651645</td>
+      <td>A</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>IV: 5,725,367 bp</td>
+      <td>5.211140897</td>
+      <td>C</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>IV: 5,761,153 bp</td>
+      <td>5.211140897</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 5,891,378 bp</td>
+      <td>4.252324884</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 5,920,597 bp</td>
+      <td>4.720037892</td>
+      <td>T</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 5,921,302 bp</td>
+      <td>4.720037892</td>
+      <td>T</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>IV: 5,921,510 bp</td>
+      <td>4.252324884</td>
+      <td>C</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>IV: 6,453,892 bp</td>
+      <td>5.142174312</td>
+      <td>T</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 6,511,989 bp</td>
+      <td>5.142174312</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 6,563,740 bp</td>
+      <td>4.678423021</td>
+      <td>C</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>IV: 7,453,945 bp</td>
+      <td>4.652004517</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>IV: 7,453,143 bp</td>
+      <td>4.181579989</td>
+      <td>A</td>
+      <td>G</td>
+    </tr>
+  </tbody>
+</table>
 
 GWAS of the mom-2(RNAi) variation proved more challenging because this phenotype showed a highly skewed distribution (Shapiro-Wilk’ test W = 0.8682, p-value=1.207×10−7) (Figure 5—figure supplement 1). While GWAS did not reveal any genomic regions for the mom-2(RNAi) variation that exceeded an FDR of 5%, we found that the most strongly associated loci for the mom-2(RNAi) phenotype also showed large effects for skn-1(RNAi) (Figure 5C). In particular, we observed substantial overlap in the p-values for individual SNPs from skn-1(RNAi) and mom-2(RNAi) in the central region of chromosome IV (Figure 5—figure supplement 2), raising the possibility that common genetic factors might underlie these phenotypes.
 
@@ -85,15 +206,27 @@ In an effort to narrow in on causal loci underlying the skn-1(-) and mom-2(-) ph
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig6-v2.jpg)
 
-**Figure 6.:** mom-2(RNAi) and skn-1(RNAi) phenotype in Recombinant Inbred Lines (RILs) between N2 and MY16.(A) mom-2(RNAi) (left) and skn-1(RNAi) (right) phenotype of RILs. The phenotype of the parental strains, MY16 and N2 are shown by red and blue lines, respectively. (B) QTL analyses (interval mapping) of skn-1(RNAi) (blue line) and mom-2(RNAi) (red line) phenotype shown in (A). Genomic regions are shown on the x-axis and LOD score is shown on the y-axis. Significance thresholds for mom-2(RNAi) and skn-1(RNAi) at 5% and 20% linkage represented in red and blue dashed lines, respectively. (C) Effect plots of significant SNPs from mom-2(RNAi) and skn-1(RNAi), indicated by chromosome number and color, showing the direction of the allelic effects. Confidence intervals for the average phenotype in each genotype group are shown.
+**Figure 6.:** (A) mom-2(RNAi) (left) and skn-1(RNAi) (right) phenotype of RILs. The phenotype of the parental strains, MY16 and N2 are shown by red and blue lines, respectively. (B) QTL analyses (interval mapping) of skn-1(RNAi) (blue line) and mom-2(RNAi) (red line) phenotype shown in (A). Genomic regions are shown on the x-axis and LOD score is shown on the y-axis. Significance thresholds for mom-2(RNAi) and skn-1(RNAi) at 5% and 20% linkage represented in red and blue dashed lines, respectively. (C) Effect plots of significant SNPs from mom-2(RNAi) and skn-1(RNAi), indicated by chromosome number and color, showing the direction of the allelic effects. Confidence intervals for the average phenotype in each genotype group are shown.
 
 To identify QTLs from the recombinant population, we performed linkage mapping for both phenotypes using interval mapping (see Materials and methods). For skn-1(RNAi), two major peaks were revealed on chromosomes II and IV (above 1% FDR estimated from 1000 permutations). Two minor loci were found on chromosomes I and X (suggestive linkage, above 20% FDR) (Figure 6B). For mom-2(RNAi), two major independent QTL peaks were found on chromosomes I and II (above the 5% FDR estimated from 1000 permutations). Although the candidate peaks observed on chromosome IV for skn-1(RNAi) did not appear to overlap with those for mom-2(RNAi), overlap was observed between the chromosomes I and II candidate regions for these two phenotypes (Figure 6B). These QTLs show large individual effects on both phenotypes (Figure 6C).
 
-## Potential cryptic relationships between SKN-1 and MOM-2 inputs
+### Potential cryptic relationships between SKN-1 and MOM-2 inputs
 
 The preceding findings unveiled wide cryptic variation in the requirements for both SKN-1 and MOM-2/Wnt in the endoderm GRN, raising the possibility that the variation affecting the two inputs might be related. Indeed, comparisons of the GWAS and QTL mapping results for skn-1 and mom-2 showed an overlap in candidate QTL regions on chromosome I, II and IV (Figure 5, Figure 6, Figure 5—figure supplement 2), suggesting a possible connection between the genetic basis underlying these two traits. It is conceivable that some genetic backgrounds are generally more sensitive to loss of either input (e.g., the threshold for activating the GRN is higher) and others more robust to single-input loss. Alternatively, a higher requirement for one input might be associated with a relaxed requirement for the other, that is, a reciprocal relationship.
 
 As an initial assessment of these alternatives, we examined whether the requirements for SKN-1 and MOM-2 across the strains were significantly correlated. This analysis revealed no strong relationship between the cryptic variation in the requirement for these inputs seen across all the strains (Spearman correlation R = 0.18, p-value=0.07) (Figure 7A). This apparent lack of correlation at the level of strains is not unexpected, as many factors likely contribute to the cryptic variation and the comparison reflects the collective effect of all causal loci in the genome of each strain (Figures 5 and 6).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig7-v2.jpg)
+
+**Figure 7.:** (A) Comparison of skn-1(RNAi) and mom-2(RNAi) phenotype in 94 natural isolates tested. No correlation was found (Spearman correlation R = 0.1844, p-value=0.07). Each dot corresponds to a wild isolate. Y-axis, skn-1(RNAi) phenotype, x-axis, mom-2(RNAi) phenotype. (B) Genome-wide correlation of skn-1(RNAi) and mom-2(RNAi) allelic differences in the N2xMY16 RILs. Each dot represents a SNP. Chromosomes are color-coded with their Pearson’s R values represented (NS = Not Significant, ***=p value<0.001). Regression line in gray. (C) Six different NILs were created for chromosome IV, each of which was compared with a control NIL from the same cross (e.g., MY16 in MY16 as control for N2 in MY16). A schematic of the introgressed regions is represented below the plots. Percentage of skn-1(RNAi) or mom-2(RNAi) embryos with gut is represented. (D) Changes in phenotype for both skn-1(RNAi) and mom-2(RNAi) following recombination in segregant NILs, which a schematic representation of the segregant NILs below the plot.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Each dot represents a SNP, color-coded by chromosome. A small genome-wide correlation is observed, but significant for only three of the chromosomes individually. Represented here is a set of pruned SNPs (N = 321) to cover the whole genome, and corrected for LD (also used for calculations). Z-score is used to calculate median of each allelic group, correcting for outliers. Strength of correlation (Pearson’s R) represented. Significance levels: non-significant, p-value<0.05 (*), p-value<0.01 (**), p-value<0.001 (***).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Near-Isogenic Lines (NILs) were built between strains N2 (purple) and MY16 (green), using visual mutations as markers, with their locations in cM indicated in each graph. (A) Introgression of chromosome IV region flanked by dpy-20 and unc-30. (B) Introgression of chromosome IV region flanked by dpy-20 and unc-26. (C) Introgression of chromosome IV region flanked by bli-6 and unc-22.
 
 We next sought to examine possible relationships between the two GRN inputs at higher resolution by comparing association of specific genetic regions with the quantitative requirement for each input. We used the available sequencing data for all isotypes tested (Andersen et al., 2012) and examined the impact of each allele on the skn-1(RNAi) and mom-2(RNAi) phenotypes, correcting for outliers and using a pruned SNP map (see Materials and methods). We found a weak positive correlation (Pearson’s R = 0.21, p=p value<2.2e-16, Figure 7—figure supplement 1) between the allelic effects. One possible explanation for this observation might be that variants across the set of wild isolates may generally influence the threshold for activating the positive feedback loops that lock down gut development (Raj et al., 2010; Sommermann et al., 2010), thereby altering the sensitivity for regulatory inputs into the endoderm pathway. Alternatively, although evidence for variation in germline RNAi sensitivity among C. elegans wild isolates is lacking (except for CB4856, which has been omitted from our study) (Tijsterman et al., 2002; Félix et al., 2011), and we have shown above that variation in SKN-1 and MOM-2 requirement reflects in large part cryptic genetic differences in the endoderm GRN, it remains possible that a fraction of the variation found in the two phenotypes tested is attributable to varying RNAi penetrance, which may underlie the minor positive correlation between skn-1(RNAi) and mom-2(RNAi) phenotypes.
 
@@ -101,13 +234,13 @@ In contrast, analysis of the N2/MY16 RILs uncovered a potential reciprocal relat
 
 While a reciprocal relationship was observed generally across the genome spanning five of the chromosomes, we observed the opposite correlation on chromosome IV (Pearson’s R = 0.83, p-value=1.695×10−5). No correlation was observed for chromosome IV with the wild isolates (Pearson’s R = 0.08, NS, Figure 7—figure supplement 1). As there is a major QTL on chromosome IV for the SKN-1 requirement and there is substantial overlap in the same region with the GWAS analysis of the skn-1(RNAi) and mom-2(RNAi) phenotypes, we sought to dissect further the relationship between the requirement for MOM-2 and SKN-1 in this region. We created six near-isogenic lines (NILs) in which the QTL region for the skn-1(RNAi) phenotype on chromosome IV from N2 was introgressed into the MY16 background, and vice-versa (Figure 7—figure supplement 2). Control lines were created from the same crosses at the same generation by selecting the original parental region (e.g., selecting for the N2 region in an N2 background and MY16 in MY16 background). We found that the region affects the skn-1(RNAi) phenotype as expected: the N2 region increased the fraction of gut in an MY16 background, and the MY16 regions decreased this fraction in an N2 background. However, for mom-2(RNAi), while introgressing the N2 region in MY16 dramatically changed the phenotype (Figure 7C), we found that the MY16 region was not sufficient to alter the phenotype in an N2 background. We created segregant NILs in which one of the genetic markers was lost (see Materials and methods) and found that replacing the N2 region with the corresponding MY16 region in all cases results in a stronger mom-2(RNAi) phenotype. However, for the skn-1(RNAi) phenotype six of nine segregants showed the opposite effect: that is, a weaker phenotype (Figure 7D), revealing that when contributing variants were separated by recombination, a reciprocal effect was frequently seen. These observations suggest that complex genetic interactions between variants on chromosome IV might mask the potential reciprocal effects that were observed on the other chromosomes.
 
-## Multiple factors reciprocally regulate the requirement for SKN-1 and MOM-2/Wnt
+### Multiple factors reciprocally regulate the requirement for SKN-1 and MOM-2/Wnt
 
 While the above findings revealed that the relationship between the requirement for SKN-1 and MOM-2 may be complicated by genetic interactions, our results raised the possibility of compensatory relationships between them. To further assess this possibility, we tested other candidate genes that reside in the QTL regions and that have been implicated in endoderm development (Ruf et al., 2013; Witze et al., 2009; Walston et al., 2004). We found that loss of RICT-1, the C. elegans orthologue of the human RICTOR (Rapamycin-insensitive companion of mTOR; Tatebe and Shiozaki, 2017), a component of the TORC2 complex, which has been shown to antagonize SKN-1 function (Ruf et al., 2013), results in opposite effects on skn-1(-) and mom-2(-) mutants (Figure 8A). Specifically, while rict-1(RNAi) suppresses the absence of gut in skn-1(zu67) embryos (skn-1(zu67): 34.3% ± s.d 4.1% with gut vs. skn-1(zu67); rict-1(RNAi): 48.3% ± s.d 4.9%; p=<0.001), we found that it enhances this phenotype in mom-2(or42) mutants (mom-2(or42): 23.8% ± s.d 2.0%; vs. mom-2(or42); rict-1(RNAi): 11.2% ± s.d 3.2%; p<0.001). Confirming this effect, a similar outcome was observed when SKN-1 was depleted by RNAi in rict-1(ft7) chromosomal mutants (skn-1(RNAi): 31.6% ± s.d 4.3% with gut vs. rict-1(ft7); skn-1(RNAi): 45.9% ± s.d 6.3%; p<0.05) (Figure 8A). Similarly, RNAi depletion of PLP-1, the C. elegans homologue of the Pur alpha transcription factor that has been shown to bind to and regulate the end-1 promoter (Witze et al., 2009), reciprocally affects the outcome of removing these two inputs in the same direction: loss of PLP-1 function suppresses the skn-1(-) phenotype (to 48.0% ± s.d 6.6%), and strongly enhances the mom-2 phenotype (to 6.9% ± s.d 1.6%). Again, this result was confirmed by RNAi of skn-1 in a plp-1(ok2156) chromosomal mutant (Figure 8B). Thus, as observed with the effect across the genome with natural variants, we observed a substantial reciprocal effect of both of these genes on loss of SKN-1 and MOM-2.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/48220/elife-48220-fig8-v2.jpg)
 
-**Figure 8.:** skn-1(-) and mom-2(-) phenotypes.(A, B) Loss of RICT-1 or PLP-1 enhances the mom-2(or42) loss-of-endoderm phenotype and suppresses skn-1(zu67) and skn-1(RNAi) phenotype. (C) Loss of MIG-5 enhances the skn-1(zu67) and skn-1(RNAi) phenotype and suppresses mom-2(or42) phenotype. At least three replicates were performed per experiment and >200 embryos per experiment. Student t-test (*** p-value<0.001). Error bars represent standard deviations.
+**Figure 8.:** (A, B) Loss of RICT-1 or PLP-1 enhances the mom-2(or42) loss-of-endoderm phenotype and suppresses skn-1(zu67) and skn-1(RNAi) phenotype. (C) Loss of MIG-5 enhances the skn-1(zu67) and skn-1(RNAi) phenotype and suppresses mom-2(or42) phenotype. At least three replicates were performed per experiment and >200 embryos per experiment. Student t-test (*** p-value<0.001). Error bars represent standard deviations.
 
 We also observed a reciprocal effect on the SKN-1 and Wnt inputs with MIG-5/dishevelled, a component of the Wnt pathway that acts downstream of the Wnt receptor (Walston et al., 2004); however, in this case the effect was in the opposite direction as seen for RICT-1 and PLP-1. Loss of MIG-5 as a result of chromosomal mutation or RNAi leads to enhancement of the skn-1(-) phenotype (mig-5(rh94); skn-1(RNAi): 6.6% ± s.d 2.3%; skn-1(zu67); mig-5(RNAi): 9.4% ± s.d 1.4%) and suppression of the mom-2(-) phenotype (88.6% ± s.d 4.0%) (Figure 8C).
 
@@ -117,11 +250,11 @@ Together, these findings reveal that, as observed with many of the N2/MY16 RILs 
 
 The remarkable variety of forms associated with the ~36 animal phyla (Adoutte and Philippe, 1993) that emerged from a common metazoan ancestor >600 Mya is the product of numerous incremental changes in GRNs underlying the formation of the body plan and cell types (Peter and Davidson, 2011; Carroll, 2008). Here, we describe an unexpectedly broad divergence in the deployment of SKN-1/Nrf and MOM-2/Wnt signaling in generating the most ancient germ layer, the endoderm, within wild isolates of a single animal species, C. elegans. In this study, we report five major findings: 1) while the quantitative requirement for two distinct regulatory inputs that initiate expression of the endoderm GRN (SKN-1 and MOM-2) are highly reproducible in individual C. elegans isolates, there is wide cryptic variation between isolates. 2) Cryptic variation in the requirement for these regulatory factors shows substantial differences even between closely related strains, suggesting that these traits are subject to rapid evolutionary change in this species. 3) Quantitative genetic analyses of natural and recombinant populations revealed multiple loci underlying the variation in the requirement for SKN-1 and MOM-2 in endoderm specification. 4) The requirements for SKN-1 and MOM-2 in endoderm specification is frequently reciprocal in their relation to other genetic factors. 5) rict-1, plp-1, and mig-5 reciprocally influence the outcome of skn-1(-) and mom-2(-), substantiating the reciprocal influences on the two GRN inputs. These findings reveal prevalent plasticity and complexity underlying SKN-1 and MOM-2/Wnt regulatory inputs in mobilizing a conserved system for endoderm specification. Thus, while the core genetic toolkit for the development of the endoderm, the most ancient of the three germ layers, appears to have been preserved for well over half a billion years, the molecular regulatory inputs that initiate its expression in C. elegans vary extremely rapidly over short evolutionary time scales within the species.
 
-## Multigenic variation in the requirement for SKN-1 and MOM-2
+### Multigenic variation in the requirement for SKN-1 and MOM-2
 
 Quantitative analyses of the wild isolates and RILs revealed that multigenic factors are responsible for the difference in requirement for SKN-1 and MOM-2 between isotypes. Notably, we observed substantial overlap on chromosome IV in the GWAS analyses of the skn-1 and mom-2 requirements in wild isotypes (Figure 5, Figure 5—figure supplement 2 ) and on chromosome II from analyses using RILs (Figure 6B). This finding raises the possibility that some QTLs may influence requirement for both inputs into the endoderm specification pathway: as SKN-1 and Wnt converge to regulate expression of the end-1/3 genes, it is conceivable that common genetic variants might modulate the relative strength or outcome of both maternal inputs. However, our findings do not resolve whether these genetic variants act independently to influence the maternal regulatory inputs. Genetic interactions are often neglected in large-scale genetic association studies (Jenkins et al., 2009) owing in part to the difficulty in confirming them (Page et al., 2003). Many studies (Mackay, 2014; Volis et al., 2011; Félix, 2007; Barkoulas et al., 2013), including ours here, showed that epistasis can strongly influence the behavior of certain variants upon genetic perturbation. In addition, selection on pleiotropically acting loci facilitates rapid developmental system drift. Together, epistasis and selection on pleiotropic loci play important roles in the evolution of natural populations (Duveau and Félix, 2012; Johnson and Porter, 2007; Phillips, 2008; Wagner and Zhang, 2011).
 
-## Potential compensatory relationships between SKN-1 and MOM-2/Wnt
+### Potential compensatory relationships between SKN-1 and MOM-2/Wnt
 
 Although we did not observe a direct correlation between the skn-1(-) and mom-2(-) phenotypes across the isotypes studied here, we found a negative correlation across much of the genome for the N2 X MY16 RILs (Figures 6 and 7). Further, while GWAS and QTL analysis of natural and inbred lines, respectively, did not reveal a causal region in chromosome IV for mom-2(RNAi) variation, analysis of NILs results did uncover at least one QTL affecting this phenotype. Moreover, while broad regions of the chromosome showed a positive correlation between the SKN-1 and MOM-2 requirements, isolation of variants in NILs revealed an inverse requirement for these inputs for at least some regions on this chromosome. These results reflect the limitations of genome-wide studies of complex genetic traits: in the case of chromosome IV, several closely linked loci appear to influence both the SKN-1 and MOM-2 requirements.
 
@@ -131,7 +264,7 @@ MIG-5, a dishevelled orthologue, functions in the Wnt pathway in parallel to Src
 
 We hypothesize that compensatory mechanisms might evolve to fine-tune the level of gut-activating regulatory inputs. Successful developmental events depend on tight spatial and temporal regulation of gene expression. For example, anterior-posterior patterning in the Drosophila embryo is determined by the local concentrations of the Bicoid, Hunchback, and Caudal transcription factors (Rivera-Pomar and Jäckle, 1996). We postulate that SKN-1 and Wnt signaling is modulated so that the downstream genes, end-1/3, which control specification and later differentiation of endoderm progenitors, are expressed at optimal levels that ensure normal gut development. Suboptimal END activity leads to poorly differentiated gut and both hypo- and hyperplasia in the gut lineage (Maduro et al., 2015; Choi et al., 2017; Maduro, 2015). Hyper- or hypo-activation of Wnt signaling has been implicated in cancer development (Zhan et al., 2017), bone diseases (Jenkins et al., 2009; Baron and Gori, 2018), and metabolic diseases (Chen and Wang, 2018; Schinner, 2009), demonstrating the importance of regulating the timing and dynamics of such developmental signals within a quantitatively restricted window.
 
-## Cryptic variation and evolvability of GRNs
+### Cryptic variation and evolvability of GRNs
 
 This study revealed substantial cryptic genetic modifications that alter the relative importance of two partially redundant inputs into the C. elegans endoderm GRN, leading to rapid change in the developmental network architecture (Figure 9). Such modifications may occur through transitional states that are apparent even within this single species. For example, the finding that POP-1 is not required for gut development even in a wild isolate (e.g., MY16) that, like C. briggsae, shows a near-absolute requirement for SKN-1 may reflect a transitional state between the two species: that is, a nearly essential requirement for SKN-1 but non-essential requirement for POP-1, an effect not previously seen in either species. In addition, duplicated GATA factors (the MEDs, ENDs, and ELTs) and partially redundant activating inputs (SKN-1, Wnt, Src, and MAPK) in endoderm GRN, provide an opportunity for genetic variation to accumulate and ‘experimentation’ of new regulatory relationships without diminishing fitness (Félix and Wagner, 2008; Schinner, 2009; Frankel et al., 2010).
 
@@ -145,43 +278,228 @@ The broad cryptic variation may drive developmental system drift, giving rise to
 
 ## Materials and methods
 
-## C. elegans strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>Wild isolates; refer to Supplementary file 1</td>
+      <td>CGC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JJ185</td>
+      <td>CGC</td>
+      <td></td>
+      <td>dpy-13(e184) skn-1(zu67) IV; mDp1 (IV;f).</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3666</td>
+      <td>This study</td>
+      <td></td>
+      <td>(elt-2::GFP) X; (ifb-2::CFP) IV; see Figure 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>EU384</td>
+      <td>CGC</td>
+      <td></td>
+      <td>dpy-11(e1180) mom-2(or42) V/nT1 [let-?(m435)] (IV;V).</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JJ1057</td>
+      <td>CGC</td>
+      <td></td>
+      <td>pop-1(zu189) dpy-5(e61)/hT1 I; him-5(e1490)/hT1 V.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>KQ1366</td>
+      <td>CGC</td>
+      <td></td>
+      <td>rict-1(ft7) II.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>SU351</td>
+      <td>CGC</td>
+      <td></td>
+      <td>mig-5(rh94)/mIn1 [dpy-10(e128) mIs14] II.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>RB1711</td>
+      <td>CGC</td>
+      <td></td>
+      <td>plp-1(ok2155) IV.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3493-JR3590 (refer to Supplementary file 2)</td>
+      <td>This study</td>
+      <td></td>
+      <td>N2xMY16 RILs; see Figure 6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>MT3414</td>
+      <td>CGC</td>
+      <td></td>
+      <td>dpy-20(e1282) unc-31(e169) unc-26(e205) IV.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>DA491</td>
+      <td>CGC</td>
+      <td></td>
+      <td>dpy-20(e1282) unc-30(e191) IV.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR2750</td>
+      <td>Kontani et al., 2005</td>
+      <td></td>
+      <td>bli-6(Sc16)unc-22(e66)/unc-24(e138)fus-1(w13) dpy-20(e2017)IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3812 (NIL 1)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3813 (NIL 2)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3814 (NIL 3)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3815 (NIL 4)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3816 (NIL 5)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>JR3817 (NIL 6)</td>
+      <td>This study</td>
+      <td></td>
+      <td>NIL N2XMY16; see Figure 7</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MH33 mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528311</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AHP418 rabbit polyclonal</td>
+      <td>Serotec Bio-Rad</td>
+      <td>RRID:AB_2116715); PMID:28736134</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ab150116 goat polyclonal</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2650601; PMID:31167447</td>
+      <td>Goat Anti-Mouse IgG H and L (Alexa Fluor 594)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ab150077 goat polyclonal</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2630356</td>
+      <td>Goat Anti-Rabbit IgG H and L (Alexa Fluor 488)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v 3.2.3</td>
+      <td>The R Foundation</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLINK</td>
+      <td>http://pngu.mgh.harvard.edu/purcell/plink/</td>
+      <td>RRID:SCR_001757</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and maintenance
 
 All wild isolates, each with a unique haplotype (Andersen et al., 2012), were obtained from the Caenorhabditis Genetics Center (CGC) (see Supplementary file 1). Worm strains were maintained as described (Brenner, 1974) and all experiments were performed at 20°C unless noted otherwise.
 
-## RNAi
+### RNAi
 
 Feeding-based RNAi experiments were performed as described (Kamath and Ahringer, 2003). RNAi clones were obtained from either the Vidal (Rual et al., 2004) or Ahringer libraries (Kamath et al., 2003). RNAi bacterial strains were grown at 37°C in LB containing 50 μg/ml ampicillin. The overnight culture was then diluted 1:10. After 4 hr of incubation at 37°C, 1 mM of IPTG was added and 60 μl was seeded onto 35 mm agar plates containing 1 mM IPTG and 25 μg/ml carbenicillin. Seeded plates were allowed to dry and used within five days. Five to 10 L4 animals were placed on RNAi plate. 24 hr later, they were transferred to another RNAi plate and allowed to lay eggs for four or 12 hr (12 hr for skn-1 RNAi and four hours for the other RNAi). The adults were then removed, leaving the embryos to develop for an extra 7–9 hr. Embryos were quantified and imaged on an agar pad using a Nikon Ti-E inverted microscope. We chose to perform RNAi on agar plates to maximize sensitivity, robustness, and reproducibility of the assay, as liquid culture RNAi can introduce variability owing to aggregation and settling of bacteria, which affects RNAi efficacy (Gomez-Amaro et al., 2015). In addition, performing RNAi on agar plates allowed us to collect large numbers of embryos with which to quantify gut formation (as described below).
 
-## Antibody staining
+### Antibody staining
 
 The embryonic gut cells and nuclei of all cells were stained with MH33 (mouse anti-IFB-2, deposited to the DSHB by Waterston, R.H.) and AHP418 (rabbit anti-acetylated histone H4, Serotec Bio-Rad) respectively. Fixation and permeabilization were carried out as described previously (Sommermann et al., 2010). Goat anti-mouse Alexa Fluor 594 and goat anti-rabbit Alexa Fluor 488 secondary antibodies were used at 1:1000 dilution.
 
-## Quantification of endoderm specification
+### Quantification of endoderm specification
 
 Gut was scored by the presence of birefringent gut granule in arrested embryos (Clokey and Jacobson, 1986; Hermann et al., 2005). For skn-1(RNAi), the laboratory strain N2, which shows invariable ~30% of embryos with endoderm, was used as a control for all experiments.
 
-## Introgression of skn-1(zu67), pop-1(zu189), and mom-2(or42) alleles into wild isolate backgrounds
+### Introgression of skn-1(zu67), pop-1(zu189), and mom-2(or42) alleles into wild isolate backgrounds
 
 To introgress skn-1(zu67) into wild isolates (WI), males from the wild isolate strains were crossed to JJ186 dpy-13(e184) skn-1(zu67) IV; mDp1 (IV;f) hermaphrodites. mDp1 is a free duplication maintained extrachromosomally that rescues the Dpy and lethal phenotypes of dpy-13(e184) and skn-1(zu67) respectively. mDp1 segregates in a non-Mendelian fashion and animals that have lost the free duplication are Dpy and produce dead offspring. Wild type F1 hermaphrodites that have lost the free duplication, as determined by the presence of 1/4 Dpy progeny in the F2 generation, were selected. 10 single non-Dpy F2 hermaphrodite descendants from F1 animals heterozygous for skn-1(zu67) (2/3 of which are expected to be of the genotype WI dpy-13(+) skn-1(+)/dpy-13(e184) skn-1(zu67) were backcrossed to their respective parental wild strain. 10 F3 hermaphrodites were picked to individual plates. Half of the F3 cross progeny are expected to be heterozygous for dpy-13(e184) skn-1(zu67), as evidenced by presence of F4 Dpy progeny that produced dead embryos. Non-Dpy siblings were used to continue the introgression as described. This strategy was repeated for at least five rounds of introgression. The embryonic gutless phenotype in the progeny of the Dpy animals was quantified.
 
 Similarly, to introgress pop-1(zu189) or mom-2(or42) alleles into wild isolates, JJ1057 pop-1(zu189) dpy-5(e61)/hT1 I; him-5(e1490)/hT1V or EU384 dpy-11(e1180) mom-2(or42) V/nT1 [let-?(m435)] (IV;V) were used, respectively. The mutant strain was crossed to the wild isolates. Non-Dpy F2 animals heterozygous for the chromosomal mutation were selected and backcrossed to their respective parental wild strain for at least four rounds of introgression for pop-1 and seven rounds for mom-2. The embryonic gutless phenotype in the progeny of the Dpy animals was quantified, as above.
 
-## Statistical analyses: GWAS
+### Statistical analyses: GWAS
 
 All data were analyzed and plotted using R software v 3.2.3 (https://www.r-project.org/). GWAS for both phenotypes was performed using C. elegans wild isolates and a previously published SNP map containing 4,690 SNPs (Andersen et al., 2012) with the EMMA R package. P-values were calculated using mixed model analysis (Kang et al., 2008) (emma.REML.t() function) and identity-by-state (IBS) kinship matrix to account for population structure. For skn-1 and mom-2 RNAi phenotypic data, a genome-wide permutation-based FDR was also calculated for the EMMA results from 10,000 permuted values (Millstein and Volfson, 2013; Hansen and Kerr, 2012).
 
-## Phylogenetic and geographical analyses
+### Phylogenetic and geographical analyses
 
 Phylogenetic trees were constructed from 4690 polymorphisms using R package ‘ape’ (Paradis et al., 2004). Neighbor-joining algorithm based on pairwise distances was used. Phylogenetic signal (Pagel’s λ statistics) was measured using ‘phylosig()” function in phytools R package (Revell, 2012; Ives et al., 2007). Statistical significance of λ was obtained by comparing the likelihood a model accounting for the observed λ with the likelihood of a model that assumes complete phylogenetic independence.
 
 Geographic information for strains were obtained from Andersen et al. (2012), available in Supplementary file 1, together with the corresponding skn-1(RNAi) and mom-2(RNAi) phenotypes.
 
-## Correlation analysis
+### Correlation analysis
 
 To test for the relationship between mom-2 (RNAi) and skn-1 (RNAi) phenotypic data, the differences between median phenotypic values for each SNP were calculated independently on a genome-wide level for the wild isolates. In order to correct for LD, SNPs were pruned with PLINK (http://pngu.mgh.harvard.edu/purcell/plink/) (Purcell et al., 2007) and only a subset of SNPs was used for the correlation analyses. Outliers were removed from the calculations by using z-score with a cutoff of 1.96 (i.e., 95% of values fall within ±1.96 in a normal distribution).
 
-## RIL construction and Genotype-By-Sequencing (GBS)
+### RIL construction and Genotype-By-Sequencing (GBS)
 
 Recombinant inbred lines (RILs) were created by crossing an N2 hermaphrodite and an MY16 male. 120 F2 progeny were cloned to individual plates and allowed to self-fertilize for 10 generations. A single worm was isolated from each generation to create inbred lines. A total of 95 lines were successfully created and frozen stocks were immediately created and kept at −80°C (Supplementary file 2), prior to DNA sequencing.
 
@@ -189,11 +507,11 @@ DNA was extracted using Blood and Tissue QIAGEN kit from worms from each of the 
 
 SNP calling was performed using the GBSversion3 pipeline in Trait Analysis by aSSociation, Evolution and Linkage (TASSEL) (Bradbury et al., 2007). Briefly, fastq files were aligned to reference genome WS252 using BWA v. 0.7.8-r455 and SNPs were filtered using vcftools (Danecek et al., 2011). Samples with greater than 90% missing data and SNPs with minor allele frequencies (mAF) of <1% were excluded from analysis, identifying 27,396 variants.
 
-## QTL mapping using R/qtl
+### QTL mapping using R/qtl
 
 Variants identified by GBS pipeline were filtered to match the SNPs present in the parental MY16 strain (using vcftools –recode command), and variants were converted to a 012 file (vcftools –012 command). Single-QTL analysis was performed in R/QTL (Broman and Sen, 2009) using 1770 variants and 95 RILs. Significant QTL were determined using Standard Interval Mapping (scanone() ‘em’) and genome-wide significance thresholds were calculated by permuting the phenotype (N = 1,000). Change in log-likelihood ratio score of 1.5 was used to calculate 95% confidence intervals and define QTL regions (Broman et al., 2003). SNP data for the RILs and their corresponding phenotypes used in analysis are shown in Supplementary files 2 and 3.
 
-## Creation of near-isogenic lines (NILs)
+### Creation of near-isogenic lines (NILs)
 
 Three N2-derived mutant strains were used to introgress regions from chromosome IV from N2 into the MY16 strain background and vice-versa. For both types of crosses, N2 was always used as the maternal line. The following strains were used:
 

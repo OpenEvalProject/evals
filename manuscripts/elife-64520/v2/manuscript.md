@@ -39,57 +39,97 @@ Taking advantage of the recently established zebrafish-T. carassii infection mod
 
 ## Results
 
-## Susceptibility of zebrafish larvae to T. carassii infection
+### Susceptibility of zebrafish larvae to T. carassii infection
 
 We recently reported the establishment of a trypanosome infection in zebrafish larvae using a natural fish parasite, Trypanosoma carassii (Dóró et al., 2019). To further investigate the immune response to T. carassii infection, we first investigated the kinetics of susceptibility of zebrafish larvae as well as the kinetics of expression of various immune-related genes. Similar to the previous report, T. carassii infection of 5 dpf zebrafish larvae leads to approximately 10–20% survival by 15 days post infection (dpi) with the highest incidence of mortality between 4 and 7dpi (Figure 1A). The onset of mortality coincided with the peak of parasitaemia as assessed by real-time quantitative gene expression analysis of a T. carassii-specific gene (Figure 1B). Nevertheless, we consistently observed 10–20% survival in the T. carassii-infected group, suggesting that zebrafish larvae can control T. carassii infection. This observation prompted us to investigate the kinetics of parasitaemia and development of (innate) immune responses at the individual level.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig1-v2.jpg)
 
-**Figure 1.:** T. carassii infection of larval zebrafish.(A) Tg(mpeg1:mCherry-F;mpx:GFP) larvae (5 dpf) were injected intravenously with n = 200 T. carassii/fish or with PVP as control and survival was monitored over a period of 15 days. (B) Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish (5 dpf) were treated as in A and sampled at various time points. At each time point, three pools of 3–5 larvae were sampled for real-time quantitative PCR analysis. Relative fold change of the T. carassii-specific heat-shock protein-70 (hsp70) was normalised to the zebrafish-specific ef1α and expressed relative to the trypanosome-injected group at time point zero. Bars indicate average and standard deviation (SD) on n = 3 pools per time point. Letters indicate significant differences (p<0.05), as assessed using One-way ANOVA followed by Tukey’s multiple comparisons test.  Figure 1—source data 1.T. carassii infection of larval zebrafish.
+**Figure 1.:** (A) Tg(mpeg1:mCherry-F;mpx:GFP) larvae (5 dpf) were injected intravenously with n = 200 T. carassii/fish or with PVP as control and survival was monitored over a period of 15 days. (B) Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish (5 dpf) were treated as in A and sampled at various time points. At each time point, three pools of 3–5 larvae were sampled for real-time quantitative PCR analysis. Relative fold change of the T. carassii-specific heat-shock protein-70 (hsp70) was normalised to the zebrafish-specific ef1α and expressed relative to the trypanosome-injected group at time point zero. Bars indicate average and standard deviation (SD) on n = 3 pools per time point. Letters indicate significant differences (p<0.05), as assessed using One-way ANOVA followed by Tukey’s multiple comparisons test.
 
-## Clinical signs of T. carassii infection and clinical scoring system
+### Clinical signs of T. carassii infection and clinical scoring system
 
 To characterise the response to T. carassii infection in individual zebrafish larvae, we developed a clinical scoring system to determine individual infection levels, enabling us to group individual larvae based on severity of infection. From 4 dpi onwards, we could consistently sort larvae into groups of high- or low-infected individuals based on in vivo observations, without the need to sacrifice animals (Video 1). Infection levels were categorised using four criteria: (1) escape reflex (slow vs fast) upon contact with a pipette tip, (2) infection scores (1–10, see details in Materials and methods), based on the ratio of blood cells and parasites passing through an intersegmental capillary (ISC) in 100 events (Figure 2A,B) (Video 1, 00:06-00:39 s), (3) extravasation, based on the presence of parasites outside of blood vessels (Figure 2C) (Video 1, 00:40-1:20 s) and (4) vasodilation, based on the diameter of the caudal vein (Figure 2D,E). The first criterion defined all individuals with a minimal escape reflex (slow swimmers) as high-infected individuals: they were mostly located at the bottom of the tank and showed minimal reaction upon direct contact with a pipette. Larvae with a normal escape reflex (fast swimmers), however, were not exclusively low-infected individuals. Therefore, a second criterion was used based on trypanosome counting in ISC (Video 1, 00:06-00:39 s). Individuals with an infection score of 1 (no parasites) were never observed, indicating that larvae cannot clear the infection, at least not within 4 days. Individuals with an infection score between 2 and 3 (~80%, Figure 2F) were categorised as low-infected and had a high survival rate (relative percent survival, 82%; Figure 2G). Individuals with an infection score between 6 and 10 (~20%, Figure 2F) were categorised as high-infected and generally succumbed to the infection (Figure 2G). Individuals with an intermediate score of 4–5 (~5%, Figure 2F) were re-evaluated at 5 dpi and could go both ways: they either showed a delayed parasitaemia and later developed high parasitaemia (common) or recovered from the infection (rare). The third criterion clearly identified high-infected individuals as those showing extensive extravasation at two or more of the following locations: peritoneal cavity (Figure 2C) (Video 1, 00, 00:40-00:59 s), interstitial space lining the blood vessels, muscle tissue (Video 1, 00:00-01:07 s) or fins (Video 1, 01:08-01:20 s), in particular the anal fin. At these locations, in high-infected individuals, trypanosomes could accumulate in high numbers, filling up all available spaces. Extravasation however could also occur in low-infected individuals, but to a lesser extent. The fourth criterion, vasodilation of the caudal vein associated with high numbers of trypanosomes in the blood vessels, was a definitive sign of high infection level, and never occurred in low-infected larvae. To validate our scoring system, expression of a T. carassii-specific gene was analysed in pools of larvae classified as high- or low-infected. As expected, in individuals categorised as high-infected, T. carassii-specific gene expression increased more than 60-fold, whereas in low-infected individuals the increase was less than 20-fold (Figure 2H). Altogether these data show that T. carassii infects zebrafish larvae, but that the infection can develop differently among individuals, leading to different outcomes. The clinical scoring system based on numerous criteria is suitable to reliably separate high- and low-infected larvae to further investigate individual immune responses. A preliminary gene expression analysis of a panel of immune-related genes was performed on pools of larvae classified as high- or low-infected according to our clinical scoring system. Analysis revealed a general trend for higher pro-inflammatory genes expression, including il1b, tnfb, and il6, in the high-infected group, but due to the large variation between pools, the differences were not significant (Figure 2—figure supplement 1). Furthermore, it has to be considered that the analysis was performed on pools of whole larvae, which may have obscured tissue- or cell-specific responses. For these reasons, taking advantage of the transparency of zebrafish larvae and of the established clinical scoring system, subsequent characterisation of the inflammatory response to T. carassii infection, was performed on individual larvae, focusing on innate immune cells.
 
-## T. carassii infection induces a strong macrophage response in zebrafish larvae
+![Figure 2.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig2-v2.jpg)
+
+**Figure 2.:** Tg(mpeg1:mCherry-F;mpx:GFP) 5 dpf zebrafish were injected intravenously with n = 200 T. carassii or with PVP and imaged at 2 dpi (A), 5 dpi (B-C), 7 dpi (D-E). Shown are representative images of intersegmental capillaries (ISC) containing various numbers of T. carassii (white arrows) (A-B); extravasated T. carassii (only some indicated with white arrows) in the intraperitoneal cavity (C); caudal vein diameter in PVP (D) or in T. carassii-infected larvae (E). Square brackets indicate the diameter of the caudal vein. Whenever visible, the caudal aorta is also indicated. Images are extracted from high-speed videos acquired with a Leica DMi8 inverted microscope at a ×40 magnification. (F) Tg(mpeg1:mCherry-F;mpx:GFP) were injected intravenously at 5 dpf with n = 200 T. carassii and at 4 dpi the number of low-infected (clinical scores 1–3) or high-infected (score 6–10) was determined. Larvae scored between 4 and 5 were re-evaluated at 5 dpi. The bar indicates the proportion of larvae assigned to each group out of a total of 350 infected individual. (G) Tg(mpeg1:mCherry-F;mpx:GFP) were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated in high- and low-infected individuals (50 larvae per group) based on our clinical scoring criteria and survival was monitored over a period of 14 days. (H) Tg(mpeg1:mCherry-F;mpx:GFP) were treated as described in (G). At each time point, three pools of 3–5 larvae were sampled for subsequent real-time quantitative gene expression analysis. Each data point represents the mean of three pools, except for the low-infected group at 16 dpi and high-infected group at 10 dpi where only two and one pool could be made, respectively. Relative fold change of the T. carassii-specific hsp70 was normalised relative to the zebrafish-specific ef1α housekeeping gene and expressed relative to the trypanosome-injected group at time point zero.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Tg(mpeg1:mCherryF;mpx:GFP) were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated in high- and low-infected individuals based on our clinical scoring criteria. At each time point, three pools of 3–5 larvae were sampled for subsequent real-time quantitative gene expression analysis. Each data point represents the mean of three pools, except for the high-infected group at 10 dpi where only one pool could be made due to low survival. Relative fold change was normalised relative to the zebrafish-specific ef1α housekeeping gene and expressed relative to the PVP-injected group at each time point.
+
+![Video 1.](https://cdn.elifesciences.org/articles/64520/elife-64520-video1.mp4.jpg)
+
+**Video 1.:** Tg(mpeg1:mCherry-F;mpx:GFP) 5 dpf zebrafish were injected with n = 200 T. carassii or with PVP and imaged at various time points after infection. Shown are high-speed videos (500 frames/s, fps) or real-time videos (20 fps) capturing trypanosomes in vivo in blood or in tissues, as well as describing typical signs of anaemia and vasodilation.
+
+### T. carassii infection induces a strong macrophage response in zebrafish larvae
 
 After having established a method to determine infection levels in each larva, we next investigated whether a differential innate immune response would be mounted in high- and low-infected fish. To this end, using double-transgenic Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish, we first analysed macrophage and neutrophil responses in whole larvae by quantifying total cell fluorescence in high- and low-infected individuals (Figure 3). Total neutrophil response (total green fluorescence) was not significantly affected by the infection (Figure 3A and C). In contrast, the macrophage response (total red fluorescence) increased significantly in infected individuals from 3 dpi onwards, and was most prominent in the head region and along the posterior cardinal vein and caudal vein (Figure 3B). In low-infected larvae, a significant increase in red fluorescence was observed already by 5 dpi and remained high up until 9 dpi; in high-infected larvae, despite a marginal but not significant increase at 5 and 7 dpi, significant differences to the PVP group were observed at day nine after infection (Figure 3C). Interestingly, no significant differences were observed between high- or low-infected individuals, suggesting that despite the clear differences in trypanosome levels (Figure 2H), overall macrophages number appeared to be influenced more by the presence than by the total number of trypanosomes.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig3-v2.jpg)
 
-**Figure 3.:** T. carassii infection. Tg(mpeg1:mCherry-F;mpx:GFP) were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated in high- and low-infected individuals. (A–B) At the indicated time points, images were acquired with Leica M205FA Fluorescence Stereo Microscope with 1.79x zoom. Images are representatives of n = 5–47 larvae per group, depending on the number of high- or low-infected larvae categorised at each time point, derived from two independent experiments. Scale bar indicates 750 μm. (C) Corrected Total Cell Fluorescence (CTCF) quantification of infected and non-infected larvae. Owing to the high auto-fluorescence, the gut area was excluded from the total fluorescence signal as described in the Materials and methods section. Bars represent average and standard deviation of red and green fluorescence in n = 5–47 whole larvae, from two independent experiments. * indicates significant differences (p<0.05) to the respective PVP control as assessed by Two-Way ANOVA followed by Bonferroni post-hoc test.  Figure 3—source data 1.T. carassii infection.
+**Figure 3.:** Tg(mpeg1:mCherry-F;mpx:GFP) were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated in high- and low-infected individuals. (A–B) At the indicated time points, images were acquired with Leica M205FA Fluorescence Stereo Microscope with 1.79x zoom. Images are representatives of n = 5–47 larvae per group, depending on the number of high- or low-infected larvae categorised at each time point, derived from two independent experiments. Scale bar indicates 750 μm. (C) Corrected Total Cell Fluorescence (CTCF) quantification of infected and non-infected larvae. Owing to the high auto-fluorescence, the gut area was excluded from the total fluorescence signal as described in the Materials and methods section. Bars represent average and standard deviation of red and green fluorescence in n = 5–47 whole larvae, from two independent experiments. * indicates significant differences (p<0.05) to the respective PVP control as assessed by Two-Way ANOVA followed by Bonferroni post-hoc test.
 
-## T. carassii infection leads to an increase in number of macrophages and neutrophils
+### T. carassii infection leads to an increase in number of macrophages and neutrophils
 
 The increase in overall red fluorescence can be indicative of activation of the mpeg1 promotor driving mCherry expression, but also of macrophage proliferation. To address the latter hypothesis, Tg(mpeg1:eGFP) or Tg(mpx:GFP) zebrafish larvae were infected with T. carassii, and subsequently injected with iCLICK EdU for identification of dividing cells. With respect to proliferation, developing larvae display a generalised high rate of cell division throughout the body that increases overtime particularly in hematopoietic organs such as the thymus or the head kidney. Thus, for a more sensitive quantification of the response of macrophages and neutrophils to the infection, EdU was injected at 3 dpi (8 dpf), and at 4 dpi, larvae were separated in high- and low-infected individuals, followed by fixation and whole mount immunohistochemistry 6–8 hr later (30–32 hr after EdU injection). This allowed evaluating the number of dividing macrophage and neutrophil right at the onset of the macrophage response observed in (Figure 3C) and concomitantly with the development of differences in parasitaemia. As expected, EdU+ nuclei could be identified throughout the body of developing larvae. When specifically looking at EdU+ macrophage (Figure 4) and neutrophils (Figure 5) we selected the area of the head (left panels) and trunk (right panels) region, where previously (Figure 3B) the highest increase in red fluorescence was observed.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig4-v2.jpg)
+
+**Figure 4.:** (A) Tg(mpeg1:eGFP) zebrafish larvae were infected intravenously at 5 dpf with n = 200 T. carassii or with PVP control. At 3 dpi, larvae received 2 nl 1.13 mM iCLICKTM EdU, at 4 dpi were separated in high- and low-infected individuals and were imaged after fixation and whole mount immunohistochemistry 6–8 hr later (30–32 hr after EdU injection, ~9 dpf). Larvae were fixed and treated with iCLICK EdU ANDY FLUOR 555 (Red) development to identify EdU+ nuclei and with anti-GFP antibody to retrieve the position of macrophages, as described in the Materials and methods section. Larvae were imaged with Andor Spinning Disc Confocal Microscope using ×10 and ×20 magnifications. Maximum projections of the head (left panels, red boxes) and trunk (right panels, blue boxes) regions of one representative individual in PVP control, low- and high-infected zebrafish. Images capture macrophages (green) and EdU+ nuclei (red). In the PVP control group, EdU+ nuclei and GFP+ macrophages only rarely overlapped (white arrows, 20x), indicating limited proliferation of macrophages. In high- and low-infected individuals, the number of EdU+ macrophages increased (white arrows, 20x), indicating proliferation of macrophages in response to T. carassii infection. Blue arrowhead in the head of low and high-infected larvae, indicates the position of the thymus, an actively proliferating organ at this time point. The identification of EdU+ macrophages (white arrows) was performed upon detailed analysis of the separate stacks used to generate the overlay images, and are provided in Video 2. (B–C) Corrected total cell fluorescence (CTCF) calculated in the head (B) and trunk (C) region of larvae described in A. Symbols indicate individual larvae (n = 4–5 per group from two independent experiments). * indicates significant differences to the PVP control as assessed by One-Way ANOVA followed by Bonferroni post-hoc test. (D) Tg(mpeg1:eGFP) zebrafish larvae were treated as described in A and the number of EdU+ macrophages in the trunk region of PVP, low- and high-infected larvae was calculated. Symbols indicate individual larvae (n = 5 per group from two independent experiments). * indicates significant differences to the PVP control as assessed by One-Way ANOVA followed by Bonferroni post-hoc test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Zebrafish were treated as described in Figure 5. (A) A high number of macrophages can be seen around and inside the caudal vein of infected individuals. Especially in high-infected individuals, the majority of cells within the vessel was EdU+, suggesting that in these larvae, dividing macrophages migrated to the vessels. (B) Neutrophils were never observed within the caudal vein and, independently of whether they divided (EdU+) or not, were mostly observed outside or lining the vessel.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig5-v2.jpg)
 
-**Figure 5.:** T. carassii infection triggers neutrophil division.(A) Tg(mpx:GFP) were treated as described in Figure 4 (n = 4–5 larvae per group). Maximum projections of the head (left panels, red boxes) and trunk (right panels, blue boxes) regions of one representative individual in PVP, low- and high-infected zebrafish. Images capture neutrophils (green) and EdU+ nuclei (red). The images acquired at a ×20 magnification show that in all groups, EdU+ nuclei and GFP+ neutrophils only rarely overlapped (white arrows), and was marginally higher in infected than in non-infected PVP controls. Detailed analysis of the separate stacks selected to compose the overlay image of the head region of the high-infected larva (bottom left panel), revealed that none of the neutrophils in the area indicated by the blue arrowhead (thymus) were EdU+ (Video 3). (B–C) Corrected total cell fluorescence (CTCF) calculated in the head (B) and trunk (C) region of larvae described in A. Symbols indicate individual larvae (n = 4–5 per group from two independent experiments). ** indicates significant differences between CTCF in the head and trunk regions, as assessed by Two-Way ANOVA followed by Bonferroni post-hoc test. (D) Tg(mpx:GFP) were treated as described in A and the number of EdU+ neutrophils in the trunk region of PVP, low- and high-infected larvae was calculated. Symbols indicate individual larvae (n = 5 per group from two independent experiments). * indicates significant differences to the PVP control as assessed by One-Way ANOVA followed by Bonferroni post-hoc test.  Figure 5—source data 1.T. carassii infection triggers neutrophil division.
+**Figure 5.:** (A) Tg(mpx:GFP) were treated as described in Figure 4 (n = 4–5 larvae per group). Maximum projections of the head (left panels, red boxes) and trunk (right panels, blue boxes) regions of one representative individual in PVP, low- and high-infected zebrafish. Images capture neutrophils (green) and EdU+ nuclei (red). The images acquired at a ×20 magnification show that in all groups, EdU+ nuclei and GFP+ neutrophils only rarely overlapped (white arrows), and was marginally higher in infected than in non-infected PVP controls. Detailed analysis of the separate stacks selected to compose the overlay image of the head region of the high-infected larva (bottom left panel), revealed that none of the neutrophils in the area indicated by the blue arrowhead (thymus) were EdU+ (Video 3). (B–C) Corrected total cell fluorescence (CTCF) calculated in the head (B) and trunk (C) region of larvae described in A. Symbols indicate individual larvae (n = 4–5 per group from two independent experiments). ** indicates significant differences between CTCF in the head and trunk regions, as assessed by Two-Way ANOVA followed by Bonferroni post-hoc test. (D) Tg(mpx:GFP) were treated as described in A and the number of EdU+ neutrophils in the trunk region of PVP, low- and high-infected larvae was calculated. Symbols indicate individual larvae (n = 5 per group from two independent experiments). * indicates significant differences to the PVP control as assessed by One-Way ANOVA followed by Bonferroni post-hoc test.
 
 When analysing the macrophage response, a greater number of macrophages was observed in the head and trunk of both high- and low-infected larvae compared to PVP-injected individuals (Figures 4A, ×10 magnifications). In the head, macrophages were scattered throughout the region but in infected larvae they were most abundant in the area corresponding to the haematopoietic tissue (head kidney), posterior to the branchial arches, indicative of proliferation of progenitor cells. In the trunk, macrophages were scattered throughout the tissue, and in high-infected larvae in particular, macrophages generally clustered in the posterior cardinal vein and caudal vein (Figure 4A, right panels). In agreement with previous observations (Figure 3C), quantification of total green fluorescence confirmed a significant increase in the head and trunk of low-infected larvae (Figure 4B–C). In high-infected individuals, a significant increase was observed in the trunk (Figure 4C), whereas in the head the number of macrophages was clearly elevated although not significantly when compared to the PVP-injected controls (Figure 4B). In all groups, total cell fluorescence in the head region was higher than in the trunk region (Figure 4B–C), and thus largely contributed to the total cell fluorescence previously measured in whole larvae (Figure 3C). The difference in CTCF values between Figure 3 and Figure 4 can be attributed to the different microscopes and magnification used for the acquisition as well as fluorescence source (GFP or mCherry in Figure 3 and Alexa-488 fluorophore in Figure 4). Given the high number of macrophages in the head region, their heterogeneous morphology, the thickness of the tissue and the overall high number of EdU+ nuclei, it was not possible to reliably count single (EdU+) macrophages in this area. Therefore, when quantifying the number of EdU + cells, we focused on the trunk region only. There, EdU+ macrophages could be observed in all groups, and in agreement with the total cell fluorescence measured in the same region (Figure 4C), their number was higher in low- and high-infected individuals compared to PVP-injected controls (Figure 4D and corresponding Video 2). No significant difference was observed between high- and low-infected fish, confirming that the macrophage number is affected by the presence and not by the number of trypanosomes. Within the trunk region of high-infected larvae, a large proportion of macrophages were observed around and inside the caudal vein, the majority of which were EdU+ (Figure 4—figure supplement 1A), suggesting that in high-infected larvae, recently divided macrophages migrated to the vessels. Altogether, these data confirm that T. carassii infection triggers macrophage division and that this is higher in infected compared to non-infected individuals, possibly due to a higher haematopoietic activity.
 
+![Video 2.](https://cdn.elifesciences.org/articles/64520/elife-64520-video2.mp4.jpg)
+
+**Video 2.:** AVI files corresponding to the maximum projection images shown in Figure 5; Arrows are positioned as in Figure 5, and indicate the location of EdU+ macrophages.
+
 When analysing the neutrophils response, in agreement with the previous observation, the number of neutrophils in the head and trunk regions was not apparently different between infected and non-infected larvae (Figure 5A). Neutrophils were scattered throughout the head region, but differently from macrophages, their number did not increase in the area corresponding to the haematopoietic tissue. Quantification of total cell fluorescence in the head and trunk revealed no significant differences between groups (Figure 5B–C, Video 3). Interestingly, quantification of EdU+ neutrophils in the trunk region, revealed that while in PVP-injected individuals EdU+ neutrophils were rarely observed, in infected fish, a significant, although low number of EdU+ neutrophils was present (Figure 5D). These data indicate that neutrophils also respond to the infection by dividing, but their number is relatively low and may not significantly contribute to changes in total cell fluorescence. In contrast to macrophages, within the analysed trunk region, neutrophils were never observed within the posterior cardinal vein or caudal vein, and independently of whether they were EdU+ or not, were mostly observed lining the vessel (Figure 4—figure supplement 1B). Altogether, these data indicate that, independent of the trypanosome number, T. carassii triggers a differential macrophage and neutrophil response, with a significant increase in macrophages number likely due to enhanced myelopoiesis.
 
-## Differential distribution of neutrophils and macrophages in high- and low-infected zebrafish larvae
+![Video 3.](https://cdn.elifesciences.org/articles/64520/elife-64520-video3.mp4.jpg)
+
+**Video 3.:** AVI files corresponding to the maximum projection images shown in Figure 6; Arrows are positioned as in Figure 6, and indicate the location of EdU+ neutrophils.
+
+### Differential distribution of neutrophils and macrophages in high- and low-infected zebrafish larvae
 
 After having established that T. carassii infection triggers macrophage, and to a lesser extent, neutrophil division, we next investigated whether a differential distribution of these cells occurred during infection. Considering that trypanosomes are blood dwelling parasites and the kinetics of parasitaemia, we focused on the caudal vein at 4 dpi, a time point at which clear differences in parasitaemia (Figure 2) and a differential distribution of macrophages and neutrophils (Figures 4–5 and Figure 4—figure supplement 1) were observed between high- and low-infected larvae. To this end, crosses between transgenic lines marking the blood vessels and those marking either macrophages or neutrophils were used. Tg(kdrl:caax-mCherry;mpx:GFP) or Tg(fli1:eGFP x mpeg1:mCherry-F) were infected with T. carassii, separated into high- and low-infected larvae at 4 dpi, and imaged with Roper Spinning Disk Confocal Microscope using ×40 magnification. Longitudinal and orthogonal images were analysed to visualise the exact location of cells along the caudal vessels (Figure 6A and Video 4). In general, macrophages and neutrophils were never observed along or inside the caudal artery allowing us to focus on the caudal vein. In PVP controls, both macrophages and neutrophils were exclusively located outside the caudal vein in close contact with the endothelium or in the tissue adjacent the vessel. In infected fish, while neutrophils remained exclusively outside the vessels (Figure 6A, left panel and 7B), macrophages could be seen both inside (white arrows) and outside (blue arrows) the caudal vein (Figure 6A, right panel and Figure 6C, left plot). Whilst in low-infected individuals macrophage morphology was similar to that observed in non-infected fish, in high-infected larvae, macrophages inside the caudal vein clearly had a more rounded morphology (Figure 6A, right panel and Figure 6D, right plot). Altogether these data indicate that differently from neutrophils, macrophages increase in number in infected fish, are recruited inside the caudal vein and, depending on the infection level, their morphology can be greatly affected.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig6-v2.jpg)
 
-**Figure 6.:** Tg(kdrl:caax-mCherry;mpx:GFP) and Tg(fli1:eGFP x mpeg1:mCherry-F) zebrafish larvae were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi larvae were separated in high- and low-infected groups and imaged with a Roper Spinning Disk Confocal Microscope using ×40 magnification. Scale bars indicate 25 μm. CA: caudal artery; CV: caudal vein. (A) Left panel: representative images of the longitudinal view of the caudal vessels (red), capturing the location of neutrophils (green). Orthogonal views of the locations marked with grey dashed lines (a,b,c,d,e,f,g,h,i), confirm that in all groups, neutrophils are present exclusively outside the vessels. Right panel: representative images of the longitudinal view of the vessels, capturing the position of macrophages (red) outside the vessels (blue arrowheads) or inside (white arrowheads) the caudal vein (green). Orthogonal views of the locations marked with grey dashed lines (a,b,c,d,e,f,g,h) confirm that in PVP controls, macrophages are present exclusively outside the vessels (blue arrows); in low-infected larvae, most macrophages are outside the vessels (blue arrows) having an elongated or dendritic morphology, although seldomly macrophages can also be observed within the caudal vein (white arrows); in high-infected larvae, although macrophages with dendritic morphology can be seen outside the vessels, the majority of the macrophages resides inside the caudal vein, clearly having a rounded morphology. Video 4 provides the stacks used for the orthogonal views. (B–C) quantification of the number of neutrophils (B) and macrophages (C) (left panel) inside or outside the caudal vein; of the macrophages observed inside in (C), we quantified the number of those with a round or non-round morphology C (right panel). Symbols indicate individual larvae (n = 4–6 larvae per group, from two independent experiments). * indicates significant differences as assessed by One-Way ANOVA, followed by Tukey’s post-hoc test.  Figure 6—source data 1.
+**Figure 6.:** Tg(kdrl:caax-mCherry;mpx:GFP) and Tg(fli1:eGFP x mpeg1:mCherry-F) zebrafish larvae were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi larvae were separated in high- and low-infected groups and imaged with a Roper Spinning Disk Confocal Microscope using ×40 magnification. Scale bars indicate 25 μm. CA: caudal artery; CV: caudal vein. (A) Left panel: representative images of the longitudinal view of the caudal vessels (red), capturing the location of neutrophils (green). Orthogonal views of the locations marked with grey dashed lines (a,b,c,d,e,f,g,h,i), confirm that in all groups, neutrophils are present exclusively outside the vessels. Right panel: representative images of the longitudinal view of the vessels, capturing the position of macrophages (red) outside the vessels (blue arrowheads) or inside (white arrowheads) the caudal vein (green). Orthogonal views of the locations marked with grey dashed lines (a,b,c,d,e,f,g,h) confirm that in PVP controls, macrophages are present exclusively outside the vessels (blue arrows); in low-infected larvae, most macrophages are outside the vessels (blue arrows) having an elongated or dendritic morphology, although seldomly macrophages can also be observed within the caudal vein (white arrows); in high-infected larvae, although macrophages with dendritic morphology can be seen outside the vessels, the majority of the macrophages resides inside the caudal vein, clearly having a rounded morphology. Video 4 provides the stacks used for the orthogonal views. (B–C) quantification of the number of neutrophils (B) and macrophages (C) (left panel) inside or outside the caudal vein; of the macrophages observed inside in (C), we quantified the number of those with a round or non-round morphology C (right panel). Symbols indicate individual larvae (n = 4–6 larvae per group, from two independent experiments). * indicates significant differences as assessed by One-Way ANOVA, followed by Tukey’s post-hoc test.
 
-## T. carassii infection triggers the formation of foamy macrophages in high-infected zebrafish
+![Video 4.](https://cdn.elifesciences.org/articles/64520/elife-64520-video4.mp4.jpg)
+
+**Video 4.:** Zebrafish larvae were treated and imaged as described in Figure 7. Shown are the AVI files corresponding to the maximum projection images shown in Figure 7; Neutrophils were never observed within the vessel independently of the infection level (left panels). Macrophages, however, could be seen outside (blue arrows) and inside the vessel (white arrows). The number of rounded macrophages inside the vessel increased with the infection level.
+
+### T. carassii infection triggers the formation of foamy macrophages in high-infected zebrafish
 
 When analysing macrophage morphology and location, clear differences could be observed between control and high- or low-infected larvae when examined in greater detail. In control fish, macrophages generally exhibited an elongated and dendritic morphology, were very rarely observed inside the caudal vein and were mostly located along the vessel endothelium, in the tissue between the caudal vessels or in the ventral fin (Figure 7A, left). A similar morphology and distribution were observed in low-infected larvae (not shown, see also Figure 6A). Strikingly, in high-infected larvae, we consistently observed large, dark, granular and round macrophages located inside the caudal vein generally on the dorsal luminal side. These dark macrophages were clearly visible already in bright-field images due to their size, colour, and location, and could be present as single cells or as aggregates (Figure 7A, right). The occurrence of these large, granular macrophages increased with the progression of the infection (Video 5) and was exclusive to high-infected individuals as they were never observed in low-infected or control larvae.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig7-v2.jpg)
 
-**Figure 7.:** (A) Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish larvae were infected intravenously at 5 dpf with n = 200 T. carassii or with PVP and imaged at 4 dpi using an Andor Spinning Disc Confocal Microscope at a ×20 magnification. Representative images from three independent experiments are shown, with blue arrowheads pointing at macrophages outside the caudal vein (CV) and white arrowheads indicating large round macrophages inside the caudal vein (white dashed line). Gray dashed line indicated the caudal aorta (CA). Note, how the large macrophages are readily visible in bright field images. Scale bar indicates 25 μm. (B) Tg(mpeg1:mCherry-F) were treated as in A (n = 5 larvae per group). At 3 dpi, larvae received 1 nl of 30 µM BODIPY-FLC5 and were imaged 18–20 hr later using a Roper Spinning Disc Confocal Microscope at a ×40 magnification. Representative images from three independent experiments are shown. *, indicate foamy macrophages: macrophages (red) that are also BODIPY+ (green). Note that foamy macrophages are present only in the vein of high-infected individuals. Arrowheads indicate non-foamy macrophages (BODIPY-). Scale bar indicates 25 μm. Video 6 provides the stacks used in B. (C) Tg(mpeg1:mCherry-F) were treated as in A and the number of macrophages positive for BODIPY was quantified. BODIPY+ macrophages are observed only in high-infected individuals. Symbols indicate individual larvae (n = 4–5 per group, from two independent experiments). * indicates significant differences as assessed by One-Way ANOVA, followed by Tukey’s post-hoc test.  Figure 7—source data 1.
+**Figure 7.:** (A) Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish larvae were infected intravenously at 5 dpf with n = 200 T. carassii or with PVP and imaged at 4 dpi using an Andor Spinning Disc Confocal Microscope at a ×20 magnification. Representative images from three independent experiments are shown, with blue arrowheads pointing at macrophages outside the caudal vein (CV) and white arrowheads indicating large round macrophages inside the caudal vein (white dashed line). Gray dashed line indicated the caudal aorta (CA). Note, how the large macrophages are readily visible in bright field images. Scale bar indicates 25 μm. (B) Tg(mpeg1:mCherry-F) were treated as in A (n = 5 larvae per group). At 3 dpi, larvae received 1 nl of 30 µM BODIPY-FLC5 and were imaged 18–20 hr later using a Roper Spinning Disc Confocal Microscope at a ×40 magnification. Representative images from three independent experiments are shown. *, indicate foamy macrophages: macrophages (red) that are also BODIPY+ (green). Note that foamy macrophages are present only in the vein of high-infected individuals. Arrowheads indicate non-foamy macrophages (BODIPY-). Scale bar indicates 25 μm. Video 6 provides the stacks used in B. (C) Tg(mpeg1:mCherry-F) were treated as in A and the number of macrophages positive for BODIPY was quantified. BODIPY+ macrophages are observed only in high-infected individuals. Symbols indicate individual larvae (n = 4–5 per group, from two independent experiments). * indicates significant differences as assessed by One-Way ANOVA, followed by Tukey’s post-hoc test.
+
+![Video 5.](https://cdn.elifesciences.org/articles/64520/elife-64520-video5.mp4.jpg)
+
+**Video 5.:** Tg(mpeg1:mCherry-F;mpx:GFP) zebrafish larvae were injected intravenously at 5 dpf with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated into high- and low-infected individuals and imaged with a DMi8 inverted digital Leica microscope. The occurrence of large macrophages (arrows) in the cardinal caudal vessel increased with the progression of the infection and was exclusive to high infected individuals (4 and 7 dpi).
 
 The rounded morphology, granularity, size and dark appearance of these cells was reminiscent of that of foamy macrophages. Therefore, to further investigate the nature of these cells, the green fluorescent fatty acid BODIPY-FLC5 was used to track lipid accumulation in infected larvae (Figure 7B). BODIPY-FLC5 was selected due to its ability to be actively metabolised in de novo triacylglycerides synthesis (Carten et al., 2011). This would not only lead to accumulation of the dye in cells with high lipid content, but its accumulation might also be indicative of a change in lipid metabolism, also typical of foamy macrophages. Interestingly, administration of BODIPY-FL5 in infected larvae one day prior to the expected appearance of the large macrophages, revealed the accumulation of lipids in these cells (Video 6). Quantification of the number of BODIPY+ and BODIPY- macrophages, confirmed that BODIPY+ macrophages occur only in high-infected individuals (Figure 7C). Macrophages without the large, dark, granular appearance did not show lipid accumulation, independently of the infection level (Figure 7B). These results therefore confirms that the large, rounded, granular macrophages in the caudal vein are indeed foamy macrophages.
 
-## Foamy macrophages have a pro-inflammatory activation state
+![Video 6.](https://cdn.elifesciences.org/articles/64520/elife-64520-video6.mp4.jpg)
+
+**Video 6.:** Tg(mpeg1:mCherry-F) zebrafish larvae were infected intravenously at five dpf with n = 200 T. carassii or with PVP. At 3 dpi, larvae received 1 nl of 30 µM BODIPY-FLC5 and were imaged 18–20 hr later using a Roper Spinning Disc Confocal Microscope at a ×40 magnification. The AVI files corresponding to the maximum projection images shown in Figure 8, as well as a second individual, are shown. Asterisks indicate the position of foamy macrophages inside the caudal vessel (dashed line).
+
+### Foamy macrophages have a pro-inflammatory activation state
 
 To further investigate the activation state of foamy macrophages, we made use of the Tg(tnfa:eGFP-F;mpeg1:mCherry-F) and Tg(il1b:eGFP-F x mpeg1:mCherry-F) double transgenic zebrafish lines, having macrophages in red and tnfa- or Il1b-expressing cells in green (Figure 8 and Figure 9). We first focused on the time point at which the foamy macrophages were most clearly present in highly infected individuals, 4 dpi. Our results clearly show that all large foamy macrophages, were strongly positive for tnfa, suggesting an inflammatory activation state (Figure 8A). Interestingly, not only the large foamy macrophages within the caudal vein, but also dendritic or lobulated macrophages outside or lining the vessel showed various degrees of activation. Macrophages that were still partly in the caudal vein (Figure 8B, yellow arrowhead) displayed higher tnfa expression than macrophages lining the outer endothelium (white arrow heads). This could suggest that the presence of T. carassii components within the vessels might trigger macrophage activation.
 
@@ -97,9 +137,17 @@ To further investigate the activation state of foamy macrophages, we made use of
 
 **Figure 8.:** Tg(tnfa:eGFP-F;mpeg1:mCherry-F) (A-B) or Tg(il1b:eGFP-F x mpeg1:mcherry-F) (C) zebrafish larvae (5dpf), were injected with n = 200 T. carassii or with PVP. At 4 dpi, high-infected individuals were imaged with an Andor (A-B) or Roper (C) Spinning Disk Confocal Microscope using ×40 magnification. Scale bar indicates 25 μm. Foamy macrophages (asterisks) were easily identified within the caudal vein (dashed lines) and were strongly positive for tnfa (A) and il1b (C) expression (GFP signal). (B) Same as A, but a few stacks up, focusing on the cells lining the endothelium. Macrophages that were partly inside and partly outside the vessel (yellow arrowhead) were also strongly positive for tnfa, whereas macrophages lining the outer endothelium had a lower tnfa expression (white arrowheads). (C) A foamy macrophage (asterisk) within the caudal vein (dashed lines) positive for il1b. Endothelial cells were also strongly positive for il1b, a selection of which is indicated by white arrows. A mCherry-negative-il1b positive cell is present outside the vessel (blue arrow). Given its position, it is likely a neutrophil.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig9-v2.jpg)
+
+**Figure 9.:** Zebrafish larvae (5 dpf), either (A) Tg(tnfa:eGFP-F x mpeg1:mCherry-F) (n = 8–13 larvae per group from four independent experiments), or (B) Tg(il1b:eGFP-F;mpeg1:mCherry-F) (n = 7–8 larvae per group from two independent experiments), were infected as described in Figure 7. At 4 dpi, larvae were separated in high- and low-infected individuals and imaged with a Roper Spinning Disk Confocal Microscope. Scale bar indicate 25 μm. (A) In non-infected PVP controls (left panel), several macrophages can be observed outside the vessel but none was positive for tnfa. In low-infected individuals (middle panel), macrophages were present inside and outside the vessel. Except the occasional macrophage showing tnfa-eGFP expression (white arrowhead), they generally did not exhibit strong eGFP signal. In high-infected individuals however, foamy macrophages (asterisks) as well as endothelial cells (bright green cells) or other leukocytes, were strongly positive for tnfa-eGFP expression. (B) il1b-eGFP expression was generally low in non-infected PVP controls. In low-infected larvae, il1b-positive macrophages were rarely observed (white arrowhead). In both high- and low-infected fish, some endothelium cells in the cardinal caudal vein show high il1b-eGFP expression (bright green cells in middle and right panel). In high-infected individual, however (right panel), foamy macrophages inside the vessel (asterisks) as well as other macrophages lining the vessel (white arrowhead) and leukocytes in the tissue (blue arrow), were positive for il1b-eGFP expression. (C) Quantification of the total number of foamy and non-foamy macrophages and of the number of those that are positive or not for il1b or tnfa. All foamy macrophages are positive for il1b or tnfa, and high-infected individuals have generally a higher number of il1b or tnfa positive macrophages than low-infected or PVP individuals. *, indicate significant differences as assessed by Two-Way ANOVA followed by Bonferroni post-hoc test.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Tg(tnfa:eGFP-F) zebrafish larvae (5dpf), were injected intravenously with n = 200 T. carassii or with PVP. At 4 dpi, larvae were separated in high- and low-infected individuals and n = 3–6 fish per group were imaged with a Zeiss lsm-510 Confocal Microscope using ×10 magnification. Images were acquired using the same settings, thus allowing direct comparison of the intensity of the eGFP signal. Representative images of four different locations along the entire trunk and tail region of two individuals per group are shown. Each image has a frame size of 2048 × 2048 pixels allowing for enlargement of the images, if needed, for a more detailed view. Scale bar indicates 100 μm. Upper panels: in non-infected (PVP) individuals, low constitutive tnfa:eGFP expression can be observed in skin keratinocytes (open arrowheads) along the dorsal side of the larva as well as the flank skin depending on the orientation of the larva and focus (area 3–4 of PVP1); constitutive tnfa:eGFP expression is also detected in endothelial cells of the caudal vein (dashed square) as also reported in Figures 8–10. Stronger constitutive expression is observed in enterocytes of gut villi and this could vary between individuals and focus plane of the image. Autofluorescence of the gut lumen is a common feature and can vary per individual depending on the degree of absorption of the yolk sac or time of feeding (see also Figure 4). Finally, constitutive tnfa:eGFP expression can be detected in leukocytes (white arrowheads) distributed along the major trunk vessels, recognizable by their typical polymorphic morphology. Middle and lower panels: to allow maximum visibility of the overall tnfa:eGFP expression in high- and low-infected individuals, we limited the number of symbols added to each image; at this magnification it would render the images very crowded and we refer the reader to the legend of the upper panels (PVP). In low-infected individuals (T. car low), the number of tnfa:eGFP + leukocytes was only marginally higher than that in non-infected individuals (see also Figure 10C); leukocytes were distributed along the trunk, mostly lining the major blood vessels and in the tail tip loop, or could be seen in the peritoneal cavity around the gut area; only few leukocytes clearly displayed a stronger eGFP signal than observed in PVP individuals (only these are indicated by white arrowheads). This supports the previous observation (Figures 8–10) that low-infected individuals display a moderate inflammatory response. In high-infected individuals (T. car high), not only the number of tnfa:eGFP + cells but also the intensity of their eGFP signal was higher than that observed in PVP and low-infected individuals. Only in high-infected individuals, foamy macrophages strongly positive for tnfa:eGFP expression (yellow arrowheads) were seen along the major vein (posterior cardinal vein before the cloaca and caudal vein after the cloaca) and were also clearly recognizable in bright-field images by their dark and granular appearance (insets in area 2–3, T. car high 1). In high-infected individuals, numerous leukocytes strongly positive for tnfa:eGFP expression were observed also in the peritoneal cavity around the gut area and in the tail tip along the vessels or in the fins, altogether confirming the overall high inflammatory response in these individuals also reported in Figure 10. Note the high number of parasites extravasated in the tissue, recognizable by their typical ‘worm-like’ morphology (inset area 4) in the tail fin of high-infected individual number 1.
+
 Similar to what observed for tnfa expression, all foamy macrophages within the caudal vein were also positive for il1b (Figure 8C, asterisk), confirming their pro-inflammatory profile. Interestingly, not only macrophages but also endothelial cells (a selection is indicated by white arrows) were strongly positive for il1b. Outside the vessel, cells that were mCherry negative but strongly positive for il1b could also be observed (Figure 8C, blue arrow); given their position outside the vessel, these are most likely neutrophils. Altogether these data indicate that foamy macrophages occur in high-infected larvae and have a strong pro-inflammatory profile.
 
-## High-infected zebrafish have a strong inflammatory profile associated with susceptibility to infection
+### High-infected zebrafish have a strong inflammatory profile associated with susceptibility to infection
 
 When comparing the overall inflammatory state in high- and low-infected larvae it was apparent that high-infected individuals exhibited a higher pro-inflammatory response (Figure 9). Although tnfa- and il1b-positive macrophages could be seen in low-infected individuals, these were generally few (Figure 9A and Figure 9B middle panels, Figure 9C) and a higher number of tnfa- and il1b-expressing cells was observed in high-infected larvae (Figure 9A and Figure 9B right panels, Figure 9C). In these fish, il1b and tnfa expression was observed not only in (foamy) macrophages (asterisk), but also in mCherry negative cells outside the vessel (blue arrow, likely neutrophils) and in endothelial cells lining the caudal vein (bright green). To visualise how widespread the inflammatory response was in the embryo, the distribution of tnfa-expressing cells was analysed in four different locations spanning the entire trunk and tail of PVP, low- and high-infected individuals (Figure 9—figure supplement 1). In these images we appreciate that, in zebrafish as in mammals, tnfa expression (eGFP) is not exclusive to immune cells only. In fact, in infected as in non-infected individuals, low constitutive tnfa expression is observed in some skin keratinocytes, endothelial cells of the caudal vein and, as previously reported, also enterocytes in the gut villi (Marjoram et al., 2015; Nguyen-Chi et al., 2015); tnfa:eGFP+ leukocytes were easily distinguishable by their typical morphology and, in agreements with the distribution of macrophages and neutrophils observed in Figure 3, were present mostly in the trunk, distributed along the major vessels, and in the tail, along the tail tip loop and in the fin. Images were acquired with the same settings, thus allowing direct comparison of the intensity of the green signal. The images confirm that tnfa expression is strongly inducible in leukocytes and that not only the number of tnfa:eGFP+ cells but also the intensity of their eGFP signal is higher in high-infected compared to PVP or low-infected individuals. Thus, confirming the overall higher inflammatory state in high-infected individuals. Similar results were observed using the il1b:eGFP-F line (data not shown). Altogether, these results suggest that in high-infected individuals, uncontrolled parasitaemia leads to an exacerbated pro-inflammatory response associated with susceptibility to the infection. Low-infected individuals, however, with moderate il1b and tnfa responses, are able to control parasitaemia and to recover from the infection.
 
@@ -110,6 +158,10 @@ In this study, we describe the differential response of macrophages and neutroph
 Using transgenic lines marking macrophages and neutrophils, total cell fluorescence and cell proliferation analysis revealed that T. carassii infection triggers macrophage division, particularly in low-infected individuals. Although to a much lesser extent, neutrophils also responded to the infection by dividing. The total number of neutrophils, however, was comparatively low and likely did not contribute to the total cell fluorescence measured in our whole larvae analysis. It cannot be excluded however, that neutrophils’ viability was affected by the infection and that the number of newly divided neutrophils is only slightly higher than the dying ones. Although neutrophils were recently implicated in promoting the onset of tsetse fly-mediated trypanosome infections in mouse dermis, macrophage-derived immune mediators, such as NO and TNFα were confirmed to played a more prominent role in the control of first-peak parasitaemia and in the regulation of the overall inflammatory response (Caljon et al., 2018).
 
 The observation that in low-infected individuals the number of macrophages was significantly increased by 4–5 dpi, the time point at which clear differences in parasitaemia were apparent between the two infected groups, suggests a role for macrophages, or for macrophage-derived factors in first-peak parasitaemia control. Phagocytosis however, can be excluded as one of the possible contributing factors since motile T. carassii, similar to other extracellular trypanosomes (Caljon et al., 2018; Saeij et al., 2003; Scharsack et al., 2003), cannot be engulfed by any innate immune cell (Video 7). A strong inflammatory response is also not required for trypanosomes control, since in low-infected individuals, only moderate il1b or tnfα expression was observed, mostly in macrophages, as assessed using transgenic zebrafish reporter lines. Our data are in agreement with several previous studies using trypanoresistant (BALB/c) or trypanosusceptible (C57Bl/6) mice that revealed the double-edge sword of pro-inflammatory mediators such as TNFα or IFNγ during trypanosome infection in mammalian models (reviewed by Radwanska et al., 2018; Stijlemans et al., 2007). These studies showed that a timely but controlled expression of IFNγ, TNFα, and NO, contributed to trypanosomes control via direct (Daulouède et al., 2001; Iraqi et al., 2001; Lucas et al., 1994) or indirect mechanisms (Kaushik et al., 1999; Magez et al., 2007; Magez et al., 2006; Mansfield and Paulnock, 2005; Namangala et al., 2001; Noël et al., 2002). Conversely, in individuals in which an uncontrolled inflammatory response took place, immunosuppression and inflammation-related pathology occurred (Namangala et al., 2009; Namangala et al., 2001; Noël et al., 2004; Stijlemans et al., 2016). The stark contrast between the mild inflammatory response observed in low-infected individuals and the exacerbated response observed in high-infected larvae, strongly resembles the opposing responses generally observed in the aforementioned studies in mice. Owing to the possibility to monitor the infection at the individual level, it was possible to observe such responses within a population of outbred zebrafish larvae. Although we were unable to investigate the specific role of Tnfα during T. carassii infection of zebrafish, due to the unavailability of tnfα-/- zebrafish lines or the unsuitability of morpholinos for transient knock-down at late stages of development, we previously reported that recombinant zebrafish (as well as carp and trout) Tnfα, are all able to directly lyse T. brucei (Forlenza et al., 2009). In the same study, we reported that also during Trypanoplasma borreli (kinetoplastid) infection of common carp, soluble as well as transmembrane carp Tnfα play a crucial role in both, trypanosome control and susceptibility to the infection. Thus, considering the evolutionary conservation of the lectin-like activity among vertebrate’s TNFα (Daulouède et al., 2001; Forlenza et al., 2009; Lucas et al., 1994; Magez et al., 1997), it is possible that the direct lytic activity of zebrafish Tnfα may have played a role in the control of first-peak parasitaemia in low-infected individuals. In the future, using tnfα-/- zebrafish lines, possibly in combination with ifnγ reporter or ifnγ-/- lines, it will be possible to investigate in detail the relative contribution of these inflammatory mediators in the control of parasitaemia as well as onset of inflammation.
+
+![Video 7.](https://cdn.elifesciences.org/articles/64520/elife-64520-video7.mp4.jpg)
+
+**Video 7.:** Tg(mpx:GFP) zebrafish larvae were injected intravenously at 5 dpf with n = 200 T. carassii and two infected individuals were imaged at 7 dpi with a DMi8 inverted digital Leica microscope. Note how motile parasites are relative to static neutrophils (GFP), making it impossible for neutrophils, or any other immune cell, to engulf live parasite.
 
 There are multiple potential explanations for the inability of high-infected larvae to control parasitaemia and the overt inflammatory response. Using various comparative mice infection models, it became apparent that while TNFα production is required for parasitaemia control, a timely shedding of TNFα Receptor-2 (TNFR2) is necessary to limit TNFα-mediated infection-associated immunopathology (Radwanska et al., 2018). Furthermore, during T. brucei infection in mice and cattle, continuous cleavage of membrane glycosyl-phosphatidyl-inisotol (GPI)-anchored VSG (mVSG-GPI) leads to shedding of the soluble VSG-GIP (sVSG-GPI), while the di-myristoyl-glycerol compound (DMG) is left in the membrane. While the galactose-residues of sVSG-GPI constituted the minimal moiety required for optimal TNFα production, the DMG compound of mVSG contributed to macrophage overactivation (TNFα and IL-1β secretion) (Magez et al., 2002; Magez et al., 1998; Sileghem et al., 2001). Although T. carassii was shown to possess a surface dominated by GPI-anchored carbohydrate-rich mucin-like glycoproteins, not subject to antigenic variation (Lischke et al., 2000; Overath et al., 2001), components of its excreted/secreted proteome, together with phospholipase C-cleaved GPI-anchored surface proteins, have all been shown to play a role in immunogenicity (Joerink et al., 2007), inflammation (Oladiran and Belosevic, 2010; Oladiran and Belosevic, 2009; Ribeiro et al., 2010) as well as immunosuppression (Oladiran and Belosevic, 2012). Thus, the over-activation caused by the presence of elevated levels of pro-inflammatory trypanosome-derived moieties, combined with the lack of a timely secretion of regulatory molecules (e.g. soluble TNFR2) that could control the host response, may all have contributed to the exacerbated inflammation observed in high-infected individuals.
 
@@ -127,29 +179,259 @@ Altogether, in this study, we describe the innate immune response of zebrafish l
 
 ## Materials and methods
 
-## Zebrafish lines and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>elongation factor-1α (ef1a)</td>
+      <td>DOI:10.7554/eLife.48388</td>
+      <td>ZDB-GENE-990415–52</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>interleukin-1 beta (il1β)</td>
+      <td>ZFIN.org</td>
+      <td>ZDB-GENE-040702–2</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>interleukin-10 (il10)</td>
+      <td>ZFIN.org</td>
+      <td>ZDB-GENE-051111–1</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tumor necrosis factor alpha, gene a (tnfa)</td>
+      <td>ZFIN.org</td>
+      <td>ZDB-GENE-050317–1</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tumor necrosis factor alpha, gene b (tnfb)</td>
+      <td>ZFIN.org</td>
+      <td>ZDB-GENE-050601–2</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>interleukin-6 (il6)</td>
+      <td>ZFIN.org</td>
+      <td>ZDB-GENE-120509–1</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma carassii)</td>
+      <td>heat-shock protein-70 (hsp70)</td>
+      <td>DOI:10.7554/eLife.48388</td>
+      <td>GeneBank-FJ970030.1</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Cyprinus carpio)</td>
+      <td>Wild type common carp, R3xR8 strain</td>
+      <td>DOI:10.1016/0044-8486(95)91961 T</td>
+      <td></td>
+      <td>used to passage Trypanosoma carassii in vivo</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Wild type zebrafish, AB strain</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>RRID:SCR_005065; Cat#ZL1</td>
+      <td>used for backcrossing of all Tg</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>casper strain</td>
+      <td>DOI:10.1016/j.stem.2007.11.002</td>
+      <td></td>
+      <td>optically transparent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB:Tg(mpx:GFP)i114</td>
+      <td>DOI:10.1182/blood-2006-05-024075</td>
+      <td></td>
+      <td>wild type line marking neutrophils with green fluorescent protein (GFP) under the control of thempx (myeloperoxidase) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(mpeg1:mCherry-F)ump2Tg</td>
+      <td>DOI:10.1242/dmm.014498</td>
+      <td></td>
+      <td>wild type line marking macrophages with farnesylated red fluorescent protein (mCherry) under the control of the mpeg1 (Macrophage expressed gene-1) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(mpeg1:eGFP)gl22</td>
+      <td>DOI:10.1182/blood-2010-10-314120</td>
+      <td></td>
+      <td>wild type line marking macrophages with green fluorescent protein (GFP) under the control of the mpeg1 (Macrophage expressed gene-1) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB:Tg(kdrl:caax-mCherry)</td>
+      <td>DOI:10.1101/gad.1629408.734</td>
+      <td></td>
+      <td>wild type line marking the vasculature with green fluorescent protein (GFP) under the control of the kdrl (Vascular endothelial growth factor receptor kdr-like) promotor. Old name: Tg(flk1:ras-cherry)s896</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>casper Tg(fli:egfp)y1</td>
+      <td>DOI:10.1038/nrg888</td>
+      <td></td>
+      <td>optically transparent line, marking the vasculature with green fluorescent protein (GFP) under the control of the endothelial cell marker fli1 (friend leukemia integration-1) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(il1b:eGFP-F)ump3Tg</td>
+      <td>DOI:10.1242/dmm.014498</td>
+      <td></td>
+      <td>wild type line marking tnfa-expressing cells with farnesylated green fluorescent protein (GFP-F) under the control of the zebrafish tnfa (tumor necrosis factor alpha a) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(tnfa:eGFP-F)ump5Tg</td>
+      <td>DOI:10.7554/eLife.07288</td>
+      <td></td>
+      <td>wild type line marking il1b-expressing cells with farnesylated green fluorescent protein (GFP-F) under the control of the zebrafish il1b (interleukin 1-beta) promotor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Trypanosoma carassii)</td>
+      <td>TsCc-NEM strain</td>
+      <td>doi:10.1007/s004360050408</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1010, RRID:AB_2307313</td>
+      <td>primary antibody, whole mount: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken-Alexa 488</td>
+      <td>Abcam</td>
+      <td>Cat# ab150169, RRID:AB_2636803</td>
+      <td>Secondary antibody, whole mount: 1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPYTM FL pentanoic acid</td>
+      <td>Invitrogen</td>
+      <td>BODIPY-FL5: Cat# D-3834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iCLICKTM EdU (5- ethynyl-2’- deoxyuridine, component A)</td>
+      <td>ABP Biosciences</td>
+      <td>ANDY FLUOR 555 Imaging Kit: Cat# A004</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and maintenance
 
 Zebrafish were kept and handled according to the Zebrafish Book (zfin.org) and local animal welfare regulations of The Netherlands. Zebrafish embryo (0–5 days post fertilisation (dpf)) were raised at 27°C with a 12:12 light-dark cycle in egg water (0.6 g/L sea salt, Sera Marin, Heinsberg, Germany) and at five dpf transferred to E2 water (NaCl 15 mM, KCl 0.5 mM, MgSO4 1 mM, KH2PO40.15 mM, Na2HPO40.05 mM, CaCl 1 mM, NaHCO30.7 mM). From 5 days post fertilisation (dpf) until 14 dpf larvae were fed Tetrahymena once a day. From 10 dpf, larvae were also daily fed dry food ZM-100 (ZM systems, UK). The following zebrafish lines or crosses thereof were used in this study: transgenic Tg(mpx:GFP)i114 (Renshaw et al., 2006) marking neutrophils, Tg(kdrl:hras-mCherry)s896 referred as Tg(kdrl:caax-mCherry) (Chi et al., 2008; Jin et al., 2005) and Tg(fli1:eGFP)y1 (Lawson and Weinstein, 2002) marking the vasculature, Tg(mpeg1:eGFP)gl22 (Ellett et al., 2011) and Tg(mpeg1:mCherry-F)ump2Tg marking macrophages, Tg(il1b:eGFP-F)ump3Tg, (Nguyen-Chi et al., 2014), Tg(tnfa:eGFP-F)ump5Tg(Nguyen-Chi et al., 2015) marking cytokine-expressing cells. The latter three transgenic zebrafish lines express a farnesylated (membrane-bound) mCherry (mCherry-F) or eGFP (eGFP-F) under the control of the mpeg1, il1b or tnfa promoter, respectively. All lines have a AB (wild type) background except for the Tg(fli1:eGFP)y1 which was kept as optically transparent casper line (White et al., 2008) and crossed with the specified lines.
 
-## Trypanosoma carassii culture and infection of zebrafish larvae
+### Trypanosoma carassii culture and infection of zebrafish larvae
 
 Trypanosoma carassii (strain TsCc-NEM) was cloned and characterised previously (Overath et al., 1998) and maintained in our laboratory by syringe passage through common carp (Cyprinus carpio) as described previously (Dóró et al., 2019). Blood was drawn from infected carp and kept at 4°C overnight in siliconised tubes. Trypanosomes enriched at the interface between the red blood cells and plasma were collected and centrifuged at 800 xg for 8 min at room temperature. Trypanosomes were resuspended at a density of 5 × 105–1×106 ml and cultured in 75 or 165 cm2 flasks at 27°C without CO2 in complete medium as described previously (Dóró et al., 2019). T. carassii were kept at a density below 5 × 106/ml, and sub-cultured 1–3 times a week. In this way T. carassii could be kept in culture without losing infectivity for up to 2 months. The majority of carp white blood cells present in the enriched trypanosome fraction immediately after isolation, died within the first 3–5 days of culture and any remaining blood cell was removed prior to T. carassii injection into zebrafish. To this end, cells were centrifuged at 800 xg for 5 min in a 50 ml Falcon tube and the tube was subsequently tilted in a 20° angle in relation to the table surface, facilitating the separation of the motile trypanosomes along the conical part of the tube from the static pellet of white blood cells at the bottom of the tube.
 
 For zebrafish infection, trypanosomes were cultured for 1 week and no longer than 3 weeks. Infection of zebrafish larvae was performed as described previously (Dóró et al., 2019). Briefly, prior to injection, 5 days post fertilisation (dpf) zebrafish larvae were anaesthetised with 0.017% Ethyl 3-aminobenzoate methanesulfonate (MS-222, Tricaine, Sigma-Aldrich) in egg water. T. carassii were resuspended in 2% polyvinylpyrrolidone (PVP, Sigma-Aldrich) and injected (n = 200) intravenously in the Duct of Cuvier. After injection, infected and non-infected larvae were kept in separate tanks at a density of 60 larvae per 1L water.
 
-## Clinical scoring system of the severity of infection
+### Clinical scoring system of the severity of infection
 
 Careful monitoring of the swimming behaviour of zebrafish larvae after infection (five dpf onwards) as well as in vivo observation of parasitaemia development in transparent larvae, led to the observation that from 4 dpi onwards larvae could generally be segregated into high- and low-infected individuals. To objectively assign zebrafish to either one of these two groups, we developed a clinical scoring system (Figure 10). The first criterion looked at the escape reflex upon contact with a pipette and was sufficient to identify high-infected individuals as those not reacting to the pipet (slow swimmers). To categorise the remaining individuals, a second criterion based on counting parasite:blood cell ratios in 100 events passing through the intersegmental capillary (ISC) above the cloaca was developed. The infection scores on a scale from 1 to 10 were assigned as follows: 1 = no parasites observed, 2 = 1–10% parasite, 3 = 11–20% parasite, 4 = 21–30% parasite, 5 = 31–40% parasite, 6 = 41–55% parasite, 7 = 56–70% parasite, 8 = 71–85% parasite, 9 = 86–99%, 10 = no blood cells observed. Larvae with infection scores between 1–3 were categorised as low-infected while scores between 6 and 10 were categorised as high infected. Larvae with scores 4–5 were reassessed 1 day later, at 5 dpi, and then categorised as high- or low-infected. Since handing may affect larval behaviour or overall gene expression, larvae with scores 4–5 were re-assessed at 5 dpi only when image analysis was performed and not when survival or gene expression analysis were carried out. Larvae with a score of 1 (no parasites observed in ISC) where immediately assessed using the third criterion (extravasation, see below) and were never found to be parasite-free. Thus, remained assigned to the low-infected group. Next to that, heartbeat of the larvae was monitored and noted if it was slower than the control. The third criterion considered extravasation and the location of extravasated parasites (e.g. fins, muscle, intraperitoneal cavity, and interstitial space lining the blood vessels). Finally, for the fourth criterion the diameter of the caudal vein in the trunk area after the cloaca region was measured in ImageJ 1.49o to quantify the degree of vasodilation. Eventual blockage of tail tip vessel-loop was also noted. In general, the swimming behaviour of larvae was observed and compared to the control group.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/64520/elife-64520-fig10-v2.jpg)
 
-**Figure 10.:** T.carassii-infected zebrafish larvae.Zebrafish larvae infected with T. carassii can be analysed at 4 dpi; based on up to four different parameters including (1) visual monitoring of larval behaviour, (2) parasite numbers, (3) location, or (4) vasodilation, larvae could be segregated into high- and low-infected individuals. See details in the text in the corresponding Materials and methods section.
+**Figure 10.:** Zebrafish larvae infected with T. carassii can be analysed at 4 dpi; based on up to four different parameters including (1) visual monitoring of larval behaviour, (2) parasite numbers, (3) location, or (4) vasodilation, larvae could be segregated into high- and low-infected individuals. See details in the text in the corresponding Materials and methods section.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 Zebrafish were sacrificed by an overdose of MS-222 anaesthetic (50 mg/L). At each time point, 3–6 zebrafish larvae were sacrificed and pooled. The control at time point zero, was a group of larvae injected with n = 200 T. carassii and immediately sacrificed. Pools were transferred to RNA later (Ambion), kept at 4°C overnight and then transferred to −20°C for further storage. Total RNA isolation was performed with the Qiagen RNeasy Micro Kit (QIAgen, Venlo, The Netherlands) according to manufacturer’s protocol. Next, 250–500 ng total RNA was used as template for cDNA synthesis using SuperScript III Reverse Transcriptase and random hexamers (Invitrogen, Carlsbad, CA, USA), following the manufacturer’s instructions with an additional DNase step using DNase I Amplification Grade (Invitrogen, Carlsbad, CA, USA). cDNA was then diluted 25 times to serve as template for real-time quantitative PCR (RT-qPCR) using Rotor-Gene 6000 (Corbett Research, QIAgen), as previously described (Forlenza et al., 2012). Primers (Table 1) were obtained from Eurogentec (Liège, Belgium). Gene expression was normalised to the expression of elongation factor-1 alpha (ef1a) housekeeping gene and expressed relative to the T. carassii-injected control at 0 dpi.
 
-## In vivo imaging and videography of zebrafish
+**Table 1.**
+ List of primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Fw primer sequence</th>
+      <th>RV primer sequence</th>
+      <th>Acc. number (zfin.org)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ef1a</td>
+      <td>CTGGAGGCCAGCTCAAACAT</td>
+      <td>ATCAAGAAGAGTAGTAGTACCG</td>
+      <td>ZDB-GENE-990415–52</td>
+    </tr>
+    <tr>
+      <td>il1β</td>
+      <td>TTGTGGGAGACAGACAGTGC</td>
+      <td>GATTGGGGTTTGATGTGCTT</td>
+      <td>ZDB-GENE-040702–2</td>
+    </tr>
+    <tr>
+      <td>il10</td>
+      <td>ACTTGGAGACCATTCTGCC</td>
+      <td>CACCATATCCCGCTTGAGTT</td>
+      <td>ZDB-GENE-051111–1</td>
+    </tr>
+    <tr>
+      <td>tnfa</td>
+      <td>AAGTGCTTATGAGCCATGC</td>
+      <td>CTGTGCCCAGTCTGTCTC</td>
+      <td>ZDB-GENE-050317–1</td>
+    </tr>
+    <tr>
+      <td>tnfb</td>
+      <td>AAACAACAAATCACCACACC</td>
+      <td>ACACAAAGTAAAGACCATCC</td>
+      <td>ZDB-GENE-050601–2</td>
+    </tr>
+    <tr>
+      <td>il6</td>
+      <td>ACTCCTCTCCTCAAACCT</td>
+      <td>CATCTCTCCGTCTCTCAC</td>
+      <td>ZDB-GENE-120509–1</td>
+    </tr>
+    <tr>
+      <td>T. car. hsp70</td>
+      <td>CAGCCGGTGGAGCGCGT</td>
+      <td>AGTTCCTTGCCGCCGAAGA</td>
+      <td>FJ970030.1 (GeneBank)</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo imaging and videography of zebrafish
 
 Prior to imaging, zebrafish larvae were anaesthetised with 0.017% MS-222 (Sigma-Aldrich). For total fluorescence acquisition, double transgenic Tg(mpeg1:mCherry-F;mpx:GFP) were positioned on preheated flat agar plates (1% agar in egg water with 0.017% MS-222) and imaged with Fluorescence Stereo Microscope (Leica M205 FA). The image acquisition settings were as following: Zoom: 2.0–2.2, Gain: 1, Exposure time (ms): 70 (BF)/700 (GFP)/1500 (mCherry), Intensity: 60 (BF)/700 (GFP)/700 (mCherry), Contrast: 255/255 (BF)/70/255 (GFP)/15/255 (mCherry).
 
@@ -157,20 +439,20 @@ Alternatively, anaesthetised larvae were embedded in UltraPure LMP Agarose (Invi
 
 High-speed videography of T. carassii swimming behaviour in vivo was performed as described previously (Dóró et al., 2019). Briefly, the high-speed camera was mounted on a DMi8 inverted digital microscope (Leica Microsystems), controlled by Leica LASX software (version 3.4.2.) and equipped with 40x (NA 0.6) and 20x (NA 0.4) long distance objectives (Leica Microsystems). For high-speed light microscopy a (eight bits) EoSens MC1362 (Mikrotron GmbH, resolution 1280 × 1024 pixels), with Leica HC 1x Microscope C-mount Camera Adapter, was used, controlled by XCAP-Std software (version 3.8, EPIX inc). Images were acquired at a resolution of 900 × 900 or 640 × 640 pixels. Zebrafish larvae were anaesthetised with 0.017% MS-222 and embedded in UltraPure LMP Agarose (Invitrogen) on a microscope slide (1.4–1.6 mm) with a well depth of 0.5–0.8 mm (Electron Microscopy Sciences). Upon solidification of the agarose, the specimen was covered with 3–4 drops of egg water containing 0.017% MS-222, by a 24 × 50 mm coverslip and imaged immediately. For all high-speed videography, image series were acquired at 480–500 frames per second (fps) and analysed using a PFV software (version 3.2.8.2) or MiDAS Player v5.0.0.3 (Xcite, USA).
 
-## Fluorescence quantification
+### Fluorescence quantification
 
 Quantification of total cell fluorescence in zebrafish larvae was performed in ImageJ (version 1.49o) using the free-form selection tool and by accurately selecting the larvae area. Owing to the high auto-fluorescence of the gut or gut content, and large individual variation, the gut area was excluded from the total fluorescence signal. Area integrated intensity and mean grey values of each selected larva were measured by the software. To correct for the background, three consistent black areas were selected in each image. Analysis was performed using the following formula: corrected total cell fluorescence (CTCF) = Integrated density – (Area X Mean background value).
 
-## EdU proliferation assay and immunohistochemistry
+### EdU proliferation assay and immunohistochemistry
 
 iCLICK EdU (5- ethynyl-2’- deoxyuridine, component A) from ANDY FLUOR 555 Imaging Kit (ABP Biosciences) at a stock concentration of 10 mM, was diluted in PVP to 1.13 mM. Infected Tg(mpeg1:eGFP) or Tg(mpx:GFP) larvae were injected in the heart cavity at 3 dpi (8dpf) with 2 nl of solution, separated in high- and low-infected individuals at 4 dpi and euthanised 6–8 hr later (30–32 hr after EdU injection) with an overdose of anaesthetic (0.4% MS-222 in egg water). Following fixation in 4% paraformaldehyde (PFA, Thermo Scientific) in PBS, o/n at 4°C, larvae were washed three times in buffer A (0.1% (v/v) tween-20, 0.05% (w/v) azide in PBS), followed by dehydration: 50% MeOH in PBS, 80% MeOH in H20 and 100% MeOH, for 15 min each, at room temperature (RT), with gentle agitation. To remove background pigmentation, larvae were incubated in bleach solution (5% (v/v) H2O2 and 20% (v/v) DMSO in MeOH) for 1 hr at 4°C, followed by rehydration: 100% MeOH, 80% MeOH in H2O, 50% MeOH in PBS for 15 min each, at room temperature (RT), with gentle agitation. Next, larvae were incubated three times for 5 min each in buffer B (0.2%(v/v) triton-x100, 0.05% azide in PBS) at RT with gentle agitation followed by incubation in EdU iCLICK development solution for 30 min at RT in the dark and three rapid washes with buffer B.
 
 The described EdU development led to loss of GFP signal in the transgenic zebrafish. Therefore, to retrieve the position of neutrophils or macrophages, wholemount immunohistochemistry was performed. Larvae were blocked in 0.2% triton-x100, 10% DMSO, 6% (v/v) normal goat serum and 0.05% azide in PBS, for 3 hr, at RT with gentle agitation. Next, the primary antibody Chicken anti-GFP (Aves labs.Inc, 1:500) in Antibody buffer (0.2% tween-20, 0.1% heparin, 10% DMSO, 3% normal goat serum and 0.05% azide in PBS) was added and incubated overnight (o/n) at 37°C. After three rapid and three 5 min washes in buffer C (0.1% tween-20, 0.1% (v/v) heparin in PBS), at RT with gentle agitation, the secondary antibody goat anti-chicken-Alexa 488 (Abcam, 1:500) was added in Antibody buffer and incubated o/n at 37°C. After three rapid and three 5 min washes in buffer C, at RT with gentle agitation, larvae were imaged with Andor Spinning Disk Confocal Microscope.
 
-## BODIPY injection
+### BODIPY injection
 
 BODIPY FL pentanoic acid (BODIPY-FL5, Invitrogen) was diluted in DMSO to a 3 mM stock solution. Stock solution was diluted 100x (30 µM) with PVP. Infected larvae 3 dpi (8 dpf) were injected with 1 nl of the solution i.p. (heart cavity) and imaged 18–20 hr later.
 
-## Statistical analysis
+### Statistical analysis
 
 Analysis of gene expression and total fluorescence data were performed in GraphPad PRISM 5. Statistical analysis of gene expression data was performed on Log(2) transformed values by One-way ANOVA followed by Tukey’s or Bonferroni multiple comparisons test. Analysis of Corrected Total Cell Fluorescence was performed on Log(10) transformed values followed by Two-Way ANOVA and Bonferroni multiple comparisons post-hoc test. Analysis of EdU+ macrophages was performed on Log(10) transformed values followed by One-way ANOVA and Bonferroni multiple comparisons post-hoc test. In all cases, p<0.05 was considered significant.

@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/055rjs771 CSIR-Institute of Microbial Technology Chandigarh India
+1. CSIR-Institute of Microbial Technology Chandigarh India ([ROR:055rjs771](https://ror.org/055rjs771))
 
 † Corresponding author
 
@@ -33,27 +33,51 @@ In this study, we sought to define the scope of individual regulators and their 
 
 ## Results
 
-## phoP directly regulates a subset of genes of CRP regulon
+### phoP directly regulates a subset of genes of CRP regulon
 
 DNA microarray and sequence-based transcriptomic profiling identified PhoP regulon (Solans et al., 2014; Walters et al., 2006). The role of the virulence regulator PhoP in cAMP-responsive mycobacterial gene expression became apparent when we noted an overlap between the regulons under the control of cAMP receptor protein (CRP) and PhoP. Thus, we compared relative expression of representative CRP regulon genes in WT bacilli (referred to as WT-H37Rv) and a mutant strain of M. tuberculosis H37Rv, in which phoPR locus (Rv0757-Rv0758) has been inactivated (referred to as ΔphoP-H37Rv), under normal, acidic pH and exposure to NO conditions (Figure 1A). Notably, these two stress conditions are among the major hostile conditions that M. tuberculosis encounters within the host (Nathan and Shiloh, 2000; Rustad et al., 2009; Wayne and Sohaskey, 2001). Our results demonstrate that a subset of CRP-regulated genes including icl1, umaA, and whiB1 are positively regulated by PhoP. We also compared the expression of these genes in the mutant complemented with wild-type phoP or phoPD71N allele, a mutant PhoP defective for phosphorylation at Asp-71 (Gupta et al., 2006). In keeping with phosphorylation-dependent activation of PhoP, PhoPD71N was unable to restore gene expression. Notably, icl1 has been implicated in persistence and virulence of M. tuberculosis in macrophages and mice (Fontán et al., 2008; Gonzalo-Asensio et al., 2008; Gupta et al., 2009; Menon and Wang, 2011; Rohde et al., 2007; Schnappinger et al., 2003), whereas umaA encodes for a mycolic acid synthase (Laval et al., 2008). On the other hand, whiB1 as an essential gene has been shown to function in NO sensing of mycobacteria (Smith et al., 2010). Since we noted that elevated expression of these CRP-regulated genes in the complemented mutant (ΔphoP::phoP), we compared phoP expression in WT-H37Rv and complemented strain (Figure 1—figure supplement 1). Our results demonstrate that phoP expression level is reproducibly higher in the complemented mutant (relative to the WT bacilli) both under normal conditions (Figure 1—figure supplement 1A) as well as during growth under low pH conditions (Figure 1—figure supplement 1B). These results possibly account for elevated mRNA levels of a few representative genes in the complemented mutant relative to WT-H37Rv (Figure 1A). However, relatively poor restoration of gene expression in the complemented mutant under acid stress is possibly related to inadequate activation of PhoPR under specific stress conditions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig1-v1.jpg)
+
+**Figure 1.:** (A) Quantitative RT-PCR was carried out to compare the expression level of icl1, umaA, and whiB1 in indicated mycobacterial strains, grown under normal and specific stress conditions. Note that mycobacterial strains include WT-H37Rv (empty bar), ΔphoP-H37Rv (gray bar), and the mutant strain complemented with wild-type phoP (blue bar) or phosphorylation-defective phoPD71N (dark gray bar). The results show average values from biological triplicates, each with two technical repeats (*p≤0.05; **p≤0.01; ***p≤0.001). Fold changes in mRNA levels were determined as described in the Materials and methods. Notably, changes in gene expression levels were insignificant when compared between ΔphoP-H37Rv (gray bar) and the mutant complemented with phosphorylation-defective phoPD71N (dark gray bar). (B) To examine role of PhoP in crp expression, RT-qPCR compared expression levels of crp (Rv3676) in WT-H37Rv (empty bar), ΔphoP-H37Rv (gray bar) and the complemented mutant (black bar) (***p≤0.001). PhoP-dependent aprA expression was shown as a control. (C) In vivo recruitment of PhoP within target promoters was examined by ChIP-qPCR as described in the Materials and methods. espA promoter (espAup), and gapdh-specific enrichments were used as a positive and negative control, respectively. The experiments were performed in biological duplicates, each with two technical repeats (**p≤0.01; ***p≤0.001), and fold enrichment was determined relative to an IP sample without adding antibody (mock control). Non-significant differences are not indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Expression levels of phoP were measured in indicated mycobacterial strains grown under (A) normal pH (pH 7.0) and (B) acidic pH (pH 4.5) using RT-qPCR as described in the Materials and methods. rpoB was used as a control, and the average fold differences were determined from two biological repeats each with two technical repeats (**p≤0.01).
+
 Because the above genes are controlled by M. tuberculosis CRP, we examined if PhoP impacts expression of these genes by controlling crp expression (Figure 1B). Our results show that crp is not under the regulation of phoP locus. However, low pH-inducible aprA which belongs to the PhoP regulon, showed a significantly lowered expression in ΔphoP-H37Rv relative to WT-H37Rv, suggesting that PhoP-dependent regulation of cAMP-inducible/CRP-controlled genes is not attributable to PhoP controlling CRP expression. To investigate whether PhoP is directly recruited within these promoters, Flag-tagged PhoP was ectopically expressed in WT-H37Rv and ChIP-qPCR was carried out using anti-Flag antibody (Figure 1C). Notably, PhoP is significantly enriched at the whiB1, icl1, and umaA promoters by 12.4±0.4-fold, 4.4±0.5-fold, and 6.2±0.9-fold, respectively, relative to mock sample (no antibody control). However, gapdh-specific qPCR did not show any enrichment, whereas a previously reported PhoP-regulated espA promoter (Anil Kumar et al., 2016) showed 6.0±0.3-fold enrichment, confirming specific recruitment of PhoP within the CRP-regulated promoters.
 
-## Identifying core binding site of PhoP at the CRP-regulated whiB1 promoter
+### Identifying core binding site of PhoP at the CRP-regulated whiB1 promoter
 
 Next, to identify the core binding sites of PhoP EMSA experiments were carried out using end-labeled whiB1up1 (–266 to +60 with respect to the ORF start site of whiB1) and purified PhoP (Figure 2). Note that in ChIP assay upstream regulatory region of whiB1 showed the most efficient in vivo recruitment of PhoP (Figure 1C). In keeping with the ChIP data, P~PhoP showed ≈20-fold more efficient DNA binding to whiB1up compared to the unphosphorylated regulator (compare lanes 2–4 and lanes 5–7, Figure 2A [based on limits of detection in these assays]). Additional experiments using PCR-amplified overlapping promoter fragments show that although 111 bp whiB1up1 (−266 to –156 with respect to the ORF start site of whiB1) efficiently binds to P~PhoP (lanes 2–3), two other fragments whiB1up2 (−156 to –46), and whiB1up3 (–50 to +60) failed to form a stable complex with P~PhoP (lanes 5–6, and lanes 8–9, respectively), indicating absence of PhoP binding site downstream of –156 nucleotide of the whiB1 promoter (Figure 2—figure supplement 1A). Importantly, while presence of 10-fold and 20-fold molar excess of unlabeled whiB1up1 efficiently competed out PhoP binding (lanes 3–4, Figure 2—figure supplement 1B), an identical fold excess of unlabeled whiB1up3 resulted in a minor variation of PhoP binding (<5%; lanes 5–6) to whiB1up1 compared to ‘no competitor’ control (lane 2). The sequence-specific DNA binding is consistent with the presence of two neighboring PhoP boxes (He and Wang, 2014; Solans et al., 2014) comprising a 7-bp direct repeat motif spanning nucleotides –97 to –91, and –86 to –80 relative to the whiB1 transcription start site. To examine the importance of this motif, mutations were introduced within both the repeat units of whiB1up1 (Figure 2B). Notably, a labeled DNA fragment carrying only these changes (whiB1up1mut) failed to form a stable PhoP—promoter DNA complex, while the WT promoter (whiB1up1) under identical conditions, exhibited efficient DNA binding (compare lanes 2–4 with lanes 6–8, Figure 2C). These results suggest that PhoP most likely binds to whiB1up1 by sequence-specific recognition of the 7 bp direct repeat motif. Further, our EMSA data comparing DNA binding by PhoP and PhoPD71N reveals that the mutant remains ineffective for DNA binding to radio-labeled whiB1up1 both in absence or presence of AcP; however, wild-type PhoP upon pre-incubation with AcP, under identical conditions, showed effective DNA binding (compare lanes 2–5 with lanes 6–9, Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig2-v1.jpg)
+
+**Figure 2.:** (A) EMSA of radio-labeled whiB1up for binding of 0.2, 0.4, and 0.6 µM of PhoP (lanes 2–4) or P~PhoP (lanes 5–7), pre-incubated in a phosphorylation mix with acetyl phosphate (AcP) as the phospho-donor. The arrowheads on the left and right indicate the free probe and a slower moving complex, respectively. (B) PhoP binding motif consists of upstream (DRu1) and downstream (DRu2) repeat units. To construct mutant promoter (whiB1upmut), changes in both the repeat units were introduced by changing As to Cs and Gs to Ts and vice versa, and the orientation of DRu2 was reversed. whiB1upmut represents whiB1up fragment carrying changes only at the PhoP binding site. (C) EMSA experiment of labeled whiB1up (lanes 2–4), and whiB1upmut (lanes 6–8) to increasing concentrations of P~PhoP. The free probe and the slower moving complexes are indicated on the figure. (D) EMSA of radio-labeled whiB1up1 for binding of increasing concentrations of phosphorylation-deficient PhoPD71N (lanes 2–5) or PhoP (lanes 6–9), pre-incubated in phosphorylation mixture with or without AcP, respectively. Lane 1 shows the free probe. The assay conditions, sample analyses, and detection of radio-active samples are described in the Materials and methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) EMSA of radio-labeled whiB1up-derived fragments (whiB1up1-whiB1up3, as indicated) were performed with 0.2 and 0.4 µM of P~PhoP (lanes 2–3, 5–6, and 8–9, respectively), pre-incubated in a phosphorylation mix with acetyl phosphate (AcP) as the phospho-donor, to probe core binding site of the regulator. (B) To examine sequence-specific binding, EMSA of whiB1up1 with 0.3 µM of P~PhoP was carried out in absence (lane 2) or in presence of 20-fold, and 40-fold excess of specific competitor (unlabeled whiB1up1, lanes 3–4) or non-specific competitor (unlabeled whiB1up3, lanes 5–6), respectively. The assay conditions, sample analyses, and detection of radio-labeled samples are described in the Materials and methods; free probe and a slower moving complex are indicated on the figure. (C) To examine PhoP-regulated expression of whiB1up-lacZ, and whiB1upmut-lacZ fusions, M. smegmatis mc2155 harboring appropriate fusion constructs were grown, and β-galactosidase activities with or without inducing Mycobacterium tuberculosis PhoP expression were measured at 24 hr as described (Goyal et al., 2011). Note that in whiB1upmut, mutations were introduced only within both the PhoP binding repeat units of whiB1up1 as shown in the figure (Figure 2B). The results show average values with standard deviations from two biological repeats (***p value≤0.001). Inset compares PhoP expression in crude extracts with equal amount of total protein; RpoB was used as a loading control. (D) Nucleotide sequences of likely PhoP binding sites within indicated promoters. The sequences are numbered relative to their corresponding transcription start sites.
+
 Next, whiB1upmut was cloned into a promoter-less mycobacterial reporter plasmid (Dussurget et al., 1999) and used as a transcription fusion in M. smegmatis. The strain harboring transcriptional fusions were co-transformed with phoP expressing plasmid, and grown in 7H9 medium in the absence or presence of 50 ng/ml anhydrotetracycline (ATc), an inducer of PhoP expression, as described previously (Goyal et al., 2011). Consistent with phoP-dependent in vivo activation of whiB1 (Figure 1A), with induction of PhoP the whiB1up-lacZ fusion was significantly activated by 8.8±0.2-fold at 24-hr time point as measured by β-galactosidase activity (Figure 2—figure supplement 1C). However, upon induction of PhoP expression cells carrying whiB1upmut-lacZ fusion showed a comparable enzyme activity of 0.95±0.03-fold relative to uninduced cells. Note that we observed a comparable induction of PhoP expression in M. smegmatis cells carrying either the WT or the mutant promoter (inset to Figure 2—figure supplement 1C). Thus, we conclude that the newly identified PhoP-binding site, located upstream of CRP binding site, is necessary and sufficient for PhoP-dependent activation of whiB1. Along the line, based on the knowledge of consensus PhoP binding sequence (He et al., 2016; Solans et al., 2014), we were able to map likely binding sites of the regulator within the icl1 and umaA promoters (Figure 2—figure supplement 1D).
 
-## PhoP promotes CRP recruitment at the whiB1 promoter
+### PhoP promotes CRP recruitment at the whiB1 promoter
 
 Having discovered PhoP binding site in the close vicinity of previously identified CRP binding site (Kahramanoglou et al., 2014; Smith et al., 2010), we sought to investigate how a representative promoter DNA accommodates both the regulators. In subsequent binding assays, CRP was unable to bind end-labeled whiB1up1 to form a complex stable to gel electrophoresis (lanes 2–3, Figure 3A). However, under identical conditions, PhoP showed effective binding to whiB1up1 (lanes 8–9). Interestingly, incubation of both PhoP and CRP together at comparable concentrations showed a striking stimulation of ≈5- to 10-fold of DNA binding leading to formation of a slowest moving band (lanes 4–7). These results demonstrate that the presence of PhoP significantly stimulates CRP recruitment within the whiB1 promoter. To determine the composition, protein components of the slowest moving complex (lane 5) were isolated, resolved on a Tricine SDS-PAGE and identified by Western blotting using anti-His antibody (lane 2, Figure 3B). Purified regulators were resolved alongside to confirm relative migration of the regulators (Figure 3C). Our results confirm that the slowest moving band represents a PhoP/CRP/whiB1up1 ternary complex.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig3-v1.jpg)
+
+**Figure 3.:** (A) To investigate how the promoter simultaneously accommodates both the regulators, EMSA experiments compared end-labeled whiB1up1 binding to increasing concentrations of purified CRP (lanes 2–3), PhoP (lanes 8–9), and both PhoP and CRP together (lanes 4–7). The assay conditions, sample analyses, and detection are described in the Materials and methods. Positions of the free probe and the complex are indicated on the figure. (B) Western blot analyses of protein fraction extracted from the excised gel fragment representing the complex (lane 5), as indicated by a box, was probed by anti-His antibody in lane 2; lane 1 resolved purified PhoP as a control. (C) Tricine SDS-PAGE analysis was carried out alongside indicating recombinant His-tagged CRP (lane 1) and PhoP (lane 2); lane 3 resolved marker proteins of indicated molecular masses. Protein samples were visualized by Coomassie blue staining. (D, E) To probe protein-protein interaction by M-PFC assays, Mycobacterium smegmatis expressing either (D) M. tuberculosis CRP and PhoP or (E) CRP and PhoPD71N, were grown on 7H10/hyg/kan plates in presence of TRIM, and growth was examined for strains co-expressing indicated fusion constructs. In both cases, empty vectors were included as negative controls, and co-expression of pUAB400-phoP/pUAB300-phoR encoding PhoP and PhoR, respectively, was used as a positive control. All the strains grew well in absence of TRIM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) To probe protein-protein interaction by M-PFC assays, Mycobacterium smegmatis co-expressing M. tuberculosis PhoP and cyclic AMP macrophage regulator (CMR), were grown on 7H10/hyg/kan plates in the absence and presence of TRIM, and growth was examined. In both cases, empty vectors were included as negative controls, and co-expression of pUAB400-phoP/pUAB300-phoR (as a positive control) encoding PhoP and PhoR, respectively, showed M. smegmatis growth in presence of TRIM. All the strains grew well in absence of TRIM. (B) To verify expression of M. tuberculosis CRP and CMR in M. smegmatis, mRNA levels of the regulators were compared by RT-qPCR. Average fold changes in mRNA levels from two biological repeats (each with two technical repeats) are plotted, and non-significant difference is not indicated.
 
 With the results showing two regulators displaying a cooperative DNA binding, we explored the possibility of CRP-PhoP protein-protein interaction using mycobacterial protein fragment complementation (referred to as M-PFC) assay (Figure 3D; Singh et al., 2006). In this assay, two interacting mycobacterial proteins are independently fused to the domains of mDHFR (murine dihydrofolate reductase), which upon reconstitution confers bacterial resistance to trimethoprim (TRIM). The bait and prey plasmids were constructed as C-terminal fusions with complementary fragments of mDHFR. While PhoP was expressed from integrative plasmid, crp and phoR encoding ORFs were expressed from the episomal plasmid. The corresponding plasmids were co-transformed in M. smegmatis and transformants were selected on 7H10/kan/hyg plates. Interestingly, cells co-expressing PhoP and CRP grew well in the presence of TRIM (Figure 3D), suggesting CRP-PhoP protein-protein interaction. In contrast, M. smegmatis harboring empty vector controls showed no detectable growth on 7H10/TRIM plates while these strains grew well on 7H10 plates lacking TRIM.
 
 We next performed M-PFC experiment using phosphorylation-defective PhoPD71N (Gupta et al., 2006) and CRP (Figure 3E). We found that PhoPD71N is unable to interact with CRP, underscoring the importance of phosphorylation of PhoP on CRP-PhoP interaction. Also, under identical conditions, M. smegmatis co-expressing PhoP and CMR, cAMP macrophage regulator which regulates a subset of mycobacterial genes in response to variations of cAMP level during macrophage infection (Gazdik et al., 2009), did not show any detectable growth (Figure 3—figure supplement 1A). Our RT-qPCR measurements to compare the expression of M. tuberculosis cmr and crp suggest that the two regulators are expressed in M. smegmatis at a comparable level (Figure 3—figure supplement 1B), ruling out the possibility of compromised expression of CMR accounting for lack of bacterial growth. Thus, M-PFC data strongly suggest specific interaction between CRP-PhoP. The oligonucleotides used to clone the constructs, and plasmids used for M-PFC experiments are listed in Supplementary file 1a and b, respectively.
 
-## Probing CRP-PhoP interactions
+### Probing CRP-PhoP interactions
 
 To examine the interaction in vivo, whole-cell lysate of ΔphoP-H37Rv expressing His-tagged PhoP was treated with DNaseI and incubated with Ni-NTA as described previously (Anil Kumar et al., 2016). As expected, both CRP and PhoP were detectable in the crude lysate (lane 1, Figure 4A). More importantly, upon elution of bound proteins, the eluent showed a clear presence of CRP (lane 3), suggesting specific in vivo interaction between CRP and PhoP. As a control, we were unable to detect CRP from the eluent using cell lysates of ΔphoP-H37Rv carrying empty vector alone (lane 2). Next, during in vitro pull-down assays recombinant PhoP was expressed as a GST fusion protein, and immobilized to glutathione-Sepharose. Following incubation with DNaseI -treated crude lysate of E. coli cells expressing His6-tagged CRP, the column-bound proteins were eluted by 20 mM reduced glutathione. Importantly, we could detect the presence of both CRP and PhoP in the same eluent fraction by immunoblot analysis (lane 1, Figure 4B). However, we were unable to detect CRP with only GST-tag (lane 2) or the resin alone (lane 3), allowing us to conclude that PhoP interacts with CRP. In agreement with the M-PFC data shown in Figure 3E, our additional pull-down experiments using CRP and phosphorylation-deficient PhoPD71N (Figure 4C) unambiguously suggest that phosphorylation of PhoP is necessary for CRP-PhoP interaction.
 
@@ -61,19 +85,128 @@ To examine the interaction in vivo, whole-cell lysate of ΔphoP-H37Rv expressing
 
 **Figure 4.:** (A) To examine CRP-PhoP interaction in vivo, DNaseI-treated crude cell lysates of ΔphoP-H37Rv expressing His6-tagged PhoP (p19kpro-phoP; Supplementary file 1b) was incubated with pre-equilibrated Ni-NTA and eluted with 250 mM imidazole; lane 1, input sample; lane 2, control elution from the crude lysate of cells lacking phoP expression; lane 3, co-elution of CRP with PhoP. Blots were probed with anti-PhoP and anti-CRP antibody. (B) To investigate CRP-PhoP interaction in vitro, DNaseI-treated crude extract expressing His6-tagged CRP was incubated with glutathione epharose previously immobilized with GST-PhoP. Bound proteins (lane 1) were analyzed by Western blot using anti-His (upper panel) or anti-GST antibody (lower panel). Lane 1 shows presence of CRP bound to GST-PhoP. Identical experiment used glutathione Sepharose immobilized with GST alone (lane 2), or the resin alone (lane 3); lane 4 resolved recombinant His6-tagged CRP. (C) To examine whether phosphorylation of PhoP impacts CRP-PhoP interaction, crude lysates of cells expressing His6-tagged CRP was incubated with glutathione-Sepharose previously immobilized with GST-tagged PhoP (lane 1) or PhoPD71N (lane 2), carrying a single substitution of Asp-71 to Asn-71 and therefore, remains ineffective for phosphorylation at Asp-71. Analysis of bound fractions (lanes 1–2) was carried out as described in the legend to Figure 5 and control sets include glutathione Sepharose immobilized with GST alone (lane 3), or the resin alone (lane 4); lane 5 resolved recombinant His6-tagged CRP.
 
-## CRP and PhoP interact via their corresponding N-terminal domains
+### CRP and PhoP interact via their corresponding N-terminal domains
 
 Because PhoP was shown to interact with other regulators via its N-terminal domain (Sevalkar et al., 2019; Singh et al., 2020), we next assessed the role of different stretches of N-terminal domain of PhoP (referred to as PhoPN) in CRP-PhoP interactions. In vitro pull-down assays using mutant GST-PhoP proteins (each with three potential CRP- contacting residues of PhoP replaced with Ala) with His-tagged CRP displayed effective protein-protein interaction as that of the WT PhoP (compare lane 1 with lanes 2–6) (Figure 5—figure supplement 1A). These results suggest that either PhoPN does not contribute to CRP-PhoP interactions or possibly a constellation of residues in a single stretch is involved in CRP-PhoP interaction(s). Next, pull-down assays using His-tagged CRP and a linker deletion mutant of PhoP [PhoPLAla5], replacing five residues spanning Gly142 to Pro146 with Ala, which remains functional (Pathak et al., 2010), suggest that PhoP linker does not appear to contribute to CRP-PhoP interaction(s) (compare lane 1 with lane 2, Figure 5—figure supplement 1B). We next probed CRP-PhoP interaction using His-tagged full-length CRP and PhoP domains as GST-fusion constructs (Figure 5A). PhoPN and PhoPC were previously shown to be functional for phosphorylation and DNA binding activity, respectively (Pathak et al., 2010) on their own. Importantly, PhoPN (comprising PhoP residues 1–141) showed effective protein-protein interaction with CRP (lane 1). However, PhoPC (comprising PhoP residues 141–247), under identical conditions, did not display an effective interaction with CRP (lane 2). To identify the corresponding interacting domain of CRP, we next used GST-PhoP and His-tagged CRP-domain constructs (Figure 5B). Interestingly, CRPN comprising CRP residues 28–116 co-eluted with GST-PhoP (lane 1). However, CRPC comprising CRP residues 146–224, under identical conditions, did not co-elute with GST-PhoP (lane 2), suggesting specific interaction between CRPN and PhoP. Taken together, we surmise that CRP-PhoP interaction is mediated by the N-domains of the corresponding regulators.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) CRP-PhoP interaction was probed by in vitro pull-down assays using either (A) His-tagged CRP and GST-tagged PhoP domains (GST-PhoPN and GST-PhoPC, respectively) or (B) GST-tagged PhoP and His-tagged CRP domains (CRPN, and CRPC, respectively). The domain constructs are listed in Supplementary file 1b. Fractions of bound proteins were analyzed by Western blot using anti-His (upper panel) or anti-GST antibody (lower panel). Control sets include glutathione Sepharose immobilized with GST (lane 3), or the resin (lane 4) alone; lane 5 of (A) resolved purified CRP, while lanes 5, and 6 of (B) resolved purified CRPN, and CRPC, respectively. The experimental procedures, and data analyses are as described in the legend of Figure 4B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) To assess the importance of residues of PhoPN, crude lysates of cells expressing His6-tagged CRP was incubated with glutathione-Sepharose, previously immobilized with GST-tagged WT (lane 1) or mutant PhoP proteins (lanes 2–6), each carrying a substitution of three PhoP residues with alanine (as indicated on the figure). Fractions of bound proteins (lanes 1–6) were analyzed by Western blot using anti-His (upper panel) or anti-GST antibody (lower panel). Control sets include glutathione Sepharose immobilized with GST alone (lane 7), or the resin alone (lane 8); lane 9 resolved recombinant His6-tagged CRP. (B) To examine role of the PhoP linker in CRP-PhoP interactions, crude lysates of cells expressing His6-tagged CRP was incubated with glutathione-Sepharose previously immobilized with GST-tagged PhoP (lane 1) or a PhoP linker mutant (lane 2), carrying a substitution of five linker residues (spanning Gly142 to Pro146 of PhoP) with alanine as described previously (Pathak et al., 2010). Analysis of bound fractions (lanes 1–2) was carried out as above and control sets include glutathione Sepharose immobilized with GST alone (lane 3), or the resin alone (lane 4); lane 5 resolved recombinant CRP. (C) To examine importance of cAMP binding to CRP on CRP-PhoP interaction, in vitro pull-down assays were carried out using His-tagged CRP mutants, deficient for cAMP binding. The experimental procedures, and data analyses are as described in the legend of Figure 4B. (D) To examine functionality of the mutant CRP proteins (CRPG79A and CRPT90A), deficient for cAMP binding, EMSA of radio-labeled whiB1up was carried out using indicated mutants (lanes 2–7) and WT-CRP (as a positive control; lanes 8–10), respectively. The assay conditions, sample analyses, and detection of radio-active samples are described in the Materials and methods. The filled and empty arrowheads on the left and right indicate free probe and the origin of the gel, respectively.
+
 Although CRP-PhoP interaction studies were performed in the absence of cAMP, we next undertook in vitro interaction studies using CRP mutants (CRPG79A and CRPT90A), deficient for cAMP binding (Figure 5—figure supplement 1C). The mutations were designed based on previously reported CRP structure defining the cAMP binding pocket of the regulator (Gallagher et al., 2009). Our pull-down assays demonstrate that the mutant CRP proteins interact with PhoP as effectively as that of the wild-type CRP, allowing us to conclude that cAMP binding to CRP is not required for CRP-PhoP interaction. Although it is conceivable that cAMP binding may induce a conformational change of CRP, in keeping with cAMP-independent functioning of M. tuberculosis CRP (Agarwal et al., 2006; Green et al., 2014; Stapleton et al., 2010); the mutant proteins over a range of concentrations showed effective DNA binding to end-labeled whiB1up with a comparable affinity as that of the wild-type CRP (Figure 5—figure supplement 1D). These results also suggest that the mutant proteins retain native structure and/or fold as that of wild-type CRP.
 
-## Functioning of CRP requires presence of PhoP
+### Functioning of CRP requires presence of PhoP
 
 The CRP regulon was previously studied by comparing transcription profiling of WT-H37Rv and a CRP-depleted strain of M. tuberculosis H37Rv (Δcrp-H37Rv) using RNA-seq and ChIP-seq (Kahramanoglou et al., 2014). A careful inspection of ChIP-seq data identifying genome-wide CRP binding sites (Kahramanoglou et al., 2014) and SELEX and ChIP-seq data of PhoP (He et al., 2016; Solans et al., 2014) remarkably uncover the presence of ~10 such promoters comprising CRP and PhoP binding sites (Table 1). Figure 6A shows an overlap of M. tuberculosis CRP and PhoP regulon genes that are under direct control of the regulators as determined by the corresponding ChIP-seq data. To examine the influence of PhoP, we next undertook to investigate in vivo recruitment of CRP within its target promoters in WT-and ΔphoP-H37Rv. Thus, formaldehyde-cross-linked DNA-protein complexes of growing M. tuberculosis cells were sheared to generate the fragments of average size ≈500 bp as described previously (Singh et al., 2014). In ChIP experiments using anti-CRP antibody, DNA binding was analyzed by qPCR (Figure 6B). Our results show that relative to mock sample, CRP is effectively recruited within its target promoters in WT-H37Rv. For example, icl1, and whiB1 promoters, displayed 5.6±1-fold and 16.4±2.8-fold enrichments of qPCR signals, respectively. In contrast, under identical conditions, ΔphoP-H37Rv-derived samples showed insignificant enrichments of CRP within icl1 (0.7±0.2-fold) and whiB1 (0.6±0.18-fold), promoters, respectively. However, with identical IP DNA samples, we observed a largely comparable CRP recruitment within the CRP-regulated sucC promoter (sucCup, which is not part of the PhoP regulon) (Kahramanoglou et al., 2014) in both the WT and the mutant bacilli. Inset shows a comparable expression of CRP in WT-H37Rv and ΔphoP-H37Rv. These results are represented by a schematic model (Figure 6C), which suggests that although both mycobacterial regulators are recruited within a subset of CRP-regulated promoters, consistent with CRP-PhoP interaction absence of PhoP strikingly influences in vivo recruitment of CRP.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80965/elife-80965-fig6-v1.jpg)
 
-**Figure 6.:** whiB1 expression.(A) Venn diagram of genes differentially regulated in Δcrp-H37Rv and ΔphoP-H37Rv displays an overlap of ~10 promoters. The results are based on previously reported high throughput ChIP-sequencing data of CRP and PhoP (Kahramanoglou et al., 2014; Solans et al., 2014), respectively. Note that comparisons include genes annotated in Mycobacterium tuberculosis H37Rv genome only. (B) To examine effect of CRP-PhoP interaction, chromatin-immunoprecipitation (ChIP)-qPCR was carried out using anti-CRP antibody to compare in vivo recruitment of CRP in WT-H37Rv and ΔphoP-H37Rv as described in the Methods. Fold PCR enrichment due to CRP binding to indicated promoters was determined by duplicate measurements, each with two technical repeats (**p≤0.01). Inset compares CRP expression in ≈10 μg of indicated crude cell-lysates as probed by anti-CRP antibody; identical extracts were probed with anti-RpoB antibody as a loading control. (C) Schematic model showing newly-proposed molecular mechanism of activation of CRP-regulated promoters by simultaneous binding of CRP and PhoP. We propose that the interacting proteins (CRP and PhoP) remain bound to their cognate sites away from the start sites, and stabilize the transcription initiation complex so that RNA polymerase (RNAP) effectively transcribes these genes. Taken together, these molecular events mitigate stress by controlling expression of numerous genes and perhaps contribute to better survival of the bacilli in cellular and animal models.
+**Figure 6.:** (A) Venn diagram of genes differentially regulated in Δcrp-H37Rv and ΔphoP-H37Rv displays an overlap of ~10 promoters. The results are based on previously reported high throughput ChIP-sequencing data of CRP and PhoP (Kahramanoglou et al., 2014; Solans et al., 2014), respectively. Note that comparisons include genes annotated in Mycobacterium tuberculosis H37Rv genome only. (B) To examine effect of CRP-PhoP interaction, chromatin-immunoprecipitation (ChIP)-qPCR was carried out using anti-CRP antibody to compare in vivo recruitment of CRP in WT-H37Rv and ΔphoP-H37Rv as described in the Methods. Fold PCR enrichment due to CRP binding to indicated promoters was determined by duplicate measurements, each with two technical repeats (**p≤0.01). Inset compares CRP expression in ≈10 μg of indicated crude cell-lysates as probed by anti-CRP antibody; identical extracts were probed with anti-RpoB antibody as a loading control. (C) Schematic model showing newly-proposed molecular mechanism of activation of CRP-regulated promoters by simultaneous binding of CRP and PhoP. We propose that the interacting proteins (CRP and PhoP) remain bound to their cognate sites away from the start sites, and stabilize the transcription initiation complex so that RNA polymerase (RNAP) effectively transcribes these genes. Taken together, these molecular events mitigate stress by controlling expression of numerous genes and perhaps contribute to better survival of the bacilli in cellular and animal models.
+
+**Table 1.**
+ CRP and PhoP binding sites within the commonly regulated promoters*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rvnumber</th>
+      <th>Gene name</th>
+      <th>PhoP binding sites</th>
+      <th>Sequence coordinates</th>
+      <th>CRP binding sites</th>
+      <th>Sequence coordinates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rv0079</td>
+      <td>Rv0079</td>
+      <td>CCTCAGCTTCTGCGCAGC</td>
+      <td>–215 to –232</td>
+      <td>GGTGACACAGCCCACA</td>
+      <td>–95 to –110</td>
+    </tr>
+    <tr>
+      <td>Rv0116c</td>
+      <td>Rv0116c</td>
+      <td>GTACAGCTCGGTCGCAGC</td>
+      <td>–558 to –576</td>
+      <td>TGTGGTCGCGATCACG</td>
+      <td>+29 to+45</td>
+    </tr>
+    <tr>
+      <td>Rv0467</td>
+      <td>icl1</td>
+      <td>GAAGAGCGCGGAGCAGATC</td>
+      <td>+20 to +38</td>
+      <td>TGTTACAACGCTCACA</td>
+      <td>–49 to –64</td>
+    </tr>
+    <tr>
+      <td>Rv0469</td>
+      <td>umaA</td>
+      <td>GCAAGGCGAGATCACAGA</td>
+      <td>–88 to –105</td>
+      <td>TGTGACAGCCGTTGCG</td>
+      <td>–326 to –341</td>
+    </tr>
+    <tr>
+      <td>Rv1535</td>
+      <td>Rv1535</td>
+      <td>GTGGTGCCGAAGCTCTGA</td>
+      <td>–312 to –330</td>
+      <td>GTGGTGCCGAAGCTCT</td>
+      <td>–314 to –330</td>
+    </tr>
+    <tr>
+      <td>Rv2329</td>
+      <td>nark1</td>
+      <td>GCTGTTTTCTTGCTGCGA</td>
+      <td>–194 to –212</td>
+      <td>GGTGCGGCAGCCGGCA</td>
+      <td>+1460 to +1476</td>
+    </tr>
+    <tr>
+      <td>Rv2524</td>
+      <td>fas</td>
+      <td>GTAGAGCGAATTCCCAGC</td>
+      <td>–370 to –388</td>
+      <td>GATTCCGAGCTGATCGAC</td>
+      <td>+6014 to +6030</td>
+    </tr>
+    <tr>
+      <td>Rv2590</td>
+      <td>fadD9</td>
+      <td>TCACAGCCGATCAGCAGC</td>
+      <td>–104 to –122</td>
+      <td>CCCGTGCCGCATCTCAC</td>
+      <td>–119 to –135</td>
+    </tr>
+    <tr>
+      <td>Rv3219</td>
+      <td>whiB1</td>
+      <td>CTGGGGTAAGGGCTGTGGA</td>
+      <td>–191 to –208</td>
+      <td>AGTGAGATAGCCCACG</td>
+      <td>–161 to –176</td>
+    </tr>
+    <tr>
+      <td>Rv3616c</td>
+      <td>espA</td>
+      <td>TCGCAGCGCAGTTGCAGG</td>
+      <td>–197 to –215</td>
+      <td>CGATCAGCACCTCGCG</td>
+      <td>+2221 to +2237</td>
+    </tr>
+  </tbody>
+</table>
+
+_*ChIP-sequencing data uncover ~10 promoters that belong to CRP regulon and are also regulated by PhoP. Both CRP and PhoP binding sites were identified in selected M. tuberculosis promoters by scanning for respective ChIP-seq data or SELEX-derived consensus sequence motifs (Galagan et al., 2013; He and Wang, 2014; Kahramanoglou et al., 2014; Solans et al., 2014). Nucleotide sequences of indicated binding sites are numbered with respect to corresponding ORF start sites._
 
 ## Discussion
 
@@ -87,27 +220,27 @@ Given the complex life cycle of the intracellular pathogen which encounters a va
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+### Bacterial strains and culture conditions
 
 The strains used were E. coli DH5α, for all cloning experiments; E. coli BL21 DE3, for protein expression; M. smegmatis mc2155, for M-PFC, and reporter-based transcription regulation experiments; WT-H37Rv and ΔphoP-H37Rv, in which phoPR locus (Rv0757–Rv0758) has been inactivated (Walters et al., 2006), for the results reported in this study. M. tuberculosis H37Rv, its derivatives and M. smegmatis mc2155, were grown at 37°C in Middlebrook 7H9 liquid broth (Difco) containing 0.2% glycerol, 0.05% Tween-80 and 10% ADC (albumin-dextrose-catalase) or on 7H10-agar medium (Difco) containing 0.5% glycerol and 10% OADC (oleic acid-albumin-dextrose-catalase). Growth, transformation of mycobacterial strains and selection of transformants on appropriate antibiotics were carried out as described (Goyal et al., 2011). For in vitro growth under specific stress conditions, indicated mycobacterial strains were grown to mid-log phase (OD600 0.4–0.6) and exposed to different stress conditions. For acid stress, cells were initially grown in 7H9 media, pH7.0, and on attaining mid-log phase, it was transferred to acidic media (7H9 media, pH 4.5) for further two hours at 37°C. For oxidative stress, cells were grown in the presence of 50 µM CHP (Sigma-Aldrich) for 24 hr or indicated diamide concentration(s) for 7 days. For NO stress, cells grown to mid-log phase were exposed to 0.5 mM Diethylene triamine NoNoate (DETA NONOate) for 40 min (Voskuil et al., 2003).
 
-## Cloning
+### Cloning
 
 M. tuberculosis full-length crp (Rv3676; encoded by 672 bp of the ORF), truncated N-terminal domain crpN (encoded by 267 bp of the ORF), and crpC (encoded by 237 bp of the ORF) over-expressing constructs were cloned in T7-lac-based expression system pET28c (Novagen) between NdeI and HindIII sites as recombinant fusion proteins (containing an N-terminal His6-tag) using primer pairs FPcrp/RPcrp, FPcrpN/RPcrpN, and FPcrpC/RPcrp (Supplementary file 1a) resulting in plasmids as listed in Supplementary file 1b. Plasmid pGEX-phoP expressed GST-PhoP, the full-length PhoP protein with an N-terminal GST-tag (Gupta et al., 2009). Likewise, pGEX-phoPN and pGEX-phoPC, generated by cloning of corresponding ORFs between BamHI and XhoI sites of pGEX 4T-1 (GE Healthcare), expressed PhoPN, and PhoPC, respectively, each with an N-terminal GST tag. Mutations in CRP were introduced by two-stage overlap extension method using mutagenic primers (Supplementary file 1a), and each construct was verified by DNA sequencing.
 
-## Proteins
+### Proteins
 
 Full-length and truncated PhoP proteins containing either an N-terminal His6-tag or an N-terminal GST-tag, were purified as described previously (Gupta et al., 2009). Wild-type CRP protein (Rv3676) from M. tuberculosis H37Rv was expressed in E. coli BL21 (DE3) as a fusion protein containing an N-terminal His6-tag (Novagen) and purified by metal-affinity chromatography (Ni-NTA, Qiagen). The protein expression was induced by adding 0.4 mM IPTG in log-phase cultures at O.D600 of 0.4, and cells were allowed to grow overnight at 16°C. All subsequent procedures were carried out at 4°C. Briefly, cells were resuspended in lysis buffer (50 mM Tris-HCl, pH 7.9, 500 mM NaCl, 10% glycerol, 0.25% Tween-20, and 50 mM imidazole) followed by addition of lysozyme to a ﬁnal concentration of 0.1 mg/ml. Next, cell lysates were sonicated, treated with DNaseI for 30 min, and insoluble material was removed by centrifugation for 30 min at 12,000 rpm. The clear supernatant was applied to a column of Ni-NTA agarose (Qiagen) that had been equilibrated with the lysis buffer. After an incubation of 30 min, the column was repetitively washed with 10 column volumes of lysis buffer only, and then with 1 column volume of each of lysis buffer containing 1 M NaCl, lysis buffer containing 50 mM imidazole, and lysis buffer containing 100 mM imidazole, respectively. Finally, the bound protein was eluted in lysis buffer containing 600 mM imidazole. Before storage at –80°C, the protein was extensively dialyzed against buffer A (50 mM Tris-HCl, pH 7.9, 300 mM NaCl, and 10% glycerol), protein concentration was determined using Bradford reagent with BSA as the standard, and expressed in equivalent of protein monomers.
 
-## RNA isolation
+### RNA isolation
 
 Total RNA was extracted from exponentially growing bacterial cultures grown with or without specific stress as described above. Briefly, 25 ml of bacterial culture was grown to mid-log phase (OD600=0.4–0.6) and combined with 40 ml of 5 M guanidinium thiocyanate solution containing 1% β-mercaptoethanol and 0.5% Tween 80. Cells were pelleted by centrifugation, and lysed by resuspending in 1 ml TRIzol (Ambion) in the presence of Lysing Matrix B (100 µm silica beads; MP Bio) using a FastPrep-24 bead beater (MP Bio) at a speed setting of 6.0 for 30 s. The procedure was repeated for 2–3 cycles with incubation on ice in between pulses. Next, cell lysates were centrifuged at 13,000 rpm for 10 min; supernatant was collected and processed for RNA isolation using Direct-Zol RNA isolation kit (ZYMO). Following extraction, RNA was treated with DNAse I (Promega) to degrade contaminating DNA, and integrity was assessed using a Nanodrop (ND-1000, Spectrophotometer). RNA samples were further checked for intactness of 23S and 16S rRNA using formaldehyde-agarose gel electrophoresis, and Qubit fluorometer (Invitrogen).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 cDNA synthesis and PCR reactions were carried out using total RNA extracted from each bacterial culture, and Superscript III platinum-SYBR green one-step qRT-PCR kit (Invitrogen) with appropriate primer pairs (2 µM) using an ABI real-time PCR detection system. Oligonucleotide primer sequences used in RT-qPCR experiments are listed in Supplementary file 1c. Control reactions with platinum Taq DNA polymerase (Invitrogen) confirmed the absence of genomic DNA in all our RNA preparations, and endogenously expressed M. tuberculosis rpoB was used as an internal control. Fold difference in gene expression was calculated using ∆∆CT method (Schmittgen and Livak, 2008). To determine enrichment due to PhoP and/or CRP binding targets in the IP DNA samples, 1 µl of IP or mock IP (no antibody control) DNA was used with SYBR green (Invitrogen) along with target promoter-specific primers. Average fold differences in mRNA levels were determined from at least two biological repeats each with two technical repeats.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 ChIP experiments were carried out with some modifications of the protocol described previously (Bansal et al., 2017). To determine PhoP recruitment, FLAG tagged phoP ORF was expressed in WT-H37Rv and ΔphoP-H37Rv from mycobacterial expression vector p19Kpro (De Smet et al., 1999), and ChIP was carried out by anti-FLAG antibody. To determine CRP recruitment by ChIP, the CRP-specific antibody was used. M. tuberculosis CRP (Rv3676), tagged with His6 at the N-terminus was purified in E. coli and used to produce CRP-specific polyclonal antibody in rabbit by AlphaOmegaSciences (India). About 0.3 mg of purified recombinant protein emulsified in Freund’s complete adjuvant was administered as primary dose subcutaneously, followed by two booster immunizations in Freund’s incomplete adjuvant after 14 and 30 days into New Zealand White Rabbit (~3.8 kg body weight). The titer was determined by the endpoint method, blood collected, serum separated, and stored at –20°C. Total Immunoglobulin G (IgG) was purified from the serum by affinity chromatography using Protein-A resin.
 
@@ -115,10 +248,10 @@ For ChIP assays, mycobacterial cells were grown to mid-exponential phase (OD600�
 
 In vivo recruitment of the regulators were determined using appropriate dilutions of IP DNA in a reaction buffer containing SYBR green mix (Invitrogen), 2 µM PAGE-purified primers (Supplementary file 1c), and one unit of Platinum Taq DNA polymerase (Invitrogen). Typically, 40 cycles of amplification were carried out using real-time PCR detection system (Eppendorf). qPCR signal from an IP experiment without adding an antibody (mock) was measured to determine the efficiency of recruitment. In all cases, melting curve analysis confirmed amplification of a single product. Specificity of PCR-enrichment from the identical IP samples was verified using 16S rDNA-specific primers. Each data were collected in duplicate qPCR measurements using at least two bacterial cultures.
 
-## EMSA
+### EMSA
 
 The DNA probes were generated by PCR amplification of whiB1up, resolved on agarose gels, recovered by gel extraction, end-labeled with [γ-32P ATP] (1000 Ci nmol–1) using T4 polynucleotide kinase and purified from free label by Sephadex G-50 spin columns (GE Healthcare). Increasing amounts of purified regulators were incubated with appropriately end-labeled DNA probes in a total volume of 10 µl binding mix (50 mM Tris-HCl, pH 7.5, 50 mM NaCl, 0.2 mg/ml of bovine serum albumin, 10% glycerol, 1 mM dithiothreitol, ≈50 ng of labeled DNA probe, and 0.2 µg of sheared herring sperm DNA) at 20°C for 20 min. DNA-protein complexes were resolved by electrophoresis on a 6% (w/v) polyacrylamide gel (non-denaturing) in 0.5× TBE (89 mM Tris-base, 89 mM boric acid and 2 mM EDTA) at 70 V and 4°C, and radioactive bands were quantified by the phosphorimager (Fuji). To identify composition of retarded complexes, the position of the radioactive material was determined by exposure to a phosphor storage screen, and bands representing the complex(es) were excised from the gel. Next, protein components were extracted from the excised gel fragments in buffer contaning 50 mM Tris, pH 7.5, 50 mM NaCl, 10% glycerol, and 1 mM DTT as described previously (Anil Kumar et al., 2016). The eluted protein samples were concentrated, resolved in tricine SDS-PAGE, and detected by Western blotting using appropriate anitbodies.
 
-## Mycobaterial protein fragment complementation (M-PFC) assay
+### Mycobaterial protein fragment complementation (M-PFC) assay
 
 M. tuberculosis PhoP was cloned in pUAB400 (kanR; Supplementary file 1b) and pUAB400-phoP expressed in M. smegmatis as described previously (Singh et al., 2014). Transformed cells were selected on 7H10/kan plates and grown in liquid medium to obtain competent cells of M. smegmatis harboring pUAB400-phoP. Likewise, crp and cmr encoding genes were amplified from M. tuberculosis H37Rv genomic DNA using primer pairs FPmCRP/RPmCRP, and FPmCMR/RPmCMR, respectively (Supplementary file 1a), and cloned in episomal plasmid pUAB300 (hygR; Supplementary file 1b) between PstI/HindIII and BamHI/HindIII sites, respectively. Each construct was verified by DNA sequencing. Next, co-transformants of M. smegmatis were selected on 7H10/kan/hyg plates both in the absence and presence of 10 µg/ml of TRIM to investigate protein-protein interactions (Singh et al., 2014). As a positive control, plasmid pair expressing phoP/phoR was used as described previously (Bansal et al., 2017).

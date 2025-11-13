@@ -18,8 +18,8 @@
 
 ### Affiliations
 
-1. https://ror.org/033vjfk17 Department of Ophthalmology, Renmin Hospital of Wuhan University Wuhan China
-2. https://ror.org/033vjfk17 Department of Clinical Laboratory, Institute of Translational Medicine, Renmin Hospital of Wuhan University Wuhan China
+1. Department of Ophthalmology, Renmin Hospital of Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
+2. Department of Clinical Laboratory, Institute of Translational Medicine, Renmin Hospital of Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ To better simulate the retinal ischemic process and possible IRI following RAO, 
 
 ## Results
 
-## Silicone wire embolus insertion interrupts retinal blood flow
+### Silicone wire embolus insertion interrupts retinal blood flow
 
 To reproduce the retinal ischemic process and potential IRI in RAO, we established a mouse model of UPOAO by combining silicone wire embolization with carotid artery ligation. Model validation was conducted through a series of experiments, with detailed descriptions provided in the Materials and methods section (Figure 1A–G). To confirm blood flow disruption, we performed cardiac perfusion with fluorescently labeled lectin and FFA. Rhodamine-labeled canavalin A was used during in vivo perfusion with silicone wire embolus, and both eyes were evaluated. The sham eye exhibited normal blood perfusion in the retina, while the experimental eye showed no perfusion (Figure 1H, I). FFA revealed delayed and limited perfusion in the experimental lateral retina, primarily near the optic disc (Figure 1J and K). These findings indicate that the insertion of the silicone wire embolus effectively impaired blood flow to the retina.
 
@@ -45,7 +45,7 @@ To reproduce the retinal ischemic process and potential IRI in RAO, we establish
 
 **Figure 1.:** (A1–G1) Schematic illustration of unilateral pterygopalatine ophthalmic artery occlusion (UPOAO). (A2–G2) Practical operation of UPOAO. (A1, A2) Blunt separation and exposure of the left cervical arteries. (B1, B2) Arterial suture ligation. (C1, C2) Insertion of the silicone wire embolus. The artery was incised to create a hole, and the silicone wire embolus was inserted. (D1, D2) Artery disconnection and movement of the silicone wire embolus. The artery was cut along the incision, and the silicone wire embolus was retracted and reinserted. (E1, E2) Removal of the silicone wire embolus and reperfusion. (F1, F2) Suture removal. The sutures at both ends of the disconnected vessel were knotted, and the other two sutures were removed. (G1, G2) Anatomic reduction and suturing of the skin. (H, I) Canavalin A label vasculature of the UPOAO mouse retina. The silicone wire embolus was inserted into the artery before perfusing rhodamine-labeled canavalin A into the heart of the UPOAO mouse. The sham eye served as an unpracticed control eye, while the UPOAO lateral eye represented the experimental eye. Retinal vessels in the sham eye (H) exhibited fluorescence filling, while retinal vessels in the UPOAO lateral eye (I) remained unfilled. Scale bar = 1 mm. (J and K) Fluorescein fundus angiography (FFA) was performed before removing the silicone wire embolus from the UPOAO mouse. The vessels in the sham lateral retina (J) were perfused, while the lateral retinal perfusion in UPOAO (K) was delayed. (L) Schematic illustration of cervical artery anatomy and ocular blood supply. Embolization of the pterygopalatine artery (PPA) resulted in ocular ischemia. The red arrow indicates the site of the silicone wire embolus occlusion. The silicone wire embolus used a type 602156 wire, extended to 7 mm with a diameter of 0.21 mm. The blue arrows indicate the modeling locations of the high intraocular pressure (HIOP) model and the unilateral common carotid artery occlusion (UCCAO) model, respectively. CCA: common carotid artery; ICA: internal carotid artery; ECA: external carotid artery; PPA: pterygopalatine artery; MCA: middle cerebral artery; Infraorbital art.: infraorbital artery; OA: ophthalmic artery; SPCA: short posterior ciliary artery; LPCA: long posterior ciliary artery; CRA: central retinal artery.
 
-## 60-min ischemia in UPOAO damage retinal structure and function
+### 60-min ischemia in UPOAO damage retinal structure and function
 
 To investigate the optimal ischemic duration, the mice were subjected to ischemic periods of 30 and 60 min, followed by reperfusion periods of 3 days and 7 days. Retinal structure and visual function were assessed through flat-mounted retina analysis and flash ERG.
 
@@ -55,35 +55,83 @@ In the 30 min ischemia group, no significant RGCs death was observed after 3 day
 
 **Figure 2.:** Flat-mounted retina RGCs were labeled with Brn3a staining. (A, B) Representative pictures of the peripheral field (A), and quantification of surviving RGCs in all fields (B) in the 30 min ischemia and 3 days reperfusion group. n=3. (C, D) Representative pictures of the peripheral field (C), and quantification of surviving RGCs in all fields (D) in the 30 min ischemia and 7 days reperfusion group. n=3. (E, F) Representative pictures of the peripheral field (E), and quantification of surviving RGCs in all fields (F) in the 60 min ischemia and 3 days reperfusion group. n=5. (G, H) Representative pictures of the peripheral field (G), and quantification of surviving RGCs in all fields (H) in the 60 min ischemia and 7 days reperfusion group. n=5. The results showed a significant loss of RGCs after 60 min of ischemia. Data were presented as means ± s.e.m, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, t-test. Scale bar = 100 μm.
 
-## Evaluation of retinal thickness in UPOAO through OCT and HE
+![Figure 3.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig3-v1.jpg)
+
+**Figure 3.:** Following the evaluation of surviving retinal ganglion cells (RGCs), visual function in sham and unilateral pterygopalatine ophthalmic artery occlusion (UPOAO) experimental eyes at various ischemia and reperfusion times was assessed using ERG. (A) Representative waveforms in the four groups at the stimulus light intensities of 0.1, 1.0, and 10.0 cd.s/m2, respectively. (B) Quantification of a-wave and b-wave amplitudes in the 30 min ischemia and 3 days reperfusion group. n=5. (C) Quantification of a-wave and b-wave amplitudes in the 30 min ischemia and 7 days reperfusion group. n=5. (D) Quantification of a-wave and b-wave amplitudes in the 60 min ischemia and 3 days reperfusion group. n=7. (E) Quantification of a-wave and b-wave amplitudes in the 60 min ischemia and 7 days reperfusion group. n=8. Dark-adapted responses showed almost similar a-wave amplitudes but significantly decreased b-wave amplitudes in the 60 min ischemia groups. The amplitudes of b-waves declined at 3 days and even more prominently at 7 days. (F, G) Representative oscillatory potentials (OPs) and quantification of amplitudes in the 60 min ischemic groups. n=7 in the 3 days reperfusion group; n=8 in the 7 days reperfusion group. The amplitudes of OPs decreased significantly at 7 days reperfusion. The decline in b-waves and OPs along with the loss of RGCs, supports the selection of a 60 min ischemic duration as an appropriate choice. Data were presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA test for a-waves and b-waves; paired t-test for OPs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Response times of a-waves and b-waves were measured under different light intensities at 3 days and 7 days post-unilateral pterygopalatine ophthalmic artery occlusion (UPOAO) in the 30 min ischemia group. n=5. (C, D) Response times of a-waves and b-waves were measured under different light intensities at 3 days and 7 days post-UPOAO in the 60 min ischemia group. n=7 at 3 days; n=8 at 7 days. Data were presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA test.
+
+### Evaluation of retinal thickness in UPOAO through OCT and HE
 
 To assess retinal thickness non-invasively in the UPOAO model, we conducted OCT imaging during 3 days and 7 days reperfusion periods. Following a 3 days reperfusion period, no significant changes were observed in the GCC, INL + OPL, and ONL +IS/OS + RPE layers at 1.5, 3, and 4.5 PD from the optic disc (Figure 4B, Figure 4—figure supplement 1A, B). However, the total retinal thickness decreased at 4.5 PD (Figure 4C). After 7 days of reperfusion, the total retinal thickness decreased at 1.5 PD, 3 PD, and 4.5 PD, primarily due to inner retinal thinning (Figure 4D–F, Figure 4—figure supplement 1C, D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative optical coherence tomography (OCT) images of the mouse retina at 3 days. The Green lines indicate the OCT scan area starting from the optic disc. Local magnification and layering are annotated. ganglion cell complex (GCC): ganglion cell complex, including RNFL, GCL, and IPL layers. (B and C) Quantification of GCC and total retinal thickness at 3 days. The thickness of the GCC and the entire retina in OCT was measured and compared at distances of 1.5 PD, 3.0 PD, and 4.5 PD from the optic disc, respectively. n=5. (D) Representative OCT images of the mouse retina at 7 days. (E and F) Quantification of GCC and total retinal thickness at 7 days. n=5. (G) Representative hematoxylin and eosin (HE) images of the mouse retina at 3 days. (H, I and J) Quantification of nerve fibre layer (NFL) + GCL, IPL, and INL thickness at 3 days. Retinal thickness in HE was measured near the optic nerve head and compared. n=3. (K) Representative HE images of the mouse retina at 7 days. (L, M and N) Quantification of NFL + GCL, IPL, and INL thickness at 7 days. n=3. Data were presented as means ± s.e.m, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way analysis of variance (ANOVA) test in OCT and paired t-test in HE. PD: papillary diameters; RNFL: retinal nerve fiber layer; GCL: ganglion cell layer; IPL: inner plexiform layer; INL: inner nuclear layer; OPL: outer plexiform layer; ONL: outer nuclear layer; IS: inner segment; OS outer segment; RPE: retinal pigment epithelium. Scale bar = 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The INL + OPL thickness and the ONL + IS/OS + RPE thickness were measured and compared at distances of 1.5 papillary diameters (PD), 3.0 PD, and 4.5 PD from the optic disc using OCT. (A, B) Quantification of INL + OPL layer thickness (A) and ONL + IS/OS + RPE layer thickness (B) at 3 days. n=5. No significant differences were observed. (C, D) Quantification of INL + OPL layer thickness (C) and ONL + IS/OS + RPE layer thickness (D) at 7 days. n=5. No significant differences were observed. Data were presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way analysis of variance (ANOVA) test.
 
 For a detailed analysis of inner retinal thickness, we extracted UPOAO mouse eyes and stained them with HE. The thickness of the RNFL + GCL increased at 3 days of reperfusion (Figure 4H), followed by a decrease at 7 days of reperfusion (Figure 4L). IPL thickness decreased at both 3 days and 7 days of reperfusion (Figure 4I and M), while INL thickness decreased only at 7 days of reperfusion (Figure 4N). We hypothesized that the initial swelling of the GCL in response to acute ischemia and hypoxia led to early thickening, followed by gradual thinning due to tissue dysfunction. This hypothesis was supported by the observation of RGCs loss and reduced GCC thickness evaluated by OCT at 7 days (Figure 4E).
 
 We observed by OCT that changes in retinal thickness became noticeable at 3 days post-UPOAO and exhibited a significant decrease at 7 days. HE results further revealed that alterations in inner retinal thickness constituted a substantial portion of the total retinal thickness during the early reperfusion stage after UPOAO.
 
-## Survival of retinal neural cells in UPOAO
+### Survival of retinal neural cells in UPOAO
 
 Given that mouse retinal function heavily relies on rod cells and that scotopic (low light) vision is primarily governed by rod photoreceptors, the observed reductions in b-wave and OPs-wave amplitudes indicate impaired synaptic transmission within the inner retina (Yang et al., 2019). Our OCT and HE findings suggested structural injuries within the inner retina. Notably, the thickness of the outer retinal layers in OCT remained unchanged. To further explore these observations, we conducted immunofluorescence staining to investigate alterations in major retinal cell types, primarily focusing on bipolar cells (BCs), photoreceptor cells, horizontal cells (HCs), and cholinergic amacrine cells.
 
-## BCs loss and photoreceptor cells survival
+### BCs loss and photoreceptor cells survival
 
 PKCα serves as a marker delineating BCs, with their cell bodies primarily located in the outermost part of the INL, axonal terminals extending into the innermost part of the IPL, and dendrites confined to the OPL (Figure 5A and B). In the experimental UPOAO eyes, BCs did not show significant changes at the 3 days reperfusion mark but exhibited dramatic alterations by the 7 days reperfusion period (Figure 5A2 and B2). In particular, the immunostaining density of BCs dendritic and axonal arbors notably decreased at the 7 days reperfusion mark. BCs account for approximately 40% of INL cells in mice, and their somata and axonal processes form a substantial part of the INL and IPL, consistent with the thinning of the INL observed in both OCT and HE at 7 days (Figure 4E and N). Notably, the decrease in the number of PKCα+ BCs at the 7 days reperfusion point coincided with the decrease in the b-waves amplitude in ERG (Figure 3E), indicating functional interplay between BCs and other cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative images of mouse retina co-stained with DAPI and PKCα at 3 days (B) Representative images of mouse retina co-stained with DAPI and PKCα at 7 days. (C) Quantification of PKCα fluorescence density at 3 days. (D) Quantification of PKCα fluorescence density at 7 days. n=4. (E) Representative images of mouse retina co-stained with DAPI and Calbindin at 3 days. (F) Representative images of mouse retina co-stained with DAPI and Calbindin at 7 days. Horizontal cell somata are indicated by white asterisks. (G) Quantification of Calbindin fluorescence density at 3 days. (H) Quantification of Calbindin fluorescence density at 7 days. n=3. (I) Representative images of mouse retina co-stained with DAPI and ChAT at 3 days. (J) Representative images of mouse retina co-stained with DAPI and ChAT at 7 days. Cholinergic amacrine cell somata are indicated by white asterisks. (K) Quantification of ChAT fluorescence density at 3 days. (L) Quantification of ChAT fluorescence density at 7 days. n=3. Data were presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001, t-test. Scale bar = 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of mouse retina co-stained with DAPI and Recoverin at 3 days. (B) Representative images of mouse retina co-stained with DAPI and Recoverin at 7 days. n=3. Data were presented as means ± SEM, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, t-test. Scale bar = 50 μm.
+
 Recoverin marks the somata and outer segments of photoreceptor cells and is localized within the ONL (Figure 5—figure supplement 1A, B). Interestingly, recoverin-positive photoreceptors remained relatively stable throughout the reperfusion periods, which aligns with the unchanged thickness of the outer retinal layers observed in OCT (Figure 4—figure supplement 1C, D).
 
-## HCs and cholinergic amacrine cells loss
+### HCs and cholinergic amacrine cells loss
 
 We evaluated HCs and cholinergic amacrine cells using calbindin and ChAT immunostaining, respectively. Calbindin immunostaining highlighted the somata of HCs within the INL, with terminal axon connections linearly positioned within the OPL (Figure 5E and F). In the UPOAO experimental eyes, no significant change in the number of HCs was observed during the 3 days reperfusion period, while a notable reduction was observed after 7 days. By 7 days, a significant decrease in cell body numbers, a considerable reduction in axon density, and disrupted linear connections were observed (Figure 5F2).
 
 ChAT+ cell bodies were located in the GCL and INL, with dendrites forming two narrow stratified bands within the IPL. The immunofluorescence density of ChAT+ amacrine cells decreased notably after 3 days and even more prominently after 7 days (Figure 5I and J). The fluorescence intensity of the two bands within the IPL markedly decreased and was nearly invisible after 7 days (Figure 5J2).
 
-## Time course transcriptome analysis revealed features of different reperfusion periods in UPOAO
+### Time course transcriptome analysis revealed features of different reperfusion periods in UPOAO
 
 To explore the pathophysiological processes of UPOAO, we extracted retinas from both eyes for transcriptome sequencing. The samples included retinas from eyes subjected to 60 min of ischemia without reperfusion, 60 min of ischemia followed by 3 days of reperfusion, and 60 min of ischemia followed by 7 days of reperfusion, with the sham-treated eyes serving as controls.
 
 In the non-perfusion group, 215 genes were upregulated and 204 genes were downregulated (Figure 6A). GO enrichment analysis revealed that the DEGs were related to leukocyte migration, epidermis development, myeloid leukocyte migration and other cell migration pathways (Figure 6B). The heatmap and box showed the upregulated and downregulated genes involved in immune cell migration-related pathways during the non-perfusion period in UPOAO (Figure 6C). High-connectivity DEGs (‘hub genes’), such as Dusp1 and Fos, were also enriched in these pathways (Figure 6—figure supplement 1A). GSEA also showed similar results (Figure 6—figure supplement 1B–D). These results suggested that in the early stage of retinal ischemic injury, leukocytes from the microvasculature may infiltrate retinal tissue. More experimental validation will be performed to confirm this hypothesis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-v1.jpg)
+
+**Figure 6.:** RNA-seq evaluation was performed at 0 day, 3 days, and 7 days reperfusion periods in unilateral pterygopalatine ophthalmic artery occlusion (UPOAO) revealing enrichment in pathways related to immune cell migration, oxidative stress, and immune inflammation. (A, D, G) Volcano plots display differential expression genes (DEGs) between UPOAO and sham eyes in the no-perfusion group (A), 3 days perfusion group (D), and 7 days perfusion group (G), respectively. Red dots: significantly upregulated genes, green and blue dots: significantly downregulated genes, and gray dots: stable expressed genes, adjusted p<0.05. log2FC = 1. (B, E, H) Gene ontology (GO) analysis of differential genes in the non-perfusion group (B), 3 days group (E), and 7 days group (H). The DEGs between UPOAO and sham eyes were enriched in pathways associated with immune cell migration (0d), oxidative stress (3d), and immune inflammation (7d), respectively. (C, F, I) Heatmap displaying the top 100 downregulated and top 100 upregulated DEGs between UPOAO and sham at non-perfusion, 3 days, and 7 days reperfusion, respectively. The box represents the genes related to immune cell migration (C), oxidative stress (F), and immune inflammation (I). The ranking was determined by the magnitude of fold change. In each heatmap, the upper box represents the top 10 downregulated genes, while the lower box represents the top 10 upregulated genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Hub genes identified through PPI analysis of differential expression genes (DEGs) in the non-reperfusion group. (B–D) GSEA analysis of the pathway of the cell killing (B), lymphocyte mediated-immunity (C), and leukocyte mediated-immunity (D) in the non-reperfusion group.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Hub genes were identified through protein-protein interaction (PPI) analysis of differential expression genes (DEGs) in the 3 days reperfusion group. (B) GSEA analysis of the pathways related to plasma membrane protein complex (top left), bounding membrane of organelle (top right), and cell surface (bottom). (C) Venn diagram showing the overlapping genes between mitochondrial genes and DEGs at 3 days reperfusion (44 genes). (D) Gene ontology (GO) analysis of the 44 overlapping DEGs.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Hub genes identified through protein-protein interaction (PPI) analysis of differential expression genes (DEGs) in the 7 days reperfusion group. (B) GSEA analysis of the pathways related to the reactome innate immune system (top left), reactome immunoregulatory interactions between a lymphoid and a non-lymphoid cell (top right), reactome immune system (bottom left), and reactome adaptive immune system (bottom right). (C) Venn diagram showing the overlapping genes between immune genes and DEGs at 7 days reperfusion (112 genes). (D) Gene ontology (GO) analysis of the 112 overlapping DEGs.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The genes Abca1, Cd86, Cd48, Tlr4, Tlr6, and Tspo were significantly upregulated in the 7 days reperfusion group, while other immune-inflammatory and chemotaxis-related genes showed no significant differences. The data points were from the retina of four animals. Data were presented as means ± s.e.m, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, paired t-test.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/98949/elife-98949-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Venn diagram showing the overlap of differential expression genes (DEGs) between the 3 days and 7 days reperfusion groups, along with a list of the 17 overlapping DEGs. (B) Gene ontology (GO) analysis of the 17 overlapping DEGs.
 
 In the 3 days reperfusion group, 372 genes were upregulated, and 170 genes were downregulated (Figure 6D). GO enrichment analysis revealed that the DEGs at 3 days after reperfusion were related to energy metabolism, mitochondrial regulation, and oxidative stress pathways (Figure 6E). The heatmap and box displayed the upregulated and downregulated genes involved in oxidative stress-related pathways at the 3 days reperfusion stage in UPOAO, including hub genes such as Mrpl18 and Mrps23 (Figure 6F, Figure 6—figure supplement 2A). GSEA revealed changes in pathways related to the binding membrane of organelles, the cell surface, and the plasma membrane protein complex (Figure 6—figure supplement 2B). Furthermore, 44 overlapping genes between the mitochondrial genes and DEGs at 3 days post-UPOAO were mainly related to mitochondrial transport and the mitochondrial tricarboxylic acid cycle (Figure 6—figure supplement 2C, D). These results suggested that mitochondria and metabolism play significant roles in IRI.
 
@@ -91,7 +139,7 @@ In the 7 days reperfusion group, 429 genes were upregulated, and 310 genes were 
 
 To explore the associations between changes observed at 3 days and 7 days after reperfusion, we analyzed the DEGs and identified 17 overlapping genes (Figure 6—figure supplement 5A), which were mainly associated with the nitric oxide biosynthetic process (Figure 6—figure supplement 5B). Our findings suggest that the immune inflammatory response observed after 7 days of reperfusion may represent the cumulative effect of the acute oxidative stress response during the initial 3 days reperfusion period.
 
-## Leukocyte infiltration and microglial activation
+### Leukocyte infiltration and microglial activation
 
 Time course transcriptome analysis underscored the predominant role of immune inflammatory-responses during the reperfusion stage. Previous reports have indicated that the inflammatory response in retinal ischemia-reperfusion injury (RIRI) is orchestrated by peripheral immune cells and resident immune cells within the retina (Li et al., 2018; Minhas et al., 2016). In our study, we demonstrated the presence of leukocyte infiltration and microglial activation in the UPOAO model. Immunofluorescence staining for CD45 was performed on retinas at different time points post modeling to visualize the distribution and quantity of white blood cells (Figure 7A–D). Laser confocal Z-plane projections confirmed minimal leukocyte infiltration in the retinas of sham eyes, which showed that CD45+ cells in the vascular lumen likely represented patrolling cells (Figure 7A). A significant increase in CD45+ cells was observed in UPOAO model retinas after 1 day (Figure 7E), with a progressive increase in quantity over time (Figure 7F and G). Notably, the majority of CD45+ cells in UPOAO model retinas at 1 day displayed a morphology similar to that of vascular leukocytes (Figure 7B), suggesting a large influx of peripheral white blood cells into the retinal tissue. In contrast, CD45+ cells at 3 days and 7 days of reperfusion exhibited a combination of amoeboid and branched morphologies (Figure 7C and D), indicative of activated states.
 
@@ -101,7 +149,7 @@ Time course transcriptome analysis underscored the predominant role of immune in
 
 Microglia, which are known to undergo activation and morphological changes in response to various insults, were examined in the superficial retinas of sham and UPOAO eyes. Immunofluorescence staining for Iba1 was conducted on flat-mounted retinas at 3 days and 7 days post-reperfusion. In sham eyes, Iba1+ microglia displayed small somas and elongated dendrites that were evenly distributed within the retina (Figure 7H, I1). Conversely, UPOAO retinas exhibited numerous activated Iba1+ microglia with enlarged somas, shortened dendrites, and an ameboid appearance (Figure 7H2, I2). The number of Iba1+ microglia in UPOAO retinas was approximately five times greater than that in sham eyes at 3 days (Figure 7J), with a further increase observed at 7 days (Figure 7K), although this increase was less pronounced than that at the 3 days time point (Figure 7J). These results indicated a potential reduction in immune-mediated inflammation over time.
 
-## RNA-seq comparison between UPOAO and extravascular occlusion models
+### RNA-seq comparison between UPOAO and extravascular occlusion models
 
 To further study the characteristics of UPOAO, we analyzed the transcriptomes of two extravascular occlusion models: HIOP and UCCAO. The HIOP model induces ischemia through anterior chamber perfusion with normal saline (Figure 8A), while the UCCAO model involves ligation of the unilateral common carotid artery (Figure 8H). RNA-seq analysis of retinas subjected to 60 min of ischemia followed by 7 days of reperfusion in the HIOP model revealed enrichment of immune-related pathways, specifically highlighting increased activity in leukocyte-mediated immunity and regulation of immune effector processes (Figure 8B). This finding was consistent with the results of GO analysis, which revealed associations of the overlapping DEGs between the HIOP and UPOAO models with toll-like receptor binding, T-cell receptor binding, and immune-related functions (Figure 8C and D). To further explore these DEGs, we explored the remaining DEGs in the HIOP model in addition to the overlapping genes. GO analysis revealed that the remaining DEGs in the HIOP model were also enriched in immune responses, such as the T-cell receptor complex pathway, adaptive immune response, and B-cell-mediated immunity function (Figure 8E). Remarkably, upon examining the remaining DEGs specific to the UPOAO model, GO analysis revealed DEGs distinctly related to lipid and steroid metabolic processes (Figure 8F and G). This observation indicates that the UPOAO model, which is closely related to RAO, involves not only conventional immune responses but also unique regulation of lipid and steroid metabolism.
 
@@ -133,53 +181,142 @@ In summary, by thoroughly exploring the injury to major retinal neural cells, vi
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Eight-week-old male C57BL/6 mice were used in the experiments. Only male mice were used to exclude the potential influence of oestrogenic hormones. The mice were provided sufficient food and water and were maintained on a 12 hr dark-light cycle in a room with regulated temperature conditions. All the experimental procedures were designed and conducted according to the ethical guidelines outlined in the Association for Research in Vision and Ophthalmology (ARVO) Statement for the Use of Animals in Ophthalmic and Vision Research. The study protocol and methods received approval from the Experimental Animal Ethics Committee of Renmin Hospital of Wuhan University (approval number: WDRM-20220305A).
 
-## Preparation and surgical procedure of the UPOAO model
+### Preparation and surgical procedure of the UPOAO model
 
 Eight-week-old male C57BL/6 mice weighing 20–25 grams were used in this study. An isoflurane-based anaesthesia system was used to induce and maintain general anaesthesia in the mice during surgical procedures. The mice were anaesthetized with a 1.5–2% concentration of isoflurane delivered in a mixture of nitrous oxide and oxygen via rubber tubing. Body temperature was maintained at 37±0.5°C throughout the surgery. Surgical instruments were sterilized with 75% ethanol before use to ensure sterility.
 
 We drew inspiration from the widely employed middle cerebral artery occlusion (MCAO) model (Chiang et al., 2011; Sasaki et al., 2009), commonly used in cerebral ischemic injury research, which guided the development of the UPOAO model. The mouse was gently positioned in a supine posture on a heating blanket, and its neck was exposed. The preparation involved depilation of the neck area, followed by skin disinfection, and finally, a midline incision along the neck was made. After separating the neck gland using two tweezers, careful blunt dissection was employed to separate the left CCA, internal carotid artery (ICA), and external carotid artery (ECA), avoiding the compression of nearby nerves and veins (Figure 1A) (Video 1). Then, the CCA and ICA were ligated with a 6–0 suture. A knot was secured using a 6–0 suture at the distal end of the ECA, and a slipknot was created at the proximal end (Figure 1B). To preserve the reperfusion process and avoid bleeding and mortality during surgery, a silicone wire embolus was inserted through the ECA instead of through the CCA. Ophthalmic scissors were used to make a small inverted ‘V’-shaped incision between the two suture knots on the ECA. A specialized silicone wire embolus, measuring 7±0.1 mm in length and 0.21±0.1 mm in diameter, was inserted through the incision, directing it into the ECA and further into the CCA (Figure 1C). Next, the ligation on the ICA was removed, and the ECA was cut at the point where the artery had been previously incised with scissors. Subsequently, the silicone wire embolus was retracted to the bifurcation of the CCA, rotated counterclockwise, and inserted into the ICA and further into the pterygopalatine artery (PPA) (Figure 1D1). The silicone tail of the silicone wire embolus was positioned near the bifurcation of the CCA (Figure 1D2), effectively obstructing the ophthalmic artery (OA) (Video 2). Then, the slipknot was fastened, and the skin was sutured. The mouse was free to move around during arterial embolization.
 
+![Video 1.](https://cdn.elifesciences.org/articles/98949/elife-98949-video1.mp4.jpg)
+
+**Video 1.:** The neck was exposed, and the cervical arteries were separated using blunt dissection techniques.
+
+![Video 2.](https://cdn.elifesciences.org/articles/98949/elife-98949-video2.mp4.jpg)
+
+**Video 2.:** The silicone wire embolus was inserted into the PPA, initiating the ischemic condition. PPA: the pterygopalatine artery.
+
 Following a predetermined ischemia embolization time, the silicone wire embolus was carefully removed from the PPA without massive haemorrhage (Figure 1E). The CCA suture was removed, restoring arterial reperfusion (Figure 1F) (Video 3). Then, the skin wound was sutured, and the mice were routinely fed during reperfusion (Figure 1G).
 
-## Staining of retinal vessels
+![Video 3.](https://cdn.elifesciences.org/articles/98949/elife-98949-video3.mp4.jpg)
+
+**Video 3.:** The silicone wire embolus was removed, allowing reperfusion to occur. The mouse’s wound was sutured, and standard feeding procedures were followed.
+
+### Staining of retinal vessels
 
 To clearly visualize the retinal vessels, rhodamine-labeled canavalin A was used for mouse heart perfusion. Each mouse was anaesthetized with 1% sodium pentobarbital and placed in the supine position on a foam board resting on a tray. The sternum was opened to expose the heart. A needle attached to the perfusion tube was inserted into the left ventricle via the apex of the mouse heart and secured. The right atrial appendage was dissected with scissors to allow blood outflow. Saline solution was perfused through the left ventricle using a pump system to drain blood from the arteries. Subsequently, the prepared solution of rhodamine-labeled canavalin A was injected into the mice and circulated throughout the mouse vessels for 30 min. The mice were then sacrificed, and their eyes were removed and immersed in paraformaldehyde (PFA) for 1 hr in the dark. A flat-mounted retina was obtained, and retinal images were captured using a Leica SP8 confocal microscope equipped with a 10×objective.
 
-## Quantification of RGCs and microglia
+### Quantification of RGCs and microglia
 
 The mice were euthanized by cervical dislocation, and their eyes were fixed in 4% PFA for 60 min at room temperature (RT). Subsequently, the cornea and lens were excised, and the intact retina was isolated for retinal flat mounting. The retina was immersed in PBS supplemented with 5% bovine serum albumin (BSA) and 0.5% Triton X-100 for overnight blocking and then incubated with Brn3a antibody (Synaptic Systems, Germany) or Iba1 antibody (Wako, Japan). Following a two-day incubation with the primary antibody, the retina was gently washed three times with PBS. Subsequently, the retina was incubated with Alexa Fluor 594 (AntGene, Wuhan, China) in a light-protected cassette for two days. After three rinses, the retina was uniformly sectioned into a four-leaf clover morphology and flattened using a coverslip. Retinal flat mounts labeled with Brn3a were photographed to count using a fluorescence microscope (BX51, Olympus, Japan) and representative pictures were imaged using a Leica SP8 confocal microscope (Leica TCS SP8, Germany). Retinas labeled with Iba1 were imaged utilizing a fluorescence microscope (BX63; Olympus, Tokyo, Japan). Each quadrant of the retina was systematically subdivided into central, middle, and peripheral fields (distance from the optic nerve head: central field: 0.1 mm to 0.5 mm, middle field: 0.9 mm to 1.3 mm, and peripheral field: 1.7 mm to 2.1 mm). The surviving RGCs and activated microglia of 12 fields in each retina were quantified and averaged using ImageJ software (National Institutes of Health, USA).
 
-## Electroretinogram (ERG)
+### Electroretinogram (ERG)
 
 Mice were dark-adapted overnight before ERG, and all subsequent procedures were carried out in the dark. Before ERG, the mice were anaesthetized with 1% sodium pentobarbital via intraperitoneal injection, and their pupils were dilated. A subcutaneous electrode was inserted into the posterior cervical skin, a tail electrode was affixed to the posterior end of the mouse tail, and the corneal electrode was gently placed on the central corneal surface. A RetiMINER-C visual electrophysiological system (3VMED Co., Ltd., Shanghai, China) was used for recording electrical responses. The a-waves, b-waves, and oscillatory potentials (OPs) after flash stimuli of 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, and 10.0 cd.s/m Hayreh and Zimmerman, 2005 in scotopic adaptation were recorded. The amplitudes and implicit times of a-waves, b-waves, and OPs in response to various flash stimuli were analyzed.
 
-## Optical coherence tomography imaging (OCT) and fluorescein fundus angiography (FFA)
+### Optical coherence tomography imaging (OCT) and fluorescein fundus angiography (FFA)
 
 The mice were placed on the platform of a Spectralis HRA + OCT device (Heidelberg Engineering, Heidelberg, Germany) for OCT imaging following anaesthesia. Pupil dilation was performed, and normal saline was applied regularly to maintain corneal moisture. The focal length of the device was adjusted until the mouse retina was clearly visible. The head of the mouse was gently repositioned to capture images of the peripheral fundus. The multiline mode was used to scan each layer of the retina, and four quadrants of view centred on the nipple in the upper left, lower left, upper right, and lower right were recorded. In this study, the total retinal thickness was manually segmented into three parts and encompassed the entire thickness from the nerve fibre layer to the photoreceptor layer. The ganglion cell complex (GCC) was defined as the combined thickness of the retinal nerve fibre layer (RNFL), ganglion cell layer (GCL), and inner plexiform layer (IPL). The inner nuclear layer (INL) and the outer plexiform layer (OPL) were combined for thickness analysis due to the difficulty in distinguishing between these layers. The remaining retinal layers, including the outer nuclear layer (ONL), inner segment/outer segment (IS/OS), and retinal pigment epithelium (RPE) layers, were measured together. The thickness of the retina at 1.5 papillary diameters (PD), 3.0 PD, and 4.5 PD from the centre of the optic disc was measured using the Heidelberg measuring tool.
 
 For FFA, the mice were anaesthetized, and their pupils were dilated. Subsequently, fundus angiography was performed immediately following an intraperitoneal injection of sodium fluorescein. Images were acquired alternately for both eyes within 5 s of the injection.
 
-## Hematoxylin and eosin (HE)
+### Hematoxylin and eosin (HE)
 
 Mouse eyes were fixed in FAS eyeball fixation solution (Service-bio, Wuhan, China) for 48 hr, followed by dehydration and subsequent embedding in paraffin. The paraffin blocks were trimmed parallel to the optic nerve to obtain 3–4 μm thick sections where the optic nerve was located. Six paraffin sections from each eyeball were stained with HE. Images were captured using an Olympus fluorescence microscope. The retinal thickness within a range of 200–1100 μm from the optic disc was measured using Image-Pro Plus 6.0 software.
 
-## Staining of retinal sections
+### Staining of retinal sections
 
 For immunofluorescence, mouse eyes were fixed in 4% PFA solution and subjected to gradient dehydration using 10%, 20%, and 30% sucrose solutions. The following day, the eyes were embedded in optimum cutting temperature (OCT) compound (SAKURA, USA) and frozen at –80 °C. Several 14-μm-thick frozen sections were obtained from each eyeball through the use of a freezing microtome (Leica, Wetzlar, Germany). The section surface was parallel to the optic nerve, and 3–6 frozen sections were mounted on a single slide. The slides were stored at –20 °C until use.
 
 All sections were blocked with 5% BSA and 0.5% Triton X-100 in PBS for 2 hr. Primary antibodies, as listed in Table 1, were diluted in PBS containing 5% BSA and 0.5% Triton X-100 and incubated at 4 °C overnight. The following day, after three rinses, the sections were incubated with secondary antibodies at RT for 2 hr in a cassette, followed by three washes. The sections were then stained with DAPI (Service-bio, Wuhan, China) for 15 min. After the final three rinses, the frozen sections were sealed. A Leica SP8 instrument equipped with a 40×objective was used to photograph frozen sections near the optic nerve head. The fluorescence intensity of all slices of each eye was determined using ImageJ software.
 
-## Surgical procedure for the UCCAO model and the HIOP model
+**Table 1.**
+ Antibodies used in staining of flat-mounted retina and sections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Species</th>
+      <th>Dilution</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PKCα</td>
+      <td>rabbit</td>
+      <td>1:1000</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Recoverin</td>
+      <td>rabbit</td>
+      <td>1:1000</td>
+      <td>Millipore</td>
+    </tr>
+    <tr>
+      <td>Calbindin</td>
+      <td>rabbit</td>
+      <td>1:5000</td>
+      <td>SWANT</td>
+    </tr>
+    <tr>
+      <td>ChAT</td>
+      <td>goat</td>
+      <td>1:200</td>
+      <td>Millipore</td>
+    </tr>
+    <tr>
+      <td>Iba1</td>
+      <td>rabbit</td>
+      <td>1:500</td>
+      <td>Wako</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>rabbit</td>
+      <td>1:100</td>
+      <td>CST</td>
+    </tr>
+    <tr>
+      <td>Rhodamine-labeled canavalin A</td>
+      <td>/</td>
+      <td>1:125</td>
+      <td>MKBio</td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse IgG Alexa Fluor 488</td>
+      <td>goat</td>
+      <td>1:500</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-rabbit IgG Alexa Fluor 594</td>
+      <td>donkey</td>
+      <td>1:500</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-goat IgG Alexa Fluor 488</td>
+      <td>donkey</td>
+      <td>1:500</td>
+      <td>Jackson</td>
+    </tr>
+  </tbody>
+</table>
+
+### Surgical procedure for the UCCAO model and the HIOP model
 
 Animals for the UCCAO model were prepared and managed according to the procedure described for the UPOAO model. After blunt dissection, the left CCA was ligated with a 6–0 suture. After 60 min of ligation, the suture was removed, and the skin wound was subsequently closed with sutures. Mice were routinely fed during the reperfusion period, and the retinas of UCCAO mice were harvested 7 days post-surgery.
 
 The HIOP model was generated based on previously established methods (Chen et al., 2003). Briefly, mice were anaesthetized by intraperitoneal injection of 1% sodium pentobarbital. Pupils were dilated using tropicamide phenylephrine eye drops (0.5% tropicamide and 0.5% deoxyadrenaline hydrochloride, Santen Pharmaceutical) applied 5 min in advance. An insulin hypodermic needle attached to a silicone elastomer tube was inserted into the anterior chamber of the unilateral experimental eye. The IOP was elevated for 60 min by raising the height of the saline solution storage bag to 162 cm, after which the needle was removed to immediately restore the IOP to baseline levels. Iris whitening and loss of retinal red-light reflexes indicated retinal ischemia. After surgery, levofloxacin hydrochloride ophthalmic gel was applied to the eyes of the mice. Retinas from HIOP mice were collected 7 days post-surgery.
 
-## Transcriptome sequence and analysis
+### Transcriptome sequence and analysis
 
 Retinal samples from UPOAO, HIOP, and UCCAO mice were extracted and promptly frozen in liquid nitrogen within 10 min of cervical dislocation. Total RNA extraction was performed according to the protocol outlined in the TRIzol Reagent manual (Life Technologies, CA, USA). RNA integrity and concentration were assessed using an Agilent 2,100 Bioanalyzer (Agilent Technologies, Inc, Santa Clara, CA, USA). The resulting RNA samples were then pooled and subjected to sequencing on the Illumina HiSeq3000 platform in a 150 bp paired-end read format. The raw RNA-sequencing (RNA-seq) reads were preprocessed and quantified using the featureCounts function in the SubReads package version 1.5.3, with default parameters.
 
@@ -187,10 +324,10 @@ RNA-seq analysis was conducted on samples from five mice in the non-perfusion gr
 
 Data normalization and subsequent processing utilized the 'limma' package in R software (version 4.2.3; Ritchie et al., 2015). Volcano plots and Venn diagrams were generated for visualization to identify significantly DEGs and perform Gene Ontology (GO) annotation analysis. DEGs with a |log2-fold change (FC)|>1 and adjusted p-value <0.05 were significantly differentially expressed. Enrichment analysis focused on DEGs with an adjusted p<0.05 and an enriched gene count >5. To visualize the expression patterns of significant DEGs, a heatmap was generated using the ‘pheatmap’ package. Gene Set Enrichment Analysis (GSEA) was conducted using the GSEA program (version 4.3.2) Subramanian et al., 2005, employing the default gene set m-subset (mh.all.v2023.1.mm.symbols.gmt) to explore significant functional and pathway differences. Enriched pathways were classified based on criteria such as adjusted p-value (<0.05), false discovery rate (FDR) q value (<0.25), and normalized enrichment score (|NES|>1). Furthermore, (PPI) analysis was performed using the Search Tool for the Retrieval of Interacting Genes (STRING) database (https://string-db.org/; Szklarczyk et al., 2019). Genes with a greater degree of protein-level interactions with others were further analyzed using Cytoscape software (version 3.8.2) to generate a downstream PPI map. PPI pairings with an interaction score >0.7 were extracted and visualized using Cytoscape 3.9.0 (Kohl et al., 2011).
 
-## Real-time quantitative polymerase chain reaction (RT-qPCR)
+### Real-time quantitative polymerase chain reaction (RT-qPCR)
 
 RNA was extracted from fresh mouse retinal samples and subjected to reverse transcription using HiScript lll RT SuperMix for qPCR (Vazyme, China) following the manufacturer’s instructions. RT‒qPCR analysis was conducted on a CFX instrument (Bio-Rad) using AceQ qPCR SYBR Green Master Mix (Vazyme, China). The PCR program comprised 40 cycles of 10 s at 95 °C and 30 s at 60 °C. Assays were performed in triplicate, and Ct values were normalized to Actb levels. Relative quantification of target gene expression was calculated using the 2-ΔΔCt method. The primer sequences are provided in Supplementary file 2.
 
-## Statistical analysis
+### Statistical analysis
 
 All the data were analyzed using GraphPad Prism version 9.0 (GraphPad Software, San Diego, CA, USA). Each experimental group included a minimum of three biological replicates. T-tests, including RGCs and microglia counting, OPs analysis, retinal thickness measurements via HE staining, and fluorescence intensity quantification, were used to compare the two groups. Two-way ANOVA (two-way analysis of variance) test was used for more than two different experimental groups, including ERG waves and retinal thickness measurements in OCT. All data are presented as the mean ± standard error of the mean (SEM), and the statistical graphs are shown as scatter bar graphs and line charts. p<0.05 was considered to indicate statistical significance.

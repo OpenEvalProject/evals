@@ -38,7 +38,7 @@ Using image classification approaches, we visualized seven distinct Mfd-EC compl
 
 ## Results
 
-## Mfd with ATP forms a stable complex with an RNAP EC assembled on a non-complementary transcription bubble
+### Mfd with ATP forms a stable complex with an RNAP EC assembled on a non-complementary transcription bubble
 
 We assembled Eco RNAP ECs on a nucleic acid scaffold (Komissarova et al., 2003) with the following features: (i) a 20-mer RNA transcript designed to generate a post-translocated nine base pair RNA/DNA hybrid with the DNA t-strand, (ii) a mostly non-complementary transcription bubble to inhibit Mfd-mediated displacement of the RNAP (Park and Roberts, 2006), and (iii) 40 base pairs of duplex DNA upstream of the transcription bubble to allow Mfd function (Park et al., 2002; Figure 1A). Native electrophoretic mobility shift analysis (EMSA) showed a unique band containing protein and nucleic acid that appeared only in the presence of the pre-formed EC, Mfd, and ATP (labeled '*' in Figure 1B). Subsequent analysis of the contents of the *-band by SDS-polyacrylamide gel electrophoresis showed that it contained both RNAP and Mfd (Figure 1C, lane 5). Stable ECs and Mfd-ECs with 1:1 stoichiometry were also detected by native mass spectrometry (nMS; Figure 1D).
 
@@ -46,9 +46,25 @@ We assembled Eco RNAP ECs on a nucleic acid scaffold (Komissarova et al., 2003) 
 
 **Figure 1.:** (A) The nucleic acid scaffold used for native mass spectrometry (nMS) and cryo-EM. The region of the nt-strand DNA shown in yellow is non-complementary with the t-strand. (B) Native gel electrophoretic mobility shift assay reveals the formation of a unique complex in the presence of an Eco RNAP EC (formed on the nucleic acid scaffold shown in A), Mfd, and 2 mM ATP (band labeled '*', lane 5). The same gel was stained with Coomassie blue to reveal protein (top panel) or Gel Red to reveal nucleic acids (bottom panel). (C) The band labeled '*' (panel B, lane 5) was excised from the gel and analyzed by SDS-polyacrylamide gel electrophoresis with silver staining, revealing the presence of RNAP and Mfd (lane 5). (D) nMS spectra and the corresponding deconvolved spectra for EC and Mfd-EC samples with the nucleic acid scaffold shown in (A). RNAP and the scaffold form a stable EC with 1:1 stoichiometry (437.7 kDa complex). Upon incubation of this complex with sub-stoichiometric Mfd (Mfd:EC ratio of 1:2) and 2 mM ATP, about 40% of the EC was converted to the Mfd-EC complex (570.4 kDa) with 1:1 stoichiometry. Excess EC was mixed with Mfd because unbound Mfd yielded extremely high relative peak signals that dominated the spectrum, making interpretation and quantitation difficult.
 
-## Seven structures in the Mfd activity cycle
+### Seven structures in the Mfd activity cycle
 
 In the crystal structure of the 130 kDa Eco apo-Mfd (Deaconescu et al., 2006), domains D1a-D2-D1b form a structural unit with similarity to the namesake elements of UvrB that interact with UvrA (the 'UvrB homology module'; Figure 2A). Indeed, mutagenesis and structural studies establish that UvrB and Mfd share a common mode of UvrA recognition (Deaconescu et al., 2006; Deaconescu et al., 2012; Manelyte et al., 2010; Pakotiprapha et al., 2009; Pakotiprapha et al., 2012; Selby and Sancar, 1995b). D3 is a non-conserved, lineage-specific domain with unknown function. D4 (RNAP interacting domain, or RID) is necessary and sufficient for Mfd interaction with the RNAP βprotrusion (Deaconescu et al., 2006; Park et al., 2002; Selby and Sancar, 1995b; Smith and Savery, 2005; Westblade et al., 2010). D5 and D6 comprise the RecG-like SF2 translocase domains (TD1/TD2). The interaction between the C-terminal D7 and the UvrA-interacting surface of D2 (Figure 2A) maintains apo-Mfd in its repressed state (Deaconescu et al., 2006; Manelyte et al., 2010; Murphy et al., 2009; Smith et al., 2007).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig2-v2.jpg)
+
+**Figure 2.:** (A) The structure of apo-Mfd [PDB 2EYQ; Deaconescu et al., 2006] is shown as a transparent molecular surface surrounding a backbone ribbon. The domain nomenclature and color coding are schematically represented by the horizontal bar below, which represents the 1148-residue Eco Mfd primary sequence (every 100 residues are marked by a vertical white line). Structural domains are shown as thick bars; thin bars represent connecting linkers. The UvrB homology module (D1a-D2-D1b) is structurally homologous to the namesake elements of UvrB (Deaconescu et al., 2006; Selby and Sancar, 1993). D4 is the RNA polymerase (RNAP) interacting domain (RID). D5 (Translocation Domain 1, or TD1) and D6 (TD2) contain the seven SF2 ATPase motifs denoted by white boxes and labeled (Gorbalenya and Koonin, 1993) as well as the TRG motif (Chambers et al., 2003; Mahdi et al., 2003), and together comprise the translocation module. (B)–(H). (Top) Overall structures of Mfd-EC complexes obtained by cryo-EM. The cryo-EM density maps low-pass filtered to the local resolution (Cardone et al., 2013) are shown as transparent surfaces with final models superimposed. Mfd is colored as shown in (A); the RNAP and nucleic acids are colored according to the key. (Bottom) Cryo-EM density (blue mesh) and superimposed models in the region around the Mfd nucleotide-binding site. Bound nucleotide could not be visualized in the L1 cryo-EM map (B) because of the low resolution. The nucleotide status (either ADP or ATP/ATP•P) could be determined from the cryo-EM map alone for C1(ATP), C2(ATP), C4(ADP), and C5(ATP) (see Supplementary file 2). Determination of the nucleotide status for L2(adp) and C3(adp) was not possible from the cryo-EM maps alone (see Supplementary file 2), but other arguments suggest that these two states were bound to ADP (see text). (B) L1. (C) L2(adp). (D) C1(ATP). (E) C2(ATP). (F) C3(adp). (G) C4(ADP). (H) C5(ATP).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cryo-EM processing pipeline for Mfd-EC complexes. (B) EC-centered and Mfd-centered maps were combined using the PHENIX combine_focused maps command (Adams et al., 2010).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Angular distribution of particle projections for each structural class. (B) Gold-standard FSC for the EC-centered/Mfd-centered composite maps, calculated by comparing the two independently determined half-maps using the MTRIAGE module (Afonine et al., 2018) of PHENIX (Adams et al., 2010). The dotted line represents the 0.143 FSC cutoff. (C and D) (Top) Views of the cryo-EM density map, colored according to the key of Figure 2. The right view is a cross-section through the center of the left view. (Bottom) Same views as on top but colored by local resolution (Cardone et al., 2013). C.L1, the lowest resolution structural class. D.C5, the highest resolution structural class.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A)–(G). Cryo-EM density maps, filtered according to the local resolution (Cardone et al., 2013), corresponding to the nucleic acids, are shown as transparent surfaces with the final refined models superimposed. The color coding is shown in the key. (A) L1. (B) L2. (C) C1. (D) C2. (E) C3. (F) C4. (G) C5. (H) Plot showing the minor groove width [calculated using Curves+ (Lavery et al., 2009)] of the upstream duplex DNA, aligned by the center of the kink (defined as position '0').
 
 To visualize the expected conformational changes in Mfd upon EC engagement and de-repression, we analyzed the Mfd-EC complexes (Figure 1) by single particle cryo-EM. Steps of maximum-likelihood classification (Scheres, 2012) revealed seven Mfd-EC structures (L1, L2, C1-C5; Figure 2B–H) ranging from 3.4 to 4.1 Å nominal resolution (Figure 2—figure supplement 1; Figure 2—figure supplement 2; Supplementary file 1). With the exception of L1, the cryo-EM maps were of sufficient quality to directly observe bound nucleotide. Characteristics of the cryo-EM densities and of the surrounding protein structure led us to propose the nucleotide status of each structure (Supplementary file 2). We performed an objective, unbiased test of the proposed nucleotide identities by running identical refinements of each structure modeled with either ATP or ADP (aligned by their common atoms) and comparing the average real space correlation coefficients (Adams et al., 2010). The results (Supplementary file 2) suggested that C1, C2, and C5 contained either ATP or ADP•P (where the hydrolyzed γ-phosphate has not been released), and that C4 contained ADP (Figure 2C–H). Thus, Mfd was trapped progressing through its nucleotide hydrolysis cycle (NHC). According to our real space correlation coefficient test, the identity of the nucleotide bound to L2 and C3 was ambiguous based solely on the cryo-EM density (Supplementary file 2). We therefore denote the nucleotide status of these states with lowercase letter [i.e. L2(adp), C3(adp)].
 
@@ -56,7 +72,7 @@ In all seven structures, the ECs have similar RNAP and nucleic acid conformation
 
 In most of the structures, the cryo-EM density in the region around the upstream edge of the transcription bubble is poor and difficult to interpret, likely due to heterogeneity in that region. As a consequence, the precise register of the upstream duplex DNA in the models is tentative. However, gross features of the upstream DNA, such as the paths of the DNA backbone and of the overall helical axes, are clear (Figure 2—figure supplement 3A–G). In this regard, the engagement of Mfd significantly distorts the upstream duplex DNA. Mfd induces a localized kink in the DNA, roughly centered in the footprint of the Mfd translocation module [D5(TD1)/D6(TD2)] on the DNA. The Mfd translocation module engages with the duplex DNA from the minor groove; the kink, which ranges from 7° to 15° away from Mfd, is accompanied by significant widening of the DNA minor groove (Figure 2—figure supplement 3H). The entire length of the upstream duplex DNAs bends away from the Mfd translocation module by 16–45° (Figure 2—figure supplement 3A–G). Based on single molecule observations, the Mfd interaction with DNA was proposed to induce bending or wrapping of the DNA (Howan et al., 2012), consistent with these structural observations.
 
-## One ATP hydrolysis cycle corresponds to translocation by one base pair
+### One ATP hydrolysis cycle corresponds to translocation by one base pair
 
 Sequence analysis identifies Mfd as an SF2 ATPase (Gorbalenya and Koonin, 1993) with a RecA-type catalytic core that is most closely related to RecG (Chambers et al., 2003; Mahdi et al., 2003). Mfd and RecG are unique among SF2 ATPases in harboring a conserved 'TRG' (translocation in RecG) motif following the seven SF2 ATPase signature motifs. Mutations in conserved residues of the TRG motif uncouple ATP hydrolysis from duplex DNA translocation (Chambers et al., 2003; Mahdi et al., 2003). It has not been possible to understand the relationship between duplex DNA binding, the nucleotide status of the RecA catalytic core, and duplex DNA translocation mediated by the TRG motif due to the lack of structures of an SF2 translocase bound to duplex DNA in different nucleotide states. The series of Mfd-EC structures determined here help in this understanding.
 
@@ -72,23 +88,43 @@ Mfd amino acid side chain interactions with the bound nucleotide and with the DN
 
 In the ATP-bound structures, the carbonyl oxygen of G874 (motif V), and the side chains of R902 (motif VI) and R905 (just beyond motif VI), all in TD2, form polar interactions either hydrogen bonds (≤3.5 Å) or longer-range ion-pair interactions (≤4.5 Å); see Figure 3A legend; (Kumar and Nussinov, 2002; Xu et al., 1997; Yu et al., 2019) with the ATP γ-phosphate (Figure 3A, left). These three residues are absolutely conserved in an alignment of 65 Mfd sequences (Deaconescu et al., 2006). In the absence of the γ-phosphate in the ADP structures, these interactions are lost and TD2 rotates away from TD1 [Figure 3A (right), 3B]. The movement of TD2 with respect to TD1 on transitioning from the ATP- to the ADP-bound state corresponds to an ~16° rotation about an axis roughly perpendicular to the helical axis of the upstream duplex DNA (Figure 3B). As a result, the center of mass of TD2 shifts parallel to the DNA helical axis about 3.5 Å in the downstream direction (Figure 3B), corresponding to one base pair rise of B-form DNA. These observations are suggestive of an 'inchworm' model for translocation, as proposed for related SF1 helicase translocation on single-stranded nucleic acids (Lohman et al., 2008; Singleton et al., 2007; Velankar et al., 1999; Yarranton and Gefter, 1979) and for Mfd based on single-molecule observations (Le et al., 2018). In this model (schematized in Figure 3C), upon hydrolysis and release of the γ-phosphate, TD2 moves forward on the duplex DNA and forms tight interactions one base pair downstream. Next, the TD1/DNA interactions loosen and ADP must exchange for ATP in the nucleotide-binding site. This allows TD1 to close toward TD2, reestablishing interactions with the ATP γ-phosphate, now with both TD1 and TD2 translocated one base pair downstream on the duplex DNA (Figure 3C; Video 1). The model predicts a translocation stepsize of one nucleotide per ATP hydrolysis cycle, consistent with measurements for SF1 helicases (Dillingham et al., 2000; Tomko et al., 2007).
 
+![Video 1.](https://cdn.elifesciences.org/articles/62117/elife-62117-video1.mp4.jpg)
+
+**Video 1.:** The video illustrates the Mfd translocation module inchworm translocation model. The Mfd translocation module [D5(TD1), yellow; D6(TD2), green] transitions between the closed ATP-bound state and the open ADP-bound state as it translocates on duplex DNA. In the first section of the video, the Mfd translocation module inchworms on stationary DNA. The second section of the video simulates the effect of blocking the forward (left-to-right) motion of the protein but with continued ATP hydrolysis – the protein continues to translocate with respect to the DNA, but since the protein cannot move, the DNA moves (from right-to-left) instead. A reference base pair in the DNA is colored magenta.
+
 The TRG motif, which couples ATP hydrolysis to translocation, contains a helical hairpin motif followed by a meandering loop structure (Figure 3D). Each of these structural elements harbors one of the three conserved TRG residues that are critical for translocation: R929 (1st helix), R953 (2nd helix), and Q963 (loop) (Chambers et al., 2003; Mahdi et al., 2003). All three of these residues interact with the DNA phosphate backbone. The rotation axis of the TD2(ATP) → TD2(ADP) transition passes directly through the linker connecting the helical hairpin (Figure 3D). Examining the structures more closely, the structural elements of TD2 C-terminal to the linker, which includes the second TRG hairpin-helix, the TRG loop, and the hook-helix, make extensive interactions with TD1 and move with TD1 as a rigid body, while the N-terminal portion of TD2 (residues 781–939) opens and closes depending on the nucleotide status. Thus, the linker connecting the TRG helical hairpin acts as the hinge (centered near absolutely conserved G942) for the TD1/TD2 conformational change in response to nucleotide status. Opening of TD2 in the ADP state results in closing of the TRG helical-hairpin (Figure 3D).
 
-## Pathway for Mfd function
+### Pathway for Mfd function
 
 For the purpose of analyzing and discussing the structures, it is useful to place them in an ordered pathway. To begin the pathway, apo-Mfd from solution (Figure 2A) interacts with an EC. Comparing the Mfd component of each complex with the apo-Mfd structure (Deaconescu et al., 2006), only L1(atp) has an rmsd <10 Å (all the others are >>30 Å; Supplementary file 4). Therefore we place L1(atp) as the first structure in the pathway (Figure 4—figure supplement 1A).
 
 To order the rest of the structures, we superimposed α-carbons of each complete structure (Mfd and RNAP α-carbons) with α-carbons of every other structure and calculated the rmsd of α-carbon positions, generating a table of 21 pair-wise rmsd values (Supplementary file 5). L1(atp) and L2(adp) clearly stand apart from the other structures; L1 and L2 compared with every other structure exhibit rmsds between 19 Å and 47 Å, while C1–C5 compared with each other exhibit rmsds between 3.7 Å and 11.4 Å. We therefore propose that L1(atp) and L2(adp) are Mfd 'Loading' complexes, while C1(ATP), C2(ATP), C3(adp), C4(ADP), and C5(ATP) are related structures looping in the Mfd NHC. Starting with L1(atp), the path of transitions from one structure to the next that gives the smallest cumulative rmsd (Supplementary file 5) is shown in Figure 4—figure supplement 1A.
 
-## Mfd loading requires multiple rounds of ATP hydrolysis and is accompanied by profound conformational changes
+### Mfd loading requires multiple rounds of ATP hydrolysis and is accompanied by profound conformational changes
 
 The Mfd component of L1(atp) [Mfd(atp)L1], the first experimental structure in the pathway (Figure 4—figure supplement 1A), is most similar to the structure of apo-Mfd [PDB 2EYQ; (Deaconescu et al., 2006)]. We modeled a presumed precursor to L1, [L0] (square brackets denote a structural model), by superimposing the apo-Mfd-D4(RID) structure onto the Mfd(atp)L1-D4(RID) (Figure 4A). This reveals that the [L0] → L1 transition involves large translations and rotations of TD1 (11 Å translation, 43° rotation) and TD2 (16 Å translation, 37° rotation; Supplementary file 5), bringing the two ATPase domains into alignment, presumably to bind ATP and engage with the DNA (Figure 4B,C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig4-v2.jpg)
+
+**Figure 4.:** Color coding of RNA polymerase (RNAP) subunits and Mfd domains are shown in the keys on the left and right, respectively. (A) Apo-Mfd PDB 2EYQ (Deaconescu et al., 2006) combines with an elongation complex (EC) [PDB 6ALF (Kang et al., 2017) with upstream and downstream duplex DNA extended] to form a putative initial encounter complex [L0], which was modeled by superimposing apo-Mfd D4(RID) onto the MfdL1-D4(RID) and adjusting the trajectory of the upstream duplex DNA. (C) The [L0] → L1(atp) transition is shown. In this view, the downstream duplex DNA (and the direction of transcription) points away from the viewer. (Top) The Mfd-EC structures are shown as molecular surfaces with DNA shown in cartoon format. The boxed regions are magnified below. (Bottom) Mfd is shown as a transparent molecular surface surrounding a backbone ribbon. In the middle, the colored spheres denote the relative positions of the Mfd domain center-of-masses (com), with connecting lines denoting the motions from the L[0] → L1(atp) transition (the translations of the com's, as well as the relative rotation of the domains, are listed. The D4(RID) motion is negligible; also see Supplementary file 4). D.[L0]. E.L1(atp): The region of the upstream duplex DNA colored orange and denoted by the orange stripe was found to be required for Mfd function on an EC (Park et al., 2002). (F) View of the [L0] → L1(atp) → L2(adp) transition, highlighting the structural changes in the Mfd relay helix (RH) and hook helices (HH). In this view, the Mfd-EC complex is rotated ~180° about a horizontal axis, so the downstream duplex DNA (and direction of transcription) is toward the viewer. (Top) The RNAP is shown as a molecular surface, with nucleic acids shown in cartoon format. Mfd is shown with cylindrical helices. Color coding is as above but the RH is colored hot pink, and the HHs are colored dark green. The boxed region is magnified below. (Bottom) The complexes are shown in faded colors except for the RH and HHs. Also shown as a molecular surface are the residues of Mfd-D2 that interact with UvrA [determined from PDB 4DFC (Deaconescu et al., 2012)]. D.L[0]: The RH at the very N-terminus of TD1 extends for 30 residues and is surrounded by the HHs at the very C-terminus of TD2. The UvrA-interacting surface of Mfd-D2 is occluded by D7 (Deaconescu et al., 2006). E.L1(atp): The middle portion of the RH helix unfolds and the RH kinks about 112° around the second HH due to the translation/rotation of TD1 (denoted) and also TD2. The UvrA-interacting surface of Mfd-D2 is still occluded by D7. F.L2(adp): The transition from L1(atp) → L2(adp) involves a 259° rotation of TD1 around the backside of the DNA, as well as a 65 Å translation toward the RNAP (denoted). This is likely accomplished by ATP-hydrolysis-dependent walking of the Mfd translocation module and D7 along the DNA until it bumps into the RNAP. The corkscrewing translocation module unfolds the N-terminal half of the RH, wrapping it around the DNA as it goes. In this process D2 is separated from D7 but the UvrA-interacting surface of D2 is now occluded by the DNA. Also see Figure 2—video 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Putative ordered pathway of seven Mfd-elongation complex (EC) structures (Figure 2B–H). Each structure is shown in its position along with the number of particles that gave rise to that structural class (Figure 2—figure supplement 1). All the structures came from identically prepared samples, so the particle numbers are likely related to the stability of each complex. L1(atp) was placed first in the pathway because the Mfd component [Mfd(atp)L1 most closely superimposes with apo-Mfd (Supplementary file 4)]. The structures can be grouped into two main groups, L1(atp) and L2(adp), which do not superimpose well with any of the other structures, and C1(ATP), C2(ATP), C3(adp), C4(ADP), and C5(ATP), which are all relatively similar to each other (Supplementary file 4, Figure 2—figure supplement 3A). We thus place L1(atp) and L2(adp) in a loading pathway (also see Figure 2—video 1), while C1–C5 represent the fully EC-engaged nucleotide hydrolysis cycle (NHC) for Mfd (see Figure 7—video 1). As described in the text, the complete loading pathway requires a minimum of 10 ATP hydrolysis events, while each cycle of the NHC requires one ATP hydrolysis. (B) (Top) The nucleic acid scaffold is shown (same as Figure 1A except the upstream single-stranded RNA is not shown for clarity). Above the sequences, the orange bar denotes the extent of upstream duplex DNA required for Mfd function (Park et al., 2002). The gray bars below denote the extent of Mfd/DNA interactions in the seven Mfd-EC structures (light gray bar, nt-strand interacts; dark gray bar, t-strand). The interactions of Mfd(atp)L1 with the DNA explain the requirement for ~40 base pairs of upstream duplex DNA (Park and Roberts, 2006) and indicate that L1(atp) is an obligate intermediate in the pathway.
 
 Mfd requires ~30 base pairs of duplex DNA upstream of the EC transcription bubble [to about −40 (Park et al., 2002)]. Mfd/DNA interactions occur between about −34 and −14 with one exception, Mfd(atp)L1 interacts with the DNA further upstream, from about −38 to −27 (Figure 4C, Figure 4—figure supplement 1B), explaining the result of Park et al., 2002 and also confirming that L1(atp) is an obligate intermediate in the Mfd loading pathway. The Mfd translocation module makes extensive interactions with both DNA strands in each structure, but the direct interactions slightly favor the t-strand DNA; about 60% of the direct Mfd-translocation module:DNA interactions occur with the t-strand DNA in each of the structures.
 
 In apo-Mfd, The D4(RID) is connected to the first RecA ATPase domain (TD1) by a 30-residue α-helix, the Relay Helix (RH, residues 548–577; Figure 4D). The RH at the N-terminus of TD1 interacts with the hook helices at the very C-terminus of TD2. In the [L0] → L1(atp) transition, the translations and rotations of TD1 and TD2 result in unfolding of seven residues in the middle of the RH (561–567), and kinking of the RH ~112° around the second hook helix. The first hook helix also completely unfolds (Figure 4E).
 
 The transition from L1(atp) → L2(adp) involves remarkable rearrangements of the Mfd structural modules. Other than the D4(RID), which stays anchored to the RNAP βprotrusion, the minimum center-of-gravity translation of an Mfd structural module [D1–D3, D5(TD1), D6(TD2), D7] is 60 Å, while the minimum rotation is 148° (Figures 4F and 5; Supplementary file 6). As a result of the large conformational rearrangement of Mfd, Mfd(adp)L2 is topologically 'wrapped' around the DNA (Figure 5), likely explaining how Mfd (with RNAP in tow) translocates processively over many kilobases of DNA (Fan et al., 2016; Graves et al., 2015).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig5-v2.jpg)
+
+**Figure 5.:** (A) A back view of the Mfd-elongation complex (EC) structures is shown, viewing down the axis of the upstream duplex DNA (the direction of transcription would be to the right). The RNA polymerase (RNAP) is shown as a molecular surface with nucleic acids shown in cartoon format. Mfd is shown as transparent molecular surfaces surrounding the backbone ribbon. The bottom row shows the transition through the experimental structures [L1(atp) → L2(adp) → C1(ATP)]. Below that is denoted the translations and rotations of the Mfd domains associated with each transition (superimposed on the EC structure). The large translation/rotation of Mfd D5(TD1)-D6(TD2)-D7 in the L1(atp) → L2(adp) transition must occur by clockwise corkscrewing around the DNA minor groove in order to leave behind the unfolded portion of the RH, which wraps around the DNA. The configuration of Mfd D1–D3 in L1(atp) would block this transition and also result in the entanglement of linkers; thus, we propose that this transition is facilitated by transient intermediates [L1.5a] and [L1.5b], which have been modeled with displaced Mfd D1–D3 tethered by the long linker connecting D3 with the D4(RID). This allows the unencumbered transition of Mfd D5(TD1)-D6(TD2)-D7 from [L1.5a] to [L1.5b] (illustrated by the thick yellow arrow). Mfd D1-D3 then accommodates in a new configuration in L2(adp). The L2(adp) → C1(ATP) transition involves another large translation and rotation of D1–D3 (denoted), which finally exposes the Mfd-D2 UvrA-interacting surface. This transition is also illustrated in Figure 2—video 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Interface areas [calculated using the PDBePISA server; (Krissinel and Henrick, 2007)] for selected Mfd:RNAP interdomain interfaces, plotted for each Mfd-elongation complex (EC) structural state. Mfd-D4(RID):βprotrusion: The initial engagement of Mfd with the RNA polymerase (RNAP) is through the Mfd-D4(RID):βprotrusion interaction (average interface area of 553 Å2) and this interaction is maintained through all seven states (L1, L2, and C1–C5). Mfd-[D6(TD2)]:βprotrusion: In L1, the Mfd translocation module [D5(TD1)/D6(TD2)] interacts with upstream DNA (roughly −38 to −27) and does not interact with RNAP (Figure 4—figure supplement 1B). Upon the transition to L2, the translocation module walks on the DNA, moving toward the RNAP until it 'bumps' into the RNAP, characterized primarily by D6(TD2) interacting with the RNAP βprotrusion [the Mfd-D4(RID) and D6(TD2) interfaces with the RNAP βprotrusion do not overlap]. Once Mfd-D6(TD2) pushes up against the RNAP βprotrusion in L2, that interface is also maintained throughout the rest of the structures (L2, C1–C5, average interface area of 312 Å2). During the Mfd-nucleotide hydrolysis cycle, the movements of Mfd relative to the RNAP cause cyclical RNAP conformational changes involving RNAP clamp and βlobe-Si1 motions (Figure 7). The RNAP clamp is opened in C3 as Mfd wedges itself between the βprotrusion and the clamp, pushing on the clamp through a large interface with the translocation module (maximum Mfd-[D5(TD1)/D6(TD2)]:β'clamp interface area of 944 Å2 in C3). The RNAP βlobe-Si1 is pushed sideways by an interaction with Mfd-D1 (can be seen in Figure 7).
 
 Although it is difficult to imagine the choreography of the Mfd structural modules in the L1(atp) → L2(adp) transition without parts of Mfd passing through itself or through the DNA, a pathway exists. First, D1–D3 must dissociate from its position in L1(atp), generating a hypothetical intermediate [L1.5a] (Figure 5). The movement of D1–D3 could be triggered by initial rounds of ATP hydrolysis/translocation by the translocation module and is facilitated by the 25 amino acid linker connecting D3 with D4(RID) (Figures 2A and 5). The release of D1–D3 now opens a path for the Mfd translocation module to 'walk' along the DNA, corkscrewing in the downstream direction (clockwise in the view of Figure 5) until it bumps into the RNAP at its position in L2 (Figures 4F and 5). As the Mfd translocation module corkscrews along the DNA, the N-terminal part of the RH (residues 548–560) completely unfolds and is dragged around the DNA, forming part of the topological link of Mfd on the DNA (Figure 4F). This proposed path of conformational changes is most easily understood by viewing Figure 2—video 1.
 
@@ -108,9 +144,13 @@ Recall that incubating Mfd and ATP with ECs formed on a nucleic acid scaffold co
 
 **Figure 6.:** (A) Native gel electrophoretic mobility shift assay shows that a stable Mfd-elongation complex (EC) complex (denoted by '*') requires a minimum of one round of ATP hydrolysis (lane 3). (B) Displacement of stalled Eco ECs from end-labeled DNA fragments by Mfd was monitored by electrophoretic mobility shift analysis and quantified using a phosphorimager and Imagequant software (Chambers et al., 2003). Data shown are the average of three independent experiments and are expressed as a percentage of the amount of EC present prior to the addition of Mfd. Error bars indicate standard deviation of three independent measurements.
 
-## Mfd manipulates the RNAP conformation during its NHC
+### Mfd manipulates the RNAP conformation during its NHC
 
 After the Mfd loading pathway results in the formation of C1(ATP), we propose that Mfd then loops through an ATP hydrolysis cycle, captured in the five distinct structural states [C1(ATP) ↔ C2(ATP) ↔ C3(adp) ↔ C4(ADP) ↔ C5(ATP) ↔ C1(ATP)…; Figure 7]. Compared to the profound conformational changes that occur through the loading pathway (Figures 4 and 5), the conformations of Mfd in C1–C5 are similar to each other. Comparing the Mfd loading conformations of L1(atp), L2(adp), and C1(ATP) gives rmsd values ranging from 26.0 Å to 38.4 Å, while comparing C1(ATP) through C5(ATP) gives rmsd values ranging from 3.95 Å to 7.68 Å (Supplementary file 4). Although the Mfd conformations in C1(ATP) through C5(ATP) are similar, Mfd as a whole, along with the upstream duplex DNA, wobbles back and forth with respect to the EC by more than 30° (Figure 7, Supplementary file 6).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62117/elife-62117-fig7-v2.jpg)
+
+**Figure 7.:** The completion of the Mfd loading pathway culminates in the formation of C1(ATP) (Supplementary file 5). Mfd then cycles through five distinct states in the order proposed here (also see Supplementary file 5, Figure 4—figure supplement 1A, and Figure 7—video 1). In looping through this cycle, internal conformational changes of Mfd are relatively small (involving primarily the nucleotide-dependent shifts of D5(TD1) and D6(TD2) with respect to each other; see Figure 3), but Mfd and the upstream duplex DNA as a whole wobble back and forth by about 30° on the upstream face of the RNAP. These motions cause significant RNAP conformational changes quantified in the radar plot in the middle. Using C1(ATP) as a reference structure, the RNAP clamp of C3(adp) is opened 17.3° (schematically illustrated in the cartoon inset). The βlobe-Si1 domain of C5(ATP) is rotated 14.3° as illustrated.
 
 During its NHC (C1–C2–C3–C4–C5–C1…), Mfd translocates on the upstream duplex DNA in the downstream direction, tracking in the minor groove (Figure 3, Video 1). If the RNAP is unable to translocate forward, this results in overwinding of the upstream DNA, facilitating collapse of the transcription bubble and release of the RNA transcript (Park and Roberts, 2006). However, the motions of Mfd during the NHC also induce significant conformational changes to the RNAP itself: clamp opening and βlobe-Si1 rotation (Figure 7).
 
@@ -154,29 +194,221 @@ Thus, entry into the NHC is essentially like a molecular switch. In the reversib
 
 ## Materials and methods
 
-## Lead contact and materials' availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Eco BL21(DE3)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Eco Rosetta(DE3)pLysS</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACYCDuet-1_Ec_rpoZ</td>
+      <td>PMID:21416542</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEcrpoABC(-XH)Z</td>
+      <td>PMID:21416542</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAD6</td>
+      <td>PMID:16469698</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAR1707</td>
+      <td>PMID:3309350</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfd_scaffold1b_top</td>
+      <td>This paper</td>
+      <td>Synthetic DNA oligonucleotide</td>
+      <td>CCCAACGGCACCGCTGCAAGGAATAGGATACTTGCGGGCTAGGCTCTTATGGCGGCGAATACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfd_scaffold1b_bot</td>
+      <td>This paper</td>
+      <td>Synthetic DNA oligonucleotide</td>
+      <td>GGGTATTCGCCGCGTACCTCTCCTAGCCCGCAAGTATCCTATTCCTTGCAGCGGTGCCGTTGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfd_RNA_20A11</td>
+      <td>This paper</td>
+      <td>Synthetic RNA oligonucleotide</td>
+      <td>GCAUUCAAAGCGGAGAGGUA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-[(3-Cholamidopropyl)dimethylammonio]−2-Hydroxy-1-Propanesulfonate (CHAPSO)</td>
+      <td>Anatrace</td>
+      <td>Cat# C317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3'-deoxyuridine-5'-triphosphate</td>
+      <td>Trilink Biotechnologies</td>
+      <td>Cat# N3005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bayesian Polishing</td>
+      <td>PMID:30412051</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bsoft</td>
+      <td>PMID:23954653</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:15572765</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>PMID:28165473</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>PMID:26592709</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>PMID:20057044</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID:28250466</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID:20124702</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID:23000701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>http://pymol.org/2/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID:16182563</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID:15264254</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C-flat CF-1.2/1.3 400 mesh gold grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# CF413-100-Au</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials' availability
 
 All unique/stable reagents generated in this study are available without restriction from the Lead Contact, Seth A. Darst (darst@rockefeller.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 RNAP core (α2ββ’ω) and Mfd are proteins found in Eco. For protein expression, Eco BL21(DE3) [Eco str. B F– ompT gal dcm lon hsdSB(rB–mB–) λ(DE3 [lacI lacUV5-T7p07 ind1 sam7 nin5]) [malB+]K-12(λS)] was used.
 
-## Method details
+### Method details
 
 Structural biology software was accessed through the SBGrid consortium (Morin et al., 2013).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Eco RNAP (harboring full-length α-subunits) was purified as described previously (Twist et al., 2011; Chen et al., 2019a). A pET-based plasmid overexpressing each subunit of Eco RNAP (full-length α, β, ω) as well as β'-PPX-His10 (PPX; PreScission protease site, LEVLFQGP, GE Healthcare Life Sciences) was co-transformed with a pACYCDuet-1 plasmid containing Eco rpoZ (encoding ω) into Eco BL21(DE3) (Novagen). Protein expression was induced with 1 mM isopropyl ß-D-thiogalactopyranoside (IPTG) for 4 hr at 30°C. Cells were harvested and lysed with a French Press (Avestin) at 4°C. Lysate was precipitated using polyethyleneimine [PEI, 10% (w/v), pH 8.0, Acros Organics]. Pellets were washed and RNAP was eluted. The PEI elutions were precipitated with ammonium sulfate. Pellets were harvested, resuspended, and loaded onto HiTrap IMAC HP columns (GE Healthcare Life Sciences) for purification by Ni2+-affinity chromatography. Bound RNAP was washed on column, eluted, and dialyzed. Dialyzed RNAP was loaded onto a Biorex-70 column (Bio-Rad) for purification by ion exchange chromatography. Eluted RNAP was concentrated by centrifugal filtration, then loaded onto a HiLoad 26/600 Superdex 200 column (GE Healthcare Life Sciences) for purification by size exclusion chromatography. Purified RNAP was supplemented with glycerol to 20% (v/v), flash frozen in liquid N2, and stored at −80°C.
 
 Eco Mfd was purified as described previously (Deaconescu and Darst, 2005). A pET-based plasmid overexpressing N-terminal His6-tagged Eco Mfd was transformed into Rosetta(DE3)pLysS cells (Novagen). Protein expression was induced with 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) for 4 hr at 30°C, and the cells were harvested and lysed in a buffer containing 50 mM Tris, pH 8.0, 500 mM NaCl, 15 mM imidazole, 10% (v/v) glycerol, 2 mM β-mercaptoethanol (β-ME), 1 mM PMSF, and protease inhibitor cocktail (cOmplete, EDTA-free protease inhibitor cocktail, Roche). For purification, the clarified lysate was loaded onto a Ni2+-charged Hitrap IMAC (GE Healthcare Life Sciences) column and the protein was eluted using 0–200 mM imidazole gradient. The elutions were dialyzed in a buffer containing 20 mM Tris, pH 8.0, 100 mM NaCl, 10% (v/v) glycerol, 5 mM EDTA, and 10 mM β-ME, and loaded onto a Hitrap Heparin (GE Healthcare Life Sciences) column. The protein was eluted with a 100 mM – 2 M NaCl gradient, and further purified by size exclusion chromatography on a HiLoad 16/600 Superdex200 (GE Healthcare Life Sciences) column in a buffer containing 20 mM Tris, pH 8.0, 500 mM NaCl, and 10 mM DTT. Purified Mfd was supplemented with glycerol to 20% (v/v), flash frozen in liquid N2, and stored at −80°C.
 
-## Assembly of ECs and Mfd-EC complexes
+### Assembly of ECs and Mfd-EC complexes
 
 To assemble ECs, the RNA and the t-strand DNA (Figure 1A) were annealed at a 1:1 molar ratio in a thermocycler (95°C for 2 min, 75°C for 2 min, 45°C for 5 min, followed by cooling to 25°C at 1 °C/min). Purified Eco RNAP was buffer exchanged into transcription buffer (20 mM Tris, pH 8.0, 150 mM KCl, 10 mM MgCl2, 5 mM DTT). The annealed DNA–RNA hybrid was added to the buffer-exchanged Eco RNAP at a 1.2:1 molar ratio and incubated for 15 min at room temperature. Then the nt-strand DNA was added and incubated for 10 min. To assemble Mfd-EC complexes, 2 mM ATP was added to the EC, and purified Mfd was added at a 1:2 ratio.
 
-## Biochemical analysis of Mfd/EC complexes
+### Biochemical analysis of Mfd/EC complexes
 
 EC-Mfd complexes were visualized by EMSA. ECs were incubated with twofold molar excess of Mfd and 2 mM ATP at room temperature for 5 min in transcription buffer. Samples were diluted with 6× loading dye containing 20 mM Tris, pH 8.0, xylene cyanol, bromophenol blue, and 30% (v/v) glycerol and loaded onto 4.5% (29:1 acrylamide:bis-acrylamide) polyacrylamide native gels at 4°C in 1× TBE (89 smM Tris, 89 mM boric acid, 2 mM EDTA).
 
@@ -184,31 +416,31 @@ To prepare VO43-, sodium orthovanadate (Sigma-Aldrich) was dissolved in water, a
 
 For in vitro EC displacement assays (Figure 6B), we followed the procedures of Chambers et al., 2003 with some modifications. Stalled ECs were formed by nucleotide starvation on a 529 base pair RasI-SmaI fragment of plasmid pAR1707 (Levin et al., 1987) end-labeled using T4 polynucleotide kinase and [γ-32P]ATP. ECs stalled at +20 were formed by initiating with the dinucleotide ApU and ATP, CTP, and GTP (excluding UTP), and with the addition of the chain-terminator 3'-deoxy-UTP. Complexes were analyzed by EMSAs using 4.5% polyacrylamide (37.5:1 acrylamide/bisacrylamide) in 1× TBE at 4°C. Radiolabeled bands were detected using a phosphor screen and quantified using Imagequant software (Molecular Dynamics). Eco RNAP holoenzyme was assembled by incubating Eco RNAP (250 nM final) with σ70 (1.25 μM final) at 37°C for 20 min. The 32P-labeled dsDNA linear scaffold (0.4 nM final) was combined with holoenzyme (10 nM final) at 37°C for 10 min before ApU dinucleotide (200 μM final), ATP (2 mM final), CTP (50 μM final), GTP (50 μM final), and 3'-deoxy-UTP (100 μM final). Heparin (Sigma-Aldrich) was also added (10 μg/mL final) to ensure single-round transcription. After 10 min of incubation at 37°C, Mfd (250 nM final) was added to activate stalled RNAP displacement and translocation. Samples were collected at different timepoints, combined with excess EDTA to stop ATPase activity, and placed on ice before gel loading. The assays were conducted without and with the presence of VO43- (20 mM final).
 
-## nMS analysis
+### nMS analysis
 
 For the EC + Mfd sample, 7 μM EC was incubated with 3.5 μM Mfd (2:1 molar ratio) in transcription buffer with 2 mM ATP for 1 min at RT. The nonvolatile buffer components, including ATP, needed to be removed prior to nMS analysis because these components can form nonspecific adductions on protein complexes and degrade spectral quality. The EC and EC + Mfd samples were then buffer-exchanged into nMS solution (500 mM ammonium acetate, pH 7.5, 0.01% Tween-20) using Zeba microspin desalting columns (Thermo Fisher Scientific) with a 40 kDa MWCO (Olinares et al., 2016).
 
 For nMS analysis, 2–3 µL of the buffer-exchanged sample was loaded into a gold-coated quartz emitter that was prepared in-house and then electrosprayed into an Exactive Plus EMR instrument (Thermo Fisher Scientific) with a static nanospray source (Olinares and Chait, 2019). The MS parameters used include: spray voltage, 1.2–1.3 kV; capillary temperature, 125°C; in-source dissociation, 10 V; S-lens RF level, 200; resolving power, 8750 at m/z of 200; AGC target, 1 × 106; maximum injection time, 200 ms; number of microscans, 5; injection flatapole, 8 V; interflatapole, 4 V; bent flatapole, 4 V; high energy collision dissociation (HCD), 180–200 V; ultrahigh vacuum pressure, 6–7 × 10−10 mbar; total number of scans, at least 100. Mass calibration in positive EMR mode was performed using cesium iodide. For data processing, the acquired MS spectra were visualized using Thermo Xcalibur Qual Browser (versions 3.0.63 and 4.2.47). MS spectra deconvolution was performed either manually or using the software UniDec versions 3.2 and 4.1 (Marty et al., 2015; Reid et al., 2019). The deconvolved spectra obtained from UniDec were plotted using the m/z software (Proteometrics LLC). Experimental masses were reported as the average mass ± standard deviation (S.D.) across all the calculated mass values within the observed charge state series. Mass accuracies were calculated as the percent difference between the measured and expected masses relative to the expected mass. The measured masses for the corresponding complexes (with mass accuracies reported in parentheses) include EC: 437,680 ± 20 Da (0.016%) for the EC only sample and EC + 1 Mfd: 570,360 ± 20 Da (0.03%), EC: 437,700 ± 20 Da (0.02%), α2β subcomplex: 223,700 ± 3 Da (0.02%), and Mfd: 132,582 ± 8 Da (0.003%) for the EC sample incubated with Mg-ATP and Mfd.
 
-## Preparation of Mfd-EC Cryo-EM grids
+### Preparation of Mfd-EC Cryo-EM grids
 
 For cryo-EM grid preparation, ECs prepared as above were purified over a Superose 6 INCREASE gel filtration column (GE Healthcare Life Sciences) equilibrated with transcription buffer. ATP (2 mM) and twofold excess Mfd were added and incubated for 1 min before adding {3-([3-cholamidopropyl]dimethylammonio)−2-hydroxy-1-propanesulfonate} (CHAPSO; Anatrace) to a final concentration of 8 mM (Chen et al., 2019b). The final buffer condition for all the cryo-EM samples was the same as transcription buffer. C-flat holey carbon grids (CF-1.2/1.3-4Au, Protochips) were glow-discharged for 20 s prior to the application of 3.5 μL of the samples. Using a Vitrobot Mark IV (Thermo Fisher Scientific Electron Microscopy), grids were blotted and plunge-froze into liquid ethane with 100% chamber humidity at 22°C.
 
-## Cryo-EM data acquisition and processing
+### Cryo-EM data acquisition and processing
 
 For the cryo-EM structure determination of the Mfd-EC, two data sets were collected and combined (Figure S1). In each data collection, grids were imaged using a 300 keV Titan Krios (Thermo Fisher Scientific Electron Microscopy) equipped with a K2 Summit direct electron detector (Gatan, Pleasanton, CA). Images were recorded with Serial EM (Mastronarde, 2005) with a pixel size of 1.3 Å over a defocus range of −0.8 to −2.4 μm. Movies were recorded in super-resolution mode at eight electrons/physical pixel/s in dose-fractionation mode with subframes of 0.2 s over a 10 s exposure (50 frames) to give a total dose of 80 electrons/physical pixel or 47.3 electrons/Å2. Dose-fractionated movies were gain-normalized, drift-corrected, binned, summed, and dose-weighted using MotionCor2 (Zheng et al., 2017). The contrast transfer function was estimated for each summed image using Gctf (Zhang, 2016). Gautomatch (developed by K. Zhang, MRC Laboratory of Molecular Biology, Cambridge, UK, http://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch) was used to pick particles without templates. Picked particles from each data set were extracted from the dose-weighted images in RELION (Scheres, 2012) using a box size of 300 pixels and subjected to 2D classification in RELION to exclude false particles. The selected particles from 2D classification were transferred to CryoSPARC (Punjani et al., 2017) to perform heterogeneous refinement with multiple 3D references to separate Mfd-EC complexes from isolated EC and Mfd particles. For the heterogeneous refinement, cryo-EM maps of Eco EC [EMD-8585; (Kang et al., 2017)], Mfd-EC, and isolated Mfd (the latter two generated from a subset of the data by ab initio reconstruction) were used as templates (each low-pass filtered to 30 Å resolution). The class representing Mfd-EC was further refined in CryoSPARC homogeneous refinement, yielding 3.9 Å and 3.6 Å nominal resolution maps from the first and second data sets, respectively. The refined particles from the first data set were transferred to RELION for 3D auto-refinement, CTF refinement, Bayesian polishing, and 3D autorefinement before being combined with the particles from the second data set. The resulting 594,435 particles were 3D autorefined in RELION for a consensus refinement, yielding a 3.86 Å nominal resolution map. A second round of CTF refinement, Bayesian polishing, and 3D autorefinement improved the resolution to 3.64 Å. By using focused classification around the Mfd region, eight classes were generated with distinct Mfd conformations. Among the eight classes, two classes were discarded because they could not be refined further. Four of the classes were further refined using RELION 3D autorefinement to yield C1, C3, C4, and C5 (Figure 2—figure supplement 1). The remaining two classes were further sorted using partial signal subtraction (Bai et al., 2015) of the region outside of Mfd and the RNAP βprotrusion, then classifying these subtracted particles using a mask encompassing Mfd and the RNAP β-protrusion density, resulting in L1, L2, and C2 (Figure 2—figure supplement 1). In total, the seven resulting maps showed well-defined EC density but variable quality maps for the Mfd component, indicating that the alignments were dominated by the EC portion of the complex. Therefore, to better resolve the density around Mfd, particles from each class were imported into cryoSPARC and refined using cryoSPARC Non-uniform Refinement (Punjani et al., 2019). Using the resulting maps, masks around Mfd were generated for cryoSPARC Local Refinement. The fulcrum points (alignment centers) for each of these masks were defined using 'Volume Tracer' in UCSF Chimera (Pettersen et al., 2004). Each class from the Non-uniform Refinement was subjected to Local Refinement using their respective Mfd mask and fulcrum point. The local refinements resulted in better resolved Mfd density for each class with the following nominal resolutions in this region: L1 (atp, 6.6 Å), L2 (adp, 6.7 Å), C1 (ATP, 5.2 Å), C2 (ADP, 3.5 Å), C3 (adp, 4.4 Å), C4 (ADP, 3.8 Å), and C5 (ADP, 3.3 Å).
 
 The EC-centered cryo-EM maps from RELION and the Mfd-centered maps from cryoSPARC were combined using the PHENIX combine_focused_maps command (Adams et al., 2010). The procedure that gave the highest quality maps was as follows: coordinates were rigid body refined into each map. For the combination step: (1) for the EC-centered coordinates, the occupancies of the EC-RNAP, the EC nucleic acids, and Mfd-D4(RID) were set to 1.0, while the occupancies for the rest of Mfd and the upstream duplex DNA were set to 0; (2) for the Mfd-centered coordinates, the occupancies of the entire Mfd, the RNAP βprotrusion, and the upstream duplex DNA were set to 1.0, while the rest of the EC was set to occupancy = 0. Thus, in the combined maps, the EC density and EC nucleic acids came from the EC-centered cryo-EM maps, while Mfd and the upstream duplex DNA density came from the Mfd-centered maps, and the density for the Mfd-D4(RID) and the RNAP β-protrusion were weighted according to the combine_focused_maps algorithm. These combined maps were the most interpretable over the entirety of each complex and were therefore used for building, refinement, statistics reporting (Supplementary file 1s), and deposition in the Electron Microscopy Data Bank (EMDB). RELION 3D auto-refinement and post-processing of the polished particles resulted in structures with the following nominal resolutions: L1 (atp, 4.1 Å), L2 (adp, 4.0 Å), C1 (ATP, 3.9 Å), C2 (ADP, 3.9 Å), C3 (adp, 3.2 Å), C4 (ADP, 3.6 Å), and C5 (ADP, 3.3 Å). Local resolution calculations were done using blocres and blocfilt from the Bsoft package (Cardone et al., 2013).
 
-## Model building and refinement
+### Model building and refinement
 
 For initial models of the complexes, the Eco EC structure (PDB ID 6ALF; Kang et al., 2017) was manually fit into the combined cryo-EM density maps using Chimera (Pettersen et al., 2004) and real-space refined using Phenix (Adams et al., 2010). The DNAs and Mfd domains [taken from 2EYQ (Deaconescu et al., 2006)] were mostly built de novo based on the density maps. For real-space refinement, rigid body refinement was followed by all-atom and B-factor refinement with Ramachandran and secondary structure restraints. Refined models were inspected and modified in Coot (Emsley and Cowtan, 2004).
 
-## Superimposition of structures and calculation of rmsds
+### Superimposition of structures and calculation of rmsds
 
 For the statistics presented in Supplementary files 3–5, α-carbons of the specified structural components were superimposed using the PyMOL align command (the resulting rmsd is listed in the 'align' column, with the number of α-carbon atoms used for the rmsd calculation listed underneath in parentheses). The rmsd for all of the α-carbon atoms was then determined using the PyMOL 'rms_cur' command (listed under the 'rms_cur' column).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The nMS spectra were visualized using Thermo Xcalibur Qual Browser (versions 3.0.63 and 4.2.27), deconvolved using UniDec versions 3.2 and 4.1 (Marty et al., 2015; Reid et al., 2019) and plotted using the m/z software (Proteometrics LLC, New York, NY). Experimental masses (Figure 1D) were reported as the average mass ± standard deviation across all the calculated mass values obtained within the observed charge state distribution.
 

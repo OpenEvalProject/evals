@@ -20,13 +20,23 @@
 
 ## Abstract
 
-10.7554/eLife.40037.001 Telomerase RNA (TR) provides the template for DNA repeat synthesis at telomeres and is essential for genome stability in continuously dividing cells. We mapped the RNA interactome of human TR (hTR) and identified a set of non-coding and coding hTR-interacting RNAs, including the histone 1C mRNA ( HIST1H1C ). Disruption of the hTR- HIST1H1C RNA association resulted in markedly increased telomere elongation without affecting telomerase enzymatic activity. Conversely, over-expression of HIST1H1C led to telomere attrition. By using a combination of mutations to disentangle the effects of histone 1 RNA synthesis, protein expression, and hTR interaction, we show that HIST1H1C RNA negatively regulates telomere length independently of its protein coding potential. Taken together, our data provide important insights into a surprisingly complex hTR-RNA interaction network and define an unexpected non-coding RNA role for HIST1H1C in regulating telomere length homeostasis, thus offering a glimpse into the mostly uncharted, vast space of non-canonical messenger RNA functions.
+Telomerase RNA (TR) provides the template for DNA repeat synthesis at telomeres and is essential for genome stability in continuously dividing cells. We mapped the RNA interactome of human TR (hTR) and identified a set of non-coding and coding hTR-interacting RNAs, including the histone 1C mRNA (HIST1H1C). Disruption of the hTR-HIST1H1C RNA association resulted in markedly increased telomere elongation without affecting telomerase enzymatic activity. Conversely, over-expression of HIST1H1C led to telomere attrition. By using a combination of mutations to disentangle the effects of histone 1 RNA synthesis, protein expression, and hTR interaction, we show that HIST1H1C RNA negatively regulates telomere length independently of its protein coding potential. Taken together, our data provide important insights into a surprisingly complex hTR-RNA interaction network and define an unexpected non-coding RNA role for HIST1H1C in regulating telomere length homeostasis, thus offering a glimpse into the mostly uncharted, vast space of non-canonical messenger RNA functions.
 
 ## Introduction
 
 Most human cells display progressive telomere shortening during cell divisions, ultimately resulting in replicative senescence or apoptosis (Harley et al., 1990; Maciejowski and de Lange, 2017). In the majority of cancer cells and in continuously dividing germ line cells, however, telomere erosion is mitigated by the action of telomerase – a specialized ribonucleoprotein (RNP) complex minimally composed of telomerase RNA (TR) and the telomerase reverse transcriptase (TERT) enzyme. Telomere homeostasis depends on the highly regulated co-ordination of telomerase RNP assembly, trafficking, and recruitment to telomeres during the S phase of the cell cycle (Schmidt and Cech, 2015).
 
 While all TRs contain a short internal template for telomeric DNA repeat synthesis (Greider and Blackburn, 1989), vertebrate TRs also possess an H/ACA box small Cajal body (CB)-specific RNA (scaRNA) domain (Jády et al., 2004; Mitchell et al., 1999a) (Figure 1A) that associates with the canonical H/ACA scaRNA-binding proteins (Nguyen et al., 2018), including the pseudouridine synthase dyskerin (Mitchell et al., 1999b) and the CB chaperone WDR79/TCAB1 (Tycowski et al., 2009; Venteicher et al., 2009). The H/ACA region is required for the correct trafficking, stability, and catalytically active conformation of hTR (Chen et al., 2018; Jády et al., 2004; Mitchell et al., 1999a; Zhu et al., 2004) but is considered non-functional as a pseudouridylation guide RNA (Meier, 2005).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of hTR sequence, domain organization and bait oligonucleotides (ODNs) used in this study. (B) List of top 12 high-confidence hTR interacting RNAs in VA13-hTR cells, ranked based on peak score (JAMM software) across hTR pull-downs. A full list is provided in Figure 1—source data 1. Predicted interaction sites in hTR for the top 12 RNAs are shown in panel A (blue lines; numbers indicate the rank of the transcript as shown in B). Details for these predicted interactions are provided in Figure 1—source data 2. (C) Overlap between hTR-interacting RNAs identified in VA13-hTR and HeLa cells. A list of interacting partners identified in both cell lines is shown next to the Venn diagram.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Translationally controlled tumor protein 1 (TPT1), (b) filamin A (FLNA), (c) interferon-induced transmembrane protein 3 (IFITM3). For each example: (A) UCSC genome browser view showing coverage of RAP-RNA[FA] RNA-seq. The y axis indicates reads per million. VA13: mock-transfected VA13 cells; VA13-hTR: U1-hTR transfected VA13 cells; pd: pull-down. The blow-up of the enriched region (in a and b) shows the position for the qRT-PCR amplicon and the predicted hTR-binding site(s). mRNA-hTR interaction(s) predicted using RNAup are shown below the panel. (B) Location of the predicted RNA-RNA interaction(s) in hTR. (C) qRT-PCR of target enrichment upon hTR pull-down from VA13 cells transiently transfected with the hTR expression constructs indicated. The corresponding hTR mutants are described in Figure 3. Error bars represent s.d. Representative results from two-to-three independent transfections are shown. Paired two-tailed t-tests, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Interestingly, while hTERT expression is silenced in most human somatic cells, hTR is broadly expressed in normal tissues (Feng et al., 1995). In addition, hTR levels are in excess over telomerase RNP complexes in cancer cells (Xi and Cech, 2014), indicating that a pool of TERT-free hTR might assemble into alternate RNP complexes both in normal and transformed cells. Indeed, role(s) independent of telomerase activity – with as yet poorly defined mechanism(s) – have been demonstrated for hTR in cell survival and in the regulation of apoptosis (Gazzaniga and Blackburn, 2014; Kedde et al., 2006; Li et al., 2004). The cell protective function of hTR was mapped to the 3’ H/ACA domain and was shown to be negatively regulated by the formation of catalytically active telomerase RNP complexes (Gazzaniga and Blackburn, 2014).
 
@@ -36,7 +46,7 @@ While the protein composition (Nguyen et al., 2018) and chromatin-binding sites 
 
 ## Results
 
-## Mapping of the hTR-RNA interactome
+### Mapping of the hTR-RNA interactome
 
 We mapped the hTR-RNA interaction network by formaldehyde cross-linking followed by RNA antisense purification and RNA sequencing (RAP-RNA[FA] RNA-seq) (Engreitz et al., 2014; the experimental pipeline is shown in Figure 1—figure supplement 1). Since telomerase RNP formation is expected to compete with (some of) the alternative functions of hTR (Gazzaniga and Blackburn, 2014; Xi and Cech, 2014) and can also influence hTR trafficking (Tomlinson et al., 2008), we used both hTR-/hTERT- VA13 cells transiently transfected by hTR (VA13-hTR) and hTR+/hTERT+ HeLa cells for hTR antisense purification (Figure 1—figure supplement 1). Control RAP-RNA[FA] pull-down of U2 small nuclear RNA (snRNA), as well as mock pull-down from untransfected (hTR-negative) VA13 cells was carried out in parallel. RNA fragments co-purifying with hTR were identified by determining their enrichment in pull-down vs input samples. To build a high-confidence set of hTR interacting RNA molecules, only highly (>4 fold) enriched, reproducibly identified peaks were considered further, resulting in 80 RNA species in VA13-hTR cells. Unfiltered peak calling results produced by the JAMM universal peak finder (Ibrahim et al., 2015) are provided in Supplementary file 1; the top 12 hTR interacting RNAs are shown in Figure 1B, while the full list is provided as Figure 1—source data 1.
 
@@ -50,7 +60,7 @@ Although RAP-RNA[FA] can detect both indirect interactions and direct RNA-RNA in
 
 Confirming the validity of our approach, the stringently filtered dataset included HSP90AB1, the only hTR-interacting mRNA identified by the transcriptome-wide LIGR-seq method (Sharma et al., 2016). Furthermore, enrichment of selected candidates, such as TPT1, FLNA, and IFITM3 was successfully verified by qRT-PCR on RAP samples (Figure 1—figure supplement 2).
 
-## HIST1H1C RNA specifically interacts with hTR
+### HIST1H1C RNA specifically interacts with hTR
 
 We identified the HIST1H1C transcript, coding for the H1.2 linker histone subtype, as one of the most highly enriched RNAs upon hTR pull-down both in VA13-hTR and HeLa cells. Cell-cycle-regulated histone transcripts are processed in histone locus bodies (HLBs), nuclear structures formed at the sites of histone gene transcription and concentrating factors involved in histone pre-mRNA recognition and maturation (Nizami et al., 2010). Although HLBs are highly dynamic in space and time, they generally co-localize with CBs, operationally defined as coilin-positive nuclear foci (Bongiorno-Borbone et al., 2008; Machyna et al., 2014; Nizami et al., 2010). Interestingly, hTR has also been shown to accumulate in CBs throughout the cell cycle (Jády et al., 2004; Zhu et al., 2004), and to be recruited to telomeres specifically in S phase (Jády et al., 2006; Tomlinson et al., 2006).
 
@@ -58,19 +68,39 @@ Based on their shared subnuclear localization, cell-cycle-specific regulation, a
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig3-v2.jpg)
 
-**Figure 3.:** HIST1H1C RNA specifically interacts with hTR.(A) UCSC genome browser view showing coverage of RAP-RNA[FA] RNA-seq over the entire HIST1 gene cluster on chromosome 6 (y axis indicates reads per million). VA13: mock-transfected VA13 cells; VA13-hTR: U1-hTR transfected VA13 cells; pd: pull-down. The position of the HIST1H1C and HIST1H1B genes and their maximum enrichment upon hTR pull-down is shown. (B) Blow-up of the HIST1H1C region, showing specific enrichment upon hTR pull-down. Control pull-downs [for U2 snRNA (U2 pd) and hTR pull-down without formaldehyde cross-linking (non-XL)] are also shown. (C) Predicted base-pairing between the TRIAGE sequence and the P6b stem-loop of hTR. The conservation of the TRIAGE sequence in the five replication-dependent somatic linker histone subtypes (HIST1H1A-E) is shown below. (D) Mutations were introduced into hTR (as shown at the bottom), disrupting complementarity with TRIAGE (SW: swap mutant; RS: rescue mutant). Relative expression levels of hTR variants (uppermost panel) and pull-down efficiencies of various transcripts (all other panels) were measured by qRT-PCR upon transient transfections of VA13 cells with the indicated hTR variants and RAP-RNA[FA] using hTR-specific antisense oligonucleotides. The results demonstrate the specific pull-down of HIST1H1C by wild-type hTR. HIST1H4D and ribosomal RNA were used as negative controls. nd: not detectable. The positions of the regions amplified for HIST1H1C are illustrated in panel B. Error bars represent s.d. Representative results from two biological replicates, measured in triplicates, are shown. Paired two-tailed t-tests, ***p<0.001.
+**Figure 3.:** (A) UCSC genome browser view showing coverage of RAP-RNA[FA] RNA-seq over the entire HIST1 gene cluster on chromosome 6 (y axis indicates reads per million). VA13: mock-transfected VA13 cells; VA13-hTR: U1-hTR transfected VA13 cells; pd: pull-down. The position of the HIST1H1C and HIST1H1B genes and their maximum enrichment upon hTR pull-down is shown. (B) Blow-up of the HIST1H1C region, showing specific enrichment upon hTR pull-down. Control pull-downs [for U2 snRNA (U2 pd) and hTR pull-down without formaldehyde cross-linking (non-XL)] are also shown. (C) Predicted base-pairing between the TRIAGE sequence and the P6b stem-loop of hTR. The conservation of the TRIAGE sequence in the five replication-dependent somatic linker histone subtypes (HIST1H1A-E) is shown below. (D) Mutations were introduced into hTR (as shown at the bottom), disrupting complementarity with TRIAGE (SW: swap mutant; RS: rescue mutant). Relative expression levels of hTR variants (uppermost panel) and pull-down efficiencies of various transcripts (all other panels) were measured by qRT-PCR upon transient transfections of VA13 cells with the indicated hTR variants and RAP-RNA[FA] using hTR-specific antisense oligonucleotides. The results demonstrate the specific pull-down of HIST1H1C by wild-type hTR. HIST1H4D and ribosomal RNA were used as negative controls. nd: not detectable. The positions of the regions amplified for HIST1H1C are illustrated in panel B. Error bars represent s.d. Representative results from two biological replicates, measured in triplicates, are shown. Paired two-tailed t-tests, ***p<0.001.
 
 In order to verify this RNA-RNA interaction, various mutations disrupting the TRIAGE-P6b complementarity were introduced in hTR (Figure 3D). For the ΔP6b variant, the entire terminal stem-loop of the P6b region of hTR was deleted, while for the SW variant we swapped the opposing strands of the terminal stem structure (Figure 3D). The RS (‘rescue’) variant of hTR was designed to disrupt base-pairing with the TRIAGE sequence while introducing complementarity to another region of HIST1H1C (nts 91–106; shown in Figure 3B). All hTR variants could be expressed in VA13 cells at levels similar to wt hTR (Figure 3D uppermost panel), and all could be purified by RAP-RNA[FA] with similar efficiencies (Figure 3D). Importantly, enrichment of HIST1H1C upon hTR pull-down was abrogated in all P6b mutants (Figure 3D), including hTR-RS, indicating that sequence complementarity is necessary but not sufficient for the specific RNA-RNA interaction between the P6b stem-loop and the HIST1H1C transcript. In agreement with this, HIST1H1B mRNA contains the exact TRIAGE sequence (Figure 3C) but was enriched upon hTR pull-down to a much lesser extent than its HIST1H1C paralog (Figure 3A), suggesting that features besides base complementarity (e.g. secondary structure of the mRNA, specific protein binding etc.) determine the interaction.
 
-## Mutations in hTR disrupting the interaction with HIST1H1C RNA lead to increased telomere elongation
+### Mutations in hTR disrupting the interaction with HIST1H1C RNA lead to increased telomere elongation
 
 The TRIAGE-P6b interaction could lead to changes in the metabolism, activity, or localization of either HIST1H1C RNA or hTR. As H1.2 protein levels were not significantly affected by hTR or variant hTR expression (Figure 4—figure supplement 1), we determined whether the HIST1H1C-hTR interaction might play a role in the regulation of telomere homeostasis. Three independent, polyclonal HT1080 cell lines were established stably expressing each hTR variant. Endogenous hTR levels in HT1080 cells are more limiting in telomere elongation compared to other widely used cancer cell lines, enabling the characterization of mutant hTRs (Cristofari and Lingner, 2006). U1 promoter alone (pBS-U1 pr) was used as a negative control, while over-expression of wild-type hTR served as a positive control. We also included the well-characterized m1 hTR mutant (containing the G414C mutation), which fails to accumulate in CBs and causes reduced telomere lengthening in HT1080 cells (Cristofari et al., 2007; Jády et al., 2004). All hTR variants could be stably over-expressed, resulting in ~3–4 fold hTR expression over endogenous levels (Figure 4A). Telomerase activity was measured at day 32 post-transfection using the qTRAP (real-time quantitative telomeric repeat amplification protocol) assay. While deletion of the terminal stem-loop of the P6b region strongly reduced telomerase activity, hTR variants that conserved the overall RNA secondary structure (SW and RS) showed telomerase activities comparable to wild-type hTR, indicating that neither the sequence of the P6b stem-loop nor its interaction with HIST1H1C RNA are required for catalytically active telomerase RNP assembly (Figure 4B). This is in agreement with a previous report, where substitution of the terminal stem-loop for the GAAA tetraloop sequence showed no influence on telomerase enzymatic activity (Mitchell and Collins, 2000). The enzymatic activity associated with hTR variants measured in cell lysates reflects the assembly of telomerase RNPs but – owing to potential trafficking defects – does not necessarily correlate with productive telomere elongation, as previously shown for hTR m1 (Cristofari et al., 2007).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative hTR expression levels and (B) relative telomerase activities in stably transfected polyclonal HT1080 cell lines expressing the indicated hTR variants, measured at day 32 post-transfection. Error bars represent s.d. Representative results of two-to-three biological replicates, measured in triplicates, are shown. (C) Cells were counted at each passage to determine average population doubling (PD) times for the HT1080 cell lines (n = 3 for each condition) stably expressing the indicated hTR variant. (D) Southern blot for TRF analysis at day 32 post-transfection. MTLs for the individual cell lines are indicated above the panel, while the average MTL for each hTR variant is shown by dashed lines. Statistical significance was calculated by paired two-tailed t-tests, *p<0.05, **p<0.01. Southern blots for the other time points are provided in Figure 4—figure supplement 2. (E) MTL changes over time for HT1080 cells stably expressing the indicated hTR variants. Average MTL values from three independent cell lines are shown. The intercept at day 0 for the trendlines was set at the MTL of the untransfected cell population.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Western blot showing H1.2 expression and β-actin loading control in polyclonal HT1080 cell lines (at 32 days post-transfection) stably expressing the indicated hTR constructs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Mean telomere length (MTL) for the individual cell lines is indicated above the panels, while the average MTL for each hTR variant is shown by dashed lines.
+
 In order to examine whether hTR association with HIST1H1C RNA affects telomere maintenance, we carried out telomere restriction fragment (TRF) length analysis to follow the mean telomere length (MTL) over time in HT1080 cell lines stably expressing the hTR variants. Expression of hTR variants did not change the cell growth characteristics (Figure 4C). As expected, wild-type hTR over-expression resulted in a steady increase in MTL (averaging ~82 nt per population doubling), while U1 promoter alone, the catalytically compromised ΔP6 hTR variant or m1 hTR expression did not result in significant telomere elongation (Figure 4D and E, and Figure 4—figure supplement 2). Surprisingly, cell lines over-expressing either the SW or RS variant displayed markedly increased telomere lengthening compared to wild-type hTR (Figure 4D and E, and Figure 4—figure supplement 2), suggesting that the identified HIST1H1C-hTR interaction might interfere with the telomeric activity of the telomerase RNP.
 
-## HIST1H1C regulates telomere length as a non-coding RNA
+### HIST1H1C regulates telomere length as a non-coding RNA
 
 If the TRIAGE-P6b interaction inhibits telomere elongation, over-expression of the HIST1H1C transcript, independently of its coding potential, could have a negative impact on telomere length maintenance. To examine this possibility, we cloned the HIST1H1C coding region, flanked by an N-terminal 3xFLAG tag and the endogenous 5’ and 3’ regulatory sequences imparting S-phase-specific expression and polyA-independent processing (Osley, 1991) into an expression vector (wtHIST1H1C). Several silent codon changes were introduced in the TRIAGE region, disrupting complementarity to the P6b stem-loop sequence of hTR (Figure 5A), but maintaining its coding potential (silentHIST1H1C). Three independent, polyclonal HT1080 cell lines were established stably expressing each HIST1H1C construct. We achieved moderate over-expression of 3xFLAG-H1.2 compared to endogenous H1.2 levels, with similar expression levels for 3xFLAG-H1.2 encoded by the wild-type HIST1H1C sequence and the silentHIST1H1C variant (Figure 5B). While cancer cells maintain a remarkable telomere length equilibrium over a long period ex vivo (Figure 4D and E), over-expression of wtHIST1H1C resulted in telomere attrition and accumulation of short telomeres in all three cell lines after 34 population doublings (Figure 5C). Importantly, silentHIST1H1C expression had no effect on the MTL (Figure 5C), demonstrating that the presence of the TRIAGE sequence is responsible for the observed phenotype, possibly regulating telomere length via the HIST1H1C-hTR RNA-RNA interaction, independently of H1.2 protein expression. HIST1H1C over-expression had no influence on telomerase enzymatic activity measured in cell lysates (Figure 5E), suggesting that the TRIAGE sequence is affecting a step following telomerase RNP assembly.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of HIST1H1C constructs. The TRIAGE sequence and silent mutations introduced in it are shown. FL indicates the N-terminal 3xFLAG tag. (B) Western blot showing 3xFLAG-H1.2 expression in stable polyclonal HT1080 cell lines. The same membrane was sequentially probed with anti-H1.2, anti-actin, and anti-FLAG antibodies. A doublet is detected with the anti-FLAG antibody, probably due to a phosphorylated H1.2 form that is not recognized by the anti-H1.2 antibody. (C) Southern blots for TRF analysis at days 13 (left panel) and 34 (right panel) post-transfection. MTLs for the individual cell lines are indicated above the panel, while the average MTL with the various HIST1H1C constructs is shown by dashed lines. Statistical significance was calculated by paired two-tailed t-tests, *p<0.05. (D) Western blot showing the loss of 3xFLAG-H1.2 expression in wtHIST1H1C-expressing polyclonal cell lines 2 and 3 (lanes 5 and 6) upon long-term culture (120 days post-transfection), and activation of the DNA damage marker p53 in cell line 1 (lane 4). (E) Relative telomerase activities upon transient transfection of HT1080 cells with the indicated combinations of hTR- (U1 pr and wt hTR) and histone 1C (mock, wtHIST1H1C, and silentHIST1H1C)-expressing constructs, measured 3 days post-transfection. Error bars represent s.d. Representative results of two biological replicates, measured in triplicates, are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic representation of compensatory mutations introduced into hTR, resulting in the P6b_sil hTR variant, with the complementarity to silentHIST1H1C re-established. (B) Relative hTR expression levels (measured by qRT-PCR) and relative telomerase activities (measured by RQ-TRAP) in HT1080 cells transiently transfected with the indicated hTR variants, measured 72 hr after transfection. Error bars represent s.d., n = 2, measured in triplicates. Heat-inactivated wild-type hTR-transfected cell lysates and CHAPS buffer were used as negative controls for the RQ-TRAP assay. nd: not detectable. (C) Various combinations of hTR- and HIST1H1C-expressing constructs – as indicated on the right – were transiently transfected into VA13 cells, followed by RAP-RNA[FA] using hTR-specific biotinylated antisense ODNs. Relative hTR expression levels, as well as pull-down efficiencies for hTR, HIST1H1C, and ribosomal RNA (as a negative control) were measured by qRT-PCR. Error bars represent s.d. Representative results from two biological replicates, measured in triplicates, are shown. nd: not detectable. (D) HIST1H1C qRT-PCR products for input (INP) and RAP pull-down (PD) samples were digested by NciI restriction enzyme that cleaves the wtHIST1H1C but not the silentHIST1H1C amplicon. Wild-type hTR specifically pulled down (either endogenous or exogenous) wild-type HIST1H1C, while the P6b_sil variant only pulled down silentHIST1H1C.
 
 To test whether HIST1H1C exerts its effect via a direct RNA-RNA interaction, we carried out a rescue experiment by introducing mutations in the P6b stem-loop of hTR, restoring complementarity to the mutated TRIAGE sequence in silentHIST1H1C (P6b_sil hTR variant; Figure 5—figure supplement 1A). P6b_sil hTR could be expressed both in HT1080 and VA13 cells, albeit at levels ~ 4–5 fold lower than wt hTR (Figure 5—figure supplement 1B and C). We attribute this difference to a potential reduction in hTR stability due to the disruption of RNA secondary structure. In addition to its defective cellular accumulation, the P6b_sil variant also lost telomerase enzymatic activity (Figure 5—figure supplement 1B), similarly to the ΔP6b variant with misfolded P6b stem-loop structure.
 
@@ -80,13 +110,33 @@ Continued telomere attrition in human cells is expected to eventually result in 
 
 To investigate the long-term consequences of HIST1H1C RNA over-expression on telomere homeostasis and cell physiology, we followed two complementary strategies. First, we generated 24 clonal HT1080 cell lines stably expressing the wtHIST1H1C construct. Although most clones expressed detectable levels of 3xFLAG-H1.2 protein (Figure 6—figure supplement 1A), only 12 out of 24 clones showed >20% upregulation in their HIST1H1C RNA levels (Figure 6A) relative to the baseline expression measured in mock-transfected cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig6-v2.jpg)
+
+**Figure 6.:** (A) HIST1H1C mRNA over-expression levels relative to mock-transfected cells in clonal HT1080 cell lines stably transfected with wtHIST1H1C, measured by qRT-PCR at 10 weeks post-transfection. Values were normalized to HIST1H3B RNA levels. Cell lines were divided into two groups, each comprising 12 members: clones with <20% over-expression relative to mock (in black; ‘HIST1H1C baseline’ group) and clones with >20% over-expression (in red and orange; ‘HIST1H1C high’ group). Clone G5, showing the highest HIST1H1C RNA expression levels, is emphasized by orange colour. The same colour code is applied throughout panels B-E and in Figure 6—figure supplement 1. Error bars represent s.d., n = 2, with triplicates each. (B) Telomere length of clonal HT1080 cell lines was assessed by the TeSLA method (Lai et al., 2017) at 10 weeks post-transfection. Cumulative telomere frequency (calculated as the ratio of telomeres below a certain length) is shown for the individual clonal cell lines (thin dashed lines) and for the mean of the ‘HIST1H1C baseline’ and ‘HIST1H1C high’ groups (thick lines). TeSLA blots and the associated telomere length values for the individual clones are provided in Figure 6—figure supplement 2. (C) Elevated HIST1H1C mRNA expression levels correlate with lower mean telomere length values (left panel) and with an increase in the ratio of short telomeres (arbitrarily defined as telomeres below 1.6 kb; right panel). Each data point corresponds to a clonal HT1080 cell line stably expressing wtHIST1H1C. Statistical significance was calculated by paired two-tailed t-tests, *p<0.05. TeSLA blots and telomere length values for the individual clones are provided in Figure 6—figure supplement 2. Note that telomere length measurements with the TeSLA method give shorter MTL values than the TRF method utilized in Figures 4 and 5, and the absolute values obtained with these distinct methods are not directly comparable (Lai et al., 2017). (D) Elevated HIST1H1C mRNA expression levels correlate with increased cellular senescence, as measured by β-galactosidase staining. Cellular senescence in individual HT1080 clonal cell lines stably expressing wtHIST1H1C, measured at 8 and 10 weeks post-transfection, is illustrated by the diameter of the bubbles, plotted as a function of hTR expression levels (expressed relative to the average value in the 24 clonal cell lines) and HIST1H1C mRNA over-expression levels (relative to mock-transfected cells). (E) Statistical significance between the ‘HIST1H1C baseline’ and ‘HIST1H1C high’ groups was calculated by paired two-tailed t-tests, **p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blots showing endogenous H1.2 and 3xFLAG-H1.2 expression in individual cell lines. (B) β-galactosidase staining was carried out in triplicates on clonal HT1080 cell lines as described in the Materials and methods. The total number of cells counted for each clone is indicated below the chart. (C) hTR expression levels measured by qRT-PCR, expressed relative to the average value in the 24 clonal cell lines. The color code corresponds to the ‘HIST1H1C baseline’ and ‘HIST1H1C high’ groups described in Figure 6A.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** TeSLA (four parallel PCR reactions for each cell line) was carried out on the 24 clonal HT1080 cell lines at 10 weeks post-transfection. Southern blots for the ‘HIST1H1C high’ (A) and ‘HIST1H1C baseline’ clones (B) are shown, together with telomere length values measured by the TeSLA-QUANT software (Lai et al., 2017). Yellow lines indicate the MTL of individual cell lines, while the red line shows the threshold set for short telomeres. L indicates the molecular weight marker.
+
 To obtain more sensitive telomere length measurements, we took advantage of the recently developed Telomere Shortest Length Assay (TeSLA) method that facilitates the identification of critically shortened telomeres (Lai et al., 2017). HIST1H1C over-expression in the clonal cell lines was generally associated with shorter MTL and a higher frequency of short telomeres (Figure 6B and C, red and orange lines and circles and Figure 6—figure supplement 2). In agreement with the accumulation of shorter telomeres, we observed an increase in cells undergoing cellular senescence, as measured by β-galactosidase staining at two time points (8 weeks and 10 weeks post-transfection) (Figure 6D and E, red and orange circles). Interestingly, hTR expression did not correlate with cellular senescence (Figure 6D and Figure 6—figure supplement 1), suggesting that clonal variations in hTR levels are not limiting for the maintenance of the shortest telomeres in this setting.
 
 Secondly, we introduced a frameshift at the N-terminus of the HIST1H1C ORF (Figure 7A), to characterize the consequences of elevated wtHIST1H1C or silentHIST1H1C RNA expression levels without the potential confounding effects of H1.2 protein over-expression (Figure 7B). Three independent, polyclonal HT1080 cell lines were established stably expressing each frameshifted (FS) HIST1H1C variant. All cell lines were found to over-express HIST1H1C mRNA in a sustained manner (Figure 7C). Although there was no statistically significant difference in MTL between the FS_HIST1H1C and FS_silentHIST1H1C-transfected cells at 1 month post-transfection (p=0.62), by 3 months, all cell lines over-expressing FS_HIST1H1C (with wild-type TRIAGE sequence) had significantly shorter telomeres (on average by ~700 nt, p=0.011) than the FS_silentHIST1H1C-transfected controls (Figure 7D and Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of HIST1H1C expression constructs containing a two-nucleotide frameshift achieved by insertion of two adenines following the 3xFLAG tag (FL). The frameshift results in several stop codons in the HIST1H1C ORF (red lines), and completely abolishes 3xFLAG-H1.2 expression, assessed by western blotting (B). (C) HIST1H1C mRNA expression levels in polyclonal HT1080 cell lines stably transfected with the indicated constructs were measured 3 months post-transfection by qRT-PCR. Error bars represent s.d., n = 2, with triplicates each. (D) Telomere length of the polyclonal HT1080 cell lines was measured by the TeSLA method at 3 months post-transfection. Cumulative telomere frequency (calculated as the ratio of telomeres below a certain length) is shown for the individual cell lines (thin dashed lines) and as average for the three biological replicates (thick lines). TeSLA blots and the associated telomere length values for the individual cell lines are provided in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/40037/elife-40037-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** TeSLA (four parallel reactions for each cell line) was carried out at one and three months post-transfection. Southern blots, together with telomere length values measured by the TeSLA-QUANT software (Lai et al., 2017) are shown. Yellow lines indicate the MTL of individual cell lines, while the red line shows the threshold set for short telomeres. L indicates the molecular weight marker.
+
 Taken together, our experiments with polyclonal and clonal HT1080 cell lines demonstrate a role for HIST1H1C RNA in telomere length homeostasis and cell survival. Since the TRIAGE-P6b interaction does not affect telomerase enzymatic activity (Figures 4B and 5E), HIST1H1C RNA might act at a step following telomerase RNP assembly, possibly as a telomerase sponge preventing the recruitment of the enzymatically active telomerase complex to telomeres.
 
-## The hTR-RNA interactome and extra-telomeric functions of hTR
+### The hTR-RNA interactome and extra-telomeric functions of hTR
 
 In addition to HIST1H1C, we identified a multitude of hTR-interacting RNA partners that might provide interesting new insights into the extra-telomeric function(s) of hTR. Strikingly, functional annotation analysis (Huang et al., 2009a; Huang et al., 2009b) showed that 35 out of 77 (45.5%) hTR-interacting mRNAs identified in VA13-hTR cells code for proteins involved in cytoskeleton organization and/or the regulation of apoptosis (Figure 8), thus providing a direct link – mediated by an intricate RNA-RNA interaction network – between hTR expression and cell survival (Gazzaniga and Blackburn, 2014). Prominent hTR-associated mRNAs coding for apoptotic factors include the translationally controlled tumor protein (TCTP/TPT1) and filamin A (FLNA) RNAs (Figure 1—figure supplement 2), ranked sixth and first in our screen, respectively (Figure 1B). The two proteins interact with each other and are important pleiotropic regulators of DNA repair, apoptosis, tumorigenesis, and cytoskeleton organization (Amson et al., 2013; Zhang et al., 2012). Notably, TPT1 interacts with and regulates various apoptotic factors, including Bcl-XL (Thébault et al., 2016; Yang et al., 2005) and Mcl1 (Liu et al., 2005; Zhang et al., 2002), two regulators of the Bim apoptotic pathway, which was reported to be inhibited by hTR expression (Gazzaniga and Blackburn, 2014).
 
@@ -120,11 +170,378 @@ Modulating telomerase activity and/or telomere elongation is an attractive and a
 
 ## Materials and methods
 
-## Oligonucleotides
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers or link</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WI38 VA13-2RA</td>
+      <td>Daniela Rhodes lab (Nanyang Technological University)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT1080</td>
+      <td>Peter Dröge lab (Nanyang Technological University)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Peter Dröge lab (Nanyang Technological University)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H1.2 antibody [EPR12691]</td>
+      <td>Abcam</td>
+      <td>Cat#ab181977</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal anti-FLAG M2 antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F1804; RRID:AB_262044</td>
+      <td>WB: 1:1500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (DO-1) antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc126; RRID: AB_628082</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Monoclonal Anti-beta- Actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2228, RRID:AB_476697</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Polyclonal Anti-Mouse</td>
+      <td>Dako</td>
+      <td>Cat# P0447, RRID:AB_2617137</td>
+      <td>WB: 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Polyclonal Anti-Rabbit</td>
+      <td>Dako</td>
+      <td>Cat# P0448, RRID:AB_2617138</td>
+      <td>WB: 1:10000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pU1-hTR(451)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS-U1-hTR</td>
+      <td>Cristofari and Lingner (2006)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS-U1-hTR-puro</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPGK-puro-3xFLAG-wtHIST1H1C</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPGK-puro-3xFLAG-silentHIST1H1C</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>NEBNext Multiplex Oligos for Illumina (Index Primers Set 1)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E7335S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TeloTAGGG Telomere Length Assay kit</td>
+      <td>Roche</td>
+      <td>Cat#12209136001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#69506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Senescence β-Galactosidase Staining Kit</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#9860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiNova SYBR Green RT-PCR Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#208154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ThermoScript RT-PCR System</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#11146–024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mycoplasma PCR Detection Kit</td>
+      <td>Applied Biological Materials</td>
+      <td>Cat#G238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etoposide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E1383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce 16% Formaldehyde (w/v), Methanol-free</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#28906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine albumin fraction V</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#15260037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads MyOne Silane</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#37002D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agencourt AMPure XP</td>
+      <td>Beckman Coulter</td>
+      <td>Cat#A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ribonuclease H</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#18021014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNase inhibitor, murine</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0314S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FastAP Thermosensitive Alkaline Phosphatase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#EF0651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 polynucleotide kinase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0201S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Turbo DNase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#AM2239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Exonuclease I</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0293S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RQ1 RNase-free DNase</td>
+      <td>Promega</td>
+      <td>Cat#M6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ExoSAP-IT PCR Product Cleanup Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#78200.200 .UL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NEBNext Ultra II Q5 Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0544S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR Green PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4364344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FailSafe enzyme mix</td>
+      <td>Lucigen</td>
+      <td>Cat# FSE5101K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2 v2.0.3</td>
+      <td>Kim et al., 2015</td>
+      <td>https://ccb.jhu.edu/software/hisat2/index.shtml RRID:SCR_015530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BamTools</td>
+      <td>Barnett et al., 2011</td>
+      <td>https://github.com/pezmaster31/bamtools RRID:SCR_015987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JAMM peak finder v1.0.7.5</td>
+      <td>Ibrahim et al., 2015</td>
+      <td>https://github.com/mahmoudibrahim/JAMM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNAup</td>
+      <td>Gruber et al., 2008</td>
+      <td>http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAup.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circos</td>
+      <td>Krzywinski et al., 2009</td>
+      <td>http://circos.ca/ RRID:SCR_011798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Heatmapper</td>
+      <td>Babicki et al., 2016</td>
+      <td>http://heatmapper.ca/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID 6.7</td>
+      <td>Huang et al., 2009a, Huang et al., 2009b</td>
+      <td>https://david-d.ncifcrf.gov/ RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TeSLA-QUANT</td>
+      <td>Lai et al., 2017</td>
+      <td>Available as supplementary item in Lai et al., 2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNA-sequencing data</td>
+      <td>This paper</td>
+      <td>SRP123633 https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP123633</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Oligonucleotides
 
 Biotinylated ssODNs used for RNA pull-downs were purchased from Sigma-Aldrich. All other oligonucleotides were from Integrated DNA Technologies (IDT).
 
-## Plasmids
+### Plasmids
 
 U1 promoter sequence and the 451-nt long human telomerase RNA region were amplified from HT1080 genomic DNA and assembled into the pU1-hTR(451) plasmid. Initial RAP-RNA[FA] experiments in VA13 cells were carried out using transient pU1-hTR(451) transfections, achieving hTR expression levels comparable to endogenous amounts in HeLa cells [we estimated hTR expression between ~700 and ~1800 molecules/cell, based on qRT-PCR measurements relative to HeLa cells [~1150 hTR molecules/cell (Xi and Cech, 2014)]. The pBS-U1-hTR plasmid (Cristofari and Lingner, 2006) contains the U1-hTR cassette and additional downstream sequences from the TERC locus, and can yield ~4–6 fold higher hTR expression levels than pU1-hTR(451). All experiments involving hTR variants were carried out using the pBS-U1-hTR plasmid and its derivatives. Mutations were introduced in pBS-U1-hTR using standard overlap extension PCR protocols. Deleting the 451-nt hTR RNA region resulted in the pBS-U1 pr plasmid, while deleting the terminal stem-loop of the P6b region gave rise to pBS-U1-hTR-ΔP6b. Substitutions of the P6b stem-loop (pBS-U1-hTR-SW, pBS-U1-hTR-RS, and pBS-U1-hTR-P6b_sil) are shown in Figure 3D and in Figure 5—figure supplement 1. The m1 hTR variant (G414C mutation) was originally described in Jády et al. (2004). For stable transfections, a puromycin expression cassette was inserted in the EcoRV site of pBS-U1-hTR and its variants, resulting in pBS-U1-hTR-puro plasmids.
 
@@ -132,57 +549,203 @@ The HIST1H1C genome region, containing 735 nucleotides upstream of the HIST1H1C 
 
 All plasmid constructs were verified by sequencing.
 
-## Cell culture and transfections
+### Cell culture and transfections
 
 Telomerase-negative WI38 VA13-2RA ALT cells were cultured in minimum essential medium (MEM) supplemented with 1 mM sodium pyruvate, 2 mM L-glutamine, 1x MEM NEAA, 10% fetal calf serum, 100 U/ml penicillin, and 100 μg/ml streptomycin. HT1080 and HeLa cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 2 mM L-glutamine, 10% fetal calf serum, 100 U/ml penicillin, and 100 μg/ml streptomycin. All cell culture reagents were purchased from Thermo Fisher Scientific. All cell lines used in this study were authenticated by short tandem repeat (STR) genotyping (1st BASE Human Cell Line Authentication Service, Singapore). The absence of mycoplasma contamination was routinely verified by the Mycoplasma PCR detection kit (Applied Biological Materials).
 
 Transfections were carried out using Lipofectamine 2000 reagent (Thermo Fisher Scientific), according to the manufacturer’s instructions. For the establishment of stably transfected polyclonal or clonal HT1080 cell lines, transfections were carried out using linearized plasmids, and selection with 3 μg/ml puromycin dihydrochloride (Thermo Fisher Scientific) was initiated 48 hr after transfection.
 
-## RNA antisense purification with formaldehyde cross-linking (RAP-RNA[FA])
+### RNA antisense purification with formaldehyde cross-linking (RAP-RNA[FA])
 
 We performed RAP-RNA[FA] essentially as described in (Engreitz et al., 2014) and in the detailed protocol available at http://www.lncrna-test.caltech.edu/protocols/RAP_Complete_Protocol.pdf, with minor modifications.
 
-## Formaldehyde cross-linking and cell lysis
+#### Formaldehyde cross-linking and cell lysis
 
 100 million VA13 or HeLa cells were rinsed in phosphate buffered saline (PBS) and cross-linked with 2% methanol-free formaldehyde (Thermo Fisher Scientific) at 37°C for 10 min, followed by quenching with 500 mM final concentration of glycine at 37°C for 5 min. Cells were rinsed three times with ice-cold PBS and collected in ice-cold scraping buffer (1x PBS, 0.5% bovine albumin fraction V). Cell pellets were collected by centrifugation (1000 g at 4°C for 5 min), and washed again in ice-cold scraping buffer. Aliquots of cell pellets were flash frozen in liquid nitrogen and stored at −80°C until further use.
 
 Pellets from ~20 million cells were lysed in 1 ml lysis buffer (10 mM HEPES pH 7.5, 20 mM KCl, 1.5 mM MgCl2, 0.5 mM EDTA, 1 mM TCEP [tris(2-carboxyethyl)phosphine], 0.5 mM PMSF (phenylmethylsulfonyl fluoride), and 0.1% NP-40) on ice for 10 min, followed by 20 dounces in a 2 ml glass dounce homogenizer. Nuclei were enriched by centrifugation at 4°C, 3300 g for 7 min, and resuspended in 1 ml GuSCN hybridization buffer (20 mM Tris-Cl pH 7.5, 7 mM EDTA, 3 mM EGTA, 150 mM LiCl, 1% NP-40, 0.2% N-lauroylsarcosine, 0.1% sodium deoxycholate, 3M guanidine thyocianate, and 2.5 mM TCEP). RNAs were fragmented using the Bioruptor sonication system (Diagenode) at high-intensity setting for a total of 10 min (30 s ON – 30 s OFF) for VA13 cells and 15 min for HeLa cells, resulting in RNA fragments of ~150–300 nucleotides. Lysates were cleared by centrifugation at 4°C, 16,000 g for 10 min.
 
-## RNA antisense purification
+#### RNA antisense purification
 
 Equimolar mixes of three biotinylated ssDNA ODNs (Sigma-Aldrich) were used for both hTR [hTR_pd1 – 5’-[Biotin]TCGCCCCCGAGAGACCCGCGGCTGACAGAGCCCAACTCTTCGCGGTGGCA (complementary to position 291–340 of hTR); hTR_pd2 – 5’-[Biotin]CCCCGGGAGGGGCGAACGGGCCAGCAGCTGACATTTTTTGTTTGCTCTAG (complementary to position 160–209 of hTR); and hTR_pd3 – 5’-[Biotin]GCGAGAAAAACAGCGCGCGGGGAGCAAAAGCACGGCGCCTACGCCCTTCT (complementary to position 59–108 of hTR)] and U2 snRNA [U2_pd1 – 5’-[Biotin]GGGTGCACCGTTCCTGGAGGTACTGCAATACCAGGTCGATGCGTGGAGTG (complementary to position 139–188 of human U2 snRNA); U2_pd2 – 5’-[Biotin]GACGGAGCAAGCTCCTATTCCATCTCCCTGCTCCAAAAATCCATTTAATA (complementary to position 89–138 of human U2 snRNA); and U2_pd3 – 5’-[Biotin]TATTGTCCTCGGATAGAGGACGTATCAGATATTAAACTGATAAGAACAGA (complementary to position 39–88 of human U2 snRNA)] pull-downs.
 
 To diminish non-specific background, lysates from ~5 million cells were first pre-cleared with 100 μl of Dynabeads MyOne Streptavidin C1 beads (Thermo Fisher Scientific). 1% of the pre-cleared lysate was set aside for RNA sequencing or qRT-PCR as input RNA sample. 100 pmol of ssDNA ODN mix was added to the pre-cleared lysate and incubated at 37°C for 3 hr with constant shaking at 1200 rpm. 350 μl Dynabeads MyOne Streptavidin C1 beads were washed and resuspended in ¼ bead volume GuSCN hybridization buffer, added to the lysate-ssDNA probe mix, and incubated for a further 30 min at 37°C. Subsequently, beads were washed six times in 1x bead volume GuSCN wash buffer (20 mM Tris-Cl pH 7.5, 10 mM EDTA, 1% NP-40, 0.2% N-lauroylsarcosine, 0.1% sodium deoxycholate, 3M guanidine thyocianate, and 2.5 mM TCEP), with 5 min incubations at 45°C between washes. Finally, beads were washed twice in RNase H elution buffer (50 mM Tris-Cl pH 7.5, 75 mM NaCl, 3 mM MgCl2, 0.125% N-lauroylsarcosine, 0.025% sodium deoxycholate, and 2.5 mM TCEP), and bound RNAs were eluted by incubation at 37°C for 30 min in RNase H elution buffer containing 10U RNase H (Thermo Fisher Scientific, cat no. 18021–014).
 
-## Reversal of cross-links and RNA purification
+#### Reversal of cross-links and RNA purification
 
 RNA pull-down and input samples were incubated for 1 hr at 65°C in NLS digestion buffer (20 mM Tris-Cl pH 7.5, 10 mM EDTA, 2% N-lauroylsarcosine, 2.5 mM TCEP, 500 mM NaCl, and 250 μg proteinase K) to remove proteins and reverse the formaldehyde cross-links, followed by nucleic acid purification using Dynabeads MyOne Silane beads (Thermo Fisher Scientific). DNA was digested at 37°C for 30 min in a buffer containing 10 mM Tris-Cl pH 7.5, 1 mM MgCl2, 120 μM CaCl2, 10 mM KCl, 1 mM DTT, 0.002% Triton X-100, 40U murine RNase inhibitor (New England Biolabs), 3U FastAP Thermosensitive Alkaline Phosphatase (Thermo Fisher Scientific), 30U T4 polynucleotide kinase (New England Biolabs), 2U Turbo DNase (Thermo Fisher Scientific), and 20U Exonuclease I (New England Biolabs), followed by RNA purification using Dynabeads MyOne Silane beads.
 
-## RNA sequencing library preparation
+#### RNA sequencing library preparation
 
 20 pmol RiL-19 RNA adapter (5’-[phosph]rArGrArUrCrGrGrArArGrArGrCrGrUrCrGrUrG[3ddC]) (Engreitz et al., 2014) was ligated to the purified RNAs by incubation in ligation mix [1x T4 RNA ligase reaction 1 buffer, 9% DMSO, 1 mM ATP, 20% PEG8000 (New England Biolabs), 12U murine RNase inhibitor, and 40U T4 RNA ligase 1 (New England Biolabs)] for 1.5 hr at room temperature, followed by RNA purification using Dynabeads MyOne Silane beads. Reverse transcription was carried out using the ThermoScript RT-PCR system (Thermo Fisher Scientific) and AR17 primer (5’- ACACGACGCTCTTCCGA) (Engreitz et al., 2014), according to the manufacturer’s instructions. Excess RT primers were removed by the ExoSAP-IT PCR product cleanup reagent (Thermo Fisher Scientific). Remaining ssDNA probes were removed by incubating the samples with Dynabeads MyOne Streptavidin C1 beads at 60°C for 15 min with shaking at 1200 rpm in C1 binding buffer (10 mM Tris-Cl pH 7.5, 250 mM LiCl, 20 mM EDTA, 0.1% Triton X-100). Before the second adapter ligation, RNAs were digested by incubation in 100 mM NaOH at 70°C for 10 min, followed by neutralization by acetic acid and cDNA purification using Dynabeads MyOne Silane beads. 40 pmol 3Tr3 DNA adapter (5’-[phosph]AGATCGGAAGAGCACACGTCTG[3ddC]) (Engreitz et al., 2014) was ligated to the purified cDNAs by incubation in ligation mix (1x T4 RNA ligase reaction 1 buffer, 4% DMSO, 1 mM ATP, 24% PEG8000, and 50U T4 RNA ligase 1) overnight at room temperature, followed by nucleic acid purification using Dynabeads MyOne Silane beads. Samples were enriched by PCR using NEBNext Ultra II Q5 master mix (New England Biolabs) with NEBNext Multiplex Oligos for Illumina (Index Primers Set 1) (New England Biolabs). PCR conditions were as follows: 98°C for 30 s, 4 cycles of (98°C for 10 s – 67°C for 30 s – 72°C for 30 s), and a variable number of cycles of (98°C for 10 s – 72°C for 30 s). Input samples required 4–6 cycles, pull-down samples 10–12 cycles, and negative controls 14–16 cycles at this stage to obtain sufficient DNA quantities for sequencing. PCR products were purified by Agencourt AMPure XP beads (Beckman Coulter), quantified using the Qubit dsDNA HS Assay kit (Thermo Fisher Scientific), and submitted for Illumina sequencing.
 
-## RNA-sequencing and bioinformatic analysis
+### RNA-sequencing and bioinformatic analysis
 
 Illumina HiSeq RNA-sequencing on multiplexed samples was carried out to obtain ~20 million 100-nt paired-end reads per sample. Adaptor sequences and low quality bases were trimmed from raw sequencing reads using cutadapt (Martin, 2011). Reads were aligned to the human genome (GRCh38) using HISAT2 (v2.0.3) (Kim et al., 2015) with default parameter settings. Bam files were filtered to remove PCR duplicates, reads derived from transcription of the hTR expression plasmid, mitochondrial transcripts, and ribosomal RNA sequences (Engreitz et al., 2014). Peaks enriched in the pull-down over input samples were identified using the JAMM universal peak finder (v1.0.7.5) (Ibrahim et al., 2015) with the following parameters: -m narrow -r peak. To increase the stringency of our analysis, peaks were further filtered by requiring a minimum peak score of 50,000 (obtained using the JAMM software), a minimum 4-fold enrichment (defined as normalized reads in the pull-down sample/normalized reads in the input sample) over the peak region, and a minimum number of 20 reads supporting the peak. Regions enriched in any of the control pull-downs from hTR-negative, mock-transfected VA13 cells were excluded from further analysis. Peaks passing these filtering criteria, together with the unfiltered output files, are listed in Supplementary file 1. Enriched transcripts were ranked based on peak scores obtained with the JAMM software (Ibrahim et al., 2015). Putative hTR-target RNA interactions were predicted with the RNAup software (Gruber et al., 2008). Functional annotation analysis was carried out using DAVID 6.7 (Huang et al., 2009a; Huang et al., 2009b), using all human genes as background.
 
-## qRT-PCR
+### qRT-PCR
 
 For qRT-PCRs verifying the enrichment of selected transcripts upon hTR pull-down, RNAs were purified as described in the RAP-RNA[FA] section. For measuring cellular RNA expression levels, total cellular RNA was extracted using Trizol reagent (Thermo Fisher Scientific) and treated by RQ1 DNase (Promega). qRT-PCR reactions were carried out using QuantiNova SYBR Green RT-PCR kit (Qiagen), according to the manufacturer’s protocol. Amplification conditions were as described in Zhang et al. (2015), followed by melting curve analysis using the Bio-Rad CFX96 qPCR instrument. Serial dilutions of positive samples were included on each plate for each target RNA to obtain standard curves for relative quantification.
 
 qRT-PCR primer sequences are listed in Table 1.
 
-## Telomere restriction fragment analysis (TRF)
+**Table 1.**
+ qRT-PCR primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5’ to 3’)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hTR_fw</td>
+      <td>GAAGAGGAACGGAGCGAGTC</td>
+      <td>Xi and Cech (2014)</td>
+    </tr>
+    <tr>
+      <td>hTR_rev</td>
+      <td>ATGTGTGAGCCGAGTCCTG</td>
+      <td>Xi and Cech (2014)</td>
+    </tr>
+    <tr>
+      <td>GAPDH_fw</td>
+      <td>ACAGCAACAGGGTGGTGGAC</td>
+      <td>Xi and Cech (2014)</td>
+    </tr>
+    <tr>
+      <td>GAPDH_rev</td>
+      <td>GACCATTGCTGGGGCTGGTG</td>
+      <td>Xi and Cech (2014)</td>
+    </tr>
+    <tr>
+      <td>28S_rRNA_fw</td>
+      <td>GTGTCAGAAAAGTTACCACA</td>
+      <td>Rocchi et al. (2014)</td>
+    </tr>
+    <tr>
+      <td>28S_rRNA_rev</td>
+      <td>ATTATGCTGAGTGATATCCC</td>
+      <td>Rocchi et al. (2014)</td>
+    </tr>
+    <tr>
+      <td>HIST1H1C(272-386)_fw</td>
+      <td>GCACTCTGGTGCAAACGAAAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H1C(272-386)_rev</td>
+      <td>TTAGGTTTGGTTCCGCCCG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H1C(53-145)_fw</td>
+      <td>CCCCTGTAAAGAAGAAGGCGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H1C(53-145)_rev</td>
+      <td>CCACAGCCTTGGTGATGAGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H4D_fw</td>
+      <td>CCAAGCGTCACCGTAAGGTAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H4D_rev</td>
+      <td>AAACTTTCAGCACTCCGCGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H3B_fw</td>
+      <td>AGACAGCTCGGAAATCCACC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIST1H3B_rev</td>
+      <td>AACGGTGAGGCTTTTTCACG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA2_fw</td>
+      <td>TTTAGGGAGGGAGAGCGGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA2_rev</td>
+      <td>CTCACGCGTCCACTCACAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA11_fw</td>
+      <td>GTCCTGGCCTATTTTTCTGCTCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA11_rev</td>
+      <td>CGGCCCTCCTAAACTGAGAGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA12_fw</td>
+      <td>TGGGGACTACAGATGAGATCTGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scaRNA12_rev</td>
+      <td>GATCCAAGGTTGCGCTCAGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TPT1_fw</td>
+      <td>GGCCTTTTCCGCCCGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TPT1_rev</td>
+      <td>CTAGCTTAGCACGAGCCTGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLNA_fw</td>
+      <td>CGGTGATCACTGTGGACACTA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FLNA_rev</td>
+      <td>ATTCTCCACCACGTCCACATC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IFITM3_fw</td>
+      <td>GAGCTCTGCCCATGACCTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IFITM3_rev</td>
+      <td>GCTGATACAGGACTCGGCTC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Telomere restriction fragment analysis (TRF)
 
 Telomere restriction fragments were analyzed using the TeloTAGGG Telomere Length Assay kit (Roche). Briefly, cells were harvested by trypsinization, washed in PBS and collected by centrifugation at 400 g for 4 min. Genomic DNA was isolated using DNeasy Blood and Tissue Kit (Qiagen), digested with HinfI and RsaI restriction enzymes (New England Biolabs) and separated by gel electrophoresis either on 0.8% agarose gels at 50V overnight in 1X TBE buffer or (to resolve elongated telomeres at later time points) on 1% megabase agarose gels (Bio-Rad) using a CHEF DRII equipment (Bio-Rad) under the following conditions: 120° field angle, 5 to 30 s switch times, 5 V/cm and 14°C for 14 hr in 1X TAE. Following the resolution of DNA fragments, DNA was transferred to a positively charged nylon membrane (Roche) by Southern blotting and hybridized with a digoxigenin-labelled telomeric probe. Membranes were exposed to X-ray film (Carestream) and developed in X-OMAT 2000 Processor (Kodak). Mean telomere lengths were calculated as described in Kimura et al. (2010).
 
-## Telomere shortest length assay (TeSLA)
+### Telomere shortest length assay (TeSLA)
 
 The TeSLA procedure was carried out as described in Lai et al. (2017), with minor modifications. Oligonucleotide sequences for the ligation and amplification reactions were published in Lai et al. (2017).
 
 Briefly, 50 ng of genomic DNA was ligated with TeSLA-T oligonucleotides and then digested with CviAII, BfaI, NdeI, and MseI restriction enzymes (New England Biolabs), followed by shrimp alkaline phosphatase (New England Biolabs) treatment. The digested DNA was ligated with double-stranded TeSLA adapters, and 30 pg of the ligated DNA was subsequently used for long-range PCR amplifications. Amplification reactions were carried out in 25 μl volume, using 2.5 units of FailSafe Enzyme Mix (Lucigen) with FailSafe buffer H and 0.25 μM primers (AP and TeSLA-TP). After the initial melt at 94°C for 2 min, 25 PCR cycles were carried out (94°C for 15 s, 60°C for 30 s, and 72°C for 15 min). Amplified PCR products were resolved on a 1.2% agarose gel at 50V overnight in 1X TBE buffer. Southern blotting and telomere signal detection was performed using the TeloTAGGG Telomere Length Assay kit (Roche), as described for the TRF assay. The TeSLA-QUANT software was used for image quantification and statistical analysis, as described in Lai et al. (2017).
 
-## Real-time quantitative telomeric repeat amplification protocol (RQ-TRAP)
+### Real-time quantitative telomeric repeat amplification protocol (RQ-TRAP)
 
 Cells were trypsinized, washed once in ice-cold PBS, and resuspended at 106 cells/ml in CHAPS lysis buffer containing 400 mM NaCl (10 mM Tris-Cl pH 7.5, 400 mM NaCl, 1 mM MgCl2, 1 mM EGTA, 0.5% 3-[(3-cholamidopropyl)dimethylammonio]−1-propanesulfonate (CHAPS), 10% glycerol, 1x complete protease inhibitor cocktail without EDTA (Roche), 5 mM β-mercaptoethanol), as described in Cristofari et al. (2007). Following incubation for 30 min on ice, cell debris was removed by centrifugation at 4°C for 10 min at 12,000 g. The supernatant was aliquoted, flash frozen in liquid nitrogen and stored at −80°C until further use.
 
@@ -190,18 +753,18 @@ Protein concentration of the extracts was determined using the Bradford assay (B
 
 Using the Bio-Rad CFX96 qPCR instrument, samples were incubated for 30 min at 30°C, for 10 min at 95°C, and amplified in 40 PCR cycles with 15 s at 95°C and 60 s at 60°C. Relative telomerase activities were determined using a standard curve from 5-fold serial dilutions of wild-type hTR-transfected HT1080 cells. Samples were also serially diluted to verify that the measurements were carried out in the linear range of the assay. qTRAP measurements were carried out in triplicates and repeated at least twice for each sample. Heat-inactivated wild-type hTR-transfected HT1080 cell lysates and CHAPS buffer were used as negative controls, verifying that the amplification products were due to telomerase activity.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed by sonication in ice-cold RIPA buffer containing 1x Protease Inhibitor Cocktail (Roche). Proteins were then separated by SDS-PAGE and transferred to 0.2 µm PVDF membranes (Bio-Rad). Membranes were blocked with Superblock T20 (TBS) blocking buffer (Thermo Fisher Scientific) and probed with primary [anti-Histone H1.2 (Abcam, ab181977, 1:2000 dilution); anti-FLAG M2 (Sigma, F1804, 1:1500 dilution), or anti-beta-actin (Sigma, A2228, 1:5000 dilution)] and secondary [(polyclonal goat anti-rabbit (Dako, P0448, 1:10,000 dilution) or polyclonal goat anti-mouse (Dako, P0447, 1:10,000 dilution)] antibodies or HRP-conjugated p53 antibody (DO1 – sc126, Santa Cruz Biotechnology, 1:1000 dilution). Reactive bands were visualized with Immobilon western chemiluminescent HRP substrate (Millipore) in a luminescence imager (LAS4000, Fujifilm).
 
-## Senescence-associated-β-galactosidase staining
+### Senescence-associated-β-galactosidase staining
 
 Clonal HT1080 cell lines stably expressing exogenous wtHIST1H1C were seeded in 6-well plates and cultured for 4–5 days prior to staining. Cells were fixed and stained according to the manufacturer’s protocol (Senescence β-Galactosidase Staining Kit, Cell Signaling #9860). Stained cells were imaged with an inverted microscope (Olympus, CKX41) with PixeLINK colour megapixel firewire camera (PL-A662). The percentage of SA-β-gal positive cells were determined by manually counting the positive cells across four randomly selected microscope frames and then normalized to the total number of cells. Staining was performed in triplicates between 8 (1 sample) and 10 weeks (two samples) post-transfection, and cell counts were pooled for the analysis. HT1080 cells treated with 10 µM of the topoisomerase type 2 inhibitor Etoposide (Sigma) for 24 hr followed by 24 hr recovery served as positive control. Untransfected HT1080 cells served as negative control.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed as described in the figure legend for each experiment. All data are presented as mean ± s.d., unless otherwise noted in the legends. All data shown are representative of two or more independent experiments, unless otherwise indicated.
 
-## Data availability
+### Data availability
 
 RNA-seq data that support the findings of this study have been deposited in the NCBI Sequence Read Archive (SRA) under the accession code SRP123633.

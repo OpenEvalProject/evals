@@ -29,33 +29,33 @@
 
 ### Affiliations
 
-1. https://ror.org/04xfq0f34 Institute for Molecular Cardiovascular Research (IMCAR), RWTH Aachen University Aachen Germany
-2. https://ror.org/04xfq0f34 Aachen-Maastricht Institute for CardioRenal Disease (AMICARE), RWTH Aachen University Aachen Germany
-3. https://ror.org/02jz4aj89 Department of Pathology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University Maastricht Netherlands
-4. https://ror.org/05591te55 Institute for Cardiovascular Prevention (IPEK), Ludwig-Maximilians-Universität München Munich Germany
-5. https://ror.org/03ypbx660 Department of Rheumatology and Shanghai Institute of Rheumatology, Renji Shanghai China
-6. https://ror.org/02gm5zw39 Department of Medicine III, University Hospital Aachen Aachen Germany
-7. https://ror.org/012p63287 Department of Pharmaceutical Technology and Biopharmacy, Groningen Research Institute of Pharmacy, University of Groningen Groningen Netherlands
-8. https://ror.org/03t4gr691 Department of Medical Biochemistry, Amsterdam Cardiovascular Sciences: Atherosclerosis & Ischemic Syndrome; Amsterdam Infection and Immunity: Inflammatory diseases; Amsterdam UMC location University of Amsterdam Amsterdam Netherlands
-9. https://ror.org/02jz4aj89 Department of Surgery, NUTRIM, School of Nutrition and Translational Research in Metabolism, Maastricht University Maastricht Netherlands
-10. https://ror.org/05n3x4p02 Department of Laboratory Medicine, Medical University Vienna Vienna Austria
-11. https://ror.org/04mz5ra38 Department of Gastroenterology, Hepatology and Transplant Medicine, Medical Faculty, University of Duisburg Essen Germany
-12. https://ror.org/01jdpyv68 Department of Medicine II, Saarland University Medical Center, Saarland University Homburg Germany
-13. https://ror.org/031t5w623 DZHK (German Center for Cardiovascular Research), Partner Site Munich Heart Alliance Munich Germany
-14. https://ror.org/02jz4aj89 Department of Biochemistry, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University Maastricht Netherlands
-15. https://ror.org/025z3z560 Munich Cluster for Systems Neurology (SyNergy) Munich Germany
+1. Institute for Molecular Cardiovascular Research (IMCAR), RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+2. Aachen-Maastricht Institute for CardioRenal Disease (AMICARE), RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+3. Department of Pathology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+4. Institute for Cardiovascular Prevention (IPEK), Ludwig-Maximilians-Universität München Munich Germany ([ROR:05591te55](https://ror.org/05591te55))
+5. Department of Rheumatology and Shanghai Institute of Rheumatology, Renji Shanghai China ([ROR:03ypbx660](https://ror.org/03ypbx660))
+6. Department of Medicine III, University Hospital Aachen Aachen Germany ([ROR:02gm5zw39](https://ror.org/02gm5zw39))
+7. Department of Pharmaceutical Technology and Biopharmacy, Groningen Research Institute of Pharmacy, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+8. Department of Medical Biochemistry, Amsterdam Cardiovascular Sciences: Atherosclerosis & Ischemic Syndrome; Amsterdam Infection and Immunity: Inflammatory diseases; Amsterdam UMC location University of Amsterdam Amsterdam Netherlands ([ROR:03t4gr691](https://ror.org/03t4gr691))
+9. Department of Surgery, NUTRIM, School of Nutrition and Translational Research in Metabolism, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+10. Department of Laboratory Medicine, Medical University Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
+11. Department of Gastroenterology, Hepatology and Transplant Medicine, Medical Faculty, University of Duisburg Essen Germany ([ROR:04mz5ra38](https://ror.org/04mz5ra38))
+12. Department of Medicine II, Saarland University Medical Center, Saarland University Homburg Germany ([ROR:01jdpyv68](https://ror.org/01jdpyv68))
+13. DZHK (German Center for Cardiovascular Research), Partner Site Munich Heart Alliance Munich Germany ([ROR:031t5w623](https://ror.org/031t5w623))
+14. Department of Biochemistry, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+15. Munich Cluster for Systems Neurology (SyNergy) Munich Germany ([ROR:025z3z560](https://ror.org/025z3z560))
 16. Cluster for Nucleic Acid Therapeutics Munich (CNATM) Munich Germany
-17. https://ror.org/02jz4aj89 Department of Genetics and Cell Biology, School of Nutrition and Translational Research in Metabolism (NUTRIM), University of Maastricht Maastricht Netherlands
-18. https://ror.org/01q9sj412 Swiss Cardiovascular Center, Division of Angiology, Inselspital, Bern University Hospital, University of Bern Bern Switzerland
-19. https://ror.org/0186h8060 DWI – Leibniz Institute for Interactive Materials Aachen Germany
-20. https://ror.org/04xfq0f34 Institute of Technical and Macromolecular Chemistry, RWTH Aachen University Aachen Germany
-21. https://ror.org/04xfq0f34 Department of Internal Medicine I - Cardiology, University Hospital, RWTH Aachen University Aachen Germany
+17. Department of Genetics and Cell Biology, School of Nutrition and Translational Research in Metabolism (NUTRIM), University of Maastricht Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+18. Swiss Cardiovascular Center, Division of Angiology, Inselspital, Bern University Hospital, University of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))
+19. DWI – Leibniz Institute for Interactive Materials Aachen Germany ([ROR:0186h8060](https://ror.org/0186h8060))
+20. Institute of Technical and Macromolecular Chemistry, RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
+21. Department of Internal Medicine I - Cardiology, University Hospital, RWTH Aachen University Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
 
 † Corresponding author
 
 ## Abstract
 
-The prevalence of metabolic dysfunction-associated steatohepatitis (MASH) is increasing, urging more research into the underlying mechanisms. MicroRNA-26b ( Mir26b ) might play a role in several MASH-related pathways. Therefore, we aimed to determine the role of Mir26b in MASH and its therapeutic potential using Mir26b mimic-loaded lipid nanoparticles (LNPs). Apoe , -/- Mir26b -/- Apoe mice, and respective controls were fed a Western-type diet to induce MASH. Plasma and liver samples were characterized regarding lipid metabolism, hepatic inflammation, and fibrosis. Additionally, -/- Lyz2 cre Mir26b fl/fl Mir26b mimic-loaded LNPs were injected in Apoe mice to rescue the phenotype and key results were validated in human precision-cut liver slices. Finally, kinase profiling was used to elucidate underlying mechanisms. -/- Mir26b -/- Apoe mice showed increased hepatic lipid levels, coinciding with increased expression of scavenger receptor a and platelet glycoprotein 4. Similar effects were found in mice lacking myeloid-specific -/- Mir26b -/- Mir26b . Additionally, hepatic TNF and IL-6 levels and amount of infiltrated macrophages were increased in Apoe mice. Moreover, -/- Mir26b -/- Tgfb expression was increased by the Mir26b deficiency, leading to more hepatic fibrosis. A murine treatment model with Mir26b mimic-loaded LNPs reduced hepatic lipids, rescuing the observed phenotype. Kinase profiling identified increased inflammatory signaling upon Mir26b deficiency, which was rescued by LNP treatment. Finally, Mir26b mimic-loaded LNPs also reduced inflammation in human precision-cut liver slices. Overall, our study demonstrates that the detrimental effects of Mir26b deficiency in MASH can be rescued by LNP treatment. This novel discovery leads to more insight into MASH development, opening doors to potential new treatment options using LNP technology.
+The prevalence of metabolic dysfunction-associated steatohepatitis (MASH) is increasing, urging more research into the underlying mechanisms. MicroRNA-26b (Mir26b) might play a role in several MASH-related pathways. Therefore, we aimed to determine the role of Mir26b in MASH and its therapeutic potential using Mir26b mimic-loaded lipid nanoparticles (LNPs). Apoe-/-Mir26b-/-, Apoe-/-Lyz2creMir26bfl/fl mice, and respective controls were fed a Western-type diet to induce MASH. Plasma and liver samples were characterized regarding lipid metabolism, hepatic inflammation, and fibrosis. Additionally, Mir26b mimic-loaded LNPs were injected in Apoe-/-Mir26b-/- mice to rescue the phenotype and key results were validated in human precision-cut liver slices. Finally, kinase profiling was used to elucidate underlying mechanisms. Apoe-/-Mir26b-/- mice showed increased hepatic lipid levels, coinciding with increased expression of scavenger receptor a and platelet glycoprotein 4. Similar effects were found in mice lacking myeloid-specific Mir26b. Additionally, hepatic TNF and IL-6 levels and amount of infiltrated macrophages were increased in Apoe-/-Mir26b-/- mice. Moreover, Tgfb expression was increased by the Mir26b deficiency, leading to more hepatic fibrosis. A murine treatment model with Mir26b mimic-loaded LNPs reduced hepatic lipids, rescuing the observed phenotype. Kinase profiling identified increased inflammatory signaling upon Mir26b deficiency, which was rescued by LNP treatment. Finally, Mir26b mimic-loaded LNPs also reduced inflammation in human precision-cut liver slices. Overall, our study demonstrates that the detrimental effects of Mir26b deficiency in MASH can be rescued by LNP treatment. This novel discovery leads to more insight into MASH development, opening doors to potential new treatment options using LNP technology.
 
 ## Introduction
 
@@ -69,63 +69,79 @@ The findings above show that Mir26b may play a role in the pathogenesis of MASH,
 
 ## Results
 
-## Mice deficient in Mir26b show increased hepatic lipid levels and an increased expression of hepatic lipid uptake receptors
+### Mice deficient in Mir26b show increased hepatic lipid levels and an increased expression of hepatic lipid uptake receptors
 
 To determine the role of Mir26b in hepatic lipid metabolism and MASH development, hepatic cholesterol and triglyceride levels were measured in Apoe-/- and Apoe-/-Mir26b-/- mice that were fed a 4-week WTD (Figure 1A). Total cholesterol and triglyceride levels were significantly increased in the livers of Apoe-/-Mir26b-/- mice compared to control mice (Figure 1B–C). This hepatic lipid effect was also confirmed by Oil-red-O staining, showing increased lipid accumulation in the livers of Apoe-/-Mir26b-/- mice (Figure 1D–E). Moreover, pathological scoring of the Oil-red-O staining unveiled that the Apoe-/-Mir26b-/- mice showed a clear tendency towards increased steatosis compared to controls, especially of macrovesicular steatosis (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig1-v1.jpg)
 
-**Figure 1.:** Mir26b in mice.(A) Schematic overview of the experimental approach. This panel was created using BioRender.com. (B–C) Hepatic total cholesterol (B) and triglyceride (C) measurements normalized against total protein. (D) Representative pictures of Oil-red-O staining of liver sections. Scale bar = 200 µm. (E) Quantification of the Oil-red-O staining. (F) Pathological scoring of the Oil-red-O staining. (G–J) Gene expression analysis of (G) Abca1, (H) Acat2, (I) Cd36, and (J) Msr1. (K–L) Western-blot analysis and quantification of (K) CD36 and (L) MSR1. Fold change is corrected for sex. *p<0.05; **p<0.01. n=4–7 animals per group.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic overview of the experimental approach. This panel was created using BioRender.com. (B–C) Hepatic total cholesterol (B) and triglyceride (C) measurements normalized against total protein. (D) Representative pictures of Oil-red-O staining of liver sections. Scale bar = 200 µm. (E) Quantification of the Oil-red-O staining. (F) Pathological scoring of the Oil-red-O staining. (G–J) Gene expression analysis of (G) Abca1, (H) Acat2, (I) Cd36, and (J) Msr1. (K–L) Western-blot analysis and quantification of (K) CD36 and (L) MSR1. Fold change is corrected for sex. *p<0.05; **p<0.01. n=4–7 animals per group.
 
 To elucidate possible mechanisms underlying the increased hepatic lipid levels, gene expression levels of key proteins involved in lipid metabolism were measured in liver tissues of Apoe-/- and Apoe-/-Mir26b-/- mice. Notably, a knockout of Mir26b did not affect the expression levels of ‘ATP binding cassette subfamily A member 1’ (Abca1) or ‘acetyl-CoA acetyltransferase 2’ (Acat2; Figure 1G–H). However, livers of Apoe-/-Mir26b-/- mice showed a clearly increased expression of scavenger receptor Cd36 (Figure 1I) and a striking twofold increase of the expression of macrophage scavenger receptor 1 (Msr1; Figure 1J). This could also be validated on protein level, by showing increased CD36 as well as MSR1 expression in livers of Apoe-/-Mir26b-/- mice (Figure 1K–L). Since these scavenger receptors are highly expressed on macrophages, we have evaluated the contribution of myeloid Mir26b to the observed hepatic lipid effects. Interestingly, mice that have a myeloid-specific lack of Mir26b also show increased hepatic cholesterol levels and lipid accumulation demonstrated by Oil-red-O staining, coinciding with an increased hepatic Cd36 expression (Figure 2), demonstrating that myeloid Mir26b plays a major, but not exclusive, role in the observed steatosis.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig2-v1.jpg)
 
-**Figure 2.:** Mir26b deficiency in mice.(A) Schematic overview of the experimental approach. This panel was created using BioRender.com. (B–C) Hepatic total cholesterol (B) and triglyceride (C) measurements normalized against total protein. (D) Representative pictures of Oil-red-O staining of liver sections. Scale bar = 200 µm. (E) Quantification of the Oil-red-O staining. (F–G) Gene expression analysis of (F) Cd36 and (G) Msr1. Fold change is corrected for sex. *p<0.05; **p<0.01. n=6–8 animals per group.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic overview of the experimental approach. This panel was created using BioRender.com. (B–C) Hepatic total cholesterol (B) and triglyceride (C) measurements normalized against total protein. (D) Representative pictures of Oil-red-O staining of liver sections. Scale bar = 200 µm. (E) Quantification of the Oil-red-O staining. (F–G) Gene expression analysis of (F) Cd36 and (G) Msr1. Fold change is corrected for sex. *p<0.05; **p<0.01. n=6–8 animals per group.
 
-## Livers of Mir26b knockout mice have higher levels of inflammatory cytokines and an increased number of infiltrating macrophages
+### Livers of Mir26b knockout mice have higher levels of inflammatory cytokines and an increased number of infiltrating macrophages
 
 Besides lipid accumulation, an increased inflammatory profile is a key characteristic of MASH (Peng et al., 2020). Therefore, we aimed to elucidate the role of Mir26b in hepatic inflammation. Hepatic protein levels of the pro-inflammatory cytokines IL-6 and TNF were significantly increased in Apoe-/-Mir26b-/- mice compared to controls (Figure 3A–B), while levels of the chemokines CCL2 and CXCL1 remained unchanged (Figure 3C–D). To further investigate the effects of the whole-body knockout on a cellular level, liver sections were stained to identify several key leukocyte subpopulations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig3-v1.jpg)
 
-**Figure 3.:** Apoe mice show elevated pro-inflammatory cytokine levels and an increased number of Mac-1-positive cells.-/-Mir26b-/-(A–D) Cytokine levels of (A) IL-6, (B) TNF, (C) CCL2, and (D) CXCL1 were measured in liver protein lysates. (E–H) Representative images and quantification of immunofluorescent stainings for (E) infiltrating macrophages and neutrophils (Mac-1), (F) neutrophils (Ly6G), (G) resident monocytes/macrophages (CD68), and (H) T-cells (CD3). Scale bar = 50 μm. *p<0.05; **p<0.01. n=6–7 animals per group.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–D) Cytokine levels of (A) IL-6, (B) TNF, (C) CCL2, and (D) CXCL1 were measured in liver protein lysates. (E–H) Representative images and quantification of immunofluorescent stainings for (E) infiltrating macrophages and neutrophils (Mac-1), (F) neutrophils (Ly6G), (G) resident monocytes/macrophages (CD68), and (H) T-cells (CD3). Scale bar = 50 μm. *p<0.05; **p<0.01. n=6–7 animals per group.
 
 Mac-1-positive cells were significantly increased in livers of mice lacking Mir26b, indicating a higher infiltration of macrophages and neutrophils (Figure 3E). To identify whether the increase of Mac-1-positive cells is due to macrophage or neutrophil infiltration we also determined the number of Ly6G-positive cells, which remained unchanged, suggesting that the increased number of Mac-1-positive cells was likely the result of an increase in the number of infiltrating macrophages rather than neutrophils (Figure 3F). Furthermore, the whole-body knockout of Mir26b only affected the number of infiltrating macrophages and not Kupffer cells, which are recognized as CD68-positive cells (Figure 3G). Furthermore, the number of CD3-positive cells did not differ between Apoe-/-Mir26b-/- mice and controls (Figure 3H), suggesting that Mir26b does not affect T-cell counts in the liver.
 
 Collectively, these results indicate that Mir26b plays a protective role in hepatic inflammation by influencing TNF and IL-6 levels and macrophage infiltration in the liver.
 
-## A knockout of Mir26b in mice results in increased hepatic fibrosis, which coincides with an increased expression of Tgfb
+### A knockout of Mir26b in mice results in increased hepatic fibrosis, which coincides with an increased expression of Tgfb
 
 Continued hepatic inflammation can cause fibrotic changes in the liver, which is another characteristic of MASH (Peng et al., 2020). As such, we also investigated the influence of Mir26b on hepatic fibrosis in mice. Collagen deposition in liver sections was determined by a Sirius-red staining, which showed that a knockout of Mir26b significantly exacerbated hepatic fibrosis (Figure 4A–B). This was further supported by the increased expression of ‘transforming growth factor β’ (Tgfb) in the livers of Apoe-/-Mir26b-/- mice compared to controls (Figure 4C). Another gene involved in liver fibrosis, that is ‘actin alpha 2’ (Acta2), trended towards an elevated expression in mice lacking Mir26b (Figure 4D). Lastly, a whole-body knockout of Mir26b resulted in an increased expression of ‘matrix metalloproteinase 13’ (Mmp13; Figure 4E). Overall, these results imply a protective role of Mir26b in liver fibrosis, which is linked to an altered expression of Tgfb.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig4-v1.jpg)
 
-**Figure 4.:** Apoe mice show increased hepatic fibrosis.-/-Mir26b-/-(A) Representative pictures of Sirius-red staining of liver sections. Scale bar = 100 µm. (B) Quantification of the Sirius-red staining. (C–E) Gene expression of (C) Tgfb, (D) Acta2, and (E) Mmp13. Fold change is corrected for sex. *p<0.05. n=6–7 animals per group.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Representative pictures of Sirius-red staining of liver sections. Scale bar = 100 µm. (B) Quantification of the Sirius-red staining. (C–E) Gene expression of (C) Tgfb, (D) Acta2, and (E) Mmp13. Fold change is corrected for sex. *p<0.05. n=6–7 animals per group.
 
-## Liver of Mir26b knockout mice show highly increased kinase activity related to inflammatory pathways
+### Liver of Mir26b knockout mice show highly increased kinase activity related to inflammatory pathways
 
 To elucidate the underlying mechanisms behind the effects of Mir26b on the liver, we have performed a kinase activity profiling, focusing on serine-threonine kinases (STK). In order to evaluate the differentially activated kinases, the degree of phosphorylation of peptides coated on STK arrays is determined. Liver lysates from Apoe-/-Mir26b-/- mice (KO) showed a strong and very distinct upregulation of peptide phosphorylation compared to liver lysates from Apoe-/- mice (WT; Figure 5A–B). Remarkably, 84 kinases were significantly more activated in liver lysates from Apoe-/-Mir26b-/- mice compared to controls (Figure 5C), many of which are involved in inflammatory pathways such as c-Jun-N-terminal kinases (JNKs), mitogen-activated protein kinases (MAPKs), and extracellular-signal, regulated kinases (ERKs). This was also further corroborated by pathway analysis (Figure 5D–E), showing enrichment in pathways related to inflammation (e.g. MAP kinase activation, TLR signaling) and angiogenesis (e.g. VEGF signaling). Combined, these results demonstrate that the lack of Mir26b increases kinase activity in the liver, particularly of kinases related to inflammatory pathways, which can thus be a plausible mechanism behind the hepatic effects observed in Mir26b-deficient mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig5-v1.jpg)
 
-**Figure 5.:** Mir26b results in an increased hepatic inflammatory kinase activity.(A) Principal component analysis (PCA) of phosphorylated peptides from STK array (n=4) of liver lysates from Apoe mice (KO) or -/-Mir26b-/-Apoe (WT) mice. (-/-B) Volcano plot visualizing fold change and p-value for phosphorylated peptides from STK array. Blue dots represent significantly altered phosphopeptides. (C) Heatmap of significantly changed kinases are ranked based on Median Final Score (cut-off value of 1.2), STK array performed on liver lysates from Apoe mice (KO) compared to -/-Mir26b-/-Apoe (WT) mice. Color corresponds to the Median Kinase Statistic, which represents effect size and directionality (red = increased activity in KO vs. WT mice). (-/-D) Enriched pathways based on STK array. (E) Network diagram of the pathway enrichment analysis.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Principal component analysis (PCA) of phosphorylated peptides from STK array (n=4) of liver lysates from Apoe-/-Mir26b-/- mice (KO) or Apoe-/- (WT) mice. (B) Volcano plot visualizing fold change and p-value for phosphorylated peptides from STK array. Blue dots represent significantly altered phosphopeptides. (C) Heatmap of significantly changed kinases are ranked based on Median Final Score (cut-off value of 1.2), STK array performed on liver lysates from Apoe-/-Mir26b-/- mice (KO) compared to Apoe-/- (WT) mice. Color corresponds to the Median Kinase Statistic, which represents effect size and directionality (red = increased activity in KO vs. WT mice). (D) Enriched pathways based on STK array. (E) Network diagram of the pathway enrichment analysis.
 
-## Lipid nanoparticles loaded with Mir26b mimics can partly rescue the MASH phenotype in whole-body Mir26b knockout mice
+### Lipid nanoparticles loaded with Mir26b mimics can partly rescue the MASH phenotype in whole-body Mir26b knockout mice
 
 Since the whole-body knockout mouse model demonstrated that Mir26b plays a role in MASH, we attempted to rescue the phenotype by injecting Apoe-/-Mir26b-/- mice on WTD with LNPs, which act as clinically and therapeutically relevant vehicles (Jeong et al., 2023), loaded with Mir26b mimics (mLNPs) and empty lipid nanoparticles (eLNPs) as control for 4 weeks (Figure 6A). These mLNPs overexpress the Mir26b level in the whole-body deficient mouse (Figure 6—figure supplement 1A–B), providing insight into the therapeutic potential of Mir26b. Injections with mLNPs lowered hepatic cholesterol levels compared to the vehicle control (Figure 6B), whilst triglyceride levels remained unaffected (Figure 6C). These findings were further confirmed by demonstrating that treatment with mLNPs significantly reduced the Oil-red-O positive area (Figure 6D–E). While mLNP treatment did not affect Cd36 expression (Figure 6F), it resulted in a 0.67-fold reduction in Msr1 expression compared to mice injected with eLNPs (Figure 6G). Although mLNP treatment affects hepatic lipid levels, no changes could be observed on hepatic inflammation, characterized by inflammatory cytokines and infiltrated myeloid cells, or fibrosis (Figure 6H–L). However, expression of Tgfb was significantly reduced upon mLNP treatment (Figure 6M), coinciding with a tendency to decreased Mmp13 expression (Figure 6N). These changes on gene expression suggest that the mLNP treatment might have been to short to observe pronounced effects on later stages of disease development like inflammation and fibrosis.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic overview of the experimental approach in which mice on 4 week WTD were simultaneously injected every 3 days with either empty LNPs as vehicle control (eLNP) or LNPs containing Mir26b mimics (mLNP). This panel was created using BioRender.com. (B–C) Hepatic total cholesterol (B) and triglyceride (C) measurements normalized against total protein. (D) Representative pictures of Oil-red-O staining of liver sections. Scale bar = 200 µm. (E) Quantification of the Oil-red-O staining. (F–G) Gene expression analysis of (F) Cd36 and (G) Msr1. (H–J) Cytokine levels of (H) IL-6, (I) TNF, and (J) CCL2 were measured in liver protein lysates. (K) Quantification of immunofluorescent staining for infiltrating macrophages and neutrophils (Mac-1). (L) Quantification of the Sirius-red staining. (M–N) Gene expression of (M) Tgfb, and (N) Mmp13. Fold change is corrected for sex. *p<0.05. n=6 animals per group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Gene expression analysis of (A) Mir26b-3p and (B) Mir26b-3p in livers from mice after 4-week WTD with simultaneous injection with either empty LNPs as vehicle control (eLNP) or LNPs containing Mir26b mimics (mLNP) every 3 days. **p<0.01. n=6 animals per group.
+
 Furthermore, kinase activity profiling of liver lysates demonstrated a distinct downregulation of peptide phosphorylation upon mLNP treatment of Apoe-/-Mir26b-/- (KO.LNP) mice (Figure 7A–B and Figure 7—figure supplement 1A–B). Interestingly, principal component analysis (PCA) clearly demonstrated that livers from mLNP-treated Apoe-/-Mir26b-/- (KO.LNP) mice more closely resembled Apoe-/- (WT) mice rather than Apoe-/-Mir26b-/- (KO) mice (Figure 7A). The kinase activity of 76 kinases in the liver was significantly downregulated upon mLNP treatment of Apoe-/-Mir26b-/- mice (Figure 7—figure supplement 1C). The notion that 60 (79%) of these downregulated kinases were originally upregulated by the Mir26b deficiency (Figure 7C), furthermore indicates that mLNP treatment rescues the observed effects due to the Mir26b deficiency. In line with this, pathway analysis also showed an enrichment of similar pathways as described before, that is pathways related to inflammation and angiogenesis (Figure 7D–E), again demonstrating that there are at least already early signs that inflammation is influenced by mLNP treatment.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig7-v1.jpg)
+
+**Figure 7.:** (A) Principal component analysis (PCA) of phosphorylated peptides from STK array (n=4) of liver lysates from mLNP treated Apoe-/-Mir26b-/- mice (KO.LNP), Apoe-/-Mir26b-/- mice (KO) or Apoe-/- mice (WT) mice. (B) Volcano plot visualizing fold change and p value for phosphorylated peptides from STK array. Blue dots represent significantly altered phosphopeptides. (C) The heatmap of significantly changed kinases is ranked based on the Median Final Score (cut-off value of 1.2). Color is corresponding to Median Kinase Statistic, which represents effect size and directionality (red = increased activity in KO vs. WT mice; blue = decreased activity in KO.LNP vs. KO mice; average of n=4 is shown). (D) Enriched pathways based on STK array. (E) Network diagram of the pathway enrichment analysis.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Heatmap demonstrating the level of peptide phosphorylation (numbers behind peptides indicate exact amino-acids that are spotted on the STK array). Red color reflects a high degree of phosphorylation, while blue color represents a low degree of phosphorylation (average of n=4 is shown). (B) Principal component analysis (PCA) of phosphorylated peptides from STK array (n=4) of liver lysates from mLNP-treated Apoe-/-Mir26b-/- mice (KO.LNP) or Apoe-/-Mir26b-/- mice (KO) mice. (C) The heatmap of significantly changed kinases is ranked based on Median Final Score (cut-off value of 1.2), STK array performed on liver lysates from mLNP treated Apoe-/-Mir26b-/- mice (KO.LNP) compared to Apoe-/-Mir26b-/- mice (KO) mice. Color corresponds to the Median Kinase Statistic, which represents effect size and directionality (blue = decreased activity in KO.LNP vs. KO mice).
 
 Overall, treatment with mLNPs attenuated MASH development with regard to hepatic lipids and inflammatory kinase activity, highlighting the therapeutic potential of LNPs loaded with Mir26b mimics.
 
-## Lipid nanoparticles loaded with Mir26b mimics have anti-inflammatory effects on human livers
+### Lipid nanoparticles loaded with Mir26b mimics have anti-inflammatory effects on human livers
 
 Since the mouse experiments demonstrated a clear therapeutic potential of LNPs loaded with Mir26b mimics, we also set out to explore this potential in a human setting. Human precision-cut liver slices were cultured for 24 hr or 48 hr in the presence of mLNPs or eLNPs as control (Figure 8A). Although no effects were observed on IL-6 secretion (Figure 8B), mLNPs had strong anti-inflammatory effects on these human precision-cut liver slices. The secretion of TNF, CCL2, and CXCL1 was significantly reduced in slices treated with mLNPs compared to eLNP-treated liver slices (Figure 8C–E), underlining the clear potential of these Mir26b-loaded LNPs in a human context.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/97165/elife-97165-fig8-v1.jpg)
 
-**Figure 8.:** Mir26b-loaded LNPs have anti-inflammatory effects on human liver slices and Mir26b plasma levels are significantly increased in patients with liver cirrhosis.(A) Schematic overview of the experimental approach. (B–E) Cytokine levels of (B) IL-6, (C) TNF, (D) CCL2, and (E) CXCL1 measured in the supernatant of human precision-cut liver slices after 24 hr (for IL-6/TNF) or 48 hr (for CCL2/CXCL1) incubation with mLNPs or eLNPs (3 individual donors, cultured in duplicates). (F–G) Plasma was isolated from patients with liver cirrhosis or healthy volunteers (F) and Mir26b-3p (G) and Mir26b-5p (H) plasma levels were measured. *p<0.05; ****p<0.0001. n=8–11 patients per group. Panels A and F were created using BioRender.com.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Schematic overview of the experimental approach. (B–E) Cytokine levels of (B) IL-6, (C) TNF, (D) CCL2, and (E) CXCL1 measured in the supernatant of human precision-cut liver slices after 24 hr (for IL-6/TNF) or 48 hr (for CCL2/CXCL1) incubation with mLNPs or eLNPs (3 individual donors, cultured in duplicates). (F–G) Plasma was isolated from patients with liver cirrhosis or healthy volunteers (F) and Mir26b-3p (G) and Mir26b-5p (H) plasma levels were measured. *p<0.05; ****p<0.0001. n=8–11 patients per group. Panels A and F were created using BioRender.com.
 
 To further evaluate the importance of Mir26b in liver diseases in humans, we have measured the expression levels of Mir26b-3p and Mir26b-5p in the plasma of healthy subjects and patients with liver cirrhosis (Figure 8F). Remarkably, both Mir26b-3p and –5 p were significantly elevated in the plasma of liver cirrhosis patients (Figure 8G–H), suggesting – at least – a strong association between Mir26b and the development of MASH in humans.
 
@@ -147,11 +163,63 @@ Collectively, these results show that Mir26b plays a protective role in the deve
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Apoe-/-Mir26b-/-</td>
+      <td>van der Vorst et al., 2021</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Apoe-/-</td>
+      <td>Jackson</td>
+      <td>Strain #:002052</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Apoe-/-Mir26bfl/fl</td>
+      <td>Generated in house</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Apoe-/-Mir26bfl/flLyz2Cre+</td>
+      <td>Generated in house</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Western-type diet</td>
+      <td>Sniff</td>
+      <td>TD88137</td>
+      <td>Mouse diet</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Apoe-/-Mir26b-/- mice were generated as described in van der Vorst et al., 2021. Apoe-/- mice were used as control and all mice were on C57BL/6 J background for more than 10 generations. Both male and female mice were used for this study. Furthermore, myeloid lineage-specific Mir26bfl/fl mice on an Apoe-/- background were generated by crossing Apoe-/-Mir26bfl/fl (generated in house) with Lyz2Cre+ transgenic mice (Jackson; strain #004781) to form Apoe-/-Mir26bfl/flLyz2Cre+ mice. Apoe-/-Mir26bfl/flLyz2Cre- mice were used as control. Starting at 8 weeks of age, the mice were fed a Western-type diet (WTD) containing 21% fat and 0.20% cholesterol (Sniff TD88137) for 4 or 12 weeks after which the mice were euthanized by intraperitoneal injection of ketamine (0.1 mg/g body weight) and xylazine (0.02 mg/g body weight). The blood was collected, and livers were harvested and snapfrozen using liquid nitrogen. The livers were embedded in Tissue-Tek O.C.T. compound (Sakura) and cryosectioned in 5 µm cuts and mounted on glass slides. For metabolic measurements and further analysis, 100 µm tissue sections were collected in 2 ml reaction tubes. All animal studies performed were approved by the local ethical committee (Landesamt für Natur, Umwelt und Verbraucherschutz Nordrhein-Westfalen, Germany, approval number 81–02.04.2019 .A363 and Regierung von Oberbayern, approval number 55.2-1-54-253245-2015).
 
-## Lipid nanoparticle production
+### Lipid nanoparticle production
 
 The ionizable cationic lipid DLin-MC3-DMA (Hycultec GmbH, Beutelsbach, Germany) was combined with DSPC (1,2-distearoyl-sn-glycero-3-phosphorylcholine, Avanti), Cholesterol (Sigma) and DMG-PEG 2000 (Avanti) in absolute ethanol at molar ratios of 50:10:38.5:1.5 and a final lipid concentration of 50 mM. The aqueous phase was prepared by dissolving a combination (1:1) of Mir26b-3P and –5 P in sterile 100 mM acetate buffer (pH 4), to achieve a 0.17 µg/µL solution. For LNP formulation, the ethanol and aqueous phase were injected into a microfluidic herringbone mixer (Microfluidic ChipShop, Jena, Germany) via syringe pumps at a flow rate ratio of 1:3, respectively, with a total flow rate of 4 mL/min to obtain an N/P ratio of 4. Generated LNPs were diluted with PBS to a concentration of ethanol below 2%, followed by concentrating via ultra-centrifugation (3000 × g) using 10 kDa Amicon Ultrafilitration units (Sigma) and were finally dialyzed against PBS using a dialysis membrane with 30 kDa MWCO.
 
@@ -159,47 +227,107 @@ To characterize the particle size and surface charge, samples were diluted with 
 
 The encapsulation efficiency of RNA of prepared LNPs was determined using a Quant-iT RiboGreen assay according to the instructions of the manufacturer (Thermo Fisher Scientific). Samples were analyzed by fluorescence quantification on a microplate reader (Cytation 3, BioTek Instruments Inc). The encapsulation efficiency was calculated as the difference between the total RNA and the non-encapsulated RNA, divided by the total RNA (x100%). The dosing of RNA-LNPs was based on the Ribogreen assay result.
 
-## LNP injections
+### LNP injections
 
 LNPs were produced as described above LNPs containing 2 mg/kg RNA were administered via intraperitoneal injection every 3 days. Empty LNPs (eLNPs) and LNPs loaded with murine Mir26b-3p (Duplex Sequences: 5'-/5Phos/rCrCrUrGrUrUrCrUrCrCrArUrUrArCrUrUrGrGmCmUrC-3' and 5'-mGmCrCmArAmGrUmArAmUrGmGrAmGrAmArCmArGG-3') and Mir26b-5p (Duplex Sequences: 5'-/5Phos/rUrUrCrArArGrUrArArUrUrCrArGrGrArUrAmGmGrU-3' and 5'-mCmUrAmUrCmCrUmGrAmArUmUrAmCrUmUrGmAA-3') mimics (IDT) were injected into Apoe-/-miRNA-26b-/- mice to determine potential therapeutic effects.
 
-## RNA isolation and quantitative polymerase chain reaction
+### RNA isolation and quantitative polymerase chain reaction
 
 One frozen liver piece of 25 mg per mouse was homogenized in a closed tube with glass beads and 1 mL Qiazol by using the Tissue Lyser (QIAGEN) for 5 min at 50 Hz. RNA was isolated using the miRNeasy mini Kit per the manufacturer’s protocol (QIAGEN). Following RNA isolation, cDNA was made from 500 ng total RNA by adding 1 µl Oligo (dT)-Primer (Eurofins Genomics). Secondary RNA structure was denaturalized at 70 °C for 5 min after which the samples were briefly cooled on ice to allow primer annealing. Subsequently, M-MLV Reverse Transcriptase, M-MLV RT 5 x Buffer, and dNTP Mix (Promega) were added, and cDNA synthesis was completed by incubation for 1 hr at 37 °C. Quantitative polymerase chain reaction (qPCR) determined the relative gene expression levels using primer sequences listed in Table 1. For the qPCR reaction, 10 ng of cDNA template was used, to which 1 X PowerUp SYBR Green Master Mix (Thermo Fisher) and primers (Eurofins Genomics) were added. PCR cycling was performed on QuantStudio 3 Real-Time PCR system (Thermo Fisher) with the following conditions: 50 °C for 2 min for 1 cycle (UDG activation); 95 °C for 2 min for 1 cycle (Dual-Lock DNA polymerase); and 95 °C for 15 s (Denature), 58 °C for 15 s (Anneal) and 72 °C for 1 min (Extend) for 40 cycles. The reference gene Cyclophilin was used for normalization.
 
+**Table 1.**
+ Primer sequences for genes measured with qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Sequence in 5'–3'- direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primer</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+    </tr>
+    <tr>
+      <td>Abca1</td>
+      <td>CCCAGAGCAAAAAGCGACTC</td>
+      <td>GGTCATCATCACTTTGGTCCTTG</td>
+    </tr>
+    <tr>
+      <td>Acat2</td>
+      <td>ACCAATTCCAGCCATAAAGCA</td>
+      <td>GGTTTAATCCAAGTTCTTTAGCTATTGC</td>
+    </tr>
+    <tr>
+      <td>Acta2</td>
+      <td>ACGAACGCTTCCGCTGC</td>
+      <td>GATGCCCGCTGACTCCAT</td>
+    </tr>
+    <tr>
+      <td>Cd36</td>
+      <td>GCCAAGCTATTGCGACATGA</td>
+      <td>AAAAGAATCTCAATGTCCGAGACTTT</td>
+    </tr>
+    <tr>
+      <td>Cyclophilin</td>
+      <td>TTCCTCCTTTCACAGAATTATTCCA</td>
+      <td>CCGCCAGTGCCATTATGG</td>
+    </tr>
+    <tr>
+      <td>Mmp13</td>
+      <td>ACAAAGATTATCCCCGCCTCATA</td>
+      <td>CACAATGCGATTACTCCAGATACTG</td>
+    </tr>
+    <tr>
+      <td>Msr1</td>
+      <td>CATACAGAAACACTGCATGTCAGAGT</td>
+      <td>TTCTGCTGATACTTTGTACACACGTT</td>
+    </tr>
+    <tr>
+      <td>Tgfb</td>
+      <td>GCCCTTCCTGCTCCTCATG</td>
+      <td>CCGCACACAGCAGTTCTTCTC</td>
+    </tr>
+  </tbody>
+</table>
+
 According to the manufacturer’s instructions, RNA was isolated for the Mir26b PCR analysis using the miRNeasy serum/plasma kit (QIAGEN). Subsequently, cDNA was generated using the TaqMan MicroRNA Reverse Transcription Kit (Thermo Fisher) according to the manufacturer’s instructions using 10 ng of total RNA. The relative gene expression levels were determined by qPCR using TaqMan MicroRNA-assays (Thermo Fisher) for U6 (Assay-ID: 001973), Mir26b-3p (Assay-ID: 000407) or Mir26b-5p (Assay-ID: 002444). For the qPCR reaction, 0.5 ng of cDNA template was used to which TaqMan gene expression master mix (Thermo Fisher) and above-described primers were added. PCR cycling was performed on QuantStudio 3 Real-Time PCR system (Thermo Fisher) with the following conditions: 50 °C for 2 min for 1 cycle (UDG activation); 95 °C for 10 min for 1 cycle (Dual-Lock DNA polymerase); and 95 °C for 15 s (Denature), 60 °C for 60 s (Anneal/Extend) for 40 cycles. Expression of U6 was used for normalization.
 
-## Protein isolation
+### Protein isolation
 
 One frozen liver piece of 25 mg per mouse was homogenized in 0.5 ml SET buffer (sucrose 250 mmol/L, EDTA 2 mmol/L, TRIS 10 mmol/L) by vortexing briefly. Cell destruction was completed by 2 freeze-thaw cycles with liquid nitrogen and subsequently passing the sample through a 27-gauge needle for three times. After one last freeze-thaw cycle, the total protein content was measured using the NanoDrop One Microvolume UV-Vis Spectrophotometer (Thermo Fisher Scientific).
 
-## Lipid analysis
+### Lipid analysis
 
 Cholesterol and triglyceride levels were quantified in liver protein lysates and EDTA-plasma using enzymatic colorimetric assays (c.f.a.s. cobas, Roche Diagnostics) according to the manufacturer’s protocol. Absorbance was measured at 510 nm with the microplate reader infinite M200 (Tecan).
 
-## Enzyme-linked immunosorbent assay
+### Enzyme-linked immunosorbent assay
 
 Mouse TNF, interleukin-6 (IL-6), CC-chemokine ligand 2 (CCL2), and C-X-C Motif Chemokine Ligand 1 (CXCL1) levels were measured in liver protein lysates and EDTA-plasma by ELISA (Thermo Fisher) according to the manufacturer’s instructions. Absorbance was measured at 450 nm with wavelength subtraction at 570 nm using the microplate reader infinite M200 (Tecan).
 
 According to the manufacturer’s instructions, human TNF, IL-6, CCL2, and CXCL1 levels were measured in the supernatant of human precision-cut liver slices using ELISA (Thermo Fisher). Absorbance was measured at 450 nm with wavelength subtraction at 570 nm using the microplate reader infinite M200 (Tecan).
 
-## Western blotting
+### Western blotting
 
 One 100 μm liver section was lysed for 15 min on ice using M-PER Mammalian Extraction Buffer containing Halt Phosphatase Inhibitor and EDTA-free Halt Protease Inhibitor Cocktail (1:100 each; Thermo Fisher Scientific). Lysates were centrifuged for 15 min at 16000 × g at +4 °C in a pre-cooled centrifuge. Protein quantification was performed with a NanoDrop One Microvolume UV-Vis Spectrophotometer (Thermo Fisher Scientific). An equal amount of protein from each sample was resolved by 10% SDS–polyacrylamide gel electrophoresis, transferred to nitrocellulose membranes, and blocked with 5% bovine serum albumin (BSA) for 1 hr at room temperature. Anti-CD36 antibody (1:1000; Cell signalling), anti-MSR1 antibody (1:1000; Abcam), and anti-β-actin (1:1000; Cell signalling) were used as primary antibodies. The blots were incubated overnight at 4 °C. An anti-rabbit antibody (1:1000; Cell signalling) was used and incubated for 1 hr at room temperature. Immunoreactive bands were visualized via enhanced chemiluminescence in a ChemiDoc Imager (Bio-Rad), and densitometry was performed using Image J. β-actin was used for normalization.
 
-## Oil-red-O staining
+### Oil-red-O staining
 
 Liver sections were prepared as described above. Following 30 min drying to the air, the cryo sections were fixed with 3.5% formaldehyde for 30 min at room temperature. Then the liver sections were stained with Oil-red-O (Sigma-Aldrich) for 1 hr and counterstained with Mayer’s heamlum solution (Merck) for 30 s. After mounting the slides with glycerin jelly, images were acquired with an automated upright microscope (Leica microsystems), and the lipid content in the livers was quantified using ImageJ Fiji software (Laboratory for Optical and Computational Instrumentation, University of Wisconsin-Madison, Madison, Wisconsin, United States). All analyses were performed in a blinded manner.
 
-## Immunofluorescent stainings
+### Immunofluorescent stainings
 
 Several immunofluorescent stainings were performed to visualize inflammation and leukocyte infiltration. The cryo-sectioned livers were first air-dried for 5 min at room temperature and subsequently fixed with ice-cold acetone for 10 min. Tissue sections were blocked with 1% bovine serum albumin (BSA) and 0.03% normal horse serum blocking solution (Vector) in 1 X PBS for 1 hr. Neutrophils, resident macrophages, infiltrating neutrophils and macrophages, and T-cells were visualized by staining with anti-mouse Ly6G (Biolegend, dilution 1:100), anti-mouse CD68 (Biolegend, dilution 1:250), anti-mouse Mac-1 (R&D Systems, dilution 1:100) or anti-mouse CD3 (Abcam, dilution 1:100), respectively, overnight at 4 C. Liver sections were incubated with secondary antibodies Cy3-conjugated donkey anti-rat IgG (Jackson ImmunoResearch, dilution 1:300) or Cy3-conjugated donkey anti-rabbit IgG (Jackson ImmunoResearch, dilution 1:300) for 30 min at room temperature after which nuclei were stained with Hoechst (Thermo Fisher, dilution 1:10,000) for 10 min at room temperature. Following the staining, the sections were mounted with Immuno-Mount (Thermo Fisher), and images were acquired using an inverted microscope Dmi8 (Leica microsystems). The number of Ly6-G, CD68, Mac-1, and CD3 positive immune cells was counted with the ImageJ Fiji software. All analyses were performed in a blinded manner.
 
-## Picrosirius red staining
+### Picrosirius red staining
 
 Liver fibrosis was visualized by a Picrosirius red staining. First, the liver sections were fixed for 2 hr in 10% formalin. This was followed by a 90-min incubation with 0.1% Sirius Red (Polysciences) in 1% saturated picric acid solution (Applichem). Slides were subsequently incubated in 0.01 N HCl for 2 min and dehydrated using an ethanol range. After incubation in xylol, the slides were mounted with Vitro-Clud (R.Langenbrinck). Images were acquired using an automated upright microscope (Leica microsystems), after which the sirius red positive area was analyzed and calculated in each liver section by using ImageJ Fiji. All analyses were performed in a blinded manner.
 
-## Kinase activity profiling
+### Kinase activity profiling
 
 STK profiles were determined using the PamChip Ser/Thr Kinase assay (STK; PamGene International, ´s-Hertogenbosch, The Netherlands). Each STK-PamChip array contains 144 individual phospho-site(s) that are peptide sequences derived from substrates for STKs. One 100 μm liver section was lysed for 15 min on ice using M-PER Mammalian Extraction Buffer containing Halt Phosphatase Inhibitor and EDTA-free Halt Protease Inhibitor Cocktail (1:100 each; Thermo Fisher Scientific). Lysates were centrifuged for 15 min at 16000 × g at +4 °C in a pre-cooled centrifuge. Protein quantification was performed with a NanoDrop One Microvolume UV-Vis Spectrophotometer (Thermo Fisher Scientific).
 
@@ -209,22 +337,22 @@ For the peptides, a principal component analysis (PCA) was performed with the he
 
 For kinases, the median final score of the kinase with a score >1.2 and with an adjusted P value for multiple comparisons by the false discovery rate (FDR) of <0.05 are depicted in a heatmap. The R package disease ontology semantic and enrichment analysis (DOSE; Yu et al., 2015) was utilized to analyze the enriched pathways depicting the biological complexities in which these kinases correlate with multiple annotation categories, which was visualized in a network plot with the help of the R package Reactome Pathway Analysis (ReactomePA) v1.44.0 (Yu and He, 2016).
 
-## Precision-cut liver slices
+### Precision-cut liver slices
 
 Small human liver wedges of an equivalent size of approximately 10 g were collected from three human donors following partial resection or when livers were unsuitable for transplantation. The study was approved by the Medical Ethical Committee of the University Medical Centre Groningen (UMCG), according to Dutch legislation and the Code of Conduct for dealing responsibly with human tissue in the context of health research, refraining the need for written consent for ‘further use’ of coded-anonymous human tissue. The procedures were carried out in accordance with the experimental protocols approved by the Medical Ethical Committee of the UMCG. Liver tissue was stored in University of Wisconsin preservation solution (UW, 4 °C). The total cold ischemic time was between 3 and 29 hr. Slice viability for each donor liver was tested after 1 hr of culture by checking ATP production as previously described (de Graaf et al., 2010). Slices were cultured in GFIPO medium (Simon et al., 2023; 36 mM Glucose, 5 mM Fructose, 1 nM Insulin, 480 μΜ Oleic acid, 240μΜ Palmitic acid) and cultured for 24  hr and 48  hr in the presence of empty LNPs (eLNPs) or LNPs loaded with murine Mir26b-3p (Duplex Sequences: 5'-/5Phos/rCrCrUrGrUrUrCrUrCrCrArUrUrArCrUrUrGrGmCmUrC-3' and 5'-mGmCrCmArAmGrUmArAmUrGmGrAmGrAmArCmArGG-3') and Mir26b-5p (Duplex Sequences: 5'-/5Phos/rUrUrCrArArGrUrArArUrUrCrArGrGrArUrAmGmGrU-3' and 5'-mCmUrAmUrCmCrUmGrAmArUmUrAmCrUmUrGmAA-3') mimics (IDT). The medium was refreshed every 24 hr. The slices were collected to check the viability of the slices by measuring ATP levels and supernatant was collected for further analysis.
 
-## Mir26b expression in patient cohort
+#### Mir26b expression in patient cohort
 
 All patients were prospectively recruited in the Department of Medicine II (Saarland University Medical Center, Homburg, Germany) between December 2021 and March 2023. Included patients were adults and had either type 1 or type 2 diabetes. Alcohol consumption above the National Institute on Alcohol Abuse and Alcoholism’s (NIAAA) definition of chronic alcohol use (four drinks or more on any day or 14 drinks per week for men or three drinks or more on any day or 7 drinks per week for women) was regarded as exclusion criterium. Serum and EDTA blood samples were collected from fasted patients. Genomic DNA was isolated from EDTA anticoagulated blood according to the membrane-based QIAamp DNA extraction protocol (QIAGEN, Hilden, Germany). The common genetic variants involved known to modulate the risk of fatty liver, namely PNPLA3, TM6SF2, MBOAT7, SERPINA, HSD17B13, and MTARC1, were genotyped using a solution-phase hybridization reaction with 5'-nuclease and fluorescence detection. Transient elastography (TE) and controlled attenuation parameter (CAP) were performed to non-invasively quantify liver fibrosis and steatosis, respectively. Cirrhosis was defined by TE greater or equal 15 kPa, and fibrosis F0 was defined by TE below 6.5 kPa (Mózes et al., 2022; Siddiqui et al., 2019).
 
 RNA was isolated from 100 μl serum, using the miRNeasy serum/plasma kit (QIAGEN), according to the manufacturer’s instructions. C. elegans Mir39 miRNA mimic was added as spike-in control. Subsequently, cDNA was generated using the TaqMan MicroRNA Reverse Transcription Kit (Thermo Fisher) according to the manufacturer’s instructions using 10 ng of total RNA. The relative gene expression levels were determined by qPCR using TaqMan MicroRNA-assays (Thermo Fisher) for Mir39 (Assay-ID: 000200), Mir26b-3p (Assay-ID: 000407) or Mir26b-5p (Assay-ID: 002444). For the qPCR reaction, 0.5 ng of cDNA template was used to which TaqMan gene expression master mix (Thermo Fisher) and above-described primers were added. PCR cycling was performed on QuantStudio 3 Real-Time PCR system (Thermo Fisher) with the following conditions: 50 °C for 2 min for 1 cycle (UDG activation); 95 °C for 10 min for 1 cycle (Dual-Lock DNA polymerase); and 95 °C for 15 s (Denature), 60 °C for 60 s (Anneal/Extend) for 40 cycles. Expression of Mir39 as spike-in control was used for normalization.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed using GraphPad Prism version 9.1.1 (GraphPad Software, Inc, San Diego, CA, USA). Outliers were identified using the ROUT = 1 method after which normality was tested via the D’Agostino-Pearson and Shapiro-Wilk normality test. Significance was tested using either Welch’s t-test for normally distributed data or Mann-Whitney U test for non-normally distributed data. All data are expressed as mean ± SEM and results of <0.05 for the p-value were considered statistically significant.
 
 All authors had access to the study data and have reviewed and approved the final manuscript.
 
-## Materials availability statement
+### Materials availability statement
 
 All data generated or analysed during this study are included in the manuscript and supporting files; source data files have been provided for all figures.

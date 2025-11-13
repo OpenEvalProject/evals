@@ -56,21 +56,107 @@ Our present multi-institutional, multi-disease study addresses the above issues 
 
 ## Results
 
-## Study setup and workflow
+### Study setup and workflow
 
 In this study, we tested infrared molecular spectroscopy for medically relevant blood profiling in a prototypical multi-institutional setting, assessing the usefulness of IMFs as a source of complementary information for cancer diagnostics. The study included cohorts of therapy-naïve, lung, prostate, bladder, and breast cancer patients (cases), and organ-specific symptomatic references as well as non-symptomatic reference individuals (Figure 1a, Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig1-v1.jpg)
 
-**Figure 1.:** (a) Cohorts of therapy-naïve, lung, breast, prostate, and bladder cancer patients (cases), and organ-specific symptomatic references as well as non-symptomatic reference individuals were recruited at three different clinical sites – in total, 1927 individuals. (b) Blood samples from all individuals were drawn, and sera and plasma were prepared according to well-defined standard operating procedures. (c) Automated Fourier-transform infrared spectroscopy of liquid bulk sera and plasma were used to obtain IMFs. The displayed IMFs were pre-processed using water correction and normalization (see Methods). (d) For each clinical question studied, the characteristics of the case and the reference cohorts were matched for age, gender, and body mass index (BMI) to avoid patient selection bias. This resulted in total number of 1639 individuals upon matching. (e) Machine learning models were built on training datasets and evaluated on test datasets to separately evaluate the efficiency of classification for each of the four cancer entities.Figure 1—source data 1.All the following analyses were carried out on subsets of this participant pool; see also other source data files for further details. When selecting the sub-cohorts, special care was taken to match the case and reference cohorts separately, for each question – according to age, gender, and body mass index (BMI) – in order to avoid possible bias in patient selection.
+**Figure 1.:** (a) Cohorts of therapy-naïve, lung, breast, prostate, and bladder cancer patients (cases), and organ-specific symptomatic references as well as non-symptomatic reference individuals were recruited at three different clinical sites – in total, 1927 individuals. (b) Blood samples from all individuals were drawn, and sera and plasma were prepared according to well-defined standard operating procedures. (c) Automated Fourier-transform infrared spectroscopy of liquid bulk sera and plasma were used to obtain IMFs. The displayed IMFs were pre-processed using water correction and normalization (see Methods). (d) For each clinical question studied, the characteristics of the case and the reference cohorts were matched for age, gender, and body mass index (BMI) to avoid patient selection bias. This resulted in total number of 1639 individuals upon matching. (e) Machine learning models were built on training datasets and evaluated on test datasets to separately evaluate the efficiency of classification for each of the four cancer entities.
 
 Blood sera and plasma were collected at several clinical sites according to well-defined standard operating procedures to minimize pre-analytical errors (Figure 1b; Huber et al., 2021). An automated sample delivery system was applied for high-throughput, high-reproducibility, and cost-efficient infrared fingerprinting of liquid sera and plasma of 1927 individuals with an FTIR spectrometer (Figure 1c). Special care was taken to match the characteristics of the case and reference cohorts for each question separately – by age, gender, and body mass index (BMI) – to avoid patient selection bias, although this step reduced the number of individuals analysed within this study to 1639 (Figure 1d). The acquired IMFs were used for training machine learning models to perform binary classification of the samples (Figure 1e) into case and reference groups, allowing the investigation of various clinically relevant questions (see below). Model training was performed by applying SVM algorithm to pre-processed IMFs by splitting the data into train and test sets, employing 10-fold cross-validation, repeated 10-times with randomization. For assessing the classification performance, we evaluated the AUC of the respective ROC curves for the test sets.
 
-## Diagnostic performance of infrared molecular fingerprinting for cancer detection
+### Diagnostic performance of infrared molecular fingerprinting for cancer detection
 
 In a first step, we evaluated the diagnostic performance of IMFs obtained from serum samples for the binary classification of each of the four common cancer types individually against matched non-symptomatic reference groups (see Table 1 and Figure 2—source data 1 for details on the characteristics of the individual cohorts). Since our approach produces results in terms of continuous variables (disease likelihood) rather than binary outcomes (disease, non-disease), we use the AUC of the ROC as the main performance metric, and thus take advantage of incorporating information across multiple operating points, not limited to a particular clinical scenario.
 
 The highest detection efficiencies in the test sets were obtained for the lung and breast cancer cohort SVM models, with a ROC AUC of 0.89 and 0.88, respectively (Figure 2a). A lower classification performance of 0.79 and 0.78 (ROC AUC) was obtained for the prostate and bladder cancer cohorts, respectively. Table 1 also lists the optimal combination (see Methods) of sensitivity and specificity for all cancer entities. For making our results comparable to other studies and possibly to gold standards in cancer detection, we present lists with sensitivity/specificity pairs (see Table 1). In particular, we present the optimal pairs extracted by minimizing the distance between the ROC curve and the upper-left corner – a standard practice in studies of this type. In addition, we set the specificity to 95% and present the resulting sensitivities.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig2-v1.jpg)
+
+**Figure 2.:** Receiver operating characteristic (ROC) curves for the binary classification of the test set with support vector machine (SVM) models trained on water-corrected and vector-normalized IMFs. The different cancer entities were tested against (a) non-symptomatic references, (b) mixed references that also include organ-specific symptomatic references, and (c) organ-specific symptomatic references only. Detailed cohort characteristics can be found in Figure 2—source data 1. (d) Area under the receiver operating characteristic curve (AUC) for the test sets according to different spectral pre-processing of the IMFs. The error bars show the standard deviation of the individual results of the cross-validation (LuCa: lung cancer; PrCa: prostate cancer; BrCa: breast cancer; BlCa: bladder cancer; NSR: non-symptomatic references; MR: mixed references; SR: symptomatic references).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a–a′′′) Principal component analysis (PCA) of samples of non-symptomatic healthy individuals collected from three different clinical sites. Plots depict the first five principal components, which correspond to 95% of the explained variance. The three groups are statistically matched in terms of age, gender, and body mass index (BMI). Cohort characteristics are given in Figure 2—figure supplement 1—source data 1. (b) PCA plot of biological samples and QCs. The two first principal components included in the plot correspond to 93% of the explained variance. (b′, b′′) Loading vectors for the two principal components shown in (b).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Receiver operating characteristic (ROC) curves for (a) lung cancer (LuCa) and (b) prostate cancer (PrCa) vs. mixed references (MR). Differential fingerprints (a′, b′) for the same comparisons as above. The characteristics of the cohort used for this analysis are given in Figure 2—figure supplement 2—source data 1.
+
+**Table 1.**
+ Detection efficiency for different binary classifications.Different cancer types were compared to each other, as well as the impact of using different reference groups was analysed. Detailed cohort characteristics can be found in Figure 2—source data 1 (NSR: non-symptomatic references; MR: mixed references; SR: symptomatic references; AUC: area under the receiver operating characteristic curve; *sensitivity and specificity values are obtained by minimizing the distance of the receiver operating characteristic [ROC] curve to the upper-left corner).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical question for binary classification</th>
+      <th># of Individuals</th>
+      <th>AUC</th>
+      <th>Sensitivity/specificity*</th>
+      <th>sensitivity at95% specificity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lung cancer vs. NSR</td>
+      <td>214/193</td>
+      <td>0.89 ± 0.05</td>
+      <td>0.86/0.79</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>Lung cancer vs. MR</td>
+      <td>214/208</td>
+      <td>0.77 ± 0.06</td>
+      <td>0.72/0.67</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>Lung cancer vs. SR</td>
+      <td>214/143</td>
+      <td>0.74 ± 0.07</td>
+      <td>0.67/0.71</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Prostate cancer vs. NSR</td>
+      <td>278/278</td>
+      <td>0.78 ± 0.06</td>
+      <td>0.71/0.71</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>Prostate cancer vs. MR</td>
+      <td>278/278</td>
+      <td>0.75 ± 0.06</td>
+      <td>0.71/0.68</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Prostate cancer vs. SR</td>
+      <td>278/278</td>
+      <td>0.70 ± 0.06</td>
+      <td>0.65/0.68</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Breast cancer vs. NSR</td>
+      <td>161/161</td>
+      <td>0.88 ± 0.06</td>
+      <td>0.82/0.81</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Bladder cancer vs. NSR</td>
+      <td>118/118</td>
+      <td>0.79 ± 0.09</td>
+      <td>0.72/0.73</td>
+      <td>0.23</td>
+    </tr>
+  </tbody>
+</table>
 
 In clinical practice, however, patients may suffer from pathologies that affect the same organ as the cancer under scrutiny. Therefore – in a second step, we tested the capability of IMFs to classify cancer, when organ-specific comorbidities (e.g. chronic obstructive pulmonary disease [COPD] in the lung cancer cohort) and organ-specific benign conditions (e.g. hamartoma of the lung in the lung cancer cohort or benign prostate hyperplasia [BPH] in the prostate cancer cohort – see Figure 1—source data 1 for details) were added to the reference group. In this case, the detection efficiency decreased significantly, from 0.89 to 0.77, for lung cancer and slightly, from 0.79 to 0.75, for prostate cancer (Figure 2b). If the reference group contained only organ-specific symptomatic references, the detection efficiency was reduced further, to 0.74 for lung cancer and 0.70 for prostate cancer (Figure 2c).
 
@@ -80,9 +166,17 @@ It is generally known that blood serum and blood plasma provide largely overlapp
 
 Here we compare the diagnostic performance of IMFs from serum and plasma collected from the same individuals for the detection of lung and prostate cancer compared to non-symptomatic and symptomatic organ-specific references. Given that plasma samples were only available for a subset of the lung and prostate cohorts, the results for serum slightly deviate from those presented above due to the different cohort characteristics (Figure 2—figure supplement 2—source data 1). The detection efficiency based on IMFs from plasma samples was 3% higher in the case of lung cancer and 2% higher in the case of prostate cancer than the same analysis based on IMFs from serum samples. In both cases, the difference in AUC was only of low significance. It is noteworthy that the corresponding ROC curves show similar behaviour (Figure 2—figure supplement 2). These results suggest that either plasma or serum samples could in principle be used for detection of these cancer conditions. However, for carefully assessing whether (i) the same amount of information is contained in both biofluids and (ii) whether this information is encoded in a similar way across the entire spectra requires yet an additional dedicated study with higher sample numbers.
 
-## Investigation of cancer-specific infrared signatures
+### Investigation of cancer-specific infrared signatures
 
 In many clinical settings, a simple binary classification may not be sufficient; instead, a simple, quick, and reliable test that indicates a specific cancer or disease is preferred. To investigate the possible existence of cancer-specific IMFs (or onco-IR-phenotypes), we first examined and compared the spectral signatures that are relevant for distinguishing cancer cases from non-symptomatic references. For this purpose, we evaluated the differential fingerprints (defined as the difference between the mean IMF of the case cohort and that of the reference cohort), determined the two-tailed p-value of Student’s t-test, and calculated the AUC per wavenumber using the U statistic of a Mann–Whitney U test (see Methods) for all cohorts (Figure 3a–c). The obtained patterns differed significantly for all four cancer entities.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig3-v1.jpg)
+
+**Figure 3.:** (a-a''') Differential fingerprints (standard deviations of the reference cohorts are displayed as grey areas), (b-b''') two-tailed p-value of Student’s t-test, and (c-c''') area under the receiver operating characteristic curve (AUC) per wavenumber (extracted by application of Mann–Whitney U test) compared to the AUC of the combined model (dashed horizontal lines). Confusion matrix summarizing the per-class accuracies of multiclass classification of (d) lung, bladder, and breast cancer (matched female cohort) with overall model accuracy of 0.73 ± 0.11, and (e) lung, bladder, and prostate cancer (matched male cohort) with overall model accuracy of 0.74 ± 0.13. Detailed cohort characteristics can be found in Figure 3—source data 1. Chance level for the three-class classification corresponds to 0.33 (LuCa: lung cancer; PrCa: prostate cancer; BrCa: breast cancer; BlCa: bladder cancer).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Differential fingerprints for (a) lung-related conditions (asthma, lung hamartoma, chronic obstructive pulmonary disease [COPD], lung cancer) and (b) prostate-related pathologies (benign prostate hyperplasia [BPH], prostate cancer). Receiver operating characteristic (ROC) curves for (a′) lung and (b′) prostate pathologies. All comparisons are against non-symptomatic references. The characteristics of the cohort used for this analysis are given in Figure 3—figure supplement 1—source data 1.
 
 It is noteworthy that for lung and breast cancer the magnitude of the differential fingerprint compared to the variation of the IMFs of the reference group (grey area in Figure 3a) is more pronounced than for bladder and prostate cancer. This is also reflected in the p-values (Figure 3b), reaching many orders of magnitude lower levels for the former cancer entities, and higher spectrally resolved AUCs (Figure 3c). Compared to evaluation based on the entire spectral range, spectral containment significantly reduces detection efficiency for all cancer entities, although the reduction is smaller for lung and breast cancer. For these two cancer entities, classification based on a few selected spectral regions is possible. By contrast, for prostate and bladder cancer, the cancer-relevant information appears to be distributed over the entire spectral range and a high classification rate relies on the entire spectral range accessible.
 
@@ -94,13 +188,29 @@ Lung cancer is often accompanied by COPD, and the previous analysis showed that 
 
 Another relevant question is whether a distinction between cancer and corresponding organ-specific benign pathologies can be made. Here, we evaluated to what extent this was possible for lung and prostate cancer. In both cases, we observed that the cancer detection was only moderately higher against a group of non-symptomatic individuals as compared to a group of patients with a benign condition (lung hamartoma and BPH, respectively; see Figure 4a and b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig4-v1.jpg)
+
+**Figure 4.:** (a) Pairwise classification performance results between lung cancer (LuCa), hamartoma (Hamart.) and non-symptomatic reference group (NSR) with overall model accuracy of 0.46 ± 0.18, and (b) pairwise classification performance between prostate cancer (PrCa), benign prostate hyperplasia (BPH), and NSR with overall model accuracy of 0.43 ± 0.06. The error bars show the standard deviation of the individual results of the cross-validation. Confusion matrix summarizing the per-class accuracies of multiclass classification in (c) the LuCa cohort and (d) the PrCa cohort. The characteristics of the cohort used for this analysis are given in Figure 4—source data 1. Chance level for the three-class classification corresponds to 0.33.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Classification performance of LuCa vs. mixed references as a function of the COPD status. The characteristics of the cohort used for this analysis are given in Figure 4—figure supplement 1—source data 1.
+
 Finally, we explored the possibility of creating multiclass classification models to simultaneously discriminate between multiple groups: cancer patients, individuals with benign conditions, and non-symptomatic reference subjects (Figure 4c and d). In both cases, the classification accuracy was well above chance. Although the accuracy may not yet be sufficient for clinical use, these accuracies may significantly improve with more samples available for training.
 
-## Dependence of cancer detection performance on tumour progression
+### Dependence of cancer detection performance on tumour progression
 
 Challenges for cancer detection include the enormous biological and clinical complexity of cancer, and detection is further complicated by the significant intratumour heterogeneity (McGranahan and Swanton, 2017) as well as by the impact of the tumour microenvironment (Boothby and Rickert, 2017). To evaluate whether the blood-based IMFs are sensitive to tumour progression, we first investigated whether the binary classification efficiency depends on tumour size, characterized in terms of clinical TNM staging (Amin et al., 2017).
 
 In general, we observe that the classification efficiency exhibits a positive correlation with tumour size or tumour grade. In the case of lung cancer, when compared to the non-symptomatic references, the classification efficiency for T4 tumours is (in terms of AUC) 9% higher than that for T1 tumours (Figure 5a). Also, for breast and bladder cancer, a significantly higher detection efficiency for T3 tumours was observed. This is also reflected by the fact that a more pronounced differential fingerprint can be found in these cancers in higher T classes (Figure 5a–c). Although the absolute (integrated) deviation – between the cases and the matched references – increases for all four cancer phenotypes, the spectral features are partly different for the different T stages. This could be due to the fact that, due to the moderate number of individuals considered, the actual onco-IR-phenotype is masked by biological variability, or that the heterogeneity of tumour growth leads to different molecular changes and thus to different IMFs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig5-v1.jpg)
+
+**Figure 5.:** (a–d) Binary classification performance of lung, breast, bladder, and prostate cancer against references as a function of T-classification (of TNM-staging). (a′–d′) Differential fingerprints in relation with the tumour size (TNM class T) for all four cancer entities. (a′′–d′′) Area under the absolute differential fingerprints in relation with the tumour size for all dour cancer entities. The y-axes of the diagrams in the panels (a'–d') and (a''–d'') each have the same linear scaling, thus directly comparable. (e) Classification performance of prostate cancer versus references as a function of tumour grade score. (f) Classification performance of prostate cancer as a function of the Gleason score (Gs). (g) Classification performance of lung cancer versus references as a function of the metastasis status. The detailed cohort breakdown and classification results are given as Figure 5—source data 1, Figure 5—source data 2, Figure 5—source data 3, Figure 5—source data 4. Some cohorts did not include sufficient number of participants so that a reliable machine learning model could not be built and were therefore not evaluated. LuCa: lung cancer; PrCa: prostate cancer; BrCa: breast cancer; BlCa: bladder cancer; NSR: non-symptomatic references; MR: mixed references; n.s.: not significant; *p<10–2; **p<10–3; ***p<10–4; ****p<10–5; The error bars show the standard deviation of the individual results of the cross-validation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68758/elife-68758-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Comparison between (a) the AUC per wavenumber and (b) the effect size per wavenumber. The effect size is defined as the standardized difference between the sample means of cases and references, also known as Cohen’s d. The AUC per wavenumber is calculated using the U statistic of Mann–Whitney U test by the relation AUC = U/(n1 * n2). This example was performed for the comparison lung cancer (LuCa) vs. non-symptomatic references (NSR).
 
 In contrast, prostate cancer with higher T stage shows neither a significantly better AUC nor a more pronounced differential fingerprint (Figure 5d). Instead, the detection efficiency does increase significantly with tumour grade score (Amin et al., 2017; Figure 5e). A strong correlation between the AUC and Gleason score (Figure 5f) could also not be observed.
 
@@ -130,7 +240,7 @@ In summary, infrared fingerprinting reveals the potential for effective detectio
 
 ## Methods
 
-## Study design
+### Study design
 
 The objective of this study was to evaluate whether infrared molecular fingerprinting of human blood serum and plasma from patients, reference individuals, and healthy persons has any capacity to detect cancer, specifically targeting detection of four common cancer entities (lung, breast, bladder, and prostate cancer). A statistical power calculation for the sample size was performed prior to the study and is included in the study protocol. Based on preliminary results, it was determined that with a sample size of 200 cases and 200 controls, the detection power in terms of AUC can be estimated within a marginal error of 0.054. Therefore, the aim was to include more than 200 cases for each cancer type. However, upon matching (see also below), it was not always possible to include 200 individuals per group for all analyses of this study. In the analyses where the sample size of 200 individuals per group could not be reached, the uncertainty obtained increased accordingly (as seen in the obtained errors and error bars). The full sample size calculation is available on request from the corresponding authors.
 
@@ -142,15 +252,15 @@ From this pre-selected dataset, a further subset was created for each binary cla
 
 A full breakdown of all included participants (sample pool) along with the breakdown for each of the investigated binary classification is provided as source data files.
 
-## Statistical matching
+### Statistical matching
 
 Achieving covariate balance between cases and references is an important procedure in observational studies for neutralizing the effect of confounding factors and limiting the bias in the results. In this work, we deploy optimal pair matching using the Mahalanobis distance within propensity score callipers (Rosenbaum, 2010). The implementation was done in R (v. 3.5.1). In evaluations where pair matching was not sufficient, optimal matching with multiple references was performed instead.
 
-## Sample collection and storage
+### Sample collection and storage
 
 Blood samples were collected, processed, and stored according to the same standard operating procedures at each clinical site. Blood draws were all performed using Safety-Multifly needles of at least 21 G (Sarstedt) and collected with 4.9 ml or 7.5 ml serum and plasma Monovettes (Sarstedt). For the blood clotting process to take place, the tubes were stored upright for at least 20 min and then centrifuged at 2000 g for 10 min at 20°C. The supernatant was carefully aliquoted into 0.5 ml fractions and frozen at –80°C within 5 hr after collection. Samples were transported to the analysis site on dry ice and again stored at –80°C until sample preparation.
 
-## Sample preparation and FTIR measurements
+### Sample preparation and FTIR measurements
 
 In advance of the FTIR measurements, one 0.5 ml aliquot per serum or plasma sample was thawed in a water bath at 4°C and again centrifuged for 10 min at 2000 g. The supernatant was distributed into the measurement tubes (50 µl per tube) and refrozen at –80°C. All the FTIR measurements were performed upon two freeze-thaw cycles.
 
@@ -160,18 +270,18 @@ The samples were aliquoted and measured in blinded fashion, that is, the person 
 
 To track experimental errors over extended time periods (Sangster et al., 2006), a measurement of quality control serum (pooled human serum, BioWest, Nuaillé, France) was performed after every five samples. The spectra of the QC samples were also used to evaluate the measurement error. We found in a previous study that the measurement error is small when compared to the between-person biological variability of human serum IMFs (Huber et al., 2021). A relevant analysis comparing the variability between biological samples and QCs is presented in Figure 2—figure supplement 1b-b". In addition, the results obtained on a subset from plasma and serum samples from the same individuals were similar, indicating that no technical variance or device variation affected the measurement results. Thus, individual samples were not measured as replicates.
 
-## Outlier detection
+### Outlier detection
 
 If an air bubble was present during the measurement, this was immediately noticeable by saturation of the detector. In such cases, the measurement was considered faulty and another aliquot of the sample was measured. After the entire dataset was collected, we performed an additional outlier removal. For this, we used the method of Local Outlier Factor (LOF), as implemented in Scikit-Learn (v. 0.23.2) (Pedregosa et al., 2011). LOF is based on k-nearest neighbours and is appropriate for (moderately) high-dimensional data. LOF succeeds in removing samples with spectral anomalies such as abnormally low absorbance or contamination signatures. Using this procedure, a total of 28 spectra were removed from the dataset.
 
-## Pre-processing of infrared absorption spectra
+### Pre-processing of infrared absorption spectra
 
 Negative absorption, which occurs if the liquid sample contains less water than the reference (pure water), was corrected for by a previously described approach (Yang et al., 2015). It is known from measurements of dried serum or plasma that there is no significant absorption in the wavenumber region 2000–2300 cm–1, resulting in a flat absorption baseline. We used this fact as a criterion for adding to each spectrum a previously measured water absorption spectrum (as provided in Figure 2—source data 2) to account for the missing water in the sample measurement and minimize the average slope in this region in order to obtain a flat baseline. All spectra were truncated to 1000–3000 cm–1 and the ‘silent region,’ between 1750 cm–1 and 2800 cm–1, was removed. Finally, all spectra were normalized using Euclidean (L2) norm. The calculation of the second derivative of the normalized spectra was included in some cases as an additional (optional) pre-processing step.
 
-## Machine learning and classification
+### Machine learning and classification
 
 To derive classification models, we used Scikit-Learn (Pedregosa et al., 2011; v. 0.23.2), an open-source machine learning framework in Python (v.3.7.6). We trained various binary classification as well as multiclass classification models using linear SVM. Performance evaluation was carried out using repeated stratified k-fold cross-validation and its visualization using the notion of the ROC curve for binary problems and the confusion matrix for multiclass classification. The results of the cross-validation are reported in terms of descriptive statistics, that is, the mean value of the resulting AUC distribution and its standard deviation. The calculation of optimal pair of sensitivity and specificity is done by minimizing the distance of the ROC curve to the upper-left corner.
 
-## Statistical analysis
+### Statistical analysis
 
 For statistically comparing two groups of spectra (i.e. cases, references), we followed three approaches. First, we calculated the ‘differential fingerprint,’ defined as the sample mean of the cases minus the sample mean of the reference group. We plot this quantity contrasted against the standard deviation of the reference group for obtaining a visual understanding of which wavenumbers are potentially useful for distinguishing/classifying the two populations. Such a graph serves as a visual representation of what is known as the ‘effect size,’ which can be obtained by standardizing the differential fingerprint and, as shown in Figure 5—figure supplement 1, has an evident relation to the AUC per wavenumber. Secondly, we performed t-test (testing the hypothesis that two populations have equal means) for extracting two-tailed p-values per wavenumber. As a last step, we make use of Mann–Whitney U test (also known as Wilcoxon rank-sum test) for extracting the U statistic and calculating the AUC per wavenumber by the relation AUC = U/(n1*n2), where n1 and n2 are the sizes of the two groups.

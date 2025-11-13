@@ -59,13 +59,13 @@ We also previously found that olanzapine markedly inhibits insulin secretion by 
 
 ## Results
 
-## Inhibition of insulin secretion in olanzapine-treated MIN6 cells
+### Inhibition of insulin secretion in olanzapine-treated MIN6 cells
 
 MIN6 cells exhibit an approximately 7-fold increase in insulin secretion in 2 hr when the extracellular glucose concentration is increased from 5 to 25 mM (Ishihara et al., 1993). Here, we detected an approximately 4-fold increase in insulin secretion in 1 hr when the extracellular glucose concentration was increased from 3 to 25 mM (stimulation after starvation for 1 hr, Figure 1B) compared with continuous incubation in 3 mM glucose (Figure 1C, compare bar 2 with bar 1). Glucose-stimulated insulin secretion was inhibited in a concentration-dependent manner when MIN6 cells were first treated with 25 mM glucose in the presence of 10, 20, or 50 μM olanzapine for 4 hr (Figure 1C, bars 3–5) and was markedly inhibited by pretreatment for 14 hr with these same concentrations of olanzapine (Figure 1C, bars 6–8), but not by pretreatment for 14 hr with 50 μM risperidone (Figure 1D, compare bar 4 with bar 2). Pretreatment was essential for this effect, because the addition of 50 μM olanzapine from the beginning of the 1 hr starvation did not detectably inhibit glucose-stimulated insulin secretion (data not shown), suggesting that it takes time for olanzapine to exert its inhibitory effect on insulin secretion.
 
 Glycolysis causes ATP-mediated closure of the potassium (K+) channels, leading to opened calcium (Ca2+) channel-mediated influx of extracellular Ca2+. The increase in cytosolic Ca2+ concentrations culminates in fusion of insulin granules with the plasma membrane and subsequent secretion of insulin (Figure 1E; Rorsman and Braun, 2013). Therefore, insulin secretion can be induced by mastoparan, which increases intracellular Ca2+ concentrations by activating phospholipase C to produce inositol 1, 4, 5-triphosphate (Perianin and Snyderman, 1989). Indeed, treatment of MIN6 cells with mastoparan for 1 hr after glucose starvation rapidly stimulated insulin secretion (Figure 1F, compare bar 2 with bar 1). Pretreatment of MIN6 cells with 50 μM olanzapine for 14 hr partially inhibited mastoparan-induced insulin secretion (Figure 1F, compare bar 5 with bar 2). These results suggest that olanzapine may not block Ca2+-induced fusion of insulin granules with plasma membrane, but may decrease the amount of insulin stored in insulin granules.
 
-## Retention of proinsulin in the ER in olanzapine-treated MIN6 cells
+### Retention of proinsulin in the ER in olanzapine-treated MIN6 cells
 
 Proinsulin produced from preproinsulin by the action of signal peptidase becomes mature proinsulin via formation of three intramolecular disulfide bonds in the ER, and is then processed to insulin (Figure 2A). To analyze MIN6 cells which secrete both proinsulin and insulin (Lee et al., 2011; Tsuchiya et al., 2018), as is seen when isolated mouse and human islets were analyzed by pulse-chase experiments (Dufurrena et al., 2019), we employed two types of mouse monoclonal antibodies with different characteristics, namely #8138 raised against a synthetic peptide corresponding to the residues surrounding Val36 of human insulin, which are conserved in mouse insulin (yellow circle denotes Val36 in Figure 2A), and I2018 raised against human insulin. Under reducing conditions, #8138 detected mainly proinsulin in lysates of MIN6 cells, and both proinsulin and insulin B chain in lysates of mouse islets, probably reflecting their relative contents (Figure 2B). It should be noted that #8138 was 800-fold more reactive with purified recombinant human proinsulin than purified recombinant human insulin (insulin B chain) under reducing conditions (Figure 2C), and that #8138 reacted with neither proinsulin nor insulin under non-reducing conditions (Figure 2B).
 
@@ -105,7 +105,15 @@ Immunofluorescence analysis using #8138 revealed that proinsulin mainly localize
 
 We were surprised to find that proinsulin colocalized with calnexin in MIN6 cells treated with 50 μM olanzapine (Figure 7C) and that this shift in localization was detected in MIN6 cells treated with 10 μM olanzapine (Figure 7D) but not in MIN6 cells treated with 50 μM or 10 μM risperidone (Figure 7E and F). In contrast, the localization of phogrin-GFP (Figure 7G and H) or insulin (Figure 8A and B) was not altered by treatment with 50 μM olanzapine. These results suggest that olanzapine specifically affects the quality of proinsulin during its localization in the ER.
 
-## Induction of proinsulin misfolding in olanzapine-treated MIN6 cells
+![Figure 8.](https://cdn.elifesciences.org/articles/60970/elife-60970-fig8-v1.jpg)
+
+**Figure 8.:** MIN6 cells untreated (A) or treated with olanzapine (50 µM) (B) for 14 hr were analyzed by immunofluorescence using anti-insulin I2018 antibody. Bars: 5 μm. (C) MIN6 cells treated with DMSO (control), olanzapine (10 or 50 μM) or risperidone (50 μM) for 14 hr were lysed in 1% NP40. After centrifugation at 14,000 rpm for 10 min, supernatant and precipitate were analyzed by immunoblotting using anti-insulin #8138 and anti-GAPDH antibodies. Eight times greater amounts were used to analyze precipitate than total and supernatant. (D)-(G) MIN6 cells untreated or treated with olanzapine (50 µM) for 4 hr were lysed with 1% NP40 buffer containing 10 mM NEM. (D) Cell lysates were analyzed by reducing and non-reducing SDS-PAGE followed by immunoblotting using #8138. (E) Cell lysates were subjected to immunoprecipitation using #8138, and then to negative staining after non-reducing SDS-PAGE. (F) Gels at the position of HMP-1 were excised and analyzed by mass spectrometry. The results are shown by the scatter plot of log2 of the median peak area from three independent experiments between untreated cells (X axis) and olanzapine-treated cells (Y axis). A 5.7-fold increase by olanzapine treatment was observed for Ins2 as shown in the red circle. (G) Intensities of Ins2-derived fragments in untreated and olanzapine-treated cells in each experiment are shown along with the fold-induction.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/60970/elife-60970-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) ITC measurements of the interaction between olanzapine and PDI, ERp46, ERp57, ERp72, or P5. (B) (left) HPLC profile of reduced and denatured purified proinsulin. Proteins were eluted using a 20–60% linear gradient of CH3CN in 0.05% trifluoroacetic acid at an increasing rate of 1 %/min and at a flow rate of 1.0 ml/min, and elution was monitored at 220 nm. (right) MALDI-TOF/MS spectra derived from the peak around 30 min. The observed [M+H]+ is 9526.7, corresponding to the calculated [M+H]+ (9526.9).
+
+### Induction of proinsulin misfolding in olanzapine-treated MIN6 cells
 
 Treatment of MIN6 cells with the proteasome inhibitor MG132 alone increased the levels of intracellular and extracellular proinsulin (Figure 5C and D, left panels), indicating that a part of newly synthesized proinsulin is constitutively subjected to ERAD in MIN6 cells. Importantly, simultaneous treatment of MIN6 cells with olanzapine and MG132 markedly increased the level of intracellular proinsulin (Figure 5D, right top panel), indicating that proinsulin forced to be remain in the ER of olanzapine-treated cells was subjected to ERAD. Nonetheless, ERAD of retained proinsulin alone cannot explain olanzapine-induced blockage of proinsulin secretion, because proinsulin secretion was still blocked in MIN6 cells treated with both olanzapine and MG132 (Figure 5D, right bottom panel), in contrary to the case with control cells (Figure 5D, left bottom panel).
 
@@ -115,7 +123,7 @@ To identify the components of HMP-1 and HMP-2, we conducted mass spectrometric a
 
 To clarify how olanzapine induces the formation of aberrant proinsulin oligomers, we considered the possibility that olanzapine acts on certain oxidoreductases in the ER to inhibit their activities (Jang et al., 2019; Okumura et al., 2014), and therefore tested whether olanzapine directly binds to the purified enzymes using isothermal titration calorimetry (ITC), which sensitively detects heat generation or absorption upon ligand-substrate binding. However, results were negative for PDI, ERp46, ERp57, ERp72, and P5 (Figure 8—figure supplement 1A). We were also unable to precisely analyze direct interactions between olanzapine and proinsulin by ITC, because reduced proinsulin (Figure 8—figure supplement 1B) was rapidly and severely aggregated, producing significant heat exchange. Thus, direct targets of olanzapine remain to be determined.
 
-## ERAD of misfolded proinsulin in olanzapine-treated MIN6 cells and mouse islets
+### ERAD of misfolded proinsulin in olanzapine-treated MIN6 cells and mouse islets
 
 To determine whether olanzapine treatment indeed induces the production of aberrant high molecular weight forms of proinsulin and how quickly it does so, MIN6 cells pulse-labeled for 20 min were chased with the addition of olanzapine (Figure 9A). Analysis under non-reducing conditions of immunoprecipitates obtained with #8138 showed that most radioactivity was recovered as proinsulin in untreated cells (0 min), and secretion of proinsulin was inhibited in cells treated with olanzapine, as expected (Figure 9B). Importantly, the levels of HMP-1 and HMP-2 rapidly and markedly increased after treatment with olanzapine (Figure 9B).
 
@@ -151,58 +159,180 @@ In conclusion, the mechanism identified here that mediates olanzapine-induced β
 
 ## Materials and methods
 
-## Statistics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Insulinoma</td>
+      <td>Miyazaki et al., 1990</td>
+      <td>MIN6</td>
+      <td>The cell line has been authenticated and tested negative for mycoplasma.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3xFlag-CMV-14</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+)</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Phogrin-GFP</td>
+      <td>Saito et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>A1PI</td>
+      <td>Ninagawa et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA</td>
+      <td>Gething and Sambrook, 1982</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-insulin (Mouse monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat#: #8138</td>
+      <td>WB (1:1000), IP (1:400), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-insulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: I2018</td>
+      <td>WB (1:1000), IP (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat#: 11814460001</td>
+      <td>IP (1:400), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-calnexin (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-865</td>
+      <td>WB (1:1000), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDI (Rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#: ADI-SPA-890</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-A1AT (Rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>Cat#: A0012</td>
+      <td>IP (1:400), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit polyclonal)</td>
+      <td>Trevigen</td>
+      <td>Cat#: 2275-PC-100</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit polyclonal)</td>
+      <td>Recenttec</td>
+      <td>Cat#: R4-TP1411100</td>
+      <td>IP (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KDEL (Mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>Cat#: M181-3</td>
+      <td>IF (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Statistical analysis was conducted using Student's t-test, with probability expressed as *p<0.05 and **p<0.01 for all figures.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 MIN6 cells (Miyazaki et al., 1990) were cultured in Dulbecco’s modified Eagle’s medium (DMEM containing 4.5 g/liter glucose) supplemented with 2 mM L-glutamine, 10% fetal bovine serum, and antibiotics (50 U/ml penicillin and 50 μg/ml streptomycin) at 37°C in a humidified atmosphere containing 5% CO2/95% air. Transfection was performed as described previously (Ninagawa et al., 2015) using Polyethyleneimine max (Polysciences) to replace Lipofectamine 2000 (Invitrogen). MIN6 cells were transfected 1 day after seeding, and 2 days later, pulse-chase experiments or immunofluorescence analysis were conducted.
 
-## Reagents and antibodies
+### Reagents and antibodies
 
 MG132 from the Peptide Institute; mastoparan from Wako; Z-VAD-fmk from Promega; and DMEM with or without 4.5 g/l (25 mM) glucose and protease inhibitor cocktail from Nacalai Tesque. Olanzapine and risperidone were purchased from Toronto Research Chemicals. Various antibodies were obtained as described in Key Resource Table.
 
-## Construction of plasmids
+### Construction of plasmids
 
 Recombinant DNA techniques were performed according to standard procedures (Sambrook et al., 1989) and the integrity of all constructed plasmids was confirmed by extensive sequencing analyses. Mouse insulin cDNA was amplified from total RNA isolated from MIN6 cells using the primer pairs described in Supplementary file 2. These amplified fragments were inserted between the EcoRV and XhoI sites of pcDNA3.1 (Invitrogen). The plasmid to express mPhogrin-GFP (Saito et al., 2011), A1AT (Ninagawa et al., 2015) or hemagglutinin (Gething and Sambrook, 1982) was previously described.
 
-## ELISA
+### ELISA
 
 Approximately 3 × 105 of MIN6 cells were plated in 24-well plates and cultured in DMEM containing 25 mM glucose for 3 days before pretreatment for 14 hr with olanzapine or risperidone, or for 4 days before pretreatment for 4 hr with olanzapine or risperidone. Cells were washed twice with Krebs-Ringer Bicarbonate (KRB) buffer (10 mM HEPES, approximately pH 7.0, containing 120 mM NaCl, 4.7 mM KCl, 2.5 mM CaCl2, 1.2 mM MgCl2, 1.2 mM KH2PO4, 25 mM NaHCO3, and 0.1% BSA) with 3 mM glucose (Minami et al., 2000). Cells were starved for glucose for 1 hr in KRB buffer with 3 mM glucose containing olanzapine or risperidone, washed twice with KRB buffer with 3 mM glucose, and stimulated for glucose for 1 hr in KRB buffer with 25 mM glucose containing olanzapine or risperidone, with or without mastoparan. The buffer was collected, and the cells were lysed with buffer A (50 mM Tris/HCl, pH 8.0, containing 1% NP-40, 150 mM NaCl, protease inhibitor cocktail, 20 μM MG132, and 2 μM Z-VAD-fmk). After brief centrifugation, the protein concentrations of the lysates were determined using the BCA protein assay reagent kit (Pierce). Insulin content was determined using an ELISA kit (Shibayagi) according to the manufacturer’s protocol. The amount of secreted insulin was normalized to the cellular protein content.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting analysis was performed according to a standard procedure as previously described (Ninagawa et al., 2011). Chemiluminescence was generated using Western Blotting Luminol Reagent (Santa Cruz Biotechnology) and detected using an LAS-3000mini LuminoImage analyzer (Fuji Film). For detection of proinsulin and insulin, the pore size of PVDF membrane was changed from 0.45 to 0.2 µm (Amersham), and blocking and reaction with the anti-insulin monoclonal antibody was carried out in 5% BSA (Sigma-Aldrich) in PBS-0.1% Tween 20 buffer.
 
-## Pulse-chase experiment and in vitro translation
+### Pulse-chase experiment and in vitro translation
 
 Pulse-chase experiments using 9.8 Mbq per dish of EASY-TAG EXPRESS Protein labeling mix [35S] (PerkinElmer) and subsequent immunoprecipitation using the anti-insulin monoclonal antibody and protein G-coupled Sepharose beads (GE Healthcare) were performed according to a published procedure (Ninagawa et al., 2014).
 
 In vitro translation was performed using the TNT Quick Coupled Transcription/Translation Systems (Promega) and the EASY-TAG EXPRESS Protein labeling mix [35S] (PerkinElmer) according to the manufacturer’s instructions. Translated proteins were subjected to immunoprecipitation using the anti-insulin monoclonal antibody to separate them from 35S-methionine and 35S-cysteine. The immunoprecipitates were analyzed using SDS-PAGE (15 or 16% gel). Radiolabeled proteins were visualized using an FLA-3000G FluoroImage analyzer (Fuji Film).
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 For immunofluorescence analysis, untransfected MIN6 cells or cells transfected using Polyethyleneimine max were washed with PBS and fixed with 4% paraformaldehyde phosphate buffer (Nacalai Tesque) on ice for 4.5 min. Fixed cells were washed with PBS and permeabilized by incubation on ice for 4.5 min in PBS containing 0.2% Triton X-100. After incubation in PBS containing 3% fetal bovine serum and the primary antibody for 2 hr at room temperature, cells were incubated with secondary antibodies labeled with Alexa Fluors 488, 568, or 633 (Thermo Fisher Scientific) for 1 hr at room temperature. Images were acquired at room temperature at 100 × magnification using a DM IRE2 and confocal software (both from Leica).
 
-## Mass spectrometric analysis
+### Mass spectrometric analysis
 
 Nano-scale reversed-phase liquid chromatography coupled with tandem mass spectrometry (nanoLC/MS/MS) was performed with an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific), connected to a Thermo Ultimate 3000 RSLCnano pump and an HTC-PAL autosampler (CTC Analytics) equipped with a self-pulled analytical column (150 mm length ×100 μm i.d.) (Ishihama et al., 2002) packed with ReproSil-Pur C18-AQ materials (3 μm, Dr. Maisch GMBH). The mobile phases consisted of (A) 0.5% acetic acid and (B) 0.5% acetic acid and 80% acetonitrile. Peptides were eluted from the analytical column at a flow rate of 500 nl/min by altering the gradient: 5–10% B in 5 min, 10–40% B in 15 min, 40–100% B in 1 min and 100% for 4 min. The Orbitrap Fusion Lumos instrument was operated in the data-dependent mode with a full scan in the Orbitrap followed by MS/MS scans for 1.5 s using higher-energy collision dissociation (HCD). The applied voltage for ionization was 2.4 kV. The full scans were performed with a resolution of 120,000, a target value of 4 × 105 ions and a maximum injection time of 50 ms. The MS scan range was m/z 300–1500. The MS/MS scans were performed with a 15,000 resolution, a 5 × 104 target value and a 200 ms maximum injection time. Isolation window was set to 1.6 and normalized HCD collision energy was 30. Dynamic exclusion was applied for 20 s.
 
 All raw datasets were analyzed and processed by MaxQuant (v1.6.2.3) (Cox and Mann, 2008). Default settings were employed. Search parameters included two missed cleavage sites and variable modifications such as methionine oxidation, protein N-terminal acetylation, cysteine carbamidomethyl and cysteine N-ethylmaleimide. The peptide mass tolerance was six ppm and the MS/MS tolerance was 20 ppm. Database search was performed with Andromeda (Cox et al., 2011) against the UniProt mouse database (downloaded on 2019–4) with common contaminants and enzyme sequences. False discovery rate (FDR) was set to 1% at peptide spectrum match (PSM) level and at protein level. For protein quantification, total peak area of the peptides was used, and median peak area was calculated for each protein from three independent experiments. To compare protein abundance between the non-treated and the olanzapine-treated cells (see Figure 8D), we considered proteins that were quantified in all samples and replicates.
 
-## ITC experiments
+### ITC experiments
 
 ITC measurements for the interaction between olanzapine and each PDI family protein were performed in buffer containing 50 mM HEPES-NaOH, pH 7.5, at 298 K and 750 r.p.m. For the preparation of olanzapine, 10 mg of olanzapine (32.0 mmol) was diluted in 500 µl of 50 mM HCl solution and freeze-dried using evaporator. 2.0 µl of the olanzapine solution (1.0 mM) was titrated into PDI family solutions (50 μM) at 180 s intervals after an initial 120 s delay. To minimize the effect of bubbles and imperfect solution filling of the syringe, the first titration was performed using 0.6 µl of solution in the syringe. The data were analyzed using MicroCal analysis (Malvern). The heats of dilution were subtracted from the raw binding data before analysis.
 
-## Expression and purification of human proinsulin
+### Expression and purification of human proinsulin
 
 Recombinant human proinsulin was expressed as inclusion bodies in Escherichia coli cells. Purification of proinsulin was carried out as previously described (Okumura et al., 2011). Briefly, inclusion bodies were treated with 100 mM Tris/HCl buffer, pH 8.0, containing 8 M urea and 10 mM DTT, and the solution was stood for 3 hr at 50°C. Reduced and denatured proinsulin was purified by RP-HPLC using Cosmosil 5C18-AR-II (4.6 mm I.D. ×250 mm, Nacalai Tesque) monitored at 220 nm. Molecular mass of purified proinsulin was calculated using ProteinProspectors (http://prospector.ucsf.edu/prospector/mshome.htm) and its identity was confirmed by MALDI-TOF/MS. Purified proinsulin was lyophilized at −80°C until used.
 
-## Animals
+### Animals
 
 Male BALB/c mice (8 weeks old) were purchased from Shimizu Laboratory Supplies. All mouse experiments were conducted under pathogen-free conditions and in line with Institutional Animal Care protocols approved by Kyoto University (Q 19–68). Administration of vehicle or olanzapine was conducted using a reusable oral gavage needle once a day. Olanzapine was dissolved in 1% acetic acid in saline buffered with 1M NaOH to a pH >5.5 (McCormick et al., 2010).
 
-## Isolation of mouse pancreatic islets
+### Isolation of mouse pancreatic islets
 
 To isolate islets from BALB/c mice, pancreas was inflated by injection of Hank’s Balanced Salt Solution (HBSS) containing 0.15 mg/ml collagenase P (Roche Diagnostics) via the common bile duct. Distended pancreas was then excised and incubated at 37°C for 18 min. After digested pancreas had dissociated, the tissue was washed with HBSS twice. The islets in the dissociated pancreatic tissue were purified on discontinuous gradients (1.110, 1.103, 1.096, and 1.070 g/ml) of OptiPrep (Axis-Shield) and ET Kyoto (ETK) solution (Otsuka Pharmaceutical). Isolated islets were cultured (37°C/5% CO2/95% air humidified atmosphere) in RPMI1640 medium supplemented with 10% fetal bovine serum (FBS), 100 U/ml penicillin, and 100 μg/ml streptomycin.

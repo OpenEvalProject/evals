@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.13446.001 Mutations in the P53 pathway are a hallmark of human cancer. The identification of pathways upon which p53-deficient cells depend could reveal therapeutic targets that may spare normal cells with intact p53. In contrast to P53 point mutations in other cancer, complete loss of P53 is a frequent event in osteosarcoma (OS), the most common cancer of bone. The consequences of p53 loss for osteoblastic cells and OS development are poorly understood. Here we use murine OS models to demonstrate that elevated Pthlh (Pthrp ), cAMP levels and signalling via CREB1 are characteristic of both p53-deficient osteoblasts and OS. Normal osteoblasts survive depletion of both PTHrP and CREB1. In contrast, p53-deficient osteoblasts and OS depend upon continuous activation of this pathway and undergo proliferation arrest and apoptosis in the absence of PTHrP or CREB1. Our results identify the PTHrP-cAMP-CREB1 axis as an attractive pathway for therapeutic inhibition in OS. DOI: http://dx.doi.org/10.7554/eLife.13446.001
+Mutations in the P53 pathway are a hallmark of human cancer. The identification of pathways upon which p53-deficient cells depend could reveal therapeutic targets that may spare normal cells with intact p53. In contrast to P53 point mutations in other cancer, complete loss of P53 is a frequent event in osteosarcoma (OS), the most common cancer of bone. The consequences of p53 loss for osteoblastic cells and OS development are poorly understood. Here we use murine OS models to demonstrate that elevated Pthlh (Pthrp), cAMP levels and signalling via CREB1 are characteristic of both p53-deficient osteoblasts and OS. Normal osteoblasts survive depletion of both PTHrP and CREB1. In contrast, p53-deficient osteoblasts and OS depend upon continuous activation of this pathway and undergo proliferation arrest and apoptosis in the absence of PTHrP or CREB1. Our results identify the PTHrP-cAMP-CREB1 axis as an attractive pathway for therapeutic inhibition in OS.
 
 ## Introduction
 
@@ -40,119 +40,119 @@ We sought to understand how loss of p53 leads to the initiation of OS. We identi
 
 ## Results
 
-## cAMP and CREB1 dependent signaling are activated in Trp53 -deficient osteoblasts
+### cAMP and CREB1 dependent signaling are activated in Trp53 -deficient osteoblasts
 
-As inactivating mutations of
+As inactivating mutations of TP53 are universal in conventional OS, we used this to model an OS initiating lesion (Chen et al., 2014). Primary osteoblasts were isolated from R26-CreERT2ki/+Trp53+/+ (WT) and R26-CreERT2ki/+Trp53fl/fl (KO) animals and in vitro tamoxifen treatment was used to induce deletion of p53. Over 20 days culture, a loss of expression of p53 target genes in the KO cultures + tamoxifen occurred, compared to both WT and non-tamoxifen treated isogenic R26-CreERT2ki/+Trp53fl/fl cultures (Figure 1A). Given the strong association between osteoblastic differentiation, OS and cAMP signaling, we assessed if pathways were impacted by loss of p53. CREB1 transcriptional target genes were identified from ChIP and ChIP-Chip studies of CREB genomic occupancy (Kenzelmann Broz et al., 2013; Ravnskjaer et al., 2007). Only those targets that associated with CREB1 in response to cAMP activation were considered. Analogously, p53 target genes were defined from a ChIP-seq dataset from human HCT116 cells (Sánchez et al., 2014) and further refined against a second independent dataset of p53 ChIP-seq from murine embryonic fibroblasts (Kenzelmann Broz et al., 2013). Strikingly, the expression of CREB1 target genes was increased, inversely paralleling the reduction in p53 target genes (Figure 1A, Figure 1—figure supplement 1A–B). Similar gene expression results were obtained using shRNA against Trp53 in primary WT osteoblasts, demonstrating that the observed changes did not result from proliferation differences (Figure 1—figure supplement 1C–E). The altered transcript levels were reflected at the protein level, where loss of p53 was associated with an increase in total CREB1 and phosphorylated CREB1 (pCREB1) in the KO cells (Figure 1B). Interestingly, the KO cultures had increased cAMP levels compared to WT or isogenic controls (Figure 1C). Collectively, these results demonstrate that derepression of cAMP/CREB1 pathways is an early event following Trp53 mutation in osteoblasts.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig1-v2.jpg)
 
-**Figure 1.:** (A) Heat map of qPCR data. Expression of the PTHrP/CREB1 and p53 target genes between indicated cell types. Data from >3 independent cell lines for each, expressed as fold change relative to non-tamoxifen treated isogenic culture. (B) Western blot of p53, pCREB1 and CREB1, β-ACTIN used as a loading control. Data representative of 2–3 independent cell lines from each. (C) Quantification of cAMP levels (+IBMX) in the R26-CreERT2p53 (vehicle and tamoxifen treated) and +/+R26-CreERT2p53 vehicle and tamoxifen treated (p53△/△) primary osteoblasts, and day 5, 10, 15 and 20 days post tamoxifen. Data from 2 fl/flR26-CreERT2p53 and 4 +/+R26-CreERT2p53 independent cultures; mean ± SEM. (fl/flD) Experimental outline for proliferation assay; Western blot of p53, pCREB1 and CREB1 in indicated cell types, β-ACTIN used as a loading control at Day 0 of culture. Proliferation assays performed in the indicated genotype post CREB1 (E) and PTHrP (F) knockdown with tamoxifen treatment commencing at day 0; shLuc = control shRNA; Data from 4 independent R26-CreERT2p53 and 2 fl/flR26-CreERT2p53 cultures; mean ± SEM and statistics = area under the curve across the time course. (+/+G) AnnexinV/7-AAD profiles of R26-CreERT2p53 +/- tamoxifen treatment infected with control (shLuc), shfl/flCreb1_A or shPthlh_A. (H) Percent apoptotic cells in each culture +/- tamoxifen. (I) Heat map of qPCR data. Expression of the p53 and PTHrP/CREB1 target genes between cell types; 3 independent cell cultures for each condition. Data expressed as mean ± SEM (n=3). For all panels: *p<0.05, **p<0.01, ***p<0.001. See Figure 1—figure supplement 1 and Figure 1—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.13446.003
+**Figure 1.:** (A) Heat map of qPCR data. Expression of the PTHrP/CREB1 and p53 target genes between indicated cell types. Data from >3 independent cell lines for each, expressed as fold change relative to non-tamoxifen treated isogenic culture. (B) Western blot of p53, pCREB1 and CREB1, β-ACTIN used as a loading control. Data representative of 2–3 independent cell lines from each. (C) Quantification of cAMP levels (+IBMX) in the R26-CreERT2p53+/+ (vehicle and tamoxifen treated) and R26-CreERT2p53fl/fl vehicle and tamoxifen treated (p53△/△) primary osteoblasts, and day 5, 10, 15 and 20 days post tamoxifen. Data from 2 R26-CreERT2p53+/+ and 4 R26-CreERT2p53fl/fl independent cultures; mean ± SEM. (D) Experimental outline for proliferation assay; Western blot of p53, pCREB1 and CREB1 in indicated cell types, β-ACTIN used as a loading control at Day 0 of culture. Proliferation assays performed in the indicated genotype post CREB1 (E) and PTHrP (F) knockdown with tamoxifen treatment commencing at day 0; shLuc = control shRNA; Data from 4 independent R26-CreERT2p53fl/fl and 2 R26-CreERT2p53+/+ cultures; mean ± SEM and statistics = area under the curve across the time course. (G) AnnexinV/7-AAD profiles of R26-CreERT2p53fl/fl +/- tamoxifen treatment infected with control (shLuc), shCreb1_A or shPthlh_A. (H) Percent apoptotic cells in each culture +/- tamoxifen. (I) Heat map of qPCR data. Expression of the p53 and PTHrP/CREB1 target genes between cell types; 3 independent cell cultures for each condition. Data expressed as mean ± SEM (n=3). For all panels: *p<0.05, **p<0.01, ***p<0.001. See Figure 1—figure supplement 1 and Figure 1—figure supplement 2.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points +/- tamoxifen in WT (R26-CreER p53) primary osteoblast cultures (n=2 independent cultures). (+/+B) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points +/- tamoxifen in p53 deficient (R26-CreER p53) primary osteoblast cultures (n=4 independent cultures). QPCR data normalized to fl/flβ2m, for all the experiments above Students t-test was used, *p<0.05. (C) Expression of p53, CREB1, ATF1 and ACTIN after infection with a control (sh-Luc) or p53 targeting shRNA in primary long bone osteoblasts. (D) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points 48 hr after selection of cells infected with control (sh-Luc) or p53 targeting shRNA (n=3 independent cultures). qPCR data normalized to β2m. (E) Raw data normalized to β2m, for data in panel D; Students t-test was used, *p<0.05..DOI: http://dx.doi.org/10.7554/eLife.13446.004
+**Figure 1—figure supplement 1.:** (A) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points +/- tamoxifen in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures). (B) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points +/- tamoxifen in p53 deficient (R26-CreER p53fl/fl) primary osteoblast cultures (n=4 independent cultures). QPCR data normalized to β2m, for all the experiments above Students t-test was used, *p<0.05. (C) Expression of p53, CREB1, ATF1 and ACTIN after infection with a control (sh-Luc) or p53 targeting shRNA in primary long bone osteoblasts. (D) Expression of p53 (Mdm2, Cdkn1a1, Atp9a1, Atf3, Bax) and PTHrP/CREB1 (Nr4a1, Nr4a2, Nr4a3, Rgs2, Areg) target genes at the indicated time points 48 hr after selection of cells infected with control (sh-Luc) or p53 targeting shRNA (n=3 independent cultures). qPCR data normalized to β2m. (E) Raw data normalized to β2m, for data in panel D; Students t-test was used, *p<0.05..
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Pthrp and Creb1 in R26-CreER p53+/+ and R26-CreER p53fl/fl cultures +/- tamoxifen.(A) Expression of Pthlh, Creb1 and p53 in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures) at Day 0. (B) Expression of Pthlh, Creb1 and p53 in p53 deficient (R26-CreER p53) primary osteoblast cultures (n=4 independent cultures) at Day 0 of tamoxifen addition. (fl/flC) Expression of CREB1 and p53 at Day 15 and 21 in WT (R26-CreER p53) primary osteoblast cultures (n=2 independent cultures). (+/+D) Genomic PCR for p53 locus at Day 15 and 21 in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures). (E) Expression of CREB1 and pCREB1 at Day 15 and 21 in p53 deficient (R26-CreER p53) primary osteoblast cultures (n=4 independent cultures). (fl/flF) Genomic PCR for p53 locus at Day 15 and 21 in p53 deficient (R26-CreER p53) primary osteoblast cultures (n=4 independent cultures). (fl/flG) Expression of p53 target genes and (H) PTHrP/CREB1 target genes 72 hrs after infection of isogenic p53 deficient (R26-CreER p53) +/- tamoxifen primary osteoblast cultures at day 21 post tamoxifen/vehicle addition (n=3 independent cultures). Data expressed as fold change relative to shLuc vehicle control cultures. qPCR data normalized to fl/flβ2m, for all the experiments above Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.13446.005
+**Figure 1—figure supplement 2.:** (A) Expression of Pthlh, Creb1 and p53 in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures) at Day 0. (B) Expression of Pthlh, Creb1 and p53 in p53 deficient (R26-CreER p53fl/fl) primary osteoblast cultures (n=4 independent cultures) at Day 0 of tamoxifen addition. (C) Expression of CREB1 and p53 at Day 15 and 21 in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures). (D) Genomic PCR for p53 locus at Day 15 and 21 in WT (R26-CreER p53+/+) primary osteoblast cultures (n=2 independent cultures). (E) Expression of CREB1 and pCREB1 at Day 15 and 21 in p53 deficient (R26-CreER p53fl/fl) primary osteoblast cultures (n=4 independent cultures). (F) Genomic PCR for p53 locus at Day 15 and 21 in p53 deficient (R26-CreER p53fl/fl) primary osteoblast cultures (n=4 independent cultures). (G) Expression of p53 target genes and (H) PTHrP/CREB1 target genes 72 hrs after infection of isogenic p53 deficient (R26-CreER p53fl/fl) +/- tamoxifen primary osteoblast cultures at day 21 post tamoxifen/vehicle addition (n=3 independent cultures). Data expressed as fold change relative to shLuc vehicle control cultures. qPCR data normalized to β2m, for all the experiments above Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.
 
 The tamoxifen treated Trp53-KO osteoblasts hyperproliferate after ~15 days (Ng et al., 2015), coinciding with the loss of p53. Coinciding with the increased proliferation of the p53-deficient cultures was an increase in cAMP per cell and an activation of CREB1 target genes, potentially explained by the increased Pthlh expression (also known as Pthrp, Figure 1A–C). As elevated PTHrP would increase cAMP levels, the involvement of both CREB1 and PTHrP in the p53-deficient response was assessed. Primary osteoblasts from the respective genotypes were infected with two independent shRNAs against either Creb1 or Pthlh then cultured ± tamoxifen. Efficient and stable knockdown of Creb1 and Pthlh mRNA respectively was confirmed in both WT and KO cultures before tamoxifen treatment (Figure 1D, Figure 1—figure supplement 2A–B). The p53-WT cells were largely unaffected by the shRNA’s independent of tamoxifen treatment, except for an initial delayed proliferation in shCreb1 cultures (Figure 1E–F). The control (shLuc) infected KO osteoblasts hyperproliferated following tamoxifen treatment from day 15 onward (Figure 1E–F). In contrast, knockdown of either Creb1 or Pthlh completely prevented the hyperproliferation of the KO + tamoxifen cells (Figure 1E–F, Figure 1—figure supplement 2C–F). Therefore, intact PTHrP and CREB1 signaling are required for the hyperproliferation of p53 deficient osteoblasts.
 
 Finally, to assess the requirements for PTHrP and CREB1 in p53-deficient osteoblasts, we infected cells with the respective shRNAs after they had been cultured for 21 days with tamoxifen, such that the cells had already undergone the hyperproliferative transformation prior to knockdown. The p53-KO osteoblasts underwent apoptosis within 48 hr of knockdown with either shCreb1 or shPthlh whilst the isogenic control (-tam) cultures were minimally affected (Figure 1G–H). The knockdown of PTHrP/CREB1 led to an expected downregulation of PTHrP-CREB1 targets (Figure 1I, Figure 1—figure supplement 2G–H). The hyperproliferative effect of loss of Trp53 in osteoblastic cells required PTHrP and CREB1.
 
-## Autocrine PTHrP is a primary stimulus of cAMP in OS
+### Autocrine PTHrP is a primary stimulus of cAMP in OS
 
 Having established the necessity of PTHrP and CREB1 for the hyperproliferation and survival of p53-deficient osteoblasts, we sought to understand the contribution of this pathway in OS. We systematically profiled the contribution of PTHrP, cAMP and CREB1 in primary cell cultures derived from murine OS models compared to primary osteoblasts. We made use of the Sp7(Osx)-Cre Trp53fl/flRb1fl/fl model (Cre:lox deletion of Trp53 and Rb1; referred to as fibroblastic OS) which yields a OS characterised by predominant areas of fibroblastic or poorly differentiated/undifferentiated (Berman et al., 2008) histology and a cell surface phenotype consistent with immature osteoblasts (Walkley et al., 2008; Mutsaers et al., 2013). The second model was the Sp7(Osx)-Cre TRE_shp53.1224Rb1fl/fl model (shRNA knockdown of Trp53; referred to as osteoblastic OS) which histologically resemble osteoblastic OS with large mineralized areas, appreciated by von Kossa staining or microCT, and a cell surface phenotype of mature osteoblasts (Mutsaers et al., 2013). The early passage cells from both models have comparable genetic and pharmacological sensitivities to those of primary human patient derived OS cultures where tested (Gupte et al., 2015; Baker et al., 2015). As a control population (referred to herein as “primary osteoblasts”), we isolated osteoblastic cells from the collagenase digested long bones of wild-type C57BL/6 mice. These cells are negative for haematopoietic markers (lineage markers, CD45, CD11b, F4/80), negative for the endothelial cell surface marker CD31 and co-express CD51 and Sca-1. The majority of the cells have a cell surface phenotype consistent with pre-osteoblasts (lin-CD45-CD31-CD51+Sca1+) when the cultures are initiated, and when induced to differentiate acquire a mature osteoblast/osteocyte gene expression profile.
 
-We first assessed PTHrP given that PTHrP stimulates cAMP generation following activation of PTHR1, ultimately leading to CREB1 phosphorylation and transcriptional activation (
+We first assessed PTHrP given that PTHrP stimulates cAMP generation following activation of PTHR1, ultimately leading to CREB1 phosphorylation and transcriptional activation (Figure 2A). Osteoblastic OS cells expressed high levels of Pthlh transcript (Figure 2B), consistent with our previous data identifying substantial levels of intracellular PTHrP in OS cells (Ho et al., 2015). As other GPCRs are expressed on OS cells, such as β-adrenergic receptors (Figure 2—figure supplement 1A), we sought to determine if PTHrP was an OS autocrine ligand. Cells were treated with the phosphodiesterase inhibitor, IBMX, without adding exogenous PTHrP, thus assaying the cAMP induced by autocrine activation of receptor-linked adenylyl cyclase by ligand(s) provided by the OS cells. Treatment with a neutralising anti-PTHrP antibody significantly and substantially reduced cAMP levels (Onuma et al., 2004) (Figure 2C, Figure 2—figure supplement 1B). Using the shRNAs against Pthlh, a >50% reduction in the cAMP accumulation was observed (Figure 2D–E, Figure 2—figure supplement 1C). The reduction of cAMP levels by Pthlh knockdown or by antibody mediated PTHrP neutralization are consistent with OS–derived PTHrP as an endogenous ligand promoting cAMP accumulation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig2-v2.jpg)
 
-**Figure 2.:** (A) Cartoon of PTHrP-PTHR1-cAMP-CREB1 axis. (B) qPCR expression of Pthlh normalized to β2m; mean ± SEM (n=3). (C) cAMP levels after anti-PTHrP antibody treatment for fibroblastic OS (light grey) and osteoblastic OS (dark grey). Expressed as normalized mean cAMP ± SEM ((n=3/subtype). (D) Knockdown of Pthlh transcript using 2 independent shRNA (A and B) in indicated OS subtypes. Data normalized to β2m, expressed as mean ± SEM (n=3/subtype). (E) Fold reduction of cAMP levels in sh-Pthlh infected OS subtype cells. IBMX in all treatments, data displayed as normalized mean cAMP ± SEM (n=3/subtype). The data is the mean of 3 independent cell cultures for each subtype. (F) pCREB1/CREB1 protein levels following knockdown of PTHrP. Pan-ACTIN/ATF-1 used as a loading control. Data are representative of 2 independent cell cultures from each OS subtype. (G) Expression of indicated CREB1 target gene transcripts following Pthlh knockdown. Means ± SEM (n=3/subtype). (H) AnnexinV/7-AAD staining of indicated cells following infection with two independent sh-Pthlh (A and B) or sh-Luc control. (I) Quantitation of dead cells in indicated cell type. The data represents 3 independent cell cultures for each type, mean ± SEM (n=3). *p<0.05, **p<0.001, ***p<0.0001. (J) In vivo bilateral grafts of independent fibrobastic OS lines OS80 and 494H with control (sh-Luc) on one flank and sh-Pthlh_A on the other flank. Data expressed as mean weight ± SEM (n=3 tumours per shRNA per cell line; performed once); P value as indicated. See Figure 2—figure supplement 1 and Figure 2—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.13446.006
+**Figure 2.:** (A) Cartoon of PTHrP-PTHR1-cAMP-CREB1 axis. (B) qPCR expression of Pthlh normalized to β2m; mean ± SEM (n=3). (C) cAMP levels after anti-PTHrP antibody treatment for fibroblastic OS (light grey) and osteoblastic OS (dark grey). Expressed as normalized mean cAMP ± SEM ((n=3/subtype). (D) Knockdown of Pthlh transcript using 2 independent shRNA (A and B) in indicated OS subtypes. Data normalized to β2m, expressed as mean ± SEM (n=3/subtype). (E) Fold reduction of cAMP levels in sh-Pthlh infected OS subtype cells. IBMX in all treatments, data displayed as normalized mean cAMP ± SEM (n=3/subtype). The data is the mean of 3 independent cell cultures for each subtype. (F) pCREB1/CREB1 protein levels following knockdown of PTHrP. Pan-ACTIN/ATF-1 used as a loading control. Data are representative of 2 independent cell cultures from each OS subtype. (G) Expression of indicated CREB1 target gene transcripts following Pthlh knockdown. Means ± SEM (n=3/subtype). (H) AnnexinV/7-AAD staining of indicated cells following infection with two independent sh-Pthlh (A and B) or sh-Luc control. (I) Quantitation of dead cells in indicated cell type. The data represents 3 independent cell cultures for each type, mean ± SEM (n=3). *p<0.05, **p<0.001, ***p<0.0001. (J) In vivo bilateral grafts of independent fibrobastic OS lines OS80 and 494H with control (sh-Luc) on one flank and sh-Pthlh_A on the other flank. Data expressed as mean weight ± SEM (n=3 tumours per shRNA per cell line; performed once); P value as indicated. See Figure 2—figure supplement 1 and Figure 2—figure supplement 2.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Average number of reads (TMM normalised, RNA-seq) representing the GPCRs expressed in fibroblastic and osteoblastic OS. (B) cAMP assays in 3 independent cell cultures within 2 OS subtypes depicting the effect of PTHrP blockade using anti-PTHrP antibody. (C) cAMP assays in 3 independent cell cultures within 2 OS subtypes post Pthlh knockdown. (D) Western blot showing the loss of PTHrP protein upon knockdown as compared to control cells (E) Cell proliferation post knockdown of Pthlh in two fibroblastic OS cultures. (F, G) Expression of genes in fibroblastic OS cultures (OS80 and 494H) by qPCR and normalized to Hprt. Data expressed as relative expression.DOI: http://dx.doi.org/10.7554/eLife.13446.007
+**Figure 2—figure supplement 1.:** (A) Average number of reads (TMM normalised, RNA-seq) representing the GPCRs expressed in fibroblastic and osteoblastic OS. (B) cAMP assays in 3 independent cell cultures within 2 OS subtypes depicting the effect of PTHrP blockade using anti-PTHrP antibody. (C) cAMP assays in 3 independent cell cultures within 2 OS subtypes post Pthlh knockdown. (D) Western blot showing the loss of PTHrP protein upon knockdown as compared to control cells (E) Cell proliferation post knockdown of Pthlh in two fibroblastic OS cultures. (F, G) Expression of genes in fibroblastic OS cultures (OS80 and 494H) by qPCR and normalized to Hprt. Data expressed as relative expression.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Quantification of PTHrP levels in the media of primary osteoblasts infected with control retrovirus (MSCV_Control; empty vector) or PTHrP expressing retrovirus (MSCV_PTHrP). Media from infected cells was applied to UMR106.01 cells and cAMP levels measured by radioimmunoassay. (B) Representative AnnexinV/7-AAD staining profiles of primary osteoblasts following infection with control or PTHrP overexpressing retrovirus. (C) Quantitation of cell death from AnnexinV/7-AAD staining following infection with control or PTHrP overexpressing retrovirus. Data expressed as mean ± SEM, Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.13446.008
+**Figure 2—figure supplement 2.:** (A) Quantification of PTHrP levels in the media of primary osteoblasts infected with control retrovirus (MSCV_Control; empty vector) or PTHrP expressing retrovirus (MSCV_PTHrP). Media from infected cells was applied to UMR106.01 cells and cAMP levels measured by radioimmunoassay. (B) Representative AnnexinV/7-AAD staining profiles of primary osteoblasts following infection with control or PTHrP overexpressing retrovirus. (C) Quantitation of cell death from AnnexinV/7-AAD staining following infection with control or PTHrP overexpressing retrovirus. Data expressed as mean ± SEM, Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.
 
 Knockdown of Pthlh (Figure 2—figure supplement 1D) reduced the proliferation (Figure 2—figure supplement 1E), transcription of known target genes (Figure 2—figure supplement 1F–G) and the levels of pCREB1, and surprisingly, total CREB1 in OS cells at early time points post infection (Figure 2F). Correspondingly there was a significant reduction in the basal expression of CREB1 target genes (Figure 2G). Next, cell survival 48–72 hr after shRNA infection was assessed. Primary osteoblasts were largely unaffected by Pthrp knockdown. In contrast there was a rapid induction of apoptosis following Pthlh knockdown in OS cells (Figure 2H–I). To determine the contribution of elevated PTHrP expression on OS initiation, we retrovirally overexpressed PTHrP in wild-type primary osteoblasts. Surprisingly, the cells overexpressing high levels of PTHrP failed to thrive and a significant proportion underwent cell death indicating that PTHrP overexpression alone is not sufficient to support OS initiation (Figure 2—figure supplement 2A–C). Two different fibroblastic OS lines infected with control (sh-Luc) or sh-Pthlh_A were grafted subcutaneously in vivo and both had significantly reduced proliferation as measured by tumor weight (Figure 2J), comparable to the effects of shPthr1 knockdown in the same OS lines (Ho et al., 2015). These results demonstrate that PTHrP is a critical, OS cell-derived stimulus of the elevated cAMP in OS.
 
-## Elevated cAMP levels in OS lead to sustained CREB1 activation
+### Elevated cAMP levels in OS lead to sustained CREB1 activation
 
-We next assessed basal cAMP levels in normal osteoblasts and the two OS subtypes in unstimulated proliferating cultures (with and without phosphodiesterase inhibition but no exogenous ligand treatment). OS cells produced significantly greater amounts of intracellular cAMP compared to primary murine osteoblasts (
+We next assessed basal cAMP levels in normal osteoblasts and the two OS subtypes in unstimulated proliferating cultures (with and without phosphodiesterase inhibition but no exogenous ligand treatment). OS cells produced significantly greater amounts of intracellular cAMP compared to primary murine osteoblasts (Figure 3A, Figure 3—figure supplement 1A). Furthermore, treatment with the direct cAMP agonist forskolin in the presence of IBMX resulted in an increased and sustained accumulation of cAMP in OS compared to primary osteoblasts (Figure 3B). Without IBMX the relative responses to forskolin remained the same, albeit with lower cAMP levels (Figure 3—figure supplement 1B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig3-v2.jpg)
 
-**Figure 3.:** (A) cAMP levels in indicated cells (1000 cells per well) with and without IBMX treatment. Data from 3 independent cultures per type, mean ± SEM. (B) Intracellular cAMP levels in indicated cell type following treatment with forskolin; mean ± SEM (n=3 per cell type; 1000 cells per well); statistical significance for OS vs normal Ob; all points of fibroblastic vs osteoblastic OS not significantly different. (C) Western blot and (D) quantification of CREB1/pCREB1 during a time course of cAMP activation by forskolin. Data representative of 2 independent cultures each. (E) Heat map of qPCR data. CREB1 target gene expression in indicated cells; data expressed as relative expression. (F) ChIP analysis of CREB1/pCREB1 on the promoters of indicated genes over a 2 hr time course following stimulation with forskolin. Data is represented as percentage of input. The data from 2 independent cell lines for each subtypes mean occupancy ± SEM (n=2–3 assays per line). (G) Western blot of CREB1/pCREB1 expression in proliferating non stimulated cultures, β-ACTIN used as a loading control. Data representative of 3–4 independent cell lines from each type. (H) CREB1 transcript expression in human osteoblasts and osteosarcoma (data taken from PMID: 25961939). (I) Western CREB1/pCREB1 expression in indicated cell types under differentiative conditions, ATF-1 used as a loading control. (J) Relative expression of negative regulators of cAMP in OS subtypes compared to primary osteoblasts by qPCR and normalized to β2m represented as a heat map (n=3/cell type). *p<0.05, **p<0.001, ***p<0.0001. See Figure 3—figure supplement 1 and Figure 3—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.13446.009
+**Figure 3.:** (A) cAMP levels in indicated cells (1000 cells per well) with and without IBMX treatment. Data from 3 independent cultures per type, mean ± SEM. (B) Intracellular cAMP levels in indicated cell type following treatment with forskolin; mean ± SEM (n=3 per cell type; 1000 cells per well); statistical significance for OS vs normal Ob; all points of fibroblastic vs osteoblastic OS not significantly different. (C) Western blot and (D) quantification of CREB1/pCREB1 during a time course of cAMP activation by forskolin. Data representative of 2 independent cultures each. (E) Heat map of qPCR data. CREB1 target gene expression in indicated cells; data expressed as relative expression. (F) ChIP analysis of CREB1/pCREB1 on the promoters of indicated genes over a 2 hr time course following stimulation with forskolin. Data is represented as percentage of input. The data from 2 independent cell lines for each subtypes mean occupancy ± SEM (n=2–3 assays per line). (G) Western blot of CREB1/pCREB1 expression in proliferating non stimulated cultures, β-ACTIN used as a loading control. Data representative of 3–4 independent cell lines from each type. (H) CREB1 transcript expression in human osteoblasts and osteosarcoma (data taken from PMID: 25961939). (I) Western CREB1/pCREB1 expression in indicated cell types under differentiative conditions, ATF-1 used as a loading control. (J) Relative expression of negative regulators of cAMP in OS subtypes compared to primary osteoblasts by qPCR and normalized to β2m represented as a heat map (n=3/cell type). *p<0.05, **p<0.001, ***p<0.0001. See Figure 3—figure supplement 1 and Figure 3—figure supplement 2.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Quantification of cAMP in primary osteoblasts, and OS with and without IBMX treatment (500 cells/well). Data represents 3 independent cell cultures for each type, mean ± SEM. (B) Kinetics of cAMP accumulation in OS subtypes as compared to primary osteoblasts in the absence of IBMX treated with 10 μM forskolin (using 500 cells/well). (C-D) qPCR validation of CREB1 target gene expression following 10 μM forskolin treatment over a time course of 2 hr. The data represents 3 independent cell cultures for each subtype ± SEM (n=3). (E) Expression of CREB1 target genes post knockdown of Creb1 using siRNA by qPCR and normalized to β2m. Means ± SEM (n=3). The data represents 3 independent cell lines for each subtype ± SEM (n=3). Effect of Creb1 knockdown on Crem1 expression in fibroblastic OS (F) and osteoblastic OS (G), respectively. Expression of Crem1 by qPCR and normalized to β2m. Means ± SEM (n=3). (H) Expression of Creb1 in primary osteoblasts compared to each OS subtype by qPCR and normalized to β2m. Means± SEM (n=3). For all the experiments above Students t-test was used to assess statistical significance, *p<0.05, **p<0.001, ***p<0.0001DOI: http://dx.doi.org/10.7554/eLife.13446.010
+**Figure 3—figure supplement 1.:** (A) Quantification of cAMP in primary osteoblasts, and OS with and without IBMX treatment (500 cells/well). Data represents 3 independent cell cultures for each type, mean ± SEM. (B) Kinetics of cAMP accumulation in OS subtypes as compared to primary osteoblasts in the absence of IBMX treated with 10 μM forskolin (using 500 cells/well). (C-D) qPCR validation of CREB1 target gene expression following 10 μM forskolin treatment over a time course of 2 hr. The data represents 3 independent cell cultures for each subtype ± SEM (n=3). (E) Expression of CREB1 target genes post knockdown of Creb1 using siRNA by qPCR and normalized to β2m. Means ± SEM (n=3). The data represents 3 independent cell lines for each subtype ± SEM (n=3). Effect of Creb1 knockdown on Crem1 expression in fibroblastic OS (F) and osteoblastic OS (G), respectively. Expression of Crem1 by qPCR and normalized to β2m. Means ± SEM (n=3). (H) Expression of Creb1 in primary osteoblasts compared to each OS subtype by qPCR and normalized to β2m. Means± SEM (n=3). For all the experiments above Students t-test was used to assess statistical significance, *p<0.05, **p<0.001, ***p<0.0001
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Creb1 dynamics in osteoblasts and OS.(A) Expression of Creb1 during in vitro differentiation of primary osteoblasts, data expressed as mean ± SEM (n=3). (B) Expression of Creb1 during in vitro differentiation of fibroblastic OS, data expressed as mean ± SEM (n=3). (C) Expression of CREB1 protein during in vitro differentiation of primary human osteoblasts isolated from normal healthy donors (17–35 year old). (D) Expression of CREB1 transcript during in vitro differentiation of primary human osteoblasts and markers of osteoblast differentiation state as indicated, data expressed as normalized gene expression compared to β2microglobulin expression; graphed as mean ± SEM (n=5 independent donor samples). (E) Expression of negative regulators of cAMP in OS subtypes compared to primary osteoblasts by qPCR and normalized to β2m (n=3/cell type). *p<0.05, **p<0.001, ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.13446.011
+**Figure 3—figure supplement 2.:** (A) Expression of Creb1 during in vitro differentiation of primary osteoblasts, data expressed as mean ± SEM (n=3). (B) Expression of Creb1 during in vitro differentiation of fibroblastic OS, data expressed as mean ± SEM (n=3). (C) Expression of CREB1 protein during in vitro differentiation of primary human osteoblasts isolated from normal healthy donors (17–35 year old). (D) Expression of CREB1 transcript during in vitro differentiation of primary human osteoblasts and markers of osteoblast differentiation state as indicated, data expressed as normalized gene expression compared to β2microglobulin expression; graphed as mean ± SEM (n=5 independent donor samples). (E) Expression of negative regulators of cAMP in OS subtypes compared to primary osteoblasts by qPCR and normalized to β2m (n=3/cell type). *p<0.05, **p<0.001, ***p<0.0001.
 
 Based on the elevated cAMP in OS, we tested the dynamics of CREB1 phosphorylation in serum starved cells to acute elevation of cAMP induced by forskolin. Induction of pCREB1 was rapid in normal osteoblasts, peaking at 30 min, then reducing throughout the 120 min time course as expected (Figure 3C–D). In contrast, OS cells displayed continuous and persistent activation of pCREB1, consistent with the cAMP levels (Figure 3C–D). The OS-specific altered dynamics of cAMP and pCREB1 resulted in aberrantly extended transcriptional activation of known CREB1 target genes based on both transcript expression and chromatin occupancy of CREB1/pCREB1 (Figure 3E–F, Figure 3—figure supplement 1C–D). The requirement for CREB1 in the transcription of these targets in fibroblastic OS was confirmed using siRNA (Figure 3—figure supplement 1E). Importantly, there was no evidence of compensation for loss of Creb1 by the related Crem1 in either OS subtype (Figure 3—figure supplement 1F–G) (Mantamadiotis et al., 2002).
 
-## OS cells fail to reduce CREB1 activity during maturation
+### OS cells fail to reduce CREB1 activity during maturation
 
 We assessed the levels of pCREB1, the downstream transcriptional effector of cAMP signaling, in proliferating OS cells compared to primary osteoblasts. CREB1 was more prominently phosphorylated in the osteoblastic OS than in either the fibroblastic OS or primary osteoblasts (Figure 3G). qRT-PCR using independent OS cultures and primary osteoblasts demonstrated that the mean Creb1 expression was 2–3 fold higher in osteoblastic OS compared to fibroblastic OS and primary osteoblasts (Figure 3—figure supplement 1H). Analysis of RNA-seq from human OS revealed a significant increased in the expression level of Creb1 in OS compared to normal osteoblasts (Figure 3H) (Moriarity et al., 2015). During culture in differentiation inductive conditions, CREB1 levels reduced over the first 7 days in osteoblasts and stayed low for the remainder of the culture (Figure 3I, Figure 3—figure supplement 2A). In contrast, OS cells maintained CREB1 expression under the same conditions (Figure 3I, Figure 3—figure supplement 2B). The decrease in CREB1 expression (both transcript and protein levels) upon differentiation was confirmed in primary human osteoblasts (Figure 3—figure supplement 2C–D).
 
 In human OS, somatic SNV mutations in negative regulators of cAMP levels were described, including members of the phosphodiesterases (PDE), A kinase anchoring proteins (AKAP) and protein phosphatases (PP) (Chen et al., 2014). There was a 2–3 fold decreased expression of several members of these gene families in the murine OS cells compared to primary osteoblasts (Figure 3J, Figure 3—figure supplement 2E). The reduced expression of PDE, AKAPs and PPs would be expected to favour the accumulation and action of cAMP following GPCR activation.
 
-## Constitutively active cAMP differentially impacts primary osteoblasts and p53-deficient OS
+### Constitutively active cAMP differentially impacts primary osteoblasts and p53-deficient OS
 
 As intracellular cAMP increased following p53 deletion in primary osteoblasts, we sought to determine the effect of elevated cAMP levels on normal osteoblast differentiation. Primary osteoblasts were treated with the forskolin and their response compared to that of OS cells (Walkley et al., 2008; Mutsaers et al., 2013). Forskolin stimulates cAMP independently from cell surface GPCRs so was used instead of PTHrP, allowing a meaningful comparison of the isolated consequences of elevated cAMP as undifferentiated primary osteoblasts express less PTHR1 compared to the OS cells (Mutsaers et al., 2013).
 
-After 72 hr treatment, primary osteoblasts had altered cell surface phenotypes and reduced expression of
+After 72 hr treatment, primary osteoblasts had altered cell surface phenotypes and reduced expression of Runx2 and Osx (Figure 4A–C) (Mutsaers et al., 2013). Brief exposure to forskolin (24 hr) yielded the same result (Figure 4—figure supplement 1A–B). During differentiation, cAMP activation led to decreased expression of differentiation markers and failure to normally mineralise (Figure 4D–E, Figure 4—figure supplement 1C–D). Therefore continuously elevated cAMP increased features associated with immature osteoblasts. In OS cells, the cell surface phenotypes and expression of Runx2 and Sp7 were the inverse of primary osteoblasts after 72 hr forskolin treatment (Figure 4F–H, Figure 4—figure supplement 1E). Under differentiation conditions, forskolin induced less profound changes in the expression of markers of osteoblast maturation, with the exception of Osteocalcin (Figure 4I), and resulted in increased mineralization (Figure 4J, Figure 4—figure supplement 1D–G). To determine the consequences of CREB1 retention in OS cells, CREB1 was knocked down using both shRNAs (3’UTR, CDS) in fibroblastic OS cells and differentiation evaluated (Figure 4—figure supplement 1J–L). Both early and late markers of maturation were reduced with sh-Creb1 (Figure 4—figure supplement 1J). Mineralization was significantly reduced in sh-Creb1 expressing cells compared to controls (Figure 4—figure supplement 1K–L). The level of intracellular cAMP achieved with forskolin treatment is significantly higher that that achieved by cell derived autocrine/paracrine stimuli, such as secreted PTHrP (Figure 4—figure supplement 2A–C). These levels likely reflect maximal stimulation through the cAMP pathway in these cells which yields a distinct biological effect on primary osteoblastic cells compared to OS derived primary cultures. Therefore continuously elevated cAMP has distinct effects on the behaviour of normal osteoblasts and OS.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig4-v2.jpg)
 
-**Figure 4.:** (A) Primary osteoblasts treated with DMSO or forskolin for 72 hr and assessed for expression of Sca-1, CD51, PDGFRα , representative results shown, n=3 independent experiments. (B) Quantitation of cell surface markers from each treatment (n=3 independent cultures) (C) Expression of Sp7 (Osterix) and Runx2 by qPCR after 72 hr of forskolin treatment. Expression levels normalized to β2m; mean ± SEM (n=3). (D) Expression level of indicated genes over 21 days of treatment with DMSO or forskolin. Expression normalized to β2m; mean ± SEM (n=3). (E) Mineralisation analysis of primary osteoblasts at day 21 after treatment. Images are representative of 3 independent experiments. (F) Fibroblastic OS cells were treated with DMSO or forskolin for 72 hr and assessed for expression of Sca-1, CD51, PDGFRα, representative results shown. (G) Quantitation of cell surface markers from (n=3 independent cultures of fibroblastic OS) from each treatment. (H) Expression of Sp7 (Osterix) and Runx2 in fibroblastic OS by qPCR following 72 hr treatment. Expression levels normalized to β2m; mean ± SEM (n=3). (I) Expression of indicated genes in fibroblastic OS over 21 days from each treatment. Expression normalized to β2m; mean ± SEM (n=3). (J) Representative images of alizarin red stained fibroblastic OS cells treated with DMSO or forskolin for 21 day; n=3 independent OS cultures; *p<0.05, **p<0.001, ***p<0.0001. See Figure 4—figure supplement 1 and Figure 4—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.13446.012
+**Figure 4.:** (A) Primary osteoblasts treated with DMSO or forskolin for 72 hr and assessed for expression of Sca-1, CD51, PDGFRα , representative results shown, n=3 independent experiments. (B) Quantitation of cell surface markers from each treatment (n=3 independent cultures) (C) Expression of Sp7 (Osterix) and Runx2 by qPCR after 72 hr of forskolin treatment. Expression levels normalized to β2m; mean ± SEM (n=3). (D) Expression level of indicated genes over 21 days of treatment with DMSO or forskolin. Expression normalized to β2m; mean ± SEM (n=3). (E) Mineralisation analysis of primary osteoblasts at day 21 after treatment. Images are representative of 3 independent experiments. (F) Fibroblastic OS cells were treated with DMSO or forskolin for 72 hr and assessed for expression of Sca-1, CD51, PDGFRα, representative results shown. (G) Quantitation of cell surface markers from (n=3 independent cultures of fibroblastic OS) from each treatment. (H) Expression of Sp7 (Osterix) and Runx2 in fibroblastic OS by qPCR following 72 hr treatment. Expression levels normalized to β2m; mean ± SEM (n=3). (I) Expression of indicated genes in fibroblastic OS over 21 days from each treatment. Expression normalized to β2m; mean ± SEM (n=3). (J) Representative images of alizarin red stained fibroblastic OS cells treated with DMSO or forskolin for 21 day; n=3 independent OS cultures; *p<0.05, **p<0.001, ***p<0.0001. See Figure 4—figure supplement 1 and Figure 4—figure supplement 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A, B) Expression of Runx2 and Osterix by qPCR and normalized to β2m; means ± SEM (n=3). (C, D) Quantitation of elution of Alizarin red stain from primary osteoblasts and fibroblastic OS cells treated with DMSO or 10 μM forskolin for 21 days. The data is representative of 3 independent experiments with each. (E) Cell surface profiling for Sca-1 and CD51 (αV Integrin), PDGFRα on osteoblastic OS cells (F) Quantitation of Sca-1/CD51, Sca-1/PDGFRα and CD51/PDGFRα populations in osteoblastic OS (n>3) with (blue bars) and without (black bars) forskolin treatment. (G) Mineralisation assay showing alizarin red staining of osteoblastic OS cells. (H) Quantitation of elution of Alizarin red staining of osteoblastic OS cells treated with DMSO or 10 μM forskolin for 21 days. The data is representation of 3 independent experiments. (I) Representative western blot for CREB1 following infection with 2 independent shRNA or control shRNA (shLuc). (J) Gene expression analysis of fibroblastic OS infected with the indicated shRNA and placed in differentiating conditions for the indicated periods of time. qPCR data normalized to β2m (n=3/cell type). (K-L) Representative alizarin stained wells and quantitation of alizarin elution from day 21 cultures in differentiating conditions with fibroblastic OS. For all the experiments above Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.DOI: http://dx.doi.org/10.7554/eLife.13446.013
+**Figure 4—figure supplement 1.:** (A, B) Expression of Runx2 and Osterix by qPCR and normalized to β2m; means ± SEM (n=3). (C, D) Quantitation of elution of Alizarin red stain from primary osteoblasts and fibroblastic OS cells treated with DMSO or 10 μM forskolin for 21 days. The data is representative of 3 independent experiments with each. (E) Cell surface profiling for Sca-1 and CD51 (αV Integrin), PDGFRα on osteoblastic OS cells (F) Quantitation of Sca-1/CD51, Sca-1/PDGFRα and CD51/PDGFRα populations in osteoblastic OS (n>3) with (blue bars) and without (black bars) forskolin treatment. (G) Mineralisation assay showing alizarin red staining of osteoblastic OS cells. (H) Quantitation of elution of Alizarin red staining of osteoblastic OS cells treated with DMSO or 10 μM forskolin for 21 days. The data is representation of 3 independent experiments. (I) Representative western blot for CREB1 following infection with 2 independent shRNA or control shRNA (shLuc). (J) Gene expression analysis of fibroblastic OS infected with the indicated shRNA and placed in differentiating conditions for the indicated periods of time. qPCR data normalized to β2m (n=3/cell type). (K-L) Representative alizarin stained wells and quantitation of alizarin elution from day 21 cultures in differentiating conditions with fibroblastic OS. For all the experiments above Students t-test was used, *p<0.05, **p<0.001, ***p<0.0001.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 0 and day 21 of culture in differentiation inductive conditions with no exogenous agonist added (IBMX treated only); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3). (B) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 21 of culture in differentiation inductive conditions with forskolin (continuously present in the culture); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3). (C) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 21 of culture in differentiation inductive conditions with acute forskolin treatment at day 21 (20 min exposure to forskolin only); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3).DOI: http://dx.doi.org/10.7554/eLife.13446.014
+**Figure 4—figure supplement 2.:** (A) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 0 and day 21 of culture in differentiation inductive conditions with no exogenous agonist added (IBMX treated only); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3). (B) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 21 of culture in differentiation inductive conditions with forskolin (continuously present in the culture); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3). (C) Intracellular cAMP levels in primary osteoblasts and fibroblastic OS cells at day 21 of culture in differentiation inductive conditions with acute forskolin treatment at day 21 (20 min exposure to forskolin only); data expressed as cAMP level (pmol) per μg protein; graphed as mean ± SEM (n=3).
 
-## OS subtypes have a differential dependence upon CREB1
+### OS subtypes have a differential dependence upon CREB1
 
-Reducing PTHrP levels caused apoptosis of OS cells and also reduced levels of CREB1/pCREB1 (
+Reducing PTHrP levels caused apoptosis of OS cells and also reduced levels of CREB1/pCREB1 (Figure 2F, Figure 2H–J). To determine if loss of CREB1 impacted OS cell survival similarly we assessed the effects of Creb1 knockdown. In all cohorts there was loss of CREB1 protein (Figure 5A–C). CREB1 knockdown in primary osteoblasts caused reduced proliferation in the first week then the cells recovered and proliferated similarly to control infected cells thereafter, with no apparent effect on survival (Figure 5A). Loss of CREB1 in fibroblastic OS cells resulted in sustained proliferation impairment, yet cell survival was not appreciably impacted (Figure 5B). Knockdown of CREB1 in osteoblastic OS, the most common clinical subtype, caused profound proliferation arrest and apoptosis (Figure 5C). The effect was so complete that we have not been able to establish stable sh-Creb1 expressing cultures from the osteoblastic OS. The phenotype was observed with both sh-Creb1 constructs and in ≥3 independent cultures. Therefore, CREB1 is dispensable for normal osteoblast function yet required for proliferation of fibroblastic OS and survival of osteoblastic OS.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig5-v2.jpg)
 
-**Figure 5.:** (A) CREB1 in primary osteoblasts 72 hr after infection with indicated shRNA construct. ATF1 was used as a loading control; representative blot from 3 independent cultures; proliferation plotted as mean ± SEM (n=3). (B) Western blot of CREB1 and proliferation kinetics of shCreb1 knockdown and sh-Luc fibroblastic OS; representative blot from 3 independent OS lines; proliferation as mean ± SEM (n=3). (C) Western of CREB1 in osteoblastic OS cells 72 hr after infection; ATF1 = loading control. Viability (annexinV/7AAD) of indicated OS subtype following infection with each shRNA. Data are representative of 3 independent cell lines/type; quantitation of dead cells. Data from 3 independent cell lines/subtypes; mean ± SEM. *p<0.05, **p<0.001, ***p<0.0001DOI: http://dx.doi.org/10.7554/eLife.13446.015
+**Figure 5.:** (A) CREB1 in primary osteoblasts 72 hr after infection with indicated shRNA construct. ATF1 was used as a loading control; representative blot from 3 independent cultures; proliferation plotted as mean ± SEM (n=3). (B) Western blot of CREB1 and proliferation kinetics of shCreb1 knockdown and sh-Luc fibroblastic OS; representative blot from 3 independent OS lines; proliferation as mean ± SEM (n=3). (C) Western of CREB1 in osteoblastic OS cells 72 hr after infection; ATF1 = loading control. Viability (annexinV/7AAD) of indicated OS subtype following infection with each shRNA. Data are representative of 3 independent cell lines/type; quantitation of dead cells. Data from 3 independent cell lines/subtypes; mean ± SEM. *p<0.05, **p<0.001, ***p<0.0001
 
-## OS subtypes can be discriminated by CREB1 target gene signatures
+### OS subtypes can be discriminated by CREB1 target gene signatures
 
-Given the subtype specific effects of CREB1 knockdown, we sought to determine if CREB1 gene signatures could be used to appreciate differences between the subtypes. We modelled our analysis on the evidence that PTHrP was the endogenous ligand leading to cAMP accumulation and CREB1 activation. We defined a PTHrP-specific gene signature bioinformatically from previous microarrays comparing PTHrP(1–141) to PTH(1–34) in differentiating osteoblasts (
+Given the subtype specific effects of CREB1 knockdown, we sought to determine if CREB1 gene signatures could be used to appreciate differences between the subtypes. We modelled our analysis on the evidence that PTHrP was the endogenous ligand leading to cAMP accumulation and CREB1 activation. We defined a PTHrP-specific gene signature bioinformatically from previous microarrays comparing PTHrP(1–141) to PTH(1–34) in differentiating osteoblasts (Allan et al., 2008). The top 45 candidates from the signature were validated. Using proliferating primary osteoblasts, fibroblastic OS and osteoblastic OS cells, 32 of the 45 genes were most highly expressed in the osteoblastic OS (Figure 6A). Archetypal CREB1 target genes were all more highly expressed in osteoblastic OS (Figure 6B, Figure 6—figure supplement 1A–C). Chromatin immunoprecipitation-PCR (ChIP-qPCR) demonstrated enrichment of active pCREB1 and serine 2 phosphorylated RNA polymerase II (pPolII), a mark of active transcription, on CREB1 target genes in osteoblastic OS (Figure 6C, Figure 6—figure supplement 1D) (Ho and Shuman, 1999). Promoter binding was generally lower in the fibroblastic OS, consistent with the expression patterns of the target genes. The enhanced binding of CREB1 in osteoblastic OS corresponded to the elevated levels of cAMP and osteoblastic OS is characterised by increased CREB1 activity.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig6-v2.jpg)
 
-**Figure 6.:** (A) Heat map of qPCR data. Expression of the PTHrP/CREB1 gene set between indicated cell types. Data from 3 independent cultures for each, expressed as fold change relative to primary osteoblasts. (B) Examples of CREB1 target gene expression between the indicated cell types. Expression levels normalized to β2m and depicted as relative expression ± SEM (n=3). (C) ChIP-qPCR for the indicated target genes from proliferating cells (no exogenous ligand/stimulus of cAMP applied) with CREB1, pCREB1 and pPolII. Data represented as fold occupancy relative to Dpp10 promoter, expressed as mean ± SEM. *p<0.05, **p<0.001, ***p<0.0001. See also Figure 6—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.13446.016
+**Figure 6.:** (A) Heat map of qPCR data. Expression of the PTHrP/CREB1 gene set between indicated cell types. Data from 3 independent cultures for each, expressed as fold change relative to primary osteoblasts. (B) Examples of CREB1 target gene expression between the indicated cell types. Expression levels normalized to β2m and depicted as relative expression ± SEM (n=3). (C) ChIP-qPCR for the indicated target genes from proliferating cells (no exogenous ligand/stimulus of cAMP applied) with CREB1, pCREB1 and pPolII. Data represented as fold occupancy relative to Dpp10 promoter, expressed as mean ± SEM. *p<0.05, **p<0.001, ***p<0.0001. See also Figure 6—figure supplement 1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A, B, C) Expression of Creb1 signatures (upregulated, downregulated and unchanged) were assessed in mouse OS subtypes compared to primary osteoblast cells by qPCR. Expression normalized to β2m respectively. Data represents average relative expression ± SEM (n≥3). (D) ChIP experiments depicting the binding of CREB1, pCREB1 and Pol II on CREB1 target genes. Enriched DNA by ChIP was amplified using primers against the promoters of mentioned targets. Data is represented as fold occupancy calculated with respect to binding over a cold promoter DPP10.DOI: http://dx.doi.org/10.7554/eLife.13446.017
+**Figure 6—figure supplement 1.:** (A, B, C) Expression of Creb1 signatures (upregulated, downregulated and unchanged) were assessed in mouse OS subtypes compared to primary osteoblast cells by qPCR. Expression normalized to β2m respectively. Data represents average relative expression ± SEM (n≥3). (D) ChIP experiments depicting the binding of CREB1, pCREB1 and Pol II on CREB1 target genes. Enriched DNA by ChIP was amplified using primers against the promoters of mentioned targets. Data is represented as fold occupancy calculated with respect to binding over a cold promoter DPP10.
 
-## Somatic SNV mutations in human OS overlap with the cAMP-CREB1 interactome
+### Somatic SNV mutations in human OS overlap with the cAMP-CREB1 interactome
 
-Mutations and oncogenic effects of the cAMP pathway have been described in the context of other tumor types, including breast (
+Mutations and oncogenic effects of the cAMP pathway have been described in the context of other tumor types, including breast (Kok et al., 2011; Miller, 2002; Beristain et al., 2015; Pattabiraman et al., 2016) and haematological malignancies (Pigazzi et al., 2013; Sandoval et al., 2012; Shankar et al., 2005; Smith et al., 2005; Mullighan et al., 2011) amongst other tumors. The mutational landscape of OS has been recently defined, identifying 1704 somatic single nucleotide variations (SNV mutations) across 20 cases of sporadic conventional OS (Chen et al., 2014). To determine if these somatic SNV mutations were functionally related, we assessed pathways enriched within the somatic SNV mutations (Figure 7A). In the top 20 pathways were signatures associated with ion channel complexes, transmembrane transporter complexes, PI3K signaling, calcium channel signaling, and protein kinase A (PKA) activity, all of which are related to cAMP (Figure 7A). Based on this result, we compared the somatic SNV mutations of human OS to the 169 genes comprising the KEGG cAMP interactome. To determine if this was OS specific or a more generalised feature of tumors, we further compared the cAMP interactome with whole genome sequencing that identified SNV mutations of other human cancers (Ellis et al., 2012; Morin et al., 2013; Berger et al., 2012; Cazier et al., 2014; Tirode et al., 2014). Genes within the cAMP interactome were most highly enriched within the somatic SNV mutations of human OS (Figure 7B). These data suggest that, despite the diverse mutational pattern of somatic SNV mutations in human OS, recurrent and enriched changes in the cAMP and CREB1 pathways occur in OS.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig7-v2.jpg)
 
-**Figure 7.:** (A) Analysis of functional pathways within the somatic SNV mutations of human OS using Cytoscape. Brown color indicates a cAMP related pathway, blue color indicates non cAMP related pathways. (B) Analysis of the enrichment for somatic SNV mutations within the cAMP interactome in each of the indicated tumor types. Based on somatic SNV mutations identified by whole genome sequencing. P value defined using hypergeometric distribution test. (C) Graphical summary of the differences between primary osteoblasts and OS subtypes regarding cAMP and CREB1 function. See also Figure 7—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.13446.018
+**Figure 7.:** (A) Analysis of functional pathways within the somatic SNV mutations of human OS using Cytoscape. Brown color indicates a cAMP related pathway, blue color indicates non cAMP related pathways. (B) Analysis of the enrichment for somatic SNV mutations within the cAMP interactome in each of the indicated tumor types. Based on somatic SNV mutations identified by whole genome sequencing. P value defined using hypergeometric distribution test. (C) Graphical summary of the differences between primary osteoblasts and OS subtypes regarding cAMP and CREB1 function. See also Figure 7—figure supplement 1.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/13446/elife-13446-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Table comparing the enrichment of somatic SNV tumor mutations within OS, Ewings and Breast cancer in the cAMP pathway, cGMP pathway and those unique to the cAMP and cGMP pathway respectively.DOI: http://dx.doi.org/10.7554/eLife.13446.019
+**Figure 7—figure supplement 1.:** Table comparing the enrichment of somatic SNV tumor mutations within OS, Ewings and Breast cancer in the cAMP pathway, cGMP pathway and those unique to the cAMP and cGMP pathway respectively.
 
 ## Discussion
 
@@ -168,33 +168,33 @@ The management of OS has not substantively changed for the last three decades. T
 
 ## Materials and methods
 
-## Study approval
+### Study approval
 
 All experiments involving animals were approved by the Animal Ethics Committee of St. Vincent’s Hospital, Melbourne. Primary human osteoblasts were isolated from bone marrow aspirates from the posterior iliac crest of de-identified healthy human adult donors with informed consent and consent to publish (IMVS/SA Pathology normal bone marrow donor program RAH#940911a, Adelaide, South Australia).
 
-## Animals
+#### Animals
 
 Balb/c nu/nu mice (ARC, Perth, WA) were used as recipients for transplant of OS cell lines. For in vivo tumor growth 25,000 (OS80) or 75,000 (OS494H) cells were implanted subcutaneously on the back flank of Balb/c nu/nu recipients (Ho et al., 2015). Cells were resuspended in extracellular matrix (Cultrex PathClear BME Reduced Growth Factor Basement Membrane Extract). All animals received sh-Luc infected cells on one flank and sh-Pthlh infected cells on the alternate flank.
 
-## OS cell cultures and normal osteoblastic cells
+#### OS cell cultures and normal osteoblastic cells
 
 Primary mouse OS cell cultures were derived from primary tumors from each of the two mouse models of OS and were maintained and studied for less than 15 passages (Walkley et al., 2008; Mutsaers et al., 2013) (all cells used were obtained directly from primary and metastatic tumor material isolated directly from genetically engineered mouse models of OS, no further authentication performed by the authors, mycoplasma negative as tested by PCR based assay by the Victorian Infectious Diseases Reference Laboratory). Normal mouse osteoblastic cells were derived from crushed and collagenase digested long bones of 8-wk old C57BL/6 mice. Osteoblastic cell populations were purified either by FACS (FACSAria, BD Biosciences, San Jose, CA) as previously described (Semerad et al., 2005; Singbrant et al., 2011), or directly cultured following collagenase digestion (all primary osteoblasts were isolated directly from mouse long bone, no further authentication performed by the authors, not tested for mycoplasma). All cell cultures were maintained in αMEM (Lonza, Basel, Switzerland) medium supplemented with 10% fetal bovine serum (Sigma, St. Louis, MO, USA; non heat inactivated), 2 mM Glutamax (Life Technologies, Carlsbad, CA, USA), and except in siRNA transfection experiments, 100 U/ml penicillin and streptomycin (Life Technologies) antibiotics. Cells were cultured in a humidified 5% CO2 atmosphere at 37° Celsius.
 
 Normal human osteoblasts were derived from bone marrow aspirates from the posterior iliac crest of healthy human adult donors (17–35 years of age), with informed consent (IMVS/SA Pathology normal bone marrow donor program RAH#940911a). The cells were outgrown from the bony spicules that were collected following filtration of the BM through a 70 μm filter (Atkins et al., 2002). The human osteoblasts were obtained directly from primary human bone material, no further authentication performed by the authors, not tested for mycoplasma.
 
-## In vitro differentiation of OS cell lines, and primary osteoblasts
+#### In vitro differentiation of OS cell lines, and primary osteoblasts
 
 All cells were seeded at 3000 cells/cm2 on 6-well plates in αMEM with 10% FCS three days prior to differentiation induction. When cells had reached 100% confluence (Day 0), control cells were harvested, and all other cells were replenished 3 times per week with osteoblastic differentiation media: αMEM (Lonza), 10% (v/v) FBS, 25mM HEPES, 1% (v/v) (Gibco), Penicillin-Streptomycin (Gibco), 2 mM GlutaMAX (Gibco), 50 μg/ml ascorbate (Sigma), 0.01 M β-glycerophosphate (Sigma).
 
-## cAMP response assays
+#### cAMP response assays
 
 Three independent cell lines from each group were used. 500 and 1000 cells from each group were seeded in triplicates in a 384 well plate. Cells were treated for 1 hr +/-100 μM Isobutylmethylxanthine (IBMX) before measuring intracellular cAMP. Intracellular cAMP was measured using the LANCE ultra cAMP kit (Perkin Elmer, AD0262) as directed by the manufacturer. Kinetics of cAMP was demonstrated using 10 μM forskolin over a time course of 2 hr. For the agonist treatment experiment 1000 cells were seeded as described, then treated +/-100 μM IBMX before adding 10 μM forskolin following a time course of 2 hr. Intracellular cAMP was measured as described above. For shRNA infected cells, 48 hr post infection cells were treated with 100 μM IBMX and assayed for intracellular cAMP by radioimmunoassay as described (Ho et al., 2015). Where indicated cells were treated with 10 μg/ml anti-PTHrP neutralizing antibody at 37°C for 5 hr (Onuma et al., 2004). To compare cAMP levels between different cells equal number of cells were seeded.
 
-## siRNA knockdown
+#### siRNA knockdown
 
 Cells were transfected 24 hr after seeding with Dharmacon On-Target Plus siRNA pools (GE Healthcare Life Sciences, 20 nM final concentration) complexed with DharmaFECT3 (GE Healthcare Life Sciences) in Opti MEM reduced serum media (Life Technologies). Cells transfected with a non-targeting On-Target Plus control siRNA pool or mock transfected cells served as controls. All assays were carried out in culture medium without antibiotics. Cells were transfected for 72 hr with siRNA pool directed against Creb1 along with the non-targeting control siRNA. After 72 hr incubation with siRNA, the control and the Creb1 knockdown cells were treated with 10 μM of forskolin to assess Creb1 target gene induction.
 
-## ON-TARGETplus smart pool siRNA-Creb1
+##### ON-TARGETplus smart pool siRNA-Creb1
 
 Target sequence 1:J-040959-12; Target sequence: UUUGUUAACUUCCGAGAAA
 
@@ -204,11 +204,11 @@ Target sequence 3:J-040959-10; Target sequence: GCUGAGUAUUAUAGCGUAU
 
 Target sequence 4:J-040959-09; Target sequence: GAUAAGAGUAAGUCGAGA
 
-## Plasmids and constructs
+#### Plasmids and constructs
 
 Two independent lentiviral shRNA plasmids targetting Creb1 (A= 3’UTR; TRCN0000096629; B= CDS; TRCN0000096658) and Pthlh (A= 3’UTR; TRCN0000179093; B= CDS; TRCN0000180583) were purchased from Sigma-Aldrich in the pLKO.1-puro vector. The pLKO.1-puro sh-Luciferase plasmid (Cat No. SHC007) was used as the control for the Sigma shRNA constructs. Lentiviral packaging vector psPax2 (plasmid #12260) was obtained from Addgene (Cambridge, MA, USA), the pCMV-Eco Envelope (Cat No. RV112) vector was purchased from Cell Biolabs (San Diego, CA, USA). Three independent cell lines from each group were infected with shRNA against Creb1, Pthlh or luciferase control. After 48 hrs cells were selected with 2μg/ml puromycin.
 
-## shRNA sequences
+##### shRNA sequences
 
 Pthlh 3’ UTR (TRCN0000179093):
 
@@ -230,48 +230,711 @@ Luciferase CDS (TRCN0000072259):
 
 CCGGCGCTGAGTACTTCGAAATGTCCTCGAGGACATTTCGAAGTACTCAGCGTTTTT
 
-## Alizarin staining for mineralization
+#### Alizarin staining for mineralization
 
 Cells were washed 3 times with PBS and fixed with 70% EtOH. Cells were washed 3 times with water then stained with 0.5% alizarin (w/v) in water for 30 min at room temperature. This was followed by 3 washes with water and a 15 min wash in 1 ml of PBS while shaking. PBS was removed and plates were allowed to dry. Well images were then taken using an EPSON perfection V700 photo scanner. Alizarin dye was eluted overnight in 1 ml of 10% CTP (1-Hexadecylpyridinium chloride, w/v) in PBS with shaking. To construct a standard curve, a 1 mM solution of alizarin was dissolved in PBS aided by sonication, and 2-fold serial dilutions were made beginning from 400 μM. 200 μl of each serial dilution and 200 μl of eluted dye from each well were added separately to duplicate wells in a 96 well plate. The absorbance was read at OD562nm using a Polarstar optima+ microplate reader.
 
-## Flow cytometry
+#### Flow cytometry
 
 OS cell lines (less than passage 5 from establishment) were prepared by trypsinization. Antibodies against murine CD45, Mac1, Gr1, F4/80, B220, IgM, CD2, CD3, CD4, CD8, Ter119, Sca1, CD51, PDGFRα (CD140a), CD31, either biotinylated or conjugated with eF450, PE, PerCP-Cy5.5, or APC were obtained from eBioscience (San Diego, CA) or Pharmingen. Biotinylated antibodies were detected with Streptavidin-Qdot605 (Invitrogen). Flow cytometry was performed on an LSRII Fortessa (BD Bioscience) interfaced with CellQuest software, data was analyzed on FlowJo (TreeStar).
 
-## Annexin V staining
+#### Annexin V staining
 
 OS cells (3 independently derived fibroblastic and osteoblastic OS cultures) and primary osteoblasts were infected with 2 independent shRNA against Creb1 and Pthlh. shRNA directed against luciferase (sh-Luc) was used as the control. Cells were infected for 48–72 hr prior to harvesting by trypsinization. Cells were washed then stained in 1x Annexin Binding buffer (eBioscience) diluted 1:20 with Annexin V-APC (1 mg/ml) (eBioscience) and 7-Aminoactinomycin D (7AAD) (100 μg/ml) (Life Technologies) for 15 min. Following the addition of 4 volumes of 1x Annexin Binding buffer, apoptotic cells were detected and quantified using FACS (LSRFortessa). Live cells (Annexin V negative, 7AAD low) and cells in early and late stages of apoptosis (Annexin V positive, 7AAD low/high) were quantified.
 
-## PTHrP overexpression
+#### PTHrP overexpression
 
 Murine HA tagged Pthlh cDNA was generated by gene synthesis (Integrated DNA Technologies) and cloned into the retroviral MSCV-IRES-Zeocin. Constructs were sequence verified. Retrovirus was generated by transient transfection of 293T cells (purchased from ATCC, no authentication performed, mycoplasma negative as tested by PCR based assay by the Victorian Infectious Diseases Reference Laboratory) using the EcoPac envelope plasmid as previously described (Singbrant et al., 2014). Primary osteoblasts were infected by spin-infection with 8 μg/mL polybrene (Sigma). Levels of PTHrP were assayed by radioimmunoassay using UMR106.01 cells as previously described (Partridge et al., 1983) (derived by TJ Martin, no authentication performed, not mycoplasma tested).
 
-## RNA extraction, cDNA synthesis and Quantitative realtime PCR (QPCR)
+#### RNA extraction, cDNA synthesis and Quantitative realtime PCR (QPCR)
 
-RNA was extracted using RNA extraction kits with on-column DNase digestion (Qiagen, Limburg, Netherlands; Bioline, London, UK) or TriSure reagent (Bioline). cDNA was synthesised from total RNA using a Tetro cDNA synthesis kit (Bioline) or AffinityScript cDNA synthesis kit (Agilent Technologies, Santa Clara, CA, USA). Gene expression was quantified on a Stratagene Mx3000P QPCR system (Agilent) using Brilliant II SYBR green QPCR master mix (Agilent) with primers specific to genes of interest (Primer sequences in Table 2). Gene expression between samples was normalized to β2m expression. Relative expression was quantified using the comparative CT method (2-(Gene Ct – Normalizer Ct)). Samples were amplified in duplicate.10.7554/eLife.13446.020Table 1.Genes within the cAMP interactome that overlap with SNV mutations within human OS.DOI: http://dx.doi.org/10.7554/eLife.13446.020cAMP int.cAMP int.cAMP int.cAMP int.Overlap(SNVs)ABCC4CREB5MAP2K1ROCK1ADCY1ACOX1CREBBPMAP2K2ROCK2ADRA1AACOX3DRD1MAPK1RRASADRA2BADCY10DRD5MC2RRRAS2AKAP1ADCY2EDNRAMEK1SLC9A1AKAP3ADCY3EP300MEK2SOX9AKAP5ADCY4EPAC2MYL9SSTR1AKAP6ADCY5FFAR2NFAT2SSTR2ANXA1ADCY6FOSNFATCSUCNR1ATP1A1ADCY7FSHNFATC1TIAM1ATP2B1ADCY8FSHRNFKB1TNNI3CACNA1DADCY9FXYD1NFKBIATSHRCACNA1FADCYAP1R1FXYD2NPYVAVCACNA1SADORA1GABBRNPY1RCFTRADORA2AGHRLNR1C1DRD2AF6GHSRORAI1F2RAKAP2GLI1OXTRGIPRAKTGLI3PACAPRIGNAI3AMHGLP1RPAK1GRIA2ANPRAGNASPKAGRIN2AARAP3GPR109PLCEGRIN2BBADGPR119PLD1GRIN3ABDNFGPR81PLNHCN4BRAFGRIA1PPP1CPDE10ACACNA1CGRIA3PPP1R12APDE2ACALMGRIA4PPP1R1BPDE4BCAMK2GRIN1PTCH1PDE4DCAMK4GRIN2CPTGER2PDE6BCHRM1GRIN2DRAC1PIK3C2BCHRM2GRIN3BRAC2PIK3CGc-JunHCN2RAC3PIK3R4CNGA1HHIPRAF1PIK3R6CNGA2HTR1RAP1APPP2R2BCNGA3HTR4RAP1BPPP2R3ACNGA4HTR6RAPGEF3PRKCACNGB1JNKRAPGEF4PRKCBCNGB3JUNRELAPTGER3CREB1KAT3RHOARYR2CREB3LIPEVIPR2SSTR510.7554/eLife.13446.021Table 2.Oligonucleotide sequences used in RT-PCR.DOI: http://dx.doi.org/10.7554/eLife.13446.021GeneForward primerReverse primerKcne4GTTATGTCCTTCTATGGCGTTTTCATCATAGGTAGCGGCTTCATAGCIl6AACAAGAAAGACAAAGCCAGAGTCCTCCAGCTTATCTGTTAGGAGAGCCxcl1TCATAGCCACACTCAAGAATGGTTTTGGACAATTTTCTGAACCAAGDusp1TCACGCTTCTCGGAAGGATATGATGTCTGCCTTGTGGTTGNfil3GAGAAGAAAGACGCCATGTATTGAGCTCAGCTTTTAAAGTGGCATTUsp2CTGAAGCGCTATACAGAATCGTCAAACCAAGTTTTTCCTTCTCCAGGemTGGGAGAAGATACATATGAGCGTAGAGTAGACGATCAGATAGGCATCCFoxc2GCCAGAGAAGAAGATCACTCTGACACTTTCACGAAGCACTCATTGEfnb2GGGGTCTAGAATTTCAGAAGAACAATCTTGTCCAACTTTCATGAGGATBtg2GCTGTATCCGTATCAACCACAAGGATGCGGTAAGACACTTCATAGGDdit4TTTCAGTTGACCCTGGTGCTGATGACTCTGAAGCCGGTACTTAGLifACCTTGAGAAAATCTACCGAGAAGTAAAAATTTCTCCATTTTTGGCATAPlaurACAGAGCACTGTATTGAAGTGGTGGAAAGGTCTGGTTGCTATGGAANrp1TACCCTCATTCTTACCATCCAAGTCCACGTAGTCATACTTGCAGTCTCNfkbizTAAACATCAAGAATGAGTGCAACCGTTGGTATTTCTGAGGTGGAGAGAIfngr1GTGGGGAGATCCTACATACGAACTTGCCAGAAAGATGAGATTCCRnf122GTCTTCATGCTTAGCCTCATCTTCCAGGTCCCATAGAGCTGTAACTTCUgdhCCTTCCTATTTATGAGCCTGGATTCCATATGTTTTTGTTGGTGTGTTCOsbpl9GTGTTAGCTACCTTGGGACATCATAGAACTCTGGGACTGTATTTGGAGIer3AATTTTCACCTTCGACCCTCTCTTGGCAATGTTGGGTTCCCebpdTCCTGCCATGTACGACGACTGTGGTTGCTGTTGAAGAGGTVegfaGAAACCATGAACTTTCTGCTCTCTACTTGATCACTTCATGGGACTTCTSox9AGAAGGAGAGCGAGGAAGATAAGTCTTGACGTGTGGCTTGTTCTTFosGCTATCTCCTGAAGAGGAAGAGAAAAACGCAGACTTCTCATCTTCAAGTNr4a3GGTGCAGAAAAATGCAAAATATGCTGTCTGTACGCACAACTTCCTTADusp1TCACGCTTCTCGGAAGGATATGATGTCTGCCTTGTGGTTGSik2ACCTTGAGAAAATCTACCGAGAAGTAAAAATTTCTCCATTTTTGGCATAJunbCATCAACATGGAAGACCAGGAGTTCTCAGCCTTGAGTGTCTTCAGtpbp10CCAAGTGCTAGGAGAACTCAATAAAGCTATGACTTTTAGGTCAAGGTGAAAdamts1GACCAGGAAGCATAAGGAAGAAGCGAGAACAGGGTTAGAAGGTAATGBmp8aCTGAGTTCCGGATCTACAAAGAACAGCGTCTGAAGATCCAAAAAGALst1ACAACCAATGATTTCCTGCTAAATAGATGAACAGGATGATGACAAGCDlec1TCTAGACAGCAAGTTAATGCGAAAACAGCTAAACGTCAGCTTTGAACTnfrsf12aGCTGGTTTCTAGTTTCCTGGTCTGTCTCCTCTATGGGGGTAGTAAACTTGolga3AAAAAGAACTCCAAATCAAGCAAGCCTCAGACACAACTGAAGTGCTACTcf7TTTCTCCACTCTACGAACATTTCACCTGAGGTCAGAGAATAAAATCCAAqp3ATCAACTTGGCTTTTGGCTTCGCATAGATGGGCAGCTTGATHmg20bCTTTGTAGTGGCTGTCAAGCAGCATTTGGGAGAATCTTCTTTCTTTTTex264GTCTACTATGACAACCCCCATACGGAAGGAGAATATCTTGAAGCCAAACreb1CAAGTCCAAACAGTTCAGATTTCATGGTGCATCAGAAGATAAGTCATTId1GGTGAACGTCCTGCTCTACGAGACTCCGAGTTCAGCTCCADsip1GGTGAACGTCCTGCTCTACGAGACTCCGAGTTCAGCTCCARgs2GTCCTCAAAAGCAAGGAAAATCTACATCAAACTGTACACCCTCTTCTGNr4a1CTCCTCCACGTCTTCTTCCTCCAGGGACTGCCATAGTACTCAGAAregCACAGGGGACTACGACTACTCAGTCTTCCTTTTGGGTTTTTCTGTAGNr4a2ACTGAAATTACTGCCACCACTTCTTGTGCATCTGAATGTCTTCTACCTPepckAGTGAGGAAGTTCGTGGAAGGGCCAACAGTTGTCATATTTCTTCABnip3lGTCTCTAAGCATGAGGAAGAGTGGAGAAGGTGTGCTCAGTCGTTTT
+RNA was extracted using RNA extraction kits with on-column DNase digestion (Qiagen, Limburg, Netherlands; Bioline, London, UK) or TriSure reagent (Bioline). cDNA was synthesised from total RNA using a Tetro cDNA synthesis kit (Bioline) or AffinityScript cDNA synthesis kit (Agilent Technologies, Santa Clara, CA, USA). Gene expression was quantified on a Stratagene Mx3000P QPCR system (Agilent) using Brilliant II SYBR green QPCR master mix (Agilent) with primers specific to genes of interest (Primer sequences in Table 2). Gene expression between samples was normalized to β2m expression. Relative expression was quantified using the comparative CT method (2-(Gene Ct – Normalizer Ct)). Samples were amplified in duplicate.
 
-## Western blotting
+**Table 1.**
+ Genes within the cAMP interactome that overlap with SNV mutations within human OS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>cAMP int.</th>
+      <th>cAMP int.</th>
+      <th>cAMP int.</th>
+      <th>cAMP int.</th>
+      <th>Overlap(SNVs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ABCC4</td>
+      <td>CREB5</td>
+      <td>MAP2K1</td>
+      <td>ROCK1</td>
+      <td>ADCY1</td>
+    </tr>
+    <tr>
+      <td>ACOX1</td>
+      <td>CREBBP</td>
+      <td>MAP2K2</td>
+      <td>ROCK2</td>
+      <td>ADRA1A</td>
+    </tr>
+    <tr>
+      <td>ACOX3</td>
+      <td>DRD1</td>
+      <td>MAPK1</td>
+      <td>RRAS</td>
+      <td>ADRA2B</td>
+    </tr>
+    <tr>
+      <td>ADCY10</td>
+      <td>DRD5</td>
+      <td>MC2R</td>
+      <td>RRAS2</td>
+      <td>AKAP1</td>
+    </tr>
+    <tr>
+      <td>ADCY2</td>
+      <td>EDNRA</td>
+      <td>MEK1</td>
+      <td>SLC9A1</td>
+      <td>AKAP3</td>
+    </tr>
+    <tr>
+      <td>ADCY3</td>
+      <td>EP300</td>
+      <td>MEK2</td>
+      <td>SOX9</td>
+      <td>AKAP5</td>
+    </tr>
+    <tr>
+      <td>ADCY4</td>
+      <td>EPAC2</td>
+      <td>MYL9</td>
+      <td>SSTR1</td>
+      <td>AKAP6</td>
+    </tr>
+    <tr>
+      <td>ADCY5</td>
+      <td>FFAR2</td>
+      <td>NFAT2</td>
+      <td>SSTR2</td>
+      <td>ANXA1</td>
+    </tr>
+    <tr>
+      <td>ADCY6</td>
+      <td>FOS</td>
+      <td>NFATC</td>
+      <td>SUCNR1</td>
+      <td>ATP1A1</td>
+    </tr>
+    <tr>
+      <td>ADCY7</td>
+      <td>FSH</td>
+      <td>NFATC1</td>
+      <td>TIAM1</td>
+      <td>ATP2B1</td>
+    </tr>
+    <tr>
+      <td>ADCY8</td>
+      <td>FSHR</td>
+      <td>NFKB1</td>
+      <td>TNNI3</td>
+      <td>CACNA1D</td>
+    </tr>
+    <tr>
+      <td>ADCY9</td>
+      <td>FXYD1</td>
+      <td>NFKBIA</td>
+      <td>TSHR</td>
+      <td>CACNA1F</td>
+    </tr>
+    <tr>
+      <td>ADCYAP1R1</td>
+      <td>FXYD2</td>
+      <td>NPY</td>
+      <td>VAV</td>
+      <td>CACNA1S</td>
+    </tr>
+    <tr>
+      <td>ADORA1</td>
+      <td>GABBR</td>
+      <td>NPY1R</td>
+      <td></td>
+      <td>CFTR</td>
+    </tr>
+    <tr>
+      <td>ADORA2A</td>
+      <td>GHRL</td>
+      <td>NR1C1</td>
+      <td></td>
+      <td>DRD2</td>
+    </tr>
+    <tr>
+      <td>AF6</td>
+      <td>GHSR</td>
+      <td>ORAI1</td>
+      <td></td>
+      <td>F2R</td>
+    </tr>
+    <tr>
+      <td>AKAP2</td>
+      <td>GLI1</td>
+      <td>OXTR</td>
+      <td></td>
+      <td>GIPR</td>
+    </tr>
+    <tr>
+      <td>AKT</td>
+      <td>GLI3</td>
+      <td>PACAPRI</td>
+      <td></td>
+      <td>GNAI3</td>
+    </tr>
+    <tr>
+      <td>AMH</td>
+      <td>GLP1R</td>
+      <td>PAK1</td>
+      <td></td>
+      <td>GRIA2</td>
+    </tr>
+    <tr>
+      <td>ANPRA</td>
+      <td>GNAS</td>
+      <td>PKA</td>
+      <td></td>
+      <td>GRIN2A</td>
+    </tr>
+    <tr>
+      <td>ARAP3</td>
+      <td>GPR109</td>
+      <td>PLCE</td>
+      <td></td>
+      <td>GRIN2B</td>
+    </tr>
+    <tr>
+      <td>BAD</td>
+      <td>GPR119</td>
+      <td>PLD1</td>
+      <td></td>
+      <td>GRIN3A</td>
+    </tr>
+    <tr>
+      <td>BDNF</td>
+      <td>GPR81</td>
+      <td>PLN</td>
+      <td></td>
+      <td>HCN4</td>
+    </tr>
+    <tr>
+      <td>BRAF</td>
+      <td>GRIA1</td>
+      <td>PPP1C</td>
+      <td></td>
+      <td>PDE10A</td>
+    </tr>
+    <tr>
+      <td>CACNA1C</td>
+      <td>GRIA3</td>
+      <td>PPP1R12A</td>
+      <td></td>
+      <td>PDE2A</td>
+    </tr>
+    <tr>
+      <td>CALM</td>
+      <td>GRIA4</td>
+      <td>PPP1R1B</td>
+      <td></td>
+      <td>PDE4B</td>
+    </tr>
+    <tr>
+      <td>CAMK2</td>
+      <td>GRIN1</td>
+      <td>PTCH1</td>
+      <td></td>
+      <td>PDE4D</td>
+    </tr>
+    <tr>
+      <td>CAMK4</td>
+      <td>GRIN2C</td>
+      <td>PTGER2</td>
+      <td></td>
+      <td>PDE6B</td>
+    </tr>
+    <tr>
+      <td>CHRM1</td>
+      <td>GRIN2D</td>
+      <td>RAC1</td>
+      <td></td>
+      <td>PIK3C2B</td>
+    </tr>
+    <tr>
+      <td>CHRM2</td>
+      <td>GRIN3B</td>
+      <td>RAC2</td>
+      <td></td>
+      <td>PIK3CG</td>
+    </tr>
+    <tr>
+      <td>c-Jun</td>
+      <td>HCN2</td>
+      <td>RAC3</td>
+      <td></td>
+      <td>PIK3R4</td>
+    </tr>
+    <tr>
+      <td>CNGA1</td>
+      <td>HHIP</td>
+      <td>RAF1</td>
+      <td></td>
+      <td>PIK3R6</td>
+    </tr>
+    <tr>
+      <td>CNGA2</td>
+      <td>HTR1</td>
+      <td>RAP1A</td>
+      <td></td>
+      <td>PPP2R2B</td>
+    </tr>
+    <tr>
+      <td>CNGA3</td>
+      <td>HTR4</td>
+      <td>RAP1B</td>
+      <td></td>
+      <td>PPP2R3A</td>
+    </tr>
+    <tr>
+      <td>CNGA4</td>
+      <td>HTR6</td>
+      <td>RAPGEF3</td>
+      <td></td>
+      <td>PRKCA</td>
+    </tr>
+    <tr>
+      <td>CNGB1</td>
+      <td>JNK</td>
+      <td>RAPGEF4</td>
+      <td></td>
+      <td>PRKCB</td>
+    </tr>
+    <tr>
+      <td>CNGB3</td>
+      <td>JUN</td>
+      <td>RELA</td>
+      <td></td>
+      <td>PTGER3</td>
+    </tr>
+    <tr>
+      <td>CREB1</td>
+      <td>KAT3</td>
+      <td>RHOA</td>
+      <td></td>
+      <td>RYR2</td>
+    </tr>
+    <tr>
+      <td>CREB3</td>
+      <td>LIPE</td>
+      <td>VIPR2</td>
+      <td></td>
+      <td>SSTR5</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Oligonucleotide sequences used in RT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kcne4</td>
+      <td>GTTATGTCCTTCTATGGCGTTTTC</td>
+      <td>ATCATAGGTAGCGGCTTCATAGC</td>
+    </tr>
+    <tr>
+      <td>Il6</td>
+      <td>AACAAGAAAGACAAAGCCAGAGTC</td>
+      <td>CTCCAGCTTATCTGTTAGGAGAGC</td>
+    </tr>
+    <tr>
+      <td>Cxcl1</td>
+      <td>TCATAGCCACACTCAAGAATGGT</td>
+      <td>TTTGGACAATTTTCTGAACCAAG</td>
+    </tr>
+    <tr>
+      <td>Dusp1</td>
+      <td>TCACGCTTCTCGGAAGGATA</td>
+      <td>TGATGTCTGCCTTGTGGTTG</td>
+    </tr>
+    <tr>
+      <td>Nfil3</td>
+      <td>GAGAAGAAAGACGCCATGTATTG</td>
+      <td>AGCTCAGCTTTTAAAGTGGCATT</td>
+    </tr>
+    <tr>
+      <td>Usp2</td>
+      <td>CTGAAGCGCTATACAGAATCGTC</td>
+      <td>AAACCAAGTTTTTCCTTCTCCAG</td>
+    </tr>
+    <tr>
+      <td>Gem</td>
+      <td>TGGGAGAAGATACATATGAGCGTA</td>
+      <td>GAGTAGACGATCAGATAGGCATCC</td>
+    </tr>
+    <tr>
+      <td>Foxc2</td>
+      <td>GCCAGAGAAGAAGATCACTCTGA</td>
+      <td>CACTTTCACGAAGCACTCATTG</td>
+    </tr>
+    <tr>
+      <td>Efnb2</td>
+      <td>GGGGTCTAGAATTTCAGAAGAACA</td>
+      <td>ATCTTGTCCAACTTTCATGAGGAT</td>
+    </tr>
+    <tr>
+      <td>Btg2</td>
+      <td>GCTGTATCCGTATCAACCACAAG</td>
+      <td>GATGCGGTAAGACACTTCATAGG</td>
+    </tr>
+    <tr>
+      <td>Ddit4</td>
+      <td>TTTCAGTTGACCCTGGTGCT</td>
+      <td>GATGACTCTGAAGCCGGTACTTAG</td>
+    </tr>
+    <tr>
+      <td>Lif</td>
+      <td>ACCTTGAGAAAATCTACCGAGAAGT</td>
+      <td>AAAAATTTCTCCATTTTTGGCATA</td>
+    </tr>
+    <tr>
+      <td>Plaur</td>
+      <td>ACAGAGCACTGTATTGAAGTGGTG</td>
+      <td>GAAAGGTCTGGTTGCTATGGAA</td>
+    </tr>
+    <tr>
+      <td>Nrp1</td>
+      <td>TACCCTCATTCTTACCATCCAAGT</td>
+      <td>CCACGTAGTCATACTTGCAGTCTC</td>
+    </tr>
+    <tr>
+      <td>Nfkbiz</td>
+      <td>TAAACATCAAGAATGAGTGCAACC</td>
+      <td>GTTGGTATTTCTGAGGTGGAGAGA</td>
+    </tr>
+    <tr>
+      <td>Ifngr1</td>
+      <td>GTGGGGAGATCCTACATACGAA</td>
+      <td>CTTGCCAGAAAGATGAGATTCC</td>
+    </tr>
+    <tr>
+      <td>Rnf122</td>
+      <td>GTCTTCATGCTTAGCCTCATCTTC</td>
+      <td>CAGGTCCCATAGAGCTGTAACTTC</td>
+    </tr>
+    <tr>
+      <td>Ugdh</td>
+      <td>CCTTCCTATTTATGAGCCTGGATT</td>
+      <td>CCATATGTTTTTGTTGGTGTGTTC</td>
+    </tr>
+    <tr>
+      <td>Osbpl9</td>
+      <td>GTGTTAGCTACCTTGGGACATCAT</td>
+      <td>AGAACTCTGGGACTGTATTTGGAG</td>
+    </tr>
+    <tr>
+      <td>Ier3</td>
+      <td>AATTTTCACCTTCGACCCTCTC</td>
+      <td>TTGGCAATGTTGGGTTCC</td>
+    </tr>
+    <tr>
+      <td>Cebpd</td>
+      <td>TCCTGCCATGTACGACGAC</td>
+      <td>TGTGGTTGCTGTTGAAGAGGT</td>
+    </tr>
+    <tr>
+      <td>Vegfa</td>
+      <td>GAAACCATGAACTTTCTGCTCTCT</td>
+      <td>ACTTGATCACTTCATGGGACTTCT</td>
+    </tr>
+    <tr>
+      <td>Sox9</td>
+      <td>AGAAGGAGAGCGAGGAAGATAAGT</td>
+      <td>CTTGACGTGTGGCTTGTTCTT</td>
+    </tr>
+    <tr>
+      <td>Fos</td>
+      <td>GCTATCTCCTGAAGAGGAAGAGAAA</td>
+      <td>AACGCAGACTTCTCATCTTCAAGT</td>
+    </tr>
+    <tr>
+      <td>Nr4a3</td>
+      <td>GGTGCAGAAAAATGCAAAATATG</td>
+      <td>CTGTCTGTACGCACAACTTCCTTA</td>
+    </tr>
+    <tr>
+      <td>Dusp1</td>
+      <td>TCACGCTTCTCGGAAGGATA</td>
+      <td>TGATGTCTGCCTTGTGGTTG</td>
+    </tr>
+    <tr>
+      <td>Sik2</td>
+      <td>ACCTTGAGAAAATCTACCGAGAAGT</td>
+      <td>AAAAATTTCTCCATTTTTGGCATA</td>
+    </tr>
+    <tr>
+      <td>Junb</td>
+      <td>CATCAACATGGAAGACCAGGA</td>
+      <td>GTTCTCAGCCTTGAGTGTCTTCA</td>
+    </tr>
+    <tr>
+      <td>Gtpbp10</td>
+      <td>CCAAGTGCTAGGAGAACTCAATAAA</td>
+      <td>GCTATGACTTTTAGGTCAAGGTGAA</td>
+    </tr>
+    <tr>
+      <td>Adamts1</td>
+      <td>GACCAGGAAGCATAAGGAAGAAG</td>
+      <td>CGAGAACAGGGTTAGAAGGTAATG</td>
+    </tr>
+    <tr>
+      <td>Bmp8a</td>
+      <td>CTGAGTTCCGGATCTACAAAGAAC</td>
+      <td>AGCGTCTGAAGATCCAAAAAGA</td>
+    </tr>
+    <tr>
+      <td>Lst1</td>
+      <td>ACAACCAATGATTTCCTGCTAAAT</td>
+      <td>AGATGAACAGGATGATGACAAGC</td>
+    </tr>
+    <tr>
+      <td>Dlec1</td>
+      <td>TCTAGACAGCAAGTTAATGCGAAA</td>
+      <td>ACAGCTAAACGTCAGCTTTGAAC</td>
+    </tr>
+    <tr>
+      <td>Tnfrsf12a</td>
+      <td>GCTGGTTTCTAGTTTCCTGGTCT</td>
+      <td>GTCTCCTCTATGGGGGTAGTAAACTT</td>
+    </tr>
+    <tr>
+      <td>Golga3</td>
+      <td>AAAAAGAACTCCAAATCAAGCAAG</td>
+      <td>CCTCAGACACAACTGAAGTGCTAC</td>
+    </tr>
+    <tr>
+      <td>Tcf7</td>
+      <td>TTTCTCCACTCTACGAACATTTCA</td>
+      <td>CCTGAGGTCAGAGAATAAAATCCA</td>
+    </tr>
+    <tr>
+      <td>Aqp3</td>
+      <td>ATCAACTTGGCTTTTGGCTTC</td>
+      <td>GCATAGATGGGCAGCTTGAT</td>
+    </tr>
+    <tr>
+      <td>Hmg20b</td>
+      <td>CTTTGTAGTGGCTGTCAAGCAG</td>
+      <td>CATTTGGGAGAATCTTCTTTCTTTT</td>
+    </tr>
+    <tr>
+      <td>Tex264</td>
+      <td>GTCTACTATGACAACCCCCATACG</td>
+      <td>GAAGGAGAATATCTTGAAGCCAAA</td>
+    </tr>
+    <tr>
+      <td>Creb1</td>
+      <td>CAAGTCCAAACAGTTCAGATTTCA</td>
+      <td>TGGTGCATCAGAAGATAAGTCATT</td>
+    </tr>
+    <tr>
+      <td>Id1</td>
+      <td>GGTGAACGTCCTGCTCTACG</td>
+      <td>AGACTCCGAGTTCAGCTCCA</td>
+    </tr>
+    <tr>
+      <td>Dsip1</td>
+      <td>GGTGAACGTCCTGCTCTACG</td>
+      <td>AGACTCCGAGTTCAGCTCCA</td>
+    </tr>
+    <tr>
+      <td>Rgs2</td>
+      <td>GTCCTCAAAAGCAAGGAAAATCTA</td>
+      <td>CATCAAACTGTACACCCTCTTCTG</td>
+    </tr>
+    <tr>
+      <td>Nr4a1</td>
+      <td>CTCCTCCACGTCTTCTTCCTC</td>
+      <td>CAGGGACTGCCATAGTACTCAGA</td>
+    </tr>
+    <tr>
+      <td>Areg</td>
+      <td>CACAGGGGACTACGACTACTCAG</td>
+      <td>TCTTCCTTTTGGGTTTTTCTGTAG</td>
+    </tr>
+    <tr>
+      <td>Nr4a2</td>
+      <td>ACTGAAATTACTGCCACCACTTCT</td>
+      <td>TGTGCATCTGAATGTCTTCTACCT</td>
+    </tr>
+    <tr>
+      <td>Pepck</td>
+      <td>AGTGAGGAAGTTCGTGGAAGG</td>
+      <td>GCCAACAGTTGTCATATTTCTTCA</td>
+    </tr>
+    <tr>
+      <td>Bnip3l</td>
+      <td>GTCTCTAAGCATGAGGAAGAGTGG</td>
+      <td>AGAAGGTGTGCTCAGTCGTTTT</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Western blotting
 
 Protein lysates were prepared in RIPA buffer (50 mM Tris-HCl pH 7.4, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS, 150 mM NaCl, 2 mM EDTA, 50 mM NaF). Protein (10–25 μg) was electrophoresed on 10% Bis Tris or 4–12% Bis-Tris gradient NuPAGE Novex protein gels (Life Technologies) and transferred to PVDF membrane (Merck Millipore, Billerica, MA, USA). Membranes were blocked in 5% skim milk in TBST (20 mM Tris, 150 mM NaCl, 0.1% Tween-20) for 1 hr before incubation with primary antibodies diluted in 5% skim milk in TBST overnight a 4°C, or for 1 hr at room temperature in the case of pan-ACTIN. All antibodies (p53 (1C12) Cell Signaling 2524) (Phospho-CREB (Ser133) Cell Signaling Technologies, #9198), Anti-CREB1 ChIP grade (ab31387) were used at 1:2000, except pan actin (Ab-5, Thermo Scientific, Waltham, MA, USA) that was used at 1:3000. Anti-PTHrP antibody (R88) was generated in house against PTHrP(1–15). IgG was extracted from whole serum using Protein G Sepharose 4B fast Flow (GE Healthcare Life Sciences, Cat number 17-0618-01). Protocol for PTHrP western is the same as described for CREB1 except 3% BSA was used for blocking instead of skim milk. Following four washes of 10 min in TBST, membranes were incubated with secondary goat-anti-mouse or goat-anti-rabbit HRP conjugated antibodies (Thermo Scientific, Waltham, MA, USA) diluted 1:10,000 in 5% milk in TBST for 1 hr at room temperature. Following four 10 min washes with TBST, membranes were exposed to ECL Prime (GE Healthcare Life Sciences, Piscataway, NJ, USA) and exposed to x-ray film to detect the expression levels of proteins.
 
-## Chromatin immunoprecipitation
+#### Chromatin immunoprecipitation
 
-5x106 cells for each subtype were seeded and allowed to proliferate for 24 hr. An additional counting plate for each subtype was used as cell count control. Primary osteoblasts and OS cells were treated with 10 μM forskolin or 0.1% v/v DMSO for a time course of 2 hr or used in an unstimulated state (PTHrP- or forskolin- free). Adherent cells were fixed with 1% formaldehyde-PBS for 30 min at room temperature. Cross-linking was quenched by incubating cells with 0.125 M glycine diluted in PBS for 10 min at room temperature. Following two washes with PBS, cells were scraped and snap frozen as pellets at -80°C until use. Cell pellets were diluted in sonication buffer (1% SDS, 10 mM EDTA, 50 mM Tris-HCl pH 8.1) with protease inhibitors (Roche, Burlington, NC, USA) and the DNA sheared to lengths between 200–800 bp using a UCD-200 Bioruptor (Diagnenode, Denville, NJ, USA) on high at 4°C for a total shearing time of 15 min (90 min of 10 s on and 50 s off). Cell debris was cleared by centrifugation at 13,000 rpm for 10 min at 4°C and supernatants were diluted 10-fold in ChIP dilution buffer (0.01% SDS, 1.1% Triton X-100, 1.2 mM ETA, 16.7 mM Tris-HCl pH 8.1, 167 mM NaCl) with protease inhibitors. After removing 1% input for the total number of cells of each sample as an input control, samples were incubated with either 2 μg CREB1 antibody (Abcam: (ab31387), 2 μg of phospho-CREB1 antibody (Cell Signaling: 9198), 2 μg of phospho-Pol II antibody Abcam: (ab103968) and 2 μg of control rabbit IgG (Merck Millipore), or no antibody overnight at 4°C with rotation. Complexes were collected for 1 hr at 4°C with rotation with 60 μl of protein A sepharose beads (Invitrogen) that had been pre-blocked for 1 hr in 1 mg/ml BSA and 20 μg/ml of yeast tRNA (Sigma Aldrich, R5636). Beads were washed one time each with Low Salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 150 mM NaCl), High Salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 500 mM NaCl) and LiCl buffer (0.25 M LiCl, 1% NP40, 1% deoxycholate, 1 mM EDTA, 10 mM Tris-HCl pH 8.1), followed by two washes with TE buffer. Protein-DNA complexes were eluted from the beads (0.1 M NaHCO3, 1% SDS) at RT for 30 min with two rounds of elution. Protein was digested by incubation with 50 μg/mL of proteinase K at 45°C for 1 hr. RNA was digested by incubation with 10 μg/mL RNaseA at 37°C for 30 min. DNA was purified by two extractions with phenol:chloroform:isoamyl alcohol and ethanol precipitation. CREB1, pCREB1 and Pol II bound and input samples were analysed by QPCR using primers that amplified CREB1 target gene promoters or negative control regions (Sequences in Table 3 and for respective ChIP conditions refer to Table 3)10.7554/eLife.13446.022Table 3.Primers for promoter regions for ChIP and antibody conditions.DOI: http://dx.doi.org/10.7554/eLife.13446.022Gene promoterForward primerReverse primerNr4a2CTGCCAACATGCACCTAAAGTCTTAAAATCAGCCCCAGTCGTNr4a1TTCTGTTTCTAGGGACAGTGCATACCCTACTCCAAGAGCTATCCTTTCgaCTCTTCATAAGCTGTCCTTGAGGTGGTAAATTCTACCCAGTGATTGGAAregTGATAACTAAGGAAACTGAGGTCCATTTGGAGAGGGAAAAATAAAATCADpp10AAGATCAGGGACTGTGGTACTGAGGAATAGTGCATGTTTCCTTCTGCebpdCACGGTTCACTAGTTCTGGTCTCCTGGAGCGAAATGAAAATCTGIfgnr1CTATGGTTTCCAGGAGCTTCAGTAACTTCAGTTTGAACATGCACCTRnf22CTATGGTTTCCAGGAGCTTCAGTAACTTCAGTTTGAACATGCACCTGemAAGCCCTTTTTGTACAAGTGTGAGAGTGGGACAGTTTCTGTTTGAGFoxc2TTATCCATCACTGCATTCAACAGAGTAGGAAAGAGCCTGGAGATTTTFosGGTGCATACAGGAAGACATAAGCGCAAAAGTCCTGAAACAAAACAAJunAGCAAAGATTAGCAAAGGGAAAGCCAACTTTGAATCTGACAACTCCSox9AGCAAAGATTAGCAAAGGGAAAGCCAACTTTGAATCTGACAACTCCVegfa 1GGGTGATGATAACAACAATTTGGGAATATGGGCACAACAATTCAGTVegfa 2ATTTGAGGGAGTGAAGAACCAACAGTCTGTGCTCTGGGATTTGATAAqp3AGTCAAGGGTCATAGCTCCAGATTGGACCCAGAAGTGAGTTTCTAAPlaurCCTCAAAGGCTTTCTGTAGGAATAGGGGAAAAACAAGTTGAAAGAGTnfrs12aGTTGTGTCTGCCCCTCAAGTTTGCCCTATCTCTGGGTCTGIl6TCCTTTCCTGTCTGGAAGATACAGGCAAAGAGATAAGGAAAAAGGAAb directed againstCell number per ChIPAmountOrigin of AbCreb16x1062 μgAbcam (ab31387)Phospho-Creb16x1062 μgCell Signaling (#9198)Pol II (phospho-S2)2x1062 μgAbcam (ab103968)
+5x106 cells for each subtype were seeded and allowed to proliferate for 24 hr. An additional counting plate for each subtype was used as cell count control. Primary osteoblasts and OS cells were treated with 10 μM forskolin or 0.1% v/v DMSO for a time course of 2 hr or used in an unstimulated state (PTHrP- or forskolin- free). Adherent cells were fixed with 1% formaldehyde-PBS for 30 min at room temperature. Cross-linking was quenched by incubating cells with 0.125 M glycine diluted in PBS for 10 min at room temperature. Following two washes with PBS, cells were scraped and snap frozen as pellets at -80°C until use. Cell pellets were diluted in sonication buffer (1% SDS, 10 mM EDTA, 50 mM Tris-HCl pH 8.1) with protease inhibitors (Roche, Burlington, NC, USA) and the DNA sheared to lengths between 200–800 bp using a UCD-200 Bioruptor (Diagnenode, Denville, NJ, USA) on high at 4°C for a total shearing time of 15 min (90 min of 10 s on and 50 s off). Cell debris was cleared by centrifugation at 13,000 rpm for 10 min at 4°C and supernatants were diluted 10-fold in ChIP dilution buffer (0.01% SDS, 1.1% Triton X-100, 1.2 mM ETA, 16.7 mM Tris-HCl pH 8.1, 167 mM NaCl) with protease inhibitors. After removing 1% input for the total number of cells of each sample as an input control, samples were incubated with either 2 μg CREB1 antibody (Abcam: (ab31387), 2 μg of phospho-CREB1 antibody (Cell Signaling: 9198), 2 μg of phospho-Pol II antibody Abcam: (ab103968) and 2 μg of control rabbit IgG (Merck Millipore), or no antibody overnight at 4°C with rotation. Complexes were collected for 1 hr at 4°C with rotation with 60 μl of protein A sepharose beads (Invitrogen) that had been pre-blocked for 1 hr in 1 mg/ml BSA and 20 μg/ml of yeast tRNA (Sigma Aldrich, R5636). Beads were washed one time each with Low Salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 150 mM NaCl), High Salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8.1, 500 mM NaCl) and LiCl buffer (0.25 M LiCl, 1% NP40, 1% deoxycholate, 1 mM EDTA, 10 mM Tris-HCl pH 8.1), followed by two washes with TE buffer. Protein-DNA complexes were eluted from the beads (0.1 M NaHCO3, 1% SDS) at RT for 30 min with two rounds of elution. Protein was digested by incubation with 50 μg/mL of proteinase K at 45°C for 1 hr. RNA was digested by incubation with 10 μg/mL RNaseA at 37°C for 30 min. DNA was purified by two extractions with phenol:chloroform:isoamyl alcohol and ethanol precipitation. CREB1, pCREB1 and Pol II bound and input samples were analysed by QPCR using primers that amplified CREB1 target gene promoters or negative control regions (Sequences in Table 3 and for respective ChIP conditions refer to Table 3)
 
-## Bioinformatics and data mining
+**Table 3.**
+ Primers for promoter regions for ChIP and antibody conditions.
 
-## Somatic SNV mutations within human OS and enriched cAMP related functional pathways
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene promoter</th>
+      <th colspan="2">Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nr4a2</td>
+      <td colspan="2">CTGCCAACATGCACCTAAAGT</td>
+      <td>CTTAAAATCAGCCCCAGTCGT</td>
+    </tr>
+    <tr>
+      <td>Nr4a1</td>
+      <td colspan="2">TTCTGTTTCTAGGGACAGTGCAT</td>
+      <td>ACCCTACTCCAAGAGCTATCCTTT</td>
+    </tr>
+    <tr>
+      <td>Cga</td>
+      <td colspan="2">CTCTTCATAAGCTGTCCTTGAGGT</td>
+      <td>GGTAAATTCTACCCAGTGATTGGA</td>
+    </tr>
+    <tr>
+      <td>Areg</td>
+      <td colspan="2">TGATAACTAAGGAAACTGAGGTCCA</td>
+      <td>TTTGGAGAGGGAAAAATAAAATCA</td>
+    </tr>
+    <tr>
+      <td>Dpp10</td>
+      <td colspan="2">AAGATCAGGGACTGTGGTACTGA</td>
+      <td>GGAATAGTGCATGTTTCCTTCTG</td>
+    </tr>
+    <tr>
+      <td>Cebpd</td>
+      <td colspan="2">CACGGTTCACTAGTTCTGGTCTC</td>
+      <td>CTGGAGCGAAATGAAAATCTG</td>
+    </tr>
+    <tr>
+      <td>Ifgnr1</td>
+      <td colspan="2">CTATGGTTTCCAGGAGCTTCAGT</td>
+      <td>AACTTCAGTTTGAACATGCACCT</td>
+    </tr>
+    <tr>
+      <td>Rnf22</td>
+      <td colspan="2">CTATGGTTTCCAGGAGCTTCAGT</td>
+      <td>AACTTCAGTTTGAACATGCACCT</td>
+    </tr>
+    <tr>
+      <td>Gem</td>
+      <td colspan="2">AAGCCCTTTTTGTACAAGTGTGA</td>
+      <td>GAGTGGGACAGTTTCTGTTTGAG</td>
+    </tr>
+    <tr>
+      <td>Foxc2</td>
+      <td colspan="2">TTATCCATCACTGCATTCAACAG</td>
+      <td>AGTAGGAAAGAGCCTGGAGATTTT</td>
+    </tr>
+    <tr>
+      <td>Fos</td>
+      <td colspan="2">GGTGCATACAGGAAGACATAAGC</td>
+      <td>GCAAAAGTCCTGAAACAAAACAA</td>
+    </tr>
+    <tr>
+      <td>Jun</td>
+      <td colspan="2">AGCAAAGATTAGCAAAGGGAAAG</td>
+      <td>CCAACTTTGAATCTGACAACTCC</td>
+    </tr>
+    <tr>
+      <td>Sox9</td>
+      <td colspan="2">AGCAAAGATTAGCAAAGGGAAAG</td>
+      <td>CCAACTTTGAATCTGACAACTCC</td>
+    </tr>
+    <tr>
+      <td>Vegfa 1</td>
+      <td colspan="2">GGGTGATGATAACAACAATTTGG</td>
+      <td>GAATATGGGCACAACAATTCAGT</td>
+    </tr>
+    <tr>
+      <td>Vegfa 2</td>
+      <td colspan="2">ATTTGAGGGAGTGAAGAACCAAC</td>
+      <td>AGTCTGTGCTCTGGGATTTGATA</td>
+    </tr>
+    <tr>
+      <td>Aqp3</td>
+      <td colspan="2">AGTCAAGGGTCATAGCTCCAGAT</td>
+      <td>TGGACCCAGAAGTGAGTTTCTAA</td>
+    </tr>
+    <tr>
+      <td>Plaur</td>
+      <td colspan="2">CCTCAAAGGCTTTCTGTAGGAAT</td>
+      <td>AGGGGAAAAACAAGTTGAAAGAG</td>
+    </tr>
+    <tr>
+      <td>Tnfrs12a</td>
+      <td colspan="2">GTTGTGTCTGCCCCTCAAGT</td>
+      <td>TTGCCCTATCTCTGGGTCTG</td>
+    </tr>
+    <tr>
+      <td>Il6</td>
+      <td colspan="2">TCCTTTCCTGTCTGGAAGATACA</td>
+      <td>GGCAAAGAGATAAGGAAAAAGGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Bioinformatics and data mining
+
+##### Somatic SNV mutations within human OS and enriched cAMP related functional pathways
 
 Somatic SNV mutations derived from WGS of human osteosarcoma was downloaded (Chen et al., 2014). 1704 somatic SNV mutations comprising of insertions and deletions were subjected to pathway analysis. Analysis for functional pathways was performed using Cytoscape v3.1.1 (www.cytoscape.org) (Shannon et al., 2003; Saito et al., 2012). Highly enriched pathways within the cAMP signaling were selected based on FDR. cAMP interactome data containing 169 genes within the Kegg pathway were downloaded (entry number: map04024). The data set was overlapped using Biovenn and Venny (BioinfoGP, CNB-CSIC Key: citeulike: 6994833) with SNV mutations derived from WGS of human osteosarcoma. The overlap between the two databases was considered. Please refer to the Table 1 for the gene sets and the overlaps.
 
-## Enrichment of somatic SNV mutations within the cAMP interactome
+#### Enrichment of somatic SNV mutations within the cAMP interactome
 
 cAMP interactome data containing 169 genes within the Kegg pathway were downloaded (entry number: map04024). Data from the indicated human tumor sets was obtained from the analysed data files and compared as total somatic SNV mutations (all) or predicted non silent SNV mutations as indicated. The tumor somatic SNV mutation data sets were overlapped using Biovenn and Venny (BioinfoGP, CNB-CSIC Key: citeulike: 6994833) with the cAMP interactome. Log p values are calculated using the hypergeometric distribution (phyper function in R). The human set size of 39,227 is derived using all symbols from HGNC.
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 RNA-Sequencing (RNA-Seq) was conducted at the Ramaciotti Centre for Genomics (University of New South Wales, Australia) on the Illumina HiSeq 2000 with 100 bp paired-end reads. Reads were aligned to the mouse genome build mm9/NCBI37 using Casava 1.7 and Bowtie v0.12.2 mapping software, normalized using Voom linear modeling (Law et al., 2014) and transcript abundance measured as reads per kilobase of exon per million mapped reads (RPKM) (Chepelev et al., 2009). The datasets are deposited in GEO (accession number GSE58916).
 
-## Statistical analysis
+#### Statistical analysis
 
 Data were presented as mean ± SEM. Statistical comparisons were performed in Prism 6.0 unless otherwise indicated. Parametric Student’s t-test, area under the curve or 2-way ANOVA with multiple comparison test were used for comparisons with p<0.05 considered as significant; Analysis of the enrichment for somatic SNV mutations within the cAMP interactome in each of the indicated tumor type was defined using hypergeometric distribution test (phyper function in R). P values as indicated in the Figure legend.

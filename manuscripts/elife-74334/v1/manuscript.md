@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00fbnyb24 Behavioral Physiology and Sociobiology, Julius Maximilian University of Würzburg Würzburg Germany
-2. https://ror.org/00fbnyb24 Institute for Pharmacy and Food Chemistry, Julius Maximilian University of Würzburg Würzburg Germany
-3. https://ror.org/00f2yqf98 Institute of Pharmacology, Research Core Unit Metabolomics, Hannover Medical School Hannover Germany
+1. Behavioral Physiology and Sociobiology, Julius Maximilian University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+2. Institute for Pharmacy and Food Chemistry, Julius Maximilian University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+3. Institute of Pharmacology, Research Core Unit Metabolomics, Hannover Medical School Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))
 
 † Corresponding author
 
 ## Abstract
 
-In times of environmental change species have two options to survive: they either relocate to a new habitat or they adapt to the altered environment. Adaptation requires physiological plasticity and provides a selection benefit. In this regard, the Western honeybee ( Apis mellifera ) protrudes with its thermoregulatory capabilities, which enables a nearly worldwide distribution. Especially in the cold, shivering thermogenesis enables foraging as well as proper brood development and thus survival. In this study, we present octopamine signaling as a neurochemical prerequisite for honeybee thermogenesis: we were able to induce hypothermia by depleting octopamine in the flight muscles. Additionally, we could restore the ability to increase body temperature by administering octopamine. Thus, we conclude that octopamine signaling in the flight muscles is necessary for thermogenesis. Moreover, we show that these effects are mediated by β octopamine receptors. The significance of our results is highlighted by the fact the respective receptor genes underlie enormous selective pressure due to adaptation to cold climates. Finally, octopamine signaling in the service of thermogenesis might be a key strategy to survive in a changing environment.
+In times of environmental change species have two options to survive: they either relocate to a new habitat or they adapt to the altered environment. Adaptation requires physiological plasticity and provides a selection benefit. In this regard, the Western honeybee (Apis mellifera) protrudes with its thermoregulatory capabilities, which enables a nearly worldwide distribution. Especially in the cold, shivering thermogenesis enables foraging as well as proper brood development and thus survival. In this study, we present octopamine signaling as a neurochemical prerequisite for honeybee thermogenesis: we were able to induce hypothermia by depleting octopamine in the flight muscles. Additionally, we could restore the ability to increase body temperature by administering octopamine. Thus, we conclude that octopamine signaling in the flight muscles is necessary for thermogenesis. Moreover, we show that these effects are mediated by β octopamine receptors. The significance of our results is highlighted by the fact the respective receptor genes underlie enormous selective pressure due to adaptation to cold climates. Finally, octopamine signaling in the service of thermogenesis might be a key strategy to survive in a changing environment.
 
 ## Introduction
 
@@ -33,9 +33,168 @@ We hypothesize that honeybee thermogenesis relies on octopamine signaling and th
 
 ## Results
 
-## Honeybee flight muscles are innervated by octopaminergic neurons
+### Honeybee flight muscles are innervated by octopaminergic neurons
 
 First of all, we investigated whether octopamine can be a potential regulator of flight muscle functions in honeybees. Thus, we analyzed which monoamines are actually present in these tissues using high-performance liquid chromatography (HPLC) together with an electrochemical detector (ECD). We can detect octopamine and dopamine in both, DV and DL, whereas serotonin and tyramine are not detectable (Figure 1A, Figure 1—figure supplement 1A). We further compared the flight muscle octopamine concentration in differently aged workerbees. Newly emerged bees which cannot perform thermogenesis have the lowest octopamine concentration in DV and DL (Figure 1A–B) and the octopamine concentration increases with the age of the workerbee (Figure 1A–B). In contrast to octopamine, the concentrations of dopamine have a different time course in DV and DL (Figure 1—figure supplement 1B-C). We have further analyzed the MMTG. In addition to octopamine, serotonin, dopamine, and tyramine are also detectable, but no age-related differences can be observed for any of these monoamines (Figure 1C, Figure 1—figure supplement 1D-F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig1-v1.jpg)
+
+**Figure 1.:** Octopamine concentrations differ significantly between different workerbee age groups in DV (A) and DL (B) but not in the MMTG (C). blue = no active heating, red = active heating. Shown is median ± interquartile range (IQR). For statistics see Table 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example chromatograms of individual DV (top) and MMTG samples (bottom). (B–F) Dopamine concentrations in dorsoventral (B; Kruskal-Wallis test: X2 = 21.381, df = 4, p = 0.0003) and dorsal-longitudinal flight muscles (C; X2 = 20.215, df = 4, p = 0.0005) are high in newly emerged bees and dramatically decrease until the age of 7 days. Afterwards, dopamine concentrations increases with aging. Group comparison results (Dunns test) are shown to the right of each graph. Additionally, serotonin (D; X2 = 6.489, df = 4, p = 0.166), dopamine (E; X2 = 7.4, df = 4, p = 0.116), and tyramine (D; X2 = 6.226, df = 4, p = 0.183) are detectable in the mesometa-thoracic ganglia, wheras no age-related differences are observable. Shown is median ± IQR.
+
+**Table 1.**
+ Statistical analysis of HPLC analysis of the octopamine content.ns = not significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Test</th>
+      <th>Groups (n)</th>
+      <th>Result</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="11">HPLCoctopamineDVFigure 1A</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 15.772, df = 4, p = 0,0033</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (6) vs. 7 days (6)</td>
+      <td>Z = –2.4593, padj = 0.1392</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 14 days (6)</td>
+      <td>Z = –2.8856, padj = 0.0391</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 21 days (6)</td>
+      <td>Z = –2.7217, padj = 0.065</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 28 days (6)</td>
+      <td>Z = –3.7382, padj = 0.0017</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 14 days (6)</td>
+      <td>Z = 0.4263, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 21 days (6)</td>
+      <td>Z = 0.2623, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 28 days (6)</td>
+      <td>Z = 1.2789, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (6) vs. 21 days (6)</td>
+      <td>Z = 0.164, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (6) vs. 28 days (6)</td>
+      <td>Z = –0.8526, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (6) vs. 28 days (6)</td>
+      <td>Z = –1.0165, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="11">HPLCoctopamineDLFigure 1B</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 16.292, df = 4, p = 0.0027</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (6) vs. 7 days (6)</td>
+      <td>Z = –1.3117, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 14 days (6)</td>
+      <td>Z = –2.6561, padj = 0.0791</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 21 days (6)</td>
+      <td>Z = –1.9019, padj = 0.5718</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (6) vs. 28 days (6)</td>
+      <td>Z = –3.8038, padj = 0.0014</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 14 days (6)</td>
+      <td>Z = 1.3444, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 21 days (6)</td>
+      <td>Z = 0.5902, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (6) vs. 28 days (6)</td>
+      <td>Z = 2.4921, padj = 0.127</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (6) vs. 21 days (6)</td>
+      <td>Z = 0.7542, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (6) vs. 28 days (6)</td>
+      <td>Z = –1.1477, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (6) vs. 28 days (6)</td>
+      <td>Z = –1.9019, padj = 0.5718</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="4">HPLCoctopamineMMTGFigure 1C</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 5.4912, df = 4, p = 0.2405</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="3" colspan="3">groups (n): 0 days (7), 7 days (8), 14 days (7), 21 days (8), 28 days (8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Nerves originating from the MMTG exclusively innervate the honeybee flight muscles (Markl, 1966; Pan, 1980). To answer whether octopamine in DV and DL can be delivered directly by octopaminergic neurons from the MMTG we used an octopamine specific antibody to analyze the octopamine distribution in these tissues. Octopamine-like immunoreactivity (OA-IR) is observable in four individual cell clusters, with most of the cell bodies being found at the ventral midline (Figure 2A–E). Some OA-IR positive cell bodies are also located at the dorsal midline (Figure 2D–E). Most MMTG leaving nerves show OA-IR (Figure 2G–I), as varicose fibers in IIN1 and a thicker axonal bundle in IIN3 demonstrate (Figure 2G1). Finally, finest OA-IR positive varicose structures can be found directly at muscle fibers (Figure 2J–K).
 
@@ -43,33 +202,583 @@ Nerves originating from the MMTG exclusively innervate the honeybee flight muscl
 
 **Figure 2.:** (A–E) Different cell clusters with OA-IR are observable. Consecutive frontal sections of the MMTG of the same workerbee (A–C) beginning with the most ventral section (A) showing clusters of OA-IR positive cells (C1–C4). Sagital sections (D–E) in the midline area of the MMTG of two individual bees display the same OA-IR positive cell clusters. (F) Schematic interpretation of the location of the cell clusters found in A-E. Additionally, the approximate location of frontal sections (A–C, G), the sagital sections (D–E), and the detailed images (H–I) are indicated by dashed boxes. (G) Dorsally located frontal section of the MMTG in showing several nerves which are leaving the ganglion. Strong OA-IR-positive fibers run into the nerves IIN3, IIN10, and IIN12 (arrowheads). (H) Within the nerve IIN1 fine varicose structures with OA-IR are observable. (I) An OA-IR-positive axon bundle runs through the nerve IIN3. (J–K) Flight muscle preparations reveal fine varicose structures with OA-IR closely attached to muscle fibers.
 
-## AmOARβ2 is expressed in the flight muscles
+### AmOARβ2 is expressed in the flight muscles
 
 We next determined which octopamine receptor genes are expressed in the workerbee flight muscle. The honeybee genome harbors five different genes that code for octopamine receptors and two additional genes encoding tyramine receptors. The respective receptor proteins are functionally characterized (Blenau et al., 2000; Grohmann et al., 2003; Balfanz et al., 2014; Reim et al., 2017; Blenau et al., 2020). We observe strong signals for PCR products for AmOARα1 and AmOARβ2, weak DNA bands for AmOARβ1 and AmOARβ3/4, and no amplification product in the case of AmOARα2 and both tyramine receptor genes (AmTAR1 & AmTAR2; Figure 3A). In addition, PCR products indicate the expression for all known honeybee octopamine and tyramine receptor genes in neural tissues (brain, MMTG).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig3-v1.jpg)
 
-**Figure 3.:** (A) Brain, MMTG, DV, and DL were manually dissected from workerbees and underwent subsequent RNA isolation, cDNA synthesis and PCR analysis (+). The reverse transcriptase was omitted during cDNA synthesis for negative controls (-). RNase free water serves as no template (ntc) and AmGAPDH as loading control. (B–E) AmOARα1 and AmOARβ2 expression in DV and DL of differential aged workerbees with (red) or without (blue) the capability for thermogenesis. Data are represented as boxplots. Shown is median ± IQR. For statistic see Table 2.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Brain, MMTG, DV, and DL were manually dissected from workerbees and underwent subsequent RNA isolation, cDNA synthesis and PCR analysis (+). The reverse transcriptase was omitted during cDNA synthesis for negative controls (-). RNase free water serves as no template (ntc) and AmGAPDH as loading control. (B–E) AmOARα1 and AmOARβ2 expression in DV and DL of differential aged workerbees with (red) or without (blue) the capability for thermogenesis. Data are represented as boxplots. Shown is median ± IQR. For statistic see Table 2.
+
+**Table 2.**
+ Statistical analysis of the flight muscle gene expression analysis.ns = not significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Test</th>
+      <th>Groups (n)</th>
+      <th>Result</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="11">qPCRAmOARα1DV Figure 3D</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 25.734, df = 4, p = 0.00004</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (8) vs. 7 days (8)</td>
+      <td>Z = –1.6253, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 14 days (8)</td>
+      <td>Z = –3.9776, padj = 0.0007</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 21 days (8)</td>
+      <td>Z = –3.9135, padj = 0.0009</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 28 days (8)</td>
+      <td>Z = –3.8493, padj = 0.0012</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 14 days (8)</td>
+      <td>Z = –2.3523, padj = 0.1866</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 21 days (8)</td>
+      <td>Z = –2.2882, padj = 0.2213</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 28 days (8)</td>
+      <td>Z = –2.224, padj = 0.2615</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 21 days (8)</td>
+      <td>Z = 0.0642, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 28 days (8)</td>
+      <td>Z = 0.1283, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (8) vs. 28 days (8)</td>
+      <td>Z = 0.0642, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="11">qPCRAmOARα1DL Figure 3C</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 28.163, df = 4, p = 0.00001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (8) vs. 7 days (8)</td>
+      <td>Z = –1.5661, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 14 days (8)</td>
+      <td>Z = –4.4373, padj = 0.0001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 21 days (7)</td>
+      <td>Z = –3.6548, padj = 0.0026</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 28 days (5)</td>
+      <td>Z = –3.7128, padj = 0.002</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 14 days (8)</td>
+      <td>Z = –2.8712, padj = 0.0409</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 21 days (7)</td>
+      <td>Z = –2.1418, padj = 0.322</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 28 days (5)</td>
+      <td>Z = –2.3392, padj = 0193</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 21 days (7)</td>
+      <td>Z = 0.6320, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 28 days (5)</td>
+      <td>Z = 0.179, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (7) vs. 28 days (5)</td>
+      <td>Z = –0.3844, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="11">qPCRAmOARβ2DV Figure 3D</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 24.54, df = 4, p = 0.00006</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (8) vs. 7 days (8)</td>
+      <td>Z = –1.6894, padj = 0,911</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 14 days (8)</td>
+      <td>Z = –2.8228, padj = 0.0476</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 21 days (8)</td>
+      <td>Z = –3.8707, padj = 0.0011</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 28 days (8)</td>
+      <td>Z = –4.3412, padj = 0.0001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 14 days (8)</td>
+      <td>Z = –1.1334, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 21 days (8)</td>
+      <td>Z = –2.1813, padj = 0.292</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 28 days (8)</td>
+      <td>Z = –2.6517, padj = 0.0801</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 21 days (8)</td>
+      <td>Z = –1.0479, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (8) vs. 28 days (8)</td>
+      <td>Z = –1.5183, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (8) vs. 28 days (8)</td>
+      <td>Z = –0.4705, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="11">qPCRAmOARβ2DL Figure 3E</td>
+      <td>Kruskal-Wallis test</td>
+      <td></td>
+      <td>χ2 = 24.737, df = 4, p = 0.00006</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Dunns test</td>
+      <td>0 days (8) vs. 7 days (8)</td>
+      <td>Z = 0.5429, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 14 days (7)</td>
+      <td>Z = –2.9652, padj = 0.0302</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 21 days (6)</td>
+      <td>Z = –2.4814, padj = 0.130</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>0 days (8) vs. 28 days (4)</td>
+      <td>Z = –3.1454, padj = 0.0166</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 14 days (7)</td>
+      <td>Z = –3.4897, padj = 0.0048</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 21 days (6)</td>
+      <td>Z = –2.9841, padj = 0.0284</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>7 days (8) vs. 28 days (4)</td>
+      <td>Z = –3.5887, padj = 0.0033</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>14 days (7) vs. 21 days (6)</td>
+      <td>Z = 0.3496, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>14 days (7) vs. 28 days (4)</td>
+      <td>Z = –0.6246, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>21 days (6) vs. 28 days (4)</td>
+      <td>Z = –0.9079, padj = 1.0</td>
+      <td>ns</td>
+    </tr>
+  </tbody>
+</table>
 
 We further determined the relative gene expression of the most promising candidates by quantitative Real Time PCR (qPCR, Figure 3B–E). AmOARα1 and AmOARβ2 expression can be observed in DV and DL in all age groups of workerbees. Here, relative expression increases with age, as shown by significant differences between newly emerged bees (0 days) and the three oldest groups.
 
-## Octopamine is mandatory for honeybee thermogenesis
+### Octopamine is mandatory for honeybee thermogenesis
 
 To investigate the consequences of octopamine missing in the flight muscles, we fed workerbees with reserpine. This drug has the ability to deplete vesicles on monoaminergic synapses (Plummer et al., 1954; Cheung and Parmar, 2020). The octopamine concentrations in DV and DL are significantly decreased due to our treatment (Figure 4A–B). In contrast, the dopamine concentration in the flight muscle seems not to be affected (Figure 4—figure supplement 1). The same is true for the concentrations of octopamine (Figure 4C) and of the other monoamines in the MMTG (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Octopamine concentrations are decreased in DV and DL but not MMTG of reserpinezed workerbees. Data are represented as boxplots. Shown is median ± IQR. Mann-Whitney U test, DV(A): W = 105, z = –3.70, p < 0.001; DL(B): W = 102, z = –3.37, p < 0.001; MMTG(C): W = 56, z = –0.94, p = 0.1728. (D) Reserpinezed bees show hypothermia when compared with control. An injection of octopamine into the flight muscle helps the bees to recover, as no differences are observable between the control group and the recovered bees. The solid line represents the mean difference between TTHX and TA and the shaded area represents the 95% confidence interval. For statistic see Table 3. (E) Similar experiment as in (D) but bees were frozen in liquid N2 after 5 min for cAMP quantification. For statistic see Table 3. (F) The tissue cAMP concentrations in the flight muscles differ significantly due the treatment (Kruskal-Wallis test, X2 = 52.636, df = 2, p < 0.001). Reserpinezed bees has the lowest tissue cAMP concentrations in the flight muscles when compared with controls (Dunns test, Z = 2.6383, padj = 0.025) and recovered bees (Z = 7.117, padj= < 0.001). Controls also differ from the recovered bees (Z = –4.7998, padj <0.001). Data are represented as boxplots. Shown is median ± IQR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–H) Monoamine concentrations in the thoracic tissues quantified by HPLC-ECD. Reserpinezed bees have significant lower octopamine (B,D) but not dopamine concentrations (A,C) than control animals in both dorsoventral (A–B) and dorsal-longitudinal flight muscles (C–D). In the mesometa-thoracic ganglia serotonin (E), dopamine (F), octopamine (G), and tyramine (H) were detectable but no reserpine effect was observable. Mann-Whitney U test: DV & octopamine, W = 105, z = –3.70, p < 0.001; DL & octopamine:, W = 102, z = –3.37, p < 0.001; all others: p > 0.05. Shown is median ± IQR.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** To show differences in individual heating patterns, the thermographically determined temperatures along the line X - X’ (left) were plotted over time and exemplied for four bees (right, A-D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Screen for monoamines that are able to equalize the negative impact of reserpine on the workerbee thermogenesis. Injection of octopamine and tyramine lead to significantly increased thorax temperatures of reserpine-fed bees, wheres serotonin and dopamine does not. The solid line represents the mean difference between the thorax temperature (TTHX) and ambient temperature (TA) and the shaded area represents the 95% confidence interval.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Control bees, reserpinized bees and recovered reserpinized bees does not differ in their tissue cGMP concentrations of their flight muscles (Kruskal-Wallis test, x2 = 2.212, df = 2, p = 0.331).
+
+**Table 3.**
+ Statistical analysis of the thermogenesis dependent on the pharmacological treatment.c = control, r = reserpine, ATS = ANOVA type statistic, ns = not significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Groups (n)</th>
+      <th>ATS</th>
+      <th>Df</th>
+      <th>p</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">ReserpineNurse beesFigure 4D</td>
+      <td></td>
+      <td>9.3635</td>
+      <td>1.9854</td>
+      <td>0.00009</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (21) vs. r + ringer(23)</td>
+      <td>13.9618</td>
+      <td>1.0</td>
+      <td>0.0002</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (21) vs. r + octopamine (23)</td>
+      <td>0.0952</td>
+      <td>1.0</td>
+      <td>0.7577</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>r + ringer(23) vs. r + octopamine (23)</td>
+      <td>14.2223</td>
+      <td>1.0</td>
+      <td>0.0002</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ReserpineForager beesFigure 4D</td>
+      <td></td>
+      <td>14.5704</td>
+      <td>1.9437</td>
+      <td>0.0000006</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (29) vs. r + ringer(28)</td>
+      <td>126.5492</td>
+      <td>1.0000</td>
+      <td>0.0000003</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (29) vs. r + octopamine (29)</td>
+      <td>0.0753</td>
+      <td>1.0</td>
+      <td>0.7838</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>r + ringer(28) vs. r + octopamine (29)</td>
+      <td>21.1833</td>
+      <td>1.0000</td>
+      <td>0.000004</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ReserpinecAMPQuantificationFigure 4E</td>
+      <td></td>
+      <td>22.8759</td>
+      <td>1.8981</td>
+      <td>0,0000000003</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (26) vs. r + ringer(21)</td>
+      <td>39.9913</td>
+      <td>1.0000</td>
+      <td>0.0000000003</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>c + ringer (26) vs. r + octopamine (23)</td>
+      <td>0.1155</td>
+      <td>1.0</td>
+      <td>0.734</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>r + ringer(21) vs. r + octopamine (23)</td>
+      <td>37.3015</td>
+      <td>1.0000</td>
+      <td>0.000000001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="4">MianserinNurse beesForager beesFigure 5A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (30) vs. mianserin (30)</td>
+      <td>9.2737</td>
+      <td>1.0000</td>
+      <td>0.0023</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>control (30) vs. mianserin (30)</td>
+      <td>8.4638</td>
+      <td>1.0000</td>
+      <td>0.0036</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">YohimbineNurse beesForager beesFigure 5B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (30) vs. yohimbine (30)</td>
+      <td>0.8011</td>
+      <td>1.0000</td>
+      <td>0.3708</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>control (32) vs. yohimbine (33)</td>
+      <td>0.0584</td>
+      <td>1.0000</td>
+      <td>0.8091</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">AlprenololNurse beesForager beesFigure 5C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (30) vs. alprenolol (30)</td>
+      <td>7.5516</td>
+      <td>1.0000</td>
+      <td>0.0059</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>control (34) vs. alprenolol (33)</td>
+      <td>10.9721</td>
+      <td>1.0000</td>
+      <td>0.0009</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">CarvedilolNurse beesForager bees</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (30) vs. carvedilol (30)</td>
+      <td>0.1235</td>
+      <td>1.0000</td>
+      <td>0.7252</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>control (36) vs. carvedilol (34)</td>
+      <td>0.2650</td>
+      <td>1.0000</td>
+      <td>0.6067</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">MetoprololNurse beesForager bees</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (30) vs. metoprolol (30)</td>
+      <td>0.1031</td>
+      <td>1.0000</td>
+      <td>0.7481</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>control (36) vs. metoprolol (36)</td>
+      <td>0.2029</td>
+      <td>1.0000</td>
+      <td>0.6524</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Rp-8-CPT-cAMPSNurse beesForager beesFigure 6A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>control (25) vs. Rp-8-CPT-cAMPS (23)</td>
+      <td>4.062</td>
+      <td>1.0000</td>
+      <td>0.044</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>control (15) vs. Rp-8-CPT-cAMPS (14)</td>
+      <td>27.7439</td>
+      <td>1.0000</td>
+      <td>0.0000001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The reserpine feeding additionally causes hypothermia in both, nurse bees and forager bees (Figure 4D, Table 3). A preliminary screen with serotonin, dopamine, octopamine and tyramine revealed, that octopamine may reverse the reserpine effect (Figure 4—figure supplement 3). We were able to show that this octopamine effect is robust. We reversed the reserpine-induced hypothermia by injecting octopamine directly into the flight muscles (Figure 4, Table 3).
 
 As stated above, we hypothesize that β octopamine receptors are crucially involved in honeybee thermogenesis. Via Gαs proteins, these receptors are positively coupled to membrane-bound adenylyl cyclases (mAC), which leads to an increase of the intracellular adenosine 3’,5’-cyclic mono-phosphate (cAMP) concentration upon receptor activation (Balfanz et al., 2014). To control our hypothesis, we have repeated the reserpine experiment reported above. The reserpine induced hypothermia as well as the octopamine reversion of this effect are again clearly observable (Figure 4E, Table 3). We stopped thermography after 5 min and the bees were immediately flash-frozen to subsequently quantify the tissue cAMP concentrations of their flight muscles. The tissue cAMP concentration is significant lower in reserpinized bees when compared with control (Figure 4D). Furthermore, octopamine injection into the flight muscles of reserpinized bees leads to a strong increase of the tissue cAMP concentration (Figure 4D). The tissue guanosine 3’,5’-cyclic monophosphate (cGMP) concentrations seem not to be affected by our treatment (Figure 4—figure supplement 4). Further cyclic nucleotides in the flight muscles were either below the lower limit of quantification (cytidine 3’,5’-cyclic monophosphate, cCMP) or were not detectable at all.
 
-## Octopamine receptor antagonists also induce hypothermia
+### Octopamine receptor antagonists also induce hypothermia
 
-Next, we aimed to confirm the described effects of octopamine on honeybee thermogenesis and also to further narrow down the responsible receptor subtypes. Therefore, we injected different pharmacological substances directly into the flight muscles and analyzed their effect on thermogenesis. These substances antagonize various octopamine, tyramine, or adrenergic receptors. All antagonists either lead to hypothermia in both, nurse bees and forager bees, or they are not effective at all. The non-selective but potent octopamine receptor antagonist mianserin leads to hypothermia (Figure 5A, Table 3), while the effective tyramine receptor and α octopamine receptor antagonist yohimbine does not (Figure 5B, Table 3). Finally, alprenolol causes hypothermia too (Figure 5C, Table 3), whereas carvedilol and metoprolol did not have an observable effect on thermogenesis (Table 3).
+Next, we aimed to confirm the described effects of octopamine on honeybee thermogenesis and also to further narrow down the responsible receptor subtypes. Therefore, we injected different pharmacological substances directly into the flight muscles and analyzed their effect on thermogenesis. These substances antagonize various octopamine, tyramine, or adrenergic receptors. All antagonists either lead to hypothermia in both, nurse bees and forager bees, or they are not effective at all. The non-selective but potent octopamine receptor antagonist mianserin leads to hypothermia (Figure 5A, Table 3), while the effective tyramine receptor and $\alpha$ octopamine receptor antagonist yohimbine does not (Figure 5B, Table 3). Finally, alprenolol causes hypothermia too (Figure 5C, Table 3), whereas carvedilol and metoprolol did not have an observable effect on thermogenesis (Table 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74334/elife-74334-fig5-v1.jpg)
 
 **Figure 5.:** Mianserin (A) and alprenolol (C) cause hypothermia in workerbees but not yohimbine (B). The solid line represents the mean difference between TTHX and TA and the shaded area represents the 95% confidence interval. For statistic see Table 3.
 
-## Downstream metabolic pathway analyses points to glycolysis
+### Downstream metabolic pathway analyses points to glycolysis
 
 In a final experiment series, we investigated the signaling pathway downstream of octopamine receptors in more detail. Up this point, our results indicate the activation of β octopamine receptors, leading to an increase in cAMP concentration. This second messenger has the potential to activate protein kinase A (PKA). To test whether PKA is directly involved in the cellular pathway that enables thermogenesis, we used Rp-8-CPT-cAMPS which is a potent, metabolically stable and membrane-permeable inhibitor of PKA (Dostmann et al., 1990; Gjertsen et al., 1995). Rp-8-CPT-cAMPS negatively effects thermogenesis in both, nurse bees and forager bees (Figure 6A). Furthermore, we wanted to know whether octopamine release, which most likely activates PKA, could stimulate glycolysis. To test this hypothesis, we quantified pyruvate concentration in DL muscles after octopamine stimulation. Pyruvate is formed in the final step of glycolysis and its metabolites are further catabolized in the tricarboxylic acid cycle (Zhang et al., 2019). Pyruvate concentrations increase significantly after octopamine stimulation (Figure 6B). Finally, we observed that the AmGAPDH gene shows increased expression triggered by cold stress (Figure 6C). This gene encodes glyceraldehyde 3-phosphate dehydrogenase which converts glyceraldehyde 3-phosphate to D-glycerate 1,3-bisphosphate during glycolysis. A similar increase in AmGAPDH expression can be observed when the bees were treated with an octopamine injection in to the flight muscles instead of cold stress. (Figure 6D).
 
@@ -99,38 +808,38 @@ The data of our study supports the hypothesis that octopaminergic signaling in t
 
 ## Materials and methods
 
-## Animals
+### Animals
 
-Honeybee workers (Apis mellifera carnica) were collected from colonies of the department next to the Biocenter at the University of Würzburg, Germany. We declared bees that returned to the hive with pollen loads on their hind legs as forager bees. As nurse bees, we defined bees, that were sitting on a brood comb and were actively heating (thorax temperature, TTHX≥32 °C). TTHX was monitored with a portable thermographic camera (FLIR E6, FLIR, Wilsonville, USA). Pollen forager were collected for the gene expression analysis from the same hives and were immediately flash-frozen in liquid nitrogen and stored at –80 °C. For the age-series analysis (monoamine quantification, gene expression analysis), a queen was caged on a brood comb for 3 days. Shortly before the bees started to emerge, we transferred the brood comb into an incubator (34 °C, RH = 65 %). The first group (0-day-old bees) consisted of newly hatched bees and were collected directly from the brood comb. The remaining newly hatched bees were color-marked and then inserted into a standard hive. Those bees were collected from the hive after 7, 14, 21, and 28 days, respectively. For the AmGAPDH expression analysis, 7-day-old age-marked bees were collected from a hive and distributed equally into two identical cages. For the cold stress experiment, one cage was placed in an incubator at 10 °C for 120 min, while the other served as a control (120 min, 34 °C). For the octopamine injection experiment, bees of the control group receive an injection of saline solution (270 mM sodium chloride, 3.2 mM potassium chloride, 1.2 mM calcium chloride, 10 mM magnesium chloride, 10 mM 3-(N-morpholino) propanesulfonic acid, pH = 7.4; Erber and Kloppenburg, 1995) into their flight muscles. The test group was injected with octopamine (0.01 M in saline). Subsequently, both groups were incubated for 120 min at 34 °C. All collected bees (expression analysis, monoamine quantification) were immediately flash-frozen in liquid nitrogen and subsequently stored at –80 °C.
+Honeybee workers (Apis mellifera carnica) were collected from colonies of the department next to the Biocenter at the University of Würzburg, Germany. We declared bees that returned to the hive with pollen loads on their hind legs as forager bees. As nurse bees, we defined bees, that were sitting on a brood comb and were actively heating (thorax temperature, TTHX$\geq$32 °C). TTHX was monitored with a portable thermographic camera (FLIR E6, FLIR, Wilsonville, USA). Pollen forager were collected for the gene expression analysis from the same hives and were immediately flash-frozen in liquid nitrogen and stored at –80 °C. For the age-series analysis (monoamine quantification, gene expression analysis), a queen was caged on a brood comb for 3 days. Shortly before the bees started to emerge, we transferred the brood comb into an incubator (34 °C, RH = 65 %). The first group (0-day-old bees) consisted of newly hatched bees and were collected directly from the brood comb. The remaining newly hatched bees were color-marked and then inserted into a standard hive. Those bees were collected from the hive after 7, 14, 21, and 28 days, respectively. For the AmGAPDH expression analysis, 7-day-old age-marked bees were collected from a hive and distributed equally into two identical cages. For the cold stress experiment, one cage was placed in an incubator at 10 °C for 120 min, while the other served as a control (120 min, 34 °C). For the octopamine injection experiment, bees of the control group receive an injection of saline solution (270 mM sodium chloride, 3.2 mM potassium chloride, 1.2 mM calcium chloride, 10 mM magnesium chloride, 10 mM 3-(N-morpholino) propanesulfonic acid, pH = 7.4; Erber and Kloppenburg, 1995) into their flight muscles. The test group was injected with octopamine (0.01 M in saline). Subsequently, both groups were incubated for 120 min at 34 °C. All collected bees (expression analysis, monoamine quantification) were immediately flash-frozen in liquid nitrogen and subsequently stored at –80 °C.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For octopamine immunolabeling, we used a polyclonal rabbit anti-octopamine antibody (IS1033, ImmuSmol, Bordeaux, France) together with the STAINperfect immunostaining kit A (SP-A-1000, ImmuSmol, Bordeaux, France). We have analyzed ten individual MMTGs in three independent experiments for frontal sections and additionally three individual MMTGs for sagital sections. Four individual DVs and DLs, respectively, were analyzed in two independent experiments. Due to non optimal tissue permeability, we have slightly adopted the manufacturers protocol for whole mount preparations to perform analysis with vibratom sections. In brief, tissues (MMTG, flight muscles) were micro-dissected and subsequently fixed in fixation buffer for 3 hr at 4 °C while shaking. Afterwards, the fixed tissues were washed five times for 30 min with Wash Solution 1, embedded in 5% (w/v) agarose and were cut into 100-µm-thick sections. Then, the tissue sections were treated consecutively: 1 hr in Permeabilization Solution at RT followed by two times Wash Solution 1 for 3 min, 1 hr in Stabilization Solution followed by three times Wash Solution 1 for 3 min, and 1 hr in Saturation Solution at RT. Afterwards, the Saturation Solution was replaced by the primary antibody (1:500, in Antibody Diluent) and the tissue sections were incubated at 4 °C while shaking for at least for 72 hr. After five times washing cycles with Wash Solution 2 for 30 min at RT the secondary antibody (1:200 in Antibody Diluent, goat anti-rabbit Alexa Fluor 568; Molecular Probes, Eugene, USA) was applied for 24 hr (4 °C). After the final washing with Wash Solution two and Wash Solution 3 (both 3 times for 30 min at RT) the slices were mounted in 80% Glycerol (in Wash Solution 3) on microscope slides. Preparations were imaged by confocal laser scanning microscopy using a Leica TCS SP2 AOBS (Leica Microsystems AG, Wetzlar, Germany). HC PL APO objective lenses (10 x/0.4 NA imm; 20 x/ 0.7 NA imm and 63 x/1.20 NA imm) with additional digital zoom were used for image acquisition. ImageJ (1.53 c, Schindelin et al., 2012) was used to process images (maximum intensity projection, optimization for brightness and contrast) and Inkscape (1.1, Inkscape Developer Team, 2021) was used to arrange images into figures. MMTG nerve terminology is based on the nomenclature used by Markl, 1966.
 
-## Monoamine quantification
+### Monoamine quantification
 
 The DV and DL were dissected under liquid nitrogen. Afterwards, we thawed the remaining thoracic tissue in ice-cold ethanol to immediately dissect the MMTG. The separated tissues were kept at –80 °C until extraction. For high-performance liquid chromatography (HPLC) analysis of the monoamines we used a slightly modified protocol as described by Cook et al., 2017. For extraction, 120 µL (DV, DL) or 60 µL (MMTG) of extraction solution (10.0 pg/µL 3,4-dihydroxy-benzylamine (DHBA) in 0.2 M perchloric acid) was added in the first step. After a short centrifugation (21,130 g, 2 min, 0 °C) the tissues were disintegrated via sonication (10 min, 0 °C), followed by an incubation (20 min, 0 °C). After a final centrifugation (21,130 g, 14 min, 0 °C), the supernatant was analyzed via HPLC-ECD (Thermo Fisher Scientific, Waltham, USA) and the pellet was stored at –80 °C for protein quantification. A 3 µm reverse phase column (BDS-Hypersil-C18, 150 × 3 mm, pore size 130 Å, Thermo Fisher Scientific, Waltham, USA) and an ECD-3000RS configuration with two coulometric cells (6011RS ultra-analytical cell, Thermo Fisher Scientific, Waltham, USA) were connected to a biocompatible Dionex Ultimate 3,000 UHPLC focused (Thermo Fisher Scientific, Waltham, USA). The mobile phase contained 15% (v/v) methanol, 15% (v/v) acetonitrile, 85 mM sodium phosphate monobasic, 1.75 mM sodium dodecyl sulfate, 0.5 mM sodium citrate and ultrapure water. Phosphoric acid was used for accurate pH adjustment (pH 5.6 ± 0.01). We used a flow rate of 0.5 mL/min. Two detector channels were connected in series with working potentials of 425 mV (DHBA, dopamine, serotonin) and 800 mV (octopamine, tyramine), respectively. Quantification was performed via an external calibration. The raw data analysis was carried out with the program Chromeleon (7.2.10, Thermo Fisher Scientific, Waltham, USA).
 
-## Quantitative analysis of cyclic nucleotides
+### Quantitative analysis of cyclic nucleotides
 
 Individual flight muscle tissues were dissected under liquid nitrogen. Individual DV and DL were pooled and 800 µL homogenization buffer (40% (v/v) acetonitrile, 40% (v/v) methanol, 20% (v/v) H2O) was added and homogenized as described above. Samples were incubated at 95 °C for 10 min and then stored in the freezer (–80 °C) until further processing. After centrifugation (10 min, 21,130 g), the supernatant was transferred to mass spectroscopic analysis (HPLC-MS) as described by Beste et al., 2012. The residual pellet was used for the protein quantification.
 
-## Pyruvate quantification
+### Pyruvate quantification
 
 Workerbees were killed by decapitating and then the intact DL muscle was carefully dissected and separated into mirror-identical parts. Subsequently, both parts were incubated with different solutions using bath application. One part was treated with saline solution whereas the other part was treated with 0.01 M octopamine (in saline). After flash freezing in liquid nitrogen pyruvate was quantified using the pyruvate assay kit (MAK071, Sigma Aldrich). The muscles were homogenized in 100 µL Pyruvate Assay Buffer and in a tissue mill at 35 Hz for 3 min. After centrifugation (10 min, 21,130 g), 25 µL of the supernatant were used per reaction. Each reaction setup (50 µL) additionally contained 23 µL Pyruvate Assay Buffer, 1 µL Pyruvate Probe Solution and 1 µL Pyruvate Enzyme Mix. After incubation at room temperature for 30 min the absorption at 570 nm was measured for each sample and each external calibrator (0, 2, 4, 6, 8, 10 nmol per reaction).
 
-## Protein quantification
+### Protein quantification
 
 To compensate possible differences in the accuracy of tissue dissection for the HPLC-ECD, HPLC-MS and the pyruvate quantification analysis, we additionally measured the protein content in the samples after Bradford (Fic et al., 2010) and normalized amine or cyclic nucleotide concentration to protein content. The pellet (see above) was resuspended in 120 µL (HPLC-ECD: DV, DL), 30 µL (HPLC-ECD: MMTG), or 500 µL (HPLC-MS: DV+ DL) 0.2 M NaOH. After an incubation (15 min, 0 °C), the insoluble material was sedimented (9391 g, 5 min). Finally, 2 µL (HPLC-ECD: DV, DL), 10 µL (HPLC-ECD: MMTG), or 2,5 µL (HPLC-MS: DV+ DL) of the supernatant were transferred into a final volume of 1 mL 1 x ROTINanoquant solution (Carl Roth, Karlsruhe, Germany). All samples and the external calibrator (1, 2, 3, 5, 10, 20 µg/mL Albumin Fraction V, Carl Roth, Karlsruhe, Germany) were analyzed with a plate reader (Infinite 200 Pro, Tecan, Männedorf, Switzerland).
 
-## Gene expression analysis
+### Gene expression analysis
 
 Individual flight muscle tissues were dissected under liquid nitrogen. For the MMTG, we have used RNAlater ICE (Thermo Fisher Scientific, Waltham, USA) to prevent RNA degradation during the dissections. The GenUP Total RNA Kit (biotechrabbit, Henningsdorf, Germany) was used to extract total RNA following the standard protocol provided by the manufacturer including an extra DNase I digestion step. After binding of the RNA to the Mini Filter RNA, we added a 50 µL DNase mix containing 30 U RNase-free DNase I (Lucigen Corporation, Middleton, USA) together with the appropriate buffer and incubated for 15 min at room temperature. For the polymerase chain reaction (PCR) experiment, we pooled total RNA from one individual of each age (7, 14, 21 and 28-day-old bees) per tissue (brain, MMTG, DV, DL). 400 ng total RNA of each tissue were used for cDNA synthesis using the Biozym cDNA Synthesis Kit (Biozym, Hessisch Oldendorf, Germany). The cDNAs were then analyzed in 20 µL PCR reactions (1 µL cDNA, 8.2 µL H2O, 10 µL 2 x qPCR S’Green BlueMix (Biozym, Hessisch Oldendorf, Germany)), 0.4 µL of each primer (0.2 µM) using the following protocol: 95 °C for 2 min and 35 cycles at 95 °C for 5 s and 30 °C for 30 s. Finally, 10 µL for each PCR reaction was analyzed on a 1.5% agarose gel. For the qPCR experiments, we used individual total RNA per tissue. Here, for each sample 70 ng (DV) and 30 ng (DL) RNA were used. All cDNA synthesis reactions were performed with the Biozym cDNA Synthesis Kit (Biozym, Hessisch Oldendorf, Germany). PCR triplicates of each cDNA (5 µL) were analyzed in a qPCR on a Rotor-Gene Q (Qiagen, Hilden, Germany) in a total reaction volume of 20 µL. Every reaction contains 4.2 µL H2O, 10 µL 2 x qPCR S’Green BlueMix (Biozym, Hessisch Oldendorf, Germany), 0.4 µL of each primer (0.2 µM) and 5 µL cDNA. Finally, octopamine receptor gene expression was determined relative to the reference genes AmGAPDH and AmRPL10 using the R package ’EasypcR’ (v1.1.3) which uses the algorithm published by Hellemans et al., 2007. For the AmGAPDH relative expression analysis AmRPL32 and AmRPL19 served as reference genes.
 
-## Pharmacological thermography
+### Pharmacological thermography
 
 For the reserpine experiments, forager bees and nurse bees were collected as described above. The bees were kept and fed in equal proportions in two adjacent cages (34 °C, RH = 65 %) for 3 days. The reserpine group was fed with 500 µM reserpine solution (in 30% sucrose solution) ad libitum and the control group with 30% sucrose only. To enhance the solubility, the reserpine was pre-dissolved in acetone. For the experiments with receptor antagonists, the day before each measuring day, 20 bees were collected from the same hive and kept overnight in a cage at 34 °C (RH = 65 %). In the incubator, the bees were fed ad libitum with 30% sucrose solution. All injection solutions were freshly prepared every experimental day. All biogenic amines (Sigma-Aldrich), receptor antagonists (Sigma-Aldrich) or Rp-8-CPT-cAMPS (Biolog) were used in a concentration of 0.01 M in saline solution (see above). For solubility reasons, a 10:1 volume mixture of saline solution and dimethyl sulfoxide was used for carvedilol instead of pure buffer. Each bee was immobilized on ice until no more movement could be detected. The thorax was then punctured centrally to inject 1.0 µL testing solution using a 10.0 µL Hamilton syringe. Directly before the start of every measurement, the control group received an injection of the pure saline solution and the treatment group an injection of 0.01 M of the biogenic amine or the respective antagonist directly into their flight muscles. To enable optimal conditions for thermogenesis and thermographic recordings, we adapted the method of a tethered animal that walks upon a treadmill (Moore et al., 2014). This allows the bee to seemingly move freely, while at the same time the camera always monitors the same area of the bees thorax. This setup was located inside an incubator (18.5 °C, RH = 65 %) together with a thermographic camera (FLIR A65 camera, lens: 45°, f = 13 mm, FLIR, Wilsonville, USA). A thermal imaging video with 30 frames/min was recorded of each bee over 10 min. We converted the thermographic videos using the R package Thermimage (4.1.2, Tattersall, 2020) to subsequently read out the thoracic temperatures with ImageJ (1.53 c, Schindelin et al., 2012).
 
-## Statistical analysis
+### Statistical analysis
 
-All statistical analyses were performed using R (4.0.4 including ’stats’, R Development Core Team, 2020) and the R packages ’rstatix’ (0.7.0, Kassambara, 2020b) and ’FSA’ (0.9.1, Ogle et al., 2021). We performed a Shapiro-Wilk test to check the data for normality distribution. Since most data subsets did not display a normal distribution, we analyzed the data using either the Mann-Whitney U test or the Kruskal-Wallis test followed by Dunns post hoc analysis if significant differences were observable. For the statistical analysis of the pharmacological thermography experiments, we calculated the mean value per min for TTHX and TA, respectively. Afterwards, the Δ temperature (TTHX — TA) for the total time span of the experiment (five or 10 min) was subjected to nonparametric analysis of longitudinal data using a F1 LD F1 model of the R package ’nparLD’ (2.1 Noguchi et al., 2012). Visualization of the data was performed with the R packages ’ggplot2’ (3.3.3, Wickham, 2016), ‘ggpubr’ (0.4.0, Kassambara, 2020a), ’png’ (0.1–7, Urbanek, 2013), ’cowplot’ (1.1.1, Wilke, 2019), and ’magick’ (2.7.0, Wilke, 2019).
+All statistical analyses were performed using R (4.0.4 including ’stats’, R Development Core Team, 2020) and the R packages ’rstatix’ (0.7.0, Kassambara, 2020b) and ’FSA’ (0.9.1, Ogle et al., 2021). We performed a Shapiro-Wilk test to check the data for normality distribution. Since most data subsets did not display a normal distribution, we analyzed the data using either the Mann-Whitney U test or the Kruskal-Wallis test followed by Dunns post hoc analysis if significant differences were observable. For the statistical analysis of the pharmacological thermography experiments, we calculated the mean value per min for TTHX and TA, respectively. Afterwards, the $Δ$ temperature (TTHX — TA) for the total time span of the experiment (five or 10 min) was subjected to nonparametric analysis of longitudinal data using a F1 LD F1 model of the R package ’nparLD’ (2.1 Noguchi et al., 2012). Visualization of the data was performed with the R packages ’ggplot2’ (3.3.3, Wickham, 2016), ‘ggpubr’ (0.4.0, Kassambara, 2020a), ’png’ (0.1–7, Urbanek, 2013), ’cowplot’ (1.1.1, Wilke, 2019), and ’magick’ (2.7.0, Wilke, 2019).

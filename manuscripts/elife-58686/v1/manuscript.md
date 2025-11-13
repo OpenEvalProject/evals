@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Vertebrate macrophages are a highly heterogeneous cell population, but while Drosophila blood is dominated by a macrophage-like lineage (plasmatocytes), until very recently these cells were considered to represent a homogeneous population. Here, we present our identification of enhancer elements labelling plasmatocyte subpopulations, which vary in abundance across development. These subpopulations exhibit functional differences compared to the overall population, including more potent injury responses and differential localisation and dynamics in pupae and adults. Our enhancer analysis identified candidate genes regulating plasmatocyte behaviour: pan-plasmatocyte expression of one such gene ( Calnexin14D ) improves wound responses, causing the overall population to resemble more closely the subpopulation marked by the Calnexin14D -associated enhancer. Finally, we show that exposure to increased levels of apoptotic cell death modulates subpopulation cell numbers. Taken together this demonstrates macrophage heterogeneity in Drosophila , identifies mechanisms involved in subpopulation specification and function and facilitates the use of Drosophila to study macrophage heterogeneity in vivo.
+Vertebrate macrophages are a highly heterogeneous cell population, but while Drosophila blood is dominated by a macrophage-like lineage (plasmatocytes), until very recently these cells were considered to represent a homogeneous population. Here, we present our identification of enhancer elements labelling plasmatocyte subpopulations, which vary in abundance across development. These subpopulations exhibit functional differences compared to the overall population, including more potent injury responses and differential localisation and dynamics in pupae and adults. Our enhancer analysis identified candidate genes regulating plasmatocyte behaviour: pan-plasmatocyte expression of one such gene (Calnexin14D) improves wound responses, causing the overall population to resemble more closely the subpopulation marked by the Calnexin14D-associated enhancer. Finally, we show that exposure to increased levels of apoptotic cell death modulates subpopulation cell numbers. Taken together this demonstrates macrophage heterogeneity in Drosophila, identifies mechanisms involved in subpopulation specification and function and facilitates the use of Drosophila to study macrophage heterogeneity in vivo.
 
 ## Introduction
 
@@ -34,29 +34,73 @@ Here, we describe the first identification and characterisation of molecularly a
 
 ## Results
 
-## Drosophila embryonic plasmatocytes do not behave as a uniform population of cells
+### Drosophila embryonic plasmatocytes do not behave as a uniform population of cells
 
 The macrophage lineage of hemocytes (plasmatocytes) has historically been considered a homogeneous population of cells. However, careful analysis of plasmatocyte behaviour in vivo suggested to us that this lineage might not be functionally uniform. For instance, imaging the inflammatory responses of plasmatocytes to epithelial wounds, we find that some cells close to injury sites rapidly respond by migrating to the wound, while other neighbouring cells fail to respond (Figure 1a; Video 1). We also find that plasmatocytes exhibit variation in their expression of well-characterised plasmatocyte markers such as crq-GAL4 (Figure 1b–b’; Franc et al., 1996; Stramer et al., 2005) and display a broad diversity in their migration speeds within the embryo (random migration at stage 15; Figure 1c–d). These professional phagocytes also display differences in their capacities to phagocytose apoptotic cells with some cells engulfing many apoptotic particles, whereas others engulf very few, if any (Figure 1e). Furthermore, phagocytosis of microorganisms by larval hemocytes also varies significantly from cell-to-cell in vitro (Figure 1f). These differences within the plasmatocyte lineage led us to hypothesise that this cell population is more heterogeneous than previously appreciated.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila embryonic plasmatocyte responses.(a) GFP (green) and nuclear red stinger (magenta) labelled plasmatocytes on the ventral side of a stage 15 embryo at 0 min (a) and 60 min post-wounding (a’); plasmatocyte tracks at each timepoint are overlaid (a–a’) or shown in full (a’’). Examples of plasmatocytes failing to respond to the wound (w) indicated via asterisks; square bracket (a) indicates neighbouring plasmatocytes, one of which responds to wounding, while the other fails to respond (see Video 1). (b) Imaging of plasmatocytes labelled using crq-GAL4 to drive expression of GFP reveals a wide range in levels of crq promoter activity within plasmatocytes at stage 15; (b’) Close-up of cells marked by an asterisk in (b). (c) Overlay of plasmatocyte tracks of cells shown in (b) showing significant variation in their random migration speeds. (d) Scatterplot of plasmatocyte random migration speeds (taken from 23 embryos); line and error bars show mean and standard deviation, respectively. (e) Imaging the ventral midline at stage 15 shows a wide range in the amount of apoptotic cell clearance (green in merge; labelled via the caspase-sensitive reporter GC3ai) undertaken by plasmatocytes (magenta in merge, labelled via srpHemo-3x-mCherry reporter); (e’–e’’) mCherry and GC3ai channels; (e’’’) close-ups of cells devoid/full of engulfed GC3ai particles (indicated by asterisks in (e)). (f) Larval hemocytes (green in merge, labelled via Hml(Δ)-GAL4-driven expression of GFP) exhibit a range in their capacities to engulf calcofluor-labelled yeast (blue in merge) in vitro; (f’–f’’) GFP and yeast channels; white lines indicate cell edges in (f’’); asterisks in (f’’) indicate cells that have failed to phagocytose yeast; white arrows in (f’’) indicate cells that have phagocytosed multiple yeast particles; magenta arrow in (f’’) indicates close-up of region indicated in (f’’’). Scale bars represent 20 μm (a–a’’, b, c, e–e’’), 10 μm (e’’’, f–f’’), or 5 μm (b’, f’’’). See Supplementary file 1 for full list of genotypes.Figure 1—source data 1.d) of Figure 1.
+**Figure 1.:** (a) GFP (green) and nuclear red stinger (magenta) labelled plasmatocytes on the ventral side of a stage 15 embryo at 0 min (a) and 60 min post-wounding (a’); plasmatocyte tracks at each timepoint are overlaid (a–a’) or shown in full (a’’). Examples of plasmatocytes failing to respond to the wound (w) indicated via asterisks; square bracket (a) indicates neighbouring plasmatocytes, one of which responds to wounding, while the other fails to respond (see Video 1). (b) Imaging of plasmatocytes labelled using crq-GAL4 to drive expression of GFP reveals a wide range in levels of crq promoter activity within plasmatocytes at stage 15; (b’) Close-up of cells marked by an asterisk in (b). (c) Overlay of plasmatocyte tracks of cells shown in (b) showing significant variation in their random migration speeds. (d) Scatterplot of plasmatocyte random migration speeds (taken from 23 embryos); line and error bars show mean and standard deviation, respectively. (e) Imaging the ventral midline at stage 15 shows a wide range in the amount of apoptotic cell clearance (green in merge; labelled via the caspase-sensitive reporter GC3ai) undertaken by plasmatocytes (magenta in merge, labelled via srpHemo-3x-mCherry reporter); (e’–e’’) mCherry and GC3ai channels; (e’’’) close-ups of cells devoid/full of engulfed GC3ai particles (indicated by asterisks in (e)). (f) Larval hemocytes (green in merge, labelled via Hml(Δ)-GAL4-driven expression of GFP) exhibit a range in their capacities to engulf calcofluor-labelled yeast (blue in merge) in vitro; (f’–f’’) GFP and yeast channels; white lines indicate cell edges in (f’’); asterisks in (f’’) indicate cells that have failed to phagocytose yeast; white arrows in (f’’) indicate cells that have phagocytosed multiple yeast particles; magenta arrow in (f’’) indicates close-up of region indicated in (f’’’). Scale bars represent 20 μm (a–a’’, b, c, e–e’’), 10 μm (e’’’, f–f’’), or 5 μm (b’, f’’’). See Supplementary file 1 for full list of genotypes.
 
-## Discrete subpopulations of plasmatocytes are present in the developing Drosophila embryo
+![Video 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-video1.mp4.jpg)
+
+**Video 1.:** GFP (green) and red stinger (magenta) labelled plasmatocytes responding to an epithelial wound at stage 15. Tracks of cell movements are shown via dots and lines. Magenta circles show cells responding to the wound; blue circles indicate cells that are the same distance from the wound but fail to respond to the wound. Movie corresponds to stills shown in Figure 1a and lasts for 60 min post-wounding. Scale bar represents 20 μm. See Supplementary file 1 genotype in full.
+
+### Discrete subpopulations of plasmatocytes are present in the developing Drosophila embryo
 
 Given the diversity in plasmatocyte behaviour observed (Figure 1), we hypothesised that macrophage heterogeneity represents an evolutionarily conserved feature of innate immunity, which therefore originally evolved in the absence of an adaptive immune system. To address this and look for molecular differences between plasmatocytes, we examined transgenic enhancer reporter lines (VT-GAL4 lines) produced as part of a large-scale tilling array screen (Kvon et al., 2014) that had been annotated as labelling hemocytes (http://enhancers.starklab.org/). Based on examination of the published VT-GAL4 expression patterns, we identified VT-GAL4 lines that appeared to label reduced numbers of plasmatocytes in the embryo, reasoning that plasmatocyte subpopulations could be molecularly identified on the basis of differences in reporter expression. While a number of the enhancers appeared to label all plasmatocytes (e.g. VT41692-GAL4), we identified several that labelled discrete numbers of plasmatocytes (Figure 2a). We next confirmed that the cells labelled by these VT-GAL4 lines were plasmatocytes by using these constructs to drive expression of UAS-tdTomato in the background of a GAL4-independent, pan-hemocyte marker (srpHemo-GMA – serpent enhancer region driving expression of a GFP-tagged actin-binding domain of Moesin; Figure 2b–d). As initially predicted based on their morphology and position during embryogenesis, each of the VT-GAL4 lines marking potential subpopulations did indeed express in the hemocyte lineage (Figure 2e). These subpopulation cells were identified as plasmatocytes based upon their morphology, the absence of lamellocytes in embryos and the non-migratory nature of crystal cells (Wood and Jacinto, 2007) and could be observed to follow both the dorsal and ventral migration routes (Ratheesh et al., 2015) used by plasmatocytes during their developmental dispersal (Figure 2e). In order to quantify the proportion of cells labelled by each VT-GAL4 line, we counted the number of cells labelled on the ventral midline of the developing stage 15 embryo, using VT-GAL4 lines to drive expression from UAS-GFP. This verified reproducible and consistent labelling of discrete subsets of plasmatocytes (Figure 2f–h), suggesting that these cells represent stable subpopulations within this macrophage lineage.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig2-v1.jpg)
+
+**Figure 2.:** (a) Lateral views of stage 13/14 embryos with in situ hybridisation performed for GAL4 for indicated VT-GAL4 lines (anterior is left). Taken with permission from http://enhancers.starklab.org/ (n.b. these images are not covered by the CC-BY 4.0 licence and further reproduction of this panel would need permission from the copyright holder); VT41692-GAL4 represents an example in which the majority of plasmatocytes are labelled. (b) Schematic diagram showing screening approach to identify subpopulations of plasmatocytes: VT-GAL4-positive plasmatocytes will express both GMA (green) and tdTomato (magenta) – white cells in the schematic. (c–d) Images showing the ventral midline at stage 14 of negative control (no driver; w;UAS-tdTom/+;srpHemo-GMA) and positive control (w;srpHemo-GAL4/UAS-tdTom;srpHemo-GMA) embryos. (e) Images showing embryos containing VT-GAL4-labelled cells (via UAS-tdTomato, shown in magenta) at stage 13 (first row, ventral views), stage 14 (second row, dorsal views), and stage 15 (third row, ventral views). The entire hemocyte population is labelled via srpHemo-GMA (green); arrows indicate examples of VT-GAL4-positive plasmatocytes; asterisks indicate VT-GAL4-positive cells that are not labelled by srpHemo-GMA. N.b. VT62766-GAL4 image contrast enhanced to different parameters compared to other images owing to the very bright labelling of amnioserosal cells (cells on dorsal side of embryo destined to be removed during dorsal closure; labelled with an asterisk) in the stage 14 image. (f) Labelling of smaller numbers of plasmatocytes on the ventral midline at stage 15 using VT-GAL4 lines indicated and UAS-GFP (green); boxed regions show close-ups of VT-GAL4-positive plasmatocytes (f’). (g) Ventral view of positive control embryo (w;srpHemo-GAL4,UAS-GFP) and example plasmatocyte (g’) at stage 15. (h) Scatterplot showing numbers plasmatocytes labelled using VT-GAL4 lines to drive expression from UAS-GFP on the ventral midline at stage 15; lines and error bars represent mean and standard deviation, respectively. p-Values calculated via one-way ANOVA with a Dunnett’s multiple comparison post-test (all compared to srpHemo-GAL4 control); n = 9 embryos per genotype. Scale bars represent 150 μm (a) or 10 μm (c–g). See Supplementary file 1 for full list of genotypes; overlap of VT enhancer expression with known plasmatocyte markers can be found in Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a–b) Maximum projections of the ventral surface of a negative control embryo (a) and an embryo containing eater-GFP and VT17559-RFP (b). Left-hand panels show GFP channel (green in merge); central panels show RFP channel (magenta in merge); right-hand panels show merged images. (c) Single z-slice taken from the z-series used to construct projection shown in (b) in order to confirm lack of eater expression in subpopulation cells. Scale bars represent 20 μm. See Supplementary file 1 for full list of genotypes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a–b) Maximum projections of the ventral surface of embryos containing VT-RFP and either simu-cytGFP (a) or crq-GAL4,UAS-GFP (b). Left-hand panels show simu-cytGFP (a, green in merge) or crq-GAL4,UAS-GFP (b, green in merge); central panels show RFP channel (magenta in merge); right-hand panels show merged images. (a’–b’) show enlarged regions indicated by white boxes in merged images; ‘r’, ‘g’, and ‘r+g’ denote cells expressing RFP only, GFP only or both fluorophores, respectively; w1118 embryos without a VT-RFP transgene used as negative control; scale bars denote 20 μm. (c) Scatterplot of the standard deviation of normalised GFP fluorescence intensity per plasmatocyte, per embryo in controls containing crq-GAL4,UAS-GFP or simu-cytGFP. Lines and error bars show mean and standard deviation, respectively; n = 5 and 4 embryos for simu-cytGFP and crq-GAL4,UAS-GFP, respectively; p<0.0001 via Student’s t-test. See Supplementary file 1 for full list of genotypes.
+
 To characterise these subpopulations further, their overlap with the known plasmatocyte markers Eater, Croquemort, and Simu was investigated using novel GAL4-independent VT-RFP reporters, which we generated using the same enhancer sequences and insertion sites originally characterised by the Stark lab (Kvon et al., 2014). While we were unable to detect embryonic expression of eater at this stage of development (Figure 2—figure supplement 1), reporters for crq and simu (crq-GAL4,UAS-GFP and simu-cytGFP), which also encode phagocytic receptors (Franc et al., 1996; Kurant et al., 2008), clearly labelled embryonic plasmatocytes (Figure 2—figure supplement 2). simu-cytGFP-labelled plasmatocytes with little cell-to-cell variation (Figure 2—figure supplement 2a), whereas crq-GAL4,UAS-GFP displayed considerable heterogeneity (Figure 1b–b’; Figure 2—figure supplement 2b–c). However, there was little correlation of simu or crq marker expression with subpopulation cells, since all cells expressed similar levels of simu, while both crq and VT-RFP expression appeared to vary independently of each other (Figure 2—figure supplement 2a–b). Taken together, we were able to detect discrete subpopulations of plasmatocytes in the embryo, but these subpopulations showed no clear segregation with existing plasmatocyte markers.
 
-## Subpopulations of Drosophila plasmatocytes vary across development: subpopulation dynamics in larvae and white pre-pupae
+### Subpopulations of Drosophila plasmatocytes vary across development: subpopulation dynamics in larvae and white pre-pupae
 
 Having identified subpopulations of plasmatocytes in the embryo, we then examined other stages of development to see whether their presence was maintained or modulated over time. In order to exclude potential expression in non-hemocyte cells (e.g. the non-plasmatocyte cells apparent in Figure 2e), we labelled subpopulation cells specifically using a split GAL4 approach (Pfeiffer et al., 2010), employing the serpent enhancer (a well-characterised hemocyte marker; Lebestky et al., 2000; Rehorn et al., 1996) and VT enhancers to express the transcriptional activation domain (AD) and DNA binding domains (DBD) of GAL4 independently. Only when co-expressed in the same cell do the AD and DBD heterodimerise and allow expression of UAS transgenes (Figure 3—figure supplement 1a). Characterising the split GAL4 lines in the embryo via expression of the EGFP-derivative Stinger (Barolo et al., 2000) confirmed that this split GAL4 approach labels discrete subpopulations of plasmatocytes within the embryo, although with a higher proportion of cells labelled compared to the original VT-GAL4 lines (Figure 3—figure supplement 1b–d) – a difference likely due to a combination of amplification via the split GAL4 system and enhanced detectability of Stinger, which accumulates in the nucleus due to its nuclear localisation signal. Similar trends in the proportions of plasmatocytes labelled in a variety of locations across the embryo were observed for each subpopulation; for example, VT32897-labelled cells were the least frequently observed in the lateral head region and on the dorsal and ventral sides of the embryo (Figure 3—figure supplement 1b–d). As per Figure 2e, this suggests there are no clear biases between the dispersal routes undertaken by subpopulation cells.
 
 While serpent expression decreases in hemocytes during larval stages, we found that srpHemo-AD;srpHemo-DBD in concert with UAS-stinger was sufficient to label large numbers of cells in both L1 and L2 larvae (Figure 3a–b), consistent with previous publications (Gyoergy et al., 2018). Following hatching of embryos, we cannot use cell morphology to discriminate between plasmatocytes and other hemocyte lineages (crystal cells and lamellocytes) and therefore refer to subpopulation cells as hemocytes for post-embryonic stages of development. Quantification of the numbers of subpopulation cells that could be detected using the split GAL4 system to drive expression from UAS-stinger showed that roughly 50% of serpent-positive hemocytes were labelled in L1 larvae for each VT subpopulation (Figure 3a–c). We cannot exclude the possibility that some of the cells labelled in L1 larvae are fat body cells as serpent is known to be expressed in the fat body (Rehorn et al., 1996). Therefore, it is possible that greater than 50% of hemocytes are labelled at this stage; nonetheless, a significant proportion of subpopulation cells are not labelled via these split GAL4 reporters in L1 larvae (Figure 3a–c). At this stage of development, most hemocytes are found in sessile patches attached to the body wall (Lanot et al., 2001; Makhijani et al., 2011) – this is also the case for the majority of subpopulation cells, since live imaging shows little movement relative to other cells during larval crawling, although some circulating cells could be observed (Video 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig3-v1.jpg)
+
+**Figure 3.:** (a–b) Images of L1 (a) and L2 larvae (b) with cells labelled using the split GAL4 system (srpHemo-AD in combination with srpHemo-DBD or the VT-DBD transgene indicated) to drive expression from UAS-stinger. Scale bars represent 150 μm; white lines show edge of the larva; images contrast enhanced to 0.3% saturation. (c) Scatterplot showing numbers of Stinger-positive cells labelled via the split GAL4 system per larva; numbers of cells were quantified from flattened L1 larvae. w1118;UAS-stinger/+ larvae were used as negative controls; all conditions are significantly different compared to the positive control (w1118;srpHemo-AD/UAS-stinger;srpHemo-DBD/+) via a one-way ANOVA with a Dunnett’s multiple comparison post-test: srp vs w, p<0.0001; srp vs VT17559 p<0.0001; srp vs VT32897, p=0.0013; srp vs VT57089, p=0.0029; srp vs VT62766, p=0.0047; n = 5 for w control, srp, VT17559, VT32897, and VT57089 and n = 6 for VT62766. See Supplementary file 1 for full list of genotypes; a schematic and validation of this split GAL4 approach in the embryo can be found in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) SrpHemo-AD and VT-DBD transgenic flies were generated: srpHemo-AD drives expression of the activation domain (AD) of GAL4 in all hemocytes (green), while VT enhancers drive expression of the DNA-binding domain (DBD) of GAL4 in a subpopulation of plasmatocytes and, in the case of some VT enhancers, other cell types (dark blue). (a’–a’’) Intersection of these expression patterns leads to the presence of both halves of GAL4 (cyan) solely within those cells in which both srp and VT enhancer regions are active (a’’). This approach restricts activation of transgenes under UAS control (e.g. UAS-stinger) to those cells that are double-positive for both srp and VT enhancer expression, ensuring expression is more specific to plasmatocyte subpopulations. (b–d) Maximum projections of live embryos containing srpHemo-H2A-3x-mCherry (all hemocytes, purple) and UAS-Stinger (green) driven via the split GAL4 system (srpHemo-AD in combination with the appropriate VT-DBD) at stages and orientations indicated. White lines show edges of the embryo; overlap of nuclear markers appears white; scale bars represent 20 μm. (e–g) Scattergraphs showing quantification of percentage of srpHemo-H2A-3x-mCherry-positive cells that are positive for Stinger expression in lateral regions of the head at stage 12 (e), on the ventral midline at stage 13 (f) and on the dorsal side of the embryo at stage 16 (g). See Supplementary file 1 for full list of genotypes.
+
+![Video 2.](https://cdn.elifesciences.org/articles/58686/elife-58686-video2.mp4.jpg)
+
+**Video 2.:** Movies showing localisation and movement of cells labelled using split GAL4 lines (srpHemo-AD in combination with VT17559-DBD, VT32897-DBD, VT57089-DBD, or VT62766-DBD) to drive expression from UAS-stinger in L1 larvae. Images taken from timelapse series of single focal planes to enable rapid imaging. The majority of cells detected appear attached to the body wall, since they do not shift their relative positions during larval movements, although some cells can be seen in circulation. Scale bars represent 200 μm. See Supplementary file 1 for full list of genotypes.
+
 In contrast to the significant numbers of cells present in L1 and L2 larvae, imaging of L3 larvae containing split srpHemo-AD and VT-DBD reporters (abbreviated to VTn) revealed that fewer subpopulation cells could be detected at this stage (Figure 4a–f). This decrease in subpopulation cells does not seem to be linked to lower levels of serpent expression because blood cells are robustly labelled in positive control L3 larvae (srpHemo-AD in combination with srpHemo-DBD; Figure 4b), suggesting that serpent expression is not limiting our ability to detect subpopulation cells. Moreover, a reduction in subpopulation cells can also be seen when using the original VT-GAL4 lines to drive stinger expression at this stage (i.e. independent of a reliance on serpent expression for labelling; Figure 4—figure supplement 1a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig4-v1.jpg)
+
+**Figure 4.:** (a–f) Dorsal and ventral views of negative control L3 larvae (a, no GAL4), positive control L3 larvae with hemocytes labelled via serpent (b, UAS-stinger driven by srpHemo-AD;srpHemo-DBD) and L3 larvae containing cells labelled through expression of UAS-stinger via srpHemo-AD and the VT-DBD transgenes indicated (c–f). Arrowheads indicate non-specific expression of Stinger in salivary glands and gut (a’ – also visible in dorsal images (c’–f’) but not labelled) and possible proventricular region hemocytes/garland cells (b); arrows (b, b') indicate regions shown in close-ups of potential hemocyte population in the head region (b’’) and in the Bolwig organ (b’’’); boxes indicate individual hemocytes (c, e) and labelling in the head region (d), proventriculus/of Garland cells (d'), and Bolwig organ (e) shown at enhanced magnification in inset panels; asterisks in (d) denote region shown as a close-up and at a reduced brightness in (d’’) in order to reveal detail of cells along the dorsal vessel; fractions indicate the number of larvae exhibiting a particular localisation out of the total imaged. (g) Scatterplot showing the proportion of subpopulation cells labelled via the split GAL4 system in circulation (initial bleed) compared to the proportions in resident/adhered populations (scraping of the carcass) in the indicated genotypes. Proportions obtained via each method compared via Student’s t-test (n = 10 larvae per genotype; p=0.77 (VT17559), p=0.13 (VT32897), p=0.27 (VT57089), p=0.60 (VT62766)). (h) Bar chart showing the relative proportions of labelled cells found within the anterior, medial or posterior 1/3 of L3 larvae using Hml(Δ)-GAL4 to drive EGFP or the split GAL4 system to express Stinger in all larval hemocytes or subpopulations, respectively (n = 17, 12, 20, 13, 14 larvae). (h’) Scatterplot of the proportions of cells found within the anterior region of L3 larvae for controls and split GAL4 lines. Kruskall-Wallis test with Dunn’s multiple comparisons test was used to compare subpopulation values with Hml(Δ)-GAL4 control; (p=0.11 (VT17559), p=0.061 (VT32897), p=0.0018 (VT57089), p=0.0063 (VT62766)). Scale bars represent 500 μm (a–f); larval images contrast enhanced to 0.3% saturation (a–f); lines and error bars represent mean and standard deviation, respectively (g, h’); bars represent mean (h); ns and ** denote not significant and p<0.01, respectively. See Supplementary file 1 for full list of genotypes; see Figure 4—figure supplement 1 for quantification of numbers of subpopulation cells labelled using the original VT-GAL4 lines and lineage tracing of subpopulation cells via G-TRACE.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Scatterplot showing proportion of cells that can be labelled via VT-GAL4 (using UAS-stinger as a reporter) when bled from L3 larvae (i.e. labelled independently of a requirement for serpent expression); larvae containing UAS-stinger, but without a driver were used as a negative control. Each point represents a dissected larva (n = 8, 7, 7, 8 and 8, from left to right for indicated genotypes). Lines and error bars represent mean and standard deviation, respectively; genotypes were as follows: w;UAS-stinger, w;UAS-stinger;VT-GAL4. (b) Schematic use of G-TRACE system to lineage trace subpopulations in concert with split GAL4 transgenics. (c) Grouped bar graph showing proportion of fluorescent cells labelled using split GAL4 transgenics indicated and G-TRACE for serpent control and indicated VT lines (split GAL4 system). Red bars/dots show proportion of fluorescent cells in which only Red Stinger can be detected (current expression of split GAL4); yellow bars/dots show proportion of fluorescent cells in which both Red Stinger and Stinger can be detected (historical and current expression of split GAL4); green bars/dots show proportion of fluorescent cells in which only Stinger can be detected (historical expression of split GAL4, which has now ceased). Each point represents a dissected larva (n = 10, 7, 9, 10 and 9, from left to right for indicated genotypes). Bars and error bars show mean and standard deviation, respectively; bars annotated to show average number of cells counted across each category for 9 field of views. See Supplementary file 1 for full list of genotypes.
+
 Using this approach, VT32897 and VT17559 labelled the most cells (Figure 4c–d), with only the occasional cell present in VT57089 larvae (Figure 4e) and cells largely absent from VT62766 larvae (Figure 4f). Labelled cells were also present in the head region, along the dorsal vessel (the fly heart) and between the salivary glands (which themselves exhibit non-specific labelling) in VT32897 larvae. The VT32897 head region cells are likely to represent sessile hemocytes, whereas cells at the remaining two sites probably correspond to serpent-positive nephrocytes and garland cells (Brodu et al., 1999; Das et al., 2008), respectively (Figure 4d). VT57089 shows additional staining in the head region (potentially the Bolwig organ; Figure 4e) and, as per the dorsal vessel-associated cells in VT32897 (Figure 4d), hemocytes can also be found in these regions when the total hemocyte population is labelled using srpHemo-AD and srpHemo-DBD in positive controls (Figure 4b; Video 3). Furthermore, these larval distributions closely resemble patterns observed using VT-GAL4 reporters, albeit with a loss of non srp-dependent labelling due to our split GAL4 approach (data not shown). Live imaging of L3 larvae confirmed that hemocytes were predominantly attached to the body wall, but that small numbers of cells could be detected in circulation (Video 4).
+
+![Video 3.](https://cdn.elifesciences.org/articles/58686/elife-58686-video3.mp4.jpg)
+
+**Video 3.:** Movie showing rhythmic movements of cells labelled using srpHemo-AD in combination with srpHemo-DBD to drive expression from UAS-stinger in an L3 larva. The area indicated shows cells on dorsal midline (likely to be nephrocytes) that move in time with pumping of the dorsal vessel (see also Video 4, Video 5 and Video 7). These cells can also be seen using VT32897-based enhancers. Scale bars represent 500 μm. See Supplementary file 1 for genotype in full.
+
+![Video 4.](https://cdn.elifesciences.org/articles/58686/elife-58686-video4.mp4.jpg)
+
+**Video 4.:** Movies showing localisation and movement of cells labelled using split GAL4 lines (srpHemo-AD in combination with VT17559-DBD, VT32897-DBD, VT57089-DBD, or VT62766-DBD) to drive expression from UAS-stinger in L3 larvae. Images taken from timelapse series of single focal planes to enable rapid imaging. Far fewer cells are visible compared to L1 and L2 larvae and the majority of cells detected appear attached to the body wall, since they do not shift their relative positions during larval movements. Movies repeat with second repetition showing examples of rare cells in circulation (illustrated by overlaid tracks). Scale bars represent 500 μm. See Supplementary file 1 for full list of genotypes.
 
 To quantify the proportion of hemocytes that were labelled in L3 larvae and address any bias in localisation, L3 larvae were bled and then the carcasses scraped (as described in Petraki et al., 2015) to compare numbers of cells in circulation with those more tightly adhered to tissue, respectively. This approach confirmed the low numbers of cells observed in L3 larval images and revealed no bias in subpopulation localisation, with similar proportions present in circulation and adhered to tissue for each subpopulation (Figure 4g). Quantification of subpopulation localisation along the L3 body axis suggested that VT57089 and VT62766 cells exhibit a bias toward the posterior of the larvae compared to the total population (Figure 4h–h’).
 
@@ -68,7 +112,19 @@ Imaging of white pre-pupae (WPP), the stage that marks the beginning of pupal de
 
 **Figure 5.:** (a–b) Dorsal and ventral views of negative control (a, UAS-stinger, but no driver) and positive control (b, UAS-stinger driven by srpHemo-AD;srpHemo-DBD) white pre-pupae (WPP); boxes indicate regions shown in close-up views of positive controls. (c–f) dorsal and ventral views of WPP containing cells labelled using srpHemo-AD and the indicated VT-DBD to drive expression from UAS-stinger. Very few VT enhancer-labelled cells can be detected in WPP: boxes mark regions shown in close-up views with example hemocytes indicated with an arrow; dorsal vessel-associated and proventricular region/Garland cells can also be observed in VT32897 WPP (arrowheads in d and d’, respectively); scale bars represent 500 μm (WPP) or 50 μm (close-ups); WPP images contrast enhanced to 0.3% saturation; close-up images contrast enhanced individually. See Supplementary file 1 for full list of genotypes.
 
-## Subpopulation cells return in large numbers during pupal development
+![Video 5.](https://cdn.elifesciences.org/articles/58686/elife-58686-video5.mp4.jpg)
+
+**Video 5.:** Movie showing movements of srp-positive cells within the hemolymph of a white pre-pupa. Cells labelled via UAS-stinger expression driven by srpHemo-AD in combination with srpHemo-DBD. Scale bar represents 500 μm. See Supplementary file 1 for genotype in full.
+
+![Video 6.](https://cdn.elifesciences.org/articles/58686/elife-58686-video6.mp4.jpg)
+
+**Video 6.:** Movie showing movements of VT57089 cells within the hemolymph of a white pre-pupa (examples highlighted with green circles). Cells labelled via UAS-stinger expression using srpHemo-AD and VT57089-DBD. Movie plays twice with an overlay of the tracks of cells in circulation shown in repeat. Scale bar represents 500 μm. See Supplementary file 1 for genotype in full.
+
+![Video 7.](https://cdn.elifesciences.org/articles/58686/elife-58686-video7.mp4.jpg)
+
+**Video 7.:** Movie showing rhythmic movements of cells in a white pre-pupa labelled using srpHemo-AD in combination with VT32897-DBD to drive expression from UAS-stinger. Cells on dorsal midline (likely to be nephrocytes) move in time with pumping of the dorsal vessel in a white pre-pupa. Scale bar represents 500 μm. See Supplementary file 1 for genotype in full.
+
+### Subpopulation cells return in large numbers during pupal development
 
 Since subpopulation cells appear associated with stages of development when organogenesis and tissue remodelling occur, we hypothesised that some hemocytes may be reprogrammed via changes in expression leading to reactivation of the enhancers that mark these subpopulations. This would enable subpopulations to return during metamorphosis. Imaging pupae at various times after puparium formation (APF) revealed that subpopulation cells re-emerged in large numbers during this stage, but with distinct dynamics between subpopulations labelled with different enhancers (Figure 6a–f). For instance, VT17559 cells are already present in substantial numbers by 18 hr APF (Figure 6c), whereas VT32897 reporter expression reappears between 24 and 48 hr APF (Figure 6d). VT57089 and VT62766 cells increased in numbers more gradually over the course of pupal development (Figure 6e–f). Different subpopulations appear present in subtly distinct locations in pupae (Figure 6). Further work will be required to understand if subpopulation specification occurs in situ or cells are specified and then migrate to these regions.
 
@@ -76,21 +132,37 @@ Since subpopulation cells appear associated with stages of development when orga
 
 **Figure 6.:** (a–b) Dorsal images of negative control (a, no GAL4) and positive control pupae (b, labelled via srpHemo-AD;srpHemo-DBD) at 18 hr after puparium formation (APF). (c–f) dorsal images showing localisation of cells labelled using srpHemo-AD and VT-DBD (VT enhancers used to drive DBD expression indicated above panels) to drive expression of UAS-stinger during pupal development from 18 hr AFP to 72 hr APF. All image panels contrast enhanced to 0.3% saturation to reveal localisation of labelled cells due to differing intensities of reporter line expression. Scale bars represent 500 μm. See Supplementary file 1 for full list of genotypes.
 
-## Subpopulations display distinct dynamics and localisation in adults
+### Subpopulations display distinct dynamics and localisation in adults
 
 Immediately after adults hatch, large numbers of split GAL4-labelled cells can be observed across all lines and are present in selected regions that overlap with the overall adult hemocyte population (Figure 7a–e). The overall hemocyte population remains detectable as adults age (0–6 weeks; Figure 7a); however, not all subpopulations exhibit an identical localisation or dynamics during this time (Figure 7b–e). VT57089 and VT62766 cells largely disappear by 1 week (Figure 7d–e) and the majority of VT17559-labelled cells are absent by 2 weeks (Figure 7b). By contrast, VT32897 cells can be detected for at least 6 weeks of adult life and are particularly prominent in the thorax at 4 weeks (Figure 7c). Other differences in localisation are also apparent with cells particularly obvious in the legs for the VT17559 line (Figure 7b, day 1–2 weeks), whereas VT57089 and VT62766-labelled cells are more closely associated with the thorax and dorsal abdomen (Figure 7d–e, day 1). Labelled cells are also present in the proboscis for several lines (Figure 7c–e).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig7-v1.jpg)
 
-**Figure 7.:** (a–e) Representative lateral images of adult flies between 0 and 6 weeks of age showing localisation of cells labelled using srpHemo-3x-mCherry (a, positive control), or split GAL4 to drive expression of stinger (b-e, srpHemo-AD;VT-DBD). The VT enhancers used to drive expression of the DNA-binding domain (DBD) of GAL4 correspond to VT17559 (b), VT32897 (c), VT57089 (d), and VT62766 (e); inset images show alternative view of proboscis region from same fly (a) or at a reduced level of brightness to reveal cellular detail (d). Images contrast enhanced to 0.15% saturation (a–c, e) or 0.75% (d) to reveal localisation of labelled cells due to differing intensities of reporter line expression. Arrows in top row indicate hemocytes in the legs; 2nd and 3rd rows show close-up of thorax and abdomen of day one flies; at least five flies were imaged for each timepoint; scale bars represent 500 μm. (f) Scatterplot showing proportion of cells dissected from day one adults that were labelled using srpHemo-AD and the VT-DBD transgenes indicated to drive expression from UAS-stinger. One-way ANOVA used to compare to negative control flies (w) with split GAL4 VT lines: n = 5 dissections per genotype; p=0.60 (1118;UAS-stinger/+VT17559), p=0.013 (VT32897), p<0.0001 (VT57089), and p=0.0063 (VT62766). Lines and error bars represent mean and standard deviation, respectively; ns, *, ** and **** denote not significant (p>0.05), p<0.05, p<0.01, and p<0.0001, respectively. See Supplementary file 1 for full list of genotypes.Figure 7—source data 1.f) of Figure 7.
+**Figure 7.:** (a–e) Representative lateral images of adult flies between 0 and 6 weeks of age showing localisation of cells labelled using srpHemo-3x-mCherry (a, positive control), or split GAL4 to drive expression of stinger (b-e, srpHemo-AD;VT-DBD). The VT enhancers used to drive expression of the DNA-binding domain (DBD) of GAL4 correspond to VT17559 (b), VT32897 (c), VT57089 (d), and VT62766 (e); inset images show alternative view of proboscis region from same fly (a) or at a reduced level of brightness to reveal cellular detail (d). Images contrast enhanced to 0.15% saturation (a–c, e) or 0.75% (d) to reveal localisation of labelled cells due to differing intensities of reporter line expression. Arrows in top row indicate hemocytes in the legs; 2nd and 3rd rows show close-up of thorax and abdomen of day one flies; at least five flies were imaged for each timepoint; scale bars represent 500 μm. (f) Scatterplot showing proportion of cells dissected from day one adults that were labelled using srpHemo-AD and the VT-DBD transgenes indicated to drive expression from UAS-stinger. One-way ANOVA used to compare to negative control flies (w1118;UAS-stinger/+) with split GAL4 VT lines: n = 5 dissections per genotype; p=0.60 (VT17559), p=0.013 (VT32897), p<0.0001 (VT57089), and p=0.0063 (VT62766). Lines and error bars represent mean and standard deviation, respectively; ns, *, ** and **** denote not significant (p>0.05), p<0.05, p<0.01, and p<0.0001, respectively. See Supplementary file 1 for full list of genotypes.
 
 To quantify the proportion of blood cells labelled in adults, 1-day-old flies were dissected. Despite the large numbers of cells labelled via the split GAL4 system in adults (Figure 7b–e), the proportion of blood cells released via this technique that could be labelled using the split GAL4 system was relatively low (Figure 7f). This suggests that subpopulation cells may favour association with tissues, leaving fewer available to circulate within the hemolymph.
 
 Overall, the distinct dynamics of subpopulation cells in pupal and adult stages (Figure 6 and Figure 7) strongly suggests that these subpopulations are at least partially distinct from each other and highlights their plasticity during development, with their presence, disappearance (via changes in expression shifting them into distinct cell states) and return correlating with changes in the biology of blood cells over the entire lifecourse. While no obvious staining was detected in the lymph gland during larval stages using the split GAL4 lines (Figure 4c–f), additional lineage-tracing analyses would be required to uncover whether cells derived from the lymph gland contribute to subpopulation cell numbers in pupae or adults.
 
-## Subpopulation cells behave in a functionally distinct manner compared to the overall plasmatocyte population
+### Subpopulation cells behave in a functionally distinct manner compared to the overall plasmatocyte population
 
 Given that the VT lines identified above are specifically and dynamically expressed in subpopulations of hemocytes during Drosophila development, we next set out to investigate whether the labelled subpopulations are also functionally distinct using a range of immune-relevant assays. The ability of vertebrate macrophages to respond to pro-inflammatory stimuli, such as injuries, can vary according to their activation status (Arnold et al., 2007; Dal-Secco et al., 2015). To investigate this in our system, a well-established assay of inflammatory migration (Stramer et al., 2005) was employed (Figure 1a; Video 1). Strikingly, following laser-induced wounding, cells labelled by three VT-GAL4 lines (VT17559-GAL4, VT32897-GAL4 and VT62766-GAL4) showed a significantly more potent migratory response to injury. In each case, a greater proportion of labelled subpopulation cells migrated to wounds, compared to the overall hemocyte population as labelled by a pan-plasmatocyte driver (Figure 8a–c). Consistent with our results above, plasmatocytes labelled by the VT lines represent a subset of the total number of hemocytes present ventrally in stage 15 embryos (Figure 8d).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig8-v1.jpg)
+
+**Figure 8.:** (a–b) Example images showing plasmatocyte wound responses at 60 min post-wounding (maximum projections of 15 μm deep regions). Cells labelled via UAS-stinger using srpHemo-GAL4 (a) and VT17559-GAL4 (b); dotted lines show wound edges. (c–d) Scatterplots showing percentage of srpHemo-GAL4 (control) or VT-GAL4-labelled plasmatocytes responding to wounds at 60 min (c) or total numbers of labelled plasmatocytes in wounded region (d); p=0.018, 0.041, 0.99, 0.0075 compared to srpHemo-GAL4 (n = 77, 21, 22, 26, 25) (c); p<0.0001 compared to srpHemo-GAL4 for all lines (n = 139, 35, 37, 30, 44) (d). (e–f) Example tracks of plasmatocytes labelled with GFP via srpHemo-GAL4 (e) and VT17559-GAL4 (f) during random migration on the ventral side of the embryo for 1 hr at stage 15. (g–h) Scatterplots showing speed per plasmatocyte, per embryo (g) and directionality (h) at stage 15 in embryos containing cells labelled via srpHemo-GAL4 (control) or the VT-GAL4 lines indicated; p=0.0097, 0.999, 0.82, 0.226 compared to srpHemo-GAL4 (n = 21, 19, 17, 21, 20) (g); p=0.998, 0.216, 0.480, 0.999 compared to srpHemo-GAL4 (n = 21, 19, 17, 21, 20) (h). (i–j) Example images of cells on the ventral midline at stage 15 with labelling via UAS-stinger expression using srpHemo-GAL4 (i) and VT17559-GAL4 (j); plasmatocytes shown in close-up images (i’, j’) are indicated by white boxes in main panels; arrows show phagosomal vesicles, ‘n’ marks nucleus; n.b. panels contrast enhanced independently to show plasmatocyte morphology. (k) Scatterplot showing phagosomal vesicles per plasmatocyte, per embryo at stage 15 (measure of efferocytosis/apoptotic cell clearance); cells labelled via srpHemo-GAL4 (control) or the VT-GAL4 lines indicated; p=0.0020, 0.99, 0.0040, 0.0002 compared to srpHemo-GAL4 (n = 76, 10, 12, 29, 31). (l) Scatterplot showing number of times 2x-FYVE-EGFP sensor recruited to phagosomes (FYVE events) per plasmatocyte, per embryo in plasmatocytes labelled via the split GAL4 system; p=0.019, 0.0034, 0.039 and 0.015 compared to srp control (n = 4, 6, 8, 5 and 12 embryos). Lines and error bars represent mean and standard deviation, respectively (all scatterplots); one-way ANOVA with a Dunnett’s multiple comparison test used to compare VT lines with srp controls in all datasets; ns, *, **, and **** denote not significant (p>0.05), p<0.05, p<0.01, and p<0.0001, respectively. All scale bars represent 20 μm. See Supplementary file 1 for full list of genotypes. N.b. Figure 8—figure supplements 1–3 show analysis of subpopulation cell morphology, ROS levels and phagocytosis in response to immune challenge, respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a–e) Representative images of plasmatocytes at stage 15 on the ventral midline labelled using the pan-hemocyte marker srpHemo-GMA (green) and UAS-tdTomato (magenta) via srpHemo-GAL4 (a), VT17559-GAL4 (b), VT32897-GAL4 (c), VT57089-GAL4 (d), and VT62766-GAL4 (e); scale bars represent 20 μm. Scatterplots showing plasmatocyte spread area (f), circularity (g), aspect ratio (h), and roundness (i) for positive control cells (labelled via srpHemo-GAL4), and VT-GAL4-positive/negative cells within embryos corresponding to those shown in (a–e). Cells positive for VT-GAL4-driven tdTomato expression were compared to non-tdTomato expressing cells via Student’s t-test. No significant difference (ns) was found for any VT-GAL4 line tested; lines and error bars represent mean and standard deviation, respectively; data points represent individual plasmatocytes taken from a minimum of three embryos. See Supplementary file 1 for full list of genotypes.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (a–e) Representative images (single z-slices) of VT-GAL4-positive plasmatocytes (labelled via expression from UAS-tdTomato, magenta in merge) at stage 15 on the ventral midline stained via dihydrorhodamine 123 (DHR123) to show ROS levels (green in merge); srpHemo-GAL4 was used as a positive control to show the overall population. (f) Scatterplot showing quantification of mean gray value per srpHemo-GAL4 or VT-GAL4-labelled plasmatocyte, per embryo; lines and error bars represent mean and standard deviation, respectively. No statistically significant differences (p>0.05) were found between the VT-GAL4 lines shown and the overall population (labelled via srpHemo-GAL4) using a one-way ANOVA compared to control; n = 12 (control); n = 11, p>0.99 (VT17559-GAL4); n = 11, p=0.68 (VT32897-GAL4); n = 14, p>0.99 (VT57089-GAL4); n = 14, p=0.53 (VT62766-GAL4) embryos; ns denotes not significantly different to control; scale bars represent 20 μm (a–e). See Supplementary file 1 for full list of genotypes.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (a) Ventral views of stage 15 embryos containing srpHemo-GAL4 (positive control, overall population) and VT-GAL4-positive plasmatocytes (labelled via expression from UAS-tdTomato, magenta) 1 hr following injection with pHrodo-labelled E. coli particles (green); srpHemo-GAL4 was used as a positive control to show the overall population; srpHemo-GMA used to label VT-GAL4 negative plasmatocytes. (b) Shows close-ups of E. coli-positive plasmatocytes indicated by white boxes in (a). (c) Scatterplot showing quantification of the proportion of pHrodo E. coli-positive plasmatocytes per embryo in the populations labelled via srpHemo-GAL4 or the indicated VT-GAL4 reporter. Lines and error bars represent mean and standard deviation, respectively. No statistically significant difference (ns; p>0.05) was found between the VT-GAL4 lines shown and plasmatocytes labelled via srpHemo-GAL4 using a Kruskal-Wallis test with Dunn’s multiple comparisons test: n = 22 (srpHemo-GAL4); n = 31, p=0.14 (VT17559-GAL4); n = 28, p>0.99 (VT32897-GAL4); n = 29, p>0.99 (VT57089-GAL4); n = 28, p>0.99 (VT62766-GAL4). Scale bars represent 20 μm. See Supplementary file 1 for full list of genotypes.
 
 We next investigated in vivo migration speeds of the embryonic plasmatocyte subpopulations (as per Figure 1c–d). Stage 15 embryos were imaged for 1 hr and individual plasmatocyte movements were tracked (Figure 8e–f). Only the VT17559-GAL4-labelled plasmatocyte subpopulation displayed statistically significantly faster rates of migration compared to the overall plasmatocyte population (labelled using srpHemo-GAL4; Figure 8g). There were no differences in directionality (cell displacement divided by total path length) for any of the subpopulations, suggesting that the mode of migration was similar across these lines and with that of the overall population (Figure 8h).
 
@@ -100,21 +172,199 @@ Finally, we examined cell size and the shape of labelled plasmatocyte subpopulat
 
 Taken together these data show that the subpopulations of plasmatocytes identified via the VT-GAL4 reporters exhibit functional differences compared to the overall plasmatocyte population (Table 1). Therefore, as well as displaying molecular differences in the form of differential enhancer activity, and hence reporter expression, these discrete populations of cells behave differently. This strongly suggests that these cells represent functionally distinct subpopulations and that the plasmatocyte lineage is not homogeneous. Furthermore, not all subpopulations displayed identical functional characteristics, suggesting that there are multiple distinct subtypes present in vivo, although some overlap between subpopulations seems likely. For example, VT17559-GAL4-labelled cells were more effective at responding to wounds and migrated more rapidly but carried out less phagocytosis of apoptotic cells. By contrast, VT32987-GAL4-labelled cells only displayed improved wound responses (Figure 8).
 
-## VT enhancers identify functionally active genes within plasmatocytes
+**Table 1.**
+ Summary of plasmatocyte subpopulation characteristics and their developmental regulation.Table 1—source data 1.Source data for Table 1.Summary of plasmatocyte subpopulation characteristics and their developmental regulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Subpopulation characteristics (compared to overall population):</th>
+      <th></th>
+      <th colspan="5">Subpopulations in:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subpopulation</td>
+      <td>Wound responses</td>
+      <td>Migration speed</td>
+      <td>Efferocytosis</td>
+      <td>ROS levels</td>
+      <td>Phagocytosis of E. coli</td>
+      <td></td>
+      <td>Embryos</td>
+      <td>Larvae</td>
+      <td>Pupae</td>
+      <td>Newly hatched adults</td>
+      <td>Aged adults</td>
+    </tr>
+    <tr>
+      <td>VT17559</td>
+      <td>↓</td>
+      <td>↓</td>
+      <td>↓</td>
+      <td>no difference</td>
+      <td>no difference</td>
+      <td></td>
+      <td>distinct subpopulation</td>
+      <td>very few cells labelled</td>
+      <td>large numbers labelled by 18 hr APF</td>
+      <td>large numbers present</td>
+      <td>largely absent by 2 weeks</td>
+    </tr>
+    <tr>
+      <td>VT32897</td>
+      <td>↓</td>
+      <td>no difference</td>
+      <td>only decreased in FYVE</td>
+      <td>no difference</td>
+      <td>no difference</td>
+      <td></td>
+      <td>distinct subpopulation (fewest cells)</td>
+      <td>few cells labelled + nephrocytes and garland cells (?)</td>
+      <td>large numbers labelled by 72 hr APF</td>
+      <td>large numbers present</td>
+      <td>labelled cells persist</td>
+    </tr>
+    <tr>
+      <td>VT57089</td>
+      <td>no difference</td>
+      <td>no difference</td>
+      <td>↓</td>
+      <td>no difference</td>
+      <td>no difference</td>
+      <td></td>
+      <td>distinct subpopulation</td>
+      <td>almost no cells labelled + Bolwig Organ (?)</td>
+      <td>steady increase in numbers labelled</td>
+      <td>large numbers present</td>
+      <td>largely absent by 1 week</td>
+    </tr>
+    <tr>
+      <td>VT62766</td>
+      <td>↓</td>
+      <td>no difference</td>
+      <td>↓</td>
+      <td>no difference</td>
+      <td>no difference</td>
+      <td></td>
+      <td>distinct subpopulation</td>
+      <td>almost no cells labelled</td>
+      <td>large numbers labelled by 48 hr APF</td>
+      <td>large numbers present</td>
+      <td>largely absent by 1 week</td>
+    </tr>
+  </tbody>
+</table>
+
+### VT enhancers identify functionally active genes within plasmatocytes
 
 In the original study that analysed the VT-GAL4 collection, the majority of active enhancer fragments tested were found to control transcription of neighbouring genes (Kvon et al., 2014). Thus, genes proximal to enhancers that label plasmatocyte subpopulations represent candidate regulators of immune cell function (Table 2; Figure 9a). VT62766-GAL4 labels a subpopulation of plasmatocytes with enhanced migratory responses to injury (Figure 8a–c) and this enhancer region is found within the genomic interval containing paralytic (para), which encodes a subunit of a voltage-gated sodium channel (Lin et al., 2009), and upstream of the 3’ end of Calnexin14D (Cnx14D; Figure 9a). Cnx14D encodes a calcium-binding chaperone protein resident in the endoplasmic reticulum (Christodoulou et al., 1997). Alterations in calcium dynamics are associated with clearance of apoptotic cells (Cuttell et al., 2008; Gronski et al., 2009) and modulating calcium signalling within plasmatocytes alters their ability to respond to wounds (Weavers et al., 2016). Therefore, given the association of Cnx14D with the VT62766 enhancer and the potential for plasmatocyte behaviours to be modulated by altered calcium dynamics, we examined whether misexpressing Cnx14D in all plasmatocytes was sufficient to cause these cells to behave more similarly to the VT62766 subpopulation. Critically, pan-hemocyte expression of Cnx14D stimulated wound responses with elevated numbers of plasmatocytes responding to injury compared to controls (Figure 9b–c), consistent with the enhanced wound responses of the endogenous VT62766-GAL4-positive plasmatocyte subpopulation (Figure 8c). This reveals that genes proximal to subpopulation-defining enhancers represent candidate genes in dictating the biology of cells in those subpopulations. More importantly, misexpression of a subpopulation-linked gene promotes a similar behaviour to that subpopulation in the wider plasmatocyte population.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig9-v1.jpg)
 
-**Figure 9.:** Cnx14D improves plasmatocyte inflammatory responses to injury.(a) Chromosomal location of the VT62766-GAL4 enhancer region; only one transcript is shown for para, which possesses multiple splice variants. The VT62766 region is highlighted in yellow and by an asterisk; Cnx14D (indicated by magenta arrow) lies within para. (b) Scatterplot showing numbers of plasmatocytes present at stage 15 on the ventral side of the embryo ahead of wounding in controls and on misexpression of Cnx14D in all hemocytes using both srpHemo-GAL4 and crq-GAL4 (hc>Cnx14D); n = 30 and 38 for control and hc>Cnx14D embryos, respectively, p=0.670 via Student’s t-test. (c) Scatterplot of wound responses 60 min post-wounding (number of plasmatocytes at wound, normalised for wound area and to control responses); n = 21 and 30 for control and hc>Cnx14D embryos, respectively; p=0.0328 via Student’s t-test. Line and error bars represent mean and standard deviation, respectively (b–c). See Supplementary file 1 for full list of genotypes.Figure 9—source data 1.b) of Figure 9.Figure 9—source data 2.c) of Figure 9.
+**Figure 9.:** (a) Chromosomal location of the VT62766-GAL4 enhancer region; only one transcript is shown for para, which possesses multiple splice variants. The VT62766 region is highlighted in yellow and by an asterisk; Cnx14D (indicated by magenta arrow) lies within para. (b) Scatterplot showing numbers of plasmatocytes present at stage 15 on the ventral side of the embryo ahead of wounding in controls and on misexpression of Cnx14D in all hemocytes using both srpHemo-GAL4 and crq-GAL4 (hc>Cnx14D); n = 30 and 38 for control and hc>Cnx14D embryos, respectively, p=0.670 via Student’s t-test. (c) Scatterplot of wound responses 60 min post-wounding (number of plasmatocytes at wound, normalised for wound area and to control responses); n = 21 and 30 for control and hc>Cnx14D embryos, respectively; p=0.0328 via Student’s t-test. Line and error bars represent mean and standard deviation, respectively (b–c). See Supplementary file 1 for full list of genotypes.
 
-## Plasmatocyte subpopulations can be modulated via exposure to enhanced levels of apoptosis
+**Table 2.**
+ VT enhancer region location and neighbouring genes.Table 2—source data 1.Source data for Table 2.VT enhancer region location and neighbouring genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VT enhancer</th>
+      <th>Genomic region*</th>
+      <th>Nearest genes</th>
+      <th>Distance of enhancer from gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VT17559</td>
+      <td>chr2R: 12,069,698–12,070,780</td>
+      <td>Lis-1</td>
+      <td>overlapping</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>CG8441</td>
+      <td>2,929bp upstream</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Ptp52F</td>
+      <td>3,887bp downstream</td>
+    </tr>
+    <tr>
+      <td>VT32897</td>
+      <td>chr3L: 18,631,149–18,633,281</td>
+      <td>MYPT-75D</td>
+      <td>overlapping</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>bora</td>
+      <td>13,299bp downstream</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>not</td>
+      <td>15,921bp downstream</td>
+    </tr>
+    <tr>
+      <td>VT57089</td>
+      <td>chrX: 4,961,770–4,962,316</td>
+      <td>ovo</td>
+      <td>overlapping</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>CG32767</td>
+      <td>3,290bp upstream</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>CR44833</td>
+      <td>3,870bp downstream</td>
+    </tr>
+    <tr>
+      <td>VT62766</td>
+      <td>chrX: 16,406,666–16,408,777</td>
+      <td>para</td>
+      <td>overlapping</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Cnx14D</td>
+      <td>10,404bp upstream</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>CG9903</td>
+      <td>26,520bp upstream</td>
+    </tr>
+  </tbody>
+</table>
+
+_* D. melanogaster Apr. 2006 (BDGP R5/dm3) Assembly.Data taken from http://enhancers.starklab.org/._
+
+### Plasmatocyte subpopulations can be modulated via exposure to enhanced levels of apoptosis
 
 Having defined functional differences in embryonic plasmatocyte subpopulations and characterised how these populations shift during development and ageing, we sought to identify the processes via which these subpopulations were specified. In vertebrates, a range of stimuli drive macrophage heterogeneity and polarisation (Martinez and Gordon, 2014; Murray, 2017), with apoptotic cells able to polarise macrophages towards anti-inflammatory phenotypes (A-Gonzalez et al., 2017; de Oliveira Fulco et al., 2014). In the developing fly embryo, high apoptotic cell burdens impair wound responses (Armitage et al., 2020; Roddie et al., 2019), consistent with reprogramming of plasmatocytes towards less wound-responsive states. In order to test whether apoptotic cells might regulate plasmatocyte subpopulations, we exposed plasmatocytes to increased levels of apoptosis in vivo. In the developing fly embryo, both glial cells and plasmatocytes contribute to the clearance of apoptotic cells. We, and others, have previously shown that loss of repo, a transcription factor required for glial specification (Campbell et al., 1994; Halter et al., 1995; Xiong et al., 1994), leads to decreased apoptotic cell clearance by glia (Shklyar et al., 2014), and a subsequent challenge of plasmatocytes with increased levels of developmental apoptosis (Figure 10a–b; Armitage et al., 2020). Therefore, a repo mutant background represents an established model with which to stimulate plasmatocytes with enhanced levels of apoptosis.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/58686/elife-58686-fig10-v1.jpg)
 
-**Figure 10.:** Drosophila plasmatocyte subpopulation identity can be controlled through exposure to apoptotic cells.(a–b) Maximum projections showing apoptotic cells (via anti-cDCP-1 staining, magenta in merge) and plasmatocytes (via anti-GFP staining, green in merge) at stage 15 on the ventral midline in control (a) and repo mutant embryos (b). (c–g) maximum projections of the ventral midline showing a negative control embryo (c) and embryos containing VT-GAL4-labelled plasmatocytes at stage 15 in control (d–g) and repo mutant embryos (d’–g’). VT-GAL4 used to drive UAS-stinger expression (green) and srpHemo-H2A-3x-mCherry used to label plasmatocytes (magenta). Arrows and asterisks indicate examples of VT-GAL4-positive plasmatocytes and non-plasmatocyte cells, respectively; note loss of non-plasmatocyte VT-GAL4 expression in repo mutants versus controls for VT62766-GAL4. (h) Scatterplot showing percentage of H2A-3x-mCherry-positive cells that are also positive for VT-GAL4 driven Stinger expression in control and repo mutant embryos at stage 15. Student’s t-test used to show significant difference between controls and repo mutants (p=0.0009, n = 22, 15 for VT17559-GAL4 lines; p=0.0017, n = 37, 28 for VT32897-GAL4 lines; p=0.0005, n = 25, 14 for VT57089-GAL4 lines; p<0.0001, n = 22, 20 for VT62766-GAL4 lines). Scale bars represent 10 μm (a–g); lines and error bars represent mean and standard deviation (h); **, ***, and **** denote p<0.01, p<0.001, and p<0.0001, respectively. See Supplementary file 1 for full list of genotypes.Figure 10—source data 1.h) of Figure 10.
+**Figure 10.:** (a–b) Maximum projections showing apoptotic cells (via anti-cDCP-1 staining, magenta in merge) and plasmatocytes (via anti-GFP staining, green in merge) at stage 15 on the ventral midline in control (a) and repo mutant embryos (b). (c–g) maximum projections of the ventral midline showing a negative control embryo (c) and embryos containing VT-GAL4-labelled plasmatocytes at stage 15 in control (d–g) and repo mutant embryos (d’–g’). VT-GAL4 used to drive UAS-stinger expression (green) and srpHemo-H2A-3x-mCherry used to label plasmatocytes (magenta). Arrows and asterisks indicate examples of VT-GAL4-positive plasmatocytes and non-plasmatocyte cells, respectively; note loss of non-plasmatocyte VT-GAL4 expression in repo mutants versus controls for VT62766-GAL4. (h) Scatterplot showing percentage of H2A-3x-mCherry-positive cells that are also positive for VT-GAL4 driven Stinger expression in control and repo mutant embryos at stage 15. Student’s t-test used to show significant difference between controls and repo mutants (p=0.0009, n = 22, 15 for VT17559-GAL4 lines; p=0.0017, n = 37, 28 for VT32897-GAL4 lines; p=0.0005, n = 25, 14 for VT57089-GAL4 lines; p<0.0001, n = 22, 20 for VT62766-GAL4 lines). Scale bars represent 10 μm (a–g); lines and error bars represent mean and standard deviation (h); **, ***, and **** denote p<0.01, p<0.001, and p<0.0001, respectively. See Supplementary file 1 for full list of genotypes.
 
 Using srpHemo-H2A-mCherry to mark all plasmatocytes within the embryo (Figure 10c), we quantified the proportion of plasmatocytes labelled via VT-GAL4 transgenes in repo mutants compared to controls (Figure 10d–h). Increased exposure to apoptotic death shifted plasmatocytes out of each subpopulation (Figure 10d–h). Subpopulations exhibited differing sensitivities to contact with apoptotic cells, with numbers of VT62766-GAL4-labelled cells undergoing the largest decrease in a repo mutant background (Figure 10h). These results therefore reveal a mechanism via which the molecularly and functionally distinct subpopulations of plasmatocytes we have identified can be manipulated using an evolutionarily conserved, physiological stimulus (apoptotic cells) relevant to immune cell programming.
 
@@ -142,13 +392,13 @@ In conclusion, we have demonstrated that Drosophila macrophages are a heterogene
 
 N.b. Key Resources Table can be found in Appendix 1 at the end of the manuscript.
 
-## Fly genetics and reagents
+### Fly genetics and reagents
 
 Standard cornmeal/agar/molasses media was used to culture Drosophila at 25°C (see Supplementary file 2 for ingredients). srpHemo-GAL4 (Brückner et al., 2004; Wood et al., 2006), crq-GAL4 (Stramer et al., 2005), and the GAL4-independent lines srpHemo-GMA (received from J. Bloor, University of Kent, UK), srpHemo-3x-mCherry and srpHemo-H2A-3x-mCherry (Gyoergy et al., 2018) were used to label the entire hemocyte population during embryonic development or in adults. N.b. SrpHemo-GAL4 is referred to as srp-GAL4 on graphs (for reasons of space) but this is the shorter construct more specific to hemocytes (as per Brückner et al., 2004) rather than the entire serpent promoter region. Hml(Δ)-GAL4 (Sinenko and Mathey-Prevot, 2004) was used to label larval hemocytes and da-GAL4 (Wodarz et al., 1995) was used as a ubiquitous driver line. These GAL4 lines, Vienna Tiling array GAL4 lines (VT-GAL4 lines obtained from VDRC; Kvon et al., 2014) and split GAL4 lines (see below) were used to drive expression from UAS-tdTomato, UAS-GFP (Stramer et al., 2005; Wood et al., 2006), UAS-red stinger (Davis et al., 2012), UAS-stinger, UAS-Cnx14D, UAS-GFP-myc-2xFYVE (Wucherpfennig et al., 2003), or UAS-GC3ai (Schott et al., 2017). GAL4-independent VT-RFP lines were also generated as part of this study (see below) and used to label subpopulation cells in combination with crq-GAL4,UAS-GFP (Stramer et al., 2005), eater-GFP (Sorrentino et al., 2007), and simu-cytGFP (Kurant et al., 2008). Experiments were conducted in a w1118 background and the repo03702 null allele was used to expose plasmatocytes to enhanced levels of apoptotic cell death in the embryo (Armitage et al., 2020; Campbell et al., 1994; Halter et al., 1995). Both UAS-tdTomato and UAS-GFP were used to analyse subpopulations in the developing embryo in order to ensure labelling of discrete numbers of plasmatocytes was not due to positional effects of insertion sites that led to mosaic expression (Figure 2). G-TRACE flies (w;;UAS-red stinger,UAS-FLP,Ubi-p63E(FRT.STOP)Stinger; Evans et al., 2009) were crossed to split GAL4 driver lines (see below) for lineage-tracing experiments. See Supplementary file 1 for a full list of Drosophila genotypes, transgenes and the sources of the Drosophila lines used in this study.
 
 Flies were added to laying cages attached to apple juice agar plates supplemented with yeast paste and allowed to acclimatise for 2 days before embryo collection. Plates were then changed every evening and cages incubated at 22°C overnight before embryos were collected the following morning. Embryos were collected by washing the plates with distilled water and gently disturbing the embryos with a paintbrush, after which embryos were collected into a cell strainer. Embryos were dechorionated in undiluted bleach for 1–2 min and then washed in distilled water until free from bleach. The fluorescent balancers CTG, CyO dfd, TTG, and TM6b dfd (Halfon et al., 2002; Le et al., 2006) were used to discriminate homozygous embryos after removal of the chorion.
 
-## Generation of split GAL4 and GAL4-independent transgenic lines
+### Generation of split GAL4 and GAL4-independent transgenic lines
 
 We used the split GAL4 system (Pfeiffer et al., 2010) to restrict VT enhancer expression to serpent-positive cells. The activation domain (AD) of GAL4 was expressed using a well-characterised fragment of the hemocyte-specific serpent promoter (Brückner et al., 2004; Gyoergy et al., 2018) and the DNA-binding domain (DBD) was expressed under the control of VT enhancer regions corresponding to VT17559-GAL4, VT32897-GAL4, VT57089-GAL4, or VT62766-GAL4. High-fidelity polymerase (KAPA HiFi Hotstart ReadyMix, Roche) was used to PCR amplify VT enhancer regions from genomic DNA extracted from the original VT-GAL4 line flies, which were then TA cloned into the pCR8/GW/TOPO vector. Primers were designed according to VT enhancer sequences available via the Stark Lab Fly Enhancers website (http://enhancers.starklab.org/; Kvon et al., 2014). To make VT-DBD transgenic constructs, VT enhancers were transferred from pCR8/GW/TOPO into pBPZpGal4DBDUw (Addgene plasmid 26233) using LR clonase technology (Gateway LR Clonase II Enzyme Mix, Invitrogen).
 
@@ -156,7 +406,7 @@ To express the DBD and AD of GAL4 under the control of the serpent promoter (srp
 
 To generate GAL4 independent VT-RFP transgenic lines, nuclear RFP was isolated by sequential digestion of pRed H-Pelican (DGRC plasmid 1203) using Acc65I and then SpeI restriction enzymes (NEB). In parallel, GAL4 was excised from pBPGUw (Addgene plasmid 17575) using the same restriction enzymes and replaced with nuclear RFP using T4 ligase. LR clonase was again used to transfer the VT enhancer regions from the PCR8/GW/TOPO gateway vectors (see above) into the nuclear RFP-containing pBPGUw destination vector. Transgenic flies were generated by PhiC31 integrase-mediated insertion of VT-RFP constructs into attP2 on chromosome 3 (Genetivision).
 
-## Imaging of Drosophila embryos, larvae, pupae, and adults
+### Imaging of Drosophila embryos, larvae, pupae, and adults
 
 Live embryos were mounted ventral-side up on double-sided sticky tape in a minimal volume of Voltalef oil (VWR), after dechorionation in bleach as previously (Evans et al., 2010). High-resolution live imaging of plasmatocytes was carried out on an UltraView Spinning Disk system (Perkin Elmer) using a 40x UplanSApo oil immersion objective lens (NA 1.3). A Nikon A1 confocal microscope was used to image plasmatocyte morphology (40x CFI Super Plan Fluor ELWD oil immersion objective lens, NA 0.6) and a Zeiss Airyscan microscope (40x Plan-Apochromat oil immersion objective lens, NA 1.4) was used for imaging of embryos stained with ROS dyes.
 
@@ -164,11 +414,11 @@ L1 and L2 larvae were allowed to develop at 22°C from embryos laid on apple jui
 
 Wandering L3 Larvae and WPP were removed from straight-sided culture bottles containing the food on which they were reared at 25°C and cleaned in distilled water. L3 Larvae were imaged in fresh ice-cold, distilled water to minimise their movements, while WPP were immobilised on double-sided tape (Scotch). For analysis of plasmatocyte populations in pupae, white pre-pupae were also collected, aged at 25°C and the pupal cases removed at a range of times after puparium formation. Dissected pupae were covered with halocarbon oil 500 to prevent desiccation during imaging. For imaging of plasmatocyte populations in adults, females were aged in vials containing cornmeal/agar/molasses media (Supplementary file 2) at 25°C, with no more than seven flies kept per vial. Flies were transferred to new food vials every 2–3 days; flies were chilled at −20°C for 4 min and imaged in a petri dish on top of ice to minimise their movements.
 
-## Analysis of hemocyte distribution in larvae
+### Analysis of hemocyte distribution in larvae
 
 To analyse the distribution of subpopulation cells along the body axis in L3 larvae, the relative proportions of cells within the anterior, medial (abdominal segments A3-A5), and posterior regions were calculated. The number of cells in each region in images of L3 larvae were counted in Fiji and expressed as a fraction of the total number of cells in each larva. As a comparison to reflect the distribution of the total larval hemocyte population, images of L3 larvae with hemocytes labelled using Hml(Δ)-GAL4,UAS-GFP were analysed. Since hemocytes were too numerous to count accurately in these images, the integrated density of GFP fluorescence (mean gray value multiplied by area) was measured in each region in Fiji. The proportion of the total GFP signal in each region was then calculated per larva.
 
-## Dissection, stimulation, and staining of larval and adult hemocytes
+### Dissection, stimulation, and staining of larval and adult hemocytes
 
 To isolate larval hemocytes, single wandering third instar were picked from bottles with a paintbrush, washed with distilled water then placed in a 75 μL drop of ice-cold S2 media, which consists of Schneider’s media (Sigma-Aldrich) supplemented with 10% heat-inactivated FBS (Gibco/Sigma-Aldrich) and 1x Pen/Strep (Gibco/Sigma-Aldrich). Larvae were then ripped open from the posterior end using size five forceps to release hemocytes into the S2 cell media. Larval carcasses were gently agitated for 5 s before being removed from the S2 media droplet. The cell suspension was then transferred to a well of a 96-well plate (Greiner) and a further 75 μL of S2 media was added per well. Hemocytes were allowed to settle for at least 90 min in a humidified box prior to fixation. Cells were then fixed for 15 min using 4% EM-grade formaldehyde (Thermo Scientific) in PBS (Oxoid). Cells were then permeabilised for 4 min using 0.1% Triton-X-100 in PBS. Following washing in PBS, nuclei and actin filaments were stained using NucBlue (two drops per ml; Invitrogen) and Alexa Fluor 647 phalloidin (1:200 in PBS; Invitrogen; Figure 7f) or Alexa Fluor 568 phalloidin (1:500 in PBS; Invitrogen; Figure 4g) for 30 min. Following a final wash step, cells were imaged using an ImageXpress Micro hi-content microscope (Molecular Devices).
 
@@ -178,41 +428,41 @@ For stimulation with S. cerevisiae (Figure 1), several larvae were pooled and di
 
 To isolate hemocytes from adults, two flies per genotype (1 day post-eclosion) were anaesthetised using CO2 and cut in half longitudinally in a 75 μl droplet of S2 media on ice. A further 75 μl of S2 media was then added and carcasses agitated by pipetting for 10 s to release hemocytes. The 150 μl of cell suspension was then transferred to a single well in a 96-well plate (Greiner). Cells were allowed to settle for 30 min before being fixed and stained as per larval hemocytes. Based on phalloidin staining and cell morphology it was assumed all adhered cells were blood cells. The percentage of labelled cells was calculated using the number of Stinger-positive cells divided by the total number of cells in images (NucBlue labelling).
 
-## Wounding assay
+### Wounding assay
 
 Live stage 15 embryos were prepared and mounted as described above. The ventral epithelium of the embryos was ablated on the ventral midline using a Micropoint nitrogen-pulsed ablation laser (Andor) fitted to an Ultraview spinning disk confocal system (PerkinElmer) as previously (Evans et al., 2015). Pre-wound z-stacks of 30 μm were taken of superficial plasmatocytes with a 1 μm z-spacing between z-slices. Post-wound images were taken on the same settings either at 2 min intervals for 60 min (Figure 1) or at the end timepoint of 60 min (Figure 8 and Figure 9).
 
 The proportion of plasmatocytes labelled with UAS-stinger (expression via srpHemo-GAL4 or VT-GAL4) was assessed by counting the number of labelled cells at or in contact with the wound site within a 35 μm deep volume on the ventral midline at 60 min post-wounding; this was divided by the total number of labelled cells present within the stack to calculate the percentage of plasmatocytes responding to injury. The brightfield channel was used to visualise the wound margin and only those embryos with wounds between 1000 μm2 and 4000 μm2 were included in analyses. Quantification was performed on blinded images in Fiji.
 
-## Quantification of migration speeds/random migration
+### Quantification of migration speeds/random migration
 
 Embryos were prepared and mounted as previously described (Evans et al., 2010). Random migration was imaged using an Ultraview spinning disk system (PerkinElmer), with an image taken every 2 min for 1 hr with a z-spacing of 1 μm and approximately 20 μm deep from the ventral nerve cord using a 20x UplanSApo air objective lens (NA 0.8). Maximum projections were made for each timepoint (25 μm depth) and the centre of individual plasmatocyte cell bodies tracked using the manual tracking plugin in Fiji. Random migration speed (μm/min) and directionality (the ratio of the Cartesian distance to the actual distance migrated) were then calculated using the Ibidi chemotaxis plugin.
 
-## Quantification of apoptotic cell clearance
+### Quantification of apoptotic cell clearance
 
 The number of apoptotic cell-containing phagosomes per plasmatocyte (averaged per embryo) was used as a read-out of apoptotic cell clearance as previously described (Evans et al., 2013). Phagocytic vesicles were counted using z-stacks of GFP-labelled plasmatocytes taken from live imaging experiments. Phagosomes were scored in the z-slice in which each macrophage exhibited its maximal cross-sectional area. Only labelled plasmatocytes present on the ventral midline of stage 15 embryos were included. Analysis was performed on blinded image stacks. This analysis does not report the absolute numbers of apoptotic corpses per cell but provides a relative read-out of the phagocytic index.
 
 To assay rates of phagocytosis of apoptotic cells, a phosphatidylinositol-3-phosphate reporter (UAS-GFP-myc-2xFYVE; Roddie et al., 2019; Wucherpfennig et al., 2003) was expressed in all plasmatocytes (via srpHemo-AD in combination with srpHemo-DBD) or in subpopulation cells (via srpHemo-AD in combination with VT enhancers driving expression of the DBD domain). Plasmatocytes were imaged at stage 12/13 on the ventral midline and the number of ‘FYVE events’ (number of times new recruitment events could be seen to form on the surface of nascent phagosomes) per plasmatocyte per movie was scored. Only cells present in at least 15 min of 30 min movies were included in this analysis and scoring was conducted on blinded movies constructed from maximum projections of z-stacks.
 
-## Morphological analysis of plasmatocytes
+### Morphological analysis of plasmatocytes
 
 For morphological analysis of plasmatocytes (Figure 8—figure supplement 1), the vitelline membrane was manually removed from individual z-slices by drawing around the inside edge of the membrane with the freehand selection tool and using the clear outside command. Maximum projections were then created of the ventral midline region in Fiji. Following this, a region of interest was manually drawn around the area of individual plasmatocytes using the polygon tool and a range of cell shape descriptors and measurements calculated using Fiji.
 
-## ROS staining of embryos
+### ROS staining of embryos
 
 To stain plasmatocyte ROS levels (Figure 8—figure supplement 2), embryos containing tdTomato-labelled plasmatocytes (with expression driven using srpHemo-GAL4 or VT-GAL4) were first dechorionated and then left in water for 30 min. Stage 15 embryos were then selected and transferred to a glass vial wrapped in foil containing 1 ml peroxide-free heptane (Sigma-Aldrich) and 1 ml of 50 μM dihydrorhodamine 123 (DHR123, Sigma-Aldrich) in PBS. Embryos were shaken at 250 rpm for 30 min. Following this, embryos were removed from the interface and mixed with halocarbon oil. Embryos were orientated individually in a droplet of this oil on a glass slide and then immediately imaged using a Zeiss Airyscan microscope (40x Plan-Apochromat oil immersion objective, NA 1.4), with z-spacing of 1 μm and stacks totalling 30 μm from the surface of the vitelline membrane down through the ventral nerve cord. Embryos were exposed to 10 mM of H2O2 (Sigma-Aldrich) in PBS and peroxide-free heptane for 30 min prior to staining with DHR123 as a positive control. Negative control embryos were incubated in heptane/PBS alone.
 
 To quantify ROS levels, the intensity of DHR123 staining was measured in the z-slice in which each macrophage exhibited its maximal cross-sectional area. The body of the macrophage was drawn around using the polygon tool in Fiji and then the area and mean gray value were measured in the GFP (DHR123) channel. Average mean gray value per plasmatocyte, per embryo was then plotted in Prism.
 
-## Phagocytosis of E. coli
+### Phagocytosis of E. coli
 
 To assay phagocytosis of an immune challenge (Figure 8—figure supplement 3), dechorionated stage 15 embryos were mounted ventral-side up on a slide using double-sided Scotch tape, then dehydrated by incubating in a small container with silica beads for 7–8 min. Further dehydration was then prevented by covering embryos in a small drop of Voltalef oil. 1 mg/ml pHrodo green E. coli BioParticles (Invitrogen; resuspended in PBS) were microinjected into the anterior of stage 15 embryos to determine the phagocytic capability of labelled plasmatocytes. Needles were created by pulling 15 cm long 1 mm glass capillaries (World Precision Instruments) using a Flaming/Brown P-1000 micropipette puller (Sutter, program 51). Needle tips were snapped using forceps under high magnification to create a bevelled end. Imaging was performed 1 hr after injection using an UltraView Perkin Elmer Spinning Disk system (40x UplanSApo oil immersion objective lens, NA 1.3). The proportion of VT-GAL4 or srpHemo-GAL4-positive cells containing E. coli BioParticles was scored.
 
-## Fixation and immunostaining of embryos
+### Fixation and immunostaining of embryos
 
 Embryos were fixed and stained as previously described (Roddie et al., 2019). Embryos containing plasmatocytes labelled via srpHemo-GMA and GAL4-driven tdTomato expression were fixed, then mounted in Dabco mountant. Control and repo mutant embryos containing plasmatocytes labelled via crq-GAL4,UAS-GFP were fixed and immunostained using mouse anti-GFP (ab1218 1:200; Abcam) and rabbit anti-cleaved DCP-1 (9578S 1:1000; Cell Signaling Technologies) to label plasmatocytes and apoptotic cells, respectively. Primary antibodies were detected using Alexa Fluor 488 goat anti-mouse IgG and Alexa Fluor 568 goat anti-rabbit IgG (Invitrogen/Molecular Probes; both used at a 1:400 dilution). Embryos were imaged on the Nikon A1 system described above.
 
-## Image analysis and statistical analysis
+### Image analysis and statistical analysis
 
 All microscopy images were processed using Fiji (Schindelin et al., 2012). Images were blinded ahead of analysis with quantification performed on maximum z-projections, with the exception of analysis of numbers of cells labelled via VT-GAL4 lines (Figure 2h), wound responses (Figure 8c–d), apoptotic cell clearance (Figure 8k) and quantification of ROS staining (Figure 8—figure supplement 2f). Quantification was performed on blinded z-stacks for those analyses.
 

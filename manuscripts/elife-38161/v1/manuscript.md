@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38161.001 Fast directional growth is a necessity for the young seedling; after germination, it needs to quickly penetrate the soil to begin its autotrophic life. In most dicot plants, this rapid escape is due to the anisotropic elongation of the hypocotyl, the columnar organ between the root and the shoot meristems. Anisotropic growth is common in plant organs and is canonically attributed to cell wall anisotropy produced by oriented cellulose fibers. Recently, a mechanism based on asymmetric pectin-based cell wall elasticity has been proposed. Here we present a harmonizing model for anisotropic growth control in the dark-grown Arabidopsis thaliana hypocotyl: basic anisotropic information is provided by cellulose orientation) and additive anisotropic information is provided by pectin-based elastic asymmetry in the epidermis. We quantitatively show that hypocotyl elongation is anisotropic starting at germination. We present experimental evidence for pectin biochemical differences and wall mechanics providing important growth regulation in the hypocotyl. Lastly, our in silico modelling experiments indicate an additive collaboration between pectin biochemistry and cellulose orientation in promoting anisotropic growth.
+Fast directional growth is a necessity for the young seedling; after germination, it needs to quickly penetrate the soil to begin its autotrophic life. In most dicot plants, this rapid escape is due to the anisotropic elongation of the hypocotyl, the columnar organ between the root and the shoot meristems. Anisotropic growth is common in plant organs and is canonically attributed to cell wall anisotropy produced by oriented cellulose fibers. Recently, a mechanism based on asymmetric pectin-based cell wall elasticity has been proposed. Here we present a harmonizing model for anisotropic growth control in the dark-grown Arabidopsis thaliana hypocotyl: basic anisotropic information is provided by cellulose orientation) and additive anisotropic information is provided by pectin-based elastic asymmetry in the epidermis. We quantitatively show that hypocotyl elongation is anisotropic starting at germination. We present experimental evidence for pectin biochemical differences and wall mechanics providing important growth regulation in the hypocotyl. Lastly, our in silico modelling experiments indicate an additive collaboration between pectin biochemistry and cellulose orientation in promoting anisotropic growth.
 
 ## Introduction
 
@@ -37,53 +37,101 @@ While it is often assumed that cellulose orientation alone confers anisotropy, e
 
 ## Results
 
-## Hypocotyl epidermal cells exhibit anisotropic growth from germination
+### Hypocotyl epidermal cells exhibit anisotropic growth from germination
 
 Historically, analysis of cell-level growth in dark-grown Arabidopsis hypocotyls focused on cell length alone (Gendreau et al., 1997) yet cell width over time is an important parameter for analysis of anisotropy. In order to deepen our understanding of anisotropic growth in the dark-grown hypocotyl, we undertook a detailed analysis of cell length and width from 0 hr post-germination (HPG) to 72HPG. Arabidopsis hypocotyls expressing a plasma-membrane YFP-tagged marker (Willis et al., 2016) were synchronized by selecting seeds at germination (T0; radical emergence from endosperm). At 6 hr intervals, 20 seedlings were sampled for confocal imaging, with a new set being imaged at each timepoint since confocal imaging stopped dark-grown hypocotyl elongation. In order to focus on cell growth, analyses were restricted to epidermal files with no division; we observed that some files underwent transverse anticlinal divisions during the first 24HPG (Figure 1—figure supplement 1; files lacking GL2 expression). Since there were no divisions in GL2-expressing files, cell indices were assigned by position along the hypocotyl. Non-dividing files had 17–19 cells starting from the collet (the transition zone between the root and the hypocotyl) and ending at the cotyledons base (Figure 1A). Utilizing this system, cell geometry could be analyzed in time and by cell position, to approximate cell-level growth dynamics.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig1-v1.jpg)
+
+**Figure 1.:** (A) A scanning electron micrograph of a 24HPG etiolated hypocotyl showing cell indices in a non-dividing cell file, numbered from the collet to the cotyledons. (B) Cell length and width by cell position index displayed from 0-54HPG. (C) Cell shape anisotropy (length:width) by cell index from 0-48HPG. (D) Relative growth rates (RGR) for length and width of cells by index from 0-66HPG, in 6H windows. Data in B-D were collected from 20 hypocotyls per time point imaged by confocal microscopy, from at least two non-dividing files per hypocotyl. The data in B are presented without error bars to make visualization possible; standard errors can be found in Figure 1—figure supplement 1. RGR values and standard errors can be found in Supplementary file 1. Blue arrowheads point to early-pulse growth adjacent to the collet, red arrowheads to early growth suppression, light blue arrowheads trace the maximal RGR(L) and proxy the acropetal wave.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) cell number in dividing cell files from 0HPG to 24HPG. (B) GL2::GFP expression at 24HPG marking non-dividing cells. Dividing cell files are marked with asterisks. Scale bar = 50 µm. (C) Cell length by position index from 0HPG to 72HPG, including standard error of the means. (D) Cell width by position index from 0HPG to 72HPG, including standard error of the means.
+
 Our analyses revealed that while cell length increased in an acropetal wave consistent with the literature (Gendreau et al., 1997; Peaucelle et al., 2015; Refrégier et al., 2004; Pelletier et al., 2010), cell width increased more slowly and evenly along the hypocotyl length (Figure 1B, Figure 1—figure supplement 1). These observations were consistent with differential regulation of axial and radial cell expansion. Also, in our system all hypocotyl cells were geometrically anisotropic from the time of germination, irrespective of position along the hypocotyl (Figure 1C; shape anisotropy, ratio of cell length to width). Calculations of relative growth rates for each cell index, over 6H intervals, revealed that cell length was always increasing at a higher rate than cell width (Figure 1D and Supplemental file 1; RGR(L) vs RGR(W)). Relative growth rate for cell length (RGR(L)) by position clearly demonstrated the movement of the acropetal wave, beginning around 24HPG (Figure 1D, light blue arrows). Interestingly, at very early time intervals (0-12HPG) there was a higher RGR(L) and a suppression of RGR(W) in basal hypocotyl cells, potentially as a holdover from germination (Bassel et al., 2014) (Figure 1D; blue and red arrowheads respectively). The RGR(L) of cells within the acropetal wave was relatively constant (8.95% ± 0.56 per hour; Figure 1D, Supplementary file 1), indicating that there was a transition from slow to rapid elongation within the wave but that growth rate did not increase over time as the wave moved. In contrast, the RGR(W) was, after the initial suppression, remarkably constant in time and space (2.6% ± 0.2 per hour; Figure 1D, Supplemental file 1). Our data paint an accurate picture of dark-grown hypocotyl growth: cells are geometrically anisotropic at germination, their growth is always anisotropic, and the acropetal wave is only evident in the elongation of cells but not their expansion in width.
 
-## Anisotropically expanding hypocotyl epidermal cells do not exhibit strong transverse cortical microtubule orientation
+### Anisotropically expanding hypocotyl epidermal cells do not exhibit strong transverse cortical microtubule orientation
 
 Transverse cellulose orientation, or its proxy microtubule orientation, is commonly invoked to explain the mechanism of anisotropy. As hypocotyl cells displayed growth anisotropy from the time of germination, we examined whether they also exhibited transverse microtubule orientation. Microtubules were visualized by confocal microscopy imaging of hypocotyl basal epidermal cells. Imaging of 35S::GFP-MAP4 (Marc et al., 1998) in dark-grown hypocotyls was conducted in short periods after exposure to light to prevent light induced reorientation, MT rearrangements or rotary movements as previously reported (Chan et al., 2007; Lindeboom et al., 2013; Sambade et al., 2012). MT images were recorded at 0HPG, 24HPG and 65HPG; representing the time of germination, the transition to rapid growth and the phase of rapid growth, respectively. MT angle was determined using MicroFilament Analyzer (Jacques et al., 2013). Both the inner and outer epidermal faces of hypocotyl cells were imaged, when possible, as they have been shown to exhibit different patterns of MT angles (Crowell et al., 2011).
 
 At germination, basal epidermal cells exhibited a wide range of MT angles on their outer epidermal face with a slight transverse tendency (~30% presenting transversely between 0 and 10°; Figure 2A,B). We were unable to image deeper at this stage, likely due to the dense cell contents scattering the excitation and emission light. By 24HPG, the average angle on the outer face was slightly axial with ~31% of MTs being oriented between 80–90° (Figure 2A,B). These data correlate well with those recently reported for cells below the cotyledons before elongation in older hypocotyls (Crowell et al., 2011). Similar patterns at 24HPG were observed with two other microtubule markers (GFP-TUA6 and GFP-EB1) and GFP-CESA3 (Figure 2—figure supplement 1; [Chan et al., 2003; Desprez et al., 2007; Mathur et al., 2003; Ueda et al., 1999]). At 24HPG, we could not observe MT signal at the inner epidermal face, but could at the adjacent cortex cell faces (a phenomenon consistent across all three marker lines, at this early stage). MTs at cortex cell faces appeared more transversely aligned and presented ~41% between 0 and 10° (Figure 2A,B). From these data we concluded that MTs at the outer epidermal face were weakly transverse at the time of germination and those in inner cortical tissues were more strongly transverse by 24HPG.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of microtubule organization as visualized with 35S::GFP-MAP4 at 0HPG, 24HPG and 65HPG. Scale bars = 10 µm. Location of images reported as: outer or inner epidermal face, or cortex. Dotted outlines in cortex image indicate cortex cell outlines. (B) Frequency distribution of microtubule angle grouped in 10 degree intervals from 0HPG to 65HPG using MicroFilament Analyzer (MFA); sample numbers were: 0HPG: n = 65 cells (from 5 hypocotyls); 24HPG: n = 30 (from 9 hypocotyls); 65HPG: n = 13 (from 6 hypocotyls). For 24HPG cortex analysis, n = 36 (from 5 hypocotyls). Examples of MTs at 24HPG outer epidermal faces visualized with 35S::GFP-TUA6, 35S::GFP-EB1 and CESA3::CESA3-GFP are found in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Microtubule markers and a cellulose synthase marker imaged from bottom cells at 24HPG; outer epidermal face. The markers show similar patterns in microtubule alignment, that is little alignment, to the GFP-MAP4 images in Figure 2. Both EB1 and CESA images are temporal color-coded projections of an xytz acquisition at the base of the hypocotyl with 10 stacks over 4 min 41 s for EB1 and 40 stacks over 9 min 49 s for CESA3; these are dynamic markers. Scale bars = 10 µm.
+
 By 65HPG, when hypocotyl cells were rapidly elongating, the outer epidermal face exhibited a MT angle trend towards axial alignment (Figure 2A,B; ~32% between 80–90°). It is possible that this was due to the upcoming growth arrest these cells would soon experience. It is equally probable that this is the general angle trend seen on the outer epidermal face in the early stage of elongation at the hypocotyl base. The inner epidermal face of 65HPG cells did show MT signal and exhibited an transverse angle distribution (Figure 2A,B; ~44% between 0 and 10°). These data led us to conclude that during anisotropic growth from the time of germination, MT-based anisotropy information likely came from cortex cells or inner epidermal faces. This conclusion is consistent with analyses in older hypocotyls (Crowell et al., 2011; Peaucelle et al., 2015). While it is difficult to compare values across experiments and imaging conditions, our values for percent microtubules presenting ‘transverse angles’ were weak compared to those reported previously (Crowell et al., 2011). This may mean that at these early stages, anisotropy from MTs is weak and only consolidates later through mechanical feedback (Hamant et al., 2008; Sampathkumar et al., 2014); however, we note that there is no quantitative functional data relating the degree of anisotropic growth, the degree of MT alignment, and the dynamic variability of these parameters. An attractive hypothesis is that in early dark-grown hypocotyl elongation, MT-based anisotropy and pectin-based elastic asymmetry work cooperatively to regulate anisotropy.
 
-## Pectin chemistry and wall elasticity are asymmetric in the epidermis of the dark-grown hypocotyl starting at germination
+### Pectin chemistry and wall elasticity are asymmetric in the epidermis of the dark-grown hypocotyl starting at germination
 
 Elastic asymmetry in hypocotyl epidermal cells is proposed to regulate anisotropic growth and has been attributed to the presence of more calcium cross-linked homogalacturonan (HG) epitopes in elongating walls (Peaucelle et al., 2015). Since it was unclear how calcium cross-linked HG might facilitate either increased elasticity or increased growth, we undertook a broader examination of HG biochemistry on an expanded time frame. We performed cell-wall immunolocalizations on longitudinal sections of 4HPG and 24HPG hypocotyls to determine the distribution of methylated HG, de-methylated HG, and calcium cross-linked HG (using LM20, LM19, and 2F4 antibodies respectively). At 4HPG, slower-growing epidermal transverse walls were marked by 2F4 and LM19 indicating the presence of de-methylated HG and calcium cross-linked HG (Figure 3A, orange arrow heads; see inset for naming convention). The endosperm at this stage was also highly marked consistent with the literature (Müller et al., 2013) but without asymmetry (Figure 3A, red asterisk). In epidermal cells, the faster growing axial walls were marked with LM20 indicating the presence of methylated pectin (Figure 3A, gold arrow heads). At 24HPG, the asymmetry in 2F4 and LM20 antibodies was maintained, but the LM19 antibody marked both axial and transverse walls (Figure 3A; immunolocalization controls can be found in Figure 3—figure supplement 1). The lack of asymmetry in LM19 signal at 24HPG may indicate that as pectin is newly deposited it is de-esterified but only cross-linked in transverse walls; de-methylated HG in axial walls may be degraded (Rui et al., 2017; Xiao et al., 2014). When combined with the asymmetry in methylated HG signal (LM20), which could be due to differential delivery, these data hint at a complex cellular delivery mechanism. We concluded that slowly growing transverse walls had more de-methylated pectin which was calcium cross-linked, while faster growing axial walls had more methylated pectin.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative longitudinal immunolocalization images of pectin methylation state as determined by LM19 (low degree of methylation) and LM20 (high degree of methylation) antibodies at 4HPG and 24HPG. Transverse and axial walls are indicated by orange and gold arrowheads, respectively (inset). Endosperm cells indicated by red asterisk, epidermal cell files by green asterisks. Negative controls for immunolocalizations can be found in Figure 3—figure supplement 1. (B) Representative maps of indentation moduli (IM; MPa) from base cells with representative graph of axial vs transverse IM for hypocotyls, at 4HPG and 24HPG (all replicate data can be found in Figure 3—figure supplement 1); Wilcoxan rank-sum test for significance: single asterisk, p<0.005; double asterisk, p<0.001. Scale bars = 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Longitudinal sections stained with calcofluor white (cell walls) and reacted with various combinations of primary and secondary antibodies. Confocal exposure was kept consistent within each set. Scale bars = 50 µm. (B) Individual sample IMs for 4HPG and 24HPG. (C) Schematic of IM dynamics in time for 4-24-48HPG on axial and transverse walls, with trend lines and ratio (trans:axial) over plots. (D) Cryo-SEM of basal cells in a 24HPG hypocotyl. Orange arrowhead indicates a transverse wall, gold an axial. Cell wall thickness from cryo-SEM data. Scale bar = 1000 nm.
+
 We detected asymmetry in pectin biochemistry at 4HPG, consistent with our growth data indicating that hypocotyl cells were always growing anisotropically (Figure 1). A recent study postulated that a reported transition from isotropic to anisotropic growth in dark-grown Arabidopsis hypocotyl cells was due to the appearance of a cell-level elastic asymmetry around 15HPG (Peaucelle et al., 2015). To investigate cell wall elasticity under our conditions, where growth was anisotropic from germination onwards, we performed AFM-based nano-indentation on basal hypocotyl epidermides from dark-grown seedlings at 4HPG and 24HPG. At 4HPG, axial walls were more elastic (lower indentation modulus (IM)) when compared with transverse walls (18.4 MPa ± 1.9 vs 24.8 MPa ± 2.0; Figure 3B, Figure 3—figure supplement 1). This correlated well with our observations that cells at this early time point were growing anisotropically and presented asymmetric pectin epitopes (Figure 1BC, Figure 1—figure supplement 1). This difference was still observed in basal cells at 24HPG coincident with an increase in overall elasticity when they were entering into the rapid growth phase (12.7 MPa ±0.4 vs 20.0 MPa ±0.8; Figure 3B; Figure 3—figure supplement 1). At 24HPG, cell wall thickness was not significantly different between axial and transverse walls of basal hypocotyl cells, indicating that elasticity difference were underlain by biochemical and not geometrical differences (Figure 3—figure supplement 1). The elastic asymmetry increased to a ratio of 2 by 48HPG (Figure 3—figure supplement 1). It is possible that the increase in overall elasticity contributed to the shift to rapid growth observed at 24HPG and the start of the acropetal wave (Figure 1). From these data, it was apparent that a cell-level asymmetry in wall elasticity was present from the time of germination, coincident with growth anisotropy, and correlated with changes in pectin chemistry in dark-grown hypocotyl basal epidermal cells.
 
-## In silico cell-level elastic asymmetry can increase growth anisotropy when combined with microtubule-based anisotropy
+### In silico cell-level elastic asymmetry can increase growth anisotropy when combined with microtubule-based anisotropy
 
 It has been proposed that pectin asymmetry alone might account for a shift to anisotropic growth. To test whether pectin asymmetry could induce anisotropic growth we next performed an in silico test. We developed a finite element method (FEM) model of a hypocotyl epidermis (based on methods in [Bozorg et al., 2014, Bozorg et al., 2016]). The FEM model consisted of a 3D epidermal layer made up of individual cells whose individual walls could have separate mechanical properties proscribed (Figure 4A; Appendix). Wall thickness was set according to the literature and our SEM observations (Derbyshire et al., 2007a). The epidermal layer was pressurized to provide the driving force for the growth of these cells and the space internal to the epidermis was also pressurized to simulate internal tissue force. Growth was implemented using a Lockhart model (Lockhart, 1965) where strain above a yield threshold set the growth rates relative to principal strain directions (Bozorg et al., 2016). Expanded details of the model can be found in the Appendix.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig4-v1.jpg)
+
+**Figure 4.:** (A) Template for finite element method simulation of a growing hypocotyl epidermis, alongside predicted strain anisotropy (growth) with no anisotropic information and with or without 100x elastic asymmetry added. White lines indicate the maximal stress direction. (B) Pre-growth and after-growth simulation results for a case with material anisotropy information provided by the internal epidermal face. The magnitude of anisotropy is enhanced by the addition of 2-fold elastic asymmetry, resulting in increased growth of the template. (C) Simulation output as percent growth in time from the simulation in (B) showing the increased relative growth achieved by addition of 2-fold elastic asymmetry. Simulation result from simulated internal tissue (cortex) anisotropy can be found in Figure 4—figure supplement 1 alongside results of sensitivity analyses for both simulations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Simulation output before and after growth when an internal force anisotropy is imposed as a proxy for internal tissue anisotropy. Addition of 2X elastic asymmetry enhances the anisotropy (axial growth) over time. (B) Sensitivity analysis for simulation from Figure 4 (proscribed internal wall anisotropy) and the internal force anisotropy simulation in A. The following parameters were varied: (1) depth of L1 layer (anticlinal walls), (2) transverse anticlinal cell wall density, (3) overall stiffness of inner periclinal walls, (4) overall stiffness of outer periclinal walls, (5) overall stiffness of anticlinal walls, (6) asymmetry of anticlinal walls, (7) pressure. In the analysis of internal wall anisotropy we also included (8) mechanical anisotropy of inner periclinal walls. In the analysis of internal force anisotropy we included (8) anisotropy of internal force, (9) anisotropy of internal force when circumferential E is constant, and (10) anisotropy of internal force when axial E is constant. Parameters were varied 10%, and the relative change in strain anisotropy is reported. (C) Axial and circumferential growth from the simulation in Figure 4. The threshold allowing circumferential growth was eventually surpassed if the outer epidermal wall was not given material anisotropy after some initial growth.
 
 When the axial and transverse anticlinal walls had the same elasticity (no asymmetry) and when no material anisotropy was specified (cellulose orientation was not coordinated), the pressure forces caused the maximal strain (and stress) to be transverse (Figure 4A). This result would lead to a radial swelling of the organ and was consistent with basic mechanical theories of hoop stress (Baskin and Jensen, 2013). In order to drive axial anisotropy, in the absence of cellulose-based material anisotropy, a 100-fold elastic asymmetry had to be invoked (Figure 4A). These results led us to hypothesize that a 2-fold elastic asymmetry alone, as measured in our experiments (Figure 3), would be insufficient to drive anisotropic growth.
 
 Based on the literature, and our own observations of MT angle at early growth stages, we next added material anisotropy to our simulations. When material anisotropy favoring axial strain was specified at the inner epidermal wall (as measured in [Crowell et al., 2011]), we obtained axial growth anisotropy (Figure 4B); strikingly, addition of a 2-fold elastic asymmetry, consistent with our experiments (Figure 3), enhanced the magnitude of growth anisotropy (Figure 4B,C). Since it was also possible that internal tissue provided anisotropic information (i.e. the cortex, [Hejnowicz et al., 2000]), we simulated this situation by specifying axial pressure in the inner-epidermal space and also recovered axial anisotropy (Figure 4—figure supplement 1). The addition of 2-fold elastic asymmetry in the epidermis was again able to enhance the magnitude of axial anisotropy (Figure 4—figure supplement 1). A sensitivity analysis of the two cases with anisotropic information and 2-fold elastic asymmetry indicated that they were most sensitive to variation in the degree of anisotropy and that increasing elastic asymmetry showed a positive correlation with growth anisotropy (Figure 4—figure supplement 1). In conclusion, our finite element mechanical model led us to propose that while epidermal elastic asymmetry alone was insufficient to drive axial growth anisotropy, it was able to contribute by increasing the anisotropy achieved when anisotropic information was provided by inner tissues or the inner epidermal wall.
 
-## Ectopic changes in pectin biochemistry alter cell anisotropy and organ growth
+### Ectopic changes in pectin biochemistry alter cell anisotropy and organ growth
 
 Our experimental and computational results led us to believe that pectin biochemistry could have an impact on growth anisotropy; however, our observations were correlative. In order to test a causal relationship, we altered pectin methylation in dark-growing hypocotyls and observed any subsequent changes in the cell shape. In Arabidopsis, the methylation of HG can be controlled by the antagonistic activity of two protein families, PECTIN METHYLESTERASE (PME) and PECTIN METHYLESTERASE INHIBITOR (PMEI); PME activity leads to de-esterification and likely to calcium cross-linking and increased rigidity, while PMEI would have the opposite effect (Caffall and Mohnen, 2009; Levesque-Tremblay et al., 2015a, Levesque-Tremblay et al., 2015b). Note that PME activity could also lead to HG degradation by POLYGALACTURONASE (PG), whose activity is also important for proper hypocotyl growth (Rui et al., 2017; Xiao et al., 2014).
 
 To alter pectin methylation in the hypocotyl, we utilized transgenic lines expressing either PECTIN METHYLESTERASE5 (PME5) or PECTIN METHYLESTERASE INHIBITOR3 (PMEI3) under ethanol induction (Peaucelle et al., 2008) (Verification of induction in Figure 5—figure supplement 1). We used AFM-based nano-indentation to examine basal cell wall elasticity in induced hypocotyls (non-transgenic (NT), PME, and PMEI). We observed that both PME5 and PMEI3 induction abolished cell-level elastic asymmetry: PME5 increased the rigidity in both axial and transverse anticlinal walls, while PMEI3 decreased the rigidity in both (Figure 5A; Figure 5—figure supplement 1). These changes in cell wall elastic asymmetry were accompanied by changes in cell shape anisotropy: induction of PMEI3 led to more anisotropic cells within the elongation wave and PME5 induction to less anisotropic cells (Figure 5B; Figure 5—figure supplement 1). Note that the position of the wave was not altered with PMEI3 induction, indicating that ectopically altering pectin chemistry could alter growth rate but not the position of the acropetal wave. Also, anisotropy was not lost in either transgenic induction indicating that loss of cell wall asymmetry alone is not enough to abolish anisotropic cell shape, or presumably growth. Altogether, it appears that pectin asymmetry has a contributory, not sole regulatory, role in anisotropy supporting our computational results.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig5-v1.jpg)
+
+**Figure 5.:** (A) Indentation modulus (IM) for ethanol treated non-transgenic (NT, gold), alcA::PME5 (PME, red) and alcA::PMEI3 (PMEI, green) basal hypocotyl cells at 48HPG split into axial and transverse walls; Wilcoxan rank-sum test for significance: double asterisk, p<0.001. Full data set can be found in Figure 5—figure supplement 1. Scale bars = 10 µm. (B) Shape anisotropy (length:width) of cells by position index in NT, PME and PMEI induced seedlings after 48H. See Figure 1 for position indexing. Induction controls and cell level length and width measurements can be found in Figure 5—figure supplement 1. (C) Hypocotyl length at discrete time points, extracted from infrared imaging of hypocotyl growth over time, for induced NT, PME, and PMEI seedlings. At p<0.05 (t-test) all data points in (C) are significantly different except PME and NT at 36HPG and 48HPG. (D) Hypocotyl width of induced NT, PME and PMEI seedlings at 24HPG and 48HPG. a,b,c indicate statistical similarity based on pairwise t-tests (p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) IM for all hypocotyls tested with EtOH treatment: NT, PME5, and PMEI3 at 48HPG in basal dark-grown hypocotyl cells. All differences (*) are significant to p<0.001 by Mann-Whitney. (B) Ethanol induction of PME5 and PMEI3 generated 100% penetrance. GUS staining of ethanol treated PME, PMEI, and NT seedlings after germination and induction with ethanol. All the PME seedlings show GUS signal. GFP imaging of ethanol treated PME, PMEI and NT. All the PMEI seedlings show GFP signal. Scale bars = 1000 µm. (C) Transverse immunolocalizations 24HPG after induction in non-transgenic, PME, and PMEI seedlings. Representative immunolocalizations at top and bottom cells of 24HPG hypocotyl with LM19 (low DM) and LM19 (high DM) antibodies. Yellow circles indicate hypocotyl tissue. Scale bar = 50 µm. Cell length and width by cell index position after 24HPG (D) and 48HPG (E).
+
 When NT, PME5 and PMEI3 hypocotyls were exposed to the inducer the following changes in growth were observed at the organ level: when compared to NT, PME5 induction abolished the rapid elongation phase and PMEI3 induction increased early elongation essentially flattening out the difference between the slow and rapid phases (Figure 5C). These results were consistent with a promotive role for pectin methylation in rapid hypocotyl elongation. To confirm that the expected changes in pectin chemistry were occurring, we performed immunolocalizations on transverse sections of hypocotyls; namely, that PME5 induction yielded more de-methylated pectin signal (LM19 antibody; Figure 5—figure supplement 1) and that PMEI3 induction yielded more methylated pectin signal (LM20 antibody; Figure 5—figure supplement 1). These data are thoroughly consistent with an increase in the relative amount of pectin methylation contributing to the transition from slow to rapid elongation, a point we will revisit once again at the end of this report.
 
 As we were primarily interested in anisotropic growth, we also examined how hypocotyl width was altered with changes in pectin biochemistry. Commensurate with the change in cell-level anisotropy, PME5 induction resulted in a reduced hypocotyl length (Figure 5C) and also a reduction in hypocotyl width (Figures 5D, 24 and 48HPG). Conversely, induction of PMEI3 led to an increase in hypocotyl length (Figure 5C) and an increase in hypocotyl width (Figures 5D, 24 and 48HPG). Taken together these data hint at a role for pectin chemistry in cell, and organ, growth anisotropy; however, in no case was anisotropy completely abolished indicating a more complex regulation of anisotropy than pectin asymmetry alone could provide, further supporting our additive model for anisotropy in the hypocotyl.
 
-## Ectopic alterations in pectin biochemistry can mediate the effect of microtubule disruption
+### Ectopic alterations in pectin biochemistry can mediate the effect of microtubule disruption
 
 Our observations of weak MT transverse alignment and pectin asymmetry, and our computational modelling, strongly indicated an additive role for these two mechanical factors. Since we had observed that ectopic alteration of pectin biochemistry could not fully abolish cell-level anisotropy, we next asked whether loss of MT-based anisotropy could be affected by altering pectin. Oryzalin, a drug that blocks the polymerization of MT, is known to affect the trajectories, distribution and densities of cellulose synthase complexes (Paredez et al., 2006; Chan et al., 2010), to change the organization in cellulose microfibril orientations, and to induce cell swelling (a trend towards isotropy) (Baskin et al., 2004, Baskin et al., 1994; Lucas et al., 2011). We treated seedlings with 5 µM oryzalin while inducing either PME5 or PMEI3. NT control hypocotyls, treated with the inducer, showed a reduction in cell shape anisotropy when treated with oryzalin indicating typical cell swelling (Figure 6A,B). This effect was reduced in induced PME5 plants and enhanced in induced PMEI3 plants (Figure 6A,B). While there was a response to oryzalin in PME5-induced hypocotyls, the cell swelling was reduced indicating a compensatory cell wall strength in these cells (Figure 6B). The opposite was true in oryzalin-treated PMEI3-induced hypocotyls where the cell swelling was more dramatic than either PME5 or NT, despite induced-PMEI3 cells being the most anisotropic without oryzalin treatment (Figure 6A,B). These data indicated that changes in pectin biochemistry could modulate the effect of MT-derived cell swelling and isotropy, but again this modulation was never complete. Pharmacological treatments would be unlikely to affect existing cellulose fiber alignment from before the time of treatment, and so it is likely that treated hypocotyl cell walls maintained some pre-treatment cellulose-based anisotropy.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig6-v1.jpg)
+
+**Figure 6.:** (A) Shape anisotropy (length/width) of cells at the bottom of treated and control hypocotyls. Error bars represent the standard error of the mean. All seedlings were treated with the inducer (ethanol; EtOH). Scale bars = 100 µm. a,b,c,d,e indicate similarity based on pairwise t-tests (p<0.005). (B) Representative images of basal cells from NT, PME5 and PMEI3 induced hypocotyls expressing the Myr-YFP membrane marker grown for 48 hr on media containing 5 μM oryzalin. (C) Diagrammatic representation of 0HPG and 24HPG hypocotyls showing the relative positions of transverse sections in D-G. (D–G) Representative immunolocalizations on transverse sections of 0HPG and 24HPG hypocotyls for de-methylated and methylated pectin (LM19 and LM20 respectively). Yellow lines (C) and circles (D,E) demark the hypocotyl where sections included cotyledons. Scale bar = 50 µm. 2F4 immunolocalization at 24HPG may be found in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38161/elife-38161-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative immunolocalizations on transverse sections of 24HPG dark-grown hypocotyl apical (i) and basal (ii) areas.
 
 We observed that the slowly-growing upper regions of dark-grown hypocotyls in these experiments exhibited less swelling upon oryzalin treatment (Figure 6B, insets). Taken together with our earlier observations of decreasing pectin-based wall IM over time (Figure 3B; Figure 3—figure supplement 1) and the effect of ectopic pectin alteration on hypocotyl elongation (Figure 5C), we wondered if there might be endogenous differences in pectin chemistry along the hypocotyl length. To examine pectin biochemistry in this context, we performed immunolocalizations on transverse sections of dark-grown hypocotyl at 0HPG, when all parts of the hypocotyl were slowly growing, and 24HPG, when basal cells were entering the rapid elongation phase, using antibodies for methylated HG (LM20) and de-methylated HG (LM19). At the time of germination (0HPG) we observed strong signal for de-methylated HG (LM19) in basal and apical transverse sections (Figure 6D,E) and weak signal for methylated HG (LM20; Figure 6D,E). At 24HPG, the de-methylated HG signal remained high in the slow-growing apical sections but was low in basal sections (Figure 6F,G). The calcium cross-linked HG antibody 2F4 showed a similar pattern (Figure 6—figure supplement 1). Methylated HG exhibited a complementary pattern with lower signal in sections from slow growing apical regions and higher signal in sections from rapidly growing basal regions (Figure 6F,G). We could not discern any difference between tissue layers in our sections, indicating an organ-wide change in HG methylation state. These data led us to hypothesize that de-methylated pectin kept the hypocotyl in a slowly growing state, while methylated pectin allowed it to grow rapidly. An attractive hypothesis is that maintenance of pectin methylation allows for the onset of the acropetal growth wave; however, other growth-related parameters might be involved, such as vacuolar structure and resulting water uptake ability (Scheuring et al., 2016).
 
 ## Discussion
 
-## The origin of material anisotropy
+### The origin of material anisotropy
 
 In multicellular anisotropically growing organs there is no reason stricto senso for every cell to have anisotropic wall properties (Baskin and Jensen, 2013). Indeed, our data presented here and those of others suggest that this is not the case in the dark-growing Arabidopsis hypocotyl (Peaucelle et al., 2015; Pelletier et al., 2010; Derbyshire et al., 2007a). Instead, it appears that anisotropic information originates at the inner face of epidermal cells and/or within cortical cells. Here we present a harmonious model of cell-wall controlled anisotropic growth: pectin asymmetry in the epidermis enhances anisotropic growth controlled by cellulose anisotropy.
 
@@ -91,13 +139,13 @@ Our experimental analysis of native pectin biochemistry and manipulations of pec
 
 There is an elephant in the room: although a strong correlation between MT orientation, CESA track movements and/or cellulose microfibril orientation have been reported in the literature in several systems (Crowell et al., 2011; Mueller and Brown, 1982; Takeda and Shibaoka, 1981) there are also reports that show no correlation (Sugimoto, 2003; Emons et al., 1992, Emons et al., 2007; Fujita et al., 2011). In the latter, cellulose synthase complex (CSC) movements have been shown to persist even in the absence of MTs. In the mor1-1 mutant, temperature-induced microtubule disorganization had no effect on cellulose microfibril orientation on inner epidermal walls (Fujita et al., 2011). It is also prudent to note that cellulose microfibrils may undergo passive alignment once deposited within the apoplast and as such MT and CESA orientations may not accurately reflect cellulose fiber orientation (Braybrook, 2017). Given the observations and hypotheses above, it is possible that the outer epidermal wall of young dark-grown hypocotyls does contain transversely aligned cellulose fibrils in spite of the disperse orientation in both MT and CESA markers; however, direct imaging of cellulose fibers in hypocotyls just after germination is technically impossible at this time. In spite of this limitation, we believe the conclusion that pectin asymmetry contributes to anisotropic growth remains strong.
 
-## Epidermal cell growth in the elongating, etiolated, hypocotyl
+### Epidermal cell growth in the elongating, etiolated, hypocotyl
 
 We demonstrate that hypocotyl epidermal cells are anisotropic from the time of germination, an observation made possible by measuring both cell length and cell width. These observations build upon work describing the changes in cell length alone during elongation and the definition of the acropetal wave (Gendreau et al., 1997). By assessing cell width and length in time we have been able to proxy each cell’s anisotropic growth. We further hypothesize that this early anisotropic growth is likely directed by internal wall material anisotropy (inner epidermal face, cortex walls or their combined weak material anisotropy) and is enhanced by cell-level elastic asymmetry.
 
 Our in silico modelling approaches have allowed us to further explore our hypotheses and provided some insight into their validity. First, the measured elastic asymmetry (2-fold, consistent with that reported recently (Peaucelle et al., 2015) was insufficient to drive axial anisotropic growth in our epidermal model, unless accompanied by internally provided anisotropic force or anisotropic properties of the inner epidermal wall. When combined, a 2-fold elastic asymmetry enhanced the anisotropic growth directed by internal tissues, leading us to hypothesize that elastic asymmetry aids in growth anisotropy. It is possible that the difference measured by our indentation tests underestimated the effective elasticity of the hypocotyl cell walls. It may also be that there are internal mechanical pectin asymmetries which contribute to anisotropy; our current indentation methods are restricted to epidermal cells. Cell wall elasticity, as measured here, is also an immediate property of cell walls which is only correlated with growth; future work must focus on uncovering how cell wall elasticity might relate to cell wall growth (Braybrook and Jönsson, 2016; Braybrook, 2015).
 
-## Towards a functional understanding of pectin biochemistry and the cell wall
+### Towards a functional understanding of pectin biochemistry and the cell wall
 
 Our data supports a role for pectin methylation in rapid cell elongation in the dark-grown Arabidopsis hypocotyl: pectin methylation is high in rapidly elongating hypocotyl cells as is wall elasticity; when pectin methylation is enhanced, walls are more elastic and rapid elongation starts early; when pectin de-methylation is induced, walls are less elastic and the rapid elongation phase is suppressed.
 
@@ -109,52 +157,202 @@ Perhaps the most puzzling contradiction to our data is the opposite phenotype sh
 
 Lastly, feedback between cell-wall integrity and wall biochemistry/structure may add more complexity to the system as the oligogalacturonides generated by the lysis of the HG can act as signaling molecules and affect plant development (for more references and reviews see [Wolf and Greiner, 2012; Wolf et al., 2009]). In fact, these oligogalacturonides have been recently shown to be responsible for sustaining cell elongation in dark grown hypocotyls (Sinclair et al., 2017). Due to the overexpression system used here, an ethanol induced transcriptional system, there is a time lag between induction and response. During this time and growth-time itself, we cannot discount that changes in wall biochemistry and mechanics induced by our PME and PMEI might have fed back through this system resulting in altered growth or further alterations in mechanics. Again though, we must stress the parsimonious nature of the predicted role of de-methylation on pectin gel mechanics, the observed mechanical changes in our system, the co-incident changes in wall biochemistry, and changes in cell shape and growth.
 
-## Conclusions
+### Conclusions
 
 We will return, lastly, to the question we began with: How does a seedling elongate upwards rapidly? The data presented here make a strong case that changes in pectin chemistry, and resultant wall rigidity, are important for the anisotropic growth that is critical for the hypocotyl. However, changes in pectin alone are likely insufficient to direct anisotropy: we observed that anisotropy of internal tissues is likely to be required for anisotropic growth which is aided by elastic asymmetry in the epidermis. We therefore present a harmonious model of dark-grown hypocotyl elongation where the anisotropy provided by cellulose is enhanced by epidermal elastic asymmetry. Our experiments and conclusions also leave us with several new questions: how does altered elasticity actually affect growth? How might elastic asymmetry be established in the first place? How is the acropetal wave, and change in pectin chemistry, instructed? These are questions which we look forward to investigating in the future.
 
 ## Materials and methods
 
-## Growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>PMEI3</td>
+      <td>PMID19097903</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>PME5</td>
+      <td>PMID19097903</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>GL2::GFP</td>
+      <td>Nottingham Arabidopsis Stock Center (NASC)</td>
+      <td>ID_NASC: N66491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>35S::GFP-MAP4</td>
+      <td>PMID 9811799</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>35S::GFP-TUA6</td>
+      <td>doi:10.1007/BF01279267</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>35S::GFP-EB1</td>
+      <td>PMID 14557818;14614826</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>CESA3::CESA3-GFP</td>
+      <td>PMID 17878303</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>Ubq::MYR-YFP</td>
+      <td>PMID 27212401</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LM19</td>
+      <td>Plant Probes, UK</td>
+      <td>ID_PlantProbes: LM19; RRID: AB_2734788</td>
+      <td>1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LM20</td>
+      <td>Plant Probes, UK</td>
+      <td>ID_PlantProbes: LM20; RRID: AB_2734789</td>
+      <td>1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>2 F-4</td>
+      <td>other</td>
+      <td></td>
+      <td>2 F-4: P. van Custems (gift); 1/100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 488 goat anti-rat</td>
+      <td>Cambridge Bioscience/ Bethyl, UK</td>
+      <td>ID_CamBioSci:A110-100D2; RRID: AB_10630108</td>
+      <td>1/400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG (H + L) Antibody Alexa Fluor 488</td>
+      <td>Invitrogen, UK</td>
+      <td>ID_Invitgrogen:A11017; RRID: AB_143160</td>
+      <td>1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>oryzalin</td>
+      <td>SIGMA</td>
+      <td>ID_SIGMA: 36182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MatLab2016a</td>
+      <td>MathWorks, Inc., USA</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R3.4.1</td>
+      <td>other</td>
+      <td>RRID:SCR_001905</td>
+      <td>R3.4.1: https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>JPK SPM Data Processing software, v. spm 5.0.69</td>
+      <td>JPK Instruments, DE</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MicroFilament Analyzer</td>
+      <td>PMID 23656865</td>
+      <td>RRID:SCR_016411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ/Fiji</td>
+      <td>PMID 22743772</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth conditions
 
 Transgenic lines sourced as indicated in Key Resources Table. Seeds were germinated on ½ MS plates containing Gamborg’s B5-vitamins but no sucrose. Germination was defined as the time when the radicle broke through the endosperm (0HPG). At this time, seedlings were selected and aligned with the radicle pointing downwards on ½ MS+B vitamins with 1.5% sucrose. The plates were wrapped with two layers of foil to simulate constant darkness. For PME5 and PMEI3 (Sampathkumar et al., 2014) induction, 0HPG seedlings placed in the middle of petri dishes flanked by two 500 µl microfuge tubes were placed at each side containing 200 µl of 100% ethanol each; this treatment achieved 100% penetrance of phenotype (Figure 5—figure supplement 1). Orzyalin treatment was as follows: Oryzalin was dissolved in DMSO and added to cooled media before pouring, to a final concentration of 5 µM. Mock treatment consisted of DMSO; 0HPG seeds (genotype PMEI3/M-YFP, PME5/M-YFP or M-YFP alone; F3 homozygous lines generated by crossing) were transferred to media with oryzalin or mock (DMSO) and grown in the dark for 48H prior to confocal imaging.
 
-## Immunolabelling
+### Immunolabelling
 
 Immunolocalizations were performed on 0.5 µm thick sections of LR White embedded hypocotyls. LM19 and LM20 antibodies (PlantProbes, UK) were diluted 200 times in PBS with 2% BSA. DyLight 488 goat anti-rat (Cambridge Bioscence/Bethyl) secondary antibody was diluted 400 times. 2F4 (P. van Cutsem, gift) immunolabelling was performed as in (Liners et al., 1992) Briefly, the primary antibody was diluted 100 times in TCN (20 mM Tris, 0.5 mM CaCl2 and 150 mM NaCl) with 1% w/v skim milk. Alexa Fluor 488 goat anti-mouse (Invitrogen, UK) secondary antibody, was diluted 200 times. Images were acquired using a Leica TCS SP8 confocal microscope. Ratios were obtained using ImageJ by drawing a line along the walls in question and using the average fluorescence intensity of the line. Sample numbers were: Transverse 4HPG, n = 7 (from 2 hypocotyls); Transverse 24HPG, n = 12 (from 3 hypocotyls); ratio calculations LM19, n = 72 from 7 sections; ratio calculations LM20, n = 41 from 7 sections; transverse 0HPG, n = 6 (from 2 hypocotyls); transverse 24HPG, n = 14 (from 4 hypocotyls); control immunos, n = 9 (from 2 to 4 seedlings each); transverse 48HPG for NT/PME/PMEI, n = 9 each (from 4 hypocotyls).
 
-## GUS staining
+### GUS staining
 
 Seedlings were incubated for 6 hr at 37°C in a solution of 50% water and 50% 2x GUS stain (50 mM KPO4, 0.1% triton X-100, 0.3 mg/mL X-GlcA (5-Bromo-4-chloro-3-indolyl-β-D-glucuronic acid, sodium salt), 1 mM K4Fe(CN)6, 1 mM K3Fe(CN)6, 0.1 v/v 1M KPO4 pH 7 (61.5mL 1M K2PO4 and 38.5 mL 1M KH2PO4 in 100 mL). samples were washed three times in 70% ethanol and one time in water and mounted in 50% glycerol under a coverslip and sealed with nailpolish.
 
-## Microtubule and cellulose synthase complexes imaging and assessment
+### Microtubule and cellulose synthase complexes imaging and assessment
 
 Images were acquired from 35S::GFP-MAP4, 35S::GFP-TUA6, 35S::GFP-EB1 and CESA3::CESA3-GFP seedlings using a Leica TCS SP8 confocal microscope using a 63X oil objective (1.4 numerical aperture). For microtubule orientation, we used the MicroFilament Analyzer (MFA) tool (Jacques et al., 2013). Sample numbers were: 0H: n = 65 (from 4 to 5 hypocotyls); 24H: n = 30 (from 9 hypocotyls); 65HPG: n = 13 (from 6 hypocotyls). For cortex analysis, n = 36 (from 5 hypocotyls).
 
-## Cell growth and shape analyses
+### Cell growth and shape analyses
 
 20 seedlings of Arabidopsis thaliana expressing a myristoylated-YFP were imaged for each time point, as confocal imaging stopped dark-grown hypocotyl elongation. Images were acquired using a Leica TCS SP8 confocal microscope. For cells, length and width were measured in Fiji (Liners et al., 1992); data were collected from 2 to 3 non-dividing files per hypocotyl. Cell diameter was recorded at the level of the central length of each cell. For cell shape analyses in induced NT, PME, and PMEI plants 10 seedlings of each were analysed for 48HPG and 24HPG. Hypocotyl widths and lengths at 24HPG and 48HPG were measured in 6–12 hypocotyls per treatment. Dividing cell characterization was conducted on 20 hypocotyls for each time point, and 4 seedlings were screened for GL2::GFP expression pattern. For oryzalin treated seedlings, a total of 12 seedlings for each treatment were imaged and the dimensions 8 cells per seedling, from the base, were measured.
 
-## Infrared growth imaging and analysis
+### Infrared growth imaging and analysis
 
 For imaging dark grown hypocotyls, a custom IR imaging setup was used, design available upon request. Images were acquired at 10 min intervals over 5 days. Images for selected time points were extracted and hypocotyl length was measured in Fiji (Schindelin et al., 2012).
 
-## Atomic force microscopy
+### Atomic force microscopy
 
 Further discussion of AFM methods and interpretation can be found in the Technical Supplement. AFM-based nano-indentation experiments were designed and performed according to (Braybrook, 2015). Briefly, dissected and plasmolyzed (0.55M mannitol; minimum 15 min) hypocotyls were indented using a Nano Wizard 3 AFM (JPK Instruments, DE) mounted with a 5 nm diameter pyramidal indenter (Windsor Scientific, UK) on a cantilever of 45.5 N/m stiffness; cantilever stiffness was calibrated by thermal tuning. For each hypocotyl, two areas of 50 × 100 µm were indented with 16 × 32 points: an area just before the collet and one slightly higher, to encompass basal cells. Indentations were performed with 500nN of force yielding an indentation depth range of 250–500 nm. Sample numbers were as follows: 4HPG, n = 24 cells (from 6 hypocotyls); 24HPG, n = 18 cells (from 6 hypocotyls); PME/PMEI/NT at 48HPG, n = 18 cells (from 6 hypocotyls each). Force indentation approach curves were analyzed using JPK SPM Data Processing software (JPK Instruments, DE; v. spm 5.0.69) using a Hertzian indentation model and a pyramidal tip shape. We have chosen to adopt the term ‘indentation modulus’ in place of ‘Young’s Modulus’ or ‘Apparent Young’s Modulus’ in order to distinguish these tests from those designed to assess Young’s modulus in materials science (Cosgrove, 2016). Indentation modulus maps were then imported into MatLab (MATLAB 2016a, MathWorks, Inc., USA) and values were selected from anticlinal cell walls. For each grid area, 10–50 points were chosen from anticlinal walls and used for subsequent analyses, representing data from 3 to 10 cells depending on cell length in the scan area. Rations of IM were calculated by straightforward division of averages and propagation of SEM. Mann-Whitney tests for significant differences were performed in R as distributions were non-normal. A technical discussion on AFM-based analyses may be found in the Appendix.
 
-## CryoSEM
+### CryoSEM
 
 Brass stubs were covered with 50% lanolin solution in water that was preheated to 50°C and vigorously vortexed prior to applying the seedlings. 24HPG seedlings were placed on the lanolin coat and immediately plunge frozen in liquid nitrogen under vacuum. Frozen samples were then transferred under vacuum to a prep chamber of a PT3010T cryo-apparatus (Quorum Technologies, Lewes, UK) and maintained at −145°C. For cryo fracture a level semi-rotary cryo knife was used to randomly fracture the hypocotyls. All samples were sputter coated with a 3 nm platinum coat. Samples were then transferred and maintained cold under vacuum into the chamber of a Zeiss EVO HD15 SEM fitted with a cryo-stage. Images were taken on the SEM using a gun voltage of 6 kV, I probe size of 460 pA, a SE detector and a working distance of 4 mm.
 
-## Computational modelling
+### Computational modelling
 
 Details of the modelling can be found in the Appendix. In brief, a 3D finite element methods mechanical model was developed to evaluate mechanical signals and growth for cell walls of the epidermal cell layer of a hypocotyl. We used a 3D template and where prisms with six walls were utilized to represent individual cells (Figure 4). Each wall was triangulated from its centroid into triangular (planar) elements. The dimensions of the cell walls are proportional to the average values of those seen in experiments, for example Figure 1. The thickness of the walls was included by adjusting their corresponding Young’s moduli assuming the material strength is proportional to the amount of material in a unit area. Individual cells were assembled into a 3D structure representing an epidermal cell layer. A wall in between two cells was divided into two adjacent walls and connected via the corner nodes. In this set up each pair of adjacent walls experienced the same deformation while they could hold individual mechanical properties. The two ends of the template were closed and the tissue was pressurized on the outer surface. The mechanical signals of cells close to each end were excluded from the analysis to avoid artefacts caused by boundary conditions (see simulation edges in Figure 4). In order to reduce the boundary effects, vertices at the two ends of the cylinder were constrained to stay in a plane parallel to the XY plane while allowed to move freely in the X and Y directions.
 
-## Statistical information
+### Statistical information
 
 For all of our analyses we did not exclude any data points. For AFM-based experiments samples sizes were low due to technical difficulty in experimentation: sample mounting was very difficult and often of 10 mounted samples only 2 remained fixed at 4HPG and 24HPG. AFM-based data was non-normally distributed so a Wilcoxan rank-sum test (aka Mann-Whitney-Wilcoxan) was used to see if the data from two independent samples were equivalent: this nonparametric test follows the null hypothesis that a random value selected from group 1 is equally likely to be greater or lesser than a random member of group 2. For normally distributed data, such as growth and cell dimensions, t-tests were used (singly or pair-wise comparisons); for multi-sample comparisons (e.g. NT vs. PME vs. PMEI) pair-wise t-tests are shown but ANOVA gave similar results.
 
-## Data and code availability
+### Data and code availability
 
 All raw data produced and utilized in this study can be downloaded from the DRYAD data repository (doi:10.5061/dryad.4s4b3nf). Modeling code can be accessed through the Sainsbury Laboratory’s GitLab page (https://gitlab.com/slcu/teamHJ/behruz/3Dhypocotyl; copy archived at https://github.com/elifesciences-publications/3Dhypocotyl).

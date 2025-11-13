@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03czfpz43 Emory Neuroscience Graduate Program, Emory University Atlanta United States
-2. https://ror.org/03czfpz43 Department of Biology, Emory University Atlanta United States
-3. https://ror.org/05dm4ck87 Center for Translational Social Neuroscience, Emory University Atlanta United States
+1. Emory Neuroscience Graduate Program, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+2. Department of Biology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+3. Center for Translational Social Neuroscience, Emory University Atlanta United States ([ROR:05dm4ck87](https://ror.org/05dm4ck87))
 
 † Corresponding author
 
@@ -33,9 +33,17 @@ To determine if the vHPC-LS circuit is causally involved in preferentially inves
 
 ## Results
 
-## Inhibiting vHPC-LS neurons disrupts the preference for social novelty
+### Inhibiting vHPC-LS neurons disrupts the preference for social novelty
 
 To determine whether vHPC-LS neurons played a causal role in allowing animals to discriminate between novel and familiar mice, we chemogenetically silenced vHPC-LS neurons while evaluating the effects on behavior in the social discrimination task (SDT). To selectively silence vHPC-LS neurons, we injected C57BL/6J mice in the LS with a retrogradely transporting Cre virus and an AAV5 virus expressing Cre-dependent inhibitory DREADD (hM4Di)(Armbruster et al., 2007) tagged with mCherry (or a control virus expressing only mCherry) in the vHPC (Figure 1A and B). Three weeks after surgery, we injected mice (i.p.) with either saline or CNO 30 min prior to the SDT (Figure 1C). In the SDT, mice were allowed to explore an arena containing age- and sex-matched novel and familiar conspecifics (Figure 1C). Typically, mice spend more time in the proximity of a novel conspecific relative to the familiar conspecific (Moy et al., 2004). We found that chemogenetic inhibition of vHPC-LS neurons by administration of CNO but not saline in hM4Di expressing mice (male and female) disrupted the ability of mice to preferentially spend more time in the proximity of the novel animal (Figure 1F; two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=8.4E-04, main effect of conspecific identity: p=0.003; post hoc Sidak multiple comparison tests: Saline: p=2E-05, CNO: p=0.971; Figure 1 - Figure Supplement 1). CNO administration in mCherry-expressing control mice did not affect their natural preference for the novel conspecific (Figure 1D; two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.638, main effect of conspecific identity: p=6.40E-06; post hoc Sidak multiple comparison tests: Saline: p=1.10E-04, CNO: p=1.90E-05). In both saline and CNO conditions, the discrimination scores of the mCherry mice show that mice preferentially spend more time investigating the novel conspecific relative to familiar conspecific (Figure 1E; one sample t-test, Saline: p=0.0103, CNO: p=0.0013) while inhibition of vHPC-LS neurons disrupts the preference for the novel mouse (Figure 1G; one sample t-test, Saline: p=0.0009, CNO: p=0.9222).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig1-v1.jpg)
+
+**Figure 1.:** (A) A schematic showing AAV5-hSyn-DIO-hM4D(Gi)-mCherry injection in the vHPC and retroAAV-Cre injection in the LS. (B) Example histology showing hM4Di-mCherry expression in vHPC-LS neurons. (C) After being pair housed for 72 hr with a sex-matched and age-matched conspecific for familiarization, mice are run through the social discrimination task (SDT). In the task, mice can freely explore an arena containing two encaged conspecifics, one novel and one familiar. (D) Control mice expressing the mCherry-only virus in vHPC-LS neurons were injected with either saline (left) or CNO (right) prior to being run on the SDT. Control mice, regardless of treatment group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with drug condition (saline or CNO) and conspecific identity (novel or familiar) as factors; interaction: p=0.638, main effect of conspecific identity: p=6.4E-06, post hoc Sidak multiple comparison tests; Saline: p=1.1E-04, CNO: p=1.9E-05; mCherry: n=19 mice). (E) Discrimination scores show that control mice under both saline and CNO conditions preferentially spend more time investigating the novel conspecific relative to familiar conspecific (One sample t-test, Saline: p=0.0103, CNO: p=0.0013, mCherry: n=19 mice). (F, G) Chemogenetic inhibition of vHPC-LS neurons with CNO disrupted the preference of mice for novel conspecific in the SDT. In contrast, hM4Di expressing mice exhibited a strong preference for the novel conspecific over the familiar conspecific when mice were administered saline prior to being run on the SDT (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=8.4E-04, main effect of conspecific identity: p=0.003; post hoc Sidak multiple comparison tests; Saline: p=2E-05, CNO: p=0.971; discrimination score: one sample t-test, Saline: p=0.0009, CNO: p=0.9222; hM4Di: n=20 mice). (H, I) Control mice expressing the mCherry-only virus in vHPC-LS neurons were injected with either saline (left) or CNO (right) prior to being run on a food discrimination task. Control mice preferentially spent more time in the proximity of familiar food regardless of the drug treatment group (Two-factor ANOVA with food identity (novel or familiar) and drug condition as factors; interaction: p=0.254, main effect of food identity: p=0.003, post hoc Sidak multiple comparison tests; Saline: p=0.0323, CNO: p=0.0009; discrimination score: one sample t-test, Saline: p=0.0134, CNO: p=0.008; mCherry: n=18 mice). (J, K) Importantly, inhibition of hM4Di expressing vHPC-LS neurons in the presence of CNO had no effect on the ability of mice to preferentially investigate the familiar food relative to the novel food. Both CNO- and saline-injected hM4Di animals preferentially spent more time in the proximity of the familiar food (Two-factor ANOVA with food identity and drug condition as factors; interaction: p=0.508, main effect of food preference: p=3.2E-05, post hoc Sidak multiple comparison tests; Saline: p=1.7E-04, CNO: p=0.03; discrimination score: one sample t-test, Saline: p=0.0016, CNO: p=0.0419; hM4Di: n=16 mice). (L, N) We observed that both saline- and CNO-injected control (L) and hM4Di (N) mice spent similar amounts of time in the center of the open field arena (paired t-test, mCherry: p=0.3167, hM4Di: p=0.1837; mCherry: n=19 mice, hM4Di = 20 mice). (M, O) In both mCherry (M) and hM4Di (O) mice, saline and CNO injections did not affect the velocity (pixel/second) of the animals (paired t-test, mCherry: p=0.2694, hM4Di: p=0.7886; mCherry: n=19 mice, hM4Di: n=20 mice). All error bars denote standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Control male mice expressing the mCherry-only virus in vHPC-LS neurons were injected with either saline (left) or CNO (right) prior to being run on the social discrimination task (SDT). Control mice, regardless of treatment group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.480, main effect of conspecific identity: p=7.84E-04, post hoc Sidak multiple comparison tests; Saline: p=0.011, CNO: p=0.001; mCherry: n=12 mice). (B) Discrimination scores show that control mice under CNO condition preferentially spend more time investigating the novel conspecific relative to familiar conspecific (One sample t-test, saline: CNO: p=0.008, mCherry: n=12 mice). Preference strongly trends towards novel preferring in saline-injected control mice (One sample t-test, Saline: p=0.082, mCherry: n=12 mice). (C, D) Chemogenetic inhibition of vHPC-LS neurons with CNO disrupted the preference of male mice for novel conspecific in the SDT. In contrast, hM4Di expressing mice injected with saline exhibited a strong preference for the novel conspecific over the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=6.28E-04; post hoc Sidak multiple comparison tests; Saline: p=0.001, CNO: p=0.058; discrimination score: one sample t-test, Saline: p=0.03, CNO: p=0.059; hM4Di: n=9 mice). (E) Control female mice expressing the mCherry-only virus in vHPC-LS neurons were injected with either saline (left) or CNO (right) prior to being run on the SDT. Control female mice, regardless of treatment group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.984, main effect of conspecific identity: p=0.003, post hoc Sidak multiple comparison tests; Saline: p=0.008, CNO: p=0.008; mCherry: n=7 mice). (B) Discrimination scores show that in control female mice under both CNO and saline conditions there is strong trend towards preferentially spending more time near a novel same-sex conspecific relative to familiar conspecific (One sample t-test, Saline: p=0.076, CNO: p=0.053, mCherry: n=7 mice). (G, H) Chemogenetic inhibition of vHPC-LS neurons with CNO disrupted the preference of female mice for novel conspecific in the SDT. In contrast, hM4Di expressing mice injected with saline exhibited a strong preference for the novel conspecific over the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.162, but main effect of conspecific identity: p=0.006, post hoc Sidak multiple comparison tests; Saline: p=0.004, CNO: p=0.212; discrimination score: one sample t-test, Saline: p=0.018, CNO: p=0.301; hM4Di: n=11 mice). All error bars denote standard error of the mean.
 
 To determine if the effects observed with vHPC-LS inhibition are socially specific, we ran the mice through a food discrimination assay in which mice were allowed to explore an arena containing novel and familiar foods. Unlike with conspecifics, mice are neophobic and do not prefer novel foods (File, 2001). Therefore, we expected mice would spend less time around the novel food in comparison to the familiar food. All mice exhibited a preference for the familiar food regardless of virus or drug condition (Figure 1H–K; two-factor ANOVA with food identity and drug condition as factors; mCherry: interaction: p=0.254, main effect of food preference: p=0.003, post hoc Sidak multiple comparison tests: Saline: p=0.0323, CNO: p=9E-04; discrimination score: one sample t-test, Saline: p=0.0134, CNO: p=0.008; hM4Di: interaction: p=0.508, main effect of food preference: p=3.2E-05, post hoc Sidak multiple comparison tests: Saline: p=1.7E-04, CNO: p=0.003; discrimination score: one sample t-test, Saline: p=0.0016, CNO: p=0.0419). This finding suggests that the effects observed with vHPC-LS inhibition are socially specific.
 
@@ -43,9 +51,17 @@ To determine if the reduction in preference for a novel conspecific in the SDT c
 
 Taken together, vHPC-LS chemogenetic inhibition disrupted the ability of mice to preferentially investigate a novel conspecific over a familiar conspecific while not affecting their ability to discriminate between novel and familiar foods. However, it is unclear whether chemogenetic inhibition increases the preference for a familiar mouse or decreases preference for a novel mouse. To distinguish between these possibilities, we next optogenetically silenced the activity of vHPC-LS neurons in a temporally and spatially restricted manner.
 
-## vHPC-LS neuron inhibition increases investigation of a mouse paired with inhibition
+### vHPC-LS neuron inhibition increases investigation of a mouse paired with inhibition
 
 To determine whether inhibition of vHPC-LS neurons differentially influences the investigation of a novel versus a familiar mouse, we used halorhodopsin (NpHR) to silence vHPC-LS neurons in a temporally and spatially specific manner. We injected wild-type mice with a retrogradely transporting Cre virus in the LS and a Cre-dependent NpHR-EYFP or EGFP-only virus in the vHPC and then implanted fibers in the vHPC to target vHPC-LS cell bodies (Figure 2A, Figure 2 - Figure Supplement 1). Using a closed-loop optogenetic manipulation (See Methods), we selectively inhibited vHPC-LS neurons when a conspecific entered a previously defined social zone (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic showing retroAAV-Cre-mCherry injection in the LS and AAV5-Ef1a-DIO eNpHR 3.0-EYFP injection in the vHPC. Optical ferrules were implanted in the vHPC to inhibit halorhodopsin (NpHR) expressing vHPC-LS neurons. (B) Example histology showing vHPC-LS neurons labeled with NpHR (expressing both EYFP and mCherry) and ferrule placement. (C) As with the chemogenetic condition, mice were pair housed for 72 hr with a sex-matched, and age-matched conspecific for familiarization, then are run through the social discrimination task (SDT). In the task, mice can freely explore an arena containing two encaged conspecifics, one novel and one familiar. vHPC-LS neurons were inhibited (532 nm; 6 mW; constant light stimulation) in the proximity of one of the two conspecifics. (D) Control mice expressing EGFP had light stimulation paired with either a novel (N–ON) or a familiar conspecific (F–ON). We also had a stimulation-free condition (OFF). Control mice, regardless of stimulation group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with light condition (on or off) and conspecific identity as factors; interaction: p=0.898, main effect of conspecific identity: p=2.8E-05; post hoc Sidak multiple comparison tests; OFF: p=0.032; N-ON: p=0.012; F-ON: p=0.032; EGFP: n=20 mice). (E) Discrimination scores show that control mice in all light stimulation conditions preferentially spend more time investigating the novel conspecific relative to familiar conspecific (One sample t-test, OFF: p=0.008, N-ON: p=0.009, F-ON: p=0.028; EGFP: n=20 mice). (F, G) Mice expressing NpHR had light stimulation paired with a novel (N–ON) or familiar conspecific (F–ON), in addition to a stimulation-free condition (OFF). NpHR mice preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific, except when stimulation was paired with a familiar conspecific (Two-factor ANOVA with light condition and conspecific identity as factors; interaction: p=0.024, main effect of conspecific identity p=0.006, post hoc Sidak multiple comparison tests; OFF: p=0.006, N-ON: p=0.037, F-ON: p=0.949, discrimination score: one sample t-test, OFF: p=0.002, N-ON: p=0.19, F-ON: p=0.719; NpHR: n=15 mice). (H, I) EGFP mice were then run through the SDT but with two novel conspecifics to look at the impact of stimulation on novelty preference. Mice were run in either light off (OFF) condition or stimulated when in the proximity of one of two novel animals (N’-ON). Control mice, regardless of stimulation group, spent an equivalent amount of time in the proximity of each novel conspecific (Two-factor ANOVA with light condition and conspecific identity as factors; interaction: p=0.006, no main effect of conspecific identity: p=0.608; post hoc Sidak multiple comparison tests; OFF: p=0.376, N-ON: p=0.075; discrimination scores: one sample t-test, OFF: p=0.535, N-ON: p=0.128; EGFP: n=20 mice) (J, K) NpHR mice were then run through the novel SDT in the light off or N’-ON condition. NpHR mice exhibited a preference for the novel conspecific paired with vHPC-LS inhibition (Two-factor ANOVA with light condition and conspecific identity as factors, interaction: p=0.040, main effect of conspecific identity: p=0.005, post hoc Sidak multiple comparison tests; N-OFF: p=0.961, N-ON: p=0.001; discrimination scores: one sample t-test, OFF: p=0.796, N’-ON: p=0.029; NpHR: n=20 mice) (L, M) Control mice, regardless of stimulation group, showed an equal preference for both novel objects (Two-factor ANOVA with light condition and object identity (N or N’) as factors; interaction: p=0.878, no main effect of object identity: p=0.220, post hoc Sidak multiple comparison tests; N-OFF: p=0.704, N-ON: p=0.556; discrimination score: one sample t-test, OFF: p=0.697, N-ON: p=0.422; EGFP: n=14 mice) (N, O) vHPC-LS inhibition had no effect on object preference even when one of the two novel objects were paired with stimulation. (Two-factor ANOVA with light condition and object identity as factors; interaction: p=0.871, no main effect of object identity: p=0.505, post hoc Sidak multiple comparison tests; N-OFF: p=0.853, N-ON: p=0.968; discrimination score: one sample t-test, OFF: p=0.720, N-ON: p=0.905; NpHR: n=11 mice) (P, R) We observed that, regardless of light condition, control (P) and NpHR (R) mice spent similar amounts of time in the center of the open field arena (one-way ANOVA, EGFP: p=0.094, 20 mice; NpHR: p=0.254, 15 mice). (Q, S) We observed that light conditions had no effect on the speed (pix/sec) of control (Q) and NpHR (S) mice (One-way ANOVA, EGFP: p=0.259, 20 mice; NpHR: p=0.775, 15 mice). Green bars denote light ON condition and gray bars denote light OFF condition. All error bars denote standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Reconstruction of optical fiber tip placements in the ventral hippocampus (vHPC) in mice expressing halorhodopsin (NpHR) (dark green) or EGFP (light green) in vHPC-lateral septum (LS) neurons.
 
 Interestingly, we found that inhibition of vHPC-LS neurons in the proximity of a familiar mouse abolished the natural preference mice have for novel conspecifics (Figure 2F and G; two-factor ANOVA with light condition and conspecific identity as factors; interaction: p=0.024, main effect of conspecific identity: p=0.006, Sidak post hoc test; OFF: p=0.006, N-ON: p=0.037, F-ON: p=0.949; discrimination score: one sample t-test, OFF: p=0.002, NON: p=0.19, FON: p=0.719). Significantly, light stimulation did not affect the preference for the novel mouse in the control-EGFP group (Figure 2D and E; two-factor ANOVA with light condition and conspecific identity as factors; interaction: p=0.898, main effect of conspecific identity: p=2.8E-05, Sidak post hoc test; OFF: p=0.032, N-ON: p=0.012, F-ON: p=0.032; discrimination score: one sample t-test, OFF: p=0.008, NON: p=0.009, FON: p=0.028). These findings raise the possibility that inhibiting vHPC-LS neurons in the proximity of the familiar mouse could drive increased investigation of that mouse, thus decreasing the time spent in the proximity of a novel mouse.
 
@@ -57,25 +73,25 @@ To determine if changes in locomotion or anxiety-related behaviors could drive i
 
 Together, these results suggest that vHPC-LS inhibition likely disrupts preference for a novel conspecific by increasing investigation of a familiar conspecific. Thus, demonstrating that intact activity in the vHPC-LS pathway is necessary for mice to preferentially engage in social novelty-related behaviors. These findings raise the possibility that inhibition of the vHPC-LS neurons could disinhibit downstream regions that have been implicated in promoting approach of novel conspecifics, like the VTA (Smith et al., 2017; Solié et al., 2022; Gunaydin et al., 2014; Bariselli et al., 2018; Bian et al., 2022; Shan et al., 2023), by decreasing the inhibitory drive that GABAergic LS projection neurons exert on their downstream targets.
 
-## LS-VTA neurons receive dense monosynaptic input from the vHPC
+### LS-VTA neurons receive dense monosynaptic input from the vHPC
 
 We hypothesized that effects observed with vHPC-LS inhibition on social novelty-related approach behaviors could be mediated via LS projections to the VTA. To test this hypothesis, we first had to establish the existence of the vHPC-LS-VTA circuitry. To confirm that LS neurons do project to the VTA, we injected a retrogradely transported Cre virus into the VTA and a Cre-dependent GFP virus into the LS (Figure 3A and B). From dense GFP labeling in the LS, we were able to confirm that LS neurons projected to the VTA (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig3-v1.jpg)
 
-**Figure 3.:** (A) A schematic of the viral strategy to determine if LS neurons project to the VTA. The schematic shows AAV5-CAG-flex-EGFP injection into the LS and retroAAV-Cre-mCherry injection into the VTA. (B) Example histology showing Retro-Cre-mCherry targeting in the VTA (mCherry). (C) Histology showing LS neurons (GFP) that project to the VTA. (D) A schematic of the viral tracing strategy for investigating monosynaptic inputs into LS-VTA neurons using a modified rabies tracing method. (E, F) Example histology showing starter cells expressing both GFP and mCherry in the LS. (G) Coronal section showing all detected mCherry-labeled input neurons to LS-VTA neurons along the anterior-posterior axis of the hippocampus (−2.5, –3.0, and –3.5 mm from bregma, left to right). Green dots represent inputs to LS-VTA neurons from the hippocampal formation. Purple: Isocortex; Pink: Hypothalamus; Orange: Thalamus; Yellow: Midbrain. (H) Proportion of total neurons from hippocampal formation (HPF), Isocortex (IC), Hypothalamus (HY), and Thalamus (TH). A significantly larger proportion of HPF neurons send input to LS-VTA neurons compared to the HY and TH (One-way ANOVA: p=0.0107, Post hoc multiple comparison test; HPF vs IC: p=0.1579, HPF vs HY: p=0.0206, HPF vs TH: p=0.0056). (I) Breakdown of proportion of total neurons from subsections of the hippocampal formation. Amongst the HPF, CA1 and CA3 regions send more inputs to LS-VTA neurons compared to other subregions. (One-way ANOVA: p=0.0096, Post hoc multiple comparison test; CA1 vs DG: p=0.0411, CA1 vs SUBd: p=0.0511, CA3 vs DG: p=0.0134, CA3 vs SUBd: p=0.0166, CA3 vs SUBv: p=0.0325). (J, K) Distribution of CA1 (J) and CA3 (K) inputs onto LS-VTA neurons along the dorsoventral axis of the hippocampus. More vCA1 neurons project to LS-VTA neurons compared to dCA1 (J, paired t-test: p=0.0496). A comparable proportion of dCA3 and vCA3 neurons project to LS-VTA (K, paired t-test: p=0.7736). n=3 mice. All error bars denote standard error of the mean.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) A schematic of the viral strategy to determine if LS neurons project to the VTA. The schematic shows AAV5-CAG-flex-EGFP injection into the LS and retroAAV-Cre-mCherry injection into the VTA. (B) Example histology showing Retro-Cre-mCherry targeting in the VTA (mCherry). (C) Histology showing LS neurons (GFP) that project to the VTA. (D) A schematic of the viral tracing strategy for investigating monosynaptic inputs into LS-VTA neurons using a modified rabies tracing method. (E, F) Example histology showing starter cells expressing both GFP and mCherry in the LS. (G) Coronal section showing all detected mCherry-labeled input neurons to LS-VTA neurons along the anterior-posterior axis of the hippocampus (−2.5, –3.0, and –3.5 mm from bregma, left to right). Green dots represent inputs to LS-VTA neurons from the hippocampal formation. Purple: Isocortex; Pink: Hypothalamus; Orange: Thalamus; Yellow: Midbrain. (H) Proportion of total neurons from hippocampal formation (HPF), Isocortex (IC), Hypothalamus (HY), and Thalamus (TH). A significantly larger proportion of HPF neurons send input to LS-VTA neurons compared to the HY and TH (One-way ANOVA: p=0.0107, Post hoc multiple comparison test; HPF vs IC: p=0.1579, HPF vs HY: p=0.0206, HPF vs TH: p=0.0056). (I) Breakdown of proportion of total neurons from subsections of the hippocampal formation. Amongst the HPF, CA1 and CA3 regions send more inputs to LS-VTA neurons compared to other subregions. (One-way ANOVA: p=0.0096, Post hoc multiple comparison test; CA1 vs DG: p=0.0411, CA1 vs SUBd: p=0.0511, CA3 vs DG: p=0.0134, CA3 vs SUBd: p=0.0166, CA3 vs SUBv: p=0.0325). (J, K) Distribution of CA1 (J) and CA3 (K) inputs onto LS-VTA neurons along the dorsoventral axis of the hippocampus. More vCA1 neurons project to LS-VTA neurons compared to dCA1 (J, paired t-test: p=0.0496). A comparable proportion of dCA3 and vCA3 neurons project to LS-VTA (K, paired t-test: p=0.7736). n=3 mice. All error bars denote standard error of the mean.
 
 Next, we determined if LS-VTA neurons received monosynaptic inputs from the vHPC using a modified monosynaptic rabies tracing technique (Wickersham et al., 2007). Three weeks after injecting a retrogradely transporting Cre virus in the VTA and a Cre-dependent rabies helper virus in the LS, we injected the modified delta G-deleted rabies virus into the LS (Figure 3D–F). Using the semi-automated WholeBrain software (Fürth et al., 2018), we mapped brain-wide monosynaptic inputs onto LS-VTA neurons (Figure 3G). We quantified the proportion of total neurons from each region that directly synapse onto LS-VTA neurons. The hippocampal formation was the largest source of inputs to LS-VTA neurons (Figure 3H; one-way ANOVA: p=0.0107, Post hoc multiple comparison Dunnett’s test; HPF vs IC: p=0.1579, HPF vs HY: p=0.0206, HPF vs TH: p=0.0056). Within the hippocampus, the CA1 and CA3 neurons projected most densely onto LS-VTA neurons (Figure 3I; one-way ANOVA: p=0.0096, Post hoc multiple comparison Dunnett’s test; CA1 vs DG: p=0.0411, CA1 vs SUBd: p=0.0511, CA3 vs DG: p=0.0134, CA3 vs SUBd: p=0.0166, CA3 vs SUBv: p=0.0325.). When looking at the organization of inputs along the dorsoventral axis of the hippocampus, we observed that significantly more vCA1 than dCA1 neurons project to LS-VTA neurons (Figure 3J; paired t-test: p=0.0496). In contrast, an equivalent proportion of both dCA3 and vCA3 neurons project onto LS-VTA neurons (Figure 3K; paired t-test: p=0.7736).
 
 From rabies tracing experiments, we have established that the vHPC neurons, specifically neurons from the vCA1 and vCA3 subregions, make dense and direct monosynaptic connections onto LS neurons that in turn project to the VTA. Thus, establishing the existence of a hippocampal-septal-ventral tegmental area circuit that could play a critical role in shaping social novelty discrimination.
 
-## LS-VTA neurons play a role in social discrimination and food discrimination
+### LS-VTA neurons play a role in social discrimination and food discrimination
 
 After establishing that LS-VTA neurons do receive monosynaptic inputs from the vHPC, we next asked if LS projections to the VTA played a causal role in allowing mice to preferentially investigate a novel conspecific. To test this possibility, we chemogenetically silenced LS-VTA neurons while mice explored the SDT arena containing a novel and familiar conspecific. We injected a retrogradely transporting Cre virus in the VTA of C57BL/6 J mice and a Cre-dependent inhibitory (hM4Di) DREADD virus or an mCherry virus in the LS (Figure 4A and B). Three weeks after surgery, mice received i.p. injections of either saline or CNO to 30 min prior to being run on the SDT (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig4-v1.jpg)
 
-**Figure 4.:** (A) A schematic of AAV5-hSyn-DIO-hM4D(Gi)-mCherry injection in the LS and retro AAV-Cre injection in the VTA (B) Example histology showing hM4Di-mCherry expression in LS-VTA neurons. (C) Mice are pair housed for 72 hr with a sex- and age-matched conspecific for familiarization, and then mice are run through the social discrimination task (SDT). In the task, mice are allowed to freely explore an arena containing two encaged conspecifics, one novel and one familiar. (D, E) Control mice expressing the mCherry-only virus in LS-VTA neurons were injected with either saline (left) or CNO (right) prior to being run on the SDT. Control mice, regardless of treatment group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.307, main effect of conspecific identity p=6.8E-04, post hoc Sidak multiple comparison tests; Saline: p=2.2E-04, CNO: p=0.003; discrimination score: one sample t-test, Saline: p=0.045, CNO: p=0.032, n=11 mice). (F, G) Chemogenetic inhibition of LS-VTA neurons with CNO disrupted the preference of mice for novel conspecific in the SDT. In contrast, hM4Di expressing mice exhibited a strong preference for the novel conspecific over the familiar conspecific when mice when administered saline prior to being run on the SDT (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=5.1E-04, post hoc Sidak multiple comparison tests; Saline: p=0.001, CNO: p=0.091; discrimination score: one sample t-test, Saline: p=0.012, CNO: p=0.208, n=10 mice). (H, I) Control mice expressing the mCherry-only virus in LS-VTA neurons were injected with either saline (left) or CNO (right) prior to being run on a food discrimination task. Control mice preferentially spent more time in the proximity of the familiar food regardless of the drug treatment group (Two-factor ANOVA with drug condition and food identity as factors; interaction: p=0.941, main effect of food preference: p=2.7E-05, post hoc Sidak multiple comparison tests; Saline: p=0.002, CNO: p=0.001; discrimination score: one sample t-test, Saline: p=0.007, CNO: p=0.055, n=10 mice) (J, K) Interestingly, there is a trend towards disrupted food preference in the hM4Di animals when administered CNO. This was not observed when the animals received saline injections as saline-injected animals preferred the familiar food (Two-factor ANOVA with drug condition and food identity as factors; interaction: p=0.076, post hoc Sidak multiple comparison tests; Saline: p=0.07, CNO: p=0.81; discrimination score: one sample t-test, Saline: p=0.065 CNO: p=0.863, n=9 mice). (L, N) CNO administration did not affect the time spent in the center of the open field arena in both mCherry and hM4Di mice (paired t-test, mCherry: p=0.2196; hM4Di: p=0.2182; mCherry n=8 mice, hM4Di n=7 mice). (M, O) Velocity (pixel/seconds) of control and hM4Di mice were unaltered by CNO administration (paired t-test, mCherry: p=0.0733, hM4Di: p=0.7193; mCherry n=8 mice, hM4Di n=7 mice). All error bars denote standard error of the mean.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) A schematic of AAV5-hSyn-DIO-hM4D(Gi)-mCherry injection in the LS and retro AAV-Cre injection in the VTA (B) Example histology showing hM4Di-mCherry expression in LS-VTA neurons. (C) Mice are pair housed for 72 hr with a sex- and age-matched conspecific for familiarization, and then mice are run through the social discrimination task (SDT). In the task, mice are allowed to freely explore an arena containing two encaged conspecifics, one novel and one familiar. (D, E) Control mice expressing the mCherry-only virus in LS-VTA neurons were injected with either saline (left) or CNO (right) prior to being run on the SDT. Control mice, regardless of treatment group, preferentially spent more time in the proximity of the novel conspecific relative to the familiar conspecific (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.307, main effect of conspecific identity p=6.8E-04, post hoc Sidak multiple comparison tests; Saline: p=2.2E-04, CNO: p=0.003; discrimination score: one sample t-test, Saline: p=0.045, CNO: p=0.032, n=11 mice). (F, G) Chemogenetic inhibition of LS-VTA neurons with CNO disrupted the preference of mice for novel conspecific in the SDT. In contrast, hM4Di expressing mice exhibited a strong preference for the novel conspecific over the familiar conspecific when mice when administered saline prior to being run on the SDT (Two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=5.1E-04, post hoc Sidak multiple comparison tests; Saline: p=0.001, CNO: p=0.091; discrimination score: one sample t-test, Saline: p=0.012, CNO: p=0.208, n=10 mice). (H, I) Control mice expressing the mCherry-only virus in LS-VTA neurons were injected with either saline (left) or CNO (right) prior to being run on a food discrimination task. Control mice preferentially spent more time in the proximity of the familiar food regardless of the drug treatment group (Two-factor ANOVA with drug condition and food identity as factors; interaction: p=0.941, main effect of food preference: p=2.7E-05, post hoc Sidak multiple comparison tests; Saline: p=0.002, CNO: p=0.001; discrimination score: one sample t-test, Saline: p=0.007, CNO: p=0.055, n=10 mice) (J, K) Interestingly, there is a trend towards disrupted food preference in the hM4Di animals when administered CNO. This was not observed when the animals received saline injections as saline-injected animals preferred the familiar food (Two-factor ANOVA with drug condition and food identity as factors; interaction: p=0.076, post hoc Sidak multiple comparison tests; Saline: p=0.07, CNO: p=0.81; discrimination score: one sample t-test, Saline: p=0.065 CNO: p=0.863, n=9 mice). (L, N) CNO administration did not affect the time spent in the center of the open field arena in both mCherry and hM4Di mice (paired t-test, mCherry: p=0.2196; hM4Di: p=0.2182; mCherry n=8 mice, hM4Di n=7 mice). (M, O) Velocity (pixel/seconds) of control and hM4Di mice were unaltered by CNO administration (paired t-test, mCherry: p=0.0733, hM4Di: p=0.7193; mCherry n=8 mice, hM4Di n=7 mice). All error bars denote standard error of the mean.
 
 Interestingly, inhibition of hM4Di expressing LS-VTA neurons with CNO strongly disrupted the ability of mice to preferentially investigate the novel conspecific in the SDT (Figure 4F and G; two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=5.1E-04, post hoc Sidak tests: Saline: p=0.001, CNO: p=0.091; discrimination score: one sample t-test, Saline: p=0.012, CNO: p=0.208). Importantly, control (mCherry) mice exhibited a strong preference for the novel conspecific over the familiar conspecific in both saline and CNO conditions (Figure 4D and E; two-factor ANOVA with drug condition and conspecific identity as factors; interaction: p=0.307, main effect of conspecific identity p=6.8E-04, post hoc Sidak tests; Saline: p=2.2E-04, CNO: p=0.0031; discrimination score: one sample t-test, Saline: p=0.045, CNO:p=0.032).
 
@@ -85,13 +101,13 @@ Additionally, we were able to confirm that these effects observed with LS-VTA in
 
 These findings provide compelling evidence that the increased investigation observed with vHPC-LS inhibition is likely mediated via its projection onto the VTA. Dopamine neurons in the VTA show increased activity while mice investigate a novel conspecific and are known to be involved in causally driving increased investigation of a novel conspecific (Smith et al., 2017; Solié et al., 2022; Gunaydin et al., 2014; Bariselli et al., 2018; Bian et al., 2022; Shan et al., 2023). Together, these findings raise the intriguing possibility that silencing vHPC-LS neurons could disinhibit dopamine neurons in the VTA, which, in turn, could drive increased approach and investigation of a conspecific. Although we have established LS projects to the VTA, it is unclear if LS projects to the dopaminergic neurons in the VTA.
 
-## LS neurons synapse directly onto dopamine neurons in the VTA
+### LS neurons synapse directly onto dopamine neurons in the VTA
 
 To determine if LS neurons synapse directly onto dopamine neurons in the VTA, we mapped monosynaptic inputs onto dopaminergic neurons in the VTA (VTADA) by applying the modified rabies tracing method in Th-Cre+ mice. First, we injected a Cre-dependent helper AAV virus into the VTA of Th-Cre+ mice. After a 3 week period, we injected a delta G-deleted rabies virus expressing mCherry into the VTA (Figure 5A–C). Using the semi-automated WholeBrain software (Fürth et al., 2018), we mapped and registered mCherry-labeled cells along the entire anterior-posterior axis of the LS (Figure 5D). These mCherry-labeled cells signify LS neurons that make monosynaptic connections onto VTADA neurons. We next quantified the anatomical distribution of VTADA projecting LS neurons in the brain (Figure 5E–G). Amongst the various subdivisions within the LS, we found that the rostral subdivision of the LS (LSr) projected most strongly to the VTA (Figure 5H; one-way ANOVA: p=5E-06, post hoc Tukey test; LSr vs LSv: p=1.2E-05, LSr vs LSv: p=6E-06, LSc vs LSv: p=0.26). Thus, we have identified a novel pathway that connects LS neurons directly to dopaminergic VTA neurons that could serve as the neural substrate to drive social novelty-related behaviors.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97259/elife-97259-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic of the viral intersectional strategy for tracing monosynaptic inputs onto dopaminergic neurons in the VTA. A Cre-dependent helper virus (AAV1-synP-FLEX.splitTVA.EGFP.B19G) was first injected into the VTA of Th-Cre+ mice. After allowing 3 weeks for viral expression, a mCherry-labeled, delta G-deleted rabies virus was also injected into the VTA (RVdG-mCherry). (B) Representative image showing the injection site in the VTA. In green are VTADA neurons labeled by the helper virus. In red are neurons labeled by the rabies virus. Starter cells that are labeled with both the helper and rabies virus are yellow in this image. (C) High resolution (20x) images of the inset showing expression of the TVA delta G helper virus in green and the RVdG-mCherry in red (middle panels). Filled white arrowheads point to starter cells; they are double-labeled and appear yellow (right panel). DAPI stain is in blue (left panel). (D) Coronal section showing all detected mCherry-labeled LS input neurons to VTADA neurons along the anterior-posterior axis of the lateral septum. Each blue dot represents an individual LS neuron that projects to VTADA neurons. (E–G) A normalized density plot along the medio-lateral (D; M–L), anterior-posterior (E; A–P) and dorsal-ventral axis (F; D–V) showing LS neurons that project to dopamine neurons in the VTA. Bin width: 0.1 mm (M–L), 0.2 mm (A–P), 0.2 mm (D–V). (H) LS neurons that project onto dopamine neurons in the VTA separated into caudal (LSc), rostral (LSr) and ventral subdivisions (LSv) of the LS. The rostral subdivision of the LS projected most strongly to the VTA (One-way ANOVA: p=5E-06, post hoc Tukey test; LSr vs LSv: p=1.2E-05, LSr vs LSv: p=6E-06, LSc vs LSv: p=0.26, n=3 mice).Figure 5—source code 1.Figure 5E-G.Figure 5—source data 1.Figure 5H.Figure 5—source data 2.Figure 5E.Figure 5—source data 3.Figure 5F.Figure 5—source data 4.Figure 5G.
+**Figure 5.:** (A) Schematic of the viral intersectional strategy for tracing monosynaptic inputs onto dopaminergic neurons in the VTA. A Cre-dependent helper virus (AAV1-synP-FLEX.splitTVA.EGFP.B19G) was first injected into the VTA of Th-Cre+ mice. After allowing 3 weeks for viral expression, a mCherry-labeled, delta G-deleted rabies virus was also injected into the VTA (RVdG-mCherry). (B) Representative image showing the injection site in the VTA. In green are VTADA neurons labeled by the helper virus. In red are neurons labeled by the rabies virus. Starter cells that are labeled with both the helper and rabies virus are yellow in this image. (C) High resolution (20x) images of the inset showing expression of the TVA delta G helper virus in green and the RVdG-mCherry in red (middle panels). Filled white arrowheads point to starter cells; they are double-labeled and appear yellow (right panel). DAPI stain is in blue (left panel). (D) Coronal section showing all detected mCherry-labeled LS input neurons to VTADA neurons along the anterior-posterior axis of the lateral septum. Each blue dot represents an individual LS neuron that projects to VTADA neurons. (E–G) A normalized density plot along the medio-lateral (D; M–L), anterior-posterior (E; A–P) and dorsal-ventral axis (F; D–V) showing LS neurons that project to dopamine neurons in the VTA. Bin width: 0.1 mm (M–L), 0.2 mm (A–P), 0.2 mm (D–V). (H) LS neurons that project onto dopamine neurons in the VTA separated into caudal (LSc), rostral (LSr) and ventral subdivisions (LSv) of the LS. The rostral subdivision of the LS projected most strongly to the VTA (One-way ANOVA: p=5E-06, post hoc Tukey test; LSr vs LSv: p=1.2E-05, LSr vs LSv: p=6E-06, LSc vs LSv: p=0.26, n=3 mice).
 
 ## Discussion
 
@@ -117,37 +133,116 @@ In summary, we identify a novel vHPC-LS-VTA pathway that regulates social novelt
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All experimental procedures were conducted in accordance with the National Institutes of Health and Emory University’s Institutional Animal Care and Use Committee (IACUC). All behavioral experiments were performed on male and female C57BL/6 J (Jax strain Number: 000664) mice aged ~4–12 weeks. Rabies tracing experiments included in Figures 3 and 5 were performed on male mice with the animals in Figure 5 belonging to the transgenic strains TH-Cre+ (Jax strain Number: 008601). Mice were pair-housed or group-housed in cages with ad libitum access to water and chow (LabDiet). Mice were maintained on a 12 hr reverse light cycle. All experiments were conducted during their light-off period. In social discrimination tests, stimulus mice were sex and age-matched to the test animal.
 
-## Stereotactic surgeries
+### Stereotactic surgeries
 
 Mice were placed in a stereotaxic setup (Kopf) and anesthetized with 1–2% isoflurane during surgery. All coordinates were sourced from Paxinos and Franklin, 2019 and are described relative to bregma. Injections were performed using a Nanoject III (Drummond Scientific) and the virus was delivered at a rate of 2 nL per second. Virus injection coordinates are as follows, vHPC: 3 mm posterior, 3.25 mm lateral and –4.2 mm ventral relative to bregma, LS: 0.4 mm anterior, 0 mm lateral, –2.8 mm ventral relative to bregma, VTA: 3.1 mm posterior, 0.35 mm lateral, –4.7 mm ventral.
 
-## DREADDs
+### DREADDs
 
 For vHPC-LS chemogenetic silencing experiments, we bilaterally injected RetroAAV-hSyn-Cre (500 nL, Addgene Lot v70508, 3*10 Besnard and Leroy, 2022) into the LS. This was followed by 250 nl injections of either AAV5-hSyn-DIO-hM4D(Gi)-mCherry or AAV5-hSyn-DIO-mCherry into the vHPC of mice aged 5–6 weeks.
 
 For LS-VTA chemogenetic silencing experiments, we bilaterally injected RetroAAV-hSyn-Cre (500 nL) into the VTA. This was followed by 250 nl injections of either AAV5-hSyn-DIO-mCherry or AAV5-hSyn-DIO-hM4D(Gi)-mCherry into the LS of mice aged 5–6 weeks.
 
-## Optogenetics
+### Optogenetics
 
 For vHPC-LS cell body inhibition experiments, we bilaterally injected with RetroAAV-hSyn-Cre (500 nL, Addgene Lot v70508, 3*1013) into the LS. This was followed by 500 nL injections of either AAV5-Ef1-DIO-eNpHR3.0-EGFP (Addgene v32533, 1.1*10 13) or AAV5-hSyn-DIO-EGFP (Addgene, 1.1*1013) into the vHPC of mice aged 5–6 weeks. Optical fibers attached to ferrules were secured bilaterally using Metabond and dental acrylic to the skull to target the vHPC (Ferrule coordinates: –3.250 anterior, +/-3.0 lateral, –4.0 depth). Animals were allowed to recover and express the virus for 3 weeks prior to behavioral experiments.
 
-## Retrograde tracing
+### Retrograde tracing
 
 To determine if LS neurons project to the VTA, we injected 750 nl of the retroAAV-Ef1a-mCherry-IRES-Cre virus into the VTA and 750 nl of the AAV5-CAG-FLEX-EGFP into the LS. Animals were allowed to recover and express the virus for 3 weeks prior to histology.
 
-## Rabies tracing
+### Rabies tracing
 
 For the LS-VTA monosynaptic rabies tracing experiments, 750 nl of the retroAAV-hsyn-Cre (500 nL, Addgene Lot v70508, 3×1013) was injected in the VTA of male and female C57BL/6 J mice. This was combined with the injection of 750 nl of the helper virus, AAV1.synP.FLEX.splitTVA.EGFP.B19G (Addgene, 2.4×1013) in the LS. Three weeks following injection, all mice were injected with 750 nl of the N2c-ΔG-deleted rabies virus (5×108, Thomas Jefferson University) (Reardon et al., 2016) expressing mCherry and pseudotyped with EnvA, RVdG-mCherry, into the LS.
 
 For VTADA monosynaptic rabies tracing experiments, 750 nl of the rabies helper virus, AAV1.synP.FLEX.splitTVA.EGFP.B19G (Addgene, 2.4×1013) was injected into the VTA of Th-Cre+ mice (Jax strain number: 008601). Three weeks following injection, all mice were injected with 750 nl of the N2c-ΔG-deleted rabies virus expressing mCherry and pseudotyped with EnvA, RVdG-mCherry into the VTA (~5 × 108, Thomas Jefferson University).
 
-## Viral reagents
+### Viral reagents
 
-## Histology and imaging
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Lot #</th>
+      <th>Virus</th>
+      <th>Vendor</th>
+      <th>Titer (parts/ml)</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>105553-AAVrg</td>
+      <td>v75884</td>
+      <td>Retro AAV- hSyn-Cre</td>
+      <td>Addgene</td>
+      <td>2.1×10^13</td>
+      <td>1, 3 F-K, 4</td>
+    </tr>
+    <tr>
+      <td>44362-AAV5</td>
+      <td>v172066</td>
+      <td>AAV5-hSyn-DIO-hM4D(Gi)-mCherry</td>
+      <td>Addgene</td>
+      <td>2.4×10^13</td>
+      <td>1, 4</td>
+    </tr>
+    <tr>
+      <td>50459-AAV5</td>
+      <td>v63478</td>
+      <td>AAV5-hSyn-DIO-mCherry</td>
+      <td>Addgene</td>
+      <td>8.4×10^12</td>
+      <td>1, 4</td>
+    </tr>
+    <tr>
+      <td>55632-AAVRg</td>
+      <td>v70508</td>
+      <td>Retro AAV-Ef1a-mCherry-IRES.Cre</td>
+      <td>Addgene</td>
+      <td>1.3×10^13</td>
+      <td>2, 3 A-C</td>
+    </tr>
+    <tr>
+      <td>26966-AAV5</td>
+      <td>v32533</td>
+      <td>AAV5-Ef1a-DIO-eNpHR3.0-EYFP</td>
+      <td>Addgene</td>
+      <td>1.1×10^13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>51502-AAV5</td>
+      <td>v60751</td>
+      <td>AAV5-CAG-FLEX-EGFP</td>
+      <td>Addgene</td>
+      <td>1.1×10^13</td>
+      <td>2, 3 A-C</td>
+    </tr>
+    <tr>
+      <td>52473-AAV1</td>
+      <td>v14715</td>
+      <td>AAV1-synP-FLEX-TVA-EGFP-B19G</td>
+      <td>Addgene</td>
+      <td>2.4×10^13</td>
+      <td>3 F-K, 5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SV-17–43</td>
+      <td>Rabies-G-deleted-N2C-mCherry -EnvA</td>
+      <td>ThomasJefferson University</td>
+      <td>8×10^8</td>
+      <td>3 F-K, 5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Histology and imaging
 
 Mice were anesthetized with Euthasol (0.1 mg/kg) then transcardially perfused using PBS (0.5 X) followed by 4% PFA. Brains were extracted, left in PFA overnight, then transferred to a 30% sucrose solution the following day. A microtome (Leica Biosystems) was used to slice the coronal sections (50 um) and validate viral targeting. Slices were mounted using DAPI Fluoromount (Southern Biotech). All mounted sections were imaged using a high-throughput automated stitching fluorescent microscope (Keyence BZ-X810). Native fluorescence of expressed fluorophores was used to confirm expression.
 
@@ -157,9 +252,9 @@ For cell body optogenetic inhibition experiments (Figure 2), coronal sections of
 
 For monosynaptic rabies tracing experiments (Figures 3 and 5), brain sections ranging from the entire brain (~3.5 mm anterior bregma to ~4.5 mm posterior bregma) in ~100 um spacing were mounted. Sections were coverslipped with a DAPI Fluoromount mounting media and imaged using an automated widefield whole slide scanner (Keyence BZ810). Input neurons were mCherry labeled and starter cells expressed both EYFP (helper virus) and mCherry (rabies virus) (Figures 3 and 5).
 
-## Behavioral assays
+### Behavioral assays
 
-## Social discrimination task (SDT)
+#### Social discrimination task (SDT)
 
 All mice used in this assay were ~8 weeks old. The social discrimination chamber (58.42 cm × 25.4 cm × 22.86 cm) contains two cages housing age and sex-matched stimulus mice (cage diameter = 7.62 cm) at opposite ends of the chamber. Prior to being run on the social discrimination assay, the test mouse was co-housed with a same-sex, age-matched conspecific for 72 hr to familiarize. The test mice were then allowed to explore the chamber containing both a novel and familiar stimulus mouse for 5 min. The location of the novel and familiar mice (left and versus right) was counterbalanced to eliminate side preferences. Behavior was tracked using an overhead camera and the position of the mouse in the arena was tracked using the open-source software Bonsai (Lopes et al., 2015). Percent time spent was calculated by measuring the amount of time the test mouse spent around each encaged social target (diameter of the social zone - 60 mm) relative to the entire assay duration.
 
@@ -171,44 +266,48 @@ For the novel versus familiar comparisons, both NpHR and EGFP mice were run on t
 
 The same NpHR and EGFP mice were also run through a novel vs novel mouse experiment. In this experiment, the zone around one of the two novel mice was randomly designated as the stimulation zone, and entry into this zone was paired with green light illumination (light conditions same as above). Time spent by the mice in each of the two zones was estimated using Bonsai.
 
-## Food discrimination task
+### Food discrimination task
 
 Arena and handling procedures are identical to SDT. Familiar food was the chow (3 g, LabDiet), while the novel food was 3 g of fruit-flavored cereal. Food was placed under wired cages, such that mice could sniff but not taste the food. Mice were given 5 min to explore the arena containing the novel and familiar food. Percent time spent around the novel and familiar food was calculated by measuring the amount of time the test mouse spent around the cage containing the food (diameter of food zone - 6 cm) relative to the entire assay duration.
 
-## Object discrimination task
+### Object discrimination task
 
 Arena and handling procedures are identical to SDT. An object was placed into the home cage of test mice for 72 hr of familiarization. The objects were placed on the opposite ends of the discrimination chamber (without wired cages), and mice were given 5 min to explore the novel and familiar objects. For chemogenetic manipulation, procedures were performed identically to the SDT. Novel and familiar objects were placed on either the left or the right side of the chamber in a counterbalanced fashion.
 
 For spatially-restricted optogenetic manipulation, mice were allowed to investigate two novel objects in an arena for 5 min. In the light ON condition, one of the two objects picked randomly was paired with green light stimulation (532 nm, 6 mW at the fiber tip constant light stimulation). Behavior recording conditions and laser conditions were identical to SDT.
 
-## Open field
+### Open field
 
 Mice were allowed to freely explore a large square chamber (46.64 cm × 46.64 cm) for 10 min. We determined the amount of time mice spent in the middle of the arena (11.14 cm × 11.14 cm) using Bonsai and MATLAB. For chemogenetic experiments, mice were injected with either saline or CNO 30 min prior to the test. For the vHPC-LS cell body inhibition experiment, the open field task was 9 min long. Mice performed the assay for 3 min with no light stimulation, followed by 3 min of green light stimulation (532 nm, 6 mW at the tip of the optical fiber; constant light illumination) and terminated with an additional 3 min of no light.
 
-## Analyses
+### Analyses
 
-## Discrimination score
+#### Discrimination score
 
-The discrimination score was calculated by the below equation. Time spent in proximity to novel minus (NTime Spent) time spent in proximity to familiar (FTime Spent), divided by the total duration of time spent in both zones (TotalTime Spent).Ntimespent−FtimespentTotaltimespent
+The discrimination score was calculated by the below equation. Time spent in proximity to novel minus (NTime Spent) time spent in proximity to familiar (FTime Spent), divided by the total duration of time spent in both zones (TotalTime Spent).
+
+$$
+\frac{N_{timespent}−F_{timespent}}{Total_{timespent}}
+$$
 
 Therefore, positive discrimination scores equate a mouse’s preference for novel conspecifics and novel food odors and negative scores indicate an animal’s preference for the familiar conspecific and food odors.
 
-## Velocity
+### Velocity
 
 The velocity of animals within the Open Field task was determined by calculating distance traveled per unit of time and centroid positioning using Bonsai, an open-source tracking software (Lopes et al., 2015). Velocity was determined by change in pixels moved over change in seconds.
 
-## Whole brain
+### Whole brain
 
 The open-source WholeBrain software package in R allows for the annotation, analysis, and visualization of cellular resolution tracing in an interactive brain atlas (Fürth et al., 2018). The Whole Brain software was used specifically to register individual brain sections from animals onto the Allen common coordinate framework. It was used to map input neurons in rabies tracing experiments (Figures 3 and 5).
 
-## Clozapine-N-Oxide
+### Clozapine-N-Oxide
 
 In the projection-specific inactivation experiments, all mice received CNO (Sigma; 1 mg/kg, i.p., in 2% DMSO and saline, 1 ml/ 100 g), regardless of virus condition, to equally expose animals to any unintended consequences of CNO. CNO was always administered 30 min prior to the behavioral experiment.
 
-## Statistics
+### Statistics
 
 Analyses were performed using PRISM GraphPad, MATLAB, and RStudio. One-way ANOVA or unpaired t-tests were used to compare discrimination scores and velocity. Two-factor ANOVAs were used for social discrimination scores and open-field analyses. In the case of unequal variances, Welch’s ANOVA was used. Tukey’s post hoc tests or paired t-tests were used in the case of significant interactions or main effects with >2 groups and are indicated in the figure with p-value annotations being *p<0.05, **p<0.01, ***p<0.001. Unless otherwise indicated, all tests are two-tailed. Please see Supplementary file 1 for complete statistical analyses.
 
-## Materials availability statement
+### Materials availability statement
 
 No new materials were generated during the course of the study.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Internal Medicine and Genetics, Yale University School of Medicine New Haven United States
+1. Department of Internal Medicine and Genetics, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 

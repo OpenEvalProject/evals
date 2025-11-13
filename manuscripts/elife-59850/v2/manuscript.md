@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Plasma cells (PCs) are essential for protection from infection, and at the origin of incurable cancers. Current studies do not circumvent the limitations of removing PCs from their microenvironment and confound formation and maintenance. Also, the investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells, a property of most PCs. The main impediment is the lack of tools to perform specific genetic manipulation in vivo. Here we characterize a genetic tool (Jchain creERT2 ) in the mouse that permits first-ever specific genetic manipulation in PCs in vivo, across immunoglobulin isotypes. Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues. The Jchain creERT2 tool paves the way for an in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.
+Plasma cells (PCs) are essential for protection from infection, and at the origin of incurable cancers. Current studies do not circumvent the limitations of removing PCs from their microenvironment and confound formation and maintenance. Also, the investigation of PC population dynamics has mostly relied on nucleotide analog incorporation that does not label quiescent cells, a property of most PCs. The main impediment is the lack of tools to perform specific genetic manipulation in vivo. Here we characterize a genetic tool (JchaincreERT2) in the mouse that permits first-ever specific genetic manipulation in PCs in vivo, across immunoglobulin isotypes. Using this tool, we found that splenic and bone marrow PC numbers remained constant over-time with the decay in genetically labeled PCs being compensated by unlabeled PCs, supporting homeostatic population turnover in these tissues. The JchaincreERT2 tool paves the way for an in-depth mechanistic understanding of PC biology and pathology in vivo, in their microenvironment.
 
 ## Introduction
 
@@ -27,47 +27,79 @@ We found amongst well-known PC-associated genes, that Jchain (Igj) had the highe
 
 ## Results
 
-## Jchain transcripts are highly enriched in plasma cells
+### Jchain transcripts are highly enriched in plasma cells
 
 B-to-PC differentiation is a process that involves a complex network of factors (Figure 1A; Nutt et al., 2015). We investigated the level and specificity of the expression of genes associated with PCs (Xbp1, Jchain, Scd1, Irf4, and Prdm1) through the analysis of a publicly available RNA sequencing dataset for immune cell populations (ImmGen, [Heng et al., 2008]). We first determined the cell populations with the highest transcript level for each factor. Xbp1 and Irf4 were primarily expressed in PCs, however, the expression in bone marrow PCs (B_PC_BM) was less than two-fold greater than that of non-PC populations (Figure 1B). The expression of Sdc1 and Prdm1 was not specific to PCs (Figure 1C). Notably, peritoneal cavity macrophages (MF_226+II+480lo_PC) expressed more Sdc1 than bone marrow PCs (B_PC_BM), and a subset of FOXP3+ T cells (Treg_4_FP3+_Nrplo_Co) expressed higher levels of Prdm1 than that observed in splenic plasmablasts (B_PB_Sp) and bone marrow PCs (B_PC_BM; Figure 1C). By contrast, Jchain had the highest level of transcript expression in PCs compared to non-PCs and was the most PC specific amongst all factors, with a forty-fold enrichment over germinal center (GC) B cells (B_GC_CB_Sp; Figure 1D). We concluded that the Jchain locus was a suitable candidate for the generation of PC specific genetic tools.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig1-v2.jpg)
 
-**Figure 1.:** Jchain transcripts are highly enriched in plasma cells.(A) Schematic of the network of factors associated with plasma cell differentiation. Upward arrows indicate increased expression compared to the precursor population. (B–D) Differential gene expression analysis using RNA sequencing data (ImmGen, Heng et al., 2008). (B) Analysis of Xbp1 and Irf4, which encode for XBP1 and IRF4, respectively. (C) Analysis of Sdc1 and Prdm1, which encode for CD138 and BLIMP1, respectively. (D) Analysis for Jchain (Igj) that encodes for JCHAIN. ‘x’ indicates fold change. Expression Value Normalized by DESeq2. http://rstats.immgen.org/Skyline/skyline.html.Figure 1—source data 1.
+**Figure 1.:** (A) Schematic of the network of factors associated with plasma cell differentiation. Upward arrows indicate increased expression compared to the precursor population. (B–D) Differential gene expression analysis using RNA sequencing data (ImmGen, Heng et al., 2008). (B) Analysis of Xbp1 and Irf4, which encode for XBP1 and IRF4, respectively. (C) Analysis of Sdc1 and Prdm1, which encode for CD138 and BLIMP1, respectively. (D) Analysis for Jchain (Igj) that encodes for JCHAIN. ‘x’ indicates fold change. Expression Value Normalized by DESeq2. http://rstats.immgen.org/Skyline/skyline.html.
 
-## Jchain is expressed in a small fraction of GC B cells and in most plasma cells
+### Jchain is expressed in a small fraction of GC B cells and in most plasma cells
 
 We searched alleles produced by the EUCOMMTools consortium (Koscielny et al., 2014) and identified a genetically engineered Jchain allele produced by the Wellcome Trust Sanger Institute: MGI:5633773, hereafter termed JchaincreERT2. The genetically engineered Jchain allele contained an FRT site between exons 1 and 2 followed by an engrailed two splice acceptor sequence and an EGFP.2A.creERT2 expression cassette (Figure 2A). In this design, the expression of the EGFP (GFP) and of creERT2 is linked by a self-cleaving 2A peptide under the transcriptional control of the Jchain promoter (Figure 2A). To determine cells with GFP expression, we initially analyzed the spleen from mice heterozygous for the JchaincreERT2 allele that had been immunized with sheep red blood cells (SRBC) 12 days earlier (Figure 2B). B220 is expressed on the surface of B cells and downregulated during PC differentiation (Pracht et al., 2017). We, therefore, defined three cell populations based on the levels of GFP fluorescence and B220 surface expression: GFPlowB220high, GFPintB220int, GFPhighB220low, and a population negative for both markers (GFPnegB220neg; Figure 2C). Next, we determined the fraction of cells within these populations that expressed surface CD138, a commonly used marker to define PCs by flow-cytometry (Pracht et al., 2017). The GFPnegB220neg population did not contain CD138+ cells, however, the fraction of CD138+ cells increased in the remaining populations in agreement with the reduction of B220 expression during PC differentiation, and the GFPintB220int and GFPhighB220low populations were mostly composed of CD138+ cells (Figure 2D,E). Identical results were found when defining PCs using in addition surface expression of CXCR4, a chemokine receptor that facilitates homing of PCs to the bone marrow (Figure 2D,E; Hargreaves et al., 2001). Thus, increased GFP expression from the JchaincreERT2 allele associates with the loss of B220 and increased expression of PC-associated surface markers.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of Jchain targeted allele Wtsi MGI:5633773. Rectangular boxes indicate exons, and exon number is on top; pink triangle indicates an FRT sequence; EGFPcreERT2 cassette contains a splice acceptor site (SA)-led EGFP-2A-creERT2 expression cassette followed by a poly-A tail inserted in the intron between exons 1 and 2; white triangle indicates a ROX sequence; orange rectangle indicates a promoter-driven puromycin resistance cassette; green triangle indicates loxP sequence. (B) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 allele were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens of mice were analyzed at day 12 post-immunization. (C) Gating strategy of populations by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele and wild-type B6 mice for a negative control of GFP expression. (D) Gating strategy by flow-cytometry for plasma cells within the GFPhiB220low population using CD138+ and CD138+CXCR4+ markers. (E) Cumulative data for CD138+ and CD138+CXCR4+plasma cells analyzed as in (D). Top: fraction of CD138+plasma cells; bottom: fraction of CD138+CXCR4+plasma cells within the four populations defined by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (F) Gating strategy by flow-cytometry for total CD138+ and CD138+CXCR4+plasma cells within GFPlowB220hi population. The CD138neg cell fraction within the GFPlowB220hi population was analyzed for the CD19 B cell marker and stained for CD38 and FAS to determine germinal center (GC) B cells. (G) Cumulative data for the frequency of GC B cells within the CD138negGFPlowB220hi population. Each symbol (E: n = 26, G: n = 26) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ***=p ≤ 0.001, ****=p ≤ 0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (E, G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cumulative data for the frequency of GFPlowB220hi (GlowBhi) within live cells. (B) Cumulative data for the frequency of GC B cells within the CD138negGFPlowB220hi population. (C–D) Cumulative data for CD138+ (C) and CD138+CXCR4+ (D) cells within the GFPlowB220hi population. Each symbol (n = 26) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, **=p ≤ 0.01, ***=p ≤ 0.001 (unpaired Student’s t-test). Data are representative of three independent experiments (A–D).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Gating strategy by flow-cytometry for the B cell lineage in the spleen. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) at day 0 and spleens were analyzed at day 12. Mice did not receive tamoxifen treatment. Cells were pre-gated on live singlets and for the expression of CD138 and CXCR4 markers. CD138+CXCR4+ cells were defined as plasma cells (PC). Non-PCs positive for the CD19 and B220 markers were defined as B2 cells, whereas those cells displaying a CD19+B220low were defined as B1 cells. B1 cells were further characterized as B1a (CD5hiCD23neg) and B1b (CD5lowCD23neg) cells. B2 cells were further delineated into marginal zone (MZ) B cells (CD21hiCD23int), T1 B cells (CD21lowCD23low), T2 B cells (CD21intIgMhiCD23hi), and follicular B cells (Fo, CD21intIgMintCD23hi). Non MZ or T1 cells were gated for germinal center (GC) B cells (CD38lowFAShigh) and these were further delineated into dark zone GC B cells (CXCR4highCD86low) and light zone GC B cells (CXCR4lowCD86high; Bonami et al., 2014) (B) Cumulative data for the GFP+ cell fraction within the B cell lineage in the spleen. Analyzed as in (A). (C) Cumulative data for the GFP+ cell fraction in additional B cell lineage and non-B cell lineage populations in the spleen. Analyzed as in (A). (D) Gating strategy by flow-cytometry for the B cell lineage in the bone marrow. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) at day 0 and spleens were analyzed at day 12. Mice did not receive tamoxifen treatment. Cells were pre-gated on live singlets and gated for CD138 and B220 expression. CD138+B220low cells were defined as plasma cells (PCs). Non-PCs positive for the CD19 and B220 markers were examined and further delineated to immature B cells (IgM+CD43neg), Pre-B cells (fraction D; IgMnegCD43neg), and Pro-B cells (IgMnegCD43+). Pro B cells were further sub-divided into Hardy fraction A (BP1negCD24neg), fraction B (BP1negCD24+), fraction C (BP1+CD24neg) and fraction C’ (BP1+CD24+). (E) Cumulative data for the GFP+ cell fraction in the B cell lineage and in plasma cells in the bone marrow. Analyzed as in (D). Each symbol (B: n = 5, C: n = 12, E: n = 5) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. Data are representative of three independent experiments (B, C, E).
 
 We further investigated the cellular composition of the GFPlowB220high population that contained the fewest CD138+ cells (1% to 20%; Figure 2E). The gate defining this population was designed to not disregard the occurrence of cells with a low-level of GFP expression in mice carrying the JchaincreERT2 allele. However, such strategy inevitably led to the inclusion of a small fraction of ‘false’ GFP positive cells as indicated by the analysis of control mice (wild-type C57BL/6) that are GFP negative (Figure 2C). Still, the fraction of cells within the GFPloB220hi population was significantly enriched in JchaincreERT2 mice compared to control (Figure 2—figure supplement 1). Also above background, we found that virtually all CD138neg cells within the GFPlowB220high population of mice with the JchaincreERT2 allele expressed the B cell marker CD19 (Figure 2F), and in agreement with Jchain gene expression analysis (Figure 1D) these cells mostly represented germinal center (GC) B cells (CD38lowFAShigh; Figure 2F,G and Figure 2—figure supplement 1). By contrast, only 30% of JchaincreERT2 mice had above background enrichment for CD138+ and CD138+CXCR4+ expressing cells within the GFPlowB220high population (Figure 2—figure supplement 1). These data prompts caution when using the gate defining the GFPlowB220high population to study enrichment for PC markers in mice carrying JchaincreERT2 allele, as it may contain an unacceptable level of contamination by non-GFP positive cells.
 
 We further performed analyses in the spleen and bone marrow of 12 day SRBC immunized mice heterozygous for the JchaincreERT2 allele in which precursors and mature B cells, and non-B cell populations were first defined using surface markers and the fraction of GFP expressing cells within those populations determined (Figure 2—figure supplement 2). We found that most PCs in the spleen and bone marrow expressed GFP (CD138+CXCR4+, 60 to 90%; Figure 2—figure supplement 2). We also observed that a minor fraction of B1b cells (0 to 6%) in the spleen expressed GFP (Figure 2—figure supplement 2), possibly in agreement with the knowledge that B1b cells are prone to differentiate into PCs and are a source of IgM antibodies during T cell independent responses (Alugupalli et al., 2004). Collectively these data confirmed at the single cell level the gene expression analysis using bulk populations (Figure 1D) and suggested that Jchain expression is highly enriched in PCs.
 
-## Jchain expression correlates with that of IRF4 and BLIMP1
+### Jchain expression correlates with that of IRF4 and BLIMP1
 
 IRF4 and BLIMP1 transcription factors play an essential role in PC differentiation (Kallies et al., 2007; Klein et al., 2006; Sciammas et al., 2006; Shapiro-Shelef et al., 2003). We analyzed the spleen of 12 day SRBC immunized mice heterozygous for the JchaincreERT2 allele and determined the expression pattern of IRF4 and BLIMP1 in the populations defined by varied GFP and B220 expression (Figures 2C and 3A,B). The GFPnegB220neg population was virtually devoid of cells with BLIMP1 and IRF4 expression (Figure 3C). In 30% of mice carrying the JchaincreERT2 allele we found above background enrichment for BLIMP1+IRF4+ cells within the GFPlowB220high population (Figure 3D,E and Figure 3—figure supplement 1). However, most GFPlowB220high cells were negative for BLIMP1 and IRF4, suggesting that Jchain expression precedes that of IRF4 and BLIMP1, as previously observed in in vitro cultures of Blimp1 deficient B cells (Kallies et al., 2007). Still, Jchain expression as measured by GFP strongly correlated with that of IRF4 and BLIMP1 given that the vast majority of cells within the GFPintB220int and GFPhighB220low populations were BLIMP1+IRF4+ (Figure 3D and E). Overall, we identified an in vivo population of cells in which Jchain expression preceded that of IRF4 and BLIMP1, possibly representing PC precursors. As PC differentiation ensued, Jchain expression correlated highly with the expression of the transcription factors BLIMP1 and IRF4 that are critical for the establishment of the PC program.
 
-## JchaincreERT2 mediated genetic manipulation is effective only in plasma cells
+![Figure 3.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 allele were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens of mice were analyzed at day 12 post-immunization. (B) Gating strategy of populations by flow-cytometry according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (C) Gating strategy for IRF4 and BLIMP1 expression by flow-cytometry within the GFPnegB220neg population. (D) Gating strategy for IRF4 and BLIMP1 expression by flow-cytometry within GFPlowB220hi, GFPintB220int, and GFPhiB220low populations, defined as in (B). (E) Cumulative data for the frequency of BLIMP1+IRF4+ cells within the four populations defined as in (B). Each symbol in (E: n = 26) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, ***=p ≤ 0.001, ****=p ≤ 0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cumulative data for the frequency of BLIMP1+IRF4+ cells within GFPlowB220hi cells. Each symbol (n = 26) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant (unpaired Student’s t-test). Data are representative of three independent experiments.
+
+### JchaincreERT2 mediated genetic manipulation is effective only in plasma cells
 
 Next, we sought to determine whether the JchaincreERT2 allele could be used to perform genetic manipulation in PCs. For that we generated compound mutant mice carrying the JchaincreERT2 allele and a Rosa 26 allele in which RFP expression is conditional to cre-mediated recombination of a loxP-STOP-loxP cassette (R26lslRFP; Luche et al., 2007). In the JchaincreERT2 allele, cre is fused to an estrogen binding domain (ERT2) that sequesters cre in the cytoplasm through the binding to HSP90 (Feil et al., 2009). Addition of tamoxifen displaces the creERT2-HSP90 complex allowing effective nuclear import of creERT2 and its access to loxP flanked DNA sequences (Figure 4A; Feil et al., 2009). We first performed an in vitro experiment using a classical plasmablast (B220lowCD138+) differentiation assay in which B cells purified from mice carrying the JchaincreERT2 and R26lslRFP alleles were cultured with LPS (Andersson et al., 1972) in the presence or absence of 4-OH tamoxifen. GFP expression was highly enriched in plasmablasts compared to B cells and RFP expression was only observed upon addition of 4-OH tamoxifen to the cell culture, and that occurred virtually only in plasmablasts (Figure 4—figure supplement 1). This data suggested that creERT2 was specifically expressed by plasmablasts and effectively retained in the cytoplasm in the absence of 4-OH tamoxifen.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens (top) and bone marrow (bottom) of mice were analyzed at day 12 post-immunization. A group of mice received tamoxifen treatment for four consecutive days from day 7 to day 10 after immunization. (B) Gating strategy of populations by flow-cytometry in the spleen (top) and bone marrow (bottom) according to the expression of GFP and B220 in mice carrying the JchaincreERT2 allele. (C) Gating strategy for GFP and RFP expression by flow-cytometry in the four populations defined as in (B). Top: spleen; bottom: bone marrow. (D) Cumulative data for the frequency and number of GFP+RFP+ cells within GFPnegB220neg, GFPlowB220hi, GFPintB220int, and GFPhiB220low populations, defined as in (B). Top: spleen; bottom: bone marrow. Each symbol (D: n = 14) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, *=p ≤ 0.05, **=p ≤ 0.01, ***=p ≤ 0.001, ****=p ≤ 0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gating strategy by flow-cytometry for GFP and RFP expression within CD19+B220+ B cells and B220lowCD138+ plasmablasts. Splenic B cells from unmanipulated mice carrying the JchaincreERT2 and R26lslRFP alleles were enriched using CD43 negative depletion (MACS) and cultured in vitro in the presence of LPS and 4-hydroxytamoxifen (4-OH-TAM). Cells were analyzed 48, 72, and 96 hr time-points for GFP and RFP expression by flow-cytometry. Data from 96 hr analysis of a B cell culture with LPS and 1 μM 4-OH-TAM is shown as example. (B) Cumulative data for fractions of GFPnegRFPneg, GFP+RFPneg, GFP+RFP+ cells within B cells. Analyzed as in (A). (C) Cumulative data for fractions of GFPnegRFPneg, GFP+RFPneg, GFP+RFP+ cells within plasmablasts. Analyzed as in (A).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cumulative data for fraction of GFP+RFP+ cells within the B cell lineage in the spleen. Analyzed as in Figure 2—figure supplement 2 panel (A). (B) Cumulative data for fraction of GFP+RFP+ cells in additional B cell lineage and non-B cell lineage populations in the spleen. Analyzed as in Figure 2—figure supplement 2 panel (A). (C) Cumulative data for fraction of GFP+RFP+ cells in the B cell lineage and in plasma cells in the bone marrow. Analyzed as in Figure 2—figure supplement 2 panel (D). Each symbol (A: n = 5, B: n = 12, C: n = 5) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. Data are representative of three independent experiments (A, B, C).
+
 Similar observations were made in mice carrying the JchaincreERT2 and R26lslRFP alleles in vivo. In the absence of tamoxifen administration RFP expressing cells were not detected, confirming the in vitro results and supporting that the JchaincreERT2 allele was not ‘leaky’ in the control of cre activity (Figure 4—figure supplement 2). Next, we immunized mice carrying JchaincreERT2 and R26lslRFP alleles and administered tamoxifen on days 7, 8, 9, and 10 followed by analysis of the spleen and bone marrow at day 12 (Figure 4A). Analyses of the populations defined by varied GFP and B220 surface expression (Figures 2 and 4B) revealed that a small fraction of GFPlowB220high cells were positive for RFP in the spleen (median ~2%) and in the bone marrow (median ~1.2%; Figure 4C,D). In contrast, cre mediated recombination and as consequence RFP expression occurred in ~37% and~31% of GFPintB220int in the spleen and bone marrow, respectively, and the vast majority of cells within the GFPhighB220low population had undergone cre mediated recombination and were RFP positive (~76% in the spleen, and ~88% in the bone marrow, median; Figure 4C,D). These data showed that JchaincreERT2 mediated cre-recombination was only effective in PC populations validating it as a tool to specifically perform genetic manipulation of PCs.
 
-## Genetic manipulation using JchaincreERT2 occurs across immunoglobulin isotypes
+### Genetic manipulation using JchaincreERT2 occurs across immunoglobulin isotypes
 
 IgG1 does not multimerize, and due to differences in its secretory tail to that of IgA and IgM, JCHAIN does not associate with IgG1 (Johansen et al., 2000). Currently it is suggested that Jchain expression occurs in all PCs regardless of isotype (Castro and Flajnik, 2014; Johansen et al., 2000; Mather et al., 1981). However, this has not been demonstrated at the single cell level. We performed experiments that investigated whether JchaincreERT2 allele GFP expression and cre-mediated loxP recombination occurred in PCs across immunoglobulin isotypes. For that we analyzed the spleen, mesenteric lymph node (mLN), Peyer’s patches and bone marrow of younger (15 weeks) and older (30 weeks) mice carrying the JchaincreERT2 and R26lslRFP alleles. These mice were immunized with SRBC and administered with tamoxifen on days 7, 8, 9, and 10 followed by analysis at day 12 (Figure 5A). We first analyzed total PCs (B220lowCD138+), and within these cells those that expressed GFP (RFP+ and RFPneg) and GFP+RFP+ cells (cre recombined) to determine the proportions of IgA, IgM, and IgG1 expressing cells using intracellular stain (Figure 5B–D). Overall, we found only small differences. Analysis of spleens of 15-week-old mice revealed a slight increase in the percentage of IgA+ cells within the GFP+RFP+ PCs only when compared to total PCs (Figure 5E). A similar trend was observed when analyzing Peyer’s patches of 15-week-old mice (Figure 5E). However, in the other analyzed tissues of these mice we did not observe differences in the proportion of IgA, nor for IgM and IgG1 in any of the tissues analyzed (Figure 5E). 30-week-old mice showed a slight increase in the percentage of splenic IgM+ cells within the GFP+RFP+ PCs only when compared to total PCs, and for IgA+ in the mLN (Figure 5F). No significant difference was observed in 30-week-old mice for the proportion of IgM or IgA in any of the other analyzed tissues, and in none of the analyzed tissues for IgG1 (Figure 5F). Taken together, these data suggested that Jchain expression is not overly represented in IgA or IgM expressing PCs compared to IgG1+ PCs. We concluded that JchaincreERT2 mediated cre-loxP recombination occurs across immunoglobulin isotypes and thus that the JchaincreERT2 allele is a useful tool for genetic manipulation also of IgG1 expressing PCs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig5-v2.jpg)
 
-**Figure 5.:** JchaincreERT2 occurs across immunoglobulin isotypes.(A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens, mesenteric lymph nodes (mLN), Peyer’s patches, and bone marrows of mice were analyzed at day 12 post-immunization. Mice received tamoxifen treatment for four consecutive days from day 7 to day 10 after immunization. (B) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM and IgA within total B220lowCD138+plasma cells. Analysis in the spleen is provided as example. (C) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+ (RFP+ and RFPneg) plasma cells. Analysis in the spleen is provided as example. (D) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+RFP+plasma cells. Analysis in the spleen is provided as example. (E) Cumulative data for the fractions of IgA, IgM or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 15 weeks of age. (F) Cumulative data for the fractions of IgA, IgM, or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 30 weeks of age. Each symbol (E: n = 5–6, F: n = 5–6) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, *=p ≤ 0.05 (unpaired Student’s t-test). Data are representative of three independent experiments (E, F).Figure 5—source data 1.
+**Figure 5.:** (A) Schematic of experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and spleens, mesenteric lymph nodes (mLN), Peyer’s patches, and bone marrows of mice were analyzed at day 12 post-immunization. Mice received tamoxifen treatment for four consecutive days from day 7 to day 10 after immunization. (B) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM and IgA within total B220lowCD138+plasma cells. Analysis in the spleen is provided as example. (C) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+ (RFP+ and RFPneg) plasma cells. Analysis in the spleen is provided as example. (D) Gating strategy by flow-cytometry for intracellular and extracellular expression of IgG1, IgM, and IgA within B220lowCD138+GFP+RFP+plasma cells. Analysis in the spleen is provided as example. (E) Cumulative data for the fractions of IgA, IgM or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 15 weeks of age. (F) Cumulative data for the fractions of IgA, IgM, or IgG1 expressing cells within total plasma cells (PC) (black, B220lowCD138+), GFP+ (RFP+ and RFPneg) plasma cells (green, B220lowCD138+GFP+), and GFP+RFP+plasma cells (orange, B220lowCD138+GFP+RFP+) at 30 weeks of age. Each symbol (E: n = 5–6, F: n = 5–6) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, *=p ≤ 0.05 (unpaired Student’s t-test). Data are representative of three independent experiments (E, F).
 
-## Inclusive analysis of plasma cell dynamics reveals tissue-specific homeostatic population turnover
+### Inclusive analysis of plasma cell dynamics reveals tissue-specific homeostatic population turnover
 
 Understanding of the PC population turnover is lacking. Multiple investigations have been performed to determine the PC lifespan using primarily nucleotide analog incorporation into the DNA. These studies have provided fundamental insights on PC maintenance and currently it is accepted that a fraction of PCs in the mouse survives for periods longer than 3 months (Ho et al., 1986; Lemke et al., 2016; Manz et al., 1998; Manz et al., 1997; Slifka et al., 1998). However, given the quiescent nature of PCs and that nucleotide analog methodology requires cell division, these methods are not appropriate to study global population turnover in tissues. We investigated the suitability of the JchaincreERT2 allele to determine the turnover of the PC population in the spleen and bone marrow. We immunized mice carrying the JchaincreERT2 and R26lslRFP alleles at two time-points spaced by a period of 21 days (Figure 6A; Calado et al., 2010). Thirty days after the secondary immunization (day 51) we administered tamoxifen for five consecutive days to genetically label PCs (Figure 6A). Next, we determined the absolute cell number of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined). We found that over a period of 5 months the cell number of total and GFP+ PCs remained constant over time (Figure 6B,C). By contrast, the cell number of GFP+RFP+ cells decayed (Figure 6B,C) in both the spleen (t1/2 ~31.63d) and bone marrow (t1/2 ~251.93d; Figure 6D,E). These results may agree with the knowledge that the half-life of PC residence differs between spleen and the bone marrow (Sze et al., 2000). Notably, analysis of the GFP+RFPneg cell numbers revealed that the emergence of these cells paralleled that observed for the decay in cell numbers of GFP+RFP+ cells (Figure 6B,C) both in the spleen (t1/2 ~20.20d) and bone marrow (t1/2 ~190.19d; Figure 6F,G). These data indicated that the turnover of the PC population is homeostatically regulated in a tissue-specific manner.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59850/elife-59850-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic of the experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized twice with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and day 21. Mice received tamoxifen treatment for five consecutive days from day 51 to 55 after the first immunization. Spleens and bone marrow of mice were analyzed at day 5, 2-month, and 5-month timepoints after the last tamoxifen administration. (B) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the spleen. (C) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the bone marrow. (D) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (E) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (F) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (G) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. Each symbol (B-G: 5D n = 6; 2M n = 5; 5M n = 9) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, *=p ≤ 0.05 **=p ≤ 0.01, ***=p ≤ 0.001, ****=p ≤ 0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (B, C).Figure 6—source data 1.
+**Figure 6.:** (A) Schematic of the experimental procedure protocol. Mice carrying the JchaincreERT2 and R26lslRFP alleles were immunized twice with sheep red blood cells (SRBC) intravenously (i.v.) on day 0 and day 21. Mice received tamoxifen treatment for five consecutive days from day 51 to 55 after the first immunization. Spleens and bone marrow of mice were analyzed at day 5, 2-month, and 5-month timepoints after the last tamoxifen administration. (B) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the spleen. (C) Cumulative data for the absolute cell numbers of total PCs, of GFP+ cells (RFP+ and RFPneg), GFP+RFP+ cells (cre recombined), and GFP+RFPneg cells (not cre recombined) in the bone marrow. (D) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (E) Graphical representation of half-life (t1/2) of GFP+RFP+CD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (F) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the spleen using the data presented in (B). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. (G) Graphical representation of half-life (t1/2) of GFP+RFPnegCD138+CXCR4+plasma cells in the bone marrow using the data presented in (C). Graphing of the best-fit curve was performed using the GraphPad Prism eight software. Each symbol (B-G: 5D n = 6; 2M n = 5; 5M n = 9) represents an individual mouse; small horizontal lines indicate median, minimum, and maximum values. ns = not significant, *=p ≤ 0.05 **=p ≤ 0.01, ***=p ≤ 0.001, ****=p ≤ 0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (B, C).
 
 ## Discussion
 
@@ -87,22 +119,256 @@ In this work, we have not determined if the decay in numbers of genetically labe
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus, C57BL/6)</td>
+      <td>JchaincreERT2; Jchaintm1(EGFP/cre/ERT2)Wtsi</td>
+      <td>Wellcome Trust Sanger Institute (WTSI)</td>
+      <td>MGI: 5633773</td>
+      <td>The allele was purchased from EMMA mouse repository in agreement with WTSI, mice were rederived at the Francis Crick Institute.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Blimp1(host species: rat, clone: 6D3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 565002</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/32 Fc Block (host species: rat, clone: 2.4G2)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 553141</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 (host species: rat, clone: 1D3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 563557</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD23 (host species: rat, clone: B3B4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 563986</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD38 (host species: rat, clone: 90)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 760361</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD95 (host species: hamster, clone: Jo2)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562633</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 (host species: rat, clone: A85-1)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 560089</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD138 (host species: rat, clone: 281–2)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 740880</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse B220 (host species: rat, clone: RA3-6B2)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 103247</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c (host species: hamster, clone: N418)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 117333</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 (host species: rat, clone: 6D5)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 115543</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD21/35 (host species: Rat, clone: 7E9)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 123421</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD43 (host species: rat, clone: 1B11)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 121223</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD86 (host species: rat, clone: GL1)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 105013</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse BP1 (host species: rat, clone: 6C3)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 13–5891</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD5 (host species: rat, clone: 53–7.3)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 13-0051-82</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CXCR4 (host species: rat, clone: 2B11)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 46-9991-82</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgA (host species: rat, clone: 11-44-2)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 13–5994</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgM (host species: rat, clone: II/41)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 25–5790</td>
+      <td>FACS (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IRF4 (host species: rat, clone: 3E4)</td>
+      <td>Ebioscience</td>
+      <td>Cat#: 25-9858-80</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Cytofix/CytoPerm Fixation/Permeabilization Kit</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 554714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie NIR Fixable Viability Kit</td>
+      <td>BioLegend</td>
+      <td>Cat#: 423106</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD43 (Ly-48) MicroBeads, mouse</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat#: 130-049-801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(Z) 4-hydroxytamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 68047-06-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Cat#: T5648-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sunflower seed oil from Helianthus annuus</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S5007-250ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva software</td>
+      <td>BD</td>
+      <td>V9.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>V10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>V7, V8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sheep red blood cells (SRBCs)</td>
+      <td>TCS Biosciences Ltd</td>
+      <td>Cat#: SB054</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The JchaincreERT2 allele was purchased from EMMA in agreement with the Wellcome Trust Sanger Institute (Jchain targeted allele Wtsi MGI:5633773, genebank https://www.i-dcc.org/imits/targ_rep/alleles/43805/escell-clone-genbank-file) and mice were rederived at the The Francis Crick Institute. The allele contains a splice acceptor site (SA), an EGFP-2A-creERT2 expression cassette and a poly-A tail in the intron between exons 1 and 2 under the Jchain promoter. In addition, exon 2 is loxP-flanked and the allele also contains a rox-flanked puromycin resistance cassette. These mice were crossed to carry a Rosa26lslRFP cre recombination reporter allele (R26lsl.RFP) allele that expresses a non-toxic tandem-dimer red fluorescent protein upon cre-mediated deletion of a floxed STOP cassette (Luche et al., 2007). Mice were maintained on the C57BL/6 background and bred at The Francis Crick Institute biological resources facility under specific pathogen-free conditions. Animal experiments were carried out in accordance with national and institutional guidelines for animal care and were approved by The Francis Crick Institute biological resources facility strategic oversight committee (incorporating the Animal Welfare and Ethical Review Body) and by the Home Office, UK. All animal care and procedures followed guidelines of the UK Home Office according to the Animals (Scientific Procedures) Act 1986 and were approved by Biological Research Facility at the Francis Crick Institute. The age of mice ranged between 15–30 weeks as specified.
 
-## Immunization and in vivo induction of cre activity
+### Immunization and in vivo induction of cre activity
 
 Mice were injected intravenously with 1 × 109 sheep red blood cells (SRBCs, TCS Biosciences Ltd) in PBS. For the induction of cre activity, 4 mg tamoxifen (SIGMA T5648) dissolved in sunflower seed oil were administered by oral gavage to mice once per day for multiple days depending on experimental design.
 
-## In vitro B cell culture and induction of cre activity
+### In vitro B cell culture and induction of cre activity
 
 Splenic cells were harvested, and B cells were isolated using CD43 (Ly-48) MicroBeads, mouse (Miltenyi Biotec). The purity of B cells was determined by flow-cytometry (>95%). B cells were cultured in 96-well round-bottom plates (Falcon) in B cell media (DMEM high glucose/Glutamax from Thermo Fisher Scientific supplemented with 10% fetal bovine serum F7524 from Sigma, 100 U/mL Penicillin, 100 µg/mL Streptomycin from Life Technologies, 10 mM HEPES buffer solution from Life Technologies, 100 µM MEM non-essential amino acids from Thermo Fisher Scientific, 1 mM sodium pyruvate from Life Technologies, and 50 uM β-mercaptoethanol from Sigma) at 1 million/mL concentration (200,000 cells/well) with 10 ug/mL LPS and varied concentrations of (Z) 4-hydroxytamoxifen (Sigma-Aldrich). Analysis was performed using flow-cytometry at 48, 72, or 96 hr of culture.
 
-## Flow cytometry
+### Flow cytometry
 
 Single cell suspensions were stained with antibodies. We used Zombie NIR Fixable Viability Kit (BioLegend) for live/dead discrimination. For intracellular staining, we fixed cells using the BD CytoFix/Cytoperm (BD Biosciences) kit as per manufacturer instructions. Samples were acquired on a BD LSRFortessa analyzer using FACSDiva software (BD) and analyzed on FlowJo software.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were analyzed with unpaired two-tailed Student's t-test; a p-value=p ≤ 0.05 was considered significant. Prism (v7 and v8, GraphPad) was used for statistical analysis. A single asterisk (∗) in the graphs of figures represents a p-value≤0.05, double asterisks (∗∗) a p-value≤0.01, triple asterisks (∗∗∗) a p-value≤0.001, quadruple asterisks (∗∗∗∗) a p-value≤0.0001, and ‘ns’ stands for not statistically significant (i.e. a p-value>0.05). Nonlinear regression (curve fit) using (v8, GraphPad) was used to calculate half-life (t1/2) of the population and followed a one-phase decay model, with no special handling of outliers, robust regression and strict convergence criteria and no weighting with a 1000 maximum number of iterations.

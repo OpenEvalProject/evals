@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.20707.001 Crude oil spills are a worldwide ocean conservation threat. Fish are particularly vulnerable to the oiling of spawning habitats, and crude oil causes severe abnormalities in embryos and larvae. However, the underlying mechanisms for these developmental defects are not well understood. Here, we explore the transcriptional basis for four discrete crude oil injury phenotypes in the early life stages of the commercially important Atlantic haddock ( Melanogrammus aeglefinus ). These include defects in (1) cardiac form and function, (2) craniofacial development, (3) ionoregulation and fluid balance, and (4) cholesterol synthesis and homeostasis. Our findings suggest a key role for intracellular calcium cycling and excitation-transcription coupling in the dysregulation of heart and jaw morphogenesis. Moreover, the disruption of ionoregulatory pathways sheds new light on buoyancy control in marine fish embryos. Overall, our chemical-genetic approach identifies initiating events for distinct adverse outcome pathways and novel roles for individual genes in fundamental developmental processes. DOI: http://dx.doi.org/10.7554/eLife.20707.001
+Crude oil spills are a worldwide ocean conservation threat. Fish are particularly vulnerable to the oiling of spawning habitats, and crude oil causes severe abnormalities in embryos and larvae. However, the underlying mechanisms for these developmental defects are not well understood. Here, we explore the transcriptional basis for four discrete crude oil injury phenotypes in the early life stages of the commercially important Atlantic haddock (Melanogrammus aeglefinus). These include defects in (1) cardiac form and function, (2) craniofacial development, (3) ionoregulation and fluid balance, and (4) cholesterol synthesis and homeostasis. Our findings suggest a key role for intracellular calcium cycling and excitation-transcription coupling in the dysregulation of heart and jaw morphogenesis. Moreover, the disruption of ionoregulatory pathways sheds new light on buoyancy control in marine fish embryos. Overall, our chemical-genetic approach identifies initiating events for distinct adverse outcome pathways and novel roles for individual genes in fundamental developmental processes.
 
 ## Introduction
 
@@ -44,67 +44,481 @@ In the present study, we used visible developmental abnormalities as phenotypic 
 
 ## Results
 
-## Structure of pelagic larvae and visible phenotypes associated with crude oil exposure
+### Structure of pelagic larvae and visible phenotypes associated with crude oil exposure
 
-At a rearing temperature of 7°C, haddock embryos began hatching at 12 days post-fertilization (dpf). Unlike zebrafish that complete gastrulation (epiboly) before segmentation (somitogenesis) begins, haddock embryos begin forming anterior somites at about 50% epiboly (3 dpf). They subsequently reach the tailbud stage by 6 dpf (~30 somites), have a regular heartbeat by 8 dpf and completion of organogenesis at 10 dpf (
+At a rearing temperature of 7°C, haddock embryos began hatching at 12 days post-fertilization (dpf). Unlike zebrafish that complete gastrulation (epiboly) before segmentation (somitogenesis) begins, haddock embryos begin forming anterior somites at about 50% epiboly (3 dpf). They subsequently reach the tailbud stage by 6 dpf (~30 somites), have a regular heartbeat by 8 dpf and completion of organogenesis at 10 dpf (Fridgeirsson, 1978; Hall et al., 2004; Sørhus et al., 2016a). Haddock yolk sac larvae have the characteristic morphology associated with ichthyoplankton from pelagic marine habitats (Figure 1A), marked by a large marginal finfold that surrounds the larva nearly completely on both the dorsal and ventral sides. The outer epidermis is thus separated from the brain, main body axis muscles, and internal organs by a voluminous subdermal space. This space is filled with extracellular matrix (Morrison, 1993) and is continuous with an avascular yolk sac sinus, with connections between the dorsal space and the ventral yolk sac in the vicinity of the pectoral fin (Shelbourne, 1955). The subdermal space acts as a reservoir for water balance in order to maintain larval buoyancy (Shelbourne, 1955, 1956, 1957), with specialized cells regulating ion and water balance (ionocytes or mitochondria rich cells, MRCs) distributed throughout the adjacent epidermis (Shelbourne, 1957; Hirose et al., 2003; Hiroi et al., 2005).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig1-v2.jpg)
 
-**Figure 1.:** Control (A) and exposed (B) three days post hatch (dph) larvae (6 days post embryonic exposure). Open arrowheads in (A) indicate the marginal finfold surrounding the larvae and the white asterisk indicate the location of the connection between the dorsal space and the ventral yolk sac in the vicinity of the pectoral fin. In (B) the black arrowhead indicates severely reduced craniofacial outgrowth, while the black arrow indicates yolk sac edema. The ventricle and atrium in control (C) and embryonically exposed (D) animals are indicated by black and white arrows, respectively. (E) Normal craniofacial structure in control, and (F) moderate and (G) severe craniofacial defects in exposed animals. (H) Normal marginal finfold in control, (I) exposed animals with severe reduction of anterior marginal finfold (open arrowheads). Yolk mass (*) in control (J) and embryonically exposed larvae (K). (L) Control and (M) exposed 18 dph larvae. Open arrowheads indicate increased anterior marginal finfold, black arrowhead indicates reduced upper jaw outgrowth, and black arrow indicates edema formation in the peritoneal cavity in oil-exposed larvae (M). Scale bar: 0.2 mm (C,; DE–G; H–K) and 1 mm (A, and BL,).MDOI: http://dx.doi.org/10.7554/eLife.20707.003
+**Figure 1.:** Control (A) and exposed (B) three days post hatch (dph) larvae (6 days post embryonic exposure). Open arrowheads in (A) indicate the marginal finfold surrounding the larvae and the white asterisk indicate the location of the connection between the dorsal space and the ventral yolk sac in the vicinity of the pectoral fin. In (B) the black arrowhead indicates severely reduced craniofacial outgrowth, while the black arrow indicates yolk sac edema. The ventricle and atrium in control (C) and embryonically exposed (D) animals are indicated by black and white arrows, respectively. (E) Normal craniofacial structure in control, and (F) moderate and (G) severe craniofacial defects in exposed animals. (H) Normal marginal finfold in control, (I) exposed animals with severe reduction of anterior marginal finfold (open arrowheads). Yolk mass (*) in control (J) and embryonically exposed larvae (K). (L) Control and (M) exposed 18 dph larvae. Open arrowheads indicate increased anterior marginal finfold, black arrowhead indicates reduced upper jaw outgrowth, and black arrow indicates edema formation in the peritoneal cavity in oil-exposed larvae (M). Scale bar: 0.2 mm (C,D; E–G; H–K) and 1 mm (A,B and L,M).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Normally developed livers and neuromast cells are indicated by black arrows and arrowheads in control (A, C) and severely affected hunchback phenotypes (, BD), respectively. Scale bar 0.2 mm.DOI: http://dx.doi.org/10.7554/eLife.20707.004
+**Figure 1—figure supplement 1.:** Normally developed livers and neuromast cells are indicated by black arrows and arrowheads in control (A, C) and severely affected hunchback phenotypes (B, D), respectively. Scale bar 0.2 mm.
 
 Haddock embryos were continuously exposed to crude oil at environmentally relevant total PAH concentrations of 6.7 ± 0.2 µg/L (high dose) and 0.58 ± 0.05 µg/L (low dose), and intermittently at 6.1 µg/L (pulse dose). This yielded internal total PAH doses of 3.0 ± 1.3 µg/g wet weight, 0.19 ± 0.02 µg/g, and 0.22 ± 0.06 µg/g, respectively (see [Sørhus et al., 2016b] for experimental details). Although the low and pulsed exposures led to similar total PAH accumulation in embryos, phenotypes were slightly more severe in the latter due to relatively higher exposure concentrations during critical windows of early development (Sørhus et al., 2016b). The embryonic exposure began at 2 dpf and ended shortly after the end of organogenesis at 10 dpf, just prior to hatch. Larvae were exposed to the same regimen from day of hatch to 18 days post hatch (dph). As expected, tissue PAH accumulation was lower than for embryos, with 0.81 ± 0.18 µg/g, 0.086 ± 0.015 µg/g, and 0.081 ± 0.024 µg/g, for high, low, and pulse doses, respectively. Except where indicated below, phenotypes were quantified as described in detail previously (Sørhus et al., 2016b), with 96% of high-dose animals showing abnormal phenotypes, ranging to ~60% for pulse dose and ~35% for the low dose. Representative terminal phenotypes in high dose are shown in Figure 1 for the embryonic exposure at 3 dph and larval exposure at 18 dph. Grossly, as in other species, crude oil exposure led to defects in cardiac function and morphology and accumulation of edema around the heart and in the yolk sac (Figure 1B). Defects in cardiac morphology included a failure to properly loop the atrial and ventricular chambers from a linear to an adjacent orientation, and reduced size of the ventricle (Figure 1C,D). In addition, oil-exposed haddock embryos displayed craniofacial defects in their larval stages that ranged in severity (Figure 1E–G), from marked reductions in upper jaw/skull base structures (Figure 1F) to near complete lack of upper and lower jaws (Figure 1G). Moreover, the anterior portion of the dorsal marginal finfold was collapsed or missing and the hindbrain ventricle typically failed to fill with cerebrospinal fluid in embryonically exposed larvae with severe edema (Figure 1H,I). Finally, in more severely affected embryos, a failure of yolk absorption was obvious at 3 dph (Figure 1J,K). Even in mildly affected embryos, yolk absorption was reduced after hatch as assessed by measuring the two-dimensional area of the yolk mass in lateral images (control yolk area control 0.63 ± 0.06 mm2, low-dose group 0.90 ± 0.11, high-dose group 1.2 ± 0.3; mean ± s.d., ANOVA p<0.0001). In contrast, there was no measurable difference in yolk area at day of hatch. After larval exposure, the primary morphological defects were reduced jaw growth and edema accumulation (Figure 1L,M), the latter in the peritoneal cavity. In contrast to embryos, the dorsal anterior subdermal space accumulated fluid in larvae and did not collapse.
 
-Abnormal phenotypes relating to the formation of edema, heart function and morphogenesis, craniofacial structure, and yolk absorption manifested at different developmental time points during embryonic exposure and afterwards when embryos were transferred to clean water for hatching (
+Abnormal phenotypes relating to the formation of edema, heart function and morphogenesis, craniofacial structure, and yolk absorption manifested at different developmental time points during embryonic exposure and afterwards when embryos were transferred to clean water for hatching (Figure 2). Samples were collected for transcriptome profiling at four embryonic stages (E1-4, Figure 3A) and at two stages post-hatch (E5-6, Figure 3A). At 6 dpf (E2 sampling point; ~30 somites), embryos exposed to the high dose were indistinguishable from controls (Figure 2A). By 8 dpf, small accumulations of edema could be observed in the yolk sac of oil-exposed embryos, but their hindbrain ventricles were ‘inflated’ with fluid (Figure 2B). By 10 dpf (E3 sampling point), edema was evident in most embryos, typically filling the space above the yolk between the anterior of the head and the tail, and hindbrain ventricles lacked fluid (Figure 2C). Similarly, at 6 dpf/E2, heart development appeared unaffected in oil-exposed embryos and was at the un-rotated midline cone stage (Figure 2D). By 9 dpf (one day before sample E3), hearts in both control and high-dose-exposed embryos had rotated and were beginning to loop, but ventricular walls already appeared slightly thinner (Figure 2E) and heart rate was significantly slower (20 + 6 beats/min compared to 26 ± 3 beats/min for controls; [Sørhus et al., 2016b]). By day of hatch (E5 sampling), a high percentage (54%) of exposed embryos showed un-looped hearts with small, silent ventricles (Figure 2F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig2-v2.jpg)
 
-**Figure 2.:** In each panel control and high-dose-exposed embryos are shown on the left and right, respectively. (A–C) Lateral overview of whole embryos showing accumulation of edema (anterior to the left). (A) 6 dpf/E2 sampling point. (B) 8 dpf (between E2 and E3 sampling points). Heart (h) and liver bud (l) are indicated. White arrowheads indicate outer margins of the yolk sac membranes; asterisk indicates small pocket of edema. Black arrowheads indicate the hindbrain ventricle. (C) 10 dpf/E3 sampling point. Arrowheads same as (B); asterisks indicate expanded yolk sac edema. (D–E) High-magnification ventral views of the heart (anterior at top). (D) 6 dpf/E2. Dashed turquoise lines indicate outer border and lumen of midline cardiac cone. (E) 9 dpf (between E2 and E3). Arrows indicate the atrium (a), ventricle (v) and bulbus arteriosus (ba). (F) 0 dph (E5 sampling point). Chambers indicated as in (E). (G–I) Lateral views of the developing head (anterior to the left). (G) 8 dpf (between E2 and E3). (H) 0 dph (E5). Arrow indicates abnormal lower jaw cartilages in oil-exposed larva. (I) 3 dph (E6 sampling point). Red bars indicate difference in eye diameter between control and exposed larvae.DOI: http://dx.doi.org/10.7554/eLife.20707.005
+**Figure 2.:** In each panel control and high-dose-exposed embryos are shown on the left and right, respectively. (A–C) Lateral overview of whole embryos showing accumulation of edema (anterior to the left). (A) 6 dpf/E2 sampling point. (B) 8 dpf (between E2 and E3 sampling points). Heart (h) and liver bud (l) are indicated. White arrowheads indicate outer margins of the yolk sac membranes; asterisk indicates small pocket of edema. Black arrowheads indicate the hindbrain ventricle. (C) 10 dpf/E3 sampling point. Arrowheads same as (B); asterisks indicate expanded yolk sac edema. (D–E) High-magnification ventral views of the heart (anterior at top). (D) 6 dpf/E2. Dashed turquoise lines indicate outer border and lumen of midline cardiac cone. (E) 9 dpf (between E2 and E3). Arrows indicate the atrium (a), ventricle (v) and bulbus arteriosus (ba). (F) 0 dph (E5 sampling point). Chambers indicated as in (E). (G–I) Lateral views of the developing head (anterior to the left). (G) 8 dpf (between E2 and E3). (H) 0 dph (E5). Arrow indicates abnormal lower jaw cartilages in oil-exposed larva. (I) 3 dph (E6 sampling point). Red bars indicate difference in eye diameter between control and exposed larvae.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig3-v2.jpg)
 
-**Figure 3.:** (A) Embryos were exposed to a continuous high dose (black line; 6.7 ± 0.2 μg/L TPAH), a pulsed dose (red line; 0.09 ± 0.02–6.8 ± 1.0 μg/L TPAH) and a continuous low dose (blue line; 0.58 ± 0.05 μg/L TPAH) of crude oil. Photos indicate normal developmental progress at each of six sampling time points (E1–E6). Venn diagrams show shared and exclusive DEGs for each of the three oil exposures at E1–E6. (B) Venn diagrams illustrating the number of shared and exclusive DEGs at each stage in development up to hatching for the three exposure regimes.DOI: http://dx.doi.org/10.7554/eLife.20707.006
+**Figure 3.:** (A) Embryos were exposed to a continuous high dose (black line; 6.7 ± 0.2 μg/L TPAH), a pulsed dose (red line; 0.09 ± 0.02–6.8 ± 1.0 μg/L TPAH) and a continuous low dose (blue line; 0.58 ± 0.05 μg/L TPAH) of crude oil. Photos indicate normal developmental progress at each of six sampling time points (E1–E6). Venn diagrams show shared and exclusive DEGs for each of the three oil exposures at E1–E6. (B) Venn diagrams illustrating the number of shared and exclusive DEGs at each stage in development up to hatching for the three exposure regimes.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Pathways (Total) with highest number of DEGs ≥2 FC during and after embryonic exposure. (B) Pathways with the largest fraction of DEGs ≥2 FC/ Total number of genes in pathway (Normalized) during and after embryonic exposure.DOI: http://dx.doi.org/10.7554/eLife.20707.007
+**Figure 3—figure supplement 1.:** (A) Pathways (Total) with highest number of DEGs ≥2 FC during and after embryonic exposure. (B) Pathways with the largest fraction of DEGs ≥2 FC/ Total number of genes in pathway (Normalized) during and after embryonic exposure.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Genes include cp1a (cytochrome p450 1 a), wnt11 (wingless-type MMTV integration site family member 11), kcnh2 (potassium voltage-gated channel subfamily H member 2), cac1c (voltage-dependent L-type calcium channel), nac1 (sodium/calcium exchanger 1), at2a2 (sarcoplamsic-endoplasmic reticulum calcium ATPase). (A) Real-time qPCR. (B) Read count data from RNA sequencing. Data were normalized as described in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.20707.008
+**Figure 3—figure supplement 2.:** Genes include cp1a (cytochrome p450 1 a), wnt11 (wingless-type MMTV integration site family member 11), kcnh2 (potassium voltage-gated channel subfamily H member 2), cac1c (voltage-dependent L-type calcium channel), nac1 (sodium/calcium exchanger 1), at2a2 (sarcoplamsic-endoplasmic reticulum calcium ATPase). (A) Real-time qPCR. (B) Read count data from RNA sequencing. Data were normalized as described in Materials and methods.
 
 Onset of craniofacial abnormalities took a longer course. At 8 dpf (2 days before sample E3), head structures appeared identical in control and exposed embryos (Figure 2G). At hatch (E5 sample), jaw structures appeared somewhat abnormal (Figure 2H) but became much more strikingly severe by 3 dph (E6 sample; Figure 2I). Notably, the eyes appeared smaller in exposed embryos by 3 dph (Figure 2I). We did not quantify this effect, because it was demonstrated earlier in zebrafish that small eyes result from loss of cardiac function by either genetic or chemical means (Incardona et al., 2004), and hence, this phenotype is not specific to crude oil toxicity.
 
 Other organs and structures were apparently unaffected by oil exposure. For example, the development of the liver and lateral line neuromasts progressed normally even in the most severely impacted larvae that were exposed as embryos (Figure 1—figure supplement 1A–D).
 
-## Oil-induced changes in gene expression during embryonic development
+### Oil-induced changes in gene expression during embryonic development
 
-Relative to unexposed controls, differently expressed genes (DEGs) in oil-exposed fish were defined as having significantly (p<0.05) higher or lower levels of expression. The number of exclusive and shared DEGs varied across exposure regime and haddock developmental age (Figure 3B). After 24 hr of oil exposure (sampling stage E1; 3 dpf), relatively few genes were differentially expressed, and most were significantly downregulated (Supporting dataset 1, Sørhus et al., 2017). From sampling point E2 (6 dpf) through E6 (three days post hatch, dph), however, the number of DEGs was substantial, particularly in response to the high dose exposure. With the exception of the initial sampling point (E1), a total of 28 DEGs were shared across all embryonic stages (Table 1). As expected, the largest category (nine DEGs) included genes associated with stress response and xenobiotic metabolism. The remaining genes play a role in tyrosine catabolism, myofibrillar establishment and cardiac tissue repair, central nervous system (CNS) function and degeneration, ATP metabolism, and cholesterol synthesis.10.7554/eLife.20707.009Table 1.Genes expressed at all stages during and after embryonic exposure (E2–E6) in high dose group. SP, swissprot; GB, genebank; IE; increased expression; DE; decreased expression.DOI: http://dx.doi.org/10.7554/eLife.20707.009Cod ID Swissprot annotation SP ID GB ID Category Regulation ENSGMOG00000018302Fumarylacetoacetasefaaa fah Tyrosine metabolismIEENSGMOG00000000318Cytochrome P450 1A1cp1a1 cyp1a1 xenobiotic metabolism and stressIEENSGMOG00000012518Glutathione S-transferase Pgstp1 gstp1 xenobiotic metabolism and stressIEENSGMOG00000016016Glutathione S-transferase omega-1gsto1 gsto1 xenobiotic metabolism and stressIEENSGMOG000000187523-hydroxyanthranilate 3,4-dioxygenase3hao haao xenobiotic metabolism and stressIEENSGMOG000000067963-beta-hydroxysteroid-Delta(8),Delta(7)-isomeraseebp ebp xenobiotic metabolism and stressIEENSGMOG00000007636Glutamine synthetaseglna glul xenobiotic metabolism and stressIEENSGMOG00000015234Heat shock protein HSP 90-alphah90a1 hsp90a.1 xenobiotic metabolism and stressIEENSGMOG00000012029Peptidyl-prolyl cis-trans isomeraseppia - xenobiotic metabolism and stressIEENSGMOG00000000218Ammonium transporter Rh type A OS=Musrhag rhag xenobiotic metabolism and stressMainly IEENSGMOG00000003353Ferritin, middle subunitfrim - xenobiotic metabolism and stressIEENSGMOG00000018206Filamin-Cflnc Flnc myofibrillar establishment and repairIEENSGMOG00000001317Iron-sulfur cluster assembly enzyme ISCU, mitochondrialiscu Iscu cardiac defectsIEENSGMOG00000010446Fatty acid-binding protein, heartfabph fabp3 cardiac defects and repairIEENSGMOG00000007115Lanosterol 14-alpha demethylasecp51a cyp51a1 Cholesterol syntheisIEENSGMOG00000005565Squalene monooxygenaseerg1 Sqle Cholesterol syntheisIEENSGMOG00000018991Farnesyl pyrophosphate synthasefpps fdps Cholesterol syntheisIEENSGMOG000000057743-hydroxy-3-methylglutaryl-coenzyme A reductasehmdh hmgcr Cholesterol syntheisIEENSGMOG00000015657Epididymal secretory proteinnpc2 npc2 Cholesterol syntheisIEENSGMOG00000001249Putative adenosylhomocysteinasesahh3 ahcyl2 cardiac defectsDEENSGMOG00000013374Peptide Y OS=Dicentrarchuspy - CNS function and developmentIEENSGMOG00000014820Complement C1q-like proteinc1ql2 c1ql2 CNS function and developmentIEENSGMOG00000017148Augurin-A OS=Danio rerioaugna zgc:112443 CNS function and developmentIEENSGMOG00000001072C-4 methylsterol oxidaseerg25 sc4mol CNS function and developmentIEENSGMOG00000013980Fatty acid-binding protein, brainfabp7 fabp7 CNS function and developmentIEENSGMOG00000014938Maltase-glucoamylase, intestinalmga mgam ATP metabolismIEENSGMOG00000003530ADP/ATP translocaseadt3 slc25a6 ATP metabolismDEENSGMOG00000006172IEF0762 protein C6orf58 homologcf058 - not knownIE
+Relative to unexposed controls, differently expressed genes (DEGs) in oil-exposed fish were defined as having significantly (p<0.05) higher or lower levels of expression. The number of exclusive and shared DEGs varied across exposure regime and haddock developmental age (Figure 3B). After 24 hr of oil exposure (sampling stage E1; 3 dpf), relatively few genes were differentially expressed, and most were significantly downregulated (Supporting dataset 1, Sørhus et al., 2017). From sampling point E2 (6 dpf) through E6 (three days post hatch, dph), however, the number of DEGs was substantial, particularly in response to the high dose exposure. With the exception of the initial sampling point (E1), a total of 28 DEGs were shared across all embryonic stages (Table 1). As expected, the largest category (nine DEGs) included genes associated with stress response and xenobiotic metabolism. The remaining genes play a role in tyrosine catabolism, myofibrillar establishment and cardiac tissue repair, central nervous system (CNS) function and degeneration, ATP metabolism, and cholesterol synthesis.
 
-## Oil-induced changes in gene expression during larval development
+**Table 1.**
+ Genes expressed at all stages during and after embryonic exposure (E2–E6) in high dose group. SP, swissprot; GB, genebank; IE; increased expression; DE; decreased expression.
 
-Haddock larvae under the same three exposure regimes were transcriptionally profiled at five distinct developmental stages (L1-5;
+
+<table>
+  <thead>
+    <tr>
+      <th>Cod ID</th>
+      <th>Swissprot annotation</th>
+      <th>SP ID</th>
+      <th>GB ID</th>
+      <th>Category</th>
+      <th>Regulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ENSGMOG00000018302</td>
+      <td>Fumarylacetoacetase</td>
+      <td>faaa</td>
+      <td>fah</td>
+      <td>Tyrosine metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000000318</td>
+      <td>Cytochrome P450 1A1</td>
+      <td>cp1a1</td>
+      <td>cyp1a1</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000012518</td>
+      <td>Glutathione S-transferase P</td>
+      <td>gstp1</td>
+      <td>gstp1</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000016016</td>
+      <td>Glutathione S-transferase omega-1</td>
+      <td>gsto1</td>
+      <td>gsto1</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000018752</td>
+      <td>3-hydroxyanthranilate 3,4-dioxygenase</td>
+      <td>3hao</td>
+      <td>haao</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000006796</td>
+      <td>3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase</td>
+      <td>ebp</td>
+      <td>ebp</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000007636</td>
+      <td>Glutamine synthetase</td>
+      <td>glna</td>
+      <td>glul</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000015234</td>
+      <td>Heat shock protein HSP 90-alpha</td>
+      <td>h90a1</td>
+      <td>hsp90a.1</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000012029</td>
+      <td>Peptidyl-prolyl cis-trans isomerase</td>
+      <td>ppia</td>
+      <td>-</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000000218</td>
+      <td>Ammonium transporter Rh type A OS=Mus</td>
+      <td>rhag</td>
+      <td>rhag</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>Mainly IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000003353</td>
+      <td>Ferritin, middle subunit</td>
+      <td>frim</td>
+      <td>-</td>
+      <td>xenobiotic metabolism and stress</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000018206</td>
+      <td>Filamin-C</td>
+      <td>flnc</td>
+      <td>Flnc</td>
+      <td>myofibrillar establishment and repair</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000001317</td>
+      <td>Iron-sulfur cluster assembly enzyme ISCU, mitochondrial</td>
+      <td>iscu</td>
+      <td>Iscu</td>
+      <td>cardiac defects</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000010446</td>
+      <td>Fatty acid-binding protein, heart</td>
+      <td>fabph</td>
+      <td>fabp3</td>
+      <td>cardiac defects and repair</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000007115</td>
+      <td>Lanosterol 14-alpha demethylase</td>
+      <td>cp51a</td>
+      <td>cyp51a1</td>
+      <td>Cholesterol syntheis</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000005565</td>
+      <td>Squalene monooxygenase</td>
+      <td>erg1</td>
+      <td>Sqle</td>
+      <td>Cholesterol syntheis</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000018991</td>
+      <td>Farnesyl pyrophosphate synthase</td>
+      <td>fpps</td>
+      <td>fdps</td>
+      <td>Cholesterol syntheis</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000005774</td>
+      <td>3-hydroxy-3-methylglutaryl-coenzyme A reductase</td>
+      <td>hmdh</td>
+      <td>hmgcr</td>
+      <td>Cholesterol syntheis</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000015657</td>
+      <td>Epididymal secretory protein</td>
+      <td>npc2</td>
+      <td>npc2</td>
+      <td>Cholesterol syntheis</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000001249</td>
+      <td>Putative adenosylhomocysteinase</td>
+      <td>sahh3</td>
+      <td>ahcyl2</td>
+      <td>cardiac defects</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000013374</td>
+      <td>Peptide Y OS=Dicentrarchus</td>
+      <td>py</td>
+      <td>-</td>
+      <td>CNS function and development</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000014820</td>
+      <td>Complement C1q-like protein</td>
+      <td>c1ql2</td>
+      <td>c1ql2</td>
+      <td>CNS function and development</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000017148</td>
+      <td>Augurin-A OS=Danio rerio</td>
+      <td>augna</td>
+      <td>zgc:112443</td>
+      <td>CNS function and development</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000001072</td>
+      <td>C-4 methylsterol oxidase</td>
+      <td>erg25</td>
+      <td>sc4mol</td>
+      <td>CNS function and development</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000013980</td>
+      <td>Fatty acid-binding protein, brain</td>
+      <td>fabp7</td>
+      <td>fabp7</td>
+      <td>CNS function and development</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000014938</td>
+      <td>Maltase-glucoamylase, intestinal</td>
+      <td>mga</td>
+      <td>mgam</td>
+      <td>ATP metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000003530</td>
+      <td>ADP/ATP translocase</td>
+      <td>adt3</td>
+      <td>slc25a6</td>
+      <td>ATP metabolism</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000006172</td>
+      <td>IEF0762 protein C6orf58 homolog</td>
+      <td>cf058</td>
+      <td>-</td>
+      <td>not known</td>
+      <td>IE</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oil-induced changes in gene expression during larval development
+
+Haddock larvae under the same three exposure regimes were transcriptionally profiled at five distinct developmental stages (L1-5; Figure 4A). Relative to embryos, transcriptional responses to crude oil-exposed haddock larvae were more subtle at 1, 2, and 9 dph (L1-3). This was followed by marked changes in gene expression at 14 dph (L4) for the high dose and for all treatments at 18 dph (L5) (Supporting dataset 2, Sørhus et al., 2017). In the high-dose group, nearly 1000 of the >3000 DEGs at L4 and L5 were shared (Figure 4B). However, for the high-dose treatment, only eight genes were shared across all larval stages. As expected, five of these genes are involved in xenobiotic metabolism (Table 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig4-v2.jpg)
 
-**Figure 4.:** (A) Larvae were exposed to a continuous high dose (black line; 7.6 ± 0.7 μg/L TPAH), a pulsed dose (red line; 0.3 ± 0.3–6.1 ± 0.5 μg/L TPAH), and a continuous low dose (blue line; 0.65 ± 0.08 μg/L TPAH) of crude oil. Photos indicate normal developmental progress at each of five sampling time points (L1–L5). Venn diagrams show shared and exclusive DEGs for each of the three oil exposures at L1–5. (B) Venn diagrams illustrating the number of shared and exclusive DEGs at each larval stage for the three exposure regimes.DOI: http://dx.doi.org/10.7554/eLife.20707.010
+**Figure 4.:** (A) Larvae were exposed to a continuous high dose (black line; 7.6 ± 0.7 μg/L TPAH), a pulsed dose (red line; 0.3 ± 0.3–6.1 ± 0.5 μg/L TPAH), and a continuous low dose (blue line; 0.65 ± 0.08 μg/L TPAH) of crude oil. Photos indicate normal developmental progress at each of five sampling time points (L1–L5). Venn diagrams show shared and exclusive DEGs for each of the three oil exposures at L1–5. (B) Venn diagrams illustrating the number of shared and exclusive DEGs at each larval stage for the three exposure regimes.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Pathways (Total) with highest number of DEGs ≥2 FC during larval exposure. (B) Pathways with the largest fraction of DEGs ≥2 FC/ Total number of genes in pathway (Normalized) during and after embryonic exposure.DOI: http://dx.doi.org/10.7554/eLife.20707.011
+**Figure 4—figure supplement 1.:** (A) Pathways (Total) with highest number of DEGs ≥2 FC during larval exposure. (B) Pathways with the largest fraction of DEGs ≥2 FC/ Total number of genes in pathway (Normalized) during and after embryonic exposure.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Genes include cp1a (cytochrome p450 1 a), wnt11, kcnh2 (potassium voltage-gated channel subfamily H member 2), cac1c (voltage-dependent L-type calcium channel), nac1 (sodium/calcium exchanger 1), and at2a2 (sarcoplamsic-endoplasmic reticulum calcium ATPase). (A) Real-time qPCR. (B) Read count data from RNA sequencing. Data were normalized as described in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.20707.012
+**Figure 4—figure supplement 2.:** Genes include cp1a (cytochrome p450 1 a), wnt11, kcnh2 (potassium voltage-gated channel subfamily H member 2), cac1c (voltage-dependent L-type calcium channel), nac1 (sodium/calcium exchanger 1), and at2a2 (sarcoplamsic-endoplasmic reticulum calcium ATPase). (A) Real-time qPCR. (B) Read count data from RNA sequencing. Data were normalized as described in Materials and methods.
 
-## General patterns of gene expression in response to crude oil
+**Table 2.**
+ Genes expressed at all stages during larval exposure (L1–L5) in high-dose group. SP, swissprot; GB, genebank; IE; increased expression; DE; decreased expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cod ID</th>
+      <th>Swissprot annotation</th>
+      <th>SP ID</th>
+      <th>GB ID</th>
+      <th>Category</th>
+      <th>Regulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ENSGMOG00000009114</td>
+      <td>Aryl hydrocarbon receptor repressor</td>
+      <td>ahrr</td>
+      <td>ahrr</td>
+      <td>Xenobiotic metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000020141</td>
+      <td>Cytochrome P450 1B1</td>
+      <td>cp1b1</td>
+      <td>cyp1b1</td>
+      <td>Xenobiotic metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000006842</td>
+      <td>Cytochrome P450 1B1</td>
+      <td>cp1b1</td>
+      <td>cyp1b1</td>
+      <td>Xenobiotic metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000019790</td>
+      <td>Cytochrome P450 1B1</td>
+      <td>cp1b1</td>
+      <td>cyp1b1</td>
+      <td>Xenobiotic metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000000318</td>
+      <td>Cytochrome P450 1A1</td>
+      <td>cp1a1</td>
+      <td>cyp1a1</td>
+      <td>Xenobiotic metabolism</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000014967</td>
+      <td>Keratinocyte growth factor</td>
+      <td>fgf7</td>
+      <td>fgf7</td>
+      <td>Myocardial development and tissue repair</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000020500</td>
+      <td>Forkhead box protein Q1</td>
+      <td>foxq1</td>
+      <td>foxq1</td>
+      <td>Transcription factor</td>
+      <td>IE</td>
+    </tr>
+    <tr>
+      <td>ENSGMOG00000000218</td>
+      <td>Ammonium transporter Rh type A</td>
+      <td>rhag</td>
+      <td>rhag</td>
+      <td>Gas transport</td>
+      <td>IE</td>
+    </tr>
+  </tbody>
+</table>
+
+### General patterns of gene expression in response to crude oil
 
 Read count data from the RNA-Seq closely matched expected abundances based on tissue-specific expression patterns for orthologous genes in zebrafish, available in the expression database at www.zfin.org (Supplementary file 1A), and generally correlated with the overall mass of the contributing tissues. Genes known to have tightly restricted cardiac expression generally had read count values below 100, with bmp10 and kcnh2 just above detection limits (10 reads). At the onset of expression in zebrafish, bmp10 transcripts are detected by in situ hybridization in perhaps fewer than 100 cells (Laux et al., 2013). In contrast, bmp4 is more widely expressed in zebrafish at the segmentation stage, including the eye, tailbud, and epidermis in addition to the heart. As expected, this gene had a correspondingly higher read count (265) in haddock. Genes expressed more strongly throughout the entire heart tube had read counts above 60 (e.g. nkx2.5 at 85 and fhl2 at 65). The cardiac-specific Serca2 isoform (atp2a2) had a read count of 312, while the isoform expressed in skeletal muscle (atp2a1) had a read count of 9114. Similarly, read counts for the atrial-specific isoform of myosin heavy chain (myh6) and the major skeletal muscle isoform myh1 were 176 and 2543, respectively. Genes expressed in the neural tube, a tissue mass much larger than the heart but less than the myotomes, had intermediate read counts that also fit with their relative expression patterns. For example, pax6 and nkx2.2 had read counts of 1773 and 333, respectively, with pax6 expressed in a fairly wide dorsal domain of the neural tube, and nkx2.2 expressed in a narrower ventral region.
 
-We characterized pathways affected by oil exposure using three methods: extensive manual curation, KEGG Pathway Mapping, and Ingenuity Pathway Analysis (IPA; see Materials and methods). As detailed in the following sections, our manual curation identified specific patterns of gene expression in the context of cardiotoxicity, craniofacial deformities, disrupted ion and water balance, and disrupted cholesterol homeostasis. These same pathways were identified with statistical rigor using IPA and KEGG. Moreover, IPA demonstrated enrichment for these pathways at developmental time points that preceded the onset of visible phenotypes, and a lack of enrichment for pathways associated with structures that were phenotypically normal (Table 3).10.7554/eLife.20707.014Table 3.Time course of pathway enrichment relating to affected and unaffected developmental and functional phenotypes.DOI: http://dx.doi.org/10.7554/eLife.20707.014Phenotype†Development stage*3 dpf/E16 dpf/E210 dpf/E311 dpf/E40 Dph/E5three Dph/E6Cardiovascular0 (0/8) 22.4 (11/49) 5.7 (4/70) 7.0 (4/57) 4.7 (2/43) 2.1 (1/48) Craniofacial0 (0/8) 12.2 (6/49) 10 (7/70) 5.3 (3/57) 7.0 (3/43) 2.1 (1/48) Liver12.5 (1/8) 0 (0/49) 5.7 (4/70) 8.8 (5/57) 0 (0/43) 0 (0/48) Eye0 (0/8) 4.1 (2/49) 20 (14/70) 48.6 (17/35) 51.2 (22/43) 50.0 (24/48) Osmoregulation--43.3 (13/30) 29.3 (12/41) 15.0 (3/20) 16 (4/25) --Cholesterol0/300 (0/27) 27.1 (13/48) 31.3 (10/32) 25.5 (12/47) --Lipid0/3040.7 (11/27) 35.4 (17/48) 50.0 (16/32) 48.9 (23/47) --*Percentage of total enriched pathways (absolute values).†Numbers of affected pathways representing Cardiovascular, Craniofacial, Liver and Eye were extracted from the combined Development category in IPA results; numbers of pathways representing osmoregulation/ion transport were extracted from the Molecular Transport category; numbers of pathways affecting Cholesterol/sterol metabolism and other non-cholesterol lipids (Lipid) were extracted from the Lipid Metabolism category.
+We characterized pathways affected by oil exposure using three methods: extensive manual curation, KEGG Pathway Mapping, and Ingenuity Pathway Analysis (IPA; see Materials and methods). As detailed in the following sections, our manual curation identified specific patterns of gene expression in the context of cardiotoxicity, craniofacial deformities, disrupted ion and water balance, and disrupted cholesterol homeostasis. These same pathways were identified with statistical rigor using IPA and KEGG. Moreover, IPA demonstrated enrichment for these pathways at developmental time points that preceded the onset of visible phenotypes, and a lack of enrichment for pathways associated with structures that were phenotypically normal (Table 3).
+
+**Table 3.**
+ Time course of pathway enrichment relating to affected and unaffected developmental and functional phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Phenotype†</th>
+      <th colspan="6">Development stage*</th>
+    </tr>
+    <tr>
+      <th>3 dpf/E1</th>
+      <th>6 dpf/E2</th>
+      <th>10 dpf/E3</th>
+      <th>11 dpf/E4</th>
+      <th>0 Dph/E5</th>
+      <th>three Dph/E6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cardiovascular</td>
+      <td>0 (0/8)</td>
+      <td>22.4 (11/49)</td>
+      <td>5.7 (4/70)</td>
+      <td>7.0 (4/57)</td>
+      <td>4.7 (2/43)</td>
+      <td>2.1 (1/48)</td>
+    </tr>
+    <tr>
+      <td>Craniofacial</td>
+      <td>0 (0/8)</td>
+      <td>12.2 (6/49)</td>
+      <td>10 (7/70)</td>
+      <td>5.3 (3/57)</td>
+      <td>7.0 (3/43)</td>
+      <td>2.1 (1/48)</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>12.5 (1/8)</td>
+      <td>0 (0/49)</td>
+      <td>5.7 (4/70)</td>
+      <td>8.8 (5/57)</td>
+      <td>0 (0/43)</td>
+      <td>0 (0/48)</td>
+    </tr>
+    <tr>
+      <td>Eye</td>
+      <td>0 (0/8)</td>
+      <td>4.1 (2/49)</td>
+      <td>20 (14/70)</td>
+      <td>48.6 (17/35)</td>
+      <td>51.2 (22/43)</td>
+      <td>50.0 (24/48)</td>
+    </tr>
+    <tr>
+      <td>Osmoregulation</td>
+      <td>--</td>
+      <td>43.3 (13/30)</td>
+      <td>29.3 (12/41)</td>
+      <td>15.0 (3/20)</td>
+      <td>16 (4/25)</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Cholesterol</td>
+      <td>0/30</td>
+      <td>0 (0/27)</td>
+      <td>27.1 (13/48)</td>
+      <td>31.3 (10/32)</td>
+      <td>25.5 (12/47)</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Lipid</td>
+      <td>0/30</td>
+      <td>40.7 (11/27)</td>
+      <td>35.4 (17/48)</td>
+      <td>50.0 (16/32)</td>
+      <td>48.9 (23/47)</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Percentage of total enriched pathways (absolute values).†Numbers of affected pathways representing Cardiovascular, Craniofacial, Liver and Eye were extracted from the combined Development category in IPA results; numbers of pathways representing osmoregulation/ion transport were extracted from the Molecular Transport category; numbers of pathways affecting Cholesterol/sterol metabolism and other non-cholesterol lipids (Lipid) were extracted from the Lipid Metabolism category._
 
 At all stages, the IPA subcategory of Organismal Development or Embryonic Development (henceforth combined as Development) was in the top 5 Diseases and Bio Functions category under Physiological System Development and Function with p values ranging from 10−3 to 10−19 (Tables 2 and 3). Counts of the number of pathways specifically involving the cardiovascular system showed that no pathways were affected at E1 (3 dpf, 50% epiboly/cardiac progenitor stage), while the heart represented 22% of the affected Development pathways at 6 dpf/E2, the cardiac cone stage at which there was no visible phenotype (Table 3). The number of cardiovascular pathways fell to 5.7% at 10 dpf/E3, by which point hearts were visibly abnormal, falling to only one or two affected pathways at hatching stages (E5 and E6).
 
@@ -126,47 +540,47 @@ During larval exposure at the first three sampling stages a small number of gene
 
 Finally, four genes stood out as unique for (1) being highly upregulated in both embryos and larvae, (2) their non-affiliation with a larger network or pathway, and (3) their potential connections to visible phenotypes. These included collagen and calcium-binding EGF-like domain 1 (ccbe1), the ammonia transporter rhag, forkhead box transcription factor foxq1, and fibroblast growth factor fgf7 (Table 1, Supplementary file 1D). The following sections identify specific patterns of gene expression in the context of cardiotoxicity, craniofacial deformities, disrupted ion and water balance, and disrupted cholesterol homeostasis.
 
-## Genes associated with defects in cardiac function and morphogenesis
+### Genes associated with defects in cardiac function and morphogenesis
 
-As noted above, early formation of the heart was not affected by crude oil exposure, but morphological defects followed after functional defects were first observed at 9 dpf (bradycardia). In addition, morphology became more severely impacted over time, with later defects including failure of looping and poor ventricular growth becoming prominent by 0 dph/E5. There are several possible etiologies for ventricular size reduction. For example, although the precise mechanism by which intracellular calcium regulates embryonic cardiomyocyte proliferation is still unknown, a disruption of calcium cycling could reduce proliferation, thereby yielding fish with smaller hearts (
+As noted above, early formation of the heart was not affected by crude oil exposure, but morphological defects followed after functional defects were first observed at 9 dpf (bradycardia). In addition, morphology became more severely impacted over time, with later defects including failure of looping and poor ventricular growth becoming prominent by 0 dph/E5. There are several possible etiologies for ventricular size reduction. For example, although the precise mechanism by which intracellular calcium regulates embryonic cardiomyocyte proliferation is still unknown, a disruption of calcium cycling could reduce proliferation, thereby yielding fish with smaller hearts (Rottbauer et al., 2001; Ebert et al., 2005). We therefore focused on genes involved in cardiac morphogenesis. The earliest alteration was a fourfold increase in the signaling molecule, bmp10 at 6 dpf/E2 while the heart was at the midline cone stage, and appeared unaffected in oil-exposed embryos (Figure 5, Supplementary file 1E). IPA also identified Bmp signaling as a significantly enriched pathway at this time point, under the Organismal Development category. Elevation of bmp10 was followed by the upregulation of the cardiac transcription factor nkx25, to a threefold increase at 10 dpf/E4 and a nearly sixfold increase at 11dpf/E5, when the heart was beating regularly. At hatch (0 dph), the expression of the transcription factor tbx3 was elevated eightfold. Lastly, atrial natriuretic factor (nppa), a key homeostatic regulator of contractility, was downregulated by 2.3-fold in larvae at 3 dph (Figure 5, Supplementary file 1E). Notably, overexpression of bmp10, nkx25, or tbx3 is associated with serious heart defects in other vertebrates (Chen et al., 2006; Ribeiro et al., 2007; Tu et al., 2009).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig5-v2.jpg)
 
-**Figure 5.:** Regulation of genes involved in cardiogenesis during and after embryonic exposure. Purple: increased expression, red: decreased expression in exposed group.DOI: http://dx.doi.org/10.7554/eLife.20707.015
+**Figure 5.:** Regulation of genes involved in cardiogenesis during and after embryonic exposure. Purple: increased expression, red: decreased expression in exposed group.
 
 Crude oil exposures caused functional defects in the developing haddock heart, in the form of bradycardia, ventricular asystole and decreased contractility in embryos and partial atrio-ventricular conduction blockade in larvae (Sørhus et al., 2016b). This is consistent with disruption of the rhythmic fluxes of Ca2+ and K+ ions that regulate E-C coupling in heart muscle cells (Brette et al., 2014). We therefore focused on genes associated with cardiomyocyte membrane potential and intracellular Ca2+ cycling—for example, sarcoplasmic reticulum calcium ATPases (SERCAs) and the ryanodine receptor (RyR) ([Sørhus et al., 2016a], Supplementary file 1F and 1G ). We found three paralogs for at2a2 (Serca2) that were present at very different read count values (~300, 900, and 4000 at 6 dpf/E2). The two more abundant paralogs were transiently down-regulated in oil-exposed embryos at 6 dpf/E2, prior to the onset of functional and morphological defects, while the third paralog was down-regulated at 0 dph/E5 (Figure 6, Supplementary file 1H). Similarly, there were four nac1 paralogs that were all low abundance, and one was transiently down-regulated with the at2a2 genes at 6 dpf. Finally, the kcnh2 gene contributing to the repolarizing K+ current was down-regulated ninefold at hatch/E5. There were effects on a few other E-C coupling genes, but these had very high read counts, and are therefore likely to be associated with skeletal muscle. These included two at2a1 (serca1) paralogs that had opposite responses, and atpa.
 
 A different picture emerged from the larval exposure. Changes in expression of E-C coupling genes occurred after the onset of functional defects (AV block arrhythmia). No changes in cardiac E-C coupling genes were observed at the L3/9 dph time point when larvae showed AV block. Six days later (L4), there was fourfold down-regulation of a nac1 paralog with the lowest read count value and an at2a2 paralog with the highest value. At this stage there was up-regulation of two kcnj2 paralogs (encoding potassium channels), two high abundance at2a1 paralogs, and a low abundance scn2a paralog. At 18 dph/L5, one paralog each of at2a1 and kcnj2 remained elevated, while atpa was elevated, and the kcnj12 potassium channel gene were down-regulated, the latter strongly (~6 fold).
 
-## Genes associated with craniofacial abnormalities
+### Genes associated with craniofacial abnormalities
 
 Craniofacial structures that shape the head include cartilage derived from neural crest cells and muscles that develop from paraxial mesoderm. Neural crest cells migrate from the anterior neural tube to form the pharyngeal arches with both dorsal (upper jaw) and ventral (lower jaw) patterning. They then differentiate into chondrocytes (Knight and Schilling, 2006; Simões-Costa and Bronner, 2015) and grow by processes such as convergence-extension (Shwartz et al., 2012; Kamel et al., 2013). Concurrently, mesodermal cells differentiate into patterned muscle in appropriate association with partner cartilage. Several lines of evidence suggest multidirectional signaling between all associated tissues, including endoderm (i.e. pharyngeal pouches), mesoderm, and overlying ectoderm (Minoux and Rijli, 2010; Medeiros and Crump, 2012; Kamel et al., 2013; Kong et al., 2014). Studies on zebrafish craniofacial mutants have primarily focused on the neural crest cell lineage, with less attention to muscle development or interactions between developing muscle and cartilage (Lin et al., 2013). Defects in oil-exposed haddock were marked by a dose-dependent reduction in more anterior cartilages (Figure 1E–G). This affected the basicranium most severely, with progressive loss of more posterior arch derivatives. Where present, craniofacial cartilage appeared small and distorted, without transformation to dorsal or ventral fates. This morphometry superficially aligns to several zebrafish mutants affecting either neural crest cell (Kimmel et al., 2001; Nissen et al., 2006; Lu and Carson, 2009; Kamel et al., 2013) or muscle development (Hinits et al., 2011; Shwartz et al., 2012). We therefore interpreted developmental changes in haddock gene expression in the context of these well-characterised zebrafish mutants.
 
-The expression patterns of 12 genes with known roles in neural crest cell-dependent craniofacial development were significantly altered in the highest exposure regime (
+The expression patterns of 12 genes with known roles in neural crest cell-dependent craniofacial development were significantly altered in the highest exposure regime (Figure 6). Read counts for these genes were all relatively low, consistent with highly restricted tissue-specific expression patterns (Supporting dataset 1, Sørhus et al., 2017). At 6 dpf, prior to visible craniofacial malformation, we observed lower expression levels of foxi1 (pharyngeal pouches) wnt9b (ectoderm), fgfr2 (chondrocytes), and fgfr3 (chondrocytes) compared to control (Figure 7A). The downregulation of wnt9b and fgfr2 persisted to 10 dpf, together with a downregulation of tgfb3 and two sox9b paralogues, the latter also expressed in neural crest cell-derived chondrocytes. Conversely, edn1, dlx3b, and dlx5a were upregulated at 10 dpf. In zebrafish embryos the two dlx genes are normally expressed in endoderm and arch neural crest cell-derived mesenchyme (Talbot et al., 2010). At 11 dpf, expression levels were down for fgfr2, fzd7a (a receptor for Wnt9b; chondrocytes), and tgfb3 and up for edn1 and dlx3b. None of these genes were differentially expressed after hatching (Figure 7A, Supplementary file 1I).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig6-v2.jpg)
 
-**Figure 6.:** Embryonic developmental samples (E1–6) were collected during (black lettering) and after (blue lettering) crude oil exposure. Oil exposure was continuous across the larval sampling points (L1–5).DOI: http://dx.doi.org/10.7554/eLife.20707.016
+**Figure 6.:** Embryonic developmental samples (E1–6) were collected during (black lettering) and after (blue lettering) crude oil exposure. Oil exposure was continuous across the larval sampling points (L1–5).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig7-v2.jpg)
 
-**Figure 7.:** (a) Regulation of genes involved in craniofacial development during and after embryonic exposure. (b) Regulation of myosin heavy chain genes. Purple: increased expression, red: decreased expression in exposed group.DOI: http://dx.doi.org/10.7554/eLife.20707.017
+**Figure 7.:** (a) Regulation of genes involved in craniofacial development during and after embryonic exposure. (b) Regulation of myosin heavy chain genes. Purple: increased expression, red: decreased expression in exposed group.
 
 Genes controlling craniofacial muscle patterning are poorly characterised; however, muscle determination factors (e.g., myod, myf6 [Li et al., 2014]) appeared unaffected in oil-exposed haddock. Nevertheless, expression levels were significantly reduced for genes involved in the terminal differentiation of skeletal muscle cells, including several myosin heavy chain genes (myh) (Figure 7B, Supplementary file 1J). These included myh4, myh9, and myh10 paralogues at 6 dpf, myh9 and another paralogue of myh4 and myh10 at 10 dpf, and myh3, myh4 and myh9 at 11 dpf. Only myh3 remained significantly downregulated after hatching (3 dph) relative to controls. Notably, expression of myh1, encoding the major fast myosin heavy chain gene expressed in the body musculature (Thisse et al., 2001), was largely unaffected except for a small reduction at 11 dpf. Other myosin genes specific to muscle groups in the head and trunk (Peng et al., 2002; Elworthy et al., 2008), on the other hand, showed more complex differential expression patterns.
 
-## Genes associated with ion and water regulatory imbalance
+### Genes associated with ion and water regulatory imbalance
 
 Fluid accumulation in the form of edema is a hallmark indication of crude oil toxicity in fish embryos. Although patterns of edema formation vary across freshwater and marine fish species (Incardona and Scholz, 2016), it nearly always involves anatomical compartments adjacent to the heart and the yolk sac. However, marine embryos are hyposmolar to surrounding seawater, and they should therefore lose water along a diffusion gradient if osmoregulation is disrupted as a consequence of heart and circulatory failure. In fish embryos and yolk sac larvae, osmoregulation is controlled by MRCs in the epidermis and yolk sac membrane that actively secrete NaCl (specifically Cl-) to maintain an appropriate water and ion balance (Hiroi et al., 2005). Genetic and pharmacologic studies have shown that circulation is required to maintain embryonic MRC cell function. For example, total body osmolality increased in seawater-adapted tilapia embryos with a ~50% reduction in total cardiac output (Miyanishi et al., 2013). Therefore, edema formation in marine species with oil-induced circulatory defects is not a consequence of water moving into the embryo (as it is for freshwater species) but rather water moving along an internal osmotic gradient from peripheral tissues to the vicinity of the heart and yolk sac. Accordingly, dorsal anterior finfold defects in edematous embryos and larvae (Figure 1H,I) represent a visible phenotypic anchor for ionoregulatory disruption, a third distinct oil-induced adverse outcome pathway.
 
-Our analysis focused on key ionoregulatory proteins in MRCs and their associated genes, including Na
+Our analysis focused on key ionoregulatory proteins in MRCs and their associated genes, including Na+/K+ ATPase subunits (at1 genes, e.g. at1a1-a4, at1b1-b4), a urea transporter (ut1), a Na+/K+/2Cl- co-transporter (s12a2), the sodium-hydrogen exchanger Nhe3 (slc9a3), and a chloride channel, the latter an ortholog to the human cystic fibrosis transmembrane conductance regulator (cftr) (Hirose et al., 2003). The disruption of MRC function in oil-exposed haddock embryos corresponded to significantly lower levels of at1a1-3, at1b2-3, ut1, s12a2, sl9a3, and cftr (Figure 8, Supplementary file 1K). This downregulation primarily spanned a developmental window between 6 dpf and hatching (Figure 8, Supplementary file 1K). We also found significant transcriptional modifications of genes encoding other pumps, channels, and transporters specific to the nervous system and other tissues, including the aquaporins (aqp genes) that rapidly transport water across cell membranes (Supplementary file 1L). For example, there was a pronounced decrease in the expression of the primary neuronal water channel, aqp4, from 6 dpf to hatching and a strong upregulation of aqp12 at hatch (Figure 8). Crude oil exposures therefore appear to cause osmotic stress in the developing embryonic nervous system.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/20707/elife-20707-fig8-v2.jpg)
 
-**Figure 8.:** E1–E6: Embryonic exposure, L1–L5: Larval exposure. Black letters: during exposure, blue letters: after exposure.DOI: http://dx.doi.org/10.7554/eLife.20707.018
+**Figure 8.:** E1–E6: Embryonic exposure, L1–L5: Larval exposure. Black letters: during exposure, blue letters: after exposure.
 
 During larval exposure, edema accumulated in different compartments from embryos, and there were corresponding differences in expression of genes related to ion and water balance. At late stages of larval exposure, edema accumulated in the peritoneal cavity, and the dorsal marginal finfold appeared increased rather than decreased as in embryos. Fewer ion transport genes were affected, with increased expression observed for only at1a3 at 14 dph, and one at1b2 paralogue and at1b3 at 14 and 18 dph. Similarly, aquaporin genes were affected differently. Whereas aqp4 was unaltered in larvae, expression of aqp7 and aqp9 was increased while aqp3 and aqp12 were decreased (Figure 8, Supplementary file 1K).
 
-## A novel adverse outcome pathway: disruption of cholesterol homeostasis
+### A novel adverse outcome pathway: disruption of cholesterol homeostasis
 
 Cholesterol is an essential structural component required for maintaining both the integrity and the fluidity of all metazoan cell membranes. Cholesterol is sourced from de novo cellular synthesis and from the uptake of external lipoprotein cholesterol from the circulation (Bjorkhem and Meaney, 2004). During fish development, cholesterol is mobilized from the yolk and distributed to cells during embryonic and larval yolk sac stages. Later, after the yolk is absorbed and larvae begin exogenous feeding, cholesterol is transported from the intestines. Crude-oil-exposed haddock embryos and larvae with the most severe morphological abnormalities were visibly unable to effectively mobilize yolk (Figure 1J,K). Moreover, larvae from the highest exposure concentration had less visible food in their stomachs relative to controls. These observations together suggest that chemical components of crude oil may deprive developing tissues of externally available cholesterol.
 
@@ -174,7 +588,7 @@ Of the 28 genes differentially regulated at all developmental time points, 5 are
 
 In the larval exposure, we also detected increased expression of hdmh, erg1, cp51a, and npc2 (encoding the proteins squalene epoxidase, and cytochrome P450 51A, Niemann-Pick disease, type C2, respectively) at the latest stages examined (14 and 18 dph). Conversely, pathways involved in digestion – that is, pancreatic secretion, protein digestion, and protein absorption – were suppressed. This includes the downregulation of genes encoding digestive enzymes such as trypsin and chymotrypsin (Figure 4—figure supplement 1). The stomachs of oil-exposed larvae at the final time point were relatively empty, and the associated loss of food-derived nutrients likely triggered the observed increase in endogenous cellular cholesterol synthesis.
 
-## Unaltered gene expression in relation to visibly normal organs: lateral line and liver
+### Unaltered gene expression in relation to visibly normal organs: lateral line and liver
 
 Whereas abnormal phenotypic traits corresponded to differential gene expression, genes associated with normal traits were unchanged. For example, the lateral line and liver appeared normal in the most severely affected embryos (Figure 1—figure supplement 1). Consistent with this, markers for the lateral line (protein atonal homolog 1, atoh1) (Cai and Groves, 2015), liver growth (hepatocyte growth factor, met) and differentiation (genes encoding wnt2 and 2b protein (wnt2, wnt2b) (Wilkins and Pack, 2013), hematopoietically-expressed homeobox protein (hhex), and protein heg (heg)) (Supplementary file 1M) were not significantly modified. While some markers for liver differentiation, including genes encoding transferrin (tfr1) and fatty acid binding protein (fa10a) were differentially expressed, the changes were subtle and not consistent throughout development. Similarly, the related KEGG pathways that are inclusive of these genes were relatively unaffected by oil exposure at all time points. As noted above, IPA failed to identify significant enrichment of pathways related to phenotypically normal structures.
 
@@ -212,19 +626,19 @@ In conclusion, our findings greatly expand our understanding of crude oil impact
 
 For detailed procedures on animal collection, maintenance, exposure regime and analytical chemistry see (Sørhus et al., 2015, 2016b). All animal experiments within the study were approved by NARA, the governmental Norwegian Animal Research Authority (http://www.fdu.no/fdu/, reference number 2012/275334-2). All methods were performed in accordance with approved guidelines.
 
-## Animal collection, maintenance, and exposure set-up and regime
+### Animal collection, maintenance, and exposure set-up and regime
 
 The samples transcriptome profiled here are the exact same samples described in Sørhus et al. (2016b), with the methodology for animal collection, maintenance, and crude oil exposure provided therein. Briefly, fertilized eggs were collected from tanks with wild captured Atlantic haddock (collected spring 2013) and transferred to indoor egg incubators (7°C). At experiment start, eggs from the egg incubators were transferred to 50 L exposure tanks (7.8°C). Embryonic and larval stages of Atlantic haddock were exposed to two doses, low and high dose, in addition to a pulsed high dose (see Figures 3 and 4 for details). Heidrun oil blend was artificially weathered by distillation and then pumped into the dispersion system using a HPLC pump (Shimadzu, LC-20AD Liquid Chromatograph Pump) with a flow of 5 μL/min together with a flow of seawater of 180 mL/min. The system described in Nordtug et. al 2011 (Nordtug et al., 2011) generates an oil dispersion with oil droplets in the low μm range with a nominal oil load of 26 mg/L (stock solution). Water samples were collected from each exposure tank at the beginning of each experiment and subjected for detailed PAH analysis. At end of exposure, pooled samples of eggs and larvae were extracted by solid liquid extraction and purified by solid phase extraction prior to analysis by GC-MS/MS (Sørensen et al., 2015) to reveal the PAH content in animals. After end of exposure, the animals were transferred to new tanks with clean water. Images of the animals were collected from 12 and 8 stages during and after embryonic and larval exposure, respectively. Videos from 60 (embryonic) and 48 (larval) individual embryos/larvae per treatment per stage were collected from 9 dpf, 0 dph, and 3 dph (embryonic exposure) and 2 dph and 9 dph (larval exposure). The experiments included four replicate tanks for each dose, and pooled samples from three replicate tanks for each dose were subjected for sequencing (see details below).
 
-## Total RNA and cDNA preparation
+### Total RNA and cDNA preparation
 
 Total RNA was isolated from frozen pools of embryos and larvae using Trizol reagent (Invitrogen) per manufacturer instructions. This included a DNase treatment step using a TURBO DNA-free kit (Life Technologies Corporation). RNA was quantified using a Nanodrop spectrophotometer (NanoDrop Technologies), and confirmed using a 2100 Bioanalyzer (Agilent Technologies). cDNA was subsequently generated using SuperScript VILO cDNA Synthesis Kit (Life Technologies Corporation), according to the manufacturer’s instructions. The cDNA was normalized to obtain a concentration of 50 ng/µL.
 
-## Real-time qPCR
+### Real-time qPCR
 
 Six responsive genes from the transcriptome were validated by real-time quantitative PCR (qPCR) (Figure 3—figure supplement 2 [Embryonic exposure], Figure 4—figure supplement 2 [Larval exposure]). Specific primers and probes (Supplementary file 1N) for a reference gene (ef1α) and the six DEGs (cp1a, wnt11, kcnh2, nac1, cac1c, and at2a2) were designed with either Primer Express Software (Applied Biosystems) or Eurofins qPCR probe and primer design software (Eurofins Scientific), according to the manufacturer’s guidelines. The two methods generally yielded the same quantitative trends. Primer and probe sequences are shown in Supplementary file 1J. TaqMan PCR assays were performed in duplicate, using 384-well optical plates on an ABI Prism Fast 7900HT Sequence Detection System (Applied Biosystems) with settings as follows: 50°C for 2 min, 95°C for 20 s, followed by a 40 cycles of 95°C for 1 s and 60°C for 20 s. For each 10 μL PCR reaction, a 2 μL cDNA 1:40 dilution was mixed with 200 nM fluorogenic probe, 900 nM sense primer, and 900 nM antisense primer in 1xTaqMan Fast Advanced Master Mix (Applied Biosystems). Gene expression was calculated relative to the exposure time zero sample (2 dpf and 0 dph in embryonic and larval exposures, respectively) using the ΔΔΔCt method, generating reference residuals (Edmunds et al., 2014) from ef1a and at2a2.
 
-## Extraction of mRNA, RNA sequencing, and bioinformatics
+### Extraction of mRNA, RNA sequencing, and bioinformatics
 
 cDNA library preparation and sequencing was performed by the Norwegian Sequencing Centre (NSC, Oslo, Norway) using the Illumina TruSeq RNA Sample Preparation Kit. A total of 132 samples were sequenced and 126 were subjected for analysis: Three (control, low and high dose) or two (pulse) biological replicates for each dose from six stages during and after embryonic exposure and three biological replicates for each dose from five stages during larval exposure (see Figures 3 and 4). Paired-end libraries were sequenced on the Illumina HiSeq2500 platform. The raw data are available from the Sequence Read Archive (SRA) at NCBI (Accession ID: PRJNA328092).
 

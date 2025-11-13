@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.07125.001 Understanding the initiation and progression of pancreatic ductal adenocarcinoma (PDAC) may provide therapeutic strategies for this deadly disease. Recently, we and others made the surprising finding that PDAC and its preinvasive precursors, pancreatic intraepithelial neoplasia (PanIN), arise via reprogramming of mature acinar cells. We therefore hypothesized that the master regulator of acinar differentiation, PTF1A, could play a central role in suppressing PDAC initiation. In this study, we demonstrate that PTF1A expression is lost in both mouse and human PanINs, and that this downregulation is functionally imperative in mice for acinar reprogramming by oncogenic KRAS. Loss of Ptf1a alone is sufficient to induce acinar-to-ductal metaplasia, potentiate inflammation, and induce a KRAS-permissive, PDAC-like gene expression profile. As a result, Ptf1a -deficient acinar cells are dramatically sensitized to KRAS transformation, and reduced Ptf1a greatly accelerates development of invasive PDAC. Together, these data indicate that cell differentiation regulators constitute a new tumor suppressive mechanism in the pancreas. DOI: http://dx.doi.org/10.7554/eLife.07125.001
+Understanding the initiation and progression of pancreatic ductal adenocarcinoma (PDAC) may provide therapeutic strategies for this deadly disease. Recently, we and others made the surprising finding that PDAC and its preinvasive precursors, pancreatic intraepithelial neoplasia (PanIN), arise via reprogramming of mature acinar cells. We therefore hypothesized that the master regulator of acinar differentiation, PTF1A, could play a central role in suppressing PDAC initiation. In this study, we demonstrate that PTF1A expression is lost in both mouse and human PanINs, and that this downregulation is functionally imperative in mice for acinar reprogramming by oncogenic KRAS. Loss of Ptf1a alone is sufficient to induce acinar-to-ductal metaplasia, potentiate inflammation, and induce a KRAS-permissive, PDAC-like gene expression profile. As a result, Ptf1a-deficient acinar cells are dramatically sensitized to KRAS transformation, and reduced Ptf1a greatly accelerates development of invasive PDAC. Together, these data indicate that cell differentiation regulators constitute a new tumor suppressive mechanism in the pancreas.
 
 ## Introduction
 
@@ -41,53 +41,96 @@ In this study, we demonstrate that downregulation of PTF1A is a decisive and rat
 
 ## Results
 
-## PTF1A expression is lost during KRAS-induced transformation of acinar cells and in human PanINs
+### PTF1A expression is lost during KRAS-induced transformation of acinar cells and in human PanINs
 
-We have previously demonstrated that
+We have previously demonstrated that Ptf1a expression is lost when activated Notch and KrasG12D work synergistically to reprogram acinar cells into PanINs (De La et al., 2008). Given that Ptf1a is a central regulator of acinar cell gene expression, we hypothesized that this transcription factor should also be downregulated when acinar cells are transformed by oncogenic KrasG12D alone, as well as in human PanINs. To test this hypothesis, we activated KrasG12D specifically in acinar cells using a tamoxifen-inducible Cre expressed by the endogenous Ptf1a locus (Ptf1aCreERT) (Kopinke et al., 2012; Pan et al., 2013). Like the widely used Ptf1aCre allele (Kawaguchi et al., 2002), Ptf1aCreERT is a ‘knock-in/knock-out’ allele, and therefore, these mice are functionally heterozygous for Ptf1a. We induced KrasG12D expression at 6 weeks of age and harvested pancreata 9 months later. While most acini appeared histologically normal and resistant to KRAS-mediated transformation (Figure 1A), there was intermittent PanIN formation throughout the pancreas (Figure 1B), as previously reported (Kopp et al., 2012). By immunohistochemistry (IHC), normal acinar cells in these tissues exhibited robust nuclear PTF1A (Figure 1C); however, PTF1A was strongly decreased or absent in all acinar-derived PanIN lesions (Figure 1D). To extend these studies to human pancreatic cancer initiation, we stained pathological specimens (n = 4) containing both normal acinar tissue (Figure 1E) and PanIN lesions (Figure 1F). As observed in the KrasG12D mouse model, normal acini exhibited a strong PTF1A nuclear signal (Figure 1G), but PTF1A was largely absent from epithelial cell nuclei within PanINs (Figure 1H). In a small fraction of human PanINs, low levels of PTF1A were observed in a subset of epithelial cells (Figure 1—figure supplement 1). Residual PTF1A expression is consistent with the finding that approximately one-third of human PDAC samples express low levels of acinar-specific genes (Collisson et al., 2011).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig1-v2.jpg)
 
-**Figure 1.:** (A, B) H&E staining of normal acinar and pancreatic intraepithelial neoplasia (PanIN) tissue of Ptf1aCreERT; Kras pancreata. (LSL-G12DC, D) PTF1A immunohistochemistry (IHC) of mouse acinar and PanIN tissue. (E, F) H&E staining of human acinar and PanIN tissue. (G, H) PTF1A immunostaining of normal acinar and PanIN tissue of human. Scale bar: 25 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.003
+**Figure 1.:** (A, B) H&E staining of normal acinar and pancreatic intraepithelial neoplasia (PanIN) tissue of Ptf1aCreERT; KrasLSL-G12D pancreata. (C, D) PTF1A immunohistochemistry (IHC) of mouse acinar and PanIN tissue. (E, F) H&E staining of human acinar and PanIN tissue. (G, H) PTF1A immunostaining of normal acinar and PanIN tissue of human. Scale bar: 25 µm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) IHC for PTF1A from a Kras mouse pancreas 9 months after TM administration (0.17 mg/g). (G12DB–E) IHC for PTF1A on human pathology samples. Black arrows indicate normal acinar cells expressing PTF1A; green arrows highlight PanIN epithelial cells that do not express PTF1A; red arrows indicate rare PanIN epithelial cells that retain trace PTF1A expression. Scale bars: (A–C) 25 μm; (D) 100 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.004
+**Figure 1—figure supplement 1.:** (A) IHC for PTF1A from a KrasG12D mouse pancreas 9 months after TM administration (0.17 mg/g). (B–E) IHC for PTF1A on human pathology samples. Black arrows indicate normal acinar cells expressing PTF1A; green arrows highlight PanIN epithelial cells that do not express PTF1A; red arrows indicate rare PanIN epithelial cells that retain trace PTF1A expression. Scale bars: (A–C) 25 μm; (D) 100 μm.
 
-## Deletion of Ptf1a causes acinar-ductal metaplasia and dramatically enhances KRAS-driven acinar cell transformation
+### Deletion of Ptf1a causes acinar-ductal metaplasia and dramatically enhances KRAS-driven acinar cell transformation
 
-In order to determine whether PTF1A downregulation was a functionally important step in PanIN initiation, or a side effect of acinar cell transformation itself, we used an inducible system to delete Ptf1a both in the absence and presence of oncogenic KrasG12D. In this model, we combined the Ptf1aCreERT allele, which does not express PTF1A protein, with a ‘floxed’ Ptf1a allele, to generate Ptf1a conditional knock-out (cKO) mice of the genotype Ptf1aCreERT/lox. We also crossed KrasLSL-G12D onto this Ptf1a cKO background. Negative control littermates were Ptf1a heterozygous (Ptf1aCreERT/+) without oncogenic Kras. An additional control group, representing baseline PanIN initiation in the presence of wild-type PTF1A, consisted of Ptf1aCreERT/+; KrasLSL-G12D littermates (henceforth referred to as KrasG12D mice). All inducible-Cre mice also contained a R26REYFP reporter (Srinivas et al., 2001), which allowed monitoring of the frequency of Cre-mediated recombination and lineage-tracing of the fate of recombined acinar cells. Table 1 summarizes the genotypes of mice used throughout this study; Figure 2—figure supplement 1 schematically depicts the alleles in each genotype.10.7554/eLife.07125.005Table 1.Nomenclature of mouse mutants used in this studyDOI: http://dx.doi.org/10.7554/eLife.07125.005Short-hand notationPtf1a allelesKras alleleReporter alleleControlPtf1aCreERT/+–R26REYFP/+Ptf1a cKOPtf1aCreERT/lox–R26REYFP/+KrasG12DPtf1aCreERT/+KrasLSL-G12D/+R26REYFP/+Ptf1a cKO; KrasG12DPtf1aCreERT/loxKrasLSL-G12D/+R26REYFP/+cKO, conditional knock-out.
+In order to determine whether PTF1A downregulation was a functionally important step in PanIN initiation, or a side effect of acinar cell transformation itself, we used an inducible system to delete Ptf1a both in the absence and presence of oncogenic KrasG12D. In this model, we combined the Ptf1aCreERT allele, which does not express PTF1A protein, with a ‘floxed’ Ptf1a allele, to generate Ptf1a conditional knock-out (cKO) mice of the genotype Ptf1aCreERT/lox. We also crossed KrasLSL-G12D onto this Ptf1a cKO background. Negative control littermates were Ptf1a heterozygous (Ptf1aCreERT/+) without oncogenic Kras. An additional control group, representing baseline PanIN initiation in the presence of wild-type PTF1A, consisted of Ptf1aCreERT/+; KrasLSL-G12D littermates (henceforth referred to as KrasG12D mice). All inducible-Cre mice also contained a R26REYFP reporter (Srinivas et al., 2001), which allowed monitoring of the frequency of Cre-mediated recombination and lineage-tracing of the fate of recombined acinar cells. Table 1 summarizes the genotypes of mice used throughout this study; Figure 2—figure supplement 1 schematically depicts the alleles in each genotype.
 
-In initial studies, 6- to 8-week-old mice were administered tamoxifen (TM) at 0.17 mg/g body weight, and pancreata were harvested 9 months later (
+**Table 1.**
+ Nomenclature of mouse mutants used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Short-hand notation</th>
+      <th>Ptf1a alleles</th>
+      <th>Kras allele</th>
+      <th>Reporter allele</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>Ptf1aCreERT/+</td>
+      <td>–</td>
+      <td>R26REYFP/+</td>
+    </tr>
+    <tr>
+      <td>Ptf1a cKO</td>
+      <td>Ptf1aCreERT/lox</td>
+      <td>–</td>
+      <td>R26REYFP/+</td>
+    </tr>
+    <tr>
+      <td>KrasG12D</td>
+      <td>Ptf1aCreERT/+</td>
+      <td>KrasLSL-G12D/+</td>
+      <td>R26REYFP/+</td>
+    </tr>
+    <tr>
+      <td>Ptf1a cKO; KrasG12D</td>
+      <td>Ptf1aCreERT/lox</td>
+      <td>KrasLSL-G12D/+</td>
+      <td>R26REYFP/+</td>
+    </tr>
+  </tbody>
+</table>
+
+_cKO, conditional knock-out._
+
+In initial studies, 6- to 8-week-old mice were administered tamoxifen (TM) at 0.17 mg/g body weight, and pancreata were harvested 9 months later (Figure 2A). Compared with control samples, Ptf1a cKO pancreata exhibited intermittent ADM throughout the pancreas (Figure 2B,C). Metaplastic ‘ductules’ of Ptf1a cKO expressed Cytokeratin-19 (CK19), similar to normal ducts of control; however, Ptf1a cKO ductules appeared more dilated than control ducts (Figure 2F,G). Ptf1a cKO ductules also expressed the duct cell-restricted transcription factor SOX9 (Figure 2J,K), indicating a shift from an acinar to a duct-like differentiation state (Kopp et al., 2012). However, these metaplastic ductules did not have the histological morphology of PanINs (Figure 2C), nor did they stain positively for the PanIN-specific markers Claudin-18 (CLDN18) by IHC (Westmoreland et al., 2012) (Figure 2O) or acidic mucins by Alcian Blue histochemistry (Hingorani et al., 2003; Kopp et al., 2012) (Figure 2S). Interestingly, ADM in Ptf1a cKO mice was associated with no or scant inflammatory infiltrates, and the surrounding areas did not stain positively with Sirius Red (Figure 2W), a histochemical stain that highlights fibrotic collagen matrix (Neuschwander-Tetri et al., 2000).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig2-v2.jpg)
 
-**Figure 2.:** Ptf1a promotes acinar-to-ductal metaplasia and sensitizes acinar cells to KRAS-mediated transformation.(A) Mice of indicated genotypes were administered TM (0.17 mg/g) to induce recombination, and sacrificed 9 months later. (B–E) H&E staining of pancreata from mice of indicated genotypes. (F–M) IHC for the duct markers CK19 and SOX9, indicating upregulation in both acinar-to-ductal metaplasia (ADM) and PanINs. (N–Q) IHC for the PanIN marker, CLDN18, highlighting intermittent PanIN formation in Kras mice and widespread lesion development in G12DPtf1a conditional knock-out (cKO); Kras. (G12DR–U) Alcian Blue staining, indicating PanIN lesions in Kras and G12DPtf1a cKO; Kras pancreata. (G12DV–Y) Sirius Red staining, highlighting local and widespread fibrosis in Kras and G12DPtf1a cKO; Kras mice, respectively. Scale bars: (G12DB–E) 200 µm; (F–I) 200 µm; (J–Q) 25 µm; (R–U) 500 µm; (V–Y) 200 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.006
+**Figure 2.:** (A) Mice of indicated genotypes were administered TM (0.17 mg/g) to induce recombination, and sacrificed 9 months later. (B–E) H&E staining of pancreata from mice of indicated genotypes. (F–M) IHC for the duct markers CK19 and SOX9, indicating upregulation in both acinar-to-ductal metaplasia (ADM) and PanINs. (N–Q) IHC for the PanIN marker, CLDN18, highlighting intermittent PanIN formation in KrasG12D mice and widespread lesion development in Ptf1a conditional knock-out (cKO); KrasG12D. (R–U) Alcian Blue staining, indicating PanIN lesions in KrasG12D and Ptf1a cKO; KrasG12D pancreata. (V–Y) Sirius Red staining, highlighting local and widespread fibrosis in KrasG12D and Ptf1a cKO; KrasG12D mice, respectively. Scale bars: (B–E) 200 µm; (F–I) 200 µm; (J–Q) 25 µm; (R–U) 500 µm; (V–Y) 200 µm.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Schematic representations of the alleles present in the genotypes referred to, in shorthand, as control, Ptf1a cKO, Kras and G12DPtf1a cKO; Kras (see G12DTable 1 for additional details).DOI: http://dx.doi.org/10.7554/eLife.07125.007
+**Figure 2—figure supplement 1.:** Schematic representations of the alleles present in the genotypes referred to, in shorthand, as control, Ptf1a cKO, KrasG12D and Ptf1a cKO; KrasG12D (see Table 1 for additional details).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Ptf1a deletion efficiency following tamoxifen treatment.CreERT6–8-week-old mice of indicated genotypes were administered according to low- or high-dose regimens (1 × 0.17 mg/g or 0.25 mg/g, respectively), and pancreata were harvested 2 weeks (A–E) or 3 days (F–J) after the last dose. (A–D) Immunofluorescence for amylase (red) and the Cre reporter R26R (green) on pancreata from low-TM treated mice of the indicated genotypes. For EYFPPtf1a cKO; Kras pancreata, efforts were made to find histologically normal areas to provide an accurate quantification of Cre-mediated recombination. (G12DE) The proportion of EYFP expression among amylase+ acinar cells was quantified for all genotypes. No significant difference was noted between any groups (n = 3–6 per genotype). (F–H) Immunofluorescence for PTF1A (red), the Cre reporter EYFP (green), and DAPI (blue) in Ptf1a; CreERT/loxKras; G12DR26R mice 3 days after no TM administration (EYFP/+A), low dose TM (B), or high dose TM (C). (I) Quantification of the percentage of EYFP+ (green) and Ptf1a+ (red) pancreatic cells in each indicated treatment group 3 days after final TM administration (n = 3 per group). (J) Quantification of total EYFP+ acinar cells that no longer express Ptf1a (green) or retain Ptf1a protein expression (red) 3 days following low and high TM treatment (n = 3 per group). Scale bars: (A–D) 100 μm, (F–H) 50 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.008
+**Figure 2—figure supplement 2.:** 6–8-week-old mice of indicated genotypes were administered according to low- or high-dose regimens (1 × 0.17 mg/g or 0.25 mg/g, respectively), and pancreata were harvested 2 weeks (A–E) or 3 days (F–J) after the last dose. (A–D) Immunofluorescence for amylase (red) and the Cre reporter R26REYFP (green) on pancreata from low-TM treated mice of the indicated genotypes. For Ptf1a cKO; KrasG12D pancreata, efforts were made to find histologically normal areas to provide an accurate quantification of Cre-mediated recombination. (E) The proportion of EYFP expression among amylase+ acinar cells was quantified for all genotypes. No significant difference was noted between any groups (n = 3–6 per genotype). (F–H) Immunofluorescence for PTF1A (red), the Cre reporter EYFP (green), and DAPI (blue) in Ptf1aCreERT/lox; KrasG12D; R26REYFP/+ mice 3 days after no TM administration (A), low dose TM (B), or high dose TM (C). (I) Quantification of the percentage of EYFP+ (green) and Ptf1a+ (red) pancreatic cells in each indicated treatment group 3 days after final TM administration (n = 3 per group). (J) Quantification of total EYFP+ acinar cells that no longer express Ptf1a (green) or retain Ptf1a protein expression (red) 3 days following low and high TM treatment (n = 3 per group). Scale bars: (A–D) 100 μm, (F–H) 50 μm.
 
 We next tested if inactivation of Ptf1a sensitized acinar cells to oncogenic KRAS-mediated transformation and PanIN initiation. While intermittent PanIN formation was observed in KrasG12D mice (Figure 2D), pancreata from Ptf1a cKO; KrasG12D mice were uniformly composed of extensively distributed PanINs embedded in fibrotic stroma, with almost no remaining normal acinar tissue (Figure 2E). PanINs in both KrasG12D and Ptf1a cKO; KrasG12D mice were positive for the duct marker Cytokeratin-19 (Figure 2H,I) and the duct-cell transcription factor SOX9 (Figure 2L,M), as well as the PanIN markers CLDN18 (Figure 2P,Q) and Alcian Blue acidic mucin staining (Figure 2T,U). Interestingly, only the Ptf1a cKO; KrasG12D pancreata exhibited abundant Sirius Red staining, indicating widespread fibrotic injury (Figure 2X,Y). Taken together, these data indicate that loss of Ptf1a sensitizes acinar cells to ADM and dramatically increases their susceptibility to oncogenic KRAS transformation and PDAC initiation.
 
-## Loss of Ptf1a expression is a rate-limiting step for PanIN initiation
+### Loss of Ptf1a expression is a rate-limiting step for PanIN initiation
 
-Given the severity and robustness of PanIN formation in
+Given the severity and robustness of PanIN formation in Ptf1a cKO; KrasG12D mice 9 months after TM administration, we next determined if loss of Ptf1a had a more acute effect on acinar cell transformation. To address this issue, 6- to 8-week-old mice were administered TM (0.17 mg/g) and pancreata were harvested 2 or 6 weeks thereafter (Figure 3A). To ensure that Cre-mediated recombination rates were comparable between genotypes, we determined the percentage of acinar cells expressing the R26REYFP reporter at 2 weeks post-TM administration. We found similar acinar recombination rates of 21–25% between genotypes (Figure 2—figure supplement 1). As the efficiency of Cre-mediated recombination can vary between different target loci (Liu et al., 2013), we additionally compared the extent and distribution of PTF1A ablation to that of R26REYFP activation. 3 days after TM administration (0.17 mg/g), there was a ∼20% decrease in the number of PTF1A+ cells detected by immunofluorescence (Figure 2—figure supplement 2). Importantly, the majority (∼75%) of EYFP+ cells were PTF1A-negative at this dose of TM (Figure 2—figure supplement 2), indicating that activation of EYFP provides an approximate surrogate for deletion of Ptf1a.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig3-v2.jpg)
 
-**Figure 3.:** Ptf1a is a rate-limiting step in PanIN initiation.(A) Mice of specified genotypes were administered 0.17 mg/g body weight TM to induce Cre-mediated recombination and were sacrificed either 2 or 6 weeks later. (B–E) H&E staining of pancreata from mice of indicated genotypes 2 weeks after TM administration. (F–I) IHC for the ductal transcription factor SOX9, indicating upregulation in ADM and PanINs of Ptf1a cKO; Kras pancreata. (G12DJ–M) Alcian blue staining, indicating PanIN lesions in Ptf1a cKO; Kras pancreata. In panel (G12DM), green arrow indicates an Alcian Blue+ lesion, while red arrows indicate ADM that is Alcian Blue-negative. (N) Quantification of the genotype-dependent PanIN burden; Ptf1a cKO; Kras pancreata possessed significantly more PanINs at 2 weeks post-TM than G12DKras mice (p < 0.01). (G12DO–R) H&E staining of pancreata from mice of indicated genotypes 6 weeks after TM administration. (S–V) Alcian Blue staining, highlighting PanIN lesions in pancreata from Kras mice and G12DPtf1a cKO; Kras mice. (G12DW) Quantification of PanINs at 6 weeks post-TM. Ptf1a cKO; Kras pancreata had ∼15-fold more Alcian Blue+ PanINs at this time point than G12DKras (p < 0.0001). Scale bars: (G12DB–E) 200 µm; (F–I) 100 µm; (J–M) 500 µm; (O–R) 200 µm; (S–V) 500 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.009
+**Figure 3.:** (A) Mice of specified genotypes were administered 0.17 mg/g body weight TM to induce Cre-mediated recombination and were sacrificed either 2 or 6 weeks later. (B–E) H&E staining of pancreata from mice of indicated genotypes 2 weeks after TM administration. (F–I) IHC for the ductal transcription factor SOX9, indicating upregulation in ADM and PanINs of Ptf1a cKO; KrasG12D pancreata. (J–M) Alcian blue staining, indicating PanIN lesions in Ptf1a cKO; KrasG12D pancreata. In panel (M), green arrow indicates an Alcian Blue+ lesion, while red arrows indicate ADM that is Alcian Blue-negative. (N) Quantification of the genotype-dependent PanIN burden; Ptf1a cKO; KrasG12D pancreata possessed significantly more PanINs at 2 weeks post-TM than KrasG12D mice (p < 0.01). (O–R) H&E staining of pancreata from mice of indicated genotypes 6 weeks after TM administration. (S–V) Alcian Blue staining, highlighting PanIN lesions in pancreata from KrasG12D mice and Ptf1a cKO; KrasG12D mice. (W) Quantification of PanINs at 6 weeks post-TM. Ptf1a cKO; KrasG12D pancreata had ∼15-fold more Alcian Blue+ PanINs at this time point than KrasG12D (p < 0.0001). Scale bars: (B–E) 200 µm; (F–I) 100 µm; (J–M) 500 µm; (O–R) 200 µm; (S–V) 500 µm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Ptf1a cKO; KrasG12D pancreata.Pancreata were harvested 2 weeks following TM administration (0.17 mg/g) to mice of the indicated genotypes. (A–D) Immunofluorescence for the PanIN marker CLDN18 (red), and the leukocyte marker CD45 (green), revealing association of leukocytes with PanINs in Ptf1a cKO; Kras. (G12DE–H) IHC for α-SMA, highlighting the activation of pancreatic stellate cells in Ptf1a cKO; Kras pancreata. (G12DI–L) Sirius Red staining, highlighting widespread fibrosis in Ptf1a cKO; Kras. Scale bars: (G12DA–D) 50 μm, (E–L) 200 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.010
+**Figure 3—figure supplement 1.:** Pancreata were harvested 2 weeks following TM administration (0.17 mg/g) to mice of the indicated genotypes. (A–D) Immunofluorescence for the PanIN marker CLDN18 (red), and the leukocyte marker CD45 (green), revealing association of leukocytes with PanINs in Ptf1a cKO; KrasG12D. (E–H) IHC for α-SMA, highlighting the activation of pancreatic stellate cells in Ptf1a cKO; KrasG12D pancreata. (I–L) Sirius Red staining, highlighting widespread fibrosis in Ptf1a cKO; KrasG12D. Scale bars: (A–D) 50 μm, (E–L) 200 μm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A, B) Brightfield images of acinarderived ductal cysts from (A) Kras and (G12DB) Ptf1a cKO; Kras mice, after 3 days of culture in collagen gel. (G12DC) Quantification of the maximum diameter of acinar-derived cysts from mice of indicated genotypes (n = 3 mice per genotype). For each mouse, >10 randomly selected fields were photographed, and each cyst within the image was measured at its maximum diameter. Scale bars are 400 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.011
+**Figure 3—figure supplement 2.:** (A, B) Brightfield images of acinarderived ductal cysts from (A) KrasG12D and (B) Ptf1a cKO; KrasG12D mice, after 3 days of culture in collagen gel. (C) Quantification of the maximum diameter of acinar-derived cysts from mice of indicated genotypes (n = 3 mice per genotype). For each mouse, >10 randomly selected fields were photographed, and each cyst within the image was measured at its maximum diameter. Scale bars are 400 μm.
 
 Interestingly, this level of Ptf1a deletion alone did not produce ADM or other histologically detectable effects at 2 weeks post-TM, compared to control mice (Figure 3B,C). While KrasG12D pancreata exhibited few or no PanINs at this time point, there was widespread induction of ADM, leukocyte infiltration, fibrosis, and PanIN initiation in Ptf1a cKO; KrasG12D pancreata (Figure 3D,E and Figure 3—figure supplement 1). We further confirmed that acinar-derived ADM and PanINs were being reprogrammed to a duct-like fate based on expression of the ductal transcription factor SOX9. While only normal ducts expressed SOX9 in control pancreata, PanINs and ADM in Ptf1a cKO; KrasG12D were SOX9+ at 2 weeks post-TM (Figure 3F–I). These data are consistent with a recent study indicating that Sox9 is necessary but not sufficient for the earliest stages of mouse PanIN initiation (Kopp et al., 2012).
 
@@ -99,37 +142,37 @@ In order to determine the acinar cell-intrinsic consequences of Ptf1a deletion, 
 
 A generally similar synergy between KrasG12D and Ptf1a cKO was observed in vivo at the 6-week post-tamoxifen time point. Ptf1a cKO pancreata remained histologically unchanged compared to control, as at 2 weeks post-TM, while intermittent PanIN-1 lesions were observed in KrasG12D pancreata (Figure 3O–Q). Ptf1a cKO; KrasG12D pancreata, by contrast, were completely overrun by PanINs at this time point (Figure 3R), most of which stained positively with Alcian Blue (Figure 3V). Quantifying PanIN lesions by Alcian Blue staining, we observed a >15-fold increase in Ptf1a cKO; KrasG12D compared to mice expressing KrasG12D alone (Figure 3W). As we did not score more than one lesion per individual anatomic lobule, to avoid double-counting large or discontinuous lesions, this number likely underestimates the overall PanIN burden in Ptf1a cKO; KrasG12D pancreata given the likelihood of multiple initiation events per lobule. Altogether, the dramatic acceleration of PanIN development upon Ptf1a deletion suggests that downregulation of this TF is a rate-limiting step for KRAS-driven pancreatic tumorigenesis.
 
-## Extensive deletion of Ptf1a promotes rapid but incomplete acinar-ductal metaplasia
+### Extensive deletion of Ptf1a promotes rapid but incomplete acinar-ductal metaplasia
 
-As we were surprised that a moderate level of acinar cell recombination (∼25%) failed to produce an overt, short-term phenotype in
+As we were surprised that a moderate level of acinar cell recombination (∼25%) failed to produce an overt, short-term phenotype in Ptf1a cKO pancreata (Figure 3), we tested if more pervasive deletion of Ptf1a would produce a more robust reprogramming phenotype. Control and Ptf1a cKO mice were administered a higher dose of TM (0.25 mg/g) by oral gavage on three consecutive days (a net 4.5-fold higher dose than previously) and were harvested 2 weeks later (Figure 4A). Quantification of EYFP+ acinar cells following this TM regimen demonstrated a recombination frequency of ∼65% (Figure 4—figure supplement 1). Additionally, we quantified the number of PTF1A-deficient acinar cells at 3 days after the final TM gavage, and found that only ∼15% of all pancreatic cells retained nuclear PTF1A, compared with ∼82% in TM-untreated controls (Figure 2—figure supplement 2). As with low-dose TM, described above, the majority (>90%) of EYFP+ cells were PTF1A-negative at 3 days post-TM, confirming that EYFP expression highlights acinar cells deleted for Ptf1a (Figure 2—figure supplement 2). The apparently greater extent of PTF1A ablation, relative to EYFP activation, may imply the existence of Ptf1a-deleted cells within the EYFP-negative population; such an observation would be consistent with previous evidence of locus-specific Cre deletion efficiencies (Liu et al., 2013).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig4-v2.jpg)
 
-**Figure 4.:** Ptf1a promotes rapid acinar-to-ductal metaplasia.(A) Control and Ptf1a cKO mice were administered TM (0.25 mg/g) on three consecutive days and sacrificed following a 2-week chase period. (B) Pancreas mass, measured as a percent of body weight, was significantly decreased in Ptf1a cKO mice 2 weeks after TM administration. (C, D) Immunofluorescence for the acinar enzyme carboxypeptidase A1 (CPA1) (red) and Cre reporter R26R (green). Nuclei are labeled with DAPI (blue). Inset highlights EYFP+, CPA1-negative acinar cells forming duct-like structures in EYFPPtf1a null pancreata. (E) Quantification of CPA1 expression by EYFP+ (Cre-recombined) cells in control and Ptf1a cKO pancreata (control n = 3, Ptf1a cKO n = 4, p < 0.01). (F, G) H&E staining of control and Ptf1a cKO pancreata 2 weeks after high-dose TM administration. (H, I) IHC for the duct marker CK19 highlighting areas of ADM in Ptf1a cKO pancreata. (J, K) Immunofluorescence for PTF1A (red) and the Cre reporter R26R (green). White arrow indicates an EYFP+ cell expressing PTF1A in control; white arrowheads indicate non-recombined PTF1A+ cells; yellow arrowhead indicates a recombined, PTF1A-negative cell undergoing metaplasia in EYFPPtf1a cKO. (L, M) Immunofluorescence for the duct transcription factor SOX9 (red) and the Cre reporter R26R (green). Insets highlight restricted expression of SOX9 in controls and upregulation of SOX9 within EYFP+ acinar cells of EYFPPtf1a cKO. Scale bars: (C, D) 100 µm, (F–I) 200 µm, (J, K) 50 µm, (L, M) 100 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.012
+**Figure 4.:** (A) Control and Ptf1a cKO mice were administered TM (0.25 mg/g) on three consecutive days and sacrificed following a 2-week chase period. (B) Pancreas mass, measured as a percent of body weight, was significantly decreased in Ptf1a cKO mice 2 weeks after TM administration. (C, D) Immunofluorescence for the acinar enzyme carboxypeptidase A1 (CPA1) (red) and Cre reporter R26REYFP (green). Nuclei are labeled with DAPI (blue). Inset highlights EYFP+, CPA1-negative acinar cells forming duct-like structures in Ptf1a null pancreata. (E) Quantification of CPA1 expression by EYFP+ (Cre-recombined) cells in control and Ptf1a cKO pancreata (control n = 3, Ptf1a cKO n = 4, p < 0.01). (F, G) H&E staining of control and Ptf1a cKO pancreata 2 weeks after high-dose TM administration. (H, I) IHC for the duct marker CK19 highlighting areas of ADM in Ptf1a cKO pancreata. (J, K) Immunofluorescence for PTF1A (red) and the Cre reporter R26REYFP (green). White arrow indicates an EYFP+ cell expressing PTF1A in control; white arrowheads indicate non-recombined PTF1A+ cells; yellow arrowhead indicates a recombined, PTF1A-negative cell undergoing metaplasia in Ptf1a cKO. (L, M) Immunofluorescence for the duct transcription factor SOX9 (red) and the Cre reporter R26REYFP (green). Insets highlight restricted expression of SOX9 in controls and upregulation of SOX9 within EYFP+ acinar cells of Ptf1a cKO. Scale bars: (C, D) 100 µm, (F–I) 200 µm, (J, K) 50 µm, (L, M) 100 µm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) 6–8 week old mice were administered 0.17 mg/g TM on three consecutive days, and pancreata were harvested 1 week later. (B, C) Immunofluorescence for amylase (red) and the Cre reporter R26R (green) in TM-treated pancreata of the indicated genotypes. (EYFPD) The proportion of EYFP expression within amylase+ acinar cells was quantified for all genotypes. No significant difference was observed between groups (n = 3–4 per genotype). Scale bar: 100 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.013
+**Figure 4—figure supplement 1.:** (A) 6–8 week old mice were administered 0.17 mg/g TM on three consecutive days, and pancreata were harvested 1 week later. (B, C) Immunofluorescence for amylase (red) and the Cre reporter R26REYFP (green) in TM-treated pancreata of the indicated genotypes. (D) The proportion of EYFP expression within amylase+ acinar cells was quantified for all genotypes. No significant difference was observed between groups (n = 3–4 per genotype). Scale bar: 100 μm.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A–C) Immunofluorescence for CK19 (red), the Cre reporter Rosa26 (green), and CD45 (white) in EYFPPtf1a cKO pancreata, 2 weeks after high-dose TM administration. Caerulein-treated Ptf1a cKO pancreas included as control for pancreatitis (B). Enlarged boxed area highlights EYFP+ acinar cells expressing CK19, surrounded by CD45+ leukocytes. (D, E) Immunofluorescence for E-cadherin (green), cleaved Caspase-3 (red) and DAPI (blue) in control and Ptf1a cKO pancreata. (F) Pancreatic lymph node, positive control for cleaved Caspase-3 staining. (G, H) Immunofluorescence for E-cadherin (green), Ki67 (red) and DAPI (blue). (I) Quantification of Ki67+/E-cadherin+ cells per 40× field (n = 3 per group, p < 0.05). Scale bars: (A–F) 100 μm, (G–H) 50 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.014
+**Figure 4—figure supplement 2.:** (A–C) Immunofluorescence for CK19 (red), the Cre reporter Rosa26EYFP (green), and CD45 (white) in Ptf1a cKO pancreata, 2 weeks after high-dose TM administration. Caerulein-treated Ptf1a cKO pancreas included as control for pancreatitis (B). Enlarged boxed area highlights EYFP+ acinar cells expressing CK19, surrounded by CD45+ leukocytes. (D, E) Immunofluorescence for E-cadherin (green), cleaved Caspase-3 (red) and DAPI (blue) in control and Ptf1a cKO pancreata. (F) Pancreatic lymph node, positive control for cleaved Caspase-3 staining. (G, H) Immunofluorescence for E-cadherin (green), Ki67 (red) and DAPI (blue). (I) Quantification of Ki67+/E-cadherin+ cells per 40× field (n = 3 per group, p < 0.05). Scale bars: (A–F) 100 μm, (G–H) 50 μm.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** (A–D) Lowand (A′–D′) high-magnification H&E staining of wild-type pancreata, fixed 24 hr after indicated treatment. (E–H) Immunofluorescence for CK19 (red), CD45 (green) and DAPI (blue), highlighting inflammatory cells in the exocrine pancreas. Scale bars: (A–D) 200 μm, (A′–D′) 100 μm, (E–H) 50 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.015
+**Figure 4—figure supplement 3.:** (A–D) Lowand (A′–D′) high-magnification H&E staining of wild-type pancreata, fixed 24 hr after indicated treatment. (E–H) Immunofluorescence for CK19 (red), CD45 (green) and DAPI (blue), highlighting inflammatory cells in the exocrine pancreas. Scale bars: (A–D) 200 μm, (A′–D′) 100 μm, (E–H) 50 μm.
 
 2 weeks following high-dose TM, Ptf1a cKO pancreata were less than half the mass of their control counterparts (Figure 4B). Immunofluorescence revealed that while nearly all EYFP+ acinar cells expressed the acinar marker carboxypeptidase A1 (CPA1) in controls, this marker was lost from approximately 15% of EYFP+ cells in Ptf1a cKO tissues, indicating loss of the normal differentiation state (Figure 4C–E). Histologically, Ptf1a cKO pancreata exhibited extensive acinar disorganization and dilation as well as sporadic upregulation of CK19 within acinar structures, suggestive of early stages of ADM (Figure 4F–I). CK19+ acinar cells (defined by EYFP co-expression) were consistently surrounded by CD45+ leukocytes (Figure 4—figure supplement 2A–C), consistent with an intimate association between metaplasia and inflammatory cell recruitment (Liou et al., 2013; Murtaugh and Keefe, 2015). Nonetheless, Ptf1a cKO pancreata did not exhibit a general pancreatitis phenotype (Figure 4—figure supplement 2A–C) nor did they exhibit a detectable increase in epithelial cell apoptosis (Figure 4—figure supplement 2D–F). In addition, we found that treatment of wild-type mice with high-dose TM was not sufficient to induce pancreatic inflammation (Figure 4—figure supplement 3), suggesting that the stronger phenotype of high-dose Ptf1a cKO mice, relative to low-dose, was not due to stimulation of ADM by non-specific tissue damage.
 
 Loss of PTF1A was accompanied by upregulation of SOX9 by the majority of EYFP+ cells, indicating partial reprogramming to a duct-like state (Figure 4J–M). Surprisingly, we also observed a significant (∼fourfold) increase in the fraction of Ki67+ epithelial cells in Ptf1a cKO pancreata compared with control, suggesting that loss of PTF1A results in deregulation of proliferation as well as differentiation (Figure 4—figure supplement 2G–I). Taken together, these data indicate that Ptf1a is required to maintain acinar gene expression and quiescence, as well as prevent metaplasia to a duct-like state, potentially by inhibiting upregulation of SOX9.
 
-## Loss of Ptf1a activates KRAS-dependency and fibroinflammatory pathways
+### Loss of Ptf1a activates KRAS-dependency and fibroinflammatory pathways
 
-In order to investigate further the mechanism of ADM after loss of
+In order to investigate further the mechanism of ADM after loss of Ptf1a, we performed RNA-seq on whole pancreata from three control and three Ptf1a cKO mice, each of which received three doses of TM (0.25 mg/g) to induce maximal recombination 2 weeks prior to RNA extraction. Initial analysis of RNA-seq data sets by edgeR (Robinson et al., 2010), setting a false discovery rate (FDR) threshold of 0.05, identified significant changes in expression of over 3000 total genes (Figure 5A). Consistent with our immunostaining (Figure 4), among the most significantly downregulated mRNAs were Ptf1a (18.4-fold) and Cpa1 (5.45-fold), while Sox9 was significantly upregulated (4.61-fold) in Ptf1a cKO pancreata (Figure 5A). Additional downregulated mRNAs included a wide variety of digestive enzymes and other secreted proteins characteristic of the exocrine acinar phenotype, consistent with the long-standing hypothesis that they are directly regulated by PTF1A (Rose et al., 2001; MacDonald et al., in preparation).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig5-v2.jpg)
 
-**Figure 5.:** (A) Volcano plot showing differentially expressed genes (false discovery rate [FDR] <0.05; gray) in Ptf1a cKO pancreata, relative to control. Individual genes are labeled and highlighted in black. Genes belonging to signatures characteristic of RAS dependency, classical and exocrine-like pancreatic ductal adenocarcinoma (PDAC) are highlighted in pink, green, and blue, respectively. Table below indicates p-values from binomial test for enrichment of gene signatures within up- or down-regulated genes. (B) Gene Set Enrichment Analysis (GSEA) enrichment plots of differentially expressed genes between Ptf1a cKO and control indicating positive enrichment of RAS dependency and classical PDAC signatures and negative enrichment of exocrine-like PDAC signature genes. (C, D) Ingenuity Pathway Analysis (IPA, Qiagen Redwood City, www.qiagen.com/ingenuity) was used to identify differentially expressed pathways and upstream regulators in Ptf1a cKO pancreata. (C) Heat map of pathways that are significantly increased and decreased upon Ptf1a deletion. (D) Heat map of upstream pathways and regulators predicted to drive the observed changes in gene expression. Color scale is indicative of the -log p-value (significance). All analyses are based on a ±2.0-fold expression threshold. Full details of the data set and analyses can be found in the supplementary data files.DOI: http://dx.doi.org/10.7554/eLife.07125.016
+**Figure 5.:** (A) Volcano plot showing differentially expressed genes (false discovery rate [FDR] <0.05; gray) in Ptf1a cKO pancreata, relative to control. Individual genes are labeled and highlighted in black. Genes belonging to signatures characteristic of RAS dependency, classical and exocrine-like pancreatic ductal adenocarcinoma (PDAC) are highlighted in pink, green, and blue, respectively. Table below indicates p-values from binomial test for enrichment of gene signatures within up- or down-regulated genes. (B) Gene Set Enrichment Analysis (GSEA) enrichment plots of differentially expressed genes between Ptf1a cKO and control indicating positive enrichment of RAS dependency and classical PDAC signatures and negative enrichment of exocrine-like PDAC signature genes. (C, D) Ingenuity Pathway Analysis (IPA, Qiagen Redwood City, www.qiagen.com/ingenuity) was used to identify differentially expressed pathways and upstream regulators in Ptf1a cKO pancreata. (C) Heat map of pathways that are significantly increased and decreased upon Ptf1a deletion. (D) Heat map of upstream pathways and regulators predicted to drive the observed changes in gene expression. Color scale is indicative of the -log p-value (significance). All analyses are based on a ±2.0-fold expression threshold. Full details of the data set and analyses can be found in the supplementary data files.
 
 Given our finding that loss of Ptf1a strongly potentiates KRAS-induced PanIN initiation (Figures 2, 3), we analyzed the expression of genes previously implicated in KRAS signaling and PDAC development. Interestingly, tumor suppressors classically associated with PDAC, such as p53 (Trp53), Cdkn2a/Ink4a, Pten, Brca2, and Smad4, were not significantly downregulated in the absence of Ptf1a (data not shown), leading to the notion that the susceptibility of Ptf1a cKO pancreata to KRAS involves a novel mechanism distinct from canonical tumor suppression pathways. By contrast, we found that two acinar-specific transcription factors previously implicated in suppressing PanIN development, Bhlha15 (commonly referred to as Mist1) and Nr5a2 (Shi et al., 2009b; Flandez et al., 2014; von Figura et al., 2014b), were downregulated in Ptf1a cKO mice, consistent with PTF1A acting at or near the top of a regulatory hierarchy responsible for maintaining acinar identity and suppressing tumorigenesis (Figure 5A).
 
@@ -137,33 +180,33 @@ In human cell lines derived from pancreatic and other cancers, dependence on KRA
 
 To identify biological pathways that were activated or attenuated by Ptf1a deletion, we analyzed this RNA-seq data set using Qiagen's Ingenuity Pathway Analysis (IPA, QIAGEN Redwood City, www.ingenuity.com) (Thomas and Bonchev, 2010; Kramer et al., 2014). We analyzed canonical pathways using three different thresholds of gene expression (1.5-fold up/downregulation, 2.0-fold up/downregulation, and 3.0-fold up/downregulation; Supplementary files 3–5). At an upregulation threshold of 2.0, deletion of Ptf1a significantly affected over 300 pathways, several of which have an established role in PDAC initiation. These included T-helper cell-signaling pathways (McAllister et al., 2014), stellate-cell activation and fibrosis (Sherman et al., 2014), and epidermal growth factor (EGF) signaling (Ardito et al., 2012; Navas et al., 2012) (Figure 5C). A general ‘pancreatic adenocarcinoma signaling’ pathway was also upregulated, consisting primarily of genes involved in PI-3-kinase and JAK/STAT signaling. We also used IPA Upstream Regulator Analysis to predict upstream signaling mediators that could explain the changes in gene expression within our data set (Kramer et al., 2014). The predicted upregulated mediators were consistent across multiple expression thresholds and included TNF-α, TGF-β, IL-1β, NFκB, and the SWI/SNF component Smarca4/Brg1 (Figure 5D). All of these signaling pathways have been implicated in PDAC initiation and progression (Bardeesy et al., 2006; Adrian et al., 2009; Khasawneh et al., 2009; Maniati et al., 2011; Daniluk et al., 2012; Maier et al., 2013; Gore et al., 2014; von Figura et al., 2014a). Thus, we propose that loss of Ptf1a alters cell state at multiple levels, ultimately promoting gene expression and signaling activities that are supportive of KRAS transformation.
 
-## Caerulein-induced pancreatitis is sufficient to reprogram Ptf1a-deficient acinar cells
+### Caerulein-induced pancreatitis is sufficient to reprogram Ptf1a-deficient acinar cells
 
 Among the upstream mediators activated in the Ptf1a cKO model are TNF-α and NFkB, both of which promote ADM and inflammation in pancreatitis and amplify KRAS activity in pancreatic tumorigenesis (Maniati et al., 2011; Daniluk et al., 2012; Huang et al., 2013; Maier et al., 2013; Sendler et al., 2013). As Ptf1a deletion upregulates other pathways characteristic of pancreatic injury, such as stellate-cell activation, TGF-β signaling, and dendritic cell maturation (Bedrosian et al., 2011; Erkan et al., 2012), we were interested to determine if loss of Ptf1a would sensitize acinar cells to injury-induced reprogramming even without oncogenic KRAS.
 
-To test this hypothesis in vivo, we deleted
+To test this hypothesis in vivo, we deleted Ptf1a via high-dose TM administration (three doses of 0.17 mg/g), which induced a recombination rate of ∼65% (Figure 4—figure supplement 1). At 1 week post-TM, acute pancreatitis was induced by two consecutive days of treatment with the secretagogue caerulein, as previously described (Jensen et al., 2005; Keefe et al., 2012), and pancreata were harvested 1 week later (Figure 6A). As a control for caerulein injections, additional TM-treated Ptf1a cKO and control mice were administered saline vehicle alone. As previously reported, control mice recovered from caerulein treatment and were indistinguishable from saline-injected controls after 1 week (Figure 6B–D). In contrast, Ptf1a cKO mice subjected to caerulein-induced pancreatitis exhibited widespread acinar atrophy, persistent inflammation, fibrotic stroma, and the appearance of mucinous metaplastic structures (Figure 6E,F). These abnormal ductules were Alcian Blue-reactive, similar to PanINs (Figure 6G), although staining for the PanIN-specific markers CLDN18 and MUC5AC was observed in only rare and isolated lesions (Figure 6—figure supplement 1A,B). Consistent with the overall distorted histology (Figure 6E) and atrophy (Figure 6H) of caerulein-treated Ptf1a cKO mice, no normal amylase+ acinar clusters could be detected in these pancreata, in contrast to controls (Figure 6I–L). Acinar-derived EYFP+ cells in caerulein-treated Ptf1a cKO pancreata were instead integrated within CK19+ duct-like structures, suggesting that pancreatitis synergizes with loss of Ptf1a to cause a rapid loss of acinar gene expression and complete reprogramming to a duct-like fate (Figure 6I–L).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig6-v2.jpg)
 
-**Figure 6.:** Ptf1a is necessary for acinar cell regeneration and suppression of dysplasia following induced pancreatitis.(A) 6- to 8-week-old control and Ptf1a cKO mice were administered three doses of TM (0.17 mg/g) on consecutive days. 1 week later, mice were administered eight hourly injections of caerulein or saline vehicle, on two consecutive days. Mice were sacrificed 1 week following caerulein treatment. (B–E) H&E staining on control and Ptf1a cKO pancreata (n = 4–5 per group) 1 week following caerulein treatment. (F) H&E stain highlighting a PanIN-like lesion in caerulein-treated Ptf1a cKO. (G) Alcian Blue-positive lesions in caerulein-treated Ptf1a cKO. (H) Relative pancreas size, measured as a percent of body weight, among treatment groups (n = 4–5 per group, p < 0.01). (I–L) Immunofluorescence for amylase (red), CK19 (white), and the Cre reporter R26R (green), in pancreata of control and EYFPPtf1a cKO treated with saline or caerulein. EYFP+ cells of caerulein-treated cKO have downregulated amylase and contribute to CK19+ PanIN-like structures. Scale bars: (B–E) 200 µm, (I–L) 50 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.017
+**Figure 6.:** (A) 6- to 8-week-old control and Ptf1a cKO mice were administered three doses of TM (0.17 mg/g) on consecutive days. 1 week later, mice were administered eight hourly injections of caerulein or saline vehicle, on two consecutive days. Mice were sacrificed 1 week following caerulein treatment. (B–E) H&E staining on control and Ptf1a cKO pancreata (n = 4–5 per group) 1 week following caerulein treatment. (F) H&E stain highlighting a PanIN-like lesion in caerulein-treated Ptf1a cKO. (G) Alcian Blue-positive lesions in caerulein-treated Ptf1a cKO. (H) Relative pancreas size, measured as a percent of body weight, among treatment groups (n = 4–5 per group, p < 0.01). (I–L) Immunofluorescence for amylase (red), CK19 (white), and the Cre reporter R26REYFP (green), in pancreata of control and Ptf1a cKO treated with saline or caerulein. EYFP+ cells of caerulein-treated cKO have downregulated amylase and contribute to CK19+ PanIN-like structures. Scale bars: (B–E) 200 µm, (I–L) 50 µm.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A, B) IHC for the PanIN markers Claudin-18 (A) and MUC5ac (B) in caerulein-treated Ptf1a cKO with corresponding positive and negative controls. Green arrows indicate weakly Claudin-18 positive or Muc5ac positive lesions and red arrows indicate Claudin-18/Muc5ac negative metaplasia. (C–F) IHC for phosphorylated-ERK (p-ERK) on control and Ptf1a cKO pancreata 1 week following caerulein treatment. Enlarged boxed area highlights mucinous metaplasia-like lesions from caerulein-treated Ptf1a cKO pancreata with strong nuclear p-ERK signal. Scale bars: 200 μm.DOI: http://dx.doi.org/10.7554/eLife.07125.018
+**Figure 6—figure supplement 1.:** (A, B) IHC for the PanIN markers Claudin-18 (A) and MUC5ac (B) in caerulein-treated Ptf1a cKO with corresponding positive and negative controls. Green arrows indicate weakly Claudin-18 positive or Muc5ac positive lesions and red arrows indicate Claudin-18/Muc5ac negative metaplasia. (C–F) IHC for phosphorylated-ERK (p-ERK) on control and Ptf1a cKO pancreata 1 week following caerulein treatment. Enlarged boxed area highlights mucinous metaplasia-like lesions from caerulein-treated Ptf1a cKO pancreata with strong nuclear p-ERK signal. Scale bars: 200 μm.
 
 As our findings in Ptf1a cKO; KrasG12D mice indicate that loss of PTF1A enhances the transforming activity of mutant KRAS, we were interested to determine if development of mucinous metaplasia involved enhanced signaling through endogenous RAS. The MEK-ERK pathway is a major regulator of KRAS-induced acinar reprogramming (Collins et al., 2014), and we found that nearly all metaplastic lesions of caerulein-treated Ptf1a cKO mice exhibited robust nuclear phospho-ERK staining (Figure 6—figure supplement 1C–F). Phospho-ERK was undetectable in saline-treated Ptf1a cKO mice, or control mice under either treatment. Taken together, these data demonstrate that PTF1A is necessary for acinar-cell redifferentiation and resolution of tissue injury following acute pancreatitis. In the absence of PTF1A, a persistent inflamed microenvironment may have tumor promoter-like activity, enhancing KRAS-MEK-ERK signaling to induce transformation (Gukovsky et al., 2013; Murtaugh, 2014).
 
-## Ptf1a heterozygosity promotes PDAC by increasing the frequency of initiating events
+### Ptf1a heterozygosity promotes PDAC by increasing the frequency of initiating events
 
-The above studies rely on genetic deletion of
+The above studies rely on genetic deletion of Ptf1a, a process without clear parallel in human disease: somatic mutations of PTF1A are not observed in human PDAC, according to the Catalogue of Somatic Mutations in Cancer (COSMIC) database (cancer.sanger.ac.uk). PTF1A is more likely to be downregulated by an epigenetic mechanism, for example, via attenuation of the positive autoregulatory loop by which PTF1A maintains its own expression and that of its partner transcription factors (Masui et al., 2008). Impaired expression of PTF1-network components, lowering the threshold for KRAS-mediate reprogramming and transformation, might explain the dosage-sensitive requirement for Nr5a2 in preventing PanIN formation (Flandez et al., 2014; von Figura et al., 2014b). To determine if the role of Ptf1a itself is dosage-sensitive, we generated mice of the ‘KC’ genotype, using the Pdx1-Cre driver to activate KrasLSL-G12D throughout the pancreas (Aguirre et al., 2003; Hingorani et al., 2003; Murtaugh, 2014), and which were either heterozygous for a germ line deletion of Ptf1a (Pdx1-Cre; KrasLSL-G12D; Ptf1aΔ/+) or remained homozygous Ptf1a wild type. We harvested pancreata at 1 month of age, at which time PanIN formation is usually minimal in KC mice, and quantified PanIN burden by Alcian Blue staining. Mice heterozygous for Ptf1a had increased PanINs at this early stage, compared to Ptf1a+/+ littermates (Figure 7A–C). This result is consistent with a dosage-sensitive function for PTF1A, such that reduced levels or activity already begin to destabilize acinar differentiation in the face of oncogenic insults.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig7-v2.jpg)
 
-**Figure 7.:** Ptf1a heterozygosity increases the frequency of PanINs and allows for rapid progression of PDAC.(A) Quantification of PanINs in pancreata from 1-month-old Pdx1-Cre; Kras and G12DPdx1-Cre; KrasG12D; Ptf1a∆ mice (n = 5 per genotype, p < 0.05). (/+B, C) Representative Alcian Blue and Eosin staining from 1-month-old mice of indicated genotypes. (D) Kaplan–Meier analysis from KPC mice (Pdx1-Cre; KrasG12D; p53lox/+; Ptf1a, blue line) and KPC; +/+Ptf1a∆/+ mice (red line) (Log-Rank test p < 0.01). (E–H) H&E staining on tumors from both KPC and KPC:Ptf1a∆/+ mice at low and high magnification. (G, H) Arrows indicate ductile epithelial cells and arrowheads indicate areas of necrosis. (I, J) IHC for CK19 on tumor specimens from mice of indicated genotypes. Scale Bars: (B, C) 500 µm, (E, F) 500 µm, (G–J) 200 µm.DOI: http://dx.doi.org/10.7554/eLife.07125.019
+**Figure 7.:** (A) Quantification of PanINs in pancreata from 1-month-old Pdx1-Cre; KrasG12D and Pdx1-Cre; KrasG12D; Ptf1a∆/+ mice (n = 5 per genotype, p < 0.05). (B, C) Representative Alcian Blue and Eosin staining from 1-month-old mice of indicated genotypes. (D) Kaplan–Meier analysis from KPC mice (Pdx1-Cre; KrasG12D; p53lox/+; Ptf1a+/+, blue line) and KPC; Ptf1a∆/+ mice (red line) (Log-Rank test p < 0.01). (E–H) H&E staining on tumors from both KPC and KPC:Ptf1a∆/+ mice at low and high magnification. (G, H) Arrows indicate ductile epithelial cells and arrowheads indicate areas of necrosis. (I, J) IHC for CK19 on tumor specimens from mice of indicated genotypes. Scale Bars: (B, C) 500 µm, (E, F) 500 µm, (G–J) 200 µm.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/07125/elife-07125-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Ptf1a.(A) Gross image of a Pdx1-Cre; KrasG12D; Ptf1a mouse harboring metastatic pancreatic cancer. White box highlights large liver metastasis. (+/−B) Dissected lobe of the liver with pancreatic liver metastasis. (C) IHC for CLDN18 confirmed liver metastases in a subset of Pdx1-Cre; KrasG12D; p53+/−; Ptf1a mice. (+/−D) Gross image of Pdx1-Cre; KrasG12D; p53+/−; Ptf1a mouse harboring metastatic PDAC. White box highlights liver metastasis.+/−DOI: http://dx.doi.org/10.7554/eLife.07125.020
+**Figure 7—figure supplement 1.:** (A) Gross image of a Pdx1-Cre; KrasG12D; Ptf1a+/− mouse harboring metastatic pancreatic cancer. White box highlights large liver metastasis. (B) Dissected lobe of the liver with pancreatic liver metastasis. (C) IHC for CLDN18 confirmed liver metastases in a subset of Pdx1-Cre; KrasG12D; p53+/−; Ptf1a+/− mice. (D) Gross image of Pdx1-Cre; KrasG12D; p53+/−; Ptf1a+/− mouse harboring metastatic PDAC. White box highlights liver metastasis.
 
 In humans, increased PanIN burden in early life is associated with familial risk of PDAC, suggesting that mutations driving genetic predisposition to PDAC act at the level of tumor initiation (Brune et al., 2006; Shi et al., 2009a). We therefore hypothesized that decreased Ptf1a dosage would promote cancer susceptibility by increasing the rate of PanIN initiation. Therefore, we utilized the well-characterized ‘KPC’ model of mouse PDAC in which heterozygous loss of p53 (official gene symbol Trp53) is added to the Pdx1-Cre; KrasLSL-G12D genotype (Hingorani et al., 2005; Rhim et al., 2012). As above, KPC mice (Pdx1-Cre; KrasLSL-G12D; p53lox/+) were generated on either Ptf1a+/+ or Ptf1aΔ/+ backgrounds, and animals were monitored for tumor-free survival. The results of Kaplan–Meier analysis showed that Ptf1a-heterozygous KPC mice developed PDAC much earlier than Ptf1a+/+ counterparts (Figure 7D, Log-rank test, p < 0.01). We observed prominent metastases to the liver in 3/9 Ptf1aΔ/+ KPC mice, but none in Ptf1a+/+ KPC controls (Figure 7—figure supplement 1). Importantly, despite the earlier onset of PDAC in KPC mice with Ptf1a heterozygosity, once tumors arose they were histologically indistinguishable between genotypes (Figure 7E–H). They contained classical features of human PDAC, including abundant fibrotic stroma surrounding CK19+ epithelial cells (Figure 7I,J) and substantial areas of necrosis. We therefore conclude that decreased Ptf1a gene dosage sensitizes pancreata to early KRAS-mediated PanIN initiation and rapid progression to PDAC.
 
@@ -181,35 +224,160 @@ In summary, we show that acinar cell differentiation, maintained through PTF1A, 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Experimental mice of the following genotypes have been previously described: Ptf1aCreERT (Ptf1atm2(cre/ESR1)Cvw [Kopinke et al., 2012; Pan et al., 2013]), Pdx1-Cre (Tg(Pdx1-cre)89.1Dam [Gu et al., 2002]), KrasLSL-G12D (Krastm4Tyj [Hingorani et al., 2003]), p53lox (Trp53tm1Brn [Marino et al., 2000]), and R26REYFP (Gt(ROSA)26Sortm1(EYFP)Cos [Srinivas et al., 2001]). The Ptf1alox allele (Ptf1atm3Cvw) was generated using homologous recombination in mouse ES cells at the Vanderbilt Transgenic Mouse/Embryonic Stem Cell Shared Resource. The 5′ and 3′ loxP sites were placed 1.7 kb upstream and 2 kb downstream of the Ptf1a transcriptional start site, respectively. Full details will be provided elsewhere (Wright et al., in preparation). Mice with a germ line deletion allele of Ptf1a, Ptf1aΔ were generated by crossing Ptf1alox to the ubiquitous early deletor line Sox2-Cre (Tg(Sox2-cre)1Amc [Hayashi et al., 2003]). To activate CreERT-mediated recombination, mice were administered tamoxifen (Sigma, St. Louis, MO) dissolved in corn oil, via oral gavage at doses indicated in the text. All mouse experiments were carried out according to institutional and NIH guidelines.
 
-## Human histological specimens
+### Human histological specimens
 
 All human pathological specimens were de-identified before their use. The utilization of these human specimens is therefore not considered human subject research under the US Department of Human and Health Services regulations and related guidance (45 CDR Part 46). Paraffin embedded specimens were sectioned (6 µm) and IHC was performed for PTF1A, as described below. Samples were analyzed by NMK, MPB, and LCM.
 
-## Tissue processing and histology
+### Tissue processing and histology
 
 After euthanasia, pancreata were dissected in ice-cold phosphate-buffered saline solution (PBS), separated into multiple fragments, and processed for both frozen and paraffin sections as previously described (De La et al., 2008; Keefe et al., 2012; Kopinke et al., 2012). Briefly, tissues were fixed for paraffin embedding in zinc-buffered formalin (Z-FIX; Anatech, Battle Creek, MI), room temperature overnight, or 4% paraformaldehyde/PBS, 4°C 1–2 hr, followed by processing into Paraplast Plus (McCormick Scientific) or Tissue-Tek O.C.T. compound (Sakura Finetek, Torrance, CA). Paraffin and frozen sections were cut at thickness of 6 µm and 8 µm, respectively, and collected sequentially across multiples slides, with ∼100-µm spacing between individual sections on a single slide.
 
-IHC and immunofluorescence followed our established procedures (De La et al., 2008; Keefe et al., 2012; Kopinke et al., 2012), including high-temperature antigen retrieval (Vector Unmasking Solution; Vector Laboratories, Burlingame, CA) prior to staining paraffin sections. Primary antibodies utilized in this study are listed in Table 2. Secondary antibodies, raised in donkey (Jackson Immunoresearch, West Grove, PA), were used at 1:250 dilution. Vectastain reagents and diaminobenzidine (DAB) substrate (Vector Laboratories) were used for IHC. Slides stained by immunofluorescence were counterstained with DAPI and mounted in Fluoromount-G (Southern Biotech), and photographed on an Olympus IX71 microscope, using MicroSuite software (Olympus America, Waltham, MA). Images were processed in Adobe Photoshop, with exposure times and adjustments identical between genotypes and treatment groups.10.7554/eLife.07125.021Table 2.Primary antibodies used in this studyDOI: http://dx.doi.org/10.7554/eLife.07125.021AntigenSpeciesSourceCatalog #DilutionAmylaseSheepBioGenesis0480-01041:1000Cleaved-caspase-3RabbitAbcamAB23021:1000Cd45RateBioScience14-0451-821:2000Claudin-18RabbitInvitrogen7001781:2000Cpa1GoatR&D SystemsAF27651:1000Cytokeratin-19RatDevelopmental Studies Hybridoma Bank–1:50Cytokeratin-19RabbitAbcamAB1334961:5000GFPChickenAves Labs Inc.GFP-10101:5000Ki67MouseBD Biosciences5506091:500Muc5acMouseNeoMarkers45M11:500Ptf1aRabbitChris Wright, Vanderbilt University–1:5000Ptf1aGoatChris Wright, Vanderbilt University–1:5000Phospho-ERK1/2 (T202/Y204)RabbitCell Signaling91011:1000Sox9RabbitMilliporeAB55351:1000α-SMARabbitAbcamAB325751:2000SMA, smooth muscle actin.
+IHC and immunofluorescence followed our established procedures (De La et al., 2008; Keefe et al., 2012; Kopinke et al., 2012), including high-temperature antigen retrieval (Vector Unmasking Solution; Vector Laboratories, Burlingame, CA) prior to staining paraffin sections. Primary antibodies utilized in this study are listed in Table 2. Secondary antibodies, raised in donkey (Jackson Immunoresearch, West Grove, PA), were used at 1:250 dilution. Vectastain reagents and diaminobenzidine (DAB) substrate (Vector Laboratories) were used for IHC. Slides stained by immunofluorescence were counterstained with DAPI and mounted in Fluoromount-G (Southern Biotech), and photographed on an Olympus IX71 microscope, using MicroSuite software (Olympus America, Waltham, MA). Images were processed in Adobe Photoshop, with exposure times and adjustments identical between genotypes and treatment groups.
+
+**Table 2.**
+ Primary antibodies used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Species</th>
+      <th>Source</th>
+      <th>Catalog #</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amylase</td>
+      <td>Sheep</td>
+      <td>BioGenesis</td>
+      <td>0480-0104</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Cleaved-caspase-3</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>AB2302</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Cd45</td>
+      <td>Rat</td>
+      <td>eBioScience</td>
+      <td>14-0451-82</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Claudin-18</td>
+      <td>Rabbit</td>
+      <td>Invitrogen</td>
+      <td>700178</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Cpa1</td>
+      <td>Goat</td>
+      <td>R&amp;D Systems</td>
+      <td>AF2765</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Cytokeratin-19</td>
+      <td>Rat</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>–</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Cytokeratin-19</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>AB133496</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>Chicken</td>
+      <td>Aves Labs Inc.</td>
+      <td>GFP-1010</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Ki67</td>
+      <td>Mouse</td>
+      <td>BD Biosciences</td>
+      <td>550609</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Muc5ac</td>
+      <td>Mouse</td>
+      <td>NeoMarkers</td>
+      <td>45M1</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Ptf1a</td>
+      <td>Rabbit</td>
+      <td>Chris Wright, Vanderbilt University</td>
+      <td>–</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Ptf1a</td>
+      <td>Goat</td>
+      <td>Chris Wright, Vanderbilt University</td>
+      <td>–</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Phospho-ERK1/2 (T202/Y204)</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling</td>
+      <td>9101</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Sox9</td>
+      <td>Rabbit</td>
+      <td>Millipore</td>
+      <td>AB5535</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>α-SMA</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>AB32575</td>
+      <td>1:2000</td>
+    </tr>
+  </tbody>
+</table>
+
+_SMA, smooth muscle actin._
 
 For Alcian Blue staining, paraffin sections were washed 5 min in 3% acetic acid, followed by a 10–12 min incubation in staining solution (1% Alcian Blue in 3% acetic acid), and extensive washing in 3% acetic acid. Sirius Red staining was performed on frozen sections that were fixed for 1 hr in Bouin's fixative at 55°C. Specimens were subsequently washed in dH2O and stained for 1 hr in Picro-Sirius Red (American MasterTech, Lodi, CA). Following staining, specimens were rinsed in 0.5% acetic acid, dehydrated and equilibrated into xylene, and mounted with Permount.
 
-## PanIN scoring
+### PanIN scoring
 
 The entire tissue area of Alcian Blue/eosin-stained slides was photographed, at 4× original magnification, followed by photomerging (Adobe Photoshop) and surface area measurement using ImageJ software (NIH). Alcian Blue+ PanIN lesions were counted manually under the microscope, and PanIN burden calculated as the total number of Alcian Blue+ lesions per cm2 surface area. As described in the text, metaplastic lesions that did not stain with Alcian Blue were not counted in the quantification. To avoid double-counting of potentially large and tortuous lesions, no more than one lesion was scored within an anatomically distinct pancreatic lobule (De La et al., 2008).
 
-## 3D pancreatic acinar cultures
+### 3D pancreatic acinar cultures
 
 Acinar cultures were established according to previous publications (Kurup and Bhonde, 2002; Means et al., 2005; Ardito et al., 2012). Briefly, dorsal pancreata were minced in Hank's buffered saline solution and digested sequentially in 0.02% trypsin (5 min, 37°C) and 1 mg/ml collagenase P (Roche Applied Science, Mannheim, Germany; 15 min, 37°C), following filtration to eliminate undigested material, and repeated washing to eliminate debris and dead cells, acinar cell clusters were embedded in rat tail collagen gels (Corning, Corning, NY), and cultured in Waymouth's medium (Life Technologies, Carlsbad, CA) supplemented with 1% fetal bovine serum, 0.4 mg/ml soybean trypsin inhibitor, and 1 µg/ml dexamethasone. Cultures were fixed and imaged after 5 days. To quantify cyst size, we randomly selected >10 fields per mouse, imaged, and quantified the maximal diameter of each transformed cyst using ImageJ.
 
-## Quantification of immunofluorescence images
+### Quantification of immunofluorescence images
 
 In order to quantify R26REYFP labeling, 10–12 randomly selected 20× fields per specimen (taken across multiple sections) were photographed. Using ImageJ software (NIH), cells co-expressing EYFP with the acinar differentiation markers Amylase or CPA1 were detected by additive image overlay of their staining with DAPI and anti-GFP, and counted using the Analyze Particles function, as described previously (Keefe et al., 2012; Kopinke et al., 2012). To ensure counting accuracy, random images were spot checked by manual counting using Adobe Photoshop. All calculations were performed in Microsoft Excel and the results are reported as the mean ± standard deviation (error bars). p-values were determined by two-tailed, unpaired t-tests performed in Excel or Graphpad Prism 6.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Total RNA was isolated from pancreata of 4- to 5-month-old Ptf1a cKO mice (Ptf1aCreERT/lox) and their corollary controls (Ptf1aCreERT/+), 2 weeks after TM treatment (3 days, 0.25 mg/g/day), using the guanidine thiocyanate protocol previously described with minor modifications (MacDonald et al., 1987). Individual RNA-Seq libraries were prepared from 5 μg of pancreatic RNA from three control and three Ptf1a cKO mice with the Illumina True-seq protocol by the UT Southwestern Genomic Core. The sequence data sets from an Illumina HISEQ2500 contained 50-nucleotide uniquely aligned single-end reads of 25.1, 26.4, and 25.8 million for the control samples and 29.7, 24.7, and 26.7 million for the Ptf1a cKO RNA samples (Tophat2) (Kim et al., 2013). Genes with differential expression were derived using edgeR (Robinson et al., 2010), with the default trimmed mean of M-values (TMM) trim settings of 30% for Mg and 5% for Ag and an FDR cut-off of <0.05. The volcano plot of differentially expressed genes was generated using R (http://www.r-project.org/) with the log2 fold change (FC) plotted against the FDR (−log10) (Supplementary files 1, 2).
 
@@ -217,10 +385,10 @@ Gene signatures of RAS dependency (Singh et al., 2009; Loboda et al., 2010), cla
 
 To identify regulatory pathways altered upon Ptf1a deletion, significantly increased and decreased genes were analyzed by IPA (QIAGEN, Redwood City, CA, www.ingenuity.com) at expression thresholds of 1.5-, 2.0,- and 3.0-fold (Supplementary files 3–5). In order to obtain an accurate comparison between enriched and downregulated pathways, we used the Comparison Analysis function from expression data filtered at a gene expression threshold of ±2.0-fold. Heat maps were generated according to the −log p-values given by the IPA software using the comparison analysis function and were constructed in R (http://www.r-project.org/).
 
-## Caerulein treatment
+### Caerulein treatment
 
 We induced acute pancreatitis by i.p. injection of caerulein (Bachem, Torrance, CA), 0.1 µg/g, eight times daily over two consecutive days, as previously (Jensen et al., 2005; Keefe et al., 2012). Negative controls were injected with saline vehicle alone. Pancreata from all caerulein- or saline-treated mice were harvested 1 week following the final injection and processed as described above.
 
-## Kaplan–Meier analysis
+### Kaplan–Meier analysis
 
 KPC mice (of the genotype Pdx1-Cre; KrasG12D; p53lox/+) and KPC mice with Ptf1a heterozygosity (Pdx1-Cre; KrasG12D; p53lox/+; Ptf1aΔ/+) were aged until they exhibited lethargy or distress as determined by the authors (NMK and LCM) and the in-house veterinary staff, or until the detection of a firm abdominal mass by palpation. The presence of PDAC was confirmed by histological analysis in consultation with a surgical pathologist (MB). At sacrifice, all mice were thoroughly inspected for liver metastases. Survival analysis was performed in GraphPad Prism (Version 6) and p-values were calculated using a Log-rank test.

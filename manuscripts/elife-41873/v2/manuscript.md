@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.41873.001 Self-replicating gene drives that modify sex ratios or infer a fitness cost could be used to control populations of invasive alien species. The targeted deletion of Y sex chromosomes using CRISPR technology offers a new approach for sex bias that could be incorporated within gene-drive designs. We introduce a novel gene-drive strategy termed Y-CHromosome deletion using Orthogonal Programmable Endonucleases (Y-CHOPE), incorporating a programmable endonuclease that ‘shreds’ the Y chromosome, thereby converting XY males into fertile XO females. Firstly, we demonstrate that the CRISPR/Cas12a system can eliminate the Y chromosome in embryonic stem cells with high efficiency ( c . 90%). Next, using stochastic, individual-based models of a pest mouse population, we show that a Y-shredding drive that progressively depletes the pool of XY males could effect population eradication through mate limitation. Our molecular and modeling data suggest that a Y-CHOPE gene drive could be a viable tool for vertebrate pest control.
+Self-replicating gene drives that modify sex ratios or infer a fitness cost could be used to control populations of invasive alien species. The targeted deletion of Y sex chromosomes using CRISPR technology offers a new approach for sex bias that could be incorporated within gene-drive designs. We introduce a novel gene-drive strategy termed Y-CHromosome deletion using Orthogonal Programmable Endonucleases (Y-CHOPE), incorporating a programmable endonuclease that ‘shreds’ the Y chromosome, thereby converting XY males into fertile XO females. Firstly, we demonstrate that the CRISPR/Cas12a system can eliminate the Y chromosome in embryonic stem cells with high efficiency (c. 90%). Next, using stochastic, individual-based models of a pest mouse population, we show that a Y-shredding drive that progressively depletes the pool of XY males could effect population eradication through mate limitation. Our molecular and modeling data suggest that a Y-CHOPE gene drive could be a viable tool for vertebrate pest control.
 
 ## Introduction
 
@@ -46,23 +46,23 @@ With invasive mice on islands as our motivating case study, we used in silico si
 
 ## Results
 
-## Empirical Y-shredding efficiency
+### Empirical Y-shredding efficiency
 
 To investigate Cas12a-mediated Y chromosome deletion, we identified Cas12a gRNAs that target repeat sequences in the Y-centromere. Three potential centromere shredder gRNAs were tested: Centro 37X-A, Centro 37X-B and Centro 59X, each of which specifically targeted the Y-centromere at 37, 37 and 59 sites, respectively. Expression of Cas12a (from Lachnospiraceae bacterium) and each of the gRNAs in XY mouse embryonic stem cells resulted in deletion of the Y-chromosome with high efficiency compared to cells transfected with empty vector (EV) (Figure 2). In particular, the gRNA Centro 37X-A eliminated nearly 90% of the Y-chromosomes in the cell population based on qPCR analyses of sequences at the termini of short and long arms (Figure 2). This efficiency is slightly higher than our previously published Y chromosome deletion experiments using SpCas9 (~80% efficiency; Adikusuma et al., 2017).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/41873/elife-41873-fig2-v2.jpg)
 
-**Figure 2.:** Controls were transfected with empty vector (EV). Sox1 qPCR was used as the internal reference control. Data are presented as mean ±95% confidence intervals from n ≥ 3 biological replicates.  10.7554/eLife.41873.003Figure 2—source data 1.
+**Figure 2.:** Controls were transfected with empty vector (EV). Sox1 qPCR was used as the internal reference control. Data are presented as mean ±95% confidence intervals from n ≥ 3 biological replicates.
 
 We also assessed whether targeting long arm repeats using Cas12a could effect Y-chromosome elimination. Three Cas12a gRNAs specifically targeting the Y long arm 225, 243 and 256 times were assessed for Y-shredding as described above. All these gRNAs showed shredding activity, although none exceeded the efficiency of gRNA Centro 37X-A (Figure 2). We therefore conclude that centromere shredding using Cas12a provides an efficient approach for Y-chromosome deletion.
 
-## In silico experiments
+### In silico experiments
 
 Individual-based simulations of the Y-chromosome shredding gene drive demonstrate that this strategy is capable of eradicating a pest vertebrate population (Figure 3). Using our baseline parameterization, eradication of a population of 10,000 mice was guaranteed when we assumed a perfect Y-shredding efficiency and 100% homologous recombination following Cas9 activity so that resistant alleles could not evolve (Figure 3a(i)). Under these conditions, the gene drive spread rapidly through the population, converting XY males to XO females until males became limiting and the population began to decline (Figure 3). However, the observed population trajectories changed as a function of the mating system simulated. Assuming short-term monogamy (Fmax = 1), male limitation occurred rapidly and the population size declined smoothly from carrying capacity to extinction (Figure 2b(i)). In contrast, as higher levels of polygyny were simulated by increasing the maximum number of mates allowed per male, the sex-biasing effect of the drive increased the reproductive potential of the population initially (Figure 2c(i)). This caused a short period of population growth, until the proportion of females breeding was reduced due to male limitation, after which populations declined to extinction.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/41873/elife-41873-fig3-v2.jpg)
 
-**Figure 3.:** PY), assuming resistant alleles cannot evolve.(a) The percentage of eradicated mouse populations over time, and different levels of polygyny (Fmax). (b) Total population and allosome genotype trajectories (mean ±95% confidence intervals), assuming a short-term monogamous mating system for mice (Fmax = 1). (c) As for (b), but assuming a polygynous mating system (Fmax = 3). All results were based upon 1000 iterations per scenario, and assumed an initial population size of 10,000 mice that was inoculated with 100 gene-drive carrying XX females.
+**Figure 3.:** (a) The percentage of eradicated mouse populations over time, and different levels of polygyny (Fmax). (b) Total population and allosome genotype trajectories (mean ±95% confidence intervals), assuming a short-term monogamous mating system for mice (Fmax = 1). (c) As for (b), but assuming a polygynous mating system (Fmax = 3). All results were based upon 1000 iterations per scenario, and assumed an initial population size of 10,000 mice that was inoculated with 100 gene-drive carrying XX females.
 
 The simulated probability of eradication decreased as the Y-shredding efficiency was reduced, but there was a clear interaction with the level of polygyny assumed. Assuming PY = 0.75, for example, extinction was still guaranteed for a population exhibiting short-term monogamy (Figure 3a(ii)). Under polygyny breeding (Fmax = 3), however, introduction of the gene drive produced population growth followed by suppression to a new stable state below carrying capacity. When PY was reduced still further to 0.5, permanent population suppression (but not eradication) typically resulted under short-term monogamous mating (Figure 3b(iii)). However, population growth to a new carrying capacity (above the initial carrying capacity) was observed under polygynous breeding because the sex-ratio bias toward females increased reproductive potential without causing male limitation (Figure 3c(iii)). In these cases, the failure of the simulated eradication attempt under low Y-shredding efficiencies was not due to a lack of spread. In fact, the drive spread rapidly to fixation when non-homologous end-joining (NHEJ) was precluded (PN = 0.1), but the sex-ratio distortion produced was insufficient to cause males to become limiting (Figure 4).
 
@@ -83,6 +83,14 @@ The Y-shredding efficiency required to guarantee extinction increased with the l
 **Figure 6.:** (a) An autosomally integrated Y-CHOPE drive. Final population size is shown as a function of the Y-shredding efficiency (PY) and the level of polygyny assumed for mice (Fmax), assuming placement of the gene drive within the coding region of a haploinsufficient developmental gene, and the baseline parameterisation (see Table 1). (b) An X-shredding Y-drive. Results are shown as a function of the X-shredding efficiency (PX), and the probability of offspring inheriting a Y-chromosome from male gene-drive carriers that is germline YO (PY|YO). The initial population size of 10,000 mice is indicated (horizontal dashed line).
 
 Global sensitivity analysis for the Y-CHOPE strategy, using Latin hypercube sampling of the parameter space, demonstrated that the mating system of the target species (Fmax) and the Y-shredding efficiency (PY) were the primary determinants of simulation outcomes, with relative-influence scores from the boosted regression tree BRT emulator of 29% and 28%, respectively (Figure 7a). The number of homing gRNAs, which strongly influenced the probability that homing occurred successfully, was also influential (Figure 7a). Assumptions regarding the sub-fertility of XO females had less influence on simulation results. Partial dependency plots illustrated that the placement of the Y-shredding drive within a haploinsufficient gene robust to PN up to 0.1, at least for a starting population size of 10,000 mice, but higher probabilities of NHEJ produced low probabilities of eradication (Figure 7b). Interestingly, when single-site mutations arising through NHEJ were not assumed to guarantee non-functionality of the developmental gene (i.e. Pnf <1), probabilities of eradication peaked when the Y-shredding efficiency was also less than 1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41873/elife-41873-fig7-v2.jpg)
+
+**Figure 7.:** (a) Relative influence of the ten simulation parameters included in the sensitivity analysis (parameter abbreviations are provided in Table 1). (b) Predicted probabilities of eradication derived from the BRT model for three different levels of polygyny ranging from a maximum of one to 10 females mates per male (i-iii). These partial dependency plots assume the following seven less influential parameters were set as follows: m = 6, XOfertility = 0.6, Pn = 0.1, rmax = 7.76, Pnf = 0.66, nGuides = 3, PX|XO = 0.66, and PC = 0.95.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41873/elife-41873-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Results are shown for emulation of the probability of simulated population eradication within 10 years. Note that in panel (b), a stability of 1 indicates perfect agreement between the relative influence metrics obtained from a given sample size and the next smallest sample size tested.
 
 ## Discussion
 
@@ -106,7 +114,7 @@ The molecular machinery required for the targeted deletion of sex chromosomes is
 
 ## Materials and methods
 
-## Cas12a Y-shredding in mouse embryonic stem cells
+### Cas12a Y-shredding in mouse embryonic stem cells
 
 A plasmid expressing the Lachnospiraceae bacterium (Lb) Cas12a and its gRNA (Plasmid PTE4398 Addgene #74042 (Tóth et al., 2016)) was modified to add the T2A-Puromycin resistant cassette at the C terminal of the Cas12a coding sequences to enable puromycin drug resistant selection of transfected cells. In brief, the T2A-Puro fragment was produced by digestion of plasmid PX459.V2 (Addgene #62988 (Ran et al., 2013)) using FseI and NotI (NEB) and the fragment was ligated to the FseI and NotI-digested PTE4398 backbone to generate a plasmid expressing LbCas12a-T2A-Puro and its gRNA (all-in-one plasmid). Generation of plasmids carrying unique gRNAs was performed using the protocol described by Tóth et al. (2016). In brief, oligonucleotide duplexes containing the guide sequences (Supplementary file 1) were ligated into the BsmBI golden gate cloning site of the all-in-one plasmid followed by Miraprep plasmid preparation (Pronobis et al., 2016) and Sanger sequencing verification. The empty vector (EV) control in this study is the all-in-one plasmid retaining the BsmBI golden gate cloning site. gRNAs were identified by manual screening of Y chromosome sequences using the CCTop gRNA design tool (CCTop, RRID:SCR_016890, http://crispr.cos.uni-heidelberg.de; Stemmer et al., 2015). gRNA sequences and their Y chromosome locations are provided in Supplementary file 1.
 
@@ -114,40 +122,108 @@ Cell culture and plasmid transfection was performed as described previously (Adi
 
 Genomic DNA was extracted using High Pure PCR Template Preparation Kit (Roche) according to the manufacturer’s instructions. qPCRs were performed using Fast SYBR Green Master Mix (Applied Biosystems). Sox1 qPCR was used as internal reference control to normalize qPCR values across samples. To quantify the Y-chromosome dosage, qPCR was performed using primers located at the chromosome termini. All qPCR primers and their positions on the Y chromosome are listed in Supplementary file 1.
 
-## Individual-based modeling of a Y-CHOPE gene drive
+### Individual-based modeling of a Y-CHOPE gene drive
 
-## Model overview
+#### Model overview
 
 We used an individual-based model (IBM) to simulate the capacity of a Y-CHOPE gene drive to accomplish the eradication of a pest mouse (Mus musculus) population on an island. The model was constructed in the R software environment for statistical and graphical computing (R Development Core Team, 2015). Briefly, we assumed a discrete-time, pre-breeding census design (Caswell, 2001) and represented the target mouse population as a collection of individuals characterized by state variables. Within each breeding cycle, individuals were transitioned through the following five stages: (i) mate allocation; (ii) reproduction and inheritance; (iii) Y-shredding and homing of the gene drive within heterozygous individuals; (iv) density-dependent mortality; and (v) aging. The IBM explicitly accounted for both demographic and genetic stochasticity, which become increasingly important as wild animal populations are reduced to a small number of individuals (Gilpin and Soulé, 1986). Baseline parameters used to simulate the Y-CHOPE drive are provided in Table 1.
 
-## Gene-drive design, homing and inheritance
+**Table 1.**
+ Details of the baseline parameterization of the individual-based model, and the parameter ranges tested through sensitivity analysis using Latin hypercube sampling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Baseline</th>
+      <th>Sensitivity Analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Probability of Cas9 cutting (PC)</td>
+      <td>0.95</td>
+      <td>U(0.7, 1)</td>
+    </tr>
+    <tr>
+      <td>Probability of NHEJ (PN)</td>
+      <td>0, 0.1</td>
+      <td>U(0, 0.5)</td>
+    </tr>
+    <tr>
+      <td>Number of guide RNAs (nGuides)</td>
+      <td>3</td>
+      <td>U(1, 5)*</td>
+    </tr>
+    <tr>
+      <td>Probability of mutation causing non-functionality (Pnf)</td>
+      <td>1</td>
+      <td>U(0.66, 1)</td>
+    </tr>
+    <tr>
+      <td>Y-shredding efficiency (PY)</td>
+      <td>0.5–1</td>
+      <td>U(0.5, 1)</td>
+    </tr>
+    <tr>
+      <td>Fertility multiplier for XO females (XOfertility)</td>
+      <td>0.6</td>
+      <td>U(0, 1)</td>
+    </tr>
+    <tr>
+      <td>X:O bias in inheritance (PX|XO)</td>
+      <td>0.66</td>
+      <td>U(0.5, 1)</td>
+    </tr>
+    <tr>
+      <td>Maximum number of female mates per male (Fmax)</td>
+      <td>1, 3</td>
+      <td>U(1, 10)*</td>
+    </tr>
+    <tr>
+      <td>Mean litter size (m)</td>
+      <td>6</td>
+      <td>U(2, 10)</td>
+    </tr>
+    <tr>
+      <td>Maximum annual population growth rate (rmax)</td>
+      <td>7.97</td>
+      <td>U(6, 9)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*For the sensitivity analysis, these parameters were sampled from discrete uniform distributions._
+
+#### Gene-drive design, homing and inheritance
 
 We assumed a gene-drive cassette located on an autosome, which encoded the orthogonal gRNAs and endonucleases required for homing and for Y-chromosome shredding. Biased inheritance of the gene drive was simulated assuming a dual-germline homing mechanism, such that homing occurred prior to meiosis in the germlines of males and females that were heterozygous for the gene drive. Although HR-mediated repair is required for successful homing, a competing repair pathway termed non-homologous end-joining (NHEJ) can also be used to repair gene-drive-mediated DNA cleavage. NHEJ repair typically generates small insertions or deletions (indels) at the gRNA-binding site. This process can produce ‘resistant’ alleles that will subsequently resist cleavage by the Cas9 endonuclease, and can never acquire the gene drive. In our model, therefore, the homing rate was assumed to be a function of three parameters: the probability of cutting occurring (PC), the probability of NHEJ conditional on cutting having occurred (PN), and the number of multiplexed homing gRNAs.
 
-Assuming S gRNAs targeting S unique cutting sites, the state into which a wild-type allele can move during germline homing is conditional on the number of susceptible sites it currently possesses. We have previously derived explicit expressions to calculate the probability of a wild-type allele moving from s to j susceptible sites (Psj) during homing, under the assumption that Cas9-mediated cutting occurs sequentially (i.e., independently) at each target site (Prowse et al. 2017) or simultaneously, in which case the deletion of long sequence stretches between cutting sites might occur due to NHEJ (Prowse et al. 2018). The probability of successful homing is then given by 1−∑j=0sPsj. In this study, we assumed simultaneous cutting for all simulations, and for each individual we tracked the state of maternal and paternal autosomal alleles which can be considered as: (1) wildtype (W) alleles, with between 1 and S susceptible cutting sites remaining; (2) resistant (R) alleles, with no susceptible sites remaining; or (3) gene-drive alleles. For wildtype and resistant alleles, we also recorded whether the deletion of sequence intervening between two recognition sites had occurred (see below). To simulate germline homing in a heterozygotic parent of genotype WG, for each offspring produced by the model we simulated the modification of the susceptible parental W allele by sampling from multinomial distributions based upon the transition probabilities Psj (Prowse et al., 2018). Autosomal alleles and allosomes were then stochastically allocated to offspring from each parent using Bernoulli distributions with p = 0.5 (i.e. Mendelian inheritance), except when an inheritance bias in favour of the X chromosome was assumed for XO female parents (Table 1).
+Assuming S gRNAs targeting S unique cutting sites, the state into which a wild-type allele can move during germline homing is conditional on the number of susceptible sites it currently possesses. We have previously derived explicit expressions to calculate the probability of a wild-type allele moving from s to j susceptible sites ($P_{sj}$) during homing, under the assumption that Cas9-mediated cutting occurs sequentially (i.e., independently) at each target site (Prowse et al. 2017) or simultaneously, in which case the deletion of long sequence stretches between cutting sites might occur due to NHEJ (Prowse et al. 2018). The probability of successful homing is then given by $1−\sumj=0sP_{sj}$. In this study, we assumed simultaneous cutting for all simulations, and for each individual we tracked the state of maternal and paternal autosomal alleles which can be considered as: (1) wildtype (W) alleles, with between 1 and S susceptible cutting sites remaining; (2) resistant (R) alleles, with no susceptible sites remaining; or (3) gene-drive alleles. For wildtype and resistant alleles, we also recorded whether the deletion of sequence intervening between two recognition sites had occurred (see below). To simulate germline homing in a heterozygotic parent of genotype WG, for each offspring produced by the model we simulated the modification of the susceptible parental W allele by sampling from multinomial distributions based upon the transition probabilities $P_{sj}$ (Prowse et al., 2018). Autosomal alleles and allosomes were then stochastically allocated to offspring from each parent using Bernoulli distributions with p = 0.5 (i.e. Mendelian inheritance), except when an inheritance bias in favour of the X chromosome was assumed for XO female parents (Table 1).
 
 We also tested two different placements of the gene-drive cassette. First, we assumed the cassette was placed within a non-coding region. Second, using the strategy proposed by Esvelt et al. (2014), we modeled placement of the gene drive immediately 3’ of a haploinsufficient gene. Here, the drive element contains gRNAs that target the 3’ coding sequence of the gene as well as a recoded version of the target sequence that retains complete functionality. This positioning should ensure that the majority of individuals that inherit a resistant allele (i.e. mutations arising through NHEJ) will fail to develop, thus preventing the spread of resistance, whilst any animal with the gene drive will be viable. For this latter strategy, we initially assumed a per-mutation probability of gene non-functionality (Pnf) of 1 (i.e. any single-site mutation formed by NHEJ was sufficient to cause loss-of-function of the target gene), and also that the deletion of intervening sequence between two recognition sites always resulted in gene loss-of-function. Through sensitivity analysis, however, we tested Pnf <1 such that single-site deletions caused by NHEJ would not necessarily cause loss-of-function of the haploinsufficient gene.
 
-## Y-chromosome shredding
+#### Y-chromosome shredding
 
 In XY males that inherited at least one gene-drive copy, we assumed shredding of the Y chromosome occurred in the zygote with probability PY, which represents the efficiency of the Y- shredding machinery in vivo. In our model, Y-shredding caused XY males to develop as XO females, which we assumed were sub-fertile. We therefore corrected the expected litter size of XO females with a fertility multiplier equal to 0.6 (Probst et al., 2008). Based on empirical data, we assumed the X chromosome was preferentially passed to the offspring of XO mice, with probability PX|XO = 0.66 (Kaufman, 1972; Probst et al., 2008). YO progeny suffered early embryonic mortality and were therefore never simulated by the model (Figure 1).
 
-## Demography and mating system
+#### Demography and mating system
 
 For simplicity, we assumed equal survival and fertility rates across all age classes, an equal sex ratio at birth, 10 breeding cycles per year and a litter size (m) of 6 offspring per female (Caughley et al., 1998). To allow for improved survival at low population densities, we modified survival probabilities as a logistic function of population size. The parameters of the logistic function were calculated so that, in the absence of the gene drive and assuming an equal sex ratio, the population was stable (r = 0) when at carrying capacity but when reduced to low density achieved the maximum population growth rate estimated for the species (rmax = 7.76) (Pech et al., 1999). To incorporate the effects of demographic stochasticity, we modeled the outcome of all survival probabilities with Bernoulli distributions.
 
 The Y-chromosome shredding gene drive relies on male limitation to achieve population suppression, so the efficacy of this strategy will be partly determined by the mating system of the target species. Since mice are polygynous (i.e. males can mate with multiple females), it is possible that population suppression would not result until the sex ratio became strongly biased toward females. To simulate polygynous mating, therefore, we first specified the maximum number of female mates per male Fmax, where Fmax = 1 indicates short-term monogamy and Fmax >1 indicates polygyny. Mating pairs were formed each breeding cycle by randomly sampling a mate for each female from the available pool of males, where this pool was updated recursively to exclude males that had already reached the maximum number of mates allowed. We did not allow multiple paternity (i.e. females mated with one male only per breeding cycle), for simplicity and also because the degree of competition between sperm cells of different genotypes is unknown. Although Fmax is certainly greater than one for mice, we also tested Fmax = 1 for comparison.
 
-## Baseline scenarios
+#### Baseline scenarios
 
 We initiated each simulated population at a carrying capacity of 10,000 individuals, assuming an equal number of sexually mature males and females. We then simulated the eradication attempt as the addition of 100 females that were somatic heterozygous for the Y-shredding gene drive. To account for demographic and genetic stochasticity, we performed 1000 replicate simulations of the model for each parameterisation tested. For initial scenario testing, we assumed non-coding gene-drive placement, PC = 0.95, PN = 0, and three multiplexed homing gRNAs. We then increased PN to 0.1 to account for evolution of resistant alleles through NHEJ, and tested positioning of the drive within both non-coding and coding regions.
 
-## Sensitivity analyses
+#### Sensitivity analyses
 
 To explore the expected probability of eradication for a wide range of parameters, we conducted a global sensitivity analysis on ten parameters governing gene-drive performance and mouse demography, assuming exonic positioning of the drive (Table 1). To ensure adequate coverage of the multi-dimensional parameter space, we used Latin hypercube sampling to generate 100,000 distinct parameter samples, assuming uniform distributions for each parameter (Table 1). Latin hypercube sampling is a stratified, space-filling design for generating random samples from a multidimensional distribution, which generalises a Latin-square design to three or more dimensions (Fang et al., 2006). In a Latin hypercube, the number of samples equals the number of parameter divisions, meaning we tested 100,000 different values of each continuous parameter.
 
 We then ran a single simulation per parameter sample (Prowse et al., 2016), and emulated the sensitivity-analysis output (i.e. the probability of successful simulated eradication) with boosted regression trees (BRT) using functions in the R package dismo (Hijmans et al., 2013). BRT can fit complex, non-linear relationships and automatically handle interactions between predictors (Elith et al., 2008), so this technique is particularly useful for summarising the output from simulation studies (Prowse et al., 2013; Prowse et al., 2016). We fit the BRT model with the function gbm.step, using a binomial error and logit link function, a tree complexity of 5, a learning rate of 0.01, and a bag fraction of 0.75 (Elith et al., 2008). We calculated relative influence metrics for each input parameter, and used partial dependency plots to examine relationships between the key parameters and the probability of simulating a successful eradication. To confirm that 100,000 parameter samples were sufficient to generate robust sensitivity metrics, we used the approach recommended by Prowse et al. (2016). In brief, we emulated the sensitivity-analysis output for parameter subsamples of increasing size (i.e. between 1000 and the complete 100,000 samples). We then confirmed that the cross-validatory performance of the emulator and the sensitivity measures derived from it exhibited asymptotic behavior (relative influence metrics for the 10 parameters converged well before 100,000 samples; see Figure 7—figure supplement 1).
 
-## Comparison with an X-shredding Y-drive
+### Comparison with an X-shredding Y-drive
 
 As a basis for comparison, we also simulated an X-shredding gene-drive strategy, assuming an X-shredding DNA cassette incorporated within the Y chromosome, which was expressed in the germline and, when present, destroyed the X chromosome during meiosis with some probability PX. We also tested different values for the probability of offspring inheriting a Y-chromosome from male gene-drive carriers in which X-shredding has occurred (i.e. from males that are germline YO) (PY|YO). Hence, conditional on X-shredding occurring, with PY|YO = 1 the inheritance of Y-bearing sperm was guaranteed, while with PY|YO < 1 the transmission of O-bearing sperm was possible. All other relevant parameters were the same as the baseline values used for the Y-CHOPE drive, except that each simulated eradication attempt was initiated with the introduction of 100 males carrying the Y-linked drive. We provide the R code for simulating the autosomal Y-shredder and Y-linked X-shredder as a supplementary file to this paper.

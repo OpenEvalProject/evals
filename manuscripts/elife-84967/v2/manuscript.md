@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0360dkv71 Research Institute of Tropical Forestry, Chinese Academy of Forestry Guangzhou China
-2. https://ror.org/03q648j11 College of Forestry, Hainan University Haikou China
-3. https://ror.org/0160cpw27 Department of Renewable Resources, University of Alberta Edmonton Canada
-4. https://ror.org/0064kty71 State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-Sen University Guangzhou China
+1. Research Institute of Tropical Forestry, Chinese Academy of Forestry Guangzhou China ([ROR:0360dkv71](https://ror.org/0360dkv71))
+2. College of Forestry, Hainan University Haikou China ([ROR:03q648j11](https://ror.org/03q648j11))
+3. Department of Renewable Resources, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
+4. State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-Sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
 
 † Corresponding author
 
@@ -39,6 +39,79 @@ Although these squirrels are reasonably common, there is little published inform
 ## Results and discussion
 
 We used images from infrared cameras to determine that the nocturnal flying squirrels, H. phayrei electilis and H. alboniger, two of the nine species of squirrels known from tropical forests of Hainan (Table 1), stored Cyclobalanopsis nuts by suspending them on vegetation in the Jianfengling forest (Videos 1–5). The videos further showed that the squirrels chewed grooves in the surfaces of the nuts before fixing between the twigs, and that they sometimes altered the previously carved grooves by further chewing, apparently to adjust the fit and suspend the nut more firmly (Videos 6–9). In footage from 32 field infrared cameras, we captured 48 film sequences that included chewing (Videos 6–7), fixing (Video 9, partial evidence) and removing nuts (Video 2, Video 3 and Video 5), or visiting a storage site (Video 1, Video 4 and Video 8). This direct evidence, together with the findings below, shows that this mode of nut storage is a reasonably common activity of these two squirrel species in the Jianfengling forest.
+
+**Table 1.**
+ The nine squirrel species known from Jianfengling, Hainan Island, China.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species and subspecies name</th>
+      <th>Body length/mm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tamiops maritimus (Bonhote,1900) (Liu et al., 2020; Pan et al., 2007)</td>
+      <td>105～134</td>
+    </tr>
+    <tr>
+      <td>Dremomys pyrrhomerus (Thomas, 1895) (Xu and Chen, 1989)</td>
+      <td>194～215</td>
+    </tr>
+    <tr>
+      <td>Hylopetes alboniger (Hodgson, 1870) (Liu et al., 2020; Andrew, 2008; Pan et al., 2007)</td>
+      <td>180～203</td>
+    </tr>
+    <tr>
+      <td>Hylopetes phayrei electilis (Allen, 1925) (Liu et al., 2020; Pan et al., 2007)</td>
+      <td>123～173</td>
+    </tr>
+    <tr>
+      <td>Dremomys rufigenis (Blanford, 1878) (Zheng et al., 2008)</td>
+      <td>170～250</td>
+    </tr>
+    <tr>
+      <td>Callosciurus erythraeus (Pallas, 1779) (Huang, 1995; Zheng et al., 2008)</td>
+      <td>198～252</td>
+    </tr>
+    <tr>
+      <td>Belomys pearsonii (Gray, 1842) (Pan et al., 2007; Huang, 1995)</td>
+      <td>180～260</td>
+    </tr>
+    <tr>
+      <td>Petaurista albiventer (Gray, 1834) (Jing et al., 2007)</td>
+      <td>420～520</td>
+    </tr>
+    <tr>
+      <td>Ratufa bicolor (Sparrmann, 1778) (Li et al., 2008)</td>
+      <td>350～505</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The data in this table are referenced from the below literature._
+
+![Video 1.](https://cdn.elifesciences.org/articles/84967/elife-84967-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/84967/elife-84967-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/84967/elife-84967-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/84967/elife-84967-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/84967/elife-84967-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/84967/elife-84967-video6.mp4.jpg)
+
+![Video 7.](https://cdn.elifesciences.org/articles/84967/elife-84967-video7.mp4.jpg)
+
+![Video 8.](https://cdn.elifesciences.org/articles/84967/elife-84967-video8.mp4.jpg)
+
+![Video 9.](https://cdn.elifesciences.org/articles/84967/elife-84967-video9.mp4.jpg)
+
+**Video 9.:** We merged several photos and a video successively taken by an infrared camera in 30 s.
 
 A total of 151 grooved and cached nuts were found suspended on more than 55 tree or shrub species distributed across 28 plant families during our censuses of approximately 5.5 ha of forest (Figure 1, Supplementary file 1). All suspended nuts found had surface grooves of the form carved by squirrels, as documented above. Examples of storage locations and carved nuts are shown in Figures 2–3. Most discovered nuts were fixed between plant twigs connected at angles of 25–40° on a variety of small saplings and shrubs (Figure 4). This range of angles accommodates the nut sizes of Cyclobalanopsis edithiae and C. patelliformis (2.4 cm (width) × 4.6 cm (length) and 2.4 cm (width) × 2.0 cm (height), respectively), which accounted for 96.7% of the nuts that we found cached (C. edithiae (40.4%), C. patelliformis (56.3%)). A few nuts of Lithocarpus fenzelianus A. Camus (n=4) and C. fleuryi (Hickel & A. Camus) Chun ex Q. F. Zheng (n=2) were also found similarly suspended on plants.
 
@@ -68,8 +141,6 @@ Nuts of the two predominant tree species were disproportionately stored on small
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84967/elife-84967-fig7-v2.jpg)
 
-**Figure 7.:** C. edithiae nuts were 0.2 - 0.6 cm in width.
-
 ![Figure 8.](https://cdn.elifesciences.org/articles/84967/elife-84967-fig8-v2.jpg)
 
 **Figure 8.:** (A) C. edithiae nuts. (B) C. patelliformis nuts. Notes: The value on each bar is the actual number of stored nuts.
@@ -80,9 +151,67 @@ Interestingly, oblate nuts stored on living trees and shrubs had significantly m
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/84967/elife-84967-fig9-v2.jpg)
 
-**Figure 9.:** C. patelliformis.(A) Most nuts had fewer than eight grooves. (B) The depth of most grooves was shallow to medium. Notes: The value on each bar is the actual number of stored nuts.
+**Figure 9.:** (A) Most nuts had fewer than eight grooves. (B) The depth of most grooves was shallow to medium. Notes: The value on each bar is the actual number of stored nuts.
 
 The surface grooves allowed the squirrels to ‘pressure fit’ the nuts between the two plant twigs in a way functionally similar to a mortise-tenon joint (Qiao et al., 2021; Figure 3). Squirrels used the twigs as a convex ‘tenon’ to fit into the convex ‘mortise’ provided by the grooves on the nuts. Thus, carved nuts were inlayed between plant twigs (0.10–0.60 cm in diameter) intersecting at specific angles (25–40°) on various understory plants (Figure 4). We found nuts on small trees and shrubs, but also on lianas, bamboos, or dead trees, and even occasionally on large petioles of palms or trees (Figure 2j–n, Table 2). Once fixed in this manner, nuts were resistant to being blown off by strong wind or even by shaking that we administered experimentally (Videos 10–15).
+
+**Table 2.**
+ The types of plants used for nut storage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant type</th>
+      <th>Number of individuals</th>
+      <th>Percentage of all individuals (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alive tree</td>
+      <td>108</td>
+      <td>71.5</td>
+    </tr>
+    <tr>
+      <td>Dead tree</td>
+      <td>17</td>
+      <td>11.3</td>
+    </tr>
+    <tr>
+      <td>Alive liana</td>
+      <td>19</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td>Dead liana</td>
+      <td>2</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Bamboo</td>
+      <td>5</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>151</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 10.](https://cdn.elifesciences.org/articles/84967/elife-84967-video10.mp4.jpg)
+
+![Video 11.](https://cdn.elifesciences.org/articles/84967/elife-84967-video11.mp4.jpg)
+
+![Video 12.](https://cdn.elifesciences.org/articles/84967/elife-84967-video12.mp4.jpg)
+
+![Video 13.](https://cdn.elifesciences.org/articles/84967/elife-84967-video13.mp4.jpg)
+
+![Video 14.](https://cdn.elifesciences.org/articles/84967/elife-84967-video14.mp4.jpg)
+
+![Video 15.](https://cdn.elifesciences.org/articles/84967/elife-84967-video15.mp4.jpg)
 
 The distance between the closest Cyclobalanopsis trees producing nuts and storage sites on smaller understory plants varied from 10–25 m (Figure 10), distances greater than the average canopy width of large trees in the Jianfengling forest (estimated to be 10 ± 5 m). This sort of distancing likely reduces discovery by other squirrels, mice, or other animals potentially searching for aboveground nuts below the parent trees (Cao et al., 2011), although recordings from our cameras show that some nuts were still found and eaten by mice.
 
@@ -108,13 +237,116 @@ Taken together, our observations suggest that effective food storage behavior is
 
 ## Materials and methods
 
-## Study site
+### Study site
 
 This study was conducted in the Jianfengling region of the Hainan Tropical Rainforest National Park in Hainan Province, China (108°46'–109°45'E). The area has a seasonal tropical monsoon climate with a rainy season from June to October and a dry season from November through May of the next year. The mean annual temperature in this forest is 19.7 °C and the annual average precipitation is 2461 ± 619 mm. Jianfengling is the second rainiest area on Hainan Island, with an average annual relative humidity of >88% (Jiang and Lu, 1991).
 
 The Jianfengling forest includes 992 free-standing tree and shrub species, and is dominated by trees of Fagaceae, Lauraceae, and Moraceae (Xu et al., 2012). Castanopsis, Lithocarpus, and Cyclobalanopsis are the three main genera of Fagaceae, which reproduce through nuts that are used as food by various mammals. The cupules of Castanopsis are solitary units produced on a rachis, completely or partially enclosing the nut, while cupules of Lithocarpus are grouped together in cymes on the rachis, completely or partly enclosing the nut. In contrast, cupules of Cyclobalanopsis are solitary, and do not enclose the nuts. Because enclosed nuts are difficult for squirrels to deal with, Cyclobalanopsis nuts are highly preferred as food by squirrels and other animals, although the smooth nut surfaces make them challenging to suspend on vegetation. Cyclobalanopsis edithiae (Skan) Schottky and Cyclobalanopsis patelliformis (Chun) Y. C. Hsu et H. W. Jen are the two most abundant species with naked nuts in the mountain forests of Jianfengling (Xu et al., 2015; Table 3). Both are in fruit from October to December, just before the coolest month (January) in Hainan.
 
-## Field investigation
+**Table 3.**
+ Main Fagaceae species found in a 60 ha plot in the Jianfengling forest.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Abundance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Castanopsis carlesii (Hemsley) Hayata</td>
+      <td>3269</td>
+    </tr>
+    <tr>
+      <td>Castanopsis fissa (Champion ex Bentham) Rehder &amp; E. H. Wilson</td>
+      <td>2803</td>
+    </tr>
+    <tr>
+      <td>Castanopsis jianfenglingensis Duanmu</td>
+      <td>2297</td>
+    </tr>
+    <tr>
+      <td>Castanopsis tonkinensis Seemen</td>
+      <td>953</td>
+    </tr>
+    <tr>
+      <td>Castanopsis ledongensis C. C. Huang &amp; Y. T. Chang</td>
+      <td>335</td>
+    </tr>
+    <tr>
+      <td>Castanopsis fabri Hance</td>
+      <td>113</td>
+    </tr>
+    <tr>
+      <td>Castanopsis hystrix J. D. Hooker &amp; Thomson ex A. de Candolle</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis edithiae (Skan) Schottky</td>
+      <td>1645</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis patelliformis (Chun) Y. C. Hsu &amp; H. W. Jen</td>
+      <td>1207</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis phanera (Chun) Y. C. Hsu &amp; H. W. Jen</td>
+      <td>886</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis fleuryi (Hickel &amp; A. Camus) Chun ex Q. F. Zheng</td>
+      <td>568</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis neglecta Schottky</td>
+      <td>392</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis blakei (Skan) Schottky</td>
+      <td>279</td>
+    </tr>
+    <tr>
+      <td>Cyclobalanopsis hui (Chun) Chun ex Y. C. Hsu &amp; H. W. Jen</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus longipedicellatus (Hickel &amp; A. Camus) A. Camus</td>
+      <td>2842</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus pseudovestitus A. Camus</td>
+      <td>2427</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus fenzelianus A. Camus</td>
+      <td>1751</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus amygdalifolius (Skan) Hayata</td>
+      <td>1360</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus handelianus A. Camus</td>
+      <td>1046</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus fenestratus (Roxburgh) Rehder</td>
+      <td>323</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus howii Chun</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>Lithocarpus hancei (Benth.) Rehd.</td>
+      <td>71</td>
+    </tr>
+  </tbody>
+</table>
+
+### Field investigation
 
 During work in the Jianfengling forest, we discovered Cyclobalanopsis nuts with surface grooves tucked into the Y-shaped crotches of twigs on understory plants (Figure 2). The regular grooves showed signs of having been chewed by some unknown animal(s) (Figure 3), perhaps in order to increase the friction between nuts and plant twigs so as to fix the nuts securely in place. Thus, we conducted a systematic field investigation from January to May 2022 to discover the animals involved and to study their nut caching behavior in more detail.
 
@@ -124,7 +356,7 @@ The first search for cached nuts was carried out on January 15, 2022. We re-surv
 
 Because we initially knew neither the identity of the animals that stored the nuts nor how nuts were stored and retrieved, we set up 32 motion-activated infrared cameras (22 WildINSights 20MP 1080 P HD Trail Cameras and 10 WildINSights 5MP 960 P HD Trail Color Cameras) around the stored nuts to monitor animal activities that might be related to nut storage or consumption. These cameras were positioned to view both typical nuts that we found and their surroundings. In general, the distance between a camera and a focal nut was 0.5–1 m. Animals filmed as being associated with the nuts were subsequently identified to species by experts using the resulting pictures and videos. Especially, for Video 9, we merged several photos and a video successively taken by an infrared camera in 30 s near the 64 ha permanent plot in Jianfengling, Hainan on January 23, 2023.
 
-## Statistical analyses
+### Statistical analyses
 
 We described the distribution twig angles which were used to fix the nuts and twig diameters as histograms. Standard t-tests were used to assess the significance of differences between paired sets of variables, and linear regression was used to assess relationships between the sizes of the two twigs that constituted each nut storage site. Histograms were also drawn to describe variations in the sizes and location of storage plants and carved nuts, including the width of grooves carved by squirrels, DBH and height of plants with stored nuts, number of carved grooves of each nut, and distance of stored nuts to the nearest fruiting tree of that species.
 

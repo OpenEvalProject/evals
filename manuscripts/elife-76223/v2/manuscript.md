@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0220qvk04 Center for Immune-Related Diseases at Shanghai Institute of Immunology, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
-2. https://ror.org/0220qvk04 Shanghai Institute of Immunology, Faculty of Basic Medicine; Key Laboratory of Cell Differentiation and Apoptosis of Chinese Ministry of Education, Shanghai Jiao Tong University School of Medicine Shanghai China
-3. https://ror.org/051jg5p78 Jiangsu Institute of Hematology, The First Affiliated Hospital of Soochow University Suzhou China
-4. https://ror.org/05t8y2r12 Collaborative Innovation Center of Hematology, Soochow University Suzhou China
-5. https://ror.org/0220qvk04 Department of Dermatology, Rui Jin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
+1. Center for Immune-Related Diseases at Shanghai Institute of Immunology, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+2. Shanghai Institute of Immunology, Faculty of Basic Medicine; Key Laboratory of Cell Differentiation and Apoptosis of Chinese Ministry of Education, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+3. Jiangsu Institute of Hematology, The First Affiliated Hospital of Soochow University Suzhou China ([ROR:051jg5p78](https://ror.org/051jg5p78))
+4. Collaborative Innovation Center of Hematology, Soochow University Suzhou China ([ROR:05t8y2r12](https://ror.org/05t8y2r12))
+5. Department of Dermatology, Rui Jin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 
 † Corresponding author
 
@@ -43,19 +43,31 @@ In this study, we reasoned that studying whether and how IgG subclasses and Fc-F
 
 ## Results
 
-## IgG4 is less pathogenic than IgG1 in anti-ADAMTS13 autoantibodies
+### IgG4 is less pathogenic than IgG1 in anti-ADAMTS13 autoantibodies
 
 To directly test whether the IgG subclass of anti-ADAMTS13 autoantibodies has any impact on their pathogenicity, a pathogenic monoclonal anti-ADAMTS13 antibody (clone TTP1-420) previously isolated from TTP patients and confirmed in mice (Ostertag et al., 2016a; Ostertag et al., 2016b) was expressed as either human IgG4 or IgG1 antibodies. These antibodies were confirmed to have similar binding kinetics to human ADAMTS13 (Figure 1—figure supplement 1A). Anti-ADAMTS13 autoantibodies have been previously shown to mediate their pathogenic effect by inhibiting the enzymatic activity of ADAMTS13, which leads to an increased ultra-large form of vWF and platelet binding and activation (Zheng, 2015). To evaluate the pathogenicity of TTP1-420(IgG4) and TTP1-420(IgG1) autoantibodies, their impact on ADAMTS13 enzymatic activity was analyzed first in WT mice (Figure 1A). As shown in Figure 1B, both TTP1-420(IgG4) and TTP1-420(IgG1)-treated WT mice displayed a significant reduction in ADAMTS13 activity soon after the treatment. However, the recovery of ADAMTS13 activity is significantly faster in TTP1-420(IgG4)-treated mice than in TTP1-420(IgG1)-treated mice, with almost complete recovery by day 8 in the former group and nearly no recovery in the latter group (Figure 1B and C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the experimental design. In brief, wild-type (WT) C57BL/6 or hFCGR-Tg mice were treated with 10 μg of control human IgG (Ctrl hIgG, n≥3), or anti-ADAMTS13 TTP1-420(IgG1) or TTP1-420(IgG4) (n≥4) on day 0 through tail vein injection, blood was collected on day –1, day 1, day 5, and day 8 and analyzed for ADAMTS13 activity. (B–E) Plots showing ADAMTS13 activity in the plasma of WT (B, C) or hFCGR-Tg (D, E) mice treated with the indicated antibodies at the indicated time points and analyzed by the FRETS-VWF73 assay, presented as relative fluorescence units (RFU) changing rates over time (RFU/min) (B, D), and the RFU change within 1 hr on day –1 and day 8 (C, E). Mean ± SEM values are plotted. Two-way ANOVA with Tukey’s (B, D) or Sidak’s (C, E) multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. A representative of two independent experiments is shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The binding kinetics of indicated TTP1-420 anti-ADAMTS13 autoantibodies to human ADAMTS13 analyzed by ELISA with biotinylated anti-human Igλ chain as detecting antibodies. (B) The binding kinetics of TTP1-420 anti-human ADAMTS13 autoantibodies of indicated constant domains to indicated mouse FcγRs analyzed by ELISA. (C) SPR (surface plasmon resonance) analysis of the binding of human IgG autoantibodies to mouse FcγRs. Presented are real-time sensorgrams with different antibody concentrations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic diagram of the experimental design. In brief, hFCGR-Tg mice were treated with 10 μg of control human IgG (Ctrl hIgG, n = 4), or anti-ADAMTS13 TTP1-420(IgG1) (n = 5) on day 0 through tail vein injection, and blood was collected on day –1, day 1, day 4, day 8, and day 11 and analyzed for ADAMTS13 activity and plasma remaining hIgG levels. (B) Plots showing ADAMTS13 activity in the plasma of hFCGR-Tg mice treated with TTP1-420(IgG1) antibodies at the indicated time points and analyzed by the FRETS-VWF73 assay, presented as (RFU/min) normalized to corresponding Ctrl hIgG group. (C) Plots showing the levels of the remaining human IgG in the plasma of mice in (A). Mean ± SEM values are plotted. Two-way ANOVA with Sidak’s multiple comparisons tests. ****p<0.0001.
+
 To further evaluate the pathogenicity of TTP1-420(IgG4) and TTP1-420(IgG1) autoantibodies in the more physiologically relevant model with human Fcγ-receptor background, FcγR-humanized mice (hFCGR-Tg) that recapitulate the expression profile of human FcγRs (Smith et al., 2012) were used (Figure 1A). Consistently, TTP1-420(IgG4) autoantibodies also displayed weaker pathogenicity as compared to TTP1-420(IgG1) autoantibodies in FcγR-humanized mice (Figure 1D, E). These results suggest that while both IgG4 and IgG1 anti-ADAMTS13 autoantibodies can inhibit ADAMTS13 activity, IgG4 autoantibodies are less pathogenic as compared to IgG1 autoantibodies. Therefore, it appears that switching to the IgG4 subclass in anti-ADAMTS13 autoantibodies represents a protective mechanism. The ADAMTS13 activity in hFCGR-Tg mice treated with the same amount of TTP1-420(IgG1) was later recovered (Figure 1—figure supplement 2A-C), suggesting our model represents an acute model for evaluating the pathogenicity of anti-ADAMTS13 antibodies before the recovery of ADAMTS13 activity.
 
-## Activating FcγR-mediated IgG effector function enhances the pathogenicity of anti-ADAMTS13 autoantibodies
+### Activating FcγR-mediated IgG effector function enhances the pathogenicity of anti-ADAMTS13 autoantibodies
 
 Human IgG4 and IgG1 are very different in mediating FcγR-dependent effector function, with IgG4 being much less potent due to its weaker binding affinity to activating FcγRs (Bruhns et al., 2009; Vidarsson et al., 2014), including both mouse and human activating FcγRs (Bruhns et al., 2009; Derebe et al., 2018; Liu et al., 2019 and Figure 1—figure supplement 1B, C, and Supplementary file 1a). To understand the basis of the differential pathogenicity of TTP1-420(IgG4) and TTP1-420(IgG1) autoantibodies, we investigated whether Fc-FcγR interaction impacts on anti-ADAMTS13 autoantibody pathogenicity using FcγR-deficient mice (FcγRα-null) (Figure 2A). As shown in Figure 2B, while TTP1-420(IgG1)-treated WT and FcγRα-null mice displayed comparable levels of reduction in ADAMTS13 activity at the early time points (day 1 and day 5) (Figure 2B), the recovery of ADAMTS13 activity is significantly faster in FcγRα-null mice (Figure 2B, C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic diagram of the experimental design. In brief, WT, FcγRα-null, Fcer1g or hFCGR-Tg mice (Ctrl hIgG, n=3~5; anti-ADAMTS13, n=4~5) were treated and analyzed as in -/-,Figure 1A. (B–E) Plots showing ADAMTS13 activity in the plasma of WT and FcγRα-null mice (B, C), WT and Fcer1g mice (-/-D, E), WT mice (F, G) or hFCGR-Tg mice (H, I) treated with the indicated antibodies and analyzed at indicated time points as in Figure 1B and C, presented as relative fluorescence units (RFU) changing rates over time (RFU/min) (B, D, F, H), and the RFU change within 1 hr on the indicated days (C, E, G, I). Mean ± SEM values are plotted. Two-way ANOVA with Sidak’s (B–E, G, and I) or Tukey’s (F and H) multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. A representative of two independent experiments is shown.Figure 2—source data 1.Figure 2B.Figure 2—source data 2.Figure 2C.Figure 2—source data 3.Figure 2D.Figure 2—source data 4.Figure 2E.Figure 2—source data 5.Figure 2F.Figure 2—source data 6.Figure 2G.Figure 2—source data 7.Figure 2H.Figure 2—source data 8.Figure 2I.
+**Figure 2.:** (A) Schematic diagram of the experimental design. In brief, WT, FcγRα-null, Fcer1g-/-, or hFCGR-Tg mice (Ctrl hIgG, n=3~5; anti-ADAMTS13, n=4~5) were treated and analyzed as in Figure 1A. (B–E) Plots showing ADAMTS13 activity in the plasma of WT and FcγRα-null mice (B, C), WT and Fcer1g-/- mice (D, E), WT mice (F, G) or hFCGR-Tg mice (H, I) treated with the indicated antibodies and analyzed at indicated time points as in Figure 1B and C, presented as relative fluorescence units (RFU) changing rates over time (RFU/min) (B, D, F, H), and the RFU change within 1 hr on the indicated days (C, E, G, I). Mean ± SEM values are plotted. Two-way ANOVA with Sidak’s (B–E, G, and I) or Tukey’s (F and H) multiple comparisons tests. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. A representative of two independent experiments is shown.
 
 These results suggest that while FcγR-mediated function is not essential for the pathogenicity of anti-ADAMTS13 autoantibodies, it has an enhancing effect. Further investigation in Fc receptor common γ-chain deficient mice (Fcer1g-/-), which lack functional activating FcγRs, showed that Fcer1g-/- mice have accelerated recovery of ADAMTS13 enzyme activity (Figure 2A, D, E), suggesting that activating Fcγ receptors are responsible for the enhancing effect of FcγRs to the pathogenicity of anti-ADAMTS13 autoantibodies.
 
@@ -63,25 +75,47 @@ To rule out the possibility that non-FcγR factors are responsible for the reduc
 
 These results suggest that while the activating FcγR-mediated effector function is not absolutely required for the pathogenic function of anti-ADAMTS13 autoantibodies, it does have a critical enhancing effect, likely by depleting ADAMTS13-autoantibodies immune complex.
 
-## IgG4 autoantibodies deplete relatively less ADAMTS13 in acquired TTP patients
+### IgG4 autoantibodies deplete relatively less ADAMTS13 in acquired TTP patients
 
 To investigate whether IgG4 autoantibodies have a less depleting effect on ADAMTS13, plasma samples of a cohort of 44 acquired TTP patients were analyzed (Supplementary file 1c). The majority of these samples were confirmed to contain anti-ADAMTS13 IgG autoantibodies, with 43 out of 44 TTP samples having anti-ADAMTS13 autoantibody signal levels that are twofold higher than healthy control (HC) average levels, which were considered as the background (Figure 3A, F). All TTP samples were confirmed to have severely reduced ADAMTS13 activity (with all samples having less than 5% ADAMTS13 activity) (Figure 3B). Consistent with previous reports (Bettoni et al., 2012; Ferrari et al., 2009), ADAMTS13 antigen levels were also reduced (Figure 3C), and a correlation between ADAMTS13 activity and antigen levels was observed (Figure 3D). Further analysis of IgG1 and IgG4 anti-ADAMTS13 autoantibodies showed that most TTP samples have both IgG1 and IgG4 autoantibodies (Figure 3E, F) with an inverse correlation (Figure 3F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig3-v2.jpg)
 
-**Figure 3.:** (A–C) Plots showing ADAMTS13-specific IgG (A), ADAMTS13 activity (B), and ADAMTS13 antigen (C) levels in the plasma of healthy control (HC) (n=23) and acquired TTP patients during the acute phase (n=44). (D) Plot showing correlation analysis of ADAMTS13 activity with ADAMTS13 Ag concentration in TTP patients. (E) ADAMTS13-specific IgG1 (left panel) and IgG4 (right panel) levels in the plasma of TTP patients and HC. (F) Plot showing correlation analysis of ADAMTS13-specific IgG1 with IgG4 levels in TTP patients, with the threshold for IgG1 and IgG4 autoantibodies (two times of HC average values) annotated. (G–J) Plots showing correlation analysis between the anti-ADAMTS13 IgG1 (G, H) and IgG4 (I, J) levels with ADAMTS13 activity (G, I) and ADAMTS13 Ag (H, J) levels in TTP patients, respectively. (K) Plots showing IgG1 and IgG4 anti-ADAMTS13 levels in TTP plasma samples normalized to HC, with IgG1-dominant TTP and IgG4-dominant TTP samples annotated. (L, M) Plot showing ADAMTS13 activity (L) and antigen (M) levels in TTP plasma samples as annotated in (K). Each symbol is derived from an individual plasma sample. Mean ± SEM values are plotted. Unpaired nonparametric Mann-Whitney test (A, B, C, E, L, M) or linear regression analysis (D, F–J). ***p<0.001, ****p<0.0001, ns, non-significant.Figure 3—source data 1.Figure 3A.Figure 3—source data 2.Figure 3B.Figure 3—source data 3.Figure 3C.Figure 3—source data 4.Figure 3D.Figure 3—source data 5.Figure 3E.Figure 3—source data 6.Figure 3E.Figure 3—source data 7.Figure 3F.Figure 3—source data 8.Figure 3G.Figure 3—source data 9.Figure 3H.Figure 3—source data 10.Figure 3I.Figure 3—source data 11.Figure 3J.Figure 3—source data 12.Figure 3K.Figure 3—source data 13.Figure 3L.Figure 3—source data 14.Figure 3M.
+**Figure 3.:** (A–C) Plots showing ADAMTS13-specific IgG (A), ADAMTS13 activity (B), and ADAMTS13 antigen (C) levels in the plasma of healthy control (HC) (n=23) and acquired TTP patients during the acute phase (n=44). (D) Plot showing correlation analysis of ADAMTS13 activity with ADAMTS13 Ag concentration in TTP patients. (E) ADAMTS13-specific IgG1 (left panel) and IgG4 (right panel) levels in the plasma of TTP patients and HC. (F) Plot showing correlation analysis of ADAMTS13-specific IgG1 with IgG4 levels in TTP patients, with the threshold for IgG1 and IgG4 autoantibodies (two times of HC average values) annotated. (G–J) Plots showing correlation analysis between the anti-ADAMTS13 IgG1 (G, H) and IgG4 (I, J) levels with ADAMTS13 activity (G, I) and ADAMTS13 Ag (H, J) levels in TTP patients, respectively. (K) Plots showing IgG1 and IgG4 anti-ADAMTS13 levels in TTP plasma samples normalized to HC, with IgG1-dominant TTP and IgG4-dominant TTP samples annotated. (L, M) Plot showing ADAMTS13 activity (L) and antigen (M) levels in TTP plasma samples as annotated in (K). Each symbol is derived from an individual plasma sample. Mean ± SEM values are plotted. Unpaired nonparametric Mann-Whitney test (A, B, C, E, L, M) or linear regression analysis (D, F–J). ***p<0.001, ****p<0.0001, ns, non-significant.
 
 Interestingly, while IgG1 autoantibodies have a significant inverse correlation with ADAMTS13 antigen and activity levels, IgG4 autoantibodies do not (Figure 3G-J), suggesting that IgG4 autoantibodies have relatively less impact on ADAMTS13 antigen and activity levels.
 
 Given the inverse correlation between IgG1 and IgG4 autoantibodies in these TTP samples, they were divided into two groups: IgG1- and IgG4-dominant TTP samples, respectively (Figure 3K). Notably, while these two groups have similar ADAMTS13 activity levels (Figure 3L), the IgG4-dominant group has significantly higher ADAMTS13 antigen levels (Figure 3M). These results suggest that IgG4 anti-ADAMTS13 autoantibodies confer relatively less ADAMTS13 depletion.
 
-## IgG4 and IgG1 anti-Dsg1 autoantibodies have shared binding epitopes and different abundance in PF patients
+### IgG4 and IgG1 anti-Dsg1 autoantibodies have shared binding epitopes and different abundance in PF patients
 
 Previously, it has been described that the IgG1 anti-Dsg1 autoantibodies are observed in both healthy subjects and endemic PF patients, and the accumulation of IgG4 anti-Dsg1 autoantibodies is a key step in the development of the disease (Warren et al., 2003). At the same time, the binding epitope of anti-Dsg1 autoantibodies is critical for the pathogenicity of anti-Dsg1 autoantibodies (Li et al., 2003), raising the possibility that IgG4 and IgG1 anti-Dsg1 autoantibodies bind to different Dsg1 epitopes (Aoki et al., 2015). To investigate whether the binding epitope represents a major difference between IgG1 and IgG4 anti-Dsg1 autoantibodies, serum samples of a cohort of 53 PF patients admitted to Rui Jin Hospital, Shanghai, China, were analyzed for the total levels and subclasses of IgG anti-Dsg1 autoantibodies (Supplementary file 1d). Consistent with previous studies (Warren et al., 2003), PF patients have both IgG4 and IgG1 anti-Dsg1 autoantibodies (Figure 4A and Figure 4—figure supplement 1A). However, IgG4 autoantibodies are much more abundant than IgG1 autoantibodies (Figure 4A). Based on the clinical symptoms and medication, these PF patients were assigned to the ‘stable’ and ‘active’ groups. Both groups have more IgG4 autoantibodies than IgG1 autoantibodies (Figure 4—figure supplement 1A). The ‘active’ PF samples have higher autoantibody levels as compared to the ‘stable’ PF samples, regardless of what IgG subclasses were considered (Figure 4—figure supplement 1A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-v2.jpg)
+
+**Figure 4.:** (A) Plots showing the unit values of indicated Dsg1-specific antibodies in the serum of pemphigus foliaceus (PF) patients (n=53). (B) Plots showing the levels of IgG1 and IgG4 antibodies in two PF patients that bind to Dsg1, Dsg2, or Dsg1/Dsg2 chimeric molecules containing the indicated Dsg1 EC domains. (C) Representative photos and scores showing the hematoxylin-eosin (HE) staining results of ears of hFCGR-Tg and FcγRα-null mice 3 days after being treated with 0.4 mg of Ctrl hIgG (n=3), or PF24-9(IgG1) or PF24-9(IgG4) (n≥4) through tail vein injection. Scale bars: 200 μm. (D–F) Representative flow cytometry profiles (D) and plots showing the percentage (E) and cell number (F) of infiltrating neutrophils (CD11b+Gr1hi) among leukocytes (CD45+) in the ears of mice in (C). Each symbol is derived from an individual PF patient (A) or an individual mouse (C, E, F). Mean ± SEM values are plotted (A, C, E, F). One-way ANOVA (A) and two-way ANOVA (C, E, F) with Tukey’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. A representative of two independent experiments is shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Plots showing the levels of indicated Dsg1-specific antibodies in stable (n=21) and active (n=32) PF patients and healthy controls (n=3), presented as ELISA OD650 values, with serum dilutions and signals of reference antibodies (clone PF24-9) with indicated concentrations (dashed lines) annotated. (B) Schematic diagram showing the structure of Dsg1, Dsg2, and Dsg1/Dsg2 chimeric molecules. S, signal peptide; P, propeptide; EC1-5, extracellular domain 1–5; F, H, FlagHis tag. (C) Plots showing the levels of IgG1 and IgG4 antibodies in another four PF patients that bind to Dsg1, Dsg2, or Dsg1/Dsg2 chimeric molecules containing the indicated Dsg1 EC domains, with binding epitopes annotated. Each symbol is derived from an individual PF patient or healthy people (A). Mean ± SEM values are plotted (A). Unpaired nonparametric Mann-Whitney test (A). *p<0.05, ***p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The binding kinetics of different PF1-8-15 anti-Dsg1 IgG antibodies to Dsg1 analyzed by ELISA with biotinylated anti-human Igλ chain as detecting antibodies. Irrelevant TTP1-420(IgG1) was included as a negative control. (B) Representative hematoxylin-eosin (HE) results showing the epidermal blistering in neonatal mice 7 hr after being treated with Ctrl hIgG or indicated anti-Dsg1 IgG1, IgG4, or digested Fab + Fc. Scale bars: 200 μm. (C) HE scores of neonatal mice (PF24-9: n = 2/10/8/9; PF1-8-15: n = 10/50/50) treated with control human IgG or anti-Dsg1 antibodies in (B). (D) Plot showing the binding of antibodies indicated on the X-axis (αCD40(IgG1) or PF1-8-15(IgG1)) to Dsg1 captured by indicated anti-Dsg1 antibodies or TBS-Ca. Each symbol is derived from an individual mouse (C). Mean ± SEM values are plotted (A, C). One-way ANOVA with Tukey’s multiple comparisons test (C).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Representative photos of hFCGR-Tg mouse untreated or treated with 3 mg of PF24-9(IgG1) anti-Dsg1 autoantibodies, showing skin lesions, human IgG deposition in the ear (direct immunofluorescence [DIF]), hematoxylin-eosin (HE) results of skin and ear tissues. (B) Histological features of skin before and after blister onset. (C) Schematic diagram showing the experimental design for evaluating the pathogenicity of anti-Dsg1 autoantibodies in hFCGR-Tg mice. hFCGR-Tg mice were treated with two doses of 0.5 mg of Ctrl hIgG or PF24-9 anti-Dsg1 antibodies on day 0 and day 2, respectively. On day 4, skin and ear tissues were subjected to HE staining. (D) Representative photos showing the HE results of the indicated tissues in hFCGR-Tg mice treated as in (C). (E) DIF results showing the IgG deposition in the skin of hFCGR-Tg mice 6 or 24 hr after being treated with 0.5 mg of Ctrl hIgG or PF1-8-15 anti-Dsg1 IgG1 or IgG4. Scale bars: 200 μm (HE), 100 μm (DIF).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Representative flow cytometry profile (A) and plots showing the percentage (B) and cell number (C) of infiltrating CD11b+ myeloid cells among leukocytes (CD45+) in the ear tissues of mice in Figure 4C. Each photo or symbol is derived from an individual mouse. Mean ± SEM values are plotted. Two-way ANOVA with Tukey’s multiple comparisons test (B, C). *p<0.05, **p<0.01, ****p<0.0001. A representative of two independent experiments is shown.
+
 The binding epitopes of IgG4 and IgG1 anti-Dsg1 autoantibodies were analyzed based on their binding to a series of Dsg1/Dsg2 chimeric proteins containing different Dsg1 extracellular domains (Figure 4—figure supplement 1B). Interestingly, all the tested samples with significant IgG1 antibodies showed that their IgG1 and IgG4 anti-Dsg1 autoantibodies have the same chimeric antigen-binding profiles (Figure 4B and Figure 4—figure supplement 1C). These results suggest that IgG1 and IgG4 anti-Dsg1 autoantibodies have different abundance but shared binding epitopes, at least in the patient samples analyzed in our study, and that the IgG subclass of these anti-Dsg1 autoantibodies could be a key variable in PF pathogenesis.
 
-## IgG4 is not less, if not more, pathogenic than IgG1 in anti-Dsg1 autoantibodies
+### IgG4 is not less, if not more, pathogenic than IgG1 in anti-Dsg1 autoantibodies
 
 To investigate the impact of IgG4 subclass on the pathogenicity of anti-Dsg1 autoantibodies, we studied anti-Dsg1 autoantibodies previously isolated from PF patients and proven to be pathogenic in both neonatal mouse and human tissue-culture models (Ishii et al., 2008; Yamagami et al., 2009). Two anti-Dsg1 antibody clones (PF1-8-15 and PF24-9) were produced as IgG1 and IgG4 antibodies and confirmed to bind to Dsg1 with similar kinetics (Figure 4—figure supplement 2A). When tested in neonatal mice, both human IgG4 and IgG1 anti-Dsg1 antibodies induced epidermal acantholysis (Figure 4—figure supplement 2B, C). We also confirmed that the Fab fragment of anti-Dsg1 antibodies was sufficient to induce blisters in neonatal mice using papain-digested IgG1(PF24-9), at comparable levels as intact IgG1 and IgG4 antibodies (Figure 4—figure supplement 2B, C).
 
@@ -89,27 +123,51 @@ Since pemphigus is a chronic disease that often affects adults and older adults 
 
 To investigate whether IgG subclass impacts on the pathogenicity of anti-Dsg1 autoantibodies, the pathogenicity of high dosage of PF24-9(IgG4) and PF24-9(IgG1) autoantibodies were evaluated in hFCGR-Tg mice (Figure 4—figure supplement 3C). When skin and ear tissues were analyzed, epidermal blistering and leukocyte infiltration were observed in both PF24-9(IgG4) and PF24-9(IgG1) autoantibody-treated mice (Figure 4—figure supplement 3D). After treatment, we detected comparable levels of IgG1 and IgG4 anti-Dsg1 antibodies in the skin tissues of hFCGR-Tg mice (Figure 4—figure supplement 3E), suggesting both IgG1 and IgG4 anti-Dsg1 antibodies can reach skin tissues. Interestingly, when the anti-Dsg1 autoantibody dosage is reduced, it appears that PF24-9(IgG4) is not less but tends to be more pathogenic than PF24-9(IgG1) antibodies based on the histopathological symptoms (Figure 4C), in contrast with our analysis of anti-ADAMTS13 autoantibodies.
 
-## Anti-Dsg1 autoantibodies are more pathogenic in the absence of FcγRs
+### Anti-Dsg1 autoantibodies are more pathogenic in the absence of FcγRs
 
 To investigate whether Fc-FcγR interaction impacts the pathogenicity of anti-Dsg1 antibodies, FcγRα-null mice were used. Strikingly, PF24-9(IgG1) autoantibodies induced more severe ear lesions in FcγRα-null mice than in hFCGR-Tg mice (Figure 4C). Increased infiltration of myeloid effector cells (Figure 4—figure supplement 4 and Figure 4—figure supplement 5A to C), especially inflammation-relevant neutrophils that are very sensitive to lesions and considered the first leukocyte subset arriving at lesion sites (de Oliveira et al., 2016; Radoš, 2011), was observed in the ears of FcγRα-null mice treated with either PF24-9(IgG4) or PF24-9(IgG1) autoantibodies (Figure 4D to F). While these results suggest that anti-Dsg1 autoantibodies induced acute inflammation together with skin lesions, they also suggest an FcγR-mediated mechanism in attenuating anti-Dsg1 autoantibodies-induced skin lesions.
 
-## Anti-Dsg1 autoantibodies with low affinity to FcγRs are more pathogenic
+### Anti-Dsg1 autoantibodies with low affinity to FcγRs are more pathogenic
 
 To further investigate whether Fc-FcγR interactions attenuate anti-Dsg1 autoantibody pathogenicity, the N297A and GASDALIE variants (with reduced FcγR binding and enhanced activating FcγR binding, respectively [Figure 1—figure supplement 1B, C; Bournazos et al., 2019; Sazinsky et al., 2008]) of IgG1 anti-Dsg1 autoantibodies were produced (Figure 4—figure supplement 2A) and evaluated in the adult pemphigus model. Strikingly, the N297A variants of both pathogenic anti-Dsg1 clones (PF24-9 and PF1-8-15) are much more potent than their matched GASDALIE variants in inducing ear lesions (Figure 5A, and Figure 5—figure supplement 1A, B) and inflammation in hFCGR-Tg mice, as shown by increased ear thickness and weight (Figure 5B, C, and Figure 5—figure supplement 1C, D), as well as increased infiltration neutrophils (Figure 5D, E, Figure 5—figure supplement 1E-G). Histopathological analysis of skin lesions at an early time point (day 3) (Figure 5—figure supplement 1A) and a later time point (day 6) (Figure 5—figure supplement 1B) revealed that while both the PF1-8-15(N297A) and PF1-8-15(GASDALIE) variants could induce skin lesions, the PF1-8-15(GASDALIE) variant-treated mice recovered faster. Consistent results were also observed in WT mice treated with PF1-8-15(N297A) and PF1-8-15(GASDALIE) antibodies when the onset and recovery of skin lesions were monitored (Figure 5—figure supplement 2A). The process lasted 2–3weeks, and the recovery was confirmed by the histological and vision examinations (Figure 5—figure supplement 2A, B), and by quantifying the infiltrating neutrophils (Figure 5—figure supplement 2C, D). At the same time, the levels of serum human IgG dropped to undetectable on day 6 (Figure 5—figure supplement 2E), and can’t be detected on day 23 in the skin tissue by DIF (Figure 5—figure supplement 2F). These results further support that the first few days seem the best time window for studying anti-Dsg1 autoantibody pathogenicity.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative photos and scores showing the hematoxylin-eosin (HE) staining results of ears of hFCGR-Tg mice 3 days after being treated with 0.5 mg of Ctrl hIgG (n=3), or PF24-9(N297A) or PF24-9(GASDALIE) autoantibodies (n=5). Scale bars: 200 μm. (B, C) Ear thickness (B) and weight (C) of hFCGR-Tg mice in (A) when sacrificed at day 3. (D, E) Plots showing the percentage (D) and cell number (E) of infiltrating neutrophils (CD11b+Gr1hi) among leukocytes (CD45+) in the ears of mice in (A). (F) Photos and gross phenotype scores of nude mice 2 days after being treated with 0.4 mg of Ctrl hIgG or PF1-8-15(N297A) or PF1-8-15(GASDALIE) antibodies (n=5). Each symbol is derived from an individual mouse. Mean ± SEM values are plotted. One-way ANOVA with Tukey’s multiple comparisons test (A–F). *p<0.05, **p<0.01, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Representative hematoxylin-eosin (HE) results and scores of the ear tissues of hFCGR-Tg mice 3 days (A) or 6 (B) days after being treated with 0.5 mg of Ctrl hIgG (n=4), PF1-8-15(GASDALIE), or PF1-8-15(N297A) (n=5). Scale bars: 200 μm. (C, D) Ear thickness (C) and weight (D) of mice in (B). (E–G) Representative flow cytometry profiles (E) and plots showing the percentage (F) and cell number (G) of infiltrating neutrophils (CD11b+Gr1hi) among leukocytes (CD45+) in the ears of mice in (B). (H) Plots showing the levels of the remaining human IgG in the serum of mice in (A). (I) Photos and gross phenotype scores of nude mice 4 days after being treated with 0.5 mg of Ctrl hIgG, PF1-8-15(N297A), or PF1-8-15(GASDALIE) (n=5). Each symbol is derived from an individual mouse. Mean ± SEM values are plotted. One-way ANOVA with Tukey’s multiple comparisons test (A–D, F–I). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. A representative of three independent experiments is shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Pictures of the back skin of mice treated with 0.5 mg of Ctrl hIgG or anti-Dsg1 antibody variants, photos of 3 representative mice/group (n=4 or 5) at indicated time points (day 3, day 6, day 12, and day 23) were shown. (B) Hematoxylin-eosin (HE) results showing the recovery of skin lesions and inflammation on day 23. Scale bars: 200 μm. (C–D) Plots showing the percentage (C) and cell number (D) of infiltrating neutrophils (CD11b+Gr1hi) among leukocytes (CD45+) in the ears of mice 23 days after antibodies treatment. (E) Plots showing the levels of the remaining human IgG in the serum of mice at the indicated time points. (F) Direct immunofluorescence results showing the clearance of human IgG binding to Dsg1 in skin tissue. Hu Tonsi is used as the positive control. Scale bars: 100 μm. Each photo or symbol is derived from an individual mouse. Mean ± SEM values are plotted. One-way ANOVA with Tukey’s multiple comparisons (C, D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative hematoxylin-eosin (HE) results and scores of the ear tissues of hFCGR-Tg and FcγRα-null mice 3 days after being treated with 0.5 mg of Ctrl hIgG (n=2) or PF1-8-15(GASDALIE) (n=4). Scale bars: 200 μm. (B) Plot showing ear weight of mice in (A). (C–E) Representative flow cytometry profiles (C) and plots showing the percentage (D) and cell number (E) of infiltrating neutrophils (CD11b+Gr1hi) among leukocytes (CD45+) in the ears of mice in (A). Each symbol is derived from an individual mouse. Mean ± SEM values are plotted. Two-way ANOVA with Tukey’s multiple comparisons test. *p<0.05, **p<0.01, ****p<0.0001. A representative of two independent experiments is shown.
+
 The pathogenic function of N297A and GASDALIE anti-Dsg1 autoantibodies was also evaluated in nude mice, where skin lesions can be better observed. As shown in Figure 5F and Figure 5—figure supplement 1I, PF1-8-15(N297A) autoantibodies induced more severe skin lesions and slower recovery as compared to matched PF1-8-15(GASDALIE) autoantibodies. These results further support the notion that Fc-FcγR interaction attenuates the pathogenicity of anti-Dsg1 autoantibodies, and it is worth noting that this is observed in both hFCGR-Tg and nude mice. Consistently, the PF1-8-15(GASDALIE) autoantibody also induced more severe skin lesions and inflammation, as well as increased infiltrating neutrophils in FcγRα-null mice as compared in hFCGR-Tg mice (Figure 5—figure supplement 3A-E).
 
-## FcγR-mediated effector function promotes the clearance of immune complexes and dead keratinocytes induced by anti-Dsg1 autoantibodies
+### FcγR-mediated effector function promotes the clearance of immune complexes and dead keratinocytes induced by anti-Dsg1 autoantibodies
 
 Since both FcγR-null (N297A) and FcγR-enhanced (GASDALIE) anti-Dsg1 autoantibodies can trigger skin lesions, we reasoned that the observed exacerbation of skin lesions associated with reduced Fc-FcγR binding is due to the impact of FcγR-mediated effector function at the tissue repair stage (Gaipl et al., 2006; Nagata, 2018). Analysis of the levels of remaining anti-Dsg1 autoantibodies in the serum of both hFCGR-Tg and nude mice showed that in the presence of FcγRs, GASDALIE anti-Dsg1 autoantibodies are depleted faster than N297A anti-Dsg1 autoantibodies (Figure 6A and B, Figure 5—figure supplement 1H and Figure 6—figure supplement 1A), and this difference was limited in FcγRα-null mice (Figure 6C), suggesting more FcγR-dependent uptake of Dsg1-autoantibodies immune complexes. Consistently, the levels of Dsg1-autoantigen-autoantibody immune complexes were clearly higher in PF1-8-15(N297A)-treated nude mice than in PF1-8-15(GASDALIE)-treated nude mice, but not in FcγRα-null mice (Figure 6D, and Figure 6—figure supplement 1B). At the same time, we detected comparable levels of N297A and GASDALIE anti-Dsg1 antibodies in the skin tissue of nude mice 6 and 24 hr after treatment (Figure 6—figure supplement 1C), suggesting the different pathogenic functions of these two antibodies are not due to different accessibility to the skin tissues. Notably, we also observed more epidermal blistering and dead keratinocytes at skin lesions in PF1-8-15(N297A)-treated nude mice than in PF1-8-15(GASDALIE)-treated nude mice (Figure 6E, F and Figure 6—figure supplement 1D). More epidermal blistering and dead keratinocytes were also observed in FcγRα-null mice regardless of whether PF1-8-15(N297A) or PF1-8-15(GASDALIE) was used (Figure 6E, F). These results suggest that FcγR-mediated effector function promotes the clearance of dead keratinocytes.
 
-## FcγR-enhanced non-pathogenic anti-Dsg1 autoantibodies attenuate skin lesions induced by pathogenic anti-Dsg1 antibodies
+![Figure 6.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Plots showing the levels of serum remaining free hIgG (A, B, C) and Dsg1-Ab immune complex (D) in mice (n=5) as treated in Figure 5A (A), or in nude mice (B, D) and FcγRα-null mice (C, D) 2 days after being treated with 0.4 or 0.5 mg of anti-Dsg1 IgG1 variants PF1-8-15(N297A) or PF1-8-15(GASDALIE), respectively. (E) Photos and scores showing the hematoxylin-eosin (HE) staining results of the skin of nude mice and FcγRα-null mice as treated in (B and C) (n=5). Scale bars: 200 μm. (F) Photos showing the TUNEL staining results of skin tissues collected from mice (n=5) in (B and C), with positive cells (green) corresponding to the epidermis. Scale bars: 100 μm. Each photo or symbol is derived from an individual mouse. Mean ± SEM values are plotted. One-way ANOVA with Tukey’s multiple comparisons (A, B, C, E) and two-way ANOVA (D) with Tukey’s multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Plots showing the levels of serum remaining free hIgG (A) and Dsg1-Ab immune complex (B) in nude mice (n=5) 6 and 24 hr after being treated with 0.5 mg of Ctrl hIgG or anti-Dsg1 IgG1 variants PF1-8-15(N297A) or PF1-8-15(GASDALIE). (C) Direct immunofluorescence (DIF) results showing the IgG deposition in the skin of nude mice as treated in (A, B). (D) Photos showing the TUNEL staining results of skin tissues collected from nude mice in (A, B), with positive cells (green) corresponding to the epidermis. Scale bars: 100 μm. Each photo or symbol is derived from an individual mouse. Mean ± SEM values are plotted. One-way ANOVA with Tukey’s multiple comparisons (A, B). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+### FcγR-enhanced non-pathogenic anti-Dsg1 autoantibodies attenuate skin lesions induced by pathogenic anti-Dsg1 antibodies
 
 We further hypothesized that non-pathogenic anti-Dsg1 antibodies could also promote the FcγR-mediated clearance of autoantigen-autoantibody immune complexes and, therefore, the healing of skin lesions. To test this hypothesis, a non-pathogenic but cross-reactive anti-Dsg1 autoantibody clone (PF1-2-22), previously isolated from PF patients (Yamagami et al., 2009), was produced as the GASDALIE variant and confirmed to have different binding epitope as pathogenic anti-Dsg1 clones PF1-8-15 and PF24-9 (Figure 4—figure supplement 2D, Supplementary file 1e). Notably, the non-pathogenic PF1-2-22(GASDALIE) could attenuate the skin lesions induced by pathogenic PF1-8-15(N297A) autoantibodies in nude mice, as shown by the reduced skin lesions (Figure 7A, B) and epidermal blistering (Figure 7C). Furthermore, fewer apoptotic keratinocytes in the epidermis were observed in skin tissues isolated from non-pathogenic anti-Dsg1 autoantibody-treated mice (Figure 7D). These results suggest that the FcγR-mediated effector function can attenuate pathogenic anti-Dsg1 autoantibody-induced skin lesions by promoting the clearance of apoptotic keratinocytes that may otherwise undergo secondary necrosis and induce inflammation, and therefore contribute to the healing of Dsg1 autoantibody-induced skin lesions in PF models.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76223/elife-76223-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematic diagram of the experimental design for evaluating the impact of non-pathogenic anti-Dsg1 IgG1 with GASDALIE mutations (PF1-2-22(GASDALIE)) on the pathogenicity of pathogenic anti-Dsg1 IgG1 with N297A mutation (PF1-8-15(N297A)) in nude mice. (B–D) Photos and gross phenotype scores showing skin lesions around the mouth (B), Hematoxylin-eosin (HE) staining results and scores of skin tissues (C), TUNEL staining results of skin (D) in nude mice (n=5) 2 days after being treated with 0.5 (B) or 0.4 mg (C, D) of pathogenic PF1-8-15(N297A) together with (+) or without (-) an equal amount of non-pathogenic (PF1-2-22(GASDALIE)) antibodies, with TUNEL positive cells (green) correspond to the epidermis in (D). Scale bars: 200 μm (C) or 100 μm (D). Each photo is derived from an individual mouse. Unpaired t test (B, C). *p<0.05, ***p<0.001.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7C.
+**Figure 7.:** (A) Schematic diagram of the experimental design for evaluating the impact of non-pathogenic anti-Dsg1 IgG1 with GASDALIE mutations (PF1-2-22(GASDALIE)) on the pathogenicity of pathogenic anti-Dsg1 IgG1 with N297A mutation (PF1-8-15(N297A)) in nude mice. (B–D) Photos and gross phenotype scores showing skin lesions around the mouth (B), Hematoxylin-eosin (HE) staining results and scores of skin tissues (C), TUNEL staining results of skin (D) in nude mice (n=5) 2 days after being treated with 0.5 (B) or 0.4 mg (C, D) of pathogenic PF1-8-15(N297A) together with (+) or without (-) an equal amount of non-pathogenic (PF1-2-22(GASDALIE)) antibodies, with TUNEL positive cells (green) correspond to the epidermis in (D). Scale bars: 200 μm (C) or 100 μm (D). Each photo is derived from an individual mouse. Unpaired t test (B, C). *p<0.05, ***p<0.001.
 
 ## Discussion
 
@@ -129,59 +187,244 @@ While our study of anti-ADAMTS13 autoantibodies supports the notion that switchi
 
 ## Materials and methods
 
-## Patients and samples collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S</td>
+      <td>Expression Systems, courtesy of Dr Ai-Wu Zhou(Shanghai Jiao Tong University School of Medicine)</td>
+      <td>RRID:CVCL_A784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Expression Systems, courtesy of Dr Ai-Wu Zhou(Shanghai Jiao Tong University School of Medicine)</td>
+      <td>RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2 Alexa Fluor 700 (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat# 560693RRID:AB_1727491</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b APC (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0112-82RRID:AB_469343</td>
+      <td>FACS (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant Anti-Human IgG antibody (Rabbit monoclona)</td>
+      <td>Abcam</td>
+      <td>Cat# ab109489, RRID:AB_10863040</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Antibody, Alexa Fluor 488 (Donkey polyclonal secondary)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21206, RRID:AB_2535792</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lambda Light Chain Monoclonal Antibody, Biotin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555794, RRID:AB_396129</td>
+      <td>ELISA (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dsg1 TTP1-8-15(IgG1) Biotin (human monoclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELISA (1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG-Fc Fragment Antibody HRP (Goat polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat# A80-104P, RRID:AB_67064</td>
+      <td>ELISA (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG1 Hinge-HRP (Mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 9052–05, RRID:AB_2796619</td>
+      <td>ELISA (1:3160)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG4 Fc-HRP (Mouse monoclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 9200–05, RRID:AB_2796691</td>
+      <td>ELISA (1:3160)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG1 Fc Secondary Antibody, HRP (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MH1715, RRID:AB_10374315</td>
+      <td>ELISA (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG4 Fc Secondary Antibody, HRP (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MH1742, RRID:AB_2539714</td>
+      <td>ELISA (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG (H+L) (Goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 109-005-088, RRID:AB_2337539</td>
+      <td>ELISA (2 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG-heavy and light chain Antibody HRP (Goat polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat# A80-219P, RRID:AB_67076</td>
+      <td>ELISA (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-HRP</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 554066, RRID:AB_2868972</td>
+      <td>ELISA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human ADAMTS13 (Full Length) Protein, CF</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# 6156-AD</td>
+      <td>ELISA (2 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human ADAMTS13 Quantikine ELISA Kitg</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# DADT130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FRETS-VWF73</td>
+      <td>Anaspec</td>
+      <td>Cat# 63728–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase II</td>
+      <td>Roche</td>
+      <td>Cat# 4942078001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Sigma</td>
+      <td>Cat# D5025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase IV</td>
+      <td>Sigma/biosharp</td>
+      <td>Cat# C5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>DD3571</td>
+      <td>(0.5 µg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients and samples collection
 
 We analyzed plasma samples of 44 acquired TTP patients investigated in Jiangsu Institute of Hematology, The First Affiliated Hospital of Soochow University, Jiangsu, China, between September 2019 and April 2020. This institute is providing diagnostic services for patients in China suspected of having thrombotic microangiopathies. The diagnosis of acquired TTP was based on the following criteria: (1) thrombocytopenia (platelet count below 150 g/l) and hemolytic anemia (Coombs-negative anemia, elevated LDH); (2) deficient ADAMTS13 activity (<5%, measured by R-CBA assay [the residual collagen-binding activity], as described below); and (3) detectable inhibitory anti-ADAMTS13 autoantibodies as analyzed by the R-CBA method (Gerritsen et al., 1999). Blood samples were collected during an acute episode and anticoagulated with sodium citrate before plasma exchange therapy. Plasma samples were separated by centrifugation and stored at −70°C until measurements. Sodium citrate-anticoagulated plasma samples were used for the determinations of ADAMTS13 activity, ADAMTS13 Ag levels, and autoantibody subclasses and concentrations.
 
 To study the impact of IgG subclass on the pathogenicity of anti-Dsg1 autoantibodies, 53 PF patients, including 21 patients at stable stage (defined as no new skin lesions and erosions for at least 1 month, and with gradually reducing corticosteroid dosage) and 32 patients at active stage (including newly diagnosed patients without any treatment or stable patients developing new lesions, lasting more than 1 week), from Department of Dermatology, Rui Jin Hospital, Shanghai Jiao Tong University School of Medicine, China, were recruited and analyzed. All PF patients exclusively had anti-Dsg1 autoantibodies, but not anti-Dsg3 autoantibodies, as detected by ELISA. Serum and sodium citrate-anticoagulated plasma of healthy people was obtained from the medical center or healthy blood donors.
 
-## Mice
+### Mice
 
 Adult and neonatal C57BL/6 WT mice and Balb/c nude mice were obtained from SLAC (Shanghai, China). FcγR-deficient mouse (Fcgr1-/-Fcgr2b-/-Fcgr3-/-Fcgr4-/-, referred to as ‘FcγRα-null’) (Smith et al., 2012), FcγR-humanized mouse (Fcgr1-/-Fcgr2b-/-Fcgr3-/-Fcgr4-/-/ FCGR1A+/ FCGR2AR131+/ FCGR2BI232+/ FCGR3AF158+/ FCGR3B+, referred to as ‘hFCGR-Tg’) (Smith et al., 2012), and Fc receptor common γ-chain-deficient mouse (Fcer1g-/-) (Clynes et al., 1998b; Takai et al., 1994) have been described elsewhere and were kindly provided by Dr Jeffrey Ravetch (The Rockefeller University). hFCGR-Tg or FcγRα-null mice produced by breeding or by bone marrow reconstitution were used. The method to generate bone marrow chimeric mice has been described previously (Liu et al., 2019). Briefly, 8–10 weeks female C57BL/6 WT mice (SLAC, Shanghai, China) were lethally irradiated with 8 Gy X-ray using RS 2000pro X-ray biological Irradiator (Rad Source Technologies, Inc, Buford, GA), and 2×106 bone marrow cells of hFCGR-Tg or FcγRα-null mice were transferred to these irradiated mice through tail vein injection. Successful bone marrow reconstitution was confirmed 2 months later by analyzing FcγRIIB expression in B cells and CD11b+ myeloid cells in peripheral blood by flow cytometry. Mice were used at the age of 8–12 weeks or 2–4 months after bone marrow reconstruction used unless stated otherwise.
 
-## Cell lines
+### Cell lines
 
 In this study we used authentic and mycoplasma-free cells that were provided by Dr. Aiwu Zhou (Shanghai Jiao Tong University School of Medecine). Sf9 cells were cultured at 27°C in serum-free SIM SF medium (Sino Biological Inc). HEK293S cells were cultured at 37°C in 5% CO2. No additional authentication was performed by the authors of this study. Cell line was negative for mycoplasma. No commonly misidentified lines were used in this study. All cell lines were kept at low passages in order to maintain their health and identity.
 
-## Antibodies
+### Antibodies
 
 The amino acid sequences of the variable region of TTP1-420 anti-ADAMTS13 autoantibody were obtained from a published paper (Ostertag et al., 2016b). Nucleic acid sequences of the variable region of pathogenic PF1-8-15 and PF24-9 anti-Dsg1 scFv and non-pathogenic PF1-2-22 anti-Dsg1 scFv were obtained from the patent (Patent No.: US8846867B2). Antibody heavy chain variable sequences and light chain sequences were synthesized and inserted into the pFL_DEC expression vector with or without human IgG constant region (IgG1 or IgG4), respectively, as described previously (Liu et al., 2019). IgG1 Fc variants with specific mutations (N297A or G236A/S239D/A330L/I332E) were generated by site-directed mutagenesis. Paired antibody heavy and light chain expression vectors were used to transiently co-transfect HEK293S cells. IgG antibodies in the supernatant were collected several days later and purified with protein G Sepharose (GE Healthcare), and dialyzed to PBS and stored at 4°C. LPS (endotoxin) levels were analyzed by the Limulus amebocyte lysate assay (Thermo Fisher Scientific) and confirmed to be <0.01 EU/μg.
 
-## Production of hDsg1 and hDsg2 extracellular domains and their chimeric proteins
+### Production of hDsg1 and hDsg2 extracellular domains and their chimeric proteins
 
 DNA fragments encoding the signal peptide, pro-sequence, and entire extracellular domains of Dsg1 (GenBank accession no. NM_001942) and Dsg2 (GenBank accession no. NM_001943) were obtained by reverse transcription polymerase chain reaction (RT-PCR, Thermo Fisher Scientific) amplification using RNA extracted from healthy human skin (obtained from plastic surgery) by TRIzol reagent (Invitrogen) as the template. DNA fragments encoding of Dsg1/Dsg2 chimeric proteins consisting of various extracellular domain segments of Dsg1 were obtained by overlapping PCR using Dsg1 and Dsg2 vectors as the templates. The forward and reverse primers used are listed in Supplementary file 1f. BamH1 and Sal1 are added to 5' and 3' end primers, respectively, and were used for subcloning the DNA fragments encoding of Dsg1/Dsg2 chimeric proteins into the pFastBac1 vector that was engineered to contain the FlagHis tag (dykddddkfvehhhhhhhh) sequence between the Sal1 and Not1 sites. The recombinant donor plasmid was used to transform competent DH10Bac Escherichia coli cells, after which blue-white plaque assay was performed to confirm successful site-specific transposition. Dsg1, Dsg2, and Dsg1/Dsg2 chimeric proteins were expressed in the Sf9 cells and purified as previously described (Ding et al., 1999).
 
-## ELISA
+### ELISA
 
 To measure the binding ability of human IgG and Fc variants to mouse FcγRs, a previously described protocol (Liu et al., 2019) was modified. Briefly, 100 μl of 2 μg/ml TTP1-420 anti-ADAMTS13 antibodies with various constant domains (IgG1/IgG4/N297A/GASDALIE) were coated in 96-well MaxiSorp flat plate (Nunc) at 4°C overnight. After discarding the liquid and washing with PBS containing 0.05% Tween-20 (PBST), the plates were blocked with 200 μl of 1% or 2% BSA at room temperature (RT) for 2 hr and washed two times with PBST, after which 100 μl of serially diluted (0.001–1 μg/ml, 1:3.16) biotinylated mouse FcγRs (Sino Biological) were added and incubated at RT for 1 hr. Plates were then washed three times with PBST and further incubated with 100 μl of diluted Streptavidin-HRP (1:1000, BD Pharmingen) for 1 hr, and followed by washing four times and developing with 100 μl of TMB peroxidase substrate (KPL). The absorbance at 650 nm was recorded using a multifunctional microplate reader (SpectraMaxi3, Molecular Devices).
 
 Similar protocols were applied to other ELISA analyses with except that when Dsg1, Dsg2, or Dsg1/2 chimeric proteins were involved, all reagents were dissolved or diluted in TBS-Ca buffer (TBS buffer with 1 mM CaCl2) and TBS-Ca-T (TBS-Ca containing 0.05% Tween-20) was used as washing buffer, as well as the following:
 
-## Fab preparation
+### Fab preparation
 
 Purified PF24-9(IgG1) antibody was digested to produce Fab fragments using immobilized papain (Pierce). Briefly, 0.125 ml of immobilized papain agarose was equilibrated with 0.5 ml of digestion buffer containing cysteine•HCl. Then, 4 mg desalinated PF24-9(IgG1) was mixed with equilibrated immobilized papain. Papain digestion was allowed to proceed for 7 hr, shaking vigorously at 37°C. The reaction was stopped by centrifugation to separate the antibody and papain agarose, and the degree of cleavage was evaluated by SDS-PAGE.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 SPR experiments were performed with a Biacore T200 SPR system (Biacore, GE Healthcare) using a published protocol (Tao et al., 2019). In brief, experiments were performed at 25°C in PBS with 0.05% Tween-20. His-tagged soluble mouse FcγRs (Novoprotein) were immobilized on CM5 chips by amine coupling. Twofold serially diluted (7.8–2000 nM) human IgG1, IgG4, and IgG1 variants (clone TTP1-420) were injected through flow cells for 120 s at a flow rate of 30 µl/min for association followed by a 6 min dissociation phase. After each assay cycle, the sensor surface was regenerated with a 30 s injection of NaOH of optimized concentration at a flow rate of 50 μl/min. Background binding to blank immobilized flow cells was subtracted, and affinity constant KD values were calculated using the 1:1 binding kinetics model built in the Biacore T100 Evaluation Software (version 1.1).
 
-## ADAMTS13 activity assays (FRETS-VWF73)
+### ADAMTS13 activity assays (FRETS-VWF73)
 
 To analyze mouse ADAMTS13 activity, a published protocol (Kokame et al., 2005; Ostertag et al., 2016b) was used with modification. Briefly, 4.8 μl of plasma sample was diluted with 25.2 μl assay buffer (5 mM Bis-Tris, 25 mM CaCl2, 0.005% Tween 20, pH = 6). Ten μl of the diluted sample was then transferred to a 384-well white plate (Cisbio), and mixed with 10 μl of diluted FRETS-VW73 substrate (4 μM, Anaspec). Related fluorescence units (RFU) of cleaved FRETS-VWF73 were measured for 1 hr using a multi-mode microplate reader (Synergy H1, BioTek) with the following setting: excitation at 340 nm and emission at 450 nm. RFU were recorded for 1 hr, and their changing rates over time were calculated and expressed as ‘RFU/min’.
 
-## ADAMTS13 activity assay (R-CBA)
+### ADAMTS13 activity assay (R-CBA)
 
 ADAMTS13 activity of human plasma was assayed by evaluating CBA as previously described with modifications (Yue et al., 2018). In brief, 50 μl of sodium citrate-anticoagulated plasma samples from patients and HC were placed in Slide-A-Lyzer mini dialysis units (Pierce) and immersed in dialysis buffer (5 mM Tris-HCl, 0.1% Tween-20, and 1.5 M urea, pH = 8.3). Dialysis was performed at 37°C for 3 hr. An equal volume of the same sample was removed before dialysis and kept at RT during the dialysis as a control. The collagen type III binding capacities of the samples were then detected by ELISA. The data were analyzed as the fraction of CBA remaining after dialysis compared with the CBA of the individuals’ baseline samples. One hundred percent minus the residual CBA was regarded as the ADAMTS13 activity.
 
-## ADAMTS13 antigen quantification
+### ADAMTS13 antigen quantification
 
 ADAMTS13 antigen levels in the plasma of HC and TTP patients were measured using Human ADAMTS13 Quantikine ELISA Kit (R&D Systems) according to the manufacturer’s instructions with minor modifications: (1) diluted plasma samples of HC (1:50) and TTP patients (1:2) were used; (2) the range of the standard curve was broadened to 0.78125–100 ng/ml.
 
-## The activity of anti-ADAMTS13 antibodies in mice
+### The activity of anti-ADAMTS13 antibodies in mice
 
 WT C57BL/6, hFCGR-Tg, FcγRα-null, or Fcer1g-/- mice were treated with 10 μg per mouse of TTP1-420 anti-ADAMTS13 antibodies with different constant domains (IgG1/IgG4/N297A/GASDALIE) or control hIgG (Jackson ImmunoResearch Laboratories) on day 0 through tail vein injection. Blood samples were drawn at the time points described in the results and anticoagulated with 4% sodium citrate. Plasma was obtained after centrifugation and stored at –20°C for several days before analyzing. ADAMTS13 activity was analyzed using the VWF73-FRET method described above.
 
-## Mouse model of PF
+### Mouse model of PF
 
 WT C57BL/6 neonatal mice born within 48 hr (SLAC, Shanghai, China) were subcutaneously injected with the same amount of control hIgG (Jackson ImmunoResearch Laboratories), IgG1 or IgG4 anti-Dsg1 autoantibodies in 50 μl (15.8 μg/mouse for PF24-9 and 10 μg/mouse for PF1-8-15) and euthanized 7 hr later to collect skin samples for hematoxylin-eosin (HE) staining.
 
@@ -189,28 +432,28 @@ Adult hFCGR-Tg and FcγRα-null mice were treated with pathogenic anti-Dsg1 anti
 
 To compare the pathogenicity of PF1-8-15(N297A) and PF1-8-15(GASDALIE) anti-Dsg1 antibodies, 8- to 10-week-old female nude mice (SLAC, Shanghai, China) were treated with 0.4–0.5 mg/mouse antibodies (as specified in figure legends) via tail vein injection on day 0. 6, 24, 48, or 96 hr later (as specified in figure legends), photographs were taken to record skin lesions, and blood was drawn to prepare serum. The levels of free anti-Dsg1 antibodies and Dsg1-specific ICs were analyzed in serum samples. Skin samples were harvested for HE, DIF, and TUNEL assay after mice were sacrificed. To study the impact of non-pathogenic anti-Dsg1 antibodies (PF1-2-22) optimized for Fc-FcγR interaction, pathogenic PF1-8-15(N297A) anti-Dsg1 antibodies (0.4–0.5 mg/mouse, as specified in figure legends) were injected to 7- to 9-week-old male nude mice (SLAC, Shanghai, China) with or without an equal amount of non-pathogenic PF1-2-22(GASDALIE) antibodies. Cutaneous lesions were recorded on day 2, and skin samples were harvested for HE, DIF, and TUNEL assay after mice were sacrificed.
 
-## Direct immunofluorescence
+### Direct immunofluorescence
 
 Paraffin-embedded sections were used. After the sections were deparaffinized, 5-μm-thick sections were prepared. The microwave antigen repair technique was performed with 3% H2O2 and 0.01 M citrate buffer (pH = 6). After blocking with goat serum for 1 hr, sections were stained with rabbit anti-hIgG (1:150, Abcam) overnight at 4°C followed by Alexa Fluor 488-conjugated Goat Anti-Rabbit IgG (H+L) Antibody (1:400, Thermo Fisher Scientific) for 45 min at RT.
 
-## HE and gross phenotype score
+### HE and gross phenotype score
 
 Histological scoring: semi-quantitative grading based on the percentage of skin lesions (blisters and inflammation) in the sample (Mahoney et al., 1999). The scores are as follows: 0, no lesions; 1, lesions only appear at the edges of the tissue (<25%); 2, local lesions, accounting for 25–50% of the tissue; 3, large lesions, accounting for 50–75% of the tissue; 4, very extensive lesions, >75% of the tissues.
 
 Gross phenotype score: an easy grading system similar to PDAI (Pemphigus Disease Area Index) according to the area of skin lesions.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Mouse ears were cut and split into dorsal/ventral surfaces with forceps and digested with 2 ml of dispase II solution (2.5 mg/ml in PBS with 2% FBS, Roche) in six-well plate at 37°C for 90 min with shaking. After separating dermis from the epidermis using forceps, tissues (both epidermis and dermis) were cut into tiny pieces and put into RPMI 1640 complete medium (RPMI 1640, 10% FBS, 1% Pen/Strep) containing 0.5 mg/ml of collagenase IV (Sigma/biosharp) and 100 U/ml of DNase I (Sigma) for incubating at 37°C for 60 min to complete the digestion. The digested tissue was then passed through a 70 μm cell strainer, and the debris was ground and washed through the cell strainer using 35 ml of cold PBS. Cells were collected and resuspended with 600 μl FACS buffer (PBS buffer with 0.5% FBS and 2 mM EDTA). Half of the resuspended ear cells were stained with 1 μg/ml of Alexa Fluor 700-conjugated mouse anti-mouse CD45.2 (104, BD), APC-conjugated rat anti-mouse CD11b (M1/70, eBioscience), and FITC-conjugated rat anti-mouse Gr1 (RB6-8C5, eBioscience). DAPI (0.5 μg/ml, Invitrogen) and CountBright Absolute Counting Bead (3 μl/sample, Life Technologies) were added to resuspend cells before analyzing using a BD LSRFortessa X-20 analyzer (BD Biosciences). Data were analyzed using FlowJo X. Gating strategy was shown in Figure 4—figure supplement 4.
 
-## TUNEL assay
+### TUNEL assay
 
 TUNEL staining was conducted per manufacturer’s instructions (Roche). Images were obtained via OLYMPUS BX51 Confocal Microscope outfitted with a ×10 or ×40 objective. Apoptotic cells were defined as cells possessing a TUNEL positive (green) pyknotic nucleus.
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed with GraphPad Prism 6.0 or GraphPad Prism 8.3, and p values less than 0.05 were considered to be statistically significant. Asterisks indicate statistical difference within two interested groups on the figures (*p<0.05. **p<0.01, ***p<0.001, ****p<0.0001).
 
-## Study approval
+### Study approval
 
 Ethical approval was obtained from the Ethics Committees in The Rui Jin Hospital of Shanghai Jiao Tong University School of Medicine and The First Affiliated Hospital of Soochow University, respectively. All PF and TTP patients and healthy volunteers signed informed consent. All mice were bred and maintained under specific pathogen-free conditions, and all animal experiments were performed under the institutional guidelines of the Shanghai Jiao Tong University School of Medicine Institutional Animal Care and Use Committee (Protocol Registry Number: A-2015–014).

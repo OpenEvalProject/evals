@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Center for Integrative Genomics, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland
+1. Center for Integrative Genomics, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
 
 † Corresponding author
 
 ## Abstract
 
-Insect odorant receptors and gustatory receptors define a superfamily of seven transmembrane domain ion channels (referred to here as 7TMICs), with homologs identified across Animalia except Chordata. Previously, we used sequence-based screening methods to reveal conservation of this family in unicellular eukaryotes and plants (DUF3537 proteins) (Benton et al., 2020). Here, we combine three-dimensional structure-based screening, ab initio protein folding predictions, phylogenetics, and expression analyses to characterize additional candidate homologs with tertiary but little or no primary structural similarity to known 7TMICs, including proteins in disease-causing Trypanosoma . Unexpectedly, we identify structural similarity between 7TMICs and PHTF proteins, a deeply conserved family of unknown function, whose human orthologs display enriched expression in testis, cerebellum, and muscle. We also discover divergent groups of 7TMICs in insects, which we term the gustatory receptor-like (Grl) proteins. Several Drosophila melanogaster Grl s display selective expression in subsets of taste neurons, suggesting that they are previously unrecognized insect chemoreceptors. Although we cannot exclude the possibility of remarkable structural convergence, our findings support the origin of 7TMICs in a eukaryotic common ancestor, counter previous assumptions of complete loss of 7TMICs in Chordata, and highlight the extreme evolvability of this protein fold, which likely underlies its functional diversification in different cellular contexts.
+Insect odorant receptors and gustatory receptors define a superfamily of seven transmembrane domain ion channels (referred to here as 7TMICs), with homologs identified across Animalia except Chordata. Previously, we used sequence-based screening methods to reveal conservation of this family in unicellular eukaryotes and plants (DUF3537 proteins) (Benton et al., 2020). Here, we combine three-dimensional structure-based screening, ab initio protein folding predictions, phylogenetics, and expression analyses to characterize additional candidate homologs with tertiary but little or no primary structural similarity to known 7TMICs, including proteins in disease-causing Trypanosoma. Unexpectedly, we identify structural similarity between 7TMICs and PHTF proteins, a deeply conserved family of unknown function, whose human orthologs display enriched expression in testis, cerebellum, and muscle. We also discover divergent groups of 7TMICs in insects, which we term the gustatory receptor-like (Grl) proteins. Several Drosophila melanogaster Grls display selective expression in subsets of taste neurons, suggesting that they are previously unrecognized insect chemoreceptors. Although we cannot exclude the possibility of remarkable structural convergence, our findings support the origin of 7TMICs in a eukaryotic common ancestor, counter previous assumptions of complete loss of 7TMICs in Chordata, and highlight the extreme evolvability of this protein fold, which likely underlies its functional diversification in different cellular contexts.
 
 ## Introduction
 
@@ -25,15 +25,427 @@ The recent breakthroughs in accuracy (to atomic level) and speed (seconds-to-min
 
 ## Results and discussion
 
-## Tertiary structure-based screening for candidate 7TMIC homologs
+### Tertiary structure-based screening for candidate 7TMIC homologs
 
 Cryo-EM structures of two insect Ors have been obtained: the fig wasp (Apocrypta bakeri) Or co-receptor (Orco) (Butterwick et al., 2018; Figure 1A–B), which is a highly conserved member of the repertoire across most insect species (Benton et al., 2006; Jones et al., 2005; Larsson et al., 2004) and MhOr5 from the jumping bristletail (Machilis hrabei), a broadly tuned volatile sensor (Del Mármol et al., 2021). Despite sharing only 18% amino acid identity, these proteins adopt a highly similar fold (Del Mármol et al., 2021). As Orco shows higher sequence similarity to Grs – the ancestral family of insect chemosensory receptors from which Ors derived (Brand et al., 2018; Dunipace et al., 2001; Robertson et al., 2003) – we used A. bakeri Orco as the query structure in our analysis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig1-v2.jpg)
 
-**Figure 1.:** (A) Top view of a cryo-electronic microscopic (cryo-EM) structure of the homotetramer of Or co-receptor (Orco) from A. bakeri (derived from PDB 6C70; Butterwick et al., 2018), in which one subunit has a spectrum coloration (N-terminus [blue] to C-terminus [red]). The ion channel pore is formed at the interface of the four subunits. A side view is shown below. The anchor domain, comprising the cytoplasmic projections of TM4-6 and TM7a, forms most of the inter-subunit interactions in odorant receptors (Ors) (Butterwick et al., 2018; Del Mármol et al., 2021). (B) Top: output of transmembrane topology predictions of DeepTMHMM (Hallgren et al., 2022) for A. bakeri Orco. Bottom: schematic of the membrane topology of an Orco monomer, with the same spectrum coloration as in (A), reproduced from Figure 1a from Benton et al., 2020. Note that the seventh predicted helical region is divided into two in the cryo-EM structure: TM7a (located in the cytosol) and TM7b (located in the membrane). (C) Comparisons of side and top views of the cryo-EM structure of an A. bakeri Orco subunit (6C70-A) (left) and an AlphaFold2 protein structure prediction of A. bakeri Orco. Helical regions are numbered in the top views. Note the model contains the extracellular loop 2 (EL2) and intracellular loop 2 (IL2) regions that were not able to be accurately visualized in the cryo-EM structure (Butterwick et al., 2018). Quantitative comparisons of structures are provided in Table 1. (D) Summary of the results of the screen for Orco/Or-like protein folds in the AlphaFold Protein Structure Database for the indicated species using Dali (Holm, 2022). The threshold of Dali Z-score >10 was informed by inspection of the results of the screen (see Results). Raw outputs of the screen are provided in Source data 2. (E) Top: transmembrane topology predictions of the single screen hits from the Trypanosoma species Leishmania infantum and Trypanosoma brucei brucei. Bottom: AlphaFold2 structural models of these proteins, displayed as in (C). The long N-terminal region contains tandem Membrane Occupation and Recognition Nexus (MORN) repeats and sequence of unknown structure (gray); these are masked in the top view of the models. (F) Visual comparison of the L. infantum GRL1 AlphaFold2 model (the N-terminal region is masked) with the A. bakeri Orco structure, aligned with Coot (Emsley et al., 2010). Quantitative comparisons of structures are provided in Table 1. (G) Consensus phylogeny of putative trypanosome homologs. The primary sequence database was assembled using L. infantum GRL1 (XP_001464500.1) and T. brucei brucei GRL1 (XP_845058.1) as query sequences (highlighted in bold). Branch support values refer to maximum likelihood UFboot/Bayesian posterior probabilities. Note that although the Trypanosoma cruzi homolog (XP_803355.1) was not identified in the original Dali screen, visual inspection of the corresponding AlphaFold2 model (A0A2V2WL40) revealed the same global fold.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.
+**Figure 1.:** (A) Top view of a cryo-electronic microscopic (cryo-EM) structure of the homotetramer of Or co-receptor (Orco) from A. bakeri (derived from PDB 6C70; Butterwick et al., 2018), in which one subunit has a spectrum coloration (N-terminus [blue] to C-terminus [red]). The ion channel pore is formed at the interface of the four subunits. A side view is shown below. The anchor domain, comprising the cytoplasmic projections of TM4-6 and TM7a, forms most of the inter-subunit interactions in odorant receptors (Ors) (Butterwick et al., 2018; Del Mármol et al., 2021). (B) Top: output of transmembrane topology predictions of DeepTMHMM (Hallgren et al., 2022) for A. bakeri Orco. Bottom: schematic of the membrane topology of an Orco monomer, with the same spectrum coloration as in (A), reproduced from Figure 1a from Benton et al., 2020. Note that the seventh predicted helical region is divided into two in the cryo-EM structure: TM7a (located in the cytosol) and TM7b (located in the membrane). (C) Comparisons of side and top views of the cryo-EM structure of an A. bakeri Orco subunit (6C70-A) (left) and an AlphaFold2 protein structure prediction of A. bakeri Orco. Helical regions are numbered in the top views. Note the model contains the extracellular loop 2 (EL2) and intracellular loop 2 (IL2) regions that were not able to be accurately visualized in the cryo-EM structure (Butterwick et al., 2018). Quantitative comparisons of structures are provided in Table 1. (D) Summary of the results of the screen for Orco/Or-like protein folds in the AlphaFold Protein Structure Database for the indicated species using Dali (Holm, 2022). The threshold of Dali Z-score >10 was informed by inspection of the results of the screen (see Results). Raw outputs of the screen are provided in Source data 2. (E) Top: transmembrane topology predictions of the single screen hits from the Trypanosoma species Leishmania infantum and Trypanosoma brucei brucei. Bottom: AlphaFold2 structural models of these proteins, displayed as in (C). The long N-terminal region contains tandem Membrane Occupation and Recognition Nexus (MORN) repeats and sequence of unknown structure (gray); these are masked in the top view of the models. (F) Visual comparison of the L. infantum GRL1 AlphaFold2 model (the N-terminal region is masked) with the A. bakeri Orco structure, aligned with Coot (Emsley et al., 2010). Quantitative comparisons of structures are provided in Table 1. (G) Consensus phylogeny of putative trypanosome homologs. The primary sequence database was assembled using L. infantum GRL1 (XP_001464500.1) and T. brucei brucei GRL1 (XP_845058.1) as query sequences (highlighted in bold). Branch support values refer to maximum likelihood UFboot/Bayesian posterior probabilities. Note that although the Trypanosoma cruzi homolog (XP_803355.1) was not identified in the original Dali screen, visual inspection of the corresponding AlphaFold2 model (A0A2V2WL40) revealed the same global fold.
 
 In our previous work (Benton et al., 2020), we generated ab initio protein models of Orco and candidate homologs in various unicellular eukaryotes using trRosetta (Yang et al., 2020) and RaptorX (Källberg et al., 2012). We therefore first examined the AlphaFold2 structural model of A. bakeri Orco (Figure 1C; Jumper et al., 2021; Varadi et al., 2022). This model displays striking qualitative similarity to the experimental structure (PDB 6C70 chain A) (Figure 1C). We assessed structural similarity quantitatively using two algorithms: first, using pairwise structural alignment in Dali (Holm, 2022), we extracted the resultant Z-score (the sum of equivalent residue-wise Cα-Cα distances between two proteins); second, we determined the template modeling (TM)-score from TM-align (Zhang and Skolnick, 2004; Zhang and Skolnick, 2005) (a measure of the global similarity of full-length proteins) (Table 1). These measures confirmed the visual impression that the modeled and experimental structures are almost identical (e.g., TM-score=0.96, where 1 would be a perfect match). We extended our assessment of available (or newly generated) AlphaFold2 models to other well-established members of the 7TMIC family from animals as well as much more divergent unicellular 7TMIC homologs previously identified (Benton et al., 2020; Source data 1). Using the same quantitative assessments, these all displayed substantial tertiary structural similarity to A. bakeri Orco (Table 1), reinforcing our previous conclusions that these proteins form part of the same superfamily. Moreover, the observation that multiple distinct algorithms (AlphaFold2, trRosetta, and RaptorX) predict the same global fold of these proteins strengthens confidence in the validity of ab initio structural models.
+
+**Table 1.**
+ Quantitative structural comparisons of candidate seven transmembrane domain ion channel (7TMIC) homologs.Summary of amino acid identity (%), Dali Z-score, and TM-align TM-score of the indicated experimentally determined or ab initio-predicted structures of 7TMIC homologs (or negative-control, unrelated proteins) compared to A. bakeri Or co-receptor (Orco). The Orco cryo-electronic microscopic (cryo-EM) structure chain A (6C70-A) (Butterwick et al., 2018) was used as the query in all comparisons. Protein models are provided in Source data 1. Note the nomenclature of unicellular eukaryotic 7TMICs is tentative; identical names (e.g., GRL1) do not imply orthology. Typically, a Z-score >20 indicates that the two proteins being compared are definitely homologous, 8–20 that they are probably homologous, and 2–8 is a ‘gray area’ influenced by protein size and fold (Holm, 2020). TM-scores of 0.5–1 indicate that the two proteins being compared adopt generally the same fold, while TM-scores of 0–0.3 indicate random structural similarity (Zhang and Skolnick, 2004; Zhang and Skolnick, 2005). For the negative controls, the amino acid identity differs slightly between the experimentally determined and ab initio-predicted proteins because of small differences in sequence coverage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Category</th>
+      <th rowspan="2">Protein</th>
+      <th rowspan="2">Model or PDB</th>
+      <th rowspan="2">Method or algorithm</th>
+      <th colspan="3">Comparison to A. bakeri Orco (6C70-A)</th>
+    </tr>
+    <tr>
+      <th>Amino acid identity (%)</th>
+      <th>DaliZ-score</th>
+      <th>TM-alignTM-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Positivecontrols (known 7TMIC)</td>
+      <td>A. bakeri Orco</td>
+      <td>61b81_unrelaxed_rank_1_model_2</td>
+      <td>AlphaFold2</td>
+      <td>100</td>
+      <td>50.7</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>M. hrabei Or5</td>
+      <td>7LIC-A</td>
+      <td>Cryo-EM</td>
+      <td>19</td>
+      <td>36.3</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>Drosophila melanogaster Gr64a</td>
+      <td>AF-P83293-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>13</td>
+      <td>29.6</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>N. vectensis GRL1</td>
+      <td>AF-A7S7G0-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>31.3</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td rowspan="16">Unicellular eukaryotic 7TMIC</td>
+      <td>Thecamonas trahens GRL1</td>
+      <td>AF-A0A0L0DUY0-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>23.2</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>T. trahens GRL2</td>
+      <td>AF-A0A0L0DQC1-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>12</td>
+      <td>25.3</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>T. trahens GRL3</td>
+      <td>AF-A0A0L0D5B5-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>14</td>
+      <td>13.1</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>T. trahens GRL4</td>
+      <td>AF-A0A0L0D5H0-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>9.9</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>T. trahens GRL5</td>
+      <td>AF-A0A0L0DD38-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>12.2</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>T. trahens GRL6</td>
+      <td>AF-A0A0L0DJ52-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>15.6</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL1</td>
+      <td>AF-A0A0G4FIT4-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>9.1</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL2</td>
+      <td>AF-A0A0G4ECU2-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>11</td>
+      <td>14.4</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL3</td>
+      <td>AF-A0A0G4FWI7-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>14</td>
+      <td>23.8</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL4</td>
+      <td>AF-A0A0G4EU86-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>18.5</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL5</td>
+      <td>AF-A0A0G4FBY6-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>18.5</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>V. brassicaformis GRL6</td>
+      <td>AF-A0A0G4G8W6-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>21.4</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>Micromonas pusilla GRL1</td>
+      <td>AF-C1MGH9-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>12</td>
+      <td>11.3</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>Chloropicon primus GRL1</td>
+      <td>AF-A0A5B8MFA4-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>18.1</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>L. infantum GRL1</td>
+      <td>AF-A4HWQ9-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>6</td>
+      <td>13.5</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>T. brucei GRL1</td>
+      <td>AF-Q57U78-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>13.4</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Fly Grl</td>
+      <td>D. melanogaster Grl36a</td>
+      <td>AF-Q8INZ1-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>19.5</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl36b</td>
+      <td>AF-Q8INY2-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>15.2</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl40a</td>
+      <td>AF-Q0E8M7-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>19.5</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl43a</td>
+      <td>AF-Q9V4Q0-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>19.9</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl58a</td>
+      <td>AF-Q9W2A4-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>15.0</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl62a</td>
+      <td>AF-B7Z0I0-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>19.4</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl62b</td>
+      <td>AF-B7Z0I1-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>11</td>
+      <td>19.1</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl62c</td>
+      <td>AF-Q6ILZ2-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>10</td>
+      <td>17.2</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Grl65a</td>
+      <td>AF-Q8IQ72-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>11</td>
+      <td>25.9</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster GrlHz</td>
+      <td>AF-Q9W1W8-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>7</td>
+      <td>22.5</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PHTF</td>
+      <td>Homo sapiens PHTF1</td>
+      <td>AF-Q9UMS5-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>7</td>
+      <td>12.9</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>H. sapiens PHTF2</td>
+      <td>AF-Q8N3S3-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>8</td>
+      <td>12.0</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster Phtf</td>
+      <td>AF-Q9V9A8-F1-model_v3</td>
+      <td>AlphaFold2</td>
+      <td>5</td>
+      <td>11.8</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td rowspan="16">Negative controls(non-7TMIC)</td>
+      <td rowspan="2">Bos taurus Rhodopsin</td>
+      <td>1F88-A</td>
+      <td>X-ray crystal</td>
+      <td>9</td>
+      <td>2.1</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>AF-P02699-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>&lt;2.0</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chlamydomonas reinhardtii ChR2</td>
+      <td>6EID-A</td>
+      <td>X-ray crystal</td>
+      <td>7</td>
+      <td>3.6</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>AF-Q8RUT8-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>3.4</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H. sapiens Frizzled4</td>
+      <td>6BD4</td>
+      <td>X-ray crystal</td>
+      <td>8</td>
+      <td>4.0</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>AF-Q9ULV1-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>5</td>
+      <td>2.9</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td rowspan="2">H. sapiens AdipR</td>
+      <td>5LXG</td>
+      <td>X-ray crystal</td>
+      <td>2</td>
+      <td>3.6</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>AF-Q96A54-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>2</td>
+      <td>&lt;2.0</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Escherichia coli GlpG</td>
+      <td>2XOV</td>
+      <td>X-ray crystal</td>
+      <td>5</td>
+      <td>3.5</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>AF-P09391-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>6</td>
+      <td>3.3</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mus musculus TRPV3</td>
+      <td>6LGP-D</td>
+      <td>Cryo-EM</td>
+      <td>10</td>
+      <td>2.7</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>AF-Q8K424-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>14</td>
+      <td>2.3</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M. musculus Piezo</td>
+      <td>6BPZ-B</td>
+      <td>Cryo-EM</td>
+      <td>5</td>
+      <td>4.0</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>AF-E2JF22-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>5</td>
+      <td>2.3</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td rowspan="2">B. taurus CNGA/CNGB</td>
+      <td>7O4H-A</td>
+      <td>Cryo-EM</td>
+      <td>9</td>
+      <td>2.8</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>AF-Q00194-F1-model_v4</td>
+      <td>AlphaFold2</td>
+      <td>9</td>
+      <td>3.3</td>
+      <td>0.11</td>
+    </tr>
+  </tbody>
+</table>
 
 We proceeded to screen the AlphaFold Protein Structure Database for other proteins that are structurally similar to A. bakeri Orco using the hierarchical search function in Dali (Holm, 2022). This algorithm currently permits pairwise alignment of Orco to the complete predicted structural proteomes of 47 species – encompassing several vertebrates, invertebrates, plants, unicellular eukaryotes and prokaryotes – returning hits ordered by Z-score (Source data 2). We focused on those hits with a Z-score of >10 (Figure 1D). This threshold successfully captured known 7TMICs, while removing a large number of proteins (generally with a much lower Z-score) that did not fulfill other criteria for structural similarity, as described below. Of the expected hits, within the D. melanogaster structural proteome we recovered all models of the members of the Or and Gr repertoires. From Caenorhabditis elegans, we found all members of the gustatory receptor (GUR) family (Robertson et al., 2003) – including the photoreceptor LITE-1 (formerly GUR-2) (Edwards et al., 2008; Gong et al., 2016; Liu et al., 2010) – and the serpentine receptor R (SRR) family (which are of unknown function, but display diverse neuronal and non-neuronal expression patterns Vidal et al., 2018; Figure 1D and Source data 2). From the four plant species screened, all members of the DUF3537 family were successfully identified (Figure 1 and Source data 2). Inspection of several models below our Z-score threshold indicated that the proteins (typically multipass membrane proteins) have likely spurious resemblance to subregions of Orco rather than displaying similarity in their overall fold.
 
@@ -41,9 +453,31 @@ As will be illustrated below for individual novel candidate 7TMIC homologs, othe
 
 Extending our previous discovery of 7TMICs in various single-celled eukaryotes (informally grouped here under the term Protozoa) (Benton et al., 2020), we identified single proteins in two species belonging to the Trypanosomatida order: L. infantum and T. brucei, the causal agents in humans of trypanosomiasis (sleeping sickness) and visceral leishmaniasis (black fever), respectively (Figure 1D–F and Table 1). Beyond the 7TMIC-like protein fold (Figure 1E–F and Table 1), these proteins are characterized in their N-terminal regions by a Membrane Occupation and Recognition Nexus (MORN)-repeat domain, which is implicated in protein-protein interaction and possibly lipid binding (Sajko et al., 2020). BLAST searches identified homologous proteins only within trypanosomes (Figure 1G), consistent with our failure to recover these sequences in earlier primary structure-based screens for 7TMICs. We did not detect any structurally related proteins to Orco in Prokaryota or Fungi (previously, fungal GRLs were only identified in chytrids [Benton et al., 2020], which are not currently surveyed via Dali). Together, these results reinforce our previous conclusion (Benton et al., 2020) that 7TMICs evolved in or prior to the last eukaryotic common ancestor, and provide a first example of fusion of this TM protein fold with a distinct, cytoplasmic protein domain.
 
-## PHTF proteins are candidate vertebrate 7TMICs
+### PHTF proteins are candidate vertebrate 7TMICs
 
 Given previous lack of success in identifying homologs of 7TMICs within any chordate genome, we were intrigued that our screen recovered two hits from H. sapiens (and orthologous proteins of the three other vertebrate species screened) (Figure 1D and Source data 1–3). The human proteins, PHTF1 and PHTF2, are very similar to each other (54.1% amino acid identity) and have the characteristic topology of 7TMICs (Figure 2A). The next most similar vertebrate proteins to Orco had substantially lower Dali Z-scores than PHTFs and represented a variety of likely spurious matches (Source data 2). The single D. melanogaster ortholog (Phtf) (Manuel et al., 2000) displays a similar topology to the vertebrate proteins (Figure 2A), and is the next most similar protein model to A. bakeri Orco after the D. melanogaster Grs, Ors, and Grls (see next section) (Source data 2). PHTF is an acronym of ‘Putative Homeodomain Transcription Factor’, a name originally proposed because of presumably artifactual sequence similarity of a short region around TM4 to homeodomain DNA-binding sequences (Raich et al., 1999); subsequent histological and biochemical studies (discussed below) established that PHTF1 is an integral membrane protein (Oyhenart et al., 2003).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-v2.jpg)
+
+**Figure 2.:** (A) DeepTMHMM-predicted transmembrane topology of PHTF proteins. (B) Top: AlphaFold2 predicted structure of H. sapiens PHTF1; in the image on the right the long N-terminal region (NTR) and intracellular loop 1 (IL1) are highlighted in blue; these sequences contain a few predicted helical regions but are of largely unknown structure. Bottom: visual comparison of the H. sapiens PHTF1 AlphaFold2 structure (in which the NTR and IL1 are masked) with the A. bakeri Or co-receptor (Orco) structure. (C) AlphaFold2 structures of PHTF proteins in which the NTR and IL1 are masked. Quantitative comparisons of these structures to the cryo-electronic microscopic (cryo-EM) Orco structure are provided in Table 1. (D) Major taxa/species in which a PHTF homolog was identified (see sequence databases in Figure 2—source data 1). Silhouette images in this and other figures are from Phylopic (https://www.phylopic.org/). (E) Phylogenies of a representative set of PHTF sequences. The sequence database was constructed using the D. melanogaster and H. sapiens PHTF query sequences. Top left: maximum likelihood phylogeny (JTT + R10 model) and Bayesian phylogeny. The scale bars represent the average number of substitutions per site. Bottom left: phylogenies where weakly supported branches (<95/0.95) have been rearranged and polytomies resolved in a species tree-aware manner. Right: strict consensus of the species tree-aware phylogenies. There is a single eukaryotic PHTF clade and the PHTF1-2 split occurred in the jawed vertebrate lineage. However, this interpretation relies on the rearrangement of the weakly supported jawless vertebrate PHTF branch. Therefore, an alternative but weakly supported hypothesis is that the duplication occurred in a common vertebrate ancestor and a single PHTF copy was lost in jawless vertebrates. Select branch support values are present on key branches and refer to maximum likelihood UFboot/Bayesian posterior probabilities. Asterisks indicate that branch support was below the threshold for species-aware rearrangement. The fully annotated trees are available in Figure 2—figure supplements 1–3. (F) Summary of tissue-enriched RNA expression of H. sapiens PHTF1 and PHTF2 (data are from the GTex Portal; the fully annotated dataset is provided in Figure 2—figure supplement 4) and D. melanogaster Phtf (data from the Fly Atlas 2.0; the fully annotated dataset is provided in Figure 2—figure supplement 5). (G) Left: Uniform Manifold Approximation and Projection (UMAP) representation of RNA-seq datasets from individual cells of the D. melanogaster testis and seminal vesicle generated as part of the Fly Cell Atlas (10× relaxed dataset) (Li et al., 2022) colored for expression of Phtf. Simplified annotations of cell clusters displaying the highest levels of Phtf expression are adapted from Li et al., 2022; unlabeled clusters represent non-germline cell types of the testis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Sequences are from the protein sequence database generated using D. melanogaster Phtf and H. sapiens PHTF1/2, and are representatives of clusters of 90% sequence identity. For maximum likelihood, the tree was generated using a JTT + R10 substitution model. Branch support values for maximum likelihood (UFboot) and Bayesian analyses (posterior probability) are shown at the branches. The scale bars represent the average number of substitutions per site.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Trees are based on the maximum likelihood (left) and Bayesian (right) trees. Branches without support values were eligible for rearrangement.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Plot of RNA expression levels (transcripts per million [TPM]) from the indicated tissues is from the GTEx Portal (GTEx Analysis Release V8 [dbGaP Accession phs000424.v8.p2]).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Heatmap plot of the expression of D. melanogaster Phtf and Grls in the indicated tissues/life stages/sexes determined by bulk RNA-seq; fragments per kilobase of exon per million mapped fragments (FPKM) values are shown; data are from the Fly Atlas 2.0 (Krause et al., 2022).
 
 To visually compare AlphaFold2 models of PHTF orthologs with A. bakeri Orco, we masked the long (>300 amino acid) first intracellular loop (Figure 2A), whose structure is mostly unpredicted but contains a few α-helical regions, as well as the ~100-residue N-terminus (Figure 2B). This visualization revealed the clear similarity in the organization of the seven TM helical core of the protein, including the split TM7 (Figure 2B–C), which was verified by quantitative structural comparisons (Table 1).
 
@@ -51,9 +485,47 @@ In contrast to other, taxon-restricted members of the 7TMIC superfamily, highly 
 
 Previous tissue-specific RNA expression analysis by northern blotting of H. sapiens PHTF1 and PHTF2 revealed enrichment in testis and muscle, respectively (Manuel et al., 2000). We confirmed and extended these conclusions by analyzing publicly available bulk RNA-sequencing (RNA-seq) datasets: PHFT1 is most abundantly detected in cerebellum and testis, and PHTF2 in skeletal muscle and arteries (Figure 2F and Figure 2—figure supplement 4). D. melanogaster Phtf displays highly enriched expression in the testis, and much lower expression in neural tissues in the FlyAtlas 2.0 bulk RNA-seq datasets (Figure 2F and Figure 2—figure supplement 5; Krause et al., 2022), potentially indicating a closer functional relationship to PHTF1 than PHTF2. Higher resolution expression analysis of Phtf in male reproductive tissue, using the Fly Cell Atlas (Li et al., 2022), revealed the most prominent expression in developing spermatocytes and spermatids (Figure 2G). The transcript expression of D. melanogaster Phtf is concordant with detection of rat (Rattus norvegicus) PHTF1 protein from primary spermatocytes to the end of spermatogenesis, predominantly localized to the endoplasmic reticulum (Oyhenart et al., 2005b; Oyhenart et al., 2003). The N-terminal region of mouse (M. musculus) PHTF1 associates with the testis-enriched FEM1B E3 ubiquitin ligase and is suggested to recruit it to the endoplasmic reticulum (Oyhenart et al., 2005a). Overexpression and/or knock-down studies of PHTF1 and PHTF2 in cell lines hint at roles in regulating cell proliferation and survival, and possible links to various cancers (Chi et al., 2020; Huang et al., 2015). However, the biological function of any PHTF protein in any organism is unclear. Nevertheless, PHTFs represent the first candidate homologs of insect Ors/Grs in chordates, indicating that they might not have been completely lost from this lineage, as previously thought (Benton, 2015; Robertson, 2015); we suggest they also act as ion channels.
 
-## Novel sets of candidate insect chemoreceptors
+### Novel sets of candidate insect chemoreceptors
 
 Within the hits of our screen of D. melanogaster protein structures, we noticed 10 proteins that do not belong to the canonical Gr or Or families (Source data 1–3). These proteins have a similar length and TM topology as Grs and Ors (Figure 3A). Visual inspection and quantitative analyses confirmed that their predicted fold is very similar to that of A. bakeri Orco (Figure 3A and Table 1). As they almost completely lack other defining sequence features of these families (see below), we named these Grl proteins, using the same cytogenetic-based gene nomenclature conventions of other chemosensory gene families (e.g., Drosophila Odorant Receptor Nomenclature Committee, 2000), with one exception (GrlHolozoa [GrlHz], see below).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-v2.jpg)
+
+**Figure 3.:** (A) Proposed nomenclature of D. melanogaster Grls (the original gene name and cytological location are in parentheses), with corresponding DeepTMHMM-predicted transmembrane topologies and AlphaFold2 structural models. Note that TM7 is not predicted for Grl36b and Grl58a by DeepTMHMM, but is predicted – with the characteristic TM7a/7b split – in the structural model (as well as predicted by Phobius [data not shown]). Quantitative comparisons of these structures to the cryo-electronic microscopic (cryo-EM) Or co-receptor (Orco) structure are provided in Table 1. (B) Sequence similarity network of Grls, Grs, and Ors (including Orco). The network was generated using an all-to-all comparison made by MMSeqs2 as implemented by gs2. The connections represent E-values where the weakest connections (arbitrarily defined as edge weights >1) are colored in lighter gray. Lack of connection between two nodes indicates that those two sequences could not be identified as having any significant sequence similarity under the most sensitive MMSeqs2 settings. Nodes and edges are arranged in a prefuse force-directed layout. The graph splitting tree is visualized in Figure 3—figure supplement 5; however, we do not place high confidence in the phylogenetic accuracy of the tree due to the likely effects of long branch attraction. The evolution of GrlHolozoa (GrlHz) is described in Figure 3—figure supplement 1, with detailed phylogenies in Figure 3—figure supplements 2–4. (C) Schematic of the gene arrangement of Grl36a and Gr36 homologs in drosophilids. Color coding reflects relatedness with respect to major speciation and gene duplication events; colors match the phylogenetic tree branches in Figure 3—figure supplement 6B–C. The Drosophila subgenus entirely lacks Gr36 homologs (see Figure 3—figure supplement 6). (D) Alignment of the C-terminal region of D. melanogaster Orco, Gr64a, select insect Gr36/Gr59 homologs, and D. melanogaster Grl36a and Grl43a, extracted from a larger alignment available in Figure 3—source data 5. The black bar shows the common location of a phase 0 intron, which is presumably homologous in different sequences. The canonical TM7 motif of the Gr family (represented as relative amino acid frequencies extracted from WebLogo) is shown above the sequence, and the variant motifs of different Gr or Grl ortholog groups are shown below. (E) Phylogenies of Gr36, Gr59c/d, Grl36a, Grl43a and homologous non-drosophilid sequences (color-coded as in (D)). The sequence database was assembled using D. melanogaster Gr36a, Grl36a, and Grl43a as the query sequences. Top left: maximum likelihood phylogeny (JTT + F + R7 model) and Bayesian phylogeny. The scale bars represent average number of substitutions per site. Bottom left: phylogenies where weakly supported branches (<95/0.95) have been rearranged and polytomies resolved in a species tree-aware manner. Right: strict consensus of the species tree-aware phylogenies. These analyses support that Gr36 and Grl36a/43a are sister clades, which likely split after Gr59c/d diverged from the ancestral lineage. Sequences are colored as in (D). Select branch support values are present on key branches and refer to maximum likelihood UFboot and Bayesian posterior probabilities, in this order. Asterisks indicate that branch support was below the threshold for species-aware rearrangement. A simplified schematic of gene duplication and loss is illustrated in Figure 3—figure supplement 6F. The fully annotated trees are available in Figure 3—figure supplements 7–9. (F) Histogram of Gr and Grl expression levels in adult proboscis and maxillary palps determined by bulk RNA-sequencing (RNA-seq). Mean values ± SD of fragments per kilobase of transcript per million mapped reads (FPKM) are plotted; n=3 biological replicates. Data is from Dweck et al., 2021. (G) Left: t-distributed stochastic neighbor embedding (tSNE) representation of RNA-seq datasets from individual cells of the D. melanogaster proboscis and maxillary palp – generated as part of the Fly Cell Atlas (10× stringent dataset) (Li et al., 2022) – colored for expression of the indicated genes. Gr64f and Gr66a are broad markers of ‘sweet/appetitive’ and ‘bitter/aversive’ gustatory sensory neurons, respectively. Transcripts for three Grls are detected in subsets of bitter/aversive neurons. Annotations of cell clusters are adapted from Li et al., 2022; unlabeled clusters represent other non-gustatory sensory neuron or non-neuronal cell types of this tissue.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Major taxa/species for which a GrlHz homolog was recovered. (B) Phylogenies of a representative set of GrlHz sequences (clustered by 70% sequence identity). The sequence database was assembled using D. melanogaster GrlHz as the query sequence. Top: maximum likelihood phylogeny and Bayesian phylogeny. The scale bars represent the average number of substitutions per site. Bottom: phylogenies where weakly supported branches (<95/0.95) have been rearranged and polytomies resolved in a species tree-aware manner. Right: strict consensus of the species tree-aware phylogenies. The fully annotated trees are visualized in Figure 3—figure supplements 2–4. (C) Left: the single holozoan copy hypothesis of GrlHz evolution. Under this scenario, a single GrlHz is widely conserved across Holozoa, but has been independently duplicated/lost several times in various taxa. Right: the two-paralog hypothesis of GrlHz evolution. As both the maximum likelihood and Bayesian phylogenies provide evidence for two GrlHz clades, and because some species have two substantially divergent GrlHz sequences, it is possible that there was a gene duplication event early in the evolution of Holozoa. (D) Examples of GrlHz structures. Of 196 representative sequences, 31 sequences (mostly from Hymenoptera and Lepidoptera) bear N-terminal WD40 repeats.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** For maximum likelihood, the tree was generated using a JTT + F + R9 substitution model. Branch support values for maximum likelihood (UFboot) and Bayesian analyses (posterior probability) are shown at the branches. The scale bars represent the average number of substitutions per site.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Trees are based on the maximum likelihood (left) and Bayesian (right) trees. Branches without support values were eligible for rearrangement.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Key edge perturbation support values are visible on branches. The primary sequence databases were assembled using each of the D. melanogaster Grls as query sequences. D. melanogaster Or and Gr sequences were manually collected from FlyBase. Sequences from M. hrabei (jumping bristletail), Thermobia domestica (firebrat), Ladona filva (dragonfly), and Ephemera danica (green drake mayfly) were added, following the proposal that canonical Ors may have diversified after the emergence of Neoptera (most winged insects) (Brand et al., 2018); 2498 additional sequences were collected using the N. vectensis GRL1 query sequence (XP_048580785.1); the PSI-BLAST searches were stopped at four iterations, as the search had substantially recovered insect Gr sequences, and further searches returned tens of thousands of sequences. The basal placement of the Grls is unusual given their conservation in flies, as this would suggest they diversified in a common animal ancestor and that the Grls were lost in all animal taxa except flies. This hypothesis seems unlikely given the extreme number of independent gene loss events this would require, and we therefore suspect that this tree topology represents a phylogenetic error, for example, long branch attraction (Bergsten, 2005). The inset shows major collapsed clades, where the tip node is sized proportionally to the number of sequences collapsed.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Schematic of the gene arrangement of Grl36a and Gr36 homologs in drosophilids, with colors matching trees in (B) and (C). This panel is reproduced from Figure 3C. (B) Species-aware Bayesian phylogeny of Grl36. (C) Species tree-aware Bayesian phylogeny of Gr36. (D) Phylogenies of Gr36, Gr59, Grl36a, Grl43a, and other homologous sequences. The sequence database was assembled using D. melanogaster Gr36a, Grl36a, and Grl43a as query sequences. Top: maximum likelihood phylogeny and Bayesian phylogeny. The scale bars represent the average number of substitutions per site. Bottom: phylogenies where weakly supported branches (<95/0.95) have been rearranged and polytomies resolved in a species tree-aware manner. (E) Strict consensus of the species tree-aware phylogenies. These analyses support that Gr36 and Grl36a/43a are sister clades, which likely split after the Gr59 split. (F) Proposed model of Gr36, Gr59, Grl36a, and Grl43a evolution.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** For maximum likelihood, the tree was generated using a JTT + F + R7 substitution model and is rooted. Branch support values for maximum likelihood (UFboot) and Bayesian analyses (posterior probability) are shown at the branches. Non-drosophilid sequences are assumed to be the outgroup. The scale bars represent the average number of substitutions per site.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Trees are based on the maximum likelihood (left) and Bayesian (right) trees. Branches without support values were eligible for rearrangement.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** Although the consensus tree has a polytomy near the emergence of Gr59, this is strictly due to disagreement as to whether the lone Scaptodrosophila sequence is a Gr59 homolog or an outgroup to all other Drosophila/Sophophora sequences shown here.
 
 For seven D. melanogaster Grls, BLAST searches identified homologs only in drosophilids; for two others (Grl40a and Grl65a) we recovered drosophilid and other fly homologs. By contrast, the Grl originally designated CG3831 has homologs across a wide range of Holozoa (i.e., animals and their closest single-celled, non-fungal relatives), including chordates (e.g., the lancelet Branchiostoma floridae) and single-cell eukaryotes (e.g., Capsaspora owczarzaki) (Figure 3—figure supplements 1–4), leading us to name it GrlHolozoa (GrlHz). A subset of GrlHz homologs bear a long N-terminal domain containing WD40 repeats, which form a structurally predicted beta-propeller domain that is typically involved in protein-protein interactions (Figure 3—figure supplement 1D; Kim and Kim, 2020).
 
@@ -67,9 +539,17 @@ To gain insight into the potential role(s) of Grls, we first examined their expr
 
 The lack of detection of transcripts for most Grls in the FlyAtlas 2.0 suggested that these genes might have highly restricted cellular expression patterns. Given the structural similarity of Grls to Grs, we examined their expression in an RNA-seq dataset of the major taste organ (labellum; a tissue not specifically represented in the FlyAtlas 2.0) (Dweck et al., 2021). D. melanogaster Gr genes display a wide range of expression levels in the labellar transcriptome, in part reflecting the breadth of expression in different classes of taste neurons. For example, Gr66a and Gr64f – broadly expressed markers for ‘bitter/aversive’ and ‘sweet/appetitive’ neuronal populations, respectively (Freeman and Dahanukar, 2015) – are detected at comparatively high levels (>5 FPKM) (Figure 3F). By contrast, many receptors expressed in subsets of these major neuron types (e.g., Gr22e for bitter and Gr61a for sweet; Freeman and Dahanukar, 2015) are expressed at much lower levels (~1 FPKM). Similar to this latter type of Gr, transcripts for four Grls were detected at >0.5 FPKM: GrlHz, Grl62c, Grl62a, and Grl36a (Figure 3F). Importantly, within the Fly Cell Atlas dataset of the proboscis and maxillary palp (Li et al., 2022), three of these were specifically expressed in the cluster of cells corresponding to Gr66a-expressing bitter/aversive neurons (Figure 3G). The fourth, GrlHz, was very sparsely expressed in non-neuronal cell types in this tissue, including hemocytes (data not shown; Li et al., 2022). None of the other six Grls were detectable in this dataset, consistent with their lower expression in the labellar bulk RNA-seq transcriptome (Figure 3F). Moreover, no Grl (except the broadly expressed GrlHz) was detectably expressed in other chemosensory tissue transcriptomes (leg, wing, or antenna) (data not shown; Li et al., 2022; Menuz et al., 2014). These observations raise the possibility that at least three Grls (Grl36a, Grl62a, and Grl62c) are chemosensory receptors for aversive stimuli.
 
-## A hypothesis for the evolution of the 7TMIC superfamily
+### A hypothesis for the evolution of the 7TMIC superfamily
 
 Two hypotheses could explain the similarities between well-established 7TMICs and the candidate homologs described in this work: homology (i.e., shared ancestry), and thus the existence of a unified 7TMIC superfamily, or convergent evolution of the 7TMIC structure. We discuss the latter possibility in the following section. Here, we consider a detailed hypothesis of a 7TMIC superfamily of single evolutionary origin. Because confident multiprotein alignment of all members was impossible, we used the same all-to-all graph-based approach as for insect Grls to generate a sequence similarity network, and families were identified as clusters in a 2D projection (Figure 4A). We used the gross connectivity of clusters, and the presence or (putative) absence of these proteins across taxa (Figure 4B), to make inferences about the ancestry of these proteins.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sequence similarity network of the 7TMIC superfamily, generated using the same odorant receptors (Ors) and gustatory receptors (Grs) from Figure 3B, unicellular eukaryotic Grls from Benton et al., 2020, and sequence databases assembled using the following query sequences: N. vectensis GRL1, D. melanogaster Grls and Phtf, H. sapiens PHTF1 and PHTF2, Arabidopsis thaliana Domain of Unknown Function (DUF) 3537, C. elegans SRRs and trypanosome GRLs. The network was generated and visualized as in Figure 3B. The graph splitting tree is visualized in Figure 4—figure supplement 1. (B) Presence and absence of 7TMICs across taxa: ‘other animal GRL’ refers to GRLs in non-insect animal species previously identified by primary sequence similarity (Benton, 2015; Robertson, 2015; Saina et al., 2015) and nematode SRRs. The dashed branch represents several collapsed paraphyletic clades. (C) Model of 7TMIC superfamily evolution. The dashed branches represent several collapsed paraphyletic clades and speciation events. The trypanosome 7TMICs are unplaced due to the currently unresolved taxonomy of trypanosomes (Burki et al., 2020).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85537/elife-85537-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Key edge perturbation support values are visible on branches. The inset shows major collapsed clades, where the triangular tip is sized proportionally to the number of sequences collapsed. This tree suggests a different branching pattern than the hypothesis in Figure 4C, consistent with a more complex duplication/loss history for the 7TMIC superfamily. However, as in Figure 3—figure supplement 5, we suspect long branch attraction is present in this analysis, at least for the fly Grls and nematode proteins.
 
 In the sequence similarity network, clusters of Ors, Grs, and non-insect animal GRLs (excluding GrlHz) were closely located or intermingled, while insect Grl clusters were more distantly located from this grouping (Figure 4A). GrlHz formed a distinct cluster, but this connects only with the Or/Gr/Grl clusters (and not plant DUF3537 or PHTF clusters) (Figure 4A), suggesting that it descended from a Gr-like ancestor. Given that GrlHz was not detected outside of Holozoa (Figure 4B), the simplest hypothesis is that an ancestral holozoan had a 7TMIC gene that duplicated to produce an ancestral GrlHz and an ancestral Gr (Figure 4C). The diversity of Ors, Grs, and Grls would then have resulted from taxon-specific diversification of a single, holozoan branch of a hypothetical 7TMIC superfamily (Figure 4C).
 
@@ -77,7 +557,7 @@ The plant DUF3537 protein cluster was relatively well connected to the Or/Gr/Grl
 
 Finally, PHTF also forms a separate cluster (Figure 4A), and its broad taxonomic representation argues that the PHTF ancestral gene must also have been present in a common Amorphea-Diaphoretickes ancestor (Figure 4B–C). If there was a single ancestral 7TMIC, we hypothesize that this gene must have duplicated in a common eukaryotic ancestor to produce the distinct PHTF and Or/Gr/Grl/DUF3537 lineages (Figure 4C).
 
-## Concluding remarks
+### Concluding remarks
 
 Exploiting recent advances in protein structure predictions, we have used a tertiary structure-based screening approach to identify new candidate members of the 7TMIC superfamily. While the founder members of this superfamily, insect Ors and Grs, were thought for many years to define an invertebrate-specific protein family (Benton, 2006; Robertson et al., 2003), there is now substantial evidence that these proteins originated in a eukaryotic common ancestor. We also counter previous assumptions that 7TMICs were completely lost in Chordata, through discovery of two lineages within this superfamily: PHTF and GrlHz. Finally, we have identified many previously overlooked putative chemosensory receptors in D. melanogaster (and related flies).
 
@@ -87,15 +567,15 @@ Second, what are the biological roles of different 7TMICs? One aspect of this qu
 
 ## Methods
 
-## 7TMIC candidate homolog identification
+### 7TMIC candidate homolog identification
 
 Structural screens for candidate 7TMIC homologs were performed with the AF-DB search tool on the Dali server (http://ekhidna2.biocenter.helsinki.fi/dali/; Holm, 2022) using as query the A. bakeri Orco structure (PDB 6C70-A) (Butterwick et al., 2018). As of December 2022, this server permitted screening of the structural proteome of 47 phylogenetically diverse species. Proteins whose structural models had a Z-score >10 were retained for further analysis. Candidate homologs from these screens were assessed first by using these as queries in Dali AF-DB searches of the D. melanogaster proteome to ensure Ors and Grs were the best ‘reverse’ hits, and subsequently for secondary structural features using DeepTMHMM (https://dtu.biolib.com/DeepTMHMM/) (Hallgren et al., 2022) and Phobius (https://phobius.sbc.su.se/) (Käll et al., 2007). Of the newly identified D. melanogaster Grls, we note that three were initially classified as being members of the Gr repertoire (Grl36a (Gr36d), Grl43a (Gr43b), and Grl65a (Gr65a), but later excluded (Flybase [flybase.org/] and [Robertson et al., 2003])). We also contrast the term ‘Grl’, referring to the proteins in insects (following nomenclature conventions of D. melanogaster [Flybase]) with ‘GRL’, referring to proteins in other animals and more distant eukaryotes; the same acronym does not reflect a monophyletic origin. To identify sequences of candidate homologs from other species that were not screened with Dali AF-DB, PSI-BLAST searches against the NCBI refseq_protein database were performed, using the query sequences indicated in each figure and dataset. PSI-BLAST was run with an expected threshold of 1E-10 until convergence. BLASTP searches for Gr36/59 homologs were performed more permissively, using an expected threshold of 0.05. All sequences analyzed in this work are provided in Source data 4.
 
-## Structure predictions and analysis
+### Structure predictions and analysis
 
 AlphaFold2 protein models (Jumper et al., 2021; Varadi et al., 2022) were downloaded from the AlphaFold Protein Structure Database (alphafold.ebi.ac.uk; release July 2022). For proteins for which structural predictions were not already available, we generated AlphaFold2 models using ColabFold (Mirdita et al., 2022). Positive and negative control protein structures were downloaded from the RCSB Protein Data Bank (PDB codes are indicated in Table 1). Pairwise structural similarities of protein models were quantitatively assessed with Dali (Holm, 2022) and TM-align (https://zhanggroup.org/TM-align/) (Zhang and Skolnick, 2005). Proteins were aligned to the same coordinate space with Coot (https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) (Emsley et al., 2010) and visualized in PyMol v2.5.4. All models analyzed in this work are provided in Source data 1.
 
-## Phylogenetic and network analyses
+### Phylogenetic and network analyses
 
 Sequence databases assembled using PSI-BLAST (see above) were first curated in a semi-automated pipeline. First, sequences annotated as ‘partial’ or ‘low quality’, or that contained ambiguous sequence characters (e.g., X), were removed. CD-HIT (http://cd-hit.org) (Fu et al., 2012; Li and Godzik, 2006) was used to cluster redundant sequences (100% amino acid identity). Using Phobius TM domain predictions, we removed sequences with fewer than four TMs (this number was chosen to allow for the different sensitivity of Phobius compared to DeepTMHMM). In the final PHTF database, we manually excluded a single sequence as a spurious hit (B. floridae XP_035670545.1, zinc transporter ZIP10-like); this sequence sorted independently in first-pass phylogenetic analyses (via FastTree2; Price et al., 2010), and a search via InterPro (ebi.ac.uk/interpro/) revealed that it had no obvious similarity to the other proposed homologs. The database of Gr39/Gr59 homologs was manually curated due to its relatively small size and accurate automatic annotation by RefSeq; here, we excluded BLAST hits not annotated as Grs, and visually inspected a sequence alignment for good alignment.
 
@@ -107,10 +587,10 @@ For all other trees, multiple sequence alignments were generated by MAFFT. We ma
 
 The 7TMIC sequence similarity network was visualized and annotated in Cytoscape (Shannon et al., 2003). Trees were visualized and annotated in NOTUNG, iTOL (itol.embl.de/) (Letunic and Bork, 2007), and Adobe Illustrator. Consensus sequence illustrations were adapted from figures generated by WebLogo (weblogo.berkeley.edu/) (Crooks et al., 2004).
 
-## Synteny and intron mapping
+### Synteny and intron mapping
 
 The locations of Grl36a, Grl43a, Gr36, and Gr59c/d genes in different drosophilids were surveyed using the NCBI Genome Data Viewer (ncbi.nlm.nih.gov/genome/gdv/) (Rangwala et al., 2021). Gene intron-exon structures were manually surveyed using publicly available predictions available on RefSeq (via the Genome Data Viewer) and FlyBase, and visualized in SnapGene. The relative positions of introns were assessed via multiple sequence alignment of the protein sequences; for this analysis, we assumed that that entire sequences could be aligned (global alignment), and thus computed the alignment using the G-INS-i (Needleman-Wunsch) option in MAFFT.
 
-## Expression analysis
+### Expression analysis
 
 H. sapiens PHTF1 and PHTF2 tissue-specific RNA expression data were obtained from the GTEx Portal (GTEx Analysis Release V8 [dbGaP Accession phs000424.v8.p2; https://gtexportal.org/home/datasets]). Tissue/life stage-specific RNA expression data of Phtf and Grl genes in D. melanogaster were downloaded from the Fly Atlas 2.0 (https://motif.mvls.gla.ac.uk/FlyAtlas2) (Krause et al., 2022) or, for the labellum, from Dweck et al., 2021. D. melanogaster scRNA-seq data was from the Fly Cell Atlas (Li et al., 2022): proboscis/maxillary palp (10× stringent dataset) and testis/seminal vesicle (10× relaxed dataset), visualized as HVG tSNE or UMAP plots, respectively, in the SCope interface (https://scope.aertslab.org/#/FlyCellAtlas) (Davie et al., 2018).

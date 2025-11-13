@@ -29,11 +29,19 @@
 
 ## Abstract
 
-The establishment of separated pulmonary and systemic circulation in vertebrates, via cardiac outflow tract (OFT) septation, is a sensitive developmental process accounting for 10% of all congenital anomalies. Neural Crest Cells (NCC) colonising the heart condensate along the primitive endocardial tube and force its scission into two tubes. Here, we show that NCC aggregation progressively decreases along the OFT distal-proximal axis following a BMP signalling gradient. Dullard, a nuclear phosphatase, tunes the BMP gradient amplitude and prevents NCC premature condensation. Dullard maintains transcriptional programs providing NCC with mesenchymal traits. It attenuates the expression of the aggregation factor Sema3c and conversely promotes that of the epithelial-mesenchymal transition driver Twist1 . Altogether, Dullard-mediated fine-tuning of BMP signalling ensures the timed and progressive zipper-like closure of the OFT by the NCC and prevents the formation of a heart carrying the congenital abnormalities defining the tetralogy of Fallot.
+The establishment of separated pulmonary and systemic circulation in vertebrates, via cardiac outflow tract (OFT) septation, is a sensitive developmental process accounting for 10% of all congenital anomalies. Neural Crest Cells (NCC) colonising the heart condensate along the primitive endocardial tube and force its scission into two tubes. Here, we show that NCC aggregation progressively decreases along the OFT distal-proximal axis following a BMP signalling gradient. Dullard, a nuclear phosphatase, tunes the BMP gradient amplitude and prevents NCC premature condensation. Dullard maintains transcriptional programs providing NCC with mesenchymal traits. It attenuates the expression of the aggregation factor Sema3c and conversely promotes that of the epithelial-mesenchymal transition driver Twist1. Altogether, Dullard-mediated fine-tuning of BMP signalling ensures the timed and progressive zipper-like closure of the OFT by the NCC and prevents the formation of a heart carrying the congenital abnormalities defining the tetralogy of Fallot.
 
 ## Introduction
 
 The heart outflow tract (OFT) is an embryonic structure which ensures the connection between the muscular heart chambers and the embryonic vascular network. Initially, forming a solitary tube called truncus arteriosus, it gets progressively remodelled into two tubes which give rise to the aortic (Ao) and pulmonary (Pa) arteries (Brickner et al., 2000; Figure 1A). This remodelling stands as one of the most sensitive processes during heart morphogenesis. As such, faulty septation of the OFT represents 30% of all congenital heart diseases, with poor clinical prognosis due to improper mixing of oxygenated and deoxygenated blood. This thus calls for a better understanding of the cellular and molecular cues by which the OFT gets septated during development.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ai. Schematic representation of the migration routes the cardiac NCC (green) have taken to reach the heart region (red) in a E10.5 mouse embryo. Aii. Schematics of the embryonic heart at E11.5 showing the distal-proximal axis of the OFT. Aiii. Schematic representation of transverse sections through the OFT showing discrete stages of NCC condensation and endocardium septation along the OFT distal-proximal axis. (B) Pecam and GFP immunolabelling and DAPI staining on transverse sections throughout the medial OFT of E11.5 Wnt1Cre or Pax3Cre; Dullardflox/+; Rosa26mTmG embryos. (C) Normalized expression levels of Dullard assayed by q-RT-PCR on single cells isolated after immuno-marking endothelial CD31+ cells from E11.5 Wnt1Cre; Dullardflox/+ and Wnt1Cre; Dullardflox/flox; Rosa26mTmG hearts (dots: value for a single cell; boxplot: mean ± s.e.m.). The primers used to amplify Dullard specifically binds to exons 2 and 3, which are excised by the Cre recombinase. (D) Dullard mRNA distribution detected using RNAscope probes, in transverse sections of E11.5 control and mutant OFTs, assessed by RNAscope. Dullard mRNA levels were significantly reduced in mutant cardiac cushions compared to controls; however, mRNA signals were still detected given the binding of Z pair probes to non-recombined exons 5 to 8 and UTR region. (E) Ei. Schematics of E11.5 heart showing the position of the transverse sections used to quantify the levels of the phosphorylated forms of Smad1/5/8 in iii. Eii. Immunolabelling for P-Smad1/5/8 and GFP, and DAPI staining on transverse sections across the OFT at three distinct distal-proximal levels in E11.5 embryos with the indicated genotype. Eiii. Quantification of P-Smad1/5/8 levels in cardiac NCC along the OFT distal-proximal axis of E11.5 embryos with the indicated genotype (dots: values obtained on a given section; n > 4 embryos per genotype recovered from at least three liters; the black line is the linear regression, the coloured areas delineate the 95% confidence intervals, ***: p-value<0001 for a two-way Anova statistical test). (F) Msx2 and Id2 mRNA distribution detected using RNAscope probes (grey) and immunostaining of GFP (green) in transverse sections of E11.5 control and mutant OFTs (n = 2 embryos). On all A-F panels: green dotted lines delineate the area colonised by cardiac NCC. Ao: aortic artery, Pa: pulmonary artery.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ai. Western blot detecting the phosphorylated forms of Smad1/5/8, GFP or Gapdh in C2C12 muscle cells with or without BMP2 treatment for 1 hr. These cells were non-transfected (ct) or transfected with either a GFP expressing plasmid (GFP), a GFP tagged version of the wild-type Dullard (Dull) or of Dullard carrying D67E mutation in its phosphatase domain (Dull D67E). Dullard inhibits BMP2-mediated phosphorylation of Smad1/5/8; this inhibition is dependent on the functionality of its phosphatase domain. Aii. Immunofluorescence for P-Smad1/5/8 and GFP and DAPI staining in C2C12 transfected with GFP or GFP-Dullard and exposed for 1 hr to BMP2 showing that only cells transfected with Dullard do not show nuclear phosphorylated Smad1/5/8. Aiii. Quantification of the number of P-Smad1/5/8 positive C2C12 cells exposed to BMP2 for 1 hr and transfected with GFP (ct), Dullard or Dullard carrying the D67E mutation (n = 3 independent experiments; Student t-test **: p-value<0.01.; N.S.: non-significant). (B) Bi. Immunolabelling for P-Smad1/5/8 and GFP and DAPI staining on transverse sections across the OFT at three distinct distal-proximal levels in E11.5 of control Pax3Cre; Dullardflox/+; Rosa26mTmG and mutant Pax3Cre; Dullardflox/flox; Rosa26mTmG hearts. Pale green dotted lines delineate the area colonized by cardiac NCC. Bii. Quantification of P-Smad1/5/8 levels in cardiac NCC along the distal-proximal axis of the OFT of E11.5 embryos with the indicated genotype (dots: values obtained on a given section; n > 4 embryos per genotype recovered from at least three liters; the black line is the linear regression, the coloured areas delineate the 95% confidence intervals, ***: p-value<0001 for a two-way Anova statistical test). Ao: aortic artery, Pa: pulmonary artery. (C) Normalized expression levels of Id1, Msx1 and Msx2 assayed by q-RT-PCR on single GFP+ cardiac NCC isolated from E11.5 Wnt1Cre; Dullardflox/+ and Wnt1Cre; Dullardflox/flox; Rosa26mTmG hearts (boxplot: mean ± s.e.m.). (D) Immunolabelling of P-Smads1/5/8 and Sema3c transcripts detected by ISH on transverse sections of E11.5 control and Dullard mutant at brachial levels. i’’ to i’’’ and ii’’ to ii’’’ are blown up on muscle masses (mm). (E) Immunolabelling for the phosphorylated form of Smad2 and GFP and DAPI staining on transverse sections across the OFT at medial levels in E11.5 of control Pax3Cre; Dullardflox/+; Rosa26mTmG and mutant Pax3Cre; Dullardflox/flox; Rosa26mTmG hearts. Pale green dotted lines delineate the area colonised by cardiac NCC. P-Smad2 levels are similar in control and dullard mutant cardiac NCC. Ao: aortic artery, Pa: pulmonary artery.
 
 Morphogenesis of the OFT is orchestrated in time and space by cross-interaction between several cell types including the myocardial progenitors of the second heart field (SHF), the endocardial cells (EC) delineating the OFT lumen, and the cardiac neural crest cells (cardiac NCC) (Kelly, 2012; Keyte and Hutson, 2012; Figure 1A). Various genetic manipulations or ablation models have highlighted the predominant role of cardiac NCC in initiating and controlling OFT septation (Bockman et al., 1987; Phillips et al., 2013). Originally, cardiac NCC delaminate from the dorsal neural tube and migrate through the pharyngeal mesoderm to reach the developing OFT (Figure 1A). There, they invade the two cardiac cushions, condense toward the endocardium and trigger its rupture, thereby inducing cardiac cushions fusion and creating the two great arteries (Plein et al., 2015; Waldo et al., 1998). The rupture of the endocardium is first detected in the regions of the OFT which are the most distal from the heart chambers. In mouse embryos this rupture initiates around 11.5 days of embryonic development (E11.5; Figure 1A) and then expands progressively to more proximal levels. In parallel to these morphogenetic events, NCC differentiate into the vascular smooth muscles of the aortic arch (Keyte and Hutson, 2012) and also contribute to the arterial valves (Odelin et al., 2018).
 
@@ -45,7 +53,7 @@ We showed here that deletion of Dullard in the cardiac NCC increases Smad1/5/8 a
 
 ## Results
 
-## Dullard deletion triggers hyperactivation of BMP intracellular signalling in cardiac NCC
+### Dullard deletion triggers hyperactivation of BMP intracellular signalling in cardiac NCC
 
 In order to ablate Dullard in cardiac NCC, we crossed mice carrying floxed alleles of Dullard with mice expressing the Cre recombinase from the Pax3 locus or thanks to Wnt1 enhancer (Danielian et al., 1998; Engleka et al., 2005; Sakaguchi et al., 2013). Cell lineage tracing was achieved by using a ubiquitous double-fluorescent Cre reporter allele, Rosa26mTmG, in which Cre-mediated recombination labels the cells with membrane-targeted GFP (Muzumdar et al., 2007). The pattern of cell recombination in the cardiac cushions of E11.5 control embryos carrying either Cre driver matched with the pattern of colonising cardiac NCC described by previous lineage analyses (Figure 1B; Brown et al., 2001; Jiang et al., 2000). RT-qPCR on single cells isolated by Fluorescence-activated cell sorting (FACS) from dissected OFT and RNAscope in situ hybridization on histological sections were used to monitor Dullard expression and validate its deletion on GFP+ cells upon Cre recombination of Dullard flox alleles (Figure 1C,D). At E11.5, Dullard was ubiquitously expressed in all OFT layers of control embryos. In recombined Wnt1Cre; Dullardflox/flox; Rosa26mTmG embryos, the cardiac NCC displayed a strong reduction in Dullard levels compared to control littermates, while the surrounding tissues remained Dullard positive. Strikingly, in these mutants, the NCC formed a unique mass at the distal part of the OFT, while two distinct NCC cushions were present in the control embryos (Figure 1D), indicating that Dullard regulates the spatial organization of NCC in the OFT (see below).
 
@@ -53,35 +61,87 @@ We next assessed the relationship between Dullard and the activity of the intrac
 
 Remarkably, in both control and mutant contexts, P-Smad1/5/8 levels were more elevated distally than proximally (Figure 1Eiii, Figure 1—figure supplement 1Bii), indicating that BMP signalling elicits a graded response in cardiac NCC, which declines as they colonise more proximal OFT areas. Altogether, our results show that Dullard is required in cardiac NCC to dampen the magnitude of the BMP signalling gradient along the proximo-distal axis of the OFT, but is not required for its establishment, which is still observed in mutant embryos.
 
-## Dullard deletion in cardiac NCC leads to the emergence of heart abnormalities present in Fallot’s tetralogy
+### Dullard deletion in cardiac NCC leads to the emergence of heart abnormalities present in Fallot’s tetralogy
 
 Given that cardiac NCC control OFT septation (Bockman et al., 1987; Phillips et al., 2013; Plein et al., 2015), we next sought to examine the morphology of the OFT in control and Dullard mutants. No gross morphological defects were detected in E10.5 Dullard mutant OFTs (Figure 2—figure supplement 1A). Notably, the endocardium morphology, the thickness and position of the myocardium, the NCC distribution along the outflow tract, were comparable in control and mutant embryos (Figure 2—figure supplement 1A). Strikingly, 24 hr later, severe and penetrant morphological OFT defects were observed in Dullard mutant embryos (Figure 2A,B, Figure 2—figure supplement 1B). To characterize these defects, we first analyzed E11.5–12 hearts labelled for the arterial marker Pecam using 3D lightsheet and confocal microscopy (Figure 2A,B, Figure 2—figure supplement 1B, Videos 1 and 2). At distal levels, the OFT of control embryos displayed symmetrical septation with two great arteries of similar size (Figure 2Ai,Bi, Figure 2—figure supplement 1Bi - Video 1). In contrast, Pax3Cre or Wnt1Cre; Dullardflox/flox embryos exhibited an asymmetric breakdown of the endocardium on the pulmonary side with obstruction of the pulmonary artery (Pa) (Figure 2Aii,Biv, Figure 2—figure supplement 1Biv - Video 2). At more medial levels in control embryos, the pulmonary pole of the endocardium was still connected to its aortic pole (Figure 2Bii, Figure 2—figure supplement 1Bii). This pole was also attached to the presumptive pulmonary valve intercalated-cushion (PV-IC), a cell cluster recognisable by faint levels of endothelial markers such as Pecam (Mifflin et al., 2018). Conversely, the aortic and pulmonary poles of the endocardium were prematurely septated and the NCC cushions were fused in the medial portion of the mutant OFT (Figure 2Bv, Figure 1—figure supplement 1Bv). Similarly to the observations made at distal levels, pulmonary endocardium cells were aggregated together failing to delineate a lumen. Furthermore, NCC often intervened between the residual pulmonary endocardium cells and the presumptive pulmonary valve intercalated-cushion (PV-IC) (Figure 2Bv). At proximal regions, the shape of the OFT endocardium and the surrounding NCC cushions were similar in both mutant and control embryos (Figure 2A,Biii,vi, Figure 2—figure supplement 1Biii,vi). We also checked for the state of the peripheral sheet of myocardium composing E11.5 control and Dullard mutant OFTs by immunolabelling the myosin heavy chain or the transcription factor Islet1/2 (Isl1/2) (Figure 2—figure supplement 1C,D). No significant differences could be detected between the control and mutant OFTs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig2-v2.jpg)
+
+**Figure 2.:** (A) Three-dimensional rendering of the Pecam+ endocardium of E12 Pax3Cre; Dullardflox/+ and Pax3Cre; Dullardflox/flox embryos after 3Disco clearing and lightsheet acquisition (n = 3 per genotype). The fine oblique white line marks the Pa width. The OFT levels along its distal-proximal axis analyzed in B are also indicated. (B) Immunolabelling for Pecam (red), GFP (green) and DAPI (blue) on transverse sections along the distal-proximal axis of the OFT in E11.5 embryos with the indicated genotypes (n > 10 embryos collected from more than three liters). Brackets in i and iv highlight the symmetric and asymmetric Ao and Pa poles in control and mutant embryos, respectively. Arrowheads in ii and v point at the unruptured and ruptured endocardium in control and mutant embryos, respectively. (C) Percentage of living Dullard mutant embryos before E12.5 and after E12.5, carrying the indicated Cre driver. (D) Immunolabelling for Pecam, GFP and DAPI staining on sections through the hearts of E14.5 (i,ii,v,vi) and E18.5 (iii,iv) embryos with the indicated genotypes (n = 2 embryos per genotype). Arrowheads in ii and arrow in iv point at a septation defect, the star in vi indicates the lack of Pa. (E) Whole dissected E18.5 hearts coming from embryos with the indicated genotype (n = 2 per genotype). (F) Two cycles of blood flow measured at the level of the abdominal artery of E11.75 control embryos and indication of the parameters analysed. VTI: velocity time integral. Parameters (i-iii) of the blood flow velocity measured in the abdominal artery of E11.75 control (turquoise dots) and Wnt1Cre; Dullardflox/flox embryos (purple squares)(dots and squares: mean of two to five measures obtained on a single embryo, bars: mean ± s.e.m; differences evaluated using a Mann-Whitney test: N.S. non-significant, *: p<0.05, **: p<0.01, ***: p<0.001). i. peak systolic velocity, ii. end-diastolic velocity, iii. mean of three velocity time integrals (n = 10 mutants and n = 32 controls). Ao: aortic artery, Pa: pulmonary artery, PV IC: pulmonary valve intercalated-cushion.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) MF20 (myosin heavy chain) and GFP immunostaining and DAPI staining on transverse sections (i,iii) and coronal sections (ii,iv) in E10.5 embryos with the indicated genotype. (B) Immunolabelling for Pecam (red) and GFP (green) and DAPI (blue) staining on transverse sections along the distal-proximal axis of the OFT in E11.5 embryos with the indicated genotypes (n > 10 embryos collected from more than three liters). (C) Immunolabelling of MF20, Isl1/2, Pecam and GFP, as well as DAPI staining, on transverse sections of E11.5 hearts of embryos with the indicated genotypes. Ao: Aorta; Pa: pulmonary artery; ba: branchial arch; myoc: myocardium; Lv: left ventricle; Rv: right ventricle.
+
+![Video 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-video1.mp4.jpg)
+
+**Video 1.:** No defect in the OFT colonisation of mutant cardiac NCC is observed.
+
+![Video 2.](https://cdn.elifesciences.org/articles/50325/elife-50325-video2.mp4.jpg)
+
+**Video 2.:** No defect in the OFT colonisation of mutant cardiac NCC is observed.
+
 In order to evaluate the physiological impact of these OFT defects on cardiac function, we first attempted to harvest older embryos to conduct a histological characterisation of their hearts. The premature death of Pax3Cre or Wnt1Cre; Dullardflox/flox embryos after E12.5 complicated this task (Figure 2C). Nevertheless, in the handful of Dullard mutant embryos collected alive at E14.5 or E18.5, we consistently observed hearts with an interventricular septum (compare Figure 2Dii,iv with 2Di,iii), a hypertrophy of their right ventricle compared to their left one (compare Figure 2Div with 2Diii), a wide aorta connected to both ventricles (Figure 2Dvi, E) and pulmonary stenosis (compare Figure 2Dvi with 2Dv, asterisk in E). These are the four major heart morphological traits defining the tetralogy of Fallot (TOF)’s condition (Neeb et al., 2013). Second, we imaged the blood flow passing through the abdominal artery of E11.75 Wnt1Cre; Dullardflox/flox and Wnt1Cre; Dullardflox/+ embryos using doppler ultrasound (Figure 2F; see Material and methods section; Nomura-Kitabayashi et al., 2009). Several hemodynamic parameters were affected in Dullard mutants compared to controls. Notably, the systolic velocity peaked at a lower level in mutants compared to controls, suggesting a compromised blood ejection from the heart (Figure 2Fi). Conversely, the heart relaxation phase was less affected as no differences in the diastolic velocity were detected (Figure 2Fii). Overall, the blood flow was weaker in the mutants than in controls, as indicated by a decrease in the mean of the velocity time integral (VTI) (Figure 2Fiii).
 
-## Dullard prevents the premature condensation of cardiac NCC
+### Dullard prevents the premature condensation of cardiac NCC
 
 We next wanted to further investigate the cellular mechanisms by which Dullard in NCC ensures OFT septation and started evaluating the migrative, proliferation and death status of cardiac NCC (Figure 3A, Figure 3—figure supplement 1, Videos 1–4). Whole mount immunostaining and 3D-reconstructions revealed that GFP+ cardiac NCC reached similar OFT levels in E11.5 control and Dullard mutants, showing that Dullard is not required for NCC colonisation of the OFT (Figure 3A, Videos 1–4). Similarly, quantification of cell proliferation and apoptosis on tissue sections, using antibodies raised against the phosphorylated form of histone H3 and the cleaved version of Caspase three respectively, indicated that Dullard does not control the proliferation nor the survival of cardiac NCC (Figure 3—figure supplement 1Ai-iv). In agreement with these observations, the total number of GFP+ cells colonising the OFT in mutant embryos was not significantly different from that found in controls (Figure 3—figure supplement 1Av, vi).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig3-v2.jpg)
+
+**Figure 3.:** (A) Three-dimensional rendering of cardiac NCC (green) over Pecam (white) after BABB clearing and confocal acquisition (Wnt1cre samples) or 3disco clearing and lightsheet microscopy (Pax3cre samples) of whole E11.5 hearts isolated from embryos with the indicated genotype (n = 2 per genotype). (B) Coloured coded orientation of the major axis of NCC cells relative to Ao-Pa axis colour-coded as indicated in the section shown in Figure 2Bi–vi. (C) DAPI staining on transverse sections through the medial part of the OFT of E11.5 embryos with the indicated genotype. Magnified regions on the right are indicated by white rectangles in NCC cushions. The entire OFT is circled with a while line. The endocardium is delineated in red, the condensed and round NCC in green, the loose and elongated NCC in yellow. (D) Minimum distances between NCCs (Di) and distances between NCCs and the endocardium (Dii) quantified along the distal-proximal axis of the OFT in E11.5 embryos with the indicated genotypes (n = 3 embryos from distinct liters were analyzed for each genotype and OFT level, bars: mean ±s.d.; ***: p-value<0.0001 for Student statistical t-test). Ao: Aorta; Pa: pulmonary artery; Lv: left ventricle; PV-IC: Pulmonary valve intercalated-cushion; Rv: right ventricle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of the total number of activated caspase 3+ apoptotic NCC (i,ii), PH3+ mitotic cardiac NCC (iii,iv) and GFP+ cardiac NCC (v,vi) per OFT section at the indicated distal-proximal OFT axis levels (dots: value per section; bars: mean ±s.d.; n.s.: non-significant differences evaluated using a Mann-Whitney test). (B) Orientation of the major axis of NCC cells relative to Ao-Pa axis colour coded as indicated in the section shown in Figure supplement 2B. (C) Quantification of the OFT surface area measured at distinct distal-proximal axis levels in control and Dullard mutants at E11.5 (dots: values obtained on a given section; n > 4 embryos per genotype recovered from at least three liters; the black line is the linear regression, the coloured areas delineate the 95% confidence intervals, ***: p-value<0001 for a two way-Anova statistical test).
+
+![Video 3.](https://cdn.elifesciences.org/articles/50325/elife-50325-video3.mp4.jpg)
+
+**Video 3.:** No defect in the OFT colonisation of mutant cardiac NCC is observed, and reduction of the pulmonary artery is visible in the mutant.
+
+![Video 4.](https://cdn.elifesciences.org/articles/50325/elife-50325-video4.mp4.jpg)
+
+**Video 4.:** No defect in the OFT colonisation of mutant cardiac NCC is observed, and reduction of the pulmonary artery is visible in the mutant.
 
 Finally, we wondered whether the morphogenetic defects of the mutant OFT could stem from differences in cell-cell arrangements, looking at the position and orientation of NCC and endocardial cell nuclei (Figure 3B–D, Figure 3—figure supplement 1B–C). The orientation of the cardiac NCC nuclei relative to the endocardium appeared spatially regulated along the proximal-distal axis of the OFT, in both mutant and control hearts (Figure 3B,C, Figure 3—figure supplement 1B). In controls, NCC perpendicular to the endocardium could be found at distal levels, while at proximal levels no orientation preference could be assigned (blue dashes in Figure 3B, Figure 3—figure supplement 1B). Strikingly, in Wnt1Cre; Dullardflox/flox OFTs the perpendicular orientation was more widely observed at medial levels than in control OFT (blue dashes in Figure 3B, Figure 3—figure supplement 1B). Moreover, quantification of the shortest distance between adjacent cardiac NCC nuclei indicated that in E11.5 control hearts NCC condensation was also variable along the distal-proximal axis of the OFT (Figure 3C,Di). Cells were closer to each other at distal levels than in proximal regions. This progression of NCC condensation along the OFT axis was impaired in Dullard mutants, whereby mutant NCC prematurely condensed within the medial region of the OFT (Figure 3C,Di). Finally, the position of NCC to the endocardium was variable along the OFT axis of control embryos with NCC being closer to this epithelium at distal levels than at proximal levels (Figure 3C,Dii). In the mutants, NCC were in a closer vicinity of the endocardium than control cells, so that in medial levels they displayed traits of cells normally found at distal levels in control hearts (Figure 3C,Dii). In agreement with these data, the OFT area was reduced in mutants and remained more constant along the distal to proximal axis (Figure 3—figure supplement 1C).
 
 Taken together Figures 2 and 3 data demonstrate that Dullard stands as a key modulator of NCC behaviour dynamics in the heart and hence of OFT septation. It precipitates NCC condensation, and thereby leads to the premature breakage of the endocardium and obstruction of the pulmonary artery. This weakens the embryonic hemodynamics and compromises the living of Dullard mutant embryos (see discussion). Our data also brings further support to the idea that morphogenetic defects in the NCC-derived cushions stand as one possible cause of Fallot's tetralogy (Neeb et al., 2013).
 
-## Dullard deletion in NCC mainly affects the transcriptional state of NCC
+### Dullard deletion in NCC mainly affects the transcriptional state of NCC
 
 To decipher the molecular basis of the defective OFT remodeling observed in mutants, we micro-dissected Wnt1Cre; Rosa26mTmG E11.5 control and Dullard mutant heart OFTs and sorted the cardiac NCC (GFP+) and endocardial cells (CD31+; RFP+) from the other OFT cell-types (CD31-; RFP+) (Figure 4A). We then performed single-cell RT-qPCR for 44 genes implicated in epithelial-mesenchymal transition (EMT), migration and/or specification of the different OFT progenitor subtypes (Supplementary file 1), and their expression levels were normalised to GAPDH and ActB (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig4-v2.jpg)
 
-**Figure 4.:** (A) Experimental steps performed to profile gene expression in OFT single-cells sorted from five Wnt1 and five Cre; Dullardflox/+; Rosa26mTmGWnt1 E11.5 embryos. At least 70 cells were isolated per gate and genotype (GFPCre; Dullardflox/flox; Rosa26mTmG+, CD31+, RFP+). (B) Graph showing the distribution of all cells analysed (dots) as a function of normalised expression values of the house keeping genes Actb and Gapdh and a linear regression (red line). (C) t-SNE plot showing the distribution of 44-genes-based transcriptomes of 433 OFT cells expressing the indicated markers isolated from both Wnt1 and Cre; Dullard+/flox; Rosa26mTmGWnt1 E11.5 embryos. (Cre; Dullardflox/flox; Rosa26mTmGD) Unsupervised clustering heatmap of the 433 OFT isolated cells from Wnt1 and Cre; Dullard+/flox; Rosa26mTmGWnt1 based on the gene expression level of the 44 genes included in the panel (Cre; Dullardflox/flox; Rosa26mTmGSupplementary file 1). Six different groups of cells can be discriminated, among which the endocardial (Group 1) cells expressing high levels of Flt1, Kdr, Nfatc1 and Tek, and the epicardial (Group 5) cells expressing high levels of Wt1, Tcf21..
+**Figure 4.:** (A) Experimental steps performed to profile gene expression in OFT single-cells sorted from five Wnt1Cre; Dullardflox/+; Rosa26mTmG and five Wnt1Cre; Dullardflox/flox; Rosa26mTmG E11.5 embryos. At least 70 cells were isolated per gate and genotype (GFP+, CD31+, RFP+). (B) Graph showing the distribution of all cells analysed (dots) as a function of normalised expression values of the house keeping genes Actb and Gapdh and a linear regression (red line). (C) t-SNE plot showing the distribution of 44-genes-based transcriptomes of 433 OFT cells expressing the indicated markers isolated from both Wnt1Cre; Dullard+/flox; Rosa26mTmG and Wnt1Cre; Dullardflox/flox; Rosa26mTmG E11.5 embryos. (D) Unsupervised clustering heatmap of the 433 OFT isolated cells from Wnt1Cre; Dullard+/flox; Rosa26mTmG and Wnt1Cre; Dullardflox/flox; Rosa26mTmG based on the gene expression level of the 44 genes included in the panel (Supplementary file 1). Six different groups of cells can be discriminated, among which the endocardial (Group 1) cells expressing high levels of Flt1, Kdr, Nfatc1 and Tek, and the epicardial (Group 5) cells expressing high levels of Wt1, Tcf21..
 
 T-statistic Stochastic Neighbour Embedding (t-SNE) was first used to plot the distances existing between the 44 gene-based-transcriptomes of individual cells (Figure 4C). It revealed that the 44 chosen genes were sufficient to segregate the three isolated cell subtypes, GFP+ NCC, the RFP+;CD31+endocardial cells and the other RFP+;CD31- OFT cells, validating our approach. Unsupervised hierarchical clustering analysis of all cells refined this segregation and identified six distinct groups of OFT cells (Figure 4D). Importantly, some of these groups contained both control and Dullard mutant cells (Groups 1, 3, 5) meaning that their 44 gene-based-transcriptome was not drastically dependent on Dullard. Instead, the three other groups were enriched for cells with a given genotype (Groups 2, 4, 6), hence harboured a Dullard dependent transcriptional state. Importantly, most GFP+ NCC were contained in the Groups 2, 4, 6, while the other groups were enriched for other cell types. For instance, the RFP+;CD31+ (Flt1+;Kdr+;Nfatc+;Tek+) endocardial cells and the RFP+;CD31- (Tcf21+;Wt1+) epicardial cells defined the Groups 1 and 5, respectively. Group 3 contained Isl1+ and Six2+ cells coming from GFP+ (NCC) and RFP+;CD31- (including myocardial) lineages. Overall, it suggests that Dullard deletion in NCC mainly alters the transcriptional states cell-autonomously and modulates to a much lesser extent the surrounding cell types present in the developing E11.5 heart.
 
-## Transcriptomic heterogeneity in non NCC-derived populations upon Dullard deficiency
+### Transcriptomic heterogeneity in non NCC-derived populations upon Dullard deficiency
 
 We next focused on the transcriptomic variations operating in the distinct OFT specific cell populations, starting with the RFP+;CD31+endocardial cells and RFP+;CD31- OFT cells (Figure 5Ai–ii’, Figure 5—figure supplement 1). Hierarchical clustering and two-dimensional visualisation of cells on diffusion maps indicated that in both cell types, some transcriptomic heterogeneity was found and distinct subpopulations could be isolated (Figure 5Ai–ii’, Figure 5—figure supplement 1A). All 5 RFP+;CD31- subpopulations identified contained both control and mutant cells (Figure 5Ai,i’), sustaining the idea that Dullard loss in cardiac NCC does not impair the differentiation of the SHF-derived myocardium and smooth muscle, nor the differentiation of the epicardium (see also Figure 2—figure supplement 1C). Similarly, the vast majority of RFP+;CD31+ cells (four out of six subpopulations (sub-pops 2 to 5)) presented both mutant and control cells (Figure 5Aii,ii’, Figure 5—figure supplement 1A). The transcriptomic heterogeneity between these RFP+;CD31+ subpopulations was mild and these cells were all Kdr+, Foxc1+, Nfatchigh, Flt1+, Nrp1+, Plxnd1 High, as expected for the endocardium (blue rectangles in Figure 5—figure supplement 1A). However, the subpopulation 1 of RFP+;CD31+ cells was enriched in control cells while the subpopulation six in mutant cells (Figure 5Aii,ii’). From the genes that drive the segregation of these CD31+ subpopulations (Figure 5—figure supplement 1B), very few of them were specifically induced or repressed in the subpopulation six or the subpopulation one compared to the others subpopulation (Figure 5—figure supplement 1C). Out of them stood Twist1 and Sox9, which were enriched in the subpopulation 1. Accordingly, while few Twist1+ cells could be immunolabelled within the endocardium of control embryos, these were almost undetectable in mutant embryos (Figure 6A). Twist1 being one of the epithelial-mesenchymal transition (EMT) drivers, it suggests that endocardial EMT is affected by the absence of Dullard in the NCC (see discussion).
 
-## Dullard controls the mesenchymal transcriptional state of cardiac NCC
+![Figure 5.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig5-v2.jpg)
+
+**Figure 5.:** (A) Projected position of 44 genes-based transcriptomes assessed in mutant and control CD31+; RFP+ and CD31-; RFP+ OFT cells on diffusion maps made using the first two Diffusion Component 1 (DC1) and 2 (DC2) (Figure 5—figure supplement 1B). Sub-populations defined with hierarchical clustering are presented in i and ii, while the genotype of cells is illustrated in i’ and ii’. (B, C) Projected position of 44 genes-based transcriptomes assessed in mutant and control cardiac GFP+ NCC on diffusion maps made using the first two Diffusion Component 1 (DC1) and 2 (DC2) (see Figure 5—figure supplement 2B). The five subpopulations defined in Figure 3A are highlighted. (D) Percentage of cardiac NCC in each subpopulation. (E) Heatmaps showing the levels of expression of selected genes in all GFP+ NCC in the five subpopulations identified using unsupervised hierarchical clustering (Figure 5—figure supplement 2A) coming from control (blue) or mutant (orange) E11.5 embryos. (F) Boxplot representation of the expression levels of genes differentially expressed between the five NCC subpopulations (Sub-Pop 1: 44 cells, Sub-Pop 2: 29 cells, Sub-Pop3: 20 cells, Sub-Pop 4: 34 cells, Sub-Pop 5: 24 cells) (mean ±s.d.).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Unsupervised clustering heatmap of 139 CD31+; RFP+ endocardium cells isolated from Wnt1Cre; Dullard+/flox; Rosa26mTmG and Wnt1Cre; Dullardflox/flox; Rosa26mTmG based on the gene expression level of the 44 genes included in the panel (Supplementary file 1). Six different subpopulations can be identified, two of which (Sub-Pop 1 and 6) are enriched for either mutant (Sub-Pop 6) or control cells (Sub-Pop 1). (B) Genetic composition of the diffusion components (DC) 1 and 2 for CD31+; RFP+ endocardium cells on which are based the diffusion maps presented in Figure 5A. (C) Boxplot representation of the expression levels of genes highlighted in DC1 and 2 shown in B in the 6 subpopulations of CD31+; RFP+ endocardium cells defined in A (mean ±s.d.).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Unsupervised clustering heatmap of 151 GFP+ NCC isolated from Wnt1Cre; Dullard+/flox; Rosa26mTmG and Wnt1Cre; Dullardflox/flox; Rosa26mTmG based on the gene expression level of the 44 genes included in the panel (Supplementary file 1). Five different subpopulations can be identified, two of which (Sub-Pop 1 and 2) are not Dullard dependent, while the three others (Sub-Pop3 to 5) are enriched for either mutant (Sub-Pop 4,5) or control cells (Sub-Pop 3). Stars indicate genes involved in the mesenchymal state. The circles marks instead the genes associated with an epithelial fate. The arrows points at genes encoding for smooth muscle specific genes marking the subpopulation 3. Crescents point to typical cardiac genes, whereas squares point to genes involved in valve formation. (B) Genetic composition of the diffusion components (DC) 1 and 2, on which are based the diffusion maps presented in Figure 5B and C. (C) Boxplot representation of the expression levels of genes highlighted in DC1 and 2 in B and not presented in Figure 5F, in the GFP+ NCC cells from both genotypes (mean ±s.d.).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig6-v2.jpg)
+
+**Figure 6.:** (E) Twist1 immunolabelling and RFP signal (red; grey), Snai2 mRNA distribution assessed by RNAscope (red; grey), GFP (green) immunolabelling and DAPI staining on transverse sections through the medial OFT of E11.5 Wnt1Cre; Dullardflox/+; Rosa26mTmG and Wnt1Cre; Dullardflox/flox; Rosa26mTmG embryos. The red lines mark the endocardium, green arrowheads point at NCC, while the white ones indicate the endocardium. The white lines delineate the cardiac NCC cushions. RFP and GFP mark cell membrane whereas Twist1 is cytoplasmic or nuclear. (B) Sema3c expression assessed by ISH on transverse sections from distal to medial OFT levels of E11.5 Wnt1Cre; Dullardflox/+ and Wnt1Cre; Dullardflox/flox embryos. The endocardium is delineated with a red line, the cardiac NCC areas with a green line and the myocardium with grey lines. (C) Normalized expression levels of Sema3c assayed by q-RT-PCR on single cells isolated after immuno-marking endothelial CD31+ cells from E11.5 Wnt1Cre; Dullardflox/+ and Wnt1Cre; Dullardflox/flox; Rosa26mTmG hearts (dots: value for a single cell; boxplot: mean ± s.e.m.). (D) Model for the molecular and cellular cues controlling OFT septation. Upper panel: Morphogenesis of the single truncus arteriosus at E10.5 into fully formed great arteries at E14.0. Middle panel: Shape of P-Smad1/5/8 and Sema3c gradients along the OFT distal-proximal axis in a control situation. NCC in the cardiac cushions condense toward the endocardium between the aorta and the pulmonary trunk. Lower panel: Premature condensation of NCC at the pulmonary trunk in absence of Dullard in NCC, is associated with increased levels of Sema3c and BMP signalling.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50325/elife-50325-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Sema3c expression assessed by ISH on transverse sections from distal to medial OFT levels of E11.5 Pax3Cre; Dullardflox/+ and Pax3Cre; Dullardflox/flox embryos. The endocardium is delineated with a red line, the cardiac NCC areas with a green line and the myocardium with grey lines. (B) Sema3c mRNA distribution assessed by RNAscope, GFP immunolabelling and DAPI staining in transverse sections of E11.5 control Wnt1Cre; Dullardflox/+and mutant Wnt1Cre; Dullardflox/flox OFTs at distal levels.
+
+### Dullard controls the mesenchymal transcriptional state of cardiac NCC
 
 Given the key defects observed in NCC condensation in Dullard mutants, we then focused on the gene expression signature of GFP+ NCC. With similar approaches as above we could identify five GFP+ NCC subpopulations based on their gene expression signature (Sub Pops 1 to 5) (Figure 5B, Figure 5—figure supplement 2A), each of them containing an unbalanced ratio of mutant versus control cells (Figure 5C,D), suggesting that Dullard influences the fate of all NCC subtypes. The NCC subpopulation 1 was characterised by the expression of Nfatc1, Tcf21, Postn (Periostin) (Figure 5—figure supplement 2A–C), which are all expressed in the heart valves (Acharya et al., 2011; Norris et al., 2008; Wu et al., 2011), a heart structure that is also colonised by NCC (Odelin et al., 2018). The slight enrichment for control cells in this subpopulation raised the possibility that Dullard is required to favour the contribution of NCC to this structure (Figure 5C). The second subpopulation was defined by the predominant expression of cardiac progenitor markers Tbx1, Six2, Gja1, Isl1, and contained both control and mutant cardiac NCC (Figure 5—figure supplement 2A–C), indicating that Dullard is not required for the entry of NCC into the smooth muscle lineage (Zhou et al., 2017). This is in agreement with the distribution of Isl1 we observed in control and mutant embryos (Figure 2—figure supplement 1C). Conversely, the emergence of the subpopulation 3 was strictly dependent on Dullard, as this subpopulation barely contained mutant cells (Figure 5C,D, Figure 5—figure supplement 2A). Subpopulation 3 corresponded to NCC further differentiated toward the smooth lineage as defined by expression of Myh11 and Acta2 (Huang et al., 2008; Figure 5D,E). The subpopulations 4 and 5 were enriched for mutant cardiac NCC (Figure 5C–E, Figure 5—figure supplement 2A). The transcriptomic state of the cells in these two subpopulations diverged from that of the subpopulation 3 cells (Figure 5C,E,D). This divergence was greater for the subpopulation 5 than for the Ssubpopulation 4. Yet, the position of cells within the diffusion maps suggests a close relationship between these two subsets of cells which might represent two states of the differentiation path of Dullard deleted cardiac NCC (Figure 5C).
 
@@ -103,11 +163,364 @@ Finally, our data indicates that mice in which Dullard is deleted in the NCC har
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wnt1Cre</td>
+      <td>PMID: 9843687</td>
+      <td>MGI:2386570</td>
+      <td>Dr A Pierani (Imagine Institute)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pax3Cre</td>
+      <td>PMID: 15882581</td>
+      <td>MGI: 3573783</td>
+      <td>Dr F Relaix (Créteil University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26mTmG</td>
+      <td>PMID: 17868096</td>
+      <td>MGI: 3716464</td>
+      <td>Dr F Relaix (Créteil University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>DullardFlox</td>
+      <td>PMID: 23360989</td>
+      <td>other</td>
+      <td>Dr R Nishinakamura (Kumamoto University)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken)</td>
+      <td>Aves Labs</td>
+      <td>GFP-1020 RRID:AB_10000240</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PECAM (Rat monoclonal)</td>
+      <td>Santa-Cruz Biotechnology</td>
+      <td>Sc-18916 RRID:AB_627028</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphoSmad1/5/8 (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>13820S RRID:AB_2493181</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myosin Heavy Chain (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>MF20 RRID:AB_2147781</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-histone H3 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>9701 RRID:AB_331535</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved Caspase 3 (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>9664 RRID:AB_2070042</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Isl1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab20670 RRID:AB_881306</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 488 donkey IgG anti-chicken IGG (H+L)</td>
+      <td>Interchim</td>
+      <td>703-545-155 RRID:AB_2340375</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 Goat Anti-Rabbit IgG (H+L), highly cross-adsorbed</td>
+      <td>Life Technologies</td>
+      <td>A-21429 RRID:AB_2535850</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 647 Donkey IgG Anti Rabbit IGG (H+L)</td>
+      <td>Interchim</td>
+      <td>711-605-152 RRID:AB_2492288</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat Anti-Rat IgG (H+L)</td>
+      <td>Life Technologies</td>
+      <td>A21247 RRID:AB_141778</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat Anti-Mouse IgG (H+L) Antibody, highly cross-adsorbed</td>
+      <td>Life Technologies</td>
+      <td>A-21236 RRID:AB_2535805</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat Anti-Mouse IgG (H+L) Antibody, highly cross-adsorbed</td>
+      <td>Life Technologies</td>
+      <td>A-11029 RRID:AB_2534088</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat Anti-Rabbit IgG (H+L) Antibody</td>
+      <td>Life Technologies</td>
+      <td>A-11008 RRID:AB_143165</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho Smad 2/3 (Rabbit monoclonal)</td>
+      <td>Ozyme</td>
+      <td>8828 s RRID:AB_2631089</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sema3C</td>
+      <td>PMID: 16397144</td>
+      <td>other</td>
+      <td>RNA probe from Dr S Zaffran (Aix Marseille University)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dullard</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#456911</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sema3C</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#441441</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Twist1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#414701</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Snai2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#451191</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Msx2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#421851</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Id2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#445871</td>
+      <td>RNA probe</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ter119 Pe-Cy7 (Mouse monoclonal)</td>
+      <td>Sony</td>
+      <td>1181110</td>
+      <td>Facs (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 APC-Cy7 (Mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>557659 RRID:AB_396774</td>
+      <td>Facs (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 APC (Mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Clone MEC 13.3 Catalog No. 561814 RRID:AB_10893351</td>
+      <td>Facs (1:300)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>7AAD PE-Cy7</td>
+      <td>BD Pharmingen</td>
+      <td>559925</td>
+      <td>Facs (1:800)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>CellsDirect One-Step qRTPCR Kit</td>
+      <td>Invitrogen</td>
+      <td>11753100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>48.48 Sample/Loading Kit— 10 IFCs</td>
+      <td>Fluidigm Corporation</td>
+      <td>BMK-M10- 48.48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Mus musculus)</td>
+      <td>C2C12</td>
+      <td>ATCC, PMID: 28966089</td>
+      <td>CRL-1772, RRID:CVCL_0188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human BMP-2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#PHC7145</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, pHeatmap (v1.0.10)</td>
+      <td>R foundation</td>
+      <td>R package (v3.2.2), RRID:SCR_016418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, phenograph (v0.99.1)</td>
+      <td>R foundation</td>
+      <td>R package (v3.2.2), RRID:SCR_016919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, ggplot2 (v3.1.0)</td>
+      <td>R foundation</td>
+      <td>R package (v3.2.2), RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, Destiny (v2.6.1)</td>
+      <td>R foundation</td>
+      <td>R package (v3.6)</td>
+      <td>https://github.com/theislab/destiny</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-Dullard (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GFP-Dullard expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-Dullard D67E (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GFP-Dullard D67E expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech</td>
+      <td>6085–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase</td>
+      <td>ThermoFisher</td>
+      <td>11791100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taq Polymerase, Superscript III</td>
+      <td>Thermofisher</td>
+      <td>11732020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dull_FL_C1_FW</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTTAATGATGCGGACGCAGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dull_FL_C1_Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACCACTTTGTACAAGAAAGTGGGTCTCACCAGAGCCTATGTTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dull_D67E_FW</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATCCTGGTGCTGGAACTGGACGAAACCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dull_D67E_Rev</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGGGTTTCGTCCAGTTCCAGCACCAGGATC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal experiments were approved by the Animal Ethics Committee of Sorbonne University. We used the mouse strains described in the following papers and MGI IDs: Dullardflox/flox (Sakaguchi et al., 2013; in these mice exons 2 to 4 are floxed), Pax3Cre (Engleka et al., 2005, MGI: 3573783), Wnt1Cre (Danielian et al., 1998, MGI:2386570), Rosa26mTmG (Muzumdar et al., 2007, MGI: 3716464), and C57BL/6JRj (Janvier Labs).
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Mouse embryos were collected at E11.5 and dissected in cold PBS, incubated 5 min in 200 mM KCl to stop heart beating and fixed for 2–3 hr in 4% PFA (Electron Microscopy Science, #15710S) at 4°C.
 
@@ -117,31 +530,31 @@ For wholemount staining, we followed the 3Disco protocol (Belle et al., 2017) to
 
 The primary antibodies used were raised against: GFP (chicken, Aves Labs, GFP-1020, 1/500), Pecam (rat monoclonal, Santa-Cruz Biotechnology, sc-18916, 1/200), Phospho-Smad1/5/8 (rabbit monoclonal, Cell Signalling Technology, 13820S, 1/500), myosin heavy chain, MyHC (mouse monoclonal, DSHB, MF20, 1/300), Phospho-Histone H3 (rabbit, Cell Signalling Technology, 9701, 1/500), Cleaved Caspase-3 (rabbit monoclonal, Cell Signalling Technology, Asp175, 1/500), Isl-1 (Abcam, ab20670), Phospho-Smad2,3 (rabbit, Ozyme, 8828 s, 1:200). Secondary antibodies were bought from Life technologies or Interchim and were Donkey or Goat Igg coupled to Alexa fluorophores.
 
-## In situ hybridisation
+### In situ hybridisation
 
 The Sema3c probe was provided by the lab of S. Zaffran (Bajolle et al., 2006). In situ hybridization on cryosections were processed following the protocol described in Chotteau-Lelièvre et al. (2006).Fluorescent in situ hybridization probes for Dullard (#456911), Sema3c (#441441), Twist1 (#414701), Snai2 (#451191), Msx2 (#421851) and Id2 (#445871) were obtained from Advanced Cell Diagnostics, Inc In situ hybridization was performed using the RNAscope V2-fluorescent kit according to the manufacturer's instructions. For sample pre-treatments: H2O2 treatment was performed during 10 min at RT, retrieval 2 min at 98°C and slides were digested with Protease Plus reagent for 15 min at 40°C. After the probe detection steps immunostaining was performed as described above with fluorescent secondary antibodies. Sections were imaged using a 40x objective on a LSM700 microscope (Zeiss) or Nikon Ti2 microscope.
 
-## Image analyses, quantification, statistical analysis
+### Image analyses, quantification, statistical analysis
 
 Mean levels of P-Smad1/5/8 in the cardiac NCC were quantified using Image J thanks to a mask established on the GFP channel. Distances between cardiac NCC and between cardiac NCC and the endocardium, as well as the angle of the major axis of NCC to an axis linking the Ao and Pa poles of the endocardium were measured using Metamorph (Molecular Devices) and a home-made algorithm on Excel. Statistical analysis was performed with the Student’s t-test or Mann-Whitney test depending on normality. The analysis was performed using Prism Software (GraphPad). Statistical significance is represented as follows: ***p<0.001. All results are shown as mean ± standard deviation.
 
-## Plasmids
+### Plasmids
 
 Dullard was directly cloned from an NIH 3T3 mRNA library using the SuperScript III One‐Step RT‐PCR System (Life Technologies) using primers Dull_FL_C1_FW 5 ́‐GGGGACAAGTTTGTACAAAAAAGCAGGCTTAATGATGCGGACGCAGTGT‐3’ and Dull_FL_C1_Rev 5 ́‐GGGGACCACTTTGTACAAGAAAGTGGGTCTCACCAGAGCCTATGTTGGTG‐3’ for N‐terminal tag destination vectors (pDONR221). For phosphatase‐null point mutant Dullard D67E, site‐directed mutagenesis was performed by PCR amplification of pDONR 221 Dullard full‐length vector using primers Dull_D67E_FW 5 ́‐GATCCTGGTGCTGGAACTGGACGAAACCCTG‐3’ and Dull_D67E_Rev 5 ́‐CAGGGTTTCGTCCAGTTCCAGCACCAGGATC‐3’ followed by DpnI endonuclease mediated digestion of the parent (methylated) DNA chain. After sequence confirmation, entry vectors were recombined with pEGFP GW C1 for N‐terminal (Life Technologies) GFP‐tag fusion proteins using the Gateway system (Thermofisher).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 C2C12 cells were cultivated at 37°C/5% CO2, in growth medium (DMEM, 4.5 g/L, D-glucose, 4 mM L-glutamine, 1 mM sodium pyruvate, 10% fetal calf serum). Plasmid transfection was performed using Lipofectamine 2000 (Life Technologies). 24 hr after transfection, BMP2 recombinant human protein (Thermo Fisher Scientific, #PHC7145) was applied for 1 hr on cells. Cells were fixed with 4% PFA and immunostained with the phospho-Smad1/5/8 antibody. Alternatively, cells were washed in PBS, collected with PBS 1% SDS and passed through Qiashredder columns (Qiagen) to disrupt nucleic acids. Proteins extracts were then processed for western blotting using pre-cast gels (Life Technologies) and transferred on nitrocellulose by semi-dry transfer (Bio-Rad). C2C12 (ATCC CRL-1772) is a murine myogenic cell line. Its myogenic profile is regularly checked by placing them in low serum to trigger the formation of myotubes through cell-cell fusion. Their mycoplasma contamination status resulted negative.
 
-## Tissue dissociation and FACS sorting
+### Tissue dissociation and FACS sorting
 
 Mouse embryos were collected at E11.5 and placed in HBSS/1% FBS (HBSS +/+, Invitrogen) during genotyping. OFT were micro-dissected and dissociated by 15 min incubation in collagenase (0.1 mg/ml in HBSS, C2139 Sigma) and thorough pipetting. HBSS (10% FBS) was added to the cells medium to stop the enzymatic reaction. OFT cell suspensions were centrifuged and resuspended in HBSS (1% FBS) before immunostaining. The panel of conjugated antibodies used for FACS included Ter119 Pe-Cy7 (Erythroid Cells, anti-mouse, Sony, Catalog No. 1181110, 1/300), CD45 APC-Cy7 (Rat anti-mouse, BD Pharmingen, Catalog No. 557659, 1/300), CD31 APC (Rat anti-mouse, BD Pharmingen, Clone MEC 13.3 Catalog No. 561814, 1/300) diluted in HBSS (1% FBS). Cells were centrifuged and resuspended in the antibody solution for a 25 min incubation period (4°C, dark), washed three times, filtered (Fisher cell strainer, 70 μm mesh) and 7AAD PE-Cy7 (1/800) was added in the cells suspension to exclude dead cells. Cells were sorted in a BD FACSAria III into 96-well plates loaded with RT-STA reaction mix (CellsDirect One-Step qRTPCR Kit, Invitrogen) and 0.2x specific TaqMan Assay mix (see Supplementary file 1 for assays list).
 
-## Single-cell gene expression
+### Single-cell gene expression
 
 We proceeded as described in Valente et al. (2019). Cells were sorted in RT-STA reaction mix from the CellsDirect One-Step qRT-PCR Kit (Life Technologies), reverse transcribed and specific target pre-amplified (20 cycles), according to the manufacturer’s procedures. Pre-amplified samples were diluted 5x with low EDTA TE buffer prior to qPCR analysis using 48.48 Dynamic Array IFCs and the BioMark TM HD System (Fluidigm). The same TaqMan gene expression assays (20x, Life Technologies) were individually diluted 1:1 with 2x assay loading reagent (Fluidigm). Pre-amplified samples were combined with TaqMan Universal Master Mix (Life Technologies) and 20x GE sample loading reagent (Fluidigm). Loading of the 48.48 Dynamic Array TM IFCs and qPCR cycling conditions followed the Fluidigm procedure for TaqMan gene expression assays.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 The analytic framework used followed the one described in Perchet et al. (2018); Valente et al. (2019). It included notably a normalization of all the cycle threshold (Ct) values extracted from the Biomark chips using the mean value of Actb and Gapdh housekeeping genes (Figure 4B). For visualisation of the single-cell multiplex qPCR, done on 44 genes, we generated a heatmap using the pHeatmap (v1.0.10) R package (v3.2.2). For unsupervised clustering, we used PhenoGraph that takes as input a matrix of N single-cell measurements and partitions them into subpopulations by clustering a graph that represents their phenotypic similarity. PhenoGraph builds this graph in two steps. Firstly, it finds the k nearest neighbors for each cell (using Euclidean distance), resulting in N sets of k-neighborhoods. Secondly, it operates on these sets to build a weighted graph such that the weight between nodes scales with the number of neighbors they share. The Louvain community detection method is then used to find a partition of the graph that maximizes modularity. Given a dataset of N d-dimensional vectors, M distinct classes, and a vector providing the class labels for the first L samples, the PhenoGraph classifier assigns labels to the remaining N_L unlabeled vectors. Firstly, a graph is constructed as described above. The classification problem then corresponds to the probability that a random walk originating at unlabeled node x will first reach a labeled node from each of the M classes. This defines an M-dimensional probability distribution for each node x that records its affinity for each class. PhenoGraph is implemented as Rphenograph (v0.99.1) R package (v3.2.3).
 
@@ -149,6 +562,6 @@ We used boxplot for gene expressions of clusters obtained with PhenoGraph algori
 
 Impact of gene expressions creating the different dimensions is represented as horizontal box plots, showing cells up- or down-regulating indicated genes in the plot.
 
-## Ultrasound imaging
+### Ultrasound imaging
 
 Pregnant mice were anaesthetised (3% isoflurane in air and maintained at 1.5%), installed on a heating pad and monitored for respiration frequency, ECG and temperature (Vevo Imaging Station, Visualsonics). Pregnant mice were intraperitoneally injected with Metacam (1mg/kg body weight; Boehringer Ingelheim). A laparotomy was then performed and the uterine horns were gently exteriorized to allow direct visualisation of embryos using a high-resolution ultrasound imaging scanner (VEVO2100, Visualsonics) equipped with a 60 MHz probe (MS-700). To ensure contact between the ultrasound probe and the embryos, a warm sterile gel (Aquasonic) was used. Long axis view of the heart was performed on each embryo to measure left and right ventricle dimensions. PW Doppler measurements were achieved positioning the caliper on the descending abdominal aorta with embryo in sagittal view. From Abdominal Aorta the following measurements were performed: Abdominal Aorta Peak Systolic Velocity (AA PSV, mm/s), End Diastolic Velocity (AA EDV, mm/s), Velocity Time Integral of mean velocities (AA VTI, ms). From these measurements, the following parameters were calculated: Mean Velocity (AA VTI Mean Vel), Abdominal Aorta Pulsatility Index (AA PI), Abdominal Aorta Resistive Index (AA RI).

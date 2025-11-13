@@ -25,24 +25,24 @@
 
 ### Affiliations
 
-1. https://ror.org/050589e39 European Molecular Biology Laboratory - Hamburg Unit Hamburg Germany
-2. https://ror.org/047426m28 Department of Biochemistry, University of Illinois at Urbana-Champaign Urbana United States
+1. European Molecular Biology Laboratory - Hamburg Unit Hamburg Germany ([ROR:050589e39](https://ror.org/050589e39))
+2. Department of Biochemistry, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
 3. IQUIBICEN-CONICET, Ciudad Universitaria, Pabellón 2 Ciudad Autonoma de Buenos Aires Argentina
-4. https://ror.org/0081fs513 Departamento de Química Biológica, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Ciudad Universitaria, Pabellón 2 Ciudad Autónoma de Buenos Aires Argentina
-5. https://ror.org/05wnasr61 Instituto Tecnológico Vale Belém Brazil
-6. https://ror.org/057ecva72 Laboratorio de Biotecnología Aplicada y Genómica Funcional, Instituto de Botánica del Nordeste (IBONE-CONICET), Facultad de Ciencias Agrarias, Universidad Nacional del Nordeste Corrientes Argentina
-7. https://ror.org/05rrcem69 Department of Plant Sciences, University of California, Davis Davis United States
+4. Departamento de Química Biológica, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Ciudad Universitaria, Pabellón 2 Ciudad Autónoma de Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))
+5. Instituto Tecnológico Vale Belém Brazil ([ROR:05wnasr61](https://ror.org/05wnasr61))
+6. Laboratorio de Biotecnología Aplicada y Genómica Funcional, Instituto de Botánica del Nordeste (IBONE-CONICET), Facultad de Ciencias Agrarias, Universidad Nacional del Nordeste Corrientes Argentina ([ROR:057ecva72](https://ror.org/057ecva72))
+7. Department of Plant Sciences, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 8. Instituto de Biotecnología de Misiones, Facultad de Ciencias Exactas, Químicas y Naturales, Universidad Nacional de Misiones (INBIOMIS-FCEQyN-UNaM) Misiones Argentina
-9. https://ror.org/03kr8x191 Instituto de Biología Subtropical, Universidad Nacional de Misiones (IBS-UNaM-CONICET) Posadas Argentina
-10. https://ror.org/04j198w64 Department of Biological Sciences, Western Michigan University Kalamazoo United States
-11. https://ror.org/047426m28 Carl R. Woese Institute for Genomic Biology, University of Illinois at Urbana-Champaign Urbana United States
-12. https://ror.org/047426m28 Center for Biophysics and Quantitative Biology, University of Illinois at Urbana Champaign Urbana United States
+9. Instituto de Biología Subtropical, Universidad Nacional de Misiones (IBS-UNaM-CONICET) Posadas Argentina ([ROR:03kr8x191](https://ror.org/03kr8x191))
+10. Department of Biological Sciences, Western Michigan University Kalamazoo United States ([ROR:04j198w64](https://ror.org/04j198w64))
+11. Carl R. Woese Institute for Genomic Biology, University of Illinois at Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+12. Center for Biophysics and Quantitative Biology, University of Illinois at Urbana Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
 
 † Corresponding author
 
 ## Abstract
 
-Yerba mate (YM, Ilex paraguariensis ) is an economically important crop marketed for the elaboration of mate, the third-most widely consumed caffeine-containing infusion worldwide. Here, we report the first genome assembly of this species, which has a total length of 1.06 Gb and contains 53,390 protein-coding genes. Comparative analyses revealed that the large YM genome size is partly due to a whole-genome duplication (Ip-α) during the early evolutionary history of Ilex , in addition to the hexaploidization event (γ) shared by core eudicots. Characterization of the genome allowed us to clone the genes encoding methyltransferase enzymes that catalyse multiple reactions required for caffeine production. To our surprise, this species has converged upon a different biochemical pathway compared to that of coffee and tea. In order to gain insight into the structural basis for the convergent enzyme activities, we obtained a crystal structure for the terminal enzyme in the pathway that forms caffeine. The structure reveals that convergent solutions have evolved for substrate positioning because different amino acid residues facilitate a different substrate orientation such that efficient methylation occurs in the independently evolved enzymes in YM and coffee. While our results show phylogenomic constraint limits the genes coopted for convergence of caffeine biosynthesis, the X-ray diffraction data suggest structural constraints are minimal for the convergent evolution of individual reactions.
+Yerba mate (YM, Ilex paraguariensis) is an economically important crop marketed for the elaboration of mate, the third-most widely consumed caffeine-containing infusion worldwide. Here, we report the first genome assembly of this species, which has a total length of 1.06 Gb and contains 53,390 protein-coding genes. Comparative analyses revealed that the large YM genome size is partly due to a whole-genome duplication (Ip-α) during the early evolutionary history of Ilex, in addition to the hexaploidization event (γ) shared by core eudicots. Characterization of the genome allowed us to clone the genes encoding methyltransferase enzymes that catalyse multiple reactions required for caffeine production. To our surprise, this species has converged upon a different biochemical pathway compared to that of coffee and tea. In order to gain insight into the structural basis for the convergent enzyme activities, we obtained a crystal structure for the terminal enzyme in the pathway that forms caffeine. The structure reveals that convergent solutions have evolved for substrate positioning because different amino acid residues facilitate a different substrate orientation such that efficient methylation occurs in the independently evolved enzymes in YM and coffee. While our results show phylogenomic constraint limits the genes coopted for convergence of caffeine biosynthesis, the X-ray diffraction data suggest structural constraints are minimal for the convergent evolution of individual reactions.
 
 ## Introduction
 
@@ -58,37 +58,622 @@ Although some transcriptomic resources have been generated for YM (Acevedo et al
 
 ## Results and discussion
 
-## YM genome sequencing, assembly, and annotation
+### YM genome sequencing, assembly, and annotation
 
 The YM genome was sequenced combining Illumina and PacBio sequencing technologies. With Illumina sequencing, we generated ~263.2 Gb of short reads from various DNA fragment sizes (350 bp, 550 bp, 3 kbp, 8 kbp, and 12 kbp), while with PacBio sequencing, we generated ~77.5 Gb of long reads. These reads represent ~158.5- and ~49.3-fold base-pair coverage of the genome, respectively (Table 1). The total assembly length was ~1.06 Gb and consisted of 10,611 scaffolds (≥1 kb) with an N50 length of ~510.8 kb (Table 2). To assess the completeness of the genome, we aligned the available YM transcriptome reads (Acevedo et al., 2019; Debat et al., 2014; Fay et al., 2018) and the YM genomic short reads generated in this study with the assembly: 99.3% of the former and 99.5% of the latter were mapped. The GC content of the genome assembly was 36.33% (Table 2), similar to that of other eudicots (33.70–38.20 GC%) (Singh et al., 2016) and almost identical to that of Ilex polyneura (36.08 GC%) (Yao et al., 2022), Ilex asprella (36.25 GC%) (Kong et al., 2022), and Ilex latifolia (36.44 GC%) (Xu et al., 2022), the only three Ilex species with sequenced genomes. About 64.63% of the genome assembly was composed of repetitive sequences, of which ~36.22% were retrotransposons, ~1.80% were DNA transposons, ~0.74% were simple repeats, and ~0.15% were low complexity regions. Long terminal-repeat retrotransposons of the Gypsy and Copia families were the most abundant transposable elements, as observed in many sequenced plant genomes (Galindo-González et al., 2017), followed by long interspersed nuclear elements (LINEs) and hobo-Activator transposons, among others (Table 3).
 
+**Table 1.**
+ Statistics of the genome sequencing data of yerba mate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Number of reads</th>
+      <th>Read length</th>
+      <th>Total length</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pair-end 350 bp #1</td>
+      <td>360,653,408</td>
+      <td>101</td>
+      <td>36.4 Gbp</td>
+      <td>21.8×</td>
+    </tr>
+    <tr>
+      <td>Pair-end 350 bp #2</td>
+      <td>368,746,464</td>
+      <td>101</td>
+      <td>37.2 Gbp</td>
+      <td>22.3×</td>
+    </tr>
+    <tr>
+      <td>Pair-end 550 bp</td>
+      <td>356,261,246</td>
+      <td>101</td>
+      <td>36 Gbp</td>
+      <td>21.5×</td>
+    </tr>
+    <tr>
+      <td>Mate-pair 3 kbp #1</td>
+      <td>415,398,586</td>
+      <td>101</td>
+      <td>30.3 Gbp</td>
+      <td>18.2×</td>
+    </tr>
+    <tr>
+      <td>Mate-pair 3 kbp #2</td>
+      <td>410,588,934</td>
+      <td>101</td>
+      <td>30 Gbp</td>
+      <td>17.9×</td>
+    </tr>
+    <tr>
+      <td>Mate-pair 3 kbp #3</td>
+      <td>343,059,350</td>
+      <td>101</td>
+      <td>25 Gbp</td>
+      <td>15×</td>
+    </tr>
+    <tr>
+      <td>Mate-pair 8 kbp</td>
+      <td>393,202,256</td>
+      <td>101</td>
+      <td>34.6 Gbp</td>
+      <td>20.7×</td>
+    </tr>
+    <tr>
+      <td>Mate-pair 12 kbp</td>
+      <td>415,478,776</td>
+      <td>101</td>
+      <td>33.7 Gbp</td>
+      <td>20.1×</td>
+    </tr>
+    <tr>
+      <td>PacBio long reads</td>
+      <td>19,514,627</td>
+      <td>50 bp to 61 kbp</td>
+      <td>77.5 Gbp</td>
+      <td>49.3×</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>341 Gbp</td>
+      <td>207.8×</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Statistics of the genome assembly of yerba mate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># scaffolds (≥1000 bp)</td>
+      <td>10,611</td>
+    </tr>
+    <tr>
+      <td># scaffolds (≥5000 bp)</td>
+      <td>9343</td>
+    </tr>
+    <tr>
+      <td># scaffolds (≥10,000 bp)</td>
+      <td>8951</td>
+    </tr>
+    <tr>
+      <td># scaffolds (≥25,000 bp)</td>
+      <td>5944</td>
+    </tr>
+    <tr>
+      <td># scaffolds (≥50,000 bp)</td>
+      <td>2595</td>
+    </tr>
+    <tr>
+      <td>Total length (≥50,000 bp)</td>
+      <td>887,124,725</td>
+    </tr>
+    <tr>
+      <td># scaffolds</td>
+      <td>10,611</td>
+    </tr>
+    <tr>
+      <td>Largest scaffold</td>
+      <td>7,402,063</td>
+    </tr>
+    <tr>
+      <td>Total length</td>
+      <td>1,064,802,823</td>
+    </tr>
+    <tr>
+      <td>GC (%)</td>
+      <td>36.33</td>
+    </tr>
+    <tr>
+      <td>N50</td>
+      <td>510,878</td>
+    </tr>
+    <tr>
+      <td>N75</td>
+      <td>132,523</td>
+    </tr>
+    <tr>
+      <td>L50</td>
+      <td>506</td>
+    </tr>
+    <tr>
+      <td>L75</td>
+      <td>1461</td>
+    </tr>
+    <tr>
+      <td># N’s per 100 kbp</td>
+      <td>1976.99</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Classification and distribution of repetitive DNA elements in yerba mate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th>Length occupied (bp)</th>
+      <th>Percentage of the genome (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Class I retrotransposons</td>
+      <td>421,599</td>
+      <td>385,714,532</td>
+      <td>36.22</td>
+    </tr>
+    <tr>
+      <td>SINEs</td>
+      <td>840</td>
+      <td>154,298</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Penelope</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>LINEs</td>
+      <td>35,433</td>
+      <td>17,109,207</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <td>CRE/SLACS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>L2/CR1/Rex</td>
+      <td>575</td>
+      <td>135,549</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>R1/LOA/Jockey</td>
+      <td>443</td>
+      <td>76,937</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>R2/R4/NeSL</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>RTE/Bov-B</td>
+      <td>8599</td>
+      <td>2,126,765</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>L1/CIN4</td>
+      <td>25,816</td>
+      <td>14,769,956</td>
+      <td>1.39</td>
+    </tr>
+    <tr>
+      <td>LTR retrotransposons</td>
+      <td>385,326</td>
+      <td>368,451,027</td>
+      <td>34.60</td>
+    </tr>
+    <tr>
+      <td>BEL/Pao</td>
+      <td>709</td>
+      <td>266,632</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Ty1/Copia</td>
+      <td>98,237</td>
+      <td>67,631,136</td>
+      <td>6.35</td>
+    </tr>
+    <tr>
+      <td>Gypsy/DIRS1</td>
+      <td>216,472</td>
+      <td>274,526,515</td>
+      <td>25.78</td>
+    </tr>
+    <tr>
+      <td>Retroviral</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Class II DNA transposons</td>
+      <td>45,427</td>
+      <td>19,116,209</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td>hobo-Activator</td>
+      <td>21,335</td>
+      <td>6,378,850</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>Tc1-IS630-Pogo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>En-Spm</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>MuDR-IS905</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>PiggyBac</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Tourist/Harbinger</td>
+      <td>5870</td>
+      <td>2,846,548</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Unclassified</td>
+      <td>990,080</td>
+      <td>269,430,122</td>
+      <td>25.30</td>
+    </tr>
+    <tr>
+      <td>Total interspersed repeats</td>
+      <td>674,260</td>
+      <td>863</td>
+      <td>63.32</td>
+    </tr>
+    <tr>
+      <td>Small RNA</td>
+      <td>4362</td>
+      <td>718,762</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Satellites</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Simple repeats</td>
+      <td>185,507</td>
+      <td>7,911,080</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Low complexity</td>
+      <td>31,856</td>
+      <td>1,606,255</td>
+      <td>0.15</td>
+    </tr>
+  </tbody>
+</table>
+
 A total of 53,390 protein-coding genes were predicted in the genome, with a mean coding sequence length of 3062 bp and 4.23 exons per gene. Of these, 41,483 (~77.63%) could be annotated with GO terms, EC numbers or Pfam domains. In addition, we identified 4530 non-coding RNA genes, including 2670 small nucleolar RNAs, 815 transfer RNAs, 471 ribosomal RNAs, 348 small nuclear RNAs, and 226 micro RNAs (Appendix 1, Appendix 1—tables 1–3). To further assess the completeness of the assembly, we aligned the scaffolds with the KOG (Tatusov et al., 2003) and DEG (Luo et al., 2014) databases, determining that 98% of the core gene families from the KOG database and 97.5% of the Arabidopsis thaliana DEG subset were present. Then, we performed a Benchmarking Universal Single-Copy Orthologs (BUSCO) (Manni et al., 2021) assessment using the eudicot ODB10 database. Among 2326 conserved single-copy genes, ~96.20% were retrieved, of which ~78.80% were complete and single copies, ~17.40% were complete and in duplicates, ~3.10% were fragmented, and only ~0.70% were missing. These results suggest that the coding region of the assembly is nearly complete. The number of estimated genes for YM is higher than the ca. 39,000 reported from the genome sequences of other Ilex species (Kong et al., 2022; Xu et al., 2022; Yao et al., 2022). This could be at least partly due to the larger genome size of YM as estimated from flow cytometry relative to the other species (Gottlieb and Poggio, 2015).
 
-## Evolutionary analysis of YM genome provides evidence of whole-genome duplication in an early Ilex ancestor
+### Evolutionary analysis of YM genome provides evidence of whole-genome duplication in an early Ilex ancestor
 
 Most plant lineages have experienced ancient polyploidization events followed by massive duplicate gene losses and genome rearrangements, which may have contributed to the evolution of developmental and metabolic complexity (Landis et al., 2018; Sankoff and Zheng, 2018). Recent transcriptome-based analyses (One Thousand Plant Transcriptomes Initiative, 2019; Zhang et al., 2020b) reported an ancient polyploidization event in the Ilex lineage around 60 Ma (Cretaceous–Paleogene boundary), based on phylogenomic and synonymous substitution rate (Ks) evidence. Evolutionary analyses of I. polyneura (Yao et al., 2022) and I. latifolia (Xu et al., 2022) genomes also provided evidence of a shared Ilex-specific whole-genome duplication (WGD). As YM is the first American holly to have its genome sequenced, we performed synteny-based analyses of its genome to deepen our understanding of Aquifoliales evolution (Figure 2, Figure 2—figure supplement 1). The Ks distribution of YM paralogues (Figure 2B) revealed a significant peak with a median Ks value of ~0.37, not shared with the rest of the eudicot genomes analysed (Figure 2B, Figure 2—figure supplement 1). This confirms the lineage-specific polyploidization event (Ip-α) previously reported in Ilex (One Thousand Plant Transcriptomes Initiative, 2019; Xu et al., 2022; Yao et al., 2022; Zhang et al., 2020b), in addition to the shared ancestral WGT-γ which is indicated by a median Ks value of ~1.4 (Figure 2B). A WGD in the common ancestor of Ilex species is further supported by 2:1 syntenic depth ratios between the YM genome and the coffee and grape genomes, which did not experience additional duplication events after the ancestral WGT-γ (Figure 2C). In order to determine the age of Ip-α, we used two different phylogenies (Figure 2A). The plastid genome phylogeny supports the monophyly of Aquifoliales as the first diverging clade of campanulids (Magallón et al., 2015); the alternative nuclear genome phylogeny supports Ilex in Aquifoliales I as an early branching lineage of lamiids (Zhang et al., 2020b). With the former phylogeny, we estimated the age of the WGD event between 48.75 and 69.63 Ma while, with the latter, divergence was estimated at 49.43 and 70.62 Ma (Figure 2A). Both estimates are consistent with that of Zhang et al., 2020a and validate the age of Ip-α near the origin of Ilex, which is estimated between 43 and 89 Ma (Yao et al., 2021).
 
-## Convergent evolution of caffeine biosynthesis in YM
+![Figure 2.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig2-v1.jpg)
+
+**Figure 2.:** (A) Evolutionary scenario of the eudicot genomes of Lactuca sativa, Daucus carota, Ilex paraguariensis, Coffea canephora, and Vitis vinifera, from their ancestor pre-γ. The plastid genome phylogeny is represented with solid black lines, while the multiple nuclear genome phylogeny is represented with green dashed lines. Paleopolyploidizations are shown with coloured dots (duplications) and stars (triplications). Divergence time estimates for the lineages, as well as age estimates for the L. sativa and D. carota paleopolyploidizations were obtained from the literature (Iorizzo et al., 2016; Magallón et al., 2015; Reyes-Chin-Wo et al., 2017; Zhang et al., 2020b). Ma, million years ago. (B) Ks distributions with Gaussian mixture model and SiZer analyses of I. paraguariensis (blue), L. sativa (green), D. carota (yellow), C. canephora (red), and V. vinifera (purple) paralogues. SiZer maps below histograms identify significant peaks at corresponding Ks values. Blue represents significant increases in slope, red indicates significant decreases, purple represents no significant slope change, and grey indicates not enough data for the test. (C) Comparative genomic synteny analyses of I. paraguariensis with C. canephora and V. vinifera.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** SiZer maps below histograms identify significant peaks at corresponding Ks values. Blue represents significant increases in slope, red indicates significant decreases, purple represents no significant slope change, and grey indicates not enough data for the test.
+
+### Convergent evolution of caffeine biosynthesis in YM
 
 In order to determine the genes and biochemical pathway responsible for caffeine biosynthesis in YM, we used bioinformatic analyses to identify SABATH enzyme family members in the genome (Huang et al., 2016; Kato et al., 1996; Uefuji et al., 2003). There appear to be 28 full-length SABATH genes in YM that encode members of the functionally diverse clades of the family, including SAMT (Ross et al., 1999) and JMT (Seo et al., 2001), among others (Figure 3A). Our phylogenetic analysis showed that although the YM genome does not appear to encode XMT-type caffeine-producing enzymes like Coffea and Citrus, it does contain three recently and tandemly duplicated genes that encode CS-type enzymes, IpCS1, IpCS2, and IpCS3 (Figure 3A, C, Appendix 2). The duplicated IpCS1–3 are 86–91% identical at the amino acid level and are expressed at highest levels in caffeine-accumulating tissue (Figure 3B). IpCS1–3 also appear to be of recent origin, since non-caffeine accumulating Ilex species only have a single gene or gene fragment in the syntenic region (Figure 3C). In Camellia, Theobroma, and Paullinia, recent duplications of the CS-type enzymes responsible for the successive steps of xanthine alkaloid methylation have also independently occurred (Figure 3A; Huang et al., 2016; O’Donnell et al., 2021). Two other YM genes encode IpCS4 and 5, but these are not syntenic with IpCS1–3 and are not highly expressed in any tissues studied (Figure 3B); therefore, we did not characterize them further.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig3-v1.jpg)
 
-**Figure 3.:** (A) SABATH gene tree estimate (LnL = −34,265.473) shows the placement of full-length YM proteins (marked by blue-green dots) within clades that have published functions. GAMT, gibberellin MT; IAMT, indole-3-acetic acid MT; LAMT/FAMT, loganic/farnesoic acid MT; BAMT/BSMT, benzoic/salicylic acid MT; XMT, xanthine alkaloid MT used for caffeine biosynthesis in Coffea and Citrus; SAMT, salicylic acid MT; JMT, jasmonic acid MT; CS, caffeine synthase in Theobroma, Camellia, and Paullinia. Accession numbers for all sequences are provided in Figure 3—source data 1. (B) Gene expression analysis of IpCS1–5 in root (n = 3) and mature leaves (n = 2) as indicated by the relative abundance of YM transcriptome reads mapped to the IpCS1–5 transcripts. RPKM, reads per kilobase per million mapped reads. Error bars indicate standard deviation from the mean. Housekeeping gene: G3PD, glyceraldehyde-3-phosphate dehydrogenase. (C) Synteny-based analysis of the CS genomic region for I. paraguariensis, I. polyneura, and I. latifolia.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) SABATH gene tree estimate (LnL = −34,265.473) shows the placement of full-length YM proteins (marked by blue-green dots) within clades that have published functions. GAMT, gibberellin MT; IAMT, indole-3-acetic acid MT; LAMT/FAMT, loganic/farnesoic acid MT; BAMT/BSMT, benzoic/salicylic acid MT; XMT, xanthine alkaloid MT used for caffeine biosynthesis in Coffea and Citrus; SAMT, salicylic acid MT; JMT, jasmonic acid MT; CS, caffeine synthase in Theobroma, Camellia, and Paullinia. Accession numbers for all sequences are provided in Figure 3—source data 1. (B) Gene expression analysis of IpCS1–5 in root (n = 3) and mature leaves (n = 2) as indicated by the relative abundance of YM transcriptome reads mapped to the IpCS1–5 transcripts. RPKM, reads per kilobase per million mapped reads. Error bars indicate standard deviation from the mean. Housekeeping gene: G3PD, glyceraldehyde-3-phosphate dehydrogenase. (C) Synteny-based analysis of the CS genomic region for I. paraguariensis, I. polyneura, and I. latifolia.
 
 To investigate the biochemical activities of the enzymes encoded by the three CS-type genes, we cloned them into bacterial expression vectors and determined heterologous protein functions. One enzyme, IpCS1, appears to primarily methylate X to catalyse the formation of 3X (Figure 4). A second enzyme, IpCS2, shows activity only with 3X to produce TB, while a third enzyme, IpCS3, exhibits a preference to methylate TB to form CF (Figure 4). Thus, collectively, these three enzymes appear capable of catalysing a complete pathway from xanthine to caffeine. The apparent KM for the preferred substrates of all three enzymes ranges from 85 to 197 μM, and the kcat/KM estimates are comparable to those determined for other caffeine biosynthetic enzymes (O’Donnell et al., 2021; Table 4, Figure 4—figure supplement 1). Further evidence for this biosynthetic pathway has been reported by 14C xanthine tracer studies in young leaf segments of I. paraguariensis that showed radioactivity in 3X and TB in addition to CF (Yin et al., 2015). A pathway from X→3X→TB→CF has also been reported for Theobroma and Paullinia using CS-type SABATH enzymes (Huang et al., 2016). Like Huang et al., 2016, this represents another departure from the long-assumed pathway to caffeine biosynthesis (XR→7X→TB→CF) as reported in coffee and tea (Figure 1). This instance in Ilex is particularly notable since YM is an Asterid, like coffee and tea. The fact that Ilex, Theobroma, and Paullinia convergently recruited CS genes that independently duplicated and evolved to encode enzymes with similar substrate preferences to catalyse a common pathway to caffeine, in spite of their divergence more than 100 Ma (Yang et al., 2020), is remarkable and suggests a high degree of genetic constraint governing the repeated origin of this trait.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig4-v1.jpg)
+
+**Figure 4.:** (A) Relative enzyme activitiy of IpCS1 (n = 4), IpCS2 (n = 3), and IpCS3 (n = 3) SABATH enzymes with eight xanthine alkaloid substrates. (B) High-performance liquid chromatography (HPLC) traces showing products formed by three encoded caffeine synthase (CS)-type enzymes. Absorbance at 254 nm is shown. (C) Proposed biosynthetic pathway for caffeine in yerba mate. X, xanthine; XR, xanthosine; 1X, 1-methylxanthine; 3X, 3-methylxanthine; 7X, 7-methylxanthine; TP, theophylline; TB, theobromine; PX, paraxanthine. Coloured atoms and arrows indicate atoms that act as methyl acceptors for a given reaction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** m1 is the estimate for Vmax and m2 is the estimate for KM. X, xanthine; 3X, 3-methylxanthine; TB, theobromine.
+
+**Table 4.**
+ Apparent enzyme kinetic parameter estimates for yerba mate caffeine biosynthetic enzymes with selected substrates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enzyme (substrate)</th>
+      <th>KM (μM)</th>
+      <th>kcat (1/s)</th>
+      <th>kcat/KM (s–1 M–1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IpCS1 (X)</td>
+      <td>85.05</td>
+      <td>0.0009</td>
+      <td>10.11</td>
+    </tr>
+    <tr>
+      <td>IpCS2 (3X)</td>
+      <td>197.08</td>
+      <td>0.0031</td>
+      <td>15.77</td>
+    </tr>
+    <tr>
+      <td>IpCS3 (TB)</td>
+      <td>151.19</td>
+      <td>0.0029</td>
+      <td>19.36</td>
+    </tr>
+  </tbody>
+</table>
+
 While the substrate preferences shown in Figure 4 suggest pathway flux from X→3X→TB→CF, IpCS1 also shows secondary activity with 7X to produce TB and IpCS3 can catalyse the formation of CF from paraxanthine (PX) (Figure 4A). Thus, flux through other branches of the xanthine alkaloid biosynthetic network (Figure 1) cannot be excluded. However, it is not clear how 7X or PX would be produced in planta since none of the three enzymes studied here is capable of their formation; therefore, these secondary activities may not be physiologically relevant. In addition, it has been proposed that TP may also be a precursor to caffeine biosynthesis in I. paraguariensis based on radioisotopic feeding studies (Yin et al., 2015), although its levels in plant tissues are 30–160 times lower than TB (Negrin et al., 2019). Our in vitro enzyme assays provide no experimental evidence for that biosynthetic route; however, it is possible that additional MT enzymes from the SABATH (or other) gene family not characterized in this study may perform such reactions. Alternatively, if the exogenously supplied TP was first catabolized to 3X in YM tissues, then the caffeine detected previously (Yin et al., 2015) could have been synthesized via the route described above for IpCS2 + IpCS3 (Figure 4).
 
-## The caffeine biosynthetic pathway in YM evolved from ancestral networks with different inferred flux
+### The caffeine biosynthetic pathway in YM evolved from ancestral networks with different inferred flux
 
 Caffeine is produced within only one small lineage of Ilex that diverged and experienced CS gene duplication (Figure 3) within the last 11 million years (Negrin et al., 2019; Yao et al., 2021) which indicates that the pathway has only recently evolved. The nature by which novel multistep biochemical pathways evolve is a central question in biology (Noda-Garcia et al., 2018). To investigate the caffeine pathway origin in YM, we used Ancestral Sequence Reconstruction (Dean and Thornton, 2007; Thornton, 2004) to study AncIpCS1 and AncIpCS2, the ancestors of the three modern-day enzymes implicated in caffeine biosynthesis in YM (Figure 5, Figure 5—figure supplements 1–4). The ancestral enzyme, AncIpCS1, which gave rise to all three modern-day YM enzymes, exhibits highest relative activity with X, 3X, and 7X (Figure 5A). Methylation of 7X by AncIpCS1 occurred at the N3 position resulting in TB synthesis, whereas xanthine methylation occurred at either the N1 or N3 position to form 1X and 3X, respectively (Figure 5B, Figure 5—figure supplement 5A). AncIpCS1 was capable of methylation of 3X at N1 to produce TP, while methylation at the N7 position led to TB formation (Figure 5B, Figure 5—figure supplement 5A). These data demonstrate that, although AncIpCS1 could not produce caffeine, it could methylate xanthine alkaloids at 3 different positions of the planar heterocyclic ring structures and this combination of activities would have allowed for the ancestor of YM to produce a cocktail of 1X, 3X, TP, and TB by flux through multiple branches of the xanthine alkaloid biosynthetic network with a single enzyme (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-v1.jpg)
+
+**Figure 5.:** (A) Simpliﬁed evolutionary history of three yerba mate (YM) xanthine alkaloid-methylating enzymes and their two ancestors, AncIpCS1 and AncIPCS2. Average site-speciﬁc posterior probabilities (PP) for each ancestral enzyme estimate are provided. Numbers below each branch of the phylogeny represents the number of amino acid replacements between each enzyme shown. These two ancestral relative activity charts (n = 4) show the averaged activities of two allelic variants of each enzyme. Relative substrate preference is also shown for the AncIPCS2 mutant enzyme (n = 3) in which five amino acid positions, A22G, R23C, T25S, H221N, and Y265C, that are inferred to have been replaced during the evolution of IpCS3, were changed. (B) Inferred pathway ﬂux is shown for the antecedent pathways that could have been catalysed by the ancestral or modern-day combinations of enzymes that would have existed at three time points in the history of the enzyme lineage. Arrows linking metabolites are coloured according to the activities detected from each enzyme shown in panel A. Dotted arrows are shown for AncIpCS1’ because it is unknown what characteristics it would possess; it is assumed that it would have at least catalysed the formation of 3X from X since both its ancestor and descendant enzyme do so. X, xanthine; XR, xanthosine; 1X, 1-methylxanthine; 3X, 3-methylxanthine; 7X, 7-methylxanthine; TP, theophylline; TB, theobromine; PX, paraxanthine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Clades of enzymes for which at least one sequence has been functionally characterized are labelled. GAMT, gibberellin MT; IAMT, indole-3-acetic acid MT; FAMT, farnesoic acid MT; BAMT, benzoic acid MT; XMT, xanthine alkaloid MT used for caffeine biosynthesis in Coffea and Citrus; SAMT, salicylic acid MT; JMT, jasmonic acid MT; CS, caffeine synthase in Theobroma, Camellia, and Paullinia. Within the CS clade, the orders of rosids and asterids are labelled to show interrelationships.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-figsupp2-v1.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-figsupp4-v1.jpg)
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Chromatograms for AncIpCS1 assayed with three substrates. (B) Chromatograms for AncIpCS2 assayed with three substrates. (C) Chromatogram for authentic standards. X, xanthine; XR, xanthosine; 1X, 1-methylxanthine; 3X, 3-methylxanthine; 7X, 7-methylxanthine; TP, theophylline, TB, theobromine; PX, paraxanthine. Absorbance at 254 nm is shown.
+
 After gene duplication of AncIpCS1, one daughter enzyme ultimately gave rise to IpCS1, which exhibits preference to methylate xanthine to produce 3X (Figure 5A). The other daughter enzyme, AncIpCS2, appears to have maintained highest activity with X, 3X, and 7X like AncIpCS1 (Figure 5A). However, unlike its ancestor, AncIpCS1, AncIpCS2 evolved high relative activity with 7X to produce not just TB, but also PX by methylation at the N1 position (Figure 5A, Figure 5—figure supplement 5B). AncIpCS2 retained the ancestral activity of AncIpCS1 with xanthine to produce 1X, but also evolved the ability to methylate X at the N7 position (Figure 5B, Figure 5—figure supplement 5B). This enzyme also retained ancestral activity with 3X to produce only TB by N7 methylation but lost the ability to methylate 3X at the N1 position to form TP. These activities of AncIpCS2 would have allowed for ancestral flux to produce 1X, 7X, TB, and PX but not caffeine. Because a YM ancestor could have possessed both AncIpCS2 and a descendant of AncIpCS1, AncIpCS1’ (Figure 5B), additional pathway flux is possible. If AncIpCS1’ retained activities of its ancestor, AncIpCS1, then the ancestral Ilex species could have also produced 3X and TP making for an even more diverse array of xanthine alkaloids in its tissues (Figure 5B). It has been shown that the xanthine alkaloids, 1X, 3X, and TP, can bind to modern-day rat adenosine receptors (Daly et al., 1983). Therefore, if these molecules were to accumulate in ancestral Ilex tissues, they could have conferred a selective advantage which would likely result in retention of the ancient genes. Ultimately, once gene duplication led to the generation of the three modern-day CS-type enzymes in YM, pathway flux could be channelled away from intermediates like 1X and TP such that the modern-day pathway to caffeine evolved (Figure 5B). Not only did the modern-day CS enzymes of YM evolve to catalyse a pathway from X>3X>TB>CF from ancestral biosynthetic networks of different products, Theobroma and Paullinia also independently evolved enzymes with similar properties (Huang et al., 2016). And, they did so from ancestral pathways that, like YM, had alternative ancestral fluxes (O’Donnell et al., 2021). While it could be due to chance alone that all three lineages converged to catalyse a similar pathway from differing ancestral networks, it is also possible that it was advantageous to specialize for flux to TB via X and 3X because either it is more enzymatically favourable or these intermediates have greater adaptive value than other structural isomers.
 
-## Protein crystal structure of IpCS3 reveals convergent structural basis for methylation of theobromine to form caffeine
+### Protein crystal structure of IpCS3 reveals convergent structural basis for methylation of theobromine to form caffeine
 
 We successfully crystallized and determined the 2.7 Å resolution structure of IpCS3 (PDB ID: 8UZD), that converts TB into CF. This enzyme crystallizes as a holo-homodimer, bound to both of its reaction products: S-adenosyl-homocysteine (SAH) and caffeine (Figure 6A, Table 5). As is typical for the SABATH family of methyltransferases, IpCS3 exhibits a Rossman-like fold composed of seven β-strands surrounded by five α-helices which bind the methyl-donor S-adenosyl-L-methionine (SAM), as well as an α-helical cap which binds the methyl-acceptor theobromine (McCarthy and McCarthy, 2007; Petronikolou et al., 2018; Zhao et al., 2008; Zubieta et al., 2003). This structural information of the enzyme bound to both of its products, SAH and caffeine, facilitates an in-depth comparison of the active site structures of the caffeine-producing CS-type enzyme found in Ilex to the XMT-type enzyme in Coffea canephora (McCarthy and McCarthy, 2007) (CcDXMT) to determine the extent to which convergence of physicochemical properties of the active site has allowed for independent specialization for theobromine methylation by the paralogous SABATH enzymes. Although the IpCS3 structure was obtained in complex with its product, caffeine (Figure 6—figure supplement 1), it can be assumed that the binding mode is conserved for its precursor, theobromine. Indeed, our computational modelling of theobromine in the active site of IpCS3 predicts it to be oriented as we have discerned from the diffraction data (Figure 6—figure supplement 2). Thus, in the following comparisons, the atomic numbering for the theobromine precursor will be used to facilitate comparison to the CcDXMT structure.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig6-v1.jpg)
+
+**Figure 6.:** (A) Overview of the crystal structure of IpCS3 (PDB ID: 8UZD) depicting the active site of the enzyme in complex with CF and SAH. (B) Relevant residues in IpCS3 for ligand recognition. (C) Relevant residues in CcDXMT (PDB ID: 2EFJ) for ligand recognition. Protein residues are displayed as lines with carbon atoms coloured in bluewhite while small molecules – CF, theobromine (TB), and SAH – are drawn as sticks. Colour code for the rest of the atoms: nitrogen (blue), oxygen (red), and sulphur (yellow). Hydrogen bond interactions are indicated as black dotted lines.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Relevant residues in IpCS3 for ligand recognition are displayed as lines with carbon atoms coloured in grey, while small molecules – caffeine (CF) and S-adenosyl-homocysteine (SAH) – are drawn as sticks and labelled. Colour code for the rest of the atoms: nitrogen (blue), oxygen (red), and sulphur (yellow).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) IpCS3–CF complex (PDB ID: 8T2G). (B) IpCS3–TB complex (docking model). Protein residues are displayed as lines with carbon atoms coloured in bluewhite while small molecules – theobromine (TB), caffeine (CF), and S-adenosyl-homocysteine (SAH) – are drawn as sticks. Colour code for the rest of the atoms: nitrogen (blue), oxygen (red), and sulphur (yellow). Hydrogen bond interactions are indicated as dotted lines.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Accession numbers are as follows: TcCS1 (EOY17874), PcCS1 (EC766748), IpCS1 (CAK9135737), CisXMT1 (KDO50937), TcCS2 (EOY17880), PcCS2 (EC778019), IpCS2 (CAK9135740), CsTCS2 (AB031281), CcXMT1 (JX978518), CaXMT1 (AB048793), CaXMT2 (AB084127), CsTCS1 (AB031280), TcBTS1 (AB096699), CcMXMT1 (JX978517), CaMXMT1 (AB048794), CaMXMT2 (AB084126), CisXMT2 (XP_006469448), PcCS (BK008796), CaDXMT1 (AB084125), CaDXMT2 (KJ577793), CcDXMT (JX978516), IpCS3 (CAK9135742), and CbSAMT (AAF00108).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Accession numbers are as follows: TcCS1 (EOY17874), PcCS1 (EC766748), IpCS1 (CAK9135737), CisXMT1 (KDO50937), TcCS2 (EOY17880), PcCS2 (EC778019), IpCS2 (CAK9135740), CsTCS2 (AB031281), CcXMT1 (JX978518), CaXMT1 (AB048793), CaXMT2 (AB084127), CsTCS1 (AB031280), TcBTS1 (AB096699), CcMXMT1 (JX978517), CaMXMT1 (AB048794), CaMXMT2 (AB084126), CisXMT2 (XP_006469448), PcCS (BK008796), CaDXMT1 (AB084125), CaDXMT2 (KJ577793), CcDXMT (JX978516), IpCS3 (CAK9135742), and CbSAMT (AAF00108).
+
+**Table 5.**
+ Data collection and refinement statistics of IpCS3 structure bound to S-adenosyl-homocysteine (SAH) and caffeine.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">IpCS3 in complex with SAH and caffeine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB</td>
+      <td>8UZD</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9786</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.72</td>
+    </tr>
+    <tr>
+      <td>Resolution rangea*</td>
+      <td>37.00–2.72</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.82–2.72)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 41 21 2</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>82.67, 82.67, 226.09</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00, 90.00, 90.00</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>43,818</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>21,910</td>
+    </tr>
+    <tr>
+      <td>Multiplicitya*</td>
+      <td>2.0 (2.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)a*</td>
+      <td>99.89 (100.00)</td>
+    </tr>
+    <tr>
+      <td>&lt;I/σI&gt;a</td>
+      <td>25.79 (2.87)</td>
+    </tr>
+    <tr>
+      <td>Rmergea,b†* (%)</td>
+      <td>0.0223 (0.2168)</td>
+    </tr>
+    <tr>
+      <td>Rmeas (%)a*</td>
+      <td>0.0315 (0.3066)</td>
+    </tr>
+    <tr>
+      <td>CC1/2a*</td>
+      <td>0.999 (0.878)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.72</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>21,909</td>
+    </tr>
+    <tr>
+      <td>Rworkc ‡/Rfreed §</td>
+      <td>0.194/0.248</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>5,216</td>
+    </tr>
+    <tr>
+      <td>CFF + SAH</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>63.38</td>
+    </tr>
+    <tr>
+      <td>CFF + SAH</td>
+      <td>84.48</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>48.19</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.112</td>
+    </tr>
+  </tbody>
+</table>
+
+_*aNumbers in parentheses refer to the highest resolution shell.†bRmerge = Σ|Ii − <Ii>|/ΣIi, where Ii = the intensity of the ith reflection and <Ii> = mean intensity.‡cRwork = Σ|Fo − Fc|/Σ|Fo|, where Fo and Fc are the observed and calculated structure factors, respectively.§dRfree was calculated as for Rwork, but on a test set comprising 5% of the data excluded from refinement._
 
 In both CcDXMT and IpCS3, there are several conserved residues, shared by nearly all SABATH enzymes (Figure 6—figure supplements 3 and 4), that form the active site pocket and appear to play important roles in binding many different substrates (Petronikolou et al., 2018; Zubieta et al., 2003). His160 and Trp161 in CcDXMT are in the same relative positions as His155 and Trp156 in IpCS3 (Figure 6B, C). These residues are ca. 3 Å from TB and participate in H-bonding but to different atoms of the substrate. In CcDXMT, the NE2 of His160 and NE1 of Trp161 form hydrogen bonds to carbonyl O2 of TB when positioned for N1 methylation; yet, in the structure of IpCS3 these corresponding side chain groups form hydrogen bonds to O6 of TB. Despite these two residues being conserved for H-bonding, the substrates are rotated 180° along an axis going through N1 and C4. Thus, the conserved His and Trp residues interact with opposing carbonyls in TB/CF but still position the substrate for N1 methylation (Figure 6B, C).
 
@@ -96,76 +681,92 @@ On the other hand, there are residues that differ between the two enzymes but ap
 
 In order to experimentally test for the functional importance of the active site residues identified in the crystal structure of IpCS3 for the evolution of TB methylation preference, we performed site-directed mutagenesis. We chose to mutate five amino acid positions that appear to be important for governing xanthine alkaloid methylation in IpCS3 and other CS-type enzymes (Jin et al., 2016; O’Donnell et al., 2021; Wang et al., 2023; Yoneyama et al., 2006); these included A22G, R23C, T25S, H221N, and Y265C (Figure 6—figure supplements 3 and 4). When we mutated all five amino acid residues simultaneously in AncIpCS2, we found that activity with TB increased dramatically relative to 3X and all other xanthine alkaloid substrates (Figure 5A). Thus, these five sites appear to be crucial for the evolution of TB methylation in the history of the YM lineage and further indicate that convergence of caffeine biosynthesis in different species is a result of amino acid replacements at these sites. The homologous sites to H221N and Y265C in Theacrine synthase from Camellia assamica were also shown by mutagenesis to be important for the evolution of trimethyluric acid methylation (Zhang et al., 2020a) thereby providing further support for the functional significance of these positions for xanthine alkaloid binding.
 
-## Computational modelling of IpCS1 and IpCS2 active sites predict convergent substrate-binding residues for xanthine and 3-methylxanthine methylation
+### Computational modelling of IpCS1 and IpCS2 active sites predict convergent substrate-binding residues for xanthine and 3-methylxanthine methylation
 
 Previous studies used site-directed mutagenesis of two sequence regions in CS-type caffeine biosynthetic enzymes from Theobroma (TcCS1/2) and Paullinia (PcCS1/2) to uncover the mutational basis for the convergent evolution of substrate preference switches towards their preferred substrates, X and 3X (O’Donnell et al., 2021). In order to determine whether the same regions were convergently mutated in IpCS1 and IpCS2, and provide binding interactions with X and 3X, respectively, AlphaFold2 (Mirdita et al., 2022) models and subsequent docking studies were performed (Figure 7, Figure 7—figure supplement 1). Modelling of substrate binding in the predicted active sites of IpCS1 and IpCS2 (Figure 7A and B) shows that the preferred substrates have optimal binding orientations that would result in methylation to form the products that were experimentally detected in our assays shown in Figure 4. From our docking simulations, IpCS1 residues W156, N221, and Y265 are positioned for hydrogen bonding with the carbonyl moieties of xanthine to position N3 for methyl transfer from SAM (Figure 7A). Although Theobroma and Paullinia CS1 enzymes, as well as Citrus XMT1, specialized for xanthine methylation also possess W156 and Y265 in the homologous positions (Figure 6—figure supplements 3 and 4), these residues are highly conserved among nearly all angiosperm SABATH enzymes. On the other hand, the homologous position to N221 which is important for IpCS1 did not change concomitantly with the evolution of X preference in either Theobroma or Paullinia (Figure 6—figure supplements 3 and 4); instead, when Theobroma and Paullinia ‘region III’ was mutated, activity with X improved (O’Donnell et al., 2021). Because IpCS1 was not mutated in the homologous region III, there appear to be convergent solutions allowing for efficient positioning of X for 3X biosynthesis among these enzymes. In the case of IpCS2, two hydrogen bond donors, S24 and T25, appear to contribute to the positioning of 3X in the active site (Figure 7B). This homologous region was experimentally mutated in Theobroma and Paullinia CS2 enzymes and improved specialization for 3X methylation in both, although the actual substitutions are different in each case (O’Donnell et al., 2021). Thus, this may represent an additional instance where convergent mutations of the same region lead to specialization for 3X methylation. If crystal structures could be generated for all of these caffeine-producing enzymes in the future, even more detailed insights about active site architecture could be gleaned and would further enhance our understanding of these convergent activities.
 
-## Comparative phylogenomic analyses of caffeine biosynthetic genes reveal historical constraints to convergent gene co-option
+![Figure 7.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig7-v1.jpg)
+
+**Figure 7.:** (A) IpCS1–X complex. (B) IpCS2–3X complex. Protein residues are displayed as lines with carbon atoms coloured in bluewhite while small molecules – xanthine (X), 3-methylxanthine (3X), caffeine (CF), paraxanthine (PX), S-adenosyl-L-methionine (SAM), and S-adenosyl-homocysteine (SAH) – are drawn as sticks. Colour code for the rest of the atoms: nitrogen (blue), oxygen (red), and sulphur (yellow). Hydrogen bond interactions are indicated as black dotted lines.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Sequence coverage of the multiple sequence alignment used for IpCS1 (A), IpCS2 (B), and IpCS3 (C). Alignment error for IpCS1 (D), IpCS2 (E), and IpCS3 (F). pLDDT score of IpCS1 (G), IpCS2 (H), and IpCS3 (I).
+
+### Comparative phylogenomic analyses of caffeine biosynthetic genes reveal historical constraints to convergent gene co-option
 
 Many nearly ubiquitous specialized metabolites involved in defence, development and floral scent are produced by SABATH enzyme family members that appear to be conserved across diverse angiosperm lineages, such as SAMT that methylates salicylic acid (Dubs et al., 2022) and IAMT that methylates indole-3-acetic acid (Zhao et al., 2008). However, caffeine is sporadically distributed among disparate angiosperm lineages and seems to have only recently evolved by convergence in a few distantly related orders (Huang et al., 2016). Our comparative evolutionary genomic analysis of the CS and XMT syntenic regions across angiosperm (Figure 8) indicates that predicting which SABATH locus a given lineage might co-opt for caffeine biosynthesis is more dependent upon the idiosyncratic history of gene loss than phylogenetic relatedness. For example, in the case of the CS syntenic region used for caffeine biosynthesis in YM and Theobroma, Coffea lacks a CS orthologue and none can be detected from its genome (Figure 8—figure supplement 1A). Thus, only XMT was historically available for recruitment in Coffea. Conversely, YM appears to have lost any vestiges of XMT orthologues known to be responsible for caffeine biosynthesis in Coffea and Citrus (Figure 8—figure supplement 1B–D). This lack of genomic potential may be seen as an evolutionary constraint to gene recruitment for caffeine biosynthesis in Coffea and YM.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig8-v1.jpg)
+
+**Figure 8.:** Both CS- and XMT-type caffeine biosynthetic enzymes were present in the ancestor of core eudicots but numerous apparent losses of one or the other or both has occurred during lineage diversification. Gene loss is represented by vertical bar on relevant branches of the cladogram.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/104759/elife-104759-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Synteny-based analysis of the CS genomic region for seven angiosperm taxa. (B–D) Synteny-based analyses of the XMT genomic regions for seven angiosperm taxa. Angiosperm taxa: GH, Gossypium hirsutum; TC, Theobroma cacao; CiS, Citrus sinensis; IP, Ilex paraguariensis; CC, Coffea canephora; AC, Actinidia chinensis; CS, Camellia sinensis. Genes: CS, caffeine synthase-type enzyme; EIF3F, eukaryotic translation initiation factor 3 subunit F; POT, proton‐dependent oligopeptide transporter; XMT, xanthine methyltransferase-type enzyme; RPIA, ribose 5-phosphate isomerase A; BAO, beta-amyrin 28-oxidase-like; UAE, UDP-arabinose 4-epimerase 1-like; IQM, IQ domain-containing protein; PTC52, protochlorophyllide-dependent translocon component 52; CBP, calcium-binding protein; MYB, MYB transcription factor; RBCMT, ribulose-1,5 bisphosphate carboxylase/oxygenase large subunit N-methyltransferase; NUDT2, nudix hydrolase 2-like, SRT1, NAD-dependent protein deacetylase; RIN4, RPM1 interacting protein 4; NSP5, nitrile specifier protein 5.
 
 A broader phylogenetic perspective on the XMT and CS syntenic regions provides further insight into genomic canalization and allows for predictions about the underlying genetic basis for caffeine biosynthesis in as-of-yet characterized lineages. As shown in Figure 8, several angiosperm lineages have neither XMT nor CS and this may explain why caffeine has apparently never evolved in the large and diverse orders Brassicales, Asterales, Solanales and Lamiales even though it has been shown to be advantageous in transgenic plants (Kim et al., 2011; Kim et al., 2006). In the case of Cola, a caffeine-producing genus from Africa (Niemenak et al., 2008), it is predicted to have co-opted CS genes for xanthine alkaloid methylation because the order Malvales to which it belongs appears to have lost XMT orthologues prior to its origin (Figure 8). Tests of this hypothesis await genomic sequences and functional studies of Cola enzymes. However, even with a functional XMT or CS enzyme, gene duplication and protein functional diversification appears to be required to assemble a complete pathway to caffeine as shown here for YM. Nonetheless, because molecular clock analyses indicate that the caffeine-producing Coffea, Camellia, Citrus, Paullinia, and Ilex lineages each originated within only the last 10–20 million years (Buerki et al., 2011; Hamon et al., 2017; Pfeil and Crisp, 2008; Yao et al., 2021; Zan et al., 2023), it suggests that the evolution of novel specialized metabolic pathways like that of caffeine can be relatively rapid.
 
 ## Materials and methods
 
-## Plant materials
+### Plant materials
 
 I. paraguariensis A. St.-Hil. var. paraguariensis, cv CA 8/74 (INTA-EEA Cerro Azul, Misiones, Argentina) and cv SI-49 (Establecimiento Las Marías S.A.C.I.F.A., Corrientes, Argentina) were used in this study. High productivity, increased tolerance to drought, and ease of propagation with stem cuttings characterize these genotypes (Acevedo et al., 2019; Avico et al., 2023; Tarragó et al., 2012).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 Two DNA extraction and sequencing approaches were combined to improve the accuracy of genome assembly. First, young leaves of cv CA 8/74, preserved in silica-gel, were used to isolate total genomic DNA with the DNeasy Plant Mini Kit (QIAGEN), following the manufacturer’s instructions. Paired-end libraries (with insert sizes of 350 and 550 bp) and mate-pair libraries (with insert sizes of 3, 8, and 12 kbp) were constructed using the Illumina TruSeq DNA Sample Preparation Kit and Illumina Nextera Mate Pair Library Preparation Kit following the kit’s instructions, respectively. The obtained libraries were sequenced on an Illumina HiSeq 1500 platform, generating ~263.2 Gb of raw data. Second, young leaves of cv SI-49, preserved in silica-gel, were used to purify high molecular weight DNA with the Quick-DNA HMW MagBead Kit (Zymo Research), according to the manufacturer’s instructions. Long reads libraries were prepared using Sequel Binding Kit 1.0 (Pacific Biosciences), following the manufacturer’s instructions. The obtained libraries were subsequently sequenced on PacBio Sequel I (Pacific Biosciences) using Sequel Sequencing Kit 1.0 (Pacific Biosciences) and SMRT Cell 1M (Pacific Biosciences), generating ~77.5 Gb of additional raw data.
 
-## Genome assembly and quality assessment
+### Genome assembly and quality assessment
 
 We opted for a pipeline that could take advantage of both short and long sequencing technologies. For the short reads, we applied Trimmomatic v.0.39 (Bolger et al., 2014) to remove adaptor contaminations and filter low-quality reads (reads with mean quality scores ≤25, reads where the quality of the bases at the head or tail was ≤10 and reads with a length ≤30 bp). The resulting clean reads were then corrected using Quake v.0.3 (Kelley et al., 2010). Contig assembly and scaffolding was done using the assembler SOAPdenovo v.2 (Luo et al., 2012) (55-mer size), with the mate-pair reads being used to link contigs into scaffolds. After the assembly, DeconSeq v.0.4.3 (Schmieder and Edwards, 2011) was used to detect and remove sequence contaminants. Contigs and scaffolds clearly belonging to the chloroplast and mitochondria genomes were also discarded. YM transcriptome sequences (Acevedo et al., 2019; Debat et al., 2014; Fay et al., 2018) and public databases KOG (Tatusov et al., 2003) and DEG (Luo et al., 2014) were used to validate the genome assembly. Canu v.2.2 (Koren et al., 2017) was used to perform the self-correction and assembly of the long reads, using the default parameters and stopOnLowCoverage = 20. For both short and long assemblies, we separated the assembly haplotypes (haplotigs) using PurgeHaplotigs (Roach et al., 2018) with the recommended parameter values. Then, we merged both SOAPdenovo v.2 and Canu v.2.2 curated assemblies using Quickmerge v.03 (Chakraborty et al., 2016), where only contigs with minimum overlap of 5000 bp (-ml 5000) were merged and only the contigs greater than 1000 bp (-l 1000) were retained. The resulting scaffolds and contigs were refined further with the gap-filling module in SOAPdenovo v.2 (GapCloser) and SSPACE v.2.1.1 (Boetzer et al., 2011).
 
-## Gene prediction and annotation
+### Gene prediction and annotation
 
 First, we masked the genome assembly with RepeatMasker (http://repeatmasker.org/). Then, we predicted the protein- and non-coding genes using Funannotate v.1.8.13 (Palmer and Stajich, 2019) previously training it with the available I. paraguariensis RNA-Seq experiments (NCBI projects PRJNA315513, PRJNA375923, and PRJNA251985). Then, Infernal v.1.1.4 (Nawrocki and Eddy, 2013) was employed to improve the prediction of small RNAs and microRNAs, while tRNAScan-SE v.2.0 (Chan and Lowe, 2019) was used to improve the prediction of transfer RNAs. Ribosomal RNAs were predicted using RNAmmer v.1.2 (Lagesen et al., 2007). The TAPIR web server (Bonnet et al., 2010) (http://bioinformatics.psb.ugent.be/webtools/tapir) and the TargetFinder software v.1.7 (Fahlgren and Carrington, 2010) were used to identify miRNA targets. InterProScan v.5.55-88.0 (Jones et al., 2014) and eggNOG-mapper v.2.1.7 (Huerta-Cepas et al., 2019) were employed for the functional assignment of the predicted genes.
 
-## Repeat content estimation
+### Repeat content estimation
 
 The repeat content was estimated employing Dfam TE Tools v.1.5 (https://github.com/Dfam-consortium/TETools copy archived at Rosen and Gray, 2024). First, we used RepeatModeler v.2.0.3 (Flynn et al., 2020) to build a database with Ilex repeat families. Then, we merged that database with Dfam v3.6 (Hubley et al., 2016) and GIRI Repbase ver 20181026 (Jurka et al., 2005). Finally, we ran RepeatMasker on the assembly using the merged database to look for repeat sequences.
 
-## Genome duplication analysis
+### Genome duplication analysis
 
 Rates of synonymous substitution (Ks) between paralogous genes and orthologous genes in Lactuca sativa, Daucus carota, I. paraguariensis, C. canephora, and Vitis vinifera were determined using CoGe’s tool SynMap (https://genomevolution.org/). Gaussian mixture models were fitted to the resulting Ks distributions with the mclust R package v.5.0 (Scrucca et al., 2016), and significant peaks were identified using the SiZer R package v.0.1-7 (Chaudhuri and Marron, 2000). To estimate the age of the lineage-specific polyploidization event (Ip-α) in Ilex, we considered two different phylogenies (a multiple nuclear genome phylogeny and a plastid genome phylogeny). With the median Ks value of YM-grape orthologues (~0.89) and the divergence date of the two species (125.64 Ma for the multiple nuclear genome phylogeny and 123.7 Ma for the plastid genome phylogeny), we calculated the number of substitution per synonymous site per year (r) for YM (divergence date = Ks/(2 × r)). Conforming to the multiple nuclear genome phylogeny, the YM r value is 3.54E−9; while for the plastid genome phylogeny, the YM r value is 3.59E−9. These r values and the SiZer Ks range of YM paralogues (~0.35–0.5) were then applied to estimate the age of Ip-α. Finally, to determine the syntenic depth ratio between I. paraguariensis and C. canephora and V. vinifera, we employed CoGe’s tool SynFind (https://genomevolution.org/), using a distance cutoff of 10 genes and requiring at least 5 gene pairs per synteny block.
 
-## Gene expression quantitation
+### Gene expression quantitation
 
 First, YM transcriptome reads (PRJNA315513) were mapped to IpCS1–5 transcripts, obtained from the de novo transcriptome assembly and annotation, using BWA (Li and Durbin, 2009). Then, with the number of mapped reads, the abundance of each transcript was calculated, normalized by transcript length and transcriptome size (quantification in RPKM, reads per kilobase per million mapped reads).
 
-## Cloning, mutagenesis, heterologous expression, and purification of enzymes
+### Cloning, mutagenesis, heterologous expression, and purification of enzymes
 
 Two different approaches were used to clone IpCS genes: RT-PCR from leaf tissue and custom gene synthesis. For RT-PCR of IpCS2, cDNA was obtained from 1 µg of RNA from fresh YM leaves using standard procedures and cycling conditions with the following two primers: IpCS2F 5′-ATGGACGTGAAGGAAGCAC-3′ and IpCS2R 5′-CTATCCCATGGTCCTGCTAAG-3′. Following amplification, cDNA was cloned using the pTrcHis TOPO TA Expression Kit (Invitrogen, Carlsbad, CA). Ligation of cDNA into the pTrcHis vector and subsequent transformation into Top10 E. coli cells was carried out according to the manufacturer’s protocol. The transformation mixture was incubated overnight at 37°C on LB plates containing 50 µg/ml ampicillin. Colonies were screened by PCR to obtain full-length inserts that were subsequently verified for insert orientation by DNA sequencing. For IpCS1 and 3 and AncIpCS1 and 2, gene sequences were synthesized by GenScript with codons optimized for expression in E. coli. Synthesized genes were subcloned from the pUC57 cloning vector into the pET-15b (Novagen) expression vector using 1.5 μg of DNA and NdeI and BamHI in 30 μl reactions. Linear fragments corresponding to the expected sizes were gel purified using the QIAEX II Gel Extraction Kit (QIAGEN Corp) according to the manufacturer’s instructions. Purified DNA fragments were ligated into pET-15b using T4 DNA ligase from New England Biolabs. Ligation products were transformed into Top10 E. coli cells using 2 μl of the ligation reaction. Site-directed mutagenesis of AncIpCS2 was carried out using the Agilent QuikChange Lightning Kit (Agilent Technologies Inc, Santa Clara, CA) following the manufacturer’s protocol. Minipreps of positive transformants were obtained using a QIAprep Spin Miniprep Kit (QIAGEN Corp) and 10 ng of each plasmid was used to transform BL21 E. coli cells using standard plating and incubation methods.
 
 Induction of His6-protein was achieved in 50 ml cell cultures of BL21 (DE3) with IpCS1 and 3 and AncIpCS1 and 2 in pET-15b or Top10 with IpCS2 in pTrcHis with the addition of 1 mM IPTG at 23°C for 6 hr. Purification of the His6-tagged protein was achieved by TALON spin columns (Takara Bio) following the manufacturer’s instructions. Bradford assays were used to determine purified protein concentration, and recombinant protein purity was evaluated on sodium dodecyl sulphate–polyacrylamide gel electrophoresis gels.
 
-## Enzyme assays
+### Enzyme assays
 
 All enzymes were tested for activity with the eight xanthine alkaloid substrates shown in Figure 1. Radiochemical assays were performed at 24°C for 60 min in 50 µl reactions that included 50 mM Tris–HCl buffer, 0.01 µCi (0.5 µl) 14C-labelled SAM, 10–20 µl purified protein, and 1 mM methyl acceptor substrate dissolved in 0.5 M NaOH. Negative controls were composed of the same reagents, except that the methyl acceptor substrate was omitted and 1 µl of 0.5 M NaOH was added instead. Methylated products were extracted in 200 µl ethyl acetate and quantified using a liquid scintillation counter. The highest enzyme activity reached with a specific substrate was set to 1.0 and relative activities with remaining substrates were calculated. Each assay was run at least three times so that mean, plus standard deviation, could be calculated.
 
-## High-performance liquid chromatography
+### High-performance liquid chromatography
 
 Product identity of enzyme assays was determined using high-performance liquid chromatography (HPLC) on 500 μl scaled-up reactions utilizing all the same reagents as described above except that non-radioactive SAM was used as the methyl donor and reactions were allowed to progress for 4 hr. Whole reactions were filtered through Vivaspin columns (Sartorius) to remove all protein prior to injection in the HPLC. Mixtures were separated by HPLC using a two-solvent system with a 250 mm × 4.6 mm Kinetex 5 μM EVO C18 column (Phenomenex). Solvent A was 99.9% water with 0.1% trifluoroacetic acid and Solvent B was 80% acetonitrile, 19.9% water and 0.1% TFA and a 0–20% gradient was generated over 16 min with a flow rate of 1.0 ml/min. Product identity was determined by comparing retention times and absorbance at 254 and 272 nm of authentic standards. Reactions were compared to negative controls in which no methyl acceptor substrates were added.
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 In order to accurately determine the orthology of YM SABATH sequences encoded in the genome, we compared them to all previously functionally characterized gene family members in other species. We also included CS and XMT orthologues from the orders of caffeine-producing species (Malvales, Ericales, Gentianales, Sapindales) available in public databases (GenBank, OneKP) as shown in Figure 3. Accession numbers for all sequences are provided in . Alignment of amino acid sequences was achieved using MAFFT v.7.0 (Katoh and Standley, 2013) and employing the auto search strategy to maximize accuracy and speed. A phylogenetic estimate was obtained using FastTree v.2 (Price et al., 2010) assuming the Jones–Taylor–Thorton model of amino acid substitution with a CAT approximation using 20 rate categories. Reliability of individual nodes was estimated from local support values using the Shimodaira–Hasegawa test as implemented in FastTree.
 
-## Ancestral sequence resurrection
+### Ancestral sequence resurrection
 
 In order to obtain accurate ancestral CS protein estimates, we assembled two datasets to assess variation in terms of sampling. The first dataset included 154 sequences including all CS-type enzymes we could retrieve from GenBank and China National Gene Bank as well as representatives of all other functionally characterized clades of SABATH enzymes (Figure 5—figure supplement 1). In this dataset, the only Ilex sequences available were IpCS1–3. This dataset resulted in highly confident estimates for AncIpCS1 and AncIpCS2 (average site-specific posterior probabilities >0.99 in both cases). Subsequently, once additional Ilex genomes became available, we estimated a second set of ancestral sequences using 29 CS-type enzymes from asterids to assess uncertainty in our initial estimates (Figure 5—figure supplement 2). In this subsequent analysis, highly confident estimates for AncIpCS1 and AncIpCS2 were obtained with average site-specific posterior probabilities >0.99 in both cases (see Figure 5). MAFFT v.7.0 (Katoh and Standley, 2013) was used to align the protein sequences in both datasets using the auto search strategy to maximize accuracy and speed; subsequently, IQTree (Trifinopoulos et al., 2016) was used to obtain trees describing the relationships amongst the aligned sequences for both datasets. For the first set of ancestral sequence estimates, the Jones, Taylor, and Thorton matrix model for amino acid substitution and the Free rate model for among-site rate heterogeneity (Yang, 1995) was determined to be the best fit. For the second dataset, the Q matrix as estimated for plants (Ran et al., 2018) with a gamma model for rate heterogeneity was the preferred model. IQTree estimates ancestral sequences using the empirical Bayesian approach (Trifinopoulos et al., 2016). In order to determine ancestral protein lengths in regions with alignment gaps, we coded each gap for the number of amino acids possessed and used parsimony to determine ancestral residue numbers as in our previous studies (Huang et al., 2016). The estimated sequences were synthesized by Genscript Corp and had codons chosen for optimal protein expression in Escherichia coli and were cloned into pET15b for expression and purification using the His6 tag. Details of expression were the same as described above for the modern-day enzymes. Although the two separate ancestral sequence estimates are highly similar to one another (>95% identity in both cases), the two AncIpCS1 proteins differ at 10 positions and those for AncIpCS2 differ at seven positions (Figure 5—figure supplements 3 and 4).
 
-## Crystallization, data collection, phasing, and refinement of IpCS3
+### Crystallization, data collection, phasing, and refinement of IpCS3
 
 Initial crystallization screening was performed using the IpCS3 methyltransferase at a concentration of 30 mg/ml incubated with 2 mM TB and 2 mM SAM. Sitting-drop for crystallization screening was set up by equal volume of precipitant and protein solution (0.25:0.25 µl) using a Crystal Gryphon robot (Art Robbins Instruments) and a reservoir volume of 45 µl. Trays were incubated at 9°C. Initial hits were further optimized using the hanging-drop method at 9°C, with 150 µl reservoir solution and 1:1 ratio of precipitant to protein and ligand solution in a 2-µl drop. Attempts to crystallize with SAH or uncleavable SAM analogs and TB to attain a pre methylation structure were unsuccessful given the poor diffraction of these crystals. Therefore, the latter was composed of 33 mg/ml IpCS3 protein concentration, 4 mM TB and 2 mM SAM, and the crystallization condition was optimized to 25% PEG 3350, 0.2 M NH4SO4, 0.1 M Bis-Tris methane pH 5.5. Square crystals grew over 10 days, but initial X-ray crystallography data revealed a poor electron density for SAH and an electron density in the active site for CF, the product, rather than for TB. Consequently, crystals were grown in the aforementioned condition and subsequently soaked for 4 hr at 9°C in the precipitant solution supplemented with 10 mM SAH and 10 mM TB. The idea was to supply an excess of the expended methyl source and additional TB to convert any existing SAM as we did not have access to caffeine as a reagent. Crystals were transiently soaked in the precipitant solution supplemented with 20% ethylene glycol immediately prior to vitrification by direct immersion into liquid nitrogen. Diffraction data were collected at the Advanced Photon Source (APS) at Argonne National Laboratory Sector-21 via the Life Sciences-Collaborative Access Team (LS-CAT) at beamline 21-ID-G. Diffraction data were indexed, integrated, and scaled using the autoPROC software package (Vonrhein et al., 2011). The structure was solved by molecular replacement using Phaser-MR included in the Phenix software package (Adams et al., 2010), using PDB ID 6LYH structure as the replacement model. The model was subject to rounds of manual building followed by refinement using REFMAC5 (Murshudov et al., 2011), and was manually built in COOT v.0.9.8.3 (Emsley et al., 2010). Crystallographic statistics are listed in Table 5.
 
-## Structure prediction and molecular docking
+### Structure prediction and molecular docking
 
 Protein structures of IpCS enzymes were predicted using the ColabFold implementation of AlphaFold2 (Mirdita et al., 2022) with no template. Diagnostic plots depicting the MSA coverage, alignment error and LDDT are shown in the supplementary information (Figure 7—figure supplement 1). Structures of xanthine alkaloid ligands (X, 3X, and TB) were downloaded from the ChEMBL database Mendez et al., 2019; protonation states were checked by Chemicalize (Swain, 2012) and optimized using the VMD Molefacture plugin (Humphrey et al., 1996). The receptor structures were prepared following the standard AutoDock protocol (Morris et al., 2009) using the prepare_receptor4.py script from AutoDock Tools. All non-polar hydrogens were merged, and Gasteiger charges and atom types were added. The ligand PDBQT was prepared using the prepare_ligand4.py script. The grid size and position were chosen to contain the whole ligand-binding site (including all protein atoms closer than 5 Å from all ligands). For each system, 10 different docking runs were performed. Docking was performed using AutoDock Vina v.1.2.0 (Eberhardt et al., 2021). The docking results were further analysed by visual inspection. Images of the molecules were prepared using the PyMOL molecular graphics system (Schrodinger, 2015).
 
-## Synteny comparisons and phylogenetic distribution of CS and XMT
+### Synteny comparisons and phylogenetic distribution of CS and XMT
 
 The presence or absence of CS and XMT genes was determined for orders of plants for which at least one genomic sequence exists, as shown in Figure 8. For those species which do not yet have an available assembly, we used BLAST (Altschul et al., 1990) analyses of GenBank (nr and TSA databases), Phytozome (Goodstein et al., 2012) as well as the OneKP dataset (One Thousand Plant Transcriptomes Initiative, 2019) in China National GeneBank. BLAST combined with subsequent phylogenetic analyses were also used to verify presence/absence of CS- or XMT-type sequences in cases where the syntenic regions did not appear to encode one or the other gene. Comparisons of the CS and XMT syntenic regions were performed using CoGe’s tool GEvo (https://genomevolution.org/).

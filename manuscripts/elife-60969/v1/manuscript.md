@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Mammalian target of rapamycin complex 1 (TORC1) is controlled by the GATOR complex composed of the GATOR1 subcomplex and its inhibitor, the GATOR2 subcomplex, sensitive to amino acid starvation. Previously, we identified fission yeast GATOR1 that prevents deregulated activation of TORC1 ( Chia et al., 2017 ). Here, we report identification and characterization of GATOR2 in fission yeast. Unexpectedly, the GATOR2 subunit Sea3, an ortholog of mammalian WDR59, is physically and functionally proximal to GATOR1, rather than GATOR2, attenuating TORC1 activity. The fission yeast GATOR complex is dispensable for TORC1 regulation in response to amino acid starvation, which instead activates the Gcn2 pathway to inhibit TORC1 and induce autophagy. On the other hand, nitrogen starvation suppresses TORC1 through the combined actions of the GATOR1-Sea3 complex, the Gcn2 pathway, and the TSC complex, another conserved TORC1 inhibitor. Thus, multiple, parallel signaling pathways implement negative regulation of TORC1 to ensure proper cellular starvation responses.
+Mammalian target of rapamycin complex 1 (TORC1) is controlled by the GATOR complex composed of the GATOR1 subcomplex and its inhibitor, the GATOR2 subcomplex, sensitive to amino acid starvation. Previously, we identified fission yeast GATOR1 that prevents deregulated activation of TORC1 (Chia et al., 2017). Here, we report identification and characterization of GATOR2 in fission yeast. Unexpectedly, the GATOR2 subunit Sea3, an ortholog of mammalian WDR59, is physically and functionally proximal to GATOR1, rather than GATOR2, attenuating TORC1 activity. The fission yeast GATOR complex is dispensable for TORC1 regulation in response to amino acid starvation, which instead activates the Gcn2 pathway to inhibit TORC1 and induce autophagy. On the other hand, nitrogen starvation suppresses TORC1 through the combined actions of the GATOR1-Sea3 complex, the Gcn2 pathway, and the TSC complex, another conserved TORC1 inhibitor. Thus, multiple, parallel signaling pathways implement negative regulation of TORC1 to ensure proper cellular starvation responses.
 
 ## Introduction
 
@@ -38,13 +38,21 @@ Here, we report the characterization of the S. pombe GATOR2 complex, which has b
 
 ## Results
 
-## Identification of GATOR2 in fission yeast
+### Identification of GATOR2 in fission yeast
 
 We previously identified the S. pombe GATOR1 complex through immunopurification of Npr2, an ortholog of the mammalian GATOR1 component Nprl2, followed by mass spectrometry analysis of the co-purified proteins (Chia et al., 2017). In addition to Iml1 and Npr3 that constitute GATOR1, the analysis detected four additional proteins, Sea3, Sea4, Sec13, and Seh1, with sequence similarities to the mammalian GATOR2 components WDR59, MIOS, Sec13, and SEH1L, respectively. To confirm the conservation of GATOR2 that associates with GATOR1, we attempted to improve the purification procedure of GATOR1 by constructing strains where two GATOR1 components were tagged with different epitope tags for affinity purification. From the lysate of strains expressing Iml1 with the myc tag and either Npr2 or Npr3 with the FLAG tag, GATOR1 was purified by successive anti-FLAG and anti-myc immunoprecipitation procedures and co-purified proteins were identified by mass spectrometry (Figure 1A). The GATOR1-interacting proteins included Sea2, an apparent ortholog of the mammalian GATOR2 subunit WDR24, in addition to the four other GATOR2 subunit orthologs that we previously detected (Figure 1B). The physical interaction of the five presumed GATOR2 components with GATOR1 was further corroborated by their co-immunoprecipitation with the GATOR1 component Iml1 (Figure 1C). Thus, all of the five subunits of GATOR2 appear to be conserved in fission yeast and they form a complex with GATOR1 to constitute the GATOR holocomplex.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig1-v1.jpg)
+
+**Figure 1.:** (A) Affinity purification of the GATOR complex in fission yeast. The GATOR1 complex was purified from cells co-expressing FLAG-Npr2 and Iml1-myc, as well as those co-expressing FLAG-Npr3 and Iml1-myc, by two successive immunoprecipitation steps using anti-FLAG and anti-myc beads. The immunoprecipitates were resolved on SDS–PAGE followed by silver staining. The protein bands corresponding to the tagged Iml1, Npr2, and Npr3 are indicated by black dots. Wild-type cells expressing untagged proteins were used as a control (No tag). (B) Proteins co-purified with the GATOR1 subunits in (A) were subjected to mass spectrometric analysis. For each protein listed in the tables, two or more peptides were identified. The sum of peptide scores that exceed the 95% confidence level (p<0.05) is also shown for each of the identified proteins. GATOR1 and GATOR2 components are indicated in red and blue, respectively. (C) Physical interactions between Iml1 and the GATOR2 components were confirmed. Crude lysates (input) were prepared from the iml1:myc strain expressing one of the GATOR2 components tagged with FLAG for immunoprecipitation. The anti-FLAG immunoprecipitates (IP: FLAG) were analyzed by immunoblotting. (D–H) The cellular localization of GATOR2 proteins. The indicated fluorescence-tagged strains were grown in Edinburgh minimal medium (EMM) at 30°C for microscopy. Vacuolar membranes were visualized by the fluorescent dye FM4-64. Z-axial images were collected, and mid-section images after deconvolution are shown. Insets show the magnified views of the marked areas. BF, bright-field image. Bars, 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) The indicated GFP-tagged strains were grown in EMM at 30°C for microscopy. Vacuolar membranes were visualized by the fluorescent dye FM4-64. Z-axial images were collected, and mid-section images after deconvolution are shown. Insets show the magnified views of the marked areas. BF, bright-field image. Bars, 5 μm.
+
 Iml1 is localized to vacuolar membranes of fission yeast (Chia et al., 2017), and consistently, the other GATOR1 subunits were also detected on vacuoles (Figure 1—figure supplement 1). To visualize the cellular localization of GATOR2, its individual subunits were expressed with a C-terminal GFP or GFP-mNeonGreen (GFP-mNG) tag by inserting the GFP- or GFP-mNG-coding sequence to their chromosomal loci. Fluorescence microscopy detected Sea2-GFP-mNG, Sea3-GFP-mNG, and Sea4-GFP on vacuolar membranes that were illuminated by the FM4-64 dye (Figure 1D,E and F). Consistent with its role as a component of the nuclear pore complex (Baï et al., 2004), Seh1 was observed predominantly around the nuclear periphery, though weaker signals were also detectable on vacuoles (Figure 1G). These results are consistent with the notion that, together with GATOR1 and TORC1 (Chia et al., 2017), GATOR2 resides on vacuoles. As shown in Figure 1H, nuclear periphery signals and punctate fluorescence on the cell cortex were observed with GFP-tagged Sec13, which is known to function as a component of the nuclear pore complex as well as the vesicle coatomer COPII (Bilokapic and Schwartz, 2012; Pryer et al., 1993; Siniossoglou et al., 1996). Therefore, only a small fraction of Sec13 might be in the GATOR2 complex on vacuoles.
 
-## Loss of Sea3 phenocopies the GATOR1 deficiency
+### Loss of Sea3 phenocopies the GATOR1 deficiency
 
 To investigate the physiological function of GATOR2 in fission yeast, we constructed strains in which the gene encoding each GATOR2 component was deleted. Sec13 was not included in the analysis as its knockout leads to cell lethality (Poloni and Simanis, 2002). Except Sea3, loss of the GATOR2 components resulted in no apparent growth defect even in the presence of the TORC1 inhibitor rapamycin (Figure 2A). Thus, inactivation of GATOR2 in fission yeast does not significantly affect the TORC1 activity required for cell proliferation, in contrast to the mammalian GATOR2 that promotes TORC1 activation and cell growth through inhibition of GATOR1 (Bar-Peled et al., 2013). On the other hand, cells lacking Sea3 exhibited significantly compromised growth both in the presence (‘sea3∆’ in Figure 2A) and absence (‘sea3∆ seh1∆ sea2∆ sea4∆’) of the other GATOR2 subunits. Moreover, this sea3∆ defect was suppressed by rapamycin in the growth medium (Figure 2A, right), implying deregulated activation of TORC1 in cells lacking Sea3. Thus, among the GATOR2 components, Sea3 is likely to have a distinctive role in the negative regulation of TORC1 activity.
 
@@ -58,23 +66,47 @@ To evaluate more directly the role of Sea3 in the regulation of TORC1 activity, 
 
 Taken together, these data strongly suggest that Sea3, a fission yeast ortholog of the mammalian GATOR2 subunit WDR59, promotes the GATOR1 function, which attenuates TORC1 signaling as GAP for the Gtr1 GTPase.
 
-## Sea3 is essential for the interaction between GATOR1 and GATOR2
+### Sea3 is essential for the interaction between GATOR1 and GATOR2
 
 The unexpected involvement of the GATOR2 subunit Sea3 in the GATOR1 function prompted us to dissect the physical interactions of GATOR1 with Sea3 and the other GATOR2 subunits. Immunoprecipitation of the GATOR1 subunit Iml1 from the sea3+ and sea3∆ cell lysates revealed that Sea3 is required for the interaction between Iml1 and the other GATOR2 components Seh1 (Figure 3A), Sea2 (Figure 3B), Sea4 (Figure 3C), and Sec13 (Figure 3D). On the other hand, Iml1 and Sea3 were co-immunoprecipitated even in the absence of Seh1, Sea2, and Sea4 (Figure 3E), implying that Sea3 directly binds to GATOR1 and anchors the other GATOR2 components to GATOR1. The binding of Sea3 to GATOR1 is dependent on the integrity of the GATOR1 complex, and the absence of any one of the GATOR1 subunits disrupted the Sea3–GATOR1 association (Figure 3F,G and H). Consistently, in the absence of intact GATOR1, the vacuolar localization of Sea3 (Figure 1E) was lost and the protein diffused throughout the cytosol (Figure 3I, Figure 3—figure supplement 1A), suggesting that Sea3 is localized to vacuolar membranes through its interaction with GATOR1. It should be noted that deregulated TORC1 activation in the absence of functional GATOR1 per se does not cause the Sea3 diffusion in the cytosol (Figure 3—figure supplement 1B); vacuolar localization of Sea3 was observed in cells expressing the GTP-locked Gtr1Q61L mutant protein, which induces TORC1 hyper-activation by mimicking the GATOR1 defect (Chia et al., 2017). Furthermore, consistent with the essential role of Sea3 in the interaction between GATOR1 and the other GATOR2 subunits, the vacuolar localization of Sea2, Sea4, and Seh1 (Figure 1D,F and G) was abrogated in the sea3∆ background (Figure 3—figure supplement 1C–E). These results strongly suggest that Sea3 plays an essential role in the assembly of the GATOR holocomplex by mediating the association of the GATOR2 components with GATOR1 on the vacuolar surface.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Sea3 mediates the physical interaction of other GATOR2 proteins with GATOR1. Crude lysates (input) were prepared from cells expressing one of the GATOR2 components tagged with myc, with (+) or without (–) co-expression of Iml1-FLAG, in the presence (+) or absence (∆) of Sea3. The anti-FLAG immunoprecipitates (IP: FLAG) were analyzed by immunoblotting. (D) Sea3 mediates the physical interaction of Sec13 with GATOR1. Crude lysates (input) were prepared from sec13:FLAG cells, with (+) or without (–) co-expression of Iml1-myc, in the presence (+) or absence (∆) of Sea3. The anti-myc immunoprecipitates (IP: myc) were analyzed by immunoblotting. (E) The interaction of Sea3 with GATOR1 does not require other GATOR2 components. Crude lysates (input) were prepared from sea3:myc cells, with (+) or without (–) co-expression of Iml1-FLAG, in wild-type and the GATOR2 mutant backgrounds. The anti-FLAG immunoprecipitates (IP: FLAG) were analyzed by immunoblotting. (F–H) The binding of Sea3 to GATOR1 requires an intact GATOR1 complex. Crude lysates (input) were prepared from sea3:myc cells, with (+) or without (–) co-expression of Iml1-FLAG (F), FLAG-Npr3 (G), or FLAG-Npr2 (H), in the presence (+) or absence (∆) of the GATOR1 components (iml1, npr2, or npr3). The anti-FLAG immunoprecipitates (IP: FLAG) were analyzed by immunoblotting. (I) The vacuolar localization of Sea3 is impaired in cells lacking Iml1. The wild-type and iml1∆ strains expressing Sea3 tagged with GFP-mNeonGreen were grown in EMM at 30°C for microscopy. The vacuolar membranes were visualized by the fluorescent dye FM4-64. Z-axial images were collected and mid-section images after deconvolution are shown. Insets show the magnified views of the marked areas. BF, bright-field image. Bars, 5 μm. (J–L) Sea3 is dispensable for the integrity of the GATOR1 complex. Crude lysates (input) were prepared from FLAG:npr3 cells with (+) or without (–) co-expression of Npr2-myc (J) or Iml1-myc (L), as well as from FLAG:npr2 cells with (+) or without (–) co-expression of Iml1-myc (K). The anti-myc immunoprecipitates (IP: myc) were compared between the presence (+) or absence (∆) of Sea3. (M) Loss of Sea3 reduces the interaction of Iml1 with Gtr1. Crude lysates (input) were prepared from iml1:myc cells with (+) or without (–) co-expression of Gtr1-FLAG. The anti-FLAG immunoprecipitates (IP: FLAG) were compared between the presence (+) or absence (∆) of Sea3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–E) Wild-type and the indicated mutant cells expressing fluorescence-tagged Sea2, Sea4, Seh1, or Sea3 were grown in EMM at 30°C for microscopy. Vacuolar membranes were visualized by the fluorescent dye FM4-64. Z-axial images were collected, and mid-section images after deconvolution are shown. Insets show the magnified views of the marked areas. An intact GATOR1-complex is required for the localization of Sea3 on vacuoles (A). The gtr1QL mutant carried the GTP-locked form of Gtr1 (B). The Sea3 localization defect in cells lacking intact GATOR1 is not due to deregulated TORC1 signaling because hyper-activation of TORC1 in the absence of Gtr1GDP did not cause the defect (B). Vacuolar localization of Sea2, Sea4, and Seh1 is dependent on Sea3 (C–E). BF, bright-field image. Bars, 5 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The protein level of the GATOR1 components is not affected by the absence of Sea3. Wild-type and sea3∆ cells expressing myc-tagged Iml1, Npr2, or Npr3 were grown in EMM at 30°C for immunoblotting. Samples were probed with the anti-myc antibody, as well as the anti-Spc1 MAPK antibody for a loading control (LC). (B) Vacuolar localization of Iml1 is independent of Npr2 and Npr3. The indicated cells expressing Iml1-GFP were grown in EMM at 30°C for microscopy. (C, D) Vacuolar localization of Npr2 and Npr3 requires the other GATOR1 components. Wild-type and the indicated mutant cells expressing GFP-tagged Npr2 or Npr3 were grown in EMM at 30°C for microscopy. Two hundred nanograms per milliliter rapamycin was added to the medium to suppress hyper-activation of TORC1 in the absence of intact GATOR1, which causes abnormal vacuolar morphology disturbing the observation. (E) Vacuolar localization of Iml1 is independent of Sea3. The indicated cells expressing GFP-tagged Iml1 were grown in EMM at 30°C for microscopy. (F, G) Vacuolar localization of Npr2 and Npr3 is independent of Sea3. The indicated cells expressing GFP-tagged Npr2 or Npr3 were grown in EMM at 30°C for microscopy. Two hundred nanograms per milliliter rapamycin was added to the medium as in (C, D). For microscopic analysis, vacuolar membranes were visualized by the fluorescent dye FM4-64. Z-axial images were collected and mid-section images after deconvolution are shown. Insets show the magnified views of the marked areas. BF, bright-field image. Bars, 5 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A, C) The indicated strains were spotted onto solid YES medium with (Rapamycin) or without (–) 100 ng/ml rapamycin. Normal cell growth requires Arg98 of Npr2, but not Arg854 of Iml1. The expression of GDP-bound Gtr1 (gtr1SN) rescues the growth defect of the npr2R98A and npr2∆ mutants. (B) Sequence alignment of the NPRL2 orthologs is shown. Conserved arginine residues are indicated in red. Hs, Homo sapiens; Dm, Drosophila melanogaster; Sc, Saccharomyces cerevisiae; Sp, Schizosaccharomyces pombe.
+
 As described above, the loss of Sea3, but not the other GATOR2 subunits, brings about a growth phenotype similar to that of the GATOR1-defective mutants (Figure 2). Therefore, we next examined whether the absence of Sea3 affects GATOR1. Immunoblotting experiments detected no significant difference between wild-type and sea3∆ cells in the cellular levels of the GATOR1 components Iml1, Npr2, and Npr3 (Figure 3—figure supplement 2A). In addition, the pairwise interactions among the GATOR1 subunits were confirmed by immunoprecipitation experiments with the cell lysate from the sea3∆ strains (Figure 3J,K and L), suggesting that Sea3 is not essential for the assembly of the GATOR1 complex. We also examined the contribution of Sea3 to the vacuolar localization of GATOR1. As previously found (Chia et al., 2017), Iml1 localization to the vacuolar surface was observed in wild-type cells, as well as in cells lacking Npr2 or Npr3 (Figure 3—figure supplement 2B). On the contrary, we found that vacuolar localization of Npr2 and Npr3 requires the other GATOR1 components (Figure 3—figure supplement 2C,D). In the case of the sea3∆ mutant, Iml1, Npr2, and Npr3 were all detectable on vacuoles (Figure 3—figure supplement 2E,F and G), indicating that Sea3 is dispensable for the vacuolar localization of GATOR1. On the other hand, immunoprecipitation of the GATOR1 subunit Iml1 found that the physical interaction between GATOR1 and the Gtr1 GTPase was reduced in the sea3∆ mutant (Figure 3M). This result raises the possibility that Sea3 facilitates the GAP function of GATOR1 by promoting or stabilizing the physical interaction between GATOR1 and the Gtr1 GTPase.
 
-## A conserved arginine in Npr2 is essential for the function of GATOR1
+### A conserved arginine in Npr2 is essential for the function of GATOR1
 
 It was proposed that the conserved Arg943 of the Iml1 subunit of S. cerevisiae GATOR1 functions as an ‘arginine finger’ essential for the GAP activity of GATOR1 toward the Gtr1 GTPase (Panchaud et al., 2013). We previously mutated the corresponding Arg854 residue in S. pombe Iml1 to alanine and reported that the resultant iml1R854A mutant strain showed a growth defect similar to the iml1∆ mutant (Chia et al., 2017). However, during the course of this study, we found an unexpected mutation in this iml1R854A strain and therefore, an iml1R854A mutant strain was re-constructed. The new, confirmed iml1R854A strain showed no apparent growth defect (Figure 3—figure supplement 3A), indicating that Arg854 of S. pombe Iml1 is not essential for the GATOR1 function.
 
 Recently, another conserved arginine residue in mammalian GATOR1, Arg78 of the Nprl2 subunit, was proposed to serve as an arginine finger that promotes GTP hydrolysis by RagA/B (Shen et al., 2019, Figure 3—figure supplement 3B). To assess the role of the equivalent residue in the S. pombe GATOR1, Arg98 in Npr2 was substituted with alanine to construct an npr2R98A mutant strain. The mutant cells exhibited a compromised growth phenotype that was rescued by rapamycin or the gtr1SN mutation, an indicative of compromised GAP activity of GATOR1 (Figure 3—figure supplement 3C). Though the npr2R98A phenotype was not as severe as that of the npr2 null mutant, these observations are in line with the model that the conserved Arg residue in Npr2, but not the one in Iml1, acts as an arginine finger of GATOR1 also in fission yeast.
 
-## Autophagy induction in the absence of GATOR1 and the TSC complex
+### Autophagy induction in the absence of GATOR1 and the TSC complex
 
 The results described above suggest that Sea3, a presumed GATOR2 subunit, contributes to the GATOR1 function that attenuates TORC1 in parallel with Tsc1–Tsc2 (Figure 2D, Chia et al., 2017). Aiming to evaluate the physiological roles of these negative regulatory mechanisms toward TORC1 activity, we turned our attention to autophagy, which is induced by TORC1 inactivation during nutritional starvation (Kohda et al., 2007). Autophagic degradation of GFP-tagged phosphoglycerate kinase (Pgk1) has been successfully used as a quantitative readout of autophagy (Welter et al., 2010; Fukuda et al., 2020); upon autophagy induction, Pgk1-GFP is transported from the cytoplasm to vacuoles for degradation, but the GFP moiety remains undigested due to its resistance to the vacuolar proteases. Thus, the cellular autophagic activity in response to starvation can be monitored by immunoblotting to detect the free GFP released from Pgk1-GFP (Figure 4—figure supplement 1A). As expected, no accumulation of GFP was detected in cells lacking Atg7, a core autophagy regulator, or the vacuolar protease Isp6 (Kohda et al., 2007). Using this assay, we examined the nitrogen starvation-induced autophagy in the tsc2∆ and iml1∆ strains, both of which exhibited only partial reduction in the amounts of released GFP (Figure 4A). Though much less than that in wild-type cells, autophagy was still detectable in the tsc2∆ iml1∆ double mutant, indicating that, in addition to the GATOR1 and TSC complexes, there must be an additional mechanism to attenuate TORC1 upon nitrogen starvation for autophagy induction.
 
-## The Gcn2 signaling pathway is required for autophagy upon amino acid starvation
+![Figure 4.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig4-v1.jpg)
+
+**Figure 4.:** (A) Nitrogen starvation-induced autophagy is reduced but not completely prevented in cells defective in the TSC complex (tsc2∆), GATOR1 (iml1∆), or both (tsc2∆ iml1∆). Autophagy was monitored by detecting the GFP moiety processed from Pgk1-GFP. The indicated strains were grown in EMM at 30°C, followed by shifting to the same medium without nitrogen source (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium for immunoblotting against GFP. The samples were also probed with the anti-histone H3 antibody for a loading control (LC). (B) Autophagy is induced by leucine starvation or nitrogen starvation. Cells auxotrophic for leucine (leu1-32) were grown in EMM supplemented with 1.7 mM leucine at 30°C and shifted to the same medium without nitrogen source (–N) or EMM without the supplement (–Leu). Autophagy was monitored by immunoblotting as in (A). (C–F) Leucine starvation-induced autophagy requires the Gcn2 signaling pathway. Wild-type and the indicated mutant cells auxotrophic for leucine (leu1-32) were collected at the indicated time points after shifting from EMM supplemented with 1.7 mM leucine to EMM without the supplement (–Leu). Autophagy was monitored by immunoblotting as in (A). The eIF2α-S52A mutant (E) carries the Ser52 to Ala52 mutation in the tif211+ gene coding eIF2α.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The processing of GFP-Pgk1 depends on autophagy. Wild-type and the indicated mutant strains expressing GFP-tagged Pgk1 were grown in EMM at 30°C, followed by shifting to the same medium without nitrogen source (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium for immunoblotting against GFP. The samples were also probed with the anti-histone H3 antibody for a loading control (LC). (B) Leucine starvation brings about phosphorylation of eIF2α at S52 in a Gcn2-dependent manner. Wild-type and the indicated mutant cells auxotrophic for leucine (leu1-32) were grown in EMM supplemented with 1.7 mM leucine at 30°C, and shifted to EMM without the supplement (–Leu). Cells were collected at the indicated time points after shifting to leucine starvation medium for immunoblotting. The samples were probed with the anti-phospho-eIF2α and anti-histone H3 (LC) antibodies. (C) Autophagy is induced upon arginine starvation. Wild-type and gcn2∆ cells auxotrophic for arginine (arg6) were grown in EMM supplemented with 1.3 mM arginine at 30°C, and shifted to EMM without the supplement (–Arg). Cells were collected at the indicated time points after shifting to arginine starvation medium and autophagy was monitored as in (A). (D, E) Gcn2 facilitates autophagy induction upon histidine or glutamine starvation. Wild-type and gcn2∆ cells grown in EMM at 30°C were treated with 25 mM histidine biosynthesis inhibitor 3-amino-1,2,4-triazole (3-AT) (D) or 10 mM glutamine synthetase inhibitor methionine sulfoximine (MSX) (E). Autophagy was monitored as in (A). (F) The eIF2α kinases other than Gcn2, such as Hri1 and Hri2, are not involved in leucine starvation-induced autophagy. Autophagy was induced as in (B) and monitored as in (A). (G) Loss of Cpc2 or over-expression of Yih1 prevents leucine starvation-induced autophagy. Autophagy was induced by leucine starvation as in (B) and monitored by immunoblotting as in (A). To over-express Yih1, the gene coding FLAG-tagged Yih1 was fused to the thiamine-repressible nmt1 promoter. Yih1 expression was controlled with (yih1-OFF) or without (yih1-ON) supplementation of 15 μM thiamine in the medium. (H) Fil1 expression is up-regulated in response to leucine starvation dependently on Gcn2 and eIF2α phosphorylation. Leucine starvation was induced as in (B). The samples were probed with the anti-FLAG and anti-histone H3 (LC) antibodies.
+
+### The Gcn2 signaling pathway is required for autophagy upon amino acid starvation
 
 The Gcn2 protein kinase is activated in response to amino acid starvation and phosphorylates eIF2α to induce the general amino acid control response (Zhan et al., 2004). As Gcn2 is one of the key regulators of the cellular starvation response, we set out to assess its role in autophagy induction. First, in order to test whether amino acid starvation, the inducer of Gcn2 activation, brings about autophagy, leucine-auxotrophic fission yeast cells were shifted to the growth medium without leucine. Such leucine starvation induced Gcn2 activation, which was monitored by immunoblotting to detect phosphorylated eIF2α (Figure 4—figure supplement 1B). When cells expressing Pgk1-GFP were starved of leucine, free GFP accumulated, though more slowly than in cells starved of nitrogen (Figure 4B); thus, leucine starvation induces autophagy in S. pombe. However, no GFP accumulation was detected in gcn2∆ cells under leucine starvation (Figure 4C), demonstrating that the autophagy induced by leucine starvation is dependent on the Gcn2 kinase. Similarly, in cells of arginine auxotrophy, Gcn2-dependent autophagy was detectable after incubation in the growth medium without arginine (Figure 4—figure supplement 1C). Gcn2-dependent induction of autophagy was also observed in cells treated by 3-amino-1,2,4-triazole (3-AT) or methionine sulfoximine (MSX), inhibitors of histidine and glutamine biosynthesis, respectively (Figure 4—figure supplement 1D,E). These observations collectively indicate that autophagy can be induced in fission yeast cells starved of various amino acids in a Gcn2-dependent manner. By contrast, the loss of Hri1 and Hri2, two other eIF2α kinases in S. pombe (Zhan et al., 2004), did not affect autophagy after leucine starvation (Figure 4—figure supplement 1F), indicating that Gcn2 exclusively regulates the leucine starvation-induced autophagy among the S. pombe eIF2α kinases.
 
@@ -84,19 +116,43 @@ In order to test whether the Gcn2 kinase induces autophagy through phosphorylati
 
 Taken together, these results strongly suggest that activation of the transcriptional program induced by the Gcn2-eIF2α-Fil1 pathway promotes autophagy in response to amino acid starvation.
 
-## The Gcn2 signaling pathway regulates TORC1 activity
+### The Gcn2 signaling pathway regulates TORC1 activity
 
 An obvious question raised by the conclusion above is whether amino acid starvation signaling mediated by the Gcn2-eIF2α-Fil1 pathway induces autophagy through the regulation of TORC1. When fission yeast cells were starved of leucine, the TORC1-dependent phosphorylation of Psk1 became undetectable, indicating that TORC1 activity is suppressed upon leucine starvation (Figure 5A). In contrast, Psk1 remained phosphorylated even after the starvation in the gcn2∆, eIF2α-S52A, and fil1∆ mutant strains (Figure 5A), suggesting that TORC1 inactivation in leucine-starved cells is mediated by the Gcn2-eIF2α-Fil1 pathway. Moreover, the autophagy defect of the gcn2∆ mutant was complemented by TORC1 inactivation by the TORC1 inhibitors, rapamycin and caffeine (Figure 5B). These results suggest that the Gcn2 pathway attenuates TORC1 activity in response to amino acid starvation to induce autophagy.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig5-v1.jpg)
+
+**Figure 5.:** (A) Inactivation of TORC1 upon leucine starvation is impaired in cells lacking Gcn2 or Fil1 and the mutant carrying the non-phosphorylated form of eIF2α. TORC1 activity was monitored by detecting the TORC1-dependent phosphorylation of Psk1 (P-Psk1). The indicated strains auxotrophic for leucine (leu1-32) were grown in EMM supplemented with 1.7 mM leucine at 30°C and shifted to EMM without the supplement (–Leu). Cells were collected at the indicated time points after shifting to leucine starvation medium for immunoblotting. The samples were also probed with the anti-Psk1 antibody (Psk1), as well as the anti-Spc1 MAPK antibody for a loading control (LC). (B) Inactivation of TORC1 rescues the autophagy defect of the gcn2∆ mutant. Autophagy was monitored by detecting the GFP moiety processed from Pgk1-GFP. The gcn2∆ mutant auxotrophic for leucine (leu1–32) were grown in EMM supplemented with 1.7 mM leucine at 30°C and shifted to EMM without the supplement (–Leu) with (Rap+Caff) or without (–) addition of 200 nM rapamycin and 10 mM caffeine. Cells were collected at the indicated time points after shifting to leucine starvation medium and subjected to immunoblotting. The samples were also probed with the anti-histone H3 antibody for a loading control (LC). (C) The TSC complex and GATOR1 are dispensable for the induction of autophagy upon amino acid starvation. The indicated strains auxotrophic for leucine (leu1–32) were subjected to leucine starvation and immunoblotting as in (B). (D) Gcn2 is not essential for the induction of autophagy upon nitrogen starvation. Wild-type and gcn2∆ cells were grown in EMM at 30°C, followed by shifting to the same medium without nitrogen source (–N). Cells were collected and subjected to immunoblotting as in (B). (E) Inactivation of TORC1 upon nitrogen starvation is independent of the Gcn2 signaling pathway. The indicated strains grown in EMM at 30°C were shifted to the same medium without nitrogen source (–N). Immunoblotting was carried out as in (A). (F) Phosphorylation of eIF2α and up-regulation of Fil1 are induced by leucine starvation to a higher extent than nitrogen starvation. Cells auxotrophic for leucine (leu1–32) were grown in EMM supplemented with 1.7 mM leucine at 30°C and shifted to the same medium without nitrogen source (–N) or EMM without the supplement (–Leu). Immunoblotting was carried out as in (A). The samples were also probed with the anti-phospho-eIF2α and anti-FLAG antibodies.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Wild-type and the indicated mutant cells expressing Pgk1-GFP were grown in EMM at 30°C and shifted to the same medium without nitrogen source (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium. Autophagy was monitored by immunoblotting detection of the Pgk1-GFP processing. The samples were also probed with the anti-histone H3 antibody for a loading control (LC).
+
 In stark contrast to the Gcn2 pathway mutants, the strains lacking the functional TSC or GATOR1 complex showed no apparent defect in amino acid starvation-induced autophagy; free GFP, the product of the autophagic degradation of Pgk1-GFP, accumulated after leucine starvation even in the tsc2∆ iml1∆ double mutant (Figure 5C). Thus, amino acid starvation can induce autophagy independent of the TSC and GATOR1 complexes, two important negative regulators of TORC1. On the other hand, we observed significant autophagy induction in gcn2∆ (Figure 5D), eIF2α-S52A, and fil1∆ (Figure 5—figure supplement 1) cells incubated in the growth medium with no nitrogen source. Consistently, nitrogen depletion triggered TORC1 inactivation in these Gcn2 pathway mutants as in the wild-type strain (Figure 5E). Therefore, the Gcn2 signaling pathway appears to be specifically responsible for induction of autophagy in response to amino acid starvation. Such a specific role of the Gcn2 pathway during amino acid starvation is also congruous with our observation that the Gcn2-dependent phosphorylation of eIF2α and the Fil1 expression increased more significantly during starvation for leucine than that for nitrogen (Figure 5F).
 
-## Gcn2, the TSC complex, and GATOR1 attenuate TORC1 in parallel
+### Gcn2, the TSC complex, and GATOR1 attenuate TORC1 in parallel
 
 As shown above, Gcn2 mediates amino acid starvation signals to inactivate TORC1 and induce autophagy, whereas nitrogen starvation can bring about autophagy even in the absence of Gcn2 (Figure 5D). Therefore, we next examined whether the Gcn2-independent autophagy upon nitrogen starvation is controlled by the other negative regulators of TORC1, such as the TSC and GATOR1 complexes. In the gcn2∆ tsc2∆ double-mutant cells starved of nitrogen, autophagy was severely reduced and delayed, in comparison to those in the wild-type and individual single-mutant cells (Figure 6A). The autophagy defect in the gcn2∆ iml1∆ double mutant was even more severe than that in the gcn2∆ tsc2∆ double mutant (Figure 6B,C), implying that GATOR1 and Gcn2 are two main contributors to the nitrogen starvation-induced autophagy. In the gnc2∆ iml1∆ tsc2∆ triple mutant, a trace of released GFP was detected only after 14 hr of nitrogen starvation (Figure 6C), while autophagy takes place within 2 hr in wild-type cells after the starvation (Figure 4B). These data indicate that autophagy induction upon nitrogen starvation is dependent on the three negative regulators of TORC1 signaling, GATOR1, Gcn2, and the TSC complex. Not surprisingly, in strains lacking these regulators, severely impaired suppression of TORC1 activity during nitrogen starvation was confirmed by monitoring the TORC1-dependent phosphorylation of Psk1 (Figure 6D). Especially, the gcn2∆ iml1∆ double mutant exhibited a significant delay in the nitrogen starvation-responsive TORC1 inactivation, consistent with its severe defect in autophagy induction (Figure 6B). With a more severe autophagy phenotype (Figure 6C), the gcn2∆ iml1∆ tsc2∆ triple mutant showed robust Psk1 phosphorylation even after 12 hr of nitrogen starvation (Figure 6E). It should be noted that such a significant contribution of Gcn2 to the nitrogen starvation-induced TORC1 inactivation and autophagy was observable only in the absence of the GATOR1 and TSC complexes, but not in their presence (Figure 5D,E). Indeed, nitrogen starvation provoked significant eIF2α phosphorylation in the GATOR1- and TSC-defective strains, but not in the wild type (Figure 6—figure supplement 1A,B); the loss of the GATOR1 and TSC complexes may be compensated by activation of the Gcn2 kinase to attenuate TORC1. Nitrogen starvation also induced significant Gcn2 activation in autophagy-defective mutants, such as atg7∆ and isp6∆, more than in wild-type cells (Figure 6—figure supplement 1C), implying that autophagy suppresses Gcn2 activation during nitrogen starvation. It is plausible that reduced autophagy in the absence of the GATOR1 and TSC complexes after nitrogen starvation (Figure 4A) may lead to intracellular amino acid depletion, which induces Gcn2 activation via uncharged tRNAs (Wek et al., 1995).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Gcn2, Tsc2, and Iml1 promote autophagy induction in parallel upon nitrogen starvation. Autophagy was monitored by detecting the GFP moiety processed from Pgk1-GFP. The indicated strains were grown in EMM at 30°C, followed by nitrogen starvation (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium for immunoblotting against GFP. The samples were also probed with the anti-histone H3 antibody for a loading control (LC). (D, E) Gcn2, Tsc2, and Iml1 attenuate TORC1 in parallel upon nitrogen starvation. TORC1 activity was monitored by detecting the TORC1-dependent phosphorylation of Psk1 (P-Psk1). The indicated strains cultured in EMM at 30°C were shifted to the same medium without nitrogen source (–N) and collected at the indicated time points for immunoblotting. The samples were also probed with the anti-Psk1 antibody (Psk1), as well as the anti-Spc1 MAPK antibody for a loading control (LC). (F–K) Genetic interactions among the Gcn2 signaling pathway, the TSC complex, and GATOR1. The indicated strains were grown in EMM liquid medium and their serial dilutions were spotted onto solid YES medium with (Rapamycin) or without (–) 100 ng/ml rapamycin. (L) Schematic representation of a model for TORC1 regulation in fission yeast by the Gcn2 signaling pathway, the TSC complex, and GATOR1. Sea3 is involved in the GAP function of GATOR1 toward the Gtr1 GTPase. Gcn2 signaling pathway negatively regulates TORC1 in parallel with the TSC complex and GATOR1. TORC1 inactivation upon amino acid starvation is dependent exclusively on the Gcn2 signaling pathway, whereas that upon nitrogen starvation is mediated redundantly by the three pathways.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Cells lacking Iml1, Tsc2, or autophagic degradation exhibit highly phosphorylated eIF2α during nitrogen starvation. The indicated strains were grown in EMM at 30°C, followed by shifting to the same medium without nitrogen source (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium for immunoblotting. The anti-Spc1 MAPK (A, B) and anti-histone H3 (C) antibodies were used for loading controls (LC).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) The kinetics of autophagy induction in cells expressing Iml1, Gcn2, or Tsc2 as a main TORC1 inhibitor. The indicated strains were grown in EMM at 30°C, followed by shifting to the same medium without nitrogen source (–N). Cells were collected at the indicated time points after shifting to nitrogen starvation medium for immunoblotting. The samples were probed with the anti-GFP and anti-histone H3 (LC) antibodies. (C–H) The kinetics of TORC1 attenuation in cells expressing Iml1, Gcn2, or Tsc2 as a main TORC1 inhibitor. Nitrogen starvation was induced as in (A, B). The samples were probed for the indicated proteins and the Spc1 MAPK (LC).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/60969/elife-60969-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Iml1 and Tsc2 are involved in cell survival during long-term starvation. The indicated strains cultured in EMM at 30°C were shifted to the same medium without nitrogen source and incubated at 30°C. At the indicated time points (d, days), cell viability was assessed by spotting serial dilutions of each culture onto solid EMM medium with (Rapamycin) or without (–) 100 ng/ml rapamycin. Rapamycin was added to minimize the effect of the growth defect on the plates. (B) Sexual differentiation is affected by the absence of the TORC1 inhibitors. The indicated homothallic h90 strains were incubated on SSA sporulation plates at 25°C. Mating and sporulation efficiencies were monitored after 48 hr. Mean values with error bars (SD; n = 3) are presented.
+
 To further evaluate the contributions and the kinetics of the individual regulatory mechanisms during nitrogen starvation, we analyzed the gcn2∆ tsc2∆, iml1∆ tsc2∆, and gcn2∆ iml1∆ double mutants, each of which has GATOR1, Gcn2, and the TSC complex, respectively, as the sole TORC1 inhibitor. Autophagy became detectable 2–3 hr after nitrogen starvation in the iml1∆ tsc2∆ strain, and much later in the gcn2∆ tsc2∆ mutant, while gcn2∆ iml1∆ cells showed only minuscule autophagy signals even after 9 hr (Figure 6—figure supplement 2A and B). Consistently, the reduction in TORC1 activity, as judged by Psk1 dephosphorylation, was also observed early after the starvation in the iml1∆ tsc2∆ mutant, followed by the gcn2∆ tsc2∆ mutant, and then the gcn2∆ iml1∆ strain (Figure 6D, Figure 6—figure supplement 2C,D). These observations may reflect the contributions of the three negative regulators of TORC1 during nitrogen starvation; Gcn2 signaling contributes the most, whereas the TSC complex does the least among the three. Of note, the gcn2∆ tsc2∆ mutant with functional GATOR1 (Figure 6—figure supplement 2E,F), but not the gcn2∆ iml1∆ tsc2∆ triple mutant (Figure 6—figure supplement 2F), exhibited a transient reduction in TORC1 activity within 1 hr of nitrogen starvation. Therefore, it seems that GATOR1 can attenuate TORC1 promptly after the starvation, but negative feedback regulation that re-activates TORC1 or inhibits GATOR1 might be induced in response to the TORC1 attenuation. This GATOR1-dependent TORC1 attenuation preceded the Gcn2-mediated TORC1 inhibition, which became apparent after 2 hr of the starvation (Figure 6—figure supplement 2E). In addition, in the gcn2∆ single mutant that retains both GATOR1 and the TSC complex, a notable reduction in TORC1 activity was observed even earlier, within 10 min after the starvation (Figure 6—figure supplement 2G). Thus, together with GATOR1, the TSC complex may be able to initiate the suppression of TORC1 activity much earlier than the Gcn2 pathway after nitrogen starvation. The relatively late contribution of Gcn2 to TORC1 attenuation in starved cells can be explained by the fact that Gcn2 functions through the Fil1-mediated transcriptional events. Indeed, eIF2α phosphorylation and Fil1 up-regulation were detectable as early as at 15 min after the starvation (Figure 6—figure supplement 2H), whereas the Gcn2-dependent TORC1 inactivation took place after 2 hr and later (Figure 6—figure supplement 2E).
 
-## Roles of the TORC1 negative regulators in the nutritional responses of fission yeast cells
+### Roles of the TORC1 negative regulators in the nutritional responses of fission yeast cells
 
 Under nutrient-rich conditions, the TSC and GATOR1 complexes negatively regulate TORC1, moderating TORC1 signaling for optimal growth of fission yeast cells (Chia et al., 2017). Therefore, we examined whether the Gcn2 pathway also participates in such negative regulation of TORC1. The tsc1∆ and tsc2∆ mutants show no apparent growth defect, but introduction of the gcn2∆ mutation to them resulted in a detectable growth defect (Figure 6F). In addition, the gcn2∆ mutation exacerbated the growth defects in cells lacking functional GATOR1 (Figure 6G) or Sea3 (Figure 6H). Not only gcn2∆ but also fil1∆ exhibited similar synthetic growth defects when combined with the tsc2∆ (Figure 6I) or sea3∆ (Figure 6J) mutation. Importantly, these growth phenotypes caused by the Gcn2 pathway mutations combined with the loss of the other negative regulators of TORC1 were largely suppressed by rapamycin in the growth medium (right panels in Figure 6F–J) or by the any1∆ mutation (Figure 6K). Thus, it is likely that, along with the TSC and GATOR1 complexes, the Gcn2 signaling pathway also contributes to TORC1 attenuation in the presence of ample nutrients.
 
@@ -118,8 +174,207 @@ In mammalian cells, leucine and arginine bind to the amino acid sensors Sestrins
 
 ## Materials and methods
 
-## Fission yeast strains and general techniques
+### Fission yeast strains and general techniques
 
 S. pombe strains used in this study are listed in Supplementary file 1. Growth media and genetic manipulations for S. pombe have been described previously (Chia et al., 2017). More than two biological replicates were tested for each experiment. For mating and sporulation assays, homothallic haploid cells were spotted on SSA sporulation plates, incubated at 25°C for 48 hr, and analyzed by microscopy (Kunitomo et al., 1995). Fluorescence microscopy analysis was performed as described previously (Chia et al., 2017). More than 200 cells were analyzed in each experiment.
 
 Immunoprecipitation, immunoblotting, and mass spectrometry analyses were carried out as described previously (Chia et al., 2017). For the Pgk1-GFP processing assay, crude lysates were prepared from cells fixed in 10% trichloroacetic acid by breaking with glass beads in C buffer (8 M urea, 5% SDS, 40 mM Tris–HCl [pH 6.8], 0.1 mM EDTA, and 10% 2-mercaptoethanol). Image data were obtained by the Bio-Rad Chemi Doc XRS imaging system. For immunoprecipitation to detect the Iml1–Gtr1 interaction, cells were disrupted in the buffer containing 20 mM HEPES–KOH (pH 7.5), 150 mM NaCl, 15 mM MgCl2, 10% glycerol, 0.25% Tween-20, 10 mM sodium fluoride, 10 mM p-nitrophenyl phosphate, 10 mM β-glycerophosphate, 0.1 mM sodium orthovanadate, phenylmethylsulfonyl fluoride (PMSF), and protease inhibitors.
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Schizosaccharomyces pombe)</td>
+      <td>Fission yeast strains used in this study</td>
+      <td>See Supplementary file 1</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p70 S6K (Thr389) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9206; AB_2285392</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Psk1 (rabbit polyclonal)</td>
+      <td>DOI:10.7554/eLife.30880</td>
+      <td>N/A</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Spc1 (rabbit polyclonal)</td>
+      <td>DOI:10.1128/MCB.23.15.5132-5142.2003</td>
+      <td>N/A</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# F3165; RRID: AB_259529</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-myc (mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>Cat# MMS150P; RRID: AB_291322</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-myc (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-789; RRID: AB_631274</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Takara</td>
+      <td>Cat# 632380; RRID: AB_10013427</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-histone H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1791; RRID: AB_302613</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-eIF2alpha (Ser51) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9721; RRID: AB_330951</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DDDDK (rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM020; RRID: AB_591224</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, Peroxidase conjugated (goat polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# AP124P; RRID: AB_90456</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, Peroxidase conjugated (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 111-035-003; RRID: AB_2313567</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, Peroxidase conjugated (goat polyclonal)</td>
+      <td>Promega</td>
+      <td>Cat# W4011; RRID: AB_430833</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Peroxidase conjugated (goat polyclonal)</td>
+      <td>Promega</td>
+      <td>Cat# W4021; RRID: AB_430834</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R-5000 Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>Cat# 53123-88-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine, anhydrous</td>
+      <td>Nacalai Tesque</td>
+      <td>Cat# 06712–42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Wako</td>
+      <td>Cat# 033–06791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SynaptoRed C2 (FM4-64)</td>
+      <td>Biotium</td>
+      <td>Cat# 70021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ViVidFluor Neuro Red (FM4-64)</td>
+      <td>FUJIFILM</td>
+      <td>Cat# 222–02121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Methioninesulfoximine</td>
+      <td>Nacalai Tesque</td>
+      <td>Cat# 21730–74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Amino-1,2,4-triazole</td>
+      <td>Wako</td>
+      <td>Cat# 014–10911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico Chemiluminescent Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 34080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SilverQuest staining kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# LC6070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EzWestLumi plus</td>
+      <td>Atto</td>
+      <td>Cat# WSE-7120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity Max Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1705062</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.47027.001 Human sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.
+Human sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.
 
 ## Introduction
 
@@ -34,13 +34,13 @@ An extensive physiology literature characterizes labelled-line versus population
 
 ## Results
 
-## Model Predictions
+### Model Predictions
 
 To predict how lateralization depends on sound intensity from the responses of labelled-line neurons, we estimated neural firing rates from previous recordings in the nucleus laminaris in barn owl (Peña et al., 1996). To estimate lateralization’s dependence on level based on a population rate-code, we used previous recordings from the inferior colliculus of rhesus macaque monkey and calculated hemispheric differences in firing rate (Zwiers et al., 2004). The labelled-line neurons predicted that, as sound intensity decreases, perceived source laterality would converge towards similar means for low versus high sound intensities, with increased response variability at decreasing sound intensities (Figure 1C). In contrast, the hemispheric-difference model predicted that as sound intensity decreases to near threshold levels, perceived laterality would become increasingly biased toward the midline reference (Figure 1D, for example note the shallower slope and thus compressed laterality percepts for red versus blue curves). At higher overall sound intensities, both models predicted that lateralization would be intensity invariant (see insets in Figure 1C versus D). Therefore, analyzing how sound intensity affects perceived sound direction near sensation threshold offers an opportunity to disentangle whether our human auditory system relies on a place-based or rate-based population code for localizing sound based on ITD.
 
 A listener’s ability to discriminate ITD can vary with sound intensity (Dietz et al., 2013). However, it is difficult to interpret previous findings linking sensitivity to ITD and a listener’s judgement of sound source direction as a function of sound intensity. Some reported decreased perceived source laterality near sensation threshold (Teas, 1962; Sabin et al., 2005), but others reported weak or no level effects on perceived lateralization (Von Békésy and Wever, 1960; Mickunas, 1963; Hartmann and Rakerd, 1993; Macpherson and Middlebrooks, 2000; Inoue, 2001; Vliegen and Van Opstal, 2004; Brungart and Simpson, 2008; Gai et al., 2013). Several factors complicate the interpretation of these previous findings in the context of the current hypothesis. For instance, assuming an approximately 30 dB dynamic range of rate-level function either at the MSO or downstream in the binaural pathway (e.g. medial superior olive: Goldberg and Brown, 1968; inferior colliculus: Zwiers et al., 2004), for stimuli at higher sensation levels (SL) where the rate-level functions saturate, both the labelled-line and the hemispheric difference model predict level invariance. This could explain how studies that tested for the role of sound level over a range of high intensities did not see an effect. Moreover, when presented in the free field, sounds also contain interaural level differences and spectral cues, in addition to ITD. For low-frequency sound, listeners rely dominantly on ITD when judging lateral source angle. However, for broadband sound, listeners integrate across all three types of spatial cue (Wightman and Kistler, 1992; Ihlefeld and Shinn-Cunningham, 2011). Unlike ITDs, interaural level differences and overall sound intensity both decrease with increasing source distance, raising the possibility that for stimuli with high-frequency content, listeners judged softer sounds to be more medial because they interpreted them to be farther away than louder sounds. Further, at low sound intensities, the sound-direction-related notches of the spectral cues at high-frequencies should have been less audible than at higher sound intensities, increasing stimulus ambiguity. A resulting increase in response variability may have obscured the effect of sound intensity on ITD coding. Finally, some historic studies used only two or three listeners, suggesting that they may have been statistically underpowered. Thus, the literature provides insufficient evidence on how ITD-based lateralization varies with sound level near sensation threshold.
 
-## Human perception
+### Human perception
 
 Here, we contrasted two competing hypotheses toward the goal of disentangling whether ITD-based human sound localization relies on a labelled-line versus a population rate-place neural code. The labelled-line code hypothesis predicted that the mean perceived direction based on ITD would be intensity invariant, even at intensities close to SL. Using a psychophysical paradigm, we studied lateralization based on ITD as a function of sound intensity in a group of ten normally hearing listeners (experiment 1). Stimuli consisted of low-frequency noise tokens that were bandlimited to cover most of the frequency range where humans can discriminate ITD (Brughera et al., 2013; here, corner frequencies from 300 to 1200 Hz, shown in Figure 2A). In each one-interval trial, listeners had to indicate perceived laterality across a range of ITDs from −375 to 375 μs. Lateralization was measured as function of SL. To examine how sound intensity affects perceived ITD coding of source direction, we modelled perceived laterality with a nonlinear mixed effect model (NLME) that included fixed effects of ITD and sound intensity as well as a random effect of listener.
 
@@ -48,9 +48,143 @@ Here, we contrasted two competing hypotheses toward the goal of disentangling wh
 
 **Figure 2.:** (A) Stimuli: spectrally flat noise, used in experiment 1 (dark grey) versus A-weighted noise, tested as a control for audibility in experiment 2 (light grey). The purple line shows the magnitude of the zero-phase inverse A-weighting filter. (B) Responses from one representative listener (TCW) across two sound intensities and the corresponding NLME fits for these data. (C and D) Perceived laterality as a function of ITD for C) spectrally flat noise (experiment 1) or D) A-weighted noise (experiment 2). Error bars, where large enough to be visible, show one standard error of the mean across listeners. Colors denote sound intensity. Insets illustrate magnified section of the plots. Circles show raw data, lines and ribbons show NLME fits and one standard of the mean.
 
-Figure 2B depicts lateralization performance with spectrally flat noise at two sound intensities for a representative listener (TCW). Figure 2C shows raw data (circles) and NMLE fits (lines) across all listeners. Error bars show one standard error of the mean across listeners, and shaded ribbons indicate one standard error of the mean fit across listeners. This model predicts 80.6% of the variance in the measured responses and is deemed an appropriate fit of the data. Table 1 lists all NLME parameters. Perceived laterality scores increased with increasing ITD, as expected. With decreasing sound intensity, percepts were increasingly biased towards midline (compare order of colored lines, magnified in the inset of Figure 2C). These trends were supported by the NLME model, which revealed significant effects of ITD (p<0.001; αx1) and sound intensity (p<0.001; αy1) on the maximal extent of laterality, confirming the predicted trend from the hemispheric difference model and rejecting our null hypothesis. Average pure tone audiometric thresholds affect perceived laterality, albeit mildly (p<0.001; αy2 = 0.01). Sound intensity did not significantly affect the slope of the psychometric functions (p=0.14; αx2).
+Figure 2B depicts lateralization performance with spectrally flat noise at two sound intensities for a representative listener (TCW). Figure 2C shows raw data (circles) and NMLE fits (lines) across all listeners. Error bars show one standard error of the mean across listeners, and shaded ribbons indicate one standard error of the mean fit across listeners. This model predicts 80.6% of the variance in the measured responses and is deemed an appropriate fit of the data. Table 1 lists all NLME parameters. Perceived laterality scores increased with increasing ITD, as expected. With decreasing sound intensity, percepts were increasingly biased towards midline (compare order of colored lines, magnified in the inset of Figure 2C). These trends were supported by the NLME model, which revealed significant effects of ITD (p<0.001; $\alpha_{x1}$) and sound intensity (p<0.001; $\alpha_{y1}$) on the maximal extent of laterality, confirming the predicted trend from the hemispheric difference model and rejecting our null hypothesis. Average pure tone audiometric thresholds affect perceived laterality, albeit mildly (p<0.001; $\alpha_{y2}$ = 0.01). Sound intensity did not significantly affect the slope of the psychometric functions (p=0.14; $\alpha_{x2}$).
 
-In a second experiment, we examined whether these results were robust to the spectral details of the stimuli. A caveat of testing spectrally flat noise at low sound intensities is that parts of the spectrum may be inaudible, and this may contribute to the slight but significant effect of audibility on laterality (αy2). Therefore, the results of experiment 1 could potentially be confounded by the fact that the bandwidth of the audible portion of the noise tokens decreased with decreasing sound intensity. Alternatively, the effect of absolute pure tone detection thresholds that we observe in our normal-hearing listeners may reflect differences in neural function beyond audibility. As a control for perceived stimulus bandwidth, the same listeners were tested again, using inverse A-weighted noises (experiment 2). Inverse A-weighting boosts sound energy at each frequency in rough proportion to the human threshold. Resulting inverse A-weighted sensitivity thus achieves nearly constant sensation level across frequency. All of the original ten listeners from experiment 1 completed experiment 2. Methods were similar as in the first experiment, except that the stimuli consisted of inversely A-weighted noise (compare magnitude spectra in Figure 2A). The data and NLME model fits for the second experiment are shown in Figure 2D (color key identical to Figure 2C), and coefficients are listed in Table 2. This second model accounts for 80.4% of the variance in the data, closely fitting the measured responses. All NLME coefficients are significant (p<0.001 for αx1; αx2; αy1 and αy2). The intercept coefficient (αx0 estimate = −0.60, SE = 0.03, p<0.001) revealed a slight leftward response bias, consistent with a slight narrowband interaural level difference in our stimuli due to precision limits of our test system. The fact that αx2 is significant shows that when all noise portions are approximately equally audible, as here, with inverse A-weighted noise, both perceived laterality and the slope linking the change in laterality to ITD decrease with decreasing sound intensity. This is consistent with the interpretation that by controlling for audibility across-frequency, the sensitivity of the task to sound level increases, revealing a medial bias effect not only for the most lateral but also for more medial source angles.
+**Table 1.**
+ Results of Nonlinear Mixed Effects Model for flat-spectrum noise condition.Note that Laterality:sound intensity refers to the NLME weight attributed to acoustic sound intensity of the auditory target. In contrast, Laterality:audibility captures the NLME weight attributed to pure tone audiometric thresholds based on the listeners’ perceptual abilities (see Materials and methods for details).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th></th>
+      <th>Value</th>
+      <th>Std.error</th>
+      <th>t-value</th>
+      <th>p-value</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept: ITD</td>
+      <td>αx0</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>1.58</td>
+      <td>0.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Slope: ITD</td>
+      <td>αx1</td>
+      <td>2.45</td>
+      <td>0.05</td>
+      <td>46.15</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Slope: sound intensity</td>
+      <td>αx2</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>1.47</td>
+      <td>0.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Laterality: sound intensity</td>
+      <td>αy1</td>
+      <td>0.05</td>
+      <td>0.01</td>
+      <td>7.59</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Laterality: audibility</td>
+      <td>αy2</td>
+      <td>0.01</td>
+      <td>0.002</td>
+      <td>4.86</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+_10986 degrees of freedom._
+
+In a second experiment, we examined whether these results were robust to the spectral details of the stimuli. A caveat of testing spectrally flat noise at low sound intensities is that parts of the spectrum may be inaudible, and this may contribute to the slight but significant effect of audibility on laterality ($\alpha_{y2}$). Therefore, the results of experiment 1 could potentially be confounded by the fact that the bandwidth of the audible portion of the noise tokens decreased with decreasing sound intensity. Alternatively, the effect of absolute pure tone detection thresholds that we observe in our normal-hearing listeners may reflect differences in neural function beyond audibility. As a control for perceived stimulus bandwidth, the same listeners were tested again, using inverse A-weighted noises (experiment 2). Inverse A-weighting boosts sound energy at each frequency in rough proportion to the human threshold. Resulting inverse A-weighted sensitivity thus achieves nearly constant sensation level across frequency. All of the original ten listeners from experiment 1 completed experiment 2. Methods were similar as in the first experiment, except that the stimuli consisted of inversely A-weighted noise (compare magnitude spectra in Figure 2A). The data and NLME model fits for the second experiment are shown in Figure 2D (color key identical to Figure 2C), and coefficients are listed in Table 2. This second model accounts for 80.4% of the variance in the data, closely fitting the measured responses. All NLME coefficients are significant (p<0.001 for $\alpha_{x1}$; $\alpha_{x2}$; $\alpha_{y1}$ and $\alpha_{y2}$). The intercept coefficient ($\alpha_{x0}$ estimate = −0.60, SE = 0.03, p<0.001) revealed a slight leftward response bias, consistent with a slight narrowband interaural level difference in our stimuli due to precision limits of our test system. The fact that $\alpha_{x2}$ is significant shows that when all noise portions are approximately equally audible, as here, with inverse A-weighted noise, both perceived laterality and the slope linking the change in laterality to ITD decrease with decreasing sound intensity. This is consistent with the interpretation that by controlling for audibility across-frequency, the sensitivity of the task to sound level increases, revealing a medial bias effect not only for the most lateral but also for more medial source angles.
+
+**Table 2.**
+ Results of Nonlinear Mixed Effects Model for inverse A-weighted noise condition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NLME weight</th>
+      <th></th>
+      <th>Value</th>
+      <th>Std.error</th>
+      <th>t-value</th>
+      <th>p-value</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept: ITD</td>
+      <td>αx0</td>
+      <td>−0.60</td>
+      <td>0.03</td>
+      <td>−19.28</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Slope: ITD</td>
+      <td>αx1</td>
+      <td>2.57</td>
+      <td>0.06</td>
+      <td>46.26</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Slope: sound intensity</td>
+      <td>αx2</td>
+      <td>0.06</td>
+      <td>0.01</td>
+      <td>4.98</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Laterality: sound intensity</td>
+      <td>αy1</td>
+      <td>0.04</td>
+      <td>0.01</td>
+      <td>7.10</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Laterality: audibility</td>
+      <td>αy2</td>
+      <td>0.01</td>
+      <td>0.002</td>
+      <td>3.30</td>
+      <td>&lt;0.001</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+_10986 degrees of freedom._
 
 Thus, the results confirm the effect of biasing perceived laterality toward midline with decreasing sound intensity. Therefore, for both spectrally flat noise and A-weighted noise, statistical analyses, which partialed out overall differences between listeners, are inconsistent with a labelled-line model of human sound localization.
 
@@ -72,50 +206,54 @@ In summary, unlike predictions from a rate-code neuronal readout, labelled-line 
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Twelve naïve normal-hearing listeners (ages 18–27, five females) were enrolled in this study and paid for their time. Their audiometric thresholds, as assessed via a calibrated GSI 39 Auto Tymp device (Grason-Stadler), were 25 dB hearing level or better at octave frequencies from 250 to 8000 Hz, and did not differ by more than 10 dB across ears at each octave frequency. This study was approved by and all testing was administered according to the guidelines of the Institutional Review Board of the New Jersey Institute of Technology, protocol F217-14. All listeners gave written informed consent both to participate in the study and to publish the results with confidential listener identity.
 
-## Method details
+### Method details
 
 Listeners were seated in a double-walled sound-attenuating booth (Industrial Acoustics Company) with a noise floor of 20.0 dB SPL (wideband LAFeq). Stimuli were digitally generated in Matlab R2016b (The MathWorks, Inc), D/A converted through an external sound card (Emotiva Stealth DC-1) at a sampling frequency of 192 kHz, with a resolution of 24 bits per sample, and presented to the listener through ER-2 insert earphones (Etymotic Research Inc). The equipment was calibrated using an acoustic mannequin (KEMAR model, G.R.A.S. Sound and Vibration) with a precision of less than ±5 μs ITD and less than ±1 dB interaural level difference. Foam eartips were inserted following guidelines provided by Etymotic Research to encourage equal representation of sounds to both ears and minimize interaural leakage. Each session lasted approximately 60 min. Listeners kept the insert earphones placed inside their ears throughout testing. Insert earphones were replaced by the experimenter after each break. Throughout this study, to generate stimuli, tokens of uniformly distributed white noise were generated and bandpassed using a zero-phase Butterworth filter with 36 dB/octave frequency roll-off, and 3 dB down points at 300 and 1200 Hz. Each noise token was 1 s in duration, including 10 ms long squared cosine ramps at the onset and offset.
 
-## Sensation level measurements
+### Sensation level measurements
 
 At the beginning of each session, and, as a re-test control, mid-way through each session, each individual listener’s SL was measured for the type of sound that was later on used for training and testing, via one run of adaptive tracking. On each one-interval trial of each track, a new noise token was generated and presented diotically. Trials were spaced randomly in time (uniform distribution, inter-token intervals from 3 to 5.5 s). Listeners pressed a button when they heard a sound. No response feedback was given.
 
 On each trial, a response was scored a ‘hit’ if a listener responded with a button push before the onset of the subsequent trial, and a ‘miss’ if the listener did not respond during the interval. If a listener’s response changed from hit to miss or from miss to hit across sequential trials, this was interpreted as a response reversal. Using one-up-one-down adaptive tracking, the noise intensity was increased or decreased after each reversal, with a step size of 5 dB (decreasing) or 2.5 dB (increasing). Each listener completed ten adaptive-track reversals, with SL threshold equaling the median of the final six reversals. Each SL was used as reference intensity for the subsequent 30 min of testing. If detection thresholds changed between initial test and re-test control by more than 5 dB, this indicated that an insert earphone moved, and the experimenter replaced the earphones. Thresholds generally did not change by more than 5 dB.
 
-## Training
+### Training
 
 To train listeners on consistently reporting their perception of ITD, using adaptive tracking, listeners matched the perceived laterality of a variable-ITD pointer to that of a fixed-ITD target. Target token intensity was set relative to the listener’s own diotic sensation threshold, at 10 or 25 dB SL, and presented with 0 dB interaural level difference. The pointer intensity was fixed at 25 dB SL. Target ITDs spanned the range from −375 to 375 μs, in 75 μs steps. Target ITDs and SLs were randomly interleaved across runs, but held fixed throughout each adaptive run. In each two-interval trial of a run, the pointer token was presented in the first, and the target token in the second interval. The start ITD of the pointer token at the beginning of each run equaled 0 μs. Using a hand-held controller (Xbox 360 wireless controller for Windows, Microsoft Corp.), listeners adjusted the ITD of the pointer token. Specifically, listeners pushed the directional keys (D-pad) either to the left or right in order to move and match the pointer direction with that of the target sound. When a listener indicated a left- or right-ward response, the pointer ITD was decreased or increased. Initial ITD step size equaled 100 μs, then 50 ±5 μs (uniformly distributed) after the first reversal. By the end of the second reversal, ITD step size was reduced to 25 ±5 μs (uniformly distributed) and remained the same for all of the following reversals. Listeners were instructed to ‘home in’ on the target by moving the pointer initially to a position more lateral than the target, then more medial than the target with the goal of centering on the target. No response feedback was provided. A run was completed after a listener had completed a total of five adaptive-tracking reversals. For each target ITD, the matched pointer ITD was estimated by averaging the pointer ITDs of the final two reversals. Each listener performed three sessions of training: In the first session only a subset of target ITDs were presented (−375,–150, 0, 150 and 375 μs), whereas the two following sessions included all of the eleven ITDs. Per training session, each ITD was presented once at 10 and 25 dB SL, for a total of 54 adaptive tracking runs across all training sessions. To familiarize listeners with the experimental task (described below), at the end of second and third sessions of training listeners performed an additional 5 blocks of the experimental testing task, without response feedback. These task training data were not used for statistical analysis.
 
-To assess whether listeners could reliably report their lateralization percepts, training performance was evaluated for each listener by calculating the Pearson correlation coefficient between target ITD and matched pointer ITD in the final training session. Criterion correlation equaled 0.9 (N = 11 ITDs, significance level = 0.01, power = 0.95). Ten listeners reached criterion, suggesting that they were able to consistently report where they perceived the sounds based on ITD. Two of the originally recruited twelve listeners failed to reach training criterion (R2 = <0.84, 0.87>) and were excluded from testing.
+To assess whether listeners could reliably report their lateralization percepts, training performance was evaluated for each listener by calculating the Pearson correlation coefficient between target ITD and matched pointer ITD in the final training session. Criterion correlation equaled 0.9 (N = 11 ITDs, significance level = 0.01, power = 0.95). Ten listeners reached criterion, suggesting that they were able to consistently report where they perceived the sounds based on ITD. Two of the originally recruited twelve listeners failed to reach training criterion ($R^{2}$ = <0.84, 0.87>) and were excluded from testing.
 
-## Testing
+### Testing
 
 Using the method of fixed stimuli, we tested lateralization in two experiments. Except for the stimuli, which consisted of spectrally flat noise tokens in experiment 1 and A-weighted noise tokens in experiment 2, the methods were similar across the two experiments. Noise tokens were generated from a statistically similar noise distribution as those presented during both SL measurements and training (see Overall Design). A touchscreen monitor (Dell P2314T) displayed the response interface at about 40 cm distance from the listener. Using a precise touch stylus (MEKO Active Fine Point Stylus 1.5 mm Tip), listeners indicated perceived laterality of noise in a one-interval task. Noise tokens were presented at 5, 10, 15, 20, and 25 dB SL. ITDs varied randomly from trial to trial, in 75 μs steps spanning the range from −375 μs to 375 μs. On each trial, a new token of noise was generated. Each listener performed 20 blocks of 55 trials each (11 ITDs at each of the five sound intensities), with SL measured both before the first and the eleventh block. ITDs and sound intensity were randomly interleaved from trial to trial such that each combination of ITD and sound intensity was presented once before all of them were repeated in a different random order.
 
-## Models
+### Models
 
 We estimate the combined effects of ITD and sound intensity on predicted source laterality both in avian labelled-line type units and in binaurally sensitive units of a mammalian auditory system. The sound intensities where we expect to see an effect of overall sound level fall below 30 dB SPL, because only in this range would most auditory neurons fire below saturation, allowing us to disambiguate labelled-line versus hemispheric rate-difference coding. However, scant data exist for either type of unit at sound pressure levels below 30 dB SPL. We identified two prior studies that have measured neural discharge rate as a function of ITD at these very low sound intensities. Both studies used noise as acoustic stimuli, and the neural response statistics they report are thus suitable for estimating what type of information would be available to either type of coding mechanism with the type of noise stimuli that human listeners lateralized in the behavioral experiments here.
 
-One study in barn owl shows that the output functions of nucleus laminaris neurons can be modeled through interaural cross-correlation functions, even at very low sound intensities (Peña et al., 1996). That study reports Pearson correlation coefficients between the neural response function of nucleus laminaris units at 50 dB SPL versus all other tested sound levels. To reconstruct the spatial information realistically available from the output of labelled-line neurons, across both a range of −375 to 375 μs ITD in 20 μs steps, we first constructed biologically plausible interaural cross-correlation functions at 50 dB SPL and then added internal noise to the resulting curves to mimic the Pearson correlation coefficients reported by Peña et al. (1996). Our model predictions pertain to sound intensities spanning the range from 10 to 70 dB SPL, similar to previous work (Peña et al., 1996). Due to overall scarcity of available data at low dB SPL, here we use firing rate characteristics for unit # 0123795–530.02 (Peña et al., 1996) with a nominal best frequency of 1 kHz. To generate the acoustic inputs to the labelled-line model, we initially generated a Gaussian noise token, duplicated it and introduced a variable ITD, spanning a range from −375 to 375 μs, with 20 μs step size and 0 dB interaural level difference. To simulate ITD information available after cochlear processing, we then processed both noises with a 1/3-octave wide bandpass filter with 24 dB/octave frequency roll-off, followed by half-wave rectification and low-pass filtering at 1500 Hz. We then simulated internal noise by adding uniformly distributed dichotic noise tokens with mean spontaneous firing rates of 5% of the root mean square value of the signal, resulting in left (L) and right (R) inputs to the binaural cross-correlation neurons, called xL(t) and xR(t). To establish 50 dB SPL reference functions, at each simulated ITD, we then calculated the binaural cross-correlation function cc(τ) of xL(t) and xR(t), as follows: cc(τ)=300+(450−300)∫−∞+∞ xL(t)xR(t+τ)dt)max|∫−∞+∞ xL(t)xR(t+τ)dt|, with τ signifying the best ITD of each neuron, and extrema scaled such that cc(τ) spans a range from 300 to 450 spikes/sec, approximating nucleus laminaris firing rates at 50 dB SPL (Peña et al., 1996). To simulate non-sound driven neural discharge, we then added uniformly distributed random noise cc^ref(τ)=cc(τ)+U(0,μ), with a mean discharge of μ = 5 spikes/sec, (Peña et al., 1996). The resulting signal is our reference cross-correlation function at 50 dB SPL, called ccref(τ), shown in Figure 1A as yellow bold line for a representative simulated neuron.
+One study in barn owl shows that the output functions of nucleus laminaris neurons can be modeled through interaural cross-correlation functions, even at very low sound intensities (Peña et al., 1996). That study reports Pearson correlation coefficients between the neural response function of nucleus laminaris units at 50 dB SPL versus all other tested sound levels. To reconstruct the spatial information realistically available from the output of labelled-line neurons, across both a range of −375 to 375 μs ITD in 20 μs steps, we first constructed biologically plausible interaural cross-correlation functions at 50 dB SPL and then added internal noise to the resulting curves to mimic the Pearson correlation coefficients reported by Peña et al. (1996). Our model predictions pertain to sound intensities spanning the range from 10 to 70 dB SPL, similar to previous work (Peña et al., 1996). Due to overall scarcity of available data at low dB SPL, here we use firing rate characteristics for unit # 0123795–530.02 (Peña et al., 1996) with a nominal best frequency of 1 kHz. To generate the acoustic inputs to the labelled-line model, we initially generated a Gaussian noise token, duplicated it and introduced a variable ITD, spanning a range from −375 to 375 μs, with 20 μs step size and 0 dB interaural level difference. To simulate ITD information available after cochlear processing, we then processed both noises with a 1/3-octave wide bandpass filter with 24 dB/octave frequency roll-off, followed by half-wave rectification and low-pass filtering at 1500 Hz. We then simulated internal noise by adding uniformly distributed dichotic noise tokens with mean spontaneous firing rates of 5% of the root mean square value of the signal, resulting in left (L) and right (R) inputs to the binaural cross-correlation neurons, called $x_{L}(t)$ and $x_{R}(t)$. To establish 50 dB SPL reference functions, at each simulated ITD, we then calculated the binaural cross-correlation function $cc(\tau)$ of $x_{L}(t)$ and $x_{R}(t)$, as follows: $cc(\tau)=300+(450−300)\frac{\int_{−∞}^{+∞} x_{L}(t)x_{R}(t+\tau)dt)}{max|\int_{−∞}^{+∞} x_{L}(t)x_{R}(t+\tau)dt|}$, with $\tau$ signifying the best ITD of each neuron, and extrema scaled such that $cc(\tau)$ spans a range from 300 to 450 spikes/sec, approximating nucleus laminaris firing rates at 50 dB SPL (Peña et al., 1996). To simulate non-sound driven neural discharge, we then added uniformly distributed random noise $cc^_{ref}(\tau)=cc(\tau)+U(0,\mu)$, with a mean discharge of $\mu$ = 5 spikes/sec, (Peña et al., 1996). The resulting signal is our reference cross-correlation function at 50 dB SPL, called $cc_{ref}(\tau)$, shown in Figure 1A as yellow bold line for a representative simulated neuron.
 
-For each sound level and ITD, we then statistically reconstructed a family of interaural cross-correlation functions that match the originally reported functions (Peña et al., 1996). Specifically, we added scaled dichotic uniformly distributed noise tokens nL(t)←U(0,μ) and nR(t)←U(0,μ) to the xL(t) and xR(t), such that the monaural inputs to the binaural cross-correlation functions equal x^L,R(t)=αxL,R(t)+1−α2nL,R(t). The resulting cross-correlation function for each sound level and ITD is then cc^(τ)=(xL⋆xR)(τ), shown for a representative neuron in Figure 1A as blue, brown and red lines corresponding to 70, 30 and 10 dB SPL. We then searched through the space of scaling coefficients α until the Pearson correlation coefficient between ccref(τ) and cc^(τ) matched the coefficients originally reported by Peña et al. (1996) with a precision error of less than 10%.
+For each sound level and ITD, we then statistically reconstructed a family of interaural cross-correlation functions that match the originally reported functions (Peña et al., 1996). Specifically, we added scaled dichotic uniformly distributed noise tokens $n_{L}(t)←U(0,\mu)$ and $n_{R}(t)←U(0,\mu)$ to the $x_{L}(t)$ and $x_{R}(t)$, such that the monaural inputs to the binaural cross-correlation functions equal $x^_{L,R}(t)=\alphax_{L,R}(t)+\sqrt{1−\alpha^{2}}n_{L,R}(t)$. The resulting cross-correlation function for each sound level and ITD is then $cc^(\tau)=(x_{L}⋆x_{R})(\tau)$, shown for a representative neuron in Figure 1A as blue, brown and red lines corresponding to 70, 30 and 10 dB SPL. We then searched through the space of scaling coefficients $\alpha$ until the Pearson correlation coefficient between $cc_{ref}(\tau)$ and $cc^(\tau)$ matched the coefficients originally reported by Peña et al. (1996) with a precision error of less than 10%.
 
-To estimate predicted sound laterality as a function of sound intensity for these simulated labelled-line neurons, at each intensity, we then identified the τ where cc^(τ)=max(cc^(τ)). For each sound level and ITD, we calculated predicted sound laterality in 100 repetitions of these simulations. Figure 1C shows mean estimated laterality across these 100 simulations, with ribbons showing one standard error of the mean across simulations.
+To estimate predicted sound laterality as a function of sound intensity for these simulated labelled-line neurons, at each intensity, we then identified the $\tau$ where $cc^(\tau)=max(cc^(\tau))$. For each sound level and ITD, we calculated predicted sound laterality in 100 repetitions of these simulations. Figure 1C shows mean estimated laterality across these 100 simulations, with ribbons showing one standard error of the mean across simulations.
 
 To estimate source laterality based on rate-coding, we assayed the mammalian auditory system, where one previous study reports firing statistics for 81 inferior colliculus units in rhesus macaque as a function of ITD and over a wide range of sound intensities, including very low sound intensities (Zwiers et al., 2004). From the previously published linear regression parameters, we initially reconstruct linear regression functions linking ITD, sound intensity and firing rate (Zwiers et al., 2004). However, while linear regression fits afford statisticial convenience, they cannot fully capture the sigmoidally shaped firing rate functions in mammalian inferior colliculus units. Therefore, we multiplied the original linear reconstructions with sigmoid functions. Specifically, consistent with prior literature, each simulated sigmoidal output function saturates over a 30 dB dynamic range, has linear growth over the physiologically plausible range of contralateral ITDs, has a threshold between uniformly distributed between 0 and 10 dB SPL, and a spontaneous non-sound-evoked discharge of between 2 and 10 spikes/second (e.g. Ramachandran et al., 1999).
 
 The inset of Figure 1B shows a representative simulated inferior colliculus unit (color denotes sound intensity, dark shading shows contralateral responses), whereas Figure 1B shows the differences in firing rates for contra minus ipsi-lateral simulated firing rates, averaged across all 81 simulated inferior colliculus units. From these resulting differences in contra versus ipsi firing rates we calculated, collapsed across sound intensities from 0 to 80 dB SPL, the probability density of the firing rate for each inferior colliculus unit as a function of source ITD. Assuming an ideal observer, we then classified the sound azimuth as a function of sound intensity via maximum likelihood estimation. To calculate the mean and variance of predicted ITD as a function of sound intensity, we then ran a bootstrapping analysis, sampling with replacement 100 times. Figure 1D shows the across-simulation average predicted source laterality, with ribbons showing one standard error of the mean across simulations.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-Growth curve analysis was used to analyze perceived laterality scores as a function of ITD and sound intensity. For each of the two noise conditions, the perceived laterality scores were fitted with an NLME model. The model included fixed effects α and random effects β. Equation 1 describes a sigmoidal function linking ITD to perceived laterality, with a score from left (−1) to right (1). The effect of sound intensity on the maximal extent of lateralization is αy1. To factor out across-listener differences in absolute hearing thresholds, for each listener, we calculated the pure tone average (PTA) detection threshold in quiet, averaged across ears, and across 500 and 1000 Hz. Weight αy2 models the contribution of PTA. The slope terms are αx1 for perceived laterality changes attributed to ITD, and αx2 for laterality-ITD slopes attributed to sound intensity. Our stimuli were initially calibrated to have a broadband interaural level difference of 0 dB. However, because the transfer function of our sound card was not perfectly flat across frequency, fluctuations of ±1 dB interaural level difference occurred across frequency, on the same order of magnitude as the minimal threshold for human interaural level difference discrimination (Francart and Wouters, 2007). Thus, parameter αx0 factors out central response bias from the lateralization scores. Random effects of individual differences across listeners were used to model both the maximal extent of lateralization, βy0,listener, and the perceived midline, βx0,listener, centering the sigmoid (Equation 1):(1)response∼αy2×PTA+αy1×intensity+βy0,listener1+e−[αx2×intensity+αx1×(ITD−αx0−βx0,listener)]−0.5
+Growth curve analysis was used to analyze perceived laterality scores as a function of ITD and sound intensity. For each of the two noise conditions, the perceived laterality scores were fitted with an NLME model. The model included fixed effects $\alpha$ and random effects $\beta$. Equation 1 describes a sigmoidal function linking ITD to perceived laterality, with a score from left (−1) to right (1). The effect of sound intensity on the maximal extent of lateralization is $\alpha_{y1}$. To factor out across-listener differences in absolute hearing thresholds, for each listener, we calculated the pure tone average (PTA) detection threshold in quiet, averaged across ears, and across 500 and 1000 Hz. Weight $\alpha_{y2}$ models the contribution of PTA. The slope terms are $\alpha_{x1}$ for perceived laterality changes attributed to ITD, and $\alpha_{x2}$ for laterality-ITD slopes attributed to sound intensity. Our stimuli were initially calibrated to have a broadband interaural level difference of 0 dB. However, because the transfer function of our sound card was not perfectly flat across frequency, fluctuations of ±1 dB interaural level difference occurred across frequency, on the same order of magnitude as the minimal threshold for human interaural level difference discrimination (Francart and Wouters, 2007). Thus, parameter $\alpha_{x0}$ factors out central response bias from the lateralization scores. Random effects of individual differences across listeners were used to model both the maximal extent of lateralization, $\beta_{y0,listener}$, and the perceived midline, $\beta_{x0,listener}$, centering the sigmoid (Equation 1):
+
+$$
+response∼\frac{\alpha_{y2}\timesPTA+\alpha_{y1}\timesintensity+\beta_{y0,listener}}{1+e^{−[\alpha_{x2}\timesintensity+\alpha_{x1}\times(ITD−\alpha_{x0}−\beta_{x0,listener})]}}−0.5
+$$
 
 To better conform with the assumptions of the NLME model, prior to fitting, ITD and sound intensity parameters were scaled by subtracting the mean stimulus value, and dividing by the standard deviation of stimulus parameters, resulting in distributions of stimulus parameters with zero-mean and a variance of one. Laterality scores were then fitted using these normalized parameters, with the nlme package, programmed in RStudio 1.1 for Windows (RStudio Inc, Boston, MA, USA).
 
-## Data and software availability
+### Data and software availability
 
 All data and analysis code are available at Dryad (http://doi.org/10.5061/dryad.t8c381f) .

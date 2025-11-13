@@ -18,29 +18,29 @@
 
 ### Affiliations
 
-1. https://ror.org/02y3ad647 Department of Biology, University of Florida Gainesville United States
-2. https://ror.org/02y3ad647 Emerging Pathogens Institute, University of Florida Gainesville United States
-3. https://ror.org/02zhqgq86 WHO Collaborating Centre for Infectious Disease Epidemiology and Control, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China
+1. Department of Biology, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+2. Emerging Pathogens Institute, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+3. WHO Collaborating Centre for Infectious Disease Epidemiology and Control, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 4. Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health Baltimore United States
-5. https://ror.org/0130frc33 Department of Epidemiology, UNC Gillings School of Global Public Health Chapel Hill United States
-6. https://ror.org/0130frc33 UNC Carolina Population Center Chapel Hill United States
-7. https://ror.org/04f2nsd36 Centre for Health Informatics Computing and Statistics, Lancaster University Lancaster United Kingdom
-8. https://ror.org/01a099706 Guangdong‐Hong Kong Joint Laboratory of Emerging Infectious Diseases/MOE Joint Laboratory for International Collaboration in Virology and Emerging Infectious Diseases, Joint Institute of Virology (Shantou University/The University of Hong Kong), Shantou University Shantou China
-9. https://ror.org/02zhqgq86 State Key Laboratory of Emerging Infectious Diseases / World Health Organization Influenza Reference Laboratory, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China
+5. Department of Epidemiology, UNC Gillings School of Global Public Health Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+6. UNC Carolina Population Center Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+7. Centre for Health Informatics Computing and Statistics, Lancaster University Lancaster United Kingdom ([ROR:04f2nsd36](https://ror.org/04f2nsd36))
+8. Guangdong‐Hong Kong Joint Laboratory of Emerging Infectious Diseases/MOE Joint Laboratory for International Collaboration in Virology and Emerging Infectious Diseases, Joint Institute of Virology (Shantou University/The University of Hong Kong), Shantou University Shantou China ([ROR:01a099706](https://ror.org/01a099706))
+9. State Key Laboratory of Emerging Infectious Diseases / World Health Organization Influenza Reference Laboratory, School of Public Health, Li Ka Shing Faculty of Medicine, The University of Hong Kong Hong Kong China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 10. EKIH (Gewuzhikang) Pathogen Research Institute Guangdong China
-11. https://ror.org/00hx57361 Department of Ecology and Evolutionary Biology, Princeton University Princeton United States
-12. https://ror.org/041kmwe10 MRC Centre for Global Infectious Disease Analysis, Department of Infectious Disease Epidemiology, School of Public Health, Imperial College London London United Kingdom
-13. https://ror.org/03vek6s52 Center for Communicable Disease Dynamics, Harvard TH Chan School of Public Health Boston United States
-14. https://ror.org/00t33hh48 The Jockey Club School of Public Health and Primary Care, Chinese University of Hong Kong Hong Kong China
-15. https://ror.org/00t33hh48 Stanley Ho Centre for Emerging Infectious Diseases, The Chinese University of Hong Kong Hong Kong China
-16. https://ror.org/00t33hh48 Shenzhen Research Institute of The Chinese University of Hong Kong Guangdong China
-17. https://ror.org/03hm7k454 Guangzhou No.12 Hospital, Guangzhou Guangdong China
+11. Department of Ecology and Evolutionary Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+12. MRC Centre for Global Infectious Disease Analysis, Department of Infectious Disease Epidemiology, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+13. Center for Communicable Disease Dynamics, Harvard TH Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+14. The Jockey Club School of Public Health and Primary Care, Chinese University of Hong Kong Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+15. Stanley Ho Centre for Emerging Infectious Diseases, The Chinese University of Hong Kong Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+16. Shenzhen Research Institute of The Chinese University of Hong Kong Guangdong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+17. Guangzhou No.12 Hospital, Guangzhou Guangdong China ([ROR:03hm7k454](https://ror.org/03hm7k454))
 
 † Corresponding author
 
 ## Abstract
 
-Over a life course, human adaptive immunity to antigenically mutable pathogens exhibits competitive and facilitative interactions. We hypothesize that such interactions may lead to cyclic dynamics in immune responses over a lifetime. To investigate the cyclic behavior, we analyzed hemagglutination inhibition titers against 21 historical influenza A(H3N2) strains spanning 47 years from a cohort in Guangzhou, China, and applied Fourier spectrum analysis. To investigate possible biological mechanisms, we simulated individual antibody profiles encompassing known feedbacks and interactions due to generally recognized immunological mechanisms. We demonstrated a long-term periodicity (about 24 years) in individual antibody responses. The reported cycles were robust to analytic and sampling approaches. Simulations suggested that individual-level cross-reaction between antigenically similar strains likely explains the reported cycle. We showed that the reported cycles are predictable at both individual and birth cohort level and that cohorts show a diversity of phases of these cycles. Phase of cycle was associated with the risk of seroconversion to circulating strains, after accounting for age and pre-existing titers of the circulating strains. Our findings reveal the existence of long-term periodicities in individual antibody responses to A(H3N2). We hypothesize that these cycles are driven by preexisting antibody responses blunting responses to antigenically similar pathogens (by preventing infection and/or robust antibody responses upon infection), leading to reductions in antigen-specific responses over time until individual’s increasing risk leads to an infection with an antigenically distant enough virus to generate a robust immune response. These findings could help disentangle cohort effects from individual-level exposure histories, improve our understanding of observed heterogeneous antibody responses to immunizations, and inform targeted vaccine strategy. This study was supported by grants from the NIH R56AG048075 (DATC, JL), NIH R01AI114703 (DATC, BY), the Wellcome Trust 200861/Z/16/Z (SR), and 200187/Z/15/Z (SR). This work was also supported by research grants from Guangdong Government HZQB-KCZYZ-2021014 and 2019B121205009 (YG and HZ). DATC, JMR and SR acknowledge support from the National Institutes of Health Fogarty Institute (R01TW0008246). JMR acknowledges support from the Medical Research Council (MR/S004793/1) and the Engineering and Physical Sciences Research Council (EP/N014499/1). The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+Background:Over a life course, human adaptive immunity to antigenically mutable pathogens exhibits competitive and facilitative interactions. We hypothesize that such interactions may lead to cyclic dynamics in immune responses over a lifetime.Methods:To investigate the cyclic behavior, we analyzed hemagglutination inhibition titers against 21 historical influenza A(H3N2) strains spanning 47 years from a cohort in Guangzhou, China, and applied Fourier spectrum analysis. To investigate possible biological mechanisms, we simulated individual antibody profiles encompassing known feedbacks and interactions due to generally recognized immunological mechanisms.Results:We demonstrated a long-term periodicity (about 24 years) in individual antibody responses. The reported cycles were robust to analytic and sampling approaches. Simulations suggested that individual-level cross-reaction between antigenically similar strains likely explains the reported cycle. We showed that the reported cycles are predictable at both individual and birth cohort level and that cohorts show a diversity of phases of these cycles. Phase of cycle was associated with the risk of seroconversion to circulating strains, after accounting for age and pre-existing titers of the circulating strains.Conclusions:Our findings reveal the existence of long-term periodicities in individual antibody responses to A(H3N2). We hypothesize that these cycles are driven by preexisting antibody responses blunting responses to antigenically similar pathogens (by preventing infection and/or robust antibody responses upon infection), leading to reductions in antigen-specific responses over time until individual’s increasing risk leads to an infection with an antigenically distant enough virus to generate a robust immune response. These findings could help disentangle cohort effects from individual-level exposure histories, improve our understanding of observed heterogeneous antibody responses to immunizations, and inform targeted vaccine strategy.Funding:This study was supported by grants from the NIH R56AG048075 (DATC, JL), NIH R01AI114703 (DATC, BY), the Wellcome Trust 200861/Z/16/Z (SR), and 200187/Z/15/Z (SR). This work was also supported by research grants from Guangdong Government HZQB-KCZYZ-2021014 and 2019B121205009 (YG and HZ). DATC, JMR and SR acknowledge support from the National Institutes of Health Fogarty Institute (R01TW0008246). JMR acknowledges support from the Medical Research Council (MR/S004793/1) and the Engineering and Physical Sciences Research Council (EP/N014499/1). The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
 ## Introduction
 
@@ -52,9 +52,45 @@ Here, we examine seasonal influenza as a case study. Three subtypes of influenza
 
 To test the hypothesis, we characterized the periodic behavior of 777 paired antibody profiles, measured in 2010 (baseline) and 2014 (follow-up), measuring antibody responses (i.e., hemagglutination inhibition [HI] titers) to 21 A(H3N2) strains circulating over 47 years (Figure 1A, Figure 1—figure supplements 1–3; Jiang et al., 2017; Yang et al., 2020). Only 0.6% (n = 5) of participants self-reported influenza vaccinations between the two visits; therefore, the observed changes in HI titers between the two visits were likely due to natural exposures. We used Fourier analysis to examine the periodicity of individual antibody responses, after accounting for shared variations arising from virus-specific population-level circulation and/or laboratory measurement. We assessed the robustness of the observed cycles to multiple analytic and sampling methods. We then used a previously published mechanistic model that characterizes individual antibody responses to a set of antigenically similar strains to test the sensitivity of these cycles to multiple generally recognized biological mechanisms (Kucharski et al., 2018). Finally, we determined whether the cyclic pattern in individual antibody responses is predictable and whether it could improve the prediction of the risk of seroconversion to circulating strains of influenza A(H3N2) over existing models.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hemagglutination inhibition (HI) titers against A(H3N2) strains at baseline. Each row shows an antibody profile for a participant. Participants are sorted by age (y-axis). Strains (x-axis) are sorted by the year of isolation, which are listed in the x-axis of (B). (B) Strain-specific intercepts. A generalized additive model (GAM) was fitted to log HI titers (shown in A) on age at sampling (spline), age at isolation (spline), and strains (categorical) (also used for C). With the model, we extracted strain-specific intercepts (representing population level activity; shown in B) and calculated the residuals between predicted and observed log HI titers for each individual (individual-level antibody responses; shown in C and used for D, E; details in Figure 1—figure supplement 5A). (C) Illustration of estimating individual time series of residuals. Estimates were derived from the GAM model in (B). Residuals were calculated as the difference between observed and estimated HI titers (i.e., black minus orange; shown as the blue line). (D) Illustration of a Fourier spectrum. Peak (i.e., the frequency explaining the largest variance) and weighted frequency of a Fourier spectrum of the interpolated time series of residuals shown in (C). (E) Distribution of peak frequencies of individual residuals. We performed Fourier spectral analysis (shown in D) on the time series of residuals of each person and extracted the peak frequency. The light green shows the distribution of peak frequencies across participants, with the dashed vertical line indicating the peak frequencies that had the highest proportions among individuals. Median (thick gray ticks), interquartile (gray boxes), and 95% intervals (thin gray ticks) of distributions from 1000 permutations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Hemagglutination inhibition (HI) titers against A(H3N2) strains at follow-up. Each row shows an antibody profile for a participant. Participants are sorted by age (y-axis). Strains (x-axis) are sorted by the year of isolation, which are listed in the x-axis of (B). (B) Strain-specific intercepts. A generalized additive model (GAM) was fitted to log HI titers (shown in A) on age at sampling (spline), age at isolation (spline), and strains (categorical). (C) Distribution of peak frequencies of individual residuals. We performed Fourier spectral analysis (shown in Figure 1D) on the time series of residuals of each person and extracted the peak frequency. The light green shows the distribution of peak frequencies across participants. Median (thick gray ticks), interquartile (gray boxes), and 95% intervals (thin gray ticks) of distributions from 1000 permutations are indicated.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A-I) Random selected individuals from 777 participants with their ages shown shown in each panel. Light gray circles and dark gray triangles are antibody measures for baseline and follow-up visit, respectively. Gray vertical boxes indicate the durations of the baseline and follow-up visits.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Antigenic maps and locations of strains that were tested in our study. The antigenic map was generated using estimates by Fonville et al., 2014. We labeled our tested strains that were also included in generating the antigenic map with squares; otherwise, we labeled the corresponding antigenic clusters with triangles. A/Texas/2012 and A/HongKong/2014 are not shown as the antigenic map was up to 2010. *X-31 was a reassortment of A(H1N1) and A(H3N2), while the antigenic location of the used A(H3N2) strain (A/Aichi/2/68) was indicated (Slepushkin et al., 2001). ^A/Mississippi/1985 was not directly included in the antigenic map generation, which was classified as the same antigenic cluster with A/Philippines/1982 (Horby et al., 2012). (B) Paired antigenic distance between A(H3N2) strains that were used to generate antigenic map. Euclidean distance was calculated using the antigenic locations (in A) of each pair of strains. Orange indicates both strains in the pairs were included in our study.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Simulated annual antibody profiles of a representative individual born in 1977 and who had four infections (1977, 1994, 2003, and 2006) (same as in D). Each row represents the antibody profile of strains, which were isolated between 1968 and 2014, from serum that was collected on the year listed in the right y-axis and at the participant’s age listed in the left y-axis. Darker gray represents greater hemagglutination inhibition (HI) titer. The diagonal dashed line represents the real-time titer – titer of strain isolated at year t measured at year t –1 that determined the risk of infection in each year. Colored boxes represent antibody profiles that were measured in each year of infection (1st red; 2nd blue; 3rd purple; and 4th orange) and sample collection (green, E). (B) Antibody responses against the first infected strain that were measured at different years, i.e., the red vertical block in (A). (C) Antibody responses against the strain that was isolated/circulated in the year of sampling, i.e., the diagonal line in (A). (D) Antibody profiles of influenza strains at each infection. (E) Antibody profiles of influenza strains at each infection.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A-I) Random selected individuals from 777 participants with their ages shown shown in each panel. Profiles are from the same individuals shown in Figure 1—figure supplement 2. Residuals were derived from fitted generalized additive models of log HI titer on age at sampling, age at circulation, and strain (Figure 1—figure supplement 4A). Data from the baseline and follow-up visit were fitted separately. Light and dark green represent the baseline and follow-up visit, respectively. Lines were derived from the smooth spline of the observed data points and are shown for illustration purposes only. Gray vertical lines represent the duration of the two visits.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Observed hemagglutination inhibition (HI) titers, estimated HI titers, and residuals. Estimations were derived from the generalized additive model (GAM) of log HI titers on age at sampling (spline) and age at circulation (spline) with strain-specific intercept. Residuals were calculated as the difference between observed and estimated HI titers (i.e., black minus orange; shown as the blue line). (B) Peak and weighted frequency of a Fourier spectrum of the time series of residuals shown in (A). (C) Permutation of the time series of residuals. Shapes of points are used to match the observed and permutation of the strains, e.g., the residual value indicated by solid square is for the A/Texas/2012 but was assigned to A/Fujian/2002 for this permutation. (D) Peak and weighted frequencies of the Fourier spectra for the observed and permuted time series of residuals shown in (C). Solid points are peak frequencies and dashed lines are weighted frequencies.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** 777 time series were simulated, and the lengths and resolutions of the time series were the same as the data. Colored lines are distributions of peak frequencies for yearly interpolation of the simulated data, and gray boxplots are distributions for 1000 permutations of the simulated data. (A) Normal distribution. Random values were generated from a normal distribution with mean 1 and sd 2. (B) Lognormal distribution. Random values were generated from lognormal distribution with mean 1.5 and sd 0.5. (C) Normal distribution with outliers. Random values were generated from the same normal distribution in (A), in which 2–4 time points for each time series had values from a normal distribution with larger mean (mean = 3 and sd = 1). (D) Lognormal distribution with outliers. Random values were generated from the same lognormal distribution in (B), in which 2–4 time points for each time series had values from a lognormal distribution with larger mean (mean = 2 and sd = 0.2).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** A sine curve with predefined periodicity and white noise was simulated on a yearly basis, and values for the time points when tested A(H3N2) strains were isolated were extracted. 777 time series were simulated, and the lengths and resolutions of the time series were the same as the observed data. Colored lines are distributions of peak frequencies for simulated data, and gray lines are distributions for 1000 permutations of the simulated data. Dashed lines represent the true periodicity. (A) All participants have a 25-year periodicity. (B) All participants have a 16-year periodicity. (C) Half of the participants have a 25-year periodicity and the other half have a 16-year periodicity. (D) All participants have periodicities of 25 and 5 years.
+
 ## Results
 
-## Identifying long-term cycles in individual antibody responses to influenza A(H3N2)
+### Identifying long-term cycles in individual antibody responses to influenza A(H3N2)
 
 Antibody titers against a set of strains isolated over 47 years, when ordered by the time of isolation of the tested strains, form a time series that describes the immune history of an individual and cover a range of antigenic distances (Figure 1—figure supplements 3 and 4; Yang et al., 2020). To describe variations in these time series attributable to virus-specific and/or individual-level host characteristics, we fitted a generalized additive model (GAM) of log-titers with strain-specific intercepts and nonlinear effects of age at serum collection (i.e., biological age) and age at the year when strains were isolated (i.e., birth cohort effect) (Kucharski et al., 2018). Strain-specific intercepts (Figure 1B, Figure 1—figure supplement 1B) were estimated to adjust for the average population antibody responses due to A(H3N2) circulation and/or virus-specific differences in laboratory assay measurements. Residuals were then estimated to represent individual-level departures from population averages (Figure 1C, Figure 1—figure supplement 5) and were interpolated to annual resolution with spline function (see details in ‘Methods).
 
@@ -64,11 +100,47 @@ We found that 33.6% (95% CI, 30.3–37.0%) of participants had a peak frequency 
 
 We conducted multiple sensitivity analyses and validations to test the robustness of the observed cycles in individual-level antibody responses to analytic methods and our sampling methods. Across these analyses, including methods that accounted for variation in each individual’s spectra (Figure 2A), irregularity in isolation intervals of tested strains (Figure 2B), and secular trends in our time series (Figure 2C, Figure 2—figure supplement 1), we found consistent evidence for long-term periodicity in antibody responses. Results were robust to leaving specific strains out of the analysis (Figure 2—figure supplements 2 and 3) and method of interpolation (Figure 1—figure supplements 7 and 8). A full description of sensitivity analyses including validation in subsets of our data is provided in ‘Methods’ (Figure 1—figure supplements 7 and 8, Figure 2—figure supplements 2–4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of weighted frequencies of individual Fourier spectra at baseline. We performed Fourier spectral analysis on the interpolated time series of residuals for each person and calculated the average frequency weighted by the variance explained (‘weighted frequency’; see Figure 1D). (B) Distribution of peak frequencies of individual Lomb–Scargle periodograms. We performed Lomb–Scargle periodograms on the time series of residuals for each person and extracted the frequency that explained the most variance (‘peak frequency’). (C) Distribution of peak frequencies of individual Fourier spectra of detrended residuals at baseline. We performed Fourier analysis on time series that removed the nonlinear trend identified using empirical mode decomposition (EMD) analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Left columns represent time series of residuals before (green) and after (blue) detrending using EMD. The orange line indicates the nonlinear trend identified using EMD. Right columns represent the Fourier spectra before (green) and after (blue) detrending with EMD. Solid squares indicate the peak frequencies in the Fourier spectra.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Light green lines indicate the distribution of peak frequencies in the data. Median (thick gray ticks), interquartile (gray bars), and 95% intervals (think gray ticks) of Fourier spectra from 1000 permuted time series are indicated.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Dark green lines indicate the distribution of peak frequencies in the data. Median (thick gray ticks), interquartile (gray bars), and 95% intervals (think gray ticks) of Fourier spectra from 1000 permuted time series are indicated.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Serums collected at baseline. (B) Serums collected during the follow-up visit. We performed Fourier spectral analysis on the time series of residuals and extracted peak frequencies for a subset of participants born before 1968 and thus able to experience all tested H3N2 strains. Light and dark green lines represent the distribution of peak frequencies across participants for the baseline and follow-up visits, respectively. Median (thick gray ticks), interquartile (gray bars), and 95% intervals (think gray ticks) of Fourier spectra from 1000 permuted time series are indicated.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–F) show distributions of frequencies that explain the most variance across 69 individuals, whose serums were annually collected from 2007 to 2012. The Vietnam data was taken from Bedford et al., 2014 as derived from Auladell et al., 2022; Kucharski et al., 2018. Blue lines are distributions of peak frequencies detected in the observations. Median (thick gray ticks), interquartile (gray bars), and 95% intervals (think gray ticks) of Fourier spectra from 1000 permuted time series are indicated.
+
 Additionally, we analyzed an independent out-of-sample data set from Vietnam (HI titers of 57 strains for 69 participants measured annually, 2007–2012; Horby et al., 2012; Kucharski et al., 2018). Due to the lack of data on age, we compared long-term periodicity in HI titers and found a similar long-term periodicity in both studies (Figure 2—figure supplement 5), suggesting that similar cycling is likely present in other settings, even with population-level variations.
 
-## Cycles in individual antibody responses likely associated with homotypic cross-immunity
+### Cycles in individual antibody responses likely associated with homotypic cross-immunity
 
 To investigate possible biological mechanisms, we simulated individual antibody profiles encompassing known feedbacks and interactions due to generally recognized immunological mechanisms (Figure 3—source data 1 and 2). We primarily applied a model by Kucharski et al., 2015 that describes the snapshot of individual antibody dynamics, resulting from varied individual infection histories, narrow (i.e., against recent strains) and broad (i.e., against distant strains) range of cross-reactions of antigenically similar strains and antibody waning (Figure 3—figure supplement 1; Equation 9). We extended the model to allow for the influence of individual-level preexisting antibodies and population-level viral activity on individual infection hazard (Figure 3I, Figure 3—figure supplement 1; Equations 10 and 11). Infection events are simulated annually and individually according to individual infection hazard, which is then used to inform the updated antibody profiles using Kucharski’s model (Figure 3—figure supplement 1). As viral circulating pattern at population level is not the focus of this study and its potential drivers (e.g., arising from homotypic and/or heterotypic cross-immunity) are inconclusive, we therefore assumed two scenarios (Figure 3I) to examine the impact of predictable (i.e., cyclic) or nonpredictable (i.e., random) annual attack rates on the observed individual antibody responses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig3-v2.jpg)
+
+**Figure 3.:** Colored lines are the distribution of peak frequencies detected in the simulated antibody profiles across individuals. Gray lines are the distributions of peak frequencies of the 1000 permutations of the simulated antibody profiles. For each scenario, we simulated the life course of infections and immune responses for 777 individuals of the same age as the participants in our study and extracted the antibody profile in 2014 for the year’s corresponding to when our 20 strains were isolated. (A) No biological mechanisms were modeled, and the individual risk of infection each year was purely random with a fixed probability of 0.2. (B) Narrow (i.e., against antigenically similar strains) and broad (i.e., against distant strains) cross-reactions of antibodies were modeled, which would however not affect individual risk of infection every year (i.e., the risk of infection each year was purely random with a fixed probability of 0.2). (C) Individual risk of infections was modeled as the randomly varied population-level H3N2 activity every year (i.e., not affected by individual antibody responses), no cross-reactions of antibodies were modeled. (D–F) Narrow and broad cross-reactions of antibodies were modeled, with greater cross-reactions conferring higher level of protection. Population-level H3N2 activity were modeled as constant (D), randomly (E), and periodically (F) varied, respectively. (G) Broad cross-reactions of antibodies were modeled, with greater cross-reactions conferring higher level of protection. Random variations in population-level H3N2 activity were modeled. (H) Narrow cross-reactions of antibodies were modeled, with greater cross-reactions conferring higher level of protection. Random variations in population-level H3N2 activity were modeled. (I) Biological mechanisms included in models that generated results in (A–H).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The black line in the top-left panel denotes pre-season (e.g., 2003) antibody profile, from which the titer of the circulating strain (filled point) was used to determine the probability of infection, using Equation 11. Infection was randomly generated following a binomial distribution with probability p. Red and blue lines in the right panels indicate the post-season antibody profile for infection and non-infection, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Green and purple lines indicate the distribution of peak frequencies detected in the observed simulated antibody profiles across individuals. Gray lines are the distributions of peak frequencies of the 1000 permutations of the simulated antibody profiles (i.e., null distribution). We assumed the antigenic evolution speed was five times slower (A), the same (B), and five times faster (C) than that was used in the main analysis.
 
 We simulated individual infection histories since 1968 and sampled these simulated histories with the same time resolution as tested strains measured in 2014. We applied Fourier analysis on the resulting individual time series (see ‘Methods’). We tested several potential biological mechanisms that can shape individual antibody profiles through influencing individual infection hazard (i.e., individual preexisting titer to the circulating strain and population-level circulation) and antibody responses after exposures (i.e., broad and narrow cross-reactions) (Figure 3I, Figure 3—figure supplement 1). The breadth of such cross-reactions was implicitly assumed to be determined by the antigenic evolution rate in our simulations, which is 0.778-unit changes in the antigenic space per year according to prior estimates (Fonville et al., 2014; Kucharski et al., 2018).
 
@@ -76,15 +148,23 @@ We assessed the periodic pattern of the simulation from two perspectives. First,
 
 Multiple models showed qualitatively similar periodic behavior to data that is different from null distribution and had a significantly higher proportion of simulated individual responses with long-term periodicity (Figure 3). A key model component that exhibited long-term periodicity was cross-reactivity between antigenically similar viruses, especially broad-range (i.e., against distantly related strains) cross-reactions (Figure 3D–H). When the component of broad-range cross-reactions was absent in the model, population-level circulation alone was not able to recover the long-term periodicity in individual antibody responses (Figure 3B). However, when cross-reaction in antibody responses was included in the model, a less predictable population-level activity (i.e., random compared to cyclic variation, Figure 3G and H) appeared to introduce more uncertainties in the observed cycles in individual antibody responses.
 
-## Predicting seroconversion to recent strains using cycles in individual antibody responses
+### Predicting seroconversion to recent strains using cycles in individual antibody responses
 
 These results suggested that, after accounting for the impact of population-level A(H3N2) circulation, cross-reactivity from previously infected strains likely explained the reported cyclic patterns in an individual’s antibody responses. As such, we hypothesized (1) that the position of individuals in their antibody response cycles could be predicted years in advance if the periodic behavior was stable over 3–4 years and (2) that the position of individuals in their antibody response cycles are associated with responses to future strains. We measured the position in antibody response cycles using phase angles (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig4-v2.jpg)
+
+**Figure 4.:** (A) Concept plot for phases. Four phases were classified based on the phase angles between 0 and 360°. (B) Illustration of predicting phase in 2012 using individual residuals from baseline hemagglutination inhibition (HI) titer that were measured against 14 historical strains (i.e., isolation year up to 2002). Green dots and solid green lines indicate the residuals against historical strains that were used to fit the periodic function (shown in solid blue lines). With the fitted periodic function, we predicted phase angles in 2012 based on the predicted residuals for individual’s titers against strains that were circulating after the training period (shown in dotted blue lines). For reference, we also showed the observed baseline residuals for individual’s titers against strains that were circulating after the training period (indicated as green circles and dotted green lines). (C) Observed and predicted phase in 2012 across participants. Colors represent participants’ observed phase in 2012, with I, II, III, and IV represented by red, light blue, dark blue, and pink, respectively (same for D and E). (D) Observed cohort-specific distribution of phase in 2012. (E) Adjusted risk of seroconversion to recent strains (i.e., A/Texas 2012 or A/HongKong/2014) between baseline and follow-up visits for different phases. We estimated associations between phases in 2012 that were estimated from individual antibody profile residuals and seroconversion to any of the two recent strains and adjusted for age at sampling and the average preexisting titer of the two strains. (F) Observed and predicted cohort-specific proportion of phase IV in 2012. (G) Predicted proportion of phase IV in 2012 and the observed proportion of seroconversion to recent strains between baseline and follow-up for each cohort.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81457/elife-81457-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Predictions of phases in 2012 were derived using hemagglutination inhibition (HI) titers against strains isolated between 1968 and 2002, assuming individual antibody responses with periodicity of 35 years (left column), 24 years (middle, suggested by the data), and 6 years (right). (A–C) Observed and predicted cohort-specific proportion of phase IV in 2012. (D-F) Predicted proportion of phase IV in 2012 and the observed proportion of seroconversion to recent strains between baseline and follow-up for each cohort.
 
 To test the first hypothesis, we predicted the phase of individual antibody response residuals to strains circulating in 2012 (midpoint of baseline and follow-up; Figure 4B) by fitting a log-linear regression to the residuals of HI titers measured at baseline (2010) against 14 historical strains (i.e., isolated between 1968 and 2002) on harmonic terms that represent the long-term periodicity (assuming as 24 years). We found high consistency between predicted and observed phases in 2012 across participants (Figure 4C). For example, a consistency of 73% (95% CI, 65–79%) among individuals whose antibody responses were predicted to be in phase I (i.e., the first quarter of a cycle).
 
 To test the second hypothesis, we fitted a logistic regression of seroconversion (i.e., fourfold rise in HI titers to A/Texas/2012 or A/HongKong/2014) between baseline and follow-up on the above-mentioned predicted phase in 2012 (using strains isolated between 1968 and 2002), and adjusted for biological age at baseline and the average preexisting log-titer of the two strains. We found that individuals who were predicted to be in phase IV (i.e., the last quarter of a cycle) were 14% (95% CI, 4–26%) more likely to experience seroconversion to the two recent strains compared to those in phase I (Figure 4D).
 
-## Disentangling cohort effects using cycles in individual antibody responses
+### Disentangling cohort effects using cycles in individual antibody responses
 
 As a result of resonance, we expected intrinsic cycles in individual antibody responses to be correlated across birth cohorts (Figure 4E). There were indications of this in the correlation of phase across cohorts. For example, we observed a higher proportion of participants who were in phase IV for the 2012 strain at baseline, when comparing the birth cohorts of 1986–90 (55%, 95% CI, 39–70%) with 1961–65 (17%, 95% CI, 11–25%; chi-squared test, p<0.001). Moreover, we found that such cohort-specific differences in phase composition (Pearson correlation = 0.67, p=0.01; Figure 4F) and the resulting proportions of seroconversion (Pearson correlation = 0.63, p=0.02; Figure 4G) correlated with the predicted cohort-specific composition of phase IV in 2012. Such correlations disappeared when assuming a 35- or 6-year periodicity (i.e., periodicities that were not supported by observations in Figure 1 and Figure 4—figure supplement 1). Of note, we found that a diversity of phases was exhibited by members of the same age cohorts, suggesting that individual’s cycles could depart from other members of their birth cohort.
 
@@ -110,47 +190,59 @@ Our work has several limitations. First, between-subtype interactions have not b
 
 ## Methods
 
-## Ethical approval
+### Ethical approval
 
 The following institutional review boards approved the study protocols: Johns Hopkins Bloomberg School of Public Health (IRB 1716), University of Florida (IRB201601953), University of Liverpool, University of Hong Kong (UW 09-020), and Guangzhou No. 12 Hospital (‘Research on human influenza virus immunity in Southern China’). Written informed consent was obtained from all participants over 12 years old; verbal assent was obtained from participants 12 years old or younger. Written permission from a legally authorized representative was obtained for all participants under 18 years old.
 
-## Cohort and serological data
+### Cohort and serological data
 
 We used serum collected from 777 participants who were recruited to an ongoing Fluscape cohort in Guangzhou, China, and provided blood samples for both a baseline visit (December 2009 to January 2011) and a follow-up visit (June 2014 to June 2015) (Jiang et al., 2017; Yang et al., 2020). The cohort recruited 40 locations that are randomly distributed in a fan-shaped area spanning from the city center to the neighboring rural areas. Participants, aged 2–86 years old with a male-to-female ratio of 1.106:1 at baseline sampling, were recruited from households that were randomly selected in these locations. Details of the cohort and participants included have been described previously (Jiang et al., 2017; Yang et al., 2020).
 
 We measured antibody titers against 21 A(H3N2) strains using HI assays of paired serum collected from the two visits (Yang et al., 2020). Strains tested were isolated from 1968 to 2014, and priority was given to those included in vaccine formulation and/or used to construct the antibody landscape by Fonville et al., 2014. The strains we used are A/Hong Kong/1968, X-31 (isolated in 1970), A/England/1972, A/Victoria/1975, A/Texas/1977, A/Bangkok/1979, A/Philippines/1982, A/Mississippi/1985,A/Sichuan/1987, A/Beijing/1989, A/Beijing/1992, A/Wuhan/1995,A/Victoria/1998, A/Fujian/2000, A/Fujian/2002, A/California/2004, A/Brisbane/2007, A/Perth/2009, A/Victoria/2009, A/Texas/2012, and A/Hong Kong/2014 (Yang et al., 2020). These virus strains were obtained through the World Health Organization (WHO) collaboration network and passaged on Madin–Darby Canine Kidney (MDCK, ATCC CCL-34) cells or 9-day-old embryonic chicken eggs. Detailed laboratory methods have been described previously (Lessler et al., 2011; Yang et al., 2020).
 
-## Statistical analysis
+### Statistical analysis
 
-## Generalized additive model
+#### Generalized additive model
 
-To extract population- from individual-level A(H3N2) activity, we fitted a GAM of log HI titers (Figure 1A, Figure 1—figure supplement 1A) on the spline of age at baseline sampling, the spline of age at circulation (i.e., difference between year of strain isolation and year of birth of the participant) with strain-specific intercepts, which has been described in detail in a previous study (Lessler et al., 2012). In brief, log-titer for strain j and participant i is modeled as(1)ElogTi,j=β0,j+β1sai +β2sai-yj
+To extract population- from individual-level A(H3N2) activity, we fitted a GAM of log HI titers (Figure 1A, Figure 1—figure supplement 1A) on the spline of age at baseline sampling, the spline of age at circulation (i.e., difference between year of strain isolation and year of birth of the participant) with strain-specific intercepts, which has been described in detail in a previous study (Lessler et al., 2012). In brief, log-titer for strain $j$ and participant $i$ is modeled as
 
-where s(.) denotes spline terms, ai denotes the age of the participant i at baseline sampling, and yj denotes the number of years since strain j was isolated until baseline sampling. Strain-specific intercepts β0,j were estimated and further used as a proxy for the population-level variations in A(H3N2) activities between 1968 and 2014 in the main analysis (Figure 1B, Figure 1—figure supplement 1B).
+$$
+ElogT_{i,j}=\beta_{0,j}+\beta_{1}sa_{i} +\beta_{2}sa_{i}-y_{j}
+$$
 
-Residuals were calculated as the difference between observed and predicted log-titers from the fitted GAM to characterize individual-level A(H3N2) immune responses (Figure 1C, Figure 1—figure supplement 6A). A time series of residuals for participant i was derived as(2)Ri(j) = logTi,j - E(logTi,j)
+where $s(.)$ denotes spline terms, $a_{i}$ denotes the age of the participant $i$ at baseline sampling, and $y_{j}$ denotes the number of years since strain $j$ was isolated until baseline sampling. Strain-specific intercepts $\beta_{0,j}$ were estimated and further used as a proxy for the population-level variations in A(H3N2) activities between 1968 and 2014 in the main analysis (Figure 1B, Figure 1—figure supplement 1B).
+
+Residuals were calculated as the difference between observed and predicted log-titers from the fitted GAM to characterize individual-level A(H3N2) immune responses (Figure 1C, Figure 1—figure supplement 6A). A time series of residuals for participant $i$ was derived as
+
+$$
+R_{i}(j) = logT_{i,j} - E(logT_{i,j})
+$$
 
 and then chronologically ordered by the year of strain isolations. HI titers for baseline and follow-up visits were fitted separately, and only titers to strains that were isolated after the person was born were included in the model.
 
-## Fourier analysis
+#### Fourier analysis
 
 Periodicity in individual antibody responses to influenza was examined using Fourier spectral analysis with linear detrending, from which variances explained by each frequency were extracted (Figure 1D, Figure 1—figure supplement 6B). As the tested A(H3N2) strains were irregularly spaced in time (2–3-year intervals), we fitted a spline and interpolated the time series to a yearly resolution before applying the Fourier analysis.
 
 For individual-level periodicity, we extracted the frequency that explained the most variance (i.e., the greatest spectral power; ‘peak frequency’ hereafter) for each individual (Figure 1D, Figure 1—figure supplement 6B) and plotted the distribution of peak frequencies across 777 participants (Figure 1E, Figure 1—figure supplement 1C). To test the significance against the null distributions, we compared the observed distribution of peak frequencies with the distribution of peak frequencies from 1000 permutations. In each permutation, we shuffled the time series of residuals for each person and extracted the peak frequency for each individual (Figure 1—figure supplement 6C and D).
 
-## Validations and sensitivity analyses
+### Validations and sensitivity analyses
 
-## Weighted frequency
+#### Weighted frequency
 
-The peak frequency of the Fourier spectrum we extracted only represents the frequency that explained the most variance, but it cannot reflect the variance explained by the other frequencies, that is, whether the Fourier spectrum is skewed toward the peak frequency or is flatly distributed (Figure 1D, Figure 1—figure supplement 6). Thus, we calculated the average frequency weighted by the variance explained (‘weighted frequency’), to represent the weighted center for each spectrum (Figure 1—figure supplement 6B). The weighted frequency fw was calculated as(3)fw=∑kfkvk ∑kvk
+The peak frequency of the Fourier spectrum we extracted only represents the frequency that explained the most variance, but it cannot reflect the variance explained by the other frequencies, that is, whether the Fourier spectrum is skewed toward the peak frequency or is flatly distributed (Figure 1D, Figure 1—figure supplement 6). Thus, we calculated the average frequency weighted by the variance explained (‘weighted frequency’), to represent the weighted center for each spectrum (Figure 1—figure supplement 6B). The weighted frequency $f_{w}$ was calculated as
 
-where fk and vk denote the kth examined frequency and its estimated variance the Fourier spectrum. We found that our data was more likely to show lower weighted frequencies and longer periods compared to the permutations (Figure 2A).
+$$
+f_{w}=\frac{\sumkf_{k}v_{k} }{\sumkv_{k} }
+$$
 
-## Addressing irregularly sampled intervals with Lomb–Scargle periodogram
+where $f_{k}$ and $v_{k}$ denote the $k^{th}$ examined frequency and its estimated variance the Fourier spectrum. We found that our data was more likely to show lower weighted frequencies and longer periods compared to the permutations (Figure 2A).
+
+#### Addressing irregularly sampled intervals with Lomb–Scargle periodogram
 
 To examine the impact of using irregularly sampled intervals and interpolation on the results from the Fourier spectrum analysis, we performed a sensitivity analysis using the Lomb–Scargle periodogram (Glynn et al., 2006), which is often used to detect the periodicity of irregularly sampled time series. As in the previously described Fourier spectrum analysis, we derived the spectrum for each individual’s time series of residuals using the Lomb–Scargle periodogram, which estimated the variance explained at each frequency. We then extracted the frequency with the most variance explained, that is, ‘peak frequency’ for each spectrum. Similar to the main analysis, we compared the distribution of observed peak frequency derived from Lomb–Scargle periodogram across participants with those from 1000 permutations (Figure 2B). In each permutation, we shuffled the time series of residuals for each individual (maintaining the irregularity in the sampling), and then extracted the peak frequency of the Lomb–Scargle periodogram for each shuffled time series.
 
-## Removing nonlinear trends with empirical mode decomposition (EMD)
+#### Removing nonlinear trends with empirical mode decomposition (EMD)
 
 Although we removed the linear trend before applying Fourier analysis, several time series contained nonlinear trends that could potentially bias the estimate of the peak frequency to lower values (e.g., participants 1 and 2 in Figure 2—figure supplement 1). In order to avoid this issue, we performed Fourier analysis with the time series of residuals after removing nonlinear trends using EMD (Huang et al., 1998).
 
@@ -158,11 +250,11 @@ To do this, we first applied EMD to each individual’s time series of residuals
 
 For participants whose time series showed nonlinear trends (e.g., participants 1 and 2 in Figure 2—figure supplement 1), peak frequency shifted to a higher frequency after detrending with EMD. Meanwhile, for participants whose time series showed cycles (e.g., participants 3 and 4), the low-frequency cycles were no longer detectable after detrending with EMD. Therefore, the results shown in Figure 2B were the distribution of peak frequencies after removing both nonlinear trends and some low-frequency cycles. The 20–40-year cycles were still detectable for both visits, suggesting that the long-term cycle we detected was not solely explained by the nonlinear trend of the time series.
 
-## Dropping every other strain
+#### Dropping every other strain
 
 In order to test whether the reported cycles in the individual residuals were influenced by the relatively stronger responses to some strain (e.g., X-31, A/Mississippi/1985, A/Beijing/1992, and A/Fujian/2002), we dropped 1 out of the 21 strains and repeated the Fourier analysis to the time series of the remaining 20 strains. For the permutation test, we shuffled the time series of the remaining 20 strains and reinterpolated the shuffled time series for each individual. Results suggested that dropping out one strain did not affect our conclusions (Figure 2—figure supplements 2 and 3).
 
-## Validations using random values or values from periodic curves
+#### Validations using random values or values from periodic curves
 
 We tested the robustness of our results from the Fourier analysis with a time series of 21 irregularly sampled data points with the same time resolution as our data. Time series consisted of random values generated from varying underlying distributions. Briefly, we drew a set of random values for each individual and the length of time series was based on the individual’s year of birth. We performed the interpolations, Fourier analysis, and extracted the peak frequency of the Fourier spectrum for each new time series. Finally, the distribution of peak frequencies for the simulated time series and their null distributions from permutations were compared.
 
@@ -170,19 +262,19 @@ We performed this analysis using values drawn from normal and lognormal distribu
 
 We then applied the Fourier analysis on time series generated by sampling from periodic curves with white noise. To do this, we first simulated a time series from 1968 to 2014 on a yearly basis for each participant from a sinusoidal curve with a certain periodicity and white noise. We then subset the simulated time series to the years when our tested A(H3N2) strains were isolated relative to each participant’s year of birth. We applied the previously described interpolation and Fourier analysis to the subset of each time series. We repeated the above analysis for 777 participants and compared the distributions of peak frequencies from simulated time series and their 1000 permutations (Figure 1—figure supplement 8). Four scenarios were tested: (1) time series of all participants had a single 25-year periodicity; (2) time series of all participants had a single 16-year periodicity; (3) time series of half of the participants had a single 25-year periodicity, and time series of the other half of participants had a single 16-year periodicity; and (4) time series of all participants contained two superimposed periodic curves, with periodicities of 25 and 5 years. Results suggested that the method we used in the main analysis can uncover the real low-frequency signals, while uncovering high-frequency signals could be challenging due to the resolution of our data.
 
-## Excluding participants who were born after 1968
+#### Excluding participants who were born after 1968
 
 To examine the effects of participants who had a relatively shorter exposure history of A(H3N2) on the reported cycles, we repeated the Fourier spectrum analysis with time series of residuals for a subset of participants (n = 487) who could have experienced all tested A(H3N2) strains,that is, born before 1968. The analysis follows the same steps as the main analysis except that the distributions of peak frequencies were plotted across 487 eligible participants. Cycles with low frequencies were found for the subset of senior participants as well, with an increasing proportion of participants having the lowest frequency (Figure 2—figure supplement 4).
 
-## Sera from Vietnam study
+#### Sera from Vietnam study
 
 In order to test our results with a different population, we repeated the analysis with publicly available data reported in a previous Vietnam study (Bedford et al., 2014; Kucharski et al., 2015). Longitudinal sera were collected for 69 participants in Ha Nam, Vietnam. Participants were aged 7–95 years in 2012, of which 48% were under 30s (Fonville et al., 2014). Sera were repeatedly collected from these participants between 2007 and 2012 on a yearly basis (Fonville et al., 2014). HI titers were measured for 57 A(H3N2) strains isolated between 1968 and 2011, with a finer resolution in the more recent years (Fonville et al., 2014).
 
 In the Vietnam study, multiple strains had been isolated in the same year, resulting in multiple titers being available for a given year for each individual. Therefore, we fitted a cubic spline in order to derive a time series that captured the geometric mean titers to strains isolated in the same year. We then applied Fourier analysis to each splined time series and extracted the peak frequency of each spectrum. The distribution of peak frequencies was characterized across 69 individuals by the year of serum collection (Figure 2—figure supplement 5). For the permutation analysis, HI titers were shuffled before fitting splines to the time series. As the age of participants was not available, we performed the analysis with raw titers without adjustment on age. Significant cycles with frequencies ranging from 0.050 to 0.075 (~13–20 years) were detected for serums collected in 2007, 2009, 2010, and 2011, coinciding with the frequencies detected using the raw titers of serums collected in our baseline visit.
 
-## Simulations of life-course infection history and immune responses
+### Simulations of life-course infection history and immune responses
 
-## Model descriptions
+#### Model descriptions
 
 In order to explore the mechanisms behind the reported dynamics of human immune responses to influenza, we applied a previously described mechanistic model (Kucharski et al., 2018) to generate realizations of lifelong infection history and subsequent immune responses. Simulations were individually based on a yearly scale and returned as antibody profiles consisting of titers to a panel of 47 strains (i.e., strains isolated from 1968 to 2014) that were tested in 2014. The simulations consisted of the following steps:
 
@@ -190,57 +282,107 @@ We simulated antibody profiles for 777 individuals of the same ages as the parti
 
 In order to explore the mechanisms that created the observed cycles, we performed simulations under different scenarios that considered several generally recognized components of immunity (Figure 3I):
 
-## Modeling immune responses
+#### Modeling immune responses
 
-We adapted the previously described model to simulate immune responses after exposures (Kucharski et al., 2018); the parameters used are shown in Figure 3—source data 1. The immune response after an infection is divided into long-term boosting, dl(j, mt), and short-term boosting, ds(j, mt), modeled as(4)dl(j, mt) = max(0, 1-σlδj, mt)(5)ds(j, mt) = max(0, 1-σsδj, mt)
+We adapted the previously described model to simulate immune responses after exposures (Kucharski et al., 2018); the parameters used are shown in Figure 3—source data 1. The immune response after an infection is divided into long-term boosting, $d_{l}(j, m_{t})$, and short-term boosting, $d_{s}(j, m_{t})$, modeled as
 
-where δj, mt denotes the difference in antigenic difference between strain j and the previously infecting strain mt:(6)δj,mt=ρTj,mt
+$$
+d_{l}(j, m_{t}) = max(0, 1-\sigma_{l}\delta_{j, m_{t}})
+$$
 
-Tj, mt  denotes the number of years between when the tested strain j and the infected strain mt were isolated, and ρ is the rate of change in antigenic units per year. Parameters σl and σs represent the durations of cross-reactions. Short-term immunity also wanes, as set by the waning duration ω and the number of years between the year of infection by strain mt and year of testing ( Tmt ):(7)w(mt) = max(0, 1−ωTmt)
 
-The antigenic seniority was scaled by a suppression parameter τ and the order of infection ( Nm ) among all infected strains Xt :(8)s(Xt, mt) = max(0, 1 − τ(Nm −1))
 
-Prior study estimated τ as 0.04, while we explored both 0 and 0.04 and found minimal impact on our main results. Therefore, we assumed τ as 0 for simplicity.
+$$
+d_{s}(j, m_{t}) = max(0, 1-\sigma_{s}\delta_{j, m_{t}})
+$$
 
-Finally, the titer against strain j for person i tested in year t is(9)μi,j,t=∑mt∈Xts(Xt, mt)[μldl(j, mt) + μsw(mt)ds(j, mt)]
+where $\delta_{j, m_{t}}$ denotes the difference in antigenic difference between strain $j$ and the previously infecting strain $m_{t}$:
 
-where μl and μs denote the mean log-titers of long-term and short-term boost to an infecting strain, respectively.
+$$
+\delta_{j,mt}=ρT_{j,m_{t}}
+$$
 
-## Modeling immunity-dependent protection
+$T_{j, m_{t} }$ denotes the number of years between when the tested strain $j$ and the infected strain $m_{t}$ were isolated, and $ρ$ is the rate of change in antigenic units per year. Parameters $\sigma_{l}$ and $\sigma_{s}$ represent the durations of cross-reactions. Short-term immunity also wanes, as set by the waning duration $\omega$ and the number of years between the year of infection by strain $m_{t}$ and year of testing ( $T_{m_{t}}$ ):
 
-For the baseline scenario and cross-reaction-only scenario, the probability of infection was assumed to be a constant. For the cross-protection and antigenic seniority scenarios, a higher HI titer to a circulating A(H3N2) strain is assumed to be associated with lower risk of infection with that strain (Figure 3—figure supplement 1). We assumed that the 50% protective titer is 1:40 (i.e., μ50= 3 on a log scale). The titer-dependent risk of infection is modeled as (Vieira et al., 2021)(10)pI|μ =11 + eβ(μ − μ50)
+$$
+w(m_{t}) = max(0, 1−\omegaT_{m_{t}})
+$$
 
-where β is the scale parameter of the titer-dependent protection estimated in previous studies (Yuan et al., 2017). After adjusting for annual A(H3N2) activity ( λt ), the titer-dependent probability of infection of strain j for person i tested in year t s(11)pI|μi, j, t =λt1 + eβ(μi, j, t − μ50)
+The antigenic seniority was scaled by a suppression parameter $\tau$ and the order of infection ( $N_{m}$ ) among all infected strains $X_{t}$ :
 
-The annual A(H3N2) activity, λt , was included to explore the impact of the virus circulation at population level on the observed long-term cycles in individual antibody responses. Three different hypothetical scenarios were assumed for λt :
+$$
+s(X_{t}, m_{t}) = max(0, 1 − \tau(N_{m} −1))
+$$
+
+Prior study estimated $\tau$ as 0.04, while we explored both 0 and 0.04 and found minimal impact on our main results. Therefore, we assumed $\tau$ as 0 for simplicity.
+
+Finally, the titer against strain $j$ for person $i$ tested in year $t$ is
+
+$$
+\mu_{i,j,t}=\summ_{t}\inX_{t}s(X_{t}, m_{t})[\mu_{l}d_{l}(j, m_{t}) + \mu_{s}w(m_{t})d_{s}(j, m_{t})]
+$$
+
+where $\mu_{l}$ and $\mu_{s}$ denote the mean log-titers of long-term and short-term boost to an infecting strain, respectively.
+
+#### Modeling immunity-dependent protection
+
+For the baseline scenario and cross-reaction-only scenario, the probability of infection was assumed to be a constant. For the cross-protection and antigenic seniority scenarios, a higher HI titer to a circulating A(H3N2) strain is assumed to be associated with lower risk of infection with that strain (Figure 3—figure supplement 1). We assumed that the 50% protective titer is 1:40 (i.e., $\mu_{50}= 3$ on a log scale). The titer-dependent risk of infection is modeled as (Vieira et al., 2021)
+
+$$
+p_{I|\mu} =\frac{1}{1 + e^{\beta(\mu − \mu_{50})}}
+$$
+
+where $\beta$ is the scale parameter of the titer-dependent protection estimated in previous studies (Yuan et al., 2017). After adjusting for annual A(H3N2) activity ( $\lambda_{t}$ ), the titer-dependent probability of infection of strain $j$ for person $i$ tested in year $t$ s
+
+$$
+p_{I|\mu_{i, j, t}} =\frac{\lambda_{t}}{1 + e^{\beta(\mu_{i, j, t} − \mu_{50})}}
+$$
+
+The annual A(H3N2) activity, $\lambda_{t}$ , was included to explore the impact of the virus circulation at population level on the observed long-term cycles in individual antibody responses. Three different hypothetical scenarios were assumed for $\lambda_{t}$ :
 
 The main objective of this analysis was to demonstrate that population circulation alone was not able to recover the observed periodicity in individual antibody responses. Thus, although there remain debates about the interactions between influenza subtypes, we showed that it seemed not to be the main driver of the observed periodicity in individual antibody responses.
 
-## Prediction of individual antibody responses to future strains using intrinsic cycles
+### Prediction of individual antibody responses to future strains using intrinsic cycles
 
-## Estimation of the phase
+#### Estimation of the phase
 
-We estimated the phase angle ( py,i , in degree) of antibodies against a strain j that circulated in a given year y for person i, to represent the position where the antibody against the tested strain stands in the entire antibody responses of this person. We first fitted a regression to the time series of individual residuals ( Ri(y)) for strains that were isolated during a certain period and included harmonic terms that represent the periodic patterns in the antibody responses.(12)Ri(y)=γ0+ γ1sin(2πyf)+ γ1cos(2πyf)
+We estimated the phase angle ( $p_{y,i}$ , in degree) of antibodies against a strain $j$ that circulated in a given year $y$ for person $i$, to represent the position where the antibody against the tested strain stands in the entire antibody responses of this person. We first fitted a regression to the time series of individual residuals ( $R_{i}(y)$) for strains that were isolated during a certain period and included harmonic terms that represent the periodic patterns in the antibody responses.
 
-where f is assumed as the inverse of the periodicity that most of our participants showed, that is, 24 years. With the estimated coefficients from Equation 12, we predict the phase angle in radian ( ry,i ) of strain j that circulated in given year y for person i as follows:(13)ry, i=2πyf0 +ϕi
+$$
+R_{i}(y)=\gamma_{0}+ \gamma_{1}sin(2\piyf)+ \gamma_{1}cos(2\piyf)
+$$
 
-where ϕi denotes the person i ’s phase shift:(14)ϕi=atan2(γ1, γ2)
+where $f$ is assumed as the inverse of the periodicity that most of our participants showed, that is, 24 years. With the estimated coefficients from Equation 12, we predict the phase angle in radian ( $r_{y,i}$ ) of strain $j$ that circulated in given year $y$ for person $i$ as follows:
 
-We then translated the phase angle from radian to degree as follows:(15)py, i=180∘×ry,iπ
+$$
+r_{y, i}=2\piyf_{0} +ϕ_{i}
+$$
+
+where $ϕ_{i}$ denotes the person $i$ ’s phase shift:
+
+$$
+ϕ_{i}=atan2(\gamma_{1}, \gamma_{2})
+$$
+
+We then translated the phase angle from radian to degree as follows:
+
+$$
+p_{y, i}=\frac{180^{∘}\timesr_{y,i}}{\pi}
+$$
 
 The phase angle in degree was then classified into four categories, namely, phase I (0–90°), II (91–180°), III (181–270°), and IV (271–360°) (Figure 4A). Of note, we fitted the model aiming to estimate the position of the harmonic oscillators and did not consider for other nonharmonic factors; therefore, the model may not fully capture the variations of the data.
 
-## Comparison between observed and predicted phase in 2012
+#### Comparison between observed and predicted phase in 2012
 
 We predicted the phase angle (in degree) for the strain that circulated in 2012, which is the middle between our baseline (2010) and follow-up (2014) visit. We first fitted Equation 12 to HI titers that were measured for strains isolated between 1968 and 2002 measured at baseline (i.e., 14 strains, Figure 4B). Predicted phase in 2012 was then estimated using Equations 13–15. To estimate the observed phase in 2012, we fitted the model in Equation 12 to the full panel of tested strains (i.e., 21 strains) measured at baseline and calculated the phase angle using Equations 13–15.
 
 To assess the consistency between the prediction and observation of phases in 2012, we plotted the distribution of the observed phase in 2012 among people who were predicted to in each of the four phases in 2012 (Figure 4C).
 
-## Association between phase and seroconversion
+#### Association between phase and seroconversion
 
 We examined the association between the phase in individual antibody responses and antibody responses to circulating strains (Figure 4D). We measured the antibody responses circulating strains as the seroconversion (i.e., fold of change ≥4) to either A/Texas/2012 or A/HongKong/2014 (i.e., strains that were circulated between baseline and follow-up). We fitted a logistic regression to seroconversion and adjusted for the predicted phase (in categories) in 2012, the average of titers against the two tested strains at baseline (i.e., preexisting titers in log scale), and the participants’ age at baseline.
 
-## Disentangle birth cohort effects using intrinsic cycles in individual antibody responses
+#### Disentangle birth cohort effects using intrinsic cycles in individual antibody responses
 
 To examine the differences in phase distribution across different birth cohorts, we first estimated the observed individual phase in 2012 by fitting Equations 12–15 to the full panel of tested strains measured at baseline. We compared the distribution of phase in 2012 among 5-year binned birth cohorts using chi-squared test (Figure 4E).
 
@@ -248,6 +390,6 @@ We estimated the phase distribution across birth cohorts using the predicted pha
 
 We examined the association between the predicted cohort-specific proportion of phase IV and the observed proportion of seroconversion to either A/Texas/2012 or A/HongKong/2014 using Pearson correlation (Figure 4G).
 
-## Software and programs
+#### Software and programs
 
 The studies were performed following the STROBE checklist wherever is applicable. All analyses were performed in R version 4.1.0 (R Foundation for Statistical Computing, Vienna, Austria). We used the ‘mgcv’ package to fit GAMs (Wood, 2011). The Lomb–Scargle periodogram was performed with the ‘spectral’ package (Seilmayer, 2016). We performed the empirical mode decomposition with the ‘EMD’ package (Kim and Oh, 2009). Simulations of life-course infection history and immune responses were performed with the ‘Rcpp’ package (Eddelbuettel and François, 2011). Source code used in this study is openly available at https://github.com/UF-IDD/Fluscape_Periodicity, (copy archived at swh:1:rev:2fa04290f2749633f1b236be3f7fd36b33aee954; Yang, 2022).

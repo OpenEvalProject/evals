@@ -20,7 +20,7 @@
 
 ## Abstract
 
-To analyse neuron data at scale, neuroscientists expend substantial effort reading documentation, installing dependencies and moving between analysis and visualisation environments. To facilitate this, we have developed a suite of interoperable open-source R packages called the natverse . The natverse allows users to read local and remote data, perform popular analyses including visualisation and clustering and graph-theoretic analysis of neuronal branching. Unlike most tools, the natverse enables comparison across many neurons of morphology and connectivity after imaging or co-registration within a common template space. The natverse also enables transformations between different template spaces and imaging modalities. We demonstrate tools that integrate the vast majority of Drosophila neuroanatomical light microscopy and electron microscopy connectomic datasets. The is an easy-to-use environment for neuroscientists to solve complex, large-scale analysis challenges as well as an open platform to create new code and packages to share with the community. natverse
+To analyse neuron data at scale, neuroscientists expend substantial effort reading documentation, installing dependencies and moving between analysis and visualisation environments. To facilitate this, we have developed a suite of interoperable open-source R packages called the natverse. The natverse allows users to read local and remote data, perform popular analyses including visualisation and clustering and graph-theoretic analysis of neuronal branching. Unlike most tools, the natverse enables comparison across many neurons of morphology and connectivity after imaging or co-registration within a common template space. The natverse also enables transformations between different template spaces and imaging modalities. We demonstrate tools that integrate the vast majority of Drosophila neuroanatomical light microscopy and electron microscopy connectomic datasets. The natverse is an easy-to-use environment for neuroscientists to solve complex, large-scale analysis challenges as well as an open platform to create new code and packages to share with the community.
 
 ## Introduction
 
@@ -38,63 +38,282 @@ We now give an overview of the natverse and showcase a number of common applicat
 
 ## Results
 
-## Software packages for neuroanatomy
+### Software packages for neuroanatomy
 
 We have opted to develop our software in R, a leading platform for bioinformatics and general data analysis. R is free and open source, and is supported by high-quality integrated development environments (e.g. Rstudio). It features a well-defined system for creating and distributing extension packages that bundle code and documentation. These can easily be installed from high-quality curated repositories (CRAN, Bioconductor) as well as via GitHub. R supports a range of reproducible research strategies including reports and notebooks and integrates with the leading cross-platform tools in this area (jupyter, binder).
 
 The core package of the natverse is the Neuroanatomy Toolbox, nat. It supports 3D visualisation and analysis of neuroanatomical data (Figure 1a), especially tracings of single neurons (Figure 1b). nat allows a user to read neuronal data from a variety of popular data formats produced by neuron reconstruction tools (Figure 1a). Typical image analysis pipelines include imaging neurons with confocal microscopy, reconstructing them using Fiji Simple Neurite Tracer (Longair et al., 2011) then saving them as SWC files (Cannon et al., 1998); nat can read a collection of such files with a single command. In addition, a user can, for example, mark the boutons on each neuron using Fiji’s point tool and export that as a CSV, load this into nat and then analyse the placement of these synaptic boutons with respect to the originally traced neuron (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig1-v2.jpg)
+
+**Figure 1.:** (a) R packages that constitute the natverse. Packages are coloured by whether they are general purpose, or cater specifically for Mus musculus, Danio rerio or Drosophila melanogaster datasets. Coarse division into packages for fetching remote data, implementing registrations and analysing data are shown. Data, as outputted by most reconstruction pipelines, can also be read by nat. (b) The natverse is designed to work best in the RStudio environment (RStudio Team, 2015), by far the most popular environment in which to execute and write R code. 3D visualisation is based on the R package rgl (Murdoch, 2001), which is based on OpenGL and uses the XQuartz windowing system. It runs on Mac, Linux and Windows platforms. (c) R functions can be called by other popular scientific programming languages, some example packages/libraries are shown. In particular, there is support for bidirectional interaction with Python, with interactive use supported by Jupyter or R Markdown notebooks. One of us (P. Schlegel) has developed Python code inspired by the natverse for analysing neuron morphology, NAVIS (https://github.com/schlegelp/navis), and talking to the CATMAID API, PyMaid (https://github.com/schlegelp/pyMaid). These python libraries transform natverse-specific R objects into Python data types and can call natverse R functions like nblast.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A simple pipeline for neuron analysis with nat. Bouton placement for a layer 5 pyramidal neuron from the mouse primary somatosensory cortex is examined relative to the neuron’s cable length and position within the layered structure of the cortex. Coloured names indicate layer transitions. Data courtesy of A. Vourvoukelis, A. von Klemperer and C.J. Akerman.
+
 We have extended nat by building the natverse as an ecosystem of interrelated R packages, each with a discrete purpose (Figure 1a). The natverse is developed using modern software best practices including revision control, code review, unit testing, continuous integration, and comprehensive code coverage. Developing sets of functions in separate packages helps compartmentalise development, ease troubleshooting and divides the natverse into documented units that users can search to find the more specific code examples or functions that they need. To the casual user, these divisions may initially be of little consequence. We therefore provide a single wrapper package, natverse; installing this results in the installation of all packages and their dependencies, immediately giving the user all the capabilities described in this paper (Figure 1a). Natverse packages have already been used in recent publications from our lab (Cachero et al., 2010; Costa et al., 2016; Dolan et al., 2019; Dolan et al., 2018a; Dolan et al., 2018b; Frechter et al., 2019; Grosjean et al., 2011; Huoviala et al., 2018; Jefferis et al., 2007) and others (Clemens et al., 2018; Clemens et al., 2015; Eichler et al., 2017; Felsenberg et al., 2018; Jeanne et al., 2018; Kunst et al., 2019; Saumweber et al., 2018; Zheng et al., 2018), with the nat.nblast packaged described in Costa et al., 2016. Confirmed stable versions of nat, nat.templatebrains, nat.nblast, nat.utils and nabor can be downloaded from the centralised R package repository, CRAN, with developmental versions available from our GitHub page (https://github.com/natverse/).
 
 In brief, natverse packages can be thought of as belonging to four main groups (Figure 1a). The first two support obtaining data, either by a) interacting with repositories and software primarily used for neuron reconstructions from electron micrograph (EM) data, including CATMAID, NeuPrint and DVID (Clements et al., 2020; Katz and Plaza, 2019; Saalfeld et al., 2009; Schneider-Mizell et al., 2016) or b) interacting with repositories for light-level data, including MouseLight, FlyCircuit, Virtual Fly Brain, NeuroMorpho, the InsectBrainDB and the FishAtlas projects. Additional R packages help with c) manipulating and deploying registrations to move data between brainspaces, and d) data analysis and visualisation (see Materials and methods for additional details). In order to see how one can use the natverse in RStudio to visualise and analyse neurons, please see Videos 1–5.
 
-## Manipulating neuroanatomical data
+![Video 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-video1.mp4.jpg)
 
-## Neuron skeleton data
+**Video 1.:** Short tutorial on how to use basic natverse functionality in RStudio, for example, loading and installing the natverse, plotting neurons and volumes, bridging between template brains, using NBLAST and comparing EM and LM data.
+
+![Video 2.](https://cdn.elifesciences.org/articles/53350/elife-53350-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/53350/elife-53350-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/53350/elife-53350-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/53350/elife-53350-video5.mp4.jpg)
+
+### Manipulating neuroanatomical data
+
+#### Neuron skeleton data
 
 Raw 3D images enable true to life visualisation but simplified representations are usually required for data analysis. For example, neurons can be traced to generate a compact 3D skeleton consisting of 3D vertices joined by edges. A more accurate representation would be a detailed mesh describing a 3D neuron, but it is often easier and quicker to work with skeleton representations.
 
 The natverse provides functions for morphological and graph-theoretic analyses of neurons, collections of neurons, neurons as vector clouds and neurons as tree graphs (Figure 2a). The natverse mainly operates with skeleton data, but the geometry of neuron mesh data can be analysed using the more general R packages Rvcg and Morpho (Schlager, 2017). The natverse represents skeletonised neurons as neuron objects, with the neuron’s geometry in the standard SWC format where each node in the skeleton has its own integer identifier. There are additional data fields (Figure 2—figure supplement 2), the treenode IDs for branch points, the location of its synapses in 3D space and their polarity, including the source file, leaf nodes and series of IDs that belong to continuous non-branching segments of the neuron (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig2-v2.jpg)
+
+**Figure 2.:** (a) Data classes defined by nat. A D. melanogaster DA1 olfactory projection neuron (Costa et al., 2016) is shown as part of four different data types, useful for different sorts of analyses: as a neuron object (left), as part of a larger neuronlist of multiple olfactory projection neurons (middle), as a vector-cloud dotprops object (right, upper) and a ngraph object (right, lower). In grey, the FCWB template brain, a hxsurf object from the package nat.flybrains, is shown. Generic code for visualizing these data types shown. (b) Visualisation, with generic sample code, of connectomic data from a dense reconstruction inner plexiform layer of the mouse retina is shown, coloured by the cell class and then cell type annotations given by their reconstructors (Helmstaedter et al., 2013). Because this dataset contains many neuron fragments that have been severely transected, we only consider skeletons of a total cable length greater than 500 μm using functions summary and subset. Somata are shown as spheres. (c) A synaptic-resolution neuron reconstruction for a D. melanogaster lateral horn neuron (Dolan et al., 2018a) has been read from a live CATMAID project hosted by Virtual Fly Brain (https://fafb.catmaid.virtualflybrain.org/) using catmaid, and plotted as a neuron object. It is rooted at the soma, consistent with the convention. (d) Boxed, Strahler order is a measure of branching complexity for which high Strahler order branches are more central to a neuron’s tree structure, and the lower order ones more peripheral, such that branches with leaf nodes are all Strahler order 1. Main, the same neuron which has had its lower Strahler order branches (see inset) progressively pruned away. (e) We can extract the longest path through a neuron, its ‘spine’, purple, a method that could help define the tracts that a neuron might traverse. (f) Boxed, in insect neurons, the main structure of the neuron is supported by a microtubular backbone. As it branches its more tortuous, smaller caliber neurites loose the microtubule, and make more postsynapses (Schneider-Mizell et al., 2016). Main, in CATMAID users can tagged the tree nodes that mark the position where neurite loses its microtubular backbone, so an R user can use prune family functions to remove, add or differentially colour microtubular backbone versus twigs. (g) Both presynapses and postsynapses can been manually annotated in CATMAID, and be visualised in R. Because neurons from CATMAID have synaptic data, they are treated as a slightly different class by the natverse, called catmaidneuron. A neuronlist can also comprise many catmaidneuron objects. (h) Right, using synaptic information, it is possible to use a graph theoretic approach which divides the neuron at the point of maximum ‘flow’ - the region in the neuron at which there are the most parallel paths - having ‘drawn’ a path between each input synapse and each output synapse that pass through every node on the skeleton (Schneider-Mizell et al., 2016). This helps divide a neuron into its dendrites, axon, intervening cable (maximum flow, the primary dendrite) and its cell body fiber (no flow). In insects, the cell body lies outside the neuropil and is connected to its arbour by a single fiber. Main, axon-dendrite split shown for exemplary neuron using seesplit3d.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) We used neuromorphr to obtain information about 40599 mammalian neurons from NeuroMorpho.org, in the brain region ‘neocortex’, from 193 different laboratories. However, it is quite difficult to compare morphologies acquired from different laboratories, that have used different imaging pipelines, neuron reconstruction tools and staining protocols (Farhoodi et al., 2019). We can use neuromorphr to access neuron metadata on NeuroMorpho.org, and choose only those neurons from the same laboratory (Bob Jacobs’), that have been obtained using a Golgi stain and the reconstruction software NeuroLucida, and that are classed as a principal cell (Anderson et al., 2010; Anderson et al., 2009; Jacobs et al. (2018); Jacobs et al., 2016; Jacobs et al., 2015; Jacobs et al., 2011; Jacobs et al., 2001; Jacobs et al., 1997; Reyes et al. (2016); Travis et al., 2005), giving us 3174 neurons. Branch points per micron cable can then be plotted for 24 different species’ cortical principal neurons using ggplot2. (b) Inset, a Sholl analysis (Sholl, 1953) obtains the number of intersections the neurons’ morphologies make with radii of increasing size centered at their roots. Main, the mean intersections for a subset of the species’ cortical principal cells is shown. (c) The distribution of pre- and post-synapses along three neurons arbors, split by axon and dendrite, then further by Strahler order, then further by presence (backbone) or absence (twigs) of microtubule. Olfactory related neurons (gold), associative memory related neurons (purple) and unknown inputs (grey). In this case, neuron#1 and neuron#2 are of the same cell type and look similar (PD2a1), but neuron#3 differs, indeed it belongs to a different cell type (PD2b1) (Dolan et al., 2018a).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Schematic representation of the data structure behind neuron objects and neuronlist objects. Objects of class neuronlist are essentially lists of neuron objects, representing one or more neurons, with some attached metadata.
+
 Neurons have tree like structures that are critical to their function (Cuntz et al., 2010). ngraph data objects represent a neuron as a tree graph originating at a root (usually the soma) with directed edges linking each of the neuron’s tree nodes (Figure 2a). This representation provides a bridge to the rich and efficient graph theory analysis provided by the igraph package (Csardi and Nepusz, 2006).
 
 Objects of class neuron are lists of data objects, like data.frames, describing properties such as the 3D position and interconnectivity of points in a neuron. Objects of class neuronlist are lists of neuron objects, representing one or more neurons, with some attached metadata. This attached metadata can give information like a neuron’s name, some unique identifier, its cell type, etc (Figure 2—figure supplement 2). An ngraph, neuron or neuronlist can be passed to many functions in the natverse, and also to other functions familiar to R users for which we have written specific methods. For example, users can call subset on a neuronlist to select only those neurons with a certain entry in their corresponding metadata, for example all amacrine cells. Methods passed to plot3d enable a neuronlist to be coloured by its metadata entries when it is plotted (Figure 2b), in this case connectomic data from the inner plexiform layer of the mouse retina is shown (Helmstaedter et al., 2013). Many functions are built to work with neuron objects but will also have a method that allows them to be applied to every neuron in a given neuronlist via the nat function nlapply. R users will be familiar with this logic from using the base R function lapply.
 
-## Basic analysis
+#### Basic analysis
 
 A useful function with methods for neuron objects and neuronlist objects is summary. This gives the user counts for tree nodes, branch points, leaf nodes and the total combined cable length of a neuron (Figure 2—figure supplement 1a). We can further use the natverse to identify points on a neuron that have particular properties based on the neuron’s skeleton structure (Figure 2c–e) or because we have some other data that identifies the position of some biological feature (Figure 2f–g), or both (Figure 2h). Branching can be assessed by branching density, for example a Sholl analysis (sholl_analysis) (Figure 2—figure supplement 1b), or decomposed by branching complexity, for example Strahler order (Figure 2—figure supplement 1c). Geodesic distances, that is within-skeleton distances, can be calculated between any tree node in the graph (Figure 2—figure supplement 1c) with the help of functions from the R package igraph (Csardi and Nepusz, 2006), and Euclidean distances can be calculated using our R package nabor.
 
 Some reconstruction environments allow tree nodes to be tagged with extra information, for example CATMAID. This can include neurite diameter, microtubules (Figure 2e) and pre- and postsynapses (Figure 2f). This information is fetched when the catmaid package reads a neuron. It can be used by a graph theoretic algorithm (Schneider-Mizell et al., 2016; Figure 2g, inset) to divide a neuron into its dendrites, axon and intervening cable (Figure 2h). We put this information together in the example in Figure 2—figure supplement 1c, which shows the geodesic distribution of pre- and postsynapses along three neurons arbors, split by axon and dendrite, then further by Strahler order, then further by presence or absence of microtubule. Here, for our three exemplar neurons, presynapses only exist on microtubular backbones, and are laid in high number except at the highest Strahler orders while postsynapses are mainly on twigs, and at Strahler order 1–2. We can also identify connected neurons using catmaid functions, and see that the dendrites of these cells only receive particular inputs.
 
-## Neuroanatomical volumes
+#### Neuroanatomical volumes
 
 The natverse also helps users to analyse neuronal skeletons with respect to volume objects that might represent neuroanatomical structures on a scale from whole neural tissues to neuropil subvolumes. 3D objects from diverse sources can be visualised and analysed with nat, and we can calculate their volumes (Figure 3a). By using the nat function make_model, a user can interactively create their own 3D objects from, for example, 3D points from a neuron’s cable or its synapses (Figure 3b); points can easily be retrieved by giving the function a labelled data.frame, matrix, neuron, neuronlist, hxsurf or mesh3d object (Figure 2—figure supplement 2). The resulting volume could be, for example, the envelope around a dendrite, which may correlate with other features of a neuron (Figure 3b). Using the nat function prune_in_volume, a skeleton can be cut to include or exclude the cable within a given volume, while the function pointsinside can tell a user which synapses lie within a standard neuropil segmentation (Figure 3c).
 
-## Advanced analysis
+![Figure 3.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig3-v2.jpg)
+
+**Figure 3.:** (a) We accessed the InsectBrainDB.org via insectbrainr to obtain template brains for different species of insect (Brandt et al., 2005; de Vries et al., 2017; El Jundi et al., 2018; Heinze and Reppert (2012); Kurylas et al. (2008); Løfaldli et al. (2010); Stone et al. (2017); Zhao et al., 2014). The package insectbrainr converts retrieved OBJ files into hxsurf objects, which contain one set of 3D points for each whole brain, and then different sets of edges between these points to form 3D neuropil subvolumes. These subvolumes were already defined by expert annotators. Their volume are compared across insect brain, normalised by total brain size. Insect template brain data curated by: S. Heinze, M. Younger, J. Rybak, G. Pfuhl, B. Berg, B. el Jundi, J. Groothuis and U. Homberg. (b) We can create our own subvolumes by pulling synaptic neuron reconstructions (Berck et al., 2016) from a first-instar larva EM dataset (Ohyama et al., 2015) (a public CATMAID instance hosted by Virtual Fly Brain), extracting dendritic post synapses from olfactory projections neurons, and using synapse clouds from neurons of the same cell type, to define glomerular volumes by creating a bounding volume, i.e an α-shape or convex hull. Their volumes can then be calculated, and correlated with the number of presynapses the same neurons make in two higher-order brain regions, the lateral horn and the mushroom body calyx. (c) Volumes can be used to analyse skeleton data. In (c) we look again at olfactory projection neurons, this time from an adult fly EM dataset (Zheng et al., 2018) and use the nat function pointsinside with standard neuropil volumes (Ito et al., 2014) to find the numbers of presynapses GABAergic and cholinergic olfactory projection neurons from the antennal lobe make in different neuropils. These neuropils exist as a hxsurf object in our R package nat.flybrains.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The basic connectivity scheme of the lateral horn, a second order olfactory centre in insects. Olfactory projection neurons (in orange) connect to lateral horn neurons (in cyan) (Frechter et al., 2019). (b) To create anatomically meaningful continuous voxels for the lateral horn, rather than random contiguous partitions of our standard neuropil space (Ito et al., 2014), we first removed the highest Strahler order branch (assign_strahler) from projection neuron axons’ so that their sub-branches could be clustered into 25 separate groups (nblast). For each cluster, a 3-D weighted kernel density estimate was generated based on 3D points (xyzmatrix) extracted from clustered sub-branches, using the R package ks (Duong, 2007). Points were spaced on neurites at 1 μm intervals (resample) and weighted as 1/total number of points in the cluster, so that supervoxels could be directly compared. (c) An 'inclusion' score for each neuron was calculated for each supervoxel by summing the density estimate for each point in the chosen arbor, again sampled at 1 μm intervals, and normalised by the total number of points in each arbor. An atlas of the lateral horn, colouring supervoxels by the modality/valence of their strongest input neurons. (d) A ‘projection’ was calculated between each lateral horn voxel and each lateral horn output voxel based on the number of neuronal cell types that have processes in both and the density of this arborisation. An atlas of the lateral horn output regions can then be made, colouring supervoxels by the modality/valence of their strongest input lateral horn supervoxels.
+
+#### Advanced analysis
 
 Because the natverse is a flexible platform that allows users to easily write their own R code to support intricate procedures, very specific analyses can be performed. For example, we might be interested in using skeletons to define anatomical subvolumes and analysing the projections between such subvolumes. For Figure 3—figure supplement 1, we developed custom code on top of natverse functionality to examine light-level D. melanogaster olfactory projections to, and target neurons with dendrites in a subregion of the brain called the lateral horn (Chiang et al., 2011; Frechter et al., 2019; Grosjean et al., 2011). We voxelised the lateral horn as well as its target regions into overlapping kernel density estimates based on agglomerating similarly shaped sub-branches for projection neuron axons. This analysis reveals substructure in a neuropil, and the 3D locations that are likely to receive input from these new subregions (Figure 3—figure supplement 1d). The natverse contains other functions to infer connectivity from light-level data, including potential_synapses, an implementation of a synapse prediction algorithm that makes use of spatial proximity and approach angle (Stepanyants and Chklovskii, 2005), and overlap, a simpler algorithm that measures the putative overlap in Euclidean space between neuron pairs (Frechter et al., 2019).
 
-## Cell typing neurons
+#### Cell typing neurons
 
 Neuronal cell type is a useful classification in neuroscience (Bates et al., 2019). Neuronal cell typing can be done by expert examination (Helmstaedter et al., 2013), purely by morphological clustering (Jeanne and Wilson, 2015), or a combination of both (Frechter et al., 2019). Many neurogeometric algorithms for assessing similarity exist. Some are invariant to the 3D embedding space (Li et al., 2017; Sholl, 1953; Wan et al., 2015), but those that are dependent on neurons’ relative positioning in a template space have typically met with greater success (Li et al., 2017; Zhao and Plaza, 2014). NBLAST (Costa et al., 2016) is a recent morphological similarity algorithm (Frechter et al., 2019; Jeanne et al., 2018; Kohl et al., 2013; Kunst et al., 2019; Masse et al., 2012; Strutz et al., 2014; Zheng et al., 2018). NBLAST is included in the natverse in our nat.nblast package (Costa et al., 2016).
 
 In many parts of mammalian nervous systems, morphologically similar neurons are repeated in space, and so aligning neurons to one another, without a specified template space, is sufficient for quantitative comparison (Figure 4a). NBLAST scores can be hierarchically clustered in R, plotted as a dendrogram, and used to visualize morphological groups at a defined group number or cut height (Figure 4a). Often, this forms a good starting point for cell typing, but might not be in exact agreement with manually defined cell types (Figure 4b). This can be due to neuron reconstructions being differently severed by the field of view or size of the tissue sample collected (Helmstaedter et al., 2013), or due to registration offsets between registered neuronal skeletons (Chiang et al., 2011; Kunst et al., 2019). The natverse includes interactive functions, such as nlscan, that allow users to visually scan neurons and identify mis-assignments (Figure 4c), or find.neuron and find.soma, that allow users to select a neuron of interest from a 3D window (Figure 4c).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig4-v2.jpg)
+
+**Figure 4.:** (a) Neurons from a dense reconstruction from EM data of the mouse retina inner plexiform layer (Helmstaedter et al., 2013) can either be NBLAST-ed in situ (upper) or after alignment by their principal axes in 3D space (lower) in order to make a first pass at defining, finding or discovering morphological neuronal cell types using NBLAST. (b) A tSNE plot visualising the results of an aligned NBLAST of neurons in A, coloured by the manually annotated cells types seen in Figure 2c, with shapes indicating the cell class. (c) Manual sorting using the interactive nat functions nlscan and find.soma or find.neuron can help identify misclassifications and make assignments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Light-level neurons registered to a standard brain for the larval zebrafish (Kunst et al., 2019) can be read into R using fishatlas, and all transformed onto the right hemisphere using the mirroring registration generated by Kunst et al. (b) They can then be NBLAST-ed to discover new cell types. 25 NBLAST clusters are shown, generic exemplary code shown in Monaco font. (c) Upper, shows this process for a small group of neurons from the telencephalon. Mirroring neurons to the same side produces cohesive clusters. Lower, neurons can be cut up (pruned) relative to user defined coordinates to, in this case, divide them by telencephalon region. NBLAST can be run separately on these two groups, and the results were compared using a tanglegram to see whether neurons that cluster together in the posterior telencephalon, also cluster together in the ventral telencephalon.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The same basic process can be done for FlyCircuit neurons (Chiang et al., 2011), here subsetted (in_volume) to those neurons that have arbor in both the antennal lobe and lateral horn (i.e. olfactory projection neurons).
+
 In smaller brains, like insect central brains or larval fish central brains, the overlap of both axons and dendrites in 3D space is an excellent starting point for defining a neuronal type, since neurite apposition is suggestive of synaptic connectivity (Rees et al., 2017) and neurites are highly stereotyped (Jenett et al., 2012; Pascual et al., 2004). If they have been registered to whole brain templates (Chiang et al., 2011; Costa et al., 2016; Kunst et al., 2019), it is desirable to choose a canonical brain hemisphere and standardise such that all neurons are mapped onto this side to approximately double the neurons available for clustering and assign the same cell types on both hemispheres (Figure 4—figure supplement 1, Figure 4—figure supplement 2).
 
-## Comparing disparate datasets
+### Comparing disparate datasets
 
-## Template brains in D. melanogaster
+#### Template brains in D. melanogaster
 
 It is highly desirable to compare neurons between datasets within a singular template space. Considering just the case of D. melanogaster, separate template brains ‘contain’ many large and useful but disparate datasets (Table 1):~23,000 single light-level neuronal morphologies, hundreds of neuronal tracings from dye fills, a collection of ~11,000 genetic driver lines, ~100 neuroblast clones, and connectomic data, including a brainwide draft connectome on the horizon (Scheffer and Meinertzhagen, 2019; Zheng et al., 2018). Because of the wealth of data available for D. melanogaster, we focus on its brain for our registration examples.
+
+**Table 1.**
+ Neuron morphology resources currently available for the adult D. melanogaster brain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Type</th>
+      <th>Count</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FlyCircuit</td>
+      <td>Single neuron morphologies stochastically labeled from dense transmitter-related lines</td>
+      <td>~23,000 neurons</td>
+      <td>(Chiang et al., 2011; Shih et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>FlyLight GMR collection</td>
+      <td>Collection of genetic driver lines, driven by orthogonal transcription factors GAL4 (Brand and Perrimon, 1993) or (Lai and Lee, 2006) LexA</td>
+      <td>~3500 GAL4 lines ~1500 LexA lines</td>
+      <td>(Jenett et al., 2012; Pfeiffer et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Vienna Tiles collection</td>
+      <td>Collection of genetic driver lines, driven by orthogonal transcription factors GAL4 or LexA</td>
+      <td>~8000 GAL4 lines ~3000 LexA lines</td>
+      <td>(Kvon et al., 2014; Tirian and Dickson, 2017)</td>
+    </tr>
+    <tr>
+      <td>FlyLight split-GAL4 collection</td>
+      <td>Genetic driver lines labelling small constellations of neurons using the split-GAL4 system</td>
+      <td>~400 sparse lines covering the mushroom body, lobula plate and columns, visual projection neurons, ellipsoid body, descending neurons, central complex, olfactory projection neurons (Y. Aso, personal communication, 2019) and lateral horn.</td>
+      <td>(Aso et al., 2014; Aso and Rubin, 2016; Dolan et al., 2019; Klapoetke et al., 2017; Namiki et al., 2018; Robie et al., 2017; Wolff and Rubin, 2018; Wu et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>K. Ito, T. Lee and V. Hartenstein</td>
+      <td>Neuroblast clones for the central brain larval-born neurons, generated using the MARCM method (Lee and Luo, 2001)</td>
+      <td>~100 neuroblast clones</td>
+      <td>(Ito et al., 2013; Wong et al., 2013; Yu et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>FlyEM and Harvard Medical School</td>
+      <td>Volume-restricted connectomes</td>
+      <td>Hundreds of neurons from the mushroom body alpha lobe, two antennal lobe glomeruli and several columns of the optic medulla</td>
+      <td>(Horne et al., 2018; Takemura et al., 2015, Takemura et al., 2013, Takemura et al., 2017; Tobin et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>FAFB project</td>
+      <td>Serial section transmission electron microscopy data for a single, whole adult female fly brain (Zheng et al., 2018), that has a partial automatic segmentation available (Li et al., 2019)</td>
+      <td>Raw image data for ~ 150,000 neurons of which several hundred have been partially reconstructed in recent publications, 7 thousand more unpublished; anestimated ~ 5% of neurons have some level of reconstruction.</td>
+      <td>(Dolan et al., 2019; Dolan et al., 2018b; Felsenberg et al., 2018; Frechter et al., 2019; Huoviala et al., 2018; Sayin et al., 2019; Zheng et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Various laboratories</td>
+      <td>Single neuron morphologies extracted from dye-filling (e.g. with biocytin) neurons</td>
+      <td>Hundreds across a range of studies, some cited here</td>
+      <td>(Frechter et al., 2019; Grosjean et al., 2011; Jeanne et al., 2018; Jefferis et al., 2007)</td>
+    </tr>
+  </tbody>
+</table>
 
 Two approaches have been taken in specifying template spaces: a) choosing a single brain avoids any potential artifacts generated by the averaging procedure, but b) an average brain can reduce the impact of biological variation across individuals and deformations introduced during sample preparation, thus increasing the likelihood of successful and accurate registration (Bogovic et al., 2018). Quantitative neuroanatomical work requires images to be spatially calibrated (i.e. with an accurate voxel size), but such calibrations are not present in all template brains.
 
 Table 2 lists the template brains for D. melanogaster considered in this work and details the resources available for each; some are shown in Figure 6. Initially, only raw unregistered data were publicly available for FlyCircuit (Chiang et al., 2011). Subsequently data registered to one of two template brains (one for each sex). The FlyLight project provides only raw image data (Jenett et al., 2012).
 
+**Table 2.**
+ Exemplar Drosophila template brains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Template Brain</th>
+      <th>Description</th>
+      <th>Resources</th>
+      <th>DOI</th>
+      <th>Citation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wuerzburg</td>
+      <td>Single nc82-stained female brain</td>
+      <td>-</td>
+      <td>-</td>
+      <td>(Rein et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>TEFOR</td>
+      <td>Averaged brain generated from Reinet al. dataset (22, 22)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>(Arganda-Carreras et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>JRC2018F</td>
+      <td>A symmetrised high-quality template using brp-SNAP</td>
+      <td>-</td>
+      <td>10.6084/m9.figshare.6825923</td>
+      <td>(Bogovic et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Cell07</td>
+      <td>Partial intersex nc82-stained averaged brain (14, 2)</td>
+      <td>~240 lateral horn projection neuron tracings</td>
+      <td>10.5281/zenodo.10570</td>
+      <td>(Jefferis et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>T1</td>
+      <td>Intersex nc82-stained averaged brain</td>
+      <td>The Vienna Tiles collection</td>
+      <td>10.5281/zenodo.10590</td>
+      <td>(Yu et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>IS2</td>
+      <td>Intersex nc82-stained averaged brain</td>
+      <td>1018 3D confocal images of fruitless neurons</td>
+      <td>10.5281/zenodo.10595</td>
+      <td>(Cachero et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>FCWB</td>
+      <td>Intersex Dlg-stained averaged brain (17, 9)</td>
+      <td>Good for FlyCircuit data, ~16,000 neurons re-registered</td>
+      <td>10.5281/zenodo.10568</td>
+      <td>(Costa et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>JFRC</td>
+      <td>Single nc82-stained female brain</td>
+      <td>The FlyLight collection</td>
+      <td>-</td>
+      <td>(Jenett et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>JFRC2</td>
+      <td>Spatially calibrated copy of JFRC</td>
+      <td>The FlyLight collection</td>
+      <td>10.5281/zenodo.10567</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IBN</td>
+      <td>Tri-labelled half brain, with n-syb-GFP</td>
+      <td>Neuropil and tract segmentations (half-brain)</td>
+      <td>-</td>
+      <td>(Ito et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>IBNWB</td>
+      <td>Synthetic whole-brain version of IBN</td>
+      <td>Neuropil and tract segmentations (whole-brain)</td>
+      <td>10.5281/zenodo.10569</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>FAFBV14</td>
+      <td>An aligned volume for a single whole female fly brain from EM data</td>
+      <td>Thousands of single neuron partial manual reconstructions and fragmented automatic segmentation (Li et al., 2019)</td>
+      <td>-</td>
+      <td>(Zheng et al., 2018)</td>
+    </tr>
+  </tbody>
+</table>
+
 Template brains and registered data are publicly available for the Vienna Tiles GAL4 libraries (Tirian and Dickson, 2017) but are not distributed in bulk form. We created an intersex reference brain for the FlyCircuit dataset and added spatial calibrations and re-registered data to our new template brains as necessary (see Materials and methods) before constructing bridging registrations. We have deposited all template brain images, in NRRD format (http://teem.sourceforge.net/nrrd/) at http://zenodo.org to ensure long-term availability. Two spatial transforms are most useful when considering template brains - a) mirroring data left-right, so that neurons reconstructed or registered to either hemisphere may be compared, and b) bridging between these templates, to cross-compare data.
 
-## Mirroring data in D. melanogaster
+#### Mirroring data in D. melanogaster
 
 Whilst the Drosophila brain is highly symmetric it is not perfectly so and the physical handling of brains during sample preparation introduces further non-biological asymmetries. A simple 180° flip about the medio-lateral axis is therefore insufficient (Figure 5—figure supplement 1a). To counter this, we have constructed non-rigid warping registrations for a number of template spaces that introduce the small displacements required to fix the mapping from one hemisphere to the other (Figure 5—figure supplement 1, see Materials and methods).
 
@@ -102,11 +321,35 @@ Our mirroring registrations can be deployed using the function mirror_brain. Our
 
 NBLAST was used to calculate morphologically determined similarity scores between DL2d projection neurons taken from the same side of the brain and compare them with those calculated between DL2d projection neurons taken from alternate sides of the brain (Figure 5b). We do not find the distributions of scores (Figure 5c) to be significantly different (D = 0.025, p=0.094, two-sample Kolmogorov-Smirnov test). Extending this, we have used these scores to classify neurons based on their bilateral symmetry. Figure 5d shows 12 example neurons, taken from the bilateral subset of the FlyCircuit dataset, spanning the range of similarity scores from most asymmetric (A) to most bilaterally symmetric (L). Interestingly, the distribution of scores suggest that most bilateral neurons are reasonably symmetric.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig5-v2.jpg)
+
+**Figure 5.:** (a) Three FlyCircuit neurons along with mirrored versions; a visual projection neuron, OA-VUMa2 (Busch et al., 2009) and the CSD interneuron (Dacks et al., 2006). Co-visualisation facilitates the detection of differences in innervation, such as the higher density of innervation for the CSD interneuron in the lateral horn on the contralateral side compared to the ipsilateral lateral horn. (b) Neurons from the same side of the brain and alternate side of brain are compared and a similarity score generated. (c) Distributions of similarity scores for comparisons within the same brain hemisphere and across brain hemispheres. These scores are similar, because the mirroring registration is good. (d) Sequence of 12 example neurons (black) with mirrored counterparts (grey), having equally spaced similarity scores. Below, full distribution of scores for all neurons in FlyCircuit dataset. (e) Segment-by-segment measures of neuron similarity. Redder shades correspond to low degrees of symmetricity, bluer shades higher. Flipped version of neuron in gray.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) The full process undergone by an image during a mirroring registration. (1) Original image. (2) Flipped 180° around the medio-lateral axis. (3) Affinely transformed. (4) Non-rigidly warped. (b) Heatmaps of deformation magnitude fields for mirroring FlyCircuit and FlyLight reference brains. (c) Distribution of deformation displacements for both brains, in a single mirroring operation and a full round-trip. Illustrations show the transformations that points undergo.
+
 It is also possible to use our mirroring registrations to test the degree of symmetry for sections of neurons. We take segments of a neuron and use our similarity metric to compute a score between the segment and the corresponding segment in the mirrored version of the neuron. This allows differences in innervation and axonal path between the two hemispheres to be clearly seen (Figure 5e).
 
-## Bridging template spaces in D. melanogaster
+#### Bridging template spaces in D. melanogaster
 
 Simply rescaling a sample image to match a reference brain usually fails due to differences in position and rotation (Figure 6—figure supplement 1a). An affine transformation can account for these differences, but not for differences in shape that may be of biological or experimental origin. To correct for these, we use a full non-rigid warping deformation, as described previously (Jefferis et al., 2007; Rohlfing and Maurer, 2003; Rueckert et al., 1999), see our Materials and methods. Briefly, a regular lattice of control points is created in the reference brain and corresponding control points in the sample brain are moved around to specify the deformations required to take the sample data into the reference space (Figure 6c–g). Deformations between control points are interpolated using B-splines, which define a smooth deformation of sample to reference (Figure 6f). The use of a mutual information metric based on image intensity avoids the requirement for landmarks to be added to each image – a time-consuming task that can often introduce significant inaccuracies. Our approach allows for the unsupervised registration of images and the independent nature of each registration allows the process to be parallelised across CPU cores. By utilizing a high-performance computational cluster, we re-registered, with high accuracy, the entire FlyCircuit dataset within a day.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig6-v2.jpg)
+
+**Figure 6.:** (a) A small sample of Drosophila template brains used around the world are shown. (b) A partial neuron tracing (purple) made using Simple Neurite Tracer (Longair et al., 2011) being transformed (xform_brain) from the IS2 standard brainspace to the FCWB, where it can be co-visualised with a more complete, matching morphology from FlyCircuit, using our R package flycircuit. (c) Outermost neuropil boundaries for FlyCircuit (red) and FlyLight (cyan) template brains. Primed space names indicate original spaces for data. Unprimed space names indicate current space of image. (d) Neuropil segmentation from JFRC2 space alongside FCWB reformatted version. (e) CSD interneuron from FlyCircuit (red) and FlyLight, GMR GAL4 expression pattern (cyan). (f) Neuropil segmentation from JFRC2 (Ito et al., 2014) space that has been bridged into FCWB space, so it can be seen along with selected neurons from FlyCircuit. (g) A traced neuron in FCWB space alongside morphologically similar neuron from FlyCircuit. (h) Expression pattern of Vienna Tiles line superimposed on expression pattern of FlyLight line. (Since we made our bridging publically available in April 2014, Otsuna et al., 2018 have also, separately, bridged these two datasets.).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Increasing levels of registration complexity give increasingly good registration results. (b) Four composite transformations of a 12-degree-of-freedom affine transformation. (c) Regularly spaced grid of control points (red dots) in the reference brain. (d) Control points (cyan dots) in the sample image. (e) Sample brain control points affinely transformed into image space of reference brain, along with original control points. (f) Deformation field interpolated using B-splines. (g) Reformatted sample image.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) A sub-section of the bridging registrations available through nat.flybrains, via which a neuroanatomical entity in any brainspace can eventually be placed into any other brainspace, by chaining bridging registrations. Arrows indicate the existence and direction of a bridging registration. Registrationfrye@ucla.edus are numerically invertible and can be concatenated, meaning that the graph can be traversed in all directions. Both brains (Arganda-Carreras et al., 2018; Bogovic et al., 2018; Cachero et al., 2010; Costa et al., 2016; Ito et al., 2014; Jefferis et al., 2007; Jenett et al., 2012; Rein et al., 2002; Tirian and Dickson, 2017; Zheng et al., 2018) and ventral nervous systems (Cachero et al., 2010; Yu et al., 2010) shown. (b) Fru+ neuroblast clones (orange) transformed from IS2 space into JFRC2 space of elav neuroblast clones (green). (c) Sexually dimorphic Fru+ neuroblast clone (male on left, female on right) along with traced neurons from FlyCircuit.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (a) A left-right registration for the lop-sided nascent L1 larval connectome (Ohyama et al., 2015). Neuroanatomical models created from CATMAID data (upper) and 644 manually left-right paired neurons can be used as a basis to generate a single deformation of L1 space using Deformetrica (via deformetricar), that describes a left-right mapping in a single deformation of ambient space. (b) Symmetrisation (purple) of the lop-sided cortex and neuropil in the L1 EM dataset. (c) Registration of segmented light-level volumes onto the EM dataset. Immunohistochemical staining of dissected L1 central nervous system was needed to make 3D models for coarse neuroanatomical volumes, which could be matched to those in the L1 EM; namely, the pattern of longitudinal ventral nervous system axon tracts and the mushroom bodies, visible in a dFasciculin-II-GFP protein trap line, the laddered ventral nervous system pattern and olfactory tracts visible in a GH146-lexA line, and a Discs large-1/dN-Cadherin stain to visualize the neuropil and cortex of the brain.
 
 Our bridging registrations can be deployed on any 3D natverse-compatible data using the function xform_brain. A successful and accurate bridging registration will result in the neuropil stains of two template spaces being well co-localised (Figure 6). After visually inspecting co-localised template spaces to check for any obvious defects, we find it helpful to map a standard neuropil segmentation (Ito et al., 2014) into the space of the new brain to check for more subtle defects (Figure 6—figure supplement 2b). If the registration passes these checks it can then be used to combine data from multiple datasets.
 
@@ -118,7 +361,7 @@ Both the FlyLight (Jenett et al., 2012) and Vienna Tiles libraries (Tirian and D
 
 It is also possible to warp 3D neuropils and neuron skeletons onto some target, without using landmark pairs. For this, Deformetrica (Bône et al., 2018; Durrleman et al., 2014) can be used to compute many pairwise registrations at once for different kinds of 3D objects to produce a single deformation of ambient 3D space describing a registration (Figure 6—figure supplement 3). This is a generic method that does not require landmark correspondences to be manually assigned. We give a simple example in Figure 6—figure supplement 3a, symmetrising a distorted brain and making a LM-EM bridge for first-instar larva, for which there is a nascent connectome (Berck et al., 2016; Eichler et al., 2017; Ohyama et al., 2015; Schneider-Mizell et al., 2016). With such a method it should be possible to bridge EM or LM data between developmental stages for a nervous system to make comparisons or identify neurons.
 
-## EM to LM and back again
+#### EM to LM and back again
 
 Finding neurons of the same cell type between a high-resolution EM dataset and light-level images of neurons (Figure 7a) is an essential step in identifying neurons and their genetic resources. So doing links connectivity and detailed morphology information acquired at the nanometer resolution to other forms of data. This can most easily be done by finding corresponding landmarks in EM data and a LM template space to build a registration (Figure 6—figure supplement 1).
 
@@ -127,6 +370,14 @@ Finding neurons of the same cell type between a high-resolution EM dataset and l
 **Figure 7.:** (a) Pipeline for acquiring EM neuron data. Serial section transmission EM at high speed with a TEM camera array (Bock et al., 2011) produced several micrographs per section at 4 × 4 nm resolution, ~40 nm thick. These were, per section, stitched into mosaics which were, across sections, registered to create the female adult fly brain v.14 template space (FAFB14, grey) (Zheng et al., 2018). Corresponding landmarks between FAFB14 and JFRC2 can be found and used to build a bridge. (b) The R package elmr can be used to select an anatomical locus, here the PD2 primary neurite tract (Frechter et al., 2019), from 3D plotted light-level neurons, taken from FlyCircuit, and generate a URL that specifies its correct coordinates in a FAFB14 CATMAID instance. Candidates (185) may then be coarsely traced out until they deviate from the expected light-level morphologies (178 pink dotted profiles, often a few minutes to an hour of manual reconstruction time to rule out neurons of dissimilar cell types sharing a given tract, similar cell types are more subtly different and might need to be near completely reconstructed). Those that remain largely consistent were fully reconstructed (green profiles, ~7–12 person-hours per neuron) (Li et al., 2019). (c) Close matches reveal likely morphology of non-reconstructed branches (orange arrow) but also contain off-target expression (yellow arrow). Identification of multiple candidate lines enables split-GAL4 line generation aimed at retaining common neurons in two GAL4 patterns. MultiColor FlpOut (MCFO) (Nern et al., 2015) of resultant splits can be compared with the EM morphology. Here, a candidate GAL4 line is found for AL-lALT-PN3 (Frechter et al., 2019; Tanaka et al., 2012) using NBLAST and a MIP search (Otsuna et al., 2018). (d) A recent dense, but volume-restricted reconstruction of the mushroom body α-lobe discovered a ‘new’ mushroom body output neuron type (MBON-α2sp) (Takemura et al., 2017). By bridging from the correct mushroom-body compartment using a mushroom body mesh (Ito et al., 2014) visualised in R Studio, to the FAFB14 EM data’s equivalent space in CATMAID using the R package elmr, an experienced tracer can easily identify dendrites and find MBON-α2sp. By doing so, we found its previously unreported axon-morphology. We then imported the skeleton into R studio, bridged MBON-α2sp into the JFRC2 template space where it could be NBLAST-ed against GMR GAL4 lines to identify candidate lines containing the MBON.
 
 In Figure 7 and Figure 8, we give the general pipeline we used in recent publications (Dolan et al., 2019; Dolan et al., 2018a; Frechter et al., 2019; Li et al., 2019) to connect neurons sparsely labeled in a split-GAL4 line (registered to the template space JFRC2) to sparsely reconstructed neurons from an EM dataset (FAFB14). Neurons can be manually reconstructed (Schneider-Mizell et al., 2016) or, more recently, partially reconstructed by machine learning methods (Januszewski et al., 2018) as segments that can be manually concatenated (Li et al., 2019). A thin plate spline bridging registration between JFRC2 and FAFB14 was built by finding ~100 corresponding landmarks between the two brainspaces, for example the location of turns in significant tracts, the boundaries of neuropils, the location of easily identifiable single neurons (Zheng et al., 2018). This registration can be deployed using xform_brain and our elmr package.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig8-v2.jpg)
+
+**Figure 8.:** (a) Sparse EM reconstruction providing a database of non-comprehensive, partial morphologies that can be searched using NBLAST. Candidate neurons from the EM brainspace can be NBLAST-ed against MCFO (Nern et al., 2015) data and other light-level datasets in order to connect them to cell-type-specific information, such as odour responses and functional connectivity (Chiang et al., 2011; Dolan et al., 2019; Frechter et al., 2019; Jeanne et al., 2018), by bridging these datasets into the same brainspace. (b) An all-by-all NBLAST of all neurons in the PD2 primary neurite cluster (Frechter et al., 2019) in multiple datasets can be shown as a tSNE plot. EM cell type matches can easily be found, as well as other correspondences between the light level datasets.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/53350/elife-53350-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) A NeuroGlancer window open on a web browser, showing an example of an automatic reconstruction. (b) Automatically reconstructed segments can be mapped onto extant manual tracing in FAFB14 using our R package fafbseg, enabling easy volumetric reconstruction of neurons. (c) Upper, automatically traced segments are mapped onto 55 manually reconstructed neurons from the lateral horn of D. melanogaster in the FAFB14 dataset (Bates et al., 2020), broken down by Strahler order, to simulate different levels of ‘completeness’. A further 10 neurons have had microtubular cable annotated. Lower, proportion of cable at different levels of pruning, that are covered by the 10 largest auto-segmented fragments for each neuron. The traced to identification category comprises neurons reconstructed by expert annotators sufficiently for them to be identifiable in light level data, using the pipeline shown in Figure 8. (d) Correlation between cable length and volume for axons and dendrites (Schneider-Mizell et al., 2016) for a selection of central brain neurons.
 
 By bridging multiple other light-level datasets into JFRC2 (Figure 6), candidate neurons from the EM brainspace can be co-visualised (Figure 8c) and NBLAST-ed against light-level datasets in order to confirm their cell type identity and consider results from different studies (Chiang et al., 2011; Dolan et al., 2019; Frechter et al., 2019; Jeanne et al., 2018; Figure 8d). However, FAFB14 contains unannotated image data for ~150,000 neurons (Bates et al., 2019), each requiring hours of manual reconstruction time, and person-power is limited. To find specific neurons in this volume, we can use the R package elmr to select a distinctive anatomical locus, for example the cell body fiber tract (Frechter et al., 2019) from 3D plotted neurons, and jump to its approximate coordinates in FAFB14 in a supported CATMAID instance using the generated URL (Figure 7b). Reconstruction efforts can then be focused at this location, being aware that the jump is not always completely accurate despite a good bridging registration as some light-level datasets can be ill-registered (Figure 7b). In the absence of an extant light-level reconstruction, candidate neurons can be found by identifying distinctive anatomical loci in the EM volume that correspond to the anatomy of the cell type in question (Figure 7d).
 
@@ -154,7 +405,7 @@ The near future will see generation of EM data for multiple whole adult Dipteran
 
 ## Materials and methods
 
-## R packages for neuroanatomy
+### R packages for neuroanatomy
 
 The R programming language (R Development Core Team, 2011) is perhaps the premier environment for statistical data analysis, is well supported by the integrated development environment RStudio and is a strong choice for data visualisation (Wickham, 2016). It already hosts a wealth of packages for general morphometric and graph theoretic analysis (Csardi and Nepusz, 2006; Duong, 2007; Lafarge et al., 2014; Schlager, 2017). An R package is a bundle of functions, documentation, data, tests and example code (Wickham, 2015). R packages are discrete, standardised and highly shareable units of code. They are primarily installed either from the Comprehensive R Archive Network (CRAN, >14,000 packages, curated), Bioconductor (>1700 packages, curated) or GitHub (larger, uncurated), using just one or two function calls and an Internet connection. Confirmed stable versions of nat, nat.templatebrains, nat.nblast, nat.utils and nabor can be downloaded from the centralised R package repository, CRAN. The natmanager package provides a streamlined installation procedure and will advise the user if a GitHub account is required for the full natverse install (see http://natverse.org/install).install.packages(‘natmanager’)
 # install core packages to try out the core natverse
@@ -165,35 +416,35 @@ natmanager::install(‘natverse’)
 
 The R packages behind the natverse can be divided into four groups (Figure 1A):
 
-## Working with synaptic resolution data in nat
+#### Working with synaptic resolution data in nat
 
 Group a) obtains synaptic-level data required for connectomes and includes catmaid, neuprintr, drvid and fafbseg. The package catmaid provides application programming interface (API) access to the CATMAID web image annotation tool (Saalfeld et al., 2009; Schneider-Mizell et al., 2016). CATMAID is a common choice for communities using terabyte-scale EM data to manually reconstruct neuron morphologies and annotate synaptic locations (Berck et al., 2016; Dolan et al., 2018a; Eichler et al., 2017; Frechter et al., 2019; Ohyama et al., 2015; Zheng et al., 2018). Users can use catmaid to read CATMAID neurons into R including the locations and associations of their synapses, and other tags that might identify biological entities such as somata, microtubules or gap junctions. Users can also leverage CATMAID’s infrastructure of flexible hierarchical semantic annotations to make queries for neurons for example in a brain region of interest. Further catmaid can edit CATMAID databases directly, for example by adding annotations, uploading neurons, synapses and meshes. Some CATMAID instances are kept private by a community before data publication. In this case, catmaid can enable a user to send authenticated requests to a CATMAID server, that is data can be kept private but still be read into R over an Internet connection. The packages neuprintr and drvid are very similar, except that they interact with API endpoints for different distributed annotation tools, the NeuPrint connectome analysis service (Clements et al., 2020; https://github.com/connectome-neuprint/neuPrint) and DVID (Katz and Plaza, 2019) and can retrieve neurons as volumes as well as skeletons. The package fafbseg aims to make use of the results of automatic segmentation attempts for large, dense brain volumes. It includes support for working with Google's BrainMaps and NeuroGlancer (https://github.com/google/neuroglancer). Automatic segmentation of EM data is a rapidly-developing field and this package is currently in active development; at present it only supports auto-segmentation (Li et al., 2019) of a single female adult fly brain (FAFB) dataset (Zheng et al., 2018).
 
-## Working with light-resolution data projects in nat
+#### Working with light-resolution data projects in nat
 
 Group b) is targeted at light microscopy and cellular resolution atlases, or mesoscale projectomes. Its packages, neuromorphr, flycircuit, vfbr, mouselight, insectbrainr and fishatlas can read from large repositories of neuron morphology data, many of which are co-registered in a standard brain space. neuromorphr provides an R client for the NeuroMorpho.org API (Ascoli et al., 2007; Halavi et al., 2008; Nanda et al., 2015), a curated inventory of reconstructed neurons (n = 107395, 60 different species) that is updated as new reconstructions are collected and published. Since its neurons derive from many different systems and species, there is no 'standard' orientation, and so they are oriented by placing the soma at the origin and aligning neurons by their principal components in Euclidean space. insectbrainr can retrieve neurons and brain region surface models from InsectBrainDB.org (n = 139 neurons, 14 species). Similarly flycircuit interacts with the flycircuit.tw project (Chiang et al., 2011; Shih et al., 2015), which contains >23,000 registered and skeletonised D. melanogaster neurons. The vfbr package can pull image data from VirtualFlyBrain.org, which hosts registered stacks of central nervous system image data for D. melanogaster, including image stacks for the major GAL4 genetic driver line collections (Jenett et al., 2012), neuroblast clones (Ito et al., 2013; Yu et al., 2013) and FlyCircuit’s stochastically labelled neurons (Chiang et al., 2011). This non-skeleton data can be read into R as point clouds. The fishatlas package interacts with FishAtlas.neuro.mpg.de, which contains 1709 registered neurons from the larval Danio rerio (Kunst et al., 2019), while mouselightr does the same for the MouseLight project at Janelia Research Campus (Economo et al., 2016), which has generated >1000 morphologies. In both cases, investigators have acquired sub-micron single neuron reconstructions from datasets of whole brains using confocal (Kunst et al., 2019) or two-photon microscopy (Economo et al., 2016), modified tissue clearing techniques (Treweek et al., 2015), and generated a template brain with defined subvolumes.
 
-## Working with registrations in nat
+#### Working with registrations in nat
 
 Group c) helps users make use of registration and bridging tools. The package nat.ants wraps the R package ANTsRCore (Kandel et al., 2019) with a small number of functions to enable nat functions to use Advanced Normalisation Tools (ANTs) registrations (Avants et al., 2009). The R package deformetricar does the same for the non-image (e.g. mesh or line data) based registration software Deformetrica (Bône et al., 2018; Durrleman et al., 2014) without the need for landmark correspondences. The nat package already contains functions to support CMTK registrations (Rohlfing and Maurer, 2003). The nat.templatebrains package extends nat to explicitly include the notion of each neuron belonging to a certain template space, as well as functions to deploy bridging and mirroring registrations. Additionally, nat.flybrains contains mesh data describing commonly used template spaces for D. melanogaster as well as CMTK bridging and mirror deformations discussed in the latter half of the results section.
 
-## Analysing data in nat
+#### Analysing data in nat
 
 Group d) contains functions that help users to easily analyse neuron data as both skeletons and volumes. Its biggest contributor is nat. nat.nblast allows users to deploy the NBLAST neuron similarity algorithm (Costa et al., 2016), by pairwise comparison of vector clouds describing these neurons in R. Our nabor package is a wrapper for libnabo (Elseberg et al., 2012), a k-nearest neighbour library which is optimised for low dimensional (e.g. 3D) spaces. The package elmr is another fly focused package that has been born out of a specific use case. Currently, ~22 laboratories and ~100 active users worldwide are engaged with reconstructing D. melanogaster neurons from EM data (Zheng et al., 2018) using CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016) in order to build a draft, sparse connectome. The package elmr allows users to read neurons from this environment, transform them into a template space where they can be compared with light-level neurons for which the community may have some other information (e.g. gene expression, functional characterisation, presence in genetic drive lines, etc.), then visualised and/or NBLAST-ed; all with only a few lines of code. This process enables CATMAID users to perform interim analyses as they reconstruct neurons, helping them to choose interesting targets for reconstruction and identify manually traced or automatically reconstructed neuron fragments (Dolan et al., 2019) or anatomical landmarks such as fiber tracts (Frechter et al., 2019), and so improve the efficiency of their targeted circuit reconstructions (Dolan et al., 2018a; Felsenberg et al., 2018; Huoviala et al., 2018).
 
-## Building mirroring registrations
+### Building mirroring registrations
 
 A simple 180° flip about the medio-lateral axis is insufficient to generate a left-right mirror for most neuroanatomical volumes; after flipping, the brain will not be perfectly centered in the image. It is first necessary to apply an affine registration to roughly match the flipped brain to the same location as the original. This results in a flipped brain with the correct gross structure (i.e. large structures such as neuropils align) but with mismatched fine details (e.g. bilaterally symmetric neurons may appear to innervate slightly different regions on either side (Figure 5a). For example, for the JFRC2 template space we found that points are, on average, displaced by 4.8 μm from their correct position, equivalent to 7–8 voxels of the original confocal image. The largest displacements, of the order of 10–15 μm, are found around the esophageal region (Figure 5—figure supplement 1b) and are likely due to specimen handling when the gut is removed during dissection. An ideal mirroring registration would result in zero total displacement after two applications of the mirroring procedure, that is a point would be mapped back to exactly the same location in the original brain hemisphere. Our constructed mirroring registrations have, on average, a round-trip displacement of less than a quarter of a micron — that is about the diffraction limit resolution of an optical microscope and less than half of the sample spacing of the original confocal image (Figure 5—figure supplement 1c).
 
-## Building bridging registrations
+### Building bridging registrations
 
-Given a bridging registration A ↦ B, an attempt to produce the registration B ↦ A can be made via numerical inversion of the original registration. This is a computationally intensive process but we find it to be useful for neuroanatomical work as the inaccuracies are set by numerical error, which is much smaller than registration error. As the registration A ↦ B may be injective (i.e. points within brain A may map to a subset of the points within brain B), there may be some points in B, particularly near the boundaries of the brain, for which this inversion will not map them into A. To counter this we have, for some brains, constructed a new registration B ↦ A by explicitly registering B onto A, rather than relying on numerical inversion. Full details of the building of bridging registrations and their directions are shown in Figure 6—figure supplement 1. Here, the arrows indicate the direction of the forward transformation but, due to the ability to numerically invert the transformations, it is possible to travel ‘backwards’ along an arrow to transform in the opposite direction. While the inversion takes an appreciable time to calculate, the resulting errors are extremely small, far below the resolution of the original images, and only exist due to the finite precision with which the floating-point numbers are manipulated. By inverting and concatenating bridging registrations as appropriate, it is possible to transform data registered to any of the template spaces to any of the other template spaces.
+Given a bridging registration A $↦$ B, an attempt to produce the registration B $↦$ A can be made via numerical inversion of the original registration. This is a computationally intensive process but we find it to be useful for neuroanatomical work as the inaccuracies are set by numerical error, which is much smaller than registration error. As the registration A $↦$ B may be injective (i.e. points within brain A may map to a subset of the points within brain B), there may be some points in B, particularly near the boundaries of the brain, for which this inversion will not map them into A. To counter this we have, for some brains, constructed a new registration B $↦$ A by explicitly registering B onto A, rather than relying on numerical inversion. Full details of the building of bridging registrations and their directions are shown in Figure 6—figure supplement 1. Here, the arrows indicate the direction of the forward transformation but, due to the ability to numerically invert the transformations, it is possible to travel ‘backwards’ along an arrow to transform in the opposite direction. While the inversion takes an appreciable time to calculate, the resulting errors are extremely small, far below the resolution of the original images, and only exist due to the finite precision with which the floating-point numbers are manipulated. By inverting and concatenating bridging registrations as appropriate, it is possible to transform data registered to any of the template spaces to any of the other template spaces.
 
-## Creating accurate registrations
+### Creating accurate registrations
 
 Full, non-rigid warping registrations were computed using the Computational Morphometry Toolkit (CMTK), as described previously (Jefferis et al., 2007). An initial rigid affine registration with twelve degrees of freedom (translation, rotation and scaling of each axis) was followed by a non-rigid registration that allows different brain regions to move somewhat independently, subject to a smoothness penalty (Rueckert et al., 1999). In the non-rigid step, deformations between the independently moving control points are interpolated using B-splines, with image similarity being computed through the use of a normalised mutual information metric (Studholme et al., 1999). The task of finding an accurate registration is treated as an optimisation problem of the mutual information metric that, due to its complex nature, has many local optima in which the algorithm can become stuck. To help avoid this, a constraint is imposed to ensure the deformation field is spatially smooth across the brain, as is biological reasonable. Full details of the parameters passed to the CMTK tools are provided in the 'settings' file that accompanies each registration. To create mirroring registrations, images were first flipped horizontally in Fiji before being registered to the original template spaces using CMTK. For convenience, we also encoded the horizontal flip as a CMTK-compatible affine transformation, meaning that the entire process of mirroring a sample image can be carried in single step with CMTK.
 
-## Construction of new template spaces
+### Construction of new template spaces
 
 The template space provided by the FlyLight project (JFRC) is not spatially calibrated and so we added spatial calibration to a copy named JFRC2. Similarly, FlyCircuit images are registered to male and female template spaces and so we created an intersex template space from 17 female and 9 male brains to bring all FlyCircuit neurons into a common space, irrespective of sex. The IS2, Cell07 and T1 template spaces were left unaltered.
 
@@ -201,26 +452,26 @@ As the neuropil and tract masks provided by the Insect Brain Name working group 
 
 As the template space is synthesised from an affine transformation of the original IBN template, we only considered an affine bridging registration between IBN and IBNWB. The n-syb-GFP labelling used in the IBN template strongly labels a large collection of cell bodies close to the cortex, posterior of the superior lateral protocerebrum and lateral horn, that are not labelled by nc82 or Dlg and hence the warping registrations from IBNWB to the other whole brain templates are less accurate in this region.
 
-## Construction of averaged template spaces
+### Construction of averaged template spaces
 
 CMTK's avg_adm tool was used to iteratively produce new averaged seed brains given a set of template spaces and an initial seed brain drawn from the set. In each round, template spaces are registered to the seed brain and averaged to produce a new seed brain. After all rounds are complete, a final affine registration between the latest seed brain and a flipped version is calculated and then halved, resulting in a final brain that is centered in the middle of the image. The FCWB template was produced in this manner using 17 female and 9 male brains. We have developed documented tools to help users make average templates, here: https://github.com/jefferislab/MakeAverageBrain.
 
-## Application of registrations to images, traced neurons and surface data
+### Application of registrations to images, traced neurons and surface data
 
 CMTK provides two commands, reformatx and streamxform that will use a registration to reformat images and transform points, respectively. The R package nat wraps these commands and can use them to transform neuroanatomical data, stored as objects in the R session, between template spaces. A 3D surface model of the standard neuropil segmentation (Ito et al., 2014) was generated from the labelled image stack, using Amira, read into R using nat, transformed into the different template template spaces, via JFRC2, and saved as new 3D surfaces. These can then be used to segment neurons in their original space, providing interesting volumetric data for a neuron such as the relative density of neuropil innervation.
 
-## Flies
+### Flies
 
 Wild-type (Canton S, Bloomington Stock Center, Indiana University) and transgenic strains were kept on standard yeast/agar medium at 25°C. Transgenics were a GH146-lexA line and the dFasciculin-II-GFP protein trap line (courtesy of M. Landgraf). Lines were balanced with CyO, Dfd-GMR-YFP or TM6b, Sb, Dfd-GMR-YFP balancer chromosomes (Bloomington Stock Center, Indiana University).
 
-## Larval dissection, immunohistochemistry and imaging
+### Larval dissection, immunohistochemistry and imaging
 
 Flies were mated a day before dissection and laid eggs on apple-juice based media with a spot of yeast paste overnight at 250C. Adults and large hatched larvae were subsequently removed, and small embryos (approx. the length of an egg) were dissected in Sorensen’s saline (pH 7.2, 0.075 M). A hypodermic needle (30 ½ G; Microlance) was used to sever the mouth hooks of each larva, at which point the CNS extruded along with viscera, and was gently separated and stuck to a cover glass that has been coated with poly-L-lysine (Sigma-Aldrich) in a bubble of solution. The CNS’ were then fixed in 4% formaldehyde (Fisher Scientific) in Sorensen’s saline for 15 min at room temperature, and subsequently permeabilised in PBT (phosphate buffer with 0.3% Triton-X-100, SigmaAldrich). Incubated overnight in primary antibodies at 4°C and, after washes in PBT, in secondary antibodies for 2 hr at room temperature. Washes took place in either a bubble of fluid or shallow dish filled with solution to prevent collapse of brain lobes into the VNC. For this reason also, confocal stacks were acquired with a 40x dipping lens on a Zeiss LSM 710, voxel resolution 0.2 × 0.2×0.5 microns. Primary antibodies used were Chicken anti-GFP (Invitrogen), 1: 10,000, mouse IgG1 anti-FasciclinII (DSHB), 1:10, rat N-Cadherin (DSHB) and mouse IgG1 Discs large-1, 1:50. Secondaries used were goat anti-mouse CF568, 1:600, goat anti-Chicken Alexa488, goat anti-mouse CF647, 1:600. Some antibodies and dissection training were kindly supplied by M. Landgraf.
 
-## Visualisation
+### Visualisation
 
 The majority of images shown in this manuscript were generated in R Studio. 3D images were plotted with natverse functions that depend on the R package rgl (Murdoch, 2001), 2D plots were generated using ggplot2 (Wickham, 2016). 3D images of confocal data were visualised using Amira 6.0, and Paraview. Figures were generated using Adobe Illustrator.
 
-## Data availability
+### Data availability
 
 The bridging and mirroring registrations are deposited in two version controlled repositories at http://github.com with revisions uniquely identified by the SHA-1 hash function. As some template spaces may have multiple versions, we identify each version by its SHA-1 hash as this is uniquely dependent on the data contained in each file. Since we use the distributed version control system, git, any user can clone a complete, versioned history of these repositories. We have also taken a repository snapshot at the time of the release of this paper on the publicly funded http://zenodo.org site, which associates the data with a permanent digital object identifiers (DOIs).To simplify data access for colleagues, we have provided spatially calibrated template spaces for the main template spaces in use by the Drosophila community in a single standard format, NRRD. These brain images have permanent DOIs listed in Table 2. We have also generated registrations for the entire FlyCircuit single neuron and FlyLight datasets. The registered images have been deposited at http://virtualflybrain.org. The R packages nat.flybrains and elmr in the natverse also contain easy-to-use functions for deploying these registrations. The complete software toolchain for the construction and application of registrations consists exclusively of open source code released under the GNU Public License and released on http://github.com and http://sourceforge.net. A full listing of these resources is available at http://jefferislab.org/si/bridging. All these steps will ensure that these resources will be available for many years to come (as has been recommended Ito, 2010).

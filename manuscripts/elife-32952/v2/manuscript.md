@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.32952.001 Glycogen synthase kinase 3 (GSK3) is a critical regulator of diverse cellular functions involved in the maintenance of structure and function. Enzymatic activity of GSK3 is inhibited by N-terminal serine phosphorylation. However, alternate post-translational mechanism(s) responsible for GSK3 inactivation are not characterized. Here, we report that GSK3α and GSK3β are acetylated at Lys246 and Lys183, respectively. Molecular modeling and/or molecular dynamics simulations indicate that acetylation of GSK3 isoforms would hinder both the adenosine binding and prevent stable interactions of the negatively charged phosphates. We found that SIRT2 deacetylates GSK3β, and thus enhances its binding to ATP. Interestingly, the reduced activity of GSK3β is associated with lysine acetylation, but not with phosphorylation at Ser9 in hearts of SIRT2-deficient mice. Moreover, GSK3 is required for the anti-hypertrophic function of SIRT2 in cardiomyocytes. Overall, our study identified lysine acetylation as a novel post-translational modification regulating GSK3 activity.
+Glycogen synthase kinase 3 (GSK3) is a critical regulator of diverse cellular functions involved in the maintenance of structure and function. Enzymatic activity of GSK3 is inhibited by N-terminal serine phosphorylation. However, alternate post-translational mechanism(s) responsible for GSK3 inactivation are not characterized. Here, we report that GSK3α and GSK3β are acetylated at Lys246 and Lys183, respectively. Molecular modeling and/or molecular dynamics simulations indicate that acetylation of GSK3 isoforms would hinder both the adenosine binding and prevent stable interactions of the negatively charged phosphates. We found that SIRT2 deacetylates GSK3β, and thus enhances its binding to ATP. Interestingly, the reduced activity of GSK3β is associated with lysine acetylation, but not with phosphorylation at Ser9 in hearts of SIRT2-deficient mice. Moreover, GSK3 is required for the anti-hypertrophic function of SIRT2 in cardiomyocytes. Overall, our study identified lysine acetylation as a novel post-translational modification regulating GSK3 activity.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ In the present work, we demonstrate that SIRT2 binds to and deacetylates GSK3 is
 
 ## Results
 
-## Acetyltransferase p300 regulates the GSK3β acetylation
+### Acetyltransferase p300 regulates the GSK3β acetylation
 
 To test whether GSK3β acetylation plays a role in the development of heart failure, we first created a mice model of cardiac hypertrophy. The cardiac hypertrophic agonist, isoproterenol (ISO) was infused chronically into mice by implanting osmotic mini-pumps in the peritoneal cavity (Sundaresan et al., 2009; Sundaresan et al., 2012). Chronic ISO infusion significantly increased heart weight/tibia length (HW/TL) ratio as well as left ventricular wall thickness, which is an indicator of cardiac hypertrophy, while reducing the ejection fraction of heart (Figure 1A–C), suggesting that ISO-infusion causes adverse cardiac remodeling and contractile dysfunction in mice. Previous studies indicate that GSK3β activity is reduced in hypertrophic hearts (Sugden et al., 2008). To test whether GSK3β activity is reduced in our cardiac hypertrophy model, we immunoprecipitated GSK3β from the heart lysates and assessed in vitro activity of GSK3β against the peptide of glycogen synthase (GS). Our results revealed that activity of GSK3β was significantly low in ISO-infused heart samples (Figure 1D). Moreover, the levels of β-catenin, a GSK3 target transcription factor, which degrade after phosphorylation by GSK3 (Liu et al., 2002), was high in ISO-infused hearts (Figure 1E). These findings further confirm reduced activity of GSK3β in ISO-infused heart samples. Next, we immunoprecipitated GSK3β from heart lysates and assessed the status of its acetylation and levels of phosphorylation by western blotting. Interestingly, we found markedly increased acetylation of GSK3β in the heart samples of ISO-infused mice (Figure 1E and F). However, we did not see marked changes in Ser9 phosphorylation of GSK3β in the chronic ISO-infused heart samples (Figure 1E). Our results were consistent with previous observations, where the total protein levels and Ser9 phosphorylation of GSK3β were not changed in the heart after pressure overload or myocardial infarction (Zhai et al., 2007). Similarly, the GSK3β Ser9 phosphorylation was unchanged in the heart of mice-treated with ISO (Zhang et al., 2011). These findings indicate that the reduced activity of GSK3β found in chronic ISO-infused hearts is correlated with increased lysine acetylation, but not with inhibitory Ser nine phosphorylation. Furthermore, we observed reduced levels of Tyr216 phosphorylation of GSK3β in ISO-infused heart samples. The expression levels of SIRT2 also reduced in the ISO-treated heart samples (Figure 1E), suggesting that acetylation of GSK3β may be linked to reduced levels of SIRT2 deacetylase.
 
@@ -44,17 +44,51 @@ To test whether GSK3β acetylation plays a role in the development of heart fail
 
 Acetyltransferase p300 has been shown to play a major role in the cardiac homeostasis (Yanazume et al., 2003a, 2002). Our immunoprecipitation experiments showed that p300 binds to GSK3β (Figure 1G). Further confocal microscopy analysis indicated that p300 co-localizes with GSK3β (Figure 1H). Next, we assessed direct binding of p300 with GSK3β using recombinant purified proteins. Our results indicate that p300 binds to GSK3β directly in an in vitro reaction (Figure 1I). In the next set of experiments, GSK3β was immunoprecipitated from p300-depleted cells and its acetylation status and activity were analyzed. We found that the depletion of p300 resulted in reduced levels of acetylation, although the effect is not robust, it increased the activity of GSK3β, as suggested by increase in GS phosphorylation (Figure 1J–1L). We believe that GSK3β acetylation may be regulated by multiple acetyltransferases including p300. Interestingly, depletion of p300 markedly increased the phosphorylation of Tyr216, but not Ser9 in GSK3β (Figure 1J). To validate our findings, we performed p300 overexpression experiments in cardiomyocytes. We found significantly increased acetylation of GSK3β, which is associated with reduced activity of GSK3β in p300 overexpressing cells (Figure 1M, N and O). Moreover, overexpression of p300 markedly reduced the Tyr216, but not Ser9 phosphorylation of GSK3β (Figure 1M). Next, we tested the enzymatic activity of acetylated GSK3β in vitro and found that p300-mediated acetylation significantly impairs kinase activity of GSK3β (Figure 1P). These findings suggest that p300-mediated acetylation might influence the phosphorylation of GSK3β at Tyr216 residue, but not Ser9, to inhibit the enzymatic activity.
 
-## Acetylation of GSK3β influences ATP binding: Insights from molecular modeling and molecular dynamics simulation of GSK3β WT and acetylated K183 mutant
+### Acetylation of GSK3β influences ATP binding: Insights from molecular modeling and molecular dynamics simulation of GSK3β WT and acetylated K183 mutant
 
 In our previous work, we found that acetylation of GSK3β at K15 promotes mitochondrial localization and is regulated inside the mitochondria by SIRT3 deacetylase. SIRT3-mediated deacetylation of GSK3β regulates the development of organ fibrosis (Sundaresan et al., 2016). Since SIRT2 is a cytoplasmic protein, we suspected that SIRT2 might not be regulting K15 acetylation of GSK3β. Therefore, we performed tandem mass spectrometry (MS/MS) analysis of GSK3β and identified two lysine residues, K150 and K183, as acetylation sites in GSK3β (Figure 2A). While K183 is located in the vicinity of nucleotide-binding pocket of GSK3β, K150 is located on the surface away from both nucleotide-binding pocket as well as substrate-binding region (Figure 2B I-III). Magnesium is an important cofactor that helps in neutralizing the negative charges of the phosphate residues of nucleotide. Interestingly, the side-chain of K183 residue is proximal to the magnesium ion of the adenosine di-phosphate nucleotide (Figure 2B and C). The addition of the acetylated group to the NZ atom of K183 side-chain may result in destabilization of Mg2+ from ADP (Figure 2B II-IV). Overall, in-silico analysis suggests that the acetylation of K183 side-chain may reduce the affinity of adenosine tri-phosphate (ATP) nucleotide to the binding pocket by interfering with its magnesium cofactor.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig2-v2.jpg)
+
+**Figure 2.:** (A) Annotation of representative tandem mass spectra of trypsin-digested GSK3β, depicting K150 and K183 acetylation. (B) Representation of the acetylation sites on the crystal structure of GSK3β (PDB ID 4NM0): (i) surface (ii) cartoon representation. (iii) Magnified active site representing position of K183 and (iv) magnified active site representing position of acetylated K183 (acK183). (C) Nucleotide-binding site in GSK3β crystal structure (PDB ID 4NM0) representing ADP, nucleotide interacting residues and K183. (D) Overlay of the wild-type (blue) and acK183 mutant (orange) of GSK3β representing the surface of ADP nucleotide, at random snapshots in the MD trajectory. (E) Overlay of protein backbone Cα RMSD plots of the five 20 ns MD trajectories in wild type. (F) Overlay of ADP nucleotide RMSD plots of the five 20 ns MD trajectories in wild type. (G) Overlay of the distance between the NZ atom of K85 and α-phosphate of ADP as a function of time for two stable trajectories (dark blue/cyan – wild type, pink/red – acK183). (H) Overlay of protein backbone Cα RMSD plots of the five 20 ns MD trajectories in acK183 mutant. (I) Overlay of ADP nucleotide RMSD plots of the five 20 ns MD trajectories in acK183 mutant. (J) Overlay of the distance between the NZ atom of K85 and β-phosphate of ADP as a function of time for two stable trajectories (dark blue/cyan – wild type, pink/red – acK183). (K) Histogram showing binding of γ−32P-ATP to recombinant wild type and mutants of His-GSK3β. Plasmids encoding wild type and mutants of His-GSK3β were transformed into E. coli BL21 (DE3). His-GSK3β and its mutants were purified by Ni-NTA affinity chromatography. n = 4 independent experiments. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values. (L) Histogram showing activity of HA-tagged WT or mutants of GSK3β. HA-tagged human GSK3β or its mutants were overexpressed in HeLa cells by transfection of their respective plasmids. HA-GSK3β or its mutants were immunoprecipitated using HA-coupled agarose beads (Sigma-Aldrich). The enzymatic activity of GSK3β was measured against glycogen synthase (GS)-peptide as described in the Materials and methods section. GSK3β-DN - GSK3β-K85A; Dominant negative. GSK3β-CA- GSK3β S9A; catalytically active. n = 4 independent experiments. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig2-figsupp3-v2.jpg)
 
 To better understand the effect of acetylation of K183 on the binding of adenine nucleotide in the pocket of GSK3β, we performed molecular dynamics simulations for the ADP-loaded wild type and acetylated K183 mutant (acK183). Initial model for the wild type was generated from the crystal structure of GSK3β (PDB ID 4NMO). For the acK183 mutant, the wild-type model was used as a template to generate in silico acetylation on the K183 residue (further details in Materials and methods). We ran five independent trajectories of 20 ns each totaling to 100 ns for each system. Multiple production runs would provide greater sampling of conformations for each system and further present an opportunity to capture the stochastic events, which otherwise might not be captured in a single long trajectory. Visual analyses of the molecular dynamics (MD) trajectories show drastic fluctuations in the ADP nucleotide with adenosine base completely destabilized in the acK183 mutant (Figure 2D). To quantify these effects, we first performed the root mean square deviation (RMSD) measurements for the Cα backbone atoms of the protein and ADP nucleotide, in both the systems. RMSD plots of the Cα backbone atoms for the five individual trajectories of 20 ns were plotted separately for the wild type and acK183 mutant (Figure 2E and H). The RMSD deviations were similar for both the plots ranging between 0.1 and 0.35 nm (Figure 2F and I). In agreement, we found only moderate changes in the global root mean square fluctuations (RMSF) of all the backbone Cα atoms of the acK183 mutant (Figure 2—figure supplement 1). Interestingly, we observed significant variations in the RMSD plots of the ADP nucleotide in the acK183 mutant compared to the wild type (Figure 2F and I). The drastic deviations observed in the RMSD plots of ADP nucleotide in acK183 mutant concurs with the fluctuations seen in the snap-shots of structures during MD simulations (Figure 2D). For further analysis, we considered two trajectories with stable Cα backbone RMSD’s for each of the wild type (yellow, blue) (Figure 2E) and acK183 mutant (red, green) of GSK3β (Figure 2E). We plotted time-dependent distance measurements between protein-nucleotide interactions in the binding pocket of GSK3β. We found that acetylation causes increase in distance between the side-chain amine of K85 and the phosphates of ADP nucleotide (Figure 2G and J). Positively charged K85 residue is essential for neutralizing the negative charge of phosphates of nucleotides. The escalation in distances between ADP and K85 suggest reduced stability for negatively charged phosphates in the acetylated mutant. Our results suggest that the acetylation would hinder both the adenosine binding as well as prevent stable interactions of the negatively charged phosphates with the protein. Collectively, we propose that the acetylation of K183 would destabilize the binding of the adenine nucleotide to the pocket of GSK3β.
 
 To test this possibility further, we performed ATP binding assay with wild type and mutant versions of GSK3β, where K183 was mutated either to glutamine (Q, acetylation mimetic) or to arginine (R, deacetylation mimetic). GSK3β-K183 mutations significantly reduced binding of ATP to GSK3β, when compared to wild type GSK3β (Figure 2K). These findings provided strong evidence that K183 is critically important for ATP binding to GSK3β and any modifications, including acetylation might affect its ATP-binding ability. To test whether K183 acetylation affects the catalytic activity, we performed in vitro kinase assay with mutants of GSK3β. In this assay, kinase-dead GSK3β-K85A was used as a negative control and GSK3β-S9A was used as the catalytically active mutant. Our results indicate that mutation of K183 to either arginine or glutamine drastically reduced the catalytic activity toward a glycogen synthase peptide (Figure 2L). Mutation of K150, which is less conserved among species (Figure 2—figure supplement 2) and exhibited low stoichiometry of acetylation (Figure 2—figure supplement 3), had no effect on GSK3β activity (Figure 2L). It is interesting to note that mutation of K183 to either K183R or K183Q, reduced the catalytic activity more than four folds, indicating that K183 is critical for the functionality of GSK3β. Collectively, these findings suggest that K183 is an important residue for ATP binding and the catalytic activity of GSK3β.
 
-## SIRT2 modulates the kinase activity of GSK3β by reversible acetylation
+### SIRT2 modulates the kinase activity of GSK3β by reversible acetylation
 
 In our work, we found reduced levels of SIRT2 deacetylase in the ISO-treated mice hearts. Since SIRT2 and GSK3β share cytoplasmic localization, we suspected that SIRT2 may be the GSK3β deacetylase. To test our hypothesis, we overexpressed all the sirtuin isoforms and assessed the acetylation, phosphorylation and activity of GSK3β. Our results suggest that SIRT2 overexpression markedly reduced the acetylation of GSK3β, while increasing its activity against glycogen synthase (Figure 3—figure supplement 1). Interestingly, we do not observe any changes in the phosphorylation of Ser9 residue of GSK3β. However, we found increased phosphorylation of GSK3β at Tyr216. Consistent with our previous work (Sundaresan et al., 2016), we found SIRT3 to be capable of deacetylating GSK3β and enhancing its catalytic activity (Figure 3—figure supplement 1). To further verify our findings, we immunoprecipitated GSK3β from SIRT2-deficient heart lysates and tested the levels of acetylation. As expected, we found markedly increased acetylation of GSK3β in SIRT2-KO hearts (Figure 3A and B). To test whether SIRT2 interacts with GSK3β, we immunoprecipitated GSK3β from heart samples and tested its binding with SIRT2 by western blotting. We found that SIRT2 interacts with GSK3β (Figure 3C). We also found that recombinant purified GSK3β is capable of binding to SIRT2 in vitro, suggesting direct interaction between both proteins (Figure 3D). To test whether SIRT2 deacetylates GSK3β, we performed an in vitro deacetylation assay, where the acetylated GSK3β was incubated with either WT or SIRT2-H187Y, catalytic mutant of SIRT2 with and without NAD+. Western blotting analysis indicated WT, but not catalytic mutant-SIRT2 markedly reduced the acetylation status of GSK3β in an NAD+-dependent manner (Figure 3E). These findings indicate that SIRT2 is a GSK3β deacetylase. Next, we tested whether SIRT2-mediated deacetylation enhances the catalytic activity of GSK3β by an in vitro kinase assay. The acetylated and deacetylated GSK3β were incubated with GS peptide and the GSK3β activity was monitored. Results indicated that acetylation significantly reduced the activity of GSK3β. However, incubation of acetylated-GSK3β with wild type, but not SIRT2-H187Y catalytic inactive mutant of SIRT2 restored the activity of GSK3β in a NAD+-dependent manner (Figure 3F), suggesting that SIRT2-mediated deacetylation increases GSK3β activity.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blot analysis of acetylated GSK3β in heart samples of 9 months old WT and SIRT2-KO littermates. GSK3β was immunoprecipitated from heart tissue lysates of WT and SIRT2-KO mice using anti-GSK3β antibody (sc-9166, Santa Cruz Biotechnolgy), and the affinity resin immobilized with protein A/G. Western blotting was performed to detect GSK3β acetylation by anti-Ac-Lysine antibody. IgG was used as a negative control. Whole cell lysates (WCL) were probed for the SIRT2 and GAPDH by western blotting. n = 4 mice per group. (B) Histogram showing relative acetylated GSK3β in 9 months old WT and SIRT2-KO mice heart tissues, as measured from Figure 3A. Signal intensities of acetylated GSK3β and GSK3β were measured by densitometry analysis (ImageJ software). n = 4 mice per group. Data is presented as mean ± s.d, *p<0.05. Student’s t test was used to calculate the p values. (C) GSK3β was immunoprecipitated from heart tissue lysates of 8 weeks old 129/Sv mice using anti-GSK3β antibody (sc-9166, Santa Cruz Biotechnolgy ), and the affinity resin immobilized with protein A/G. GSK3β interaction with SIRT2 was tested by western blotting using anti-SIRT2 antibody. IgG was used as negative control. Heart lysates was probed for indicated proteins by western blotting. (D) In vitro binding assay to test the interaction between GSK3β and SIRT2. Flag-SIRT2 was overexpressed in 293 cells by a plasmid encoding human Flag-SIRT2. Recombinant His or His-GSK3β was purified from E. coli BL21 (DE3) by Ni-NTA affinity chromatography and were incubated with 293 T cell lysates overexpressing human Flag-SIRT2. Interaction between GSK3β and SIRT2 was tested by western blotting. # marked western images denotes SIRT2 antibody used in this assay detects single band. (E) In vitro deacetylation assay showing SIRT2 as GSK3β deacetylase. Human HA-GSK3β was overexpressed in HeLa cells by transfection of the plasmid pcDNA3-HA-GSK3β. HA-GSK3β was immunoprecipitated using HA-coupled agarose beads (Sigma-Aldrich) and the HA-GSK3β was acetylated by recombinant p300 (Millipore), in the presence or absence of Acetyl-CoA (Ac-CoA) in HAT buffer. The acetylated HA-GSK3β was further incubated with either Flag-tagged SIRT2 or SIRT2-H187Y, which were immunoprecipitated from HEK 293 cell lysates overexpressing respective plasmids encoding Flag-tagged WT or SIRT2-H187Y using agarose beads conjugated to anti-Flag antibody (Sigma A2220). The deacetylation reaction was carried out in the presence or absence of NAD+ in a HDAC buffer. GSK3β acetylation was analyzed by western blotting using anti-Ac-Lysine antibody. # marked western images denotes SIRT2 antibody used in this assay detects single band. (F) In vitro kinase assay depicting the activity of acetylated and deacetylated GSK3β. Human HA-GSK3β was overexpressed in HeLa cells by transfection of the plasmid pcDNA3-HA-GSK3β. Recombinant HA-GSK3β was immunoprecipitated using HA-coupled beads and was acetylated by recombinant p300 in the presence or absence of Acetyl-CoA (Ac-CoA) in HAT buffer. Acetylated GSK3β was further deacetylated by either Flag-tagged WT or SIRT2-H187Y (SIRT2-HY), a catalytic inactive mutant of SIRT2, which was immunoprecipitated from HEK 293 cells, overexpressed with plasmid encoding Flag-tagged WT or SIRT2-H187Y using agarose beads conjugated to anti-Flag antibody (Sigma A2220). The deacetylation reaction was carried out in the presence or absence of NAD+ in a HDAC buffer and further enzymatic activity of GSK3β was measured against glycogen synthase (GS)-peptide, as described in the Materials and methods section. n = 5. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values. (G) Western blot analysis of acetylated GSK3β from control or SIRT2-depleted (SIRT2-KD) cardiomyocytes. Neonatal rat cardiomyocytes were transfected with either non-targeting (control) or siRNA targeting SIRT2 using Lipofectamine RNAiMAX reagent for 72 hr. SIRT2 depletion was confirmed by Western blotting. Total cellular acetylation was probed by anti-Ac-Lysine antibody to test the effect of SIRT2 depletion in cardiomyocytes. GSK3β was immunoprecipitated from these cell lysates using anti-GSK3β antibody (sc-9166, Santa Cruz Biotechnolgy), and the affinity resin immobilized with protein A/G. Western blotting was performed to detect acetylation of GSK3β by anti-Ac-Lysine antibody. Cell lysates (WCL) from control and SIRT2-KD cardiomyocytes were probed for indicated proteins by western blotting. (H) Western blotting analysis of hearts lysates from 9 months old WT and SIRT2-KO mice littermates for indicated proteins. n = 4 mice per group. (I) Histogram showing activity of GSK3β in WT and SIRT2-KO mice hearts at 9 months of age. GSK3β was immunoprecipitated from the heart lysates of WT and SIRT2-KO mice using anti-GSK3β antibody, clone GSK-4B (Sigma). The immunoprecipitated GSK3β was incubated with the peptide substrate in the presence of γ−32P-ATP. The incorporation of 32P into the GSK3β Peptide Substrate, which contains specific phosphorylation residue of GSK3β was measured. n = 6 mice per group. Data is presented as mean ± s.d. *p<0.05. Student’s t test was used to calculate the p values. (J) In vitro deacetylation assay to test whether SIRT2 deacetylates K183 residue of GSK3β. HA-tagged GSK3β or GSK3β-K183R was overexpressed in HeLa cells and was immunoprecipitated using HA-coupled beads. HA-tagged WT-GSK3β or GSK3β-K183R were incubated with Flag-SIRT2 immunoprecipitated from HEK 293 T cells using agarose beads conjugated to Anti-Flag antibody (Sigma A2220). The deacetylation reaction was carried out in the presence or absence of NAD+ in a deacetylation buffer. Acetylation status of GSK3β was analyzed by western blotting. # marked western images denotes SIRT2 antibody used in this assay detects single band. (K) Histogram showing relative acetylation of HA-tagged GSK3β or GSK3β-K183R, which was incubated with Flag-SIRT2. The data is generated from Figure 3J. Signal intensities of acetylated-GSK3β and GSK3β were measured by densitometry analysis (ImageJ software). n = 4 independent experiments. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values. (L) Histogram showing binding of γ−32P-ATP to acetylated and deacetylated His-GSK3β. Recombinant His-GSK3β was purified from E. coli BL 21 (DE3) by Ni-NTA affinity chromatography. Purified His-GSK3β was acetylated by recombinant p300 in the presence of Ac-CoA in HAT buffer. Acetylated His-GSK3β was further deacetylated by Flag-SIRT2 immunoprecipitated from HEK 293 T cells. The binding of γ−32P-ATP to acetylated and deacetylated His-GSK3β was assessed by the protocol described in Materials and methods section. n = 4. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values. (M) Histogram showing activity of WT or mutants of GSK3β. HA-tagged WT or mutants of GSK3β was immunoprecipitated from HeLa cells transfected with respective plasmids using HA-coupled agarose beads. The enzymatic activity of GSK3β was measured against glycogen synthase (GS)-peptide, as described in the Materials and methods section. n = 4. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were transiently overexpressed with either pcDNA-Flag or pcDNA-Flag-SIRT1-7 plasmid for 48 hr, and western blotting was performed to detect the indicated proteins. HeLa cell lysates (WCL) were probed with Flag-antibody for detecting the expression of Sirtuins. GSK3β was immunoprecipitated from these overexpressed lysates using anti-GSK3β antibody (sc-9166, Santa Cruz Biotechology) and tested for its acetylation by western blotting using anti-Ac-Lys antibody.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Acetylation of tubulin at K40, which is a specific deacetylation target of SIRT2 was probed to test the efficacy of SIRT2 inhibition. GSK3β was immunoprecipitated from these cell lysates using anti-GSK3β antibody, and the affinity resin immobilized with protein A/G. GSK3β acetylation was detected by Western blotting.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** MnSOD was used to localize the mitochondria (Red). DAPI was used to stain the nucleus (Blue).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Immunostaining was performed using HA antibody to localize WT and mutants of GSK3β (Red).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** n = 4 mice per group.
 
 To further test the activity of GSK3β, we measured the levels of phosphorylation of glycogen synthase in SIRT2-depleted cardiomyocytes. SIRT2 depletion increases the cellular global lysine acetylation and the acetylation of GSK3β (Figure 3G). Moreover, GSK3β-specific phosphorylation of glycogen synthase and β-catenin was reduced in SIRT2-depleted cardiomyocytes, which is associated with reduced Tyr216, but not Ser9 phosphorylation of GSK3β (Figure 3G). To further validate the results in vivo, we tested the phosphorylation of glycogen synthase in SIRT2-deficient heart samples, and observed reduced phosphorylation of glycogen synthase, which is associated with reduced Tyr216, but not Ser9 phosphorylation of GSK3β in SIRT2-KO hearts (Figure 3H). To further confirm the reduced activity of GSK3β in SIRT2-deficient hearts, we performed an in vitro kinase assay. Consistent with our findings, we observed significantly reduced activity of GSK3β toward a peptide of glycogen synthase (Figure 3I). Next, we measured the total and phosphorylated protein levels of β-catenin, a GSK3 target transcription factor, which is degraded, after phosphorylation by GSK3 (Liu et al., 2002), in the heart samples of SIRT2-deficient mice. Our results suggest that the protein levels of β-catenin are high in SIRT2-KO heart lysates, while the GSK3 target phosphorylation of β-catenin was decreased drastically (Figure 3H), indicating that SIRT2-mediated deacetylation might control the kinase activity of GSK3β.
 
@@ -66,7 +100,7 @@ GSK3β kinase activity is known to be inhibited by N-terminal Ser9 phosphorylati
 
 Next, we tested the phosphorylation of GSK3β at Tyr216 residue, which is known to enhance GSK3 activity by promoting substrate accessibility (Dajani et al., 2001; Hughes et al., 1993). Surprisingly, we found markedly reduced phosphorylation of GSK3β at Tyr216 residue in the cardiomyocytes or heart lysates of SIRT2-deficient mice (Figure 3G and H). These results suggest that acetylation might have negative impact on the activating tyrosine phosphorylation of GSK3β.
 
-## Molecular modeling of GSK3α suggests that the acetylation of residue K246 would have similar consequences as K183 of GSK3β
+### Molecular modeling of GSK3α suggests that the acetylation of residue K246 would have similar consequences as K183 of GSK3β
 
 GSK3 has two isoforms, α and β, which have overlapping cellular substrates and functions (Rayasam et al., 2009). In the heart, both α and β isoforms of GSK3 are expressed (Sugden et al., 2008). To test whether both isoforms of GSK3 are acetylated in SIRT2-depleted cells, we immunoprecipitated GSK3 isoforms and acetylation status was tested by western blotting. We found both GSK3α and GSK3β to be significantly acetylated in SIRT2-depleted cells as compared to control cells (Figure 4A and B). Next, we tested whether SIRT2-mediated deacetylation increases the catalytic activity of GSK3α. The acetylated and deacetylated GSK3α was incubated with GS peptide and the GSK3α activity was measured. Results suggest that acetylation significantly reduced the activity of GSK3α and incubation of acetylated-GSK3α with wild type SIRT2 restored its activity in an NAD+-dependent manner (Figure 4C), suggesting that SIRT2-mediated deacetylation enhances the activity of GSK3α. Further, our MS/MS analysis indicate that K99 and K246 are the acetylation sites in GSK3α (Figure 4D). The protein sequence alignment of GSK3β and GSK3α showed that K246 of GSK3α is analogous to residue K183 of GSK3β (Figure 4E). To further strengthen our assumption, we generated the homology model of GSK3α using the online Swiss-Modeler tool (Biasini et al., 2014). The modeled GSK3α further confirmed that the residue K246 would occupy the same position proximal to the adenine nucleotide as K183 of GSK3β (Figure 4F). We therefore assume that acetylation of residue K246 would play a similar role in de-stabilizing adenine nucleotide in the pocket of GSK3α.
 
@@ -74,9 +108,17 @@ GSK3 has two isoforms, α and β, which have overlapping cellular substrates and
 
 **Figure 4.:** (A) Western blot analysis showing acetylation status of both isoforms of GSK3 in control or SIRT2 depleted (SIRT2-KD) cardiomyocytes. Neonatal rat cardiomyocytes were transfected with either non-targeting or siRNA pool targeting SIRT2 using Lipofectamine RNAiMAX reagent for 72 hr. SIRT2 depletion was confirmed by western blotting. GSK3 was immunoprecipitated from cell lysates using anti-GSK3 antibody and the affinity resin immobilized with protein A/G. Western blotting was performed to detect GSK3α/β acetylation by anti-Ac-Lysine antibody. Cell lysates was probed for SIRT2 and actin antibodies by western blotting. (B) Histogram showing relative acetylated-GSK3α and GSK3β in control and SIRT2-depleted (SIRT2-KD) cardiomyocytes, as measured from Figure 4A. Signal intensities of acetylated-GSK3α and acetylated-GSK3β were measured by densitometry analysis (ImageJ software). n = 3. Data is presented as mean ± s.d. *p<0.05. Student’s t test was used to calculate the p values. (C) Histogram showing enzymatic activity of acetylated and deacetylated GSK3α. Recombinant HA- GSK3α was immunoprecipitated from HeLa cells overexpressing pcDNA-HA-GSK3α using HA-coupled agarose beads. Immunoprecipitated HA-GSK3α was acetylated by p300 in the presence of Acetyl-CoA (Ac-CoA) in HAT buffer. Acetylated GSK3α was further deacetylated by Flag-SIRT2 immunoprecipitated from HEK 293 T cells overexpressing plasmid encoding Flag-tagged SIRT2-WT using agarose beads conjugated to anti-Flag antibody (Sigma A2220). The enzymatic activity of GSK3α was measured against glycogen synthase (GS)-peptide. n = 5. Data is presented as mean ± s.d. *p<0.05. One-way ANOVA was used to calculate the p values. (D) Annotation of representative tandem mass spectra of trypsin-digested GSK3α, depicting K99, K246 acetylation. (E) Protein sequence alignment of the modeled region of GSK3α and the structure of GSK3β. (F) Cartoon, surface representation of the homology model of GSK3α (highlighted is the adenine nucleotide-binding pocket and position of K246 residue).
 
-## GSK3 is required for the anti-hypertrophic role of SIRT2 deacetylase
+### GSK3 is required for the anti-hypertrophic role of SIRT2 deacetylase
 
 Activation of GSK3β antagonizes the development of cardiac hypertrophy (Antos et al., 2002; Kerkela et al., 2008; Sugden et al., 2008). Cardiac myocyte-specific deletion of GSK3α and GSK3β, together, results in severe dilated cardiomyopathy (Zhou et al., 2016). Recently, SIRT2 was demonstrated to be an anti-hypertrophic molecule (Tang et al., 2017). In our recent work, we also found that SIRT2 deficiency induces spontaneous cardiac hypertrophy in mice by hyperactivation of NFAT transcription factors (Sarikhani et al., 2018a). To understand the contribution of GSK3 as a key molecule in the anti-hypertrophic signaling regulated by SIRT2, we treated SIRT2 overexpressing cardiomyocytes with GSK3 inhibitors, LiCl (Bertsch et al., 2011) and GSK3 inhibitor X (Li et al., 2014; Meijer et al., 2003) and studied the ISO-induced cardiac hypertrophy. Treatment with GSK3 inhibitors markedly reduced the activity of GSK3 as measured by phosphorylation of GS (Figure 5A). In cardiomyocytes, SIRT2 overexpression reduces ISO-induced protein synthesis, cardiac myocyte size and the expression of ANP, a fetal gene that is considered as a marker of cardiac hypertrophy. However, treatment of GSK3 inhibitors abrogated the anti-hypertrophic role of SIRT2 in cardiomyocytes treated with ISO (Figure 5B–D, Figure 5—figure supplement 1), suggesting that both GSK3 isoforms are required for the anti-hypertrophic function of SIRT2 deacetylase.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig5-v2.jpg)
+
+**Figure 5.:** (A) Western blotting analysis depicting the activity of GSK3 inhibitor X (GSK3-X). Neonatal rat cardiomyocytes were treated with vehicle or 500 nM GSK3-X for 48 hr and the activity of GSK3 was assessed by monitoring the phosphorylation of GS by specific antibody. (B) [3H]-leucine incorporation into total cellular protein of control (Ad-GFP) or SIRT2-overexpressing (Ad-SIRT2) rat neonatal cardiomyocytes treated with either vehicle or 500 nM GSK3 inhibitor X (GSK3-X) for 48 hr. Cardiomyocytes were infected with adenoviral vectors encoding either GFP or SIRT2 for 24 hr prior to GSK3-X treatment. After the GSK3-X treatment, cardiomyocytes were stimulated with either vehicle or 20 µM ISO for 24 hr and the [3H]-leucine incorporation was monitored. c.p.m. counts per minute. n = 10. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (C) Histogram showing quantification of relative cardiomyocyte area in control (Ad-Null) and SIRT2-overexpressing (Ad-SIRT2) rat neonatal cardiomyocytes treated with either vehicle or 500 nM GSK3 inhibitor X (GSK3-X) for 48 hr. Cardiomyocytes were infected with adenoviral vectors encoding either control or SIRT2 for 24 hr prior to GSK3-X treatment. After the GSK3-X treatment, cardiomyocytes were stimulated with either vehicle or 20 µM ISO for 24 hr and the relative cardiomyocyte area is quantified as described in Materials and methods section. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (D) Representative confocal images depicting perinuclear expression of ANP in control (Ad-Null) or SIRT2-overexpressing (Ad-SIRT2) cardiomyocytes treated with either vehicle or ISO (20 µM, 24 hr), with or without GSK3 inhibitor X (GSK3-X, 500 nM, 48 hr). Scale bar = 20 µm. ANP (Green), Myomesin (Red), Hoechst (Blue). (E) Western blotting analysis for puromycin incorporation in control or SIRT2-depleted (SIRT2-KD) neonatal rat cardiomyocytes infected with adenovirus expressing either control (Ad-luc shRNA) or p300 shRNA (Ad-p300-shRNA) 48 hr. p300 depletion was confirmed by western blotting. Pulse of puromycin was given 30 min prior to harvesting of cardiomyocytes and puromycin incorporation into nascent proteins was tested using anti-puromycin antibody. # marked Western images denotes SIRT2 antibody used in this assay detects single band. (F) Histogram showing relative puromycin levels in control or SIRT2-depleted (SIRT2-KD) cardiomyocytes infected with adenovirus expressing either control (Ad-luc shRNA) or p300 shRNA (Ad-p300-shRNA). The data is generated from Figure 5E. Signal intensities of puromycin and actin were measured by densitometry analysis using ImageJ software. n = 3 independent experiments. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (G) Western blotting analysis of GSK3β acetylation and activity in heart lysates of vehicle or anacardic acid (p300 inhibitor) treated 9 months old WT and SIRT2-KO mice littermates. Anacardic acid was injected intraperitoneal at the dose of 5 mg/kg/day for 10 days in mice. Peanut oil was used as vehicle. GSK3β was immunoprecipitated from heart lysates of WT and SIRT2-KO mice using anti-GSK3β antibody (sc-9166, Santa Cruz Biotechnology), and the affinity resin with protein A/G immobilized. Western blotting was performed to detect GSK3β acetylation by anti-Ac-Lysine antibody. GSK3β activity was measured by detecting the phosphorylation of GS. SIRT2 depletion was confirmed by western blotting. Whole cell lysates (WCL) was probed for indicated proteins by western blotting. (H) Histogram showing relative GSK3β acetylation in heart lysates of vehicle or anacardic acid (5 mg/kg/day for 10 days) treated 9 months old WT and SIRT2-KO mice from Figure 5G. n = 3. Signal intensities of GSK3β and acetylated-GSK3β was measured by densitometry analysis using ImageJ software. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (I) Scatter plot depicting HW/TL ratio of 9 months old WT and SIRT2-KO mice treated with either vehicle or anacardic acid, (p300-INH), at the dose of 5 mg/kg/day for 10 days. n = 5 mice per group. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (J) Scatter plot showing left ventricular posterior wall thickness of 9 months old WT and SIRT2-KO mice treated with either vehicle or anacardic acid (p300-INH), at the dose of 5 mg/kg/day for 10 days. n = 6–8 mice per group. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (K) Scatter plot depicting cardiac contractile functions, as measured by ejection fraction of 9 months old WT and SIRT2-KO mice treated with either vehicle or anacardic acid (p300-INH), at the dose of 5 mg/kg/day for 10 days. n = 6–8 mice per group. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32952/elife-32952-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blotting analysis to confirm the activity of LiCl. Neonatal rat cardiomyocytes were treated with 20 mM LiCl for 48 hr and the activity of GSK3β was assessed by monitoring the phosphorylation of p-GS. (B) [3H]-leucine incorporation into total cellular protein of control (Ad-GFP) or SIRT2-overexpressing (Ad-SIRT2) rat neonatal cardiomyocytes treated either with vehicle or ISO (20 µM, 24 hr), with or without LiCl (20 mM, 48 hr). c.p.m. counts per minute. n = 10. Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (C) Histogram showing quantification of relative cardiomyocyte area in control (Ad-Null) or SIRT2-overexpressing (Ad-SIRT2) rat neonatal cardiomyocytes treated either with vehicle or ISO (20 µM, 24 hr), with or without LiCl (20 mM, 48 hr). Data is presented as mean ± s.d. *p<0.05. Two-way ANOVA was used to calculate the p values. (D) Representative confocal images depicting perinuclear expression ANP in control (Ad-Null) or SIRT2-overexpressing (Ad-SIRT2) rat neonatal cardiomyocytes treated either with vehicle or ISO (20 µM, 24 hr), with or without 20 mM LiCl. Scale bar = 20 µm. α- Actinin (Green), ANP (Red) and Hoechst (Blue).
 
 The acetyl transferase p300 enhances the acetylation of GSK3 and thus inhibits its catalytic activity. Therefore, we tested whether depletion of p300 could reduce the acetylation of GSK3 and thus rescue the effect of SIRT2 deficiency. Our in vitro global protein synthesis experiment, which measures the incorporation of puromycin (Schmidt et al., 2009), suggest that depletion of p300 reduces the abnormal protein synthesis in SIRT2-depleted cardiomyocytes (Figure 5E and F). To validate our findings in vivo, we performed rescue experiments with anacardic acid, a p300 inhibitor. Western blotting analysis suggested that treatment with anacardic acid markedly reduces GSK3β acetylation in SIRT2-deficient mice (Figure 5G and H). Furthermore, we found that treatment of anacardic acid partially restores the activity of GSK3 in SIRT2-deficient hearts, as measured by phosphorylation of GS (Figure 5G), indicating that p300 inhibition could rescue the impaired activity of GSK3β caused by SIRT2 deficiency. However, the change in acetylation status of GSK3β after p300 inhibitor treatment is not correlated well with the GSK3β activity on glycogen synthase. We believe that glycogen synthase might have been post-translationally modified in SIRT2-KO hearts. It is possible that SIRT2-KO hearts might have increased expression of phosphatases that could regulate glycogen synthase phosphorylation. In our recent work, we demonstrated the development of spontaneous cardiac hypertrophy in SIRT2-KO mice (Sarikhani et al., 2018a). In the present study, we found similar results as SIRT2 deficiency induces spontaneous cardiac hypertrophy in mice (Figure 5I–J). Interestingly, inhibition of p300 significantly reduced HW/TL ratio, and wall thickness, while increasing ejection fraction in SIRT2-deficient mice (Figure 5I–K), indicating that p300 inhibition rescues cardiac hypertrophy and contractile dysfunction resulting from SIRT2 deficiency, which could be due to the restoration of GSK3 activity.
 
@@ -98,105 +140,1417 @@ Overall, our work identified GSK3 isoforms as a novel target of SIRT2 deacetylas
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resources</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, A2:A128 strain background (Mus musculus, C57BL/6J)</td>
+      <td>Sirt2 knockout mice, JAX Stock #012772 - B6.129-Sirt2 &lt; tm1.1Fwa&gt;/J</td>
+      <td>Jackson Laboratories, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, 129/SvJ)</td>
+      <td>WT, JAX stock # 000691</td>
+      <td>Jackson Laboratories, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK 293</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>GSK3β-KO fibroblasts</td>
+      <td>James Woodgett, Mount Sinai Hospital, Toronto, Canada</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, (Wistar rats)</td>
+      <td>WT</td>
+      <td>Central Animal Facility, Indian Institute of Science, India</td>
+      <td></td>
+      <td>P1-P2 pups used for primary cardiomyocytes culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3β</td>
+      <td>Cell Signaling Technology</td>
+      <td>9315</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3β</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-9166</td>
+      <td>1:1000 diluted in 5% milk for Western blotting 1:200 diluted in 1% BSA for immuno-fluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Acetylated-Lysine</td>
+      <td>Cell Signaling Technology</td>
+      <td>9681</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Acetylated-Lysine</td>
+      <td>Cell Signaling Technology</td>
+      <td>9441</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3β Ser-9</td>
+      <td>Cell Signaling Technology</td>
+      <td>9336</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3β Tyr 279/216</td>
+      <td>Merck Millipore</td>
+      <td>05–413</td>
+      <td>1:250 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-β-Catenin</td>
+      <td>Cell Signaling Technology</td>
+      <td>9561</td>
+      <td>1:2000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Catenin</td>
+      <td>Cell Signaling Technology</td>
+      <td>8480</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT2</td>
+      <td>Sigma-Aldrich</td>
+      <td>S8447</td>
+      <td>1:2000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT2</td>
+      <td>Merck Millipore</td>
+      <td>09–843</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT2</td>
+      <td>Cell Signaling Technology</td>
+      <td>12650</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ANP</td>
+      <td>Abcam</td>
+      <td>14348</td>
+      <td>1:250 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ANP</td>
+      <td>Cloud-Clone Corporation</td>
+      <td>PAA225Ra03</td>
+      <td>1:200 diluted in 1% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-25778</td>
+      <td>1:1000 diluted in 5% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p300</td>
+      <td>Merck Millipore</td>
+      <td>05–257</td>
+      <td>1:1000 diluted in 5% BSA for Western blotting, 1:200 diluted in 1% BSA for immuno-fluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Glycogen Synthase</td>
+      <td>Merck Millipore</td>
+      <td>07–817</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Glycogen Synthase</td>
+      <td>Cell Signaling Technology</td>
+      <td>3893</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β -actin (HRP-conjugate)</td>
+      <td>Cell Signaling Technology</td>
+      <td>12262</td>
+      <td>1:3000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β -actin (HRP-conjugate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A3854</td>
+      <td>1:3000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GSK3 α/β</td>
+      <td>Merck Millipore</td>
+      <td>04–903</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-puromycin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>PMY-2A4</td>
+      <td>1:500 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NFATc2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MA1-025</td>
+      <td>1:100 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>F2555</td>
+      <td>1:2000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-Tubulin</td>
+      <td>Cell Signaling Technology</td>
+      <td>2144</td>
+      <td>1:2000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Acetyl-α-Tubulin (Lys40)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5335</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-15404</td>
+      <td>1:1000 diluted in 5% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT3</td>
+      <td>Cell Signaling Technology</td>
+      <td>5490</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT4</td>
+      <td>Cloud-Clone Corporation</td>
+      <td>PAE914Hu01</td>
+      <td>1:500 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT5</td>
+      <td>Cloud-Clone Corporation</td>
+      <td>PAE915Mu01</td>
+      <td>1:500 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT6</td>
+      <td>Cell Signaling Technology</td>
+      <td>12486</td>
+      <td>1:1000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SIRT7</td>
+      <td>Cloud-Clone Corporation</td>
+      <td>PAE917Hu01</td>
+      <td>1:500 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9658</td>
+      <td>1:2000 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-805</td>
+      <td>1:100 diluted in 1% BSA for immuno-fluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p300</td>
+      <td>Merck Millipore</td>
+      <td>05–257</td>
+      <td>1:1000 diluted in 5% BSA for Western, 1:100 diluted in1% BSA for immuno-fluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOD2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-515068</td>
+      <td>1:200 diluted in 5% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α -Actinin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5044</td>
+      <td>1:200 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Clean-Blot IP Detection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21230</td>
+      <td>1:2000–5000 diluted in 5% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit HRP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2004</td>
+      <td>1:5000 diluted in 1% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2005</td>
+      <td>1:5000 diluted in 1% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31430</td>
+      <td>1:5000 diluted in 1% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit HRP</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31460</td>
+      <td>1:5000 diluted in 1% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG light chain HRP</td>
+      <td>Abcam</td>
+      <td>ab99697</td>
+      <td>1:5000 diluted in 1% milk</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21202</td>
+      <td>1:200 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit, Alexa Fluor 546</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11035</td>
+      <td>1:200 diluted in 5% BSA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ni-NTA Agarose</td>
+      <td>Qiagen</td>
+      <td>30230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANTI-FLAG M2 Affinity Agarose Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>GE healthcare</td>
+      <td>17-0756-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-HA−Agarose antibody produced in mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Protein A/G Agarose</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pcDNA3 Flag HA</td>
+      <td>Addgene</td>
+      <td>Plasmid 10792</td>
+      <td>1436 pcDNA3 Flag HA plasmid DNA was a gift from William Sellers</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta wt pcDNA3</td>
+      <td>Addgene</td>
+      <td>Plasmid 14753</td>
+      <td>PMID: 7715701</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 alpha wt</td>
+      <td>Modified Addgene, plasmid15896</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta S9A pcDNA3</td>
+      <td>Addgene</td>
+      <td>Plasmid 14754</td>
+      <td>PMID: 7980435</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta K85A pcDNA3</td>
+      <td>Addgene</td>
+      <td>Plasmid 14755</td>
+      <td>HA GSK3 beta K85A pcDNA3 was a gift from Jim Woodgett</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta K150Q pcDNA3</td>
+      <td>Modified Addgene, plasmid14753</td>
+      <td>This paper</td>
+      <td>For, caccggcagggtctgctgcgcgcggctataatg; Rev, cattatagccgcgcgcagcagaccctgccggtg;</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta K150R pcDNA3</td>
+      <td>Modified Addgene, plasmid 14754</td>
+      <td>This paper</td>
+      <td>For, attatagccgcgcgagacagaccctgccg; Rev, cggcagggtctgtctcgcgcggctataat;</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta K183Q pcDNA3</td>
+      <td>Modified Addgene, plasmid 14755</td>
+      <td>This paper</td>
+      <td>For, gcaggttctgcggctgaatatcgcgatggcaaatgccaaag; Rev, ctttggcatttgccatcgcgatattcagccgcagaacctgc;</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA GSK3 beta K183R pcDNA3</td>
+      <td>Modified Addgene, plasmid14756</td>
+      <td>This paper</td>
+      <td>For, aggttctgcggtctaatatcgcgatggcaaatgcca; Rev, tggcatttgccatcgcgatattagaccgcagaacct.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>GST-GSK3β</td>
+      <td></td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HIS- GSK3β</td>
+      <td></td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HIS- GSK3β-K183R</td>
+      <td></td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HIS- GSK3β-K183Q</td>
+      <td></td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT1 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13812</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT2 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13813</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT3 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13814</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT4 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13815</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT5 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13816</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT6 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13817</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT7 Flag</td>
+      <td>Addgene</td>
+      <td>Plasmid 13818</td>
+      <td>PMID: 12620231</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SIRT2-H187Y Flag</td>
+      <td>Modified from Addgene, plasmid 13818</td>
+      <td></td>
+      <td>For 5'atgtgtagaaggtgccatacgcctccaccaagtcc3'- Rev 5'ggacttggtggaggcgtatggcaccttctacacat3'.</td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-Null</td>
+      <td>Vector Biolabs</td>
+      <td>Adenovirus 1300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-GFP</td>
+      <td>Vector Biolabs</td>
+      <td>Adenovirus 1060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-SIRT2</td>
+      <td>Vector Biolabs</td>
+      <td>Adenovirus 1519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-h-EP300</td>
+      <td>Vector Biolabs</td>
+      <td>Adenovirus ADV-207954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-luc-shRNA</td>
+      <td>B. Thimmapaya, Northwestern University, Chicago, IL, USA</td>
+      <td></td>
+      <td>PMID: 26667039</td>
+    </tr>
+    <tr>
+      <td>Infected construct (human)</td>
+      <td>Ad-h-EP300-shRNA</td>
+      <td>B. Thimmapaya, Northwestern University, Chicago, IL, USA</td>
+      <td></td>
+      <td>PMID: 26667039</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>p300</td>
+      <td>Merck Millipore</td>
+      <td>14–418</td>
+      <td>http://dx.doi.org/10.1038/s41418-018-0069-8</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SMART pool: siGENOME Non-Targeting siRNA 1</td>
+      <td>Dharmacon</td>
+      <td>D-001206-13-50</td>
+      <td>100 nM siRNA transfected by Lipofectamine RNAiMAX Transfection Reagent</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SMART pool: siGENOME Rat Sirt2 siRNA</td>
+      <td>Dharmacon</td>
+      <td>M-082072-01-0010</td>
+      <td>100 nM SMARTpool siRNA transfected by Lipofectamine RNAiMAX Transfection Reagent</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GSK-3 Activity Assay Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>CS0990</td>
+      <td>PMID: 26667039</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>200518</td>
+      <td>PMID: 26667039 Sequences verified by sequencing, SciGenom Labs</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GenElute HP Plasmid Midiprep Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>NA0200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GEnElute HP Plasmid Miniprep Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>PLN70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Q32851</td>
+      <td>PMID: 25871545</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horse serum, heat inactivated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26050088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10500064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15070063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin, Type B</td>
+      <td>Sigma-Aldrich</td>
+      <td>G9382</td>
+      <td>0.2% w/v</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>G8270</td>
+      <td>0.01 M prepared in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase, Type II</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>17101015</td>
+      <td>0.4 mg/ml prepared in Trypsin-PBS-Glucose</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15050057</td>
+      <td>0.2% prepared in PBS-Glucose</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin-EDTA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>25200056</td>
+      <td>0.1% prepared in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoproterenol</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6504</td>
+      <td>https://doi.org/10.1172/JCI39162</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AGK2</td>
+      <td>Cayman Chemical</td>
+      <td>13145</td>
+      <td>http://dx.doi.org/10.1038/s41418-018-0069-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lithium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>203637</td>
+      <td>PMID: 20926980</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK-3 Inhibitor X</td>
+      <td>Calbiochem</td>
+      <td>CAS 740841-15-0 -</td>
+      <td>PMID: 16984885</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anacardic Acid</td>
+      <td>Cayman Chemical</td>
+      <td>CAS16611840</td>
+      <td>PMID: 28513807</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>VWR</td>
+      <td>J593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>0100–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>H3570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco's Modified Eagle's Medium- High glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Sosrane Neon Laboratories Ltd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>N3376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold Antifade Mounting medium with DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>P36931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acrylamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrochloric acid</td>
+      <td>Fischer Scientific</td>
+      <td>29505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium-dodecyl sulphate</td>
+      <td>VWR</td>
+      <td>0227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium persulphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>A3678</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEMED</td>
+      <td>Sigma-Aldrich</td>
+      <td>T7024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Merck Millipore</td>
+      <td>106404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>E5134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>324626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium pyrophosphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>221368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium orthovanadate</td>
+      <td>Sigma-Aldrich</td>
+      <td>450243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween-20</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, Mini Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>11836153001 ROCHE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMSF</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2X Laemmli Sample Buffer</td>
+      <td>Bio-Rad</td>
+      <td>161–0737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-mercaptoethanol</td>
+      <td>VWR</td>
+      <td>0482</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>D8418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clarity ECL Western Blotting Substrate</td>
+      <td>BioRad</td>
+      <td>5060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperSignal West Pico chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>PUREGENE</td>
+      <td>PG-4580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium hydroxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>221465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium chloride</td>
+      <td>Sisco Research Laboratories</td>
+      <td>70650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>formaldehyde solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin</td>
+      <td>HIMEDIA</td>
+      <td>MB083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Fischer Scientific</td>
+      <td>12835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Non-fat-milk</td>
+      <td>HIMEDIA</td>
+      <td>GRM1254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Honeywell</td>
+      <td>230–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bis-acrylamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>M7279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium deoxycholate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium bicarbonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>S6014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bio-Rad Protein Assay Dye Reagent Concentrate</td>
+      <td>Bio-Rad</td>
+      <td>5000006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>VWR</td>
+      <td>0339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leucine-free minimal essential medium</td>
+      <td>Thermo fisher Scientific</td>
+      <td>30030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Sigma-Aldrich</td>
+      <td>DTT-RO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>567430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>M8266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium fluoride</td>
+      <td>Sigma-Aldrich</td>
+      <td>450022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione-reduced</td>
+      <td>Sigma-Aldrich</td>
+      <td>G4251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bromophenol blue</td>
+      <td>Sigma-Aldrich</td>
+      <td>B8026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma Aldrich</td>
+      <td>H3784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Cell Signaling Technology</td>
+      <td>9804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>γ−32P-ATP</td>
+      <td>Bhabha Atomic Research Centre, India</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]leucine</td>
+      <td>Amersham Biosciences</td>
+      <td>TRK510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAD+</td>
+      <td>Sigma Aldrich</td>
+      <td>NAD100-RO-Roche</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>VisualSonics high-frequency ultrasound system</td>
+      <td>Vevo 1100</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>SDS-PAGE Gel running apparatus</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Western blotting apparatus</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Scintillation counter</td>
+      <td>Beckman</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Chemiluminescence imager</td>
+      <td>Chemidoc Touch, Biorad, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>ThermoMixer C</td>
+      <td>Eppendorf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Power-pack</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>LSM 880 confocal microscope</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Tissue-culture ware</td>
+      <td>Eppendorf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuickChange Primer Design</td>
+      <td>Agilent Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 5</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Lab</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mascot data explorer software</td>
+      <td>Matrix Science, London, United Kingdom</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scaffold_2.1.03</td>
+      <td>Proteome Software, Inc., Portland, OR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Swiss-model tool</td>
+      <td>ExPASy web server</td>
+      <td></td>
+      <td>PMID:24782522</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera software package</td>
+      <td>Resource for Biocomputing, Visualization, and Informatics, NHI</td>
+      <td></td>
+      <td>PMID:15264254</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS simulation package, version 5.0.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyTMs plugin of PyMOL</td>
+      <td></td>
+      <td></td>
+      <td>https://doi.org/10.1186/s12859-014-0370-6</td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>Osmotic Minipumps</td>
+      <td>ALZET</td>
+      <td>Models 2002, 2001</td>
+      <td>PMID: 19652361</td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>Cover-slip 18 mm</td>
+      <td>Blue Star Slides</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>PVDF membrane Amersham Hybond P</td>
+      <td>GE Healthcare</td>
+      <td>10600023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>Nitrocellulose paper</td>
+      <td>Biorad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>Cell culture wares</td>
+      <td>Eppendorf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Miscellaneous</td>
+      <td>Sigma cell scraper</td>
+      <td>Sigma-Aldrich</td>
+      <td>SIAL0010</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 All animal experiments were performed with the approval of Institutional animal ethics committee of Indian Institute of Science, Bengaluru, India. All the animal experiments were carried out as per the strict accordance with the recommendations of the Committee for the Purpose of Control and Supervision of Experiments on Animals (CPCSEA), Government of India. The protocols were approved by the Institutional Animal Ethics Committee of the Indian Institute of Science (Permit Numbers: 559/2017, 568/2017, 376/2014). Mice were sacrificed using CO2 before harvesting and every effort was made to minimize suffering. 129/SvJ mice (renamed as 129 × 1/SvJ, JAX stock # 000691) and Sirt2 knockout mice (JAX stock #012772 - B6.129-Sirt2 < tm1.1Fwa>/J) were procured from the Jackson Laboratories, USA. Mice were housed in individually ventilated cages (IVC) under 12 hr light/dark cycle in the clean air facility of Central Animal Facility, Indian Institute of Science. Chow diet and water were given ad libitum to animals.
 
-## Induction of cardiac hypertrophy in mice
+### Induction of cardiac hypertrophy in mice
 
 Cardiac hypertrophy was induced in 8 weeks old 129/Sv mice by surgically implanting Isoproterenol (ISO)-filled osmotic minipumps (models 2002, 2001; ALZET), into the peritoneal cavity of the mice. ISO (Sigma-Aldrich) was dissolved in buffer containing 150 mM NaCl and 1 mM acetic acid and delivered chronically at the dose of 10 mg/kg/day for 7 days. Control mice underwent similar procedure, except that the pumps were filled with vehicle solution containing 150 mM NaCl and 1 mM acetic acid. The induction of hypertrophy was noninvasively assessed by use of echocardiography. Mice were sacrificed, the heart was quickly collected and soaked in ice cold PBS. Heart was squeezed to remove excess blood and PBS, and heart weight was measured by a weighing balance. Tibia length of mice was measured by a Vernier caliper. The heart was sectioned into smaller pieces, immediately snap-frozen in liquid nitrogen and stored at −80° till further processed.
 
-## Echocardiography of mice
+### Echocardiography of mice
 
 Mice were anaesthetized by continuously infusing ~1% Isoflurane via nasal cone. A commercial topical depilatory was used to remove chest hair of mice. Body temperature of the mice was maintained by a heated imaging platform. Electrocardiogram leads were attached to limb of mice for gating. FUJIFILM VisualSonic Vevo 1100 high-frequency ultrasound equipped with 30 MHz high-frequency transducer was used to image the animals in the left lateral decubitus position. Two-dimensional echocardiographic images were recorded in parasternal long- and short-axis projections, with guided M-mode recordings at the midventricular level in both views. Left ventricular cavity size and left ventricular wall thickness were measured in at least three beats from each projection and averaged for data analysis. Left ventricular fractional shortening was calculated from the M-mode measurements by an in-built software.
 
-## Cell lines, plasmids and transfection
+### Cell lines, plasmids and transfection
 
 HeLa and HEK 293 cell lines were purchased from ATCC. The identity of the cell lines has been authenticated by short tandem repeat (STR) analysis by the supplier. These cells were tested mycoplasma free by PCR-based screening in the laboratory. GSK3β-Knock-out (GSK3β-KO) mouse embryonic fibroblasts were kindly provided by James Woodgett, Mount Sinai Hospital, Toronto, Canada. HeLa, HEK 293 and GSK3β-KO embryonic fibroblasts were cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 100 units/ml penicillin and 100 µg/ml streptomycin at 37°C and 5% CO2. Refer Key resources table for source and description of plasmids used. Site directed mutagenesis was carried out as per previously described protocol (Zheng et al., 2004). QuickChange Primer Design tool was used to design primers for site-directed mutagenesis of Sirt2 and Gsk3b. The site-directed mutation was verified by sequencing (SciGenom). Cells were transfected with plasmids harboring gene of interest using Lipofectamine 2000 transfection reagent as per manufacturer’s protocols. Briefly, plasmid encoding control, or the desired construct were diluted in serum-free media and incubated for 5 min. Similarly, Lipofectamine was diluted in serum-free media, and incubated for 5 min. Mixtures were vortexed and centrifuged. Post-incubation, diluted plasmid and lipofectamine were pooled together, vortexed, centrifuged, and incubated at room temperature for 30 min. Equal volume of the mixture was added to the cells in serum-free media for 6 hr.
 
-## Culture of cardiomyocytes
+### Culture of cardiomyocytes
 
 Primary rat neonatal cardiomyocytes were isolated from 1- or 2-day-old Wistar rats as described earlier (Jain et al., 2017). Rat pups were anaesthetized using 1–2% isoflurane and were sacrificed by decapitation. The excised hearts were placed in sterile ice-cold PBS containing D-glucose (0.01 M), minced into small pieces and further enzymatically digested by mixture of 0.2% trypsin, Collagenase Type II (0.4 mg/ml) and 0.01M D-glucose containing PBS in a 1.5 ml microcentrifuge tube. Approximately 65–75 μl of the digestion mixture was used per heart. Enzymatic digestion was carried out for 5 min in 37°C with shaking at 250 rpm. The unwanted erythrocytes and the debris were discarded from the first round of digestion. A total of eight to ten rounds of digestion was carried out and the supernatant containing a single-cell suspension from each digestion was collected in a 15-ml falcon tube containing 100% horse serum. The cell suspension was maintained at 37°C throughout the digestion process. Isolated neonatal rat cardiomyocytes were pre-plated on uncoated tissue culture plates to remove the adherent fibroblasts. After 1 hr of pre-plating, the non-adherent cell population enriched with cardiomyocytes were collected and centrifuged at 1000 rpm for 10 min. The supernatant was discarded, and cell pellet suspended in high-glucose DMEM supplemented with 10% FBS, 100 units/ml penicillin and 100 µg/ml streptomycin. Cardiomyocytes were seeded onto gelatin (0.2% w/v)-coated sterile tissue culture dishes for further experiments.
 
-## Adenovirus infection
+### Adenovirus infection
 
 Adenovirus vectors encoding SIRT2 or p300 were purchased from Vector Biolabs. Adenovirus vectors synthesizing shRNA against Luc or p300 were kindly gifted by B. Thimmapaya, Northwestern University, Chicago, IL. After 36 hr of plating, cardiomyocytes were infected with adenoviruses; Ad-null, Ad-GFP, Ad-p300, Ad-SIRT2, Ad-Luc-shRNA or Ad-p300-shRNA at multiplicity of infection (MOI) of 10. All adenovirus infection experiments were carried out in high-glucose DMEM supplemented with 10% FBS, 100 units/ml penicillin and 100 µg/ml streptomycin.
 
-## siRNA transfection
+### siRNA transfection
 
 Smart pool SIRT2 siRNA and non-targeting siRNA were purchased from Dharmacon. For the siRNA experiments, cardiomyocytes were transfected with 100 nM SMARTpool siRNA targeting rat SIRT2 using Lipofectamine RNAiMAX Transfection Reagent as per manufacturer’s protocol. Non-targeting siRNA was used as control. Briefly, non-targeting siRNA or SMARTpool siRNA targeting rat SIRT2 were diluted in serum-free media and incubated for 5 min. Similarly, Lipofectamine RNAiMAX Transfection Reagent was diluted in serum-free media and incubated for 5 min. Mixtures were vortexed and centrifuged. Post-incubation, diluted plasmid and lipofectamine were pooled together, vortexed, centrifuged, and incubated at room temperature for 30 min. Equal volume of the mixture was added to the cells in serum-free media for 6 hr.
 
-## Cardiomyocyte hypertrophy experiments
+### Cardiomyocyte hypertrophy experiments
 
 Neonatal rat cardiomyocytes were exposed to ISO for inducing cardiomyocyte hypertrophy. Changes in morphology of cardiomyocytes were assessed by observing the sarcomere reorganization by immunostaining of cardiomyocytes with antibodies specific for α-actinin or myomesin. Image J software was used to measure the cardiomyocyte surface area in actinin or myomesin-positive cells in an experimental group. To confirm cardiomyocyte hypertrophy, perinuclear expression of ANP was assessed by confocal microscopy. Briefly, cells were fixed with 3.7% formaldehyde for 15 min at room temperature. Fixed cells were washed thrice with PBS and permeabilized for 5 min with PBS containing 0.25% Triton X-100. After washing thrice with PBS, fixed cells were blocked with 5% BSA prepared in PBST (PBS with 1% Tween 20) containing glycine (22.52 mg/ml) for 1 hr. Following blocking, cells were incubated with anti-ANP (Cloud-clone corp. or abcam) and myomesin (DSHB) or actinin (abcam) antibodies prepared in 1% BSA containing PBST at 4°C overnight. Further, cells were incubated with secondary antibody conjugated with Alexa fluor 488 and Alexa fluor 546 at room temperature for 1 hr. After washing thrice with PBS for 2 min, cells were incubated with Hoechst 33342 for 10 min to stain nucleus. After nuclear staining, cells were washed thrice with PBS. and mounted on slides using Fluoromount G. Zeiss LSM 880 confocal microscope was used for image acquisition and ZEN-Black software was used for image analysis.
 
-## [3H]-Leucine incorporation assay
+### [3H]-Leucine incorporation assay
 
 Leucine incorporation assay was performed as previously described (Pillai et al., 2015). Briefly, cardiomyocytes treated with either vehicle or ISO were incubated with [3H]-leucine (1.0 mCi/ml, 163 Ci/mmol specific activity, Amersham Biosciences) in leucine-free minimal essential medium (Invitrogen) for 24 hr. Cells were then washed with phosphate-buffered saline, and 10% trichloroacetic acid was added to the cells to precipitate total proteins. The resultant protein pellet was solubilized using 0.2 N NaOH and further diluted with one-sixth volume of scintillation fluid. The radioactivity was measured in a scintillation counter and the values were normalized with DNA content measured by the Qubit dsDNA HS assay kit (Thermo Fisher Scientific).
 
-## Non-radioactive SUnSET assay
+### Non-radioactive SUnSET assay
 
 To measure in-vitro protein synthesis, Surface sensing of translation (SUnSET), a non-radioactive method to monitor protein synthesis was employed (Schmidt et al., 2009). Cardiomyocytes seeded on six-well plates were pulsed with puromycin (1 μM) for 30 min prior to harvesting. Cells were washed twice with ice-cold PBS and lysed. Bradford assay was performed for protein quantification and 80 µg of protein was boiled in Laemmli Sample Buffer (Bio-Rad) supplemented with 5% β-mercaptoethanol for 5 min at 96°C. SDS-PAGE was performed, and the proteins were then transferred onto a 0.45 µm PVDF membrane (Amersham Hybond P, GE) by western blotting for 16 hr at 25V at 4°C. After 1 hr of blocking with 5% non-fat milk at room temperature, the membrane was incubated with anti-puromycin antibody (DSHB, University of Iowa) overnight at 4°C. Membrane was washed thrice with 1X TBST and incubated with anti-mouse secondary antibody for 1 hr at RT. Blot was washed thrice with 1X TBST and chemiluminescent signals were captured using BioRad Clarity ECL western Blotting Substrate in a chemiluminescence imager (Chemidoc Touch, Biorad).
 
-## Inhibitor experiments
+### Inhibitor experiments
 
 Anacardic acid was dissolved in peanut oil and injected into the peritoneal cavity of mice at a dose of 5 mg/kg/day for 10 days. LiCl (Sigma, Cat. No. 203637) or GSK3 inhibitor X (Cat. No. 361551) were used to inhibit the endogenous activity of GSK3 isoforms in cardiomyocytes. For inhibition of SIRT2 activity, cardiomyocytes were treated with either vehicle or AGK2, a SIRT2 inhibitor in high-glucose DMEM with 100 units/ml penicillin and 100 µg/ml streptomycin after 36 hr of seeding.
 
-## Cells and tissue harvesting
+### Cells and tissue harvesting
 
 Cells were washed twice with ice-cold phosphate buffered saline (PBS, 1X) before harvesting. Cells were lysed in ice-cold lysis buffer [20 mM Tris-Cl, pH 7.4, 150 mM NaCl, 1% Triton X-100, 1 mM EDTA, 1 mM EGTA, 2.5 mM sodium pyrophosphate, 1 mM Na3VO4, 1 mM PMSF, 1X protease inhibitor cocktail (Roche)]. Heart tissue was homogenized in lysis buffer [50 mM Tris-Cl, pH 7.4 150 mM NaCl, 1% Triton-X-100, 0.5% Sodium deoxycholate, 0.1% SDS, 1 mM EDTA, 10 mM Sodium fluoride, 2.5 mM sodium pyrophosphate, 1 mM Na3VO4, 1 mM PMSF, 1X protease inhibitor cocktail (Roche)]. Homogenates were centrifuged at 12,000 rpm at 4°C for 10 min and the supernatant was collected in fresh micro-centrifuge tubes for western blotting.
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed as per the standard protocols. Protein quantification was done by Bradford reagent using a spectrophotometer. Cell or tissue lysates was mixed with laemmli buffer (2X, Bio-rad) supplemented with 5% β-mercaptoethanol in 1:1 ratio. Samples were boiled for 5 min at 95°C for 5 min. SDS-PAGE was performed and the proteins were transferred to PVDF membrane by cold transfer (25V at 4° overnight). Protein-bound membrane was blocked by a solution of 5% non-fat dried milk in TBST buffer (25 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0.05% Tween 20) for 1 hr at RT. Membrane was washed thrice with TBST buffer and probed with primary antibody at 4°C overnight. Membrane was further washed thrice with TBST buffer and probed with HRP-conjugated secondary antibody at RT for 1 hr. Membrane was washed thrice with TBST and the chemiluminescent signals recorded using either Clarity ECL western Blotting Substrate (BioRad) or SuperSignal West Pico chemiluminescent Substrate (ThermoScientific) in a chemiluminescence imager (Chemidoc Touch, Biorad).
 
-## Immunoprecipitation assays
+### Immunoprecipitation assays
 
 Immunoprecipitation assay was performed as per the standard protocols. For immunoprecipitation, 0.5–1 mg of protein from lysate was incubated with 2 µg of appropriate antibody or control IgG antibody overnight. Protein A/G-conjugated agarose beads were used to capture the immune complexes. After a brief centrifugation, supernatant was discarded, and beads were washed thrice with ice-cold PBS (1X) 1000 rpm at 4°C for 1 min. The immunoprecipitated protein was resolved by SDS-PAGE after boiling the beads at 95°C for 5 min in 2X laemmli buffer (Bio-rad) and transferred to a PVDF membrane (GE, Cat#10600023). The membrane was blocked by a solution of 5% non-fat dried milk in TBST buffer (25 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0.05% Tween 20) for 1 hr at RT. Membrane was washed thrice with TBST buffer and probed with primary antibody at 4° for overnight. After washing thrice with TBST buffer and the membrane was probed with HRP-conjugated secondary antibody (Clean-Blot IP Detection Reagent, Thermo Scientific or Mouse monoclonal SB62a Anti-Rabbit IgG light chain (HRP) (ab99697) prepared in 1% milk at RT for 1 hr. Blot was washed thrice with TBST (1X) and chemiluminescent signals were captured using Clarity ECL Western Blotting Substrate (BioRad) in a chemiluminescence imager (Chemidoc Touch, Biorad).
 
-## Co-localization experiments
+### Co-localization experiments
 
 To study the co-localization of p300 with GSK3β, confocal microscopy was performed in HEK 293 cells using antibodies specific to p300 and GSK3β. Similarly, to test the localization of HA-tagged GSK3β-WT or GSK3β-K183R or GSK3β-K183Q mutants, plasmid encoding HA-tagged GSK3β-WT or GSK3β-K183R or GSK3β-K183Q mutants were transiently overexpressed in GSK3β deficient mouse embryonic fibroblasts by Lipofectamine 2000 as per manufacturers protocols. After 48 hr of transfection, confocal microscopy was performed by an HA antibody to localize WT and mutants of GSK3β. To test the effect of AGK2 on GSK3β localization, confocal microscopy was performed with an antibody specific to GSK3β and/or anti-MnSOD.
 
 For performing confocal microscopy, cells were washed twice with PBS and fixed with 3.7% formaldehyde at room temperature for 15 min. Fixed cells were washed thrice with PBS and incubated for 5 min with 0.25% Triton X-100 prepared in PBS. After washing thrice with PBS, cells were blocked with 5% BSA prepared in PBST (PBS with 1% Tween 20) containing glycine (22.52 mg/ml) for 1 hr. Following blocking, cells were incubated with respective primary antibodies prepared in 1% BSA in PBST at 4°C overnight. Further, cells were incubated with secondary antibody conjugated with Alexa fluor 488 and/or Alexa fluor 546. After 1 hr of incubation at room temperature, antibody was discarded and washed thrice with PBS. Hoechst 33342 prepared in PBS was added for 10 min to stain nucleus. After nuclear staining, cells were washed thrice with PBS and Fluoromount G was used to mount slides. Confocal images were captured by Zeiss LSM 880 confocal microscope.
 
-## GST-GSK3β purification
+### GST-GSK3β purification
 
 Recombinant GST-GSK3β encoding expression plasmid was transformed into competent E.coli BL21 (DE3) cells. Culture from single colony was grown in LB medium supplemented with ampicillin (100 µg/ml) at 37°C in orbital shaker incubator till mid log phase. 50 µM IPTG was added to the culture and incubated at 18°C for 16 hr. The culture was centrifuged at 5000 rpm at 4°C for 20 min, and the pellet resuspended in binding buffer (50 mM Tris-Cl, pH 8.0, 150 mM NaCl, 1 mM PMSF (Sigma)). The resuspended cell pellet was lysed by sonication and centrifuged at 17,000 rpm at 4°C for 30 min. After centrifugation, supernatant was collected and incubated with Glutathione Sepharose 4B beads. Beads were washed thrice with wash buffer (50 mM Tris-Cl, pH 8.0, 150 mM NaCl, 0.5% Triton-X 100), GST-GSK3β eluted with elution buffer (20 mM glutathione-SH), and stored in sterile glycerol (30%) at −80°C.
 
-## Purification of HIS-GSK3β and its mutants
+### Purification of HIS-GSK3β and its mutants
 
 Recombinant HIS-GSK3β or its mutants HIS-GSK3β-K183R, HIS-GSK3β-K183Q encoding expression plasmid were transformed into competent E. coli BL21 (DE3) cells. Culture from single colony was grown in LB medium supplemented with ampicillin (100 µg/ml) at 37°C in orbital shaker incubator till mid log phase. 50 µM IPTG was added to the culture and incubated at 18°C for 18 hr. The culture was centrifuged at 5000 rpm at 4°C for 20 min, and cell pellet was lysed by sonication in lysis buffer (20 mM Tris-Cl, pH 7.4, 500 mM NaCl, 20 µM imidazole, 1% Triton-X 100). Sonicated lysate was centrifuged at 17,000 rpm at 4°C for 30 min. Supernatant fraction was passed through pre-washed Ni-NTA column three times. Column was washed with five-column volume wash buffer (50 mM Tris-Cl (pH 7.4), 500 mM NaCl, 20 mM imidazole, 0.5% Triton-X-100). Protein was eluted by elution buffer (50 mM Tris-Cl (pH 7.4), 150 mM NaCl, 500 mM imidazole, 0.5% Triton-X-100) and stored in sterile glycerol (30%) at −80°C.
 
-## GSK3 acetylation assay
+### GSK3 acetylation assay
 
 His-GSK3 and HA-GSK3 was incubated with 1 µg of recombinant p300 acetyltransferase (Millipore # 2273152) in 50 µl of HAT buffer (50 mM Tris-Cl, pH 8.0, 1 mM EDTA, 10 mM Na-butyrate, 5 mM DTT, 10 mM NaCl and 10% glycerol) supplemented with 100 µM acetyl CoA. Samples were incubated at 30°C for 2 hr. Beads were washed thrice with TBS (25 mM Tris-HCl, pH 7.5, 150 mM NaCl) and the protein eluted by adding 50 µl of sample buffer (125 mM Tris-Cl, pH 6.8, with 4% SDS, 20% (v/v) glycerol, and 0.004% bromophenol blue). Samples were heated for 5 min at 95°C followed by centrifugation at 13,400 g, 30 s, and supernatant subjected to SDS-PAGE. GSK3β acetylation was detected by a pan anti-acetyl Lysine antibody (Cell Signaling #9681).
 
-## GSK3 deacetylation assay
+### GSK3 deacetylation assay
 
 Plasmid encoding flag-tagged WT SIRT2 or SIRT2-H187Y was overexpressed in 293 cells by transfection with lipofectamine 2000. Cells were harvested after washing with ice-cold PBS and lysed in lysis buffer [50 mM Tris-Cl, pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1 mM PMSF and protease inhibitor cocktail (Sigma Aldrich)] followed by vortexing for 15 s at 5 min interval for 4–5 times. Cell homogenates were centrifuged at 12,000 rpm at 4°C for 10 min and the supernatant was collected. 500 µg of total protein was incubated with agarose beads conjugated to anti-Flag antibody (Sigma A2220) and kept for end-over-end mixing for 2 hr at 4°C. Beads were washed thrice with TBS (25 mM Tris-HCl, pH 7.5, 150 mM NaCl) and the SIRT2 protein eluted. His-tagged or HA-tagged acetylated GSK3 was deacetylated by recombinant SIRT2 in a deacetylation buffer (250 mM Tris-Cl, pH 9.0, 20 mM MgCl2, 250 mM NaCl, 2.5 mM DTT, 5 mM NAD+, 2.5 μM TSA) for 2 hr at 30°C. The acetylation of GSK3 isoforms was analyzed by western blotting.
 
-## ATP binding assay
+### ATP binding assay
 
 His-tagged wild type and mutants of GSK3 or His-tagged acetylated and deacetylated GSK3 bound to Ni-NTA beads were incubated with [γ 32P] ATP (2 µCi) at 30°C for 10 min in a binding buffer containing 20 mM HEPES pH 7.5, 50 mM NaCl, 10 mM MgCl2, 2 mM CaCl2, 200 µM ATP in a final volume of 50 µL. After 30 min, the beads were washed 5 times with 50 mM Tris (pH 7.5) and subjected to scintillation counting using a counter (Beckman).
 
-## Activity assay for GSK3 isoforms
+### Activity assay for GSK3 isoforms
 
 Commercially available GSK3 activity assay kit (CS0990; Sigma) was used for performing GSK3 activity assay as per manufacturer’s instructions. Briefly, HA-tagged GSK3β or GSK3α was immunoprecipitated using a specific anti-HA antibody conjugated agarose beads (Sigma-Aldrich). Similarly, endogenous GSK3β was immunoprecipitated from heart tissue lysates or cell lysates by a specific anti-GSK3β antibody bound protein A/G affinity gel. The immunoprecipitated kinase was incubated with γ−32P-ATP and the incorporation of 32P into glycogen synthase peptide, which contains specific phosphorylation residue of GSK3 was measured.
 
-## Activity assay for acetylated and deacetylated-GSK3 isoforms
+### Activity assay for acetylated and deacetylated-GSK3 isoforms
 
 HA-GSK3β or HA-GSK3α was overexpressed in HeLa cells by transfection of the respective plasmid encoding pcDNA3-HA-GSK3β or pcDNA3-HA-GSK3α. HeLa cell lysates were incubated with monoclonal Anti-HA-agarose antibody-conjugated agarose beads for 2 hr at 4°C with end-over-end mixing. HA-GSK3β or HA-GSK3α bound to beads was incubated with recombinant p300 (Millipore, Temecula, CA, 1 µg) in 50 µl of HAT buffer (50 mM Tris-Cl, pH 8.0, 1 mM EDTA, 10 mM Na-butyrate, 5 mM DTT, 10 mM NaCl and 10% glycerol) supplemented with 100 µM acetyl CoA at 30°C for 60 min. Beads were washed thrice with TBS (25 mM Tris-HCl, pH 7.5, 150 mM NaCl) and further deacetylated by either SIRT2 or SIRT2-catalytic mutant in a deacetylation buffer (250 mM Tris-Cl, pH 9.0, 20 mM MgCl2, 250 mM NaCl, 2.5 mM DTT, 5 mM NAD+, 2.5 μM TSA) for 60 min at 30°C. The acetylated and deacetylated HA-GSK3β or HA-GSK3α was incubated with γ−32P-ATP in a kinase buffer and the incorporation of 32P into glycogen synthase peptide, containing specific phosphorylation residues of GSK3 was measured as per the protocols of GSK3 activity assay kit (CS0990; Sigma).
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 GSK3 isoforms were resolved by SDS-PAGE, stained with colloidal Coomassie and the desired protein bands were excised from the gel by the use of a razor blade and divided into ∼1 mm3 pieces. The gel pieces containing protein were destained using 100 mM ammonium bicarbonate (pH 8.9) in 50% acetonitrile. The destained bands were further treated with 100 μl of 50 mM ammonium bicarbonate (pH 8.0) and 10 μl of 10 mM TCEP [Tris (2-carboxyethyl)phosphine HCl] at 37°C for 30 min. Subsequently, protein digestion was carried out by 1:50 sequencing-grade trypsin in 50 mM ammonium bicarbonate (pH 7.5) solution. Digested peptide samples were desalted in a C8 OptiPak column (Optimize Technologies) and then analyzed by liquid chromatography-electrospray tandem mass spectrometry (LC-ESI/MS/MS) on a Thermo LTQ Orbitrap Hybrid FT mass spectrometer. Reflectrom mode was used to acquire positive-ion mass spectra. Ions selected for MS/MS were subsequently placed on an exclusion list using an isolation width of 1.6 Da, a low-mass exclusion of 0.8 Da, and a high-mass exclusion of 0.8 Da. Tandem mass spectra were extracted by Readw.exe version 3.0. All MS/MS samples were analyzed using Mascot data explorer software (Matrix Science, London, United Kingdom). The Scaffold (version Scaffold_2.1.03; Proteome Software, Inc., Portland, OR) was used to validate MS/MS-based peptide and protein identifications.
 
-## Modeling of GSK3α
+### Modeling of GSK3α
 
 Swiss-model tool was used to generate the homology model of GSK3α (Biasini et al., 2014). The sequence-based template search results showed ~82% MS sequence identity with the crystal structure of GSK3β (PDB ID 1PYX). Further, the crystal structure with PDB ID 1PYX was used to generate the final model of GSK3α; the final model of GSK3α encompasses the residues 98 to 448. UCSF Chimera software package was used for visualization and generation of the final images (Pettersen et al., 2004).
 
-## Modeling of ac183 GSK3β molecular dynamics simulations and analysis of trajectories
+### Modeling of ac183 GSK3β molecular dynamics simulations and analysis of trajectories
 
 Models of GSK3β protein were generated from the crystal structure (PDB ID 4NM0 A). Computer aided acetylated lysine (acK183) mutant was generated over the crystal structure (PDB ID 4NM0 A), using the PyTMs plugin of PyMOL (Warnecke et al., 2014). UCSF Chimera software package was used for visualization and generation of the final images (Pettersen et al., 2004).
 
@@ -204,6 +1558,6 @@ MD Simulations on the initial models of GSK3β wild-type and acetylated GSK3β w
 
 GROMACS tools were used to calculate the root mean square deviation (RMSD) of Cα atoms, root mean square deviation (RMSD) of ADP nucleotide, resultant root mean square fluctuations (RMSF) of Cα atoms on the five MD trajectories of 20 ns each for both the wild type and acK183 mutant of GSK3β. UCSF Chimera software tool was used for visualization and calculation of distances between the atoms (Pettersen et al., 2004).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analysis and graph preparation was done by Graph-pad prism version 6.04. t-test was used for pair-wise comparisons. One-way ANOVA, and two-way ANOVA were used for multiple comparisons. ZEN-Black software was used for confocal image analysis and ImageJ was used for quantification. Densitometric analysis was performed using ImageJ. Western blotting images were processed by using Image-lab software (Bio-Rad).

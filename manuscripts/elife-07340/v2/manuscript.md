@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.07340.001 The parents' phenotype, or the environment they create for their young, can have long-lasting effects on their offspring, with profound evolutionary consequences. Yet, virtually no work has considered how such parental effects might change the adaptive value of behavioural traits expressed by offspring upon reaching adulthood. To address this problem, we combined experiments on burying beetles ( Nicrophorus vespilloides ) with theoretical modelling and focussed on one adult behavioural trait in particular: the supply of parental care. We manipulated the early-life environment and measured the fitness payoffs associated with the supply of parental care when larvae reached maturity. We found that (1) adults that received low levels of care as larvae were less successful at raising larger broods and suffered greater mortality as a result: they were low-quality parents. Furthermore, (2) high-quality males that raised offspring with low-quality females subsequently suffered greater mortality than brothers of equivalent quality, which reared larvae with higher quality females. Our analyses identify three general ways in which parental effects can change the adaptive value of an adult behavioural trait: by influencing the associated fitness benefits and costs; by consequently changing the evolutionary outcome of social interactions; and by modifying the evolutionarily stable expression of behavioural traits that are themselves parental effects. DOI: http://dx.doi.org/10.7554/eLife.07340.001
+The parents' phenotype, or the environment they create for their young, can have long-lasting effects on their offspring, with profound evolutionary consequences. Yet, virtually no work has considered how such parental effects might change the adaptive value of behavioural traits expressed by offspring upon reaching adulthood. To address this problem, we combined experiments on burying beetles (Nicrophorus vespilloides) with theoretical modelling and focussed on one adult behavioural trait in particular: the supply of parental care. We manipulated the early-life environment and measured the fitness payoffs associated with the supply of parental care when larvae reached maturity. We found that (1) adults that received low levels of care as larvae were less successful at raising larger broods and suffered greater mortality as a result: they were low-quality parents. Furthermore, (2) high-quality males that raised offspring with low-quality females subsequently suffered greater mortality than brothers of equivalent quality, which reared larvae with higher quality females. Our analyses identify three general ways in which parental effects can change the adaptive value of an adult behavioural trait: by influencing the associated fitness benefits and costs; by consequently changing the evolutionary outcome of social interactions; and by modifying the evolutionarily stable expression of behavioural traits that are themselves parental effects.
 
 ## Introduction
 
@@ -43,77 +43,75 @@ Our experiments use the burying beetle, Nicrophorus vespilloides, as a model org
 
 ## Materials and methods
 
-## Study species: the burying beetle N. vespilloides
+### Study species: the burying beetle N. vespilloides
 
-## Parental care
+#### Parental care
 
 Reproduction in the burying beetle centres upon the body of a small dead vertebrate (Scott, 1998). Having located a carcass, males and females each contribute extensively to parental care, and each can carry out all the diverse tasks associated with caring for offspring if widowed (e.g., Smiseth et al., 2005; Smiseth et al. 2006; Suzuki and Nagano, 2009), or in the case of females, if they alone locate a carcass (Müller et al., 2007). Importantly, when both parents are present, path analyses of observational data show that contributions to care by one parent are negatively related to the effort of the partner (e.g., Jenkins et al., 2000; Walling et al., 2008), which is consistent with some sort of compensatory response to the care provided by the partner.
 
 Together, the two parents remove any fur or feathers from the carcass, roll the flesh into a ball, smear it with antimicrobials, and bury it in a shallow grave. The eggs hatch in the soil nearby, and the larvae crawl to the carcass. There, they solicit food from their attendant parents and consume the flesh themselves (Smiseth et al., 2003). Parents also defend the offspring and carcass from potential rivals (Scott, 1998). Roughly, 5 days after hatching, larvae disperse from the carcass to pupate in the soil. At this point, or in the days beforehand, parents fly off in search of fresh carrion. Larvae are capable of survival without any post-hatching parental care at all (Eggert et al., 1998; Smiseth et al., 2003; Schrader et al., 2015), which means the quality of the early-life environment can be manipulated simply by removing parents at different intervals after hatching (e.g., Boncoraglio and Kilner, 2012).
 
-## Quantifying fitness costs and benefits associated with care
+### Quantifying fitness costs and benefits associated with care
 
 In the burying beetle, all forms of care incur measurable fitness costs and benefits (e.g., Ward et al., 2009; Cotter et al., 2010). We quantified the fitness benefits of care by measuring larval mass at dispersal because this is strongly correlated with survival (e.g., Eggert et al., 1998; Lock et al., 2004). We used lifespan to measure the fitness costs associated with parental care, because several aspects of the burying beetle's reproductive biology mean that a longer lifespan contributes directly to greater fecundity in each sex and is therefore a good proxy for fitness. For example, in nature, N. vespilloides is an opportunistic breeder because it is reliant on locating small carrion to produce offspring (Schwarz and Müller, 1992; Scott, 1998). The longer it lives, the more likely it is to find this key resource. Males that are unsuccessful at locating carrion may attempt to attract females for mating by secreting pheromones (Eggert and Müller, 1989a, 1989b; Eggert, 1992). Females can store sperm from these matings for use in future reproduction (Müller and Eggert, 1989) and males commonly gain paternity without attending the carcass upon which larvae are raised (Müller et al., 2007). Therefore, the longer a male lives, the more likely he is to be successful in acquiring matings and increasing his reproductive success. In our previous laboratory experiments, we have shown that a longer lifespan enhances lifetime reproductive success in both sexes by affording a greater number of opportunities for reproduction (Ward et al., 2009; Cotter et al., 2010, 2011). Note that there is no difference between the sexes in the lifespan of virgins (Figure 1—figure supplement 1).
 
-## N. vespilloides colony and housing conditions
+### N. vespilloides colony and housing conditions
 
 All the individuals used in this experiment belonged to a captive colony (kept at a constant temperature: 21°C, with a 16-hr:8-hr light:dark cycle) established at Cambridge University in 2005 and supplemented every summer thereafter with wild caught adults collected under licence from local field sites at Byron's Pool and Wicken Fen in Cambridgeshire. Adults were housed individually in plastic boxes (12 × 8 × 2 cm) filled with moist soil and fed twice a week with ca. 1 g minced beef. For breeding, pairs of unrelated individuals were placed into larger plastic boxes (17 × 12 × 6 cm) half filled with moist soil, provided with a 15–35 g freshly thawed mouse carcass and kept in the dark to simulate natural underground conditions. The larvae disperse from the carcass to pupate roughly eight days after pairing. Pupation takes approximately three weeks and sexual maturity is reached approximately two weeks after eclosion.
 
-## Experiment 1: the influence of parental effects on the costs and benefits of parental care provided in adult life
+### Experiment 1: the influence of parental effects on the costs and benefits of parental care provided in adult life
 
 This experiment spanned two generations. In Generation 1, we manipulated larval developmental environment via a parental effect. We then kept these larvae to breed as adults in Generation 2, when we measured the fitness costs and benefits associated with providing care.
 
-## Generation 1—manipulation of larval developmental environment via a parental effect
+#### Generation 1—manipulation of larval developmental environment via a parental effect
 
 We paired virgins when they were 2–3 weeks old and allowed them to breed under standard conditions on a dead mouse. To minimize confounding effects in our manipulations, we subsequently removed all males from the breeding boxes ca. 53 hr after pairing. By this point, egg laying and carcass preparation were complete, but the larvae had yet to hatch (in our colony, this starts 71.28 hr ± 1.47 SE after pair formation; n = 47 pairs checked every ca. five hours 55–96 hr after pairing). We then randomly assigned each brood to one of two maternal care treatments: either widowed females were removed from their breeding box around hatching (roughly 71 hr after pairing) or removal occurred 24 hr after hatching (roughly 95 hr after pairing). In previous work, we found that larvae that receive maternal care for the first 24 hr after hatching have a similar mass and subsequent lifespan as larvae that receive full-time care by both parents (Boncoraglio and Kilner, 2012). Carcass mass did not differ between care duration treatments (F1, 58 = 0.02, p = 0.960). In both treatments, we counted the number of dispersing larvae in each family, and weighed the brood at this point, before transferring larvae to new boxes for pupation and eclosion. This protocol was repeated over four weekly batches. Consistent with previous studies (Eggert et al., 1998; Boncoraglio and Kilner, 2012), the duration of maternal care positively affected final brood mass and size as well as individual offspring mass, both as a larva (calculated as average body mass at dispersal: total brood mass divided by number of dispersing larvae) and as an adult (pronotum width; for each measure of body size, one-way ANOVA (Analysis of Variance), p < 0.045, n = 59 broods). Nevertheless, the range in body size we generated experimentally did not differ significantly from the range in size in field-caught beetles (see Figure 1—figure supplement 2).
 
-## Generation 2—measuring the costs and benefits of parental care
+#### Generation 2—measuring the costs and benefits of parental care
 
 Two weeks after eclosion of the larvae from Generation 1, we randomly selected two females and two males per family from each treatment, until we obtained 40 experimental individuals altogether (20 of each sex). Each was then paired with a young unrelated virgin from the laboratory stock population and given a 15–25 g mouse carcass to start breeding. Whenever possible, tetrads of siblings from the same family in Generation 1 were matched with tetrads of siblings from a stock family, yielding four pairs in total per tetrad. Stock individuals were removed 53 hr after pairing so we could measure the fitness costs and benefits associated with the provision of post-hatching care by single parents, in the absence of any potential confounding partner effects.
 
 To eliminate any potential confounding pre-hatching effects on larval quality, we cross-fostered the larvae to be raised by our experimental subjects, a manipulation facilitated by the inability of parents to recognize their own offspring directly (Scott, 1998). At hatching, we moved the experimental individuals and their carcass to a new breeding box. Hatchlings and unhatched eggs remained in the box and were fostered out to other experimental subjects for post-hatching care. Foster larvae were drawn at random from individuals breeding in the same batch and were formed into broods of either 5 larvae or 20 larvae. These brood sizes were chosen because they were representative of the range in brood size we had recorded in our colony in previous generations. In this generation of our stock population, for example, brood size at dispersal in stock broods ranged from 3 to 24. Within each brood size treatment, foster broods did not differ in mass at hatching (always p > 0.605). At dispersal, we measured total brood size and mass in each brood. At this point, adults were collected and housed alone under standard conditions until their time of death, and their lifespan was recorded. Overall, our experiment used 160 experimental individuals (i.e., 20 individuals per maternal care duration treatment per brood size treatment; 80 in total per sex) drawn from 40 different families. Carcass mass at breeding did not differ among the four treatments (one-way ANOVA, always p > 0.240, n = 160 breeding bouts). One individual (a 0 hr care female, given 20 larvae in adulthood) rejected the experimental brood and was excluded from subsequent analyses.
 
-## Statistical methods
+### Statistical methods
 
 The data we collected and analyzed are archived in Dryad (Kilner et al., 2015). We used linear mixed models (LMMs) except for the analyses of brood size at dispersal, where generalized LMMs (GLMMs) with a Poisson error distribution were employed because the data were not normally distributed. The R package lme4 was used (Bates et al., 2014). The variances in parenting performance in small and large broods differed significantly (Levene test, F1, 77 = 14.41, p < 0.001), so we square-root transformed the data prior to analysis. The experimental data for males and females were analyzed separately, but using the same approach. All models included the family of origin of the experimental individuals and the family of the donor larvae nested within batch as random intercept effects. Parental care duration (0 hr, 24 hr) and brood size (small = 5 larvae, large = 20 larvae) treatment effects were tested by two-level fixed factors. When present, carcass mass, brood mass at dispersal, and adult size were entered as covariates. Longevity data were analyzed using a Cox's proportional hazard model with the parent's family nested within batch using the R package coxme (Therneau, 2012). All analyses were run with R 3.1.2 (R Development Core Team, 2013).
 
-## Experiment 2—the influence of parental effects on the outcome of a social interaction
+### Experiment 2—the influence of parental effects on the outcome of a social interaction
 
 This experiment also spanned two generations. In Generation 1, we manipulated larval developmental environment via a parental effect. We then kept only female larvae to breed as adults in Generation 2. Females were paired with males that had received full-time care as larvae and the pair was allowed to raise offspring together. After reproduction, we measured the fitness costs and benefits associated with providing care for both sexes.
 
-## Generation 1—manipulation of larval developmental environment via a parental effect
+#### Generation 1—manipulation of larval developmental environment via a parental effect
 
 The parents of experimental females were paired as 2- to 3-week-old virgins and given a mouse carcass for breeding. As before, all males were removed from the breeding boxes ca. 53 hr later, just prior to larval hatching. Broods were then randomly assigned one of four care duration treatments: 0 hr care, with widowed females being removed from their breeding box around hatching (71 hr after pairing); 8 hr care (widowed female removed 79 hr after pairing); 24 hr care (widowed female removed 95 hr after pairing); or full care/192-hr care (widowed female allowed to rear the brood alone until dispersal of the offspring from the carcass). Stock pairs, where both parents were allowed to rear their brood until larval dispersal, were also maintained alongside these treatments. At dispersal, we measured total brood mass and size and set up the larvae individually for pupation and eclosion. Carcass mass did not differ among care duration treatments (F3, 117 = 0.388, p = 0.762). This protocol was repeated over four batches, initiated weekly.
 
 As before, we found that the duration of care positively affected final brood mass and size as well offspring mass, both as a larva (again measured as average larval mass at dispersal) and as an adult (pronotum width; for each measure of body size, one-way ANOVA, p < 0.003, n = 121 broods). These findings are consistent with previous studies (Eggert et al., 1998; Boncoraglio and Kilner, 2012).
 
-## Generation 2—measuring the outcome of a social interaction
+#### Generation 2—measuring the outcome of a social interaction
 
 Two weeks after eclosion of the experimental females, we randomly selected two sisters per brood per care duration treatment. Each batch yielded five pairs of sisters per treatment giving us 40 experimental females in total. With 4 batches, we had 160 experimental females altogether, manipulated along a gradient in their capacity to provide care.
 
 These experimental females were each paired with a young unrelated virgin male from the stock population and given a 15–25 g mouse carcass to start breeding. Males were drawn from tetrads of brothers from the same stock family, with each member of the tetrad distributed across the four quality treatments experienced by the females. The 160 males in this experiment were thus derived from 40 different families. Pairs were allowed to rear their brood together until larval dispersal. We measured average larval mass at dispersal and removed the adults at this point, temporarily housing females and males individually under standard conditions. Then, 14 days after the start of their first breeding bout, we performed a second breeding bout using the same protocol as described above, and using the same pairs as for the first breeding bout (i.e., same partners in both rounds). After dispersal of the second brood, experimental females and their partners were kept separately under standard conditions until their time of death. We recorded their lifespan. We allowed pairs to reproduce twice in this experiment, because burying beetles are bivoltine in nature (Schwarz and Müller, 1992) and breeding pairs twice increased the likelihood of detecting an effect of female quality on male fitness. Four stock males and one experimental female died before starting their second breeding bout. Males were replaced with other stock partners, which were not included in the data set, while the female was not replaced. Carcass mass at first or second breeding did not differ among experimental subgroups (one-way ANOVA, p > 0.440, n = 319 breeding bouts).
 
-## Statistical methods
+### Statistical methods
 
 The data we collected and analyzed are archived in Dryad (Kilner et al., 2015). For data that were not normally distributed, we used GLMMs assuming a Poisson error distribution, and using the R package lme4 (Bates et al., 2014). A LMM was used for analyzing average offspring mass, because these data were normally distributed. All models included batch number as a random factor and both the female's and male's family of origin nested within batch as random intercept effects. Maternal care duration (0 hr, 8 hr, 24 hr, 192 hr/full care) was entered as a four-level fixed factor. Where relevant, carcass mass, female and male adult size were entered as covariates. In the models of reproductive output, we analyzed data collected over the two experimental breeding bouts. Analyses of brood size used the total number of offspring produced over both breeding attempts. For average larval mass, we calculated this value separately for each breeding attempt and then derived the mean. (The results for each measure of offspring performance are qualitatively similar when data from the first breeding bout alone are analyzed.) Longevity data were analyzed using a Cox's proportional hazards model with the family of the experimental individual nested within batch using the R package coxme (Therneau, 2012). Post hoc analyses were performed adopting the Bonferroni correction for multiple testing. All analyses were performed with R 3.1.2 (R Development Core Team, 2013).
 
-## Model: sexual conflict and the transgenerational impact of parental effects
+### Model: sexual conflict and the transgenerational impact of parental effects
 
-To provide further insight into our empirical results, we constructed a mathematical model of the evolution of parental care in an idealized population of burying beetles (
+To provide further insight into our empirical results, we constructed a mathematical model of the evolution of parental care in an idealized population of burying beetles (Figure 1). Our model explores how individual variation in parental quality affects the amount of care that parents evolve to provide. We assume that the care offspring receive during development affects their own future quality as parents, a type of parental effect. To explore the impact of sexual conflict on care decisions, we compare predicted levels of care when coparents are unrelated to each other and when they are genetically identical (i.e., r = 1 between coparents). The latter scenario entirely removes sexual conflict over care decisions. We first provide a general outline of the model before considering each piece in more detail.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig1-v2.jpg)
 
-**Figure 1.:** A) and reproduction (B).DOI: http://dx.doi.org/10.7554/eLife.07340.003
-
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** n = 43) and females (n = 50) (A) shown as a cumulative survival plot and (B) comparing mean ± S.E.M lifespan for each sex.The rate at which the beetles died was not significantly different, nor was there a difference in their mean lifespan (X2 = 0.69, d.f. = 1, p = 0.41). These data were collected from an experiment in which individuals were removed at eclosion from 13 different families at random, with each family contributing between 2 and 13 experimental subjects. The experimental subjects were weighed and kept under standard conditions (see ‘Materials and methods’) until they died. The population was censused twice a week. In the statistical analyses reported above, body mass at eclosion and sex were fixed terms and family of origin was a random term, using the R package coxme (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.07340.004
+**Figure 1—figure supplement 1.:** The rate at which the beetles died was not significantly different, nor was there a difference in their mean lifespan (X2 = 0.69, d.f. = 1, p = 0.41). These data were collected from an experiment in which individuals were removed at eclosion from 13 different families at random, with each family contributing between 2 and 13 experimental subjects. The experimental subjects were weighed and kept under standard conditions (see ‘Materials and methods’) until they died. The population was censused twice a week. In the statistical analyses reported above, body mass at eclosion and sex were fixed terms and family of origin was a random term, using the R package coxme (see ‘Materials and methods’).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** N. vespilloides (shown in blue) and the experimental N. vespilloides described in this study (shown in red).The size of the beetle is given by its pronotum width. There is no sexual size dimorphism, so the data for males and females have been pooled. Our experimental treatments generated beetles that were well within the range of size of beetles that occur naturally.DOI: http://dx.doi.org/10.7554/eLife.07340.005
+**Figure 1—figure supplement 2.:** The size of the beetle is given by its pronotum width. There is no sexual size dimorphism, so the data for males and females have been pooled. Our experimental treatments generated beetles that were well within the range of size of beetles that occur naturally.
 
-## Outline of model
+### Outline of model
 
 We assume a large, well-mixed population that breeds continuously. Adult beetles alternate their time between searching for suitable corpses, waiting at corpses for a mate to arrive, and breeding. When a searching individual locates an unoccupied corpse, or one that is occupied only by an opposite-sex adult, it remains there to breed. Corpses that are occupied by a same-sex competitor are avoided. This means that the first female and the first male to encounter a corpse form a monogamous breeding pair. They care jointly for their offspring, and once their brood reaches maturity, the pair separates and each beetle resumes its search for corpses. Although breeding is continuous in our model, we do not specify how much time beetles spend engaged in each activity. Rather, we model trade-offs between care provision, fecundity, and mortality that do not depend explicitly on time.
 
@@ -127,111 +125,334 @@ We write cAB for the amount of care provided by a parent of type A that is paire
 
 We begin by calculating the reproductive value of good and poor parents in a population where every individual behaves in the same way. We then calculate reproductive values of mutants whose care behaviour differs from the population norm. This allows us to define selection gradients on the amount of care provided in different circumstances, which we then use to find evolutionarily stable levels of care. We repeat this analysis for populations in which coparents are genetically identical in order to explore the effects of sexual conflict over parental care.
 
-## Mortality
+### Mortality
 
 For simplicity, we assume that mortality of adult beetles occurs during the search phase between bouts of reproduction. An individual's probability of mortality increases with the level of care it provided in the previous bout. Mortality also depends on an individual's quality as a parent, with higher quality individuals suffering from lower mortality after providing any given level of care.
 
-We write mG(c) and mP(c) for the mortality risk of a good parent and a poor parent, respectively, after providing care of c. We assume that mortality risk increases as a convex function of the amount of care a parent provides (see Appendix 1). By definition, good parents suffer lower mortality than poor parents after providing the same level of care, so we assume mG(c) < mP(c) for all c. The probability that a parent of type A dies between reproductive bouts after raising offspring with a parent of type B can be written as(1)mAB=mA(cAB).
+We write mG(c) and mP(c) for the mortality risk of a good parent and a poor parent, respectively, after providing care of c. We assume that mortality risk increases as a convex function of the amount of care a parent provides (see Appendix 1). By definition, good parents suffer lower mortality than poor parents after providing the same level of care, so we assume mG(c) < mP(c) for all c. The probability that a parent of type A dies between reproductive bouts after raising offspring with a parent of type B can be written as
+
+$$
+m_{AB}=m_{A}(c_{AB}).
+$$
 
 Now, let g1 be the (assumed fixed) proportion of newly mature adults that are good parents and let g2 be the proportion of all mating adults that are good parents. These two quantities might not be equal due to differences in mortality between good and poor parents. Since we assume continuous breeding, g2 is constant with time.
 
-When a good parent reproduces, the probability that its mate is also a good parent is g2, in which case, the focal parent faces a subsequent mortality risk of mGG. Similarly, the probability that the focal parent's mate is a poor parent is 1 − g2, in which case, the mortality risk is mGP. The overall probability that a good parent dies between reproductive bouts is thus(2)mG=g2mGG+(1−g2)mGP.
+When a good parent reproduces, the probability that its mate is also a good parent is g2, in which case, the focal parent faces a subsequent mortality risk of mGG. Similarly, the probability that the focal parent's mate is a poor parent is 1 − g2, in which case, the mortality risk is mGP. The overall probability that a good parent dies between reproductive bouts is thus
 
-For poor parents, the average mortality risk is similarly(3)mP=g2mPG(1−g2)mPP.
+$$
+m_{G}=g_{2}m_{GG}+(1−g_{2})m_{GP}.
+$$
 
-Good parents make up g1 of newly mature adults and mate on average 1/mG times in their lives, while poor parents make up 1 − g1 of new adults and mate 1/mP times. The proportion of mating adults that are good parents is therefore(4)g2=g1/mGg1/mG+(1−g1)/mP.
+For poor parents, the average mortality risk is similarly
+
+$$
+m_{P}=g_{2}m_{PG}(1−g_{2})m_{PP}.
+$$
+
+Good parents make up g1 of newly mature adults and mate on average 1/mG times in their lives, while poor parents make up 1 − g1 of new adults and mate 1/mP times. The proportion of mating adults that are good parents is therefore
+
+$$
+g_{2}=\frac{g_{1}/m_{G}}{g_{1}/m_{G}+(1−g_{1})/m_{P}}.
+$$
 
 Equation 2 through Equation 4 can be solved simultaneously to yield values for g2, mG, and mP in terms of g1.
 
-## Effect of care on brood productivity
+### Effect of care on brood productivity
 
-The average number of offspring surviving from a brood depends on the total care provided by the two parents. For a mating between parents of types A and B, we write the expected brood productivity as(5)bAB=b(cAB+cBA).
+The average number of offspring surviving from a brood depends on the total care provided by the two parents. For a mating between parents of types A and B, we write the expected brood productivity as
+
+$$
+b_{AB}=b(c_{AB}+c_{BA}).
+$$
 
 We assume that brood productivity is a concave function of the amount of care received (see Appendix 1).
 
-In order to simplify calculations, we normalize brood productivity so that an average adult has lifetime reproductive success of one. This normalization is for mathematical convenience and does not affect the generality of our results. We calculate pre-normalized average lifetime reproductive success as follows. First, each good parent mates on average 1/mG times during its life. A proportion g2 of these matings are with good parents and result in brood productivity of bGG. The remaining proportion 1 − g2 are with poor parents and result in brood productivity of bGP. The average lifetime reproductive success of a good parent is thus (1/mG)[g2bGG + (1 − g2)bGP]. Similarly, for poor parents, the average lifetime reproductive success is given by (1/mP)[g2bGP + (1 − g2)bPP]. Since good parents make up a proportion g1 of newly mature adults, overall average lifetime reproductive success in the population is(6)b¯=(g1mG)[g2bGG+(1−g2)bGP]+(1−g1mP)[g2bGP+(1−g2)bPP].
+In order to simplify calculations, we normalize brood productivity so that an average adult has lifetime reproductive success of one. This normalization is for mathematical convenience and does not affect the generality of our results. We calculate pre-normalized average lifetime reproductive success as follows. First, each good parent mates on average 1/mG times during its life. A proportion g2 of these matings are with good parents and result in brood productivity of bGG. The remaining proportion 1 − g2 are with poor parents and result in brood productivity of bGP. The average lifetime reproductive success of a good parent is thus (1/mG)[g2bGG + (1 − g2)bGP]. Similarly, for poor parents, the average lifetime reproductive success is given by (1/mP)[g2bGP + (1 − g2)bPP]. Since good parents make up a proportion g1 of newly mature adults, overall average lifetime reproductive success in the population is
 
-Normalized brood productivity can then be calculated as(7)bAB′=bABb¯.
+$$
+b¯=(\frac{g_{1}}{m_{G}})[g_{2}b_{GG}+(1−g_{2})b_{GP}]+(\frac{1−g_{1}}{m_{P}})[g_{2}b_{GP}+(1−g_{2})b_{PP}].
+$$
 
-These calculations also lead to simple expressions for the proportions of newly mature offspring that were raised by parents of each possible combination of parental quality (i.e., both good, one good and one poor, or both poor). These are(8)qGG=(g1mG)g2bGG′,(9)qGP=[(g1mG)(1−g2)+(1−g1mP)g2]bGP′,(10)qPP=(1−g1mP)(1−g2)bPP′.
+Normalized brood productivity can then be calculated as
+
+$$
+b_{AB}^{′}=\frac{b_{AB}}{b¯}.
+$$
+
+These calculations also lead to simple expressions for the proportions of newly mature offspring that were raised by parents of each possible combination of parental quality (i.e., both good, one good and one poor, or both poor). These are
+
+$$
+q_{GG}=(\frac{g_{1}}{m_{G}})g_{2}b_{GG}^{′},
+$$
+
+
+
+$$
+q_{GP}=[(\frac{g_{1}}{m_{G}})(1−g_{2})+(\frac{1−g_{1}}{m_{P}})g_{2}]b_{GP}^{′},
+$$
+
+
+
+$$
+q_{PP}=(\frac{1−g_{1}}{m_{P}})(1−g_{2})b_{PP}^{′}.
+$$
 
 Note that qGG + qGP + qPP = 1.
 
-## Transgenerational effects of care on future parental quality
+### Transgenerational effects of care on future parental quality
 
-We now determine the proportion of larvae raised by each type of pair that develops into good parents. We assume that opportunities to develop into a good parent are limited at the population level by access to resources and that surviving larvae compete for a fixed number of such opportunities. An individual's relative competitiveness is an increasing function of the total amount of care it received during development. We write the relative competitiveness of individuals raised by parents of types A and B as(11)fAB=f(cAB+cBA).
+We now determine the proportion of larvae raised by each type of pair that develops into good parents. We assume that opportunities to develop into a good parent are limited at the population level by access to resources and that surviving larvae compete for a fixed number of such opportunities. An individual's relative competitiveness is an increasing function of the total amount of care it received during development. We write the relative competitiveness of individuals raised by parents of types A and B as
+
+$$
+f_{AB}=f(c_{AB}+c_{BA}).
+$$
 
 Like brood productivity, we take competitiveness to be a concave function of the total care a brood receives (see Appendix 1).
 
-Suppose that opportunities to develop into a good parent arise continuously at a constant rate. We assume that each newly mature adult competes for such opportunities for a fixed time T, during which its probability of gaining any particular opportunity is proportional to its competitiveness with some constant of proportionality k > 0. This means that for an individual with parents of types A and B, the probability of success can be written as(12)gAB=1−e−kfABT.
+Suppose that opportunities to develop into a good parent arise continuously at a constant rate. We assume that each newly mature adult competes for such opportunities for a fixed time T, during which its probability of gaining any particular opportunity is proportional to its competitiveness with some constant of proportionality k > 0. This means that for an individual with parents of types A and B, the probability of success can be written as
 
-By manipulating the above equation for gGG, gGP, and gPP, we obtain the relationships(13)(1−gGG)1/fGG=(1−gGP)1/fGP=(1−gPP)1/fPP.
+$$
+g_{AB}=1−e^{−kf_{AB}T}.
+$$
 
-Further, since the final overall proportion of good parents is fixed at g1, we must also have(14)gGGqGG+gGPqGP+gPPqPP=g1.
+By manipulating the above equation for gGG, gGP, and gPP, we obtain the relationships
+
+$$
+(1−g_{GG})^{1/f_{GG}}=(1−g_{GP})^{1/f_{GP}}=(1−g_{PP})^{1/f_{PP}}.
+$$
+
+Further, since the final overall proportion of good parents is fixed at g1, we must also have
+
+$$
+g_{GG}q_{GG}+g_{GP}q_{GP}+g_{PP}q_{PP}=g_{1}.
+$$
 
 We can solve Equation 13 and Equation 14 simultaneously using numerical methods to yield values for gGG, gGP, and gPP. Note that the solution does not depend on the choice of k or T.
 
-## Reproductive value of typical good and poor parents
+### Reproductive value of typical good and poor parents
 
-We now have all we need to calculate the reproductive value of good and poor parents in a population where care behaviour is uniform. We write vG for the reproductive value of a good parent and vP for a poor parent. When a good parent mates with another good parent, their normalized brood productivity is bGG′ Of this brood, a proportion gGG of offspring will develop into good parents themselves, while 1 − gGG will develop into poor parents. The reproductive value that a good parent obtains from mating with another good parent is thus 12bGG′[gGGvG+(1−gGG)vP]. The factor of one half here accounts for the relatedness between an individual and its offspring. Similarly, good parents obtain reproductive value of 12bGP′[gGPvG+(1−gGP)vP] from mating with a poor parent.
+We now have all we need to calculate the reproductive value of good and poor parents in a population where care behaviour is uniform. We write vG for the reproductive value of a good parent and vP for a poor parent. When a good parent mates with another good parent, their normalized brood productivity is $b_{GG}^{′}$ Of this brood, a proportion gGG of offspring will develop into good parents themselves, while 1 − gGG will develop into poor parents. The reproductive value that a good parent obtains from mating with another good parent is thus $\frac{1}{2}b_{GG}^{′}[g_{GG}v_{G}+(1−g_{GG})v_{P}]$. The factor of one half here accounts for the relatedness between an individual and its offspring. Similarly, good parents obtain reproductive value of $\frac{1}{2}b_{GP}^{′}[g_{GP}v_{G}+(1−g_{GP})v_{P}]$ from mating with a poor parent.
 
-Since good parents mate on average 1/mG times, and a proportion g2 of these matings are with other good parents, the total reproductive value of a good parent is given by(15)vG=12mG{g2bGG′[gGGvG+(1−gGG)vP]+(1−g2)bGP′[gGPvG+(1−gGP)vP]}.
+Since good parents mate on average 1/mG times, and a proportion g2 of these matings are with other good parents, the total reproductive value of a good parent is given by
 
-Similarly, the reproductive value of a poor parent is(16)vP=12mP{g2bGP′[gGPvG+(1−gGP)vP]+(1−g2)bPP′[gPPvG+(1−gPP)vP]}.
+$$
+v_{G}=\frac{1}{2m_{G}}{g_{2}b_{GG}^{′}[g_{GG}v_{G}+(1−g_{GG})v_{P}]+(1−g_{2})b_{GP}^{′}[g_{GP}v_{G}+(1−g_{GP})v_{P}]}.
+$$
 
-Equation 15 and Equation 16 can be rewritten as a matrix equation(17)[vGvP]=M[vGvP],where the entries of M are given by(18)M11 =12mG[g2bGG′gGG+(1−g2)bGP′gGP ]M12=12mG[g2bGG′(1−gGG)+(1−g2)bGP′(1−gGP)]M21=12mP[g2bGP′gGP+(1−g2)bPP′gPP]M22=12mP[g2bGP′(1−gGP)+(1−g2)bPP′(1−gPP)].
+Similarly, the reproductive value of a poor parent is
+
+$$
+v_{P}=\frac{1}{2m_{P}}{g_{2}b_{GP}^{′}[g_{GP}v_{G}+(1−g_{GP})v_{P}]+(1−g_{2})b_{PP}^{′}[g_{PP}v_{G}+(1−g_{PP})v_{P}]}.
+$$
+
+Equation 15 and Equation 16 can be rewritten as a matrix equation
+
+$$
+[v_{G}v_{P}]=M[v_{G}v_{P}],
+$$
+
+where the entries of M are given by
+
+$$
+M_{11 }=\frac{1}{2m_{G}}[g_{2}b_{GG}^{′}g_{GG}+(1−g_{2})b_{GP}^{′}g_{GP} ]M_{12}=\frac{1}{2m_{G}}[g_{2}b_{GG}^{′}(1−g_{GG})+(1−g_{2})b_{GP}^{′}(1−g_{GP})]M_{21}=\frac{1}{2m_{P}}[g_{2}b_{GP}^{′}g_{GP}+(1−g_{2})b_{PP}^{′}g_{PP}]M_{22}=\frac{1}{2m_{P}}[g_{2}b_{GP}^{′}(1−g_{GP})+(1−g_{2})b_{PP}^{′}(1−g_{PP})].
+$$
 
 The reproductive value of good and poor parents can then be found by taking the right eigenvector of M that corresponds to the eigenvalue 1.
 
-## Evolutionarily stable levels of biparental care
+### Evolutionarily stable levels of biparental care
 
 We now have general expressions for the reproductive value of typical individuals in the population. We can similarly derive the reproductive values of mutants that differ in their care behaviour from population norms (see Appendix 1). We can use these to calculate selection gradients on the level of care provided in each of the four possible pairings of parental quality.
 
-We write c = (cGG,cGP,cPG,cPP) for the vector of population values for each care level and we write c^ for the corresponding vector for mutants. The selection gradient on c is then given by(19)S(c)=(∂v^G∂c^GG,∂v^G∂c^GP,∂v^P∂c^PG,∂v^P∂c^PP)|c^=c,where v^G and v^P are the reproductive values of good and poor quality mutants, respectively.
+We write c = (cGG,cGP,cPG,cPP) for the vector of population values for each care level and we write $c^$ for the corresponding vector for mutants. The selection gradient on c is then given by
 
-We located evolutionarily stable levels of care by starting with arbitrary levels of care c = c0 and then following the selection trajectories defined by S until care levels converged to an equilibrium. This was done by iterating the equation(20)ct+1=ct+ΔS(ct),with Δ a small positive constant (we found Δ = 0.01 suitable). We checked informally for multiple equilibria by running the model with many widely spaced starting vectors c0 to confirm that these starting vectors converged to the same equilibrium. Multiple equilibria were not found for any the parameter values we considered.
+$$
+S(c)=(\frac{∂v^_{G}}{∂c^_{GG}},\frac{∂v^_{G}}{∂c^_{GP}},\frac{∂v^_{P}}{∂c^_{PG}},\frac{∂v^_{P}}{∂c^_{PP}})|_{c^=c},
+$$
+
+where $v^_{G}$ and $v^_{P}$ are the reproductive values of good and poor quality mutants, respectively.
+
+We located evolutionarily stable levels of care by starting with arbitrary levels of care c = c0 and then following the selection trajectories defined by S until care levels converged to an equilibrium. This was done by iterating the equation
+
+$$
+c_{t+1}=c_{t}+ΔS(c_{t}),
+$$
+
+with Δ a small positive constant (we found Δ = 0.01 suitable). We checked informally for multiple equilibria by running the model with many widely spaced starting vectors c0 to confirm that these starting vectors converged to the same equilibrium. Multiple equilibria were not found for any the parameter values we considered.
 
 To assess the effect of sexual conflict on parental care, we compared equilibrium care levels under the above model to a hypothetical scenario that removes all sexual conflict by assuming that coparents are genetically identical (see Appendix 1).
 
 ## Results
 
-## Experiment 1: the influence of parental effects on the costs and benefits of parental care
+### Experiment 1: the influence of parental effects on the costs and benefits of parental care
 
 We found that parents that received no post-hatching care as larvae matured into low-quality mothers and fathers (using Lessells and McNamara's (2012) definition of parental quality).
 
-## Mothers
+#### Mothers
 
-We found that females that received no parental care after hatching were less effective at providing care for broods of 20 larvae, which attained a lower mass by the time of dispersal from the carcass, when compared with broods raised by females that had received 24-hr care as larvae (
+We found that females that received no parental care after hatching were less effective at providing care for broods of 20 larvae, which attained a lower mass by the time of dispersal from the carcass, when compared with broods raised by females that had received 24-hr care as larvae (Table 1a). These females also paid a greater fitness cost for providing lower quality care, suffering a shortened lifespan as a result (Table 1b; Figure 2). No equivalent differences in maternal quality were apparent when females were given only 5 larvae to raise (Χ2 = 0.65, d.f. = 1, p = 0.42; Figure 2).
+
+**Table 1.**
+ Results from Experiment 1: the influence of parental effects on the costs and benefits of parental care provided in adult life
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Female-only care</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Standard error</th>
+      <th>t value</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">a. Effect on brood mass (benefit of care)</td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.07294</td>
+      <td>0.70654</td>
+      <td>0.103</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Duration of care as larva</td>
+      <td>−0.01430</td>
+      <td>0.09597</td>
+      <td>−0.149</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Brood size raised as adult</td>
+      <td>2.41542</td>
+      <td>0.08689</td>
+      <td>27.797</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Carcass mass</td>
+      <td>0.01451</td>
+      <td>0.01609</td>
+      <td>0.902</td>
+      <td>0.345</td>
+    </tr>
+    <tr>
+      <td>Female pronotum</td>
+      <td>0.12663</td>
+      <td>0.12270</td>
+      <td>1.032</td>
+      <td>0.282</td>
+    </tr>
+    <tr>
+      <td>Duration of care as larva x brood size raised as adult</td>
+      <td>0.44623</td>
+      <td>0.12150</td>
+      <td>3.673</td>
+      <td>0.0004</td>
+    </tr>
+  </tbody>
+</table>
+
+_Parental effects were created experimentally by exposing experimental subjects to either 0 hr or 24 hr of post-hatching care as larvae. They were then kept until adulthood and given broods of either 5 or 20 cross-fostered larvae to raise as a single parent. Their lifespan thereafter was recorded. Further details are given in the ‘Materials and methods’._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig2-v2.jpg)
 
-**Figure 2.:** A) brood mass at the dispersal stage of development and (B) her lifespan after reproduction.Mothers raised cross-fostered broods of either 5 (white circles) or 20 larvae (black circles), singlehandedly. A poor quality environment in early life generates mothers that (A) are less effective at raising broods of 20 cross-fostered larvae and (B) exhibit lower subsequent survival than mothers raised in a good quality early-life environment. Mean values with standard error bars are shown.DOI: http://dx.doi.org/10.7554/eLife.07340.007
+**Figure 2.:** Mothers raised cross-fostered broods of either 5 (white circles) or 20 larvae (black circles), singlehandedly. A poor quality environment in early life generates mothers that (A) are less effective at raising broods of 20 cross-fostered larvae and (B) exhibit lower subsequent survival than mothers raised in a good quality early-life environment. Mean values with standard error bars are shown.
 
-## Fathers
+#### Fathers
 
-Fathers that had experienced no post-hatching care also produced a lighter brood when given 20 larvae to rear (
+Fathers that had experienced no post-hatching care also produced a lighter brood when given 20 larvae to rear (Table 1c, Figure 3A) compared with those that were provisioned after hatching. Again, these differences were not evident when males were given a brood of five to raise (X2 = 0.67, d.f. = 1, p = 0.41, Figure 3A). After raising broods of 20 larvae, fathers that received no post-hatching care also tended to have a shorter lifespan than fathers that were provisioned as larvae (Table 1d, Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig3-v2.jpg)
 
-**Figure 3.:** A) brood mass at the dispersal stage of development and (B) his lifespan after reproduction.Fathers raised cross-fostered broods of either 5 (white circles) or 20 larvae (black circles), singlehandedly. A poor quality environment in early life generates fathers that (A) are less effective at raising broods of 20 cross-fostered larvae and (B) tend to exhibit lower subsequent survival than fathers raised in a good quality early-life environment. Mean values with standard error bars are shown.DOI: http://dx.doi.org/10.7554/eLife.07340.008
+**Figure 3.:** Fathers raised cross-fostered broods of either 5 (white circles) or 20 larvae (black circles), singlehandedly. A poor quality environment in early life generates fathers that (A) are less effective at raising broods of 20 cross-fostered larvae and (B) tend to exhibit lower subsequent survival than fathers raised in a good quality early-life environment. Mean values with standard error bars are shown.
 
-## Experiment 2—the influence of parental effects on the outcome of a social interaction
+### Experiment 2—the influence of parental effects on the outcome of a social interaction
 
-The key finding of this experiment was that males suffered greater fitness costs when raising offspring with lower quality females (
+The key finding of this experiment was that males suffered greater fitness costs when raising offspring with lower quality females (Χ2 = 15.05, d.f. = 3, p = 0.002; Figure 4; Table 2). Males paired with females that had received no post-hatching care as larvae had significantly shorter lives than those whose partners received either 24-hr care (Table 2b) or 192-hr care as larvae (Table 2b). Independent of their partner's quality, males also had a shorter life if the mass of their brood was greater at dispersal (Table 2b) and if they were relatively small in size (Table 2b). By contrast, all the females in our experiment lived similarly long lives, irrespective of the conditions they experienced in early life (Χ2 = 5.06, d.f. = 3, p = 0.17; Figure 4; Table 2a), or their size (Table 2a), or the total mass of their broods at dispersal (Table 2a).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig4-v2.jpg)
 
-**Figure 4.:** All males developed in a high-quality environment. The greater the difference within the pair in the environment they each experienced during development, the greater the difference in their subsequent lifespan. Low-quality mothers thus exploit high-quality fathers. Mean values with standard error bars are shown.DOI: http://dx.doi.org/10.7554/eLife.07340.009
+**Figure 4.:** All males developed in a high-quality environment. The greater the difference within the pair in the environment they each experienced during development, the greater the difference in their subsequent lifespan. Low-quality mothers thus exploit high-quality fathers. Mean values with standard error bars are shown.
+
+**Table 2.**
+ Results from Experiment 2: the influence of parental effects on the outcome of a social interaction
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NB parental effect experienced by female</th>
+      <th>Coefficient</th>
+      <th>Standard error</th>
+      <th>z value</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">a. Female lifespan</td>
+    </tr>
+    <tr>
+      <td>Parental effect: 8 hr vs 0 hr</td>
+      <td>0.427</td>
+      <td>0.228</td>
+      <td>1.88</td>
+      <td>0.061</td>
+    </tr>
+    <tr>
+      <td>Parental effect: 24 hr vs 0 hr</td>
+      <td>0.216</td>
+      <td>0.236</td>
+      <td>0.92</td>
+      <td>0.360</td>
+    </tr>
+    <tr>
+      <td>Parental effect: 192 hr vs 0 hr</td>
+      <td>−0.073</td>
+      <td>0.254</td>
+      <td>−0.29</td>
+      <td>0.770</td>
+    </tr>
+    <tr>
+      <td>Total carcass mass</td>
+      <td>0.017</td>
+      <td>0.016</td>
+      <td>1.06</td>
+      <td>0.290</td>
+    </tr>
+    <tr>
+      <td>Total brood mass</td>
+      <td>0.004</td>
+      <td>0.029</td>
+      <td>0.16</td>
+      <td>0.870</td>
+    </tr>
+    <tr>
+      <td>Female pronotum</td>
+      <td>0.522</td>
+      <td>0.322</td>
+      <td>1.62</td>
+      <td>0.110</td>
+    </tr>
+  </tbody>
+</table>
+
+_Parental effects were created experimentally by exposing females to 0 hr, 8 hr, 24 hr, or 192 hr of post-hatching care as larvae. They were then kept until adulthood and allowed to breed twice with a male who had received 192 hr of care as larva. The two parents raised offspring together. Each parent's lifespan thereafter was recorded, as was the mass of their brood at dispersal. Further details are given in the ‘Materials methods’._
 
 This result cannot be attributed to males paired with low-quality females raising more offspring. Pairs where the female received no post-hatching care as a larva produced fewer offspring than those reared by females that received either 24-hr care (Table 2c) or 192 hr/full care (Table 2c).
 
-## Model: sexual conflict and the transgenerational impact of parental effects
+### Model: sexual conflict and the transgenerational impact of parental effects
 
-Our model predicts that parents will provide more care when this increases the chances that their offspring develop into high-quality parents (
+Our model predicts that parents will provide more care when this increases the chances that their offspring develop into high-quality parents (Figure 5). Stronger parental effects selected for greater care regardless of whether sexual conflict was present or artificially removed from the model. When conflict was removed, however, parents both cared more in absolute terms and also increased their care more steeply in response to increasing parental effects (Figure 5). This is because sexual conflict dilutes the fitness benefits of investing in the current brood, whether these benefits arise from the quantity or the quality of offspring.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07340/elife-07340-fig5-v2.jpg)
 
-**Figure 5.:** α (i.e., the extent to which care received affects the future parental quality of offspring).FAverage care levels increase with the strength of parental effects both when sexual conflict is present (circles) and when it is absent (squares). When there is no sexual conflict, parents provide more care in absolute terms and also increase their care more steeply with increasing parental effects. Shown with g1 = 0.5, bmin = fmin = 1, α = 5, Bβ = 5, Gβ = 5, and Pmmin = 0.25 (see Appendix 1 for details of function shapes).DOI: http://dx.doi.org/10.7554/eLife.07340.011
+**Figure 5.:** Average care levels increase with the strength of parental effects both when sexual conflict is present (circles) and when it is absent (squares). When there is no sexual conflict, parents provide more care in absolute terms and also increase their care more steeply with increasing parental effects. Shown with g1 = 0.5, bmin = fmin = 1, αB = 5, βG = 5, βP = 5, and mmin = 0.25 (see Appendix 1 for details of function shapes).
 
 Good quality parents always invested more in care than poor quality parents in our model. The difference in care was large enough that good parents had higher overall mortality (mG > mP). The reproductive value of good parents was nonetheless always higher, in contrast to the predictions of a previous model (Lessells and McNamara, 2012). Poor quality individuals invested relatively less in care when partnered with good than with poor partners (i.e., cPG < cPP) and good quality individuals compensated for their partner's inferior efforts by increasing their own care (cGP > cGG). Interestingly, this was true both with and without sexual conflict (note that it is possible to remove conflict while retaining individual variation in parental quality, see Appendix 1). A reduction of care by individuals when paired with a high-quality partner consequently does not provide evidence for sexual conflict per se. However, when coparents are unrelated (as in the experiments and in the model with sexual conflict), a reduction in care by one individual will reduce the fitness of its partner and can consequently be considered exploitative.
 

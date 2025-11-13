@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/018yw5541 CAS and Shandong Province Key Laboratory of Experimental Marine Biology, Institute of Oceanology; CAS Center for Ocean Mega-Science, Chinese Academy of Sciences Qingdao China
-2. https://ror.org/026sv7t11 Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center Qingdao China
-3. https://ror.org/05qbk4x57 College of Marine Sciences, University of Chinese Academy of Sciences Qingdao China
+1. CAS and Shandong Province Key Laboratory of Experimental Marine Biology, Institute of Oceanology; CAS Center for Ocean Mega-Science, Chinese Academy of Sciences Qingdao China ([ROR:018yw5541](https://ror.org/018yw5541))
+2. Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center Qingdao China ([ROR:026sv7t11](https://ror.org/026sv7t11))
+3. College of Marine Sciences, University of Chinese Academy of Sciences Qingdao China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 
 † Corresponding author
 
@@ -32,31 +32,107 @@ Different from HsGSDME that is specifically cleaved by HsCASP3, teleost GSDME is
 
 ## Results
 
-## Pufferfish GSDME is specifically cleaved by both human and fish CASP3/7
+### Pufferfish GSDME is specifically cleaved by both human and fish CASP3/7
 
 It has long been observed that although human caspase (HsCASP) 3 and 7 share the same consensus recognition motif DxxD, HsCASP3, but not HsCASP7, cleaves human GSDME (HsGSDME) (at the site of DMPD) (Poreba et al., 2013; Wang et al., 2017). The underlying molecular mechanism is unknown. In this study, we found that a pufferfish T. rubripes GSDME (designated TrGSDME), which belongs to the GSDMEa lineage of teleost GSDME (Figure 1—figure supplement 1), was specifically cleaved by both HsCASP3 and 7 (Figure 1A and B). This intriguing observation promoted us to explore the mechanism of HsCASP7 substrate discrimination. We first examined whether TrGSDME could be cleaved by pufferfish CASP (TrCASP) 3/7. The active forms of TrCASP3/7 were prepared (Figure 1C), both exhibited high proteolytic specificity and activity toward the tetrapeptide DEVD (Figure 1D and E), which is the conserved recognition motif of HsCASP3/7. When incubated with TrGSDME, both TrCASP3 and TrCASP7 cleaved TrGSDME into the NT and CT fragments, similar to that cleaved by HsCASP3/7, in a dose-dependent manner (Figure 1F and G). Accordingly, TrCASP3/7-mediated TrGSDME cleavage was inhibited by the CASP3 inhibitor (Z-DEVD-FMK) and the pan-CASP inhibitor (Z-VAD-FMK) (Figure 1H). Based on the molecular mass of the cleaved NT and CT products, we inferred that the tetrapeptide motif 255DAVD258 in the vicinity of the linker region of TrGSDME may be the recognition site of CASP3/7. Indeed, the D255R and D258A mutants of TrGSDME were resistant to TrCASP3/7 and HsCASP3/7 cleavage (Figure 1I and J, Figure 1—figure supplement 2). Taken together, these results demonstrated that TrGSDME was cleaved by fish and human CASP3/7 in a manner that depended on the specific sequence of DAVD (Figure 1K).
 
-## CASP3/7-cleaved TrGSDME is functionally activated and induces pyroptosis
+![Figure 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) TrGSDME was treated with 1 U of different HsCASPs for 2 hr and then subjected to SDS-PAGE (A) and immunoblotting (B). (C) SDS-PAGE analysis of purified TrCASP3/7. The p10 and p20 subunits are indicated. (D) TrCASP3/7 cleavage of different colorimetric CASP substrates was monitored by measuring released ρNA. n=3. The values are the means ± SD of three replicates. (E) TrCASP3/7 (0.25–8 U) were incubated with Ac-DEVD-ρNA, and time-dependent release of ρNA was measured. (F, G) SDS-PAGE (F) and immunoblotting (G) analysis of TrGSDME cleavage by TrCASP3/7 (0.25–4 U). (H) TrGSDME cleavage by TrCASP3/7 was determined in the presence or absence of 20 μM Z-DEVD-FMK or Z-VAD-FMK. (I, J) TrGSDME wild type (WT) and mutants (D255R or D258A) were incubated with TrCASP3/7 for 2 hr, and the cleavage was determined by SDS-PAGE (I) and immunoblotting (J). (K) A schematic of TrGSDME cleavage by TrCASP3/7. The arrow indicates cleavage site. For all panels, FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The phylogenetic tree was constructed using 15 fish GSDMEa (red) and 51 fish GSDMEb (blue) collected from the NCBI databank. The TrGSDME used in this study is indicated by a red star.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** TrGSDME wild type (WT) and mutants (D255R and D258A) were treated with or without (-) HsCASP3/7 for 2 hr, and the cleavage was determined by immunoblotting with anti-His antibody. FL, full length; CT, cleaved C-terminal region.
+
+### CASP3/7-cleaved TrGSDME is functionally activated and induces pyroptosis
 
 We next examined whether TrGSDME, like HsGSDME, is a functional pyroptosis inducer. For this purpose, HEK293T cells were transfected with mCherry-tagged full length (FL) or NT/CT domain of TrGSDME. The results revealed that TrGSDME-FL and -CT were abundantly expressed in the cells, whereas TrGSDME-NT expression was barely detectable (Figure 2A, Figure 2—figure supplement 1). No significant morphological change or lactate dehydrogenase (LDH) release was observed in cells expressing TrGSDME-FL or -CT (Figure 2B and C). By contrast, cells expressing TrGSDME-NT showed necrotic cell death with massive LDH release and positive Sytox Green staining (Figure 2B and C, Figure 2—figure supplement 2). TrGSDME-NT-induced cell death exhibited osmotic cell membrane swelling, a typical feature of pyroptosis (Figure 2D). Time-lapse imaging showed that TrGSDME-NT triggered rapid cell swelling and membrane rupture, which led to release of cytoplasmic contents and eventually cell death (Figure 2E, Figure 1—video 1). To examine the pyroptotic activity of CASP3/7-cleaved TrGSDME, TrCASP3/7 and TrGSDME were overexpressed in HEK293T cells (Figure 2). The cells expressing TrCASP3, TrCASP7, or TrGSDME alone had no apparent morphological change or LDH release, whereas the cells co-expressing TrGSDME and TrCASP3 or TrGSDME and TrCASP7 underwent pyroptosis, accompanying with massive LDH release, membrane rupture, and TrGSDME cleavage (Figure 2G–I, Figure 2—figure supplement 3A). Consistently, the presence of the CASP3 inhibitor and pan-CASP inhibitor hampered TrGSDME-mediated pyroptosis (Figure 2J and K). Mutation of the cleavage site (D255R and D258A) inhibited pyroptosis and significantly decreased LDH release and TrGSDME cleavage (Figure 2L and M, Figure 2—figure supplement 3B and C). These results indicated that TrCASP3/7 cleavage was required to activate TrGSDME-mediated pyroptosis.
 
-## GSDME-CT domain mediates the recognition by CASP7
+![Figure 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) HEK293T cells were transfected with C-terminally mCherry-tagged TrGSDME FL or truncate (NT or CT) for 24 hr, and then analyzed for TrGSDME expression (A), morphological change (B), and lactate dehydrogenase (LDH) release (C). Scale bars, 50 μm (A) and 20 μm (B). (D) HEK293T cells were transfected with the backbone vector or vector expressing Myc-tagged TrGSDME-NT for 24 hr. The cell nuclei and membrane were stained with propidium iodide (PI) and DiO, respectively. Scale bar, 10 μm. (E) HEK293T cells were transfected with mCherry-tagged TrGSDME-NT for 16 hr, and the progression of cell death was shown by time-lapse microscopic imaging. Scale bar, 10 μm. (F) HEK293T cells were transfected with TrCASP3/7 for 24 hr, and the proteolytic activity of TrCASP3/7 was assessed by treatment with fluorogenic Ac-DEVD-AFC. (G) Phase-contrast images of HEK293T cells transfected with the indicated vectors for 24 hr. Scale bar, 20 μm. (H, I) LDH release (H) and TrGSDME cleavage and TrCASP3/7 expression (I) in the above transfected cells were determined. For panel (I), FL, full-length; CT, C-terminal fragment. (J, K) HEK293T cells co-expressing TrGSDME and TrCASP3/7 for 24 hr in the presence or absence (control) of 10 μM Z-VAD-FMK or Z-DEVD-FMK were subjected to microscopy (J) and LDH measurement (K). Scale bar, 20 μm. (L, M) HEK293T cells expressing TrCASP3/7 plus TrGSDME or TrCASP3/7 plus the D255R/D258A mutant were subjected to microscopy (L) and LDH measurement (M). Scale bar, 20 μm. For panels (C, F, H, K, M), values are the means of three experimental replicates and shown as means ± SD. n=3. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** HEK293T cells were transfected with the backbone vector or the vector expressing mCherry-tagged TrGSDME full length (FL) or truncates (NT or CT) for 24 h. The cell lysate was then immunoblotted with antibody against mCherry or β-actin.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** HEK293T cells were transfected with the backbone vector or the vector expressing mCherry-tagged TrGSDME full length (FL) or truncate (NT or CT) for 24 hr. The cells were then stained with Sytox Green and examined with a microscope. Scale bar, 30 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) HEK293T cells were transfected with the backbone vector or the vector expressing the indicated protein for 24 hr and then stained with Sytox Green. Scale bars, 30 μm. (B, C) HEK293T cells expressing wild type (WT) or mutant TrGSDME together with or without (control) TrCASP3 or TrCASP7 were subjected to Sytox Green staining (B) and TrGSDME cleavage analysis by immunoblot with antibodies against mCherry (upper), Myc (middle), and actin (lower) (C). Scale bar, 30 μm.
+
+### GSDME-CT domain mediates the recognition by CASP7
 
 Since it is known that human GSDME is cleaved by CASP3 but not by CASP7, the observation that TrGSDME was cleaved by both human and fish CASP3/7 intrigued us to explore the underlying mechanism. We found that unlike TrCASP1, both HsCASP3 and 7 exhibited proteolytic activity toward the consensus CASP3/7 recognition motif, DMPD, in HsGSDME, but HsCASP7 failed to cleave HsGSDME (Figure 3A and B, Figure 3—figure supplements 1 and 2). Structure analysis revealed that compared to TrGSDME, HsGSDME possesses two additional regions with the possibility to form a loop (261–266 aa) and an α-helix (281–296 aa), respectively (Figure 3C). We tested whether deletion of these two regions could confer HsCASP7 cleavage on HsGSDME. The results showed that similar to the wild type HsGSDME, the loop deletion mutant (Δ261–266) and the α-helix deletion mutant (Δ281–296) were cleaved by HsCASP3 but not by HsCASP7 (Figure 3D). Since the NT and CT domains play different roles in GSDM structure maintenance, we constructed GSDME chimeras consisting of HsGSDME-NT plus TrGSDME-CT (named HsNT-TrCT), or TrGSDME-NT plus HsGSDME-CT (named TrNT-HsCT) (Figure 3E). Compared with wild type HsGSDME and TrGSDME, chimeric HsNT-TrCT was cleaved by HsCASP3/7, whereas TrNT-HsCT was cleaved only by HsCASP3 (Figure 3F–I), suggesting that the CT domain determined the cleavability of GSDME by HsCASP7.
 
-## The p10 subunit determines the substrate specificity of CASP7
+![Figure 3.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig3-v1.jpg)
+
+**Figure 3.:** (A) HsGSDME was treated with 1 U of various HsCASPs for 2 hr, and the products were analyzed by immunoblotting with anti-HsGSDME-CT antibody. (B) HsCASP3/7 and TrCASP3/7 were incubated with Ac-DAVD-ρNA or Ac-DMPD-ρNA at 37°C for 30 min, and the proteolytic activity was determined. n=3. Data are expressed as the means ± SD of three replicates. (C) Structure analysis of the linker region from HsGSDME and TrGSDME with moue GSDMA3 (PDB:5b5r) as the template. Two regions that may form α-helix and loop are indicated. (D) HsGSDME wild type (WT) and mutants (Δ261–266 and Δ281–296) were treated with or without 1 U of HsCASP3/7 for 2 hr, and the cleaved fragments were subjected to immunoblotting with anti-HsGSDME-CT antibody. (E) Schematics of the chimeric GSDME constructs. (F–I) TrGSDME (F), HsNT-TrCT (G), HsGSDME (H), and TrNT-HsCT (I) were incubated with 1 U of TrCASP3/7 or HsCASP3/7 for 2 hr, and the cleavage was determined by immunoblotting with anti-TrGSDME or anti-HsGSDME-CT antibodies. For panels (A, D, F–I): FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Recombinant HsGSDME was incubated with or without (-) HsCASP1, 2, 3, 6, 7, 8, and 9 for 2 hr, and the cleavage was determined by SDS-PAGE. M, molecular markers. FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** TrCASP1 was incubated with colorimetric Ac-YVAD-ρNA, Ac-DAVD-ρNA, and Ac-DMPD-ρNA for 1 hr, and the cleavage was determined by measuring the release of ρNA. n=3. Values are the means of triplicate experiments and shown as means ± SD.
+
+### The p10 subunit determines the substrate specificity of CASP7
 
 Since as shown above, unlike HsCASP7, TrCASP7 was able to cleave HsGSDME (Figure 3H), we compared the sequences of TrCASP7 and HsCASP7. The two CASPs share 66.24% sequence identity. In these CASPs, the catalytic motifs SHG and QACRG in the p20 subunit and the substrate binding motifs SWR and GSWF in the p10 subunit are conserved (Figure 4A). To explore their substrate discrimination mechanism, we constructed CASP7 chimeras consisting of HsCASP7 p20 plus TrCASP7 p10 (named Hsp20-Trp10) or TrCASP7 p20 plus HsCASP7 p10 (named Trp20-Hsp10) (Figure 4B, Figure 4—figure supplement 1A). Compared to the wild types (HsCASP7 and TrCASP7), the chimeras exhibited comparable enzymatic activities toward the tetrapeptide substrates DAVD and DMPD (Figure 4C). Like the wild types, both chimeras cleaved TrGSDME and HsNT-TrCT (Figure 4D and E). By contrast, the Hsp20-Trp10 chimera cleaved HsGSDME, whereas the Trp20-Hsp10 chimera did not cleave HsGSDME (Figure 4F). Similar cleavage pattern was observed toward TrNT-HsCT (Figure 4G). These observations indicated that the p10 subunit dictated the cleavage specificity of CASP7 toward GSDME.
 
-## The S234 of p10 is the key to HsCASP7 discrimination on HsGSDME
+![Figure 4.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sequence alignment of HsCASP7 and TrCASP7 with HsCASP7 (PDB:1K86) as the template. α-helices and β-strands are indicated. The motifs involved in catalytic reaction (SHG and QACRG) and substrate binding (SWR and GSWF) are boxed in red. (B) Schematics of CASP7 chimeras. (C) The proteolytic activities of TrCASP7, HsCASP7, and their chimeras were determined by cleaving Ac-DAVD-ρNA and Ac-DMPD-ρNA. n=3. Data are expressed as the means ± SD of three replicates. (D–G) TrGSDME (D), HsNT-TrCT (E), HsGSDME (F), or TrNT-HsCT (G) were incubated with TrCASP7, HsCASP7 and their chimeras for 2 hr. The products were assessed by immunoblotting with anti-TrGSDME or anti-HsGSDME-CT antibodies. For panels (D–G): FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SDS-PAGE analysis of purified Hsp20-Trp10 and Trp20-Hsp10. (B, C) Purified TrCASP7 (B) and HsCASP7 (C) were subjected to SDS-PAGE (upper panel) and immunoblotting with anti-His tag antibody (lower panel). (D) HsCASP3 and its mutant (N208S) were analyzed by SDS-PAGE. (E) SDS-PAGE analysis of purified MmCASP7 and its mutant (N234S). In all panels, the p10 and p20 subunits are indicated.
+
+### The S234 of p10 is the key to HsCASP7 discrimination on HsGSDME
 
 Comparative analysis of the p10 sequences of TrCASP7 and HsCASP7 identified 13 non-conserved residues. To examine their potential involvement in GSDME cleavage, a series of site-directed mutagenesis was performed to swap the non-conserved residues between HsCASP7 p10 and TrCASP7 p10 (Figure 5A, Figure 4—figure supplement 1B and C). Of the 13 swaps created, S234N conferred on HsCASP7 the ability to cleave HsGSDME (Figure 5B), whereas its corresponding swap in TrCASP7 (N245S) markedly reduced the ability of TrCASP7 to cleave HsGSDME (Figure 5C). None of the 13 swaps affected the ability of HsCASP7 or TrCASP7 to cleave TrGSDME (Figure 5D and E). HsCASP7-S234N cleaved HsGSDME in a dose-dependent manner (Figure 5F), and the cleavage was not enhanced by the additional mutation of S247N&I248V (Figure 5G). Additionally, HsCASP7 and HsCASP7-S234N exhibited similar cleavage capacities against other CASP7 substrates, such as PARP1 and gelsolin (Figure 5—figure supplement 1, Erener et al., 2012; Walsh et al., 2008). Previous studies showed that human CASP1/4 cleaved GSDMD through exosite interaction (Liu et al., 2020; Wang et al., 2020b). However, this exosite is not conserved in HsCASP7, in which the corresponding region forms a coil, not a β sheet (Figure 5—figure supplement 1). Structural modeling showed that the residues Q276, D278, and H283 are close to the region corresponding to the HsCASP1/4 exosite (Figure 5—figure supplement 1). Since these three residues are also not conserved between HsCASP7 p10 subunit and TrCASP7 p10 subunit, they were selected for mutagenesis to examine whether there existed an exosite interaction between HsCASP7 and HsGSDME. The mutation results showed that, similar to the wild type, the mutant Q276W&D278E&H283S was unable to cleave HsGSDME (Figure 5G), suggesting that, unlike human GSDMD, HsGSDME cleavage by CASPs probably did not involve exosite interaction. In contrast to HsGSDME, TrGSDME cleavage by HsCASP7 was not affected by the mutation of S234N, S234N plus S247N&I248V, or Q276W&D278E&H283S (Figure 5H).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sequence alignment of the p10 region in HsCASP7 and TrCASP7. The arrows indicate non-conserved residues. (B, C) HsGSDME was treated with wild type (WT) or mutant HsCASP7 (B) or TrCASP7 (C) for 2 hr. The cleavage was determined by immunoblotting with anti-HsGSDME-CT antibody. 205TME, HsCASP7 with TME insertion at position 205; 213ΔTME, TrCASP7 with TME deleted at position 213. (D, E) TrGSDME was incubated with wild type (WT) or mutant HsCASP7 (D) or TrCASP7 (E) for 2 hr. The cleavage was determined by immunoblotting with anti-TrGSDME antibody. (F) HsGSDME was incubated with HsCASP7 or the S234N mutant (0.25–4 U) for 2 hr. HsGSDME cleavage was analyzed as above. (G, H) HsGSDME (G) and TrGSDME (H) were treated with wild type or mutant HsCASP7 for 2 hr. The cleavage was determined as above. (I, J) TrGSDME (I) or HsGSDME (J) was co-expressed with wild type or mutant TrCASP7/HsCASP7 for 24 hr. GSDME cleavage, CASP7, and β-actin were determined as above. (K) HsGSDME was co-expressed with HsCASP7 or HsCASP7-S234N for 48 hr. Cleavage of GSDME was detected as above. For panels (B–K): FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** HEK293T cells were transfected with C-terminal Flag-tagged PARP1 (left panel) or gelsolin (right panel) for 24 hr. The cell lysates were incubated with or without (-) different units of HsCASP7 and HsCASP7-S234N for 2 hr and then subjected to immunoblotting with anti-Flag antibody.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The structures of HsCASP1 (PDB: 6kn0, gray), HsCASP4 (PDB: 6kmz, green), and HsCASP7 (PDB: 6kn0, purple) are superimposed. The βIII/βIII’ sheets of HsCASP1/4 are indicated by arrows; the residues Q276, D278, and H283 of HsCASP7 are shown in cyan. (B) The sequence alignment of HsCASP1/4 βIII/βIII’ sheet with the corresponding region of HsCASP7.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** TrGSDME (A) or HsGSDME (B) was co-expressed with different doses of TrCASP7/HsCASP7 for 48 hr in HEK293T cells. The expression/cleavage of TrGSDME/HsGSDME and the expression of TrCASP7/HsCASP7 were determined by immunoblotting. β-actin was used as a loading control.
+
 All the above observed GSDME cleavages by CASP7 were verified in a cellular system. When co-expressed in HEK293T cells, HsGSDME was cleaved by TrCASP7 but not by HsCASP7, while TrGSDME was cleaved by both TrCASP7 and HsCASP7 (Figure 5—figure supplement 3). Additionally, both HsGSDME and TrGSDME were cleaved by HsCASP7-S234N as well as TrCASP7-N245S (Figure 5I and J). An apparent dose effect was observed in the cleavage of HsGSDME by HsCASP7-S234N (Figure 5K).
 
-## Divergent and GSDME-independent evolution of CASP7 leads to the loss of GSDME-activation function in mammalian CASP7
+### Divergent and GSDME-independent evolution of CASP7 leads to the loss of GSDME-activation function in mammalian CASP7
 
 Given the importance of N234 in p10 for HsCASP7 cleavage of HsGSDME, we analyzed the sequence conservation of this locus in CASP3/7. For CASP3, a highly conserved Asn residue (corresponding to HsCASP7 S234) was found immediately after the SWR motif in vertebrates (Figure 6A and B). In HsCASP3, this conserved Asn is at position 208. We examined whether this residue was functionally essential to HsCASP3. Compared to the wild type, the N208S mutant exhibited much weaker cleavage of HsGSDME (Figure 6C, Figure 4—figure supplement 1D). Similar weakened cleavage was also observed in HEK293T cells co-expressing HsCASP3-N208S and HsGSDME (Figure 6D). These results indicated that the Asn residue was also critical for HsCASP3 cleavage of HsGSDME.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig6-v1.jpg)
+
+**Figure 6.:** (A) Weblogo analysis of the conservation of S/N234 in CASP3/7 in Mammalia, Aves, Reptilia, Amphibia, and Osteichthyes. (B) Sequence alignment of HsCASP3/7. The S/N residues are indicated by red arrow. (C) HsGSDME was treated with HsCASP3 or HsCASP3-N208S for 2 hr, and then subjected to immunoblotting with anti-HsGSDME-CT antibody. (D) HsGSDME was co-expressed in HEK293T cells with different doses of HsCASP3 or HsCASP3-N208S for 24 hr. The cell lysates were immunoblotted to detect HsGSDME, CASP3, and β-actin. (E) Sequence alignment of the S/N234 region in the CASP7 of primate (shaded cyan) and non-primate mammals. The S/N residues are indicated by red arrow. Asterisks indicate identical residues. (F) Alignment of human and mouse CASP7 sequences. The S/N234 residues are indicated by arrow. (G) HsGSDME was treated with different units of HsCASP7 or MmCASP7 for 2 hr, and the cleavage was assessed by immunoblotting with anti-HsGSDME-CT antibody. (H) HsGSDME was incubated with different units of MmCASP7 or its mutant (N234S) for 2 hr, and HsGSDME cleavage was analyzed as above. (I) MmCASP7 was treated with HsCASP7, MmCASP7, or MmCASP7-N234S for 2 hr. The cleavage was determined by immunoblotting with anti-MmGSDME-NT antibody. For panels (C, D, G–I), FL, full length; NT, N-terminal fragment; CT, C-terminal fragment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The four conserved amino acids are shown in LOGOs, with height representing the relative proportion of the corresponding amino acid at that position. The S/N234 is presented as the fourth LOGO and indicated with a red star.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89974/elife-89974-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) SDS-PAGE analysis of purified MmCASP3. (B) MmGSDME was treated with 1 U of MmCASP3 for 2 hr and then subjected to SDS-PAGE.
 
 For CASP7, an Asn at the position corresponding to HsCASP7 S234 is highly conserved in teleost, amphibians, reptiles, and birds, but not in mammals (Figure 6A). In mammals, the corresponding Asn is present in most non-primate species, such as mouse (Mus musculus) and bovine (Bos taurus), but is replaced by Ser in primate, such as humans (Homo sapiens), gorillas (Gorilla gorilla), and chimpanzee (Pan troglodytes) (Figure 6E, Figure 6—figure supplement 1). We examined whether mouse CASP7 (MmCASP7) could cleave GSDME. The results showed that MmCASP7 cleaved HsGSDME in a dose-dependent manner, and the cleaving ability was abrogated by N234S mutation (Figure 6G and H, Figure 4—figure supplement 1E). By contrast, neither MmCASP7 nor MmCASP7-N234S was able to cleave mouse GSDME (MmGSDME) (Figure 6I). Mouse CASP3 (MmCASP3), however, cleaved MmGSDME efficiently (Figure 6—figure supplement 2). These results indicated the existence of an intra-species barrier for GSDME cleavage by CASP7 in some mammals, suggesting independent evolutions of CASP7 and GSDME.
 
@@ -72,42 +148,353 @@ In conclusion, we identified a teleost GSDME that can be cleaved by fish and hum
 
 ## Materials and methods
 
-## Animal, ethics, and cell line
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Takifugu rubripes)</td>
+      <td>TrGSDME</td>
+      <td>GenBank</td>
+      <td>XP_029701077.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Trelief 5a</td>
+      <td>Tsingke Biological Technology</td>
+      <td>Cat#TSC01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Transetta (DE3)</td>
+      <td>TransGen</td>
+      <td>Cat#CD801</td>
+      <td>Protein purification</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Lipofectamine 3000</td>
+      <td>Invitrogen</td>
+      <td>Cat#L3000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSDME (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab215191</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSDME (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab221843</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (mouse polyclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat#AE005</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (mouse polyclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat#AE010</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (mouse polyclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat#AE003</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (mouse polyclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat#AE002</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TrGSDME (mouse polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Against TrGSDME (1:1000 for WB)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmCherry-N1-TrGSDME variants (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transient expression (backbone: pmCherry-N1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-C-Myc-CASP3/7 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transient expression (backbone: pCMV-C-Myc)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-30a (+)-TrGSDME (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein purification (backbone: pET-30a)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-30a (+)-CASPs (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein purification (backbone: pET-30a)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a (+)-SUMO-HsGSDME (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein purification (backbone: pET-28a)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a (+)-SUMO-MmGSDME (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein purification (backbone: pET-28a)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a (+)-SUMO-GSDME chimeras (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein purification (backbone: pET-28a)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1e</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP1</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP2</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP3</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP6</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP7</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP8</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HsCASP9</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-201-047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-YVAD-ρNA</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-260-026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-VDQQD-ρNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#SCP0105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-DEVD-ρNA</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-260-033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-IETD-ρNA</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-260-045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-LEHD-ρNA</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ALX-260-081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-DAVD-ρNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Activity comparison of CASP3/7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ac-DMPD-ρNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Activity comparison of CASP3/7</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CytoTox 96 Non-Radioactive Cytotoxicity Assay</td>
+      <td>Promega</td>
+      <td>Cat#G1780</td>
+      <td>LDH release</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Hieff Mut Site-Directed Mutagenesis Kit</td>
+      <td>Yeasen</td>
+      <td>Cat#11003ES10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FastPure Cell/Tissue Total RNA Isolation Kit V2</td>
+      <td>Vazyme</td>
+      <td>Cat#RC112-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Revert Aid First Strand cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#K1622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Endotoxin-free plasmid kit</td>
+      <td>Sparkjade</td>
+      <td>Cat#AD0105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism software</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide (PI)</td>
+      <td>Invitrogen</td>
+      <td>Cat#P1304MP</td>
+      <td>Cell death examination</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiO</td>
+      <td>Solarbio</td>
+      <td>Cat#C1038</td>
+      <td>Cell death examination</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal, ethics, and cell line
 
 Clinically healthy pufferfish (T. rubripes) were obtained from a local fish farm. In the laboratory, the fish were maintained at 19–20°C in aerated seawater as reported previously (Xu et al., 2022). For euthanization, the fish were immersed in excess tricaine methane sulfonate (Sigma, St. Louis, MO). The animal experiments were approved by the Ethics Committee of institute of Oceanology, Chinese Academy of Sciences (permit number: MB2012-2). HEK293T cells (ATCC, Rockville, MD) were cultured in DMED medium (Corning, NY) supplemented with 10% fetal bovine serum (ExCell Bio, Shanghai, China) at 37°C in a 5% CO2 incubator. HEK293T cells were validated to be free of mycoplasma contamination before use in this study.
 
-## Sequence analysis
+### Sequence analysis
 
 The sequences of 742 CASP3 and 758 CASP7 used in this study were downloaded from NCBI Orthologs. TrCASP7 and HsCASP7 sequences were aligned with Clustal W program (https://www.ebi.ac.uk/jdispatcher/) and visualized with ESPript 3.0 (http://espript.ibcp.fr/ESPript/cgi-bin/ESPript.cgi/; Robert and Gouet, 2014). Conservation of S/N234 in CASP3/7 was analyzed via Weblogo3 (https://weblogo.threeplusone.com/; Crooks et al., 2004), and the sequences of CASP3/7 used are shown in Supplementary file 1a and b. The phylogenetic analysis of GSDME was performed as reported previously (Xu et al., 2022). The phylogenetic relationship of major mammalian clades was estimated based on the Mammals birth-death node-dated completed trees in VertLife (Upham et al., 2019). The phylogenetic tree was subsequently viewed and edited in iTOL (Letunic and Bork, 2021). The icons representing phylogeny clades were retrieved from the PhyloPic (http://www.phylopic.org/), with the detailed credentials provided in Supplementary file 1c.
 
-## Antibodies and immunoblotting
+### Antibodies and immunoblotting
 
 Monoclonal anti-mouse (ab215191) and anti-human (ab221843) GSDME antibodies were purchased from Abcam (Cambridge, MA). Antibodies against β-actin (AC026), Flag (AE005), Myc (AE010), His (AE003), and mCherry (AE002) were purchased from Abclonal (Wuhang, China). Mouse polyclonal antibody against TrGSDME was prepared as reported previously (Xu et al., 2022). Anti-serum (1:1000 dilution) was used for immunoblotting. Immunoblotting was performed as reported previously (Zhao and Sun, 2022). Briefly, the samples were fractionated in 12% SDS-PAGE (GenScript, Piscataway, NJ). The proteins were transferred to NC membranes, immunoblotted with appropriate antibodies, and visualized using an ECL kit (Sparkjade Biotechnology Co. Ltd, Shandong, China).
 
-## Gene cloning and mutagenesis
+### Gene cloning and mutagenesis
 
 Total RNA was extracted from pufferfish kidney using the FastPure Cell/Tissue Total RNA Isolation Kit V2 (Vazyme Biotech Co. Ltd, Nanjing, China). cDNA synthesis was performed with Revert Aid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, Waltham, MA). The coding sequences (CDSs) of pufferfish GSDME (accession number XP_029701077.1) and CASP3/7 were amplified by PCR. The CDSs of mouse GSDME and CASP3/7 were synthesized by Sangon Biotech (Shanghai, China). Site-directed mutagenesis was performed using Hieff Mut Site-Directed Mutagenesis Kit (Yeasen, Shanghai, China). Truncates of TrGSDME were created as reported previously (Xu et al., 2022) and subcloned into pmCherry-N1 (Clontech, Mountain View, CA). For the construction of GSDME and CASP7 chimera, the CDSs of GSDME NT/CT and CASP7 p10/p20 were obtained by PCR and ligated. The constructs of the truncate and chimeric proteins are shown in Supplementary file 1d. All sequences/constructs were verified by sequencing analysis. The primers used are listed in Supplementary file 1e.
 
-## Plasmids and transient expression
+### Plasmids and transient expression
 
 For expression in mammalian cell expression, the CDSs of GSDME (pufferfish, human, and mouse) were subcloned into pCS2−3×Flag (Wang et al., 2017) or pmCherry-N1 and CDSs encoding CASP (pufferfish, human, and mouse) were subcloned into p-CMV-Myc (Clontech) or pCS2-Myc (Wang et al., 2017). All plasmids were prepared with endotoxin-free plasmid kit (Sparkjade Biotechnology Co. Ltd). For transient expression, HEK293T cells were cultured in 96- or 24-well plates (Corning) overnight, and then transfected with 100 ng/well (96-well plates) or 500 ng/well (24-well plates) indicated plasmids using Lipofectamine 3000 (Invitrogen, USA) for 24 hr or as specified. For GSDME processing, the plasmids of GSDME and CASP were co-transfected in HEK293T cells as described above and cultured continuously for 24 hr or as specified. Cells were harvested and lysed with RIPA Lysis Buffer (Beyotime, Shanghai, China) for immunoblotting. The primers used are shown in Supplementary file 1e.
 
-## Protein purification
+### Protein purification
 
 Recombinant GSDMEs and CASPs are all soluble and were purified as described previously (Jiang et al., 2020; Xu et al., 2022). Briefly, the CDSs of TrGSDME and CASP variants were each cloned into pET30a (+), and the CDSs of HsGSDME, MmGSDME, and chimeric GSDME were each cloned into pET28a-SUMO. The recombinant plasmids were introduced into Escherichia coli Transetta (DE3) (TransGen, Beijing, China) by transformation. The transformants were cultured in Luria broth (LB) at 37°C until logarithmic growth phase. Isopropyl-β-d-thiogalactopyranoside (0.3 mM) was added to the medium, followed by incubation at 16°C for 20 hr. Bacteria were harvested and lysed, and the supernatant was collected for protein purification with Ni-NTA columns (GE Healthcare, Uppsala, Sweden). The proteins were dialyzed with PBS at 4°C and concentrated.
 
-## CASP activity
+### CASP activity
 
 To measure their proteolytic activity, recombinant CASPs were incubated separately with various colorimetric substrates at 37°C for 2 hr as described previously (Jiang et al., 2020; Xu et al., 2022), and then monitored for released ρNA at OD405. To compare their substrate preference, TrCASP3/7 and HsCASP3/7 were incubated with Ac-DAVD-ρNA or Ac-DMPD-ρNA (Science Peptide Biological Technology Co., Ltd, Shanghai, China) at 37°C for 30 min, and the released ρNA was measured at OD405. The CASP activity in cells transfected TrCASP3/7 was determined as described previously (Xu et al., 2022).
 
-## GSDME cleavage by CASPs
+### GSDME cleavage by CASPs
 
 GSDME cleavage assay was performed as described previously (Jiang et al., 2020; Xu et al., 2022). Briefly, recombinant GSDME was incubated with 1 U of recombinant HsCASP1,2, 3, 6, 7, 8, and 9 (Enzo Life Sciences, Villeurbanne, France) at 37°C for 2 hr in the reaction buffer (50 mM HEPES [pH 7.5], 3 mM EDTA, 150 mM NaCl, 0.005% [v/v] Tween 20, and 10 mM DTT). TrGSDME, HsGSDME, or their chimeras were treated with 1 U of TrCASP3/7, HsCASP3/7, or their chimeras for 2 hr as above in reaction buffer. After incubation, the samples were boiled in 5× Loading Buffer (GenScript) and subjected to SDS-PAGE or immunoblotting with indicated antibody.
 
-## Cell death examination
+### Cell death examination
 
 Cell death examination by microscopy was performed as reported previously (Jiang et al., 2020; Xu et al., 2022). Briefly, HEK293T cells were plated into 35 mm glass-bottom culture dishes (Nest Biotechnology, Wuxi, China) at about 60% confluency and subjected to the indicated treatment for 24 hr. To examine cell death morphology, propidium iodide (PI) (Invitrogen, Carlsbad, CA) and DiO (Solarbio, Beijing, China) were added to the culture medium, and the cells were observed with a Carl Zeiss LSM 710 confocal microscope (Carl Zeiss, Jena, Germany). To video the cell death process, the cells were transfected with 1 μg pmCherry-N1 vector expressing TrGSDME-NT for 16 hr, and cell death was recorded using the above microscope. Cell death measured by LDH assay was performed as reported previously (Xu et al., 2022).
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test and ANOVA were used for comparisons between groups. Statistical analysis was performed with GraphPad Prism 7 software. Statistical significance was defined as p<0.05.

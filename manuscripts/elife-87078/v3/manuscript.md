@@ -26,24 +26,24 @@
 
 ### Affiliations
 
-1. https://ror.org/052r2xn60 Institute of Anatomy and Cell Biology, Johannes Kepler University Linz Austria
-2. https://ror.org/052r2xn60 Clinical Research Institute for Neurosciences, Johannes Kepler University Linz Austria
-3. https://ror.org/038t36y30 Institute of Physiology and Pathophysiology, Heidelberg University Heidelberg Germany
-4. https://ror.org/038t36y30 Institute of Neuroanatomy, Mannheim Center for Translational Neuroscience (MCTN), Medical Faculty Mannheim, Heidelberg University Mannheim Germany
-5. https://ror.org/038t36y30 Chica and Heinz Schaller Research Group, Institute of Anatomy and Cell Biology, Heidelberg University Heidelberg Germany
-6. https://ror.org/000bxzc63 Optical Microscopy Facility, Max Planck Institute for Medical Research Heidelberg Germany
-7. https://ror.org/038t36y30 Institute of Anatomy and Cell Biology, Dept. of Functional Neuroanatomy, Heidelberg University Heidelberg Germany
-8. https://ror.org/043j0f473 German Center for Neurodegenerative Disease (DZNE), Neural Circuit Computations Bonn Germany
-9. https://ror.org/02s6k3f65 Department of Biomedicine, University of Basel Basel Switzerland
-10. https://ror.org/00jmfr291 Department of Pharmacology, University of Michigan Medical School Ann Arbor United States
-11. https://ror.org/00py81415 Department of Biochemistry, Duke University Medical Center Durham United States
-12. https://ror.org/00jmfr291 Department of Psychiatry, University of Michigan Medical School Ann Arbor United States
+1. Institute of Anatomy and Cell Biology, Johannes Kepler University Linz Austria ([ROR:052r2xn60](https://ror.org/052r2xn60))
+2. Clinical Research Institute for Neurosciences, Johannes Kepler University Linz Austria ([ROR:052r2xn60](https://ror.org/052r2xn60))
+3. Institute of Physiology and Pathophysiology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+4. Institute of Neuroanatomy, Mannheim Center for Translational Neuroscience (MCTN), Medical Faculty Mannheim, Heidelberg University Mannheim Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+5. Chica and Heinz Schaller Research Group, Institute of Anatomy and Cell Biology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+6. Optical Microscopy Facility, Max Planck Institute for Medical Research Heidelberg Germany ([ROR:000bxzc63](https://ror.org/000bxzc63))
+7. Institute of Anatomy and Cell Biology, Dept. of Functional Neuroanatomy, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+8. German Center for Neurodegenerative Disease (DZNE), Neural Circuit Computations Bonn Germany ([ROR:043j0f473](https://ror.org/043j0f473))
+9. Department of Biomedicine, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+10. Department of Pharmacology, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+11. Department of Biochemistry, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+12. Department of Psychiatry, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-The axon initial segment (AIS) constitutes not only the site of action potential initiation, but also a hub for activity-dependent modulation of output generation. Recent studies shedding light on AIS function used predominantly post-hoc approaches since no robust murine in vivo live reporters exist. Here, we introduce a reporter line in which the AIS is intrinsically labeled by an ankyrin-G-GFP fusion protein activated by Cre recombinase, tagging the native Ank3 gene. Using confocal, superresolution, and two-photon microscopy as well as whole-cell patch-clamp recordings in vitro, ex vivo , and in vivo, we confirm that the subcellular scaffold of the AIS and electrophysiological parameters of labeled cells remain unchanged. We further uncover rapid AIS remodeling following increased network activity in this model system, as well as highly reproducible in vivo labeling of AIS over weeks. This novel reporter line allows longitudinal studies of AIS modulation and plasticity in vivo in real-time and thus provides a unique approach to study subcellular plasticity in a broad range of applications.
+The axon initial segment (AIS) constitutes not only the site of action potential initiation, but also a hub for activity-dependent modulation of output generation. Recent studies shedding light on AIS function used predominantly post-hoc approaches since no robust murine in vivo live reporters exist. Here, we introduce a reporter line in which the AIS is intrinsically labeled by an ankyrin-G-GFP fusion protein activated by Cre recombinase, tagging the native Ank3 gene. Using confocal, superresolution, and two-photon microscopy as well as whole-cell patch-clamp recordings in vitro, ex vivo, and in vivo, we confirm that the subcellular scaffold of the AIS and electrophysiological parameters of labeled cells remain unchanged. We further uncover rapid AIS remodeling following increased network activity in this model system, as well as highly reproducible in vivo labeling of AIS over weeks. This novel reporter line allows longitudinal studies of AIS modulation and plasticity in vivo in real-time and thus provides a unique approach to study subcellular plasticity in a broad range of applications.
 
 ## Introduction
 
@@ -55,7 +55,7 @@ To overcome these limitations, we have generated a mouse line for Cre-dependent 
 
 ## Results
 
-## Intrinsic AIS labeling in various experimental in vitro, ex vivo, and in vivo systems
+### Intrinsic AIS labeling in various experimental in vitro, ex vivo, and in vivo systems
 
 Ankyrin-G is an intracellular scaffolding protein critical for the formation and maintenance of the AIS, where it recruits multiple cytoskeletal elements, ion channels, transporters, and cell adhesion molecules that are necessary for normal AIS function (Nelson and Jenkins, 2017; Rasband, 2010; Leterrier, 2018). We, therefore, decided to use ankyrin-G as a backbone to design a conditional mouse model to intrinsically label the AIS (see Methods). Ankyrin-G tolerates the addition of a GFP tag, since ankyrin-G-GFP can rescue multiple functions of ankyrin-G in Ank3 null neurons, including scaffolding of voltage-gated sodium and potassium channels, clustering of the spectrin cytoskeleton, and recruitment of inhibitory synapses (Jenkins et al., 2015; Fréal et al., 2016; Tseng et al., 2015). To intrinsically label ankyrin-G with GFP, we utilized a FLEx cassette system to flip out the last exon of Ank3 and replace it with the last exon of Ank3 fused with the coding sequence for GFP (Figure 1). Given the heterogeneous expression of ankyrin-G in various cell compartments across multiple tissues, constitutive tagging of the endogenous Ank3 allele would make it difficult to visualize ankyrin-G-dependent structures. By contrast, our system allows us to only GFP-label ankyrin-G in cells expressing Cre recombinase, allowing the visualization of ankyrin-G in genetically and temporally defined cell populations.
 
@@ -77,13 +77,29 @@ Ank-G-GFP expression is not limited to typical cortical neurons (pyramidal cells
 
 Interneuron populations showed similar selective labeling when using appropriate Cre driver lines. Mating of ank-G-GFP animals with parvalbumin (PV)-Cre mice highlighted exclusive GFP signal in AIS that belonged to PV+ interneurons as shown in ex vivo acute slices of the cerebellum (Figure 2G, left panel). Again, double labeling against βIV-spectrin indicated distinct GFP expression only in those neurons that expressed PV (Figure 2G, middle panel). In all experiments outlined above, double labeling against the characteristic AIS markers βIV-spectrin and ankyrin-G, respectively, served as control of AIS identity of labeled structures and we found that ank-G-GFP reporter expression always colocalized with these markers.
 
-## Ank-G-GFP localizes to nodes of Ranvier
+### Ank-G-GFP localizes to nodes of Ranvier
 
 The 480 kDa isoform of ankyrin-G is also localized to nodes of Ranvier (noR) in myelinated axons where it serves as a scaffold for voltage-gated ion channels similar to those found at the AIS (Jenkins et al., 2015; Jenkins and Bennett, 2002; Dzhashiashvili et al., 2007). Consequently, the ank-G-GFP construct should also be discernible in this axonal microdomain. In mice expressing ank-G-GFP in CaMKIIa-positive excitatory neurons, noR in the alveus of hippocampal CA3 were visible as distinct puncta that co-localized with other nodal markers such as ankyrin-G and Nav1.6 (Figure 3A). Of note, only CaMKII-expressing neurons showed ank-G-GFP signals in noR (Figure 3A, green circles). Ank-G-GFP– noR were still characterized by the colocalization of ankyrin-G and Nav1.6 (Figure 3A, blue circles). To confirm that the expression of ank-G-GFP does not disrupt the nodal structure, we examined the localization of the paranodal Contactin-associated protein (Caspr) (Rios et al., 2000). Immunostaining against GFP, ankyrin-G, and Caspr revealed normal localization of ank-G-GFP and Caspr to the node and paranode, respectively, in myelinated axons of CaMKII-positive neurons (Figure 3B). The quantification of node shape and fluorescence signals of Nav1.6 and ankyrin-G showed no differences between GFP+ and GFP- nodes (Figure 3C, Figure 3—figure supplement 1A and B). We note that these groups belong to genetically distinct subgroups of cells, but consistent node lengths and Nav1.6 levels indicate that the GFP label does not grossly disrupt node structure. Furthermore, GFP label intensities within GFP+ nodes did not interfere with Nav1.6 levels (Figure 3—figure supplement 1C, top panel). Instead, we found a strong correlation between GFP and ankyrin-G in GFP+ nodes, demonstrating the specificity of our model (Figure 3—figure supplement 1C, bottom panel).
 
-## Ank-G-GFP expression preserves axonal characteristics and does not alter the molecular composition of the AIS
+![Figure 3.](https://cdn.elifesciences.org/articles/87078/elife-87078-fig3-v3.jpg)
+
+**Figure 3.:** (A) Cryosection of hippocampal CA3 alveus from an ank-G-GFP × CaMKIIa-Cre mouse, highlighting ank-G-GFP+-node of Ranvier (noR, green circles) and ank-G-GFP–, but ankyrin-G + and Nav1.6+-noR (blue circles) in excitatory neurons. Magnification of the region demarked by a white box is shown in inverted black & white panels. All noR express ankyrin-G (middle) and Nav1.6 (left), but only those belonging to CaMKII + neurons express the ank-G-GFP construct (right). (B) Cryosection of neocortical white matter from an ank-G-GFP × CaMKIIa-Cre mouse, highlighting ank-G-GFP+-noR (green arrowhead). Ankyrin-G immunoreactivity (blue arrowheads) is seen in both nodes in the image. Caspr is expressed in paranodal regions of both noR (magenta arrowheads). (C) Quantification of the length of noR using the ankyrin-G signal in control (gray) and ank-G-GFP+ neurons (green) in cortical white matter of ank-G-GFP × CaMKIIa-Cre mice shows no difference between the groups (unpaired t-test, n=255 nodes in nine images from three animals). Scale bars A=20 µm, panels in A=2 µm; B=2 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87078/elife-87078-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Top panel shows a cryosection of neocortical white matter from an ankyrin-G-GFP × CaMKIIa-Cre mouse, with GFP + and GFP- nodes of Ranvier (noR; see Figure 3A for details). The bottom panel shows an automated 3D reconstruction of noR using Imaris. Nodes were identified via the ankyrin-G channel, classified by the GFP channel, and properties were analyzed in Nav1.6 and ankyrin-G channels. All steps were automated within the Imaris software. Scale bar = 5 µm. (B) Nodes that are GFP + or GFP- show no differences regarding their length, ellipticity, and median fluorescence intensity of ankyrin-G or Nav1.6 signals (n=141 GFP- nodes, 91 GFP + nodes, one animal, Mann-Whitney U test, graphs use Tukey whiskers and 95% conficence intervals). (C) Top panel: The fluorescence intensity of the sodium channel Nav1.6 did not correlate with ankyrin-G-GFP fluorescence intensity, indicating unchanged levels of sodium channels. Bottom panel: The intensity of GFP fluorescence correlates positively with the levels of all ankyrin-G in GFP + but not GFP- nodes (n as in B; Pearson correlation details in the graph). This demonstrates that ankyrin-G-GFP does not change the Nav1.6 channel fluorescence intensity and provides a reliable predictor of ankyrin-G levels, though we do not exclude the possibility that native unlabeled ankyrin-G remains in the nodes to some degree.
+
+### Ank-G-GFP expression preserves axonal characteristics and does not alter the molecular composition of the AIS
 
 The AIS and its niche are characterized by a number of intra- and extracellular components contributing to its unique structure and function (Leterrier, 2018). To investigate whether the fusion of GFP to endogenous ankyrin-G has any impact on core AIS features, we selected additional targets for immunolabeling (Figures 4 and 5) and compared whether they are affected by the GFP modification. We found that the length and distance of AIS (measured by βIV-spectrin signal) did not differ between neighboring GFP+ and GFP- CA1 pyramidal cells (Figure 4—figure supplement 1A). Length measurements using the live ankyrin-GFP label in combination with post-fixed ankyrin-G or βIV-spectrin of the same AIS showed a strong correlation with one another (Figure 4—figure supplement 1B–C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87078/elife-87078-fig4-v3.jpg)
+
+**Figure 4.:** (A) Merged image of layer II/III pyramidal neurons in S1 of an ank-G-GFP × CaMKII-Cre mouse with intrinsic ank-G-GFP (green), co-labeled against βIV-spectrin (blue) and Nav1.6 (magenta). Bottom: Inverted black & white image of the ank-G-GFP (left) and Nav1.6 (right) signal in a single axon initial segment (AIS) (arrow in merged image). (B) Merged image of layer II/III pyramidal neurons in S1 of an ank-G-GFP x CaMKII-Cre mouse with intrinsic ank-G-GFP (green), co-labeled against Kv2.1 (magenta) and NeuN (blue). Bottom: Inverted black & white image of the ank-G-GFP (left) and Kv2.1 (right) signal in a single AIS (arrow in merged image). (C) Merged image of a layer V pyramidal neuron in S1 of an ank-G-GFP × CaMKII-Cre mouse with intrinsic ank-G-GFP (green), co-labeled against neurofascin-186 (magenta) and NeuN (blue). Bottom: Inverted black & white image of the ank-G-GFP (left) and NF-186 (right) signal in a single AIS (arrow in merged image). (D) Merged image of layer II/III pyramidal neurons in S1 of an ank-G-GFP × CaMKII-Cre mouse with intrinsic ank-G-GFP (green), co-labeled against TRIM46 (magenta) and ankyrin-G (blue). Bottom: Inverted black & white image of the ank-G-GFP (left) and TRIM46 (right) signals in a single AIS (arrow in merged image). (E) Merged image of layer II/III pyramidal neurons in S1 of an ank-G-GFP × CaMKII-Cre mouse with intrinsic ank-G-GFP (green), co-labeled against FGF14 (magenta) and NeuN (blue). Bottom: Inverted black & white image of the ank-G-GFP (left) and FGF14 (right) signal in a single AIS (arrow in merged image). All scale bars = 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87078/elife-87078-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Measurements of length and position of AIS in CA1 pyramidal neurons that are either GFP positive (green) or negative (orange). The inclusion of GFP into the ankyrin-G gene does not significantly change AIS length (left panel) or distance to the soma (right panel). AIS measurements were based on the βIV-spectrin signal (n=3 animals). An independent Thy1-GFP control line (gray, n=3 animals) was used as an additional control. The number of individual AIS (white circles) and p-values are given within the graph (t-test for AIS length; Mann-Whitney U-test for AIS distance, graph uses Tukey whiskers). (B) Correlation of AIS lengths measured live via the ankyrin-G-GFP signal in a patch clamp chamber (gray) and post-fixation using antibodies against GFP, ankyrin-G, and βIV-spectrin in CA1 pyramidal neurons (sample preparation as in Figure 7, n=20 AIS, 1 animal). (C) Alternative visualization of data from panel B (post-fixation). Measurements for AIS signals using antibodies against the GFP, ankyrin-G, and βIV-spectrin show comparable lengths. (D) Immunosignals from Nav1.6 channels retain their fluorescence intensity across the AIS after the expression of ankyrin-G-GFP. AIS length was normalized from start to end of the ankyrin-G signal and fluorescence intensity from lowest to highest. Tissue preparation as described in Figure 4A (n=10 GFP +and 10 GFP- AIS). (E) Line plots of Kv2.1 and GFP fluorescence intensities along the AIS signal indicate no change in Kv2.1 expression. Normalization as in panel D. Shaded areas indicate 95% conficence intervals derived from bootstrapping. Tissue preparation as described in Figure 4B (n=10 GFP + and 10 GFP- AIS).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87078/elife-87078-fig5-v3.jpg)
 
@@ -99,7 +115,7 @@ Another hallmark of the AIS is its axo-axonic innervation pattern, which we test
 
 A further characteristic of the AIS is its occasional ensheathing in microglial processes, which is the case for approximately 4% of all AIS in rodent cortex (Baalman et al., 2015). We, therefore, performed immunostaining against the microglial marker Iba1 in ank-G-GFP × CaMKII mice and found scarce, but clearly distinguishable interaction of select GFP+ AIS with microglial processes in S1 layer II/III pyramidal neurons (Figure 5C). In those cases, the majority of the microglial cell body was in contact with the soma of a pyramidal neuron and extended one or more processes alongside the AIS towards its distal end (Figure 5C).
 
-## The AIS nanostructure is maintained after GFP fusion to ankyrin-G
+### The AIS nanostructure is maintained after GFP fusion to ankyrin-G
 
 The nanostructure of the AIS scaffold in cortical neurons exhibits a stereotypical subcellular organization, in which a periodic spacing of actin and spectrin rings intercalates with voltage-gated ion channels at approximately 170–190 nm distance, depending on the cell type studied (Leterrier et al., 2015; Schlüter et al., 2019; Akter et al., 2020). Both concentration and spatial arrangement of ion channels are thought to be crucial for AP generation and modulation (Lazarov et al., 2018; Hu et al., 2009; Inda et al., 2006; Kress et al., 2010) and, therefore, constitute a hallmark of excitable neuronal microdomains such as the AIS.
 
@@ -109,7 +125,7 @@ Here, we aimed to verify that the introduction of GFP into this scaffold did not
 
 **Figure 6.:** (A) Left: Representative fluorescence image of dissociated hippocampal neurons in vitro, transduced either with lentivirus expressing recombination-deficient ΔCre fused to nuclear GFP (magenta arrowhead) or with Cre-recombinase fused to nGFP (green arrowhead). Right: STED images of AIS labeled with intrinsic GFP detected by the FluoTag-X4-GFP nanobody (green) and by an antibody against the C-terminus of ankyrin-G (magenta). Scale bars left and middle = 10 µm, right = 1 µm. Note, the nuclear GFP signal is derived from the virus and not the ank-G-GFP label. (B) Representative STED images of the nanoscale organization of the C-terminus of ankyrin-G (left), βVI-spectrin (middle), and Kv1.2 (right) in neurons infected with either ΔCre (top) or Cre virus (bottom panels). AIS shown in (B) (left bottom panel) is the same as the dual color panel A (right panel). Scale bars = 1 µm. (C) Autocorrelation analysis shows the characteristic ~190 nm periodic organization of the proteins imaged in (B). Note how the periodicity of the ank-G-GFP matches the periodicity of the C-terminus of ankyrin-G in all conditions. (D) Autocorrelation amplitude analysis of ankyrin-G and ankyrin-G-GFP (left panel), βIV-spectrin (middle panel), and Kv1.2 (right panel) is not statistically different in cultures treated with ΔCre, +Cre, or untreated (one-way ANOVA). Ank-G-GFP data (green) indicates the signal of the GFP label itself. For +Cre conditions, only GFP +AIS were used for analysis.
 
-## Cellular excitability is not affected by GFP fusion to ankyrin-G
+### Cellular excitability is not affected by GFP fusion to ankyrin-G
 
 In order to utilize the ank-G-GFP line to study electrophysiological consequences associated with AIS function and plasticity, we verified that the fusion protein itself does not change the basic excitatory properties of ank-G-GFP+ neurons in different systems. Therefore, we investigated whether cells expressing the fusion protein exhibit different electrophysiological properties as compared to wild-type cells. We used two common model systems: (i) dissociated hippocampal neurons infected either with Cre recombinase or a recombination-deficient ΔCre virus (Figure 7A and B), and (ii) hippocampal neurons in acute slices of adult mice that were generated from the ank-G-GFP x CaMKII-Cre matings. These were compared to acute slices from both ank-G-GFP littermate controls not exposed to Cre, and standard wild-type C57Bl/6 J mice (Figure 7C and D).
 
@@ -121,7 +137,7 @@ In dissociated hippocampal neurons, we first determined passive membrane propert
 
 The same electrophysiological parameters were tested in ex vivo hippocampal acute slices from three groups: (i) wild-type mice, (ii) ank-G-GFP mice without Cre exposure, and (iii) ank-G-GFP x CamKII-Cre mice (Figure 7C and D). We found no evidence of an impact of the GFP fusion protein on any of the investigated passive and active properties (Figure 7C and D, Supplementary file 1A).
 
-## Ank-G-GFP+ AIS undergo structural plasticity after changes in network state in vitro and ex vivo
+### Ank-G-GFP+ AIS undergo structural plasticity after changes in network state in vitro and ex vivo
 
 Previous post-hoc studies of AIS plasticity indicated that the AIS scales its length, and sometimes position, in response to changes in network activity (reviewed in Jamann et al., 2018). Using the new live reporter, we tested whether the same principles apply to ank-G-GFP+-AIS. We employed previously reported experimental conditions of network alterations Jamann et al., 2021; Grubb and Burrone, 2010; Engelhardt et al., 2018 to elicit structural AIS changes ex vivo (Figure 8A). To that end, hippocampal OTC were prepared from ank-G-GFP mice at P4 and transfected with an AAV pmSyn1- EBFP-Cre virus at DIV 1 to trigger GFP expression.
 
@@ -135,7 +151,7 @@ AIS plasticity is proposed as a homeostatic mechanism (Wefelmeyer et al., 2016; 
 
 AIS shortening after increased network activity occurs in a rapid time frame (1 hour) and is bidirectional with a return to baseline after an initial length change (Jamann et al., 2021). To test whether rapid AIS plasticity could be observed live in ank-G-GFP mice, we applied a different strategy. Ank-G-GFP mice were injected with an AAV5-CaMKIIa-Cre virus triggering Cre expression in a subset of hippocampal pyramidal neurons (Figure 8E). After 3 wk of virus expression, stable ank-G-GFP signals were detected in a subset of pyramidal neurons using epifluorescence in acute slices. Using pipette application of 15 mM KCl targeting individual neurons, we observed rapid changes in fluorescent signals based on the intrinsic GFP (Figure 8E). Direct application of high potassium resulted in a relative length reduction only of the AIS associated with the affected neuron, while all surrounding labeled AIS maintained their initial length (n=4 pairs of sample and control AIS; 10 min Ctrl vs KCl: p=0.0068; 20 min Ctrl vs KCl: p=0.0045; 30 min Ctrl vs KCl: p=0.0130; paired t-tests, Figure 8E). Interestingly, within minutes of the KCl application to the axon hillock, we observed the partial disappearance of the proximal onset of an individual AIS (Figure 8E, insets). This was quite striking since the majority of previous studies on this topic could only access AIS length and position changes in a post-hoc manner and never in the same cell. Using patch-clamp recordings, we verified that neurons tolerate and survive the treatment in the respective time frame. We here demonstrate that actual structural AIS changes do occur rapidly within 10 min and that they can be visualized and monitored within the same neuron.
 
-## Live imaging of ank-G-GFP+-AIS in vivo reveals long-term stability of AIS length
+### Live imaging of ank-G-GFP+-AIS in vivo reveals long-term stability of AIS length
 
 As outlined above, previous studies investigating AIS plasticity relied on post-hoc analysis in fixed sections. We conducted the ultimate test of the ank-G-GFP reporter using live cell imaging in intact animals in a longitudinal approach.
 
@@ -165,55 +181,55 @@ In summary, we here provide a novel reporter mouse model for the next generation
 
 ## Materials and methods
 
-## Generation of mouse line
+### Generation of mouse line
 
 We used the Flip-excision (FLEx) system (Schnütgen et al., 2003) to introduce a conditional GFP-tag into the final exon of ankyrin-G, the major scaffolding protein of the AIS (Figure 1A; Leterrier, 2018). A FLEx cassette containing the last exon of Ank3 (ENSMUSE00001313132, exon 42) followed by a copy of the last exon of Ank3 fused with the coding sequence for eGFP in the reverse orientation was generated using standard molecular methods. The entire cassette was flanked by alternating loxP and lox2272 sites. In the presence of Cre recombinase, the cassette orientation is irreversibly flipped by sequential recombination and excision of two of the lox sites (Figure 1B). The result is the expression of an ankyrin-G-GFP fusion product from the endogenous locus only in cells expressing Cre recombinase (Figure 1B). The linker sequence between Ank3 and GFP is the same sequence used in previously described 190-, 270-, and 480-kDa ankyrin-G-GFP plasmids (Kole and Stuart, 2012; Jenkins et al., 2015; Kizhatil and Bennett, 2004; Zhang and Bennett, 1998). Importantly, these ankyrin-G-GFP fusion products have been able to rescue all functions of ankyrin-G tested to date, suggesting that the addition of GFP to the ankyrin-G carboxy-terminus does not affect ankyrin function (Jenkins et al., 2015; Tseng et al., 2015; Kizhatil and Bennett, 2004; Zhang and Bennett, 1998; He et al., 2014; He et al., 2012; Jenkins et al., 2013). A neomycin resistance cassette, driven by the phosphoglycerate promoter (PGK-neo) and flanked by flippase recognition target (FRT) sites, was inserted between exon 42 and the 5’ LoxP site. The linearized construct was introduced into 129X1/SvJ ES cells by electroporation, and G418-resistant clones were screened using polymerase chain reaction (Figure 1C). One of the primers was anchored outside of the 5’ homology arm to allow the detection of the FLEx cassette within the correct chromosomal location. ES cells selected for the presence of the FLEx cassette using G418 were injected into C57BL/6NHsd blastocysts. A high percentage of chimeric animals were obtained and bred to C57BL/6NHsd mice to produce heterozygous animals. Mutant mice were backcrossed to C57BL6/J mice (Jackson Laboratory) and were compared to C57BL6/J mice as WT controls. These mice have been deposited at the Jackson Laboratory (B6;129S6-Ank3tm1Pmj/J, JAX strain # 038118).
 
-## Genotyping
+### Genotyping
 
 To confirm correct genotypes, ear punch biopsies were derived from adult breeding animals and tail cuts from all pups used for OTC preparation, using standard PCR procedures. Tissue samples were digested (25 mM NaOH, 0.2 disodium EDTA), centrifuged for 1 min at 14,000 rpm, and incubated at 95° C. After addition of 40 mM Tris-HCl and subsequent centrifugation at 14,000 rpm for 2 min, DNA was amplified from gDNA using the forward primer JDH71 AG-GFP-F 5’CTACAACCAATGGGGATCGTTAAC’3 and reverse primer JDH72 AG-GFP-R 5’TTAGGAAGGAGAAATGGGTGAGAG3’.
 
-## Surgical procedures
+### Surgical procedures
 
-## Viruses and Cre-driver lines
+#### Viruses and Cre-driver lines
 
 All Cre viruses, Cre driver lines, and controls used in this study are summarized in Supplementary file 1B.
 
-## Stereotaxic injection
+#### Stereotaxic injection
 
 Virus injections were performed following the protocol outlined in Rozov et al., 2020. Mice received injections of 200–300 nl virus solution (Supplementary file 1B) into the ventral hippocampus [anteroposterior (AP), –2.4 mm; mediolateral (ML), ± 2.6 mm; dorsoventral (DV), −3.6–4.0 mm], 70–200 nl into the dorsal hippocampus [AP, −2 mm; ML, ± 2 mm; DV, –2.9–2.5 at a rate of 200 nl/min], 200 nl into prefrontal cortex [AP, 1.96 mm; ML, –0.35 mm; DV, –2.0 mm] or 300 nl into the primary motor cortex [AP, 0.3 mm; ML, –1.5 mm; DV, –0.7 mm]. After surgery, the animals were monitored during recovery and returned to their home cages. Virus expression and recovery were ensured for 3 wk, before perfusion or implantation of cranial windows.
 
-## GRIN lens implantation
+#### GRIN lens implantation
 
 For deep brain imaging, 1 wk after virus injection, a gradient refractive index (GRIN) lens (diameter: 0.6 mm; length: 7.3 mm, 1050-004597, Inscopix) was implanted during a second surgery (systemic analgesia (30 min pre-surgery): buprenorphine (0.1 mg/kg); local analgesia: Lidocaine (10 mg/kg) and Ropivacaine (Naropin, 3 mg/kg); anesthesia: isofluorane (5% induction, 1.5-2% maintenance); subcutaneous post-operative analgesia: Metacam (5 mg/kg)). A 0.8 mm diameter craniotomy was drilled (Kyocera) above the basolateral amygdala (BLA) and a small track was cut with a 0.7 mm sterile needle (22G, Terumo). The GRIN lens was then slowly advanced into the brain [AP, –1.74; ML, −3.57; DV, −4.3 mm], fixed to the skull with light curable glue (Loctite 4305, Henkel), and the skull was sealed with Scotchbond (3 M), Vetbond (3 M) and dental acrylic (Paladur, Kulzer). A stainless-steel head bar (custom-made) was attached to fix the animal during the two-photon imaging sessions.
 
-## Cranial window implantation
+#### Cranial window implantation
 
 For the motor cortex imaging, 1 wk after the viral injection, a glass window was implanted above the left motor cortex (anesthesia and analgesia, see above). A craniotomy was drilled above the motor cortex using a dental drill (OmniDrill35, 503599, World Precision Instruments; burr drill bit: C1.104.002, Bösch Dental GmbH). Next, a circular coverslip was gently placed in the craniotomy and the edge of the coverslip was sealed with dental cement (C&B Super-Bond, Sun Medical). A stainless head bar was attached next to the glass window to fix the animal during the imaging sessions.
 
-## Culture and slice preparation
+### Culture and slice preparation
 
-## Preparation of dissociated hippocampal neurons
+#### Preparation of dissociated hippocampal neurons
 
 Cultures of dissociated mouse hippocampal primary neurons were prepared from postnatal P0-P1 ank-G-GFP mice of either gender and cultured on glass coverslips coated with 100 µg/mL poly-ornithine (Merck KGaA) and 1 µg /mL laminin (BD Biosciences). Cells were grown in the presence of 1-β-D-Arabinofuranosyl-cytosin (Merck KGaA) at 37°C and 5% CO2. Cultures were transduced with lentiviruses at 4-6 d in vitro (DIV) and processed for immunostaining at DIV 19.
 
-## Preparation of organotypic tissue cultures
+#### Preparation of organotypic tissue cultures
 
 Hippocampal organotypic tissue cultures (OTC) were prepared from ank-G-GFP animals of both genders according to previously published protocols [68]. Briefly, P4-5 old mice were decapitated and brains were explanted in preparation medium (94% Minimum Essential Medium (MEM, Thermo Scientific), 25% HEPES 1M buffer (Thermo Scientific), 10% GlutaMAX (Thermo Scientific), 10% Glucose (Sigma), 0.1 mg/ml Penicillin/Streptomycin (Sigma)), maintained at ~17° C. The cerebellum was removed and discarded to leave the neocortex, hippocampus, and connecting areas intact. Tissue blocks were mounted on a sliding vibratome (Leica) and cut horizontally at 300 µm. Slices were transferred to a fresh petri dish containing preparation medium and hippocampi with a part of neocortex were dissected out from surrounding tissue. One brain yielded approximately six OTC, three of which were then placed onto Millicell membrane inserts (Millipore/Merck) in six-well tissue culture plates containing 1 ml pre-warmed culture medium (42% MEM, 25% Basal Medium Eagle; Thermo Scientific), 25% Normal Horse Serum, heat-inactivated (Thermo Scientific), 25 mM HEPES buffer, 2 mM GlutaMAX, 0.15% NaHCO3, 0.65% Glucose, 0.1 mg/ml Penicillin/Streptomycin. OTC were maintained at 35° C in 5% CO2. 500 µl culture Medium was exchanged every 2 to 3 d.
 
 For AIS plasticity experiments, OTC were treated with either 6 mM KCl (Sigma) to achieve chronic stimulation, or 10 mM MgSO4 (Sigma) to decrease spontaneous electrical activity.
 
-## Preparation of ex vivo acute slices
+#### Preparation of ex vivo acute slices
 
 After decapitation of the anesthetized animal, the brain was quickly removed and transferred to 4°C cold, carbogen buffered (95% O2, 5% CO2 at pH 7.4) artificial cerebrospinal fluid (ACSF) containing the following (in mM): 124 NaCl, 3 KCl, 1.8 MgSO4, 1.6 CaCl2, 10 glucose, 1.25 NaH2PO4, 26 NaH2CO3 with an osmolarity of 295 mOsm. The first third of the frontal brain and the cerebellum were removed. Horizontal brain slices were cut at 300 µm using a VT1000s or VT1200s Vibratome (Leica). The cutting solution contained (in mM): 140 potassium gluconate, 10 HEPES, 15 sodium gluconate, 0.2 EGTA, and 4 NaCl adjusted to pH 7.2 using KOH. Before recording, slices were incubated for 30 min in carbogen-buffered ACSF at 34°C for recovery and then kept at room temperature (~22°C) for at least 30 min before the start of experiments. For patch-clamp recordings, individual slices were moved into a submerged type recording chamber, restrained by a platinum-weighted harp, and constantly perfused with ACSF at room temperature (~22°C) at flow rates of ~3 ml/min.
 
-## Staining procedures and histology
+### Staining procedures and histology
 
-## Antibodies
+#### Antibodies
 
 All antibodies used in this study are summarized in Supplementary file 1C, including sources, specificity testing, and fixation protocols. Fixation and blocking reagents for all immunofluorescence experiments are summarized in Supplementary file 1D.
 
-## Immunofluorescent staining
+#### Immunofluorescent staining
 
 In this study, immunofluorescence was performed on (i) isolated hippocampal neurons, (ii) OTC, (iii) ex vivo acute brain slices, (iv) whole mount retina, and (v) cryosections from various brain regions. The basic staining protocol is the same for all tissue types, with a small adaptation of fixative, fixation times, and blocking buffer outlined in Supplementary file 1D.
 
@@ -223,13 +239,13 @@ Acute slices, OTC, and tissues were fixed with 2 or 4% paraformaldehyde (PFA) at
 
 After fixation, all samples were incubated in blocking solution (Supplementary file 1D) and incubated in primary antibodies over night at 4°C (exception: whole-mount retina, incubation in primary antibodies for 48 hr). After intensive washing (at least 3 × 10 min in PBS), samples were incubated in secondary antibodies for at least 2 hr in the dark. After 4 × 10 min washing in PBS, samples were mounted on glass coverslips using a water-based embedding medium with antifade properties (all immunostainings except for STED: Roti-Mount, Carl Roth, Karlsruhe, Germany; STED: Mowiol supplemented with DABCO, Merck, Darmstadt, Germany). All antibodies used in this study were previously verified and tested for specificity as outlined in Supplementary file 1C. In addition, negative controls were conducted for all stainings and consisted of omission of the primary antibodies; secondary antibodies regardless of the species they were directed against did not produce any signals. All samples were stored at 4°C until imaging.
 
-## Data acquisition, analysis, and statistics
+### Data acquisition, analysis, and statistics
 
-## Laser scanning confocal microscopy
+#### Laser scanning confocal microscopy
 
 Confocal analysis was carried out either on a C2 Nikon confocal microscope (Nikon Instruments) equipped with a 60x objective oil immersion, 1.4 numerical aperture (NA), or a SP5 2MP (Leica Instruments) equipped with a 60x objective (Oil, 1.4 NA). Laser adjustments were optimized for each staining to achieve optimal signal-to-noise ratios. To increase the number of in-focus immunoreactive structures in some experiments, stacks of images were merged into a maximum intensity projection and saved as JPEG and TIF format. The thickness of single optical sections was 0.5 µm in stacks of at least 5-10 µm total depth and 0.25 µm in stacks of at least 2-5 µm, respectively. Representative images in all figures were optimized for contrast and brightness in Photoshop (Adobe).
 
-## In vivo two-photon imaging
+#### In vivo two-photon imaging
 
 Somatosensory cortex: Implantation of cranial windows and two-photon imaging were performed following the protocol provided in Knabbe et al., 2018. Mice were single-housed after surgery and typically imaged starting 21 d after surgery. Two-photon imaging was performed with a TriMScope II microscope (LaVision BioTec GmbH) equipped with a pulsed Ti:Sapphire laser (Chameleon; Coherent). The ank-G-GFP signal was imaged at 920 nm wavelength using a 25x water immersion objective (Nikon, NA = 1.1). Anesthetized imaging sessions lasted no longer than 1 hr.
 
@@ -237,32 +253,32 @@ BLA and motor cortex: Two-photon images were acquired by combining two channels,
 
 After acquisition, the images of each channel were merged and averaged to create dual-color images using ImageJ (Version: 2.0). 3D reconstructions of dual-color z-stacked images were created using the 3D Viewer plugin of ImageJ. Signal intensities in both green and red channels were adjusted in ImageJ for visualization purposes.
 
-## STED microscopy and image analysis
+#### STED microscopy and image analysis
 
 Dissociated hippocampal cell cultures of ank-G-GFP pubs were prepared at P0 and infected at 4-5 DIV with lentiviral nGFP-Cre or nGFP-ΔCre vectors (expression through CMV promotor). Cells were imaged on an Abberior easy3D STED/RESOLFT QUAD scanning microscope (Abberior Instruments). STED lasers were 595 nm and 775 nm; excitation lasers were 485 nm, 561 nm, and 640 nm. Autocorrelation analysis was performed on 2 µm long regions and the profiles from single cells were averaged as described previously (D’Este et al., 2017). Autocorrelation amplitude analysis compares the difference between autocorrelation values at 190 nm and an average of values at 95 nm and 285 nm, respectively.
 
-## 3D image reconstruction
+#### 3D image reconstruction
 
 Three-dimensional visualization of microglia, axon initial segments, and synaptopodin clusters were obtained by surface reconstruction of deconvoluted confocal images. All images were acquired under close to ideal sampling density according to the Nyquist rate and further processed by blind iterative deconvolution based on the optical properties of the microscope and the sample using AutoQuant X3 (Media Cybernetics). To render x-y-z information of individual objects, surface structures were reconstructed using Imaris 9.8 (Bitplane, Zurich) according to previously published protocols (Hanemaaijer, 2020). Briefly, surface borders for each structure of interest are generated using a pixel-based image segmentation method that is based on a seed point detection algorithm. Cellular and subcellular structures can be selectively reconstructed based on their respective fluorescence signal, intensity, and diameter.
 
-## AIS and noR length analysis
+#### AIS and noR length analysis
 
 Based on confocal images, AIS and noR length analysis was performed using a self-written software tool (AISuite; Roos and Engelhardt, 2020; Höfflin et al., 2017; Ernst, 2018). Loading the original bioformat file into the software enables complete visualization of the three-dimensional expansion of the AIS and noR. Measurements were conducted by drawing a line through the AIS into the somatic domain as well as into the distal section of the axon and through the node, respectively. The ROI is then straightened along its vectors through affine transformations. The resulting transformation represents an AIS and noR, respectively, with surrounding tissue, straightened along its axis. A normalized intensity profile for the image channels is then calculated. For AIS, we defined the beginning and end as the first and respectively the last pixel value over a threshold of 40 % of the normalized fluorescence. The physical dimensions were assessed by converting the pixel data with the help of the meta data present in the bioformat file (here: 0.21 µm = 1 pixel): For AIS, the distance to soma was calculated as the distance from the start of the traced line to the start of the AIS, length as the extending line to the distal AIS. In total, 50 AIS per OTC per preparation (animal) and condition were quantified.
 
 For noR, GFP+ and GFP- noR were randomly chosen within 6 areas of white matter out of different samples, selected only based on ankyrin-G expression. A total of n = 255 nodes in nine images from three animals were quantified. Length measurements of nodes were conducted using the ankyrin-G (Figure 3C) or Nav1.6 signal (Figure 3—figure supplement 1B).
 
-## Electrophysiological recordings
+#### Electrophysiological recordings
 
 In acute slices, CA1 pyramidal cells were visualized using an upright BX51 microscope (Olympus) with a 60x water-immersion objective (NA: 1.0). Recording electrodes were pulled using borosilicate glass on a Flaming/Brown P-97 Puller (Sutter Instruments) to yield a resistance of 3-6 MΩ. The electrode solution contained (in mM): 140 potassium gluconate, 3 KCl, 4 NaCl, 10 HEPES, 0.2 EGTA, 2 MgATP, and 0.1 Na2GTP (pH adjusted to 7.2, 288 mOsm). Ex vivo recordings were obtained in current-clamp mode with an ELC-03XS amplifier (NPI electronic). Signals were low-pass filtered at 3 kHz and digitized at 20 kHz using a Micros 1401MKII AC-converter (CED). Data were collected using the Signal 4.10 software (CED). Voltages were not corrected for the calculated liquid-junction potential of + 14.5 mV. Test pulses of –100 pA and 200 ms were applied regularly to control for changes in series resistance.
 
 In isolated cultures, cells at DIV 16-20 were patch-clamped in whole-cell current-clamp configuration with a potassium gluconate-based internal solution solution containing (in mM): 140 K-Gluconate, 1 MgCl2, 10 HEPES-NaOH, 0.5 EGTA, 2 MgATP, 0.5 Na2GTP, 10 Na-Phosphocreatin (pH adjusted to 7.4, 315 mOsm). The following extracellular solution was used (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 0.4 Ascorbic acid, 3 Myo-inositol, 2 Sodium Pyruvate, 1.25 NaH2PO4.2 H20, 2 CaCl2, 1 MgClv, 25 D(+)-glucose (pH 7.4, 315 mOsm). In vitro recordings were performed using 3-4 MΩ electrodes pulled using borosilicate glass on a P100 Narishige Puller. Electrophysiological recordings were performed using a Multiclamp 700B amplifier (Molecular Devices) controlled with Clampex 10.4 software (signals were low-pass filtered at 2.5 kHz and digitized with 250 kHz). Data were analyzed offline using Clampfit 10.4 and custom-written macros in IgorPro (Wavemetric). APs were triggered by current injection through the recording pipette (500 ms, 25 pA steps from –200 to + 400 pA). Waveform analysis was performed at the first AP that fired 30 ms after the start of the current injection.
 
-## Statistical analysis
+#### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 8 (GraphPad Software, USA). STED data was first subjected to a Grubbs test (OriginPro 2020) to identify outliers. Electrophysiology data were analyzed in Signal 4.10 (CED, UK), MATLAB (The MathWorks, USA), or Igor (WaveMetrics Inc, OR USA) using custom routines.
 
 Normally distributed data were tested by paired or unpaired t-tests (two groups) or ordinary one-way ANOVA followed by Tukey’s multiple comparison test. Non-normally distributed data were analyzed using the nonparametric Mann-Whitney test (two groups) or Kruskal-Wallis one-way ANOVA followed by Dunn’s multiple comparison test. Quantifications are given as median ± standard deviation. Box plots show median, 25%, and 75% percentiles (boxes). Significances are depicted in red font and as asterisks as follows: not significant (ns); p<0.05 (*); p<0.01 (**); p<0.001 (***).
 
-## Materials availability statement
+#### Materials availability statement
 
 Materials used in this study were obtained from commercial vendors, as detailed in Supplementary file 1, which includes full ordering information. The ank-G-GFP mouse line has already been distributed to multiple research laboratories. Researchers interested in accessing this mouse line are encouraged to contact the corresponding author for further details and availability. All images and electrophysiology files used in this study are openly available on Dryad.

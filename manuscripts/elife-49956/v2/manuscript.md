@@ -38,81 +38,161 @@ This paper originates from use of the in vitro Mu transposition system to genera
 
 ## Results
 
-## Mu mutagenesis of NRC4 reveals a short 29 amino acid N-terminal region that is sufficient for induction of HR cell death
+### Mu mutagenesis of NRC4 reveals a short 29 amino acid N-terminal region that is sufficient for induction of HR cell death
 
 The N-terminal CC domain of a subset of CC-NLR proteins can mediate self-association and trigger HR cell death when expressed on its own (Bentham et al., 2018). However, to date truncation experiments have been conducted based on educated guesses of domain boundaries (Maekawa et al., 2011; Casey et al., 2016; Cesari et al., 2016; Wróblewski et al., 2018). Moreover, one amino acid difference in the length of the assayed truncation can affect cell death inducing activity (Casey et al., 2016). Therefore, we designed an unbiased truncation approach using bacteriophage Mu in vitro transposition system to randomly generate a C-terminal deletion library of the helper NLR NRC4. By using a custom-designed artificial transposon (Mu-STOP transposon) that carries staggered translation stop signals at Mu R-end (Poussu, 2005), we targeted the full-length coding sequence of the NRC4 autoactive mutant, NRC4D478V, (referred to from here on as NRC4DV). We generated a total of 65 truncated NRC4DV::Mu-STOP variants and expressed these mutants in Nicotiana benthamiana leaves using agroinfiltration (Figure 1A). Remarkably, only a single truncate carrying the N-terminal 29 amino acids triggered visible cell death in N. benthamiana leaves (Figure 1B, Figure 1—figure supplement 1). To validate this phenotype, we expressed NRC4 N-terminal 29 amino acids (NRC41-29) fused with the yellow fluorescent protein (YFP) at the C-terminus in N. benthamiana leaves (Figure 2A). NRC41-29-YFP triggered a visible cell death response, although the cell death intensity was weaker than that of the full-length NRC4DV-YFP (Figure 2B–E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of the strategy for transposon-based C-terminal random truncation of NRC4 proteins. Hairpin Mu-STOP transposon and MuA proteins forming Mu transpososome were used for in vitro transposition into target plasmid. The truncation libraries (NRC4DV::Mu-STOP) were transformed into Agrobacterium for transient expression in N. benthamiana leaves. The tube, petri dish and syringe are not drawn to scale. (B) NRC41-29::Mu-STOP triggers cell death in N. benthamiana leaves. In total, 65 truncated variants of NRC4DV were expressed in N. benthamiana leaves, and the cell death activities are described as cell death induction (orange, HR+) and no visible response (blue, HR-).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The images were taken 7 days after agroinfiltration. ‘DV’, ‘WT’ and ‘TL’ describe autoactive NRC4DV mutant, wild-type NRC4 and the truncation library, respectively. Red characters indicate clones triggering HR in N. benthamiana leaves.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of wild-type NRC4-YFP (NRC4WT-YFP) and the variants used for the in planta expression assays. The colour code is: red represents NRC4 1 to 29 amino acid region. (B) NRC41-29-YFP triggers cell death in wild-type N. benthamiana leaves. NRC4WT-YFP, NRC4DV-YFP, NRC41-29-YFP and YFP were co-expressed with the gene silencing suppressor p19 and photographed at 7 days after agroinfiltration. (C, D) NRC41-29-YFP triggers cell death in N. benthamiana independently of endogenous NRC4. Leaves of two independent N. benthamiana nrc4a/b lines were used for agroinfiltration assays as described in B. (E, F, G) Anti-GFP immunoblots of NRC4WT-YFP, NRC4DV-YFP, NRC41-29-YFP and YFP expressed in N. benthamiana wild-type and nrc4a/b mutants. Total proteins were prepared from wild-type and nrc4a/b N. benthamiana leaves at 1 day after agroinfiltration. Given that the full-length NLRs accumulate at much lower levels than the shorter peptide, we showed different exposures as indicated by the black line. Red asterisks indicate expected band sizes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of sgRNA positions targeting NRC4a and NRC4b. The PAM motifs are marked in blue, and the sequences of sgRNAs are marked in red. (B) Genotyping results of selected T2 nrc4a/b plants. Sequences of the two sgRNA positions in NRC4a and NRC4b were confirmed by amplicon sequencing. ‘Percentage’ represents the proportion of Illumina reads belonging to each sequence category. (C) NRC4 knockout lines did not exhibit any growth defects when compared to wild type plants. Photographs of five weeks old wild type and nrc4a/b knock out N. benthamiana plants. (D) Schematic representation showing the genetic dependency of Rpi-blb2, Pto, and Rx on different NRCs according to previous finding with virus-induced gene silencing analysis (Wu et al., 2017). (E) Rpi-blb2-mediated HR cell death was compromised in the NRC4 knockout lines. Rpi-blb2/AVRblb2, Pto/AvrPto and Rx/CP were transiently expressed in leaves of wild type and nrc4a/b N. benthamiana according to the method described previously in Wu et al. (2017). The pictures were taken at 7 days after agroinfiltration.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic representation of NRC4DV-YFP, NRC41-29-YFP and the variants used for the in planta expression assays. Arrowheads show A206K mutation site in YFP. The red colour represents NRC4 1 to 29 amino acid region. (B, C) YFP A206K mutation reduces NRC41-29-YFP cell death in wild-type N. benthamiana leaves. NRC4DV-YFP, NRC41-29-YFP, YFP and the A206K variants were co-expressed with p19 and photographed at 7 days after agroinfiltration. Cell death-related autofluorescence was detected with Odyssey Infrared Imager (800 nm channel, LI-COR) (D) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01). (E) In planta accumulation of NRC proteins. For anti-GFP immunoblots of NRC4DV-YFP, NRC41-29-YFP, YFP and the mutant proteins, total proteins were prepared from wild-type N. benthamiana leaves at 36 hr after agroinfiltration. Red asterisks indicate expected band sizes.
 
 To determine whether NRC41-29-YFP requires the endogenous N. benthamiana NRC4 to trigger cell death, we expressed this fusion protein in two independent mutant nrc4a/b plants that carry CRISPR/Cas9-induced mutations in the two NRC4 genes NRC4a and NRC4b (Figure 2—figure supplement 1, see Materials and methods). In these plants, NRC41-29-YFP still induced cell death indicating that the activity of the N-terminal 29 amino acids of NRC4 is independent of a full-length NRC4 protein (Figure 2C–D and F–G).
 
 The CC domains of ZAR1 and maize Rp1 (RESISTANCE to PUCCINIA 1) are autoactive when expressed as a fusion protein with a fluorescent protein tag (Wang et al., 2015; Baudin et al., 2017). Given that YFP and related fluorescent proteins self-oligomerize (Kim et al., 2015), we hypothesized that such fluorescent proteins promote self-assembly of the N-terminal 29 amino acids of NRC4 resulting in hypersensitive cell death. To test this hypothesis, we modified YFP with the alanine 206 (A206) to lysine (K) mutation that reduces homo-affinity (Figure 2—figure supplement 2A) (Zacharias et al., 2002). The YFPA206K mutation compromised the cell death intensity of NRC41-29-YFP but not that of full-length NRC4DV (Figure 2—figure supplement 2B–E). This result indicates that YFP-mediated self-assembly is a key step in the capacity of NRC41-29-YFP to trigger hypersensitive cell death.
 
-## NRC4 carries N-terminal sequences that are conserved across distantly related CC-NLRs
+### NRC4 carries N-terminal sequences that are conserved across distantly related CC-NLRs
 
 Our finding that the N-terminal 29 amino acids of NRC4 are sufficient to trigger cell death prompted us to investigate the occurrence of this sequence across the plant NLRome. We first compiled a sequence database containing 988 putative CC-NLRs and CCR-NLRs (referred to from here on as CC-NLR database, Figure 3A, Figure 3—figure supplement 1) from six representative plant species (Arabidopsis, sugar beet, tomato, N. benthamiana, rice and barley) amended with 23 functionally characterized NLRs. Next, we extracted their sequences prior to the NB-ARC domain (Figure 3A). These sequences were too diverse and aligned poorly to each other to enable global phylogenetic analyses. Therefore, to classify the extracted N-terminal sequences based on sequence similarity, we clustered them into protein families using Markov cluster (MCL) algorithm Tribe-MCL (Enright et al., 2002) (Figure 3A). The 988 proteins clustered into 59 families of at least two sequences (tribes) and 43 singletons (Figure 3B). The largest tribe, Tribe 1, consists of 219 monocot NLRs, including MLA10, Sr33, Sr50, the paired Pik and Pia (RGA4 and RGA5) NLRs, and seven dicot NLRs notably RPM1 (Figure 3B). Tribe 2, the second largest tribe with 102 proteins, consists primarily of dicot proteins (93 out of 102) but still includes nine monocot NLRs. Interestingly, Tribe 2 grouped NRC-H proteins, including NRC4, with well-known CC-NLRs, such as ZAR1, RPP13, R2 and Rpi-vnt1.3 indicating that these proteins share similarities in their CC domains (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the different NLR domains used in TRIBE-MCL and phylogenetic analyses. (B) Distribution of plant NLRs across N-terminal domain tribes. The colour codes are: orange for dicot NLRs and blue for monocot NLRs. (C) NLRs from the same N-terminal tribe are dispersed across NLR phylogeny. The phylogenetic tree was generated in MEGA7 by the neighbour-joining method using the NB-ARC domain sequences of 988 CC-NLRs identified from N. benthamiana, tomato, sugar beet, Arabidopsis, rice and barley. Tribe 1 to Tribe 4 members are marked with different colours as indicated in each panel. Red arrow heads indicate bootstrap support >0.7 and is shown for the relevant nodes. The scale bars indicate the evolutionary distance in amino acid substitution per site. The full phylogenetic tree can be found in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** NLR proteins were predicted by NLR-parser from N. benthamiana (NbS-), tomato (Solyc-), Arabidopsis (AT-), sugar beet (Bv-), rice (Os-) and barley (HORVU-) proteomes, and were used for the MAFFT multiple alignment and phylogenetic analyses. The phylogenetic tree was constructed with the NB-ARC domain sequences in MEGA7 by the neighbour-joining method. Each leaf is labelled with different colour ranges indicating plant species. Well-supported TIR-NLR clade and NRC-superclade members are marked in blue and orange, respectively. The bootstrap supports (>0.7) are indicated as texts. The scale bar indicates the evolutionary distance in amino acid substitution per site.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The phylogenetic tree was constructed with the NB-ARC domain sequences of CC-NLRs as described in Figure 3—figure supplement 2—source data 2. Each leaf is labelled with different colour ranges indicating plant species. Well-supported NRC-superclade members are marked in orange. The bootstrap supports (>0.7) are indicated as texts. The scale bar indicates the evolutionary distance in amino acid substitution per site.
+
 We performed phylogenetic analyses of NLR proteins using the NB-ARC domain because it is the only conserved domain that produces reasonably good global alignments and can inform evolutionary relationships between all members of this family (Figure 3—figure supplement 2). We mapped individual NLR proteins grouped in Tribe-MCL N-terminal tribes onto a phylogenetic tree based on the NB-ARC domain (Figure 3C). These analyses revealed that the clustering of NLRs into the N-terminal tribes does not always match the NB-ARC phylogenetic clades (Figure 3C). In particular, NLRs in Tribe 1 and Tribe 2 often mapped to distinct well-supported clades scattered throughout the NB-ARC phylogenetic tree. We conclude that there are N-terminal domain sequences that have remained conserved over evolutionary time across distantly related CC-NLRs.
 
-## NRC4 and ZAR1 share the N-terminal MADA motif
+### NRC4 and ZAR1 share the N-terminal MADA motif
 
 Next, we investigated whether N-terminal domains of CC-NLRs carry specific sequence motifs. We used MEME (Multiple EM for Motif Elicitation) (Bailey and Elkan, 1994) to identify conserved patterns in each of the N-terminal domain tribes. MEME revealed several conserved sequence patterns in each of the four largest tribes (Figure 4—figure supplement 1). The previously reported sequence pattern, EDVID motif (Rairdan et al., 2008), was as expected predicted in ~87% to 96% in the four largest tribes (Figure 4—figure supplement 1). Within Tribe 2, a motif that is conserved at the N terminus of 87 of 102 proteins overlapped with the N-terminal 29 amino acids of NRC4 we identified as sufficient to cause cell death (Figure 4—figure supplement 1). Remarkably, the conserved sequence pattern of this very N-terminal motif matched the ZAR1 α1 helix that undergoes a conformational switch during activation of the ZAR1 resistosome (Wang et al., 2019b) (Figure 4A–B). In fact, 8 of the first 17 amino acids of ZAR1 are invariant in NRC4, and the majority of the amino acid polymorphisms between ZAR1 and NRC4 in the α1 helix region are conservative (Figure 4A). We conclude that NRC4, ZAR1 and numerous other CC-NLRs share a conserved N-terminal motif. We coined this sequence ‘MADA motif’ based on the deduced 21 amino acid consensus sequence MADAxVSFxVxKLxxLLxxEx (Figure 4A, Figure 4—figure supplement 2).
 
-## The MADA motif is primarily found in NLR proteins
+![Figure 4.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of a classical CC-NLR protein highlighting the position of the MADA motif. Consensus sequence pattern of the MADA motif identified by MEME along with an alignment of NRC4 and ZAR1. Red boxes refer to residues conserved over 45% in Tribe 2 NLRs. (B) A structure homology model of NRC4 based on ZAR1 resistosome illustrating the position of the MADA motif. Each of the modelled five monomers is illustrated in cartoon representation. The colour code is: red for the MADA motif. The grey box highlights the N-terminal α helices, which contain the MADA motif. (C) Distribution of the MADA motif in tomato (left) and Arabidopsis (right) proteomes following HMMER searches with the MADA motif HMM. The number of proteins in each HMM score bin is shown. NLR and non-NLR proteins are shown in blue and orange, respectively. The dashed line indicates the cut-off used to define the most robust MADA-CC-NLR. NLRs with scores < 10.0 were classified as MADA-like NLRs (MADAL-NLRs).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Consensus sequence patterns in N-terminal domains were identified by MEME from 226 Tribe 1, 102 Tribe 2, 83 Tribe 3 and 59 Tribe 4 members. Motif logos describe the N-terminal consensus patterns from proteins in each tribe, as highlighted in orange, and EDVID motif patterns, as shown in black boxes.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Consensus sequence of the MADA motif. The MADA motif logo was generated by MEME from 87 N-terminal domains of Tribe 2 members. (B) Graphical representation of the MADA HMM used to screen MADA-CC-NLR. The three most abundant amino acids at each position in the motif are shown by frequency and labelled with their one-letter code.
+
+### The MADA motif is primarily found in NLR proteins
 
 We built a Hidden Markov Model (HMM) from a sequence alignment of the MADA motif of 87 NLR proteins from Tribe 2. To determine whether the MADA motif is primarily found among proteins annotated as NLRs, we used the HMMER software (Eddy, 1998) to query the Arabidopsis and tomato proteomes using the MADA motif HMM. HMMER searches revealed that the MADA motif is mainly found in NLR proteins compared with non-NLR proteins (Figure 4C). An HMM score cut-off of 10.0 clearly distinguishes NLR proteins from others with 97.1% (34 out of 35) tomato proteins and 97.7% (42 out of 43) Arabidopsis proteins scoring over 10.0 being annotated as NLRs (Figure 4C). We conclude that the MADA motif is a sequence signature of a subset of NLR proteins and that a HMMER cut-off score of 10.0 is most optimal for high confidence searches of MADA containing CC-NLR proteins (MADA-CC-NLRs).
 
-## MADA-like sequences occur in the N-termini of about 20% of dicot and monocot CC-NLRs
+### MADA-like sequences occur in the N-termini of about 20% of dicot and monocot CC-NLRs
 
 To what extent does the MADA motif occur in plant NLRomes? We re-screened the CC-NLR database using HMMER and identified 103 hits (10.4%) over the cut-off score of 10.0 (Figure 5A–B, Figure 5—figure supplement 1A). We also noted that another 129 NLRs were positive but with a score lower than 10.0, and we tentatively termed these hits as MADA-like CC-NLRs (MADAL-CC-NLRs) (Figure 5B, Figure 5—figure supplement 1A). Most of the MADA hits are from dicot plant species whereas MADAL-CC-NLRs are primarily from monocots possibly reflecting a bias in our HMM profile which was built from the dicot enriched Tribe 2 (Figure 5C, Figure 5—figure supplement 1B). Indeed, the majority of MADA hits (85 out of 103) were from Tribe 2, which includes NRC4 and ZAR1, but some MADA hits were also from other Tribes, notably the rice helper NLR Pik-2 from Tribe 1 (HMM score = 10.4) (Figure 5C, Figure 5—figure supplement 1C). MADAL-CC-NLRs are mainly from Tribe 1 and Tribe 4 and include the monocot proteins MLA10 and Sr33, as well as Arabidopsis RPM1 (Figure 5C, Figure 5—figure supplement 1C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of a classical CC-NLR protein highlighting the regions used for HMMER searches (MADA-HMM) and for TRIBE-MCL. (B) Occurrence of MADA/MADAL-CC-NLRs in representative species of monocots and dicots. The frequency of MADA/MADAL-CC-NLRs for each plant species was calculated as a percentage of all predicted CC-NLR proteins. (C) Occurrence of MADA/MADAL-CC-NLRs in N-terminal domain tribes of CC-NLRs. (D) Position distribution of MADA/MADAL motif relative to the start codon position among the identified 103 MADA-CC-NLRs and 129 MADAL-CC-NLRs. The colour codes are: orange for MADA-CC-NLRs, blue for MADAL-CC-NLRs and grey for other NLRs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HMM score bar graph for CC-NLR database (988 proteins). MADA/MADAL-CC-NLRs from HMMER analysis are shown in orange and blue, respectively. (B) HMM score bar graph with plant species information. MADA/MADAL-CC-NLRs from dicot and monocot plant species are shown in orange and blue, respectively. (C) HMM score bar graph with N-terminal domain tribe information. MADA/MADAL-CC-NLRs in tribe 1–4 from Tribe-MCL analysis are shown in blue, red, green and pink, respectively. MADA/MADAL-CC-NLRs from the other N-terminal domain tribes are shown in grey.
 
 Given that the MADA sequence is at the very N-terminus of ZAR1 and NRC4, and that the N-terminal position of the ZAR1 α1 helix is critical for its function based on the model of Wang et al. (2019b), we checked the positional distribution of predicted MADA and MADAL motifs (Figure 5D). The majority of the predicted MADA and MADAL motifs (199 out of 232, 85.8%) occurred at the very beginning of the NLR protein. However, 4 of 103 of the predicted MADA- and 29 of 129 MADAL-CC-NLRs have N-terminal extensions over 15 amino acids prior to the motifs (Figure 5D). For example, the MADA motif is located at position 54 to 72 amino acids in the potato NLR Rpi-vnt1.3. Whether these exceptions reflect misannotated gene models or genuinely distinct motif sequences remains to be determined.
 
 In summary, our bioinformatic analyses revealed that 199 out 988 (20.1%) of the CC-NLRs of six representative dicot and monocot species contain a MADA or MADAL motif at their very N-termini. These MADA sequences have noticeable similarity to NRC4 and ZAR1.
 
-## NRC-dependent sensor NLRs (NRC-S) lack the MADA motif
+### NRC-dependent sensor NLRs (NRC-S) lack the MADA motif
 
 NB-ARC domain phylogenetic trees revealed that the NRC superclade is divided into the NRC clade (NRC-H) and a larger clade that includes all known NRC-dependent sensor NLRs (NRC-S) (Wu et al., 2017). We noted that even though the NRC-H and NRC-S are sister clades based on NB-ARC phylogenetic analyses, they grouped into distinct N-terminal domain tribes in the Tribe-MCL analyses (Figure 6A). Whereas all NRC-H mapped to Tribe 2, NRC-S clustered into eight different tribes (Figure 6A). This pattern indicates that unlike the NRCs, the N-terminal sequences of their NRC-S mates have diversified throughout evolutionary time.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig6-v2.jpg)
 
-**Figure 6.:** (A) Distribution of NRCs (NRC-H) and NRC-dependent sensors (NRC-S) across N-terminal domain tribes of CC-NLRs. Individual NLR members of the NRC superclade were classified based on phylogenetic analysis as described in Figure 3—figure supplement 2. The colour codes are: orange for the NRCs (NRC-H), blue for the NRC-sensors (NRC-S) and grey for other NLRs. (B) NRC-dependent sensors (NRC-S) do not contain the MADA motif. The phylogenetic tree of the 988 CC-NLRs described in Figure 3C is shown in the left panel with the NRC superclade marked by the grey lines. The NRC superclade phylogenetic tree is shown on the right panel and highlights the well-supported subclades NRC-H and the expanded NRC-S. The NRC-S clade is divided into NLRs that lack an N-terminal extension domain (NTD) prior to their CC domain and those that carry an NTD. MADA-CC-NLRs are highlighted in red in both trees. Red arrowheads mark bootstrap supports >0.7 in relevant nodes. The scale bars indicate the evolutionary distance in amino acid substitution per site. The full phylogenetic tree can be found in Figure 3—figure supplement 2. Schematic representation of domain architecture of the depicted classes of NLR protein is also shown similar to the other figures but with the ~600 amino acid NTD shown in yellow.Figure 6—source data 1.HMM scores are listed by IDs, N. benthamiana (NbS-), tomato (Solyc-) and sugar beet (Bv-) with Tribe-MCL result, the start (‘MADA_strat’) position of the MADA motifs and NRC clade information (‘NRC-H’ and ‘NRC-S’).
+**Figure 6.:** (A) Distribution of NRCs (NRC-H) and NRC-dependent sensors (NRC-S) across N-terminal domain tribes of CC-NLRs. Individual NLR members of the NRC superclade were classified based on phylogenetic analysis as described in Figure 3—figure supplement 2. The colour codes are: orange for the NRCs (NRC-H), blue for the NRC-sensors (NRC-S) and grey for other NLRs. (B) NRC-dependent sensors (NRC-S) do not contain the MADA motif. The phylogenetic tree of the 988 CC-NLRs described in Figure 3C is shown in the left panel with the NRC superclade marked by the grey lines. The NRC superclade phylogenetic tree is shown on the right panel and highlights the well-supported subclades NRC-H and the expanded NRC-S. The NRC-S clade is divided into NLRs that lack an N-terminal extension domain (NTD) prior to their CC domain and those that carry an NTD. MADA-CC-NLRs are highlighted in red in both trees. Red arrowheads mark bootstrap supports >0.7 in relevant nodes. The scale bars indicate the evolutionary distance in amino acid substitution per site. The full phylogenetic tree can be found in Figure 3—figure supplement 2. Schematic representation of domain architecture of the depicted classes of NLR protein is also shown similar to the other figures but with the ~600 amino acid NTD shown in yellow.
 
 Next, we mapped the occurrence of the MADA motif onto the NB-ARC phylogenetic tree and noted that the distribution of the MADA motif was uneven across the NRC superclade despite their phylogenetic relationship (Figure 6B). Whereas 20 out of 22 NRC-H have a predicted MADA motif at their N-termini, none of the 117 examined NRC-S were predicted as MADA-CC-NLR in the HMMER search (Figure 6B). In fact, 65 of 117 NRC-S, including the well know disease resistance proteins R1, Prf, Sw5b, Hero, Rpi-blb2 and Mi-1.2, have N-terminal extensions of ~600 amino acids, or more in the case of Prf, prior to their predicted CC domains (Figure 6B). These findings indicate the CC domains of NRCs and their NRC-S mates have experienced distinct evolutionary trajectories even though these NLR proteins share a common evolutionary origin.
 
-## MADA motif residues are required for NRC4 to trigger cell death
+### MADA motif residues are required for NRC4 to trigger cell death
 
 To experimentally validate our bioinformatic analyses, we performed site directed mutagenesis to determine the degree to which the MADA motif is required for the activity of NRC4. First, we followed up on the ZAR1 structure-function analyses of Wang et al. (2019b) who showed that three amino acids (phenylalanine 9 [F9], leucine 10 [L10] and leucine 14 [L14]) within the α1 helix/MADA motif are required for ZAR1-mediated cell death and bacterial resistance. We introduced a triple alanine substitution similar to the mutant of Wang et al. (2019b) into the autoactive NRC4DV and found that this L9A/V10A/L14A mutation significantly reduced, but did not abolish, NRC4DV cell death inducing activity (Figure 7A–C). Given that the MADA motif, particularly the mutated L9, V10 and L14 sites, is primarily composed of hydrophobic residues, we reasoned that substitutions with the negatively charged glutamic acid (E) would be more disruptive than hydrophobic alanine. Therefore, we substituted L9, V10 and L14 with glutamic acid, and observed that the L9E/V10E/L14E mutation resulted in a more severe disruption of the cell death activity of NRC4DV compared to the triple alanine mutant (Figure 7A–C). Both of the NRC4DV triple alanine and glutamic acid mutant proteins accumulated to similar levels as NRC4DV when expressed in N. benthamiana leaves indicating that the observed loss-of-function phenotypes were not due to protein destabilization (Figure 7D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of NRC4 and the mutated sites in the MADA motif. Mutated sites and substituted residues are shown as red characters in the NRC4 sequence alignment. (B) Cell death observed in N. benthamiana after expression of NRC4 mutants. N. benthamiana leaf panels expressing NRC4WT-6xHA, NRC4DV-6xHA, NRC43A/DV-6xHA and NRC43E/DV-6xHA were photographed at 5 days after agroinfiltration. (C) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s honest significance difference (HSD) test (p<0.01). (D) In planta accumulation of the NRC4 variants. For anti-HA immunoblots of NRC4 and the mutant proteins, total proteins were prepared from N. benthamiana leaves at 1 day after agroinfiltration. Empty vector control is described as EV. Equal loading was checked with Reversible Protein Stain Kit (Thermo Fisher).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic representation of NRC41-29-YFP, ZAR11-144-YFP and the variants used for the in planta expression assays. Arrowheads show triple alanine mutation sites in NRC41-29 and ZAR11-144. The colour code is: red represents NRC4 1 to 29 amino acid region. (B) L9, V10 and L14 triple mutation impairs NRC41-29-YFP cell death. Wild-type N. benthamiana leaves were inoculated with Agrobacterium strain including pTRBO::YFP, pTRBO::ZAR11-144-YFP, pTRBO::ZAR11-144F9A/L10A/L14A-YFP, pTRBO::NRC41-29-YFP or pTRBO::NRC41-29L9A/V10A/L14A-YFP and photographed at 7 days after agroinfiltration. Cell death-related autofluorescence was detected with Odyssey Infrared Imager (800 nm channel, LI-COR) (C) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01). (D) In planta accumulation of NRC proteins. For anti-GFP immunoblots of NRC41-29-YFP, ZAR11-144-YFP and the mutant proteins, total proteins were prepared from wild-type N. benthamiana leaves at 3 days after agroinfiltration. Red asterisks indicate expected band sizes.
 
 We further introduced the triple alanine mutation to NRC41-29-YFP and ZAR11-144-YFP (Figure 7—figure supplement 1A). ZAR11-144 matches the ZAR1 CC domain and is known to trigger cell death when expressed fused to a YFP tag (Baudin et al., 2017). The triple alanine mutation abolished the cell death triggered by both NRC41-29-YFP and ZAR11-144-YFP, supporting the view that MADA motifs are essential for the capacity of the N-termini of NRC4 and ZAR1 to cause cell death (Figure 7—figure supplement 1B–D).
 
 Next, we performed single alanine and glutamic acid mutant scans to reveal which other residues in the MADA motif are required for NRC4-mediated cell death. None of the tested single alanine-substituted mutants affected the cell death response of NRC4DV (Figure 8—figure supplement 1). In contrast, single glutamic acid mutations L9E, L13E and L17E essentially abolished the cell death activity of NRC4DV without affecting the stability of the mutant proteins (Figure 8). Therefore, we determined that the L9, L13, and L17 residues in the MADA motif are critical for cell death induction by NRC4.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic representation of NRC4 and the glutamic acid (E) mutant scan of the MADA motif. Mutated sites are shown as red characters in the NRC4 sequence. (B) Cell death observed in N. benthamiana after expression of NRC4 mutants. N. benthamiana leaf panels expressing NRC4WT-6xHA, NRC4DV-6xHA and the corresponding E mutants were photographed at 5 days after agroinfiltration. (C) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01). (D) In planta accumulation of the NRC4 variants. Immunoblot analysis was done as described in Figure 7D.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic representation of NRC4 and the alanine (A) mutant scan of the MADA motif. Mutated sites are shown as red characters in the NRC4 sequence. (B) Cell death observed in N. benthamiana after expression of NRC4 mutants. N. benthamiana leaf panels expressing NRC4WT-6xHA, NRC4DV-6xHA and the corresponding A mutants were photographed at 5 days after agroinfiltration. (C) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01). (D) In planta accumulation of the NRC4 variants. Immunoblot analysis was done as described in Figure 7D.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Cartoon representation of N-terminal α helices of NRC4 resistosome (zoom in grey box of Figure 4B). (B, C) N-terminal α helices are rotated 90 degrees and mutated amino acids are shown as stick representation and labelled.
+
 Finally, we mapped L9, L13 and L17 onto a homology model of the CC domain of NRC4 produced based on the ZAR1 resistosome structure of Wang et al. (2019b) (Figure 8—figure supplement 2). All three residues mapped to the outer surface of the funnel-shaped structure formed by the α1 helices similar to the previously identified residues in positions 9, 10 and 14. These results suggest that the outer surface of the funnel-shaped structure formed by N-terminal helices is critical not only for the function of ZAR1 but also for the activity of another MADA-CC-NLR.
 
-## NRC41-29-YFP forms MADA motif- and YFP-dependent puncta
+### NRC41-29-YFP forms MADA motif- and YFP-dependent puncta
 
 The ZAR1 model postulates that the resistosome translocates into the plasma membrane through the α1 helix which matches the MADA motif (Wang et al., 2019b). To investigate the intracellular dynamics of the MADA motif, we analysed the subcellular distribution of NRC41-29-YFP in N. benthamiana leaves (Figure 9A). Interestingly, unlike free YFP which typically shows nucleocytoplasmic distribution, NRC41-29-YFP produced fluorescence signal in punctate structures throughout the cell in addition to relatively weak nucleocytoplasmic signal (Figure 9A). Furthermore, we merged both the z-stack and single plain images of the YFP proteins with the plasma membrane marker RFP-Rem1.3 (Bozkurt et al., 2014). Although the NRC41-29-YFP puncta did not completely overlap with RFP-Rem1.3 signal, we noticed some of the NRC41-29-YFP puncta associated with the plasma membrane (Figure 9A–B).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig9-v2.jpg)
 
-**Figure 9.:** 1-29-YFP forms MADA- and YFP-dependent puncta.(A) Subcellular localization of NRC41-29-YFP and the mutant proteins in N. benthamiana epidermal cells. N. benthamiana leaves expressing YFP, YFPA206K, NRC41-29-YFP, NRC41-29-YFPA206K and NRC41-29L9E-YFP were imaged 2 days after agroinfiltration. (B) Single plain image of NRC41-29-YFP puncta. White dotted line indicates the tonoplast in N. benthamiana epidermal cell. White arrowheads point to NRC41-29-YFP puncta. Scale bars are 20 µm. (C) Quantification of puncta formation. The number of high intensity puncta was counted using maximum intensity Z-projection images from 12 independent observations. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01).
+**Figure 9.:** (A) Subcellular localization of NRC41-29-YFP and the mutant proteins in N. benthamiana epidermal cells. N. benthamiana leaves expressing YFP, YFPA206K, NRC41-29-YFP, NRC41-29-YFPA206K and NRC41-29L9E-YFP were imaged 2 days after agroinfiltration. (B) Single plain image of NRC41-29-YFP puncta. White dotted line indicates the tonoplast in N. benthamiana epidermal cell. White arrowheads point to NRC41-29-YFP puncta. Scale bars are 20 µm. (C) Quantification of puncta formation. The number of high intensity puncta was counted using maximum intensity Z-projection images from 12 independent observations. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01).
 
 To further study the NRC41-29-YFP puncta, we examined puncta formation of the YFP A206K mutant, which shows reduced cell death by NRC41-29-YFP (Figure 2—figure supplement 2). In contrast to NRC41-29-YFP, NRC41-29-YFPA206K rarely formed puncta (Figure 9A,C), suggesting that YFP self-assembly is required for NRC41-29-YFP puncta formation. Furthermore, introducing the L9E in NRC41-29-YFP greatly reduced puncta formation (Figure 9A,C). This finding directly connects puncta formation to the activity of full length NRC4 given that L9E also affects NRC4 cell death activity (Figure 8). Taken together, these results indicate that both an intact MADA motif and YFP oligomerization are required for the capacity of NRC41-29-YFP to form puncta as well as cause cell death in N. benthamiana leaves.
 
-## The α1 helix of arabidopsis ZAR1 and the N-termini of other MADA-CC-NLRs can functionally replace the N-terminus of NRC4
+### The α1 helix of arabidopsis ZAR1 and the N-termini of other MADA-CC-NLRs can functionally replace the N-terminus of NRC4
 
 Our observation that the ZAR1 α1 helix has sequence similarity to the N-terminus of NRC4 prompted us to determine whether this sequence is functionally conserved between these two proteins. To test this hypothesis, we swapped the first 17 amino acids of NRC4DV with the equivalent region of ZAR1 (Figure 10A–B). The resulting ZAR11-17-NRC4 chimeric protein can still trigger cell death in N. benthamiana leaves indicating that the MADA/α1 helix sequence is functionally equivalent between these two NLR proteins (Figure 10C, Figure 10—figure supplement 1).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig10-v2.jpg)
+
+**Figure 10.:** (A) Alignment of the N-terminal region of the MADA/MADAL-CC-NLRs. Key residues for cell death activity identified in Figure 8 are marked as red characters with asterisks in the sequence alignment. Each HMM score is indicated. (B) Schematic representation of NRC4 MADA motif chimeras with MADA, MADAL and non-MADA sequences from other CC-NLRs. The first 17 amino acid region of other MADA-CC-NLR (orange), MADAL-CC-NLR (purple) or non-MADA-CC-NLR (grey) was swapped into NRC4DV, resulting in the NRC4 chimeras with MADA/MADAL/non-MADA sequences originated from other NLRs. (C) Cell death phenotypes induced by the NRC4 chimeras. NRC4WT-6xHA, NRC4DV-6xHA and the chimeras were expressed in N. benthamiana leaves. Photographs were taken at 5 days after agroinfiltration.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Box plots showing cell death intensity scored as an HR index based on three independent experiments. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01). (B) In planta accumulation of the NRC4 variants. Immunoblot analysis was done as described in Figure 7D.
 
 Next, we swapped the same 17 amino acids of NRC4 with the matching sequences of the MADA-CC-NLRs NRC2 from N. benthamiana, RPP8 and RPP13 from Arabidopsis, and Pik-2 and Os03g30910.1 from rice, all of which gave HMMER scores > 10.0 and ranging from 30.8 to 10.4 (Figure 10A–B). All of the assayed chimeric NRC4DV proteins retained the capacity to trigger cell death in N. benthamiana leaves (Figure 10C, Figure 10—figure supplement 1). We determined whether the N-termini of MADAL-CC-NLRs Arabidopsis RPM1 and barley MLA10, which yielded respective HMMER scores of 9.3 and 7.8, could also replace the first 17 amino acids of NRC4DV (Figure 10A–B). Both NRC4DV chimeras retained the capacity to trigger cell death indicating that these MADAL sequences are functionally analogous to the NRC4 N-terminus (Figure 10C, Figure 10—figure supplement 1). These results indicate that the MADA motif is functionally conserved even between distantly related NLRs from dicots and monocots.
 
 We further swapped the 17 amino acids of NRC4DV with N-terminal sequences from Arabidopsis LOV1 (AT1G10920), pepper Bs2 and potato Rx, all of which were not predicted to have a MADA sequences by HMMER searches (Figure 10A–B). LOV1 was among the 13.7% of Tribe 2 NLRs that were not predicted to have a MADA/MADAL motif. Bs2 and Rx are NRC-S NLRs that belong to different tribes—Tribe 11 and 25, respectively (Figure 6A). The N-terminal sequences of Bs2 and Rx are somewhat similar to MADA sequences but were negative in the HMMER analyses (Figure 10A). Interestingly, whereas the N-termini of Bs2 and LOV1 did not complement the cell death activity when swapped into NRC4DV, Rx1-17 could confer cell death activity when swapped into NRC4DV (Figure 10C, Figure 10—figure supplement 1). This exception indicates that at least one of the N-terminal sequences that are not predicted as having the MADA motif may still functionally complement the N-terminus of NRC4.
 
-## ZAR1-NRC4 chimeric protein retains the capacity to confer Rpi-blb2-mediated resistance against the late blight pathogen Phytophthora infestans
+### ZAR1-NRC4 chimeric protein retains the capacity to confer Rpi-blb2-mediated resistance against the late blight pathogen Phytophthora infestans
 
 We investigated whether the MADA motif of NRC4 is required for disease resistance against the oomycete pathogen Phytophthora infestans. One of the NRC4-dependent sensor NLRs is Rpi-blb2, an NRC-S protein from Solanum bulbocastanum that confers resistance to P. infestans carrying the matching effector AVRblb2 (van der Vossen et al., 2003; Oh et al., 2009). For this purpose, we set up a genetic complementation assay in which NRC4 is co-expressed with Rpi-blb2 in leaves of the N. benthamiana nrc4a/b_9.1.3 mutant prior to inoculation with the P. infestans strain 88069 (Wu et al., 2017), that carries AVRblb2 (Figure 11A). Unlike wild-type NRC4, the NRC4 L9A/V10A/L14A and L9E mutants failed to rescue the resistance to P. infestans in the N. benthamiana nrc4a/b_9.1.3 mutant, indicating that MADA motif mutations not only impair HR cell death as shown above but also affect disease resistance against an oomycete pathogen (Figure 11B). We conducted similar complementation assays with the ZAR11-17-NRC4 chimera in which the first 17 amino acids of NRC4 were swapped with the equivalent region of ZAR1, and found that ZAR11-17-NRC4 complemented the nrc4a/b_9.1.3 N. benthamiana mutant to a similar degree as wild-type NRC4 (Figure 11B). These experiments further confirm that the α1 helix/MADA motif of Arabidopsis ZAR1 is functionally equivalent to the N-terminus of NRC4, and that the chimeric ZAR11-17-NRC4 is not only able to trigger HR cell death but also retains its capacity to function with its NRC-S mate Rpi-blb2 and confer resistance to P. infestans.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/49956/elife-49956-fig11-v2.jpg)
 
-**Figure 11.:** 1-17-NRC4 complements NRC4 function in Rpi-blb2-mediated resistance.(A) Schematic representation of NRC4 complementation assay for Rpi-blb2-mediated resistance. Wild-type and the variants of NRC4 were co-expressed with RFP-Rpiblb2 in wild-type or nrc4a/b_9.1.3 N. benthamiana leaves by agroinfiltration. The leaves were inoculated with droplets of zoospore suspension from P. infestans strain 88069 at 1 day after the agroinfiltration. The syringe and pipet are not drawn to scale. (B) Disease and resistance phenotypes on NRC4/Rpi-blb2-expressed leaves. Images were taken under UV light at 7 days post inoculation. The lesion size (bottom panel) was measured in Fiji (Fiji Is Just ImageJ). Experiments were repeated three times with totally 84 inoculation site each. The numbers on the photographs indicate the sum of spreading lesions/total inoculation sites from the three replicates. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01).
+**Figure 11.:** (A) Schematic representation of NRC4 complementation assay for Rpi-blb2-mediated resistance. Wild-type and the variants of NRC4 were co-expressed with RFP-Rpiblb2 in wild-type or nrc4a/b_9.1.3 N. benthamiana leaves by agroinfiltration. The leaves were inoculated with droplets of zoospore suspension from P. infestans strain 88069 at 1 day after the agroinfiltration. The syringe and pipet are not drawn to scale. (B) Disease and resistance phenotypes on NRC4/Rpi-blb2-expressed leaves. Images were taken under UV light at 7 days post inoculation. The lesion size (bottom panel) was measured in Fiji (Fiji Is Just ImageJ). Experiments were repeated three times with totally 84 inoculation site each. The numbers on the photographs indicate the sum of spreading lesions/total inoculation sites from the three replicates. Statistical differences among the samples were analysed with Tukey’s HSD test (p<0.01).
 
 ## Discussion
 
@@ -142,19 +222,106 @@ Plant NLRs can be functionally categorized into singleton, sensor or helper NLRs
 
 ## Materials and methods
 
-## Plant growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Nicotiana benthamiana)</td>
+      <td>NRC4-KO N. benthamiana (nrc4a/b_9.1.3 and nrc4a/b_1.2.1)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: Generation of N. benthamiana nrc4a/b CRISPR/Cas9 mutants</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM::Mu-STOP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: Mu-STOP in vitro transposition</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Mutation Generation System Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: F-701</td>
+      <td>Materials and methods: Mu-STOP in vitro transposition</td>
+    </tr>
+    <tr>
+      <td>Gene (Solanum lycopersicum)</td>
+      <td>Tomato genome sequence (Tomato ITAG release 2.40)</td>
+      <td>Sol Genomics Network (https://solgenomics.net/)</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Gene (N. benthamiana)</td>
+      <td>N. benthamiana genome sequence (N. benthamiana Genome v0.4.4)</td>
+      <td>Sol Genomics Network (https://solgenomics.net/)</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>Arabidopsis genome sequence (Araport11)</td>
+      <td>https://www.araport.org/</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Gene (Beta vulgaris)</td>
+      <td>Sugar beet genome sequence (RefBeet-1.2)</td>
+      <td>http://bvseq.molgen.mpg.de/index.shtml</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Gene (Oryza sativa)</td>
+      <td>Rice genome sequence (Rice Gene Models in Release 7)</td>
+      <td>http://rice.plantbiology.msu.edu/</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Gene (Hordeum vulgare)</td>
+      <td>Barley genome sequence (IBSC_v2)</td>
+      <td>https://www.barleygenome.org.uk/</td>
+      <td></td>
+      <td>Materials and methods: Bioinformatic and phylogenetic analyses</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D structure of ZAR1</td>
+      <td>Protein Data Bank</td>
+      <td>6J5T</td>
+      <td>Materials and methods: Structure homology modelling</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant growth conditions
 
 Wild type and mutant N. benthamiana were propagated in a glasshouse and, for most experiments, were grown in a controlled growth chamber with temperature 22–25°C, humidity 45–65% and 16/8 hr light/dark cycle.
 
-## Generation of N. benthamiana nrc4a/b CRISPR/Cas9 mutants
+### Generation of N. benthamiana nrc4a/b CRISPR/Cas9 mutants
 
 Constructs for generating NRC4 knockout N. benthamiana were assembled using the Golden Gate cloning method (Weber et al., 2011; Nekrasov et al., 2013; Belhaj et al., 2013). sgRNA4.1 and sgRNA4.2 were cloned under the control of the Arabidopsis (Arabidopsis thaliana) U6 promoter (AtU6pro) [pICSL90002, The Sainsbury Laboratory (TSL) SynBio] and assembled in pICH47751 (Addgene no. 48002) and pICH47761 (Addgene no. 48003), respectively as previously described (Belhaj et al., 2013). Primers sgNbNRC4.1_F (tgtggtctcaATTGAAAAACGGTACATACCGCAGgttttagagctagaaatagcaag), sgNbNRC4.2_F (tgtggtctcaATTGAGTCAGGAATCTTGCAGCTGgttttagagctagaaatagcaag) and sgRNA_R (tgtggtctcaAGCGTAATGCCAACTTTGTAC) were used to clone sgRNA4.1 and sgRNA4.2. pICSL11017::NOSpro::BAR (TSL SynBio), pICSL11021::35Spro::Cas9 (Addgene no. 49771), pICH47751::AtU6p::sgRNA4.1, pICH47761::AtU6pro::sgRNA4.2, and the linker pICH41780 (Addgene no. 48019) were assembled into the vector pICSL4723 (Addgene no. 48015) as described (Weber et al., 2011) resulting in construct pICSL4723::BAR::Cas9::sgRNA4.1::sgRNA4.2 that was used for plant transformation. Transgenic N. benthamiana were generated by TSL Plant Transformation team as described before (Nekrasov et al., 2013).
 
-## N. benthamiana nrc4a/b genotyping
+### N. benthamiana nrc4a/b genotyping
 
 Genomic DNA of selected T2 N. benthamiana transgenic plants nrc4a/b_9.1.3 and nrc4a/b_1.2.1 was extracted using DNeasy Plant DNA Extraction Kit (Qiagen). Primers NRC4_1_F (GGAAGTGCAAAGGGAGAGTT), NRC4_1_R (TCGCCTGAACCACAAACTTA), NRC4_2_F (GGCAAGAATTTTGGATGTGG) and NRC4_2_R (CGAGGAACCCTTTTTAGGCAG) were used in multiplex polymerase chain reaction (PCR) assays to amplify the region targeted by the two sgRNAs. Multiplex amplicon sequencing was performed by the Hi-Plex technique (Lyon et al., 2016). Sequence reads were aligned to the reference N. benthamiana draft genome Niben.genome.v0.4.4 [Sol Genomics Network (SGN), https://solgenomics.net/], and NRC4a (on scaffold Niben044Scf00002971) and NRC4b (on scaffold Niben044Scf00016103) were further analysed. T3 lines from the selected T2 plants were used for the experiments.
 
-## Plasmid constructions
+### Plasmid constructions
 
 To generate NRC41-29-YFP expression construct, NRC41-29 coding sequence was amplified by Phusion High-Fidelity DNA Polymerase (Thermo Fisher), and the purified amplicon was directly used in Golden Gate assembly with pICH85281 [mannopine synthase promoter+Ω (MasΩpro), Addgene no. 50272], pICSL50005 (YFP, TSL SynBio), pICSL60008 [Arabidopsis heat shock protein terminator (HSPter), TSL SynBio] into binary vector pICH47742 (Addgene no. 48001). Primers used for NRC41-29 coding sequences are listed in Supplementary file 1.
 
@@ -168,21 +335,21 @@ To generate MADA motif mutants and chimeras of NRC4, the full-length sequence of
 
 To generate pTRBO::YFP, pTRBO::ZAR11-144-YFP, pTRBO::ZAR11-144F9A/L10A/L14A-YFP, pTRBO::NRC41-29-YFP and pTRBO::NRC41-29L9A/V10A/L14A-YFP plasmids, we used GENEWIZ Standard Gene Synthesis with custom vector cloning service into the pTRBO vector (Lindbo, 2007a).
 
-## Mu-STOP in vitro transposition
+### Mu-STOP in vitro transposition
 
 To generate the Mu-STOP transposon (Poussu, 2005), entranceposon M1-KanR (Mutation Generation System Kit, Thermo Fisher) was used as a PCR template, and three translational stop signals were added to each transposon end by Phusion High-Fidelity DNA Polymerase and Mu-STOP primer (GGAAGATCTGATTGATTGAACGAAAAACGCGAAAGCGTTTC). The 3’ A overhang was then introduced to the Mu-STOP amplicon by DreamTaq DNA polymerase (Thermo Fisher), and the resulting Mu-STOP amplicon was cloned into pGEM-T Easy (Promega). Mu-STOP transposon was then released from pGEM::Mu-STOP by BglII digestion and purified by GeneJET Gel Extraction Kit (Thermo Fisher). 100 ng of the purified Mu-STOP transposon was mixed with 500 ng of the target plasmid, pICH47732::35SΩpro::NRC4DV-3xFLAG, and MuA transposase from the Mutation Generation System Kit (Thermo Fisher). The in vitro transposition reaction was performed according to the manufacturer’s procedure and carried out at 30°C for 6 hr.
 
 The NRC4DV::Mu-STOP library was transformed into Agrobacterium tumefaciens Gv3101 by electroporation. Mu-STOP insertion sites were determined by colony PCR using DreamTaq DNA polymerase (Thermo Fisher) and PCR amplicon sequencing. For the PCR, we used a forward primer (GAACCCTGTGGTTGGCATGCACATAC) matching pICH47732 and a reverse primer (CAACGTGGCTTACTAGGATC) matching Mu-STOP transposon.
 
-## Transient gene-expression and cell death assays
+### Transient gene-expression and cell death assays
 
 Transient expression of NRC wild-type and mutants, as well as other genes, in N. benthamiana were performed by agroinfiltration according to methods described by Bos et al. (2006). Briefly, four-weeks old N. benthamiana plants were infiltrated with A. tumefaciens strains carrying the binary expression plasmids. A. tumefaciens suspensions were prepared in infiltration buffer (10 mM MES, 10 mM MgCl2, and 150 μM acetosyringone, pH5.6) and were adjusted to OD600 = 0.5. For transient expression of NRC4WT-YFP, NRC4DV-YFP, NRC41-29-YFP, free YFP and the YFPA206K variants, the A. tumefaciens suspensions (OD600 = 0.25) were mixed in a 1:1 ratio with an A. tumefaciens expressing p19, the suppressor of posttranscriptional gene silencing of Tomato bushy stunt virus that is known to enhance in planta protein expression (Lindbo, 2007b). HR cell death phenotypes were scored according to the scale of Segretin et al. (2014) modified to range from 0 (no visible necrosis) to 7 (fully confluent necrosis). In Figure 2—figure supplement 2 and Figure 7—figure supplement 1, cell death was visualized with Odyssey Infrared Imager (800 nm channel, LI-COR).
 
-## Protein immunoblotting
+### Protein immunoblotting
 
 Protein samples were prepared from six discs (8 mm diameter) cut out of N. benthamiana leaves at 1 day after agroinfiltration and were homogenised in extraction buffer [10% glycerol, 25 mM Tris-HCl, pH 7.5, 1 mM EDTA, 150 mM NaCl, 2% (w/v) PVPP, 10 mM DTT, 1x protease inhibitor cocktail (SIGMA), 0.2% IGEPAL (SIGMA)]. The supernatant obtained after centrifugation at 12,000 xg for 10 min was used for SDS-PAGE. Immunoblotting was performed with HA-probe (F-7) HRP (Santa Cruz Biotech) or anti-GFP antibody (ab290, abcam) in a 1:5000 dilution. Equal loading was checked by taking images of the stained PVDF membranes with Pierce Reversible Protein Stain Kit (#24585, Thermo Fisher).
 
-## Bioinformatic and phylogenetic analyses
+### Bioinformatic and phylogenetic analyses
 
 We used NLR-parser (Steuernagel et al., 2015) to identify NLR sequences from the protein databases of tomato (SGN, Tomato ITAG release 2.40), N. benthamiana (SGN, N. benthamiana Genome v0.4.4), Arabidopsis (https://www.araport.org/, Araport11), sugar beet (http://bvseq.molgen.mpg.de/index.shtml, RefBeet-1.2), rice (http://rice.plantbiology.msu.edu/, Rice Gene Models in Release 7) and barley (https://www.barleygenome.org.uk/, IBSC_v2). The obtained NLR sequences, from NLR-parser, were aligned using MAFFT v. 7 (Katoh and Standley, 2013), and the protein sequences that lacked the p-loop motif were discarded from the NLR dataset. The gaps in the alignments were deleted manually in MEGA7 (Kumar et al., 2016) and the NB-ARC domains were used for generating phylogenetic trees (Figure 3—figure supplement 1—source data 1). The neighbour-joining tree was made using MEGA7 with JTT model and bootstrap values based on 100 iterations (Figure 3—figure supplement 1). We removed TIR-NLR clade members from the final database, and retained all CC-NLR sequences, including the CCR-NLR (RPW8-NLR), that possess N-terminal domains longer than 30 amino acids (988 protein sequences, Figure 3—source data 1).
 
@@ -192,18 +359,18 @@ For the tribe analyses, we extracted the N-terminal domain sequences, prior to N
 
 We used the most N-terminal motif detected in Tribe 2 from the MEME analysis to construct a hidden Markov model (HMM) for the MADA motif. Sequences aligned to the MADA motif were extracted in Stockholm format and used in hmmbuild program implemented in HMMER v2.3.2 (Eddy, 1998). The HMM was then calibrated with hmmcalibrate. This MADA-HMM (Supplementary file 2) was used to search the CC-NLR database (Figure 3—source data 1) with the hmmsearch program (hmmsearch --max -o < outputfile > <hmmfile > <seqdb > ). To estimate the false positive rate, hmmsearch program was applied to full Arabidopsis and tomato proteomes (Araport11 and ITAG3.2) with the MADA-HMM and the output is displayed in Figure 4—source data 1 and discussed in the results section.
 
-## Pathogen infection assays
+### Pathogen infection assays
 
 P. infestans infection assays were performed by applying droplets of zoospore suspension on detached leaves as described previously (Song et al., 2009). Briefly, leaves of five-weeks old wild-type and nrc4a/b N. benthamiana plants were infiltrated with A. tumefaciens solutions, in which each Agrobacterium containing a plasmid expressing RFP::Rpi-blb2 (Wu et al., 2017) was mixed in a 1:1 ratio (OD600 = 0.5 for each strain) with Agrobacterium containing either the empty vector, wild type NRC4, or NRC4 variant. At 24 hr after agroinfiltration, the abaxial side of the leaves were inoculated with 10 µL zoospore suspension (100 zoospores/μL) of P. infestans strain 88069 prepared according to the methods reported by Song et al. (2009). The inoculated leaves were kept in a moist chamber at room temperature (21–24°C) for 7 days, and imaged under UV light (UVP Blak-Ray B-100AP lights – 365 nm) with Wratten No.8 Yellow Filter for visualization of the lesions. The camera setting was ISO 1600, White Balance 6250K, F11 and 10 s exposure.
 
-## Structure homology modelling
+### Structure homology modelling
 
 We used the cryo-EM structure of activated ZAR1 (Wang et al., 2019b) as template to generate a homology model of NRC4. The amino acid sequence of NRC4 was submitted to Protein Homology Recognition Engine V2.0 (Phyre2) for modelling (Kelley et a., 2015). The coordinates of ZAR1 structure (6J5T) were retrieved from the Protein Data Bank and assigned as modelling template by using Phyre2 Expert Mode. The resulting model of NRC4 comprised amino acids Val-5 to Glu-843 and was illustrated in CCP4MG software (McNicholas et al., 2011).
 
-## Microscopy
+### Microscopy
 
 For localization analyses, leaf discs (6 mm in diameter) of N. benthamiana leaves were made 2 days after agroinfiltration and were used for imaging. Images were captured with Leica SP8 resonant inverted confocal microscope (Leica Microsystems). For excitation, Argon laser and Helium-Neon laser wer set to 514 nm and 633 nm, respectively. Hybrid detectors were used with 517–575 and 584–638 nm bandpass filters to capture YFP and RFP signals, respectively. Gain, laser intensities and zoom were kept the same for all images. Images were processed in FIJI (Fiji Is Just ImageJ).
 
-## Accession numbers
+### Accession numbers
 
 The NRC4 sequences used in this study can be found in the Solanaceae Genomics Network (SGN) or GenBank/EMBL databases with the following accession numbers: NbNRC4 (NbNRC4, MK692737; NbNRC4a, Niben044Scf00002971; NbNRC4b, Niben044Scf00016103).

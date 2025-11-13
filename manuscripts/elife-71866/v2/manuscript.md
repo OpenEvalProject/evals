@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Center for Neural Science, New York University New York City United States
-2. https://ror.org/022kthw22 Brain and Cognitive Sciences, University of Rochester Rochester United States
-3. https://ror.org/02pttbw34 Department of Neuroscience, Baylor College of Medicine Houston United States
+1. Center for Neural Science, New York University New York City United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Brain and Cognitive Sciences, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+3. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Here we employ multiple audio-visual behavioral tasks to test the hypothesis tha
 
 ## Results
 
-## Intact audio-visual optimal cue integration
+### Intact audio-visual optimal cue integration
 
 First, we probe whether individuals with ASD show a normal or impaired ability to optimally combine sensory cues across audio-visual pairings. To do so, individuals with ASD (n=31; mean ± S.E.M; 15.2±0.4 years; 5 females) and age-matched neurotypical controls (n=34, 16.1±0.4 years; 9 females) viewed a visual disk and/or heard an audio beep for 50 ms. The auditory tone and visual flash were synchronously presented either at the same location (Figure 1A, left panel) or separated by a small spatial disparity ∆ = ±6° (Figure 1A, right panel). The disparity was small enough to escape perceptual awareness (see explicit reports below for corroboration). The auditory stimulus was always the same, making the auditory signals equally reliable across trials. The reliability of the visual cue was manipulated by varying the size of the visual stimulus (see Methods for detail). On each trial, subjects indicated if the stimulus appeared to the right or left from straight ahead.
 
@@ -48,11 +48,23 @@ The central hallmark of multisensory cue combination is the improvement in the p
 
 A second characteristic of statistically optimal integration is the ability to dynamically alter the weight attributed to each sensory modality according to their relative reliability, i.e., decreasing the weight assigned to less reliable cues. Figure 1F and G, respectively, shows example psychometric functions for an example control and ASD individual when auditory and visual stimuli were separated by a small spatial disparity (Δ=±6°). Both show the same pattern. When the auditory stimulus was to the right of the visual stimulus (∆=6°, dashed curves), psychometric curves at high reliability (dark black and red symbols for control and ASD) were shifted to the right indicating a leftward bias, in the direction of the visual cue (see Methods). At low visual reliability, psychometric curves shifted to the left indicating a rightward bias, toward the auditory cue. That is, in line with predictions from optimal cue combination, psychometric curves shifted to indicate auditory or visual ‘dominance’, respectively, when auditory and visual cues were the most reliable. Analogous shifts of the psychometric functions were observed when the auditory stimulus was to the left of the visual stimulus (∆=−6°, solid curves). At the intermediary visual reliability – matching the reliability of auditory cues (Figure 1D) – both stimuli influenced localization performance about equally. Such a shift from visual to auditory dominance as the visual cue reliability worsened was prevalent across ASD and control subjects. Importantly, measured and predicted visual weights according to optimal cue combination were well matched in control (Figure 1H, black, slope = 0.97, 95% CI = [0.92–1.02]) and ASD (Figure 1H, red, slope = 0.99, 95% CI = [0.93–1.05]) groups. Measured visual weights were also not different between groups at any reliability (F[2, 114]=1.11, p=0.33, η2=0.02). Thus, just as their neurotypical counterparts, ASD subjects dynamically reweighted auditory and visual cues on a trial-by-trial basis depending on their relative reliabilities. Together, this pattern of results suggests that individuals with ASD did not show impairments in integrating perceptually congruent (and near-congruent) auditory and visual stimuli.
 
-## Impaired audio-visual causal inference
+### Impaired audio-visual causal inference
 
 Having established that the process of integration is itself intact in ASD, we next queried implicit causal inference – the more general problem of establishing when cues ought to be integrated vs. segregated. Individuals with ASD (n=21, 17.32±0.57 years; 5 females) and age-matched neurotypical controls (n=15, 16.86±0.55 years; 7 females, see Supplementary file 1, Supplementary file 2 for overlap in cohorts across experiments) discriminated the location of an auditory tone (50 ms), while a visual disk was presented synchronously at varying spatial disparities. The stimuli were identical to those above but spanned a larger disparity range (∆=±3,±6,±12, and ±24°), including those large enough to be perceived as separate events (see explicit reports below). Subjects indicated if the auditory stimulus was located to the left or right of straight ahead, and as above, we fit psychometric curves to estimate perceptual biases. The addition of large audio-visual disparities fundamentally changes the nature of the experiment, where now observers must first ascertain an internal model, i.e., whether auditory and visual cues come from the same or separate world sources. As the disparity between cues increases, we first expect to see the emergence of perceptual biases – one cue influencing the localization of the other. However, as cue disparities continue to increase, we expect observers to switch worldviews, from a regime where cues are hypothesized to come from the same source, to one where cues are now hypothesized to come from separate sources. Thus, as cue disparities continue to increase, eventually the conflict between cues ought to be large enough that perceptual biases asymptote or decrease, given that the observer is operating under the correct internal model (Körding et al., 2007; Rohe and Noppeney, 2015; Rohe and Noppeney, 2016; Rohe et al., 2019; Cao et al., 2019; Noel and Angelaki, 2022).
 
 Overall, individuals with ASD showed a larger bias (i.e. absolute value of the mean of the cumulative Gaussian fit) in auditory localization than the control group (see Figure 2A and B, respectively, for control and ASD cohorts; F[1, 34]=5.44, p=0.025, η2=0.13). Further, how the bias varied with spatial disparity (∆) significantly differed between the groups (group × disparity interaction: F[7, 168]=3.50, p=0.002, η2=0.12). While the bias saturated at higher ∆ in neurotypical subjects, as expected under causal inference, the bias increased monotonically as ∆ increased in the ASD group. Thus, despite increasing spatial discrepancy, ASD subjects tended to integrate the cues, as if they nearly always utilized visual signals to localize the auditory cue and did not readily switch to a worldview where the auditory and visual cues did not come from the same world source. The effect of visual cue reliability was similar in both groups (group × reliability interaction, F[2, 168]=1.05, p=0.35, η2=0.01), indicating that the auditory bias decreased as visual cue reliability worsened in both groups.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig2-v2.jpg)
+
+**Figure 2.:** Participants (black = control; ASD = red) localized auditory tones relative to straight ahead, in the presence of visual cues at different disparities of up to 24°. See Supplementary file 1, Supplementary file 2 for overlap of subjects with Figure 1. (A) Auditory bias (y-axis, central point of the cumulative Gaussian, e.g. Figure 1B) as a function of spatial disparity (x-axis, relative location of the visual cue) and reliability of the visual cue (darker = more reliable) in control subjects. (B) As (A), but for individuals with ASD. (C) Coefficient of the linear fits (y-axis, larger value indicates quicker increase in bias with relative visual location) in control (black) and ASD (red), as a function of visual cue reliability (darker = more reliable). (D) Linear R2 (x-axis) demonstrates that the linear fits account well for observed ASD data. On the other hand, adding a cubic term (y-axis, partial R2) improved fit to control data (at two reliabilities) but not ASD data. Error bars are ±1 S.E.M.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Proportion of ‘rightward’ report as a function of stimulus location (in deg, x-axis, positive values indicate the right hemifield). Top row: all control subjects. From left to right: visual discrimination at high, medium, and low reliability, and finally auditory discrimination. Bottom row: as top row, for all autism spectrum disorder (ASD) subjects. (B) Discrimination thresholds for ASD and controls subjects, for low, medium, and high reliability visual stimuli, as well as auditory cues. Dots and error bars are the mean and S.E.M for each group and condition. (C) and (D) are, respectively, the bias and R-squared. Format follows that of (B). Results indicate that psychometric thresholds (all p>0.09), bias (all p>0.11), and goodness of fit (all p>0.26) are not different across the ASD and control cohorts, across visual and auditory modalities, and across all reliabilities.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** We very briefly present these results, as a conceptual replication and extension of the main audio-visual results, in order to highlight the statistical reliability and generalizability of the main result – an internal model most readily specifying integration in autism spectrum disorder (ASD). (A) Subjects are presented with a wide field of dots (background) that move as to imply self-motion, leftward or rightward, at different angles (white arrows). Simultaneously, an object (red clouds of dots) may move independently, at different speeds. Observers are asked to report on their own self-motion by button press (either leftward or rightward from straight-ahead), as well as to indicate if the object moved or not. (B) This task requires causal inference in attributing motion across our retinas to self-motion or object-motion, yet the generative model is distinct (c.f. orange arrow) from that reported in the main text (audio-visual). (C) Heading bias as a function of object motion speed. As predicted by causal inference, the control group (black), shows a bias peaking at intermediary cue disparities, which then dissipates as the observer infers two separate causes (see Dokka et al., 2019). Instead, the ASD group (dark red) shows a monotonically increasing bias, as if always integrating cues. (D) Linear fits account better for ASD than control data (x-axis), while adding a cubic component to the regression aids in explaining control but not ASD data. (E) Reports of the object being stationary, as a function of its speed in the world. As expected, reports of stationarity occur more often when the object moves at a slow speed. The peak report of stationarity in ASD is lower than that of control subjects (F), and the velocity range over which reports of stationarity are likely, is larger in ASD than control individuals (G). Dots are means, and error bars are ±1 S.E.M.
 
 To more rigorously quantify how auditory localization depended on ∆, we fit a third-order regression model to the auditory bias as a function of ∆, independently for each subject and at each visual reliability (y=a0+a1∆+a2∆2+a3∆3; see Methods). As shown in Figure 2C, across all visual reliabilities, the ASD group had a larger linear coefficient (a1, ANOVA: F[1, 34]=6.69, p=0.014, η2=0.16), again indicating a monotonic increase in bias with cue spatial disparity.
 
@@ -64,11 +76,27 @@ Last, to further bolster the conclusion that individuals with ASD show anomalous
 
 Together, these results suggest that in ASD the process of integrating information across modalities is normal (see Zaidel et al., 2015) once a correct internal model of the causal structure of the world has been formed. However, the process of inferring this causal structure – the set of relations between hidden sources and sensory signals that may have given rise to the observed data – is anomalous. Namely, individuals with ASD seem to operate under the assumption that sensory cues ought to be integrated most of the time, even for large disparities. Next, we questioned if and how this deficit in causal inference expresses explicitly in overt reports.
 
-## Decreased disparity-independent explicit report of common cause
+### Decreased disparity-independent explicit report of common cause
 
 Individuals with ASD (n=23; 16.14±0.51 years; 5 females) and age-matched neurotypical controls (n=24; 17.10±0.42 years; 7 females; see Supplementary file 1, Supplementary file 2 for overlap in cohorts with previous experiments) viewed a visual disk and heard an auditory tone presented synchronously (50 ms), but at different spatial disparities (same stimuli as above, disparity up to 24°). Participants indicated whether the auditory and visual cues originated from a common source, or from two separate sources (see Methods for instructions). In contrast to the localization experiments, where subjects localized the physical position of stimuli, here subjects were asked to explicitly report the relationship between the auditory and visual stimuli. See Figure 3—figure supplement 1 for the unisensory discrimination performance in participants who took part in both the cue integration experiment (Experiment 1) and the current explicit common cause report across spatial disparities. Auditory and visual localization thresholds (all p>0.07), bias (all p>0.15), and the goodness of fit (all p>0.16) of these psychometric estimates were no different between the ASD and control cohort participating in this explicit causal inference judgment experiment.
 
 As expected, most subjects reported a common source more frequently at smaller rather than larger ∆ (Figure 3 F[8, 259]=94.86, p<0.001, η2=0.74). Interestingly, while this pattern was true for all individual control subjects, eight of the individuals with ASD (i.e. ~⅓ of the cohort) did not modulate their explicit common cause reports as a function of spatial disparity, despite good auditory and visual localization (see Figure 3—figure supplement 1 and Figure 3—figure supplement 2). These subjects were not included in subsequent analyses. For lower visual reliability (Figure 3, from A-C), both groups reported common cause less frequently (F[2, 74]=10.68, p<0.001, η2=0.22). A striking difference between experimental groups was the decreased likelihood of reporting common cause, across spatial disparities and visual cue reliabilities, in ASD relative to controls (Figure 3A–C shades of black vs. shades of red, F[1, 37]=11.6, p=0.002, η2=0.23). This pattern of results using an explicit causal inference task is opposite from that described for the implicit task of auditory localization, where individuals with ASD were more, and not less, likely to combine cues.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig3-v2.jpg)
+
+**Figure 3.:** Proportion of common cause reports (y-axis) as a function of spatial disparity (x-axis) and visual cue reliability; high (A), medium (B), or low (C). The most striking characteristic is the reduced likelihood to report common cause, across any disparity or cue reliability. (D) Proportion of common cause reports (y-axis) as a function of temporal disparity. As indexed by many (e.g. Feldman et al., 2018) individuals with autism spectrum disorder (ASD) show larger ‘temporal binding windows’; temporal extent over which they are likely to report common cause. However, these individuals are also less likely to report common cause, when auditory and visual stimuli are in very close temporal proximity (an effect sometimes reported, e.g., Noel et al., 2018b, but many times neglected, given normalization from 0 to 1, to index binding windows; see e.g., Woynaroski et al., 2013; Dunham et al., 2020). See Supplementary file 1, Supplementary file 2 for overlap of subjects with previous figures. Error bars are ±1 S.E.M.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A) Discrimination thresholds for autism spectrum disorder (ASD) and controls subjects, for low, medium, and high reliability visual stimuli, as well as auditory cues. Transparent dots are individual subjects, while opaque white circles and error bars are mean and S.E.M. (B) and (C) follow the formatting of (A), but respectively, show the bias and R-squared. Four ASD subjects had poor auditory localization performance (as seen in the threshold and R-squared subplots) yet even including these subjects did not differentiate between ASD and control cohorts in threshold, bias, or R-squared.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** All individual data is presented. Report of ‘common cause’ (y-axis) as a function of spatial disparity (x-axis) and visual reliability (color gradient). Data of all control subjects (first to fourth column) are modulated by disparity. 15/23 Autism spectrum disorder (ASD) subjects (top four rows of columns five to eight) showed a modulation in explicit reports of common cause by disparity. However, 8 (bottom two rows) did not.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) We fit a functional model of the form a*N(X;mu,sd^2)+b where X is the spatial disparity. The model was fit for each reliability therefore with 12 parameters in total. The model predictions are shown in shades of magenta with the causal inference model predictions in gray. The causal inference model performs better than the functional form as quantified by Akaike Information Criterion (AIC) as indicated in the title. (B) The functional form in (A) was fit to control subjects and then the bias (parameter ‘b’ in the equation) was varied to best explain the autism spectrum disorder (ASD) subject responses. This model was outperformed (quantified by AIC) by the causal inference model, which was also fit to the control subjects with choice and inference parameters varied.
 
 These differences were quantified by fitting Gaussian functions to the proportion of common source reports as a function of ∆ (excluding the eight ASD subjects with no modulation in their reports; R2 for this cohort <0.5). The Gaussian fits (control: R2=0.89±0.02; ASD: R2=0.93±0.01) yield three parameters that characterize subjects’ behavior: (1) peak amplitude, which represents the maximum proportion of common source reports; (2) mean, which represents the ∆ at which subjects perceived a common source most frequently; and (3) width (SD), which represents the range of ∆ over which the participant was likely to perceive a common source. Both control and ASD participants perceived a common source most frequently at a ∆ close to 0°, and there was no group difference for this parameter (control = 0.30±1.33°; ASD = 0.48±1.9°; F[1, 37]<0.01, p=0.92, η2<0.01). Amplitude and width, however, differed between the two groups. The peak amplitude of the best-fit Gaussian was smaller for the ASD than the control group (control = 0.75±0.02; ASD = 0.62±0.05; F[1, 37]=8.44, p=0.0006, η2=0.18), quantifying the fact that the ASD group perceived a common source less frequently than control participants. The width of the Gaussian fit was smaller in the ASD compared to the control group (control = 30.21±2.10°; ASD = 22.35±3.14°; F[1, 37]=7.00, p=0.012, η2=0.15), suggesting that the range of spatial disparities at which ASD participants perceived a common source was significantly smaller than in controls. Note, this range is well beyond the 6° used in the maximum likelihood estimation experiment (~fourfold), thus corroborating that during the first experiment participants perceived auditory and visual cues as a single, multisensory cue.
 
@@ -78,9 +106,65 @@ Analogous to the case of spatial disparities, we fit reports of common cause (i.
 
 Correlational analyses between psychometric features distinguishing control and ASD individuals (i.e. linear and cubic terms accounting for auditory biases during large audio-visual spatial disparities, amplitude and width of explicit common cause reports during spatial and temporal disparities) and symptomatology measures, i.e., autism quotient (AQ; Baron-Cohen et al., 2001) and social communication questionnaire (SCQ; Rutter et al., 2003) demonstrated weak to no association. Of the 12 correlations attempted ([AQ + SCQ] × [amplitude + width] × [temporal + spatial] + [AQ + SCQ] × [linear + cubic terms]), the only significant relation (surviving Bonferroni-correction) was that between the width of the Gaussian function describing synchrony judgments as a function of temporal disparity and SCQ scores (Type II regression: r=0.52, p=0.002; see Smith et al., 2017 for a similar observation).
 
-## Causal inference modeling suggests an increased prior probability for common cause in ASD
+### Causal inference modeling suggests an increased prior probability for common cause in ASD
 
 To bridge across experiments (i.e. implicit and explicit audio-visual spatial tasks) and provide a quantitative account of the switch between internal models (i.e. segregate vs. integrate) in ASD vs. controls, we fit subjects’ responses with a Bayesian causal inference model (Figure 4A and Körding et al., 2007). The modeling effort is split in three steps.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-v2.jpg)
+
+**Figure 4.:** (A) Generative models of the causal inference process in the two tasks (implicit task in left and explicit task in right). The subject makes noisy sensory measurements (X) of the veridical cue locations ($ϵ)$ and combines them with their prior belief to obtain their percept (S). To do so optimally, the subject first must infer whether signals came from the same cause (C) and thereby determine if it is useful to combine the information from the two cues for inferring the trial category (D). The causal inference process is shared between the two tasks but the subject infers Dimp (side of the tone) in the implicit task and Dexp (number of causes for the sensory observations) in the explicit task. (B) Aggregate data (dots) and model fits (lines) in the implicit task (the visual reliability varies from high to low from left to right). The causal inference model is fit to the control aggregate subject and different set of parameters are varied to match the autism spectrum disorder (ASD) subject data (see main text). See Figure 4—figure supplement 12 for a fit to the same data while (1) allowing all parameters free to vary, (2) allowing the same parameter as here to vary, but fitting to visual reliabilities separately, or (3) doing both (1) and (2). Of course, these result in better fits, but this is at the expense of interpretability in that they are inconsistent with the empirical data. (C) Same as (B) but fits are to the explicit spatial task. See Figure 4—figure supplement 13 for the equivalent of Figure 4—figure supplement 12, for the implicit task. Data (dots) are slightly different from that in Figures 2 and 3 because in the previous figures data was first averaged within subjects, then psychometric functions were fit, and finally estimates of bias were averaged across subjects. Here, data is first aggregated across all subjects and then psychometric fits are done on the aggregate. Importantly, the difference between ASD and control subjects holds either way. Error bars are 68% CI (see Supplementary file 4 for additional detail regarding deriving CIs for the amalgamated subject). (D). ASD subjects have a higher p-common for the aggregate subject in the implicit task but seemingly compensate in the explicit task where they show a lower aggregate p-common and choice bias. (E). The causal inference model provides an equally good fit (quantified by explainable variance explained), a measure of goodness of fit appropriate for noisy, as opposed to noiseless data (Haefner and Cumming, 2008) for control and ASD subjects. (F) Individual ASD (red) subjects have a higher p-common on average for the implicit task (in agreement with the aggregate subject) but (G) show no significant difference in the combined p-common and choice bias for the explicit task due to considerable heterogeneity across subjects. Subjects were included in the single-subject modeling effort if they had participated in Experiment 1 (and thus we had an estimate of their sensory encoding) in addition to the particular task of interest. That is, for panel (F), we included all participants taking part in Experiments 1 and 2. This included participants deemed poor in Experiment 1, given our attempt to account for participant’s behavior with the causal inference model. For panel (G), we included all participants taking part in Experiments 1 and 3. Individual subject error bars are 68% CI, while group-level error bars are 95% CI (see Supplementary file 4 for additional detail regarding statistical testing). CDF = cumulative density function.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Top: Fit to aggregate data presented in Figure 4B,C and D. First, we aggregate the control data (1) and estimate posteriors for all parameters in order to best fit the data via slice sampling (2). Next, we attempt to account for the aggregate autism spectrum disorder (ASD) data while fixing the sensory parameters but varying choice and/or inference parameters (3). The empirical data suggests no difference in the sensory parameters between control and ASD (Figure 2—figure supplement 1, Figure 3—figure supplement 1), and including these parameters or allowing them to be free while the inference parameters are not, does not account well for the implicit data (Figure 4—figure supplement 7, Alternative A and B). Next, we estimate the posterior parameters for the ASD cohort (4, 5). Bottom: Fit to the single subject data presented in Figure 4F and G. For each participant data from Experiment 1 (allowing estimation of sensory parameters) and either Experiment 2 (implicit causal inference) or Experiment 3 (explicit causal inference in space) are aggregated (1). Then we fit all parameters in order to best account for the data (2) and estimate posteriors over these parameters by slice sampling (3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** This model performs worse (quantified by Akaike Information Criterion [AIC] where positive AIC indicates worse fit) as compared to the model in the main paper where pcommon and the choice parameters are allowed to vary (shown in red).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Auditory localization, proportion rightward (y-axis) as a function of auditory position vis-à-vis straight ahead (x-axis, positive values are rightward). (B) Visual localization across three reliabilities levels, from high reliability in dark, to low reliability in light gray. Follows the format from A. (C) Forced fusion task, where auditory and visual cues are presented congruently or with a slight disparity (±6°). (D) Explicit causal inference task, where participants report whether auditory and visual cues originated from the same source (y-axis), according to different spatial disparities (x-axis) and visual reliability levels (darker = more reliable). (F) Implicit causal inference. Auditory bias (y-axis, in degree) as a function of audio-visual disparity (x-axis, up to 24° ) and visual reliability (darker = more reliable). Errors bars are ±1 S.E. The parameters of the causal inference model are simultaneously fit to all tasks, considerable constraining the model estimates.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** As Figure 4—figure supplement 3, for a second representative control subject. (A) Auditory localization, proportion rightward (y-axis) as a function of auditory position vis-à-vis straight ahead (x-axis, positive values are rightward). (B) Visual localization across three reliability levels, from high reliability in dark, to low reliability in light gray. Follows the format from A. (C) Forced fusion task, where auditory and visual cues are presented congruently or with a slight disparity (±6°). (D) Explicit causal inference task, where participants report whether auditory and visual cues originated from the same source (y-axis), according to different spatial disparities (x-axis) and visual reliability levels (darker = more reliable). (F) Implicit causal inference. Auditory bias (y-axis, in degree) as a function of audio-visual disparity (x-axis, up to 24°) and visual reliability (darker = more reliable). Errors bars are ±1 S.E. The parameters of the causal inference model are simultaneously fit to all tasks, considerable constraining the model estimates.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** As Figure 4—figure supplements 3 and 4, for a representative ASD subject. (A) Auditory localization, proportion rightward (y-axis) as a function of auditory position vis-à-vis straight ahead (x-axis, positive values are rightward). (B) Visual localization across three reliability levels, from high reliability in dark, to low reliability in light gray. Follows the format from A. (C) Forced fusion task, where auditory and visual cues are presented congruently or with a slight disparity (±6°). (D) Explicit causal inference task, where participants report whether auditory and visual cues originated from the same source (y-axis), according to different spatial disparities (x-axis) and visual reliability levels (darker = more reliable). (F) Implicit causal inference. Auditory bias (y-axis, in degree) as a function of audio-visual disparity (x-axis, up to 24°) and visual reliability (darker = more reliable). Errors bars are ±1 S.E. The parameters of the causal inference model are simultaneously fit to all tasks, considerable constraining the model estimates.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** As Figure 4—figure supplement 5, for a second representative control subject. (A) Auditory localization, proportion rightward (y-axis) as a function of auditory position vis-à-vis straight ahead (x-axis, positive values are rightward). (B) Visual localization across three reliabilities levels, from high reliability in dark, to low reliability in light gray. Follows the format from A. (C) Forced fusion task, where auditory and visual cues are presented congruently or with a slight disparity (±6°). (D) Explicit causal inference task, where participants report whether auditory and visual cues originated from the same source (y-axis), according to different spatial disparities (x-axis) and visual reliability levels (darker = more reliable). (F) Implicit causal inference. Auditory bias (y-axis, in degree) as a function of audio-visual disparity (x-axis, up to 24°) and visual reliability (darker = more reliable). Errors bars are ±1 S.E. The parameters of the causal inference model are simultaneously fit to all tasks, considerable constraining the model estimates.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Four alternatives were tested: (A) a forced fusion model where C is set to 1. (B) A forced segregation model where C is set to 2. (C) A model where there is no lapse bias. (D1) An alternative where solely choice parameters are varied for implicit task: the lapse parameters and pchoice (D2). For the explicit task, pchoice cannot be separately constrained from pcommon so only the lapse parameters are varied. For the implicit task, two main observations must be noted. First, all models perform worse than that presented in the main text (y-axis is difference to the model presented in the main text, with higher Akaike Information Criterion [AIC] indicating a worse quality of fit). Second, Alternative A is substantially better than Alternative B, but still worse than the model in the main text. Thus, seemingly individuals with autism spectrum disorder do perform causal inference and not pure forced fusion, yet they overweight integration (vs. segregation) compared to their neurotypical counterparts. For the explicit task, all alternative models perform worse than the model in the main text where the choice and inference parameters were varied.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** The rows show the four alternative models tested, while the columns show data in decreasing order of reliability. For each panel, the model presented in the main text is shown, in shades of black for the control subjects and shades of red for the autism spectrum disorder subjects. The alternative tested in each panel is shown in shades of magenta.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** The rows show the four alternative models tested, while the columns show data in decreasing order of reliability. For each panel, the model presented in the main text is shown, in shades of black for the control subjects and shades of red for the autism spectrum disorder subjects. The alternative tested in each panel is shown in shades of magenta.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp10-v2.jpg)
+
+**Figure 4—figure supplement 10.:** (A) Causal inference model for auditory-visual simultaneity judgement. This model is a simplified version from the full model in Figure 4A by measuring temporal judgments relative to a reference cue (the auditory cue in this case). (B) Model fits to aggregate subjects in the explicit temporal task. The causal inference model is fit to the control aggregate subject and different set of parameters are varied to match the autism spectrum disorder (ASD) subject data (similar to Figure 4). (C) Estimated pcombined cannot be accurately constrained using the given data, as illustrated by the large error bars. (D) Scatter plots of samples from the joint posterior distribution between the pcombined parameter and the lapse bias parameter. The two parameters are (negatively) correlated (r=−0.72) making them hard to separate. (E) Illustration of the correlation between the parameters in B. Fixing the pcombined to a range of values between 0.3 and 0.7, we can estimate the lapses such that the model provides a qualitatively good prediction to the data, hence making it hard to constrain the pcombined as seen in C. (F) The predicted responses from the causal inference model can be visualized as a difference between two cumulative Gaussian functions with a vertical scaling and offset determined by the lapse rate and lapse biases. The slope of the cumulative Gaussian is a function of the sensory uncertainty, whereas the separation is a function of pcombined. By fixing the slope, offset, and scaling from the sensory uncertainties and lapses, the differences between the curves for different pcombined are small, making it hard to separate using reasonable amount of empirical data.
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp11-v2.jpg)
+
+**Figure 4—figure supplement 11.:** (A) Aggregate lapse rate and lapse bias for controls and autism spectrum disorder (ASD) (plotted similar to main text Figure 4D). We find that in both implicit and explicit causal inference tasks, ASD subjects have a higher lapse rate. ASD subjects also seem to have a larger deviation from a uniform lapse bias of 0.5. (B–D) Lapse rate and lapse bias fit to individual subjects. There is no significant difference in the lapse rate and lapse bias for both tasks due to considerable heterogeneity across subjects. Subject depictured in blue is the same as in Figure 4, main text.
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp12-v2.jpg)
+
+**Figure 4—figure supplement 12.:** The change in Akaike Information Criterions (AICs) is reported in the panel title, with all values being smaller than the baseline model, suggesting better fits. Shades of black and red are, respectively, the baseline model for control and autism spectrum disorder (ASD) subjects, while shades of magenta are the comparison model.
+
+![Figure 4—figure supplement 13.](https://cdn.elifesciences.org/articles/71866/elife-71866-fig4-figsupp13-v2.jpg)
+
+**Figure 4—figure supplement 13.:** The change in Akaike Information Criterions (AICs) is reported in the panel title, with all values being smaller than the baseline model, suggesting better fits. Shades of black and red are, respectively, the baseline model for control and autism spectrum disorder (ASD) subjects, while shades of magenta are the comparison model.
 
 First, we fit aggregate data and attempt to discern which of the parameters that govern the causal inference process may globally differ between the ASD and control cohorts. The parameters of the causal inference model can be divided into three sets. First, sensory parameters: the visual and auditory sensory uncertainty (i.e. inverse of reliability), as well as visual and auditory priors (i.e. expectations) over the perceived auditory and visual locations (mean and variance of Gaussian priors). Second, choice parameters: choice bias (pchoice), as well as lapse rate and bias. These latter two parameters are the frequency with which an observer may make a choice independent of the sensory evidence (lapse rate) and whether these stimuli-independent judgments are biased (lapse bias). Third, inference parameters: the prior probability of combination (pcommon; see Methods and Supplementary file 3, Supplementary file 4 for further detail). In this first modeling step, we fit all parameters (see Supplementary file 3) to best account for the aggregate control subject. Then, we test whether a difference in choice and inference parameters, but not the sensory ones, can explain the observed difference between the control and the aggregate ASD data. We do not vary the sensory parameters given that unisensory discrimination thresholds did not differ between experimental groups (Figure 1, Figure 2—figure supplement 1, and Figure 3—figure supplement 1. See Methods, Supplementary file 4 and Figure 4—figure supplement 1 for technical detail regarding the model fitting procedure. Also see Figure 4—figure supplement 2 corroborating the fact that varying the inference parameter, as opposed to sensory uncertainty, results in better model fits). In a second step, we attempt not to globally differentiate between ASD and control cohorts, but to account for individual subject behavior. Thus, we fit single subject data and utilize the subject-specific measured sensory uncertainty to fit all parameters (i.e. sensory, choice, and inference). All subjects who completed the cue integration experiment (Experiment 1) – allowing for deriving auditory and visual localization thresholds – and either the implicit (Experiment 2) or explicit (Experiment 3) spatial causal inference task were included in this effort. This included ‘poor performers’ (six in Experiment 1 and eight in Experiment 3), given that the goal of this second modeling step was to account for individual subject behavior. Last, we perform model comparison between the causal inference model and a set of alternative accounts, also putatively differentiating the two experimental groups.
 
@@ -110,13 +194,13 @@ In conclusion, by leveraging a computational framework (optimal cue combination 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 91 adolescents (16.25±0.4 years; 20 females) took part (completely or partially) in a series of up to five behavioral experiments (four audio-visual and presented in the main text, in addition to a visual heading discrimination task presented in the Supplementary Materials). Forty-eight of these were neurotypical controls. Individuals in the control group (16.5±0.4 years; 13 females) had no diagnosis of ASD or any other developmental disorder or related medical diagnosis. These subjects were recruited by flyers posted throughout Houston. The other 43 participants (16.0±0.5 years; 7 females) were diagnosed as within ASD. The participants with ASD were recruited through several sources, including (1) the Simons Simplex Collection families, (2) flyers posted at Texas Children’s Hospital, (3) the Houston Autism Center, and (4) the clinical databases maintained by the Simons Foundation Autism Research Initiative (SFARI). All participants were screened at enrollment with SCQ (Rutter et al., 2003) and/or the AQ (Baron-Cohen et al., 2001) to afford (1) a measure of current ASD symptomatology and (2) rule out concerns for ASD in control subjects. There was no individual with ASD below the recommended SCQ cutoff, and only 2 (out of 47) control subjects above this cutoff (Surén et al., 2019). Similarly, there was almost no overlap in ASD and control AQ scores (with only 3 out of 47 control individuals having a higher AQ score than the lowest of the individuals with ASD). All individuals with ASD were above the AQ cutoffs recommended by Woodbury-Smith et al., 2005 and Lepage et al., 2009 (respectively, cutoff scores of 22 and 26), but not by Baron-Cohen et al., 2001 (cutoff score of 36). Inclusion in the ASD group required that subjects have (1) a confirmed diagnosis of ASD according to the DSM-5 (American Psychiatric Association, 2013) by part of a research-reliable clinical practitioner and (2) no history of seizure or other neurological disorders. A subset of the individuals with ASD were assessed by the Autism Diagnostic Observation Schedule (ADOS-2, Lord et al., 2012), and no difference was observed in the AQ, SCQ, or psychometric estimates between individuals with ASD with and without the ADOS assessment (all p>0.21). Similarly, the intelligence quotient (IQ) as estimated by the Wechsler Adult Intelligence Scale (WAIS) was available for a subset of the ASD participants (n=10, or 22% of the cohort), whose average score was 103±9 (S.E.M.), this being no different from the general population (which by definition has a mean of 100). All subjects had normal visual and auditory acuity, as characterized by parents’ and/or participants’ reports. For each of the five psychophysics experiments, we aimed at scheduling approximately 25–30 participants per group, in accord with sample sizes from previous similar reports (Dokka et al., 2019; Noel et al., 2018b). Data were not examined until after data collection was complete. The study was approved by the Institutional Review Board at the Baylor College of Medicine (protocol number H-29411) and written consent/assent was obtained.
 
-## Experimental materials and procedures
+### Experimental materials and procedures
 
-## Experiment 1: Audio-visual spatial localization; maximum-likelihood estimation (implicit)
+#### Experiment 1: Audio-visual spatial localization; maximum-likelihood estimation (implicit)
 
 Thirty-one ASD (age = 15.2±0.4 years) and 34 control (16.1±0.4 years) subjects participated in this experiment. As expected, the SCQ (ASD = 17.1±0.75; control = 4.8±0.5; t-test: t63=–13.31, p<0.0001) and AQ scores (ASD = 31.2±1.7; control = 15.3±1.5; t41=–6.61, p<0.0001) of the ASD group were significantly greater than that of the control group.
 
@@ -126,13 +210,21 @@ Subjects were seated 1 m from the speaker-array with their chins supported on a 
 
 For each subject, visual cue reliability, stimulus condition, and spatial disparity, psychometric functions were constructed by plotting the proportion of rightward responses as a function of stimulus location. These data were fit with a cumulative Gaussian function using psignifit, a MATLAB package that implements the maximum-likelihood method (Wichmann and Hill, 2001). The psychometric function yields two parameters that characterize participants’ localization performance: bias and threshold. Bias (μ) is the stimulus value at which responses are equally split between rightward and leftward. A bias close to 0° indicates highly accurate localization. The threshold is given by the SD (σ) of the fitted cumulative Gaussian function. The smaller the threshold, the greater the precision of spatial localization. The bias and threshold values estimated from these psychometric functions were used to test the predictions of optimal cue integration. The psychometric fitting could not estimate auditory thresholds for six ASD subjects, whose report did not vary as a function of auditory stimuli location. These subjects were not included in the remaining analyses reported in the main text.
 
-Based on unisensory localization, we may derive predictions for the combined case, given optimal cue combination by maximum-likelihood estimation (Ernst and Banks, 2002; Hillis et al., 2002; Alais and Burr, 2004; Kersten et al., 2004). First, assuming optimal cue combination, the threshold in the combined auditory-visual condition (σcom) should be equal to:(1)σcom= σa2σv2σa2+ σv2
+Based on unisensory localization, we may derive predictions for the combined case, given optimal cue combination by maximum-likelihood estimation (Ernst and Banks, 2002; Hillis et al., 2002; Alais and Burr, 2004; Kersten et al., 2004). First, assuming optimal cue combination, the threshold in the combined auditory-visual condition (σcom) should be equal to:
 
-with σa and σv being the thresholds in the unisensory auditory and visual localization, respectively. Second, the weight assigned to the visual cue in combined audio-visual stimuli (see Ernst and Banks, 2002 and Alais and Burr, 2004, for detail) should vary with its reliability. Specifically, as visual cue reliability decreases, the visual weight will also decrease. The visual weight, wv, is predicted to be:(2)Wv = 1σv21σv2+ 1σa2
+$$
+\sigma_{com}= \sqrt{\frac{\sigma_{a}^{2}\sigma_{v}^{2}}{\sigma_{a}^{2}+ \sigma_{v}^{2}}}
+$$
+
+with σa and σv being the thresholds in the unisensory auditory and visual localization, respectively. Second, the weight assigned to the visual cue in combined audio-visual stimuli (see Ernst and Banks, 2002 and Alais and Burr, 2004, for detail) should vary with its reliability. Specifically, as visual cue reliability decreases, the visual weight will also decrease. The visual weight, wv, is predicted to be:
+
+$$
+W_{v }= \frac{\frac{1}{\sigma_{v}^{2}}}{\frac{1}{\sigma_{v}^{2}}+ \frac{1}{\sigma_{a}^{2}}}
+$$
 
 and in turn the auditory cue weight (wa) is computed as 1 − wv.
 
-## Experiment 2: Audio spatial localization with disparate visual cues; causal inference (implicit)
+#### Experiment 2: Audio spatial localization with disparate visual cues; causal inference (implicit)
 
 Twenty-two ASD (age = 17.32±0.57 years) and 15 control (age = 16.86±0.55 years) subjects participated in this experiment. As expected, the SCQ (ASD = 16.42±1.12; control = 5.06±0.65; t-test: t35=7.84, p<0.0001) and AQ scores (ASD = 31.95±1.76; control = 13.76±1.61; t35=7.21, p<0.0001) of the ASD group were significantly greater than that of the control group.
 
@@ -142,7 +234,7 @@ For each subject, audio-visual disparity (∆), and visual cue reliability, psyc
 
 As an initial quantification of localization estimates, and putative differences in audio-visual biases between the groups, a third-order regression model of the form: y = a0 + a1∆ + a2∆2 + a3∆ American Psychiatric Association, 2013 was fitted to the auditory bias as a function of ∆ and visual cue reliability. Coefficient a1 represents how sensitive the bias is to changes in ∆ - larger a1 indicates a greater change in the bias for a given change in ∆. Coefficient a2 indicates if the dependence of bias on ∆ is uniform for positive and negative ∆ values. Importantly, coefficient a3 generally represents how the bias changes at large ∆ values – negative a3 indicates a saturation or a decrease in the bias at large ∆. If subjects perform causal inference (Körding et al., 2007), we expect a saturation or even a return to no bias at large ∆. Furthermore, partial R2 values associated with a1, a2, and a3 describe the contribution of each term in explaining the total variance. ASD and control subjects’ data was well-explained by the third-order regression model (ASD: R2=0.93±0.04; control: R2=0.88±0.03). A mixed-effects ANOVA with group, ∆, and visual cue reliability as factors compared the bias, threshold, and parameters of the regression model for the ASD and control groups.
 
-## Experiment 3: Audio-visual common source reports under spatial disparities (Explicit)
+#### Experiment 3: Audio-visual common source reports under spatial disparities (Explicit)
 
 Twenty-three23 ASD (age = 16.14±0.51 years) and 24 control (age = 17.10±0.42 years) subjects participated in this experiment. Six other ASD subjects were screened for this experiment, but showed poor auditory localization (c.f. Experiment 1). The SCQ (ASD = 16.91±0.83; control = 5.04±0.47; t-test: t57=11.46, p<0.0001) and AQ scores (ASD = 30.77±1.60; control = 15.18±1.60; t41=6.42, p<0.0001) of the ASD group were significantly greater than that of the control group.
 
@@ -152,7 +244,7 @@ For each subject, audio-visual disparity (∆), and visual cue reliability, the 
 
 Further, to quantify putative differences in how ASD and control subjects inferred the causal relationship between auditory and visual stimuli, Gaussian functions were fit to the proportion of common source reports as a function of ∆ (e.g. Rohe and Noppeney, 2015). These fits yielded three parameters of interest: (1) amplitude (tendency to report common cause when maximal), (2) mean (spatial disparity at which auditory and visual cues are most likely considered to originate from a common cause), and (3) width (spatial disparity range over which subjects are likely to report common cause).
 
-## Experiment 4: Audio-visual common source reports under temporal disparities (Explicit)
+#### Experiment 4: Audio-visual common source reports under temporal disparities (Explicit)
 
 Twenty-one ASD (age = 15.94±0.56 years) and 19 control (age = 16.3±0.47 years) subjects participated in this task. As expected, ASD subjects had significantly higher SCQ (ASD: SCQ = 18.31±1; control: SCQ = 4.92±0.73; t-test: t32=–9.41, p<0.0001) and AQ (ASD: AQ = 32.76±1.58; control: AQ = 14.58±1.15; t-test: t32=7.43, p<0.0001) scores than the control subjects. Subjects viewed a flash and heard an audio beep (same stimuli as in Experiments 1, 2, and 3) presented centrally either at the same time or at different asynchronies. Twenty-three different temporal disparities (∆) were presented: 0, ±10, ±20, ±50, ±80, ±100, ±150, ±200, ±250, ±300, ±500, and ±700 ms (positive ∆s indicate that flash led the auditory stimulus). Subjects indicated if the flash and beep were synchronous (exact instruction: ‘appeared at the same time’) or asynchronous (‘appeared at different times’) via button press on a standard computer mouse. Each ∆ was presented 25 times in random order.
 
@@ -160,7 +252,7 @@ Proportion of synchronous reports at each ∆ was calculated. A Gaussian functio
 
 A mixed-effects ANOVA with group as the between-subjects factor, and temporal disparity (∆) as a within-subjects factor compared the proportion of synchronous reports. Similarly, independent-samples t-tests compared the parameters of the Gaussian fits between the groups.
 
-## Experiment 5: Visual heading discrimination during concurrent object motion
+#### Experiment 5: Visual heading discrimination during concurrent object motion
 
 Fourteen ASD and 17 control subjects (ASD: 15.71±0.5 years; control: 16.3±0.6 years) participated in this task. The ASD group had significantly higher SCQ (ASD: 16.71±1.36; control: SCQ = 7.35±1.12; p<0.0001) and AQ scores (ASD: AQ = 33.78±2.20; control = 11.79±2.35, p<0.0001) than the control group. Details of the apparatus and experimental stimuli have been previously described (Dokka et al., 2019).
 
@@ -168,71 +260,197 @@ In brief, subjects viewed lateral movement of a multipart spherical object while
 
 Heading discrimination performance was quantified by fitting psychometric curves for each object motion direction and speed (Dokka et al., 2019). These fits yielded parameters that characterize the accuracy and precision of heading perception: bias and threshold. For statistical analyses, the bias measured with leftward object motion was multiplied by –1, such that expected biases were all positive (Dokka et al., 2019). To quantify the differences in the heading bias between groups, a third-order regression model of the form: y = b0 + b1X + b2X2 + b3X3, where X is the sign consistent logarithm of object motion speed was fitted to the heading bias. We compared the linear (b1), quadratic (b2), and cubic (b3) coefficients along with their corresponding partial R2 values between groups, similar to the analyses performed on the auditory bias in the audio-visual localization tasks.
 
-## Causal Inference Modeling
+### Causal Inference Modeling
 
-We modeled subject responses using a causal inference model (Figure 4A) where the observer has to infer whether two sensory cues (auditory and visual) come from the same or separate causes(s), and use this information to either integrate or not information from these cues. In each trial, we assume that the subject’s observations of the auditory and visual location (denoted Xa and Xv) are the experimenter defined veridical values (denoted by ϵa and ϵv) corrupted by sensory noise with variances σa2 and σv2 ,(3)pXaϵa= N(Xa;ϵa,σa2)(4)pXvϵv= N(Xv;ϵv,σv2)
+We modeled subject responses using a causal inference model (Figure 4A) where the observer has to infer whether two sensory cues (auditory and visual) come from the same or separate causes(s), and use this information to either integrate or not information from these cues. In each trial, we assume that the subject’s observations of the auditory and visual location (denoted $X_{a}$ and $X_{v}$) are the experimenter defined veridical values (denoted by $ϵ_{a}$ and $ϵ_{v}$) corrupted by sensory noise with variances $\sigma_{a}^{2}$ and $\sigma_{v}^{2}$ ,
 
-where N(x;μ,σ2) denotes the normal probability density function with mean μ and variance σ2 . We assume that subjects have a good estimate of their sensory uncertainties (over lifelong learning) and hence the subject’s estimated likelihoods become,(5)l(Sa)≡p(Xa|Sa)= N(Xa;Sa,σa2)(6)l(Sv)≡p(Xv|Sv)= N(Xv;Sv,σv2)
+$$
+pX_{a}ϵ_{a}= N(X_{a};ϵ_{a},\sigma_{a}^{2})
+$$
 
-where Sa and Sv denote the inferred location of auditory and visual stimuli. The subject’s joint prior over the cue locations is parameterized as a product of three terms which reflect:
 
-(a)  fnaturalSa,Sv : the subject’s natural prior over the unisensory cue locations. For example, subjects may have a prior that sensory cue locations are more likely to occur closer to midline as compared to peripheral locations. We model this component of the prior as normal distributions where the mean and variance are unknown parameters fitted to the data.(7)            fnaturalSa,Sv= NSa;μa,σap2NSv;μv,σvp2
 
-(b)  fCISa,Sv|C : the influence that the inferred cause (C) has on the knowledge of cue locations. In our causal inference model Sa is inferred as being equal to Sv if C=1 and independent if C=2.(8)fCI(Sa,Sv|C)={δ(sa−Sv)ifC=11ifC=2
+$$
+pX_{v}ϵ_{v}= N(X_{v};ϵ_{v},\sigma_{v}^{2})
+$$
 
-(c)  ftaskSa|D : the relationship between the inferred trial category (D) and the cue locations.
+where $N(x;\mu,\sigma^{2})$ denotes the normal probability density function with mean μ and variance $\sigma^{2}$ . We assume that subjects have a good estimate of their sensory uncertainties (over lifelong learning) and hence the subject’s estimated likelihoods become,
 
-## Implicit task
+$$
+l(S_{a})≡p(X_{a}|S_{a})= N(X_{a};S_{a},\sigma_{a}^{2})
+$$
 
-In the implicit discrimination task, where the trial category corresponds to the side of the auditory cue location relative to the midline, Sa is positive if Dimp = 1 and negative if Dimp =-1.(9) ftask(Sa,Sv|Dimp )={H(Sa)ifDimp=1H(−Sa)ifDimp=–1
+
+
+$$
+l(S_{v})≡p(X_{v}|S_{v})= N(X_{v};S_{v},\sigma_{v}^{2})
+$$
+
+where $S_{a}$ and $S_{v}$ denote the inferred location of auditory and visual stimuli. The subject’s joint prior over the cue locations is parameterized as a product of three terms which reflect:
+
+(a) $ f_{natural}S_{a},S_{v}$ : the subject’s natural prior over the unisensory cue locations. For example, subjects may have a prior that sensory cue locations are more likely to occur closer to midline as compared to peripheral locations. We model this component of the prior as normal distributions where the mean and variance are unknown parameters fitted to the data.
+
+$$
+            f_{natural}S_{a},S_{v}= NS_{a};\mu_{a},\sigma_{ap}^{2}NS_{v};\mu_{v},\sigma_{vp}^{2}
+$$
+
+(b) $ f_{CI}S_{a},S_{v}|C$ : the influence that the inferred cause (C) has on the knowledge of cue locations. In our causal inference model $S_{a}$ is inferred as being equal to $S_{v}$ if C=1 and independent if C=2.
+
+$$
+f_{CI}(S_{a},S_{v}|C)={\delta(s_{a}−S_{v})ifC=11ifC=2
+$$
+
+(c) $ f_{task}S_{a}|D$ : the relationship between the inferred trial category (D) and the cue locations.
+
+#### Implicit task
+
+In the implicit discrimination task, where the trial category corresponds to the side of the auditory cue location relative to the midline, $S_{a}$ is positive if Dimp = 1 and negative if Dimp =-1.
+
+$$
+ f_{task}(S_{a},S_{v}|D_{imp} )={H(S_{a})ifD_{imp}=1H(−S_{a})ifD_{imp}=–1
+$$
 
 where H(x) is the Heaviside function (H(x)=1 if x>0 and 0 otherwise).
 
-The product of Equations 7–9, defines the probability over cue locations conditioned on C and Dimp in the implicit task as(10)pimplicitSa,Sv|C,Dimp∝fnaturalSa,Sv fCISa,Sv|C ftaskSa,Sv|Dimp
+The product of Equations 7–9, defines the probability over cue locations conditioned on C and Dimp in the implicit task as
 
-which can be succinctly written as(11)pimplicitSa,Sv|Dimp,C∝ NSa;μa,σap2NSv;μv,σvp2C-1+(2-C)δSa-SvHDimpSa
+$$
+p_{implicit}S_{a},S_{v}|C,D_{imp}∝f_{natural}S_{a},S_{v} f_{CI}S_{a},S_{v}|C f_{task}S_{a},S_{v}|D_{imp}
+$$
 
-We parameterize the observer’s priors over Dimp and C as Bernoulli distributions with means pchoice  and pcommon.(12)pimplicit(Dimp=1)= Ber(Dimp;pchoiceimplicit)(13)p(C=1)= Ber(C;pcommon )
+which can be succinctly written as
 
-The posterior probability of the subject inferring the auditory cue to come from the right can be obtained by marginalizing over the observer’s belief whether the auditory and visual cue come from a single or from separate causes(14)pimplicit(Dimp=1|Xa,Xv)=∑c∈1,2pimplicitDimp=1Xa,Xv,C=cp(C=c|Xa,Xv)
+$$
+p_{implicit}S_{a},S_{v}|D_{imp},C∝ NS_{a};\mu_{a},\sigma_{ap}^{2}NS_{v};\mu_{v},\sigma_{vp}^{2}C-1+(2-C)\deltaS_{a}-S_{v}HD_{imp}S_{a}
+$$
 
-We assume the subject makes their response by choosing the response that has the highest posterior probability. If Rimplicit is the subject response (1 for right and –1 for left), then(15)Rimplicit=arg⁡maxd∈{-1,1}⁡pimplicit(Dimp=d|Xa,Xv)
+We parameterize the observer’s priors over Dimp and C as Bernoulli distributions with means $pchoice $ and pcommon.
 
-## Explicit task
+$$
+p_{implicit}(D_{imp}=1)= Ber(D_{imp};p_{choice}^{implicit})
+$$
+
+
+
+$$
+p(C=1)= Ber(C;pcommon )
+$$
+
+The posterior probability of the subject inferring the auditory cue to come from the right can be obtained by marginalizing over the observer’s belief whether the auditory and visual cue come from a single or from separate causes
+
+$$
+p_{implicit}(D_{imp}=1|X_{a},X_{v})=\sum_{c\in1,2}p_{implicit}D_{imp}=1X_{a},X_{v},C=cp(C=c|X_{a},X_{v})
+$$
+
+We assume the subject makes their response by choosing the response that has the highest posterior probability. If $R_{implicit}$ is the subject response (1 for right and –1 for left), then
+
+$$
+R_{implicit}=arg⁡maxd\in{-1,1}⁡p_{implicit}(D_{imp}=d|X_{a},X_{v})
+$$
+
+#### Explicit task
 
 We model the explicit task by assuming that the decision maker computes the belief over the trial category Dexp using the inferred belief over C, but not exactly equating both (graphical model in Figure 4A). This extends earlier approaches (Körding et al., 2007) which equate trial category Dexp with C, and additionally allows us to model task specific beliefs about the trial category. As we will show later, such a difference in beliefs between Dexp and C is mathematically equivalent to the subject making their decision by comparing their belief over C to a criterion different from 0.5.
 
-The subject’s knowledge about the relationship between the trial category and the inferred variable C is parameterized as αtask , as given by Equation 16 and Equation 17(16)p(C=1|D=1)= Ber[C;pcommon+αtask1-pcommon](17)p(C=1|D=2)= Ber[C;pcommon-αtaskpcommon]
+The subject’s knowledge about the relationship between the trial category and the inferred variable C is parameterized as $\alpha_{task}$ , as given by Equation 16 and Equation 17
 
-For αtask=0 there is no relationship between trial category D and C (e.g. before learning the task), and thus the prior over C reduces to pcommon. On the other extreme, αtask=1 corresponds to complete task-learning, where C and Dexp are identical.
+$$
+p(C=1|D=1)= Ber[C;pcommon+\alpha_{task}1-pcommon]
+$$
 
-The prior probability of the subject’s belief over Dexp in the explicit task is parameterized as a Bernoulli distribution with mean pchoice as given in Equation 18(18)pexplicit(D=1)= Ber(D;pchoiceexplicit)
 
-We modeled subject’s belief about the sensory cue locations as the product of two terms:  fnaturalSa,Sv and  fCISa,Sv|C (Equation 7 and Equation 8)pexplicit(Sa,Sv|C)∝  fnatural(Sa,Sv) fCI(Sa,Sv|C)(19)pexplicit(Sa,Sv|C)∝{ fnatural(Sa,Sv)δ(Sa−Sv),ifC=1fnatural(Sa,Sv),ifC=2
 
-with appropriate normalization constants obtained by integrating over all Sa  and Sv , we get(20)pexplicit(Sa,Sv|C)={  N(Sa;μa,σap2)N(Sv;μv,σvp2)N(μa;μv,σap2+σvp2)δ(Sa−Sv)ifC=1N(Sa;μa,σap2)N(Sv;μv,σvp2) ifC=2
+$$
+p(C=1|D=2)= Ber[C;pcommon-\alpha_{task}pcommon]
+$$
 
-Our model makes choice Rexplicit = 1 if(21) pexplicit(D=1|Xa ,Xv)> pexplicit(D=2|Xa ,Xv)
+For $\alpha_{task}=0$ there is no relationship between trial category D and C (e.g. before learning the task), and thus the prior over C reduces to $pcommon$. On the other extreme, $\alpha_{task}=1$ corresponds to complete task-learning, where C and Dexp are identical.
 
-which by Bayes rule reduces to,(22)pexplicit(Xa ,Xv|D=1)pchoiceexplicit>    pexplicit(Xa ,Xv|D=2)(1-pchoiceexplicit)
+The prior probability of the subject’s belief over Dexp in the explicit task is parameterized as a Bernoulli distribution with mean $pchoice$ as given in Equation 18
 
-where the likelihood over observations is evaluated by marginalizing across inferred sensory locations using the sensory likelihoods (Equation 5 and Equation 6), i.e.,(23)    pexplicitXa,Xv|C=c=∫∫pXa,Xv|Sa,SvpexplicitSa,Sv|C=cdSadSv
+$$
+p_{explicit}(D=1)= Ber(D;p_{choice}^{explicit})
+$$
 
-We can marginalize out C in Equation 22 to get(24)pchoiceexplicit pexplicit(Xa,Xv|C=1)[pcommon+αtask(1−pcommon)]+pchoiceexplicitpexplicit(Xa,Xv|C=2)[1−pcommon−αtask(1−pcommon)]>(1−pchoiceexplicit) pexplicit(Xa,Xv|C=1)[pcommon−αtask(pcommon)]+(1−pchoiceexplicit)pexplicit(Xa,Xv|C=2)[1−pcommon+αtask(pcommon)]
+We modeled subject’s belief about the sensory cue locations as the product of two terms: $ f_{natural}S_{a},S_{v}$ and $ f_{CI}S_{a},S_{v}|C$ (Equation 7 and Equation 8)
 
-By combining terms, Equation 24 can be simplified as(25) pexplicit(Xa,Xv|C=1)pcombined> pexplicit(Xa,Xv|C=2)(1-pcombined)
+$$
+p_{explicit}(S_{a},S_{v}|C)∝  f_{natural}(S_{a},S_{v}) f_{CI}(S_{a},S_{v}|C)
+$$
 
-where pcombined is a function of pcommon , pchoiceexplicit and αtask as given in Equation 26 which cannot be individually constrained.(26)pcombined=max(0,min(1,pcommon(2pchoiceexplicit−1)+αtask[pcommon(1−pchoiceexplicit+pchoiceexplicit(1−pcommon))](2pcommon−1)(2pchoiceexplicit−1)+2αtask[pcommon(1−pchoiceexplicit)+pchoiceexplicit(1−pcommon)]))
 
-We now show that a decision rule as given in Equation 26 is equivalent to a subject making their decision by comparing their inferred posterior pexplicitC=1|Xa,Xv to a criterion t, i.e., Rexplicit =1 if(27)pexplicit(C=1|Xa,Xv)>t
 
-Or equivalently(28)pexplicit(C=1|Xa,Xv)(1−t)>pexplicit(C=2|Xa,Xv)t
+$$
+p_{explicit}(S_{a},S_{v}|C)∝{ f_{natural}(S_{a},S_{v})\delta(S_{a}−S_{v}),ifC=1f_{natural}(S_{a},S_{v}),ifC=2
+$$
 
-which can be expanded using Bayes rule as given in Equation 29(29)pexplicit(Xa,Xv|C=1)(1−t)pcommon>pexplicit(Xa,Xv|C=2)(t)(1−pcommon)
+with appropriate normalization constants obtained by integrating over all $S_{a}  and S_{v}$ , we get
 
-Comparing Equation 29 to Equation 25, we can relate terms to get(30)pcombined=(1-t)pcommon1-tpcommon +(t)(1-pcommon)
+$$
+p_{explicit}(S_{a},S_{v}|C)={ \frac{ N(S_{a};\mu_{a},\sigma_{ap}^{2})N(S_{v};\mu_{v},\sigma_{vp}^{2})}{N(\mu_{a};\mu_{v},\sigma_{ap}^{2}+\sigma_{vp}^{2})}\delta(S_{a}−S_{v})ifC=1N(S_{a};\mu_{a},\sigma_{ap}^{2})N(S_{v};\mu_{v},\sigma_{vp}^{2}) ifC=2
+$$
 
-where the criterion t is a function of pcommon, pchoiceexplicit and αtask .
+Our model makes choice $R_{explicit}$ = 1 if
+
+$$
+ p_{explicit}(D=1|X_{a} ,X_{v})> p_{explicit}(D=2|X_{a} ,X_{v})
+$$
+
+which by Bayes rule reduces to,
+
+$$
+p_{explicit}(X_{a} ,X_{v}|D=1)p_{choice}^{explicit}>    p_{explicit}(X_{a} ,X_{v}|D=2)(1-p_{choice}^{explicit})
+$$
+
+where the likelihood over observations is evaluated by marginalizing across inferred sensory locations using the sensory likelihoods (Equation 5 and Equation 6), i.e.,
+
+$$
+    p_{explicit}X_{a},X_{v}|C=c=\int\intpX_{a},X_{v}|S_{a},S_{v}p_{explicit}S_{a},S_{v}|C=cdS_{a}dS_{v}
+$$
+
+We can marginalize out C in Equation 22 to get
+
+$$
+p_{choice}^{explicit} p_{explicit}(X_{a},X_{v}|C=1)[pcommon+\alpha_{task}(1−pcommon)]+p_{choice}^{explicit}p_{explicit}(X_{a},X_{v}|C=2)[1−pcommon−\alpha_{task}(1−pcommon)]>(1−p_{choice}^{explicit}) p_{explicit}(X_{a},X_{v}|C=1)[pcommon−\alpha_{task}(pcommon)]+(1−p_{choice}^{explicit})p_{explicit}(X_{a},X_{v}|C=2)[1−pcommon+\alpha_{task}(pcommon)]
+$$
+
+By combining terms, Equation 24 can be simplified as
+
+$$
+ p_{explicit}(X_{a},X_{v}|C=1)p_{combined}> p_{explicit}(X_{a},X_{v}|C=2)(1-p_{combined})
+$$
+
+where $p_{combined}$ is a function of $pcommon$ , $p_{choice}^{explicit}$ and $\alpha_{task}$ as given in Equation 26 which cannot be individually constrained.
+
+$$
+p_{combined}=max(0,min(1,\frac{p_{common}(2p_{choice}^{explicit}−1)+\alpha_{task}[p_{common}(1−p_{choice}^{explicit}+p_{choice}^{explicit}(1−p_{common}))]}{(2p_{common}−1)(2p_{choice}^{explicit}−1)+2\alpha_{task}[p_{common}(1−p_{choice}^{explicit})+p_{choice}^{explicit}(1−p_{common})]}))
+$$
+
+We now show that a decision rule as given in Equation 26 is equivalent to a subject making their decision by comparing their inferred posterior $p_{explicit}C=1|X_{a},X_{v}$ to a criterion t, i.e., $R_{explicit}$ =1 if
+
+$$
+p_{explicit}(C=1|X_{a},X_{v})>t
+$$
+
+Or equivalently
+
+$$
+p_{explicit}(C=1|X_{a},X_{v})(1−t)>p_{explicit}(C=2|X_{a},X_{v})t
+$$
+
+which can be expanded using Bayes rule as given in Equation 29
+
+$$
+p_{explicit}(X_{a},X_{v}|C=1)(1−t)pcommon>p_{explicit}(X_{a},X_{v}|C=2)(t)(1−pcommon)
+$$
+
+Comparing Equation 29 to Equation 25, we can relate terms to get
+
+$$
+p_{combined}=\frac{(1-t)pcommon}{1-tpcommon +(t)(1-pcommon)}
+$$
+
+where the criterion t is a function of $pcommon$, $p_{choice}^{explicit}$ and $\alpha_{task}$ .
 
 We provide further model derivation and fitting details in Supplementary Materials, Supplementary file 3, Supplementary file 4. We can also similarly derive the causal inference model for the simultaneity judgement by modeling the temporal percepts as Bayesian inference and replacing the spatial disparities with temporal disparities. Further details are provided in the Supplementary Materials, (Supplementary file 5).
 

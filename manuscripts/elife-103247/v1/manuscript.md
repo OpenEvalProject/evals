@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/010pmpe69 Department of Entomology, Faculty of Biology, Lomonosov Moscow State University Moscow Russian Federation
-2. https://ror.org/00sekdz59 Center for Computational Neuroscience, Flatiron Institute New York United States
-3. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-4. https://ror.org/03v76x132 Yale School of Medicine New Haven United States
-5. https://ror.org/03v76x132 Department of Cellular and Molecular Physiology, Yale School of Medicine New Haven United States
-6. https://ror.org/005dvqh91 Neuroscience Institute, NYU Langone Medical Center New York United States
+1. Department of Entomology, Faculty of Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+2. Center for Computational Neuroscience, Flatiron Institute New York United States ([ROR:00sekdz59](https://ror.org/00sekdz59))
+3. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+4. Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+5. Department of Cellular and Molecular Physiology, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+6. Neuroscience Institute, NYU Langone Medical Center New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))
 
 † Corresponding author
 
 ## Abstract
 
-The structure of compound eyes in arthropods has been the subject of many studies, revealing important biological principles. Until recently, these studies were constrained by the two-dimensional nature of available ultrastructural data. By taking advantage of the novel three-dimensional ultrastructural dataset obtained using volume electron microscopy, we present the first cellular-level reconstruction of the whole compound eye of an insect, the miniaturized parasitoid wasp Megaphragma viggianii . The compound eye of the female M. viggianii consists of 29 ommatidia and contains 478 cells. Despite the almost anucleate brain, all cells of the compound eye contain nuclei. As in larger insects, the dorsal rim area of the eye in M. viggianii contains ommatidia that are believed to be specialized in polarized light detection as reflected in their corneal and retinal morphology. We report the presence of three ‘ectopic’ photoreceptors. Our results offer new insights into the miniaturization of compound eyes and scaling of sensory organs in general.
+The structure of compound eyes in arthropods has been the subject of many studies, revealing important biological principles. Until recently, these studies were constrained by the two-dimensional nature of available ultrastructural data. By taking advantage of the novel three-dimensional ultrastructural dataset obtained using volume electron microscopy, we present the first cellular-level reconstruction of the whole compound eye of an insect, the miniaturized parasitoid wasp Megaphragma viggianii. The compound eye of the female M. viggianii consists of 29 ommatidia and contains 478 cells. Despite the almost anucleate brain, all cells of the compound eye contain nuclei. As in larger insects, the dorsal rim area of the eye in M. viggianii contains ommatidia that are believed to be specialized in polarized light detection as reflected in their corneal and retinal morphology. We report the presence of three ‘ectopic’ photoreceptors. Our results offer new insights into the miniaturization of compound eyes and scaling of sensory organs in general.
 
 ## Introduction
 
@@ -42,49 +42,534 @@ The main goal of this study is to reveal the ultrastructural organization of com
 
 ## Results
 
-## General description of the compound eye
+### General description of the compound eye
 
 Female compound eyes of the parasitoid wasp M. viggianii are oval in shape (Figure 1A) and measure about 50.6±1.5 μm (hereinafter mean ± s.d.) in dorsoventral extent. Their anterior-posterior extent is on average 32.6±0.73 μm. Each eye has 29 facets. The corneal surface of the facets is smooth. A single interfacet bristle is present near the posterior row of the eye, between facets E5, D5, and D4 (Figure 1B). No differences are visible on SEM (at the external cuticular level) between the facets of the eye.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig1-v1.jpg)
 
-**Figure 1.:** A) and the compound eye (B) of a female Megaphragma viggianii (side view).Ifb, interfacet bristle. The compound eye comprises 29 ommatidia named here as in Chua et al., 2023.
+**Figure 1.:** Ifb, interfacet bristle. The compound eye comprises 29 ommatidia named here as in Chua et al., 2023.
 
-## General description of ommatidia
+### General description of ommatidia
 
 Using the vEM of the whole M. viggianii eye we found a total of 478 cells: 261 photoreceptor cells, 116 cone cells, 58 primary pigment cells (PPCs), 24 secondary pigment cells (SPCs), 16 rim pigment cells (surrounding the eye on the periphery), and 3 ‘ectopic’ photoreceptors (see ‘Ectopic’ photoreceptors). Each of the 29 ommatidia contains nine photoreceptor cells, four cone cells, and two PPCs (Figure 2A; see Video 1). The length of one ommatidium is on average 21.2 µm, gradually increasing from the dorsal rim area (DRA) to the ventral part of the eye (Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig2-v1.jpg)
 
-**Figure 2.:** M. viggianii.(A) A front view from the cornea side; (B) a rear view from the retinal side; (C) a side view; (D) a rear view of the ommatidia DA; (E) a rear view of the ommatidia DA; (F) a semi-side view of pigment granules of all cells. cc, crystalline cones; cl, corneal lense; DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia; ppc, primary pigment cells; ppcpg, pigment granules of PPC; prpg, retinal (photoreceptor) pigment granules; rpcpg, rim cells pigment granules; spc, secondary pigment cells; spcpg, secondary pigment cell pigment granules. Ommatidia are named as in Chua et al., 2023.
+**Figure 2.:** (A) A front view from the cornea side; (B) a rear view from the retinal side; (C) a side view; (D) a rear view of the ommatidia DA; (E) a rear view of the ommatidia DA; (F) a semi-side view of pigment granules of all cells. cc, crystalline cones; cl, corneal lense; DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia; ppc, primary pigment cells; ppcpg, pigment granules of PPC; prpg, retinal (photoreceptor) pigment granules; rpcpg, rim cells pigment granules; spc, secondary pigment cells; spcpg, secondary pigment cell pigment granules. Ommatidia are named as in Chua et al., 2023.
 
-## The dioptric apparatus
+![Video 1.](https://cdn.elifesciences.org/articles/103247/elife-103247-video1.mp4.jpg)
+
+**Video 1.:** cc, crystalline cones; cl, corneal lense; ccn, nuclei of crystalline cone cells; ePR, ‘ectopic’ photoreceptors; ppc, primary pigment cells; rbd, rhabdoms; spc, secondary pigment cells; R1–R8, retinal cells.
+
+**Table 1.**
+ Linear measurements (µm) of M. viggianii eye components.Diameter*,†, diameter of rhabdom measured in orthogonal planes, according to its not round shape. Hereinafter mean ± s.d. DRA, dorsal rim ommatidia in general (DRAm and DRA+); DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia; non-DRA, regular (non-DRA) ommatidia. Raw data, Supplementary file 1a.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th rowspan="3">Ommatidium length</th>
+      <th colspan="4">Lense</th>
+      <th colspan="2">Cone</th>
+      <th colspan="5">Rhabdom</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Diameter</th>
+      <th rowspan="2">Thickness</th>
+      <th colspan="2">Curvature</th>
+      <th rowspan="2">Length</th>
+      <th rowspan="2">Width</th>
+      <th rowspan="2">Diameter (distal)</th>
+      <th rowspan="2">Diameter central*</th>
+      <th rowspan="2">Diameter central†</th>
+      <th rowspan="2">Diameter mean</th>
+      <th rowspan="2">Length</th>
+    </tr>
+    <tr>
+      <th>inner</th>
+      <th>outer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRA</td>
+      <td>19.2±0.37</td>
+      <td>6.9±0.89</td>
+      <td>2.5±0.56</td>
+      <td>1.2±0.32</td>
+      <td>3.3±0.64</td>
+      <td>3.0±0.38</td>
+      <td>4.9±0.66</td>
+      <td>2.0±0.16</td>
+      <td>2.1±0.32</td>
+      <td>2.2±0.23</td>
+      <td>2.1±0.18</td>
+      <td>13.4±0.64</td>
+    </tr>
+    <tr>
+      <td>DRAm</td>
+      <td>19.0±0.20</td>
+      <td>6.5±0.51</td>
+      <td>2.2±0.28</td>
+      <td>1.1±0.21</td>
+      <td>3.1±0.51</td>
+      <td>2.8±0.28</td>
+      <td>4.5±0.21</td>
+      <td>1.9±0.11</td>
+      <td>1.9±0.16</td>
+      <td>2.2±0.24</td>
+      <td>2.1±0.11</td>
+      <td>13.7±0.29</td>
+    </tr>
+    <tr>
+      <td>DRA+</td>
+      <td>19.7±0.15</td>
+      <td>7.9±0.85</td>
+      <td>3.2±0.26</td>
+      <td>1.6±0.19</td>
+      <td>3.9±0.68</td>
+      <td>3.4±0.14</td>
+      <td>5.8±0.21</td>
+      <td>2.2±0.068</td>
+      <td>2.5±0.21</td>
+      <td>2.2±0.25</td>
+      <td>2.4±0.11</td>
+      <td>12.6±0.63</td>
+    </tr>
+    <tr>
+      <td>Non-DRA</td>
+      <td>22.3±2.5</td>
+      <td>8.0±0.77</td>
+      <td>3.3±0.40</td>
+      <td>3.0±0.52</td>
+      <td>4.7±0.39</td>
+      <td>4.6±0.60</td>
+      <td>6.7±0.25</td>
+      <td>2.7±0.26</td>
+      <td>2.9±0.25</td>
+      <td>2.8±0.27</td>
+      <td>2.9±0.21</td>
+      <td>14.2±1.8</td>
+    </tr>
+  </tbody>
+</table>
+
+### The dioptric apparatus
 
 The dioptric apparatus (DA) of each ommatidium consists of the biconvex lens and crystalline cone (Figures 2D, E, 3A, G). The diameter of the lens is 6.9±0.89 µm in DRA and 8.0±0.77 µm in non-DRA ommatidia (Table 1). The lenses are covered by a cuticle of 0.28±0.050 µm depth (Figure 3A and G). The greatest thickness of the lens is 2.5±0.56 µm in DRA and 3.3±0.40 µm in non-DRA ommatidia. The outer/inner radii of lens curvature are 3.3±0.64/1.2±0.32 µm and 4.7±0.39/3.0±0.52 µm in DRA and non-DRA ommatidia, respectively. The volume of the lens is 16.5±14.0 µm3 in DRA and 41.4±9.0 µm3 in non-DRA (Table 2; see Supplementary file 1b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-v1.jpg)
+
+**Figure 3.:** (A–F) Dorsal rim area (DRA) ommatidia (B5); (G–L) non-DRA ommatidia (C3). (A, G) A longitudinal section through one ommatidium; (B, H) a cross-section through the proximal part of a corneal lens; (C, I) a cross-section through the center of a cone; (D, J) a cross-section through a distal rhabdom, directly under the cone; (E, K) a cross-section through the center of a rhabdom; (F, L) a cross-section through a distal rhabdom. cc, crystalline cone; ccn, nuclei of crystalline cone cells; cl, corneal lens; ppc, primary pigment cells; R1–R8, retinal cells; spc, secondary pigment cells; asterisk (*) marks cone cell projections.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia. The ommatidia are marked as follows: DRA orange; non-DRA green. Ommatidia are named as in Chua et al., 2023. Scheme of cross-sections of ommatidia (B): 1, through the center of the cone; 2, through the distal rhabdom, directly under the cone; 3, through the center of the rhabdom. EM sections through an ommatidium of M. viggianii (C), as in scheme (B). cc, crystalline cones; ccn, nuclei of crystalline cone cells; ppc, primary pigment cells; R1–R8, retinal cells; spc, secondary pigment cells. In ommatidia D7, E7, D6, E5, C4, D4, and E4, the major part of the dioptric apparatus was damaged due to milling (black area in slides).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-figsupp3-v1.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-figsupp4-v1.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig3-figsupp5-v1.jpg)
+
+**Table 2.**
+ Mean volumes (µm3) for cellular and subcellular elements of ommatidia in M. viggianii.The volumes were obtained from 3D models. DRA, dorsal rim ommatidia in general (DRAm and DRA+); DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia; non-DRA, regular (non-DRA) ommatidia; R1-R8, retinal cells; PPC, primary pigment cells; SPC, secondary pigment cells. Raw data, Supplementary file 1b.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="9">Retinal cell</th>
+      <th rowspan="2">Cone</th>
+      <th rowspan="2">PPC</th>
+      <th rowspan="2">SPC</th>
+      <th rowspan="2">Lense</th>
+    </tr>
+    <tr>
+      <th>R1</th>
+      <th>R2</th>
+      <th>R3</th>
+      <th>R7'</th>
+      <th>R4</th>
+      <th>R5</th>
+      <th>R6</th>
+      <th>R7</th>
+      <th>R8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Soma</td>
+      <td>DRA</td>
+      <td>17.5±2.0</td>
+      <td>24.4±3.8</td>
+      <td>17.9±2.3</td>
+      <td>33.0±2.5</td>
+      <td>18.0±2.0</td>
+      <td>25.2±4.1</td>
+      <td>17.9±1.6</td>
+      <td>32.1±4.8</td>
+      <td>15.8±1.9</td>
+      <td>13.1±6.0</td>
+      <td>47.1±14.4</td>
+      <td>22.0±4.7</td>
+      <td>16.5±14.0</td>
+    </tr>
+    <tr>
+      <td>DRAm</td>
+      <td>16.4±1.2</td>
+      <td>22.3±2.3</td>
+      <td>17.7±2.3</td>
+      <td>32.2±2.0</td>
+      <td>17.2±1.4</td>
+      <td>23.4±3.1</td>
+      <td>17.1±0.8</td>
+      <td>30.0±3.4</td>
+      <td>14.8±0.8</td>
+      <td>9.5±1.2</td>
+      <td>40.6±9.5</td>
+      <td>20.2±4.3</td>
+      <td>8.6±3.3</td>
+    </tr>
+    <tr>
+      <td>DRA+</td>
+      <td>19.8±2.7</td>
+      <td>29.2±3.7</td>
+      <td>18.3±3.1</td>
+      <td>34.8±3.7</td>
+      <td>20.0±3.0</td>
+      <td>29.4±4.3</td>
+      <td>19.9±1.9</td>
+      <td>37.2±6.7</td>
+      <td>18.2±2.5</td>
+      <td>21.3±4.5</td>
+      <td>61.4±13.0</td>
+      <td>26.2±2.6</td>
+      <td>34.8±17.2</td>
+    </tr>
+    <tr>
+      <td>Non-DRA</td>
+      <td>21.0±3.3</td>
+      <td>29.5±3.1</td>
+      <td>22.0±2.6</td>
+      <td>53.3±11.1</td>
+      <td>22.4±3.5</td>
+      <td>31.1±3.2</td>
+      <td>20.5±4.5</td>
+      <td>30.6±8.5</td>
+      <td>28.2±4.3</td>
+      <td>32.9±5.9</td>
+      <td>64.5±11.4</td>
+      <td>24.5±3.2</td>
+      <td>41.4±9.0</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Nuclei</td>
+      <td>DRA</td>
+      <td>6.5±0.46</td>
+      <td>7.2±0.89</td>
+      <td>6.7±0.64</td>
+      <td>8.2±0.83</td>
+      <td>6.7±0.52</td>
+      <td>7.4±0.73</td>
+      <td>6.8±0.36</td>
+      <td>8.4±1.03</td>
+      <td>7.0±0.63</td>
+      <td>6.6±0.59</td>
+      <td>7.5±0.86</td>
+      <td>6.6±0.78</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>DRAm</td>
+      <td>6.4±0.42</td>
+      <td>6.8±0.72</td>
+      <td>6.8±0.62</td>
+      <td>8.4±0.61</td>
+      <td>6.7±0.53</td>
+      <td>7.3±0.66</td>
+      <td>6.8±0.38</td>
+      <td>8.3±0.98</td>
+      <td>6.8±0.53</td>
+      <td>6.5±0.65</td>
+      <td>7.4±0.93</td>
+      <td>6.8±0.76</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>DRA+</td>
+      <td>6.8±0.73</td>
+      <td>8.0±1.2</td>
+      <td>6.4±0.75</td>
+      <td>7.6±1.1</td>
+      <td>6.8±0.60</td>
+      <td>7.7±0.72</td>
+      <td>6.9±0.47</td>
+      <td>8.6±0.87</td>
+      <td>7.4±0.73</td>
+      <td>6.9±0.38</td>
+      <td>7.5±0.75</td>
+      <td>5.9±0.42</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Non-DRA</td>
+      <td>7.0±0.56</td>
+      <td>7.6±0.91</td>
+      <td>7.2±0.73</td>
+      <td>9.2±1.1</td>
+      <td>7.2±0.85</td>
+      <td>7.9±0.71</td>
+      <td>6.9±0.98</td>
+      <td>7.9±1.2</td>
+      <td>8.3±0.80</td>
+      <td>7.5±0.93</td>
+      <td>7.6±0.98</td>
+      <td>6.4±1.0</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Rhabdomere</td>
+      <td>DRA</td>
+      <td>1.8±0.55</td>
+      <td>3.1±0.74</td>
+      <td>2.3±0.58</td>
+      <td>3.9±0.81</td>
+      <td>1.7±0.27</td>
+      <td>3.2±0.69</td>
+      <td>1.8±0.83</td>
+      <td>4.2±1.1</td>
+      <td>0.86±0.25</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>DRAm</td>
+      <td>1.5±0.28</td>
+      <td>2.7±0.46</td>
+      <td>2.0±0.44</td>
+      <td>3.5±0.4</td>
+      <td>1.7±0.26</td>
+      <td>2.9±0.34</td>
+      <td>1.4±0.59</td>
+      <td>3.6±0.47</td>
+      <td>0.73±0.05</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>DRA+</td>
+      <td>2.4±0.19</td>
+      <td>4.0±0.46</td>
+      <td>2.9±0.58</td>
+      <td>4.8±0.61</td>
+      <td>1.9±0.21</td>
+      <td>4.1±0.53</td>
+      <td>2.6±0.39</td>
+      <td>5.7±1.6</td>
+      <td>1.2±0.42</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Non-DRA</td>
+      <td>4.1±1.6</td>
+      <td>5.6±1.3</td>
+      <td>3.2±0.9</td>
+      <td>12.7±3.9</td>
+      <td>3.6±1.3</td>
+      <td>5.9±1.0</td>
+      <td>3.2±0.74</td>
+      <td>5.5±2.1</td>
+      <td>6.7±1.6</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
 
 The crystalline cone comprises four cone cells (Figures 2D, E—4A, C). Each cone cell has a long and thin projection that extends down to the basal matrix along retinal cells (Figure 3D–F and J–I). Due to the constant position of cone cell projections, we enumerate them according to their passing between the retinula cells: C1: between R1 and R1; C2: between R3 and R7’; C3: between R4 and R5; C4: between R6 and R7(R8) (see ‘Retinula cells and rhabdom’) (Figure 3D–F, J, and K). DRA ommatidia have small cones with nuclei that fill most of the cone cell volume (Figures 2D, E—4A, B, E, F, I, J). In DRA ommatidia, the mean volume of a cone cell is 13.1±6.0 µm3 and of its nucleus 6.6±0.59 µm3 (Table 2). In non-DRA ommatidia, the nuclei are elongated, positioned in the upper third of the cells perpendicular to the ommatidial long axis, leaving the central part of the cone free (Figures 2D, E—5G–I). Reconstruction has shown that the nuclei of non-DRA ommatidia form an aperture (Figures 2D and 4D, H). The mean volume of a cone cell in non-DRA ommatidia is 32.9±5.9 µm3 and of its nucleus 7.5±0.93 µm3 (Table 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig4-v1.jpg)
 
-**Figure 4.:** M. viggianii.(A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6; C, D, G, H, K, L) non-DRA ommatidia (C4). cc1–4, crystalline cone cells; cc1n–4 n, nuclei of crystalline cone cells; cl, corneal lens; ppc1, 2, primary pigment cells; ppc1n, ppc2n, nuclei of PPC; R1–R8, retinal cells; R1n–8 n, nuclei of retinal cells; spc, secondary pigment cells; spcn, nuclei of secondary pigment cells. Colors of nuclei same as colors of their cells.
+**Figure 4.:** (A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6; C, D, G, H, K, L) non-DRA ommatidia (C4). cc1–4, crystalline cone cells; cc1n–4 n, nuclei of crystalline cone cells; cl, corneal lens; ppc1, 2, primary pigment cells; ppc1n, ppc2n, nuclei of PPC; R1–R8, retinal cells; R1n–8 n, nuclei of retinal cells; spc, secondary pigment cells; spcn, nuclei of secondary pigment cells. Colors of nuclei same as colors of their cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig5-v1.jpg)
 
-**Figure 5.:** M. viggianii.(A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6); (C, D, G, H, K, L) non-DRA ommatidia (C4). ppc1, 2, primary pigment cells; ppc1pg, ppc2pg, pigment granules of PPC; R1–R8, retinal cells; R1pg–R8pg, pigment granules of retinal cells; spc, secondary pigment cells; spcpg, pigment granules of secondary pigment cells. Colors of pigment granules are the same as the colors of their cells.
+**Figure 5.:** (A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6); (C, D, G, H, K, L) non-DRA ommatidia (C4). ppc1, 2, primary pigment cells; ppc1pg, ppc2pg, pigment granules of PPC; R1–R8, retinal cells; R1pg–R8pg, pigment granules of retinal cells; spc, secondary pigment cells; spcpg, pigment granules of secondary pigment cells. Colors of pigment granules are the same as the colors of their cells.
 
-## Primary pigment cells
+### Primary pigment cells
 
 Two PPCs envelop the cone of each ommatidium (Figures 2C—4) and are situated lower than the SPCs. The volume of PPC is 47.1±14.4 µm3 in DRA ommatidia and 64.5±11.4 µm3 in non-DRA ommatidia (Table 2). The PPCs are densely filled with spherical pigment granules, identical in DRA and non-DRA ommatidia (Figures 2F, 3, and 5). The granules have a mean volume of 0.18±0.039 µm3. The PPCs contain on average 144±52 pigment granules, their total volume per cell being 20.63±10.52 µm3. The nuclei are positioned in the lower half of the cells, beneath the level of the SPCs (Figure 4). The volume of PPC nuclei is equal in DRA and non-DRA ommatidia; their mean volume is 7.5±0.94 µm3 (7.5±0.86 µm3 and 7.6±0.98 µm3 for DRA and non-DRA, respectively) (Table 2). Several small oval mitochondria are positioned in the dorsal half of PPC (Figure 6). The mean chondriome volume is 0.46±0.14 µm3.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig6-v1.jpg)
 
-**Figure 6.:** M. viggianii.(A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6); (C, D, G, H, K, L) non-DRA ommatidia (C4). ppc1, 2, primary pigment cells; ppc1mt, ppc 2mt, mitochondria of PPC; R1–R8, retinal cells; R1mt–R8mt, mitochondria of retinal cells; spc, secondary pigment cells; spcpg, mitochondria of secondary pigment cells. Colors of mitochondria are the same as the colors of their cells.
+**Figure 6.:** (A, B, E, F, I, J) Dorsal rim area (DRA) ommatidia (B6); (C, D, G, H, K, L) non-DRA ommatidia (C4). ppc1, 2, primary pigment cells; ppc1mt, ppc 2mt, mitochondria of PPC; R1–R8, retinal cells; R1mt–R8mt, mitochondria of retinal cells; spc, secondary pigment cells; spcpg, mitochondria of secondary pigment cells. Colors of mitochondria are the same as the colors of their cells.
 
-## Secondary pigment cells
+### Secondary pigment cells
 
 Twenty-four SPCs are positioned directly beneath the cornea (Figures 2—4). Each ommatidium of the central part of the eye is surrounded by four SPCs, while each marginal ommatidium is surrounded by two SPCs, on the internal margin of the eye (Figure 2A). No extensions of SPC adjoin the retinula cells down to the basal matrix. The volume of SPC is similar near DRA and non-DRA ommatidia (Table 2). The nuclei of SPC have a mean volume of 6.4±1.0 µm3. The SPCs are filled with pigment granules (Figures 2F and 5B, D), 158±28 per cell, having a mean unit volume 0.050±0.016 µm3. The total volume of pigment granules per cell is about 7.9±3.0 µm3 (Table 3). The shape of the granules of SPC in the dorsal third of the eye, near the DRA ommatidia, is round. The shape of pigment granules in the center and proximal third of the eye (around the non-DRA ommatidia) is oval (Figure 5B and D). Several small oval mitochondria are positioned in the dorsal half of SPC (Figure 6). The mean volume of the chondriome is 0.24±0.15 µm3.
 
-## Retinula cells and the rhabdom
+**Table 3.**
+ Volumes (µm3) of pigment granules and mitochondria in ommatidia of M. viggianii and Trichogramma evanescens.The data for T. evanescens are from Fischer et al., 2019. R1–R8, retinal cells; mt, mitochondria; pg, pigment granules; PPC, primary pigment cells; SPC, secondary pigment cells. B6, C4, A3, A0, ommatidia on which cells pigment granules and mitochondria were reconstructed. Raw data, see Supplementary file 1c and e.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Organelle type</th>
+      <th>R1</th>
+      <th>R2</th>
+      <th>R3</th>
+      <th>R7'</th>
+      <th>R4</th>
+      <th>R5</th>
+      <th>R6</th>
+      <th>R7</th>
+      <th>R8</th>
+      <th>PPC</th>
+      <th>SPC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">M. viggianii</td>
+      <td rowspan="2">B6, D7, C4, A3, A0</td>
+      <td>PG</td>
+      <td>2.5±0.71</td>
+      <td>3.2±0.86</td>
+      <td>2.1±0.51</td>
+      <td>6.5±2.1</td>
+      <td>2.4±0.31</td>
+      <td>2.7±0.76</td>
+      <td>2.2±0.36</td>
+      <td>5.5±2.3</td>
+      <td>2.0±1.0</td>
+      <td>20.6±10.5</td>
+      <td>7.9±3.0</td>
+    </tr>
+    <tr>
+      <td>Mt</td>
+      <td>1.2±0.40</td>
+      <td>1.8±0.56</td>
+      <td>1.0±0.32</td>
+      <td>2.8±0.12</td>
+      <td>1.2±0.39</td>
+      <td>1.8±0.54</td>
+      <td>1.0±0.42</td>
+      <td>2.0±0.59</td>
+      <td>1.5±0.96</td>
+      <td>0.53±0.35</td>
+      <td>0.31±0.070</td>
+    </tr>
+    <tr>
+      <td rowspan="2">T. evanescens</td>
+      <td rowspan="2">Three central ommatidia</td>
+      <td>PG</td>
+      <td>2.0±0.12</td>
+      <td>2.1±0.16</td>
+      <td>1.9±0.07</td>
+      <td>2.5±0.19</td>
+      <td>2.0±0.14</td>
+      <td>2.1±0.07</td>
+      <td>1.9±0.15</td>
+      <td>3.0±0.23</td>
+      <td>0.66±0.12</td>
+      <td>8.5±1.4</td>
+      <td>4.0±0.53</td>
+    </tr>
+    <tr>
+      <td>Mt</td>
+      <td>1.8±0.08</td>
+      <td>2.8±0.19</td>
+      <td>1.9±0.05</td>
+      <td>1.4±0.23</td>
+      <td>2.1±0.08</td>
+      <td>2.8±0.14</td>
+      <td>1.9±0.14</td>
+      <td>1.8±0.29</td>
+      <td>0.59±0.05</td>
+      <td>0.46±0.14</td>
+      <td>0.32±0.09</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M. viggianii</td>
+      <td rowspan="4">%</td>
+      <td>PG</td>
+      <td>12.1±1.9</td>
+      <td>11.4±1.8</td>
+      <td>11.2±2.6</td>
+      <td>13.2±1.7</td>
+      <td>10.5±1.9</td>
+      <td>10.5±1.5</td>
+      <td>10.3±1.5</td>
+      <td>13.2±1.7</td>
+      <td>8.9±3.4</td>
+      <td>32.1±11.5</td>
+      <td>26.1±10.9</td>
+    </tr>
+    <tr>
+      <td>Mt</td>
+      <td>5.7±1.0</td>
+      <td>7.0±1.8</td>
+      <td>4.9±1.3</td>
+      <td>6.6±1.8</td>
+      <td>5.5±1.5</td>
+      <td>6.8±1.0</td>
+      <td>5.0±1.0</td>
+      <td>5.2±0.51</td>
+      <td>5.0±1.9</td>
+      <td>0.60±0.0042</td>
+      <td>1.1±0.42</td>
+    </tr>
+    <tr>
+      <td rowspan="2">T. evanescens</td>
+      <td>PG</td>
+      <td>11.3±1.7</td>
+      <td>7.9±0.63</td>
+      <td>9.6±0.84</td>
+      <td>13.3±2.1</td>
+      <td>11.4±1.7</td>
+      <td>7.9±0.81</td>
+      <td>11.2±0.45</td>
+      <td>11.6±0.43</td>
+      <td>7.8±0.76</td>
+      <td>21.0±0.94</td>
+      <td>19.1±2.4</td>
+    </tr>
+    <tr>
+      <td>Mt</td>
+      <td>9.8±1.1</td>
+      <td>10.3±0.72</td>
+      <td>9.5±0.86</td>
+      <td>7.6±0.51</td>
+      <td>11.6±0.82</td>
+      <td>10.5±0.27</td>
+      <td>11.0±0.24</td>
+      <td>6.9±0.75</td>
+      <td>6.9±0.45</td>
+      <td>1.1±0.17</td>
+      <td>1.5±0.31</td>
+    </tr>
+  </tbody>
+</table>
+
+### Retinula cells and the rhabdom
 
 The retina area of each ommatidium consists of nine photoreceptor cells (PR) (Figures 3 and 4; Figure 3—figure supplements 1–5), six of which (R1–R6) send short axons that project to the lamina and the remaining three (R7, R7’, R8) send long axons that reach the medulla. The position of the eighth retinula cell in relation to the position of the cone cell projections and the axon targets in the optic lobes can be used for recognition and labeling of all other cells (see ‘Identifying the retinula cells and terminology’). The nuclei of retinula cells are arranged on four levels (Figure 4). The most distal position is occupied by the nuclei of PR R1, R3, R4, and R6. More proximally the nuclei of partner cells R2 and R5 are situated opposite each other and R7 PR. The nuclei of R7’ and R8 PR are positioned proximally; R8 is the lowest (Figure 4). The majority of R7 cells show lighter rhabdomeres (less electron density) than other PR (Figure 3D and J; Figure 3—figure supplements 1–5).
 
@@ -94,15 +579,80 @@ The soma of retinula cells is filled with densely packed pigment granules (Figur
 
 The distal region of the cells contains more mitochondria profiles than the proximal region (Figures 3 and 6; see Figure 3—figure supplements 1–5). In retinula cells of DRA ommatidia, the mitochondria are elongated and have numerous units (Figure 6). In non-DRA ommatidia, the mitochondria are mostly dendriform. The volume of the chondriome varies from 0.47 µm3 to 4.03 µm3 (see Supplementary file 1b). No tracheoles are present in the retina.
 
-## ‘Ectopic’ photoreceptors (ePR)
+### ‘Ectopic’ photoreceptors (ePR)
 
 We found near the dorsal margin of the eye three ‘ectopic’ photoreceptor cells (per eye), each of which has several minute rhabdomeres: 8 in ePR1, 9 in ePR2, and 12 in ePR3 (Figure 7B–D). These cells are situated in the retinal area, behind the first row of DRA ommatidia: ePR1 over D7 and E7, ePR2 over B6, and ePR3 over A5 (Figure 7A–D), beneath the cuticle and pigment cells. The ePR have no DA of their own and no connection with the DAs of the adjacent ommatidia. All three cells are drop-shaped and are situated at a distance from each other (they do not touch each other) (see Video 2). The mean volume of ePR cell is 25.1±1.4 µm3 (Table 4). In the distal part, a large nucleus is situated, its volume being 7.9±0.73 µm3. The mitochondria in ePR are dendriform (Figure 7B). The mean volume of the chondriome is 1.9±0.19 µm3. All three cells have their own pigment granules, which resemble in shape and size the pigment granules of retinal cells (Figure 7B). The mean volume of pigment granules is 0.49±0.17 µm3. The axons of the ePR form a bundle and do not project into the lamina, reaching the medulla directly from the eye (Chua et al., 2023).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig7-v1.jpg)
 
-**Figure 7.:** M. viggianii.(A) A 3D reconstruction of the eye: posterior view from the retinal area with labeled ePRs; (B) a 3D reconstruction of ePRs; (C, D) an EM section through dorsal border of the eye; (F) an EM section through the eye showing rim pigment cells (RPC). cc, crystalline cones; cl, corneal lens; ePR1-3, ‘ectopic’ photoreceptors; mt, mitochondria; nuc, nuclei; pg, pigment granules; ppc, primary pigment cells; rbd, rhabdom; rbm, rhabdomeres of ‘ectopic’ photoreceptors; spc, secondary pigment cells. B6, D7, E7, DRA ommatidia abutting ‘ectopic’ photoreceptors.
+**Figure 7.:** (A) A 3D reconstruction of the eye: posterior view from the retinal area with labeled ePRs; (B) a 3D reconstruction of ePRs; (C, D) an EM section through dorsal border of the eye; (F) an EM section through the eye showing rim pigment cells (RPC). cc, crystalline cones; cl, corneal lens; ePR1-3, ‘ectopic’ photoreceptors; mt, mitochondria; nuc, nuclei; pg, pigment granules; ppc, primary pigment cells; rbd, rhabdom; rbm, rhabdomeres of ‘ectopic’ photoreceptors; spc, secondary pigment cells. B6, D7, E7, DRA ommatidia abutting ‘ectopic’ photoreceptors.
 
-## Rim pigment cells
+**Table 4.**
+ Volumes (µm3) and number for ‘ectopic’ photoreceptors in M. viggianii.EPR1–3, ‘ectopic’ photoreceptors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>Nuclei</th>
+      <th>Rhabdomeres (total volume)</th>
+      <th>Pigment granules (total volume)</th>
+      <th>Number of pigment granules per cell</th>
+      <th>Mitochondria total volume</th>
+      <th>Number of mitochondria per cell</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EPR1</td>
+      <td>26.5</td>
+      <td>8.8</td>
+      <td>2.5</td>
+      <td>2.8</td>
+      <td>117</td>
+      <td>1.8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>EPR2</td>
+      <td>25.1</td>
+      <td>7,5</td>
+      <td>2.4</td>
+      <td>3.2</td>
+      <td>130</td>
+      <td>2.2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>EPR3</td>
+      <td>23.6</td>
+      <td>7.6</td>
+      <td>2.2</td>
+      <td>3</td>
+      <td>105</td>
+      <td>1.9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>25.1±1.4</td>
+      <td>7.9±0.73</td>
+      <td>2.4±0.15</td>
+      <td>2.9±0.22</td>
+      <td>117±12</td>
+      <td>1.9±0.19</td>
+      <td>7±3</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 2.](https://cdn.elifesciences.org/articles/103247/elife-103247-video2.mp4.jpg)
+
+**Video 2.:** cc, crystalline cones; cl, corneal lense; ccn, nuclei of crystalline cone cells; ePR, ‘ectopic’ photoreceptors; mt, mitochondria; nuc, nuclei; pg, pigment granules; ppc, primary pigment cells; R1–R8, retinal cells; rbm, rhabdomeres; spc, secondary pigment cells.
+
+### Rim pigment cells
 
 The eye is surrounded by 16 rim pigment cells (RPC), which are morphologically similar to PPCs (Figures 2F and 7E, F). Although they have not been reconstructed because identifying their boundaries is difficult, their number was determined by counting the nuclei surrounding the eye. RPCs are filled with pigment granules of spherical shape. The mean volume of one pigment granule is 0.18±0.049 µm3.
 
@@ -110,23 +660,180 @@ The eye is surrounded by 16 rim pigment cells (RPC), which are morphologically s
 
 The general structure of the compound eye in M. viggianii is similar to that previously described in M. polilovi, misidentified earlier as M. mymaripenne (Makarova et al., 2015) and subsequently described as a new species (Polaszek et al., 2022). In contrast to the oblong and ‘narrow’ ommatidia in the eyes of other minute hymenopterans (Fischer et al., 2011; Makarova et al., 2015; Fischer et al., 2019), the ommatidia in M. viggianii are short and ‘wide’.
 
-## DRA and non-DRA ommatidia
+### DRA and non-DRA ommatidia
 
 The results of the 3D reconstruction, morphometry, and volumetry of the key components of the eye and data on the connectome of the lamina Chua et al., 2023 have shown considerable differences (corneal and retinal) between DRA and non-DRA ommatidia (Table 5; see Video 3). Morphometric analysis clearly reveals a group of seven ommatidia (D7, E7, B6, C6, D6, A5, and B5) in the dorsal area of the eye (DRAm) (Tables 1 and 2; Figure 2A). The analysis of synaptic connections of R7 and R7' supplements this group with three more ommatidia (E6, C5, and A4) (DRA(+)) (Chua et al., 2023; Figure 2A; see Supplementary file 1a and b). According to their morphological characters, the ommatidia DRA+ have features of both DRAm ommatidia and non-DRA ommatidia. Judging by the size of the cone and lens and by the position of the nuclei in the cells of the cone, ommatidium E6 is more similar to DRAm ommatidia (Figure 2; see Supplementary file 1a and b). The nuclei occupy almost the entire cell volume in DRAm ommatidia. In two other ommatidia, DRA+ (C5 and A4), the DA is more similar to that of non-DRA ommatidia (the nuclei of the cone cells form an aperture under the lens and are situated in the dorsal third of the cells). The volumetric parameters of DRA+ommatidia are slightly greater than those of DRAm ommatidia but smaller than those of non-DRA ommatidia (Table 2). The morphology and the retinotopic pattern of ommatidial specialization in the eye suggest that DRA+ommatidia lie in the transitional zone between specialized and non-specialized ommatidia.
 
+**Table 5.**
+ Features of DRA and non-DRA ommatidia obtained by reconstruction of compound eyes of M. viggianii.DRA, dorsal rim ommatidia in general (DRAm and DRA+); DA, dioptric apparatus; non-DRA, regular (non-DRA) ommatidia; PC, pigment cells; PPC, primary pigment cells; R1–R8, retinal cells. t-test *0.001≤p<0.01, **0.0001≤p<0.001, ***p<0.0001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ommatidial area</th>
+      <th colspan="2">Features</th>
+      <th>DRA</th>
+      <th>Non-DRA</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Ommatidial length, µm</td>
+      <td>19.2±0.37</td>
+      <td>22.3±2.5</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td rowspan="11">DA</td>
+      <td rowspan="3">Cone</td>
+      <td>Length, µm</td>
+      <td>3.0±0.37</td>
+      <td>4.6±0.59</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Width, µm</td>
+      <td>4.5±0.21</td>
+      <td>6.6±0.25</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Volume, µm3</td>
+      <td>13.0±6.0</td>
+      <td>32.9±5.9</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Lens</td>
+      <td>Lens diameter, µm</td>
+      <td>6.9±0.89</td>
+      <td>8.0±0.77</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Volume, µm3</td>
+      <td>16.5±14.0</td>
+      <td>41.4±9.0</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Lens thickness, µm</td>
+      <td>2.5±0.56</td>
+      <td>3.3±0.39</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Inner curvature, µm</td>
+      <td>1.2±0.32</td>
+      <td>3.0±0.51</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Outer curvature, µm</td>
+      <td>3.3±0.63</td>
+      <td>4.7±0.39</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cone cell (CC) nuclei</td>
+      <td>CC nuclei</td>
+      <td>Fill most of the volume of the cell</td>
+      <td>Form a ring in the upper third of the cone</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>% of cone volume</td>
+      <td>58±0.17</td>
+      <td>23±0.02</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Volume, µm3</td>
+      <td>6.6±0.68</td>
+      <td>7.5±1.1</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>PC</td>
+      <td colspan="2">PPC volume</td>
+      <td>47.1±14.3</td>
+      <td>64.5±11.4</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Retina</td>
+      <td rowspan="2">Rhabdom</td>
+      <td>Shape</td>
+      <td>Rectangular shape of rhabdom from center to lower part</td>
+      <td>Spheric shape of the rhabdom along whole length</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Diameter, µm</td>
+      <td>2.0±0.16</td>
+      <td>2.7±0.75</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Microvilli orientation</td>
+      <td>Orthogonal orientation of R7, R7' microvilli along the rhabdom length</td>
+      <td>Non-orthogonal orientation of R7, R7'</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Volume, µm3</td>
+      <td>Duet (R2, R5)</td>
+      <td>24.8±3.9</td>
+      <td>30.3±3.2</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Quartet (R1, R3, R4, R6)</td>
+      <td>17.8±1.9</td>
+      <td>21.4±3.5</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>R7'</td>
+      <td>33.0±2.5</td>
+      <td>53.3±11.1</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>R7, R7'</td>
+      <td>32.6±3.7</td>
+      <td>41.9±15.1</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>15.8±1.9</td>
+      <td>28.2±4.2</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 3.](https://cdn.elifesciences.org/articles/103247/elife-103247-video3.mp4.jpg)
+
+**Video 3.:** DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia; cc, crystalline cones; cl, corneal lense; ccn, nuclei of crystalline cone cells; ppc, primary pigment cells; R1–R8, retinal cells; rbm, rhabdomeres; spc, secondary pigment cells. Colors of nuclei, mitochondria, and pigment granules are the same as the colors of their cells.
+
 Specialized ommatidia of DRAs in the compound eyes were described in many insects (Odonata, Orthoptera, Hemiptera, Coleoptera, Hymenoptera, Lepidoptera, Diptera, and others; summarized in Labhart and Meyer, 1999; Labhart et al., 2009). The results of our morphological analysis of all ommatidia in Megaphragma are consistent with the light-polarization related features in Hymenoptera and other insects (e.g., Gribakin, 1972; Menzel and Snyder, 1974; Schinz, 1975; Labhart, 1980; Meyer and Labhart, 1981; Aepli et al., 1985; Menzel et al., 1991; Labhart and Meyer, 1999; Wehner and Labhart, 2006; Greiner et al., 2007; Narendra et al., 2013; Jie et al., 2023). Moreover, it agrees well with the regional specialization of DRA ommatidia manifested in the orientation of microvilli and synaptic connectivity in lamina cartridges (Chua et al., 2023).
 
-## Corneal specializations
+### Corneal specializations
 
 There is a significant difference in the length and volume of DA between DRA and non-DRA ommatidia (Tables 1, 2 and 5). The lenses in DRA ommatidia are visually different from those in non-DRA ommatidia (Figures 2 and 4). Considerable differences are visible in the diameter, thickness of the cornea, radius of curvature (Figure 8D), and volume of the lenses, which are smaller in DRA ommatidia (see Supplementary file 1d). Differences are found also in the calculated focal lengths (Figure 8E), which are smaller in DRA (and intermediate in E6, which has a similar cone structure) than in non-DRA ommatidia. The volume of the lenses and of the cone cells also supports the division into the areas DRAm and DRA+ (Table 2; Figure 8F).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/103247/elife-103247-fig8-v1.jpg)
 
-**Figure 8.:** M. viggianii.Bubble size indicates the value of each parameter. (A) Rhabdom volume; (B) volume of rhabdomere R7’; (C) volume of rhabdomere R8; (D) inner curvature of the lens; (E) focal length; (F) cone volume; (G) f-number; (H) acceptance angle of the rhabdom; (I) sensitivity of the ommatidium. DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia. Ommatidia are named as in Chua et al., 2023.
+**Figure 8.:** Bubble size indicates the value of each parameter. (A) Rhabdom volume; (B) volume of rhabdomere R7’; (C) volume of rhabdomere R8; (D) inner curvature of the lens; (E) focal length; (F) cone volume; (G) f-number; (H) acceptance angle of the rhabdom; (I) sensitivity of the ommatidium. DRAm, dorsal rim area ommatidia (morphological specialization); DRA+, transitional zone ommatidia. Ommatidia are named as in Chua et al., 2023.
 
 DRA ommatidia are characterized by smaller DA, lenses, and cone cells than non-DRA ommatidia (Tables 1 and 2). The nuclei of the cone cells of DRAm ommatidia (and those of ommatidium E6 of DRA+) occupy almost the entire cell volume. The chromatin of the nuclei is strongly compacted and occupies almost all of the volume of each nucleus (Figure 3). Since the cone cells are adjacent to each other over their entire length, their nuclei form an electron-dense formation under the lens (Figures 3 and 4; see Figure 3—figure supplements 1–5, Videos 1 and 3). Since the nuclei in DRA and non-DRA ommatidia are arranged differently in cone cells, we suggest that the nuclei of the cone cells of DRA ommatidia in M. viggianii perform some optical role in facilitating the specialization of this group of ommatidia. The optical function for nuclei was described for rod cells of nocturnal vertebrates, where the chromatin inside the cell nucleus has a direct effect on light propagation (Solovei et al., 2009; Błaszczak et al., 2014; Feodorova et al., 2020).
 
-## Retinal specializations
+### Retinal specializations
 
 The group of short visual fiber PRs (R1–R6) is clearly divided into the duet (R2, R5) and quartet (R1, R3, R4, R6), according to the volume of the cells, which agrees with the data on lamina circuits (Chua et al., 2023) and other data (Friedrich et al., 2011). Volumetric analysis of PR subtypes among all ommatidia and between DRA and non-DRA groups shows significant differences (Table 5). The Kruskal–Wallis test for all ommatidia shows H (3, N=261)=146.3, p<0.0001; H (3, N=90)=69.3б p=0.0000 for DRA and H (3, N=171)=106.1, p=0.000 for non-DRA. The smaller volume among the short PRs belongs to the quartet (17.8±1.9 µm3 and 21.4±3.5 µm3 for DRA and non-DRA ommatidia, respectively). The duet PR has a mean volume of 24.8±3.9 µm3 in DRA and 30.3±3.2 µm3 in non-DRA ommatidia. The greater volume among PRs belongs to R7’ cells and is 33.0±2.5 µm3 in DRA, and 53.3±11.1 µm3 in non-DRA ommatidia. The basal PR cell, R8, has a volume of 15.8±1.9 µm3 in DRA and 28.2±4.2 µm3 in non-DRA ommatidia.
 
@@ -138,13 +845,13 @@ The cross-sections of the distal rhabdom in DRA and non-DRA ommatidia differ. Rh
 
 In DRA ommatidia, rhabdoms have smaller volumes and narrower distal parts than in non-DRA ommatidia (see Supplementary file 1b; Figure 3—figure supplements 1–5).
 
-## Optical properties of DRA
+### Optical properties of DRA
 
 Some optical parameters differ between ommatidia within the eye (Figure 8E, G–I; see Supplementary file 1d). The short focal length in DRA (Figure 8E) in combination with rhabdom diameters results in the relatively large acceptance angles of the rhabdoms (Figure 8H). The estimated optical sensitivity of the eyes is very close to those reported for diurnal hymenopterans with apposition eyes (Greiner et al., 2004; Gutiérrez et al., 2024) and possess around 0.19±0.04 µm2 sr (Figure 8I). M. viggianii have large values of acceptance angle Δρ, and thus should result in a low spatial resolution (see Supplementary file 1d).
 
-## Other findings
+### Other findings
 
-## Retinula cells and rhabdom
+#### Retinula cells and rhabdom
 
 Despite the extreme miniaturization of the eye leading to the dense packing of ommatidia components and lack of space, traces of structural diversification of PRs are retained and indicate a strong evolutionary conservation. Morphological differences of photoreceptors as a key to spectral sensitivity cells were suggested by Gribakin, 1975. The division into the duet and quartet PRs is an ancestral trait of the insect retina (Friedrich et al., 2011). The position of the nuclei of the outer PR quartet (R1, R3, R4, and R6) is different from that of the duet (R2 and R5) and from that reported for bees (Gribakin, 1975), ants (Herrling, 1976), beetles (Schmitt et al., 1982), dragonflies (Meinertzhagen et al., 1983), and butterflies (Awata et al., 2010). The most distal position of the nuclei of the outer PR quartet relative to the duet is also found in Megaphragma (Figure 4F, H, J and L). Such differences between cells are an indication of the strong evolutionary conservation of the outer PR quartet and duet subgroups and can be attributed to their wavelength sensitivities (Friedrich et al., 2011).
 
@@ -154,7 +861,7 @@ Morphological analysis of the ommatidia showed that in most ommatidia the cytopl
 
 The volume and number of pigment granules and mitochondria per cell positively correlate with the volume of PR (Tables 2 and 3). The presence of numerous mitochondrial profiles visible in most single sections in the distal part of ommatidia is a result of the sectioning of few dendriform-like units, rather in non-DRA than in DRA ommatidia (Figures 3 and 5). The distal parts of the cells are referred to as the most active metabolically, thus indicating an exponential gradient of light absorption (Gribakin, 1975).
 
-## Pigment cells
+#### Pigment cells
 
 The volume of PPC and SPC is greater in DRA ommatidia than in non-DRA ommatidia (Table 2). The shapes and volumes of pigment granules differ in PPC, SPC, and PR (Figures 2F, 3, and 7E, F). The pigment granules of all cell types also vary in electron density. PPC have lower electron density than SPC and granules of PR (Figure 6). This difference in electron density could be an indication of different biochemical activity and shielding functions of light-absorbing pigment granules (Gribakin, 1981).
 
@@ -164,7 +871,7 @@ A total of 24 SPCs were identified in the whole eye of M. viggianii. However, we
 
 Sixteen RPC ensheathe the eye laterally and prevent light from passing from areas outside the compound eyes onto the photoreceptors (Stavenga and Hardie, 1989; Stavenga, 2002; Tomlinson, 2012; Mohr and Fischer, 2020). In spite of the same volume and shape of granules in PPC and RPC, the RPC pigment granules have a high electron density, comparable to SPC (Figure 7E and F). Studies on Drosophila have shown that the pigment rim originates from secondary/tertiary-like pigment cells of the pupa (Wolff and Ready, 1991).
 
-## Comparison with Trichogramma
+### Comparison with Trichogramma
 
 The complete cellular-level 3D reconstruction of the entire eye of one of the smallest insects provides the most detailed information about the structure of the insect compound eyes in general. However, the uniqueness of the dataset complicates an extensive comparative assessment of the results, in particular the volumetric ones. There exists a pioneering 3D reconstruction of three ommatidia from the eye of a male Trichogramma evanescens by Fischer et al., 2019. Considering that the data for T. evanescens was obtained from the central ommatidia (Fischer et al., 2019), we can tentatively assume that they were non-DRA.
 
@@ -172,11 +879,11 @@ In most aspects, the eyes of Megaphragma are smaller than those of Trichogramma 
 
 The location of the nuclei in the duet (R2, R5) and R7 equivalent cells (R7, R7’) differ in Trichogramma and Megaphragma. In T. evanescens, the nuclei of the duet occupy a proximal position approximately half-way along the ommatidia, and the nuclei of R7 and R7’ cells are shifted ventrally to the level slightly above that for the duet (Fischer et al., 2019). In Megaphragma, the nuclei of the duet are similar or more distal compared to that in R7 and R7’ (Figure 4).
 
-## Number of SPCs
+#### Number of SPCs
 
 The main structural difference between Megaphragma and Trichogramma ommatidia is the number of SPCs. According to the description of Trichogramma ommatidia, six (Fischer et al., 2010) or five (Fischer et al., 2019) SPCs are positioned directly beneath the cornea and envelop PPCs in their dorsal third (Fischer et al., 2019). There is no information about the total number of SPCs in the eye of Trichogramma or any other insect. In the right eye of Megaphragma, there is a total of 24 SPCs. According to 3D reconstructions, only the PPCs of the central rows of ommatidia can be ‘encircled’ by four SPC; the outer rows are abutted by two or three SPCs. The reduction of the number of SPC could be a result of miniaturization in Megaphragma eyes.
 
-## Mitochondria
+#### Mitochondria
 
 The second structural difference is the absence in the cone cells of Megaphragma ommatidia of mitochondria, which are present in Trichogramma (Fischer et al., 2019). Although the cones of Megaphragma do not contain bona fide mitochondria, we found electron-dense elements, which could be residual bodies, near the border of the cone cells, where the mitochondria of Trichogramma were reported (Figure 3G and I; see Figure 3—figure supplements 1–5 (A3, C4, B3)).
 
@@ -184,7 +891,7 @@ There are also differences in the shape and number of mitochondria in the retina
 
 Finally, the total volume of mitochondria in retinula cells is higher in Trichogramma than in Megaphragma (Table 3).
 
-## Pigment granules
+#### Pigment granules
 
 Despite the smaller volume of cells, Trichogramma has a higher number of pigment granules in PPC/SPC (212±50/255±16) (Fischer et al., 2019) than Megaphragma (about 158±29/144±52). The mean volume of individual pigment granules differs between the two genera. The mean unit volume in Trichogramma SPC is 0.017±0.03 µm3 (Fischer et al., 2019) and 0.050±0.016 µm3 in Megaphragma. The mean unit volume in PPC granules is greater in Trichogramma (0.52±0.1 µm3) (Fischer et al., 2019) than in Megaphragma (0.18±0.039 µm3). The total volume of pigment granules of pigment cells is greater in Megaphragma than in Trichogramma (Table 3). However, the measurements of Fischer and coauthors contain some discrepancies in the values of the general volumes of pigment granules, which cannot be so small given the number and diameter of the pigment granules of PPC (Fischer et al., 2019).
 
@@ -192,7 +899,228 @@ The number of pigment granules in the retinal cells of Megaphragma (from 70 to 2
 
 Despite the similar volume of the R7 cells, the total volume of pigment granules in the R7 cells in Megaphragma is almost twice as great as in Trichogramma (Table 3). As in Trichogramma, the R7’ and R7 cells in Megaphragma display a higher pigment granule volume in comparison to those of other photoreceptors, which could indirectly implicate them as UV sensors (Wakakuwa et al., 2007; Spaethe and Briscoe, 2005). But in Megaphragma R7 does not have a high rhabdomere volume (whereas R7’ does have a high volume), in contrast to Trichogramma, in which R7’ does not stand out among other retinula cells (Table 6). This difference could be a result of the functional diversification between R7 and R7’ in different species or expression of different opsin paralogs in the same ommatidia (Friedrich et al., 2011).
 
-## Volumetry
+**Table 6.**
+ Comparison of volumes (µm3) of ommatidial components for Trichogramma evanescens and M. viggianii.Data on T. evanescens are from Fischer et al., 2019. CC, crystalline cones R1–R8, retinal cells; PPC, primary pigment cells; SPC, secondary pigment cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th>CC</th>
+      <th>PPC</th>
+      <th>SPC</th>
+      <th>R1</th>
+      <th>R2</th>
+      <th>R3</th>
+      <th>R4</th>
+      <th>R5</th>
+      <th>R6</th>
+      <th>R7'</th>
+      <th>R7</th>
+      <th>R8</th>
+    </tr>
+    <tr>
+      <th colspan="12">Soma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T. evanescens</td>
+      <td>12.3±1.2</td>
+      <td>40.5±6.9</td>
+      <td>21.0±2.5</td>
+      <td>18.5±2.3</td>
+      <td>27.6±0.35</td>
+      <td>20.3±1.3</td>
+      <td>18.2±1.4</td>
+      <td>26.9±1.8</td>
+      <td>17.5±0.92</td>
+      <td>19.7±4.3</td>
+      <td>26.5±2.8</td>
+      <td>8.48±1.1</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (B3, C3, C4)</td>
+      <td>32.9±7.5</td>
+      <td>61.8±9.2</td>
+      <td>23.2±3.8</td>
+      <td>20.4±0.81</td>
+      <td>30.3±3.0</td>
+      <td>19.4±1.8</td>
+      <td>21.2±1.6</td>
+      <td>30.2±2.0</td>
+      <td>18.1±1.7</td>
+      <td>48.4±8.4</td>
+      <td>33.8±10.9</td>
+      <td>26.9±1.7</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (all non-DRA)</td>
+      <td>32.9±5.9</td>
+      <td>64.4±11.4</td>
+      <td>24.5±3.1</td>
+      <td>20.9±3.2</td>
+      <td>29.4±3.1</td>
+      <td>22.0±2.6</td>
+      <td>22.3±3.5</td>
+      <td>31.1±3.2</td>
+      <td>20.4±4.5</td>
+      <td>53.3±11.1</td>
+      <td>30.6±8.5</td>
+      <td>28.1±4.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="12">Nuclei</td>
+    </tr>
+    <tr>
+      <td>T. evanescens</td>
+      <td>3.1±0.18</td>
+      <td>3.6±0.29</td>
+      <td>3.2±0.40</td>
+      <td>2.4±0.09</td>
+      <td>2.4±0.15</td>
+      <td>2.4±0.17</td>
+      <td>2.1±0.11</td>
+      <td>2.2±0.24</td>
+      <td>2.3±0.1</td>
+      <td>2.4±0.3</td>
+      <td>2.9±0.48</td>
+      <td>1.9±0.15</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (B3, C3, C4)</td>
+      <td>7.0±1.0</td>
+      <td>7.2±1.1</td>
+      <td>5.7±0.28</td>
+      <td>7.0±0.11</td>
+      <td>7.9±0.18</td>
+      <td>6.7±0.63</td>
+      <td>6.9±0.65</td>
+      <td>8.0±0.48</td>
+      <td>5.9±0.36</td>
+      <td>9.1±1.1</td>
+      <td>8.1±1.3</td>
+      <td>8.3±0.73</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (all non-DRA)</td>
+      <td>7.5±1.1</td>
+      <td>7.6±0.98</td>
+      <td>6.4±1.03</td>
+      <td>7.0±0.56</td>
+      <td>7.6±0.90</td>
+      <td>7.2±0.72</td>
+      <td>7.2±0.84</td>
+      <td>7.9±0.71</td>
+      <td>6.5±1.7</td>
+      <td>9.2±1.0</td>
+      <td>7.9±1.2</td>
+      <td>8.3±0.80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="12">Rhabdomere</td>
+    </tr>
+    <tr>
+      <td>T. evanescens</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>2.4±0.2</td>
+      <td>3.5±0.19</td>
+      <td>2.2±0.02</td>
+      <td>2.3±0.08</td>
+      <td>3.5±0.15</td>
+      <td>2.4±0.25</td>
+      <td>2.1±0.27</td>
+      <td>3.8±0.28</td>
+      <td>0.79±0.07</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (B3, C3, C4)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>3.7±0.92</td>
+      <td>6.0±0.79</td>
+      <td>2.3±1.0</td>
+      <td>3.2±0.46</td>
+      <td>5.9±0.54</td>
+      <td>2.8±0.071</td>
+      <td>11.1±3.0</td>
+      <td>6.5±2.3</td>
+      <td>6.6±0.80</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (all non-DRA)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>4.1±1.6</td>
+      <td>5.6±1.3</td>
+      <td>3.2±0.94</td>
+      <td>3.6±1.3</td>
+      <td>5.9±0.97</td>
+      <td>3.2±0.74</td>
+      <td>12.7±3.9</td>
+      <td>5.5±2.1</td>
+      <td>6.7±1.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="12">Nuclei/soma, %</td>
+    </tr>
+    <tr>
+      <td>T. evanescens</td>
+      <td>25.0±2.7</td>
+      <td>9.1±1.2</td>
+      <td>15.2±2.5</td>
+      <td>13.0±1.1</td>
+      <td>8.8±0.55</td>
+      <td>11.6±0.67</td>
+      <td>12.4±1.6</td>
+      <td>12.0±0.41</td>
+      <td>8.1±0.44</td>
+      <td>13.3±1.02</td>
+      <td>11.0±1.02</td>
+      <td>23.0±1.3</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (B3, C3, C4)</td>
+      <td>22.5±7.1</td>
+      <td>11.7±1.7</td>
+      <td>25.0±4.5</td>
+      <td>34.4±1.7</td>
+      <td>26.5±3.3</td>
+      <td>34.7±1.0</td>
+      <td>19.0±0.98</td>
+      <td>32.4±1.2</td>
+      <td>26.6±0.33</td>
+      <td>32.9±1.3</td>
+      <td>25.1±6.8</td>
+      <td>30.8±0.74</td>
+    </tr>
+    <tr>
+      <td>M. viggianii (all non-DRA)</td>
+      <td>35.3±19.9</td>
+      <td>15.1±11.6</td>
+      <td>28.6±7.9</td>
+      <td>34.5±3.4</td>
+      <td>27.1±2.9</td>
+      <td>34.4±3.1</td>
+      <td>20.1±4.2</td>
+      <td>34.2±3.5</td>
+      <td>27.0±3.1</td>
+      <td>33.5±6.2</td>
+      <td>26.7±4.6</td>
+      <td>34.8±7.8</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Volumetry
 
 In addition to revealing morphological differences of ommatidia, we compared their volumes in two ways: we compared the three ommatidia studied in Trichogramma with three central ommatidia of Megaphragma (B3, C3, C4) and with all non-DRA ommatidia of Megaphragma (Table 6).
 
@@ -200,11 +1128,11 @@ Despite having smaller eyes and body lengths (~290 µm) and fewer ommatidia, M. 
 
 The volumes of the nuclei in all cells in Megaphragma ommatidia are 1.7–4.2 times greater than in Trichogramma photoreceptors (Table 6) and interneurons (Fischer et al., 2018), despite the smaller difference in body size. The percentages for cell volume (soma) occupied by the nuclei in non-DRA ommatidia of Megaphragma are higher than in Trichogramma, constituting up to 23% in cone cells, 12% in PPC, 25% in SPC, and 19–34% in PR (Table 6; Supplementary file 1c). The mean nucleus volume in the ommatidium cells of Megaphragma is also similar to the nucleus volume of most Johnston’s organ cells (Diakova et al., 2022). Megaphragma nuclei are also characterized by a more compacted chromatin. The greater volume of nuclei in spite of smaller eyes can be explained by the fact that M. viggianii has one of the largest genome sizes in Chalcidoidea (Sharko et al., 2019).
 
-## ‘Ectopic’ photoreceptors (ePR)
+### ‘Ectopic’ photoreceptors (ePR)
 
 We have revealed photoreceptor cells that are not connected with the DA of the eye (Figure 7). The presence of such cells is confirmed in stacks of three heads of Megaphragma (two females and one male). The number of cells in all samples is invariably three. Tracing the projections of these ePR demonstrates that their axons form a bundle, do not project into the lamina, and reach the medulla directly from the eye. In the region of the lamina, they squeeze between two cartridges before projecting the medulla (Chua et al., 2023). Their morphology is closer to those of R8 than to those of any other cell type. Although these ePR axons lack corresponding LMCs, they exhibit similar ramification and projection into the medulla as R8, and form connections with cells that synapse with R8 in other medulla columns (Chua et al., 2023). Having no cone or lens, their small rhabdomeres may receive unfocused light. This could potentially be used to measure ambient light intensity and may be helpful in regulating circadian rhythms (Chua et al., 2023). The position of ePR, their morphology, and synaptic targets look similar to the eyelet (extraretinal photoreceptor cluster) discovered in Drosophila (Helfrich-Förster et al., 2002). Eyelets are remnants of the larval photoreceptors, Bolwig’s organs in Drosophila (Hofbauer and Buchner, 1989). Unlike Drosophila, Trichogrammatidae are egg parasitoids and their central nervous system differentiation is shifted to the late larva and even early pupa (Makarova et al., 2022c). According to the available data on the embryonic development of Trichogrammatidae, no photoreceptor cells were found during the larval stages (Ivanova-Kazas, 1954; Ivanova-Kazas, 1961).
 
-## Conclusion
+### Conclusion
 
 Despite the extremely small body size, the compound eyes of M. viggianii retain an almost complete set of the cellular components of the ommatidia. The compound eye exhibits a regional specialization of ommatidia (DRA) putatively capable of polarized light perception. Ommatidia within the eye differ considerably in size and shape, and demonstrate corneal and retinal specializations. The results of the 3D reconstruction, morphometry, and volumetry of the key components of the ommatidia show a good match with the lamina connectivity patterns (Chua et al., 2023). A transitional zone is present between the adjacent non-DRA ommatidia of central area of the eye and DRA. Despite the nearly anucleate nervous system, the main sensory organs (such as the compound eye or Johnston’s organ) of M. viggianii retain all their nuclei (Diakova et al., 2022). Our results not only reveal the general principles of the miniaturization of compound eyes but also provide context for future interpretation of the visual connectome of M. viggianii.
 
@@ -212,7 +1140,7 @@ Despite the extremely small body size, the compound eyes of M. viggianii retain 
 
 Adult females of Megaphragma viggianii Polaszek et al., 2022 (Hymenoptera: Trichogrammatidae) were reared from eggs of Heliothrips haemorrhoidalis (Bouché, 1833) (Thysanoptera: Thripidae).
 
-## FIB-SEM
+### FIB-SEM
 
 Sample preparation was carried out according to a method described earlier (Polilov et al., 2021). The head was separated from the body in a cold fixative and immediately transferred to fresh fixative of 4°C for 1 h, which consisted of 1% glutaraldehyde (GA) and 1% osmium tetroxide (OsO4) in 0.1 M sodium cacodylate buffer (pH = 7.2). The material was then washed in the same buffer and fixed for 2 h in 2% GA in the buffer at 4 °C. Next, the material was washed in the buffer and post-fixed for 16 h in 2% OsO4 in the buffer at 4°C. After fixation material was washed with double distillate water, and then subjected to a 1% UA solution in ddH2O overnight at 4°C, and then placed (in the same solution) into a constant-temperature oven for 2 h at 50°C. The specimens were then washed in ddH2O and contrasted with Walton’s lead aspartate solution (2 h, 50°C). The material was then washed in ddH2O. Subsequently, dehydration of the material was continued using ethanol and acetone. The material was then placed in a mixture of an embedding medium (Epon, Sigma) and acetone (1 :2) for 2 h at room temperature (RT), and then in 1:1 mixture overnight at RT, after which the samples were transferred to a pouring medium for 5 h at RT. The samples were ultimately transferred to silicone embedding molds with fresh Epon and placed in a constant temperature oven for 48 h at 60°C.
 
@@ -220,24 +1148,24 @@ The Epon embedded sample was mounted onto the top of a 1 mm copper stud using Du
 
 The FIB-SEM prepared sample was imaged using a customized Zeiss NVision40 FIB-SEM system (Xu et al., 2017). The images were acquired using a 3 nA current SEM probe at 1.2 keV landing energy. Multiple imaging conditions were used to acquire the entire M. viggianii head. The pixel size along x and y axes was fixed at 8 nm. Scan rates were set to either 1.25 or 2.5 MHz, while z-steps of 2 nm or 4 nm were achieved by milling for 12–30 s with a 27 nA Ga+ beam at 30 kV. A total volume of 64 × 96 × 98.6 µm3 was acquired over the course of 90 days, spanning seven sections. The images were de-streaked using a MATLAB script, which applied a masked Fourier filter that removes the spatial frequencies corresponding to the streaks. The raw image stack was then aligned using a MATLAB script based on Scale Invariant Feature Transform (SIFT) and binned by a factor of 4 or 2 along the z-axis. The images were finally concatenated to create a dataset with 8 × 8 × 8 nm3 voxels.
 
-## SEM
+### SEM
 
 The Bouin fixed material was gradually dehydrated through a series of ethyl alcohols 70%, 95% ethyl alcohol, each change for 30 min, 100% two changes for 30 min; and then acetone (100%, two changes for 15 min), critical point dried (Hitachi HCP-2) and sputtered with gold (Giko IB-3). The specimens were studied and imaging was performed using Jeol JSM-6380 with a 5-megapixel digital camera.
 
-## 3D reconstruction
+### 3D reconstruction
 
 The right eye was used for the 3D reconstruction, volumetric analysis, and morphometry. The right eye, on which the reconstruction was performed, has several damaged regions from milling (see Figure 3—figure supplements 1–5), which hinder the complete reconstruction of lenses and cones on a few ommatidia. According to this, for the volumetric data on lenses and cones, some linear measurements (lens thickness, cone length, cone width, curvature radius), we use (measure or reconstruct) the corresponding elements from the other (left) eye. The cells of single interfacet bristles were not reconstructed because of the damage present in the right eye and the generally lower quality of this region on the left eye.
 
 All cellular and subcellular elements of the eye were manually segmented with Bitplane Imaris 9.5 on the right compound eye of the first specimen. The raw models were post-processed in Blender using smoothing and retopology tools. Volumes of cells and cell structures were calculated based on 3D models using the Imaris statistics module. Volumes of photoreceptor bodies were calculated without cell processes, as volumes of cone cells without their projections to the basement membrane. The pigment apparatus of the compound eye (the pigment granules) (Figure 1F) was reconstructed using the Ilastic software.
 
-## Morphometry
+### Morphometry
 
 Each ommatidium was numerated for comparison between ommatidia the same eye, and right and left eyes. All linear dimensions were measured on the FIB-SEM images using the measurement tools of Bitplane Imaris (v9.5). For rhabdomere segmentation the extra 29 stacks of ommatidia were performed from the FIB-SEM data using a Python script (N.J.C.) (see Chua et al., 2023 ‘Methods/Optics measurements and calculations’). The rhabdomeres on each stack were segmented manually in Bitplane Imaris software. Statistical analysis was performed using STATISTICA 12, including t-tests for data analysis.
 
-## Optical calculations
+### Optical calculations
 
 To compare the optical properties of the compound eyes, anatomical measurements were used to calculate relevant parameters: focal lengths, F-number, acceptance angle, and sensitivity of ommatidia (for a description of the formulas and parameters, see Makarova et al., 2015; see Supplementary file 1d).
 
-## Identifying the retinula cells and terminology
+### Identifying the retinula cells and terminology
 
 For retinula cell numbering, we use the standardized Drosophila-based numbering convention (Friedrich et al., 2011) which is useful for understanding the photoreceptor subtype homologies. We combine cell body morphology (position of R8, basal cell) and axonal projection targets. The position of the eighth retinula cell in relation to the position of the cone cell projections (Chua et al., 2023) provides a means for the unique recognition and labeling of all other cells. The accuracy of identification of the three inner and six outer PRs was proved by projections of PR axons into lamina and medulla. Position and neuronal morphology data in Megaphragma lead to the conclusion that the extra inner PR also represents an R7’ cell, nestled between the outer PR duet R3 and R4 and facing R7 along the medial axis of the ommatidium, as noted in Friedrich et al., 2011.

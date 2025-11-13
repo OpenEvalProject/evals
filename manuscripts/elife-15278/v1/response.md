@@ -150,8 +150,6 @@ The separation of such conditions (handle, cylinder) originated from the same sh
 
 These conditions start separating over time as shown in Figure 2c,d and Figure 2e,f.
 
-DOI: http://dx.doi.org/10.7554/eLife.15278.022
-
 In d), the reviewer suggested that abstract objects might have more graspable parts, and hence a larger number of possible actions, than objects of the mixed set. However, we regard this as rather unlikely. Neither the grasp variability of both animals nor the visual aspect of the objects justifies the conclusion that abstract objects have more graspable parts. In fact, we specifically designed the abstract set such that objects have many different visual parts, but only one graspable part, which both animals also uniformly selected.
 
 However, we agree with Reviewer #3 that the visual and motor space cannot be separated completely, as we have discussed previously (Schaffelhofer et al. 2015). For example, coming from the motor side, Figure 6c-d shows the separation of objects based on the recorded hand kinematics. Although this is a pure motor representation of objects, some shapes tend to cluster together, such as the vertical cylinders or the cubes, due to the design of the objects that shape the hand. In other words, even a pure motor representation creates similarities with the visual space and vice versa.

@@ -13,21 +13,21 @@
 
 ### Affiliations
 
-1. https://ror.org/019tgvf94 Université Côte d’Azur, CNRS, INSERM, IRCAN Nice France
+1. Université Côte d’Azur, CNRS, INSERM, IRCAN Nice France ([ROR:019tgvf94](https://ror.org/019tgvf94))
 2. FHU OncoAge Nice France
-3. https://ror.org/019tgvf94 Université Côte d'Azur, CNRS, Institut Pharmacologie Moléculaire et Cellulaire Sophia-Antipolis France
-4. https://ror.org/019tgvf94 Université Côte d'Azur, Centre Hospitalier Universitaire de Nice, Pneumology Department Nice France
-5. https://ror.org/02kzqn938 Inserm U995, LIRIC, Université de Lille, CHRU de Lille, Faculté de médecine – Pôle recherche, Place Verdun Lille France
-6. https://ror.org/0185jey51 Hautes Etudes d’Ingénieur (HEI), JUNIA Hauts-de-France, UCLille, Laboratoire de chimie durable et santé Lille France
+3. Université Côte d'Azur, CNRS, Institut Pharmacologie Moléculaire et Cellulaire Sophia-Antipolis France ([ROR:019tgvf94](https://ror.org/019tgvf94))
+4. Université Côte d'Azur, Centre Hospitalier Universitaire de Nice, Pneumology Department Nice France ([ROR:019tgvf94](https://ror.org/019tgvf94))
+5. Inserm U995, LIRIC, Université de Lille, CHRU de Lille, Faculté de médecine – Pôle recherche, Place Verdun Lille France ([ROR:02kzqn938](https://ror.org/02kzqn938))
+6. Hautes Etudes d’Ingénieur (HEI), JUNIA Hauts-de-France, UCLille, Laboratoire de chimie durable et santé Lille France ([ROR:0185jey51](https://ror.org/0185jey51))
 7. ‘Al. I. Cuza’ University of Iasi, Faculty of Chemistry Iasi Romania
-8. https://ror.org/056b4pm25 Laboratory of Clinical and Experimental Pathology and Biobank, Pasteur Hospital Nice France
-9. https://ror.org/056b4pm25 Hospital-Related Biobank (BB-0033-00025), Pasteur Hospital Nice France
+8. Laboratory of Clinical and Experimental Pathology and Biobank, Pasteur Hospital Nice France ([ROR:056b4pm25](https://ror.org/056b4pm25))
+9. Hospital-Related Biobank (BB-0033-00025), Pasteur Hospital Nice France ([ROR:056b4pm25](https://ror.org/056b4pm25))
 
 † Corresponding author
 
 ## Abstract
 
-Idiopathic pulmonary fibrosis (IPF) is an aggressive interstitial lung disease associated with progressive and irreversible deterioration of respiratory functions that lacks curative therapies. Despite IPF being associated with a dysregulated immune response, current antifibrotics aim only at limiting fibroproliferation. Transcriptomic analyses show that the P2RX7/IL18/IFNG axis is downregulated in IPF patients and that P2 R X7 has immunoregulatory functions. Using our positive modulator of P2 R X7, we show that activation of the P2 R X7/IL-18 axis in immune cells limits lung fibrosis progression in a mouse model by favoring an antifibrotic immune environment, with notably an enhanced IL-18-dependent IFN-γ production by lung T cells leading to a decreased production of IL-17 and TGFβ. Overall, we show the ability of the immune system to limit lung fibrosis progression by targeting the immunomodulator P2 R X7. Hence, treatment with a small activator of P2 R X7 may represent a promising strategy to help patients with lung fibrosis.
+Idiopathic pulmonary fibrosis (IPF) is an aggressive interstitial lung disease associated with progressive and irreversible deterioration of respiratory functions that lacks curative therapies. Despite IPF being associated with a dysregulated immune response, current antifibrotics aim only at limiting fibroproliferation. Transcriptomic analyses show that the P2RX7/IL18/IFNG axis is downregulated in IPF patients and that P2RX7 has immunoregulatory functions. Using our positive modulator of P2RX7, we show that activation of the P2RX7/IL-18 axis in immune cells limits lung fibrosis progression in a mouse model by favoring an antifibrotic immune environment, with notably an enhanced IL-18-dependent IFN-γ production by lung T cells leading to a decreased production of IL-17 and TGFβ. Overall, we show the ability of the immune system to limit lung fibrosis progression by targeting the immunomodulator P2RX7. Hence, treatment with a small activator of P2RX7 may represent a promising strategy to help patients with lung fibrosis.
 
 ## Introduction
 
@@ -49,25 +49,53 @@ In light of IL-18’s demonstrated capability to modulate the T-cell phenotype b
 
 ## Results
 
-## Expression of P2RX7 and IL-18 activity is downregulated in IPF patients
+### Expression of P2RX7 and IL-18 activity is downregulated in IPF patients
 
 The canonical release of IL-18 is due to activation of the P2RX7/NLRP3 pathway (Perregaux et al., 2000). Since high levels of eATP are found in IPF patients (Riteau et al., 2010) and P2RX7 is activated by such levels, it was of particular interest to investigate the involvement of P2RX7 in this disease. We used a publicly available dataset of lung homogenates from control and IPF patients and compared the mRNA expression levels of P2RX7 and markers of fibrosis, namely ACTA2, COL1A2, COL3A1, and TGFB3. We found that the mRNA expression of P2RX7 is downregulated in IPF patients (Figure 1A, B), as well as the components of the NLRP3 inflammasome (Figure 1—figure supplement 1). Since IL-18 is constitutively expressed (Puren et al., 1999), which partly explains the lack of difference between control and IPF patients (Figure 1B), we investigated the signaling pathway downstream of IL-18. IL-18 binds to its receptor IL-18R1 coupled to its adaptor protein IL-18RAP which is required for IL-18 signaling and IFN-γ expression. We showed that IL18R1, IL18RAP, and IFNG (Figure 1B) are downregulated in IPF patients. Knowing that the modulation of the phenotype of T cells is promising in IPF (Shenderov et al., 2021), we checked whether P2RX7 and IL18 are linked to an immune response in IPF patients using Gene Set Enrichment Analyses. Indeed, we showed that the expression of P2RX7 and IL18 signaling (IL18 and IL18RAP) correlates with the IFNG response as well as with immunoregulatory interactions required for changing the phenotype of T cells (Figure 1C, Figure 1—figure supplement 1). This transcriptomic analysis highlights that the P2RX7/IL18 signaling pathway is downregulated and suggests that this pathway may be able to modulate the immune response in IPF patients.
 
-## HEI3090 inhibits the onset of pulmonary fibrosis in the BLM mouse model
+![Figure 1.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig1-v1.jpg)
+
+**Figure 1.:** (A) Heatmap of mRNA expression of P2RX7 in control and IPF patients with a cluster of fibrosis-associated genes. Raw p-values are shown (Limma). p-values were determined by Spearman test. (B) mRNA expression of P2RX7, IL18, IL18R1, IL18RAP, and IFNG between control and IPF patients from 213 individuals, corresponding to 91 controls and 122 IPF patients. p-values were determined by two-tailed unpaired t-test or Mann–Whitney t-test. ***p < 0.001, ****p < 0.0001. (C) Gene set enrichment analysis (GSEA) plot associating P2RX7 mRNA levels from IPF patients with three immunological signatures. The green line represents the enrichment score and the black lines the specific signature-associated genes. NES: normalized enrichment score. p-values (bilateral Kolmogorov–Smirnov) and false discovery rate (FDR) are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) mRNA expression of NLRP3, PYCARD, CASP1, and GSDMD between control and IPF patients from 213 individuals, corresponding to 91 controls and 122 IPF patients. p-values were determined by two-tailed unpaired t-test or Mann–Whitney t-test. ***p < 0.001, ****p < 0.0001. (B) Gene set enrichment analysis (GSEA) plot associating P2RX7 mRNA levels from IPF patients with three immunological signatures. The green line represents the enrichment score and the black lines the specific signature-associated genes. NES: normalized enrichment score. p-values (bilateral Kolmogorov–Smirnov) and false discovery rate (FDR) are shown.
+
+### HEI3090 inhibits the onset of pulmonary fibrosis in the BLM mouse model
 
 Even though transcriptomic changes do not always reflect changes in the proteome these encouraging results led us to hypothesize that activation of the P2RX7/IL-18 axis may restrain lung fibrosis progression by promoting an antifibrotic immune microenvironment. To test this hypothesis, we enhanced the P2RX7/IL-18 axis in the BLM-induced lung fibrosis mouse model by using HEI3090, a chemical compound described to stimulate immune cells expressing P2RX7 to generate IL-18 in the presence of eATP (Douguet et al., 2021).
 
 We first tested the antifibrotic potential of HEI3090 on mice having an established fibrosis (Figure 2A). Activation of P2RX7 with HEI3090 in mice 7 days after BLM administration reduced the development of pulmonary fibrosis, as evidenced by less thickening of alveolar walls and free air space (Figure 2B). Fibrosis severity was evaluated using the Ashcroft score. To overcome the heterogeneity of fibrosis within the lobes, we scored the whole surface of the lung, and the result represents the mean of each field (Figure 2C and Figure 2—figure supplement 1A, B). This quantification showed that fibrosis is reduced by 40% in lungs of HEI-treated mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental design. WT mice were given 2.5 U/kg of bleomycin by i.n. route. At the end of the inflammatory phase (D7), 1.5 mg/kg of HEI3090 or vehicle were given daily until day 21. (B) Representative images of lung sections at day 21 after treatment stained with H&E and Sirius Red, scale bar = 100 µm. (C) Fibrosis score assessed by the Ashcroft method. p-values were determined by two-tailed unpaired t-test. (D) Quantification of fibroblasts/myofibroblasts in non-immune cell subset. p-values were determined by two-tailed Mann–Whitney test. (E) Representative images of lung sections at day 21 after treatment stained with Sirius Red, scale bar = 100 µm. (F) Collagen levels in whole lung of mice assessed on Sirius Red-polarized images. p-values were determined by two-tailed unpaired t-test. (G) Experimental design. WT mice were given 2.5 U/kg of bleomycin by i.n. route. 1.5 mg/kg of HEI3090 or vehicle were given daily until day 14. (H) Representative images of lung sections at day 14 after treatment stained with H&E, scale bar = 100 µm. (I) Fibrosis score assessed by the Ashcroft method. p-values were determined by two-tailed unpaired t-test. (J) Quantification of fibroblasts/myofibroblasts in non-immune cell subset. p-values were determined by two-tailed Mann–Whitney test. (K) Representative images of lung sections at day 14 after treatment stained with Sirius Red, scale bar = 100 µm. (L) Collagen levels in whole lung of mice assessed on Sirius Red-polarized images. p-values were determined by two-tailed Mann–Whitney test. (M) P2rx7 KO mice were given 2.5 U/kg of bleomycin by i.n. route. 1.5 mg/kg of HEI3090 or vehicle were given daily until day 14. Fibrosis score assessed by the Ashcroft method is showed. p-values were determined by two-tailed Mann–Whitney test. For all analyses, the violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. *p < 0.05, **p < 0.01. WT: wildtype, BLM: bleomycin, i.p.: intraperitoneal, i.n.: intranasal, H&E: hematoxylin & eosin, AU: arbitrary units.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Wildtype (WT) mice were given phosphate-buffered saline (PBS) or 2.5 U/kg of bleomycin (BLM) by i.n. route. At the end of the inflammatory phase, 1.5 mg/kg of HEI3090 or vehicle were given daily until day 21. (A) Whole lung images at day 21 after treatment stained with H&E, scale bar at 10X and 20X = 100 µm. (B) Whole lungs were divided in their entirety in several fields as shown to evaluate fibrosis severity using the Ashcroft method. The fibrosis score is the mean of all fields. (C) BLM-inhaled WT and P2rx7 KO mice were treated or not with HEI3090. At D14, whole lungs were removed, fixed in formol, and stained with H&E and lung fibrosis was scored. p-values were determined by two-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons. (D) BLM-treated p2rx7−/− or p2rx7−/− adoptively transferred with p2rx7−/− splenocytes mice received HEI3090 for 14 days started at day 1. Whole lungs were removed, fixed and stained with Sirius Red. The percentage of fibrosis in whole lung (up panel) was quantified concomitantly with the collagen quantification (lower panel) as described in Materials and methods. p-values were determined by two-tailed unpaired t-test. For all figures, the violin plot illustrates the distribution of Ashcroft scores across or collagen fibers intensity of indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. *p < 0.05, ns, not significant.
+
 As accumulation of fibroblasts/myofibroblasts and extracellular matrix proteins are a hallmark of fibrosis, we also quantified fibroblasts/myofibroblasts and collagen levels in the lungs of vehicle and HEI3090-treated mice using, respectively, an antibody which is specific to the PDGFRα and by measuring the intensity of Sirius Red-stained collagen fibers under polarized light. We showed that both the percentage of CD140a (PDGFRα)-positive cells in non-immune cells subset (Figure 2D) and the collagen fibers were reduced in lungs of HEI3090-treated mice (Figure 2E, F).
 
 We also tested the ability of HEI3090 to limit lung fibrosis progression when administered during the inflammatory phase of the BLM model (Figure 2G) that mimics the exacerbation episodes in IPF patients (Peng et al., 2013). HEI3090 was also able to inhibit the onset of lung fibrosis in this setting given less damage on lung architecture (Figure 2H), the reduced fibrosis score (Figure 2I). We further evaluated the percentage of fibroblasts/myofibroblasts in non-immune cells subset (Figure 2J). At this shorter time point, we observed less fibroblasts/myofibroblasts in lungs of wildtype (WT) mice treated with vehicle and the number of CD140a-positive cells is decreased in lungs of HEI3090-treated mice. Further, and as for mice with an established fibrosis, HEI3090 reduced the intensity of collagen fibers in lungs of HEI3090-treated mice (Figure 2K, L). We further verified whether the antifibrotic action of HEI3090 depends on the expression of P2RX7 by inducing lung fibrosis in P2rx7−/− mice. In doing so, we initially observed that P2RX7 plays a role in the development of BLM-induced lung fibrosis. This is illustrated by a decrease of 50% in the Ashcroft score, with a mean value of 1.7 in P2RX7 knockout mice compared to 3 in WT mice (Figure 2M and Figure 2—figure supplement 1C). It is important to note that P2rx7−/− mice still exhibit signs of lung fibrosis, such as thickening of the alveolar wall and a reduction in free air space, in comparison to naïve mice that received phosphate-buffered saline (PBS) instead of BLM (see Figure 2—figure supplement 1A). This result confirms a previous report indicating that BLM-induced lung fibrosis partially depends on the activation of the P2RX7/pannexin-1 axis, leading to the production of IL-1β in the lung. Additionally, in contrast to the observations in WT mice, HEI3090 failed to attenuate the remaining lung fibrosis in P2rx7−/− mice, as measured by the Ashcroft score (Figure 2M), the percentage of lung tissue with fibrotic lesions, or the intensity of collagen fibers (Figure 2—figure supplement 1D). These results show that P2RX7 alone participates in fibrosis and that HEI3090 exerts a specific antifibrotic effect through this receptor (see Figure 2—figure supplement 1C).
 
-## HEI3090 shapes immune cell infiltration in the lungs
+### HEI3090 shapes immune cell infiltration in the lungs
 
 Given that transcriptomic analysis revealed the immunoregulatory functions of P2RX7 in IPF (Figure 1) and the antifibrotic activity of HEI3090 (Figure 2), we subsequently explored whether HEI3090 had an impact on both the immune landscape of the lung and the production of cytokines. This investigation aimed to elucidate the potential mechanisms underlying the dual antifibrotic effects observed with both P2RX7 deletion and P2RX7 activation by HEI3090.
 
 We show that lung CD3+ T cells were more biased to produce IFN-γ than the profibrotic IL-17A cytokine when mice expressing P2RX7 were treated with HEI3090 (Figure 3A and Figure 3—figure supplement 1A). This biased production of IFN-γ is only seen in CD3+ T cells and not in overall lung immune cells (Figure 3—figure supplement 1B) nor in the subsets of T lymphocytes (Figure 3B, Figure 3—figure supplement 1B) or NK cells (Figure 3—figure supplement 1C). Although levels of CD3+ T cells and T-cell subsets were unchanged (Figure 3—figure supplement 1D), including the profibrotic Th17 cells (Figure 3C), IL-17A production by Th17 cells is substantially attenuated after HEI3090 treatment (Figure 3C), consistent with the ability of IFN-γ to inhibit IL-17A production (Laurence et al., 2007). Considering the strong profibrotic properties of TGFβ and its mutual antagonism with IFN-γ (Ishida et al., 2004; Park et al., 2007), we checked whether HEI3090 had an effect on TGFβ levels. Indeed, treatment with HEI3090 reduced TGFβ-producing immune cells in the lung as well as TGFβ production (Figure 3D). Notably, HEI3090 treatment reduced TGFβ production in NK cells but not in T-cell subsets (Figure 3—figure supplement 1F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig3-v1.jpg)
+
+**Figure 3.:** Wildtype (WT) mice were given 2.5 U/kg of bleomycin by i.n. route and treated daily i.p. with 1.5 mg/kg of HEI3090 or Vehicle. Lungs were analyzed by flow cytometry at day 14. (A) Contour plot of IFN-γ- and IL-17A-producing T cells (CD3+NK1.1−) (left) and ratio of IFN-γ over IL-17A in T cells (CD3+NK1.1−) (right). p-values were determined by two-tailed Mann–Whitney test. (B) Percentage of IFN-γ-producing CD4+ and CD8+ T cells. p-values were determined by two-tailed Mann–Whitney test. (C) Percentage and GMFI of IL-17A+ cells of CD4+ T cells (CD3+CD4+NK1.1−). p-values were determined by two-tailed Mann–Whitney test. (D) Percentage and GMFI of TGFβ in CD45+ cells. p-values were determined by two-tailed Mann–Whitney test. (E) Dotplot showing lung inflammatory monocytes, gated on lineage−CD11c−CD11b+ cells (left) and percentage of lung inflammatory monocytes (Ly6ChighLy6G−) (right). p-values were determined by two-tailed Mann–Whitney test. (F) Percentage of alveolar macrophages (CD11c+SiglecF+), p-values were determined by two-tailed unpaired t-test and (G) lung eosinophils (CD11b+SiglecF+CD11c−), p-values were determined by two-tailed Mann–Whitney test. (A–G) The violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. *p < 0.05, **p < 0.01. GMFI: geometric mean fluorescence intensity, i.n.: intranasal, i.p.: intraperitoneal.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Wildtype (WT) mice were given 2.5 U/kg at day 1 i.n. and treated for 14 days with 1.5 mg/kg of HEI3090 or Vehicle. At day 14 lungs were analyzed by flow cytometry. (A) Percentage of IFN-γ producing and IL17A of TCD3 cells (CD45+CD3+). p-values were determined by two-tailed unpaired t-test. (B) Ratio of IFN-γ over IL-17A in lung immune cells (CD45+) or CD4+ T cells of WT mice. p-values were determined by two-tailed unpaired t-test. (C) Percentage of IFN-γ-producing NK cells (NK1.1+CD3−). p-values were determined by two-tailed unpaired t-test. (D) Percentage of cells in lungs of mice. p-values were determined by two-way analysis of variance (ANOVA) with Tukey multiple comparisons test. Colored bars (mean + standard error of the mean [SEM]) illustrate indicated cell populations. (E) Percentage of Tregs (CD3+CD4+Foxp3+NK1.1−) of CD4+T cells. p-values were determined by two-tailed unpaired t-test (F) GMFI of TGFβ + NK cells, p-values were determined by two-tailed unpaired t-test (G) CD45+, inflammatory monocytes and eosinophils cell count assessed by flow cytometry. p-values were determined by two-tailed Mann–Whitney test. The violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. *p < 0.05, **p < 0.01. GMFI: geometric mean fluorescence intensity, Tregs: regulatory T cells, NK: natural killer, NKT: natural killer T cells, DC: dendritic cells, PMN: polymorphonuclear cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Experimental design. WT mice were given 2.5 U/kg at day 1 i.n. and treated for 14 days with 1.5 mg/kg of HEI3090 or Vehicle. (B) Percentage of immune cells of CD45+ in spleen assessed by flow cytometry at day 14. Percentage of cells in lungs of mice. p-values were determined by two-way analysis of variance (ANOVA) with Tukey multiple comparisons test. Colored bars (mean + standard error of the mean [SEM]) illustrate indicated cell populations. (C) WT mice were given 2.5 U/kg of bleomycin by i.n. route. 1.5 mg/kg of HEI3090 or vehicle were given daily 7 days after BLM administration until day 21. (D) Percentage of immune cells of CD45+ in spleen assessed by flow cytometry at day 21. Percentage of cells in lungs of mice. p-values were determined two-way ANOVA with Tukey multiple comparisons test. Colored bars (mean + SEM) illustrate indicated cell populations. Vehicle n = 13, HEI3090 n = 14. *p < 0.05, **p < 0.01. WT: wildtype, BLM: bleomycin, i.p.: intraperitoneal, i.n.: intranasal, NK: natural killer, NKT: natural killer T cells, DC: dendritic cells, PMN: polymorphonuclear cells.
 
 Pulmonary fibrosis is also favored and driven by the recruitment of inflammatory cells, mainly from the myeloid lineage. Monocytes are highly inflammatory cells that are recruited to the lung and differentiate into alveolar macrophages, both of which have strong profibrotic properties (Gibbons et al., 2011; McCubbrey et al., 2018; Misharin et al., 2017). We demonstrated that in HEI3090-treated mice, the number of inflammatory monocytes decreased markedly (Figure 3G), whereas the number of alveolar macrophages remained unchanged (Figure 3F), consistent with the prognostic ability of monocyte count in IPF progression (Achaiah et al., 2021; Kreuter et al., 2021; Liu et al., 2019; Scott et al., 2019). We also examined other inflammatory cells with profibrotic properties, such as eosinophils (Morimoto et al., 2018) that are less present in HEI3090-treated lungs (Figure 3G), or PMN levels that remain unchanged by HEI3090 treatment (Figure 3—figure supplement 1D).
 
@@ -75,9 +103,25 @@ We also wondered if the activation of P2RX7 has a systemic effect by analyzing i
 
 Altogether these results demonstrate that HEI3090 promotes an antifibrotic cytokinic profile in lung immune cells and attenuates lung inflammation.
 
-## HEI3090 requires the P2RX7/NLRP3/IL-18 pathway in immune cells to inhibit lung fibrosis
+### HEI3090 requires the P2RX7/NLRP3/IL-18 pathway in immune cells to inhibit lung fibrosis
 
 We wanted to further investigate the mechanism of action of HEI3090 by identifying the cellular compartment and signaling pathway required for its activity. Since the expression of P2RX7 and the P2RX7-dependent release of IL-18 are mostly associated with immune cells (Ferrari et al., 2006), and since HEI3090 shapes the lung immune landscape (Figure 3), we investigated whether immune cells were required for the antifibrotic effect of HEI3090. To do so, we conducted adoptive transfer experiments wherein immune cells from a donor mouse were intravenously injected 1 day before BLM administration into an acceptor mouse. The intravenous injection route was chosen as it is a standard method for targeting the lungs, as previously documented (Wei and Zhao, 2014). This approach was previously used with success in our laboratory (Douguet et al., 2021). It is noteworthy that this adoptive transfer approach did not influence the response to HEI3090. This was observed consistently in both P2rx7−/− mice and P2rx7−/− mice that received splenocytes of the same genetic background. In both cases, HEI3090 failed to mitigate lung fibrosis, as depicted in Figure 2M, Figure 2—figure supplement 1D, and Figure 4—figure supplement 2A, B. First, we tested whether WT P2RX7-expressing splenocytes infuse into P2rx7−/− mice restored the antifibrotic activity of HEI3090. We show that restriction of P2RX7 expression on immune cells restored the antifibrotic effect of HEI3090 based on the architecture of the lung, with lungs of HEI3090-treated mice showing more free airspace and thinner alveolar walls (Figure 4B), as well as an overall lower fibrosis score (Figure 4C) and collagen fiber intensity (Figure 4D) than control lungs. Since it was previously showed that the BLM mouse model relies on P2RX7-expressing pulmonary epithelial cells (Riteau et al., 2010), we wanted to validate further the role of P2RX7-expressing immune cells in a mouse model where P2RX7 is expressed by non-immune cells. To do so, we reduced both the expression of P2RX7 and its activity by repeated i.v. administration (days 1, 4, 7 9, and 11) of P2rx7−/− splenocytes in WT mice (Figure 4—figure supplement 1). In this setting, HEI3090 was unable to limit the progression of fibrosis. These results highlight the important role of immune cells and rules out a major role of non-immune P2RX7-expressing cells, such as fibroblasts, in the antifibrotic effect of HEI3090.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design. P2rx7−/− mice were given 3.106 WT, Nlrp3−/−, or Il18−/− splenocytes i.v. 1 day prior to BLM delivery (i.n. 2.5 U/kg). Mice were treated daily i.p. with 1.5 mg/kg HEI3090 or vehicle for 14 days. (B, E, H) Representative images of lung sections at day 14 after treatment stained with H&E and Sirius Red, scale bar = 100 µm. (C, F, I), Fibrosis score assessed by the Ashcroft method and (D, G, J) collagen fiber intensity. (C) WT splenocytes, p-values were determined by two-tailed Mann–Whitney test. (D) WT splenocytes, p-values were determined by two-tailed unpaired t-test. (F, G) Nlrp3−/− splenocytes, p-values were determined by two-tailed Mann–Whitney test. (I, J) Il18−/− splenocytes, p-values were determined by two-tailed Mann–Whitney test. (K) IL-18 levels in sera of WT BLM-induced mice at day 14. p-values were determined by two-tailed unpaired t-test. (L) Ratio of IFN-γ over IL-17A in lung T cells (CD3+NK1.1−) of WT mice neutralized for IL-18 or not (isotype control) every 3 days. p-values were determined by one-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test. For all analyses, the violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. *p < 0.05, **p < 0.01. WT: wildtype, BLM: bleomycin, i.p.: intraperitoneal, i.n.: intranasal, i.v.: intravenous, H&E: hematoxylin & eosin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental design. Wildtype (WT) mice were given 2.5 U/kg of bleomycin by i.n. route and treated daily i.p. with 1.5 mg/kg of HEI3090 or Vehicle. Mice were given i.v. 3.106 P2rx7−/− splenocytes from male age-matched mice at days 1,4,7,9, and 11. (B) Representative images of lung sections at day 14 after treatment stained with H&E and Sirius Red, scale bar = 100 µm. (C) Fibrosis score assessed by the Ashcroft method. p-values were determined by two-tailed unpaired t-test. The violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. ns, not significant.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Experimental design. P2rx7−/− mice were given 3.106 P2rx7−/− or Il1β−/− splenocytes i.v. 1 day prior to BLM delivery (i.n. 2.5 U/kg). Mice were treated daily i.p. with 1.5 mg/kg HEI3090 or vehicle for 14 days. (B) Representative images of lung sections at day 14 after treatment stained with H&E and Sirius Red with P2rx7−/− splenocytes, scale bar = 100 µm (left) and fibrosis score assessed by the Ashcroft method (right). p-values were determined by two-tailed unpaired t-test. (C) Representative images of lung sections at day 14 after treatment stained with H&E and Sirius Red with Il1β−/− splenocytes, bar = 100 µm (left) and fibrosis score assessed by the Ashcroft method (right). p-values were determined by two-tailed unpaired t-test. (D) IL-1β levels in sera of WT mice at day 14 after treatment. p-values were determined by two-tailed unpaired t-test. (E) Percentage of P2RX7+ cells in spleens of WT and various KO mice assessed by flow cytometry. p-values were determined by one-way ANOVO, with Kruskal–Wallis test for multiple comparisons. Bar mean with standard error of the mean (SEM) is showed. (F) NLRP3 and IL-18 expression in spleens of WT and various KO mice assessed by Western blot. The violin plot illustrates the distribution of Ashcroft scores across indicated groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. In all figures, each point represents one biological replicate. *p < 0.05. WT: wildtype, BLM: bleomycin, i.p.: intraperitoneal, i.n.: intranasal, i.v.: intravenous, H&E: hematoxylin & eosin, KO: knock-out.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/88138/elife-88138-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** P2rx7−/− mice were given 3.106 wildtype (WT), Nlrp3−/−, Il18−/− , or Il1b−/− splenocytes i.v. 1 day prior to bleomycin (BLM) delivery (i.n. 2.5 U/kg). P2rx7−/− mice or P2rx7−/− mice adoptively transferred with splenocytes from indicated genetic background were treated daily i.p. with 1.5 mg/kg HEI3090 or vehicle for 14 days. Fibrosis score assessed by the Ashcroft method. p-values were analyzed on all treated and non-treated groups by one-way analysis of variance (ANOVA), with Kruskal–Wallis test for multiple comparisons. The violin plot illustrates the distribution of Ashcroft scores across indicated experimental groups. The width of the violin at each point represents the density of data, and the central line indicates the median expression level. Each point represents one biological replicate. ns, not significant.
 
 To test the importance of the NLRP3/IL-18 pathway downstream of P2RX7, we performed an adoptive transfer of Nlrp3−/− and Il18−/− splenocytes into P2rx7−/− mice, expressing similar levels of P2RX7 as WT splenocytes (Figure 4—figure supplement 2E), but also the same levels of IL-18 and NLRP3 (Figure 4—figure supplement 2F). We also verified in this experimental setting by comparing each experimental group (treated and non-treated) that the genetic background did not affect lung fibrosis (Figure 4—figure supplement 3). The absence of NLRP3 and IL-18 in P2RX7-expressing immune cells abrogated the ability of HEI3090 to inhibit lung fibrosis because the lung architecture and collagen fibers intensity resembled that of control mice (Figure 4E-J). Consistent with the requirement of IL-18 for HEI3090’s antifibrotic activity, activation of P2RX7 with this molecule in WT mice increased the levels of IL-18 in the sera of these mice compared to control mice (Figure 4K). Moreover, neutralization of IL-18 abrogated the increase of the IFN-γ/IL-17A ratio by lung T cells (Figure 4L), highlighting furthermore the necessity of IL-18 for the antifibrotic effect of HEI3090.
 
@@ -109,41 +153,450 @@ Overall, we highlight in this study the ability of the P2RX7/NLRP3/IL-18 pathway
 
 ## Methods
 
-## Data availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 OlaHsD</td>
+      <td>Envigo</td>
+      <td></td>
+      <td>WT mouse, male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>P2rx7−/−</td>
+      <td>Jackson Laboratory</td>
+      <td>B6.129P2-P2rx7tm1Gab/J</td>
+      <td>Transgenic mouse, male</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD16/CD32(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 2.4G2, #553142</td>
+      <td>FACS(1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD3A(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 145-2611#551163</td>
+      <td>FACS (1/100)PerCP-Cy5.5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti NK1.1(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone PK136#562864</td>
+      <td>FACS (1/100)PE-CF594</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11c(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone HL3#558079</td>
+      <td>FACS (1/100)PE-Cy7</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6G(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 1A8#561236</td>
+      <td>FACS (1/100)AF700</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6C(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone AL-21#560594</td>
+      <td>FACS (1/100)V450</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SiglecF(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone E50-2440#740388</td>
+      <td>FACS (1/50)BV605</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone RM4-5#563726</td>
+      <td>FACS (1/100)BV711</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8α(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 53-6.7#100741</td>
+      <td>FACS (1/100)BV650</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6G(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 1A8#561236</td>
+      <td>FACS (1/100)AF700</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6C(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone AL-21#560594</td>
+      <td>FACS (1/100)V450</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SiglecF(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone E50-2440#740388</td>
+      <td>FACS (1/50)BV605</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone RM4-5#563726</td>
+      <td>FACS (1/100)BV711</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8α(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 53-6.7#100741</td>
+      <td>FACS (1/100)BV650</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45.2(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 104#563686</td>
+      <td>FACS (1/100)BV786</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6G(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 1A8#561236</td>
+      <td>FACS (1/100)AF700</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly6C(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone AL-21#560594</td>
+      <td>FACS (1/100)V450</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SiglecF(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone E50-2440#740388</td>
+      <td>FACS (1/50)BV605</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone RM4-5#563726</td>
+      <td>FACS (1/100)BV711</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8α(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 53-6.7#100741</td>
+      <td>FACS (1/100)BV650</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45.2(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 104#563686</td>
+      <td>FACS (1/100)BV786</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone 30-F11#564279</td>
+      <td>FACS (1/100)BUV395</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γδ TCR(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone GL3#553178</td>
+      <td>FACS (1/100)PE</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IFN-γ(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone XMG1.2#554413</td>
+      <td>FACS (1/100)APC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-17A(Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Clone TC11-18H10#561718</td>
+      <td>FACS (1/100)AF700</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>I-A/I-E(Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Clone M5/114.15.2#107651</td>
+      <td>FACS (1/100)APCfire750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD64(Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Clone X54-5/7.1#139303</td>
+      <td>FACS (1/20)PE</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P2RX7(Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Clone 1F11#148706</td>
+      <td>FACS (1/8)PE</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD140a(Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Clone APA5#135905</td>
+      <td>FACS (1/100)PE</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b(Mouse monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>Clone M1/70#17-0112-82</td>
+      <td>FACS (1/400)APC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Foxp3(Mouse monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>Clone FJK16S#12-5773-82</td>
+      <td>FACS (1/100)PE</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NLRP3(Mouse monoclonal)</td>
+      <td>Adipogen</td>
+      <td>Clone Cryo-2# AG-20B-0014</td>
+      <td>WB(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ACTIN BETA(Mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>#VMA00048</td>
+      <td>WB(1/60000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-18(Rabbit Polyclonal)</td>
+      <td>Biovision</td>
+      <td>#5180R-100</td>
+      <td>WB(1/250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-18(Mouse monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Clone YIGIF74-1G7#BE0237</td>
+      <td>Neutralizing antibody(200 uµg per injection)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Mouse IL-1 beta/IL-1F2</td>
+      <td>R&amp;D</td>
+      <td>#DY401</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Mouse IL-18</td>
+      <td>MBL</td>
+      <td>#7625</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism8</td>
+      <td>https://www.graphpad.comRRID:SCR_002797</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FlowJo v10</td>
+      <td>https://www.flowjo.comRRID:SCR_008520</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ 2.1.0</td>
+      <td>https://imageJ.net/ImageJRRID:SCE_002285</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BleomycinSulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>#B5507</td>
+      <td>(2.5 U/kg)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ketamine</td>
+      <td>VIRBAC</td>
+      <td></td>
+      <td>Anesthesia(25 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Xylasine</td>
+      <td>Dechra</td>
+      <td>Sedaxylan</td>
+      <td>Anesthesia(2.5 mg/k)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phorbol 12- myristate 13-acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td># P1585</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td># IO634</td>
+      <td>0.5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Golgi Plug</td>
+      <td>BD Biosciences</td>
+      <td># 555028</td>
+      <td>1 µl/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Cytofix/Cytoperm</td>
+      <td>BD Biosciences</td>
+      <td># 554722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>ACK lysis buffer</td>
+      <td>Gibco</td>
+      <td>A1049201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Live Dead</td>
+      <td>Invitrogen</td>
+      <td># L23102</td>
+      <td>Use to stain dead cells</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Lung dissociation kit</td>
+      <td>Miltenyi Biotech</td>
+      <td>#130-095-927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Spleen dissociation kit</td>
+      <td>Miltenyi Biotech</td>
+      <td>#130-095-928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEI3090</td>
+      <td></td>
+      <td></td>
+      <td>PAM of P2RX7, Douguet et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H&amp;E staining</td>
+      <td>Abcam</td>
+      <td>#ab245880</td>
+      <td>Used for histology</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Picro Sirius Red</td>
+      <td>Abcam</td>
+      <td># ab150681</td>
+      <td>Used for histology</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data availability
 
 In silico data used in this study were retrieved from Gene Expression Omnibus (GEO). We used the Gene expression profiling of ‘chronic lung disease for the Lung Genomics Research Consortium cohort’ (GSE47460, GPL14550). 122 patients with usual interstitial pneumonitis/IPF and 91 healthy controls were analyzed in this study. Microarray was done on whole lung homogenate from these subjects. Expression profile belong to the Lung Tissue Research Consortium (LTRC).
 
-## Mice
+### Mice
 
 Mice were housed under standardized light–dark cycles in a temperature-controlled air-conditioned environment under specific pathogen-free conditions at IRCAN, Nice, France, with free access to food and water. All mouse studies were approved by the committee for Research and Ethics of the local authorities (CIEPAL #598, protocol number APAFIS 21052-2019060610506376) and followed the European directive 2010/63/UE, in agreement with the ARRIVE guidelines. Experiments were performed in accord with animal protection representative at IRCAN. P2rx7−/− (B6.129P2-P2rx7tm1Gab/J, from the Jackson Laboratory) were backcrossed with C57BL/6J OlaHsD mice. C57BL/6J OlaHsD male mice (WT) were supplied from Envigo (Gannat, France). The determination of experimental group sizes involved conducting a pilot experiment with four mice in each group. Subsequently, a power analysis, based on the pilot experiment’s findings (which revealed a 40% difference with a standard error of 0.9, α risk of 0.05, and power of 0.8), was performed to ascertain the appropriate group size for studying the effects of HEI3090 on BLM-induced lung fibrosis. The results of the pilot experiment and power analysis indicated that a group size of four mice was sufficient to characterize the observed effects. For each full-scale experiment, we initiated the study with 6–8 mice per group, ensuring a minimum of 5 mice in each group for robust statistical analysis. Additionally, we systematically employed the ROULT method to identify and subsequently exclude any outliers present in each experiment before conducting statistical analyses.
 
-## Induction of lung fibrosis
+### Induction of lung fibrosis
 
 WT or P2rx7−/− male mice (8 weeks) were anesthetized with ketamine (25 mg/kg) and xylazine (2.5 mg/kg) under light isoflurane and were given 2.5 U/kg of BLM sulfate (Sigma-Aldrich) by intranasal route. Mice were treated i.p. every day with vehicle (PBS, 10% Dimethyl sulfoxide [DMSO]) or with HEI3090 (1.5 mg/kg in PBS, 10% DMSO) starting D1 or D7 post BLM delivery, as mentioned in the figures. After 14 days of treatment, lungs were either fixed for paraffin embedding or weighted and analyzed by flow cytometry. When mentioned, 200 µg of anti-IL-18 neutralizing antibody (BioXcell) or isotype control (IgG2a, BioXcell) were given by i.p. every 3 days starting 1 day prior to BLM administration.
 
-## Adoptive transfer in p2rx7-deficient mice
+### Adoptive transfer in p2rx7-deficient mice
 
 Spleens from C57BL/6J male mice (8–10 weeks) were collected and digested with the spleen dissociation kit (Miltenyi Biotech) according to the supplier’s instructions. 3 × 106 splenocytes were injected i.v. in P2rx7−/− mice 1 day before intranasal delivery of BLM or when indicated in repeated administration. Mice were treated i.p. every day for 14 days with vehicle (PBS, 10% DMSO) or with HEI3090 (1.5  mg/kg in PBS, 10% DMSO). Nlrp3−/− spleens were a kind gift from Dr Laurent Boyer, Il18−/− spleens from Dr George Birchenough and Il1b−/− spleens from Dr Bernhard Ryffel, all on a C57BL/6J background.
 
-## Histology
+### Histology
 
 Lungs were collected and fixed in 3% formamide for 16 hr prior inclusion in paraffin. Deparaffinized lungs sections (3 µm) were rehydrated and sequentially incubated with Hematoxylin, Mayer’s, Bluing Reagent and Eosin Y Solution as indicated by the manufacturer (H&E staining, Abcam, ab245880) or Picro Sirius Red Solution followed by Acetic Acid as indicated by the manufacturer (Picro Sirius Red staining, Abcam, ab150681). The severity of fibrosis was assessed on whole lungs using the Ashcroft modified method which assigns eight grades (0: normal lung, 1: isolated alveolar septa with gentle fibrotic changes, 2: fibrotic changes of alveolar septa with knot-like formation, 3: contiguous fibrotic walls of alveolar septa, 4: single fibrotic masses, 5: confluent fibrotic masses, 6: large contiguous fibrotic masses, 7: air bubbles, and 8: fibrous obliteration to quantify lung fibrosis) to reliable and reproducible quantify fibrosis-induced lung remodeling (Hübner et al., 2008). To be even more accurate and not biased by patchy lesions observed in all existing lung fibrosis-induced mouse models, the whole lungs (left and right lobes) were divided in section of 880 µm2 and each section was scored individually as shown in Figure 2—figure supplement 1B. A total of 80–110 sections were analyzed per mouse.
 
 Levels of collagen on whole lungs were assessed on Sirius Red polarized light images of the entire lung taken with HD – Axio Observer Z1 Microscope ZEISS microscope (Figure 2) or with the SLIDEVIEW V200 slide scanner, Evident Europe Rungis (Figure 4). The collagen amount given by the polarization intensity of the Sirius Red staining of the lung slices and the percentage of fibrotic area was quantified with an ImageJ/Fiji macro program as following: The mean gray value and the integrated intensity of the collagen staining were measured in the fibrotic and non-fibrotic regions excluding the signal coming from vessels and bronchial tubes using dedicated masks. The binary masks were obtained after a median filtering and a manual thresholding, from the brightfield images for the fibrotic and non-fibrotic ones and the polarization images for the vessels and bronchial tubes. Vessels and bronchial tubes are excluded from fibrotic and non-fibrotic masks by intersecting each of those masks with the vessel and bronchial tubes one. The resulting masks are then also intersected with the polarization image to measure specifically the mean gray value and integrated intensity of fibrotic and non-fibrotic areas. The percentage of fibrotic area is obtained from the fibrotic and non-fibrotic masks without vessels and bronchial tubes as the ratio between the fibrotic area and the whole lung area without vessels and bronchial tubes (non-fibrotic + fibrotic).
 
-## Cells phenotyping by flow cytometry
+### Cells phenotyping by flow cytometry
 
 Lungs or spleens were collected and digested with the lung or spleen dissociation kit (Miltenyi Biotech, ref 130-095-927 and 130-095-928) according to the supplier’s instructions. Red blood cells were lysed using ACK lysis buffer (Gibco, A1049201). Fc receptors were blocked using anti-CD16/32 (2.4G2) antibodies followed by surface staining by incubating cells on ice, for 20 min, with saturating concentrations of labeled Abs (Key resources table) in PBS, 5% fetal bovine serum (FBS), and 0.5% Ethylenediaminetetraacetic acid (EDTA). Tregs were identified using the transcription factor staining Buffer Set (eBioscience) for FoxP3 staining. Intracellular staining was performed after stimulation of single-cell suspensions with Phorbol 12-myristate 13-acetate (at 50 ng ml−1, Sigma), ionomycin (0.5 μg ml−1, Sigma), and 1 μl ml−1 Golgi Plug (BD Biosciences) for 4 hr at 37°C 5% CO2. Cells were then incubated with Live/Dead stain (Invitrogen), according to the manufacturer’s protocol prior to surface staining. Fc receptors were blocked using anti-CD16/32 (2.4G2) antibodies followed by surface staining by incubating cells on ice, for 20 min, with saturating concentrations of labeled Abs (Key resource table) in PBS, 5% FBS and 0.5% EDTA. Cytofix/Cytoperm kit (BD biosciences) was used for intracellular staining by following the manufacturer’s instructions. Samples were acquired on CytoFLEX LX (Beckman Coulter) and analyzed using FlowJo (LLC).
 
-## ELISA
+### ELISA
 
 Sera of mice were collected at the end of the experiment and stored at −80°C before cytokine detection by ELISA using mouse IL-1 beta/IL-1F2 (R&D, DY401) and IL-18 (MBL, ref 7625) according to the supplier’s instructions.
 
-## Western blot
+### Western blot
 
 Single-cell suspensions of whole lungs were lysed with Laemmli buffer (10% glycerol, 3% sodium dodecyl sulfate [SDS], 10 mM Na2HPO4) with protease inhibitor cocktail (Roche). Proteins were separated on a 12% SDS–polyacrylamide gel electrophoresis gel and electro transferred onto Polyvinylidene Fluoride (PVDF) membranes, which were blocked for 30  min at room temperature (RT) with 3% bovine serum albumin or 5% milk. Membranes were incubated with primary antibodies (see Key resources table) diluted at 4°C overnight. Secondary antibodies (Promega) were incubated for 1 hr at RT. Immunoblot detection was achieved by exposure with a chemiluminescence imaging system (PXI Syngene, Ozyme) after membrane incubation with enhanced chemio luminescence(ECL; Immobilon Western, Millipore). The bands intensity values were normalized to that of β-actin using ImageJ software.
 
-## Statistical analyses
+### Statistical analyses
 
 Quantitative data were described and presented graphically as medians and interquartiles or means and standard deviations. The distribution normality was tested with the Shapiro’s test and homoscedasticity with a Bartlett’s test. For two categories, statistical comparisons were performed using the Student’s t-test or the Mann–Whitney’s test. For three and more categories, analysis of variance or non-parametric data with Kruskal–Wallis was performed to test variables expressed as categories versus continuous variables. If this test was significant, we used the Tukey’s test to compare these categories and the Bonferroni’s test to adjust the significant threshold. For the gene set enrichment analyses, bilateral Kolmogorov–Smirnov test, and false discovery rate were used.
 

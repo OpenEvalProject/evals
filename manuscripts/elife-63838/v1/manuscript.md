@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Immunity to malaria is often considered slow to develop but this only applies to defense mechanisms that function to eliminate parasites (resistance). In contrast, immunity to severe disease can be acquired quickly and without the need for improved pathogen control (tolerance). Using Plasmodium chabaudi , we show that a single malaria episode is sufficient to induce host adaptations that can minimise inflammation, prevent tissue damage and avert endothelium activation, a hallmark of severe disease. Importantly, monocytes are functionally reprogrammed to prevent their differentiation into inflammatory macrophages and instead promote mechanisms of stress tolerance to protect their niche. This alternative fate is not underpinned by epigenetic reprogramming of bone marrow progenitors but appears to be imprinted within the remodelled spleen. Crucially, all of these adaptations operate independently of pathogen load and limit the damage caused by malaria parasites in subsequent infections. Acquired immunity to malaria therefore prioritises host fitness over pathogen clearance.
+Immunity to malaria is often considered slow to develop but this only applies to defense mechanisms that function to eliminate parasites (resistance). In contrast, immunity to severe disease can be acquired quickly and without the need for improved pathogen control (tolerance). Using Plasmodium chabaudi, we show that a single malaria episode is sufficient to induce host adaptations that can minimise inflammation, prevent tissue damage and avert endothelium activation, a hallmark of severe disease. Importantly, monocytes are functionally reprogrammed to prevent their differentiation into inflammatory macrophages and instead promote mechanisms of stress tolerance to protect their niche. This alternative fate is not underpinned by epigenetic reprogramming of bone marrow progenitors but appears to be imprinted within the remodelled spleen. Crucially, all of these adaptations operate independently of pathogen load and limit the damage caused by malaria parasites in subsequent infections. Acquired immunity to malaria therefore prioritises host fitness over pathogen clearance.
 
 ## Introduction
 
@@ -35,21 +35,49 @@ Innate memory has been shown to operate independently of pathogen load (Domingue
 
 To investigate acquired mechanisms of disease tolerance and the role of innate memory in vivo, we needed to examine monocyte progenitors in the bone marrow and long-lived tissue-resident macrophages in the spleen. And since these tissues are not readily accessible in human malaria, we needed a model that would recapitulate at least some key features of human infection. Given that a meta-analysis of malariotherapy data shows naive hosts quickly adapt to tolerate chronic parasitaemia (for example, by increasing their pyrogenic threshold [Gatton and Cheng, 2002]), we chose a rodent malaria parasite (Plasmodium chabaudi) that establishes chronic recrudescing infections in laboratory mice. Importantly, experimental infections were initiated with sporozoites, since we have previously shown that mosquito transmission resets expression of the large sub-telomeric multi-gene families that control parasite virulence (Spence et al., 2013). And furthermore, we used two parasite genotypes to try and uncouple the relative contribution of parasite-derived versus damage-associated signals in promoting mechanisms of tolerance. P. chabaudi AS causes a mild infection, characterised by a low pathogen load and few clinical symptoms (Figure 1A–C). In contrast, P. chabaudi AJ (which has more than 140,000 SNPs cf. P. chabaudi AS [Otto et al., 2014]) leads to acute hyperparasitaemia and severe anaemia (Figure 1B–C), accompanied by hypothermia and prostration (Figure 1—figure supplement 1A). AJ shares many key features with AS such as synchrony, chronicity and a persisting low-grade anaemia (Figure 1B–C, Figure 1—figure supplement 1B–C), and yet whilst AS sequesters in key immune sites such as bone marrow and spleen (Brugat et al., 2014) we find no evidence that AJ sequesters in host tissues (Figure 1—figure supplement 1D).
 
-## Malaria triggers emergency myelopoiesis and obliterates tissue-resident macrophages
+![Figure 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig1-v1.jpg)
+
+**Figure 1.:** (A) C57Bl/6 mice were infected with Plasmodium chabaudi AJ or AS sporozoites; the blood-stage of infection started 2 days later after the release of merozoites from the liver. Mice were chronically infected for 40 days, at which point we administered the antimalarial drug chloroquine. Memory responses were assessed 30 days thereafter. Note that we exclusively use days post infection (p.i.) to refer to the blood-stage of malaria. (B) Acute parasitaemia was monitored daily using Giemsa stained thin blood films and chronic infection was verified 40 days p.i. by qPCR (n = 20 per group). Symbols below the limit of detection (5 parasites*μl−1) are coloured grey and these mice were excluded from the study. (C) The mean number of erythrocytes*ml−1 is shown before (grey symbols) and during infection (n = 10 for AJ and n = 14 for AS). Severe anaemia is defined as >50% loss of red cells. (D and E) Inflammatory monocytes and progenitor cells (granulocyte monocyte progenitors [GMP] and megakaryocyte erythroid progenitors [MEP]) from uninfected mice (0 days p.i.), AJ-infected mice (5, 7, 11, and 40 days p.i.) and once-infected mice (memory, 70 days p.i.) were analysed by flow cytometry (n = 4–5 per time point, box-plots show median and IQR). Uninfected age-matched controls were analysed at each time point and pooled for graphing (n = 10); absolute counts are shown for blood and spleen. In (D), GMP are shown as a ratio of infected:uninfected at each time point because bone marrow cellularity increases with age. (F) Paraffin-embedded spleen sections were H&E stained (11 days p.i. for acute AJ infection) – examples of malaria pigment in chronically infected and once-infected mice are marked with an asterisk. (G) Tissue-resident macrophages (Mɸ) and patrolling monocytes from uninfected mice, AJ-infected mice, and once-infected mice were analysed by flow cytometry (n = 4–5 per time point, box-plots show median and IQR). Absolute counts (blood and spleen) and cell ratios (bone marrow) are shown exactly as described for (D and E). See Supplementary file 1 for all antibody panels and gating strategies.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) C57Bl/6 mice were infected with P. chabaudi AJ sporozoites; the blood-stage of infection started 2 days later after the release of merozoites from the liver. We refer to the emergence of parasites from the liver as the start of blood cycle 1, after which parasites undergo schizogony approximately every 24 hr to start the next blood cycle. Mice were housed under reverse light conditions (lights OFF 07:00, lights ON 19:00 GMT) so that schizogony would peak at 13:00 GMT. (A) Core body temperature was measured every 2 hr (09:00–21:00 GMT) as parasites transitioned from blood cycle 9 to 10 and again from blood cycle 10 to 11 (n = 20, mean + SEM). (B and C) Parasitaemia was monitored every 2 hr by Giemsa stained thin blood films (09:00–21:00 GMT) as parasites transitioned from blood cycle 6 to 7 (n = 9, mean + SEM). The percentage of infected red cells is shown in (B), whereas the proportion of parasites at the ring, trophozoite, and schizont stages is shown in (C). Note that hypothermia is most severe after the peak of schizogony when all schizonts have ruptured. (D) C57Bl/6 mice were infected with mosquito-transmitted blood-stage parasites (P. chabaudi AS or AJ). Circulating parasitaemia was measured at the peak of schizogony (13:00 GMT) as parasites transitioned from blood cycle 6 to 7 (n = 3 per group, mean + SEM). At the same time, mice were euthanised and organs were fixed in neutral buffered formalin for histology. Sequestration rates in each organ were assessed by counting the percentage of infected red cells inside blood vessels and normalising this number to circulating parasitaemia (see Materials and methods). For high-resolution images and a guide to identifying infected red cells on tissue sections, you can refer to our publication on the sequestration and histopathology of P. chabaudi (Brugat et al., 2014).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Neutrophils (A) and total leukocytes (B) from uninfected mice (0 days p.i.), AJ-infected mice (5, 7, 11, and 40 days p.i.) and once-infected mice (memory, 70 days p.i.) were analysed by flow cytometry (n = 4–5 per time point, box-plots show median and IQR). Uninfected age-matched controls were analysed at each time point and pooled for graphing (n = 10). (C) Paraffin-embedded femur sections were H&E stained (11 days p.i. for acute AJ infection) – note that during acute infection bones appear translucent, as cellularity drops. (D) Red pulp macrophages (Mɸ) were flow-sorted from uninfected control mice and stained with Prussian Blue (intracellular ferric iron stores) and Neutral Red (nuclei). (E) Paraffin-embedded spleen sections were stained with Prussian Blue and Neutral Red (11 days p.i. for acute AJ infection). See Supplementary file 1 for all antibody panels and gating strategies.
+
+### Malaria triggers emergency myelopoiesis and obliterates tissue-resident macrophages
 
 To ask whether malaria can functionally reprogramme myeloid cells, we must first understand their response to acute infection in a naive host; we started by mapping their dynamics in our severe model of disease. We found that the bone marrow quickly prioritises myelopoiesis by increasing the number of granulocyte monocyte progenitors (GMP) (Figure 1D, see Supplementary file 1 for gating strategies). Consequently, an increased number of inflammatory monocytes and neutrophils are released into circulation and recruited into their target organ – the spleen (Figure 1D and Figure 1—figure supplement 2A). Furthermore, megakaryocyte erythroid progenitors (MEP) appear de novo in the spleen (Figure 1E); this extramedullary mechanism of erythropoiesis likely represents a division of labour in an attempt to compensate for the loss of erythroid progenitors in the bone marrow (Pathak and Ghosh, 2016). We also observed major histological changes in tissue structure and integrity with reduced cellularity in the bone marrow contrasting starkly with marked splenomegaly, which was accompanied by a complete loss of organisation between red and white pulp (Figure 1F and Figure 1—figure supplement 2B–C).
 
 Remarkably, we found that long-lived prenatally seeded tissue-resident macrophages in bone marrow and spleen (Hashimoto et al., 2013) rapidly disappear during acute infection (Figure 1G). Since red pulp macrophages are the only cells that can store and recycle iron in the spleen their disappearance thus means that ferric iron, which can be revealed histologically with Prussian Blue staining, is completely absent at the peak of infection (Figure 1—figure supplement 2D–E). We could further demonstrate that patrolling monocytes (Carlin et al., 2013), often regarded as the tissue-resident macrophages of the vasculature (Mildner et al., 2017), also disappear early in infection (Figure 1G). These findings therefore place inflammatory monocytes at the centre of the acute phase response, since they now provide the only route through which to phagocytose and clear infected red cells.
 
-## Monocytes differentiate into inflammatory macrophages in naive hosts
+### Monocytes differentiate into inflammatory macrophages in naive hosts
 
 We therefore carefully characterised the fate and function of inflammatory monocytes in the spleen by RNA sequencing (Figure 2A) and used clueGO to reveal the complexity of their response to a first encounter with malaria parasites (Bindea et al., 2009; Mlecnik et al., 2014). ClueGO assigns significant gene ontology (GO) terms based on differential gene expression and groups them into functional networks by relatedness. When we merged all linked nodes into supergroups (see Materials and methods) we found that more than one third of all GO terms were related to host defence (Figure 2B and C). Furthermore, clueGO identified interferon signaling as an upstream regulator of monocyte fate (Figure 2B); in agreement, interferon-inducible guanylate binding proteins were highly upregulated (Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig2-v1.jpg)
+
+**Figure 2.:** (A) RNA sequencing of spleen monocytes flow-sorted from AJ-infected mice (7 and 40 days p.i.for acute and chronic, respectively) and once-infected mice (memory, 70 days p.i.). At each time point, the number of differentially expressed genes (DEG, padj <0.01, >1.5-fold change) was assessed relative to uninfected controls. Pies show the proportion of shared or unique DEG between chronic and acute infection (top) or memory and chronic infection (bottom). (B and C) ClueGO network of DEG in spleen monocytes during acute infection. Each node represents a significantly enriched gene ontology (GO) term and node size is determined by padj. Related GO terms that share >40% of genes are connected by a line and organised into functional groups (each given a unique colour). Supergroups are formed when GO terms are shared between more than one group. The names of the top 10 (super)groups (lowest padj) are displayed and (C) shows their proportion of total GO terms. (D–G) Log2FC of (D) signature genes used to predict monocyte differentiation into inflammatory macrophages (Mɸ) or monocyte-derived dendritic cells (DC); (E) chemokines, cytokines and their receptors; (F) class I and class II antigen processing and presentation pathways (inc MHC transactivators*); and (G) T cell co-stimulation and inhibitory ligands. At each time point, log2FC is shown relative to uninfected controls. Square brackets indicate that common gene names were used. At each time point in (A–G), n = 5–6 for infected mice and n = 6–7 for uninfected controls.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) RNA sequencing of spleen monocytes flow-sorted from AJ-infected mice (7 and 40 days p.i.for acute and chronic, respectively) and once-infected mice (memory, 70 days p.i.). Shown is the log2 fold change (FC) of (A) interferon-inducible guanylate binding proteins and (B) pattern recognition receptors (PRR). At each time point, log2FC is shown relative to uninfected controls. If parasite- or host-derived ligands have been identified for PRR in malaria these ligands are labelled. (C) Log2FC of the major glucose transporters and glycolytic enzymes in spleen monocytes flow-sorted from AJ-infected mice (acute, 7 days p.i.) – data are shown relative to uninfected controls. Note that under anaerobic conditions pyruvate can be further converted to lactate by lactate dehydrogenase, which is also shown. (D) Transcriptional regulation of oxidative phosphorylation in spleen monocytes flow-sorted from AJ-infected mice (acute, 7 days p.i.). Data show the number of enzymatic subunits that are transcriptionally up- or downregulated compared to uninfected controls (padj <0.01, >1.5-fold change) – all subunits that are required to form complex I to IV in the electron transport chain and ATP synthase are shown. (E) Log2FC of signature genes used to predict monocyte differentiation into inflammatory hemophagocytes; data are shown relative to uninfected controls. At each time point in (A–E), n = 5–6 for infected mice and n = 6–7 for uninfected controls. Square brackets indicate that common gene names were used.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Inflammatory and patrolling monocytes, neutrophils, progenitors, and tissue-resident macrophages (Mɸ) from uninfected mice (n = 10), AJ-infected mice (n = 5), and AS-infected mice (n = 5) were analysed by flow cytometry (box-plots show median and IQR). Data shown represent the peak of the acute phase response, which is (A) 11 days p.i. for inflammatory monocytes and neutrophils in bone marrow, blood, and spleen; (B) 7 days p.i. for granulocyte monocyte progenitors (GMP) and megakaryocyte erythroid progenitors (MEP) in bone marrow and 11 days p.i. in the spleen; and (C) 7 days p.i. for tissue-resident Mɸ and patrolling monocytes. (D and E) ClueGO network of differentially expressed genes (DEG) in spleen monocytes flow-sorted from AS-infected mice (acute, 7 days p.i., n = 5). DEG were called relative to uninfected controls (n = 7). Each node represents a significantly enriched gene ontology (GO) term and node size is determined by padj. Related GO terms that share >40% of genes are connected by a line and organised into functional groups (each given a unique colour). Supergroups are formed when GO terms are shared between more than one group. The names of the top 10 (super)groups (lowest padj) are displayed and (E) shows their proportion of total GO terms. See Supplementary file 1 for all antibody panels and gating strategies.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Spleen monocytes were flow-sorted from uninfected mice (n = 4) or mice chronically infected with P. chabaudi AJ (40 days p.i., n = 5). Sorted cells were then prepared immediately for RNA sequencing (ex vivo) or stimulated in vitro with LPS for 4 hr before RNA sequencing. (B) The number of differentially expressed genes (DEG, padj <0.01, >1.5-fold change) between LPS-stimulated and unstimulated (ex vivo) monocytes is shown for uninfected mice (left bar) and chronically infected mice (centre bar). Note that a direct comparison between LPS-stimulated monocytes from chronically infected mice and uninfected controls yielded only 229 DEG (right bar). (C) Log2 fold change (FC) of inflammatory markers showing the differentiation of monocytes in vitro after LPS stimulation (data shown relative to ex vivo samples). Square brackets indicate that common gene names were used. (D) Transcriptional regulation of glycolysis and oxidative phosphorylation after LPS stimulation (relative to ex vivo samples). Data include the major glucose transporters and glycolytic enzymes, and all enzymatic subunits that form complex I to IV in the electron transport chain and ATP synthase.
 
 We next used core lineage signatures to predict the likely outcome of monocyte differentiation in the spleen, where they can be instructed to become either inflammatory macrophages or monocyte-derived dendritic cells (Menezes et al., 2016). This revealed that monocytes initiate a transcriptional programme that is typical of terminally differentiated inflammatory macrophages (Figure 2D). They upregulate their ability to sense parasite- and host-derived danger signals by increasing transcription of diverse pattern recognition receptors (Figure 2—figure supplement 1B), and upregulate expression of the hallmark cytokines and chemokines associated with a type I inflammatory response (Figure 2E). Furthermore, they enhance their capacity to engage T cell immunity by upregulating all major components of the antigen processing and presentation machinery (for class I and class II MHC), and attempt to fine-tune T cell activation by increasing their expression of co-stimulatory molecules and checkpoint inhibitors (Figure 2F–G). Notably, a clear Warburg effect – the metabolic switch from oxidative phosphorylation to glycolysis described when monocytes are stimulated with LPS in vitro (Cheng et al., 2014) – was not observed in vivo in response to malaria. Instead, the key enzymes involved in both metabolic pathways were transcriptionally induced (Figure 2—figure supplement 1C–D).
 
 We next looked at all of these parameters of monocyte and macrophage biology in our mild model of malaria. Surprisingly, despite substantial differences in parasite density and patterns of sequestration (Figure 1B and Figure 1—figure supplement 1D) the response of myeloid and progenitor cells in bone marrow, blood, and spleen was remarkably similar between AS and AJ (Figure 2—figure supplement 2A–C). Moreover, the fate and function of spleen monocytes was essentially identical – a direct pairwise comparison identified only a single differentially expressed gene (Kelch34) between the two models. In turn, clueGO analysis revealed that the four largest supergroups in monocytes isolated from AJ-infected mice (Figure 2B–C) also dominated the response to AS (Figure 2—figure supplement 2D–E). It therefore appears that parasite genotype, pathogen load, and the sequestration of infected red cells in immune tissues does not fundamentally alter the myeloid response to acute infection. Instead, the haematopoietic switch that promotes myelopoiesis in the bone marrow (and relocates erythropoiesis to the spleen), the disappearance of tissue-resident macrophages and the differentiation of monocytes into inflammatory macrophages may all be part of an emergency response that is unavoidable in a naive host.
 
-## Naive hosts adapt to tolerate chronic infection
+### Naive hosts adapt to tolerate chronic infection
 
 Malaria parasites can persist for many months (or even years) in humans (Felger et al., 2012) and the fitness costs of maintaining emergency myelopoiesis over these time frames would be exceptionally high. We therefore asked how the host adapts to an ongoing infection that can not be cleared. In the chronic phase of P. chabaudi, the pathogen load can reach up to 1000 parasites per μl blood (Figure 1B) and insoluble malaria pigment accumulates throughout the red pulp of the spleen (Figure 1F). Despite this abundance of parasite-derived signals, the spleen stops extramedullary erythropoiesis and creates new structural demarkations between red and white pulp (Figure 1E–F). Furthermore, the bone marrow reduces the production of granulocyte monocyte progenitors, which in turn reduces the number of inflammatory monocytes and neutrophils trafficking into the blood and spleen (Figure 1D and Figure 1—figure supplement 2B). At the same time, resident macrophages begin to repopulate their tissue niches (Figure 1G) and ferric iron stores are re-established in the spleen (Figure 1—figure supplement 2E). These data provide compelling evidence that naive hosts quickly adapt to tolerate malaria parasites and return the myeloid compartment towards a healthy uninfected baseline.
 
@@ -57,15 +85,31 @@ In agreement, the transcriptome of monocytes during chronic infection is almost 
 
 Importantly, we can show that quiescence is reversible – when monocytes are removed from the spleen of chronically infected mice and stimulated in vitro with LPS their inflammatory response is comparable to monocytes from uninfected mice (Figure 2—figure supplement 3A–B). In both cases, we clearly observe the Warburg effect and transcription of a plethora of inflammatory cytokines, chemokines and co-stimulatory molecules, together with the induction of Nos2 – the best biomarker of an inflammatory macrophage fate (Figure 2—figure supplement 3C–D). Clearly, monocytes are not in a permanent refractory state during chronic infection; instead, their activation and differentiation in response to parasites and their pyrogenic products must somehow be silenced in the remodelled spleen. This likely represents just one mechanism through which the host minimises inflammation to resolve collateral tissue damage.
 
-## Tolerance persists to protect host tissues during reinfection
+### Tolerance persists to protect host tissues during reinfection
 
 We next asked whether tolerance could persist in the absence of live replicating parasites to provide long-lived protection. To answer this question, we developed a novel reinfection model that allowed us to exactly match parasite densities between first and second infection. To this end, mice were first infected with the avirulent parasite genotype AS to induce chronic recrudescing parasitaemia and then drug-treated after 40 days of infection to clear circulating and sequestered parasites. One month later, mice were infected for a second time but now with the virulent genotype AJ (Figure 3A). In this model, parasite burden (Figure 3B) and the dynamics of red cell loss (Figure 3C) are both matched between first and second infection – this eliminates pathogen load as a confounding factor when analysing acquired mechanisms of disease tolerance.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig3-v1.jpg)
+
+**Figure 3.:** (A) Malaria reinfection model: C57Bl/6 mice were first infected with P. chabaudi AS sporozoites. Chronic infection was confirmed by qPCR at 40 days p.i. and drug-treated with the antimalarial drug chloroquine. Thirty days thereafter mice were infected for a second time with P. chabaudi AJ. (B) Circulating parasite density was calculated using percentage parasitaemia (limit of detection 0.01%) and red cell counts, and is presented as the number of parasites*μl−1 throughout the acute phase of first and second infection. No statistically significant difference was detected at any timepoint (padj <0.05, Mann-Whitney test corrected for multiple comparisons using Holm-Šidák method). Chronic infection was verified 40 days p.i. by qPCR (n = 40 in 1st infection and n = 26 in 2nd infection) and symbols below the limit of detection (5 parasites*μl−1) are coloured grey; these mice were excluded from the study. (C) The mean number of erythrocytes*ml−1 is shown before (grey symbols) and during first and second infection (n = 14 per group). (D–F) Inflammatory and patrolling monocytes, progenitors and tissue-resident macrophages (Mɸ) from mice experiencing their first (n = 5 per time point) or second (n = 5–10 per time point) infection were analysed by flow cytometry (box-plots show median and IQR). Uninfected age-matched controls were analysed at each time point and pooled for graphing (n = 12); absolute counts are shown except for tissue-resident Mɸ in the bone marrow. In this case, data are presented as a ratio of infected:uninfected at each time point. In (D), granulocyte monocyte progenitors (GMP) and megakaryocyte erythroid progenitors (MEP) are shown 11 days p.i. See Supplementary file 1 for all antibody panels and gating strategies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Paraffin-embedded femur sections were H&E stained during the acute phase of first or second infection (11 days p.i.). (B) Neutrophils from mice experiencing their first (n = 5 per time point) or second (n = 5–10 per time point) infection were analysed by flow cytometry (box-plots show median and IQR). Uninfected age-matched controls were analysed at each time point and pooled for graphing (n = 12). (C and D) Paraffin-embedded spleen sections were H&E (C) or Prussian Blue/Neutral Red (D) stained during the acute phase of first or second infection (11 days p.i.). Note that malaria pigment deposited during first infection persists and can still be observed during reinfection (marked with an asterisk). See Supplementary file 1 for all antibody panels and gating strategies.
+
 In contrast to a first malaria episode, the bone marrow does not prioritise the production of myeloid cells upon reinfection (Figure 3D) and preserves its cellularity and structural integrity (Figure 3—figure supplement 1A). Consequently, the number of inflammatory monocytes and neutrophils released into circulation does not increase and nor does their accumulation in the spleen (Figure 3E and Figure 3—figure supplement 1B). Furthermore, the spleen maintains its boundaries between red and white pulp and does not promote extramedullary erythropoiesis (Figure 3D and Figure 3—figure supplement 1C). And whilst first infection obliterates tissue-resident macrophages these cells are resistant to malaria-induced ablation second time around (Figure 3F); this allows the host to retain ferric iron stores (Figure 3—figure supplement 1D). A single malaria episode is therefore sufficient to disarm emergency myelopoiesis in the bone marrow and protect terminally differentiated macrophages in the spleen. What's more, tissue architecture is preserved and key homeostatic processes are maintained in tolerised hosts.
 
-## Monocytes minimise inflammation and stress in tolerised hosts
+### Monocytes minimise inflammation and stress in tolerised hosts
 
 Nevertheless, we reasoned that the myeloid compartment cannot be entirely quiescent during reinfection since mice are able to control replication of the virulent parasite genotype AJ. We therefore isolated spleen monocytes and examined their transcriptional programme in the acute phase of second infection. We identified more than 3000 differentially expressed genes and found that most of these were unique to reinfection (Figure 4A); remarkably, monocytes did not differentiate into inflammatory macrophages and all functions associated with this fate were silenced (Figure 4B–C, Figure 4—figure supplement 1A–C). Host control of inflammation extended beyond the boundaries of the spleen with circulating levels of CXCL10 and IFNɣ also attenuated at the peak of second infection (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig4-v1.jpg)
+
+**Figure 4.:** (A) RNA sequencing of spleen monocytes flow-sorted during the acute phase of first or second infection (7 days p.i.). In each case, the number of differentially expressed genes (DEG, padj <0.01, >1.5-fold change) was assessed relative to uninfected controls. Pie shows the proportion of DEG unique to second infection (i.e. not shared with first infection). (B–C) Log2 fold change (FC) of (B) signature genes used to predict monocyte differentiation into inflammatory macrophages (Mɸ) or monocyte-derived dendritic cells (DC); and (C) chemokines, cytokines, and their receptors. Log2FC is shown relative to uninfected controls. (D) Plasma concentration of CXCL10 and IFNɣ during the acute phase of first (n = 4) or second (n = 5) infection (box-plots show median and IQR). Note that both plasma proteins were below the limit of detection in uninfected controls. (E) Log2FC of signature genes used to predict monocyte differentiation towards alternative fates (log2FC is shown relative to uninfected controls). In (A–C and E), n = 5 for infected mice and n = 6–7 for uninfected controls. Square brackets indicate that common gene names were used.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) RNA sequencing of spleen monocytes flow-sorted from mice experiencing their first or second infection (acute, 7 days p.i.). Shown is the log2 fold change (FC) of (A) pattern recognition receptors (PRR); (B) class I and class II antigen processing and presentation pathways (inc MHC transactivators*); and (C) T cell co-stimulation and inhibitory ligands. Data are shown relative to uninfected controls. If parasite- or host-derived ligands have been identified for PRR in malaria these ligands are labelled. (D) Log2FC of the major glucose transporters and glycolytic enzymes in spleen monocytes during the acute phase of second infection (7 days p.i.) – data are shown relative to uninfected controls. Note that under anaerobic conditions pyruvate can be further converted to lactate by lactate dehydrogenase, which is also shown. (E) Transcriptional regulation of oxidative phosphorylation in spleen monocytes during the acute phase of second infection (7 days p.i.). Data show the number of enzymatic subunits that are transcriptionally up- or downregulated compared to uninfected controls (padj <0.01, >1.5-fold change) – all subunits that are required to form complex I to IV in the electron transport chain and ATP synthase are shown. In (A–E), n = 5 for infected mice and n = 6–7 for uninfected controls. Square brackets indicate that common gene names were used.
 
 We therefore explored alternative monocyte fates, such as those associated with immune regulation, wound healing, and tissue repair. However, spleen monocytes were not polarised towards alternatively activated macrophages and nor did they induce signature genes associated with myeloid-derived suppressor cells (Gabrilovich, 2017) or reparative Ly6Clo monocytes (Jung et al., 2017; Figure 4E). Furthermore, they did not upregulate anti-inflammatory cytokines or checkpoint inhibitors (Figure 4C and Figure 4—figure supplement 1C). To make sense of their complex transcriptional profile we therefore turned once more to clueGO. In contrast to first infection, we found minimal enrichment of GO terms linked to host defence; instead, all major supergroups in second infection related to regulation of cell cycle and nuclear division (Figure 5A–C). This localised proliferation of monocytes may support a critical spleen response without having to engage increased production and recruitment from the bone marrow.
 
@@ -81,25 +125,41 @@ In support of this argument, monocytes differentially regulate heme-iron metabol
 
 Taken together, these data clearly show that spleen monocytes initiate a transcriptional programme designed to promote tolerance to malaria parasites upon reinfection. This is achieved in two ways – first by minimising inflammation to reduce collateral tissue damage and second by engaging pathways that can impart stress tolerance on their environment. Significantly, mice were first infected with the avirulent parasite genotype AS, suggesting that parasite-derived signals may be sufficient to redirect monocyte fate.
 
-## Metabolic rewiring underpins monocyte fate
+### Metabolic rewiring underpins monocyte fate
 
 We moved on to ask whether the fate and function of monocytes could be underpinned by metabolic reprogramming. Cellular metabolism has emerged as a key determinant of monocyte-to-macrophage differentiation (O'Neill et al., 2016) and so we looked again at transcriptional control of the key enzymes involved in glycolysis and oxidative phosphorylation. We found that both pathways were comparably induced during first and second infection with one notable exception: monocytes switched from upregulating the glucose transporter Slc2a1 in first infection to Slc2a3 in second infection (Figure 2—figure supplement 1C–D and Figure 4—figure supplement 1D–E). Slc2a3 encodes the facilitative GLUT3 transporter, which unlike most other transporters can continue to import glucose under hypoglycaemic conditions (Simpson et al., 2008). Switching to GLUT3 may therefore constitute a cell-intrinsic adaptation that allows monocytes to tolerate infection-induced stress. When we looked deeper into the transcriptional control of cell metabolism we found that monocytes also differentially expressed their mitochondrial carrier proteins (Figure 5F). These membrane-embedded proteins provide the cellular wiring that connects metabolic reactions in the cytosol with the mitochondrial matrix by transporting metabolites, nucleotides, and co-enzymes across the inner mitochondrial membrane (Palmieri, 2013); in this way, mitochondrial carrier proteins facilitate the complex crosstalk between all major metabolic pathways. In first infection, spleen monocytes primarily upregulate a carrier protein (encoded by Slc25a1) whose major substrate is citrate, a metabolite known to accumulate in inflammatory macrophages. In contrast, monocytes upregulate Slc25a29 during reinfection and this carrier protein shuttles arginine, which can be fluxed through the arginase pathway to promote tolerance and wound healing (O'Neill et al., 2016). By re-wiring their mitochondria, monocytes may thus be enabling their specialised tissue protective functions in tolerised hosts.
 
-## Disease tolerance is established after one malaria episode
+### Disease tolerance is established after one malaria episode
 
 Host control of inflammation may provide a quick and effective way to establish disease tolerance (Medzhitov et al., 2012); so far, we have shown that inflammation is minimised in the bone marrow (preventing emergency myelopoiesis), blood (decreasing plasma interferon), and spleen (diverting monocyte fate). To directly show that this coincides with a reduction in pathology we measured circulating levels of Angiopoietin-2. This vascular growth factor is the best biomarker of endothelium activation and dysfunction in human malaria and the most accurate prognostic marker of mortality in children (Yeo et al., 2008). We found that in first infection Angiopoietin-2 levels increased by more than an order of magnitude but in second infection – with an identical parasite burden – levels did not deviate from a healthy uninfected baseline (Figure 5G). A single malaria episode can therefore induce host adaptations that promote disease tolerance and provide long-lived clinical immunity.
 
-## Malaria does not induce epigenetic reprogramming of bone marrow monocytes
+### Malaria does not induce epigenetic reprogramming of bone marrow monocytes
 
 So how do tolerised hosts control inflammation independently of pathogen load? To begin to answer this question, we looked once again at the functional specialisation of monocytes in second infection. Our data are consistent with a model of innate memory, whereby myeloid progenitors in the bone marrow are epigenetically reprogrammed during first infection to intrinsically modify the response of monocytes to reinfection. To test this hypothesis, we asked if malaria induces heritable histone modifications that alter the epigenetic landscape of inflammatory monocytes before their release from the bone marrow. And since tolerance can persist in the absence of parasitaemia, we isolated monocytes from once-infected mice one month after drug cure (day 70, see Figure 1A). Crucially, this was exactly the same time-point at which we had performed all of our reinfection studies (Figure 3A). In this experiment, we interrogated the distribution of histone modifications genome-wide using ChIPseq and asked whether (i) transcription start sites were marked with H3K27ac to activate transcription (ii) enhancers or superenhancers were marked with H3K4me1 to promote gene expression or (iii) DNA was condensed into heterochromatin by H3K9me3 to silence gene expression.
 
 We used the motif discovery software HOMER (Heinz et al., 2010) to identify peaks and visualised peaks with the genomics exploration tool Integrative Genomics Viewer (Thorvaldsdóttir et al., 2013). In the first instance, we looked at the histone modification profiles of genes that define monocyte function in first and second infection; for example, genes associated with inflammation versus proliferation. Subscribing to the notion that ChIPseq reveals qualitative (not quantitative) differences (Ma et al., 2018; Orlando et al., 2014), we simply asked whether these genes were marked or not marked. Our prediction was that genes that were upregulated during first infection but silenced during reinfection (tolerised genes) would lose marks associated with active transcription or be condensed into inactive heterochromatin. Conversely, specialised genes (those upregulated exclusively during second infection) would gain marks to promote transcription. Remarkably however, we found that in almost every case the histone modification profiles of tolerised and specialised genes were identical between monocytes isolated from once-infected mice and uninfected controls (Figure 6A–B and Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig6-v1.jpg)
+
+**Figure 6.:** (A) Chromatin immunoprecipitation (ChIP)seq of bone marrow monocytes flow-sorted from once-infected mice (AJ, memory, 70 days p.i.) and uninfected controls. Shown are the Integrative Genomics Viewer (IGV) traces (autoscaled) of three loci encoding genes that are transcriptionally tolerised (upregulated in first but not second infection) or specialised (upregulated only in second infection). Peaks were called relative to non-immunoprecipitated input DNA and are shown for uninfected controls (black line). Regions of the genome that were differentially marked between once-infected mice and uninfected controls are underlined in orange (differentially modified regions). (B) Histone modification profiles of bone marrow monocytes from once-infected mice and uninfected controls. Black squares indicate that a peak was called within 10 kb (H3K27ac and H3K9me3) or 100 kb (H3K4me1) of the transcription start site. Square brackets indicate that common gene names were used. IGV traces are shown in (A) and Figure 6—figure supplement 1 for genes marked with one or two asterisks, respectively. (C) Pies show the proportion of tolerised/specialised genes (n = 2848) annotated with or without a differentially modified region (annotated to the nearest gene). In (A–C), the data shown are pooled from independent biological replicates (see Materials and methods).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Chromatin immunoprecipitation (ChIP)seq of bone marrow monocytes flow-sorted from once-infected mice (AJ, memory, 70 days p.i.) and uninfected controls. Shown are the Integrative Genomics Viewer (IGV) traces (autoscaled) of five loci encoding immune and metabolic genes. Peaks were called relative to non-immunoprecipitated input DNA and are shown for uninfected controls (black line). Regions of the genome that were differentially marked between once-infected mice and uninfected controls are underlined in orange (differentially modified regions). The data shown are pooled from independent biological replicates (see Materials and methods).
+
 Even when we used HOMER to call differentially modified regions (DMR) and quantify differences between once-infected and control mice, we found little evidence to support epigenetic reprogramming of monocytes – of the 2848 tolerised/specialised genes identified by RNAseq 95% had no detectable histone modifications (Figure 6C). And in those rare cases where a DMR was called, HOMER assigned a low confidence peak score (Supplementary file 2). Innate memory can not therefore easily explain the widespread transcriptional changes that lead to the functional specialisation of monocytes in tolerised hosts.
 
-## Monocytes are transcriptionally reprogrammed in the remodelled spleen
+### Monocytes are transcriptionally reprogrammed in the remodelled spleen
 
 An alternative explanation is that monocyte fate is imprinted within the spleen; after all, tissue printing is a key route to organ-specific identity during monocyte to macrophage differentiation (Scott et al., 2016; van de Laar et al., 2016). We therefore looked for transcriptional evidence of long-lived changes in spleen monocytes that can persist after parasite clearance. We found 111 differentially expressed genes in monocytes isolated from once-infected mice compared to uninfected controls; remarkably, most of these genes were not differentially expressed during acute or chronic infection. Instead, this transcriptional signature was unique to the memory phase and was further enhanced upon reinfection (Figure 7A). This included the transcription factor Maf, which regulates macrophage programming in vivo (Kang et al., 2017; Liu et al., 2020), and Sirpa, which regulates recognition of self (Bian et al., 2016). The majority of genes, however, related to cell cycle and nuclear division – specialised functions of spleen monocytes in tolerised hosts. Indeed, we found remarkable overlap in the top GO terms identified in memory and second infection (Figure 7B). A critical part of the transcriptional programme designed to promote tolerance to malaria parasites is therefore already engaged in monocytes prior to reinfection. And this transcriptional signature does not appear to require epigenetic reprogramming in the bone marrow. These data thus provide compelling evidence that malaria may remodel the spleen to imprint tolerance.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig7-v1.jpg)
+
+**Figure 7.:** (A) RNA sequencing of spleen monocytes flow-sorted from AJ-infected mice (7 and 40 days p.i. for acute and chronic, respectively), once-infected mice (memory, 70 days p.i.), and reinfected mice (acute, 7 days p.i.). The heatmap shows all 111 differentially expressed genes in once-infected mice (DEG, relative to uninfected controls, padj <0.01, >1.5-fold change). (B) GO analysis of DEG in spleen monocytes during first infection (7 days p.i.), memory phase (70 days p.i.) and second infection (7 days p.i.). Mice were infected with P. chabaudi AJ and the top GO terms in once-infected mice are shown. (C) Working model of disease tolerance in malaria, showing the major changes in the myeloid compartment throughout chronic infection, convalescence and reinfection. Note that in the memory phase (one month after drug cure) there is no evidence that monocytes are epigenetically reprogrammed in the bone marrow but they are transcriptionally reprogrammed in the spleen. We therefore propose that the remodelled spleen imprints monocytes with tissue protective functions. In (A and B) n = 5–6 for infected mice and n = 6–7 for uninfected controls. (C) Icons credit: https://thenounproject.com/.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63838/elife-63838-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A and B) Microarray of red pulp macrophages (Mɸ) flow-sorted from the spleens of once-infected mice (memory, 100 days p.i.) and age-matched uninfected controls. Data are displayed as the RMA (robust multi-array average) normalised log2 expression intensity for each gene and each column represents one mouse. Details of how we curated signature genelists for (A) mononuclear phagocytes (inc dendritic cells, DC) and (B) tissue resident Mɸ are provided in the Materials and methods section. Spic is the master transcription factor (TF) for red pulp Mɸ fate (Kohyama et al., 2009) and is marked with an asterisk. Note that pairwise comparisons between each of the three groups (uninfected, AS, and AJ) revealed zero differentially expressed genes (padj <0.05) (n = 5 for uninfected mice and n = 3–4 for once-infected mice).
 
 ## Discussion
 
@@ -121,37 +181,450 @@ Acquired immunity to malaria is often considered to be slow and ineffective – 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus C57Bl/6J female)</td>
+      <td>C57Bl/6</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Bred and housed in individually ventilated cages (SPF conditions) at the University of Edinburgh</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium chabaudi chabaudi AS)</td>
+      <td>P. chabaudi AS</td>
+      <td rowspan="2">The European malaria reagent repository http://www.malariaresearch.eu</td>
+      <td>Clone 28AS11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium chabaudi chabaudi AJ)</td>
+      <td>P. chabaudi AJ</td>
+      <td>Clone 96AJ15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Anopheles stephensi SD500)</td>
+      <td>Mosquitoes</td>
+      <td>Reared in-house at the University of Edinburgh</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse B220 (rat monoclonal)</td>
+      <td>Clone RA3-6B2 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_10717389</td>
+      <td>(0.2 μl) per test = 2 million cells in 100 μl volume</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3ε (Armenian hamster monoclonal)</td>
+      <td>Clone 145–2 C11 BioLegend</td>
+      <td>RRID:AB_312676</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 (rat monoclonal)</td>
+      <td>Clone RM4-5 BioLegend</td>
+      <td>RRID:AB_312718</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a (rat monoclonal)</td>
+      <td>Clone 53–6.7 BioLegend</td>
+      <td>RRID:AB_312750</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b (rat monoclonal)</td>
+      <td>Clone M1/70 BioLegend</td>
+      <td>RRID:AB_312798</td>
+      <td>(0.1 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c (Armenian hamster monoclonal)</td>
+      <td>Clone N418 BioLegend</td>
+      <td>RRID:AB_313776</td>
+      <td>(0.15 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/32 (rat monoclonal)</td>
+      <td>Clone 93 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_469598</td>
+      <td>(0.5 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TruStain FcX anti-mouse CD16/32 (rat monoclonal)</td>
+      <td>Clone 93 BioLegend</td>
+      <td>RRID:AB_1574973</td>
+      <td>(2 μl) per test blocks FcɣR II/III prior to antibody staining</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 (rat monoclonal)</td>
+      <td>Clone 6D5 BioLegend</td>
+      <td>RRID:AB_313646</td>
+      <td>(0.1 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD27 (Armenian hamster monoclonal)</td>
+      <td>Clone LG.7F9 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_465614</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD34 (rat monoclonal)</td>
+      <td>Clone RAM34 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_465021</td>
+      <td>(0.4 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD71 (rat monoclonal)</td>
+      <td>Clone RI7217 BioLegend</td>
+      <td>RRID:AB_10899739</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD115/Csf1r (rat monoclonal)</td>
+      <td>Clone AFS98 BioLegend</td>
+      <td>RRID:AB_2562760</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD135/Flt3 (rat monoclonal)</td>
+      <td>Clone A2F10 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_465859</td>
+      <td>(2.5 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD169 (rat monoclonal)</td>
+      <td>Clone 3D6.112 BioLegend</td>
+      <td>RRID:AB_2563910</td>
+      <td>(1 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse cKit/CD117 (rat monoclonal)</td>
+      <td>Clone 2B8 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_1834421</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CX3CR1 (mouse monoclonal)</td>
+      <td>Clone SA011F11 BioLegend</td>
+      <td>RRID:AB_2564493</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80 (rat monoclonal)</td>
+      <td>Clone BM8 BioLegend</td>
+      <td>RRID:AB_10901171</td>
+      <td>(0.8 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IAb (mouse monoclonal)</td>
+      <td>Clone AF6-120.1 BioLegend</td>
+      <td>RRID:AB_313724</td>
+      <td>(0.5 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly6C (rat monoclonal)</td>
+      <td>Clone HK1.4 BioLegend</td>
+      <td>RRID:AB_2562177</td>
+      <td>(0.1 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly6G (rat monoclonal)</td>
+      <td>Clone 1A8-Ly6g eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_2573893</td>
+      <td>(0.2 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse NK1.1 (mouse monoclonal)</td>
+      <td>Clone PK136 BioLegend</td>
+      <td>RRID:AB_313396</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Nr4a1/Nur77 (mouse monoclonal)</td>
+      <td>Clone 12.14 eBioscience - sold by ThermoFisher</td>
+      <td>RRID:AB_1257209</td>
+      <td>(0.3 μl) per test intracellular stain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Sca1/Ly6a (rat monoclonal)</td>
+      <td>Clone D7 BioLegend</td>
+      <td>RRID:AB_2562275</td>
+      <td>(2 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ter119 (rat monoclonal)</td>
+      <td>Clone Ter119 BioLegend</td>
+      <td>RRID:AB_313712</td>
+      <td>(0.3 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse VCAM-1 (rat monoclonal)</td>
+      <td>Clone 429 BioLegend</td>
+      <td>RRID:AB_1595594</td>
+      <td>(0.5 μl) per test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27ac ChIPseq grade (rabbit polyclonal)</td>
+      <td>Diagenode #C15410196 see our optimised ChIPseq protocol dx.doi.org/10.17504/protocols.io.bja3kign</td>
+      <td>RRID:AB_2637079</td>
+      <td>(2 μg) per ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me1 ChIPseq grade (rabbit polyclonal)</td>
+      <td>Diagenode #C15410037 see our optimised ChIPseq protocol dx.doi.org/10.17504/protocols.io.bja3kign</td>
+      <td>RRID:AB_2561054</td>
+      <td>(5 μg) per ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9me3 ChIPseq grade (rabbit polyclonal)</td>
+      <td>Diagenode #C15410193 see our optimised ChIPseq protocol dx.doi.org/10.17504/protocols.io.bja3kign</td>
+      <td>RRID:AB_2616044</td>
+      <td>(1 μg) per ChIP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward primer</td>
+      <td>5-GCGAGAAAGTTAAAAGAATTGA-3</td>
+      <td></td>
+      <td rowspan="3">For measuring P. chabaudi blood-stage parasitaemia by quantitative PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse primer</td>
+      <td>5-CTAGTGAGTTTCCCCGTGTT-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Probe</td>
+      <td>[6FAM] - AAATTAAGCCGCAAGCTCCACG - [TAM]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick DNA Universal Microprep Kit</td>
+      <td>Zymo Research</td>
+      <td>D4074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IFNɣ mouse ELISA kit, extra sensitive</td>
+      <td>Invitrogen - sold by ThermoFisher</td>
+      <td>BMS609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IP-10 (CXCL10) mouse ELISA kit</td>
+      <td>Invitrogen - sold by ThermoFisher</td>
+      <td>BMS6018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse/rat Angiopoietin-2 quantine ELISA kit</td>
+      <td>R&amp;D Systems</td>
+      <td>MANG20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 / Transcription Factor Staining Buffer Set</td>
+      <td>eBioscience - sold by ThermoFisher</td>
+      <td>00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-Seq v4 Ultra Low Input RNA Kit</td>
+      <td>Takara Bio</td>
+      <td>634891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>FC-131-1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>True MicroChIP kit</td>
+      <td>Diagenode</td>
+      <td>C01010130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MicroPlex Library Preparation Kit v2</td>
+      <td>Diagenode</td>
+      <td>C05010012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator-5 Kit</td>
+      <td>Zymo Research</td>
+      <td>R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneChip WT Pico Kit</td>
+      <td>Affymetrix - sold by ThermoFisher</td>
+      <td>902622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneChip Mouse Gene 1.0 ST Array</td>
+      <td>Affymetrix - sold by ThermoFisher</td>
+      <td>901168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminobenzoic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine diphosphate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>C6628</td>
+      <td>Dissolve in water, dosage: 100 mg/kg by oral gavage</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharide from Escherichia coli 0111:B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>L4391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2 v2.2.7</td>
+      <td>(Langmead and Salzberg, 2012) http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td>RRID:SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>(Love et al., 2014) https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape v3.8.0</td>
+      <td>(Shannon et al., 2003) https://cytoscape.org/</td>
+      <td>RRID:SCR_003032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clueGO v2.5.4</td>
+      <td>(Bindea et al., 2009; Mlecnik et al., 2014) http://apps.cytoscape.org/apps/cluego</td>
+      <td>RRID:SCR_005748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER v4.10</td>
+      <td>(Heinz et al., 2010) http://homer.ucsd.edu/</td>
+      <td>RRID:SCR_010881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative genomics viewer (IGV)</td>
+      <td>(Thorvaldsdóttir et al., 2013) http://www.broadinstitute.org/igv/</td>
+      <td>RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal experiments were conducted in accordance with UK Home Office regulations (Animals Scientific Procedures Act 1986; project licence number 70/8546) and approved by veterinarian services at the University of Edinburgh. C57Bl/6J mice, originally obtained from the The Jackson Laboratory, were bred and housed in individually ventilated cages under specific pathogen-free conditions. Mice had access to water and rat and mouse no. three breeding diet (Special Diets Services) at all times. Experimental procedures were initiated when mice were 8–10 weeks of age, following acclimatisation to a reversed 12 hr dark/light cycle (lights OFF at 07:00 GMT and lights ON at 19:00 GMT). Mice were culled either by cervical dislocation or by pentobarbital overdose followed by exsanguination.
 
-## Mosquito transmission of malaria parasites
+### Mosquito transmission of malaria parasites
 
 We transmitted two serially blood passaged Plasmodium chabaudi chabaudi clones (P. chabaudi AS (clone 28AS11) and P. chabaudi AJ (clone 96AJ15)), which were originally obtained from the University of Edinburgh (http://www.malariaresearch.eu/). Anopheles stephensi mosquitoes (strain SD500) were reared in-house and infected with P. chabaudi according to our previously published protocol (Spence et al., 2012). In brief, donor mice were inoculated with serially blood passaged P. chabaudi by intraperitoneal injection of infected red cells. Gametocytes were quantified on day 14 of infection and mice with >0.1% gametocytaemia were anaesthetised and exposed to female mosquitoes at 11:00 GMT. To ensure optimal parasite development, mosquitoes were kept at 26.0°C (±0.5°C) in an ultrasonic humidity cabinet and provided with 8% Fructose and 0.05% 4-Aminobenzoic acid (Sigma-Aldrich) feeding solution from this point forward. Successful oocyst development was verified in mosquito midguts 8 days later and sporozoites were isolated from mosquito salivary glands on day 15 post-feed. Salivary glands were dissected under a stereomicroscope and transferred to a glass mortar; to maintain sporozoite viability, salivary glands were kept on ice in RPMI supplemented with 0.2% Glucose, 0.2% Sodium bicarbonate (Sigma-Aldrich), 2 mM L-Glutamine (Gibco), and 10% fetal bovine serum (Gibco, FBS Performance Plus, heat inactivated and filtered 0.22 μm) for a maximum of 2 hr. Sporozoites were released from salivary glands by gentle homogenisation and washed three times before enumeration. To initiate infection in experimental mice, 200 P. chabaudi sporozoites were intravenously injected into the tail vein.
 
-## Monitoring the course and outcome of infection
+### Monitoring the course and outcome of infection
 
 Following sporozoite injection, P. chabaudi develops in the liver for 52 hr before the release of merozoites to kick-start asexual blood-stage replication – each blood cycle takes approximately 24 hr to complete. Mice were closely monitored for the first 14 days of acute blood-stage infection with parasitaemia quantified daily using Giemsa stained thin blood films (counting at least 10,000 red cells). Sickness behaviour and core body temperature (digital rectal thermometer, TmeElectronics) were also recorded daily. To assess anaemia, erythrocytes in 2 μl blood (collected from the tail tip) were counted using a Z2 Coulter Particle count and size analyser (Beckman Coulter). We determined the healthy range in uninfected C57Bl/6J mice housed in our facility to be 8.8–10.5 × 109 erythrocytes*ml−1. Anaemia was classified as severe when red cell loss exceeded 50%.
 
 Chronic infection was verified after 40 days of blood-stage parasitaemia by quantitative PCR of parasite 18S ribosomal DNA. DNA was extracted from 20 μl blood (collected from the tail tip) using Quick DNA Universal Microprep Kit (Zymo Research), and amplified using TaqMan Universal PCR Mastermix (ThermoFisher) with 9 μM of forward primer (5-GCGAGAAAGTTAAAAGAATTGA-3), 9 μM of reverse primer (5-CTAGTGAGTTTCCCCGTGTT-3), and 2.5 μM of probe ([6FAM] - AAATTAAGCCGCAAGCTCCACG - [TAM]) on a Roche Lightcycler 480 (40 cycles of amplification). A standard curve of red cells spiked with known numbers of parasites allowed accurate quantification; mice with >5 parasites*μl -1 (limit of detection) were considered chronically infected with P. chabaudi, and all other mice were excluded from the study. Chronic infection was cleared using 100 mg/kg chloroquine diphosphate salt (Sigma-Aldrich, dissolved in water) administered by oral gavage daily for 10 days. Memory responses were assessed 30 days after the start of chloroquine treatment, and at this time-point once-infected mice were compared to uninfected age-matched controls that received the same schedule of chloroquine treatment.
 
-## Malaria reinfection model
+### Malaria reinfection model
 
 Mice were first infected with P. chabaudi AS by intravenous (iv) injection of sporozoites, and those with qPCR-confirmed chronic parasitaemia were chloroquine treated on day 40 of blood-stage infection. Thirty days after the start of chloroquine treatment mice were infected for a second time but now by iv injection of 5 × 105 mosquito-transmitted P. chabaudi AJ blood-stage parasites. Reinfection was initiated by this route to avoid confounding factors that may arise as a result of liver-stage immunity, which can be observed in C57Bl/6 mice after a single infection with P. chabaudi AS (Nahrendorf et al., 2015). Note that uninfected age-matched controls received the same schedule of chloroquine treatment as reinfected mice.
 
-## Quantification of plasma proteins by ELISA
+### Quantification of plasma proteins by ELISA
 
 Platelet-depleted plasma was prepared from heparinised (Wockhardt) blood using two consecutive centrifugation steps (1000 xg for 10 min followed by 2000 xg for 15 min). Plasma was kept cold throughout and aliquots were stored at −80°C. We used commercially available ELISA kits to quantify plasma IFNɣ (IFNɣ mouse ELISA kit, extra sensitive, Invitrogen), CXCL10 (IP-10 mouse ELISA kit, Invitrogen), and Angiopoietin-2 (mouse/rat Angiopoietin-2 quantine ELISA kit, R&D Systems). Absorbance was measured using a Multiskan Ascent (MTX Lab systems) or FluoSTAR Omega (BMG Labtech) plate reader.
 
-## Tissue preparation for histology
+### Tissue preparation for histology
 
 Spleens and femurs from P. chabaudi-infected mice and once-infected mice (and uninfected age-matched controls) were fixed in 10% neutral buffered Formalin (Sigma-Aldrich) for 24 or 48 hr, respectively. Bones were then decalcified for 48 hr using 10% EDTA (pH 7.2) with gentle shaking at 55°C. After these steps, tissues were stored in 70% Ethanol and photographed to visualise macroscopic changes resulting from malaria. The spleen and both femurs from each mouse were paraffin-embedded in a single block and 5 μm sections were prepared (cross-section for spleen and longitudinal section for bone). Sections were stained with Hematoxylin and Eosin (H&E, ThermoFisher) or Prussian Blue and Neutral Red (Scientific Laboratory Supplies and VWR) at the Shared University Research Facilities, University of Edinburgh. Stained slides were assessed using a Nikon A400a bright-field microscope and images were taken with a Zeiss 503 high-resolution colour camera. Images were cropped, white balance was adjusted and the brightness/contrast standardised between samples using Adobe Photoshop CS6.
 
-## Parasite sequestration
+### Parasite sequestration
 
 To quantify the accumulation of infected red cells in the microvasculature of critical organs and tissues we used the same methodology as described in our sequestration and histopathology study (Brugat et al., 2014). In brief, we infected mice by intraperitoneal injection of 105 mosquito-transmitted P. chabaudi AS or AJ blood-stage parasites and measured circulating parasitaemia at the peak of schizogony (13:00 GMT) by counting at least 5000 red cells on Giemsa stained blood films. Immediately thereafter, mice were euthanised and exsanguinated – the spleen and both femurs were prepared for histology as described above (‘tissue preparation for histology’). In addition, the left lobe of the liver, the left lung and kidney, the duodenum and the heart were fixed in 10% neutral buffered Formalin (24 hr) and then stored in 70% Ethanol. All organs from each mouse were paraffin-embedded in a single block and 5 μm sections were cut and stained with H&E (longitudinal section for bone and cross section for all other tissues). The percentage of infected red cells contained within the microvasculature of every organ was quantified by counting at least 1000 red cells in at least 20 blood vessels, and is displayed relative to peripheral parasitaemia. For high-resolution images of sequestered parasites in chabaudi malaria please see Brugat et al., 2014.
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 Sodium heparin (Wockhardt) was used as anticoagulant for whole blood samples; spleens were dissociated in C-tubes using a gentleMACS Octo Dissociator (Miltenyi Biotec); and bone marrow was flushed from femurs using a 27½G needle/syringe loaded with IMDM. Single cell suspensions were filtered through a 70 μm cell strainer and after red cell lysis leukocytes were counted on a haemocytometer; up to 2 × 106 cells per well were placed into a 96 well V bottom plate for staining. A Zombie Aqua Fixable Viability Dye (BioLegend) was used to identify dead cells, after which Fc receptors were blocked using TruStain FcX (anti-mouse CD16/32, BioLegend). Cell surface staining was performed at room temperature (antibody panels are detailed in Supplementary file 1) and for ChIPseq experiments cells were subsequently fixed in PBS with 1% paraformaldehyde and 10% FBS for 10 min at room temperature (reaction was quenched with 125 mM Glycine [Sigma-Aldrich]). Note that across experiments the viability of leukocytes always exceeded 93.8% (no viability stain for cell sorting). To confirm the identity of patrolling monocytes we performed an intracellular stain for the transcription factor Nr4a1 (clone 12.14, eBioscience) using the FoxP3/Transcription Factor Buffer Staining Set (eBioscience).
 
@@ -159,29 +632,29 @@ Cells were acquired on an LSR Fortessa flow cytometer (BD Biosciences) or sort
 
 The absolute number of cells in each tissue was calculated from leukocyte counts of single cell suspensions. For bone marrow, we estimated that one femur contains approximately 11% of total mouse marrow (Colvin et al., 2004) and extrapolated accordingly. For whole blood, we recorded the volume collected during exsanguination and then extrapolated to total circulating blood volume, according to body weight. This approach allows a direct comparison of cell numbers across tissues.
 
-## Cytospin of red pulp macrophages
+### Cytospin of red pulp macrophages
 
 Red pulp macrophages (Lineageneg F4/80pos B220neg CD11bint CD11cint autofluorescent cells) were flow-sorted from the spleens of uninfected mice and collected into polypropylene tubes containing IMDM supplemented with 20% FBS and 8 mM L-Glutamine. Sorted cells were then spun (1000 xg for 5 min) onto glass slides using a Shandon Cytospin 3 Cytocentrifuge (ThermoScientific) and stained with Prussian Blue and Neutral Red (Sigma-Aldrich). Red pulp macrophages were visualised and photographed using a Leica DM1000 light microscope (×100 oil objective).
 
-## In vitro stimulation of monocytes with LPS
+### In vitro stimulation of monocytes with LPS
 
 30,000 inflammatory monocytes (Lineageneg Ly6Gneg CD11bpos CD11cneg Ly6Chi) were flow-sorted from the spleens of chronically infected mice (P. chabaudi AJ) or uninfected controls and collected into polypropylene tubes containing IMDM supplemented with 5% FBS and 8 mM L-Glutamine. Following a gentle spin (450 xg for 10 min, slow brake) monocytes were resuspended in 90 μl pre-warmed IMDM containing 10% FBS and 8 mM L-Glutamine, and transferred to an ultra-low attachment 96 well flat bottom cell culture plate (Corning). To stimulate cells 0.3 ng LPS (Lipopolysaccharide from Escherichia coli 0111:B4, Sigma-Aldrich) was added and cells were incubated for 4 hr at 37°C and 7% CO2. RNA from both adherent and non-adherent cells was preserved in 1 ml TRIzol Reagent (ThermoFisher) for downstream steps.
 
-## Ex vivo RNA sequencing of monocytes
+### Ex vivo RNA sequencing of monocytes
 
 10,000 inflammatory monocytes (Lineageneg Ly6Gneg CD11bpos CD11cneg Ly6Chi) were flow-sorted from the spleens of P. chabaudi infected mice, once-infected mice or uninfected controls and collected into 1.5 ml eppendorf tubes containing 1 ml TRIzol Reagent. Samples were inverted ten times, incubated at room temperature for 5 min and snap frozen on dry ice; all samples were stored at −80°C prior to RNA extraction.
 
 RNA was extracted using a modified phenol-chloroform protocol (Chomczynski and Sacchi, 2006) with 1-Bromo-3-chloropropane and Isopropanol (Sigma-Aldrich and VWR, respectively). Total RNA was quantified and assessed for quality and integrity by Bioanalyser (RNA Pico 6000 Chip, Agilent) – all sequenced samples had a RIN value above 8. cDNA was generated from 2 ng total RNA using the SMART-Seq v4 Ultra Low Input RNA Kit (Takara Bio) and amplified using 11 cycles of PCR. Amplified cDNA was purified using Agencourt AMPure XP beads (Beckman Coulter), quantified on a Qubit 2.0 Fluorometer (dsDNA HS assay, ThermoFisher) and quality assessed by Bioanalyser (DNA HS Kit, Agilent). Libraries were then constructed from 150 pg of cDNA using the Nextera XT DNA Library Preparation Kit (Illumina) according to the manufacturer's instructions. Libraries were quantified by Qubit (dsDNA HS assay) and fragment size distribution was assessed by Bioanalyser (DNA HS Kit). Using this information, samples were combined to create equimolar library pools that were sequenced on a NextSeq 550 platform (Illumina) to yield 75 bp paired-end (PE) reads; the median number of PE reads per sample passing QC across all experiments was 4.79 × 107.
 
-## RNA sequencing analysis
+### RNA sequencing analysis
 
 FastQ files were downloaded from BaseSpace (Illumina) and raw sequence data assessed for quality and content using FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We aligned paired-end sequences to the Ensembl release 96 murine transcripts set with bowtie2 v2.2.7 (Langmead and Salzberg, 2012 parameters: —very-sensitive -p 30 —no-mixed —no-discordant —no-unal) to obtain sorted, indexed bam files. Counts for each transcript were obtained using samtools idxstats (http://www.htslib.org/doc/samtools.html) and transcript counts were imported into the R/Bioconductor environment using the DESeq2 package (Love et al., 2014) for pairwise comparisons. Lists of differentially expressed transcripts were filtered to retain only those with an adjusted p value (padj) <0.01 and a fold change >1.5 using R v3.6; multiple transcripts annotated to the same gene were consolidated by keeping the transcript with the highest absolute fold change. Heatmaps and stacked circular bar charts were generated using the R ggplot2 package (Wickham, 2016). All RNAseq data are publicly available (GEO accession number GSE150047).
 
-## Functional gene enrichment analysis using clueGO
+### Functional gene enrichment analysis using clueGO
 
 Lists of differentially expressed genes were imported into clueGO v2.5.4 (Bindea et al., 2009; Mlecnik et al., 2014) – a Cytoscape plug-in (Shannon et al., 2003). ClueGO identified the significantly enriched GO terms (GO Biological Process and GO Molecular Function) associated with these genes and placed them into a functionally organised non-redundant gene ontology network based on the following parameters: padjcutoff = 0.01; correction method used = Bonferroni step down; min. GO level = 5; max. GO level = 11; min. number of genes = 3; min. percentage = 5.0; GO fusion = true; sharing group percentage = 40.0; merge redundant groups with >40.0% overlap; kappa score threshold = 0.4; and evidence codes used [All]. Each of the functional groups was assigned a unique colour and a network was then generated using an edge-weighted spring-embedded layout based on kappa score. We found that some GO terms were shared between multiple groups and so we manually merged these functionally connected groups to form supergroups, which we named according to the leading GO term (lowest padj with min. GO level 5).
 
-## Chromatin immunoprecipitation for sequencing (ChIPseq)
+### Chromatin immunoprecipitation for sequencing (ChIPseq)
 
 50,000 fixed inflammatory monocytes (Lineageneg Ly6Gneg CD135neg cKitneg CD11bpos CD11cneg Ly6Chi) were flow-sorted from the bone marrow of once-infected mice or uninfected controls and collected into polypropylene tubes containing IMDM supplemented with 5% FBS and 8 mM L-Glutamine. Sorted monocytes were pelleted by centrifugation and washed in HBSS (Gibco) that was supplemented with protease inhibitors (complete ULTRA Tablets Protease Inhibitor Cocktail, Roche) and 5 mM sodium butyrate (Alpha Aesar); cell pellets were stored at −80°C. Note that for each biological sample we pooled the femurs and tibias from two mice, and three tubes (each containing 50,000 cells) were collected for every sample so that we could perform chromatin-immunoprecipitation (ChIP) with three different antibodies (H3K27ac, H3K4me1, and H3K9me3).
 
@@ -189,7 +662,7 @@ We performed ChIP using the True MicroChIP Kit (Diagenode). In brief, chromatin 
 
 Libraries were prepared using the MicroPlex Library Preparation Kit v2 (Diagenode) and amplification was monitored in real-time on a LightCycler 480 (Roche) to ensure the optimum number of cycles was used. Amplified libraries were quantified by Qubit (dsDNA HS assay) and fragment size distribution assessed by Bioanalyser (DNA HS Kit). After equimolar pooling of samples we purified libraries with AMPure XP beads and sequenced on a HiSeq 4000 (75 bp PE reads) or NovaSeq S1 (100 bp PE reads) (both Illumina). A step-by-step guide to our optimised ChIPseq protocol is available at protocols.io (dx.doi.org/10.17504/protocols.io.bja3kign).
 
-## ChIPseq analysis
+### ChIPseq analysis
 
 ChIPseq data quality and content were assessed using FastQC; all samples passed initial QC and were aligned to the mm10 genome using bowtie2 v2.2.7 (parameters: —very-sensitive -p 30 —no-mixed —no-discordant —no-unal). We then used the motif discovery software HOMER (v4.10 Heinz et al., 2010) to turn indexed bam files (generated using samtools idxstats) into tag directories of individual ChIP and input samples. Alignments were converted to bedgraph format using the HOMER script makeUCSCfile. Wig format outputs were converted to tdf files to view data in the Integrative Genomics Viewer (IGV v.2.7.2 Thorvaldsdóttir et al., 2013) using igvtools v2.3.93 (parameters: toTDF -z 7 f p98). In HOMER, we identified areas of the genome where ChIP read counts were significantly enriched over fragmented, non-immunoprecipitated input DNA (which indicates the presence of a histone mark) by calling peaks in ChIP relative to sample-matched input DNA using predefined parameters (H3K27ac and H3K9me3 used ‘regions’ and H3K4me1 used ‘typical’ and ‘supertypical’). Default settings were used in every case with the exception of fold change over input, which was set to >3 fold for H3K9me3.
 
@@ -197,12 +670,12 @@ Individual samples were then combined in HOMER to create pooled ChIP tag directo
 
 To identify differentially modified regions (DMR) across the genome we again called peaks on pooled ChIP samples but this time instead of using non-immunoprecipitated input DNA to correct for background we called peaks in once-infected mice relative to uninfected controls (and vice versa). In this way, we identified areas of the genome where read counts were significantly enriched in one or the other experimental group. Low confidence peaks were removed by applying a peak score cut off >3 and DMR were annotated to the nearest gene using the script annotatePeaks in HOMER. We then asked how many of the 2848 tolerised/specialised genes identified by RNAseq were annotated with a differentially modified region (if a gene was annotated with more than one DMR then the region with the highest peak score was retained). All ChIPseq data (inc individual biological replicates and pooled tag directories) are publicly available (GEO accession number GSE150478).
 
-## Ex vivo transcriptional profiling of red pulp macrophages
+### Ex vivo transcriptional profiling of red pulp macrophages
 
 10,000 red pulp macrophages (Lineageneg F4/80pos B220neg CD11bint CD11cint autofluorescent cells) were flow-sorted from mice 100 days after self-resolving P. chabaudi infection or from uninfected age-matched controls. Sorted cells were collected into 1.5 ml eppendorf tubes containing 1 ml TRIzol Reagent (ThermoFisher) and samples were stored at −80°C prior to RNA extraction. RNA was extracted using a modified phenol-chloroform protocol (Chomczynski and Sacchi, 2006) and treated with Baseline-ZERO DNase to remove genomic DNA (Illumina). DNase-treated RNA was then purified using the RNA Clean and Concentrator-5 Kit (Zymo Research) and total RNA was quantified and assessed for quality and integrity by Bioanalyser (RNA Pico 6000 Chip, Agilent). RNA samples were processed for gene expression analysis using the GeneChip WT Pico Kit and Mouse Gene 1.0 ST Array (Affymetrix) according to the manufacturer's instructions.
 
 Microarray data were processed in R/Bioconductor making use of the oligo, pd.mta.1.0 and mta10sttranscriptcluster packages. Data quality was assessed using the arrayQualityMetrics package (Kauffmann and Huber, 2010); all samples passed QC and were normalised using robust multi-array average (RMA), which results in log2 expression intensities. Limma (linear models for microarray data) and eBayes packages were used for pairwise comparisons to find differentially expressed genes (DEG) between groups (AS vs uninfected, AJ vs uninfected and AJ vs AS) but yielded zero DEG in all comparisons (padj <0.05). Log2 expression intensities of signature genes for monocytes, tissue resident macrophages and dendritic cells were plotted using the heatmap.2() function in R; these genelists were manually compiled from published studies that set out to identify the gene expression profiles that underpin identity in myeloid cells (Gautier et al., 2012; Haldar et al., 2014; Miller et al., 2012; Okabe and Medzhitov, 2014). Microarray data are publicly available (GEO accession number GSE149894).
 
-## Data access
+### Data access
 
 All RNAseq, ChIPseq, and microarray data have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO SuperSeries accession number GSE150479.

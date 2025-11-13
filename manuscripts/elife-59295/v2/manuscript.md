@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Pathogens encounter numerous antimicrobial responses during infection, including the reactive oxygen species (ROS) burst. ROS-mediated oxidation of host membrane poly-unsaturated fatty acids (PUFAs) generates the toxic alpha-beta carbonyl 4-hydroxy-2-nonenal (4-HNE). Although studied extensively in the context of sterile inflammation, research into 4-HNE’s role during infection remains limited. Here, we found that 4-HNE is generated during bacterial infection, that it impacts growth and survival in a range of bacteria, and that the intracellular pathogen Listeria monocytogenes induces many genes in response to 4-HNE exposure. A component of the L. monocytogenes 4-HNE response is the expression of the genes lmo0103 and lmo0613, deemed rha1 and rha2 ( r eductase of h ost a lkenals), respectively, which code for two NADPH-dependent oxidoreductases that convert 4-HNE to the product 4-hydroxynonanal (4-HNA). Loss of these genes had no impact on L. monocytogenes bacterial burdens during murine or tissue culture infection. However, heterologous expression of rha1/2 in Bacillus subtilis significantly increased bacterial resistance to 4-HNE in vitro and promoted bacterial survival following phagocytosis by murine macrophages in an ROS-dependent manner. Thus, Rha1 and Rha2 are not necessary for 4-HNE resistance in L. monocytogenes but are sufficient to confer resistance to an otherwise sensitive organism in vitro and in host cells. Our work demonstrates that 4-HNE is a previously unappreciated component of ROS-mediated toxicity encountered by bacteria within eukaryotic hosts.
+Pathogens encounter numerous antimicrobial responses during infection, including the reactive oxygen species (ROS) burst. ROS-mediated oxidation of host membrane poly-unsaturated fatty acids (PUFAs) generates the toxic alpha-beta carbonyl 4-hydroxy-2-nonenal (4-HNE). Although studied extensively in the context of sterile inflammation, research into 4-HNE’s role during infection remains limited. Here, we found that 4-HNE is generated during bacterial infection, that it impacts growth and survival in a range of bacteria, and that the intracellular pathogen Listeria monocytogenes induces many genes in response to 4-HNE exposure. A component of the L. monocytogenes 4-HNE response is the expression of the genes lmo0103 and lmo0613, deemed rha1 and rha2 (reductase of host alkenals), respectively, which code for two NADPH-dependent oxidoreductases that convert 4-HNE to the product 4-hydroxynonanal (4-HNA). Loss of these genes had no impact on L. monocytogenes bacterial burdens during murine or tissue culture infection. However, heterologous expression of rha1/2 in Bacillus subtilis significantly increased bacterial resistance to 4-HNE in vitro and promoted bacterial survival following phagocytosis by murine macrophages in an ROS-dependent manner. Thus, Rha1 and Rha2 are not necessary for 4-HNE resistance in L. monocytogenes but are sufficient to confer resistance to an otherwise sensitive organism in vitro and in host cells. Our work demonstrates that 4-HNE is a previously unappreciated component of ROS-mediated toxicity encountered by bacteria within eukaryotic hosts.
 
 ## Introduction
 
@@ -33,13 +33,21 @@ In this study, we demonstrate that 4-HNE is generated during bacterial infection
 
 ## Results
 
-## 4-HNE accumulates during L. monocytogenes infection
+### 4-HNE accumulates during L. monocytogenes infection
 
 4-HNE is a highly reactive electrophilic αβ-unsaturated aldehyde that undergoes Michael addition with nucleophilic amino acids, resulting in stable conjugates that correlate with cellular levels of free 4-HNE. Monoclonal antibodies to these adducts are routinely used to monitor 4-HNE levels in cells (Majima et al., 2002). To investigate 4-HNE production during bacterial infection, we infected murine hepatocytes with L. monocytogenes for 6 hr and quantified 4-HNE protein conjugates using dot blots of whole cell lysates at various times post-infection. As a control, we also quantified adducts that accumulated after treating uninfected cells with 10 µM pure 4-HNE. We found that at 6 hr post infection, 4-HNE adducts accumulate to a similar level as those observed with the addition of the pure compound (Figure 1A). To interrogate the impact of bacterial infection on host production of 4-HNE in vivo, mice were infected intravenously with L. monocytogenes constitutively expressing GFP. At 48 hr post infection, tissues were harvested, fixed, and analyzed by immunohistochemistry. Clear foci of infection were visible in the liver with no change in the abundance of 4-HNE protein conjugates (Figure 1—figure supplement 1A–D). In the spleen, however, bacteria were diffusely distributed throughout the organ and the entire spleen of infected mice exhibited increased staining for 4-HNE protein conjugates (Figure 1B–E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig1-v2.jpg)
+
+**Figure 1.:** (A) 4-HNE accumulation in TIB73 murine hepatocytes during intracellular L. monocytogenes infection. 4-HNE adduct accumulation was assessed by dot blot of whole cell lysates normalized to actin levels. Data are normalized 4-HNE/actin levels as percent of 4-HNE/actin in untreated sample. Dot blot image below is representative. (B) 4-HNE accumulation in the spleen after 48 hr murine infection by GFP+ L. monocytogenes assessed by immunohistochemistry analysis with anti-4-HNE antibody. (C) Uninfected spleen with anti-4-HNE antibody. (D) Infected spleen at ×25 magnification with anti-GFP antibody. (E) Infected spleen at ×25 magnification with anti-4-HNE antibody. (F) Infected spleen at ×100 magnification with anti-GFP antibody. (G) Infected spleen at ×100 magnification with anti-4-HNE antibody. Red arrows in D and F indicate L. monocytogenes (GFP) detection in the tissue. Orange arrows in E and G indicate cells with concentrated 4-HNE staining. Antigens were detected with 3,3-diaminobenzidine staining by horseradish peroxidase and cellular nuclei imaged with Hematoxylin counterstain in panels B-G. Data in (A) are in biological quadruplicate. Statistics in (A) are an ordinary one-way ANOVA with a Dunnett’s multiple comparison test against untreated. Error bars are mean ± SD. *p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 4-HNE accumulation in the spleen after 48 hr murine infection by GFP+ L. monocytogenes assessed by immunohistochemistry analysis with anti-4-HNE antibody. (B) Uninfected spleen with anti-4-HNE antibody. (C) Infected spleen at ×10 magnification with anti-GFP antibody. (D) Infected spleen at ×10 magnification with anti-4-HNE antibody.
+
 At higher levels of magnification, we observed that 4-HNE conjugates within the spleen were not evenly distributed among all cells. Most of the tissue exhibited diffuse and constant staining and a subset of cells showed very dark and robust staining for 4-HNE conjugates (Figure 1E). At ×100 magnification, the most pronounced signal for L. monocytogenes exhibited punctate staining (Figure 1F) and a similar pattern was observed for 4-HNE conjugates at this magnification (Figure 1G). While these observations do not provide quantitative measures of 4-HNE levels, they establish that 4-HNE was indeed elevated in the spleen following bacterial infection and suggest that bacteria encounter this metabolite within the host.
 
-## 4-HNE causes damage through the targeting of nucleophilic protein moieties and L. monocytogenes is resistant to 4-HNE-mediated death
+### 4-HNE causes damage through the targeting of nucleophilic protein moieties and L. monocytogenes is resistant to 4-HNE-mediated death
 
 Electrophilic stress due to 4-HNE conjugation to proteins causes eukaryotic cells to undergo apoptosis following intermediate 4-HNE exposure (5–40 µM) and necrosis at higher concentrations (40–100 µM) (Dalleau et al., 2013). However, due to 4-HNE’s lipophilicity it is believed to accumulate to significantly higher levels (0.3–5 mM) near and within membranes than what is typically considered cytotoxic (Zimniak, 2011; Esterbauer et al., 1991; Uchida, 2003).
 
@@ -53,9 +61,21 @@ The significant resistance of L. monocytogenes to 4-HNE exposure was striking. A
 
 4-HNE adduct accumulation can result in protein misfolding and crosslink-induced aggregation. Eukaryotic cells clear 4-HNE damaged proteins through proteasome and autophagy-mediated pathways (Zhang and Forman, 2017). Bacteria target damaged proteins for degradation through the proteases that comprise the heat shock response (Parsell and Lindquist, 1993). Because this response is primarily transcriptionally regulated (Yura et al., 1993), RT-qPCR was performed on a subset of genes representing two major groups of heat shock genes in L. monocytogenes: HrcA-regulated chaperones and CtsR-regulated proteases (Roncarati and Scarlato, 2017). When L. monocytogenes was exposed to 640 µM 4-HNE for 20 min, the four genes tested (clpC, clpE, dnaK, groES) were induced 3-to-40-fold compared to vehicle controls (Figure 2D). These data, combined with the dot blot results, support the hypothesis that 4-HNE causes protein damage to which L. monocytogenes mounts a heat shock response. These observations are consistent with previous reports of electrophile stress induced expression of Clp proteases in B. subtilis (Nguyen et al., 2009). To further explore this connection, bacteria were treated with increasing concentrations of 4-HNE prior to a sublethal heat shock (50°C for 10 min) and bacterial survival was determined by CFU analysis. Consistent with 4-HNE-induced proteotoxic stress, elevated levels of 4-HNE exposure sensitized the bacteria to heat (Figure 2E). The elevated induction of cellular proteases relative to chaperones may indicate that L. monocytogenes primarily combats electrophilic 4-HNE stress through turnover of damaged proteins rather than chaperone-mediated stabilization. Collectively, these observations suggest that despite the formation of protein adducts and delayed growth following exposure, L. monocytogenes has a robust capacity to survive 4-HNE toxicity, although its exposure sensitizes this organism to other proteotoxic stressors.
 
-## L. monocytogenes expresses potential 4-HNE detoxification enzymes
+### L. monocytogenes expresses potential 4-HNE detoxification enzymes
 
 Our data suggest that L. monocytogenes is exposed to 4-HNE during infection and that only high concentrations of this aldehyde impact its growth. We hypothesized that L. monocytogenes may express genes involved in countering the cytotoxic effects of 4-HNE. To probe further, we performed global transcriptome analysis during 4-HNE exposure using RNA sequencing. Over one hundred genes were induced greater than 10-fold in response to 4-HNE exposure, including several of the heat shock genes previously identified by RT-qPCR analysis (Figure 3A, Figure 3—figure supplement 1, Source data 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig3-v2.jpg)
+
+**Figure 3.:** (A) Global gene expression of mid-log L. monocytogenes in TSB treated with 640 µM 4-HNE or ethanol control for 20 min. RPKM: reads per kilobase million. Genes of interest rha1, rha2, and heat shock class members are indicated in blue, red, and orange, respectively. (B) RT-qPCR of expression of rha1 and rha2 genes after 20 min treatment of mid-log bacteria in TSB media with 500 µM of selected aldehydes: 4-HNE (4-hydroxy-2-nonenal), 4-HHE (4-hydroxy-2-hexenal), MG (methylglyoxal), PA (propionaldehyde), and MDA (malondialdehyde). (C) RT-qPCR analysis of expression of rha1 and rha1 treated with sublethal levels of diamide (5 mM), heat (50°C), 4-HNE (640 µM), and nitric oxide (1 mM of the NO donor DEA/NO) for 20 min in TSB media. (D) RT-qPCR analysis of expression of rha1 and rha2 at 6 hr post infection in J774 macrophages (mφ). Data in figures (A) and (B) are in biological duplicate. (C) are two independent experiments, with two pooled biological duplicates within each experiment. (D) is in biological triplicate. The bar graphs in (B) (C) and (D) represent the mean of the data. Statistics in (D) are unpaired t-test between the ∆Ct values of broth and macrophage samples. Error bars are mean ± SD. *p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** RPKM: reads per kilobase million.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Structures of the aldehydes used in the experiment. 4-HNE: 4-hydroxy-2-nonenal, 4-HHE: 4-hydroxy-2-hexenal, MDA: malondialdehyde, MG: methylglyoxal, PA: propionaldehyde. (B) CFU post treatment with sublethal concentrations of listed aldehydes. Performed in technical duplicate. (C) CFU post treatment with a sublethal amount of listed stressors. Performed in technical duplicate.
 
 Eukaryotic cells utilize several reductases to detoxify 4-HNE (Mol et al., 2017). Two reductases were highly induced in our global transcriptome, lmo0103 and lmo0613, which we refer to as rha1 and rha2 (reductase of host alkenals 1 and 2), respectively. Rha1 is annotated as a nitroreductase. Phyre2 analysis of Rha1 predicted high structural homology to CLA-ER (PDB: 4QLY), a flavin-dependent enone reductase from Lactococcus ﻿plantarum (Hou et al., 2015; Kelley et al., 2015). Rha2 is annotated as an alcohol/quinone reductase. A Phyre2 analysis of Rha2 revealed structural similarity to crotonyl-CoA carboxylase/reductases (PDBs: 3KRT, 4Y0K, and 5A3J) and a plant chloroplast oxoene reductase (PDB: 5A3V), two enzymes with the capacity to reduce enone-containing lipophilic substrates. Given the predicted reductase activity of Rha1 and Rha2 and their structural similarity to proteins that metabolize αβ-unsaturated carbonyl-containing compounds, we further investigated their role in 4-HNE resistance.
 
@@ -67,11 +87,19 @@ We next assessed if rha1 and rha2 are induced by L. monocytogenes during intrace
 
 These intriguing transcriptional results suggested that rha1 and rha2 may function in mediating 4-HNE resistance. To test this, we generated individual and double mutants of rha1 and rha2 and assessed survival of these mutants by competition experiments relative to WT L. monocytogenes following 4-HNE exposure. Control mixtures left untreated in PBS exhibited no significant difference in competitive index between mutant and control strains (Figure 4—figure supplement 1D). Among mixtures exposed to 640 µM 4-HNE, unmarked WT and marked WT showed no significant difference in 4-HNE survival (Figure 4A). Loss of rha2 had no effect on 4-HNE survival while ∆rha1 had a modest fivefold reduction relative to WT. However, the ∆rha1∆rha2 mutant exhibited a 50-fold competitive defect compared to WT L. monocytogenes that was rescued by either rha1 or rha2 expression in trans, demonstrating that both genes must be absent for the toxic effect to manifest (Figure 4A). We also tested L. monocytogenes WT and ∆rha1∆rha2 survival in the presence of heat and diamide and found no significant difference between WT and the double mutant (Figure 4B,C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig4-v2.jpg)
+
+**Figure 4.:** (A) Competitive index of WT and mutant L. monocytogenes in PBS treated with 640 µM 4-HNE at 37°C for 1 hr. (B) CFU of WT and ∆rha1∆rha2 L. monocytogenes in TSB exposed to 58°C or 37°C for 15 min. (C) Diameter of zone of clearance by 1M diamide on lawns of WT, ∆rha1∆rha2 and positive control P-spxA1::tn L. monocytogenes on TSA plates as described in Reniere et al., 2016. (D) Accumulation of 4-HNE-adducted proteins in L. monocytogenes exposed to 640 µM 4-HNE for 3 hr in TSB media, assessed by dot blot and normalized to WT. Dot blot images below are representative. (E) Aggregated protein found in the insoluble fraction measured as percent of total protein in WT and ∆rha1∆rha2 L. monocytogenes. Untreated, 4-HNE treatment (640 µL for an hour) and heat shock (56°C for 10 min). (F) CFU/well of WT and ∆rha1∆rha2 L. monocytogenes in recombinant murine IFN-γ (100 ng) activated WT primary murine macrophages. (G) CFU/organ of WT and ∆rha1∆rha2 L. monocytogenes at 48 hr intravenous murine infection. Data in figures (A) and (D) are in technical triplicate, representative of at least three independent experiments. Data in (C) are two independent experiments, with two pooled biological duplicates within each experiment. Data in (B), (E), (F) and (G) are biological triplicate. Statistics in (A) are unpaired t-tests between WT and mutant L. monocytogenes competition pairs. Statistics in (C) are unpaired t-tests between WT and mutant L. monocytogenes. Statistics in (D) and (E) are an ordinary one-way ANOVA with a Dunnett’s multiple comparison test against WT (in D) or untreated sample (in E). Statistics in (F) are unpaired t-tests comparing WT and ∆rha1∆rha2 L. monocytogenes CFU at hour two post infection. Statistics in (G) are unpaired t-tests comparing WT and ∆rha1∆rha2 L. monocytogenes CFU within each organ. Error bars are mean ± SD. *p<0.05; **p<0.01; ***p<0.001. In figures (A) and (G), the line is drawn at the median of data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Competitive index of 1 hr mock -treated (ethanol) L. monocytogenes in PBS. The line is drawn at the median of data.
+
 We next assessed 4-HNE protein adduct accumulation by dot blot in WT, ∆rha1∆rha2, ∆rha1∆rha2::rha1 and ∆rha1∆rha2::rha2 strains after 4-HNE exposure. We found that following 4-HNE treatment there was a modest but significant twofold increase in 4-HNE adduct accumulation in the ∆rha1∆rha2 mutant compared to WT (Figure 4D). Interestingly, although there was a modest reduction in adduct levels in both complement strains, expression of neither gene in trans fully restored WT levels of adduct formation, even though either rha1 or rha2 complementation fully restored bacterial survival in our competition experiment. Because 4-HNE-mediated protein crosslinking may preclude detection of 4-HNE adducts by dot blot, we subsequently assessed total aggregation of proteins in WT L. monocytogenes and the ∆rha1∆rha2 mutant when exposed to 4-HNE by measuring protein content in the insoluble versus soluble fraction of cell lysates. We found that in WT L. monocytogenes 4-HNE does not lead to significant protein aggregation compared to the untreated control and significantly less insoluble protein accumulation compared to a 10-min exposure of 56°C (Figure 4E). In addition, the ∆rha1∆rha2 mutant did not exhibit an increase in protein aggregation after 4-HNE treatment compared to WT. Collectively, 4-HNE exposure had modest impacts on protein adduct formation and insoluble protein accumulation, supporting the conclusion that the resistance to the bactericidal effect of 4-HNE exposure conferred by Rha1/2 is independent of proteome damage.
 
 Given the defect in the ∆rha1∆rha2 mutant viability compared to WT L. monocytogenes in vitro, we explored the impacts of these genes using tissue and murine infection models. During infection of IFN-γ activated primary murine macrophages, we observed no notable differences between the ∆rha1∆rha1 mutant and WT L. monocytogenes (Figure 4F). In mice infected via intravenous injection, no significant phenotype was observed at 48 hr post infection in either the spleen or the liver (Figure 4G). While Rha1 and Rha2 contribute to L. monocytogenes 4-HNE resistance in vitro, these genes are dispensable for this organism’s capacity to counteract this metabolite in vivo.
 
-## Recombinant Rha1 and Rha2 metabolize 4-HNE to 4-HNA
+### Recombinant Rha1 and Rha2 metabolize 4-HNE to 4-HNA
 
 Our data suggested that Rha1 and Rha2 are expressed in response to 4-HNE and may contribute to L. monocytogenes’ resistance to this compound. The predicted function of both Rha1 and Rha2 suggested they might act to directly metabolize 4-HNE. In order to determine if these putative reductases can utilize 4-HNE as a substrate, we generated recombinant Rha1 and Rha2 proteins. As controls for these studies, we generated catalytically dead variants of the two proteins by mutating amino acids predicted to be involved in flavin binding by Rha1 (asparagine-47) and NADPH binding by Rha2 (tyrosine-195) to alanine (Figure 5A). All proteins were expressed and characterized for NADPH oxidation in the presence and absence of 4-HNE (Figure 5B). As a positive control for NADPH-dependent 4-HNE turnover, we used the human Aldo-Keto Reductase 1C1 (AKR1C1), which metabolizes 4-HNE in a NADPH-dependent manner (Burczynski et al., 2001; Figure 5C). Only the WT variants of Rha1 and Rha2 exhibited NADPH oxidation upon addition of 4-HNE, consistent with their capacity to mediate NADPH-dependent reduction of the αβ-unsaturated aldehyde. We then measured NADPH oxidation of Rha1 and Rha2 using the aldehyde panel we previously used for our expression specificity analysis (Figure 4—figure supplement 1A; Figure 3—figure supplement 2A). We found that both Rha1 and Rha2 showed the most robust NADPH oxidation in the presence of 4-HNE, although Rha2 in particular showed modest NADPH oxidation with 4-HHE, perhaps suggesting a wider substrate range for Rha2 than Rha1 (Figure 5D).
 
@@ -81,9 +109,17 @@ Our data suggested that Rha1 and Rha2 are expressed in response to 4-HNE and may
 
 Generally, NADPH-dependent 4-HNE reduction can occur at either the carbon-carbon double bond, generating the saturated aldehyde 4-hydroxynonanal (4-HNA), or on the carbonyl moiety, generating the alcohol 1,4-dihydroxynonene (1,4-DHN) (Schaur et al., 2015). To elucidate which of these two products Rha1 and Rha2 may be generating, we performed thin-layer chromatography (TLC) on their enzymatic products. We concurrently utilized the human enzyme AKR1C1 as a positive control for 1,4-DHN production (Burczynski et al., 2001) and the Arabidopsis thaliana enzyme P1-ZCr as the positive control for 4-HNA (Mano et al., 2002). We also chemically generated 1,4-DHN as an additional control through sodium borohydride reduction of 4-HNE. In reactions with either Rha1 or Rha2, a new spot was observed which required addition of NADPH and that co-migrated with the 4-HNA product formed by P1-ZCr (Figure 5E). These results support the conclusion that both Rha1 and Rha2 have the capability to directly metabolize 4-HNE to 4-HNA (Figure 5F).
 
-## Ectopic expression of rha1 and rha2 confers 4-HNE resistance to the sensitive bacteria B. subtilis
+### Ectopic expression of rha1 and rha2 confers 4-HNE resistance to the sensitive bacteria B. subtilis
 
 Based on our recombinant protein data, we hypothesized that Rha1 and Rha2 could confer 4-HNE resistance to a sensitive organism. To this end, we utilized B. subtilis as the host for heterologous expression of rha1 and rha2. B. subtilis is exquisitely sensitive to 4-HNE toxicity, exhibiting 300-fold reduction in recoverable CFU compared to L. monocytogenes upon 4-HNE exposure as well as a significant growth delay (Figure 2A, Figure 6—figure supplement 1A). We ectopically expressed both rha1 and rha2, and their corresponding catalytically dead variants individually and in combination in B. subtilis in the presence of 4-HNE. We compared the growth of B. subtilis expressing the active forms of the enzymes to their catalytically dead counterparts. Consistent with our observations of the L. monocytogenes rha deletion mutants, expression of rha2 in B. subtilis had no effect on growth in the presence of 4-HNE under the conditions tested, rha1 reproducibly reduced lag time by approximately 50 min in treatment with 640 µM 4-HNE (Figure 6—figure supplement 1B). Expression of both rha1 and rha2 had the largest growth rescue, reducing lag time by up to 3 hr (Figure 6A). Further characterization focused on B. subtilis expressing both rha1 and rha2 genes, as this strain had the most robust phenotype. When assessed for bacterial survival following 4-HNE treatment, B. subtilis expressing the functional enzymes exhibited nearly a 2-log survival advantage relative to the control strain expressing enzymatically dead rha1/2 (Figure 6B). Additionally, soluble cellular fractions from B. subtilis exposed to 4-HNE and probed for 4-HNE protein adducts by dot blot revealed a ~ 70% reduction in 4-HNE conjugates in the B. subtilis strain expressing both of the active rha1 and rha2 genes versus their catalytically dead counterparts (Figure 6C, Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig6-v2.jpg)
+
+**Figure 6.:** (A) Growth of B. subtilis expressing either the WT or MUT (catalytically dead mutant) versions of rha1 and rha2 in TSB at 37°C in the presence of the indicated concentrations of 4-HNE added at time zero. Dotted line represents OD600 0.5. (B) Survival of B. subtilis WT and MUT in PBS at 37°C with 160 µM 4-HNE for 1 hr. (C) 4-HNE conjugates from B. subtilis WT and MUT soluble cell lysates (3 µg total protein) 3 hr after 4-HNE treatment as assessed by dot blot and quantified by densitometry on a Licor Odyssey Fc. Dot blots below are representative. (D) B. subtilis WT and MUT survival following phagocytosis by Interferon gamma-activated primary WT or phagosomal oxidase-deficient bone-marrow-derived macrophages (WT or gp91phox-/- pBMMs). All experiments were performed in biological triplicate. Statistics in (A) are unpaired t-tests comparing the hours to OD600 0.5 between WT and MUT B. subtilis pHT01::rha1/2. Statistics in (B), (C) and (D) are unpaired t-tests comparing WT and MUT B. subtilis pHT01::rha1/2. Error bars are mean ± SD. *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59295/elife-59295-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) L. monocytogenes (Lm) and B. subtilis (Bs) growth curves in TSB after exposure to various concentrations of 4-HNE. (green circles: 0 µM, blue triangles: 320 µM, red triangles: 640 µM, light blue squares: 1280 µM). Data performed in technical duplicate and representative of at least three independent experiments. (B) Growth curves of B. subtilis::pHT01 expressing various rha1 and rha2 constructs in TSB after exposure to various concentrations of 4-HNE. Dotted line represents OD600 0.5. Performed in biological triplicate. (C) 4-HNE dot blots of B. subtilis::pHT01 expressing various rha1 and rha2 constructs after 3 hr of exposure to 640 µM 4-HNE in TSB. Performed in biological triplicate. Statistics in (B) is an unpaired t-test comparing the hours to OD600 0.5 between B. subtilis pHT01::rha1-WT and pHT01::rha1-N47A. Error bars are mean ± SD. *p<0.05.
 
 To determine if 4-HNE resistance conferred by expressing rha1/2 could contribute to bacterial survival within mammalian cells, B. subtilis rha1/2 strains were assessed for viability following phagocytosis by primary bone-marrow-derived macrophages. We found that B. subtilis expressing the active forms of Rha1 and Rha2 (WT) maintained a significantly higher CFU over the course of 8 hr than the B. subtilis expressing the catalytically dead forms (MUT) (Figure 6D). To determine whether this survival advantage was due to 4-HNE resistance, we measured B. subtilis survival within bone marrow-derived macrophages from gp91phox-/- mice deficient in oxidase cytochrome b-245, which are unable to produce the reactive oxygen burst and therefore 4-HNE (Esterbauer et al., 1991). Consistent with the role of rha1 and rha2 in mediating resistance to a ROS-derived factor, the protective effect of WT rha1/2 expression was eliminated in the absence of gp91phox (Figure 6D). Together, these observations revealed that expression of rha1 and rha2 in B. subtilis imparts resistance to 4-HNE toxicity and impacts bacterial survival in response to the host cell’s ROS burst.
 
@@ -107,106 +143,403 @@ Taken together, our findings extend the range of antimicrobial molecules generat
 
 ## Materials and methods
 
-## Statistics and reproducibility
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>J774A.1</td>
+      <td>PMID:1612739</td>
+      <td></td>
+      <td>Immortalized murine macrophages</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>TIB73</td>
+      <td>ATCC: BNL CL.2</td>
+      <td></td>
+      <td>Immortalized murine hepatocytes</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories: 000664</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>gp91phox- (C57BL/6J backcross)</td>
+      <td>Jackson Laboratories: 002365</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10b</td>
+      <td>Invitrogen: 10536193</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>SM10</td>
+      <td>DOI: https://doi.org/10.1038/nbt1183-784</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>EMD Millipore: 69450</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3)</td>
+      <td>EMD Millipore: 70954</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Listeria monocytogenes)</td>
+      <td>10403S</td>
+      <td>PMID:2125302</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis)</td>
+      <td>168</td>
+      <td>PMID:18723616</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Francisella novicida)</td>
+      <td>U112</td>
+      <td>PMID:17550600</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PAO1</td>
+      <td>PMID:20023018</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Staphylococcus aureus)</td>
+      <td>Newman</td>
+      <td>PMID:17951380</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Enterococcus faecalis)</td>
+      <td>OG1RF</td>
+      <td>PMID:18611278</td>
+      <td>WT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Listeria monocytogenes)</td>
+      <td>DP-L3903</td>
+      <td>PMID:11500481</td>
+      <td>Antibiotic marked competition strain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Listeria monocytogenes)</td>
+      <td>DP-L4056</td>
+      <td>PMID:12107135</td>
+      <td>Phage-cured 10403S strain for use with pPL1 integration plasmid</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>Genetically modified bacterial strains used in this work</td>
+      <td></td>
+      <td>This paper</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pPL1077</td>
+      <td>This study</td>
+      <td>pPL1-GFP integration plasmid</td>
+      <td>(Gift from Peter Lauer; Berkeley, CA)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKSV7</td>
+      <td>PMID:8388529</td>
+      <td>Shuttle vector for L. monocytogenes gene disruption</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20b</td>
+      <td>Novagen: 69739</td>
+      <td>C-terminus 6xHis tagged E. coli T7 expression vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28b</td>
+      <td>Novagen: 69865</td>
+      <td>N-terminus 6xHis tagged E. coli T7 expression vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPL2-Pspac</td>
+      <td>PMID:25583510</td>
+      <td>Integrative L. monocytogenes plasmid pPL2 engineered with constitutive Pspac promoter</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHT01</td>
+      <td>PMID:17624574</td>
+      <td>B. subtilis expression vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagents</td>
+      <td>Plasmids generated and used in this work</td>
+      <td></td>
+      <td>This paper</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Listeria monocytogenes)</td>
+      <td>lmo0103 (LMRG_02352)</td>
+      <td>GenBank: Gene ID 12552319</td>
+      <td>Gene rha1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Listeria monocytogenes)</td>
+      <td>lmo0613 (LMRG_00296)</td>
+      <td>GenBank: Gene ID 12552833</td>
+      <td>Gene rha2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>akr1c1</td>
+      <td>GenBank: Gene ID 1645</td>
+      <td>Gene akr1c1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>p1-zcr</td>
+      <td>GenBank: Gene ID 831560</td>
+      <td>Gene p1-zcr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>(See supplementary file 3)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Cloning primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>(See supplementary file 3)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Gene coding sequences for protein expression</td>
+      <td>This paper</td>
+      <td></td>
+      <td>(See supplementary file 4)</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>4-HNE</td>
+      <td>Cayman Chemical: 32100</td>
+      <td>64 mM 4-HNE in absolute ethanol</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-4-HNE adduct</td>
+      <td>Abcam: ab46545</td>
+      <td>Rabbit IgG polyclonal antibody</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin</td>
+      <td>Abcam: ab8226</td>
+      <td>Mouse IgG monoclonal antibody</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit secondary antibody</td>
+      <td>Licor: 926–32211</td>
+      <td>Goat IgG monoclonal antibody</td>
+      <td>(1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse secondary antibody</td>
+      <td>Licor: 926–68072</td>
+      <td>Donkey IgG monoclonal antibody</td>
+      <td>(1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP primary antibody</td>
+      <td>Invitrogen: MA5-15256</td>
+      <td>Mouse IgG monoclonal antibody</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control primary antibody, histology</td>
+      <td>R and D Systems: AB-105-C</td>
+      <td>Normal Rabbit IgG</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ovation Complete Prokaryotic RNA-Seq System</td>
+      <td>Nugen: 0363–32</td>
+      <td>RNA-seq processing kit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rockhopper</td>
+      <td>cs.wellesley.edu/~btjaden/Rockhopper/</td>
+      <td>RNA-seq data analysis software</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics and reproducibility
 
 Sample sizes were defined as at least n = 3 for all experiments unless otherwise noted. Biological replicates are defined as bacterial samples grown from independent colonies. Technical replicates are defined as bacterial samples grown from the same colony and split for treatment and processing. Independently performed experiments are defined as being done on different days. Type of replication, number of replicates, statistical tests performed, and definitions of significance symbols are indicated in figure legends. All statistics were performed using Prism Version 8.4.2 Software. Data points represent mean ± SD of replicate experiments. Statistical outliers were not excluded in this study. For murine infection studies a group size of five mice was selected. This was based upon the ability to detect a 1-log effect on bacterial burdens between groups, with a 45% standard deviation on log transformed CFU measures, an alpha of 0.05 and power of 0.9. These parameters were selected based upon previous L. monocytogenes infection studies performed in the laboratory.
 
-## Cell lines
+### Cell lines
 
 TIB73 cells were purchased from ATCC. J774A.1 cells were obtained from the laboratory of Dr. Michelle Reniere and were confirmed via STR profiling by ATCC. Both cell lines were tested negative for Mycoplasma contamination.
 
-## Strains and routine growth conditions
+### Strains and routine growth conditions
 
 Unless otherwise specified, L. monocytogenes was grown shaking at 37°C degrees in tryptic soy broth (TSB) media and E. coli at shaking at 37°C degrees in Luria-Bertani (LB) media with appropriate antibiotic selection. Unless otherwise noted, B. subtilis was struck on LB plates with appropriate antibiotics and induction agent overnight at 30°C, after which the biomass was scraped off the plates, resuspended in LB media, passed 6 to 10 times through a 27-gauge needle to break up clumps and chains, then normalized to an OD600 of 1. When required for selection, antibiotic concentrations used in this study were as follows – L. monocytogenes selections: streptomycin 200 µg/mL, chloramphenicol 5 µg/mL; E. coli selections: ampicillin 50 µg/mL; B. subtilis selections: chloramphenicol 10 µg/mL; tissue culture: gentamicin 50 µg/mL.
 
-## DNA manipulation and plasmid construction
+### DNA manipulation and plasmid construction
 
 All DNA manipulation procedures followed standard molecular biology protocols. Primers were synthesized and purified by Integrated DNA Technologies (IDT). HiFi polymerase (Kapa Biosystems, #KK2102), FastDigest restriction enzymes (Thermo Fisher Scientific #FD0274), and T4 DNA ligase (Thermo Scientific # K1423) were used for plasmid construction, with the exception of pHT01::rha1/2_WT and pHT01::rha1/2_MUT which were generated using Gibson Assembly MasterMix (NEB, #E2611S). DNA sequencing was performed by Genewiz Incorporated.
 
-## Bacterial infection and exogenous 4-HNE TIB73 dot blot
+### Bacterial infection and exogenous 4-HNE TIB73 dot blot
 
 TIB73 cells were infected with L. monocytogenes following a previously developed protocol (McFarland et al., 2017). Exogenous 4-HNE (Cayman Chemical, #32100) was added to uninfected TIB73 cells by first washing the cells with sterile PBS and then adding 2 mL sterile PBS containing a final concentration of 10 µM 4-HNE for 10 min. TIB73 cells were lysed in whole cell lysis buffer (50 mM Tris pH 7.5, 150 mM NaCl, 1% Triton X-100) with EDTA (1 µM) and Halt Protease Inhibitor Cocktail (Thermo Fisher Scientific, #78442). Protein concentration was determined using the Pierce BCA protein assay kit (Fisher Scientific, #PI23227). Lysates were resuspended in 1X PBS to achieve 2 µg of protein per 3 µl, which was the volume spotted out onto nitrocellulose membrane (Bio-Rad, #1620115). The nitrocellulose was then dried, blocked for 45 min in 5% dry milk, washed three times with TBS-T (Tris-buffered saline with 0.1% Triton X-100) and primary 4-HNE antibody was added at 1:200 dilution (Abcam, #ab46545). The antibody was incubated overnight at 4°C with rocking. Primary actin antibody (Abcam, #ab8226) was added at 1:1000 for 3 hr at room temperature. The primary antibodies were then washed off with TBS-T three times and secondary antibodies (Licor, #926–32211, #926–68072) were added at 1:8000 for 45 min at RT. The secondary antibodies were then washed with TBS-T twice, then TBS once and the blot was imaged on a Licor Odyssey Fc (Li-Cor, Inc). Relative densitometric analysis was performed using Licor Image Studio software.
 
-## Mouse infections
+### Mouse infections
 
 L. monocytogenes was grown overnight statically at 30°C in Brain Heart Infusion (BHI) broth, then back-diluted using 1.2 mL of overnight culture to 4.8 mL of fresh BHI and grown for 1 hr at 37°C shaking. OD600 of these cultures were taken and, using the conversion of 1 OD600 = 1.7×109 CFU, diluted to 5 × 105 CFU/mL with PBS. 200 µl were then injected into female WT C57BL/6 mice between 6 and 8 weeks of age retro-orbitally (1 × 105 CFU/mouse) and livers and spleens were harvested at 48 hr post infection. Livers were homogenized in 10 mL of cold 0.1% IGEPAL and spleens were homogenized in 5 mL using a Tissue Tearor Model 985370 (Biospec Products) at 10,000 RPM for 5 s/organ. Homogenates were diluted in PBS and plated on LB plates to enumerate CFU. All protocols were reviewed and approved by the Institutional Animal Care and Use Committee at the University of Washington.
 
-## 4-HNE histology
+### 4-HNE histology
 
 Two female WT C57BL/6 mice were infected as outlined above, in addition to one uninfected control mouse. The livers and spleens were harvested at 48 hr post infection and placed in 10% neutral buffered formalin for 24 hr, after which the organs were removed from formalin and placed in PBS for 24 hr. Paraffin-embedded tissues were sliced and prepared as slides. Slides were then deparaffinized for 30 min at 60°C. All subsequent manipulations were performed on a Leica Bond Automated Immunostainer. Antigen retrieval for GFP was performed by HIER 2 (EDTA) treatment for 20 min at 100°C. Antigen retrieval for 4-HNE was performed by citrate treatment for 20 min at 100°C. Then a Leica Bond peroxide block was performed for 5 min at room temperature, and normal goat serum (10% in TBS) was added for 20 min at room temperature. Primary antibody was added (GFP 1:500; Rabbit IgG 1:1000; 4-HNE 1:200) (Invitrogen: #MA5-15256; R and D Systems: #AB-105-C; Abcam: #ab46545) in Leica Primary antibody diluent (Leica: #AR9352), for 30 min at room temperature. Leica Bond Polymer was added for 8 min at room temperature, after which the samples were washed with Leica Bond Mixed Refine (DAB) (Leica: # DS9800) detection solution twice for 10 min at room temperature. Hematoxylin Counterstain was added for 4 min and the samples were cleared to xylene. Finally, samples were mounted with synthetic resin mounting medium on a 1.5 cm coverslip and imaged with a Hamamatsu Nanozoomer Whole Slide Scanner and a Keyence BZ-X710 Microscope.
 
-## L. monocytogenes PBS 4-HNE dot blots
+### L. monocytogenes PBS 4-HNE dot blots
 
 L. monocytogenes were sub-cultured from overnight stationary phase cultures 1:100 into fresh media and grown to mid-log (0.4–0.8 OD600). The bacteria were normalized to OD600 1, washed twice and resuspended in sterile PBS. A range of 4-HNE concentrations were added to the bacteria and the samples were placed at 37°C for 30 min. Upon completion, the bacteria were washed twice with PBS and spun at 10,000 x g for 5 min, then resuspended in fresh PBS. The bacteria were then sonicated using a narrow tip sonicator at 20% power, 1 s on 1 s off for 10 s and placed on ice. The bacteria were then spun at 4°C at 10,000 x g for 30 min. The subsequent lysate was transferred to fresh Eppendorf tubes containing Halt Proteinase and Phosphatase Inhibitor (Thermo Fisher Scientific, #78442) and stored at −80°C until use. For dot blots, the protein concentration was normalized using BCA (Fisher Scientific, #PI23227) and 3 µg in 3 µL was spotted onto nitrocellulose membrane (Bio-Rad, #1620115). The nitrocellulose was then dried, blocked for 45 min in 5% dry milk, washed three times with TBS-T and primary 4-HNE antibody was added at 1:200 dilution (Abcam, #ab46545). The antibody incubated overnight at 4°C with rocking. The primary antibody was then washed off with TBS-T three times and secondary antibody (Licor, #926–32211) was added at 1:8000 for 45 min at room temperature. The secondary antibody was then washed off with TBS-T twice, TBS once and the blot was imaged on a Licor Odyssey Fc. Relative densitometric analysis was performed using Licor Image Studio software.
 
-## RNA extraction from broth cultures of L. monocytogenes
+### RNA extraction from broth cultures of L. monocytogenes
 
 L. monocytogenes were sub-cultured from overnight stationary phase cultures 1:100 into fresh media and grown to mid-log (0.4–0.8 OD600). Then a final concentration of 640 µM 4-HNE (Cayman #32100) or vehicle (100% ethanol) was added to the bacteria, which continued to grow at 37°C shaking for 20 min. After 20 min, ice cold 100% methanol was added in equal volume to the culture flask and placed at −20°C overnight. The next day the bacteria were spun down and resuspended in 400 µL AE buffer (50 mM NaOAc pH 5.2, 10 mM EDTA in molecular grade water). The resuspended bacteria were then mixed with 400 µL acidified 1:1 phenol:chloroform pH 5.2 (Fisher Scientific, # BP1753I) and 40 µL 10% sodium dodecyl sulfate (SDS) and was vortexed for 10 min in a multi-tube vortexer. The tubes were then transferred to a 65°C heat block for 10 min, after which the mixture was transferred to a Heavy Phase-lock tube (VWR #10847–802) and spun down for 5 min at 17,000 x g. Then the aqueous layer was transferred into tubes containing 1 mL 100% ethanol and 40 µL 3M NaOAc and placed at −20°C for 6 hr. Then tubes were spun at 17,000 x g for 30 min at 4°C, the ethanol was aspirated and 500 µL 70% ethanol was added. The tubes were then centrifuged at 17,000 x g for 10 min at room temperature and the supernatant was aspirated. The RNA pellet was then dried in a speed vacuum concentrator for 5 min and resuspended in RNA-free molecular grade water. The extracted RNA was then treated with DNase (Ambion Life Technologies #AM1907) for an hour at 37°C and used for downstream processing.
 
-## RNA-sequencing
+### RNA-sequencing
 
 RNA was processed using the Ovation Complete Prokaryotic RNA-Seq Library System (NuGEN, #0363–32, 0326–32, 0327–32) according to the manufacturer’s instructions to a final pooled library concentration of 3 nM. Libraries were sequenced on an Illumina HiSeq 2500 (SR50) at The Genomics Resource at the Fred Hutchinson Cancer Research Center. Image analysis and base calling were performed using Illumina's Real Time Analysis v1.18.66.3 software, followed by 'demultiplexing' of indexed reads and generation of FASTQ files using Illumina's bcl2fastq Conversion Software v1.8.4. Reads determined by the RTA software to pass Illumina's default quality filters were concatenated for further analysis. The FASTQ files were aligned and analyzed using Rockhopper software (McClure et al., 2013). These data have been deposited to the GEO and are accessible using accession number GSE150188.
 
-## RT-qPCR
+### RT-qPCR
 
 Bacteria were grown in the same manner as for RNA-seq except they were treated with either (a) 500 µM of each tested aldehyde (b) 5 mM diamide (c) heat (50°C) or (d) nitric oxide (1 mM of the NO donor DEA/NO) for 20 min in TSB media culture at mid-log (0.4–0.8 OD600). The RNA was extracted by the acidified phenol method as listed above and DNase treated and reverse-transcribed using the iScript Reverse Transcription Supermix (Bio-Rad, #1708840). SYBR Green (Thermo Fisher Scientific # K0223) was then used to amplify genes of interest and CT values and relative expression were normalized using CFX Maestro Software (Bio-Rad #12004110).
 
-## Intracellular RNA extraction
+### Intracellular RNA extraction
 
 RNA extraction from macrophages was performed as previously described (Sigal et al., 2016). J774 macrophages were seeded at a density of 2.0 × 107 cells/dish in three 150 mm dishes in 30 mL media and incubated overnight. The next day, overnight L. monocytogenes culture grown at 30°C was washed twice with PBS and added to the cells at a MOI of 50. After 1 hr, the cells were washed twice with PBS and media containing gentamicin was added. Eight hours post-infection, cells were washed once with PBS and lysed by addition of cold nuclease-free water. Lysate was collected by scraping and centrifugation at 800 x g for 3 min at 4°C. Supernatants were passed through 0.45 µm filters in a vacuum apparatus, and filters were collected in conical tubes. Filters were vortexed with 650 µL sterile AE buffer for 1 min and centrifuged briefly. Bacteria-containing AE buffer was collected and used for immediate RNA extraction as described above.
 
-## 4-HNE survival assays bacterial panel
+### 4-HNE survival assays bacterial panel
 
 Bacteria (Listeria monocytogenes, Enterococcus faecalis, Pseudomonas aeruginosa, Escherichia coli, Staphylococcus aureus, Bacillus subtilis, and Francisella novicida) were inoculated overnight in TSBC (TSB + cysteine 0.1% required for F. novicida growth) and grown at 37°C. The next day the bacteria were sub-cultured 1:1000 into fresh TSBC and allowed to reach mid-log (0.4–0.8 OD600). At mid-log, the ODs of the bacteria were normalized to OD600 1, washed twice in sterile PBS and resuspended in sterile PBS. Then the bacteria were diluted 1:100 into sterile PBS and various concentrations of 4-HNE were added. The bacteria were then placed at 37°C for an hour, then plated on TSAC (TSA + cysteine 0.1%) plates. Colonies were enumerated after overnight growth at 37°C.
 
-## L. monocytogenes competition experiments
+### L. monocytogenes competition experiments
 
 Colonies of L. monocytogenes were picked off BHI plates and inoculated into 2 mL TSB which were then grown shaking at 37°C to mid-log (0.4–0.8 OD600). At mid-log the bacteria were normalized to OD600 1, washed twice in sterile PBS and resuspended in sterile PBS. Then the bacteria were diluted 1:100 into sterile PBS and appropriate strains were mixed together in a 1:1 ratio, after which 640 µM of 4-HNE or vehicle (ethanol) was added. The bacteria were then placed at 37°C for 1 hr. 2x concentrated TSB media was added to the bacterial-PBS solution and the cells recovered for an hour at 37°C. The bacteria were then plated on BHI-streptomycin and BHI-chloramphenicol (five plates for competitive strain differentiation. CFUs were enumerated after 24–48 hr of growth at 37°C). In competition between WT and WT, ∆rha1, ∆rha2 and ∆rha1∆rha2, the WT competition strain was the marked strain DPL-3903 (Auerbuch et al., 2001) In competition between WT and ∆∆::rha1 and ∆∆::rha2, WT L. monocytogenes were unmarked while the complemented strains carried resistance to chloramphenicol.
 
-## L. monocytogenes heat survival assay
+### L. monocytogenes heat survival assay
 
 Single colonies were inoculated into BHI-streptomycin and grown overnight at 37°C with shaking. Cultures were back diluted to OD600 0.03 in 25 mL fresh TSB- streptomycin in 125 mL flasks and grown with shaking at 37°C. At mid-log (OD6000.3–0.6) the bacteria were shifted to static growth at either 58°C or 37°C for 15 min. The bacteria were incubated at 30°C for CFU on BHI plates overnight.
 
-## L. monocytogenes diamide sensitivity assay
+### L. monocytogenes diamide sensitivity assay
 
 The protocol was adapted from Reniere et al., 2016. Briefly, 13 μL of overnight culture of L. monocytogenes grown in TSB were mixed with 4 mL of molten (55°C) top-agar (0.8% NaCl and 0.8% agar) spread evenly on tryptic soy agar plates. After the agar cooled, Whatman paper disks soaked in 5 μL 1M diamide solution were placed on top of the bacteria-agar. The zone of inhibition (including the disks, diameter 7.5 mm) was measured with a ruler after 18–20 hr of incubation at 37°C.
 
-## L. monocytogenes protein aggregation assay
+### L. monocytogenes protein aggregation assay
 
 The L. monocytogenes aggregation protocol was adapted from Tomoyasu et al with minor modifications (Tomoyasu et al., 2001). Colonies of L. monocytogenes were picked off a plate and then grown to mid-log in TSB (0.4–0.8 OD600). Bacteria were normalized to 0.5 OD600 and resuspended in 3 mL of sterile PBS per sample for untreated control, 4-HNE and heat shock. 640 µM 4-HNE was added to the 4-HNE sample and the bacteria were placed at 37°C for an hour. Control heat-shocked bacteria were placed at 37°C for 50 min and then transferred to 56°C for 10 min before being processed identically to 4-HNE and untreated samples. The bacteria were then removed, cooled on ice for 5 min and spun down at 5000 x g for 10 min at 4°C. Pellets were then resuspended in 40 µL buffer A1 (10 mM potassium phosphate buffer, pH 6.5, 1 mM EDTA, 20% w/vol sucrose, 50 units per sample mutanolysin [Sigma, #M9901]) and incubated on ice for 30 min. 360 µL Buffer B1 (10 mM potassium phosphate buffer, pH 6.5, 1 mM EDTA) was added and the sample was sonicated with a microtip sonicator at 40% power, 6 s total, 1 s on, 1 s off. Intact cells were spun out at 2000 x g for 10 min at 4°C and the supernatant was transferred to a fresh tube. Fifty µL of sample supernatant was taken to measure total protein concentration by BCA assay. The insoluble fraction was isolated by centrifuging the supernatant a 15,000 x g for 20 min at 4°C. The pellets were then frozen and stored at −80C. The pellets were resuspended in 400 µL buffer B1 by brief sonication (40% power, 2 s total, 1 s on, 1 s off) and centrifuged at 15,000 x g for 20 min at 4°C. The washed pellets were then resuspended in 320 µL buffer B1 by brief sonication, after which, 80 µL of 10% v/v IGEPAL was added to remove membrane proteins. The samples were mixed and then centrifuged at 15,000 x g for 30 min at 4°C. This washing procedure was performed twice in total. Finally, the pellets were washed by 400 µL buffer B1 and resuspended in 50 µL PBS by brief sonication. The insoluble protein concentration was measured by microBCA (Thermo, #23235) and the percent of total protein was calculated and plotted.
 
-## E. coli protein expression and purification
+### E. coli protein expression and purification
 
 rha1, rha2, and p1-zcr ORFs were cloned into pET20B expression vectors and transformed into BL21 E. coli and grown overnight in LB-ampicillin. The akr1c1 ORF was cloned into the pET28B expression vector and transformed into Rosette E. coli and grown overnight in LB-ampicillin. The overnights were sub-cultured 1:100 in 2L baffled flasks until mid-log (0.4–0.8 OD600) after which 0.5 mM IPTG was added. The pET20b::rha2 E. coli were induced for 4 hr at 37°C with shaking. to E. coli pET20B::rha1, pENT20B::p1-zcr and pENT28B::akr1c1 were induced at 17°C for 18 hr with shaking. Immediately prior to induction 0.01% w/v riboflavin was added to E. coli pET20B::rha1. Upon induction completion, the bacteria were spun down, resuspended in buffer A (30 mM K2HPO4, 300 mM NaCl, pH 8) and sonicated on ice with a large sonicator tip at 80% power 1 s on 1 s off for 60 s total. They were then spun down at 15,000 x g for 45 min at 4°C and the supernatant was passed over a nickel resin column (Thermo Fisher Scientific, # PI88222) and eluted using buffer B (30 mM K2HPO4, 300 mM NaCl, 500 mM Imidazole, pH 8). The final protein was then transferred into PBS using a desalting column (Bio-Rad #7322010). For purification of Rha1, 10 µM FMN (Sigma #F2253) was added at every step of purification.
 
-## Purified enzyme kinetics assessments
+### Purified enzyme kinetics assessments
 
 Enzyme turnover assays were performed at 37°C in 96-well clear bottom plates (Genesee Scientific, #25–104) in a Synergy HTX plate reader in 200 µL PBS with 20% w/v PEG-8000 using 200 µM NADPH, 0.2 µM enzyme and a range of 4-HNE concentrations from 0 to 0.8 mM. For the aldehyde panel enzyme turnover assessment, 0.64 mM of each aldehyde was used. NADPH consumption was measured at the 340 nm wavelength. Rha1 turnover was performed in the presence of 10 µM FMN.
 
-## Chemical reduction of 4-HNE
+### Chemical reduction of 4-HNE
 
 One hundred µL of 64 mM 4-HNE was reduced by adding a molar excess (1 mg) of sodium borohydride (NaBH4), which was left to sit at room temperature for an hour. The reaction was quenched for 1 hr at room temperature with 100 µL 1.5% v/v glacial acetic acid in water. The final product of the reaction was 1,4-dihydroxynonene (1,4-DHN) as confirmed by TLC (described below).
 
-## Thin layer chromatography (TLC)
+### Thin layer chromatography (TLC)
 
 Enzyme turnover assays were performed as described above, except the reactions had final concentrations of 4 µM enzyme, 1.6 mM 4-HNE, and 1.6 mM NADPH. The reactions proceeded for 1 hr at room temperature. Once the reaction was complete, 6 µL of reaction volume was spotted on the bottom of the TLC plate (Millipore Sigma, #105554) and run using a 2:1 mix of diethyl ether:hexanes (Sigma, #296082; Thermo Fisher, #H303). The TLC plate was visualized by dipping the plate in a 10% w/v phosphomolybdic acid (Sigma, #221856) absolute ethanol solution and then vigorously heating the TLC plate on a ceramic hot plate until the appearance of black bands on a light yellow background (15 s to 1 min).
 
-## B. subtilis growth curves
+### B. subtilis growth curves
 
 B. subtilis expressing genes of interest on the pHT01 plasmid (Nguyen et al., 2007) were struck on LB-chloramphenicol plates on day one and grown overnight at 30°C. On day 2, colonies were re-struck on LB-chloramphenicol with 1 mM IPTG agar plates overnight at 30°C. On day 3, biomass was scraped and processed as described in the ‘bacterial culturing’ section above. The bacteria were then normalized to an OD600 of 1 and inoculated 1:100 into a 96-well plate containing TSB chloramphenicol and 0.5 mM IPTG. 4-HNE was then added to the bacteria at various concentrations and the bacteria were allowed to grow at 37°C in Synergy HTX plate reader for 12 hr with shaking.
 
-## 4-HNE survival assays Bacillus subtilis rha1/2 expression strains
+### 4-HNE survival assays Bacillus subtilis rha1/2 expression strains
 
 B. subtilis were grown and processed as for growth curves described above and then normalized to an OD600 of 1 in LB media. The bacteria were then washed twice in sterile PBS and resuspended in sterile PBS. Then the bacteria were diluted 1:100 into sterile PBS and a 160 µM concentration of 4-HNE or mock vehicle (ethanol) was added to the samples. The bacteria were placed at 37°C for an hour, then plated on LB plates. Colonies were enumerated after overnight growth at 30°C.
 
-## B. subtilis and L. monocytogenes rich media 4-HNE dot blots
+### B. subtilis and L. monocytogenes rich media 4-HNE dot blots
 
 B. subtilis were grown and processed in the same manner as for the growth curves above. L. monocytogenes were processed as described for competition experiments above. Upon OD600 normalization to 1, B. subtilis were resuspended in TSB-chloramphenicol with 0.5 mM IPTG and 250 µL of this mix was transferred to a sterile Eppendorf tube into which 640 µM 4-HNE was added. L. monocytogenes were resuspended in TSB with no antibiotic and no IPTG. The tubes were then incubated at 37°C for 3 hr. At 3 hr, the bacteria were spun down at 17,000 x g for 1 min. The supernatant was then aspirated and the pellet flash frozen in liquid nitrogen. At this point, the bacteria were stored at −80°C until further processing. Once removed from the −80°C, the bacteria were thawed at room temperature and resuspended in 250 µL PBS. The bacteria were then sonicated using a microtip sonicator at 20% power, 1 s on 1 s off for 10 s and placed on ice. The bacteria were then spun at 4°C at 5000 g for 10 min. The subsequent lysate was transferred to fresh Eppendorf tubes containing Halt Proteinase and Phosphatase Inhibitor (Thermo Fisher Scientific, #78442) and stored at −80°C until use. Dot blots were processed as described above.
 
-## L. monocytogenes macrophage infection
+### L. monocytogenes macrophage infection
 
 0.5 × 106 primary murine macrophages from WT C57BL/6 mice were plated in BMM media (DMEM with 10% heat inactivated fetal bovine serum, 1 mM L-glutamine, 2 mM sodium pyruvate and 10% L929-conditioned medium) in a tissue culture treated 24-well dish (Greiner Bio, #662165) with the addition of 100 ng recombinant murine IFN-γ (Peprotech, #315–05) for 18 hr. Inoculants of L. monocytogenes were statically grown at 30°C overnight, washed twice with sterile PBS and resuspended in PBS before an MOI of 0.1 was added to each macrophage well. The cells were left to sit for an hour after which all wells were washed twice with PBS and gentamicin was added to all but one well, which was lysed in 500 µL water and plated for CFU on LB plates. The remainder of the wells were washed twice with PBS and then lysed and plated for CFU at hours 2, 6, and 9 post-infection.
 
-## B. subtilis macrophage survival assay
+### B. subtilis macrophage survival assay
 
 B. subtilis were grown on LB-chloramphenicol with 1 mM IPTG plates and processed into LB chloramphenicol as described above. Once the bacteria were normalized to OD600 = 1 in LB chloramphenicol, an MOI of 100 was added to 0.5 × 106 primary murine macrophages from WT C57BL/6 or C57BL/6 deficient for phox (gp91phox-/-) mice (The Jackson Laboratory, stock # 002365) that have been activated using 100 ng/well recombinant murine IFN-γ (Peprotech, #315–05) for 18 hr. The cells were spinfected at 200 x g for 5 min. At 1.5 hr, cells were washed 2x with sterile PBS and gentamicin was added to the cells. pBMMs were lysed in 500 µL cold water at hours 2, 6, 7, and 8 and plated for CFU. Colonies were enumerated after overnight growth at 30°C on LB plates.

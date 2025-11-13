@@ -17,12 +17,12 @@
 
 ### Affiliations
 
-1. https://ror.org/021018s57 Department of Genetics, Microbiology and Statistics, University of Barcelona Barcelona Spain
-2. https://ror.org/021018s57 Department of Biochemistry and Physiology, Universitat de Barcelona Barcelona Spain
-3. https://ror.org/021018s57 Institut de Nutrició i Seguretat Alimentària, Universitat de Barcelona Barcelona Spain
-4. https://ror.org/015w4v032 Department of Microbial Biotechnology, Centro Nacional de Biotecnología, Consejo Superior de Investigaciones Científicas (CNB-CSIC) Madrid Spain
-5. https://ror.org/01teme464 Instituto Universitario de Investigaciones Biomédicas y Sanitarias (IUIBS), Facultad de Veterinaria, Universidad de Las Palmas de Gran Canaria (ULPGC), Campus Universitario de Arucas Las Palmas Spain
-6. https://ror.org/056h71x09 Institute for Bioengineering of Catalonia, The Barcelona Institute of Science and Technology Barcelona Spain
+1. Department of Genetics, Microbiology and Statistics, University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+2. Department of Biochemistry and Physiology, Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+3. Institut de Nutrició i Seguretat Alimentària, Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+4. Department of Microbial Biotechnology, Centro Nacional de Biotecnología, Consejo Superior de Investigaciones Científicas (CNB-CSIC) Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))
+5. Instituto Universitario de Investigaciones Biomédicas y Sanitarias (IUIBS), Facultad de Veterinaria, Universidad de Las Palmas de Gran Canaria (ULPGC), Campus Universitario de Arucas Las Palmas Spain ([ROR:01teme464](https://ror.org/01teme464))
+6. Institute for Bioengineering of Catalonia, The Barcelona Institute of Science and Technology Barcelona Spain ([ROR:056h71x09](https://ror.org/056h71x09))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ In this study, our objective was to investigate the potential of the recently di
 
 ## Results
 
-## Ampicillin protects mice from infection with the S. Typhimurium SL1344 (WT) strain, but not from infection with the S. Typhimurium SL1344 (pHCM1) strain
+### Ampicillin protects mice from infection with the S. Typhimurium SL1344 (WT) strain, but not from infection with the S. Typhimurium SL1344 (pHCM1) strain
 
 Considering the prevalence of IncHI plasmids in Salmonella, and the use of S. Typhimurium infection in mice as a model for Salmonella infection, we employed a mouse infection model to validate the RSP protein as a vaccine antigen against an antibiotic-resistant Salmonella strain. For antibiotic treatment, we specifically selected ampicillin (Amp) due to its established efficacy in reducing the symptoms of Salmonella infection in mice (Butler et al., 1981; Rossi et al., 2017). For our study, we chose the IncHI plasmid pHCM1, which harbors an Amp resistance gene.
 
@@ -54,11 +54,11 @@ We first established that both Salmonella strains used (WT and pHCM1) were capab
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig1-v1.jpg)
 
-**Figure 1.:** S. Typhimurium SL1344 and S. Typhimurium (pHCM1) strains.Survival rate (A), body weight evolution (B), disease index (C), and proinflammatory cytokine expression in spleen, Il-6 (D), Il-1β (E), and Tnf-α (F). Groups treated with ampicillin (Amp) are indicated with + Amp. In panel (A), the survival rate of control animals and those infected with the S. Typhimurium SL1344 (WT) strain and treated with Amp, are 100%. Animals infected with the S. Typhimurium (pHCM1) strain have the same survival rate independently of the treatment with Amp. Results are expressed as mean ± SEM (n=6–8 animals). Means without a common letter differ, p<0.05. The survival rates were compared by Log-rank (Mantel-Cox) test and expressed as the percentage of survival. Body weight evolution was analyzed by means of repeated measures ANOVA. Disease indices are expressed as median values and quartiles, and were compared by the Kruskal-Wallis test. The expression of cytokines were analyzed by using one-way analysis of variance (ANOVA) followed by Fisher’s least significant difference (LSD) post hoc test.Figure 1—source data 1.Figure 1.
+**Figure 1.:** Survival rate (A), body weight evolution (B), disease index (C), and proinflammatory cytokine expression in spleen, Il-6 (D), Il-1β (E), and Tnf-α (F). Groups treated with ampicillin (Amp) are indicated with + Amp. In panel (A), the survival rate of control animals and those infected with the S. Typhimurium SL1344 (WT) strain and treated with Amp, are 100%. Animals infected with the S. Typhimurium (pHCM1) strain have the same survival rate independently of the treatment with Amp. Results are expressed as mean ± SEM (n=6–8 animals). Means without a common letter differ, p<0.05. The survival rates were compared by Log-rank (Mantel-Cox) test and expressed as the percentage of survival. Body weight evolution was analyzed by means of repeated measures ANOVA. Disease indices are expressed as median values and quartiles, and were compared by the Kruskal-Wallis test. The expression of cytokines were analyzed by using one-way analysis of variance (ANOVA) followed by Fisher’s least significant difference (LSD) post hoc test.
 
 In antibiotic-naive mice infected with either SL1344 (WT) or SL1344 (pHCM1) strains, gradual weight loss, and clinical signs of disease were observed (Figure 1B and C, Figure 1—source data 1). However, Amp treatment only ameliorated these symptoms in mice infected with the SL1344 (WT) strain, showing no effect on those infected with the SL1344 (pHCM1) strain. Additionally, infection with both Salmonella strains led to an upregulation of proinflammatory cytokines in the spleen (Figure 1D, E and F, Figure 1—source data 1). Amp treatment in mice infected with the SL1344 (WT) strain prevented this increase in cytokine expression.
 
-## Immunization of mice with the RSP protein
+### Immunization of mice with the RSP protein
 
 We then purified the RSP protein and employed it as a vaccine antigen to evaluate its efficacy in protecting mice against infection caused by the S. Typhimurium SL1344 strain carrying the pHCM1 plasmid. To prevent the recurrence of infection by SL1344 clones that spontaneously cured the pHCM1 plasmid in the absence of Amp, we maintained the antibiotic treatment in the immunized animals.
 
@@ -66,41 +66,49 @@ The immunization process did not have a significant impact on the body weight pr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig2-v1.jpg)
 
-**Figure 2.:** A) and immunoglobulin concentration (B–I).Grey symbols represent non-immunized (No-Imm) mice; black symbols represent immunized (Imm) mice. Results are expressed as mean ± SEM (n=6–8 animals). IgA, immunoglobulin A; IgG, immunoglobulin G; nd, non-detected. Means without a common letter differ, p<0.05. Data were analyzed with Student’s t-test.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Grey symbols represent non-immunized (No-Imm) mice; black symbols represent immunized (Imm) mice. Results are expressed as mean ± SEM (n=6–8 animals). IgA, immunoglobulin A; IgG, immunoglobulin G; nd, non-detected. Means without a common letter differ, p<0.05. Data were analyzed with Student’s t-test.
 
-## Effects of immunization of mice on the infection caused by the S. Typhimurium SL1344 (pHCM1) strain
+### Effects of immunization of mice on the infection caused by the S. Typhimurium SL1344 (pHCM1) strain
 
-## Survival, body weight evolution, and clinical signs
+#### Survival, body weight evolution, and clinical signs
 
 Infection with the SL1344 (pHCM1) strain resulted in a decrease in the survival rate of mice and an approximate 20% reduction in their body weight after 6 days of infection. Additionally, it led to an increase in the manifestation of clinical signs associated with infection (Figure 3, Figure 3—source data 1). However, immunization significantly improved the survival rate of mice and reduced the incidence of clinical signs in infected animals.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig3-v1.jpg)
 
-**Figure 3.:** A), body weight change (B), and clinical signs (C) after challenge with the SL1344 (pHCM1) strain.Grey symbols represent non-immunized (No-Imm) mice; black symbols represent immunized (Imm) mice. In panel B, results are expressed as mean ± SEM (n=12–14 animals). Means without a common letter differ, p<0.05. The survival rates were compared by Log-rank (Mantel-Cox) test and expressed as the percentage of survival. Disease indices are expressed as median values and quartiles, and were compared by the Kruskal-Wallis test.Figure 3—source data 1.Figure 3.
+**Figure 3.:** Grey symbols represent non-immunized (No-Imm) mice; black symbols represent immunized (Imm) mice. In panel B, results are expressed as mean ± SEM (n=12–14 animals). Means without a common letter differ, p<0.05. The survival rates were compared by Log-rank (Mantel-Cox) test and expressed as the percentage of survival. Disease indices are expressed as median values and quartiles, and were compared by the Kruskal-Wallis test.
 
-## Intestinal effects of immunization with the RSP protein and challenge with the SL1344 (pHCM1) strain
+#### Intestinal effects of immunization with the RSP protein and challenge with the SL1344 (pHCM1) strain
 
 Immunization with the RSP protein increased the secretion of total IgA into the lumen of the jejunum and colon (Figure 4A and B, Figure 4—source data 1), while reducing its concentration in feces (Figure 4C, Figure 4—source data 1). Furthermore, immunization with the RSP protein led to an elevated presence of specific IgA antibodies against the RSP protein in all three samples (Figure 4D–F, Figure 4—source data 1), with even higher levels observed in infected animals in the case of fecal content. Regarding the expression of proinflammatory cytokines, infection with the SL1344 (pHCM1) strain resulted in increased expression of all three cytokines analyzed (Figure 4G–I, Figure 4—source data 1) both in immunized and non-immunized animals. In the case of Tnf-α, immunization also increased its expression.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig4-v1.jpg)
 
-**Figure 4.:** Salmonella.Total IgA concentration in jejunum content (A), in colon content (B), and in feces (C). RSP-specific IgA titers in jejunum content (D), in colon content (E), and in feces (F). Il-1β (G), Il-6 (H), and Tnf-α (I) expression in colon mucosa. Open bars represent non-immunized (Non-Imm) mice; solid bars represent immunized (Imm) mice. Results are expressed as means ± SEMs (n=10–12 animals). Means without a common letter differ, p<0.05. IgA, immunoglobulin A; IgG, immunoglobulin G; Il, interleukin; Int, the interaction between both factors; Tnf-α, tumor necrosis factor-alpha. All data were analyzed using two-way ANOVA (Immunization and infection factors).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Total IgA concentration in jejunum content (A), in colon content (B), and in feces (C). RSP-specific IgA titers in jejunum content (D), in colon content (E), and in feces (F). Il-1β (G), Il-6 (H), and Tnf-α (I) expression in colon mucosa. Open bars represent non-immunized (Non-Imm) mice; solid bars represent immunized (Imm) mice. Results are expressed as means ± SEMs (n=10–12 animals). Means without a common letter differ, p<0.05. IgA, immunoglobulin A; IgG, immunoglobulin G; Il, interleukin; Int, the interaction between both factors; Tnf-α, tumor necrosis factor-alpha. All data were analyzed using two-way ANOVA (Immunization and infection factors).
 
-## Systemic effects of immunization with the RSP protein and challenge with the SL1344 (pHCM1) strain
+#### Systemic effects of immunization with the RSP protein and challenge with the SL1344 (pHCM1) strain
 
 The immunization protocol also resulted in an increase in the concentration of total IgG at the systemic level (Figure 5A, Figure 5—source data 1), while infection with the SL1344 (pHCM1) strain reduced it. Additionally, immunization also led to an elevated concentration of specific anti-RSP IgG in the serum (Figure 5B, Figure 5—source data 1), which remained unaffected after infection with the SL1344 (pHCM1) strain. Following bacterial challenge, the spleen weight increased nearly threefold in non-immunized mice (Figure 5C, Figure 5—source data 1). In contrast, immunized mice exhibited a significantly lower increase in spleen weight. Furthermore, animals infected with the SL1344 (pHCM1) strain displayed Salmonella colonization in the spleen (Figure 5D, Figure 5—source data 1), which was significantly reduced in immunized animals. Regarding the expression of proinflammatory cytokines in the spleen, Salmonella infection upregulated the expression of all cytokines evaluated (Figure 5E–G, Figure 5—source data 1). Immunization partially mitigated this effect on Il-1β and Tnf-α expression.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig5-v1.jpg)
 
-**Figure 5.:** Salmonella counts in spleen tissue, and cytokine expression in spleen tissue after immunization with the RSP protein and challenge with the SL1344 (pHCM1) strain.Total IgG concentration (A) and RSP-specific IgG titers (B) in plasma. Spleen weight (C) and Salmonella counts in spleen tissue (D). Il-1β (E), Il-6 (F) and Tnf-α (G) expression in spleen tissue. Results are expressed as means ± SEMs (n=12–14 animals). Means without a common letter differ, p<0.05. IgA, immunoglobulin A; IgG, immunoglobulin G; Il, interleukin; nd, non-detected; Tnf-α, tumor necrosis factor-alpha. All data were analyzed using two-way ANOVA (Immunization and infection factors).Figure 5—source data 1.Figure 5.
+**Figure 5.:** Total IgG concentration (A) and RSP-specific IgG titers (B) in plasma. Spleen weight (C) and Salmonella counts in spleen tissue (D). Il-1β (E), Il-6 (F) and Tnf-α (G) expression in spleen tissue. Results are expressed as means ± SEMs (n=12–14 animals). Means without a common letter differ, p<0.05. IgA, immunoglobulin A; IgG, immunoglobulin G; Il, interleukin; nd, non-detected; Tnf-α, tumor necrosis factor-alpha. All data were analyzed using two-way ANOVA (Immunization and infection factors).
 
-## Selection of nanobodies with neutralizing activity against the RSP protein
+### Selection of nanobodies with neutralizing activity against the RSP protein
 
 Given the protective effect against Salmonella infection observed in mice immunized with the RSP protein, we wondered whether we could obtain specific antibodies against RSP that could directly interfere with its biological activity in the conjugative transfer of IncHI plasmids. We chose nanobodies as ideal candidates to block RSP activity given their small size, stability, and high affinity to antigens, and their therapeutic potential against infections. Interestingly, nanobodies can also be expressed on the surface of E. coli fused to the initial 654 amino acids of the enterohemorrhagic E. coli intimin protein, termed Neae (Bodelón et al., 2009), comprising the N-terminal signal peptide, the periplasmic LysM domain, the β-barrel for outer membrane insertion, and the extracellular Big domains D00 and D0 (Fairman et al., 2012). Expression of Neae-Nb fusions represents an efficient bacterial display system for their selection of Nbs binding a target antigen from VHH gene libraries employing E. coli cell sorting methods with the labeled antigen (Salema et al., 2013; Salema and Fernández, 2017). In addition, Neae-Nb fusions expressed in E. coli promote synthetic cell-to-cell adhesions mediated by the specific recognition of a surface antigen in the target cell (Glass and Riedel-Kruse, 2018; Piñero-Lambea et al., 2015).
 
 In order to obtain Nbs that specifically bind the extracellular domain of the RSP protein, we immunized two dromedaries with the last 280 residues of the C-terminal domain of the RSP protein. After immunization, peripheral blood lymphocytes from these animals were isolated and the VHH gene segments were amplified and cloned in the display vector pNeae2 (Robledo et al., 2022; Salema et al., 2013), which encodes the Neae intimin fragment under the control of the IPTG-inducible lacI-Plac promoter region. A library of approximately 1×108 clones was obtained by electroporation of E. coli DH10BT1R strain with the products of the ligated pNeae2-VHH. Bacteria in the library were grown in liquid culture and induced with IPTG. Induced bacteria binding the C-domain of RSP were selected by incubation with the purified protein labeled with biotin, following iterative steps of magnetic cell sorting (MACS) and fluorescence-assisted cell sorting (FACS) (Materials and methods). After the final sorting step (Figure 6A), the selected pool of bacteria was grown on LB-agar plates. 96 colonies were randomly picked from these plates, grown in liquid, and induced with IPTG to evaluate the Nb display levels on the bacterial surface and their binding capability to the biotinylated C-domain of the RSP protein by flow cytometry (Figure 6B). The VHH sequences from clones with specific binding to purified RSP were determined, which allowed us to identify seven different Nbs (Figure 6—figure supplement 1).
 
-## Selection of Nb clones displayed on E. coli that agglutinate with the S. Typhimurium SL1344 (R27) strain
+![Figure 6.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig6-v1.jpg)
+
+**Figure 6.:** (A) Flow cytometry analysis of the enrichment of bacterial population displaying Nb libraries generated after the immunization of dromedaries with the C-terminal domain of the RSP protein. Three rounds of selection with the RSP protein by magnetic cell sorting (MACS) and one round of fluorescence-activated cell sorting (FACS) were performed, in which bacteria were incubated with 50 nM of biotin-labeled RSP (or 100 nM of fibrinogen used as a specificity control) and stained with Streptavidin-APC. (B) Flow cytometry of the individual bacterial clones selected from the immune library. The bacterial surface display of the corresponding nanobody was detected using an anti-c-myc monoclonal antibody. The binding of biotin-labeled antigens to Nbs displayed on bacteria was performed with the incubation of bacterial cells with 50 nM of biotin-labeled RSP.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Red color, blue color, and purple color show the CDR1, CDR2, and CDR3 of the corresponding VHH, respectively. Yellow color marks the sequence of the c-myc tag used to evaluate the Nb display on the bacterial surface by flow cytometry. Alignment generated with Clustal Omega. Labels indicate full level of conservation (*) or decreased degree of conservation (: or.).
+
+### Selection of Nb clones displayed on E. coli that agglutinate with the S. Typhimurium SL1344 (R27) strain
 
 For selection of Nbs binding native RSP expressed on Salmonella cells, we took advantage of the specific adhesion observed between E. coli cells with displayed Nbs and bacteria having the target antigen accessible on their surface, which leads to the agglutination of mixed bacterial cultures (Glass and Riedel-Kruse, 2018; Robledo et al., 2022).
 
@@ -108,15 +116,15 @@ We initially evaluated the agglutination capability of the seven different clone
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig7-v1.jpg)
 
-**Figure 7.:** (A) Assay of the ability of E. coli DH10BT1R cells expressing nanobodies on its surface to agglutinate cells of the S. Typhimurium SL1344 (R27) strain. Blue arrow marks the aggregation of bacteria after the interaction of E. coli cells producing nanobodies directed against the RSP protein (VHH-RSP #3) and Salmonella cells harboring the R27 plasmid. (B) Transmission electron microscopy imaging mixtures of E. coli DH10BT1R cells expressing nanobodies against the RSP protein on its surface and cells of the S. Typhimurium SL1344 strain, harboring or not the R27 plasmid. The studies were performed by labeling the nanobodies-producing bacteria (E. coli DH10BT1R) with a mouse antibody anti c-myc-tag and goat anti-mouse IgG conjugated to 12 nm gold particles. Blue bars represent 1 μm while black bars represent 2 μm.Figure 7—source data 1.Figure 7B.
+**Figure 7.:** (A) Assay of the ability of E. coli DH10BT1R cells expressing nanobodies on its surface to agglutinate cells of the S. Typhimurium SL1344 (R27) strain. Blue arrow marks the aggregation of bacteria after the interaction of E. coli cells producing nanobodies directed against the RSP protein (VHH-RSP #3) and Salmonella cells harboring the R27 plasmid. (B) Transmission electron microscopy imaging mixtures of E. coli DH10BT1R cells expressing nanobodies against the RSP protein on its surface and cells of the S. Typhimurium SL1344 strain, harboring or not the R27 plasmid. The studies were performed by labeling the nanobodies-producing bacteria (E. coli DH10BT1R) with a mouse antibody anti c-myc-tag and goat anti-mouse IgG conjugated to 12 nm gold particles. Blue bars represent 1 μm while black bars represent 2 μm.
 
 To further characterize this clone, the corresponding VHH gene was cloned in the mammalian expression vector pIgΔCH1 (Casasnovas et al., 2022), which allows the fusion of the selected Nb domain to the Fc region of human IgG1. The corresponding Nb3-Fc protein fusion was purified from culture supernatants of transfected Expi293F cells (Figure 8A, Figure 8—source data 1 and 2), and its binding capacity to the RSP protein was analyzed by ELISA. The results indicated that this Nb3-Fc presented a high affinity for binding to the RSP protein, showing an apparent equilibrium dissociation constant (KD) in the picomolar range (~44 pM) (Figure 8B, Figure 8—source data 3).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig8-v1.jpg)
 
-**Figure 8.:** (A) Purification of Nb3-Fc by affinity column. Coomassie staining of the SDS-PAGE (10%) showing the purified Nb-RSP #3-Fc from transfected mammalian cell culture supernatants. Molecular weight markers are indicated on the left. (B) ELISA shows the binding capacity of the purified VHH-RSP#3-Fc to the RSP or BSA protein. The plot represents the OD values at 490 nm obtained with the indicated concentrations of the purified Nb3-Fc after 1 hr of interaction with the corresponding antigen.Figure 8—source data 1.Figure 8A.Figure 8—source data 2.Figure 8A showing the Coomassie staining of the SDS-PAGE with highlighted sample labels corresponding to the purified Nb-RSP #3-Fc.Figure 8—source data 3.Figure 8B.
+**Figure 8.:** (A) Purification of Nb3-Fc by affinity column. Coomassie staining of the SDS-PAGE (10%) showing the purified Nb-RSP #3-Fc from transfected mammalian cell culture supernatants. Molecular weight markers are indicated on the left. (B) ELISA shows the binding capacity of the purified VHH-RSP#3-Fc to the RSP or BSA protein. The plot represents the OD values at 490 nm obtained with the indicated concentrations of the purified Nb3-Fc after 1 hr of interaction with the corresponding antigen.
 
-## Interference of E. coli displaying Nb-RSP #3 strain on the conjugation of the R27 plasmid from the Salmonella Typhimurium SL1344 strain
+### Interference of E. coli displaying Nb-RSP #3 strain on the conjugation of the R27 plasmid from the Salmonella Typhimurium SL1344 strain
 
 Our objective was to investigate whether the E. coli surface expression of the Nb-RSP #3 would be able to interfere with the conjugation process of the R27 plasmid from the SL1344 Salmonella strain (donor) to the SL1344 ibpA::lacZ-Kmr derivative (recipient). To prevent that the Nbs produced by the E. coli DH10BT1R (pNeae2 VHH-RSP #3) were titrated out by an excess of SL1344 (R27) donor cells, we planned a conjugation experiment with a low number of donor cells (103 cfu) mixed with an abundance of recipient cells (SL1344 ibpA::lacZ-Kmr) (106 cfu), along with an excess of cells corresponding to the E. coli strain displaying Nb-RSP #3 (107 cfu).
 
@@ -124,7 +132,7 @@ Considering the known conjugation frequency of the R27 plasmid in Salmonella at 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/95328/elife-95328-fig9-v1.jpg)
 
-**Figure 9.:** E. coli DH10BT1R cells expressing nanobodies on its surface with the conjugative transfer of the R27 plasmid in Salmonella.R27 plasmid was conjugated from a donor strain (SL1344) to a recipient strain (SL1344 ibpA::lacZ-Km) with the absence (labeled as ‘none’) or presence of the interferent strains rE. coli DH10BT1R, plasmid-free clone; E. coli DH10BT1R (pNVFib1), clone expressing a fibrinogen-specific VHH; E. coli DH10BT1R (pNeae2 VHH-RSP #3), clone expressing RSP-specific VHH. Results are expressed as means ± SEMs (n=4 independent biological replicates). Means without a common letter differ, p<0.05. Data were analyzed with Student’s t-test.Figure 9—source data 1.Figure 9.
+**Figure 9.:** R27 plasmid was conjugated from a donor strain (SL1344) to a recipient strain (SL1344 ibpA::lacZ-Kmr) with the absence (labeled as ‘none’) or presence of the interferent strains E. coli DH10BT1R, plasmid-free clone; E. coli DH10BT1R (pNVFib1), clone expressing a fibrinogen-specific VHH; E. coli DH10BT1R (pNeae2 VHH-RSP #3), clone expressing RSP-specific VHH. Results are expressed as means ± SEMs (n=4 independent biological replicates). Means without a common letter differ, p<0.05. Data were analyzed with Student’s t-test.
 
 ## Discussion
 
@@ -148,37 +156,37 @@ Therefore, targeting these plasmid-encoded Big proteins through immunotherapies 
 
 ## Methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 The bacterial strains (see Supplementary file 1a) were routinely grown in Luria-Bertani (LB) medium (10 g/L NaCl, 10 g/L tryptone, and 5 g/L yeast extract) with vigorous shaking at 200 rpm (Innova 3100; New Brunswick Scientific). The antibiotics used were chloramphenicol (Cm) (25 µg/mL), tetracycline (Tc) (15 µg/mL), carbenicillin (Cb) (100 µg/mL), and kanamycin (Km) (50 µg/mL) (Sigma-Aldrich). E. coli strains carrying the plasmid with a VHH gene were grown at 30 °C on LB-agar plates (1.5% w/v) or in LB liquid medium with the addition of chloramphenicol (Cm, 30 µg/mL) for plasmid selection. To overexpress the nanobodies in the bacterial surface of E. coli DH10BT1R, firstly bacteria were grown overnight (O/N) under statics conditions in LB medium containing 2% (w/v) of glucose. Then, bacteria were harvested by centrifugation (4000 g for 5 min) and grown in the same media supplemented with 0.05 mM isopropylthio-β-D-galactoside (IPTG) in constant agitation (160 rpm) for 16 hr.
 
-## Plasmids
+### Plasmids
 
 The different plasmids used in this work are listed in Supplementary file 1a.
 
-## Oligonucleotides
+### Oligonucleotides
 
 The oligonucleotides used in this work are listed in Supplementary file 1b.
 
-## Genetic manipulations
+### Genetic manipulations
 
 All enzymes used to perform standard molecular and genetic procedures were used according to the manufacturer’s recommendations. To introduce plasmids into E. coli, Salmonella, and Klebsiella, bacterial cells were grown until an O.D600 nm of 0.8. Cells were then washed several times with 10% glycerol, and the respective plasmids or DNA were electroporated by using an Eppendorf gene pulser (Electroporator 2510).
 
 Deletion of the flhDC locus was performed in the strain SL1344 by using the λ Red recombination method, as previously described (Datsenko and Wanner, 2000).
 
-## Conjugative transfer of the R27 plasmid
+### Conjugative transfer of the R27 plasmid
 
 The R27 plasmid was conjugated as described previously (Hüttener et al., 2018). The mating frequency was calculated as the number of transconjugants per donor cell.
 
-## Purification of the native RSP protein for the immunization assay
+### Purification of the native RSP protein for the immunization assay
 
 The RSP protein was purified from cell-free supernatant fractions obtained from the Salmonella cells lacking the flagella (SL1344 R27 flhDC::Km). Cells were grown at 25 °C in LB medium for 16 hr in constant shaking at 200 rpm, then centrifugated at 7000 rpm for 30 min at room temperature. Cell pellets were discarded, and the supernatant was filtered through a 0.22 μm filter (Millipore). Supernatants were then ultra-centrifugated at 40,000 rpm for 1 hr at 4 °C and carefully aspired to not disturb the protein pellet and discarded. The remaining pellet was solubilized using commercial Phosphate-buffered saline (PBS – Gibco). Proteins were quantified using the Bradford standard method (Pierce).
 
-## Purification of the C-terminal domain of the RSP protein
+### Purification of the C-terminal domain of the RSP protein
 
 For the RSP protein production, the carboxyl-terminal region of the RSP protein was amplified (280 AA in total). Amplification of that region was achieved by performing PCR using the R27 plasmid as a DNA template and the primers RSP5 BamHI Fw and RSP PstI Rv, together with the Phusion Hot Start II High-fidelity DNA Polymerase (Thermo Fisher Scientific) following the manufacturer’s recommendations. The DNA was then purified using the GeneJet PCR Purification Kit (Thermo Fisher Scientific), digested with BamHI and PstI restriction endonucleases according to the manufacturer´s instructions (New England Biolabs), and ligated into the pMAL-p2E vector digested with the same restriction endonucleases using the T4 DNA Ligase (New England Biolabs) according to the manufacturer´s instructions. The resulting plasmid, termed pMAL-RSP#5/7, was Sanger sequenced and transformed into BL21 cells. Cells transformed with pMAL-RSP#5/7 plasmid were grown in LB medium supplemented with carbenicillin at a final concentration of 100 μg/mL at 37 °C for 16 hr at constant agitation at 200 rpm. Then, cells were diluted 1:100 in LB with 100 μg/mL of carbenicillin and glucose at 0.45% of the final concentration. Cells were incubated at 37 °C with 200 rpm until reached the O.D600 nm of 0.5, then IPTG was added at a final concentration of 0.15 mM. Cells were incubated at 37 °C for 2 hr under constant agitation of 200 rpm for the induction of the recombinant protein. Cells were then centrifuged at 7500 rpm for 30 min at 4 °C. The cells pellet was subsequently resuspended in column buffer (20 mM HEPES (Na) pH 7.5, 200 mM NaCl, 1 mM EDTA, 1 mM β-mercaptoethanol) plus protease inhibitor (Complete Ultra Tablets, Mini, EDTA-free, EASYpack, Roche). Cells were then disrupted by French press cell lysis and centrifugated at 12,000 rpm for 1 hr at 4 °C. Supernatants were filtered through a 0.22 μM filter (Millipore) and mixed with 250 μl of Amylose resin (New England Biolabs) for 2 hr at 4 °C in an orbital shaker. The resin was then loaded in chromatography columns and washed twice with the column buffer. The recombinant RSP C-terminal protein was then eluted using the elution buffer (20 mM HEPES (Na) pH 7.5, 200 mM NaCl, 1 mM EDTA, 1 mM β-mercaptoethanol and 10 mM maltose). Eluted fractions were collected and then concentrated using Amicon Ultra-15 Ultracel 10 K (Millipore) according to the manufacturer´s instructions.
 
-## Immunization of dromedaries with the C-terminal fragment of the RSP protein and selection of clones producing anti-RSP specific nanobodies
+### Immunization of dromedaries with the C-terminal fragment of the RSP protein and selection of clones producing anti-RSP specific nanobodies
 
 Two different dromedary camels (Camelus dromedarious) were immunized with purified RSP protein (~1.2 mg) mixed with veterinary vaccine adjuvant (GERBU). After six rounds of inoculations by subcutaneous injections, serial dilutions of pre-immune and immune sera were used in ELISA to confirm the immune response of dromedary after the RSP protein inoculation. B lymphocytes from peripheral blood were isolated, RNA was extracted and VHH genes were amplified by RT-PCR using the VHH Sfi and VHH Not oligonucleotides following the protocol described previously (Salema et al., 2013).
 
@@ -186,35 +194,35 @@ The amplified VHH fragments were digested with SfiI and NotI restriction enzymes
 
 This library was used for the enrichment of clones that recognized the RSP protein. To this end, purified RSP protein was mixed with Biotin-NHS (Biotinamidocaproate N-hydroxysuccinimide ester, Sigma-Aldrich) and three rounds of MACS (with RSP concentrations of 100 nM the first one) and 50 nM the other two were performed. Thereafter, a FACS selection with a protein concentration of 50 nM were performed. The positive clones for the RSP binding were selected for further analysis.
 
-## Cloning and purification of the RSP-specific nanobody (VHH-RSP #3)
+### Cloning and purification of the RSP-specific nanobody (VHH-RSP #3)
 
 The gene coding for the RSP-specific selected Nb was PCR amplified with oligonucleotides VHH pIg AgeI and VHH pIg BamHI using the pNeae2 VHH-RSP #3 purified plasmid as a template. This PCR product was subsequently cloned in AgeI-BamHI sites of the mammalian expression vector pIgΔCH1 (Casasnovas et al., 2022) derived from pIgγ1HC (Tiller et al., 2008). This vector allows the expression of the cloned gene located in the frame with an IgH signal peptide fused to the human IgG1 hinge and Fc portion. For the nanobody overexpression and purification, the Expi293 Expression System Kit (Thermo Fisher Scientific) was used. The mammalian cells transfected with the purified expression vector (pIgΔCH1 VHH-RSP) were grown 5 days post-transfection. Cells were then centrifuged, the supernatant was collected and filtered, and the proteins were purified with an Ig Select or protein A affinity column (Cytiva), following the manufacturer’s instructions.
 
-## Enzyme-linked immunosorbent assays to evaluate the specific VHH-RSP #3 binding to the RSP protein
+### Enzyme-linked immunosorbent assays to evaluate the specific VHH-RSP #3 binding to the RSP protein
 
 ELISA experiments were performed in 96-well plates (Maxisorp, Nunc), which were previously coated overnight at 4 °C with 50 µl/well of the purified RSP protein antigen or BSA at 3 µg/ml in PBS. Antigen-coated plates were washed with PBS and blocked with 200 μl/well of 3% (w/v) skimmed milk in PBS at room temperature for 2 hr. Afterwards, different dilutions of the VHH-RSP (prepared in 3% (w/v) skimmed milk in PBS) were added to the wells for 1 hr. After the incubation, the wells were washed three times with PBS, and rabbit anti-human Fc IgG-HRP (Jackson ImmunoResearch) was added to the plates (diluted 1:5000 in 3% (w/v) skimmed milk in PBS) to detect the bound Nbs. After 1 hr of incubation at room temperature, plates were washed with PBS and developed with H2O2 and o-phenylenediamine (OPD; Merck-Sigma). The Optical Density (OD) at 490 nm (OD490 nm) of plate wells was determined (iMark, Bio-Rad), and the values were corrected with the background levels of OD490nm of the wells without antigen added.
 
-## In vivo immunization and infection of mice
+### In vivo immunization and infection of mice
 
 Male and female C57BL/6 mice were purchased from Envigo (Bresso, Italy) and maintained under stable temperature and humidity conditions with a 12 hr light and 12 hr dark cycle and free access to food and water.
 
-## Set up of the infection protocol with the SL1344 (pHCM1) strain
+#### Set up of the infection protocol with the SL1344 (pHCM1) strain
 
 To induce infection, the S. Typhimurium strain SL1344 (pHCM1) was chosen. An assay was designed to assess whether infection with this strain is similar to infection with the plasmid-free strain. Four groups of mice were infected with strains SL1344 and SL1344 (pHCM1), and two of them were treated with 150 mg/kg/day ampicillin (Amp) (Sigma-Aldrich) in drinking water and two of them were untreated. In addition, a group of uninfected control mice was included as a reference group. Thus, the groups were: (i) Control: uninfected mice; (ii) Sal: SL1344-infected mice not treated with Amp; (iii) Sal-pHCM1: SL1344-pHCM1-infected mice not treated with Amp; (iv) Sal WT +Amp: SL1344-infected mice treated with Amp; (v) Sal pHCM1 +Amp: SL1344-pHCM1-infected mice treated with Amp. Three hours before the challenge with the bacterial suspension, mice received an intraperitoneal injection of cimetidine (50 mg/kg; Sigma-Aldrich) to reduce acid secretion and improve bacterial survival (Ren et al., 2014). To induce infection, 100 µl of the bacterial suspension (109 cfu of Salmonella) was administered by oral gavage. During the infection period, the body weight of animals was monitored daily. Four to six days after infection (depending on survival), the animals were evaluated for clinical signs of disease, and fecal samples were obtained. They were subsequently euthanized and samples of spleen, colon mucosa, intestinal lavage, and serum were obtained. Samples were obtained and processed as described previously (Miró et al., 2023).
 
 The parameters analyzed to score the clinical signs were: Coat care (normal, 0; slightly altered, 1; considerably altered, 2; very altered, 3); posture (normal, 0; slightly curved, 1; considerably curved, 2; very curved, 3); movement (normal, 0; slightly slow, 1; considerably slow, 2; very slow, 3); defecation (normal, 0; soft stools, 1; watery stools, 2; liquid stools, 3); body weight loss (no weight loss, 0; weight loss less than 5%, 1; weight loss between 5 and 10%, 2; weight loss greater than 10%, 3).
 
-## Immunization with the RSP protein and infection with the S. Typhimurium SL1344 (pHCM1) strain
+#### Immunization with the RSP protein and infection with the S. Typhimurium SL1344 (pHCM1) strain
 
 Regarding the adjustment of the immunization with the RSP protein as antigen, we proceeded as previously described (Miró et al., 2023). Briefly, mice were intranasally administered with 3 µg of the RSP protein and 5 μg of cholera toxin (CT; Sigma-Aldrich) as an immunological adjuvant. Immunization was performed three times every 2 weeks (at 3, 5, and 7 weeks of age). Non-immunized mice received CT alone. Mice were distributed randomly into two groups: Non-Imm (Non-immunized, CT alone); Imm (Immunized mice). During the immunization period, the body weight of animals was monitored weekly. Two weeks after the last immunization, animals were euthanized and samples of feces, intestinal lavage, and serum were obtained. Total and RSP-specific immunoglobulins were determined as explained in the section Immunoglobulin determination.
 
 In order to evaluate the protective efficacy of immunization, the previously established infection protocol with the S. Typhimurium SL1344 (pHCM1) strain was used. The experiments were performed using a Latin design with two factors: immunization of mice using the RSP protein as immunogen; and subsequently infected with the S. Typhimurium SL1344 (pHCM1) strain. The animals were randomly distributed into four groups: (i) non-immunized and non-infected mice (Non-Imm); (ii) non-immunized and Salmonella-infected animals (Sal); (iii) immunized and non-infected animals with Salmonella (Imm); (iv) immunized and infected animals (Imm-Sal). The infection was provoked two weeks after the last immunization dose.
 
-## Bacterial counts in the spleen
+### Bacterial counts in the spleen
 
 Spleen samples were homogenized with sterile PBS (20 mg/mL) using a PRO200 homogenizer (Pro-Scientific, USA) at 18,000 g, and homogenates were used to count the presence of Salmonella cells plated in MacConkey media agar plates.
 
-## Immunoglobulin concentration
+### Immunoglobulin concentration
 
 Total secreted IgA and anti-RSP-specific IgA were determined in intestinal and colon content and in feces by sandwich enzyme-linked immunosorbent assay (ELISA) as previously described (Ren et al., 2014). Briefly, plates were coated with anti-mouse IgA monoclonal antibody (1 μg/mL; Sigma-Aldrich) in PBS to quantify total IgA concentration or RSP (20 μg/mL) in PBS to measure RSP-specific IgA concentration. Mouse IgA (Bethyl) was used as a standard for the determination of total IgA. Goat anti-mouse IgA (Bethyl) conjugated with horseradish peroxidase (HRP) was used as the detection antibody.
 
@@ -222,14 +230,14 @@ The concentrations of total IgG and specific IgG against the RSP protein in seru
 
 In all cases, o-phenylenediamine (OPD, 0.4 mg/mL; Sigma-Aldrich) was used as HRP substrate, and the color intensity was measured at 492 nm in a microplate reader (Sunrise).
 
-## Cytokine expression in spleen and colon
+### Cytokine expression in spleen and colon
 
 RNA extraction and reverse transcription were carried out as previously described (Rosell-Cardona et al., 2022). RNA quality and quantity were assessed by spectrophotometry (NanoDrop ND-1000; Thermo Fisher Scientific) and its integrity was determined with an Agilent 2100 Bioanalyzer (Agilent Technologies Inc). In all cases, the RNA integrity was ≥9 and the A260/280 ratio was between 1.96 and 2.02. Total RNA was reverse-transcribed using an iScript cDNA Synthesis Kit (Bio-Rad). For real-time PCR determinations, we used SsoAdvanced Universal SYBR Green Supermix (Bio-Rad). The primers used are described previously (Garcia-Just et al., 2020). Real-time PCR was performed on a MiniOpticon Real-Time PCR System (Bio-Rad). Each PCR run included duplicates of reverse transcript cDNA for each sample and negative controls (reverse transcription-free samples, RNA-free samples). Quantification of the target gene transcripts was conducted using hypoxanthine phosphoribosyl transferase 1 (hprt1) gene expression as a reference and was performed with the 2−ΔΔCT method (Schmittgen and Livak, 2008). Product fidelity was confirmed by melting curve analysis.
 
-## Immunogold electron microscopy
+### Immunogold electron microscopy
 
 Immunogold microscopy experiments were performed as previously described (Hüttener et al., 2019).
 
-## Statistical analysis
+### Statistical analysis
 
 The results of mice experiments are presented as mean ± SEM, except for survival curves and disease indices. Survival curves have been compared by the Log-rank (Mantel-Cox) test and expressed as a percentage of survival. Disease indices are expressed as median values and quartiles and have been compared by the Kruskal-Wallis test. Body weight evolution was analyzed by means of repeated measures ANOVA. Continuous data were analyzed with Levene’s test to assess the homogeneity of variance and with the Shapiro-Wilk test to assess distribution. Homogeneous and normally distributed data were analyzed with Student’s t-test (immunization-tuning experiments) or one-way analysis of variance (ANOVA) (infection-tuning) followed by Fisher’s least significant difference (LSD) post hoc test and two-way ANOVA (immunization and infection experiments). Student’s t-test was also used to determine statistical the significance of R27 conjugation frequency in mating experiments. Data were analyzed using GraphPad Prism software v.9.3.1 (GraphPad Software, Inc). Differences were considered significant at p<0.05.

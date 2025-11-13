@@ -38,31 +38,67 @@ In this study, we re-examine the mechanisms that regulate Nodal signaling gradie
 
 ## Results
 
-## The Nodal signaling gradient forms in the absence of feedback
+### The Nodal signaling gradient forms in the absence of feedback
 
 The Nodal signaling gradient may reflect the diffusive properties of Nodal ligands secreted from the YSL or the action of signaling feedback and relay. To characterize the contribution of diffusion specifically, we set out to visualize the Nodal gradient in mutants that lack signaling feedback and relay altogether. This goal presented two key challenges. First, endogenous Nodal ligands have not been successfully visualized by antibody staining or fluorescent tagging in zebrafish. Second, knocking out the full complement of all known Nodal feedback regulators—for example lefty1, lefty2, cyclops, squint, dpr2 (Zhang et al., 2004), etc—in combination is impractical. To address these two limitations, we were inspired by previous approaches for clone-mediated perturbations to morphogen gradients (Baeg et al., 2004; Belenkaya et al., 2004; Cadigan et al., 1998; Eldar and Barkai, 2005; Entchev et al., 2000) and developed a ‘sensor’ cell assay (Figure 1A). In this approach, we transplant Nodal-sensitive (‘sensor’) cells from a gfp-injected donor embryo to the margin of a host that is Nodal-insensitive and therefore lacks feedback. We then visualize signaling in the sensor cells by immunostaining for phosphorylated Smad2 (pSmad2) and GFP. Because host cells cannot respond to Nodal, they cannot modulate signal spread by either positive or negative feedback. For example, a transcriptional relay that spreads nodal expression would not form in this scenario. In addition, the sensor cells ‘report’ on their local Nodal concentration via pSmad2 staining intensity, enabling us to sample the activity of endogenous, untagged ligands. For the experiments described here, we use sensor cells from Mvg1 donors. These cells are Nodal-sensitive but cannot produce functional Nodal-Vg1 heterodimers and therefore cannot spread signaling via positive feedback (Montague and Schier, 2017). To pilot the sensor cell assay, we transplanted cells from an Mvg1 donor into a wild-type host (Figure 1B, upper panel). The Mvg1 sensors exhibited α-pSmad2 staining intensity similar to their wild-type neighbors, and quantification of staining across replicate embryos revealed similar signaling gradients for host and sensor cells (Figure 1B, lower panel; blue and red points, respectively). This result demonstrates that transplanted sensor cells accurately report on their local signaling environment. We further note that sensor cell migration after transplant does not appear to compromise the assay, as sensor cells exhibit signaling intensities appropriate for their position at the time of embryo fixation. This outcome is consistent with previous observations that cell rearrangement at the margin is minimal prior to gastrulation (Dubrulle et al., 2015; Helde et al., 1994; Wilson et al., 1993).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of sensor cell assay. Mvg1 donor embryos were marked by injecting gfp mRNA at the 1-cell stage. At high stage, just before the onset of Nodal signaling, GFP-marked sensor cells were transplanted from the animal pole of the donor to the margin of a Nodal-insensitive host. At 50% epiboly, embryos were fixed and immunostained for GFP and Nodal signaling activity (α-pSmad2). Imaging of chimeric embryos (far right) enables inference of the gradient shape from α-pSmad2 staining (magenta) in sensor cells (green). Because host embryos lack the ability to respond to Nodal, YSL-derived Nodal ligands are responsible for the shape of the Nodal signaling gradient. (B) Control visualization of the Nodal signaling gradient in wild-type hosts using a sensor cell assay. Upper panel; Mvg1 sensor cells (yellow) were transplanted to the margin of a wild-type host. Nodal signaling was visualized by α-pSmad2 staining (magenta), and sensor cell boundaries were segmented with an automated pipeline (white curves). YSL boundaries are marked with dashed white curves. Lower panel; quantification of staining intensity in host (blue) and sensor (red) cells across replicate embryos. Nuclei were segmented from DAPI signal using an automated analysis pipeline implemented in MATLAB. Sensor and host cells were identified as being clearly GFP positive or negative, respectively. Solid curves represent sliding window averages. Plot was derived from three replicate embryos. (C) Sensor cell assay in MZsmad2 host embryos. Upper panel; GFP-marked Mvg1 sensor cells (yellow) were transplanted to the margin of MZsmad2 host embryos. Nodal signaling was visualized with α-pSmad2 staining (magenta). Sensor cell boundaries are marked with white outlines, and YSL boundaries are marked with dashed white curves. Lower panel; quantification of host (blue) and sensor (red) cell staining intensities were carried out as in (B). Plot was derived from six replicate embryos.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** This experiment summarizes control experiments that verify that our α-pSmad2 staining protocol detects Nodal signaling activity in wild-type embryos but not MZsmad2, MZoep, or Mvg1 mutants. Pixel intensities are directly comparable between all α-pSmad2 channel images. (A) Flat-mount image of wild-type 50% epiboly embryo stained with DAPI and α-pSmad2 antibody. Images are maximum intensity projections from a representative embryo. (B) Flat-mount image of MZsmad2 50% epiboly embryo stained with DAPI and α-pSmad2 antibody. Images are maximum intensity projections from a representative embryo. (C) Flat-mount image of MZoep 50% epiboly embryo stained with DAPI and α-pSmad2 antibody. Images are maximum intensity projections from a representative embryo. (D) Flat-mount image of Mvg1 50% epiboly embryo stained with DAPI and α-pSmad2 antibody. Images are maximum intensity projections from a representative embryo.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** To verify that MZsmad2 and MZoep embryos express Nodals in the YSL, we stained for cyclops and squint mRNA by smFISH. All depicted embryos were counterstained with DAPI to mark nuclei and α-eCdh1 to mark cell boundaries (A) Wild-type embryos express squint mRNA in the YSL and blastoderm at 50% epiboly. (A’) Enlarged view of area within the white box from panel (A). (B) MZsmad2 embryos express squint mRNA in the YSL, but not the blastoderm, at 50% epiboly. (B’) Enlarged view of area within the white box from panel (B). (C) MZoep embryos express squint mRNA in the YSL, but not the blastoderm, at 50% epiboly. (C’) Enlarged view of area within the white box from panel (C). (D) Wild-type embryos express cyclops mRNA in the YSL and blastoderm at 50% epiboly. (D’) Enlarged view of area within the white box from panel (D). (E) MZsmad2 embryos express cyclops mRNA in the YSL, but not the blastoderm, at 50% epiboly. (E’) Enlarged view of area within the white box from panel (E). (F) MZoep embryos express cyclops mRNA in the YSL, but not the blastoderm, at 50% epiboly. (F’) Enlarged view of area within the white box from panel (F).
+
 We next applied this approach to MZsmad2 host embryos, which lack all Nodal signaling. Smad2 is required to activate Nodal-dependent gene expression, and zebrafish MZsmad2 embryos phenocopy mutants lacking Nodal ligands (Dubrulle et al., 2015). We verified that MZsmad2 embryos lack pSmad2 (Figure 1—figure supplement 1) but continue to express cyclops and squint in the YSL (Figure 1—figure supplement 2). Expression of both Nodals was excluded from the blastoderm, confirming that these mutants are incapable of Nodal autoregulation (Figure 1—figure supplement 2). Mvg1 sensor cells transplanted into MZsmad2 mutants exhibit clear Nodal signaling activity several cell tiers from the margin (Figure 1C, upper panel), while signaling was completely absent in host cells. Quantification of staining in MZsmad2 hosts (Figure 1C, lower panel) revealed a Nodal signaling gradient similar in range to that of wild-type controls (Figure 1B., lower panel; half-distances of 45 and 37 μm for MZsmad2 and wild type, respectively). Together, these experiments suggest that YSL-derived Nodal ligands can form a gradient of normal range without help from signaling feedback and relay.
 
-## Nodal signaling range is expanded in the absence of Oep
+### Nodal signaling range is expanded in the absence of Oep
 
 The above results support a model in which diffusion drives Nodal spread. However, it remains unclear how the embryo sets the range of ligand dispersal. Biophysical studies with GFP-tagged Nodals suggest that ligand mobility may be hindered by interaction with extracellular factors, as measured diffusion rates for both Cyclops and Squint are >10 fold lower than for free GFP (Müller et al., 2012). However, no factors that explain hindered mobility of endogenous ligands have been identified. Cell surface receptor complexes are clear candidates for this role (Wang et al., 2016), because transient ligand capture or receptor-mediated endocytosis could constrain the gradient (Wartlick et al., 2009), and receptors have been shown to regulate gradient range for other signals (Baeg et al., 2004; Chen and Struhl, 1996; Lecuit and Cohen, 1998; Okabe et al., 2014).
 
 To test whether receptor complex components regulate the range of Nodal signaling, we performed sensor cell transplants in embryos lacking the essential Nodal co-receptor Oep (MZoep mutants Gritsman et al., 1999). We found that Mvg1 sensor cells detected Nodal activity over a dramatically longer range in MZoep hosts than in wild-type controls (Figure 2A,B). Indeed, transplanting sensor cells to the animal pole revealed that Nodal ligand activity can be detected throughout the embryo when Oep is absent (Figure 2D,E). To test whether loss of Oep affects both Nodal ligands similarly, we performed sensor cell assays in MZoep;sqt and MZoep;cyc double mutants. Loss of Oep led to an expanded range of action for both Cyclops (i.e. in MZoep;sqt mutants) and Squint (i.e. in MZoep;cyc mutants), and the signaling ranges in both double mutants were comparable to that observed in the MZoep single mutant (Figure 2—figure supplement 1). We note that long-range Nodal signaling in oep mutants does not reflect residual Nodal signaling between Mvg1 sensor cells, as signaling intensity was independent of sensor cell density (Figure 2—figure supplement 2). Although endogenous Nodal ligands have not been detectable to date and the sensor assay is the most sensitive reporter for signaling by Nodal ligands, we ectopically expressed GFP-tagged Squint in a transplanted clone of source cells. Direct ligand visualization also revealed an expanded range of secreted Nodal in MZoep mutants compared to wild type (Figure 2—figure supplement 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig2-v2.jpg)
+
+**Figure 2.:** (A-C) Sensor cell assay and gradient quantifications in (A) wild type, (B) MZoep, and (C) lft1-/-;lft2-/- embryos. Mvg1 sensor cells were marked with GFP (yellow) and transplanted to the margin of host embryos. Nodal signaling activity is measured by α-pSmad2 immunostaining (magenta). YSL boundaries are marked with dashed curves and sensor cell boundaries are outlined in solid white in all α-pSmad2 panels. Gradient quantifications for each experiment are below images; host and sensor cell staining intensities are plotted as blue and red points, respectively. Sliding window averages are plotted as solid curves. Plots for wild type, MZoep, and lft1-/-;lft2-/- backgrounds were derived from 8, 10, and 8 replicate embryos, respectively. Decay parameters for single-exponential model fits (±95% confidence bounds) are −0.02 ± 0.004 μm−1,–0.007 ± 0.002 μm−1 and −0.013 ± 0.002 μm−1 for wild-type, MZoep and lft1-/-;lft2-/ hosts, respectively. (D) Left panel; Mvg1 sensor cells (yellow) were transplanted directly to the animal pole of a wild-type host. The endogenous Nodal signaling gradient is visible at the embryonic margin (magenta). White box highlights region expanded for detail view in right panel. Right panel; Nodal signaling activity is absent in both host and sensor cells. (E) Left panel; Mvg1 sensor cells (yellow) were transplanted to the animal pole of an MZoep embryo. Nodal signaling is absent at the embryonic margin. White box highlights region expanded in the right panel. Right; sensor cells detect Nodal at the animal pole (magenta).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** To test whether Cyclops and Squint spread over a long range in the absence of Oep, we generated MZoep;cyc and MZoep;sqt double mutants and performed sensor cell assays. (A) Squint signals over a long range in the absence of Oep. Representative sensor cell assays for MZoep;cyc+/+ (left), MZoep;cyc+/- (middle) and MZoep;cyc-/- (right) are presented. Mvg1 sensor cells are marked with α-GFP immunostaining (yellow), and sensor cell boundaries are outlined in white in the α-pSmad2 images (magenta). YSL boundaries are marked with a white dashed curve in all images. (B) Quantification of Nodal signaling in sensor (red) and host cells (green) in MZoep;cyc double mutant embryos. Host cells lack oep, and so represent immunostaining background. A pSmad2 gradient from a wild-type embryo was quantified and plotted in each panel for comparison (blue). Gradients for MZoep;cyc+/+ (left), MZoep;cyc+/- (middle) and MZoep;cyc-/- (right) were derived from 2, 2 and 3 replicate embryos, respectively. Sliding window averages are plotted as solid curves. (C) Cyclops signals over a long range in the absence of Oep. Representative sensor cell assays for MZoep;sqt+/+ (left), MZoep;sqt+/- (middle) and MZoep;sqt-/- (right) are presented. Mvg1 sensor cells are marked with α-GFP immunostaining (yellow), and sensor cell boundaries are outlined in white in the α-pSmad2 images (magenta). (D) Quantification of Nodal signaling in sensor (red) and host cells (green) in MZoep;sqt double mutant embryos. Host cells lack oep, and so represent immunostaining background. Gradients for MZoep;sqt+/+ (left), MZoep;sqt+/- (middle) and MZoep;sqt-/- (right) were derived from 4, 3, and 5 replicate embryos, respectively. Sliding window averages are plotted as solid curves.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Our transplantation procedure leads to random variation in the number and position of sensor cells in host embryos. We therefore investigated whether clustering (i.e. variation in the number of nearby sensor cells) affects the behavior of each sensor. The data presented in this figure derive from the Mvg1 to MZoep sensor cell experiment of main text Figure 2B. (A) Definition of neighboring cells. For each sensor cell (center of dashed circle), sensor cells within a 30 μm radius (area within dashed circle) are counted as neighbors. (B) Illustration of pSmad2 staining residual using main text Figure 2B. We define the pSmad2 staining residual for each sensor as the difference between its observed staining intensity and the expected intensity given its distance from the Nodal source. In this illustration, the residual for the highlighted sensor cell (large red point) is the vertical distance (arrow) to the sliding window average of all sensor cells (red curve). Host cell staining intensities are depicted as blue points. (C) Neighbor number does not influence pSmad2 staining residual. Scatter plot of the number of sensor cells within a 30 μm radius against pSmad2 staining residual. Each point represents a sensor cell, and the figure pools sensors from 10 host embryos. The least-squares linear fit is plotted (red line, R2 = 0.003). If Nodal sensitivity increased or decreased with the number of nearby sensors, the plot would show an increasing or decreasing trend, respectively. (D) Sensor behavior is independent of total number of transplanted cells. The total number sensors transplanted into each MZoep host embryo is scattered against the average pSmad2 staining residual for all sensors in that embryo. The least-squares linear fit is plotted (red line, R2 = 0.009). If Nodal sensitivity increased or decreased with the total number of transplanted cells, the plot would show a clear positive or negative trend, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Measurement of Squint-sfGFP gradients generated by transplanted source cells. Donor embryos were injected with 250 pg sqt-sfgfp mRNA and Alexa-647 dextran at the one-cell stage. At sphere stage, cells from the animal pole of donor embryos were transplanted to the animal pole of wild-type (top), MZoep (middle), or MZoep embryos injected with an excess of oep mRNA at the one-cell stage. Gradients were visualized in grafted embryos by confocal microscopy 100 min after transplantation. Images are maximum intensity projections of 15 consecutive confocal slices. White contours mark source boundaries as determined by segmentation of Alexa-647 channel images. (B) Quantification of Squint-sfGFP gradients created by ectopic sources. Average GFP intensities at each position were compiled from maximum intensity projections and normalized to the intensity adjacent to the source. Gradients from wild-type (blue), MZoep (red) and oep-injected MZoep (green) embryos were compiled from 9, 8, and 11 grafted embryos, respectively. Error bars denote the standard error of the mean at each position. (C) Exponential fits for gradients in wild-type (blue), MZoep (red), and oep-injected MZoep (green) hosts are plotted. Dashed contours indicate 95% confidence intervals for each exponential fit. Experimental data for each condition are scattered as points in the corresponding color. (D) Comparison of exponential fit parameters for wild-type (blue), MZoep (red), and oep-injected MZoep (green) host embryos. Error bars denote 95% confidence intervals.
+
 In summary, the sensor assays reveal a remarkable gradient expansion in MZoep mutants when compared with the effect of other mutations that alter Nodal signaling range. For example, the expansion of the signaling gradient in lefty1;lefty2 mutant embryos, which lack negative feedback on Nodal signaling (Rogers et al., 2017; Figure 2C), is mild compared to our observations in MZoep embryos (Figure 2B,C). These results demonstrate that receptor complexes play key roles in constraining the spread of Nodal signals from the YSL.
 
-## Oep regulates the range and intensity of Nodal signaling through ligand capture
+### Oep regulates the range and intensity of Nodal signaling through ligand capture
 
 EGF-CFC proteins such as Oep are typically regarded as permissive factors for Nodal signaling. Oep facilitates the assembly of receptor-ligand complexes but is not thought to regulate signaling beyond conferring competence (Zhang et al., 1998). However, our finding that Nodal ligand range is expanded in the absence of Oep suggests that it has unappreciated regulatory roles. The simplest way to accommodate this result is to stipulate that Oep levels set the rate of capture of diffusing Nodal ligands. Through this mechanism, Oep could control the range of Nodal activity by regulating the rate of receptor-mediated ligand internalization (i.e. the effective ligand degradation rate). This model makes two testable predictions. First, increasing Oep levels should enhance cell sensitivity to Nodal ligands by facilitating capture by receptor complexes. Second, increasing Oep levels should reduce the range of Nodal signaling by increasing the effective degradation rate.
 
 To test whether Oep regulates cell sensitivity, we asked whether overexpressing oep in sensor cells increases their responsiveness to endogenous Nodals. We transplanted cells from Mvg1 embryos injected with oep and gfp mRNAs or with gfp alone to the margin of wild-type embryos and immunostained for GFP and pSmad2. Sensors with increased Oep levels stained more brightly for pSmad2 than neighboring host cells (Figure 3B), while sensors injected with gfp alone matched the behavior of their neighbors (Figure 3A). Interestingly, we found that the oep-overexpressing sensors detected Nodal further from the margin than the host cells, suggesting that the Nodal ligand gradient extends beyond the domain of detectable signaling in normal embryos (Figure 3B). We note that the increased sensitivity of the oep-overexpressing sensors does not reflect the action of hyperactive-positive feedback on Nodal production, as Mvg1 cells are incapable of producing functional Nodal-Vg1 heterodimers. These results suggest that, in addition to being required for signaling competence, Oep regulates sensitivity to Nodal ligands.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Oep overexpression increases sensitivity to Nodal ligands. (A) Upper panel: control transplant of GFP-marked Mvg1 sensor cells (yellow) to the margin of wild-type hosts. Nodal signaling activity was measured by α-pSmad2 immunostaining (magenta). In all panels, YSL boundaries are marked with dashed white curves, and sensor cells have been outlined in solid white in all α-pSmad2 panels. Lower panel: quantification of Nodal signaling in sensor (red) and host cells (blue) across replicate embryos. Sliding window averages are plotted as solid curves. Plot was derived from eight replicate embryos. (B) Upper panel: transplant of sensor cells from an Mvg1 donor injected with gfp and 110 pg oep mRNA at the one-cell stage to the margin of wild-type hosts. Sensor cells (yellow) exhibit enhanced Nodal signaling activity (magenta) compared to their host-derived neighbors. Lower panel; staining of host (blue) and sensor (red) cells was quantified as in (A). Plot was derived from nine replicate embryos. (C-D) Oep overexpression restricts Nodal spread. (C) Upper panel: sensor cell measurement of the Nodal gradient in MZsmad2 embryos. Mvg1 sensor cells were marked with GFP (yellow), and Nodal signaling activity was measured by α-pSmad2 immunostaining (magenta). Lower panel: quantification of Nodal signaling in sensor (red) and host cells (blue) was quantified as in (A). Plot was derived from nine replicate embryos. (D) Upper panel: Mvg1 sensor cell measurement of the Nodal signaling gradient in MZsmad2 hosts injected with 110 pg oep mRNA at the one-cell stage. Lower panel; gradients were quantified as in (A). Plot was derived from nine replicate embryos.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Direct visualization of long-range spread of Nodal ligand was carried out using a modified sensor cell assay in host embryos producing Vg1-HaloTag and Squint in the YSL. Sensor cells from a wild-type donor embryo injected with 110 pg oep mRNA were transplanted to the animal pole of host embryos injected with vg1-halotag and squint mRNAs in the YSL. Sensor cells producing extra Oep were used to enhance the sensitivity of the assay, akin to previous morphotrap studies (Stapornwongkul et al., 2020; Almuedo-Castillo et al., 2018; Harmansa et al., 2017; Harmansa et al., 2015). The experiment compared wild-type hosts (left), MZoep hosts (middle), or MZoep hosts injected with 110 pg oep mRNA at the one-cell stage (right). HALO-tagged ligands were labeled by staining with Janelia Fluor 646 Halo ligand. Sensor cells were transplanted to the animal pole of labeled host embryos after 1 hr of staining (approximately sphere stage). Loss of oep results in increased accumulation of tagged ligand at the animal pole. (B) Quantification of ligand accumulation in sensor cells. Sensors were manually segmented and average Janelia Fluor 646 channel pixel intensities were calculated. Each point represents a single sensor cell. Violin plots depict the median (white circle) and 25–75 percentile ranges (grey line). Asterisks denote statistical significance of median comparisons between indicated samples (Wilcoxon rank-sum test).
+
 To test whether Oep levels modulate Nodal range, we asked whether overexpression of oep could restrict signaling. We performed sensor cell assays in MZsmad2 hosts injected with oep mRNA at the one-cell stage. Overexpression of Oep indeed reduced the range and intensity of Nodal signaling (Figure 3D) when compared with uninjected hosts (Figure 3C). We note that the choice of MZsmad2 hosts was important for interpretation of the experiment. As Oep sensitizes cells to Nodal ligands, increasing expression in signaling-competent host embryos could lead to increased signaling by triggering Nodal positive feedback. Nodal signaling is disabled downstream of the receptor in MZsmad2 mutants, allowing us to specifically test Oep’s role in regulating ligand range without this confound.
 
 To further test the idea that Oep restricts Nodal spread, we analyzed the distribution of fluorescently-tagged Squint in embryos expressing excess oep. In the first experiment, we visualized the range of Squint-sfGFP gradients generated by transplanted source cells in hosts lacking oep (MZoep) and hosts overexpressing oep (MZoep injected with oep mRNA). Consistent with our sensor cell results, overexpression of oep resulted in marked shortening of the Squint-sfGFP gradient relative to MZoep (Figure 2—figure supplement 3). In a second experiment, we expressed Halo-tagged Vg1 and Squint in the YSL and monitored their accumulation in sensor cells (Figure 3—figure supplement 1). Embryos producing tagged ligands were generated by injecting mRNAs encoding vg1-halotag and squint directly into the YSL shortly after its formation (1k-cell stage). To concentrate and clearly visualize the Halo-tagged ligand, we transplanted sensor cells from a donor embryo injected with oep mRNA to the animal pole, akin to a morphotrap approach (Stapornwongkul et al., 2020; Almuedo-Castillo et al., 2018; Harmansa et al., 2017; Harmansa et al., 2015). Halo-tagged ligand accumulated in the animal pole sensors in MZoep hosts but not in wild-type hosts. This accumulation was prevented by overexpressing oep in the MZoep hosts. Together, these results indicate that Oep regulates both the range and intensity of Nodal signaling.
 
-## A simple model incorporating Oep-Nodal interaction reproduces experimental observations
+### A simple model incorporating Oep-Nodal interaction reproduces experimental observations
 
 We formulated a simple mathematical model of Nodal gradient formation to explore whether Oep-mediated capture of diffusing Nodal ligands is sufficient to explain our experimental data (Figure 4A). In the model, Nodal is secreted at a constant rate at one end of a two-dimensional tissue and diffuses freely until it is captured by a free receptor complex. We stipulate that ligand-receptor association follows pseudo first-order kinetics (i.e. that the free receptor concentration can be regarded as constant) and that internalization of receptor-ligand complexes is also first-order. To track integration of signaling activity, we also incorporate phosphorylation of Smad2 with a rate proportional to ligand-receptor complex concentration. Where possible, parameter values were taken from the literature. Model details and a summary of the rates used in simulations are presented in Supplementary file 1.
 
@@ -72,9 +108,17 @@ We formulated a simple mathematical model of Nodal gradient formation to explore
 
 This simple model reproduces a signaling gradient with a scale and shape consistent with our observations in wild-type embryos (Figure 4B). To reproduce our experimental data, we simulated sensor cell assays (Figure 4B–D, sensor cells highlighted with white outlines). Expansion of the Nodal ligand gradient in MZoep mutants can be reproduced by simulating ‘hosts’ with the receptor concentration set to zero (Figure 4C). Similarly, restriction of signaling range via oep overexpression could be reproduced by increasing receptor levels in host cells, but not in the sensors (Figure 4D). A model in which Nodal capture rate is set by Oep concentration can therefore reproduce our major experimental findings.
 
-## Loss of Oep replenishment transforms nodal signaling dynamics
+### Loss of Oep replenishment transforms nodal signaling dynamics
 
 The simplified model presented above assumes that free receptor cannot be depleted by ligand binding. While convenient, this condition may be difficult for the embryo to achieve in practice. For example, maintaining receptors at high concentration would preclude depletion but could also prevent ligand from traveling long distances before capture. Another way for the embryo to avoid depletion would be to continually replace receptor components as they are consumed by ligand binding. To explore the role of receptor complex replacement in gradient formation, we explicitly incorporated receptor production and degradation into the model (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of model incorporating production and consumption of receptors. Simulations presented here were performed on a one-dimensional tissue with length 300 μm. Oep replacement is assumed to be constant with rate k3, and Oep removal reflects a combination of constitutive and ligand-dependent endocytosis. In panels A and B, simulations are presented as kymographs; each image column shows the state of the system with the source at the bottom and animal pole at the top. Time proceeds from left to right. (B) Simulation of a wild-type gradient. With continual receptor replacement, the system achieves an exponential steady state gradient with length scale set by the ligand diffusion rate and receptor abundance. The free ligand, free receptor, and receptor-ligand complex concentrations are plotted from left to right in red, cyan, and magenta, respectively. (C) Simulation of gradient formation in a zygotic oep mutant. Simulation details are identical to (B), but with receptor replacement rate (k3) set to zero. The system fails to establish a steady state due to gradual consumption and degradation of receptors. Over time, the Nodal ligand gradient expands (red) to drive a propagating wave of signaling activity (i.e. receptor occupancy, magenta). (D) Time course of Nodal signaling activity in wild-type embryos. Representative α-pSmad2 (magenta) and DAPI (cyan) are shown for dome, 50% epiboly and shield stages (left, middle and right panels, respectively). Compilation of signaling gradients across replicates (far right) shows the establishment of the signaling gradient. Composite gradients were derived from 5, 6, and 6 replicate embryos for dome, 50% epiboly and shield stages, respectively. (E) Time course of Nodal signaling activity in zygotic oep mutants. Over time, the signaling pattern evolves from a gradient (dome stage) to a band displaced far from the margin (shield) as the wave travels outward. Compilation of signaling gradients across replicates (far right) illustrates the outward propagation of signaling. Composite gradients were derived from 7, 6, and 3 replicate embryos for dome, 50% epiboly, and shield stages, respectively. (F) Time course of Nodal signaling activity in zygotic oep mutants presented with pixel scaling equal to that used in (D). In accord with simulations, the wave of signaling propagates with a lower intensity than signaling at the margin of wild-type embryos.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54894/elife-54894-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of model incorporating endocytic trafficking of Nodal receptors. Simulations presented here were performed on a one-dimensional tissue with length 300 μm. New Oep is added to the surface with at constant rate k3, and Oep is internalized via constitutive endocytosis of both bound and unbound receptors. Unbound receptors can be recycled to the surface or degraded. Ligand-bound receptors are not recycled. In panels B and C, simulations are presented as kymographs; each image column shows the state of the system with the source at the bottom and animal pole at the top. Time proceeds from left to right. (B) Simulation of a wild-type gradient. With continual receptor replacement, the system achieves a steady state gradient with length scale set by the balance between ligand diffusion and capture. The free ligand, free receptor and receptor-ligand complex concentrations are plotted from left to right in red, cyan and magenta, respectively. (C) Simulation of gradient formation in a zygotic oep mutant. Simulation details are identical to (B), but with receptor replacement rate (k3) set to zero. The system fails to establish a steady state due to gradual consumption and degradation of receptors. As observed in the model presented in the main text, the Nodal ligand profile expands (red) to drive a propagating wave of signaling activity (magenta).
 
 Simulations incorporating receptor production and consumption generate stable exponential gradients (Figure 5B) with length scales comparable to our measurements in zebrafish embryos. To test the consequences of losing co-receptor replacement, we simulated gradient formation in a system that begins with a finite supply of free receptors that are not replaced. This change results in a surprising transformation of Nodal signaling dynamics; simulations with finite co-receptor supply generate a traveling wave of Nodal signaling that propagates outward from the ligand source (Figure 5C, magenta). These dynamics reflect the gradual consumption of co-receptors due to ligand binding and subsequent endocytosis (Figure 5C, cyan). Initially, when co-receptor is plentiful, the source generates a decaying gradient of signaling. Over time, receptors close to the source are depleted, allowing Nodal ligands to rapidly traverse this space, ultimately reaching a new population of sensitive cells. We note that wave formation does not critically depend on our assumptions regarding the mechanism of co-receptor downregulation; a model that incorporates Oep trafficking and recycling also supports our key conclusions (Figure 5—figure supplement 1). In sum, these simulations raise the possibility that co-receptor replenishment is a key determinant of the Nodal gradient shape.
 
@@ -102,37 +146,299 @@ The surprising dispensability of positive feedback for gradient formation parall
 
 ## Materials and methods
 
-## Genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>oep (tdgf1)</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990415–198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ndr1 (sqt)</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990415–256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ndr2 (cyc)</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990415–181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>smad2</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990603–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>vg1 (gdf3)</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-980526–389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>lft1</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990630–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>lft2</td>
+      <td>ZFIN</td>
+      <td>ZDB-GENE-990630–11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB</td>
+      <td>ZIRC</td>
+      <td>ZDB-GENO-960809–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>TL</td>
+      <td>ZIRC</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>oeptz57</td>
+      <td>Hammerschmidt et al., 1996</td>
+      <td>RRID:ZDB-ALT-980203-1256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>sqttcz35</td>
+      <td>Feldman et al., 1998</td>
+      <td>RRID:ZDB-ALT-000913-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>cycm294</td>
+      <td>Sampath et al., 1998</td>
+      <td>RRID:ZDB-ALT-980203-609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>smad2vu99</td>
+      <td>Dubrulle et al., 2015</td>
+      <td>RRID:ZDB-ALT-150807-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>vg1a165</td>
+      <td>Montague and Schier, 2017</td>
+      <td>RRID:ZDB-ALT-180515-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>lft1a145</td>
+      <td>Rogers et al., 2017</td>
+      <td>RRID:ZDB-ALT-180417-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>lft2a146</td>
+      <td>Rogers et al., 2017</td>
+      <td>RRID:ZDB-ALT-180417-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJZoepFlag1-2</td>
+      <td>Zhang et al., 1998</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SV40NLS-sfgfp in pCS2+</td>
+      <td>Gift from Dr. Jeffrey Farrell</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sqt-sfGFP in pCS2+</td>
+      <td>Montague and Schier, 2017</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>vg1-halotag in pCS2+</td>
+      <td>This study</td>
+      <td>Plasmid can be obtained by reaching out to N.L.</td>
+      <td>Template for in vitro transcription.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sqt in pCS2+</td>
+      <td>Müller et al., 2012</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-smad2/3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#18338</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken monoclonal)</td>
+      <td>Aves Labs</td>
+      <td>(RRID:AB_2307313)</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eCdh1 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610181 (RRID:AB_397580)</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat α-rabbit Alexa 647 conjugate (goat monoclonal)</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>A-21245 (RRID:AB_2535813)</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat α-chicken Alexa 488 (goat monoclonal)</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>A-11039 (RRID:AB_142924)</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat α -mouse IgG (H + L)-Alexa 488 (goat monoclonal)</td>
+      <td>Thermo-Fisher</td>
+      <td>A-32723 (RRID:AB_2633275)</td>
+      <td>1:750 dilution</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pronase</td>
+      <td>Millipore Sigma</td>
+      <td>53702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine Sp6 kit</td>
+      <td>Thermo-Fisher</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E.Z.N.A. Cycle Pure</td>
+      <td>Omega Bio-Tek</td>
+      <td>D6492-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E.Z.N.A. Total RNA Kit I</td>
+      <td>Omega Bio-Tek</td>
+      <td>R6834-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>kDa Alexa488-dextran conjugate</td>
+      <td>Thermo-Fisher</td>
+      <td>D34682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Janelia Fluor HaloTag Ligand 646</td>
+      <td>Promega</td>
+      <td>GA1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>ImageJ/FIJI</td>
+      <td>RRID:SCR_002285</td>
+      <td>Image Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Image Analysis, Simulations</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genotyping
 
 Genomic DNA was isolated via the HOTSHOT method from either excised adult caudal fin tissue or individual fixed embryos (Meeker et al., 2007). Genotyping was carried out via PCR under standard conditions followed by restriction enzyme digest when appropriate. For brevity, allele designations were omitted in the rest of the text. lefty1a145: The lefty1a145 allele contains a 13-base-pair deletion that destroys a PshAI restriction site and was detected as in Rogers et al., 2017. lefty2a146: The lefty2a146 allele contains an 11-base-pair deletion and was detected as described (Rogers et al., 2017). squintcz35 : The squintcz35 allele contains a ~ 1.9 kb insertion and was detected as in Feldman et al., 1998. cyclopsm294 : The cyclopsm294 allele contains a single nucleotide polymorphism (SNP) that destroys an AgeI restriction site and was detected as described (Sampath et al., 1998). oeptz57 : The oeptz57 allele contains a SNP that introduces a Tsp45I restriction site (Zhang et al., 1998; Hammerschmidt et al., 1996). The allele was detected via PCR amplification with primers AC102 and AC103 flanking the SNP followed by Tsp45I digestion overnight. A wild-type allele yields an undigested band of 285 bp, while a mutant allele yields bands of 140 bp and 145 bp. vg1a165 : The vg1a165 allele contains a 29 bp deletion and was detected as described (Montague and Schier, 2017). smad2vu99: The smad2vu99 allele contains a SNP that introduces a BtsCI restriction site (Dubrulle et al., 2015). The allele was detected via PCR amplification with primers NL-89 and NL-91 flanking the SNP followed by BtsCI digestion overnight. A wild-type allele yields an undigested band of 298 bp, while a mutant allele yields bands of 221 bp and 77 bp.
 
-## Zebrafish husbandry and fish lines
+### Zebrafish husbandry and fish lines
 
 Fish were maintained per standard laboratory procedures (Westerfield, 1993). Embryos were raised at 28.5°C in embryo medium (250 mg/L Instant Ocean salt, 1 mg/L methylene blue in reverse osmosis water adjusted to pH seven with NaHCO3) and staged according to a standard staging series (Kimmel et al., 1995). Wild-type fish and embryos represent the TLAB strain. Lefty1, lefty2, squint, cyclops, oep, and vg1 mutant fish were maintained as previously described (Montague and Schier, 2017; Rogers et al., 2017; Zhang et al., 1998; Feldman et al., 1998; Sampath et al., 1998). Cyc+/-;oep-/-, and sqt+/-;oep-/- double mutants were generated by incrossing cyc+/-;oep+/- or sqt+/-;oep+/- respectively and rescuing them with an injection of 55 pg oep mRNA at the one-cell stage. Smad2-/- germline carrier fish were obtained by germline transplantation, using Smad2+/- incross progeny as germ cell donors (Ciruna et al., 2002). Germline carrier embryos were obtained by either incrossing EK fish or crossing dmrt1E3ins-/- female fish to dmrt1E3ins-/+ male fish. The dmrt1E3ins-/- and dmrt1E3ins-/+ fish were gifts from Kaitlyn A. Webster/Kellee R. Siegfried and were used with the intent of biasing germline carriers to female adult fates (Webster et al., 2017).
 
 For experiments shown in the text, mutant embryos were derived as follows: MZoep embryos were obtained by crossing oep-/- adults; Zoep embryos were obtained by crossing oep ± females with oep-/- males (see genotyping below); MZsmad2 embryos were obtained by crossing smad2-/- germline carrier adults; Mvg1 embryos were obtained by crossing vg1-/- females with TLAB males; lft1-/-;lft2-/- embryos were obtained by crossing lft1-/-;lft2-/- adults; sqt+/+;MZoep, sqt+/-;MZoep, and sqt-/-;MZoep embryos were obtained by crossing sqt+/-;oep-/- adults; cyc+/+;MZoep, cyc+/-;MZoep, and cyc-/-;MZoep embryos were obtained by crossing cyc+/-;oep-/- adults.
 
-## mRNA synthesis and microinjection
+### mRNA synthesis and microinjection
 
 pCS2 +vectors containing the CDS of either SV40NLS-sfgfp or oep were linearized with NotI and subsequently purified with the E.Z.N.A. Cycle Pure (Omega) kit. Purified templates were transcribed using the mMESSAGE mMACHINE SP6 (Invitrogen/Thermo Fisher Scientific) kit, and the resulting gfp and oep capped mRNAs were purified with the E.Z.N.A. Total RNA Kit I (Omega). Capped mRNA concentrations were evaluated via NanoDrop (Thermo Fisher Scientific) spectrophotometry. Kits were used per manufacturer’s respective protocols.
 
-## Sensor cell transplant experiments
+### Sensor cell transplant experiments
 
 Mvg1 sensor donors were injected with either 1 nl of 55 pg/nl gfp mRNA or 1 nl of 55 pg/nl gfp mRNA +110 pg/nl oep mRNA (Figure 3B) at the one-cell stage. MZsmad2 +oep hosts (Figure 3D) were injected with 1 nl of 110 pg/nl oep mRNA at the one-cell stage. Prior to injection, both donor and host embryos were enzymatically dechorionated using 1 mg/ml Pronase (Millipore Sigma). After injection, embryos were raised at 28.5°C in 1% agarose-coated plastic dishes in embryo medium. At high stage, donor and host embryos were placed in 1X Danieau’s buffer, and ~5–10 blastomeres were transplanted from the animal pole of donor embryos to the margin of host embryos, unless specified otherwise. After transplantation, host embryos were returned to embryo medium and raised to 50% epiboly at 28.5°C before fixation.
 
-## α-pSmad2 immunostaining
+### α-pSmad2 immunostaining
 
 The protocol was modified from Rogers et al., 2017. Briefly, embryos were fixed in 4% formaldehyde overnight at 4°C in 1x PBSTw (1x PBS + 0.1% (v/v) Tween 20), washed in 1x PBSTw, dehydrated in a MeOH/PBST series (25%, 50%, 75%, and 100% MeOH), and stored at −20°C until staining. Embryos were rehydrated in a MeOH/PBSTr (1x PBS + 1% (v/v) Triton X-100) series (75%, 50%, and 25% MeOH), washed 3x in PBSTr, and manually de-yolked. Embryos were then incubated for 2 hr at room temperature (RT) in antibody binding buffer (PBSTr +1% (v/v) DMSO) before overnight incubation with 1:1000 α-pSmad2 antibody (Cell Signaling Technology #18338) and, when required, 1:1000 α-GFP antibody (Aves Labs AB_2307313) in antibody binding buffer at 4°C. After 1° antibody incubation, embryos were washed 6X with PBSTr before a 30 min RT incubation in antibody binding buffer. Embryos were then incubated in 1:2000 goat α-rabbit Alexa 647 conjugate (ThermoFisher A-21245) and, when required, 1:2000 goat α-chicken Alexa 488 conjugate (ThermoFisher A-11039) in antibody binding buffer. Embryos were then washed 6X with PBSTr and 1X PBSTw respectively before a 30 min RT incubation with DAPI. Embryos were washed 3X in PBSTr before dehydration in a MeOH/PBSTw series (50% and 100% MeOH). Embryos were stored at −20°C in MeOH until imaging.
 
-## Embryo clearing and imaging
+### Embryo clearing and imaging
 
 Embryos were first cleared in 2:1 benzyl benzoate:benzyl alcohol (BBBA) (Yokomizo et al., 2012). After clearing, embryos were mounted in BBBA in individual wells of a 15-well multitest slide (MP Biomedicals). Mounting was performed under a Zeiss Stemi 2000 stereoscope fitted with a Nightsea adaptor system with UV filters and light head to enable embryo visualization. Embryos were then cracked with forceps before placement of a #1.5 coverslip, approximately flattening the embryos. The coverslip was secured with adhesive tape before imaging on a Zeiss LSM-700 inverted confocal microscope.
 
-## smFISH probe synthesis
+### smFISH probe synthesis
 
 Single-molecule fluorescent in situ hybridization (smFISH) probes against the coding sequences of cyclops and squint were designed using the Stellaris Probe Designer, with oligo length 18–22 bp and minimum spacing length two nucleotides. Probes were then checked for cross-reactivity between orthologs (probes with <4 mismatches were discarded) and ordered with 3’ C7 amino group modifications (IDT). Thirty-nine probes against cyclops and 44 against squint were purchased. Probe libraries for each gene were pooled, dehydrated in a Speedvac, and resuspended in water at a concentration of 1 mM. Probes were then coupled to Atto-647N NHS ester (Millipore Sigma #18373) per supplier protocol and purified with the Zymo Oligo Clean and Concentrator kit. Probe concentration was then determined using NanoDrop (Thermo Fisher Scientific) spectrophotometry.
 
-## smFISH staining and imaging
+### smFISH staining and imaging
 
 The smFISH staining protocol is modified from previous reports (Oka and Sato, 2015; Stapel et al., 2016). Briefly, embryos were fixed in 4% formaldehyde overnight at 4°C in 1x PBSTw (1x PBS + 0.1% (v/v) Tween 20), washed in 1x PBSTw, dehydrated in a MeOH/PBST series (50% and 100% MeOH), and stored at −20°C until staining. Embryos were rehydrated in a MeOH/PBSTw (50% and 100% PBSTw) series before manual deyolking. Embryos were then incubated in pre-hybridization buffer (preHB) (10% formamide, 2x SSC, 0.1% (v/v) TritonX-100), 0.02% (w/v) BSA, and 2 mM ribonucleoside-vanadyl complex (NEB) for 30 min at 30°C before overnight incubation with 10 nM probes in hybridization buffer (10% (w/v) dextran sulfate (MW 500,000) in preHB) at 30°C in the dark. After staining, embryos were washed 2 × 30 min at 30°C in hybridization wash solution (10% (v/v) formamide, 2x SSC, 0.1% (v/v) Triton X-100) before a brief wash in 2x SSC +0.1% (v/v) Tween-20. Finally, embryos were incubated for 20 min at 30°C in 0.2X SSC before a 15-min incubation in DAPI and 2 × 2 x SSC +0.01% Tween washes.
 
@@ -140,17 +446,17 @@ For membrane staining, 1:100 α-eCdh1 antibody (BD Biosciences #610181) was adde
 
 For mounting, embryos were kept in 2X SSC, cut from the margin to the animal pole with a scalpel, and mounted in 2X SSC on a standard glass slide between two double-sided adhesive tape bridges (3M Scotch). A #1.5 coverslip then approximately flattens the embryo and is secured in place by the adhesive tape. Mounted embryos were then imaged on a Zeiss LSM-880 inverted confocal using the Airyscan detector.
 
-## Image segmentation
+### Image segmentation
 
 Staining intensities for individual nuclei were compiled for Figures 1–3. Nuclei were segmented from DAPI channel images using a custom pipeline implemented in MATLAB as described previously (Rogers et al., 2017). Before segmentation, each image stack was manually inspected to identify acceptable z-bounds. Lower bounds were chosen to exclude internal YSL nuclei from the segmentation. Briefly, for each slice, out-of-plane background signal was approximated by blurring adjacent Z-slices with a Gaussian smoothing kernel and subtracted. Nuclei boundaries were identified using an adaptive thresholding routine (http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm). Spurious objects were discarded by morphological filtering (area threshold followed by image opening with a disc-shaped structuring element).
 
 Three-dimensional objects were compiled from the two-dimensional segmentation results with a simple centroid-matching scheme. A disc of diameter five pixels was defined centered at the centroid of each two-dimensional object, and three-dimensional objects were identified by object labeling with a 6-connected neighborhood. Intuitively, this procedure matches objects whose centroids are separated by <10 pixels (i.e. twice the disc diameter used prior to object matching). Objects that fail to span at least 2 Z-slices were discarded. Fluorescence intensities in the DAPI, GFP and pSmad2 channels were compiled as average pixel intensities within the three-dimensional segmentation boundaries.
 
-## Genotyping of Zoep, cyc;oep, and sqt;oep mutant embryos
+### Genotyping of Zoep, cyc;oep, and sqt;oep mutant embryos
 
 Crosses leading to homozygous Zoep, cyc;oep, and sqt;oep mutant embryos were generated from non-homozygous parents. Specifically, Zoep embryos were generated by crossing an oep-/- male against a oep+/- female; cyc;oep embryos were generated from a cross between cyc+/-;oep-/- parents; sqt;oep embryos were generated from a cross between sqt+/-;oep-/- parents. To identify the genotype of embryos used for imaging, each embryo was manually cut into halves (i.e. through the animal pole) with a clean scalpel after pSmad2 immunostaining. One half of the embryo was dehydrated for clearing and imaging (as described in the α-pSmad2 immunostaining methods section), and the other was used for genomic DNA preparation and genotyping. Genotyping was carried out for each mutation as summarized above. For Zoep staining, genotyping was carried out as described for 30% epiboly and 50% epiboly stages; this revealed that Zoep embryos could be clearly identified by average staining intensity. Shield-stage Zoep embryos were identified by staining intensity.
 
-## Sensor cell identification and gradient quantification
+### Sensor cell identification and gradient quantification
 
 All gradient quantifications in Figures 1–3 plot nuclear staining intensity as a function of distance from the embryonic margin. Because the margin boundary is curved in our flat mounts, these distances are not a simple function of position within the image. A semi-automated routine was therefore implemented in MATLAB to calculate the distance from the margin for each nucleus. In brief, the YSL-embryo boundary was manually identified and drawn using maximum intensity projections of the DAPI channel. This boundary was then converted into a binary mask and a distance transform was applied. After the distance transform, every pixel in the image adopts a value equal to its distance to the closest non-zero pixel (i.e. the margin contour); the distance from the margin for each nucleus was defined as the pixel intensity of the distance transform image at the corresponding centroid position.
 
@@ -158,7 +464,7 @@ In order to quantify the gradients in Nodal-insensitive host embryos, sensor cel
 
 After calculation of GFP staining status and distance from the margin for each nucleus, average gradients were compiled. To facilitate comparison between replicate embryos, the pSmad2 staining intensities were normalized to the baseline intensity (i.e. average nuclear intensity of all nuclei falling between 150 and 200 µm) from the margin. After this normalization, data from each embryo were pooled, and average gradients were compiled with a sliding window average (solid curves in quantified gradients in Figures 1–3) with a window size of 20 µm. Due to sparse sampling of the gradients by sensor cells, some statistical fluctuations in average gradient shape are evident (e.g. the ‘hump’ in Figure 2C).
 
-## YSL-specific expression and visualization of Halo-tagged Vg1-Squint heterodimers
+### YSL-specific expression and visualization of Halo-tagged Vg1-Squint heterodimers
 
 In Figure 3—figure supplement 1, visualization of Halo-tagged Vg1-Squint heterodimers was achieved using a modified sensor cell assay. Donor and host embryos were collected in 1X E3 medium at the one-cell stage and immediately dechorionated with 1 mg/ml Pronase (Protease type XIV from Streptomyces griseus, Millipore Sigma). Host embryos for the MZoep +oep mRNA condition were injected with 110 pg oep mRNA at the one-cell stage. Wild-type donor embryos were injected with 110 pg oep mRNA and 0.6 ng of 3 kDa Alexa 488-dextran conjugate (Invitrogen) at the one-cell stage. Sensor cells derived from oep-injected donors were used to enhance the sensitivity of the assay. As increased oep expression improves ligand capture (Figure 2B), fluorescent ligand accumulation was easier to observe using these sensors.
 
@@ -170,7 +476,7 @@ Thirty min before imaging, embryos were removed from HaloTag ligand solution and
 
 Embryos were imaged on a confocal microscope with Olympus IX83 stand, UPL S APO 30x silicon oil objective, Yokogawa CSU-W1 confocal scanner unit, and Hamamatsu ORCA-Fusion camera. Adjacent Z slices were taken with 3 µm spacing.
 
-## Visualization of Squint-sfGFP gradients with transplanted source cells
+### Visualization of Squint-sfGFP gradients with transplanted source cells
 
 In Figure 2—figure supplement 3, ectopic Squint-sfGFP gradients were generated in wild-type, MZoep and oep-overexpressing MZoep hosts using transplanted source cells. This was carried out as described previously (Müller et al., 2012). Briefly, wild-type donors were injected with 250 pg sqt-sfgfp mRNA and 0.2 ng of 10 kDa Alexa647-dextran conjugate (ThermoFisher) at the one-cell stage. MZoep +oep hosts were injected with 110 pg oep mRNA at the one-cell stage. All embryos were stored in 1% agarose-coated plastic plates in 1X E3 medium at 28.5°C after injection.
 
@@ -178,11 +484,11 @@ At sphere stage, embryos were transferred to 1X Ringer’s solution for transpla
 
 Gradients were quantified as previously described (Müller et al., 2012). Briefly, maximum intensity projections comprising 15 consecutive confocal slices were prepared for each embryo. A region of interest adjacent to the transplanted clone (approximately 150 μm long by 40 μm wide) was extracted from each projection image. Average background intensities from ungrafted control embryos were subtracted, fluorescence intensities were averaged within 1 μm bins, and curves were smoothed by sliding window averaging (window size of 5 μm). The resulting curves were sampled every 5 μm. Each curve was normalized to the fluorescence intensity immediately adjacent to the source.
 
-## Kymograph preparation in Figure 5D and E
+### Kymograph preparation in Figure 5D and E
 
 In the experimental section of Figure 5, kymographs were presented that average the behavior of replicate embryos (bars to the right of representative images in Figure 5D and E). To prepare these kymographs, the distance from the margin for each pixel in the maximum intensity projection α-pSmad2 image was calculated as described in the above section. Pixels were then binned by distance from the margin and averaged across embryos to generate the plots in Figure 5. Each vertical bar in the plot was drawn for all of the data from a given stage (from left to right: dome, 50% epiboly and shield). Color scalings were selected for visibility and are not equivalent between the wild-type and Zoep datasets.
 
-## Gradient simulations
+### Gradient simulations
 
 Sensor cell assay simulations were implemented in MATLAB using the PDE toolbox. Simulations were carried out on a two-dimensional rectangular slab (100 × 300 µm) with no-flux boundary conditions. The Nodal source was simulated as a thin strip of tissue (the first 5 µm) that produced Nodal at a constant rate. Sensor cells were simulated as small circular domains with permeable boundaries (6 µm diameter) in which parameters (e.g. presence or absence of free receptors) could be set independently of the rest of the tissue. Simulations were run ~2.5 hr of simulation time in an effort to mimic the normal duration of Nodal gradient spread in zebrafish embryos. Simulations are described in detail in the SI (Reproduction of sensor cell assay with gradient simulations). Plots in Figure 4 depict the entire tissue domain at the conclusion of the simulations.
 

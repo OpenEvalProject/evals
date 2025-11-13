@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.08918.001 Eusociality is a distinct form of biological organization. A key characteristic of advanced eusociality is the presence of non-reproductive workers. Why evolution should produce organisms that sacrifice their own reproductive potential in order to aid others is an important question in evolutionary biology. Here, we provide a detailed analysis of the selective forces that determine the emergence and stability of non-reproductive workers. We study the effects, in situations where the queen of the colony has mated once or several times, of recessive and dominant sterility alleles acting in her offspring. Contrary to widespread belief based on heuristic arguments of genetic relatedness, non-reproductive workers can easily evolve in polyandrous species. The crucial quantity is the functional relationship between a colony’s reproductive rate and the fraction of non-reproductive workers present in that colony. We derive precise conditions for natural selection to favor the evolution of non-reproductive workers. DOI: http://dx.doi.org/10.7554/eLife.08918.001
+Eusociality is a distinct form of biological organization. A key characteristic of advanced eusociality is the presence of non-reproductive workers. Why evolution should produce organisms that sacrifice their own reproductive potential in order to aid others is an important question in evolutionary biology. Here, we provide a detailed analysis of the selective forces that determine the emergence and stability of non-reproductive workers. We study the effects, in situations where the queen of the colony has mated once or several times, of recessive and dominant sterility alleles acting in her offspring. Contrary to widespread belief based on heuristic arguments of genetic relatedness, non-reproductive workers can easily evolve in polyandrous species. The crucial quantity is the functional relationship between a colony’s reproductive rate and the fraction of non-reproductive workers present in that colony. We derive precise conditions for natural selection to favor the evolution of non-reproductive workers.
 
 ## Introduction
 
@@ -49,11 +49,11 @@ We study the evolution of a non-reproductive worker caste in the context of hapl
 
 We analyze the conditions under which a wild-type allele, A, can be invaded by a mutant allele, a, which causes workers to be non-reproductive. Since we consider a loss of function event (the loss of the tendency to produce eggs), it is more likely that the mutation is recessive rather than dominant. Therefore in the main text we present the conditions for a recessive mutant allele. In the Methods, we give derivations and results for both recessive and dominant alleles.
 
-If the mutant allele is recessive, then
+If the mutant allele is recessive, then aa workers are sterile, while AA and Aa workers still lay male eggs. For n matings, there are 3(n + 1) types of mated queens (Figure 1A). We use the notation AAm, Aam, and aam to denote the genotype of the queen and the number, m, of her matings that were with mutant males, a. The parameter m can assume values 0, 1, ..., n. For example, for triple mating (n = 3), an AA2 queen has mated with one A male and two a males.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig1-v2.jpg)
 
-**Figure 1.:** The wild-type allele is A. The mutant allele inducing worker sterility is a. (A) There are three types of virgin queens: AA , Aa, and aa. Each queen mates n times. Of those matings, n − m are with wild-type males (type A) and m are with mutant males (type a). Hence, there are 3(n + 1) types of fertilized queens (colonies). (B) Relative proportions of offspring for each colony type if the mutant allele, a, for worker sterility is recessive. For example, if the queen’s genotype is Aa, then half of her sons are A and the other half are a. We denote this by A + a. If the queen’s genotype is aa and she has mated with both types of males, 0< m < n, then she has both Aa and aa workers (in proportion n − m and m, respectively); her Aa workers produce male eggs, which have an equal proportion of A and a genotypes. (C) Relative proportions of offspring for each colony type if the mutant allele, a, for worker sterility is dominant.DOI: http://dx.doi.org/10.7554/eLife.08918.003
+**Figure 1.:** The wild-type allele is A. The mutant allele inducing worker sterility is a. (A) There are three types of virgin queens: AA , Aa, and aa. Each queen mates n times. Of those matings, n − m are with wild-type males (type A) and m are with mutant males (type a). Hence, there are 3(n + 1) types of fertilized queens (colonies). (B) Relative proportions of offspring for each colony type if the mutant allele, a, for worker sterility is recessive. For example, if the queen’s genotype is Aa, then half of her sons are A and the other half are a. We denote this by A + a. If the queen’s genotype is aa and she has mated with both types of males, 0< m < n, then she has both Aa and aa workers (in proportion n − m and m, respectively); her Aa workers produce male eggs, which have an equal proportion of A and a genotypes. (C) Relative proportions of offspring for each colony type if the mutant allele, a, for worker sterility is dominant.
 
 The genotype of the colony is determined by the genotype of the queen and the sperm she has stored. There are 3(n + 1) types of colonies that need to be considered to formulate the full dynamics. The different colony types, and corresponding offspring with a recessive sterility allele, a, are shown in Figure 1B.
 
@@ -73,11 +73,11 @@ In our analysis, we neglect stochastic effects. This is reasonable if we assume 
 
 A crucial quantity is the functional relationship between the fraction of males produced by the queen, p, and the fraction of non-reproductive workers, z, that are present in a colony. The parameter z can vary between 0 and 1. If z = 0, then there are no non-reproductive workers in the colony. If z = 1, then all workers in the colony are non-reproductive. We denote by pz the fraction of males that come from the queen if the fraction of non-reproductive workers is z. The quantity p0 denotes the fraction of males that come from the queen if there are no non-reproductive workers in the colony. We expect p0 to be less than 1. The quantity p1 denotes the fraction of males that come from the queen if all workers are non-reproductive. Clearly, p1 = 1.
 
-It is natural to assume that
+It is natural to assume that pz is an increasing function of z, but various functional forms are possible. Perhaps the simplest possibility is that pz is a linearly increasing function of z. Intuitively, this means that the fraction, 1 − pz, of male eggs that originate from workers is simply proportional to the fraction, 1 − z, of workers that are reproducing. But there are nonlinear intracolony effects that modulate worker production of male eggs. For example, the queen might efficiently suppress worker reproduction via aggression or removal of worker-laid eggs (Free and Butler, 1959; Michener, 1974; Oster and Wilson, 1978; Fletcher and Ross, 1985), if only a small number of workers attempt to reproduce. If too many workers reproduce, then the queen could be overwhelmed, and her effect on removing worker-laid eggs is diminished. In this equally plausible scenario, the fraction, pz, of male eggs that originate from the queen would be expected to increase sublinearly with the fraction, z, of workers that are sterile. Several sample forms of the function pz are shown in Figure 2A.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig2-v2.jpg)
 
-**Figure 2.:** (A) The function p denotes the fraction of male offspring that come from the queen if a fraction, zz, of the workers are non-reproductive. Therefore, 1 − p is the fraction of male offspring that come from the workers. Clearly, zp should be an increasing function. More workers that are sterile means a larger fraction of males that come from the queen. If all workers are non-reproductive, then all males come from the queen, zp1 = 1. (B) The function r denotes the reproductive rate (or efficiency) of the colony if a fraction, zz, of the workers are non-reproductive. Without loss of generality, we normalize such that r0 = 1. If worker sterility has an advantage, then it should increase colony efficiency for some values of z, but the function r need not be monotonically increasing. It is possible that maximum colony efficiency is obtained for an intermediate value of zz. Several possibilities for the colony efficiency function, r, are shown.zDOI: http://dx.doi.org/10.7554/eLife.08918.004
+**Figure 2.:** (A) The function pz denotes the fraction of male offspring that come from the queen if a fraction, z, of the workers are non-reproductive. Therefore, 1 − pz is the fraction of male offspring that come from the workers. Clearly, pz should be an increasing function. More workers that are sterile means a larger fraction of males that come from the queen. If all workers are non-reproductive, then all males come from the queen, p1 = 1. (B) The function rz denotes the reproductive rate (or efficiency) of the colony if a fraction, z, of the workers are non-reproductive. Without loss of generality, we normalize such that r0 = 1. If worker sterility has an advantage, then it should increase colony efficiency for some values of z, but the function rz need not be monotonically increasing. It is possible that maximum colony efficiency is obtained for an intermediate value of z. Several possibilities for the colony efficiency function, rz, are shown.
 
 The mutant allele can be favored by natural selection if non-reproductive workers provide a benefit to the colony, which is of course a natural assumption for the evolution of worker altruism. Division of labor has the potential to improve efficiency (Cole, 1986; Naeger et al., 2013). Another key component in our analysis is the functional relationship between the rate, r, at which the colony produces reproductive units (virgin queens and males) and the fraction of sterile workers, z. We use the notation rz to describe the reproductive rate of a colony where a fraction, z, of workers are non-reproductive. The quantity r0 denotes the reproductive rate of the colony if none of the workers are non-reproductive. Non-reproductive workers have a chance to be favored by natural selection if rz > r0 for some z. But the function rz need not be monotonically increasing. It is possible that there is an optimum fraction of non-reproductive workers, which maximizes the overall reproductive rate of the colony. We will study various functional forms of rz. Several sample forms of the function rz are shown in Figure 2B.
 
@@ -85,7 +85,9 @@ The mutant allele can be favored by natural selection if non-reproductive worker
 
 If the mutant allele is recessive, then AA and Aa workers lay male eggs, while aa workers are non-reproductive. For single mating, n = 1, we find that the a allele can invade an all-A resident population provided
 
-(1)r1/2r0>6+2p05+3p0
+$$
+\frac{r_{1/2}}{r_{0}}>\frac{6+2p_{0}}{5+3p_{0}}
+$$
 
 What is the intuition behind this condition? There are five colony types, AA0, AA1, Aa0, Aa1, and aa0, which are relevant for determining if the mutant allele can invade. Four of those colony types do not produce sterile workers (z = 0), so the parameters p0 and r0 enter into Equation 1. In colonies of type Aa1, half of the workers are sterile (z = 1/2); thus the parameter r1/2 enters into Equation 1. Moreover, both the queen and the workers in Aa1 colonies each produce 50% type A males and 50% type a males; therefore the parameter p1/2 is irrelevant for the invasion and absent from Equation 1.
 
@@ -97,7 +99,9 @@ Another recent study argues that eusociality can evolve even if sterile workers 
 
 For double mating, n = 2, we find that the a allele can invade an all-A resident population provided
 
-(2)r1/4r0>6+3p05+3p0+p1/4
+$$
+\frac{r_{1/4}}{r_{0}}>\frac{6+3p_{0}}{5+3p_{0}+p_{1/4}}
+$$
 
 Now there are six colony types, AA0, AA1, AA2, Aa0, Aa1, and aa0, which are relevant for determining if the mutant allele can invade. Colony types AA0, AA1, AA2, Aa0, and aa0 do not produce sterile workers (z = 0), so the parameters p0 and r0 appear in Equation 2. Colonies of type Aa1 produce a fraction 1/4 of sterile workers (z = 1/4). The Aa1 queen uses the sperm from the type A male that she has mated with to produce AA and Aa workers in equal proportion. Or the Aa1 queen uses the sperm from the type a male to produce Aa and aa workers with equal proportion. Thus, 1/4 of the workers are of type aa and are non-reproductive. Correspondingly, the parameters p1/4 and r1/4 appear in Equation 2.
 
@@ -105,11 +109,11 @@ The maximum critical value of r1/4/r0 for evolution of non-reproductive workers 
 
 It is not clear, a priori, that Equation 2 would be easier or harder to satisfy than Equation 1. Empirical knowledge of the parameters p0, p1/4, r0, r1/4, and r1/2 is needed to determine whether sterility invades more easily for single mating than for double mating.
 
-An illustration of the parameter space and whether single or double mating is more conducive to development of sterility is shown in
+An illustration of the parameter space and whether single or double mating is more conducive to development of sterility is shown in Figure 3A. It is clear from Equation 1 that, holding all other parameters constant, an increase in r1/2 favors the invasion of the sterility allele for n = 1. This is easy to see in Figure 3A: The upper panels (higher r1/2) involve invasion of the sterility allele for n = 1, while the lower panels do not. Similarly, from Equation 2, it is clear that, holding all other parameters constant, an increase in r1/4 favors the invasion of the sterility allele for n = 2. Again, this is illustrated in Figure 3A: the right panels (higher r1/4) are associated with invasion of the sterility allele for n = 2, while the left panels are not.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig3-v2.jpg)
 
-**Figure 3.:** (A) For single mating, n = 1, the invasion of a recessive worker sterility allele depends on the parameters p0 and r1/2; for double mating, n = 2, it depends on the parameters p0, p1/4, and r1/4. (B) The evolutionary stability of a recessive worker sterility allele depends on the parameters p0, r1/2, and r1 for single mating, and on the parameters p1/2, r1/2, and r1 for double mating. We set r0 = 1 as baseline.DOI: http://dx.doi.org/10.7554/eLife.08918.005
+**Figure 3.:** (A) For single mating, n = 1, the invasion of a recessive worker sterility allele depends on the parameters p0 and r1/2; for double mating, n = 2, it depends on the parameters p0, p1/4, and r1/4. (B) The evolutionary stability of a recessive worker sterility allele depends on the parameters p0, r1/2, and r1 for single mating, and on the parameters p1/2, r1/2, and r1 for double mating. We set r0 = 1 as baseline.
 
 The region of parameter space for which sterility invades for double mating but not for single mating is arbitrarily large. The region of parameter space for which sterility invades both for double mating and for single mating is also arbitrarily large. These features apply generally for different values of p0 and p1/4.
 
@@ -117,37 +121,45 @@ For many possible combinations of those parameters, worker sterility invades for
 
 We note that colony reproductive efficiency, rz, would not necessarily be expected to increase monotonically with the fraction of sterile workers, z. The law of diminishing returns may apply to the addition of non-reproductive workers to a colony. Non-reproductive workers contribute positively to the colony’s total reproductive output by performing colony maintenance and helping to raise other individuals’ offspring. But by not laying any eggs, non-reproductive workers are also negatively affecting the colony’s total reproductive output. Consequently, colony reproductive efficiency may be maximized if some workers reproduce while other workers focus their efforts on colony maintenance. In our model, this would correspond to rz reaching a maximum for some 0 < z < 1.
 
-Assuming that
+Assuming that p0 and p1/4 are small, we find that a fairly substantial benefit to colony reproductive rate (around 10% to 20%) must be provided by a non-reproductive worker caste. The large thresholds predicted by our model might help to explain the rarity of the evolution of non-reproductive worker castes in social insects. Additional work is needed to connect the parameters of our model with biological measurements of colony dynamics. Numerical simulations of the evolutionary dynamics for different parameter values are shown in Figure 4.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig4-v2.jpg)
 
-**Figure 4.:** Equations 1 and 2.The sterility allele is recessive. For numerically probing invasion, we use the initial condition  and XA⁢A,0=1-10-2. We set XA⁢A,1=10-2r0 = 1. A: Single mating, n = 1. Parameters p0 = 0.1 and r1 = 1.29. B: Double mating, n = 2. Parameters p0 = 0.2, p1/4 = 0.4, p1/2 = 0.6, r1/2 = 1.24 and r1 = 1.6.DOI: http://dx.doi.org/10.7554/eLife.08918.006
+**Figure 4.:** The sterility allele is recessive. For numerically probing invasion, we use the initial condition $X_{A⁢A,0}=1-10^{-2}$ and $X_{A⁢A,1}=10^{-2}$. We set r0 = 1. A: Single mating, n = 1. Parameters p0 = 0.1 and r1 = 1.29. B: Double mating, n = 2. Parameters p0 = 0.2, p1/4 = 0.4, p1/2 = 0.6, r1/2 = 1.24 and r1 = 1.6.
 
 We have also calculated the condition for the evolutionary stability of non-reproductive workers. For single mating, n = 1, we find that the a allele is stable against invasion of A in an all-a resident population provided
 
-(3)r1r0-1-p022⁢r1r1/2-1⁢>1
+$$
+\frac{r_{1}}{r_{0}}-\frac{1-p_{0}}{2}2⁢\frac{r_{1}}{r_{1/2}}-1⁢>1
+$$
 
 Three colony types, aa1, aa0, and Aa1, are relevant for determining if the a allele for sterility is evolutionarily stable to invasion by the A allele. Type aa1 colonies produce only sterile workers (z = 1), hence the appearance of r1 in Equation 3. Type aa0 colonies produce no sterile workers (z = 0), hence the appearance of p0 and r0 in Equation 3. Type Aa1 colonies produce 50% sterile workers (z = 1/2), hence the appearance of r1/2 in Equation 3. The parameter p1/2 is irrelevant because the queen and the reproductive workers in type Aa1 colonies each produce 50% type A males and 50% type a males.
 
 For double mating, n = 2, we find that the a allele is evolutionarily stable provided
 
-(4)r1r1/2-(1-p1/2)⁢2⁢r1r1/2-1>1
+$$
+\frac{r_{1}}{r_{1/2}}-(1-p_{1/2})⁢2⁢\frac{r_{1}}{r_{1/2}}-1>1
+$$
 
-Three colony types, aa2, aa1, and Aa2, are relevant for determining if the a allele for sterility is evolutionarily stable. Type aa2 colonies produce only sterile workers (z = 1), hence the appearance of r1 in Equation 4. Type aa1 and type Aa2 colonies each produce 50% sterile workers (z = 1/2), hence the appearance of p1/2 and r1/2 in Equation 4. The conditions for invasion and stability with more than two matings are given in the Materials and methods.
+Three colony types, aa2, aa1, and Aa2, are relevant for determining if the $a$ allele for sterility is evolutionarily stable. Type aa2 colonies produce only sterile workers (z = 1), hence the appearance of r1 in Equation 4. Type aa1 and type Aa2 colonies each produce 50% sterile workers (z = 1/2), hence the appearance of p1/2 and r1/2 in Equation 4. The conditions for invasion and stability with more than two matings are given in the Materials and methods.
 
 Empirical knowledge of the parameters p0, p1/2, r0, r1/2, and r1 is needed to determine if worker sterility is more stable for single mating than for double mating. For many possible combinations of those parameters, worker sterility is evolutionarily stable for double mating but not for single mating. For example, if p0 = 0.6, p1/2 = 0.9, r0 = 1, and r1/2 = 1.05, then for single mating the stability condition is r1 > 1.105 while for double mating the stability condition is only r1 > 1.087. The latter condition is less stringent. The parameter space for evolutionary stability for specific values of pz is shown in Figure 3B.
 
+Equations 1–4 tell us how non-reproductive workers evolve in a population of otherwise reproductive workers. The simplest case of singly mated queens already shows rich behavior. In Figure 5A, the four possibilities are shown: Sterility may not invade and be unstable (lower left), invade but be unstable (lower right), not invade but be stable (upper left), or invade and be stable (upper right). For example, notice that if r1/2 = 0.6 and r1 = 0.9, then worker sterility does not invade but is evolutionarily stable, even though both efficiency parameters are less than 1. As another example, notice that as long as r1/2 exceeds about 1.077, the quantity r1 can be arbitrarily small and worker sterility will still invade. It is also interesting that, for a fixed value of r1, increasing the value of r1/2 does not necessarily promote the stability of worker sterility, and doing so can actually render non-reproductive workers evolutionarily unstable. Complexities such as these are not readily accounted for by heuristic relatedness-based arguments. If the value of p0 is very close to 1, then arbitrarily small changes in colony efficiency can positively or negatively influence the evolutionary invasion or stability of worker sterility (Figure 5B). Numerical simulations of the evolutionary dynamics demonstrating the four possible behaviors are shown in Figure 6.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig5-v2.jpg)
 
-**Figure 5.:** n = 1).We consider a recessive sterility allele, a. There are four possible scenarios: The mutant allele cannot invade but is evolutionarily stable (bistability); the mutant allele can invade and is evolutionarily stable; the mutant allele can invade but is unstable (coexistence); the mutant allele cannot invade and is unstable. Only three parameters matter: p0, r1/2, and r1; p0 denotes the fraction of male offspring that come from the queen if there are no sterile workers in the colony (z = 0); r1/2 and r1 denote respectively the reproductive rate (efficiency) of the colony if z = 1/2 and z = 1 of all workers are sterile. The baseline value is r0 = 1. (A) Phase diagram for p0 = 0.5. (B) Phase diagram for p0 = 0.9. As p0 gets closer to 1, the intersection of the critical curves approaches the point (r1/2,r1) = (1,1).DOI: http://dx.doi.org/10.7554/eLife.08918.007
+**Figure 5.:** We consider a recessive sterility allele, a. There are four possible scenarios: The mutant allele cannot invade but is evolutionarily stable (bistability); the mutant allele can invade and is evolutionarily stable; the mutant allele can invade but is unstable (coexistence); the mutant allele cannot invade and is unstable. Only three parameters matter: p0, r1/2, and r1; p0 denotes the fraction of male offspring that come from the queen if there are no sterile workers in the colony (z = 0); r1/2 and r1 denote respectively the reproductive rate (efficiency) of the colony if z = 1/2 and z = 1 of all workers are sterile. The baseline value is r0 = 1. (A) Phase diagram for p0 = 0.5. (B) Phase diagram for p0 = 0.9. As p0 gets closer to 1, the intersection of the critical curves approaches the point (r1/2,r1) = (1,1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig6-v2.jpg)
 
-**Figure 6.:** Figure 5A.The sterility allele is recessive, and we consider single mating (n = 1). For each of the four panels, we use the initial conditions: A:  and XA⁢A,0=1-10-3; B: XA⁢A,1=10-3 and Xa⁢a,1=1-10-3; C: Xa⁢a,0=10-3 and XA⁢A,0=0.27 (lower curve), and Xa⁢a,0=0.73 and XA⁢A,0=0.26 (upper curve); D: Xa⁢a,0=0.74 and XA⁢A,0=1-10-2 (lower curve), and XA⁢A,1=10-2 and Xa⁢a,1=1-10-2 (upper curve). We set Xa⁢a,0=10-2r0 = 1. A: Parameters p0 = 0.5, r1/2 = 1.0869, and r1 = 1.1521. B: Parameters p0 = 0.5, r1/2 = 1.0669, and r1 = 1.1321. C: Parameters p0 = 0.5, r1/2 = 1.0669, and r1 = 1.1521. D: Parameters p0 = 0.5, r1/2 = 1.0869, and r1 = 1.1321.DOI: http://dx.doi.org/10.7554/eLife.08918.008
+**Figure 6.:** The sterility allele is recessive, and we consider single mating (n = 1). For each of the four panels, we use the initial conditions: A: $X_{A⁢A,0}=1-10^{-3}$ and $X_{A⁢A,1}=10^{-3}$; B: $X_{a⁢a,1}=1-10^{-3}$ and $X_{a⁢a,0}=10^{-3}$; C: $X_{A⁢A,0}=0.27$ and $X_{a⁢a,0}=0.73$ (lower curve), and $X_{A⁢A,0}=0.26$ and $X_{a⁢a,0}=0.74$ (upper curve); D: $X_{A⁢A,0}=1-10^{-2}$ and $X_{A⁢A,1}=10^{-2}$ (lower curve), and $X_{a⁢a,1}=1-10^{-2}$ and $X_{a⁢a,0}=10^{-2}$ (upper curve). We set r0 = 1. A: Parameters p0 = 0.5, r1/2 = 1.0869, and r1 = 1.1521. B: Parameters p0 = 0.5, r1/2 = 1.0669, and r1 = 1.1321. C: Parameters p0 = 0.5, r1/2 = 1.0669, and r1 = 1.1521. D: Parameters p0 = 0.5, r1/2 = 1.0869, and r1 = 1.1321.
+
+Figure 7 shows some examples. In Figure 7A, worker sterility invades for double mating but not for single mating. Here, rz increases sublinearly in z. In Figure 7B, the value of p1/4 is only slightly increased compared with its value in Figure 7A. In Figure 7B, the efficiency function, rz, is linearly increasing, and worker sterility invades for double mating but not for single mating. For the parameter values in Figure 7C, worker sterility is stable for double mating but not for single mating. Here, rz increases somewhat faster than linearly in z. In Figure 7D, the value of p1/2 is only slightly increased compared with its value in Figure 7C. In Figure 7D, the efficiency function, rz, is linearly increasing, and worker sterility is stable for double mating but not for single mating.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig7-v2.jpg)
 
-**Figure 7.:** n = 1) and double mating (n = 2) on the evolution of worker sterility.Whether or not single or double mating favors the evolution of worker sterility depends on the functions p and zr. The function zp specifies the fraction of male offspring that come from the queen if a fraction, zz, of all workers in the colony is non-reproductive. The function r specifies the reproductive rate (or efficiency) of the colony if a fraction, zz, of all workers in the colony is non-reproductive. We consider a recessive mutant allele, a, for worker sterility. (A, B) For these parameter choices, the mutant allele causing worker sterility can invade for double mating but not for single mating. (C, D) For these parameter choices, the mutant allele causing worker sterility is evolutionarily stable for double mating but not for single mating.DOI: http://dx.doi.org/10.7554/eLife.08918.009
+**Figure 7.:** Whether or not single or double mating favors the evolution of worker sterility depends on the functions pz and rz. The function pz specifies the fraction of male offspring that come from the queen if a fraction, z, of all workers in the colony is non-reproductive. The function rz specifies the reproductive rate (or efficiency) of the colony if a fraction, z, of all workers in the colony is non-reproductive. We consider a recessive mutant allele, a, for worker sterility. (A, B) For these parameter choices, the mutant allele causing worker sterility can invade for double mating but not for single mating. (C, D) For these parameter choices, the mutant allele causing worker sterility is evolutionarily stable for double mating but not for single mating.
 
 For a dominant sterility allele, there is typically a large region of parameter space for which sterility evolves for double mating but not for single mating. There is also an arbitrarily large region of parameter space for which sterility evolves for double mating and for single mating. For a recessive allele, it is possible that more than two matings are necessary for the emergence of worker sterility. These additional examples are presented in the Materials and methods.
 
@@ -175,7 +187,7 @@ Our analysis makes no use of inclusive fitness theory, which is an unnecessary c
 
 In this Materials and methods section, we present a mathematical model for the population dynamics of Hymenopteran colonies, and we calculate exact conditions that must be satisfied for non-reproductive workers to evolve. Our model uses haplodiploid genetics. Each female carries homologous pairs of maternal and paternal chromosomes, while each male possesses a single set of chromosomes. We assume that a specific mutation (allele) leads to non-reproductive workers. The A allele represents normal behavior, while the mutant a allele leads to unmated females (workers) abstaining from laying their own male eggs. If the a allele is dominant, then workers that possess at least one a allele are sterile. If the a allele is recessive, then workers that are homozygous for a are sterile. Under what conditions does the a allele for non-reproductive workers invade a population? Under what conditions is the a allele evolutionarily stable against invasion by A? A mathematical analysis of this problem lends insight into the selective forces that act on the evolution of worker sterility. While a loss of function mutation is probably recessive, it is instructive to consider both the dominant and recessive cases in detail.
 
-## Description of the model
+### Description of the model
 
 Consider a large population of insects. There are many colonies in the population, and each colony produces many offspring over its lifetime. The particular species under investigation has a haplodiploid genetic system. Females carry homologous pairs of maternal and paternal chromosomes, while males carry a single set of chromosomes. Queens can produce diploid female workers and gynes (future queens) from her own genotype combined with the genotype of each of the male drones that she has mated with. Queens can also produce drones using her own genotype. Female workers can produce drones as well. Thus there can be competition over whether the queen or the workers produce most of the males in a colony.
 
@@ -187,7 +199,9 @@ The mating events are random. A virgin queen mates with n randomly chosen males 
 
 The following system of ordinary differential equations describes the selection dynamics in continuous time:
 
-(5)X˙AA,m=d⁢XAA,md⁢t=nm⁢xA⁢A⁢yAn-m⁢yam-⁢ϕXA⁢A,mX˙Aa,m=d⁢XAa,md⁢t=nm⁢xA⁢a⁢yAn-m⁢yam-ϕ⁢XA⁢a,mX˙a⁢a,m=d⁢Xaa,md⁢t=nm⁢xa⁢a⁢yAn-m⁢yam-ϕ⁢Xa⁢a,m
+$$
+X˙_{AA,m}=\frac{d⁢X_{AA,m}}{d⁢t}=nm⁢x_{A⁢A}⁢y_{A}^{n-m}⁢y_{a}^{m}-⁢ϕX_{A⁢A,m}X˙_{Aa,m}=\frac{d⁢X_{Aa,m}}{d⁢t}=nm⁢x_{A⁢a}⁢y_{A}^{n-m}⁢y_{a}^{m}-ϕ⁢X_{A⁢a,m}X˙_{a⁢a,m}=\frac{d⁢X_{aa,m}}{d⁢t}=nm⁢x_{a⁢a}⁢y_{A}^{n-m}⁢y_{a}^{m}-ϕ⁢X_{a⁢a,m}
+$$
 
 The overdot denotes the time derivative, d/dt. We use the overdot notation for any time derivative.
 
@@ -195,11 +209,15 @@ We understand Equation 5 as follows. We represent the genotype of a colony by th
 
 We require that the total number of colonies sums to a constant value, c, at all times:
 
-(6)∑m=0n(XAA,m+XAa,m+Xaa,m)=c
+$$
+\summ=0n(X_{AA,m}+X_{Aa,m}+X_{aa,m})=c
+$$
 
 Colonies compete for resources which are limited. Notice that ϕ in Equation 5 represents a density-dependent death rate. We use ϕ to model the effect of environmental constraints in limiting the total number of colonies. To enforce the density constraint, Equation 6, on the colony variables, we set
 
-(7)ϕ=c-1⁢(xAA+xAa+xaa)⁢(yA+ya)n
+$$
+ϕ=c^{-1}⁢(x_{AA}+x_{Aa}+x_{aa})⁢(y_{A}+y_{a})^{n}
+$$
 
 Our choice to analyze the evolutionary dynamics of sterile workers in continuous time is a matter of preference. Working in continuous time usually simplifies the analysis. For example, when we derive conditions for the invasion of a recessive allele or the stability of a dominant allele, the perturbative expansion of the colony variables must be performed to second order, and the calculations become quite messy.
 
@@ -211,7 +229,7 @@ Non-reproductive workers forego their own reproductive potential in order to hel
 
 Since we are focused on the evolutionary dynamics of the colony variables, XAA,m, XAa,m, and Xaa,m for 0 ≤ m ≤ n, we rewrite the first term on the right-hand side of Equation 5 in terms of the colony variables. We express each of the gyne and drone numbers, xAA, xAa, xaa, yA, and ya, as a linear combination of the colony variables, XAA,m, XAa,m, and Xaa,m. The coefficients in these linear relationships depend on whether the allele, a, that acts in a worker to induce that worker’s sterility is dominant or recessive.
 
-## Reproductives with a dominant sterility allele
+#### Reproductives with a dominant sterility allele
 
 For a dominant allele, a, causing worker sterility, we have the reproduction events shown in Figure 1C. These can be understood as follows.
 
@@ -225,17 +243,19 @@ For studying the invasion of the mutant allele, only a subset of those colony ty
 
 Our attention is on the evolution of the 3(n + 1) colony variables. Therefore, it is helpful to write all quantities in terms of the colony variables. We can write each type of reproductive of a colony (xAA, xAa, xaa, yA, and ya) as a simple weighted sum of colony variables. Using Figure 1C, the numbers of unfertilized females (xAA, xAa, and xaa) and males (yA and ya) in the population which are capable of mating can be written as:
 
-(8)xAA=∑m = 0n[n-mngrmnXAA,m+n-m2ngrm+n2nXAa,m]xAa=∑m = 0n[mngrmnXAA,m+12grm+n2nXAa,m+n-mngr1Xaa,m]xaa=∑m = 0nm2ngrm+n2nXAa,m+mngr1Xaa,myA=∑m = 0n[krmnXAA,m+2-pm+n2n2krm+n2nXAa,m]ya=∑m =0n[12pm+n2nkrm+n2nXAa,m+kr1Xaa,m]
+$$
+x_{AA}=\summ = 0n[\frac{n-m}{n}gr_{\frac{m}{n}}X_{AA,m}+\frac{n-m}{2n}gr_{\frac{m+n}{2n}}X_{Aa,m}]x_{Aa}=\summ = 0n[\frac{m}{n}gr_{\frac{m}{n}}X_{AA,m}+\frac{1}{2}gr_{\frac{m+n}{2n}}X_{Aa,m}+\frac{n-m}{n}gr_{1}X_{aa,m}]x_{aa}=\summ = 0n\frac{m}{2n}gr_{\frac{m+n}{2n}}X_{Aa,m}+\frac{m}{n}gr_{1}X_{aa,m}y_{A}=\summ = 0n[kr_{\frac{m}{n}}X_{AA,m}+\frac{2-p_{\frac{m+n}{2n}}}{2}kr_{\frac{m+n}{2n}}X_{Aa,m}]y_{a}=\summ =0n[\frac{1}{2}p_{\frac{m+n}{2n}}kr_{\frac{m+n}{2n}}X_{Aa,m}+kr_{1}X_{aa,m}]
+$$
 
-Here, 0 < g ≤ 1 is the fraction of all females produced by a colony that are gynes. Moreover, 0 < k ≤ 1 is the fraction of all males produced by a colony that are able to mate. For example, if only a small percentage of female and male offspring of a colony eventually disperse and mate, then we have g≪1 and k≪1. The parameters g and k are written explicitly here for conceptual clarity. As we shall see, they turn out to be irrelevant in the conditions for invasion and stability of non-reproductive workers.
+Here, 0 < g ≤ 1 is the fraction of all females produced by a colony that are gynes. Moreover, 0 < k ≤ 1 is the fraction of all males produced by a colony that are able to mate. For example, if only a small percentage of female and male offspring of a colony eventually disperse and mate, then we have $g≪1$ and $k≪1$. The parameters g and k are written explicitly here for conceptual clarity. As we shall see, they turn out to be irrelevant in the conditions for invasion and stability of non-reproductive workers.
 
-## Reproductives with a recessive sterility allele
+#### Reproductives with a recessive sterility allele
 
 For a recessive allele, a, causing worker sterility, we have the reproduction events shown in Figure 1B. These can be understood as follows.
 
 Consider the offspring of type AA,m colonies. The queen produces n − m type AA females for every m type Aa females. Because the queen only carries the A allele, she can only produce type A drones. A fraction (n − m)/n of all workers produce only type A males, and a fraction m/n of all workers produce type A and type a males in equal proportion. Altogether, workers produce a fraction (2n − m)/(2n) type A males and a fraction m/(2n) type a males.
 
-Consider the offspring of type Aa,m colonies. The queen produces n − m type AA females, n type Aa females, and m type aa females out of every 2n females that she produces. Because the queen carries the A and a alleles, she produces type A and type a drones in equal proportion. A fraction (n − m)/(2n) of all workers produce only type A males, and a fraction 1/2 of all workers produce type A and type a males in equal proportion. Workers that carry two copies of the a allele are non-reproductive. Altogether, workers produce a fraction (3n − 2m)/(4n − 2m) type A males and a fraction n/(4n − 2m) type a males.
+Consider the offspring of type Aa,m colonies. The queen produces n − m type AA females, n type Aa females, and m type aa females out of every 2n females that she produces. Because the queen carries the A and a alleles, she produces type A and type a drones in equal proportion. A fraction (n − m)/(2n) of all workers produce only type A males, and a fraction 1/2 of all workers produce type A and type a males in equal proportion. Workers that carry two copies of the $a$ allele are non-reproductive. Altogether, workers produce a fraction (3n − 2m)/(4n − 2m) type A males and a fraction n/(4n − 2m) type a males.
 
 Consider the offspring of type aa,m colonies. The queen produces n − m type Aa females for every m type aa females. Because the queen only carries the a allele, she can only produce type a drones. A fraction (n − m)/n of all workers produce type A and type a males in equal proportion. Workers that carry two copies of the a allele are non-reproductive. Altogether, workers produce type A and type a males in equal proportion.
 
@@ -243,41 +263,55 @@ For studying the invasion of the mutant allele, only a subset of those colony ty
 
 Our attention is on the evolution of the 3(n + 1) colony variables. Therefore, it is helpful to write all quantities in terms of the colony variables. We can write each type of reproductive of a colony (xAA, xAa, xaa, yA, and ya) as a simple weighted sum of colony variables. Using Figure 1B, the numbers of unfertilized females (xAA, xAa, and xaa) and males (yA and ya) in the population which are capable of mating can be written as:
 
-(9)xA⁢A=∑m=0nn-mn⁢g⁢r0⁢XA⁢A,m+n-m2⁢n⁢g⁢rm2⁢n⁢XA⁢a,mxA⁢a=∑m=0nmn⁢g⁢r0⁢XA⁢A,m+12⁢g⁢rm2⁢n⁢XA⁢a,m+ n-mn⁢g⁢rmn⁢Xa⁢a,mxa⁢a=∑m=0nm2⁢n⁢g⁢rm2⁢n⁢XA⁢a,m+mn⁢g⁢rmn⁢Xa⁢a,myA=∑m=0n2⁢n-m+m⁢p02⁢nkr0XA⁢A,m+n⁢3-pm2⁢n-m⁢2-pm2⁢n2⁢(2⁢n-m)krm2⁢nXA⁢a,m+121-pmnkrmnXa⁢a,mya=∑m=0nm2⁢n(1-p0)kr0XA⁢A,m+n1+pm2⁢n-m⁢pm2⁢n2⁢(2⁢n-m)krm2⁢nXA⁢a,m+121+pmnkrmnXa⁢a,m
+$$
+x_{A⁢A}=\summ=0n\frac{n-m}{n}⁢g⁢r_{0}⁢X_{A⁢A,m}+\frac{n-m}{2⁢n}⁢g⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}x_{A⁢a}=\summ=0n\frac{m}{n}⁢g⁢r_{0}⁢X_{A⁢A,m}+\frac{1}{2}⁢g⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}+ \frac{n-m}{n}⁢g⁢r_{\frac{m}{n}}⁢X_{a⁢a,m}x_{a⁢a}=\summ=0n\frac{m}{2⁢n}⁢g⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}+\frac{m}{n}⁢g⁢r_{\frac{m}{n}}⁢X_{a⁢a,m}y_{A}=\summ=0n\frac{2⁢n-m+m⁢p_{0}}{2⁢n}kr_{0}X_{A⁢A,m}+\frac{n⁢3-p_{\frac{m}{2⁢n}}-m⁢2-p_{\frac{m}{2⁢n}}}{2⁢(2⁢n-m)}kr_{\frac{m}{2⁢n}}X_{A⁢a,m}+\frac{1}{2}1-p_{\frac{m}{n}}kr_{\frac{m}{n}}X_{a⁢a,m}y_{a}=\summ=0n\frac{m}{2⁢n}(1-p_{0})kr_{0}X_{A⁢A,m}+\frac{n1+p_{\frac{m}{2⁢n}}-m⁢p_{\frac{m}{2⁢n}}}{2⁢(2⁢n-m)}kr_{\frac{m}{2⁢n}}X_{A⁢a,m}+\frac{1}{2}1+p_{\frac{m}{n}}kr_{\frac{m}{n}}X_{a⁢a,m}
+$$
 
-Here, 0 < g ≤ 1 is the fraction of all females produced by a colony that are gynes. Moreover, 0 < k ≤ 1 is the fraction of all males produced by a colony that are able to mate. For example, if only a small percentage of female and male offspring of a colony eventually disperse and mate, then we have g≪1 and k≪1. The parameters g and k are written explicitly here for conceptual clarity. As we shall see, they turn out to be irrelevant in the conditions for invasion and stability of non-reproductive workers.
+Here, 0 < g ≤ 1 is the fraction of all females produced by a colony that are gynes. Moreover, 0 < k ≤ 1 is the fraction of all males produced by a colony that are able to mate. For example, if only a small percentage of female and male offspring of a colony eventually disperse and mate, then we have $g≪1$ and $k≪1$. The parameters g and k are written explicitly here for conceptual clarity. As we shall see, they turn out to be irrelevant in the conditions for invasion and stability of non-reproductive workers.
 
-## Rescaling of the model variables
+#### Rescaling of the model variables
 
 We have described the biological intuition for our model of population genetics. To calculate conditions for understanding the evolutionary dynamics of a mutation that effects worker sterility, it is mathematically convenient to make the following substitutions:
 
-(10)XA⁢A,m→c⁢XA⁢A,mXA⁢a,m→c⁢XA⁢a,mXa⁢a,m→c⁢Xa⁢a,mxA⁢A→g⁢c⁢xA⁢AxA⁢a→g⁢c⁢xA⁢axa⁢a→g⁢c⁢xa⁢ayA→k⁢c⁢yAya→k⁢c⁢yaϕ→g⁢kn⁢cn⁢ϕt→g-1⁢k-n⁢c-n⁢t
+$$
+X_{A⁢A,m}→c⁢X_{A⁢A,m}X_{A⁢a,m}→c⁢X_{A⁢a,m}X_{a⁢a,m}→c⁢X_{a⁢a,m}x_{A⁢A}→g⁢c⁢x_{A⁢A}x_{A⁢a}→g⁢c⁢x_{A⁢a}x_{a⁢a}→g⁢c⁢x_{a⁢a}y_{A}→k⁢c⁢y_{A}y_{a}→k⁢c⁢y_{a}ϕ→g⁢k^{n}⁢c^{n}⁢ϕt→g^{-1}⁢k^{-n}⁢c^{-n}⁢t
+$$
 
 Let’s see what happens when we rescale the model variables and parameters according to Equation 10. We substitute Equation 10 into Equation 5 to obtain
 
-(11)X˙A⁢A,m=d⁢XA⁢A,md⁢t= nmxA⁢A⁢yAn-m⁢yam-ϕ⁢XA⁢A,mX˙A⁢a,m=d⁢XA⁢a,md⁢t=⁢nmxA⁢a⁢yAn-m⁢yam-ϕ⁢XA⁢a,mX˙a⁢a,m=d⁢Xa⁢a,md⁢t= nm⁢xa⁢a⁢yAn-m⁢yam-ϕ⁢Xa⁢a,m
+$$
+X˙_{A⁢A,m}=\frac{d⁢X_{A⁢A,m}}{d⁢t}= nmx_{A⁢A}⁢y_{A}^{n-m}⁢y_{a}^{m}-ϕ⁢X_{A⁢A,m}X˙_{A⁢a,m}=\frac{d⁢X_{A⁢a,m}}{d⁢t}=⁢nmx_{A⁢a}⁢y_{A}^{n-m}⁢y_{a}^{m}-ϕ⁢X_{A⁢a,m}X˙_{a⁢a,m}=\frac{d⁢X_{a⁢a,m}}{d⁢t}= nm⁢x_{a⁢a}⁢y_{A}^{n-m}⁢y_{a}^{m}-ϕ⁢X_{a⁢a,m}
+$$
 
 We substitute Equation 10 into Equation 6 to obtain
 
-(12)∑m=0n(XA⁢A,m+XA⁢a,m+Xa⁢a,m)=1
+$$
+\summ=0n(X_{A⁢A,m}+X_{A⁢a,m}+X_{a⁢a,m})=1
+$$
 
 We substitute Equation 10 into Equation 7 to obtain
 
-(13)ϕ=(xA⁢A+xA⁢a+xa⁢a)⁢(yA+ya)n
+$$
+ϕ=(x_{A⁢A}+x_{A⁢a}+x_{a⁢a})⁢(y_{A}+y_{a})^{n}
+$$
 
-## Reproductives (rescaled) with a dominant sterility allele
+#### Reproductives (rescaled) with a dominant sterility allele
 
 We substitute Equation 10 into Equation 8 to obtain
 
-(14)xA⁢A=∑m=0nn-mn⁢rmn⁢XA⁢A,m+n-m2⁢n⁢rm+n2⁢n⁢XA⁢a,mxA⁢a=∑m=0nmn⁢rmn⁢XA⁢A,m+12⁢rm+n2⁢n⁢XA⁢a,m+n-mn⁢r1⁢Xa⁢a,mxa⁢a=∑m=0nm2⁢n⁢rm+n2⁢n⁢XA⁢a,m+mn⁢r1⁢Xa⁢a,myA=∑m=0nrmn⁢XA⁢A,m+2-pm+n2⁢n2⁢rm+n2⁢n⁢XA⁢a,mya=∑m=0n12 ⁢pm+n2⁢n ⁢rm+n2⁢n⁢XA⁢a,m+r1⁢Xa⁢a,m
+$$
+x_{A⁢A}=\summ=0n\frac{n-m}{n}⁢r_{\frac{m}{n}}⁢X_{A⁢A,m}+\frac{n-m}{2⁢n}⁢r_{\frac{m+n}{2⁢n}}⁢X_{A⁢a,m}x_{A⁢a}=\summ=0n\frac{m}{n}⁢r_{\frac{m}{n}}⁢X_{A⁢A,m}+\frac{1}{2}⁢r_{\frac{m+n}{2⁢n}}⁢X_{A⁢a,m}+\frac{n-m}{n}⁢r_{1}⁢X_{a⁢a,m}x_{a⁢a}=\summ=0n\frac{m}{2⁢n}⁢r_{\frac{m+n}{2⁢n}}⁢X_{A⁢a,m}+\frac{m}{n}⁢r_{1}⁢X_{a⁢a,m}y_{A}=\summ=0nr_{\frac{m}{n}}⁢X_{A⁢A,m}+\frac{2-p_{\frac{m+n}{2⁢n}}}{2}⁢r_{\frac{m+n}{2⁢n}}⁢X_{A⁢a,m}y_{a}=\summ=0n\frac{1}{2} ⁢p_{\frac{m+n}{2⁢n}} ⁢r_{\frac{m+n}{2⁢n}}⁢X_{A⁢a,m}+r_{1}⁢X_{a⁢a,m}
+$$
 
-## Reproductives (rescaled) with a recessive sterility allele
+#### Reproductives (rescaled) with a recessive sterility allele
 
 We substitute Equation 10 into Equation 9 to obtain
 
-(15)xA⁢A=∑m=0nn-mn⁢r0⁢XA⁢A,m+n-m2⁢n⁢rm2⁢n⁢XA⁢a,mxA⁢a=∑m=0nmn⁢r0⁢XA⁢A,m+12⁢rm2⁢n⁢XA⁢a,m+n-mn⁢rmn⁢Xa⁢a,mxa⁢a=∑m=0nm2⁢n⁢rm2⁢n⁢XA⁢a,m+mn⁢rmn⁢Xa⁢a,myA=∑m=0n2⁢n-m+m⁢p02⁢nr0XA⁢A,m+n3-pm2⁢n-m2-pm2⁢n⁢2⁢(2⁢n-m)rm2⁢nXA⁢a,m+121-pmnrmnXa⁢a,mya=∑m=0nm2⁢n(1-p0)r0XA⁢A,m+n1+pm2⁢n⁢-m⁢pm2⁢n2⁢(2⁢n-m)rm2⁢nXA⁢a,m+121+pmnrmnXa⁢a,m
+$$
+x_{A⁢A}=\summ=0n\frac{n-m}{n}⁢r_{0}⁢X_{A⁢A,m}+\frac{n-m}{2⁢n}⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}x_{A⁢a}=\summ=0n\frac{m}{n}⁢r_{0}⁢X_{A⁢A,m}+\frac{1}{2}⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}+\frac{n-m}{n}⁢r_{\frac{m}{n}}⁢X_{a⁢a,m}x_{a⁢a}=\summ=0n\frac{m}{2⁢n}⁢r_{\frac{m}{2⁢n}}⁢X_{A⁢a,m}+\frac{m}{n}⁢r_{\frac{m}{n}}⁢X_{a⁢a,m}y_{A}=\summ=0n\frac{2⁢n-m+m⁢p_{0}}{2⁢n}r_{0}X_{A⁢A,m}+\frac{n3-p_{\frac{m}{2⁢n}}-m2-p_{\frac{m}{2⁢n}}⁢}{2⁢(2⁢n-m)}r_{\frac{m}{2⁢n}}X_{A⁢a,m}+\frac{1}{2}1-p_{\frac{m}{n}}r_{\frac{m}{n}}X_{a⁢a,m}y_{a}=\summ=0n\frac{m}{2⁢n}(1-p_{0})r_{0}X_{A⁢A,m}+\frac{n1+p_{\frac{m}{2⁢n}}⁢-m⁢p_{\frac{m}{2⁢n}}}{2⁢(2⁢n-m)}r_{\frac{m}{2⁢n}}X_{A⁢a,m}+\frac{1}{2}1+p_{\frac{m}{n}}r_{\frac{m}{n}}X_{a⁢a,m}
+$$
 
-## Conditions for evolutionary invasion and evolutionary stability of worker sterility: perturbative analysis
+#### Conditions for evolutionary invasion and evolutionary stability of worker sterility: perturbative analysis
 
 Notice that when we rescale the model variables and parameters according to Equation 10, the evolutionary dynamics are mathematically unchanged: Equation 5 has the same form as Equation 11, Equation 6 has the same form as Equation 12, Equation 7 has the same form as Equation 13, Equation 8 has the same form as Equation 14, and Equation 9 has the same form as Equation 15. But it is apparent why the rescalings (Equation 10) are helpful in doing calculations: When the right-hand side of (Equation 11) is written out in terms of the colony frequency variables XAA,m, XAa,m, and Xaa,m, the parameters g, k, and c, which are not essential for understanding the evolutionary invasion or evolutionary stability of non-reproductive workers, no longer appear in the calculations. This simplifies writing and improves clarity in the calculations that follow.
 
@@ -285,288 +319,502 @@ To begin, note that only two pure equilibria are possible:
 
 From Equation 11, if any mixed equilibria exist, then they will feature 3(n + 1) nonzero frequencies.
 
-## Invasion of a dominant worker sterility allele
+#### Invasion of a dominant worker sterility allele
 
-What happens if we start with an infinitesimal quantity of the mutant allele, a, by perturbing the XAA,0 = 1 pure equilibrium: XA⁢A,0→1-ϵ⁢δA⁢A,0(1), with ϵ≪1? Does a dominant worker sterility allele spread in the population, or is it eliminated?
+What happens if we start with an infinitesimal quantity of the mutant allele, a, by perturbing the XAA,0 = 1 pure equilibrium: $X_{A⁢A,0}→1-ϵ⁢\delta_{A⁢A,0}^{(1)}$, with $ϵ≪1$? Does a dominant worker sterility allele spread in the population, or is it eliminated?
 
-Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis simplifies. Provided that the perturbation is small (i.e. that ϵ≪1), only three colony types, AA,0, AA,1, and Aa,0, determine whether or not the dominant worker sterility allele invades. Any other colony type is headed by a queen that possesses at least two mutant a alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying invasion of a dominant sterility allele are
+Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis simplifies. Provided that the perturbation is small (i.e. that $ϵ≪1$), only three colony types, AA,0, AA,1, and Aa,0, determine whether or not the dominant worker sterility allele invades. Any other colony type is headed by a queen that possesses at least two mutant a alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying invasion of a dominant sterility allele are
 
-(16)X˙A⁢A,0=xA⁢A⁢yAn-ϕ⁢XA⁢A,0X˙A⁢A,1=n⁢xA⁢A⁢yAn-1⁢ya-ϕ⁢XA⁢A,1X˙A⁢a,0=xA⁢a⁢yAn-ϕ⁢XA⁢a,0
+$$
+X˙_{A⁢A,0}=x_{A⁢A}⁢y_{A}^{n}-ϕ⁢X_{A⁢A,0}X˙_{A⁢A,1}=n⁢x_{A⁢A}⁢y_{A}^{n-1}⁢y_{a}-ϕ⁢X_{A⁢A,1}X˙_{A⁢a,0}=x_{A⁢a}⁢y_{A}^{n}-ϕ⁢X_{A⁢a,0}
+$$
 
-Formally keeping track of powers of ϵ, and disregarding higher-order terms, we have:
+Formally keeping track of powers of $ϵ$, and disregarding higher-order terms, we have:
 
-(17)XA⁢A,0=1-ϵ⁢δA⁢A,0(1)-O⁢(ϵ2)XA⁢A,1=+ϵ⁢δA⁢A,1(1)+O(ϵ2)  XA⁢a,0=+ϵ⁢δA⁢a,0(1)+O(ϵ2)
+$$
+X_{A⁢A,0}=1-ϵ⁢\delta_{A⁢A,0}^{(1)}-O⁢(ϵ^{2})X_{A⁢A,1}=+ϵ⁢\delta_{A⁢A,1}^{(1)}+O(ϵ^{2})  X_{A⁢a,0}=+ϵ⁢\delta_{A⁢a,0}^{(1)}+O(ϵ^{2})  
+$$
 
-To simplify the density constraint (Equation 12) for our calculation, we substitute (Equation 17) into (Equation 12) and collect powers of ϵ. We get
+To simplify the density constraint (Equation 12) for our calculation, we substitute (Equation 17) into (Equation 12) and collect powers of $ϵ$. We get
 
-(18)δA⁢A,0(1)=δA⁢A,1(1)+δA⁢a,0(1)
+$$
+\delta_{A⁢A,0}^{(1)}=\delta_{A⁢A,1}^{(1)}+\delta_{A⁢a,0}^{(1)}
+$$
 
-Next, we substitute (Equation 17) into (Equation 14), using the density constraint (Equation 18) and keeping terms only up to order ϵ:
+Next, we substitute (Equation 17) into (Equation 14), using the density constraint (Equation 18) and keeping terms only up to order $ϵ$:
 
-(19)xA⁢A=r0+ϵn-1r1n-nr0nδAA,1(1)+-2r0+r122δAa,0(1) +O(ϵ2)xA⁢a=ϵr1nnδAA,1(1)+r122δAa,0(1) +O(ε2)yA=r0+ε-r0-r1nδAA,1(1)+2-p12r12-2r02δAa,0(1) +O(ε2)ya=εp12r122δAa,0(1)+O(ε2)
+$$
+x_{A⁢A}=r_{0}+ϵ\frac{n-1r_{\frac{1}{n}}-nr_{0}}{n}\delta_{AA,1}^{(1)}+\frac{-2r_{0}+r_{\frac{1}{2}}}{2}\delta_{Aa,0}^{(1)} +O(ϵ^{2})x_{A⁢a}=ϵ\frac{r_{\frac{1}{n}}}{n}\delta_{AA,1}^{(1)}+\frac{r_{\frac{1}{2}}}{2}\delta_{Aa,0}^{(1)} +O(\epsilon^{2})y_{A}=r_{0}+\epsilon-r_{0}-r_{\frac{1}{n}}\delta_{AA,1}^{(1)}+\frac{2-p_{\frac{1}{2}}r_{\frac{1}{2}-2r_{0}}}{2}\delta_{Aa,0}^{(1)} +O(\epsilon^{2})y_{a}=\epsilon\frac{p_{\frac{1}{2}}r_{\frac{1}{2}}}{2}\delta_{Aa,0}^{(1)}+O(\epsilon^{2})
+$$
 
-By plugging (Equation 19) and (Equation 17) into (Equation 16), using the density constraint (Equation 18), and collecting powers of ϵ, we find
+By plugging (Equation 19) and (Equation 17) into (Equation 16), using the density constraint (Equation 18), and collecting powers of $ϵ$, we find
 
-δ˙A⁢A,1(1)=-r0n+1⁢δA⁢A,1(1)+n⁢p12⁢r12⁢r0n2⁢δA⁢a,0(1)δ˙A⁢a,0(1)=r1nr0nnδA⁢A,1(1)+-2r0n+1+⁢r12⁢r0n2⁢δA⁢a,0(1)
+$$
+\delta˙_{A⁢A,1}^{(1)}=-r_{0}^{n+1}⁢\delta_{A⁢A,1}^{(1)}+\frac{n⁢p_{\frac{1}{2}}⁢r_{\frac{1}{2}}⁢r_{0}^{n}}{2}⁢\delta_{A⁢a,0}^{(1)}\delta˙_{A⁢a,0}^{(1)}=\frac{r_{\frac{1}{n}}r_{0}^{n}}{n}\delta_{A⁢A,1}^{(1)}+\frac{-2r_{0}^{n+1}+⁢r_{\frac{1}{2}}⁢r_{0}^{n}}{2}⁢\delta_{A⁢a,0}^{(1)}
+$$
 
-The equations for δ˙A⁢A,1(1) and δ˙A⁢a,0(1) can be written in matrix form as
+The equations for $\delta˙_{A⁢A,1}^{(1)}$ and $\delta˙_{A⁢a,0}^{(1)}$ can be written in matrix form as
 
-δ˙A⁢A,1(1)δ˙A⁢a,0(1)=-r0n+1n⁢p12⁢r12⁢r0n2r1n⁢r0nn-2⁢r0n+1+r12⁢r0n2δA⁢A,1(1)δA⁢a,0(1)⁢
+$$
+\delta˙_{A⁢A,1}^{(1)}\delta˙_{A⁢a,0}^{(1)}=-r_{0}^{n+1}\frac{n⁢p_{\frac{1}{2}}⁢r_{\frac{1}{2}}⁢r_{0}^{n}}{2}\frac{r_{\frac{1}{n}}⁢r_{0}^{n}}{n}\frac{-2⁢r_{0}^{n+1}+r_{\frac{1}{2}}⁢r_{0}^{n}}{2}\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}⁢
+$$
 
 Setting the dominant eigenvalue to be greater than zero and simplifying, we find that the dominant allele for worker sterility increases in frequency if
 
-(20)r12r0⁢1+p12⁢r1nr0>2
+$$
+\frac{r_{\frac{1}{2}}}{r_{0}}⁢1+p_{\frac{1}{2}}⁢\frac{r_{\frac{1}{n}}}{r_{0}}>2
+$$
 
-Depending on the values of the parameters
+Depending on the values of the parameters p1/2, r0, r1/2, and r1/n, non-reproductive workers may or may not evolve with any number of matings, n, of the queen. In Figure 8, we show the regions of parameter space for which non-reproductive workers can or cannot evolve for a dominant sterility allele. Holding all other parameters constant, an increase in r1 favors the invasion of the dominant sterility allele for n = 1. This is easy to see in Figure 8: the upper panels (higher r1) correspond to invasion of the dominant sterility allele for n = 1, while the lower panels do not. Holding all other parameters constant, an increase in r1/2 favors the invasion of the dominant sterility allele for n = 2. Again, this is seen in Figure 8: the right panels (higher r1/2) represent invasion of the dominant sterility allele for n = 2, while the left panels do not. Additionally, holding all other parameters constant, an increase in r1/2 facilitates the invasion of the dominant sterility allele for n = 1. This can also be seen in Figure 8: the boundary separating the upper panels from the lower panels decreases as r1/2 increases. If r1/2 > r1, then it is possible that a dominant sterility allele invades for double mating but not for single mating.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig8-v2.jpg)
 
-**Figure 8.:** The evolutionary invasion of a dominant worker sterility allele depends on values of the parameters p1/2, r1/2, and r1 for single mating, n = 1, and on values of the parameters p1/2 and r1/2 for double mating, n = 2. The figure shows four parameter regions indicating whether or not worker sterility can evolve for single or double mating. We set r0 = 1 as baseline.DOI: http://dx.doi.org/10.7554/eLife.08918.010
+**Figure 8.:** The evolutionary invasion of a dominant worker sterility allele depends on values of the parameters p1/2, r1/2, and r1 for single mating, n = 1, and on values of the parameters p1/2 and r1/2 for double mating, n = 2. The figure shows four parameter regions indicating whether or not worker sterility can evolve for single or double mating. We set r0 = 1 as baseline.
 
-## Invasion of a recessive worker sterility allele
+#### Invasion of a recessive worker sterility allele
 
-What happens if we start with an infinitesimal quantity of the mutant allele, a, by perturbing the XAA,0 = 1 pure equilibrium: XA⁢A,0→1-ϵ⁢δA⁢A,0(1), with ϵ≪1? Does a recessive worker sterility allele spread in the population, or is it eliminated?
+What happens if we start with an infinitesimal quantity of the mutant allele, $a$, by perturbing the XAA,0 = 1 pure equilibrium: $X_{A⁢A,0}→1-ϵ⁢\delta_{A⁢A,0}^{(1)}$, with $ϵ≪1$? Does a recessive worker sterility allele spread in the population, or is it eliminated?
 
-Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis again simplifies. Provided that the perturbation is small (i.e. that ϵ≪1), only six colony types, AA,0, AA,1, Aa,0, AA,2, Aa,1, and aa,0, determine whether or not the recessive worker sterility allele invades. Any other colony type is headed by a queen that possesses at least three mutant a alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying invasion of a recessive sterility allele are
+Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis again simplifies. Provided that the perturbation is small (i.e. that $ϵ≪1$), only six colony types, AA,0, AA,1, Aa,0, AA,2, Aa,1, and aa,0, determine whether or not the recessive worker sterility allele invades. Any other colony type is headed by a queen that possesses at least three mutant $a$ alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying invasion of a recessive sterility allele are
 
-(21)X˙⁢AA,0=xA⁢A⁢yAn-ϕ⁢XA⁢A,0X˙A⁢A,1=n⁢xA⁢A⁢yAn-1⁢ya-ϕ⁢XA⁢A,1X˙A⁢a,0=xA⁢a⁢yAn-ϕ⁢XA⁢a,0X˙A⁢A,2=n⁢(n-1)2⁢xA⁢A⁢yAn-2⁢ya2-ϕ⁢XA⁢A,2X˙A⁢a,1=n⁢xA⁢a⁢yAn-1⁢ya-ϕ⁢XA⁢a,1X˙a⁢a,0=xa⁢a⁢yAn-ϕ⁢Xa⁢a,0
+$$
+X˙_{⁢AA,0}=x_{A⁢A}⁢y_{A}^{n}-ϕ⁢X_{A⁢A,0}X˙_{A⁢A,1}=n⁢x_{A⁢A}⁢y_{A}^{n-1}⁢y_{a}-ϕ⁢X_{A⁢A,1}X˙_{A⁢a,0}=x_{A⁢a}⁢y_{A}^{n}-ϕ⁢X_{A⁢a,0}X˙_{A⁢A,2}=\frac{n⁢(n-1)}{2}⁢x_{A⁢A}⁢y_{A}^{n-2}⁢y_{a}^{2}-ϕ⁢X_{A⁢A,2}X˙_{A⁢a,1}=n⁢x_{A⁢a}⁢y_{A}^{n-1}⁢y_{a}-ϕ⁢X_{A⁢a,1}X˙_{a⁢a,0}=x_{a⁢a}⁢y_{A}^{n}-ϕ⁢X_{a⁢a,0}
+$$
 
-Recall that for analysis of the dominant allele, we only needed to consider terms of order ϵ to derive conditions for invasion of the allele. For analysis of the recessive allele, terms of order ϵ do not provide sufficient information for determining if the allele invades, which adds a level of tedium to the calculation. Formally keeping track of powers of ϵ and ϵ2, and disregarding higher-order terms, we have:
+Recall that for analysis of the dominant allele, we only needed to consider terms of order $ϵ$ to derive conditions for invasion of the allele. For analysis of the recessive allele, terms of order $ϵ$ do not provide sufficient information for determining if the allele invades, which adds a level of tedium to the calculation. Formally keeping track of powers of $ϵ$ and $ϵ^{2}$, and disregarding higher-order terms, we have:
 
-(22)XA⁢A,0=1-ϵ⁢δA⁢A,0(1)-ϵ2⁢δA⁢A,0(2)-⁢O(ϵ3)XA⁢A,1=+ϵ⁢δA⁢A,1(1)+ϵ2⁢δA⁢A,1(2)+O⁢(ϵ3)XA⁢a,0=+ϵ⁢δA⁢a,0(1)+ϵ2⁢δA⁢a,0(2)+O(ϵ3)XA⁢A,2=+ϵ2⁢δA⁢A,2(2)+O(ϵ3)XA⁢a,1=+ϵ2⁢δA⁢a,1(2)+O(ϵ3)Xa⁢a,0=+ϵ2⁢δa⁢a,0(2)+O(ϵ3)
+$$
+X_{A⁢A,0}=1-ϵ⁢\delta_{A⁢A,0}^{(1)}-ϵ^{2}⁢\delta_{A⁢A,0}^{(2)}-⁢O(ϵ^{3})X_{A⁢A,1}=+ϵ⁢\delta_{A⁢A,1}^{(1)}+ϵ^{2}⁢\delta_{A⁢A,1}^{(2)}+O⁢(ϵ^{3})X_{A⁢a,0}=+ϵ⁢\delta_{A⁢a,0}^{(1)}+ϵ^{2}⁢\delta_{A⁢a,0}^{(2)}+O(ϵ^{3})X_{A⁢A,2}=+ϵ^{2}⁢\delta_{A⁢A,2}^{(2)}+O(ϵ^{3})X_{A⁢a,1}=+ϵ^{2}⁢\delta_{A⁢a,1}^{(2)}+O(ϵ^{3})X_{a⁢a,0}=+ϵ^{2}⁢\delta_{a⁢a,0}^{(2)}+O(ϵ^{3})
+$$
 
-The simplified density constraint, Equation 18, holds regardless of whether the sterility allele under consideration is dominant or recessive. To further simplify the density constraint (Equation 12) for the case of a recessive sterility allele, we substitute (Equation 22) into (Equation 12) and collect powers of ϵ2. We get
+The simplified density constraint, Equation 18, holds regardless of whether the sterility allele under consideration is dominant or recessive. To further simplify the density constraint (Equation 12) for the case of a recessive sterility allele, we substitute (Equation 22) into (Equation 12) and collect powers of $ϵ^{2}$. We get
 
-(23)δA⁢A,0(2)=δA⁢A,1(2)+δA⁢a,0(2)+δA⁢A,2(2)+δA⁢a,1(2)+δa⁢a,0(2)
+$$
+\delta_{A⁢A,0}^{(2)}=\delta_{A⁢A,1}^{(2)}+\delta_{A⁢a,0}^{(2)}+\delta_{A⁢A,2}^{(2)}+\delta_{A⁢a,1}^{(2)}+\delta_{a⁢a,0}^{(2)}
+$$
 
-Next, we substitute (Equation 22) into (Equation 15), using the density constraints (Equation 18) and (Equation 23) and keeping terms up to order ϵ2:
+Next, we substitute (Equation 22) into (Equation 15), using the density constraints (Equation 18) and (Equation 23) and keeping terms up to order $ϵ^{2}$:
 
-(24)xA⁢A⁢r0-1=  1+ϵ-1nδA⁢A,1(1)-12δA⁢a,0(1)+ϵ2-1nδA⁢A,1(2)-12δA⁢a,0(2)-2nδA⁢A,2(2)+-2⁢n+(n-1)⁢r12⁢n⁢r0-12⁢nδA⁢a,1(2)-δa⁢a,0(2)+O(ϵ3)xA⁢a⁢r0-1=ϵ1nδA⁢A,1(1)+12δA⁢a,0(1)+ϵ21nδA⁢A,1(2)+12δA⁢a,0(2)+2nδA⁢A,2(2)+⁢r12⁢n⁢r0-12⁢δA⁢a,1(2)+δa⁢a,0(2)+O(ϵ3)xa⁢a⁢r0-1=ϵ2⁢r12⁢n⁢r0-12n⁢δA⁢a,1(2)+O(ϵ3)yA⁢r0-1= 1+ϵ-1-p02⁢nδA⁢A,1(1)-1+p04δA⁢a,0(1)+ϵ2[-1-p02⁢nδA⁢A,1(2)-1+p04δA⁢a,0(2)-1-p0n⁢δA⁢A,2(2)                 +2-4⁢n-2-n3-p12⁢n⁢-p12⁢nr12⁢n⁢r0-12⁢(2⁢n-1)⁢δA⁢a,1(2)-1+p02δa⁢a,0(2)]+O(ϵ3)ya⁢r0-1= ϵ1-p02⁢nδA⁢A,1(1)+1+p04δA⁢a,0(1)+ϵ2[1-p02⁢nδA⁢A,1(2)+1+p04δA⁢a,0(2)+1-p0n⁢δA⁢A,2(2)                 +n+(n - 1)p12⁢nr12⁢n⁢r0-12⁢(2⁢n-1)⁢δA⁢a,1(2)+1+p02δa⁢a,0(2)]+O(ϵ3)
+$$
+x_{A⁢A}⁢r_{0}^{-1}=  1+ϵ\frac{-1}{n}\delta_{A⁢A,1}^{(1)}-\frac{1}{2}\delta_{A⁢a,0}^{(1)}+ϵ^{2}\frac{-1}{n}\delta_{A⁢A,1}^{(2)}-\frac{1}{2}\delta_{A⁢a,0}^{(2)}-\frac{2}{n}\delta_{A⁢A,2}^{(2)}+\frac{-2⁢n+(n-1)⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2⁢n}\delta_{A⁢a,1}^{(2)}-\delta_{a⁢a,0}^{(2)}+O(ϵ^{3})x_{A⁢a}⁢r_{0}^{-1}=ϵ\frac{1}{n}\delta_{A⁢A,1}^{(1)}+\frac{1}{2}\delta_{A⁢a,0}^{(1)}+ϵ^{2}\frac{1}{n}\delta_{A⁢A,1}^{(2)}+\frac{1}{2}\delta_{A⁢a,0}^{(2)}+\frac{2}{n}\delta_{A⁢A,2}^{(2)}+\frac{⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2⁢}\delta_{A⁢a,1}^{(2)}+\delta_{a⁢a,0}^{(2)}+O(ϵ^{3})x_{a⁢a}⁢r_{0}^{-1}=ϵ^{2}\frac{⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2n⁢}\delta_{A⁢a,1}^{(2)}+O(ϵ^{3})y_{A}⁢r_{0}^{-1}= 1+ϵ-\frac{1-p_{0}}{2⁢n}\delta_{A⁢A,1}^{(1)}-\frac{1+p_{0}}{4}\delta_{A⁢a,0}^{(1)}+ϵ^{2}[-\frac{1-p_{0}}{2⁢n}\delta_{A⁢A,1}^{(2)}-\frac{1+p_{0}}{4}\delta_{A⁢a,0}^{(2)}-\frac{1-p_{0}}{n}⁢\delta_{A⁢A,2}^{(2)}                 +\frac{2-4⁢n-2-n3-p_{\frac{1}{2⁢n}}⁢-p_{\frac{1}{2⁢n}}r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2⁢(2⁢n-1)}⁢\delta_{A⁢a,1}^{(2)}-\frac{1+p_{0}}{2}\delta_{a⁢a,0}^{(2)}]+O(ϵ^{3})y_{a}⁢r_{0}^{-1}= ϵ\frac{1-p_{0}}{2⁢n}\delta_{A⁢A,1}^{(1)}+\frac{1+p_{0}}{4}\delta_{A⁢a,0}^{(1)}+ϵ^{2}[\frac{1-p_{0}}{2⁢n}\delta_{A⁢A,1}^{(2)}+\frac{1+p_{0}}{4}\delta_{A⁢a,0}^{(2)}+\frac{1-p_{0}}{n}⁢\delta_{A⁢A,2}^{(2)}                 +\frac{n+(n - 1)p_{\frac{1}{2⁢n}}r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2⁢(2⁢n-1)}⁢\delta_{A⁢a,1}^{(2)}+\frac{1+p_{0}}{2}\delta_{a⁢a,0}^{(2)}]+O(ϵ^{3})
+$$
 
-By plugging (Equation 24) and (Equation 22) into (Equation 21), using the density constraint (Equation 18), and collecting powers of ϵ, we find
+By plugging (Equation 24) and (Equation 22) into (Equation 21), using the density constraint (Equation 18), and collecting powers of $ϵ$, we find
 
-δ˙A⁢A,1(1)=-1+p02r0n+1δA⁢A,1(1)+n1+p04r0n+1δAa,0(1)
+$$
+\delta˙_{A⁢A,1}^{(1)}=\frac{-1+p_{0}}{2}r_{0}^{n+1}\delta_{A⁢A,1}^{(1)}+\frac{n1+p_{0}}{4}r_{0}^{n+1}\delta_{Aa,0}^{(1)}
+$$
 
-δ˙A⁢a,0(1)=1nr0n+1δA⁢A,1(1)-12r0n+1δAa,0(1)
+$$
+\delta˙_{A⁢a,0}^{(1)}=\frac{1}{n}r_{0}^{n+1}\delta_{A⁢A,1}^{(1)}-\frac{1}{2}r_{0}^{n+1}\delta_{Aa,0}^{(1)}
+$$
 
-The equations for δ˙A⁢A,1(1) and δ˙A⁢a,0(1) can be written in matrix form as
+The equations for $\delta˙_{A⁢A,1}^{(1)}$ and $\delta˙_{A⁢a,0}^{(1)}$ can be written in matrix form as
 
-δ˙A⁢A,1(1)δ˙A⁢a,0(1)=r0n+1⁢-(1+p0)2n⁢(1+p0)41n-12δA⁢A,1(1)δA⁢a,0(1)⁢
+$$
+\delta˙_{A⁢A,1}^{(1)}\delta˙_{A⁢a,0}^{(1)}=r_{0}^{n+1}⁢\frac{-(1+p_{0})}{2}\frac{n⁢(1+p_{0})}{4}\frac{1}{n}\frac{-1}{2}\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}⁢
+$$
 
-The two eigenvectors (v0 and v-) and their corresponding eigenvalues (λ0 and λ-) are
+The two eigenvectors ($v_{0}$ and $v_{-}$) and their corresponding eigenvalues ($\lambda_{0}$ and $\lambda_{-}$) are
 
-v0=n2      λ0  = 0
+$$
+v_{0}=n2      \lambda_{0 } = 0
+$$
 
-v-= n⁢(1+p0)-2      λ-=-(2+p0)2⁢r0n+1
+$$
+v_{-}= n⁢(1+p_{0})-2      \lambda_{-}=\frac{-(2+p_{0})}{2}⁢r_{0}^{n+1}
+$$
 
-Notice that the dominant eigenvalue is equal to zero, so a computation to leading order in ϵ cannot provide information on the invasion of the recessive sterility allele.
+Notice that the dominant eigenvalue is equal to zero, so a computation to leading order in $ϵ$ cannot provide information on the invasion of the recessive sterility allele.
 
-We can also see this more formally. An arbitrary initial perturbation to a resident A population can be written as a linear superposition of the eigenvectors v0 and v-:
+We can also see this more formally. An arbitrary initial perturbation to a resident A population can be written as a linear superposition of the eigenvectors $v_{0}$ and $v_{-}$:
 
-(25)δA⁢A,1(1)δA⁢a,0(1)=C0⁢n2+C-⁢n⁢(1+p0)-2⁢ exp -(2+p0)2⁢r0n+1⁢t
+$$
+\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}=C_{0}⁢n2+C_{-}⁢n⁢(1+p_{0})-2⁢ exp \frac{-(2+p_{0})}{2}⁢r_{0}^{n+1}⁢t
+$$
 
-Here C0 and C− are constants. We can substitute (Equation 24) and (Equation 22) into (Equation 21), using the density constraints (Equation 18) and (Equation 23), keeping terms of order ϵ and ϵ2, and dividing each term by one factor of ϵ. We obtain
+Here C0 and C− are constants. We can substitute (Equation 24) and (Equation 22) into (Equation 21), using the density constraints (Equation 18) and (Equation 23), keeping terms of order $ϵ$ and $ϵ^{2}$, and dividing each term by one factor of $ϵ$. We obtain
 
-(26)-⁢δ˙A⁢A,0(1)-ϵ⁢δ˙A⁢A,0(2)⁢r0-(n+1)=2-n-n⁢p04⁢n-2δA⁢A,1(1)+nδA⁢a,0(1)+ϵ[2-n-n⁢p04⁢n-2δA⁢A,1(2)+nδA⁢a,0(2)+-2+n⁢p0n⁢δA⁢A,2(2)+r12⁢n⁢r0-1-n2+r12⁢n⁢r0-1-n4-2+n+(n-1)⁢p12⁢n⁢r12⁢n⁢r0-12⁢n⁢(2⁢n-1)⁢δA⁢a,1(2)-n⁢(1+p0)2⁢δa⁢a,0(2)+(1-p0)⁢[3+n⁢(1-p0)+p0]8⁢n⁢[δA⁢A,1(1)]2+n⁢(1+p0)⁢[3+n+(n-1)⁢p0]32⁢[δA⁢a,0(1)]2+3+n-(n-1)⁢p028δA⁢A,1(1)δA⁢a,0(1)]
+$$
+-⁢\delta˙_{A⁢A,0}^{(1)}-ϵ⁢\delta˙_{A⁢A,0}^{(2)}⁢r_{0}^{-(n+1)}=\frac{2-n-n⁢p_{0}}{4⁢n}-2\delta_{A⁢A,1}^{(1)}+n\delta_{A⁢a,0}^{(1)}+ϵ[\frac{2-n-n⁢p_{0}}{4⁢n}-2\delta_{A⁢A,1}^{(2)}+n\delta_{A⁢a,0}^{(2)}+\frac{-2+n⁢p_{0}}{n}⁢\delta_{A⁢A,2}^{(2)}+\frac{r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n2+r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n4-2+n+(n-1)⁢p_{\frac{1}{2⁢n}}⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{2⁢n⁢(2⁢n-1)}⁢\delta_{A⁢a,1}^{(2)}-\frac{n⁢(1+p_{0})}{2}⁢\delta_{a⁢a,0}^{(2)}+\frac{(1-p_{0})⁢[3+n⁢(1-p_{0})+p_{0}]}{8⁢n}⁢[\delta_{A⁢A,1}^{(1)}]^{2}+\frac{n⁢(1+p_{0})⁢[3+n+(n-1)⁢p_{0}]}{32}⁢[\delta_{A⁢a,0}^{(1)}]^{2}+\frac{3+n-(n-1)⁢p_{0}^{2}}{8}\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}]
+$$
 
-We can again use the density constraints (Equation 18) and (Equation 23) to rewrite the left-hand side of (Equation 26). We can also substitute the general solution for the quantities δA⁢A,1(1) and δA⁢a,0(1), Equation 25, into the right-hand side of (Equation 26):
+We can again use the density constraints (Equation 18) and (Equation 23) to rewrite the left-hand side of (Equation 26). We can also substitute the general solution for the quantities $\delta_{A⁢A,1}^{(1)}$ and $\delta_{A⁢a,0}^{(1)}$, Equation 25, into the right-hand side of (Equation 26):
 
-(27)-δ˙A⁢A,1(1)-δ˙A⁢a,0(1) r0-(n+1)+ϵ[-δ˙A⁢A,1(2)-δ˙A⁢a,0(2)-δ˙A⁢A,2(2)-δ˙A⁢a,1(2)-δ˙a⁢a,0(2)]r0-(n+1)=2-n-npo4n[-2(nC0+n1+poC-exp-(2+p0)2r0n+1t)+n(2C0-2C-exp(-(2+p0)2r0n+1t))]+ϵ[2-n-n⁢p04⁢n(-2δA⁢A,1(2)+nδA⁢a,0(2))+-2+n⁢p0n⁢δA⁢A,2(2)+r12⁢n⁢r0-1-n⁢[2+r12⁢n⁢r0-1-n⁢(4-(2+n+(n-1)⁢p12⁢n)⁢r12⁢n⁢r0-1)]2⁢n⁢(2⁢n-1)⁢δA⁢a,1(2)-n⁢(1+p0)2⁢δa⁢a,0(2)+(1-p0)⁢[3+n⁢(1-p0)+p0]8⁢n⁢[δA⁢A,1(1)]2+n⁢(1+p0)⁢[3+n+(n-1)⁢p0]32⁢[δA⁢a,0(1)]2+3+n-(n-1)⁢p028δA⁢A,1(1)δA⁢a,0(1)]
+$$
+-\delta˙_{A⁢A,1}^{(1)}-\delta˙_{A⁢a,0}^{(1)} r_{0}^{-(n+1)}+ϵ[-\delta˙_{A⁢A,1}^{(2)}-\delta˙_{A⁢a,0}^{(2)}-\delta˙_{A⁢A,2}^{(2)}-\delta˙_{A⁢a,1}^{(2)}-\delta˙_{a⁢a,0}^{(2)}]r_{0}^{-(n+1)}=\frac{2-n-np_{o}}{4n}[-2(nC_{0}+n1+p_{o}C_{-}exp\frac{-(2+p_{0})}{2}r_{0}^{n+1}t)+n(2C_{0}-2C_{-}exp(\frac{-(2+p_{0})}{2}r_{0}^{n+1}t))]+ϵ[\frac{2-n-n⁢p_{0}}{4⁢n}(-2\delta_{A⁢A,1}^{(2)}+n\delta_{A⁢a,0}^{(2)})+\frac{-2+n⁢p_{0}}{n}⁢\delta_{A⁢A,2}^{(2)}+\frac{r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n⁢[2+r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n⁢(4-(2+n+(n-1)⁢p_{\frac{1}{2⁢n}})⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1})]}{2⁢n⁢(2⁢n-1)}⁢\delta_{A⁢a,1}^{(2)}-\frac{n⁢(1+p_{0})}{2}⁢\delta_{a⁢a,0}^{(2)}+\frac{(1-p_{0})⁢[3+n⁢(1-p_{0})+p_{0}]}{8⁢n}⁢[\delta_{A⁢A,1}^{(1)}]^{2}+\frac{n⁢(1+p_{0})⁢[3+n+(n-1)⁢p_{0}]}{32}⁢[\delta_{A⁢a,0}^{(1)}]^{2}+\frac{3+n-(n-1)⁢p_{0}^{2}}{8}\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}]
+$$
 
-Note that each term in (Equation 27) involving the quantities δA⁢A,1(2), δA⁢a,0(2), δA⁢A,2(2), δA⁢a,1(2), and δa⁢a,0(2) is multiplied by ϵ. In the limit ϵ→0, the quantities δA⁢A,1(2), δA⁢a,0(2), δA⁢A,2(2), δA⁢a,1(2), and δa⁢a,0(2) do not affect the dynamics of the quantities δA⁢A,1(1) and δA⁢a,0(1). However, the quantities δA⁢A,1(1) and δA⁢a,0(1) alone tell us nothing about whether or not the recessive sterility allele invades a resident A population. Therefore, we must consider the terms of order ϵ2 in our dynamical equations (Equation 21) to determine if a rare a allele can invade a resident A population. In our calculations that follow, we use the eigenvector v0 corresponding to the zero eigenvalue, i.e.
+Note that each term in (Equation 27) involving the quantities $\delta_{A⁢A,1}^{(2)}$, $\delta_{A⁢a,0}^{(2)}$, $\delta_{A⁢A,2}^{(2)}$, $\delta_{A⁢a,1}^{(2)}$, and $\delta_{a⁢a,0}^{(2)}$ is multiplied by $ϵ$. In the limit $ϵ→0$, the quantities $\delta_{A⁢A,1}^{(2)}$, $\delta_{A⁢a,0}^{(2)}$, $\delta_{A⁢A,2}^{(2)}$, $\delta_{A⁢a,1}^{(2)}$, and $\delta_{a⁢a,0}^{(2)}$ do not affect the dynamics of the quantities $\delta_{A⁢A,1}^{(1)}$ and $\delta_{A⁢a,0}^{(1)}$. However, the quantities $\delta_{A⁢A,1}^{(1)}$ and $\delta_{A⁢a,0}^{(1)}$ alone tell us nothing about whether or not the recessive sterility allele invades a resident $A$ population. Therefore, we must consider the terms of order $ϵ^{2}$ in our dynamical equations (Equation 21) to determine if a rare $a$ allele can invade a resident $A$ population. In our calculations that follow, we use the eigenvector $v_{0}$ corresponding to the zero eigenvalue, i.e.
 
-(28)δA⁢A,1(1)δA⁢a,0(1)=δA⁢A,0(1)n+2⁢n2
+$$
+\delta_{A⁢A,1}^{(1)}\delta_{A⁢a,0}^{(1)}=\frac{\delta_{A⁢A,0}^{(1)}}{n+2}⁢n2
+$$
 
-Substituting (Equation 24), (Equation 22), and (Equation 28) into (Equation 21), using the density constraints (Equation 18) and (Equation 23), and keeping terms of order ϵ2, we have
+Substituting (Equation 24), (Equation 22), and (Equation 28) into (Equation 21), using the density constraints (Equation 18) and (Equation 23), and keeping terms of order $ϵ^{2}$, we have
 
-(29)-δ˙A⁢A,0(2)⁢r0-(n+1)=2-n-np04n-2δA⁢A,1(2)-nδAa,0(2)+-2+n⁢p0n⁢δA⁢A,2(2)+r12⁢n⁢r0-1-n⁢[2+r12⁢n⁢r0-1-n⁢(4-(2+n+(n-1)⁢p12⁢n)⁢r12⁢n⁢r0-1)]2⁢n⁢(2⁢n-1)⁢δA⁢a,1(2)-n⁢(1+p0)2⁢δa⁢a,0(2)+n⁢(n+3)2⁢(n+2)2⁢[δA⁢A,0(1)]2
+$$
+-\delta˙_{A⁢A,0}^{(2)}⁢r_{0}^{-(n+1)}=\frac{2-n-np_{0}}{4n}-2\delta_{A⁢A,1}^{(2)}-n\delta_{Aa,0}^{(2)}+\frac{-2+n⁢p_{0}}{n}⁢\delta_{A⁢A,2}^{(2)}+\frac{r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n⁢[2+r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}-n⁢(4-(2+n+(n-1)⁢p_{\frac{1}{2⁢n}})⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1})]}{2⁢n⁢(2⁢n-1)}⁢\delta_{A⁢a,1}^{(2)}-\frac{n⁢(1+p_{0})}{2}⁢\delta_{a⁢a,0}^{(2)}+\frac{n⁢(n+3)}{2⁢(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}
+$$
 
 We also have
 
-δ˙A⁢A,1(2)r0-(n+1)=1+p04-2δA⁢A,1(2)+nδAa,0(2)             +(1-p0)⁢δA⁢A,2                                             (2)+n[n+(n-1)⁢p12⁢n]2⁢(2⁢n-1)⁢ r12⁢n⁢r0-1⁢δA⁢a,1(2)+n⁢(1+p0)2⁢δa⁢a,0(2)                              -n⁢(n+1)(n+2)2⁢[δA⁢A,0(1)]2                            δ˙A⁢a,0(2)r0-(n+1)=-12n-2δA⁢A,1(2)+nδAa,0(2)                 +2n⁢δA⁢A,2(2)                                           +12⁢r12⁢n⁢r0-1⁢δA⁢a,1(2)                              +δa⁢a,0                                                                  (2)-2⁢n(n+2)2⁢[δA⁢A,0(1)]2                           δ˙A⁢A,2(2)⁢r0-(n+1)=-δA⁢A,2(2)+n⁢(n-1)2⁢(n+2)2⁢[⁢δAA,0(1)]2           δ˙A⁢a,1(2)⁢r0-(n+1) =-δA⁢a,1(2)+2⁢n(n+2)2⁢[δA⁢A,0(1)]2               δ˙aa,0(2)⁢⁢r0-(n+1)=-δa⁢a,0(2)+12⁢n⁢r12⁢n⁢r0-1⁢δA⁢a,1(2)
+$$
+\delta˙_{A⁢A,1}^{(2)}r_{0}^{-(n+1)}=\frac{1+p_{0}}{4}-2\delta_{A⁢A,1}^{(2)}+n\delta_{Aa,0}^{(2)}             +(1-p_{0})⁢\delta_{A⁢A,2                                             }^{(2)}+\frac{n[n+(n-1)⁢p_{\frac{1}{2⁢n}}]}{2⁢(2⁢n-1)}⁢ r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}⁢\delta_{A⁢a,1}^{(2)}+\frac{n⁢(1+p_{0})}{2}⁢\delta_{a⁢a,0}^{(2)}                              -\frac{n⁢(n+1)}{(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}                            \delta˙_{A⁢a,0}^{(2)}r_{0}^{-(n+1)}=\frac{-1}{2n}-2\delta_{A⁢A,1}^{(2)}+n\delta_{Aa,0}^{(2)}                 +\frac{2}{n}⁢\delta_{A⁢A,2}^{(2)}                                           +\frac{1}{2}⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}⁢\delta_{A⁢a,1}^{(2)}                              +\delta_{a⁢a,0                                                                  }^{(2)}-\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}                           \delta˙_{A⁢A,2}^{(2)}⁢r_{0}^{-(n+1)}=-\delta_{A⁢A,2}^{(2)}+\frac{n⁢(n-1)}{2⁢(n+2)^{2}}⁢[⁢\delta_{AA,0}^{(1)}]^{2}           \delta˙_{A⁢a,1}^{(2)}⁢r_{0}^{-(n+1) }=-\delta_{A⁢a,1}^{(2)}+\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}               \delta˙_{aa,0}^{(2)}⁢⁢r_{0}^{-(n+1)}=-\delta_{a⁢a,0}^{(2)}+\frac{1}{2⁢n}⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}⁢\delta_{A⁢a,1}^{(2)}                
+$$
 
-We can directly integrate the equation for δ˙A⁢A,2(2). We get
+We can directly integrate the equation for $\delta˙_{A⁢A,2}^{(2)}$. We get
 
-(30)δA⁢A,2(2)=n⁢(n-1)2⁢(n+2)2⁢[δA⁢A,0(1)]2⁢[1-exp -r0n+1t⁢]
+$$
+\delta_{A⁢A,2}^{(2)}=\frac{n⁢(n-1)}{2⁢(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}⁢[1-exp -r_{0}^{n+1}t⁢]
+$$
 
-We can also directly integrate the equation for δ˙A⁢a,1(2). We get
+We can also directly integrate the equation for $\delta˙_{A⁢a,1}^{(2)}$. We get
 
-(31)δA⁢a,1(2)=2⁢n(n+2)2⁢[δA⁢A,0(1)]2⁢[1-exp -r0n+1⁢t]
+$$
+\delta_{A⁢a,1}^{(2)}=\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}⁢[1-exp -r_{0}^{n+1}⁢t]
+$$
 
-We can use the solution for δA⁢a,1(2) to solve for δa⁢a,0(2). We get
+We can use the solution for $\delta_{A⁢a,1}^{(2)}$ to solve for $\delta_{a⁢a,0}^{(2)}$. We get
 
-(32)δa⁢a,0(2)=r12⁢nr0⁢(n+2)2⁢[δA⁢A,0(1)]2⁢[1-(1+r0n+1⁢t) ⁢exp (-r0n+1⁢t)]
+$$
+\delta_{a⁢a,0}^{(2)}=\frac{r_{\frac{1}{2⁢n}}}{r_{0}⁢(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}⁢[1-(1+r_{0}^{n+1}⁢t) ⁢exp (-r_{0}^{n+1}⁢t)]
+$$
 
-Manipulating the equations for δ˙A⁢A,1(2) and δ˙A⁢a,0(2), we find that
+Manipulating the equations for $\delta˙_{A⁢A,1}^{(2)}$ and $\delta˙_{A⁢a,0}^{(2)}$, we find that
 
-r0-(n+1)dd⁢t⁢⁢(-2⁢δA⁢A,1(2)+n⁢δA⁢a,0(2))=-(2+p0)2(-2⁢δA⁢A,1(2)+n⁢δA⁢a,0(2))+2⁢p0⁢δA⁢A,2(2)-n⁢[1+2⁢(n-1)⁢p12⁢n]2⁢(2⁢n-1)⁢r12⁢n⁢r0-1⁢δA⁢a,1(2)-n⁢p0⁢δa⁢a,0(2)+2⁢n(n+2)2⁢[δA⁢A,0(1)]2
+$$
+r_{0}^{-(n+1)}\frac{d}{d⁢t}⁢⁢(-2⁢\delta_{A⁢A,1}^{(2)}+n⁢\delta_{A⁢a,0}^{(2)})=\frac{-(2+p_{0})}{2}(-2⁢\delta_{A⁢A,1}^{(2)}+n⁢\delta_{A⁢a,0}^{(2)})+2⁢p_{0}⁢\delta_{A⁢A,2}^{(2)}-\frac{n⁢[1+2⁢(n-1)⁢p_{\frac{1}{2⁢n}}]}{2⁢(2⁢n-1)}⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}⁢\delta_{A⁢a,1}^{(2)}-n⁢p_{0}⁢\delta_{a⁢a,0}^{(2)}+\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{A⁢A,0}^{(1)}]^{2}
+$$
 
-We can integrate this equation to solve for the quantity -2⁢δA⁢A,1(2)+n⁢δA⁢a,0(2). We obtain
+We can integrate this equation to solve for the quantity $-2⁢\delta_{A⁢A,1}^{(2)}+n⁢\delta_{A⁢a,0}^{(2)}$. We obtain
 
-(33)-2⁢δA⁢A,1(2)+n⁢δA⁢a,0(2)=[2⁢n⁢[p0-n⁢(1+2⁢p0+2⁢(n-1)⁢p12⁢n)]⁢r12⁢n⁢r0-1(n+2)2⁢(2+p0)⁢(2⁢n-1)+2⁢n⁢[2+(n-1)⁢p0](n+2)2⁢(2+p0)][δA⁢A,0(1)]2+[2⁢n⁢[2-3⁢n+2⁢(n-1)⁢n⁢p12⁢n]⁢r12⁢n⁢r0-1(n+2)2⁢p0⁢(2⁢n-1)-2⁢n⁢[n-1-r12⁢n⁢r0-1⁢(1+r0n+1⁢t)](n+2)2][δA⁢A,0(1)]2exp(-r0n+1t)+[4⁢n⁢[n⁢(3-2⁢(n-1)⁢p12⁢n)-2]⁢r12⁢n⁢r0-1(n+2)2⁢p0⁢(2+p0)⁢(2⁢n-1)+4⁢n⁢(n-2)(n+2)2⁢(2+p0)][δA⁢A,0(1)]2 exp -(2+p0)2r0n+1t
+$$
+-2⁢\delta_{A⁢A,1}^{(2)}+n⁢\delta_{A⁢a,0}^{(2)}=[\frac{2⁢n⁢[p_{0}-n⁢(1+2⁢p_{0}+2⁢(n-1)⁢p_{\frac{1}{2⁢n}})]⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{(n+2)^{2}⁢(2+p_{0})⁢(2⁢n-1)}+\frac{2⁢n⁢[2+(n-1)⁢p_{0}]}{(n+2)^{2}⁢(2+p_{0})}][\delta_{A⁢A,0}^{(1)}]^{2}+[\frac{2⁢n⁢[2-3⁢n+2⁢(n-1)⁢n⁢p_{\frac{1}{2⁢n}}]⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{(n+2)^{2}⁢p_{0}⁢(2⁢n-1)}-\frac{2⁢n⁢[n-1-r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}⁢(1+r_{0}^{n+1}⁢t)]}{(n+2)^{2}}][\delta_{A⁢A,0}^{(1)}]^{2}exp(-r_{0}^{n+1}t)+[\frac{4⁢n⁢[n⁢(3-2⁢(n-1)⁢p_{\frac{1}{2⁢n}})-2]⁢r_{\frac{1}{2⁢n}}⁢r_{0}^{-1}}{(n+2)^{2}⁢p_{0}⁢(2+p_{0})⁢(2⁢n-1)}+\frac{4⁢n⁢(n-2)}{(n+2)^{2}⁢(2+p_{0})}][\delta_{A⁢A,0}^{(1)}]^{2} exp \frac{-(2+p_{0})}{2}r_{0}^{n+1}t
+$$
 
-To determine if the resident A population is unstable to invasion by the a allele, we must consider the regime 1≪t≪ϵ-1. Notice that on a short time scale, each of the time-dependent terms in Equations 30–33 will approach zero. We must consider the sign of δ˙A⁢A,0(2) in the limit of large times t≫1 but before the terms in (Equation 22) become comparable in magnitude. Our condition for invasion of the sterility allele is therefore
+To determine if the resident A population is unstable to invasion by the $a$ allele, we must consider the regime $1≪t≪ϵ^{-1}$. Notice that on a short time scale, each of the time-dependent terms in Equations 30–33 will approach zero. We must consider the sign of $\delta˙_{A⁢A,0}^{(2)}$ in the limit of large times $t≫1$ but before the terms in (Equation 22) become comparable in magnitude. Our condition for invasion of the sterility allele is therefore
 
-(34)limϵ⁢t→0t→∞δ˙AA,0(2)>0
+$$
+limϵ⁢t→0t→∞\delta˙_{AA,0}^{(2)}>0
+$$
 
 Substituting (Equations 29–33) into (Equation 34), we find that the recessive allele for worker sterility increases in frequency if
 
-r12⁢nr0>2⁢(2⁢n-1)⁢(2+n+n⁢p0)2⁢n2⁢(2+p0+p12⁢n)+n⁢(3+3⁢p0-2⁢p12⁢n)-2⁢(1+p0)
+$$
+\frac{r_{\frac{1}{2⁢n}}}{r_{0}}>\frac{2⁢(2⁢n-1)⁢(2+n+n⁢p_{0})}{2⁢n^{2}⁢(2+p_{0}+p_{\frac{1}{2⁢n}})+n⁢(3+3⁢p_{0}-2⁢p_{\frac{1}{2⁢n}})-2⁢(1+p_{0})}
+$$
 
 In the Results, we focused on single and double mating. Figure 3A shows that fairly large efficiency increases from non-reproductive workers (around 10–20%) are needed for sterility to invade.
 
 Figure 3A also shows how the number of matings affects the invasion of non-reproductive workers for different values of the parameters r1/4 and r1/2. Sample forms of the functions pz and rz are shown in Figure 7A,B. For Figure 7A, we have p0 = 0.8, p1/4 = 0.85, r0 = 1, r1/4 = 1.02, and r1/2 = 1.026; i.e., pz increases linearly in z, while rz increases sublinearly in z. For these values of pz and rz, sterility invades for double mating (n = 2) but not for single mating (n = 1). For Figure 7B, we have p0 = 0.8, p1/4 = 0.9, r0 = 1, r1/4 = 1.013, and r1/2 = 1.026; i.e., pz increases sublinearly in z, while rz increases linearly in z. For these values of pz and rz, sterility invades for double mating (n = 2) but not for single mating (n = 1).
 
-In
+In Figure 9, we show the values of the parameters r1/6 and r1/4 for which non-reproductive workers can invade for double and triple mating. There are many possibilities. For example, it is possible that worker sterility evolves for triple mating but not for double or single mating. Sample forms of the functions pz and rz are shown in Figure 10A,B. For Figure 10A, we have p0 = 0.1, p1/6 = 0.25, p1/4 = 0.325, r0 = 1, r1/6 = 1.095, r1/4 = 1.117, and r1/2 = 1.16; i.e., pz increases linearly in z, while rz increases sublinearly in z. For these values of pz and rz, sterility invades for triple mating (n = 3) but not for double mating (n = 2) or single mating (n = 1). For Figure 10B, we have p0 = 0.2, p1/6 = 0.5, p1/4 = 0.6, r0 = 1, r1/6 = 1.04, r1/4 = 1.06, and r1/2 = 1.12; i.e., pz increases sublinearly in z, while rz increases linearly in z. For these values of pz and rz, sterility invades for triple mating (n = 3) but not for double mating (n = 2) or single mating (n = 1).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig9-v2.jpg)
 
-**Figure 9.:** For double mating, n = 2, the invasion of a recessive worker sterility allele depends on the parameters p0, p1/4, and r1/4; for triple mating, n = 3, it depends on the parameters p0, p1/6, and r1/6. We set r0 = 1 as baseline.DOI: http://dx.doi.org/10.7554/eLife.08918.011
+**Figure 9.:** For double mating, n = 2, the invasion of a recessive worker sterility allele depends on the parameters p0, p1/4, and r1/4; for triple mating, n = 3, it depends on the parameters p0, p1/6, and r1/6. We set r0 = 1 as baseline.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/08918/elife-08918-fig10-v2.jpg)
 
-**Figure 10.:** n = 1), double mating (n = 2), and triple mating (n = 3) on the evolution of worker sterility.Whether or not triple mating favors the evolution of worker sterility depends on the functions p and zr. We consider a recessive mutant allele, za, for worker sterility. (A, B) For these parameter choices, the mutant allele causing worker sterility can invade for triple mating but not for double or single mating.DOI: http://dx.doi.org/10.7554/eLife.08918.012
+**Figure 10.:** Whether or not triple mating favors the evolution of worker sterility depends on the functions pz and rz. We consider a recessive mutant allele, a, for worker sterility. (A, B) For these parameter choices, the mutant allele causing worker sterility can invade for triple mating but not for double or single mating.
 
-## Stability of a dominant worker sterility allele
+#### Stability of a dominant worker sterility allele
 
-We assume that a dominant worker sterility allele has spread to fixation. We consider the evolutionary stability of a population consisting entirely of sterile workers to invasion by reproductive workers. What happens if we start with an infinitesimal quantity of the mutant allele, A, by perturbing the Xaa,n = 1 pure equilibrium: Xa⁢a,n→1-ϵ⁢δa⁢a,n(1), with ϵ≪1? Does the dominant worker sterility allele return to fixation, or is it invaded by the worker reproduction allele?
+We assume that a dominant worker sterility allele has spread to fixation. We consider the evolutionary stability of a population consisting entirely of sterile workers to invasion by reproductive workers. What happens if we start with an infinitesimal quantity of the mutant allele, A, by perturbing the Xaa,n = 1 pure equilibrium: $X_{a⁢a,n}→1-ϵ⁢\delta_{a⁢a,n}^{(1)}$, with $ϵ≪1$? Does the dominant worker sterility allele return to fixation, or is it invaded by the worker reproduction allele?
 
-Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis simplifies. Provided that the perturbation is small (i.e. that ϵ≪1), only six colony types, aa,n, aa,n − 1, Aa,n, aa,n − 2, Aa,n − 1, and AA,n, determine whether or not the dominant worker sterility allele is stable. Any other colony type is headed by a queen that possesses at least three mutant A alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying stability of a dominant sterility allele are
+Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis simplifies. Provided that the perturbation is small (i.e. that $ϵ≪1$), only six colony types, aa,n, aa,n − 1, Aa,n, aa,n − 2, Aa,n − 1, and AA,n, determine whether or not the dominant worker sterility allele is stable. Any other colony type is headed by a queen that possesses at least three mutant A alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying stability of a dominant sterility allele are
 
-(35)X˙a⁢a,n=xa⁢a⁢yan-ϕ⁢Xa⁢a,nX˙a⁢a,n-1=n⁢xa⁢a⁢yan-1⁢yA-ϕ⁢Xa⁢a,n-1X˙A⁢a,n=xA⁢a⁢yan-ϕ⁢XA⁢a,nX˙a⁢a,n-2=n⁢(n-1)2⁢xa⁢a⁢yan-2⁢yA2-ϕ⁢Xa⁢a,n-2X˙A⁢a,n-1=n⁢xA⁢a⁢yan-1⁢yA-ϕ⁢XA⁢a,n-1X˙A⁢A,n=xA⁢A⁢yan-ϕ⁢XA⁢A,n
+$$
+X˙_{a⁢a,n}=x_{a⁢a}⁢y_{a}^{n}-ϕ⁢X_{a⁢a,n}X˙_{a⁢a,n-1}=n⁢x_{a⁢a}⁢y_{a}^{n-1}⁢y_{A}-ϕ⁢X_{a⁢a,n-1}X˙_{A⁢a,n}=x_{A⁢a}⁢y_{a}^{n}-ϕ⁢X_{A⁢a,n}X˙_{a⁢a,n-2}=\frac{n⁢(n-1)}{2}⁢x_{a⁢a}⁢y_{a}^{n-2}⁢y_{A}^{2}-ϕ⁢X_{a⁢a,n-2}X˙_{A⁢a,n-1}=n⁢x_{A⁢a}⁢y_{a}^{n-1}⁢y_{A}-ϕ⁢X_{A⁢a,n-1}X˙_{A⁢A,n}=x_{A⁢A}⁢y_{a}^{n}-ϕ⁢X_{A⁢A,n}
+$$
 
-For analysis of the dominant sterility allele, terms of order ϵ do not provide sufficient information for determining whether the allele is stable, which adds a level of tedium to the calculation. Formally keeping track of powers of ϵ and ϵ2, and disregarding higher-order terms, we have:
+For analysis of the dominant sterility allele, terms of order $ϵ$ do not provide sufficient information for determining whether the allele is stable, which adds a level of tedium to the calculation. Formally keeping track of powers of $ϵ$ and $ϵ^{2}$, and disregarding higher-order terms, we have:
 
-(36)Xa⁢a,n=1-ϵ⁢δa⁢a,n(1)-ϵ2⁢δa⁢a,n(2)-O⁢(ϵ3)Xa⁢a,n-1=+ϵ⁢δa⁢a,n-1(1)+ϵ2⁢δa⁢a,n-1(2)+O(ϵ3)XA⁢a,n=+ϵ⁢δA⁢a,n(1)+ϵ2⁢δA⁢a,n(2)+O(ϵ3)Xa⁢a,n-2=+ϵ2⁢δa⁢a,n-2(2)+O(ϵ3)XA⁢a,n-1=+ϵ2⁢δA⁢a,n-1(2)+O(ϵ3)XA⁢A,n=+ϵ2⁢δA⁢A,n(2)+O⁢(ϵ3)
+$$
+X_{a⁢a,n}=1-ϵ⁢\delta_{a⁢a,n}^{(1)}-ϵ^{2}⁢\delta_{a⁢a,n}^{(2)}-O⁢(ϵ^{3})X_{a⁢a,n-1}=+ϵ⁢\delta_{a⁢a,n-1}^{(1)}+ϵ^{2}⁢\delta_{a⁢a,n-1}^{(2)}+O(ϵ^{3})X_{A⁢a,n}=+ϵ⁢\delta_{A⁢a,n}^{(1)}+ϵ^{2}⁢\delta_{A⁢a,n}^{(2)}+O(ϵ^{3})X_{a⁢a,n-2}=+ϵ^{2}⁢\delta_{a⁢a,n-2}^{(2)}+O(ϵ^{3})X_{A⁢a,n-1}=+ϵ^{2}⁢\delta_{A⁢a,n-1}^{(2)}+O(ϵ^{3})X_{A⁢A,n}=+ϵ^{2}⁢\delta_{A⁢A,n}^{(2)}+O⁢(ϵ^{3})
+$$
 
-To determine the density constraints, we substitute (Equation 36) into (Equation 12) and collect powers of ϵ and ϵ2. At order ϵ, we get
+To determine the density constraints, we substitute (Equation 36) into (Equation 12) and collect powers of $ϵ$ and $ϵ^{2}$. At order $ϵ$, we get
 
-(37)δa⁢a,n(1)=δa⁢a,n-1(1)+δA⁢a,n(1)
+$$
+\delta_{a⁢a,n}^{(1)}=\delta_{a⁢a,n-1}^{(1)}+\delta_{A⁢a,n}^{(1)}
+$$
 
-At order ϵ2, we get
+At order $ϵ^{2}$, we get
 
-(38)δa⁢a,n(2)=δa⁢a,n-1(2)+δA⁢a,n(2)+δa⁢a,n-2(2)+δA⁢a,n-1(2)+δA⁢A,n(2)
+$$
+\delta_{a⁢a,n}^{(2)}=\delta_{a⁢a,n-1}^{(2)}+\delta_{A⁢a,n}^{(2)}+\delta_{a⁢a,n-2}^{(2)}+\delta_{A⁢a,n-1}^{(2)}+\delta_{A⁢A,n}^{(2)}
+$$
 
-Next, we substitute (Equation 36) into (Equation 14), using the density constraints (Equation 37) and (Equation 38) and keeping terms up to order ϵ2:
+Next, we substitute (Equation 36) into (Equation 14), using the density constraints (Equation 37) and (Equation 38) and keeping terms up to order $ϵ^{2}$:
 
-(39)xa⁢a⁢r1-1=1+ϵ[-1nδa⁢a,n-1(1)-12δA⁢a,n(1)]+ϵ2[-1nδa⁢a,n-1(2)-12δA⁢a,n(2)-2nδa⁢a,n-2(2)+-2⁢n+(n-1)⁢r2⁢n-12⁢n⁢r1-12⁢nδA⁢a,n-1(2)-δA⁢A,n(2)]+O(ϵ3)xA⁢a⁢r1-1=ϵ[1nδa⁢a,n-1(1)+12δA⁢a,n(1)]+ϵ2[1nδa⁢a,n-1(2)+12δA⁢a,n(2)+2nδa⁢a,n-2(2)+r2⁢n-12⁢n⁢r1-12δA⁢a,n-1(2)+ δA⁢A,n(2)] + O(ϵ3) xA⁢A⁢r1-1=ϵ2[r2n-12nr1-12nδA⁢a,n-1(2)]+O(ϵ3)ya⁢r1-1=1+ϵ[-12δA⁢a,n(1)]+ϵ2[-12δA⁢a,n(2)+-2+p2⁢n-12⁢n⁢r2⁢n-12⁢n⁢r1-12δA⁢a,n-1(2)-δA⁢A,n(2)]+O(ϵ3)yA⁢r1-1=ϵ[12δA⁢a,n(1)]+ϵ2[12δA⁢a,n(2)+2-p2⁢n-12⁢n2r2⁢n-12⁢nr1-1δA⁢a,n-1(2)+ δA⁢A,n(2)]+O(ϵ3)
+$$
+x_{a⁢a}⁢r_{1}^{-1}=1+ϵ[\frac{-1}{n}\delta_{a⁢a,n-1}^{(1)}-\frac{1}{2}\delta_{A⁢a,n}^{(1)}]+ϵ^{2}[\frac{-1}{n}\delta_{a⁢a,n-1}^{(2)}-\frac{1}{2}\delta_{A⁢a,n}^{(2)}-\frac{2}{n}\delta_{a⁢a,n-2}^{(2)}+\frac{-2⁢n+(n-1)⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2⁢n}\delta_{A⁢a,n-1}^{(2)}-\delta_{A⁢A,n}^{(2)}]+O(ϵ^{3})x_{A⁢a}⁢r_{1}^{-1}=ϵ[\frac{1}{n}\delta_{a⁢a,n-1}^{(1)}+\frac{1}{2}\delta_{A⁢a,n}^{(1)}]+ϵ^{2}[\frac{1}{n}\delta_{a⁢a,n-1}^{(2)}+\frac{1}{2}\delta_{A⁢a,n}^{(2)}+\frac{2}{n}\delta_{a⁢a,n-2}^{(2)}+\frac{r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2}\delta_{A⁢a,n-1}^{(2)}+ \delta_{A⁢A,n}^{(2)}] + O(ϵ^{3}) x_{A⁢A}⁢r_{1}^{-1}=ϵ^{2}[\frac{r_{\frac{2n-1}{2n}}r_{1}^{-1}}{2n}\delta_{A⁢a,n-1}^{(2)}]+O(ϵ^{3})y_{a}⁢r_{1}^{-1}=1+ϵ[\frac{-1}{2}\delta_{A⁢a,n}^{(1)}]+ϵ^{2}[\frac{-1}{2}\delta_{A⁢a,n}^{(2)}+\frac{-2+p_{\frac{2⁢n-1}{2⁢n}}⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2}\delta_{A⁢a,n-1}^{(2)}-\delta_{A⁢A,n}^{(2)}]+O(ϵ^{3})y_{A}⁢r_{1}^{-1}=ϵ[\frac{1}{2}\delta_{A⁢a,n}^{(1)}]+ϵ^{2}[\frac{1}{2}\delta_{A⁢a,n}^{(2)}+\frac{2-p_{\frac{2⁢n-1}{2⁢n}}}{2}r_{\frac{2⁢n-1}{2⁢n}}r_{1}^{-1}\delta_{A⁢a,n-1}^{(2)}+ \delta_{A⁢A,n}^{(2)}]+O(ϵ^{3})
+$$
 
-By plugging (Equation 39) and (Equation 36) into (Equation 35), using the density constraint (Equation 37), and collecting powers of ϵ, we find
+By plugging (Equation 39) and (Equation 36) into (Equation 35), using the density constraint (Equation 37), and collecting powers of $ϵ$, we find
 
-δ˙a⁢a,n-1(1)=-r1n+1⁢δa⁢a,n-1(1)+n2⁢r1n+1⁢δA⁢a,n(1)
+$$
+\delta˙_{a⁢a,n-1}^{(1)}=-r_{1}^{n+1}⁢\delta_{a⁢a,n-1}^{(1)}+\frac{n}{2}⁢r_{1}^{n+1}⁢\delta_{A⁢a,n}^{(1)}
+$$
 
-δ˙Aa,n(1)=1nr1n+1⁢δa⁢a,n-1(1)-12⁢r1n+1⁢δA⁢a,n(1)
+$$
+\delta˙_{Aa,n}^{(1)}=\frac{1}{n}r_{1}^{n+1}⁢\delta_{a⁢a,n-1}^{(1)}-\frac{1}{2}⁢r_{1}^{n+1}⁢\delta_{A⁢a,n}^{(1)}
+$$
 
-The equations for δ˙a⁢a,n-1(1) and δ˙A⁢a,n(1) can be written in matrix form as
+The equations for $\delta˙_{a⁢a,n-1}^{(1)}$ and $\delta˙_{A⁢a,n}^{(1)}$ can be written in matrix form as
 
-δ˙a⁢a,n-1(1)δ˙A⁢a,n(1)=r1n+1-1n21n-12⁢δa⁢a,n-1(1)δA⁢a,n(1)⁢
+$$
+\delta˙_{a⁢a,n-1}^{(1)}\delta˙_{A⁢a,n}^{(1)}=r_{1}^{n+1}-1\frac{n}{2}\frac{1}{n}\frac{-1}{2}⁢\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}⁢
+$$
 
-The two eigenvectors (v0 and v-) and their corresponding eigenvalues (λ0 and λ-) are
+The two eigenvectors ($v_{0}$ and $v_{-}$) and their corresponding eigenvalues ($\lambda_{0}$ and $\lambda_{-}$) are
 
-v0= n2     λ0=0
+$$
+v_{0}= n2     \lambda_{0}=0
+$$
 
-v-= n-1     λ-=-32⁢r1n+1
+$$
+v_{-}= n-1     \lambda_{-}=\frac{-3}{2}⁢r_{1}^{n+1}
+$$
 
-Notice that the dominant eigenvalue is equal to zero, so a computation to leading order in ϵ cannot provide information on the stability of the dominant sterility allele.
+Notice that the dominant eigenvalue is equal to zero, so a computation to leading order in $ϵ$ cannot provide information on the stability of the dominant sterility allele.
 
-We can also see this more formally. An arbitrary initial perturbation to a resident A population can be written as a linear superposition of the eigenvectors v0 and v-:
+We can also see this more formally. An arbitrary initial perturbation to a resident A population can be written as a linear superposition of the eigenvectors $v_{0}$ and $v_{-}$:
 
-(40)δa⁢a,n-1(1)δA⁢a,n(1)=C0⁢n2+C-n-1⁢⁢ exp -32⁢r1n+1⁢t
+$$
+\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}=C_{0}⁢n2+C_{-}n-1⁢⁢ exp \frac{-3}{2}⁢r_{1}^{n+1}⁢t
+$$
 
-Here C0 and C- are constants. We can substitute (Equation 39) and (Equation 36) into (Equation 35), using the density constraints (Equation 37) and (Equation 38), keeping terms of order ϵ and ϵ2, and dividing each term by one factor of ϵ. We obtain
+Here $C_{0}$ and $C_{-}$ are constants. We can substitute (Equation 39) and (Equation 36) into (Equation 35), using the density constraints (Equation 37) and (Equation 38), keeping terms of order $ϵ$ and $ϵ^{2}$, and dividing each term by one factor of $ϵ$. We obtain
 
-(41)[-⁢δ˙a⁢a,n(1)-ϵ⁢δ˙a⁢a,n(2)]⁢r1-(n+1)=1-n2n(-2δa⁢a,n-1(1)+nδA⁢a,n(1))+ϵ[1-n2⁢n(-2δa⁢a,n-1(2)+nδA⁢a,n(2))+n-2n⁢δa⁢a,n-2(2)+2⁢n-(1+n⁢(1+n⁢(2-p2⁢n-12⁢n)))⁢r2⁢n-12⁢n⁢r1-12⁢n⁢δA⁢a,n-1(2)-n⁢δA⁢A,n(2)+n⁢(n+1)8⁢[δA⁢a,n(1)]2+12δa⁢a,n-1(1)δA⁢a,n(1)]
+$$
+[-⁢\delta˙_{a⁢a,n}^{(1)}-ϵ⁢\delta˙_{a⁢a,n}^{(2)}]⁢r_{1}^{-(n+1)}=\frac{1-n}{2n}(-2\delta_{a⁢a,n-1}^{(1)}+n\delta_{A⁢a,n}^{(1)})+ϵ[\frac{1-n}{2⁢n}(-2\delta_{a⁢a,n-1}^{(2)}+n\delta_{A⁢a,n}^{(2)})+\frac{n-2}{n}⁢\delta_{a⁢a,n-2}^{(2)}+\frac{2⁢n-(1+n⁢(1+n⁢(2-p_{\frac{2⁢n-1}{2⁢n}})))⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2⁢n}⁢\delta_{A⁢a,n-1}^{(2)}-n⁢\delta_{A⁢A,n}^{(2)}+\frac{n⁢(n+1)}{8}⁢[\delta_{A⁢a,n}^{(1)}]^{2}+\frac{1}{2}\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}]
+$$
 
-We can again use the density constraints (Equation 37) and (Equation 38) to rewrite the left-hand side of (Equation 41). We can also substitute the general solution for the quantities δa⁢a,n-1(1) and δA⁢a,n(1), Equation 40, into the right-hand side of (Equation 41):
+We can again use the density constraints (Equation 37) and (Equation 38) to rewrite the left-hand side of (Equation 41). We can also substitute the general solution for the quantities $\delta_{a⁢a,n-1}^{(1)}$ and $\delta_{A⁢a,n}^{(1)}$, Equation 40, into the right-hand side of (Equation 41):
 
-(42)[-δ˙a⁢a,n-1(1)-δ˙Aa,n(1)]⁢r1-(n+1)+ϵ[-δ˙a⁢a,n-1(2)-δ˙A⁢a,n(2)-δ˙a⁢a,n-2(2)-δ˙A⁢a,n-1(2)-δ˙A⁢A,n(2)]r1-(n+1)=1-n2n[-2(nC0+nC-exp (-32r1n+1t))+n(2C0-C-exp (-32r1n+1t))]+ϵ[1-n2⁢n(-2δa⁢a,n-1(2)+nδA⁢a,n(2))+n-2n⁢δa⁢a,n-2(2)+2⁢n-(1+n⁢(1+n⁢(2-p2⁢n-12⁢n)))⁢r2⁢n-12⁢n⁢r1-12⁢n⁢δA⁢a,n-1(2)-n⁢δA⁢A,n(2)+n⁢(n+1)8⁢[δA⁢a,n(1)]2+12δa⁢a,n-1(1)δA⁢a,n(1)]
+$$
+[-\delta˙_{a⁢a,n-1}^{(1)}-\delta˙_{Aa,n}^{(1)}]⁢r_{1}^{-(n+1)}+ϵ[-\delta˙_{a⁢a,n-1}^{(2)}-\delta˙_{A⁢a,n}^{(2)}-\delta˙_{a⁢a,n-2}^{(2)}-\delta˙_{A⁢a,n-1}^{(2)}-\delta˙_{A⁢A,n}^{(2)}]r_{1}^{-(n+1)}=\frac{1-n}{2n}[-2(nC_{0}+nC_{-}exp (\frac{-3}{2}r_{1}^{n+1}t))+n(2C_{0}-C_{-}exp (\frac{-3}{2}r_{1}^{n+1}t))]+ϵ[\frac{1-n}{2⁢n}(-2\delta_{a⁢a,n-1}^{(2)}+n\delta_{A⁢a,n}^{(2)})+\frac{n-2}{n}⁢\delta_{a⁢a,n-2}^{(2)}+\frac{2⁢n-(1+n⁢(1+n⁢(2-p_{\frac{2⁢n-1}{2⁢n}})))⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2⁢n}⁢\delta_{A⁢a,n-1}^{(2)}-n⁢\delta_{A⁢A,n}^{(2)}+\frac{n⁢(n+1)}{8}⁢[\delta_{A⁢a,n}^{(1)}]^{2}+\frac{1}{2}\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}]
+$$
 
-Note that each term in (Equation 42) involving the quantities δa⁢a,n-1(2), δA⁢a,n(2), δa⁢a,n-2(2), δA⁢a,n-1(2), and δA⁢A,n(2) is multiplied by ϵ. In the limit ϵ→0, the quantities δa⁢a,n-1(2), δA⁢a,n(2), δa⁢a,n-2(2), δA⁢a,n-1(2), and δA⁢A,n(2) do not affect the dynamics of the quantities δa⁢a,n-1(1) and δA⁢a,n(1). However, the quantities δa⁢a,n-1(1) and δA⁢a,n(1) alone tell us nothing about whether or not the dominant sterility allele is stable against invasion by the mutant A allele. Therefore, we must consider the terms of order ϵ2 in our dynamical equations (Equation 35) to determine if the a allele is stable against invasion by the mutant A allele. In our calculations that follow, we use the eigenvector v0 corresponding to the zero eigenvalue, i.e.
+Note that each term in (Equation 42) involving the quantities $\delta_{a⁢a,n-1}^{(2)}$, $\delta_{A⁢a,n}^{(2)}$, $\delta_{a⁢a,n-2}^{(2)}$, $\delta_{A⁢a,n-1}^{(2)}$, and $\delta_{A⁢A,n}^{(2)}$ is multiplied by $ϵ$. In the limit $ϵ→0$, the quantities $\delta_{a⁢a,n-1}^{(2)}$, $\delta_{A⁢a,n}^{(2)}$, $\delta_{a⁢a,n-2}^{(2)}$, $\delta_{A⁢a,n-1}^{(2)}$, and $\delta_{A⁢A,n}^{(2)}$ do not affect the dynamics of the quantities $\delta_{a⁢a,n-1}^{(1)}$ and $\delta_{A⁢a,n}^{(1)}$. However, the quantities $\delta_{a⁢a,n-1}^{(1)}$ and $\delta_{A⁢a,n}^{(1)}$ alone tell us nothing about whether or not the dominant sterility allele is stable against invasion by the mutant A allele. Therefore, we must consider the terms of order $ϵ^{2}$ in our dynamical equations (Equation 35) to determine if the a allele is stable against invasion by the mutant A allele. In our calculations that follow, we use the eigenvector v0 corresponding to the zero eigenvalue, i.e.
 
-(43)δa⁢a,n-1(1)δA⁢a,n(1)=δa⁢a,n(1)n+2n2
+$$
+\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}=\frac{\delta_{a⁢a,n}^{(1)}}{n+2}n2
+$$
 
-Substituting (Equation 39), (Equation 36), and (Equation 43) into (Equation 35), using the density constraints (Equation 37) and (Equation 38), and keeping terms of order ϵ2, we have
+Substituting (Equation 39), (Equation 36), and (Equation 43) into (Equation 35), using the density constraints (Equation 37) and (Equation 38), and keeping terms of order $ϵ^{2}$, we have
 
-(44)-δ˙a⁢a,n(2)⁢r1-(n+1)=1-n2n(-2δa⁢a,n-1(2)+nδA⁢a,n(2))+n-2n⁢δa⁢a,n-2(2)+2⁢n-(1+n⁢(1+n⁢(2-p2⁢n-12⁢n)))⁢r2⁢n-12⁢n⁢r1-12⁢n⁢δA⁢a,n-1(2)-n⁢δA⁢A,n(2)+n⁢(n+3)2⁢(n+2)2⁢[δa⁢a,n(1)]2
+$$
+-\delta˙_{a⁢a,n}^{(2)}⁢r_{1}^{-(n+1)}=\frac{1-n}{2n}(-2\delta_{a⁢a,n-1}^{(2)}+n\delta_{A⁢a,n}^{(2)})+\frac{n-2}{n}⁢\delta_{a⁢a,n-2}^{(2)}+\frac{2⁢n-(1+n⁢(1+n⁢(2-p_{\frac{2⁢n-1}{2⁢n}})))⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}}{2⁢n}⁢\delta_{A⁢a,n-1}^{(2)}-n⁢\delta_{A⁢A,n}^{(2)}+\frac{n⁢(n+3)}{2⁢(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}
+$$
 
 We also have
 
-δ˙a⁢a,n-1(2)⁢r1-(n+1)=12(-2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2))+n⁢(2-p2⁢n-12⁢n)2⁢r2⁢n-12⁢n⁢r1-1⁢δA⁢a,n-1(2)+n⁢δA⁢A,n(2)-n⁢(n+1)(n+2)2⁢[δa⁢a,n(1)]2δ˙A⁢a,n(2)⁢r1-(n+1)=-12n(-2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2))+2n⁢δa⁢a,n-2(2)+12⁢r2⁢n-12⁢n⁢r1-1⁢δA⁢a,n-1(2)+δA⁢A,n(2)-2⁢n(n+2)2⁢[δa⁢a,n(1)]2δ˙a⁢a,n-2(2)⁢r1-(n+1)=-δa⁢a,n-2(2)+n⁢(n-1)2⁢(n+2)2⁢[δa⁢a,n(1)]2δ˙A⁢a,n-1(2)⁢r1-(n+1)=-δA⁢a,n-1(2)+2⁢n(n+2)2⁢[δa⁢a,n(1)]2δ˙AA,n(2)r1-(n+1)=-δAA,n(2)+12⁢n⁢r2⁢n-12⁢n⁢r1-1⁢δA⁢a,n-1(2)
+$$
+\delta˙_{a⁢a,n-1}^{(2)}⁢r_{1}^{-(n+1)}=\frac{1}{2}(-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)})+\frac{n⁢(2-p_{\frac{2⁢n-1}{2⁢n}})}{2}⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}⁢\delta_{A⁢a,n-1}^{(2)}+n⁢\delta_{A⁢A,n}^{(2)}-\frac{n⁢(n+1)}{(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}\delta˙_{A⁢a,n}^{(2)}⁢r_{1}^{-(n+1)}=\frac{-1}{2n}(-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)})+\frac{2}{n}⁢\delta_{a⁢a,n-2}^{(2)}+\frac{1}{2}⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}⁢\delta_{A⁢a,n-1}^{(2)}+\delta_{A⁢A,n}^{(2)}-\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}\delta˙_{a⁢a,n-2}^{(2)}⁢r_{1}^{-(n+1)}=-\delta_{a⁢a,n-2}^{(2)}+\frac{n⁢(n-1)}{2⁢(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}\delta˙_{A⁢a,n-1}^{(2)}⁢r_{1}^{-(n+1)}=-\delta_{A⁢a,n-1}^{(2)}+\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}\delta˙_{AA,n}^{(2)}r_{1}^{-(n+1)}=-\delta_{AA,n}^{(2)}+\frac{1}{2⁢n}⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}⁢\delta_{A⁢a,n-1}^{(2)}
+$$
 
-We can directly integrate the equation for δ˙a⁢a,n-2(2). We get
+We can directly integrate the equation for $\delta˙_{a⁢a,n-2}^{(2)}$. We get
 
-(45)δa⁢a,n-2(2)=n⁢(n-1)2⁢(n+2)2⁢[δa⁢a,n(1)]2⁢[1-exp (-r1n+1⁢t)]
+$$
+\delta_{a⁢a,n-2}^{(2)}=\frac{n⁢(n-1)}{2⁢(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}⁢[1-exp (-r_{1}^{n+1}⁢t)]
+$$
 
-We can also directly integrate the equation for δ˙A⁢a,n-1(2). We get
+We can also directly integrate the equation for $\delta˙_{A⁢a,n-1}^{(2)}$. We get
 
-(46)δA⁢a,n-1(2)=2⁢n(n+2)2⁢[δa⁢a,n(1)]2⁢[1-exp (-r1n+1⁢t)]
+$$
+\delta_{A⁢a,n-1}^{(2)}=\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}⁢[1-exp (-r_{1}^{n+1}⁢t)]
+$$
 
-We can use the solution for δA⁢a,n-1(2) to solve for δA⁢A,n(2). We get
+We can use the solution for $\delta_{A⁢a,n-1}^{(2)}$ to solve for $\delta_{A⁢A,n}^{(2)}$. We get
 
-(47)δA⁢A,n(2)=r2⁢n-12⁢nr1⁢(n+2)2⁢[δa⁢a,n(1)]2⁢[1-(1+r1n+1⁢t) ⁢exp (-r1n+1⁢t)]
+$$
+\delta_{A⁢A,n}^{(2)}=\frac{r_{\frac{2⁢n-1}{2⁢n}}}{r_{1}⁢(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}⁢[1-(1+r_{1}^{n+1}⁢t) ⁢exp (-r_{1}^{n+1}⁢t)]
+$$
 
-Manipulating the equations for δ˙a⁢a,n-1(2) and δ˙A⁢a,n(2), we find that
+Manipulating the equations for $\delta˙_{a⁢a,n-1}^{(2)}$ and $\delta˙_{A⁢a,n}^{(2)}$, we find that
 
-r1-(n+1)dd⁢t⁢⁢(-2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2))=-32(-2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2))+2⁢δa⁢a,n-2(2)-n⁢(3-2⁢p2⁢n-12⁢n)2⁢r2⁢n-12⁢n⁢r1-1⁢δA⁢a,n-1(2)-n⁢δA⁢A,n(2)+2⁢n(n+2)2⁢[δa⁢a,n(1)]2
+$$
+r_{1}^{-(n+1)}\frac{d}{d⁢t}⁢⁢(-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)})=\frac{-3}{2}(-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)})+2⁢\delta_{a⁢a,n-2}^{(2)}-\frac{n⁢(3-2⁢p_{\frac{2⁢n-1}{2⁢n}})}{2}⁢r_{\frac{2⁢n-1}{2⁢n}}⁢r_{1}^{-1}⁢\delta_{A⁢a,n-1}^{(2)}-n⁢\delta_{A⁢A,n}^{(2)}+\frac{2⁢n}{(n+2)^{2}}⁢[\delta_{a⁢a,n}^{(1)}]^{2}
+$$
 
-We can integrate this equation to solve for the quantity -2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2). We obtain
+We can integrate this equation to solve for the quantity $-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)}$. We obtain
 
-(48)-2⁢δa⁢a,n-1(2)+n⁢δA⁢a,n(2)=[2⁢n⁢(n+1)3⁢(n+2)2-2⁢n⁢(1+n⁢(3-2⁢p2⁢n-12⁢n))⁢r2⁢n-12⁢n3⁢(n+2)2⁢r1][δa⁢a,n(1)]2-[2⁢n⁢(n-1)(n+2)2+2⁢n⁢(1-n⁢(3-2⁢p2⁢n-12⁢n)-r1n+1⁢t)⁢r2⁢n-12⁢n(n+2)2⁢r1][δa⁢a,n(1)]2  exp (-r1n+1t)+[4⁢n⁢(n-2)3⁢(n+2)2+4⁢n⁢(2-n⁢(3-2⁢p2⁢n-12⁢n))⁢r2⁢n-12⁢n3⁢(n+2)2⁢r1][δa⁢a,n(1)]2 exp (-32r1n+1t)
+$$
+-2⁢\delta_{a⁢a,n-1}^{(2)}+n⁢\delta_{A⁢a,n}^{(2)}=[\frac{2⁢n⁢(n+1)}{3⁢(n+2)^{2}}-\frac{2⁢n⁢(1+n⁢(3-2⁢p_{\frac{2⁢n-1}{2⁢n}}))⁢r_{\frac{2⁢n-1}{2⁢n}}}{3⁢(n+2)^{2}⁢r_{1}}][\delta_{a⁢a,n}^{(1)}]^{2}-[\frac{2⁢n⁢(n-1)}{(n+2)^{2}}+\frac{2⁢n⁢(1-n⁢(3-2⁢p_{\frac{2⁢n-1}{2⁢n}})-r_{1}^{n+1}⁢t)⁢r_{\frac{2⁢n-1}{2⁢n}}}{(n+2)^{2}⁢r_{1}}][\delta_{a⁢a,n}^{(1)}]^{2}  exp (-r_{1}^{n+1}t)+[\frac{4⁢n⁢(n-2)}{3⁢(n+2)^{2}}+\frac{4⁢n⁢(2-n⁢(3-2⁢p_{\frac{2⁢n-1}{2⁢n}}))⁢r_{\frac{2⁢n-1}{2⁢n}}}{3⁢(n+2)^{2}⁢r_{1}}][\delta_{a⁢a,n}^{(1)}]^{2} exp (\frac{-3}{2}r_{1}^{n+1}t)
+$$
 
-To determine if the resident a population is unstable to invasion by the A allele, we must consider the regime 1≪t≪ϵ-1. Notice that on a short time scale, each of the time-dependent terms in Equations 45–48 will approach zero. We must consider the sign of δ˙a⁢a,n(2) in the limit of large times t≫1 but before the terms in (Equation 36) become comparable in magnitude. Our condition for stability of the sterility allele is therefore
+To determine if the resident a population is unstable to invasion by the A allele, we must consider the regime $1≪t≪ϵ^{-1}$. Notice that on a short time scale, each of the time-dependent terms in Equations 45–48 will approach zero. We must consider the sign of $\delta˙_{a⁢a,n}^{(2)}$ in the limit of large times $t≫1$ but before the terms in (Equation 36) become comparable in magnitude. Our condition for stability of the sterility allele is therefore
 
-(49)limϵ⁢t→0t→∞δ˙a⁢a,n(2)<0
+$$
+limϵ⁢t→0t→∞\delta˙_{a⁢a,n}^{(2)}<0
+$$
 
 Substituting (Equations 44–48) into (Equation 49), we find that the dominant allele for worker sterility is evolutionarily stable if
 
-r1r2⁢n-12⁢n>2+3⁢n-n⁢p2⁢n-12⁢n2⁢(n+1)
+$$
+\frac{r_{1}}{r_{\frac{2⁢n-1}{2⁢n}}}>\frac{2+3⁢n-n⁢p_{\frac{2⁢n-1}{2⁢n}}}{2⁢(n+1)}
+$$
 
-## Stability of a recessive worker sterility allele
+#### Stability of a recessive worker sterility allele
 
-We assume that a recessive worker sterility allele has spread to fixation. We consider the evolutionary stability of a population consisting entirely of sterile workers to invasion by reproductive workers. What happens if we start with an infinitesimal quantity of the mutant allele, A, by perturbing the Xaa,n = 1 pure equilibrium: Xa⁢a,n→1-ϵ⁢δa⁢a,n(1), with ϵ≪1? Does the recessive worker sterility allele return to fixation, or is it invaded by the worker reproduction allele?
+We assume that a recessive worker sterility allele has spread to fixation. We consider the evolutionary stability of a population consisting entirely of sterile workers to invasion by reproductive workers. What happens if we start with an infinitesimal quantity of the mutant allele, A, by perturbing the Xaa,n = 1 pure equilibrium: $X_{a⁢a,n}→1-ϵ⁢\delta_{a⁢a,n}^{(1)}$, with $ϵ≪1$? Does the recessive worker sterility allele return to fixation, or is it invaded by the worker reproduction allele?
 
-Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis again simplifies. Provided that the perturbation is small (i.e. that ϵ≪1), only three colony types, aa,n, aa,n−1, and Aa,n, determine whether or not the recessive worker sterility allele is evolutionarily stable. Any other colony type is headed by a queen that possesses at least two mutant A alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying stability of a recessive sterility allele are
+Although the state space is (3n + 2)-dimensional (3n + 3 types of colonies subject to the density constraint), the analysis again simplifies. Provided that the perturbation is small (i.e. that $ϵ≪1$), only three colony types, aa,n, aa,n−1, and Aa,n, determine whether or not the recessive worker sterility allele is evolutionarily stable. Any other colony type is headed by a queen that possesses at least two mutant A alleles (from her own genotype combined with the sperm she has collected), but such queens are so rare as to be negligible. The relevant equations among (Equation 11) for studying stability of a recessive sterility allele are
 
-(50)X˙a⁢a,n=xa⁢a⁢yan-ϕ⁢Xa⁢a,nX˙a⁢a,n-1=n⁢xa⁢a⁢yan-1⁢yA-ϕ⁢Xa⁢a,n-1X˙A⁢a,n=xA⁢a⁢yan-ϕ⁢XA⁢a,n
+$$
+X˙_{a⁢a,n}=x_{a⁢a}⁢y_{a}^{n}-ϕ⁢X_{a⁢a,n}X˙_{a⁢a,n-1}=n⁢x_{a⁢a}⁢y_{a}^{n-1}⁢y_{A}-ϕ⁢X_{a⁢a,n-1}X˙_{A⁢a,n}=x_{A⁢a}⁢y_{a}^{n}-ϕ⁢X_{A⁢a,n}
+$$
 
-Formally keeping track of powers of ϵ, and disregarding higher-order terms, we have:
+Formally keeping track of powers of $ϵ$, and disregarding higher-order terms, we have:
 
-(51)Xa⁢a,n=1-ϵ⁢δa⁢a,n(1)-O(ϵ2)Xa⁢a,n-1=+ϵ⁢δa⁢a,n-1(1)+O⁢(ϵ2)XA⁢a,n=+ϵ⁢δAa,n(1)+O⁢(ϵ2)
+$$
+X_{a⁢a,n}=1-ϵ⁢\delta_{a⁢a,n}^{(1)}-O(ϵ^{2})X_{a⁢a,n-1}=+ϵ⁢\delta_{a⁢a,n-1}^{(1)}+O⁢(ϵ^{2})X_{A⁢a,n}=+ϵ⁢\delta_{Aa,n}^{(1)}+O⁢(ϵ^{2})
+$$
 
-Next, we substitute (Equation 51) into (Equation 15), using the density constraint (Equation 37) and keeping terms only up to order ϵ:
+Next, we substitute (Equation 51) into (Equation 15), using the density constraint (Equation 37) and keeping terms only up to order $ϵ$:
 
-(52)xa⁢a=r1+ε(n-1)rn-1n -nr1nδa⁢a,n-1(1)+-2r1+r122δAa,n(1)+O(ε2)xA⁢a=εrn-1n nδa⁢a,n-1(1)+r122δAa,n(1)+O(ε2)ya=r1+ε-2r1+ (1+pn-1n)rn-1n2δa⁢a,n-1(1)+-2r1+r122δAa,n(1)+O(ε2)yA = ϵ  (1-pn-1n)rn-1n2δa⁢a,n-1(1)+r122δAa,n(1)+O(ε2)
+$$
+x_{a⁢a}=r_{1}+\epsilon\frac{(n-1)r_{\frac{n-1}{n} }-nr_{1}}{n}\delta_{a⁢a,n-1}^{(1)}+\frac{-2r_{1}+r_{\frac{1}{2}}}{2}\delta_{Aa,n}^{(1)}+O(\epsilon^{2})x_{A⁢a}=\epsilon\frac{r_{\frac{n-1}{n} }}{n}\delta_{a⁢a,n-1}^{(1)}+\frac{r_{\frac{1}{2}}}{2}\delta_{Aa,n}^{(1)}+O(\epsilon^{2})y_{a}=r_{1}+\epsilon\frac{-2r_{1}+ (1+p_{\frac{n-1}{n}})r_{\frac{n-1}{n}}}{2}\delta_{a⁢a,n-1}^{(1)}+\frac{-2r_{1}+r_{\frac{1}{2}}}{2}\delta_{Aa,n}^{(1)}+O(\epsilon^{2})y_{A} = ϵ \frac{ (1-p_{\frac{n-1}{n}})r_{\frac{n-1}{n}}}{2}\delta_{a⁢a,n-1}^{(1)}+\frac{r_{\frac{1}{2}}}{2}\delta_{Aa,n}^{(1)}+O(\epsilon^{2})
+$$
 
-By plugging (Equation 52) and (Equation 51) into (Equation 50), using the density constraint (Equation 37), and collecting powers of ϵ, we find
+By plugging (Equation 52) and (Equation 51) into (Equation 50), using the density constraint (Equation 37), and collecting powers of $ϵ$, we find
 
-δ˙aa,n-1(1)=-2r1n+1+n(1-pn-1n)rn-1nr1n2δa⁢a,n-1(1)+nr12r1n2δA⁢a,n(1)
+$$
+\delta˙_{aa,n-1}^{(1)}=\frac{-2r_{1}^{n+1}+n(1-p_{\frac{n-1}{n}})r_{\frac{n-1}{n}}r_{1}^{n}}{2}\delta_{a⁢a,n-1}^{(1)}+\frac{nr_{\frac{1}{2}}r_{1}^{n}}{2}\delta_{A⁢a,n}^{(1)}
+$$
 
-δ˙Aa,n(1)=rn-1n⁢r1nnδa⁢a,n-1(1)+-2⁢r1n+1+r12⁢r1n2δAa,n(1)
+$$
+\delta˙_{Aa,n}^{(1)}=\frac{r_{\frac{n-1}{n}}⁢r_{1}^{n}}{n}\delta_{a⁢a,n-1}^{(1)}+\frac{-2⁢r_{1}^{n+1}+r_{\frac{1}{2}}⁢r_{1}^{n}}{2}\delta_{Aa,n}^{(1)}
+$$
 
-The equations for δ˙a⁢a,n-1(1) and δ˙A⁢a,n(1) can be written in matrix form as
+The equations for $\delta˙_{a⁢a,n-1}^{(1)}$ and $\delta˙_{A⁢a,n}^{(1)}$ can be written in matrix form as
 
-δ˙a⁢a,n-1(1)δ˙A⁢a,n(1)=-2⁢r1n+1+n⁢(1-pn-1n)⁢rn-1n⁢r1n2n⁢r12⁢r1n2rn-1n⁢r1nn-2⁢r1n+1+r12⁢r1n2δa⁢a,n-1(1)δA⁢a,n(1)⁢
+$$
+\delta˙_{a⁢a,n-1}^{(1)}\delta˙_{A⁢a,n}^{(1)}=\frac{-2⁢r_{1}^{n+1}+n⁢(1-p_{\frac{n-1}{n}})⁢r_{\frac{n-1}{n}}⁢r_{1}^{n}}{2}\frac{n⁢r_{\frac{1}{2}}⁢r_{1}^{n}}{2}\frac{r_{\frac{n-1}{n}}⁢r_{1}^{n}}{n}\frac{-2⁢r_{1}^{n+1}+r_{\frac{1}{2}}⁢r_{1}^{n}}{2}\delta_{a⁢a,n-1}^{(1)}\delta_{A⁢a,n}^{(1)}⁢
+$$
 
 Setting the dominant eigenvalue to be greater than zero and simplifying, we find that the recessive allele for worker sterility is evolutionarily stable if
 
-(53)r1rn-1n-n⁢(1-pn-1n)22r1r12⁢-1⁢>1
+$$
+\frac{r_{1}}{r_{\frac{n-1}{n}}}-\frac{n⁢(1-p_{\frac{n-1}{n}})}{2}2\frac{r_{1}}{r_{\frac{1}{2}}}⁢-1⁢>1
+$$
 
 Figure 3B shows how the number of matings affects the evolutionary stability of non-reproductive workers for different values of the parameters r1/2 and r1. Sample forms of the functions pz and rz are shown in Figure 7C,D. For Figure 7C, we have p0 = 0.8, p1/2 = 0.92, r0 = 1, r1/2 = 1.016, and r1 = 1.045; i.e., pz increases sublinearly in z, while rz increases superlinearly in z. For these values of pz and rz, sterility is stable for double mating (n = 2) but not for single mating (n = 1). For Figure 7D, we have p0 = 0.8, p1/2 = 0.94, r0 = 1, r1/2 = 1.0225, and r1 = 1.045; i.e., pz increases sublinearly in z, while rz increases linearly in z. For these values of pz and rz, sterility is stable for double mating (n = 2) but not for single mating (n = 1).
 
-## Numerical experiments
+### Numerical experiments
 
 For additional insight, we perform random sampling of the parameter space to obtain some intuition whether evolution of non-reproductive workers is more or less likely for single or double mating. We will also evaluate the likelihood of selection favoring invasion or evolutionary stability of alleles (mutations) that induce non-reproductive workers. Thus, we do random sampling of the parameter regions shown in Figures 3A, 5A, and 8. In each case, the outcome depends on two efficiency values, which we call rz1 and rz2 with z1 < z2. For Figure 3A, those values are r1/4 and r1/2. For Figure 5A and for Figure 8, those values are r1/2 and r1.
 
 The outcome of this numerical experiment depends on how we choose to randomize the colony efficiency values, rz1 and rz2. There are many ways to do this. Here, we consider two possibilities:
 
-P⁢(rz⁢1,rz⁢2)=12⁢π⁢σ2⁢exp -[(rz⁢1-μ)2+(rz⁢2-μ)2]2⁢σ2
+$$
+P⁢(r_{z⁢1},r_{z⁢2})=\frac{1}{2⁢\pi⁢\sigma^{2}}⁢exp \frac{-[(r_{z⁢1}-\mu)^{2}+(r_{z⁢2}-\mu)^{2}]}{2⁢\sigma^{2}}
+$$
 
 There is no correlation between rz1 and rz2. The average is μ = 1. We choose σ = 0.1 for Figure 3A. We choose σ = 0.2 for Figures 5A and 8.
 
-P⁢(rz⁢1,rz⁢2)=12⁢π⁢σ2⁢1-ρ2⁢exp -[(rz⁢1-μ)2+(rz⁢2-μ)2-2⁢ρ⁢(rz⁢1-μ)⁢(rz⁢2-μ)]2⁢σ2⁢(1-ρ2)
+$$
+P⁢(r_{z⁢1},r_{z⁢2})=\frac{1}{2⁢\pi⁢\sigma^{2}⁢\sqrt{1-ρ^{2}}}⁢exp \frac{-[(r_{z⁢1}-\mu)^{2}+(r_{z⁢2}-\mu)^{2}-2⁢ρ⁢(r_{z⁢1}-\mu)⁢(r_{z⁢2}-\mu)]}{2⁢\sigma^{2}⁢(1-ρ^{2})}
+$$
 
 We set ρ = 0.8. Now, there is positive correlation between rz1 and rz2. We choose μ and σ as for Procedure 1.
 
-Table 1 shows the outcome of this numerical experiment for the parameter values used in Figures 3A and 8. Table 2 shows the outcome of this numerical experiment for the parameter values used in Figure 5A. For example, consider the first row of Table 1. We set p0 = 0.2 and p1/4 = 0.4 with a recessive sterility allele, as this corresponds with Figure 3A. Procedure 1 is used for selecting values of r1/4 and r1/2. For a randomly chosen pair of efficiency values r1/4 and r1/2, the probabilities that the sterility allele does not invade, invades only for n = 1, invades only for n = 2, and invades for n = 1 and n = 2 are 0.7769, 0.0644, 0.1465, and 0.0122, respectively. For the second row of Table 1, Procedure 2 is used for selecting values of r1/4 and r1/2. For a randomly chosen pair of efficiency values r1/4 and r1/2, the probabilities that the sterility allele does not invade, invades only for n = 1, invades only for n = 2, and invades for n = 1 and n = 2 are 0.8237, 0.0177, 0.0997, and 0.0589, respectively. The third and fourth rows of Table 1 and the rows of Table 2 are understood in the same way.10.7554/eLife.08918.013Table 1.Numerical experiments. We randomly select the two relevant colony efficiency values from a bivariate normal distribution. For Procedure 1, the two efficiency values are uncorrelated. For Procedure 2, they are correlated (with correlation 0.8). The results of the numerical experiment for Figures 3A and 8 are shown. For Figure 3A, which describes a recessive allele inducing non-reproductive workers, we randomly generate values for r1/4 and r1/2. For Figure 8, which describes a dominant allele inducing non-reproductive workers, we randomly generate values for r1/2 and r1. The table shows the likelihood of the four possible outcomes: non-reproductive workers (i) do not invade, (ii) invade for single mating but not for double mating, (iii) invade for double mating but not for single mating, and (iv) invade for both single and double mating. For this particular randomization experiment, double mating is more favorable than single mating for the invasion of non-reproductive workers. All p values are exactly as in the corresponding Figures.DOI: http://dx.doi.org/10.7554/eLife.08918.013Does notInvades for n = 1Invades for n = 2Invades for bothinvadebut not n = 2but not n = 1n = 1 and n = 2Figure 3A, Proc. 1, recessive0.77690.06440.14650.0122Figure 3A, Proc. 2, recessive0.82370.01770.09970.0589Figure 8, Proc. 1, dominant0.79440.01290.08300.1097Figure 8, Proc. 2, dominant0.79270.01460.02600.166710.7554/eLife.08918.014Table 2.Numerical experiments. With the equivalent Procedures, we explore the likelihood of the four scenarios regarding invasion and/or stability for single mating. Results of the numerical experiment for Figure 5A, describing a recessive allele, are shown. We randomly generate values for r1/2 and r1. The value p0 = 0.5 is exactly as in Figure 5A.DOI: http://dx.doi.org/10.7554/eLife.08918.014Does not invadeDoes not invadeInvadesInvadesand is unstablebut is stablebut is unstableand is stableFigure 5A, Proc. 1, recessive0.34840.30140.30070.0495Figure 5A, Proc. 2, recessive0.52950.12030.23790.1123
+Table 1 shows the outcome of this numerical experiment for the parameter values used in Figures 3A and 8. Table 2 shows the outcome of this numerical experiment for the parameter values used in Figure 5A. For example, consider the first row of Table 1. We set p0 = 0.2 and p1/4 = 0.4 with a recessive sterility allele, as this corresponds with Figure 3A. Procedure 1 is used for selecting values of r1/4 and r1/2. For a randomly chosen pair of efficiency values r1/4 and r1/2, the probabilities that the sterility allele does not invade, invades only for n = 1, invades only for n = 2, and invades for n = 1 and n = 2 are 0.7769, 0.0644, 0.1465, and 0.0122, respectively. For the second row of Table 1, Procedure 2 is used for selecting values of r1/4 and r1/2. For a randomly chosen pair of efficiency values r1/4 and r1/2, the probabilities that the sterility allele does not invade, invades only for n = 1, invades only for n = 2, and invades for n = 1 and n = 2 are 0.8237, 0.0177, 0.0997, and 0.0589, respectively. The third and fourth rows of Table 1 and the rows of Table 2 are understood in the same way.
+
+**Table 1.**
+ Numerical experiments. We randomly select the two relevant colony efficiency values from a bivariate normal distribution. For Procedure 1, the two efficiency values are uncorrelated. For Procedure 2, they are correlated (with correlation 0.8). The results of the numerical experiment for Figures 3A and 8 are shown. For Figure 3A, which describes a recessive allele inducing non-reproductive workers, we randomly generate values for r1/4 and r1/2. For Figure 8, which describes a dominant allele inducing non-reproductive workers, we randomly generate values for r1/2 and r1. The table shows the likelihood of the four possible outcomes: non-reproductive workers (i) do not invade, (ii) invade for single mating but not for double mating, (iii) invade for double mating but not for single mating, and (iv) invade for both single and double mating. For this particular randomization experiment, double mating is more favorable than single mating for the invasion of non-reproductive workers. All p values are exactly as in the corresponding Figures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Does not</th>
+      <th>Invades for n = 1</th>
+      <th>Invades for n = 2</th>
+      <th>Invades for both</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>invade</th>
+      <th>but not n = 2</th>
+      <th>but not n = 1</th>
+      <th>n = 1 and n = 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.7769</td>
+      <td>0.0644</td>
+      <td>0.1465</td>
+      <td>0.0122</td>
+      <td>Figure 3A, Proc. 1, recessive</td>
+    </tr>
+    <tr>
+      <td>0.8237</td>
+      <td>0.0177</td>
+      <td>0.0997</td>
+      <td>0.0589</td>
+      <td>Figure 3A, Proc. 2, recessive</td>
+    </tr>
+    <tr>
+      <td>0.7944</td>
+      <td>0.0129</td>
+      <td>0.0830</td>
+      <td>0.1097</td>
+      <td>Figure 8, Proc. 1, dominant</td>
+    </tr>
+    <tr>
+      <td>0.7927</td>
+      <td>0.0146</td>
+      <td>0.0260</td>
+      <td>0.1667</td>
+      <td>Figure 8, Proc. 2, dominant</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Numerical experiments. With the equivalent Procedures, we explore the likelihood of the four scenarios regarding invasion and/or stability for single mating. Results of the numerical experiment for Figure 5A, describing a recessive allele, are shown. We randomly generate values for r1/2 and r1. The value p0 = 0.5 is exactly as in Figure 5A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Does not invade</th>
+      <th>Does not invade</th>
+      <th>Invades</th>
+      <th>Invades</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>and is unstable</th>
+      <th>but is stable</th>
+      <th>but is unstable</th>
+      <th>and is stable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 5A, Proc. 1, recessive</td>
+      <td>0.3484</td>
+      <td>0.3014</td>
+      <td>0.3007</td>
+      <td>0.0495</td>
+    </tr>
+    <tr>
+      <td>Figure 5A, Proc. 2, recessive</td>
+      <td>0.5295</td>
+      <td>0.1203</td>
+      <td>0.2379</td>
+      <td>0.1123</td>
+    </tr>
+  </tbody>
+</table>
 
 For both Procedures, we find that the invasion of non-reproductive workers is more likely favored for double mating, n = 2, than for single mating, n = 1.

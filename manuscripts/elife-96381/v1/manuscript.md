@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Epidemiology and Population Health, School of Medicine, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Department of Materials Science and Engineering, Stanford University Stanford United States
-3. https://ror.org/00f54p054 Department of Neurology, School of Medicine, Stanford University Stanford United States
-4. https://ror.org/00f54p054 Stanford Cardiovascular Institute, School of Medicine, Stanford University Stanford United States
-5. https://ror.org/0022qva30 School of Behavioral and Brain Sciences, Ponce Health Sciences University Ponce United States
+1. Department of Epidemiology and Population Health, School of Medicine, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Department of Materials Science and Engineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Department of Neurology, School of Medicine, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+4. Stanford Cardiovascular Institute, School of Medicine, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. School of Behavioral and Brain Sciences, Ponce Health Sciences University Ponce United States ([ROR:0022qva30](https://ror.org/0022qva30))
 6. School of Public Health, State University of New York Downstate Health Sciences University Brooklyn United States
 
 † Corresponding author
@@ -39,7 +39,7 @@ In this article, we outline how virtual networking – in the form of cold email
 
 A good place to start is with the people you already know – your existing network and current mentors. Maybe you just want to have a bigger network, or you want to establish a connection with someone who has particular skills or knowledge that would be helpful. In the latter case we suggest that you establish if anyone in your existing network already has these skills or knowledge, or if they know anyone who has them. This advice might sound like common sense but, in our experience, it is often ignored or disregarded by early-career researchers. Likewise, we would also advise against becoming fixated with finding ‘the expert’ in a particular area, as such people are almost always extremely busy. That said, one of the advantages of social media is that it allows you to establish connections with world experts, even if you cannot add them to your personal network.
 
-## How to write a cold email
+### How to write a cold email
 
 The thought of sending a ‘cold email’ to someone can be intimidating and anxiety-inducing, but it is quite common in both academia and industry. Indeed, many academic researchers are enthusiastic about mentoring and connecting with emerging scientists beyond their primary affiliations (usually because they have benefited from being mentored in this way and are keen for others to also benefit).
 
@@ -53,7 +53,7 @@ The request: Clearly state what you are seeking, which might be mentorship, advi
 
 Sending a cold email may seem daunting at first, but it will become less intimidating with experience.
 
-## Connecting on social media: Twitter/X
+### Connecting on social media: Twitter/X
 
 Social media is an excellent way of finding out about new papers, fellowship opportunities, job openings, and virtual events. It is also a powerful tool for virtual networking, even if you are not comfortable posting material on a regular basis. Here we discuss two social media platforms – Twitter/X and LinkedIn. Other platforms to consider include Bluesky, Instagram, and TikTok (Hines and Warring, 2019; Rein, 2023).
 
@@ -67,7 +67,7 @@ A number of researchers are also active on Twitter/X, often posting lengthy ‘t
 
 An unconventional method of using both Twitter/X and cold emails is to search for researchers who have posted about being successful (or unsuccessful) when applying for a research grant or fellowship, and then contact them by email or direct messaging. Researchers who have successfully applied for a grant or fellowship are sometimes willing to share their applications and/or to give feedback on draft applications. One of the present authors (CAH) used this approach when he was a graduate student at the University of Mississippi: “I searched for F31 and found individuals who had received the fellowship within the last year. From there, I privately messaged them introducing myself and letting them know I was writing an application, but no one in my lab or institution had done so before. I received five different applications. Using these applications as a guide, I became the first trainee at the University of Mississippi to receive a F31 in 37 years and the first black trainee to receive the award ever at the institution. I have since used this same approach as a postdoctoral fellow at Stanford when applying for other awards.” Another of the authors (JTM) has also employed this approach.
 
-## Connecting on social media: LinkedIn
+### Connecting on social media: LinkedIn
 
 LinkedIn is a platform that serves as a virtual resume and a professional portfolio, allowing you to showcase your academic achievements, research interests and skills. Much like Twitter/X, you can use LinkedIn to learn about career opportunities and to connect with other researchers and professionals. LinkedIn also provides the opportunity to join groups and engage in discussions that are relevant to your work, and it is particularly useful for exploring career opportunities beyond academia (Davis et al., 2020).
 
@@ -75,7 +75,7 @@ If you decide to join LinkedIn, we recommend that you do the following: (i) crea
 
 Whether you are pursuing a career in academia, industry or elsewhere (such as jobs in science communication or science policy), a well-maintained LinkedIn profile will make you more discoverable to potential employers, and will also help to expand your network.
 
-## Maintaining your network
+### Maintaining your network
 
 Once you have added someone to your network, it is important to maintain the relationship. Sending periodic updates on your research progress, achievements and publications is an effective way to keep your network informed and engaged: we have found that every six months is a good frequency for such email updates for individuals within your network. These emails can also be centered around conferences and meetings as researchers often use such events as opportunities to connect with their external mentees. And if someone in your network is unable to attend in person, they may introduce you to members of their laboratory who will be at the meeting, further expanding your network. (Please see Beasley et al., 2024 for advice on effective networking at in-person events such as conferences).
 

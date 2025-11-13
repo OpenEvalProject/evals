@@ -11,18 +11,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine INM-10, Research Centre Jülich GmbH Jülich Germany
-2. https://ror.org/02na8dn90 Medical Research Centre, IMCES Electron Microscopy Unit (EMU), University Hospital Essen Essen Germany
-3. https://ror.org/01zgy1s35 University Hospital Hamburg-Eppendorf, Center for Experimental Medicine, Institute for Computational Neuroscience Hamburg Germany
-4. https://ror.org/01yp9g959 School of Biomedical Sciences, University of Ulster Coleraine United Kingdom
-5. https://ror.org/04xfq0f34 Department of Psychiatry, Psychotherapy and Psychosomatics, Medical Faculty/RWTH University Hospital Aachen Aachen Germany
+1. Institute of Neuroscience and Medicine INM-10, Research Centre Jülich GmbH Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+2. Medical Research Centre, IMCES Electron Microscopy Unit (EMU), University Hospital Essen Essen Germany ([ROR:02na8dn90](https://ror.org/02na8dn90))
+3. University Hospital Hamburg-Eppendorf, Center for Experimental Medicine, Institute for Computational Neuroscience Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+4. School of Biomedical Sciences, University of Ulster Coleraine United Kingdom ([ROR:01yp9g959](https://ror.org/01yp9g959))
+5. Department of Psychiatry, Psychotherapy and Psychosomatics, Medical Faculty/RWTH University Hospital Aachen Aachen Germany ([ROR:04xfq0f34](https://ror.org/04xfq0f34))
 6. JARA Translational Brain Medicine Aachen Germany
 
 † Corresponding author
 
 ## Abstract
 
-Layer (L)1, beside receiving massive cortico-cortical, commissural and associational projections, is the termination zone of tufted dendrites of pyramidal neurons and the area of Ca 2+ spike initiation. However, its synaptic organization in humans is not known. Quantitative 3D models of excitatory synaptic boutons (SBs) in L1 of the human temporal lobe neocortex were generated from neocortical biopsy tissue using transmission electron microscopy, 3D-volume reconstructions, and TEM tomography. Particularly, the size of active zones (AZs) and the readily releasable, recycling, and resting pool of synaptic vesicles (SVs) were quantified. The majority of excitatory SBs contained numerous mitochondria comprising ~7% of the total volume, had a large macular, non-perforated AZ (~0.20 µm 2 ) and were predominantly located on dendritic spines. Excitatory SBs had a total pool of ~3500 SVs, a relatively large readily releasable (~4 SVs), recycling (~470 SVs) and resting (~2900 SVs) pool. Astrocytic coverage of excitatory SBs suggests both synaptic crosstalk or removal of spilled glutamate by astrocytic processes at synaptic complexes. The structural composition of SBs in L1 may underlie the function of L1 networks that mediate, integrate, and synchronize contextual and cross-modal information, enabling flexible and state-dependent processing of feedforward sensory inputs from other layers of the cortical column.
+Layer (L)1, beside receiving massive cortico-cortical, commissural and associational projections, is the termination zone of tufted dendrites of pyramidal neurons and the area of Ca2+ spike initiation. However, its synaptic organization in humans is not known. Quantitative 3D models of excitatory synaptic boutons (SBs) in L1 of the human temporal lobe neocortex were generated from neocortical biopsy tissue using transmission electron microscopy, 3D-volume reconstructions, and TEM tomography. Particularly, the size of active zones (AZs) and the readily releasable, recycling, and resting pool of synaptic vesicles (SVs) were quantified. The majority of excitatory SBs contained numerous mitochondria comprising ~7% of the total volume, had a large macular, non-perforated AZ (~0.20 µm2) and were predominantly located on dendritic spines. Excitatory SBs had a total pool of ~3500 SVs, a relatively large readily releasable (~4 SVs), recycling (~470 SVs) and resting (~2900 SVs) pool. Astrocytic coverage of excitatory SBs suggests both synaptic crosstalk or removal of spilled glutamate by astrocytic processes at synaptic complexes. The structural composition of SBs in L1 may underlie the function of L1 networks that mediate, integrate, and synchronize contextual and cross-modal information, enabling flexible and state-dependent processing of feedforward sensory inputs from other layers of the cortical column.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ Such meticulous quantitative structural analyses of SBs and their corresponding 
 
 ## Results
 
-## Neural and synaptic composition of L1 in the human TLN
+### Neural and synaptic composition of L1 in the human TLN
 
 L1 in the adult mammalian neocortex represents a relatively cell sparse layer, that in humans can be subdivided into two sublaminae, L1a and L1b, as revealed in semithin sections (Figure 1A) and Golgi-preparations (Figure 1B, C, F and G), as well as at the TEM level (Figure 1H, I). L1a is more dominated by a dense network of astrocytes of different shape and size, their fine processes (Figure 2A), the occurrence of reactive microglia (Figures 1H, I, 2A) and terminal tuft dendrites of pyramidal neurons throughout the neuropil of L1 (Figures 1H, I, 2B).
 
@@ -62,7 +62,7 @@ L1b is primarily dominated by dendritic and synaptic profiles due to a massive i
 
 L1b can be separated from L2 by the sudden increase of neuronal cell bodies and thick apical dendrites originating at the upper pole of the somata of pyramidal neurons (Figures 1A and 2B). At the L1b and L2 transition, more and more apical and apical oblique dendrites of different caliber were observable.
 
-## Synaptic organization of L1 in the human TLN
+### Synaptic organization of L1 in the human TLN
 
 The primary objective of this study was to investigate the synaptic organization of excitatory SBs in L1 in the human TLN, focusing on synaptic parameters that represent possible morphological correlates of synaptic transmission, efficacy, strength, and plasticity. The quantitative analysis was separated for both sublaminae to look for possible sublaminar-specific differences. Besides the overall geometry of SBs and the number and size of mitochondria, in particular the size of the PreAZ and PSD constituting the AZ, the morphological equivalent to a functional neurotransmitter release site, and the organization of the three functionally defined pools of SVs, namely the readily releasable (RRP), the recycling (RP), and resting pool, were quantified.
 
@@ -80,7 +80,7 @@ The ratio between excitatory vs. inhibitory SBs was between 10–15% although wi
 
 Some SBs in both sublaminae were seen to establish either two or three synapses on the same spine, spines of other origin, or dendritic shafts. Remarkably, ~90% of spines in L1a and L1b contained a spine apparatus (Figure 2E), a specialized derivate from the endoplasmic reticulum, structures that increase spine motility and may also stabilize the synaptic complex during signal transduction (Deller et al., 2003; reviewed by Knott and Holtmaat, 2008).
 
-## Synaptic density in L1a and L1b of the human TLN
+### Synaptic density in L1a and L1b of the human TLN
 
 Synaptic density measurements serve as a valuable tool for quantitatively characterizing the synaptic organization of a specific cortical layer, assessing the connectivity rate, and identifying potential inter-individual differences among patients within the human TLN.
 
@@ -88,9 +88,474 @@ The average density of synaptic complexes in L1 was relatively high with a value
 
 Therefore, L1 exhibited a relatively high density of synaptic complexes, indicating a relatively robust and thus strong connectivity of neurons within L1 of the human TLN.
 
-## Geometry and size of SBs and mitochondria in the human TLN
+### Geometry and size of SBs and mitochondria in the human TLN
 
 Overall, L1 SBs were on average medium-sized, with a mean surface area of 5.48±1.40 µm2, and a mean volume of 0.50±0.19 µm3, with a slight difference in size between L1a and L1b. Interestingly, the variability in both surface area and volume of SBs was relatively small in L1a and L1b as indicated by a low CV and variance (Table 1; Source data 2) regardless of their target structures. SBs in L1 were comparable in size with SBs in L5 and L6, but ~2-fold larger than those in L4 of the human TLN (p≤0.001; see also Yakoubi et al., 2019a; Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022).
+
+**Table 1.**
+ Comparative quantitative analysis of various structural and synaptic parameters in L1 of the human TLN.Summary of different structural parameter measurements (bold) from the detailed 3D-volume reconstructions of SBs in L1, separated for sublaminae. Values are presented as mean, SD, median, IQR, CV, skewness, and variance for each parameter for all patients studied. #: Values with skewness > 3 indicate a non-normal distribution. Abbreviations: IQR: Interquartile Range; CV: coefficient of variation; L: lateral; and C: central (Source data 2 and Source data 3). *Values collected from TEM tomography.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Layer</th>
+      <th>Mean ±SD</th>
+      <th>Median</th>
+      <th>IQR</th>
+      <th>CV</th>
+      <th>Variance</th>
+      <th>Skewness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="6">Synaptic boutons</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Surface area (µm²)</td>
+      <td>L1</td>
+      <td>5.48±1.40</td>
+      <td>5.75</td>
+      <td>2.20</td>
+      <td>0.26</td>
+      <td>1.96</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>4.58±1.13</td>
+      <td>4.27</td>
+      <td>2.20</td>
+      <td>0.25</td>
+      <td>1.28</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>6.39±1.08</td>
+      <td>5.87</td>
+      <td>1.97</td>
+      <td>0.17</td>
+      <td>1.17</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Volume (µm³)</td>
+      <td>L1</td>
+      <td>0.50±0.19</td>
+      <td>0.38</td>
+      <td>0.33</td>
+      <td>0.39</td>
+      <td>0.04</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>0.41±0.21</td>
+      <td>0.49</td>
+      <td>0.41</td>
+      <td>0.50</td>
+      <td>0.04</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>0.58±0.17</td>
+      <td>0.48</td>
+      <td>0.31</td>
+      <td>0.30</td>
+      <td>0.03</td>
+      <td>1.71</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="6">Active zones</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PreAZ surface area (µm²)</td>
+      <td>L1</td>
+      <td>0.20±0.06</td>
+      <td>0.22</td>
+      <td>0.08</td>
+      <td>0.30</td>
+      <td>0.01</td>
+      <td>–1.53</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>0.18±0.08</td>
+      <td>0.22</td>
+      <td>0.14</td>
+      <td>0.43</td>
+      <td>0.00</td>
+      <td>–1.70</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>0.22±0.04</td>
+      <td>0.22</td>
+      <td>0.08</td>
+      <td>0.18</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PSD surface area (µm²)</td>
+      <td>L1</td>
+      <td>0.22±0.07</td>
+      <td>0.23</td>
+      <td>0.12</td>
+      <td>0.32</td>
+      <td>0.00</td>
+      <td>–0.91</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>0.21±0.10</td>
+      <td>0.23</td>
+      <td>0.19</td>
+      <td>0.47</td>
+      <td>0.01</td>
+      <td>–1.02</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>0.22±0.05</td>
+      <td>0.22</td>
+      <td>0.09</td>
+      <td>0.20</td>
+      <td>0.00</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cleft width (nm)</td>
+      <td>L1</td>
+      <td>L: 21.75±2.72C: 29.63±2.36</td>
+      <td>L: 22.20C: 29.73</td>
+      <td>L: 2.88C: 3.19</td>
+      <td>L: 0.13C: 0.08</td>
+      <td>L: 7.40C: 5.56</td>
+      <td>L: –1.03C: –0.96</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>L: 20.17±2.85C: 29.06±3.48</td>
+      <td>L: 21.44C: 29.17</td>
+      <td>L: 5.25C: 6.95</td>
+      <td>L: 0.14C: 0.12</td>
+      <td>L: 8.10C: 12.08</td>
+      <td>L: –1.61C: –0.14</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>L: 23.34±1.70C: 30.19±0.92</td>
+      <td>L: 22.49C: 30.19</td>
+      <td>L: 3.06C: 1.84</td>
+      <td>L: 0.07C: 0.03</td>
+      <td>L: 2.88C: 0.85</td>
+      <td>L: 1.69C: 0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="6">Mitochondria</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Volume (µm³)</td>
+      <td>L1</td>
+      <td>0.04±0.02</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.35</td>
+      <td>0.00</td>
+      <td>–0.31</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>0.04±0.02</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.50</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>0.05±0.01</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>0.25</td>
+      <td>0.00</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <td rowspan="3">% to the total volume</td>
+      <td>L1</td>
+      <td>7.21±1.10</td>
+      <td>7.56</td>
+      <td>1.81</td>
+      <td>0.15</td>
+      <td>1.21</td>
+      <td>–1.13</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>7.18±1.60</td>
+      <td>8.06</td>
+      <td>2.81</td>
+      <td>0.22</td>
+      <td>2.56</td>
+      <td>–1.73</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>7.23±0.68</td>
+      <td>7.17</td>
+      <td>1.35</td>
+      <td>0.09</td>
+      <td>0.46</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="6">Synaptic vesicles</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Total number of SVs</td>
+      <td>L1</td>
+      <td>3430.97±1773.77</td>
+      <td>3675.96</td>
+      <td>3386.86</td>
+      <td>0.52</td>
+      <td>3146276.00</td>
+      <td>–0.31</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>2958.62±1940.51</td>
+      <td>2980.76</td>
+      <td>3880.83</td>
+      <td>0.66</td>
+      <td>3765578.00</td>
+      <td>–0.05</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>3903.32±1852.23</td>
+      <td>4371.16</td>
+      <td>3614.75</td>
+      <td>0.47</td>
+      <td>3430758.00</td>
+      <td>–1.06</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Volume (µm³)</td>
+      <td>L1</td>
+      <td>0.03±0.02</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.60</td>
+      <td>0.00</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>0.02±0.01</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.50</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>0.04±0.02</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.50</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Vesicle diameter (nm)</td>
+      <td>L1</td>
+      <td>25.03±5.67</td>
+      <td>26.36</td>
+      <td>10.38</td>
+      <td>0.23</td>
+      <td>32.13</td>
+      <td>–0.31</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>23.33±5.27</td>
+      <td>25.88</td>
+      <td>9.56</td>
+      <td>0.23</td>
+      <td>27.74</td>
+      <td>–1.67</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>26.73±6.63</td>
+      <td>28.25</td>
+      <td>12.99</td>
+      <td>0.25</td>
+      <td>43.93</td>
+      <td>–0.98</td>
+    </tr>
+    <tr>
+      <td>L1 *</td>
+      <td>30.29±4.67</td>
+      <td>31.10</td>
+      <td>3.21</td>
+      <td>0.15</td>
+      <td>21.77</td>
+      <td>–2.60</td>
+    </tr>
+    <tr>
+      <td>L1a*</td>
+      <td>28.11±6.10</td>
+      <td>30.15</td>
+      <td>3.91</td>
+      <td>0.22</td>
+      <td>37.17</td>
+      <td>–2.04</td>
+    </tr>
+    <tr>
+      <td>L1b*</td>
+      <td>31.88±2.36</td>
+      <td>31.62</td>
+      <td>3.27</td>
+      <td>0.07</td>
+      <td>5.56</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="6">Pool sizes of SVs</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Putative RRP p10 nm from the PreAZ</td>
+      <td>L1</td>
+      <td>3.60±4.24</td>
+      <td>2.10</td>
+      <td>6.98</td>
+      <td>1.18</td>
+      <td>17.99</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>5.90±5.05</td>
+      <td>6.11</td>
+      <td>10.10</td>
+      <td>0.86</td>
+      <td>25.53</td>
+      <td>–0.18</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>1.29±1.87</td>
+      <td>0.41</td>
+      <td>3.41</td>
+      <td>1.44</td>
+      <td>3.49</td>
+      <td>1.65</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Putative RRP p20 nm from the PreAZ</td>
+      <td>L1</td>
+      <td>19.05±17.23</td>
+      <td>17.17</td>
+      <td>29.37</td>
+      <td>0.90</td>
+      <td>296.86</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>25.04±21.09</td>
+      <td>24.82</td>
+      <td>42.18</td>
+      <td>0.84</td>
+      <td>444.82</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>13.07±13.78</td>
+      <td>9.52</td>
+      <td>26.86</td>
+      <td>1.05</td>
+      <td>189.80</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Putative RP60–200 nm from the PreAZ</td>
+      <td>L1</td>
+      <td>463.00±283.82</td>
+      <td>512.65</td>
+      <td>554.39</td>
+      <td>0.61</td>
+      <td>80553.57</td>
+      <td>–0.19</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>390.12±286.89</td>
+      <td>335.05</td>
+      <td>565.79</td>
+      <td>0.74</td>
+      <td>82304.11</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>535.88±321.16</td>
+      <td>690.25</td>
+      <td>584.03</td>
+      <td>0.60</td>
+      <td>103145.30</td>
+      <td>–1.66</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Putative resting pool &gt;200 nm from the PreAZ</td>
+      <td>L1</td>
+      <td>2896.50±1435.93</td>
+      <td>3120.39</td>
+      <td>2698.41</td>
+      <td>0.50</td>
+      <td>2061880.00</td>
+      <td>–0.38</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>2515.02±1588.99</td>
+      <td>2662.80</td>
+      <td>3167.65</td>
+      <td>0.63</td>
+      <td>2524880.00</td>
+      <td>–0.41</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>3277.97±1480.96</td>
+      <td>3577.98</td>
+      <td>2915.99</td>
+      <td>0.45</td>
+      <td>2193254.00</td>
+      <td>–0.87</td>
+    </tr>
+  </tbody>
+</table>
 
 Mitochondria play a pivotal role in synaptic transmission and plasticity (reviewed by Dallérac et al., 2018; see also Discussion). In L1 SBs, either no (Figures 2B and 3A, E) or several mitochondria (Figures 2 and 3C, D; range 0–8) of different shape and size were observed. When present, mitochondria had a volume of 0.04±0.02 µm3 in L1a and 0.05±0.01 µm3 in L1b, respectively (Table 1; Source data 2). Mitochondria contributed with ~7% (L1) to the total bouton volume of SBs, similar to values in L6 (~6%; Schmuhl-Giesen et al., 2022), but with a ~1.5-fold lower percentage than those in L5 (~12%; Yakoubi et al., 2019a) and L4 (~13%; Yakoubi et al., 2019b).
 
@@ -100,7 +565,7 @@ A good correlation between the volume of the SBs and that of mitochondria was fo
 
 **Figure 4.:** Correlation plots showing the strength of correlations between structural and synaptic parameters (Source data 2). Correlations dots and regression lines for L1a are given in black and that for L1b in red. (A) Surface area of SBs vs. surface area of PreAZs; (B) Volume of SBs vs. volume of mitochondria; (C) Surface area of PreAZs vs. total pool of SVs; (D) Surface area of PreAZs vs. p10 nm RRP; (E) Surface area of PreAZs vs. p20 nm RRP; (F) Surface area of PreAZs vs. p60-p200 nm RP; (G) Surface area of PreAZs vs. p200 nm resting pool; (H) Surface area of PreAZs vs. p500 nm resting pool.
 
-## Structural composition of AZs in L1a and L1b excitatory SBs in the human TLN
+### Structural composition of AZs in L1a and L1b excitatory SBs in the human TLN
 
 The number, size, and shape of the AZ, composed of the PreAZ and PSD, is one key structural determinant in synaptic transmission and plasticity (Südhof, 2002; Matz et al., 2010; Holderith et al., 2012) as it represents the docking area of SVs (PreAZs) and the receiving area of neurotransmitter quanta at the PSD (Südhof, 2012).
 
@@ -114,7 +579,7 @@ The size of the synaptic cleft (Table 1; Source data 2, sheet 03) is an importan
 
 The size of the synaptic cleft did not differ significantly between the two sublaminae and was similar to the results in L4, L5 (Yakoubi et al., 2019a, Yakoubi et al., 2019b), and L6 (Schmuhl-Giesen et al., 2022).
 
-## Organization of the pools of SVs in L1a and L1b excitatory SBs of the human TLN
+### Organization of the pools of SVs in L1a and L1b excitatory SBs of the human TLN
 
 SVs are the other key structure in neurotransmitter storage and release, hence they play a fundamental role in synaptic transmission and in the modulation of short- and long-term synaptic plasticity (Südhof, 2002; Südhof, 2012). Three different pools of SVs are functionally defined: the RRP, the RP, and the resting pool. Synaptic efficacy, strength, mode, and probability of release (Pr) are regulated by these pools (Schikorski and Stevens, 2001; Silver et al., 2003; Rizzoli and Betz, 2004; Saviane and Silver, 2006; Schikorski, 2014; Watanabe et al., 2014; Neher, 2015; Vaden et al., 2019; reviewed by Rizzoli and Betz, 2005; Denker and Rizzoli, 2010; Chamberland and Tóth, 2016).
 
@@ -142,13 +607,98 @@ No correlation was observed between the SVs in the putative p200 nm and p500 nm 
 
 Neither for the total nor for the three different putative pools of SVs were significant differences between SBs terminating on dendritic spines or shafts found (Source data 2, sheet 04).
 
-## TEM tomography of L1 excitatory SBs in the human TLN
+### TEM tomography of L1 excitatory SBs in the human TLN
 
 It is still controversially discussed whether so-called ‘docked’ SVs or omega-shaped bodies represent the RRP. To compare our results from the perimeter analysis for the p10 nm RRP with that of ‘docked’ SVs, high-resolution TEM tomography was carried out. Only SBs where the AZ could be followed from its beginning to its end in individual tilt-series and where the AZ was cut perpendicular through the PreAZ, PSD and the synaptic cleft were analyzed. In L1a (50 SBs, on dendritic shafts = 25 SBs; on spines = 25 SBs) and L1b (50 SBs, on dendritic shafts = 25 SBs; on spines = 25 SBs) the number of ‘docked’ SVs was analyzed at the PreAZ (Figure 5; Table 2; Source data 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99473/elife-99473-fig5-v1.jpg)
 
 **Figure 5.:** (A) Large SB (sb) terminating with a single AZ (arrowheads) on a terminal tuft dendritic shaft (de) in L1a. (B) Two adjacent SBs synapsing either (sb1) on a thick dendritic segment (de) or (sb2) on a stubby spine (sp) with a prominent spine apparatus (framed area) in L1b. Scale bars 1 µm. (C) Large mushroom (sp1) and a small spine head (sp2) receiving input from three SBs (sb1, sb2, sb3) and a single SB (sb4) in L1b. Note the large AZs (arrowheads) and the prominent spine apparatus (red framed area) in the mushroom spine. Scale bar 0.5 µm. (D, E, F) High-power images of ‘docked’ SVs (arrowheads) taken from a tilt-series through an individual PreAZ at a L1a spine SB. Note the so-called omega-shaped bodies in (E, F) pointing to the already opening and release of glutamate quanta. Scale bars 0.1 µm.
+
+**Table 2.**
+ ’Docked SVs’ in L1a and L1b of the human TLN.Summary of the number of ‘docked’ SVs in L1, separately for both sublaminae as well as for the different target structures dendritic shafts vs. dendritic spines. Mean ± SD, Median, Interquartile Range (IQR), coefficient of variation (CV), Skewness, and Variance are given for each parameter in all patients studied (Source data 3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Layer</th>
+      <th>Mean ±SD</th>
+      <th>Median</th>
+      <th>IQR</th>
+      <th>CV</th>
+      <th>Skewness</th>
+      <th>Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Number of docked vesicles</td>
+      <td>L1 (n=360 SVs)</td>
+      <td>3.56±1.36</td>
+      <td>4.00</td>
+      <td>3.00</td>
+      <td>0.38</td>
+      <td>–0.07</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <td>L1a</td>
+      <td>3.71±1.38</td>
+      <td>4.00</td>
+      <td>3.00</td>
+      <td>0.37</td>
+      <td>–0.16</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <td>SBs on dendritic shafts (n=91 SVs)</td>
+      <td>3.64±1.47</td>
+      <td>4.00</td>
+      <td>3.00</td>
+      <td>0.40</td>
+      <td>–0.08</td>
+      <td>2.16</td>
+    </tr>
+    <tr>
+      <td>SBs on dendritic spines (n=98 SVs)</td>
+      <td>3.77±1.31</td>
+      <td>4.00</td>
+      <td>2.00</td>
+      <td>0.35</td>
+      <td>–0.24</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <td>L1b</td>
+      <td>3.42±1.34</td>
+      <td>3.00</td>
+      <td>3.00</td>
+      <td>0.39</td>
+      <td>0.02</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td>SBs on dendritic shafts (n=87 SVs)</td>
+      <td>3.48±1.45</td>
+      <td>3.00</td>
+      <td>3.00</td>
+      <td>0.42</td>
+      <td>0.04</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <td>SBs on dendritic spines (n=84 SVs)</td>
+      <td>3.36±1.25</td>
+      <td>3.00</td>
+      <td>2.50</td>
+      <td>0.37</td>
+      <td>–0.07</td>
+      <td>1.57</td>
+    </tr>
+  </tbody>
+</table>
 
 The results for L1a and L1b were two-fold: First, in agreement with already published results (Yakoubi et al., 2019a; Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022) only in a minority (<1%) of all PreAZs analyzed, regardless of their target structures, a dendritic shaft (Figure 5A) or spine (Figure 5B and C), no ‘docked’ SVs were observed, which is in contrast to our perimeter analyses showing several boutons without vesicles within the p10 nm criterion. Second, the majority of PreAZs (~98%) contained more than 2, the most 8 (L1a) and 6 (L1b) ‘docked’ SVs. This finding strongly supports multivesicular release of ‘docked’ SVs in L1a and L1b SBs in line with findings in L4, L5, and L6 SBs (Yakoubi et al., 2019a; Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022; see also Figure 5D–F).
 
@@ -158,13 +708,120 @@ There seems to be a tendency that larger PreAZs contained more ‘docked’ SVs,
 
 In summary, a notable disparity difference was observed between values obtained for L1 using the p10 nm criterion of the perimeter and the TEM tomography analysis. Additionally, the putative RRP in L1 (this study) and L6 (Schmuhl-Giesen et al., 2022) was ∼2–4 times smaller when compared to values in L4 (Yakoubi et al., 2019b) and L5 (Yakoubi et al., 2019a), pointing toward a layer-specific regulation of the putative RRP. Moreover, the results suggest that not only ‘docked’ SVs but also those very close to the PreAZ should be considered to belong to the putative RRP.
 
-## Astrocytic coverage of L1 SBs in the human TLN
+### Astrocytic coverage of L1 SBs in the human TLN
 
 Astrocytes, by directly interacting with synaptic complexes thus forming the ‘tripartite’ synapse, play a pivotal role in the induction, maintenance, and termination of synaptic transmission by controlling the spatial and temporal concentration of neurotransmitter quanta in the synaptic cleft (reviewed by Dallérac et al., 2018). Astrocytic profiles were identified by their irregular stellate shape, relatively clear cytoplasm, numerous glycogen granules, and bundles of intermediate filaments (for criteria see for example Peters et al., 1991; Ventura and Harris, 1999; see also Figure 6A and B). Astrocytes and their fine processes formed a relatively dense network in L4 and L5, but a relatively loose one within the neuropil in L1, as determined by measuring the volume content of astrocytic processes. Astrocytic processes in L1 contributed by ~20% to the total volume of the human TLN, which is similar to findings in L6 of the human TLN. The highest degree (~70%) of astrocytic processes was measured in L4 (Figure 6C; Source data 4, sheet 01, Table 3).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99473/elife-99473-fig6-v1.jpg)
 
 **Figure 6.:** (A) TEM micrograph of two adjacent SBs (sb1, sb2) terminating on two spines (sp1, sp2) in L1a. Sp2 contained a prominent spine apparatus (framed area), sb1 two DCVs (asterisks). Note that both synaptic complexes were only partially ensheathed by fine astrocytic processes (transparent green) reaching the AZs only on one side. In both synaptic complexes, two ‘docked’ SVs (transparent red) at the PreAZs were found. Scale 0.25 µm. (B) Stubby spine (stsp) receiving two SBs (sb1, sb2) in L1b. Here, fine astrocytic processes (transparent green) were found close to the two synaptic complexes but never reached the synaptic cleft. Note also the ‘docked’ SVs (transparent red) pointing to multivesicular release. In both images, the AZs are marked by arrowheads. Scale bar 0.25 µm. (C) Bar histogram showing the percentage (mean ± SD) of the volumetric fraction of astrocytic processes to the total volume in L1 to L6 (Source data 4, sheet 01). Values for L4-L6 are taken from Yakoubi et al., 2019a; Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022. (D) Bar histogram showing the percentage (mean ± SD) of AZs covered by fine astrocytic processes, either on both sides, on one side, or without any coverage, subdivided by their location on dendritic spines or shafts in L1 and L4 (Source data 4, sheet 02). The horizontal bars in C and D indicate significant differences *p<0.05; **p<0.01.
+
+**Table 3.**
+ Astrocytic coverage of synaptic complexes in the human TLN.Summary of astrocytic coverage of synaptic complexes in the human TLN in L1 and L4 measured with two independent experimental approaches: (1) percentage of astrocytic processes contributing to the total volume and (2) percentage of astrocytic coverage around individual AZs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer / Measurement</th>
+      <th>L1(Mean ±SD)</th>
+      <th>L2(Mean ±SD)</th>
+      <th>L3(Mean ±SD)</th>
+      <th>L4(Mean ±SD)</th>
+      <th>L5(Mean ±SD)</th>
+      <th>L6(Mean ±SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Percentage of astrocytic processes to the total volume</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>23.23±6.90</td>
+      <td>43.10±3.38</td>
+      <td>48.42±10.06</td>
+      <td>76.71±12.94</td>
+      <td>58.13±9.15</td>
+      <td>25.16±9.56</td>
+    </tr>
+    <tr>
+      <td colspan="7">Astrocytic coverage of single AZs (%)</td>
+    </tr>
+    <tr>
+      <td>Spine synapses</td>
+      <td>n=254(L1a: 128;L1b: 126)</td>
+      <td>—</td>
+      <td>—</td>
+      <td>n=93</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Complete coverage</td>
+      <td>8.69±9.10</td>
+      <td></td>
+      <td></td>
+      <td>50.21±11.21</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>One side</td>
+      <td>23.73±9.29</td>
+      <td></td>
+      <td></td>
+      <td>27.26±13.04</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Without coverage</td>
+      <td>67.57±15.78</td>
+      <td></td>
+      <td></td>
+      <td>22.52±12.77</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Shaft synapses</td>
+      <td>n=92(L1a: 48;L1b: 44)</td>
+      <td>—</td>
+      <td>—</td>
+      <td>n=41</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Complete coverage</td>
+      <td>8.54±5.39</td>
+      <td></td>
+      <td></td>
+      <td>22.09±24.16</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>One side</td>
+      <td>16.44±13.16</td>
+      <td></td>
+      <td></td>
+      <td>57.30±27.80</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Without coverage</td>
+      <td>75.02±10.89</td>
+      <td></td>
+      <td></td>
+      <td>20.61±22.23</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 A second, more detailed measurement (Figure 6D, Table 3; Source data 4, sheet 02), in which the percentage of AZs covered by astrocytes was analyzed, demonstrated that (1) in L1, the majority of spine and shaft synapses were not (~70%) or only partially (~20%) covered. by fine astrocytic processes; (2) only in a small proportion (~10%) at both spine and shaft synapses fine astrocytic processes forming a ‘tripartite’ synapse physically isolating the synaptic complexes from the surrounding neuropil were observed; (3) the results in L1 (L1a: n=3 patients, n=128 spine synapses, n=48 shaft synapses; L1b: n=3 patients, n=126 spine synapses, n=44 shaft synapses) are in contrast to those in L4 (n=5 patients; n=93 spine synapses, n=41 shaft synapses). In L4, a much higher number of ‘tripartite’ synaptic complexes (spines: ~50%; shafts: ~20%) was found. In this layer, ~25% of the AZs on dendritic spines and ~60% on dendritic shafts were partially covered, however, with large inter-individual differences. Approximately 20% of both spine and shaft synapses were not covered; (4) no significant differences between spine and shaft synapses were found in either L1 or L4.
 
@@ -174,7 +831,7 @@ In summary, it is most likely that the partial coverage or complete absence of f
 
 This study investigated the synaptic organization of L1 in the human TLN. In addition to similarities, the quantitative 3D models of the analyzed excitatory SBs showed significant layer-specific differences in structural and synaptic parameters, in particular in the size of AZs and the total pool of SVs, the putative RRP, RP, and resting pool compared to other previously studied layers (Yakoubi et al., 2019a; Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022). The low degree of astrocytic coverage of L1 SBs suggests that glutamate spillover, and as a consequence, synaptic cross talk may occur at most synaptic complexes in L1.
 
-## Synaptic density measurements
+### Synaptic density measurements
 
 Synaptic density measurements are a useful tool to describe the synaptic organization of a particular area, nuclei, and even layers in different brain regions, but also the degree of connectivity underlying the computational properties of a given brain area or in a given brain network. Meanwhile, numerous studies in various animal species and brain regions have performed such an analysis, but data for a density of synaptic complexes in humans are still rare (but see Marco and DeFelipe, 1997; Tang et al., 2001; DeFelipe et al., 1999; DeFelipe et al., 2002; Alonso-Nanclares et al., 2008; Blazquez-Llorca et al., 2013; Finnema et al., 2016; Cano et al., 2021; Cano et al., 2023).
 
@@ -182,9 +839,9 @@ Strikingly, a huge layer-specific difference in the mean density of synaptic con
 
 In summary, the highest synaptic density was observed in L1, indicating a relatively high level of connectivity and synaptic interaction. This may suggest that L1 facilitates rapid information processing due to its robust synaptic activity.
 
-## Important structural subelements of SBs in the human TLN
+### Important structural subelements of SBs in the human TLN
 
-## Shape and size of PreAZs and PSDs
+#### Shape and size of PreAZs and PSDs
 
 Synaptic efficacy, strength, modes of release, and Pr are beside the pool of SVs, determined by the shape and size of AZs (Matz et al., 2010; Holderith et al., 2012; Südhof, 2012).
 
@@ -196,11 +853,11 @@ The substantial variability in the size of AZs at individual SBs, observed both 
 
 It has been postulated that perforated AZs contribute to synaptic efficacy and plasticity (Geinisman et al., 1992; Nava et al., 2014) by an increased number of SVs at perforated synapses (Buchs and Muller, 1996; Desmond and Weinberg, 1998) and by increasing the number of AMPA- and NMDA-type glutamate receptors at perforated synapses (Ganeshina et al., 2004). However, since the number of perforated AZs in all layers of the human TLN is relatively low compared to those of the macular-non-perforated type, it is highly speculative which impact they might have here on synaptic efficacy and the modulation of synaptic plasticity.
 
-## Size of SVs obtained with TEM vs. TEM tomography
+#### Size of SVs obtained with TEM vs. TEM tomography
 
 The values obtained with both TEM (25.03±5.27 nm) and TEM tomography (30.29±4.67 nm) in L1 are within a range published in previous studies (e.g. human TLN: Yakoubi et al., 2019a, Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022; rat hippocampal CA3 region: Rollenhagen et al., 2007; Zhao et al., 2012a; rodent hippocampal CA1 region: Harris and Sultan, 1995 [lower range]; rodent somatosensory cortex: Rollenhagen et al., 2015; Rollenhagen et al., 2018; Prume et al., 2020). Based on TEM studies, also higher mean SV diameters of ~40 nm and beyond have been published for different species and brain regions (e.g. Schikorski and Stevens, 1997; Sätzler et al., 2002; Deák et al., 2004; Hu et al., 2008). TEM tomographic analyses also indicate variability in SV diameter from ~30 to~52 nm in different brain regions and mouse knock-out model systems (Imig et al., 2014; Muth et al., 2024). High variability of SV diameter has been reported to be a general phenomenon in several species and brain regions. Even a synapse-to-synapse variability in mean SV size is described in neighboring synapses in the hippocampus, neocortex, and cerebellum of rats, mice, and human cell culture systems (Hu et al., 2008; Qu et al., 2009). Additionally, within a single SB, the size of individual SVs can vary, for example, depending on their transmitter filling state and content (e.g. Colliver et al., 2000; Pothos et al., 2002).
 
-## Size of the three pools of SVs
+#### Size of the three pools of SVs
 
 Besides the size of the PreAZ, the pool of rapidly releasable SVs also critically determines Pr and thus synaptic efficacy, strength, and plasticity (Rosenmund and Stevens, 1996; Schikorski and Stevens, 2001; Rizzoli and Betz, 2004; Schikorski, 2014; Watanabe et al., 2014; Vaden et al., 2019; reviewed by Rizzoli and Betz, 2005, Neher, 2015; Chamberland and Tóth, 2016). It is still rather unclear whether functionally heterogeneous SV pools are structurally identifiable and thus support diverse forms of synaptic transmission and would also play a pivotal role in long- and short-term plasticity. Synaptic transmission can be modulated in various ways depending on the availability of SVs and on their recycling rates. Hence, the size of both the RRP and RP critically determines synaptic efficacy, strength, and plasticity. These parameters are controlled at the PreAZ but vary substantially across various CNS synapses (reviewed by Rizzoli and Betz, 2005; Neher, 2015). The contribution of the RRP size to synaptic dynamics and the mechanisms by which such control is achieved at individual SBs remains largely unknown.
 
@@ -216,13 +873,13 @@ Finally, the putative resting pool of SVs at L1 PreAZs in the human TLN is also 
 
 The notable disparities in AZ and SV pool sizes among individual SBs may contribute to rapid alterations in the computational properties of single neurons or networks. Consequently, these variations in AZ and SV pool sizes at L1 SBs may critically influence the behavior of SBs during so-called Up-and-Down states as described for other SBs of the CNS (Zhou and Fuster, 1996; Sanchez-Vives and McCormick, 2000; Sakata and Harris, 2009; Testa-Silva et al., 2014).
 
-## Importance of presynaptic mitochondria in synaptic transmission
+### Importance of presynaptic mitochondria in synaptic transmission
 
 Mitochondria in the cortical layers of the human TLN were organized in clusters associated with the pool of SVs (this study, see also Yakoubi et al., 2019a, Yakoubi et al., 2019b; Schmuhl-Giesen et al., 2022). In L1, mitochondria only contribute by about 7.2% (L1a) and 6.7% (L1b) to the total SB volume with similar values between L1 and L6, but their percentage was ~2-fold lower than values in L4 and L5, suggesting a layer-specific distribution of mitochondria in the human TLN.
 
 Mitochondria play a pivotal role in the recruitment and mobilization of SVs from the RP and resting pool and in the priming and docking process of SVs (Verstreken et al., 2005; Perkins et al., 2010; Smith et al., 2016; reviewed by Dallérac et al., 2018). In the CNS, they act as the main source of internal calcium (Pozzan and Rizzuto, 2000; Rizzuto et al., 2000), thus they regulate and control the internal calcium concentrations in CNS terminals required for the signal cascades where, for example, synaptic proteins driven by Ca2+ like synaptotagmin, synaptophysin, synaptobrevin, and the SNARE-complex are involved (Südhof, 2002).
 
-## Astrocytic coverage of L1 SBs in the human TLN
+### Astrocytic coverage of L1 SBs in the human TLN
 
 It is widely recognized that astrocytes play a crucial role in the formation of the ‘tripartite’ synapse, which is a common characteristic of cortical synapses. Astrocytes serve both as a physical barrier to glutamate diffusion and to mediate neurotransmitter uptake via transporters, thereby regulating the spatial and temporal concentration of neurotransmitters in the synaptic cleft (Oliet et al., 2004; Min and Nevian, 2012; Pannasch et al., 2014; reviewed by Dallérac et al., 2018). In addition, they modulate synaptic transmission by activating pre- and postsynaptic receptors (Haydon and Carmignoto, 2006; Le Meur et al., 2012). Moreover, it was found that the control of timing-dependent long-term depression (t-LTD) at neocortical synapses is critically influenced by astrocytes by increasing Ca2+ signaling during the induction of t-LTD (Min and Nevian, 2012).
 
@@ -232,7 +889,7 @@ The remaining larger part of synaptic complexes in L1 either lacks coverage by f
 
 In summary, two distinct structural scenarios were identified regarding the role of astrocytes in L1. However, it is still rather unknown which of the two scenarios contributes more efficiently to synaptic transmission and plasticity in L1.
 
-## The role of L1 in the information processing of the cortical column
+### The role of L1 in the information processing of the cortical column
 
 The computational properties of the neocortex depend upon its ability to integrate the information provided by the sensory organs (bottom-up information) with internally generated signals such as expectations or attentional signals (top-down information). This integration occurs at apical tuft dendrites of L2/3 and L5 pyramidal neurons in L1. Importantly, L1 is the predominant input layer for top-down information, relayed by a rich, dense network of cortico-cortical, commissural, and associational long-range axonal projections. In experimental animals, L1 consists exclusively of a heterogeneous population of GABAergic interneurons providing feedforward and feedback inhibition (see for example Jiang et al., 2013; Boldog et al., 2018; Obermayer et al., 2018; Kwon et al., 2019; reviewed by Huang et al., 2024) providing signals to the terminal tuft dendrites of pyramidal neurons (reviewed by Schuman et al., 2021). In humans, there is a persistent subpopulation of CR-cells that provides excitation due to their long-range transcolumnar axonal projection to the terminal tuft dendrites (Anstötz et al., 2014), but may also control the population of GABAergic interneurons, which is as of date unknown.
 
@@ -248,7 +905,7 @@ Overall, L1 of the neocortex is a complex and fascinating layer of the brain tha
 
 Human brain tissue sampling during epilepsy surgery has been provided by Dr. med. Dorothea Miller, PD Dr. med. Marec von Lehe, Department of Neurosurgery, Knappschaftschafts/Universitäts-Krankenhaus Bochum and were approved by the Ethical Committees of the Rheinische Friedrich-Wilhelms-University/University Hospital Bonn (Ethical votum of the Medical Faculty to Prof. Dr. med. Johannes Schramm and Prof. Dr. rer. nat. Joachim Lübke, Nr. 146/11), the University of Bochum (Ethical votum of the Medical Faculty to PD Dr. med. Marec von Lehe and Prof. Dr. rer. nat. Joachim Lübke, Reg. No. 5190-14-15; and renewed Ethical votum of the Medical Faculty to Dr. med. Dorothea Miller and Prof. Dr. rer. nat. Joachim Lübke, Reg. No. 17–6199-BR). The consent of the patients was obtained by written and signed statements, and all further experimental procedures were approved by the same Ethical Committees cited above, and the EU directive (2015/565/EC and 2015/566/EC) concerning working with human tissue used for experimental and scientific purposes. All subsequent experimental procedures were approved by the Research Committee of the Research Centre Jülich GmbH. To meet the German protection of data privacy, the patient’s identity is coded.
 
-## Fixation and tissue processing for TEM
+### Fixation and tissue processing for TEM
 
 Tissue samples from the human TLN were, after their removal, prepared and embedded for conventional TEM and TEM tomography analysis. All neocortical access tissues were obtained from patients suffering from drug-resistant temporal lobe epilepsy (1 male and 3 female, 24–65 years in age for L1, and additionally 2 male and 3 female, 25–63 in age for L4; see also Supplementary file 2).
 
@@ -266,7 +923,7 @@ For the study of L1 in the human TLN, blocks of neocortical access tissue were s
 
 Neocortical tissue blocks were cut in the coronal plane through the TLN with a Vibratome VT 1000 S (Leica Microsystems GmbH, Wetzlar, Germany) into 150–200 µm thick sections, collected in ice-cold PB, and washed again several times in PB. Afterwards, they were transferred to 0.5–1% PB-sucrose buffered Osmium tetroxide (OsO4, 300 mOsm, pH 7.4; Sigma, Munich, Germany) for 60–90 min. After visual inspection to check for the quality of post-fixation, sections were thoroughly washed several times in PB and left overnight at 4 °C in PB. The next day, they were dehydrated in an ascending series of ethanol starting at 20%, 30%, 50%, 60%, 70%, 80%, 90%, 95% to absolute ethanol (15 min for each step and absolute ethanol, 30 min twice), followed by a brief incubation in propylene oxide (2 min twice; Fluka, Neu-Ulm, Germany). Sections were then transferred into a mixture of propylene oxide and Durcupan resin (2:1, 1:1 for 1 hr each; Fluka, Neu-Ulm, Germany) and stored overnight in pure resin. The next day, sections were flat embedded on coated glass slides in fresh Durcupan, coverslipped with Acla foils and polymerized at 60 °C for 2 days.
 
-## Semi- and ultrathin sectioning
+### Semi- and ultrathin sectioning
 
 After light microscopic (LM) inspection, a tissue block containing the region of interest (ROI) was glued on a pre-polymerized block and trimmed down. Semithin sections were cut with a Leica UltracutS ultramicrotome (Leica Microsystems, Vienna, Austria), with a Histo-Diamond knife (Fa. Diatome, Nidau, Switzerland). Afterwards they were briefly stained with methylene-blue (Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany) to identify the cortical layers, particularly L1 and underlying L2, examined and documented using a motorized Olympus BX61 microscope equipped with the Olympus CellSense analysis hard- and software (Olympus GmbH, Hamburg, Germany). All images were stored in a database until further use.
 
@@ -274,7 +931,7 @@ After further trimming of the block to its final size, serial ultrathin sections
 
 All images were stored in a database until further use. Selected TEM images for publication were further edited using Adobe Photoshop and Adobe Illustrator software.
 
-## 3D-volume reconstructions and quantitative analysis of L1 SBs
+### 3D-volume reconstructions and quantitative analysis of L1 SBs
 
 TEM panorama images composing each series were imported, stacked, and aligned in the reconstruction software OpenCAR (Contour Alignment Reconstruction; for details see Sätzler et al., 2002). The main goal of this study was to quantify several structural and synaptic parameters representing structural correlates of synaptic transmission and plasticity. Excitatory SBs were characterized by large round SVs and prominent PreAZs and PSDs in contrast to putative GABAergic terminals that have smaller, more oval-shaped SVs and thin or no PSDs.
 
@@ -282,7 +939,11 @@ The following structural parameters were analyzed in randomly selected excitator
 
 The PreAZs and PSDs were regarded as complete when their perimeters were entirely reconstructed in a series of ultrathin sections. The surface areas of the PreAZ and PSD were computed separately by first generating a 3D surface model of the SB. The PreAZ was then measured by extracting this area from the reconstructed presynaptic bouton membrane that was covered by this membrane specialization. Hence, the length (L) of the PreAZ (L PreAZ) and the surface area (SA) of the PreAZ (SA PreAZ) is already known.
 
-The size of the PSD opposing the PreAZ was estimated under the following assumptions: (1) both membrane specializations, PreAZ and PSD, run parallel to each other at the pre- and postsynaptic apposition zone; (2) for both membrane specializations a contour line was drawn determining their actual length (L PreAZ and L PSD). Hence, the surface area of the PSD (SA PSD) is estimated by the following equation:SA PSD=SA PreAZ×LPSD/LPreAZ\begin{document}$$\displaystyle SA\space{\text{PSD}} = SA\space{\text{PreAZ}} \times {L{\text{PSD}}}/ {L{\text{PreAZ}}}$$\end{document}
+The size of the PSD opposing the PreAZ was estimated under the following assumptions: (1) both membrane specializations, PreAZ and PSD, run parallel to each other at the pre- and postsynaptic apposition zone; (2) for both membrane specializations a contour line was drawn determining their actual length (L PreAZ and L PSD). Hence, the surface area of the PSD (SA PSD) is estimated by the following equation:
+
+$$
+SA PSD=SA PreAZ\timesLPSD/LPreAZ
+$$
 
 which is the perimeter ratio between the outlines of the PSD to that of the synaptic contact.
 
@@ -294,19 +955,23 @@ In this work, aldehyde fixation was used that is thought to induce tissue shrink
 
 In the structural and synaptic parameters as estimated here, no significant difference was found for SB size and other synaptic subelements such as mitochondria, active zones (AZs), and SVs when compared with other studies (Zhao et al., 2012a, Zhao et al., 2012b). Therefore, no corrections for shrinkage were applied, and we are thus convinced that the synaptic parameters reported here are accurate and can be directly used for detailed computational models. In addition, large-scale preservation for ultrastructural analysis will therefore continue to rely on chemical fixation approaches, due to the limited preservation of the ultrastructure in cryo-fixed material as stated in Korogod et al., 2015.
 
-## Golgi-Cox impregnation of biopsy material in L1 of the human TLN
+### Golgi-Cox impregnation of biopsy material in L1 of the human TLN
 
 To get an impression about the neuronal organization of the human TLN, four tissue blocks were processed with the Golgi-Cox impregnation technique using the commercially available Hito Golgi-Cox OptimStain kit (Hitobiotec Corp, Kingsport, TE, USA). After removal of the biopsy samples, tissues were briefly rinsed twice in double distilled water (dd H2O), and then transferred into impregnation solution 1 overnight at room temperature. The next day, tissue samples were incubated in fresh impregnation solution 1 and stored for 14 days in the dark at room temperature. The sample blocks were then transferred in solution 3 and kept in the dark at room temperature for one day. Thereafter, they were placed into fresh solution 3 in the dark at room temperature for 6 additional days. Then, solution 3 was exchanged, and samples were stored at 4 °C in the dark overnight. Tissue blocks were embedded in 5% agarose (Carl Roth, Karlsruhe, Germany) diluted in ddH2O and sectioned with a vibratome in the coronal plane at 100–250 µm thickness and then transferred to ddH2O.
 
 After careful removal of the agarose, free-floating sections were incubated into solution 3 for 2–3 min in the dark at room temperature, and right after placed into ddH2O, washed several times, and stored overnight. Afterwards, they were rinsed twice in ddH2O for 4 min each, and dehydrated in 50%, 70%, and 95% ethanol for 5 min each, then transferred into absolute ethanol (3×5 min), defatted in xylene, embedded in Eukitt (Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany), finally coverslipped and air-dried. Afterwards, sections were examined and imaged with an Olympus BX 61 LM equipped with the CellSense software package (Olympus, Hamburg, Germany) at various magnifications, and images were stored in a database until further use.
 
-## Stereological estimation of the density of L1 synaptic contacts in the human TLN
+### Stereological estimation of the density of L1 synaptic contacts in the human TLN
 
-The density of synaptic complexes, composed either between an SB with a dendrite or spine, in a given volume is a valuable parameter to assess the structural and functional changes in the brain, which are linked to age, pathological or experimental conditions (Rakic et al., 1994; DeFelipe et al., 1999). The density of synaptic contacts was unbiasedly estimated in L1, separated for L1a and L1b, from four patients, respectively (Supplementary file 2; Source data 1) using the physical dissector technique (Mayhew, 1996; Fiala and Harris, 2001) by counting the synaptic complexes in a virtual volume generated by two adjacent ultrathin sections that is the dissector: the reference section and the look-up section. Here, counting was performed using FIJI (Schindelin et al., 2012) on a stack of 20 aligned serial electron micrographs for each patient taken from the series of ultrathin sections used for the 3D-volume reconstructions of SBs in L1. An unbiased counting frame was first set, and synaptic contacts to be considered (counted) are the ones present in the reference section only and meeting the following criteria: presence of a PreAZ and a prominent or thin PSD separated by a synaptic cleft and SVs in the presynaptic terminal. Care was taken to distinguish between excitatory and inhibitory synaptic contacts, as well as the postsynaptic target structures (dendritic shafts or spines). Finally, the density of synaptic contacts (Nv) per 1 mm3 was calculated using the formula below:Nv=∑Qd/∑Vd\begin{document}$$\displaystyle  Nv=\sum{Qd}/\sum{Vd} $$\end{document}
+The density of synaptic complexes, composed either between an SB with a dendrite or spine, in a given volume is a valuable parameter to assess the structural and functional changes in the brain, which are linked to age, pathological or experimental conditions (Rakic et al., 1994; DeFelipe et al., 1999). The density of synaptic contacts was unbiasedly estimated in L1, separated for L1a and L1b, from four patients, respectively (Supplementary file 2; Source data 1) using the physical dissector technique (Mayhew, 1996; Fiala and Harris, 2001) by counting the synaptic complexes in a virtual volume generated by two adjacent ultrathin sections that is the dissector: the reference section and the look-up section. Here, counting was performed using FIJI (Schindelin et al., 2012) on a stack of 20 aligned serial electron micrographs for each patient taken from the series of ultrathin sections used for the 3D-volume reconstructions of SBs in L1. An unbiased counting frame was first set, and synaptic contacts to be considered (counted) are the ones present in the reference section only and meeting the following criteria: presence of a PreAZ and a prominent or thin PSD separated by a synaptic cleft and SVs in the presynaptic terminal. Care was taken to distinguish between excitatory and inhibitory synaptic contacts, as well as the postsynaptic target structures (dendritic shafts or spines). Finally, the density of synaptic contacts (Nv) per 1 mm3 was calculated using the formula below:
+
+$$
+Nv=\sumQd/\sumVd
+$$
 
 where Qd is the number of synaptic contacts per dissector and Vd is the volume of the dissector given by: Number of dissectors x frame area x section thickness.
 
-## TEM tomography of L1 SBs in the human TLN
+### TEM tomography of L1 SBs in the human TLN
 
 TEM tomography was performed on 200–300 nm thick sections cut from blocks prepared for serial ultrathin sectioning as described above (Table 2; Source data 3). Sections were mounted on pioloform-coated line copper grids and were counterstained with uranyl acetate and lead citrate following a slightly modified staining protocol as described by Reynolds, 1963.
 
@@ -314,17 +979,21 @@ Subsequently, sections were examined with a JEOL JEM 1400Plus, operating at 120 
 
 To determine possible differences to the values obtained by the 3D reconstructions, in the same tilt series binned at 24 nm (section thickness), the diameter of SVs was measured randomly by using OpenCAR as described above. To avoid double counts and underestimations of the diameter, the ring-shaped structure of an SV was compared on each tilted slice and only marked if it appeared largest. In 18 tilt series, each consisting of 9–14 tilt slices, randomly selected SBs were investigated (L1a: 8 tilt series; 16 SBs with a total of 2094 SVs; L1b: 10 tilt series; 22 SBs with a total of 3740 SVs).
 
-## Quantitative analysis of the astrocytic coverage
+### Quantitative analysis of the astrocytic coverage
 
 Although methodologically associated with the possibility of a certain degree of error, astrocytic processes around synaptic complexes were mainly identified by their relatively clear cytoplasm compared to synaptic boutons or dendritic profiles; in addition by their irregular, stellate shape, by the presence of glycogen granules and bundles of intermediate filaments (Peters et al., 1991; Ventura and Harris, 1999). With greater accuracy, astrocytic processes can be identified with immunolabeling, but this leads to poorer tissue preservation and resolution of cellular structures such as AZs. Among studies in rats (e.g. Rollenhagen et al., 2015; Rollenhagen et al., 2018) in a previous study on the human TLN (Yakoubi et al., 2019b), immunohistochemistry against glutamine synthetase, a key enzyme in astrocytes, was carried out. Since similar results were obtained without immunohistochemistry when identifying astrocytic processes around AZs, immunohistochemistry was omitted in the series of follow-up studies on the human TLN.
 
-To quantify the volume contribution of astrocytic processes in the human neocortex, the interactive software ImageJ (Schneider et al., 2012) was used. The first, the middle, and the last images of an individual TEM series were used for a further quantitative volumetric analysis (Source data 4, sheet 01). In each section of the same series used for the 3D-volume reconstructions, a grid (grid size 1×1 μm2) was placed over the TEM image, and in each square, the abundance of fine astrocytic processes was documented throughout these images and averaged. Using the Cavalieri method [Unbiased Stereology: Three-Dimensional Measurement in Microscopy (Advanced Methods) Paperback-January 7, 2005, by Vyvyan Howard Matthew Reed], the (absolute) volume contribution of astrocytic processes was determined according to the Cavalieri estimator:V=a(p)×∑P×t\begin{document}$$\displaystyle  V = a(p) \times \sum P \times t$$\end{document}
+To quantify the volume contribution of astrocytic processes in the human neocortex, the interactive software ImageJ (Schneider et al., 2012) was used. The first, the middle, and the last images of an individual TEM series were used for a further quantitative volumetric analysis (Source data 4, sheet 01). In each section of the same series used for the 3D-volume reconstructions, a grid (grid size 1×1 μm2) was placed over the TEM image, and in each square, the abundance of fine astrocytic processes was documented throughout these images and averaged. Using the Cavalieri method [Unbiased Stereology: Three-Dimensional Measurement in Microscopy (Advanced Methods) Paperback-January 7, 2005, by Vyvyan Howard Matthew Reed], the (absolute) volume contribution of astrocytic processes was determined according to the Cavalieri estimator:
+
+$$
+V=a(p)\times\sumP\timest
+$$
 
 where a(p) is the size of one square (0.8×0.8 μm2), P is the number of squares counted, and t is the thickness of the slice.
 
 In addition, in consecutive sections spanning the complete AZ, the astrocytic coverage was evaluated under the following criteria: fine astrocytic processes were observed on (1) both sides of the AZ reaching as far as the synaptic cleft, (2) only one side of the AZ was covered by fine astrocytic processes and (3) AZs without astrocytic processes (Source data 4, sheet 02). Values obtained for L1 (L1a: n=3 patients; L1b: 3 patients) either for SBs terminating on dendritic spines (L1a: n=128; L1b: n=126) or shafts (L1a: n=48; L1b: n=44) were compared to L4 (n=5 patients; dendritic spines n=93; dendritic shafts n=41). Layer 4 was chosen because the volumetric analysis showed the highest portion of astrocytic processes in this layer compared to all other cortical layers. All values are given as percentages.
 
-## Statistical analysis
+### Statistical analysis
 
 The mean value ± standard deviation (SD), the median with the interquartile range (IQR), the coefficient of variation (CV), skewness, variance, and the coefficient of correlation (R2) were given for each structural parameter analyzed. The p-value was considered significant only if p<0.05. Box and Violin plots (Plotly 4.0.0 https://chart-studio.plotly.com) were generated to investigate inter-individual differences for each patient and structural parameter (Appendix 1, 2; Source data 2).
 

@@ -11,12 +11,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02tyrky19 Department of Mechanical, Manufacturing and Biomedical Engineering, Trinity College Dublin Dublin Ireland
-2. https://ror.org/02tyrky19 Trinity Centre for Biomedical Engineering, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland
-3. https://ror.org/02tyrky19 School of Biochemistry & Immunology and School of Medicine, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland
-4. https://ror.org/02tyrky19 School of Computer Science and Statistics, Trinity College Dublin Dublin Ireland
-5. https://ror.org/01hxy9878 Advanced Materials for BioEngineering Research (AMBER) Centre, Trinity College Dublin and Royal College of Surgeons in Ireland Dublin Ireland
-6. https://ror.org/03bea9k73 CURAM SFI Research Centre for Medical Devices, National University of Ireland Galway Ireland
+1. Department of Mechanical, Manufacturing and Biomedical Engineering, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+2. Trinity Centre for Biomedical Engineering, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+3. School of Biochemistry & Immunology and School of Medicine, Trinity Biomedical Science Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+4. School of Computer Science and Statistics, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+5. Advanced Materials for BioEngineering Research (AMBER) Centre, Trinity College Dublin and Royal College of Surgeons in Ireland Dublin Ireland ([ROR:01hxy9878](https://ror.org/01hxy9878))
+6. CURAM SFI Research Centre for Medical Devices, National University of Ireland Galway Ireland ([ROR:03bea9k73](https://ror.org/03bea9k73))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ We hypothesise that 2P-FLIM of NAD(P)H and FAD+ provides quantitative informatio
 
 ## Results
 
-## Macrophage polarisation with IFNγ and IL-4 induces metabolic reprograming
+### Macrophage polarisation with IFNγ and IL-4 induces metabolic reprograming
 
 Human blood-derived macrophages were polarised by incubating in cell culture media containing IFNγ (M1) or IL-4 (M2) for 24 hr. Polarisation was confirmed using ELISA and RT-PCR. Cellular metabolic activity was analysed using a sequence of metabolic enzyme inhibitors, and the inhibitors’ effect was measured by extracellular acidification ratio (ECAR), oxygen consumption ratio (OCR), and 2P-FLIM (Figure 1).
 
@@ -54,33 +54,192 @@ Human blood-derived macrophages were polarised by incubating in cell culture med
 
 A slightly higher amount of TNFα production was obtained for IFNγ-M1 when compared with IL-4-M2 macrophages. Regarding IL-10, a statistically higher production was measured in IL-4-M2 when compared with IFNγ-M1 and untreated macrophages (Figure 2A and D). For gene expression, a higher amount of CXCL9 and a statistically significant increase in CXCL10 in IFNγ-M1 macrophages were observed (Figure 2B and C). In addition, MRC1 and CCL13 were further expressed in IL-4-M2 macrophages when compared with untreated and IFNγ-M1 macrophages (Figure 2E and F). IFNγ-M1 macrophages have a higher dependence on aerobic glycolysis, whilst IL-4-M2 macrophages are more reliant on oxidative phosphorylation. We used ECAR and OCRs to certify this metabolic behaviour, which is linked to macrophage polarisation. For ECAR and OCR, we used four different metabolic modulators in succession, oligomycin, FCCP, rotenone + antimycin A (Rot+AA), and 2-deoxy-d-glucose (2-DG), to evaluate cellular metabolism (Figure 2). IFNγ-M1 macrophages exhibited a higher ECAR and lower OCR in response to the treatments added, whilst IL-4-M2 and untreated macrophages had lower ECAR and higher OCR (Figure 2G and J). After plotting ECAR and OCR curves, the areas under the curves (AUC) were measured to reflect basal glycolysis, maximal glycolysis, basal respiration, and maximal respiration.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) ELISA of inflammatory cytokine TNFα and anti-inflammatory IL-10 in IFNγ-M1, IL-4-M2, and UT macrophages. (C–F) Evaluation of CXCL9, MRC1, CXCL10, and CCL13 gene expression in IFNγ-M1, IL-4-M2, and UT macrophages. (G,J ) Extracellular acidification ratio (ECAR) and oxygen consumption ratio (OCR) profile of IFNγ-M1, IL-4-M2, and UT macrophages when treated sequentially with oligomycin, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), rotenone + antimycin A, and 2-deoxy-d-glucose (2-DG). (H, I, K, L) Area under the curve (AUC) values calculated from ECAR and OCR between each treatment. Data displayed as average ± SD. Statistical significance verified by one-way ANOVA with *p<0.05, **p<0.01, ***p<0.001 to show significance for N = 6 donors.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Primary human macrophages were left untreated (UT), treated with IFNγ (20 ng/ml), or IL-4 (20 ng/ml) for 24 hr. Cells were stained for M1 maturation surface markers CD80, CD86, and M2 surface markers CD163, CD206, and analysed by flow cytometry. (A–D) Representative histograms depicting median fluorescence intensity (MFI) of surface markers. Bar graphs depict MFI as a percentage to the control (untreated cells) (N = 3). All data is represented as mean ± SEM and analysed by one-way ANOVA with Dunnett’s multiple-comparisons test.
+
 IFNγ-M1 macrophages have a statistically significant increase of basal and max glycolysis when compared with untreated macrophages (Figure 2H and I). In addition, all macrophage types have similar basal respiration, whilst IL-4-M2 macrophages have a statistically significant increase in max respiration when compared with untreated macrophages (Figure 2K and L).
 
-## 2P-FLIM captures metabolic shifts on IFNγ and IL-4-treated macrophages
+### 2P-FLIM captures metabolic shifts on IFNγ and IL-4-treated macrophages
 
 2P-FLIM harvests NAD(P)H and FAD+ autofluorescence to infer cellular metabolism. NAD(P)H enzyme-bound state is characterised by a longer fluorescence lifetime, whilst NAD(P)H free-state has a shorter fluorescence lifetime. NAD(P)H and FAD+ fluorescence intensities are measured in order to calculate the ORR (Equation 3). These fluorescence features enable the distinction between an OxPhos or glycolytic-dependent metabolism (Skala et al., 1992, Okkelman et al., 2019, Schaefer et al., 2019; Floudas et al., 2020; Neto et al., 2020; Walsh et al., 2020, Perottoni et al., 2021).
 
 For this experiment, we seeded unpolarised macrophages in ibidi Luer μ-slides in static conditions and polarised the macrophages using IFNγ or IL-4 for 24 hr. These macrophages are derived from the same donors as per those presented in Figure 2. Afterwards, we followed the same subjection of metabolic enzymatic inhibitors applied in the ECAR/OCR experiment in which we treated the macrophages with oligomycin, FCCP, Rot + AA, and 2-DG. During the time course of the experiments, the field of view was maintained so as to record single-cell metabolic variations (Figure 3A, Figure 3—figure supplements 1 and 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-v1.jpg)
+
+**Figure 3.:** (A) Time-course imaging of representative (same field of view throughout) IFNγ-M1 macrophages, scale bar: 100 μm. (B, C) Average fluorescence lifetime (τavg) and optical redox ratio (ORR) values for IFNγ-M1 and IL-4-M2 when treated sequentially with oligomycin, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP), rotenone + antimycin A and 2-deoxy-d-glucose (2-DG) of a representative donor. (D) z-score heatmap of 2P-FLIM acquired data for six donors separated by macrophage polarisation and metabolic inhibitor, each individual row corresponds to an imaging field. (E) Uniform Manifold Approximate and Projection (UMAP) plot of 2P-FLIM variables after each treatment each dot corresponds to an individual imaging field. (F) UMAP plot of 2P-FLIM variables after FCCP treatment, each dot corresponds to an individual imaging field. (G) Receiver-operator curve and area under curve values of random forests machine learning model applied to 2P-FLIM data after FCCP treatment. (H) 2P-FLIM weight features determined by mean decrease accuracy and mean decrease Gini of random forests model used to classify macrophages.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** All treatment images collected at the 30 min of treatment and color-coded for different NADH FLIM variables.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** All treatment images collected at the 30 min of treatment and color-coded for different NADH FLIM variables.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Basal phasor with values set at 3.4 ns (red) and 0.4 ns (green) and all donors basal FLIM data distribution. (B) Histogram of all donors normalised to pixel intensity in basal conditions. (C) Histogram distribution of a representative donor normalised to pixel intensity in basal conditions. (D) FCCP phasor with values set at 3.4 ns (red) and 0.4 ns (green) and all donors FCCP FLIM data distribution. (E) Histogram of all donors (N = 6) normalised to pixel intensity in FCCP conditions. (F) Histogram distribution of a representative donor normalised to pixel intensity in FCCP conditions. Ψ value is the non-overlapped area for both curves in each plot when compared with the total area occupied by both curves. A higher Ψ value determines a better segregation between datasets.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Principal component analysis (PCA) and t-SNE data visualisation of two-photon fluorescence lifetime imaging microscopy (2P-FLIM) variables obtained from full field of view (FoV) collected during the course of metabolic treatments (A, B). PCA data visualisation of 2P-FLIM variables obtained from full FoV collected during carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP) treatments and representation of 99.9% confidence ellipses derived from 3 standard deviations of the data presented for each group of samples (C). t-SNE data visualisation of 2P-FLIM variables obtained from full FoV collected during FCCP treatments (D).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp5-v1.jpg)
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) τ1, (B) τ2, (C) α1, (D) α2, (E) optical redox ratio (ORR) distribution based on NADH results, (F) ORR distribution based on FAD results, and (G) τavg. These values are obtained after background removal.
+
 We derived the average fluorescence lifetime (τavg) and ORR of IFNγ-M1 and IL-4-M2 macrophages from the full FoV of 2P-FLIM data and observed an increasing trend of τavg in response to the application metabolic enzymatic inhibitors. With the exception of 2-DG, in which a decrease of τavg was observed for both macrophage phenotypes (Figure 3B). Regarding ORR, there is a slight decreasing trend of ORR, followed by a raise in ORR with the 2-DG treatment for IFNγ-M1 macrophages. For IL-4-M2 macrophages, there is a decrease in ORR with the oligomycin treatment, followed by stabilisation with FCCP and Rot + AA, and finally an increase elicited by 2-DG (Figure 3C). In addition, we utilised phasor analysis on the raw FLIM data. Here, we plotted the phasor maps while fixing the lifetimes at 3.4 ns and 0.4 ns as indicated in literature (Ranjit et al., 2018). Furthermore, we generated histogram plots that showcase the distribution of the data in the phasor plot as well as the difference between IFNγ-M1 and IL-4-M2 macrophages (Figure 3—figure supplement 3). We compiled all the full FoV 2P-FLIM variables: τ1, τ2, α1, α2, τavg, and ORR into a representative z-score heatmap, stratified according to macrophage type and metabolic inhibitors across all donors. IFNγ-M1 macrophages have lower τ1, τ2, τavg, and ORR values when compared with IL-4-M2 macrophages (Figure 3D).
 
-## 2P-FLIM variables allow the classification of IFNγ-M1 and IL-4-M2 macrophages
+### 2P-FLIM variables allow the classification of IFNγ-M1 and IL-4-M2 macrophages
 
 UMAP was applied to full FoV 2P-FLIM variables associated with IFNγ-M1 and IL-4-M2 macrophages as a data visualisation tool. The coordinates for each image were defined using a cosine distance function computed using the 2P-FLIM variables: τavg, τ1, τ2, α1, α2, and ORR (Figure 3E). UMAP representation of 2P-FLIM variables acquired during FCCP treatment provides a separation between IFNγ-M1 and IL-4-M2 macrophages (Figure 3F). This segregation is also observed when applying PCA analysis on FCCP treated human macrophages. However, this separation is not observed for t-SNE analysis (Figure 3—figure supplement 4).
 
 Random forests classification models were applied to classify macrophage polarisation from 2P-FLIM variables when treated with FCCP (Table 1). To adequately train the random forests model, we removed the α1 2P-FLIM variable as it exhibits a negative correlation with the α2 variable (Figure 3—figure supplement 5). ROC curves of our dataset reveal high accuracy for predicting macrophage polarisation in the full FOV during FCCP (AUC = 0.944), when using 2P-FLIM variables as predictors (Figure 3G).
 
+**Table 1.**
+ Hyper-parameters, OBB, ROC-AUC, and confusion matrix of the trained random forests model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor (no. of data points)</th>
+      <th>ntree</th>
+      <th>mtry</th>
+      <th>OOB (%)</th>
+      <th>ROC-AUC</th>
+      <th>TP</th>
+      <th>FP</th>
+      <th>FN</th>
+      <th>TN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All donors – full FoV (36)</td>
+      <td>100</td>
+      <td>2</td>
+      <td>16.67</td>
+      <td>0.944</td>
+      <td>16</td>
+      <td>2</td>
+      <td>4</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
+_ntree, number of trees; mtry, number of variables selected for the best split at each node; OBB, out-of-bag error; ROC-AUC, area under receiver operating characteristics curve; TP, true positive; FP, false positive; FN, false negative; TN, true negative._
+
 Next, the mean decrease accuracy and mean decrease Gini returned by the random forests model reveal that τ1, τ2, and τavg are the most important 2P-FLIM variables for macrophage classification and data segregation (Figure 3H). When using only τ1, τ2, and τavg as the 2P-FLIM predictors for random forests training, a high prediction accuracy was still achieved (ROC-AUC = 0.934) (Figure 3G).
 
-## 2P-FLIM classification models are sensitive to cell heterogeneity
+### 2P-FLIM classification models are sensitive to cell heterogeneity
 
 Macrophage polarisation heterogeneity at a single-cell level was evaluated within each donor in response to the FCCP treatment (Figure 4). Here, we utilised Cell Profiler to evaluate and track single-cell metabolic shifts (Figure 4A). A representative donor UMAP implies two clusters, one majorly occupied by IFNγ-M1 macrophages and the other occupied by IL-4-M2 macrophages (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77373/elife-77373-fig4-v1.jpg)
 
-**Figure 4.:** (A) Single-cell analysis using a custom-built Cell Profiler script, scale bar = 100 µm. (B) Single-cell Uniform Manifold Approximate and Projection (UMAP) visualisation of a representative donor after carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP) treatment using 2P-FLIM variables. (C) Receiver operating characteristics curve (ROCs) of random forests models for classification of macrophages of all human donors used in this study. (D) Mean decrease in accuracy and (E) mean decrease in Gini of each 2P-FLIM variable returned by the random forests model.Figure 4—source data 1.
+**Figure 4.:** (A) Single-cell analysis using a custom-built Cell Profiler script, scale bar = 100 µm. (B) Single-cell Uniform Manifold Approximate and Projection (UMAP) visualisation of a representative donor after carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP) treatment using 2P-FLIM variables. (C) Receiver operating characteristics curve (ROCs) of random forests models for classification of macrophages of all human donors used in this study. (D) Mean decrease in accuracy and (E) mean decrease in Gini of each 2P-FLIM variable returned by the random forests model.
 
 Afterwards, we trained a random forests model for each donor. The new random forests models were trained using τavg, τ1, τ2, α2, and ORR as predictors, the measurements of which were obtained from single cells. The values of the hyper-parameters were decided according to the OBB estimate (Table 2). Subsequently, we evaluated the performance of the trained random forests models by plotting ROC-AUC curves (Figure 4C, Table 2). From Figure 4C and Table 2, it is noticeable that single-cell classification performance is affected by donor variability during the FCCP treatment. Donors D and E have the highest ROC-AUC values and lowest OOB errors. Finally, for the trained random forests models, we plotted the relative importance of each 2P-FLIM variable, and found that τ1, τ2, τavg, and α2 are the most important variables for classifying macrophage type at a single-cell level (Figure 4D and E).
+
+**Table 2.**
+ Hyper-parameters, OBB, ROC-AUC, and confusion matrix of donor-specific random forests models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor (no. of data points)</th>
+      <th>ntree</th>
+      <th>mtry</th>
+      <th>OOB (%)</th>
+      <th>ROC-AUC</th>
+      <th>TP</th>
+      <th>FP</th>
+      <th>FN</th>
+      <th>TN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A (170)</td>
+      <td>100</td>
+      <td>4</td>
+      <td>24.41</td>
+      <td>0.740</td>
+      <td>39</td>
+      <td>18</td>
+      <td>13</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>B (155)</td>
+      <td>150</td>
+      <td>2</td>
+      <td>38.79</td>
+      <td>0.650</td>
+      <td>28</td>
+      <td>27</td>
+      <td>18</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>C (232)</td>
+      <td>250</td>
+      <td>3</td>
+      <td>32.18</td>
+      <td>0.813</td>
+      <td>67</td>
+      <td>29</td>
+      <td>27</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>D (199)</td>
+      <td>400</td>
+      <td>4</td>
+      <td>10.07</td>
+      <td>0.968</td>
+      <td>76</td>
+      <td>5</td>
+      <td>10</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>E (179)</td>
+      <td>250</td>
+      <td>1</td>
+      <td>19.40</td>
+      <td>0.854</td>
+      <td>58</td>
+      <td>9</td>
+      <td>17</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>F (212)</td>
+      <td>250</td>
+      <td>1</td>
+      <td>26.42</td>
+      <td>0.801</td>
+      <td>101</td>
+      <td>2</td>
+      <td>40</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+_ntree, number of trees; mtry, number of variables selected for the best split at each node; OBB, out-of-bag error; ROC-AUC, area under receiver operating characteristics curve; TP, true positive; FP, false positive; FN, false negative; TN, true negative._
 
 ## Discussion
 
@@ -98,23 +257,56 @@ Precise regulation of macrophage activation state is key to understanding diseas
 
 ## Materials and methods
 
-## Human blood monocyte-derived macrophage isolation
+### Human blood monocyte-derived macrophage isolation
 
 This study was approved by the research ethics committee of the School of Biochemistry and Immunology, Trinity College Dublin, and was conducted in accordance with the Declaration of Helsinki. Leucocyte-enriched buffy coats from anonymous healthy donors were obtained with permission from the Irish Blood Transfusion Board (IBTS), St. James’s Hospital, Dublin. Donors provided informed written consent to the IBTS for their blood to be used for research purposes. PBMCs were isolated and differentiated into macrophages as described previously (Mahon et al., 2020). The purity of CD14+CD11b+ macrophages was assessed by flow cytometry and was routinely >95%.
 
-## Cytokine measurements
+### Cytokine measurements
 
 Macrophages (1 × 106 cells/ml) were treated with IFNγ (20 ng/ml) or IL-4 (20 ng/ml) for 24 hr. Supernatants were harvested, and cytokine concentrations of TNFα and IL-10 were quantified by ELISA (eBioscience) according to the manufacturer’s protocol.
 
-## Real-time PCR
+### Real-time PCR
 
 Macrophages (1 × 106 cells/ml) were treated with IFNγ (20 ng/ml) or IL-4 (20 ng/ml) for 24 hr. RNA was extracted using High-Pure RNA Isolation Kits (Roche) and assessed for concentration and purity using the NanoDrop 2000c – UV-Vis spectrophotometer. RNA was equalised and reverse transcribed using the Applied Biosystems High-Capacity cDNA reverse transcription kit. Real-Time PCR Detection System (Bio-Rad Laboratories, CA) was used to detect mRNA expression of target genes. PCR reactions included iTaq Universal SYBR Green Supermix (Bio-Rad Laboratories), cDNA TaqMan fast universal PCR Master Mix and pre-designed TaqMan gene expression probes (Applied Biosystems) for CXCL9, CXCL10, MRC1, CCL13, and the housekeeping gene, 18S ribosomal RNA. The 2– ΔΔCT method was used to analyse relative gene expression.
 
-## Seahorse analyser
+### Seahorse analyser
 
 Macrophages were cultured at 1 × 106 cells/ml for 6 days prior to re-seeding at 2 × 105 cells/well in a Seahorse 96-well microplate and allowed to rest for 5 hr prior to stimulation with IFNγ (20 ng/ml) and IL-4 (20 ng/ml) for 24 hr. The Seahorse cartridge plate was hydrated with XF calibrant fluid and incubated in a non-CO2 incubator at 37°C for a minimum of 8 hr prior to use. Thirty minutes prior to placement into the Seahorse XF/XFe analyser, cell culture medium was replaced with complete XF assay medium (Seahorse Biosciences, supplemented with 10 mM glucose, 1 mM sodium pyruvate, 2 mM l-glutamine, and pH adjusted to 7.4) and incubated in a non-CO2 incubator at 37°C. Blank wells (XF assay medium only) were prepared without cells for subtracting the background OCR and ECAR during analysis. Oligomycin (1 mM, Cayman Chemicals), FCCP (1 mM, Santa Cruz Biotechnology), Rot (500 nM), and AA (500 nM) and 2-DG (25 mM, all Sigma-Aldrich) were prepared in XF assay medium and loaded into the appropriate injection ports on the cartridge plate and incubated for 10 min in a non-CO2 incubator at 37°C. OCR and ECAR were measured over time with sequential injections of oligomycin, FCCP, Rot, and AA and 2-DG. Analysis of results was performed using Wave software (Agilent Technologies). The rates of basal glycolysis, maximal glycolysis, basal respiration, and maximal respiration were calculated as detailed in the manufacturer’s protocol and supplied in Table 3.
 
-## Two-photon fluorescence lifetime imaging microscopy (2P-FLIM)
+**Table 3.**
+ Calculation of basal glycolysis, max glycolytic, basal respiration, and max respiration for ECAR/OCR experimental setup.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rate</th>
+      <th>Calculation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basal glycolysis</td>
+      <td>Average ECAR values prior to oligomycin treatment – non-glycolytic ECAR</td>
+    </tr>
+    <tr>
+      <td>Max glycolysis</td>
+      <td>Average ECAR values after oligomycin and before FCCP treatment</td>
+    </tr>
+    <tr>
+      <td>Basal respiration</td>
+      <td>Average OCR values prior to oligomycin treatment – nonmitochondrial OCR</td>
+    </tr>
+    <tr>
+      <td>Max respiration</td>
+      <td>Average OCR values after FCCP and before rotenone/antimycin A treatment</td>
+    </tr>
+  </tbody>
+</table>
+
+_ECAR, extracellular acidification ratio; OCR, oxygen consumption ratio; FCCP, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone._
+
+### Two-photon fluorescence lifetime imaging microscopy (2P-FLIM)
 
 2P-FLIM was performed on 24 hr-polarised macrophages seeded in ibidi Luer μ-slides with a 0.8 mm channel height. 2P-FLIM was achieved using a custom upright (Olympus BX61WI) laser multiphoton microscopy system equipped with a pulsed (80 MHz) titanium: sapphire laser (Chameleon Ultra, Coherent, USA), water-immersion 25× objective (Olympus, 1.05 NA), and temperature-controlled stage at 37°C. Two-photon excitation of NAD(P)H and FAD+ fluorescence was performed at the excitation wavelength of 760 and 800 nm, respectively. Several studies have reported that two-photon excitation in the range of 720–760 nm can be used to selectively excite NAD(P)H, while for FAD+ a excitation wavelength above 900 nm is commonly used (Huang et al., 2002; Levitt et al., 2011). A 458/64 nm and 520/35 nm bandpass filter were used to isolate the NAD(P)H and FAD+ fluorescence emissions based on their emission spectra (Huang et al., 2002).
 
@@ -122,18 +314,30 @@ Macrophages were cultured at 1 × 106 cells/ml for 6 days prior to re-seeding at
 
 Fluorescence lifetime images with their associated decay curves for NAD(P)H were obtained with a minimum of 1 × 106 photons peak. After imaging, the background noise was removed. This was performed by defining regions of interest (ROI) of the cells on the 2P-FLIM image. Consequently, lower values of photons/pixels are removed from analysis improving the signal-to-noise ratio (Figure 3—figure supplement 6).
 
-The decay curved was generated and fitted with a double-exponential decay without including the instrument response function (IRF) (Equation 1).(1)It=I0[α1e-tτ1+α2e-tτ2]+C
+The decay curved was generated and fitted with a double-exponential decay without including the instrument response function (IRF) (Equation 1).
 
-I(t) represents the fluorescence intensity measured at time t after laser excitation; α1 and α2 represent the fraction of the overall signal proportion of a short and long component lifetime, respectively. τ1 and τ2 are the long and short lifetime components, respectively; C corresponds to background light. Chi-square statistical test was used to evaluate the goodness of multiexponential fit to the raw fluorescence decay data. In this study, all of the fluorescence lifetime fitting values with χ2 < 1.3 were considered as ‘good’ fits. For NAD(P)H, the double exponential decay was used to differentiate between the protein-bound (τ1) and free (τ2) NAD(P)H. The average fluorescence lifetime was calculated using Equation 2.(2)τavg=(τ1×α1+τ2×α2)(α1+α2)
+$$
+It=I0[\alpha_{1}e^{\frac{-t}{\tau_{1}}}+\alpha_{2}e^{\frac{-t}{\tau_{2}}}]+C
+$$
 
-Intensity-based images of NAD(P)H and FAD+ were acquired, and their ratio was calculated using Equation 3 to obtain the ORR.(3)ORR=FAD+NADPH
+I(t) represents the fluorescence intensity measured at time t after laser excitation; α1 and α2 represent the fraction of the overall signal proportion of a short and long component lifetime, respectively. τ1 and τ2 are the long and short lifetime components, respectively; C corresponds to background light. Chi-square statistical test was used to evaluate the goodness of multiexponential fit to the raw fluorescence decay data. In this study, all of the fluorescence lifetime fitting values with χ2 < 1.3 were considered as ‘good’ fits. For NAD(P)H, the double exponential decay was used to differentiate between the protein-bound (τ1) and free (τ2) NAD(P)H. The average fluorescence lifetime was calculated using Equation 2.
+
+$$
+\tau_{avg}=\frac{(\tau_{1}\times\alpha_{1}+\tau_{2}\times\alpha_{2})}{(\alpha_{1}+\alpha_{2})}
+$$
+
+Intensity-based images of NAD(P)H and FAD+ were acquired, and their ratio was calculated using Equation 3 to obtain the ORR.
+
+$$
+ORR=\frac{FAD^{+}}{NADPH}
+$$
 
 From the images acquired using 2P-FLIM, single-cell analysis was performed using a custom-made script on Cell Profiler (McQuin et al., 2018). The single-cell analysis was conducted in a similar way as the global 2P-FLIM analysis.
 
-## Macrophage classification and machine learning
+### Macrophage classification and machine learning
 
 UMAP was used for data visualisation and exploratory analysis of the clustering patterns in the 2P-FLIM imaging datasets for both global- and single-cell analysis (McInnes et al., 2018). UMAP was implemented in Python, and the plots were obtained in GraphPad. The random forests model was applied to classify IFNγ-M1 and IL-4-M2 macrophages in both full FoV and single-cell donor-specific approaches. Random forests classification was implemented in R. Random forests hyper-parameters include the number of decision trees in the forest, the number of features considered by each tree when splitting a node, and the maximal depth of each tree. The maximal depth of each tree was controlled by setting the maximal number of terminal nodes in each tree to be 8. The values of the other two hyper-parameters were determined through grid search according to the OBB error estimate (Tables 1 and 2). The α1 variable was removed from the random forests model due to its deterministic relationship with the α2 variable (Figure 3—figure supplement 5). ROCs were plotted, and the AUC values were calculated. For full FoV approach, the training dataset was used for the global analysis due to limited data size. Whereas, for the single-cell donor approach, the overall dataset was divided 75% as training datasets and 25% as testing datasets. In addition, random forests feature selection was utilised to evaluate the weight of each 2P-FLIM variable to determine its relative importance in macrophage classification for both the overall and the single-cell datasets. Support vector machine (SVM) and logistic regression models were also implemented for comparing with the random forests model and yielded similar performance with 87.5% accuracy when dividing the full FoV datapoints into 80% training and 20% testing dataset. However, neither the SVM model nor the logistic model is able to provide information on the relative importance of the predictors, and they both require an independent dataset for model validation.
 
-## Statistics
+### Statistics
 
 Each experiment was performed in at least four healthy donors (defined by N) with 3–4 technical replicates run for each experiment (defined by n), depending on the assay type. Normality tests were performed to determine the normal distribution of the data. For ELISA and PCR data, one-way ANOVA and Tukey’s test were used for comparing more than two groups. For Seahorse data, repeated-measures one-way ANOVA was used to account for the variance in basal metabolism across donors. All statistical analyses were performed on GraphPad Prism 9.00 (GraphPad Software).

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Division of Pulmonary, Allergy and Critical Care Medicine, School of Medicine, University of Pittsburgh Pittsburgh United States
+1. Division of Pulmonary, Allergy and Critical Care Medicine, School of Medicine, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 

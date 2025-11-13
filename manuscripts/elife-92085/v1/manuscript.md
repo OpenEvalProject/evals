@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013cjyk83 Energy & Memory, Brain Plasticity Unit, CNRS, ESPCI Paris, PSL Research University Paris France
+1. Energy & Memory, Brain Plasticity Unit, CNRS, ESPCI Paris, PSL Research University Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
 
 † Corresponding author
 
@@ -27,9 +27,110 @@ We first uncovered that PKCδ activation is required in MB neurons for LTM forma
 
 ## Results
 
-## PKCδ is required in MB neurons for LTM formation
+### PKCδ is required in MB neurons for LTM formation
 
 To investigate the role of PKCδ in memory, we downregulated PKCδ expression at the adult stage in the MB neurons (see schematic in Figure 1A) and assessed memory formed using different protocols of aversive olfactory conditioning. These different protocols include the single association between an odor and shocks (1 x conditioning), which elicits a short-lived memory that will rapidly decay after a few hours; 5 spaced cycles of conditioning with 15 min of rest intervals (5 x spaced), which induces LTM; and 5 massed presentations without pauses (5 x massed), which leads to the formation of a less robust, cramming-like type of memory (Bouzaiane et al., 2015; Heisenberg, 2003; Tully et al., 1994). To spatially and temporally restrict PKCδ RNAi expression, we took advantage of the VT30559-Gal4 MB driver (Plaçais et al., 2017) combined with the ubiquitously expressed thermosensitive Gal4 inhibitor tub-Gal80ts (McGuire et al., 2003). This system allows inducing RNAi expression in the MBs of adult flies, by transferring them at 30 °C 2 days before conditioning. This protocol successfully decreased the whole-head PKCδ mRNA level (Figure 1B), thereby revealing PKCδ expression in MB neurons. When PKCδ was knocked down in adult MB neurons, flies subjected to 5 x spaced conditioning presented LTM impairment (Figure 1C). When flies of the same genotype were kept at 18 °C prior to conditioning, i.e. without induction of RNAi expression, LTM was normal (Figure 1C). In addition, the sensitivity to shocks and odors was normal in induced flies (Table 1). We then investigated if other types of aversive memory were also affected by PKCδ knockdown in adult MB neurons. No defect was detected when memory was measured 24 hr after 5 x massed conditioning (Figure 1C), and memory was not affected when tested 3 hr after single-cycle training (Figure 1C). All of these results were replicated with a second non-overlapping RNAi against PKCδ (Figure 1—figure supplement 1A), which downregulates PKCδ expression with similar efficiency (Figure 1—figure supplement 1B). Altogether, these series of experiments demonstrate that PKCδ is specifically required for LTM in adult MB neurons, fulfilling the first condition for a molecular effector of the spacing effect.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of Drosophila MB. The MB includes ~2000 intrinsic neurons per brain hemisphere. Their cell bodies are located in the dorsal posterior part of the brain. MB neurons each send a single neurite into the neuropil, which first traverses the calyx, a dendritic region where MB neurons receive olfactory input from projections neurons, and then extends into a long axonal branch. The bundled axons of MB neurons form a fascicle called the peduncle, which traverses the brain to the anterior part, where axons branch to form medial and vertical lobes according to three major branching patterns – α/β, α’/β’ and γ (Aso et al., 2014) – that define as many neuronal categories. The MB lobes receive input from dopaminergic neurons (the DANs), which signal stimuli of positive and negative valences in a region-specific manner (Aso et al., 2014). During associative learning, dopamine release on coincidentally odorant-activated MB output synapses modulates the synaptic drive to the network of MB output neurons, which bias subsequent odor-driven behavior (Heisenberg, 2003; Hige, 2018). Aversive LTM induced by spaced training is more specifically encoded within the α/β neurons (Pascual and Préat, 2001; Séjourné et al., 2011; Yu et al., 2006), and we previously showed that LTM retrieval involves the depression of an attraction-mediated pathway efferent from the MB vertical lobes (Aso et al., 2014; Bouzaiane et al., 2015; Dolan et al., 2018; Séjourné et al., 2011). However, according to another recent study, LTM retrieval mobilizes in parallel another MB output circuit efferent from the medial lobes (Jacob and Waddell, 2020). (B) Expression of PKCδ RNAi in adult MB neurons induced a significant reduction in the mRNA level of PKCδ measured by RT-qPCR in fly heads. Relative Quantification (RQ) was performed, indicating the foldchange of mRNA levels relative to the control genotype (n=11, t20=2.83, p=0.010). (C) PKCδ knockdown in adult MB neurons impaired memory after 5 x spaced conditioning (n=17–25, F2,58=12.59, p<0.0001). Without the induction of PKCδ RNAi expression, memory formed after 5 x spaced conditioning was normal (n=15–17, F2,45=0.41, p=0.67). Memory formed after 5 x massed training (n=13–14, F2,37=0.65, p=0.53) and 1 x training (n=18, F2,51=0.81, p=0.45) was normal in flies knocked down for PKCδ in adult MB neurons. (D) The cyto-δCKAR sensor was expressed in adult MB neurons and visualized in the CFP and YFP channels. Cytosolic PKCδ activity levels are recorded within the vertical lobes of the MBs (indicated with dashed line). Scale bar = 50 µm (valid for both channels). In naive flies, application of 250 µM of PDBu (black arrow), a pharmacological activator of PKCδ, resulted in the increase of the cyto-δCKAR response, reaching a plateau, as compared to the DMSO control (n=6, t10=5.66, p=0.0002). Quantification of the mean cyto-δCKAR response was performed 280 s after PDBu application on a time window of 560 s (black line). (E) In naive flies, application of 250 µM of PDBu (black arrow) resulted in an increase in the cyto-δCKAR response that is abolished when PKCδ is knocked down in adult MB neurons (n=5–6, t9=4.18, p=0.0024). Quantification of the mean cyto-δCKAR response was performed 280 s after PDBu application on a time window of 560 s (black line). (F) To compare post-conditioning cytosolic PKCδ activities (between 30 min and 2 hr post-conditioning, in yellow on the imaging time frame), cyto-δCKAR traces were normalized to the plateau value reached after addition of PDBu (saturation of the sensor), thus the activity level of cytosolic PKCδ is estimated as the cyto-δCKAR signal value before PDBu application. Cytosolic PKCδ activity is increased in the vertical lobes after 5 x spaced associative paired conditioning as compared to a non-associative spaced conditioning (unpaired) protocol (n=9–10, t17=3.18, p=0.0055). Quantification of the mean post-training PKCδ activity was performed on a time window of 120 s before PDBu application (black line). (G) After 5 x massed paired conditioning, cytosolic PKCδ activity was not changed as compared to 5 x massed unpaired conditioning (n=8, t14=0.33, p=0.75). (H) Similarly, after 1 x paired conditioning, cytosolic PKCδ activity was not changed as compared to 1 x unpaired conditioning (n=8, t14=0.0041, p=0.99). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by one-way ANOVA with post hoc testing by the Tukey pairwise comparisons test (C) or by unpaired two-sided t-test (B, D–H). Asterisks refer to the least significant p-value of post hoc comparison between the genotype of interest and the genotypic controls (C), or to the p-value of the unpaired t-test comparison (B, D–H) using the following nomenclature: *p<0.05, **p<0.01, ***p<0.001, ns: not significant, p>0.05. See also Figure 1—figure supplement 1 and Table 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Behavior analysis with a second non-overlapping PKCδ RNAi: 24 hr memory after 5 x spaced conditioning was specifically impaired after induction of the PKCδ RNAi expression in adult MB (n=14–18, F2,45=6.76, p=0.027), and it was not impacted without induction (n=11–15, F2,37=0.62, p=0.54). No memory defect was found after 5 x massed training (n=16, F2,45=0.90, p=0.42) or 1 x training (n=17–18, F2,48=0.66, P=0.52) in flies knocked down for PKCδ in adult MB. (B) Pan-neuronal expression of either PKCδ RNAi at the adult stage significantly reduced PKCδ mRNA levels. Relative Quantification (RQ) was performed, indicating the foldchange of mRNA levels relative to the control genotype (n=5–6, F2,13=11.85, p=0.0012). (C) In naive flies, application of 5 µM of Bis IV (black arrow), a PKC inhibitor, resulted in a decrease in the cyto-δCKAR response, and this response was abolished when PKCδ was knocked down (n=5–6, t9=3.01, p=0.015). Quantification of the mean cyto-δCKAR response was performed 20 s after Bis IV application on a time window of 250 s (black line). (D) After 5 x spaced training, Bis IV injection also decreased the cyto-δCKAR response as compared to the DMSO control (n=6, t10=4.83, p=0.0007). (E) Memory formed after either 5 x spaced (n=14, F3,52=0.14, p=0.94), or 5 x massed (n=14, F3,52=1.69, p=0.18), or 1 x training (n=14, F3,52=1.07, p=0.37) was not impaired by the expression in the MB neurons at adult stage of the imaging probes used in this study: Pyronic, cyto-δCKAR and mito-δCKAR. Data are expressed as mean ± SEM with dots as individual values, and were analyzed either by one-way ANOVA with post hoc testing by the Tukey pairwise comparisons test (A–B and E), or by an unpaired two-sided t-test (C–D). Asterisks refer to the least significant p-value of post hoc comparison between the genotype of interest and the genotypic controls (A–B, E) or to the p-value of the unpaired t-test comparison (C–D) using the following nomenclature: *p<0.05, **p<0.01, ***p<0.001, ns: not significant, p>0.05.
+
+**Table 1.**
+ Sensory acuity controls in PKCδ knockdown flies.Control experiments for olfactory acuity and electric shock avoidance: the expression of either of the two PKCδ RNAi used in this study, in MB neurons at the adult stage had no significant effect on olfactory acuity, or on the avoidance of electric shocks.Table 1—source data 1.Source data displayed on Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Genotypes</th>
+      <th rowspan="2" colspan="2">Shock avoidance</th>
+      <th colspan="4">Naive odor avoidance</th>
+    </tr>
+    <tr>
+      <th colspan="2">Octanol</th>
+      <th colspan="2">Methylcyclohexanol</th>
+    </tr>
+    <tr>
+      <th>Mean ± s.e.m.</th>
+      <th>Statistics</th>
+      <th>Mean ± s.e.m.</th>
+      <th>Statistics</th>
+      <th>Mean ± s.e.m.</th>
+      <th>Statistics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tubGal80ts;VT30559/+</td>
+      <td>0.63±0.057</td>
+      <td rowspan="3">F2,33=2.60; p=0.09; n=12</td>
+      <td>0.74±0.053</td>
+      <td rowspan="3">F2,27=5.60; p=0.0092*; n=9–11</td>
+      <td>0.72±0.069</td>
+      <td rowspan="3">F2,27=1.27; p=0.30; n=9–11</td>
+    </tr>
+    <tr>
+      <td>tubGal80ts;VT30559 &gt;UAS-PKCδRNAi JF02991</td>
+      <td>0.76±0.033</td>
+      <td>0.53±0.070</td>
+      <td>0.60±0.082</td>
+    </tr>
+    <tr>
+      <td>UAS-PKCδRNAi JF02991/+</td>
+      <td>0.64±0.039</td>
+      <td>0.44±0.073</td>
+      <td>0.56±0.069</td>
+    </tr>
+    <tr>
+      <td>tubGal80ts;VT30559/+</td>
+      <td>0.47±0.052</td>
+      <td rowspan="3">F2,33=0.38; p=0.69; n=12</td>
+      <td>0.63±0.040</td>
+      <td rowspan="3">F2,33=2.76; p=0.078; n=12</td>
+      <td>0.66±0.046</td>
+      <td rowspan="3">F2,33=0.64; p=0.53; n=12</td>
+    </tr>
+    <tr>
+      <td>tubGal80ts;VT30559 &gt;UAS-PKCδRNAi KK109117</td>
+      <td>0.42±0.039</td>
+      <td>0.70±0.033</td>
+      <td>0.67±0.034</td>
+    </tr>
+    <tr>
+      <td>UAS-PKCδRNAi KK109117/+</td>
+      <td>0.43±0.047</td>
+      <td>0.57±0.047</td>
+      <td>0.61±0.050</td>
+    </tr>
+    <tr>
+      <td>tubGal80ts,c739/+</td>
+      <td>0.45±0.060</td>
+      <td rowspan="3">F2,39=0.61; p=0.55; n=14</td>
+      <td>0.58±0.050</td>
+      <td rowspan="3">F2,33=2.48; p=0.099; n=12</td>
+      <td>0.46±0.044</td>
+      <td rowspan="3">F2,33=0.94; p=0.40; n=12</td>
+    </tr>
+    <tr>
+      <td>tubGal80ts,c739 &gt;UAS-PKCδRNAi JF02991</td>
+      <td>0.40±0.053</td>
+      <td>0.45±0.036</td>
+      <td>0.47±0.051</td>
+    </tr>
+    <tr>
+      <td>UAS-PKCδRNAi JF02991/+</td>
+      <td>0.49±0.059</td>
+      <td>0.48±0.045</td>
+      <td>0.54±0.048</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Tukey post hoc comparison between the genotype of interest and controls are not significant: tubGal80ts;VT30559 >UAS-PKCδRNAi JF02991 vs tubGal80ts;VT30559/+: ns tubGal80ts;VT30559 >UAS-PKCδRNAi JF02991 vs UAS-PKCδRNAi JF02991/+: ns tubGal80ts;VT30559/+vs UAS-PKCδRNAi JF02991/+: **._
 
 Next, we investigated whether PKCδ was activated in MB neurons following spaced training. We took advantage of the existence of a genetically encoded FRET-based fluorescent reporter of PKCδ-specific activity, δCKAR (Kajimoto et al., 2010; Wu-Zhang et al., 2012), and generated Drosophila lines carrying this sensor under UAS control. Expression of the δCKAR sensor in the adult MB neurons was achieved using the tub-Gal80ts;VT30559-Gal4 driver as for the behavior experiments. To assess the efficacy of the δCKAR sensor in Drosophila neurons, we first used two-photon in vivo imaging in the MB vertical lobes of naive flies to monitor the response of the δCKAR sensor to pharmacological activation of PKCδ, using PDBu (Wu-Zhang et al., 2012). PDBu application induced a robust response of the sensor as compared to solvent alone (Figure 1D). Because PDBu can activate other PKCs than PKCδ (Alzamora et al., 2007; Wu-Zhang et al., 2012), we ascertained the specificity of this response by performing the same experiment in flies expressing PKCδ RNAi in the MB at the adult stage, where PDBu failed to elicit a δCKAR response as compared to flies that do not carry PKCδ RNAi (Figure 1E). Notably, the order of magnitude of the maximum δCKAR response (2–3%) is consistent with what was previously measured in cellulo (Wu-Zhang et al., 2012).
 
@@ -39,13 +140,21 @@ The specific requirement of PKCδ in LTM formation prompted us to investigate wh
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig2-v1.jpg)
 
-**Figure 2.:** (A) When PKCδ was knocked down specifically in the α/β neurons of MBs, memory after 5 x spaced conditioning was impaired (n=18, F2,51=9.52, p=0.0003). Without PKCδ RNAi induction, memory after 5 x spaced conditioning was normal (n=14, F2,39=0.47, p=0.63). Memory was normal after 5 x massed training (n=18, F2,51=1.771, p=0.1805) as well as after 1 x training (n=12, F2,33=0.51, p=0.61) in flies expressing PKCδ RNAi in adult α/β MB neurons. (B) Using the same approach as detailed in Figure 1F, the post-training activity of cytosolic PKCδ was measured specifically in the α/β neurons, between 30 min and 2 hr post-conditioning (in yellow on the imaging time frame). After 5 x spaced paired conditioning, cytosolic PKCδ activity was increased in the α lobes as compared to unpaired conditioning (n=10–12, t20=4.58, p=0.0002). (C) Following 5 x massed conditioning, cytosolic PKCδ activity in the α lobes was not changed compared to unpaired conditioning (n=8–10, t16=0.13, p=0.90). (D) After 1 x paired conditioning, cytosolic PKCδ activity in the α lobes also remained unchanged compared to unpaired conditioning (n=12, t22=1.16, p=0.26). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by one-way ANOVA with post hoc testing by the Tukey pairwise comparisons test (A) or by unpaired two-sided t-test (B–D). Asterisks refer to the least significant P-value of a post hoc comparison between the genotype of interest and the genotypic controls (A) or to the p-value of the unpaired t-test comparison (B–D) using the following nomenclature: **p<0.01, p***<0.001, ns: not significant, p>0.05. See also Table 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) When PKCδ was knocked down specifically in the α/β neurons of MBs, memory after 5 x spaced conditioning was impaired (n=18, F2,51=9.52, p=0.0003). Without PKCδ RNAi induction, memory after 5 x spaced conditioning was normal (n=14, F2,39=0.47, p=0.63). Memory was normal after 5 x massed training (n=18, F2,51=1.771, p=0.1805) as well as after 1 x training (n=12, F2,33=0.51, p=0.61) in flies expressing PKCδ RNAi in adult α/β MB neurons. (B) Using the same approach as detailed in Figure 1F, the post-training activity of cytosolic PKCδ was measured specifically in the α/β neurons, between 30 min and 2 hr post-conditioning (in yellow on the imaging time frame). After 5 x spaced paired conditioning, cytosolic PKCδ activity was increased in the α lobes as compared to unpaired conditioning (n=10–12, t20=4.58, p=0.0002). (C) Following 5 x massed conditioning, cytosolic PKCδ activity in the α lobes was not changed compared to unpaired conditioning (n=8–10, t16=0.13, p=0.90). (D) After 1 x paired conditioning, cytosolic PKCδ activity in the α lobes also remained unchanged compared to unpaired conditioning (n=12, t22=1.16, p=0.26). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by one-way ANOVA with post hoc testing by the Tukey pairwise comparisons test (A) or by unpaired two-sided t-test (B–D). Asterisks refer to the least significant P-value of a post hoc comparison between the genotype of interest and the genotypic controls (A) or to the p-value of the unpaired t-test comparison (B–D) using the following nomenclature: **p<0.01, p***<0.001, ns: not significant, p>0.05. See also Table 1.
 
 Altogether, we demonstrate here that PKCδ is specifically activated after spaced training and is required for LTM formation in MB α/β neurons, placing it as a key player of the spacing effect.
 
-## PKCδ regulates mitochondrial pyruvate metabolism for LTM
+### PKCδ regulates mitochondrial pyruvate metabolism for LTM
 
 Increased mitochondrial metabolic activity in MB neurons after spaced training is known to be critical for the initiation of LTM formation (Plaçais et al., 2017). The level of mitochondrial pyruvate metabolism in MB neurons can be modulated thanks to the pyruvate dehydrogenase (PDH) complex (Plaçais et al., 2017). Indeed, the activity of PDH is regulated by its level of phosphorylation: while the PDH kinase (PDK) inhibits PDH, the PDH phosphatase (PDP) activates it (Lavington et al., 2014; Figure 3A). To further investigate whether the upregulation of the pyruvate flux in itself initiates LTM formation, we expressed exclusively at the adult stage an RNAi against PDK in MB neurons, which increases the pyruvate uptake rate by mitochondria in the MB neurons (Plaçais et al., 2017). The PDK RNAi efficiently downregulated PDK expression in neurons (Figure 3—figure supplement 1A). Upon PDK knock-down in the adult MB neurons, we observed that only a single-cycle of associative conditioning was sufficient to form LTM, measured 24 hr after conditioning, while genotypic control flies fail to remember at that timepoint (Figure 3A). Normal LTM formation upon 5 x spaced training, as well as normal odor and shock avoidance were previously confirmed, and a facilitation of LTM was previously reported following two cycles of spaced training (Plaçais et al., 2017). Altogether, this result, as well as our previous report (Plaçais et al., 2017), show that the activity level of PDK, and the resulting regulation of PDH, determines the number of training repeats required to form LTM.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig3-v1.jpg)
+
+**Figure 3.:** (A) Left panel: schema of the regulation of the pyruvate dehydrogenase (PDH) complex. In mitochondria, PDHC catalyzes the conversion of pyruvate to acetyl-CoA, which enters the tricarboxylic acid cycle (TCA). PDH can be inactivated through phosphorylation by PDK. In contrast, PDP can activate PDH via its dephosphorylation. Right panel: flies expressing an RNAi against PDK in MB neurons exclusively at the adult stage showed increased memory measured at 24 hr after a single cycle of training as compared to their genotypic controls (n=18, F2,51=5.09, p=0.0097). (B) The pyruvate sensor Pyronic was expressed in adult MB neurons and the pyruvate FRET signal was quantified in the vertical lobes. In control flies, spaced training elicited a faster pyruvate accumulation in axons of MB neurons after sodium azide application (5 mM; black arrow) as compared to non-associative unpaired training (left panel, slope measurement n=10, t18=6.751, p<0.0001). PKCδ knockdown in adult MB neurons impaired the spaced training induced increase in pyruvate accumulation in axons of MB neurons following sodium azide application (right panel, slope measurement n=10, t18=0.38, p=0.71). As for Figures 1 and 2, imaging was performed between 30 min and 2 hr post-conditioning, represented in yellow on the imaging time frame. (C) Left panel: schema of our model, asking whether PKCδ intervene upstream of the PDH complex. Here, we show that PKCδ regulates PDH activity via PDK inhibition. Right panel: after 5 x spaced conditioning, flies coexpressing the PDK and PKCδ RNAi in the α/β MB neurons at the adult stage exhibited normal memory formation as compared to genotypic controls. Flies solely expressing the PKCδ RNAi in α/β neurons at the adult stage exhibited the reported LTM defect, whereas flies that were only knocked down for PDK in adult α/β neurons formed normal memory (n=12, F4,55=4.75, p=0.0023). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test (B) or by one-way ANOVA with post hoc testing by the Tukey pairwise comparisons test (A,C). Asterisks refer to the p-value of the unpaired t-test comparison or to the least significant p-value of post hoc comparison between the genotype of interest and the genotypic controls using the following nomenclature: *p<0.05, ****p<0.0001, ns: not significant, p>0.05. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pan-neuronal expression of PDK RNAi significantly reduced PDK mRNA levels, as compared to the control genotype (n=3–5, t6=6.66, p=0.0006). (B) Schema representing the measure of the mitochondrial pyruvate flux using the pyruvate FRET sensor Pyronic. Here, mitochondrial respiration is blocked by sodium azide at the beginning of the recording, thereby stopping pyruvate mitochondrial uptake. The expected kinetic of pyruvate accumulation following the azide treatment is represented in grey, showing that pyruvate accumulates from the arrest of its mitochondrial uptake until saturation of the sensor. The rate of pyruvate accumulation (i.e. the slope of the measured kinetic, measured between 10 and 70% of the plateau) reflects the rate at which pyruvate was consumed by mitochondria for energy production before their blockade. (C) The Pyronic probe was expressed in adult MB neurons and the pyruvate FRET signal was quantified in the vertical lobes. In naive control flies, PDBu pretreatment (250 µM, 3 min) elicited a faster pyruvate accumulation following sodium azide application (5 mM, black arrows) as compared to flies pretreated with the DMSO solvent alone (left panel, slope measurement n=10–11, t19=2.31, p=0.032). This PDBu pretreatment induced increase in pyruvate accumulation is abolished when PKCδ is knocked down in MB neurons as compared to DMSO pretreatment (right panel, slope measurement n=9–14, t21=0.67, p=0.51). Notably, in control flies, PDBu injection is followed by a progressive increase in the measured Pyronic ratio (black line) as compared to DMSO injection (n=11, t20=5.44, p<0.0001). This effect is not sensitive to PKCδ knockdown (n=9–14, t21=3.54, p=0.0019). As PDBu is known to activate other PKCs (Wu-Zhang et al., 2012), this observation likely reflects a PDBu off-target effect independent of PKCδ on pyruvate neuronal levels. Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: not significant, p>0.05.
 
 We have shown that PKCδ activation occurs in the first hours after spaced training, that is concomitantly to mitochondrial metabolic activation. As PKCδ can modulate mitochondrial metabolism in other tissues (Acin-Perez et al., 2010; Kim and Hammerling, 2020), we wondered whether PKCδ activation in neurons was involved in this process. To address this question, we first asked whether pharmacological PKCδ activation using PDBu in a naive context could be sufficient to upregulate the mitochondrial pyruvate flux in MB neurons. To this end, we used in vivo two-photon imaging of the genetically encoded pyruvate sensor Pyronic (San Martín et al., 2014) expressed in all MB neurons. We employed a previously characterized protocol (Plaçais et al., 2017) to obtain a dynamic measurement of the pyruvate flux to mitochondria, by measuring the slope of pyruvate accumulation following the injection of sodium azide, a potent inhibitor of the mitochondrial respiratory chain (complex IV) (Figure 3—figure supplement 1B). In the brains of naive flies, activation of PKCδ through PDBu application resulted in an upregulated pyruvate flux to the mitochondria of the MB vertical lobes (Figure 3—figure supplement 1C). This upregulation did not occur when PKCδ was knocked down in adult MB neurons (Figure 3—figure supplement 1C), indicating that the increased pyruvate consumption relies on PKCδ activation by PDBu. These results reveal that in naive flies, PKCδ activation is sufficient to increase the pyruvate flux to mitochondria in MB neurons.
 
@@ -53,17 +162,45 @@ We then investigated whether PKCδ mediates metabolic upregulation after spaced 
 
 Next, we examined how PKCδ could regulate mitochondrial pyruvate consumption. Given that the genetic inhibition of PDK facilitates LTM formation (Figure 3A), and that, in non-neuronal cells, PKCδ has been described as an inhibitor of PDK (Acin-Perez et al., 2010; Kim and Hammerling, 2020), we hypothesized that a similar mechanism – that is PDK inhibition resulting in PDH activation – may occur in neurons in the context of LTM formation. To test this hypothesis, we reasoned that genetic inhibition of PDK may alleviate the LTM defect elicited by PKCδ knockdown (as described in Figure 1C). Indeed, we observed that coexpression of PDK and PKCδ RNAis in adult α/β MB neurons did not induce a memory impairment, whereas expression of the PKCδ RNAi alone induced an LTM defect as expected (Figure 3C). Thus, inhibiting PDK genetically is sufficient to fully rescue the memory defect induced by loss of PKCδ, showing that upregulating pyruvate flux via the PDH complex is the critical function of PKCδ in LTM formation.
 
-## MP1 neurons activate PKCδ in the mitochondria of MB neurons via DAMB signaling
+### MP1 neurons activate PKCδ in the mitochondria of MB neurons via DAMB signaling
 
 As detailed in the introduction, the metabolic upregulation induced by spaced training has been shown to be triggered by early post-learning activity of MP1 dopamine neurons, through the Gq-coupled DAMB receptor (Plaçais et al., 2017). We therefore asked if MP1 neuronal dopamine signaling through the DAMB receptor could activate PKCδ and induce its mitochondrial translocation, which would be detected as an increase in PKCδ activity specifically at the level of the mitochondria. For this, we expressed a mitochondria-addressed δCKAR sensor, mito-δCKAR (Figure 4—figure supplement 1 and Video 1), in MB neurons, and monitored PKCδ activity while artificially activating MP1 neurons in naive flies using dTrpA1, a heat-sensitive cation channel that allows to induce neuronal firing through acute temperature increase (Hamada et al., 2008; Plaçais et al., 2012). At the level of the peduncle, where MP1 neurons project onto the α/β MB neurons (Aso et al., 2014; Figure 4A), flies subjected to the activation of MP1 neurons showed an increased PKCδ mitochondrial activity as compared to flies that received a similar thermal treatment but did not express dTrpA1 (Figure 4B). Strikingly, in flies that were additionally knocked down for the DAMB receptor in the MBs, MP1 neuron activation failed to increase PKCδ mitochondrial activity (Figure 4B). Interestingly, we found that PKCδ mitochondrial activity could also be increased in the vertical lobes of the MB in response to MP1 activation (Figure 4C), although to a lesser extent compared to the peduncle region (Figure 4B). This mitochondrial activation of PKCδ in the vertical lobes also depends on DAMB, as its knock-down in the MBs hindered PKCδ activity level increase (Figure 4C). Altogether, these data show that DAMB signaling from MP1 neurons triggers increased PKCδ mitochondrial activity, reflecting its translocation to mitochondria in MB neurons.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig4-v1.jpg)
+
+**Figure 4.:** (A) Top panel: Schema of the MB structure and its afferent MP1 neuron. The dopaminergic neuron MP1 (depicted in green) in the PPL1 cluster projects onto the peduncle area of the MBs. Lower panel: The mito-δCKAR sensor was expressed in adult MB neurons and visualized in the CFP and YFP channels. The region of recording for panel B is at the level of the MB peduncles (dashed line). Scale bar = 30 µm (valid for both channels). (B) Naive flies expressing the mito-δCKAR sensor in MB neurons together with the dTrpA1 (a heat-sensitive cation channel) in MP1 neurons (30E11-LexA driver) were subjected to a thermal treatment consisting of three 2 min periods at 30 °C separated by 2 min (red vertical lines); control flies expressed the mito-δCKAR in MB neurons but not the dTrpA1 channel (no 30E11-LexA driver). Mitochondrial PKCδ activity was recorded before (baseline) and immediately after the activation periods. Quantification of the mean mito-δCKAR response was performed 120 s after the last cycle of thermal activation on a time window of 480 s (black line). In naive flies expressing the dTrpA1 channel in MP1 neurons, activation of MP1 increased mitochondrial PKCδ activity as compared to control flies (n=9–10, t17=3.83, p=0.0013). When DAMB was knocked down in MB neurons, MP1 activation failed to increase mitochondrial PKCδ activity as compared to control flies (n=8–9, t15=0.31, p=0.76). (C) The mito-δCKAR sensor was expressed in adult MB neurons and mitochondrial PKCδ activity was recorded in the vertical lobes (dashed line). As in the peduncle region, in naive flies expressing the dTrpA1 channel in MP1 neurons activation of MP1 increased mitochondrial PKCδ activity in the vertical lobes as compared to control flies (n=9–10, t17=2.37, p=0.030). DAMB knock-down in the MB neurons also prevented any increase of PKCδ mitochondrial activity in the vertical lobes upon the thermogenic activation of MP1 neurons, as compared to the genotypic control (n=9–12, t19=0.83, p=0.42). Data are expressed as mean ± SEM with dots as individual values and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: *p<0.05, **p<0.01, ns: not significant, p>0.05. Scale bar = 30 µm (valid for both channels). See also Figure 4—figure supplement 1 and Video 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparison of fluorescence sub localization in the soma of MB neurons in flies expressing either cyto-δCKAR or mito-δCKAR under the control of the VT30559 driver. Mito-δCKAR punctate signal, suggests a mitochondrial localization of the probe, in contrast to the diffuse signal observed with cyto-δCKAR. This comparison was done in the soma area of the MBs because the density of mitochondria in the lobes is too important to allow their discrimination. Images were acquired by two-photon microscopy and the cyto-and mito-δCKAR sensors were visualized through the YFP channel. (B) Coexpression of mito-δCKAR and mito-DsRed (DsRed is addressed to mitochondria using the COX8 targeting sequence Lutas et al., 2012) in the MB neurons shows a clear colocalization of the YFP and DsRed signals. The image acquired by confocal microscopy shows a single plan located in the middle of a MB soma of a representative fly. Scale bars = 20 µm. See full stack on Video 1.
+
+![Video 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-video1.mp4.jpg)
+
+**Video 1.:** Video of the full z-stack composed of 28 images showing the entire MB soma of the representative fly shown on Figure 4—figure supplement 1B. The YFP channel is on the left, DsRed is in the middle, and the merged channels are shown on the right. Scale bar = 20 µm.
+
 To explore whether PKCδ mitochondrial activation and translocation occur upon 5 x spaced conditioning for LTM formation, we expressed the mito-δCKAR sensor in α/β neurons and measured PKCδ activity after 5 x spaced training, using the same method as in Figure 1F–H. Such expression of mito-δCKAR in the MB neurons at adult stage did not affect the formation of memory upon 5 x spaced conditioning (neither after 5 x massed nor 1 x conditioning; Figure 1—figure supplement 1E). At the level of the peduncle, we found that 5 x spaced training elicited a marked increase in PKCδ mitochondrial activity, as compared to the corresponding unpaired protocol (Figure 5A). Remarkably, DAMB knockdown in adult α/β neurons hampered PKCδ activation in mitochondria after 5 x spaced training (Figure 5A). We observed a similar DAMB-dependent effect at the level of the α lobe (Figure 5B), as well as in the β lobe (Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig5-v1.jpg)
+
+**Figure 5.:** The mito-δCKAR sensor was expressed in adult α/β neurons and the post-training activity of mitochondrial PKCδ was measured in the peduncle (A) or vertical lobes (B) in the same flies, between 30 min and 2 hr post-conditioning (in yellow on the imaging time frame). The same approach was used as in Figure 1F–H with PDBu application to reach saturation level of the sensor and quantification of the mean post-training PKCδ activity performed on a time-window of 120 s before PDBu application (black line). (A) After 5 x spaced paired conditioning, mitochondrial PKCδ activity in the peduncle was increased as compared to unpaired conditioning (left panel, n=7–9, t14=3.56, p=0.0032). When DAMB was knocked down in adult α/β neurons, mitochondrial PKCδ activity was not changed after 5 x spaced paired conditioning as compared to unpaired conditioning (right panel, n=8–9, t15=1.09, p=0.29). (B) At the level of the vertical lobes, after 5 x spaced paired conditioning, mitochondrial PKCδ activity was increased as compared to unpaired conditioning (left panel n=7–9, t14=3.93, p=0.0015). When DAMB was knocked down in adult α/β neurons, mitochondrial PKCδ activity was not changed after 5 x spaced paired conditioning, as compared to unpaired conditioning (right panel n=8–9, t15=0.52, p=0.61). (C) The post-training activity of mitochondrial PKCδ was measured at the level of the peduncle, between 3 hr and 4 hr 30 min after 5 x spaced conditioning. At that timepoint, PKCδ mitochondrial activity was still increased as compared to 5 x spaced unpaired conditioning (n=7–8, t14=3.01, p=0.010). (D) However, 8 h to 9 h 30 min after 5 x spaced conditioning, PKCδ mitochondrial activity in the peduncle was not significantly different from its 5 x spaced unpaired control (n=8–9, t15=1.02, p=0.33). (E) Similarly, in the α lobe, between 3 hr and 4 hr 30 min after 5 x spaced conditioning, PKCδ mitochondrial activity was still increased as compared to 5 x spaced unpaired conditioning (n=8, t14=3.99, p=0.0014), whereas (F) 8 hr to 9 hr 30 min after 5 x spaced conditioning, PKCδ mitochondrial activity in the α lobe was not significantly different from its 5 x spaced unpaired control (n=8–9, t15=1.40, p=0.18). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: *p<0.05, **p<0.01, ns: not significant, p>0.05. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The post-training activity of mitochondrial PKCδ was measured in the medial lobes between 30 min and 2 hr post-conditioning (in yellow on the imaging time frame), in the same flies as in Figure 5A–B. PKCδ activity was increased in the medial lobes after 5 x spaced conditioning as compared to unpaired conditioning (left panel n=8, t14=2.38, p=0.032). On the other hand, PKCδ activity was unchanged in the medial lobes after 5 x spaced conditioning upon the knock-down of DAMB in adult α/β neurons, as compared to unpaired conditioning (right panel n=8, t14=0.95, p=0.36). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: *p<0.05, ns: not significant, p>0.05.
 
 As the post-learning activation of MP1 neurons is known to last up to 2 hr after the last cycle of 5 x spaced conditioning (Plaçais et al., 2012), we then asked whether PKCδ activated state in the α/β neurons’ mitochondria could be maintained beyond 2 hr. We therefore measured PKCδ activity between 3 hr and 4 hr 30 min after 5 x spaced conditioning and found that PKCδ mitochondrial activation was still occurring at that time point, both at the level of the peduncles (Figure 5C) and of the α lobes (Figure 5E). However, at 8 hr post-conditioning, PKCδ activity was back to its baseline level in the peduncles (Figure 5D) and α lobes (Figure 5F). Altogether, our data show that MP1-DAMB signaling induced by spaced conditioning results in PKCδ sustained activation at the level of the mitochondria, where it upregulates the PDH complex to gate LTM formation through increased pyruvate flux. PKCδ remains activated in mitochondria for more than 3 hr, and it returned to its unactivated state by 8 hr post-training.
 
-## Spaced training prolongs learning-induced metabolic enhancement
+### Spaced training prolongs learning-induced metabolic enhancement
 
 The results obtained thus far uncover a DAMB/PKCδ cascade that mediates an increase in pyruvate consumption by MB neuronal mitochondria upon 5 x spaced training for LTM formation. Intriguingly, single-cycle training also induces a metabolic upregulation of similar magnitude, typically observed 1–2 hr after training, at the level of the MB neurons’ somas (as previously reported in Rabah et al., 2023), vertical lobes (Figure 6A and Rabah et al., 2023) and medial lobes (Figure 6—figure supplement 1C). However, we observed that the metabolic enhancement induced by single-cycle training in those compartments faded away rapidly, as it was no longer detectable 3 hr after 1 x training (vertical lobes Figure 6B, somas Figure 6—figure supplement 1A and medial lobes Figure 6—figure supplement 1D). Moreover, the metabolic upregulation occurring after 1 x training was not dependent on DAMB signaling (Figure 6C), nor did it require PKCδ activity in MB neurons (Figure 6D), contrary to what was observed after spaced training (see Plaçais et al., 2017 for DAMB and Figure 3B for PKCδ). This led us to hypothesize that the role of this DAMB/PKCδ cascade after spaced training is to extend the duration of the metabolic enhancement in MB neurons. Indeed, measurements performed 3–4 hr as well as 8–9 hr after the last cycle of spaced training revealed that increased metabolic activity was still occurring at the level of the vertical lobes (Figure 6E–F). In contrast, measurements performed 24 hr after spaced training showed that the metabolic enhancement had stopped by that time point (Figure 6G). In the medial lobes, the observed increased pyruvate flux after 5 x spaced training (Figure 6—figure supplement 1E) also persisted for 8–9 hr post-conditioning (Figure 6—figure supplement 1F), whereas in the somas, the reported upregulation of mitochondrial pyruvate uptake (Pavlowsky et al., 2024) was not sustained and faded away rapidly at 3 hr after 5 x spaced conditioning (Figure 6—figure supplement 1B). Altogether, our results demonstrate that spaced training specifically recruits dopamine/DAMB/PKCδ signaling to perpetuate the metabolic activation in MB neurons’ axonal compartment, which is critical for initiating LTM formation (Figure 7).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig6-v1.jpg)
+
+**Figure 6.:** The pyruvate sensor Pyronic was expressed in adult MB neurons and pyruvate accumulation was measured after conditioning in the vertical lobes. For each panel, the period of imaging after conditioning is indicated in yellow on the imaging time frame. (A) 30 min to 2 hr after 1 x paired conditioning, an increased pyruvate flux was measured in control flies at the level of the vertical lobes, as compared to non-associative unpaired 1 x training (slope measurement n=17–20, t35=4.08, p=0.0003). Here, we pooled the data obtained from control flies acquired in parallel to DAMB and PKCδ knockdown flies (panels C and D). (B) 3 hr to 4 hr 30 min after 1 x paired conditioning of control flies the rate of pyruvate accumulation was similar in the vertical lobes as compared to unpaired conditioning (slope measurement n=8, t14=0.80, p=0.44). (C) 30 min to 2 hr after 1 x paired conditioning, the pyruvate flux was still increased when DAMB was knocked down in the MBs at the adult stage (slope measurement n=9–12, t19=3.53, p=0.0022). (D) Similarly, PKCδ knockdown in adult MB neurons did not impair the 1 x conditioning induced increase in pyruvate accumulation in MB neuron axons (slope measurement n=8–10, t16=4.57, p=0.0003). (E) 3 hr to 4 hr 30 min after the last cycle of 5 x spaced conditioning of control flies, the pyruvate flux was increased in the vertical lobes as compared to 5 x spaced unpaired conditioning (slope measurement n=9–7, t14=3.89, p=0.0016). (F) 8 hr to 9 hr 30 min after the last cycle of 5 x spaced conditioning of control flies, the pyruvate flux was still increased in the vertical lobes as compared to 5 x spaced unpaired conditioning (slope measurement n=8, t14=3.63, p=0.0027). (G) 24 hr after the last cycle of 5 x spaced conditioning of control flies, the pyruvate flux was similar as compared to 5 x spaced unpaired conditioning at the level of the vertical lobes (slope measurement n=9, t16=0.33, p=0.75). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: **p<0.01, ***p<0.001, ns: not significant, p>0.05. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) At the level of the MB somas, 3 hr to 4 hr 30 min after 1 x conditioning, the pyruvate flux of control flies was not increased as compared to 5 x spaced unpaired conditioning (slope measurement n=8–9, t15=0.85, p=0.41). (B) 3 hr to 4 hr 30 min after 5 x spaced conditioning, the pyruvate flux of control flies was not increased as compared to 5 x spaced unpaired conditioning at the level of the MB somas (slope measurement n=10, t18=0.81, p=0.43). (C) 30 min to 2 hr after 1 x paired conditioning, an increased pyruvate flux was measured in control flies at the level of the medial lobes as compared to unpaired 1 x training (slope measurement n=6–10, t14=2.37, p=0.033). (D) 3 hr to 4 hr 30 min after 1 x paired conditioning of control flies the rate of pyruvate accumulation in the medial lobes was similar as compared to unpaired conditioning (slope measurement n=8–9, t15=0.081, p=0.94). (E) 30 min to 2 hr after 5 x spaced conditioning, the pyruvate flux of control flies was increased in the medial lobes as compared to 5 x spaced unpaired conditioning (slope measurement n=7, t12=3.46, p=0.0047). (F) 8 hr to 9 hr 30 min after the last cycle of 5 x spaced conditioning of control flies, the pyruvate flux was still increased in the medial lobes as compared to 5 x spaced unpaired conditioning (slope measurement n=7–8, t13=2.62, p=0.021). Data are expressed as mean ± SEM with dots as individual values, and were analyzed by unpaired two-sided t-test. Asterisks refer to the p-value of the unpaired t-test comparison using the following nomenclature: *p<0.05, **p<0.01, ns: not significant, p>0.05.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92085/elife-92085-fig7-v1.jpg)
 
@@ -91,45 +228,419 @@ Altogether, it is now emerging that PKCδ is functionally ambivalent: while its 
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
 
-## Materials availability
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubulin-Gal80ts;VT30559-Gal4</td>
+      <td>Plaçais et al., 2017</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubulin-Gal80ts;c739-Gal4</td>
+      <td>Turrel et al., 2018</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubulin-Gal80ts;elav-Gal4</td>
+      <td>Silva et al., 2022</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>30E11-LexA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:54209; FLYB: FBst0054209; RRID:BDSC_54209</td>
+      <td>FlyBase symbol: P{GMR30E11-lexA}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PKCδRNAi JF02991</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:28355; FLYB: FBst0028355; RRID:BDSC_28355</td>
+      <td>FlyBase symbol: P{TRiP.JF02991}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PKCδRNAi KK109117</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC:101421; FLYB: FBti0121612; RRID:VDRC_101421</td>
+      <td>FlyBase symbol: P{KK109117}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DAMBRNAi KK110947</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC:105324; FLYB: FBst0477151; RRID:VDRC_105324</td>
+      <td>FlyBase symbol: P{KK110947}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PDKRNAi KK106641</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC:106641; FLYB: FBst0478465; RRID:VDRC_106641</td>
+      <td>FlyBase symbol: P{KK107950}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-dTrpA1</td>
+      <td>Liu et al., 2012</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubulin-Gal80ts;VT30559-Gal4, UAS-Pyronic</td>
+      <td>Plaçais et al., 2017</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>30E11-LexA;VT30559-Gal4</td>
+      <td>Plaçais et al., 2017</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cyto-δCKAR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request; see “generation of transgenic flies” in Material and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-δCKAR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request; see “generation of transgenic flies” in Material and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cyto-δCKAR;UAS-PKCδRNAi JF01991</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-δCKAR;UAS-DAMBRNAi KK110947</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-δCKAR;UAS-DAMBRNAi KK110947;LexAop-dTrpA1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PDKRNAi KK106641;UAS-PKCδRNAi JF02991</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-DsRed</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:93056; FLYB: FBst0093056; RRID:BDSC_93056</td>
+      <td>FlyBase symbol: P{UAS-DsRed.mito}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mito-δCKAR;UAS-mito-DsRed</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-deltaCKAR</td>
+      <td>Addgene</td>
+      <td>#31526RRID:Addgene_31526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC-MUH</td>
+      <td>Addgene</td>
+      <td>#26213RRID:Addgene_26213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJRFC-MUH-UAS-deltaCKAR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>cyto-δCKAR construct used to generate the UAS- cyto-δCKAR Drosophila line</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJRFC-MUH-UAS-mitodelta CKAR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>mito-δCKAR construct used to generate the UAS- mito-δCKAR Drosophila line</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer PKCδ forward</td>
+      <td>This paper, DRSC Fly Primer Bank</td>
+      <td>PCR Primer Pair PP14953</td>
+      <td>5’-GGCACCAAACACCCGTATCT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer PKCδ reverse</td>
+      <td>This paper, DRSC Fly Primer Bank</td>
+      <td>PCR Primer Pair PP14953</td>
+      <td>5’-CCCATAGAATCTGGCTCGCT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer PDK forward</td>
+      <td>This paper, DRSC Fly Primer Bank</td>
+      <td>PCR Primer Pair PP14510</td>
+      <td>5’-CCTCGCCCCTCTCGATAAAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer PDK reverse</td>
+      <td>This paper, DRSC Fly Primer Bank</td>
+      <td>PCR Primer Pair PP14510</td>
+      <td>5’-TCGAACAGGCAGTTCCTTGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer tub forward</td>
+      <td>Turrel et al., 2018</td>
+      <td>N/A</td>
+      <td>5’-TTGTCGCGTGTGAAACACTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer tub reverse</td>
+      <td>Turrel et al., 2018</td>
+      <td>N/A</td>
+      <td>5’-CTGGACACCAGCCTGACCAAC-3’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plant Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. #74904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA MinElute Cleanup Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. #74204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Kit</td>
+      <td>Thermofisher Invitrogen</td>
+      <td>Cat. #18080–051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green I Master mix</td>
+      <td>Roche</td>
+      <td>Cat. # 04729692001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-octanol (99%)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #153095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-methylcyclohexanol (98%)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #218405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraffine GPR Rectapur</td>
+      <td>VWR</td>
+      <td>Cat. #24679.360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #S9625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #P3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #M9272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #C3881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-trehalose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #9531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #S9378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES-NaOH</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #H7637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12,13-dibutyrate (PDBu)</td>
+      <td>Tocris</td>
+      <td>Cat. #4153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bisindolylmaleimide IV (Bis IV)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #B3306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Azide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #71289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate Buffered Saline (PBS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #P4417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde 16%</td>
+      <td>Life technologies</td>
+      <td>Cat. #P36965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad software, v8.4.3</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>ImageJ 1.52 p</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Photo</td>
+      <td>Affinity Photo software, v1.10.5</td>
+      <td>RRID:SCR_016951</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Materials availability
 
 Materials generated in this study are available from the corresponding authors without restriction.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 D. melanogaster flies were maintained on standard cornmeal-yeast-agar medium. Stocks were kept at 18 °C and 60% humidity under a 12 hr light:12 hr dark cycle. Genetic crosses were performed at 18 °C for behavior experiments or at 23 °C for imaging experiments (except when indicated otherwise). Both male and female flies were used for behavior experiments. Female flies were used for imaging experiments due to their larger size. Flies from the Vienna Drosophila Resource Center (VDRC) collection were outcrossed for five generations to a reference strain carrying the w1118 mutation in an otherwise Canton Special (Canton S) genetic background. Since TRiP RNAi transgenes do not carry a mini-white marker but are labeled with a y+ marker, flies from the TRiP RNAi collection were outcrossed to a y1w67c23 strain in an otherwise Canton S background. The Canton S strain was used as the wild type strain.
 
 To target MB neurons, the VT30559-Gal4 line was used in combination with the thermosensitive TARGET system tubulin-Gal80ts to generate the tub-Gal80ts;VT30559-Gal4 inducible driver line (Plaçais et al., 2017), so as to temporally control the expression of the desired transgene. Gal4 activity was released by transferring 0- to 2-day-old adult flies to 30 °C for 2–3 days. Likewise, the c739-Gal4 line was used to specifically target α/β neurons, and the tubulin-Gal80ts;c739-Gal4 construct line previously generated in the laboratory and described in Turrel et al., 2018 allowed temporal control of the Gal4 activity. As described in Silva et al., 2022, the tubulin-Gal80ts;elav-Gal4 system was used for time-controlled pan-neuronal knockdown. To target MP1 neurons independently of the Gal4 system, the 30E11-LexA driver was used (Plaçais et al., 2017). The tub-Gal80ts; VT30559-Gal4, UAS-Pyronic line was previously generated in our research group and described in Plaçais et al., 2017. The UAS-cyto-δCKAR and UAS-mito-δCKAR lines were generated for this study (see ‘Generation of transgenic flies’ section below). The following genetic constructs were generated in this study by combining the appropriate UAS-RNAi line (listed in the key resources table) and/or FRET sensor transgenes: (i) UAS-cyto-δCKAR;UAS-PKCδRNAi JF01991, (ii) UAS-mito-δCKAR;UAS-DAMBRNAi KK110947, (iii) UAS-mito-δCKAR;UAS-DAMBRNAi KK110947;LexAop-dTrpA1, (iv) UAS-PDKRNAi KK106641;UAS-PKCδRNAi JF02991, (v) UAS-mito-δCKAR;UAS-mito-DsRed. All other fly lines used in this study are listed in the key resources table and either come from the VDRC collection or TRiP RNAi collection, or were previously published.
 
-## Method details
+### Method details
 
-## Aversive olfactory conditioning and memory test
+#### Aversive olfactory conditioning and memory test
 
 The behavioral experiments, including sample sizes, were conducted similarly to previous studies from our research group (Plaçais et al., 2017; Scheunemann et al., 2018). For all experiments, training and testing were performed in a sound- and odor-proof room at 25 °C and 80% humidity. Experimental flies (male and female) were transferred to fresh bottles containing standard medium on the day before conditioning for the non-induced condition. For the induced condition, flies were transferred 2 days before the experiment at 30.5 °C to allow RNAi expression.
 
-## Conditioning
+##### Conditioning
 
 Flies were conditioned by exposure to one odor paired with electric shocks and subsequent exposure to a second odor in the absence of shock. A barrel-type machine was used for simultaneous automated conditioning of six groups of 40–50 flies each. Throughout the conditioning protocol, each barrel was attached to a constant air flow at 2 L.min–1. The odorants 3-octanol (odor O) and 4-methylcyclohexanol (odor M), diluted in paraffin oil at 0.360 and 0.325 mM respectively, were alternately used as conditioned stimuli (CS). For a single cycle of associative training, flies were first exposed to an odorant (the CS+) for 1 min while 12 pulses of 5 s-long, 60 V electric shocks were delivered; flies were then exposed 45 s later to a second odorant without shocks (the CS–) for 1 min. Here, the groups of flies were subjected to one of the following olfactory conditioning protocols: 1 cycle training (1 x), five consecutive associative training cycles (5 x massed training), or five associative cycles spaced by 15 min inter-trial intervals (5 x spaced conditioning). Non-associative control protocols (unpaired protocols) were also employed for in vivo imaging experiments. During unpaired conditionings, the odor and shock stimuli were delivered separately in time, with shocks occurring 3 min before the first odorant. After training and until memory testing, flies were kept on regular food at 25 °C (for 3 hr-memory test) or at 18 °C (for 24 hr-memory test).
 
-## Memory test
+##### Memory test
 
 The memory test was performed either 3 hr after 1 x conditioning or 24 hr after 5 x conditioning in a T-maze apparatus comprising a central elevator to transfer the flies to the center of the maze arms. During the test, flies were exposed simultaneously to both odors (the same concentration as during conditioning) in the T-maze. After 1 min of odorant exposure in the dark, flies were trapped in either T-maze arm, retrieved and counted. A memory score was calculated as the number of flies avoiding the conditioned odor minus the number of flies preferring the conditioned odor, divided by the total number of flies. A single memory score value is the average of two scores obtained from two groups of genotypically identical flies conditioned in two reciprocal experiments, using either odorant (3-octanol or 4-methylcyclohexanol) as the CS+. The indicated ‘n’ is the number of independent memory score values for each genotype.
 
-## Odor perception test
+##### Odor perception test
 
 The olfactory acuity of flies was tested after conditioning with the CS+, since electric shocks modify their olfactory perceptions. Flies were then immediately tested in a T-maze, where they had to choose between the CS– or its solvent (paraffin oil). Odor concentrations used in this assay were the same as for the memory assays. At these concentrations, both odorants are innately repulsive. The odor-interlaced side was alternated for successively tested groups. After 1 min, flies were counted, and naive odor avoidance was calculated as for the memory test.
 
-## Electric shock perception test
+##### Electric shock perception test
 
 During the test, flies must choose between two barrels: one delivering the electric shocks, and one that is neutral. The compartment where the electric shocks are delivered was alternated between two consecutive groups. After 1 mine, flies were counted, and shock avoidance was calculated as for the memory test.
 
-## In vivo imaging
+### In vivo imaging
 
 Crosses for imaging experiments were raised at 23 °C and fly progeny were induced for 3 days at 30.5 °C to drive sufficient expression of the probe (and the desired RNAi) for use in imaging, except for MP1 activation experiments involving the thermosensitive LexAop-dTrpA1 transgene in which flies were always kept at 18 °C. As in all previous imaging work from our laboratory, all in vivo imaging was performed on female flies, which are preferred since their larger size facilitates surgery. Naive (not trained) or conditioned flies (1 x, 5 x spaced or 5 x massed and their corresponding unpaired controls) were gently handled by aspiration without anesthesia and glued on their dorsal side to a plastic coverslip coated with a thin transparent plastic sheet. The coverslip was then placed on a recording chamber. Surgery was performed to obtain an imaging window on the fly head by removing the cuticle, trachea and fat bodies, thereby exposing the underlying MB neurons. During the procedure, the head capsule is bathed in a drop of artificial hemolymph: NaCl 130 mM (Sigma cat. # S9625), KCl 5 mM (Sigma cat. # P3911), MgCl2 2 mM (Sigma cat. # M9272), CaCl2 2 mM (Sigma cat. # C3881), D-trehalose 5 mM (Sigma cat. # 9531), sucrose 30 mM (Sigma cat. # S9378), and HEPES hemisodium salt 5 mM (Sigma cat. # H7637). At the end of the procedure, any remaining solution was absorbed and a fresh 90 µL droplet was applied on the preparation. When performed on flies that underwent olfactory conditioning, the imaging experiments were performed within the time period after conditioning indicated on each figure panel.
 
-## FRET δCKAR imaging
+#### FRET δCKAR imaging
 
 Imaging was performed using a SP8 DIVE Leica 2-photon microscope equipped with a 25 x, 1.0 NA water immersion objective. Two-photon excitation of CFP was achieved using an Insight X3 Spectra Physics laser tuned to 840 nm. 512x250 images were acquired at the rate of one image every 2 s, with two z plans imaged in parallel (vertical lobes and peduncle). Typically, the images comprised the structures of both brain hemispheres, although only one hemisphere was visible in some preparations. Two spectrally tunable hybrid detectors were adjusted to detect 440–490 nm CFP emission and 510–550 nm YFP emission. Two minutes after the beginning of image acquisition, 10 µL of a 2.5 mM phorbol 12,13-dibutyrate (PDBu, Tocris cat. # 4153) solution (25 mM PDBu stock solution in DMSO dissolved at 1/10 in artificial hemolymph) were injected into the 90 µL-droplet bathing the fly’s brain, bringing PDBu to a final concentration of 250 µM (DMSO: 1/100). In control experiments, PDBu injection was replaced by the injection of DMSO alone (final concentration: 1/100). To inhibit PKCδ, two minutes after the beginning of image acquisition, 10 µL of a 50 µM bisindolylmaleimide IV (Bis IV, Sigma cat. # B3306) solution (500 µM stock solution in DMSO dissolved at 1/10 in artificial hemolymph), bringing Bis IV to a final concentration of 5 µM. In control experiments, Bis IV injection was replaced by the injection of DMSO alone (final concentration: 1/100). Drug application during the recording could give rise to artifactual perturbation of the signal at the time of injection, with variability from one experiment to another. In Figure 1F and a section of the presented traces corresponding to the 15 s following the injection was smoothed using a running average procedure (with a time window of 30 s) to remove injection artefacts that were especially large in this initial series of experiments. The injection technique was subsequently improved so that no smoothing was applied on any of the other presented experiments (including in particular Figure 2B, which reports a similar phenomenon as Figure 1F).
 
@@ -139,22 +650,22 @@ For the MP1 activation experiments in which PKCδ response activity was assayed 
 
 The indicated ‘n’ is the number of animals that were assayed in each condition.
 
-## FRET imaging of pyruvate flux
+#### FRET imaging of pyruvate flux
 
 Two-photon imaging was performed using a Leica TCS-SP5 upright microscope equipped with a 25 x, 0.95 NA water immersion objective. Two-photon excitation was achieved using a Mai Tai DeepSee laser tuned to 825 nm. The frame rate was two images per second. 512x150 images were acquired at a rate of two images per second. The emission channels for mTFP and Venus were the same as described in Gervasi et al., 2010. Measurements of pyruvate consumption were performed according to a previously well-characterized protocol (Plaçais et al., 2017). After 1 min of baseline acquisition, 10 μL of a 50 mM sodium azide solution (Sigma cat. #71289; prepared in the same artificial hemolymph solution) were injected into the 90 μL-droplet bathing the fly’s brain, bringing sodium azide to a final concentration of 5 mM. In experiments involving pretreatment of the brains (Figure 3A), 250 µM of PDBu or 1/100 DMSO (final concentrations) were injected into the hemolymph droplet 3 mins prior to sodium azide injection. Image analysis was performed as previously described (Plaçais et al., 2017). ROI were delimited by hand around each visible MB vertical lobe, and the average intensity of the mTFP and Venus channels over each ROI was calculated over time after background subtraction. The Pyronic sensor was designed so that FRET from mTFP to Venus decreases when the pyruvate concentration increases. To obtain a signal that positively correlates with pyruvate concentration, the inverse FRET ratio was calculated as mTFP intensity divided by Venus intensity. This ratio was normalized by a baseline value calculated over the 1 min preceding drug injection. The slope was calculated between 10 and 70% of the plateau. The indicated ‘n’ is the number of animals that were assayed in each condition.
 
-## Confocal imaging
+### Confocal imaging
 
 Female flies carrying the VT30559-Gal4 MB neuron driver were crossed with males carrying the two transgenes UAS-mito-δCKAR;UAS-mito-DsRed. The cross was raised at 25 °C and the adult progeny was fixed overnight in 4% paraformaldehyde (Electron Microscopy Sciences, 15710) at 4 °C. Brains were dissected on ice in 1×PBS (Sigma cat. #P4417) and directly mounted using Prolong Mounting Medium (Life Technologies cat. #P36965). Next, z-stacks of the MB neurons’ somas composed of 1,024×1,024 px images were acquired with a Nikon A1R confocal microscope equipped with a×100/1.40 oil-immersion objective, with a step of 1 µm between each plan. Confocal excitation of the mito-δCKAR YFP fluorophore was achieved using a laser tuned to 488 nm while DsRed was excited using a 561 nm laser. The two detectors were adjusted to detect 515–530 nm YFP emission and 570–620 nm DsRed emission. Maximum intensity projection of the 28 images composing the z-stack covering the soma region was generated using Fiji (ImageJ 1.52 p), and the merged image of the two acquired channels was made using Affinity Photo v1.10.5.
 
-## RT-qPCR analyses
+### RT-qPCR analyses
 
 To assess the efficiency of the PKCδ RNAi used in this study, female flies carrying the tubulin-Gal80ts;elav-Gal4 pan-neuronal inducible driver were either crossed with UAS-PKCδRNAi JF02991 or UAS-PKCδRNAi KK109117 males, or with CS males for controls (please note that crosses of these RNAi lines with the constitutive elav-Gal4 driver were lethal for the progeny). To assess PKCδ presence in the MB neurons, female flies carrying the tubulin-Gal80ts;VT30559-Gal4 MB neuron driver were either crossed with UAS-PKCδRNAi JF02991 males, or with CS males for controls. Fly progeny was raised at 23 °C throughout development. Newly hatched flies were transferred to fresh food vials at 30.5 °C for 4 days of induction before RNA extraction, as previously reported (Silva et al., 2022). To assess the efficiency of the PDK RNAi, female flies carrying the elav-Gal4 driver were either crosses with UAS-PDKRNAi KK106641 males or with CS males for controls (the progeny was viable using this constitutive driver). Fly progeny was raised at 25 °C. RNA extraction and cDNA synthesis were performed using the RNeasy Plant Mini Kit (QIAGEN), RNA MinElute Cleanup Kit (QIAGEN), oligo(dT)20 primers and the SuperScript III First-Strand kit (Thermo Fisher Invitrogen). Amplification was performed using a LightCycler 480 (Roche) and the SYBR Green I Master mix (Roche). Specific primers used for PKCδ or PDK cDNA and the refence α-Tub84B (Tub, CG1913) cDNA are specified in the key resources table. The level of PKCδ cDNA was compared to the level of the α-Tub84B reference cDNA. Each reaction was performed in triplicate. The specificity and size of amplification products were assessed by melting curve analyses. Expression relative to the reference was presented as the foldchange compared to the average of control genotype groups measured in parallel (relative quantification RQ = 2−ΔΔCt, where Ct is the cycle threshold). The entire data series were normalized to the control genotype.
 
-## Generation of transgenic flies
+### Generation of transgenic flies
 
 To generate the UAS-cyto-δCKAR line, the pcDNA3-deltaCKAR plasmid (Addgene #31526) was digested by HindIII and XbaI. The resulting fragment was purified by electrophoresis and cloned into a pJFRC-MUH plasmid (Addgene #26213) in the XbaI/NotI subcloning site. The resulting construct was verified by restriction analysis and sequenced by PCR. This subcloning was outsourced to RDBiotech (France). The UAS-mito-δCKAR line was generated using the plasmid mito-δCKAR generated in Wu-Zhang et al., 2012 by subcloning the mito-δCKAR fragment (HindIII/XbaI) into the pJFRC-MUH plasmid. The generation of the transgenic fly strains via the embryonic injection of the two vectors was outsourced to Rainbow Transgenic Flies, Inc (CA, USA).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical parameters including the definitions and exact value of n, deviations and p values are reported in the figures and corresponding legends. Data are expressed as the mean ± SEM with dots as individual values corresponding to either a group of 40–50 flies analyzed together in a behavioral assay, or the response of a single recorded fly for imaging. Statistical analysis and graphs were made using Prism 8 (GraphPad software, v8.4.3). Comparisons between two groups were performed using a two-tailed unpaired t-test; results are provided as the value tx of the t distribution with x degrees of freedom obtained from the data. Comparisons between multiple groups were performed using one-way ANOVA followed by Tukey’s post hoc test for pairwise comparisons. ANOVA results are given as the value of the Fisher distribution Fx,y obtained from the data, where x is the numerator degrees of freedom and y is the denominator degrees of freedom. Asterisks denote the smallest significant difference between the relevant group and its controls with the post hoc comparisons (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: not significant).

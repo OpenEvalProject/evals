@@ -25,6 +25,14 @@ The sebaceous gland (SG) is a vital appendage of the epidermis, and its normal h
 
 The skin is a vital organ that acts as a protective barrier against the external environment, and safeguards against fluid loss. An important component of this barrier function is the presence of a complex mixture of oils, known as sebum, which is produced by the SGs. SGs are part of the epidermis and are typically associated with the hair follicle. These acinar structures have two cell types: basal stem or progenitor cells which encase the differentiated sebocytes (Figure 1a). Sebocyte differentiation begins at the proximal tip of the of the SG, with maturing sebocytes moving upwards, enlarging, accumulating lipids, and ultimately undergoing a highly regulated and specialized form of cell death in which they release their lipid contents into the sebaceous duct (Figure 1b; Kretzschmar et al., 2014; Schneider and Paus, 2010). This process requires the constant turnover of sebocytes, which occurs over a period of 7–14 d in mice (Jung et al., 2015). Both over- and underproduction of sebum have been linked to various skin disorders including acne or dry skin (Al-Zaid et al., 2011; Binczek et al., 2007; Karnik et al., 2009; Lovászi et al., 2017; Rittié et al., 2016; Seiffert et al., 2007; Shi et al., 2015; Smith and Thiboutot, 2008; Stenn et al., 1999), and rare sebaceous carcinomas constitute aggressive tumors leading to high mortality (Buitrago and Joseph, 2008; Nelson et al., 1995), thus SG number and function have to be tightly regulated for proper skin function.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig1-v1.jpg)
+
+**Figure 1.:** (a) A representative image of the homeostatic hair follicle, including its associated sebaceous gland (SG). (b) A detailed schematic of the SG showing the outer basal stem cell layer encasing the differentiated sebocytes. The schematic also shows the gene expression in different regions of the SG. (c) Representative hematoxylin and eosin (H&E) images of SGs from mice (n=5 each) treated with aRW, aN1, aN2, and aN1N2, 7 d post-treatment. (d) Quantification of type of SG found after each treatment. The SGs were divided into three categories: normal SGs containing a characteristic number of sebocytes (normal SG), SGs containing a mix of sebocytes and basal-like cells (mixed SG), and SGs containing no sebocytes and only basal-like cells (no sebocyte SG). For (c), (e), and (f), each SG panel is labeled with where the SG is normal, mixed, or no sebocyte SG. p-values: aN1=2.02E-123, aN2=0.426, aN1N2=3.85E-114. Total n of SGs quantified per treatment: aRW = 425, aN1=298, aN2=343, aN1N2=217. (e) Representative H&E images of SGs from mice (n=5 each) treated with aRW, aJ1, and aJ2, 3 d post-treatment. (f) Representative H&E images of SGs from mice (n=5 each) treated with aRW, aJ1, aJ2 and aJ1J2, 7 d post-treatment. (g) Quantification of type of SG found after each treatment. 3 d: p-values: aJ1=0.409, aJ2=0.004. 7 d: p-values: aJ1=0.057, aJ2=7.61E-151, aJ1J2=6.23E-169. Total n of SGs quantified per treatment: 3 d, aRW = 851, aJ1=944, aJ2=760, 7 d, aRW = 491, aJ1=499, aJ2=388, aJ1J2=461. Chi-square test used for statistical analysis. All treatments were compared against aRW. Error bars represent SEM. Scale bars are 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (Related to Figure 1). (a) Quantification of the percentage of sebaceous glands (SGs) consisting of bursting sebocytes after each treatment at 7 d. p-values: aJ1=0.662, aJ2=0.782, aJ1J2=0.219. (b) Representative hematoxylin and eosin (H&E) images of SGs from mice (n=5 each) treated with aRW, aJ1, aJ2, and aJ1J2, 7 d post-treatment. Total n of SGs quantified per treatment: aRW = 66, aJ1=66, aJ2=68, aJ1J2=47. Student’s T-test used for statistical analysis. Error bars represent SEM. Scale bars are 100 μm.
+
 The Notch signaling pathway is one of the most studied regulators of cell fate decisions, and is known to be widely involved in epidermal differentiation. The pathway consists of multiple ligands and receptors that typically form a signaling axis in pairs. Notch signaling can regulate cell fate by either inducing or inhibiting differentiation, or by making binary cell fate decisions (Wilson and Radtke, 2006). Classically, these functions of Notch signaling have been studied during development, but increasing evidence suggests that the Notch pathway is also involved in regulating cell fate and cell states in adult homeostatic tissues (Ables et al., 2011; Lafkas et al., 2015; Mosteiro et al., 2023; Sato et al., 2012; Siebel and Lendahl, 2017).
 
 While it is known that Notch signaling is not required for embryonic development of the epidermis, it is essential for the postnatal maintenance of the hair follicles and the SGs (Watt et al., 2008). However, the precise role of Notch signaling in adult sebocyte differentiation has not been comprehensively investigated, with most studies examining irreversible deletions of the Notch pathway components in the embryonic ectodermal lineages. While these studies report SG defects, it remains unclear whether these defects are due to a direct effect on the SGs, or whether they are a consequence of general skin defects also observed in these models. For example, SGs are absent in mice with embryonic pan-Notch deletions such as Rbpj (Blanpain et al., 2006), gamma-secretase, Notch1Notch2, and Notch1Notch2Notch3, and are severely reduced in Notch1 and Notch1Notch3 embryonically-deleted skin (Pan et al., 2004), while deletion of Notch2 alone does not affect the SG (Pan et al., 2004). Consistent with the constitutive deletions, loss of Rbpj in adult SGs also results in missing sebocytes, while loss of Notch1 in the adult SGs results in miniaturized lobes that still contain some differentiated sebocytes (Veniaminova et al., 2019). Interestingly, activation of Notch1 in the adult skin results in enlarged SGs (Estrach et al., 2006). Conversely, for the Notch pathway ligands, embryonic and adult deletion of Jag1 (Estrach et al., 2006), and embryonic deletion of Dll1 (Estrach et al., 2008) results in normal SG morphology. Collectively, these data suggest that Notch1 is the dominant Notch receptor involved in regulating sebocyte differentiation, however, it remains unclear which ligand is required.
@@ -33,7 +41,7 @@ In our previous work, we observed that systemic inhibition of Jag2 using monoclo
 
 ## Results
 
-## Jag2 is the dominant Notch signaling ligand involved in regulating sebocyte differentiation
+### Jag2 is the dominant Notch signaling ligand involved in regulating sebocyte differentiation
 
 To investigate the role of Notch signaling in the homeostatic skin, we treated 8- wk-old mice with a single dose of the various antagonizing antibodies (anti-Notch1, anti-Notch2, anti-Jag1, anti-Jag2, and the isotype control antibody anti-Ragweed) alone or in combination. We then examined the dorsal, resting phase (telogen) skin at 3, 7, and 14 d post-treatment. We first confirmed that our antibodies could reproduce the requirement of Notch1 in regulating sebocyte differentiation. To this end, we treated mice with Notch1 (aN1) and Notch2 (aN2) blocking antibodies and examined the SGs at 7 d post-treatment. Loss of mature sebocytes was observed specifically after aN1 treatment, while the aN2-treated SGs showed normal morphology (Figure 1c and d). However, the combined treatment of aN1N2 had a more pronounced effect on SG morphology as compared to aN1 alone (Figure 1c and d), indicating that Notch2 also contributes to regulating sebocyte differentiation, possibly as a compensatory mechanism after inhibition of the dominant Notch1 receptor.
 
@@ -41,25 +49,57 @@ Next, we investigated which ligand formed the signaling pair with Notch1. Loss o
 
 We also examined the percentage of SGs consisting of bursting sebocytes releasing sebum as a proxy of a functional sebaceous duct. There were no significant differences between treatments (Figure 1—figure supplement 1a and b), hinting at a functionally intact sebaceous duct.
 
-## Notch is active in the sebaceous gland stem cells
+### Notch is active in the sebaceous gland stem cells
 
 We next characterized the expression of the relevant receptor and ligand in the SG to develop a spatial map of Notch activity in this tissue. Both the Notch receptors and their ligands are transmembrane proteins that interact with each other in neighboring cells to activate the pathway. To examine this interaction, we performed a triple stain for the cleaved (active) form of the Notch1 intracellular domain (ICD), and Notch1 and Jag2 in situ hybridization (ISH) probes at 3 d post antibody treatment. In the control treated mice, Notch1 ICD was observed in the basal stem cell compartment of the SG, but not in the differentiating sebocytes (Figure 2a–c, cell types based on morphology). We saw a similar pattern of N1ICD-positive cells for aJ1 treatment (Figure 2d–f). Notch1 signaling was not active in all basal cells, as only ~50% of them were positive for N1ICD after control and aJ1 treatment (Figure 2g). Consistent with previous studies, the majority of these N1ICD + cells were present near the proximal tip of the SG (Figure 2—figure supplement 1a–c; Veniaminova et al., 2019), where the initial sebocyte differentiation has been proposed to occur (Kretzschmar et al., 2014). However, after aJ2 treatment, Notch1 activity (ICD staining) was absent, or observed only at very low levels in the basal stem cells, while they still expressed Notch1 and Jag2 mRNA (Figure 2h–j). Strikingly, we noticed the expression of both Notch1 ISH and Jag2 ISH in the same cell on most N1ICD + cells (Figure 2k). Interestingly, a majority of all basal cells (including N1ICD- cells), expressed both N1 and Jag2 mRNA (Figure 2—figure supplement 1d). Our data shows that the vast majority of SG basal stem cells express both the ligand and receptor, but only some basal stem cells experience active Notch signaling at any one point in time, as evidenced by the presence of N1ICD. This could be a technical limitation as the triple staining only captures a temporal snapshot of the basal stem cells, with the N1 + J2 mRNA positive cells going on to express N1ICD later, or it could hint towards a more complex regulatory mechanism involved in activating Notch signaling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig2-v1.jpg)
+
+**Figure 2.:** (a–c) Representative triple stain images for N1ICD, Notch1, and Jag2 mRNA in sebaceous glands (SGs) from mice (n=5 each) treated with aRW, 3 d post-treatment. (a) Four channels showing N1ICD, N1 ISH, J2 ISH, and DAPI. (b) Two channels showing N1 ISH and J2 ISH. (c) One channel showing N1ICD. (d-f) Representative triple stain images for N1ICD, Notch1, and Jag2 mRNA in SGs from mice (n=5 each) treated with aJ1, 3 d post-treatment. (d) Four channels showing N1ICD, N1 ISH, J2 ISH, and DAPI. (e) Two channels showing N1 ISH and J2 ISH. (f) One channel showing N1ICD. (g) Quantification of the percentage of N1ICD positive (N1ICD+) basal stem cells in SGs from mice (n=5 each) treated with aRW, aJ1, and aJ2, 3 d post-treatment. Percentage was calculated by dividing the number of N1ICD+ basal stem cells by the total number of basal stem cells in each SG. (h–j) Representative triple stain images for N1ICD, Notch1, and Jag2 mRNA in SGs from mice (n=5 each) treated with aJ2, 3 d post-treatment. (h) Four channels showing N1ICD, N1 ISH, J2 ISH, and DAPI. (i) Two channels showing N1 ISH and J2 ISH. (j) One channel showing N1ICD. (k) Quantification of what percentage of the N1ICD+ basal stem cells express both N1 ISH and J2 ISH, only N1 ISH, or only J2 ISH. (g and k) Total n of SGs quantified per treatment: aRW=13, aJ1=15, aJ2=15. Error bars represent SEM. Scale bars are 25 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (Related to Figure 2). (a–c) Quantification of the location of N1ICD+ basal stem cells in sebaceous glands (SGs) from mice (n=5 each) treated with aRW (a), aJ1 (b), and aJ2 (c), 3 d post-treatment. The SG was divided into five sections along the proximal-distal axis. The number of N1ICD+ basal stem cells in each section was divided by the total number of N1ICD+ basal stem cells in each SG. Total n of SGs quantified per treatment: aRW=13, aJ1=15, aJ2=15. (d) Quantification of what percentage of the total basal stem cells (N1ICD+ and N1ICD-) express both N1 ISH and J2 ISH. Total n of SGs quantified per treatment: aRW=13, aJ1=15, aJ2=15. (e,f) Representative triple stain images for N1ICD, Notch1, and Jag2 mRNA in SGs from mice (n=5 each) treated with (e) aRW and (f) aJ2, 3 d post-treatment. (g) Quantification of the width of the interfollicular epidermis (IFE), 7 d after treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.528, aJ2=0.885, aJ1J2=0.840. Total n of SGs quantified per treatment: aRW=26, aJ1=27, aJ2=27, aJ1J2=22. (h) Quantification of the width of the adipocyte layer, 7 d after treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.890, aJ2=0.948, aJ1J2=0.374. Total n of SGs quantified per treatment: aRW=13, aJ1=13, aJ2=15, aJ1J2=15. (i,j) Representative hematoxylin and eosin (H&E) images of SGs from mice (n=5 each) treated with aRW (i) and aJ2 (j), 7 d post-treatment. Student’s t-test used for statistical analysis. Error bars represent SEM. Scale bars are 100 μm.
+
 Notch activity, as well as Notch1 and Jag2 mRNA, were also observed in the interfollicular epidermis (IFE) and other cells of the hair follicle (Figure 2—figure supplement 1e and f). While there is a reduction in Notch-active cells in these other regions, it does not appear to significantly impact the rest of the skin. There were no significant differences in the width of the IFE or the adipocyte layer between treatments (Figure 2—figure supplement 1g and h). This together with the histological appearance (Figure 2—figure supplement 1i and j) of these regions suggests that proliferation and differentiation in these compartments remain unaffected.
 
-## Loss of Notch activity in the SG stem cells inhibits sebocyte differentiation
+### Loss of Notch activity in the SG stem cells inhibits sebocyte differentiation
 
 To further detail the effect of Notch inhibition on sebocyte differentiation, we examined the expression of mature sebocyte markers. Adipophilin (Adipo) is expressed in all mature sebocytes (Frances and Niemann, 2012; Ostler et al., 2010) and Fatty acid synthase (FASN) is expressed in mid- and late-differentiating sebocytes, with FASN levels decreasing in the most mature sebocytes (Cottle et al., 2013; Figure 1b). Since N1ICD staining disappears at 3 d post antibody treatment, we examined the mature sebocyte markers at this time point. While N1ICD staining was specifically lost in the SG basal stem cells of aJ2-treated skin, mature sebocytes expressing FASN were still observed at this timepoint (Figure 2j, Figure 3a and b and Figure 3—figure supplement 1a). All cells that express FASN also express adipophilin, but since FASN levels decrease with sebocyte maturity, we also examined and focused on adipophilin to mark all sebocytes (Figure 3c and d and Figure 3—figure supplement 1b–e). The number of cells that expressed adipophilin was not significantly different between treatments at 3 d post antibody treatment (Figure 3h). At 7 d post antibody treatment, control and aJ1 treated skin showed normal SG morphology and sebocyte marker expression (Figure 3e and Figure 3—figure supplement 1f, h and i), but both aJ2 and aJ1J2 SGs had lost sebocyte marker expression, and the SG was filled with cells with a basal phenotype (basal-like cells) (Figure 3f and Figure 3—figure supplement 1g, j and k). Consistently, the number of cells expressing adipophilin were significantly lower for aJ2 and aJ1J2 treatment (Figure 3i). Interestingly, we noticed that some of these affected SGs still contained a few mature sebocytes (Figure 3f and Figure 3—figure supplement 1g), which were found at the distal end near the sebaceous duct. The location of these remaining sebocytes suggests that existing mature sebocytes are not affected by the Notch blockade, and go through their normal differentiation process, eventually bursting and releasing the sebum (Figure 3g). Thus, we propose that Notch blockade inhibits differentiation at the basal stem cell level or in a sebocyte progenitor.
 
-## Notch activity in the SG stem cells is required to prevent unregulated progenitor proliferation
+![Figure 3.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig3-v1.jpg)
+
+**Figure 3.:** (a, b) Representative co-stain images for N1ICD and fatty acid synthase (FASN) in SGs from mice (n=5 each) treated with aRW (a) and aJ2 (b), 3 d post-treatment. (c, d) Representative adipophiin staining in SGs from mice (n=5 each) treated with aRW (c) and aJ2 (d), 3 d post-treatment. (e, f) Representative adipophilin staining in SGs from mice (n=5 each) treated with aRW (e) and aJ2 (f), 7 d post-treatment. (g) A representative hematoxylin and eosin (H&E) image of an SG from mice (n=5 each) treated with aJ2, 7 d post-treatment. Arrow points to a bursting sebocyte releasing sebum into the sebaceous duct. (h) Quantification of the number of cells expressing adipophilin in each SG, 3 d post-treatment with aRW, aJ1, and aJ2. p-values: aJ1=0.749, aJ2=0.062. Total n of SGs quantified per treatment: aRW = 17, aJ1=14, aJ2=30. (i) Quantification of the number of cells expressing adipophilin in each SG, 7 d post-treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.301, aJ2=4.13E-14, aJ1J2=4.06E-14. Total n of SGs quantified per treatment: aRW = 18, aJ1=19, aJ2=22, aJ1J2=21. Student’s t-test used for statistical analysis. All treatments were compared against aRW. Error bars represent SEM. Scale bars are 25 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (Related to Figure 3). (a) A representative co-stain image for N1ICD and Fatty acid synthase (FASN) in an SG from mice (n=5 each) treated with aJ1, 3 d post-treatment. (b,c) Representative FASN staining in SGs from mice (n=5 each) treated with aRW (b) and aJ2 (c), 3 d post treatment. (d) A representative adipophilin staining in an SG from mice (n=5 each) treated with aJ1, 3 d post-treatment. (e) A representative FASN staining in an SG from mice (n=5 each) treated with aJ1, 3 d post-treatment. (f,g) Representative FASN staining in SGs from mice (n=5 each) treated with aRW (f) and aJ2 (g), 7 d post-treatment. (h) A representative adipophilin staining in an SG from mice (n=5 each) treated with aJ1, 7 d post-treatment. (i) A representative FASN staining in an SG from mice (n=5 each) treated with aJ1, 7 d post-treatment. (j) A representative adipophilin staining in an SG from mice (n=5 each) treated with aJ1J2, 7 d post treatment. (i) A representative FASN staining in an SG from mice (n=5 each) treated with aJ1J2, 7 d post treatment. Scale bars are 25 μm.
+
+### Notch activity in the SG stem cells is required to prevent unregulated progenitor proliferation
 
 To determine whether the epithelial cells that filled the affected SGs at 7 d post-treatment were stem/progenitor cells, we examined them for stem and early differentiation markers. Lrig1-positive cells form a distinct stem cell compartment that maintains the SG and the upper part of the hair follicle (Frances and Niemann, 2012; Niemann and Horsley, 2012; Page et al., 2013), allowing us to use Lrig1 as a marker for the basal stem cells of the SG, while Androgen Receptor (AR) can be used as an early marker of sebocyte differentiation (Cottle et al., 2013; Figure 4a and b and Figure 4—figure supplement 1a and b). We noticed that the AR-expressing cell population could be divided into two groups: a basal stem cell population that co-expressed Lrig1, but did not express FASN (arrowheads in Figure 4a and c), and an early differentiating sebocyte population that expressed FASN, but did not express Lrig1 (arrows in Figure 4a and c). We hypothesize that the Lrig1+/AR + population is a progenitor cell population, in addition to the Lrig1 + stem cells, similar to the recently identified transitional basal cell population in the SG (Veniaminova et al., 2023). There were no significant differences in the number of Lrig1 positive stem cells per SG, or the AR-expressing progenitor population between treatments at 3 d post-treatment (Figure 4d and e). By 7 d post-treatment, however, the basal-like cells that filled the SG were all positive for Lrig1 (Figure 4f and g and Figure 4—figure supplement 1e), with the total number of Lrig1 positive cells per SG increasing significantly for aJ2 and aJ1J2 treated SGs (Figure 4h), while SGs after aJ1 treatment showed normal morphology and marker expression (Figure 4—figure supplement 1c and d). The proportion of AR-expressing cells was not significantly different between treatments (Figure 4i). These results indicate that the basal-like cells that fill the SG after blocking Notch signaling by aJ2 and aJ1J2 treatment, are stem/progenitor cells. Additionally, we examined the SGs for their proliferative capacity to confirm stem/progenitor function. In a normal SG, proliferation is restricted to the basal stem cells (Figure 4j). As expected, proliferation was also restricted to the basal stem cells in aJ1-treated SGs (Figure 4—figure supplement 1f and g). Remarkably, most of the basal-like cells in the aJ2-treated SGs were proliferative, while the rare mature sebocytes remaining in the SG were non-cycling (Figure 4k). As the SGs are mostly filled with basal-like cells at this time (Figure 4h), the total number of proliferating cells per SG was significantly higher (Figure 4l).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig4-v1.jpg)
+
+**Figure 4.:** (a,b) Representative co-stain images for Lrig1 and androgen receptor (AR) in SGs from mice (n=5 each) treated with aRW (a) and aJ2 (b), 3 d post-treatment. (c) A representative co-stain image for fatty acid synthase (FASN) and AR in an SG from mice (n=5 each) treated with aRW, 3 d post-treatment. Arrows point to sebocytes, and arrowheads point to progenitor cells. (d) Quantification of the number of cells expressing Lrig1 in each SG, 3 d post-treatment with aRW, aJ1. and aJ2. p-values: aJ1=0.152, aJ2=0.450. (e) Quantification of what percentage of the Lrig1 + cells express AR, 3 d post-treatment with aRW, aJ1, and aJ2. p-values: aJ1=0.789, aJ2=0.028. (d and e) Total n of SGs quantified per treatment: aRW = 17, aJ1=10, aJ2=24. (f,g) Representative co-stain images for Lrig1 and AR in SGs from mice (n=5 each) treated with aRW (f) and aJ2 (g), 7 d post-treatment. (h) Quantification of the number of cells expressing Lrig1 in each SG, 7 d after treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.628, aJ2=9.06E-07, aJ1J2=7.88E-06. (i) Quantification of what percentage of the Lrig1 + cells express AR, 7 d after treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.117, aJ2=0.248, aJ1J2=0.091. (h and i) Total n of SGs quantified per treatment: aRW = 12, aJ1=12, aJ2=18, aJ1J2=16. (j,k) Representative co-stain images for Ki67 and FASN in SGs from mice (n=5 each) treated with aRW (j) and aJ2 (k), 7 d post-treatment. (l) Quantification of the number of cells expressing Ki67 in each SG, 7 d after treatment with aRW, aJ1, and aJ2. p-values: aJ1=0.652, aJ2=0.009. Total n of SGs quantified per treatment: aRW = 11, aJ1=12, aJ2=16. Student’s t-test used for statistical analysis. All treatments were compared against aRW. Error bars represent SEM. Scale bars are 25 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (Related to Figure 4). (a,b) Representative co-stain images for Lrig1 and androgen receptor (AR) in SGs from mice (n=5 each) treated with aRW (a) and aJ1 (b), 3 d post-treatment. (c–e) Representative co-stain images for Lrig1 and AR in SGs from mice (n=5 each) treated with aRW (c), aJ1 (d), and aJ1J2 (e), 7 d post-treatment. (f,g) Representative co-stain images for Ki67 and fatty acid synthase (FASN) in SGs from mice (n=5 each) treated with aRW (f) and aJ1 (g), 7 d post-treatment. Scale bars are 25 μm.
+
 Overall, these data suggest that inhibition of Notch activity by aJ2 treatment retains the stem and progenitor (Lrig1 + and Lrig1+/AR+, respectively) cells in their immature proliferative state and prevents differentiation.
 
-## The block in sebocyte differentiation is lifted upon recovery of Notch activity
+### The block in sebocyte differentiation is lifted upon recovery of Notch activity
 
 The therapeutic antibodies employed do not inhibit Notch signaling permanently, as the antibodies eventually become cleared from the animal’s system. To determine whether the loss of sebocyte phenotype was reversible, we examined the SGs 14 d post single-dose treatment. Intriguingly, mature sebocytes begin to recover at this time point (Figure 5a and b, compared with Figure 1f and g). We hypothesized that the sebocyte recovery must be due to the return of Notch activity after antibody washout. To test this, we examined the SGs for Notch activity at 7 d post-treatment, since the return of Notch activity must precede the recovery of mature sebocytes. Fittingly, we observed N1ICD expression return in some of the basal-like cells at this time (Figure 5c and d and Figure 5—figure supplement 1a–d). The percent of N1ICD positive cells per SG strongly increased from 1% at 3 d post-treatment to 29% at 7 d post-treatment (Figure 5e), even though the percentage of N1ICD positive cells per SG remained significantly lower than control for aJ2 and aJ1J2 treated SGs at this time (Figure 5—figure supplement 1d). Next, we examined the SGs at 14 d post-treatment for mature sebocyte markers to confirm the sebocyte recovery. Indeed, we saw the return of cells expressing adipophilin in the aJ2 and aJ1J2 treated SGs (Figure 5f and g and Figure 5—figure supplement 1e–h). There was an overall increase in the number of these cells from day 7 to day 14 (Figure 5h), even though the number of these cells remained significantly lower in these SGs compared to controls (Figure 5—figure supplement 1h). Interestingly, the majority of the adipophilin-expressing cells were found in the proximal third of the SG (51% for aJ2 treatment and 66% for aJ1J2 treatment), consistent with the initiation of sebocyte differentiation at the proximal tip. However, there was a significant proportion of these cells found in the middle third (22% and 25%, respectively), and distal third (27% and 9%, respectively) of the SG. This could be due to the newly differentiated cells moving through the SG in a proximal to distal direction, as is the case during normal homeostasis. Alternatively, the stem cells could also be differentiating at sites other than just the proximal tip, as previously demonstrated by multi-color lineage tracing (Andersen et al., 2019). We further examined the SGs at 14 d post-treatment for their AR expression, and confirmed that it had also been restored to its normal pattern (Figure 5i and j and Figure 5—figure supplement 1i–l). We also found that the average number of AR-expressing cells decreased from day 7 to day 14 post aJ2 and aJ1J2 treatment (10–2.95, and 8.56–5.55, respectively) (Figure 5k), returning to a more homeostatic state. Together, these data indicate that Notch inhibition does not result in a permanent cell fate switch, but maintains the stem/progenitor state, allowing the recovery of the differentiation process with the restoration of Notch activity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig5-v1.jpg)
+
+**Figure 5.:** (a) Representative hematoxylin and eosin (H&E) images of sebaceous glands (SGs) from mice (n=5 each) treated with aRW, aJ1, aJ2, and aJ1J2, 14 d post treatment. (b) Quantification of type of SG found after each treatment. The SGs were divided into three categories: normal SGs containing a characteristic number of sebocytes (normal SG), SGs containing a mix of sebocytes and basal-like cells (mixed SG), and SGs containing no sebocytes and only basal-like cells (no sebocyte SG). p-values: aJ1=0.535, aJ2=2.90E-87, aJ1J2=1.73E-92. Chi-square test used for statistical analysis. All treatments were compared against aRW. Total n of SGs quantified per treatment: aRW = 485, aJ1=430, aJ2=394, aJ1J2=364. Scale bars are 100 μm. (c,d) Representative co-stain images for N1ICD and fatty acid synthase (FASN) in SGs from mice (n=5 each) treated with aRW (c) and aJ2 (d), 7 d post-treatment. (e) Quantification of the percentage of N1ICD + cells in SGs from mice (n=5 each) treated with aRW and aJ2, 3 and 7 d post-treatment. Percentage was calculated by dividing the number of N1ICD+ cells by the total number of basal-like cells in each SG. p-values: for comparison between day 3 and day 7 for aRW treatment = 0.297, for comparison between day 3 and day 7 for aJ2 treatment = 1.00E-14. Total n of SGs quantified per treatment: aRW at 3 d = 13, aRW at 7 d = 13, aJ2 at 3 d = 15, aJ2 at 7 d=22. (f,g) Representative adipophilin staining in SGs from mice (n=5 each) treated with aRW (f) and aJ2 (g), 14 d post treatment. (h) Quantification of the number of cells expressing adipophiln in each SG, 7 and 14 d after treatment with aRW, and aJ2. p-values: for comparison between day 7 and day 14 for aRW treatment = 0.292, for comparison between day 7 and day 14 for aJ2 treatment = 1.38E-4. Total n of SGs quantified per treatment: aRW at 7 d = 18, aRW at 14 d = 19, aJ2 at 7 d = 22, aJ2 at 14 d=29. (i,j) Representative co-stain images for androgen receptor (AR) and FASN in SGs from mice (n=5 each) treated with aRW (i) and aJ2 (j), 14 d post-treatment. (k) Quantification of the number of cells expressing AR in each SG, 7 and 14 d after treatment with aRW and aJ2. p-values: for comparison between day 7 and day 14 for aRW treatment = 0.273, for comparison between day 7 and day 14 for aJ2 treatment=9.53E-09. Total n of SGs quantified per treatment: aRW at 7 d=12, aRW at 14 d=10, aJ2 at 7 d=18, aJ2 at 14 d=23. Student’s t-test used for statistical analysis. Error bars represent SEM. Scale bars are 25 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98747/elife-98747-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (Related to Figure 5). (a–c) Representative co-stain images for N1ICD and fatty acid synthase (FASN) in sebaceous glands (SGs) from mice (n=5 each) treated with aRW (a), aJ1 (b), and aJ1J2 (c), 7 d post-treatment. (d) Quantification of the percentage of N1ICD+ cells in SGs from mice (n=5 each) treated with aRW, aJ1, aJ2, and aJ1J2, 7 d post-treatment. Percentage was calculated by dividing the number of N1ICD+ cells by the total number of basal-like cells in each SG. p-values: aJ1=0.878, aJ2=3.42E-21, aJ1J2=5.60E-09. Total n of SGs quantified per treatment: aRW = 13, aJ1=13, aJ2=22, aJ1J2=13. (e–g) Representative adipophilin staining in SGs from mice (n=5 each) treated with aRW (e), aJ1 (f), and aJ1J2 (g), 14 d post-treatment. (h) Quantification of the number of cells expressing adipophilin in each SG, 14 d after treatment with aRW, aJ1, aJ2, and aJ1J2. p-values: aJ1=0.693, aJ2=3.40E-08, aJ1J2=0.003. Total n of SGs quantified per treatment: aRW = 19, aJ1=13, aJ2=29, aJ1J2=16. (i–k) Representative co-stain images for androgen receptor (AR) and FASN in SGs from mice (n=5 each) treated with aRW (i), aJ1 (j), and a1J2 (k), 14 d post-treatment. (l) Quantification of the number of cells expressing AR in each SG, 14 d after treatment with aRW, aJ1, aJ2. and aJ1J2. p-values: aJ1=0.248, aJ2=0.817, aJ1J2=0.032. Total n of SGs quantified per treatment: aRW=10, aJ1=7, aJ2=23, aJ1J2=18. Student’s t-test used for statistical analysis. Error bars represent SEM. Scale bars are 25 μm.
 
 ## Discussion
 
@@ -75,11 +115,168 @@ An important open question is how Notch signaling regulates sebocyte differentia
 
 ## Methods
 
-## Animal strains and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Dorsal skin tissue</td>
+      <td>Charles River-Hollister</td>
+      <td></td>
+      <td>Females</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Jag1 (Mouse monoclonal)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Inhibiting antibody(20 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Jag2 (Mouse monoclonal)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Inhibiting antibody(20 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Notch1 (Human monoclonal)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Inhibiting antibody(5 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Notch2 (Mouse monoclonal)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Inhibiting antibody(10 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ragweed (Mouse monoclonal)</td>
+      <td>Genentech</td>
+      <td></td>
+      <td>Isotype control antibody – concentrations match the maximum dose of inhibiting antibodies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-N1ICD (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 4147</td>
+      <td>Triple stain (20 ug/ml) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FASN (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat#: 610963</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Adipophilin (Guinea pig polyclonal)</td>
+      <td>Fitzgerald</td>
+      <td>Cat#: 20R-AP002</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: SP6 RM-9106-SO</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lrig1 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#: AF3688-SP</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AR (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab133273 [EPR1535(2)]</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PowerVision poly-HRP anti-rabbit (Goat polyclonal)</td>
+      <td>Leica</td>
+      <td>Cat#: PV6119</td>
+      <td>ready to use</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope LS 2.5 Murine-Jag2_C1</td>
+      <td>ACD</td>
+      <td>Cat#: 417518</td>
+      <td>nucleotides spanning from nt 552–1480 of reference sequence NM_010588.2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope LS 2.5 Murine-Notch1_C2</td>
+      <td>ACD</td>
+      <td>Cat#: 404648-C2</td>
+      <td>nucleotides spanning from nt 1153–1960 of reference sequence NM_008714.3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope LS 2.0 Murine-PPIB probe</td>
+      <td>ACD</td>
+      <td>Cat#: 313917</td>
+      <td>nucleotides spanning from nt 98~856 of reference sequence NM_011149.2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope LS 2.0 DapB probe</td>
+      <td>ACD</td>
+      <td>Cat#: 312038</td>
+      <td>nucleotides spanning from nt 414~862 reference sequence EF191515</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope LS Multiplex Reagent Kit</td>
+      <td>ACD</td>
+      <td>Cat#: 322800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bond Epitope Retrieval Solution 2</td>
+      <td>Leica</td>
+      <td>Cat#: AR9640</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal Polaris 7 Auto Detection Kit</td>
+      <td>Akoya</td>
+      <td>Cat#: NEL811001KT</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal strains and treatments
 
 Animals were maintained in accordance with the Guide for the Care and Use of Laboratory Animals (National Research Council, 2011). Genentech is an Association for Assessment and Accreditation of Laboratory Animal Care-accredited facility and all animal activities in this research study were conducted under protocols approved by the Genentech Institutional Animal Care and Use Committee. Mice were housed in individually ventilated cages within animal rooms maintained on a 14:10 hr light-dark cycle. Animal rooms were temperature and humidity-controlled, between 68–79°F (20.0 to 26.1°C) and 30 to 70%, respectively, with 10–15 room air exchanges per hour. Mice were fed Laboratory Autoclavable Rodent Diet 5010 (Lab Diet) and provided reverse osmosis purified drinking water ad libitum. Female C57BL/6 mice were obtained from Charles River-Hollister, and were used for all experiments. Mice were housed under specific-pathogen-free conditions, and were 8 wk old upon treatment. This time point was chosen to correspond to the resting (telogen) phase of the hair growth cycle, as SG size can vary by hair cycle stage. All mice were injected intraperitoneally with a single dose of blocking antibodies diluted in sterile saline at the following concentrations: anti-Jag1 at 20 mg/kg, anti-Jag2 at 20 mg/kg, anti-Jag1 + anti-Jag2 at 20 mg/kg + 20 mg/kg=40 mg/kg, anti-Notch1 at 5 mg/kg, anti-Notch2 at 10 mg/kg and anti-Notch1 + anti-Notch2 at 5 mg/kg + 10 mg/kg=15 mg/kg. Anti-Ragweed isotype control antibody was injected at concentrations to match the maximum dose of treatment antibodies.
 
-## Histopathological analysis and immunochemistry
+### Histopathological analysis and immunochemistry
 
 Telogen mouse dorsal skin was collected at 3, 7, and 14 d post antibody injection. For frozen sections, skin samples were fixed in 4% paraformaldehyde in PBS, for 40 min at 4 °C, washed, and then immersed in 30% sucrose in PBS overnight at 4 °C. The tissue was then embedded in OCT (TissueTek), frozen immediately on dry ice, and stored at –80 °C. Additional skin tissue from the same animals was also fixed with 10% neutral buffered formalin and then used to create paraffin-embedded sections. Hematoxylin and eosin (H&E) staining was performed by the Pathology core at Genentech.
 

@@ -26,15 +26,27 @@ Nuclear speckles (NS) are membraneless nuclear bodies (Banani et al., 2017; Sh
 
 ## Results
 
-## IP-MS reveals endogenous targets of mAb SC35
+### IP-MS reveals endogenous targets of mAb SC35
 
 In order to characterize the cellular targets of the SC35 mAb, we carried out an Immunoprecipitation Mass-Spectrometry (IP-MS) experiment. Whole-cell extracts prepared from HAP1 cells were used to immunoprecipitate endogenous targets SC35 mAb, with a matched IgG mAb serving as a control. The immunoprecipitated proteins were then analyzed by mass-spectrometry (see Methods for details). In total, we identified 432 proteins that were significantly enriched in the SC35 purifications compared to controls (p<0.05, at least two peptides detected in each biological replicate). Surprisingly, the most enriched protein in the dataset, both in terms of unique peptides detected, total intensities and MS/MS spectra analyzed, is neither SRSF2 nor one of the canonical SR-proteins (Manley and Krainer, 2010), but a high-molecular weight RNA-binding protein called SRRM2 (Figure 1A, Figure 1—figure supplement 1A), an NS-associated protein with multiple RS-repeats (Blencowe et al., 2000). Analysis of the top 108 targets, corresponding to the third quartile, using the STRING database (Szklarczyk et al., 2019) shows a clear enrichment for the spliceosome and NS (Figure 1—figure supplement 1B), validating the experimental approach. We were also able to detect all SR-proteins in our dataset, however their scores are dwarfed by that of SRRM2’s (Figure 1—figure supplement 1C). Thus, contrary to initial expectations, the IP-MS results strongly suggest but do not prove that SC35 mAb primarily recognizes SRRM2, at least in the context of an immunoprecipitation experiment.
 
-## SRSF7 is the 35 kDa protein recognized via western blots with mAb SC35
+![Figure 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig1-v2.jpg)
+
+**Figure 1.:** (A) The Top50 hits identified by the MS are depicted on a heatmap showing the number of unique peptides detected for each protein. Also see Figure 1—figure supplement 1A for an intensity vs MS/MS spectra plot and Supplementary file 2 for raw MaxQuant results (B) Streptavidin pull-down of biotin tagged ectopically expressed SRSF proteins 1 to 12 are blotted with FLAG antibody in order to show the amounts of loaded proteins on PAGE. Western blot using mAb SC35 detects SRSF7 with highest sensitivity in comparison to all other SRSF proteins, but also weakly reacts with SRSF1, 2, and 12. Specific antibodies against SRSF2 and SRSF7 are used to validate the authenticity of the purified proteins from stable cell lines in corresponding lanes and blots. (C) SC35-IP performed on lysates from wild-type HEK293 cells identifies SRRM2 as the most enriched protein with a weaker enrichment for SRSF7 but no enrichment for SRSF1 or SRSF2 using western blotting (compare Lane 4 across blots). (D) Homozygous knock-in of the 2xMyc-FKBP12F36V tag into SRSF7 gene locus shifts the SC35 band from 35 kDa to 50 kDa (compare Lanes 1 and 3 on the SC35 blot) and upon induction of degradation with dTAG7 the shifted band is lost (compare Lanes 3 and 4 in Myc, SRSF7, and SC35 blots). This blot validates that the 35 kDa band identified by mAb SC35 blots corresponds to SRSF7.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The log of intensities is plotted against detected MS/MS spectra for significantly enriched proteins in the SC35 immunoprecipitations. SRRM2 together with nine most enriched proteins are annotated on the plot. (B) SC35 targets in the top quartile (108 proteins) are submitted into the STRING database and a network representation is shown. Red circles depict nuclear speckle GO-term category and blue circles depict spliceosomal complex GO-term category. (C) The MS/MS spectral counts for SRSF1 to 12 are plotted together with SRRM1 and SRRM2 (left) and without SRRM1 or SRRM2 (right) show a significant enrichment for SRRM2 amongst other SR-proteins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The domain and size representation of SRSF proteins are shown (left). The inducible stable cell lines are characterized using PAGE (right). The nuclear (N) and cytoplasmic (C) fractions are used to show the major localization to the nucleus is unaffected when the SRSF proteins are tagged and ectopically expressed. ADAR1 is used as a nuclear marker whereas TUBULIN is used as a cytoplasmic marker (B) The Immunofluorescence experiment is performed by using FLAG-M2 for the tagged SRSF protein and by using SRRM2 (pRb) antibody as an NS marker. Overall NS localization of SRSF proteins is noted, but in a more diffused pattern in comparison to SRRM2. Scale bars = 10 µm.
+
+### SRSF7 is the 35 kDa protein recognized via western blots with mAb SC35
 
 Before exploring SRRM2 as a potential mAb SC35 target protein, we decided to first take an unbiased look at SR-proteins and the ability of mAb SC35 to recognize them. To this end, we cloned all 12 canonical SR-proteins in humans (Manley and Krainer, 2010) into an expression plasmid, and created stable-cell lines expressing these proteins under the control of a doxycycline-inducible promoter (Figure 1—figure supplement 2). We used a biotin-acceptor peptide as a tag, and carried out stringent purifications using streptavidin beads to exclude non-specific co-purification of unrelated SR-proteins, and examined the eluates using immunoblotting. Surprisingly, our results show that the main target of mAb SC35 on these immunoblots is SRSF7 (Figure 1B), which, when untagged, runs at approximately ~35 kDa on polyacrylamide gels similar to SRSF2 (the tag combination that we use shifts both proteins by ~15 kDa). To exclude any artefacts that could originate from the use of tagged proteins, we used whole-cell extracts from HEK293 cells and immunoprecipitated targets of mAb SC35 and analyzed the eluates via immunoblotting. Consistent with the results of the IP-MS experiment, and tagged-SRSF1-12 purifications, we observed a very clear enrichment for SRRM2 and SRSF7, but not for SRSF2, SRSF1 or other factors (Figure 1C). In order to determine whether the 35 kDa band recognized by mAb SC35 in immunoblots of cellular lysates is composed of multiple proteins, in addition to SRSF7, we created a cell line where we inserted the FKBP12F36V degron tag (Nabet et al., 2018) homozygously into the C-terminus of SRSF7 in HEK293 cells. Even without any treatment, it is evident that the 35 kDa band robustly recognized by mAb SC35 in wild-type cells completely disappears in SRSF7FKBP12 cells (Figure 1D, compare lanes 1 and 2 with 3 and 4), and a new band around ~50 kDa, where the FKBP12F36V-tagged SRSF7 runs, emerges (Figure 1D, arrowhead). Treatment of these cells with 1 µM of dTAG7 for 6 hr lead to the depletion FKBP12F36V-tagged SRSF7, and to the depletion of the newly-emerged ~50 kDa protein recognized by mAb SC35. The identity of a fainter band around 37 kDa, which is insensitive to tagging SRSF7 or dTAG treatment remains unknown. These results strongly suggest that the 35 kDa namesake protein revealed by SC35 mAb on immunoblots is SRSF7 and any contribution to this signal from other proteins is negligible to none.
 
-## SRRM2 is the primary target of mAb SC35 in immunoblots
+### SRRM2 is the primary target of mAb SC35 in immunoblots
 
 Even though our results show that SC35 mAb specifically recognizes SRSF7 rather than SRSF2, both proteins have significant nucleoplasmic pools in addition to their localization to NS (Politz et al., 2006; Prasanth et al., 2003; Sapra et al., 2009) which is not easily reconciled with the immunofluorescence stainings obtained with the SC35 mAb that are virtually restricted to NS. Intriguingly, SRRM2, which is by far the most enriched protein in our immunoprecipitations with mAb SC35, is a relatively large (~300 kDa) protein, that readily co-purifies with spliceosomes (Bertram et al., 2017; Bessonov et al., 2010), shows liquid-like behaviour in cells (Rai et al., 2018) and co-localizes near-perfectly with mAb SC35-stained NS (Miyagawa et al., 2012). In addition, SRRM2 and its yeast counterpart Cwc21/Cwf21 is located in the recent cryo-EM structures of the spliceosome, where it joins the spliceosome at the Bact stage where it seems to support the activated conformation of PRP8’s switch-loop both in humans and yeast (Jia and Sun, 2018). Predating the recent cryo-EM structures by almost a decade, the yeast orthologue of SRRM2, Cwf21p, has been shown to directly interact with Prp8p (PRPF8) and Snu114p (EFTUD2) which are also among the most enriched proteins in our mAb SC35 immunoprecipitations (Grainger et al., 2009; Figure 1—figure supplement 1A). Furthermore, a more recent tandem-affinity purification of the protist Trypanosoma orthologue of SRRM2 revealed Prp8, U5-200K (SNRNP200, also known as Brr2), U5-116K (EFTUD2, also known as Snu114) and U5-40K (SNRNP40) as major interaction partners (Silva et al., 2011).
 
@@ -42,31 +54,83 @@ Taking into consideration the fact the mAb SC35 was raised against biochemically
 
 In order to test the veracity of this claim, we designed a series of experiments in human cells. Since, to our knowledge, SC35 mAb has not been shown to recognize SRRM2 on immunoblots, we first created tagged and truncated SRRM2 constructs in living cells. To this end, we generated 11 cell lines that remove between 4 and 2322 amino acids from the SRRM2 protein (full-length: 2752 a.a., numbering from Q9UQ35-1) by inserting a TagGFP2 (referred to as GFP for simplicity) sequence followed by an SV40 polyadenylation signal into 11 positions of the SRRM2 gene in HAP1 cells using a CRISPR/Cas9-based technique called CRISPaint (Schmid-Burgk et al., 2016; Figure 2A). The deepest truncation removes 84% of SRRM2, which includes almost all its IDRs, together with two regions enriched for serine and arginine residues, leaving behind 13 RS-dipeptides out of a total of 173 (Figure 2—figure supplement 1A,B). The GFP-tagged, in vivo truncated proteins (referred to as truncations 0 to 10, shortened as tr0 - tr10, Figure 2B) are then immunoprecipitated using GFP-trap beads and the eluates were analyzed by immunoblotting. This experiment shows that SC35 mAb indeed recognizes SRRM2 on immunoblots (Figure 2C, lane 2). Interestingly, the signal from SC35 mAb remains relatively stable up until SRRM2tr4 which removes 868 a.a. from the SRRM2 C-terminus, the signal appears to be reduced in SRRM2tr5 which removes 1014 a.a. and becomes completely undetectable from SRRM2tr6 onward (Figure 2C and Figure 2—figure supplement 1C). The same blot was stripped and re-probed with a polyclonal antibody raised against the N-terminus of SRRM2, common to all truncations, which show that SRRM2 is detectable throughout, and thus indicating that the epitope(s) recognized by mAb SC35 reside between amino acids 1,360–1884 of SRRM2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig2-v2.jpg)
+
+**Figure 2.:** (A) The strategy for the CRISPaint generated endogenous truncating mutations (0-to-10) accompanied by the TagGFP2 (depicted as GFP for simplicity) fusion are shown. (B) The sizes of SRRM2 truncated GFP fusion proteins are displayed. (C) Protein purified using a GFP-trap pull-down from lysates of corresponding stable HAP1 cell lines carrying the truncated SRRM2 alleles are run on PAGE. Western blotting of SRRM2 using an antibody generated against the common N-terminus is used to show the amount of loaded protein on the gel. SC35 blot shows a significant reduction in signal intensity of SRRM2-tr5 and a complete loss of signal from SRRM2-tr6 to tr10. (D) GFP-trap pull-down performed on lysates from wild-type, tr0 and tr10 HAP1 cells enrich for SRRM2 in tr0 cells, indicating the GFP-tagged allele is specific to SRRM2 and is detected by also SC35 blot (Lanes 1 and 2 inputs compared to Lanes 5 and 6 on the upper and lower left-side blots). SRRM2 also co-purifies two other NS-associated proteins; SRRM1 and RBM25 (Lane 6 on lower right-side blots). SRRM2-tr10 is not detected by SC35 but the pull-down efficiency (Lane 7 on upper left-side blot) and loading is validated by SRRM2 (Lanes 3 and 7 on lower left-side blot) and GFP blots (Lanes 3 and 7 on upper left-side blot). (E) Total cell lysates from wild-type, tr0 and tr10 HAP1 cells are run on 4–12% polyacrylamide gel and blotted with SC35 reveal the high-molecular weight (~300 kDa) as the most intense band and the absence of signal in tr10 cell lines validates that this band represents SRRM2 (filled arrow head). Longer exposure of the blot reveals a weak cross-reactivity with a 35 kDa protein, most likely to be SRSF7, around 35 kDa (empty arrow head).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The position of the deepest truncation (tr10) is shown with respect to annotated domains of the protein as well as the dot matrix of the SRRM2 protein sequence. Repetitive regions appear as densed blue squares on the matrix. (B) The PONDR score for disordered regions of SRRM2 protein is displayed with the arrow head pointing to the position of truncation 10. (C) A summary of GFP fluorescence images for truncating mutations before the colony picking is shown. (D) The results of genotyping PCRs are summarized (Wt: PCR carried out using the oligos for wild type allele; Tg:PCR carried out using the oligos for wild type allele. Genotyping oligos and the expected PCR product sizes are listed in Supplementary file 1). Every clone used in this study is highlighted with red text color.
+
 In order to assess the efficiency and the specificity of the GFP-pull-down, we used a wild-type lysate without any GFP insertion, together with lysates made from SRRM2tr0 and SRRM2tr10 cells, which served as the negative control, positive control and the deepest truncation (tr10) we generated, respectively. The immunoblot with mAb SC35 once again clearly shows that near-full-length SRRM2tr0 is recognized by mAb SC35 to the same extent as the SRRM2 polyclonal antibody, while SRRM2tr10 is not detected by mAb SC35 at all but strongly with SRRM2 polyclonal antibody (Figure 2D). These blots also show that full-length SRRM2 co-purifies SRRM1 and to a lesser extent RBM25, while both interactions are severely compromised in SRRM2tr10. Furthermore, the absence of any signal in SRRM2tr10 input lane probed with mAb SC35 (Figure 2D, top left lane 3), and the emergence of a shorter ~100 kDa protein in the complete absence of a ~300 kDa signal in the SRRM2 blot (Figure 2D, bottom left, lane 3) shows that SRRM2tr10 cells have a homozygous insertion of the GFP construct, which was also confirmed by genotyping PCR (Figure 2—figure supplement 1D). This result further indicates that the large IDRs of SRRM2 are not essential for cell viability, at least in HAP1 cells.
 
 These results can be puzzling, since we first show that mAb SC35 specifically recognizes a 35 kDa band which we reveal to be SRSF7 (Figure 1), but later, in a separate set of experiments, we also show that mAb SC35 specifically recognizes a ~300 kDa band, which we reveal to be SRRM2 (Figure 2), while the original study describing mAb SC35 reports a single 35 kDa band recognized by mAb SC35 on immunoblots (Fu and Maniatis, 1990). The solution to this conundrum presented itself in the form of altering the immunoblotting technique. Using whole-cell extracts prepared from wild-type cells, together with SRRM2tr0 and SRRM2tr10 cells, in a gel system where we can interrogate both small and large proteins simultaneously, we were able to detect both SRRM2 and SRSF7 on the same blot (Figure 2E). These blots prove that the ~300 kDa band is indeed SRRM2, since it completely disappears in SRRM2tr10 lysates (which is accompanied by the appearance of a ~100 kDa band in SRRM2 blots) while the much fainter 35 kDa band corresponding to SRSF7 (Figure 1) remains unaltered.
 
 These experiments provide strong support for our hypothesis that the main target of SC35 mAb is SRRM2, a protein proven to be part of spliceosomes, against which this antibody was raised, and suggests that a cross-reactivity towards SRSF7, likely in combination with immunoblotting techniques not suitable to detect large proteins (Bass et al., 2017), obscured this fact for more than two decades.
 
-## SRRM2 is the primary target of mAb SC35 in immunofluorescence stainings
+### SRRM2 is the primary target of mAb SC35 in immunofluorescence stainings
 
 mAb SC35 is typically used as an antibody in immunofluorescence experiments that reveals the location of NS in mammalian cells (Spector and Lamond, 2011). In light of the evidence presented here, it can be assumed that mAb SC35 primarily stains SRRM2 in immunofluorescence stainings, as in immunoblotting experiments. In order to test if this is indeed the case, we took advantage of the SRRM2tr10 cells. These cells are viable and express a severely truncated SRRM2 that is not recognized by mAb SC35 on immunoblots (Figure 2).
 
 SRRM2tr10 cells, together with SRRM2tr0 cells serving as a control, were stained with antibodies against various nuclear speckle markers, including mAb SC35 (Figure 3A). These results show that SC35 signal virtually disappears in SRRM2tr10 cells, while other markers of NS, such as SON, SRRM1, and RBM25 appear unaltered, ruling out a general defect in NS (Figure 3A). As an additional control, we also mixed SRRM2tr10 cells with SRRM2tr0 cells together before formaldehyde fixation, and repeated the antibody stainings, in order to be able to image these two cell populations side-by-side. SRRM2tr10 and SRRM2tr0 cells are easily distinguished from each other since the latter show a typical nuclear speckle staining whereas the former has a more diffuse, lower intensity GFP signal. These images clearly show that mAb SC35, obtained from two separate vendors, no longer stains NS or any other structure in SRRM2tr10 cells, whereas other NS markers, including SRSF7, appear unaltered (Figure 3B,C, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig3-v2.jpg)
+
+**Figure 3.:** (A) SON and RBM25 antibodies are used as NS markers for IF analysis of both SRRM2tr0 and SRRM2tr10 HAP1 cells. No significant impact on the formation of NS in SRRM2tr10 cells in comparison to SRRM2tr0 cells is observed. Lack of signal for SC35 in SRRM2tr10 cells validates SC35 as an SRRM2 antibody. (B) The SRRM2tr0 and SRRM2tr10 cells are plated together before the IF protocol is performed and the GFP signal intensity as well as SC35 staining are used to distinguish SRRM2tr10 cells from SRRM2tr0 HAP1 cells. The DNA stain marking the nuclei are annotated with ‘0’ or ‘10’ on top to indicate the corresponding cell line. (C) The SRRM2tr0 and SRRM2tr10 HAP1 cells are imaged side-by-side and a line is drawn to quantify the signal intensity across two cell lines. The intensity profile of the lines shows dramatically reduced signal for SC35 between SRRM2tr0 and SRRM2tr10 cells, whereas similar signal intensities for SON and DNA in SRRM2tr0 cells is observed. Scale bars = 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Immunofluorescence staining of SRSF7 in SRRM2tr0 and SRRM2tr10 cells that are imaged side-by-side show little to no difference in SRSF7 signal in cells that have a truncated SRRM2 that is not recognized by mAb SC35. Green: TagGFP2-SRRM2tr0 or tr10, Red: SRSF7, stained with pAb RN079PW (MBL), Blue: DNA.
+
 Taken together, our results show that mAb SC35, which was raised against a spliceosomal extract, was most likely raised against SRRM2, a ~300 kDa protein that, unlike SRSF2 or SRSF7 is present in spliceosomes of both in yeast and humans. We show that mAb SC35 directly recognizes SRRM2 between amino acids 1,360–1,884, and that the main signal from mAb SC35 corresponds to SRRM2 both in immunoblots and immunofluorescence images. It is important to note that these results were obtained from unsynchronised human cells, which are mostly at the interphase stage of the cell-cycle. mAb SC35 might recognize additional targets in mitotic cells or cells derived from non-mammalian species.
 
 It is also interesting to note that this is not the first time an antibody is serendipitously raised against SRRM2 and was later discovered to recognize SRRM2 only after the fact: In 1994, Blencowe et al., 1994 reported three murine monoclonal antibodies, B1C8, H1B2, and B4A11 which were raised against nuclear matrix preparations. All three antibodies showed extensive co-localization with NS, although a co-localization between mAb SC35 and B4A11 could not directly be assessed since both mAb SC35 and B4A11 are reported to be IgG mAbs. In a separate work, Blencowe et al., 1994 showed that B4A11 is an antibody against SRRM2, suggesting that SRRM2 is present both in spliceosomal purifications and nuclear matrix preparations.
 
-## NS formation requires SON and full-length SRRM2
+### NS formation requires SON and full-length SRRM2
 
 During this work, we noticed the remarkable size difference between human SRRM2 protein (2752 a.a.), and its unicellular counterparts S. cerevisiae Cwc21 (133 a.a), S. pombe Cwf21 (293 a.a) and T. Brucei U5-Cwc21 (143 a.a). Moreover, while all three proteins share a conserved N-terminus, which interact with the spliceosome, the serine and arginine-rich extended C-terminus of human SRRM2 is predicted to be completely disordered (Figure 2—figure supplement 1B). Intrigued by this observation, we compiled all metazoan protein sequences of SRRM2, together with SRRM1, RBM25, PNN, SON, PRPF8 and COILIN, and analyzed their size distributions (Figure 4A). This analysis confirmed that, unlike SRRM1, RBM25, PNN, PRPF8 or coilin, SRRM2 indeed has a very broad size distribution within metazoa (Figure 4—figure supplements 1–2). Strikingly, SON follows this trend with orthologues as small as 610 a.a in the basal metazoan sponge A. queenslandica, and as large as 5561 a.a in the frog X. tropicalis. Increase in protein size appears to involve IDR extensions, especially for SRRM2, but also for SON (Figure 4B, Figure 4—figure supplements 1–2), suggesting a role in LLPS-mediated condensate formation, which was shown to be the case for both SRRM2 (Rai et al., 2018) and SON (Kim et al., 2019) in living cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig4-v2.jpg)
+
+**Figure 4.:** (A) The size distribution of SON and SRRM2 is highly variable across metazoan species with a mean length of 2227.9 a.a. and SD of 1149.5 for SON and a mean length of 1928.6 a.a. and SD of 919.3 for SRRM2. The lengths of other NS-associated proteins are less variable with a mean length of 895.1 a.a and SD of 104.2 for SRRM1; mean length of 835.4 a.a. and SD of 77.9 for RBM25; mean length of 652.8 a.a. and SD of 118.7 for PNN, mean length of 2332.8 a.a. SD of 40.8 for PRP8. (B) The disorder probability of SON and SRRM2 is predicted using the MobiDB-Lite algorithm, which shows an increase of disordered content with the increase of protein length for SRRM2, and to some extent, SON. The SON and SRRM2 graphs plotted side-by-side do not correspond to the same species, for a phylogeny resolved version of this graph see Figure 4—figure supplement 1 and for the alternative algorithm (IUPred2A) see Figure 4—figure supplement 2. The color is scaled from dark blue to yellow indicating a decrease in order as the value approaches 1.0 (yellow).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The disorder probability of SON and SRRM2 is shown the same way as in Figure 4B calculated using MobiDB-Lite (up). The same analysis is also carried out on a spliceosomal core protein PRPF8, on other NS-associated proteins RBM25, PNN and SRRM1, and on a different nuclear body (Cajal bodies) scaffold protein COIL. The length for the highly disordered protein SRRM1 does not vary to a similar extent as SON or SRRM2, indicating the length changes are not a direct consequence of disorderedness. (B) The disorder probability of SON and SRRM2 is shown in phlogenetically matched order using MobiDB-Lite for disorder prediction. In mammals the length of both proteins seems to be fixed, whereas birds have shorter SRRM2 compared to mammals but longer SON. Strikingly, Xenopus tropicalis and laevis have both SON and SRRM2 increased in length.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The disorder probability of SON and SRRM2 is shown similar to Figure 4B and Figure 4—figure supplement 1A calculated using IUPred2A. Both disorder prediction tools resulted in similar plots. (B) The disorder probability of SON and SRRM2 is shown in phlogenetically matched order using IUPred2A for disorder prediction, similar to Figure 4—figure supplement 1B. Both disorder prediction tools resulted in similar plots.
 
 Putting together the observation that places SON and SRRM2 at the center of NS (Fei et al., 2017, with the interpretation that SC35 stains SRRM2 in their microscopy work), the presence of SRRM2 at the center of collapsed speckles in SON knock-down experiments, and the peculiar variation in the sizes of SON and SRRM2 during evolution involving gain of IDRs, we hypothesize that SON, together with SRRM2 are essential for NS formation, such that SRRM2 continues to serve as a platform for NS-associated proteins in SON-depleted cells.
 
 In order to test this hypothesis, we used the SRRM2tr0 and SRRM2tr10 cells as a model, which allowed us to simultaneously detect SON, SRRM2 and an additional NS marker in the same cell. We chose SRRM1, which is used as a marker for NS in immunofluorescence experiments (Blencowe et al., 2000; Blencowe et al., 1998; Blencowe et al., 1994; Rai et al., 2018; Zhang et al., 2016) and located at IGCs in electron microscopy experiments (Wan et al., 1994; RBM25, which is one of two recommended factors to mark NS by the Human Protein Atlas; ‘The Human Protein Atlas version 19.3, 2020’ n.d.; Thul et al., 2017) (the other being SRRM2), localizes to NS through its RE/RD-rich mixed-charge domain (Zhou et al., 2008) that was recently shown to target proteins to NS (Greig et al., 2020) and PNN, which localizes to NS in human cells (Chiu and Ouyang, 2006; Joo et al., 2005; Lin et al., 2004; Zimowska et al., 2003).
 
 As reported previously (Ahn et al., 2011; Fei et al., 2017; Sharma et al., 2010), depletion of SON leads to collapsed speckles in SRRM2tr0 cells, with SRRM2, SRRM1, PNN, and RBM25 localizing to these spherical NS to different extents (Figure 5A, Figure 5B, Figure 5—figure supplement 3, compare SRRM2tr0 cells, control vs SON siRNA treatment). In SRRM2tr10 cells on the other hand, where the truncated SRRM2 has a significant nucleoplasmic pool already in control siRNA treated cells, depletion of SON leads to a near-complete diffusion of truncated SRRM2, which is followed by RBM25 (Figure 5B), SRRM1 (Figure 5—figure supplement 3A) and PNN. Using ilastik and CellProfiler, we quantified the signal detected in NS, and compared it to signal detected in the entire nucleus for each cell in every condition for each protein investigated (Figure 5—figure supplement 2). These results show that truncated SRRM2 shows reduced NS localization (Figure 5C, right), while RBM25, SRRM1, and PNN are localized at NS to a similar extent in SRRM2tr0 and SRRM2tr10 cells, although with a broader distribution in SRRM2tr10 cells. Depletion of SON in SRRM2tr0 leads to a significant reduction in NS localization for all proteins, verifying SON’s importance for NS formation. Depletion of SON in SRRM2tr10 cells, however, leads to a more dramatic loss of NS localization for all proteins (Figure 5 and Figure 5—figure supplement 3), underscoring the essential role of SRRM2’s extended IDR in the formation of NS, especially in SON-depleted cells. Number of Cajal bodies, determined by COILIN staining, remains unaltered in all conditions (Figure 5—figure supplement 3B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-v2.jpg)
+
+**Figure 5.:** (A) RBM25 IF signal is shown for four individual cells in each siRNA treatment (control or SON siRNA) in SRRM2tr0 and SRRM2tr10 HAP1 cells. The NS localization of RBM25 is severely reduced upon SON knock-down in SRRM2tr0 cells, and completely lost upon SON knock-down in SRRM2tr10 cells. The quantification of the RBM25 signal within the nucleus is plotted against the RBM25 signal within NS (right panel) using ilastik to train detection of NS and CellProfiler for quantification on 10 imaged fields with a 63X objective (in SRRM2tr0 cells control n = 329, SON-KD n = 422; in SRRM2tr10 cells control n = 329, SON-KD n = 402). Each circle represents a cell and the size of the circles is proportionate to the signal intensity of SON. Inset shows the distribution of the ratio of signal detected in NS over signal detected in the nucleus of each cell. (B) SRRM1 IF signal is shown for four individual cells in each siRNA treatment (control or SON siRNA) in SRRM2tr0 and SRRM2tr10 HAP1 cells. The NS localization of SRRM1 is reduced in SON knock-down in SRRM2tr10 cells and lost upon SON knock-down in SRRM2tr10 cells. The quantification of the SRRM1 signal within the nucleus is plotted against the SRRM1 signal within NS (right panel) using ilastik to train detection of NS and CellProfiler for quantification on 10 imaged fields with 63X objective (in SRRM2tr0 cells control n = 494, SON-KD n = 229; in SRRM2tr10 cells control n = 225, SON-KD n = 247). Inset shows the distribution of the ratio of signal detected in NS over signal detected in the nucleus of each cell. (C) Distribution plots showing the ratio of signal detected in NS over signal detected in the nucleus of each cell, in each condition. The dashed line indicates the median ratio in each condition. See Figure 5—figure supplement 3A for a full version of this analysis for PNN. Scale bars = 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The pipeline used for the quantification of protein localization in NS under various conditions is depicted here. The probability maps generated with ilastik are imported into CellProfiler analysis software for segmentation and analysis. The numerical values obtained from CellProfiler are then used for the plots which are shown in Figure 5, Figure 5—figure supplements 3–4. The green line marks the nuclear boundaries and the red circles are detected as NS by the algorithm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The outcome of the trained model on recognition of NS is shown for SRRM2tr0 HAP1 cells treated with control siRNA (left) or SON siRNA (right). (B) The outcome of the trained model on recognition of NS is shown for SRRM2tr10 HAP1 cells treated with control siRNA (left) or SON siRNA (right). The green line marks the nuclear boundaries and the red circles are detected as NS by the algorithm. Scale bars = 10 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) PNN IF signal is shown for four individual cells in each siRNA treatment (control or SON siRNA) in SRRM2tr0 and SRRM2tr10 HAP1 cells. The NS localization of PNN is lost upon SON knock-down in SRRM2tr10 cells. The quantification of the PNN signal within the nucleus is plotted against the PNN signal within NS (right panel) using ilastik to train detection of NS and CellProfiler for quantification on 10 imaged fields with 63X objective (in SRRM2tr0 cells control n = 346, SON-KD n = 172; in SRRM2tr10 cells control n = 138, SON-KD n = 199). Each circle represents a cell and the size of the circles is proportionate to the signal intensity of SON. Inset shows the distribution of the ratio of signal detected in NS over signal detected in the nucleus of each cell. (B) COIL IF signal is shown for four individual cells in each siRNA treatment (control or SON siRNA) in SRRM2tr0 and SRRM2tr10 HAP1 cells. There is no significant change in the localization or of the signal intensity of COIL upon SON knock-down. The quantification of the number of Cajal bodies (based on COIL signal) within the nucleus is shown in the right panel (in SRRM2tr0 cells control n = 337, SON-KD n = 63; in SRRM2tr10 cells control n = 309, SON-KD n = 244). Scale bars = 5 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) RBM25 IF signal is shown for four individual cells in each siRNA treatment (control, SRRM2, SON or SRRM2, and SON siRNA) in SRRM2tr0+GFP HEK293 cells. RBM25 signal diffuses out of NS upon SON depletion but is completely lost only in the double knock-down cells. (B) SRRM1 IF signal is shown for four individual cells in each siRNA treatment (control, SRRM2, SON or SRRM2 and SON siRNA) in SRRM2tr0+GFP HEK293 cells. SRRM1 signal diffuses out of NS upon SRRM2 depletion and is mostly diffused in the nucleus in the double knock-down cells. (C) PNN IF signal is shown for four individual cells in each siRNA treatment (control, SRRM2, SON or SRRM2 and SON siRNA) in SRRM2tr0+GFP HEK293 cells. PNN signal diffuses out of NS upon SON depletion and is mostly diffused in the nucleus in the double knock-down cells. Scale bars = 5 µm (D) Distribution plots showing the ratio of signal detected in NS over signal detected in the nucleus of each cell, in each condition. The dashed line indicates the median ratio in each condition, similar to Figure 5C (for RBM25 staining in control siRNA n = 321, in SON-KD n = 187; in SRRM2-KD n = 249, in double-KD n = 202; for SRRM1 staining in control siRNA n = 155, in SON-KD n = 150; in SRRM2-KD n = 197, in double-KD n = 262; for PNN staining in control siRNA n = 204, in SON-KD n = 264; in SRRM2-KD n = 299, in double-KD n = 229). The double knock-down of SRRM2 and SON leads to the most significant loss of signal localised to the NS for RBM25, SRRM1 and PNN. (E) The diffusion of RBM25, SRRM1 or PNN out of the NS is not caused by the down-regulation of the protein levels as shown by western blot (see Lanes 1 and 4).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/60579/elife-60579-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Knock-down experiments are performed similar to Figure 5—figure supplement 4, but in SRRM2tr0 HAP1 cells, however this time SON is also co-depleted together with RBM25 or SRRM1. Depletion of SON together with RBM25 or SRRM1 does not lead to loss of NS as can be seen in GFP signal of SRRM2, indicating the depletion of any NS-associated protein together with SON does not lead to dissolution of NS. The NS are lost only when SRRM2 and SON are co-depleted. Scale bars = 5 µm.
 
 Next, to independently verify these observations, we knocked-down SON and SRRM2, individually and simultaneously in HEK293 cells where we endogenously tagged SRRM2 with TagGFP2 at the C-terminus with the same reagents used to create SRRM2tr0 HAP1 cells. Similar to the HAP1 model, depletion of SON alone leads to collapsed NS where SRRM2, RBM25, PNN, and SRRM1 localize to spherical NS to some extent but with a significant non-NS pool in the nucleus (Figure 5—figure supplement 4). Depletion of SRRM2 alone also leads to delocalization of PNN, SRRM1, and RBM25 from NS, but not to the extent seen with SON depletion. Co-depletion of SON and SRRM2 leads to near-complete delocalization of all proteins investigated, mirroring the results obtained from the HAP1 model (Figure 5—figure supplement 4A,B,C and D). These results cannot be explained by reduced protein stabilities, as none of the proteins except for SON and SRRM2 show significant changes in their amounts as judged by immunoblotting (Figure 5—figure supplement 4E). Finally, co-depletion of SON together with SRRM1 or RBM25 does not lead to diffusion of spherical NS marked by SRRM2, indicating that SRRM2 has a unique role in NS formation and cannot be substituted by other NS-associated factors (Figure 5—figure supplement 5).
 
@@ -82,13 +146,289 @@ In a more non-clinical setting, recent microscopy work suggests that RNA polymer
 
 In contrast, many membraneless organelles have been shown to depend on a small number of factors which act as scaffolds or nucleation points for their formation. Paraspeckles for instance require lncRNA NEAT1, without which paraspeckles do not form (Chen and Carmichael, 2009), Cajal bodies are disrupted or disappear in the absence of COILIN, SMN, FAM118B or WRAP53 (Li et al., 2014; Mahmoudi et al., 2010), and PML bodies are nucleated by PML (Lallemand-Breitenbach and de Thé, 2010). In the same vein, SRRM2 has been suggested to be essential for the formation of NS (Miyagawa et al., 2012), however, this idea was based on the disappearance of mAb SC35 signal in cells transfected with siRNAs against SRRM2, which is the expected result taking the evidence presented here into account, but does not prove that SRRM2 is essential or important for NS formation. Other candidates that were put forward as essential or important for the formation of NS include lncRNA MALAT1 (Nakagawa et al., 2012; Tripathi et al., 2010), SRSF1 (Tripathi et al., 2012), PNN, and SON (Ahn et al., 2011; Fei et al., 2017; Sharma et al., 2010), all of which, with the exception of PNN, lead to the formation of ‘collapsed’ speckles rather than a bulk release of NS-associated factors and their diffusion into the nucleoplasm, which would indicate a true loss of NS. Depletion of PNN was shown to either lead to ‘collapsed’ speckles (Joo et al., 2005) or to loss of NS altogether, but under conditions that also lead to degradation of all SR-proteins tested in that particular study (Chiu and Ouyang, 2006). To our knowledge, NS could only be successfully dissolved by overexpression of CLK1/STY kinase, which phosphorylates SR-proteins (Sacco-Bubulya and Spector, 2002), DYRK3, another protein kinase that can dissolve multiple membraneless bodies (Rai et al., 2018), overexpression of PPIG, a peptidyl-proline isomerase (Lin et al., 2004) or more recently by overexpression of TNPO3, which is an import factor that binds to phosphorylated SR-residues (Hochberg-Laufer et al., 2019). Such observations and lack of evidence to the contrary, led to the idea that NS formation happens through stochastic self-assembly of NS-associated factors, without the need for an organizing core (Dundr and Misteli, 2010; Spector and Lamond, 2011; Tripathi et al., 2012). In this work, we show that the spherical bodies left over after depletion of SON, which are strongly stained with mAb SC35, and also by other NS markers such as SRRM1, PNN, RBM25 can be dissolved by either co-depleting SRRM2 together with SON, or depleting SON in a cell-line where we deleted the intrinsically disordered C-terminus of SRRM2. Co-depletion of SON together with either SRRM1 or RBM25, two relatively large proteins that also possess prominent intrinsically disordered regions and localize to NS, does not lead to the dissolution of left-over NS, which remain as spherical bodies strongly stained with SRRM2. Since SON is essential for mitosis (Sharma et al., 2010), conditions reported here therefore open an approximately 24 hr window to study the transcriptional and post-transcriptional effects of lacking NS in human cells.
 
-## Conclusions
+### Conclusions
 
 Taken together, our results show that a widely-used monoclonal antibody to mark NS, SC35 mAb, was most likely raised against SRRM2 and not against SRSF2 as it was initially reported. We speculate that this mischaracterization hindered the identification of the core of NS, without which NS do not form, which we show to consist most likely of SON and SRRM2. We found that these two factors, unlike other splicing related proteins analyzed, have gone through a remarkable length extension through evolution of metazoa over the last ~0.6–1.2 billion years, mostly within their IDRs which are typically involved in LLPS and formation of biomolecular condensates. The exact mechanism of NS formation by SON together with SRRM2, and the evolutionary forces that led to the dramatic changes in their lengths remain to be discovered.
 
 ## Materials and methods
 
-## Cell culture and generation of stable cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SRRM2</td>
+      <td>NCBI</td>
+      <td>Gene ID: 23524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SRSF7</td>
+      <td>NCBI</td>
+      <td>Gene ID: 6432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SON</td>
+      <td>NCBI</td>
+      <td>Gene ID: 6651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HAP1</td>
+      <td>Horizon</td>
+      <td>Cat. #: C631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Flp-In T-REx HEK293</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: R78007, RRID:CVCL_U427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SC-35 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat. #: S4045, RRID:AB_47751</td>
+      <td>IF(1:200) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SC-35 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-53518, RRID:AB_671053</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SRRM2 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PA5-66827, RRID:AB_2665182</td>
+      <td>IF(1:100) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SON (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-398508 RRID:AB_2868584</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SON (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat. #: HPA023535, RRID:AB_1857362</td>
+      <td>IF(1:200) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RBM25 (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat. #: HPA070713, RRID:AB_2686302</td>
+      <td>IF(1:200) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SRRM1 (Rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat. #: ab221061, RRID:AB_2683778</td>
+      <td>IF(1:600) WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PNN (Rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat. #: ab244250, RRID:AB_2868585</td>
+      <td>IF(1:200) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>coilin (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 14168, RRID:AB_2798410</td>
+      <td>IF(1:800) WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Rabbit polyclonal)</td>
+      <td>Chromotek</td>
+      <td>Cat. #: PAGB1, RRID:AB_2749857</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SRSF7 (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat. #: RN079PW, RRID:AB_11161213</td>
+      <td>IF(1:200) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SRSF1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-33652, RRID:AB_628248</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SRSF2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab28428, RRID:AB_777854</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>U1-70K (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-390899, RRID:AB_2801569</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>U2AF65 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-53942, RRID:AB_831787</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DHX9 (Rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>Cat. #: ab183731, RRID:AB_2868586</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ADAR (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-73408, RRID:AB_2222767</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-32293, RRID:AB_628412</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Myc (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 2276, RRID:AB_331783</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>Cat. #: F3165, RRID:AB_259529</td>
+      <td>IF(1:200) WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RNAPII-S2P (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 13499, RRID:AB_2798238</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CRISPaint Gene Tagging Kit</td>
+      <td>Addgene</td>
+      <td>Cat. #: 1000000086, RRID:Addgene_1000000086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RBM25 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: s33912</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SRRM1 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: s20020</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SON siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: s13278</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SRRM2 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: s24004</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce MS- Compatible Magnetic IP Kit (Protein A/G)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 90409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMAX Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dTAG-7</td>
+      <td>Tocris</td>
+      <td>Cat. #: 6912</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ilastik</td>
+      <td>https://www.ilastik.org/</td>
+      <td>RRID:SCR_015246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>https://cellprofiler.org/</td>
+      <td>RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter Lab</td>
+      <td>https://github.com/ jupyterlab/jupyterlab; Kluyver, 2016</td>
+      <td>RRID:SCR_018315</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and generation of stable cell lines
 
 Flp-In T-REx HEK293 (Thermo Fisher Scientific Catalog Number: R78007) cells were cultured according to manufacturer’s recommendations. The cells were cultured in DMEM with Glutamax supplemented with Na-Pyruvate and High Glucose (Thermo Fisher Scientific Catalog Number: 31966–021) in the presence of 10% FBS (Thermo Fisher Scientific Catalog Number: 10270106) and Penicillin/Streptomycin (Thermo Fisher Scientific Catalog Number: 15140–122). Before the introduction of the transgenes cells were cultured with a final concentration of 100 µg/mL zeocin (Thermo Fisher Scientific Catalog Number: R250-01) and 15 µg/mL blasticidin (Thermo Fisher Scientific Catalog Number: A1113903). To generate the stable cell lines pOG44 (Thermo Fisher Scientific Catalog Number: V600520) was co-transfected with pcDNA5/FRT/TO (Thermo Fisher Scientific Catalog Number: V652020) containing the gene of interest (GOI are SRSF1 to 12 in this case) in a 9:1 ratio. Cells were transfected with Lipofectamine 2000 (Thermo Fisher Scientific Catalog Number: 11668019) on a 6-well plate format with total 1 µg DNA (i.e. 900 ng of pOG44 and 100 ng of pcDNA5/FRT/TO+GOI) according to the transfection protocol provided by the manufacturer. 24 hr after the transfection cells were split on 3 wells of a 6-well plate at 1:6, 2:6 and 3:6 dilution ratios to allow efficient selection of Hygromycin B (Thermo Fisher Scientific Catalog Number: 10687010). The Hygromycin selection was started at the 48 hr after transfection time point with a final concentration of 150 µg/mL and refreshed every 3–4 days until the control non-transfected cells on a separate plate were completely dead (takes approximately 3 weeks from the start of transfection until the cells are expanded and frozen). Induction of the transgene was done over-night with a final concentration of 0.1 µg/mL doxycycline. The cells were validated by performing immunofluorescence by FLAG antibody and western blotting of nuclear and cytoplasmic fractions.
 
@@ -100,39 +440,39 @@ SRRM2tr0-GFP Flp-In TREx HEK293 cells were generated using the same strategy as 
 
 Cell lines are regularly checked for the absence of Mycoplasma using a PCR based detection kit (Jena Biosciences PP-401).
 
-## siRNA transfections
+### siRNA transfections
 
 Prior to the seeding of cells, the round glass 12 mm coverslips are coated with poly-L-Lysine hydrobromide (Sigma P9155) for HEK293 cells. The coating is not necessary for the imaging of HAP1 cells. For 1 day of knock-down 40,000 cells are plated on coverslips placed into the wells of 24-well plates on the day before the siRNA transfections. Pre-designed silencer select siRNA (Ambion) are ordered for SRRM2 (ID: s24004), SON (ID: s13278), SRRM1 (ID: s20020) and RBM25 (ID: s33912). Negative control #1 of the silencer select was used for control experiments. 5 nM (for double transfections) or 10 nM (for single transfections) of each siRNA is forward transfected using Lipofectamine RNAiMAX Reagent (Thermo Fisher Scientific Catalog Number: 13778075) according to manufacturer’s instructions. The cells were fixed for imaging 24 hr after transfection.
 
-## Immunofluorescence and imaging
+### Immunofluorescence and imaging
 
-## Sample preparation
+#### Sample preparation
 
 Cells on coverslips were washed with PBS and crosslinked with 4% paraformaldehyde in PBS (Santa Cruz Biotechnology, sc-281692) for 10 min at room temperature, and washed three times with PBS afterwards. Permeabilization was carried out with 0.5% Triton-X in PBS, 10 min at RT. Cells were washed twice with 0.1% Triton-X in PBS and blocked with 3% BSA (constituted from powder BSA, Roche Fraction V, sold by Sigma Catalog Number: 10735078001) in PBS for 30 min at RT. Primary antibodies were diluted in 3% BSA in PBS, and cells were incubated with diluted primary antibodies for ~16 hr at 4°C in a humidified chamber. Cells were then washed three times with 0.1% Triton-X in PBS and incubated with fluorescently labelled secondary antibodies, diluted 1:500 in 3% BSA for 1 hr at RT, and washed three times with 0.1% Triton-X in PBS. To counterstain DNA, cells were incubated with Hoechst 33258 (1µg/mL, final) for 5 min at RT, and washed once with PBS. Coverslips are briefly rinsed with distilled water and mounted on glass slides using Fluoromount-G (SouthernBiotech, 0100–01) and after a few hours, sealed with CoverGrip (Biotium, #23005) and left in a dark chamber overnight before imaging.
 
-## Antibodies
+#### Antibodies
 
 COIL (Cell Signaling Technology, D2L3J, #14168), FLAG-M2 (Sigma, F3165), PNN (Abcam, ab244250), RBM25 (Sigma, HPA070713-100UL), SC-35 (Santa Cruz Biotechnology, sc-53518), SC-35 (Sigma, S4045), SON (polyclonal rabbit, Sigma, HPA023535), SON (monoclonal mouse, Santa Cruz sc-398508), SRRM1 (Abcam, ab221061), SRRM2 (Thermo Fisher Scientific, PA5-66827).
 
-## Imaging
+#### Imaging
 
 Images were acquired with a Zeiss LSM880 microscope equipped with an AiryScan detector, using the AiryScan Fast mode with the Plan-Apochromat 63x/1.40 Oil DIC M27 objective. The dimensions of each image were 134 x 134 x 4 µm (Width x Height x Depth), 20 z-stacks were acquired for each image with a step size of 200 nm. Maximum Intensity Projections were created using Zen software (Zeiss) and used for further analysis.
 
-## Analysis
+#### Analysis
 
 Nuclear speckle identification, segmentation and intensity calculations were carried out using ilastik and CellProfiler. Briefly, eight images were used to train a model that demarcates NS using ilastik (v.1.3.3post2). CellProfiler was then used to segment nuclei and NS using the probability maps created for each image by ilastik. The data was then analyzed in a Jupyter Lab environment using pandas, SciPy, NumPy and plotted with matplotlib and seaborn. Raw imaging data, models used to train the images, CellProfiler pipelines, and Jupyter notebooks are available.
 
-## Mass spectrometry
+### Mass spectrometry
 
-## Sample preparation
+#### Sample preparation
 
 Pierce MS-Compatible Magnetic IP Kit (Protein A/G) (Thermo Fisher Scientific, Catalog Number: 90409) was used to prepare samples for mass-spectrometry according manufacturer’s instructions, where approximately 15 million HAP1 cells (~80% confluent 15 cm dishes) were used per IP. Briefly, HAP1 cells were trypsinized, washed with ice-cold PBS and re-suspended with 500 µL of ‘IP-MS Cell Lysis Buffer’ which was supplemented with 1x cOmplete Protease Inhibitor Cocktail (Roche, 11697498001) and 1x PhosSTOP (Roche, 4906845001). Cells were then homogenized using a Bioruptor Plus sonifier (30 s ON, 30 s OFF, five cycles on HI). Remaining cellular debris was removed by centrifugation at 21.130 rcf for 10 min at 4°C, supernatants were transferred to fresh tubes. 2.5 µL of SC35 mAb (Sigma-Aldrich, S4045) and 25 µL of control IgG1 (Santa Cruz, sc-3877) was used for the SC35 and control IP samples (3 each), respectively and immune-complexes are allowed to form overnight (~16 hr) in the cold-room (~6°C) with end-to-end rotation. Next morning, lysates were incubated with 25 µL of Protein A/G beads for 1 hr in the cold-room, the beads were then washed with 500 µL of ice-cold 50 mM Tris.Cl pH 7.4, 100 mM NaCl, 0.1% Tween-20. The beads were resuspended with the same buffer supplemented with RNaseI (Ambion, AM2295, final concentration 0.02 U/µL) and incubated at 37°C for 5 min. The beads were then washed three times with ‘Wash A (+10 mM MgCl2)’ and twice with ‘Wash B’ buffer.
 
-## On beads digest and mass-spectrometry analysis
+#### On beads digest and mass-spectrometry analysis
 
 The buffer for the three SC35 samples and controls was exchanged with 100 µL of 50 mM NH4HCO3. This was followed by a tryptic digest including reduction and alkylation of the cysteines. Therefore, the reduction was performed by adding tris(2-carboxyethyl)phosphine with a final concentration of 5.5 mM at 37°C on a rocking platform (500 rpm) for 30 min. For alkylation, chloroacetamide was added with a final concentration of 24 mM at room temperature on a rocking platform (500 rpm) for 30 min. Then, proteins were digested with 200 ng trypsin (Roche, Basel, Switzerland) shaking at 600 rpm at 37°C for 17 hr. Samples were acidified by adding 2.2 µL 100% formic acid, centrifuged shortly, and placed on the magnetic rack. The supernatants, containing the digested peptides, were transferred to a new low protein binding tube. Peptide desalting was performed according to the manufacturer’s instructions (Pierce C18 Tips, Thermo Scientific, Waltham, MA). Eluates were lyophilized and reconstituted in 11 µL of 5% acetonitrile and 2% formic acid in water, briefly vortexed, and sonicated in a water bath for 30 s prior injection to nano-LC-MS/MS.
 
-## LC-MS/MS instrument settings for shotgun proteome profiling and data analysis
+#### LC-MS/MS instrument settings for shotgun proteome profiling and data analysis
 
 LC-MS/MS was carried out by nanoflow reverse-phase liquid chromatography (Dionex Ultimate 3000, Thermo Scientific) coupled online to a Q-Exactive HF Orbitrap mass spectrometer (Thermo Scientific), as reported previously (Gielisch and Meierhofer, 2015). Briefly, the LC separation was performed using a PicoFrit analytical column (75 μm ID ×50 cm long, 15 µm Tip ID; New Objectives, Woburn, MA) in-house packed with 3 µm C18 resin (Reprosil-AQ Pur, Dr. Maisch, Ammerbuch, Germany). Peptides were eluted using a gradient from 3.8% to 38% solvent B in solvent A over 120 min at 266 nL per minute flow rate. Solvent A was 0.1% formic acid and solvent B was 79.9% acetonitrile, 20% H2O, 0.1% formic acid. Nanoelectrospray was generated by applying 3.5 kV. A cycle of one full Fourier transformation scan mass spectrum (300–1750 m/z, resolution of 60,000 at m/z 200, automatic gain control (AGC) target 1 × 106) was followed by 12 data-dependent MS/MS scans (resolution of 30,000, AGC target 5 × 105) with a normalized collision energy of 25 eV. To avoid repeated sequencing of the same peptides, a dynamic exclusion window of 30 s was used.
 
@@ -140,7 +480,7 @@ Raw MS data were processed with MaxQuant software (v1.6.0.1) and searched agains
 
 The mass-spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD021814.
 
-## Pull-downs and immunoblotting
+### Pull-downs and immunoblotting
 
 Streptavidin-pulldowns (Figure 1B) were carried out using stable-cell-line expression SRSF1-12 proteins. Briefly, for each cell line, ~1 million cells (one well of a 6-well dish, ~90% confluent) were induced with 0.1 µg/mL doxycycline (final) for ~16 hr, solubilised with 500 µL of 1xNLB (1X PBS, 0.3M NaCl, 1% Triton X-100, 0.1% TWEEN 20) + 1x PhosSTOP, sonicated with Bioruptor (30 s ON/OFF, five cycles on LO) and centrifuged for 10 min at ~20.000 rcf at 4°C to remove cellular debris. Biotinylated target proteins were purified with 25 µL (slurry) of MyONE-C1 streptavidin beads (Thermo Fisher Scientific, 65002), pre-washed with 1x NLB + 1x PhosSTOP, for 2 hr in the cold-room with end-to-end rotation. Beads were washed 3 times with 500 µL of 1x NLB (5 min each), bound proteins were eluted with 50 µL of 1xLDS sample buffer (Thermo Fisher Scientific, NP0007) + 100 mM beta-mercaptoethanol at 95°C for 5 min. Eluates were loaded on a 4–12% Bis-Tris gel (Thermo Fisher Scientific, NP0322PK2) and transferred to a 0.45 µm PVDF membrane (Merck Millipore, IPVH00010) with 10 mM CAPS (pH 11) + 10% MeOH, for 900 min at 20V. Primary antibodies were used at a dilution of 1:1000 in SuperBlock (Thermo Fisher Scientific, 37515). Membranes were incubated with the diluted primaries overnight in the cold-room.
 
@@ -148,15 +488,15 @@ SC35 and IgG immunoprecipitations (Figure 1C) were carried out using a whole-cel
 
 Pull-down of truncated SRRM2 proteins (Figure 2C–E) were carried out using whole-cell lysate prepared from respective HAP1 cell lines. The protocol is essentially identical to SC35 and IgG immunoprecipitations described above, with these notable differences: (1) For pull-downs, 25 µL (slurry) of GFP-trap agarose beads were used (Chromotek, gta), incubations were carried out overnight in the cold-room (2) For Figure 2C and Figures 2D, 3-8% Tris-Acetate gels (Thermo Fisher Scientific, EA0375PK2) were used, for Figure 2E a 4–12% Bis-Tris gel was used (3) Gels were run at 80V for 3 hr (4) Transfers were carried out with 10 mM CAPS (pH 11) + 10% MeOH for 900 min at 20V.
 
-## Antibodies
+#### Antibodies
 
 ADAR1(Santa Cruz Biotechnology, sc-73408), alpha-Tubulin (Santa Cruz Biotechnology, sc-32293), COIL (Cell Signaling Technology, D2L3J, #14168), DHX9 (Abcam, ab183731), FLAG-M2 (Sigma, F3165), GFP (Chromotek, PAGB1), Myc-tag (Cell Signaling Technology, 9B11, #2276), Phospho-Rpb1 CTD (Ser2) (Cell Signaling Technology, E1Z3G, #13499), PNN (Abcam, ab244250), RBM25 (Sigma, HPA070713-100UL), SC-35 (Sigma, S4045), SRSF1 (SF2/ASF, Santa Cruz Biotechnology, sc-33652), SON (polyclonal rabbit, Sigma, HPA023535), SRRM1 (Abcam, ab221061), SRRM2 (Thermo Fisher Scientific, PA5-66827), SRSF2 (Abcam, ab28428), SRSF7 (MBL, RN079PW), U1-70K (Santa Cruz Biotechnology, sc-390899), U2AF65 (Santa Cruz Biotechnology, sc-53942).
 
-## Note on SC35/SRSF2 antibodies
+##### Note on SC35/SRSF2 antibodies
 
 There are many commercially available antibodies that are labeled as ‘SC35’, however only some of them are actually clones of the original SC-35 antibody reported by Fu and Maniatis in 1990. These are: s4045 from Sigma-Aldrich, sc-53518 from Santa Cruz Biotechnology and ab11826 from Abcam. Some antibodies are sold as ‘SC35’ antibodies, but they are antibodies specifically raised against SRSF2. These are: ab204916 and ab28428 from Abcam and 04–1550 from Merck (can be found with the clone number 1SC-4F11). Neither list is exhaustive.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Unless indicated otherwise, all data analysis tasks were performed using Python 3.7 with scientific libraries Biopython (Cock et al., 2009), pandas (McKinney, 2010), NumPy (van der Walt et al., 2011), matplotlib (Hunter, 2007) and seaborn. Code in the form of Jupyter Notebooks is available in GitHub repository: https://github.molgen.mpg.de/malszycki/SON_SRRM2_speckles.
 

@@ -6,10 +6,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01tgyzw49 Yale-NUS College Singapore Singapore
-2. https://ror.org/01tgyzw49 The Institute for Digital Medicine (WisDM), Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
-3. https://ror.org/01tgyzw49 Department of Physiology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
-4. https://ror.org/04xpsrn94 Institute of Molecular and Cell Biology, A*STAR Singapore Singapore
+1. Yale-NUS College Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+2. The Institute for Digital Medicine (WisDM), Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+3. Department of Physiology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+4. Institute of Molecular and Cell Biology, A*STAR Singapore Singapore ([ROR:04xpsrn94](https://ror.org/04xpsrn94))
 
 † Corresponding author
 

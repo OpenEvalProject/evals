@@ -31,29 +31,37 @@ Here, we investigated the potential impact of genetic or pharmacological ISR enh
 
 ## Results
 
-## Sephin1 treatment enhances remyelination in late-stage EAE
+### Sephin1 treatment enhances remyelination in late-stage EAE
 
 To determine whether pharmacological prolongation of the ISR can enhance remyelination after inflammatory demyelination, we first examined C57BL/6J mice in the late stage of EAE. Sephin1 (8 mg/kg) or vehicle treatment was initiated in each EAE mouse on the day it reached the peak of disease (clinical score = 3) and was continued to the late stage of EAE, which resulted in diminished EAE disease severity in the final week of Sephin1 treatment (Figure 1A). Spinal cord axons were examined under electron microscope (EM). We sorted remyelinated axons by examining g-ratios (axon diameter / total fiber diameter) in the lumbar spinal cord white matter of EAE mice after vehicle or Sephin1 treatment. The presence of axons with thinner myelin sheaths and a higher g-ratio is considered the hallmark of remyelination (Duncan et al., 2017). A recent study indicated that axons in the spinal cord with a g-ratio greater than 0.8 are likely remyelinated axons in the EAE model (Mei et al., 2016). Our data demonstrated that the density of remyelinated axons (g > 0.8) was significantly higher in EAE mice treated with Sephin1 than those treated with vehicle (p<0.05, η2 = 0.81) (Figure 1B,C), although no difference was detected in the total number of myelinated axons (Figure 1D). The data suggest that Sephin1 promotes remyelination in the neuroinflammatory environment of EAE, presumably by protecting remyelinating oligodendrocytes against inflammatory stress.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig1-v1.jpg)
 
-**Figure 1.:** (A) Cumulative clinical scores of C57BL/6J female mice immunized with MOG35-55/CFA to induce chronic EAE, treated with vehicle (n = 7) and 8 mg/kg Sephin1 (n = 7) from the peak disease. *p<0.05. Significance based on Kolmogorov-Smirnov test. (B) Representative EM images of axons in the spinal cord white matter tracts of EAE mice treated with vehicle or Sephin1 at PID30. Remyelinated axons in the EAE spinal cord were identified by thinner myelin sheaths (*). Scale bar = 1 µm. (C) Density of myelinated axons with g-ratio <0.8 in the EAE spinal cord. (D) Density of total myelinated axons in the EAE spinal cord. Data are presented as the mean ± SEM (n = 3 mice/group). Over 300 axons were analyzed per mouse. *p<0.05. Significance based on unpaired t-test.Figure 1—source data 1.
+**Figure 1.:** (A) Cumulative clinical scores of C57BL/6J female mice immunized with MOG35-55/CFA to induce chronic EAE, treated with vehicle (n = 7) and 8 mg/kg Sephin1 (n = 7) from the peak disease. *p<0.05. Significance based on Kolmogorov-Smirnov test. (B) Representative EM images of axons in the spinal cord white matter tracts of EAE mice treated with vehicle or Sephin1 at PID30. Remyelinated axons in the EAE spinal cord were identified by thinner myelin sheaths (*). Scale bar = 1 µm. (C) Density of myelinated axons with g-ratio <0.8 in the EAE spinal cord. (D) Density of total myelinated axons in the EAE spinal cord. Data are presented as the mean ± SEM (n = 3 mice/group). Over 300 axons were analyzed per mouse. *p<0.05. Significance based on unpaired t-test.
 
-## GADD34 deficiency protects remyelinating oligodendrocytes and enhances remyelination in the presence of IFN-γ
+### GADD34 deficiency protects remyelinating oligodendrocytes and enhances remyelination in the presence of IFN-γ
 
 Our finding of increased remyelination in the Sephin1 treated late stage EAE mice raised the possibility that prolonging the ISR might provide protection against inflammation to remyelinating oligodendrocytes and thereby promote remyelination. To examine this possibility, we used a more quantitative demyelination/remyelination model (cuprizone model) for further exploration. We have previously shown that in response to IFN-γ, myelinating oligodendrocytes with a Ppp1r15a (Gadd34) mutation display increased levels of p-eIF2α, indicating a prolongation of the ISR, and increased oligodendrocyte survival (Lin et al., 2008). We hence mated GADD34 KO;GFAP-tTA mice with GADD34 KO;TRE-IFN-γ mice to generate GFAP-tTA;TRE-IFN-γ double-transgenic mice homozygous for the Ppp1r15a mutation (GADD34 KO) to prolong the ISR (Lin et al., 2008). GFAP-tTA;TRE-IFN-γ double-transgenic mice allow for ectopic release of IFN-γ in the CNS in a doxycycline (Dox)-dependent manner (Lin et al., 2004; Lin et al., 2006; Lin et al., 2008). Expression of the tetracycline-controlled transactivator (tTA) is driven by the astrocyte-specific transcriptional regulatory region of the Gfap gene. In the TRE-IFN-γ mice, the IFN-γ cDNA is transcriptionally controlled by the tetracycline response element (TRE) (Figure 2A). The expression of the IFN-γ transgene is repressed in the GFAP-tTA;TRE-IFN-γ mice by providing water treated with Dox from conception. At 6 weeks of age, transgenic mice were taken off Dox water to induce CNS expression of IFN-γ (IFN-γ+) and placed on a diet of 0.2% cuprizone chow (Lin et al., 2006; Lin et al., 2004). After 5 weeks of cuprizone exposure, mice were placed back on a normal diet for up to 3 weeks to allow remyelination to occur. Control mice received Dox water throughout the study to repress CNS expression of IFN-γ (IFN-γ-) (Figure 2B). Mice with the highest level of IFN-γ expression in the CNS were selected by isolating the cerebellum of each mouse and using real-time reverse transcription (RT)-PCR to determine IFN-γ expression levels. We found that at 5 weeks of cuprizone exposure (W5) and during remyelination (W8), removal of Dox significantly increased the levels of IFN-γ in the cerebellum of mice (Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig2-v1.jpg)
+
+**Figure 2.:** (A) GFAP-tTA mice are mated with TRE-IFN-γ mice to produce double-positive animals. When these mice are maintained on doxycycline (Dox), the expression of the IFN-γ is repressed. When they are released from Dox, IFN-γ is expressed in the CNS. (B) Cuprizone demyelination/remyelination model of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT. Dox is removed and cuprizone chow is added when mice are at 6-week-old (W0). After 5 weeks of cuprizone exposure (W5), mice were placed back on normal chow for up to 3 weeks to allow remyelination. (C) Cuprizone demyelination/remyelination model of GFAP-tTA;TRE-IFN-γ with designed treatment. Drug treatment is started at 3 weeks of cuprizone exposure (W3) and lasts to the end of remyelination (W8).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Real-time qPCR analyses for detection of mRNA levels of ectopically expressed IFN-γ in the brains of GFAP-tTA;TRE-IFN-γ mice. (A) The expression of IFN-γ in the GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT with the doxycycline (Dox+) and without doxycycline (Dox-). (B) The expression of IFN-γ in the GFAP-tTA;TRE-IFN-γ treated with vehicle and Sephin1 with the doxycycline (Dox+) and without doxycycline (Dox-). Data are presented as the mean ± SEM (n = 4 mice/group). *p<0.05, **p<0.01. Significance based on ANOVA.
 
 We next investigated whether the Gadd34 mutation promotes oligodendrocyte survival in the presence of IFN-γ during demyelination/remyelination in the cuprizone model. It has been demonstrated that cuprizone-fed mice exhibit apoptotic death of oligodendrocytes and demyelination in the corpus callosum. Complete remyelination spontaneously occurs a few weeks after the cuprizone challenge is terminated (Matsushima and Morell, 2001). We found no significant difference in the number of cells labeled with the mature oligodendrocyte marker ASPA between GADD34 wildtype (WT) and GADD34 KO, GFAP-tTA;TRE-IFN-γ double-transgenic mice before cuprizone exposure (Figure 3A,B). After 5 weeks on cuprizone chow, both GADD34 WT and KO double-transgenic mice presented similarly with a significantly reduced number of ASPA+ mature oligodendrocytes in the presence of IFN-γ (IFN-γ+) (WT, p<0.001; KO, p<0.05) (Figure 3A,B). During the remyelination period, ASPA+ oligodendrocytes reappeared and reached approximately 800/mm2 in both IFN-γ-repressed GADD34 WT and KO mice (IFN-γ-) after 3 weeks of normal chow. In the presence of IFN-γ (IFN-γ+), this number dropped in the lesions of WT double-transgenic mice to roughly 500/mm2 of ASPA+ cells (p<0.05) (Figure 3A,C), which is consistent with our previous finding that IFN-γ expression in the CNS suppresses the repopulation of oligodendrocytes following cuprizone-induced oligodendrocyte toxicity (Lin et al., 2006). Compared to GADD34 WT, GFAP-tTA;TRE-IFN-γ mice with the Gadd34 mutation had significantly increased numbers of ASPA+ oligodendrocytes during remyelination in the presence of IFN-γ (IFN-γ+/W8) (p<0.01) (Figure 3A,C). Myelin status in these mice was also evaluated with EM. After 5 weeks of cuprizone chow, a significant number of axons exhibited myelin sheath loss in control mice (IFN-γ-), compared to 0 weeks (WT, p<0.0001; KO, p<0.001) (Figure 4A,C). Similarly, both WT and KO double-transgenic mice presented with markedly reduced numbers of myelinated axons in the presence of IFN-γ (IFN-γ+) (WT: 25.2 ± 3.0%, p<0.0001; KO: 24.4 ± 2.7%, p<0.0001). Nevertheless, no difference in the percentage of myelinated axons was observed between IFN-γ+ and IFN-γ- groups (Figure 4A,C). At 3 weeks after cuprizone withdrawal, both IFN-γ-repressed WT and KO mice (IFN-γ-) showed spontaneous remyelination (WT: 42.7 ± 6.2%; KO: 42.6 ± 4.7%) (Figure 4B,D). Meanwhile, remyelination was significantly suppressed in the corpus callosum of IFN-γ-expressing WT mice (WT: 29.4 ± 2.9%) (p<0.05), but not in that of IFN-γ-expressing KO mice (KO: 49.1 ± 8.8%) (Figure 4B,D). Together, these data suggest that prolonging the ISR has no impact in the absence of IFN-γ, but it results in increased repopulation of oligodendrocytes and remyelination following demyelination in the presence of IFN-γ.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig3-v1.jpg)
 
-**Figure 3.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT were taken at W0, W5, and W8. (A) Immunofluorescent staining for ASPA (a mature oligodendrocyte marker) and DAPI (nuclei). Scale bar = 100 µm. (B) Quantification of cells positive for ASPA in the corpus callosum areas at W0 and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). WT: eight males and one female; KO: five males and four females. **p<0.01, #p<0.05 (#vs W0/WT), ###p<0.001 (# vs W0/KO). Significance based on ANOVA. (C) Quantification of cells positive for ASPA in the corpus callosum areas at W8 in the absence or presence of IFN-γ. WT: two males and four females; KO: four males and two females. Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05, **p<0.01. Significance based on ANOVA.Figure 3—source data 1.
+**Figure 3.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT were taken at W0, W5, and W8. (A) Immunofluorescent staining for ASPA (a mature oligodendrocyte marker) and DAPI (nuclei). Scale bar = 100 µm. (B) Quantification of cells positive for ASPA in the corpus callosum areas at W0 and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). WT: eight males and one female; KO: five males and four females. **p<0.01, #p<0.05 (#vs W0/WT), ###p<0.001 (# vs W0/KO). Significance based on ANOVA. (C) Quantification of cells positive for ASPA in the corpus callosum areas at W8 in the absence or presence of IFN-γ. WT: two males and four females; KO: four males and two females. Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05, **p<0.01. Significance based on ANOVA.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig4-v1.jpg)
 
-**Figure 4.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT were harvested for EM processing. (A) Representative EM images of axons in the corpus callosum at W0 and W5. Scale bar = 1 µm. (B) Representative EM images of axons in the corpus callosum at W8. Scale bar = 1 µm. (C) Percentage of myelinated axons at W0 and W5. WT: nine males and three females; KO: six males and six females. ****p<0.0001 (* vs W0/WT); ###p<0.001, ####p<0.0001 ( #vs W0/KO). Significance based on ANOVA. (D) Percentage of myelinated axons at W8. WT: four males and four females; KO: five males and three females. Data are presented as the mean ± SEM (n = 4 mice/group). *p<0.05 Significance based on ANOVA.Figure 4—source data 1.
+**Figure 4.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT were harvested for EM processing. (A) Representative EM images of axons in the corpus callosum at W0 and W5. Scale bar = 1 µm. (B) Representative EM images of axons in the corpus callosum at W8. Scale bar = 1 µm. (C) Percentage of myelinated axons at W0 and W5. WT: nine males and three females; KO: six males and six females. ****p<0.0001 (* vs W0/WT); ###p<0.001, ####p<0.0001 ( #vs W0/KO). Significance based on ANOVA. (D) Percentage of myelinated axons at W8. WT: four males and four females; KO: five males and three females. Data are presented as the mean ± SEM (n = 4 mice/group). *p<0.05 Significance based on ANOVA.
 
-## Sephin1 treatment protects remyelinating oligodendrocytes and enhances remyelination in the presence of IFN-γ
+### Sephin1 treatment protects remyelinating oligodendrocytes and enhances remyelination in the presence of IFN-γ
 
 We have previously demonstrated that Sephin1 treatment can prolong the ISR in primary oligodendrocytes exposed to IFN-γ, as shown by prolonged elevated eIF2α phosphorylation levels (Chen et al., 2019). In addition, Sephin1 protects mature oligodendrocytes against inflammation in the EAE model (Chen et al., 2019). Therefore, using Sephin1, we tested the ability of pharmacological enhancement of the ISR to protect remyelinating oligodendrocytes from inflammatory insults in the cuprizone model. Similar to the GADD34 mouse experiment, 6-week-old GFAP-tTA;TRE-IFN-γ double transgenic mice that had been on Dox water since conception were either kept on (IFN-γ-) or removed from Dox (IFN-γ+) and fed with a chow containing 0.2% cuprizone for 5 weeks. Mice were then placed back on a normal diet for 3 weeks. Sephin1 (8 mg/kg) or vehicle was administered daily to the mice by intraperitoneal injections beginning 3 weeks after the start of the cuprizone diet. This time point represents the peak of oligodendrocyte loss during cuprizone-mediated demyelination (Matsushima and Morell, 2001; Figure 2C).
 
@@ -61,25 +69,37 @@ We first examined IFN-γ expression in the double-transgenic mice, which showed 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig5-v1.jpg)
 
-**Figure 5.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ were taken at W0 and W3 prior to any treatment as well as after either vehicle or Sephin1 treatment at W5 and W8. (A) Immunofluorescent staining for ASPA (a mature oligodendrocyte marker) and DAPI (nuclei). Scale bar = 100 µm. (B) Quantification of cells positive for ASPA in the corpus callosum areas at W0, W3, and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3–4 mice/group). W0: four males; W3: five males and one female; W5 (Veh): four males and two females; W5 (Seph): four males and two females. **p<0.01, ##p<0.01, ###p<0.001, ####p<0.0001 (#vs W0). Significance based on ANOVA. (C) Quantification of cells positive for ASPA in the corpus callosum areas at W8 in the absence or presence of IFN-γ. Data are presented as the mean ± SEM (n = 3 mice/group). W8 (Veh): five males and one female; W8 (Seph): five males and one female. *p<0.05. Significance based on ANOVA.Figure 5—source data 1.
+**Figure 5.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ were taken at W0 and W3 prior to any treatment as well as after either vehicle or Sephin1 treatment at W5 and W8. (A) Immunofluorescent staining for ASPA (a mature oligodendrocyte marker) and DAPI (nuclei). Scale bar = 100 µm. (B) Quantification of cells positive for ASPA in the corpus callosum areas at W0, W3, and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3–4 mice/group). W0: four males; W3: five males and one female; W5 (Veh): four males and two females; W5 (Seph): four males and two females. **p<0.01, ##p<0.01, ###p<0.001, ####p<0.0001 (#vs W0). Significance based on ANOVA. (C) Quantification of cells positive for ASPA in the corpus callosum areas at W8 in the absence or presence of IFN-γ. Data are presented as the mean ± SEM (n = 3 mice/group). W8 (Veh): five males and one female; W8 (Seph): five males and one female. *p<0.05. Significance based on ANOVA.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig6-v1.jpg)
 
-**Figure 6.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ were harvested for EM processing. (A) Representative EM images of axons in the corpus callosum at W5. Scale bar = 1 µm. (B) Representative EM images of axons in the corpus callosum at W8. Scale bar = 1 µm. (C) Percentage of remyelinated axons at W0 and W5. W0: four males; W5 (Veh): five males and three females; W5 (Seph): five males and three females. (D) Percentage of remyelinated axons at W8. Data are presented as the mean ± SEM (n = 4 mice/group). W8 (Veh): six males and two females; W8 (Seph): six males and two females. *p<0.05, **p<0.01, ****p<0.0001. Significance based on ANOVA.Figure 6—source data 1.
+**Figure 6.:** The corpora callosa of GFAP-tTA;TRE-IFN-γ were harvested for EM processing. (A) Representative EM images of axons in the corpus callosum at W5. Scale bar = 1 µm. (B) Representative EM images of axons in the corpus callosum at W8. Scale bar = 1 µm. (C) Percentage of remyelinated axons at W0 and W5. W0: four males; W5 (Veh): five males and three females; W5 (Seph): five males and three females. (D) Percentage of remyelinated axons at W8. Data are presented as the mean ± SEM (n = 4 mice/group). W8 (Veh): six males and two females; W8 (Seph): six males and two females. *p<0.05, **p<0.01, ****p<0.0001. Significance based on ANOVA.
 
-## GADD34 deficiency or Sephin1 treatment does not affect OPC proliferation or microglial recruitment following cuprizone demyelination/remyelination
+### GADD34 deficiency or Sephin1 treatment does not affect OPC proliferation or microglial recruitment following cuprizone demyelination/remyelination
 
 Recruitment of OPCs is required for spontaneous remyelination, during which OPCs proliferate and migrate to the demyelinated area to mature into functional oligodendrocytes (Huang and Franklin, 2011; Franklin and Ffrench-Constant, 2008a). Using the OPC marker PDGFRα and the proliferation marker Ki67, we noted the appearance of PDGFRα+ OPCs and proliferating OPCs (PDGFRα+/Ki67+) near the demyelinated lesions (W5) and remyelinated areas (W8) in the corpus callosum of double-transgenic mice, which was not affected by GADD34 deficiency (Figure 7A–C) or Sephin1 treatment (Figure 7D–F). Interestingly, at week 5 of cuprizone exposure, the induction of IFN-γ by Dox removal (IFN-γ+) diminished the number of proliferating OPCs (PDGFRα+/Ki67+) in vehicle-treated mice (p<0.05), but no difference between vehicle and Sephin1 was found in the number of OPCs in the presence of IFN-γ (Figure 7D,E).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunofluorescent staining for PDGFRα (an OPC marker), Ki67 and DAPI (nuclei) from the corpus callosum of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT was taken at W5 and W8. Scale bar = 50 µm. Quantification of cells positive for PDGFRα and cells positive for both PDGFRα and Ki67 in the corpus callosum areas of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+) at W5 (B) and W8 (C). Data are presented as the mean ± SEM (n = 3 mice/group). W5 (WT): five males and one female; W5 (KO): four males and two females. W8 (WT): two males and four females; W8 (KO): four males and two females. (D) Immunofluorescent staining for PDGFRα, Ki67 and DAPI from the corpus callosum of GFAP-tTA;TRE-IFN-γ was taken after either vehicle or Sephin1 treatment at W5 and W8. Quantification of cells positive for PDGFRα and cells positive for both PDGFRα and Ki67 in the corpus callosum areas of GFAP-tTA;TRE-IFN-γ treated with treatment in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+) at W5 (E) and W8 (F). Data are presented as the mean ± SEM (n = 3 mice/group). W5 (Veh): four males and two females; W5 (Seph): four males and two females. W8 (Veh): five males and one female; W8 (Seph): five males and one female. #p<0.05 (vs. veh from W5/IFN-γ-). Significance based on ANOVA.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The corpus callosum of GFAP-tTA;TRE-IFN-γ/GADD34 KO or WT was taken at W0, W5 and W8. (A) Immunofluorescent staining for IBA1 (a microglia marker), MBP (a myelin marker) and DAPI. Scale bar = 50 µm. (B) Quantification of cells positive for IBA1 in the corpus callosum areas at W0 and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05, ***p<0.001 (*vs W0/WT), #p<0.05, ###p<0.001 (# vs W0/KO). Significance based on ANOVA. (C) Quantification of cells positive for IBA1 in the corpus callosum areas at W8 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05. Significance based on ANOVA.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The corpus callosum of GFAP-tTA;TRE-IFN-γ was taken at W0, W5, and W8 with vehicle or Sephin1 treatment. (A) Immunofluorescent staining for IBA1, MBP, and DAPI. Scale bar = 50 µm. (B) Quantification of cells positive for IBA1 in the corpus callosum areas at W0 and W5 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05, **p<0.01 (*vs W0). Significance based on ANOVA. (C) Quantification of cells positive for IBA1 in the corpus callosum areas at W8 in the absence (IFN-γ-) or presence of IFN-γ (IFN-γ+). Data are presented as the mean ± SEM (n = 3 mice/group). *p<0.05, ****p<0.0001. Significance based on ANOVA.
+
 Studies have indicated that recruitment of microglia is required for myelin clearance and efficient initiation of remyelination (Neumann et al., 2009; Voss et al., 2012; Gudi et al., 2014). To examine the activation of microglia, we immuno-stained sections of corpus callosum with the microglia marker IBA1 and quantified the density of these cells in the lesions. A significantly stronger microgliosis was observed in the corpus callosum of double-transgenic mice after 5 weeks of cuprizone chow (W5) and activated microglia persisted after 3 weeks of remyelination (W8) (Figure 7—figure supplement 1 and Figure 7—figure supplement 2). Interestingly, in the group of GADD34 KO and of Sephin1 treatment, the number of IBA1+ cells at W8 was significantly increased in the presence of IFN-γ than those in the absence of IFN-γ (Figure 7—figure supplement 1A,C and Figure 7—figure supplement 2A,C), but we did not detect a statistical change in the density of IBA1+ cells between WT mice and KO or between vehicle and Sephin1 treatment (Figure 7—figure supplement 1A,C and Figure 7—figure supplement 2A,C).
 
-## Combined treatment of Sephin1 and BZA accelerated remyelination in the presence of IFN-γ
+### Combined treatment of Sephin1 and BZA accelerated remyelination in the presence of IFN-γ
 
 As mentioned above, a number of small molecules have been identified that promote OPC maturation and CNS remyelination as shown in non-inflammatory models of demyelination, and here we have demonstrated that ISR enhancement permits remyelination in the presence of inflammation (Figures 3–6). We next tested the hypothesis that the effectiveness of a remyelination-enhancing agent would be augmented in an inflammatory environment when combined with an ISR enhancing agent. BZA is a selective estrogen receptor modulator (SERM) that is currently FDA-approved to be used in combination with conjugated estrogen in menopausal women (McKeand et al., 2014). Recently, Rankin et al. showed that BZA significantly enhances OPC differentiation and accelerates remyelination in the lysolecithin non-inflammatory demyelination model (Rankin et al., 2019). To test whether the effectiveness of BZA would be enhanced in the presence of inflammation by ISR modulation, we combined BZA and Sephin1 treatments in our cuprizone GFAP-tTA;TRE-IFN-γ double transgenic model. We began the daily administration of BZA and Sephin1 3 weeks after the start of the cuprizone diet and withdrawal of Dox from the animal’s water (Figure 2C). At 3 weeks after cuprizone withdrawal, we found that Sephin1, BZA, and combined Sephin1/BZA treatment significantly increased ASPA+ oligodendrocyte numbers in the corpus callosum during remyelination in the presence of IFN-γ (W8/ IFN-γ+) (Sephin1: p<0.05, η2 = 0.78; BZA: p<0.01, η2 = 0.67; Sephin1/BZA: p<0.05, η2 = 0.77) (Figure 8A,C). Accordingly, compared with vehicle controls, a significant increase in the percentage of myelinated axons was noted in the groups treated with Sephin1, BZA, and combined Sephin1/BZA treatment (Sephin1: p<0.05, η2 = 0.81; BZA: p<0.05, η2 = 0.77; Sephin1/BZA: p<0.01, η2 = 0.80) (Figure 8B,D). Nonetheless, no difference between treatment groups was observed either for oligodendrocyte survival or number of remyelinated axons, although the number of remyelinated axons in treatment groups reached pre-lesion levels (Figure 8B,D). In addition to measuring the percentage of myelinated axons, we also examined myelin thickness using EM analysis of g-ratios after remyelination and using W0 as the pre-lesion reference point. The vehicle-treated mice (W8/IFN-γ+) demonstrated significantly thinner myelin than those at W0 (IFN-γ-). In contrast, corpora callosa axons in mice receiving the combination treatment of Sephin1 and BZA (g-ratio: 0.778 ± 0.006) reached myelin thickness levels comparable with pre-lesion W0 axons (Figure 8B,E). The g-ratios of myelinated axons were significantly lower in the combination treatment group than the vehicle-treated group (p<0.01, η2 = 0.77) or either of the single treatment group (p<0.05, η2 = 0.72 vs Sephin1, p<0.05, η2 = 0.72 vs BZA).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/65469/elife-65469-fig8-v1.jpg)
 
-**Figure 8.:** GFAP-tTA;TRE-IFN-γ mice were released from Dox at W0 and given cuprizone chow for 5 weeks. Treatment with vehicle, Sephin1, BZA or combined BZA and Sephin1 was started at W3, and the corpus callosum was harvested and processed at W0 and after 3 weeks of remyelination (W8). (A) Immunofluorescent staining for ASPA and DAPI in the corpus callosum at W8 in the presence of IFN-γ. Scale bar = 100 µm. (B) Representative EM images of axons in the corpus callosum at W8 in the presence of IFN-γ. Scale bar = 1 µm. Quantifications of the number of cells positive for ASPA (C), percentage of remyelinated axons (D) and g-ratios of axons (E) in the corpus callosum areas at W0 and W8 in the presence of IFN-γ. Two males and two females in each treatment group and four males at W0. Data are presented as the mean ± SEM (n = 4 mice/group). *p<0.05, **p<0.01, ****p<0.0001. Significance based on ANOVA.Figure 8—source data 1.
+**Figure 8.:** GFAP-tTA;TRE-IFN-γ mice were released from Dox at W0 and given cuprizone chow for 5 weeks. Treatment with vehicle, Sephin1, BZA or combined BZA and Sephin1 was started at W3, and the corpus callosum was harvested and processed at W0 and after 3 weeks of remyelination (W8). (A) Immunofluorescent staining for ASPA and DAPI in the corpus callosum at W8 in the presence of IFN-γ. Scale bar = 100 µm. (B) Representative EM images of axons in the corpus callosum at W8 in the presence of IFN-γ. Scale bar = 1 µm. Quantifications of the number of cells positive for ASPA (C), percentage of remyelinated axons (D) and g-ratios of axons (E) in the corpus callosum areas at W0 and W8 in the presence of IFN-γ. Two males and two females in each treatment group and four males at W0. Data are presented as the mean ± SEM (n = 4 mice/group). *p<0.05, **p<0.01, ****p<0.0001. Significance based on ANOVA.
 
 ## Discussion
 
@@ -97,32 +117,196 @@ Effective MS therapies need to both suppress the aggressive CNS inflammation and
 
 ## Materials and methods
 
-## Animal study
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57Bl/6J</td>
+      <td>Jackson lab</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>GFAP-tTA mice</td>
+      <td>Lin et al., 2004</td>
+      <td>RRID:IMSR_JAX:005964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>TRE-IFN-γ mice</td>
+      <td>Lin et al., 2004</td>
+      <td>RRID:IMSR_JAX:009344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ppp1r15a-/-(GADD34 KO) mice</td>
+      <td>Gift from David Ron</td>
+      <td>RRID:MGI:3040935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.2% cuprizone</td>
+      <td>Envigo</td>
+      <td>Cat # TD.160049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sephin1</td>
+      <td>Apexbio</td>
+      <td>Cat # A8708</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bazedoxifene acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # PZ0018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MOG 35-55peptide</td>
+      <td>Genemed synthesis</td>
+      <td>Cat # MOG3555-P-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pertussis toxin</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat # 179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh-f</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TGTGTCCGTCGTGGATCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh-r</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TTGCTGTTGAAGTCGCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-f</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GATATCTGGAGGAACTGGCAAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-r</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>CTTCAAAGAGTCTGAGGTAGAAAGAGATAAT</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab24567 RRID:AB_448144</td>
+      <td>(1:700)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASPA (rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat # GTX113389 RRID:AB_2036283</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # AB15580 RRID:AB_443209</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFR-alpha (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 558774 RRID:AB_397117</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1 (rabbit polyclonal)</td>
+      <td>Wako Pure Chemical</td>
+      <td>Cat # 019–19741 RRID:AB_839504</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6.0</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal study
 
 Six-week-old female C57BL/6J mice were purchased from the Jackson Laboratory (Bar Harbor, ME, USA). The mice were allowed to acclimate for 7 days prior to the EAE experiment. The GFAP-tTA mice on the C57BL/6J background were mated with the TRE-IFN-γ mice on the C57BL/6J background to produce GFAP-tTA; TRE-IFN-γ double-transgenic mice (Lin et al., 2006; Lin and Popko, 2009; Lin et al., 2004). Moreover, GFAP-tTA mice or TRE-IFN-γ were crossed with Ppp1r15a-/- (GADD34 KO) mice (Kojima et al., 2003), and the resulting progeny GFAP-tTA; Ppp1r15a-/- were crossed with TRE-IFN-γ; Ppp1r15a-/- to obtain double-transgenic mice that were homozygous for the Ppp1r15a mutation. To prevent transcriptional activation of IFN-γ, 0.05 mg/ml doxycycline (Dox, Sigma-Aldrich, St. Louis, MO, USA) was added to the drinking water and provided ad libitum from conception. Animals used in this study were housed under pathogen-free conditions at controlled temperatures and relative humidity with a 12/12 hr light/dark cycle and free access to pelleted food and water. All animal experiments were conducted in accordance with ARRIVE guidelines and in complete compliance with Animal Care and Use Committee guidelines of the University of Chicago and Northwestern University.
 
 The mice were randomly assigned to the different experimental groups. Sephin1 (free base) was purchased from Apexbio (Houston, TX, USA), and BZA from Sigma-Aldrich. Stock solutions of Sephin1 (24 mg/ml) and BZA (10 mg/ml) in dimethyl sulfoxide (DMSO) were stored at −20C°. Final solutions were prepared in sterile 0.9% NaCl (DMSO concentration: 1%) for animal treatment.
 
-## EAE immunization and treatment
+### EAE immunization and treatment
 
 EAE was induced in 7-week-old female C57BL/6J mice by subcutaneous flank administration of 200 µg MOG35-55 peptide (Genemed synthesis, San Antonio, TX, USA) emulsified with complete Freund’s adjuvant (CFA) (MOG35-55/CFA) (BD Biosciences, San Jose, CA, USA) supplemented with inactive Mycobacterium tuberculosis H37Ra (BD Biosciences). Intraperitoneal (i.p.) injections of 200 ng pertussis toxin (List Biological Laboratories) were given immediately after administration of the MOG emulsion and again 48 hr later. Mice were blindly scored daily for clinical signs of EAE as follows: 0 = healthy, 1 = flaccid tail, 2 = ataxia and/or paresis, 3 = paralysis of hindlimbs and/or paresis of forelimbs, 4 = tetraparalysis, 5 = moribund or death. Mouse groups were randomized during the treatment. Mice were injected intraperitoneally with Sephin1 or the equivalent amount of vehicle (1% DMSO in 0.9% NaCl) daily starting from the peak of disease (score = 3). Lumbar spinal cords were collected at PID30.
 
-## Cuprizone administration
+### Cuprizone administration
 
 To induce demyelination, GFAP-tTA;TRE-IFN-γ and GFAP-tTA;TRE-IFN-γ;GADD34-/- double transgenic mice (male and female) were fed with a 0.2% cuprizone diet (Envigo, Madison, WI, USA) starting from 6-week-old. Dox water was discontinued at the time of cuprizone treatment (Week 0, W0). Cuprizone feeding lasted 5 weeks and then mice were placed back on normal chow for up to 3 weeks to allow remyelination to occur. Control mice were maintained on Dox water during the entire experiment. 8 mg/kg of Sephin1 (i.p.) or 10 mg/kg of BZA (gavage) was given daily to the GFAP-tTA; TRE-IFN-γ mice, starting from three weeks of cuprizone exposure (W3). The corpus callosum of each mouse was collected at 3 weeks (W3), 5 weeks (W5), or 8 weeks (W8) after cuprizone feeding was initiated. A total of 90 double transgenic mice were used for the study.
 
-## Quantitative real-time reverse transcription PCR
+### Quantitative real-time reverse transcription PCR
 
 GFAP-tTA;TRE-IFN-γ mice were perfused with ice-cold phosphate-buffered saline (PBS). Total RNA was isolated from the cerebellum using the Aurum Total RNA Fatty and Fibrous Tissue Kit (Bio-Rad, Hercules, CA, USA). Reverse transcription was performed using the iScript cDNA synthesis kit (Bio-Rad). Quantitative real-time reverse transcription PCR was performed on a CFX96 RT-PCR detection system (Bio-Rad) using SYBR Green technology. Results were analyzed and presented as the fold induction relative to the internal control primer for the housekeeping gene GAPDH. The primers (5′–3′) for mouse gene sequences were as follows: Gapdh-f: TGTGTCCGTCGTGGATCTGA, Gapdh-r: TTGCTGTTGAAGTCGCAGGAG; Ifng-f: GATATCTGGAGGAACTGGCAAAA, Ifng-r: CTTCAAAGAGTCTGAGGTAGAAAGAGATAAT.
 
-## Immunostaining
+### Immunostaining
 
 GFAP-tTA; TRE-IFN-γ mice were initially perfused with PBS only before cerebellum harvesting. The same mice were then perfused with 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) in PBS for 15 min. The brains were removed and cut coronally at approximately 1.3 mm before the bregma. The posterior parts of the brains were post-fixed overnight and embedded in O.C.T. compound (Sakura Finetek, Torrance, CA, USA). The tissue was sectioned in a series of 10 µm on a cryostat. Cryosections were treated with acetone at −20°C, then blocked with PBS containing 5% goat serum and 0.1% Triton X-100, and incubated overnight with the primary antibodies at 4°C. Sections were incubated with secondary antibodies for 1 hr at room temperature. Coronal sections at the fornix region of the corpus callosum corresponding to Sidman sections 241-251 (Sidman et al., 1972). Primary antibodies include the following anti-MBP (Abcam, ab24567, 1:700), anti-ASPA (Genetex, GTX113389, 1:500), anti-Ki67 (Abcam, AB15580, 1:100), anti-PDGFR-alpha (BD Biosciences, 558774, 1:100), and anti-Iba1(Wako Pure Chemical, 09–19741, 1:500). The fluorescent stained sections were scanned with Olympus VS-120 slide scanner and quantified by ImageJ. At least three serial sections of corpus callosum were quantified. The representative fluorescent images were acquired under Nikon A1R confocal microscope. The investigators were blinded to allocation of treatment groups in the processes of image capture and the following quantification.
 
-## Electron microscopy (EM)
+### Electron microscopy (EM)
 
 For GFAP-tTA;TRE-IFN-γ mice, the anterior parts of the brains were immersed into EM buffer for two weeks at 4°C. EM buffer contains 4% paraformaldehyde (Electron Microscopy Sciences), 2.5% glutaraldehyde (Electron Microscopy Sciences) in 0.1 M sodium cacodylate (Electron Microscopy Sciences) at pH 7.3. The sections corresponding to the corpus callosum were trimmed, and postfixed in 1% osmium tetroxide (Electron Microscopy Sciences) in 0.1 M Sodium Cacodylate. Sections were then dehydrated in ethanol, cleared in propylene oxide, and embedded in EMBed 812 resin (Electron Microscopy Sciences). EAE mice were perfused with EM buffer, and then the lumbar spinal cords were processed, embedded, and sectioned as above. Semi-thin sections were stained with toluidine blue. Samples were next ultrathin sectioned on a Leica EM UC7 ultramicrotome. Grids were examined on a FEI Tecnai Spirit G2 transmission electron microscope. We calculated the total percentage of remyelinated axons averaged from 10 images (area = 518.3504 µm2) in each mouse. G-ratio was calculated as the ratio of the inner diameter to the outer diameter of a myelinated axon; a minimum of 300 fibers per mouse was analyzed. The investigators were blinded to allocation of treatment groups in the processes of image capture and the following quantification.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were performed in Prism eight software. No statistical methods were used to predetermine sample size. Each n value represents individual animal. All data were presented as mean ± SEM (standard error of mean). Multiple comparisons were carried out by one-way ANOVA followed by Tukey’s post hoc test; single comparisons were evaluated by unpaired t-test. Cumulative scores of EAE mice were analyzed using Kolmogorov-Smirnov method. Differences were considered statistically significant when p<0.05. The effect size was reported as eta squared (η2), referring to effect size as small (η2=0.01), medium (η2=0.06), and large (η2=0.14) (Cohen, 1988; Ellis, 2010).

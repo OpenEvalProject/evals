@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Centre for Research in Psychology and Neuroscience (CRPN), Aix Marseille University - CNRS Marseille France
+1. Centre for Research in Psychology and Neuroscience (CRPN), Aix Marseille University - CNRS Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 
 † Corresponding author
 

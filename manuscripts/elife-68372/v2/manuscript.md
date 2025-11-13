@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0220qvk04 Department of Anesthesiology, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
-2. https://ror.org/03rc6as71 The First Rehabilitation Hospital of Shanghai, Tongji University School of Medicine Shanghai China
-3. https://ror.org/00z0j0d77 Department of Respiratory, The First Affiliated Hospital of Guangzhou Medical University Guangzhou China
-4. https://ror.org/049tv2d57 SUSTech Center for Pain Medicine, School of Medicine, Southern University of Science and Technology Shenzhen China
-5. https://ror.org/0220qvk04 Department of Anesthesiology, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
+1. Department of Anesthesiology, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+2. The First Rehabilitation Hospital of Shanghai, Tongji University School of Medicine Shanghai China ([ROR:03rc6as71](https://ror.org/03rc6as71))
+3. Department of Respiratory, The First Affiliated Hospital of Guangzhou Medical University Guangzhou China ([ROR:00z0j0d77](https://ror.org/00z0j0d77))
+4. SUSTech Center for Pain Medicine, School of Medicine, Southern University of Science and Technology Shenzhen China ([ROR:049tv2d57](https://ror.org/049tv2d57))
+5. Department of Anesthesiology, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 
 † Corresponding author
 
@@ -39,17 +39,45 @@ In this study, we used viral tracing and electrophysiology to dissect the anatom
 
 ## Results
 
-## Functional connectivity pattern of PBN-PVT projections
+### Functional connectivity pattern of PBN-PVT projections
 
 Although it has been shown that the PVT receives input from the PBN (Chiang et al., 2020; Li and Kirouac, 2012), the detailed morphology of PBN-PVT projections and whether these two nuclei form direct functional synapses remain unknown. To examine the synaptic connectivity between the PBN and the PVT, we injected AAV2/8-hSyn-ChR2-mCherry virus into the PBN and employed whole-cell patch-clamp recording. There were dense projection fibers in the PVT (Figure 1A–C) and precisely time-locked action potentials induced by brief laser pulses in PBN ChR2+ neurons (5 Hz, 10 Hz, and 20 Hz; Figure 1G). We found that optogenetic activation of PBN projection fibers evoked excitatory postsynaptic currents (EPSCs) in 34 of 52 PVT neurons. The medial PVT (bregma: –0.94 to –1.82 mm; 18 of 25 cells, 72.0%) and posterior PVT (pPVT; bregma: –1.82 to –2.3 mm; 14 of 21 neurons, 66.7%) showed higher connectivity than the anterior PVT (bregma: –0.22 to –0.94 mm; 2 of 6 cells, 33.3%; Figure 1D–F). The average amplitude of the light-evoked EPSCs was 103.4 ± 11.93 pA (Figure 1H). Moreover, the latency of EPSCs was short with small jitter (Figure 1I and J), indicating monosynaptic connections between the PBN and PVT. Consistently, the EPSCs were sensitive to the Na+ channel blocker tetrodotoxin (TTX, 1 μM) and were rescued by the K+ channel blocker 4-aminopyridine (4-AP, 100 μM). The EPSCs were further blocked by the AMPA receptor antagonist NBQX (10 μM), confirming the monosynaptic glutamatergic innervation of PVT neurons by PBN neurons (Figure 1K and L). In addition, we also observed light-evoked inhibitory postsynaptic currents (IPSCs) in only 4 of 52 PVT neurons (less than 30 pA). Thus, these results indicate that most monosynaptic connections between PBN and PVT are glutamatergic.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig1-v2.jpg)
+
+**Figure 1.:** (A) The schematic for virus injection of AAV2/8-hSyn-ChR2-mCherry into the PBN nucleus and the slice recording with 473 nm laser stimulation. (B) The projection fibers in the PVT nucleus. Scale bar: 100 μm. (C) The AAV2/8-hSyn-ChR2-mCherry virus expression in the PBN nucleus. Scale bar: 200 μm. (D−F) The locations of the recorded cells in the anterior PVT (D), the middle PVT (E), and the posterior PVT (F). Red circles indicate neurons with excitatory postsynaptic currents (EPSCs), and blue circles indicate neurons without EPSCs. (G) The 473 nm laser-induced time-locked action potential firing at 5 Hz (top), 10 Hz (middle), and 20 Hz (bottom) in the ChR2-expressing neuron in the PBN. Scale bars: 100 ms, 40 mV. (H−J) The amplitude of light-evoked EPSCs (H), the latency of EPSCs (I), and the latency jitter of EPSCs (J) from all 34 responsive neurons in the PVT. (K) Amplitudes of light-evoked EPSCs recorded from a PVT neuron (right panel). (L) The light-evoked EPSC was completely blocked by 1 μM tetrodotoxin (TTX), rescued by 100 μM 4-aminopyridine (4-AP), and blocked by 10 μM NBQX (AMPA/kainate receptor antagonist). Scale bars: 5 ms, 10 pA. (M) Schematic shows retroAAV2/2-hSyn-Cre injection into the PVT nucleus on Rosa26-tdTomato mice. (N) The injection site in the PVT nucleus. Scale bar: 200 μm. (O, P) The distribution of the tdTomato-positive neurons in the left PBN (O) and the right PBN (P). (Q) The quantification of the tdTomato-positive neurons in the lateral PBN (LPBN) and the media PBN (MPBN). n = 4 mice. Scale bar: 200 μm. (R−T) Double staining of tdTomato with Slc17a6 mRNA by in situ hybridization. Scale bar: 50 μm, the scale bar in the quadrangle was 25 μm. (U) Quantification of the double-positive neurons over the total number of tdTomato-positive neurons, n = 6 sections from three mice. ***p<0.001, data are represented as mean ± SEM. Paired Student’s t-test for (Q).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A−O) Double staining of tdTomato signals (red) with Tacr1 mRNA (A−C), Tac1 mRNA (E−G), Pdyn mRNA (I−K), and CGRP protein (M−O). Scale bar: 100 μm. (D, H, L) The proportions of co-expressing neurons of tdTomato-positive neurons, n = 6 sections from three mice. Tacr1, tachykinin 1 receptor; Tac1, tachykinin 1; Pdyn, prodynorphin; CGRP, calcitonin gene-related peptide.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The illustration for virus injection of AAV2/8-EF1α-DIO-EGFP into the PBN nucleus on Vglut2-ires-Cre mice. (B−D) The virus expression in the anterior (B), the middle (C), and the posterior PBN (D). Scale bar: 200 μm. (E−H) The distribution pattern of PBN glutamatergic projection fibers in the anterior (E, F), the middle (G), and the posterior PVT (H). PVA, anterior paraventricular thalamus. Scale bar: 200 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The illustration shows the injection of retroAAV2/2-hSyn-Cre into the PVT and AAV2/8-EF1α-DIO-EGFP into the PBN to label the PBN-PVT neurons. (B) Examples of AAV2/8-EF1α-DIO-EGFP expression in the PBN. Scale bar: 200 μm. (C−N) The efferents from the PBN-PVT neurons could be found in the MnPo (C), BNST (D), LH (E), PVN (F), PVT (G), ILN (H), DM (I), PSTh (J), VTA (K), and PAG (L) but not in the CeA (M) and VMH (N). (O) Schematic showing summary of the distribution pattern of fibers from PBN-PVT neurons. MnPo, median preoptic nucleus; BNST, bed nucleus of the stria terminalis; LH, lateral hypothalamic area; PVN, paraventricular nucleus of the hypothalamus; ILN, intralaminar thalamic nucleus; DM, dorsomedial hypothalamic nucleus; PSTh, parasubthalamic nucleus; VTA, ventral tegmental areas; PAG, periaqueductal gray; CeA, central nucleus of the amygdala; VMH, ventromedial hypothalamic nucleus.
 
 Next, we asked what are the distribution pattern and molecular identity of PBN-PVT neurons. We injected retroAAV2/2-hSyn-Cre virus into the PVT of Rosa26-tdTomato mice, which could retrogradely label projection neurons in the PBN (Figure 1M–P). We found that tdTomato+ neurons were bilaterally located in the lateral PBN (55 ± 6 neurons, n = 4 mice) and rarely in the medial PBN (8 ± 1 neurons; Figure 1O–Q). These results indicate that most PVT inputs originate in the lateral aspect of the PBN. We then performed tdTomato staining and in situ hybridization with Slc17a6 (Vglut2) probe and found that approximately 94.4% of tdTomato+ neurons expressed Slc17a6 mRNA (Vglut2+, Figure 1R–U). We also examined several markers for subpopulations of PBN neurons, including tachykinin 1 receptor (Tacr1), tachykinin 1 (Tac1), prodynorphin (Pdyn), and calcitonin gene-related peptide (CGRP). We found that tdTomato+ neurons were only partially co-labeled with Tacr1 mRNA (38.0%), Tac1 mRNA (6.4%), or Pdyn mRNA (23.0%) and not with CGRP protein (Figure 1—figure supplement 1). These results indicate that the majority of PBN-PVT neurons are glutamatergic neurons, and most of these neurons are not labeled by Tacr1, Tac1, Pdyn, or CGRP.
 
 To examine the collateral projections from the PVT-projecting PBN glutamatergic neurons, we injected AAV2/8-EF1α-DIO-EGFP virus into the PBN of Slc17a6tm2(cre)Lowl (also called Vglut2-ires-Cre) mice (Figure 1—figure supplement 2A). Robust expression of AAV2/8-EF1α-DIO-EGFP was found in both the lateral and medial PBN (Figure 1—figure supplement 2B–D). It is worth noting that the density of EGFP+ fibers was higher in the middle and pPVT (Figure 1—figure supplement 2E–H), considering the notion that the pPVT is particularly sensitive to aversion (Gao et al., 2020). We also found collateral projections from PBN-PVT neurons in the BNST, lateral hypothalamus (LH), paraventricular nucleus of the hypothalamus (PVN), and PAG but not in the CeA or VMH (Figure 1—figure supplement 3).
 
-## Optogenetic activation of PBN-PVT projections induces anxiety-like behaviors and aversion-like behaviors
+### Optogenetic activation of PBN-PVT projections induces anxiety-like behaviors and aversion-like behaviors
 
 To examine the functional role of PBN-PVT projections in modulating affective behaviors, we injected AAV2/9-EF1α-DIO-ChR2-mCherry virus or AAV2/9-EF1α-DIO-mCherry virus bilaterally into the PBN of Vglut2-ires-Cre mice and implanted optic fibers above the PVT to selectively activate PBN-PVT projections (Figure 2A). Four weeks after surgery, we found robust expression of ChR2-mCherry (Figure 2B and C, Figure 2—figure supplement 1A) or mCherry (Figure 2—figure supplement 1C) in bilateral PBN neurons and axon terminals in the PVT (Figure 2D, Figure 2—figure supplement 1B and D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig2-v2.jpg)
+
+**Figure 2.:** (A) The illustration shows the injection of AAV2/9-EF1α-DIO-ChR2-mCherry virus into the PBN nucleus and the optic fiber above the PVT on the Vglut2-ires-Cre mice. (B, C) The virus injection sites of the left PBN (B) and the right PBN (C). Scale bar: 200 μm. (D) The projection axons from the PBN and the location of the optic fiber (rectangle) in the PVT. Scale bar: 200 μm. (E) The schematic of the open field test (OFT) with optogenetic activation via a 473 nm laser (20 Hz, 5 mW, 5 ms). (F, G) The example traces of the 15 min optogenetic manipulation OFT from an AAV2/9-EF1α-DIO-mCherry virus-injected mouse (F) or an AAV2/9-EF1α-DIO-ChR2-mCherry virus-injected mouse (G). (H, I) Quantification of the velocity (H) and the center time (I) in the OFT, mCherry group: n = 7 mice; ChR2 group: n = 8 mice. (J) The illustration of the real-time place aversion (RTPA) test with optogenetic activation via a 473 nm laser. The right side was paired with the laser. (K, L) The example traces of the RTPA and post-test from the mice injected with AAV2/9-EF1α-DIO-mCherry (K) or AAV2/9-EF1α-DIO-ChR2-mCherry (L). (M) Quantification of the time spent in the laser-paired chamber in the pre-test (Pre), RTPA, and post-test (Post), mCherry group: n = 7 mice; ChR2 group: n = 8 mice. (N) Schematic timeline of cue-dependent optogenetic conditioning. (O) Conditioned-freezing responses to sound cue paired with optogenetic activation of the PBN-PVT projection during training, mCherry group: n = 4 mice; ChR2 group: n = 5 mice. (P, Q) Optogenetic activation of the projection fibers from the PBN in the PVT did not induce context-dependent fear (P) and cue-dependent fear (Q), mCherry group: n = 4 mice; ChR2 group: n = 5 mice. *p<0.05, **p<0.01, ***p<0.001, all data are represented as mean ± SEM. Two-way ANOVA followed by Bonferroni test for (H), (I), (M), and (O). Unpaired Student’s t-test for (P) and (Q).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Histological map showing area of ChR2 expression in the PBN at bregma −5.20 mm in eight mice. Scale bar: 400 μm. (B) The position of optic fiber (rectangle) in the PVT in the AAV2/9-EF1α-DIO-ChR2-mCherry-injected mice. Scale bar: 200 μm. (C) The area of AAV2/9-EF1α-DIO-mCherry virus expression in the PBN at bregma −5.20 mm in seven mice. Scale bar: 400 μm. (D) Position of the optic fiber tip from seven mice injected with AAV2/9-EF1α-DIO-mCherry. Scale bar: 200 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Quantification of the immobility time (A) and the distance (B) in the OFT (mCherry group: n = 7 mice; ChR2 group: n = 8 mice). (C−F) Quantification of the velocity (C), the immobility time (D), the center time (E), the distance (F), and the number of jumps (G) during the 5–10 min laser on period in the OFT (mCherry group: n = 7 mice; ChR2 group: n = 8 mice). (H) Protocol for the prolonged CPA. (I) Photostimulation of PBN-PVT projection did not induce CPA (n = 7 mice per group). *p<0.05, **p<0.01, ***p<0.001, all data are represented as mean ± SEM. Two-way ANOVA followed by Bonferroni test for (A), (B), and (I). Two-way ANOVA with interaction factors for (C–G).
 
 We performed a 15 min optogenetic manipulation in the open field test (OFT; 0–5 min laser off, 5–10 min laser on, 10–15 min laser off; Figure 2E). Optogenetic activation (473 nm, 20 Hz, 5 mW, 5 ms) of the efferents from the PBN to the PVT elicited instant running behavior along the chamber wall with a significantly increased velocity (Figure 2F–H, Figure 2—video 1). The activation of PBN-PVT projections also reduced the center time compared with that of the control mice (Figure 2I). It is worth noting that the velocity returned to normal once the laser was off, but the time spent in the center was still lower than that of the control group during the 5 min after stimulation. These results indicate that anxiety could last for at least several minutes after acute activation of PBN-PVT projections. Although the speed increased during the laser on period, the immobility time of the ChR2 mice during the laser on period was also increased (Figure 2—figure supplement 2A). Therefore, the distance during the laser on period and the total distance in 15 min were not changed (Figure 2—figure supplement 2B).
 
@@ -59,31 +87,87 @@ In addition to anxiety, another critical component of negative affective states 
 
 To further confirm this instant aversion phenomenon, we subjected mice to the cue-dependent optogenetic conditioning test (Figure 2N). A 30 s auditory conditioning stimulus (CS) co-terminated with 30 s of synchronous optogenetic activation of PBN-PVT projections (laser stimulus [LS]) in this test. Activation of the PBN-PVT projections induced significant freezing behavior during six CS-LS pairings (Figure 2O). However, the freezing behavior to the same context or to the auditory cue in a novel context disappeared on the second day (Figure 2P and Q). These results indicate that optogenetic activation of PBN-PVT projections induces instant aversion and freezing but does not drive associative fear memory formation.
 
-## Pharmacogenetic activation of PBN-PVT neurons induces anxiety-like behaviors and freezing behaviors
+### Pharmacogenetic activation of PBN-PVT neurons induces anxiety-like behaviors and freezing behaviors
 
 To further confirm the effects of activating the PBN-PVT pathway, we also used retrograde viral tracing and pharmacogenetic manipulation. We first injected retroAAV2/2-hSyn-Cre virus into the PVT and AAV2/9-hSyn-DIO-hM3Dq-mCherry virus or control virus bilaterally into PBN to specifically transduce PBN-PVT neurons with the hM3Dq, a designer receptor exclusively activated by designer drugs (Figure 3A; Armbruster et al., 2007). PBN-PVT neurons could be activated by intraperitoneal (i.p.) injection of clozapine N-oxide dihydrochloride (CNO; Figure 3B–D). The region of virus expression in the PBN is shown in Figure 3—figure supplement 1. Consistent with the optogenetic activation results, pharmacogenetic activation of PBN-PVT neurons reduced the center time, increased immobility time, and reduced the travel distance in the OFT (Figure 3E–I). At the same time, the velocities were not significantly different (Figure 3J). We also found that activation of PBN-PVT neurons did not affect motor ability in the rotarod test (Figure 3—figure supplement 2G). In addition, pharmacogenetic activation of PBN-PVT neurons decreased exploration time of open quadrants in the elevated zero maze (EZM; Figure 3K and L), further suggesting that activation of PBN-PVT neurons induces anxiety-like behaviors.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig3-v2.jpg)
+
+**Figure 3.:** (A) The illustration shows virus injection of retroAAV2/2-hSyn-Cre into the PVT nucleus and bilateral injection of AAV2/9-hSyn-DIO-hM3Dq-mCherry into the PBN nucleus. (B, C) Clozapine N-oxide dihydrochloride (CNO) administration evokes Fos expression in AAV2/9-hSyn-DIO-hM3Dq-mCherry-injected mice (B) but not in AAV2/9-EF1α-DIO-mCherry-injected mice (C). Scale bar: 200 μm. (D) Percentage of co-labeled neurons in the PBN, mCherry group: n = 3 mice; hM3Dq group: n = 4 mice. (E) The illustration of the open field test (OFT) with pharmacogenetic activation. (F) Example of the OFT traces from the mice infected with AAV2/9-EF1α-DIO-mCherry or AAV2/9-hSyn-DIO-hM3Dq-mCherry. (G−I) Quantification of the center time (G), the immobility time (H), and the total distance (I) in the OFT, mCherry group: n = 7 mice; hM3Dq group: n = 8 mice. (J) Quantification of the velocity in the OFT, mCherry group: n = 7 mice; hM3Dq group: n = 5 mice. (K) Example elevated zero maze (EZM) traces from the mice infected with AAV2/9-EF1α-DIO-mCherry and AAV2/9-hSyn-DIO-hM3Dq-mCherry. (L) Quantification of the time spent in open quadrants in the EZM test, n = 8 mice per group. (M) The illustration of pharmacogenetic activation-induced fear-like freezing behavior. (N) Pharmacogenetic activation of PBN-PVT neurons induced fear-like freezing behaviors, mCherry group: n = 8 mice; hM3Dq group: n = 7 mice. *p<0.05, ***p<0.001, all data are represented as mean ± SEM. Unpaired Student’s t-test for (D), (G), (H), (I), and (J). Two-way ANOVA followed by Bonferroni test for (L) and (N).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative histological images of hM3Dq expression in an AAV2/9-hSyn-DIO-hM3Dq-mCherry-injected mouse at brain level from bregma −5.02 mm to bregma −5.34 mm. Scale bar: 1 mm. (B) Depiction of virus infection area according to the histological images in (A). (C) Superimposed depiction of virus transduction from eight mice. (D) Representative histological images of mCherry expression in an AAV2/9-EF1α-DIO-mCherry-injected mice at brain level from bregma −5.02 mm to bregma −5.34 mm. Scale bar: 1 mm. (E) Depiction of virus infection area according to the histological images in (D). (F) Superimposed depiction of virus transduction from eight mice.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immobility time in the tail suspension test (TST), n = 7 mice per group. (B) Immobility time in the forced swimming test (FST), mCherry group: n = 7 mice; hM3Dq group: n = 8 mice. (C, D) Effects of pharmacogenetic activation of PBN-PVT neurons on the nociceptive response tested by von Frey (C) and Hargreaves (D), n = 8 mice per group. (E, F) Duration of licking behaviors in the formalin-induced inflammatory pain test, mCherry group: n = 7 mice; hM3Dq group: n = 8 mice. Phase I: 0–10 min; phase II: 10–60 min. (G) The latency to fall in the rotarod test, n = 8 mice per group. Data are represented as mean ± SEM. Unpaired Student’s t-test for (A), (B), and (G). Two-way ANOVA followed by Bonferroni test for (C–F).
+
 We further evaluated freezing behaviors in the fear conditioning chamber and found that pharmacogenetic activation of PBN-PVT neurons induced more freezing behaviors (Figure 3M and N). Although activation of PBN-PVT neurons induced significant anxiety-like behavior, it did not affect the depressive-like behaviors evaluated by the tail suspension test (TST; Figure 3—figure supplement 2A) or the forced swimming test (FST; Figure 3—figure supplement 2B). Previous studies have revealed that the PBN receives direct projections from the spinal cord and plays a vital role in pain processing (Deng et al., 2020; Sun et al., 2020). We then assessed whether pharmacogenetic activation of PBN-PVT neurons affected nociceptive behaviors. By performing the von Frey test and Hargreaves test, we found that the basal nociceptive thresholds were not affected after pharmacogenetic activation of PBN-PVT neurons (Figure 3—figure supplement 2C and D). Given the distinct mechanisms between the reflexive and coping responses induced by nociceptive stimulation (Huang et al., 2019), we injected formalin into the paw to induce inflammatory pain. We found that activation of PBN-PVT neurons did not affect formalin-evoked licking behaviors (Figure 3—figure supplement 2E and F). These results indicate that activating the PBN-PVT pathway induces anxiety-like and freezing behaviors but not nociceptive behaviors.
 
-## Inhibition of PBN-PVT projections reduces aversion-like behaviors and freezing behaviors
+### Inhibition of PBN-PVT projections reduces aversion-like behaviors and freezing behaviors
 
 We next asked whether inhibition of PBN-PVT projections could modulate negative affective states. We first injected AAV2/9-EF1α-DIO-NpHR3.0-EYFP virus or AAV2/8-EF1α-DIO-EGFP virus bilaterally into the PBN and implanted optic fibers into the PVT of Vglut2-ires-Cre mice (Figure 4A–C, Figure 4—figure supplement 1). We used 2-methyl-2-thiazoline (2-MT), a widely used odorant molecule that can generate innate fear-like freezing responses in rodents (Isosaka et al., 2015), to induce a fear-like state. We found that 589 nm laser-induced inhibition of PBN-PVT projections reduced the aversion caused by 2-MT exposure (Figure 4D–F) and increased the moving duration (Figure 4G). We also observed that inhibition of PBN-PVT projections increased the time spent in the 2-MT zone in the OFT (Figure 4H–I). In addition to 2-MT, footshock is another paradigm that induces robust freezing behaviors. We found that constant inhibition of PBN-PVT projections reduced footshock-induced freezing behaviors (Figure 4J and K).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig4-v2.jpg)
+
+**Figure 4.:** (A) The illustration shows the bilateral injection of AAV2/9-EF1α-DIO-NpHR3.0-EYFP virus into the PBN and placement of optic fiber above the PVT on Vglut2-ires-Cre mice. (B, C) Examples of AAV2/9-EF1α-DIO-NpHR3.0-EYFP expression in the PVT (B) and PBN (C). The cyan rectangle represents the position of the optic fiber. Scale bar: 200 μm. (D) Schematic of 2-methyl-2-thiazoline (2-MT)-induced aversion test with optogenetic inhibition via the 589 nm laser. (E) Representative traces of the mice infected with AAV2/8-EF1α-DIO-EGFP or AAV2/9-EF1α-DIO-NpHR3.0-EYFP in two chambers. (F, G) Quantification of the time spent in the 2-MT paired chamber (F) and the total moving duration (G), n = 7 mice per group. *p<0.05, **p<0.01, (H) Representative traces of the mice infected with AAV2/8-EF1α-DIO-EGFP or AAV2/9-EF1α-DIO-NpHR3.0-EYFP in the open field test (OFT) chamber. (I) Quantification of the time spent in the 2-MT zone, n = 7 mice per group. (J) Illustration of footshock-induced freezing behavior with optogenetic inhibition via a 589 nm laser. (K) Quantification of the freezing behavior, n = 7 mice per group. *p<0.05, all data are represented as mean ± SEM. Unpaired Student’s t-test for (F), (G), (I), and (K).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Histological map showing area of NpHR3.0 expression in the PBN at bregma −5.20 mm in seven mice. Scale bar: 400 μm. (B) The position of optic fiber (rectangle) in the PVT in the AAV2/9-EF1α-DIO-NpHR3.0-EYFP-injected mice. Scale bar: 200 μm. (C) The area of AAV2/8-EF1α-DIO-EGFP expression in the PBN at bregma −5.20 mm in seven mice. Scale bar: 400 μm. (D) Position of the optic fiber tip from seven mice injected with AAV2/9-EF1α-DIO-mCherry. Scale bar: 200 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The protocol of auditory fear conditioning experiments with optogenetic inhibition of the PBN-PVT projection. (B−D) Quantification of freezing levels during condition trials (B), contextual test (C), and cue test (D), n = 7 mice per group. The yellow box indicates optogenetic inhibition. All data are represented as mean ± SEM, two-way ANOVA followed by Bonferroni test for (B–D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The illustration shows virus injection of retroAAV2/2-hSyn-Cre into the PVT, bilateral injection of AAV2/9-EF1α-DIO-NpHR3.0-EYFP into the PBN, and bilateral placement of optic fiber above the PBN on WT mice. (B, C) Examples of AAV2/9-EF1α-DIO-NpHR3.0-EYFP (B) and AAV2/8-EF1α-DIO-EGFP (C) expression in the PBN, the rectangle represents the position of the optic fiber. Scale bar: 200 μm. (D) Schematic of 2-methyl-2-thiazoline (2-MT)-induced aversion test with optogenetic inhibition via a 589 nm laser. (E) Representative traces of the mice infected with AAV2/8-EF1α-DIO-EGFP or AAV2/9-EF1α-DIO-NpHR3.0-EYFP in the chamber. (F, G) Quantification of the time spent in the 2-MT paired chamber (F) and the moving duration (G), n = 5 mice per group. (H) Schematic of 2-MT-induced fear-like freezing behavior with optogenetic inhibition via a 589 nm laser. (I) Quantification of the freezing behavior, n = 5 mice per group. (J) Illustration of footshock-induced freezing behavior with optogenetic inhibition via a 589 nm laser. (K) Quantification of the freezing behavior, n = 5 mice per group.*p<0.05, **p<0.01, all data are represented as mean ± SEM. Unpaired Student’s t-test for (F), (G), (I), and (K).
+
 We also examined whether inhibition of the PBN-PVT projection affects aversive memory acquisition or retrieval (Figure 4—figure supplement 2A). We briefly suppressed the activity of PBN-PVT projections during footshock stimulation and found that freezing levels during the condition were not changed (Figure 4—figure supplement 2B). We further compared freezing levels in contextual and cue tests without or with laser and found that aversive memory retrieval was not affected either (Figure 4—figure supplement 2C and D). In addition, we performed optogenetic inhibition of PBN-PVT neurons and observed similar phenomena (Figure 4—figure supplement 3). Thus, these results indicate that inhibition of the PBN-PVT pathway reduces aversion-like behaviors and footshock-induced freezing behaviors without affecting aversive memory acquisition or retrieval.
 
-## PBN input shapes PVT neuronal responses to aversive stimulation
+### PBN input shapes PVT neuronal responses to aversive stimulation
 
 To further examine the activity of the PVT in response to aversive stimulation, we performed the in vivo fiber photometry and found that calcium signals of PVT neurons were increased after the footshock and air puff (Figure 5—figure supplement 1). In addition, we injected AAV2/1-hSyn-Cre virus, which could anterogradely label downstream neurons (Zingg et al., 2017), into the PBN of Rosa26-tdTomato mice (Figure 5A). The distribution pattern of PVT neurons that received PBN-PVT projection fibers (hereafter referred to as PVTPBN neurons) is shown in Figure 5B–D. We used Fos as a marker to assess the activity change in 2-MT-treated mice and footshock-treated mice. The percentage of Fos+tdTomato+ neurons/tdTomato+ neurons in the PVT was significantly increased in the mice treated with aversive stimuli compared with that of control mice (Figure 5E–H), confirming that the PVTPBN neurons could be activated by aversive stimuli.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig5-v2.jpg)
+
+**Figure 5.:** (A) The illustration shows the injection of AAV2/1-hSyn-Cre into the parabrachial nucleus (PBN) of Rosa26-tdTomato mice. (B−D) The distribution of the neurons in the paraventricular nucleus (PVT) at bregma –1.06 mm (B), bregma –1.46 mm (C), and bregma –1.70 mm (D). Scale bar: 200 μm. (E−G) Fos induced by habituation control (E), footshock (F), or 2-methyl-2-thiazoline (2-MT) (G) co-labeled with the tdTomato-positive neurons in the PVT. Scale bar: 200 μm. (H) Quantification of the co-labeled neurons, n = 3 mice per group. *p<0.05, **p<0.01, ***p<0.001, all data are represented as mean ± SEM, one-way ANOVA followed by Bonferroni test for (H).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic shows injection of AAV2/8-hSyn-GCaMP6s into the PVT and placement of the optic fiber above the PVT. (B) Representative of GCaMP6s expression and the position of optic fiber in the PVT. Scale bar: 400 μm. (C, D) The calcium signal of the PVT neurons (C) and the quantification of the average Ca2+ signal before and after footshock (D). The black bar represents the baseline period (B.s, –1 to –0.5 s), and the red bar represents the post-stimulus period (Post, 0.5–1 s), n = 5 mice. (E, F) The calcium signal of the PVT neurons (E) and the quantification of average Ca2+ signal before and after air puff (F), n = 5 mice. **p<0.01, all data are represented as mean ± SEM. Paired Student’s t-test for (D) and (F).
 
 The next question is whether PBN-PVT projections modulate the neuronal activity of PVT neurons in response to aversive stimuli. We first injected AAV2/9-EF1α-DIO-ChR2-mCherry virus into the PBN and performed dual Fos staining (Nakahara et al., 2020), detecting fos mRNA and Fos protein induced by two episodes of stimulation (Figure 6—figure supplement 1A). We found that there was a broad overlap between optogenetic stimulation-activated neurons (expressing the Fos protein) and footshock-activated neurons (expressing the fos mRNA) (Figure 6—figure supplement 1B–E).
 
 Then, we injected AAV2/9-EF1α-DIO-ChR2-mCherry virus into the PBN and implanted the optoelectrode into the PVT of Vglut2-ires-Cre mice (Figure 6A). We first recorded the spiking signals in response to 10 sweeps of 2 s laser pulse trains (20 Hz, 5 mW, 5 ms). Then, we recorded the spiking signals in response to 20 sweeps of 2 s footshock (0.5 mA) without laser in the odd number sweeps or with laser in the even number sweeps (Figure 6A). We found that laser or footshock (without laser) increased firing rates in 22 or 28, respectively, of 40 neurons (Figure 6B and C). There was also a broad overlap between laser-activated and footshock-activated neurons (Figure 6D). This result was consistent with the dual Fos staining result, suggesting that PVTPBN neurons were activated by aversive stimulation. We also analyzed the response latency of laser-activated neurons and footshock-activated neurons (Figure 6—figure supplement 2A–D). The median response latency of 22 laser-activated neurons was 10 ms, suggesting that monosynaptic inputs from PBN could increase the PVT activity.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig6-v2.jpg)
+
+**Figure 6.:** (A) Top: schematic shows injection of AAV2/9-EF1α-DIO-ChR2-mCherry into the PBN and placement of the optoelectrode above the PVT of Vglut2-ires-Cre mice. Bottom: the protocol of 10 sweeps of laser stimuli (Trial 1) and 20 sweeps of footshock stimuli without or with laser (Trial 2). (B) Firing rates (z-score) of 40 neurons during laser stimuli (20 Hz, 5 mW, 5 ms, 2 s). Inset: percentages of different groups of neurons according to z-score. (C) Firing rates (z-score) of 40 neurons during footshock (0.5 mA, 2 s) without laser stimuli. (D) Percentage of laser-activated, footshock-activated, and both stimuli-activated neurons. (E–G) Rastergrams and firing rates show the spiking activity of one PVT neuron during laser stimulus (E), footshock without laser stimulus (F), and footshock with laser stimulus (G). (H) Firing rates (z-score) of 40 neurons during footshock (0.5 mA, 2 s) with laser stimuli (20 Hz, 5 mW, 5 ms, 2 s). (I) Quantification of the firing rates of 40 neurons before and during footshock without and with laser, n = 40 neurons. **p<0.01, ***p<0.001, all data are represented as mean ± SEM, two-way ANOVA followed by Bonferroni test for (I).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Top: schematic shows injection of AAV2/9-EF1α-DIO-ChR2-mCherry into the parabrachial nucleus (PBN) and placement of the optic fiber above the paraventricular nucleus (PVT) of Vglut2-ires-Cre mice. Bottom: time windows containing laser (20 Hz, 5 mW, 5 ms) and shock stimuli (0.5 mA, 1 s, 30 times), separated by 60 min of the rest period. (B−D) Example of Fos protein and fos mRNA expression in the PVT. Red fluorescence represents Fos protein induced by laser stimulus, and green fluorescence represents fos mRNA detected by in situ hybridizations. Arrows indicate double-positive neurons, Scale bar: 100 μm. (E) The proportion of co-expression neurons over Fos protein-expressing cells and fos mRNA-expressing cells, n = 5 mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Response latency of laser-activated PVT neurons (n = 23 neurons). (B) The histogram of response latency of laser-activated PVT neurons (less than 14 ms, n = 12 neurons). (C) Response latency of footshock-activated PVT neurons (n = 28 neurons). (D) The histogram of response latency of footshock-activated PVT neurons (less than 14 ms, n = 13 neurons).
+
 Next, we analyzed the firing rates of PVT neurons during footshock with laser sweeps and footshock without laser sweeps (Figure 6E–G). We found that the footshock stimulus laser-activated 30 of 40 neurons (Figure 6H) and increased the overall firing rates of 40 neurons compared with the footshock without laser result (Figure 6I). These results indicate that activation of PBN-PVT projections could enhance PVT neuronal responses to aversive stimulation.
 
-## Pharmacogenetic activation of PVTPBN neurons induces anxiety-like behaviors
+### Pharmacogenetic activation of PVTPBN neurons induces anxiety-like behaviors
 
 We next investigate the functional role of PVTPBN neurons in modulating negative affective states. We injected AAV2/1-hSyn-Cre virus bilaterally into the PBN and injected AAV2/9-hSyn-DIO-hM3Dq-mCherry virus or control virus into the PVT to activate PVTPBN neurons (Figure 7A). The majority of the PVTPBN neurons could be activated by CNO in the hM3Dq-expressing mice but not the control mice, as demonstrated by the Fos staining (Figure 7B–D). We found that pharmacogenetic activation of PVTPBN neurons reduced the center time (Figure 7E and F). Similarly, the time spent in open quadrants was decreased and overall immobility time was increased in the EZM after activation of PVTPBN neurons (Figure 7G–I). We did not observe obvious nociception-related behaviors, such as forelimb wiping, hindlimb flinching, licking, or biting, after activation of PVTPBN neurons. These results indicate that pharmacogenetic activation of PVTPBN neurons induces anxiety-like behaviors.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig7-v2.jpg)
+
+**Figure 7.:** (A) The illustration shows injection of AAV2/1-hSyn-Cre into the parabrachial nucleus (PBN) and AAV2/9-hSyn-DIO-hM3Dq-mCherry into the paraventricular nucleus (PVT). (B, C) Clozapine N-oxide dihydrochloride (CNO) administration evoked Fos expression in AAV2/9-hSyn-DIO-hM3Dq-mCherry-injected mice (B) but not in AAV2/9-EF1α-DIO-mCherry-injected mice (C). Scale bar: 200 μm. (D) Percentage of co-labeled neurons in the PVT, n = 4 mice per group. (E) The illustration of the open field test (OFT) with pharmacogenetic activation. (F) Quantification of center time in the OFT, n = 7 mice per group. (G) Example of elevated zero maze (EZM) traces from the mice injected with AAV2/9-EF1α-DIO-mCherry or AAV2/9-hSyn-DIO-hM3Dq-mCherry. (H, I) Quantification of the time spent in open quadrants (H) and the immobility time in the EZM test (I), n = 7 mice per group. *p<0.05, ***p<0.001, all data are presented as mean ± SEM. Unpaired Student’s t-test for (D), (F), (H), and (I).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68372/elife-68372-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The illustration shows injection of AAV2/1-hSyn-Cre into the parabrachial nucleus (PBN) and AAV2/8-EF1α-DIO-EGFP into the paraventricular nucleus (PVT) of Rosa26-tdTomato mice. (B) The representative image of EGFP and tdTomato-transduced neurons in the PVT. Scale bar: 200 μm. (C−G) Distribution patterns of EGFP fibers in the PFC (C), CI (D), NAc (E), BNST (F), and CeA (G). PFC, prefrontal cortex; IC, insular cortex; CI, claustrum; NAc, nucleus accumbens core; BNST, bed nucleus of the stria terminalis; CeA, central nucleus of the amygdala; BLA, basolateral amygdala; ZI, zona incerta, Scale bar: 200 μm. (H) Quantification of the fiber intensity in these brain regions, n = 3 mice.
 
 Furthermore, we examined the anatomic distribution of terminals of PVTPBN neurons. We labeled PVTPBN neurons in WT mice by injecting AAV2/1-hSyn-Cre virus into the PBN and AAV2/8-EF1α-DIO-EGFP virus into the PVT (Figure 7—figure supplement 1A and B). We found that PVTPBN neurons sent projections to several brain areas, in particular the NAc, BNST, and CeA (Figure 7—figure supplement 1B–H), which was similar to early tracing research on PVT efferent projections (Li and Kirouac, 2008).
 
@@ -91,7 +175,7 @@ Furthermore, we examined the anatomic distribution of terminals of PVTPBN neuron
 
 In this study, we employed viral tracing and electrophysiology to confirm the monosynaptic excitatory connectivity between the PBN and the PVT. Optogenetic or pharmacogenetic activation of the PBN-PVT pathway induced anxiety-like, aversion-like, and fear-like behaviors. Optogenetic inhibition of the PBN-PVT pathway could partially reduce 2-MT-induced aversive behaviors as well as footshock-induced freezing behaviors. The activity of PVT neurons was increased with the presentation of several aversive stimuli and could be further increased by activation of PBN-PVT projections. Consistently, activation of PVTPBN neurons induced anxiety-like behaviors. Taken together, our results reveal the functional role of PBN-PVT projections in modulating negative affective states in mice.
 
-## PBN efferents and PBN-PVT monosynaptic excitatory projections
+### PBN efferents and PBN-PVT monosynaptic excitatory projections
 
 The PBN is a critical hub receiving sensory information from the spinal cord (Todd, 2010). The widespread distribution of PBN efferents contributes to different aspects of behavioral and physiological responses. Previous studies have shown that CGRP-expressing neurons in the PBN project to the CeA and contribute to the affective dimension of pain. In contrast, non-CGRP neurons may transmit sensory pain information (Han et al., 2015). The projections from the PBN to the VMH or PAG are involved in producing escape behaviors to avoid injury, while the projections from the PBN to the BNST or CeA participate in facilitating aversive memory (Chiang et al., 2020). PBN neurons, which receive projections from the spinal cord, form strong functional synaptic connections with ILN neurons but not CeA neurons to process nociceptive signals (Deng et al., 2020). The PVT, which is located in the midline of the brain, is an important area that participates in the processing of affective states (Kirouac, 2015). Although recent research has reported that projecting fibers from the PBN were found in the PVT (Chiang et al., 2020), remarkably little is known about the connectivity information and function of these PBN-PVT projections.
 
@@ -99,7 +183,7 @@ Since we injected the constitutively expressed ChR2 virus into the PBN, some neu
 
 We also found that the connectivity and density of glutamatergic PBN projection fibers were higher in the middle and pPVT. These results are consistent with various studies supporting the idea that the pPVT is a particularly sensitive region of the PVT to aversive stimuli (Gao et al., 2020; Beas et al., 2018; Barson et al., 2020).
 
-## PBN-PVT projections modulate negative affective states
+### PBN-PVT projections modulate negative affective states
 
 We found that activation of PBN-PVT projections or PBN-PVT neurons induced anxiety-like behaviors and fear-like behaviors in the OFT and EZM. We observed that mice displayed robust running and jumping behaviors mainly in the first minute of optogenetic manipulation, and these phenomena were not observed in the pharmacogenetic experiment. These might have been caused by the instantly increased activity of PBN-PVT projections induced by optogenetic manipulation. Mice might display ‘fight or flight’ during sudden affective state transitions. The pharmacogenetic approach takes several minutes and gradually enhances neural activity, and the resulting affective states change in a relatively mild way. We also observed that anxiety-like behaviors in the OFT still existed several minutes after optogenetic activation of PBN-PVT projections. However, in the RTPA test, aversion appeared when the laser was on and disappeared when the laser was off, indicating that aversion was transient and could not be translated to associative learning. This was further confirmed by the prolonged CPA test and cue-dependent optogenetic conditioning test. These results suggest that activation of PBN-PVT projections induces instant negative affective states but does not drive associative fear memory formation.
 
@@ -115,7 +199,7 @@ The tracing results showed that PVTPBN neurons projected to multiple brain areas
 
 A previous study also found that the PVT mediates descending pain facilitation underlying persistent pain conditions via the PVT-CeA-PAG circuit (Liang et al., 2020). Different downstream pathways of PVTPBN neurons might have different functions, and deciphering the circuit mechanisms needs further examination.
 
-## The potential role of PBN-PVT projections in depression and pain
+### The potential role of PBN-PVT projections in depression and pain
 
 It is worth noting that although the pharmacogenetic activation of PBN-PVT neurons induced anxiety-like behaviors and fear-like behaviors in hM3Dq group mice, no depression-like symptoms were observed in the TST and FST. On the other hand, chronic pain models, such as the partial sciatic nerve ligation model, spared nerve injury model, and complete Freund’s adjuvant model, generally induce anxiety and depression at least 3–4 weeks after surgery in mice (Dimitrov et al., 2014; Zhou et al., 2019). Our study collected behavioral data 30 min after a single dose of CNO injection. Different behavioral tests were performed at least 3 days apart to eliminate the residual CNO effects. We hypothesized that depression-like behaviors might be observed if we repeatedly activated PBN-PVT projections for weeks. However, whether PBN-PVT projections are involved in depression is still unknown.
 
@@ -125,11 +209,203 @@ In summary, we identified the functional role of PBN-PVT projections in modulati
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (Ai9)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock# 007909;RRID:MGI:3813511</td>
+      <td>Dr. Hua-Tai Xu (Institutes of Neuroscience, Chinese Academic of Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>STOCK Slc17a6tm2(cre)Lowl/J (Vglut2-ires-Cre)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock# 016963;RRID:MGI:5300532</td>
+      <td>Dr. Yan-Gang Sun (Institutes of Neuroscience, Chinese Academic of Sciences)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/8-hSyn-ChR2-mCherry</td>
+      <td>Obio Technology</td>
+      <td>Cat# AG26976</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/8-EF1α-DIO-EGFP</td>
+      <td>Taitool Bioscience</td>
+      <td>Cat# S0270</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>retroAAV2/2-hSyn-Cre</td>
+      <td>Taitool Bioscience</td>
+      <td>Cat# S0278-2RP-H20</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/9-EF1α-DIO-ChR2-mCherry</td>
+      <td>Taitool Bioscience</td>
+      <td>Cat# S0170-9-L20</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/9-EF1α-DIO-mCherry</td>
+      <td>Obio Technology</td>
+      <td>Cat# AG20299</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/9-hSyn-DIO-hM3Dq-mCherry</td>
+      <td>BrainVTA</td>
+      <td>Cat# PT-0019</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/9-EF1α-DIO-NpHR3.0-EYFP</td>
+      <td>Obio Technology</td>
+      <td>Cat# AG26966</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/8-hSyn-GCaMP6s</td>
+      <td>Taitool Bioscience</td>
+      <td>Cat# S0225-8</td>
+      <td>4 × 1012 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Dependoparvovirus)</td>
+      <td>AAV2/1-hSyn-Cre</td>
+      <td>Taitool Bioscience</td>
+      <td>Cat# S0278-1-H50</td>
+      <td>1.5 × 1013 v.g./mL</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-fos-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 316921-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Tac1-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 410351-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Tacr1-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 428781-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe-Pdyn</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 318771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe- Slc17a6-C2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 319171-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fos (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab190289; RRID:AB_2737414</td>
+      <td>IF (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CGRP (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab36001; RRID:AB_725807</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DsRed (goat polyclonal)</td>
+      <td>Takara Bio</td>
+      <td>Cat# 632496; RRID:AB_10013483</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 711-545-152; RRID:AB_2313584</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 AffiniPure Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 711-165-152; RRID:AB_2307443</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 AffiniPure F(ab’)2 Fragment Donkey Anti-Goat IgG (H+L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 705-546-147; RRID:AB_2340430</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent Reagent Kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 320293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabState</td>
+      <td>AniLab</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male C57Bl/6J wild-type mice, Rosa26-tdTomato mice (Jax Stock# 007909, gifted from Dr. Hua-Tai Xu, Institutes of Neuroscience, Chinese Academic of Sciences), and Vglut2-ires-Cre mice (Jax Stock# 016963, gifted from Dr. Yan-Gang Sun, Institutes of Neuroscience, Chinese Academic of Sciences) were used. Animals were housed in standard laboratory cages in a temperature (23–25°C)-controlled vivarium with a 12:12 light/dark cycle, free to food and water. For tracing and behavioral experiments, the mice were injected with the virus at 7–8 weeks old and performed the behavioral tests at 11–12 weeks old. For the electrophysiological experiments, the mice were injected with the virus at 4–6 weeks old to accomplish the electrophysiological experiments at 7–9 weeks old. For in vivo fiber photometry and optoelectrode experiments, the mice were injected with the virus at 7–8 weeks old to accomplish the experiments at 10–11 weeks old. All animal experiment procedures were approved by the Animal Care and Use Committee of Shanghai General Hospital (2019AW008).
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Mice were anesthetized by vaporized sevoflurane (induction, 3%; maintenance, 1.5%) and head-fixed in a mouse stereotaxic apparatus (RWD Life Science Co.).
 
@@ -155,17 +431,17 @@ For pharmacogenetic activation of PVTPBN neurons, the AAV2/1-hSyn-Cre virus (300
 
 The virus was infused through a glass pipette (10–20 μm in diameter at the tip) at the rate of 50–100 nL/min. The injection pipette was left in place for additional 8 min. After the surgeries, the skin was closed by the sutures, and the optic fiber was secured through the dental acrylic. Generally, tracing, electrophysiological, or behavioral experiments were performed at least 3 weeks later. After experiments, histological analysis was used to verify the location of viral transduction and the optic fiber. The mice without correct transduction of virus or correct site of optic fiber were excluded for analysis.
 
-## Histology
+### Histology
 
 Animals were deeply anesthetized with vaporized sevoflurane and transcardially perfused with 20 mL saline, followed by 20 mL paraformaldehyde (PFA, 4% in PBS). Brains were extracted and soaked in 4% PFA at 4°C for a minimum of 4 hr and subsequently cryoprotected by transferring to a 30% sucrose solution (4°C, dissolved in PBS) until brains were saturated (for 36–48 hr). Coronal brain sections (40 μm) were cut using a freezing microtome (CM1950, Leica). The slices were collected and stored in PBS at 4°C until immunohistochemical processing. Nuclei were stained with DAPI (Beyotime, 1:10000) and washed three times with PBS.
 
 The brain sections undergoing immunohistochemical staining were washed in PBS three times (10 min each time) and incubated in a blocking solution containing 0.3% TritonX-100 and 5% normal donkey serum (Jackson ImmunoResearch, USA) in PBS for 1 hr at 37°C. Sections were then incubated (4°C, 24 hr) with primary antibodies dissolved in 1% normal donkey serum solution. Afterward, sections were washed in PBS four times (15 min each time), then incubated with secondary antibodies for 2 hr at room temperature. After DAPI staining and washing with PBS, sections were mounted on glass microscope slides, dried, and covered with 50% glycerin (Thermo Fisher). The images were taken with the Leica Dmi8 microscope and by the Leica SP8 confocal microscopy. The images were further processed using Fiji and Photoshop.
 
-## RNAscope in situ hybridization
+### RNAscope in situ hybridization
 
 Mice were anesthetized with isoflurane and rapidly decapitated. Brains were roughly dissected from perfused mice and post-fixed in 4% PFA at 4°C overnight, dehydrated in 30% sucrose 1× PBS at 4°C for 2 days. Mouse brains were embedded, cryosectioned in 15 µm coronal slices, and mounted on SuperFrost Plus Gold slides (Fisher Scientific). In situ hybridization was performed according to the protocol of the RNAscope Multiplex Fluorescent Reagent Kit v2 (Cat# 320293). Probes were purchased from Advanced Cell Diagnostics: fos (Cat# 316921-C2), Tac1 (Cat# 410351-C2), Tacr1 (Cat# 428781-C2), Pdyn (Cat# 318771), and Slc17a6 (Cat# 319171-C2). Primary antibodies include rabbit anti-Fos (Abcam, Cat# ab190289, 1:4000), goat anti-CGRP (Abcam, Cat# ab36001, 1:1000), and rabbit anti-DsRed (Takara Bio, Cat# 632496, 1:500). All secondary antibodies were purchased from Jackson ImmunoResearch and used at 1:400 dilution. Secondary antibodies include Alexa 488 donkey anti-rabbit (Cat# 711-545-152), Cy3 donkey anti-rabbit (Cat# 711-165-152), and Alexa 488 donkey anti-goat (Cat# 705-546-147). Images were collected on a Leica fluorescence microscope and Leica LAS Software.
 
-## Fos induction
+### Fos induction
 
 The mice were habituated for 3 days and performed gentle grabbing and holding for 1 min, five times every day, to minimize background Fos expression.
 
@@ -177,7 +453,7 @@ To assess footshock-induced Fos expression in the PVT, we placed the mice into t
 
 For the dual Fos experiments, we first delivered 20 min 473 nm laser pulses (20 Hz, 5 mW, 5 ms) and left the mice to rest in the homecage for 60 min. Then we delivered the 20 min footshock stimulus (0.5 mA, 1 s, 30 times, variable interval) and perfused the mice.
 
-## Electrophysiology
+### Electrophysiology
 
 The electrophysiological experiment was performed as previously described (Mu et al., 2017). Mice were anesthetized with sevoflurane and perfused by the ice-cold solution containing (in mM) 213 sucrose, 2.5 KCl, 1.25 NaH2PO4, 10 MgSO4, 0.5 CaCl2, 26 NaHCO3, 11 glucose (300–305 mOsm). Brains were quickly dissected, and the coronal slices (250 μm) containing the PBN or PVT were chilled in ice-cold dissection buffer using a vibratome (V1200S, Leica) at a speed of 0.12 mm/s. The coronal sections were subsequently transferred to a chamber and incubated in the artificial cerebrospinal fluid (ACSF, 34°C) containing (in mM) 126 NaCl, 2.5 KCl, 1.25 NaH2PO4, 2 MgCl2, 2 CaCl2, 26 NaHCO3, 10 glucose (300–305 mOsm) to recover for at least 40 min, then kept at room temperature before recording. All solutions were continuously bubbled with 95% O2/5% CO2.
 
@@ -187,15 +463,15 @@ In PBN-PVT ChR2 experiments, whole-cell recordings of PBN neurons with current-c
 
 Voltage-clamp and current-clamp recordings were carried out using a computer-controlled amplifier (MultiClamp 700B; Molecular Devices, USA). During recordings, traces were low-pass filtered at 4 kHz and digitized at 10 kHz (DigiData 1550B1; Molecular Devices). Data were acquired by Clampex 10.6 and filtered using a low-pass Gaussian algorithm (–3 dB cutoff frequency = 1000 Hz) in Clampfit 10.6 (Molecular Devices).
 
-## Optogenetic manipulation
+### Optogenetic manipulation
 
 For activating the PBN-PVT projection, a 473 nm laser (20 Hz, 5 mW, 5 ms pulse duration) was delivered. For inhibition of the PBN-PVT projection and the PBN-PVT neurons, a constant laser (589 nm, 10 mW) was delivered.
 
-## Pharmacogenetic manipulation
+### Pharmacogenetic manipulation
 
 All behavioral tests were performed 30 min after i.p. injection of 0.5 mg/kg CNO in pharmacogenetic manipulation. Different behavior tests were performed at least 3 days apart.
 
-## Open field test
+### Open field test
 
 The OFT was used to assess locomotor activity and anxiety-related behavior in an open field arena (40 × 40 × 60 cm) with opaque plexiglass walls. The mouse was placed in the center of the box and recorded with a camera attached to a computer. The movement was automatically tracked and analyzed using AniLab software (Ningbo AnLai, China). The total distance traveled, the total velocity, the total immobility time (the mice were considered to be immobile if immobility time lasts more than 1 s), and time spent in the center area (20 × 20 cm) were measured. The box was cleaned with 70% ethanol after each trial.
 
@@ -205,23 +481,23 @@ To assess the effect of pharmacogenetic manipulations of PBN-PVT neurons on loco
 
 To assess the effect of inhibition of the PBN-PVT projection on the aversive behaviors induced by 2-MT, one cotton ball containing 5 mL 2-MT (1:1000) solution was placed on the center of the upper-left quadrant to disseminate fear-odor, then a constant laser (589 nm, 10 mW) was delivered during the 10 min test. The time spent in the 2-MT paired quadrant was calculated.
 
-## Elevated zero maze
+### Elevated zero maze
 
 The EZM was an opaque plastic circle (60 cm diameter), which consisted of four sections with two opened and two closed quadrants. Each quadrant had a path width of 6 cm. The maze was elevated 50 cm above the floor. The animals were placed into an open section facing a closed quadrant and freely explored the maze for 5 min.
 
-## Real-time place aversion test
+### Real-time place aversion test
 
 Mice were habituated to a custom-made 20 × 30 × 40 cm two-chamber apparatus (distinct wall colors and stripe patterns) before the test. Each mouse was placed in the center and allowed to explore both chambers without laser stimulation for 10 min on day 1. The movement was recorded for 10 min as a baseline. The mice performed a slight preference for the black chamber according to the fact that the mice have innate aversion to brightly illuminated areas. On day 2, 473 nm laser stimulation (20 Hz, 5 mW, 5 ms) was automatically delivered when the mouse entered or stayed in the black chamber and turned off when the mouse exited the black chamber for 10 min. Finally, the mouse was allowed to freely explore both chambers without laser stimulation for another 10 min. The RTPA location plots and total time on the stimulated side were recorded and counted with the AniLab software.
 
-## Conditioned place aversion
+### Conditioned place aversion
 
 After habituation, mice were placed in the center of the two-chamber apparatus and allowed to explore either chamber for 15 min on day 1. On day 2, mice were restricted to one chamber (laser-paired chamber) with photostimulation (473 nm, 20 Hz, 5 mW, 5 ms) for 30 min in the morning and restricted to the other chamber (unpaired chamber) without photostimulation in the afternoon. On day 3, mice were restricted to the unpaired chamber without photostimulation in the morning and restricted to the laser-paired chamber with photostimulation in the afternoon. On day 4, mice were allowed to explore both chambers without laser stimulation for another 15 min. The time in the laser-paired chamber was calculated on days 1 and 4.
 
-## 2-MT-induced aversion
+### 2-MT-induced aversion
 
 To assess the effect of optogenetic inhibition of the PBN-PVT projection or PBN-PVT neurons on the aversive state, three cotton balls containing 15 mL 2-MT (1:1000) solution were placed in the black chamber. A constant laser (589 nm, 10 mW) was delivered during the 10 min test.
 
-## Cue-dependent optogenetic conditioning test
+### Cue-dependent optogenetic conditioning test
 
 Video Freeze fear conditioning system with optogenetic equipment (MED Associates, MED-VFC-OPTO-USB-M) and Video Freeze software were used.
 
@@ -233,13 +509,13 @@ On day 3, mice were placed back into the original training chamber for 3 min to 
 
 The behavior of the mice was recorded and analyzed with the Video Freeze software. Freezing was defined as the complete absence of movement for at least 0.5 s. On the conditioning day, the freezing percentages were calculated for 30 s during each tone/laser stimulus. For the contextual test, the freezing percentages were calculated for 3 min. For the cue test, the freezing percentages were calculated for 30 s during tone.
 
-## Auditory fear conditioning test
+### Auditory fear conditioning test
 
 On day 1, mice were habituated to the fear conditioning chambers. On day 2, mice were conditioned by seven trials of sound tone (75 dB, 4 kHz, 30 s) co-terminated with footshock (0.6 mA, 2 s) averagely separated by 90 s. Laser (589 nm, 10 mW) was delivered 1 s before the footshock and lasted for 4 s at each trial. On day 3, mice were placed back into the original training chamber for 3 min to perform the contextual test, and the laser was delivered during the second minute. After 2–3 hr, the mice were placed into a modified chamber to perform the cue test. Three tones were given averagely separated by 90 s. The laser was delivered during the second tone.
 
 The behavior of the mice was recorded and analyzed with the Video Freeze software. The freezing percentages of the 27 s tone before laser (to avoid the influence of laser) for each trial were summarized to indicate fear memory acquisition in the conditioning test. For the contextual test, the freezing percentages were calculated for every minute. For the cue test, the freezing percentages were calculated for 30 s during tone.
 
-## Freezing behavior
+### Freezing behavior
 
 For analyses of freezing behavior induced by pharmacogenetic activation of PBN-PVT neurons, we injected CNO and recorded the mouse behavior using the Video Freeze fear conditioning system 30 min later.
 
@@ -247,35 +523,35 @@ The Video Freeze fear conditioning system (MED Associates, MED-VFC-OPTO-USB-M) w
 
 The Video Freeze fear conditioning system was also used to assess the effect of optogenetic inhibition of the PBN-PVT neurons on the fear-like behavior induced by 2-MT. 10 mL 2-MT (1:1000) dissolved in the ddH2O was soaked into the cotton ball on the bottom of the training box. A constant laser (589 nm, 10 mW) was delivered during the tests.
 
-## Tail suspension test
+### Tail suspension test
 
 Mice were individually suspended by an adhesive tape placed roughly 2 cm from the tip of the tail and videotaped for 6 min. Mice were considered immobile without initiated movements, and the immobility time was scored in the last 3 min by an observer unknown of the treatments.
 
-## Forced swimming test
+### Forced swimming test
 
 Mice were individually placed for 6 min in clear cylinders (45 cm height, 20 cm internal diameter) containing freshwater (25°C, 15 cm depth). The swimming activity was videotaped, and immobility time in the last 3 min was counted manually by an investigator unaware of animal grouping. The mice were considered immobile when they stopped swimming/struggling or only slightly moved to keep the nose above the surface.
 
-## Von Frey test
+### Von Frey test
 
 The von Frey test was used to assess the mechanical sensitivity (Mu et al., 2017). The mice were acclimated to the observation chambers for 2 days (2 hr for each day) before the test. A series of von Frey hairs with logarithmically incrementing stiffness (0.16–2.0 g) were used to stimulate the mouse hind paw perpendicularly. The 50% paw withdrawal threshold was determined using the up-down method.
 
-## Hargreaves test
+### Hargreaves test
 
 Hargreaves tests were performed as described previously (Mu et al., 2017). Mice were placed in an individual plexiglass box with a glass floor. A radiant heat beam was exposed directly to the hind paw until the paw was withdrawn. The trials were repeated three times with an interval of at least 15 min. To avoid potential damage, the test was executed with a 20 s cutoff time.
 
-## Formalin test
+### Formalin test
 
 In the formalin test, the mice received an intraplantar injection of formalin (5%, 20 μL/mouse) and were placed into a plexiglass box (width: 10 cm; length: 10 cm; height: 15 cm) individually to record the pain-related licking behaviors for 1 hr. All videos were analyzed by trained investigators blinded to the experimental treatment of the animals.
 
-## Rotarod test
+### Rotarod test
 
 Mice were trained twice on a rotarod apparatus (MED Associates) with a rod accelerated 5–20 revolutions per minute (rpm) for 5 min before the experimental day. On the second day, each mouse underwent three trials with a rod programmed to accelerate from 0 to 40 rpm over 300 s, then the average rpm at the point of falling was recorded.
 
-## Fiber photometry
+### Fiber photometry
 
 In vivo fiber photometry experiments were performed as previously described (Zhu et al., 2020). After 2 weeks of virus expression, the mice were gently handled to be familiar with the calcium signal recording experiments (Thinker-Biotech). A signal (for synchronization) was manually tagged with the shock and air puff to evaluate the activity of PVT neurons. The calcium transient was recorded at 50 Hz. The fluorescence values change (ΔF/F) was calculated from the formula of (F−F0)/F0, where the F0 represents the median of the fluorescence values in the baseline period (−1 to −0.5 s relative to the stimulation onset). To precisely quantify the change of the fluorescence values across the shock or air puff stimulation, we defined 0.5–1.0 s after the onset as the post-stimulus period.
 
-## Optoelectrode recording and analysis
+### Optoelectrode recording and analysis
 
 The homemade optoelectrode consisted of an optic fiber (200 mm in diameter) glued to 16 individually insulated nichrome wires (35 μm internal diameter, 300–900 Kohm impedance, Stablohm 675, California Fine Wire). The 16 microwire arrays were arranged in a 4 + 4 + 4 + 4 pattern and soldered to an 18-pin connector (Mil-Max). Three weeks after virus injection, the optoelectrode was implanted to the PVT nucleus (AP −1.46 mm, ML 0 mm, DV −2.90 mm). After 1 week of recovery, two trials were performed continuously. Trial 1 contained 10 sweeps of 2 s laser pulse trains (473 nm, 5 ms, 20 Hz, 8 mW). The interval of sweeps was 60 s. Trial 2 contained 20 sweeps of 2 s footshock (0.5 mA). The interval of sweeps was 60 s. In the even time sweeps (2, 4, 6, 8,10, 12, 14, 16, 18, 20), 2 s laser pulse trains were delivered spontaneously with the 2 s footshock. Neuronal signals were recorded using a Zeus system (Zeus, Bio-Signal Technologies, McKinney, TX), and spike signals were filtered online at 300 Hz. At the end of the experiment, all animals were perfused to confirm the optical fiber sites. Only the data of animals with correct optical fiber sites and virus expression regions were analyzed.
 
@@ -283,10 +559,10 @@ The spikes were sorted by the valley-seeking method with Offline Sorter software
 
 To calculate the latency of response of PVT neurons to laser and shock activation, we extracted the data in small bins of 2 ms. The onset of the response was calculated as the first of at least five consecutive bins higher than 20% above the baseline.
 
-## Quantification of the fiber intensity
+### Quantification of the fiber intensity
 
 For quantification of fluorescence of PVTPBN efferents, the downstream targets of PVTPBN neurons were imaged using the identical character, and the mean fluorescence value in each ROI (400 × 400 pixels) of each brain region was analyzed using Fiji. The fiber intensity was calculated as the fluorescence value of each brain region divided by that of the NAc. All data came from at least three different mice and are presented as mean ± SEM.
 
-## Analysis
+### Analysis
 
 Statistical detection methods include unpaired Student’s t-test, paired Student’s t-test, one-way ANOVA with Bonferroni’s correction for multiple comparisons, two-way ANOVA with Bonferroni’s correction for multiple comparisons. A value of p<0.05 is considered statistically significant. All data are represented as mean ± SEM.

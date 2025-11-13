@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.37567.001 Sox genes encode a set of highly conserved transcription factors that regulate many developmental processes. In insects, the SoxB gene Dichaete is the only Sox gene known to be involved in segmentation. To determine if similar mechanisms are used in other arthropods, we investigated the role of Sox genes during segmentation in the spider Parasteatoda tepidariorum . While Dichaete does not appear to be involved in spider segmentation, we found that the closely related Sox21b-1 gene acts as a gap gene during formation of anterior segments and is also part of the segmentation clock for development of the segment addition zone and sequential addition of opisthosomal segments. Thus, we have found that two different mechanisms of segmentation in a non-mandibulate arthropod are regulated by a SoxB gene. Our work provides new insights into the function of an important and conserved gene family, and the evolution of the regulation of segmentation in arthropods.
+Sox genes encode a set of highly conserved transcription factors that regulate many developmental processes. In insects, the SoxB gene Dichaete is the only Sox gene known to be involved in segmentation. To determine if similar mechanisms are used in other arthropods, we investigated the role of Sox genes during segmentation in the spider Parasteatoda tepidariorum. While Dichaete does not appear to be involved in spider segmentation, we found that the closely related Sox21b-1 gene acts as a gap gene during formation of anterior segments and is also part of the segmentation clock for development of the segment addition zone and sequential addition of opisthosomal segments. Thus, we have found that two different mechanisms of segmentation in a non-mandibulate arthropod are regulated by a SoxB gene. Our work provides new insights into the function of an important and conserved gene family, and the evolution of the regulation of segmentation in arthropods.
 
 ## Introduction
 
@@ -31,17 +31,45 @@ We recently described the characterisation of 14 Sox genes in the genome of the 
 
 ## Results
 
-## Sox21b-1 is maternally deposited and is subsequently expressed in the germ disc and germ band of spider embryos
+### Sox21b-1 is maternally deposited and is subsequently expressed in the germ disc and germ band of spider embryos
 
 We previously identified and assayed the expression of the complement of Sox genes in the genome of the spider P. tepidariorum (Paese et al., 2017) (and see Figure 1). Our phylogenetic analysis indicates that P. tepidariorum Sox21b-1 and its paralog Sox21b-2 are members of the Sox group B, closely related to the Drosophila Dichaete and Sox21b genes (Figure 1—figure supplement 1). In insects (McKimmie et al., 2005; Wilson and Dearden, 2008), Dichaete, Sox21a and Sox21b are clustered in the genome, however, both Sox21b paralogs are dispersed in the spider genome (Paese et al., 2017). This suggests that Sox21b-1 and Sox21b-2 possibly arose from the WGD event in the ancestor of arachnopulmonates (Schwager et al., 2017) rather than by a more recent tandem duplication (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig1-v2.jpg)
+
+**Figure 1.:** (A) Dorsal (left) and lateral (right) views of pre-vitellogenic oocytes showing Sox21b-1 mRNA in the Balbiani’s body (red dashed circle and white arrows). The sperm implantation groove is indicated by a black dashed circle and grey arrow. (B) Overstained early stage 4 embryo evidencing the lack of expression of Sox21b-1 at this stage. (C) At early stage 5, the expression of Sox21b-1 appears in a salt and pepper pattern in the germ disc. (D) Expression in the cumulus becomes stronger at late stage 5, with less expression at the periphery of the germ disc (dashed red circle). (E) At stage 6 Sox21b-1 is expressed in a broad stripe in the anterior (between the red dashed lines). (F) At stage 7 there is expression in the region of the presumptive leg-bearing segments and in the SAZ (both indicated by red dashed lines). (G) At late stage 7 Sox21b-1 is still expressed in the SAZ (red dashed line) and the presumptive leg-bearing segments (indicated by a white arrow and wide black bracket), but nascent expression is observed at the anterior of the germ band (indicated by a white arrow and narrow black bracket). (H) At stage 8.2, when the limb buds are visible the expression of Sox21b-1 becomes restricted to the ventral nerve cord (anterior white arrow) and can be observed in the SAZ (posterior arrows). (I) At stage 10.1, Sox21b-1 expression is restricted to the ventral nerve cord and the head lobes. Ch: Chelicerae; Hl: Head lobes; L1 to L4: Prosomal leg- bearing segments 1 to 4; O1 to O6: Opisthosomal segments 1 to 6; SAZ: Segment Addition Zone. Ventral views are shown with anterior to the left, except as described for oocytes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mid-point rooted phylogenetic tree made with RAxML algorithm showing the relationship between Anopheles gambiae (Ag), Mus musculus (Mm), D. melanogaster (Dm), P. tepidariorum (Pt) and S. mimosarum (Sm) Sox proteins based on HMG domain sequences. Bootstrap values over 70 shown in red and the scale bar represents the expected rate of substitution per site.
 
 In light of its interesting expression pattern, we elected to further analyse Sox21b-1. Pre-vitellogenic P. tepidariorum oocytes contain a Balbiani’s body (Jedrzejowska and Kubrakiewicz, 2007), where maternally deposited factors are enclosed, and we found that Sox21b-1 is abundant in this region, indicating that it is maternally contributed (Figure 1A). However, after fertilization we did not detect Sox21b-1 mRNA until early stage 5, when weak expression is detected throughout the germ disc, with stronger expression in more central cells (Figure 1B–C). At late stage 5, expression becomes more restricted to the centre of the germ disc (Figure 1D). During stages 5 and 6, the cumulus migrates to the rim of the germ disc, opening the dorsal field and giving rise to an axially symmetric germ band (Figure 1E) (see Mittmann and Wolff, 2012). In early stage 6 embryos, Sox21b-1 is observed in the middle of the presumptive prosoma in a broad stripe (Figure 1E), which develops further during stage 7 in the region where the leg-bearing segments will form (Figure 1F). This expression pattern resembles the previously described expression of the gap gene hb (Schwager et al., 2009).
 
 During these and subsequent stages, dynamic expression of Sox21b-1 is observed in the SAZ and the most anterior region of the germ band that will give rise to the head segments (Figure 1H–I). Later in development, the expression of Sox21b-1 resembles that of SoxNeuro (SoxN), another Group B Sox gene (Paese et al., 2017). This expression is similar to that of both SoxN and Dichaete in the D. melanogaster neuroectoderm and segregating neuroblasts, however in spiders the neuroectoderm does not produce stem cell like neuroblasts, but instead clusters of delaminating cells that adopt the neural fate (Paese et al., 2017; Stollewerk and Chipman, 2006; McKimmie et al., 2005) (Figure 1H–I). Expression of the related group B Sox genes, Dichaete and Sox21b-2 are not detected in P. tepidariorum during embryonic development (Paese et al., 2017). The expression of Sox21b-1 in the embryo suggests that it is involved in both anterior and posterior segmentation in this spider, and then later during nervous system development.
 
-## Sox21b-1 regulates prosomal and opisthosomal segmentation
+### Sox21b-1 regulates prosomal and opisthosomal segmentation
 
 To assay the function of Sox21b-1 during embryogenesis we knocked down the expression of the gene using a parental RNAi approach (Akiyama-Oda and Oda, 2006). We observed three phenotypic classes, which were consistent between both non-overlapping Sox21b-1 fragments we used for RNAi (Figure 2, Figure 2—figure supplement 1, Supplementaryfile 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig2-v2.jpg)
+
+**Figure 2.:** Whole mount (A) and flat mount (B) control embryos at stage 9 stained with DAPI. Stage 9, Class I (C), Class II (D) and Class III (E) phenotypes from Sox21b-1 knockdown. In the control embryos (A and B), the head, cheliceral, pedipalpal, prosomal walking limbs, opisthosomal segments and a posterior SAZ are all clearly visible as indicated. (C) Class I phenotype embryos show a morphologically normal head, and pairs of chelicerae, pedipalps and first walking limbs, but a disorganised cluster of cells in the posterior where L2-L4, opisthosomal segments and the SAZ should be. (D) Class II phenotype embryos consist of fewer cells, but still form a head, chelicerae, pedipalps and a structure resembling the SAZ in the posterior. (E) Class III embryos exhibit the most severe phenotype, where, after the germ disc stage, the embryo fails to form an organised germ band. Ch: Cheliceral segment; L1-L4: Prosomal segments 1 to 4; O1-O6: opisthosomal segments 1 to 6; Pp: Pedipalpal segment; SAZ: Segment Addition Zone. Anterior is to the top, scale bars: 150 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Two non-overlapping fragments were designed for the Sox21b-1 coding sequence. Fragment 1 contains the HMG conserved domain (549 bp) and fragment 2 has no conserved domains (550 bp). (B) Frequencies for each fragment, cocoon number and phenotype class. Seven spiders were injected for each Pt-Sox21b-1 fragment and two spiders for the GFP dsRNA controls. For the phenotypical class frequencies, 30 embryos per spider per cocoon were pooled, DAPI stained and analysed (total n = 210 for each).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Ventral view showing Pt-Dfd-A expression in the limb buds of L1 to L4 segments in the control embryos (white arrows). (B) Expression of Pt-Dfd-A is also observed in L1 in Sox21b-1 pRNAi embryos (n = 9) (white arrow in B). (C) Pt-lab is expressed in the pedipalpal segment (white arrow in D) and faintly in L1 segment in control embryos. In Sox21b-1 pRNAi embryos, Pt-lab expression can still be observed in the pedipalpal and L1 segments (n = 10) (white arrows in D). (E) The mesodermal marker Pt-twi is expressed in the anterior-most medial region of the head (white arrow), limb buds of L1 to L4, and with a stripped pattern in the O1 to O4 segments. (F) In Sox21b-1 knockdown embryos, only the head expression is maintained (n = 14) (white arrow in F). (G–J) show orthogonal projections of the cumulus (stage 5) and the head (stage 9) at 40x magnification of whole mount control embryos (left panels) and Sox21b-1 knockdown embryos (right panels), respectively. In control embryos, the formation of subectodermal layers is visible, but fewer internalisied cells (white arrows in I and J) are observed in the knockdown embryos. Note that nuclei also appeared to be larger in Sox21b-1 knockdown embryos (white arrow in H). DAPI stained nuclei are shown in cyan and the membrane marker alpha-Tubulin in red. Anterior is to the left in all panels.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Germ discs of (A) GFP dsRNA control embryos, showing the cumulus formation (red dotted lines), cumulus migration (red dotted arrow) and dorsal field opening (red dotted line and arrows). (B) Class I Sox21b-1 knockdown embryos showing cumulus formation, the partial migration of mesenchymal cells and limited dorsal field opening, which is also seen but more severely disrupted in Class II embryos (C), and absent in class III (D). .
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Ventral view of stage 5 control embryos stained for Cleaved-Caspase3 (A) and PHH3 (E). Cell death is not detectable in control embryos, but a high level of proliferation can be seen. In Sox21b-1 knockdown embryos, clusters of cells undergoing cell death can be found (B), as well as a decrease in proliferation in the knockdown embryos compared to controls (n = 15 for each staining) (F). Embryos at stage 9 stained for Cleaved-Caspase 3 (C) and PHH3 (G) show that only a small amount of cell death occurs in the SAZ, and that there is proliferation detectable throughout the entire embryo. Cell death is visible in the head extraembryonic layer in Sox21b-1 pRNAi embryos (D), and less proliferation is detected in stage 9 knockdown embryos (n = 15 for each staining). Anterior is to the top in panels C, D, G and H. Magnifications are 100X and 400x, respectively.
 
 Class I embryos developed a presumptive head region (Figure 2A–C), as well as normal cheliceral, pedipalpal and first leg-bearing (L1) segments (Figure 2C). The identity of these segments was confirmed by expression of labial (lab) in the pedipalps and L1, and Deformed-A (Dfd-A) in L1 (Figure 2—figure supplement 2A–D). However, the other three leg-bearing segments, L2 - L4, as well as all of the opisthosomal segments were missing in Class I embryos. These embryos exhibited a truncated germ band, terminating in disorganised tissue in the region of the SAZ (Figure 2C). In the case of Class II phenotypes, embryos only differentiated the head region and the cheliceral and pedipalpal segments (Figure 2D, Figure 2—figure supplement 2A–B): all leg-bearing segments of the prosoma and opisthosomal segments produced from the SAZ were missing (Figure 2D). In Class III embryos, the germ band did not form properly from the germ disc (Figure 2E) and we therefore looked earlier in development to understand how this severe phenotype arose. We observed that the formation of the primary thickening occurs normally at stage 4 (Akiyama-Oda and Oda, 2003; Pechmann, 2016; Pechmann et al., 2017), but subsequently the cumulus, the group of mesenchymal cells that arise as the primary thickening at the centre of the germ disc, fails to migrate properly to the rim of the germ disc during stage 5 (Figure 2—figure supplement 3). Since migration of the cumulus is required for the transition from germ disc to germ band, this observation at least in part explains the subsequent Class III phenotype. Note that in this phenotypic class, the cells migrate towards the centre of the germ disc, creating a thick aggregation of blastomeres, whereas in embryos that we classified as ‘dead’, the cells are scattered and stop migrating after the germ disc stage (Figure 2—figure supplement 3B–C).
 
@@ -49,19 +77,19 @@ We next examined the effect of Sox21b-1 depletion on cell death and proliferatio
 
 Expression of PHH3 at stages 5 and 9 indicated that Sox21b-1 knockdown embryos show decreased cell proliferation compared to controls (n = 10 for each) (Figure 2—figure supplement 4E–H). Interestingly, the cells were also clearly larger in Sox21b-1 knockdown embryos compared to controls, which may reflect perturbed cell proliferation (Figure 2—figure supplement 4E–H). Thus, our functional analysis shows that Sox21b-1 is required for cell maintenance in several areas of the germ disc and is thus a key player in the transition from radial to axial symmetry. Moreover, Sox21b-1 is involved in two different segmentation mechanisms in spiders: it has a gap gene like function in the prosoma, as well as a requirement for the formation of the SAZ and subsequent production of opisthosomal segments.
 
-## Effects of Sox21b-1 knockdown on the germ disc and mesoderm
+### Effects of Sox21b-1 knockdown on the germ disc and mesoderm
 
 In P. tepidariorum, decapentaplegic (dpp) and Ets4 are required for cumulus formation (Pechmann et al., 2017; Akiyama-Oda and Oda, 2006). To investigate if Sox21b-1 is involved in the formation of this cell cluster, we assayed the expression of dpp and Ets4 in Sox21b-1 RNAi knockdown embryos. However, both genes were expressed normally and cumulus formation was unaffected (Figure 3E,F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig3-v2.jpg)
 
-**Figure 3.:** Sox21b-1 knockdowns at the germ disc stage.Pt-dpp (A) and Pt-Ets4 (B) are expressed in the forming cumulus (CM) in the centre of the germ disc at stage 4 (grey arrow and dotted circle). This expression is unaffected by knockdown of Sox21b-1 (E and F) (n = 30 for each gene). (C) Pt-fkh is expressed at the rim and centre of the germ disc at late stage 5 (grey arrow and dotted circle in C), but expression is lost in Sox21b-1 knockdown embryos (n = 30) (G). Pt-hh expression at the rim of the germ disc (D) is normal in Sox21b-1 knockdown embryos (H) (grey arrows).
+**Figure 3.:** Pt-dpp (A) and Pt-Ets4 (B) are expressed in the forming cumulus (CM) in the centre of the germ disc at stage 4 (grey arrow and dotted circle). This expression is unaffected by knockdown of Sox21b-1 (E and F) (n = 30 for each gene). (C) Pt-fkh is expressed at the rim and centre of the germ disc at late stage 5 (grey arrow and dotted circle in C), but expression is lost in Sox21b-1 knockdown embryos (n = 30) (G). Pt-hh expression at the rim of the germ disc (D) is normal in Sox21b-1 knockdown embryos (H) (grey arrows).
 
 The rim of the spider germ disc develops into the head structures and is regulated in part by hh, while the mesodermal and endodermal layers of the head are specified by the mesendodermal gene forkhead (fkh) (Kanayama et al., 2011; Akiyama-Oda and Oda, 2010). To investigate if anterior expression of Sox21b-1 (Figure 1) is involved in the formation of the head rudiment and differentiation of the mesodermal and endodermal layers in particular, we assayed the expression of hh and fkh in class I and II Sox21b-1 knockdown embryos. hh is expressed at the rim of the germ disc in the ectoderm (Figure 3D) (Kanayama et al., 2011) and remains unaffected by Sox21b-1 knockdown (Figure 3H). fkh is also expressed in cells around the rim, as well as in the centre of the germ disc in mesendodermal cells (Figure 3C). In Sox21b-1 knockdown embryos both of these fkh expression domains are lost (Figure 3G), and it therefore appears that Sox21b-1 is required for specification of mesendodermal cells in the germ disc of spider embryos. Indeed, in the germ disc at stage 5, when fkh expression commences, we observed invaginating cells forming a second layer (Figure 2—figure supplement 2G). However, in Sox21b-1 knockdown embryos we observed a lower number of invaginating cells, which exhibit larger nuclei compared to controls (Figure 2—figure supplement 2H).
 
 In both spiders and flies, the twist (twi) gene is involved in mesoderm specification (Yamazaki et al., 2005) and we therefore examined the expression of this gene after Sox21b-1 knockdown to further evaluate if the loss of fkh affects the formation of the internal layers. In the wild type, twi is expressed in the visceral mesoderm of the limb buds from L1 to L4, in the opisthosomal segments O1 to O4 and in an anterior mesodermal patch in the central part of the developing head (Yamazaki et al., 2005) (Figure 2—figure supplement 2E). While the head expression persists in Sox21b-1 class I embryos, expression in all the limb and opisthosomal segments is lower or absent (Figure 2—figure supplement 2F). In orthogonal projections the anterior-most region of the embryo, three layers of cells can be identified in control embryos (Figure 2—figure supplement 2I). However, in Sox21b-1 knockdown embryos the formation of these layers is perturbed (Figure 2—figure supplement 2J). These data suggest that the ectodermal segmentation in the prosomal region occurs even when there is a reduction in the internal layers of the embryo.
 
-## Effects of Sox21b-1 knockdown on segmentation
+### Effects of Sox21b-1 knockdown on segmentation
 
 In P. tepidariorum, formation of the SAZ and production of posterior segments requires the Wnt8 and Delta-Notch signalling pathways (McGregor et al., 2008b; Schönauer et al., 2016). Interactions between these pathways regulate hairy (h) and, via cad, the expression of pair-rule gene orthologues including eve (McGregor et al., 2008b; Schönauer et al., 2016). To better understand the loss of segments we observe in Sox21b-1 knockdown embryos we analysed the expression of Dl, Wnt8, h and cad in these embryos compared to controls.
 
@@ -69,13 +97,13 @@ Dl is expressed at stage 7 in the forming SAZ, in the region of the L4 primordia
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig4-v2.jpg)
 
-**Figure 4.:** Sox21b-1 pRNAi embryos.(A) Pt-Dl expression at late stage 6/early stage 7 is dynamic in the SAZ and is also observed in the presumptive head region (grey arrow) and prosoma of the embryo (red dotted lines and white arrows). (B) At stage 9, Pt-Dl expression is seen in the SAZ (white arrow) but is restricted to the clusters of proneural differentiation in the anterior region of the embryo (anterior indicated by a grey arrow). (C) In Sox21b-1 knockdown embryos, Pt-Dl expression is not detectable in late stage 5/early stage 6 embryos (anterior indicated by a grey arrow) but can still be observed in the anterior ventral neuroectoderm at stage 9 (D) up to the pedipalpal segment (n = 17 and n = 14 for stage 5/6 and 9 respectively). Pt-Wnt8 expression is observed in the centre and at the rim of the germ disc in stage 5 control embryos (black dotted circle around the centre, grey arrow indicating the rim) but these expression domains are lost in Sox21b-1 knockdown embryos (n = 11) (E and F). Control embryos at stage 9 show the expression of Pt-Wnt8 in the medial region of the head (grey arrow in G), and in distal parts of each segment up to the SAZ (white arrow in G). In Sox21b-1 knockdown embryos at the same stage, the brain (grey arrow), cheliceral and pedipalpal expression is still present, but the posterior expression is lost (H) (n = 17). Pt-cad is expressed in the SAZ at late stage 5/early stage 6 (I), which persists to stage 9 in control embryos (J). However, Pt-cad expression is lost upon Sox21b-1 knockdown in embryos of both stages (n = 20 for each stage) (K and L). Pt-h expression at stage 5 in control embryos is seen at the rim and in the centre of the germ disc (black dotted circle in M), which is lost in Sox21b-1 knockdown embryos (N). At stage 9, Pt-h expression resembles Pt-Dl, both in the control (anterior is indicated by a grey arrow; the SAZ is indicated by a white arrow) and Sox21b-1 knockdown embryos (O and P) (n = 15 for both stages). Pt-en expression is present in the posterior of each segment (black lines in Q), and in cheliceral, pedipalpal and L1 segments in Sox21b-1 knockdown embryos at stage 9 (S) (n = 10). Pt-hh expression in control embryos at stage 9 is seen in the posterior of each segment, in the SAZ and also in a splitting wave between the cheliceral and pedipalpal segments (indicated by the white arrows in R). When Sox21b-1 is knocked-down, Pt-hh embryos show expression in the middle-posterior region of the cheliceral and pedipalpal segments (T) (n = 8). Ch: Chelicerae; Hl: Head Lobes; L1 to L4: Prosomal leg-bearing segments; O1 to O5: Opisthosomal segments; SAZ: Segment Addition Zone. Anterior is to the left in stage 9 embryos.
+**Figure 4.:** (A) Pt-Dl expression at late stage 6/early stage 7 is dynamic in the SAZ and is also observed in the presumptive head region (grey arrow) and prosoma of the embryo (red dotted lines and white arrows). (B) At stage 9, Pt-Dl expression is seen in the SAZ (white arrow) but is restricted to the clusters of proneural differentiation in the anterior region of the embryo (anterior indicated by a grey arrow). (C) In Sox21b-1 knockdown embryos, Pt-Dl expression is not detectable in late stage 5/early stage 6 embryos (anterior indicated by a grey arrow) but can still be observed in the anterior ventral neuroectoderm at stage 9 (D) up to the pedipalpal segment (n = 17 and n = 14 for stage 5/6 and 9 respectively). Pt-Wnt8 expression is observed in the centre and at the rim of the germ disc in stage 5 control embryos (black dotted circle around the centre, grey arrow indicating the rim) but these expression domains are lost in Sox21b-1 knockdown embryos (n = 11) (E and F). Control embryos at stage 9 show the expression of Pt-Wnt8 in the medial region of the head (grey arrow in G), and in distal parts of each segment up to the SAZ (white arrow in G). In Sox21b-1 knockdown embryos at the same stage, the brain (grey arrow), cheliceral and pedipalpal expression is still present, but the posterior expression is lost (H) (n = 17). Pt-cad is expressed in the SAZ at late stage 5/early stage 6 (I), which persists to stage 9 in control embryos (J). However, Pt-cad expression is lost upon Sox21b-1 knockdown in embryos of both stages (n = 20 for each stage) (K and L). Pt-h expression at stage 5 in control embryos is seen at the rim and in the centre of the germ disc (black dotted circle in M), which is lost in Sox21b-1 knockdown embryos (N). At stage 9, Pt-h expression resembles Pt-Dl, both in the control (anterior is indicated by a grey arrow; the SAZ is indicated by a white arrow) and Sox21b-1 knockdown embryos (O and P) (n = 15 for both stages). Pt-en expression is present in the posterior of each segment (black lines in Q), and in cheliceral, pedipalpal and L1 segments in Sox21b-1 knockdown embryos at stage 9 (S) (n = 10). Pt-hh expression in control embryos at stage 9 is seen in the posterior of each segment, in the SAZ and also in a splitting wave between the cheliceral and pedipalpal segments (indicated by the white arrows in R). When Sox21b-1 is knocked-down, Pt-hh embryos show expression in the middle-posterior region of the cheliceral and pedipalpal segments (T) (n = 8). Ch: Chelicerae; Hl: Head Lobes; L1 to L4: Prosomal leg-bearing segments; O1 to O5: Opisthosomal segments; SAZ: Segment Addition Zone. Anterior is to the left in stage 9 embryos.
 
 Wnt8 is initially expressed at stage 5 in the centre and at the rim of the germ disc (Figure 4E). At stage 9, striped expression of Wnt8 is seen from the head to the posterior segments and in the posterior cells of the SAZ (Figure 4G). Knockdown of Sox21b-1 results in the loss of Wnt8 expression in late stage 5 embryos (Figure 4F). At stage 9, Wnt8 expression is observed in the cheliceral, pedipalpal and first walking limb segments of Sox21b-1 knockdown embryos, but no expression is detected in the remaining posterior cells (Figure 4H). Consistent with the loss of Dl and Wnt8, cad expression is also lost in stage 5 and stage 9 Sox21b-1 knockdown embryos (Figure 4I–L). These observations indicate that Sox21b-1 acts upstream of Wnt8 and Delta-Notch signalling to regulate the formation of the SAZ and the subsequent production of posterior segments. In support of this regulatory relationship, we find that Sox21b-1 expression is still detected in the posterior regions of the truncated embryos produced by RNAi knockdown of either Dl or Wnt8 (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37567/elife-37567-fig5-v2.jpg)
 
-**Figure 5.:** Sox21b-1 in Dl and Wnt8 pRNAi embryos.Ventral view of stage 7 and 9 knockdown embryos for Pt-Dl (A and B) and Pt-Wnt8 (C and D). In knockdown embryos for both Pt-Dl and Pt-Wnt8, Sox21b-1 is still expressed at stage 7 (A and C) in the remaining SAZ cells, and in the forming segments of the presumptive prosoma of the embryo (white arrows). In stage 9 Pt-Dl knockdown embryos, Sox21b-1 remains highly expressed in the ventral nerve cord (B). Pt-Dl knockdown embryos lack the posterior L4 segment (white arrow), but brain formation appears normal (grey arrow) (B). Pt-Wnt8 embryos show a fusion of the L4 limb buds (white arrow), and Sox21b-1 is still expressed in the remaining SAZ cells (D). Anterior is to the left in all panels.
+**Figure 5.:** Ventral view of stage 7 and 9 knockdown embryos for Pt-Dl (A and B) and Pt-Wnt8 (C and D). In knockdown embryos for both Pt-Dl and Pt-Wnt8, Sox21b-1 is still expressed at stage 7 (A and C) in the remaining SAZ cells, and in the forming segments of the presumptive prosoma of the embryo (white arrows). In stage 9 Pt-Dl knockdown embryos, Sox21b-1 remains highly expressed in the ventral nerve cord (B). Pt-Dl knockdown embryos lack the posterior L4 segment (white arrow), but brain formation appears normal (grey arrow) (B). Pt-Wnt8 embryos show a fusion of the L4 limb buds (white arrow), and Sox21b-1 is still expressed in the remaining SAZ cells (D). Anterior is to the left in all panels.
 
 The spider orthologue of h is expressed in the presumptive L2-L4 segments and dynamically in the SAZ (McGregor et al., 2008b) (Figure 4M,O). In late stage 5 Sox21b-1 knockdown embryos, the expression of h is lost throughout the entire germ disc (Figure 4N). In addition, in Class I phenotype embryos at stage 9, the expression of h is completely absent in the tissue posterior to the pedipalpal segment (Figure 4P). Therefore, the loss of h expression is consistent with the loss of leg-bearing segments in the anterior gap-like phenotype that results from knockdown of Sox21b-1 as well as loss of segments produced by the SAZ.
 
@@ -85,7 +113,7 @@ Taken together, our analysis of P. tepidariorum embryos where Sox21b-1 is deplet
 
 ## Discussion
 
-## A SoxB gene is required for two different mechanisms of spider segmentation
+### A SoxB gene is required for two different mechanisms of spider segmentation
 
 The Sox gene family encodes transcription factors that regulate many important processes underlying the embryonic development of metazoans (Overton et al., 2002; Wegner, 1999; Sinclair et al., 1990; Lefebvre, 2010). One such gene, Dichaete, is expressed in a gap gene pattern and is involved in regulating the canonical segmentation cascade in D. melanogaster (Nambu and Nambu, 1996; Russell et al., 1996). Recently, the analysis of the expression of Dichaete in the flour beetle T. castaneum strongly suggests a role in short germ segmentation (Clark and Peel, 2018), further supported by knockdown of the Dichaete orthologue in Bombyx mori, which resulted in the loss of posterior segmentation (Nakao, 2018).
 
@@ -103,11 +131,11 @@ Our work on Sox21b-1 provides an important new insight into the gene regulatory 
 
 Further work is needed to determine if Group B Sox genes, such as Dichaete and Sox21b-1, play a similar role in posterior segmentation in other arthropods. This could provide important new insights into the evolution of the regulation of segmentation in arthropods since a Wnt-Delta-Notch-Cad regulatory cassette was probably used ancestrally in arthropods to regulate posterior development (McGregor et al., 2009; Janssen et al., 2004; Brena and Akam, 2012; McGregor et al., 2008b; Schönauer et al., 2016; Pueyo et al., 2008). Interestingly, SoxB genes also cooperate with Wnt and Delta-Notch signalling in various aspects of vertebrate development including the patterning of neural progenitors and maintenance of the stem state in the neuroepithelium (Wegner, 1999; Holmberg et al., 2008; Kormish et al., 2010; Koch et al., 2017).
 
-## Sox21b-1 exhibits highly pleiotropic effects during early spider embryogenesis
+### Sox21b-1 exhibits highly pleiotropic effects during early spider embryogenesis
 
 Our study shows that Sox21b-1 is not only involved in segmentation but is also maternally supplied and regulates cell division in the early germ disc, as well as the transition from radial to axial symmetry during germ band formation. Further experiments with Sox21b-1 are required to fully elucidate the mechanisms by which it affects these early functions. Furthermore, while spider head development is less affected than trunk segmentation by knockdown of Sox21b-1, it is clear from our experiments that Sox21b-1 regulates cell fate in this region. Interestingly, Sox2 is involved with the neuro-mesodermal fate choice in mice and Dichaete has a role in embryonic brain development in D. melanogaster (Koch et al., 2017; Soriano and Russell, 1998): consequently, SoxB genes may play an ancestral role in the patterning of the head ectoderm and mesoderm in metazoans (Koch et al., 2017; Soriano and Russell, 1998).
 
-## The evolution of Sox21b-1
+### The evolution of Sox21b-1
 
 The evolution and diversification of Group B Sox genes in insects is not fully resolved due to difficulties in clearly assigning orthologues based on the highly conserved HMG domain sequence (Russell et al., 1996; Wegner, 1999; Zhong et al., 2011). However, despite these ambiguities it is clear that the Dichaete and Sox21b class genes in all arthropods examined to date are closely related and likely arose from a duplication in the common ancestor of this phylum (see Zhong et al., 2011 for discussion). Note that in all insects characterised to date Dichaete, Sox21a and Sox21b are clustered in the genome (McKimmie et al., 2005), however, while Dichaete and Sox21a are also clustered in P. tepidariorum, the Sox21b paralogs are dispersed in the genome of this spider (Paese et al., 2017). We believe it is highly significant that two very closely related SoxB genes are involved in segmentation in both the spider P. tepidariorum and in insects, pointing to an ancient role for this subfamily of Sox genes in invertebrates. Given the close similarity between the HMG domains of Sox21b and Dichaete, it is possible that in some lineages the Dichaete orthologue assumed the segmentation role, whereas in others it was Sox21b. In spiders, Wnt8 is involved in posterior development while in other arthropods this role is played by Wnt1/wg (McGregor et al., 2008b), and therefore the evolution of Sox21b-1 may have led to the co-option of different genes and subsequent developmental systems drift of the regulation of posterior development.
 
@@ -115,30 +143,236 @@ The spider contains an additional related SoxB gene, Sox21b-2, that possibly aro
 
 ## Materials and methods
 
-## Spider culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Parasteatoda  tepidariorum)</td>
+      <td>caudal</td>
+      <td>NA</td>
+      <td>AB096075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>deformed-a</td>
+      <td>NA</td>
+      <td>AB433904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>decapentaplegic</td>
+      <td>NA</td>
+      <td>AB096072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>delta</td>
+      <td>NA</td>
+      <td>AB287420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>engrailed</td>
+      <td>NA</td>
+      <td>AB125741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>ets4</td>
+      <td>NA</td>
+      <td>XP_015923392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>forkhead</td>
+      <td>NA</td>
+      <td>AB096073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>hairy</td>
+      <td>NA</td>
+      <td>AB125743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>hedgehog</td>
+      <td>NA</td>
+      <td>AB125742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>labial</td>
+      <td>NA</td>
+      <td>AB433903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>sox21b-1</td>
+      <td>NA</td>
+      <td>XP_015916301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>twist</td>
+      <td>NA</td>
+      <td>AB167807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (P. tepidariorum)</td>
+      <td>Wnt8</td>
+      <td>NA</td>
+      <td>ACH88002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse IgG Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>A-31570</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>A-21244</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-α- Tubulin</td>
+      <td>Sigma</td>
+      <td>DM1a</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-phospho -Histone H3 (Ser10)</td>
+      <td>Merck Millipore</td>
+      <td>06–570</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit α cleaved caspase 3</td>
+      <td>Cell Signaling</td>
+      <td>9661</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4′,6-Diamidino-2 -phenylindole dihydrochloride﻿﻿</td>
+      <td>Sigma -Aldrich</td>
+      <td>D8417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halocarbon Oil 700</td>
+      <td>Sigma -Aldrich</td>
+      <td>H8898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-lysine</td>
+      <td>Sigma -Aldrich</td>
+      <td>P9155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TWEEN 20</td>
+      <td>Sigma -Aldrich</td>
+      <td>P9416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOPO-TA Cloning Kit</td>
+      <td>Invitrogen</td>
+      <td>K457502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Corel Graphics Suite</td>
+      <td></td>
+      <td>RRID:SCR_013674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for genomics data analysis - PROTGAMMALG</td>
+      <td></td>
+      <td></td>
+      <td>https://github.com/stamatak/standard-RAxML/blob/master/usefulScripts/ProteinModelSelection.pl</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+      <td>http://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Helicon Focus</td>
+      <td></td>
+      <td>RRID:SCR_014462</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Spider culture
 
 P. tepidariorum were cultured at 25°C at Oxford Brookes University. The spiders were fed with D. melanogaster with vestigial wings and subsequently small crickets (Gryllus bimaculatus). Cocoons from mated females were removed and a small number of embryos were immersed in halocarbon oil for staging (Mittmann and Wolff, 2012).
 
-## Phylogenetic analysis of P. tepidariorum Sox genes
+### Phylogenetic analysis of P. tepidariorum Sox genes
 
 To identify the phylogenetic relationship of P. tepidariorum Sox genes the HMG domains of Anopheles gambiae, Mus musculus, D. melanogaster, P. tepidariorum and S. mimosarum Sox genes were aligned with ClustalW (Figure 1—source data 1) (Paese et al., 2017; Larkin et al., 2007). Phylogenetic analysis was performed in RAxML, with support levels estimated implementing the rapid bootstrap algorithm (1000 replicates) (Stamatakis et al., 2008), under the PROTGAMMALG model of amino acid substitution, which was identified as best fitting model using the ProteinModelSelection.pl Perl script from the Exelixis Lab (https://github.com/stamatak/standard-RAxML/blob/master/usefulScripts/ProteinModelSelection.pl).
 
-## Fixation and gene expression analysis
+### Fixation and gene expression analysis
 
 Embryos from pRNAi injected females were immersed under halocarbon oil to assess their stage. In the case of stage 9 and 10 embryos that showed class II and III phenotypes, it was difficult to assess the stage by light microscopy, consequently these embryos were also staged according to their age and the presence of walking limbs as well as the stage of sibling embryos from the same cocoons that did not show any phenotype. Embryos with phenotypes showing a failure to develop after the L1 limb were considered dead after that stage. For the difference in development seen in embryos from the same cocoon, we were careful to select embryos at the same stage in both control and RNAi treated embryos for subsequent gene expression analysis although the development of RNAi embryos was occasionally slower so they appeared slightly younger. At least 10 embryos from each different phenotypical class were used for every in situ hybridization experiment (Supplementary file 2) and in situs were carried out on embryos from different cocoons and different mothers. Embryos ranging from the 1 cell stage to stage 13 were dechorionated and fixed as described previously (Akiyama-Oda and Oda, 2016), with a longer fixation time of 1 hr to facilitate yolk removal for flat-mounting. For immunohistochemistry, methanol steps were omitted. Ovaries from adult females were dissected in 1x PBS and fixed in 4% formaldehyde for 30 min. Probe synthesis and RNA in situ hybridisation were carried out as described previously with minor modifications (Akiyama-Oda and Oda, 2003), omitting the Proteinase K treatment and post-fixation steps. Poly-L-lysine (Sigma-Aldrich) coated coverslips were used for flat-mounting embryos. Nuclei were stained by incubating embryos in 1 μg/ml 4–6-diamidino-2-phenylindol (DAPI) in PBS with 0.1% Tween-20 for 15 min.
 
-## Imaging, live imaging and image analysis
+### Imaging, live imaging and image analysis
 
 For imaging of flat-mounted embryos after in situ hybridisation, an AxioZoom V16 stereomicroscope (Zeiss) equipped with an Axiocam 506-Mono and a colour digital camera were used. Immunostained embryos were imaged with Zeiss LSM 800 or 880 with Airyscan confocal microscopes. For live imaging, embryos were aligned on heptane glue coated coverslips and submersed in a thin layer of halocarbon oil. Bright-field live imaging was performed using an AxioZoom V16 stereomicroscope, while fluorescence live imaging was performed with confocal microscopes. Image stacks were processed in Fiji (Schindelin et al., 2012) and Helicon Focus (HeliconSoft). Image brightness and intensity was adjusted in Corel PhotoPaint X5 (CorelDraw) and Fiji.
 
-## Gene isolation from cDNA
+### Gene isolation from cDNA
 
 Fragment of genes were amplified using PCR and cloned into pCR4-TOPO (Invitrogen, Life Technologies). Oligonucleotide sequences are listed in Supplementary file 3.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunostaining was carried out as described previously (Schwager et al., 2015) with minor modifications: antibodies were not pre-absorbed prior to incubation and the concentration of Triton was increased to 0.1%. The following primary antibodies were used: mouse anti-α-Tubulin DM1a (Sigma) (1:50), rabbit α cleaved caspase 3 (Cell Signaling - 9661) (1:200) and rabbit Anti-phospho-Histone H3 (Ser10) (Merck Millipore - 06–570). For detection the following secondary antibodies were used: donkey anti-mouse IgG Alexa Fluor 555 (Invitrogen) and goat anti-rabbit Alexa Fluor 647 (Invitrogen). The counterstaining was carried out by incubation in 1 μg/ml 4–6-diamidino-2-phenylindol (DAPI) in PBS + Triton 0,1% for 20 min.
 
-## dsRNA synthesis and parental RNA interference
+### dsRNA synthesis and parental RNA interference
 
 Double stranded RNA (dsRNA) for parental RNA interference was synthesized according to (Schönauer et al., 2016), dissolved in deionized water and injected following the standard protocol (Akiyama-Oda and Oda, 2006). Two non-overlapping fragments of P. tepidariorum Sox21b-1 were isolated from the 1134 bp coding sequence of the gene: fragment 1 spanning 549 bp and fragment 2 covering 550 bp. Double stranded RNA for P. tepidariorum Dl (853 bp), Wnt8 (714 bp) and the coding sequence of GFP (720 bp) as used previously (Akiyama-Oda and Oda, 2006), were transcribed using the same method. Synthesis of double stranded RNA was performed using the MegaScript T7 transcription kit (Invitrogen). After purification the dsRNA transcripts were annealed in a water bath starting at 95°C and slowly cooled down to room temperature. dsRNA was injected at 2.0 μg/μl in to the opisthosoma of adult females every two days, with a total of five injections (n = 7 for each dsRNA; n = 2 for GFP controls). The injected spiders were mated after the second injection and embryos from injected spiders were fixed for gene expression and phenotypic analyses at three different time points: stage 4 (cumulus formation), stage 5 late (germ disc with migrating cumulus) and stage 9 (head and limbs bud formation).

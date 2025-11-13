@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.46321.001 Sensory maps in layer (L) 2/3 of rodent cortex lack precise functional column boundaries, and instead exhibit locally heterogeneous (salt-and-pepper) tuning superimposed on smooth global topography. Could this organization be a byproduct of impoverished experience in laboratory housing? We compared whisker map somatotopy in L2/3 and L4 excitatory cells of somatosensory (S1) cortex in normally housed vs. tactile-enriched mice, using GCaMP6s imaging. Normally housed mice had a dispersed, salt-and-pepper whisker map in L2/3, but L4 was more topographically precise. Enrichment (P21 to P46-71) sharpened whisker tuning and decreased, but did not abolish, local tuning heterogeneity. In L2/3, enrichment strengthened and sharpened whisker point representations, and created functional boundaries of tuning similarity and noise correlations at column edges. Thus, enrichment drives emergence of functional columnar topography in S1, and reduces local tuning heterogeneity. These changes predict better touch detection by neural populations within each column.
+Sensory maps in layer (L) 2/3 of rodent cortex lack precise functional column boundaries, and instead exhibit locally heterogeneous (salt-and-pepper) tuning superimposed on smooth global topography. Could this organization be a byproduct of impoverished experience in laboratory housing? We compared whisker map somatotopy in L2/3 and L4 excitatory cells of somatosensory (S1) cortex in normally housed vs. tactile-enriched mice, using GCaMP6s imaging. Normally housed mice had a dispersed, salt-and-pepper whisker map in L2/3, but L4 was more topographically precise. Enrichment (P21 to P46-71) sharpened whisker tuning and decreased, but did not abolish, local tuning heterogeneity. In L2/3, enrichment strengthened and sharpened whisker point representations, and created functional boundaries of tuning similarity and noise correlations at column edges. Thus, enrichment drives emergence of functional columnar topography in S1, and reduces local tuning heterogeneity. These changes predict better touch detection by neural populations within each column.
 
 ## Introduction
 
@@ -31,15 +31,109 @@ To test this question, we raised young adult mice from P21 for 25–50 days in e
 
 ## Results
 
-## Whisker receptive fields measured by calcium imaging
+### Whisker receptive fields measured by calcium imaging
 
 We expressed GCaMP6s in either L2/3 pyramidal (PYR) cells or L4 excitatory cells of S1 by injecting Cre-dependent GCaMP6s virus into either Drd3-Cre mice for L2/3 PYR cell-specific expression or Scnn1a-Tg3-Cre mice for L4 excitatory-specific expression (Gong et al., 2007; Madisen et al., 2010; Adesnik et al., 2012). After several weeks for expression, we imaged neural activity in D2 and adjacent whisker columns, using resonant-scanned 2-photon calcium imaging through a chronic cranial window. Imaging was performed under anesthesia, while applying calibrated whisker deflections. We randomly interleaved deflection of 9 whiskers in a 3 × 3 grid centered on D2, using brief 5-pulse deflection trains, plus no-stimulation ‘blank’ trials (50–70 repetitions of each stimulus) (Figure 1A–C). Whisker-evoked ΔF/F responses were measured from regions of interest (ROI) corresponding to GCaMP6-expressing somata. ROIs were considered significantly whisker-responsive if the distribution of whisker-evoked ΔF/F (quantified in a 1 s period after whisker deflection) was greater than blank trials (permutation test, α = 0.05 corrected for nine whiskers, see Materials and methods). Analyses were restricted to whisker-responsive ROIs. Receptive fields of 3 example L2/3 cells in one column are shown in Figure 1D. Imaged neurons were localized post-hoc relative to column boundaries by histological staining and alignment by surface blood vessels (Figure 1E). We confirmed that GCaMP6s-based receptive fields were similar to spiking-based receptive fields by simultaneous juxtacellular spike recording and GCaMP6s imaging in 10 whisker-responsive L2/3 neurons. Receptive fields from spike counts were highly similar to those from ΔF/F in 9/10 cells (Figure 1F).
 
-## Enrichment sharpens the point representation of a single whisker in L2/3
+![Figure 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental time line and example enrichment objects. (B) Schematic of whisker stimulus train and barrel map showing the 3 × 3 array of stimulated whiskers in gray. (C) Example ΔF/F traces from 3 ROIs imaged simultaneously in L2/3 of one column from a Drd3-Cre mouse. Gray bars are deflections of each indicated whisker. (D) Whisker receptive fields for the 3 cells in (C). Top, ΔF/F traces (shown as grayscale after baseline subtraction) for each trial for the nine whiskers (C1 to E3), aligned to stimulus onset (St). Bottom left, Mean ΔF/F trace for each whisker. Vertical bars are whisker deflections. The two strongest whiskers are shown in black and blue, respectively. Bottom right, Median ΔF/F averaged over 1 s response window. (E) Localization of one L2/3 imaging field (box) in a Drd3-Cre mouse relative to column boundaries in a cytochrome oxidase-stained section through L4 (top). Bottom, projection of barrel boundaries onto this imaging field. (F) Comparison of receptive fields measured by simultaneous GCaMP6s imaging and loose-seal cell-attached spike recording. Top: One example L2/3 neuron with its spiking receptive field shown as a peristimulus time histogram for each whisker (center), and its imaging receptive field from ΔF/F (right). Bottom: Average imaging and spiking receptive fields for each whisker-responsive neuron (n = 10). Shading is SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example enriched cage containing three mice, toys, nesting material and bedding (EN) and normally housed cage containing two mice, nesting material and bedding (NH). Overhead food and water dispensers, and cage lid, were present in all cages but are not shown here for clarity. (B) Examples of the three types of enrichment toys: burrow-type toys (left), medium-sized toys (middle), and small wooden toys (right). Scale bars are six inches. (B) Examples of toy combinations used in enrichment cages. Each EN cage contained one burrowing toy, one medium-sized toy, and several small wooden toys.
+
+### Enrichment sharpens the point representation of a single whisker in L2/3
 
 To study enrichment effects on the whisker map, littermates were separated into enriched (EN) and normally housed (NH) cohorts at weaning (P21). EN mice were housed with 4–5 tactile toys and 2–3 littermates, while NH mice were housed with a single littermate and no toys (Figure 1A, Figure 1—figure supplement 1). Toys consisted of large burrowing toys (tubes and huts that mice can enter), medium-sized toys with complex shape and texture, and small wooden toys that could be moved by the mice (see Materials and methods). Mice interacted with the toys, which were replaced every 2–4 days to maximize novelty. This enriched environment will enhance not only tactile experience, but also social interaction, activity level, and other factors, all of which could drive cortical plasticity. Imaging was performed after 25–50 days of EN or NH experience (Figure 1A). The total number of mice and imaging fields are given in Table 1.
 
+**Table 1.**
+ Mouse information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Age at imaging</th>
+      <th>sex</th>
+      <th>Days enriched</th>
+      <th>Days expressing GcaMP6s</th>
+      <th>N mice</th>
+      <th>N imaging fields</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drd3-Cre; NH</td>
+      <td>P56 ± 11</td>
+      <td>2F, 5M</td>
+      <td>n/a</td>
+      <td>17 ± 2</td>
+      <td>7</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Drd3-Cre; EN</td>
+      <td>P59 ± 12</td>
+      <td>2F, 5M</td>
+      <td>37 ± 13</td>
+      <td>20 ± 5</td>
+      <td>7</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Scnn1-Tg3-Cre; NH</td>
+      <td>P70 ± 16</td>
+      <td>2F, 3M</td>
+      <td>n/a</td>
+      <td>39 ± 12</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Scnn1-Tg3-Cre; EN</td>
+      <td>P58 ± 5</td>
+      <td>5F, 1M</td>
+      <td>35 ± 4</td>
+      <td>28 ± 5</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>all Drd3-Cre</td>
+      <td>P58 ± 11</td>
+      <td>4F, 10M</td>
+      <td>37 ± 13</td>
+      <td>18 ± 4</td>
+      <td>14</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>all Scnn1-Tg3-Cre</td>
+      <td>P64 ± 14</td>
+      <td>7F, 4M</td>
+      <td>35 ± 4</td>
+      <td>34 ± 11</td>
+      <td>11</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
 We first assessed enrichment effects on the point representation in S1, defined as the spatial profile of activity in S1 evoked by deflection of a single whisker. We quantified each cell’s response to a reference whisker as evoked ΔF/F relative to spontaneous activity (blank trials), and then calculated the mean response across cells as a function of distance to the reference whisker’s column center. This analysis only includes whisker-responsive cells. We first studied L2/3 PYR cells in Drd3-Cre mice. For L2/3 cells in normally-housed (NH) mice (11 imaging fields, seven mice, 998 total cells, 475 responsive cells, age: P56 ± 11), the point representation was centered on the reference whisker’s anatomical column, and fell off gradually over several columns’ distance. Enriched (EN) mice (11 imaging fields, seven mice, 1257 total cells, 874 responsive cells, age: P63 ± 16) showed an elevated mean response in the reference column and just around it. This was observed in the central bin (0–75 μm from column center; NH: 0.59 ± 0.06, EN: 0.77 ± 0.04; p=0.0098, permutation test for difference in means) as well as at 150–225 µm (NH: 0.53 ± 0.02, EN: 0.60 ± 0.02; p=0.0028) and 225–300 µm (NH: 0.41 ± 0.02, EN: 0.51 ± 0.01; p=0.0001). But EN suppressed mean responses at the flanks of the point representation (375–750 μm, p<0.05 for all bins) (Figure 2A). This enhancement of responses in the home column and reduced responses some distance away was also apparent in 2D maps in which imaging fields were rotated to align the arc axis, and then ROIs were spatially binned relative the reference column center (Figure 2B). Thus, enrichment sharpened the point representation in L2/3.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig2-v1.jpg)
+
+**Figure 2.:** (A) Average evoked response in L2/3 to a reference whisker (ΔF/F, z-scored to spontaneous activity in each cell) across all ROIs at increasing distances from the reference column center. ROIs are grouped into 75 μm width bins. Shading shows SEM. (B) Mean 2D spatial distribution of evoked responses to a reference whisker in L2/3. Dashed white circle is the reference whisker’s column (shown as average barrel diameter around column center). All whisker-responsive ROIs within 750 μm of each reference column, across all imaging fields, are included. Color indicates mean response in each bin. Individual imaging fields were centered on the reference column and rotated to align the within-row anatomical axis horizontally. Pluses show mean location of column centers for within-arc, row+one and within-arc, row-1 whiskers. Stars show mean location of column centers for within-row, arc-1 and within-row, arc+one whiskers. Dashed black ellipses indicate standard deviation of these column centroids. Inset: schematic of barrel field in the same orientation as plots. (C–D) Same as A-B, but for L4 ROIs in Scnn1a-Cre mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean 2D spatial distribution of evoked responses to a reference whisker for ROIs around that whisker’s column. For this figure, the distance from each ROI to the reference column center was normalized to the radius of the reference column along the vector connecting the ROI to the column center. Thus, distance is in units of reference column radius. Dashed white circle represents the precise border of the reference column. All whisker-responsive L2/3 ROIs within 5 radii of the reference column center are included. Other plotting conventions are as in Figure 2. (B) Whisker point representation in L4, plotted as in (A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Radius for each of 9 anatomical whisker barrels, in Drd3-Cre mice. Red and gray show mean ± SEM for EN and NH mice. Black dots are individual mice. (B) Same measurement for Scnn1a-Cre mice. For each panel, a 2-way ANOVA was performed with factors of enrichment and barrel identity. There was no significant enrichment effect for either genotype.
 
 L4 is expected to contain a more spatially precise whisker map than L2/3 (Simons, 1978; Andrew Hires et al., 2015), but this has not been tested with cellular-resolution imaging. We imaged L4 cells in Scnna1-Cre mice. We imaged from 107 responsive cells in L4 of NH mice (six imaging fields, five mice, 322 total cells, age: P70 ± 16). We found that the point representation was sharper in L4 than L2/3 (Figure 2C). In EN mice, we imaged from 181 responsive cells in L4 (eight imaging fields, six mice, 586 total cells, age: P58 ± 5). We found that EN reduced mean whisker-evoked responses for cells in most bins <375 μm from the reference whisker’s column center (p<0.05 for each bin), including at 0–75 μm (NH: 1.11 ± 0.13, EN: 0.86 ± 0.06, p=0.034) (Figure 2C). This was also observed in 2D maps around the reference column (Figure 2D). Thus, enrichment generally weakened L4 whisker responses, rather than sharpening the point representation relative to its central peak.
 
@@ -47,7 +141,7 @@ We also analyzed point representations as a function of neurons’ columnar loca
 
 To test whether enrichment also altered L4 barrel anatomical size, as occurs in rats (Polley et al., 2004), we quantified barrel radius for nine identified barrels from CO-stained tangential sections through L4 of each Drd3-Cre mouse. Enrichment did not alter mean barrel radius (NH: 151 ± 7.2 μm, n = 6 mice, EN: 145 ± 4.6 μm [mean ± SEM], n = 7 mice (2-way ANOVA, factors: enrichment and barrel identity, p=0.7 for enrichment factor) (Figure 2—figure supplement 2). There was also no change in barrel radius in Scnn1a-Cre mice, which have a slightly smaller barrels (NH: 118 ± 6.6 μm, n = 5 mice, EN: 124 ± 6.9 μm, n = 6 mice, p=0.01 for enrichment factor). Thus, the functional changes in L2/3 point representation occurred without gross changes in L4 barrel dimensions.
 
-## Whisker map topography in L2/3 and L4 in normally housed mice
+### Whisker map topography in L2/3 and L4 in normally housed mice
 
 Because L2/3 exhibits pronounced salt-and-pepper tuning (Sato et al., 2007; Clancy et al., 2015; Peron et al., 2015), the sharpened point representation in L2/3 could reflect altered homogeneity of whisker tuning in each column. To test this, we first quantified salt-and-pepper organization in NH mice for L2/3 PYR cells (in Drd3-Cre mice) and L4 excitatory cells (in Scnna1-Cre mice). Prior studies of salt-and-pepper tuning did not distinguish between cell types in L2/3 (Sato et al., 2007; Clancy et al., 2015), and did not examine L4.
 
@@ -55,23 +149,55 @@ L2/3 PYR cells in NH mice had intermixed tuning for different whiskers in each i
 
 We applied the same analysis in L4 of NH mice. Surprisingly, while L4 showed a slight trend for more homogeneous tuning at the center of a whisker column (0–75 um) than L2/3, this was not significant. 63% of L4 excitatory cells (30/48) had a BW that matched the CW, and 73% (35/48) had the CW among the eBWs. These values are not different from L2/3 (p=0.43 and p=0.67 respectively, Fisher’s Exact Test). However, the fraction of cells tuned to a given whisker fell off ~30% more sharply with distance in L4 than in L2/3, using either tuning measure. This difference was significant at distance bins from 150 to 375 µm from the column center (p<0.05, Fisher’s Exact Test) (Figure 3—figure supplement 1). Thus, L4 exhibits more topographic precision in whisker tuning of single cells than L2/3.
 
-## Enrichment decreases tuning heterogeneity in the salt-and-pepper map
+### Enrichment decreases tuning heterogeneity in the salt-and-pepper map
 
 Enrichment decreased local salt-and-pepper tuning heterogeneity in L2/3 in each column. For this analysis, we used the statistical definition of tuning in which a cell was considered tuned for a whisker if that whisker was among its statistically equivalent eBWs. In EN mice, 82% (111/135) of cells located 0–75 μm from a column center were tuned to the CW, which is greater than NH mice (67%, p=0.025, Fisher’s Exact Test). This was true for all bins < 300 μm from the column center, but not further away (Figure 3A). When all cells located within column boundaries were considered together (irrespective of distance to center), 77.1% (468/607) of whisker-responsive cells in EN mice were tuned to the CW, compared to 65.1% (224/344) in NH (p=0.00008). Example imaging fields illustrating this effect are shown in Figure 3B. Thus, EN increased L2/3 map precision, particularly in the home column of each whisker, but did not abolish salt-and-pepper tuning (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fraction of L2/3 PYR ROIs tuned to a reference whisker in EN and NH mice. Asterisks show significant differences between EN and NH by Fisher’ Exact Test, computed separately in each spatial bin. *p<0.05, **p<0.01, ***p<0.001. A neuron was considered tuned for the whisker if that whisker was among the equal best whiskers (eBWs). (B) Example L2/3 imaging fields with neurons color-coded by whisker tuning. Left, Normally housed; right, Enriched. White lines denote barrel boundaries. Neurons located over septa and neurons located over barrels that were not tuned to the corresponding columnar whisker are color coded to the whisker which evoked the largest response magnitude. Neurons located over barrels are color coded to the columnar whisker if it evoked the largest response, or evoked a response that was statistically indistinguishable from the largest response. (C–D) As in A and B, for L4 excitatory neurons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Example L2/3 imaging field with ROIs color-coded by the whisker that evoked that largest absolute response. (B) Fraction of responsive excitatory ROIs that were tuned to a reference whisker (defined as evoking the absolute largest response) in spatial bins of distance from that whisker’s anatomical column center. L2/3, black. L4, blue. Dashed lines, number of ROIs in each bin. (C) Same imaging field as (A), with neurons inside each column re-colored to the columnar whisker if it was either the cell’s absolute best whisker, or evoked a response that was statistically indistinguishable from the absolute best whisker. These neurons are ‘equivalently tuned’ to the CW, meaning they are either tuned or co-tuned for the CW. (D) Fraction of L2/3 PYR ROIs equivalently tuned to a reference whisker as a function of distance from the reference whisker column center. Asterisks show significant differences between L4 and L2/3 by Fisher’s Exact Test, computed separately in each spatial bin. *p<0.05, **p<0.01, ***p<0.001.
+
 Enrichment also decreased tuning heterogeneity in L4 excitatory cells. In EN mice, 90% (57/63) of cells at column centers (0–75 μm) were tuned to the CW, which is greater than the 73% in NH mice (p=0.021) (Figure 3C–D). In EN mice, 89.3% (133/149) of all cells within a column boundary were CW-tuned, compared to 75.6% (65/86) in NH mice (p=0.0086). Thus, despite the expectation that L4 is less plastic than L2/3 (Glazewski and Fox, 1996; Feldman and Brecht, 2005), enrichment also increased tuning precision in L4.
 
-## Enrichment sharpens whisker receptive fields
+### Enrichment sharpens whisker receptive fields
 
 To test how enrichment altered whisker receptive fields of individual neurons, we first examined rank-ordered receptive fields, which quantify tuning sharpness independent of somatotopic shape. Whisker responses in each cell were normalized by Z-scoring to spontaneous (blank trial) activity (yielding a signal-to-noise measure of sensory responses), rank-ordered by response strength, and then averaged across cells. In L2/3, EN increased responses to the strongest three whiskers, and decreased responses to the weakest three whiskers, relative to NH cells (Figure 4A). Thus, receptive fields were sharper, on average, in EN mice. EN specifically increased the signal-to-noise of both CW response and the best 2 SW responses (Figure 4B). In addition to these changes in tuning shape, EN also decreased spontaneous (blank trial) activity relative to NH (Figure 4C). Increased responses to the strongest whiskers and sharper tuning were also observed in absolute ΔF/F without normalization to spontaneous activity (Figure 4—figure supplement 1). Sharpening of tuning was more prominent for L2/3 cells located over L4 barrels than for those located over septa (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig4-v1.jpg)
+
+**Figure 4.:** (A) Mean receptive field for all responsive ROIs, calculated after ranking whiskers from strongest to weakest in each cell and normalizing median responses to spontaneous activity. Asterisks, significant difference between EN and NH, computed separately by permutation test for each whisker rank. *p<0.05, **p<0.01, ***p<0.001. (B), Mean receptive fields separated into CW and ranked SW whiskers. (C) Effect of enrichment on spontaneous activity, defined as median ΔF/F during blank trials. P-values computed by permutation test. (D) Mean responses of L2/3 ROIs to CWs and adjacent whiskers within the same row (left) or the same arc (right). Lower panels: schematics of adjacent whiskers within rows or arcs on the whisker pad. (E) As in D, for L4 ROIs. Only columns containing at least 3 ROIs were included in this analysis. Because most ROIs were located in the C row, no data was available for responses to surround whiskers within the same arc but −1 row relative to the CW. Asterisks, significant difference between EN and NH. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Correlation of mean ΔF/F evoked by four weakest whiskers to four strongest whiskers within each L2/3 cell for NH (A) and EN (B). Each dot on scatter plots indicates one neuron. Red lines indicate linear regression fit. Histograms show distribution of absolute evoked response magnitude. ** denotes greater mean response for EN than NH (p=0.0002, permutation test). Note: in EN (B), one point at (0.03, 0.17) is omitted from scatter plot due to scale. Regression slope was different between NH and EN (p=1.2e-9, t-test for difference in slopes).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Effect of enrichment on average ranked whisker tuning curves for barrel-related (A) and septal-related (B) ROIs in L2/3. Plots as described in Figure 4A. (C–D) Fraction of whisker-responsive ROIs located over septa in L2/3 (C) or in septa in L4 (D) imaging fields. Each circle represents one imaging field. Red is population mean and SEM. P-values computed from 2-sample t-test.
 
 L2/3 receptive fields sharpened non-uniformly in somatotopic space. To quantify this, we compared responses evoked by the CW with those evoked in the same cell by row- and arc-surround whiskers (SWs) (Figure 4D). CW responses were higher in EN than NH (NH: 0.64 ± 0.03, EN: 0.71 ± 0.02; p=0.01, permutation test for difference in means). In NH, the SW one row dorsal to the CW (within-arc, −1 row) and one row ventral to the CW (within-arc, +one row) were 68% and 62% of the CW response, respectively. EN reduced responses to both these SWs (within-arc, −1 row: NH: 0.44 ± 0.02, EN 0.35 ± 0.02, p=0.001; within-arc, +one row: NH: 0.39 ± 0.02, EN: 0.29 ± 0.01, p=0.0001). As a result, these whiskers evoked only 49% and 41% of the CW response. This represents sharpening of the whisker receptive field across rows (Figure 4D). In the within-row dimension, EN increased responses to the SW one arc rostral of the CW (within-row, +one arc: NH: 0.34 ± 0.01, EN: 0.53 ± 0.02, p=0.0001), and did not alter responses to the SW one arc caudal of the CW (within-row, −1 arc: NH: 0.57 ± 0.04, EN 0.55 ± 0.04, p=0.40). Thus, EN broadened receptive fields in the within-row dimension (Figure 4D). These receptive field changes are consistent with the apparent changes in point representation in Figure 2B.
 
 In L4, EN reduced responses to most whiskers in rank-ordered receptive fields (Figure 4A). Responses to the best surround whisker were reduced somewhat more than responses to the CW (Figure 4A–B), and spontaneous activity was unaffected (Figure 4C). The mean receptive field was sharper in L4 than L2/3 in both NH and EN, consistent with sharper point representation in L4 (Figure 4A–B). When receptive fields were examined in somatotopic space, CW responses were weaker in EN than NH (NH: 0.98 ± 0.09, EN: 0.81 ± 0.04, p=0.02), as were responses to the within-row, +one arc SW (NH: 0.54 ± 0.08, EN: 0.17 ± 0.02, p=0.0001), the within-row, −1 arc SW (NH: 0.67 ± 0.13, EN 0.33 ± 0.04, p=0.003), and the within-arc, +one row SW (NH: 0.23 ± 0.03, EN 0.11 ± 0.02, p=0.0007). The within-arc, −1 row SW was not sampled sufficiently in our L4 dataset to enable this comparison. Thus, EN sharpened L4 receptive fields, but by a global weakening of whisker responses, unlike in L2/3. This effect differs from adult enrichment in rats, which shrinks whisker receptive fields in L2/3 but not L4 (Polley et al., 2004).
 
-## Enrichment strengthens functional column boundaries in L2/3
+### Enrichment strengthens functional column boundaries in L2/3
 
 Prior imaging studies detected a global tuning gradient in L2/3 of S1 but no functional boundaries at anatomical column edges (Kerr et al., 2007; Sato et al., 2007). To test whether enrichment drives emergence of functional boundaries, we first examined tuning similarity (signal correlation) between pairs of simultaneously imaged L2/3 neurons in Drd3-Cre mice. In NH mice, mean signal correlation for neuron pairs fell off modestly with intersoma distance, and was slightly higher for within-column pairs than across-column pairs. For closely spaced pairs (<150 μm apart) signal correlation was only modestly higher for within-column pairs than across-column pairs (0.652 ± 0.005 vs. 0.611 ± 0.007, p<0.0001, permutation test of difference in means), reflecting the lack of functional column boundaries (Figure 5A). In EN mice, mean signal correlation for within-column pairs was modestly increased (NH: 0.637 ± 0.004, EN: 0.659 ± 0.002; includes pairs at all distances; p<0.0001, permutation test), while signal correlation for across-column pairs was greatly reduced (NH: 0.541 ± 0.004, EN: 0.425 ± 0.004; p<0.0001) (Figure 5A,C). Moreover, signal correlation for closely spaced cross-column pairs (<150 μm apart) was much lower than for similarly spaced within-column pairs (0.674 ± 0.003 vs. 0.529 ± 0.006, p<0.0001) (Figure 5A). Thus, EN generated a tuning boundary at column edges.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mean signal correlation across responsive L2/3 cell pairs as a function of inter-ROI distance, for cell pairs within a column (left) or across columns (right). Shaded regions denote SEM. Dashed, number of cell pairs in each bin. Insets show schematic of cell locations. (B) Mean noise correlation across all responsive L2/3 pairs, plotted as in (A). (C–D) Cumulative distribution of signal correlation (C) or noise correlation (D) for all within-column (in-col) and across-column (x-col) pairs. Asterisks denote difference between distributions computed by ANOVA with multiple comparisons correction. (E) Spatial map of mean signal correlation for sample ROIs within a position bin to all ROIs located within a reference whisker column. For each sample ROI, the mean signal correlation to all ROIs within the reference column was calculated. Sample ROIs were then clustered into spatial bins, and the mean signal correlation for each bin was plotted. The dashed circle is the reference column (shown as an average barrel diameter around the column center). (F) Spatial map of mean noise correlation to all ROIs within the reference whisker column, shown as in (E). (G) Mean signal correlation from sample ROIs to all cells in a reference column, as a function of sample ROI distance from column center. Shading is SEM. (H) Same as for (G), but for noise correlations. G-H show that enrichment steepens correlation gradients at column edges.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mean signal correlation across responsive L2/3 cell pairs located across columns as a function of inter-ROI distance, for cell pairs across columns within a row (left) or across columns within an arc (right). Shaded regions denote SEM. Dashed, number of cell pairs in each bin. Insets above plots show schematic of cell locations. (B) Mean noise correlation across all responsive L2/3 pairs located across columns within a row (left) or within an arc (right), plotted as in (A).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46321/elife-46321-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–F) The principal effects of EN recalculated under different levels of neuropil subtraction. Neuropil subtraction was performed by calculating the raw fluorescence of each ROI on each frame $F(t)_{ROI}$ as $F(t)_{ROI}=F(t)_{ROImask}-r*F(t)_{NPmask}$. Left column, r = 0 (no neuropil subtraction). Middle column, r = 0.3. Right, r = 0.7. (A) Fraction of L2/3 PYR ROIs tuned to a reference whisker, calculated as in Figure 3A. Asterisks show significant differences between EN and NH by Fisher’ Exact Test, computed separately in each spatial bin. *p<0.05, **p<0.01, ***p<0.001. (B) Mean response evoked by a reference whisker, calculated and plotted as in Figure 2A. (C) Same as in (A), but for L4 excitatory cells. (D) Same as in in (B), for L4 excitatory cells. (E–F) Distribution of signal correlation (E) or noise correlation (F) for all within-column (in-col) and across-column (x-col) L2/3 PYR pairs. Plotted as in Figure 5D and E. Asterisks denote difference between distributions computed by ANOVA with multiple comparisons correction. The bottom row in (F) reports numbers of pairs of significantly whisker-responsive ROIs at each neuropil subtraction weight.
 
 EN also generated columnar structure in noise correlations, which measure shared, stimulus-independent trial-to-trial variability between neurons, likely reflecting shared functional input (Averbeck et al., 2006; Kohn et al., 2016). In NH mice, noise correlations for L2/3 neuron pairs decreased with distance, and were similar within columns (0.334 ± 0.002) and across columns (0.327 ± 0.002). EN modestly reduced noise correlations for within-column pairs (to 0.307 ± 0.001; p<0.0001, permutation test vs. NH), but greatly reduced noise correlations for cross-column pairs (to 0.255 ± 0.001; p<0.0001, permutation test vs. NH). This effect was apparent even for cross-column pairs 100 μm apart (Figure 5B,D). The reduction of signal and noise correlations across column boundaries was apparent across both within-row and within-arc column boundaries (Figure 5—figure supplement 1).
 
@@ -83,11 +209,11 @@ In L4 of Scnn1a-Cre mice, EN generally increased correlations between co-columna
 
 **Figure 6.:** (A) Mean signal correlation across responsive L4 cell pairs as a function of inter-ROI distance, for cell pairs within a column. Conventions as in Figure 6A. Inset, schematic of cell locations. (B) Mean noise correlation across within-column pairs, plotted as in (A). (C–D) Cumulative distribution of signal correlations (C) or noise correlations (D) for within-barrel ROI pairs in L4.
 
-## Robustness to neuropil contamination
+### Robustness to neuropil contamination
 
 GCaMP6s-based measures of tuning, tuning heterogeneity, and activity correlations could be contaminated by out-of-focus fluorescence from neuropil around each ROI. The extent of such neuropil contamination is difficult to measure empirically, and 2-photon imaging studies apply different methods and degrees of correction. Above, we applied no neuropil correction in L2/3, because Drd3-Cre mice had relatively low neuropil signal, reflecting GCaMP6s expression in only ~50% of L2/3 PYR cells. We did apply neuropil correction in L4 (at weight r = 0.3, see Materials and methods), because Scnn1a-Cre drove denser GCaMP6s expression, and imaging deeper in cortex required higher laser power, which could increase out-of-focus fluorescence above the imaging plane. To confirm that the major effects of the study were robust to different levels of neuropil correction, we applied neuropil subtraction in both L2/3 and L4 at three weights (r = 0, r = 0.3, r = 0.7, see Materials and methods) (Figure 5—figure supplement 2). Enrichment effects on tuning heterogeneity (Figure 3) and point representation (Figure 5) were qualitatively unchanged across these levels of neuropil subtraction in both L2/3 and L4 (Figure 5—figure supplement 2A–D). The highest level of subtraction (r = 0.7) has been used in several prior studies (Chen et al., 2013) but here appeared to cause overcorrection for most ROIs in both L2/3 and L4, strongly reducing the number of ROIs that were whisker-responsive. Effects of enrichment on signal correlations were conserved for r = 0 and r = 0.3, but were lost for r = 0.7, likely because fewer cells could be analyzed (only responsive cells were analyzed). Effects of enrichment on noise correlations persisted across all neuropil subtraction levels (Figure 5—figure supplement 2E–F). Thus, the major effects of enrichment were robust to methodological choices on neuropil subtraction.
 
-## Enrichment improves population coding of columnar whisker deflections
+### Enrichment improves population coding of columnar whisker deflections
 
 Finally, we tested whether these changes in L2/3 sensory representation are sufficient to improve population coding of whisker input within local regions of S1. To do so, they must be large relative to the substantial single-trial variability that exists in S1 (Clancy et al., 2015). We built a neural population decoder that predicted CW deflection (relative to spontaneous activity) from single-trial ΔF/F from populations of imaged L2/3 neurons in Drd3-Cre mice. Each ROI was trained by logistic regression, on a subset of CW deflection and blank trials, to predict whisker deflection from ΔF/F in a 1 s window. Performance was tested on held-out trials. Single-ROI decoders performed above chance, with slightly better performance by EN cells than NH cells (fraction correct for NH: 0.63 ± 0.005, for EN: 0.65 ± 0.004, p=0.004, permutation test for difference in means). Population decoders were built by randomly selecting ensembles of 2–30 ROIs that were simultaneously imaged in the same field, and averaging the output of each ROI classifier to generate a population prediction on each trial. Because ROIs could be located in different whisker columns, we averaged performance across the set of CWs for those columns. Detection performance increased with population size, and was greater for EN than NH for populations containing ≥3 neurons (p<0.001; permutation test of difference in means) (Figure 7A–C).
 
@@ -95,17 +221,17 @@ Finally, we tested whether these changes in L2/3 sensory representation are suff
 
 **Figure 7.:** (A) Design of neural decoder for detecting a whisker deflection. (B) Performance of single-ROI decoders on detection of CW deflection vs. blank (no whisker deflection). (C) Detection performance for population decoders of varying size. Each ensemble decoder consisted of randomly positioned, simultaneously imaged ROIs, and was tested on detection of the whisker closest to the centroid of the ensemble. Bars show SEM. (D) Detection of a reference whisker deflection by ensemble decoders located at varying distances from the reference column. These were spatially clustered ensembles of 2–42 simultaneously imaged ROIs (see Materials and methods). Distance bins refer to distance between reference column center and the centroid of each ensemble.
 
-To test how detection performance varied with columnar topography, we built decoders from spatially clustered neural ensembles (N=2-42 neurons) centered at varying distances from a reference whisker’s anatomical column. Spatially clustered (not randomly dispersed) ensembles were selected in each imaging field (see Materials and methods). These decoders were tested for detection of reference whisker deflection versus a blank. Mean detection performance (on average across the population sizes) was greatest for ensembles centered near the whisker column center, and fell off with distance. EN decoders outperformed NH decoders for ensembles centered at 0-77 µm and 77-154 µm from a column center (p=2*10-6, 2-way ANOVA), which are within an average column radius (Fig. 7D). This effect disappeared and even reversed for more distant ensembles, where EN performed worse than NH (e.g., 308-385 µm bin; p=2*10-6). Thus, the strengthening and sharpening of the point representation in EN mice improves single-trial population detection of whisker deflections inside each whisker’s column, and topographically sharpens effective decoding in S1.
+To test how detection performance varied with columnar topography, we built decoders from spatially clustered neural ensembles (N=2-42 neurons) centered at varying distances from a reference whisker’s anatomical column. Spatially clustered (not randomly dispersed) ensembles were selected in each imaging field (see Materials and methods). These decoders were tested for detection of reference whisker deflection versus a blank. Mean detection performance (on average across the population sizes) was greatest for ensembles centered near the whisker column center, and fell off with distance. EN decoders outperformed NH decoders for ensembles centered at 0-77 µm and 77-154 µm from a column center (p=$2*10^{-6}$, 2-way ANOVA), which are within an average column radius (Fig. 7D). This effect disappeared and even reversed for more distant ensembles, where EN performed worse than NH (e.g., 308-385 µm bin; p=$2*10^{-6}$). Thus, the strengthening and sharpening of the point representation in EN mice improves single-trial population detection of whisker deflections inside each whisker’s column, and topographically sharpens effective decoding in S1.
 
 ## Discussion
 
-## Whisker map structure in L2/3 and L4 of normally housed mice
+### Whisker map structure in L2/3 and L4 of normally housed mice
 
 Our findings confirm that S1 of NH mice exhibits dispersed, salt-and-pepper tuning organization in L2/3, without functional borders at column boundaries (Sato et al., 2007; Clancy et al., 2015). The point representation of a whisker among L2/3 cells spread across multiple columns, and fell off gradually without discrete columnar boundaries (Figure 2). This was due in part to tuning heterogeneity within each column: only 48% of PYR cells in each column responded maximally to the CW, and only 65% had the CW among statistically equal best whiskers (Figure 3—figure supplement 1). L4 contained a more spatially focused map, as expected from thalamocortical topography and prior studies of L4 receptive fields (Simons, 1978; Armstrong-James and Fox, 1987; Andrew Hires et al., 2015), but still a small degree of salt-and-pepper structure (Figures 2 and 3). Thus, whisker somatotopy is more precise in L4 but more dispersed in L2/3, similar to tonotopy in rodent A1 (Winkowski and Kanold, 2013). This comparison between L4 and L2/3 assumes that Drd3-Cre and Scnn1a-Cre mice have overall similar somatotopic map organization.
 
 GCaMP6- and spike-based tuning measurements will differ because of lower single-spike sensitivity with GCaMP, and the use of train stimuli rather than single whisker deflections. In addition, some non-columnar whisker responses in GCaMP imaging may reflect slow tangential activity propagation across columns (Petersen et al., 2003) within the 1 s response window. Despite these caveats, we found generally good correspondence between GCaMP6s- and spike-based tuning in calibration experiments (Figure 1F). Imaging is essential to measure map topography among PYR cells, because dense, cell-type specific recording with accurate soma localization is generally not possible using spike recordings.
 
-## Enrichment increases receptive field and map precision in L2/3
+### Enrichment increases receptive field and map precision in L2/3
 
 While deprivation-induced plasticity has been well studied in S1 (Feldman and Brecht, 2005), the effects of enrichment are less understood. Enrichment can weaken and spatially sharpen whisker responses (Polley et al., 2004), or promote larger, more overlapping whisker responses (Guic et al., 2008), and can create smoother maps of cutaneous forepaw input (Coq and Xerri, 1998). These prior studies lacked single-cell mapping resolution and cell type specificity, and thus whether enrichment would transform the dispersed whisker map into a sharper map with more distinct columnar boundaries was unclear.
 
@@ -115,7 +241,7 @@ Thus, EN altered both L2/3, which is well known for robust experience-dependent 
 
 Several prior studies found that enrichment enhances whisker-evoked spiking and local field potential responses in whisker S1, but did not measure effects on receptive fields or maps (Alwis and Rajan, 2014; Devonshire et al., 2010; Megevand et al., 2009). This enhanced magnitude of whisker responses echoes prior findings in auditory and visual cortex (Alwis and Rajan, 2014), matches our findings in L2/3 (Figures 2 and 4), and may involve spine formation induced by enrichment in S1 (Landers et al., 2011). One study used intrinsic signal imaging to discover sharpened whisker point representations in L2/3 after adult enrichment, caused by reduction of whisker response magnitude and sharpening of L2/3 single-unit receptive fields (Polley et al., 2004). Our cellular-resolution mapping substantially extends this finding, by showing that juvenile enrichment strengthens CW responses, sharpens the L2/3 whisker map, and generates functional tuning boundaries in L2/3 aligned to anatomical column edges. By imaging in L4, we detected modest receptive field plasticity, which was not detected in L4 multiunit recordings (Polley et al., 2004). These differences could also reflect enrichment age or species (mice vs. rats). Layer-specific population Ca imaging allowed us to observe map sharpening among diversely tuned neurons, and to discover that enrichment regulates the degree of salt-and-pepper organization in S1.
 
-## Enrichment enhances functional column boundaries in L2/3
+### Enrichment enhances functional column boundaries in L2/3
 
 S1 contains whisker-specific thalamocortical termination zones in L4 (Woolsey and Van der Loos, 1970) and strong radial L4-L2/3 connectivity (Bender et al., 2003; Bureau et al., 2006). Thus, it has been puzzling that prior cellular-resolution imaging (in standard-housed mice) revealed gradual somatotopic tuning gradients in L2/3 without major transitions in tuning at column edges (Kerr et al., 2007; Sato et al., 2007; Clancy et al., 2015). We hypothesized that appropriate experience could drive development of column-related functional organization in L2/3.
 
@@ -123,27 +249,93 @@ Functional organization at column boundaries was quantified using signal correla
 
 Greater differentiation of somatotopic tuning across columns could improve neural coding for whisker stimulus detection in each column. In addition, because noise correlations are often detrimental for sensory coding (Kohn et al., 2016), their reduction may improve whisker sensory coding for downstream areas. Reduced signal and noise correlations across columns in L2/3 may reflect more rigid columnar segregation of L4-L2/3 and L2/3-L2/3 circuits, for example by reducing cross-columnar excitatory projections or enhancing cross-columnar inhibition. In L4, enrichment increased signal correlations within columns, which may reflect stronger recurrent excitation in each L4 barrel (Ashby and Isaac, 2011).
 
-## Enrichment improves population coding of whisker deflection in L2/3
+### Enrichment improves population coding of whisker deflection in L2/3
 
 Sensory tuning and maps reflect average responses over many stimulus presentations, but perception and sensory-evoked behavioral responses occur on single trials. Single L2/3 neurons in S1 exhibit high trial-to-trial response variability (de Kock et al., 2007; Barth and Poulet, 2012), which limits coding efficiency. To test whether sharper maps predict improved neural coding on single trials, we constructed neural decoders that predicted the presence of a whisker stimulus from measured single-trial responses of S1 neurons. Our focus was on coding by L2/3 PYR cell ensembles, which relay information from S1 to downstream cortical areas (Chen et al., 2015).
 
 Enrichment improved detection of CW deflections by spatially clustered PYR ensembles located in column centers (Figure 7). Enrichment increased both absolute detection accuracy and coding efficiency such that in EN mice, smaller ensembles were needed for equivalent detection performance. Thus, the strengthening of CW-evoked responses, the reduction of spontaneous activity and noise correlations, and the higher proportion of CW-tuned neurons are sufficient to improve single-trial coding of whisker deflections in EN mice. Topographically, enrichment improved detection by ensembles in the home whisker column, but worsened detection by ensembles in neighboring columns (Figure 7D). Thus, the columnar organization of effective decoding was sharpened, matching the sharper point representations in L2/3 of enriched S1. These results do not predict whether behavioral detection of whisker input is altered by enrichment, but they do suggest that coding within individual S1 columns is more efficient.
 
-## Dispersed, weakly columnar maps partially reflect impoverished experience
+### Dispersed, weakly columnar maps partially reflect impoverished experience
 
 These results indicate that the dispersed, salt-and-pepper, weakly columnar somatotopy in L2/3 of S1 is partially a product of impoverished experience in standard laboratory housing. While enrichment promotes more diverse tactile experience, it also likely increases social interactions and affects general activity levels. Which of these factors is dominant in driving whisker map plasticity was not tested. Enrichment strengthened and sharpened the L2/3 PYR cell map and drove emergence of functional boundaries aligned to columnar structure. Enrichment reduced, but did not eliminate, salt-and-pepper tuning heterogeneity in L2/3. Thus, salt-and-pepper organization is a robust feature of rodent L2/3 sensory maps, but its degree is flexible based on experience. Enrichment reduced both mean tuning similarity and stimulus-independent (spontaneous) firing correlations across columns. Thus, columns became more functionally independent, which predicts more accurate column-based encoding of whisker input. The circuit mechanisms for emergence of columnar structure in L2/3 remain to be identified.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additonal information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Scnn1a-tg3-Cre line</td>
+      <td>Jackson Labs</td>
+      <td>RRID:IMSR_JAX:009613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Drd3-Cre line</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_034610-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.Syn.Flex.GCaMP6s.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>Penn: AV-1-PV2821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9.CAG.Flex.GCaMP6s.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>Penn: AV-9-PV2818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (version 2014b)</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage</td>
+      <td>Vidrio Technologies</td>
+      <td>RRID:SCR_014307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro (version 6)</td>
+      <td>Wave Metrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures were approved by the UC Berkeley Animal Care and Use Committee and follow NIH guidelines. For population imaging experiments we used 14 Drd3-Cre mice (10 males and four females), and 11 Scnn1a-Tg3-Cre mice (4 males and seven females) (Table 1). Drd3-Cre mice were obtained from MMRRC on a mixed C57BL6/FVB background (#034610-UCD), and were paired with C57BL/6 mice for several generations before generating the mice used in the current study. Scnn1a-Tg3-Cre mice were obtained on a C57BL/6 background from Jackson Laboratories (JAX #009613) and were maintained on a C57BL/6 background. Juxtacellular recordings were performed in 5 C57BL/6 mice (Jackson Laboratories). Whether the Drd3-Cre and Scnn1a-Cre transgenes themselves impact somatotopic map organization or plasticity is not known. But salt-and-pepper organization was previously observed in L2/3 in wild-type C57BL/6 mice (Clancy et al., 2015), so the presence of the Drd3-Cre transgene does not appear to strongly impact basic map organization.
 
-## Enrichment
+### Enrichment
 
 Littermates were separated into normally housed (NH) and enriched (EN) groups at weaning (P20-21). EN animals were housed with 2–3 littermates in standard mouse cages (30 × 14 × 18 cm) into which a nesting enclosure and several toys were added and exchanged every 2–4 days. Toys included sticks and blocks made from wood, ridged plastic, PVC, rubber, or cement, chosen for diversity of shape and texture (Figure 1A, Figure 1—figure supplement 1–). Toys were selected so that at all times EN cages contained one burrowing toy, one medium sized toy, and several small wooden toys that could easily be moved by the mice. Toys were cleaned and sterilized between uses. NH mice were housed in the same cage, with one littermate and no toys. All cages contained bedding and nesting material. Running wheels were not used in either NH or EN cages.
 
-## Surgery
+### Surgery
 
 A single surgery for headgear implant and viral injection was performed at ~P41 (Drd3-Cre mice) or ~P30 (Scnn1a-Cre mice). Before surgery, mice received dexamethasone (2 mg/kg, i.p.), meloxicam (10 mg/kg) and enrofloxican (5 mg/kg) for analgesia and to prevent infection. Mice were anesthetized with isoflurane and maintained at 37°C. The skull was cleaned and a stainless steel head-holder containing a 5 mm aperture was affixed to the skull with dental cement. Intrinsic signal imaging (ISOI) was performed through the intact skull to localize D1, D2 and D3 columns in S1 (Drew and Feldman, 2009), and a 3 mm craniotomy was made over the D2 column. A Cre-dependent GCaMP viral vector was injected at three nearby sites, at two depths each. For L2/3 (Drd3-Cre mice), we used AAV1-Syn-Flex-GCaMP6S-WPRE, injected at ~200 and ~300 µm below the dura. For L4 (Scnn1a-Cre mice), we used AAV9-CAG-Flex-GCaMP6s-WPRE, injected ~350 and ~450 µm below the dura. Viruses were obtained from UPenn Viral Vector Core via the Janelia GENIE Project (Chen et al., 2013). The craniotomy was sealed with a #1 glass coverslip (0.15 ± 0.02 mm thick, 3 mm diameter) cemented to the skull. Mice received post-operative buprenorphine (0.1 mg/kg, i.p.) for analgesia.
 
@@ -151,7 +343,7 @@ Following implant surgery, mice were kept in a warm environment until they fully
 
 Surgical recovery was quantified in a special cohort of 6 NH and 6 EN mice (separate from the mice used in imaging). Mice recovered to pre-surgical weight within 4 days (NH) or 5.5 days (EN), on average. General exploratory behavior was measured daily from 1 to 7 days post-surgery by placing each mouse in a clean cage with bedding but no toys or nesting material. After a 10 min habituation period, we quantified time spent in three spontaneous behaviors (locomoting, grooming, rearing) for a 10 min observation period. The prevalence of these behaviors did not differ between EN and NH mice, although EN mice showed a non-significant trend for more locomotor behavior (data not shown). Thus, general exploratory behavior during surgical recovery was roughly similar between NH and EN mice. Behavior in the home cage was not measured because enrichment objects and cage top obscured observation. Thus, surgical recovery was relatively fast and similar between NH and EN groups, and was a small fraction of total 35–40 day NH or EN duration before imaging (Table 1).
 
-## 2-photon calcium imaging
+### 2-photon calcium imaging
 
 Imaging took place 18 ± 4 days after virus injection for Drd3-Cre mice (Gong et al., 2007) and 34 ± 11 days after virus injection for Scnn1-Tg3-Cre mice (Madisen et al., 2010; Adesnik et al., 2012), as required for adequate GCaMP expression in L2/3 and L4 (Table 1). Imaging was performed once daily observation revealed stable numbers of fluorescent neurons with few or no neurons exhibiting nuclear expression (Tian et al., 2009). 2-photon imaging was performed using a Sutter Moveable-Objective Microscope with one resonant and one galvo scan mirror. We used a 16x, 0.8 NA water-dipping objective (Nikon). Excitation was delivered with a Coherent Chameleon Ti-Sapphire pulsed laser tuned to 920 nm. Fluorescence emission was filtered with a Chroma HQ 575/50 filter and detected with a Hamamatsu photomultiplier tube (H10770PA-40). Single Z-plane images (512 × 512 pixels) were collected at 30 Hz frame rate using ScanImage (Pologruto et al., 2003).
 
@@ -163,37 +355,37 @@ After imaging was complete for all co-housed mice within a given cage, all mice 
 
 Genetic expression of GCaMP is unlikely to affect basic L2/3 map development, because salt-and-pepper organization has also been observed with acute loading of OGB-1 AM, rather than genetic expression of GCaMP (Clancy et al., 2015). While GCaMP expression is commonly used to study cortical plasticity, we cannot rule out that GCaMP expression affects plasticity. Only 4% of cells in Drd3-Cre mice and 1.2% of cells in Scnn1a-Cre mice showed nuclear GCaMP fluorescence indicative of GCaMP overexpression, and were excluded from analysis.
 
-## Cell-attached recording
+### Cell-attached recording
 
 For simultaneous imaging and cell attached recordings, we injected a non-Cre-dependent GCaMP6s virus (AAV1-Syn-Flex-GCaMP6S-WPRE) at ~200 and ~300 µm below the dura at one stereotaxic location in S1. After allowing ~3 weeks for expression, a 2 mm diameter craniotomy was made over S1, as described for imaging experiments. Anesthesia and recording conditions were as described for imaging. We recorded juxtacellularly from GCaMP6s-expressing L2/3 neurons under 2-photon guidance using a recording pipette (3 µm tip, 3–5 MΩ) filled with fluorescent HEPES-buffered Ringers (in mM: 126 NaCl, 20 HEPES, 2.5 KCl, 2 CaCl2, 1.3 MgSO4, 14 D(+)Glucose, 50 AlexaFluor-594, pH 7.3, 290 mOsm). A loose seal configuration was obtained, and spike-associated currents were measured in voltage-clamp mode with holding potential adjusted to maintain a holding current of 0 pA. Spikes from the loose seal recording were collected simultaneous to GCaMP imaging. Whisker stimulation was as described for imaging experiments. Spikes occurring 0–100 ms after each whisker deflection were considered whisker-evoked for receptive field quantification.
 
-## Analysis
+### Analysis
 
 All data analysis was conducted in MATLAB using custom-written routines unless otherwise noted. Data analysis code is available at GitHub (LeMessurier, 2019; copy archived at https://github.com/elifesciences-publications/imaging_analysis_pipeline) .
 
-## Image processing and ROIs
+#### Image processing and ROIs
 
 Imaging movies were corrected for slow XY motion in Matlab using dftregistration (Guizar-Sicairos et al., 2008) (Matlab file exchange). We did not observe substantial Z-axis motion. Fluorescence of each pixel was smoothed in time (moving median filter, four frames). Ellipsoid regions-of-interest (ROIs) were drawn manually over neuronal somata that appeared in all movies from an imaging field. The ROI signal was the mean fluorescence of its component pixels. For neuropil subtraction, a neuropil mask was created as a 10 pixel-wide ring beginning two pixels from the somatic ROI. Neuropil pixels that were correlated with any soma ROI (with r>0.2) were removed from the neuropil mask. For L4 ROIs, mean fluorescence of the neuropil mask was scaled by 0.3 and subtracted from the raw somatic ROI fluorescence. For L2/3 ROIs, neuropil subtraction was not used in the main analysis, but is presented in Figure 5—figure supplement 2. Fluorescence time series of all ROIs were inspected manually to remove any movies in which mean brightness decreased >~10% due to imaging errors (e.g., loss of meniscus under the objective lens). For each ROI, fluorescence time series were converted to ΔF/F defined as (Ft-F0)/F0, in which F0 is the 20th percentile of fluorescence across the entire 80 s movie and Ft is the fluorescence on each frame.
 
-## Quantification of whisker responses, receptive fields, and response magnitude
+#### Quantification of whisker responses, receptive fields, and response magnitude
 
 The whisker-evoked ΔF/F signal was quantified for each ROI on each trial as (mean ΔF/F in the 1 s period following whisker train onset) – (mean ΔF/F in the 0.5 s prior to the stimulus). Each cell’s 9-whisker receptive field was quantified from the median ΔF/F to each whisker across all stimulus repetitions. A ROI was considered significantly responsive to a given whisker if the distribution of evoked ΔF/F on whisker stimulus trials was significantly greater than on blank trials. This was computed using a permutation test: for each whisker, a vector of mean ΔF/F for each stimulus iteration was combined with mean ΔF/F for each blank trial (using the same frames as for measuring evoked activity). The combined distribution of means was split into two groups, and the difference in means of the two groups was measured. This was repeated 10,000 times, and the actual difference between the stimulus and blank distributions was compared to the distribution of permuted differences in means. A difference was considered significant if it was greater than the 95th percentile of the permuted distribution. P values for each of the nine whiskers were corrected for multiple comparisons by False Discovery Rate (Benjamini and Hochberg, 1995). A ROI was considered whisker responsive if it was significantly responsive to at least one whisker above baseline activity. For L2/3 analysis, all whisker-responsive ROIs located within any of the nine columns corresponding to the stimulated whiskers were included. For L4 analysis, only responsive ROIs located within columns C1, C2, and C3 were included to ensure similar spatial sampling of the barrel field, since imaging field locations were less overlapping between EN and NH compared to L2/3.
 
 For comparison of the magnitude of whisker-evoked responses across imaging fields, evoked ΔF/F was normalized to ΔF/F on blank trials. This was done by computing median evoked ΔF/F across all stimulus trials, and z-scoring to the distribution of ΔF/F on blank trials. This normalization enables comparisons across imaging fields and neurons with different levels of GCaMP expression, which yield different absolute fluorescence intensity and ΔF/F signals.
 
-## Quantification of L4 barrel size
+#### Quantification of L4 barrel size
 
 To quantify barrel size (Figure 2—figure supplement 2), the area of each barrel (C1:C3, D1:D3, E1:E3) was measured from the CO-stained tangential sections. Mean radius was calculated from the area, assuming circularity. Mean barrel size for each mouse was calculated as the mean across these nine barrels.
 
-## Normalized anatomical reference frame for spatial analysis across imaging fields
+#### Normalized anatomical reference frame for spatial analysis across imaging fields
 
 To combine imaging results across different imaging fields, ROI coordinates were transformed into a common reference frame. This was done by measuring XY position of each ROI relative to anatomical barrel centers, and rotating the coordinates for each imaging field around the column of interest to achieve the same anatomical orientation. Response or tuning measures for individual ROIs were plotted directly overlaid within this reference frame (Figure 3E). Alternatively, individually ROIs were spatially binned using k-means clustering so that each bin contained a similar number of ROIs, average response strength or tuning was computed for each bin, and the result was displayed as a Voronoi plot with each polygon representing a spatial bin (Figure 5D, Figure 6F–G).
 
-## Signal and noise correlation analysis
+#### Signal and noise correlation analysis
 
 Signal and noise correlation were computed between all pairs of simultaneously imaged, whisker-responsive neurons that were located within (for L4 cells) or above (for L2/3 cells) any L4 barrel. Cells located within or above L4 septa were not used for correlation analysis, to avoid ambiguity in localizing the precise barrel boundary. Thus, closely spaced cross-column cell pairs were located in adjacent barrel columns, not in column and adjacent septum. To compute signal correlation, we calculated for each ROI a 9-element vector composed of its mean response to each whisker over all stimulus repetitions. Each vector was individually Z-scored. Signal correlation was defined as the Pearson’s correlation of the vectors for a pair of neurons. To compute noise correlations, we constructed for each ROI, nine vectors (one for each whisker) containing the mean ΔF/F during the evoked window following each stimulus iteration. Each vector was individually z-scored. We computed the Pearson’s correlation for each pair of neurons separately for each whisker, then computed the mean correlation for all whiskers. Distance between neurons was calculated as the Euclidean distance (µm).
 
-## Neural decoder
+#### Neural decoder
 
 We constructed neural decoders to detect a whisker deflection compared to spontaneous activity from single-trial mean ΔF/F of individual ROIs and ensembles of ROIs. Each ROI was represented by a nine binary classifiers – one per whisker – that were trained by logistic regression to report the probability of a stimulus given the mean ΔF/F during the evoked window following a single whisker deflection, selected randomly from each stimulus iteration (structured as in McGuire et al., 2016). For each logistic function coefficients were fit by logistic regression and K-fold cross validation to relate the mean ΔF/F on each trial to the probability of given whisker having been deflected. Each iteration of model fitting was performed on 80% of trials (including the given whisker and blank trials), and performance was assessed on the remaining 20% of trials. For single ROI decoders, predictions were made by selecting the highest probability on a given trial. The fitting and testing process was repeated 500 times for each single ROI decoder, and performance was averaged across iterations.
 

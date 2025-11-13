@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute, University of Massachusetts Chan Medical School Worcester United States
+1. RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Howard Hughes Medical Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
 ## Abstract
 
-Images taken by transmission electron microscopes are usually affected by lens aberrations and image defocus, among other factors. These distortions can be modeled in reciprocal space using the contrast transfer function (CTF). Accurate estimation and correction of the CTF is essential for restoring the high-resolution signal in cryogenic electron microscopy (cryoEM). Previously, we described the implementation of algorithms for this task in the cis TEM software package (Grant et al., 2018). Here we show that taking sample characteristics, such as thickness and tilt, into account can improve CTF estimation. This is particularly important when imaging cellular samples, where measurement of sample thickness and geometry derived from accurate modeling of the Thon ring pattern helps judging the quality of the sample. This improved CTF estimation has been implemented in CTFFIND5, a new version of the cis TEM program CTFFIND. We evaluated the accuracy of these estimates using images of tilted aquaporin crystals and eukaryotic cells thinned by focused ion beam milling. We estimate that with micrographs of sufficient quality CTFFIND5 can measure sample tilt with an accuracy of 3° and sample thickness with an accuracy of 5 nm.
+Images taken by transmission electron microscopes are usually affected by lens aberrations and image defocus, among other factors. These distortions can be modeled in reciprocal space using the contrast transfer function (CTF). Accurate estimation and correction of the CTF is essential for restoring the high-resolution signal in cryogenic electron microscopy (cryoEM). Previously, we described the implementation of algorithms for this task in the cisTEM software package (Grant et al., 2018). Here we show that taking sample characteristics, such as thickness and tilt, into account can improve CTF estimation. This is particularly important when imaging cellular samples, where measurement of sample thickness and geometry derived from accurate modeling of the Thon ring pattern helps judging the quality of the sample. This improved CTF estimation has been implemented in CTFFIND5, a new version of the cisTEM program CTFFIND. We evaluated the accuracy of these estimates using images of tilted aquaporin crystals and eukaryotic cells thinned by focused ion beam milling. We estimate that with micrographs of sufficient quality CTFFIND5 can measure sample tilt with an accuracy of 3° and sample thickness with an accuracy of 5 nm.
 
 ## Introduction
 
@@ -28,95 +28,354 @@ Here, we describe new features of CTFFIND5 that can fit the modulations of the T
 
 ## Methods
 
-## Tilt estimation algorithm
+### Tilt estimation algorithm
 
-Tilt estimation in CTFFIND5 follows a strategy that is similar to the implementation in CTFTILT (Mindell and Grigorieff, 2003). The tilt axis direction ϕ and tilt angle θ are determined by fitting Thon ring patterns locally, calculated from 128×128 pixel tiles that form a regular grid covering the micrograph (Figure 1a). In this model, ϕ has a positive value ranging from 0° to 360° and describes the angle of the tilt axis to the x-axis of the micrograph in the counterclockwise direction. The tilt angle θ has positive values ranging from 0° to 90° and describes the rotation of the sample around the tilt axis in a counterclockwise direction. It is assumed that the defocus variation across the sample can be described by a tilted plane. Fits are evaluated using correlation coefficients between modeled CTFs and Thon ring patterns. Initially, the micrograph pixel size is adjusted (binned) by Fourier cropping to match the resolution limit of the fit set by the user and the micrograph is cropped to be square in order to speed up computation. A power spectrum is calculated from this binned and cropped image, a smooth background is calculated using a box convolution (Mindell and Grigorieff, 2003) and subtracted, the power spectrum is further binned to the tile size (128×128 pixels), and the fit of the tilted Thon ring patterns across the micrograph is initialized by fitting this highly binned power spectrum with a non-astigmatic CTF. This fit is then refined using a two-dimensional CTF with astigmatism. Rough values for the tilt axis and angle are then determined in a systematic search in 10° and 5° steps, respectively, using the locally fitted Thon ring patterns to score each pair of tilt axis and angle, followed by local refinement of tilt axis, angle, and average defocus.
+Tilt estimation in CTFFIND5 follows a strategy that is similar to the implementation in CTFTILT (Mindell and Grigorieff, 2003). The tilt axis direction $ϕ$ and tilt angle $\theta$ are determined by fitting Thon ring patterns locally, calculated from 128×128 pixel tiles that form a regular grid covering the micrograph (Figure 1a). In this model, $ϕ$ has a positive value ranging from 0° to 360° and describes the angle of the tilt axis to the x-axis of the micrograph in the counterclockwise direction. The tilt angle $\theta$ has positive values ranging from 0° to 90° and describes the rotation of the sample around the tilt axis in a counterclockwise direction. It is assumed that the defocus variation across the sample can be described by a tilted plane. Fits are evaluated using correlation coefficients between modeled CTFs and Thon ring patterns. Initially, the micrograph pixel size is adjusted (binned) by Fourier cropping to match the resolution limit of the fit set by the user and the micrograph is cropped to be square in order to speed up computation. A power spectrum is calculated from this binned and cropped image, a smooth background is calculated using a box convolution (Mindell and Grigorieff, 2003) and subtracted, the power spectrum is further binned to the tile size (128×128 pixels), and the fit of the tilted Thon ring patterns across the micrograph is initialized by fitting this highly binned power spectrum with a non-astigmatic CTF. This fit is then refined using a two-dimensional CTF with astigmatism. Rough values for the tilt axis and angle are then determined in a systematic search in 10° and 5° steps, respectively, using the locally fitted Thon ring patterns to score each pair of tilt axis and angle, followed by local refinement of tilt axis, angle, and average defocus.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig1-v1.jpg)
 
-**Figure 1.:** (a) Power spectra are calculated in 128×128 pixel patches as indicated on a representative micrograph. The dots represent the locations of the patches and the box indicates patch size. (b) A model of the expected power spectrum in each patch given an average defocus , tilt angle Δf, and tilt axis θ is compared to the actual power spectra of tiles. After an optimal set of ϕ and θ has been found a corrected power spectrum is calculated by summing the tile power spectra, scaled to correct for the defocus difference. Power spectra shown are an exaggerated example. The convention of ϕ as a counterclockwise rotation from the ϕx-axis is indicated. (c) Comparison of the original power spectrum (EPA, solid line, blue) to the tilt-corrected power spectrum (solid line, black). The tilt-corrected power spectrum exhibits clear peaks at higher spatial resolution than the uncorrected power spectrum, as evident by the 'goodness-of-fit' scores (dashed lines). The estimated contrast transfer function (CTF) parameters are  for the uncorrected power spectrum and Δf1=10603Å,Δf2=10193Å,α=85.9∘ for the tilt-corrected power spectrum. The fit resolution is 5.9 Å for the uncorrected power spectrum (dashed line, blue) and 4.6 Å for the tilt-corrected spectrum (dashed line, black).Δf1=10492Å,Δf2=10342Å,α=81.2∘,θ=12.3∘,ϕ=261.6∘
+**Figure 1.:** (a) Power spectra are calculated in 128×128 pixel patches as indicated on a representative micrograph. The dots represent the locations of the patches and the box indicates patch size. (b) A model of the expected power spectrum in each patch given an average defocus $Δf$, tilt angle $\theta$, and tilt axis $ϕ$ is compared to the actual power spectra of tiles. After an optimal set of $\theta$ and $ϕ$ has been found a corrected power spectrum is calculated by summing the tile power spectra, scaled to correct for the defocus difference. Power spectra shown are an exaggerated example. The convention of $ϕ$ as a counterclockwise rotation from the x-axis is indicated. (c) Comparison of the original power spectrum (EPA, solid line, blue) to the tilt-corrected power spectrum (solid line, black). The tilt-corrected power spectrum exhibits clear peaks at higher spatial resolution than the uncorrected power spectrum, as evident by the 'goodness-of-fit' scores (dashed lines). The estimated contrast transfer function (CTF) parameters are $Δf_{1}=10603Å,Δf_{2}=10193Å,\alpha=85.9^{∘}$ for the uncorrected power spectrum and $Δf_{1}=10492Å,Δf_{2}=10342Å,\alpha=81.2^{∘},\theta=12.3^{∘},ϕ=261.6^{∘}$ for the tilt-corrected power spectrum. The fit resolution is 5.9 Å for the uncorrected power spectrum (dashed line, blue) and 4.6 Å for the tilt-corrected spectrum (dashed line, black).
 
-Finally, an average tilt-corrected power spectrum at a tile size requested by the user (usually 512×512 pixels) is calculated for diagnostic purposes and for further refinement of CTF parameters. The tilt correction is designed to remove most of the Thon ring blurring due to the defocus variation across the image. To minimize ring blurring, the power spectrum from each tile is adjusted according to its local average defocus, Δfaverage, by magnifying it by a factor m with(1)m=Δflocal/Δfaverage
+Finally, an average tilt-corrected power spectrum at a tile size requested by the user (usually 512×512 pixels) is calculated for diagnostic purposes and for further refinement of CTF parameters. The tilt correction is designed to remove most of the Thon ring blurring due to the defocus variation across the image. To minimize ring blurring, the power spectrum from each tile is adjusted according to its local average defocus, $Δf_{average}$, by magnifying it by a factor $m$ with
 
-Since Δflocal will assume values across the image that are both smaller and larger than Δfaverage, m will assume values smaller and larger than 1. The magnification/demagnification of the power spectrum compensates for the contraction/expansion of the Thon rings due to the local defocus change and produces approximately constant Thon ring patterns that can be averaged without losing the pattern (Figure 1b). The compensation will have a small error if the spherical aberration is not zero. However, this error is sufficiently small to not visibly affect the Thon rings in the average (Figure 2).
+$$
+m=\sqrt{Δf_{local}/Δf_{average}}
+$$
+
+Since $Δf_{local}$ will assume values across the image that are both smaller and larger than $Δf_{average}$, $m$ will assume values smaller and larger than 1. The magnification/demagnification of the power spectrum compensates for the contraction/expansion of the Thon rings due to the local defocus change and produces approximately constant Thon ring patterns that can be averaged without losing the pattern (Figure 1b). The compensation will have a small error if the spherical aberration is not zero. However, this error is sufficiently small to not visibly affect the Thon rings in the average (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig2-v1.jpg)
 
 **Figure 2.:** (a) Estimated tilt angle and axis of 40 micrographs of a tilt series taken on a focused ion beam (FIB)-milled biological specimen. For each image the tilt angle (dots, top plot) and tilt axis direction (crosses, second plot) are plotted as a function of the nominal stage angle. The data were fitted to a model of the specimen tilt and constant stage tilt axis before tilting the stage (red dashed line in first and second plot). The estimated stage tilt axis has an angle of 178.2° and the estimated specimen pre-tilt is 20.6° with a tilt axis of 171.8°, which is consistent with the FIB-milling angle of 20° and manual alignment of the milling direction to the goniometer tilt axis. The third plot shows the fit residuals for tilt angle and axis are plotted. The fourth and fifth plots show a plot of the estimated defocus value and fit resolution for each tilt image, as derived from CTFFIND4 (red) or CTFFIND5 (black). (b) Data for another tilt series plotted as described for (a). The estimated stage tilt axis is 179.8°, the estimated specimen pre-tilt is –21.9° with a tilt axis of 183.8°. This is consistent with this grid being inserted in the opposite orientation as the grid shown in (a), but still with a rough alignment of milling direction and tilt axis.
 
-## Verification of tilt estimation using tilted aquaporin crystals
+### Verification of tilt estimation using tilted aquaporin crystals
 
-To test the robustness and accuracy of the new fitting algorithm, the defocus and sample tilts of aquaporin 2D crystals (Murata et al., 2000) were estimated using a search range from 5000 Å to 50000 Å and a 100 Å step, low- and high-resolution limits of 30 Å to 5 Å, respectively, and a box size for the final power spectrum of 512 pixels. The estimated tilt angle θ and axis direction ϕ were compared with the values obtained by 2D crystallographic processing (Mindell and Grigorieff, 2003).
+To test the robustness and accuracy of the new fitting algorithm, the defocus and sample tilts of aquaporin 2D crystals (Murata et al., 2000) were estimated using a search range from 5000 Å to 50000 Å and a 100 Å step, low- and high-resolution limits of 30 Å to 5 Å, respectively, and a box size for the final power spectrum of 512 pixels. The estimated tilt angle $\theta$ and axis direction $ϕ$ were compared with the values obtained by 2D crystallographic processing (Mindell and Grigorieff, 2003).
 
-## Verification of tilt estimation using tilt series
+### Verification of tilt estimation using tilt series
 
 Lamellae prepared from ER-HoxB8 cells were imaged using a Titan Krios 300 keV TEM controlled by SerialEM (Mastronarde, 2005). For each dataset, an initial exposure was taken with a magnification of 64,000, resulting in a pixel size of 1.6 Å and an exposure of 30 e-/Å2. This was followed by the acquisition of a tilt series at a magnification of 48,000, resulting in a pixel size of 2.087 Å. A total of 35 tilt images at a tilt interval of 3° were collected from –51° to 51°, relative to the milling angle, using a grouped dose-symmetric scheme (Hagen et al., 2017). The exposure per tilt was 3 e-/Å2, resulting in a total exposure of 105 e-/Å2.
 
-Lamellae prepared by FIB milling usually exhibit a pre-tilt with respect to the grid surface due to the stage tilt in the FIB instrument. In the microscope, the direction of this pre-tilt will generally not line up with the goniometer tilt axis. For the alignment of a tomogram recorded from such a lamella, the relative orientation of these two axes will have to be determined, together with the precise amount of pre-tilt. We wrote a new cisTEM (Grant et al., 2018) program, called fit_tilt_model, to read the tilt angles and axes determined for each image in a tomographic tilt series and fit them to a model incorporating a pre-tilt and a single tomographic tilt axis. Using a rotation matrix R0 to represent the pre-tilt and rotation matrices Rtomi to represent the tomographic tilt angles and axis read from the microscope, the overall sample orientations are given by(2)Ri=Rtomi×R0
+Lamellae prepared by FIB milling usually exhibit a pre-tilt with respect to the grid surface due to the stage tilt in the FIB instrument. In the microscope, the direction of this pre-tilt will generally not line up with the goniometer tilt axis. For the alignment of a tomogram recorded from such a lamella, the relative orientation of these two axes will have to be determined, together with the precise amount of pre-tilt. We wrote a new cisTEM (Grant et al., 2018) program, called fit_tilt_model, to read the tilt angles and axes determined for each image in a tomographic tilt series and fit them to a model incorporating a pre-tilt and a single tomographic tilt axis. Using a rotation matrix $R_{0}$ to represent the pre-tilt and rotation matrices $R_{tom}^{i}$ to represent the tomographic tilt angles and axis read from the microscope, the overall sample orientations are given by
 
-R0 and Rtomi are calculated from the tilt angles θ and axes ϕ as(3)R=[cos⁡(ϕ)2+sin⁡(ϕ)2cos⁡(θ)cos⁡(ϕ)sin⁡(ϕ)(1−cos⁡(θ))sin⁡(ϕ)sin⁡(θ)cos⁡(ϕ)sin⁡(ϕ)(1−cos⁡(θ))cos⁡(ϕ)2cos⁡(θ)+sin⁡(ϕ)2−cos⁡(ϕ)sin⁡(θ)−sin⁡(ϕ)sin⁡(θ)cos⁡(ϕ)sin⁡(θ)cos⁡(θ)]
+$$
+R^{i}=R_{tom}^{i}\timesR_{0}
+$$
 
-Using the tilt information obtained with CTFFIND5, we now have a set of rotation matrices Ri, and together with the rotation matrices read from the microscope, Rtomi, we can calculate a set of pre-tilt estimates R0i from Equation 2. To determine the best overall pre-tilt R0, we determine the plane-normal vectors Vnormi=[x,y,z]T of the sample by applying R0i to the vector [0,0,1]T (z-coordinate along the beam direction), followed by calculating their mean Vnormmean=[xo,y0,z0]T as the normal vector of the best overall pre-tilt estimate. By calculating the root mean squared deviation of the normal vectors Vnormi, outliers can be identified and excluded to further refine Vnormmean. The pre-tilt can then be determined as:(4)θ0={cos−1⁡(z0)x0≥0−cos−1⁡(z0)x0<0ϕ0={tan−1⁡(−x0y0)y0≠0,ϕ0∈[0∘,180∘]90∘y0=0
+$R_{0}$ and $R_{tom}^{i}$ are calculated from the tilt angles $\theta$ and axes $ϕ$ as
+
+$$
+R=[cos⁡(ϕ)^{2}+sin⁡(ϕ)^{2}cos⁡(\theta)cos⁡(ϕ)sin⁡(ϕ)(1−cos⁡(\theta))sin⁡(ϕ)sin⁡(\theta)cos⁡(ϕ)sin⁡(ϕ)(1−cos⁡(\theta))cos⁡(ϕ)^{2}cos⁡(\theta)+sin⁡(ϕ)^{2}−cos⁡(ϕ)sin⁡(\theta)−sin⁡(ϕ)sin⁡(\theta)cos⁡(ϕ)sin⁡(\theta)cos⁡(\theta)]
+$$
+
+Using the tilt information obtained with CTFFIND5, we now have a set of rotation matrices $R^{i}$, and together with the rotation matrices read from the microscope, $R_{tom}^{i}$, we can calculate a set of pre-tilt estimates $R_{0}^{i}$ from Equation 2. To determine the best overall pre-tilt $R_{0}$, we determine the plane-normal vectors $V_{norm}^{i}=[x,y,z]^{T}$ of the sample by applying $R_{0}^{i}$ to the vector $[0,0,1]^{T}$ (z-coordinate along the beam direction), followed by calculating their mean $V_{norm}^{mean}=[x_{o},y_{0},z_{0}]^{T}$ as the normal vector of the best overall pre-tilt estimate. By calculating the root mean squared deviation of the normal vectors $V_{norm}^{i}$, outliers can be identified and excluded to further refine $V_{norm}^{mean}$. The pre-tilt can then be determined as:
+
+$$
+\theta_{0}={cos^{−1}⁡(z_{0})x_{0}\geq0−cos^{−1}⁡(z_{0})x_{0}<0ϕ_{0}={tan^{−1}⁡(−\frac{x_{0}}{y_{0}})y_{0}\neq0,ϕ_{0}\in[0^{∘},180^{∘}]90^{∘}y_{0}=0
+$$
 
 To generate more reliable defocus and tilt estimates, the defocus search range and resolution fitting range can be adjusted according to the experimental tilt range and image quality. For our cryoEM samples, the low- and high-resolution limits were set to 50 Å to 10 Å, respectively, and the defocus search interval was set to be between ±10,000 and ±20,000 Å from the nominal defocus set during data collection.
 
-## Sample thickness estimation
+### Sample thickness estimation
 
-In CTFFIND5 we implemented a new CTFt model function, based on the CTF function implemented in CTFFIND4 (Rohou and Grigorieff, 2015) and extended by the formula described by McMullan et al., 2015:(5)CTFt(λ,g,Δf,Cs,Δφ,ω2,t)=12(1−sinc(ξ(λ,g,t))cos(2χ(λ,|g|,Δf,Cs,Δφ,ω2)))
+In CTFFIND5 we implemented a new $CTF_{t}$ model function, based on the $CTF$ function implemented in CTFFIND4 (Rohou and Grigorieff, 2015) and extended by the formula described by McMullan et al., 2015:
 
-where χ denotes the phase shift as a function of the electron wavelength λ, the spatial frequency vector g, the objective defocus Δf, the spherical aberration Cs, the additional phase shift Δφ, and the fraction of amplitude contrast ω2. The modulation of the CTF due to sample thickness t is described by the function sincξ with ξ defined as:(6)ξ(λ,g,t)=πλg2t
+$$
+CTF_{t}(\lambda,g,Δf,C_{s},Δ\phi,\omega_{2},t)=\frac{1}{2}(1−sinc(ξ(\lambda,g,t))cos(2χ(\lambda,|g|,Δf,C_{s},Δ\phi,\omega_{2})))
+$$
+
+where $χ$ denotes the phase shift as a function of the electron wavelength $\lambda$, the spatial frequency vector $g$, the objective defocus $Δf$, the spherical aberration $C_{s}$, the additional phase shift $Δ\phi$, and the fraction of amplitude contrast $\omega_{2}$. The modulation of the CTF due to sample thickness $t$ is described by the function $sincξ$ with $ξ$ defined as:
+
+$$
+ξ(\lambda,g,t)=\pi\lambdag^{2}t
+$$
 
 This sinc modulation envelope (Figure 3a) attenuates the amplitude of the Thon rings with increasing spatial frequencies and produces nodes where the apparent amplitude is zero (Tichelaar et al., 2020). After the first node the Thon rings appear 'inverted' compared to the CTFFIND4 CTF model, with maxima in the Thon rings appearing where the CTF model is 0. This causes the quality of fit indicator to rapidly decrease at the first node in CTFFIND4. The location of the first node is marked with a # in Figure 3a.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig3-v1.jpg)
 
-**Figure 3.:** (a) Comparison of the contrast transfer function (CTF) model used in CTFFIND4, and after applying the modulation function (right) described by McMullan et al., 2015. A star symbol (*) denotes the position of the first zero in the CTF and a pound symbol (#) denotes the position of the first node. (b–d) Representative examples of Thon ring fitting in micrographs without (top-left graph) and with (bottom-left graph) thickness estimation. The micrograph is shown to the right. Each graph shows that equiphase averaging (EPA) of the power spectrum in solid black lines, the fitted CTF model in dashed red lines, and the goodness of fit indicator as a dotted blue lines. (b) Thon ring fitting of a micrograph taken from a focused ion beam (FIB) milling-derived lamella. The tilt of the specimen was estimated to be 12.3°. When fitting without thickness estimation the estimated parameters were . When taking sample thickness into account the estimated parameters were Δf1=10492Å,Δf2=10342Å,α=81.2∘. The estimated fit resolution was Δf1=10481Å,Δf2=10286Å,α=69.6∘,t=969Å and 4.6Å without and with sample thickness estimation, respectively. (3.4Åc) Thon ring fitting of a micrograph taken from a FIB milling-derived lamella. The tilt of the specimen was estimated to be 6.7°. When fitting without thickness estimation the estimated parameters were . When taking sample thickness into account the estimated parameters were Δf1=8002Å,Δf2=7717Å,α=73.4∘. The estimated fit resolution was Δf1=8549Å,Δf2=8343Å,α=63.3∘,t=2017Å and 4.3Å without and with sample thickness estimation, respectively. (4.2Åd) Thon ring fitting of a micrograph taken from plunge frozen rotavirus double-layered particles (Grant and Grigorieff, 2015). When fitting without thickness estimation the estimated parameters were . When taking sample thickness into account the estimated parameters were Δf1=7027Å,Δf2=6808Å,α=−20.3∘. The estimated fit resolution was Δf1=7027Å,Δf2=6808Å,α=−22.9∘,t=850Å and 4.2Å without and with sample thickness estimation, respectively.3.2Å
+**Figure 3.:** (a) Comparison of the contrast transfer function (CTF) model used in CTFFIND4, and after applying the modulation function (right) described by McMullan et al., 2015. A star symbol (*) denotes the position of the first zero in the CTF and a pound symbol (#) denotes the position of the first node. (b–d) Representative examples of Thon ring fitting in micrographs without (top-left graph) and with (bottom-left graph) thickness estimation. The micrograph is shown to the right. Each graph shows that equiphase averaging (EPA) of the power spectrum in solid black lines, the fitted CTF model in dashed red lines, and the goodness of fit indicator as a dotted blue lines. (b) Thon ring fitting of a micrograph taken from a focused ion beam (FIB) milling-derived lamella. The tilt of the specimen was estimated to be 12.3°. When fitting without thickness estimation the estimated parameters were $Δf_{1}=10492Å,Δf_{2}=10342Å,\alpha=81.2^{∘}$. When taking sample thickness into account the estimated parameters were $Δf_{1}=10481Å,Δf_{2}=10286Å,\alpha=69.6^{∘},t=969Å$. The estimated fit resolution was $4.6Å$ and $3.4Å$ without and with sample thickness estimation, respectively. (c) Thon ring fitting of a micrograph taken from a FIB milling-derived lamella. The tilt of the specimen was estimated to be 6.7°. When fitting without thickness estimation the estimated parameters were $Δf_{1}=8002Å,Δf_{2}=7717Å,\alpha=73.4^{∘}$. When taking sample thickness into account the estimated parameters were $Δf_{1}=8549Å,Δf_{2}=8343Å,\alpha=63.3^{∘},t=2017Å$. The estimated fit resolution was $4.3Å$ and $4.2Å$ without and with sample thickness estimation, respectively. (d) Thon ring fitting of a micrograph taken from plunge frozen rotavirus double-layered particles (Grant and Grigorieff, 2015). When fitting without thickness estimation the estimated parameters were $Δf_{1}=7027Å,Δf_{2}=6808Å,\alpha=−20.3^{∘}$. When taking sample thickness into account the estimated parameters were $Δf_{1}=7027Å,Δf_{2}=6808Å,\alpha=−22.9^{∘},t=850Å$. The estimated fit resolution was $4.2Å$ and $3.2Å$ without and with sample thickness estimation, respectively.
 
-If a user requests sample thickness estimation, the program will first fit the CTF model function as implemented in CTFFIND4. If the user also requested tilt estimation the tilt-corrected power spectrum will be used for all subsequent steps. Initially, the 'goodness-of-fit' resolution gGoF will be used as an estimate for the frequency of the first node of the CTFt function, which occurs when the sinc term in Equation 5 becomes 0 for the first time at ξ=π . By setting ξ=π in Equation 6, we can obtain an estimate of the sample thickness t, from gGoF:(7)t=1λgGoF2
+If a user requests sample thickness estimation, the program will first fit the $CTF$ model function as implemented in CTFFIND4. If the user also requested tilt estimation the tilt-corrected power spectrum will be used for all subsequent steps. Initially, the 'goodness-of-fit' resolution $g_{GoF}$ will be used as an estimate for the frequency of the first node of the $CTF_{t}$ function, which occurs when the sinc term in Equation 5 becomes 0 for the first time at $ξ=\pi$ . By setting $ξ=\pi$ in Equation 6, we can obtain an estimate of the sample thickness $t$, from $g_{GoF}$:
 
-If the option 'Brute-force 1D fit' is selected, CTFFIND5 will further refine t and Δf by calculating the normalized cross-correlation between the radial average of the power spectrum, corrected for astigmatism by equiphase averaging (EPA) as described in Zhang, 2016, and CTFt, searching systematically for the best combination of t in the range of 50–400 nm in 10 nm steps, and Δf in the range of ±200 nm from the previously fitted value, also in 10 nm steps.
+$$
+t=\frac{1}{\lambdag_{GoF}^{2}}
+$$
 
-Finally, if the option '2D-refinement' is selected, CTFFIND5 will optimize t, Δf1, Δf2, and ω using the same conjugate gradient algorithm used in CTFFIND4 and the normalized cross-correlation between CTFt and the 2D power spectrum as a scoring function.
+If the option 'Brute-force 1D fit' is selected, CTFFIND5 will further refine $t$ and $Δf$ by calculating the normalized cross-correlation between the radial average of the power spectrum, corrected for astigmatism by equiphase averaging (EPA) as described in Zhang, 2016, and $CTF_{t}$, searching systematically for the best combination of $t$ in the range of 50–400 nm in 10 nm steps, and $Δf$ in the range of ±200 nm from the previously fitted value, also in 10 nm steps.
 
-After the optimal values for t and Δf have been obtained the 'goodness-of-fit' cross-correlation is recalculated using CTFt, with a frequency window that is 1.5 times larger than in CTFFIND4 to avoid the drop-off in the node regions of CTFt. For visualization, the astigmatism-corrected 1D power spectrum is displayed as oscillating around 0.5, as opposed to the default procedure in CTFFIND4, where the minima are scaled to 0. This is done to allow a better visual comparison to the CTFt model.
+Finally, if the option '2D-refinement' is selected, CTFFIND5 will optimize $t$, $Δf_{1}$, $Δf_{2}$, and $\omega$ using the same conjugate gradient algorithm used in CTFFIND4 and the normalized cross-correlation between $CTF_{t}$ and the 2D power spectrum as a scoring function.
 
-## Verification of sample thickness estimation using the Beer-Lambert law
+After the optimal values for $t$ and $Δf$ have been obtained the 'goodness-of-fit' cross-correlation is recalculated using $CTF_{t}$, with a frequency window that is 1.5 times larger than in CTFFIND4 to avoid the drop-off in the node regions of $CTF_{t}$. For visualization, the astigmatism-corrected 1D power spectrum is displayed as oscillating around 0.5, as opposed to the default procedure in CTFFIND4, where the minima are scaled to 0. This is done to allow a better visual comparison to the $CTF_{t}$ model.
 
-We used 655 micrographs collected from one lamella of ER-HoxB8 cells (dataset Lamella ​EUC1 from Elferich et al., 2022). For each micrograph we calculated lnII0, where I was the sum of all pixels in the illuminated area of the movie and I0 was the average of this sum for 45 micrographs collected over vacuum with the same energy filter settings. This value is expected to have a linear relationship with the thickness of the sample consistent with the Beer-Lambert law (Rice et al., 2018; Yan et al., 2015):(8)ln(II0)=1κt
+### Verification of sample thickness estimation using the Beer-Lambert law
 
-where κ is the apparent mean free path for inelastic scattering.
+We used 655 micrographs collected from one lamella of ER-HoxB8 cells (dataset Lamella $​_{EUC}1$ from Elferich et al., 2022). For each micrograph we calculated $ln\frac{I}{I_{0}}$, where $I$ was the sum of all pixels in the illuminated area of the movie and $I_{0}$ was the average of this sum for 45 micrographs collected over vacuum with the same energy filter settings. This value is expected to have a linear relationship with the thickness of the sample consistent with the Beer-Lambert law (Rice et al., 2018; Yan et al., 2015):
 
-We then used CTFFIND5 to estimate the thickness t of each micrograph using the 'Brute-force 1D fit' and '2D-refinement' setting, low- and high-resolution limits set to 30 Å and 5 Å, defocus search range set between 500 nm and 5000 nm, and low- and high-resolution limits for thickness estimation set to 10 Å and 3 Å. We used a 'RANSAC' algorithm as implemented by the scikit-learn Python package (Pedregosa et al., 2011) to fit a linear model to the relationship of lnII0 and t, while rejecting outliers. We then manually inspected every outlier of the model fit and categorized the reason for the discrepancy into 'occluded beam' (either from contamination or the edges of the lamella), 'low image signal' (in most cases exposures containing no cellular features), 'carbon/platinum', and 'lipid droplet' (see Figure 4).
+$$
+ln(\frac{I}{I_{0}})=\frac{1}{κ}t
+$$
+
+where $κ$ is the apparent mean free path for inelastic scattering.
+
+We then used CTFFIND5 to estimate the thickness $t$ of each micrograph using the 'Brute-force 1D fit' and '2D-refinement' setting, low- and high-resolution limits set to 30 Å and 5 Å, defocus search range set between 500 nm and 5000 nm, and low- and high-resolution limits for thickness estimation set to 10 Å and 3 Å. We used a 'RANSAC' algorithm as implemented by the scikit-learn Python package (Pedregosa et al., 2011) to fit a linear model to the relationship of $ln\frac{I}{I_{0}}$ and $t$, while rejecting outliers. We then manually inspected every outlier of the model fit and categorized the reason for the discrepancy into 'occluded beam' (either from contamination or the edges of the lamella), 'low image signal' (in most cases exposures containing no cellular features), 'carbon/platinum', and 'lipid droplet' (see Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig4-v1.jpg)
 
 **Figure 4.:** An estimation of the linear relationship using the RANSAC algorithm results in a slope of 1/316.6 nm and an x-axis intercept at –14 nm (red dashed line). Data points that were labeled as outliers by the RANSAC algorithm were manually inspected and color-coded according to visual inspection of the micrographs.
 
-## Verification of sample thickness estimation using tomography
+### Verification of sample thickness estimation using tomography
 
 The same tilts series described in the section 'Verification of tilt estimation using tilt series' were used here. For tomographic reconstruction, tilt movie frame motion correction was performed using SerialEM (Mastronarde, 2005), and tilt series were aligned using the IMOD software package (version 4.11, Mastronarde and Held, 2017). For coarse alignment, a high-frequency cutoff radius of 0.15 was used. A fiducial model was generated using patch tracking with patches of 450×450 pixels and a fractional overlap of patches of 0.33×0.33. High-tilt frames were omitted while generating the fiducial model. Robust fitting with a tuning factor of 1 was used for fine alignment. After computing the alignment, the fiducial model was edited by removing unreliable patches, and then alignments were re-computed. The edited models with the lowest residual mean errors and standard deviations were used for fine alignment. Tomogram positioning was used to correct the tilt angle offset. Fully aligned stacks were generated with a binning factor of 4, resulting in a tomogram pixel size of 8.3 Å. Tomograms were reconstructed using the SIRT-like filtering option in IMOD (Mastronarde, 1997; Mastronarde and Held, 2017) and manually inspected. The tomograms were back-projected along the y-axis using a homemade script, generating a small set of XZ projections. Thickness measurements on the projected central slices were performed using the display program included with the cisTEM software package (Grant et al., 2018).
 
-## CTF correction of medium-magnification lamella images
+### CTF correction of medium-magnification lamella images
 
 The CTF of the representative medium-magnification image with a pixel size of 40 Å was estimated using CTFFIND5 with the following parameters: defocus range: 1,000,000–4,000,000 Å; search step 50,000 Å; low- and high-resolution limits: 400 Å and 80 Å. We then used the program apply_ctf, included with cisTEM, to flip the phases according to the estimated CTF. We furthermore implemented the Wiener-like filter described in Tegunov and Cramer, 2019, in apply_ctf to produce the image shown in Figure 6d.
 
-## Benchmarking CTFFIND5 runtimes
+### Benchmarking CTFFIND5 runtimes
 
 CTFFIND5 runtimes were measured using three representative micrographs (Table 2). As a baseline measurement, CTFFIND5 was run without estimation of tilt and sample thickness enabled. Then runtime was measured enabling either one of these options or both. Every test was repeated four times and the average and standard deviation of the last three runs are reported, to minimize the contribution of hard-drive speed. The tests were performed on a single core of an Intel Core i9-12900KF CPU.
 
 ## Results
 
-## Tilt estimation
+### Tilt estimation
 
 We tested the tilt correction for the Thon rings on a representative micrograph taken from a cryo-FIB-milled lamella. As expected, the correction results in the observation of Thon rings at higher spatial resolution (Figure 1c). In this example, correcting for the estimated moderate tilt of 12.3° improved the highest resolution at which a reasonable fit could be obtained from 5.9 Å to 4.6 Å. The power spectrum also appears less noisy, which can be attributed to some low-pass filtering that occurs with the interpolation of the Thon ring patterns of individual tiles to perform the tilt correction.
 
 To test the performance of the new CTFFIND5 sample tilt estimation, we used a dataset of images of tilted aquaporin crystals that were also used to benchmark the original CTFTILT implementation (Mindell and Grigorieff, 2003; Murata et al., 2000). Table 1 compares the tilt information of the samples obtained from crystallographic analysis and the estimates obtained using CTFFIND5. Overall, the results of CTFFIND5 agree well with the aquaporin crystals information. The average discrepancy was 1.9° for the tilt axis direction and 1.5° for the tilt angle.
 
+**Table 1.**
+ Comparison of CTFFIND5 estimation of sample tilt with crystallographic analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th colspan="3">Axis angle φ</th>
+      <th></th>
+      <th colspan="3">Tilt angle θ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Crystallog.</td>
+      <td>CTFFIND5</td>
+      <td>∆φ</td>
+      <td></td>
+      <td>Crystallog.</td>
+      <td>CTFFIND5</td>
+      <td>∆θ</td>
+    </tr>
+    <tr>
+      <td>530394</td>
+      <td>93.28</td>
+      <td>94.98</td>
+      <td>–1.7</td>
+      <td></td>
+      <td>19.6</td>
+      <td>20.69</td>
+      <td>–1.09</td>
+    </tr>
+    <tr>
+      <td>530419</td>
+      <td>109.78</td>
+      <td>106.51</td>
+      <td>3.27</td>
+      <td></td>
+      <td>18.66</td>
+      <td>16.04</td>
+      <td>2.62</td>
+    </tr>
+    <tr>
+      <td>530430</td>
+      <td>104.38</td>
+      <td>101.13</td>
+      <td>3.25</td>
+      <td></td>
+      <td>21.32</td>
+      <td>20.37</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>530444</td>
+      <td>98.39</td>
+      <td>97.62</td>
+      <td>0.77</td>
+      <td></td>
+      <td>20.72</td>
+      <td>20.88</td>
+      <td>–0.16</td>
+    </tr>
+    <tr>
+      <td>660027</td>
+      <td>99.68</td>
+      <td>102.34</td>
+      <td>–2.66</td>
+      <td></td>
+      <td>19.4</td>
+      <td>22.39</td>
+      <td>–2.99</td>
+    </tr>
+    <tr>
+      <td>540149</td>
+      <td>94.45</td>
+      <td>85.84</td>
+      <td>8.61</td>
+      <td></td>
+      <td>43.08</td>
+      <td>44.59</td>
+      <td>–1.51</td>
+    </tr>
+    <tr>
+      <td>540291</td>
+      <td>96.16</td>
+      <td>98.1</td>
+      <td>–1.94</td>
+      <td></td>
+      <td>45.11</td>
+      <td>40.68</td>
+      <td>4.43</td>
+    </tr>
+    <tr>
+      <td>540302</td>
+      <td>93.98</td>
+      <td>93.39</td>
+      <td>0.59</td>
+      <td></td>
+      <td>44.7</td>
+      <td>44.21</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>540313</td>
+      <td>95.34</td>
+      <td>95.13</td>
+      <td>0.21</td>
+      <td></td>
+      <td>44.03</td>
+      <td>46.49</td>
+      <td>–2.46</td>
+    </tr>
+    <tr>
+      <td>660183</td>
+      <td>97.69</td>
+      <td>97.27</td>
+      <td>0.42</td>
+      <td></td>
+      <td>48.13</td>
+      <td>48.99</td>
+      <td>–0.86</td>
+    </tr>
+    <tr>
+      <td>550069</td>
+      <td>90.08</td>
+      <td>92.55</td>
+      <td>–2.47</td>
+      <td></td>
+      <td>60.46</td>
+      <td>60.83</td>
+      <td>–0.37</td>
+    </tr>
+    <tr>
+      <td>550089</td>
+      <td>91.48</td>
+      <td>92.04</td>
+      <td>–0.56</td>
+      <td></td>
+      <td>60.5</td>
+      <td>60.72</td>
+      <td>–0.22</td>
+    </tr>
+    <tr>
+      <td>660291</td>
+      <td>93.23</td>
+      <td>92.19</td>
+      <td>1.04</td>
+      <td></td>
+      <td>57.59</td>
+      <td>59.19</td>
+      <td>–1.60</td>
+    </tr>
+    <tr>
+      <td>660421</td>
+      <td>89.32</td>
+      <td>89.06</td>
+      <td>0.26</td>
+      <td></td>
+      <td>61.36</td>
+      <td>60.01</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <td>680341</td>
+      <td>89.67</td>
+      <td>90.02</td>
+      <td>–0.35</td>
+      <td></td>
+      <td>58.68</td>
+      <td>59.62</td>
+      <td>–0.94</td>
+    </tr>
+    <tr>
+      <td>530345</td>
+      <td>N/A</td>
+      <td>108.6</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0.84</td>
+      <td>–0.84</td>
+    </tr>
+    <tr>
+      <td>530356</td>
+      <td>N/A</td>
+      <td>231.17</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>1.93</td>
+      <td>–1.93</td>
+    </tr>
+    <tr>
+      <td>530358</td>
+      <td>N/A</td>
+      <td>56.58</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>1.29</td>
+      <td>–1.29</td>
+    </tr>
+    <tr>
+      <td>530375</td>
+      <td>N/A</td>
+      <td>3.21</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0.79</td>
+      <td>–0.79</td>
+    </tr>
+    <tr>
+      <td>530378</td>
+      <td>N/A</td>
+      <td>67.6</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>2.17</td>
+      <td>–2.17</td>
+    </tr>
+  </tbody>
+</table>
+
 To test whether CTFFIND5 would be able to correctly assign tilt axis and angle for tilt series data, we analyzed two tilt series from different grids of lamellae prepared by cryo-FIB milling from mouse neutrophil-like cells (Elferich et al., 2022). We then plotted the estimated values for tilt axis and angle as a function of nominal stage tilt (Figure 2). The estimated tilt angle shows a roughly linear relationship with the nominal stage tilt, but since CTFFIND5 reports only positive tilt angles the overall plot has a V-shape. The estimated tilt axis angle is approximately constant at high tilts but changes by about 180° at 0° estimated tilt, again due to the convention enforced by CTFFIND5. Notably, in both examples there is an offset of about 20° between nominal and estimated tilts, which is due to the pre-tilt of the specimen caused by FIB milling at a shallow angle. To quantify and delineate both the tilt axis direction of the microscope and the pre-tilt of the specimen we fit all values to a model as described in Methods (Figure 2). The fitting resulted in an estimated tilt axis angle of 178.2° and 179.8°, respectively, which is consistent with the SerialEM calibration of 178.4° and 176.3° for the stage tilt axis. The estimated pre-tilt values were 20.6 °and –21.9°, consistent with a FIB-milling angle of 20° and opposite orientation of the grids relative to the milling direction. The pre-tilt axis angles were estimated as 171.8° and 183.8°, which is consistent with the error expected from manually aligning the milling direction when inserting grids into the microscope.
 
 To estimate the accuracy of the tilt estimation in tilt series, we calculated the mean absolute difference between the tilt and axis-angle estimates and the fitted model, excluding the axis-angle estimates at tilt angles under 5°. For the first tilt series we obtained accuracy estimates of 2.08° and 2.58° for tilt and axis angles, respectively. In the second tilt series the accuracy estimates were 3.95° and 9.47°. In both cases the accuracy was lower than for the tilted aquaporin crystals, presumably due to the relatively short exposure of each micrograph in the tilt series. However, the substantially higher mean differences in the second tilt series suggest that the accuracy is highly dependent on the quality of the underlying data.
 
-## Sample thickness estimation
+### Sample thickness estimation
 
 Even after correcting for sample tilt we found that for FIB-milled samples we often could observe Thon ring-like modulation in the power spectrum at higher resolution than suggested by the goodness-of-fit estimate (Figure 3b, top plot). These modulations are out of phase with the predicted modulations, as described by McMullan et al., 2015, and Tichelaar et al., 2020. We therefore implemented an extension of the CTF model as described by McMullan et al., 2015; Figure 3a. For some images we found that the thickness could be well estimated by assuming that the goodness-of-fit resolution estimate obtained using the old model implemented in CTFFIND4 corresponds to the first node in the modulation function, according to Equation 7. With our new model, estimated CTF parameters were very similar to those from CTFFIND4, but the fit in CTFFIND5 extended to higher resolution (Figure 3b).
 
@@ -124,19 +383,19 @@ In other images, mostly with defocus values under 1 µm and with a sample thickn
 
 Based on these results we conclude that CTFFIND5 will provide more accurate CTF parameters for images of thick samples, such as those generated from FIB milling. In addition, the fit provides a direct readout of the specimen thickness, which is important for judging specimen quality and the potential for high-resolution information that can be recovered from these images.
 
-## Estimating the accuracy of sample thickness estimation using the Beer-Lambert law on energy filtered data
+### Estimating the accuracy of sample thickness estimation using the Beer-Lambert law on energy filtered data
 
-CryoEM is frequently performed using an energy filter to remove inelastically scattered electrons. The fraction of inelastically scattered electrons can be described by the Beer-Lambert law, which states that the fraction of electrons removed from the image is proportional to the thickness of the sample. The apparent mean free path for electron scattering has been experimentally determined for common cryoEM conditions (Rice et al., 2018). To test whether thickness estimation in CTFFIND5 is consistent with this method, we used a dataset of 655 exposures of a lamella of ER-HoxB8 cells collected using the DeCo-LACE approach (Elferich et al., 2022). We used CTFFIND5 to estimate the thickness t of every exposure and plotted −lnII0 against t (Figure 4). Fitting the data to a linear model described in Methods (Equation 8), we found that 568 out of 655 exposures followed closely a linear relationship with a mean free path κ of 317 nm. Manual inspection of images that did not follow this linear relationship revealed that they either contained visible ice contamination, platinum deposits, or they were collected over ice without cellular features and displayed weak Thon rings. The value of κ is consistent with the value found by Rice et al., 2018, even though our dataset was collected without an objective aperture. The x-axis intercept of the linear model was –14.1 nm, meaning that the node position systematically predicts a smaller thickness than predicted by the Beer-Lambert law. This discrepancy is further discussed in the next section. To estimate the accuracy of the sample thickness determined by CTFFIND5, we calculated the mean absolute difference to the linear model, which was 4.8 nm. These data suggest that sample thickness determination using node fitting is an alternative to using the Beer-Lambert law that has the advantage of not relying on the constant κ and the intensity I0, both of which might not be readily available. Also, the two approaches are complementary as they rely on orthogonal mechanisms.
+CryoEM is frequently performed using an energy filter to remove inelastically scattered electrons. The fraction of inelastically scattered electrons can be described by the Beer-Lambert law, which states that the fraction of electrons removed from the image is proportional to the thickness of the sample. The apparent mean free path for electron scattering has been experimentally determined for common cryoEM conditions (Rice et al., 2018). To test whether thickness estimation in CTFFIND5 is consistent with this method, we used a dataset of 655 exposures of a lamella of ER-HoxB8 cells collected using the DeCo-LACE approach (Elferich et al., 2022). We used CTFFIND5 to estimate the thickness $t$ of every exposure and plotted $−ln\frac{I}{I_{0}}$ against $t$ (Figure 4). Fitting the data to a linear model described in Methods (Equation 8), we found that 568 out of 655 exposures followed closely a linear relationship with a mean free path $κ$ of 317 nm. Manual inspection of images that did not follow this linear relationship revealed that they either contained visible ice contamination, platinum deposits, or they were collected over ice without cellular features and displayed weak Thon rings. The value of $κ$ is consistent with the value found by Rice et al., 2018, even though our dataset was collected without an objective aperture. The x-axis intercept of the linear model was –14.1 nm, meaning that the node position systematically predicts a smaller thickness than predicted by the Beer-Lambert law. This discrepancy is further discussed in the next section. To estimate the accuracy of the sample thickness determined by CTFFIND5, we calculated the mean absolute difference to the linear model, which was 4.8 nm. These data suggest that sample thickness determination using node fitting is an alternative to using the Beer-Lambert law that has the advantage of not relying on the constant $κ$ and the intensity $I_{0}$, both of which might not be readily available. Also, the two approaches are complementary as they rely on orthogonal mechanisms.
 
-## Estimating the accuracy of sample thickness estimation using tomography
+### Estimating the accuracy of sample thickness estimation using tomography
 
-We used a dataset of seven micrographs collected from lamellae of ER-HoxB8 cells together with tilt series collected afterward from the same locations to verify the accuracy of the thickness estimates obtained using CTFFIND5. We used CTFFIND5 to estimate the thickness (tCTFFIND) for every location and compared it with the thickness estimated from the tomogram reconstructed from the tilt series (tTOMO). We measured tTOMO by manually estimating the distance between the surfaces of the lamella in three different positions. When we plotted tCTFFIND against tTOMO we found that the values were highly correlated, but tTOMO was consistently smaller than tCTFFIND (Figure 5). A linear fit revealed a slope of 0.95 and a y-axis intercept of 0.12 nm. This means that the CTFFIND5 thickness estimate is on average 1.05× higher than the thickness estimated by tomography. Tichelaar et al., 2020, also report that estimating the thickness from the CTF nodes resulted in values roughly 1.1× higher than estimated by tomography. The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear, but since they are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.
+We used a dataset of seven micrographs collected from lamellae of ER-HoxB8 cells together with tilt series collected afterward from the same locations to verify the accuracy of the thickness estimates obtained using CTFFIND5. We used CTFFIND5 to estimate the thickness ($t_{CTFFIND}$) for every location and compared it with the thickness estimated from the tomogram reconstructed from the tilt series ($t_{TOMO}$). We measured $t_{TOMO}$ by manually estimating the distance between the surfaces of the lamella in three different positions. When we plotted $t_{CTFFIND}$ against $t_{TOMO}$ we found that the values were highly correlated, but $t_{TOMO}$ was consistently smaller than $t_{CTFFIND}$ (Figure 5). A linear fit revealed a slope of 0.95 and a y-axis intercept of 0.12 nm. This means that the CTFFIND5 thickness estimate is on average 1.05× higher than the thickness estimated by tomography. Tichelaar et al., 2020, also report that estimating the thickness from the CTF nodes resulted in values roughly 1.1× higher than estimated by tomography. The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear, but since they are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig5-v1.jpg)
 
 **Figure 5.:** The distribution of thickness measurements in seven tomograms are shown as box plots with the median indicated by a red line. For each tomogram, the thickness was measured in three different places. The position on the x-axis corresponds to the thickness estimate by CTFFIND5. The black dashed line indicates identity. The red dashed line indicates the result of a linear fit.
 
-## CTF estimation and correction assists biological interpretation of intermediate-magnification lamella images
+### CTF estimation and correction assists biological interpretation of intermediate-magnification lamella images
 
 During data collection of cryoEM data in cells, the operator frequently relies on images taken at low magnification to select areas of interest and establish their biological context. The pixel size of these images is usually about 40 Å, with a defocus of about 200 µm. This produces strong contrast from biological membranes but can sometimes also lead to substantial fringes near these membranes (Figure 6a). We found that a simple CTF correction based on CTFFIND defocus estimates obtained from the overview images can reduce these fringes (Figure 6b). A simple CTF correction can be done using the program apply_ctf, included with cisTEM, by phase flipping according to the fitted CTF (Figure 6c). However, we found that including a Wiener filter-based amplitude correction described by Tegunov and Cramer, 2019, produces a more naturally looking image that might be best suited to recognize cellular features (Figure 6d).
 
@@ -144,11 +403,97 @@ During data collection of cryoEM data in cells, the operator frequently relies o
 
 **Figure 6.:** (a) Representative area of a micrograph of a cellular sample at a pixel size of 40 Å without CTF correction. (b) Fit of the power spectrum of the micrograph shown in panel (a) CTF model. (c–d) The same micrograph as shown in panel (a) after CTF correction by phase flipping (c) or with a Wiener-like filter (d). The custom fall-off parameter was set to 1.3 and the custom strength parameter was set to 0.7.
 
-## CTFFIND5 runtimes
+### CTFFIND5 runtimes
 
 To gauge the ability of CTFFIND5 to provide real-time feedback during cryoEM data collection, we measured its runtime on three representative micrographs (Table 2). Without estimation of tilt or sample thickness CTFFIND5 performed CTF estimation roughly within a second. Estimation of the sample thickness adds roughly half a second to the runtime, therefore allowing CTF estimation within a timeframe comparable to typical exposure times. Estimation of the tilt on the other hand increased runtimes substantially to the order of several minutes, due to the exhaustive search of potential tilts over hundreds of power spectra. While these runtimes are substantially slower than cryoEM data acquisition, near real-time estimation can be achieved by using multiple CPU cores. Furthermore, optimization of the number of tiles used, better search algorithms, or implementations employing GPUs could increase the speed to the point where real-time estimation is more feasible.
 
-## Conclusion
+**Table 2.**
+ Runtime of CTFFIND5 on representative micrographs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Micrograph</th>
+      <th></th>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Image properties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Image size</td>
+      <td></td>
+      <td></td>
+      <td>4070×2892</td>
+      <td>2880×2046</td>
+      <td>4746×3370</td>
+    </tr>
+    <tr>
+      <td colspan="3">Pixel size (Å)</td>
+      <td>1.5</td>
+      <td>4.175</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Runtime (s)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tilt</td>
+      <td colspan="2">Thickness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>0.9±0.1</td>
+      <td>0.7±0.1</td>
+      <td>1.7±0.1</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>–</td>
+      <td></td>
+      <td>39.0±0.2</td>
+      <td>208±1</td>
+      <td>173.4±0.1</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>+</td>
+      <td></td>
+      <td>1.4±0.1</td>
+      <td>1.3±0.1</td>
+      <td>2.4±0.1</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td>39.5±0.1</td>
+      <td>209±1</td>
+      <td>173.0±0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conclusion
 
 The new features implemented in CTFFIND5 improve CTF estimation from the power spectra of cryoEM micrographs where assumptions made in its predecessor, CTFFIND4, namely a thin and untilted sample, do not hold. The tilt of the sample is estimated by fitting the CTF to the power spectra calculated from small patches across the image, similar to other software including CTFTilt (Mindell and Grigorieff, 2003), Ctfplotter (Mastronarde, 2024; Xiong et al., 2009), goCTF (Su, 2019), Bsoft (Heymann and Belnap, 2007), and Warp (Tegunov and Cramer, 2019). After estimation of the sample tilt, a tilt-corrected power spectrum is produced that exhibits stronger Thon rings at higher resolution.
 

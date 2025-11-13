@@ -36,9 +36,17 @@ We designed our host and microbe amplicons to have slightly different lengths, s
 
 ## Results
 
-## hamPCR generates quantitative sequencing-based microbial load
+### hamPCR generates quantitative sequencing-based microbial load
 
 The first two-cycle host-and-microbe template tagging step (‘HM-tagging’) of hamPCR multiplexes two or more primer pairs in the same reaction, at least one of which targets a single- or low-copy host gene (Appendix 1—figure 1). The HM-tagging primers are then cleaned with Solid Phase Reversible Immobilization (SPRI) magnetic beads (Rohland and Reich, 2012; Appendix 1—figure 2). Next, an exponential PCR of 20–30 cycles is performed using universal barcoded primers (Figure 1a, Appendix 1—figure 1). As a host amplicon in A. thaliana samples, we targeted a fragment of the GIGANTEA (GI) gene, which is well conserved and present as a single copy in A. thaliana and many other plant species (Duarte et al., 2010). As microbial amplicons, we initially targeted widely used regions of 16S rDNA. Further considerations for primer design are discussed in Appendix 1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic showing the two steps of hamPCR. The HM-tagging reaction (left) shows two primer pairs: one for the host (E-a and F-b) and one for microbes (E-c and F-d). Each primer pair adds the same universal overhangs E and F. The PCR reaction (right) shows a single primer pair (P7-E and P5-i-F) that can amplify all tagged products. (b) Representative 2% agarose gel of hamPCR products from the synthetic titration panel, showing a V4 16S rDNA amplicon at ~420 bp and an A. thaliana GI amplicon at 502 bp. The barplot underneath shows the predicted number of original GI and 16S rDNA template copies. Numbers boxed below the barplot indicate the percent bacterial genomic DNA of total DNA. (c) Relative abundance of the host and microbial ASVs in the synthetic titration panel, as determined by amplicon counting. Pure E. coli, pure A. thaliana without PNAs, and blanks were excluded. (d) Data in (c) converted to microbial load by dividing by host abundance, with a fourth-root transformed y-axis to better visualize lower abundances.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) hamPCR using the 502 bp A. thaliana GI amplicon and the ~420 bp V4 16S rDNA amplicon (515F - 799R) was performed with the samples of the synthetic titration panel, and 5 μL of the PCR product from each sample was analyzed on a 2% agarose gel. This was done across four replicates each prepared with an independent PCR master mix. Due to a technical failure in replicate 1, the sample with 0.25% bacteria did not yield any product and was redone in a separate reaction. (b) The same as (a), except using the ~587 bp V3V4 16S rDNA amplicon (341F - 799R). (c) The same as (a) and (b), except using the 466 bp A. thaliana GI amplicon and the ~540 bp V5V6V7 16S rDNA amplicon (799F - 1192R). This 16S rDNA primer set also amplifies a ~770 bp region of mitochondria, producing a final amplicon of about 900 bp. In practice, the mitochondrial band is usually removed by gel extraction of the desired amplicons prior to sequencing.
 
 To assess the technical reproducibility of the protocol, we made a titration panel of artificial samples combining varying amounts of pure A. thaliana plant DNA with pure bacterial DNA that reflects a simple synthetic community (Materials and methods). These represented a realistic range of bacterial concentrations as previously observed from WMS of wild leaves, ranging from about 0.25% to 24% bacterial DNA (Regalado et al., 2020). All DNA preps employed heavy bead beating to ensure thorough lysis of both host and microbes, as an incomplete DNA extraction can lead to underrepresentation of hard-to-lyse cells (Albertsen et al., 2015; Yuan et al., 2012). We applied hamPCR to the panel, pairing each of three commonly-used 16S rDNA amplicons for the V4, V3V4, and V5V6V7 variable regions with either a 502 bp or 466 bp GI amplicon (Materials and methods, Supplementary file 1), such that the host and microbial amplicons differed by approximately 80 bp in length and were resolvable by gel electrophoresis. In all pairings, the GI band intensity increased as the 16S rDNA band intensity decreased (Figure 1b, Figure 1—figure supplement 1).
 
@@ -46,29 +54,61 @@ Focusing on the V4 16S rDNA primer set, 515F - 799R, paired with the 502 bp GI a
 
 After identifying the ASVs corresponding to host GI and the bacteria in the synthetic community, we plotted the relative abundance of A. thaliana GI, the three Sphingomonas ASVs, and the single E. coli ASV across the samples of the titration panel (Figure 1c). There was high consistency between the four replicates, more than what was visually apparent in the gel (Figure 1c, Figure 1—figure supplement 1). We next divided ASV abundances in each sample by the abundance of the host ASV in that sample to give the quantity of microbes per unit of host, a measure of the microbial load. Plotting the data with a fourth-root transformed Y axis for better visualization of low bacterial loads, we observed consistent and accurate quantification of absolute microbial abundance from 0 up to about 16% total bacterial DNA (Figure 1d). Through this range, the actual sequence counts for total bacteria matched theoretical expectations based on the volumes pipetted to make the titration (solid black line, Figure 1d). At 16% bacterial DNA, bacteria contributed more than 96% of sequences, and the microbe-to-host template ratio was near 25. At higher microbial loads the trend was still apparent, and the decrease in precision was likely exacerbated by the effects of small numbers; when the host ASV abundance is used as a denominator and the abundance approaches 0, load approaches infinity and sampling error has a greater and greater influence on the quotient. Eventually, this creates unacceptable uncertainty. We defined a ‘noise factor’ N as the full range in microbial load quotients that would result from adding a single host count and subtracting a microbial count from a sample ([microbe counts + 1] / [host counts - 1]) or vice versa ([microbe counts - 1] / [host counts + 1]). N increases as microbial load increases, but this is overcome with increased total sequencing depth. We determined conservatively that samples for which N > 0.22 should only be classified as ‘highly colonized’, and should not be used for quantitative measurements (Appendix 1—figure 3). In our case, only a minority of highly infected hosts reached bacterial abundances above the highly quantitative range.
 
-## hamPCR does not distort the detected composition of the microbial community
+### hamPCR does not distort the detected composition of the microbial community
 
 We amplified products from a wild A. thaliana phyllosphere template DNA preparation (Regalado et al., 2020), either with four technical replicates using V4 16S rDNA primers alone, or alternatively with four technical replicates using hamPCR. After sequencing and deriving ASVs, we first compared ASV abundances within identically-prepared replicates of the pure 16S rDNA protocol to demonstrate best-case technical reproducibility of this established technique. As expected, this resulted in a nearly perfect correlation, with a coefficient of determination R2 of 0.99 and abundance distributions that were indistinguishable by a Kolmogorov–Smirnov test (Figure 2b). Next, we removed the ASV corresponding to A. thaliana GI from the hamPCR data and rescaled the remaining microbial ASVs to 100% to give relative abundance data. We then compared microbial ASVs from the four pure 16S rDNA replicates to those from the four rescaled hamPCR replicates. In this comparison as well, R2 was 0.99 and the distributions were essentially identical (Figure 2c). Thus, the inclusion of a host amplicon in the reaction did not introduce taxonomic biases.
 
-## Sensitivity to number of HM-tagging cycles and template concentration
+![Figure 2.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig2-v2.jpg)
+
+**Figure 2.:** (a) DNA extracted from wild A. thaliana phyllospheres was used as a template for both V4 16S rDNA PCR (left, 515F and 799R) and hamPCR (right, V4 16S rDNA and GI 502 bp primers). Four replicates were produced with two cycles of the HM-tagging reaction and 30 cycles of PCR, and additional replicates with 3 to 10 HM-tagging cycles paired with 29 to 22 PCR cycles (for a constant total of 32 cycles). The stacked columns show the relative abundances of major ASVs. Boxed upper case letters demarcate groups of samples compared below. (b) Correlation of fourth-root transformed ASV abundances for the 16S rDNA samples above panel (a) box [A] to the 16S rDNA samples above box [B]. Only ASVs with a minimum relative abundance of 0.05% were compared. R2, coefficient of determination. p-value from Kolmogorov-Smirnov test. (c) Same as (b), but for the four 16S rDNA samples above box [A] and [B] compared to the four hamPCR samples above box [D]. For hamPCR, the A. thaliana GI ASV was removed and the bacterial ASVs were rescaled to 100% prior to the comparison. (d) Same as (b) and (c), but for the four 16S rDNA samples above box [A] and [B] compared to the 16S rDNA samples above box [C]. (e) Same as (b), (c), and (d), but for the four hamPCR samples above box [D] compared to the four hamPCR samples above box [E].
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) hamPCR using only primers for the V4 region of the 16S rDNA (primers 515F - 799R) was run on pooled DNA made from wild A. thaliana leaves. This represents the output of common two-step 16S rDNA amplification protocols. Four replicates were produced with two cycles of the HM-tagging reaction and 30 cycles PCR, and additional replicates were produced with 3-10 HM-tagging cycles paired with 29 to 22 PCR cycles (for a total of 32 cycles), as shown under panel C. (b) The same DNA, PCR master mix, and cycling conditions as in (a), except with the addition of primers for the 502 bp A. thaliana GI amplicon. (c) The same as in (b), except with a synthetic plasmid template containing a fragment of the A. thaliana GI gene and 16S rDNA from Pst DC3000 in a 1:1 ratio. HM-tagging cycles and PCR cycles for each lane are shown beneath.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A synthetic plasmid-borne template including the Pst DC3000 16S rDNA and a portion of the A. thaliana GI gene was used as template for hamPCR using the V4 region of the 16S rDNA (primers 515F - 799R) and the 502 bp A. thaliana GI amplicon. Four replicates were produced with two cycles of the HM-tagging reaction and 30 cycles PCR, and additional replicates were produced with 3-10 HM-tagging cycles paired with 29 to 22 PCR cycles (for a total of 32 cycles). A technical error resulted in no data for 5 HM-tagging cycles (see Figure 2—figure supplement 1). The number of HM-tagging cycles did not influence the ratio of host to microbe, and the host amplicon was slightly, but consistently overrepresented at 56.5% of the total sequence in these samples.
+
+### Sensitivity to number of HM-tagging cycles and template concentration
 
 Two HM-tagging cycles minimize amplification biases that might otherwise have compounding effects due to differential primer efficiencies for the host and microbial templates. However, for templates at borderline low concentrations, inefficiencies due to SPRI cleanup could represent a bottleneck in amplification. Additionally, some techniques that prevent off-target organelle amplification (Agler et al., 2016b; Song and Xie, 2020) may benefit from additional HM-tagging cycles. To investigate the sensitivity of the results to additional HM-tagging cycles, we applied hamPCR for 2 through 10 HM-tagging cycles, both on the wild A. thaliana phyllosphere DNA described above and on a synthetic plasmid-borne template that contains bacterial rDNA and a partial A. thaliana GI gene template in cis in a 1:1 ratio (Appendix 1 - Discussion 2). Surprisingly, for the primers used here, there was no apparent influence of additional HM-tagging cycles, as 7–10 HM-tagging cycles yielded the same distribution of host and 16S rDNA ASV abundances as two cycles (Kolmogorov-Smirnov test, p > 0.47). This was true for hamPCR and for 16S rDNA primers alone (Figure 2d and e). This ideal result may not be achievable for all primer pairs and should be tested experimentally, but it is consistent with data that either 5 or 7 HM-tagging cycles gave comparable results for quantifying the human immune receptor repertoire (Carlson et al., 2013), and with the fact that properly designed multiplex reactions can be used in qPCR that is carried out with many cycles (Vet et al., 1999). We noticed that application of hamPCR to the 1:1 synthetic template yielded an average of 56.5% host GI and 43.5% bacteria, invariant with HM-tagging cycle number (Figure 2—figure supplement 1 and Figure 2—figure supplement 2). This slight and consistent bias in favor of GI may be a result of slight differences in HM-tagging primer efficiency or primer concentration, and should be fine-tunable by altering primer concentration (Carlson et al., 2013; Appendix 1—figure 4).
 
 As a further exploration of the robustness of the protocol, we applied hamPCR to a range of total A. thaliana leaf template concentrations of between 5 and 500 ng total DNA per reaction, covering a typical template range of 5–100 ng. Through the typical range, there was no difference in microbe or host ASV abundances. At 200 ng or above, the host amplicon seemed to be slightly favored, possibly because the 16S rDNA primers started to become limiting at these concentrations (Appendix 1—figure 5).
 
-## Pre-sequencing adjustment of host-to-microbe ratio
+### Pre-sequencing adjustment of host-to-microbe ratio
 
 Some host DNA must be present so that microbial load can be calculated, but sequencing too much host DNA would add unnecessary expense. We realized that the size difference between host and microbe bands in hamPCR affords not only independent visualization of both amplicons on a single gel, but also allows convenient and easy adjustment of the host and microbial signals in the pooled library prior to sequencing, in order to improve cost effectiveness. We developed a strategy by which the final hamPCR amplicons are pooled and one aliquot of the pool is rebarcoded to form a reference sample that preserves the original host- to- microbe ratio. The remainder of the pool is run on a gel and the host and microbial bands are separately purified, quantified, and remixed (e.g. to reduce host and gain more microbial resolution). The rebarcoded reference sample, which was not remixed and thereby preserves the original ratio, can be sequenced separately or spiked into the remixed library prior to sequencing. Following sequencing, the reference sample provides the key to the correct host and microbe proportions, allowing simple scaling of the entire library back to original levels (Figure 3a, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig3-v2.jpg)
+
+**Figure 3.:** (a) Scheme of remixing process. (i): Products of individual PCRs are pooled at equimolar ratios into a single tube. (ii): An aliquot of DNA from the pool in (i) is re-amplified with eight cycles of PCR to replace all barcodes in the pool with a new barcode, creating a reference sample. (iii): An aliquot of the pool from (i) is physically separated into host and microbial fractions via agarose gel electrophoresis. (iv): The host and microbial fractions and the reference sample are pooled in the ratio desired for sequencing. (v): All sequences are quality filtered, demultiplexed, and taxonomically classified using the same parameters. (vi): Host and microbial amplicon counts are summed from the samples comprising the pooled library (h and m, respectively), and from the reference sample (H and M). (vi): H, h, M, and m are used to calculate the scaling constant f for the dataset. All host sequence counts are multiplied by f to reconstruct the original microbe-to-host ratios. (vii): Reconstructed original abundances. (b) Relative abundance (RA) of actual sequence counts from our original HiSeq 3000 run. (c) Relative abundance of actual sequence counts from our adjusted library showing reduced host and four reference samples. (d) The data from (c) after reconstructing original host abundance using the reference samples. (e) The total fraction of host vs. other ASVs in the original library, reduced host library, and reconstruction. (f) Relative abundances in the original and reconstructed library for all ASVs with a 0.05% minimum abundance, shown on fourth-root transformed axes. R2, coefficient of determination. p-Value from Kolmogorov–Smirnov test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PCR products analyzed on a 2% agarose gel. Because the host and microbe amplicons have different lengths, they migrate at different speeds and can be independently resolved. (b) The total DNA concentration of each PCR product is measured. (c) The samples are pooled at equimolar ratios into a single tube. (d) A very small aliquot of the pool from (c) is re-amplified with eight cycles of PCR to replace all barcodes in the pool with a new barcode, creating a reference sample which is set aside. (e) A large aliquot of the pool from (c) is run on an agarose gel to physically separate the host and microbial fractions. These fractions are separately purified and quantified. Because the extraction is done on the pool, samples are not differentially affected by extraction inefficiencies. (f) The DNA concentrations in the host fraction, microbial fraction, and reference sample are each quantified, and the desired molarity of each is aliquoted. Here, host amplicons are depleted to approximately 5% of the total library. The actual mixing ratio is not important, because the reference sample preserves the correct ratio of host to microbe. (g) The reduced host fraction, microbial fraction, and the reference sample are pooled for sequencing. (h) All sequences are quality filtered, demultiplexed, and taxonomically classified using the same parameters. (i) Host and microbe sequence counts are summed from the samples comprising the pooled library (h and m respectively), and from the reference sample (H and M respectively). (j) H, h, M, and m are used to calculate the scaling constant f for the dataset. All host sequence counts are multiplied by f to reconstruct the original microbe-to-host ratios. (k) Reconstructed original abundances (compare to original abundances in B). (l) Finally, each sample is divided by host abundance to normalize host counts, resulting in microbial sequence counts that represent the microbial load of each micobe on the host.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Gel showing four replicate reference samples made from the original pool, confirming successful re-barcoding. For each pair of lanes, the left lane is 5 μL of the PCR reaction prior to eight cycles of amplification, and the right lane is 5 μL after cycling. Size separation of the original pool for purification of the host (GI) and microbial (16S) fractions is shown in the wide lane. (b) Bioanalyzer trace of the original pool, showing nearly equally abundant host and microbial fractions. (c) Bioanalyzer trace of the purified host fraction. While some host fraction has been inadvertently co-purified, this does not influence the overall outcome. (d) Bioanalyzer trace of the purified host fraction. While a small amount of the microbial fraction has been inadvertently co-purified, this does not influence the overall outcome. (e) Bioanalyzer trace of the remixed reduced host library.
+
 To demonstrate this concept, we prepared four replicate reference samples for our HiSeq 3000 run, which included much of the data from Figure 1 and Figure 2, and then separately purified the host and microbial fractions of the library (Figure 3—figure supplements 1 and 2). Based on estimated amplicon molarities of the host and microbial fractions, we remixed them, aiming for a sufficient but cost-efficient amount of 5% host DNA, added the reference samples, and sequenced the final mix as part of a new HiSeq 3000 lane. A stacked-column plot of relative abundances for all samples on the original run clearly showed the host A. thaliana GI ASV highly abundant in some samples, on average responsible for about 22% of total sequences in the run (Figure 3b and e). The remixed reduced host library had nearly 10-fold less total host GI ASV, 2.6%, slightly lower than our target of 5% (Figure 3c and e). The reference samples averaged 19.2% of host GI ASV, very close to the 22% host fraction in the original library. After using the reference samples to reconstruct the original host abundance in the remixed dataset, we recreated the shape of the stacked column plot from the original library (compare Figure 3b–d). When the fourth-root abundances for ASVs above a 0.05% threshold were compared between the original and reconstructed libraries, the R2 coefficient of determination was 0.99, with no significant difference between the distributions (Kolmogorov-Smirnov test, p > 0.86). Thus, if hamPCR libraries have already been prepared and the host amplicon is overabundant, the host representation in the pooled libraries can be easily and accurately reduced using basic agarose gel technologies to enable more efficient sequencing.
 
-## hamPCR with different 16S rDNA regions compared to whole metagenome sequencing
+### hamPCR with different 16S rDNA regions compared to whole metagenome sequencing
 
 We next applied hamPCR to leaf DNA from eight wild A. thaliana plants that we had previously analyzed by WMS, and from which we therefore had an accurate estimate of the microbial load as the number of microbial reads divided by the number of plant chromosomal reads (Regalado et al., 2020). We applied hamPCR with primer combinations targeting the host GI gene and either the V3V4, V4, or V5V6V7 variable regions of the 16S rDNA. We produced three independent replicates for each primer set, which we averaged for final analysis (Figure 4, Figure 4—figure supplement 1). Across WMS and the three hamPCR amplicon combinations, the relative abundance of bacterial families was consistent (Figure 4a–d: i), with slight deviations likely due to the different taxonomic classification pipeline used for the metagenome reads (Regalado et al., 2020), as well as known biases resulting from amplification or classification of different 16S rDNA variable regions (Graspeuntner et al., 2018; Thijs et al., 2017). After converting both WMS and hamPCR bacterial reads to load by dividing by the plant read count in each sample, we recovered a similar pattern despite the quantification method, with decreasingly lower total loads progressing from plant S1 to plant S8, and individual bacterial family loads showing similar patterns (Figure 4a–d: ii, iii). Relative differences in load estimates when comparing the different hamPCR amplicons are likely in part due to different affinities of the 16S rDNA primer pairs for their targets in different bacterial species, and rDNA copy number variation among the microbial families (Kembel et al., 2012). To quantify the consistency of hamPCR load estimates with WGS load estimates, we plotted the loads against each other and found strong positive correlations, with hamPCR using V4 rDNA having the highest correlation to WGS (Figure 4e–g).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig4-v2.jpg)
+
+**Figure 4.:** (a) (i): Stacked-column plot showing the relative abundance (RA) of bacterial families in eight wild A. thaliana leaf samples, as determined by WMS. The families corresponding to the first 10 colors from bottom to top are shown in reverse order on the bottom left. (ii) Stacked-column plot showing the bacterial load of the same bacterial families (M:H ratio = microbe-to-host ratio). (iii) The M:H bacterial load ratios for the 10 major bacterial families shown on a fourth-root transformed y-axis. Lines across the independent samples are provided as a help to visualize patterns. (b) Similar to (a), but with abundances resulting from hamPCR targeting a 502 bp A. thaliana GI amplicon and a ~590 bp V3V4 16S rDNA amplicon. (c) Similar to (b), but with the 16S rDNA primers targeting a ~420 bp V4 16S rDNA amplicon. (d) Similar to (b), but with a 466 bp A. thaliana GI amplicon and a ~540 bp V5V6V7 16S rDNA amplicon. (e) Fourth-root transformed abundance of each bacterial family determined by hamPCR of V3V4 16S rDNA plotted against the fourth-root transformed bacterial load from WMS. R2 = Coefficient of determination. (f) Same as (e), but for hamPCR of V4 16S rDNA. (g) Same as (e), but for V5V6V7 16S rDNA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The bacterial load from eight wild A. thaliana samples (Regalado et al., 2020), as determined by shotgun sequencing. (b) Three replicates of hamPCR products made from the same eight DNA samples, using the 502 bp A. thaliana GI amplicon and the ~420 bp V4 16S rDNA amplicon (515F - 806R). The 806R primer was used here instead of the 799R primer used elsewhere in the manuscript so that the 16S rDNA data could be directly compared to previous V4 16S rDNA amplicon data from those samples, which also used 515F - 806R. The products were visualized on a 2% agarose gel. (c) Same as (b), but hamPCR was performed using the ~590 bp V3V4 16S rDNA amplicon (341F - 799R). (d) Same as in (b) and (c), but hamPCR was performed using the 466 bp A. thaliana GI amplicon and the ~540 bp V5V6V7 16S rDNA amplicon (799F - 1192R). Note that in (c) and (d), the bacterial amplicon is longer than the host amplicon.
+
 It is important to note that while relative load ratios between samples were consistent across hamPCR primer sets, the total microbe-to-host ratio varied substantially, with the maximum V5V6V7 16S rDNA total load at less than three times host, and the maximum V4 16S rDNA total load near 16 times host. This is likely due to variation in GI and 16S rDNA primer efficiencies. To make a statement about the ratio of plant cells to bacterial cells using hamPCR, it would be important to include standard samples with known bacterial load ratios, and to normalize each bacterial taxon by its average rDNA copy number.
 
-## Three-amplicon hamPCR for simultaneous determination of oomycete and bacterial load
+### Three-amplicon hamPCR for simultaneous determination of oomycete and bacterial load
 
 One disadvantage of 16S rDNA primers is that they readily amplify sequences from bacterial species, but their targets are absent from other microbes such as fungi, oomycetes, and archaea; other primer sets must therefore be used to detect these other groups. We attempted to overcome this limitation by setting up hamPCR not only with 16S rDNA and host GI sequences as described above, but also adding a third primer pair targeting oomycetes, which include important pathogens of A. thaliana. We first tested universal ITSo primers broadly targeting oomycete internal transcribed spacer rDNA (Materials and methods) in combination with A. thaliana GI primers and 16S rDNA primers targeting the bacterial V4, V3V4, or V5V6V7 regions, using as template our synthetic plasmid that includes templates for the three primer sets in equal proportion (Materials and methods, Appendix 1 - Discussion 2). A combination of all three amplicons seemed to work efficiently for the V4 region (Figure 5—figure supplement 1), and with this encouraging result, we set up a simple infection experiment. As pathogens, we prepared local strain 466–1 of the obligate biotrophic oomycete Hyaloperonospora arabidopsidis (Hpa) (Coates and Beynon, 2010) and the well-described bacterial pathogen Pseudomonas syringae pv. tomato (Pst) DC3000 (Xin and He, 2013). We used two A. thaliana genotypes: the reference accession Col-0, which is resistant to Hpa 466–1 but susceptible to Pst DC3000, and an enhanced disease susceptibility 1 (eds1-1) mutant, which has a well-studied defect in a lipase-like protein necessary for many disease resistance responses and which is susceptible to both pathogens (Bhandari et al., 2019).
 
@@ -76,9 +116,29 @@ We infected seedlings with either Hpa 466–1 alone, a mix of Hpa 466–1 and Ps
 
 We applied hamPCR to these samples using the ITSo/16S/GI primer set, but due to excessive ITSo product, we repeated library construction replacing the ITSo primers with primers for a single copy Hpa actin gene (Figure 5—figure supplement 1; Anderson and McDowell, 2015). Intensity of the actin product correlated with visual Hpa symptoms (Figure 5—figure supplement 1). Sequencing the libraries confirmed Hpa and Pst ASVs in the inoculated samples, as expected. A standard bacterial relative abundance plot, as would be obtained from pure 16S rDNA data, confirmed the presence of Pst DC3000 in the bacteria-infected samples, and in addition revealed that Hpa-infected samples had a different bacterial community than uninfected samples (Figure 5a). Importantly, it failed to detect obvious differences between microbial communities on Col-0 and eds1-1 plants. However, after including the actin ASV from Hpa and converting all abundances to microbial load, a striking difference became apparent between Col-0 and eds1-1, with eds1-1 supporting higher bacterial and Hpa abundances (Figure 5b). This is expected from existing knowledge (Bhandari et al., 2019), and supported by Pst DC3000 CFU counts from the same plants (Figure 5c). The microbial load plot also revealed that Hpa-challenged plants supported more bacteria than buffer-treated plants, indicating either that successful bacterial colonizers were unintentionally co-inoculated with Hpa, or that Hpa caused changes in the native flora (Figure 5b). We noted one outlier sample (red arrows, Figure 5b and c) with especially high microbial load. This sample was also an outlier by CFU counting, and because hamPCR fell within the quantitative range defined by host abundance and sequencing depth (Appendix 1—figure 3), we conclude that this outlier was likely not due to limitations of hamPCR.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig5-v2.jpg)
+
+**Figure 5.:** (a) Relative abundance (RA) of only 16S rDNA amplicons for plants co-infected with Hpa and Pst DC3000 and their controls. Each column represents an independent plant. The ASV corresponding to Pst DC3000 (light green) is shown at the bottom and separately from other Pseudomonadaceae; all other bacteria are classified to the family level, including remaining Pseudomonadaceae. Hpa is not detectable using 16S rDNA primers and is therefore not shown. (b) The same data as shown in (a), but making full use of hamPCR by including the ASV for Hpa and converting the combined measurements to microbial load. The red arrow indicates an outlier sample. Same color key as in (a), with an additional color (yellow) for Hpa added. Hpa amplicon abundance was scaled by a factor of 4 in this panel for better visualization. (c) Pst DC3000 bacteria were quantified in parallel on the Col-0 and eds1-1 samples infected with Pst DC3000 using CFU counts, the microbial load data in (b), or the relative abundance data in (a). The median is shown as a horizontal line and box boundaries show the lower and upper quartiles. Red arrows indicate the same outlier sample shown in (b). (d) An uninfected plant sample was titrated into an Hpa-infected sample to make a panel of eight samples. (i): the relative abundance of hamPCR amplicons with median abundance above 0.15%. (ii): after using host ASV to convert amplicons to load. The cumulative load is shown in black. (iii): the load on a fourth-root transformed y-axis, showing less-abundant families. (iv): stacked column visualization of all ASVs for the panel as it would be seen with pure 16S rDNA data. (v): stacked-column plot of the panel corrected for microbial load. Same color key as in (b), but with colors for A. thaliana and sum of microbes added. (e) Similar to (d), but with the nematode worm P. pacificus as host, and V5V6V7 16S rDNA primers. Instead of bacterial families, specific ASV abundances are shown. (f) Similar to (e), but with hexaploid wheat T. aestivum as host, and fungal ASV abundances from ITS1 amplicons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Test of primer compatibility for primer pairs targeting plant and bacteria, plant and oomycete, or plant and bacteria and oomycete, for the ITSo rDNA amplicon, three alternate bacterial amplicons, and two plant amplicons as shown. Some combinations perform better than others and produce fewer dimers. Shown on a 2% agarose gel. (b) The samples of the Hpa and Pst DC3000 co-infection using ITSo rDNA primers, V4 16S rDNA primers, and 502 bp A. thaliana GI primers. The signal from the ITSo primers overwhelmed the reaction. (c) hamPCR library of the Hpa and Pst DC3000 co-infection as described in Figure 5a-c using Hpa actin primers, V4 16S rDNA primers, and 502 bp A. thaliana GI primers. (d) hamPCR libraries made with the titration of plant DNA infected with Hpa as described in Figure 5d, using actin primers, V4 16S rDNA primers, and 502 bp A. thaliana GI primers.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** DNA was prepared from two populations of P. pacificus strain PS312, one fed with only E. coli and another fed with E. coli, P. syringae, and Lysinibacillus xylanilyticus (mixed diet). The two DNA samples were each adjusted to 6 ng/μL and titrated into each other using the ratios shown below the gel. The 2% agarose gel shows resulting hamPCR libraries using the ~540 bp V5V6V7 16S rDNA amplicon (primers 799F - 1192R) and the 470 bp P. pacificus calsequestrin (csq-1) amplicon.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a-c) DNA was made from axenic T. aestivum leaf DNA and surface-sterilized T. aestivum roots that had been cultivated outdoors in potting soil. The two DNA samples were each adjusted to ~60 ng/μL and titrated into each other using the ratios shown below the gel. hamPCR products are displayed on a 2% agarose gel. (a) hamPCR products using the ITS1 fungi amplicon and the 497 bp T. aestivum PolA1 amplicon. The ITS1 and PolA1 primer pairs were mixed in a 1:1 ratio. HM-tagging was performed with two cycles and PCR was performed with 30 cycles. Note that ITS1 amplicons form a smear on the gel due to a wide range of amplicon sizes. (b) Same as (a), but the ITS1 and PolA1 primer pairs were mixed in a 2:1 ratio to favor ITS1 amplification. To help amplification of lower quantities of tagged templates, HM-tagging was performed with seven cycles and PCR was performed with 25 cycles. (c) hamPCR products using primers for V4 16S rDNA from bacteria (primers 515F - 799R) and the 497 bp T. aestivum PolA1 amplicon. A standard protocol of 2 HM-tagging cycles and 30 PCR cycles was used.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a) Similar to Figure 5f in the main text, axenic T. aestivum leaf DNA was titrated into DNA from T. aestivum roots that had been cultivated outdoors in potting soil to make a panel of eight samples simulating different levels of infection. hamPCR was performed for three replicates per sample using ITS1 fungal primers and T. aestivum PolA1 primers. Unlike Figure 5f, the ITS1 and PolA1 primer pairs were mixed in a 2:1 ratio to favor ITS1 amplification, and HM-tagging was performed with seven cycles and PCR was performed with 25 cycles. (i) The relative abundance of hamPCR amplicons with median abundance above 0.15%. (ii) After using host ASV to convert amplicons to load. The cumulative load is shown in black. (iii) The load on a fourth-root transformed y-axis, showing less abundant families. (iv) Stacked column visualization of all ASVs for the panel as it would be seen with pure ITS1 data. v: stacked-column plot of the panel corrected for microbial load. (b) Loads for abundant fungal ASVs following hamPCR with a 2:1 ITS1 to PolA1 primer ratio plotted against loads for the same ASVs following hamPCR with a 1:1 ITS1 to PolA1 primer ratio (as displayed in Figure 5f). Shown on fourth-root axes. R2, coefficient of determination. The correlation comparing ASVs in 1:1 and 2:1 ITS1 to PolA1 primer ratios is just as high as for the correlation between technical replicates with the same priming conditions, shown next in (c) and (d). (c) Same as (b), but with one technical replicate of hamPCR with a 1:1 ITS1 to PolA1 primer ratio plotted against a second technical replicate of the 1:1 ratio. (d) Same as (b) and (c), but for one technical rep of hamPCR with a 2:1 ITS1 to PolA1 primer ratio plotted against a second technical replicate of the 2:1 ratio. (e) hamPCR using the V4 16S rDNA bacterial amplicon and the T. aestivum PolA1 amplicon, using a standard 1:1 microbe-to-host primer ratio and normal cycling. Subpanels i-v as in (a), with bacterial families shown instead of fungal ASVs.
+
 To confirm that the abundances for all three amplicons accurately reflected the concentration of their original templates, we prepared a stepwise titration panel with real samples, mixing increasing amounts of DNA from an uninfected eds1-1 plant (low load) into decreasing amounts of DNA from an Hpa-infected eds1-1 plant (high load). Sequencing triplicate hamPCR libraries revealed a stepwise increase in ASV levels for all amplicons, consistent with the expectation based on pipetting (Figure 5d). These data, combined with the infection experiment, show that hamPCR is quantitative for at least two independent microbial amplicons in real-world samples.
 
-## Utility in diverse hosts and crops with large genomes
+### Utility in diverse hosts and crops with large genomes
 
 To demonstrate the utility of hamPCR outside of plants, we prepared samples from the nematode worm Pristionchus pacificus. Small hosts like nematodes where the entire individual is typically lysed during DNA preparation are ideal for hamPCR; the choice of this nematode was due to the convenience of a lab specializing in studies of this species in our institute (Sommer, 2006). P. pacificus was fed on a diet of either pure E. coli OP50, or alternatively a mix of E. coli OP50 with Pst DC3000 and Lysinibacillus xylanilyticus. The worms were washed extensively with PBS buffer to remove epidermally-attached bacteria, enriching the worms for gut-associated bacteria, and we prepared DNA from each sample. In the same manner as described in the previous section, we titrated the two DNA samples into each other to create a panel of samples representing a continuous range of colonization at biologically relevant levels. Over three replicates, hamPCR accurately captured the changing bacterial loads of the gut microbes (Figure 5e, Figure 5—figure supplement 2).
 
@@ -89,6 +149,18 @@ To go beyond model organisms and controlled titrations and to demonstrate the ab
 Sequencing the hamPCR libraries revealed that as the Xe 85–10 infiltration concentration increased, so did the resulting load of the ASV corresponding to Xe 85–10 (Figure 6—figure supplement 1 and Figure 6—figure supplement 2a). The other major bacterial classes detected in the infiltration panel, comprising commensal bacteria already present in the leaves, had similar, low abundances, regardless of the amount of infiltrated Xe 85–10 (Figure 6—figure supplement 2b). When we scaled hamPCR and qPCR values to fit the range of CFU counts recovered from the same lysates (Materials and methods), the hamPCR and qPCR Xe 85–10 ASV loads showed nearly the same exponential differences between samples, although at lower infiltration concentrations, qPCR and hamPCR gave a slightly higher estimate than CFU counts (Figure 6—figure supplement 2c). The presence of a low level of native, antibiotic-sensitive Xe on the leaves could potentially explain this discrepancy, because this could be detected by DNA-based methods but not culturing.
 
 For the pepper growth-curve, we infiltrated six C. annuum leaves of six different plants with Xe 85–10 at a concentration of 104 CFU / mL, and took samples from each plant at 0, 2, 4, 7, 9, and 11 dpi for CFU counting, qPCR, and hamPCR. We observed a rapid increase in Xe 85–10 ASV abundance as a result of rapid bacterial growth, leveling off at 7 dpi (Figure 6a). By 7 dpi, bacterial growth had reduced the host GI amplicon abundances for most samples to levels at which load calculations become less reliable at their sequencing depth (as defined in Appendix 1—figure 3d); this was also the case at 9 and 11 dpi (gray box, Figure 6a). Scaled Xe 85–10 ASV loads compared very closely to CFU counts and to scaled qPCR abundances up to 7 dpi (Figure 6c). Notably, the other major bacterial classes, Actinobacteria and the Alpha-, Beta-, and Gammaproteobacteria, also increased in microbial load through time, a trend significant even comparing 2 dpi to 0 dpi (Figure 6b, Mann-Whitney U-test, p < 0.001). This increase in load for the other classes was not a PCR artifact due to high Xe 85–10 titers, because in the infiltration panel, measurements for these classes had not changed even at higher pathogen concentrations (Figure 6—figure supplement 2b). This subtle but biologically significant effect of infection on growth of commensal bacteria would be completely invisible in a pure 16S rDNA amplicon analysis, which would only show Xe 85–10 overtaking the community.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig6-v2.jpg)
+
+**Figure 6.:** (a–c) C. annuum growth curve experiment. All y-axes are on a base-10 logarithmic scale. In all boxplots, the median is represented by a horizontal line and box boundaries show the lower and upper quartiles. Whiskers extend from the box up to 1.5 times the interquartile range. (a) Xe 85–10 was inoculated into C. annuum leaves at 104 CFU/mL. Leaf samples were taken at 0, 2, 4, 7, 9, and 11 days post inoculation (dpi), and hamPCR performed. The corrected load is shown for the particular ASV corresponding to Xe 85–10, as well as for the major bacterial classes. (b) The total load for all bacterial classes shown in a at 0, 2, and 4 dpi (***p<0.001, Mann-Whitney U-test). (c) Actual CFU counts for Xe 85–10 in the growth curve experiment juxtaposed with scaled qPCR and hamPCR loads. (d-e) Field-grown Z. mays collection. (d) Relative abundance (RA) of bacterial genera found in Z. mays leaf hole punches, ordered by Sphingomonas relative abundance. The genera corresponding to the first 15 colors from bottom to top are shown in reverse order in the legend. The relative abundance of four isolated genera is highlighted (colored boxes in legend). (e) Same as (d) but showing microbial load rather than relative abundance and ordered by Sphingomonas load. (f) Correlation networks of the same 15 genera from the legend for d and e. Pearson correlation from RA data from d (left), pearson correlation of microbial load from e (right), and SparCC correlation network (bottom). Circles representing genera are scaled such that their area represents the median genus abundance across all samples. Only correlations of absolute magnitude >= 0.3 are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Two percent agarose gel showing hamPCR libraries for four replicates of C. annuum infiltration with Xanthomonas euvesicatoria (Xe) 85-10. The HM-tagging step was done with V4 16S rDNA primers (515F - 799R) and C. annuum GI primers. (b) Two percent agarose gel showing hamPCR libraries for six replicates per timepoint of a C. annuum growth curve following infiltration with 104 228 CFU/mL Xe 85-10.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66186/elife-66186-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a-c) Infiltration experiment. All y-axes are on a base-10 logarithmic scale. In all boxplots, the median is represented by a horizontal line and box boundaries show the lower and upper quartiles. Whiskers extend from the box up to 1.5 times the interquartile range. (a) Xe 85-10 was inoculated into C. annuum leaves at five concentrations, leaves were harvested immediately afterwards, and hamPCR was performed. The bacterial load is shown for the particular ASV corresponding to Xe 85-10, as well as for the major bacterial classes. (b) The total load for all bacterial classes shown in (a) at each concentration. (c) Actual CFU counts for Xe 85-10 in the infiltration experiment juxtaposed with aligned qPCR and hamPCR loads.
 
 Finally, we applied hamPCR to DNA from 201 leaf samples from mature, isogenic maize (B73) growing in a field site in Tübingen, Germany. We used the V4 region of 16S rDNA for bacteria and the single copy LUMINIDEPENDENS (LD) gene as a host marker, and plotted both the relative abundance of bacterial genera (Figure 6d) and the bacterial load of these genera (Figure 6e). In some samples, the genus Sphingomonas exceeded 80% of the bacterial community, creating especially strong compositionality effects; other abundant genera Perlucidibaca, Limnohabitans, and Acidovorax visibly increased in relative abundance as Sphingomonas became less abundant (Figure 6d). In contrast, the bacteria load of these same genera appeared mostly unaffected by Sphingomonas bacterial load (Figure 6e). As expected, a Pearson correlation network made with relative abundance data revealed that Sphingomonas was negatively correlated with many genera, a well-known and problematic artifact of compositionality (Friedman and Alm, 2012; Figure 6f). A Pearson correlation network made with microbial load data was remarkable in that Sphingomonas, despite having the highest median abundance of any genus, is among the genera least correlated with others (Figure 6f). We also calculated a correlation network using SparCC (Friedman and Alm, 2012), which estimates Pearson correlations on log-transformed components to avoid compositionality artifacts. This network did indeed avoid the spurious negative correlations with Sphingomonas, although it still implicated the genus more strongly than the correlation network built with hamPCR data. Each network has a very different biological interpretation, with negative Sphingomonas correlations implying that the genus as a whole can greatly influence the colonization of other microbes. The weak connectedness of Sphingomonas in the microbial load data does not necessarily imply that Sphingomonas strains do not influence colonization of other microbes, but rather that such effects, if they exist, can not be inferred from the abundance of the genus as a whole. Future study will be necessary to resolve these issues. Overrepresentation of a few abundant organisms is a feature shared by most ecological communities (McGill et al., 2007), including microbial communities (Zhou et al., 2013); overcoming this compositionality problem is broadly relevant to studies of host-associated microbiomes.
 
@@ -112,41 +184,265 @@ Other exciting applications are the recognition of cryptic infections (Stergiopo
 
 ## Materials and methods
 
-## hamPCR protocol
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HM-tagging primers</td>
+      <td>Eurofins; this paper</td>
+      <td></td>
+      <td>Standard desalting; for sequences see Supplementary file 1, Appendix 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR forward primer</td>
+      <td>Eurofins; https://doi.org/10.1017/qpb.2020.6</td>
+      <td>PCR_F_G-40610</td>
+      <td>5’-AATGATACGGCGACCACCGA GATCTACACTCTTTCCCTACA CGACGCTCTTC-3’; HPLC purified</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR reverse primers</td>
+      <td>IDT; https://doi.org/10.1038/nmeth.2634</td>
+      <td></td>
+      <td>IDT Ultramers; for sequences see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>XopQ Xanthomonas qPCR primers</td>
+      <td>Eurofins; https://doi.org/10.1038/s41598-019-46588-9;</td>
+      <td>XopQ_F, XopQR</td>
+      <td>5’-GCGAGGAACTTGGAATGCTC-3’ 5’-AGGCCGAAGGCTTTTTGCG-3’; Standard desalting</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UBI3 C. annuum qPCR primers</td>
+      <td>Eurofins; https://doi.org/10.1016/j.bbrc.2011.10.105</td>
+      <td>UBI3_F, UBI3_R</td>
+      <td>5’-TGTCCATCTGCTCTCTGTTG-3’ 5’-CACCCCAAGCACAATAAGAC-3’; Standard desalting</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Taq DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat. #: M0267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Q5 DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat. #: M0491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>pPNA, mPNA</td>
+      <td>PNAbio</td>
+      <td>Cat. #: PP01, MP01</td>
+      <td>Peptide nucleic acids for blocking organelle amplification when using hamPCR on plants.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>USEARCH</td>
+      <td>www.drive5.com</td>
+      <td>version 11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Synthetic equimolar plasmid template (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>For sequence and construction, see Appendix 1 - Discussion 2.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Solid phase reversible immobilization (SPRI) beads</td>
+      <td>https://dx.doi.org/10.1101%2Fgr.128124.111</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### hamPCR protocol
 
 hamPCR requires two steps: a short ‘HM-tagging’ reaction of two cycles, and a longer ‘exponential' reaction. We used 30 cycles throughout this work, although fewer can and should be used if the signal is clear for better quantitative results. The primers employed in the HM-tagging reaction were used at ⅛ the concentration of the exponential primers, as this still represents an excess in a reaction run for only two cycles, prevents waste, and reduces dimer formation. See Appendix 1 and Supplementary file 1 for detailed information about the primers. In particular, Appendix 1 - Discussion 1 provides guidance on adapting HM-tagging primers to other two-step PCR protocols, and Appendix 1 - Discussion 3 discusses the design of new HM-tagging primers.
 
-## HM-tagging reaction
+#### HM-tagging reaction
 
 We used Taq DNA Polymerase (NEB, Ipswich, MA, USA) for the first HM-tagging step, and set up 25 μL reactions as follows.
 
-Master MixFor 25 μL10x Taq buffer2.5 μLTaq polymerase0.2 μLdNTPs (10 mM)0.5 μL* HM-tagging primer mix1.25 μL** PNAs (mix of mPNA and pPNA each at 50 μM)0.375 μL*** DNA (2–10 ng/μL)5 μLWater(to 25 μL)* HM-tagging primer mix is an equimolar mix of HM-tagging primers with each at a partial concentration of 1.25 μM.** PNA was used to block chloroplast and mitochondrial amplification in reactions involving the V4 or V3V4 region of 16S rDNA. For other reactions, it is not helpful and is omitted.*** not part of master mix.
+<table>
+  <thead>
+    <tr>
+      <th>Master Mix</th>
+      <th>For 25 μL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10x Taq buffer</td>
+      <td>2.5 μL</td>
+    </tr>
+    <tr>
+      <td>Taq polymerase</td>
+      <td>0.2 μL</td>
+    </tr>
+    <tr>
+      <td>dNTPs (10 mM)</td>
+      <td>0.5 μL</td>
+    </tr>
+    <tr>
+      <td>* HM-tagging primer mix</td>
+      <td>1.25 μL</td>
+    </tr>
+    <tr>
+      <td>** PNAs (mix of mPNA and pPNA each at 50 μM)</td>
+      <td>0.375 μL</td>
+    </tr>
+    <tr>
+      <td>*** DNA (2–10 ng/μL)</td>
+      <td>5 μL</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>(to 25 μL)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* HM-tagging primer mix is an equimolar mix of HM-tagging primers with each at a partial concentration of 1.25 μM.** PNA was used to block chloroplast and mitochondrial amplification in reactions involving the V4 or V3V4 region of 16S rDNA. For other reactions, it is not helpful and is omitted.*** not part of master mix._
 
 Each well received 20 μL of master mix and 5 μL of DNA (around 50 ng). Completed reactions were thoroughly mixed on a plate vortex and placed into a preheated thermocycler. We used the following standard cycling conditions:
 
 The HM-tagging reaction was cleaned with Solid Phase Reversible Immobilization (SPRI) beads (Rohland and Reich, 2012). All ITS amplicons were cleaned with a 1.1:1 ratio of SPRI beads to DNA, or 27.5 μL beads mixed in 25 μL of tagged template. After securing beads and DNA to a magnet and removing the supernatant containing primers and small fragments, beads were washed twice with 80% ethanol, air dried briefly, and eluted in 17 μL of water. For primer sequences, see Appendix 1 and Supplementary file 1.
 
-## Exponential reaction
+#### Exponential reaction
 
 Of the tagged DNA from step one, 15 µL was used as template for the exponential reaction. To reduce errors during the exponential phase, we used the proof-reading enzyme Q5 from NEB, with its included buffer. We prepared reactions in 25 μL for technical tests with replicated samples. For samples prepared without sequenced replicates, we prepared most in triplicate reactions in which a 40 μL mix was split into three parallel reactions of ~13 μL prior to PCR to reduce bias, although this is likely unnecessary (Marotz et al., 2019).
 
-Master MixFor 25 μLFor 40 μL5x Q5 buffer5 μL8 μLQ5 polymerase0.25 μL0.4 μLdNTPs (10 mM)0.5 μL0.8 μL100 μM F universal PCR primer0.0625 μL0.1 μL* PNAs (mix of mPNA and pPNA each at 50 μM)0.375 μL0.6 μL** 5 μM reverse barcoded primer1.25 μL2 μL** DNA (from previous reaction)15 μL15 μLWater(to 25 μL)(to 40 μL)*PNA was used to block chloroplast and mitochondrial amplification in reactions involving the V4 or V3V4 region of 16S rDNA. For other reactions, it is not helpful and is omitted.** not part of master mix.
+<table>
+  <thead>
+    <tr>
+      <th>Master Mix</th>
+      <th>For 25 μL</th>
+      <th>For 40 μL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5x Q5 buffer</td>
+      <td>5 μL</td>
+      <td>8 μL</td>
+    </tr>
+    <tr>
+      <td>Q5 polymerase</td>
+      <td>0.25 μL</td>
+      <td>0.4 μL</td>
+    </tr>
+    <tr>
+      <td>dNTPs (10 mM)</td>
+      <td>0.5 μL</td>
+      <td>0.8 μL</td>
+    </tr>
+    <tr>
+      <td>100 μM F universal PCR primer</td>
+      <td>0.0625 μL</td>
+      <td>0.1 μL</td>
+    </tr>
+    <tr>
+      <td>* PNAs (mix of mPNA and pPNA each at 50 μM)</td>
+      <td>0.375 μL</td>
+      <td>0.6 μL</td>
+    </tr>
+    <tr>
+      <td>** 5 μM reverse barcoded primer</td>
+      <td>1.25 μL</td>
+      <td>2 μL</td>
+    </tr>
+    <tr>
+      <td>** DNA (from previous reaction)</td>
+      <td>15 μL</td>
+      <td>15 μL</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>(to 25 μL)</td>
+      <td>(to 40 μL)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*PNA was used to block chloroplast and mitochondrial amplification in reactions involving the V4 or V3V4 region of 16S rDNA. For other reactions, it is not helpful and is omitted.** not part of master mix._
 
 We first distributed 8.75 μL (or 23 μL for 40 μL mixes) of master mix to each well. We then added 15 μL of the DNA from the HM-tagging reaction and 1.25 μL (or 2 μL for 40 μL mixes) of 5 μM barcoded reverse primer. For the 40 μL mixes, 13 μL was pipetted into two new PCR wells. The PCR reactions were placed into a hot thermocycler and cycled with the following standard conditions:
 
 Following PCR, sets of three 13 μL reactions were recombined to 40 μL. For primer sequences, see Appendix 1 and Supplementary file 1.
 
-## Library quality control and pooling
+#### Library quality control and pooling
 
 For visualization, 5 μL of PCR product was mixed with 3 μL of 6x loading dye and all 8 μL loaded on a 2% agarose gel and stained with ethidium bromide. The remaining PCR products were cleaned with a SPRI-to-DNA ratio of 1.1:1.0 (v/v). The DNA concentrations in the cleaned products were measured with PicoGreen (Invitrogen, Carlsbad, CA, USA) and samples were pooled at equimolar total DNA ratios. We note that because host and microbial fractions are independently visible on the gel, it would also be possible to measure the quantity of microbial products with image analysis software such as ImageJ (Rueden et al., 2017) and pool at equimolar microbial ratios.
 
 The pooled library was diluted to ~1 ng/μL and run on a Bioanalyzer High Sensitivity DNA chip (Agilent, Santa Clara, CA, USA) to check library purity and to estimate the expected ratio of host to microbial amplicons in the sample.
 
-## Pre-sequencing adjustment of host: microbe ratio
+#### Pre-sequencing adjustment of host: microbe ratio
 
 To adjust the host-to-microbe ratio in the ‘synthetic template panel’ and ‘cycle number test’ prior to sequencing on a HiSeq3000 instrument (Illumina, San Diego, CA, USA), four reference samples were first made by rebarcoding the original pooled library (Figure 3—figure supplements 1 and 2). To accomplish this, ~5 ng of of the pooled library was used in a 30 μL PCR reaction as follows:
 
-Master MixFor 30 μL5x Q5 buffer6 μLQ5 polymerase0.3 μLdNTPs (10 mM)0.6 μL100 μM F universal PCR primer0.075 μL** 5 μM reverse barcoded primer1.5 μL** 5 ng original pooled library5 μLWater16.45 μL** not part of master mix.
+<table>
+  <thead>
+    <tr>
+      <th>Master Mix</th>
+      <th>For 30 μL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5x Q5 buffer</td>
+      <td>6 μL</td>
+    </tr>
+    <tr>
+      <td>Q5 polymerase</td>
+      <td>0.3 μL</td>
+    </tr>
+    <tr>
+      <td>dNTPs (10 mM)</td>
+      <td>0.6 μL</td>
+    </tr>
+    <tr>
+      <td>100 μM F universal PCR primer</td>
+      <td>0.075 μL</td>
+    </tr>
+    <tr>
+      <td>** 5 μM reverse barcoded primer</td>
+      <td>1.5 μL</td>
+    </tr>
+    <tr>
+      <td>** 5 ng original pooled library</td>
+      <td>5 μL</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>16.45 μL</td>
+    </tr>
+  </tbody>
+</table>
+
+_** not part of master mix._
 
 After distributing 23.5 μL of master mix to each well, 5 μL of the diluted original library was added to each well (5 ng total), along with 1.5 μL of 5 μM barcoded reverse primer. Just prior to placing the reactions in the thermocycler, a 5 μL pre-PCR aliquot was removed from each one and kept on ice to preserve the pre-PCR concentrations. The remaining 25 μL reaction was placed into a preheated thermocycler and run for eight cycles, using the following cycling conditions:
 
@@ -154,11 +450,11 @@ Following PCR, the pre-PCR aliquots were run alongside 5 μL of post-PCR product
 
 The purified pooled host library fraction, pooled microbe library fraction, and each of the four reference libraries were quantified with Picogreen and the molarity of each was estimated. The pools were then mixed together, targeting host molarity at 5% of the total and each reference library at 1% of the total.
 
-## Illumina sequencing
+### Illumina sequencing
 
 Pooled and quality-checked sequencing libraries were cleaned of all remaining dimers and off-target fragments using a BluePippin (Sage Science, Beverly, MA, USA) set to a broad range of 280 to 720 bp. The libraries were then diluted for Illumina sequencing following manufacturers' protocols. Libraries were first diluted to 2.5–2.8 nM in elution buffer (EB, 10 mM Tris pH 8.0) and spiked into a compatible lane of the HiSeq3000 instrument (2 x 150 bp paired end reads) to occupy 2–3% of the lane. Samples were sequenced across four total lanes (Supplementary file 1).
 
-## Sequence processing
+### Sequence processing
 
 The sequences were demultiplexed first by the 9 bp barcode on the PCR primers (Supplementary file 1), of which there are 96, not allowing for any mismatches. In some cases in which two samples differed in both their host and microbe primer sets, we amplified both samples with the same 9 bp barcode to increase multiplexing; such samples were further demultiplexed using regular expressions for the forward primer and reverse primer sequences. Following demultiplexing, all samples were filtered to remove sequences with any mismatches to the expected primers. With HiSeq3000 150 bp read lengths, overlap of read 1 and read 2 was not possible for our amplicons, and therefore only read 1 was processed further.
 
@@ -166,29 +462,119 @@ All primer sequences were removed. Additional quality filtering, removal of chim
 
 ASV tables were analyzed statistically and graphically using custom scripts in R (R Development Core Team, 2019), particularly with the help of packages ‘ggplot2’ (Wickham, 2016) and ‘reshape2’ (Wickham, 2007). Custom scripts are available on GitHub at (https://github.com/derekLS1/hamPCR).
 
-## Samples
+### Samples
 
-## Synthetic titration panel
+#### Synthetic titration panel
 
 Seeds from the Arabidopsis thaliana accession Col-0 were surface sterilized by immersion for 1 min in 70% ethanol with 0.1% Triton X-100, soaking in 10% household bleach for 12 min, and washing three times with sterile water. Seeds were germinated axenically on ½ strength MS media with MES, and about 2 g of seedlings were harvested after 10 days. DNA was extracted in the sterile hood as in Regalado et al., 2020 and diluted to 10 ng/μL in elution buffer (10 mM Tris pH 8.0, hereafter EB). Pure E. coli and Sphingomonas sp. cultures were likewise grown with LB liquid and solid media respectively, and DNA was extracted using a bead beating protocol (Regalado et al., 2020). E. coli DNA was used separately, or alternatively pooled with the mixed Sphingomonas DNA, and diluted to 10 ng/μL. The plant DNA and microbial DNA were then combined according to the following table:
 
-100E10024201684210.50.25100P100PblankμL A. thaliana DNA (10 ng/μL)760800840920960980990995997.510001000μL mixed bacterial DNA (10 ng/μL)10002402001608040201052.5μL E. coli DNA (10 ng/μL)1000μL water1000
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>100E</th>
+      <th>100</th>
+      <th>24</th>
+      <th>20</th>
+      <th>16</th>
+      <th>8</th>
+      <th>4</th>
+      <th>2</th>
+      <th>1</th>
+      <th>0.5</th>
+      <th>0.25</th>
+      <th>100P</th>
+      <th>100P</th>
+      <th>blank</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>μL A. thaliana DNA (10 ng/μL)</td>
+      <td></td>
+      <td></td>
+      <td>760</td>
+      <td>800</td>
+      <td>840</td>
+      <td>920</td>
+      <td>960</td>
+      <td>980</td>
+      <td>990</td>
+      <td>995</td>
+      <td>997.5</td>
+      <td>1000</td>
+      <td>1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>μL mixed bacterial DNA (10 ng/μL)</td>
+      <td></td>
+      <td>1000</td>
+      <td>240</td>
+      <td>200</td>
+      <td>160</td>
+      <td>80</td>
+      <td>40</td>
+      <td>20</td>
+      <td>10</td>
+      <td>5</td>
+      <td>2.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>μL E. coli DNA (10 ng/μL)</td>
+      <td>1000</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>μL water</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1000</td>
+    </tr>
+  </tbody>
+</table>
 
 V4 HM-tagging was performed with 515_F1_G-46603 and 799_R1_G-46601 (V4 16S rDNA) and At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (A. thaliana GI). Each exponential PCR reaction was completed in a single reaction of 25 μL.
 
-## Synthetic equimolar plasmid template
+#### Synthetic equimolar plasmid template
 
 The ITS1 region from Agaricus bisporus, a fragment of the GI gene from A. thaliana Col-0 accession, the 16S rRNA gene from Pst DC3000, and the ITS1 region from H. arabidopsidis were PCR amplified individually, combined into one fragment via overlap extension PCR, and cloned into pGEM-T Easy (Promega, Madison, WI, USA). The sequences of these templates can be found in Appendix 1 – Discussion 2.
 
-## Wild A. thaliana samples
+#### Wild A. thaliana samples
 
 DNA from chosen samples previously analyzed by conventional 16S rDNA-only sequencing of the V4 region and WMS (Regalado et al., 2020) was reused, chosen to capture a wide range of realistic bacterial loads. The samples were individually assayed with hamPCR using 5 μL DNA template (approximately 50 ng). V4 HM-tagging was performed with 515_F1_G-46603 and 806_R1_G-46631 (V4 16S rDNA) and At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (502 bp A. thaliana GI). These were the only V4 samples tagged with the 806R primer instead of the nearby 799R primer, and it was used to enable direct comparison to the dataset in Regalado et al., 2020. V3V4 HM-tagging was performed with 341_F1_G-46605 and 799_R1_G-46601 (V3V4 16S rDNA) and At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (502 bp A. thaliana GI). V5V6V7 HM-tagging was performed with 799_F1_G-46628 and 1192_R1_G-46629 (V5V6V7 16S rDNA) and At.GI_F1_G-46602 and At.GI_R466bp_G-46652 (466 bp A. thaliana GI). Each exponential PCR reaction was completed in a single reaction of 25 μL; each sample was replicated three times.
 
-## Wild A. thaliana mixed sample
+#### Wild A. thaliana mixed sample
 
 DNA from samples previously analyzed by conventional 16S rDNA-only sequencing of the V4 region and WMS (Regalado et al., 2020) were pooled to prepare a single abundant mixed sample to be used repeatedly for technical tests.
 
-## Hyaloperonospora arabidopsidis and Pseudomonas syringae pv. tomato DC3000 co-infection
+#### Hyaloperonospora arabidopsidis and Pseudomonas syringae pv. tomato DC3000 co-infection
 
 Both wildtype A. thaliana seedlings in the Col-0 genetic background and enhanced disease susceptibility one mutants in the Ws-0 genetic background (eds1-1) were grown from surface-sterilized seeds. Seedlings were raised in ED73 potting mix (Einheitserdewerke, Sinntal-Altengronau, Germany) in 5 cm pots for 10 days under short-day conditions (8 hr light, 16 hr dark). Each pot contained four to ive seedlings, and for each genotype, four pots were used for each infection condition. Plants were treated with either 10 mM MgCl2 (buffer only), H. arabidopsidis (Hpa) isolate 466–1 alone (5 x 104 spores / mL), or Hpa 466–1 with P. syringae pv. tomato (Pst) DC3000 (OD600 = 0.25, a gift from El Kasmi lab, University of Tübingen).
 
@@ -196,13 +582,13 @@ The infected plants were grown at 16°C for 8 days (10 hr light, 14 hr dark) and
 
 The DNA preps were individually assayed with hamPCR using 5 μL DNA template (approximately 30 ng); HM-tagging was performed with three primer sets: Ha.Actin_F1_G-46716 and Ha.Actin_R1_G-46717 (Hpa Actin), At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (502 bp A. thaliana GI), and 515_F1_G-46603 and 799_R1_G-46601 (V4 16S rDNA). Each exponential PCR reaction was completed in three parallel reactions of 13 μL, which were recombined prior to sequencing.
 
-## Titration with plant DNA infected with H. arabidopsidis
+#### Titration with plant DNA infected with H. arabidopsidis
 
 A titration panel was made combining different amounts of DNA from uninfected plants (eds1-1 treated only with 10 mM MgCl2) and DNA from Hpa-infected plants (eds1-1 infected with Hpa as described above). Infected and uninfected pools were each diluted to 6 ng/μL, and combined in 0:7, 1:6, 2:5, 3:4, 4:3, 5:2, 6:1, and 7:0 ratios. These were tagged using the same three primer sets described above for Hpa actin, A. thaliana GI, and V4 16S rDNA above. Each exponential PCR reaction was completed in a single reaction of 25 μL; hamPCR was replicated on the titration three times.
 
-## Capsicum annuum infections with Xanthomonas
+#### Capsicum annuum infections with Xanthomonas
 
-## Leaf infiltration log series
+##### Leaf infiltration log series
 
 Using pressure infiltration with a blunt-end syringe, C. annuum cultivar Early Calwonder (ECW) leaves were inoculated with Xanthomonas euvesicatoria (Xe). Xe strain 85–10 (Thieme et al., 2005) was resuspended in 10 mM MgCl2 to final concentration of 108 CFU / mL (OD600=0.4) and further diluted to 107, 106, 105, and 104 CFU / mL. Upon infiltration, five leaf discs (7 mm diameter) were punched from each leaf per sample and placed in a 2 mL round-bottom tube with two SiLibeads (type ZY-S 2.7–3.3 mm, Sigmund Lindner GmbH, Warmensteinach, Germany) and 300 μL 10 mM MgCl2. The samples were ground by bead beating for 25 s at 25 Hz using a Tissue Lyser II machine (Qiagen, Hilden, Germany). For CFU-based bacterial enumeration, 30 μL of the lysate or 30 µL of serial dilutions were plated on NYG medium (0.5% peptone, 0.3% yeast extract, 0.2% glycerol and 1.5% agar [Daniels et al., 1984] containing rifampicin 100 µg/ml). Xe bacteria were counted 3 days post incubation at 28°C. The remaining 250 μL of lysate was combined with 600 μL of DNA lysis buffer containing 2.1% SDS (for a 1.5% final SDS concentration) and transferred to screw cap tubes filled with 1 mm garnet sharp particles, for a bead-beating DNA prep as previously described (Regalado et al., 2020).
 
@@ -210,38 +596,38 @@ Growth curve: Xe strain 85–10, resuspended in 10 mM MgCl2 to a final concentra
 
 Each hamPCR template HM-tagging reaction used 5–10 μL template (approximately 50 ng each); HM-tagging was performed with primers 515_F3_G-46694 and 799_R1_G-46601 (V4 16S rDNA), and Ca.GI_F1_G-46626 and Ca.GI_R1_G-46627 (C. annuum GI). Each exponential PCR reaction was completed in three parallel reactions of 13 μL, which were recombined prior to sequencing.
 
-## Pristionchus pacificus titration panel
+#### Pristionchus pacificus titration panel
 
 Pristionchus pacificus strain PS312 (Dieterich et al., 2008) was grown on nematode growth media (NGM) plates supporting a bacterial lawn of either pure E. coli OP50 or alternatively a mix of E. coli OP50, Pst DC3000, and Lysinibacillus xylanilyticus (a strain isolated from wild P. pacificus). The worms were washed extensively with PBS buffer to remove epidermally-attached bacteria, and DNA was prepared from whole worms using the same bead beating protocol as described for A. thaliana (Regalado et al., 2020). Worm DNA from the pure culture and the mixed culture were each diluted to 6 ng/μL, and combined in 0:7, 1:6, 2:5, 3:4, 4:3, 5:2, 6:1, and 7:0 ratios to create a titration panel. Each hamPCR template (5 μL template or 30 ng total) was used to perform the HM-tagging reaction, using primers 799F1_G-46628 and 1192R1_G-46629 (V5V6V7 16S rDNA), and Pp_csq-1_F1_G-46691 and Pp_csq-1_R1_G-46692 (P. pacificus csq-1). Each exponential PCR reaction was completed in a single reaction of 25 μL; the titration was replicated three times.
 
-## Triticum aestivum titration panel
+#### Triticum aestivum titration panel
 
 Triticum aestivum (wheat) seeds (Rapunzel Naturkost, Legau, Germany) were surface-sterilized by immersion in 70% ethanol and 0.1% Triton X-100 for 1 min, soaking for 15 min in 10% household bleach, and finally washing three times in sterile autoclaved water. Axenic plants were grown on 1% agar supplemented with 1/2 strength MS medium buffered with MES. About 1 g of sterile leaf tissue was harvested after 10 days, and DNA was extracted in the sterile hood as described in ref.(Regalado et al., 2020). Roots that had been spontaneously colonized by microbes were obtained by growing by transplanting germinated seeds outdoors into potting soil. Roots were harvested from approximately 4-week-old plants and surface-sterilized by immersion in 10% household bleach with 0.1% Triton X-100 for 5 min, followed by three washes with sterile water. Axenic leaf DNA and spontaneously colonized root DNA were each diluted to 60 ng/μL and combined in 0:7, 1:6, 2:5, 3:4, 4:3, 5:2, 6:1, and 7:0 ratios to create a titration panel of eight samples. Each hamPCR HM-tagging reaction used 3 μL (~180 ng) template; fungal ITS1 HM-tagging was performed with primers ITS1_F1_G-46622 and ITS2_R1_G-46623 (ITS1 rDNA), and PolA1_F1_G-46750 and PolA1_R1_G-46751 (T. aestivum RNA polymerase one gene, PolA1). Bacterial 16S rDNA HM-tagging was performed with the same PolA1 primers and with 515_F1_G-46603 and 799_R1_G-46601 (V4 16S rDNA). To make an additional ITS1 library enriched for ITS1 amplicons, the ITS1 primer pair concentration was increased by a factor of 1.33 and the PolA1 primer pair concentration was decreased by a factor of 0.66, giving a 2:1 ratio instead of the standard 1:1 ratio, and the tagged products were amplified with 7 HM-tagging and 25 PCR cycles instead of the standard 2 HM-tagging and 30 PCR cycles.
 
-## Zea mays field samples
+#### Zea mays field samples
 
 Samples of leaves from mature Zea mays (maize) genotype B73 were harvested by standard hole punch from a field side in Tübingen. Permission to punch the leaves was graciously provided by Dr. Marja Timmermans (University of Tübingen). Each sample comprised five leaf discs, which were immediately shaken in 1 mL of sterile water in a screw cap tube to remove dust from the field. The water was removed by pipetting and the leaf discs were snap frozen in liquid nitrogen and taken back to the lab for processing. DNA was extracted with the bead beating protocol described above, with the difference that prior to addition of lysis buffer and garnet rocks, the deep frozen leaf discs were pre-ground with three metal ball bearings at a speed of 5.0 m/s in a FastPrep-24 instrument. We found this pre-grind was helpful to break down the fibrous maize leaf tissue. Prior to adding garnet rocks and lysis buffer, the metal balls were removed by magnet, as metal balls can crack the tubes at the speed of 6.0 m/s used for the primary DNA extraction. Each hamPCR HM-tagging reaction used 10 μL (~120 ng) template; Bacterial 16S rDNA was tagged with one of the forward primers 515F_bcGA_G-47188, 515F_bcTC_G-47189, 515F_bcAG_G-47190, or 515_F3_G-46694 paired with the reverse primer 799_R1_G-46601 (V4 16S rDNA). Maize LUMINIDEPENDENS (LD) was tagged with one of the forward LDP1 primers Zm_LD_bcGA_G-47184, Zm_LD_bcTC_G-47185, Zm_LD_bcAG_G-47186, or Zm_LD_bcCT_G-47187 paired with the LD reverse primer Zm_LD_R_G-47158. Two HM-tagging cycles were paired with 30 exponential cycles. To reduce host representation in the final library from the original ~75% to approximately 40%, we used the gel remixing technique described in Figure 3.
 
-## Test of HM-tagging step cycle numbers
+### Test of HM-tagging step cycle numbers
 
 As templates, we used a pool of mixed wild A. thaliana leaf DNA (~ 50 ng / reaction) and the ‘synthetic equimolar plasmid template’ (~ 0.05 ng / reaction, Appendix 1 - Discussion 2). For the wild A. thaliana leaf DNA, we tested V4 16S rDNA primers alone in the HM-tagging step vs. hamPCR with V4 16S rDNA primers plus primers for the host GI gene. For the ‘synthetic equimolar plasmid template’, we used only hamPCR. Specifically, we used 515_F1_G-46603 and 799_R1_G-46601 (V4 16S rDNA) and At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (502 bp GI gene).
 
 We applied hamPCR for 2, 3, 4, 5, 6, 7, 8, 9, or 10 HM-tagging cycles, paired with 30, 29, 28, 27, 26, 25, 24, 23, or 22 PCR cycles, respectively. All HM-tagging and PCR reactions were started together, and fewer HM-tagging cycles than 10, or fewer PCR cycles than 30, were achieved by taking PCR tubes out of the thermocycler at the end of the appropriate extension steps and placing them on ice.
 
-## Tests of template concentrations
+### Tests of template concentrations
 
 A panel of eight concentrations of wild A. thaliana leaf DNA was prepared, ranging from 5 to 500 ng per reaction. Primers for the wild A. thaliana leaf DNA were 515_F1_G-46603 and 799_R1_G-46601 (V4 16S rDNA) and At.GI_F1_G-46602 and At.GI_R502bp_G-46614 (502 bp GIGANTEA gene), with both primer pairs in equal ratio.
 
-## Quantitative real-time PCR on C. annuum samples
+### Quantitative real-time PCR on C. annuum samples
 
 A primer set targeting the gene for the type III effector XopQ of pathogenic Xanthomonas was used to measure abundance of Xe 85–10 (Doddaraju et al., 2019). For C. annuum, primers targeting the UBI-3 gene encoding a ubiquitin-conjugating protein were used (Wan et al., 2011). Two reagent mastermixes were prepared, one for each primer set, to help improve primer dose consistency. Each sample was amplified using three 10 μL technical replicates per primer set that were averaged for analysis. Each 10 μL reaction included 2.5 μL of DNA, to which was added, as a mastermix, 5 μL SYBR Green PCR Master Mix (Life Technologies, Carlsbad, California), 1.5 μL water, 0.5 μL of 5 μM forward primer, and 0.5 μL of 5 μM reverse primer. qPCR was performed on a BioRad CFX384 Real-time System and analyzed with the CFX Manager Software. The following conditions were used for the amplification of both target genes:
 
 The ratio of microbial to host DNA was initially calculated as 2^(-mean xopQ Cq value) / 2^(-mean UBI-3 Cq value). See alignment to CFU counts below.
 
-## Alignment of Xanthomonas qPCR and hamPCR load with CFU counts
+### Alignment of Xanthomonas qPCR and hamPCR load with CFU counts
 
 Log10-transformed Xe 85–10 ASV loads from hamPCR were regressed onto log10-transformed xopQ loads from qPCR (least squares method), and the slope (m) and y-intercept (b) of the best-fit line were used to transform and align the qPCR loads to hamPCR loads with the following formula: Load_qPCRhamPCR-scaled = m × Load_qPCR + b. Next, log10-transformed CFU counts were regressed onto the log10-transformed hamPCR loads, and the slope and y-intercept of the resulting best-fit line were used similarly to align both Load_qPCRhamPCR-scaled and hamPCR loads to the CFU counts.
 
-## Correlation networks
+### Correlation networks
 
 Pearson correlation matrices for relative abundance and microbial load data were created in R (R Development Core Team, 2019) using the ‘stats’ package. The SparCC (Friedman and Alm, 2012) correlation matrix was created in R using the implementation in the ‘SpiecEasi’ package (Kurtz et al., 2020). Networks were visualized with the package ‘qgraph’ (Epskamp et al., 2012). Custom scripts are available on GitHub (https://github.com/derekLS1/hamPCR).

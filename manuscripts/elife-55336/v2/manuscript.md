@@ -21,7 +21,7 @@
 
 ## Abstract
 
-The mating-type switching endonuclease HO plays a central role in the natural life cycle of Saccharomyces cerevisiae , but its evolutionary origin is unknown. HO is a recent addition to yeast genomes, present in only a few genera close to Saccharomyces . Here we show that HO is structurally and phylogenetically related to a family of unorthodox homing genetic elements found in Torulaspora and Lachancea yeasts. These WHO elements home into the aldolase gene FBA1 , replacing its 3' end each time they integrate. They resemble inteins but they operate by a different mechanism that does not require protein splicing. We show that a WHO protein cleaves Torulaspora delbrueckii FBA1 efficiently and in an allele-specific manner, leading to DNA repair by gene conversion or NHEJ. The DNA rearrangement steps during WHO element homing are very similar to those during mating-type switching, and indicate that HO is a domesticated WHO -like element.
+The mating-type switching endonuclease HO plays a central role in the natural life cycle of Saccharomyces cerevisiae, but its evolutionary origin is unknown. HO is a recent addition to yeast genomes, present in only a few genera close to Saccharomyces. Here we show that HO is structurally and phylogenetically related to a family of unorthodox homing genetic elements found in Torulaspora and Lachancea yeasts. These WHO elements home into the aldolase gene FBA1, replacing its 3' end each time they integrate. They resemble inteins but they operate by a different mechanism that does not require protein splicing. We show that a WHO protein cleaves Torulaspora delbrueckii FBA1 efficiently and in an allele-specific manner, leading to DNA repair by gene conversion or NHEJ. The DNA rearrangement steps during WHO element homing are very similar to those during mating-type switching, and indicate that HO is a domesticated WHO-like element.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ A key feature differentiating HO from true homing endonucleases is that it does 
 
 ## Results
 
-## WHO genes code for a family of intein-zinc finger fusion proteins similar to HO
+### WHO genes code for a family of intein-zinc finger fusion proteins similar to HO
 
 In the genome sequence of the type strain of Torulaspora delbrueckii (CBS1146; Gordon et al., 2011), we identified a cluster of five genes (TDEL0B06670 to TDEL0B06710) spanning 14 kb that have sequence similarity to HO. We renamed these genes WHO1 to WHO5, for ‘weird HO’ (Figure 1A). Two of them are pseudogenes, with a single frameshift in WHO1 and more extensive damage in WHO5. The WHO gene cluster is located downstream of the FBA1 gene encoding fructose-1,6-bisphosphate aldolase, an enzyme that functions bidirectionally in glycolysis and gluconeogenesis (Schwelberger et al., 1989). Amino acid sequence identity among the inferred WHO proteins is unusually low for a tandem gene cluster, ranging from 55% (Who2 vs. Who4) down to 24% (Who3 vs. Who4). T. delbrueckii also has an HO gene (TDEL0A00850) elsewhere in its genome, orthologous and syntenic with the HO gene of S. cerevisiae. The five inferred WHO proteins have only 22–25% identity to T. delbrueckii HO (BLASTP E-values in the range 1e-6 to 3e-30).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig1-v2.jpg)
+
+**Figure 1.:** (A) Polymorphic clusters of WHO genes and pseudogenes downstream of FBA1 in Torulaspora species. Multiple alleles are shown for T. delbrueckii, T. pretoriensis, and T. globosa. WHO genes are indicated by their family number. Fragments of the 3’ end of the FBA1 gene are marked. Genomic views are schematic and not drawn to scale. The phylogenetic tree is based on Shen et al. (2018). (B) Domain structure of HO, VDE and WHO proteins. The protein splicing domain is formed from two regions of the protein that flank the endonuclease domain (Moure et al., 2002).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) WHO genes and pseudogenes downstream of FBA1 in Lachancea species. Fragments of the 3’ end of FBA1 are marked. For WHO genes, ‘int’ indicates an intact gene, ‘ψ” indicates a substantial pseudogene, and ‘relic’ indicates a highly degraded pseudogene. Genomic views are schematic and not drawn to scale. The phylogenetic tree is based on Vakirlis et al. (2016). (B) All WHO genes at locations other than FBA1 in Lachancea species.
 
 The length and content of the WHO gene cluster is polymorphic among natural isolates of T. delbrueckii. This species has a primarily haploid (haplontic) life cycle (Kurtzman, 2011), so there is only one allele per strain. We found six different allelic WHO cluster arrangements among 15 strains we examined, with content ranging from 2 to 9 WHO genes and pseudogenes (Figure 1A; Supplementary file 1). The largest cluster (18 kb) is in strain L09, with three intact genes (WHO6, WHO2, WHO3) and six WHO pseudogenes.
 
@@ -47,7 +55,7 @@ As well as WHO genes and pseudogenes, some of the T. delbrueckii clusters contai
 
 The WHO proteins consist of an intein-like region followed by a zinc finger domain (Figure 1B). This structure is similar to HO, but distinct from VDE which has no zinc finger. WHO and HO are the only intein-zinc finger fusion proteins known in any organism. WHO and HO both have no exteins, and their intein domains both lack an amino acid motif that is normally found at the C-terminal end (motif G; Pietrokovski, 1994). Similar to HO, the zinc finger domains of the WHO proteins contain variable numbers (3-5) of a Cys-X-X-Cys motif. By BLAST searches, we found that the most similar zinc finger domains in other yeast proteins occur in orthologs of S. cerevisiae Ash1 (a regulator of HO transcription), which is an atypical type of GATA zinc finger domain (Scazzocchio, 2000; Münchow et al., 2002), though the level of sequence identity is low (maximally 38% over 76 residues).
 
-## WHO gene/pseudogene clusters downstream of FBA1 are common in the genera Torulaspora and Lachancea
+### WHO gene/pseudogene clusters downstream of FBA1 are common in the genera Torulaspora and Lachancea
 
 WHO gene/pseudogene clusters are present downstream of FBA1 in all five other species of the genus Torulaspora that we examined, and they again show within-species polymorphism in their gene content. We found three allelic WHO cluster arrangements among 9 T. pretoriensis strains, and two allelic arrangements in 2 T. globosa strains (Figure 1A). A pair of WHO genes is also present downstream of FBA1 in Zygotorulaspora mrakii, which is closely related to Torulaspora. There are no WHO genes in the next most closely related genus, Zygosaccharomyces.
 
@@ -55,7 +63,7 @@ By database searches, we found that WHO genes also occur in the genus Lachancea,
 
 In summary, WHO genes resemble homing endonuclease genes (Gimble, 2000). Like HO, but unlike any other homing endonucleases, the endonuclease domain is fused to a zinc finger domain. The structure of WHO genes, and their occurrence in clusters that are mixtures of intact genes and pseudogenes, suggests that they are part of a mobile genetic element.
 
-## A WHO protein cleaves the T. delbrueckii FBA1 gene in an allele-specific manner
+### A WHO protein cleaves the T. delbrueckii FBA1 gene in an allele-specific manner
 
 We hypothesized that WHO proteins are homing endonucleases whose target is the FBA1 gene. This hypothesis was motivated by two observations. First, WHO genes with very diverse sequences occur in tandem clusters downstream of FBA1, in both Torulaspora and Lachancea, suggestive of repeated integrations of different members of a mobile element family into the same target locus. Second, fragments of FBA1 are present within the WHO gene clusters in both Torulaspora and Lachancea (Figure 1 and Figure 1—figure supplement 1). All the FBA1 fragments consist of only the 3’ end of the gene, and many of them begin at approximately the same position (base 670–680 in the gene sequence), which we hypothesized could indicate a possible endonuclease cleavage site in FBA1.
 
@@ -65,7 +73,7 @@ FBA1 is an essential gene in most growth conditions (Lobo, 1984; Schwelberger et
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig2-v2.jpg)
 
-**Figure 2.:** WHO6 induces allele-specific DNA cleavage of the T. delbrueckii FBA1 gene, with DNA repair by gene conversion or NHEJ.(A) Summary of the experiment. Haploid S. cerevisiae strains, containing a non-expressed T. delbrueckii FBA1 ORF (TdFBA1-S or TdFBA1-R alleles) integrated at ADE2, were transformed multiple independent times with plasmids expressing WHO6 or WHO6-HA. In all transformations of strains containing the TdFBA1-S allele, the only colonies that survived expression of WHO6 were ones in which TdFBA1-S underwent DNA cleavage and repair by gene conversion or imprecise NHEJ, changing its sequence and making it resistant to further cleavage. (B) Gene conversion and imprecise NHEJ events in TdFBA1-S. The reference DNA sequence (uppercase) shows the 3’ end of the TdFBA1-S allele from T. delbrueckii strain CBS1146. Survivors 1–5 are transformants in which TdFBA1-S was cleaved by Who6 and repaired by imprecise NHEJ near position 668 (green box and triangle; survivors 1 and 2 have a 1 bp insertion, and survivors 3–5 have a 1 bp deletion, relative to the sequence TTT in the reference). Survivors 6–12 are transformants in which TdFBA1-S was cleaved by Who6 and partially overwritten by gene conversion with the endogenous S. cerevisiae FBA1 gene. Gene conversion regions are highlighted with pink backgrounds. The TdFBA1-R allele from T. delbrueckii strain L09, which is the natural host of WHO6, is also shown; this allele acquired no sequence changes among 10 independent pWHO6 transformants examined. A putative Who6 recognition site (yellow) and cleavage site with 4 bp 3’ overhang (underlined) are marked. Survivors 10 and 11 are from transformations with pWHO6-HA; all other survivors are from transformations with pWHO6. The complete TdFBA1 gene was sequenced from all transformants but only positions 616 to 975 are shown; there were no changes outside this region.
+**Figure 2.:** (A) Summary of the experiment. Haploid S. cerevisiae strains, containing a non-expressed T. delbrueckii FBA1 ORF (TdFBA1-S or TdFBA1-R alleles) integrated at ADE2, were transformed multiple independent times with plasmids expressing WHO6 or WHO6-HA. In all transformations of strains containing the TdFBA1-S allele, the only colonies that survived expression of WHO6 were ones in which TdFBA1-S underwent DNA cleavage and repair by gene conversion or imprecise NHEJ, changing its sequence and making it resistant to further cleavage. (B) Gene conversion and imprecise NHEJ events in TdFBA1-S. The reference DNA sequence (uppercase) shows the 3’ end of the TdFBA1-S allele from T. delbrueckii strain CBS1146. Survivors 1–5 are transformants in which TdFBA1-S was cleaved by Who6 and repaired by imprecise NHEJ near position 668 (green box and triangle; survivors 1 and 2 have a 1 bp insertion, and survivors 3–5 have a 1 bp deletion, relative to the sequence TTT in the reference). Survivors 6–12 are transformants in which TdFBA1-S was cleaved by Who6 and partially overwritten by gene conversion with the endogenous S. cerevisiae FBA1 gene. Gene conversion regions are highlighted with pink backgrounds. The TdFBA1-R allele from T. delbrueckii strain L09, which is the natural host of WHO6, is also shown; this allele acquired no sequence changes among 10 independent pWHO6 transformants examined. A putative Who6 recognition site (yellow) and cleavage site with 4 bp 3’ overhang (underlined) are marked. Survivors 10 and 11 are from transformations with pWHO6-HA; all other survivors are from transformations with pWHO6. The complete TdFBA1 gene was sequenced from all transformants but only positions 616 to 975 are shown; there were no changes outside this region.
 
 Our experiment is similar to one carried out by Moore and Haber (1996) who overexpressed HO so that it continually cleaved the MAT locus in haploid S. cerevisiae cells that had no HML/HMR loci. They found that the only cells that survived HO overexpression were ones in which inaccurate DNA repair ligated the chromosome back together but modified the target site sequence in such a way that HO could no longer cleave it, because chromosomes with accurate repairs were re-cleaved by HO. Similarly, in our experiment, the only haploid S. cerevisiae cells containing TdFBA1-S that survived overexpression of Who6 were ones in which the TdFBA1-S sequence became modified, either by gene conversion or by imprecise non-homologous end joining (NHEJ) (Figure 2A).
 
@@ -75,7 +83,7 @@ To verify that the gene conversions were not caused by the 3xHA tag, we carried 
 
 From these experiments we conclude that the T. delbrueckii isolate (L09) that contains the WHO6 gene also contains, 588 bp upstream, an allele of FBA1 (TdFBA1-R) that is resistant to cleavage by the Who6 endonuclease. It can therefore stably maintain this endonuclease gene in its genome. In contrast, an isolate (CBS1146) that has no WHO6 gene contains an FBA1 allele (TdFBA1-S) that is sensitive to cleavage by Who6.
 
-## The WHO endonuclease cleavage site in FBA1
+### The WHO endonuclease cleavage site in FBA1
 
 Similar to the HO overexpression survivors in Moore and Haber (1996), our transformants that contained the sensitive TdFBA1-S allele of T. delbrueckii FBA1 and survived overexpression of Who6 have acquired mutations that can be inferred to have damaged the Who6 recognition or cleavage sites, making the cells resistant to Who6. These mutations enable us to identify the approximate location of the Who6 recognition and cleavage sites in T. delbrueckii FBA1.
 
@@ -85,33 +93,41 @@ The seven transformants showing evidence of gene conversion (survivors 6–12, i
 
 In summary, the pattern of NHEJ events and gene conversions in S. cerevisiae cells that contain TdFBA1-S and survive continuous expression of a WHO protein is very similar to the pattern in cells that contain MAT and survive continuous expression of HO (Moore and Haber, 1996). We infer that WHO endonucleases cleave FBA1 genes at approximately base 668, which is slightly upstream of the 5’ ends of many of the FBA1 fragments seen in Torulaspora and Lachancea species. The core of the putative recognition site of a WHO endonuclease is also similar to that of HO, with the sequence 5’-CGC-3’ adjacent to the overhang.
 
-## Repeated homing continually replaces the 3’ end of FBA1 and builds WHO clusters
+### Repeated homing continually replaces the 3’ end of FBA1 and builds WHO clusters
 
 The TdFBA1-S and TdFBA1-R alleles have only 85% nucleotide sequence identity downstream of base 668, which is remarkably low for two alleles from the same species. In contrast, they have 99% identity upstream of this position. More generally, among the full-length FBA1 genes of the 15 T. delbrueckii isolates we analyzed, nucleotide sequence diversity is much higher in the 3’ part of the gene (Figure 3A). Moreover, phylogenetic trees constructed from the 5’ and 3’ parts of TdFBA1 (upstream and downstream of position 668) have contradictory topologies (Figure 3B). The heterogeneous evolution of the two ends of FBA1 in T. delbrueckii, and the presence of 3’ FBA1 fragments in its genome, suggest a mechanism for how the homing genetic element containing WHO genes operates.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig3-v2.jpg)
 
-**Figure 3.:** T. delbrueckii FBA1.(A) Heatmap showing regions of nucleotide sequence diversity (π) among 15 sequenced FBA1 alleles from T. delbrueckii isolates, plotted in 10 bp windows. (B) Inconsistency of phylogenetic trees obtained from the 5’ and 3’ ends of FBA1 alleles from different T. delbrueckii strains (5’ end: bases 1–667; 3’ end: bases 669–1083). The alleles from strains CBS1146 and L09 are also called TdFBA1-S and TdFBA1-R, respectively. The trees are drawn to the same scale and were generated from nucleotide sequences using PhyML as implemented in Seaview v4.5.0 (Gouy et al., 2010) with default parameters. Bootstrap support from 1000 replicates is shown.
+**Figure 3.:** (A) Heatmap showing regions of nucleotide sequence diversity (π) among 15 sequenced FBA1 alleles from T. delbrueckii isolates, plotted in 10 bp windows. (B) Inconsistency of phylogenetic trees obtained from the 5’ and 3’ ends of FBA1 alleles from different T. delbrueckii strains (5’ end: bases 1–667; 3’ end: bases 669–1083). The alleles from strains CBS1146 and L09 are also called TdFBA1-S and TdFBA1-R, respectively. The trees are drawn to the same scale and were generated from nucleotide sequences using PhyML as implemented in Seaview v4.5.0 (Gouy et al., 2010) with default parameters. Bootstrap support from 1000 replicates is shown.
 
 We propose that WHO elements home into the FBA1 locus by using a mechanism that involves replacing the 3’ end of FBA1, thereby converting a sensitive FBA1 allele into one that is resistant to the particular WHO protein encoded by the element (Figure 4A, left column). During meiosis in a heterozygous diploid cell, the WHO protein encoded by the donor allele cleaves the sensitive full-length FBA1 gene of the recipient allele at position 668. The double-strand break is then repaired by using the WHO-containing chromosome as a template. The 3’ region of the cleaved full-length FBA1 gene interacts with the FBA1 fragment in the template, resulting in incorporation of the WHO gene into the previously empty allele. After homing, the recipient chromosome contains a WHO gene located between a resistant full-length FBA1 gene (a chimera of the recipient’s previous 5’ end and a copy of the donor’s 3’ end) and a new FBA1 fragment formed from the recipient’s previous 3’ end. In this model, the FBA1 fragment downstream of the donor’s WHO gene is an essential part of the WHO element because it provides a region of homology that acts as a recombination site (Figure 4A). The fragment is not part of the expressed FBA1 gene so it does not need to maintain an open reading frame.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig4-v2.jpg)
 
-**Figure 4.:** WHO element homing.(A) Similarity of mechanisms of action of WHO, VDE and﻿ HO. The mechanism we propose for WHO elements integrating at FBA1 is compared to the known mechanisms for VDE integrating into VMA1 and for HO-mediated switching of the MAT locus (Gimble and Thorner, 1992; Lee and Haber, 2015). WHO and VDE homing occur between allelic chromosomes in a diploid cell, whereas mating-type switching occurs between MAT and HML/HMR loci in a haploid cell. Gray rectangles indicate regions of sequence identity. The column on the right shows mating-type switching from MATα to MATa in S. cerevisiae. Switching from MATa to MATα occurs by an identical mechanism; the core of the HO recognition site (CGCAACA) is the first 7 nucleotides of the Z region, which is present in both of the MAT alleles even though it is part of the MATα1 gene sequence. The HO gene is on a different chromosome than MAT-HML-HMR. (B) Model for WHO cluster formation by successive integration of WHO elements. Every time a WHO element integrates into the locus, the 3’ end of the full-length FBA1 gene is replaced. The previous 3’ end is pushed rightwards, together with any older WHO genes, after which they can decay into pseudogenes. The complete WHO mobile element unit consists of a WHO gene and the upstream 3’ end of FBA1, which confers resistance to it.
+**Figure 4.:** (A) Similarity of mechanisms of action of WHO, VDE and﻿ HO. The mechanism we propose for WHO elements integrating at FBA1 is compared to the known mechanisms for VDE integrating into VMA1 and for HO-mediated switching of the MAT locus (Gimble and Thorner, 1992; Lee and Haber, 2015). WHO and VDE homing occur between allelic chromosomes in a diploid cell, whereas mating-type switching occurs between MAT and HML/HMR loci in a haploid cell. Gray rectangles indicate regions of sequence identity. The column on the right shows mating-type switching from MATα to MATa in S. cerevisiae. Switching from MATa to MATα occurs by an identical mechanism; the core of the HO recognition site (CGCAACA) is the first 7 nucleotides of the Z region, which is present in both of the MAT alleles even though it is part of the MATα1 gene sequence. The HO gene is on a different chromosome than MAT-HML-HMR. (B) Model for WHO cluster formation by successive integration of WHO elements. Every time a WHO element integrates into the locus, the 3’ end of the full-length FBA1 gene is replaced. The previous 3’ end is pushed rightwards, together with any older WHO genes, after which they can decay into pseudogenes. The complete WHO mobile element unit consists of a WHO gene and the upstream 3’ end of FBA1, which confers resistance to it.
 
 While the modified FBA1 is now resistant to the newly acquired WHO gene, it may still be sensitive to other WHO genes. Repeated homing of multiple different WHO elements into the same chromosome will build tandem clusters of WHO genes and FBA1 fragments, with the most recent elements being located closest to the full-length FBA1 gene (Figure 4B). Each homing event replaces the 3’ end of the full-length FBA1 gene with the sequence from a different allele, causing its rapid evolution and discordant phylogenies. Over time, the WHO genes and FBA1 fragments can decay into pseudogenes or become deleted, because they are not required for the aldolase function of FBA1. The functional unit of a WHO element can be defined as a WHO gene and the resistance-conferring FBA1 3’ region upstream of it (Figure 4B).
 
 In summary, T. delbrueckii WHO genes are part of a homing genetic element that targets FBA1. Our model for its mechanism of action explains how WHO clusters and FBA1 fragments are formed, and the unusual chimeric mode of evolution of FBA1.
 
-## Phylogeny of WHO genes shows an FBA1-associated backbone and multiple transpositions to other genomic loci
+### Phylogeny of WHO genes shows an FBA1-associated backbone and multiple transpositions to other genomic loci
 
 We investigated the phylogenetic relationship among WHO, HO, and VDE genes, using amino acid sequences inferred from intact genes and from some of the less-damaged WHO pseudogenes. In view of the high divergence among the sequences, the tree topology may not be fully accurate, but it permits identification of approximately 14 families of WHO genes (Figure 5). The WHO families form a monophyletic group, separate from HO and VDE. Most of the families are either Torulaspora-specific or Lachancea-specific, indicative of recent gene duplications within each genus. The WHO2, WHO4, WHO5 and WHO11 families are specific to T. delbrueckii so they must be young. Overall, the tree indicates a dynamic history of extensive WHO gene duplication and frequent formation of pseudogenes, consistent with the ‘cycle of degeneration’ expected for a homing genetic element (Burt and Koufopanou, 2004).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig5-v2.jpg)
+
+**Figure 5.:** Magenta branches indicate WHO genes that are located at the FBA1 locus, and blue branches indicate WHO genes that are not beside FBA1. 14 WHO families are marked by brackets. Individual WHO gene names are colored by their source genus (black, Torulaspora; orange, Lachancea; gray, other genera). WHO gene names indicate the source species and strain number (if multiple strains were analyzed), WHO family (in uppercase), the name of a neighboring gene in the genome (in lowercase), and the suffix ‘int’ for intact WHO genes or ‘ps’ for WHO pseudogenes. Protein sequences were aligned using MUSCLE and filtered with Gblocks as implemented in Seaview v4.5.0 (Gouy et al., 2010). Badly degraded pseudogenes (relics) were not included. The tree was constructed by maximum likelihood using IQ-TREE v1.6.12 (Trifinopoulos et al., 2016), utilizing the built-in model finder option. Numbers on branches show support values from SH-aLRT and 1000 ultrafast bootstraps, separated by a slash (Trifinopoulos et al., 2016). The tree was rooted using VDE because WHO and HO share a zinc finger domain.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Genome organization around FBA1 in Kazachstania servazzii and its close relatives. Data from 4 strains of K. servazzii are shown. FBA1 genes, exons and fragments are colored magenta and their amino acid coordinates in the Fba1 protein are indicated. The phylogenetic tree topology is from Shen et al. (2018) and Vaughan-Martini et al. (2011). The genomes of 13 other species of Kazachstania that are outgroups to the ones shown here have no FBA1 intron and no WHO genes (data from Shen et al., 2018). (B) Sequence of the intron in the FBA1 gene of K. servazzii strain UCD13. The intron is located between the first and second bases of codon 223. Intron sequence is shown in lowercase, with exons and their translations in uppercase. Core intron sequence motifs are underlined.
 
 Although most WHO genes and pseudogenes are located downstream of FBA1 genes (magenta branches in Figure 5), a few of them are not. It is striking that these non-FBA1-associated genes fall into a small number of clades (blue branches in Figure 5). The WHO genes in these clades seem to have lost their target specificity for FBA1 and transposed to other places in the genome, and several of these WHO genes are intact. Most notably, the WHO10 family includes five intact genes from T. globosa that are located at five different places in the genomes of the two isolates we sequenced (Figure 6). There is a WHO10 pseudogene beside FBA1 in one T. globosa isolate and the sister species T. maleeae (Figure 1A), indicating that WHO10 was originally associated with FBA1. Another WHO clade unlinked to FBA1 is WHO8, which is present only in two species of Lachancea (Figure 5).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig6-v2.jpg)
 
-**Figure 6.:** WHO10 is an active mobile genetic element in T. globosa and integrates into loci other than FBA1.Each panel shows a pair of allelic regions from T. globosa strains CBS2947 and CBS764T. Intact WHO10 genes are shown in green, FBA1 fragments in magenta, and host genes in blue. (A-E) Five strain-specific insertions of WHO10 elements into different host loci. At the BXI1 and E1850 loci of CBS2947 (A,B), the 3’ end of the host gene became duplicated, whereas at the CMC4, RKM5 and MIN6 loci of CBS764 (C-E) the host gene was disrupted by the insertion and no part of it became duplicated. All the integrations contain a fragment of FBA1 immediately downstream of WHO10, and most also contain fragments of other genes. Genes are named after their S. cerevisiae orthologs where possible. E1850 is the T. globosa ortholog of T. delbrueckii TDEL0E01850, a gene with no homolog in baker’s yeast.
+**Figure 6.:** Each panel shows a pair of allelic regions from T. globosa strains CBS2947 and CBS764T. Intact WHO10 genes are shown in green, FBA1 fragments in magenta, and host genes in blue. (A-E) Five strain-specific insertions of WHO10 elements into different host loci. At the BXI1 and E1850 loci of CBS2947 (A,B), the 3’ end of the host gene became duplicated, whereas at the CMC4, RKM5 and MIN6 loci of CBS764 (C-E) the host gene was disrupted by the insertion and no part of it became duplicated. All the integrations contain a fragment of FBA1 immediately downstream of WHO10, and most also contain fragments of other genes. Genes are named after their S. cerevisiae orthologs where possible. E1850 is the T. globosa ortholog of T. delbrueckii TDEL0E01850, a gene with no homolog in baker’s yeast.
 
 We detected only a few WHO sequences in species other than Torulaspora (or Zygotorulaspora) and Lachancea in BLAST searches against the NCBI database, which includes genome sequences from hundreds of yeast species including members of almost every genus in the family Saccharomycetaceae (Shen et al., 2018). Thus the WHO family has a very limited phylogenetic distribution, and occurs mostly in two genera that are not sisters of each other (Shen et al., 2018). The few WHO sequences outside Torulaspora and Lachancea all lie in the WHO13 and WHO12 families, which are outgroups to the other WHO families (Figure 5), and most of them are pseudogenes. WHO13 is FBA1-associated but WHO12 is not. The WHO13 sequences are all pseudogenes and were detected only in a small clade of Kazachstania species, downstream of FBA1. Interestingly, these species have an intron in FBA1 at precisely the inferred WHO endonuclease cleavage site (Figure 5—figure supplement 1), and this is the only intron in any budding yeast FBA1 gene. In other eukaryotes, evolutionarily novel introns are gained at sites of double-strand DNA breakage (Li et al., 2009).
 
@@ -119,7 +135,7 @@ The position of WHO12 as an outgroup to all the other WHO families (Figure 5) ra
 
 In summary, the phylogenetic tree indicates that WHO genes have been located beside FBA1 throughout most of their diversification. The WHO genes that are not now located beside FBA1 are descended from FBA1-linked ancestors. The patchy taxonomic distribution of WHO genes suggests that they are native to the genus Torulaspora and/or Lachancea and have probably been transmitted between these genera by horizontal gene transfer. Horizontal transfer among budding yeast species has previously been inferred for the VDE intein (Koufopanou et al., 2002; Okuda et al., 2003). The split between the zinc finger-containing proteins HO and WHO pre-dates the diversification of the WHO families.
 
-## Recent transposition of WHO10 genes in Torulaspora globosa confirms the mobility of WHO elements
+### Recent transposition of WHO10 genes in Torulaspora globosa confirms the mobility of WHO elements
 
 The WHO10 family has become amplified in T. globosa. In the two strains that we sequenced, strain-specific insertions of intact WHO10 genes are present at five loci not linked to FBA1 (Figure 6). The five Who10 proteins have only 72–80% amino acid sequence identity to one another. The T. globosa WHO10 genes are located within regions of inserted DNA 2.8–6.6 kb long. In two cases, the inserted DNA includes a duplicated fragment of the 3’ end of a host gene (BXI1 and E1850) at one end, so that the host gene was not disrupted (Figure 6A,B). These duplications resemble the FBA1 fragments seen downstream of FBA1 in many species (Figure 1A). In the other three cases, the WHO10-containing insertion interrupts a host gene without forming a duplication, probably inactivating it (Figure 6C,D,E).
 
@@ -141,7 +157,7 @@ Our results finally illuminate the origin of HO endonuclease. Based on the fact 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55336/elife-55336-fig7-v2.jpg)
 
-**Figure 7.:** HO by domestication of a WHO element.See Discussion for details. The dashed arrows indicate two possible routes to HO, from ancestral WHO elements that either were, or were not, specifically associated with FBA1.
+**Figure 7.:** See Discussion for details. The dashed arrows indicate two possible routes to HO, from ancestral WHO elements that either were, or were not, specifically associated with FBA1.
 
 Many examples are known of mobile genetic element genes that have been domesticated to take on a new role in the cell (Volff, 2006). In some of these examples, a domesticated endonuclease gene has retained its nucleolytic activity and functions in a programmed genome rearrangement process, such as the RAG1 gene in V(D)J recombination in the immune system of jawed vertebrates (Huang et al., 2016), and the PiggyMac gene in elimination of germline sequences during development of the macronucleus in Paramecium (Baudry et al., 2009). In other examples the ability to cleave DNA has been lost, such as in the bacterial DUF199/WhiA family which originated as a LAGLIDADG endonuclease but is now a regulator of transcription (Kaiser et al., 2009). HO has retained its endonuclease activity, and its origin from a homing element may help explain some unusual properties of this protein in vitro, such as its extreme catalytic inefficiency and its ability to attach to both ends of linear DNA molecules, forming loops visible by electron microscopy (Jin et al., 1997).
 
@@ -149,7 +165,157 @@ The domestication of a WHO element to become HO is similar to the domestication 
 
 ## Materials and methods
 
-## Yeast isolates and genome sequences
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Torulaspora delbrueckii)</td>
+      <td>FBA1</td>
+      <td>Gordon et al., 2011</td>
+      <td>TDEL0B06660; NCBI: XM_003679958</td>
+      <td>Strain CBS1146; TdFBA1-S allele</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>IMX585</td>
+      <td>Mans et al., 2015</td>
+      <td></td>
+      <td>S. cerevisiae strain with integrated CAS9 gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Torulaspora delbrueckii)</td>
+      <td>L09; L10; L11; L12; L13; L15; L16; L18; L19; L20</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Strain collection of Lallemand, Inc</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Torulaspora delbrueckii)</td>
+      <td>NCYC696</td>
+      <td>National Collection of Yeast Cultures (UK)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (multiple Torulaspora species)</td>
+      <td>All CBS strains</td>
+      <td>Westerdijk Fungal Biodiversity Institute (Netherlands)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Torulaspora pretoriensis)</td>
+      <td>UWOPS 83–1046.2</td>
+      <td>MA Lachance, University of Western Ontario (Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zygotorulaspora mrakii)</td>
+      <td>NRRL Y-6702</td>
+      <td>CP Kurtzman, USDA Agricultural Research Service</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Naumovozyma castellii)</td>
+      <td>Y056 (NRRL Y-12630T); Y174 (CBS4310); Y287 (CBS3006); Y668 (CBS1579)</td>
+      <td>Jure Piškur, Lund University (Sweden)</td>
+      <td></td>
+      <td>See Spírek et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMEL13 plasmid</td>
+      <td>Mans et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ADE2.Y sgRNA template</td>
+      <td>DiCarlo et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIL75-KanMX plasmid</td>
+      <td>Liachko and Dunham, 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWHO6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DNA sequence is in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWHO6-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DNA sequence is in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGFP-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DNA sequence is in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sc ade2::TdFBA1-S repair template</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DNA sequence is in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sc ade2::TdFBA1-R repair template</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DNA sequence is in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for PCR of Sc ade2::TdFBA1 locus</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-TGACCACGTT AATGGCTCC-3’ and 5’-CACCAGCTCCA GCGATAATTG-3’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPAdes assembler</td>
+      <td>Bankevich et al., 2012</td>
+      <td>V3.11.1</td>
+      <td>RRID:SCR_000131</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HGAP3 assembler</td>
+      <td>Chin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast isolates and genome sequences
 
 Genomes analyzed in this study are listed in Supplementary files 1 and 2. New genome sequences were obtained as follows. T. delbrueckii strains L09–L20 were from the strain collection of Lallemand Inc (Montréal, Canada), generously provided by Dr. Caroline Wilde. They were sequenced at the University of Missouri core facility (Illumina, SE 1 × 50 bp). T. delbrueckii strain NCYC696 data were downloaded from opendata.ifr.ac.uk/NCYC on 23-Feb-2017 as unassembled Illumina sequence reads (PE 2 × 100 bp). T. globosa strains CBS764T and CBS2947 were purchased from the Westerdijk Institute (Netherlands) and sequenced using both Illumina (PE 2 × 150 bp; BGI Tech Solutions, Hong Kong) and Pacific Biosciences Sequel technologies (1 SMRT cell; Earlham Institute, Norwich, UK). T. pretoriensis strain CBS2187T (Illumina, PE 2 × 100 bp + 6 kb library MP 2 × 100 bp) and T. franciscae strain CBS2926T (Illumina, PE 2 × 100 bp) were sequenced and assembled at INRAE Montpellier. Eight other T. pretoriensis strains (CBS2785, CBS5080, CBS9333, CBS11100, CBS11121, CBS11123, CBS11124 from the Westerdijk Institute, and UWOPS 83–1046.2 from M.A. Lachance, University of Western Ontario) were sequenced at the Earlham Institute using their proprietary LITE protocol for the Illumina platform. Zygotorulaspora mrakii strain NRRL Y-6702T was obtained from the USDA Agricultural Research Service (Peoria, IL, USA) and sequenced at the Earlham Institute using both Pacific Biosciences RSII (4 SMRT cells) and Illumina LITE methods. Naumovozyma castellii strains Y056, Y174, Y287 and Y668 were gifts from Prof. Jure Piškur (Lund University, Sweden) and were sequenced at the Earlham Institute using the Illumina LITE method.
 
@@ -159,15 +325,15 @@ Illumina data were assembled using SPAdes version v3.11.1 (Bankevich et al., 201
 
 Other genome sequences used in this study were taken from the NCBI database. The previously published genome sequences for Torulaspora species are from Gordon et al. (2011), Gomez-Angulo et al. (2015), Tondini et al., 2018, Galeote et al. (2018) and Shen et al. (2018); Lachancea species are from Souciet et al. (2009), Sarilar et al. (2015), Vakirlis et al. (2016), Freel et al. (2016) and Kellis et al. (2004); and Kluyveromyces species are from Dujon et al. (2004) and Varela et al. (2019).
 
-## Construction of S. cerevisiae ade2::TdFBA1 strains
+### Construction of S. cerevisiae ade2::TdFBA1 strains
 
 S. cerevisiae strains in which the coding region (ORF) of T. delbrueckii FBA1 was integrated into the S. cerevisiae ADE2 gene, in opposite orientation to ADE2 so that it is not functional, were constructed using CRISPR-Cas9 as follows. The ADE2-targeting sgRNA ADE2.Y from DiCarlo et al. (2013) was synthesized as a gene fragment by Integrated DNA Technologies, and inserted into the sgRNA plasmid pMEL13 from Mans et al. (2015) by restriction digestion and ligation. This plasmid was then transformed into S. cerevisiae strain IMX585 expressing Cas9 (Mans et al., 2015), together with a repair template containing the T. delbrueckii FBA1 ORF (TdFBA1-S or TdFBA1-R allele) flanked with homology to S. cerevisiae ADE2 in reverse orientation (bases 564456..564832 and 565952..566366 of S. cerevisiae chromosome XV). Sequences of the ade2::TdFBA1-S and ade2::TdFBA1-R constructs are given in Supplementary file 3. Transformants were selected on YPAD (YPD (Formedium) supplemented with 40 μg/ml adenine sulfate (Sigma)) containing 200 μg/ml G418. ADE2 knockouts were identified by formation of red colonies. Successful integrants were confirmed by PCR amplification of the ade2::TdFBA1 locus and Sanger sequencing (Eurofins). Two replicate ade2::TdFBA1-S strains were designated C1 and C4, and two replicate ade2::TdFBA1-R strains were designated L1 and L3.
 
-## WHO6 expression plasmid construction
+### WHO6 expression plasmid construction
 
 Replicating plasmids constitutively expressing Who6, Who6-HA, or GFP-HA were constructed in the panARS replicating vector pIL75 (Liachko and Dunham, 2014) containing a KanMX marker. The nucleotide sequences of these plasmids (pWHO6, pWHO6-HA, pGFP-HA) are given in Supplementary file 3. In pWHO6, the WHO6 gene from T. delbrueckii strain L09 was placed under the control of the promoter and terminator of the T. delbrueckii glyceraldehyde-3-phosphate dehydrogenase gene TDH3 (TDEL0E04750). These regions were amplified by PCR from T. delbrueckii genomic DNA using high fidelity polymerase (New England Biolabs, M0492S) and inserted into pIL75 by restriction digestion and ligation. Plasmid pWHO6-HA is identical to pWHO6 except that its WHO6 gene is fused to a C-terminal 3xHA tag. A similar control plasmid (pGFP-HA) was made containing a GFP gene fused to 3xHA tag (GBlock made by Integrated DNA Technologies and inserted into pIL75 by restriction digestion and ligation), under the control of the T. delbrueckii TDH3 promoter and terminator.
 
-## Gene conversion assays
+### Gene conversion assays
 
 The S. cerevisiae ade2::TdFBA1 strains (C1, C4, L1, L3) as described above were transformed with the plasmids pWHO6, pWHO6-HA, or pGFP-HA. Multiple independent transformations were made to ensure that all gene conversion or NHEJ events recovered were independent. First, pWHO6-HA and pGFP-HA were each transformed into strains C1, C4, L1 and L3, and the whole genomes of these eight strains were sequenced, resulting in the unexpected discovery of gene conversion at the ade2::TdFBA1 locus when C1 and C4 were transformed with pWHO6-HA (called survivors 11 and 10, respectively, in Figure 2B). Genome sequencing was done by BGI Tech Solutions using a BGISEQ instrument with 50 bp single-end reads. Second, pWHO6 (no 3xHA tag) and pGFP-HA were each transformed 10 times into strains C4 and L1. The ade2::TdFBA1 locus from each transformant was amplified by PCR with a high-fidelity polymerase (New England Biolabs, M0492S) and Sanger sequenced. Primers for amplification were TGACCACGTTAATGGCTCC and CACCAGCTCCAGCGATAATTG.
 

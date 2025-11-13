@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Methyl-CpG-binding protein 2 (MeCP2) encoded by the MECP2 gene is a transcriptional regulator whose mutations cause Rett syndrome (RTT). Mecp2 -deficient mice show fear regulation impairment; however, the cellular and molecular mechanisms underlying this abnormal behavior are largely uncharacterized. Here, we showed that Mecp2 gene deficiency in cholinergic interneurons of the nucleus accumbens (NAc) dramatically impaired fear learning. We further found that spontaneous activity of cholinergic interneurons in Mecp2 -deficient mice decreased, mediated by enhanced inhibitory transmission via α2-containing GABA A receptors. With MeCP2 restoration, opto- and chemo-genetic activation, and RNA interference in ChAT-expressing interneurons of the NAc, impaired fear retrieval was rescued. Taken together, these results reveal a previously unknown role of MeCP2 in NAc cholinergic interneurons in fear regulation, suggesting that modulation of neurons in the NAc may ameliorate fear-related disorders.
+Methyl-CpG-binding protein 2 (MeCP2) encoded by the MECP2 gene is a transcriptional regulator whose mutations cause Rett syndrome (RTT). Mecp2-deficient mice show fear regulation impairment; however, the cellular and molecular mechanisms underlying this abnormal behavior are largely uncharacterized. Here, we showed that Mecp2 gene deficiency in cholinergic interneurons of the nucleus accumbens (NAc) dramatically impaired fear learning. We further found that spontaneous activity of cholinergic interneurons in Mecp2-deficient mice decreased, mediated by enhanced inhibitory transmission via α2-containing GABAA receptors. With MeCP2 restoration, opto- and chemo-genetic activation, and RNA interference in ChAT-expressing interneurons of the NAc, impaired fear retrieval was rescued. Taken together, these results reveal a previously unknown role of MeCP2 in NAc cholinergic interneurons in fear regulation, suggesting that modulation of neurons in the NAc may ameliorate fear-related disorders.
 
 ## Introduction
 
@@ -40,21 +40,53 @@ In this study, we achieved MeCP2 deletion primarily in cholinergic neurons by cr
 
 ## Results
 
-## Chat-Mecp2-/ymice exhibited deficits in fear learning
+### Chat-Mecp2-/ymice exhibited deficits in fear learning
 
 We first deleted Mecp2 specifically from cholinergic neurons by crossing ChatCre mice with mice carrying the loxp-flanked allele (Mecp2flox/-), hereafter referred to as Chat-Mecp2-/y mice. Fluorescent immunohistochemistry results demonstrated a remarkable reduction in the expression of MeCP2 in the cholinergic neurons of Chat-Mecp2-/y mice (Figure 1A–E), thus confirming the efficiency of Mecp2 deletion. We then examined Chat-Mecp2-/y mice under fear conditioning. A train of tone (30 s, 87 db) was used as conditioned stimulus (CS) and the electric footshock (0.5 mA, 1.5 ms) was used as unconditioned stimulus (US). CS was paired with US in a neural context for four trials in the training procedure. After pairing, mice were exposed to CS presented alone (context or tone) on the second day. The Chat-Mecp2-/y mice displayed increased freezing across trials in the training day (Figure 1F). However, compared to the other three control groups, freezing time of Chat-Mecp2-/y mice was significantly decreased on the last trial, suggesting an impairment in fear learning (Figure 1—figure supplement 1A). In the context and tone retrieval test, Chat-Mecp2-/y mice also showed decreased freezing time (Figure 1G,H). The difference in retrieval test with Chat-Mecp2-/y mice disappeared after normalizing to the last trial in the training day, further supporting the fear learning deficits (Figure 1—figure supplement 1B,C). The Chat-Mecp2-/y mice exhibited normal ability in pain detection (Figure 1—figure supplement 1D). We also explored whether Chat-Mecp2-/y mice showed spontaneous immobility behavior. The Chat-Mecp2-/y mice demonstrated normal locomotor activity without significant differences in immobility time in the open field tests (Figure 1—figure supplement 1E,F). Furthermore, these mice showed no deficit in the Y maze (Figure 1—figure supplement 1G) or Morris water maze tests (Zhang et al., 2016b), suggesting normal working and spatial memory ability.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Fluorescence images showing NAc (A) and MS sections (B) in ChatCre mice stained for ChAT, MeCP2, and DAPI. (C, D) Fluorescence images showing NAc (C) and MS sections (D) in Chat-Mecp2-/y mice stained for ChAT, MeCP2, and DAPI. (E) Percentage of MeCP2 expression in NAc or MS of ChatCre or Chat-Mecp2-/y mice. P-values were calculated by two-tailed unpaired t-test. t = 95.73, df = 11, p<0.0001 for NAc. t = 281.8, df = 5, p<0.0001 for MS. n = 6 sections from four mice (NAc in ChatCre mice), 4 sections from four mice (MS in ChatCre mice), 7 sections from three mice (NAc in Chat-Mecp2-/y mice), 3 sections from three mice (MS in Chat-Mecp2-/y mice). (F) No significant change was detected in fear learning. P-values were calculated by two-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test. F (9, 153)=1.895, p=0.0565. (G, H) Chat-Mecp2-/y mice showed decreased percentage of time freezing in context retrieval (G) and tone retrieval (H). P-values were calculated by one-way ANOVA with Bonferroni’s multiple comparisons test. F (3, 51)=4.445, p=0.0075 for (G). F (3, 51)=3.941, p=0.0132 for (H). n = 13 (WT), 15 (ChatCre), 15 (Mecp2flox/y), 12 (Chat-Mecp2-/y) mice. NAc: nucleus accumbens. MS: medial septum. WT: wild type mice. ChAT: Choline acetyltransferase, as a marker for cholinergic neurons. Data are means ± SEM. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ####p<0.0001. NS means no significance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Chat-Mecp2-/y mice showed decreased freezing time compared to combination of other three control groups on Trial four during fear learning. P-values were calculated by two-tailed unpaired t-test. t = 2.228, df = 53, p=0.0302. n = 43 for control group, n = 12 neurons for Chat-Mecp2-/y group. (B, C) Freezing was measured against trial four during learning. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparison test. F (3, 51)=1.007, p=0.3975 for context fear. F (3, 51)=7.729, p=0.0002 for tone fear. n = 13 (WT), 15 (ChatCre), 15 (Mecp2flox/y), 12 (Chat-Mecp2-/y) mice. (D) Chat-Mecp2-/y mice showed normal response to increasing footshock intensity. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 36)=0.8018, p=0.4563 for flinch. F (2, 35)=1.837, p=0.1743 for jump. F (2, 29)=1.044, p=0.3650 for vocal. n = 15 (ChatCre), 11 (Mecp2flox/y), 13 (Chat-Mecp2-/y) in flinch. n = 15 (ChatCre), 10 (Mecp2flox/y), 13 (Chat-Mecp2-/y) in jump. n = 12 (ChatCre), 9 (Mecp2flox/y), 11 (Chat-Mecp2-/y) in vocal. (E) Chat-Mecp2-/y mice showed normal movement ability in open field arena (15 min). P-values were calculated by two-tailed unpaired t-test. t = 0.3300, df = 8, p=0.7499. n = 5 (ChatCre), 5(Chat-Mecp2-/y). (F) Chat-Mecp2-/y mice showed normal immobility time in open field test. P-values were calculated by two-tailed unpaired t-test. t = 1.007, df = 8, p=0.3436. n = 5 (ChatCre), 5 (Chat-Mecp2-/y). (G) Chat-Mecp2-/y mice showed normal working memory in Y maze test. P-values were calculated by two-tailed unpaired t-test. t = 0.8772, df = 8, p=0.4059. n = 5 (ChatCre), 5(Chat-Mecp2-/y). Data are means ± SEM. *p<0.05, NS means no significance.
+
 These results indicate that conditional deletion of Mecp2 from cholinergic neurons results in impaired fear learning.
 
-## Restoration of Mecp2 in NAc cholinergic interneurons rescued fear learning in Chat-Mecp2-/ymice
+### Restoration of Mecp2 in NAc cholinergic interneurons rescued fear learning in Chat-Mecp2-/ymice
 
 To unravel which population of cholinergic neurons contributes to the behavioral features observed in Chat-Mecp2-/y mice, we injected the AAV-FLEX-Mecp2-GFP (AAV/Mecp2) vector into different brain areas to specifically restore Mecp2 in cholinergic neurons, as described previously (Zhang et al., 2016b). We employed immunohistochemistry to confirm the recombination efficiency of the AAV/Mecp2 virus (Figure 2A) and revealed that ~73% of ChAT positive neurons were infected by the AAV virus and over 85% of GFP-labeled neurons were stained positively for MeCP2 in the NAc (Figure 2B; Figure 2—figure supplement 1A,B). To test the behavioral effects of MeCP2 restoration in cholinergic neurons, we performed fear conditioning tests. It appeared that fear learning deficit of Chat-Mecp2-/y mice was rescued towards the end of training with MeCP2 restoration in the cholinergic neurons of NAc, but not medial septum (MS) (Figure 2—figure supplement 2). Consistently, in the context and tone fear retrieval tests, although the freezing level was not comparable to that of the AAV/GFP-injected ChatCre mice, Chat-Mecp2-/y mice injected with the AAV/Mecp2 virus showed a significant enhancement (Figure 2C,D). In contrast, MeCP2 restoration in the cholinergic neurons of MS, which has been reported to mediate sensory induced aversion (Zhang et al., 2018), had no effect on fear regulation in Chat-Mecp2-/y mice (Figure 2E,F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative fluorescence images showing NAc sections of Chat-Mecp2-/y-AAV/GFP and Chat-Mecp2-/y-AAV/Mecp2 stained for DAPI, MeCP2, and ChAT. (B) Percentage of ChAT-positive cells in NAc co-expressing overexpression virus (left) and efficiency of MeCP2 restoration in GFP-positive neurons (right) in Chat-Mecp2-/y-AAV/Mecp2 mice. n = 10 mice. (C–F) Fear conditioning test was conducted three weeks after microinjection in NAc (C, D) or MS (E, F). P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 27)=7.304, p=0.0029 for (C). F (2, 27)=8.469, p=0.0014 for (D). F (2, 31)=14.52, p<0.0001 for (E). F (2, 31)=8.261, p=0.0013 for (F). n = 11 (ChatCre-AAV/GFP in NAc), 9 (Chat-Mecp2-/y-AAV/GFP in NAc), 10 (Chat-Mecp2-/y-AAV/Mecp2 in NAc); 15 (ChatCre-AAV/GFP in MS), 8 (Chat-Mecp2-/y-AAV/GFP in MS), 11 (Chat-Mecp2-/y-AAV/Mecp2 in MS). Data are means ± SEM. *p<0.05, **p<0.01, ***p<0.001, NS means no significance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Diagram of virus injection into NAc (right) of ChatCre mice and confocal image of AAV/GFP vector-injected NAc slice demonstrating colocalization of GFP expression with ChAT antibody, co-stained with DAPI (left). (B) Confocal image of AAV/Mecp2 vector-injected NAc slice demonstrating colocalization of GFP expression with ChAT antibody, co-stained with DAPI. (C) Confocal image of AAV/NpHR and AAV/α2 RNAi vector-injected NAc slices demonstrating colocalization of mCherry expression with GFP expression, co-stained with DAPI.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Fear conditioning test was conducted three weeks after microinjection in NAc (A) or MS (B). P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 27)=5.929, p=0.0073 for Trial four during fear learning in (A). Bonferroni’s multiple comparisons test: P (ChatCre-AAV/GFP in NAc vs. Chat-Mecp2-/y-AAV/GFP in NAc)=0.0060, P (Chat-Mecp2-/y-AAV/GFP in NAc vs. Chat-Mecp2-/y-AAV/Mecp2 in NAc)=0.0241. F (2, 31)=4.258, p=0.0232 for Trial four during fear learning in (B). Bonferroni’s multiple comparisons test: P (ChatCre-AAV/GFP in MS vs. Chat-Mecp2-/y-AAV/GFP in MS)=0.0461, P (Chat-Mecp2-/y-AAV/GFP in MS vs. Chat-Mecp2-/y-AAV/Mecp2 in MS)>0.9999. n = 11 (ChatCre-AAV/GFP in NAc), 9 (Chat-Mecp2-/y-AAV/GFP in NAc), 10 (Chat-Mecp2-/y-AAV/Mecp2 in NAc); 15 (ChatCre-AAV/GFP in MS), 8 (Chat-Mecp2-/y-AAV/GFP in MS), 11 (Chat-Mecp2-/y-AAV/Mecp2 in MS). Data are means ± SEM. *p<0.05, NS means no significance.
+
 Taken together, these regional restoration results indicate that impaired fear learning in Chat-Mecp2-/y mice arises, at least in part, from the lack of MeCP2 expression in NAc cholinergic interneurons.
 
-## Spontaneous firing of cholinergic interneurons decreased via elevated expression of GABAA α2 receptors in Chat-Mecp2-/ymice
+### Spontaneous firing of cholinergic interneurons decreased via elevated expression of GABAA α2 receptors in Chat-Mecp2-/ymice
 
 We next sought to uncover the cellular mechanisms underlying impaired fear learning in Chat-Mecp2-/y mice. First, we measured the spontaneous firing frequency of cholinergic interneurons in brain slices, as NAc cholinergic interneurons are considered tonic firing neurons (Zahar and Morris, 2014). The spontaneous spiking rate of NAc cholinergic interneurons was significantly decreased in Chat-Mecp2-/y mice in both cell-attached (Figure 3A,B) and whole-cell configurations (Figure 3C,D). We also evaluated the spontaneous firing rate and found a significant increase in Chat-Mecp2-/y mice with MeCP2/AAV expression compared with GFP/AAV expression (Figure 3E,F). According to these results, we found that the fear learning deficits in Chat-Mecp2-/y mice could be attributed to decreased tonic firing in NAc cholinergic interneurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Example traces of spontaneous spiking (A) or averaged frequency (B) measured in a cell-attached configuration from NAc cholinergic interneurons. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 41)=13.93, p<0.0001. n = 18 neurons from three mice (ChatCre), 13 neurons from three mice (Mecp2flox/y), 13 neurons from five mice (Chat-Mecp2-/y). (C, D) Example traces of spontaneous spiking (C) or averaged frequency (D) measured in a whole-cell configuration from NAc cholinergic interneurons. P-values were calculated by one-way ANOVA with Bonferroni’s multiple comparisons test. F (2, 34)=5.336, p=0.0096. n = 16 neurons from three mice (ChatCre), 13 neurons from four mice (Mecp2flox/y), 8 neurons from five mice (Chat-Mecp2-/y). (E, F) Example traces of spontaneous spiking (E) or averaged frequency (F) measured in a whole-cell configuration from NAc neurons infected by AAV-GFP or AAV/Mecp2 for indicated genotype. Data are means ± SEM. P-values were calculated by one-way ANOVA with Tukey’s multiple comparisons test. F (2, 27)=6.201, p=0.0061. n = 9 neurons from three mice (ChatCre-AAV/GFP), 9 neurons from three mice (Chat-Mecp2-/y-AAV/GFP), 12 neurons from three mice (Chat-Mecp2-/y-AAV/Mecp2). (G, H) Example mIPSC traces (G) measured in whole-cell configuration from NAc cholinergic interneurons. (H) Cumulative distribution of mIPSC amplitude of NAc cholinergic interneurons. P-values were calculated by one-way ANOVA with Bonferroni's multiple comparisons test. F (2, 39)=15.46, p<0.0001. n = 12 neurons from four mice (ChatCre), 14 neurons from four mice (Mecp2flox/y), 16 neurons from four mice (Chat-Mecp2-/y). (I) Confocal images showing NAc sections stained for PV, ChAT, GABAA α2 receptor, and DAPI. Bar graph showing percentage of ChAT or PV-positive cells co-expressing GABAA α2 receptor in wild-type (WT) mice. n = 8 sections from two mice. (J) Immunoblotting of GABAA α2 receptor in NAc extracts prepared from ChatCre and Chat-Mecp2-/y mice. Each lane was loaded with 40 μg of protein, with GAPDH as loading control, and normalized to ChatCre levels. P-values were calculated by two-tailed unpaired t-test. t = 2.153, df = 28, p=0.0401. n = 15 mice per group. (K) Representative images of NAc slices from ChatCre and ChAT-Mecp2-/y mice. Statistically integrated immunofluorescence data normalized to ChatCre levels. P-values were calculated by two-tailed unpaired t-test. t = 2.986, df = 14, p=0.0098. n = 7–9 sections from two mice per group. (L, M) Example traces (L) and statistical results (M) of spontaneous spiking recorded from cholinergic interneurons in NAc of different groups. P-values were calculated by two-tailed unpaired t-test. t = 3.977, df = 25, p=0.0005. n = 14 neurons from four mice for ACSF, n = 13 neurons from four mice for L-838,417. L-838,417: an α2-subunit-selecive selective positive allosteric modulator of GABAA receptors. Data are means ± SEM. *p<0.05, **p<0.01, ***p<0.001, NS means no significance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Quantitative analysis of resting membrane potential (RMP), membrane time constant (Tau), input resistance (Rin), and membrane capacitance (Cm) of cholinergic interneurons from NAc slices. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 32)=0.005866, p=0.9942 for RMP. F (2, 32)=0.3762, p=0.6894 for Tau. F (2, 32)=0.3748, p=0.6904 for Cm. F (2, 32)=1.809, p=0.1801 for Rin. n = 13 neurons from four mice (ChatCre), 11 neurons from three mice (Mecp2flox/y), 11 neurons from three mice (Chat-Mecp2-/y). (E–H) Quantitative analysis of threshold, amplitude, half width, and after-hyperpolarization potential (ahp) for a single spike of cholinergic interneurons from NAc slices. P-values were calculated by one-way ANOVA with Bonferroni’s multiple comparisons test. F (2, 36)=1.222, p=0.3066 for threshold. F (2, 36)=0.7935, p=0.4600 for amplitude. F (2, 36)=0.1402, p=0.8697 for half width. F (2, 36)=0.1137, p=0.8929 for ahp. n = 15 neurons from four mice (ChatCre), 9 neurons from three mice (Mecp2flox/y), 15 neurons from five mice (Chat-Mecp2-/y). Data are means ± SEM. NS means no significance.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Cumulative distribution of mIPSC inter-event interval and average frequency of NAc cholinergic interneurons. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 39)=1.535, p=0.2282. n = 12 neurons from four mice (ChatCre), 14 neurons from four mice (Mecp2flox/y), 16 neurons from four mice (Chat-Mecp2-/y). (B) Fluorescence images showing NAc sections stained for the PV, ChAT, GABAA receptor α1, and DAPI. (C) Immunoblotting of GABAA receptor α1 in NAc extracts prepared from ChatCre and Chat-Mecp2-/y mice. Each lane was loaded with 40 μg of protein, with GAPDH as loading control, and normalized to ChatCre levels. Data are means ± SEM. P-values were calculated by two-tailed unpaired t-test. t = 0.3411, df = 12, p=0.7390. n = 7 for ChatCre mice, seven for Chat-Mecp2-/y mice. (D Example traces and statistical results of spontaneous spiking recorded from cholinergic interneurons in NAc of Chat-Mecp2-/y mice. P-values were calculated by two-tailed unpaired t-test. t = 2.496, df = 19, p=0.0219. n = 11 neurons from three mice for ACSF, n = 10 neurons from three mice for L-838,417. (E) Example sIPSC traces and statistical results of amplitude and frequency recorded from cholinergic interneurons in NAc of ChatCre mice. P-values were calculated by two-tailed unpaired t-test. t = 2.688, df = 20, p=0.0141 for amplitude. t = 2.099, df = 20, p=0.0488 for frequency. n = 11 neurons from three mice for each group. (F) Example sIPSC traces and statistical results of amplitude and frequency recorded from cholinergic interneurons in NAc of Chat-Mecp2-/y mice. P-values were calculated by two-tailed unpaired t-test. t = 2.108, df = 18, p=0.0493 for amplitude. t = 3.536, df = 18, p=0.0024 for frequency. n = 10 neurons from three mice for each group. Data are means ± SEM. NS means no significance.
 
 Changes in spontaneous activity can be attributed to changes in either intrinsic properties or synaptic inputs (Cheng et al., 2019; Brown et al., 2012). Thus, we first measured the intrinsic properties of the cholinergic interneurons in the NAc and found no significant differences between Chat-Mecp2-/y and control mice (Figure 3—figure supplement 1). To examine the synaptic inputs of the cholinergic interneurons, we measured miniature inhibitory postsynaptic currents (mIPSCs). Although the frequency of mIPSCs was not altered in the NAc cholinergic interneurons of Chat-Mecp2-/y mice, their amplitude was significantly increased compared to that in control mice, indicating abnormal changes in postsynaptic connections in the cholinergic interneurons (Figure 3G,H; Figure 3—figure supplement 2A). Consistent with previous studies (Bennett and Wilson, 1999), our whole-cell voltage-clamp recordings showed that miniature excitatory postsynaptic currents (mEPSCs) were rarely recorded in the cholinergic interneurons (mEPSC frequency <0.1 Hz, data not shown).
 
@@ -64,21 +96,49 @@ We next investigated the role of α2-containing GABAA receptors in regulating th
 
 Together, these results indicate that MeCP2 deficiency in cholinergic interneurons enhances inhibitory synaptic transmission, which could be ascribed to increased α2-GABAA expression.
 
-## Activation of NAc cholinergic interneurons in Chat-Mecp2-/ymice rescued fear deficits
+### Activation of NAc cholinergic interneurons in Chat-Mecp2-/ymice rescued fear deficits
 
 We further examined whether enhancing the spontaneous firing of NAc cholinergic interneurons is sufficient to improve freezing response in Chat-Mecp2-/y mice. We used AAV-DIO-hM3Dq-mCherry (AAV/hM3Dq), an excitatory designer receptor exclusively activated by designer drugs (Figure 4A). Electrophysiological analysis of NAc slices confirmed that 1 μM clozapine-N-oxide (CNO) activated spiking in hM3Dq-expressed NAc cholinergic interneurons (Figure 4—figure supplement 1A,B). We then examined the effect of CNO (1 mg/kg) administration in Chat-Mecp2-/y mice with AAV/hM3Dq delivered to NAc cholinergic interneurons. Activation of NAc cholinergic interneurons significantly increased the freezing level of Chat-Mecp2-/y mice in the training process (Figure 4—figure supplement 1C), as well as the context and tone fear memory retrieval process (Figure 4B,C). We manipulated the NAc cholinergic interneurons only in fear learning, with the fear memory test conducted without additional manipulations. To confirm these behavioral results, we selectively activated cholinergic interneurons by infusing AAV-DIO-ChR2-EYFP (AAV/ChR2) into the NAc of Chat-Mecp2-/y mice and inserted an optical fiber above it bilaterally (Figure 4D). Electrophysiological recordings of NAc cholinergic interneurons reliably revealed one-to-one, photo-stimulation locked action potential firing at frequencies up to 10 Hz (Figure 4—figure supplement 1D). We found that optogenetic activation of cholinergic interneurons (8 Hz) only during fear learning also rescued fear deficits in Chat-Mecp2-/y mice (Figure 4E,F and Figure 4—figure supplement 1E). We also confirmed that activation of NAc cholinergic neurons had no effect on freezing in the absence of shock delivery (Figure 4—figure supplement 1F–H).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig4-v2.jpg)
+
+**Figure 4.:** (A) Up: Schematic of AAV/hM3Dq viral construct. Down: Confocal image of injected NAc slice demonstrating colocalization of mCherry expression with ChAT antibody, co-stained with DAPI. (B, C) Fear retrieval was measured by retrieval process in fear conditioning test. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 26)=7.801, p=0.0022 for (B). F (2, 26)=7.583, p=0.0025 for (C). n = 10 (ChatCre-AAV/mCherry), 10 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/hM3Dq). (D) Up: Schematic of AAV/ChR2 viral construct. Down: Confocal image of AAV/ChR2 vector-injected NAc slice demonstrating colocalization of GFP expression with ChAT antibody, co-stained with DAPI. (E, F) Fear was measured by retrieval process in fear conditioning test. P-values were calculated by one-way ANOVA with Bonferroni’s multiple comparisons test. F (2, 28)=10.50, p=0.0004 for (E). F (2, 28)=6.356, p=0.0053 for (F). n = 8 (ChatCre-AAV/mCherry), 14 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/ChR2). Data are means ± SEM. *p<0.05, **p<0.01, ***p<0.001. (See also Figure 2—figure supplement 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Representative spontaneous firing (A) and summary histogram (B) of hM3Dq-mCherry expressing ChAT neurons in Chat-Mecp2-/y mice before (red) and after (gray) CNO treatment. P-values were calculated by two-tailed paired t-test. t = 4.442, df = 5, p=0.0067. n = 6 neurons from three mice. (C) Fear conditioning test was conducted 30 min after CNO injection. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 26)=5.245, p=0.0122 for Trial four during fear learning. Bonferroni’s multiple comparisons test: P (ChatCre-AAV/mCherry vs. Chat-Mecp2-/y-AAV/mCherry)=0.0072, P (Chat-Mecp2-/y-AAV/mCherry vs. Chat-Mecp2-/y-AAV/hM3Dq)=0.1148. n = 10 (ChatCre-AAV/mCherry), 10 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/hM3Dq). (D) Up: Consecutive action potentials in AAV/ChR2-affected cholinergic interneurons evoked by a 470 nm pulse train (5 ms pulse width; 8 Hz). Down: Average success probability for generating action potentials in AAV/ChR2-affected cholinergic interneurons at different stimulation frequencies. n = 8 neurons from three mice. (E) Fear conditioning test was conducted with 8 Hz blue light during the training. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 28)=4.160, p=0.0262 for Trial four during fear learning. Bonferroni’s multiple comparisons test: P (ChatCre-AAV/mCherry vs. Chat-Mecp2-/y-AAV/mCherry)=0.0290, P (Chat-Mecp2-/y-AAV/mCherry vs. Chat-Mecp2-/y-AAV/ChR2)=0.0846. n = 8 (ChatCre-AAV/mCherry), 14 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/ChR2). (F, G) Freezing time was measured in chamber for 2 min without shock. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 26)=1.541, p=0.2332, n = 10 (ChatCre-AAV/mCherry), 10 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/hM3Dq) for F; F (2, 28)=0.1714, p=0.8434, n = 8 (ChatCre-AAV/mCherry), 14 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/ChR2) for G. (H) Locomotor activity was measured in open field test after injection of CNO. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 21)=0.1139, p=0.8929. n = 6 (ChatCre-AAV/mCherry), 8 (Chat-Mecp2-/y-AAV/mCherry), 9 (Chat-Mecp2-/y-AAV/hM3Dq). Data are means ± SEM. *p<0.05, **p<0.01, NS means no significance.
+
 These results indicate that activation of the decreased activity in NAc cholinergic interneurons could rescue the fear learning deficits in Chat-Mecp2-/y mice.
 
-## Inhibition of NAc cholinergic interneurons resulted in fear deficits
+### Inhibition of NAc cholinergic interneurons resulted in fear deficits
 
 To investigate if NAc cholinergic neurons play a causal role in fear encoding, we selectively inhibited NAc cholinergic interneurons in vivo by delivering the AAV-DIO-hM4Di-mCherry vector into the NAc of ChatCre mice (Figure 5A). Application of CNO before fear conditioning significantly decreased context and tone fear responses during the retrieval process (Figure 5B,C). As a key region of emotional valence encoding, the NAc is composed of two subregions, that is the shell and core, which have different anatomical structure and function (Castro and Bruchas, 2019; de Jong et al., 2019). We wondered if these two subregions play different roles in fear regulation. As such, we used optogenetic manipulation to inhibit the activity of cholinergic interneurons in the NAc precisely. We injected AAV-FLEX-NpHR-EYFP (AAV/NpHR), an AAV-DIO vector expressing halorhodopsin fused with EYFP, and inserted optical fibers above the NAc core, the medial shell, and ventral medial shell bilaterally into ChatCre mice separately (Figure 5—figure supplement 1). Inhibition of cholinergic neurons in core or shell has similar effect on context/tone fear. However, if we only inhibit cholinergic neurons in NAc medial shell, only tone fear was impaired, with context fear intact, suggesting the heterogeneity within NAc shell (Figure 5D,E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of AAV/hM4Di viral construct. Confocal image of injected NAc slice demonstrating colocalization of mCherry expression with ChAT antibody, co-stained with DAPI. (B, C) Fear retrieval was measured by retrieval process in fear conditioning test. P-values were calculated by two-tailed unpaired t-test. t = 3.204, df = 32, p=0.0031 for (B). t = 3.572, df = 32, p=0.0011 for (C). n = 16 (ChatCre-AAV/mCherry), 18 (ChatCre-AAV/hM4Di). (D, E) Fear retrieval was measured by retrieval process in fear conditioning test with opto-inhibition of cholinergic neurons in different NAc subregions. P-values were calculated by two-tailed unpaired t-test. t = 2.530, df = 11, p=0.0280 comparison of NpHR (NAc) effect in context fear. t = 3.662, df = 13, p=0.0029 comparison of NpHR (NAc core) effect in context fear. t = 1.179, df = 13, p=0.2593 comparison of NpHR (NAc medial shell) effect in context fear. t = 5.140, df = 13, p=0.0002 comparison of NpHR (NAc ventral medial shell) effect in context fear. t = 3.308, df = 11, p=0.0113 comparison of NpHR (NAc) effect in tone fear. t = 2.600, df = 13, p=0.0220 comparison of NpHR (NAc core) effect in tone fear. t = 4.181, df = 13, p=0.0011 comparison of NpHR (NAc medial shell) effect in tone fear. t = 3.026, df = 13, p=0.0097 comparison of NpHR (NAc ventral medial shell) effect in tone fear. n = 7 (ChatCre-AAV/GFP in NAc), 6 (ChatCre-AAV/NpHR in NAc), 8 (ChatCre-AAV/NpHR in NAc core), 8 (ChatCre-AAV/NpHR in NAc medial shell), 8 (ChatCre-AAV/NpHR in NAc ventral medial shell). (F) Schematic of AAV/NpHR viral construct. Confocal image of injected NAc slice demonstrating colocalization of mCherry expression with ChAT antibody, co-stained with DAPI. (G, H) Example traces (G) and statistical results (H) of spontaneous spiking recorded from cholinergic interneurons in NAc of different groups. P-values were calculated by one-way ANOVA with Newman-keuls multiple comparison test. F (3, 40)=33.06, p<0.0001. n = 13 neurons from three mice (ChatCre-AAV/Sham), 10 neurons from three mice (Chat-Mecp2-/y-AAV/Sham), 9 neurons from three mice (Chat-Mecp2-/y-AAV/α2RNAi), 12 neurons from four mice (Chat-Mecp2-/y-AAV/α2RNAi and AAV/NpHR). (I, J) Fear retrieval was measured by retrieval process in fear conditioning test. P-values were calculated by one-way ANOVA with Newman-keuls multiple comparisons test. F (3, 44)=6.066, p=0.0015 in (I). F (3, 44)=5.426, p=0.0029 in (J). n = 8 mice (ChatCre-AAV/Sham), 10 mice (Chat-Mecp2-/y-AAV/Sham), 21 mice (Chat-Mecp2-/y-AAV/α2RNAi), nine mice (Chat-Mecp2-/y-AAV/α2RNAi and AAV/NpHR). (K) Locomotor activity (15 min) was measured in open field test. P-values were calculated by one-way ANOVA with Newman-keuls multiple comparisons test. F (3, 40)=0.9904, p=0.4071. n = 7 (ChatCre-AAV/Sham), 8 (Chat-Mecp2-/y-AAV/Sham), 20 (Chat-Mecp2-/y-AAV/α2RNAi), nine mice (Chat-Mecp2-/y-AAV/α2RNAi and AAV/NpHR). Data are means ± SEM. *p<0.05, **p<0.01, ***p<0.001, NS means no significance. (See also Figure 2—figure supplement 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal image of injected NAc slice demonstrating localization of NpHR expression and fiber position in NAc core (A), NAc ventral medial shell (B), and NAc medial shell (C).
+
 Thus, the above findings imply that inhibition of NAc cholinergic interneurons results in fear deficits.
 
-## Down-regulation of GABAA α2 receptors in NAc cholinergic interneurons in Chat-Mecp2-/ymice rescued fear deficits
+### Down-regulation of GABAA α2 receptors in NAc cholinergic interneurons in Chat-Mecp2-/ymice rescued fear deficits
 
 To determine whether down-regulation of α2-GABAA receptors in the NAc can reverse impaired fear encoding in Chat-Mecp2-/y mice, we knocked down α2-GABAA receptors via RNA interference (RNAi). The AAV-FLEX-siRNA-GFP (AAV/α2RNAi) virus was delivered bilaterally into the NAc of Chat-Mecp2-/y mice (Figure 6A). We first verified virus efficiency by slice recordings. In the NAc of Chat-Mecp2-/y mice, neurons infected by AAV/α2RNAi showed significantly decreased mIPSC amplitude compared to the scrambled controls (AAV/sham) (Figure 6B,C), but no changes in mIPSC frequency (Figure 6—figure supplement 1). Immunohistochemical analysis also revealed AAV/α2RNAi specific infection in the cholinergic interneurons of the NAc and ~50% knockdown efficiency of α2-GABAA receptors in the cholinergic interneurons (Figure 6D,E). Furthermore, we found that down-regulating α2-GABAA receptors in the NAc of Chat-Mecp2-/y mice rescued the decreased spontaneous firing rates of NAc cholinergic interneurons (Figure 5G,H). Functionally, the freezing response in the context and tone fear retrieval period was markedly improved in Chat-Mecp2-/y mice infected with AAV/α2RNAi compared with the AAV/sham group (Figure 5I,J). Locomotor activity was not significantly changed, suggesting that the freezing behavior was not due to motor defects (Figure 5K). Thus, according to these results, down-regulation of α2-GABAA receptors in the NAc of Chat-Mecp2-/y mice can rescue the decreased spontaneous firing rates of NAc cholinergic interneurons as well as fear deficits.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of AAV/RNAi viral construct. Confocal image of injected NAc slice demonstrating colocalization of GFP expression with ChAT antibody, co-stained with DAPI. (B, C) mIPSCs of AAV/RNAi-infected NAc neurons from Chat-Mecp2-/y mice were rescued. (B) Examples of mIPSC traces. (C) Cumulative distribution of mIPSC amplitude of NAc neurons infected by AAV-Sham or AAV/RNAi. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 39)=5.816, p=0.0062. n = 14 neurons from four mice for each group. (D) Representative images of NAc slices from Chat-Mecp2-/y mice injected with AAV/GFP or AAV/RNAi. (E) Statistically integrated immunofluorescence data of α2-GABAA receptors normalized to AAV/GFP levels. P-values were calculated by two-tailed unpaired t-test. t = 2.985, df = 39, p=0.0049. n = 27 neurons from three mice (AAV/RNAi), 14 neurons from three mice (AAV/Sham). (F) Left: Schematic of cannula implantation. Right: Infusion sites of drugs, stained with DAPI. (G, H) Fear deficit was measured by retrieval process in fear conditioning test 20 min after drug application. P-values were calculated by two-tailed unpaired t-test. t = 2.542, df = 23, p=0.0182 for (E). t = 3.609, df = 23, p=0.0015 for (F). n = 14 mice for ACSF, n = 11 mice for L-838,417. Data are means ± SEM. *p<0.05, **p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Cumulative distribution of mIPSC amplitude in NAc neurons infected by AAV-Sham or AAV/RNAi. P-values were calculated by one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test. F (2, 39)=1.066, p=0.3541. n = 14 neurons from four mice for each group. NS means no significance.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55342/elife-55342-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Sequential injections of AAV-FLEX-TVA-GFP, AAV-FLEX-Rabies-glycoprotein and G-deleted EnA-rabies-mCh into NAc of a ChatCre mouse labeled starter cells (yellow). (B, C) Transsynaptic retrograde labeling neurons in the BLA (B) and (vHPC). BLA: basolateral amygdala. CeA: central nucleus of the amygdala. vHIP: ventral hippocampus.
 
 We next used mixtures of AAV/α2RNAi and AAV/NpHR to investigate whether the recuperation effect of AAV/α2RNAi in fear encoding was mediated through the spiking of cholinergic interneurons (Figure 5F; Figure 2—figure supplement 1C). We verified functionality with slice recordings and found that NpHR-mediated hyperpolarization efficiently blocked the spontaneous firing rates of cholinergic interneurons (Figure 5G,H). Inhibiting the spiking of cholinergic interneurons with yellow light (593 nm) only during the learning phase abolished the rescue effects of AAV/RNAi in Chat-Mecp2-/y mice (Figure 5I,J) without affecting locomotion (Figure 5K). These results demonstrate that the rescue of fear learning by down-regulation of NAc α2-GABAA receptors requires the modulation of cholinergic activity.
 
@@ -110,39 +170,119 @@ Taken together, our results highlight the role of MeCP2 in regulating GABAA α2 
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>ChatCre</td>
+      <td>Jackson Laboratory</td>
+      <td>Jax No.006410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>MeCP2 Flox/-</td>
+      <td>Jackson Laboratory</td>
+      <td>Jax No.006847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-ChAT</td>
+      <td>Millipore</td>
+      <td>Cat# AB144P</td>
+      <td>IHC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-MeCP2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#3456 s</td>
+      <td>IHC: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PV</td>
+      <td>Swant</td>
+      <td>Cat#PV235</td>
+      <td>IHC: 1:1 000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GABAA receptor α1</td>
+      <td>Millipore</td>
+      <td>Cat#06–868</td>
+      <td>IHC: 1:1 000 WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GABAA receptor α2</td>
+      <td>Synaptic System</td>
+      <td>Cat#224 103</td>
+      <td>IHC: 1:1 000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GABAA receptor α2</td>
+      <td>Abcam</td>
+      <td>Cat#ab72445</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GAPDH</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#5014S</td>
+      <td>WB: 1:5000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 To specifically delete Mecp2 in ChAT-positive cholinergic neurons, Chat-Mecp2-/y mice were generated by breeding female Mecp2flox/-mice (Jax No.006847) with ChatCre (Jax No.006410) heterozygous male mice. Mice were group-housed and maintained under standard housing conditions in a temperature (22–25°C)- and humidity (40%)-controlled animal room under a 12 hr light/dark cycle (8:00 am to 8:00 pm) with ad libitum access to food and water. Only animals with cannula implants were housed separately. All mice belonged to the C57BL/6J strain and were housed 3–5 per cage.
 
-## Behavioral assays
+### Behavioral assays
 
 Male mice at 9 to 13 weeks of age were used for all tests, considering that female mice are typically mosaic at the cellular level for MeCP2 expression, which may contribute to phenotype variability. We first evaluated the mice for general health, including body weight and fur appearance. The mice were then transferred to the animal facility one week before the behavioral tests. They were allowed to habituate to the testing room for 30 min before test commencement. All the behavior chambers were cleaned with 75% ethanol, except the chambers in fear retrieval tests. All behavioral tests were carried out blind to genotype with age-matched male littermates.
 
-## Open field test
+### Open field test
 
 Spontaneous locomotor activity was assessed for 15 min in an arena (45 × 45 × 45 cm). Experiments were conducted under low-light conditions to minimize anxiety effects. Locomotor activity was evaluated as the total distance traveled. Immobility time was evaluated as the time that mice showed the absence of movement over 2000 ms by ANYmaze software.
 
-## Fear conditioning test
+### Fear conditioning test
 
 The fear conditioning test was performed as described previously, with some modifications (Li et al., 2011). A 30-second-train tone (4000 Hz, 80 db) was used as CS and the electric footshock (0.5 mA, 1.5 ms) was used as US. The conditioning session including four trials. The test for context retrieval was performed in the same chamber for 5 min 22 hr after the training. The tone test was conducted 4 hr later. Mice were placed in another chamber with different context for 3 min as baseline, followed by 3 min with tone stimuli presented. While the conditioning context was cleaned with 75% ethanol, the retrieval context and the chamber used in tone fear test were wiped down with 0.3% acetic acid. All events in the fear conditioning test were programmed, and data were recorded through the MED software (MED Associate Inc). Recorded videos were analyzed by Video Freeze Software (MEF Associate Inc). Freezing was defined as motion index <18 for 1 s as the MED software recommended.
 
-## Pain threshold test
+### Pain threshold test
 
 A mouse was placed into the conditioning chamber. Every 30 s, a 2 s footshock with 0.05-mA increments (starting from 0 mA) was presented after habituation for 1 min. Two experimenters without prior knowledge of genotypes or shock intensities scored the vocalization responses. Mouse behavior in the chamber was videotaped for analysis of first signs for discomfort and jumping.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemical experiments were performed following standard procedures (Zhang et al., 2016b). Images were taken using confocal microscopy (Nikon A1 and Olympus FV3000 Confocal Microscope). For the primary antibodies, we used antibodies for ChAT (Millipore, cat. no. AB144P, 1:100), MeCP2 (Cell Signaling Technology, cat. no. 3456 s, 1:200), PV (Swant, cat. no. PV235, 1:1 000), GABAA receptor α1 (Millipore, cat. no. 06–868, 1:1 000), and GABAA receptor α2 (Synaptic System, cat. no. 224 103, 1:1 000).
 
-## Western blot analysis
+### Western blot analysis
 
 We performed western blot experiments as described previously (Rodriguez-Romaguera et al., 2012). Brains were quickly dissected and the NAc was homogenized in lysis buffer (Beyotime Biotechnology, China) containing 1 mM protease inhibitor PMSF (Beyotime Biotechnology, China). Protein samples were loaded on 10% acrylamide SDS-PAGE gels and then transferred to nitrocellulose membranes. The membranes were incubated with appropriate primary and secondary antibodies, and then visualized by X-ray film exposure (ECL kit, Thermo Scientific). For primary antibodies, we used antibodies for GABAA receptor α1 (Millipore, cat. no. 06–868, 1:200), GABAA receptor α2 (Abcam, cat. no. ab72445, 1:500), and GAPDH (Cell Signaling Technology, cat. no. 5014S, 1:5000).
 
-## Preparation of acute slices and electrophysiology
+### Preparation of acute slices and electrophysiology
 
 We anesthetized and decapitated 8–12 week-old mice and prepared 350 μm coronal slices using a Vibroslice (Leica VT 1000S, USA) in ice-cold artificial cerebrospinal fluid (ACSF) (composition in mM: 125 NaCl, 3 KCl, 1.25 NaH2PO4, 2 MgSO4, 2 CaCl2, 25 NaHCO3, 10 glucose). The slices were recovered in ACSF at 33°C for 30 min and then kept at room temperature until recording. All solutions were saturated with 95% O2 and 5% CO2. Acute slices were transferred to a recording chamber and fully submerged in continuously perfused (~2 ml/min) ACSF at 25°C. Fluorescent neurons were visually identified under an upright microscope (Nikon, Eclipse FN1) equipped with an infrared-sensitive CCD camera and ×40 water-immersion lens (Nikon, Eclipse FN1). To measure the spontaneous spiking rate of cholinergic interneurons, neurons were patched in a cell-attached configuration and then in whole-cell configuration with electrodes containing the following (in mM): 130 potassium gluconate, 20 KCl, 10 HEPES buffer, 4 Mg-ATP, 0.3 Na-GTP, 10 disodium phosphocreatine and 0.2 EGTA, pH 7.25 with KOH, 288 mOsm. In the whole-cell mode, spontaneous firing was recorded at resting membrane potential. If neurons were not spontaneously active, we discarded the recording. Membrane time constant (Tau) was measured with a single exponential fit of the voltage deflection produced by a small hyperpolarizing current injection from the holding potential (−70 mV). The shape parameters were measured from action potentials by 500 ms current injection and analyzed with MATLAB (MathWorks). Most analyses were performed in Clampfit v10.5 (Axon Instruments, USA). For sIPSC recordings, neurons were clamped in the presence of DNQX (20 μM), and AP5 (50 μM). Microelectrodes were filled with a solution containing 120 mM CsCl, 20 mM Cs-methanesulfonate, 5 mM NaCl, 1 mM MgCl2.6H2O, 10 mM HEPES, 0.2 mM EGTA, 2 mM MgATP, 0.5 mM NaGTP, 0.5 mM spermine, and 5 mM QX314 Chloride; the pH was adjusted to 7.25 with 10 M CsOH. For mIPSC recordings, neurons were clamped at −70 mV in the presence of TTX (1 μM), DNQX (20 μM), and AP5 (50 μM). The intracellular solution contained CsCl 130 mM, NaCl 4 mM, TEA 10 mM, HEPES 10 mM, Na2-ATP 2 mM, Na3-GTP 0.5 mM, and EGTA 0.2 mM. For mEPSC recordings, neurons were clamped at −70 mV in the presence of TTX (1 μM) and picrotoxin (100 μM). We used 130 mM CsMeSO3 to replace CsCl. The synaptic current was then analyzed with Mini60 (Synaptosoft Inc). Photostimulation was applied using a 473 nm laser coupled to an optical fiber controlled by a laser driver (DPSSL II) and digital commands from the Digidata 1440A. Light power at the specimen was ~20 mW/mm2. Light was delivered constantly at 8 Hz for Chat-Mecp2-/y mice. Pipette resistance ranged from 3 to 5 MΩ. Recordings were Bessel-filtered at 10 KHz and sampled at 100 KHz. Access resistance was continuously monitored for each cell. Only neurons with series resistance below 20 MΩ and changing <20% throughout the recording were used for analysis.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 The AAV viruses AAV-DIO-ChR2(H134R)-GFP and AAV-DIO-NpHR-mCherry, were purchased from S&E Shanghai Medical Biotechnology Company (China). AAV-DIO-hM3Dq-mCherry, AAV-DIO-hM4Di-mCherry, AAV-DIO-mCherry, and AAV-DIO-GFP were purchased from Shanghai Taitool Bioscience Company (China). AAV-FLEX-Mecp2-GFP was provided by Z.L. Qiu (Institute of Neuroscience, Chinese Academy of Sciences, China).
 
@@ -150,10 +290,10 @@ For α2-GABAA receptor knockdown, the following short-hairpin sequence was used:
 
 Standard surgical procedures were followed for stereotaxic injection. Briefly, 6–8 week-old male mice were anesthetized with 2% isoflurane and mounted on a custom-built mouse stereotaxic device for surgery. Heart rate and body temperature were continuously monitored. Eye drops were applied to prevent drying. The animals received stereotaxic injections of AAV to the NAc or MS. Coordinates used for MS injection were AP + 0.98 mm and DV −4.5 mm (150 nl) and for NAc injection were AP + 1.1 mm, ML ±1.3 mm, and DV −4.5 mm (200 nl per side). For NAc subregions, we injected 80 nl of virus per side (NAc core: AP + 1.1 mm, ML ±1.3 mm, and DV −4.5 mm; NAc medial shell: AP + 1.1 mm, ML ±0.5 mm, and DV −4.35 mm; NAc ventral medial shell: AP + 1.1 mm, ML ±0.5 mm, and DV −4.75 mm). The AAV vector was delivered with a glass microelectrode into the target coordinates over a 10 min period. Three weeks after the introduction of the viral vector, behavioral tests were performed. A double-cannula with CC 2.6 mm (RWD Life Science, China) was implanted into the bilateral NAc (AP + 1.1 mm, ML ±1.3 mm, and DV −4.4 mm). For each mouse, the cannula was secured using dental cement. After a week of recovery, the mice were subjected to behavioral tests.
 
-## In vivo optogenetic and chemogenetic manipulations
+### In vivo optogenetic and chemogenetic manipulations
 
 For in vivo optogenetic manipulation, an optical fiber cannula (length 5 mm, NA = 0.22; Inper Inc) was bilaterally implanted into the NAc (AP + 1.1 mm, ML ±1.3 mm, and DV −4.3 mm) and secured using dental cement during the same surgery procedure as for the viral injection. During the behavioral tests, the optical fibers were connected to a laser source using an optical fiber sleeve (Inper Inc). We applied a 5 ms, 8 Hz, continuous 470 nm blue laser stimulation for NAc cholinergic interneurons or continuous 590 nm yellow laser stimulation during the training period of fear conditioning. For chemogenetic manipulation, three weeks after the introduction of AAV-DIO-hM3Dq-mCherry or AAV-DIO-hM4Di-mCherry, CNO (Sigma) was injected intraperitoneally 30 min before conditioning at a dose of 1 mg kg−1.
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 All data were analyzed using commercially available statistical software packages (Prism five and SPSS v17.0). Sample size was estimated using power analysis based on our preliminary experiments. Data distribution in each experiment was checked for normality before further analysis. Statistical differences were calculated using unpaired two-tailed t-tests when comparing two groups or one-way analysis of variance (ANOVA) with Bonferroni’s multiple comparison test when comparing three groups with one factor or two-way ANOVA with Tukey’s multiple comparison test when constructing learning curves. For comparison of pre- and post-medicine or light application, paired-sample t-tests were used. Statistical significance was defined as p<0.05.

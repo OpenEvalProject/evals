@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Institute of Bioengineering, Swiss Federal Institute of Technology in Lausanne EPFL Lausanne Switzerland
-2. https://ror.org/02jx3x895 Department of Cell and Developmental Biology, University College London London United Kingdom
-3. https://ror.org/02s376052 Center of PhenoGenomics, Swiss Federal Institute of Technology in Lausanne EPFL Lausanne Switzerland
-4. https://ror.org/04tnbqb63 The Francis Crick Institute London United Kingdom
+1. Institute of Bioengineering, Swiss Federal Institute of Technology in Lausanne EPFL Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Department of Cell and Developmental Biology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+3. Center of PhenoGenomics, Swiss Federal Institute of Technology in Lausanne EPFL Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+4. The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
 
 † Corresponding author
 
@@ -34,19 +34,87 @@ The classical test for intrinsic properties is to isolate cells from their neigh
 
 ## Results
 
-## Cell-autonomous transient dynamics in concert with PSM differentiation
+### Cell-autonomous transient dynamics in concert with PSM differentiation
 
 To analyze transient dynamics from cells originating within a defined anteroposterior region of the PSM, we dissected out the posterior-most quarter of the PSM (PSM4) (Figure 1A). Each PSM4 explant was separately dissociated manually in DPBS (-CaCl2, -MgCl2) and cultured at low-density on protein-A-coated glass in L15 medium without added signaling molecules, small molecule inhibitors, serum, or BSA (N=11 embryos). Oscillation and arrest dynamics were followed using Her1-YFP, a fluorescently tagged core clock component, previously used to define the zebrafish clock’s tissue-level wave pattern in Tg(her1:her1-YFP) embryos, called Tg(her1-YFP) here (Soroldoni et al., 2014), and a novel Mesp-ba-mKate2 transgene Tg(mesp-ba:mesp-ba-mKate2), called Tg(mesp-ba-mKate2) here, which marks the rostral half of the forming somite in the anterior PSM (Figure 1A–C; Figure 1—figure supplement 1), as expected (Cutty et al., 2012). Mesp2 has been used in multi-cellular segmentation clock cultures as a marker of differentiation upon clock arrest (Diaz-Cuadros et al., 2020; Lauschke et al., 2013; Matsuda et al., 2020b; Matsumiya et al., 2018; Tsiairis and Aulehla, 2016). Analysis of Her1-YFP and Mesp-ba-mKate2 intensity was carried out in single Tg(her1-YFP;mesp-ba-mKate2) cells that survived over 5 hr post-dissociation, remained the only cell in the field of view, did not divide, and showed transient Her1-YFP dynamics (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental design: (1) Dissection of posterior-PSM quarter (PSM4) (dashed lines) from a Tg(her1-YFP;mesp-ba-mKate2) 15 somite-stage embryo, (2) Dissociation into single cells, (3) Culture at low-density, and (4) Her1-YFP and Mesp-ba-mKate2 imaging over time. (B) Her1-YFP and Mesp-ba-mKate2 in a 15 somite-stage Tg(her1-YFP;mesp-ba-mKate2) embryo (bright-field inset). Arrowheads mark the recently formed somite (S1). Dissection lines surround PSM4. Scale bar 100 µm. (C) One cell per field of view imaged. Boxed region over time (scale bar 5 µm). Intensity trace shown in A. (D) Representative intensity traces of PSM4 cells in culture. (E) Number of Her1-YFP peaks (*mean ± SD, 4.4±1.6 peaks) per PSM4 cell in culture (N=11 embryos, n=174 cells). (F) Density plot of ratios of successive Her1-YFP periods and peak intensity (cyclen+1/cyclen) for PSM4 cells in culture (n=421 successive cycle ratios, circles in inset). Percent of total ratios per quadrant is indicated. (G,H) PSM4 cells in a Tg(her1-YFP;h2b- mCherry) embryo tracked until somite formation (arrowhead) (N=2 embryos, n=128 PSM4 cells). Scale bar 100 µm. Cells contributing to the same somite are identically coloured in the embryo and representative Her1-YFP intensity traces (* peaks). Percentage of tracked PSM4 cells contributing to a given somite is shown. (I) Number of Her1-YFP peaks (*mean ± SD, 3.4±1.0 peaks) per PSM4 cell in the embryo. (J) As described in F with PSM4 cells in the embryo (n=179 total successive cycles).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Detection of mesp-ba-mKate2 mRNA (red, in situ hybridization) and Mesp-ba-mKate2 (blue, anti-mKate2 antibody) in a fixed Tg(mesp-ba-mKate2) 10 somite-staged embryo (nuclei labelled green). mesp-ba-mKate2 was detected only in the rostral half of pre-segments (S–II and S–I) in the anterior PSM as expected from endogenous mesp-ba expression (Cutty et al., 2012). Mesp-ba-mKate2 was first detected by antibodies to mKate2 in the rostral half of S-I, where it persisted in the newly forming somite (S0) and formed somites (SI). (B) Mesp-ba-mKate2 signal was first detected in live Tg(mesp-ba-mKate2) embryos within the rostral half of S0 (*), after which it remained in the rostral half of the formed somites (21 somite-stage embryo). (C) Boundary formation was normal as detected by in situ hybridization for the boundary marker xirp2a in Tg(mesp-ba-mKate2) embryos compared to wildtype (WT) at 2 days post-fertilization (dpf).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Dissociated cells originating from different anteroposterior positions (PSM2, PSM3, PSM4 and TB) in Tg(her1-YFP;mesp-ba-mKate2) embryos, or PSM4 from Tg(her1-YFP) control embryos. Analysis criteria was as follows: (1) Single cells alone in the field of view were selected at the start of imaging; (2) Cells dying before 5 hr post-dissociation were excluded from analysis; (3) Cells that survived >5 hr but divided during the movie were excluded; (4) From the remaining cells, those not expressing Her1-YFP or failing to oscillate and arrest before cell death were excluded (No Transient Dynamics); (5) Transient Dynamics were then analyzed in the remaining cells. Note that PSM2 cells listed as Her1-YFP negative may have already arrested before imaging started.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Her1-YFP and Mesp-ba-mKate2 intensity traces from single cells with peaks and troughs marked (X) and grouped by experiment number. N=11 experiments (n=174 cells) combined from Figure 1—figure supplement 3–6.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Her1-YFP and Mesp-ba-mKate2 intensity traces from single cells with peaks and troughs marked (X) and grouped by experiment number. N=11 experiments (n=174 cells) combined from Figure 1—figure supplements 3–6.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Her1-YFP and Mesp-ba-mKate2 intensity traces from single cells with peaks and troughs marked (X) and grouped by experiment number. N=11 experiments (n=174 cells) combined from Figure 1—figure supplements 3–6.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Her1-YFP and Mesp-ba-mKate2 intensity traces from single cells with peaks and troughs marked (X) and grouped by experiment number. N=11 experiments (n=174 cells) combined from Figure 1—figure supplements 3–6.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Time of PSM4 cell death in culture and Her1-YFP last peak time in single cells. The grey triangle marks the region in which a last peak is not possible because the cells are already dead. Cells dying before 5 hr post-dissociation were not analyzed. Cells alive at the end of imaging (>1200 min, n=20 cells) are not shown. Mean cell survival time was 787 min, SD ±262 min.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A, B) Mesp-ba-mKate2 and Her1-YFP intensity traces in PSM4 (A) and TB (B) cells isolated one per well in a 24-well plate (N=3 embryos, n=6 PSM4 cells, n=1 TB cell). Time of imaging start post-dissociation (PD) given. Oscillations, intensity increase and arrest in concert with Mesp-ba-mKate2 signal-onset in the isolated cells observed.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Her1-YFP intensity traces in cultured PSM4 cells from embryos carrying only Tg(her1-YFP) (N=3 embryos; n=64 cells) that were cultured in parallel to PSM4 from Tg(her1-YFP;me- sp-ba-mKate2) embryos (experiments 449 and 450 in Figure 1—figure supplement 3). (B) Number of Her1-YFP peaks. (C) Her1-YFP intensity traces aligned by the first peak show on average lengthening period, increasing peak intensity (I+) and constant trough intensity (I-) over successive cycles.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** PSM4 cell data in Figure 1 was pooled from 11 different experiments, each with one embryo. (A) The distribution of the numbers of Her1-YFP peaks generated by cells is shown for each experiment. (B) The distribution of the time of the Her1-YFP last peak in cells for each experiment. (C, D) Coefficient of Variation (COV) for each individual experiment (orange points, blue line) and mean COV for the combined set of experiments (red line) for both numbers of peaks (C) and last peak time (D).
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** Cells were selected within PSM4 of 15 somite-staged Tg(her1-YFP;h2b-mCherry) embryos, then tracked until somite formation as shown in Figure 1G and H (N=2 embryos, n=128 cells). Her1-YFP intensity traces with peaks and troughs (X).
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp12-v1.jpg)
+
+**Figure 1—figure supplement 12.:** (A) First and final periods (mean ± SD in blue) of Her1-YFP oscillations in PSM4 cells in culture. (B) Posterior- and Anterior-most periods of Her1-YFP in PSM4 cells tracked in the embryo. (C–D) Time of the Her1-YFP last peak in PSM4 cells in culture (C) and in the embryo (D). The mean of the last peak time in culture is more than double that in the embryo, indicating that the transient dynamics are skewed to comparatively longer times in culture.
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig1-figsupp13-v1.jpg)
+
+**Figure 1—figure supplement 13.:** Diagram of Cycle, Peak Intensities (I+) and Troughs (I-). (B,C) All PSM4 Her1-YFP intensity traces from cells in culture were aligned by the first peak (marked I+ in A). Peak and trough intensity (B) and the period (C) for each cycle are given as median (circle) with 25th and 75th interquartiles (vertical bar). (D, E) All Her1-YFP intensity traces from cells in the embryo were aligned by the first peak. Peak and trough intensity (D) and the period (E) for each cycle shown as in B,C.
+
 Single PSM4 cells in culture produced Her1-YFP oscillations with 1–8 peaks before arresting (N=11 embryos, n=174 cells; Figure 1D and E). These oscillations typically slowed then abruptly arrested (Figure 1D and F; Figure 1—figure supplements 3–6). Oscillation arrest, marked by the last Her1-YFP peak, was also associated with Mesp-ba-mKate2 signal-onset (Figure 1A and D), suggesting that arrest occurs in concert with differentiation as expected from the tissue-level pattern. These transient dynamics were independent of cell-survival time in culture (Figure 1—figure supplement 7), reproduced in cells isolated one-per-well (Figure 1—figure supplement 8) and did not require Tg(mesp-ba-mKate2) (Figure 1—figure supplement 9). Despite inevitable uncertainty in the exact A/P boundaries of the explanted PSM4 due to manual dissection, the overall variation in arrest timing was not due to differences between the individual embryos or experiments (Figure 1—figure supplement 10), thus limiting its source to heterogeneity within the starting PSM4 cell population and/or to the noise in an intrinsic process. Taken together, our data show that PSM4 cells autonomously slow oscillations and arrest the clock in concert with expression of a segmental differentiation marker.
 
-## Cell-Autonomous PSM transient dynamics mirror those in the embryo
+### Cell-Autonomous PSM transient dynamics mirror those in the embryo
 
 To see whether the PSM4 cell-autonomous clock dynamics in culture recapitulated those produced in the embryo, we tracked cells that originated from PSM4 then flowed anteriorly until somite formation using light-sheet imaging of freely-growing Tg(her1-YFP;h2b-mCherry) embryos (Figure 1G). Retaining their initial local anteroposterior arrangement, cells from the PSM4 region predominantly contributed to two of four somites and differed by at most one Her1-YFP peak within a somite (N=2 embryos, n=128 cells; Figure 1G and H; Figure 1—figure supplement 11). To normalize for a general slowing of developmental time observed in zebrafish culture, as well as the overall longer periods of PSM4 cells in culture (Langenberg et al., 2003; Webb et al., 2016; Matsuda et al., 2020a; Figure 1—figure supplement 12), we used the number of peaks generated and the ratio of successive periods and peak intensities to compare cell dynamics, rather than absolute time. Cells in culture produced on average more peaks and showed increased variability in the number of peaks compared to cells in the embryo (mean ± SD = 4.4±1.6 peaks in culture, COV 0.36; 3.4±1.0 peaks in the embryo, COV 0.29; Figure 1E,I), indicating a longer and more variable duration of the cell-autonomous transient dynamics. Because the cells tracked in the embryo originated from the same starting population as those in culture, these results suggest that the variability in culture is not due to a difference in initial heterogeneity within that cell population, but reflects an increase in the noise of the cell-autonomous dynamics.
 
 The key dynamic of successive period slowing was shared between PSM4 cells in culture and in the embryo (81% of successive cycles slowed in culture vs 79% in the embryo; Figure 1F and J; Figure 1—figure supplement 13C and E). However, a rise in intensity from one peak to the next was seen less often in culture (72% successive cycles in culture and 92% in the embryo; Figure 1F and J; Figure 1—figure supplement 13B and D), and there was less of a correlation between intensity rise and slowing in the culture than in the embryo (57% of successive cycles both slow and rise in culture vs 73% in the embryo; Figure 1F and J). These differences in accompanying intensity rise show that although the cell-autonomous program generates slowing oscillations, the amplitude of the oscillations is noisier, suggesting that this feature may be tuned by extrinsic factors in the tissue.
 
 We next asked whether Her1-YFP arrest and Mesp-ba-mKate2 signal-onset in the culture reflected the spatiotemporal pattern of these events in a forming somite in the embryo. To systematically address this question, we backtracked all the cells in the recently formed somite (S1) in a Tg(her1-YFP;h2b-mCherry) embryo and Tg(mesp-ba-mKate2;h2a-GFP) embryo (Figure 2A and B). All cells in the somite expressed Her1-YFP and most produced a last peak in the prospective somite (S –1), creating a phase profile across the future rostral-caudal somite axis that reflected the tissue-level wave’s arrival (n=233 cells, Figure 2C and D). Thus, in the embryo, clock arrest of all the cells that form a single somite does not occur simultaneously, but is nevertheless spatiotemporally limited within S-1. Similar to the embryo, most PSM4 cells in culture that survived past 5 hr and remained undivided were found to oscillate and arrest Her1-YFP (Figure 1—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Her1-YFP in a Tg(her1-YFP;h2b-mCherry) embryo (A) and Mesp-ba-mKate2 in a Tg(mesp-ba-mKate2a;h2a-GFP) embryo (B). Representative lateral PSM light-sheet slice. Scale bar is 25 µm. Arrowheads at somite boundaries. (C) Cartoon of the formed somite (S1), the forming somite (SO) and the prospective somite (S-1). (D, E) S1 cells backtracked in a Tg(her1-YFP;h2b-mCherry) embryo (n=233 cells) (D) and a Tg(mesp-ba-mKate2a;h2a-gfp) embryo (n=190 cells) (E). Kymograph of Her1-YFP last peak (D) and Mesp-ba-mKate2 signal-onset time (E) in cells relative to the rostral-caudal somite axis (inset with example traces). Dashed grey line at transitions S-1 to S0 and S0 to S-1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mesp-ba-mKate2 signal-onset time defined in intensity traces from PSM4 cells in culture (n=139 PSM4 cells with sufficient trace length). Steps to define signal-onset: (1) An arbitrary window was defined across the intensity traces, then average intensity within each window was calculated. (2) Mesp-ba-mKate2 increase was obtained by subtracting the first intensity window (I1) from the second (I2), shown as a distribution. (3) Because intensity trace profiles varied between cells, we used the elbow method to identify the number of clusters. (4) Mesp-ba-mKate2 increase for each cell was then used to perform K-Means clustering using k=3. Groups 1 and 2 are cells showing an obvious Mesp-ba-mKate2 signal-onset. (5) Signal-onset time was then determined in these groups using K-Means on a lag-plot of the intensity. (B) Mesp-ba-mKate2 signal-onset in cells forming a somite in the embryo (N=2 somites, n=348 pooled cells with sufficient temporal length). (C,D) Time of Mesp-ba-mKate2 signal-onset relative to Her1-YFP Last Peak in PSM4 cells in culture (n=42 cells) (C) and in S1 cells back-tracked in an embryo carrying both mesp-ba-mKate2 and her1-YFP transgenes (n=40 cells)(D).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** PSM4 cells were cultured in parallel from her1-/-;her7-/- mutant embryos carrying Tg(mesp-ba-mKate2) (N=2 embryos, n=75 cells), and control Tg(mesp-ba-mKate2) embryos (N=2 embryos, n=71 cells). (A) Mesp-ba-mKate2 intensity traces of sufficient length were aligned by time (n=52 control cells, n=56 her1-/-;her7-/- cells). (B) Mesp-ba-mKate2 intensity increase clustered into groups (as described in Figure 2—figure supplement 1). Percentage of cells with an obvious Mesp-ba-mKate2 signal-onset detected, groups 1 and 2. (C) Mesp-ba-mKate2 signal-onset times (mean ± SD) determined for group1 and 2 cells.
 
 Mesp-ba-mKate2 was first detected within the forming somite (S0), with higher levels rostrally. We defined Mesp-ba-mKate2 signal-onset times in intensity traces from cells in the embryo and in culture that had a clear intensity rise (Figure 2—figure supplement 1A). The distribution of Mesp-ba-mKate2 intensity rise and proportion of cells with a clear signal-onset time in the embryo was comparable to that seen within the PSM4 cells in culture (N=2; Figure 2—figure supplement 1A and B), suggesting that there is no cell-autonomous default state of Mesp ‘on’ or ‘off’.
 
@@ -56,9 +124,25 @@ The tight temporal association of clock arrest and differentiation suggests that
 
 Together, our data suggests that the slowing and arrest of oscillations underlying the wave pattern in embryos is driven cell-autonomously in differentiating PSM cells. However, the noisier dynamics of the cell-autonomous program suggest that extrinsic signals present in the embryo may adjust the time of clock arrest in concert with differentiation, and sharpen clock oscillatory dynamics.
 
-## FGF extends the cell-autonomous clock and differentiation program in cultured posterior PSM cells
+### FGF extends the cell-autonomous clock and differentiation program in cultured posterior PSM cells
 
 We next explored whether FGF, an extrinsic signal known to affect segmentation, interacts with the cell-autonomous program by culturing PSM4 cells in the presence of FGF8 (Figure 3A and B; Figure 3—figure supplement 1). A gradient of FGF signaling has been shown to extend from the tailbud across the PSM and has been postulated to provide spatiotemporal information to the segmentation clock (Akiyama et al., 2014; Dubrulle and Pourquié, 2004; Sari et al., 2018; Sawada et al., 2001). Previous experiments implanting FGF8-soaked beads adjacent to posterior PSM in the embryo resulted in an extension of clock/PSM activity such that somite boundary formation was delayed, yielding shorter segments (Dubrulle et al., 2001; Sawada et al., 2001). Consistent with this delay in the embryo, we found that addition of FGF8 to the culture medium extended the cell-autonomous program in PSM4 cells, increasing the mean number of oscillations generated per cell (Figure 3C) and shifting the Her1-YFP last peak to later times (Figure 3D). Notably, exogenous FGF did not reduce noise in the cell-autonomous program (Figure 3C and D; Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig3-v1.jpg)
+
+**Figure 3.:** (A) A pool of dissociated PSM4 cells was split into a control well and one containing FGF-8b, then cultured (N=4 experiments, n=44 PSM4 control cells and n=54 PSM4 cells with added FGF). (B) Representative Her1-YFP and Mesp-mKate2 trace from PSM4 cells cultured with added FGF. (C) Number of Her1-YFP Peaks produced per cell, with pink line at the mean (mean ± SD = 4.0±1.8 peaks in control cells, 6.4±3.5 with FGF). (D) Time of Her1-YFP last peak (min post-dissociation), with pink line at the mean (mean ± SD = 269±116 min post-dissociation in control cells, 568±185 min post-dissociation in cells with FGF). (E) Ratio of successive cycle Her1-YFP periods (Period (n+1)/n) and peak intensity (Max Intensity (n+1)/n). Upper right quadrant indicates successive intensity rise and oscillation slowing. n=51 successive cycle ratios in PSM4 control cells and n=196 in PSM4 cells cultured with FGF, shown as circles in inset and percent of successive cycles is indicated in each quadrant. (F,G) All Her1-YFP intensity traces were aligned by the first peak. The period (F) and intensity of peaks (I+) and troughs (I-) (G) is given for each cycle as a median (circle) with 25th and 75th interquartiles (bar).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** For each experiment (N=4), dissociated cells from one or two embryos were split between two wells, then cultured +/-FGF-8b. Single oscillating cells that remained the only cell in the field of view, survived >5 hr post-dissociation, did not divide, and showed transient dynamics were analyzed. Her1-YFP and Mesp-ba-mKate2 intensity traces from single cells shown (n=44 control PSM4 cells, n=54 PSM4 cells +FGF).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) PSM4 and PSM4 +FGF cell data was pooled from four different experiments. Distribution of the numbers of Her1-YFP peaks generated by individual cells shown for each experiment. (C, D) Coefficient of Variation (COV) for each individual experiment (orange points, blue line) and mean COV for the combined set of experiments (red line).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Her1-YFP Last peak time correlated with Mesp-ba-mKate2 signal-onset time in PSM4 (blue) and PSM4 +FGF (orange). (B) Mesp-ba-mKate intensity shown by percent of cells reaching a range of intensity thresholds.
 
 Despite the Her1-YFP last peak occurring later on average, it retained a temporal association with Mesp-ba-mKate2 signal-onset in the presence of FGF (Figure 3—figure supplement 3A) and the distribution of Mesp-ba-mKate2 intensity traces was not altered (Figure 3—figure supplement 3B). Interestingly, a small subset of cells (5 out of 54 cells) produced multiple Her1-YFP oscillations after the Mesp-ba-mKate2 signal-onset (Figure 3—figure supplement 1), suggesting that these events can be uncoupled. Together, these results indicate that PSM4 can cell-autonomously extend the timing of clock arrest and segmental differentiation in response to FGF.
 
@@ -66,9 +150,29 @@ We found that successive oscillations continued to slow overall in the presence 
 
 Together, our data shows that FGF extends the duration of the cell-autonomous program transient dynamics in a manner that could explain reported effects of FGF activity on segment boundary position in the embryo (Dubrulle et al., 2001; Sawada et al., 2001) and supports a hypothesis that extrinsic signals act upon the clock through the cell-autonomous program.
 
-## Cell-autonomous, intrinsic timer initiates as cells exit the tailbud
+### Cell-autonomous, intrinsic timer initiates as cells exit the tailbud
 
 We hypothesize that the cell-autonomous program of slowing oscillations and arrest in concert with differentiation is controlled by a timer that, in the embryo, encodes positional information as cells flow anteriorly. If an intrinsic timer provides positional information to the clock in the embryo, we predicted that cells located more anteriorly in the PSM will have less time remaining before arrest and differentiation. To test this, we followed oscillation and arrest dynamics in single isolated cells originating from different anteroposterior quarters of PSM tissue in the embryo, and used PSM4 dissected from the same embryos as an internal reference (Figure 4A; Figure 4—figure supplement 1A). Consistent with a timer running down in the embryo, isolated PSM cells originating more anteriorly successively slowed oscillations, but tended to produced fewer peaks than PSM4 cells and arrested Her1-YFP earlier in concert with Mesp-ba-mKate2 signal-onset (Figure 4B–D; Figure 4—figure supplement 1A–E; Figure 4—figure supplements 2 and 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design: Tg(her1-YFP;mesp-ba-mKate2) PSM was dissected into different anteroposterior quarters, dissociated, and then cultured. PSM4 was dissected and cultured in parallel from each embryo to serve as an internal reference. (B) Representative intensity traces for the different anteroposterior quarters. (C) Her1-YFP last peak times as median (green line) with interquartile box and whiskers. Time given as post-dissociation. Data pooled by cell type (N=3 embryos, n=32 PSM2 and 32 PSM4 cells; N=3 embryos, n=65 PSM3 and 41 PSM4 cells; N=3 embryos, n=38 TB and 59 PSM4 cells). PSM2 last peaks that occurred prior to the start of imaging were set to acquisition start time (*). (D) Correlation of Her1-YFP Last Peak and Mesp-ba-mKate2 signal-onset time. (E) Cells backtracked from posterior PSM (blue, n=17) and S1 (orange, n=15) to the TB at 15 somite stage in a representative embryo (7.5 hr imaging, Tg(her1-YFP;h2b-mCherry), N=2). Arrowhead at recently formed somite boundary. Scale bar 100 µm. (F, G) Her1-YFP intensity traces for individual cells (green) and mean intensity (black). Inset zoom of oscillations in the TB. (H) Cell distance from posterior tail tip. (I) Mean Her1-YFP period.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Her1-YFP last peak times in cultured cells dissected from different anteroposterior positions (PSM2, PSM3, PSM4, and TB) in Tg(her1-YFP;mesp-ba-mKate2) embryos. PSM4 was dissected and cultured in parallel to other PSM quarters from the same embryo as an internal reference (N=3 for each comparison). Pooled PSM4 data is shown in Figure 4. Median last peak time (red line) with interquartile box. Many PSM2 cells were in the fall of the last peak when imaging began, thus the last peak time for such cells was set to the time imaging started post-dissociation (*). (B) Number of Her1-YFP peaks (mean ± SD, PSM3 2.95±1.65; PSM4 4.36±1.44; TB 4.26±1.35 peaks) (C) Successive period and intensity ratios. Percentage of successive cycles slowing and increasing intensity. (D, E) Mesp-ba-mKate2 intensity traces and distributions clustered into groups.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Intensity traces from PSM2 cells in culture (N=3 experiments, n=32 cells) and experiment number.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Intensity traces from PSM3 cells in culture (N=3 experiments, n=65 cells) with the peaks and troughs marked (X) and experiment number.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/93764/elife-93764-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Intensity traces from TB cells in culture (N=3 experiments, n=38 cells) with peaks and troughs marked (X) and experiment number.
 
 To explore when this timer starts, we cultured cells from the tailbud (TB), which we define as the region posterior to the end of the notochord (Figure 4A), where Her1-YFP oscillations are present (Soroldoni et al., 2014) and progenitor cells are thought to be maintained (Martin, 2016). However, unlike amniotes, zebrafish do not possess an NMP population in the tailbud that contributes substantially to the tail (Attardi et al., 2019). As we did with the PSM, we analyzed cells that survived over 5 hr post-dissociation, remained the only cell in the field of view, did not divide, and showed transient Her1-YFP dynamics. We found that single TB cells in culture oscillated with successive slowing, then arrested concurrent with Mesp-ba-mKate2 signal-onset (Figure 4B–D; Figure 4—figure supplement 1C–E; Figure 4—figure supplement 4). Moreover, TB and PSM4 dissected from the same embryos were found to arrest oscillations with similar timing, despite the more posterior origin of the TB cells (Figure 4C; Figure 4—figure supplement 1A, B). These results suggest that experimental removal from the TB starts the intrinsic timer such that its duration is equivalent to that of cells which have recently entered the PSM. We thus propose that TB cells have already expressed the cell-autonomous timing mechanism, but require a trigger associated with exit from the TB to start the timing activity.
 
@@ -90,41 +194,41 @@ Organizing animal and plant tissues and microbial assemblies with oscillatory me
 
 ## Methods
 
-## Zebrafish and embryo care
+### Zebrafish and embryo care
 
 Wildtype (WT) and transgenic (Tg) fish were maintained according to standard procedures in facilities at University College London (London, UK) and Swiss Federal Institute of Technology in Lausanne EPFL (Lausanne, CH). All zebrafish husbandry procedures have been approved and accredited by the federal food safety and veterinary office of the canton of Vaud (VD-H23). Tg embryos were heterozygotes produced by natural pairwise spawning with WT (AB, TL) or another Tg line. The following lines have been described previously: Tg(her1:her1-YFP) (Soroldoni et al., 2014); Tg(h2az2a:h2az2a-GFP) (zfin ID: ZDB-TGCONSTRCT-070117–39) abbreviated Tg(h2a-GFP) here; Tg(Xla.Eef1a1:H2Bm-Cherry) abbreviated Tg(h2b-mCherry) here (Recher et al., 2013); Def(Chr5:her1 zf2173/zf2173;her7 hu2526/hu2526) (Lleras Forero et al., 2018). Embryos were incubated at 28.5 °C in E3 without methylene blue (UCL) or facility water (EPFL) until shield stage then incubated at 19.5 °C until the 8–10 somite stage when they were screened as previously described (Soroldoni et al., 2014) and returned to 28.5 °C and, prior to use, embryos were dechorionated manually in agarose-coated petri-dishes.
 
-## mesp-ba-mKate2 transgenesis
+### mesp-ba-mKate2 transgenesis
 
 Transgenesis was performed as described previously (Soroldoni et al., 2014). In short, mKate2 was fused to the 3’ end of mesp-ba so as to generate a C-terminal fusion protein, then the modified BAC was subcloned to obtain a 15 kb construct. The resulting BAC was co-injected with I-Sce Meganuclease (Roche) at a concentration of 100 ng/μl and a bolus size of 130 μm. Transient expression in F0 embryos was used as a proxy to confirm the functional expression of the Mesp-ba-mKate2 fusion protein and all embryos were raised to adulthood. In total, 9 independent transgenic founders (out of 29 fish) were identified by whole-mount in situ hybridization using a probe to mKate2, yielding a transgenesis frequency of 30%. Based on the optimal signal to noise ratio, and the mKate2 stripe pattern, a single founder was selected. Anti-tRFP antibody (Evrogen, AB233) was used in further analysis of Mesp-ba-mKate2. Heterozygous and homozygous Tg(mesp-ba:mesp-ba-mKate2) were viable, fertile, and stably expressed mKate2 through multiple generations over 10 years.
 
 The following primers were used for tagging and subcloning:
 
-## Light sheet time-lapse imaging of embryos
+### Light sheet time-lapse imaging of embryos
 
 In vivo multi-position time-lapse imaging experiments (1.5 min/stack; up to 7.5 hr) were conducted using a dual-illumination light sheet microscope (LS1 Live, Viventis Microscopy Sárl, Switzerland and a custom-built version of the LS1 Live microscope of identical configuration). The microscope had the following configuration: Andor Zyla 4.2 sCOMS camera; 515 nm laser to image YFP; 561 nm laser to image mCherry or mKate2; CFI75 Apochromat 25 X, NA 1.1 detection objective (Nikon); scanned gaussian beam light sheet with thickness (FWHM) of 2.2 μm. The tail and PSM of growing embryos was kept in the field of view by automatically tracking the mass of the Her1-YFP signal while acquiring the timelapse and adjusting stage positions. Two embryos were imaged in parallel in each experiment. Stacks of YFP and mCherry or mKate2 (150 planes with 1.5 μm spacing) were acquired at each position every 90 s.
 
 Prior to imaging, embryos were dechorionated and placed in facility water (EPFL) with 0.02% Tricaine to prevent muscle twitching. Multiple embryos were mounted at the bottom of the light sheet microscope sample holder (Viventis Microscopy Sárl, Switzerland) and oriented laterally in agarose depressions designed to hold the yolk of an embryo and allow unhindered extension of the body and tail (Herrgen et al., 2009). Temperature was maintained at 28.5 °C using a recirculating air heating system (Cube 2, Life Imaging Services, Swtizerland).
 
-## Image processing of embryo timelapses
+### Image processing of embryo timelapses
 
 First, we defined the dataset by creating an XML file, which included all metadata and recorded transformations performed on the raw data, and saved the data in HDF5 file format (The HDF Group, 1997–2019). These two files were used in all subsequent steps. Second, to produce spatially registered timelapse movies, images were temporally registered with a linear transformation, with the first time point as a reference, using a Fiji plugin (Preibisch et al., 2014; Schindelin et al., 2012). Cellular nuclei were used as registration markers and all transformations were rigid, where the Euclidean distances between points were preserved. All these transformations were saved in the XML file, thus the data in the HDF5 file remained unaltered. In parallel to this registration process, the notochord was segmented for each time point using a custom FIJI script. This was used as a spatial reference in the embryo, and applied to create the kymograph in Figure 2. More detail can be found at https://www.biorxiv.org/content/10.1101/2023.06.01.543221v2.
 
-## Cell tracking in the embryo
+### Cell tracking in the embryo
 
 Using Mastodon – a large-scale tracking and track-editing framework for large, multi-view images (https://github.com/mastodon-sc/mastodon; Tinevez and Pietzsch, 2024) – each individual cell was segmented and tracked based on nuclear signal (H2A-GFP or H2B-mCherry). We performed a semi-automatic analysis, where cells of interest were manually selected then followed by automated tracking. All tracks were manually checked and corrected. The output was the intensity for each cell, in both channels, obtained from the segmented volume (in the 3 spatial dimensions). X,Y and Z coordinates were also obtained. More detail can be found at: https://www.biorxiv.org/content/10.1101/2023.06.01.543221v2.
 
 Data from tracking of PSM4 cells in a 15 somite-staged embryo (Figure 1) was only included for cells that did not divide to be comparable to our cell culture data. Backtracking of entire somites through to prospective somite S-1 (Figure 2) was done in 15–20 somite-staged embryos. Backtracking of posterior-PSM and the most recently formed somite (Figure 4) was done at 28 somite stage. Cells that were backtracked across the S-1 to S0 transition in Tg(her1-YFP;mesp-ba-mKate2) embryos (Figure 2—figure supplement 1) were followed by first selecting rostral cells with nuclear Mesp-ba-mKate2 signal, then switching to the Her1-YFP signal tracking in the anterior PSM.
 
-## Mesp-ba-mKate2 signal-onset
+### Mesp-ba-mKate2 signal-onset
 
 To systematically define Mesp-ba-mKate2 signal-onset and its timing in the intensity traces from cells in culture and in the embryo, the steps outlined in Figure 2—figure supplement 1 were applied.
 
-## Mesp-ba-mKate2 and Her1-YFP Somite Kymograph
+### Mesp-ba-mKate2 and Her1-YFP Somite Kymograph
 
 Using the segmented notochord as a spatial reference in the preliminary data set, the spatial coordinates of the cells were projected to the nearest point in the notochord using Euclidean distance. This produced a new coordinate system, where cells have a reference frame in the moving and growing embryo. Each notochord segment, corresponding to the area of projected tracked cells, was then aligned over time to create a kymograph (Figure 2). Using the X and Y coordinates in the projected notochord, a matrix was built where the rows are each notochord segment over time going from posterior to anterior. The columns correspond to a binned spatial region of the cell projection. The color code used for the Her1-YFP Kymograph was the time and position of the last peak of the cells (green). For Mesp-ba-mKate2, the signal-onset time and position (magenta) was used.
 
-## Cell culture
+### Cell culture
 
 Individual 15 somite-staged embryos were dechorionated in E3 then transferred into DPBS(-CaCl2, -MgCl2), where cells of interest were dissected out within 5 min. Using forceps (Dumont #5SF Forceps, straight, superfine, Fine Science Tools Item 11252–00) and a microknife (Needle Blade Microsurgical Knife Straight, Sharpoint, ref 78–6810), the skin and yolk were removed, leaving the trunk and tail intact. Holding the embryo in a lateral view, the TB was cut off posterior to the end of the notochord and the remaining AP axis up to the last formed somite boundary was quartered. PSM quarters from the desired AP level were then oriented in cross-section view so that PSM could be cut free of lateral tissue, neural tube and notochord. Dissected tissue was moved with F-127 Pluronics-coated pipette tips into coated tubes containing 50 μl DPBS(-CaCl2, - MgCl2). After a 5 min incubation in DPBS, the pieces were manually dissociated into single cells by brief pipetting and then transferred into wells of a 24-well glass bottom plate (Greiner Bio-One, 662896) that had been pre-coated with Protein A from Staphylococcus aureus (Sigma P6031; 100 ng/μl PA) and contained 800 μl culture media (Leibovitz’s L15 Medium, no phenol red, Thermo Fisher 21083027; 50 ng/μl Protein A; 0.01% Methyl Cellulose, Sigma 274429). Surface conditions were critical to successful cultures. For example, glass surfaces should not be acid-treated, and Protein A batches and strains exhibited substantial differences. Any undissociated clusters of cells were aspirated out of the culture well using a glass needle attached to a syringe. Embryos and cells were maintained around 28.5 °C throughout dissection and dissociation. In experiments involving FGF, we added FGF8 (423-F8b R&D System) at 100 ng/ml to the culture media just prior to adding the dissociated cells.
 
@@ -136,26 +240,26 @@ Comparison of cell-autonomous Mesp-ba-mKate2 signal-onset timing in PSM4 cells f
 
 Our criteria for continued analysis of cells in culture was as follows: (1) alive >5 hr post-dissociation; (2) one cell in the field of view; (3) undivided; and (4) expressed and arrested Her1-YFP.
 
-## Cell culture imaging
+### Cell culture imaging
 
 Cells were imaged on a Nikon Eclipse Ti (inverted) equipped with a 40 x NA0.95 objective, Andor iXon897 Ultra EMCCD (512x512 with 16 μm pixels), Lumencor SpectraX, and hardware autofocus. Her1-YFP was detected using a Chroma 49003 filter, and Mesp-ba-mKate2 with Chroma 49008. Imaging parameters were as follows: YFP at 400ms exposure, 4x4 binning, 1 MHz (16-bit) read-out mode, EM Gain = 50, Conversion Gain = 1, 510 nm LED at 20% intensity; mKate2 at 1000ms exposure, 4x4 binning, 1 MHz (16-bit) read-out mode, EM Gain = 50, Conversion Gain = 1, 586 nm LED at 3% intensity; Bright field at arbitrary exposure time, no binning, 1 MHz (16-bit) read-out mode, EM Gain = 50, Conversion Gain = 1. Up to 120 positions with only one cell in the field of view were selected at the start of imaging per experiment. A single plane of bright field, YFP and mKate2 was captured at 10 min intervals for over 16 h using the perfect focus system. Cells remained in the center of the field of view without re-positioning throughout the movie. Temperature was controlled at 28.5 (±0.3 °C) using a stage-top incubator (Bold line, Okolab), and a light-blocking incubation chamber (Solent Scientific).
 
-## Cell culture image processing
+### Cell culture image processing
 
 Bright field images were passed through a custom MATLAB code for segmenting single cells. Contrast of the grayscale image of the first frame was enhanced using the adapthisteq built-in algorithm, then filtered using a guided filter (imguidedfilter, neighbourhood = 3 by 3 pixels and degree of smoothing = 0.001) to preserve cell edges (regions of high variance in pixel intensity) while filtering out noise. Next, a gradient image was generated by subtracting an eroded image (imerode, disk structuring element = 2 pixels) from a dilated (imdilate, disk structuring element = 2 pixels) image, providing a rough outline of potential cells. Otsu’s thresholding was applied to this, resulting in a binary image with several white regions (termed blobs) that represented potential cells. Given that cells were positioned approximately at the center of each image, the largest blob at the center of the image was segmented and pixel intensities in the rest of the image were set to zero (black). This served as a mask for further processing. The built-in activecontour algorithm (300 iterations, Chan-Vese method, smooth factor = 1, contraction bias = 0.1) was then applied on the gradient image with the mask serving as the initial state of the algorithm. The boundaries of the object region in the mask (in white) define the initial contour position used for contour evolution that ultimately segments the cell. Output from the algorithm represented the segmented cell. Fluorescent intensities from the segmented region were then determined for further analysis. Segmentation of each frame was confirmed manually and corrected when necessary.
 
 Mesp-ba-Kate signal in her1-/-;her7-/- and control PSM4 cells in culture was detected as Maximum Intensity within a manually placed ROI around the cell in Fiji.
 
-## Her1-YFP intensity trace peaks and period
+### Her1-YFP intensity trace peaks and period
 
-## Cells in culture
+#### Cells in culture
 
 The high signal to noise of the intensity traces allowed the oscillatory region to be determined by visual inspection. To find the position of the peaks within this region, we used the MATLAB findpeaks function. A second order polynominal fit was performed using the intensity at the maximum, and right before/after it in order to optimise the peak positions. Oscillatory cycles were defined between peaks. Intensity at peaks (I+) and troughs (I-) was also found.
 
-## Cells in the embryo
+#### Cells in the embryo
 
 Peaks and troughs were defined using the entire intensity trace of Her1-YFP. The peaks and troughs of these oscillations were then calculated using the Scientific Python library’s peak finder (scipy.signal.find_peaks) (SciPy 1.0 Virtanen et al., 2020). A single set of parameters (width, distance and prominence) were chosen for peak identification in all intensity traces. Oscillatory cycles were calculated following the same method used for the cells in culture.
 
-## FGF-treated PSM4 and control cells in culture
+#### FGF-treated PSM4 and control cells in culture
 
 Peaks and troughs were defined using the Scientific Python library’s peak finder (scipy.signal.find_peaks) (SciPy 1.0 Virtanen et al., 2020) and manual curation was necessary for PSM4 +FGF cells.

@@ -31,7 +31,7 @@ Here, we investigate the role of Nodal signaling in C and E gastrulation movemen
 
 ## Results
 
-## Nodal regulates C and E cell behaviors cell-autonomously and non-autonomously
+### Nodal regulates C and E cell behaviors cell-autonomously and non-autonomously
 
 Zebrafish embryos that are double mutant for the two nodal-related genes expressed during gastrulation, ndr1 (sqt) and ndr2 (cyc), or that lack both maternal and zygotic function of the co-receptor Tdgf (MZoep–/﻿–) or the downstream effector Smad2, exhibit severe dorsolateral mesendoderm deficiencies and impaired AP extension of the enlarged neuroectoderm (Dubrulle et al., 2015; Gritsman et al., 1999; Feldman et al., 1998; Figure 1A). However, underlying cell behavior defects during gastrulation have not been fully characterized. We therefore analyzed cell movements in the dorsal region of WT and MZoep mutants by time-lapse confocal microscopy for a period of three hours, beginning shortly after the onset of C and E movements (80% epiboly, 8.5 hr post-fertilization [hpf]). Automated tracking of fluorescently labeled nuclei in WT gastrulae revealed clear convergence of cells from lateral positions toward the dorsal midline, and concomitant extension along the AP axis (Figure 1B–C, top, Video 1). Analysis of cell velocities demonstrated that rates of cell movement were highest in the lateral-, anterior-, and posterior-most regions of the gastrula and lowest in the center (Figure 1D, top). This is consistent with mediolateral intercalation, which is characterized by a stationary point near the embryo’s equator and cell velocities that increase proportionally with their distance from this point (Glickman et al., 2003; Concha and Adams, 1998). MZoep mutant gastrulae, by contrast, exhibited disorganized cell movement and velocity patterns that are inconsistent with ML intercalation (Figure 1B–D, bottom). These cells moved along swirling paths, which contrasted with the direct anterior-, posterior-, and medial-ward movement of WT cells, and were seen to cross the dorsal midline, which was not observed in WT embryos (Figure 1B; Concha and Adams, 1998).
 
@@ -39,31 +39,67 @@ Zebrafish embryos that are double mutant for the two nodal-related genes expre
 
 **Figure 1.:** (A) Bright-field images of live WT and MZoep–/– embryos at 80% epiboly (8.5 hpf). The arrowheads indicate the point of view (dorsal side) for all fluorescent confocal micrographs. (B–D) Representative images of automated tracking of fluorescently labeled nuclei in the dorsal hemisphere of WT (top) and MZoep–/– (bottom) gastrulae. Tracks represent cell movements over three hours of time-lapse confocal imaging, beginning at 8.5 hpf, and are colored according to their displacement in the mediolateral (B) and anteroposterior (C) dimensions or the mean velocity of cell movement (D). Dotted lines indicate dorsal midline. (E, F) Displacement of cell tracks in the mediolateral (E) and anteroposterior (F) dimensions in WT (blue) and MZoep–/– (purple) gastrulae [as shown in (B–D]). Each dot represents a single cell track, each color represents an individual embryo, N = 4 WT and 5 MZoep–/–. (G) Absolute displacement of cell tracks in ML (top) and AP (bottom) dimensions. Bars are mean with 95% confidence interval, p<0.0001, Kolmogorov-Smirnoff (K-S) tests. (H) Representative images of membrane-labeled neuroectoderm in live WT (top) and MZoep–/– (bottom) gastrulae with cells outlined in yellow. (I, J) Neuroectoderm cell elongation (I) and alignment (J) at 8.5 hpf (left) and 10 hpf (right). Each dot represents a single cell, black bars are mean values in (I), and median values in (J). N = 3 embryos of each genotype, p<0.0001, Mann-Whitney test in (I), K-S test in (J). (K) Representative images of membrane-labeled donor cells of the indicated genotypes within the neuroectoderm of unlabeled host gastrulae. N indicates the number of embryos analyzed from three independent trials. (L) Representative images of protrusions (arrowheads) made by transplanted neuroectoderm cells of the genotypes/conditions indicated in (K). (M) The orientation of all protrusions between 8.5 and 10 hpf is shown in radial histograms divided into 20° bins, with 0 and 180 representing the ML axis. Yellow and gray quadrants represent ML- and AP-oriented protrusions, respectively. **, p=0.0053; ****, p<0.0001; Chi-square. (N) Alignment of donor cells as in (J). The number of embryos in each condition is indicated in the corresponding panels in (K). Anterior is up in all images, scale bars are 50 μm. Dotted lines in (J, N) show 20 degrees from ML for reference.
 
+![Video 1.](https://cdn.elifesciences.org/articles/54445/elife-54445-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse confocal series from approximately 8.5 to 11.5 hpf in representative WT (left) and MZoep–/– (right) gastrulae injected with H2B-RFP RNA. Cell tracks shown below are colored according to track displacement, with warmer colors indicating higher displacement.
+
 Both C and E movements were apparent in WT gastrulae when cell track displacement in the ML or AP dimension was plotted against the starting position of each cell along these respective axes (Figure 1E–F). For example, cells on the left side of each embryo exhibited right-ward displacement and vice versa as they converged toward the midline, resulting in a negative slope (Figure 1E, blue). Meanwhile, cells in the anterior and posterior of each embryo moved anteriorly and posteriorly, respectively, extending the AP axis and yielding a positive slope (Figure 1F, blue). Cell track displacement in MZoep–/– gastrulae, on the other hand, was not neatly graded along the ML and AP embryonic axes as observed in WT embryos (Figure 1E–F, purple). Although convergence was still apparent in these mutants (Figure 1E), displacement of MZoep–/– cells in the ML dimension was significantly reduced compared to WT (Figure 1G, p<0.0001, Kolmogorov-Smirnov [K-S] test), and AP extension was particularly severely disrupted in terms of both absolute displacement and spatial organization of cell movements (Figure 1F–G). Although these results are consistent with previous findings that convergence movements are observed within Nodal-deficient gastrulae despite an almost complete lack of extension (Gritsman et al., 1999; Feldman et al., 1998), they demonstrate that convergence movements are also reduced and disorganized in MZoep mutant gastrulae (Figure 1E–G).
 
 We next used a fluorescent membrane marker to assess the ML cell elongation, alignment and protrusive activity underlying C and E in the neuroectoderm of WT and MZoep–/– embryos from 8.5 hpf until the end of gastrulation (10 hpf) (Figure 1H–M). Cell elongation is represented as the aspect ratio of each cell (major/minor cell axis), and cell alignment was measured as the orientation of each major cell axis with respect to the embryo’s ML axis, with 0° indicating perfect ML orientation. We found that WT neuroectoderm cells were significantly more elongated than MZoep–/– cells throughout gastrulation (Figure 1I; p<0.0001, Mann-Whitney tests). Unlike the marked ML alignment of WT cells that increased over time (Figure 1J, blue), MZoep–/– cells were significantly less well aligned at both 8.5 and 10 hpf time points (Figure 1J, purple) (p<0.0001, K-S test). We then measured the orientation of cellular protrusions within the neuroectoderm of WT and MZoep–/– gastrulae using cell transplantation to achieve sparse labeling (Figure 1K–M). Protrusions made by WT cells exhibited a strong ML bias typical of MIB (Figure 1L–M; Keller et al., 2000), whereas protrusions of MZoep–/– cells were essentially randomly oriented with a slight anterior bias (Figure 1L–M). Together, these results demonstrate a severe disruption of C and E movements and polarized cell behaviors in MZoep mutant gastrulae.
 
 Previous studies have shown that axis extension can be largely rescued by restoration of mesoderm to MZoep mutant embryos (Araya et al., 2014), but the autonomy of Nodal signaling within the neuroectoderm has not been examined at the level of cell polarity. To determine whether Nodal regulates ML alignment cell-autonomously within the neuroectoderm, we transplanted membrane-labeled MZoep–/– cells into the prospective neuroectoderm of WT host embryos (Figure 1K). We then measured donor cell alignment at late gastrulation (10 hpf) and found that MZoep–/– cells within WT hosts were significantly less well aligned than WT control donors (Figure 1N; p<0.0001, K-S test). At mid-gastrulation (8.5 hpf), some experiments showed that the alignment of MZoep–/– donor cells was not significantly different from that of WT donor cells in WT hosts (Figure 1N), whereas other experiments indicated that MZoep–/– donor cells were significantly less well aligned than WT controls at this stage (Figure 2D; p<0.001, K-S test). Because cell alignment in unmanipulated WT gastrulae (Figure 1J) more closely resembles that of the WT control donors shown in Figure 2D, we conclude that the alignment of MZoep–/– cells within WT hosts is reduced compared to WT control donors. Notably, mutant cells in WT host gastrulae were significantly better aligned than MZoep–/– cells in MZoep–/– hosts at both time points (Figure 1N) (p<0.0001, K-S test). Orientation of MZoep–/– cellular protrusions was also partially improved within WT hosts (Figure 1L–M), as the distribution of these protrusions differed significantly from that in MZoep–/– controls but did not align to the same degree as in WT cells (p<0.0001 and p=0.0053, respectively, Chi-square test). Together these results reveal an essential role for Nodal signaling in neuroectoderm C and E cell behaviors, including both non-autonomous and cell-autonomous functions during ML cell polarization.
 
-## Nodal functions partially in parallel with PCP signaling during axis extension
+![Figure 2.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative images of transplanted Prickle (Pk)-GFP donor cells (co-expressing H2B-RFP) within the neuroectoderm of membrane-labeled WT and MZoep–/– host gastrulae. Arrowheads indicate puncta at anterior edges. (B) Pk-GFP localization in the genotypes indicated. N indicates the number of embryos and cells analyzed for each condition from four independent trials, p<0.001, Chi-square test. (C) Representative images of membrane-labeled MZoep–/– donor cells without (left) and with (right) 2 ng MO4-vangl2 transplanted into the neuroectoderm of unlabeled host gastrulae from five independent trials. (D) Donor cell alignment as in Figure 1. The number of embryos in each condition is indicated on the corresponding panels in (C), WT→WT control N = 10. ***, p<0.001; ****, p<0.0001; K-S tests. (E) Whole mount in situ hybridization (WISH) for dlx3b and egr2b in WT (top) and MZoep–/– (bottom) gastrulae at 9.5 hpf, uninjected or injected with 2 ng MO4-vangl2. Dorsal views on the left, lateral views on the right. (F, G) Width (F) and length (G) of neural plates in the embryos depicted in (E). Each dot represents a single embryo, black bars are mean values. Number of embryos in each condition is indicated on the corresponding panel in (E), p<0.0001, Unpaired T-tests. Anterior is up in all images, scale bar is 20 μm in (A), 50 μm in (C), and 200 μm in (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression of PCP signaling genes in WT and MZoep–/– gastrulae at 90% epiboly stage (~9 hpf) as measured by RNA-seq from three biological replicates with 50 pooled embryos each. Bars are mean with SD. ****padj = 4.02−6. (B) Representative images of WISH for the transcripts indicated in WT (top) and MZoep–/– (bottom) gastrulae at 9.5 hpf. Fractions indicate the number of embryos with the pictured phenotype over the number of embryos examined. (C) Representative images of live WT embryos uninjected (left) or injected with 2 ng MO4-vangl2 (right) at 24 hpf. (D) Expression of dlx3b in WT and MZoep–/– gastrulae as measured by RNA-seq. p=0.017, Welch’s T-test, padj = 0.16. Anterior is up in (B), to the left in (C). Scale bars are 200 μm.
+
+### Nodal functions partially in parallel with PCP signaling during axis extension
 
 The reduced ML polarity of MZoep–/–neuroectoderm cells resembles PCP mutant phenotypes (Jessen et al., 2002; Kilian et al., 2003; Topczewski et al., 2001; Ulrich et al., 2003), raising the possibility that loss of PCP signaling may underlie C and E defects in MZoep mutants. We compared gene expression in WT and MZoep–/– gastrulae at 90% epiboly (~9 hpf) by RNA-sequencing and found that of the genes with known roles in PCP signaling in zebrafish, only one (prickle1b) exhibited altered expression in MZoep mutants (Figure 2—figure supplement 1). Accordingly, wnt5b, vangl2 (trilobite), and gpc4 (knypek) transcripts were all detected in MZoep–/– gastrulae by whole mount in situ hybridization (WISH) (Figure 2—figure supplement 1). Although this suggests that Nodal signaling does not regulate PCP at the level of gene expression, we hypothesized that it could instead regulate the activity of these signaling components. We therefore assessed PCP signaling activity by examining the intracellular localization of the core PCP component Prickle fused to GFP (Pk-GFP), whose association with anterior cell membranes is indicative of PCP activation and polarization (Ciruna et al., 2006; Yin et al., 2008), using transplantation to achieve sparse labeling of neuroectoderm cells. We found that WT cells (in WT hosts) and MZoep–/– cells (in MZoep–/– hosts) exhibited similar proportions of anteriorly localized Pk-GFP puncta, although MZoep mutant cells contained significantly more membrane-associated puncta that were not anteriorly localized (chi-square, p=0.0001) (Figure 2A, B), suggesting that PCP signaling is largely active in Nodal signaling-deficient gastrulae.
 
 Because PCP signaling establishes planar polarity via intra- and inter-cellular interactions between its molecular components (Goodrich and Strutt, 2011; Bayly and Axelrod, 2011), we hypothesized that the partial ML polarization of MZoep–/– cells observed upon transplantation into WT hosts indicates the ability of Nodal-deficient cells to respond to host PCP signaling (Figure 1L, N). To test this, we disrupted PCP signaling in MZoep–/– embryos using an antisense morpholino oligonucleotide (MO) against vangl2 (Williams et al., 2012) that phenocopies C and E defects of trilobite/vangl2 mutants (Figure 2—figure supplement 1; Solnica-Krezel et al., 1996), and transplanted cells from these MZoep–/–;vangl2 morphant donors into the prospective neuroectoderm of WT hosts. At both mid- and late gastrulation stages, ML alignment was significantly reduced in MZoep–/–;vangl2 morphant cells compared with control MZoep–/–cells (Figure 2C, D), further supporting the notion that PCP is active in the absence of Nodal signaling. Notably, in this series of experiments, we found that MZoep–/– donor cells were significantly less well aligned than WT control donors at both 8.5 and 10 hpf (Figure 2D). Together with the mosaic analyses described above and in Figure 1K–N, these results reveal a cell-autonomous role for Nodal in ML cell polarization throughout gastrulation. Finally, we tested whether disrupting PCP signaling using a vangl2 MO reduced axis extension in MZoep mutant gastrulae. We found that the neural plates of both WT and MZoep mutants, as marked by expression of dlx3b, were significantly wider and shorter upon injection with vangl2 MO than in uninjected controls at late gastrulation stages (Figure 2E–G), indicating reduced C and E. These results provide further evidence that PCP signaling is active and contributes to C and E movements in embryos lacking Nodal signaling. We noted that WISH staining for dlx3b was noticeably darker in MZoep–/–gastrulae (Figure 2E), likely reflecting a slight increase in expression levels (Figure 2—figure supplement 1) compounded by increased cell density resulting from reduced extension of the neuroectoderm in these mutants (Figure 1; Gritsman et al., 1999). Together, these results indicate that Nodal does not regulate C and E solely via PCP, and that PCP is not activated or polarized strictly downstream of Nodal.
 
-## Nodal signaling promotes ex vivo extension and tissue patterning
+### Nodal signaling promotes ex vivo extension and tissue patterning
 
 We have demonstrated that Nodal signaling is necessary for full planar polarization of cells and cell behaviors underlying C and E gastrulation movements. To test whether Nodal is also sufficient for these behaviors, we sought to define the role of Nodal during axis extension in relative isolation, independent of other signaling and patterning events within the embryo. To this end, we employed blastoderm explantation, a technique that is used to excise only the animal-most region of the blastoderm from ~2.5 hpf zebrafish embryos, thereby isolating this region from endogenous signaling centers at the embryonic margin and producing clusters of relatively naïve cells that can be grown and manipulated in culture (Figure 3A; Xu et al., 2014; Sagerström et al., 1996; Schauer et al., 2020; Trivedi et al., 2019). To determine the effect of Nodal signaling on such explants, we injected single-celled WT embryos with synthetic ndr2 mRNA at doses from 2.5 to 100 pg per embryo, explanted the animal half of each blastoderm at the 256–512 cell stage (2.5 hpf), and cultured these explants ex vivo until intact siblings reached early segmentation stages (Figure 3A, Figure 3—figure supplement 1). We found that several of these doses induced robust extension of explants in culture, whereas explants cut from GFP-injected or uninjected WT control or from ndr2-injected MZoep–/– embryos failed to extend (Figure 3B–E, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig3-v2.jpg)
+
+**Figure 3.:** (A) Diagram of injection and explantation of zebrafish embryos. (B–E) Representative bright-field images of live blastoderm explants of the indicated conditions/genotypes at the equivalent of the 2–4 somite stage. (F) Time-lapse DIC series of a representative explant from a WT embryo injected with 10 pg ndr2 RNA. (G, H) Time-lapse series of H2B-RFP labeled nuclei (G) and automated cell tracking (H) within a representative explant from a WT embryo injected with 10 pg ndr2 RNA. Tracks represent cell movements over 3.5 hr of time-lapse confocal imaging beginning at 7.5 hpf and are colored according to mean track displacement. (I, J) Displacement of cell tracks in the ‘mediolateral’ (I) and ‘anteroposterior’ (J) dimensions in explants from ndr2-injected (blue) and control RFP-injected (gray) WT embryos (as in Figure 1). Each dot represents a single cell track, each color represents an individual explant. N = 4 explants of each condition from two independent trials. (K) Absolute displacement of cell tracks in the ML and AP dimensions. (L) Representative images of WISH for the transcripts indicated in explants from WT embryos injected with 10 pg ndr2 RNA. Scale bars are 200 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of WISH for the transcripts indicated in explants from WT embryos injected with 0–100 pg ndr2 RNA and fixed at the equivalent of the 2–4 somite stage from two independent trials. (B) Length/width ratios of the explants depicted in (A). Each dot represents a single explant, black bars are median values. Scale bar is 200 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Manually annotated cell divisions (per explant) within four live explants from WT embryos co-injected with H2B-RFP and 10 pg ndr2 RNA. Measurements were taken at 5 min intervals from 7.5 to 11 hpf. Boxes represent the 25th to 75th percentiles, whiskers are minimum and maximum vales, bars are median values. (B) Left: representative image of cell divisions (arrowheads) within an explant co-expressing H2B-RFP and ndr2. The inset is enlarged from the region in the yellow square. Right: radial histogram of locations of all cell divisions (with respect to the center of each explant) detected within four ndr2-expressing explants between 7.5 and 11 hpf, with 90°/270° representing the axis of extension.
+
 Time-lapse imaging of live ndr2-injected explants revealed the onset of extension morphogenesis at or around 8 hpf (Figure 3F, Video 2), corresponding with the start of C and E movements in intact embryos (Sepich et al., 2005). All ndr2 RNA doses induced some degree of extension over control explants, but the intermediate doses (5–25 pg) were most effective, with 10 pg producing the most extension and the highest dose tested (100 pg) producing the least (Figure 3—figure supplement 1). Therefore, 10 pg ndr2 was used for most subsequent experiments. Automated nuclear tracking within ndr2-expressing explants revealed patterns of cell movement that were characteristic of C and E by MIB (Figure 3G–H), with the axis of explant extension defined as ‘AP’ and the orthogonal axis as ‘ML’. Indeed, plots of cell track displacement in the ‘ML’ and ‘AP’ dimensions (Figure 3I–J, blue) yielded the same negative and positive slopes, respectively, observed in intact embryos (Figure 1). These results demonstrate both convergence and extension movements within Nodal-expressing explants, although extension was more prominent (Figure 3K). Although cell movement was detected in RFP-injected control explants, cell track displacement was not spatially organized (Figure 3I–J, gray) and was significantly reduced compared to that in ndr2-expressing siblings (Figure 3K). We also examined cell divisions within ndr2-expressing explants to address the possibility that differential proliferation contributes to ex vivo extension. Although divisions were preferentially localized along the axis of extension, they were not concentrated in any particular region of the explant, and the number of cell divisions detected at these stages was relatively small (Figure 3—figure supplement 2). This suggests that, as in intact zebrafish gastrulae (Liu et al., 2017), cell proliferation is not likely to be a major driver of C and E morphogenesis ex vivo, consistent with a recent report that blocking cell divisions in zebrafish blastoderm explants did not prevent their extension (Schauer et al., 2020).
+
+![Video 2.](https://cdn.elifesciences.org/articles/54445/elife-54445-video2.mp4.jpg)
+
+**Video 2.:** Time-lapse differential interference contrast (DIC) series from 7 hpf to 12.5 hpf of representative explants from an uninjected WT embryo (left) and a WT embryo injected with 10 pg ndr2 RNA (right).
 
 WISH assays revealed that explants expressed markers of endoderm, mesoderm (Spemann-Mangold organizer, axial and paraxial), and neuroectoderm according to the dose of ndr2 with which they were injected, consistent with Nodal-dependent tissue induction in intact embryos (Chen and Schier, 2001; Thisse et al., 2000; Feldman et al., 2000; Sampath et al., 1998). For example, low doses of ndr2 induced robust expression of the neuroectoderm marker sox2 and some paraxial mesoderm (tbx16), whereas high doses induced expression of the endoderm marker sox17 and the organizer gene gsc, but less neuroectoderm (Figure 3—figure supplement 1). GFP- or un-injected control explants expressed none of these tissue-specific markers at appreciable levels. Notably, explants injected with 10 pg ndr2 exhibited discrete gene expression domains: the mesoderm markers tbxta, tbx16, and noto were nearly always restricted to one end, sox17 was present in small spots (likely to be individual endoderm cells), and sox2 was observed in a striped pattern along the long axis of each explant (Figure 3L, Figure 3—figure supplement 1). Together, these results demonstrate that Nodal signaling specifies a number of tissue types in discrete, spatially organized domains and promotes C and E morphogenesis to varying degrees depending on ligand dose within isolated naïve blastoderm.
 
-## Blastoderm explants exhibit asymmetric Nodal signaling
+### Blastoderm explants exhibit asymmetric Nodal signaling
 
 The gene expression patterns observed in ndr2-expressing explants revealed asymmetry along the axis of extension (Figure 3L), which is known to be critical for C and E morphogenesis of Xenopus explants (Ninomiya et al., 2004). To test whether graded Nodal signaling activity could account for this asymmetry, we immuno-stained ndr2-injected and uninjected WT control explants for phosphorylated Smad2, an indicator of active Nodal signaling (Figure 4A; Souchelnytskyi et al., 1997). Using DAPI co-staining to create a nuclear mask, we used 3D automated object detection to quantify the location and pSmad2 staining intensity of all nuclei within each explant (Figure 4A, see 'Materials and methods'). After filtering out nuclei below a threshold background staining level, we compared the spatial distribution of the resulting pSmad2-positive nuclei along the ‘axis’ of each explant (Figure 4B–C). Comparing pSmad2+ nuclei (Figure 4B–C, blue dots) to all nuclei (gray dots) revealed in ndr2-injected explants a significant asymmetry of their distribution, which began at 6 hpf and increased until 8 hpf (p<0.0001, K-S tests), but very few pSmad2+ nuclei that exhibited little to no asymmetric distribution in uninjected controls (Figure 4B, C). Of note, the timing of pSmad2 detection differed between ndr2-injected explants and intact WT embryos, where an appreciable pSmad2 signal was detectable by 5 hpf (Figure 4—figure supplement 1), consistent with previous reports (van Boxtel et al., 2015; Dubrulle et al., 2015). pSmad2 then persisted in explants until at least 8 hpf, whereas no signal was detected after 6 hpf in embryos (Figure 4—figure supplement 1). No pSmad2 signal was detectable in embryos treated with the Nodal inhibitor SB-505124 (DaCosta Byfield et al., 2004; Figure 4—figure supplement 1), indicating that this antibody specifically detected Nodal signaling activity. Further evidence of asymmetric Nodal signaling within explants was provided by increasing levels and asymmetry of lefty1 (lft1) expression, a negative feedback inhibitor and direct transcriptional target of Nodal signaling (Meno et al., 1999), in ndr2-expressing but not control explants (Figure 4D). These results demonstrate that injection of ndr2 mRNA at the one-cell stage produces extending explants with asymmetric Nodal signaling activity.
 
-## Nodal signaling and PCP promote cell polarity underlying C and E ex vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative confocal images of immunofluorescent staining for phosphorylated Smad2 and DAPI-labeled nuclei in 8hpf explants from WT embryos injected with 10 pg ndr2. DAPI z-stacks were used to create a three-dimensional mask from which nuclear pSmad intensities were detected and measured in an automated fashion. (B, C) Axis position of pSmad2-positive nuclei (blue) and all nuclei (gray) in explants from WT embryos injected with 10 pg ndr2 (B) or uninjected (C) at the time points indicated. Each dot represents a single nucleus, pink bars are median values among pSmad2+ nuclei. N indicates the number of explants in each condition from five independent trials. Kolmogorov-Smirnov tests were used to compare the distribution of pSmad+ nuclei to all nuclei; ****, p<0.0001; **, p<0.01. (D) Representative images of WISH for lefty1 in uninjected (top) and ndr2-injected (bottom) explants fixed at the time points indicated. Scale bars are 100 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative confocal z-projections of immunofluorescent (IF) staining for phosphorylated Smad2 (bottom) overlaid with DAPI-labeled nuclei (top) in WT embryos fixed at the time points indicated. (B) Representative confocal z-projections of pSmad2 IF and DAPI staining in 5.5 hpf WT embryos treated with DMSO (top) or SB505124 (bottom), starting at 3 hpf. Panels to the right are magnified views of the regions within the white squares. Fractions indicate the number of embryos with the depicted phenotype over the total number of embryos examined for each condition and/or timepoint. The animal pole is at the top of all images. Scale bars are 50 μm.
+
+### Nodal signaling and PCP promote cell polarity underlying C and E ex vivo
 
 Xenopus animal cap explants that are exposed to Activin signaling exhibit robust ML cell polarization and intercalation (Ninomiya et al., 2004; Shindo et al., 2008). To analyze planar cell polarity underlying Nodal-driven C and E in zebrafish explants, we quantified cell alignment using live fluorescent membrane labeling (Figure 5). At the equivalent of the 2–4S stage, when intact WT embryos exhibit strong ML cell alignment (Sepich and Solnica-Krezel, 2016), cells within GFP-expressing control explants were randomly oriented (Figure 5A,C median angle = 44°). This was in stark contrast to ndr2-expressing explants, whose extension was accompanied by robust ML alignment (defined as perpendicular to the axis of extension) of cells (Figure 5A, C median angle = 19°). This result demonstrates that Nodal signaling is sufficient to induce ML cell alignment underlying C and E morphogenesis in populations of otherwise naïve embryonic zebrafish cells.
 
@@ -73,9 +109,21 @@ Xenopus animal cap explants that are exposed to Activin signaling exhibit robu
 
 To ask whether Nodal-dependent ex vivo extension and ML cell alignment require PCP signaling, we generated explants from embryos that were co-injected with 10 pg ndr2 mRNA and vangl2 MO. Vangl2 morphant explants exhibited overall lengths and length/width ratios that were significantly reduced compared with those in explants expressing ndr2 alone, but significantly higher than those in uninjected controls (Figure 5B, D, E). It was recently reported that zebrafish blastoderm explants from embryos mutant for the PCP components wnt11, wnt5b, and fzd7a/b exhibited a similar reduction in ex vivo extension (Schauer et al., 2020). Live imaging of fluorescently labeled cell membranes further revealed that ML cell alignment was reduced but not entirely randomized in vangl2 morphant explants compared with explants expressing ndr2 alone (Figure 5A, C median angle = 26°). Because Nodal is necessary and sufficient for ML cell polarization ex vivo, and this polarity is reduced upon disruption of PCP signaling, these results indicate that PCP signaling functions downstream of Nodal in explant extension.
 
-## Nodal signaling promotes ex vivo C and E independent of mesoderm
+### Nodal signaling promotes ex vivo C and E independent of mesoderm
 
 The requirement for Nodal signaling in zebrafish axis extension is well-described, but evidence suggests that this role is secondary to the ability of Nodal to specify mesoderm (Aquilina-Beck et al., 2007; Gonsar et al., 2016; Araya et al., 2014; Smutny et al., 2017). However, the presence of mesoderm in the absence of Nodal is not sufficient for C and E to occur (Ninomiya et al., 2004; Howard and Smith, 1993), and loss of a subset of Xenopus Nodal ligands disrupts C and E without affecting mesoderm formation (Luxardi et al., 2010), indicating a possible primary role for Nodal in extension morphogenesis. This is consistent with our results showing that polarity of MZoep–/– donor cells is only partially restored by transplantation into WT hosts (Figure 1), which both corroborate the importance of mesoderm for proper C and E and suggest an additional cell-autonomous role for Nodal signaling in C and E cell behaviors. To determine whether Nodal plays a mesoderm-independent role in ex vivo C and E, we used SB-505124 (SB) to disrupt Nodal signaling within ndr2-expressing explants after mesoderm was specified (Figure 6A). Addition of 50 μM SB at 4, 5, or 6 hpf completely blocked both explant extension and expression of the mesoderm markers (and direct transcriptional targets of Nodal signaling; Dubrulle et al., 2015) tbxta and noto at 2–4S stage (Figure 6B–C). By contrast, treatment of intact WT embryos with SB did not prevent AP axis extension after 5 hpf (Figure 6—figure supplement 1), consistent with previous reports (Hagos and Dougan, 2007). Critically, explants treated with SB at 8 hpf underwent extension but were significantly shorter than DMSO-treated controls despite robust mesoderm marker expression (Figure 6B, C) (p<0.0001, Mann-Whitney test), indicating that Nodal contributes to ex vivo C and E after mesoderm formation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of the time course of SB-505124 (SB) treatment of ndr2-expressing explants. (B) Representative images of WISH for the transcripts indicated in explants from WT embryos injected with 10 pg ndr2 RNA, treated with SB at the indicated time points, and fixed at the equivalent of the 2–4 somite stage from four independent trials. (C) Length/width ratios of explants shown in (B). Each dot represents a single explant, black bars are median values; p<0.0001, Mann-Whitney test. (D) Diagram of the time course of SB treatment of ndr2-expressing explants followed by washout. (E) Representative images of WISH for the indicated transcripts in explants from WT embryos injected with 10 pg ndr2 RNA, treated with SB at the indicated time points, and fixed at the equivalent of the 2–4 somite stage from four independent trials. (F) Length/width ratios of explants shown in (E), as in panel (C). ****p<0.0001, Mann-Whitney test. Scale bars are 300 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Representative images of WISH for the indicated transcripts in WT embryos treated with DMSO or SB-505124 beginning at 4–8 hpf and fixed at the two-somite stage. The scale bar is 300 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/54445/elife-54445-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Diagram of the time course of SB-505124 (SB) treatment of ndr2-expressing explants, as in Figure 6. (B) Representative images of WISH for the transcripts indicated in explants from WT embryos injected with 10 pg ndr2 RNA, treated with SB at the indicated time points, and fixed at the equivalent of the 2–4 somite stage from four independent trials.
 
 We next sought to evaluate the role of Nodal signaling in the absence of mesoderm by disrupting mesoderm formation in ndr2-expressing explants with a discrete two-hour pulse of SB, then allowing Nodal signaling to resume upon wash-out of the inhibitor (Figure 6D). Treatment from 4 hpf to 6 hpf completely blocked mesoderm marker expression and extension, even after the inhibitor was removed (Figure 6E, F). Treatment from 6 hpf to 8 hpf similarly blocked expression of the mesoderm markers tbxta, noto, and tbx16, but dramatically increased expression of the neuroectoderm markers sox2 and otx2b by WISH (Figure 6E, Figure 6—figure supplement 2). Moreover, these neural-only explants exhibited marked (albeit reduced compared with DMSO controls) extension (Figure 6E, F), demonstrating that Nodal signaling promotes ex vivo neuroectoderm C and E even in the absence of mesoderm. Because sustained SB treatment beginning at 6 hpf completely blocked explant extension (Figure 6B–C), this extension must be driven by Nodal signaling after removal of the inhibitor at 8 hpf. Indeed, inhibiting only this later phase of signaling by SB treatment at 8 hpf prevented full explant extension even in the presence of mesoderm (Figure 6C, F), indicating that Nodal signaling after C and E onset contributes significantly to ex vivo extension morphogenesis. These results support a tissue-autonomous requirement for Nodal signaling in ex vivo neuroectoderm C and E that is distinct from its role in mesoderm formation.
 
@@ -99,62 +147,254 @@ The blastoderm explants described in this study provide a robust, simplified mod
 
 ## Materials and methods
 
-## Zebrafish
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tdgf1 (oep)</td>
+      <td>ZFIN</td>
+      <td>RRID:ZFIN_ZDB-GENE-990415-198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ndr2 (cyc)</td>
+      <td>ZFIN</td>
+      <td>RRID:ZFIN_ZDB-GENE-990415-181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB*</td>
+      <td>ZIRC</td>
+      <td>RRID:ZFIN_ZDB-GENO-960809-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>oeptz257</td>
+      <td>Hammerschmidt et al., 1996</td>
+      <td>RRID:ZFIN_ZDB-GENO-130130-2</td>
+      <td>Point mutation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJZoepFlag1-2 in pcDNA3 (plasmid)</td>
+      <td>Zhang et al., 1998</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ndr2 in PCS2+ (plasmid)</td>
+      <td>Sampath et al., 1998</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>membrane Cherry in PCS2+ (plasmid)</td>
+      <td>Gift from Dr Fang Lin</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>membrane eGFP in PCS2+ (plasmid)</td>
+      <td>Wallingford and Harland, 2002</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H2B-RFP in PCS2 (plasmid)</td>
+      <td>Gift from Dr John Wallingford</td>
+      <td></td>
+      <td>Template forin vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Drosophila Prickle-GFP (plasmid)</td>
+      <td>Jenny et al., 2003</td>
+      <td></td>
+      <td>Template for in vitro transcription</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho Smad2/3</td>
+      <td>Cell Signaling Technology #8828</td>
+      <td>RRID:AB_2631089</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Invitrogen AlexaFluor 488 goat anti-rabbit IgG</td>
+      <td>Thermo Fisher #A-11008</td>
+      <td>RRID:AB_143165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Roche Anti-digoxigenin-AP Fab fragments</td>
+      <td>Millipore Sigma #11093274910</td>
+      <td>RRID:AB_2734716</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Roche Digoxigenin RNA labelling mix</td>
+      <td>Millipore Sigma #11277073910</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Roche BM Purple AP staining solution</td>
+      <td>Millipore Sigma #11442074001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>MO4-vangl2 Morpholino antisense oligonucleotide</td>
+      <td>GeneTools (Williams et al., 2012)</td>
+      <td></td>
+      <td>AGTTCCACCTTACTCCTGAGAGAAT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrogen mMessage mMachine SP6 kit</td>
+      <td>Thermo Fisher # AM1340</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kit</td>
+      <td>Qiagen #74104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ambion Trizol reagent</td>
+      <td>Thermo Fisher #15596018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-505124</td>
+      <td>Millipore Sigma # S4696</td>
+      <td></td>
+      <td>50 mM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Roche Pronase</td>
+      <td>Millipore Sigma #10165921001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>New-born calf serum</td>
+      <td>Invitrogen #26010–066</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td>RRID:SCR_007370</td>
+      <td>Live cell tracking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>ImageJ/FIJI</td>
+      <td>RRID:SCR_002285</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistics and graphs</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish
 
 Adult zebrafish were raised and maintained according to established methods (Westerfield, 1993) in compliance with standards established by the Washington University Institutional Animal Care and Use Committee. Embryos were obtained from natural matings and staged according to morphology as described (Kimmel et al., 1995). All studies on WT embryos were carried out in AB* backgrounds. Additional lines used include oeptz257 (Hammerschmidt et al., 1996) on AB* background. oep–/– embryos were rescued by injection of 50 pg synthetic oep RNA (Zhang et al., 1998) and raised to adulthood, then intercrossed to generate maternal-zygotic oep–/–embryos. Fish were chosen from their home tank to be crossed at random, and the resulting embryos were also chosen from the dish at random for injection and inclusion in experiments.
 
-## Microinjection of synthetic RNA and morpholino oligonucleotides
+### Microinjection of synthetic RNA and morpholino oligonucleotides
 
 Single-celled embryos were aligned within agarose troughs made from custom plastic molds and injected with 1–3 nL volumes using pulled glass needles. Synthetic mRNAs for injection were made by in vitro transcription from linearized plasmid DNA templates using Invitrogen mMessage mMachine kits. Doses of RNA per embryo were as follows: 100 pg membrane Cherry (a kind gift from Dr Fang Lin), 50 pg membrane eGFP (Wallingford and Harland, 2002), 25 pg H2B-RFP (a kind gift from Dr. John Wallingford), 50 pg Drosophila pk-gfp (Jenny et al., 2003), and 2.5–100 pg ndr2 (Sampath et al., 1998). Injection of 2 ng MO4-tri/vangl2 (Williams et al., 2012) was carried out as for synthetic RNA.
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 50 μM SB-505124 (Sigma #S4696) was added to the media of embryos and explants in agarose-coated 6-well plates at the times specified. For wash-out experiments, SB-containing medium was removed and explants were washed twice with 0.3x Danieau solution, before fresh explant medium was introduced.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Embryos and explants were stained for phosphorylated Smad2 as described in van Boxtel et al., 2015. Briefly, samples were fixed overnight in 4% paraformaldehyde (PFA), rinsed in phosphate-buffered saline (PBS) + 0.1% Tween-20 (PBT), and dehydrated to 100% methanol. Prior to staining, samples were rehydrated into PBS, rinsed in PBS + 1% Triton X-100, and incubated in ice-cold acetone at −20°C for 20 min. Samples were then blocked in PBS+ 10% FBS and 1% Triton X-100, and then incubated overnight at 4°C with an anti-pSmad2/3 antibody (Cell Signaling #8828) at 1:1000 in block. Samples were rinsed in PBT/1% Triton X-100 and incubated with Alexa Fluor 488 anti-Rabbit IgG (Invitrogen) at 1:1000. Embryos were co-stained with 4′,6-diamidino-2-phenylindole, dihydrochloride (DAPI) and rinsed in PBS + 1% Triton X-100 prior to mounting in 2% methylcellulose for confocal imaging.
 
-## Whole mount in situ hybridization
+### Whole mount in situ hybridization
 
 Antisense riboprobes were transcribed using NEB T7 or T3 RNA polymerase and labeled with digoxygenin (DIG) (Roche). Whole-mount in situ hybridization (WISH) was performed according to Thisse and Thisse, 2008. Briefly, embryos and explants were fixed overnight in 4% PFA in PBS, rinsed in PBT, and dehydrated into methanol. Samples were then rehydrated into PBT, incubated for at least two hours in hybridization solution with 50% formamide (in 0.75 M sodium chloride, 75 mM sodium citrate, 0.1% tween 20, 50 μg/mL heparin (Sigma), and 200 μg/mL tRNA) at 70°C, then hybridized overnight at 70°C with antisense probes diluted approximately 1 ng/μL in hybridization solution. Samples were washed gradually into 2X SSC buffer (0.3 M sodium chloride, 30 mM sodium citrate), and then gradually from SSC to PBT. Samples were blocked at room temperature for several hours in PBT with 2% goat serum and 2 mg/mL bovine serum albumin (BSA), then incubated overnight at 4°C with anti-DIG antibody (Roche #11093274910) at 1:5000 in block. Samples were rinsed extensively in PBT, and then in staining buffer (PBT +100 mM Tris [pH 9.5], 50 mM MgCl2, and 100 mM NaCl) prior to staining with BM Purple AP staining solution (Roche).
 
-## RNA-sequencing
+### RNA-sequencing
 
 RNA for sequencing was isolated from 50 pooled WT or MZoep–/– embryos at the 90% epiboly stage from three independent clutches per genotype (three biological replicates). Embryos were lysed and total RNA was isolated using Trizol reagent (Ambion), then cleaned up using a Qiagen RNeasy kit. Samples were submitted to the Washington University Genome Technology Access Center for library preparation, including depletion of ribosomal RNA. Libraries were sequenced using an Illumina HiSeq3000 to obtain single-ended 50-bp reads. Raw reads were trimmed with cutadapt to remove low-quality bases and aligned to Danio rerio genome GRCz10 using STAR_2.5.4b (Dobin et al., 2013) with Ensembl v83 annotation. Aligned reads were quantified using featureCounts 1.6.3 from the subreads package (Liao et al., 2013).
 
-## Blastoderm explants
+### Blastoderm explants
 
 Embryos were injected with ndr2, H2B-RFP, and/or membrane GFP RNA (and MOs) at the one-cell stage as described above, or left uninjected, then dechorionated using Pronase (Roche). At the 256–512 cell stage, watchmaker’s forceps were used to excise the animal portion of each embryo in an agarose-coated dish filled with 3X Danieau solution, cutting the blastoderm at approximately 50% of its height and collecting the animal-most ~1/3 of cells from each embryo, as described in Xu et al., 2014. Explants were allowed to heal briefly, then transferred into agarose-coated 6-well plates containing explant medium — comprised of Dulbecco’s modified eagle medium with nutrient mixture F-12 (Gibco 11330032) containing 2.5 mM L-glutamine, 15 mM HEPES, 3% newborn calf serum (Invitrogen 26010–066), 50 units/mL penicillin, and 50 μg/mL streptomycin (10,000 U/mL pen-strep at 1:200, Gibco 15140163) — and incubated at 28.5°C until the desired stage.
 
-## Transplantation
+### Transplantation
 
 For cell autonomy and Pk-GFP transplants, host and donor embryos were injected with RNA encoding fluorescent nuclear and membrane markers, MOs, and/or Pk-GFP as described above. For cell autonomy, donor embryos were injected with membrane Cherry or membrane GFP and cells were transplanted into unlabeled hosts. For Pk-GFP localization, donor embryos were co-injected with mCherry, prickle-GFP, and H2B-RFP RNA and cells were transplanted into mCherry-injected hosts. Hosts and donors were dechorionated using Pronase, then arranged within the wells of a custom-molded agarose plate at approximately sphere stage. Approximately 20–40 cells were transferred from donors to hosts using a fine-pulled glass capillary.
 
-## Microscopy
+### Microscopy
 
 Live embryos/explants expressing fluorescent proteins were mounted in 0.75% low-melt agarose, and fixed embryos/explants subjected to immunofluorescent staining were mounted in 2% methylcellulose in glass- bottomed 35 mm Petri dishes for imaging using a modified Olympus IX81 inverted spinning disc confocal microscope equipped with Voltran and Cobolt steady-state lasers and a Hamamatsu ImagEM EM CCD digital camera. For live time-lapse series, 60–100 μm z-stacks with a 1–2 μm step were collected every 3–5 minutes (depending on the experiment) for 3 hours using a 20x or 40x dry objective lens for intact embryos and a 20x objective for explants. Temperature was maintained at 28.5°C during imaging using a Live Cell Instrument stage heater. For immuno-stained embryos and explants, 100 μm z-stacks with a 1 or 2 μm step were collected using a 10x or 20x dry objective lens, depending on the experiment. Bright-field and transmitted light images of live embryos and in situ hybridizations were collected using a Nikon AZ100 macroscope.
 
-## Image analysis
+### Image analysis
 
 ImageJ was used to visualize and manipulate all microscopy data sets.
 
-## Individual cell measurements
+#### Individual cell measurements
 
 Within live embryos and explants expressing either membrane eGFP or membrane Cherry, a single z-plane (in ubiquitously labeled embryos) or a projection of several z-planes (when measuring transplanted cells) through the neuroectoderm was chosen for each time point. To measure cell orientation and elongation, the AP axis in all embryo images was aligned prior to manual outlining of cells. A fit ellipse was used to measure the orientation of each cell’s major axis and its aspect ratio. To assess Pk-GFP localization, isolated donor cells co-expressing Pk-GFP and H2B-RFP were scored according to the subcellular localization of GFP signal. Cell protrusions were manually detected within time-lapse stacks of transplanted neuroectoderm cells and their orientation measured in ImageJ. These orientations were binned into one of 12 sectors (30° each), which were categorized as mediolateral (within 60° of horizontal), anteroposterior (within 60° of vertical), or neither (the remaining 120°). The distribution of protrusions within each of these categories was then compared between experimental conditions using Chi-square tests.
 
-## Automated nuclear tracking
+#### Automated nuclear tracking
 
 Imaris software and the ImageJ TrackMate plugin were used to detect and track labeled nuclei automatically in the dorsal hemisphere of WT and MZoep mutant gastrulae and in embryonic explants injected with RNA encoding H2B-RFP, and to produce color-coded depictions of their trajectories and measurements of speed and displacement. Track displacement in the X (mediolateral) and Y (anteroposterior) dimensions were calculated independently, and plotted against their starting positions within the embryo/explant using Graphpad Prism 8 software. Cell divisions were manually detected within time-lapse stacks of explants from WT embryos co-injected with H2B-RFP and ndr2 RNA, and their locations with respect to the center of each explant were measured using ImageJ.
 
-## Morphometric measurements
+#### Morphometric measurements
 
 To measure the length/width ratios of explants, we divided the length of a segmented line drawn along the midline of each explant (accounting for curvature) by the length of a perpendicular line spanning the width of the explant near its midpoint. To measure width of the neural plate in whole-mount embryos, dorsal-view images were collected of each embryo, and a line was drawn from one side of the dlx3b expression domain to the other side at the level of the future mid-hindbrain boundary marked by egr2b expression. Length measurements were made similarly by measuring from the anterior to posterior aspects of the dlx3b expression domain in lateral-view images. Images were coded and analyses were performed blinded to ensure unbiased measurements.
 
-## pSmad2 immunostaining in explants
+#### pSmad2 immunostaining in explants
 
 DAPI z-stacks were converted into 3D masks, which were used to create z-stacks of nuclear pSmad2 labeling. All stacks were oriented such that the highest apparent pSmad2 signal (if any) was to the left, and the ImageJ ‘3D Objects counter’ plugin was used to detect the location and pSmad2 fluorescence intensity of all nuclei in a given explant. All nuclei with fluorescence intensities above a threshold background level were categorized as pSmad2-positive.
 
-## Statistical analysis
+### Statistical analysis
 
 Graphpad Prism 8 software was used to perform statistical analyses and to generate graphs of data collected from embryo and explant images. The statistical tests used varied as was appropriate for each experiment and are described in the text and figure legends. Data were tested for normal distribution, and non-parametric tests (Mann-Whitney and Kolmogorov-Smirnov) were used for all non-normally distributed data. Normally distributed data with similar variance between groups were analyzed using parametric tests (T-tests). All tests used were two-tailed. Circular histograms were created using PAST software.

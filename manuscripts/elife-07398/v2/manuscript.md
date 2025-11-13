@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.07398.001 The evolutionarily conserved Crumbs protein is required for epithelial polarity and morphogenesis. Here we identify a novel role of Crumbs as a negative regulator of actomyosin dynamics during dorsal closure in the Drosophila embryo. Embryos carrying a mutation in the FERM (protein 4.1/ezrin/radixin/moesin) domain-binding motif of Crumbs die due to an overactive actomyosin network associated with disrupted adherens junctions. This phenotype is restricted to the amnioserosa and does not affect other embryonic epithelia. This function of Crumbs requires D Moesin, the Rho1-GTPase, class-I p21-activated kinases and the Arp2/3 complex. Data presented here point to a critical role of Crumbs in regulating actomyosin dynamics, cell junctions and morphogenesis. DOI: http://dx.doi.org/10.7554/eLife.07398.001
+The evolutionarily conserved Crumbs protein is required for epithelial polarity and morphogenesis. Here we identify a novel role of Crumbs as a negative regulator of actomyosin dynamics during dorsal closure in the Drosophila embryo. Embryos carrying a mutation in the FERM (protein 4.1/ezrin/radixin/moesin) domain-binding motif of Crumbs die due to an overactive actomyosin network associated with disrupted adherens junctions. This phenotype is restricted to the amnioserosa and does not affect other embryonic epithelia. This function of Crumbs requires DMoesin, the Rho1-GTPase, class-I p21-activated kinases and the Arp2/3 complex. Data presented here point to a critical role of Crumbs in regulating actomyosin dynamics, cell junctions and morphogenesis.
 
 ## Introduction
 
@@ -27,49 +27,61 @@ Crb contains in its extracellular domain an array of epidermal growth factor-lik
 
 ## Results
 
-## The FBM of Crb is essential for dorsal closure
+### The FBM of Crb is essential for dorsal closure
 
 We previously showed (Klose et al., 2013) that a fosmid covering the entire crb locus, named foscrb, completely rescues the lethality caused by the lack of endogenous crb. We also showed that a variant, in which the conserved tyrosine10 in the FERM-domain binding motif (FBM) is replaced by an alanine (foscrbY10A variant) does not rescue embryonic lethality. Interestingly, the fosCrbY10A variant properly localises at the apical domain in most embryonic epithelia, which undergo normal morphogenesis (i.e. germ band elongation, salivary gland invagination). But later in development, germ band (GB) retraction, dorsal closure (DC) and head involution fail to occur properly (Klose et al., 2013). This indicated that the FBM of Crb fulfils a tissue- and stage-specific morphogenetic function in the embryo. Moreover, these defects appear to be independent of a putative Tyr phosphorylation, because another variant, in which the Y10 is replaced by a phenylalanine (foscrbY10F), completely rescues the embryonic lethality of crb mutants (Klose et al., 2013). To get a better understanding of the mechanisms by which Crb regulates these morphogenetic processes, we performed detailed in vivo analyses of embryos expressing the different fosmid variants together with a DE-cad::GFP or a DE-cad::mTomato knock-in allele (Huang et al., 2009) in a crb null background (crbGX24 or crb11A22) (for simplicity, these are called foscrb, foscrbY10A and foscrbY10F from now on).
 
-Because staging of embryos depends on morphological criteria, and
+Because staging of embryos depends on morphological criteria, and foscrbY10A mutant embryos show morphological defects, we imaged control and mutant embryos always in parallel, and stages were classified according to elapsed time after egg collection, i.e., after equal developmental times (see Materials and methods for details about staging and imaging). By the time foscrb embryos finish GB retraction (Figure 1A, Video 1), foscrbY10A embryos (Figure 1B, Video 2) exhibit major defects in GB retraction, as revealed by a highly disorganised amnioserosa (AS) in which individual AS cells could hardly be followed. While foscrb embryos proceed through DC (Figure 1C,E, Video 1), those expressing the foscrbY10A variant progressively lose the AS (Figure 1D,F) and ultimately fail to complete DC (Video 2). Embryos expressing the foscrbY10F variant complete DC similar as foscrb embryos (Figure 1—figure supplement 1), indicating that the Y10A mutation specifically affects the progress of DC.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig1-v2.jpg)
 
-**Figure 1.:** (A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP. In all images the anterior part is towards the left. A, C and E, w;foscrb,DE-cad::GFP;crb (GX24Video 1). B, D and F, w;foscrb (Y10A,DE-cad::GFP;crbGX24Video 2). All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. Numbers in (B,D and F) indicate the time in minutes for the corresponding row. While DC is completed in foscrb embryos (E), in foscrb embryos, the amnioserosa (AS) is disorganised and progressively lost (Y10AF). Scale bar: 100 μm. (G-J’) Localisation of phosphotyrosine (PY), Crb and DPatj in the dorsal epidermis at the beginning of DC. In all images the AS is at the top (see reference axis in G and in the scheme K). (G, I,I’) w;foscrb;crb. (GX24H, J,J’) w;foscrb. (Y10A;crbGX24K) Schematic representation of the dorsal epidermis at the beginning of DC indicating that the leading edge (LE) of the dorsal most epidermal (DME) cells is in contact with the AS. Arrows in (G,H) indicate LE of the DME (row of cells marked by brackets). The arrowheads indicate where the corresponding protein is absent from the LE (I-J’). The asterisks mark LE membranes positive for Crb (J) and DPatj (J’) in foscrb mutant. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.Y10ADOI: http://dx.doi.org/10.7554/eLife.07398.003
+**Figure 1.:** (A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP. In all images the anterior part is towards the left. A, C and E, w;foscrb,DE-cad::GFP;crbGX24 (Video 1). B, D and F, w;foscrbY10A,DE-cad::GFP;crbGX24 (Video 2). All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. Numbers in (B,D and F) indicate the time in minutes for the corresponding row. While DC is completed in foscrb embryos (E), in foscrbY10A embryos, the amnioserosa (AS) is disorganised and progressively lost (F). Scale bar: 100 μm. (G-J’) Localisation of phosphotyrosine (PY), Crb and DPatj in the dorsal epidermis at the beginning of DC. In all images the AS is at the top (see reference axis in G and in the scheme K). (G, I,I’) w;foscrb;crbGX24. (H, J,J’) w;foscrbY10A;crbGX24. (K) Schematic representation of the dorsal epidermis at the beginning of DC indicating that the leading edge (LE) of the dorsal most epidermal (DME) cells is in contact with the AS. Arrows in (G,H) indicate LE of the DME (row of cells marked by brackets). The arrowheads indicate where the corresponding protein is absent from the LE (I-J’). The asterisks mark LE membranes positive for Crb (J) and DPatj (J’) in foscrbY10A mutant. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** foscrb embryos.Y10F(A-C) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP in w;foscrb. Embryos collected and imaged as described in Y10F,DE-cad::GFP;crbGX24Figure 1. Numbers indicate the time in minutes for the corresponding row. DC proceeds as in foscrb embryos. Scale bar: 100 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.004
+**Figure 1—figure supplement 1.:** (A-C) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP in w;foscrbY10F,DE-cad::GFP;crbGX24. Embryos collected and imaged as described in Figure 1. Numbers indicate the time in minutes for the corresponding row. DC proceeds as in foscrb embryos. Scale bar: 100 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-media1.mp4.jpg)
+
+**Video 1.:** Note that the granules from the yolk are visible because of their strong auto-fluorescence in the green part of the spectrum. Time-lapse: 3.5 min; 12 fps.
+
+![Video 2.](https://cdn.elifesciences.org/articles/07398/elife-07398-media2.mp4.jpg)
+
+**Video 2.:** Time-lapse: 3.5 min; 12 fps.
 
 Various mechanisms have been documented to contribute to DC, including elongation of the dorsal most epidermal (DME) cells (Riesgo-Escovar et al., 1996). This elongation occurs normally in foscrb embryos, as revealed by phosphotyrosine (PY) staining associated with the ZA (Figure 1G). In contrast the DME cells of foscrbY10A embryos do not elongate co-ordinately (Figure 1H). We analysed the localisation of Crb and DPatj at this stage. Both proteins are expressed at higher levels in the epidermis compared to the AS (Figure 1I–J'). In foscrb embryos, Crb (Figure 1I) and DPatj (Figure 1I') are mostly absent from the leading edge (LE –Figure 1I–I' arrowheads) of the DME cells. In contrast, in foscrbY10A embryos both CrbY10A (Figure 1J, asterisks) and DPatj (Figure 1J', asterisks) are detected at the LE, particularly in those cells that remain short, while both are removed in cells that elongate properly (Figure 1J,J', arrowheads). Thus proper elongation of the DME cells fails in foscrbY10A embryos.
 
-## The FBM of Crb regulates filopodia formation and organisation of the supracellular actomyosin cable in the DME cells
+### The FBM of Crb regulates filopodia formation and organisation of the supracellular actomyosin cable in the DME cells
 
-Besides elongation of the DME cells, a complex actomyosin machinery is established at their LE. The DME cells extend filopodia and lamellipodia that are essential for correct ‘zippering’ (
+Besides elongation of the DME cells, a complex actomyosin machinery is established at their LE. The DME cells extend filopodia and lamellipodia that are essential for correct ‘zippering’ (Young et al., 1993; Edwards et al., 1997; Jacinto et al., 2000; Eltsov et al., 2015). These filopodia, revealed by staining with an antibody against Stranded at Second [Sas (Denholm et al., 2005)], extend dorsally in foscrb embryos (Figure 2A arrow). In contrast, filopodia in foscrbY10A embryos are disorganised and often absent (Figure 2B, empty arrowhead and arrowhead, respectively). This is confirmed by live imaging of embryos expressing a Venus-tagged Sas protein (Video 3). Filopodia of foscrbY10A embryos are erratic, and some even appear to move out of the plane (Video 3, arrow in foscrbY10A embryo), probably because of the loss of contact with the AS.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-v2.jpg)
 
-**Figure 2.:** (A-L) Localisation of Stranded at second (Sas, A,B), Enabled (Ena, C,D), Actin (E,F), Zipper (Zip, E’,F’), Echinoid (Ed, G,H), phosphotyrosine (PY, G’,H’), Bazooka (Baz, I,J), and DE-cadherin (DE-cad, K,L) at the beginning of stage 14. In all images the AS is at the top half, for the genotypes w;foscrb;crb and GX24w;foscrb. Filopodia extend dorsally in Y10A;crbGX24foscrb embryos (A, arrow), but in foscrb embryos filopodia are absent (Y10AB, arrowhead) or disorganised (B, empty arrowhead). Ena, Actin and Zip concentrate at the LE in foscrb embryos (C,E and E’, arrows), but these proteins are almost absent from the LE in foscrb embryos (Y10AD,F and F’, arrowheads). Ed is absent from the LE of foscrb embryos (G, arrowhead), but the DME cells of foscrb embryos show an important decrease of the protein (Y10AH, magenta overlay) though the PY staining is still clearly associated with the ZA in the same cells (H’, magenta overlay). Similarly, Baz decreases at the LE of foscrb embryos (I, arrowhead), but in foscrb embryos, the cells that do not elongate keep Baz at the LE (Y10AJ, arrow), while other DME cells show a reduction of Baz (J, and Figure 2—figure supplement 3). DE-cad (mTomato signal) localises at all cell-cell contacts in foscrb embryos (K). However, in foscrb, the Y10ADE-cad localisation is affected in both the dorsal epidermis (L, solid arrowhead) and the AS (L, empty arrowheads). Scale bar: 10 μm. (M) Schematic representation of the changes in DME cells at the beginning of DC in embryos expressing either fosCrb or fosCrbY10F. The elongation of the DME cells is accompanied by the removal of the Crb protein complex, Ed, Baz and the septate junction components from the LE. At the LE a supracellular actomyosin cable is established and filopodia extend dorsally and attach to the AS cells. Representative images from 8–12 different embryos for each genotype. (N) Schematic representation of the defects in the DME cells of embryos expressing the fosCrbY10A variant. At the beginning of DC, the DME cells do not elongate uniformly. In the cells that do not elongate, the Crb protein complex and Baz remain at the LE. Reduced DE-cad suggest defects in the ZA function. Ed is dramatically reduced in DME cells, probably contributing to the absence of the supracellular actomyosin cable. Also, the DME cells exhibit disorganised filopodia. Nevertheless, the septate junction components are properly removed from the LE. The Crb protein complex is apical to the ZA, but Ed and the actomyosin cable are associated with the ZA.DOI: http://dx.doi.org/10.7554/eLife.07398.007
+**Figure 2.:** (A-L) Localisation of Stranded at second (Sas, A,B), Enabled (Ena, C,D), Actin (E,F), Zipper (Zip, E’,F’), Echinoid (Ed, G,H), phosphotyrosine (PY, G’,H’), Bazooka (Baz, I,J), and DE-cadherin (DE-cad, K,L) at the beginning of stage 14. In all images the AS is at the top half, for the genotypes w;foscrb;crbGX24 and w;foscrbY10A;crbGX24. Filopodia extend dorsally in foscrb embryos (A, arrow), but in foscrbY10A embryos filopodia are absent (B, arrowhead) or disorganised (B, empty arrowhead). Ena, Actin and Zip concentrate at the LE in foscrb embryos (C,E and E’, arrows), but these proteins are almost absent from the LE in foscrbY10A embryos (D,F and F’, arrowheads). Ed is absent from the LE of foscrb embryos (G, arrowhead), but the DME cells of foscrbY10A embryos show an important decrease of the protein (H, magenta overlay) though the PY staining is still clearly associated with the ZA in the same cells (H’, magenta overlay). Similarly, Baz decreases at the LE of foscrb embryos (I, arrowhead), but in foscrbY10A embryos, the cells that do not elongate keep Baz at the LE (J, arrow), while other DME cells show a reduction of Baz (J, and Figure 2—figure supplement 3). DE-cad (mTomato signal) localises at all cell-cell contacts in foscrb embryos (K). However, in foscrbY10A, the DE-cad localisation is affected in both the dorsal epidermis (L, solid arrowhead) and the AS (L, empty arrowheads). Scale bar: 10 μm. (M) Schematic representation of the changes in DME cells at the beginning of DC in embryos expressing either fosCrb or fosCrbY10F. The elongation of the DME cells is accompanied by the removal of the Crb protein complex, Ed, Baz and the septate junction components from the LE. At the LE a supracellular actomyosin cable is established and filopodia extend dorsally and attach to the AS cells. Representative images from 8–12 different embryos for each genotype. (N) Schematic representation of the defects in the DME cells of embryos expressing the fosCrbY10A variant. At the beginning of DC, the DME cells do not elongate uniformly. In the cells that do not elongate, the Crb protein complex and Baz remain at the LE. Reduced DE-cad suggest defects in the ZA function. Ed is dramatically reduced in DME cells, probably contributing to the absence of the supracellular actomyosin cable. Also, the DME cells exhibit disorganised filopodia. Nevertheless, the septate junction components are properly removed from the LE. The Crb protein complex is apical to the ZA, but Ed and the actomyosin cable are associated with the ZA.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** foscrb and foscrb embryos.Y10FLocalisation of Polychaetoid (Pyd, A,B), Phosphotyrosine (PY, A’,B’), Diaphanous (Dia, C,D), and Dishevelled Associated Activator of Morphogenesis (DAAM, E,F) in embryos at the beginning of stage 14. In all images the AS is at the top, for the genotypes w;foscrb;crb, and GX24w;foscrb. The localisation of Pyd (Y10A;crbGX24A,B’’) is comparable between the different genotypes, despite the irregularly extended DME cells in w;foscrb embryos (Y10A;crbGX24B,B’,B’’). The PY staining (A’,B’) marks the ZA. The localisation of Dia (C,D) and DAAM (E,F) is similar in the different genotypes. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.008
+**Figure 2—figure supplement 1.:** Localisation of Polychaetoid (Pyd, A,B), Phosphotyrosine (PY, A’,B’), Diaphanous (Dia, C,D), and Dishevelled Associated Activator of Morphogenesis (DAAM, E,F) in embryos at the beginning of stage 14. In all images the AS is at the top, for the genotypes w;foscrb;crbGX24, and w;foscrbY10A;crbGX24. The localisation of Pyd (A,B’’) is comparable between the different genotypes, despite the irregularly extended DME cells in w;foscrbY10A;crbGX24 embryos (B,B’,B’’). The PY staining (A’,B’) marks the ZA. The localisation of Dia (C,D) and DAAM (E,F) is similar in the different genotypes. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Stills from live imaging of embryos expressing Zip::GFP. In all images the anterior part is to the left. (A-C) w;foscrb/Zip::GFP;crb and (GX24D-F) w;foscrb embryos were followed during GB retraction. Numbers in (Y10A/Zip::GFP;crbGX24D-F) indicate the time in minutes for the corresponding row. Arrow in (B) marks the incipient formation of the supracellular actomyosin cable in a foscrb embryo. The supracellular actomyosin cable is continuous at later time points (C, arrow). In foscrbembryos, some segments of the DME cells concentrate Zip::GFP at the LE (Y10AE, arrow). At the time when GB retraction should be completed and thereafter, the actomyosin cable forms randomly at the LE (F, arrows), and several discontinuities are present (F, arrowheads). Scale bar: 100 μm. Representative images from 6–8 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.009
+**Figure 2—figure supplement 2.:** Stills from live imaging of embryos expressing Zip::GFP. In all images the anterior part is to the left. (A-C) w;foscrb/Zip::GFP;crbGX24 and (D-F) w;foscrbY10A/Zip::GFP;crbGX24 embryos were followed during GB retraction. Numbers in (D-F) indicate the time in minutes for the corresponding row. Arrow in (B) marks the incipient formation of the supracellular actomyosin cable in a foscrb embryo. The supracellular actomyosin cable is continuous at later time points (C, arrow). In foscrbY10Aembryos, some segments of the DME cells concentrate Zip::GFP at the LE (E, arrow). At the time when GB retraction should be completed and thereafter, the actomyosin cable forms randomly at the LE (F, arrows), and several discontinuities are present (F, arrowheads). Scale bar: 100 μm. Representative images from 6–8 different embryos for each genotype.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** foscrb embryos.Y10ALocalisation of Bazooka (Baz, A,B), and phosphotyrosine (PY, A’,B’) at the beginning of stage 14 in w;foscrb;crb and GX24w;foscrb embryos. The black lines in Y10A;crbGX24A-B’ mark the position for the plot profile (C,D) of the Baz signal (C,D, black line) and the PY signal (C,D, magenta line) in the DME cells. Maxima intensities overlap for both markers, but note that the intensity of Baz in foscrb embryos is lower than in Y10Afoscrb embryos. The arrows indicate where Baz is preserved at the LE of those cells that do not elongate properly, while the asterisks mark the DME cells that extend normally, and have a reduction of Baz signal in the junctions. Scale bar: 10 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.010
+**Figure 2—figure supplement 3.:** Localisation of Bazooka (Baz, A,B), and phosphotyrosine (PY, A’,B’) at the beginning of stage 14 in w;foscrb;crbGX24 and w;foscrbY10A;crbGX24 embryos. The black lines in A-B’ mark the position for the plot profile (C,D) of the Baz signal (C,D, black line) and the PY signal (C,D, magenta line) in the DME cells. Maxima intensities overlap for both markers, but note that the intensity of Baz in foscrbY10A embryos is lower than in foscrb embryos. The arrows indicate where Baz is preserved at the LE of those cells that do not elongate properly, while the asterisks mark the DME cells that extend normally, and have a reduction of Baz signal in the junctions. Scale bar: 10 μm.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** Localisation of Coracle (Cora, A,B), DE-cad (A’,B’), Disc large (Dlg, C,D) and Yurt (Yrt, E,F) in embryos at the beginning of stage 14. In all images the AS is at the top, for w;foscrb;crb and GX24w;foscrb embryos. The septate junction proteins Cora (Y10A;crbGX24A,B), Dlg (C,D) and Yrt (E,F) are absent from the LE in all genotypes (arrowheads). Bracket in (B) marks bunching of dorsal epidermis observed in foscrbembryos. The Y10ADE-cad staining (A’,B’), is a maximal projection of the first ∼1.5 μm from the surface of the embryo, while the Cora staining is a maximal projection of the whole Z-stack. The merge of these projections (A’’,B’’) shows that Cora is mainly present in the epidermis. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.011
+**Figure 2—figure supplement 4.:** Localisation of Coracle (Cora, A,B), DE-cad (A’,B’), Disc large (Dlg, C,D) and Yurt (Yrt, E,F) in embryos at the beginning of stage 14. In all images the AS is at the top, for w;foscrb;crbGX24 and w;foscrbY10A;crbGX24 embryos. The septate junction proteins Cora (A,B), Dlg (C,D) and Yrt (E,F) are absent from the LE in all genotypes (arrowheads). Bracket in (B) marks bunching of dorsal epidermis observed in foscrbY10Aembryos. The DE-cad staining (A’,B’), is a maximal projection of the first ∼1.5 μm from the surface of the embryo, while the Cora staining is a maximal projection of the whole Z-stack. The merge of these projections (A’’,B’’) shows that Cora is mainly present in the epidermis. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** foscrb embryos.Y10F(A-K) Localisation of Sas at the filopodia (A, arrow). Ena (B), Actin (C), and Zip (C’) concentrate at the LE (arrows). Ed (D, and PY, D’), and Baz (E) are absent from the LE (arrowheads). DE-cad::mTomato (F) and Pyd (G, and PY, G’) localise at all cell-cell contacts. Localisation of Dia (H) and DAAM (I). The septate junction components Cora (J, the corresponding DE-cad, J’ and the merge, J’’), and Dlg (K) are absent from the LE (J,K, arrowheads). The localisation of all these proteins is similar to the one observed in foscrb embryos. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.012
+**Figure 2—figure supplement 5.:** (A-K) Localisation of Sas at the filopodia (A, arrow). Ena (B), Actin (C), and Zip (C’) concentrate at the LE (arrows). Ed (D, and PY, D’), and Baz (E) are absent from the LE (arrowheads). DE-cad::mTomato (F) and Pyd (G, and PY, G’) localise at all cell-cell contacts. Localisation of Dia (H) and DAAM (I). The septate junction components Cora (J, the corresponding DE-cad, J’ and the merge, J’’), and Dlg (K) are absent from the LE (J,K, arrowheads). The localisation of all these proteins is similar to the one observed in foscrb embryos. Scale bar: 10 μm. Representative images from 8–12 different embryos for each genotype.
+
+![Video 3.](https://cdn.elifesciences.org/articles/07398/elife-07398-media3.mp4.jpg)
+
+**Video 3.:** The filopodia at the DME cells were followed for 5 min and the movie loops 6 times. Note that the filopodia in the foscrbY10A embryo move randomly and some filopodia, like the one label with the arrow (bottom embryo), appear to detach and move out of the plane. Time-lapse: 10 sec; 8 fps.
 
 A key regulator of the number and length of filopodia during DC is the actin-elongation promoting protein Enabled (Ena) (Gates et al., 2007; Nowotarski et al., 2014; Bilancia et al., 2014; Homem and Peifer, 2009). Ena concentrates at the LE of DME cells in foscrb embryos (Figure 2C, arrows). In contrast, Ena is strongly reduced at the LE of foscrbY10A embryos (Figure 2D, arrowhead). Localisation of Ena at the LE depends on the ZA–associated protein Polychaetoid (Pyd) (Choi et al., 2011). However, Pyd localisation at the ZA shows no major difference in foscrb and foscrbY10A embryos (Figure 2—figure supplement 1A–B'''). The localisation of the formins Dia and DAAM, both involved in the growth of actin-based protrusions (Matusek et al., 2006; Homem and Peifer, 2008; Liu et al., 2010), is also similar in foscrb and foscrbY10A embryos (Figure 2—figure supplement 1C–F). This suggests that different regulators of Ena are affected in foscrbY10A mutant embryos.
 
@@ -83,97 +95,446 @@ Ed, Baz and DE-cadherin (DE-cad) are all proteins associated with the ZA, which 
 
 Taken together, these results show that the DC phenotype in foscrbY10A embryos is accompanied by defects in the establishment of the complex actomyosin apparatus at the LE of the DME cells and by the disturbance or even loss of different components of the ZA (schematised in Figure 2M,N).
 
-## The FBM of Crb is essential for adhesion of the AS
+### The FBM of Crb is essential for adhesion of the AS
 
 As described above, GB retraction is defective and the AS is strongly disorganised in foscrbY10A embryos (Figure 1F). Because the AS is required during GB retraction (Lamka and Lipshitz, 1999; Lynch et al., 2013; Scuderi and Letsou, 2005), we analysed by live imaging whether the AS is affected before GB retraction.
 
-In
+In foscrb and foscrbY10A embryos, at the beginning of stage 11, AS cells are elongated along the antero-posterior axis (Figure 3A,D), highlighted by DE-cad::mTomato along the ZA (Figure 3B,E, arrows). In foscrbY10A embryos, however, the continuity of DE-cad::mTomato is frequently disrupted (Figure 3E, arrowhead) and DE-cad::mTomato additionally appears in large intracellular clusters of unknown identity (Figure 3E, concave arrowheads), which are never observed in foscrb embryos. As GB retraction proceeds, fragmentation of the ZA continues in the AS of foscrbY10A embryos and the tissue disintegrates (Figure 3F arrowheads and Video 4; and for a dorsal view of a different set of embryos see Video 5), while the dorsal aspect of foscrb embryos is covered by a continuous epithelial sheet (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig3-v2.jpg)
 
-**Figure 3.:** (A-F) Stills from lateral views of live imaging of DE-cad::mTomato knock-in at the beginning of germ band (GB) retraction (Video 4). In all images the anterior part is towards the left, for the genotypes w;foscrb,DE-cad::mTomato;crb and GX24w;foscrb. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 5 hr and imaged together. The numbers in (Y10A,DE-cad::mTomato;crbGX24D,F) indicate the time in min. for the corresponding row. At stage 11 (A,B,D,E), the AS cells are elongated along the AP-axis, and DE-cad::mTomato localises along the ZA (B,E, arrows); in foscrb mutant, the continuity of Y10ADE-cad::mTomato along the ZA is lost (E, arrowhead) and DE-cad::mTomato is also found in large clusters (E, white concave arrowhead). At the end of GB retraction the AS covers the dorsal aspect of foscrb embryos (E), but in foscrb (Y10AF), GB retraction is impaired and DE-cad::mTomato signal is fragmented in the AS (F, arrowheads). Scale bar: 100 μm, except for (B,E) 10 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.014
+**Figure 3.:** (A-F) Stills from lateral views of live imaging of DE-cad::mTomato knock-in at the beginning of germ band (GB) retraction (Video 4). In all images the anterior part is towards the left, for the genotypes w;foscrb,DE-cad::mTomato;crbGX24 and w;foscrbY10A,DE-cad::mTomato;crbGX24. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 5 hr and imaged together. The numbers in (D,F) indicate the time in min. for the corresponding row. At stage 11 (A,B,D,E), the AS cells are elongated along the AP-axis, and DE-cad::mTomato localises along the ZA (B,E, arrows); in foscrbY10A mutant, the continuity of DE-cad::mTomato along the ZA is lost (E, arrowhead) and DE-cad::mTomato is also found in large clusters (E, white concave arrowhead). At the end of GB retraction the AS covers the dorsal aspect of foscrb embryos (E), but in foscrbY10A (F), GB retraction is impaired and DE-cad::mTomato signal is fragmented in the AS (F, arrowheads). Scale bar: 100 μm, except for (B,E) 10 μm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A-B’) Scanning electron micrographs of dorsal views of embryos incubated for 8 hr at 28ºC after egg collection (1 hr collection) for the genotypes w;foscrb;crb and GX24w;foscrb. The boxed area in (Y10A;crbGX24A,B) is shown in (A’,B’) respectively. In foscrb embryos (A’) the AS appears as a flat continuous monolayer, while in foscrbembryos (Y10AB’), the AS is disorganised and some cells exhibit large filopodia (B,B’, arrow). Other cells are completely detached and may be AS cells or haemocytes (B,B’, arrowheads), and some cells have the appearance of apoptotic cells (B’, concave arrowhead). Scale bars: 100 μm (A,B) and 10 μm (A’,B’). Representative images from 17–37 embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.015
+**Figure 3—figure supplement 1.:** (A-B’) Scanning electron micrographs of dorsal views of embryos incubated for 8 hr at 28ºC after egg collection (1 hr collection) for the genotypes w;foscrb;crbGX24 and w;foscrbY10A;crbGX24. The boxed area in (A,B) is shown in (A’,B’) respectively. In foscrb embryos (A’) the AS appears as a flat continuous monolayer, while in foscrbY10Aembryos (B’), the AS is disorganised and some cells exhibit large filopodia (B,B’, arrow). Other cells are completely detached and may be AS cells or haemocytes (B,B’, arrowheads), and some cells have the appearance of apoptotic cells (B’, concave arrowhead). Scale bars: 100 μm (A,B) and 10 μm (A’,B’). Representative images from 17–37 embryos for each genotype.
+
+![Video 4.](https://cdn.elifesciences.org/articles/07398/elife-07398-media4.mp4.jpg)
+
+**Video 4.:** Time-lapse: 10 min; 8 fps.
+
+![Video 5.](https://cdn.elifesciences.org/articles/07398/elife-07398-media5.mp4.jpg)
+
+**Video 5.:** Note that the yolk aggregates are clearly visible because they have an intense autofluorescence in the green part of the spectrum. Time-lapse: 10 min; 8 fps.
 
 The defects of the AS in foscrbY10A embryos become very obvious in scanning electron micrographs (Figure 3—figure supplement 1). At stage 14, the AS forms a flat monolayer of epithelial cells in foscrb embryos (Figure 3—figure supplement 1A,A'). In contrast, in foscrbY10A embryos developed for the same period of time, the AS is completely disorganised. Large processes form, some of which extend over the caudal end of the embryos (Figure 3—figure supplement 1B,B', arrow). Some isolated cells are visible over the epidermis (whether these are detached AS cells or migrating haemocytes was not determined –Figure 3—figure supplement 1B, arrowhead), while others have the appearance of apoptotic cells (Figure 3—figure supplement 1B', concave arrowhead).
 
 Together, these observations suggest that cell-cell adhesion in the AS is strongly disrupted in foscrbY10A embryos, and define the FBM of Crb as an important regulator of cytoskeletal organisation and cell-cell adhesion of the AS.
 
-## The FBM of Crb is essential for the integrity of the AS
+### The FBM of Crb is essential for the integrity of the AS
 
-Our scanning electron microscopy analyses suggest that the AS of
+Our scanning electron microscopy analyses suggest that the AS of foscrbY10A embryos undergo apoptosis. In order to determine whether apoptosis contributes to the disruption of the AS, we used the apoptotic reporter Apoliner, an RFP-GFP fusion protein localising at cell membranes of live cells. Caspase activation releases the GFP moiety, which is relatively unstable after cleavage, so dying cells have a stronger red appearance (Bardet et al., 2008; Kolahgar et al., 2011). Apoliner expression in the AS (specifically driven by the line GAL4332.3) of foscrb embryos (Video 6) revealed some apoptotic cells at the posterior canthus at the end of GB retraction (Figure 4A, arrow). In foscrbY10A embryos developed for the same period of time, more apoptotic cells are visible, some of which detach (Figure 4B, arrowheads), while others remain attached to the posterior edge of the remaining AS (Figure 4B, arrow). As DC progresses in foscrb embryos, some apoptotic cells delaminate from the AS and are easily distinguished (Video 6, blinking arrows –some of these cells could be hemocytes with engulfed apoptotic debris, as reported previously [Bardet et al., 2008]). At this stage, almost all AS cells in foscrbY10A embryos are apoptotic (Video 6, compare embryos at 210 min). Finally, at the end of DC, the internalised AS cells are localised in a central rod-like structure in foscrb embryos and subsequently die by apoptosis (Figure 4C) [as has been reported for wild type embryos (Reed et al., 2004; Shen et al., 2013)], while in foscrbY10A embryos at this time point the remaining AS cells are completely disaggregated (Figure 4D). To summarise, the AS in foscrbY10A embryos breaks apart and undergoes premature apoptosis (Video 6), supporting the conclusion that an intact FBM is required for maintaining the integrity of the AS.
+
+![Video 6.](https://cdn.elifesciences.org/articles/07398/elife-07398-media6.mp4.jpg)
+
+**Video 6.:** Apoliner GFP signal is on the left (green), the RFP signal on the middle (magenta), and the merge on the right. At the time 210 min, the blinking arrows in the merge of the foscrb embryo indicate some apoptotic AS cells separated clearly. Time-lapse: 10 min; 8 fps.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig4-v2.jpg)
 
-**Figure 4.:** foscrb embryos is accompanied by premature apoptosis.Y10A(A-D) Stills from dorsal views of live imaging of embryos in which the apoptotic reporter Apoliner is driven in the AS with the line GAL4332.3 (Video 6). Apoptotic cells in magenta appear more intense than their neighbours. In all images the anterior part is towards the left for the genotypes w;foscrb,GAL4, and 332.3/foscrb,UAS-Apoliner;crbGX24w;foscrb. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers in (Y10A,GAL4332.3/foscrbY10A,UAS-Apoliner;crbGX24B,D) indicate the time in minutes for the corresponding row. After GB retraction in foscrb embryos (A), some apoptotic cells are found mainly at the posterior canthus (A, arrow). In comparison, in foscrb embryos, some of the cells that have detached from the AS (Y10AB, arrowheads), as well as those in the posterior edge of the AS (B, arrow), are apoptotic. As DC is completed in foscrb embryos (C), a significant portion of the internalised AS cells are apoptotic, while the remaining internalised cells are still localised in a rod-like structure along the dorsal part of the embryo. In contrast, in foscrb embryos (Y10AD) all the remaining AS cells are apoptotic cells (the GFP signal in (D) does not belong to the AS). Scale bar: 100 μm. Representative images from 8–12 different embryos for each genotype. (E-K) Activation of the JNK pathway in the DME cells analysed with the enhancer trap puc (β–galactosidase staining). E69DE-cad staining is in green. In all images anterior is to the left for the genotypes w;foscrb/+;crb and GX24/pucE69,crbGX24w;foscrb. From the beginning to the end of DC, Puc expression is normally induced on each side of the embryo in the single row of DME cells in both genotypes, and few positive β–gal nuclei appear below the row of DME cells (Y10A/+;crbGX24/pucE69,crbGX24E,F, arrowheads). In foscrb embryos at middle DC some β–gal positive cells appear below the DME cells (Y10AH, arrowheads). When DC is completed in foscrb embryos (I), a single row of cells on each side of the embryo is β–gal positive, even in foscrb embryos, independently of whether the epidermis contacted the corresponding segment of the epidermis on the dorsal midline (Y10AJ, dashed line), bunched on the same side of the embryo (J, dotted line) or fail to touch the complementing segment (J, arrow). Scale bar: 10 μm. (K) No significant difference in the number of β–gal positive nuclei at middle DC along 50 μm at the dorsal epidermis (indicated by the brackets in G,H), mean ± SD, n= 17 embryos per genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.019
+**Figure 4.:** (A-D) Stills from dorsal views of live imaging of embryos in which the apoptotic reporter Apoliner is driven in the AS with the line GAL4332.3 (Video 6). Apoptotic cells in magenta appear more intense than their neighbours. In all images the anterior part is towards the left for the genotypes w;foscrb,GAL4332.3/foscrb,UAS-Apoliner;crbGX24, and w;foscrbY10A,GAL4332.3/foscrbY10A,UAS-Apoliner;crbGX24. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers in (B,D) indicate the time in minutes for the corresponding row. After GB retraction in foscrb embryos (A), some apoptotic cells are found mainly at the posterior canthus (A, arrow). In comparison, in foscrbY10A embryos, some of the cells that have detached from the AS (B, arrowheads), as well as those in the posterior edge of the AS (B, arrow), are apoptotic. As DC is completed in foscrb embryos (C), a significant portion of the internalised AS cells are apoptotic, while the remaining internalised cells are still localised in a rod-like structure along the dorsal part of the embryo. In contrast, in foscrbY10A embryos (D) all the remaining AS cells are apoptotic cells (the GFP signal in (D) does not belong to the AS). Scale bar: 100 μm. Representative images from 8–12 different embryos for each genotype. (E-K) Activation of the JNK pathway in the DME cells analysed with the enhancer trap pucE69 (β–galactosidase staining). DE-cad staining is in green. In all images anterior is to the left for the genotypes w;foscrb/+;crbGX24/pucE69,crbGX24 and w;foscrbY10A/+;crbGX24/pucE69,crbGX24. From the beginning to the end of DC, Puc expression is normally induced on each side of the embryo in the single row of DME cells in both genotypes, and few positive β–gal nuclei appear below the row of DME cells (E,F, arrowheads). In foscrbY10A embryos at middle DC some β–gal positive cells appear below the DME cells (H, arrowheads). When DC is completed in foscrb embryos (I), a single row of cells on each side of the embryo is β–gal positive, even in foscrbY10A embryos, independently of whether the epidermis contacted the corresponding segment of the epidermis on the dorsal midline (J, dashed line), bunched on the same side of the embryo (J, dotted line) or fail to touch the complementing segment (J, arrow). Scale bar: 10 μm. (K) No significant difference in the number of β–gal positive nuclei at middle DC along 50 μm at the dorsal epidermis (indicated by the brackets in G,H), mean ± SD, n= 17 embryos per genotype.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** foscrb and foscrb embryos.Y10A(A-D) Expression of Hindsight (Hnt) at stage 12 (A,C, lateral view) and stage 14 (B,D, dorsal view). In all images the AS is inside the green dotted line. Note that the AS is properly specified in foscrb and foscrb embryos, and at stage 14, Hnt staining is comparable between the two genotypes (Y10AB,D), and Hnt is present even in the cells that have detached from the AS in the foscrb embryos (Y10AD, arrowhead). Scale bar: 100 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.020
+**Figure 4—figure supplement 1.:** (A-D) Expression of Hindsight (Hnt) at stage 12 (A,C, lateral view) and stage 14 (B,D, dorsal view). In all images the AS is inside the green dotted line. Note that the AS is properly specified in foscrb and foscrbY10A embryos, and at stage 14, Hnt staining is comparable between the two genotypes (B,D), and Hnt is present even in the cells that have detached from the AS in the foscrbY10A embryos (D, arrowhead). Scale bar: 100 μm.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** PS in the AS of foscrb and foscrb embryos.Y10A(A,B) The localisation of the integrin-βPS is similar in foscrb and foscrbembryos. The images are projections of ∼1 μm thickness; thus, in some cells it is possible to see the localisation of the integrin-βY10APS at the basal membrane (arrows), while in other cells it is possible to see the protein localisation at the lateral membrane (arrowheads). The inserts are magnification of a single confocal plane (0.45 μm) through the middle part of the AS cells in the respective genotypes. Scale bars: 10 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.021
+**Figure 4—figure supplement 2.:** (A,B) The localisation of the integrin-βPS is similar in foscrb and foscrbY10Aembryos. The images are projections of ∼1 μm thickness; thus, in some cells it is possible to see the localisation of the integrin-βPS at the basal membrane (arrows), while in other cells it is possible to see the protein localisation at the lateral membrane (arrowheads). The inserts are magnification of a single confocal plane (0.45 μm) through the middle part of the AS cells in the respective genotypes. Scale bars: 10 μm.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** DPatj and Yrt in the dorsal epidermis.(A-C’’) Cross section (ZX view –see reference axis in Figure 1K) of the dorsal epidermis of embryos at stage 14 stained for DPatj (green) and Yrt (fire LUT-pseudocolor). In all images the apical aspect of the cells is at the top and the dotted line marks the basal aspect. (A-A’’) w;foscrb;crb. (GX24B-B’’) w;foscrb. (Y10F;crbGX24C-C’’) w;foscrb. Note that Yrt is concentrated toward the apical aspect of the cells in all genotypes. Scale bar: 5 μm. Representative images from 8–12 different embryos for each genotype.Y10A;crbGX24DOI: http://dx.doi.org/10.7554/eLife.07398.022
+**Figure 4—figure supplement 3.:** (A-C’’) Cross section (ZX view –see reference axis in Figure 1K) of the dorsal epidermis of embryos at stage 14 stained for DPatj (green) and Yrt (fire LUT-pseudocolor). In all images the apical aspect of the cells is at the top and the dotted line marks the basal aspect. (A-A’’) w;foscrb;crbGX24. (B-B’’) w;foscrbY10F;crbGX24. (C-C’’) w;foscrbY10A;crbGX24. Note that Yrt is concentrated toward the apical aspect of the cells in all genotypes. Scale bar: 5 μm. Representative images from 8–12 different embryos for each genotype.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** foscrb embryos.Y10F(A-C) Activation of the JNK pathway in the DME cells analysed with the enhancer trap puc (β–galactosidase staining). E69DE-cad staining is in green. In all images anterior is to the left. From the beginning to the end of DC, Puc expression is normally induced on each side of the embryo in the single row of DME cells. When DC is completed, a single row of cells on each side of the embryo is β–gal positive (C). Scale bar: 10 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.023
+**Figure 4—figure supplement 4.:** (A-C) Activation of the JNK pathway in the DME cells analysed with the enhancer trap pucE69 (β–galactosidase staining). DE-cad staining is in green. In all images anterior is to the left. From the beginning to the end of DC, Puc expression is normally induced on each side of the embryo in the single row of DME cells. When DC is completed, a single row of cells on each side of the embryo is β–gal positive (C). Scale bar: 10 μm.
 
 Several other processes are required for proper DC and integrity of the AS. At early stages, specification of the AS requires the U-shaped-group of genes (hindsight –hnt, tail-up –tup, u-shaped –ush, and serpent –srp), mutations in which produce phenotypes similar to those observed in foscrbY10A embryos (Frank and Rushlow, 1996; Lamka and Lipshitz, 1999; Yip et al., 1997; Scuderi and Letsou, 2005; Lynch et al., 2013). Hnt shows a strong and comparable expression pattern in the AS of foscrb and foscrbY10A embryos at early and late stages (Figure 4—figure supplement 1), even in the detached AS cells of foscrbY10A embryos (Figure 4—figure supplement 1D, arrowhead). This indicates that fate specification is not affected in foscrbY10A embryos.
 
 AS integrity also requires integrin-mediated attachment to the yolk sac membrane (Reed et al., 2004). Therefore, we analysed the localisation of integrin-βPS, and found no major differences between foscrb and foscrbY10A embryos (Figure 4—figure supplement 2A,B).
 
-Yrt function is also important during DC, and zygotic yrt mutants have DC defects (Hoover and Bryant, 2002), similar to the ones observed upon Crb over-expression in the AS (Harden et al., 2002; Wodarz et al., 1995). Because Yrt is a FERM protein that negatively regulates Crb by directly interacting with its FBM (Laprise et al., 2006), Yrt appeared as a likely candidate in mediating the foscrbY10A mutant phenotype. Yrt localises at the lateral domain and concentrates towards the apical aspect in a Crb-dependent manner from stage 13 onwards (Laprise et al., 2006). We found that independently of the fosmid genotype, Yrt concentrates correctly towards the apical aspect of the cells (Figure 4—figure supplement 3). Moreover, embryos expressing foscrb and lacking zygotic yrt show defects in DC mainly after GB retraction, when a failure in the zippering at the posterior canthus is patent (Video 7, arrow in the upper embryo). Despite this, the overall AS integrity is preserved during DC and most of the zippering is completed, leaving a hole only at the posterior canthus. This phenotype is completely different from the phenotype of foscrbY10A embryos described above (Video 2). Significantly, embryos with both the zygotic yrt mutant allele and the foscrbY10A variant do not show amelioration of the foscrbY10A phenotype (Video 7, bottom embryo). These embryos show strong defects in GB retraction, and the integrity of the AS is lost as development progresses. These results show that the DC phenotype of foscrbY10A embryos starts earlier in development and is more complex than that in yrt mutants, as the former fail in germ band retraction, lose the AS and do not progress on the zippering process. Thus, Yrt seems not to be involved in the phenotype of foscrbY10A embryos.10.7554/eLife.07398.024Video 7.DC in yrt∆75a zygotic mutants expressing the different fosmids. w;foscrb,DE-cad::GFP;yrt∆75acrb11A22 (top) and w;foscrbY10A,DE-cad::GFP;yrt∆75acrb11A22 (bottom) embryos.The arrow in the top embryo marks the characteristic defects in the posterior canthus observed during DC in yrt∆75a zygotic mutants. In the w;foscrbY10A,DE-cad::GFP;yrt∆75acrb11A22 embryo the GB retraction and the DC phenotypes are comparable to the ones in the w;foscrbY10A,DE-cad::GFP;crbGX24 (Video 2). Time-lapse: 6 min; 12 fps.DOI: http://dx.doi.org/10.7554/eLife.07398.024
+Yrt function is also important during DC, and zygotic yrt mutants have DC defects (Hoover and Bryant, 2002), similar to the ones observed upon Crb over-expression in the AS (Harden et al., 2002; Wodarz et al., 1995). Because Yrt is a FERM protein that negatively regulates Crb by directly interacting with its FBM (Laprise et al., 2006), Yrt appeared as a likely candidate in mediating the foscrbY10A mutant phenotype. Yrt localises at the lateral domain and concentrates towards the apical aspect in a Crb-dependent manner from stage 13 onwards (Laprise et al., 2006). We found that independently of the fosmid genotype, Yrt concentrates correctly towards the apical aspect of the cells (Figure 4—figure supplement 3). Moreover, embryos expressing foscrb and lacking zygotic yrt show defects in DC mainly after GB retraction, when a failure in the zippering at the posterior canthus is patent (Video 7, arrow in the upper embryo). Despite this, the overall AS integrity is preserved during DC and most of the zippering is completed, leaving a hole only at the posterior canthus. This phenotype is completely different from the phenotype of foscrbY10A embryos described above (Video 2). Significantly, embryos with both the zygotic yrt mutant allele and the foscrbY10A variant do not show amelioration of the foscrbY10A phenotype (Video 7, bottom embryo). These embryos show strong defects in GB retraction, and the integrity of the AS is lost as development progresses. These results show that the DC phenotype of foscrbY10A embryos starts earlier in development and is more complex than that in yrt mutants, as the former fail in germ band retraction, lose the AS and do not progress on the zippering process. Thus, Yrt seems not to be involved in the phenotype of foscrbY10A embryos.
+
+![Video 7.](https://cdn.elifesciences.org/articles/07398/elife-07398-media7.mp4.jpg)
+
+**Video 7.:** The arrow in the top embryo marks the characteristic defects in the posterior canthus observed during DC in yrt∆75a zygotic mutants. In the w;foscrbY10A,DE-cad::GFP;yrt∆75acrb11A22 embryo the GB retraction and the DC phenotypes are comparable to the ones in the w;foscrbY10A,DE-cad::GFP;crbGX24 (Video 2). Time-lapse: 6 min; 12 fps.
 
 The AS regulates aspects of DME differentiation (Stronach and Perrimon, 2001) and embryos carrying mutations in components of the JNK signalling pathway show defective elongation of DME cells and fail to establish the supracellular actomyosin cable at the LE (Riesgo-Escovar et al., 1996; Martín-Blanco et al., 1998; Ricos et al., 1999; Glise et al., 1995; Hou et al., 1997; Kockel et al., 1997; Reed et al., 2001; Ríos-Barrera and Riesgo-Escovar, 2013). The mutant phenotype described here is characterised by defects in both the AS and the DME cells. To assess whether defects in the DME observed in foscrbY10A embryos are the result of impaired JNK signalling, we used the reporter line puc-lacZ (Martín-Blanco et al., 1998; Ring and Martinez Arias, 1993). At the beginning of DC, the DME cells of foscrb and foscrbY10A embryos are β-gal positive (Figure 4E,F), with few lacZ-positive nuclei in the row of cells ventral to DME cells (Figure 4E,F, arrowheads). At advanced DC, foscrb embryos still show a single row of β-gal positive cells (Figure 4G), while in foscrbY10A embryos β-gal positive nuclei can also be found at positions more ventral to the DME cells (Figure 4H, arrowheads). However, given that there is no significant difference in the number of β-gal positive nuclei along 50 μm of the dorsal epidermis between these genotypes (Figure 4G,H, brackets and 4K), we suggest that this phenotype is the result of aberrant elongation of the DME cells in foscrbY10A embryos (see for example Figure 1H). Accordingly, at the time when foscrb embryos complete DC, these embryos (Figure 4I) and foscrbY10A embryos exhibit a single row of β-gal positive cells on each side of the dorsal epidermis (Figure 4J). This is independent of whether the epidermis fuses on the dorsal midline (Figure 4J, encircled by dashed line), closes on the same side of the epidermis, thus causing bunching of the tissue (Figure 4J, encircled by dotted line) or does not touch any contra-lateral epidermis (Figure 4J, arrow). A normal activation of JNK signalling is also observed in foscrbY10F embryos (Figure 4—figure supplement 4), showing that JNK signalling appears to be normal in the DME cells of foscrbY10A embryos.
 
 Taken together, these results support the conclusion that the FBM of Crb is an important regulator of the integrity and morphogenesis of the AS without affecting its specification during development.
 
-## The FBM of Crb controls actomyosin dynamics in the AS
+### The FBM of Crb controls actomyosin dynamics in the AS
 
-It has been previously shown that perturbing actomyosin dynamics of the AS cells interferes with normal DC (
+It has been previously shown that perturbing actomyosin dynamics of the AS cells interferes with normal DC (Solon et al., 2009; Gorfinkiel et al., 2009; Fischer et al., 2014). These dynamics, which are evident in stage 13 foscrb embryos (Video 8) similar as in wild-type embryos, is characterised by pulsed contractions of the AS cells. In foscrbY10A embryos, however, the pulsed contraction are difficult to follow, since individual cells can hardly be distinguished due to the highly disrupted ZA (Video 8, compare Figure 5A and 5B). Pulsed-contraction of wild-type AS cells has been correlated with a regular appearance and disappearance of medial actomyosin foci (Blanchard et al., 2010; David et al., 2010; Solon et al., 2009). These actomyosin foci are observed in foscrb embryos as revealed by Zip::GFP (Video 9 and Figure 5C). Kymographs show that these foci are transient and disassemble after contraction (Figure 5C’,D’). In contrast, the AS of foscrbY10A embryos shows more Zip::GFP foci (Figure 5D), some of which are more prominent (Figure 5D’, and Figure 5—figure supplement 1 and Video 10). A similar behaviour was observed for F-actin (labelled with Utrophin::GFP (Rauzi et al., 2010) -data not shown). Importantly, analysis of the periodicity of foci formation shows that foscrb and foscrbY10F embryos have similar pulsed contractions, while foscrbY10A embryos have aberrant contractions, in that foci are more persistent (Figure 5E). These observations support the hypothesis that the AS of embryos expressing the CrbY10A variant is under both constant and uncoordinated contraction.
+
+![Video 8.](https://cdn.elifesciences.org/articles/07398/elife-07398-media8.mp4.jpg)
+
+**Video 8.:** Time-lapse: 10 sec; 15 fps.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig5-v2.jpg)
 
-**Figure 5.:** Stills from views of the AS in live imaging of embryos expressing DE-cad::GFP knock-in (A,B, Video 8) or Zip::GFP (C-D’, Video 9). In all images the anterior part is towards the left. Scale bar: 10 μm. (A) w;foscrb,DE-cad::GFP;crb. (GX24B) w;foscrb. (Y10A,DE-cad::GFP;crbGX24C) w;foscrb/Zip::GFP;crb. (GX24D) w;foscrb. The embryos were collected during 30 min, incubated at 28ºC for 7 hr and imaged under the same conditions. The numbers in (Y10A/Zip::GFP;crbGX24C,D) indicate the time in seconds for the corresponding frame in Video 9. In foscrb embryos (A), DE-cad::GFP is localised at cell-cell junctions; but in foscrb (Y10AB) embryos DE-cad::GFP continuity is strongly disturbed. (C’,D’) Kymographs of the Zip::GFP foci in the magenta box in (C,D). Scale bar in (C’) 10 sec. (E) Histogram of the relative frequency of Zip::GFP foci duration during the pulsed contractions of the AS in w;foscrb/Zip::GFP;crb and GX24, w;foscrbY10F/Zip::GFP;crbGX24w;foscrb embryos. The graph in the insert shows all data points collected, and indicates the mean ± SD. ANOVA test followed by a Dunnett’s multiple-comparison test; ns-not significant difference. Y10A/Zip::GFP;crbGX24n = 150 foci collected from each of the three different embryos.DOI: http://dx.doi.org/10.7554/eLife.07398.026
+**Figure 5.:** Stills from views of the AS in live imaging of embryos expressing DE-cad::GFP knock-in (A,B, Video 8) or Zip::GFP (C-D’, Video 9). In all images the anterior part is towards the left. Scale bar: 10 μm. (A) w;foscrb,DE-cad::GFP;crbGX24. (B) w;foscrbY10A,DE-cad::GFP;crbGX24. (C) w;foscrb/Zip::GFP;crbGX24. (D) w;foscrbY10A/Zip::GFP;crbGX24. The embryos were collected during 30 min, incubated at 28ºC for 7 hr and imaged under the same conditions. The numbers in (C,D) indicate the time in seconds for the corresponding frame in Video 9. In foscrb embryos (A), DE-cad::GFP is localised at cell-cell junctions; but in foscrbY10A (B) embryos DE-cad::GFP continuity is strongly disturbed. (C’,D’) Kymographs of the Zip::GFP foci in the magenta box in (C,D). Scale bar in (C’) 10 sec. (E) Histogram of the relative frequency of Zip::GFP foci duration during the pulsed contractions of the AS in w;foscrb/Zip::GFP;crbGX24, w;foscrbY10F/Zip::GFP;crbGX24 and w;foscrbY10A/Zip::GFP;crbGX24 embryos. The graph in the insert shows all data points collected, and indicates the mean ± SD. ANOVA test followed by a Dunnett’s multiple-comparison test; ns-not significant difference. n = 150 foci collected from each of the three different embryos.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Stills from Video 10 where a Zip::GFP cluster forms and disappears (followed by the bracket) in an AS cell during the pulsed contraction in a w;foscrb/Zip::GFP;crb embryo (GX24A). In contrast, several Zip::GFP foci are present and do not disappear in the w;foscrb embryo (Y10A/Zip::GFP;crbGX24B). Scale bar: 5 μm.DOI: http://dx.doi.org/10.7554/eLife.07398.027
+**Figure 5—figure supplement 1.:** Stills from Video 10 where a Zip::GFP cluster forms and disappears (followed by the bracket) in an AS cell during the pulsed contraction in a w;foscrb/Zip::GFP;crbGX24 embryo (A). In contrast, several Zip::GFP foci are present and do not disappear in the w;foscrbY10A/Zip::GFP;crbGX24 embryo (B). Scale bar: 5 μm.
 
-The activity of non-muscle myosin-II (Zip) is mainly regulated by the phosphorylation state of the myosin-regulatory light chain [reviewed in (
+![Video 9.](https://cdn.elifesciences.org/articles/07398/elife-07398-media9.mp4.jpg)
+
+**Video 9.:** Time-lapse: 10 sec; 15 fps.
+
+![Video 10.](https://cdn.elifesciences.org/articles/07398/elife-07398-media10.mp4.jpg)
+
+**Video 10.:** These magnifications (2X from original) were created using a bicubic algorithm in Fiji. w;foscrb/Zip::GFP;crbGX24 (left) and w;foscrbY10A/Zip::GFP;crbGX24 (right). Time-lapse: 10 sec; 15 fps.
+
+![Video 11.](https://cdn.elifesciences.org/articles/07398/elife-07398-media11.mp4.jpg)
+
+**Video 11.:** The signal from the UAS-Actin::RFP is not shown. w;foscrb,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP (top) and w;foscrbY10A,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP (bottom). Time-lapse: 5 min; 12 fps.
+
+The activity of non-muscle myosin-II (Zip) is mainly regulated by the phosphorylation state of the myosin-regulatory light chain [reviewed in (Tan et al., 1992)], encoded by the gene spaghetti squash (sqh). Thus, if over-active actomyosin is responsible for the DC defects of foscrbY10A embryos, we expect that expressing Flapwing (flw), the major Drosophila Sqh phosphatase (Vereshchagina et al., 2004), may suppress the DC defects. In fact, UAS-driven expression of Flw in the AS of foscrbY10A embryos leads to a suppression of the DC phenotype (Figure 6D–F, Video 11), while it does not produce any evident dominant phenotype in foscrb or foscrbY10F embryos (Figure 6A–C, and Figure 6—figure supplement 1). Interestingly, Flw over-expression also suppresses the disruption of the ZA in the AS (Video 12, compare B vs. D). This result supports our hypothesis that the FBM of Crb negatively regulates actomyosin activity in the AS.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig6-v2.jpg)
 
-**Figure 6.:** foscrb embryos suppresses the DC defects.Y10A(A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and Flw-HA in the AS cells under the control of the GAL4332.3 driver (Video 11), for the genotypes w;foscrb,GAL4 and 332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFPw;foscrb. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers on (Y10A,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFPD-F) indicate the time in minutes for the corresponding row. The over-expression of Flw-HA in the AS cells does not produce any obvious phenotype in foscrb (A-C) embryos, and it suppresses the DC defects in foscrb (Y10AD-F) embryos; some defects found include an irregular zippering at the posterior canthus (E, arrow) as well as bunching of the dorsal epidermal (F, bracket). Scale bar: 100 μm. Representative images from 6–9 different embryos for each genotype. (G) Scheme of the possible pathways regulated by the FBM of Crb in the AS. Crb: Crumbs; Rok: Rho-kinase; Dpak: Drosophila p21-activated kinase; Flw: Flapwing; DMBS: Drosophila myosin-binding-subunit; Sqh: spaghetti-squash; Mlck: myosin-light chain kinase.DOI: http://dx.doi.org/10.7554/eLife.07398.031
+**Figure 6.:** (A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and Flw-HA in the AS cells under the control of the GAL4332.3 driver (Video 11), for the genotypes w;foscrb,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP and w;foscrbY10A,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers on (D-F) indicate the time in minutes for the corresponding row. The over-expression of Flw-HA in the AS cells does not produce any obvious phenotype in foscrb (A-C) embryos, and it suppresses the DC defects in foscrbY10A (D-F) embryos; some defects found include an irregular zippering at the posterior canthus (E, arrow) as well as bunching of the dorsal epidermal (F, bracket). Scale bar: 100 μm. Representative images from 6–9 different embryos for each genotype. (G) Scheme of the possible pathways regulated by the FBM of Crb in the AS. Crb: Crumbs; Rok: Rho-kinase; Dpak: Drosophila p21-activated kinase; Flw: Flapwing; DMBS: Drosophila myosin-binding-subunit; Sqh: spaghetti-squash; Mlck: myosin-light chain kinase.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** foscrb embryos.Y10F(A-C) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and Flw-HA in the AS cells under the control of the GAL4332.3 driver, for the genotype w;foscrb. Embryo collection, incubation and imaging as described in Y10F,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFPFigure 6. The numbers on (A-C) indicate the time in minutes for the corresponding row. The over-expression of Flw-HA in the AS cells does not produce any obvious phenotype. Scale bar: 100 μm. Representative images from 7 different embryos.DOI: http://dx.doi.org/10.7554/eLife.07398.032
+**Figure 6—figure supplement 1.:** (A-C) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and Flw-HA in the AS cells under the control of the GAL4332.3 driver, for the genotype w;foscrbY10F,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP. Embryo collection, incubation and imaging as described in Figure 6. The numbers on (A-C) indicate the time in minutes for the corresponding row. The over-expression of Flw-HA in the AS cells does not produce any obvious phenotype. Scale bar: 100 μm. Representative images from 7 different embryos.
 
-Rho GTPases have been shown to stimulate myosin contraction by activating Rho-kinase (Rok) or the p21-activated kinase (
+![Video 12.](https://cdn.elifesciences.org/articles/07398/elife-07398-media12.mp4.jpg)
+
+**Video 12.:** Dorsal views during the pulsed contractions of AS cells. The signal from the UAS-Actin::RFP is not shown. (A,B) Embryos that do not express the Flw and are trans-heterozygous for DE-cad::GFP; (A) w;foscrb/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP and (B) w;foscrbY10A/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP. (C,D) Embryos that express Flw in the AS cells under the control of the GAL4332.3 driver; (C) w;foscrb,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP and (D) w;foscrbY10A,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP. Time-lapse: 10 sec; 15 fps.
+
+Rho GTPases have been shown to stimulate myosin contraction by activating Rho-kinase (Rok) or the p21-activated kinase (DPak), and are required for proper DC (Mizuno et al., 1999; Harden et al., 1999; 1996; Conder et al., 2004; Magie et al., 1999; 2002). To test whether Rho-GTPases are involved in the Crb-mediated DC phenotype, we expressed different versions of established Rho family effectors (see working model in Figure 6G) and examined their effects on DC in the embryonic cuticle, a suitable read-out of DC. We grouped the embryos according to their cuticle phenotype into two major categories (Figure 7A): 1) embryos with “DC-defect”, which exhibit a range of defects from extensive dorsal opening (in which the mouthparts are exposed), to embryos with complete DC, which, however, still failed to hatch; and 2) embryos with “WT-like” cuticle, which includes all those that hatch (for more details about the different categories and phenotypes see Figure 7—figure supplement 1). Depending on the crb allelic combination, 89–98% of embryos expressing the foscrbY10A variant fall into the “DC-defect” category (Figure 7A, 1st-6th black bars).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig7-v2.jpg)
 
-**Figure 7.:** foscrb variant.Y10A(A) Quantification of the defects observed in cuticle preparations from the genotypes indicated in the graph. For the complete genotype see Figure 7—figure supplement 1. The category “DC defect” includes a range of defects ranging from cuticles of embryos that completed DC but do not hatch, to cuticles with large DC openings. The category “WT-like” includes all larvae that hatch. For details about the classifications see Figure 7—figure supplement 1. Note that all the genotypes have the foscrb background, except the ones highlighted in magenta, numbers 18 and 19, that have the Y10Afoscrb background. mean ± SD from 2–4 independent crosses. n = total number of cuticles counted for the indicated genotype. Note that suppression of the DC phenotype in foscrb embryos is particularly evident upon expression of Flw-HA (10), Pak-AID (17), and Y10ADE-cad (22). (B-F) Adult flies of the indicated genotypes. In (F), the arrowhead marks the defects in the dorsal abdomen.DOI: http://dx.doi.org/10.7554/eLife.07398.034
+**Figure 7.:** (A) Quantification of the defects observed in cuticle preparations from the genotypes indicated in the graph. For the complete genotype see Figure 7—figure supplement 1. The category “DC defect” includes a range of defects ranging from cuticles of embryos that completed DC but do not hatch, to cuticles with large DC openings. The category “WT-like” includes all larvae that hatch. For details about the classifications see Figure 7—figure supplement 1. Note that all the genotypes have the foscrbY10A background, except the ones highlighted in magenta, numbers 18 and 19, that have the foscrb background. mean ± SD from 2–4 independent crosses. n = total number of cuticles counted for the indicated genotype. Note that suppression of the DC phenotype in foscrbY10A embryos is particularly evident upon expression of Flw-HA (10), Pak-AID (17), and DE-cad (22). (B-F) Adult flies of the indicated genotypes. In (F), the arrowhead marks the defects in the dorsal abdomen.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** foscrb variant.Y10AQuantification of the defects observed in cuticle preparations from the genotypes indicated in the graph. In the category “Open cuticle”, the dorsal opening is so prominent that in some cases the mouthparts are exposed (arrowhead). Category “Dorsal hole” corresponds to those cuticles in which a medium (left picture) or small (right picture) dorsal hole is present, but the anterior part is closed. In the category “Closed but not hatched”, the closure is complete, the puckering of the epidermis is noticeable (arrowhead), but the larvae fail to hatch. In the category “Kinked larvae”, the puckering of the epidermis (arrowhead) results in larvae with the tail pointing upwards, so the larvae seem to have a kink. In the category “WT-like”, no defects are evident so the larvae are alike to wild type. mean ± SD from 2–4 independent crosses. n = total number of cuticles counted for the indicated genotype. For the statistical analysis see Table 1.DOI: http://dx.doi.org/10.7554/eLife.07398.035
+**Figure 7—figure supplement 1.:** Quantification of the defects observed in cuticle preparations from the genotypes indicated in the graph. In the category “Open cuticle”, the dorsal opening is so prominent that in some cases the mouthparts are exposed (arrowhead). Category “Dorsal hole” corresponds to those cuticles in which a medium (left picture) or small (right picture) dorsal hole is present, but the anterior part is closed. In the category “Closed but not hatched”, the closure is complete, the puckering of the epidermis is noticeable (arrowhead), but the larvae fail to hatch. In the category “Kinked larvae”, the puckering of the epidermis (arrowhead) results in larvae with the tail pointing upwards, so the larvae seem to have a kink. In the category “WT-like”, no defects are evident so the larvae are alike to wild type. mean ± SD from 2–4 independent crosses. n = total number of cuticles counted for the indicated genotype. For the statistical analysis see Table 1.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** DMoesin levels are reduced in embryos expressing the foscrb variant.Y10ALocalisation of phospho-DMoesin (P-DMoe, A,B) in embryos at the beginning of stage 14. In all images the AS is at the top, for the genotypes w;foscrb;crb and GX24w;foscrb. The LE of Y10A;crbGX24foscrbembryo is marked with a magenta line (Y10AB). Scale bar: 10 μm. Representative images from 9 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.036
+**Figure 7—figure supplement 2.:** Localisation of phospho-DMoesin (P-DMoe, A,B) in embryos at the beginning of stage 14. In all images the AS is at the top, for the genotypes w;foscrb;crbGX24 and w;foscrbY10A;crbGX24. The LE of foscrbY10Aembryo is marked with a magenta line (B). Scale bar: 10 μm. Representative images from 9 different embryos for each genotype.
 
 ![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig7-figsupp3-v2.jpg)
 
-**Figure 7—figure supplement 3.:** foscrb variant.Y10AExamples of cuticles with a weak head phenotype: the arrows mark an opening in the anterior part.DOI: http://dx.doi.org/10.7554/eLife.07398.037
+**Figure 7—figure supplement 3.:** Examples of cuticles with a weak head phenotype: the arrows mark an opening in the anterior part.
+
+**Table 1.**
+ Statistical analyses of the results shown in the Figure 7—figure supplement 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Open cuticle</th>
+      <th>Dorsal hole</th>
+      <th>Closed but not hatched</th>
+      <th>Kinked larvae</th>
+      <th>WT-like</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>foscrbY10A;crbGX24</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>14</td>
+      <td>foscrbY10A/Rho11B;crbGX24</td>
+      <td>∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗</td>
+      <td>∗∗∗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>foscrbY10A,DE-cad::GFP;crbGX24</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>23</td>
+      <td>foscrbY10A,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24</td>
+      <td>∗∗∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>25</td>
+      <td>foscrbY10A,DE-cad::GFP/Arpc1Q25st,DE-cad::GFP;crbGX24</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>foscrbY10A,DE-cad::GFP/+;crb11A22/crbGX24</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>11</td>
+      <td>flw6/Y/w*;foscrbY10A,DE-cad::GFP/+;crb11A22/crbGX24</td>
+      <td>∗∗∗∗</td>
+      <td>∗∗</td>
+      <td>∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>15</td>
+      <td>rok2/Y/w*;foscrbY10A,DE-cad::GFP/+;crb11A22/crbGX24</td>
+      <td>∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>24</td>
+      <td>foscrbY10A,DE-cad::GFP/+;crb11A22,Arp3EP3640/crbGX24</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>7</td>
+      <td>29ºC foscrbY10A,GAL4332.3/UAS-Crbfull length;crbGX24/crb11A22</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>8</td>
+      <td>25ºC foscrbY10A,GAL4332.3/UAS-Crbfull length;crbGX24/crb11A23</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>9</td>
+      <td>18ºC foscrbY10A,GAL4332.3/UAS-Crbfull length;crbGX24/crb11A24</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>12</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-RhoN19</td>
+      <td>∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>13</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-rok.CAT-KG</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>16</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-RacN17</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>21</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-Dmoe-myc</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>22</td>
+      <td>foscrbY10A,GAL4332.3/UAS-DE-cad,DE-cad::GFP;crbGX24/crb11A22</td>
+      <td>∗∗∗∗</td>
+      <td>∗∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>foscrbY10A,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>10</td>
+      <td>foscrbY10A,GAL4332.3/UAS-flw-HA,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+      <td>ns</td>
+      <td>∗</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>17</td>
+      <td>foscrbY10A,GAL4332.3/UAS-DPak-AID,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>20</td>
+      <td>foscrbY10A,GAL4332.3/UAS-DmoeT559D,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td>ns</td>
+      <td>∗</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>18</td>
+      <td>foscrb,GAL4332.3/UAS-Dpak-myr,DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vs</td>
+      <td>19</td>
+      <td>foscrb,GAL4332.3/DE-cad::GFP;crbGX24/crb11A22,UAS-Act::RFP</td>
+      <td>∗∗</td>
+      <td>∗∗∗</td>
+      <td>∗∗∗∗</td>
+      <td>ns</td>
+      <td>∗∗∗∗</td>
+    </tr>
+  </tbody>
+</table>
+
+_One-way-ANOVA analysis followed by a Dunnet’s multiple comparisons test between the indicated categories of the different genotypes. Statistical significant difference indicated as follows: ns p>0.05; *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001._
 
 Using this read-out, we confirm that over-expression of the myosin phosphatase Flw in the AS strongly suppresses the DC defects of foscrbY10A embryos. In fact, >75% hatch (Figure 7A, 10th vs. 6th bars) and even some foscrbY10A adults eclose with no obvious defect (Figure 7C). Interestingly, cuticles from foscrbY10A and hemi- or homozygous for the flw6 allele show an enhanced DC phenotype in comparison with the foscrbY10A with a wild type flw allele (Figure 7A, 3rd vs. 11th black bars: 91.2% to 97.1%; and Figure 7—figure supplement 1, 3rd vs. 11th black bars, completely open cuticle from 27.7% to 73.5%). These results support the conclusion that the FBM of Crb regulates the AS actomyosin dynamics by regulating myosin activity.
 
@@ -185,15 +546,23 @@ DMoe has been shown to antagonise the activity of the Rho pathway (Speck et al.,
 
 We wanted to exclude the possibility that the phenotypes observed are due to a dominant effect of the Y10A mutation. In fact, over-expression of full-length CrbWT in the AS of wild-type embryos leads to premature contraction of the AS and a DC phenotype (Harden et al., 2002; Wodarz et al., 1995). Driving the expression of UAS-CrbWT in the AS of foscrbY10A embryos leads to a suppression of the DC phenotype, as >36% hatch at 18ºC (Figure 7A, 8th and 9th bars vs. 5th gray bars), while inducing a stronger over-expression by maintaining embryos at 29°C does not ameliorate the foscrbY10A phenotype (Figure 7A, 5th vs. 7th bars). These results show that the DC phenotype of foscrbY10A embryos is due to loss of Crb function.
 
-## The FBM of Crb is essential for the stability of DE-cadherin in the AS
+### The FBM of Crb is essential for the stability of DE-cadherin in the AS
 
 Besides an over-active actomyosin network, foscrbY10A embryos exhibit interruptions in DE-cad distribution (Figures 2L, 3F and 5B). In addition some embryos show weak head-involution defects (Figure 7—figure supplement 3), a phenotype reminiscent to that of weak alleles of shotgun (shg) (the gene encoding DE-cad) (Tepass et al., 1996), armadillo (arm) (the gene encoding β-catenin) (McEwen et al., 2000) or α-Cat (Sarpal et al., 2012). Therefore we asked whether the DC phenotype of foscrbY10A embryos could be rescued by restoring a functional adhesion belt. Over-expression of DE-cad in the AS of these embryos indeed can suppress the DC phenotype, as 70% of the larvae hatched (Figure 7A, 22nd vs. 6th bars), and even adult animals are obtained (Figure 7E).
 
-A likely candidate of
+A likely candidate of DE-cad regulation is the Arp2/3 complex, which has been shown to regulate endocytosis of DE-cad (Georgiou et al., 2008; Leibfried et al., 2008). In addition, reducing the activity of the Arp2/3 complex suppresses the DC phenotype of α-Cat mutants (Sarpal et al., 2012). Therefore, we tested the effects of removing one copy of SCAR, Arp3 or Arpc1 on the DC phenotype of foscrbY10A embryos. Strikingly, foscrbY10A embryos that are heterozygous for SCAR∆37 exhibit only minor defects in GB retraction (Figure 8B), partially restore DE-cad::GFP localisation in the AS (compare Figure 8H with Figure 5B) and completed DC (Figure 8F, Video 13). In fact, ~28% of these larvae hatch, as revealed by the cuticle phenotype (Figure 7A, 23rd vs. 2nd bar), and even some of the w;foscrbY10A,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24 develop into adult flies that exhibit defects in abdominal development (Figure 7F, arrowhead). A similar suppression was obtained in foscrbY10A embryos heterozygous for Arp3EP3640 (Video 14) (Figure 7A, 24th vs. 3rd bar). foscrb embryos heterozygous for SCAR∆37 or Arp3EP3640 show normal DC (Figure 8E and Video 14).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/07398/elife-07398-fig8-v2.jpg)
 
-**Figure 8.:** DE-cadherin in the AS of embryos expressing the foscrb variant.Y10A(A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and heterozygous for the SCAR loss of function allele (∆37Video 13). In all images the anterior is to the left, for the genotypes w;foscrb,DE-cad::GFP/SCAR and ∆37,DE-cad::GFP;crbGX24w;foscrb. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers in (Y10A,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24B,D,F) indicate the time in minutes for the corresponding row. DC occurs normally in foscrb (A,C,D) embryos heterozygous for the SCAR allele, and DC defects are suppressed in ∆37foscrb (Y10AB,D,F) embryos; some defects still visible include the impaired GB retraction (compare B with A), asymmetric position of the posterior spiracles (D, arrows), and bunching of the dorsal epidermis (D, bracket). Scale bar: 100 μm. (G,H) Magnified views of AS from (A,B, respectively). Note that, in order to make the localisation of DE-cad::GFP more perceptible, the autofluorescence of the yolk (visible in A,B) was removed from the original stack by hand using Fiji. Scale bar: 100 μm. Representative images from 6–9 different embryos for each genotype.DOI: http://dx.doi.org/10.7554/eLife.07398.039
+**Figure 8.:** (A-F) Stills from dorsal views of live imaging of embryos expressing DE-cad::GFP knock-in and heterozygous for the SCAR∆37 loss of function allele (Video 13). In all images the anterior is to the left, for the genotypes w;foscrb,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24 and w;foscrbY10A,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24. All embryos were collected at the same time (1 hr collection), incubated at 28ºC for 7 hr and imaged together. The numbers in (B,D,F) indicate the time in minutes for the corresponding row. DC occurs normally in foscrb (A,C,D) embryos heterozygous for the SCAR∆37 allele, and DC defects are suppressed in foscrbY10A (B,D,F) embryos; some defects still visible include the impaired GB retraction (compare B with A), asymmetric position of the posterior spiracles (D, arrows), and bunching of the dorsal epidermis (D, bracket). Scale bar: 100 μm. (G,H) Magnified views of AS from (A,B, respectively). Note that, in order to make the localisation of DE-cad::GFP more perceptible, the autofluorescence of the yolk (visible in A,B) was removed from the original stack by hand using Fiji. Scale bar: 100 μm. Representative images from 6–9 different embryos for each genotype.
+
+![Video 13.](https://cdn.elifesciences.org/articles/07398/elife-07398-media13.mp4.jpg)
+
+**Video 13.:** w;foscrb,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24 (top) and w;foscrbY10A,DE-cad::GFP/SCAR∆37,DE-cad::GFP;crbGX24 (bottom). Time-lapse: 10 min; 8 fps.
+
+![Video 14.](https://cdn.elifesciences.org/articles/07398/elife-07398-media14.mp4.jpg)
+
+**Video 14.:** w;foscrb,DE-cad::GFP/+;crb11A22,Arp3EP3640/crbGX24 (top) and w;foscrbY10A,DE-cad::GFP/+;crb11A22,Arp3EP3640/crbGX24 (bottom). Time-lapse: 10 min; 8 fps.
 
 In summary we could demonstrate that the DC phenotype of embryos expressing CrbY10A is due to enhanced Rho-mediated actomyosin activity and reduced adhesion. Whether these two processes are linked or independent functions downstream of Crb remains to be discussed.
 
@@ -205,7 +574,7 @@ One phenotype observed upon complete loss of function of crb is a failure to mai
 
 Several of our results are compatible with the assumption that Crb regulates actomyosin dynamics, but since foscrbY10A mutant embryos show defects both in the AS and the DME cells, we cannot distinguish in which of the tissues Crb activity is primarily required and whether defects observed in the DME of foscrbY10A mutant embryos are secondary consequences of excessive contraction of the AS cells. Previous results clearly show that the activity of one tissue affects the behaviour of the respective other (Kiehart et al., 2000; Hutson et al., 2003; Gorfinkiel et al., 2009; Solon et al., 2009). For example, zip mutants have DC and head involution defects, and restoring zip function in either the dorsal epidermis or the AS is sufficient to rescue dorsal-open phenotypes (Franke et al., 2005). Similarly, expression of Pak-AID in the AS of foscrbY10A mutants is sufficient to recover proper elongation of the DME (data not shown). However, the multitude of phenotypes observed in the DME cells of foscrbY10A mutant embryos, such as persistence of CrbY10A, DPatj and Baz proteins and decrease of Ed expression at the LE, as well as disruption of the supracellular actomyosin cable and disorganised filopodia, suggest that Crb performs also specific functions in the DME. One possibility is that Crb influences actomyosin activity and filopodia formation in the DME cells by regulating the stability and localisation of Ena, the major regulator of protrusive activity at the LE (Nowotarski et al., 2014). Another possibility is that Crb regulates the LE actomyosin by modulating the localisation of Baz. In wild-type embryos, the removal of Baz from the LE (Laplante and Nilson, 2011) allows the relocation of the lipid phosphatase Pten, which, in turn, results in a localised accumulation of phosphatidylinositol-3,4,5-trisphosphate at the LE, promoting the formation of filopodia along the LE (Pickering et al., 2013).
 
-## Crb regulates actomyosin dynamics
+### Crb regulates actomyosin dynamics
 
 The most prominent phenotype of foscrbY10A embryos is the over-contraction of AS cells, most likely mediated by DPak. In fact, cortical localisation of DPak in the AS of foscrbY10A embryos appears to be increased in some cells (data not shown). In addition, over-expression of Pak-AID in the AS of foscrbY10A suppresses the GB retraction and DC phenotypes. A similar degree of suppression was observed upon over-expression of Flw, a negative regulator of Sqh. Members of the Rho GTPase family are well-established upstream regulators of actomyosin dynamics. Our data suggest that Rho1 plays a crucial role downstream of Crb, since heterozygosity of Rho11B partially suppresses the DC phenotype of foscrbY10A embryos. Previous data showed that over-expression of the constitutively active or dominant-negative form of Rac1 in the AS of wild-type embryos results in AS disruption (Harden et al., 2002). Our observation that the phenotype of foscrbY10A embryos is enhanced upon expression of a dominant negative form of Rac1 in the AS of foscrbY10A embryos suggests that Rac1 may act upstream of Crb or in a parallel pathway. Since the effects of dominant negative Cdc42N17 could not be studied due to technical difficulties (see Materials and methods), we cannot exclude any contribution of Cdc42 in this process. Therefore, our data so far support a role of Rho1 in the Crb-mediated control of actomyosin dynamics in the AS (Figure 6G).
 
@@ -215,7 +584,7 @@ It is unlikely that one of the other two established binding partners of the FBM
 
 Further support for a more direct role of Crb in regulating the actomyosin network comes from the observation that Crb co-localises with DPar-6, aPKC and Baz at the medial actomyosin foci in the AS (David et al., 2010; 2013). Given the known interactions between members of the Crb complex with members of the Par complex [reviewed in (Bulgakova and Knust, 2009; Tepass, 2012; Rodriguez-Boulan and Macara, 2014)], David et al. (David et al., 2010) suggest that Crb in apical medial foci provides an anchor for PAR proteins. They go on to show that Baz and Par6-aPKC have opposite effects on foci duration, in that Baz promotes and Par6-aPKC complex inhibits the duration of foci. The interplay between these polarity complexes and the actomyosin system seems to establish a delayed negative feedback that promotes the cyclic contractions in the AS (David et al., 2010; 2013). In fact, Crb::GFP also exhibits a similar pulsation as Zip::GFP in the AS (own unpublished observations), so it will be important to analyse whether CrbY10A::GFP mutant proteins have different dynamics in comparison to the wild type Crb.
 
-## Crb–a regulator of ZA integrity via actomyosin dynamics?
+### Crb–a regulator of ZA integrity via actomyosin dynamics?
 
 Given the observation that at early stages of embryonic development the PBM is required for ZA stability, and that the CrbY10A mutant protein has an intact PBM, it is possible that during DC, Crb-mediated regulation of actomyosin dynamics impacts on ZA stability. Interestingly, DPak is not only a regulator of actomyosin dynamics, but is also involved in supporting ZA stability, both in Drosophila and in mammalian cells (Lozano et al., 2008; Braga et al., 2000; Akhtar and Hotchin, 2001; Pirraglia et al., 2010; Menzel et al., 2007; 2008). The role of DPak itself in DC morphogenesis is still controversial. Previous work showed that cell shape changes in the AS occur normally in embryos lacking maternal and zygotic Dpak and that inhibition of DPak in the AS does not prevent apical constriction of amnioserosa cells (Conder et al., 2004). However, wild-type embryos expressing Pak-AID in the AS show defects in head involution and DC, which are stronger than those of embryos devoid of maternal and zygotic DPak. This led the authors to suggest that Pak-AID may also affect the activity of a second kinase, Pak3, in the AS (Conder et al., 2004). Thus, whether inhibition of DPak, Pak3 or both upon expression of Pak-AID in foscrbY10A embryos accounts for the rescuing effect of the DC phenotype, including rescue of the ZA, remains to be clarified.
 
@@ -223,7 +592,7 @@ How can DPak regulate ZA integrity? ZA remodelling is essential for morphogenesi
 
 On the other hand, misregulation of actomyosin activity is not always associated with defects in ZA stability and integrity of the AS. Expressing a constitutively active form of MLCK to increase myosin II activity or over-expression of RhoGEF2, an activator of Rho1, results in an increase in the number and density of actin foci without affecting the integrity of the AS (Azevedo et al., 2011; Fischer et al., 2014), which could be due to the use of a weak GAL4 driver. Alternatively, the difference to our results could be explained by the fact that these authors performed the over-expression in a background with more than two copies of E-cad (using a ubi-DE-cad::GFP line), while we performed the experiments in a knock-in DE-cad::GFP line (Huang et al., 2009; 2011), which thus may represent a more sensitive background.
 
-## Crb–an organiser of a platform to link the ZA with the actomyosin network?
+### Crb–an organiser of a platform to link the ZA with the actomyosin network?
 
 Another possibility to interpret our results is that Crb, or an interacting protein, couples the actomyosin network and the ZA. During gastrulation in C. elegans a molecular clutch has been postulated to connect the myosin network with the adhesion sites to transmit the force generated by the actomyosin contractions (Roh-Johnson et al., 2012). In Drosophila, the actomyosin contractions in the AS are initially uncoupled from apical contractions and hence the ZA (Solon et al., 2009; Gorfinkiel et al., 2009; Blanchard et al., 2010). Successive rows of amnioserosa cells are then sequentially stabilised in a contracted state, driving further contraction of the tissue. The surface stabilization mechanism is not known, but is likely to involve an increase in cellular stiffness [reviewed in (Paluch and Heisenberg, 2009)]. In foscrbY10A embryos the actomyosin foci in the AS emerge prematurely before the onset of germ band retraction, whereas in wild-type these foci are more abundant after the end of germ band retraction (Figure 2—figure supplement 2 and data not shown). Thus, the early over-contraction of the actomyosin in foscrbY10A embryos may induce a premature coupling to the ZA, thus disrupting germ band retraction and DC. An interesting candidate for this coupling is the protein Canoe, which binds to α-catenin (Sawyer et al., 2009; Pokutta et al., 2002), and whose absence results in a DC phenotype (Jürgens et al., 1984; Takahashi et al., 1998; Boettner et al., 2003; Choi et al., 2011). Absence of Canoe induces the detachment of the actomyosin apparatus from cell-cell junctions during Drosophila mesoderm invagination (Sawyer et al., 2009; 2011).
 
@@ -231,26 +600,362 @@ In conclusion, we show a novel function of the FBM of Crb as an essential regula
 
 ## Materials and Methods
 
-## Fly stocks (see Table 2)
+### Fly stocks (see Table 2)
+
+**Table 2.**
+ List of fly stocks used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fly stock</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>w</td>
+      <td>All stocks have the w* or w1118 background</td>
+    </tr>
+    <tr>
+      <td>w;foscrb w;foscrbY10F w;foscrbY10A</td>
+      <td>Flies expressing fosmid variants of crb under the control of the endogenous promoter and inserted into the landing site attP40 on 2nd chromosome; described in (Klose et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>w;;crb11A22/TTG</td>
+      <td>crb null allele; BSC 3448</td>
+    </tr>
+    <tr>
+      <td>w;;crbGX24/TTG</td>
+      <td>crb null allele (Huang et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>w;;yrt∆75acrb11A22/TTG</td>
+      <td>yrt protein null allele recombined with the crb11A22 allele (Laprise et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>w;;pucE69/TTG</td>
+      <td>lacZ enhancer trap in the puc locus, a read-out of JNK signalling (Ring and Martinez Arias, 1993; Martín-Blanco et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>w;SCAR∆37/CTG</td>
+      <td>Loss of function allele (Zallen et al., 2002); BSC 8754</td>
+    </tr>
+    <tr>
+      <td>w;;Arp3EP3640/TTG</td>
+      <td>generated by Berkeley Drosophila Genome Project (Hudson and Cooley, 2002); BSC 17149</td>
+    </tr>
+    <tr>
+      <td>w;ex697/CTG</td>
+      <td>lacZ enhancer trap in the ex locus; kindly provided by Nick Tapon</td>
+    </tr>
+    <tr>
+      <td>w;nub1Arpc1Q25st FRT40A/CTG</td>
+      <td>Nonsense mutation at Gln25 (CAG→TAG); behaves as a null mutant (Hudson and Cooley, 2002); BSC 9135</td>
+    </tr>
+    <tr>
+      <td>w flw6/FTG</td>
+      <td>Amorphic allele (Raghavan et al., 2000); BSC 23693</td>
+    </tr>
+    <tr>
+      <td>y w rok2 FRT19A/FTG</td>
+      <td>Encodes the first 21 amino acids of rok followed by a 35 aa random peptide and a stop codon (Winter et al., 2001); BSC 6666</td>
+    </tr>
+    <tr>
+      <td>w;Rho11B/CTG</td>
+      <td>Rho1 loss of function allele; BSC 9477</td>
+    </tr>
+    <tr>
+      <td>w;DE-cad::GFP</td>
+      <td>DE-cadherin fused with GFP knock-in allele; homozygous viable (Huang et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>w;DE-cad::mTomato</td>
+      <td>DE-cadherin fused with mTomato knock-in allele; homozygous viable (Huang et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>w;Zipper::GFP</td>
+      <td>Protein trap line: Zipper fused with GFP under endogenous promoter; homozygous viable; BSC 51564.</td>
+    </tr>
+    <tr>
+      <td>w;sqh::Utrophin::GFP</td>
+      <td>Actin binding domain of human Utrophin fused with GFP under the control of the sqh promoter (Rauzi et al., 2010).</td>
+    </tr>
+    <tr>
+      <td>w;;Sas::Venus</td>
+      <td>On 3rd; Stranded at Second fused with Venus under tubulin promoter (Firmino et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>w; GAL4332.2</td>
+      <td>On 2nd; expresses GAL4 in amnioserosa; BSC 5398</td>
+    </tr>
+    <tr>
+      <td>w; UAS-Apoliner</td>
+      <td>On 2nd; engineered apoptotic reporter (Bardet et al., 2008); BSC 32122</td>
+    </tr>
+    <tr>
+      <td>w; UAS-flw-HA</td>
+      <td>On 2nd; HA-tagged flw protein under UAS control; BSC 23703</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-Rho1N19</td>
+      <td>On 3rd; dominant negative Rho1 under the control of UAS; BSC 7328</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-RacN17</td>
+      <td>On 3rd; dominant negative Rac under the control of UAS; BSC 6292</td>
+    </tr>
+    <tr>
+      <td>w; UAS-Cdc47N17</td>
+      <td>On 2nd; negative Cdc42 under the control of UAS; BSC 6288. The stock w;DE-cad::GFP,UAS-Cdc42N17/(CTG);crb11A22,UAS-Actin::RFP/TM6B-YFP or TTG was not possible to obtain, probably because the expression of CdcN17, induced by the GAL4 from the balancer chromosome is detrimental.</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-moeT559D-myc</td>
+      <td>On 2rd; phosphomimetic Moesin under the control of UAS; BSC 8630</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-moe-myc</td>
+      <td>On 3rd; myc-tagged Moesin under the control of UAS; BSC 52236</td>
+    </tr>
+    <tr>
+      <td>w; UAS-Pak-myr</td>
+      <td>On 2nd: constitutively-active, membrane-bound Pak under UAS control; BSC 8804</td>
+    </tr>
+    <tr>
+      <td>w; UAS-Pak-AID</td>
+      <td>On 2nd; Pak autoinhibitory domain under UAS control; kindly provided by Nicholas Harden (Conder et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-Act::RFP</td>
+      <td>On 3rd; RFP-tagged Act5C under UAS control; BSC 24779</td>
+    </tr>
+    <tr>
+      <td>w;; UAS-rok-CAT-KG</td>
+      <td>On 3rd; a kinase-dead rok under UAS control; BSC 6671</td>
+    </tr>
+    <tr>
+      <td>FTG</td>
+      <td>Balancer on 1st FM7c, twi-GAL4 UAS-EGFP; from BSC 6873</td>
+    </tr>
+    <tr>
+      <td>CTG</td>
+      <td>Balancer on 2nd CyO, twi-GAL4 UAS-EGFP; from BSC 6662</td>
+    </tr>
+    <tr>
+      <td>TTG</td>
+      <td>Balancer on 3rd TM3, twi-GAL4 UAS-EGFP Sb1 Ser1; from BSC 6663</td>
+    </tr>
+    <tr>
+      <td>TM6B-YFP</td>
+      <td>Balancer on 3rdTM6B, Dfd-EYFP, Sb1 Tb1 ca1; from BSC 8704</td>
+    </tr>
+  </tbody>
+</table>
+
+_BSC - Bloomington stock center; DGRC - Drosophila Genetic Resource Center._
 
 Flies were maintained at 25ºC on standard food. All the mutant alleles where balanced over fluorescent balancers to identify the homozygous mutants in fixed embryos or live imaging microscopy (see below). All crosses and analyses were carried in a crb null background (crbGX24 or crb11A22, homozygous or trans-heterozygous), so the expression of the different variants of Crb is exclusively provided by the fosmid (Klose et al., 2013). The different UAS-lines where recombined with the DE-cad::GFP knock-in allele or the null crb11A22 allele. The driver line GAL4332.3 was recombined with each of the different fosmid alleles.
 
-## Embryo collection and antibody staining
+### Embryo collection and antibody staining
 
-Embryo stage refers to the foscrb;crbGX24 genotype morphology accordingly to (Campos-Ortega and Hartenstein, 1985). All genotypes (foscrb;crbGX24, foscrbY10F;crbGX24 and foscrbY10A;crbGX24) were collected under the same conditions, at the same time and during the same period (indicated in the respective figure legend). In this way, the comparison between foscrb or foscrbY10F and foscrbY10A mutant phenotypes show the differences observed at a specific time after egg laying. Embryos were collected on apple juice plates at 25ºC and then incubated for the appropriate times at 25ºC or 28ºC, dechorionated in 3% sodium hypochlorite for 3 min, fixed for 20 min in 4% formaldehyde in phosphate-buffered saline (PBS) solution/heptane V/V 1:1. Vitelline membrane was removed by strong shaking in heptane/methanol v/v 1:1, except for the staining of actin in which the vitelline membrane was removed by strong shaking in 80% ethanol. Embryos were blocked for 2 hr at room temperature in PBT (PBS + 0.1% Triton X-100) + 5% normal horse serum (Sigma-Aldrich H1270, St. Louis, Missouri, USA). Embryos were incubated for 2 hr at room temperature or overnight at 4ºC with primary antibodies (see Table 3). For analysis of Zipper localisation, we used the protein trap line Zipper::GFP (see Table 2) and the staining was done using the anti-GFP antibody. Incubations with the appropriate secondary antibodies were performed for 1 hr at room temperature. Stained embryos were mounted in glycerin propyl gallate (75% glycerol, 50 mg/mL propyl gallate) and visualized using a Zeiss LSM 780 NLO confocal microscope (ZEISS Microscopy, Jena, Germany) with a C-Apochromat 40x/1.2W Corr objective with the correction collar at 0.18 (at this position the brightness and contrast was enhanced). To distinguish homozygous embryos, in all the stainings an anti-GFP antibody was included to stain for the balancer-provided GFP. All images for a given marker in different genotypes were taken under the same settings for laser power, PMT gain and offset. Maximal projections, merging and LUT-pseudocolor assignment was performed using Fiji (Schindelin et al., 2012). For the FIRE-LUT pseudocolor 0 is black and 255 is white. Mounting was done in Adobe Photoshop CC 2015.0.1 and when brightness and contrast was adjusted, the modifications were equally applied to all the set of images for a given marker.10.7554/eLife.07398.043Table 3.Antibodies and probes employed.DOI: http://dx.doi.org/10.7554/eLife.07398.043DilutionSourcePhalloidin Alexa Fluor 5551:500InvitrogenAlexa Fluor 488-, 568-, and 647-conjugated1:500InvitrogenRat antibodiesanti-Crb2.81:500(Richard et al., 2006)anti-DE-cadherin1:20DSHB DCAD2anti-Yurt1:100(Laprise et al., 2006)Mouse antibodiesanti-α-Spectrin1:25DSHB 3A9anti-β-galactosidase1:200DSHB 40-1aanti-Coracle1:25DSHB C566.9anti-Crb-Cq41:300DSHB Cq4anti-Disc large1:100DSHB 4F3anti-Enabled1:100DSHB 5G2anti-GFP1:500Roche 11814460001 (Mannheim, Germany)anti-Hindsight1:100DSHB 1G9anti-Integrin βPS1:2DSHB CF.6G11anti-Phosphotyrosine1:100BD Transduction Laboratories cat. no. 610000anti-SCAR1:25DSHB P1C1Rabbit antibodiesanti-Bazooka1:500kindly provided by A. Wodarzanti-DAAM1:3000kindly provided by József Mihály (unpublished)anti-Diaphanous1:5000kindly provided by Steven A. Wasserman (Afshar et al., 2000)anti-DPatj1:1000(Richard et al., 2006)anti-Echinoid1:5000kindly provided by Laura Nilson (Laplante and Nilson, 2006)anti-Expanded1:300(Boedigheimer and Laughon, 1993)anti-GFP1:500Invitrogenanti-DPak1:8000kindly provided by Nicholas Harden (Harden et al., 1996)anti-Polychaetoid1:5000kindly provided by Sarah Bray (Djiane et al., 2011)anti-Phospho-Moesin1:100Cell Signaling Technology 3150 (Danvers, Massachusetts, USA)anti-Stranded at second1:500kindly provided by E. Organ and D. CavenerInvitrogen, Molecular Probes (Eugene, Oregon, USA); DSHB - Developmental Studies Hybridoma Bank (Iowa city, Iowa, USA)
+Embryo stage refers to the foscrb;crbGX24 genotype morphology accordingly to (Campos-Ortega and Hartenstein, 1985). All genotypes (foscrb;crbGX24, foscrbY10F;crbGX24 and foscrbY10A;crbGX24) were collected under the same conditions, at the same time and during the same period (indicated in the respective figure legend). In this way, the comparison between foscrb or foscrbY10F and foscrbY10A mutant phenotypes show the differences observed at a specific time after egg laying. Embryos were collected on apple juice plates at 25ºC and then incubated for the appropriate times at 25ºC or 28ºC, dechorionated in 3% sodium hypochlorite for 3 min, fixed for 20 min in 4% formaldehyde in phosphate-buffered saline (PBS) solution/heptane V/V 1:1. Vitelline membrane was removed by strong shaking in heptane/methanol v/v 1:1, except for the staining of actin in which the vitelline membrane was removed by strong shaking in 80% ethanol. Embryos were blocked for 2 hr at room temperature in PBT (PBS + 0.1% Triton X-100) + 5% normal horse serum (Sigma-Aldrich H1270, St. Louis, Missouri, USA). Embryos were incubated for 2 hr at room temperature or overnight at 4ºC with primary antibodies (see Table 3). For analysis of Zipper localisation, we used the protein trap line Zipper::GFP (see Table 2) and the staining was done using the anti-GFP antibody. Incubations with the appropriate secondary antibodies were performed for 1 hr at room temperature. Stained embryos were mounted in glycerin propyl gallate (75% glycerol, 50 mg/mL propyl gallate) and visualized using a Zeiss LSM 780 NLO confocal microscope (ZEISS Microscopy, Jena, Germany) with a C-Apochromat 40x/1.2W Corr objective with the correction collar at 0.18 (at this position the brightness and contrast was enhanced). To distinguish homozygous embryos, in all the stainings an anti-GFP antibody was included to stain for the balancer-provided GFP. All images for a given marker in different genotypes were taken under the same settings for laser power, PMT gain and offset. Maximal projections, merging and LUT-pseudocolor assignment was performed using Fiji (Schindelin et al., 2012). For the FIRE-LUT pseudocolor 0 is black and 255 is white. Mounting was done in Adobe Photoshop CC 2015.0.1 and when brightness and contrast was adjusted, the modifications were equally applied to all the set of images for a given marker.
 
-## Cuticle preparation
+**Table 3.**
+ Antibodies and probes employed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Dilution</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phalloidin Alexa Fluor 555</td>
+      <td>1:500</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor 488-, 568-, and 647-conjugated</td>
+      <td>1:500</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rat antibodies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-Crb2.8</td>
+      <td>1:500</td>
+      <td>(Richard et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>anti-DE-cadherin</td>
+      <td>1:20</td>
+      <td>DSHB DCAD2</td>
+    </tr>
+    <tr>
+      <td>anti-Yurt</td>
+      <td>1:100</td>
+      <td>(Laprise et al., 2006)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse antibodies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-α-Spectrin</td>
+      <td>1:25</td>
+      <td>DSHB 3A9</td>
+    </tr>
+    <tr>
+      <td>anti-β-galactosidase</td>
+      <td>1:200</td>
+      <td>DSHB 40-1a</td>
+    </tr>
+    <tr>
+      <td>anti-Coracle</td>
+      <td>1:25</td>
+      <td>DSHB C566.9</td>
+    </tr>
+    <tr>
+      <td>anti-Crb-Cq4</td>
+      <td>1:300</td>
+      <td>DSHB Cq4</td>
+    </tr>
+    <tr>
+      <td>anti-Disc large</td>
+      <td>1:100</td>
+      <td>DSHB 4F3</td>
+    </tr>
+    <tr>
+      <td>anti-Enabled</td>
+      <td>1:100</td>
+      <td>DSHB 5G2</td>
+    </tr>
+    <tr>
+      <td>anti-GFP</td>
+      <td>1:500</td>
+      <td>Roche 11814460001 (Mannheim, Germany)</td>
+    </tr>
+    <tr>
+      <td>anti-Hindsight</td>
+      <td>1:100</td>
+      <td>DSHB 1G9</td>
+    </tr>
+    <tr>
+      <td>anti-Integrin βPS</td>
+      <td>1:2</td>
+      <td>DSHB CF.6G11</td>
+    </tr>
+    <tr>
+      <td>anti-Phosphotyrosine</td>
+      <td>1:100</td>
+      <td>BD Transduction Laboratories cat. no. 610000</td>
+    </tr>
+    <tr>
+      <td>anti-SCAR</td>
+      <td>1:25</td>
+      <td>DSHB P1C1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rabbit antibodies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-Bazooka</td>
+      <td>1:500</td>
+      <td>kindly provided by A. Wodarz</td>
+    </tr>
+    <tr>
+      <td>anti-DAAM</td>
+      <td>1:3000</td>
+      <td>kindly provided by József Mihály (unpublished)</td>
+    </tr>
+    <tr>
+      <td>anti-Diaphanous</td>
+      <td>1:5000</td>
+      <td>kindly provided by Steven A. Wasserman (Afshar et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>anti-DPatj</td>
+      <td>1:1000</td>
+      <td>(Richard et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>anti-Echinoid</td>
+      <td>1:5000</td>
+      <td>kindly provided by Laura Nilson (Laplante and Nilson, 2006)</td>
+    </tr>
+    <tr>
+      <td>anti-Expanded</td>
+      <td>1:300</td>
+      <td>(Boedigheimer and Laughon, 1993)</td>
+    </tr>
+    <tr>
+      <td>anti-GFP</td>
+      <td>1:500</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>anti-DPak</td>
+      <td>1:8000</td>
+      <td>kindly provided by Nicholas Harden (Harden et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>anti-Polychaetoid</td>
+      <td>1:5000</td>
+      <td>kindly provided by Sarah Bray (Djiane et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>anti-Phospho-Moesin</td>
+      <td>1:100</td>
+      <td>Cell Signaling Technology 3150 (Danvers, Massachusetts, USA)</td>
+    </tr>
+    <tr>
+      <td>anti-Stranded at second</td>
+      <td>1:500</td>
+      <td>kindly provided by E. Organ and D. Cavener</td>
+    </tr>
+  </tbody>
+</table>
+
+_Invitrogen, Molecular Probes (Eugene, Oregon, USA); DSHB - Developmental Studies Hybridoma Bank (Iowa city, Iowa, USA)_
+
+### Cuticle preparation
 
 Embryos were collected overnight on apple juice plates at 25ºC and then incubated for > 6 hr at 28ºC. All the GFP or YFP positive eggs (the GFP or YFP is provided by the balancer) were removed and the remaining eggs where maintained at 25ºC. The next day, the plates were screened again to remove remaining GFP/YFP positive eggs/larvae. Thus, all the remaining eggs/larvae had a crb null background (crbGX24 or crb11A22, homozygous or trans-heterozygous). These eggs/larvae were collected, dechorionated in 3% sodium hypochlorite for 3 min, mounted on Hoyer’s medium (gum arabic 30 g, chloral hydrate 200 g, glycerol 20 g, H2O 50 ml), and the slide was incubated overnight at 60ºC. In this way, all the eggs laid in the plate were at least >28 hr at 25º, enough time to let the larvae hatch when they are viable. The preparations were analysed by phase contrast with a Zeiss Axio Imager.Z1 microscope with an EC Plan-NEOFLUAR 10X/0.3 objective.
 
-## Scanning electron microscopy (SEM)
+### Scanning electron microscopy (SEM)
 
 Embryos were collected on apple juice plates for 1 hr at 25ºC and then incubated for 8 hr at 28ºC, dechorionated in 3% sodium hypochlorite for 2 min 30 sec, and fixed for 30 min in 25% glutaraldehyde/heptane v/v 1:1. Devitellinization was done by hand in 25% glutaraldehyde. Then, the embryos were postfixed in modified Karnovsky (2% paraformaldehyde/2% glutaraldehyde in 50 mM HEPES) followed by 1% osmium tetroxide in PBS, dehydrated in a graded series of ethanol, transferred to microporous capsules (78 μm pore size, Plano Cat. 4614) and critical point dried using the Leica CPD 300 (Leica Microsystems GmbH, Wetzlar, Germany). Embryos were mounted on 12 mm aluminium stubs and sputter coated with gold using a Leica Baltec SCD 050. Samples were analysed with a Jeol JSM 7500F cold field emission SEM (JEOL Ltd, Tokyo, Japan) at 10 kV acceleration voltage.
 
-## Live imaging
+### Live imaging
 
 Embryos were collected and incubated as describe above (see 'Embryo collection and antibody staining'). In the analysis of pulsed contractions in the AS, sequential collections of 30 min interspaced by 1 hr between each genotype allowed us to analyse 2–3 embryos of each genotype on the same session, so the acquisition conditions for all the genotypes were identical. To eliminate crbGX24 or crb11A22 heterozygous embryos, all GFP or YFP positive embryos were removed. The remaining eggs were dechorionated by hand or in 3% sodium hypochlorite for 2 min, mounted and oriented in a bottom glass Petri dish (MatTek P35G-1.5.14-C, Ashland, Massachusetts, USA). Previously, the glass was cover with a thin layer of glue (adhesive dissolved from double sided tape in heptane). The embryos were covered with water and visualized by multi-position scanning using a Zeiss LSM 780 NLO confocal microscope with a W Plan-Apochromat 40x/1.0 objective. Excitation was performed with 488 nm for GFP or YFP, and 561 nm for RFP or mTomato from an Argon Multiline Laser. The pinhole was adjusted for faster acquisition, so the step sizes correspond to 2.01 μm (Videos 1, 2, 7, 11, 13, 14), 2.3 μm (Videos 4, 5, 6), 1.2 μm (Video 8, 12), 1.46 μm (Videos 3 and 9). 4D-Hyperstacks were processed with Fiji (Schindelin et al., 2012) and the movies were rendered with Adobe Photoshop CC 2015.0.1. Under these conditions we observed that w;foscrb,DE-cad::GFP;crbGX24 embryos imaged for >7 hr at 5 min time lapse hatched and survived without showing any obvious damage (data not shown).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed with GraphPad Prism 6. Results are expressed as means ± SD. Statistical significance was evaluated in a one-way analysis of variance (ANOVA) followed by a Dunnett’s multiple-comparison test. In the analysis of the statistical significance of the data presented in the Figure 7—figure supplement 1, the percentages were first converted to arcsin values and then analysed by a one-way-ANOVA followed by a Dunnet’s multiple comparisons test.

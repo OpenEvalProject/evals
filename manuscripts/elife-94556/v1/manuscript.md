@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 W. Harry Feinstone Department of Microbiology and Immunology, The Johns Hopkins Bloomberg School of Public Health Baltimore United States
+1. W. Harry Feinstone Department of Microbiology and Immunology, The Johns Hopkins Bloomberg School of Public Health Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 

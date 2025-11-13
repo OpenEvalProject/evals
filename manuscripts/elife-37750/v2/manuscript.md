@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.37750.001 We have developed a generally adaptable, novel high-throughput Viral Chromosome Conformation Capture assay (V3C-seq) for use in trans that allows genome-wide identification of the direct interactions of a lytic virus genome with distinct regions of the cellular chromosome. Upon infection, we found that the parvovirus Minute Virus of Mice (MVM) genome initially associated with sites of cellular DNA damage that in mock-infected cells also exhibited DNA damage as cells progressed through S-phase. As infection proceeded, new DNA damage sites were induced, and virus subsequently also associated with these. Sites of association identified biochemically were confirmed microscopically and MVM could be targeted specifically to artificially induced sites of DNA damage. Thus, MVM established replication at cellular DNA damage sites, which provide replication and expression machinery, and as cellular DNA damage accrued, virus spread additionally to newly damaged sites to amplify infection. MVM-associated sites overlap significantly with previously identified topologically-associated domains (TADs).
+We have developed a generally adaptable, novel high-throughput Viral Chromosome Conformation Capture assay (V3C-seq) for use in trans that allows genome-wide identification of the direct interactions of a lytic virus genome with distinct regions of the cellular chromosome. Upon infection, we found that the parvovirus Minute Virus of Mice (MVM) genome initially associated with sites of cellular DNA damage that in mock-infected cells also exhibited DNA damage as cells progressed through S-phase. As infection proceeded, new DNA damage sites were induced, and virus subsequently also associated with these. Sites of association identified biochemically were confirmed microscopically and MVM could be targeted specifically to artificially induced sites of DNA damage. Thus, MVM established replication at cellular DNA damage sites, which provide replication and expression machinery, and as cellular DNA damage accrued, virus spread additionally to newly damaged sites to amplify infection. MVM-associated sites overlap significantly with previously identified topologically-associated domains (TADs).
 
 ## Introduction
 
@@ -46,13 +46,25 @@ The development of Chromosome Conformation Capture (3C) technologies has enabled
 
 ## Results
 
-## The replicating MVM genome localized adjacent to regions of the cellular genome undergoing a DDR
+### The replicating MVM genome localized adjacent to regions of the cellular genome undergoing a DDR
 
 As MVM infection progresses through S-phase, it induces cellular DNA damage and evokes a robust, ATM-dependent DNA damage response (DDR) characterized by a pre-mitotic cell cycle arrest that is both p21 and CHK1 independent (Adeyemi and Pintel, 2012, 2014). During this block, virus replication proceeds for many hours, and ATM inhibitors reduce ongoing viral replication (Adeyemi et al., 2010). Standard confocal microscopy demonstrated previously that numerous cell cycle and DDR effector proteins, RNA polymerase II, as well as DNA polymerase-α and δ are found associated with MVM replication centers called APAR bodies (Adeyemi et al., 2010; Bashir et al., 2000; Kollek et al., 1982; Ruiz et al., 2011). Similar examples of such confocal images of DDR proteins associated with APAR bodies, but not the irrelevant transcription factor NR5A2 (Duggavathi et al., 2008), processed with deconvolution, can be seen in Figure 1A. Comparison of the median three-dimensional distance between FANCD2 and γ-H2AX - which localize to stalled replication forks where they facilitate DNA repair (Kim et al., 2018; Lossaint et al., 2013; Madireddy et al., 2016), and the center of APAR bodies - identified by MVM NS1 staining, indicated that at 16 hr post infection (hpi) and release (representing approximately 8–10 hr into S-phase in our para-synchronization protocol), they localized closely with MVM replication centers (Figure 1B). This was in contrast to the irrelevant transcription factor NR5A2 (Duggavathi et al., 2008) which exhibited a diffuse localization (Figure 1B). However, confocal super resolution imaging (Airyscan) demonstrated that γ-H2AX seemingly localized to the periphery of APAR bodies (Figure 1C). Super-resolution imaging using the GSD-STORM platform also demonstrated that γ-H2AX, and FANCD2 (Figure 1D), localized to the periphery of APAR bodies (Figure 1D). γ-H2AX characteristically amplifies on damaged DNA as megabase (Mb)-sized platforms, making the possibility of marking the 5 kb MVM genome with phosphorylated histone H2AX less likely (Rogakou et al., 1999). These results suggested that, MVM replication centers may localize to and expand adjacent to sites of cellular chromatin undergoing DNA damage, where replication, expression and DDR factors reside.
 
-## The MVM genome associated directly with discrete sites on the cellular genome
+### The MVM genome associated directly with discrete sites on the cellular genome
 
 To characterize the association of the MVM genome with the cellular genome during lytic infection more directly we have developed a high-throughput chromosome conformation capture (3C) assay for use in trans. 3C assays have been typically used to identify long-range interactions between regions of a single chromosome (Dekker et al., 2013). Our analysis, which we term V3C-seq (Viral Chromosome Conformation Capture Sequencing) allowed us to identify direct interactions between the linear MVMp genome and the cellular chromosome in an infected cell population on a genome-wide scale in an unbiased manner. V3C-seq assays utilize formaldehyde-mediated crosslinking to first ‘freeze’ the locations of the viral and cellular genomes at various points during infection. Samples are then digested and ligated under conditions that favor intramolecular interaction, and the resultant novel virus-cell DNA fragments are subjected to high-throughput sequencing (Figure 2A). The assay provides a precise genomic map of the sites with which viral DNA interacts, and the frequency with which unique individual linked fragments are generated provides quantification of these interactions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top Schematic of the V3C-seq assay showing how MVM- host cell genomic proximity is frozen by crosslinking, followed by digesting (with HindIII) and intramolecularly ligating to generate novel MVVM-host cell DNA hybrids. This DNA library is subjected to a second round of digestion with a frequently-digesting 4 base-pair endonuclease (NlaIII), before circularizing and generating a sequencing library of all hybrid fragments that associate with the MVM genome. Bottom Detailed schematic of the duplex form of MVMp genome containing the primary restriction enzyme site (HindIII) with its associated inverse PCR primer (blue arrow), and the secondary restriction enzyme site (NlaIII) with its associated inverse PCR primer (orange arrow) utilized for circularization. The single stranded version of the genome is depicted in solid black line and complementary strand in dotted black line. (B) Associations of the MVM genome with sites on the cellular DNA mapped using V3C-seq assays are presented. Representative examples of murine chromosome 17 (top) and chromosome 19 (bottom) are shown for three timepoints post-infection: 12 hpi (red), 16 hpi (blue) and 20 hpi (green). The data represents an average of at least 2 independent experiments with y-axis values reflecting the reads per million (rpm) sequence reads averaged over 5 contiguous fragments (as described in Materials and methods). The y-axis scale is from 1 to 6 rpm, whereas the x-axis is 95 Mb for chromosome 17 (top) and 61 Mb for chromosome 19 (bottom). Large genomic regions that associate with MVM, termed Virus Associated Domains (VADs), are shown by red boxes, but this indication is not meant to restrict this nomenclature to regions of this size. (C) Genomic regions spanned by V3C-seq peaks greater than 5 total reads were selected, and the common regions between different timepoints were intersected using BEDTools (see Materials and methods). In the Venn diagrams on the left panel, the red set represents genomic regions that were covered by 12 hpi, blue represents 16 hpi and green represents 20 hpi. The regions common to 12 and 16 hpi are shown in purple (top), while 16 and 20 hpi are in yellow (bottom). The percent of genomic regions that are common are depicted in the intersected set. Statistical significance of the overlap was computed using Jaccard analysis on BEDtools (right panels, red crosses) between the top ten thousand V3C-seq peaks at 12, 16 and 20 hpi timepoints, with control comparisons permuted by determining the extent of overlap with a randomly generated peak file containing domains of equivalent V3C-seq peaks (represented by black squares). (D) 3C-qPCR was performed on synchronized murine A9 cells infected with MVM with an MOI of 5 for 16 hr, as described in Materials and methods, and then analyzed with the viewpoint on the MVM genome. The association of MVM with a HindIII site in the Chr19 VAD (at position 19qA) was quantified relative to nearest neighbor interactions of contiguous HindIII fragments on the Ercc3 locus. 3C-qPCR analysis was performed in (E), parasynchronized NIH-3T3 cells infected for 12 and 16 hr with MVMp, and (F), EL4 cells with MVMi, assayed from the MVM viewpoint. Association was tested with four VADs (10qC1, 19qA, 15qE1 and 17qA3.3) and a negative control site on Chromosome 17 (17qE1.1). Data is presented as mean $\pm$ SEM of three independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) MVM replication over the timecourse of viral infection in parasynchronized murine A9 cells. A9 cells were infected at an MOI of 5. Cells were harvested at the indicated timepoints and Southern blot was performed as described in Materials and methods. DNA content was measured by nanodrop and equal amount of DNA was loaded in each well. The blot was hybridized with radiolabeled MVM probe and single stranded DNA, and replicative intermediates monomer and dimer forms are indicated on the right. (B) MVM interaction sites on the mouse genome across independent replicates at different timepoints were compared pairwise, and presented in the form of a clustered heatmap of Spearman correlation coefficients on the Galaxy server (Afgan et al., 2016; Ramírez et al., 2016). The timepoints and experimental replicate are indicated on the X and Y axes. Blue squares designate high correlation and red squares designate low correlation, and the spectrum of colors to correlation is shown below the heatmap.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** 12 hpi (red), 16 hpi (blue), 20 hpi (orange) and 24 hpi (black) timepoints are shown. The y-axis values are depicted on the right hand side. Since MVM interaction at 24 hpi did not show a characteristic distribution and had high rpm values (consistent with overwhelming levels of MVM replication in the host cell nucleus), it was not used for quantile normalization of interaction sites at 12, 16 and 20 hpi. Chromosomes 17 and 19 are presented in Figure 2B.
 
 V3C-seq was performed in parasynchronized mouse A9 fibroblasts, the traditional host for MVM, at various times post-infection. A typical time-course of MVM infection is shown in Figure 2—figure supplement 1A. Assays utilized a viral viewpoint at a HindIII site at nucleotide 2651 and NlaIII site at 1899 in the MVMp genome, thereby capturing the interaction of the MVMp fragment containing both the viral P4 and P38 promoters upstream of the HindIII site. Clustering algorithms and visualization of interaction sites on the UCSC Genome Browser (Kent et al., 2002; Ramírez et al., 2016) revealed that by 12 hr post-infection and release (representing approximately 4–6 hr into S-phase) MVM genomes associated with discrete regions on most cellular chromosomes [Figure 2—figure supplements 1B and 2, (Kent et al., 2002)]. These cellular sites served as initial amplification points for MVM, and upon progression to 16 hpi, the virus both expanded at these regions and associated with new sites (Figure 2B, Figure 2—figure supplement 2). We term these sites of association Virus Associated Domains, or VADs. The clusters of interacting sites on each chromosome ranged in density and in size (Figure 2—figure supplement 2), from approximately 1–2 Mb to larger 5–15 Mb-size domains (chromosomes 17 and 19 are shown in Figure 2B). While most chromosomes contained multiple small VADS, many contained 1–3 larger VADs of 5–15 Mb size. Chromosomes 1, 13, 18, X and Y had fewer discernible interaction sites. The larger VADs in Figure 2B are boxed for comparison purposes but is not meant to restrict the designation of VADs to a particular size.
 
@@ -62,11 +74,23 @@ We chose to validate the V3C assay by confirming the association of MVM with one
 
 Focused 3C-qPCR in parasynchronized NIH-3T3 fibroblasts infected with MVMp (Figure 2E), and EL4 lymphocyte cells infected with the lymphotrophic variant MVMi (Figure 2F) both showed association with a subset of the VADs identified in A9 cells (Figure 2B, Figure 2—figure supplement 2), which suggested a common mechanism may exist for the establishment of MVM replication sites in these mouse cell lines. Differential rates of MVM replication and cell cycle kinetics in A9 compared to NIH-3T3 and EL4 cells precluded performance of 3C-qPCR assays simultaneously in these systems. Together, we interpret our results as establishing that V3C-seq is a valid means to map the interaction of a lytic linear DNA virus with specific sites on the host cell genome.
 
-## MVM infection induced distinct sites of cellular DNA damage as demonstrated by ChIP-seq for γ-H2AX
+### MVM infection induced distinct sites of cellular DNA damage as demonstrated by ChIP-seq for γ-H2AX
 
 As described above, super-resolution microscopy suggested that MVM replication centers seemingly associated adjacent to genomic sites containing factors involved in replication, expression, and the DDR. ERFs have such characteristics in uninfected cells, and as mentioned, MVM continues to induce DNA damage as infection proceeds (Adeyemi et al., 2010; Barlow et al., 2013). Therefore, as we identified sites of viral interaction with the cellular genome, we looked for association with sites of cellular DNA damage.
 
 To identify sites of cellular DNA damage, we initially performed chromatin immunoprecipitation coupled with high-throughput sequencing (ChIP-seq, [Landt et al., 2012]) for γ-H2AX in parasynchronized A9 cells, either mock infected, infected with MVM, or mock infected and treated with hydroxyurea (HU). Results for algorithm-called peaks for chromosomes 17 and 19 are shown in Figure 3A, and for the complete murine genome is shown in Figure 3—figure supplement 1. Mock infected A9 cells (taken 12 hr post release, hpr) showed a significant number of sites of damage, as identified by γ-H2AX, as they passed into S-phase. These were likely ERFs, which accrue damage during replication (Figure 3A). Whole-genome peak analysis of all γ-H2AX bound regions revealed that approximately 55% of the sites identified in mock infected cells overlapped with those identified at 16 hr post-infection (hpi); approximately 55% of sites identified at 16 hpi were newly generated (Figure 3B, peak calling using EPIC and intersection using BEDtools, (Quinlan and Hall, 2010), as described in Materials and methods). By 16 hpi, sites of damage concentrated in distribution, and expanded in number (Figure 3A). At this point in infection MVM had begun to induce additional sites of DNA damage, as evident both by ChIP-seq and increased tail moments in Comet assays (Figure 3—figure supplement 2A). The majority of γ-H2AX-containing sites at 20 hpi were newly generated, coinciding with only 10% of the sites identified at 16 hpi, indicating the widespread induction of DNA damage by this point of infection. This can be seen more clearly in the magnified view of chromosomes 17 and 19 shown in Figure 3—figure supplement 2C. Interestingly, the γ-H2AX ChIP-seq regions identified at 16 hpi correlated well with γ-H2AX ChIP-seq performed following 12 hr treatment with HU (Figures 3A and 16 hpi vs HU). Approximately 51% of γ-H2AX peaks detected 16 hpi were shared with those induced after 12 hr treatment with HU, and conversely, approximately 26% of the peaks identified following treatment with HU were shared at 16 hpi. In order to confirm the statistical significance of the intersection analyses, the γ-H2AX peaks at indicated time points were intersected with randomly permuted peaks across the mouse genome and visualized as a Jaccard Plot (Figure 3B, far right).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative quantile normalized ChIP-seq plots of γ-H2AX binding to the cellular genome on Chromosome 17 (top) and Chromosome (19). The tracks represent γ-H2AX ChIP-seq peaks in A9 cells that are mock infected at 12 hr post release (green), MVM infected at 16 hpi (blue), 20 hpi (yellow), and HU treated A9 cells 12 hr (maroon). V3C-seq peaks at 16 hpi are also shown at the bottom for comparison (blue). Red rectangle denotes VAD sites, and y-axis values for ChIP-seq peaks have been restricted from 0 to 5 reads per million. (B) The EPIC-called ChIP-seq peaks at different timepoints for MVM infection were analyzed for coincident γ-H2AX binding using BEDTools (Quinlan and Hall, 2010), and the resulting distances covered on the genome were plotted on Venn Diagrams as percentage of total coverage. Statistical significance of the overlap was determined using Jaccard analysis on BEDtools (far right, red crosses), with a control comparison permuted by determining the extent of overlap with a randomly generated peak file with domains of equivalent size as ChIP-seq peaks (represented as black squares). (C) γ-H2AX peaks from ChIP-seq experiments were intersected with VAD peaks identified in Figure 1C for the corresponding timepoints (Mock γ-H2AX was intersected with 12 hpi). The percentage of total regions that coincided were calculated and plotted for VAD-associated γ-H2AX peaks (designated as ‘V3C-positive’), and γ-H2AX associated VAD-peaks. (D) Heatmap of MVM association with DNA damaged sites were generated using DeepTools on the Galaxy server (Afgan et al., 2016; Ramírez et al., 2016). The average V3C enrichment on 1 Megabase around γ-H2AX positive sites were determined and plotted as shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Occupancy in mock infected and HU treated cells is also shown. Chromosomes 17 and 19 are presented in Figure 3A. γ-H2AX binding at the different timepoints and treatments are compared with MVM interaction sites at 16 hpi assayed by V3C-seq.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Alkaline comet assays were performed in uninfected, doxorubicin treated (200 nM) or MVM infected murine A9 cells for 24 hr, and DNA fragmentation was visualized using immunofluorescence microscopy. (B) Immunoblot analysis of MVM infection in rodent F-111 cells pulsed with (or without) 2 mM HU for 4 hr prior to infection with MVM at an MOI of 10 for 20 hr. Cells were harvested as described and analyzed for MVM replication via assaying NS1 levels and γ-H2AX in the nuclear lysates. Beta-Actin levels were used as loading control for the immunoblots. (C) (Left) UCSC genome browser screenshots of the VAD regions on chromosomes 17 (17qA3.3) and 19 (19qA) demarcated by red boxes in Figure 3A. (Right) Representative UCSC genome browser screenshots of the red boxes in the left panel of Figure 3—figure supplement 2C at Narfl, Vwa7, Ehd1 and Slc29a2 loci containing SICER-called ChIP-seq peaks for gamma-H2AX in HU treated A9 cells and MVM interaction sites mapped by V3C-seq at 16 hpi.
 
 The MVM genome initiated infection at sites of cellular DNA damage that in mock infected cells also exhibited DNA damage as the cells cycled through S-phase, and as infection progressed, localized to additional sites of induced damage.
 
@@ -80,9 +104,21 @@ The strong correlation of MVM interaction sites with sites that in uninfected ce
 
 Cellular sites of DNA damage also often contain BRCA1, which binds DNA and can co-localize with γ-H2AX in DNA double-strand break repair foci, although typically in a more narrow pattern (Barlow et al., 2013). As expected, VADs also strongly associated with sites identified by BRCA1 ChIP-seq at 16 hr post-infection (Figure 4A, row 2). Furthermore, VADs also overlapped with BRCA1 and γ-H2AX sites in primary mouse cells induced with replication stress agents (Figure 4—figure supplement 1A and B), and characterized as ERFs, in previously published studies (Barlow et al., 2013). As MVM can infect transformed human cells, we also performed focused V3C-qPCR at 16 hpi in parasynchronized SV40-transformed human NB324K cells. As shown in Figure 4—figure supplement 1C, MVM localized to the previously characterized human fragile site FRA5H, but not FRA11F. MVM also associated weakly at this time point with the prototypical human fragile site, FRA3B.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative quantile normalized ChIP-seq plots of MVM-NS1 (purple) and BRCA1 (pink) binding to the cellular genome on Chromosome 17 (top) and Chromosome 19 (bottom), with γ-H2AX and V3C at 16 hpi. Red rectangle denotes VAD sites, and y-axis values for ChIP-seq peaks have been restricted from 0 to 5 reads per million. (B) The enrichment of NS1 (left), BRCA1 (middle) and γ-H2AX (right) around MVM-associated regions were calculated and plotted as heatmaps using DeepTools on the Galaxy server (Ramírez et al., 2016). (C) The fraction of NS1 and DDR-positive genomic regions that colocalized with V3C at 16 hpi were calculated using BEDTools, and presented as VAD-positive sites. A library of randomly generated ChIP-seq peaks on the mouse genome with the same fragment size as the called peaks was used as control and also intersected with the MVM-VADs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The comparisons are presented in the form of heatmaps for (A) BRCA1 binding (green) and (B) γ-H2AX modification (blue). (C) The spatial interaction of MVM with common fragile sites were assayed in parasynchronized human NB-324K cells infected with MVM for 16 hr. Focused 3C-qPCR was performed with Taqman probes on the MVM genome, and assayed for interaction with the prototypical human fragile site FRA3B, as well as two other sites FRA5H and FRA11F. Data is presented as mean ± SEM of three independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37750/elife-37750-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Hi-C contact maps in murine CH12 cells were visualized in comparison with MVM-V3C in A9 cells at 16 hpi (grey tracks on top) using the Juicebox data visualization platform (presented as red heatmaps, [Durand et al., 2016; Rao et al., 2014]). Representative contact maps are shown for Chromosomes: (A) 17, (B) 19, (C) 3 and (D) 7. Blue squares indicate robust VAD regions that coincide with Hi-C contact domains. (E) MVM interaction sites on the mouse genome identified by V3Cseq at 16 hpi was also overlayed with published chromatin marks (Kraushaar et al., 2013) for Type A chromatin (Rao et al., 2014) including tri-methylated histone H3 at lysine 36 (H3K36me3), acetylated histone H3 at lysine 27 (H3K27ac), mono-methylated histone H3 at lysine 4 (H3K4me1) and acetylated histone H3 at lysine 9 (H3K9ac) in Aphidicolin-induced NIH-3T3 cells (Kraushaar et al., 2013). Reads-per- million (rpm) values of the ChIP-seq pulldowns are indicated to the right of each corresponding histogram track.
+
 As an indirect confirmation of MVM recruitment to the cellular genome, we performed ChIP-seq for the MVM-NS1 protein, which binds covalently to the viral genome, and non-covalently to additional ACCAACCA consensus sequences throughout the MVM genome (Christensen et al., 1995). We reasoned that ChIP-seq assays for NS1 would confirm cellular sites associated with the viral DNA by secondary crosslinking of NS1-bound MVM DNA to cellular DNA. Figure 4A shows NS1 binding profiles to cellular chromosome 17 and 19 that are concordant with the VADs at 16 hpi, further validating our findings from V3C-seq assays. A genome-wide analysis of called peaks indicated that approximately 90% of the peaks identified by NS1-, BRCA1 -, and γ-H2AX ChIP-seq overlapped with VADs identified by V3C (Figure 4B and C), while overlap was undetectable when intersected with a randomly generated library of ChIP-seq peaks of equivalent size (Figure 4B). In concordance with these findings, the binding profile of NS1, BRCA1 and γ-H2AX around a VAD site at 16 hpi centered within 1 Mb of the MVM associated cellular site (Figure 4B). Taken together, our V3C-seq and ChIP-seq experiments are consistent with a model that upon infection, MVM first localized to cellular sites susceptible to DNA damage as cells progressed into S-phase, and as infection progressed, localized to additional sites of damage that were virally induced, to amplify its replication.
 
-## FISH assays confirmed that MVM localized with cellular sites of DNA damage
+### FISH assays confirmed that MVM localized with cellular sites of DNA damage
 
 We next sought to confirm the association of MVM replication with sites of cellular DNA damage using super-resolution (STORM) microscopy. For these assays, we designed PCR-based FISH probes complementary to the MVM genome, to a VAD regions at 19qA, and to a control, VAD-negative, site at 6 pA (Figure 5A). 3D-FISH combined with confocal imaging of multiple nuclei was performed at 16 hpi. Representative examples are shown in Figure 5B and D, which demonstrated close localization between the MVM genome and 19qA-VAD probes (represented by red and green probes respectively), in contrast to the lack of direct localization of MVM with the control probe at chromosome 6 pA (Figure 5C and D; represented by red and cyan foci respectively). The 3D distances between the VAD probe and MVM genome in multiple nuclei were calculated using confocal imaging. As shown in Figure 5E, the median distance between the MVM genome and the 19qA-VAD and 15qE-VAD probes were approximately 0.7, and 0.6 µm, respectively. This is similar to the median radius of Type II APAR bodies, suggesting that on average VAD sites coincide with APAR bodies. In contrast, non-VAD control sites on chromosome 12 and 17 (12qA3 and 17qA2) exhibited a much greater range of co-location and were separated from its nearest MVM genome by median distances of 1.1 and 1.1 µm, respectively. Taken together, our representative super resolution imaging and quantitative 3D-FISH analyses support V3C results demonstrating that MVM localized with VADs.
 
@@ -90,7 +126,7 @@ We next sought to confirm the association of MVM replication with sites of cellu
 
 **Figure 5.:** (A) Schematic of Chromosomes 19 and 6 showing where MVM associates with the mouse genome in A9 cells at 16 hr post infection, depicting the sites where FISH probes were designed. Representative GSD-STORM images show the spatial localization of the MVM genome (red) with (B) chromosome 19 VAD (19qA, green), (C) chromosome 6 control site (6 pA, cyan), and (D) both probe sets. (B) The MVM probe is labelled in red, while the cellular VAD site at 19qA is labelled in green. The insets show magnified views of the MVM-VAD probe sets demarcated by red rectangles in the original image. (C) The MVM probe is labelled in red and cellular site associated with non-VAD at 6 pA (shown in 5A, bottom) is labelled in cyan. Red arrowheads indicate the location of the MVM probes, and the cyan arrowhead indicates the location of the 6 pA region of the cellular genome. (D) Relative locations of the MVM genome with cellular VAD-associated site at 19qA (green) and non-VAD site at 6 pA (cyan) in the same cell. The inset shows a magnified view of the MVM-VAD probe set, and cyan arrows indicate the non-VAD-associated probes. Nuclear borders are labelled in white dotted line. Scale is presented as a white line and measures 2 μm. (E) The absolute distance between MVM and cellular genome at sites identified as VADs (19qA and 15qE) versus VAD-negative sites (12qA3 and 17qA2) were calculated using 3D-FISH. Results are depicted as grey dots for each individual APAR body in multiple fields from least three independent infections of parasynchronized A9 cells at 16 hpi, with the median distance represented by a red line. Black error bars represent the interquartile range of the dataset. The median radius of an APAR body at 16 hpi is shown as a dashed horizontal line, and teal shading indicates the domain which would be occupied by the APAR body. Significant differences are denoted as ****p<0.0005 (one-way ANOVA, multiple comparisons). ns designates non-significant statistical differences between datasets.
 
-## MVM associated with artificially-engineered sites of DNA damage
+### MVM associated with artificially-engineered sites of DNA damage
 
 If MVM preferentially associates with cellular sites of DNA damage, one might expect that MVM could be targeted to artificially–engineered sites of cellular DNA damage. We tested this in two ways. First, we used laser micro-irradiation of MVM-infected A9 cells at 18 hpi to induce focused cellular DNA damage, which is evident as a γ-H2AX ‘stripe’ in the nucleus (Figure 6A). Anti-NS1 staining of these cells suggested that MVM distinctly co-localized with irradiation-induced damaged cellular DNA, and in doing so, viral replication centers adapted to the shape of the damaged DNA stripe (Figure 6A, top two panels), rather than the distinct foci characteristic of APAR bodies (representative example shown in Figure 6A, bottom panel). Localization of the cellular transcription factor NR5A2, which is not found in MVM replication centers (Figure 1B), was not affected by micro-irradiation (Figure 6A, third panel).
 
@@ -124,59 +160,444 @@ Our results suggest that host chromatin states may play a significant role in pe
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus, Male)</td>
+      <td>A9</td>
+      <td>ATCC, (Tattersall and Bratton, 1983) PMID: 6602222</td>
+      <td>RRID:CVCL_3984</td>
+      <td>Verified as mycoplasma- negative by PCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH-3T3</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0594</td>
+      <td>Verified as mycoplasma- negative by PCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NB-324K</td>
+      <td>(Tattersall and Bratton, 1983) PMID: 6602222</td>
+      <td>RRID:CVCL_U409</td>
+      <td>Verified as mycoplasma- negative by PCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>EL4</td>
+      <td>ATCC, (Tattersall and Bratton, 1983) PMID: 6602222</td>
+      <td>RRID:CVCL_0255</td>
+      <td>Verified as mycoplasma- negative by PCR</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>F111</td>
+      <td>Fischer Rat Fibroblasts; (Freeman et al., 1975)</td>
+      <td>RRID:CVCL_6C52</td>
+      <td>Verified as mycoplasma- negative by PCR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NS1</td>
+      <td>Salome and Pintel, unpublished</td>
+      <td>2C9b</td>
+      <td>anti-mouse; Usage per sample: ChIP: 6 µg Immunofluorescence: 2 µg IB: 2 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γ−Η2ΑX</td>
+      <td>EMD Millipore</td>
+      <td>EMD Millipore:05–636</td>
+      <td>anti-mouse; Usage per sample: ChIP: 5 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γ−Η2ΑX</td>
+      <td>Abcam:ab11174</td>
+      <td>RRID:AB_297813</td>
+      <td>anti-rabbit; Usage per sample: ChIP: 5 µg Immunofluorescence: 2 µg IB: 2 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BRCA1</td>
+      <td>Thermo Fisher Scientific:17F8</td>
+      <td>RRID:AB_557804</td>
+      <td>anti-mouse; Usage per sample: ChIP: 5 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FANCD2</td>
+      <td>Bethyl Laboratories: a302-174A</td>
+      <td>RRID:AB_1659803</td>
+      <td>anti-rabbit; Usage per sample: Immunofluorescence: 2 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NR5A2</td>
+      <td>Abcam:ab189876</td>
+      <td>RRID: AB_2732890</td>
+      <td>anti-rabbit; Usage per sample: Immunofluorescence: 2 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling:5415S</td>
+      <td>mouse; Usage per sample: ChIP: 5 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 488</td>
+      <td>Life Technologies: A11034</td>
+      <td>RRID:AB_2576217</td>
+      <td>anti-rabbit secondary; Usage per sample: Immunofluorescence: 1 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 568</td>
+      <td>Life Technologies: A11031</td>
+      <td>RRID:AB_144696</td>
+      <td>anti-mouse secondary; Usage per sample: Immunofluorescence: 1 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 555</td>
+      <td>Life Technologies: A27039</td>
+      <td>RRID:AB_2536100</td>
+      <td>anti-rabbit secondary; Usage per sample: Immunofluorescence: 1 µg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF 647</td>
+      <td>Life Technologies: A32728</td>
+      <td>RRID:AB_2633277</td>
+      <td>anti-mouse secondary; Usage per sample: Immunofluorescence: 1 µg</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-CRISPRv2</td>
+      <td>Addgene; (Sanjana et al., 2014) PMID: 25075903</td>
+      <td>Addgene plasmid 52961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pgRNA-humanized</td>
+      <td>Addgene; (Qi et al., 2013) PMID: 23452860</td>
+      <td>Addgene plasmid 44248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HindIII</td>
+      <td>New England Biolabs</td>
+      <td>NEB:R0104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NlaIII</td>
+      <td>New England Biolabs</td>
+      <td>NEB:R0125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA Ligase</td>
+      <td>New England Biolabs</td>
+      <td>NEB:M0202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FISH Tag DNA Multicolor Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: F32951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>NEB:E7645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trevigen Comet Assay Kit</td>
+      <td>Trevigen</td>
+      <td>Trevigen: 4250–050 K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>StemCell</td>
+      <td>EasySep Human CD4+ T Cell Enrichment Kit</td>
+      <td>StemCell:19052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich:H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich:D1515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma Aldrich:A2153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Diamond Antifade Mountant with DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: P36966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: 62249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>(Langmead and Salzberg, 2012) PMID: 22388286</td>
+      <td></td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>(Li et al., 2009) PMID: 19505943</td>
+      <td>RRID:SCR_006646</td>
+      <td>http://samtools.sourceforge.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>(Quinlan and Hall, 2010) PMID: 20110278</td>
+      <td>RRID:SCR_006646</td>
+      <td>http://bedtools.readthedocs.io/en/latest/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deeptools</td>
+      <td>(Ramírez et al., 2016) PMID: 27079975</td>
+      <td>RRID:SCR_016366</td>
+      <td>https://deeptools.readthedocs.io/en/develop/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSC Genome Browser</td>
+      <td>(Kent et al., 2002) PMID: 12045153</td>
+      <td>RRID:SCR_005780</td>
+      <td>https://genome.ucsc.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PreprocessCore</td>
+      <td>(Bolstad, 2013)</td>
+      <td></td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/preprocessCore.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biostrings</td>
+      <td>(Pagès et al., 2017)</td>
+      <td></td>
+      <td>https://bioconductor.org/packages/release/bioc/html/Biostrings.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EPIC</td>
+      <td>(Xu et al., 2014) PMID: 24743992</td>
+      <td></td>
+      <td>https://github.com/biocore-ntnu/epic</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Galaxy</td>
+      <td>(Afgan et al., 2016) PMID: 27137889</td>
+      <td>RRID:SCR_006281</td>
+      <td>https://usegalaxy.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>(Schneider et al., 2012) PMID: 22930834</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/Welcome</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Professional</td>
+      <td>Huygens professional version 17.10 (Scientific volume imaging, The Netherlands)</td>
+      <td></td>
+      <td>https://svi.nl/Huygens-Professional</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by David Pintel (pinteld@missouri.edu).
 
-## Experimental models and subject details
+### Experimental models and subject details
 
 Cell lines were cultured in 5 percent FBS-containing DMEM media (5 percent CO2 and 37 degrees Celsius). Murine EL4 cells were cultured in RPMI media with 5 percent FBS. Cell lines are routinely authenticated for mycoplasma contamination, and background levels of DNA damage detected by γ-H2AX. Further information on cell line authentication and parvovirus replication are available at ATCC and published studies (Tattersall and Bratton, 1983) respectively.
 
-## Cell lines, viruses and viral infection
+### Cell lines, viruses and viral infection
 
 Male Murine A9, NIH-3T3, EL4 and human NB324K cells were propagated and wild-type MVMp and MVMi were produced as previously described (Adeyemi et al., 2010). Infection was carried out at a Multiplicity Of Infection (MOI) of 5 unless otherwise stated, leading to infection rates of 70–80% as detected by NS1 staining.
 
-## LentiCRISPRv2 A9 cells
+### LentiCRISPRv2 A9 cells
 
 LentiCRISPRv2 plasmid was obtained from Addgene (plasmid# 52961, [Sanjana et al., 2014]) and pseudotyped viruses were generated in 1 × 106 293 T cells transfected with 1 µg of LentiCRISPRv2, 1 µg of HIV Gag/Pol and 1 µg VSV-G proteins using Lipo293D (SignaGen). Supernatant containing the lentivirus was collected at 48 hr post-transfection. Independent preparations of LentiCRISPRv2 lentivirus were used to transduce A9 cells with 750 µl of lentiviral supernatant for 48 hr before selecting cells in 1 µg/ml of puromycin for 10 days. The resulting polyclonal puromycin-selected LentiCRISPRv2 A9 cells were validated for Cas9 expression by western blot, and were utilized for induced DNA break assays (described below).
 
-## Methods details
+### Methods details
 
-## Cell synchronization and drug treatments
+#### Cell synchronization and drug treatments
 
 Murine A9 and human NB324K cells were parasynchronized in G0 phase of cell cycle by growing them in 5% FBS containing DMEM without isoleucine for 36–42 hr (as described previously, (Adeyemi et al., 2010). NIH-3T3 cells were parasynchronized in G0 phase of cell cycle by growing them in 0.5% FBS containing DMEM for 36 hr. All cells were released into complete media containing 5% FBS in DMEM, and infected with MVMp at the time of release. Entry into S phase of cell cycle occurs approximately 8–10 hr after release into complete media. 16 hr post infection thus represents approximately 8–10 hr of transit into S-phase. Virally infected cells were harvested at the indicated timepoints and processed for experiments.
 
-## Chromosome conformation capture (3C) assay
+### Chromosome conformation capture (3C) assay
 
 Chromosome Conformation Capture assays were performed using 107 cultured A9, EL4, NIH-3T3 and NB-324K cells. Briefly, samples were cross-linked in 2 percent formaldehyde for 10 min, before quenching them in 0.125 M glycine. Cells were lysed in NP40 lysis buffer (0.1% NP40, NaCl, Tris-HCl) and the resulting nuclei were resuspended in restriction enzyme buffer (NEB Buffer 2.1). The nuclei were permeabilized in 0.3% SDS for an hour, followed by sequestration of SDS in 2% Triton X-100. The samples were digested in 400U of Hind III restriction enzyme overnight. Digestion was continued with a further 300U of Hind III on the next day, before inactivating the enzyme with 1% SDS at 65°C. SDS was sequestered with 1% Triton X-100, and 3C chromatin was resuspended in 1.15X T4 DNA Ligase Reaction Buffer. 50U of T4 DNA Ligase was added to the samples. Intramolecular ligation was carried out at room temperature for 4 hr, before reversing the crosslinks and digesting protein at 65 degrees C overnight with Proteinase K. 3C DNA was purified by phenol:chloroform:isoamyl alcohol extraction, isopropanol precipitation and finally using a PCR purification kit. The 3C-DNA was eluted in 200 microliters of Buffer EB (Qiagen). Cross-linking efficiencies were measured using Taqman-qPCR assays with primers and probes shown in Supplementary file 1. Relative crosslinking between two distally located HindIII fragments was determined by the ratio of the novel ligation junction to that of nearest neighbor interaction on the Ercc3 locus, as described previously (Hagège et al., 2007).
 
-## Viral chromosome conformation capture sequencing (V3C-seq) assay
+### Viral chromosome conformation capture sequencing (V3C-seq) assay
 
 V3C-seq assays were performed with Hind III as the primary restriction enzyme to digest cross-linked MVM infected A9 fibroblast chromatin. The Hind III-digested DNA was intramolecular-ligated using the 3C procedure, before resuspending in Buffer EB (100 µl, Qiagen). 3C-DNA was secondary-digested with Nla III (100U, overnight at 37°C), before being heat inactivated and circularized with 100U of T4 DNA Ligase at room temperature overnight in 6 ml of ligation reaction. The V3C samples were precipitated by phenol:chloroform extraction, precipitated in isopropanol, resuspended in Qiagen Buffer EB (100 µl), and. Inverse PCR was performed on the circularized DNA using primers within the Hind III - Nla III fragments on the MVM genome using inverse PCR primers described in Supplementary file 1. Inverse PCR products were diluted 1:100 in TE buffer and used as templates for nested inverse PCRs (described in Supplementary file 1), yielding V3C-seq DNA libraries. Sequencing libraries were prepared using the NEB Ultra Kit, and twelve samples were pooled per run for 75 base-pair single end sequencing using an Illumina Next Seq 500 sequencer.
 
-## V3C-seq analysis
+### V3C-seq analysis
 
 V3C-seq samples were trimmed and aligned to the mouse reference genome (mm10 build) using Bowtie2 (Langmead and Salzberg, 2012). The Biostrings package in RStudio was used to generate a genome-wide map of HindIII restriction fragments for the assignment of reads (Pagès et al., 2017). To compare between different timepoints, reads for each fragment were averaged and quantile normalized using preprocessCore package on RStudio (Bolstad, 2013). For visualization of the V3C-seq data, a running mean was calculated using a window size of five contiguous HindIII fragments (Medvedovic et al., 2013). Bioinformatic codes provided in Table 1.
 
-## Chromatin immunoprecipitation (ChIP) assay
+**Table 1.**
+ Bioinformatic codes used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Function</th>
+      <th>Code used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">V3C-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Bowtie2</td>
+      <td>Alignment</td>
+      <td>bowtie2 --trim5 50 --very-sensitive -x/storage/htc/ biocompute/ircf/dbase/genomes/M_musculus/bowtie2/ index/mm10 -S 24hpi_1.sam 24hpi_1.fastq</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Samtools</td>
+      <td>Sam to Bam</td>
+      <td>samtools view -b -S -o aligned_24hpi_1.bam 24hpi_1.sam</td>
+    </tr>
+    <tr>
+      <td>Sort</td>
+      <td>samtools sort -o aligned_sorted_24hpi_1.bam aligned_24hpi_1.bam</td>
+    </tr>
+    <tr>
+      <td>BEDtools</td>
+      <td>Compute histogram</td>
+      <td>genomeCoverageBed -ibam aligned_sorted_24hpi_1.bam -bg - trackline -split -g. ..&gt;24hpi_1.bedgraph</td>
+    </tr>
+    <tr>
+      <td colspan="3">ChIP-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Bowtie2</td>
+      <td>Alignment</td>
+      <td>bowtie2 -x/storage/htc/biocompute/ircf/dbase/genomes/M_musculus/ bowtie2/index/mm10 -U 16hpi_gh2ax_1.fastq -S 16hpi_gh2ax_1.sam</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Samtools</td>
+      <td>Sam to Bam</td>
+      <td>samtools view -b -S -o aligned_16hpi_gh2ax_1.bam 16hpi_gh2ax_1.sam</td>
+    </tr>
+    <tr>
+      <td>Sort</td>
+      <td>samtools sort -o aligned_sorted_16hpi_gh2ax_1. bam aligned_16hpi_gh2ax_1.bam</td>
+    </tr>
+    <tr>
+      <td>BEDtools</td>
+      <td>Bam to BED conversion</td>
+      <td>bedtools bamtobed -i 16hpi_gh2ax_1.bam&gt;16hpi_gh2ax_1.bed</td>
+    </tr>
+    <tr>
+      <td>EPIC</td>
+      <td>Peak Calling</td>
+      <td>epic -t 16hpi_gh2ax_1.bed -c 16hpi_ip.bed -gn mm10 -b BED -o epic_12hpi_gh2ax_1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BEDtools</td>
+      <td>Intersection</td>
+      <td>bedtools intersect –a 16hpi_gh2ax_1.bed –b 16hpi_gh2ax_2. bed&gt;16hpi_gh2ax_1_2.bed</td>
+    </tr>
+    <tr>
+      <td>Jaccard analysis</td>
+      <td>bedtools jaccard -a mock_gh2ax.bed -b 16hpi_gh2ax.bed</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chromatin immunoprecipitation (ChIP) assay
 
 The indicated cells were cross-linked with 1% formaldehyde for 10 mins at room temperature and then quenched with 0.125 M glycine. The cells were collected and lysed using a ChIP lysis buffer (1% SDS, 10 mM EDTA, 50 mM Tris-HCl, pH 8, protease inhibitors) for 20 min on ice. The lysates were sonicated using a Diagenode Bioruptor for 75 cycles (30 s on and 30 s off per cycle), before being incubated overnight at 4°C with the indicated antibodies bound to Protein A Dynabeads (Invitrogen), in ChIP dilution buffer (0.01% SDS, 1.1% Triton X-100, 1.2 mM EDTA, 16.7 mM Tris-HCl pH8, 167 mM NaCl). Samples were washed for 3 min each at 4 degrees Celsius with low salt wash (0.01% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH8, 150 mM NaCl), high salt wash (0.01% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH8, 500 mM NaCl), lithium chloride wash (0.25M LiCl, 1% NP40, 1% DOC, 1 mM EDTA, 10 mM Tris-HCl pH8) and twice with TE buffer before being eluted with SDS- elution buffer (1% SDS, 0.1M Sodium bicarbonate). Following elution, the chromatin-antibody-DNA complexes, and the input chromatin were subjected to proteinase K treatment at 65°C overnight. The ChIP DNA was purified using a PCR purification kit (Qiagen), and eluted in 100 ul of Buffer EB (Qiagen). ChIP assays were analyzed by quantitative PCR (qPCR) with iTaq universal SYBR green mastermix (Bio-Rad), using primer sets described in Supplementary file 1, or sequenced as described below. Percent input was calculated as described previously (Fuller et al., 2017).
 
 Sequencing libraries were generated from ChIP DNA using the NEBNext Ultra II Library Prep Kit for Illumina, and the sonication quality was determined using Agilent Bioanalyser. For ChIP-seq, twelve samples were pooled and sequenced on an Illumina Next Seq 500 using 75 base-pair Single End sequencing.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 ChIP-seq samples were aligned to the mouse genome (build mm10) using Bowtie2 (Langmead and Salzberg, 2012). Peaks were called with EPIC analysis software (using the SICER algorithm (Zang et al., 2009) according to default parameters. Called-peaks that were shared between replicates were identified using BEDtools software (Quinlan and Hall, 2010). Comparison between ChIP-seq and V3C-seq peaks were performed using Deeptools package (Ramírez et al., 2016). In order to compare the magnitudes of ChIP-seq peaks between different timepoints of MVM infection and mock versus Hydroxyurea treatment, rpm values were calculated (using Galaxy, [Afgan et al., 2016]) on the bedgraph files generated from EPIC, and were quantile normalized using preprocessCore package on RStudio (Bolstad, 2013). Bioinformatic codes provided in Table 1.
 
-## Laser Micro-Irradiation assays
+### Laser Micro-Irradiation assays
 
 Laser micro-irradiation was performed on 1 million A9 cells cultured on glass bottom dishes (MatTek Corp.) infected with MVMp at an MOI of 10 for 18 hr. Cells were sensitized with 2 microliters of Hoechst dye (ThermoFisher Scientific) 5 min prior to irradiation. Samples were irradiated using a Leica TCP SP8 confocal microscope with a 405 nm laser using 25% power at 40 Hz frequency for 2 consecutive frames per field-of-view. Regions of interest (ROIs) were selected within the nucleus without traversing the nuclear membrane. Samples were processed for immunofluorescense imaging without CSK pre-extraction immediately after micro-irradiation.
 
-## CRISPR-Induced DNA break assays
+### CRISPR-Induced DNA break assays
 
 Stable A9 cells expressing LentiCRISPRv2 were co-transfected with guide RNAs targeting chromosome 9 at 9qE1 (labelled as TGT), or scrambled control guide RNAs (labelled as CTRL) and human CD4 expressing vector during parasynchronization. CD4-positive cells were purified using an EasySep CD4+ T Cell Enrichment Kit (StemCell) prior to release into complete DMEM media and MVM infection. Infected cells were harvested and processed for ChIP and 3C assays at the indicated timepoints.
 
-## 3D-FISH assays
+### 3D-FISH assays
 
 The MVMp genome and indicated cellular regions were labelled with the DNA FISH-Tag Multicolor Kit (ThermoFisher). Briefly, 1 µg of DNA was labelled with aminoallyl-modified dNTP by nick-translation using the manufacturer’s instructions before being labelled with amine-modified Alexa-Fluor dyes (AlexaFluor 488 and AlexaFluor 555). The dye combinations were resuspended at equimolar amounts in hybridization buffer (50% formamide, 2X SSC, 40% dextran sulfate, 10% Denhardt’s solution) prior to hybridizing to the sample.
 
@@ -188,34 +609,93 @@ For confocal imaging, samples were mounted on slides using Pro-Long Diamond anti
 
 3D-FISH images were analyzed using ImageJ. Background noise was filtered out using the Kalman Stack Filter plugin to determine the coordinates (x,y,z) of the centers of the foci. The coordinates of the viral and cellular foci were measured using Sync Measure 3D. The 3D-distance was calculated by computing the displacement vector between the two locations as described previously (Shih and Krangel, 2010).
 
-## Immunofluorescense assays
+### Immunofluorescense assays
 
 Parasynchronized MVMp-infected A9 cells were harvested at the indicated time points processed as described above till permeabilization with 0.5% Triton X-100 in PBS. Samples were blocked with 3% BSA in PBS for 1 hr, incubated with the indicated antibodies for 1 hr, and incubated with the indicated secondary antibodies (tagged with Alexa Fluor fluorophores) for 1 hr. Samples were washed and mounted on slides with ProLong Diamond Antifade Mountant with DAPI (Invitrogen).
 
-## Alkaline comet assay
+### Alkaline comet assay
 
 Alkaline Comet Assays were performed using Trevigen Comet Assay kits. Murine A9 fibroblasts were grown on 10 centimeter dishes and mock infected, induced with Doxorubicin (200 nM) for 9 hr, or infected with MVMp at an MOI of 10 for 20 hr, before detaching them from the flask by scraping. Cells were washed with ice-cold PBS and resuspended at a density of 105 cells/ml in ice cold PBS. Cells were combined with molten LM Agarose at 37°C at a ratio of 1:10 and pipetted onto Comet Slides. Slides were placed at 4°C in the dark for 10 mins. Slides were immersed in 4°C Lysis solution for 30–60 min, before placing in Alkaline Unwinding Solution for 1 hr at 4°C in the dark. 850 ml Alkaline Electrophoresis Solution was added to the slide tray, and 21 Volts were applied for 30 min. Slides were immersed in water twice for 5 min each, followed by immersion in 70% ethanol for 5 min. Samples were dried at 37 degrees Celsius for 15 min, and subsequently stained with 100 ul of SYBR Gold for 30 min in the dark. Slides were briefly rinsed in water and completely dried at 37°C. Slides were imaged on a Leica widefield microscope.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cells grown and infected in 60 mm dishes were harvested at the indicated timepoints, followed by lysis in modified RIPA buffer (20 mM Tris-HCl pH 7.5, 150 mM NaCl, 10% glycerol, 1% NP-40, 1% Sodium Deoxycholate, 0.1% SDS, 1 mM EDTA, 10 mM trisodium pyrophosphate, 20 mM Sodium Fluoride, 2 mM Sodium Orthovanadate and 1X Protease Inhibitor cocktail (Sigma). Protein concentrations were quantified using Bradford assay and equal amounts of lysates were loaded per well for Western blot analysis.
 
-## Southern blot analysis
+### Southern blot analysis
 
 Cells were grown on 25 mm plates and infected at an MOI of 5. Cells were harvested at the indicated timepoints, pelleted and resuspended in Southern Lysis Buffer. Cells were proteinase K treated overnight at 37°C, and sheared using 25 G X 5/8 inch 1 mL needle-syringe (BD Biosciences). Total DNA content was quantified using Nanodrop, equal amount of DNA loaded per well and electrophoresed on a 1 percent agarose gel. Samples were transferred to a nitrocellulose membrane and hybridized with completely homologous genomic clones.
 
-## Antibodies
+### Antibodies
 
 Commercially available antibodies were used for ChIP assays and Immunofluorescence, and are described in the Antibody Table (Table 2) and Key Resources Table.
 
-## Plasmids
+**Table 2.**
+ Antibody table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Concentration used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NS1 (see Key Resources Table)</td>
+      <td>ChIP: 6 μg Immunofluorescence: 2 μg IB: 2 μg</td>
+    </tr>
+    <tr>
+      <td>γ-H2AX (anti-mouse); EMD Millipore</td>
+      <td>ChIP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>γ-H2AX (anti-rabbit); Abcam</td>
+      <td>ChIP: 5 μg Immunofluorescence: 2 μg IB: 2 μg</td>
+    </tr>
+    <tr>
+      <td>BRCA1 (anti-mouse); Thermo Fisher Scientific</td>
+      <td>ChIP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>FANCD2 (anti-rabbit); Bethyl Laboratories</td>
+      <td>Immunofluorescence: 2 μg</td>
+    </tr>
+    <tr>
+      <td>NR5A2 (anti-rabbit); Abcam</td>
+      <td>Immunofluorescence: 2 μg</td>
+    </tr>
+    <tr>
+      <td>IgG (mouse); Cell Signaling</td>
+      <td>ChIP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>AF 488; anti-rabbit secondary, Life Technologies</td>
+      <td>Immunofluorescence: 1 μg</td>
+    </tr>
+    <tr>
+      <td>AF 568; anti-mouse secondary, Life Technologies</td>
+      <td>Immunofluorescence: 1 μg</td>
+    </tr>
+    <tr>
+      <td>AF 555; anti-rabbit secondary, Life Technologies</td>
+      <td>Immunofluorescence: 1 μg</td>
+    </tr>
+    <tr>
+      <td>AF 647; anti-mouse secondary, Life Technologies</td>
+      <td>Immunofluorescence: 1 μg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Lenti-CRISPRv2 plasmid was produced by Feng Zhang (Addgene plasmid 52961, [Sanjana et al., 2014]). pgRNA-humanized plasmid was produced by Stanley Qi (Addgene plasmid 44248, [Qi et al., 2013]). pCMV-CD4 was a gift from Dr. Marc Johnson (University of Missouri). Plasmids and reagents are available upon request.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Imaging studies (3D-FISH and Immunofluorescense) were quantified using ImageJ. Background noise was filtered out using the Kalman Stack Filter plugin, and the 3D distance between viral and cellular genome probes were calculated using Sync Measure 3D plugin to calculate the location of the center of mass between the imaged foci. The 3D-distance was calculated by computing the displacement vector between the two locations. The distances between foci were measured for multiple cells in preparations of viral infections, and were statistically analyzed using GraphPad Prism software. Statistical tests were performed using GraphPad Prism for imaging studies and chromosome conformation capture assays. The relevant statistical tests have been indicated in the respective figure legends. The code for bioinformatics analyses used to process V3C-seq and ChIP-seq data have been tabulated below:
 
-## Data availability
+### Data availability
 
 The V3C-seq and ChIP-seq data generated have been deposited in the Gene Expression Omnibus (GEO) under the accession codes GSE112957.

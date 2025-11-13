@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Epidemiology and Biostatistics, School of Public Health, Faculty of Medicine, Imperial College London London United Kingdom
-2. https://ror.org/03yghzc09 University of Exeter Exeter United Kingdom
-3. https://ror.org/04cw6st05 Department of Clinical Pharmacology and Therapeutics, Institute for Infection and Immunity, St George’s, University of London London United Kingdom
+1. Department of Epidemiology and Biostatistics, School of Public Health, Faculty of Medicine, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+3. Department of Clinical Pharmacology and Therapeutics, Institute for Infection and Immunity, St George’s, University of London London United Kingdom ([ROR:04cw6st05](https://ror.org/04cw6st05))
 4. Genetics Department, Novo Nordisk Research Centre Oxford Oxford United Kingdom
 
 † Corresponding author
 
 ## Abstract
 
-Multivariable Mendelian randomisation (MVMR) is an instrumental variable technique that generalises the MR framework for multiple exposures. Framed as a regression problem, it is subject to the pitfall of multicollinearity. The bias and efficiency of MVMR estimates thus depends heavily on the correlation of exposures. Dimensionality reduction techniques such as principal component analysis (PCA) provide transformations of all the included variables that are effectively uncorrelated. We propose the use of sparse PCA (sPCA) algorithms that create principal components of subsets of the exposures with the aim of providing more interpretable and reliable MR estimates. The approach consists of three steps. We first apply a sparse dimension reduction method and transform the variant-exposure summary statistics to principal components. We then choose a subset of the principal components based on data-driven cutoffs, and estimate their strength as instruments with an adjusted F -statistic. Finally, we perform MR with these transformed exposures. This pipeline is demonstrated in a simulation study of highly correlated exposures and an applied example using summary data from a genome-wide association study of 97 highly correlated lipid metabolites. As a positive control, we tested the causal associations of the transformed exposures on coronary heart disease (CHD). Compared to the conventional inverse-variance weighted MVMR method and a weak instrument robust MVMR method (MR GRAPPLE), sparse component analysis achieved a superior balance of sparsity and biologically insightful grouping of the lipid traits.
+Multivariable Mendelian randomisation (MVMR) is an instrumental variable technique that generalises the MR framework for multiple exposures. Framed as a regression problem, it is subject to the pitfall of multicollinearity. The bias and efficiency of MVMR estimates thus depends heavily on the correlation of exposures. Dimensionality reduction techniques such as principal component analysis (PCA) provide transformations of all the included variables that are effectively uncorrelated. We propose the use of sparse PCA (sPCA) algorithms that create principal components of subsets of the exposures with the aim of providing more interpretable and reliable MR estimates. The approach consists of three steps. We first apply a sparse dimension reduction method and transform the variant-exposure summary statistics to principal components. We then choose a subset of the principal components based on data-driven cutoffs, and estimate their strength as instruments with an adjusted F-statistic. Finally, we perform MR with these transformed exposures. This pipeline is demonstrated in a simulation study of highly correlated exposures and an applied example using summary data from a genome-wide association study of 97 highly correlated lipid metabolites. As a positive control, we tested the causal associations of the transformed exposures on coronary heart disease (CHD). Compared to the conventional inverse-variance weighted MVMR method and a weak instrument robust MVMR method (MR GRAPPLE), sparse component analysis achieved a superior balance of sparsity and biologically insightful grouping of the lipid traits.
 
 ## Introduction
 
@@ -32,95 +32,312 @@ Using summary genetic data for multiple highly correlated lipid fractions and CH
 
 ## Results
 
-## Workflow overview
+### Workflow overview
 
-Our proposed analysis strategy is presented in Figure 1. Using summary statistics for the single-nucleotide polymorphism (SNP)-exposure (γ^) and SNP-outcome (Γ^) association estimates, where γ^ (dimensionality 148 SNPs× 97 exposures) exhibits strong correlation, we initially perform a PCA on γ^. Additionally, we perform multiple sPCA modalities that aim to provide sparse loadings that are more interpretable (block 3, Figure 1). The choice of the number of PCs is guided by permutation testing or an eigenvalue threshold. Finally, the PCs are used in place of γ^ in an IVW MVMR meta-analysis to obtain an estimate of the causal effect of the PC on the outcome. Similar to PC regression and in line with unsupervised methods, the outcome (SNP-outcome associations (Γ^) and corresponding standard error (S⁢EΓ^)) is not transformed by PCA and is used in the second-step MVMR in the original scale. In the real data application and in the simulation study, the best balance of sparsity and statistical power was observed for the method of sparse component analysis (SCA) (Chen and Rohe, 2021). This favoured method and the related steps are coded in an R function and are available at GitHub (https://github.com/vaskarageorg/SCA_MR/, copy archived at Karageorgiou, 2023).
+Our proposed analysis strategy is presented in Figure 1. Using summary statistics for the single-nucleotide polymorphism (SNP)-exposure ($\gamma^$) and SNP-outcome ($Γ^$) association estimates, where $\gamma^$ (dimensionality 148 SNPs× 97 exposures) exhibits strong correlation, we initially perform a PCA on $\gamma^$. Additionally, we perform multiple sPCA modalities that aim to provide sparse loadings that are more interpretable (block 3, Figure 1). The choice of the number of PCs is guided by permutation testing or an eigenvalue threshold. Finally, the PCs are used in place of $\gamma^$ in an IVW MVMR meta-analysis to obtain an estimate of the causal effect of the PC on the outcome. Similar to PC regression and in line with unsupervised methods, the outcome (SNP-outcome associations ($Γ^$) and corresponding standard error ($S⁢E_{Γ^}$)) is not transformed by PCA and is used in the second-step MVMR in the original scale. In the real data application and in the simulation study, the best balance of sparsity and statistical power was observed for the method of sparse component analysis (SCA) (Chen and Rohe, 2021). This favoured method and the related steps are coded in an R function and are available at GitHub (https://github.com/vaskarageorg/SCA_MR/, copy archived at Karageorgiou, 2023).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80063/elife-80063-fig1-v2.jpg)
 
-**Figure 1.:** Step 1: MVMR on a set of highly correlated exposures. Each genetic variant contributes to each exposure. The high correlation is visualised in the similarity of the single-nucleotide polymorphism (SNP)-exposure associations in the correlation heatmap (top right). Steps 2 and 3: PCA and sparse PCA on . Step 4. MVMR analysis on a low dimensional set of principal components (PCs). X: exposures; Y: outcome; k: number of exposures; PCA: principal component analysis; MVMR: multivariable Mendelian randomisation.γ^
+**Figure 1.:** Step 1: MVMR on a set of highly correlated exposures. Each genetic variant contributes to each exposure. The high correlation is visualised in the similarity of the single-nucleotide polymorphism (SNP)-exposure associations in the correlation heatmap (top right). Steps 2 and 3: PCA and sparse PCA on $\gamma^$. Step 4. MVMR analysis on a low dimensional set of principal components (PCs). X: exposures; Y: outcome; k: number of exposures; PCA: principal component analysis; MVMR: multivariable Mendelian randomisation.
 
-## UVMR and MVMR
+### UVMR and MVMR
 
-A total of 66 traits were associated with CHD at or below the Bonferroni-corrected level (p=0.05/97, Table 1). Two genetically predicted lipid exposures (M.HDL.C, M.HDL.CE) were negatively associated with CHD and 64 were positively associated (Table 3). In an MVMR model including only the 66 Bonferroni-significant traits, fitted with the purpose of illustrating the instability of IVW-MVMR in conditions of severe collinearity, conditional F-statistic (CFS) (Materials and methods) was lower than 2.2 for all exposures (with a mean of 0.81), highlighting the severe weak instrument problem. In Appendix 1—figure 3, the MVMR estimates are plotted against the corresponding univariable MR (UVMR) estimates. We interpret the reduction in identified effects as a result of the drop in precision in the MVMR model (variance inflation). Only the independent causal estimate for ApoB reached our pre-defined significance threshold and was less precise (ORMVMR (95% CI): 1.031⁢(1.012,1.37), ORUVMR (95% CI): 1.013⁢(1.01,1.016) (Appendix 1—figure 4). We note that, for M.LDL.PL, the UVMR estimate (1.52⁢(1.35,1.71), p < 10-10)) had an opposite sign to the MVMR estimate (ORMVMR=0.905(0.818,1.001)).
+A total of 66 traits were associated with CHD at or below the Bonferroni-corrected level ($p=0.05/97$, Table 1). Two genetically predicted lipid exposures (M.HDL.C, M.HDL.CE) were negatively associated with CHD and 64 were positively associated (Table 3). In an MVMR model including only the 66 Bonferroni-significant traits, fitted with the purpose of illustrating the instability of IVW-MVMR in conditions of severe collinearity, conditional F-statistic (CFS) (Materials and methods) was lower than 2.2 for all exposures (with a mean of 0.81), highlighting the severe weak instrument problem. In Appendix 1—figure 3, the MVMR estimates are plotted against the corresponding univariable MR (UVMR) estimates. We interpret the reduction in identified effects as a result of the drop in precision in the MVMR model (variance inflation). Only the independent causal estimate for ApoB reached our pre-defined significance threshold and was less precise (ORMVMR (95% CI): $1.031⁢(1.012,1.37)$, $OR_{UVMR}$ (95% CI): $1.013⁢(1.01,1.016)$ (Appendix 1—figure 4). We note that, for M.LDL.PL, the UVMR estimate ($1.52⁢(1.35,1.71)$, p < 10-10)) had an opposite sign to the MVMR estimate ($OR_{MVMR}=0.905(0.818,1.001)$).
 
 To see if the application of a weak instrument robust MVMR method could improve the analysis, we applied MR GRAPPLE (Wang et al., 2021). As the GRAPPLE pipeline suggests, the same three-sample MR design described above is employed. In the external selection GWAS study (GLGC), a total of 148 SNPs surpass the genome-wide significance level for the 97 exposures and were used as instruments. Although the method did not identify any of the exposures as significant at nominal or Bonferroni-adjusted significance level, the strongest association among all exposures is ApoB.
 
-## PCA
+**Table 1.**
+ Univariable Mendelian randomisation (MR) results for the Kettunen dataset with coronary heart disease (CHD) as the outcome.Positive: positive causal effect on CHD risk; Negative: negative causal effect on CHD risk.
 
-Standard PCA with no sparsity constraints was used as a benchmark. PCA estimates a square loadings matrix of coefficients with dimension equal to the number of genetically proxied exposures K. The coefficients in the first column define the linear combination of exposures with the largest variability (PC1). Column 2 defines PC2, the linear combination of exposures with the largest variability that is also independent of PC1, and so on. This way, the resulting factors seek to reduce redundant information and project highly correlated SNP-exposure associations to the same PC. In PC1, very low-density lipoprotein (VLDL)- and low-density lipoprotein (LDL)-related traits were the major contributors (Figure 2a). ApoB received the 8th largest loading (0.1371, maximum was 0.1403 for cholesterol content in small VLDL) and LDL.C received the 48th largest (0.1147). In PC2, high-density lipoprotein (HDL)-related traits were predominant. The first 18 largest positive loadings are HDL-related and 12 describe either large or extra-large HDL traits. PC3 received its scores mainly from VLDL traits. Six components were deemed significant through the permutation-based approach (Figure 1, Materials and methods).
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Positive</th>
+      <th>Negative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VLDL</td>
+      <td>AM.VLDL.C, M.VLDL.CE, M.VLDL.FC, M.VLDL.L,M.VLDL.P, M.VLDL.PL, M.VLDL.TG, XL.VLDL.L,XL.VLDL.PL, XL.VLDL.TG, XS.VLDL.L, XS.VLDL.P, XS.VLDL.PL,XS.VLDL.TG, XXL.VLDL.L, XXL.VLDL.PL,L.VLDL.C, L.VLDL.CE, L.VLDL.FC, L.VLDL.L, L.VLDL.P,L.VLDL.PL, L.VLDL.TG, SVLDL.C, S.VLDL.FC,S.VLDL.L, S.VLDL.P, S.VLDL.PL, S.VLDL.TG</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>LDL</td>
+      <td>ALDL.C, L.LDL.C, L.LDL.CE, L.LDL.FC, L.LDL.L, L.LDL.P, L.LDL.PL,M.LDL.C, M.LDL.CE, M.LDL.L, M.LDL.P,M.LDL.PL, S.LDL.C, S.LDL.L, S.LDL.P</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>HDL</td>
+      <td>S.HDL.TG, XL.HDL.TG</td>
+      <td>M.HDL.C, M.HDL.CE</td>
+    </tr>
+  </tbody>
+</table>
+
+### PCA
+
+Standard PCA with no sparsity constraints was used as a benchmark. PCA estimates a square loadings matrix of coefficients with dimension equal to the number of genetically proxied exposures $K$. The coefficients in the first column define the linear combination of exposures with the largest variability (PC1). Column 2 defines PC2, the linear combination of exposures with the largest variability that is also independent of PC1, and so on. This way, the resulting factors seek to reduce redundant information and project highly correlated SNP-exposure associations to the same PC. In PC1, very low-density lipoprotein (VLDL)- and low-density lipoprotein (LDL)-related traits were the major contributors (Figure 2a). ApoB received the 8th largest loading (0.1371, maximum was 0.1403 for cholesterol content in small VLDL) and LDL.C received the 48th largest (0.1147). In PC2, high-density lipoprotein (HDL)-related traits were predominant. The first 18 largest positive loadings are HDL-related and 12 describe either large or extra-large HDL traits. PC3 received its scores mainly from VLDL traits. Six components were deemed significant through the permutation-based approach (Figure 1, Materials and methods).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80063/elife-80063-fig2-v2.jpg)
 
-**Figure 2.:** a], four with sparsity constraints under different assumptions [b–e]).The number of the exposures plotted on the vertical axis is smaller than  as the exposures that do not contribute to any of the sparse principal components (PCs) have been left out. Blue: positive loading; red: negative loading; yellow: zero.K=97
+**Figure 2.:** The number of the exposures plotted on the vertical axis is smaller than $K=97$ as the exposures that do not contribute to any of the sparse principal components (PCs) have been left out. Blue: positive loading; red: negative loading; yellow: zero.
 
-In the second-step IVW regression (step 4 in Figure 1), MVMR results are presented. A modest yet precise (OR = 1.002⁢(1.0015,1.0024), p<10−10) association of PC1 with CHD was observed. Conversely, PC3 was marginally significant for CHD at the 5% level (OR = 0.998 (0.998, 0.999), p=0.049). Since γ^ has been transformed with linear coefficients (visualised in loadings matrix, Figure 2), the underlying causal effects are also transformed and interpreting the magnitude of an effect estimate is not straightforward, since it reflects the effect of changing the PC by one unit on the outcome; however, significance and orientation of effects can be interpreted. When positive loadings are applied to exposures that are positively associated with the outcome, the MR estimate is positive; conversely, if negative loadings are applied, the MR estimate is negative.
+In the second-step IVW regression (step 4 in Figure 1), MVMR results are presented. A modest yet precise (OR = $1.002⁢(1.0015,1.0024)$, $p<10^{−10}$) association of PC1 with CHD was observed. Conversely, PC3 was marginally significant for CHD at the 5% level (OR = 0.998 (0.998, 0.999), p=0.049). Since $\gamma^$ has been transformed with linear coefficients (visualised in loadings matrix, Figure 2), the underlying causal effects are also transformed and interpreting the magnitude of an effect estimate is not straightforward, since it reflects the effect of changing the PC by one unit on the outcome; however, significance and orientation of effects can be interpreted. When positive loadings are applied to exposures that are positively associated with the outcome, the MR estimate is positive; conversely, if negative loadings are applied, the MR estimate is negative.
 
-## sPCA methods
+#### sPCA methods
 
 We next employed multiple sPCA methods (Table 2) that each shrink a proportion of loadings to zero. The way this is achieved differs in each method. Their underlying assumptions and details on differences in optimisation are presented in Table 2 and further described in Materials and methods.
 
-## RSPCA (Croux et al., 2013)
+**Table 2.**
+ Overview of sparse principal component analysis (sPCA) methods used.KSS: Karlis-Saporta-Spinaki criterion. Package: R package implementation; Features: short description of the method; Choice: method of selection of the number of informative components in real data; PCs: number of informative PCs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Package</th>
+      <th>Authors</th>
+      <th>Features</th>
+      <th>Choice</th>
+      <th>PCs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RSPCA</td>
+      <td>pcaPP</td>
+      <td>Croux et al., 2013</td>
+      <td>Robust sPCA (RSPCA), different measure of dispersion (Qn)</td>
+      <td>Permutation KSS</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>SFPCA</td>
+      <td>Code in publication, Supplementary Material</td>
+      <td>Guo et al., 2010</td>
+      <td>Fused penalties for block correlation</td>
+      <td>KSS</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>sPCA</td>
+      <td>elasticnet</td>
+      <td>Zou et al., 2006</td>
+      <td>Formulation of sPCA as a regression problem</td>
+      <td>KSS</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>SCA</td>
+      <td>SCA</td>
+      <td>Chen and Rohe, 2021</td>
+      <td>Rotation of eigen vectors for approximate sparsity</td>
+      <td>Permutation KSS</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+#### RSPCA (Croux et al., 2013)
 
 Optimisation and the KSS criterion pick six PCs to be informative (Karlis et al., 2003). The loadings in Figure 2 show a VLDL-, LDL-dominant PC1, with some small and medium HDL-related traits. LDL.C and ApoB received the 5th and 40th largest positive loadings. PCs 1 and 6 are positively associated with CHD and PCs 3 and 5 negatively so (Appendix 1—table 1).
 
-## SFPCA (Guo et al., 2010)
+#### SFPCA (Guo et al., 2010)
 
 The KSS criterion retains six PCs. The loadings matrix (Figure 2) shows the ‘fused’ loadings with the identical colouring. In the two first PCs, all groups are represented. Both ApoB and LDL.C received the seventh and tenth largest loadings, together with other metabolites (Figure 2). PC1 (all groups represented) was positively associated with CHD and PC4 (negative loadings from large HDL traits) negatively so (Appendix 1—table 1).
 
-## sPCA (Zou et al., 2006)
+#### sPCA (Zou et al., 2006)
 
-The number of non-zero metabolites per PC was set at 14897∼16 (see Appendix 1—figure 6). Under this level of sparsity, the permutation-based approach suggested that six sPCs should be retained. Seventy exposures received a zero loading across all components. PC1 is constructed predominantly from LDL traits and is positively associated with CHD, but this does not retain statistical significance at the nominal level in MVMR analysis (Figure 3). Only PC4 that is comprised of small and medium HDL traits (Figure 2b) appears to exert a negative causal effect on CHD (OR (95% CI): 0.9975⁢(0.9955,0.9995)). The other PCs were not associated with CHD (all p values > 0.05, Appendix 1—table 1).
+The number of non-zero metabolites per PC was set at $\frac{148}{97}∼16$ (see Appendix 1—figure 6). Under this level of sparsity, the permutation-based approach suggested that six sPCs should be retained. Seventy exposures received a zero loading across all components. PC1 is constructed predominantly from LDL traits and is positively associated with CHD, but this does not retain statistical significance at the nominal level in MVMR analysis (Figure 3). Only PC4 that is comprised of small and medium HDL traits (Figure 2b) appears to exert a negative causal effect on CHD (OR (95% CI): $0.9975⁢(0.9955,0.9995)$). The other PCs were not associated with CHD (all $p$ values > 0.05, Appendix 1—table 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80063/elife-80063-fig3-v2.jpg)
 
-## SCA (Chen and Rohe, 2021)
+#### SCA (Chen and Rohe, 2021)
 
 Six components were retained after a permutation test. In the final model, five metabolites were regularised to zero in all PCs (CH2.DB.ratio, CH2.in.FA, FAw6, S.VLDL.C, S.VLDL.FC, Figure 2). Little overlap is noted among the metabolites. PC1 receives loadings from LDL and IDL, and PC2 from VLDL. The contribution of HDL to PCs is split in two, with large and extra-large HDL traits contributing to PC3 and small and medium ones to PC4. PC1 and PC2 were positively associated with CHD (Appendix 1—table 1, Figure 3). PC4 was negatively associated with CHD.
 
-## Comparison with UVMR
+#### Comparison with UVMR
 
-In principle, all PC methods derive independent components. This is strictly the case in standard PCA, where subsequent PCs are perfectly orthogonal, but is only approximately true in sparse implementations. We hypothesised that UVMR and MVMR could provide similar causal estimates of the associations of metabolite PCs with CHD. The results are presented in Figure 3 and concordance between UVMR and MVMR is quantified with the R2 from a linear regression. The largest agreement of the causal estimates is observed in PCA. In the sparse methods, SCA (Chen and Rohe, 2021) and sPCA (Zou et al., 2006) provide similarly consistent estimates, whereas some disagreement is observed in the estimate of PC6 for RSPCA (Croux et al., 2013) on CHD.
+In principle, all PC methods derive independent components. This is strictly the case in standard PCA, where subsequent PCs are perfectly orthogonal, but is only approximately true in sparse implementations. We hypothesised that UVMR and MVMR could provide similar causal estimates of the associations of metabolite PCs with CHD. The results are presented in Figure 3 and concordance between UVMR and MVMR is quantified with the $R^{2}$ from a linear regression. The largest agreement of the causal estimates is observed in PCA. In the sparse methods, SCA (Chen and Rohe, 2021) and sPCA (Zou et al., 2006) provide similarly consistent estimates, whereas some disagreement is observed in the estimate of PC6 for RSPCA (Croux et al., 2013) on CHD.
 
 A previous study implicated LDL.c and ApoB as causal for CHD (Zuber et al., 2020b). In Appendix 1—figure 7, we present the loadings for these two exposures across the PCs for the various methods. Ideally, we would like to see metabolites contributing to a small number of components for the sparse methods. Using a visualisation technique proposed by Kim and Kim, 2012, this is indeed observed (see Appendix 1—figure 7). In PCA, LDL.c and ApoB contribute to multiple PCs, whereas the sPCA methods limit this to one PC. Only in RSPCA do these exposures contribute to two PCs. In the second-step IVW meta-analysis, it appears that the PCs comprising of predominantly VLDL/LDL and HDL traits robustly associate with CHD, with differences among methods (Table 3).
 
-## Instrument strength
+**Table 3.**
+ Results for principal component analysis (PCA) approaches.Overlap: Percentage of metabolites receiving non-zero loadings in ≥1 component. Overlap in PC1, PC2: overlap as above but exclusively for the first two components which by definition explain the largest proportion of variance. Very low-density lipoprotein (VLDL), low-density lipoprotein (LDL), and high-density lipoprotein (HDL) significance: results of the IVW regression model with CHD as the outcome for the respective sPCs (the sPCs that mostly received loadings from these groups). The terms VLDL and LDL refer to the respective transformed blocks of correlated exposures; for instance, VLDL refers to the weighted sum of the correlated VLDL-related $\gamma^$ associations, such as VLDL phospholipid content and VLDL triglyceride content. †: RSPCA projected VLDL- and LDL-related traits to the same PC (sPC1). ‡: SCA discriminated HDL molecules in two sPCs, one for traits of small- and medium-sized molecules and one for large- and extra-large-sized.
 
-Instrument strength for the chosen PCs was assessed via an F-statistic, calculated using a bespoke formula that accounts for the PC process (see Materials and methods and Appendix). The F-statistics for all transformed exposures cross the cutoff of 10. There was a trend for the first components being more strongly instrumented in all methods (see Appendix 1—figure 5), which is to be expected. In the MVMR analyses, the CFS for all exposures was less than three. Thus the move to PC-based analysis significantly improved instrument strength and mitigated against weak instrument bias.
 
-## Simulation studies
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PCA</th>
+      <th>RSPCA</th>
+      <th>SFPCA</th>
+      <th>sPCA</th>
+      <th>SCA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overlap</td>
+      <td>1</td>
+      <td>0.938</td>
+      <td>1</td>
+      <td>0.187</td>
+      <td>0.196</td>
+    </tr>
+    <tr>
+      <td>Overlap in PC1,PC2</td>
+      <td>1</td>
+      <td>0.433</td>
+      <td>1</td>
+      <td>0.010</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sparse %</td>
+      <td>0</td>
+      <td>0.474</td>
+      <td>0.082</td>
+      <td>0.835</td>
+      <td>0.796</td>
+    </tr>
+    <tr>
+      <td>VLDL significance in MR†</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>LDL significance in MR</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>HDL significance in MR‡</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Small, medium HDL significance in MR</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
-We consider the case of a data generating mechanism that reflects common scenarios found in real-world applications. Specifically, we consider a set of exposures X, which can be partitioned into blocks based on shared genetics. Certain groups of variants contribute exclusively to specific blocks of exposures, while having no effect on other blocks. This in turn leads to substantial correlation among the exposure blocks and a much reduced correlation of between exposure blocks, due only to shared confounding. This is visualised in Figure 4a. This data structure acts to reduce the instruments’ strength in jointly predicting all exposures. The dataset consists of n participants, k exposures, p SNPs (with both k and p consisting of b discrete, equally sized blocks) and a continuous outcome, Y. We split the simulation results into one illustrative example (for didactic purposes) and one high-dimensional example.
+#### Instrument strength
+
+Instrument strength for the chosen PCs was assessed via an $F$-statistic, calculated using a bespoke formula that accounts for the PC process (see Materials and methods and Appendix). The $F$-statistics for all transformed exposures cross the cutoff of 10. There was a trend for the first components being more strongly instrumented in all methods (see Appendix 1—figure 5), which is to be expected. In the MVMR analyses, the CFS for all exposures was less than three. Thus the move to PC-based analysis significantly improved instrument strength and mitigated against weak instrument bias.
+
+#### Simulation studies
+
+We consider the case of a data generating mechanism that reflects common scenarios found in real-world applications. Specifically, we consider a set of exposures $X$, which can be partitioned into blocks based on shared genetics. Certain groups of variants contribute exclusively to specific blocks of exposures, while having no effect on other blocks. This in turn leads to substantial correlation among the exposure blocks and a much reduced correlation of between exposure blocks, due only to shared confounding. This is visualised in Figure 4a. This data structure acts to reduce the instruments’ strength in jointly predicting all exposures. The dataset consists of $n$ participants, $k$ exposures, $p$ SNPs (with both $k$ and $p$ consisting of $b$ discrete, equally sized blocks) and a continuous outcome, $Y$. We split the simulation results into one illustrative example (for didactic purposes) and one high-dimensional example.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80063/elife-80063-fig4-v2.jpg)
 
-**Figure 4.:** (a) Data generating mechanism for the simulation study, illustrative scenario with six exposures and two blocks. In red boxes, the exposures that are correlated due to a shared genetic component are highlighted. (b) Simulation results for six exposures and three methods (sparse component analysis [SCA] [Chen and Rohe, 2021], principal component analysis [PCA], multivariable Mendelian randomisation [MVMR]). The exposures that contribute to  (Y) are presented in shades of green colour and those that do not in shades of red (X1-3). In the third panel, each exposure is a line. In the first and second panels, the PCs that correspond to these exposures are presented X4-6as single lines in green and red. Monte Carlo SEs are visualised as error bars. Rejection rate: proportion of simulations where the null is rejected.
+**Figure 4.:** (a) Data generating mechanism for the simulation study, illustrative scenario with six exposures and two blocks. In red boxes, the exposures that are correlated due to a shared genetic component are highlighted. (b) Simulation results for six exposures and three methods (sparse component analysis [SCA] [Chen and Rohe, 2021], principal component analysis [PCA], multivariable Mendelian randomisation [MVMR]). The exposures that contribute to $Y$ ($X_{1-3}$) are presented in shades of green colour and those that do not in shades of red ($X_{4-6}$). In the third panel, each exposure is a line. In the first and second panels, the PCs that correspond to these exposures are presented as single lines in green and red. Monte Carlo SEs are visualised as error bars. Rejection rate: proportion of simulations where the null is rejected.
 
-## Simple illustrative example
+#### Simple illustrative example
 
-We generate data under the mechanism presented in Figure 4a. That is, with six individual exposures X1,…,X6 split into two distinct blocks (X1-X3 and X4-X6). A continuous outcome Y is generated that is only causally affected by the exposures in block 1 (X1-X3). A range of sample sizes were used in the simulation in order to give a range of CFS values from approximately 2–80. We apply (a) MVMR with the six individual exposures separately, and (b) PCA and SCA. The aim of approach (b) is to demonstrate the impact of reducing the six-dimensional exposure into two PCs, so that the first PC has high loadings for block 1 (X1-X3) and the second PC has high loadings for block 2 (X4-X6). Although two PCs were chosen by both PCA methods using a KSS criterion in a large majority of cases, to simplify the simulation interpretation we fixed a priori the number of PCs at two across all simulations.
+We generate data under the mechanism presented in Figure 4a. That is, with six individual exposures $X_{1},…,X_{6}$ split into two distinct blocks ($X_{1}-X_{3}$ and $X_{4}-X_{6}$). A continuous outcome $Y$ is generated that is only causally affected by the exposures in block 1 ($X_{1}-X_{3}$). A range of sample sizes were used in the simulation in order to give a range of CFS values from approximately 2–80. We apply (a) MVMR with the six individual exposures separately, and (b) PCA and SCA. The aim of approach (b) is to demonstrate the impact of reducing the six-dimensional exposure into two PCs, so that the first PC has high loadings for block 1 ($X_{1}-X_{3}$) and the second PC has high loadings for block 2 ($X_{4}-X_{6}$). Although two PCs were chosen by both PCA methods using a KSS criterion in a large majority of cases, to simplify the simulation interpretation we fixed a priori the number of PCs at two across all simulations.
 
-Our primary focus was to assess the rejection rates of MVMR versus PCA rather than estimation, as the two approaches are not comparable in this regard. To do this we treat each method as a test, which obtains true positive (TP), true negative (TN), false positive (FP), and false negative (FN) results. In MVMR, a TP is an exposure that is causal in the underlying model and whose causal estimate is deemed statistically significant. In the PCA and sPCA methods, this classification is determined with respect to (a) which exposure(s) determine each PC and (b) if the causal estimate of this PC is statistically significant. Exposures are considered to be major contributors to a PC if (and only if) their individual PC loading is larger than the average loading. If the causal effect estimate of a PC in the analysis deemed statistically significant, major contributors that are causal and non-causal are counted as TPs and FPs, respectively. TNs and FNs are defined similarly. Type I error therefore corresponds to the FP rate and power corresponds to the TP rate. All statistical tests were conducted at the α/B = α/2 = 0.025 level.
+Our primary focus was to assess the rejection rates of MVMR versus PCA rather than estimation, as the two approaches are not comparable in this regard. To do this we treat each method as a test, which obtains true positive (TP), true negative (TN), false positive (FP), and false negative (FN) results. In MVMR, a TP is an exposure that is causal in the underlying model and whose causal estimate is deemed statistically significant. In the PCA and sPCA methods, this classification is determined with respect to (a) which exposure(s) determine each PC and (b) if the causal estimate of this PC is statistically significant. Exposures are considered to be major contributors to a PC if (and only if) their individual PC loading is larger than the average loading. If the causal effect estimate of a PC in the analysis deemed statistically significant, major contributors that are causal and non-causal are counted as TPs and FPs, respectively. TNs and FNs are defined similarly. Type I error therefore corresponds to the FP rate and power corresponds to the TP rate. All statistical tests were conducted at the $\alpha/B$ = $\alpha/2$ = 0.025 level.
 
 SCA, PCA, and MVMR type I error and power are shown in the three panels (left to right) in Figure 4b, respectively. These results suggest an improved power in identifying true causal associations both with PCA and SCA compared with MVMR when the CFS is weak, albeit at the cost of an inflated type I error rate. As sample size and CFS increase, MVMR performs better. For the PC of the second block’s null exposures, PCA seems to have a suboptimal type I error control (red in Figure 4b). In this low-dimensional setting, the benefit of PCA therefore appears to be limited.
 
-## Complex high-dimensional example
+#### Complex high-dimensional example
 
-The aim of the high-dimensional simulation is to estimate the comparative performance of the methods in a wider setting that more closely resembles real data applications. We simulate genetic data and individual level exposure and outcome data for between K=30-60 exposures, arranged in B=4-6 blocks. The underlying data generating mechanism and the process of evaluating method performance is identical to the illustrative example, but the number of variants, exposures, and the blocks is increased. We amalgamate rejection rate results across all simulations, by calculating sensitivity (SNS) and specificity (SPC) as:(1)SNS=TPTP+FNSPC=TNTN+FP,
+The aim of the high-dimensional simulation is to estimate the comparative performance of the methods in a wider setting that more closely resembles real data applications. We simulate genetic data and individual level exposure and outcome data for between $K=30-60$ exposures, arranged in $B=4-6$ blocks. The underlying data generating mechanism and the process of evaluating method performance is identical to the illustrative example, but the number of variants, exposures, and the blocks is increased. We amalgamate rejection rate results across all simulations, by calculating sensitivity (SNS) and specificity (SPC) as:
 
-and then compare all methods by their area under the estimated receiver-operating characteristic (ROC) curve (AUC) using the meta-analytical approach of Reitsma et al., 2005. Briefly, the Reitsma method performs a bivariate meta-analysis of multiple studies that report both sensitivity and specificity of a diagnostic test, in order to provide a summary ROC curve. A bivariate model is required because sensitivity and specificity estimates are correlated. In our setting the ‘studies’ represent the results of different simulation settings with distinct numbers of exposures and blocks. Youden’s index J (J=S⁢N⁢S+S⁢P⁢C-1) was also calculated, with high values being indicative of good performance.
+$$
+SNS=\frac{TP}{TP+FN}SPC=\frac{TN}{TN+FP},
+$$
 
-Two sPCA methods (SCA [Chen and Rohe, 2021], sPCA [Zou et al., 2006]) consistently achieve the highest AUC (Figure 5). This advantage is mainly driven by an increase in sensitivity for both these methods compared with MVMR. A closer look at the individual simulation results corroborates the discriminatory ability of these two methods, as they consistently achieve high sensitivities (Appendix 1—figure 10). Both standard and Bonferroni-corrected MVMR performed poorly in terms of AUC (AUC 0.712 and 0.660, respectively), due to poor sensitivity. PCA performed poorly, with almost equal TP and FP results (AUC 0.560). PCA and RSPCA did not accurately identify negative results (PCA and RSPCA median specificity 0 and 0.192, respectively). This extreme result can be understood by looking at the individual simulation results in Appendix 1—figure 10; both PCA and RSPCA cluster to the upper right end of the plot, suggesting a consistently low performance in identifying TN exposures. Specifically, the estimates with both these methods were very precise across simulations and this resulted in many FP results and low specificity. We note a differing performance among the top ranking methods (SCA, sPCA); while both methods are on average similar, the results of SCA are more variable in both sensitivity and specificity (Table 4). The Youden’s indexes for these methods are also the highest (Figure 5a). Varying the sample sizes (mean instrument strength in γ^ from F¯=221 to 1109 and mean conditional F-statistic C⁢F⁢S¯=0.34-12.81) (Appendix 1—figure 9) suggests a similar benefit for sparse methods.
+and then compare all methods by their area under the estimated receiver-operating characteristic (ROC) curve (AUC) using the meta-analytical approach of Reitsma et al., 2005. Briefly, the Reitsma method performs a bivariate meta-analysis of multiple studies that report both sensitivity and specificity of a diagnostic test, in order to provide a summary ROC curve. A bivariate model is required because sensitivity and specificity estimates are correlated. In our setting the ‘studies’ represent the results of different simulation settings with distinct numbers of exposures and blocks. Youden’s index $J$ ($J=S⁢N⁢S+S⁢P⁢C-1$) was also calculated, with high values being indicative of good performance.
+
+Two sPCA methods (SCA [Chen and Rohe, 2021], sPCA [Zou et al., 2006]) consistently achieve the highest AUC (Figure 5). This advantage is mainly driven by an increase in sensitivity for both these methods compared with MVMR. A closer look at the individual simulation results corroborates the discriminatory ability of these two methods, as they consistently achieve high sensitivities (Appendix 1—figure 10). Both standard and Bonferroni-corrected MVMR performed poorly in terms of AUC (AUC 0.712 and 0.660, respectively), due to poor sensitivity. PCA performed poorly, with almost equal TP and FP results (AUC 0.560). PCA and RSPCA did not accurately identify negative results (PCA and RSPCA median specificity 0 and 0.192, respectively). This extreme result can be understood by looking at the individual simulation results in Appendix 1—figure 10; both PCA and RSPCA cluster to the upper right end of the plot, suggesting a consistently low performance in identifying TN exposures. Specifically, the estimates with both these methods were very precise across simulations and this resulted in many FP results and low specificity. We note a differing performance among the top ranking methods (SCA, sPCA); while both methods are on average similar, the results of SCA are more variable in both sensitivity and specificity (Table 4). The Youden’s indexes for these methods are also the highest (Figure 5a). Varying the sample sizes (mean instrument strength in $\gamma^$ from $F¯=221$ to 1109 and mean conditional F-statistic $C⁢F⁢S¯=0.34-12.81$) (Appendix 1—figure 9) suggests a similar benefit for sparse methods.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80063/elife-80063-fig5-v2.jpg)
 
 **Figure 5.:** SCA: sparse component analysis (Chen and Rohe, 2021) sPCA: sparse PCA (Zou et al., 2006) RSPCA: robust sparse PCA (Croux et al., 2013); PCA: principal component analysis; MVMR: multivariable Mendelian randomisation; MVMR_B: MVMR with Bonferroni correction.
 
-Even with large sample sizes (F¯=1109.78, C⁢F⁢S¯=12.82), MVMR can still not discriminate between positive and negative exposures as robustly as the sPCA methods. A major determinant of the accuracy of these methods appears to be the number of truly causal exposures, as in a repeat simulation with only four of the exposures being causal, there was a drop in sensitivity and specificity across all methods. sPCA methods still outperformed other methods in this case, however (Appendix 1—table 2).
+Even with large sample sizes ($F¯=1109.78$, $C⁢F⁢S¯=12.82$), MVMR can still not discriminate between positive and negative exposures as robustly as the sPCA methods. A major determinant of the accuracy of these methods appears to be the number of truly causal exposures, as in a repeat simulation with only four of the exposures being causal, there was a drop in sensitivity and specificity across all methods. sPCA methods still outperformed other methods in this case, however (Appendix 1—table 2).
 
-## What determines PCA performance?
+**Table 4.**
+ Sensitivity and specificity presented as median and interquartile range across all simulations.Presented as median sensitivity/specificity and interquartile range across all simulations; AUC: area under the receiver-operating characteristic (ROC) curve.
 
-In the hypothetical example of Figure 4 and indeed any other example, if two PCs are constructed, PCA cannot differentiate between causal and non-causal exposures. The only information used in this stage of the workflow (Steps 2 and 3 in Figure 1) is the SNP-X association matrix. Thus, the determinant of projection to common PCs is genetic correlation and correlation due to confounding, rather than how these blocks affect Y. Then, if only a few of the exposures truly influence Y, it is likely that, PCA will falsely identify the entire block as truly causal. This means the proportion of non-causal exposures within blocks of exposures that truly influence Y is a key determinant of specificity. To test this, we varied the proportion of non-causal exposures by varying the sparsity of the causal effect vector β vector and repeated the simulations, keeping the other simulation parameters fixed. As fewer exposures within blocks are truly causal, the performance in identifying TN results drops for SCA (Appendix 1—figure 12). However, our simulation still provides a means of making comparisons across methods for a given family of simulated data.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PCA</th>
+      <th>SCA</th>
+      <th>sPCA</th>
+      <th>RSPCA</th>
+      <th>MVMR_B</th>
+      <th>MVMR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AUC</td>
+      <td>0.56</td>
+      <td>0.919</td>
+      <td>0.941</td>
+      <td>0.644</td>
+      <td>0.660</td>
+      <td>0.712</td>
+    </tr>
+    <tr>
+      <td>Sensitivity</td>
+      <td>1,0.1</td>
+      <td>1,0.21</td>
+      <td>1, 0.047</td>
+      <td>0.667, 0.251</td>
+      <td>0.222, 0.2</td>
+      <td>0, 0.076</td>
+    </tr>
+    <tr>
+      <td>Specificity</td>
+      <td>0,0.02</td>
+      <td>0.925,0.772</td>
+      <td>0.936, 0.097</td>
+      <td>0.192, 0.104</td>
+      <td>0.960, 0.048</td>
+      <td>1,0</td>
+    </tr>
+    <tr>
+      <td>Youden’s J</td>
+      <td>0</td>
+      <td>0.584</td>
+      <td>0.778</td>
+      <td>–0.061</td>
+      <td>0.192</td>
+      <td>0.044</td>
+    </tr>
+  </tbody>
+</table>
+
+#### What determines PCA performance?
+
+In the hypothetical example of Figure 4 and indeed any other example, if two PCs are constructed, PCA cannot differentiate between causal and non-causal exposures. The only information used in this stage of the workflow (Steps 2 and 3 in Figure 1) is the SNP-$X$ association matrix. Thus, the determinant of projection to common PCs is genetic correlation and correlation due to confounding, rather than how these blocks affect $Y$. Then, if only a few of the exposures truly influence $Y$, it is likely that, PCA will falsely identify the entire block as truly causal. This means the proportion of non-causal exposures within blocks of exposures that truly influence $Y$ is a key determinant of specificity. To test this, we varied the proportion of non-causal exposures by varying the sparsity of the causal effect vector $\beta$ vector and repeated the simulations, keeping the other simulation parameters fixed. As fewer exposures within blocks are truly causal, the performance in identifying TN results drops for SCA (Appendix 1—figure 12). However, our simulation still provides a means of making comparisons across methods for a given family of simulated data.
 
 ## Discussion
 
@@ -134,35 +351,76 @@ Our approach is conceptually different from the robust methods that have been de
 
 Within the sPCA methods, there were differences in the results. The sPCA method (Zou et al., 2006) favoured a sparser model in which less than 10 metabolites per PC were used. This observation is also made by Guo et al., 2010. The SCA method (Chen and Rohe, 2021) achieved good separation of the traits and very little overlap was observed. A separation of HDL-related traits according to size, not captured by the other methods, was noted. Clinical relevance of a more high-resolution HDL profiling, with larger HDL molecules mainly associated with worse outcomes, has been previously reported (Kontush, 2015).
 
-## Limitations
+### Limitations
 
 In the present study, many tuning parameters needed to be set in order to calibrate the PCA methods. We therefore caution against extending our conclusions on the best method outside the confines of our simulation and our specific real data example. Not all available sparse dimensionality reduction approaches were assessed in our investigation and other techniques could have provided better results.
 
 The use of sparsity may raise the concern of neglecting horizontal pleiotropy if a variant influences multiple components, but its weight in a given component is shrunk to zero. This would not occur for standard PCA where no such shrinkage occurs. Currently, our approach is not robust to pleiotropy operating via exposures not included in the model. Our plan is to address this as future work by incorporating median-based MVMR models into the second stage, as done by Grant and Burgess, 2021.
 
-## Interpretability
+#### Interpretability
 
 The sPCA approach outlined in this paper enables the user to perform an MVMR analysis with a large number of highly correlated exposures, but one potential downside is that the effect sizes are not as interpretable. Interpreting the causal effects of PCA components (sparse or otherwise) poses a significant challenge. This is because intervening and lowering a specific PC could be actioned by targeting any of the exposures that have a non-zero loading within it. This is in contrast to the causal effect of a single exposure, where the mode of intervention is clear. However, the same ambiguity is often a feature of a real-world intervention, such as a pharmaceutical drug. That is, even if a drug targets a specific lipid fraction, it may exert multiple effects on other lipid fractions that are not pre-planned and are a result of interlinked physiological cascades, overlapping genetics, and interdependent relationships. Identifying such underlying biological mechanisms and pathways is a key step in deciding on the relevance of a PCA derived effect estimate compared to a standard MVMR estimate. We therefore suggest that this approach is best suited for initially testing how large groups of risk factors independently affect health outcomes, before a more focused MVMR within the PCA-identified exposures.
 
 Another limitation of our work is that the instrument selection could have been more precise since we used an external study that investigated total lipid fractions rather than specific size and composition profile characteristics. Future more specific GWAS could improve this, leading to better separation in the genetic predictions of all lipid fractions.
 
-## Conclusion
+### Conclusion
 
 In the present study, we underline the utility of sparse dimensionality reduction approaches for highly correlated exposures in MR. We present a comprehensive review of methods available to perform dimensionality reduction and describe their performance in a real data application and a simulation.
 
 ## Materials and methods
 
-## Approximate relationship to a one-sample analysis
+### Approximate relationship to a one-sample analysis
 
-Our approach works directly with summary statistics gleaned from genome-wide association studies that are used to furnish a two-sample analysis, but it can also be motivated from the starting point of a one-sample individual level data. Specifically, assume the data generating model is y=Xβ+uX=Gγ+V and so that the second-stage model of a two-stage least squares procedure is y=X^β+u~, where X^=Gγ^. PCA on X^ is approximately equivalent to PCA on γ^ since X^TX^=γ^Tγ^ if G is normalised so that γ^ represents standardised effects. In the appendix we provide further simulation results that show that the loadings matrix derived from a PCA on X^ and γ^ are asymptotically equivalent.
+Our approach works directly with summary statistics gleaned from genome-wide association studies that are used to furnish a two-sample analysis, but it can also be motivated from the starting point of a one-sample individual level data. Specifically, assume the data generating model is $y=X\beta+uX=G\gamma+V$ and so that the second-stage model of a two-stage least squares procedure is $y=X^\beta+u~$, where $X^=G\gamma^$. PCA on $X^$ is approximately equivalent to PCA on $\gamma^$ since $X^^{T}X^=\gamma^^{T}\gamma^$ if $G$ is normalised so that $\gamma^$ represents standardised effects. In the appendix we provide further simulation results that show that the loadings matrix derived from a PCA on $X^$ and $\gamma^$ are asymptotically equivalent.
 
-## Data
+### Data
 
-The risk factor dataset reports the associations of 148 genetic variants (SNPs) with 118 NMR-measured metabolites ((Table 5) , Kettunen et al., 2016). This study reports a high-resolution profiling of mainly lipid subfractions. To focus on lipid-related traits, we exclude amino acids and retain 97 exposures for further analyses. Fourteen size/density classes of lipoprotein particles (ranging from extra small [XS] HDL to extra-extra-large [XXL] VLDL) were available and, for each class, the traits of total cholesterol, triglycerides, phospholipids, and cholesterol esters content, and the average diameter of the particles were additionally provided. Through the same procedure, estimates from NMR on genetic associations of amino acids, apolipoproteins, fatty and fluid acids, ketone bodies, and glycerides were also included. Instrument selection for this dataset has been previously described (Zuber et al., 2020a). Namely, 185 variants were selected, based on association with either one of: LDL-cholesterol, HDL-cholesterol, or triglycerides in the external sample of the Global Lipid Genetics Consortium at the genome-wide level (p<5×10−8) (Do et al., 2013). Then, this set was pruned to avoid inclusion of SNPs in linkage disequilibrium (LD) (threshold: r2<0.05) and filtered (variants in distance less than 1 megabase pairs were excluded) resulting in the final set. This pre-processing strategy was performed with a view to study CHD risk.
+The risk factor dataset reports the associations of 148 genetic variants (SNPs) with 118 NMR-measured metabolites ((Table 5) , Kettunen et al., 2016). This study reports a high-resolution profiling of mainly lipid subfractions. To focus on lipid-related traits, we exclude amino acids and retain 97 exposures for further analyses. Fourteen size/density classes of lipoprotein particles (ranging from extra small [XS] HDL to extra-extra-large [XXL] VLDL) were available and, for each class, the traits of total cholesterol, triglycerides, phospholipids, and cholesterol esters content, and the average diameter of the particles were additionally provided. Through the same procedure, estimates from NMR on genetic associations of amino acids, apolipoproteins, fatty and fluid acids, ketone bodies, and glycerides were also included. Instrument selection for this dataset has been previously described (Zuber et al., 2020a). Namely, 185 variants were selected, based on association with either one of: LDL-cholesterol, HDL-cholesterol, or triglycerides in the external sample of the Global Lipid Genetics Consortium at the genome-wide level ($p<5\times10^{−8}$) (Do et al., 2013). Then, this set was pruned to avoid inclusion of SNPs in linkage disequilibrium (LD) (threshold: $r^{2}<0.05$) and filtered (variants in distance less than 1 megabase pairs were excluded) resulting in the final set. This pre-processing strategy was performed with a view to study CHD risk.
 
 Positive control outcome assessment is recommended in MR as an approach of investigating a risk factor that has an established causal effect on the outcome of interest (Burgess et al., 2020). We used CHD as a positive control outcome, given that lipid fractions are known to modulate its risk, with VLDL- and LDL-related traits being positively associated with CHD and HDL-related traits negatively (Burgess et al., 2020). Summary estimates from the CARDIoGRAMplusC4D Consortium and UK Biobank meta-analysis (Nelson et al., 2017; Deloukas et al., 2013) were used. For both datasets, a predominantly European population was included, as otherwise spurious results could have arisen due to population-specific, as opposed to CHD-specific, differences (Vilhjálmsson and Nordborg, 2013).
 
-## MR assumptions
+**Table 5.**
+ Two-sample Mendelian randomisation (MR).Study characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>First author</th>
+      <th>Year</th>
+      <th>PMID</th>
+      <th>N</th>
+      <th>Cases</th>
+      <th>Controls</th>
+      <th>Study name (population)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Metabolites</td>
+      <td>Kettunen</td>
+      <td>2016</td>
+      <td>27005778</td>
+      <td>24,925</td>
+      <td></td>
+      <td></td>
+      <td>NMR GWAS (European)</td>
+    </tr>
+    <tr>
+      <td>CHD</td>
+      <td>Nelson</td>
+      <td>2017</td>
+      <td>28714975</td>
+      <td>453,595</td>
+      <td>113,937</td>
+      <td>339,658</td>
+      <td>CARDIoGRAMplusC4D (European)</td>
+    </tr>
+  </tbody>
+</table>
+
+### MR assumptions
 
 The first assumption (IV1) states that IVs should be associated with the exposure. The second assumption (IV2) states that the IVs should be independent of all confounders of the risk factor-outcome association (IV2) and, finally, independent of the outcome conditional on the exposure and the confounders (IV3). The validity of the final two assumptions cannot be directly verified with the available data. For the inferences to be valid, it is necessary that the three IV assumptions apply (Davies et al., 2018). These assumptions are illustrated for the case of two exposures in Figure 6a. In situations when IV3 is not deemed likely, additional risk factors that are possible mediators can be introduced in an MVMR model (Burgess and Harshfield, 2016). Additional assumptions should hold for MVMR results to be valid. Particularly, (a) all included exposures have to be associated with at least one of the IVs, and (b) there should be no evidence of multicollinearity. If there is significant overlap, for example if G1 and G2 are associated with both exposures X1 and X2, but only with X2 through X1 as in Figure 6b, this may result in conditionally weak instruments (Sanderson et al., 2020). The latter assumption and the way it limits eligibility of high-dimensional, correlated exposures is a key motivation for the present work.
 
@@ -170,52 +428,76 @@ The first assumption (IV1) states that IVs should be associated with the exposur
 
 **Figure 6.:** IV2, IV3: instrumental variable assumptions 2 and 3.
 
-## UVMR and MVMR
+### UVMR and MVMR
 
-To examine how each of the metabolites is causally associated with CHD, a UVMR approach was first undertaken under the two-sample summary data framework. This uses SNP-exposure and SNP-outcome GWAS summary statistics (γ^ and Γ^, respectively), obtained by regressing the exposure or outcome trait on each SNP individually. Usually, an additional adjustment has been made for variables such as age, gender, and genetic PCs. An UVMR analysis is the most straightforward way to obtain an estimate for the causal effect of the exposure, but is only reliable if all SNPs are valid instruments. However, in the Kettunen dataset, where the exposure set comprises 97 highly correlated lipid fractions, one variant may influence multiple exposures. This will generally invalidate an UVMR analysis and an MVMR approach is more appropriate.
+To examine how each of the metabolites is causally associated with CHD, a UVMR approach was first undertaken under the two-sample summary data framework. This uses SNP-exposure and SNP-outcome GWAS summary statistics ($\gamma^$ and $Γ^$, respectively), obtained by regressing the exposure or outcome trait on each SNP individually. Usually, an additional adjustment has been made for variables such as age, gender, and genetic PCs. An UVMR analysis is the most straightforward way to obtain an estimate for the causal effect of the exposure, but is only reliable if all SNPs are valid instruments. However, in the Kettunen dataset, where the exposure set comprises 97 highly correlated lipid fractions, one variant may influence multiple exposures. This will generally invalidate an UVMR analysis and an MVMR approach is more appropriate.
 
-Estimating Equation 2 provides a general means for representing the mechanics of an UVMR or MVMR analysis:(2)QA=∑j=1p(1σAj2)(Γ^j−∑k=1Kβkγ^kj)2,where σAj2=σYj2+∑k=1βk2σkj2+∑k=1K∑l=1K2βlβkσlkj,
+Estimating Equation 2 provides a general means for representing the mechanics of an UVMR or MVMR analysis:
+
+$$
+Q_{A}=\sumj=1p(\frac{1}{\sigma_{Aj}^{2}})(Γ^_{j}−\sumk=1K\beta_{k}\gamma^_{kj})^{2},where \sigma_{Aj}^{2}=\sigma_{Yj}^{2}+\sumk=1\beta_{k}^{2}\sigma_{kj}^{2}+\sumk=1K\suml=1K2\beta_{l}\beta_{k}\sigma_{lkj},
+$$
 
 where
 
-In an UVMR analysis there is only one exposure, so that  K=1, whereas in an MVMR analysis K≥2 (or in the case of the Kettunen data, K=97). In an IVW UVMR or MVMR analysis, the causal effect parameters estimated are obtained by finding the values β^1,…,β^K that minimise QA, under the simplifying assumption that σA2 = σY⁢j2. This is justified if all causal effects are zero, or if the uncertainty in the SNP-exposure associations is negligible (the no measurement error [NOME] assumption). In the general MVMR context, the NOME assumption is approximately satisfied if the CFS for each exposure are large, but if it is not, then IVW MVMR estimates will suffer from weak instrument bias. For exposure k, C⁢F⁢Sk takes the formCFSk=QXkp−(K−1),
+In an UVMR analysis there is only one exposure, so that  $K$=1, whereas in an MVMR analysis $K\geq2$ (or in the case of the Kettunen data, $K$=97). In an IVW UVMR or MVMR analysis, the causal effect parameters estimated are obtained by finding the values $\beta^_{1},…,\beta^_{K}$ that minimise $Q_{A}$, under the simplifying assumption that $\sigma_{A}^{2}$ = $\sigma_{Y⁢j}^{2}$. This is justified if all causal effects are zero, or if the uncertainty in the SNP-exposure associations is negligible (the no measurement error [NOME] assumption). In the general MVMR context, the NOME assumption is approximately satisfied if the CFS for each exposure are large, but if it is not, then IVW MVMR estimates will suffer from weak instrument bias. For exposure $k$, $C⁢F⁢S_{k}$ takes the form
 
-where:(3)QXk=∑j=1p(1σXkj2)(γ^kj−∑m≠kδ^mγ^mj)2,where σXkj2=σXkj2+∑m≠kδ^m2σmj2+∑m≠k∑l≠k2δ^mδ^lσmlj,
+$$
+CFS_{k}=\frac{Q_{X_{k}}}{p−(K−1)},
+$$
 
-where δ^ is estimated by regressing an exposure Xk on all other exposures X-k by OLS. If an exposure k can be accurately predicted conditionally on other exposures, then there won’t be sufficient variation or ‘good heterogeneity’ (Sanderson et al., 2019) in QX⁢k and CFS will generally be small. This will be the case whenever there is a high degree of correlation between the SNP-exposure association estimates, for example as in an MVMR analysis of all 118 lipid fractions in the Kettunen data. One option to address this would be to use weak instrument robust MVMR, such as MR-GRAPPLE (Wang et al., 2021). This method performs estimation using the full definition of σA2 in Equation 2 and using a robust loss function that additionally penalises larger outliers in the data. It can work well for MVMR analyses of relatively small numbers of exposures (e.g. up to 10) and relatively weak instruments (CFS as low as 3), but the dimension and high correlation of the Kettunen data is arguably too challenging. This motivates the use of dimension reduction techniques, such as PCA.
+where:
 
-## Dimension reduction via PCA
+$$
+Q_{X}k=\sumj=1p(\frac{1}{\sigma_{Xkj}^{2}})(\gamma^_{kj}−\summ\neqk\delta^_{m}\gamma^_{mj})^{2},where \sigma_{Xkj}^{2}=\sigma_{Xkj}^{2}+\summ\neqk\delta^_{m}^{2}\sigma_{mj}^{2}+\summ\neqk\suml\neqk2\delta^_{m}\delta^_{l}\sigma_{mlj},
+$$
 
-PCA is a singular value decomposition a given matrix of the p×K matrix of SNP-exposure associations γ^ as:γ^=U⁢D⁢VT
+where $\delta^$ is estimated by regressing an exposure $X_{k}$ on all other exposures $X_{-k}$ by OLS. If an exposure $k$ can be accurately predicted conditionally on other exposures, then there won’t be sufficient variation or ‘good heterogeneity’ (Sanderson et al., 2019) in $Q_{X⁢k}$ and CFS will generally be small. This will be the case whenever there is a high degree of correlation between the SNP-exposure association estimates, for example as in an MVMR analysis of all 118 lipid fractions in the Kettunen data. One option to address this would be to use weak instrument robust MVMR, such as MR-GRAPPLE (Wang et al., 2021). This method performs estimation using the full definition of $\sigma_{A}^{2}$ in Equation 2 and using a robust loss function that additionally penalises larger outliers in the data. It can work well for MVMR analyses of relatively small numbers of exposures (e.g. up to 10) and relatively weak instruments (CFS as low as 3), but the dimension and high correlation of the Kettunen data is arguably too challenging. This motivates the use of dimension reduction techniques, such as PCA.
 
-where U and V are orthogonal matrices and D is a square matrix whose diagonal values are the variances explained by each component and all off-diagonal values are 0. V is the loadings matrix and serves as an indicator of the contribution of each metabolite to the transformed space of the PCs. The matrix U⁢D (PCs/scores matrix) is used in the second-step IVW regression in place of γ^. As V estimation does not aim for sparsity, all exposures will contribute to some degree to all components, making the interpretation more complicated. Therefore, we assessed multiple sPCA methods that intentionally limit this.
+### Dimension reduction via PCA
 
-## sPCA (Zou et al.)
+PCA is a singular value decomposition a given matrix of the $p\timesK$ matrix of SNP-exposure associations $\gamma^$ as:
+
+$$
+\gamma^=U⁢D⁢V^{T}
+$$
+
+where $U$ and $V$ are orthogonal matrices and $D$ is a square matrix whose diagonal values are the variances explained by each component and all off-diagonal values are 0. V is the loadings matrix and serves as an indicator of the contribution of each metabolite to the transformed space of the PCs. The matrix $U⁢D$ (PCs/scores matrix) is used in the second-step IVW regression in place of $\gamma^$. As $V$ estimation does not aim for sparsity, all exposures will contribute to some degree to all components, making the interpretation more complicated. Therefore, we assessed multiple sPCA methods that intentionally limit this.
+
+#### sPCA (Zou et al.)
 
 sPCA by Zou et al., 2006, estimates the loadings matrix through an iterative procedure that progressively penalises exposures so that they do not contribute to certain PCs. In principle, this leads to a more clear picture for the consistency of each PC. This is performed as follows:
 
-Here, λ1 is an L⁢1 sparsity parameter that induces sparsity, λ2 is an L⁢2 parameter that offers numerical stability, and Ξ is a matrix with sparsity constraints for each exposure (Zou and Xue, 2018). As a result of the additional λ1⁢∥ξ∥ norm, there is sparsity in the loadings matrix and only some of the SNP-exposure associations γ^ contribute to each PC, specifically a particular subset of highly correlated exposures in γ^.
+Here, $\lambda_{1}$ is an $L⁢1$ sparsity parameter that induces sparsity, $\lambda_{2}$ is an $L⁢2$ parameter that offers numerical stability, and $Ξ$ is a matrix with sparsity constraints for each exposure (Zou and Xue, 2018). As a result of the additional $\lambda_{1}⁢∥ξ∥$ norm, there is sparsity in the loadings matrix and only some of the SNP-exposure associations $\gamma^$ contribute to each PC, specifically a particular subset of highly correlated exposures in $\gamma^$.
 
-## RSPCA
+#### RSPCA
 
-This approach differs in that it employs a robust measure of dispersion that is not unduly influenced by large single values of γ^ that contribute a large amount to the total variance (Rousseeuw and Croux, 1993; Heckert, 2003). As above, an L1 norm is used to induce sparsity. For optimisation, the tradeoff product optimisation is maximised. It does not impose a single λ value on all PCs, thus allowing different degrees of sparsity.
+This approach differs in that it employs a robust measure of dispersion that is not unduly influenced by large single values of $\gamma^$ that contribute a large amount to the total variance (Rousseeuw and Croux, 1993; Heckert, 2003). As above, an L1 norm is used to induce sparsity. For optimisation, the tradeoff product optimisation is maximised. It does not impose a single $\lambda$ value on all PCs, thus allowing different degrees of sparsity.
 
-## SFPCA (Guo et al., 2010)
+#### SFPCA (Guo et al., 2010)
 
-A method that can in theory exploit distinct correlation structures. Its goal is to derive a loadings matrix in which highly positively correlated variables are similar in sign and highly negative ones are opposite. Similar magnitudes also tend to be obtained for those variables that are in the same blocks in the correlation matrix. Like the sPCA optimisation in Zou et al., 2006, sparse fused PCA (SFPCA) works by assigning highly correlated variables the exact same loadings as opposed to numerically similar ones (Figure 2d). This is achieved with two norms in the objective function: λ1 which regulates the L1 norm that induces sparsity and λ2 for the L⁢2 regularisation (squared magnitude of γ^) to guard against singular solutions. A grid search is used to identify appropriate parameters for λ1 and λ2. The following criterion is used:minA,Ξ‖γ^−γ^ΞAT‖F+λ1‖ξ‖+λ2|ρs,t||ξs,t−sign(ρs,tξt,k)|,
+A method that can in theory exploit distinct correlation structures. Its goal is to derive a loadings matrix in which highly positively correlated variables are similar in sign and highly negative ones are opposite. Similar magnitudes also tend to be obtained for those variables that are in the same blocks in the correlation matrix. Like the sPCA optimisation in Zou et al., 2006, sparse fused PCA (SFPCA) works by assigning highly correlated variables the exact same loadings as opposed to numerically similar ones (Figure 2d). This is achieved with two norms in the objective function: $\lambda_{1}$ which regulates the L1 norm that induces sparsity and $\lambda_{2}$ for the $L⁢2$ regularisation (squared magnitude of $\gamma^$) to guard against singular solutions. A grid search is used to identify appropriate parameters for $\lambda_{1}$ and $\lambda_{2}$. The following criterion is used:
 
-such that AT⁢A=IK. The ‘fused’ penalty (last term) purposely penalises discordant loadings for variables that are highly correlated. The choice of the sparsity parameters is based on a Bayesian information criterion (BIC).
+$$
+min_{A,Ξ}‖\gamma^−\gamma^ΞA^{T}‖_{F}+\lambda_{1}‖ξ‖+\lambda_{2}|ρ_{s,t}||ξ_{s,t}−sign(ρ_{s,t}ξ_{t,k})|,
+$$
 
-## SCA
+such that $A^{T}⁢A=I_{K}$. The ‘fused’ penalty (last term) purposely penalises discordant loadings for variables that are highly correlated. The choice of the sparsity parameters is based on a Bayesian information criterion (BIC).
+
+#### SCA
 
 SCA (Chen and Rohe, 2021) is motivated by the relative inadequacy of the classic approaches in promoting significant sparsity. It addresses this by rotating the eigenvectors to achieve approximate sparsity whilst keeping the proportion of variance explained the same. Simulation studies show the technique works especially well in high-dimensional settings such as gene expression data, among other examples (Chen and Rohe, 2021).
 
-## Choice of components
+### Choice of components
 
-In all dimensionality reduction approaches applied to correlated variables, there is no upper limit to how many transformed factors can be estimated. However, only a proportion of them are likely to be informative in the sense of collectively explaining a meaningful amount of total variance in the original dataset. To guide this choice, a permutation-based approach was implemented (Coombes and Wang, 2019) as follows: Firstly, the γ^ matrix was randomly permuted and the sPCA method of interest was applied on the permuted set. The computed eigenvalues are assumed to come from a null distribution consistent with a non-informative component. This process is repeated multiple times (e.g. p⁢e⁢r⁢m=1000) and the mean eigenvalues for all components stored. Finally, the sPCA method is performed in the original γ^ matrix and whichever component has an eigenvalue larger than the mean of the permuted sets is considered informative and kept. Due to the computational complexity of the permutation method, particularly for SFPCA, an alternate method - the KSS criterion (Karlis et al., 2003) - was also used. This is based on a simple correction on the minimum non-trivial eigenvalue (CutoffKSS=1+2K−1p−1). The authors show that the method is robust to non-normal distributions (Karlis et al., 2003). Although KSS was not compared with the above-described permutation approach, it performed better than simpler approaches, such as choosing those PCs whose eigenvalue is larger than 1 (Kaiser criterion), the broken stick method (Jolliffe, 2002) and the Velicer method (Velicer, 1976).
+In all dimensionality reduction approaches applied to correlated variables, there is no upper limit to how many transformed factors can be estimated. However, only a proportion of them are likely to be informative in the sense of collectively explaining a meaningful amount of total variance in the original dataset. To guide this choice, a permutation-based approach was implemented (Coombes and Wang, 2019) as follows: Firstly, the $\gamma^$ matrix was randomly permuted and the sPCA method of interest was applied on the permuted set. The computed eigenvalues are assumed to come from a null distribution consistent with a non-informative component. This process is repeated multiple times (e.g. $p⁢e⁢r⁢m=1000$) and the mean eigenvalues for all components stored. Finally, the sPCA method is performed in the original $\gamma^$ matrix and whichever component has an eigenvalue larger than the mean of the permuted sets is considered informative and kept. Due to the computational complexity of the permutation method, particularly for SFPCA, an alternate method - the KSS criterion (Karlis et al., 2003) - was also used. This is based on a simple correction on the minimum non-trivial eigenvalue ($Cutoff_{KSS}=1+2\sqrt{\frac{K−1}{p−1}}$). The authors show that the method is robust to non-normal distributions (Karlis et al., 2003). Although KSS was not compared with the above-described permutation approach, it performed better than simpler approaches, such as choosing those PCs whose eigenvalue is larger than 1 (Kaiser criterion), the broken stick method (Jolliffe, 2002) and the Velicer method (Velicer, 1976).
 
-## Instrument strength of PCs
+### Instrument strength of PCs
 
-In MVMR, the I⁢V⁢1 assumption requires a set of genetic variants that robustly associate with at least one of the exposures X (MR assumptions). This is quantified by CFS in Equation 2 (Sanderson et al., 2020). With summary statistics of the SNP-X associations γ^p,k (p: SNP, k: exposure), the mean F- statistic for exposure k used in a standard UVMR analysis is the far simpler expression(4)Fk=∑j=1p(γ^j,kSEγ^j,k)2p
+In MVMR, the $I⁢V⁢1$ assumption requires a set of genetic variants that robustly associate with at least one of the exposures $X$ (MR assumptions). This is quantified by CFS in Equation 2 (Sanderson et al., 2020). With summary statistics of the SNP-$X$ associations $\gamma^_{p,k}$ ($p$: SNP, $k$: exposure), the mean F- statistic for exposure $k$ used in a standard UVMR analysis is the far simpler expression
 
-We provide a dedicated formula for estimating instrument strength measures for the F-statistic for the PCs that is closely related to Equation 3 rather than Equation 2. This simplification is due to the fact that an MVMR analysis of a set of PCs is essentially equivalent to an UMVR analysis of each exposure separately. The full derivation is reported in the section ‘Instrument strength’ of the Appendix.
+$$
+F_{k}=\frac{\sumj=1p(\frac{\gamma^_{j,k}}{SE_{\gamma^_{j,k}}})^{2}}{p}
+$$
+
+We provide a dedicated formula for estimating instrument strength measures for the $F$-statistic for the PCs that is closely related to Equation 3 rather than Equation 2. This simplification is due to the fact that an MVMR analysis of a set of PCs is essentially equivalent to an UMVR analysis of each exposure separately. The full derivation is reported in the section ‘Instrument strength’ of the Appendix.

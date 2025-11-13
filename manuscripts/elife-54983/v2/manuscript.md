@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Proximity biotinylation based on Escherichia coli BirA enzymes such as BioID (BirA*) and TurboID is a key technology for identifying proteins that interact with a target protein in a cell or organism. However, there have been some improvements in the enzymes that are used for that purpose. Here, we demonstrate a novel BirA enzyme, AirID (ancestral BirA for proximity-dependent biotin identification), which was designed de novo using an ancestral enzyme reconstruction algorithm and metagenome data. AirID-fusion proteins such as AirID-p53 or AirID-IκBα indicated biotinylation of MDM2 or RelA, respectively, in vitro and in cells, respectively. AirID-CRBN showed the pomalidomide-dependent biotinylation of IKZF1 and SALL4 in vitro. AirID-CRBN biotinylated the endogenous CUL4 and RBX1 in the CRL4 CRBN complex based on the streptavidin pull-down assay. LC-MS/MS analysis of cells that were stably expressing AirID-IκBα showed top-level biotinylation of RelA proteins. These results indicate that AirID is a novel enzyme for analyzing protein–protein interactions.
+Proximity biotinylation based on Escherichia coli BirA enzymes such as BioID (BirA*) and TurboID is a key technology for identifying proteins that interact with a target protein in a cell or organism. However, there have been some improvements in the enzymes that are used for that purpose. Here, we demonstrate a novel BirA enzyme, AirID (ancestral BirA for proximity-dependent biotin identification), which was designed de novo using an ancestral enzyme reconstruction algorithm and metagenome data. AirID-fusion proteins such as AirID-p53 or AirID-IκBα indicated biotinylation of MDM2 or RelA, respectively, in vitro and in cells, respectively. AirID-CRBN showed the pomalidomide-dependent biotinylation of IKZF1 and SALL4 in vitro. AirID-CRBN biotinylated the endogenous CUL4 and RBX1 in the CRL4CRBN complex based on the streptavidin pull-down assay. LC-MS/MS analysis of cells that were stably expressing AirID-IκBα showed top-level biotinylation of RelA proteins. These results indicate that AirID is a novel enzyme for analyzing protein–protein interactions.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Evolutionary protein engineering using metagenome data have recently been used t
 
 ## Results
 
-## Reconstruction of ancestral BirA enzyme using metagenome data
+### Reconstruction of ancestral BirA enzyme using metagenome data
 
 BioID and TurboID were designed on the basis of the biotin ligase BirA from E. coli. Using a different approach, we attempted to reconstruct the ancestral BirA sequence. Five ancestral sequences were obtained using the following process. A comprehensive and curated sequence library was prepared querying the Blastp web server and using a custom Python script (Source code 1), which exhibited more than 30% sequence identity with E. coli BirA (EU08004.1). Next, further curation approaches were applied to the library as shown in previous studies (Nakano et al., 2018; Nakano et al., 2019). The procedure consists of the following steps: 1) preparation of sequence pairs consisting of one of the submitted BirA sequences and one sequence (total 1275 genes) in the library, 2) sequence alignment of the all pairs, and 3) selection of sequences bearing ‘key residues’ (Figure 1A). In detail, we prepared the following four combinations of the key 26th, 124th, 171th, and 297th residues to classify the library: Ala, Val, Val, Ala (pattern 1, AVVA); Ala, Phe, Val, Ala (pattern 2, AFVA); Ala, His, Leu, Ala (pattern 3, AHLA); and Gly, Phe, Val, Ala (pattern 4, GFVA) (Figure 1A). After the selection, we classified the library as follows: the library could be divided into 17, 9, 9, or 66 genes depending on whether the key residues consisted of pattern 1, 2, 3, or 4, respectively (Figure 1). Utilizing each of the classified genes, we designed four artificial sequences using the ancestral sequence reconstruction (ASR) method (Supplementary file 1). The designed sequences were named on the basis of the patterns; the sequences were classified using the patterns 1 to 4, which we refer to as AVVA, AFVA, AHLA, and GFVA, respectively (Figure 1A). Furthermore, we added an ‘all’ BirA enzyme from the common ancestor of AVVA, AFVA, and GFVA. BirA enzymes of AVVA, AFVA, AHLA, and GFVA shared similarity with those in the Shewanella genus, the Frischella and Glliamella genera, the Thiobacillus and Betaproteobacteria genera, and multiple genera, respectively. When the AVVA, AFVA, AHLA, GFVA, and 'all' amino-acid sequences were compared to the sequence E. coli BirA they showed 45%, 58%, 42%, 82%, and 73% similarity, respectively, and the region including the active site (107–134 amino acids) was the same sequence throughout.
 
@@ -44,7 +44,7 @@ BioID and TurboID were designed on the basis of the biotin ligase BirA from E. 
 
 **Figure 1.:** (A) A homolog library of BirA from E. coli (EcBirA) was generated using blastp and curated using an original python script. The curated library was multiple aligned using INTMSAlign and sequences were classified into four groups. Each group was phylogenetically analyzed, and ancestral sequences were designed. (B) AGIA-tagged AncBirAs were synthesized using the wheat cell-free system. Their expressions were confirmed using anti-AGIA antibody immunoblotting. (C) EcBirA or each AncBirA was added to the reaction mixture when His-bls-FLAG-GST was synthesized. Biotinylation of bls by each BirA was examined using anti-biotin antibody immunoblotting. As a control, the expression of each BirA was detected using His antibody. The band intensity of biotinylated His-bls-FLAG-GST was quantified with image J software, with the index intensity (value 1.0) shown in in red characters. (D) The WT or RG mutant of each BirA was fused to p53 (BirA-p53). They analyzed biotinylation activity with or without FLAG-GST-MDM2. As a control, the expression of each BirA-p53 and MDM2 was detected using an anti-AGIA antibody and an anti-FLAG antibody, respectively. The band intensities of biotinylated p53 and MDM2 were quantified with image J software. The index intensity (value 1.0) is shown in red characters.
 
-## Enzymatic characterizations of newly designed ancestral BirA enzymes
+### Enzymatic characterizations of newly designed ancestral BirA enzymes
 
 On the basis of the amino-acid sequences discussed above, five DNA templates for AVVA, AFVA, AHLA, GFVA, and 'all' were prepared using artificial DNA synthesis. To convert the designed proteins into DNA sequences, we used the codon usage profile from the plant Arabidopsis, the average genic AT content of which is nearly 50% (Arabidopsis Genome Initiative, 2000). All ancestral BirA genes were fused an N-terminal AGIA tag, because this is a highly sensitive tag based on a rabbit monoclonal antibody (Yano et al., 2016). We synthesized these ancestral BirA proteins (AncBirAs) using a wheat cell-free protein production system to investigate their enzymatic potentials (Sawasaki et al., 2002). Biotin ligase activity was subsequently checked as all ancestral BirA proteins were obtained as a soluble form (Figure 1B). A His-bls-FLAG-GST protein with a N-terminal biotinylation site (bls) of GLNDIFEAQKIEWHE for E. coli BirA (EcBirA) was used as a substrate. Three ancestral BirA proteins—AFVA, GFVA, and 'all'—showed activity against the bls sequence (Figure 1C). GFVA had the greatest activity, similar to that of EcBirA, whereas AVVA and AHLA did not have activity.
 
@@ -52,31 +52,67 @@ In all of the designed ancestral BirA proteins, an arginine residue correspond
 
 AVVA-RG showed both the highest activity of proximity biotinylation and extra biotinylations in the lower size region (‘non-specific biotinylation’ in Figure 1D) when compared to the three ancestral BirA-RG mutants. GFVA-RG indicated the highest biotinylation activity for a specific peptide (Figure 1C) and the lowest extra proximity biotinylation. According to these results, we focused on two enzymes, AVVA and GFVA, for further analysis.
 
-## Proximity biotinylation ability of the ancestral BirA-RS mutants under different conditions
+### Proximity biotinylation ability of the ancestral BirA-RS mutants under different conditions
 
 TurboID was recently reported as an improved BioID enzyme (Branon et al., 2018). As TurboID has an R118S mutation (RS mutant) that increases the activity of proximity biotinylation, we made RS mutants of the two ancestral BirA enzymes and compared their proximity biotinylation activities in vitro and in cells. An interaction between N-terminal AGIA-BirA-fusion p53 (AGIA-BirA-p53) and FG-MDM2 was used to validate proximity biotinylation ability in vitro. Incubation time, biotinylation temperature, and biotin concentration were investigated as conditions for proximity biotinylation. Consequently, TurboID, AVVA-RG, AVVA-RS, and GFVA-RS showed higher proximity biotinylation activity after 3 hr than did BioID with a 16-hr incubation (Figure 2A). The GFVA enzyme with a RS mutation dramatically increased the activity of proximity biotinylation to RelA (GFVA-RS in Figure 2A and Figure 2—figure supplement 1), but proximity biotinylation was almost the same in AVVA-RG and -RS. AVVA-RG, AVVA-RS, and GFVA-RS showed high activity of proximity biotinylation at temperatures above 16 °C (Figure 2—figure supplement 1A). AVVA-RG, AVVA-RS, and GFVA-RS showed high proximity biotinylation activity at biotin concentrations greater than 0.5 µM (Figure 2—figure supplement 1B). On the basis of these results, three BirA enzymes—AVVA-RG, AVVA-RS, and GFVA-RS—were used for further analysis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-v2.jpg)
+
+**Figure 2.:** (A) RS mutants of AVVA and GFVA were cloned, and biotinylations of FLAG-GST-MDM2 (FG-MDM2) by BirA-p53 including RS mutants were analyzed. The reaction was performed at 500 nM of biotin at 26 °C for the described time. As a control, the expression levels of both BirA-p53 and MDM2 were detected using anti-AGIA antibody and anti-FLAG antibody, respectively. The band intensity of biotinylated MDM2 was quantified with image J software. The index intensity (value 1.0) is shown in red characters. (B) FG-RelA biotinylation by BirA-IκBα was examined. FG-MDM2 was used as the negative control. Biotinylations were performed at 500 nM of biotin at 26 °C for 1 hr (TurboID), 3 hr (AVVA-RG, AVVA-RS, and GFVA-RS), or 16 hr (BioID). As a control, the expression levels of BirA-p53 and MDM2 were detected using anti-AGIA antibody, anti-FLAG antibody and anti-GST antibody. The band intensity of biotinylated RelA was quantified with image J software. The index intensity (value 1.0) is shown in red characters. (C) GFVA-RG and GFVA-RS expressed using E. coli were purified using Ni beads and mixed with His-bls-FLAG-GST, which was synthesized using a wheat cell-free system and purified using glutathione beads. The mixtures were incubated a solution including [α-32P]ATP and biotin for 30 min at 37 °C. The resultant biotinyl-5′-AMP, AMP, or unreacted ATP was separated using cellulose thin-layer chromatography. (D) GFP and either AirID-IκBα or TurboID-IκBα were transfected in HEK293T, and biotin was added to 5 µM of this mixture for the described time period. After transfecting for 24 hr, cells were lysed by RIPA buffer including protease inhibitors, and biotinylated proteins were pulled down with streptavidin beads. As a control, the expression levels of enzyme-fused protein and target proteins were detected using each protein-specific antibody (left panel). The band intensity of pulled-down GFP and tubulin was quantified with image J software. The index intensity (value 1.0) is shown in red characters.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Biotinylation of FG-MDM2 was performed using BioID, TurboID, AVVA-RG, GFVA-RG, AVVA-RS, or GFVA-RS fused to p53. (A) Biotin concentration and (B) reaction temperature were examined for in vitro proximal biotinylation. As a control, expression of each BirA-p53 and MDM2 was detected using anti-AGIA antibody and anti-FLAG antibody, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** BirA-p53-overexpressing HEK293T cells were cultured with or without GFP-MDM2 (CS mutant) and with or without 50 µM of biotin. Cells were lysed after incubating for 24 hr, and biotinylated p53 and MDM2 were detected using a specific antibody. As a control, the expression levels of BirA-p53 and MDM2 (CS) were detected using anti-AGIA antibody and anti-GFP antibody, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each BirA or BirA-p53 was synthesized with the wheat cell-free system. Biotin (500 nM) was added and incubated without substrate at 26 °C in overnight. After the reaction, SDS-sample buffer was added to the mixtures, and the degree of self-biotinylation was analyzed. Arrow heads denote self biotinylation. As a control, the expression of each BirA-p53 was detected using anti-AGIA antibody.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) TurboID, GFVA-RG, and AirID (GFVA-RS) were synthesized using E. coli cells. Synthesized proteins were purified, and (panel A, top) purifications were determined using CBB staining. In addition, (panel A, bottom) purified proteins were immunoblotted using an anti-biotin antibody. (B) His-bls-FLAG-GST was biotinylated using purified TurboID, GFVA-RG, and GFVA-RS. Biotinylation was analyzed using immunoblotting. As a control, the expression of each BirA-p53 and His-bls-FLAG-GST was detected using anti-His antibody. (C) Analysis of biotinyl-5′-AMP. RI-labelled ATP and biotin were added to purified proteins. The resultant biotinyl-5′-AMP was analyzed using thin layer chromatography.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Conditions for in vivo biotinylation. Biotinylation of FG-MDM2 was performed using BioID-, TurboID-, or AirID-fused p53. Conditions of (A) biotin concentration and (B) biotinylation time were examined for in vitro proximal biotinylation. As a control, the expression levels of BirA-p53 and MDM2 (CS) were detected using anti-AGIA antibody and anti-GFP antibody, respectively.
+
 We used IκBα and RelA to validate the proximity biotinylation ability of these three enzymes in other protein–protein interactions because the IκBα–RelA interaction has been widely observed (Beg et al., 1992; Baeuerle and Baltimore, 1988). As in the analysis of the p53–MDM2 interaction, N-terminal AGIA-BirA-fusion IκBα (AGIA-BirA-IκBα) and FLAG-GST-RelA (FG-RelA) sequences were constructed. FG-MDM2 was used as a negative control. To compare the abilities of the different enzymes directly, the reactions of all enzymes were carried out under the same conditions. After co-incubating AGIA-BirA-IκBα and FG-RelA, AVVA-RS or GFVA-RS, high RelA biotinylation was indicated (Figure 2B). FG-MDM2 biotinylation by AGIA-BirA-IκBα was not observed.
 
-## Proximity biotinylation of the ancestral BirA-RS mutants in cells
+### Proximity biotinylation of the ancestral BirA-RS mutants in cells
 
 Next, the proximity biotinylation ability of these three enzymes was validated in cells. MDM2 dramatically degrades p53 protein in cells (Michael and Oren, 2003), so a CS mutant (MDM2(CS)) lacking E3 ubiquitin ligase activity was used for this assay. In addition, GFP (green fluorescent protein) was terminally fused to MDM2 (GFP-MDM2(CS)) because the mobility size of this fusion protein on SDS-PAGE is very similar to that of BirA-fusion p53 and MDM2. AGIA-BirA-p53 fusions were transiently expressed in HEK293T cells with or without GFP-MDM2(CS), and they were compared with or without biotin supplement. GFVA-RS showed higher biotinylation of FG-MDM2 than did other enzymes under conditions without biotin supplementation (left panel in Figure 2—figure supplement 2). Furthermore, GFVA-RS also indicated biotinylation of FG-MDM2 under biotin supplementation conditions (right panel). Taken together, these results indicated that an ancestral BirA with GFVA-RS is a good enzyme for analyzing protein–protein interactions both in vitro and in cells. Thus, we selected GFVA-RS, and we called this AirID (ancestral BirA for proximity-dependent biotin identification, an homage to BioID and TurboID).
 
-## Biochemical characterization of the AirID (GFVA-RS) enzyme
+### Biochemical characterization of the AirID (GFVA-RS) enzyme
 
 Before utilizing AirID for various applications, we assessed AirID for the two activities self-biotinylation and 5'-biotinyl-AMP production, because these activities indicate proximity biotinylation. It is known that the p53 protein makes a homo multimer (Friedman et al., 1993; Delphin et al., 1994). Each enzyme alone or the p53-fusion form was used to investigate the two activities in BioID, TurboID, and AirID. BioID and TurboID showed self biotinylation, and TurboID had the highest activity (Figure 2—figure supplement 3). AirID did not have the activity, indicating that AirID does not self-biotinylate. As TurboID was selected as an enzyme by screening the yeast-surface display that showed the highest self-biotinylation activity (Branon et al., 2018), the highest activity from TurboID is reasonable. The lack of self-biotinylation activity in AirID may be caused by a property of AirID as the enzyme or by a lack of accessible lysine residues on AirID.
 
 We next investigated the ability of the AirID enzyme to produce biotinoyl-5′-AMP. His-tagged TurboID, GFVA-RG, and AirID proteins were produced in an E. coli system and purified using nickel sepharose beads. Highly purified enzymes were obtained (Figure 2—figure supplement 4A) and biotinylation of TurboID was found, indicating that TurboID biotinylated itself in E. coli cells. As shown in Figure 2—figure supplement 3, self-biotinylation of AirID was not observed. Furthermore, to investigate the biotinylation ability of AirID at the biotin ligation site (bls) of E. coli BirA, purified His-tag and bls fusion FLAG-GST protein (His-bls-FLAG-GST) was used as a substrate. AirID and GFVA-RG biotinylated His-bls-FLAG-GST (Figure 2—figure supplement 4B), but TurboID did not do so. Radio-isotope-labelled ATP [32P-α-ATP] was used according to a previous report (Henke and Cronan, 2014) to detect biotinoyl-5′-AMP production by the enzymes. The ATP concentration reported by this assay was very low (final 1 µM) because of the use of labelled ATP. AirID and GFVA-RG produced biotinoyl-5′-AMP, and this activity was decreased by supplementing with His-bls-FLAG-GST (Figure 2C). AMP was increased at the same time, indicating that biotinoyl-5′-AMP is produced by these enzymes and that AMP is released after biotinylation of His-bls-FLAG-GST. Biotinoyl-5′-AMP formation was shown as AirID > GFVA-RG > TurboID by comparing the enzymes under these conditions (Figure 2—figure supplement 4C), suggesting that AirID has higher biotinoyl-5′-AMP formation than TurboID under low ATP conditions.
 
-## Proximity biotinylation conditions of AirID in cells
+### Proximity biotinylation conditions of AirID in cells
 
 We compared the optimal conditions for proximity biotinylation in cells between BioID, TurboID, and AirID. As a model of proximity biotinylation, AGIA-BirA-fusion p53 and FG-MDM2(CS) were co-expressed in cells. Biotin concentration and biotinylation time were investigated as the variable conditions for proximity biotinylation. Consequently, AirID and TurboID biotinylated MDM2 at biotin concentrations higher than 0.5 µM within 3 hr and 1 hr in cells, respectively (Figure 2—figure supplement 5A and B). Although TurboID-p53 dramatically increases biotinylation of high molecular weight products with long incubations of >6 hr with >5 µM biotin, AirID-p53 showed similar results from 3 to 24 hr and with 0.5–50 µM biotin supplementation in culture medium. This indicates that the AirID-fusion protein could function in a wide variety of conditions.
 
 Furthermore, PPI dependency was examined between AirID-IκBα and TurboID-IκBα. GFP and either AGIA-AirID-IκBα or AGIA-TurboID-IκBα were coexpressed in HEK293T cells. Next, biotinylation after 1, 3, 6, and 24 hr incubation with 5 µM of biotin supplementation was analyzed using a streptavidin-pull down assay. Each protein was detected using each specific antibody. As shown in the input sample (left panel in Figure 2D), expression of both fusion enzymes was at nearly the same level (IB: AGIA). TurboID showed much higher biotinylation in whole lysates than did AirID. In the pull-down assay, both enzymes biotinylated endogenous RelA at all points. After 1 hr of incubation, biotinylation of co-expressed GFP was found in TurboID-IκBα, and continuous tubulin biotinylation was also carried out after 3 hr (right panel in Figure 2D). They found no AirID-IκBα biotinylation, although AirID was incubated for 24 hr with biotin. These results indicated that AirID has high PPI dependency.
 
-## Biochemical applications of AirID-dependent biotinylation in protein–protein interaction
+### Biochemical applications of AirID-dependent biotinylation in protein–protein interaction
 
 We used AirID for various in vitro applications. It has been widely known that p53–MDM2 interaction is inhibited by nutlin-3 (Vassilev et al., 2004). Nutlin-3 was used to investigate whether AirID can be used to validate an inhibitor of PPI. Immunoblotting revealed that nutlin-3 inhibited FG-MDM2 biotinylation by AGIA-AirID-p53 (Figure 3A). As we used AlphaScreen technology for drug screening of PPI in previous reports (Uematsu et al., 2018; Nemoto et al., 2018; Nomura et al., 2019; Yamanaka et al., 2020), we used it to detect the biotinylation of drug-dependent PPI inhibition (Figure 3B). FG-MDM2 biotinylation by AGIA-AirID-p53 interaction was also detected (0 µM in Figure 3C) using AlphaScreen technology, and the signal was decreased by supplementing with nutlin-3 (>10 µM). These results indicate that AirID can detect PPI inhibition by the drug.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig3-v2.jpg)
+
+**Figure 3.:** (A) Biotinylations of FG-MDM2 by AirID-p53 were carried out with or without Nutlin-3, which inhibits the interaction between p53 and MDM2, at 500 nM of biotin at 26 °C for 3 hr. Biotinylated MDM2 was detected using immunoblotting. As a control, expression levels of BirA-p53 and MDM2 were detected using anti-AGIA antibody and anti-FLAG antibody, respectively. (B) MDM2 biotinylation was detected using AlphaScreen with the reaction mixtures described for panel (A). Biotinylated FG-MDM2 interacts with both streptavidin donor beads and protein A acceptor beads to which the anti-FLAG antibody binds. The AlphaScreen results are shown in panel (C). (D) Pomalidomide-dependent biotinylations of FG-IKZF1 and FG-SALL4 by AirID-CRBN were analyzed. FG-IKZF1 or FG-SALL4 was biotinylated with or without pomalidomide at 500 nM of biotin at 26 °C for 3 hr. As the negative control, YW/AA mutant of AirID-CRBN, which does not bind to pomalidomide, was used. As a control, expression of AirID-CRBN and IKZF1 or SALL4 was detected using anti-AGIA antibody and anti-FLAG antibody, respectively. The band intensity of biotinylated IKZF1 or SALL4 was quantified with image J software. The index intensity (value 1.0) is shown in red characters. (E) CRL4CRBN complex proteins were biotinylated using AirID or AirID-CRBN. Biotinylated proteins were pulled down with streptavidin beads. As a control, the expression levels of AirID-CRBN and the complex component proteins was detected using anti-AGIA antibody and anti-FLAG antibody, respectively (right panel). The band intensity of biotinylated DDB1 was quantified with image J software. The index intensity (value 1.0) is shown in red characters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** AGIA-AirID-CRBN, myc-IKZF1, and myc-SALL4 were co-expressed in HEK293T cells. After treating with pomalidomide and MG132 for 6 hr, biotin was added and biotinylations were analyzed using immunoblotting. As a control, expression of AirID-CRBN and IKZF1 or SALL4 was detected using anti-AGIA antibody and anti-myc antibody, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** FT-AGIA-AirID was synthesized using the wheat cell-free system with AGIA-FD or AGIA-DHFR in the presence of biotin. After the synthesis reaction, biotinylated proteins (upper panel) and synthesized proteins (lower panel) were identified using immunoblot analysis with the indicated antibodies. As a control, the expression levels of AirID-FT and FD were detected using anti-AGIA antibody.
 
 Thalidomide and its derivatives such as pomalidomide bind to cereblon (CRBN) (Ito et al., 2010; Lopez-Girona et al., 2012) and degrade target proteins such as IKZF1 (Lu et al., 2014; Krönke et al., 2014) and SALL4 (Matyskiela et al., 2018) in cells. These small chemical compounds are known as molecular glue (Fischer et al., 2016). As the CRBN-YW/AA mutant loses thalidomide binding ability (Ito et al., 2010), it could not interact with IKZF1 and SALL4 proteins. To investigate whether AirID detects a drug-dependent PPI in vitro, CRBN–IKZF1 and CRBN–SALL4 interactions were analyzed with or without pomalidomide. Biotinylations of FG-IKZF1 and FG-SALL4 by AGIA-AirID-CRBN (WT) were increased by supplementing with pomalidomide (Figure 3D). However, biotinylations were not found in CRBN-YW/AA. These results indicate that AirID can detect a drug-dependent PPI in vitro. Furthermore, the biotinylations of neosubstrates by AirID-CRBN with pomalidomide were investigated in cells. Myc-tag fusion IKZF1 (myc-IKZF1) and myc-SALL4 were transiently co-expressed with AGIA-AirID-CRBN (WT) or AGIA-AirID-CRBN-YW/AA in CRBN-knockout HEK293T cells. By supplementing with 5 µM biotin, biotinylations of both myc-IKZF1 and myc-SALL4 were detected by expressing AGIA-AirID-CRBN (WT) (Figure 3—figure supplement 1). They were not observed in co-expression with AGIA-AirID-CRBN-YW/AA. These results indicate that AirID can detect a drug-dependent PPI in cells.
 
@@ -84,21 +120,33 @@ CRBN is involved in the Cullin-4 complex consisting of DDB1, RBX1, and CUL4 (Fis
 
 The Flowering locus T (FT) protein, known as the flowering hormone florigen in plants, induces the differentiation of flowering with Flowering locus D (FD) protein, which has a bZip DNA-binding domain (Abe et al., 2005). FT–FD interaction in the floral meristem has been thought to be an important event for flowering development (Jaeger et al., 2006). To investigate whether the FT–FD interaction detects biotinylation of AirID, FT and FD genes in Arabidopsis were selected to co-synthesize FT-AirID and AGIA-FD proteins using by the wheat cell-free system with 500 nM biotin. As a negative control, E. coli dihydrofolate reductase (DHFR) was synthesized with FT-AirID. Under these conditions, FT-AirID biotinylated AGIA-FD , but AGIA-DHFR biotinylation was not observed (Figure 3—figure supplement 2). This co-translational condition reaction was incubated for 16 hr at 16 °C with biotin, indicating that AirID-dependent biotinylation functions in co-translational conditions based on the cell-free system. Taken together, these results indicate that the AirID enzyme is useful for biochemical analysis of PPI.
 
-## Cellular localization of AirID and AirID-p53
+### Cellular localization of AirID and AirID-p53
 
 We next analyzed the cellular localization of AirID and cellular biotinylation by AirID. The p53 protein is known to localize mainly to the nucleus (Shaulsky et al., 1990; Rotter et al., 1983). AGIA-AirID alone or AGIA-AirID-p53 was transiently expressed in HEK293T cells. Fluorescent streptavidin was found in whole cells by supplementing AirID expression cells with biotin (50 µM in Figure 4A). In AirID-p53 expression cells, the fluorescence was mainly observed in the nucleus, and it was at the same level for cells exposed to either 5 µM or 50 µM biotin concentration (Figure 4A). Cellular fractions from cytosol and nuclei were isolated to confirm the cellular localization by immunostaining. These fractionations indicated that AirID and AirID-p53 were mainly found in the cytosol or nucleus, respectively (Figure 4B). This suggested that AirID-fusion protein localization is dependent on fusion protein features.
 
-## Functions of proteins biotinylated by AirID in cells
+![Figure 4.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig4-v2.jpg)
+
+**Figure 4.:** Localization analysis was carried out for AirID using (A) immunostaining and (B) a fractionation assay. For immunostaining, HEK293 cells overexpressing AGIA-AirID-p53 were supplemented with the described biotin concentration for 3 hr. The cells were immobilized using anti-AGIA antibody and visualized using anti-rabbit IgG antibody-AlexaFluor555 and streptavidin-AlexaFluor488. AGIA-tagged AirID or AirID-p53 was transfected in HEK293T for the fractionation assay. The next day, biotin was added to 5 µM or 50 µM for the described time. Cytoplasmic and nuclear proteins were fractionated using a ProteoExtract Subcellular Proteome Extraction kit (Merck). As a control, expression of AirID or AirID-p53 was detected using anti-AGIA antibody. (C) AGIA tagged AirID-p53 was co-transfected with or without GFP-MDM2 in HEK293T. Biotin was added to a concentration of 50 µM at the same time. After 6 hr, DMSO or MG132 was added to a concentration of 10 µM. As a control, expression of MDM2 was detected using anti-GFP antibody. The band intensity of AirID-p53 was quantified with image J software. The index intensity (value 1.0) is shown in red characters. (D) qRT-PCR using AirID-IκBα. AGIA-tagged AirID or AirID-IκBα was stably expressed using renti-virus in HEK293T. Cells were seeded in a 96-well plate, and biotin was added at the same time. Next day, cells were stimulated using TNFα (20 ng/mL) for 0, 0.5, or 1 hr. In the cells, the mRNA level of TNFα was analyzed by qRT-PCR. Mean ± S.D. (n = 3). *, p<0.05. (E) Viability of AirID-expressing cells. AGIA-tagged AirID or AirID-IκBα was stably expressed using renti-virus in HEK293T. Cells were seeded in 96-well plates, and biotin was added the next day. The MTS assay was performed 0, 1, 2, or 3 days after adding biotin to measure cell viability.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** AGIA-AirID or AGIA-AirID-IκBα was stably expressed in HEK293T. Expressions were determined using immunoblotting. AirID-dependent biotinylation of endogenous RelA was confirmed under different conditions of biotin concentration (A) or biotinylation time (B). As a control, expression of AirID or AirID-IκBα and RelA was detected using anti-AGIA antibody and anti-RelA antibody (right panel).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** AirID or TurboID was transiently expressed in HEK293T cells. Cell viability was measured using the CellTiter-Glo luminescent cell viability assay system 2 days after the addition of biotin. Mean ± S.D. (n = 3). *, p<0.05.
+
+### Functions of proteins biotinylated by AirID in cells
 
 We investigated whether proteins that were biotinylated by AirID have native function. Because MDM2 has been known to induce p53 degradation via the ubiquitin-proteasome system in cells (Michael and Oren, 2003) and AirID-p53 provided both self and MDM2 biotinylation (Figure 2A), AGIA-AirID-p53 and GFP-MDM2 were transiently co-expressed in cells. Treatment with proteasome inhibitor MG132 inhibited AirID-p53 degradation, but degradation was extremely decreased without the treatment (Figure 4C). The inactive MDM2 form, FG-MDM2(CS), also did not promote AirID-p53 (Figure 2A), indicating that AirID-p53 degradation is carried out by GFP-MDM2. In addition, MG132 treatment biotinylated AirID-p53 under biotin supplementation conditions. These results indicated that biotinylated MDM2 works as a E3 ligase for biotinylated AirID-p53.
 
 RelA was selected to investigate the transactivation activity of the biotinylated transcription factor because RelA has transactivation activity for the NF-κB promoter (Ganchi et al., 1992). Two types of expression plasmids, AGIA-AirID-RelA and AGIA-RelA, were constructed. Each plasmid was transiently transfected in HEK293 cells with a NF-κB promoter-luciferase plasmid. Biotin supplementation induced biotinylation of AGIA-AirID-RelA, but AGIA-RelA biotinylation was not found (Figure 4D). The luciferase assay revealed that the transactivation activity of AirID-RelA was nearly the same for AGIA-RelA, AGIA-AirID-RelA, and biotinylated AGIA-AirID-RelA, indicating that biotinylated RelA functions as a normal transcription factor.
 
-## AirID effects on cell viability
+### AirID effects on cell viability
 
 TurboID almost completely inhibits HEK293T cell growth under 50 µM biotin supplementation conditions (Branon et al., 2018). HEK293T cells that stably expressed AirID or AirID-IκBα were constructed using a lentivirus system to investigate whether AirID affects HEK293T cell viability. In the stable cells expressing AirID-IκBα, RelA biotinylation was clearly found by supplementing with >50 µM for 6 hr. It was not found in cells in which AirID was stably expressed (Figure 4—figure supplement 1). The cell growth of both cell types was not fully inhibited by 50 µM biotin supplementation (Figure 4E), indicating that AirID does not affect cell viability under 50 µM biotin supplementation conditions. It was demonstrated that TurboID showed cytotoxicity within 48 hr with 50 µM biotin (Branon et al., 2018). Therefore, AirID- or TurboID-expressing cells were cultured with or without biotin for 48 hr and then the viability of them was analyzed. Compared with control (Mock), the viability of TurboID-expressing cell was significantly decreased with 50 µM biotin, but the viability of AirID-expressing cells was not significantly affected (Figure 4—figure supplement 2).
 
-## Biotinylation of endogenous proteins by AirID in cells
+### Biotinylation of endogenous proteins by AirID in cells
 
 We investigated whether AirID could biotinylate dependently interacting endogenous proteins in cells. Streptavidin-conjugated beads were used as in a previous report to recover biotinylated endogenous proteins from cell lysates (Van Itallie et al., 2013). AGIA-AirID-IκBα was transiently expressed in HEK293T cells under different biotin concentration conditions. Streptavidin-pull down assay of the cell lysates was carried out, and the biotinylated endogenous proteins were detected using immunoblotting with each specific antibody. Endogenous RelA protein was biotinylated without supplemental biotin by transiently expressing AGIA-AirID-IκBα in cells (IB: RelA, 0 µM biotin concentration in Figure 5A). Biotin supplementation enhanced biotinylations of p50 or p105, which are known IκBα interactors (IB: p50/p105 and p50, 5 µM or 10 µM biotin concentration). These biotinylations were not found for AGIA-AirID alone. As the IκBα protein interacts with RelA, this result illustrated that biotinylated AGIA-AirID-IκBα may bring endogenous RelA without biotinylation. To confirm this, immunoprecipitation using a specific antibody recognizing endogenous RelA was performed in severe conditions after proteins were denatured with 1% SDS. Biotinylation of endogenous RelA recovered by immunoprecipitation was observed as a result (Figure 5B). Using the same lysates, the streptavidin-pull down assay recovered RelA protein, indicating that RelA biotinylation depends on AGIA-AirID-IκBα. These results showed IκBα-interaction-dependent biotinylation by AirID.
 
@@ -108,9 +156,17 @@ We investigated whether AirID could biotinylate dependently interacting endogen
 
 As in vitro protein biotinylation involving in a CRL4AirID-CRBN complex was found (Figure 3E), we investigated whether proteins in the CRL4 complex were biotinylated by AirID-fusion CRBN in cells. AGIA-AirID-CRBN was transiently expressed in HEK293T cells, and cell lysates were pulled down using streptavidin beads. Biotinylation of CUL4 and RBX1 was found after supplementing with 5 µM biotin (Figure 5C), but DDB1 biotinylation was not found. Taken together, these results indicate that the biotinylation assay using the AirID-fusion target is a useful tool for analyzing PPI in the cell.
 
-## Mass spectrometry analysis of AirID-IκBα-dependent biotinylated proteins in cells
+### Mass spectrometry analysis of AirID-IκBα-dependent biotinylated proteins in cells
 
 Since BioID has been widely used to identify PPI in cells using mass spectrometry (MS) analysis (Ikeda and Freeman, 2019), we also analyzed biotinylated proteins using LC-MS/MS in the cells stably expressing AirID alone or AirID-IκBα that were used in Figure 4E. The flowchart for the analysis of biotinylated peptides is shown in Figure 6A. The cells were treated with 50 µM biotin for 6 hr. Proteins were digested using trypsin after cell lysis. Biotinylated peptides were captured using Tamavidin2-Rev. Tamavidin2-Rev can bind to biotin-labelled substances and can release them under high concentrations of free biotin (Takakura et al., 2013). The biotinylated peptides were eluted using 2 mM biotin, and the eluted peptides were analyzed using LC-MS/MS. The biotinylation by free biotinoyl-5′-AMP occurs on lysine (Lys) residues on proteins (Choi-Rhee et al., 2004). Trypsin digests Lys or arginine (Arg), but it cannot cleave modified Lys in the same way as it does biotinylated Lys (Bheda et al., 2012). These features show that an eluted biotinylated peptide has a single biotin, indicating that the direct determination of biotinylated peptide provides a biotinylation site on the peptide. Using this method, we found 12 biotinylated peptides that were present in AirID-IκBα-expressing cells at levels that were more than five times higher than those in cells expressing only AirID (Figure 6B and C, Figure 6—source data 1). In the top five peptides, three biotinylated peptides were derived from RelA proteins (Figure 6C), indicating that AirID-IκBα could accurately biotinylate a major partner RelA protein in the cells. Furthermore, we investigated whether AirID-dependent biotinylation occurs in a specific region. Comparison of amino-acid sequences among the top 20 biotinylated peptides showed no similarity except for a single Lys residue (Figure 6—figure supplement 1), suggesting that the proximate biotinylation by AirID happens on the Lys residue but does not have a preferred sequence.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic figure for detecting biotinylated proteins using cells stably expressing AirID. HEK293T cells that stably expressed AGIA-AirID or AGIA-AirID-IκBα were cultured in DMEM containing 50 µM for 6 hr before collecting (n = 3). Collected cells were lysed, and proteins were digested in solution using trypsin. Biotinylated peptides were captured from digested peptides using Tamavidin2-Rev beads (Wako), which can elute biotinylated samples using 2 mM biotin. Eluted peptides were detected using LC-MS/MS. (B) A volcano plot showing AirID-IκBα versus AirID against p-value of triplicate experiments. (C) A list of peptides increased by more than 5-fold. (D) Schematic figure for detecting biotinylated proteins using cells transiently expressing AirID. HEK293T cells that transiently expressed AGIA-AirID or AGIA-AirID-IκBα were cultured in DMEM containing 5 µM for 3 hr before collecting (n = 1). Biotinylated proteins were detected using a similar method. (E) A list of the top ten peptides increased by AirID-IκBα.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54983/elife-54983-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Twenty sequences around the biotinylation site were compared on the basis of the results of analysis by LC-MS/MS. The results were (A) listed, and (B) the sequence logo was generated using WebLogo (http://weblogo.berkeley.edu/).
 
 In Figure 5A, the streptavidin pull down clearly showed biotinylation of the endogenous RelA protein in transiently AirID-IκBα expressing cells. We assessed whether an AirID-IκBα-dependent biotinylation of RelA could be detected using LC-MS/MS in transiently AirID-IκBα expressing cells. A flowchart for the analysis of biotinylated peptides using transiently expressing cells is shown in Figure 6D. As expected, the top biotinylated peptide was RelA (Figure 6E), as in stably expressing cells. Taken together, these results suggest that detection of AirID-dependent biotinylation using LC-MS/MS is useful for PPI analysis in cells.
 
@@ -126,74 +182,518 @@ Inhibition of MDM2–p53 interaction by nutline-3 was detected using AirID bioti
 
 ## Materials and methods
 
-## Reconstruction of five ancestral BirA
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (E. coli-modified)</td>
+      <td>BioID</td>
+      <td>Kim et al., 2014; DOI: 10.1073/pnas.1406459111</td>
+      <td></td>
+      <td>Obtained by mutating 118Arg of BirA to Gly</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli-modified)</td>
+      <td>TurboID</td>
+      <td>Branon et al., 2018 DOI: 10.1038/nbt.4201</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (artificially designed)</td>
+      <td>AVVA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (artificially designed)</td>
+      <td>AFVA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (artificially designed)</td>
+      <td>AHLA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (artificially designed)</td>
+      <td>GFVA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (artificially designed)</td>
+      <td>All</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic gene fragment was purchased using Invitrogen Gene Art</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>IκBα</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>RelA</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>p53</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Mdm2</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CRBN</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>RBX1</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>DDB1</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CUL4</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>SALL4</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>IKZF1</td>
+      <td>Mammalian Gene Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEU (plasmid)</td>
+      <td>Cell-Free Science</td>
+      <td></td>
+      <td>For protein expression using wheat germ cell-free system</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 (plasmid)</td>
+      <td>Modified Invitrogen</td>
+      <td></td>
+      <td>For protein expression using human cell</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET30a (plasmid)</td>
+      <td>Modified Merck</td>
+      <td></td>
+      <td>For protein expression using E. coli</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AGIA HRP</td>
+      <td>Yano et al., 2016 DOI: 10.1371/journal.pone.0156716</td>
+      <td>Rabbit mAb</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-biotin, HRP-linked antibody (from goat)</td>
+      <td>Cell Signaling</td>
+      <td>#7075S RRID:AB_10696897</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>His-probe antibody (H-3) (mouse mAb)</td>
+      <td>SantaCruz</td>
+      <td>sc-8036 RRID:AB_627727</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2-HRP (mouse mAb)</td>
+      <td>Sigma</td>
+      <td>A8592 RRID:AB_439702</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST-tag pAb-HRP-DirecT (rabbit pAb)</td>
+      <td>MBL</td>
+      <td>PM013-7 RRID:AB_10598029</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p65 (D14E12) (rabbit mAb)</td>
+      <td>Cell Signaling</td>
+      <td>#8242S RRID:AB_10859369</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (1E4) (mouse mAb)</td>
+      <td>MBL</td>
+      <td>M048-3 RRID:AB_591823</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin pAb-HRP-DirecT (rabbit pAb)</td>
+      <td>MBL</td>
+      <td>PM054-7 RRID:AB_10695326</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminB (goat pAb)</td>
+      <td>SantaCruz</td>
+      <td>sc-6217 RRID:AB_648158</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (4A6) (mouse mAb)</td>
+      <td>Merck</td>
+      <td>05–724 RRID:AB_11211891</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p50/p105 (D7H5M) (rabbit mAb)</td>
+      <td>Cell Signaling</td>
+      <td>#12540S RRID:AB_2687614</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CUL4 (H-11)</td>
+      <td>SantaCruz</td>
+      <td>sc-377188</td>
+      <td>1:1000; 5% skimmed milk in TBST</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DDB1 (E-11)</td>
+      <td>SantaCruz</td>
+      <td>sc-376860</td>
+      <td>1:1000; 5% skimmed milk in TBST</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RBX1 (E-11)</td>
+      <td>SantaCruz</td>
+      <td>sc-393640 RRID:AB_2722527</td>
+      <td>1:1000; 5% skimmed milk in TBST</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, HRP-Linked F (ab’)2Fragment Donkey</td>
+      <td>GE Healthcare</td>
+      <td>NA9340V RRID:AB_772191</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG, HRP-Linked F (ab’)2Fragment Sheep</td>
+      <td>GE Healthcare</td>
+      <td>NA9310V RRID:AB_772193</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal rabbit IgG</td>
+      <td>MBL</td>
+      <td>PM035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin, Alexa Fluor 488</td>
+      <td>Thermo</td>
+      <td>S32354 RRID:AB_2315383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab')2-Goat anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Thermo</td>
+      <td>A21431 RRID:AB_1500601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>RIKEN BRC</td>
+      <td>RCB2202</td>
+      <td>Maintained in DMEM supplementedwith 10% FBS</td>
+    </tr>
+    <tr>
+      <td>Beads</td>
+      <td>Dynabeads proteinG</td>
+      <td>Invitrogen</td>
+      <td>DB10004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Beads</td>
+      <td>Ni Sepharose High Performance</td>
+      <td>GE Healthcare</td>
+      <td>17526801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Beads</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>17526801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Beads</td>
+      <td>Streptavidin Sepharose High Performance</td>
+      <td>GE Healthcare</td>
+      <td>17511301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Beads</td>
+      <td>Tamavidin 2-Rev magnetic beads</td>
+      <td>Fujifilm</td>
+      <td>133–18611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>Alphascreen ProteinA detection kit</td>
+      <td>Perkin Elmer</td>
+      <td>6760617R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>CellTiter 96 AQueous One Solution Cell Proliferation Assay</td>
+      <td>Promega</td>
+      <td>G5430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>SuperPrep II Cell Lysis and RT kit for qPCR</td>
+      <td>TOYOBO</td>
+      <td>SCQ401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>KOD SYBR qPCR Mix</td>
+      <td>TOYOBO</td>
+      <td>QKD-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>Wheat germ cell-free protein synthesis kit</td>
+      <td>Cell-Free Science</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Wako</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>DMEM, low glucose</td>
+      <td>Wako</td>
+      <td>041–29775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Nutlin-3</td>
+      <td>Sigma</td>
+      <td>N6287-1MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Pomalidomide</td>
+      <td>TCI</td>
+      <td>P2074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>MG-132</td>
+      <td>Peptide Institute</td>
+      <td>3175 v</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>D-Biotin</td>
+      <td>Nacalai tesque</td>
+      <td>04822–91</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Sigma</td>
+      <td>P8340-5ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Thermo</td>
+      <td>15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Isobutyric acid</td>
+      <td>Nacalai tesque</td>
+      <td>06429–85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Ammonia solution</td>
+      <td>Nacalai tesque</td>
+      <td>025–12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cellulose TLC plate</td>
+      <td>Merck</td>
+      <td>1.05552.0001</td>
+      <td>Toll for chromatography</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reconstruction of five ancestral BirA
 
 The BirA homologous sequences, classified into four groups using the key residues, were aligned using MAFFT software 2 (Katoh et al., 2002). Each of the aligned sequences was analyzed using MEGA6 software 3, and the phylogenetic tree was generated using the maximum likelihood method (Tamura et al., 2013). Aligned sequences and phylogenetic tree data were submitted to FastML (Ashkenazy et al., 2012). The JTT empirical model was adopted for analysis. Finally, we obtained four ancestral BirA forms named AVVA, AFVA, AHLA, and GFVA. Furthermore, we applied the three designed sequences (AVVA, AFVA, and GFVA) and an identical procedure to design another ancestral BirA called ‘all’. All of the five designed sequences are shown in Supplementary file 1.
 
-## Plasmids
+### Plasmids
 
 BioID (BirA*), TurboID, or ancestral BirAs (AncBirAs) were cloned into pcDNA3.1-AGIA or pEU-AGIA vectors using the BamH1 and Not1 restriction sites. AncBirAs-fused p53, IκBα or CRBN were cloned into pcDNA3.1-AGIA or pEU-AGIA vectors using BamH1, Kpn1, and Not1. Mutants of AncBirAs were generated using site-directed mutagenesis with a PrimeSTAR mutagenesis basal kit (Takara). MDM2 and RelA were cloned into pEU-FLAG-GST or pcDNA6.2-GFP vectors using the Gateway cloning system (Thermo Fisher Scientific). Lentivirus-based AGIA-tagged AirID and AirID-IκBα plasmids were generated using restriction enzyme digestion of a CS II-CMV-MCS-IRES2-Bsd vector. For E. coli expression, TurboID, GFVA-R118G, or AirID was cloned into the pET30a-His vector using an In-Fusion HD Cloning Kit (Takara).
 
-## Cell lines
+### Cell lines
 
 HEK293T cells (purchased from RIKEN RCB, Tsukuba, Japan, catalog number RCB2202) were incubated at 37 °C and 5% CO2 in Dulbecco’s Modified Eagle Medium (DMEM) (wako) supplemented with 10% fetal bovine serum (Biosera) and antibiotics (100 units/mL penicillin and 100 µg/mL streptomycin) (Thermo). We confirmed that the cell line was free of mycoplasma contamination. Lentiviruses expressing AGIA-AirID and AGIA-AirID-IκBα were generated by transfection using PEI MAX - Transfection Grade Linear Polyethylenimine Hydrochloride (Polyscience). After transmission of the transgene, a pool of HEK293T cells that were resistant to Blasticidin S (10 μg/mL) (Invitrogen) was generated and used in subsequent experiments.
 
-## Cell-free protein synthesis and GST-tag purification
+### Cell-free protein synthesis and GST-tag purification
 
 In vitro transcription and wheat cell-free protein synthesis were performed using the WEPRO1240 expression kit (Cell-Free Sciences). A transcript was made from each of the DNA templates mentioned above using SP6 RNA polymerase. The translation reaction was performed using the WEPRO1240 expression kit (Cell-Free Sciences). For biotin labelling, 1 μl of BirA or of the ancestral BirAs produced by the wheat cell-free expression system were added to the bottom layer, and 500 nM (final concentration) of D-biotin (Nacalai Tesque) was added to both upper and bottom layers as described previously (Sawasaki et al., 2008). The aliquots were used for expression analysis and functional characterization. 1 mL of synthesized His-bls-FLAG-GST was mixed with Glutathione Sepharose 4B (GE Healthcare) and rotated for 3 hr at 4 °C. The mixture was washed with PBS. Proteins were eluted in 100 µL fractions with elution buffer (50 mM Tris-HCl [pH8.0], 10 mM reduced glutathione). Protein was subjected to SDS-PAGE and CBB staining to determine purity.
 
-## BirA enzyme preparation from E. coli
+### BirA enzyme preparation from E. coli
 
 To purify TurboID, GFVA-R118G, and AirID proteins, the genes encoding them were inserted into pET30a and transformed into E. coli strain BL21. The E. coli cells were grown at 37 °C in LB medium to an OD600 of 0.6 and induced by adding IPTG to 1 mM for an additional 6 hr at 37 °C. Cells were centrifuged and resuspended in lysis buffer (20 mM sodium phosphate, 300 mM NaCl, 10 mM imidazole). The cells were lysed using sonication, and the lysates were centrifuged. The supernatants were added to Ni Sepharose High Performance (GE Healthcare) and incubated for 3 hr at 4 °C. The mixture was washed with three column volumes of wash buffer (20 mM sodium phosphate, 300 mM NaCl, 50 mM imidazole). Proteins were eluted in 500 µL fractions with elution buffer (20 mM sodium phosphate, 300 mM NaCl, 500 mM imidazole). Fractions were dialyzed against PBS. Proteins were subjected to SDS-PAGE and CBB staining to determine purity.
 
-## Cell transfection and immunoblotting
+### Cell transfection and immunoblotting
 
 HEK293T cells were transfected with various plasmids using PEI MAX (Polyscience). Immunoblotting was performed according to standard protocols. Briefly, proteins in whole-cell lysates were separated using SDS-polyacrylamide gel electrophoresis (SDS-PAGE) and transferred onto a PVDF membrane using semi-dry blotting. After blocking with 5% milk/TBST or Blocking one (Nakalai Tesque), the membrane was incubated with the appropriate primary antibodies followed by a horseradish peroxidase (HRP)-conjugated secondary antibody.
 
-## Biotinylation assays
+### Biotinylation assays
 
 In vitro biotinylation assays were performed. Briefly, 5 µL of each synthesized protein was mixed and incubated at 26 °C for 1 hr. Biotin was added, and the biotinylation reaction was performed in a total volume of 15 µL. After the reaction, biotinylated proteins were analyzed using SDS-PAGE and immunoblotting. In cell biotinylation assays were also performed. Briefly, each BirA or BirA fused gene and substrate gene were transfected into HEK293T. At the same or each time, biotin was added and cells were lysed using SDS sample buffer (125 mM Tris-HCl [pH 6.8], 4% SDS, 20% glycerol, 0.01% BPB, 10% 2-mercaptoethanol) 24 hr after transfection. Whole cell lysates were analyzed using SDS-PAGE and immunoblotting.
 
-## Streptavidin pull-down assays
+### Streptavidin pull-down assays
 
 A streptavidin pull-down was performed to analyze biotinylated proteins. In vitro reaction mixtures after biotinylation were diluted with wash buffer (50 mM Tris-HCl [pH7.5], 1% TritonX-100, 150 mM NaCl), and 1% SDS was added to stop the reaction. After biotinylation, cells were lysed using RIPA buffer (50 mM Tris-HCl [pH 8.0], 150 mM NaCl, 0.5% sodium deoxycholate, 0.1% SDS, 1% NP-40) including protease inhibitor cocktail and sonication. Lysates were centrifuged at 15,000 rpm at 4 °C for 10 min. SDS was added to supernatants to 1%. In vitro reaction mixtures or cell lysates were mixed with equilibrated Streptavidin Sepharose High Performance (GE Healthcare) and rotated at 4 °C for 1 hr. After flow-through was removed, beads were washed three times using wash buffer (50 mM Tris-HCl [pH7.5], 1% TritonX-100, 150 mM NaCl), and beads were boiled into SDS sample buffer. Boiled solution was analyzed using SDS-PAGE and immunoblotting.
 
-## In vitro inhibition assays using AlphaScreen technology
+### In vitro inhibition assays using AlphaScreen technology
 
 Synthesized FG-MDM2 and Nutlin-3 were mixed and incubated for 30 min at 26 °C. AGIA-AirID-p53 was added to the mixture and incubated for 1 hr at 26 °C. In addition, biotin was added to the reaction mixture to 500 nM and incubated for 3 hr at 26 °C. Inhibition was examined using the AlphaScreen IgG (Protein A) detection kit (Perkin Elmer) and immunoblotting. Briefly, for AlphaScreen, 10 μL of detection mixture containing 100 mM Tris-HCl (pH 8.0), 0.1% Tween 20, 100 mM NaCl, 10 ng anti-FLAG antibody (Sigma), 1 mg/mL BSA, 0.1 μL streptavidin-coated donor beads, and 0.1 μL protein A-conjugated acceptor beads were added to each well of a 384-well Optiplate before incubation at 26 °C for 1 hr. Luminescence was detected using the AlphaScreen detection program with an EnVision device (PerkinElmer). For immunoblotting, solutions were boiled in SDS sample buffer. The boiled solution was analyzed using SDS-PAGE and immunoblotting.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells after biotinylation were lysed with RIPA buffer and sonication for immunoprecipitation. Lysates were centrifuged and SDS was added to supernatants to denature proteins. Their solutions were diluted 10-fold. After 2 µg of the indicated antibodies were bound to either protein A or protein G Dynabeads (Thermo Fisher Scientific) for 30 min at room temperature, the beads were incubated with cell lysates diluted overnight at 4 °C. The immunocomplexes were boiled in SDS sample buffer after washing three times with PBS. The boiled solution was analyzed using SDS-PAGE and immunoblotting.
 
-## Cell viability assays
+### Cell viability assays
 
 Cells were seeded into 96-well plates at a density of 0.25 × 104 cells/well and treated with 50 µM biotin after 24 hr. Cell viability was determined using the MTS assay with a CellTiter96 Aqueous One Solution Cell Proliferation Assay kit (Promega). In brief, 20 μL of the MTS reagent was added into each well, and the cells were incubated at 37 °C for 1 hr. The absorbance was detected at 490 nm (reference: 650 nm) with a Microplate Reader (SpectraMaxM3 Multi-Mode Microplate Reader; Molecular Devices).
 
 Cells were seeded into 96-well plates at a density of 0.25 × 104 cells/well and transfected after 24 hr. After 2 days, cell viability was determined using CellTiter-Glo Luminescent Cell Viability Assay Cell system (Promega). In brief, the CellTiter-Glo reagent was added into each well, and the cells were incubated at room temperature for 10 min. The luminescence was detected with a Microplate Reader (GloMax Discover Microplate Reader).
 
-## Biotinoyl-5′-AMP synthesis assay
+### Biotinoyl-5′-AMP synthesis assay
 
 The assays contained 50 mM Tris-HCl buffer (pH 8.0), 5.5 mM MgCl2, 100 mM KCl, 0.1 mM TCEP, 1 µM ATP including [α-32P]ATP, 25 µM biotin, 2 µM BirA and with or without 1 µM His-bls-FLAG-GST for a total reaction mixture of 10 µl (Henke and Cronan, 2014). The reaction mixtures were incubated at 37 °C for 30 min. A portion of each reaction mixture (1 µl) was spotted onto cellulose thin-layer chromatography (TLC) plates and developed in isobutyric acid-NH4OH-water (66∶1∶33) (Prakash and Eisenberg, 1979). The thin-layer chromatograms were exposed to a phosphorimaging screen and visualized using a Typhoon FLA-3000 (GE Healthcare).
 
-## Fractionation assay
+### Fractionation assay
 
 HEK293T cells were seeded onto a 24-well plate. Next day, cells were transfected, and biotin was added at the same time or each time. Subcellular fractionation was performed 24 hr after transfection using a ProteoExtract Subcellular Proteome Extraction kit (Merck) according to the protocol.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Cells were fixed with 4% paraformaldehyde in phosphate-buffered saline (PBS) for 15 min at room temperature before permeabilizing with 0.5% Triton X-100 in PBS for 15 min. Cells were incubated with a primary antibody overnight at 4 °C after blocking with 0.5% CS in TBST for 1 hr. After washing with TBST, cells were incubated with the appropriate Alexa Flour 488- and/or 555-conjugated secondary antibody and streptavidin for 1 hr at room temperature. Nuclei were counterstained with 4,6-diamidino-2-phenylindole. After washing with TBST, coverslips were mounted with anti-fade.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Preparation of cell lysates and reverse transcription were performed using SuperPrep II Cell Lysis and RT Kit for qPCR (TOYOBO). Real-time PCR was carried out using KOD SYBR qPCR Mix (TOYOBO). qRT-PCR primers used were as follows; TNF-α: 5′- CAGCCTCTTCTCCTTCCTGAT (forward), 5′-GCCAGAGGGCTGATTAGAGAGA (reverse); GAPDH: 5′-AGCAACAGGGTGGTGGAC (forward), 5′- GTGTGGTGGGGGACTGAG (reverse).
 
-## Mass spectrometry analysis of biotinylated peptides
+### Mass spectrometry analysis of biotinylated peptides
 
 The proximity-dependent biotin identification method using AirID was performed according to a previous report (Kim et al., 2016). Briefly, confluent HEK293T cells stably expressing AirID or AirID-IκBα fused at the N-terminus with an AGIA tag in a 6 cm dish were incubated with 50 μM biotin for 6 hr before harvesting using ice-cold PBS. Cell pellets were lysed and digested with trypsin. The digested peptides were incubated with Tamavidin2-Rev magnetic beads (FUJIFILM) before eluting with 2 mM biotin. Detailed procedures will be described elsewhere (Motani K and Kosako H, in preparation).
 
 LC-MS/MS analysis of the resulting peptides was performed on an EASY-nLC 1200 UHPLC connected to a Q Exactive Plus mass spectrometer using a nanoelectrospray ion source (Thermo Fisher Scientific). The peptides were separated on a 75-µm inner diameter ×150 mm C18 reverse-phase column (Nikkyo Technos) with a linear gradient from 4–28% acetonitrile for 0–40 min followed by an increase to 80% acetonitrile during 40–50 min. The mass spectrometer was operated in a data-dependent acquisition mode with a top 10 MS/MS method. MS1 spectra were measured with a resolution of 70,000, an AGC target of 1 × 106, and a mass range from 350 to 1500 m/z. HCD MS/MS spectra were acquired at a resolution of 17,500, an AGC target of 5 × 104, an isolation window of 2.0 m/z, a maximum injection time of 60 ms, and a normalized collision energy of 27. Dynamic exclusion was set to 10 s. Raw data were directly analyzed against the SwissProt database restricted to Homo sapiens using Proteome Discoverer version 2.3 (Thermo Fisher Scientific) for identification and label-free precursor ion quantification. The search parameters were as follows: (a) trypsin as an enzyme with up to two missed cleavages; (b) precursor mass tolerance of 10 ppm; (c) fragment mass tolerance of 0.02 Da; (d) carbamidomethylation of cysteine as a fixed modification; and (e) protein N-terminal acetylation, methionine oxidation, and lysine biotinylation as variable modifications. Peptides were filtered at a false-discovery rate of 1% using the percolator node. Normalization was performed such that the total sum of abundance values for each sample over all peptides was the same.
 
-## Statistical analysis
+### Statistical analysis
 
 Significant changes were analyzed using a one-way or two-way ANOVA followed by Tukey’s post-hoc test using Graph Pad Prism eight software (GraphPad, Inc). For all tests, a P value of less than 0.05 was considered statistically significant.

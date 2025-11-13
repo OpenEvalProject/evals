@@ -15,13 +15,13 @@
 
 ## Abstract
 
-10.7554/eLife.31185.001 Are some people generally more successful using cognitive regulation or does it depend on the choice domain? Why? We combined behavioral computational modeling and multivariate decoding of fMRI responses to identify neural loci of regulation-related shifts in value representations across goals and domains (dietary or altruistic choice). Surprisingly, regulatory goals did not alter integrative value representations in the ventromedial prefrontal cortex, which represented all choice-relevant attributes across goals and domains. Instead, the dorsolateral prefrontal cortex (DLPFC) flexibly encoded goal-consistent values and predicted regulatory success for the majority of choice-relevant attributes, using attribute-specific neural codes. We also identified domain-specific exceptions: goal-dependent encoding of prosocial attributes localized to precuneus and temporo-parietal junction (not DLPFC). Our results suggest that cognitive regulation operated by changing specific attribute representations (not integrated values). Evidence of domain-general and domain-specific neural loci reveals important divisions of labor, explaining when and why regulatory success generalizes (or doesn’t) across contexts and domains.
+Are some people generally more successful using cognitive regulation or does it depend on the choice domain? Why? We combined behavioral computational modeling and multivariate decoding of fMRI responses to identify neural loci of regulation-related shifts in value representations across goals and domains (dietary or altruistic choice). Surprisingly, regulatory goals did not alter integrative value representations in the ventromedial prefrontal cortex, which represented all choice-relevant attributes across goals and domains. Instead, the dorsolateral prefrontal cortex (DLPFC) flexibly encoded goal-consistent values and predicted regulatory success for the majority of choice-relevant attributes, using attribute-specific neural codes. We also identified domain-specific exceptions: goal-dependent encoding of prosocial attributes localized to precuneus and temporo-parietal junction (not DLPFC). Our results suggest that cognitive regulation operated by changing specific attribute representations (not integrated values). Evidence of domain-general and domain-specific neural loci reveals important divisions of labor, explaining when and why regulatory success generalizes (or doesn’t) across contexts and domains.
 
 ## Introduction
 
 Choices often require us to weigh competing considerations. Does a decadent piece of cake merit the pounds we’ll put on afterwards? Should the pleas of a homeless person trump our own selfish needs? Empirical evidence suggests that the answer to these questions depends in part on a decision maker’s goals (Bettman et al., 1998) and can be affected by intentional control (Hare et al., 2011a; Hutcherson et al., 2012; Sokol-Hessner et al., 2013). Cognitive regulation of decision making thus serves an important function in goal-directed behavior (Magar et al., 2008), relying on attention, working memory, and executive control to promote particular, goal-congruent choices (e.g., eat healthier, be kinder). Cognitive regulation of decision making is an important technique in therapeutic interventions for problematic behaviors, including obesity (Shaw et al., 2005), addiction (Carroll and Onken, 2005), and other decision making disorders (Sylvain et al., 1997). Previous findings have significantly advanced our understanding of the psychological and neural bases of cognitive regulation of decision making (Hare et al., 2011a; Hutcherson et al., 2012; Hare et al., 2009; Kober et al., 2010), yet important questions about its computational underpinnings remain. At what level of the processing stream does goal-dependent cognitive regulation change the typical trajectory of choice? Does it operate in the same manner in different contexts, or does it depend on the domain? Answering these questions has important ramifications for understanding when people succeed or fail to implement their regulatory goals during decision making, why some people seem to succeed more often than others, and whether there are neural targets for treatment or biomarkers to identify at-risk individuals.
 
-In studies of basic choice, weighted additive utility models have been used successfully to capture patterns in human behavior across a variety of domains (Charness and Rabin, 2002; Schoemaker and Waid, 1982). In these models, decision makers compute the decision value (DV) of each option as the weighted sum of its choice-relevant attributes (DV=∑iwiAttributei) (Keeney and Raiffa, 1993; Anderson et al., 1971) and compare them to make a choice. Recent neuroscience work provides evidence in favor of this model, observing signals related to the value of specific attributes in distinct cortical and subcortical areas, for both social (Hutcherson et al., 2015a; Hutcherson et al., 2015b) and non-social choices (Lim et al., 2011; Basten et al., 2010). In turn, signals correlated with the overall, integrated decision value of an option have been observed in multiple regions, such as the ventromedial prefrontal cortex (VMPFC) and ventral striatum (Hutcherson et al., 2012; Plassmann et al., 2007; Kable and Glimcher, 2007; Knutson et al., 2007; Grueschow et al., 2015; Bartra et al., 2013; Clithero and Rangel, 2014). A key goal of neuroeconomics is to describe how these attribute and decision value computations change as a function of regulatory goals and contexts, and to link such changes to regulatory success. Here, we sought to address three important questions about this process.
+In studies of basic choice, weighted additive utility models have been used successfully to capture patterns in human behavior across a variety of domains (Charness and Rabin, 2002; Schoemaker and Waid, 1982). In these models, decision makers compute the decision value (DV) of each option as the weighted sum of its choice-relevant attributes $(DV=\sumiw_{i}Attribute_{i})$ (Keeney and Raiffa, 1993; Anderson et al., 1971) and compare them to make a choice. Recent neuroscience work provides evidence in favor of this model, observing signals related to the value of specific attributes in distinct cortical and subcortical areas, for both social (Hutcherson et al., 2015a; Hutcherson et al., 2015b) and non-social choices (Lim et al., 2011; Basten et al., 2010). In turn, signals correlated with the overall, integrated decision value of an option have been observed in multiple regions, such as the ventromedial prefrontal cortex (VMPFC) and ventral striatum (Hutcherson et al., 2012; Plassmann et al., 2007; Kable and Glimcher, 2007; Knutson et al., 2007; Grueschow et al., 2015; Bartra et al., 2013; Clithero and Rangel, 2014). A key goal of neuroeconomics is to describe how these attribute and decision value computations change as a function of regulatory goals and contexts, and to link such changes to regulatory success. Here, we sought to address three important questions about this process.
 
 First, at what level does cognitive regulation operate to change value representations? Based on the neuroeconomic model outlined above, we hypothesized two possibilities. The attribute-level hypothesis suggests that cognitive regulation of decision making could alter value representations at a relatively low level, by amplifying or diminishing attribute representations directly in a distributed set of specific, dedicated attribute-coding areas, similar to attentional effects on visual object encoding (Egner and Hirsch, 2005). Alternatively, the integration-level hypothesis suggests that cognitive regulation of decision making might operate at comparatively higher levels in centralized, domain-general value integration areas such as the VMPFC (Hare et al., 2009; Hare et al., 2010).
 
@@ -31,43 +31,539 @@ Finally, we sought to shed light on whether information represented in VMPFC and
 
 Addressing these issues requires investigating regulatory control across multiple attributes and domains, using a sophisticated array of approaches for identifying changes in the representations of both specific attributes and integrated value signals. We used functional magnetic resonance imaging (fMRI) to measure brain responses while subjects completed two choice tasks, separated in time by up to 24 months (Figure 1A,B). Choices involved foods varying in healthiness and tastiness (food task) or monetary proposals varying in payoffs for subjects and an anonymous partner (altruism task). To mimic the kinds of cognitive reframing approaches that are often used in therapy for decision making disorders (Shaw et al., 2005; Carroll and Onken, 2005), both tasks asked subjects to adopt distinct regulatory goals designed to highlight different choice attributes (e.g., ‘focus on the food’s healthiness’, ‘focus on your partner’s feelings’). To pinpoint whether and how regulation altered specific attribute representations or integrative value computations at the behavioral and neural level, we combined a multi-attribute extension of the drift diffusion model (DDM) (Ratcliff and McKoon, 2008; Smith and Ratcliff, 2004) with multivariate pattern analyses (MVPA) of neural responses (Kriegeskorte et al., 2006; Haynes and Rees, 2006). MVPA approaches to fMRI data exploit information encoded across multiple voxels and have been suggested to detect information that would be missed by conventional univariate analyses (Kriegeskorte and Bandettini, 2007). Past research on cognitive regulation has relied primarily on mass univariate approaches, which could account for some of the inconsistencies observed in the literature. Our study used MVPA to examine whether and how directed attention to specific goals affects the neural information content (i.e., decoding accuracies) for attribute values in different social and non-social decision contexts. We hypothesized that goal-dependent changes in neural decoding accuracies would match predictions on altered attribute weights from the behavioral computational model. We investigated where such changes occurred, whether they operate in generic or domain-specific manner, and whether they predicted specific aspects of regulatory success across individuals.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig1-v1.jpg)
+
+**Figure 1.:** (A) Food Task. Subjects chose between on-screen food items that varied in tastiness and healthiness and a neutral default food. Choices were made in ‘Natural’ [NC], ‘Focus on Health’ [HC], and ‘Focus on Taste’ Conditions [TC]. (B) Altruism Task. Subjects chose between on-screen proposals that affected the payoff of themselves ($Self) and an anonymous partner ($Other) and a default option ($20 for both). Choices were made in ‘Natural’ [NC], ‘Focus on Ethics’ [EC], and ‘Focus on Partner’ Conditions [PC]. (C) (D). Bar plots illustrate condition-wise percentages of healthy (C) and generous (D) choices (M ± SD), and subject-specific scores (circles). *p < 0.05, corrected, †p < 0.05, uncorrected. (E) Computational behavioral model (DDM). Choices (yes/no) are made when the sequential accumulation of noisy value information that unfolds over time crosses the predefined upper or lower threshold for choice. The relative decision value (RDV) at a point in time (t) is computed as the weighted sum of choice relevant attributes plus noise (ε) (i.e., RDVt = RDVt-1 + wTastiness * Tastiness + wHealthiness * Healthiness + εt). In the example displayed here, the value of a candy bar will tend to accumulate in a positive direction if the weight on Tastiness is high (blue line), yielding a choice in favor of a tasty but unhealthy item. However, the value of the food item is more likely to accumulate in a negative direction if the weight on Healthiness is high (brown line). Note that saying Yes can sometimes indicate a healthy choice, and sometimes an unhealthy choice. (RT = reaction times [sec]; figure adapted from [Hutcherson et al., 2015b; Adolphs and Tusche, 2017]).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Correspondence in the altruism task between observed acceptance rates (top) and response times (bottom) for different proposal types (bars) and model predictions (blue circles, determined using best-fitting parameters for each subject). On average, subject-level correlation between observed and predicted acceptance rates across trial types was generally quite high. (B) Correspondence in the food task between observed and model-predicted acceptance rates (top) and response times (bottom) for foods of varying taste and healthiness (subject-specific ratings outside the scanner). For illustration purposes, for both tasks model fit to behavior is shown for eight bins created based on the displayed color scheme (right) for variations in choice-relevant attributes (increased attribute values from left to right). Thus, bar colors correspond to trials with specified combination of attributes.
+
 ## Results
 
-## Behavior
+### Behavior
 
 To identify how value computations change to accommodate regulatory goals, our analysis strategy proceeded in the several steps. First, on the behavioral level, we confirmed that regulatory goals resulted in altered choice behavior. We also used our computational behavioral models (multi-attribute drift diffusion models, DDMs) to link these alterations to amplification or suppression of the influence of specific choice-relevant attributes on choices.
 
-## Choice behavior
+#### Choice behavior
 
 Choices in both tasks varied considerably by regulatory goal (Figure 1C,D). In the food task, subjects made choices in three conditions: Respond Naturally [NC] (‘respond as you naturally would’), Focus on Health [HC] (‘focus on the healthiness of the food when making the choice’), and Focus on Taste [TC] (‘focus on the tastiness of the food when making the choice’), implemented in interleaved blocks (see Appendix 1 – Instructions for regulatory conditions in both choice tasks for instructions). We defined a healthy choice as accepting the on-screen food if it was healthier than the default food (based on subject-specific healthiness ratings obtained outside of the scanner, see Materials and methods), and rejecting it otherwise. As expected, subjects made significantly healthier choices during HC (M ± SD: 78.83% ± 18.46) compared to both NC (44.31% ± 10.71) and TC (41.99% ± 11.46; paired t-tests: p’s < 0.001, Bonferroni corrected unless stated otherwise). They also made marginally less healthy choices during TC than NC (p = 0.043, uncorrected; repeated measures ANOVA across all conditions: F(2,35) = 97.01, p < 0.001).
 
 In the altruism task, subjects were instructed either to Respond Naturally [NC] (‘respond as you naturally would’), Focus on Ethics [EC] (‘focus on doing the right thing and consider the ethical or moral implications of your choice’), or Focus on Partner [PC] (‘focus on your partner’s feelings and how the other person is affected by your choice’) (see Appendix 1 – Instructions for regulatory conditions in both choice tasks for instructions). We defined an altruistic choice as accepting an on-screen proposal whose outcome (relative to the default) benefitted the other at a cost to the self, or rejecting one in which the subject stood to benefit but their partner did not. As expected, subjects made altruistic choices significantly less often under NC (28.71% ± 15.48) compared to EC (49.94% ± 16.22) or PC (66.97% ± 24.35; p’s < 0.001; F(2,35) = 65.96, p < 0.001) (Figure 1D). Altruistic choices were also significantly higher in PC than EC (p < 0.001), suggesting that directing attention to another persons’ feelings generally increased altruism more effectively than considering social and moral norms. Overall, these findings confirmed that regulatory goals resulted in altered choice behavior in the food task and the altruism task.
 
-## Regulatory success
+#### Regulatory success
 
 Given the considerable individual heterogeneity in the extent of these changes, we also sought to understand whether this heterogeneity might be consistent across tasks and regulatory instructions. Regulatory success – defined as goal-consistent changes in percent healthy or altruistic choices (Hare et al., 2011a) (e.g., the increase in healthy choices during HC compared to NC) – covaried across tasks (Table 1). People who chose healthy foods more often when attending to a food’s healthiness also behaved more altruistically when focusing on pro-social attributes. These results did not depend on the delay between tasks (partial correlations controlling for delay of up to 24 months, M ± SD: 16.42 ± 8.66, range: 1 to 24) or differences in baseline responding within a particular condition: the percentage of healthy and altruistic choices during NC blocks of both tasks did not correlate (all p’s > 0.05, uncorrected). Instead, they were driven by choice behavior during regulation: healthy choice during HC correlated with altruistic choice in both EC (r = 0.45, p < 0.05) and PC (r = 0.66, p < 0.001). Overall, these findings indicate that an individuals’ regulatory success generalized across choice domains. We found no significant correlation of self-reported motivation to comply with instructions with regulation success in the food task (all p’s > 0.14, uncorrected) or the altruism task (all p’s > 0.16, uncorrected) (Appendix 1 – Self-reported motivation to comply with instructions and observed regulation-success).
 
-## Computational parameter estimates (DDMs)
+**Table 1.**
+ Correlation of regulatory success (RS) in both choice tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Regulatory Success (RS) in Food Task</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>RS [HC - NC]</th>
+      <th>RS [HC - TC]</th>
+      <th>RS [NC - TC]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">RS in Altruism Task</td>
+      <td>ΔRS [PC - NC]</td>
+      <td>0.52 *</td>
+      <td>0.56 *</td>
+      <td>0.33 †</td>
+    </tr>
+    <tr>
+      <td>ΔRS [EC - NC]</td>
+      <td>0.37 †</td>
+      <td>0.37 †</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>ΔRS [PC - EC]</td>
+      <td>0.48 *</td>
+      <td>0.53 *</td>
+      <td>0.38 †</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < 0.05 Bonferroni corrected, †p < 0.05 uncorrected; HC = Health Condition, NC = Natural Condition, TC = Taste Condition, PC = Partner Condition, EC = Ethics Condition_
+
+#### Computational parameter estimates (DDMs)
 
 We hypothesized that changes in choice behavior could result either from increased weighting of goal-consistent attributes (e.g. healthiness in HC), decreased weighting of goal-inconsistent attributes (e.g. tastiness in HC), or both. We tested these possibilities by fitting multi-attribute DDMs to behavior, separately for each subject in each condition and task (see Appendix 1 – Drift diffusion model for details). Model fits to behavior indicated that we were able to capture both choices and RTs with high accuracy (Figure 1—figure supplement 1). Supplemental analyses also confirmed that the DDM did not perform worse in capturing behavior during regulation conditions compared to natural choices (Appendix 1 – Drift diffusion model). To determine if regulatory goals altered weights assigned to distinct attributes, we computed repeated measures ANOVAs with regulatory goal as a within-subject factor, separately for each attribute.
 
 As predicted, regulatory goals in the food task changed the weights assigned to tastiness and healthiness (all F(2,35) ≥ 103.36, p’s < 0.001; see Table 2 for attribute-specific estimates; for complete list of model-estimates and RTs see Supplementary file 1A). Healthiness influenced food choices more in HC, and less in TC, compared to NC (Figure 2A, all p’s ≤ 0.001). By contrast, tastiness influenced food choices less in HC, compared to both NC (p < 0.001) and TC (p < 0.001) (Figure 2C). No differences emerged between NC and TC (p = 0.47, uncorrected, 2-tailed), suggesting that decision processes in TC likely resemble natural choice contexts.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig2-v1.jpg)
+
+**Figure 2.:** Behavioral weights (left column) assigned to attributes in food choices (A. Healthiness, C. Tastiness) or altruistic choices (E. $Self, G. $Other, I. Fairness) varied by regulatory goal (estimates of drift diffusion models, DDMs). Neural decoding accuracies of attribute values (right column) also varied across conditions in specific brain regions (B. Healthiness, D. Tastiness, F. $Self, H. $Other, J. Fairness) (p < 0.05, FWE corrected at cluster-level) (estimates of Support Vector Regression models, SVRs). Bars represent median estimates (blue = behavioral DDMs, red = neural SVRs; black boxes signify 25–75 percentile, lines illustrate the overall distribution), HC = Health Condition, NC = Natural Condition, TC = Taste Condition, PC = Partner Condition, EC = Ethics Condition, L = left hemisphere, R = right hemisphere, LPFC = Lateral Prefrontal Cortex, SFG = Superior Frontal Gyrus, MFG = Mid Frontal Gyrus, TPJ = Temporoparietal Junction, SFS = Superior Frontal Gyrus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Panel displays average decoding accuracies for clusters where neural representations of attributes varied across regulation conditions for neural Support Vector Regressions (SVRs) (p<0.001, FWE corrected at cluster-level). Bars represent median estimates; black boxes signify 25–75 percentile, lines illustrate the overall distribution. HC = Health Condition, NC = Natural Condition, TC = Taste Condition, PC = Partner Condition, EC = Ethics Condition, L = left hemisphere, R = right hemisphere.
+
+**Table 2.**
+ Model-estimated weights (w) assigned to choice-relevant attributes in the food task and altruism task (DDMs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Attributes</th>
+      <th>Sample size (N)</th>
+      <th colspan="3">Regulation Conditions in Food Task</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Mean (±SD)</th>
+      <th>Mean (±SD)</th>
+      <th>Mean (±SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Natural [NC]</td>
+      <td>Focus on Health [HC]</td>
+      <td>Focus on Taste [TC]</td>
+    </tr>
+    <tr>
+      <td>w Healthiness</td>
+      <td>36</td>
+      <td>−0.0003 (±0.0040)</td>
+      <td>0.0121 (±0.0074)</td>
+      <td>−0.0019 (±0.0037)</td>
+    </tr>
+    <tr>
+      <td>w Tastiness</td>
+      <td>36</td>
+      <td>0.0163 (±0.0054)</td>
+      <td>0.0044 (±0.0064)</td>
+      <td>0.0167 (±0.0051)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="3">Regulation Conditions in Altruism Task</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Natural [NC]</td>
+      <td>Focus on Partner [PC]</td>
+      <td>Focus on Ethics [EC]</td>
+    </tr>
+    <tr>
+      <td>w $Self</td>
+      <td>49</td>
+      <td>0.0082 (±0.0038)</td>
+      <td>0.0037 (±0.0057)</td>
+      <td>0.0070 (±0.0050)</td>
+    </tr>
+    <tr>
+      <td>w $Self</td>
+      <td>36</td>
+      <td>0.0082 (±0.0040)</td>
+      <td>0.0037 (±0.0059)</td>
+      <td>0.0068 (±0.0049)</td>
+    </tr>
+    <tr>
+      <td>w $Other</td>
+      <td>49</td>
+      <td>0.0010 (±0.0039)</td>
+      <td>0.0059 (±0.0040)</td>
+      <td>0.0047 (±0.0049)</td>
+    </tr>
+    <tr>
+      <td>w $Other</td>
+      <td>36</td>
+      <td>0.0009 (±0.0039)</td>
+      <td>0.0057 (±0.0040)</td>
+      <td>0.0048 (±0.0049)</td>
+    </tr>
+    <tr>
+      <td>w Fairness</td>
+      <td>49</td>
+      <td>0.0018 (±0.0034)</td>
+      <td>0.0029 (±0.0035)</td>
+      <td>0.0062 (±0.0056)</td>
+    </tr>
+    <tr>
+      <td>w Fairness</td>
+      <td>36</td>
+      <td>0.0019 (±0.0035)</td>
+      <td>0.0026 (±0.0036)</td>
+      <td>0.0062 (±0.0058)</td>
+    </tr>
+  </tbody>
+</table>
+
 Regulatory goals had a similarly dramatic influence on attribute weights in the altruism task (all F(2,48) ≥ 21.48, p’s < 0.001; Table 2). Subjects’ choices were swayed more strongly by their own monetary outcome ($Self) in NC compared to PC (p < 0.001) and marginally compared to EC (p = 0.059, uncorrected, 2-tailed) (Figure 2E). Moreover, the influence of their own payoffs on choices decreased more dramatically in PC than EC (p < 0.001). In contrast, estimated weights on the partner’s monetary outcome ($Other) increased for both pro-social regulatory conditions compared to NC (p’s < 0.001), with marginally higher weights in PC than EC (p = 0.013, uncorrected, 2-tailed) (Figure 2G). Fairness of proposed payouts (−1*|$Self - $Other|) influenced choices significantly less in NC compared to EC (p < 0.001), and marginally less compared to PC (p = 0.021, uncorrected, 2-tailed). Weight on fairness was also significantly higher in EC than PC (p < 0.001) (Figure 2I). Note that within-task results for the altruism task are reported for the slightly larger sample size of 49 subjects. Considering only the subset of subjects that also participated in the food task (N = 36) yielded comparable weights for attributes in altruistic choices (Table 2). Overall, the results suggest that regulatory goals changed choice behavior by both increasing weighting of goal-consistent attributes (e.g. healthiness in HC) and decreasing weighting of goal-inconsistent attributes (e.g. tastiness in HC).
 
-## Neural encoding of choice attributes and effects of regulation
+### Neural encoding of choice attributes and effects of regulation
 
 Next, we examined neural underpinnings of goal-consistent increases/decreases in the influence of attributes on altered choices in both tasks. This analysis step was designed to provide evidence for the effects of regulation at the attribute-level or integration-level. Both hypotheses suggest that changes in the influence of distinct attributes on choice should correspond to changes in neural encoding of those attributes. However, they make different predictions about where these changes should be observed. The attribute-level hypothesis predicts that attributes are encoded in attribute-specific brain areas and that regulation should result in changes to these local representations. By contrast, the integration-level hypothesis suggests that attribute-specific areas should encode attributes similarly regardless of the regulatory goal. Instead, altered representations should appear only within centralized brain regions associated with value-integration, such as the VMPFC, and should be detectable in a common signal associated with integrated values. We tested these distinct predictions by examining where attribute values were represented in the brain, and how these representations varied as a function of regulatory focus. We also explicitly tested whether the locus of effect differed across attributes (e.g. tastiness/healthiness, $Self/$Other/Fairness) or choice domain (e.g. social, non-social).
 
-## Neural encoding of choice attributes and decision values across conditions
+#### Neural encoding of choice attributes and decision values across conditions
 
 Our behavioral results suggest that a weighted combination of different choice-relevant attributes captures behavior in both choice tasks (Figure 1—figure supplement 1), implying that attribute information should be represented in the brain. However, the generality and specificity of this encoding has important implications both for theories about how different attributes are constructed, and how regulation operates to modulate their influence. We first sought to determine which brain regions reliably encoded trial-by-trial variation in a given attribute across experimental conditions and goals. Thus, this first set of decoding analyses tested if neural activation patterns encode attribute values, irrespective of whether one or several conditions drive this predictive information. To this end, we averaged the condition-specific decoding maps of an attribute for each subject and tested for brain regions that reliably predict values of the attribute at the group level. Consistent with predictions, information about each attribute could be decoded significantly above chance in multiple brain regions (Table 3), including the VMPFC, and, for some attributes, the DLPFC. This was also true for trial-by trial encoding of decision values (DVs, corresponding to observable choices in the altruism and food task). See Supplementary file 1B (main effects) for a complete list of results and details on the clusters in the (V)MPFC and DLPFC for the neural decoding of DVs.
 
-## Conjunction of neural representations of choice attributes
+**Table 3.**
+ Neural prediction of trial-wise attribute values in food choices and altruistic choices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain region</th>
+      <th>Side</th>
+      <th>T</th>
+      <th>k</th>
+      <th colspan="3">MNI</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main Effect of Healthiness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dorsolateral Prefrontal Cortex (DLPFC)</td>
+      <td>L</td>
+      <td>5.83</td>
+      <td>24</td>
+      <td>−57</td>
+      <td>23</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Lateral PFC (LPFC)</td>
+      <td>L</td>
+      <td>6.29</td>
+      <td>45</td>
+      <td>−42</td>
+      <td>35</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>LPFC</td>
+      <td>R</td>
+      <td>5.83</td>
+      <td>17</td>
+      <td>54</td>
+      <td>41</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Ventromedial PFC (VMPFC)</td>
+      <td>R/L</td>
+      <td>5.69</td>
+      <td>6</td>
+      <td>-3</td>
+      <td>47</td>
+      <td>−20</td>
+    </tr>
+    <tr>
+      <td>Main Effect of Tastiness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VMPFC, extends to Mid (MFG) and Superior Frontal Gyrus (SFG)</td>
+      <td>L/R</td>
+      <td>8.29</td>
+      <td>1097</td>
+      <td>-9</td>
+      <td>50</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>Inferior Parietal Lobe (IPL)/Supramarginal Gyrus (SMG)</td>
+      <td>R</td>
+      <td>6.01</td>
+      <td>39</td>
+      <td>48</td>
+      <td>−46</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Pre-Supplemental Motor Area (pre-SMA)</td>
+      <td>L</td>
+      <td>7.06</td>
+      <td>82</td>
+      <td>-3</td>
+      <td>23</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>SMA</td>
+      <td>L/R</td>
+      <td>6.51</td>
+      <td>100</td>
+      <td>6</td>
+      <td>5</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Motor Cortex</td>
+      <td>L</td>
+      <td>8.85</td>
+      <td>410</td>
+      <td>−42</td>
+      <td>−28</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Visual Cortex</td>
+      <td>L</td>
+      <td>7.68</td>
+      <td>288</td>
+      <td>−30</td>
+      <td>−91</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Visual Cortex/IPL/Precuneus</td>
+      <td>L/R</td>
+      <td>7.23</td>
+      <td>1814</td>
+      <td>6</td>
+      <td>−61</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>L</td>
+      <td>6.23</td>
+      <td>9</td>
+      <td>−27</td>
+      <td>−70</td>
+      <td>−35</td>
+    </tr>
+    <tr>
+      <td>Main Effect of $Self *</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prefrontal Cortex (VLPFC, DLPFC, VMPFC, DMPFC)</td>
+      <td>L/R</td>
+      <td>5.39</td>
+      <td>1306</td>
+      <td>−27</td>
+      <td>50</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>SMA</td>
+      <td>L/R</td>
+      <td>4.42</td>
+      <td>111</td>
+      <td>3</td>
+      <td>-1</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>6.94</td>
+      <td>2901</td>
+      <td>-3</td>
+      <td>−82</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Main Effect of $Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dorsomedial PFC (DMPFC)</td>
+      <td>L/R</td>
+      <td>7.16</td>
+      <td>485</td>
+      <td>-3</td>
+      <td>44</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>VMPFC</td>
+      <td>R</td>
+      <td>5.92</td>
+      <td>108</td>
+      <td>18</td>
+      <td>50</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>LPFC</td>
+      <td>L</td>
+      <td>5.58</td>
+      <td>12</td>
+      <td>−39</td>
+      <td>32</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Inferior Frontal Gyrus (IFG)</td>
+      <td>L</td>
+      <td>5.51</td>
+      <td>10</td>
+      <td>−48</td>
+      <td>26</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>SMA</td>
+      <td>R</td>
+      <td>5.54</td>
+      <td>15</td>
+      <td>6</td>
+      <td>23</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Visual cortex</td>
+      <td>L/R</td>
+      <td>7.87</td>
+      <td>661</td>
+      <td>-3</td>
+      <td>−79</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Cuneus</td>
+      <td>L</td>
+      <td>5.71</td>
+      <td>74</td>
+      <td>−24</td>
+      <td>−76</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Main Effect of Fairness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prefrontal Cortex (includes MPFC, MFG, IFG, right anterior insula)</td>
+      <td>L/R</td>
+      <td>7.54</td>
+      <td>1866</td>
+      <td>45</td>
+      <td>23</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>VMPFC</td>
+      <td>R</td>
+      <td>5.84</td>
+      <td>67</td>
+      <td>24</td>
+      <td>59</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Precuneus</td>
+      <td>L/R</td>
+      <td>6.25</td>
+      <td>60</td>
+      <td>0</td>
+      <td>−73</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>SMG</td>
+      <td>R</td>
+      <td>6.22</td>
+      <td>72</td>
+      <td>60</td>
+      <td>−37</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>IPL</td>
+      <td>L</td>
+      <td>5.52</td>
+      <td>7</td>
+      <td>−39</td>
+      <td>−55</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Visual cortex</td>
+      <td>R</td>
+      <td>6.07</td>
+      <td>95</td>
+      <td>12</td>
+      <td>−88</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results are reported at a statistical threshold of p < 0.05, FWE corrected at voxel-level (cluster threshold of 5 voxels); * main effect for $Self reported at a statistical threshold of p < 0.05, FWE corrected at cluster-level (height threshold of p < 0.001); only peak activations of clusters are reported; L = left hemisphere, R = right hemisphere, MNI = Montreal Neurological Institute, k = cluster size in voxel_
+
+#### Conjunction of neural representations of choice attributes
 
 Given the robust coding of individual attributes, we asked whether any brain regions encoded all attribute values across all contexts, as might be expected of domain-general areas contributing to value integration processes. A formal conjunction of all attribute-specific decoding maps (Healthiness, Tastiness, $Self, $Other, Fairness; thresholded at p < 0.05, FWE cluster-level correction, height threshold of p < 0.001) identified VMPFC ([MNI −6, 49, 1], Figure 3) as well as a handful of other regions (Figure 3—figure supplement 1). This suggests that the VMPFC contains information on trial-wise values of all choice-relevant attributes, consistent with its hypothesized importance for valuation and choice.
 
-## Goal-dependent representations of choice attributes and decision values
+![Figure 3.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig3-v1.jpg)
+
+**Figure 3.:** Multivariate response patterns in the VMPFC encoded trial-wise values of all choice-relevant food attributes (Tastiness, Healthiness) and altruistic attributes ($Self, $Other, Fairness) across regulation conditions, as indicated by a conjunction of attribute-specific decoding maps thresholded at p < 0.05, FWE corrected at cluster-level.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Attribute values for Healthiness, Tastiness, $Self, $Other, Fairness. Each attribute was thresholded at p < 0.001, cluster-level corrected, k = 10 voxels. Not displayed are clusters in the supplemental motor area ([MNI −3 26, 46], 43 voxels) and visual cortex ([MNI −28,–85, 32], 15 voxels, [MNI −21,–67, 40], 10 voxels). Coordinates refer to center of mass for the identified clusters in MNI space (Montreal Neurological Institute), R = right hemisphere.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31185/elife-31185-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Region of the VMPFC (red) where increased connectivity with the DLPFC during Health vs. Natural and Taste focus conditions correlates with Δw Healthiness in Health vs. Natural and Taste Focus. The yellow region shows the VMPFC ROI defined by the conjunction of all attributes. Orange indicates overlap. Inset: DLPFC seed region. (B) Region of the VMPFC (red) where decreased connectivity with the DLPFC during Partner and Ethics conditions compared to Natural predicted decreases in Δw $Self in Partner and Ethics vs. Natural condition. The yellow region shows the VMPFC ROI defined by the conjunction of all attributes. Inset: DLPFC seed region. (C) Region of the Precuneus where increased connectivity with the VMPFC during Partner vs. Ethics conditions Δw $Other weight in Partner vs. Ethics trials. Yellow region shows the VMPFC ROI defined by the conjunction of all attributes. Inset: Precuneus seed region. All results are shown thresholded at p < 0.005 uncorrected.
+
+#### Goal-dependent representations of choice attributes and decision values
 
 Having confirmed that attribute values (and decision values) could be decoded from neural response patterns, we next asked whether, how and where neural information content changed as a function of regulatory goals. We hypothesized that altered behavioral weights of an attribute should be mirrored by changes in the neural encoding of that attribute as expressed in varying predictive accuracies. Crucially, these analyses allowed us to test whether goal-dependent change in neural encoding of attribute values occurs in attribute-specific regions or at a common neural locus regardless of attribute or domain. For each attribute, we used a repeated measures ANOVA implemented in SPM together with condition-specific decoding accuracy maps to test for changes in neural information on attribute values across conditions (see Figure 4). This allowed us to identify brain regions where neural information content about an attribute, or decision values (Supplementary file 1B), was enhanced or diminished in a way that matched behaviorally-estimated changes in attribute weighting (thresholded at p < 0.05, cluster-level corrected, height threshold of p < 0.001; see Table 4).
 
@@ -75,33 +571,364 @@ Having confirmed that attribute values (and decision values) could be decoded fr
 
 **Figure 4.:** For each participant, we created a spherical searchlight (left panel, black sphere) and extracted multi-voxel response patterns for every trial of a choice task (middle panel). Next, we trained a support vector machine (SVM) regression model with data of 8 runs (80 trials), using neural response patterns as features and trial-wise attribute values as labels (e.g. a food’s perceived tastiness). Test data consisted of data of the ninth run (10 trials) for which we predicted the trial-wise attribute values solely based on neural response patterns of these trials. The decoding accuracy (average of 9-fold cross-validation) was assigned to the central voxel of the sphere from which we extracted the neural data (right upper panel). This procedure was repeated for every measured voxel (left panel, dotted red line), yielding a whole brain accuracy map for an attribute, separately for each task condition and participant. Finally, at the group level (lower right panel), we used these whole-brain accuracy maps to test for brain regions where predictive information on an attribute was increased/decreased depending on the task condition, based on predictions of the behavioral computational model (DDM). (Note that condition-specific accuracy maps also allowed testing for main effects of neural encoding of an attribute (i.e. encodes attribute values), irrespective of whether one or several conditions drive the effect.).
 
-## Healthiness
+**Table 4.**
+ Goal-dependent change of neural information content on attribute values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Brain region</th>
+      <th>Side</th>
+      <th>T</th>
+      <th>k</th>
+      <th colspan="3">MNI</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Healthiness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[HC &gt; (NC, TC)]</td>
+      <td>(D)LPFC</td>
+      <td>R</td>
+      <td>4.40</td>
+      <td>402</td>
+      <td>51</td>
+      <td>23</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>6.38</td>
+      <td>593</td>
+      <td>0</td>
+      <td>−79</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>[HC &gt; NC]</td>
+      <td>(D)LPFC</td>
+      <td>R</td>
+      <td>4.54</td>
+      <td>241</td>
+      <td>48</td>
+      <td>44</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>5.52</td>
+      <td>210</td>
+      <td>−3</td>
+      <td>−79</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>[HC &gt; TC]</td>
+      <td>(D)LPFC</td>
+      <td>R</td>
+      <td>4.28</td>
+      <td>212</td>
+      <td>51</td>
+      <td>23</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>6.51</td>
+      <td>910</td>
+      <td>3</td>
+      <td>−82</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Tastiness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[(NC, TC) &gt; HC]</td>
+      <td>SFG</td>
+      <td>R</td>
+      <td>4.58</td>
+      <td>362</td>
+      <td>24</td>
+      <td>35</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Motor Cortex</td>
+      <td>L</td>
+      <td>4.46</td>
+      <td>265</td>
+      <td>−36</td>
+      <td>−16</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>5.19</td>
+      <td>230</td>
+      <td>−3</td>
+      <td>−70</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>[NC &gt; HC]</td>
+      <td>SFG</td>
+      <td>R</td>
+      <td>4.08</td>
+      <td>227</td>
+      <td>24</td>
+      <td>35</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>4.39</td>
+      <td>159</td>
+      <td>−3</td>
+      <td>−70</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>R</td>
+      <td>4.83</td>
+      <td>252</td>
+      <td>45</td>
+      <td>−88</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>[TC &gt; HC]</td>
+      <td>SFG</td>
+      <td>R</td>
+      <td>3.91</td>
+      <td>102</td>
+      <td>24</td>
+      <td>35</td>
+      <td>37 *</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Motor Cortex</td>
+      <td>L</td>
+      <td>4.48</td>
+      <td>319</td>
+      <td>−48</td>
+      <td>−22</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual Cortex</td>
+      <td>L/R</td>
+      <td>4.73</td>
+      <td>123</td>
+      <td>−3</td>
+      <td>−73</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>$Self</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[NC &gt; (EC, PC)]</td>
+      <td>DMPFC</td>
+      <td>L/R</td>
+      <td>4.18</td>
+      <td>127</td>
+      <td>−12</td>
+      <td>53</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>[NC &gt; EC]</td>
+      <td>DMPFC</td>
+      <td>L/R</td>
+      <td>4.14</td>
+      <td>98</td>
+      <td>−3</td>
+      <td>44</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MFG</td>
+      <td>R</td>
+      <td>3.88</td>
+      <td>52</td>
+      <td>39</td>
+      <td>50</td>
+      <td>34 *</td>
+    </tr>
+    <tr>
+      <td>$Other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[PC &gt; EC]</td>
+      <td>Precuneus</td>
+      <td>L</td>
+      <td>4.45</td>
+      <td>648</td>
+      <td>−15</td>
+      <td>−67</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Temporoparietal junction (TPJ)</td>
+      <td>R</td>
+      <td>3.85</td>
+      <td>170</td>
+      <td>51</td>
+      <td>−61</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual cortex</td>
+      <td>L/R</td>
+      <td>4.26</td>
+      <td>276</td>
+      <td>−3</td>
+      <td>−64</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>[(PC, NC) &gt; EC]</td>
+      <td>Precuneus/TPJ</td>
+      <td>L/R</td>
+      <td>4.70</td>
+      <td>1142</td>
+      <td>12</td>
+      <td>−61</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SMA</td>
+      <td>L</td>
+      <td>4.50</td>
+      <td>189</td>
+      <td>−18</td>
+      <td>5</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>Fairness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[(EC, PC) &gt; NC]</td>
+      <td>Mid Cingulate Cortex/MFG</td>
+      <td>L</td>
+      <td>5.19</td>
+      <td>118</td>
+      <td>−15</td>
+      <td>23</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>[PC &gt; NC]</td>
+      <td>Mid Cingulate Cortex/MFG</td>
+      <td>L</td>
+      <td>5.18</td>
+      <td>183</td>
+      <td>−15</td>
+      <td>23</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results are reported at a statistical threshold of p < 0.05, FWE corrected at cluster-level (height threshold of p < 0.001), * indicates clusters that were FDR-corrected at the cluster level; only peak activations of clusters are reported; L = left hemisphere, R = right hemisphere, MNI = Montreal Neurological Institute, k = cluster size in voxels._
+
+##### Healthiness
 
 Behavioral model-fitting suggests that healthiness was weighted more heavily in HC compared to both NC and TC (Figure 2A). Consistent with model-based predictions, decoding accuracies in the right lateral prefrontal cortex (LPFC) were higher when focusing on health [HC] compared to both other task conditions ([HC >NC], and [HC >TC]) and combined [HC > (NC, TC)]; Figure 2B; Table 4).
 
-## Tastiness
+##### Tastiness
 
 Behaviorally, tastiness was represented less strongly in HC compared to NC and TC, with no significant differences between the latter (Figure 2C). Decoding accuracies in the right superior frontal gyrus (SFG), extending to the mid frontal gyrus (MFG), closely matched these predictions [(NC, TC) > HC] (Figure 2D). Neural representations of trial-wise tastiness were also significantly higher for separate comparisons of [NC > HC] and [TC > HC], but did not differ between NC and TC. Only two other regions (visual cortex and left motor cortex) followed this pattern (Table 4).
 
-## $Self
+##### $Self
 
 Estimates of the best-fitting behavioral parameters for $Self suggest that neural information representing subjects’ own benefits should decrease in both pro-social regulation conditions (PC and EC) compared to NC (Figure 2E). Formal tests of this pattern ([NC > (EC, PC)]) identified neural responses in both DMPFC (Figure 2—figure supplement 1) and the MFG (p < 0.001, uncorrected; Figure 2F; for [NC] > [EC] significant at p < 0.05, cluster-corrected).
 
-## $Other
+##### $Other
 
 Based on the behavioral model we predicted that, compared to NC, the partner’s benefits should be represented more strongly when attending to either ethical implications or the other’s thoughts and feelings (Figure 2G). Surprisingly, no brain regions matched this precise pattern (for [(PC, EC) > NC], or [PC > NC], or [EC > NC], at p < 0.05, cluster-corrected). However, a comparison of [PC > EC] revealed that decoding accuracies in the bilateral precuneus and right temporoparietal junction (TPJ) (Figure 2H) (Figure 2—figure supplement 1) were significantly more predictive of the others’ payoffs when goals focused on the partner compared to ethical implications. Supplemental ROI analyses within these two areas indicated that average predictive accuracies were significantly higher in PC than NC, partially confirming the prediction of amplified information for $Other [PC > NC] from the behavioral model (Figure 2H).
 
-## Fairness
+##### Fairness
 
 Behaviorally, fairness of payoffs for self and partner influenced choices more strongly when attending to ethics [EC] and, to a lesser extent, the partner’s feelings [PC] (Figure 2I). Consistent with model-based predictions, decoding accuracies in the left superior frontal sulcus (SFS) predicted the degree of fairness more strongly in the two regulatory conditions compared to natural choice contexts (Figure 2J). Contrary to the model prediction, comparisons of [EC > PC] (and [PC > EC]) did not yield any significant results, suggesting that both regulation conditions increased neural representations of fairness considerations to a comparable level.
 
 Notably, repeated measures ANOVAs also allowed testing for changes in neural attribute representations or decision values that were not predicted by changes in the behavioral DDM estimates. These supplemental tests did not yield any further significant results (p < 0.05, FWE cluster-corrected).
 
-## Decision values
+##### Decision values
 
 See Supplementary file 1B for details on goal-dependent coding of decision values in both tasks. Only two regions (motor cortex in food task [TC > HC], cerebellum in altruism task [EC >PC]) were found to be significant (p < 0.05, FWE cluster-corrected). We thus focused on goal-dependent changes in information content on attribute values.
 
-## A common hub for cognitive regulation of attribute values in the DLPFC
+#### A common hub for cognitive regulation of attribute values in the DLPFC
 
 To determine whether any areas might serve as a common pathway for goal-dependent changes in encoding of choice attributes, we computed 2-, 3- and 4-way conjunctions of all clusters that showed modulations of predictive information across conditions (Table 4). A cluster in the MFG (Figure 5A), hereafter referred to as DLPFC, emerged in the 3-way conjunction of voxels that flexibly encoded attribute values for Healthiness, Tastiness, and $Self. We found no other areas showing such a convergence of attributes.
 
@@ -113,19 +940,19 @@ This finding suggests that the DLPFC acts as a domain-general circuit for goal-s
 
 Results most clearly supported the attribute-level hypothesis. While codes for each attribute (tastiness, healthiness, and $Self) in the DLPFC generally allowed for decoding of the same attribute in other conditions at significant or marginally significant levels, no attribute allowed for coding of a different attribute, regardless of condition (Figure 5B). This supports the idea that the DLPFC acts as a domain-general mechanism for representing different attributes in a goal-sensitive manner, using unique codes for each attribute.
 
-## No evidence for goal-dependent coding of attribute values and decision values in the VMPFC
+#### No evidence for goal-dependent coding of attribute values and decision values in the VMPFC
 
 The vmPFC has previously been suggested to encode attribute values as a function of their current relevance to choice control (Hare et al., 2011a). Notably, our analyses on the whole brain level did not reveal any significant variation of attribute value encoding in this area as a function of the regulatory goal. However, in light of previous evidence, we conducted a number of post-hoc ROI-analyses to probe in a more sensitive manner for goal-dependent value coding in the VMPFC (see Appendix 1 – ROI-based post-hoc tests to identify goal-consistent value coding in the VMPFC). While activation patterns in the VMPFC (as well as several other regions) reliably predicted overall decision values in both tasks, regulation failed to modulate decoding accuracies for decision value (Supplementary file 1C) or for any specific attribute (Appendix 1 – ROI-based post-hoc tests to identify goal-consistent value coding in the VMPFC), and did not predict individual differences in regulatory success (Appendix 1 – ROI-based post-hoc tests to identify goal-consistent value coding in the VMPFC).
 
-## Individual differences in regulatory success
+### Individual differences in regulatory success
 
 Are some people generally more successful using cognitive regulation of decision making or does it depend on the choice domain? Why? To address these questions, we examined the generality and specificity of value representations and their role in regulatory success. In particular, we predicted that if regulatory success operates through common domain-general mechanisms, individual success in regulating the effects of one attribute should be correlated with regulatory success in modifying different attributes in completely different contexts. Consequently, neural responses within such a domain-general neural locus should predict individual differences in people’s regulatory success across domains. By contrast, to the extent that cognitive regulation of decision making operates at the attribute-level in a domain-specific manner, success regulating one attribute in one domain should be uncorrelated with regulatory success for other attributes in other domains. It should also be predicted by neural activation in distinct, non-overlapping brain regions.
 
-## Regulatory success in goal-dependent attribute weighting
+#### Regulatory success in goal-dependent attribute weighting
 
 Although our previous analyses suggested that regulatory success as measured by frequency of healthy and generous choices was correlated across participants, this analysis did not examine how such success relates to changes in specific attributes. Thus, to determine whether regulatory success operates through common channels across attributes and domains, we first tested using behavior whether subjects’ ability to modulate specific attribute weights (estimated in separate DDMs) was correlated across the two tasks. Consistent with the notion of a common neural mechanism (in DLPFC), successful reduction in the weight on selfish considerations (Δw $Self) in altruistic choices was correlated with successfully amplifying the weight on health considerations in food choices (e.g., r = 0.50, for Δw $Self [NC - PC] and Δw Healthiness [HC - NC], p < 0.05, corrected) and suppressing the weight of taste considerations in food choices (e.g., r = 0.45, Δw $Self [NC - PC] and Δw Tastiness [NC - TC], p < 0.05, corrected). Notably, however, enhancement of the weight on another person’s outcomes did not correlate with changes in other attributes (all p’s > 0.05, uncorrected). See Supplementary file 1C for detailed list of results. Overall, this pattern suggests that regulation may operate through both common and distinct channels as a function of specific attributes, a point we return to in the neural results below.
 
-## Domain-general predictions of individual differences in regulatory success in DLPFC
+#### Domain-general predictions of individual differences in regulatory success in DLPFC
 
 Our preceding neural decoding results support a model in which regulation alters specific attribute representations within domain-general brain areas for some attributes (e.g., tastiness, healthiness, $Self) and within domain-specific areas for other attributes (e.g., $Other, fairness). This idea may explain the specific pattern of correlations we observed in behavioral measures of regulatory success and makes a further prediction: if the integrity and flexibility of the DLPFC is only necessary for representing certain attributes in a goal-consistent manner, then responses in this region should predict regulatory success only for those attributes that converge in this area, while regulatory success for other attributes (e.g., $Other) should be predicted by other regions (e.g., TPJ or precuneus). We tested this hypothesis using a cross-subject decoding approach: in a nutshell, this decoding analysis tested whether multi-voxel activation patterns in an ROI (e.g. DLPFC) allowed predicting an individuals regulatory success in a choice task, solely based on the participants regulation-related neural activation patterns (see Materials and methods and Appendix 1 – Multivariate regression of individual differences in regulatory success for details). The analyses focused on an ROI in DLPFC (with supplemental tests for TPJ, precuneus, and VMPFC) and regulatory success scores defined both by changes in attribute weights and by percentage of goal-consistent choices.
 
@@ -133,11 +960,11 @@ As hypothesized, regulation-related neural activation patterns in the right DLPF
 
 Next, we asked whether neural activation patterns in the right DLPFC also predict individual differences in regulation success in the altruism task. Remarkably, neural patterns in DLPFC during food choices predicted subjects’ ability to reduce the weighting of their own monetary payoffs during altruistic choices separated in time by an average of 16 months from the food task (Δw $Self [NC - (EC, PC)]: r = 0.50, p = 0.015; Δw Self [NC - PC]: r = 0.55, p = 0.005; permutation tests). They also predicted increases in generous behavior when attending to pro-social attributes (ΔGenerous Choices [(PC, EC) - NC]: r = 0.63, p < 0.001; ΔGenerous Choices [EC - NC]: r = 0.44, p = 0.028; ΔGenerous Choices [PC - NC]: r = 0.63, p = 0.002). Supplemental analyses suggest that predictive information on altered generosity was driven by neural information on changes in the attribute encoded in the DLPFC ($Self) and not by other attributes of the altruistic choice task (e.g., $Other, fairness) (see Appendix 1 – DLPFC-based prediction of goal-consistent changes of generosity is driven by goal-consistent changes in attribute representations of $Self (but not $Other or Fairness)). We also confirmed that decoding accuracies were not correlated with the delay between both choice tasks (all p’s > 0.05, uncorrected), indicating that predictions of individual difference scores of regulatory success were unrelated to temporal delays between tasks. Complementary decoding analyses based on brain data obtained during altruistic choices revealed similar patterns, further supporting our findings (Supplementary file 1D).
 
-## Precuneus encodes individual differences in regulatory success in altruistic choice
+#### Precuneus encodes individual differences in regulatory success in altruistic choice
 
 Strikingly, patterns in the DLPFC did not decode regulatory success for social attributes that were flexibly encoded in other regions of the brain (i.e., $Other, Fairness). A post-hoc analyses tested whether neural activation patterns that encoded values of $Other in a goal-consistent manner would allow predicting individual differences in regulatory success in the altruism task. We found that response patterns in the precuneus reliably predicted individuals’ altered generosity in the altruism task (ΔGenerous Choices [PC - EC]: r = 0.57, p = 0.002 [CI: −0.41, 0.38]; ΔGenerous Choices [(NC, PC) - EC]: r = 0.61, p = 0.004 [CI: −0.41, 0.41]), suggesting that domain-specific attribute coding contributes to individual differences in regulatory control.
 
-## VMPFC does not encode individual differences in regulatory success
+#### VMPFC does not encode individual differences in regulatory success
 
 Because of its hypothesized role in valuation, a post-hoc analyses also examined whether the VMPFC region that encoded all attributes predicted regulatory success in either choice task. However, local activation patterns in VMPFC were not predictive of regulatory success for any attribute (all p’s > 0.31). This result suggests that while this region may encode all choice-relevant attributes, it was not the locus for changes in value representation in this task. However, exploratory functional connectivity analyses provided subtle hints that the VMPFC could be indirectly related to regulatory success through its modulation of both DLPFC and precuneus (see Figure 3—figure supplement 2 and Appendix 1 – Changes in functional connectivity with the VMPFC correlate with regulatory success for details).
 
@@ -145,27 +972,27 @@ Because of its hypothesized role in valuation, a post-hoc analyses also examined
 
 Cognitive regulation of decision making represents a crucial tool for altering behavior to fit momentary goals (e.g. eat healthy, be kinder). Capitalizing on the strengths of behavioral model-fitting (Crockett, 2016) and the greater sensitivity of neural multivariate pattern analysis (Kriegeskorte et al., 2006), we demonstrate how regulatory goals modulate value representations at the level of choice-relevant attributes, supporting goal-consistent behavior. Unexpectedly, cognitive regulation of decision making did not reliably modulate value signals within the VMPFC. Instead, regulatory effects converged to modulate a subset of distinct attribute representations in both the social and non-social domain within a region of the DLPFC that has previously been implicated in value-based choice (Hutcherson et al., 2015a; Plassmann et al., 2007; Plassmann et al., 2010). Cognitive regulation of decision making also altered attribute representations for specific social attributes in distinct areas, including TPJ and precuneus. This pattern of neural convergence and divergence was reflected by behavioral patterns of covariation in regulatory success across tasks, made more remarkable by the fact that they were measured anywhere from weeks to more than a year apart. Our results provide important and novel insights into the domain generality and specificity of cognitive regulation of decision making, explain when and why regulatory success generalizes across contexts and domains, and raise exciting new questions for exploration.
 
-## Attribute-level vs. integration-level effects of cognitive regulation of decision making
+### Attribute-level vs. integration-level effects of cognitive regulation of decision making
 
 Do goals (e.g. eat healthier, be kinder) influence construction of value by operating on distinct attribute representations, or by changing integration of these values in centralized, common-value regions of the brain? Our results provide three key pieces of evidence in favor of attribute-level value modulation by cognitive regulatory control. First, although the VMPFC contained reliable information on the values of all attributes and encoded overall decision values across social and non-social contexts, these signals showed no modulation by regulatory goal for any attribute or decision value and did not predict individual differences in regulatory success. Moreover, no other area showed a complete correspondence between behavioral and neural effects of regulation, arguing against a single, centralized locus for effects of cognitive regulation on decision making. Second, we observed goal-dependent representations of some attributes (i.e., others’ benefits) in distinct, specialized brain regions like the TPJ and precuneus. Third, although we observed converging effects of regulation for a subset of attributes in the DLPFC (including tastiness, healthiness, and self-related benefits), representations of these attributes utilized distinct, differentiated codes. Taken together, although our results do not preclude the possibility that in other contexts cognitive regulation of decision making might operate on a single, centralized value integration mechanism, they suggest that it may often operate by changing distinct attribute representations.
 
-## Domain-general vs. domain-specific effects of cognitive regulation
+### Domain-general vs. domain-specific effects of cognitive regulation
 
 If cognitive regulation of decision making is mediated by changes in distinct attribute representations, when might we expect regulatory success – or failure – to generalize across contexts and domains? Our results indicate that although the DLPFC used distinct codes to represent different attributes, it may nevertheless be a common denominator in regulatory success across domains. Behaviorally, goal-consistent shifts toward ‘virtuous’ behavior in one domain (i.e. healthier food choice) correlated with shifts in the other (i.e. more generosity). This covariation was driven by correlated changes in the behavioral weighting of precisely those attributes represented in the DLPFC (i.e., tastiness, healthiness, and self-related benefits), but not in attributes encoded elsewhere (i.e. other-related benefits, fairness). These findings are even more remarkable given delays of up to 24 months separating the two choice tasks (average 16 months), ruling out alternative explanations like memory, mood, or priming effects. Thus, the DLPFC may represent a stable individual resource permitting flexible representation of specific attributes according to current goals.
 
 At the same time, goal-consistent changes in pro-social attributes (e.g. others benefits) appeared in areas like the TPJ and precuneus, especially when focused on the partner’s thoughts and feelings. This accords with growing evidence linking these regions to domain-specific computations related to Theory of Mind (ToM) (Van Overwalle, 2009; Bzdok et al., 2012; Schurz et al., 2014) and representing others’ mental states and needs during social choice: for instance, activation patterns in the rTPJ were recently shown to encode individual differences in the level of ToM during altruistic choice (Tusche et al., 2016). Notably, activity in these regions did not encode other social attributes (e.g., fairness) or their goal-consistent changes. Moreover, focusing on ethical and normative reasons for giving (which may require less focus on others’ specific thoughts and feelings) increased altruistic choice, but actually decreased representations of the other’s payoffs in these regions. Thus, the TPJ and precuneus appear to encode features specifically related to representing others’ outcomes in a goal-sensitive manner, pointing to specialized loci of cognitive regulation in social choice domains.
 
-## The role of VMPFC and DLPFC in valuation and cognitive regulation
+### The role of VMPFC and DLPFC in valuation and cognitive regulation
 
 Our study adds to a growing body of experimental work finding that behavioral effects of regulation can occur in the absence of corresponding changes to either overall levels of VMPFC response (Hutcherson et al., 2012; Hollmann et al., 2012; Yokum and Stice, 2013), or VMPFC representation of specific attributes like taste (Hare et al., 2011a). They also raise the intriguing possibility that the flexibility of DLPFC attribute representations may be particularly important for compensating when regulation of the VMPFC fails, a finding also observed in other studies of cognitive regulation of decision making (Hutcherson et al., 2012). This raises an important question: what determines the capacity of the DLPFC to properly represent these different attributes? Intriguingly, exploratory connectivity results suggested that this may actually derive, at least in part, from functional interactions with the VMPFC area that represented all choice-relevant attributes, with the strength of connectivity between DLPFC and VMPFC correlating with regulatory success. Although speculative, this finding is consistent with research in both animals and humans suggesting that the VMPFC may modulate affective attribute representations in other areas (Quirk and Beer, 2006; Etkin et al., 2006). These results could also suggest that VMPFC represents an earlier stage in the value construction process, with DLPFC representations emerging more closely to response. Future work including the use of measures with higher temporal precision may help to elucidate when and how interactions between the VMPFC and DLPFC determine regulatory success in different contexts.
 
-## Explaining individual differences in regulatory success and failure
+### Explaining individual differences in regulatory success and failure
 
 Our study is the first to document goal-consistent changes for all choice-relevant attributes, across diverse choice domains, both within and across individuals, shedding light on when and why regulatory efforts may succeed or fail. Our findings point to important divisions in regulatory success as a function of choice attributes and domain: an individual who struggles both to resist cheesecake and ignore their own self-interest may nevertheless have little difficulty in harnessing regulation to represent others’ needs and use this as input into social choices. This has important implications in treatment for decision making disorders: if therapeutic interventions fail when focused on one attribute (e.g., be less selfish), a switch to strategies focused on other attributes (e.g., think more about others) might be more effective. Future work will need to explore the full range of domains and attributes in which regulation could play an important role (e.g., risk, intertemporal choice, etc.) in order to determine the extent to which regulatory effects vary or converge across attributes and domains.
 
 It is also worth noting that goal-consistent changes in attribute representations were generally exceptions rather than the rule. Most regions permitting attribute decoding showed no discernable change in representation of attributes as a function of goal. This may explain why regulatory success often feels so difficult: unregulated attribute representations in some areas (including the VMPFC) may continue to leak into choices, complicating regulatory success. It also argues against a trivial interpretation of our results that the changes we observed are simply uninteresting reflections of behavior: we observed highly specific and localized success-related changes in regions like DLPFC, TPJ, and precuneus, but not in other areas. This suggests that these regions may perform a special role in mediating the impact of regulatory goals on behavior.
 
-## Limitations and future directions
+### Limitations and future directions
 
 We cannot completely rule out that regulatory affects on behavior and attribute representations might partly reflect differences in motivation to satisfy expectations of the experimenter. However, we note that the specific patterns of convergence and divergence in regulatory success argue against this interpretation of our results: we suspect that if this were the case, we would not have observed either the distinct profile of within-subject correlations in regulatory success for different attributes, or differences in their neural correlates. Nevertheless, further research will be needed to fully resolve the extent to which individual differences in regulatory success result from limits in motivation or limits on capacity. Work examining whether gray matter volume in either the DLPFC and VMPFC predicts regulatory success across individuals might help to resolve such issues (Schmidt et al., 2018). Tying laboratory measures of regulation to real-world consequences also remains a necessary future step in understanding the significance of these findings.
 
@@ -175,15 +1002,15 @@ The close correspondence between neural patterns and model-estimated changes in 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty-five healthy volunteers (25 female, M ± SD: 28 years ± 5.02) participated in the altruism task. A subset (N = 37, 17 female, 29 years ± 5.24) also completed the food task. Sample size for both established fMRI tasks were selected based on previous successful implementations of the food task (Hare et al., 2011a) and the altruism task (Hutcherson et al., 2015b). All subjects had normal or corrected-to-normal vision and were free of psychiatric or neurological history. Subjects received $20/hour for their participation, plus the money from a trial selected randomly at the end of the altruism task. They also received a randomly selected food item at the end of the food experiment that had to be consumed in the lab. The altruism data of five subjects and the food data of one subject were excluded from further analyses due to excessive movement (>3 mm/3degree). The altruism data of another subject was excluded from the analysis due to invariant choice behavior. All subjects gave written informed consent and Caltech’s Internal Review Board approved the study.
 
-## Tasks
+### Tasks
 
 Subjects performed two separate fMRI tasks as part of a large-scale cross-sectional research project. Task order was fixed, with the food task completed on average 16 months (SD: ±8.66; range: 1–24) after the altruism task to specifically probe for common and distinct computations in non-social and social goal-dependent choices.
 
-## Food task
+#### Food task
 
 The non-social fMRI task was a modified version of an established food task (Hare et al., 2011a). On every trial, subjects chose between one of 90 food items presented on-screen (4 s) and a default food chosen prior to scanning (Figure 1A). Subjects responded by pressing one of four buttons corresponding to ‘strong yes’, ‘yes’, ‘no’, ‘strong no’ (displayed at the bottom of the screen), using a button box placed in their right hand. The assignment of choice preferences to buttons was fixed throughout the task and the right-left orientation of the scale was counterbalanced across subjects. Inter-trial intervals varied from 1 to 4 s (average of 2 s), during which a white fixation cross was presented against a black background. After scanning, one trial was randomly drawn to determine what the subject would eat before leaving the lab. If subjects failed to respond within the 4 s of the selected trial either the on-screen or the default option was randomly chosen.
 
@@ -191,35 +1018,35 @@ Subjects made food choices under three conditions: Respond Naturally (‘respond
 
 Food items varied in their perceived tastiness and healthiness and included healthy snacks (e.g., apples, broccoli) and junk foods (e.g., candy bars, chips). Items were selected based on subjects ratings in a self-paced computerized task prior to scanning that assessed perceived tastiness (5-point Likert scale, ‘very untasty’ to ‘very tasty’) and healthiness (5-point Likert scale, ‘very unhealthy’ to ‘very healthy’) of 200 food items (Hare et al., 2011a; Hutcherson et al., 2012). Ninety food items were selected from this larger set to cover the range of health and taste ratings in a roughly uniform manner. In addition, for each subject we chose one default food that was perceived as neutral for taste and health. Each food item was presented once in each of three choice conditions, with presentation order randomized across blocks, functional runs, and subjects. To ensure the motivational saliency of the food items, subjects were asked to refrain from eating 4 hr prior to testing. Stimulus presentation was implemented using high-resolution color pictures (72 dpi) and Psychophysics Toolbox Version 3 (Brainard, 1997) together with Matlab (2014a).
 
-## Altruism task
+#### Altruism task
 
 The altruism task was an fMRI compatible version of the dictator game modified from (Hutcherson et al., 2015b). On every trial, subjects were presented with a monetary proposal that affected their own ($Self) and another persons’ ($Other) monetary payoff (Figure 1B). Subjects had 4 s to chose between the on-screen proposal and a constant default allocation ($20 to both) by pressing one of the four response buttons (‘strong yes’, ‘yes’, ‘no’, ‘strong no’; direction counter-balanced across subjects). Payouts for self and other ranged from $0 to $40 and always involved a tradeoff between self and other (i.e. prizes for one individual were equal or less than the default, while prizes for the other individual exceeded the default). Thus, subjects always had to choose between acting altruistically (benefitting the other at a cost to oneself) or selfishly (benefitting oneself at a cost to the other) on every trial. At the end of the experiment, one trial was randomly selected and implemented according to the subjects’ choice. If subjects failed to respond within 4 s for this trial, both individuals received $0.
 
 Similar to the food task, subjects performed the task under three different conditions: Respond Naturally (‘respond as you naturally would’, [NC]), Focus on Ethics (‘focus on doing the right thing and consider the ethical or moral implications of your choice’, [EC]), or Focus on Partner (‘focus on your partner’s feelings and how the other person is affected by your choice’, [PC]). Subjects were reminded to always make their choice based on their preference, regardless of the condition. Conditions were implemented in separate blocks of 10 trials each, with the beginning of a new block signaled by a short reminder instruction (4 s). Matching the food task, subjects performed 9 blocks of each condition (i.e., 90 trials per condition and a total of 270 trials), with the block order counter-balanced across subjects and functional runs, with the exception that the first two blocks were always natural choice trials. Choices in these NC blocks were used to estimate a logistic regression [Choice = wSelf * $Self + wOther * $Other] and used for a subject-specific selection of 30% of proposals most likely to elicit generous behavior and 30% of proposals likely to elicit selfish behavior. The remaining 40% of trials were randomly chosen from the full proposal space. Practice trials and a quiz prior to scanning verified that subjects were capable and comfortable to make the choice within 4 s.
 
-## Probabilistic choices
+#### Probabilistic choices
 
 To decrease experimental demand and to ensure anonymity in the altruism task, subjects were informed that implementation of their choices was probabilistic and that in 40% of trials their choices would be reversed (Hutcherson et al., 2015b). Subjects were informed that their partner would only know the proposal and the outcome of the randomly chosen trial, but not their decision (i.e., if the outcome was due to the subjects’ choice or a choice reversal). The implementation was as follows: After each choice (jittered delay of 2–4 s), an outcome screen (4 s) informed subjects of the implementation of choices (implemented/choice reversal), followed by a jittered inter-trial interval of 1–4 s (average of 2 s) before the next choice screen appeared. Computerized control questions during training confirmed that subjects understood the probabilistic nature of the task and that it was still in their best interest to choose according to their individual preferences. In the food task, we matched the probabilistic implantation in the altruism task, and informed participants prior to scanning that their choices would be implemented with 60% probability.
 
 Data from an independent behavioral pilot study (N = 17, 11 female, M ± SD: 24.12 years ± 5.83) confirmed that choices under almost perfect implementation (90%) closely matched those observed under 60% implementation conditions (within-subject design, all p’s > 0.37, uncorrected, for paired t-tests of RTs, percentage of generous and healthy choices). These findings strongly suggest that the probabilistic nature of the task did not systematically alter preference-based choices in both tasks.
 
-## Behavioral computational model (DDM)
+### Behavioral computational model (DDM)
 
 We used a multi-attribute extension of the standard drift diffusion model (DDM) (Ratcliff and McKoon, 2008; Smith and Ratcliff, 2004) to capture behavior in both the food and altruism task, using a maximum-likelihood procedure similar to that described in (Hutcherson et al., 2015b) to find the best-fitting parameters (see Appendix 1 – Drift diffusion model for details). For capturing behavior in the food task, we fit a model using five parameters: two parameters for the weights on tastiness and healthiness, a parameter for non-decision time (NDT) representing perceptual and motor processes, and two parameters specifying the initial height of the choice-determining threshold (b) as well as the exponential decay rate of this threshold toward zero (d) as the time limit for responding approached. For capturing behavior in the altruism task, we fit a model using six parameters: three parameters related to the weights on $Self, $Other, and fairness (−1*|$Self - $Other|), as well as parameters related to NDT, b, and d (see Supplementary file 1A for details).
 
-## Functional image acquisition
+### Functional image acquisition
 
 Functional imaging was performed on a 3T MRI scanner (Magnetom Trio, Tim System, Siemens Medical Systems, Erlangen) equipped with a 32-channel head coil. T2*-weighted functional images were obtained using an echoplanar imaging (EPI) sequence (TR = 2.5 s, TE = 30 ms, flip angle = 85°, 3 × 3 × 3 mm, matrix size 64 × 64, 47 axial slices, descending sequential acquisition order). For the altruism task, a maximum of 1521 volumes were acquired. For the food task we acquired 990 volumes. High-resolution T1-weighted structural images were acquired at the end of each scanning session using an MPRAGE sequence (TR = 1.5 s, TE = 2.91 ms, flip angle = 10°, TI = 800 ms, 1 × 1 × 1 mm, matrix size 256 × 256, 176 slices).
 
-## fMRI data analysis
+### fMRI data analysis
 
 Functional images were analyzed using the statistical parametric mapping software SPM12 (http://www.fil.ion.ucl.ac.uk/spm) implemented in Matlab. Preprocessing consisted of slice-time correction (reference slice 47), spatial realignment (by first registering each subjects’ data to the first image of each run, then all functional runs were co-registered with each other), and normalization to the Montreal Neurological Institute (MNI) brain template (EPI template). For every subject, we estimated several general linear models (GLMs), using a canonical hemodynamic response function (hrf), and a 128 s high-pass cutoff filter to eliminate low-frequency drifts in the data.
 
-## Trial-wise estimates of choice phases: GLM1 (food task) and GLM2 (altruism task)
+#### Trial-wise estimates of choice phases: GLM1 (food task) and GLM2 (altruism task)
 
 These GLMs aimed to identify brain responses that encode trial-by-trial variations in attributes (i.e., foods’ healthiness or tastiness in the food task; payoffs for subjects and confederate and the fairness of the offer in the altruism task) and decision-values (four-point response from ‘strong no’ to ‘strong yes’) during choice periods. To this end, these models obtained a trial-wise measure of BOLD responses during food (GLM1) and altruistic choices (GLM2) at the time of the choice. For each subject, GLM1 included a regressor for each choice period (R1-R270) in the food task, lasting from the onset of a food presentation to the button press that represented the choice for the trial. In addition, the model estimated a separate regressor for the outcome phases for each functional run, movement parameters, and run-wise session constants as regressors of no interest. GLM2 mirrored GLM1 and estimated regressors of interest for every altruistic choice (R1-R270), lasting from the onset of the monetary proposal to the button press that signified the choice in this trial. GLM2 also estimated regressors of no interest including outcome phases, movement parameters, and session constants. Estimated responses for the regressors of interest – the choice periods of each task (R1-R270 from GLM1 and 2, respectively) – were then used as inputs for the multivariate decoding analyses (support vector regressions, SVRs) described below.
 
-## Neural computational model: within-subject decoding of choice attributes
+#### Neural computational model: within-subject decoding of choice attributes
 
 This multivariate pattern analysis (MVPA) aimed to identify brain regions that encode trial-by-trial fluctuations of choice-relevant attributes (e.g. foods healthiness, payoff to self) or decision values (four-point response from ‘strong no’ to ‘strong yes’), and to assess how current goals affect neural information on the attribute level. Thus, these decoding analyses allowed us to explicitly test if regulation-based changes in neural information on choice-relevant variables (e.g., healthiness of foods) matched predictions from the behavioral computational model.
 
@@ -231,7 +1058,7 @@ We also compared the results of the multivariate SVRs with those of a convention
 
 There is a potential concern that the some intervals of the response scales for choice attributes (e.g. tastiness) or decision values (‘strong no’, ‘no’, ‘yes’, ‘strong yes’) might be subjectively larger than other intervals. While the present data don’t allow ruling out this potential concern, previous implementations of the response scales in both established tasks suggest that the operationalization of attribute-specific judgments and decision values allows to reliably identify value signals in the brain (Hare et al., 2011a; Hutcherson et al., 2012; Hare et al., 2009; Hutcherson et al., 2015b).
 
-## Neural computational model: cross-subject decoding of individual differences in regulatory success
+#### Neural computational model: cross-subject decoding of individual differences in regulatory success
 
 This multivariate decoding analysis investigated whether neural activation patterns predict individual differences in regulatory success. A cross-subject decoding approach was used to test for information on the degree to which cognitive regulation affected attribute weights and choices. Clusters identified in the repeated measures ANOVA (see above) were defined as regions of interest (ROIs). Importantly, a main goal of our study was to test for potential common neural substrates underlying context-sensitive weighting of choice-attributes across choice-domains. Hence, these decoding analyses focused on voxels identified in a formal conjunction of the significant clusters for flexible representations of Healthiness, Tastiness, and $Self (at p < 0.05, FWE corrected at cluster-level, height threshold of p < 0.001; see Figure 5A). First, we tested if neural activation in this ROI obtained during food choices encodes subject-specific regulation success in the food task, but also in an independent social altruism task. To this end, we extracted parameter estimates for all voxels in the ROI (Figure 5A) from subjects first-level GLM1 (food choices) using the contrast image [HC > (NC, TC)] (based on DDM results suggesting differential attribute representations for this comparison, Figure 2A,C). Resulting pattern vectors (one per subject) were used as input features for the prediction and individual difference scores in regulation success served as labels. Regulation success was defined using difference scores in DDM parameters (e.g., Δw Tastiness [HC – (NC, TC)]) and in observed choice behavior (e.g., ΔHealthy choices [HC – (NC, TC)]). Predictions used a linear ν-SVR (libSVM) with a fixed cost parameter c = 0.01 (similar to within-subject decoding) and a leave-one-subject out approach (yielding a 36-fold cross-validation). Decoding accuracies reflect correlations of the observed and predicted regulation score. Statistical significance was assessed by comparisons to empirical null-distribution (realized by randomly permuting the pairing of subjects’ neural pattern vectors and behavioral regulation scores 1000 times). Only decoding accuracies above the 95th percentile of null-distributions were considered statistically significant (Corradi-Dell'Acqua et al., 2016). As a sanity check, analyses were repeated training on data obtained during altruistic choices (see Supplementary file 1D).
 

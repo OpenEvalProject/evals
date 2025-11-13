@@ -39,19 +39,67 @@ Limitations of current approaches have precluded sensitive and quantitative meas
 
 ## Results
 
-## Generation, validation, and immunogenicity of antigen-DNA conjugates
+### Generation, validation, and immunogenicity of antigen-DNA conjugates
 
 To quantify the dissemination and uptake of antigen in the draining LN after vaccination, we developed a vaccination strategy to measure antigen levels using single-cell mRNA sequencing. Many prior studies have used the model antigen, ovalbumin (ova), conjugated to a fluorophore to track antigen in vivo. Here, we conjugated ova to DNA oligonucleotides with barcodes suitable for analysis by single-cell mRNA sequencing (Figure 1a). The ~60 nt DNA tag contains a unique sequence barcode and PCR primer binding sites, similar to CITE-seq tags (Stoeckius et al., 2017; Figure 1—source data 1). We measured the stability of unconjugated DNA and ova-DNA conjugates in which the conjugated DNA either had normal phosphodiester linkages (pDNA) or was protected throughout by phosphorothioate linkages (psDNA). Quality control of these conjugates indicated a 1:1 stoichiometry of protein to DNA (Figure 1b). To measure the stability of the antigen-DNA conjugate, we added antigen-DNA conjugates to cultures of bone marrow-derived dendritic cells (BMDCs) and quantified the amount of DNA in cell lysates and media over time using the PCR handle to detect the DNA by quantitative PCR. Amount of DNA was quantified as a ratio of DNA detected relative to the amount of protein acquired from the cell lysate. We found significantly higher levels of ova-psDNA in cells relative to ova-pDNA (approximately fourfold at day 1; p=0.002 and approximately sevenfold at day 3; p=0.004), indicating that psDNA is more stable than pDNA (Figure 1c). In addition, ova conjugation was required for phagocytosis by BMDCs as we detected limited amounts of unconjugated pDNA or psDNA (values <1 at days 1–7) (Figure 1c). To determine if the BMDCs had both the ova and DNA within each cell, we used flow cytometry and immunofluorescence using an antibody to detect ova and streptavidin to detect the biotinylated DNA tag. We detected both ova and DNA within the same cells by flow cytometry (Figure 1d, Figure 1—figure supplement 1a) and co-localization by immunofluorescence (Figure 1e). We also measured conjugate stability in mouse LECs, a cell type that retains foreign proteins for long periods (Tamburini et al., 2014), and found that ova-psDNA conjugates were stable over 7 days of culture, whereas ova-pDNA was rapidly degraded (Figure 1f). In the endothelial cells, we detected both the ova protein and the barcode within the same cell and co-localized to same location (Figure 1—figure supplement 1b, c). Furthermore, the ova-psDNA retention within the LECs was similar to a vaccine strategy using an ova protein-fluorophore conjugate with polyI:C and anti-CD40, which we previously demonstrated induces antigen archiving (Tamburini et al., 2014; Figure 1—figure supplement 1d–f). Using a more phagocytic cell, bone marrow-derived macrophages, we observed nearly all macrophages phagocytosed the ova-psDNA at day 1 and found the ova and psDNA within the same cell (Figure 1—figure supplement 1g). In macrophages given ova-psDNA 7 days prior, we detected only ova protein (Figure 1—figure supplement 1g), potentially resulting from high levels of endonucleases found within the lysosome of macrophages (Krieser et al., 2002; Nagata, 2007).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of ovalbumin (PDB code 1ova) antigen conjugation to barcoded DNA with phosphodiester and phosphorothioate DNA linkages and a 3′ biotin label (circle with B inside). Sulfur replaces a non-bridging oxygen to create a DNA phosphorothioate linkage. List of oligo sequences used can be found in Figure 1—source data 1. (b) Conjugation of oligonucleotides to ovalbumin. Purified conjugate was analyzed by 10% TBE native PAGE stained with GelRed for DNA (left) followed by Coomassie staining for protein (right). DNA-TCO: 61 nt barcoded oligonucleotide with 5′-trans-cyclooctene (TCO); ova-mTZ: ovalbumin functionalized with methyltetrazine (mTZ); ova-DNA: DNA-conjugated ovalbumin product with oligonucleotide attached. (c) Bone marrow-derived dendritic cells (BMDCs) were treated with pDNA, psDNA, ova-pDNA, or ova-psDNA (5 µg) by addition to the culture media. After 1, 3, and 7 days, cells were washed, released, lysed, and analyzed for pDNA or psDNA by qPCR. Values are displayed as fold-change relative to the negative control (cells alone). Asterisks denote sample significant amounts relative to the negative control (p<0.01; Wilcoxon rank-sum test). Error bars represent standard error of the mean (SEM). 3–5 wells were evaluated per group on 2–3 independent occasions. (d) Flow cytometric analysis of ova-psDNA conjugates acquired by BMDCs after 1 day or 7 days. Cells were washed 1 day after ova-psDNA treatment. Harvested BMDCs were stained with anti-ovalbumin made in rabbit and a secondary anti-rabbit conjugated to Phycoerythrin (PE) and then stained with streptavidin conjugated to brilliant violet 421 to visualize the 3′ biotin label on the psDNA. Shown are average and ± standard error. Experiment was performed three times with three technical replicates. (e) As in (d) except cells were plated onto glass coverslips and treated with ova-psDNA for 24 hr prior to staining with either anti-ovalbumin and a secondary conjugated to PE (red) followed by streptavidin conjugated to Fluorescein Isothiocyanate (FITC) (green). Co-localization is shown in yellow. Scale bar is 10 μm. Imaging was repeated three independent times. Approximately 100 cells were visualized with a similar frequency of double-positive cells as observed in (d). No single-positive cells were detected. (f) Analysis of DNAs as in (c) using murine lymph node lymphatic endothelial cells. (g) BMDCs were incubated with ova-psDNA (conjugated), ova plus psDNA (unconjugated), or PBS for 1, 3, and 7 days prior to adding OT-1 T cells labeled with violet proliferation dye. T cells and BMDCs were co-cultured at a ratio of 1:10 for 3 days. (h) Quantification of (g) using the percent divided calculation described in the Materials and methods. Experiments were performed three times with 3–5 wells per sample with similar results. Error bars represent SEM. Asterisks denote sample significant amounts relative to the negative control (p<0.05 Wilcoxon rank-sum test). Exact p-values are as follows: day 1 psDNA:ova-psDNA p=0.008, psDNA:untreated p=0.016, ova-psDNA:untreated p=0.016; day 3 psDNA:ova-psDNA p=0.008, psDNA:untreated p=0.016, ova-psDNA:untreated p=0.016; day 7 psDNA:ova-psDNA p=1, psDNA:untreated p=0.400, ova-psDNA:untreated p=0.400. n.d.: none detected.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Gating and single-color staining controls for anti-ovalbumin (ova) and streptavidin 1 day post addition of ova-psDNA. (b) Flow cytometry of SV-40 transformed endothelial cells (SVEC) with indicated stains at indicated time points as in (a). Experiment was repeated three times with three replicates. (c) Immunofluorescence of SVECs treated with ova-psDNA for 24 hr using anti-ova followed by a secondary anti-rabbit conjugated to PE and streptavidin conjugated with FITC. Cells were mounted with vectashield with DAPI. Scale bar is 10 μm. Approximately 100 cells were visualized with a similar frequency of double-positive cells as detected in (b). No single-positive cells were detected. (d) Gating strategy for murine lymphatic endothelial cells. (e) Amount of ova conjugated to Alexa Fluor 488 that was acquired over a 2–7-day period in the presence or absence of type 1 IFN. (f) Quantification of fluorescence intensity 2 or 7 days after treatment as indicated. Experiment was performed at least three times with three replicates each. (g) Flow cytometry of bone marrow- derived macrophages (BMDMs) with indicated stains at indicated time points as in (a). Experiment was repeated three times with three replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Bone marrow- derived dendritic cells (BMDCs) were grown for 7 days and cultured in GM-CSF. After 7 days, 5 mg of either pDNA, psDNA, ova-pDNA, or ova-psDNA were added to the culture media, and 1, 3, or 7 days after addition, media was removed and qPCR was performed on using primers against the DNA added. 3–5 wells were evaluated per group on 2–3 independent occasions. (b) As in (a) except with murine lymph node lymphatic endothelial cells. (c) As in Figure 1h, I, BMDCs were treated with ovalbumin (ova) (5 μg) ± polyI:C and anti-CD40 (20 μg each) or ova-psDNA ± polyI:C and anti-CD40 overnight and then co-cultured with Carboxyfluorescein Succinimidyl Ester (CFSE)-labeled OT1 T cells for 3 days before evaluating CFSE dilution by flow cytometry. Experiments were performed three times with 3–5 wells per sample with similar results.
 
 To determine whether conjugation of psDNA to ova affected ova processing and presentation, we measured BMDC presentation of ova-derived SIINFEKL peptide by co-culture with SIINFEKL-specific OT1 T cells. BMDCs given ova-psDNA induced significantly more proliferation of OT1 T cells than unconjugated ova (Figure 1g, h), suggesting enhanced activation of BMDCs upon encounter with ova-psDNA conjugates. Furthermore, we detected pDNA and psDNA in BMDC culture media at 1 day after addition but not at later time points, confirming that ova-psDNA conjugates are processed and not released by BMDCs after phagocytosis (Figure 1—figure supplement 2a, b). Finally, ova-psDNA conjugates led to increased OT1 proliferation relative to ova plus psDNA (unconjugated), showing that ova-psDNA conjugates are immunostimulatory (Figure 1g, h) and consistent with studies showing conjugation of antigens to RNA or DNA induce TLR7 (RNA) or TLR9 (DNA) signals that lead to prolonged antigen presentation (Xu and Moyle, 2018). Addition of polyI:C and anti-CD40 to BMDCs with ova also elicited robust OT1 proliferation, demonstrating that TLR activation on the BMDCs is required for efficient cross-presentation to T cells (Figure 1—figure supplement 2c).
 
 We next asked whether vaccination with ova-psDNA conjugates elicits a T cell response in vivo. We compared antigen-specific T cell responses in mice vaccinated with a mixture of ova-psDNA and polyI:C/αCD40 to its individual components (ova, psDNA, polyI:C, and polyI:C/αCD40; Figure 2a, Figure 2—figure supplement 2a, b) and—consistent with the differences in OT1 proliferation we saw in vitro—found that T cell responses to ova-psDNA were greater than either ova with polyI:C, ova with polyI:C/αCD40, or a mixture of unconjugated ova and psDNA (Figure 2b). Interestingly, ova-psDNA conjugate combined with polyI:C/αCD40 did not significantly enhance the T cell response beyond ova-psDNA alone (Figure 2b). T cells stimulated by ova-psDNA produced significantly more IFNγ than any other vaccination strategy even in the absence of ex vivo SIINFEKL peptide stimulation, indicating prolonged and active presentation of ova-psDNA (Figure 2c, d). Together, these data show that ova-psDNA conjugates elicit antigen-specific T cell responses independent of polyI:C/αCD40. These findings are consistent with TLR9-dependent immune responses elicited by psDNA (Baek et al., 2001; Coffman et al., 2010; Vollmer et al., 2004), similar to DC presentation of conjugates of ova demonstrated with other TLR agonists (van Montfoort et al., 2009) and other subcutaneously administered ova-TLR conjugate vaccine platforms (Xu and Moyle, 2018).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig2-v2.jpg)
+
+**Figure 2.:** (a) Mice were immunized in the footpad with ovalbumin (ova) alone or ova-psDNA with or without polyI:C/aCD40 or polyI:C. After 7 days, draining popliteal lymph nodes (LNs) were harvested and cells were stained and gated as B220-, CD3+, CD8+, CD44+, and OVA257 Kb SIINFEKL-specific tetramer to measure antigen-specific CD8 T cell responses. (b) Quantification of SIINFEKL-specific CD8 T cells within the LN (data from a). Experiment was performed three times; shown is combined data from at least three mice per group, per experiment. p-Values were calculated using a two-stage step-up method of Benjamini, Krieger, and Yekutieli and did not assume consistent standard deviation. Error bars represent standard error of the mean (SEM). (c) As in (a) and (b) except cells were restimulated with SIINFEKL peptide for 6 hr ex vivo in the presence of brefeldin A, then stained for IFNγ and IL-2. (d) Quantitation of IFNγ-positive CD8+ T cells with or without peptide stimulation in the draining LN. Experiment was performed three times; shown is combined data from at least three mice per group, per experiment. p-Values were calculated using a two-stage step-up method of Benjamini, Krieger, and Yekutieli and did not assume consistent standard deviation. Error bars represent SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Gating strategy for tetramer staining and intracellular cytokine staining of CD8 T cells. (b) Gating strategy used for cell sorting prior to single-cell RNA sequencing.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Mice were vaccinated in the footpad with 10 µg of ova-pDNA (phosphodiester backbone) or ova-psDNA (phosphorothioate backbone) with or without vaccinia virus (103 PFU). Each barcode conjugate contained a unique sequence barcode. 7 days after vaccination, mice were euthanized and draining popliteal lymph node (LN) cells were isolated and stained. Shown are B220-, CD3+, and CD8+ cells. Box indicates the frequency of tetramer-specific and CD44 high cells per lymph node. (b) Quantification of (a). (c) Mice were vaccinated with 10 μg ova conjugated to psDNA (ova-psDNA) plus 1E3 VV-WR, 1E4 VV-WR, or polyI:C/aCD40 (5 μg each) in each footpad. LNs were harvested 20 days later, and Miltenyi bead selection was performed using CD45 to select hematopoietic (CD45+) versus non-hematopoietic (CD45-) cells. The amount of DNA barcode was assessed in each group as a faithful reporter of antigen archiving. Values are displayed as fold-change relative to the negative control naive sample. Experiment was performed twice with 3–4 mice per group.
+
 We previously showed that a vaccination strategy comprising soluble antigen and vaccinia virus (VV; Western Reserve) induced robust antigen archiving that lasts longer than those using polyI:C/αCD40 adjuvant (Kedl et al., 2017). To evaluate antigen-psDNA performance during an active infection, we determined T cell responses after vaccination by comparing individual components with mixtures of ova, VV, ova-pDNA, or ova-psDNA. Subcutaneously administered ova-psDNA alone again elicited a T cell response (Figure 2, Figure 2—figure supplement 2a), and addition of VV to ova-psDNA conjugate moderately increased T cell responses compared to ova-psDNA alone, similar to what we observed with ova-psDNA/polyI:C/αCD40 (Figure 2, Figure 2—figure supplement 2b). Finally, we examined the cell-type specificity of ova-psDNA dissemination in vivo. Mice were vaccinated with mixtures of (i) ova-psDNA and VV or (ii) ova-psDNA and polyI:C/αCD40, and levels of ova-psDNA were quantified by PCR in both leukocytes and SCs (fractionated by CD45 expression) in the draining LNs. We found that CD45- SCs had high amounts of ova-psDNA, but not ova-pDNA, corresponding to increased inflammation (Tamburini et al., 2014), whereas CD45+ leukocytes had very low levels of ova-psDNA or ova-pDNA 7 days after vaccination (Figure 2—figure supplement 2c). These data recapitulate our previous demonstration of durable antigen retention by CD45- SCs (Kedl et al., 2017; Tamburini et al., 2014), confirming that ova-psDNA, but not ova-pDNA, is a faithful tracking device for antigen archiving in vivo.
 
-## Molecular tracking of antigen during the immune response to vaccination
+### Molecular tracking of antigen during the immune response to vaccination
 
 Given the ability of the antigen-psDNA conjugates to induce a robust immune response in vivo (Figure 2) and our ability to use the psDNA as a measure of protein antigen levels (Figure 1), we used the antigen-psDNA conjugate as a ‘molecular tracking device’ to understand the distribution of the protein antigen in the LN following this vaccination. To determine whether we could identify if cells acquire and archive (Tamburini et al., 2014) antigens following antigen-psDNA, we vaccinated mice subcutaneously with an equimolar mixture of uniquely barcoded ova-psDNA conjugate, unconjugated psDNA, and unconjugated pDNA (unprotected phosphodiester backbone) with VV (as in Figure 2—figure supplement 2c), and evaluated antigen distribution (via psDNA abundance) in the LN at early (2 days) and late (14 days) time points. At each time point, single-cell suspensions were prepared from draining popliteal LNs and divided into SC (by depleting CD45+ cells) or lymphocyte populations (by flow sorting for CD11c, CD11b, and B220 markers; Figure 2—figure supplement 1b). To enrich for myeloid cell populations but maintain representation of other cell types, CD11c+, CD11b+, B220+, and ungated live cells were mixed at a 4:4:1:1 ratio, respectively. These cell populations were analyzed by single-cell mRNA sequencing, measuring both mRNA expression and the quantity of psDNA in each cell using unique molecular identifiers (Islam et al., 2014; Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-v2.jpg)
+
+**Figure 3.:** (a, d, g, j) Uniform manifold approximation and projections (UMAPs) are shown for dendritic cells (DCs) (a, d), lymphatic endothelial cells (LECs) (g), and fibroblastic reticular cells (FRC)s (j) at day 2 (a) and day 14 (d, g, j). (b, e, h, k) Relative ovalbumin (ova) signal was calculated by dividing antigen counts for each cell by the median antigen counts for T and B cells. Signals are plotted on log10 scale; black dots indicate median values, and vertical lines denote quartiles. Statistical comparisons between each pair of groups are available in Figure 3—source data 1. (c, f, i, l) unique moleular identifier (UMI)-adjusted antigen counts are displayed on UMAPs for each cell type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mice were vaccinated with ova-psDNA, psDNA, and pDNA with IE3 CFU of VV-WR. Each DNA injected had a unique barcode sequence for detection during sequencing. Counts of ova-psDNA, psDNA, and pDNA for dendritic cells (DCs) at (a) day 2 or (b) day 14. Counts for ova-psDNA, psDNA, and pDNA for (c) lymphatic endothelial cells (LECs) and (d) FRCs 14 days post vaccination.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Antigen counts were compared with total mRNA counts for each cell for dendritic cells (DCs) (a, b), lymphatic endothelial cells (LECs) (c, d), and FRCs (e, f). Pearson’s correlation coefficient and associated p-value are shown for each cell type.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) A uniform manifold approximation and projection (UMAP) is shown for LEC types, epithelial cells, B cells and T cells identified for the day 2 time point. (b) Relative ovalbumin (ova) signal is shown for each cell type. Relative ova signal was calculated by dividing antigen counts for each cell by the median antigen counts for T and B cells. (c) Antigen counts are displayed on the UMAP shown in (a). (d, e) Correlation coefficients are shown comparing each identified LEC type with the reference cell types from Xiang et al.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Gating strategy for LECs in the dLN with markers for ICAM1 and PD-L1. (b) Representative flow plots of antigen held by LECs 14 days following subcutaneous immunization with OVA488 (10 μg/site), polyI:C (5 μg/site), and aCD40 (5. μg/site). LECs were gated first on PD-L1 high/ICAM1 high or PD-L1 low/ICAM1 low and then gated on antigen positive. (c) Quantification of (b) showing the number of antigen-positive LECs gated on PD-L1 high/ICAM1 high or PD-L1 low/ICAM1 low. Statistical analysis was done using an unpaired Student’s t-test, **p=0.0032. Experiment was performed at least three times with 3–5 mice per group.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Uniform manifold approximation and projection (UMAP) is shown for FRC cell types, B cells, and T cells identified for the day 2 time point. (b) Relative ovalbumin signal is shown for each cell type. Relative ovalbumin signal was calculated by dividing antigen counts for each cell by the median antigen counts for T and B cells. (c) Antigen counts are displayed on the UMAP shown in (a).
 
 We recovered a total of 800 cells in the CD45- fraction and 8187 cells in the CD45+ fraction at the 2-day time point. We recovered more CD45- cells (6372 CD45-; 4840 CD45+) at the 14-day time point likely due to expansion and proliferation of the LN stroma (Tamburini et al., 2014; Lucas et al., 2018; Lucas and Tamburini, 2019). We classified cell types using an automated approach (Fu et al., 2020), comparing measured mRNA expression patterns to reference data sets for DCs (Brown et al., 2019; Miller et al., 2012), fibroblastic reticular cells (FRC)s (Rodda et al., 2018), and LECs (Fujimoto et al., 2020; Kalucka et al., 2020; Xiang et al., 2020; Figure 3—source data 1). As expected, the CD45+ fraction contained DCs, monocytes, T cells, and B cells (Figure 3a, b, d, e), while the CD45- fraction contained SCs, including LECs, BECs, epithelial cells, and fibroblasts (Figure 3g , h, j, k). We did not recover VV mRNAs in cells at either time point, possibly due to viral clearance or a failure to recover infected, apoptotic cells in the live/dead selection (Figure 2—figure supplement 1b).
 
@@ -73,25 +121,25 @@ At the early time point, the Cxcl9+ TRCs and CD34+ SCs (Rodda et al., 2018) had 
 
 Finally, these data provided insight into antigen transfer between SCs and DCs, a process important for enhanced protective immunity (Kedl et al., 2017; Tamburini et al., 2014). We previously showed that archived antigen obtained from the polyI:C/anti-CD40-based vaccine is transferred from LECs to migratory Batf3-dependent cDC1s 2 weeks after infection (Kedl et al., 2017). Here, we confirm that with the ova-psDNA vaccine CCR7hi migratory cDC1s had the highest amount of antigen 2 weeks after vaccination (Figure 3e, Figure 3—source data 1; Kedl et al., 2017). Together, these data validate the use of molecular tracking devices by corroborating previous studies of antigen trafficking with other vaccination strategies and identify new cells types that dynamically acquire antigen during infection.
 
-## Gene expression signatures associated with antigen acquisition by DCs
+### Gene expression signatures associated with antigen acquisition by DCs
 
 We next leveraged the variation in antigen levels across cell types (Figure 3b, e, h, k) to identify gene expression signatures associated with high levels of antigen that would validate our approach. We classified cells as ‘antigen-high’ and ‘antigen-low’ using a two-component mixture model and identified marker genes associated with each class (Figure 4a, b). To validate this approach, we evaluated the DC populations as genes associated with phagocytosis and activation have been established (Miller et al., 2012; Breuilh et al., 2007; Bune et al., 2001; Figueiredo et al., 2018; Gschwandtner et al., 2019; Hirano et al., 2007; Jin et al., 2020; Lämmermann and Kastenmüller, 2019; Mancardi et al., 2008; PrabhuDas et al., 2017; Sinclair, 1999). DC populations generally contained lower antigen levels that were variable across subtype (Figure 3). We classified antigen-low and antigen-high cells for each subtype. Among the subtypes with significant amounts of antigen, Tbet- cDC2 cells had the highest antigen levels and largest differences in gene expression (277 genes in antigen-high cells, Figure 4, Figure 4—source data 1), consistent with cDC2s acting as the primary cell type of antigen uptake following protein (Gerner et al., 2017).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig4-v2.jpg)
 
-**Figure 4.:** (a, e) Day 2 (a) and day 14 (e) cDC2 Tbet- cells containing low and high antigen counts were identified using a two-component mixture model. A uniform manifold approximation and projection (UMAP) is shown for ovalbumin (ova)-low and ova-high cells. Cell types not included in the comparison are shown in white (other). (b, f) The distribution of ova antigen counts is shown for ova-low and ova-high cDC2 Tbet- cells. Dotted lines indicate the mean counts for each population. Identification of genes associated with ova-low and ova-high for each cell type is available in Figure 4—source data 1. (c, g) UMAPs show the expression (log-normalized counts) of top markers associated with ova-high cDC2 Tbet- cells. (d, h) Expression (log-normalized counts) of antigen-high markers in each cell type.  Figure 4—source data 1.Ova-low and ova-high cells were independently identified for each cell type shown in Figure 3 using a Gaussian mixture model implemented with the R package mixtools. Differentially expressed genes were identified using a Wilcoxon rank-sum test performed using the R package presto (wilcoxauc). The Benjamini–Hochberg method was used to correct for multiple comparisons. Genes were filtered to only include those with an adjusted p-value<0.05, log fold-change >0.25, area under the receiver operator curve (AUC) >0.5, and with at least 50% of ova-high cells expressing the gene. The average expression, log fold-change, test statistic (statistic), AUC, percentage of ova-high cells that express the gene (pct_in), and percentage of ova-low cells that express the gene (pct_out) are included.
+**Figure 4.:** (a, e) Day 2 (a) and day 14 (e) cDC2 Tbet- cells containing low and high antigen counts were identified using a two-component mixture model. A uniform manifold approximation and projection (UMAP) is shown for ovalbumin (ova)-low and ova-high cells. Cell types not included in the comparison are shown in white (other). (b, f) The distribution of ova antigen counts is shown for ova-low and ova-high cDC2 Tbet- cells. Dotted lines indicate the mean counts for each population. Identification of genes associated with ova-low and ova-high for each cell type is available in Figure 4—source data 1. (c, g) UMAPs show the expression (log-normalized counts) of top markers associated with ova-high cDC2 Tbet- cells. (d, h) Expression (log-normalized counts) of antigen-high markers in each cell type.
 
 At the early time point, genes upregulated in antigen-high DCs confirmed DC activation (Figure 4—source data 1). Antigen-high cDC2 Tbet- cells upregulated genes Ccl2 and Cxcl2 (consistent with active recruitment of inflammatory cells; Gschwandtner et al., 2019; Lämmermann and Kastenmüller, 2019), Msr1 (consistent with antigen scavenging; PrabhuDas et al., 2017), as well as Pkm, Lgals3, and Mif (consistent with DC-T cell responses and DC differentiation during inflammation; Breuilh et al., 2007; Figueiredo et al., 2018; Jin et al., 2020; Figure 4c, d).
 
 At the late day 14 time point, the highest antigen counts were found in the migratory cDC1 population, consistent with a role for migratory cDC1s in archived antigen acquisition from LECs (Kedl et al., 2017; Figure 3e, f). Among the genes highly expressed by the antigen-high CCR7hi migratory cDC1 population were Ccl5 and Fscn1 (Figure 4—source data 1). Consistent with these DCs being involved in archived antigen presentation, Ccl5 (also known as RANTES) regulates CD8 T cell responses during chronic viral infection (Crawford et al., 2011) and Fscn1, an actin binding protein, regulates cell migration of mature DCs via podosome formation (Yamakita et al., 2011). Similar to the day 2 time point, among subtypes with significant amounts of antigen, Tbet- cDC2 populations showed the greatest differences in gene expression between antigen-high and -low cells (230 genes in antigen-high cells; Figure 4e, f, Figure 4—source data 1). Genes upregulated in antigen-high Tbet- cDC2s included Fcgr4, which is involved in phagocytosis, antigen presentation, and proinflammatory cytokine production (Hirano et al., 2007; Mancardi et al., 2008), and CD72 and Acp5, which are important for the inflammatory response and pathogen clearance (Bune et al., 2001; Sinclair, 1999; Figure 4g, h). Collectively, these genes evoke specific processes in DC subsets required for the immune response; it remains to be determined whether they are specifically associated with LEC-DC antigen exchange or storage of antigens within DCs.
 
-## Gene expression signatures associated with antigen archival by LECs
+### Gene expression signatures associated with antigen archival by LECs
 
 We next evaluated the LEC population to determine whether our classification approach could identify genes involved in antigen archiving. We applied the classifier to LECs as a population and found large numbers of antigen-high-floor, collecting, and ceiling LECs (Figure 5c). Ptx3 LECs comprised a mixture of antigen-low and antigen-high cells, but there was a larger fraction of Ptx3 LECs with low antigen (Figure 5c). There were less antigen-low LECs compared to antigen-high LECs overall (34% of total), suggesting that antigen archiving may be specific to LECs in general rather than attributable to a specific LEC subset (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62781/elife-62781-fig5-v2.jpg)
 
-**Figure 5.:** (a) Day 14 LECs were classified into antigen-high and antigen-low using a two-component Gaussian mixture model. A uniform manifold approximation and projection (UMAP) is shown for antigen-low and antigen-high cells. T cells, B cells, and epithelial cells are shown in white (Other). (b) Distribution of antigen counts for antigen-low (light blue) and antigen-high (dark blue) cells. Dotted lines indicate mean counts for each population. Identification of genes associated with ovalbumin (ova)-low and ova-high for each cell type is available in Figure 5—source data 1. (c) The fraction of cells belonging to each LEC type for antigen-low and antigen-high populations. (d) UMAPs show expression of genes significantly enriched in the antigen-high population (scale is log-normalized counts). (e) Expression (log-normalized counts) of antigen-high markers in each cell type. (f) Mice were injected in the footpad with nystatin (dose) and 1 hr later ova488/polyI:C/αCD40. After 24 hr, mice were euthanized and draining popliteal lymph node (LN) removed, stained for LEC markers (CD45, PDPN, CD31, PDL1), and gated as in Figure 3—figure supplement 4. Shown are representative flow plots and quantification of geometric mean fluorescence intensity (gMFI) from naive (black bar), vehicle control (red bar), and nystatin treated (blue bar). Three mice per group were evaluated, and experiment was performed three independent times with similar results. Nystatin treatment reduces ova488 signal in LECs relative to vehicle (p=0.02; Wilcoxon rank-sum test). Error bars indicate standard error of the mean (SEM).  Figure 5—source data 1.Ova-low and ova-high cells were identified independently for DCs, FRCs, and LECs using a Gaussian mixture model implemented with the R package mixtools. Differentially expressed genes were identified as described for Figure 4—source data 1.
+**Figure 5.:** (a) Day 14 LECs were classified into antigen-high and antigen-low using a two-component Gaussian mixture model. A uniform manifold approximation and projection (UMAP) is shown for antigen-low and antigen-high cells. T cells, B cells, and epithelial cells are shown in white (Other). (b) Distribution of antigen counts for antigen-low (light blue) and antigen-high (dark blue) cells. Dotted lines indicate mean counts for each population. Identification of genes associated with ovalbumin (ova)-low and ova-high for each cell type is available in Figure 5—source data 1. (c) The fraction of cells belonging to each LEC type for antigen-low and antigen-high populations. (d) UMAPs show expression of genes significantly enriched in the antigen-high population (scale is log-normalized counts). (e) Expression (log-normalized counts) of antigen-high markers in each cell type. (f) Mice were injected in the footpad with nystatin (dose) and 1 hr later ova488/polyI:C/αCD40. After 24 hr, mice were euthanized and draining popliteal lymph node (LN) removed, stained for LEC markers (CD45, PDPN, CD31, PDL1), and gated as in Figure 3—figure supplement 4. Shown are representative flow plots and quantification of geometric mean fluorescence intensity (gMFI) from naive (black bar), vehicle control (red bar), and nystatin treated (blue bar). Three mice per group were evaluated, and experiment was performed three independent times with similar results. Nystatin treatment reduces ova488 signal in LECs relative to vehicle (p=0.02; Wilcoxon rank-sum test). Error bars indicate standard error of the mean (SEM).
 
 Using this classification approach, we identified 142 mRNAs that were significantly changed in antigen-high or antigen-low LECs (Figure 5—source data 1). Prox1, while expressed by all LECs identified, was highly expressed in antigen-high LECs, independent of the LEC type (Figure 5d, e). Prox1 is a transcription factor required for LEC differentiation from BECs and defines LEC identity via regulation of Vegfr3, Pdpn, and Lyve-1 (Harvey et al., 2005; Hong et al., 2002; Wigle and Oliver, 1999). Prox1 upregulation in antigen-high LECs indicates it may also transcriptionally regulate processes involved in antigen archiving.
 
@@ -115,15 +163,200 @@ Molecular tracking devices will enable new approaches to study molecular dissemi
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD40 (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Cat#BE0016-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ovalbumin (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab181688</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG PE (Donkey polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 406421 RRID:AB_2563484</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 BV510 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#103138 RRID:AB_2563061</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 PE (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#103106 RRID:AB_312971</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse podoplanin APC (Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#127410 RRID:AB_10613649</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD31 PerCP-Cy5.5 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#102420 RRID:AB_10613644</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse PD-L1 BV421 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#124315 RRID:AB_10897097</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a APC-Cy7 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#100714 RRID:AB_312753</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD44 PerCP-Cy5.5 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103032 RRID:AB_2076204</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse B220/CD45R BV510 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103248 RRID:AB_2650679</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse B220/CD45R PE (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103208 RRID:AB_312993</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c APC Cy7 (Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#117324 RRID:AB_830649</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b PE-Cy7 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#101216</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin BV421</td>
+      <td>Biolegend</td>
+      <td>Cat#405226</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin AF488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#S11223</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PolyI:C</td>
+      <td>Invivogen</td>
+      <td>Cat#Vac-PIC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nystatin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#N4014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Violet proliferation dye</td>
+      <td>BD Biosciences</td>
+      <td>Cat#562158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CFSE</td>
+      <td>BD Biosciences</td>
+      <td>Cat#565082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>WT: C57BL/6</td>
+      <td>Charles River Labs</td>
+      <td>C57BL/6 (B6) Mouse Inbred 027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>OT1: C57BL/6-Tg(TcraTcrb) 1100Mjb/J</td>
+      <td>Jackson Labs</td>
+      <td>JAX: 003831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>SVEC4-10</td>
+      <td>ATCC</td>
+      <td>ATCC CRL2181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary cells (M. musculus)</td>
+      <td>mLEC</td>
+      <td>Cell Biologics</td>
+      <td>C57-6092</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 5-6 week-old mice were purchased from Charles River or Jackson Laboratory, unless otherwise stated, bred and housed in the University of Colorado Anschutz Medical Campus Animal Barrier Facility. Wild type and OT1 mice were all bred on a C57BL/6 background. OT1 mice are a TCR transgenic strain specific to the SIINFEKL peptide of ova (OVA257-264) in the context of H-2Kb. All animal procedures were approved by the Institutional Animal Care and Use Committee at the University of Colorado.
 
-## Phosphorothioate and phosphodiester oligonucleotides
+### Phosphorothioate and phosphodiester oligonucleotides
 
 Oligonucleotides were synthesized by Integrated DNA Technologies (IDT) and contained a 5ʹ amine for conjugation, primer binding site, barcode, 10x Genomics Gel Bead Primer binding site for capture sequence 2, and a 3ʹ biotin. Phosphorothioate oligonucleotides contained a phosphorothioate modification at every linkage. All oligonucleotide sequences can be found in Figure 1—source data 1.
 
-## Conjugation of oligonucleotides to protein
+### Conjugation of oligonucleotides to protein
 
 Oligonucleotides were conjugated to ova by iEDDA-click chemistry (van Buggenum et al., 2016). Oligonucleotides were derivatized with trans-cyclooctene (TCO) in 10× borate buffered saline (BBS; 0.5 M borate, 1.5 M NaCl, pH 7.6; sterile filtered). Dilution of this buffer to 1× results in a final pH of 8.5. A reaction containing 40 nmol of amine-modified oligo (0.5 mM), 1× BBS, 10% DMSO, 8 µL of 100 mM TCO-PEG4-NHS in DMSO (10 mM final; Click Chemistry Tools, A137), pH 8.5 was rotated at room temperature for 15 min. A second aliquot containing the same amount of TCO-PEG4-NHS in DMSO was added, and the reaction was rotated at room temperature for another hour. Excess NHS was quenched by adding glycine, pH 8.5 to a final concentration of 20 mM and rotated at room temperature for 5 min. Modification was confirmed by analysis on an 8% denaturing TBE PAGE gel. Samples were precipitated by splitting the reaction into 20 µL aliquots and adding 280 µL of nuclease-free water, 30 µL of 3 M NaCl, and 990 µL of 100% ethanol. The precipitation reaction was incubated at −80°C overnight, followed by centrifugation at >10,000,000 ×g for 30 min. The supernatant was discarded, the pellet was washed with 100 µL of 75% ethanol, and centrifuged at >10,000,000 ×g for 10 min. The supernatant was removed, and the pellets were dried for 5 min at room temperature. The pellets were recombined by resuspension in 50 µL of 1× BBS. Samples were quantified by A260.
 
@@ -131,41 +364,41 @@ To conjugate methyltetrazine to ova, detoxified ova (Sigma-Aldrich, St. Louis, M
 
 For the final antigen-DNA conjugation, a 100 µL reaction containing 300 µg of ova-mTz and 6 nmol of oligonucleotide-TCO (1:1 equivalents) in 1× BBS was rotated at 4°C overnight. Excess mTz was quenched with 10 µL of 10 mM TCO-PEG4-glycine and rotated at room temperature for 10 min. TCO-PEG4-glycine was prepared by reaction of 10 mM TCO-PEG4-NHS with 20 mM glycine, pH 8.5 in 1× BBS for 1 hr at room temperature and stored at −20°C. Products were analyzed by 10% TBE PAGE. For purification, excess ova and DNA were removed by filter centrifugation. 200 µL of 1× PBS was added to an Amicon 0.5 mL 50 kDa filter (Millipore, UFC5050) followed by 300 µL of sample. The filter was centrifuged at 14,000 ×g for 5 min and the flow through discarded. Samples were washed five times with 400 µL of 1× PBS and centrifuged at 14,000 ×g for 5 min. The product-containing column was inverted into a clean collection tube and centrifuged at 1000 ×g for 2 min. Purified products were analyzed by 10% TBE PAGE and total protein quantified with Bio-Rad protein quantification reagent (Bio-Rad, 5000006). LPS contamination after conjugation was below 0.5 EU/mg as mentioned in the 'Vaccinations' section.
 
-## Bone marrow-derived DC, macrophages, and LEC cultures
+### Bone marrow-derived DC, macrophages, and LEC cultures
 
 Both left and right tibia and femur were isolated under sterile conditions. Bone marrow was extracted from femurs of 6–8-week-old C57BL/6 mice by decollating the top and bottom of the bone and releasing the marrow with 27 gauge syringe and 5 mL of Modified Essential Medium(MEM) (Cellgro). Suspension was strained through 100 μm filter, pressed with the back of a syringe and washed. Cells were spun 1500 RPM, 5 min then suspended in minimum essential medium (MEM) with 10% FBS, 20 ng/mL of Granulocyte-macrophage colony-stimulating factor (GM-CSF) from the supernatant of the B78hi-GM-CSF cell line. Every 2 days, dead cellular debris was spun, supernatant collected and combined 1:1 with new 40 ng/mL GM-CSF 20% FBS (2×) in MEM. After 7 days of culturing at 37°C, 5% CO2 cells were harvested for respective assays. Mouse LECs (Cell Biologics, C57-6092) were cultured in Endothelial Cell Media (Cell Biologics, M1168) with kit supplement. T75 Flasks were coated with gelatin for 30 min 37°C, washed with PBS, and then inoculated with mLEC. Cells were passaged with passive trypsin no more than 3–6 times and split at density of 1:2. SVEC4-10 (ATCC CRL2181), an SV40 transformed endothelial cell line, was purchased from ATCC and mycoplasma tested before use. SVECs have been characterized to be similar to LECs (Xiong et al., 2017), and CD31 and PDPN expression were validated prior to use. SVEC were cultured in RPMI with 10% FBS and passaged with passive trypsin and split at a density of 1:3. For BMDMs, whole bone marrow was isolated and red blood cells were lysed. Cells were then cultured in M-CSF (50 ng/mL) for 6 days in complete media. Cells were harvested via cell scraper and plated for treatment.
 
-## Conjugate detection assay
+### Conjugate detection assay
 
 Dendritic cells (BMDC), endothelial cells (mLEC), or SV-40 transformed endothelial cells (SVECs) or BMDM cultures were stimulated with 5 µg of either ova-psDNA or ova with or without 20 µg of anti-CD40, 20 µg Poly I:C in a 6-well format. 24 hr post treatment, cells were washed and refreshed with new media. At designated time points, cells were harvested, counted, and transferred into micro-centrifuge tubes, spun at 350 g, and both supernatant and pellets were frozen at −80°C. Cell pellets were lysed in 50 µL of Mammalian Protein Extraction Reagent (Thermo Scientific, 78503). Conjugate DNA was measured by qPCR amplification from 1 µL of lysate in a 10 µL reaction containing 5 µL of iTaq Universal SYBR Green Supermix (Bio-Rad, 1725125) and 5 pmol of each primer (Figure 1—source data 1). Quantification was measured using an external standard curve and normalized to lysate protein content. To visualize within ova-psDNA acquisition by cells, cells were fixed with 10% formalin for 10 min at room temperature in the dark, washed with PBS, and spun for 10 min at 2000 rpm. Cells were then permeabilized with 100% ice-cold methanol for 20 min at −20°C. Cells were then washed with PBS and spun as above. Cells were stained with the anti-ova antibody as above for at least 2 hr at room temperature and then washed with 1% bovine serum albumin (BSA) with sodium azide (FACS buffer) and spun as above. Cells were then incubated with an anti-rabbit secondary in PE for 1 hr at room temperature and then washed with FACS buffer. Cells were then stained with streptavidin conjugated to BV421 in PBS for 15 min at room temperature and then washed twice with FACS buffer prior to acquiring cells on a FACS CANTO II flow cytometer. Analysis was performed using FlowJo software. Immunofluorescence was performed as above except cells were grown on glass coverslips and stained on cover slips using an anti-rabbit dylight 649 and streptavidin-FITC. Coverslips were mounted with Vectashield with DAPI and imaged on a Zeiss LSM780 confocal microscope. The imaging experiments were performed in the Advanced Light Microscopy Core part of the NeuroTechnology Center at University of Colorado Anschutz Medical Campus supported in part by the Rocky Mountain Neurological Disorders Core Grant Number P30 NS048154 and by the Diabetes Research Center Grant Number P30 DK116073. Contents are the authors' sole responsibility and do not necessarily represent official NIH views.
 
-## OT1 isolation and co-culture
+### OT1 isolation and co-culture
 
-CD8 T cells were isolated from an OT1+ mouse using the mojosort mouse CD8 T cell isolation kit (Biolegend) and labeled with violet proliferation dye (BD Biosciences cat# 562158). For DC-T cell co-culture, BMDCs were treated with psOVA (5 μg), or ova+psDNA (5 μg) for 1, 3, or 7 days. BMDCs were washed and then co-cultured with labeled OT1s for 3 days at a 1:10 ratio of BMDC:OT1. Cells were then stained and run on a flow cytometer. OT1 division (percent dividing cells) was calculated as previously described (Roederer, 2011) using the equation fraction diluted =∑1iNi2i /∑0iNi2i, where i is the generation number (0 is the undivided population), and Ni is the number of events in generation i.
+CD8 T cells were isolated from an OT1+ mouse using the mojosort mouse CD8 T cell isolation kit (Biolegend) and labeled with violet proliferation dye (BD Biosciences cat# 562158). For DC-T cell co-culture, BMDCs were treated with psOVA (5 μg), or ova+psDNA (5 μg) for 1, 3, or 7 days. BMDCs were washed and then co-cultured with labeled OT1s for 3 days at a 1:10 ratio of BMDC:OT1. Cells were then stained and run on a flow cytometer. OT1 division (percent dividing cells) was calculated as previously described (Roederer, 2011) using the equation fraction diluted $=\sum_{1}^{i}\frac{N_{i}}{2^{i}}/\sum_{0}^{i}\frac{N_{i}}{2^{i}}$, where i is the generation number (0 is the undivided population), and Ni is the number of events in generation i.
 
-## Vaccinations
+### Vaccinations
 
 6–8-week-old C57BL/6 (CD45.2) mice were immunized with 1E3 or 1E4 colony-forming units (CFU) of Vaccinia Western Reserve or 5 µg of poly I:C (Invivogen) with or without 5 µg of anti-CD40 (FGK4.5, BioXcell)and 10 µg of ova-psDNA or ova in 50 μL volume by footpad injection. Endotoxin levels were quantified using the Pierce Limulus Amebocyte Lysate Chromogenic Endotoxin Quantitation kit (Thermo Scientific) to be less than 0.5 EU/mg for either ova or ova conjugated to psDNA.
 
-## Nystatin
+### Nystatin
 
 Nystatin (Sigma N4014) was resuspended in DMSO to a concentration of 10 mg/mL. Mice were injected with 50 μL of 10 mg/mL nystatin per footpad 1 hr prior to injection with ova conjugated to Alexa 488 (5 μg) in a mixture with polyI:C and anti-CD40 (2.5 μg each). LNs were harvested and digested as below (preparation of single-cell suspensions) and stained with CD45 brilliant violet 510 (Biolegend clone 30F11, 1:300), PDPN APC (Biolegend clone 8.1.1, 1:200), CD31 PercP Cy5.5 (Biolegend clone 390, 1:200), and PD-L1 pacific blue (Biolegend clone 10F.9G2, 1:200).
 
-## Tetramer and intracellular cytokine assays
+### Tetramer and intracellular cytokine assays
 
 Draining LNs were processed by glass slide maceration 7 days after injection, washed, and suspended in FACS (2% FBS in PBS) buffer containing Tetramer (SIINFEKL)-PE (1:400) (NIH tetramer core facility), CD8 APC-Cy7 (Biolegend clone 53-6.7 1:400) for 1 hr at 37C. Cells were washed and stained for 30 min in CD44 PerCP Cy5.5 (Biolegend clone IM7, 1:400), B220 BV510 (Biolegend clone RA3-6B2, 1:300). Samples were ran on the FACS Canto II flow cytometer (BD).
 
-## Preparation of single-cell suspensions
+### Preparation of single-cell suspensions
 
 2 days or 2 weeks following vaccination with 1E3 CFU of VV-WR with 10 μg of ova-psDNA per footpad, popliteal LNs were removed from 15 mice and LNs were pulled apart with 22-gauge needles. Tissue was digested with 0.25 mg of Liberase DL (Roche, Indianapolis, IN) per mL of EHAA media with DNAse (Worthington, Lakewood, NJ) at 37°. Every 15 min media was removed, cells spun down, and new digestion media added to the undigested tissue until no tissue remained, ~1 hr. Following digestion, cells were filtered through a screen and washed with 5 mM EDTA in EHAA. LN cells were then divided into thirds where one-third underwent staining with CD11c (N418), CD11b and B220, and a live/dead dye (Tonbo). Live cells were then sorted into four tubes on a FACS Aria Cell Sorter (BD): sorted CD11c-APC Cy7 (Biolegend clone N418 1:400)+ cells, sorted CD11b PE-Cy7 (Biolegend clone M1/70)+ cells, sorted B220 PE (Biolegend clone RA3-6B2)+ cells and Fixable Viability Stain 510 (BD Biosciences Cat # 546406) ungated live cells, which were recombined at a 4:4:1:1 ratio, respectively. For the remaining two-thirds of cells, cells were stained with CD45 PE followed by magnetic bead isolation using the Miltenyi bead isolation kit. CD45-negative cells that passed through the column were then washed. Both sorted and selected (CD45+ and CD45-) cells were then washed with PBS in 0.1% BSA as described in the Cell Prep Guide (10x Genomics) and counted using a hemacytometer. Final concentration of cells was approximately 1000 cells/µL and approximately 10–20 µL were assayed.
 
-## Single-cell library preparation using the 10x Genomics platform
+### Single-cell library preparation using the 10x Genomics platform
 
 Cells were assayed using the 10x Genomics single-cell 3ʹ expression kit v3 according to the manufacturer’s instructions (CG000183 Rev B) and CITE-seq protocol (cite-seq.com/protocol Cite-seq_190213) with the following changes:
 
 All libraries were sequenced on a Illumina NovaSeq 6000 with 2 × 150 base pair read lengths.
 
-## Transcriptome and oligonucleotide detection and analysis
+### Transcriptome and oligonucleotide detection and analysis
 
 Briefly, FASTQ files from the gene expression and antigen tracking libraries were processed using the feature barcode version of the cellranger count pipeline (v3.1.0). Reads were aligned to the mm10 and vaccinia virus (NC_006998) reference genomes. Analysis of gene expression and antigen tracking data was performed using the Seurat R package (v3.2). Antigen tracking and gene expression data were combined into the same Seurat object for each sample (CD45-/day 2, CD45+/day 2, CD45-/day 14, CD45+/day 14). Cells were filtered based on the number of detected genes (>250 and <5000) and the percent of mitochondrial reads (<15%). Gene expression counts were log-normalized (NormalizeData), and relative ova signal was calculated by dividing ova-psDNA counts by the median ova-psDNA counts for all T and B cells present in the sample. To allow for the values to be log-transformed for visualization, a pseudo count was added (smallest non-zero value * 0.5).
 
@@ -173,10 +406,10 @@ Gene expression data were scaled and centered (ScaleData). 2000 variable feature
 
 Identification of ova-low and -high populations was accomplished using a two-component Gaussian mixture model implemented with the R package mixtools (https://cran.r-project.org/web/packages/mixtools/index.html). All LECs were used when identifying ova-low and ova-high cells (Figure 4). For DCs (Figure 3—figure supplement 5), ova-low and -high populations were identified independently for each DC cell type. For ova-low and ova-high populations, differentially expressed genes were identified using the R package presto (wilcoxauc, https://github.com/immunogenomics/presto). Differentially expressed genes were filtered to include those with an adjusted p-value<0.05, log fold-change > 0.25, area under the receiver operator curve (AUC) > 0.5, and with at least 50% of ova-high cells expressing the gene.
 
-## Raw data and analysis software
+### Raw data and analysis software
 
 Raw and processed data for this study have been deposited at NCBI GEO under accession GSE150719. A reproducible analysis pipeline is available at https://github.com/rnabioco/antigen-tracking http://doi.org/10.5281/zenodo.4615724 (Sheridan and Hesselberth, 2021; copy archived at swh:1:rev:f7f6c0696f08aeeac6ad88c39975197a0791e30d).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was done using either a non-parametric two-tailed Mann–Whitney t-test or multiple t-tests with a two-stage step-up method of Benjamini, Krieger, and Yekutieli without assuming consistent standard deviations. A biological replicate was considered a measurement of a biologically distinct sample (such as a separate mouse), and a technical replicate was considered a repeated measurement of the same sample. Each in vivo analysis was performed with 3–6 mice per group as determined by a power calculation using the assumption (based on prior data) that there will be at least a twofold change with a standard deviation of less than 0.5. To calculate numbers, we performed a power calculation with an α of 0.5 and a 1-β of 0.80 to determine at least three mice per group are evaluated. Error bars indicate the standard error of the mean (SEM), and all analyses were blinded.

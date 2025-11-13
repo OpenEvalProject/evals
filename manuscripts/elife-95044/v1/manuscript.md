@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/04wffgt70 School of Medical Sciences, Department of Translational Medicine (Section of Pharmacology), University of Campinas Campinas Brazil
-2. https://ror.org/04wffgt70 Laboratory of Cell Signaling, Obesity and Comorbidities Research Center, University of Campinas Campinas Brazil
-3. https://ror.org/04wffgt70 Laboratory of Immunometabolism, Institute of Biology - University of Campinas, Brazil Campinas Brazil
-4. https://ror.org/041akq887 Department of Microbiology, Immunology and Parasitology, Federal University of Santa Catarina Florianópolis Brazil
-5. https://ror.org/036rp1748 Laboratory for Transplantation Immunobiology, Institute of Biomedical Sciences, University of Sao Paulo Sao Paulo Brazil
-6. https://ror.org/04wffgt70 Faculty of Nursing, University of Campinas Campinas Brazil
+1. School of Medical Sciences, Department of Translational Medicine (Section of Pharmacology), University of Campinas Campinas Brazil ([ROR:04wffgt70](https://ror.org/04wffgt70))
+2. Laboratory of Cell Signaling, Obesity and Comorbidities Research Center, University of Campinas Campinas Brazil ([ROR:04wffgt70](https://ror.org/04wffgt70))
+3. Laboratory of Immunometabolism, Institute of Biology - University of Campinas, Brazil Campinas Brazil ([ROR:04wffgt70](https://ror.org/04wffgt70))
+4. Department of Microbiology, Immunology and Parasitology, Federal University of Santa Catarina Florianópolis Brazil ([ROR:041akq887](https://ror.org/041akq887))
+5. Laboratory for Transplantation Immunobiology, Institute of Biomedical Sciences, University of Sao Paulo Sao Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
+6. Faculty of Nursing, University of Campinas Campinas Brazil ([ROR:04wffgt70](https://ror.org/04wffgt70))
 7. National Institute of Science and Technology on Neuroimmunomodulation Rio de Janeiro Brazil
 
 † Corresponding author
@@ -41,7 +41,7 @@ In this study, we first elucidated the transcriptional differences between resid
 
 ## Results
 
-## Elucidating the transcriptional signatures of hypothalamic resident microglia and recruited myeloid cells in DIO
+### Elucidating the transcriptional signatures of hypothalamic resident microglia and recruited myeloid cells in DIO
 
 Dual-reporter mice CX3CR1GFP/+CCR2RFP/+ were obtained by the crossing of CX3CR1GFP and CCR2RFP homozygous mice (Figure 1a). At the age of 8 weeks, female and male were randomly selected for either chow or HFD feeding for 28 days, and then specimens were harvested for analysis (Figure 1b). In flow cytometry, cells expressing CCR2 were detected in the hypothalamus of mice fed on HFD (Figure 1c), whereas in the white adipose tissue (WAT), virtually all cells expressing CX3CR1 were also expressing CCR2 (Figure 1c). Conversely, in both female and male mice fed on HFD, the ratio of CCR2 myeloid cells to CX3CR1 resident microglia was approximately 1:10 (Figure 1d). Histological analysis confirmed the results obtained by flow cytometry (Figure 1e); furthermore, it was shown that CD169, which is classically regarded as a marker of bone marrow-derived cells (Chávez-Galán et al., 2015), is in fact expressed both in resident microglia and CCR2 recruited myeloid cells (Figure 1f), confirming data published elsewhere (Valdearcos et al., 2019). Next, to prepare the samples for RNA-sequencing, we sorted hypothalamic microglia expressing either CX3CR1 and recruited myeloid cells expressing CCR2 (Figure 2a). The quality of sorting was confirmed by determining the positivity for CX3CR1 (Figure 2b) and CCR2 (Figure 2c), and by determining the positivity for several markers of resident microglia (Figure 2d–m) and of bone marrow-derived cells (Figure 2n–x). The elucidation of the transcriptional landscapes of CX3CR1 and CCR2 cells was performed using bioinformatic tools to compare transcript expression levels in distinct cell types and conditions. The results (Table 1) revealed that either diet or sex exerted only minor differences in the expression of transcripts in CX3CR1 cells (Figure 3a, b); nevertheless, sex exerted major differences in CCR2 cells (Figure 3a, b). The direct comparisons between CX3CR1 and CCR2 obtained from mice fed on the HFD, revealed the vast differences in the transcriptional landscapes of either female (Figure 3c) or male (Figure 3d) mice. Furthermore, the direct comparisons between female and male mice revealed a considerable degree of sexual dimorphism in the transcriptional landscapes of recruited CCR2 cells (Figure 3e). In CX3CR1 cells, the consumption of the HFD impacted on IL17, lipids, toll-like receptor signaling, tumor necrosis factor signaling and chemokines (Figure 4a); whereas in CCR2 cells, the consumption of the HFD impacted on lipids, toll-like receptor signaling, tumor necrosis factor signaling, chemokines, neurotrophins signaling, reactive oxygen species, thermogenesis, and pathways related to neurodegeneration (Figure 4a). Next, we asked what functions related to chemotaxis were predominantly regulated in CCR2 cells of mice fed on the HFD (Figure 4b, c). As cell chemotaxis emerged as an important function in both females (Figure 4b) and males (Figure 4c), we looked with greater detail into the expression of chemokines and chemokine receptors (Figure 4d). Virtually all the transcripts evaluated showed diametrically opposite expression between CX3CR1 and CCR2 (Figure 4d).
 
@@ -57,11 +57,75 @@ Dual-reporter mice CX3CR1GFP/+CCR2RFP/+ were obtained by the crossing of CX3CR1G
 
 **Figure 3.:** (a, b) Venn diagram showing the number of DGEs for chow and HFD diet comparison and sex comparison, respectively. (c) Heatmap of up- and downregulated DGEs when comparing CX3CR1 and CCR2 cells from HFD-fed female mice. (d) Heatmap of up- and downregulated DGEs when comparing CX3CR1 and CCR2 cells from HFD-fed male mice. (e) Heatmap of up- and downregulated DGEs when comparing CCR2 recruited myeloid cells from HFD-fed male and female mice. Legend: hfd_cx_f = Cx3cr1_hfd_female vs. Cx3cr1_chow_female; hfd_cx_m = Cx3cr1_hfd_male vs. Cx3cr1_chow_male; chow_cx = Cx3cr1_chow_male vs. Cx3cr1_chow_female; hfd_cx = Cx3cr1_hfd_male vs. Cx3cr1_hfd_female; hfd_cc_f = Cx3cr1_hfd_female vs. Ccr2_hfd_female; hfd_cc_m = Cx3cr1_hfd_male vs. Ccr2_hfd_male; hfd_cc = Ccr2_hfd_male vs. Ccr2_hfd_female.
 
-## The impact of ovariectomy on diet-induced hypothalamic inflammation
+![Figure 4.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig4-v1.jpg)
+
+**Figure 4.:** (a) Kioto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis shows the distribution of DGEs in distinct metabolic pathways. (b, c) Ontology analysis for DGEs related to chemotaxis from CCR2-positive cells sorted from the hypothalamus of HFD-fed female and male mice, respectively. (d) Heatmap of up- and downregulated DGEs related to chemotaxis when comparing CX3CR1-positive microglia and CCR2-positive recruited myeloid cells from HFD-fed male and female mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Experimental design of the ovariectomy and estradiol replacement protocol performed in C57BL/6J female mice; (b) body mass gain from Day 7 to 35 of the experimental protocol. (c) Total food intake during the experimental period. (d) Fasting blood glucose levels and (e) retroperitoneal white adipose tissue retroperitoneal depot weight at Day 35. Hypothalamic mRNA levels of (f) chemokines; (g) chemokine receptors; (h) neuropeptides; (i) inflammatory genes; (j) blood estradiol. Data are expressed as mean ± SEM of 4–6 mice/group. One- and two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses. *p < 0.05 and **p < 0.01, in comparison with the Sham group.
+
+**Table 1.**
+ Number of differentially expressed genes (DEGs) for each comparison.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>↑ Up</th>
+      <th>↓ Down</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Effect of the diet in brain resident microglia cells</td>
+      <td>hfd_cx_fCx3cr1_hfd_female vs.Cx3cr1_chow_female</td>
+      <td>25</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>hfd_cx_mCx3cr1_hfd_male vs.Cx3cr1_chow_male</td>
+      <td>261</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Effect of the sex in brain resident microglia cells</td>
+      <td>chow_cxCx3cr1_chow_male vs.Cx3cr1_chow_female</td>
+      <td>9</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>hfd_cxCx3cr1_hfd_male vs.Cx3cr1_hfd_female</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Brain resident microglia cells vs. recruited myeloid cells</td>
+      <td>hfd_cc_fCx3cr1_hfd_female vs.Ccr2_hfd_female</td>
+      <td>4036</td>
+      <td>3569</td>
+    </tr>
+    <tr>
+      <td>hfd_cc_mCx3cr1_hfd_male vs.Ccr2_hfd_male</td>
+      <td>3838</td>
+      <td>3350</td>
+    </tr>
+    <tr>
+      <td>Effect of the sex in recruited myeloid cells</td>
+      <td>hfd_ccCcr2_hfd_male vs.Ccr2_hfd_female</td>
+      <td>1598</td>
+      <td>1676</td>
+    </tr>
+  </tbody>
+</table>
+
+### The impact of ovariectomy on diet-induced hypothalamic inflammation
 
 Because sex exerted a major effect on the transcriptional signature of CCR2 cells, we evaluated ovariectomized mice fed on HFD, as depicted in the experimental design panel (Figure 4—figure supplement 1a). The ovariectomized mice presented increased body mass gain (Figure 4—figure supplement 1b) accompanied by increased adiposity (Figure 4—figure supplement 1e). This was accompanied by no change in food intake (Figure 4—figure supplement 1c) and blood glucose (Figure 4—figure supplement 1d). Regarding the hypothalamic expression of chemokines, there was only a reduction of Cxcl16 (Figure 4—figure supplement 1f), and no change in the expression of chemokine receptors (Figure 4—figure supplement 1g). Regarding the hypothalamic expression of neuropeptides involved in energy balance, there was an increase in Pomc and a reduction in Agrp (Figure 4—figure supplement 1h). There were no changes in the hypothalamic transcripts of inflammatory markers (Figure 4—figure supplement 1i). The blood levels of estradiol were determined (Figure 4—figure supplement 1j).
 
-## Cxcr3 is highly expressed in recruited peripheral myeloid cells
+### Cxcr3 is highly expressed in recruited peripheral myeloid cells
 
 As we were particularly interested in identifying factors involved in the recruitment of CCR2 to the hypothalamus, we evaluated cytokine receptors with high expression in CCR2 and low expression in CX3CR1. As depicted in Figure 5, Ccr3 (Figure 5a), Ccr7 (Figure 5b), Ccr8 (Figure 5c), Cxcr2 (Figure 5d), Cxcr3 (Figure 5e), Cxcr4 (Figure 5f), Cxcr5 (Figure 5g), Cxcr6 (Figure 5h), and Cxcr7 (Figure 5i) were all expressed in CCR2 cells and virtually absent from CX3CR1 cells. Cxcr3 (Figure 5e) and Cxcr6 (Figure 5h) presented the highest expressions, and therefore, we performed a search for previous studies looking at either of these chemokine receptors in the context of DIO hypothalamic inflammation. Using the terms, hypothalamus, hypothalamic, obesity, inflammation, Cxcr3, and Cxcr6, we could find no prior publications. As CXCR3 is involved in interferon-gamma (IFN-γ) induction (Cole et al., 1998), and IFN-γ has been shown to be expressed in the context of DIO hypothalamic inflammation (De Souza et al., 2005), we looked into the IFN-γ-related pathways regulated in recruited immune cells (Figure 6). First, we asked if the canonical ligands for CXCR3, CXCL9, CXCL10, and CXCL11 were expressed in either CX3CR1 or CCR2 cells. Cxcl11 was not detected in either cell type (not shown). Cxcl9 (Figure 6a) was expressed only in CX3CR1 cells, whereas Cxcl10 (Figure 6b) was expressed in both CX3CR1 and CCR2 cells. In addition, in both female and male mice, Ifng was expressed in CCR2, but not in CX3CR1 cells (Figure 6c). Furthermore, IFN-γ pathways were shown to be modulated in both female (Figure 6d) and male (Figure 6e) CCR2 cells. Thus, we elected CXCR3 as a target for further intervention.
 
@@ -73,7 +137,7 @@ As we were particularly interested in identifying factors involved in the recrui
 
 **Figure 6.:** (a–c) Cxcl9, Cxcl10, and Ifng gene expression in the transcriptome of CX3CR1- and CCR2-positive cells sorted from the hypothalamus of HFD-fed mice. (d, e) Ontology analysis for DGEs related to interferon signaling pathways from CCR2-positive cells sorted from the hypothalamus of HFD-fed female and male mice, respectively.
 
-## The immunoneutralization of hypothalamic CXCL10 leads to increased body mass gain in female mice
+### The immunoneutralization of hypothalamic CXCL10 leads to increased body mass gain in female mice
 
 As an attempt to interfere with CXCR3 actions in CCR2 cells, we targeted one of its ligands, CXCL10. As depicted in Figure 7a, mice were submitted to two intracerebroventricular (ICV) injections of an anti-CXCL10 antibody aimed at immunoneutralizing the target protein in the hypothalamus. As a result of the immunoneutralization of CXCL10, there were smaller numbers of CCR2-positive cells in the hypothalamus of both female and male mice fed on a HFD (Figure 7b). However, there were no major changes in the numbers of CXCR3-expressing cells in the hypothalamus of either female (Figure 7c) or male (Figure 7d) mice fed on HFD. This was accompanied by no changes in the transcript levels of Cxcr3 and several other chemokine-related transcripts (Figure 7c, d), except for a trend to decrease Cxcl11 and an increase of Cxcr4 in females (Figure 7c); and a decrease of Cxcl10 and a trend to increase Cx3cl1 in males (Figure 7d). Nevertheless, the immunoneutralization of hypothalamic CXCL10 (Figures 8 and 9) resulted in increased body mass gain (Figure 8a, b), a trend to reduce blood triglycerides (Figure 8f), reduced blood cholesterol (Figure 8g), reduced expression of Agrp transcript in the hypothalamus (Figure 8k), a trend to reduce blood insulin (Figure 8n), trends to reduce Il1b and Il6 transcripts in the hypothalamus (Figure 8o), and a trend to reduce respiratory quotient (Figure 8s) during the dark cycle in female mice. Conversely, in male mice (Figure 9), the inhibition of hypothalamic CXCL10 had only a minor effect, leading to a trend to reduce hypothalamic Npy (Figure 9k), a trend to reduce hypothalamic Il1b, and a trend to increase hypothalamic Il6 (Figure 9o).
 
@@ -89,13 +153,29 @@ As an attempt to interfere with CXCR3 actions in CCR2 cells, we targeted one of 
 
 **Figure 9.:** (a) Percentual of body weight gain from Day 0 to 28 of the experimental protocol. (b) Delta body weight during the experimental period. (c) Brown adipose tissue weight and (d) white adipose tissue (retroperitoneal depot) weight at Day 28. (e) Leptin, (f) triglycerides, and (g) total cholesterol plasma levels at Day 28. (h) Weekly food intake measurement during the experimental period. (i) Cumulative food intake during the experimental period. (j) 90-min food intake measurement after 16 hr of fasting. (k) Hypothalamic mRNA levels of neuropeptides involved in food intake control. (l) Intraperitoneal glucose tolerance test at Day 24. (m) 6-hr fasting blood glucose levels. (n) Insulin plasma levels at Day 28. (o) Hypothalamic mRNA levels of inflammatory genes. (p) O2 consumption; (q) CO2 production; (r) energy expenditure; (s) respiratory quotient at Day 24. Data were expressed as mean ± SEM of 8–10 mice/group (in two independent experiments). To perform quantitative reverse transcription-polymerase chain reaction (qRT-PCR) we have used 6 mice/group. To perform biochemical analysis in plasma we have used 8–10 mice/group. To perform ipGTT we have used 4 mice/group. To perform indirect calorimetry, we have used 4 mice/group. Two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses.
 
-## The inhibition of CXCR3 worsens body mass gain and the metabolic phenotype of mice fed on a HFD
+### The inhibition of CXCR3 worsens body mass gain and the metabolic phenotype of mice fed on a HFD
 
 CXCR3 was inhibited using a pharmacological antagonist, AMG487 24 (Figure 10a). We decided to perform the treatment systemically, instead of ICV, because the purpose was to mitigate the migration of the cells expressing this receptor to the hypothalamus. Indeed, the intervention resulted in the reduction of CCR2 (Figure 10b) and CXCR3 (Figure 10c, d) cells in the hypothalamus of both female and male mice fed on HFD. In addition, there was a reduction of Ccl2 and an increase of Cx3cl1 transcripts in the hypothalamus of female (Figure 10e), and a reduction of Ccl2 transcripts in the hypothalamus of male (Figure 10f) mice fed on HFD. The inhibition of CXCR3 had a major impact on metabolic phenotype; thus, in female mice fed a HFD, there was an increase in body mass gain (Figure 11a, b), a trend to increase brown adipose tissue mass (Figure 11c), a trend to increase blood leptin (Figure 11e), an increase in blood triglycerides (Figure 11f), a trend to reduce hypothalamic Pomc (Figure 11k), an increase in hypothalamic Npy (Figure 11k), a worsen glucose tolerance (Figure 11l), an increased fasting blood glucose (Figure 11m), a reduced blood insulin (Figure 11n), and reduction of Il6 and Tlr4 transcripts in the hypothalamus (Figure 11o). In males, the inhibition of CXCR3 promoted an increased body mass gain (Figure 12a, b), increased WAT mass (Figure 12d), increased blood leptin (Figure 12e), increased hypothalamic Npy and Mch (Figure 12k), and reduced hypothalamic Tnfa and Nlrp3 (Figure 12). Additionally, the inhibition of CXCR3 promoted changes in neither energy expenditure nor locomotor activity (Figure 11—figure supplement 1a, b, for females and Figure 12—figure supplement 1a, b for males). In the hypothalamus of females there were no changes in the expression of transcripts encoding proteins involved in endoplasmic reticulum homeostasis (Figure 11—figure supplement 1c) and mitochondrial turnover (Figure 11—figure supplement 1d), whereas in males there was a reduction of Ddit3 (Figure 12—figure supplement 1c) and Mfn1 (Figure 12—figure supplement 1d). Moreover, in females the inhibition of CXCR3 promoted no changes in the liver expression of lipidogenic and gluconeogenic genes (Figure 11—figure supplement 1e), and no changes in the WAT expression of lipidogenic genes (Figure 11—figure supplement 1f). In the liver of males, there was a reduction in the expression of Fasn and an increase in the expression of G6pc3 (Figure 12—figure supplement 1e). As for the females, in males, there were no changes in the WAT expression of lipidogenic genes (Figure 12—figure supplement 1f).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig10-v1.jpg)
 
 **Figure 10.:** (a) Schematic representation of the experimental protocol for CXCR3 systemic blockage. (b) Coronal brain sections from 4 weeks HFD-fed CCR2RFP/+ mice showing the CCR2-positive cells distribution in the hypothalamic parenchyma upon AMG487 treatment. 3V = third ventricle, scale bars = 50 μm. (c) Coronal brain sections from 4 weeks HFD-fed female CCR2RFP/+ mice immunostained for CXCR3 upon AMG487 treatment. (d) Coronal brain sections from 4 weeks HFD-fed male CCR2RFP/+ mice immunostained for CXCR3 upon AMG487 treatment. 3V = third ventricle, scale bars = 25 μm. (e) Hypothalamic mRNA levels of several chemokine receptors and chemokines in HFD-fed female (light gray and pink bars) and male (light gray and blue bars) CCR2RFP/+ mice upon AMG487 treatment. For qualitative confocal image analysis, we have used 3 samples per group. For RT-qPCR of the hypothalamus, we have used 7–8 samples per group. Two-tailed Mann–Whitney tests were used for statistical analyses. *p < 0.05 and **p < 0.01 in comparison with respective VEH-treated groups.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig11-v1.jpg)
+
+**Figure 11.:** (a) Percentual of body weight gain from Day 0 to 28 of the experimental protocol. (b) Delta body weight during the experimental period. (c) Brown adipose tissue weight and (d) white adipose tissue (retroperitoneal depot) weight at Day 28. (e) Leptin, (f) triglycerides, and (g) total cholesterol plasma levels at Day 28. (h) Weekly food intake measurement during experimental period. (i) Cumulative food intake during the experimental period. (j) 90-min food intake measurement after 16-hr fasting. (k) Hypothalamic mRNA levels of neuropeptides involved in food intake control. (l) Intraperitoneal glucose tolerance test at Day 24. (m) 6-hr fasting blood glucose levels. (n) Insulin plasma levels at Day 28. (o) Hypothalamic mRNA levels of inflammatory genes. (p) O2 consumption; (q) CO2 production; (r) energy expenditure; (s) respiratory quotient at Day 24. Data were expressed as mean ± SEM of 14–16 mice/group (in four independent experiments). To perform quantitative reverse transcription-polymerase chain reaction (qRT-PCR) we have used 8 mice/group. To perform biochemical analysis in plasma we have used 8–10 mice/group. To perform ipGTT we have used 5 mice/group. To perform indirect calorimetry, we have used 4–5 mice/group. Two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses. *p < 0.05, **p < 0.01, ****p < 0.0001 in comparison with VEH-treated group.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** (a) Total 24-hr energy expenditure and (b) locomotor activity at Day 24 of the experimental protocol. (c) Delta body weight during the experimental period. (c) Hypothalamic mRNA levels of ER stress genes; (d) hypothalamic mRNA levels of mitochondrial function; (e) hepatic mRNA levels of genes of lipid and glucose metabolism; (f) white adipose tissue mRNA levels of genes of lipid metabolism and thermogenesis. Data were expressed as mean ± SEM of 4–6 mice/group. To perform indirect calorimetry and locomotor activity, we have used 5–6 mice/group. To perform quantitative reverse transcription-polymerase chain reaction (qRT-PCR) we have used 4–6 mice/group. Two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses.
+
+![Figure 12.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig12-v1.jpg)
+
+**Figure 12.:** (a) Percentual of body weight gain from Day 0 to 28 of the experimental protocol. (b) Delta body weight during the experimental period. (c) Brown adipose tissue weight and (d) white adipose tissue (retroperitoneal depot) weight at Day 28. (e) Leptin, (f) triglycerides, and (g) total cholesterol plasma levels at Day 28. (h) Weekly food intake measurement during the experimental period. (i) Cumulative food intake during the experimental period. (j) 90-min food intake measurement after 16 hr of fasting. (k) Hypothalamic mRNA levels of neuropeptides involved in food intake control. (l) Intraperitoneal glucose tolerance test on Day 24. (m) 6-hr fasting blood glucose levels. (n) Insulin plasma levels at Day 28. (o) Hypothalamic mRNA levels of inflammatory genes. (p) O2 consumption; (q) CO2 production; (r) energy expenditure; (s) respiratory quotient at Day 24. Data were expressed as mean ± SEM of 14–16 mice/group (in four independent experiments). To perform quantitative reverse transcription-polymerase chain reaction (qRT-PCR) we have used 8 mice/group. To perform biochemical analysis in plasma we have used 8–10 mice/group. To perform ipGTT we have used 5 mice/group. To perform indirect calorimetry, we have used 4–5 mice/group. Two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses. *p < 0.05, **p < 0.01 in comparison with VEH-treated group.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/95044/elife-95044-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** (a) Total 24-hr energy expenditure and (b) locomotor activity at Day 24 of the experimental protocol. (c) Delta body weight during the experimental period. (c) Hypothalamic mRNA levels of ER stress genes; (d) hypothalamic mRNA levels of mitochondrial function; (e) hepatic mRNA levels of genes of lipid and glucose metabolism; (f) white adipose tissue mRNA levels of genes of lipid metabolism and thermogenesis. Data were expressed as mean ± SEM of 4–6 mice/group. To perform indirect calorimetry and locomotor activity, we have used 5–6 mice/group. To perform quantitative reverse transcription-polymerase chain reaction (qRT-PCR) we have used 4–6 mice/group. Two-way ANOVA followed by Sidak’s post hoc test and Mann–Whitney test were used for statistical analyses. *p < 0.05 and **p < 0.01, in comparison with VEH-treated group.
 
 ## Discussion
 
@@ -123,54 +203,54 @@ In conclusion, this study elucidated the transcriptional landscapes of hypothala
 
 ## Materials and methods
 
-## Animal care and diets
+### Animal care and diets
 
 All animal care and experimental procedures were conducted in accordance with the guidelines of the Brazilian College for Animal Experimentation and approved by the Institutional Animal Care and Use Committee (CEUA 5497-1/2020 and 6210-1/2023). Dual-reporter CX3CR1GFP/+CCR2RFP/+ mice were generated by mating CX3CR1GFP homozygous mice (JAX#005582) with CCR2RFP homozygous mice (JAX#017586). Heterozygous CCR2RFP/+ and CX3CR1GFP/+ mice were generated by mating homozygous CCR2RFP and CX3CR1GFP homozygous mice, respectively, with C57BL/6J. Genotypes of these mice were identified by polymerase chain reaction (PCR). C57BL/6J mice were obtained from the Multidisciplinary Center for Biological Research (CEMIB) at the State University of Campinas (UNICAMP). Mice were fed on standard chow diet (Nuvilab; 3.76 kcal/g; 12.6% energy from protein, 77.7% energy from carbohydrate, and 9.58% energy from fat) or HFD (5.28 kcal/g; 12.88% energy from protein, 27.1% energy from carbohydrate, and 60% energy from fat) according to the experimental protocols. Food and water were available ad libitum throughout the experimental periods, except for the protocols that required fasting. The room temperature was controlled (22–24°C), and a light–dark cycle was maintained on a 12-hr on–off cycle.
 
-## Flow cytometry
+### Flow cytometry
 
 For the separation of CX3CR1GFP+ and CCR2RFP+ cells from the WAT of CX3CR1GFP/+CCR2RFP/+ mice we collected the retroperitoneal fat depot of one animal fed on a HFD for 4 weeks. It was minced and digested with type VIII collagenase (0.5 mg/ml, Sigma-Aldrich) in phosphate-buffered saline (PBS) for 20 min at 37°C with shaking. After digestion, the suspension was filtered using a 100-μm cell filter. For isolation of the same cells from the hypothalamus, samples of five CX3CR1GFP/+CCR2RFP/+ mice fed on a HFD for 4 weeks were pooled together and gently pressed through a cell strainer (100 μm). The cell solution was subjected to a Percoll gradient (70/40%) for monocyte purification. Samples were acquired on a BDFacs Symphony instrument (BD Biosciences, USA) and then analyzed using FlowJo software.
 
-## Cell sorting
+### Cell sorting
 
 For cell sorting of CX3CR1GFP+ and CCR2RFP+ cells from the hypothalamus we employed CX3CR1GFP/+ heterozygous mice fed on chow diet and dual-reporter CX3CR1GFP/+CCR2RFP/+ mice fed on HFD for 4 weeks. Harvested hypothalami of 20–30 male or 20–30 female mice were pooled together for each sample and gently pressed through a cell strainer (100 μm). The cell solution was subjected to a Percoll gradient (70/40%) for monocyte purification. The sorting was conducted on a BDFacs Melody instrument (BD Biosciences, USA).
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 Cell-sorted CX3CR1GFP+ and CCR2RFP+ cell samples from hypothalamus were lysed for RNA extraction using the RNAqueous Micro kit (Invitrogen). RNA integrity was analyzed on a Bioanalyzer RNA Pico 6000 chip at the Core Facility for Scientific Research – University of São Paulo (CEFAP-USP). Low input RNA-Seq library preparation (Takara SMART-Seq v4) and sequencing by Illumina NovaSeq S2 PE150 Sequencing Lane (40M read pairs/sample avg) were performed by Maryland Genomics (Institute for Genome Sciences – IGS, University of Maryland School of Medicine – Baltimore, USA). Illumina sequencing adapters and low-quality reads were removed with Trimmomatic. Trimmed reads were aligned to the mouse reference genome (GRCm39) by STAR. Aligned reads were mapped to features using HTSeq, and differential expression analyses were performed using the DESeq2 package. Genes having less than 3 CPM were excluded before statistical analysis, and differentially expressed genes (DEGs) were selected using as cutoffs the adjusted p-value <0.05. Heatmaps were performed using pheatmap and a list of DEGs was passed to enrichR and cluster Profiler for enrichment analyses.
 
-## CXCL10 immunoneutralization
+### CXCL10 immunoneutralization
 
 For central neutralization of CXCL10, 8-week CCR2RFP/+ heterozygous male and female mice underwent a stereotaxic surgery for ICV injections of anti-CXCL10 Monoclonal Antibody (2 µl, Cat# MA5-23774, Thermo Fisher). The control groups were ICV injected with Mouse IgG2a Isotype Control (2 µl, Cat#02-6200, Thermo Fisher). Two distinct ICV injections were performed on Days 0 and 14, respectively, of the experimental protocol. For that, mice were anesthetized with ketamine (100 mg/kg) and xylazine (10 mg/kg) and submitted to stereotaxic surgery (Ultra Precise–model 963, Kopf). ICV coordinates were [antero-posterior/lateral/depth to bregma]: −0.46/−1.0/−2.3 mm. Immediately after the first surgery, at Day 0, mice began to be fed on HFD for 4 weeks. From Day 0 to 28, food intake and body weight were evaluated weekly.
 
-## CXCR3 antagonism
+### CXCR3 antagonism
 
 For systemic blockage of CXCR3, 8-week CCR2RFP/+ heterozygous male and female mice underwent a treatment with AMG487 (Tocris Bioscience, Bristol, UK), an active and selective CXC chemokine receptor 3 (CXCR3) antagonist. The in vivo formulation of AMG487 was prepared in 20% hydroxypropyl-β-cyclodextrin (Sigma, St. Louis, MO). A 50% hydroxypropyl-β-cyclodextrin (Sigma, St. Louis, MO) solution was prepared and AMG487 was added to this solution, it was incubated in a sonicating water bath for 2 hr with occasional vortexing. Next, distilled water was added to give the appropriate final concentration of AMG487 in 20% of hydroxypropyl-β-cyclodextrin. This solution at 20% served as the vehicle. Mice were treated with AMG487 or vehicle (VEH group) intraperitoneally at 5 mg/kg every 48 hr throughout 4 weeks. During this period, mice were fed on HFD, and food intake and body weight were evaluated weekly.
 
-## Ovariectomy procedure and estradiol replacement
+### Ovariectomy procedure and estradiol replacement
 
 Female C57BL/6J mice were anesthetized with ketamine (100 mg/kg) and xylazine (10 mg/kg). The ventral abdominal area was shaved and sterilized using an iodine solution. A small midline incision was made, and the ovaries were carefully located and excised bilaterally. The incision was then sutured using a suture thread. The Sham group, which underwent the same procedure except for ovary excision, was used as the control. Half of the ovariectomized mice also received estradiol replacement therapy. 17β-Estradiol pellets (0.05 mg/pellet, 60-day sustained release; Innovative Research of America, Inc, USA) were implanted subcutaneously beneath the dorsal surface of the neck. Tramadol hydrochloride (5 mg/kg, intraperitoneally) was administered immediately post-surgery, as well as 24 and 36 hr after surgery to manage pain. Mice were monitored during a 7-day recovery period. From Day 7 to 35, all groups were fed a HFD, and food intake and body weight were evaluated weekly. On the 25th day of the protocol, mice were fasted for 6 hr. Before euthanasia, we measured fasting glycemia. Afterward, we harvested the hypothalamus and the retroperitoneal WAT. The WAT was weighed for adiposity measurement, and the hypothalamus was used for qPCR analysis of chemokines, chemokine receptors, neuropeptides, and some inflammatory markers.
 
-## Glucose tolerance test
+### Glucose tolerance test
 
 On the 24th day of CXCR3 blockage and CXCL10 neutralization experimental protocols, mice were fasted for 6 hr, and blood glucose was measured via tail bleed at baseline and 15, 30, 60, 90, and 120 min after an intraperitoneal injection of glucose (2.0 g/kg).
 
-## Indirect calorimetry and locomotor activity
+### Indirect calorimetry and locomotor activity
 
 The oxygen consumption (VO2), carbon dioxide production (VCO2), energy expenditure, and respiratory quotient were measured using an indirect open-circuit calorimeter (Oxylet M3 system; PanLab/Harvard Apparatus, MA, USA). Spontaneous locomotor activity was measured using a Panlab Infrared (IR) Actimeter, which consists of a two-dimensional (X and Y axes) square frame, a frame support, and a control unit. Each frame is equipped with 16 × 16 infrared beams for optimal subject detection (PanLab/Harvard Apparatus, MA, USA). For each mouse, we calculated the mean of total movements per hour over 24 hr. Mice were allowed to adapt for 12 hr before data were recorded for 24 hr (light and dark cycles).
 
-## Immunofluorescence
+### Immunofluorescence
 
 On the day 28th of CXCR3 blockage and CXCL10 neutralization experimental protocols, male and female mice were perfused with 0.9% saline followed by 4% formaldehyde by cardiac cannulation. Brains were extracted and incubated in 4% formaldehyde overnight at 4°C for extended fixation. The brains were then incubated in 30% sucrose at 4°C for 48 hr. A series of 20-μm-thick frozen sections (four series equally) were prepared using a cryostat and stored in an anti-freezing solution. For the free-floating immunostaining, slices were washed with 0.1 M PBS (three times, 5 min each) and blocked with 0.2% Triton X-100 and 5% donkey serum in 0.1 M PBS for 2 hr at room temperature. Slices were incubated overnight at 4°C with Anti-Cxcr3 (1:200, Cat# NB100-56404, Novus Biologicals) or Anti-Sialoadhesin/CD169 (1:200, ab18619, Abcam) in a blocking solution. After washing with 0.1 M PBS (three times, 5 min each), sections were incubated with fluorophore-labeled secondary antibody (donkey anti-rabbit Alexa Fluor 405, 1:500, Cat# A48258, Invitrogen or goat anti-mouse Alexa Fluor 405, 1:500, Cat# A31553, Invitrogen) in a blocking solution for 2 hr at room temperature. After washing again with 0.1 M PBS (three times, 5 min each), brain slices were mounted onto slides with ProLong Diamond antifade mountant (Cat# P36930, Thermo Fisher). Sections were visualized with a Zeiss LSM780, confocal microscope (Carl Zeiss AG, Germany) at the National Institute of Photonics Applied to Cell Biology (INFABIC) at the University of Campinas.
 
-## Quantitative reverse transcription-polymerase chain reaction
+### Quantitative reverse transcription-polymerase chain reaction
 
 Total RNA was extracted using a TRIzol reagent (Thermo Fisher Scientific) and synthesized cDNA with a High-Capacity cDNA Reverse Transcription Kit (HighCapacity cDNA Reverse Transcription Kit, Life Technologies). Real-time PCR reactions were run using the TaqMan system (Thermo Fisher Scientific). Primers used were Cxcr3 (Mm99999054_s1); Cxcl9 (Mm00434946_m1), Cxcl10 (Mm00445235_m1); Cxcl11 (Mm00444662_m1); Ccl2 (Mm00441242_m1); Cxcr4 (Mm01996749_s1); Cxcl12 (Mm00445553_m1), Cxcr6 (Mm02620517_s1), Cxcl16 (Mm00469712_m1), Cx3cl1 (Mm00436454_m1), Pomc (Mm00435874_m1), Agrp (Mm00475829_g1); Npy (Mm00445771_m1); Cartpt (Mm04210469_m1), Pmch (Mm01242886_g1), Tnfa (Mm00443258_m1), Il1b (Mm00434228_m1), Il6 (Mm00446190_m1), Nlrp3 (Mm00840904_m1), Tlr4 (Mm00445273_m1), Ifng (Mm01168134_m1), Eif2a (Mm01289723_m1), Atf6 (Mm01295319_m1), Ddit3 (Mm01135937_g1), Immp2l (Mm00474144_m1), Mfn1 (Mm00612599_m1), Opa1 (Mm01349707_g1), Htra2 (Mm00444846_g1), Ppargc1a (Mm01208835_m1), FasN (Mm00662319_m1), Scd1 (Mm00772290_m1), Scd2 (Mm01208542_m1), Pck1 (Mm01247058_m1), G6pc3 (Mm00616234_m1), G6pc (Mm04207416_m1), Pparg (Mm00440940_m1), Prdm16 (Mm00712556_m1), Ucp1 (Mm01244861_m1). Gapdh (Mm99999915_g1) was employed as the reference gene for all tissues, except for WAT, where Actb (Mm02619580_g1) was employed as the reference gene. Gene expression was obtained using QuantStudio 6 (Thermo Fisher Scientific).
 
-## Hormonal and biochemical determinations
+### Hormonal and biochemical determinations
 
 Serum insulin, leptin, and estradiol were measured by enzyme-linked immunosorbent assay (ELISA) kits (#EZRMI-13K and #EZML-82K; Millipore; E-EL-0150; Elabscience). Serum triglyceride levels and total cholesterol were measured using a commercial colorimetric assay kit (LaborLab, Guarulhos – SP, Brazil) following the manufacturer’s instructions.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as means ± standard error of the mean. The statistical analyses were carried out using a non-parametric Mann–Whitney test and one- or two-way analysis of variance when appropriate. Post hoc comparisons were performed using Sidak’s test. Statistical significances were analyzed using Prism 8.0 software (GraphPad Software, La Jolla, CA). A p-value ≤0.05 was considered statistically significant. In the experiments aimed at measuring energy expenditure, data were always corrected for body mass.

@@ -40,34 +40,34 @@
 
 ### Affiliations
 
-1. https://ror.org/02tyrky19 School of Psychology and Global Brain Health Institute, Trinity College Dublin Dublin Ireland
-2. https://ror.org/001w7jn25 Department of Psychiatry and Psychotherapy CCM, Charité – Universitätsmedizin Berlin, corporate member of Freie Universität Berlin, Humboldt-Universität zu Berlin, and Berlin Institute of Health Berlin Germany
-3. https://ror.org/042aqky30 Collaborative Research Centre (SFB 940) 'Volition and Cognitive Control', Technische Universität Dresden Dresden Germany
-4. https://ror.org/00hswnk62 School of Psychology, Queens University Belfast Belfast United Kingdom
-5. https://ror.org/02jz4aj89 Faculty of Psychology and Neuroscience, Maastricht University Maastricht Netherlands
-6. https://ror.org/001w7jn25 Charité – Universitätsmedizin Berlin, Einstein Center for Neurosciences Berlin Berlin Germany
-7. https://ror.org/05ewdps05 Bernstein Center for Computational Neuroscience Berlin Germany
-8. https://ror.org/03r0ha626 Department of Psychology, University of Utah Salt Lake City United States
-9. https://ror.org/01an3r305 Department of Psychology, Learning Research & Development Center, University of Pittsburgh Pittsburgh United States
-10. https://ror.org/01hynnt93 Department of Child and Adolescent Psychiatry and Psychotherapy, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University Mannheim Germany
-11. https://ror.org/02tyrky19 Discipline of Psychiatry, School of Medicine and Trinity College Institute of Neuroscience, Trinity College Dublin Dublin Ireland
-12. https://ror.org/0220mzb33 Centre for Population Neuroscience and Precision Medicine (PONS), Institute of Psychiatry, Psychology, & Neuroscience, SGDP Centre, King’s College London London United Kingdom
-13. https://ror.org/01hynnt93 Institute of Cognitive and Clinical Neuroscience, Central Institute of Mental Health, Mannheim, Heidelberg University Mannheim Germany
-14. https://ror.org/031bsb921 Department of Psychology, School of Social Sciences, University of Mannheim Mannheim Germany
-15. https://ror.org/03xjwb503 NeuroSpin, CEA, Université Paris-Saclay Gif-sur-Yvette France
-16. https://ror.org/0155zta11 Departments of Psychiatry and Psychology, University of Vermont Burlington United States
-17. https://ror.org/01ee9ar58 Sir Peter Mansfield Imaging Centre School of Physics and Astronomy, University of Nottingham, University Park Nottingham United Kingdom
-18. https://ror.org/05r3f7h03 Physikalisch-Technische Bundesanstalt (PTB) Braunschweig and Berlin Germany
-19. https://ror.org/00hx6zz33 Institut National de la Santé et de la Recherche Médicale, INSERM U 1299 'Trajectoires développementales & psychiatrie', University Paris-Saclay, CNRS; Ecole Normale Supérieure Paris-Saclay, Centre Borelli Gif-sur-Yvette France
-20. https://ror.org/02mh9a093 AP-HP Sorbonne University, Department of Child and Adolescent Psychiatry, Pitié-Salpêtrière Hospital Paris France
+1. School of Psychology and Global Brain Health Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+2. Department of Psychiatry and Psychotherapy CCM, Charité – Universitätsmedizin Berlin, corporate member of Freie Universität Berlin, Humboldt-Universität zu Berlin, and Berlin Institute of Health Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+3. Collaborative Research Centre (SFB 940) 'Volition and Cognitive Control', Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+4. School of Psychology, Queens University Belfast Belfast United Kingdom ([ROR:00hswnk62](https://ror.org/00hswnk62))
+5. Faculty of Psychology and Neuroscience, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+6. Charité – Universitätsmedizin Berlin, Einstein Center for Neurosciences Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+7. Bernstein Center for Computational Neuroscience Berlin Germany ([ROR:05ewdps05](https://ror.org/05ewdps05))
+8. Department of Psychology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+9. Department of Psychology, Learning Research & Development Center, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+10. Department of Child and Adolescent Psychiatry and Psychotherapy, Central Institute of Mental Health, Medical Faculty Mannheim, Heidelberg University Mannheim Germany ([ROR:01hynnt93](https://ror.org/01hynnt93))
+11. Discipline of Psychiatry, School of Medicine and Trinity College Institute of Neuroscience, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+12. Centre for Population Neuroscience and Precision Medicine (PONS), Institute of Psychiatry, Psychology, & Neuroscience, SGDP Centre, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+13. Institute of Cognitive and Clinical Neuroscience, Central Institute of Mental Health, Mannheim, Heidelberg University Mannheim Germany ([ROR:01hynnt93](https://ror.org/01hynnt93))
+14. Department of Psychology, School of Social Sciences, University of Mannheim Mannheim Germany ([ROR:031bsb921](https://ror.org/031bsb921))
+15. NeuroSpin, CEA, Université Paris-Saclay Gif-sur-Yvette France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+16. Departments of Psychiatry and Psychology, University of Vermont Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
+17. Sir Peter Mansfield Imaging Centre School of Physics and Astronomy, University of Nottingham, University Park Nottingham United Kingdom ([ROR:01ee9ar58](https://ror.org/01ee9ar58))
+18. Physikalisch-Technische Bundesanstalt (PTB) Braunschweig and Berlin Germany ([ROR:05r3f7h03](https://ror.org/05r3f7h03))
+19. Institut National de la Santé et de la Recherche Médicale, INSERM U 1299 'Trajectoires développementales & psychiatrie', University Paris-Saclay, CNRS; Ecole Normale Supérieure Paris-Saclay, Centre Borelli Gif-sur-Yvette France ([ROR:00hx6zz33](https://ror.org/00hx6zz33))
+20. AP-HP Sorbonne University, Department of Child and Adolescent Psychiatry, Pitié-Salpêtrière Hospital Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
 21. Psychiatry Department, EPS Barthélémy Durand Etampes France
-22. https://ror.org/04v76ef78 Institute of Medical Psychology and Medical Sociology, University Medical Center Schleswig Holstein, Kiel University Kiel Germany
-23. https://ror.org/0161xgx34 Departments of Psychiatry and Neuroscience, Faculty of Medicine and Centre Hosptalier Universitaire Sainte-Justine, University of Montreal Montreal Canada
-24. https://ror.org/03dbr7087 Departments of Psychiatry and Psychology, University of Toronto Toronto Canada
-25. https://ror.org/021ft0n22 Department of Child and Adolescent Psychiatry and Psychotherapy, University Medical Centre Göttingen Göttingen Germany
-26. https://ror.org/042aqky30 Department of Psychiatry and Neuroimaging Center, Technische Universität Dresden Dresden Germany
-27. https://ror.org/001w7jn25 Centre for Population Neuroscience and Stratified Medicine (PONS), Department of Psychiatry and Neuroscience, Charité Universitätsmedizin Berlin Berlin Germany
-28. https://ror.org/013q1eq08 Centre for Population Neuroscience and Precision Medicine (PONS), Institute for Science and Technology of Brain-inspired Intelligence (ISTBI), Fudan University Shanghai China
+22. Institute of Medical Psychology and Medical Sociology, University Medical Center Schleswig Holstein, Kiel University Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))
+23. Departments of Psychiatry and Neuroscience, Faculty of Medicine and Centre Hosptalier Universitaire Sainte-Justine, University of Montreal Montreal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))
+24. Departments of Psychiatry and Psychology, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+25. Department of Child and Adolescent Psychiatry and Psychotherapy, University Medical Centre Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+26. Department of Psychiatry and Neuroimaging Center, Technische Universität Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))
+27. Centre for Population Neuroscience and Stratified Medicine (PONS), Department of Psychiatry and Neuroscience, Charité Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+28. Centre for Population Neuroscience and Precision Medicine (PONS), Institute for Science and Technology of Brain-inspired Intelligence (ISTBI), Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
 
 † Corresponding author
 
@@ -91,43 +91,178 @@ Previous studies found that FC patterns predicted individual differences in sust
 
 ## Results
 
-## Behavioral changes over time
+### Behavioral changes over time
 
 Reaction time (RT) variability is a straightforward measure of sustained attention, with increasing variability thought to reflect poor sustained attention. RT variability can be defined as the intra-individual coefficient of variation (ICV), calculated as the standard deviation of Go RT divided by the mean Go RT from Go trials in the stop signal task. Lower ICV indicates better sustained attention. Participants’ demographic information for all analyses is shown in Table 1 (see also Supplementary file 1a and b). A linear mixed model analysis showed significant fixed effects of age (i.e. timepoint) on ICV (F1895.3 = 51.14, p<0.001) (Figure 1A). Post hoc analysis showed that ICV decreased with age: ICV at age 14 was significantly higher than ICV at ages 19 (t=6.535, p<0.001) and 23 (t=10.109, p<0.001). ICV at age 19 was also significantly higher than that at age 23 (t=4.768, p<0.001). The full results of the linear mixed model analysis are shown in Supplementary file 1c and d. In addition, we found that individual differences in ICV were significantly correlated between the three timepoints (Figure 1B and Supplementary file 1e, all p<2.8e–7).
+
+**Table 1.**
+ Demographic information of adolescents in the linear mixed model across three timepoints.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Age 14</th>
+      <th>Age 19</th>
+      <th>Age 23</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N (three timepoints)</td>
+      <td colspan="3">2148</td>
+    </tr>
+    <tr>
+      <td>Sex (M/F)</td>
+      <td colspan="3">1055/1093</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>14.4±0.4</td>
+      <td>19±0.7</td>
+      <td>22.6±0.7</td>
+    </tr>
+    <tr>
+      <td>Mean FD (mm)</td>
+      <td>0.28±0.32</td>
+      <td>0.18±0.17</td>
+      <td>0.18±0.12</td>
+    </tr>
+    <tr>
+      <td>GO RT (ms)</td>
+      <td>466.6±80</td>
+      <td>400.7±71.8</td>
+      <td>403.9±73.8</td>
+    </tr>
+    <tr>
+      <td>ICV</td>
+      <td>0.234±0.038</td>
+      <td>0.224±0.051</td>
+      <td>0.217±0.052</td>
+    </tr>
+    <tr>
+      <td>Stop RT (ms)</td>
+      <td>461.5±114.8</td>
+      <td>360±82.4</td>
+      <td>363.6±78.2</td>
+    </tr>
+    <tr>
+      <td>SSD (ms)</td>
+      <td>319.3±148.1</td>
+      <td>188.1±132.4</td>
+      <td>190±158.4</td>
+    </tr>
+    <tr>
+      <td>SSRT (ms)</td>
+      <td>217.8±37.2</td>
+      <td>213.3±43.3</td>
+      <td>216.2±42.6</td>
+    </tr>
+    <tr>
+      <td>pOmission (%)</td>
+      <td>4.4±10.5</td>
+      <td>2.6±8.6</td>
+      <td>3.7±11.1</td>
+    </tr>
+    <tr>
+      <td>pChoiceError (%)</td>
+      <td>4.7±6.6</td>
+      <td>4.8±4.7</td>
+      <td>5.2±7.6</td>
+    </tr>
+    <tr>
+      <td>pCommission (%)</td>
+      <td>47.9±6.3</td>
+      <td>47.5±6</td>
+      <td>47.2±6.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: These data pertain to the participants included in the behavioural analyses. N, number of subjects; FD, framewise displacement of MR images; ICV, intra-individual coefficient of variation (assay for sustained attention); SSRT, stop signal reaction time; GO RT, reaction time in Go trials; Stop RT, reaction time in stop fail trials; SSD, stop signal delay; pOmisssion, probability of go omissions (no response); pChoiceError, probability of choice errors on Go trials; pCommission, probability of commission on Stop trials._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig1-v1.jpg)
 
 **Figure 1.:** (A) ICV changes over time. (B) Correlation of ICV between timepoints within participants. †, p<0.001.
 
-## Cross-sectional brain connectivity
+### Cross-sectional brain connectivity
 
 This study employed CPM, a data-driven neuroscience approach, to identify three predictive networks – positive, negative, and combined – to predict ICV from brain connectivity. CPM typically uses the strength of the predictive networks to predict individual differences in traits and behaviors. The predictive networks were obtained based on connectivity analyses of the whole brain. Specifically, we assessed whether connections between brain areas (i.e. edges) in a task-related FC matrix derived from generalized psychophysiological interaction (gPPI) analysis were positively or negatively correlated with ICV using a significance threshold of p<0.01. These positively or negatively correlated connections were regarded as positive or negative networks, respectively. The network strength of positive networks (or negative networks) was determined for each individual by summing the connection strength of each positively (or negatively) correlated edge. The combined network was determined by subtracting the strength of the negative network from the positive network. We then built a linear model between network strength and ICV in the training set and applied these predictive networks to yield network strength and a linear model in the test set to calculate predicted ICV using k-fold cross-validation (CV).
 
 Positive, negative, and combined networks derived from Go trials significantly predicted ICV: at age 14 (r=0.25, r=0.25, and r=0.28, respectively, all p<0.001) (Figure 2A), at age 19 (r=0.27, r=0.25, r=0.28, respectively, all p<0.001) (Figure 2B), and at age 23 (r=0.38, r=0.33, and r=0.37, respectively, all p<0.001) (Figure 2C). The connectome patterns of predictive networks are shown in Figure 2D–I. Figure 2—figure supplement 1 summarizes the connectivity within and between functional networks and depicts their respective contribution to the predictive network. The above results were validated using 10-fold CV; similar results were obtained when using 5-fold CV and leave-site-out CV (Supplementary file 1f). The predictive networks had similar connectome patterns when different exclusion criteria for head motion were used (mean framewise displacement, mean FD <0.2–0.4 mm) (Figure 3—figure supplements 2–4A). In addition, we found that network strength of positive, negative, and combined networks derived from Go trials was significantly correlated between the three timepoints (Supplementary file 1g , all p<0.003).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig2-v1.jpg)
+
+**Figure 2.:** Correlation between observed and predicted ICV in positive, negative, and combined networks at (A) age 14, (B) age 19, and (C) age 23. Predictive networks for ICV are at (D) age 14, (E) age 19, and (F) age 23. Connectome of positive and negative networks of ICV at (G) age 14, (H) age 19, and (I) age 23. The edges depicted above are those selected in at least 95% of cross-validation folds. Red, blue, and green spheres/lines/scatters represent positive, negative, and combined networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I; VII, visual II; VAs, visual association; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere. ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The heatmaps show predictive networks with non-zero values at (A) age 14, (B) age 19, (C) age 23. Each heatmap cell shows the number of edges between or within functional networks. Radar plots show the proportion of the functional networks involved in predictive networks. The edges depicted above are those selected in at least 95% of cross-validation folds. Red, blue, and green represent positive, negative, and combined networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I network; VII, visual II network; VAs, visual association network; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere.
+
 Positive, negative, and combined networks derived from Successful stop trials significantly predicted ICV: at age 14 (r=0.22, p<0.001; r=0.12, p=0.017; and r=0.20, p<0.001, respectively) (Figure 3A), at age 19 (r=0.19, p<0.001; r=0.15, p=0.001; and r=0.18, p<0.001, respectively) (Figure 3B), and at age 23 (r=0.24, r=0.21, and r=0.23, respectively, all p<0.001) (Figure 3C). The connectome patterns of predictive networks are shown in Figure 3D–I. Figure 3—figure supplement 1 summarizes the connectivity within and between functional networks and the proportion of brain networks involved in the predictive network. We obtained similar results using a 5-fold CV and leave-site-out CV (Supplementary file 1e). The predictive networks had similar connectome patterns when different exclusion criteria for head motion were used (mean FD <0.2–0.4 mm) (Figure 3—figure supplements 2–4B). In addition, we found that network strength of positive, negative, and combined networks derived from Successful stop trials was significantly correlated between the three timepoints (Supplementary file 1f, all p<0.001).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig3-v1.jpg)
+
+**Figure 3.:** Correlation between observed and predicted ICV in positive, negative, and combined networks at (A) age 14, (B) age 19, and (C) age 23. Predictive networks for ICV are at (D) age 14, (E) age 19, and (F) age 23. Connectome of positive and negative networks of ICV at (G) age 14, (H) age 19, and (I) age 23. The edges depicted above are those selected in at least 95% of cross-validation folds. Red, blue, and green spheres/lines/scatters represent positive, negative, and combined networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I; VII, visual II; VAs, visual association; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere. *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The heatmaps show predictive networks with non-zero values at (A) age 14, (B) age 19, and (C) age 23. Each heatmap cell shows the number of edges between or within functional networks. Radar plots show the proportion of the functional networks involved in predictive networks. The edges depicted above are those selected in at least 95% of cross-validation folds. Red, blue, and green represent positive, negative, and combined networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I network; VII, visual II network; VAs, visual association network; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Red and blue lines represent positive and negative networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I; VII, visual II; VAs, visual association; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Red and blue lines represent positive and negative networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I; VII, visual II; VAs, visual association; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Red and blue lines represent positive and negative networks respectively. MF, medial frontal; FP, frontoparietal; DMN, default mode; MOT, motor; VI, visual I; VII, visual II; VAs, visual association; SAL, salience; SC, subcortical; CBL, cerebellar. R/L, right/left hemisphere.
 
 To examine the specificity of sustained attention networks identified from CPM analysis, the correlations between the network strength of positive and negative networks and performances from a neuropsychology battery (Cambridge Neuropsychological Test Automated Battery [CANTAB]) (Fray et al., 1996) were calculated at each timepoint separately. All positive and negative networks derived from Go and Successful stop trials were significantly correlated with a behavioral assay of sustained attention – the RVP task – at ages 14 and 19 (all p<0.028). Age 23 had no RVP task data in the IMAGEN study. There were sporadic significant correlations between constructs such as delay aversion/impulsivity and negative network strength, for example, but the most robust correlations were with the RVP. Detailed information is shown in Appendix 1 and Supplementary file 1l.
 
-## ICV prediction across time
+### ICV prediction across time
 
 Positive, negative, and combined networks derived from Go trials defined at age 14 predicted ICV at ages 19 (r=0.16, r=0.14, and r=0.16, all p<0.001) (Figure 4A, top row) and 23 (r=0.20, r=0.12, and r=0.17, all p<0.001) (Figure 4A, middle row). Likewise, positive, negative, and combined networks derived from Go trials defined at age 19 predicted ICV at age 23 (r=0.30, r=0.26, and r=0.31, respectively, all p<0.001) (Figure 4A, bottom row).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig4-v1.jpg)
+
+**Figure 4.:** Predictive performances of ICV (A) derived from Go trials and (B) derived from Successful stop trials. The top, middle, and bottom rows of (A) and (B) panels show the predictive performance: using models defined at age 14 to predict age 19 (i.e. 14 years → 19 years), using models defined at age 14 to predict age 23 (i.e. 14 years → 23 years), and using models defined at age 19 to predict age 23 (i.e. 19 years → 23 years) respectively. Generalization of predictive networks predicting ICV defined at age 23 in STRATIFY (i.e. 23 years → STRATIFY) derived from (C) Go trials and (D) Successful stop trials. The red, blue, and green scatter represent positive, negative, and combined networks. †, p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Predictive performance in distinct patient groups in STRATIFY derived from Go and Successful stop trials. (B) The correlation between network strength and intra-individual coefficient of variation (ICV) across patient cohorts in STRATIFY derived from Go and Successful stop trials. AUD, alcohol use disorder; MDD, major depression disorder; BN, bulimia nervosa; AN, anorexia nervosa; HC, healthy controls. *, p<0.05; **, p<0.01; ***, p<0.001.
+
 Positive, negative, and combined networks derived from Successful stop trials defined at age 14 predicted ICV at age 19 (r=0.11, r=0.12, and r=0.13, all p<0.001) (Figure 4B, top row) and 23 (r=0.14, r=0.15, and r=0.15, all p<0.001) (Figure 4B, middle row). Positive, negative, and combined networks derived from Successful stop trials defined at age 19 predicted ICV at age 23 (r=0.17, r=0.16, and r=0.17, respectively, all p<0.001) (Figure 4B, bottom row).
 
-## Generalization of ICV brain networks
+### Generalization of ICV brain networks
 
 We tested if the predictive networks defined at age 23 in IMAGEN would generalize to an external dataset, namely STRATIFY (N = ~300), comprising individuals also aged 23. When applied to the whole STRATIFY sample, positive, negative, and combined networks derived from Go trials at age 23 in IMAGEN predicted ICV in STRATIFY (r=0.34, r=0.34, and r=0.35, respectively, all p<0.001) (Figure 4C), as did networks derived from Successful stop trials (r=0.26, r=0.22, and r=0.26, respectively, all p<0.001) (Figure 4D).
 
-## Factor analysis of substance use
+### Factor analysis of substance use
 
 Exploratory factor analysis on data from the Timeline Followback (TLFB) (Sobell et al., 1996), an instrument for measuring the consumption of alcohol, drugs, and smoking for participants, yielded two common factors at age 14 and three common factors at ages 19 and 23. According to the rotated factor loading analysis, at age 14, two common factors were identified, which we labeled as (i) alcohol and (ii) cigarette and cannabis use (Cig+CB). At ages 19 and 23, three common factors were identified, which we labeled as (i) alcohol, (ii) Cig+CB, and (iii) drug (including cocaine, ecstasy, and ketamine) use. Additional details about this data reduction step are shown in Figure 5—figure supplement 1 and Supplementary file 1k.
 
-## Correlation between behavior and brain to cannabis and cigarette use
+### Correlation between behavior and brain to cannabis and cigarette use
 
 We calculated the Spearman correlation between ICV/sustained brain activity and TLFB factor score per timepoint and across timepoints. Brain activity was measured by the strength of positive and negative networks predicting sustained attention. The p values were corrected by false discovery rate (FDR) correction (q<0.05). Figure 5A–C summarizes the results showing the correlation between ICV/brain activity and Cig+CB per timepoint and across timepoints. Figure 5A shows correlations between ICV and Cig+CB (Supplementary file 1n-o). ICV was correlated with Cig+CB at ages 19 (Rho = 0.13, p<0.001) and 23 (Rho = 0.17, p<0.001). ICV at ages 14 (Rho = 0.13, p=0.007) and 19 (Rho = 0.13, p=0.0003) were correlated with Cig+CB at age 23. Cig+CB at age 19 was correlated with ICV at age 23 (Rho = 0.13, p=9.38E-05). Figure 5B shows correlations between brain activity derived from Go trials and Cig+CB (Supplementary file 1r-s). Brain activities of positive and negative networks derived from Go trials were correlated with Cig+CB at age 23 (positive network: Rhop = 0.12, p<0.001; negative network: Rhon = –0.11, p<0.001). Brain activity of the negative network derived from Go trials at age 14 was correlated with Cig+CB at age 23 (Rhon = –0.16, p=0.001). Cig+CB at age 19 was correlated with brain activity of the positive network derived from Go trials at age 23 (Rhop = 0.10, p=0.002). Figure 5C shows the correlations between brain activity derived from Successful stop and Cig+CB (Supplementary file 1r-s). Brain activities of positive and negative networks derived from Successful stop were correlated with Cig+CB at ages 19 (positive network: Rhop = 0.10, p=0.001; negative network: Rhon = –0.08, p=0.013) and 23 (positive network: Rhop = 0.13, p<0.001; negative network: Rhon = –0.11, p=0.001). No correlation between alcohol use and ICV/brain activity was found after FDR correction. Detailed results on the correlation between ICV/brain activity and substance use can be found in the Supplementary file 1n-u.
 
-## Bivariate latent change score model
+![Figure 5.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig5-v1.jpg)
+
+**Figure 5.:** (A) Correlations between the intra-individual coefficient of variation (ICV) and cigarette and cannabis use (Cig+CB) across timepoints. Correlations between sustained attention network strength and Cig+CB across timepoints (B) derived from Go trials and (C) derived from Successful stop trials. Rhop: r value between network strength of the positive network. Rhon: r value between network strength of the negative network.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Total variance explained for exploratory factor analysis of TLFB items. (B) Rotated component matrix for exploratory factor analysis. Extraction method: Principal component analysis. Rotation method: Varimax with Kaiser normalization.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Correlations between the intra-individual coefficient of variation (ICV) and cigarette and cannabis use (Cig+CB) across timepoints. Correlations between sustained attention network strength and Cig+CB across timepoints (B) derived from Go trials and (C) derived from Successful stop trials. Rhop: r value between network strength of the positive network. Rhon: r value between network strength of the negative network.
+
+### Bivariate latent change score model
 
 We used a bivariate latent change score model to explore the relationship between substance use (specifically Cig+CB and alcohol use) and ICV/brain activity. This approach tests for bidirectional associations, examining how substance use at age 14 predicts changes in ICV/brain activity from ages 14 to 23 and vice versa (Figure 6). Below, we present the findings regarding the lagged effects of substance use on ICV/brain activity and the lagged effects of ICV/brain activity on substance use (Table 2). The p values were corrected by FDR correction (q<0.05).
 
@@ -135,15 +270,86 @@ We used a bivariate latent change score model to explore the relationship betwee
 
 **Figure 6.:** SUB, substance use (alcohol, cigarette, and cannabis use); Brain, brain network strength of positive/negative network of sustained attention derived from Go trials/Successful stop trials. ICV, intra-individual coefficient of variation. T1, timepoint 1 (age 14); T2, timepoint 2 (age 19); T3, timepoint 3 (age 23). γ1, lagged effects of substance use on ICV or brain activity. γ2, lagged effects of ICV or brain activity on substance use. The square/circle represents the observation/true score in the model.
 
-## Lagged effects of Cig+CB on changes in ICV and brain activity
+**Table 2.**
+ Bivariate latent change score model showing the bidirectional association between substance use and ICV/brain networks (false discovery rate corrected).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="2">Cig+CB</th>
+      <th colspan="2">Alcohol use</th>
+    </tr>
+    <tr>
+      <th>Lagged effects of Cig+CB (γ1)</th>
+      <th>Lagged effects of ICV/brain networks (γ2)</th>
+      <th>Lagged effects of alcohol use (γ1)</th>
+      <th>Lagged effects of ICV/brain networks (γ2)</th>
+    </tr>
+    <tr>
+      <th>Std. β (SE)</th>
+      <th>Std. β (SE)</th>
+      <th>Std. β (SE)</th>
+      <th>Std. β (SE)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ICV</td>
+      <td>0.017 (0.039)</td>
+      <td>0.117 (0.031)***</td>
+      <td>0.005 (0.029)</td>
+      <td>0.057 (0.030)</td>
+    </tr>
+    <tr>
+      <td>SA GT PosNet</td>
+      <td>–0.026 (0.030)</td>
+      <td>0.087 (0.032)**</td>
+      <td>0.025 (0.030)</td>
+      <td>0.022 (0.036)</td>
+    </tr>
+    <tr>
+      <td>SA GT NegNet</td>
+      <td>0.012 (0.026)</td>
+      <td>–0.094 (0.035)**</td>
+      <td>–0.012 (0.030)</td>
+      <td>–0.059 (0.034)</td>
+    </tr>
+    <tr>
+      <td>SA SS PosNet</td>
+      <td>0.005 (0.025)</td>
+      <td>0.070 (0.036)</td>
+      <td>0.101 (0.040)</td>
+      <td>0.046 (0.039)</td>
+    </tr>
+    <tr>
+      <td>SA SS NegNet</td>
+      <td>0.038 (0.028)</td>
+      <td>–0.061 (0.031)</td>
+      <td>–0.003 (0.035)</td>
+      <td>–0.069 (0.031)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Lagged effects of Cig+CB on changes in ICV and brain activity
 
 We examined if Cig+CB use at age 14 predicted the changes in ICV or brain activity (i.e. predictive network strength) associated with sustained attention across ages 14–23. No significance was observed in the lagged effects of Cig+CB on changes in ICV and brain activity (all p>0.172).
 
-## Lagged effects of ICV and brain activity on changes in Cig+CB
+#### Lagged effects of ICV and brain activity on changes in Cig+CB
 
 We examined if ICV or brain activity associated with sustained attention at age 14 predicted changes in Cig+CB use across ages 14–23. Behaviors and brain activity associated with poor sustained attention predicted a greater increase in subsequent cigarette and cannabis use. Specifically, higher ICV at age 14 predicted a greater increase in Cig+CB from ages 14 to 23 (Std. β=0.12, p<0.001). Higher sustained attention network strength for positive network derived from Go trials at age 14 predicted a greater increase in Cig+CB from ages 14 to 23 (Std. β=0.09, p=0.006). Lower sustained attention network strength for the negative network, also derived from Go trials at age 14, predicted a greater increase in Cig+CB from ages 14 to 23 (Std. β=–0.09, p=0.006). No other lagged effects of brain activity on changes in Cig+CB remained significant after FDR correction (all p>0.047). Figure 7 illustrates the changes in raw scores of cigarette and cannabis use from the TLFB for individuals at age 14 with higher sustained attention (i.e. lower ICV, lower strength of positive network, or higher strength of negative network) and lower sustained attention (i.e. higher ICV, higher strength of positive network, or lower strength of negative network).
 
-## Association between alcohol use and ICV/brain activity
+![Figure 7.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig7-v1.jpg)
+
+**Figure 7.:** Participants were categorized into five equal groups based on the intra-individual coefficient of variation (ICV), strength of positive network, and strength of negative network at age 14. (A) Top ICV (Low SA) and bottom ICV (High SA) groups. (B) The top strength of the positive network (Low SA) and bottom strength of the positive network (High SA) groups derived from Go trials. (C) The top strength of the negative network (High SA) and bottom strength of the negative network (Low SA) groups derived from Go trials. Note that the higher strength of the negative network reflects lower ICV and higher sustained attention.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97150/elife-97150-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Participants were categorized into five equal groups based on the performance of strategy working memory task at age 14.
+
+#### Association between alcohol use and ICV/brain activity
 
 We examined if alcohol use at age 14 predicted changes in ICV or brain activity associated with sustained attention across ages 14–23, or vice versa. No significant results were found for the lagged effects of alcohol use on changes in ICV and brain activity, nor the lagged effects of ICV and brain activity on changes in alcohol use. The p values were insignificant after FDR correction (all p>0.011).
 
@@ -151,17 +357,17 @@ We examined if alcohol use at age 14 predicted changes in ICV or brain activity 
 
 It is well known that increased substance use, including cigarettes and cannabis, is associated with poorer sustained attention in late adolescence and early adulthood (Chamberlain et al., 2012; Dougherty et al., 2013). However, previous studies, which were predominantly cross-sectional or under-powered, left a critical question unanswered. That is, was the impairment in sustained attention a predictor of substance use or a marker of the inclination to engage in such behavior? Using a substantial sample size, our results indicate that behavior and brain connectivity associated with poorer sustained attention at age 14 predicted a larger increase in cannabis and cigarette smoking from ages 14 to 23. Furthermore, our findings highlight the robustness of the brain network associated with sustained attention over time, making the latter a potentially useful biomarker for vulnerability to substance use.
 
-## Substance use and the sustained attention network
+### Substance use and the sustained attention network
 
 Our study applied a latent change score model on a large longitudinal dataset, testing the precedence between substance use and sustained attention. In contrast to prior research suggesting that substance use impaired sustained attention (Broyd et al., 2016; Figueiredo et al., 2020), our results indicate that lower sustained attention also predates substance use. A link between substance use and sustained attention is plausible, given the underlying neurobiology of this sustained attention. Substantial evidence from neuropharmacological studies in rats and humans has shown the modulatory role of neurotransmitters in sustained attention (Bloomfield et al., 2016; Granon et al., 2000; Marshall et al., 2019). Elevated dopamine and noradrenaline levels in the prefrontal cortex lead to improved sustained attention in a dose-dependent manner (Marshall et al., 2019). In humans, methylphenidate, a psychostimulant commonly used to treat ADHD, increases both noradrenaline and dopamine signaling and improves sustained attention (Dockree et al., 2017). Thus, poorer sustained attention may reflect a lower basal level of dopamine and noradrenaline. More importantly, studies in primates (Morgan et al., 2002; Nader et al., 2006), rodents (Dalley et al., 2007; Trifilieff et al., 2017), and humans (Casey et al., 2014; Trifilieff and Martinez, 2014; Volkow et al., 2006) have indicated that low basal dopamine levels are markers of vulnerability for increased drug administration. For example, Casey et al., 2014, demonstrated that blunted dopamine release may precede the development of addiction in humans. Nader et al., 2006, found a negative correlation between baseline D2 receptor availability and rates of cocaine self-administration in monkeys. Thus, these findings collectively suggest that sustained attention and its brain network could serve as a biomarker of vulnerability to substance use.
 
 These results emphasize the specificity of sustained attention and its associated brain networks, rather than other cognitive abilities, for predicting substance use over time. Unlike sustained attention, no significant differences in cigarette and cannabis use were observed between individuals with lower and higher working memory at baseline during the strategy working memory (SWM) task (Supplementary file 1w and Figure 7—figure supplement 1). Our results support the behavioral-only findings of a previous study (Harakeh et al., 2012), which found that individuals with poorer sustained attention, rather than other cognitive functions, were more likely to initiate smoking cigarettes. Our study goes further by showing that sustained attention brain networks can predict substance use in the future.
 
-## Neural associations between cigarette and cannabis use
+### Neural associations between cigarette and cannabis use
 
 We constructed composite scores of substance use. An exploratory factor analysis identified cigarettes and cannabis items as a common factor, aligning with previous studies (Ferland and Hurd, 2020; Hindocha et al., 2016; Weinberger et al., 2018) that indicate concurrent cannabis and cigarette use among users. A national survey in America indicated that 18–23% of cigarette smokers aged 12–17 met the criteria for cannabis use disorder, in contrast to only 2% of non-smoking youth (Weinberger et al., 2018). Another national online survey in the UK reported that 80.8% of cigarette smokers engage in cannabis consumption, indicating a prevalent practice of co-administering cannabis and tobacco through smoking (Hindocha et al., 2021). Shared genetic factors (Agrawal et al., 2010; Yadav et al., 2016) and similar neural associations (Wetherill et al., 2015) contribute to the co-use of cannabis and cigarettes. Yadav et al., 2016, demonstrated a strong and significant genetic correlation between lifetime cannabis use and lifetime cigarette smoking within a large cohort of 32,330 participants, suggesting a high degree of genetic sharing between the two. Using neuroimaging techniques, Wetherill et al., 2015, indicated that individuals who used cannabis, smoked tobacco, or engaged in co-use exhibited larger gray matter volumes in the left putamen compared to healthy controls. Both nicotine and cannabis have similar effects on mesolimbic dopaminergic pathways engaged, modulating dopamine release in the striatum (Bossong et al., 2009; Dongelmans et al., 2021). Collectively, these findings suggest a similar neural association between cigarette and cannabis use.
 
-## Specificity and robustness of sustained attention networks
+### Specificity and robustness of sustained attention networks
 
 The brain networks we describe were specific to sustained attention. The strength of the sustained attention brain network was robustly correlated with RVP task performance, a typical sustained attention task, rather than other cognitive measures (Supplementary file 1l). Importantly, as highlighted in a previous study (Cwiek et al., 2022), emphasizing the importance of generalization in an external dataset, our study found that the sustained attention network derived from Go trials and Successful stop trials generalized to an external dataset (see further discussion on the generalization in subgroups in STRATIFY in Appendix 1).
 
@@ -171,41 +377,51 @@ In conclusion, robust sustained attention networks were identifiable from ages 1
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All neuroimaging data and behavioral data were obtained from the IMAGEN study. IMAGEN is a large longitudinal study that recruited over 2000 participants aged 14–23 in Europe (Kaiser et al., 2022). This study used the stop signal task fMRI data at ages 14, 19, and 23. In addition, we used an independent dataset STRATIFY as external validation for age 23. STRATIFY (N = ~300) is a sub-dataset within IMAGEN that recruits fMRI data from patients aged 23. Written and informed consent was obtained from all participants by the IMAGEN consortium and the study was approved by the institutional ethics committee of King’s College London (PNM/10/11-126), University of Nottingham (D/11/2007), Trinity College Dublin (SPREC092007-01), Technische Universitat Dresden (EK 235092007), Commissariat a l'Energie Atomique et aux Energies Alternatives, INSERM (2007-A00778-45), University Medical Center at the University of Hamburg (M-191/07) and in Germany at medical ethics committee of the University of Heidelberg (2007-024N-MA) in accordance with the Declaration of Helsinki. We followed the exclusion criteria outlined in previous studies (O’Halloran et al., 2018; Whelan et al., 2014). Participants were excluded from the CPM analysis if they had more than 20% errors on the Go trials (incorrect responses or responses that were too late) or if they had a mean framewise displacement (mean FD)>0.5 mm. Finally, 717 participants at age 14, 1081 participants at age 19, and 1120 participants at age 23 were used to predict ICV. In STRATIFY, 304 participants were used to predict ICV.
 
-## Stop signal task
+### Stop signal task
 
 The stop signal task required participants to respond to a Go signal (arrows pointing left/right) by pressing the left/right button while withholding their response if the Go signal was unpredictably followed by a Stop signal (arrows pointing upward). The Go signal was displayed on the screen for 1000 ms in the Go trials, while the Stop signal appeared for 100–300 ms following the Go signal on average 300 ms later in unpredictable Stop trials. To adjust task difficulty dynamically, we used a tracking algorithm on the delay between the Go signal and Stop signal (stop signal delay, 250–900 ms in 50 ms increments) (Verbruggen et al., 2019), to produce 50% successful and 50% unsuccessful inhibition trials. The task at age 14 included 400 Go trials and 80 variable delay Stop trials, with 3 and 7 Go trials between successive Stop trials. The task at ages 19 and 23 consisted of 300 Go trials and 60 variable delay Stop trials. Before the MRI scan, participants also performed a practice session with a block of 60 trials to become familiar with the task. ICV is used to assess sustained attention in this task for each participant. ICV reflects short-term within-person variations in task performance (O’Halloran et al., 2018). Specifically, ICV is computed by dividing the standard deviation of Go RT by the mean Go RT. Lower ICV indicates better sustained attention.
 
-## Self-report questionnaires
+### Self-report questionnaires
 
-## Puberty development scale
+#### Puberty development scale
 
 The puberty development scale (PDS), an 8-item self-report assessment, measures the pubertal development of adolescents (Petersen et al., 1988). The PDS evaluates physical development using a 5-point scale where 1 corresponds to prepubertal, 2 to beginning pubertal, 3 to mid-pubertal, 4 to advanced pubertal, and 5 to postpubertal. In addition, the items are adapted for sex, such as voice changes for males or menarche for females.
 
-## Timeline Followback
+#### Timeline Followback
 
 We used the TLFB, a retrospective self-report instrument that uses a calendar method to evaluate prior substance use consumption over the past 30 days (Sobell et al., 1996). The TLFB has strong reliability and validity for assessing alcohol consumption, and we used it to measure the use of alcohol, drugs, and smoking for participants.
 
-## MRI acquisition and pre-processing
+### MRI acquisition and pre-processing
 
 Functional MRI data of the stop signal task in the IMAGEN study were collected at eight scan sites (London, Nottingham, Dublin, Mannheim, Dresden, Berlin, Hamburg, and Paris), and data in STRATIFY were collected at three scan sites (Berlin, two scanners in London) with 3T MRI scanners. The MR scanning protocols, cross-site standardization, and quality checks are further described in Whelan et al., 2012. All images were obtained using echo-planar imaging (EPI) sequence with the following parameters: repetition time=2.2 s, echo time=30 ms, flip angle = 75°, field of view=224 mm × 224 mm, data matrix = 64 × 64, slice thickness = 2.4 mm with 1 mm slice gap, voxel size = 3.5 mm × 3.5 mm × 4.38 mm, 40 transversal interleaved slices. The MRI data has 444 volumes at age 14 and 320–350 volumes at ages 19 and 23. Standardized hardware was used for visual stimulus presentation (Nordic Neurolab, Bergen, Norway) at all scan sites.
 
 All fMRI data from the IMAGEN study were pre-processed centrally using SPM12 (Statistical Parametric Mapping, http://www.fil.ion.ucl.ac.uk/spm/) with an automated pipeline. The images were corrected for slice timing and then realigned to the first volumes to correct head motions. Participants were excluded from the study if they had a mean FD >0.5 mm. Subsequently, the data were non-linearly transformed to the Montreal Neurological Institute Coordinate System space using a custom EPI template with the voxels resampled at 3  mm× 3 mm ×3 mm resolution. Finally, the images were smoothed with a Gaussian kernel at a full-width-at-half-maximum of 5 mm.
 
-## Generalized psychophysiological interaction analysis
+### Generalized psychophysiological interaction analysis
 
-In this study, we adopted gPPI analysis to generate task-related FC matrices and applied CPM analysis to investigate predictive brain networks from adolescents to young adults. PPI analysis describes task-dependent FC between brain regions, traditionally examining connectivity between a seed region of interest (ROI) and the voxels of the whole rest brain. However, this study conducted a gPPI analysis, which is on ROI-to-ROI basis (Di et al., 2021), to yield a gPPI matrix across the whole brain instead of just a single seed region. First, we conducted a general linear model (GLM) analysis on the pre-processed fMRI data to examine brain activity during the stop signal task. Two separate GLMs were created for Go trials and Successful stop trials. The Go trials model included three task regressors (Go trials, Failed stop trials, and Successful stop trials) and 36 nuisance regressors, which accounted for factors such as head motion and the signal from white matter and cerebrospinal fluid. The 36 nuisance regressors are 3 translations, 3 rotations, mean white matter signal, mean cerebrospinal fluid signal, mean gray matter signal, their derivatives, and the squares of all these variables. Given the high frequency of Go trials in SST, it is common to treat Go trials as an implicit baseline, as in previous IMAGEN studies (D’Alberto et al., 2018; Whelan et al., 2012). Hence, we built a separate GLM for Successful stop trials, which included two task regressors (Failed and Successful stop trials) and 36 nuisance regressors. All task regressors were modeled by convolving with the canonical hemodynamic response function (HRF) and high pass filtered (128 s). We then conducted a gPPI analysis across the entire brain using the Shen atlas with 268 regions (Shen et al., 2013) for both Go and Successful stop trials. The gPPI analysis involved deconvolving the time series of each ROI with the HRF, multiplying it by the psychological variables of interest to yield a neural level PPI term, and convolving the resulting PPI term with the HRF to obtain the BOLD level PPI effects (Di and Biswal, 2019). Separate GLM models were used to estimate the PPI effect of each ROI for Go trials and Successful stop trials, regressing the eigenvariate of the seed ROI. The GLM of the Go trials included one regressor of another ROI eigenvariate, three regressors of task condition, three regressors of the PPI effects, and one contrast term (Equation 1). The GLM of Successful stop trials included one regressor of another ROI eigenvariate, two regressors of task condition, two regressors of the PPI effects, and one contrast term (Equation 2), shown as follows:(1)Y=β0+β1∗Xphysio+β2∗Xpsycho(SS)+β3∗Xpsycho(FS)+β4∗Xpsycho(GO)+β5∗Xphysio∗Xpsycho(SS)+β6∗Xphysio∗Xpsycho(FS)+β7∗Xphysio∗Xpsycho(GO)+ε(2)Y=β0+β1∗Xphysio+β2∗Xpsycho(SS)+β3∗Xpsycho(FS)+β4∗Xphysio∗Xpsycho(SS)+β5∗Xphysio∗Xpsycho(FS)+ε
+In this study, we adopted gPPI analysis to generate task-related FC matrices and applied CPM analysis to investigate predictive brain networks from adolescents to young adults. PPI analysis describes task-dependent FC between brain regions, traditionally examining connectivity between a seed region of interest (ROI) and the voxels of the whole rest brain. However, this study conducted a gPPI analysis, which is on ROI-to-ROI basis (Di et al., 2021), to yield a gPPI matrix across the whole brain instead of just a single seed region. First, we conducted a general linear model (GLM) analysis on the pre-processed fMRI data to examine brain activity during the stop signal task. Two separate GLMs were created for Go trials and Successful stop trials. The Go trials model included three task regressors (Go trials, Failed stop trials, and Successful stop trials) and 36 nuisance regressors, which accounted for factors such as head motion and the signal from white matter and cerebrospinal fluid. The 36 nuisance regressors are 3 translations, 3 rotations, mean white matter signal, mean cerebrospinal fluid signal, mean gray matter signal, their derivatives, and the squares of all these variables. Given the high frequency of Go trials in SST, it is common to treat Go trials as an implicit baseline, as in previous IMAGEN studies (D’Alberto et al., 2018; Whelan et al., 2012). Hence, we built a separate GLM for Successful stop trials, which included two task regressors (Failed and Successful stop trials) and 36 nuisance regressors. All task regressors were modeled by convolving with the canonical hemodynamic response function (HRF) and high pass filtered (128 s). We then conducted a gPPI analysis across the entire brain using the Shen atlas with 268 regions (Shen et al., 2013) for both Go and Successful stop trials. The gPPI analysis involved deconvolving the time series of each ROI with the HRF, multiplying it by the psychological variables of interest to yield a neural level PPI term, and convolving the resulting PPI term with the HRF to obtain the BOLD level PPI effects (Di and Biswal, 2019). Separate GLM models were used to estimate the PPI effect of each ROI for Go trials and Successful stop trials, regressing the eigenvariate of the seed ROI. The GLM of the Go trials included one regressor of another ROI eigenvariate, three regressors of task condition, three regressors of the PPI effects, and one contrast term (Equation 1). The GLM of Successful stop trials included one regressor of another ROI eigenvariate, two regressors of task condition, two regressors of the PPI effects, and one contrast term (Equation 2), shown as follows:
+
+$$
+Y=\beta_{0}+\beta_{1}∗X_{physio}+\beta_{2}∗X_{psycho(SS)}+\beta_{3}∗X_{psycho(FS)}+\beta_{4}∗X_{psycho(GO)}+\beta_{5}∗X_{physio}∗X_{psycho(SS)}+\beta_{6}∗X_{physio}∗X_{psycho(FS)}+\beta_{7}∗X_{physio}∗X_{psycho(GO)}+\epsilon
+$$
+
+
+
+$$
+Y=\beta_{0}+\beta_{1}∗X_{physio}+\beta_{2}∗X_{psycho(SS)}+\beta_{3}∗X_{psycho(FS)}+\beta_{4}∗X_{physio}∗X_{psycho(SS)}+\beta_{5}∗X_{physio}∗X_{psycho(FS)}+\epsilon
+$$
 
 Note: SS, Successful stop trials; FS, Failed stop trials; GO, Go trials.
 
-where Y is the time series of seed ROI, Xphysio is the time series of another ROI, Xpsycho is the task design term, and ε is the residual term. The gPPI analysis was performed across each ROI from the Shen atlas, resulting in a 268*268 gPPI matrix for each participant derived from Go trials and Successful stop trials separately. The matrices were transposed and averaged with the original matrices to yield symmetrical matrices (Di et al., 2021), and prepared for further analysis.
+where Y is the time series of seed ROI, $X_{physio}$ is the time series of another ROI, $X_{psycho}$ is the task design term, and ε is the residual term. The gPPI analysis was performed across each ROI from the Shen atlas, resulting in a 268*268 gPPI matrix for each participant derived from Go trials and Successful stop trials separately. The matrices were transposed and averaged with the original matrices to yield symmetrical matrices (Di et al., 2021), and prepared for further analysis.
 
-## Connectome-based predictive modeling
+### Connectome-based predictive modeling
 
-## ICV prediction
+#### ICV prediction
 
 CPM is a data-driven method that can examine individual differences in brain connectivity (Shen et al., 2017). CPM identifies pairwise connections between brain regions most highly correlated with a given phenotype. Using the PPI matrix, we employed CPM to predict ICV, for ages 14, 19, and 23. The CPM analysis process includes feature selection, model building, and validation (Figure 8). We applied CV to divide all participants into training and testing sets. (i) First, we used partial correlation to calculate the relationship between each edge in the gPPI matrix and behavioral phenotype while controlling several covariates in the training set. These covariates included ages, genders, mode-centered PDS (at age 14 only), mean FD, and scan sites, regarded as a dummy variable. The r value with an associated p value for each edge was obtained, and a threshold p=0.01 (Feng et al., 2024; Ren et al., 2021; Yoo et al., 2018) was set to select edges. The positive or negative correlated edges in feature selection were regarded as positive or negative networks. (ii) Second, we calculated network strength for each participant in the training set by summing the selected edges in the gPPI matrix for both positive and negative networks. We also estimated the network strength of a combined network by subtracting the strength of the negative from the strength of the positive network. (iii) Finally, we constructed predictive models based on the assumption of a linear relationship between network strength of the positive, negative, and combined networks, and behavioral phenotype in the training set. The covariates were also adjusted in this linear model. The network strengths for each participant in the testing set were calculated and input into the predictive model along with the covariates to predict each network’s behavioral phenotypes.
 
@@ -213,25 +429,29 @@ CPM is a data-driven method that can examine individual differences in brain con
 
 **Figure 8.:** (i) Feature selection. The correlation between each edge in the generalized psychophysiological interaction (gPPI) matrix and the behavioral phenotype is calculated while controlling for several covariates in the training set. These covariates include age, gender, mean framewise displacement (mean FD), scan sites, and mode-centered PDS (only for age 14). The r value with the associated p value for each edge is obtained using partial correlation, and a threshold of p=0.01 is used to select the edges. Positively or negatively correlated edges are regarded as positive or negative networks. Network strength is then calculated by summing the selected edges in the gPPI matrix for both positive and negative networks, as well as by subtracting the strength of the negative network from the strength of the positive network to obtain the combined network strength. (ii) Model building. Linear models are constructed between the network strength of the positive, negative, combined network, and behavioral phenotype in the training set. The network strength is then calculated for each participants in the testing set and input into the predictive model along with covariates to yield a predicted behavioral phenotype (e.g. predicted intra-individual coefficient of variation [ICV]) for each network. (iii) Model validation. The predictive performance is evaluated by calculating the correlation between predicted and observed values.
 
-## Three CV schemes
+#### Three CV schemes
 
 We used three CV schemes to test the robustness of predictive performance: k-fold (10-fold and 5-fold) and leave-site-out CV. For the k-fold CV, we randomly divided participants into 10 or 5 approximately equal-sized groups. For each fold, we trained the model on nine or four groups, respectively, and used it to predict the behavioral phenotype of the remaining group. We then assessed the predictive performance by comparing the predicted and observed values. For the leave-site-out CV, we divided participants into eight groups based on their scan site. To account for the random splits of the k-fold CV, we repeated the process 50 times and calculated the average predictive performance for both the 10-fold and 5-fold CV (Lichenstein et al., 2021). In addition, we set a 95% threshold for selecting edges present in at least 48 out of 50 iterations to visualize the results. We also ran the CPM analysis with mean FD thresholds of 0.2, 0.3, and 0.4 mm to account for the influence of head motion on the predictive performance. Furthermore, we conducted the CPM analysis using a range of thresholds for feature selection and observed similar results across different thresholds (see Appendix 1, Supplementary file 1h). The main text shows the results of the 10-fold CPM. The 5-fold CPM and leave-site-out CV results are shown in Appendix 1.
 
-## Prediction across timepoints and STRATIFY
+#### Prediction across timepoints and STRATIFY
 
 To assess the ability of models developed at one timepoint to predict ICV at different timepoints, we applied predictive models developed at ages 14 and 19 to predict ICV at subsequent timepoints. Specifically, we used predictive models (including the parameters and selected edges) developed at age 14 to predict ICV at ages 19 and 23. We first calculated the network strength using the gPPI matrix at age 19 or 23 based on the selected edges identified from CPM analysis at age 14. We then used the linear model parameters (slope and intercept) from CPM analysis at age 14 to fit the network strength and predict ICV at age 19 or 23. Finally, we evaluated the predictive performance by calculating the correlation between the predicted and observed values at age 19 or 23. Similarly, we applied models developed at age 19 to predict ICV at age 23. In addition, we examined the generalizability of predictive models at age 23 by applying them to the STRATIFY dataset, which also includes participants who were 23 years of age. Furthermore, we estimated the predictive performances of ICV across patient groups in the STRATIFY. The correlation between the residual network strength of predictive networks and ICV was calculated across groups in the STRATIFY. The covariates, including age, sex, and mean FD, were regressed for network strength before the correlation analysis. It is worth noting that when applying models developed at one timepoint to predict at another timepoint or to generalize to a different dataset, the model was built using all participants from the timepoint at which the model was developed.
 
-## Statistical analysis
+### Statistical analysis
 
-## Exploratory factor analysis
+#### Exploratory factor analysis
 
 To explore the underlying structure of adolescent substance use, we performed an exploratory factor analysis using principal component extraction (Gaskin and Happell, 2014) on TLFB using Predictive Analytics Software (SPSS) version 20. Factor analysis explores the underlying structure of a set of observed variables without imposing a preconceived structure on the outcome. We used six items at age 14 and nine items at ages 19 and 23 of TLFB, including alcohol, tobacco, cannabis, cocaine, ecstasy, and ketamine (as shown in Supplementary file 1k). We excluded items assessing the use of other drugs due to high proportions of missing data, standard deviations close to 0, or a Kaiser-Meyer-Olkin (KMO) statistic for individual variables below 0.5, considered the minimum value for a sample to be adequate. The KMO measure of sampling adequacy was 0.66 at age 14, 0.81 at age 19, and 0.77 at age 23. In addition, all Bartlett’s tests of sphericity were significant (age 14: χ2(15)=5137.067, p<0.001; age 19: χ2(36)=5031.641, p<0.001; age 23: χ2(36)=5106.265, p<0.001), indicating that there was an underlying correlation structure, and that factor analysis was appropriate. We rotated the factors using the varimax method with kaiser normalization to make it easier to discern the underlying measured constructs.
 
-## Linear mixed model
+#### Linear mixed model
 
-We constructed a linear mixed model to examine the change in ICV over time using the lme4 and lmerTest packages in RStudio (version: 1.4; http://www.rstudio.com/) and R (version 4.1.1; https://www.r-project.org/). The timepoint was the fixed effect of interest in the model, while the participants was a random effect. Several covariates, including sex, scan sites, mode-center PDS, and age at 14, were also included as fixed effects in the models. The linear mixed model is shown as follows: (3)ICV∼Timepoint+Sex+Scan site+Mode_center PDS+Age at 14+(1∣Participant)
+We constructed a linear mixed model to examine the change in ICV over time using the lme4 and lmerTest packages in RStudio (version: 1.4; http://www.rstudio.com/) and R (version 4.1.1; https://www.r-project.org/). The timepoint was the fixed effect of interest in the model, while the participants was a random effect. Several covariates, including sex, scan sites, mode-center PDS, and age at 14, were also included as fixed effects in the models. The linear mixed model is shown as follows:
 
-## Correlation between network strength and substance use
+$$
+ICV∼Timepoint+Sex+Scan site+Mode_center PDS+Age at 14+(1∣Participant)
+$$
+
+#### Correlation between network strength and substance use
 
 To examine the relationship between ICV/brain activity and substance use, we correlated the network strength of predictive networks with the factor scores of substance use at each timepoint and across all three timepoints separately. To control for potential confounders, we calculated residual network strength and residual factor scores by regressing the effects of age, sex, scan sites, mean FD (for network strength), and mode-centered PDS (for age 14). We used Spearman correlation to assess the association between residual network strength and residual TLFB, as their distributions did not follow a normal distribution. We used an FDR correction (q<0.05) for the multiple correlations.
 
@@ -239,7 +459,7 @@ Furthermore, we employed a three-wave bivariate latent change score model using 
 
 As Figure 6 shows, the latent change score model was specifically applied to examine the association between substance use and behaviors and brain activity associated with sustained attention. We focused on the relationship between the network strength of positive and negative networks, derived from Go and Successful stop trials, and two types of substance use (Cig+CB and alcohol use). Notably, drug use data were excluded as adolescents at age 14 have no drug score. A total of 10 models were performed, and all model fit indices met the predefined criteria: CFI>0.92, RMSEA<0.05, and SRMR<0.03. An FDR correction (q<0.05) was applied for multiple correlations. It is worth noting that all the correlations between substance use and sustained attention were conducted using the same sample across three timepoints.
 
-## Permutation test
+#### Permutation test
 
 For the CPM analysis, we used a permutation test to assess the significance of the predictive performance, which is the correlation between the observed and predicted values. To generate a null distribution of these correlation values, we randomly shuffled the correspondence of the behavioral data and the PPI matrix of all participants and reran the CPM pipeline with the shuffled data 1000 times. Based on this distribution, we set a threshold of p<0.05 to determine the significance level at 95% for the predictive performance using 10-fold, 5-fold, and leave-site-out CV.
 

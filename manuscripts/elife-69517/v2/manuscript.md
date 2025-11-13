@@ -37,7 +37,7 @@ Here, we designed a high-field (7T) fMRI experiment to study what brain regions 
 
 ## Results
 
-## Deactivation in sensorimotor regions during planning of finger actions
+### Deactivation in sensorimotor regions during planning of finger actions
 
 We instructed 22 participants to plan and execute repeated keypresses with individual fingers of their right hand on a keyboard device while being scanned with 7T fMRI. The key to be pressed corresponded to one of three fingers and was cued during the preparation phase by numbers (1 = thumb, 3 = middle, 5 = little, e.g., Figure 1A) presented on a computer screen that was visible to the participants lying in the scanner through an angled mirror. After a variable delay (4–8 s), participants received a color cue indicating whether to press the planned finger (go trials), or whether to withhold the response (no-go trials). Upon the go cue, participants had to initiate the correct response as fast as possible and make six presses of the designated finger, before receiving accuracy points for reward (see Materials and methods).
 
@@ -49,9 +49,21 @@ To control for involuntary overt movements during the preparation phase, we requ
 
 We focused our analysis on the lateral aspect of the contralateral (left) hemisphere (purple and white areas of Figure 2 inset), which included the primary motor and somatosensory cortex, as well as the premotor cortex and anterior parietal cortical regions. To examine brain activation during finger planning, we performed a univariate contrast of the preparation phase (across the three fingers) vs the resting baseline (Figure 2A). Overall, the instruction stimulus evoked little to no activation in our regions of interest (ROIs, see Materials and methods). In fact, compared to resting baseline, we observed significant deactivation (Figure 2E) in the primary motor cortex (M1, t21 = −6.939, p = 7.446e−07) and in the primary somatosensory cortex (S1, t21 = −5.508, p = 1.823e−05). Significant deactivation was also observed in the PMd (t21 = −2.929, p = 0.008). While anterior regions in the superior parietal lobule (aSPL) showed some signs of activation (Figures 1B and 2A), these did not reach statistical significance when tested at the ROI level (t21 = 1.881, p = 0.074).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69517/elife-69517-fig2-v2.jpg)
+
+**Figure 2.:** The inset shows the inflated cortical surface of the contralateral (left) hemisphere, highlighting the area of interest (A-D, purple) and the strip used for the profile region of interest (ROI) analysis (E, F, white). Major sulci are indicated by white dotted lines.( A) Univariate activation map (percent signal change) for the contrast planning > baseline (no-go trials only). (B) Multivariate searchlight map of the mean crossnobis distance between the planning of the three fingers (no-go trials only). (C) Same as A, but for the univariate contrast execution > baseline (go trials). (D) Same as B, but for the mean crossnobis distance between fingers during execution. Colorbars in A and C reflect mean percent signal change, whereas colorbars in B and D reflect mean crossnobis distance (arbitrary units). (E) Profile ROI analysis (see Materials and methods) of the mean percent signal change (± standard error of the mean [SEM]) during planning (no-go trials, orange) and execution (blue). The x-axis corresponds to Brodmann areas (BAs) selected from the white strip shown in the inset at the top. Horizontal bars indicate significance (p < 0.05) in a two-sided one-sample t-test vs zero for selected ROIs. (F) Same as E, but for the mean crossnobis distance (± SEM). Vertical dotted lines mark the approximate boundaries between BAs subdivisions of our main ROIs (see Materials and methods). Black triangles point to the approximate location of the main anatomical landmarks: Pre-CS = precentral sulcus; CS = central sulcus; Post-CS = postcentral sulcus. PMd (BA 6) = dorsal premotor cortex; M1 (BA 4a, 4b) = primary motor cortex; S1 (BA 3a, 3b, 1, 2) = primary somatosensory cortex; aSPL (BA 5) = anterior superior parietal lobule. For analogous results using the estimates of planning activity from all trials, see Figure 2—figure supplement 1. For the whole-brain maps of univariate and multivariate results, see Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69517/elife-69517-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Activation map (percent signal change) for the contrast planning > baseline. The selected area of interest is the same as shown in purple in the inset of Figure 2A. (B) Crossnobis distance searchlight map for movement planning. (C) Same as A, but for the contrast execution > baseline. (D) Same as B, but for movement execution. (E, F) Profile region of interest (ROI) analysis corresponding to the same area shown in white in the inset of Figure 2A. (E) Mean percent signal change (± standard error of the mean [SEM]) during planning (orange) and execution (blue). (F) Mean crossnobis distance (± SEM). Horizontal bars indicate significance (p < 0.05) in a two-sided one-sample t-test against zero. All other figure conventions are the same as in Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69517/elife-69517-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Univariate activation for planning (no-go trials). (B) Multivariate distance for planning (no-go trials). (C) Univariate activation for execution. (D) Multivariate distance for execution. Colorbars reflect mean percent signal change for the univariate maps and mean crossnobis distance (arbitrary units) for the multivariate maps.
+
 A wider whole-brain search (Figure 2—figure supplement 2) did not provide evidence for planning-related activation in other secondary motor areas. This lack of planning-related activation in high-order areas in planning is likely explained by the low task difficulty (i.e., little planning demands). Participants were only asked to plan repeated movements of a single finger, resulting in little amounts of overall planning activation. In contrast, execution strongly activated both primary and high-order sensorimotor regions (Figure 2C), with activation being significant in all tested ROIs (Figure 2E, all t21 > 14.824, all p < 1.351e−12).
 
-## Planning induces informative patterns in primary somatosensory and motor cortex
+### Planning induces informative patterns in primary somatosensory and motor cortex
 
 Although we found little univariate planning-related activation, preparatory processes need not increase the overall activation in a region. Rather, the region could converge to a specific preparatory neural state (Churchland et al., 2010), while activity increments and decrements within the region (i.e., at a finer spatial scale) average each other out. In this case, information about planned movements would be present in the multivoxel activity patterns in that region.
 
@@ -63,7 +75,7 @@ Visual inspection suggested that the informative patterns during planning may be
 
 Together, our analyses indicate that information about single finger actions is already represented during motor planning in the same parts of the primary motor and somatosensory cortices that are engaged during execution of the presses. Given that we only used the activity estimates from no-go trials (~40% of total trials), this information cannot be explained by a spillover from subsequent execution-related activity. An analysis using the estimates of planning activity from all trials yielded very similar results (see Figure 2—figure supplement 1), demonstrating that we could separate planning from execution-related signals.
 
-## Activity patterns are not caused by small movements during the preparation phase
+### Activity patterns are not caused by small movements during the preparation phase
 
 The presence of planning-related information in primary sensorimotor regions was surprising, especially in S1, where it had not previously been reported in comparable fMRI studies (Gallivan et al., 2016; Gallivan et al., 2011b). To ensure that these results were not caused by overt movement, participants were instructed to maintain a steady force on the keyboard during the preparation phase, such that we could monitor even the smallest involuntary preparatory movements.
 
@@ -75,7 +87,7 @@ Inspection of the average force profiles (Figure 3A) revealed that participants 
 
 These distances, however, were ~200–300 times smaller than the average distances during execution (x-axis in Figure 3D), and we found no significant correlation between the magnitude of the behavioral differences for the preparation phase and the amount of planning information present in our sensory–motor ROIs (both p values for the slope of the linear fit >0.3 in Figure 3C). More importantly, a significantly positive intercept in the linear fit in Figure 3C (M1: p = 0.032; S1: p = 0.007) shows that, even after correcting for the influence behavioral patterns, the activity patterns in M1 and S1 remained informative (i.e., significantly positive neural distance even with no significant behavioral distance). Thus, the finding of finger-specific activity patterns in M1 and S1 cannot be explained by small involuntary movements during the preparation phase.
 
-## Single finger activity patterns from planning to execution are positively correlated
+### Single finger activity patterns from planning to execution are positively correlated
 
 How do planning-related activity patterns in M1 and S1 relate to the activity patterns observed during execution? Neurophysiological experiments have suggested that patterns of movement preparation are orthogonal – or uncorrelated – to the patterns underlying active movement (Kaufman et al., 2014). This arrangement allows movement preparation to occur without causing overt movement.
 
@@ -115,15 +127,15 @@ An alternative and perhaps more likely explanation of the discrepancy lies in th
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty-three right-handed neurologically healthy participants volunteered to take part in the experiment (13 F, 10 M; age 20–31 years, mean 23.43 years, SD 4.08 years). Criteria for inclusion were right-handedness and no prior history of psychiatric or neurological disorders. Handedness was assessed with the Edinburgh Handedness Inventory (mean 82.83, SD 9.75). All experimental procedures were approved by the Research Ethics Committee at Western University (HSREB 107061). Participants provided written informed consent to procedures and data usage and received monetary compensation for their participation. One participant withdrew before study completion and was excluded from data analysis (final N = 22).
 
-## Apparatus
+### Apparatus
 
 Repeated right-hand finger presses were performed on a custom-made MRI-compatible keyboard device (Figure 1A). Participants only used the tips of their fingers to press on the keys. The keys of the device did not move but force transducers underneath each key measured isometric force production at an update rate of 2 ms (Honeywell FS series; dynamic range 0–25 N; sampling 200 Hz). A keypress/release was detected when the force crossed a threshold of 1 N. The forces measured from the keyboard were low pass filtered to reduce noise induced by the MRI environment, amplified, and sent to PC for online task control and data recording.
 
-## Task
+### Task
 
 We used a task in which participants produced repeated keypresses with the tip of their right-hand fingers in response to numerical cues appearing on a computer screen (white outline, Figure 1A). On each trial, a string of six numbers (instructing cue) instructed which finger press to plan (1 = thumb, 3 = middle, 5 = little).
 
@@ -137,9 +149,13 @@ During the reward phase (0.5 s, purple background) points were awarded based on 
 
 Intertrial intervals (ITI, gray background) were randomly drawn from {1, 2, 4, 8, 16 s} with the respective proportion of trials {0.52, 0.26, 0.13, 0.6, 0.3}.
 
-## Experiment design and structure
+### Experiment design and structure
 
-Our chosen distribution of preparation times, ITIs, and no-go trials, was determined by minimizing the variance inflation factor (VIF) for a given length of scan:VIF=varEvarX
+Our chosen distribution of preparation times, ITIs, and no-go trials, was determined by minimizing the variance inflation factor (VIF) for a given length of scan:
+
+$$
+VIF=\frac{varE}{varX}
+$$
 
 where var(E) is the mean estimation variance of all the regression weights (planning- and execution-related regressors for each finger), and var(X) the mean estimation variance had these regressors been estimated in isolation. The VIF quantifies the severity of multicollinearity between model regressors by providing an index of how much the variance of an estimated regression coefficient is increased because of collinearity. Large values for VIF mean that model regressors are not independent of each other, whereas a VIF of 1 means no inflation of variance. After optimizing the design, the VIF was quite low, on average around 1.15, indicating that we could separate planning- and execution-related activity without a large loss of experimental power.
 
@@ -151,23 +167,23 @@ For the behavioral practice, ITIs were kept to a fixed 1 s to speed up the task,
 
 Each single finger trial type (e.g., 111,111) was repeated five times (two no-go and three go trials), totaling 30 trials per functional run. Two periods of 10 s rests were added at the beginning and at the end of each functional run to allow for signal relaxation and provide a better estimate of baseline activation. Each of the 10 functional runs took about 5.5 min and the entire scanning session (including the anatomical scan and setup time) lasted for about 75 min.
 
-## Imaging data acquisition
+### Imaging data acquisition
 
 High-field fMRI data were acquired on a 7T Siemens Magnetom scanner with a 32-channel head coil at Western University (London, Ontario, Canada). The anatomical T1-weighted scan of each participant was acquired halfway through the scanning session (after the first five functional runs) using a Magnetization-Prepared Rapid Gradient Echo sequence (MPRAGE) with voxel size of 0.75 × 0.75 × 0.75 mm isotropic (field of view = 208 × 157 × 110 mm [A–P, R–L, F–H], encoding direction coronal). To measure the blood-oxygen-level-dependent responses in human participants, each functional scan (330 volumes) used the following sequence parameters: GRAPPA 3, multiband acceleration factor 2, repetition time (TR) = 1.0 s, echo time (TE) = 20 ms, flip angle (FA) = 30°, slice number: 44, voxel size: 2 × 2 × 2 mm isotropic. To estimate and correct for magnetic field inhomogeneities, we also acquired a gradient echo field map with the following parameters: transversal orientation, field of view: 210 × 210 × 160 mm, 64 slices, 2.5 mm thickness, TR = 475 ms, TE = 4.08 ms, FA = 35°.
 
-## Preprocessing and univariate analysis
+### Preprocessing and univariate analysis
 
 Preprocessing of the functional data was performed using SPM12 (fil.ion.ucl.ac.uk/spm) and custom MATLAB code. This included correction for geometric distortions using the gradient echo field map (Hutton et al., 2002), and motion realignment to the first scan in the first run (three translations: x, y, z; three rotations: pitch, roll yaw). Due to the short TR, no slice timing corrections were applied. The functional data were coregistered to the anatomical scan, but no normalization to a standard template or smoothing was applied. To allow magnetization to reach equilibrium, the first four volumes of each functional run were discarded. The preprocessed images were analyzed with a general linear model (GLM). We defined separate regressors for each combination of the six finger actions (single, multi) × two phases (preparation, movement). To control for the effect of potential overlap between execution activity and the preceding planning activity, we also estimated a separate GLM with separate regressors for the preparation phases of go and no-go trials, resulting in a total of 18 regressors (12 go + 6 no-go), plus the intercept, for each run. Each regressor consisted of a boxcar function (on for 2 s of each phase duration and off otherwise) convolved with a two-gamma canonical hemodynamic response function with a peak onset at 5 s and a poststimulus undershoot minimum at 10 s (Figure 1B).
 
 Given the relatively low error rates (i.e., number of error trials over total number of trials, timing errors: 7.58 ± 0. 62%; press errors: 1.18 ± 0.26%, see Task), all trials were included to estimate the regression coefficients, regardless of whether the execution was correct or erroneous. Ultimately, the first-level analysis resulted in activation images (beta maps) for each of the 18 conditions per run, for each of the participants.
 
-## Surface reconstruction and ROI definition
+### Surface reconstruction and ROI definition
 
 Individual subject’s cortical surfaces were reconstructed using Freesurfer (Dale et al., 1999). First, we extracted the white-gray matter and pial surfaces from each participant’s anatomical image. Next, we inflated each surface into a sphere and aligned it using sulcal depth and curvature information to the Freesurfer average atlas (Fischl et al., 1999). Both hemispheres in each participant were then resampled into Workbench’s 164 k vertex grid. This allowed us to compare similar areas of the cortical surface in each participant by selecting the corresponding vertices on the group atlas.
 
 Anatomical ROIs were defined using a probabilistic cytoarchitectonic atlas (Fischl et al., 2008) projected onto the common group surface. Our main ROIs were defined bilaterally as follows: primary motor cortex (M1) was defined by including nodes with the highest probability of belonging to BAa 4a and 4b, within 2 cm above and below the hand knob anatomical landmark (Yousry et al., 1997); primary somatosensory cortex (S1) was defined by the nodes related to BA 1, 2, 3a, and 3b; PMd was defined at the junction between the superior frontal sulcus and the precentral sulcus (BA 6); finally, the anterior part of the superior parietal lobule (aSPL, BA 5) included areas anterior, superior, and ventral to the intraparietal sulcus. ROI definition was carried out separately in each subject using FSL’s subcortical segmentation. When resampling functional onto the surface, to avoid contamination between M1 and S1 activities, we excluded voxels with more than 25% of their volume in the gray matter on the opposite side of the central sulcus.
 
-## Multivariate distance analysis
+### Multivariate distance analysis
 
 To detect single finger representations across the cortical surface, we used representational similarity analysis (RSA; Diedrichsen and Kriegeskorte, 2017; Walther et al., 2016) with a surface-based searchlight approach (Oosterhof et al., 2011). For each node, we selected a region (the searchlight) corresponding to 100 voxels (12 mm disc radius) in the gray matter and computed cross-validated Mahalanobis (crossnobis, Walther et al., 2016) dissimilarities between pairs of evoked activity patterns (beta estimates from first-level GLM) of single finger sequences, during both preparation and movement phases.
 
@@ -177,7 +193,7 @@ For the searchlight analysis, we assigned the average distance between any of th
 
 The searchlight analysis was mainly used for visualization purposes. Additionally, we conducted the multivariate analysis separately for each anatomically defined ROI (e.g., Figure 4A). For the profile ROI analysis (both univariate and multivariate, e.g., Figure 2E, F), we defined 50 rectangular surface-based searchlights in each hemisphere that covered the virtual strip shown in the top inset of Figure 2 and that were aligned to the boundaries between different ROI subdivisions. Based on these surface-based searchlights, we defined the voxel-based subdivisions in individual brains. For statistical comparisons, these subdivisions were successively grouped by averaging within-ROI subdivisions (see Figure 2E, F). This approach allowed us to compute both ROI-level statistical comparisons and the analysis of the ratio of distances in the different subdivisions of our main ROIs (e.g., M1 into BA4a and BA4b). Statistical comparisons consisted of two-sided one-sample t-test vs zero for selected ROIs.
 
-## Correlation between behavioral and neural distances
+### Correlation between behavioral and neural distances
 
 To ensure that our planning results were not contaminated by unwanted micromovements during the preparation phase, we calculated the behavioral distance between the different fingers on the basis of keyboard force data and correlated behavioral and neural distances.
 
@@ -185,11 +201,11 @@ For behavioral distances, we first extracted force data (2-ms temporal resolutio
 
 These mean finger force distances for each subject were correlated with the mean voxel activity distances from the two phases for two ROIs (M1 and S1, Figure 3C,D). To statistically assess that the neural distances were still significantly larger than zero even in the absence of behavioral distances, we computed the pvalue for the intercept of the linear fit.
 
-## PCM correlation models
+### PCM correlation models
 
 Visual inspection of the RDM and MDS plots (Figure 4A, B) suggested that the finger-specific activity patterns during planning and execution might be arranged in a congruent fashion. This correspondence can be assessed by determining the correlation between the planning and execution activity patterns for matching fingers (i.e., planning finger 1 with executing finger 1), after accounting for the average activity pattern for planning and execution across fingers.
 
-The problem with simple Pearson’s correlations or cross-validated correlations is that these measures are biased by noise. Even if the patterns for planning and execution were perfectly correlated (i.e., a scaled version of each other), the empirical correlation estimates would not be one (see http://www.diedrichsenlab.org/BrainDataScience/noisy_correlation). Therefore, we used (PCM Diedrichsen et al., 2018, openly available at github.com/DiedrichsenLab/PcmPy; copy archived at swh:1:rev:076b9a685ed116b1f0b83a68a0955d0cc5323a42, Ariani, 2022) to generate different models, each assuming a specific correlation between planning and execution patterns on the interval between 0 and 1 in steps of 0.01. We then computed the log-likelihood of the observed data (Y, the 6 activation patterns observed in 10 runs) from each participant under each correlation model (r): pYr , which is plotted in Figure 4C. PCM assumes that both the true activity patterns and the measurement noise are randomly distributed with a multivariate Gaussian distribution. The likelihood of the data under each model can then be analytically evaluated (for details see Diedrichsen et al., 2011; Diedrichsen et al., 2018; Diedrichsen et al., 2021). This likelihood depends only on the covariance matrix of the measured activity patterns and the predicted covariance matrix from the model. (Note: more precisely it relies on the measured and the predicted second moment matrix, as we do not subtract out the mean of each pattern across voxels.) Like RSA, PCM therefore abstracts away from the actual activity patterns, as it only depends on the relationship between the patterns, but does not have to model the pattern themselves. In fact, there is a 1:1 relationship between the second moment matrix used in PCM and the RDM used in RSA (Diedrichsen and Kriegeskorte, 2017). In both cases, the correlation between two conditions (e.g., planning and execution, for each finger) can be seen as the diagonal of the off-diagonal block of this matrix. The approach is also equivalent to an encoding model estimated with Ridge regression (Diedrichsen and Kriegeskorte, 2017), with the advantage that it can be estimated in closed form without fallback on cross-validation.
+The problem with simple Pearson’s correlations or cross-validated correlations is that these measures are biased by noise. Even if the patterns for planning and execution were perfectly correlated (i.e., a scaled version of each other), the empirical correlation estimates would not be one (see http://www.diedrichsenlab.org/BrainDataScience/noisy_correlation). Therefore, we used (PCM Diedrichsen et al., 2018, openly available at github.com/DiedrichsenLab/PcmPy; copy archived at swh:1:rev:076b9a685ed116b1f0b83a68a0955d0cc5323a42, Ariani, 2022) to generate different models, each assuming a specific correlation between planning and execution patterns on the interval between 0 and 1 in steps of 0.01. We then computed the log-likelihood of the observed data (Y, the 6 activation patterns observed in 10 runs) from each participant under each correlation model (r): $pYr$ , which is plotted in Figure 4C. PCM assumes that both the true activity patterns and the measurement noise are randomly distributed with a multivariate Gaussian distribution. The likelihood of the data under each model can then be analytically evaluated (for details see Diedrichsen et al., 2011; Diedrichsen et al., 2018; Diedrichsen et al., 2021). This likelihood depends only on the covariance matrix of the measured activity patterns and the predicted covariance matrix from the model. (Note: more precisely it relies on the measured and the predicted second moment matrix, as we do not subtract out the mean of each pattern across voxels.) Like RSA, PCM therefore abstracts away from the actual activity patterns, as it only depends on the relationship between the patterns, but does not have to model the pattern themselves. In fact, there is a 1:1 relationship between the second moment matrix used in PCM and the RDM used in RSA (Diedrichsen and Kriegeskorte, 2017). In both cases, the correlation between two conditions (e.g., planning and execution, for each finger) can be seen as the diagonal of the off-diagonal block of this matrix. The approach is also equivalent to an encoding model estimated with Ridge regression (Diedrichsen and Kriegeskorte, 2017), with the advantage that it can be estimated in closed form without fallback on cross-validation.
 
 Here, we used 100 PCM correlation models with correlations in the range [0–1] in equal step sizes. The number of correlation models was chosen arbitrarily—ultimately, it only determines the amount of correlation values tested (i.e., the resolution on the x-axis in Figure 4C). By exploring the entire log-likelihood function across different correlations models, this approach allows us to test specific hypothesis even if the signal-to-noise level is low.
 

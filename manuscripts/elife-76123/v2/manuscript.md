@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03pnv4752 School of Public Health and Social Work, Queensland University of Technology Brisbane Australia
-2. https://ror.org/03pnv4752 Australian Centre for Health Services Innovation and Centre for Healthcare Transformation, Queensland University of Technology Brisbane Australia
-3. https://ror.org/03f0f6041 Centre for Health Economics Research and Evaluation, University of Technology Sydney Sydney Australia
+1. School of Public Health and Social Work, Queensland University of Technology Brisbane Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))
+2. Australian Centre for Health Services Innovation and Centre for Healthcare Transformation, Queensland University of Technology Brisbane Australia ([ROR:03pnv4752](https://ror.org/03pnv4752))
+3. Centre for Health Economics Research and Evaluation, University of Technology Sydney Sydney Australia ([ROR:03f0f6041](https://ror.org/03f0f6041))
 
 † Corresponding author
 
 ## Abstract
 
-When researchers’ careers are disrupted by life events – such as illness or childbirth – they often need to take extended time off. This creates a gap in their research output that can reduce their chances of winning funding. In Australia, applicants can disclose their career disruptions and peer reviewers are instructed to make appropriate adjustments. However, it is not clear if and how applicants use career disruption sections or how reviewers adjust and if they do it consistently. To examine career disruption, we used surveys of the Australian health and medical research community. We used both a random sample of Australian authors on PubMed and a non-random convenience sample. Respondents expressed concerns that sharing information on career disruption would harm their chances of being funded, with 13% saying they have medical or social circumstances but would not include it in their application, with concerns about appearing ‘weak’. Women were more reluctant to include disruption. There was inconsistency in how disruption was adjusted for, with less time given for those with depression compared with caring responsibilities, and less time given for those who did not provide medical details of their disruption. The current system is likely not adequately adjusting for career disruption and this may help explain the ongoing funding gap for senior women in Australia. National Health and Medical Research Council Senior Research Fellowship (Barnett).
+Background:When researchers’ careers are disrupted by life events – such as illness or childbirth – they often need to take extended time off. This creates a gap in their research output that can reduce their chances of winning funding. In Australia, applicants can disclose their career disruptions and peer reviewers are instructed to make appropriate adjustments. However, it is not clear if and how applicants use career disruption sections or how reviewers adjust and if they do it consistently.Methods:To examine career disruption, we used surveys of the Australian health and medical research community. We used both a random sample of Australian authors on PubMed and a non-random convenience sample.Results:Respondents expressed concerns that sharing information on career disruption would harm their chances of being funded, with 13% saying they have medical or social circumstances but would not include it in their application, with concerns about appearing ‘weak’. Women were more reluctant to include disruption. There was inconsistency in how disruption was adjusted for, with less time given for those with depression compared with caring responsibilities, and less time given for those who did not provide medical details of their disruption.Conclusions:The current system is likely not adequately adjusting for career disruption and this may help explain the ongoing funding gap for senior women in Australia.Funding:National Health and Medical Research Council Senior Research Fellowship (Barnett).
 
 ## Introduction
 
@@ -39,7 +39,7 @@ The National Health and Medical Research Council (NHMRC) are the largest governm
 
 We prespecified our data collection methods and analysis in a protocol (Barnett et al., 2021a). Ethics approval was obtained from the Queensland University of Technology human research ethics committee (LR 2021-4303-5402). Our target population was current Australian health and medical researchers, which we sampled using both a random sample and a non-random sample.
 
-## Random sample
+### Random sample
 
 We used a sampling frame of emails extracted from publications on the PubMed database, which is a widely used search engine that contains the MEDLINE database of published papers in life sciences and biomedical topics. This is a large database and there are over 1.6 million papers with a publication year of 2020. The database is run by the US National Library of Medicine. A recent survey targeting Australian researchers used this same sampling frame (Scott et al., 2021).
 
@@ -47,7 +47,7 @@ Where PDAT = publication date, AFFL = affiliation, and PTYP = publication type. 
 
 We downloaded all available names and emails from this search and excluded Twitter handles. We excluded students based on the text ‘hdr’, ‘student’, or ‘postgrad’ in their email; this was to focus on researchers who were more likely to have experience with applying for NHMRC funding. We only included emails that contained ‘.au’ to limit the sampling frame to researchers with an Australian affiliation. However, this does exclude Australian researchers that use an alternative email service such gmail. The PubMed database was searched on 5 October 2021 and provided 7588 unique researchers.
 
-## Non-random sample
+### Non-random sample
 
 A random sample is an ideal method for providing data that are representative of the target population. However, survey response rates are generally low and have declined in recent years (Bednall et al., 2013; Kennedy and Hartig, 2019), meaning getting an adequate sample size can be challenging. We therefore supplemented our random sample with a non-random convenience sample using a survey link that was openly available.
 
@@ -55,13 +55,13 @@ A benefit of including this non-random sample is that researchers often have str
 
 The survey for the non-random sample included two additional questions compared with the random sample, which were: (1) for the respondent to confirm that they were a health and medical researcher working in Australia and not a current student, (2) their email, so that those who were part of the random sample could be moved over to that sample – this is worthwhile given that spam filters may have trapped our invite.
 
-## Survey distribution
+### Survey distribution
 
 The random sample was sent in individual emails by investigator Barnett on 10 October 2021. The completion page of the survey included a link to the non-random sample to share with colleagues. The link to the non-random sample was also shared on Twitter and LinkedIn on 10 October 2021. It was also distributed in relevant departments and via a health research mailing list. Reminder emails were sent to the random sample who had not withdrawn or responded on the 17th and 21st of October (some responders wrongly received a reminder). The survey was open for 21 days.
 
 The first page of the survey was a participant information sheet and respondents had to give their consent before they saw the questions. The survey was voluntary and there were no incentives to participate. The survey was online and used the Qualtrics program that allowed easy viewing on screens and smart phones.
 
-## Sample size
+### Sample size
 
 We had no primary hypothesis to base a sample size calculation on, instead we aimed for a margin of error of 10% for all categorical questions, for example, yes/no, agree/neutral/disagree. The largest possible variance for a categorical question is for a proportion of 50%. So using a 95% confidence interval (CI) we would need 96 respondents to give a margin of error of 10% or less.
 
@@ -71,7 +71,7 @@ Our assumed response rate was based on related surveys. A survey of Australian r
 
 There was no sample size calculation for the non-random sample and we instead aimed to get a similar response number to the random sample.
 
-## Survey questions
+### Survey questions
 
 The participant information sheet and survey questions are in Supplementary file 1. The survey had 14 closed questions and 9 open questions over 8–9 screens. All questions could be skipped (except the consent question) and the open questions were labelled as ‘optional’ and were for any additional comments. There was no check of survey completeness. Respondents could move backwards to change previous answers. We did not use information about IP addresses as we reasoned that Australian researchers could be overseas.
 
@@ -81,7 +81,7 @@ To reduce the length of the survey, four related hypothetical scenarios were ran
 
 We were not aware of any established survey questions on career disruption. Hence, all our questions were designed by the study team. All members of the study team have personal experience of considering what to write in career disruption sections and have considered the difficulties therein. The questions were piloted with around 20 Australian health and medical researchers, including those who have experienced career disruption.
 
-## Statistical methods
+### Statistical methods
 
 Most results are presented for each sample (random or non-random) rather than combining them. We give the number of survey respondents in each group and the response rate for the random survey.
 
@@ -101,7 +101,7 @@ Results are reported using the CHERRIES checklist for online surveys (Eysenbach,
 
 We did not use a formal qualitative analysis of the optional comments from participants. Instead the study team read all 414 comments to identify those that explained quantitative results. We looked for comments that reflected any apparent consensus alongside other interesting or divergent views. For each comment, we include the respondent’s gender and years of experience.
 
-## Data and code availability
+### Data and code availability
 
 The analysis code and data to replicate all parts of the analyses and generate the figures and tables are available from GitHub: https://github.com/agbarnett/career_disruption, (copy archived at swh:1:rev:555bffb51ede3af1511a4707ce35aec87785caa2; Barnett, 2021b).
 
@@ -111,7 +111,7 @@ The final response percentage was 32% (124/384), which was above our target perc
 
 The survey took a median of 8 min to complete, first to third quartile 6–14 min. Missing data were relatively small and 92% of participants completed 75% or more of the survey. The highest amount of missing data were for the ‘slider’ questions and this may have been because respondents agreed with the default answer of 6 months, however respondents needed to move the slider for their answer to be recorded. A detailed report on the missing data is in Supplementary file 2, pp. 22–25.
 
-## Demographics
+### Demographics
 
 A graphical summary of the demographic characteristics are in Figure 1. There was a large difference between the random and non-random sample in terms of gender, as 53% of responders in the random sample were women compared with 79% in the non-random sample. There were also more women in the random sample compared with recent NHMRC data on applicants, where 45% were women. These differences are likely because women are generally more motivated than men to discuss career disruption.
 
@@ -121,7 +121,7 @@ A graphical summary of the demographic characteristics are in Figure 1. There wa
 
 We had responses from researchers across all four broad research areas, with more respondents in basic science although this area was under-represented compared with recent NHMRC applicant data (33% in the random sample compared with 47% in NHMRC applicant data). The spread across experience shows that we captured responses from early career researchers through to highly experienced researchers.
 
-## Experience and knowledge of career disruption
+### Experience and knowledge of career disruption
 
 The respondents’ awareness and understanding of career disruption policies are summarized in Figure 2. The percentage fully aware of policies was relatively low at 18% in the random sample (95% CI 10–28%). The percentage of awareness in the non-random sample was 40%, more than double the random sample. This is likely because this group more often had career disruption and hence needed to be familiar with the policies, which is clear in both the question about what respondents have written in recent applications with a much higher percentage of ‘Always’ including career disruption (44 vs 15%), and a much higher percentage saying they would include career disruption in a current application (64 vs 35%). These percentages may have been increased by the recent COVID-19 lock-downs across Australia, which meant many researchers had to work from home and juggle work and family life.
 
@@ -145,7 +145,7 @@ A relatively large percentage agreed that they did not want to share personal de
 
 Few participants (6% random, 2% non-random) agreed that career disruption is just part of the lottery of life and should not be adjusted for.
 
-## Hypothetical scenario
+### Hypothetical scenario
 
 The results for the four hypothetical scenarios plotted in Figure 4 show that severe depression had the lowest mean adjustment (4.2 months) and the highest probability of having the lowest mean of the four scenarios. Caring for a child or elderly relative had a mean adjustment close to 6 months and were unlikely to have the lowest mean (probability under 0.03).
 
@@ -157,7 +157,7 @@ After adjusting for the missing slider data, the mean for severe depression incr
 
 Interesting comments in this section include one respondent who was not sure that caring for an elderly relative was an eligible reason for citing career disruption (it is eligible in the current NHMRC policy), and another who felt that a car accident would ‘increase the time I had to write’ (Male, 21 years or more).
 
-## Peer reviewer perspectives
+### Peer reviewer perspectives
 
 Two questions asked respondents to consider their perspective as a peer reviewer, and one asked how they thought career disruption should be assessed in the peer review process. The results are summarized in Figure 5.
 
@@ -193,7 +193,7 @@ Some respondents made other suggestions for how the current system could be impr
 
 ‘This could be done by the employer at the institution level not by another panel driven by the NHMRC.’ (Female, 11–15 years).
 
-## Differences by gender
+### Differences by gender
 
 We examined differences by gender by examining whether women were more likely to answer positively to selected questions. The odds ratios are plotted in Figure 6.
 
@@ -243,7 +243,7 @@ An alternative system is that peer reviewers provide their scores without consid
 
 Many respondents suggested that the introduction of another process would not fix the problem of people not disclosing details about their issues, and would cost money and time. There were suggestions to develop more detailed and standardized information about career disruption time and providing that to all reviewers to apply in their judgements. However, this would put additional burden on peer reviewers and it is not clear if reviewers currently read the instructions in detail. A previous study in Australia of the impact of caring for children on research output found there was no ‘average impact’ of caring for children and that impacts can be variable (Sewell and Barnett, 2019). Hence, creating guideline adjustment times for each career disruption reason may be easy to administer but inaccurate.
 
-## Related studies
+### Related studies
 
 Our finding that applicants do not share their career disruption as they are concerned about harming their chances of success agrees with a study which found that the pressure to appear ‘excellent’ makes it harder to disclose health issues (Brown and Leigh, 2018). Our finding also agrees with an analysis of academics applying for tenure in the USA (Pribbenow et al., 2010), which found stigma about using the ‘Stopping the tenure clock’ process to adjust for career disruption, with over 20% saying they thought stopping the clock would be viewed negatively.
 
@@ -261,7 +261,7 @@ A study of discrimination in hiring practices found that adding structure to sel
 
 We checked if international funding agencies had similar policies for accounting for career disruption. The UK Medical Research Council allow applicants to explain any breaks in employment or publication record, with special reference to the pandemic (UKRI, 2022). For the Canadian Institute of Health Research, researchers can describe how disruption has impacted on their research in their application and common CV (CIHR, 2022). The US National Institute of Health allow explanations of how personal circumstances may have delayed an individual’s transition to an independent career or reduced their scientific productivity (NIH, 2011). How these disruption sections are used in practice by applicants and reviewers would need to be examined using country-specific research.
 
-## Limitations
+### Limitations
 
 This is the first exploration of the important issue of career disruption and there is considerable scope for further study of the motivations of researchers about what to include and when, especially as this is a complex, multi-faceted issue.
 
@@ -279,6 +279,6 @@ A number of respondents commented that they do not trust the peer review system 
 
 Some indicated this was because of the difficulty of the task, and others because they do not believe reviewers have any sympathy. In hindsight, a question on this issue would have been useful for informing future policy.
 
-## Conclusion
+### Conclusion
 
 Health and medical researchers with career disruption can be disadvantaged by the current funding system, either because they are unwilling to share their disruption, or because their disruption is not properly accounted for, and also because of the additional time and stress needed to consider and document their disruption. The pandemic has meant more scientists have suffered career disruption and this could increase the empathy for all those with career disruption (Pourret, 2020). Given the growing importance of career disruption, and its likely importance in the gender funding gap, funders need to consider how researchers can easily and discretely share their disruption and have it correctly assessed.

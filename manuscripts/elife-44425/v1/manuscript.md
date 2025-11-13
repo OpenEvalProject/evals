@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.44425.001 Unfolded protein responses (UPRs) safeguard cellular function during proteotoxic stress and aging. In a previous paper (Lehrbach and Ruvkun, 2016) we showed that the ER-associated SKN-1A/Nrf1 transcription factor activates proteasome subunit expression in response to proteasome dysfunction, but it was not established whether SKN-1A/Nrf1 adjusts proteasome capacity in response to other proteotoxic insults. Here, we reveal that misfolded endogenous proteins and the human amyloid beta peptide trigger activation of proteasome subunit expression by SKN-1A/Nrf1. SKN-1A activation is protective against age-dependent defects caused by accumulation of misfolded and aggregation-prone proteins. In a C. elegans Alzheimer’s disease model, SKN-1A/Nrf1 slows accumulation of the amyloid beta peptide and delays adult-onset cellular dysfunction. Our results indicate that SKN-1A surveys cellular protein folding and adjusts proteasome capacity to meet the demands of protein quality control pathways, revealing a new arm of the cytosolic UPR. This regulatory axis is critical for healthy aging and may be a target for therapeutic modulation of human aging and age-related disease.
+Unfolded protein responses (UPRs) safeguard cellular function during proteotoxic stress and aging. In a previous paper (Lehrbach and Ruvkun, 2016) we showed that the ER-associated SKN-1A/Nrf1 transcription factor activates proteasome subunit expression in response to proteasome dysfunction, but it was not established whether SKN-1A/Nrf1 adjusts proteasome capacity in response to other proteotoxic insults. Here, we reveal that misfolded endogenous proteins and the human amyloid beta peptide trigger activation of proteasome subunit expression by SKN-1A/Nrf1. SKN-1A activation is protective against age-dependent defects caused by accumulation of misfolded and aggregation-prone proteins. In a C. elegans Alzheimer’s disease model, SKN-1A/Nrf1 slows accumulation of the amyloid beta peptide and delays adult-onset cellular dysfunction. Our results indicate that SKN-1A surveys cellular protein folding and adjusts proteasome capacity to meet the demands of protein quality control pathways, revealing a new arm of the cytosolic UPR. This regulatory axis is critical for healthy aging and may be a target for therapeutic modulation of human aging and age-related disease.
 
 ## Introduction
 
@@ -26,11 +26,230 @@ Here we show that SKN-1A increases proteasome subunit gene expression in respons
 
 ## Results
 
-## Misfolded proteins trigger SKN-1A activation
+### Misfolded proteins trigger SKN-1A activation
 
 A transgene expressing GFP from the rpt-3 proteasome subunit gene promoter shows SKN-1A-dependent upregulation in response to proteasome dysfunction (Lehrbach and Ruvkun, 2016). To explore the genetic defects that can activate such proteasome response pathways and the mechanisms that control proteasome subunit gene expression, we performed a large-scale random EMS-mutagenesis screen for mutants that cause increased expression of rpt-3p::gfp. We isolated 21 alleles affecting proteasome subunit genes, including mutations affecting components of the 19S regulatory particle and the 20S catalytic core of the proteasome (Table 1, Figure 1—figure supplement 1). Many of the mutants show temperature sensitive defects in fertility, consistent with previous genetic analysis of proteasome function in C. elegans germline development (Figure 1—figure supplement 2) (Shimada et al., 2006). Some proteasome mutant strains show severe temperature sensitive developmental defects that may reflect temperature-sensitivity of the mutant protein (Table 1). Activation of rpt-3p::gfp in proteasome hypomorphic mutants requires skn-1 and depletion of SKN-1 by RNAi causes larval lethality in all but one of the mutant strains, although skn-1(RNAi) is not larval lethal in wild type (Table 1, Figure 1—figure supplement 1). These data indicate that a wide range of perturbations to proteasome function trigger SKN-1A activation and confirm that compensatory upregulation of proteasome subunit genes by SKN-1A is critical for survival of proteasome dysfunction, either due to mutations or pharmacological inhibition (Keith et al., 2016; Lehrbach and Ruvkun, 2016).
 
+**Table 1.**
+ Protesome subunit mutants.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>genotype</td>
+      <td>allele effect</td>
+      <td>Viability at 20ºC</td>
+      <td>Viability at 25ºC</td>
+      <td>rpt-3p::gfp induction on skn-1(RNAi)</td>
+      <td>growth on skn-1(RNAi)</td>
+    </tr>
+    <tr>
+      <td>wild type</td>
+      <td>+</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>pas-1(mg511)</td>
+      <td>G82R</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-2(mg581)</td>
+      <td>C90Y</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-2(mg538)</td>
+      <td>G93E</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-2(mg530)</td>
+      <td>D97N</td>
+      <td>Yes</td>
+      <td>ND</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-3(mg527)</td>
+      <td>S180L</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-4(mg539)</td>
+      <td>M48K</td>
+      <td>Yes</td>
+      <td>No (Emb/Lva)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-5(mg509)</td>
+      <td>3'UTR</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>pbs-5(mg502)</td>
+      <td>promoter*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost*</td>
+      <td>+*</td>
+    </tr>
+    <tr>
+      <td>rpt-6(mg513)</td>
+      <td>I302N, P328S</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpt-6(mg512)</td>
+      <td>E278K</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-1(mg514)</td>
+      <td>S519F</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-1(mg537)</td>
+      <td>G431E</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-5(mg534)</td>
+      <td>T76I</td>
+      <td>Yes</td>
+      <td>No (Emb/Lva)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-8(mg587)</td>
+      <td>G73R</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-8(mg536)</td>
+      <td>A88V</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-9(mg533)</td>
+      <td>G357STOP</td>
+      <td>Yes</td>
+      <td>No (Emb/Lva)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-10(mg525)</td>
+      <td>G114E</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-10(mg495)</td>
+      <td>K130STOP</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-10(mg531)</td>
+      <td>Frameshift</td>
+      <td>Yes</td>
+      <td>ND</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-10(mg529)</td>
+      <td>Q298STOP</td>
+      <td>Yes</td>
+      <td>ND</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+    <tr>
+      <td>rpn-11(mg494)</td>
+      <td>E108K</td>
+      <td>Yes</td>
+      <td>No (Ste)</td>
+      <td>lost</td>
+      <td>Lva</td>
+    </tr>
+  </tbody>
+</table>
+
+_ND: Not determined* Lehrbach and Ruvkun, 2016_
+
 Our large genetic screen also identified three alleles of unc-54, which encodes a myosin class II heavy chain (MHC B) expressed in the body wall muscle (Ardizzi and Epstein, 1987; Epstein et al., 1974). UNC-54 is the major MHC B in body wall muscles and unc-54 loss of function mutations cause paralysis. The unc-54 alleles we isolated activate rpt-3p::gfp specifically in body wall muscle cells (Figure 1a,b), unlike the proteasome mutations which activate rpt-3p::gfp in many tissues. To understand how MHC B affects rpt-3p::gfp, we tested other unc-54 alleles. The temperature-sensitive unc-54(e1301) and unc-54(e1157) alleles encode mutant forms of UNC-54/MHC B that are prone to misfold and aggregate (Ben-Zvi et al., 2009; Gidalevitz et al., 2006; Silva et al., 2011). Both unc-54(e1301) and unc-54(e1157) activate expression of rpt-3p::gfp in muscle cells (Figure 1a,b). By contrast, unc-54(e190), a null (deletion) allele that eliminates MHC B expression and causes paralysis regardless of temperature (Dibb et al., 1985), does not activate rpt-3p::gfp (Figure 1a,c,e). Interestingly, all of the unc-54 alleles we isolated in our screen for proteasome subunit activation are missense mutations that cause temperature-sensitive paralysis similarly to unc-54(e1301) (Figure 1c, Figure 1—figure supplement 3). These data suggest that rpt-3p::gfp activation is triggered by the presence of mutant forms of MHC B that are prone to misfold, not simply by loss of MHC B or defective muscle function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-v1.jpg)
+
+**Figure 1.:** (a, b) Fluorescence images showing rpt-3p::gfp expression in various unc-54 mutants. (c) Temperature dependent paralysis and rpt-3p::gfp effects of unc-54 alleles. (d) Fluorescence images showing rpt-3p::gfp induction in unc-54(mg519) and unc-54(e1301) requires skn-1a. (e) Quantification of rpt-3p::gfp expression in various unc-54 mutants. (f) Fluorescence images showing Aβ expression in muscle increases rpt-3p::gfp fluorescence in wild type but not in skn-1a mutant animals. (g) Quantification of Aβ-induced activation of rpt-3p::gfp in various mutant backgrounds. Panels e and g: ****p<0.0001; ***p<0.001; ns p>0.05. (one-way ANOVA with Tukey’s multiple comparison test), P-value compared to wild type unless otherwise indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Fluorescence images showing rpt-3p::gfp activation in proteasome subunit mutant strains. Scale bar shows 100 μm. (c) Images showing larval lethality of proteasome subunit mutants on skn-1(RNAi) but not control RNAi. Scale bar shows 1 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Sterility of proteasome subunit mutants raised at (a) 20°C and (b) 25°C. At 20°C n = 20–60; at 25°C n = 10. All animals contain the mgIs72 rpt-3p::gfp integrated transgene.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Percentage of adult animals paralyzed at 20°C and 25°C. n > 100 for each strain and condition.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Fluorescence images showing accumulation of SKN-1A[∆DBD]::GFP in muscle cells of unc-54(e1301) and unc-54(mg519) animals. Scale bar shows 10 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Quantification of rpt-3p::gfp expression in hsf-1(sy441) and wild type animals at (a) 20°C. ns p>0.05 (Welch’s t-test) (b) Quantification of rpt-3p::gfp expression 24 hr after upshift to 25°C. rpt-3p::gfp expression is increased in hsf-1(sy441) mutants in a skn-1a-dependent manner. ****p<0.0001; ns p>0.05 (one-way ANOVA with Tukey’s multiple comparisons test). (c) Fluorescence images showing increased rpt-3p::gfp expression in wild type, hsf-1(sy441) and hsf-1(sy441); skn-1a(mg570) double mutant animals 24 hr after upshift to 25°C. Scale bar shows 100 μm.
 
 Activation of rpt-3p::gfp expression by temperature-sensitive mutant MHC B is completely lost in skn-1a(mg570) mutant animals that lack SKN-1A but retain other SKN-1 isoforms (Figure 1d,e). To test for activation of SKN-1A at the protein level, we used a transgene to ubiquitously express a truncated form of SKN-1A that lacks the DNA binding domain and is fused to GFP at the C-terminus (rpl-28p::skn-1a[∆DBD]::gfp). This protein undergoes the same post-translational regulation as full length SKN-1A (Lehrbach and Ruvkun, 2016). We found increased levels of SKN-1A[∆DBD]::GFP accumulates specifically in the body wall muscle cells of unc-54(e1301) and unc-54(mg519) animals but not in the wild type (Figure 1—figure supplement 4). We conclude that expression of temperature-sensitive mutant UNC-54/MHC B triggers rpt-3p::gfp expression via activation of SKN-1A.
 
@@ -40,7 +259,7 @@ To test whether SKN-1A activation is broadly associated with protein folding def
 
 The peptide:N-glycanase PNG-1/NGLY1, the aspartic protease DDI-1/DDI2 and the ERAD component SEL-1/SEL1 are each necessary to activate SKN-1A in response to direct proteasomal insults (Lehrbach and Ruvkun, 2016). To determine if this same genetic pathway is necessary to activate SKN-1A in response to misfolded proteins, we measured activation of rpt-3p::gfp by Aβ in png-1, ddi-1, and sel-1 mutants. The SKN-1A-dependent rpt-3p::gfp transcriptional response to Aβ is lost in png-1(ok1654) and ddi-1(mg571) mutants and is diminished in sel-1(mg457) mutants (Figure 1g). We conclude that related, or possibly identical, mechanisms govern SKN-1A activation by both direct assaults on the proteasome and the presence of misfolded and/or aggregated proteins.
 
-## SKN-1A is cell autonomously activated by impaired proteasome function
+### SKN-1A is cell autonomously activated by impaired proteasome function
 
 These data suggest that SKN-1A mediates a cell-autonomous transcriptional response to protein misfolding in muscle cells. SKN-1A also responds to proteasome dysfunction, but whether this response is cell autonomous is not known. We therefore configured a system to induce cell-type specific impairment of proteasome function in body wall muscle cells. Over-expression of an active site mutant of the β5 subunit of the 20S proteasome in otherwise wild-type cells causes proteasome dysfunction in yeast and the mouse (Heinemeyer et al., 1997; Li et al., 2004). We generated a transgene that expresses the corresponding active site mutant of the C. elegans β5 subunit, PBS-5[T65A], under control of the muscle specific myo-3 promoter (myo-3p::pbs-5[T65A]), such that proteasome dysfunction is induced specifically in muscle cells.
 
@@ -50,27 +269,47 @@ The myo-3p::pbs-5[T65A] transgene causes muscle-specific activation of the rpt-3
 
 **Figure 2.:** (a) Fluorescence images showing rpt-3p::gfp expression in animals expressing a dominant negative proteasome subunit in the muscle (myo-3p::pbs-5[T65A]). (b) Quantification of rpt-3p::gfp expression in animals expressing a mutant proteasome subunit in the muscle. ***p<0.001 (Welch’s t-test). (c) Comparison of locomotor rate between wild type and myo-3p::pbs-5[T65A] transgenic animals. (d) Comparison of locomotor rate between wild type and skn-1a mutant animals carrying the myo-3p::pbs-5[T65A] transgene on day 1 of adulthood.
 
-## SKN-1A activation by misfolded proteins involves little or no impairment of proteasome function
+### SKN-1A activation by misfolded proteins involves little or no impairment of proteasome function
 
 Aggregation-prone proteins including human Aβ may interact with proteasomes and impair their function (Ayyadevara et al., 2015; Deriziotis et al., 2011; Gregori et al., 1995; Kristiansen et al., 2007; Snyder et al., 2003). To test the possibility that misfolded proteins trigger SKN-1A activation via inhibition of the proteasome, we generated a reporter of proteasome activity, a ubiquitously expressed unstable ubiquitin-GFP fusion protein (rpl-28p::ub(G76V)::gfp). The UB(G76V)::GFP ubiquitin fusion protein is normally degraded by the proteasome, but accumulates to detectable levels if proteasome function is impaired (Johnson et al., 1995; Segref et al., 2014). As expected, this reporter of proteasome activity reveals a muscle-specific proteasomal defect in myo-3p::pbs-5[T65A] transgenic animals (Figure 3a,b). Thus tissue-specific impairment of the proteasome in body wall muscle can be readily detected by monitoring UB(G76V)::GFP levels. Stabilization of UB(G76V)::GFP in PBS-5[T65A]-expressing muscle cells is greatly enhanced in the skn-1a mutant – all mutant animals show accumulation of GFP in all muscle cells and at higher levels than the wild type (Figure 3a,b). These data show that the SKN-1A transcriptional program partially corrects the muscle proteasomal defect caused by the myo-3p::pbs-5[T65A] insult. The severe locomotor defects and paralysis of myo-3p::pbs-5[T65A] animals that lack SKN-1A therefore likely stem from enhanced defects in proteasome function.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig3-v1.jpg)
+
+**Figure 3.:** (a) Fluorescence micrographs showing impairment of UB(G76V)::GFP degradation in various genotypes. Arrows indicate UB(G76V)::GFP accumulation in muscle cells. (b) Comparison of UB(G76V)::GFP stabilization in muscles of animals carrying various SKN-1A-activating transgenes or mutations. *The skn-1a mutation used in the pbs-5[T65A] strain is mg674, which is an identical CRISPR-induced lesion to mg570. All animals were examined for UB(G76V)::GFP stabilization in the muscle at the L4 stage. We note that animals lacking SKN-1A show a defect in basal proteasome function, causing accumulation of UB(G76V)::GFP. This basal effect is limited to the intestine, and so we were still able to detect muscle-specific effects.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Fluorescence images showing rpt-3p::gfp and rpl-28p::ub(G76V)::gfp transgenic animals raised on plates supplemented with different concentrations of bortezomib, or DMSO control. rpt-3p::gfp is not induced by 2 ng/ml bortezomib, is weakly induced by 4 ng/ml bortezomib, and more strongly induced by 40 ng/ml bortezomib. In wild type animals, only exposure to 40 ng/ml bortezomib causes increased levels of UB(G76V)::GFP accumulation. In skn-1a(mg570) mutant animals, exposure to 2 or 4 ng/ml causes increased accumulation of UB(G76V)::GFP. Scale bar shows 100 μm.
 
 Mutant UNC-54, Aβ and PBS-5[T65A] all cause SKN-1A activation, as indicated by activation of rpt-3p::gfp. If all three trigger SKN-1A by the same mechanism – that is, by impairing proteasome function – they should also stabilize UB(G76V)::GFP. However, in contrast to myo-3p::pbs-5[T65A], we did not observe stabilization of UB(G76V)::GFP in unc-54p::Aβ transgenics (Figure 3a,b). Because activation of SKN-1A could compensate for an effect of Aβ on proteasome function, we also examined the effect of Aβ in skn-1a(mg570) mutants. unc-54p::Aβ only weakly affected UB(G76V)::GFP levels within the muscle cells of skn-1a mutants: about 10% of skn-1a(mg570) Aβ-expressing animals showed weak accumulation of UB(G76V)::GFP in some muscle cells suggesting a mild impairment of proteasome function (Figure 3a,b). We also tested the effect of unc-54(e1301) and unc-54(mg519) in the skn-1a(mg570) mutant background and found no effect on UB(G76V)::GFP degradation in the muscle (Figure 3b).
 
 In mammalian cells, UbG76V::GFP accumulates only in cells with severely compromised proteasome function, as measured by Suc-LLVY-AMC hydrolysis in cell lysates (Dantuma et al., 2000). It is therefore possible that mutant MHC B and Aβ cause mild defects in proteasome function that are sufficient to activate rpt-3p::gfp without altering steady state levels of UB(G76V)::GFP. To test this possibility, we compared the behavior of the two reporters in animals exposed to very low doses of the proteasome inhibitor bortezomib (Figure 3—figure supplement 1). Because the effect of bortezomib on proteasome function may be masked by SKN-1A-dependent compensation, we monitored UB(G76V)::GFP levels in both wild type and skn-1a mutant animals. We found that very low concentrations of bortezomib (2 ng/ml) cause increased accumulation of UB(G76V)::GFP in skn-1a mutant animals. But wild type animals exposed to bortezomib at the same concentration do not show activation of rpt-3p::gfp. This suggests that monitoring UB(G76V)::GFP accumulation in a skn-1a mutant background serves as a more sensitive indicator of proteasome impairment than rpt-3p::gfp expression in wild type animals. As such, the UB(G76V)::GFP reporter should be sensitive enough to detect impairment of proteasome function, if this were the mechanism through which misfolded MHC B or Aβ cause activation of rpt-3p::gfp. These results therefore suggest that SKN-1A may be activated by misfolded proteins even in the absence of impaired proteasome function.
 
-## SKN-1A modulates age-dependent effects of misfolded UNC-54/MHC B
+### SKN-1A modulates age-dependent effects of misfolded UNC-54/MHC B
 
 SKN-1A may regulate proteasome capacity to promote clearance of misfolded proteins that may otherwise accumulate and cause cellular dysfunction during aging. If this were the case, we would expect loss of SKN-1A to enhance age-dependent defects in animals expressing misfolded and aggregation-prone proteins. We therefore examined locomotion as a measure of defects in muscle cell function caused by the misfolded proteins that we had identified as activators of SKN-1A. We found no difference in locomotion rate between the wild type and skn-1a(mg570) mutants during the first week of adulthood (Figure 4a). We measured locomotion of unc-54(e1301) and unc-54(mg519) temperature-sensitive myosin heavy chain mutants at 20°C. This condition slows movement but does not cause paralysis of the mutant animals, presumably reflecting partial misfolding of the mutant MHC B. In contrast to wild type, the locomotion of animals harboring unc-54(e1301) or unc-54(mg519) mutations is strongly modulated by age in a SKN-1A-dependent manner (Figure 4b,c). The unc-54ts mutants show a severe locomotion defect on day 1 of adulthood, but remarkably, recover to near-normal rates of locomotion on days 3–7. This suggests that during aging the capacity for correct folding and function of mutant MHC B improves. Although age-dependent changes in proteostasis and physiology are thought to be largely detrimental, this suggests that in some cases they may include activation of protective responses that improve protein folding or function. Strikingly, this beneficial effect of age is entirely dependent on SKN-1A. unc-54(mg519); skn-1a(mg570) double mutants show no age-dependent improvement in locomotion and unc-54(e1301); skn-1a(mg570) double mutants show a slight age-dependent decline in locomotion (Figure 4b,c). Since two independent unc-54ts mutations have the same age-dependent genetic interaction with skn-1a, this is not allele-specific, but rather a general effect of SKN-1A on the function of misfolding MHC B. We measured rpt-3p::gfp expression in day 1 and day 5 unc-54(e1301) and unc-54(mg519) mutant adults. Expression of the rpt-3p::gfp reporter was unchanged, suggesting that SKN-1A activity does not increase as unc-54ts animals age (Figure 4—figure supplement 1). Thus, although SKN-1A is needed for unc-54ts animals to recover locomotion as they age, this is not caused by age-dependent changes in SKN-1A activity.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig4-v1.jpg)
+
+**Figure 4.:** Analysis of locomotion of (a) wild type and skn-1a(mg570) mutant animals, (b) unc-54(mg519) and unc-54(mg519); skn-1a(mg570) double mutant animals and (c) unc-54(e1301) and unc-54(e1301); skn-1a(mg570) double mutant animals during aging. (d) Age-dependent paralysis of wild type and skn-1a(mg570) mutant Aβ expressing animals. Panels b, c, d: ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; ns p>0.05 indicates P-value compared to the skn-1a(+) control at each time point (two-way ANOVA with Dunnett’s multiple comparisons test). (e) increased paralysis of Aβ expressing with defective SKN-1A activation. (f) reduced paralysis of Aβ expressing animals with increased SKN-1A levels. Panels e and f: ****p<0.0001 compared to wild type (one-way ANOVA with Tukey’s multiple comparisons test). (g) Fluorescence images showing increased accumulation of Aβ::GFP in day two adults in skn-1a(mg570) as compared to wild type. (h) Quantification of Aβ::GFP puncta in wild type and skn-1a(mg570). ****p<0.0001 (Welch’s t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Quantification of rpt-3p::gfp expression in (a) unc-54(mg519) and (b) unc-54(e1301) animals on day 1 and day 5 of adulthood. ns p>0.05 (Welch’s t-test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44425/elife-44425-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Analysis of locomotion of (a) unc-54(mg519) and unc-54(mg519); skn-1a(mg570) double mutant animals and (b) unc-54(e1301) and unc-54(e1301); skn-1a(mg570) double mutant animals on day 1 of adulthood. ***p<0.001, **p<0.01 (Welch’s t-test).
+
 Although the rate of movement of unc-54ts; skn-1a(mg570) double mutant animals is significantly reduced compared to unc-54ts single mutants on later days of adulthood (days 5–7), it is not reduced in day 1 adults. In fact, the locomotor rate of each double mutant is slightly increased compared to the corresponding unc-54ts single mutant on day 1 of adulthood (Figure 4—figure supplement 2). These data show that activation of the proteasome by SKN-1A is required to maintain muscle function in unc-54ts mutant animals as they age, rather than an age-independent requirement for SKN-1A to ensure folding or function of mutant MHC B. SKN-1A is essential for the locomotion of day 1 adults with impaired proteasome function in the muscle (myo-3p::pbs-5[T65A] transgenics; Figure 2e), so these data also confirm that mutant MHC B activates SKN-1A without impairing proteasome function as strongly as myo-3p::pbs-5[T65A]. Taken together, these results indicate that SKN-1A mediates functionally distinct responses to proteasome dysfunction and expression of misfolded proteins in the muscle. SKN-1A is essential for muscle function during proteasome impairment, regardless of age. In contrast, SKN-1A modulates an age-dependent defect in muscle function caused by misfolded MHC B.
 
-## SKN-1A mitigates accumulation and toxicity of Aβ
+### SKN-1A mitigates accumulation and toxicity of Aβ
 
 Expression of human Aβ in C. elegans muscle cells causes progressive adult-onset paralysis (Link, 2006). Paralysis is accompanied by aggregation and formation of amyloid fibrils, features also associated with adult-onset neurodegeneration in Alzheimer’s disease (Fay et al., 1998; Link, 1995). Adult-onset paralysis caused by human Aβ in C. elegans muscle is enhanced in skn-1a(mg570) mutants (Figure 4d). The effects of Aβ are also enhanced in png-1(ok1654), consistent with the failure of the png-1 mutant to activate SKN-1A (Figure 4e). The paralysis of png-1(ok1654); skn-1a(mg570) double mutants is not enhanced compared to either single mutant, supporting the model that PNG-1 acts through SKN-1A to mitigate Aβ toxicity. Overexpression of SKN-1A reduces the paralysis caused by muscle-specific Aβ expression in wild type (Figure 4f). These data indicate that proteasome activation by SKN-1A is required and sufficient to mitigate the age-dependent toxic effects of Aβ.
 
 Using animals expressing Aβ fused to GFP (myo-3p::gfp::Aβ), we monitored expression and localization of Aβ in muscles of wild type and skn-1a mutant animals. In day 2 adults, levels of GFP::Aβ were consistently higher in the muscles of skn-1a mutant animals than wild type (Figure 4g), and skn-1a mutant muscles contained many more puncta of localized GFP::Aβ accumulation, suggesting increased formation of Aβ-containing aggregates (Figure 4h). These data suggest that the enhanced adult-onset paralysis in animals that lack SKN-1A is caused by higher levels of Aβ accumulation and aggregation.
 
-## ER-associated SKN-1A promotes longevity and healthy aging
+### ER-associated SKN-1A promotes longevity and healthy aging
 
 Accumulation of misfolded and aggregated proteins is thought to cause decline in cellular function and health during aging (David et al., 2010; López-Otín et al., 2013; Walther et al., 2015). Mutations that affect both SKN-1A and SKN-1C reduce lifespan, but the individual contribution of SKN-1A is not known (Blackwell et al., 2015). We found that skn-1a(mg570), which affects only SKN-1A, causes ~20% reduction in lifespan compared to the wild type (Figure 5a). The lifespan of skn-1a/c(zu67) animals lacking both SKN-1A and SKN-1C is the same as that of skn-1a(mg570) (Figure 5b), showing that the effect of skn-1a/c(zu67) on lifespan can be explained by loss of SKN-1A. The mgTi1[rpl-28p::skn-1a::gfp] single copy transgene expresses a functional SKN-1A::GFP fusion protein under the control of the constitutively active rpl-28 promoter (Lehrbach and Ruvkun, 2016). This transgene rescues the bortezomib sensitivity and maternal effect lethality of skn-1a/c(zu67) mutants. The lifespan of skn-1a/c(zu67); mgTi1[rpl-28p::skn-1a::gfp] animals is not reduced compared to wild type, indicating that SKN-1A is sufficient to confer normal lifespan in the absence of SKN-1C. In fact, the lifespan of the rescued animals was reproducibly longer than the wild type (Figure 5c). This single copy transgene drives expression from the rpl-28 ribosome subunit promoter so that SKN-1A::GFP is likely to be overexpressed compared to endogenous SKN-1A. Other independently isolated single-copy rpl-28p::skn-1a transgenes also extend lifespan (Figure 5d). Thus, SKN-1A is necessary for normal lifespan and sufficient to extend lifespan when over-expressed. Like skn-1a(mg570), the lifespan of png-1(ok1654) mutant animals is reduced compared to wild type (Figure 5e). png-1(ok1654) lifespan is shorter than the skn-1a(mg570) mutant, suggesting that PNG-1 might promote longevity through additional SKN-1A-independent pathways. The lifespan of png-1(ok1654); skn-1a(mg570) double mutants is not further reduced compared to the png-1(ok1654) mutant, indicating that both genes act in the same pathway that controls lifespan (Figure 5f). These data suggest that the PNG-1-dependent processing of SKN-1A following release from the ER is required for this transcription factor to regulate lifespan.
 
@@ -102,54 +341,694 @@ The failure of proteasome-dependent protein quality control systems is intimatel
 
 ## Materials and methods
 
-## C. elegans maintenance and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>E. coli OP50</td>
+      <td>CGC</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>E. coli HT115</td>
+      <td>CGC</td>
+      <td>HT115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I.</td>
+      <td>CGC</td>
+      <td>CB1301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dvIs2</td>
+      <td>CGC</td>
+      <td>CL2006</td>
+      <td>unc-54::Aβ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dvIs37</td>
+      <td>CGC</td>
+      <td>CL2331</td>
+      <td>myo-3::gfp::Aβ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2183</td>
+      <td>rpt-3::gfp integrated array</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-5(mg502) I; mgIs72 II</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2184</td>
+      <td>proteasome mutant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; skn-1(mg570) IV</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; ddi-1(mg571) IV</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3) III; mgTi4</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2212</td>
+      <td>rpl-28::ha::skn-1a::gfp::tbb-2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3) III; mgTi5</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2213</td>
+      <td>rpl-28::ha::skn-1a::gfp::tbb-2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; sel-1(mg547) V</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2215</td>
+      <td>Strain, strain</td>
+    </tr>
+    <tr>
+      <td>background (C. elegans)</td>
+      <td>unc-119(ed3) III; skn-1(zu67) IV; mgTi1</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2221</td>
+      <td>rpl-28::skn-1a::GFP::tbb-2 rescues skn-1(zu67)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1654) I; mgIs72 II</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg570) IV</td>
+      <td>Lehrbach and Ruvkun, 2016</td>
+      <td>GR2245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1654) I</td>
+      <td>CGC</td>
+      <td>GR2246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1654) I; skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3089</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs77 V</td>
+      <td>this study</td>
+      <td>GR3090</td>
+      <td>rpl-28::ub(G76V)::gfp::tbb-2, myo-3::mcherry marker. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3) III; mgTi15</td>
+      <td>this study</td>
+      <td>GR3091</td>
+      <td>rpl-28::skn-1a::GFP::tbb-2. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3) III; mgTi17</td>
+      <td>this study</td>
+      <td>GR3092</td>
+      <td>rpl-28::HA::skn-1a::GFP::tbb-2. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg570) IV; mgIs77 V</td>
+      <td>this study</td>
+      <td>GR3094</td>
+      <td>rpl-28::ub(G76V)::gfp::tbb-2. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; pas-1(mg511) V</td>
+      <td>this study</td>
+      <td>GR3141</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-10(mg525) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3142</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; rpn-1(mg514) IV</td>
+      <td>this study</td>
+      <td>GR3143</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-5(mg509) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3144</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; rpt-6(mg513) III</td>
+      <td>this study</td>
+      <td>GR3145</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-10(mg495) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3146</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; rpt-6(mg512) III</td>
+      <td>this study</td>
+      <td>GR3147</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs78 IV</td>
+      <td>this study</td>
+      <td>GR3148</td>
+      <td>myo-3::H2B::mcherry::SL2::pbs-5[T65A] (pNL47). Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; mgIs78 IV</td>
+      <td>this study</td>
+      <td>GR3149</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-10(mg529) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3150</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-2(mg530) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3151</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-10(mg531) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3152</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e190) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3153</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs78 IV; mgIs77 V</td>
+      <td>this study</td>
+      <td>GR3154</td>
+      <td>myo-3::H2B::mcherry::SL2::pbs-5[T65A] and Ub(G76V)::gfp. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-11(mg494) mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3155</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3156</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I</td>
+      <td>this study</td>
+      <td>GR3157</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; skn-1 (mg674) mgIs78 IV</td>
+      <td>this study</td>
+      <td>GR3158</td>
+      <td>mg674 causes G2STOP in SKN-1A. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1157) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3159</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3160</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg528) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3161</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg540) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3162</td>
+      <td>unc-54ts. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg674) mgIs78 IV</td>
+      <td>this study</td>
+      <td>GR3163</td>
+      <td>mg674 causes G2STOP in SKN-1A. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I; mgIs72 II; skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3164</td>
+      <td>Reagent requests: see Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I; skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3165</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I; mgIs72 II;  skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3166</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I; skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3167</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg674) mgIs78/nT1[qIs51] IV; mgIs77/nT1[qIs51] V</td>
+      <td>this study</td>
+      <td>GR3168</td>
+      <td>skn-1(mg674) mgIs78; mgIs77 animals are very sick, use balancer to maintain. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I; skn-1 (mg570) IV; mgIs77 V</td>
+      <td>this study</td>
+      <td>GR3169</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I; skn-1 (mg570) IV; mgIs77 V</td>
+      <td>this study</td>
+      <td>GR3170</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-3(mg527) mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3171</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-2(mg581) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3172</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-9(mg533) mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3173</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-8(mg587) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3174</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-5(mg534) mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3175</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>rpn-8(mg536) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3176</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 Il; rpn-1(mg537) IV</td>
+      <td>this study</td>
+      <td>GR3177</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-2(mg538) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3178</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pbs-4(mg539) I; mgIs72 II</td>
+      <td>this study</td>
+      <td>GR3179</td>
+      <td>proteasome mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; dvIs2</td>
+      <td>this study</td>
+      <td>GR3180</td>
+      <td>Amyloid beta + rpt-3::gfp. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; dvIs2; skn-1(mg570) IV</td>
+      <td>this study</td>
+      <td>GR3181</td>
+      <td>Amyloid beta + rpt-3::gfp in skn-1a mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg570) IV; mgIs77 V; dvIs2</td>
+      <td>this study</td>
+      <td>GR3182</td>
+      <td>unc-54::Aβ+Ub(G76V):: gfp in skn-1a mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs77 V; dvIs2</td>
+      <td>this study</td>
+      <td>GR3183</td>
+      <td>unc-54::Aβ+Ub(G76V)::gfp. Reagent requests: s ee Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(mg570) IV; dvIs2</td>
+      <td>this study</td>
+      <td>GR3184</td>
+      <td>unc-54::Aβ in skn-1a mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (C. elegans)</td>
+      <td>skn-1(mg570) IV; dvIs37</td>
+      <td>this study</td>
+      <td>GR3185</td>
+      <td>myo-3::gfp::Aβ in skn-1a mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1654) I; dvIs2</td>
+      <td>this study</td>
+      <td>GR3186</td>
+      <td>unc-54::Aβ in a png-1 mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1654) I; skn-1(mg570) IV; dvIs2</td>
+      <td>this study</td>
+      <td>GR3187</td>
+      <td>unc-54::Aβ in png-1 skn-1a double mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; ddi-1(mg571) IV; dvIs2</td>
+      <td>this study</td>
+      <td>GR3188</td>
+      <td>unc-54::Aβ in ddi-1 mutant + rpt-3::gfp. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>png-1(ok1645) I; mgIs72 II; dvIs2</td>
+      <td>this study</td>
+      <td>GR3189</td>
+      <td>unc-54::Aβ in png-1 mutant + rpt-3::gfp. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dvIs2; mgEx813</td>
+      <td>this study</td>
+      <td>GR3190</td>
+      <td>skn-1a overexpression (pNL214), array marked by myo-2::mcherry. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dvIs2; mgEx814</td>
+      <td>this study</td>
+      <td>GR3191</td>
+      <td>skn-1a overexpression (pNL214), array marked by myo-2::mcherry. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>dvIs2; mgEx815</td>
+      <td>this study</td>
+      <td>GR3192</td>
+      <td>skn-1a overexpression (pNL214), array marked by myo-2::mcherry. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mgIs72 II; sel-1(mg547) V; dvIs2</td>
+      <td>this study</td>
+      <td>GR3193</td>
+      <td>unc-54::Aβ in sel-1 mutant + rpt-3::gfp. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>hsf-1(sy441) I; mgIs72</td>
+      <td>this study</td>
+      <td>GR3291</td>
+      <td>rpt-3::gfp, hif-1 mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3) III; mgEx831</td>
+      <td>this study</td>
+      <td>GR3292</td>
+      <td>rpl-28p::skn-1a[∆DBD]:: gfp marked by myo-2::mcherry and unc-119(+). Reagent requests: s ee Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(e1301) I; mgEx831</td>
+      <td>this study</td>
+      <td>GR3293</td>
+      <td>rpl-28p::skn-1a[∆DBD]::gfp, unc-54ts mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-54(mg519) I; mgEx831</td>
+      <td>this study</td>
+      <td>GR3294</td>
+      <td>rpl-28p::skn-1a[∆DBD]::gfp, unc-54ts mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>hsf-1(sy441) I; mgIs72;  skn-1a(mg570)</td>
+      <td>this study</td>
+      <td>GR3295</td>
+      <td>rpt-3::gfp, hif-1, skn-1a double mutant. Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>skn-1(zu67) IV/nT1 [unc-?(n754) let-?](IV;V)</td>
+      <td>CGC</td>
+      <td>EU1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>wild type</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>rpl-28::skn-1a::tbb-2</td>
+      <td>Lehrbach and Ruvkun, 2016.</td>
+      <td>pNL214</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>myo-3::mcherry::his-58:: SL2::pbs-5[T65A]</td>
+      <td>this study</td>
+      <td>pNL47</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>rpl-28::ub(G76V)::gfp::tbb-2</td>
+      <td>this study</td>
+      <td>pNL121</td>
+      <td>Reagent requests: see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>L C Laboratories</td>
+      <td>Cat#B1408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td>https://www.zeiss.com/microscopy/us/products/microscope-software/zen.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ape (A plasmid editor)</td>
+      <td>M Wayne Davis</td>
+      <td></td>
+      <td>http://jorgensen.biology.utah.edu/wayned/ape/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans maintenance and genetics
 
 C. elegans were maintained on standard media at 20°C (unless otherwise indicated) and fed E. coli OP50. A list of strains used in this study is provided in the Key Resources Table. RNAi was performed as described in Kamath and Ahringer (2003). Mutagenesis was performed by treatment of L4 animals in 47 mM EMS for 4 hr at 20°C. Some strains were provided by the CGC, which is funded by NIH Office of Research Infrastructure Programs (P40 OD010440). png-1(ok1654) was generated by the C. elegans Gene Knockout Project at the Oklahoma Medical Research Foundation, part of the International C. elegans Gene Knockout Consortium.
 
-## Identification of EMS induced mutations by whole genome sequencing
+### Identification of EMS induced mutations by whole genome sequencing
 
 Genomic DNA was prepared using the Gentra Puregene Tissue kit (Qiagen, #158689) according to the manufacturer’s instructions. Genomic DNA libraries were prepared using the NEBNext genomic DNA library construction kit (New England Biololabs, #E6040), and sequenced on a Illumina Hiseq instrument. Deep sequencing reads were analyzed using Cloudmap (Minevich et al., 2012).
 
-## Transgenesis
+### Transgenesis
 
 Cloning was performed by isothermal/Gibson assembly (Gibson et al., 2009). All plasmids used for transgenesis are listed in the Key Resources Table. All constructs were assembled in pNL43 (Lehrbach and Ruvkun, 2016) or in pBluescript. The SKN-1 constructs used in this study are described in Lehrbach and Ruvkun (2016). Extra-chromosomal arrays were generated using myo-2::mcherry as a co-injection marker. EMS mutagenesis was used to induce integration of extrachromosomal arrays. The myo-3p::pbs-5[T65A] construct was generated to expresses mcherry:: histone(H2B) and mutant PBS-5 from an artificial operon under control of the myo-3 promoter, which drives expression specifically in the body wall muscle (myo-3p::mcherry::H2B::SL2::PBS-5[T65A]). The mcherry::H2B serves to confirm the tissue specific expression of the transgene. A DNA fragment containing the 5’UTR, coding sequence and 3’UTR of pbs-5 was cloned and site-directed mutagenesis was used to introduce the T65A mutation. The altered pbs-5 DNA fragment was then cloned into pBluescript with the myo-3 promoter (a 2169 bp fragment immediately upstream of the myo-3 start codon) and mcherry fused in-frame to the his-58 (H2B) coding sequence (a 373 bp fragment containing the his-58 open reading frame). The ub(G76V)::gfp construct was generated to drive ubiquitous expression of UB(G76V)::GFP under control of the rpl-28 promoter. A synthesized DNA fragment encoding ubiquitin was cloned in frame with GFP to generate the UB(G76V)::GFP coding sequence. The G76V mutation was introduced by the oligos used for Gibson assembly. This was inserted into pNL43 with the rpl-28 promoter (605 bp immediately upstream of the rpl-28 start codon) and tbb-2 3’UTR (376 bp immediately downstream of the tbb-2 stop codon).
 
-## Genome modification by CRISPR/Cas9
+### Genome modification by CRISPR/Cas9
 
 The mgIs78[myo-3p::mcherry::H2B::SL2::PBS-5[T65A]] transgene is integrated within chromosome IV and appears to be tightly linked to skn-1. The skn-1a(mg674) allele is identical to mg570 and was generated as described in Lehrbach and Ruvkun (2016) using dpy-10(cn64) as a co-CRISPR marker by injection of mgIs78 transgenic animals.
 
-## Microscopy
+### Microscopy
 
 For rpt-3p::gfp, rpl-28p::Ub(G76V)::gfp and myo-3p::gfp::Aβ transgenics, bright field and GFP fluorescence images were collected using a Zeiss AxioZoom V16, equipped with a Hammamatsu Orca flash 4.0 digital camera camera, and using Axiovision software. For rpl-28p::skn-1a[∆DBD]::gfp, DIC and GFP fluorescence images were collected using a Zeiss Axio Image Z1 microscope, equipped with a Zeiss AxioCam HRc digital camera, using Axiovision software. Images were processed using ImageJ software. For all fluorescence images, images shown within the same figure panel were collected using the same exposure time and then processed identically in ImageJ. To quantify rpt-3p::gfp expression, the maximum pixel intensity within a transverse section approximately 25 μm posterior to the pharynx of adult animals was measured using imageJ. To quantify UB(G76V)::GFP stabilization in muscle, images of transgenic animals were manually inspected in imageJ. Weak stabilization was recorded if animals contained low but detectable levels of UB(G76V)::GFP in any part of the body wall muscle (16-bit pixel intensity greater than 500). Strong stabilization was recorded if animals contained higher levels of UB(G76V)::GFP in any part of the body wall muscle (16-bit pixel intensity greater than 2000). Aβ foci were counted using the find maxima tool in imageJ.
 
-## Bortezomib treatment for imaging
+### Bortezomib treatment for imaging
 
 Plates were supplemented with bortezomib (LC Laboratories #B1408) by spotting a bortezomib solution on top of NGM plates seeded with OP50. The bortezomib solution was allowed to dry into the plate before adding L4 stage animals. These animals were allowed to reproduce, and reporter expression was imaged in the next generation. All treatment conditions contained less than 0.001% DMSO and bortezomib treated worms were compared to DMSO-treated control animals.
 
-## Sterility assay
+### Sterility assay
 
 L4 animals were selected from mixed stage cultures that had been maintained without starvation for at least two generations and shifted to 20°C or 25°C. In the next generation, L4 animals were picked individually to fresh plates and returned to the same temperature. The production of progeny was monitored over the following 5 days. Animals that produced no progeny were recorded as sterile, all other animals (regardless of brood size or viability of progeny) were recorded as fertile. Fertility of at least 10 animals was assessed for each strain at each temperature. All strains used in fertility assays contained the mgIs72 transgene.
 
-## Aβ-induced paralysis assay
+### Aβ-induced paralysis assay
 
 For each assay at least 100 starvation-synchroized L1 stage animals were raised at 25°C. Animals grown under this condition reach adulthood after ~48 hr. Starting at 48 hr, animals were scored for paralysis every 24 hr. Animals were scored as paralyzed if they showed no sign of movement after tapping the plate or gently prodding the animal.
 
-## unc-54ts paralysis assay
+### unc-54ts paralysis assay
 
 L4 animals were selected from mixed stage cultures that had been maintained without starvation for at least two generations and shifted to 20°C or 25°C. When the majority of the progeny had reached adulthood, adult animals were scored for paralysis. Animals were scored as paralyzed if they showed no sign of movement after tapping the plate or gently prodding the animal. At least 100 animals for each strain under each condition were scored.
 
-## Measurement of locomotor rate (speed)
+### Measurement of locomotor rate (speed)
 
 Locomotor assays were initiated by selecting L4 animals from mixed stage cultures that had been maintained without starvation for at least two generations. L4 animals were maintained for a further 24 hr to assay day one adults, or for correspondingly longer periods to assay day 3, 5 and 7 adults. For assays in which locomotion was measured on multiple days, a single population of animals was maintained and repeatedly tested. Animals that had bagged or ruptured were removed from analysis since these defects impair locomotion but do not reflect changes in body wall muscle function. To assay locomotor rate, each animal was transferred to a fresh plate seeded with OP50 and then removed after 1 min. An image of the tracks left in the lawn by each animal was collected. The distanced travelled was then measured using imageJ and used to calculate average speed.
 
-## Lifespan analysis
+### Lifespan analysis
 
 Lifespan assays were initiated by selecting L4 animals from mixed stage cultures that had been maintained without starvation for at least two generations. Animals were transferred to fresh plates on day three and then every 2 days until reproduction ceased and every 3–5 days thereafter. Animals were checked for survival at least every other day. Animals that died by bagging or crawling off the plates were censored. Animals that died due to age-related vulval integrity defects (after ceasing reproduction, when such defects can be distinguished from bagging) were not censored from analysis, as this is a major mode of age-dependent lethality of some of the mutants analyzed. Survival curves, calculation of mean lifespan and statistical analysis was performed in R using the ‘survival’ package. The log-rank (Mantel-Haenszel) test was used to compare survival curves. Statistics for all assays (including replicate assays not shown in main figures) are shown in Supplementary file 1.
 
-## Scoring of age-related vulval integrity defects
+### Scoring of age-related vulval integrity defects
 
 Assays to measure age-related vulval integrity defects were initiated by selecting L4 animals from mixed-stage cultures that had been maintained without starvation for at least two generations. Animals were transferred to fresh plates on days 3 and 5 of the assay. On days 5 and 7, animals were checked for rupture, and the cumulative total number of animals ruptured during the first week of adulthood recorded. 30–80 animals were analyzed in each assay. At least three replicate assays were performed for each genotype.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses of lifespan data are described in the lifespan analysis section. All other statistical analyses were performed using Graphpad Prism. All biological replicates were performed with independent populations of animals.

@@ -50,25 +50,368 @@ Estimating the host response to P. falciparum infection requires close follow-up
 
 ## Results
 
-## Cohort participants and P. falciparum infections
+### Cohort participants and P. falciparum infections
 
 This analysis involved data from 477 children and adults (233 males and 244 females) that were followed for a total of 669.6 person-years (Table 1). 25 participants, 10 males and 15 females, were enrolled after initial enrollment (Figure 1); median duration of follow-up in those who were dynamically enrolled was 0.84 years (IQR 0.69–1.23) compared to 1.45 years (IQR 1.43–1.47) in those enrolled during initial enrollment. 149 of 477 participants (31.2%) included in the analysis had at least one P. falciparum infection detected (Figure 1). 114 participants had 822 successfully genotyped samples and had infections characterized by clone and by infection event. 35 samples (from 35 unique participants) had very low-density infections (<1 parasite/µL) that could not be genotyped; these infections were characterized at the infection event level only. We achieved a read count of >10,000 for 92% of genotyped samples, identifying 45 unique AMA-1 clones in our population (frequencies and sequences in Supplementary file 1e). At the clone level, the proportion of baseline infections out of all infections in males was 117/171 (68.4%), compared to 68/116 (58.8%) baseline infections in females (p=0.10). At the infection event level, there were 54/104 (51.9%) baseline infections in males and 45/89 (50.6%) baseline infections in females (p=0.89).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59872/elife-59872-fig1-v1.jpg)
 
-## Behavioral malaria risk factors and measures of malaria burden
+**Table 1.**
+ Behavioral risk factors for malaria infection and measures of malaria burden in study population, stratified by age and sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Metric</th>
+      <th colspan="8">Age and gender categories</th>
+    </tr>
+    <tr>
+      <th colspan="2">All</th>
+      <th colspan="2">&lt;5 years old</th>
+      <th colspan="2">5–15 years old</th>
+      <th colspan="2">16 years and older</th>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of participants, n</td>
+      <td>233</td>
+      <td>244</td>
+      <td>73</td>
+      <td>84</td>
+      <td>101</td>
+      <td>71</td>
+      <td>59</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Median days of follow-up per participant</td>
+      <td>530.0</td>
+      <td>530.0</td>
+      <td>525.0</td>
+      <td>524.5</td>
+      <td>530.0</td>
+      <td>531.0</td>
+      <td>530.0</td>
+      <td>530.0</td>
+    </tr>
+    <tr>
+      <td>Slept under LLIN the previous night</td>
+      <td>53.6%</td>
+      <td>56.3%</td>
+      <td>54.1%</td>
+      <td>56.3%</td>
+      <td>47.9%</td>
+      <td>47.8%</td>
+      <td>63.7%</td>
+      <td>64.3%</td>
+    </tr>
+    <tr>
+      <td>Person-years of follow-up</td>
+      <td>324.2</td>
+      <td>345.4</td>
+      <td>87.3</td>
+      <td>96.7</td>
+      <td>152.6</td>
+      <td>118.5</td>
+      <td>84.22</td>
+      <td>130.1</td>
+    </tr>
+    <tr>
+      <td>Number of overnight trips</td>
+      <td>44</td>
+      <td>107</td>
+      <td>21</td>
+      <td>19</td>
+      <td>9</td>
+      <td>10</td>
+      <td>14</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>Incidence of overnight trips*, (95% CI)</td>
+      <td>0.14 (0.09–0.20)</td>
+      <td>0.31 (0.20–0.49)</td>
+      <td>0.24 (0.14–0.42)</td>
+      <td>0.20 (0.09–0.42)</td>
+      <td>0.06 (0.03–0.13)</td>
+      <td>0.08 (0.03–0.24)</td>
+      <td>0.17 (0.09–0.31)</td>
+      <td>0.60 (0.30–1.18)</td>
+    </tr>
+    <tr>
+      <td>Episodes of malaria*</td>
+      <td>11</td>
+      <td>13</td>
+      <td>5</td>
+      <td>2</td>
+      <td>5</td>
+      <td>9</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Incidence of malaria**, (95% CI)</td>
+      <td>0.03 (0.02–0.06)</td>
+      <td>0.04 (0.02–0.09)</td>
+      <td>0.06 (0.02—0.16)</td>
+      <td>0.02 (0.00–0.11)</td>
+      <td>0.03 (0.01–0.08)</td>
+      <td>0.08 (0.03–0.23)</td>
+      <td>0.01 (0.00–0.08)</td>
+      <td>0.02 (0.00–0.17)</td>
+    </tr>
+    <tr>
+      <td>Number of routine visits, n</td>
+      <td>4316</td>
+      <td>4583</td>
+      <td>1164</td>
+      <td>1293</td>
+      <td>2034</td>
+      <td>1568</td>
+      <td>1118</td>
+      <td>1722</td>
+    </tr>
+    <tr>
+      <td>Prevalence of microscopic parasitemia***</td>
+      <td>2.9%</td>
+      <td>1.4%</td>
+      <td>1.8%</td>
+      <td>1.1%</td>
+      <td>4.4%</td>
+      <td>2.7%</td>
+      <td>1.3%</td>
+      <td>0.5%</td>
+    </tr>
+    <tr>
+      <td>Prevalence of parasitemia by qPCR</td>
+      <td>14.4%</td>
+      <td>9.2%</td>
+      <td>5.8%</td>
+      <td>3.7%</td>
+      <td>17.0%</td>
+      <td>15.3%</td>
+      <td>18.5%</td>
+      <td>7.7%</td>
+    </tr>
+    <tr>
+      <td>Geometric mean parasite density****</td>
+      <td>3.41</td>
+      <td>3.06</td>
+      <td>4.86</td>
+      <td>13.06</td>
+      <td>6.31</td>
+      <td>4.20</td>
+      <td>1.09</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>Median complexity of infection, (IQR)</td>
+      <td>3 (1–7)</td>
+      <td>2 (1–2)</td>
+      <td>1 (1–2.5)</td>
+      <td>2 (1–2.3)</td>
+      <td>4 (2–9)</td>
+      <td>2 (1–2)</td>
+      <td>1 (1–2)</td>
+      <td>1 (1–2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Malaria includes one episode (female,<5 years old), due to non-falciparum species (P. malariae).**per person-year.***Parasitemia by light microscopy includes one episode (female, 5–15 years old) due to non-falciparum species (P. ovale).****Geometric mean parasite density in parasites/µL of all qPCR-positive routine visits._
+
+### Behavioral malaria risk factors and measures of malaria burden
 
 There was no difference in reported rates of LLIN use the previous night by sex (Table 1). Women over the age of 16 traveled overnight outside of the study area more than men (incidence rate ratio [IRR] for females vs. males = 3.61, 95% confidence interval [CI] 1.83 to 7.13), a potential risk factor for malaria exposure. Antimalarial use outside the study clinic was reported only four times (3 females and one male, all under the age of 5). In this region receiving regular rounds of IRS, the incidence of symptomatic malaria was low in all age categories, and there was no evidence of a difference in incidence of symptomatic malaria by sex overall (IRR for females vs. males = 1.11, 95% CI 0.49 to 2.52) or when adjusted for age (IRR = 1.26, 95% CI 0.54 to 2.96). In contrast, prevalence ratio (PR) of P. falciparum parasitemia by microscopy in females versus males across all age categories was 0.49 (95% CI 0.36 to 0.65), with relative differences in prevalence most pronounced in the oldest age group. Similar findings were seen when prevalence was assessed by ultrasensitive qPCR, with PR = 0.64 in females vs. males (95% CI 0.43 to 0.96), again with the largest differences seen in the oldest age group. Adjusting for age as a categorical variable, LLIN use, and travel did not qualitatively change prevalence ratios for microscopic parasitemia (PR in females vs. males = 0.57, 95% CI 0.42 to 0.77) or for qPCR-positive parasitemia (PR in females vs. males = 0.67, 95% CI 0.60 to 0.76). We also found no evidence for a difference in parasite density as determined by qPCR between males and females after adjusting for age as a continuous variable (p=0.47). Median complexity of infection (COI) was higher in males than in females overall, driven primarily by a higher COI in male school-aged children.
 
-## Force of infection by age and sex
+### Force of infection by age and sex
 
 To determine whether higher infection prevalence in males was due to an increased rate of infection, we used longitudinal genotyping to calculate the force of infection (FOI, number of new blood stage infections per unit time). Overall, the FOI was low, with new infections occurring on average less than once every 5 years (Table 2). There was no evidence for a significant difference in FOI by sex overall (IRR for females vs. males = 0.88, 95% CI 0.48 to 1.62 by clone and IRR = 0.83, 95% CI 0.52 to 1.33 by infection event). There was also no evidence for a significant difference in FOI by sex when adjusted for age category (IRR = 0.88, 95% CI 0.47 to 1.63 by clone and IRR = 0.83, 95% CI 0.53 to 1.31 by infection event). For analysis both by clone and by infection event, there was a trend toward higher FOI in males compared to females. We performed a sensitivity analysis by decreasing the number of skips necessary to declare an infection cleared (Supplementary file 1f). Performing the same analysis using one skip for clearance instead of 3 skips increased the FOI in all groups and increased the trend toward higher FOI in males, with IRR for females vs. males when adjusted for age category = 0.71, 95% CI 0.41 to 1.24 by clone and IRR = 0.75, 95% CI 0.47 to 1.22 by infection event.
 
-## Rate of clearance of infection and duration of infection by sex
+**Table 2.**
+ Molecular force of infection (FOI) by clone and by infection event, stratified by age and sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Molecular force of infection (FOI)</th>
+      <th rowspan="2">Sex</th>
+      <th colspan="4">Age category</th>
+    </tr>
+    <tr>
+      <th>All</th>
+      <th>&lt;5 years</th>
+      <th>5–15 years</th>
+      <th>16 years or older</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">By clone, ppy* (95% CI)</td>
+      <td>All</td>
+      <td>0.18 (0.13–0.24)</td>
+      <td>0.14 (0.07–0.28)</td>
+      <td>0.19 (0.08–0.43)</td>
+      <td>0.20 (0.08–0.46)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>0.19 (0.12–0.30)</td>
+      <td>0.16 (0.07–0.39)</td>
+      <td>0.19 (0.10–0.37)</td>
+      <td>0.22 (0.09–0.54)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>0.17 (0.09–0.31)</td>
+      <td>0.12 (0.03–0.49)</td>
+      <td>0.19 (0.08–0.45)</td>
+      <td>0.18 (0.06–0.54)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">By event, ppy* (95% CI)</td>
+      <td>All</td>
+      <td>0.14 (0.11–0.18)</td>
+      <td>0.09 (0.06–0.16)</td>
+      <td>0.16 (0.09–0.30)</td>
+      <td>0.16 (0.08–0.32)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>0.16 (0.11–0.22)</td>
+      <td>0.13 (0.07–0.27)</td>
+      <td>0.18 (0.11–0.28)</td>
+      <td>0.15 (0.07–0.29)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>0.13 (0.08–0.21)</td>
+      <td>0.06 (0.02–0.18)</td>
+      <td>0.14 (0.07–0.27)</td>
+      <td>0.17 (0.07–0.41)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*per person-year._
+
+### Rate of clearance of infection and duration of infection by sex
 
 Since females had a lower prevalence of infection but similar rate of acquiring infections compared to males, we evaluated whether there was a difference between sexes in the rate at which infections were cleared. Asymptomatic infections were included in this analysis if they were not censored as stated in the methods. At the clone level, 105 baseline infections and 53 new infections were included; there was a slightly higher proportion of baseline infections in males (68/99, 68.7%), compared to the proportion of baseline infections in females (37/59, 62.7%) (p=0.49). At the infection event level, 58 baseline infections and 51 new infections were included and there was no difference in the proportion of baseline infections by sex, with 32/60 (53.3%) baseline infections in males and 26/49 (53.1%) baseline infections in females (p=1.0).
 
 Unadjusted hazard ratios for clearing infecting clones showed that asymptomatic infections cleared naturally (i.e., when not treated by antimalarials) at nearly twice the rate in females vs. males (hazard ratio (HR) 1.92, 95% CI 1.19 to 3.11, Table 3). In addition, new infections cleared faster than baseline infections and monoclonal infections cleared faster than polyclonal infections. Unadjusted hazard ratios for clearance of infection events (as opposed to clones) also showed faster clearance in females vs. males (HR = 2.30, 95% CI 1.20 to 4.42). Results were similar in multivariate models including age, gender, the period during which the infection was first observed, and parasite density, demonstrating faster clearance in females vs. males (HR = 1.82, 95% CI 1.20 to 2.75 by clone and HR = 2.07, 95% CI 1.24 to 3.47 by infection event). Complexity of infection was not included in the final adjusted model because the model fit the data less well when COI was included as a predictor. In both adjusted models, new infections cleared faster than baseline infections. Higher parasite densities were associated with slower clearance by clone and by infection event, but the effect size was larger when data were analyzed by infection event (HR = 0.44, 95% CI 0.35 to 0.54). There was no evidence for interaction between age and sex in either adjusted model. We performed a sensitivity analysis by decreasing the number of skips necessary to declare an infection cleared. Regardless of whether three skips, two skips, or one skip was used to determine infection clearance, females cleared their infections faster than males both by clone and by infection event (Supplementary file 1g).
+
+**Table 3.**
+ Hazard ratios for rates of clearance of infection, by clone and by infection event.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Predictors</th>
+      <th rowspan="2">Categories</th>
+      <th colspan="2">Hazard ratio by clone (95% CI)</th>
+      <th colspan="2">Hazard ratio by infection event (95% CI)</th>
+    </tr>
+    <tr>
+      <th>Unadjusted</th>
+      <th>Adjusted</th>
+      <th>Unadjusted</th>
+      <th>Adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Sex</td>
+      <td>Male</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>1.92 (1.19–3.11)</td>
+      <td>1.82 (1.20–2.75)</td>
+      <td>2.30 (1.20–4.42)</td>
+      <td>2.07 (1.24–3.47)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Age</td>
+      <td>16 years or greater</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>5–15 years</td>
+      <td>0.66 (0.39–1.10)</td>
+      <td>0.81 (0.49–1.36)</td>
+      <td>0.82 (0.39–1.74)</td>
+      <td>1.27 (0.72–2.25)</td>
+    </tr>
+    <tr>
+      <td>&lt;5 years</td>
+      <td>1.64 (0.79–3.41)</td>
+      <td>1.55 (0.76–3.17)</td>
+      <td>2.01 (0.80–5.00)</td>
+      <td>1.75 (0.87–3.53)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Complexity of infection (COI)</td>
+      <td>Polyclonal (COI &gt; 1)</td>
+      <td>ref</td>
+      <td>--</td>
+      <td>ref</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Monoclonal (COI = 1)</td>
+      <td>1.63 (1.03–2.57)</td>
+      <td>--</td>
+      <td>0.95 (0.38–2.34)</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Infection status</td>
+      <td>Present at baseline</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>New infection</td>
+      <td>1.94 (1.22–3.07)</td>
+      <td>1.75 (1.05–2.94)</td>
+      <td>4.66 (2.58–8.42)</td>
+      <td>4.32 (2.59–7.20)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Parasite density *</td>
+      <td>0.85 (0.69–1.06)</td>
+      <td>0.81 (0.65–1.00)</td>
+      <td>0.41 (0.32–0.51)</td>
+      <td>0.44 (0.35–0.54)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Increasing parasite density (log10) in parasites/microliter, as measured by qPCR._
 
 We next estimated durations of asymptomatic infection by age and sex using results from a model that included these covariates (Figure 2). Durations of infection ranged from 103 days to 447 days by clone, and from 87 to 536 days by infection event. Males had a longer duration of infection across all age categories. Children aged 5–15 years had the longest duration of infection, followed by adults. Therefore, overall, males aged 5–15 years had the longest estimated duration of infection by either clone (447 days) or infection event (526 days).
 
@@ -94,29 +437,29 @@ In summary, we estimated the clearance of asymptomatic P. falciparum infections 
 
 ## Materials and methods
 
-## Study setting and population-level malaria control interventions
+### Study setting and population-level malaria control interventions
 
 This cohort study was carried out in Nagongera sub-county, Tororo district, eastern Uganda, an area with historically high malaria transmission. However, 7 rounds of indoor residual spraying (IRS) from 2014 to 2019 have resulted in a significant decline in the burden of malaria (Nankabirwa et al., 2019). Pre-IRS, the daily human biting rate (HBR) was 34.3 and the annual entomological inoculation rate (EIR) was 238; after 5 years of IRS, in 2019 the daily HBR was 2.07 and overall annual EIR was 0.43 as reported by Nankabirwa et. al (Nankabirwa et al., 2020).
 
-## Study design, enrollment, and follow-up
+### Study design, enrollment, and follow-up
 
 All members of 80 randomly selected households with at least two children were enrolled in October 2017 using a list generated by enumerating and mapping all households in Nagongera sub-county (Nankabirwa et al., 2020). The cohort was dynamic such that residents joining the household were enrolled and residents leaving the household were withdrawn. Data for this analysis was collected from October 1st, 2017 through March 31st, 2019; participants were included if they had at least 6 months of contiguous follow-up. Data from the 25 dynamically enrolled participants contributed to all analyses, including that of baseline infections. Participants were followed at a designated study clinic open daily from 8 AM to 5 PM. Participants were encouraged to seek all medical care at the study clinic and avoid the use of antimalarial medications outside of the study. Routine visits were conducted every 28 days and included a standardized clinical evaluation, assessment of overnight travel outside of Nagongera sub-county, and collection of blood by phlebotomy for detection of malaria parasites by microscopy and molecular studies. Participants came in for non-routine visits in the setting of illness. Blood smears were performed at enrollment, at all routine visits and at non-routine visits if the participant presented with fever or history of fever in the previous 24 hr. Participants with fever (>38.0°C tympanic) or history of fever in the previous 24 hr had a thick blood smear read urgently. If the smear was positive, the patient was diagnosed with malaria and treated with artemether-lumefantrine. Participants with asymptomatic parasitemia as detected by qPCR or microscopy were not treated with antimalarials, consistent with Uganda national guidelines. Study participants were visited at home every 2 weeks to assess use of long-lasting insecticidal nets (LLINs) the previous night.
 
-## Laboratory methods
+### Laboratory methods
 
 Thick blood smears were stained with 2% Giemsa for 30 min and evaluated for the presence of asexual parasites and gametocytes. Parasite densities were calculated by counting the number of asexual parasites per 200 leukocytes (or per 500, if the count was less than 10 parasites per 200 leukocytes), assuming a leukocyte count of 8,000/μL. A thick blood smear was considered negative if examination of 100 high power fields revealed no asexual parasites. For quality control, all slides were read by a second microscopist, and a third reviewer settled any discrepant readings. In our experienced microscopists’ hands, the lower limit of detection is approximately 20–50 parasites/µL.
 
 For qPCR and genotyping, we collected 200 µL of blood at enrollment, at each routine visit, and at the time of malaria diagnosis. DNA was extracted using the PureLink Genomic DNA Mini Kit (Invitrogen) and parasitemia was quantified using an ultrasensitive varATS qPCR assay with a lower limit of detection of 0.05 parasites/µL (Hofmann et al., 2015). Samples with a parasite density >= 0.1 parasites/µL blood were genotyped via amplicon deep-sequencing. All samples positive for asexual parasites by microscopy but negative for P. falciparum by qPCR were tested for the presence of non-falciparum species using nested PCR (Snounou et al., 1993).
 
-## Sequencing library preparation
+#### Sequencing library preparation
 
 Hemi-nested PCR was used to amplify a 236 base-pair segment of apical membrane antigen 1 (AMA-1) using a published protocol (Miller et al., 2017), with modifications (Supplementary file 1a). Samples were amplified in duplicate, indexed, pooled, and purified by bead cleaning. Sequencing was performed on an Illumina MiSeq platform (250 bp paired-end).
 
-## Bioinformatics methods
+### Bioinformatics methods
 
 Data extraction, processing, and haplotype clustering were performed using SeekDeep (Hathaway et al., 2018), followed by additional filtering (Lerch et al., 2019). Supplementary file 1b shows the full bioinformatics workflow.
 
-## Data analysis
+### Data analysis
 
 A clone was defined as a genetically identical group of parasites, for example with identical haplotypes. Because polyclonal infections can occur due to co-infection (one mosquito bite transmitting multiple clones) or superinfection (multiple bites), we analyzed the infection data both by clone and by infection event. For analysis by clone, each unique clone was counted as an infection and each clone’s disappearance as a clearance event. For analysis by infection event, any new clones seen within 3 visits of the date of the first newly detected clone(s) were grouped together and considered one new ‘infection event.’ Clearance of infection for these events required that all clones in the group be absent. A baseline infection was defined as a clone or infection event (group of clones) detected in the first 60 days of observation of a participant. New infections were defined as a new clone or infection event (group of clones) detected in a participant after day 60.
 
@@ -124,6 +467,6 @@ Imperfect detection of P. falciparum clones is known to be a limitation of all P
 
 Data analysis was conducted in R (R Development Core Team, 2019) and Python (Python Language Reference, 2020). Travel was self-reported at routine visits, and LLIN use on the previous night was reported by field entomology teams who surveyed households every two weeks. Microscopic parasite prevalence was defined by the number of smear-positive routine visits over all routine visits. Parasite prevalence by qPCR was defined as the number of qPCR-positive visits over all routine visits. Thus, these measures represent the average prevalence during routine visits. Prevalence ratios were computed using Poisson regression with generalized estimating equations to adjust for repeated measures. Comparison of parasite density by sex was made using linear regression with generalized estimating equations to adjust for repeated measures. Force of infection (FOI) was defined as the number of new infections, including malaria episodes, divided by person time. Since the start of baseline infections was not observed, baseline infections were not included in calculating FOI. Poisson regression with generalized estimating equations to account for repeated measures was used to estimate malaria incidence, FOI, and to calculate incident rate ratios (IRR) for malaria and FOI. Hazards for clearance of untreated, asymptomatic infections were estimated using time-to-event models (shared frailty models fit using R package ‘frailtypack,’ version 2.12.2) (Rondeau and Gonzalez, 2005; Rondeau et al., 2012). Infections were censored for this analysis if they were only observed in the first three months or the last three months (before January 01, 2018 and after January 01, 2019) because they were not observed for long enough to determine whether clearance occurred. If an infection was observed for only one timepoint, it was assigned a duration of 14 days. These models assumed a constant hazard of clearance and included random effects to account for repeated measures in individuals. Parasite density was included in the model as a time-varying covariate. Duration of infection in days was calculated as 1/adjusted hazard.
 
-## Data accessibility
+### Data accessibility
 
 Data from the cohort study is available through an open-access clinical epidemiology database resource, ClinEpiDB at https://clinepidb.org/ce/app/record/dataset/DS_51b40fe2e2. Genotyping data and code used to generate tables and figures is available on GitHub (Briggs, 2020; copy archived at swh:1:rev:cf6c3256e609f4f136fc8d90f9cae1d61d6d8d63).

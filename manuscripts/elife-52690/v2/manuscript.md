@@ -55,11 +55,23 @@ To gain insights into the molecular mechanisms of S1PR1 regulation of endothelia
 
 ## Results
 
-## Profiling the transcriptome of GFPhigh and GFPlow mouse aortic endothelium
+### Profiling the transcriptome of GFPhigh and GFPlow mouse aortic endothelium
 
 To examine S1PR1/ß-arrestin coupling in the aorta, we used the previously described S1PR1-GS (Kono et al., 2014) mouse strain. Mice heterozygous for the knock-in allele (S1pr1ki/+) are born at the expected Mendelian frequency (Figure 1—figure supplement 1A) and do not show phenotypic abnormalities (Figure 1—figure supplement 1B and C). However, homozygous mice (S1pr1ki/ki) showed an ~2 fold reduction in circulating lymphocytes and ~2 fold increase in lung vascular leakage of Evans Blue dye suggesting that hypomorphism of the fusion S1pr1 allele in the signaling mouse. Therefore, all subsequent experiments were performed using heterozygous S1pr1ki/+ mice harboring one allele of the H2B-GFP (Tumbar et al., 2004) reporter gene, which do not exhibit S1pr1 hypomorphic phenotypes.
 
 S1PR1 expression in aortic endothelium is relatively uniform (Galvani et al., 2015). However, S1PR1 coupling to ß-arrestin, as reported by H2B-GFP expression in S1PR1-GS mice, exhibits clear differences in specific areas of the aorta. For example, thoracic aortae of S1PR1-GS mice show high levels of GFP expression in ECs at intercostal branch points (Galvani et al., 2015) but not in ECs of control (S1pr1+/+) mice harboring only the H2B-GFP reporter allele (Figure 1A), confirming that GFP expression in aortic ECs is dependent on the S1pr1 knock-in allele. The first 2–3 rows of cells around the circumference of branch point orifices exhibit the greatest GFP expression (Figure 1A). In addition, heterogeneously dispersed non-branch point GFP+ ECs were also observed, including at the lesser curvature of the aortic arch (Figure 1A). Areas of the aorta that are distal (>~10 cells) from branch points, as well as the greater curvature, exhibit relatively low frequencies of GFP+ ECs (Figure 1A). GFP+ mouse aortic ECs (MAECs) are not co-localized with Ki-67, a marker of proliferation, suggesting that these cells are not actively cycling (Figure 1A). However, fibrinogen staining was frequently co-localized with GFP+ MAECs, suggesting that ß-arrestin recruitment to S1PR1 was associated with increased vascular leak (Figure 1A). These findings suggest sharp spatial differences in S1PR1 signaling throughout the normal mouse aortic endothelium.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig1-v2.jpg)
+
+**Figure 1.:** (A) H2B-GFP control and S1PR1-GS mouse thoracic aorta whole-mount en face preparations. Representative images from different regions of the aorta are presented and show H2B-GFP (GFP), VE-Cadherin (VEC) or CD31, Ki67 (N = 3) or Fibrinogen (N = 2) immunostaining. Scale bars are 50 µM. (B) FACS gating scheme used for isolation of GFPhigh and GFPlow MAECs showing the uncompensated CD31-PE and GFP channels. S1pr1 ECKO and WT MAECs were isolated using the GFPlow gate of this scheme (see Figure 1—figure supplement 1A). (C) Venn diagram showing differentially expressed transcripts in the GFPhigh vs. GFPlow and S1pr1 ECKO vs. WT MAECs comparisons. The number of transcripts individually or co-enriched (p-value<0.05) are indicated for each overlap (see Supplementary file 1). (D) Selected upstream factors identified by IPA analysis of GFPhigh vs. GFPlow (top) and S1pr1 ECKO vs. WT (bottom) MAEC comparisons. Activation Z-scores and P-values are indicated for each selected factor (see Supplementary file 2). (E) Expression heatmaps (row Z-scores) of the 159 S1pr1 ECKO up-regulated transcripts also differentially expressed between GFPhigh and GFPlow MAECs. Values represent individual replicates from comparison of S1pr1 ECKO vs WT (left) and GFPhigh vs GFPlow (right) and selected transcripts are labeled. For both RNA-seq experiments, three cohorts of mice were used for MAEC isolation and downstream statistical analyses (N = 3 for each experiment).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Enumeration of S1pr1+/+, S1pr1ki/+ and S1pr1ki/ki offspring from S1pr1ki/+ intercrosses. (B) Lymphocyte counts in peripheral blood of young adult (12 week) S1pr1+/+, S1pr1ki/+ and S1pr1ki/ki mice. One-way ANOVA followed by Bonferroni’s post hoc test, ****P < 0.0001 (C) Quantification of Evans Blue dye in lungs two hours after retro-orbital injection into the venous plexus. One-way ANOVA followed by Bonferroni’s post hoc test, **P < 0.005.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) FACS gating scheme for isolation of S1pr1 WT and S1pr1 ECKO. MAECs were defined as cells in the gate labeled ‘P6’, (CD45-Ter119-CD31+). This gate was designed using the GFPlow gate shown in Figure 1B. (B) Counts of GFPhigh and GFPlow MAEC RNA-seq reads that mapped to the eGFP CDS. (C) Expression, in fragments per kilobase per million mapped fragments (FPKMs), of indicated transcripts from bulk RNA-seq of GFPhigh, GFPlow, S1pr1 ECKO and WT MAECs. (D–E) Volcano plots of all transcripts (counts per million > 1) illustrate those differentially expressed between GFPhigh and GFPlow (D) and S1pr1 ECKO and WT (E) MAECs (see Supplementary file 1). Highlighted transcripts are associated with TGFß signaling, inflammatory pathways, and/or show common regulation in GFPhigh and S1pr1 ECKO MAECs. (F) GeneOverlap (Shen et al., 2013) results showing the significance of the overlaps shown in Figure 1C. (G) Expression of transcripts associated with lymphatic endothelial cells.
 
 For insight into the aortic endothelial transcriptomic signature associated with high levels of S1PR1/ß-arrestin coupling, we harvested RNA from fluorescent-activated cell sorted (FACS) GFPhigh and GFPlow MAECs and performed RNA-seq (Figure 1B). To identify genes that are regulated by S1PR1 signaling, we sorted MAECs from tamoxifen-treated Cdh5-CreERT2 S1pr1f/f (S1pr1 ECKO) and S1pr1f/f (S1pr1 WT) littermates (Figure 1—figure supplement 2A). As expected, GFPhigh MAECs showed an ~20 fold increase in eGFP transcripts relative to GFPlow MAECs (Figure 1—figure supplement 2B). We noted that GFPhigh, GFPlow, S1pr1 WT and S1pr1 ECKO MAECs each expressed endothelial lineage genes (Pecam1, Cdh5) and lacked hematopoietic and VSMC markers (Ptprc, Gata1, and Myocd), validating our MAEC isolation procedure (Figure 1—figure supplement 2C). Efficient CRE-mediated recombination of S1pr1 was confirmed in sorted MAECs from S1pr1 ECKO mice (Figure 1—figure supplement 2C).
 
@@ -69,9 +81,25 @@ Among the 204 common DEGs, 151 were both S1pr1 ECKO up-regulated and enriched in
 
 We used Ingenuity Pathway Analysis (IPA, Qiagen) to examine biological processes regulated by S1PR1 signaling and loss of function in MAECs. Transcripts involved in inflammatory processes were prominently up-regulated in both GFPhigh and S1pr1 ECKO MAECs (Figure 1D; see also Supplementary file 2). For example, positive tumor necrosis factor (TNF)-α, lipopolysaccharide, and interferon-γ signaling were observed in both S1pr1 ECKO and GFPhigh MAECs. In contrast, a negative glucocorticoid signature was observed in these cells (Figure 1D). Examples of differentially regulated transcripts are chemokines (Ccl2, Clc5, Ccl7, Ccl21c), cytokines (Il33, Il7), inflammatory modulators (Irf8, Nfkbie, Tnfaip8l1) and cyclooxygenase-2 (Ptgs2) (Figure 1E and Figure 1—figure supplement 2D and E). This suggests that S1PR1 suppresses inflammatory gene expression in mouse aortic endothelium. We noted that transcripts in the TGFß signaling pathway (Thbs1, Smad3, Bmpr1a, Col4a4, Pcolce2) were prominently down-regulated in the GFPhigh population (Figure 1D and Figure 1—figure supplement 2D). Furthermore, both GFPhigh and S1pr1 ECKO MAECs were enriched with Lyve1, Flt4, and Ccl21c transcripts, which encode proteins with well-defined roles in lymphatic EC (LEC) differentiation and function (Ulvmar and Mäkinen, 2016; Figure 1E, Figure 1—figure supplement 2G). Taken together, these data suggest that S1PR1 represses expression of inflammatory genes in aortic endothelium and that GFPhigh MAECs include aorta-associated LECs and are heterogeneous.
 
-## Chromatin accessibility landscape of MAECs
+### Chromatin accessibility landscape of MAECs
 
 We used the assay for transposase-accessible chromatin with sequencing (ATAC-seq) (Buenrostro et al., 2013) to identify putative cis-elements that regulate differential gene expression between GFPhigh versus GFPlow and S1pr1 WT versus S1pr1 ECKO MAECs. ATAC-seq utilizes a hyper-active Tn5 transposase (Adey et al., 2010) that simultaneously cuts DNA and ligates adapters into sterically unhindered chromatin. This allows for amplification and sequencing of open chromatin regions containing transcriptional regulatory domains such as promoters and enhancers. After alignment, reads from three experiments were trimmed to 10 bp, centered on Tn5 cut sites, then merged. These merged reads were used as inputs to generate two peak sets (MACS2, FDR < 0.00001) of 73,492 for GFPlow MAECs and 65,694 for GFPhigh MAECs (Figure 2A). MAECs isolated from WT and S1pr1 ECKO mice harbored 93,859 and 76,082 peaks, respectively (Figure 2A). Peaks were enriched in promoter and intragenic regions (Figure 2—figure supplement 1A). We noted that the Cdh5 gene exhibited numerous open chromatin peaks, while Gata1 was inaccessible (Figure 2—figure supplement 1B). Furthermore, we observed a global correlation between chromatin accessibility and mRNA expression for all 20,626 annotated coding sequences (CDS’s) in the NCBI RefSeq database (Figure 2—figure supplement 2). These data suggest that our ATAC-seq data is of sufficient quality for detailed interrogation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig2-v2.jpg)
+
+**Figure 2.:** (A) Venn diagrams illustrating all peaks (FDR < 0.00001) identified after analysis of individual ATAC-seq replicates of GFPlow, GFPhigh, S1pr1 ECKO, and WT MAECs, and subsequent merging of these peaks into a single consensus peak set. (B) Volcano plots of all peaks for both the GFPhigh vs GFPlow and S1pr1 ECKO vs WT MAECs. Three individual experiments were performed for GFPlow vs GFPhigh and S1pr1 ECKO vs WT comparisons (N = 3). Differentially accessible peaks (DAPs) were determined using edgeR (FDR < 0.05, see Materials and methods) (colored dots). (C–F) Transcription factor (TF) binding motif enrichment analysis of DAPs. The DAPs were input to the HOMER ‘findMotifsGenome.pl’ script (see also Supplementary file 2) and observed vs expected frequencies of motif occurrances were plotted. (G–H) Graphs showing ATAC signal at predicted TF binding sites. ATAC-seq reads were centered on Tn5 cut sites, trimmed to 10 bp, and nucleotide-resolution bigwig files were generated using DeepTools with reads per genomic content (RPGC) normalization. Reads were subsequently centered on TF binding motifs identified in (C–F) and viewed as mean read densities across 600 bp windows.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Enrichment of GFPhigh, GFPlow, S1pr1 ECKO and WT MAECs peaks with respect to distance from UCSC-annotated transcripts (mm9). Promoters are defined as + / - 1 kb from transcription start sites. (B) ATAC-seq signal and peaks at Cdh5 and Gata1 loci.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** ATAC-seq and RNA-seq reads (RPGC-normalized) were examined from 3 kb upstream and 3 kb downstream of all UCSC-annotated CDS’s using the DeepTools ComputeMatrix function. Signal was generated in bin sizes of 50 bp and 100 bp for ATAC-seq and RNA-seq, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The change in chromatin accessibility scores between GFPhigh and GFPlow MAECs plotted against the change in protection scores for each of the 579 queried JASPAR motifs. (B) Lineplots of Tn5 cuts from GFPhigh and GFPlow MAECs averaged over the sites identified in (A) for TCF7L2, SOX17, and KLF14 motifs. (C) The same plot as (A) showing the differences between S1pr1 ECKO and S1pr1 WT MAECs. (D) Lineplots of Tn5 cuts from S1pr1 ECKO and S1pr1 WT MAECs averaged over the sites identified in (C) for NFKB2 and TEAD1 motifs.
 
 Differential chromatin accessibility analysis of GFPhigh versus GFPlow MAECs identified 501 peaks with reduced accessibility (GFPlow peaks) and 3612 peaks with greater accessibility (GFPhigh peaks) in GFPhigh MAECs (FDR < 0.05, Figure 2B and Supplementary file 3). For WT and ECKO counterparts, this analysis identified 303 peaks with reduced accessibility (S1pr1 WT peaks) and 472 peaks with enhanced accessibility (S1pr1 ECKO peaks) in S1pr1 ECKO MAECs (Figure 2B and Supplementary file 3). The ~7 fold higher number of GFPhigh-enriched peaks suggests that GFPhigh MAECs are more ‘activated’ (elevated number of chromatin remodeling events) and/or are a heterogeneous mixture of EC subtypes.
 
@@ -81,11 +109,31 @@ We used the ATAC-seq footprinting software HINT-ATAC (Li et al., 2019) to assess
 
 Analysis of DAPs showed that only the p65-NFκB motif was commonly enriched between GFPhigh and S1pr1 ECKO MAECs. This observation is consistent with our RNA-seq analysis, which identified cytokine/NFκΒ pathway suppression by S1PR1 signaling in MAECs (Figure 1D). Enrichment of COUP-TFII, NUR77, and AP-1/bZIP motifs in open chromatin of GFPhigh MAECs, but not S1pr1 ECKO MAECs, further suggests that high levels of S1PR1/ß-arrestin coupling occurs in heterogenous populations of aortic ECs.
 
-## Single-cell RNA-seq analysis of GFPhigh and GFPlow MAECs reveals eight distinct EC clusters
+### Single-cell RNA-seq analysis of GFPhigh and GFPlow MAECs reveals eight distinct EC clusters
 
 Imaging studies demonstrated that GFPhigh MAECs are restricted to specific anatomical locations. To test the hypothesis that these represent specific EC subpopulations, we employed single-cell RNA-seq (scRNA-seq) on FACS-sorted GFPhigh and GFPlow MAECs. In total, 1152 cells were sequenced (768 GFPhigh and 384 GFPlow) using the Smart-seq2 protocol. An average of 300,000 aligned reads/cell were obtained and corresponded to ~3200 transcripts/cell. Cdh5 transcripts were broadly detected, consistent with endothelial enrichment of sorted cells (Figure 3—figure supplement 1A). S1pr1 and Arrb2 were also broadly detected (Figure 3—figure supplement 1A), suggesting that receptor activation rather than expression of these factors accounts for heterogenous reporter expression in MAECs. eGFP mRNA was primarily restricted to GFPhigh MAECs, particularly in the cluster designated aEC1 (Figure 3—figure supplement 1A).
 
 Analysis of GFPhigh and GFPlow MAECs using the velocyto/pagoda2 pipeline (R code in Source Code File 3) (Fan et al., 2016; La Manno et al., 2018) revealed nine clusters upon T-distributed stochastic neighborhood embedding (t-SNE) projection (Figure 3A). 6 of the nine clusters grouped together in a ‘cloud’, whereas three clusters formed distinct populations. We used hierarchical differential expression analysis to identify signature marker genes of each cluster (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig3-v2.jpg)
+
+**Figure 3.:** (A) t-SNE projection from Pagoda2 multilevel clustering of 767 GFPhigh and 384 GFPlow MAECs. Dash-line circles highlight each of the nine clusters identified. Cells and cluster names are color-coded according to cluster assignment. (B) Dendrogram from hierarchical clustering and expression heatmap of selected genes. The dendrogram (top) reveals an upstream split between LEC, vEC, aEC1 and aEC2, aEC3, aEC4, aEC5, and aEC6 populations. The heatmap shows the gradient of expression, from low (white) to high (dark blue), for a selection of transcripts with distinctive expression patterns. (C–F) Expression of transcripts specific to VSMCs (C) lymphatic ECs (D), venous ECs (E) and arterial ECs (F) are shown on the t-SNE embedding. (G–J) Representative transcripts enriched in arterial EC (aEC) clusters 1 (G), 2 (H), 3 (I) and 4 (J) are shown on the t-SNE embedding. MAECs used for scRNA-seq were isolated from two independent cohorts of S1PR1-GS mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Barplots of transcript counts for selected genes in individual GFPhigh and GFPlow MAECs cells. Each bar represents a single cell, either GFPhigh (green) or GFPlow (blue).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Heatmaps (cells are clustered as shown in Figure 3B) illustrate expression of the top 32 most enriched transcripts in each cluster, according to Z-score.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Table summarizing characteristics of the nine clusters (see Supplementary file 4). (B) tSNE projection of the embedding shown in Figure 1A with cells color-coded according to GFP expression.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Heatmaps of sphingolipid-related transcripts showing enrichment in one or multiple EC clusters. (B) Heatmaps of examples of transcripts co-enriched and co-depleted in LEC, vEC, and aEC1 versus aEC2-6. Genes enriched or depleted in each individual comparison were used for this analysis (See Supplementary file 4). Cell clustering is as shown in Figure 3B.
 
 Genes uniquely detected in one of the distinct clusters included vascular smooth muscle cell (VSMC)-specific transcripts such as Myh11, Myom1, and Myocd (Figure 3B and C; Figure 3—figure supplement 1B). Therefore, this cluster was designated VSMC-like as these cells may represent MAECs sorted along with fragments of VSMCs, or ‘doublets’ of ECs and VSMCs. Because these cells may represent contamination in an otherwise pure pool of aortic ECs, we omitted this VSMC-like cluster from subsequent analyses. The remaining eight EC clusters were further analyzed.
 
@@ -101,13 +149,33 @@ We note that the abovementioned transcripts (Figure 3—figure supplement 4B) we
 
 For functional insights into arterial EC clusters, we analyzed aEC1-aEC4 enriched transcripts with the Gene Set Enrichment Analysis (GSEA) tool (Figure 4A–D and Supplementary file 5). aEC1 cells were enriched with transcripts associated with GPCR/MAPK signaling (Rasgrp3, Rapgef4, Rgs10, Mapk4k3, S1pr1) as well as VEGF, integrin, and tight-junction pathways (Flt1, Vegfc, Pgf, Igf2, Vcan, Sema3g, S100a4, Jam2, Cldn5). The aEC2 cluster presented a different profile with enriched terms related to immune/inflammatory pathways, TGFß signaling and mRNA processing. Elevated expression of Vcam1, Icam1, Traf6, Cxcl12 and NFkb1 may suggest that these ECs represent an inflammatory cluster.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Selected pathways from GSEA analysis of cluster-enriched transcripts. Pathways enriched in aEC1 (A), aEC2 (B), aEC3 (C), and aEC4 (D) are shown with representeative transcripts identified in each pathway (see Supplementary file 5). The percent of GFPhigh cells in each of the four analyzed clusters are indicated at the bottom each heatmap.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Expression of ‘Cluster 1’ and ‘Cluster 2’ marker genes (Lukowski et al., 2019) in LEC, vEC, and aEC1-6. (B) Expression of ‘EC1’, ‘EC2’, and ‘EC3’ marker genes (Kalluri et al., 2019) in LEC, vEC, and aEC1-6. Black arrows indicate enrichment in aEC1, red arrows indicate enrichment in both LEC and aEC1, green arrows indicate enrichment in LEC, beige arrows indicate enrichment in aEC2-6 and depletion from LEC, vEC, and aEC1.
+
 In contrast, aEC3 cells were enriched with ‘immediate-early’ transcripts, including those of the AP-1 transcription factor family (Atf3, Jun, Jund, Junb, Fos, Fosb). Enhanced expression of Atf3 and related TFs of the bZIP family in aEC3 may have contributed to increased chromatin accessibility at ATF, FOSB::JUN, and FOSB::JUNB binding sites in GFPlow MAECs (Figure 2D and G; Figure 2—figure supplement 3C). Notably, a recent study of young (8 week) and aged (18 month) normal mouse aortic endothelium also identified a cluster of Atf3-positive cells only in young endothelium, as determined by both scRNA-seq and immunostaining for ATF3 (McDonald et al., 2018). Markers of these cells were also identified as top aEC3 markers (e.g. Fosb, Jun, Jund, Junb, Dusp1) suggesting that aEC3 cells are similar to the regenerative Atf3-positive cluster described by McDonald et al. (2018). aEC4 cells were enriched with transcripts related to cell-ECM interations, glycosaminoglycan metabolism, and collagen formation (Pcolce2, Frzb, Spon1, Col4a4, Mfap5, Hyal2). The other two arterial clusters (aEC5 and aEC6) appeared less distinctive (i.e. harbored relatively few enriched transcripts with high Z-scores and fold change values) and therefore were not analyzed. Collectively, these data suggest that scRNA-seq identified more than four distinct MAEC subtypes with unique transcriptomic signatures.
 
 Next, we compared our dataset with information from two recent scRNA-seq studies that also sub-categorized ECs of the normal mouse aorta (Kalluri et al., 2019; Lukowski et al., 2019). Lukowski et al. (2019) sequenced individual FACS-sorted Lineage-CD34+ cells and identified two major EC clusters, designated ‘Cluster 1’ and ‘Cluster 2’. Kalluri et al. (2019) identified three major EC clusters by sequencing individual cells from whole-aorta digests. Top markers of ‘Cluster 1’ (Lukowski et al., 2019) were primarily expressed by LEC, vEC and aEC1 (Figure 4—figure supplement 1A). ‘Cluster 1’ shared markers with ‘EC2’ (Kalluri et al., 2019), such as Rgcc, Rbp7, Cd36, Gpihbp1 (Figure 4—figure supplement 1A and B). Several ‘EC2’ markers, while enriched in aEC1 relative to aEC2-6 (e.g. Flt1, Rgcc), were also expressed in LEC and vEC (e.g. Pparg, Cd36, Gpihbp1, Rbp7) (Figure 4—figure supplement 1B). ‘EC3’ (Kalluri et al., 2019) markers were strongly enriched in LEC and vEC (e.g. Nr2f2, Flt4, Lyve1), and the authors noted that these cells were likely of lymphatic origin (Figure 4—figure supplement 1B). The remaining two clusters, ‘Cluster 2’ (Lukowski et al., 2019) and ‘EC1’ (Kalluri et al., 2019), strongly resembled the aggregate of aEC2-6 as they were enriched with Gata6, Vcam1, Dcn, Mfap5, Sfrp1, Eln, and Cytl1 (Figure 4—figure supplement 1A and B). Taken together, these information from three independent groups strongly suggest that a major source of heterogeneity in the normal adult mouse aorta, as revealed by scRNA-seq analysis, includes differences between LEC, vEC, aEC1 and aEC2-6.
 
-## Localization of heterogenous arterial EC populations
+### Localization of heterogenous arterial EC populations
 
 Among the arterial populations, aEC1 and aEC2 exhibited the highest frequencies of S1PR1/ß-arrestin coupling (>90%). Thus, we addressed the anatomical location of these arterial clusters in the normal adult mouse aorta by immunolocalization of markers. We utilized antibodies against noggin (NOG), alkaline phosphatase (ALPL), and integrin alpha-6 (ITGA6), which are highly enriched in aEC1, as well as fibroblast-specific protein-1 (FSP1, encoded by S100a4) and claudin-5 (CLDN5), which are enriched in, but not exclusive to, aEC1 (Figure 5A). We also utilized antibodies against thrombospondin-1 (TSP1, encoded by Thbs1) and vascular cell adhesion molecule 1 (VCAM1), which are enriched in aEC2 and depleted in aEC1 (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig5-v2.jpg)
+
+**Figure 5.:** (A) Barplots of scRNA-seq read counts for Nog, Itga6, Alpl, Cldn5, S100a4, Thbs1, and Vcam1 in arterial EC clusters (aEC1-6). Each bar represents a single cell, either GFPhigh (green) or GFPlow (blue). (B–H) Confocal images of whole-mount en face preparations of mouse thoracic aortae centered on intercostal branch points. Immunostaining of S1PR1-GS mouse aortae for noggin (NOG) and CD31 (B), or integrin alpha-6 (ITGA6) and VE-Cadherin (VEC) (C). Immunostaining of C57BL/6J mouse aortae for CD31 and alkaline phosphatase, tissue-nonspecific isozyme (ALPL) (D) or claudin-5 (CLDN5), FSP1 (S100A4), and VEC (E). (F) Immunostaining of S1PR1-GS mouse aorta for ITGA6, thrombospondin 1 (TSP1), and VEC. Yellow arrows indicate TSP1+ ECs. (G) Immunostaining of an S1PR1-GS mouse aorta for FSP1 and TSP1. The circumference of an intercostal branch point harbors FSP1+GFP+ cells, wereas TSP1+GFP+ cells (cyan arrows) are distal from the circumference of the branch point orifice. (H) Immunostaining of a mouse aorta for vascular cell adhesion molecule 1 (VCAM1) and VEC. Two rows of cells exhibiting the morphology and VEC-localization of cells around branch point orifices are outlined. Images are representative of observations from 3 (B, C, E–H) and 2 (D) mice. Scale bars are 50 µM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Whole-mount en face preparation of a mouse thoracic aorta immunostained for ITGA6, TSP1, and VEC. Scale bar is 200 µM. (B) Two sagittal sections (b’ and b’’) of a mouse thoracic aorta demonstrate TSP1 expression in VEC+ arterial ECs. Sections were counterstained with DAPI to image nuclei. Scale bars are 20 µM.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Two fields (a’ and a’’) of whole-mount en face preparations from S1PR1-GS mouse thoracic aortae immunostained for VCAM1 and VEC. Yellow arrows indicate VCAM1+ GFP+ ECs distal from the branch point orifice. Scale bars are 50 µM. (B) Intraperitoneal administration of LPS (5.5 mg/kg, 9 hr) results in uniform VCAM1 induction in aortic ECs, visualized by VCAM1 and VEC immunostaining of thoracic aorta whole-mount en face preparations. Scale bars are 100 µM. Images are representative of observations from three mice (A) and 2 pairs of mice (B).
 
 En face immunofluorescence staining showed that NOG and ITGA6 were expressed by GFPhigh MAECs at intercostal branch points (Figure 5B and C). These GFPhigh MAECs comprise the first 2–3 rows of cells around the circumference of branch orifices and include ~20–30 cells in total. In contrast, cells that are more than 2–3 cells away from branch point orifices did not express NOG or ITGA6 (Figure 5B and C). This was also seen for cytoplasmic staining of ALPL (Figure 5D). CLDN5 and FSP1 staining demarcate branch point MAECs but also exhibited heterogeneous staining of surrounding ECs (Figure 5E).
 
@@ -115,19 +183,43 @@ In contrast, TSP1 staining was exluded from ITGA6-expressing GFPhigh MAECs at br
 
 Similar to TSP1, VCAM1 staining was low at branch points, while surrounding cells showed heterogeneous levels of immunoreactivity (Figure 5H). We identified isolated GFP+ cells and patches of GFP+ cells distal from branch points with high VCAM1 immunoreactivity (Figure 5—figure supplement 2A). As expected, intraperitoneal LPS administration induced VCAM1 expression uniformly in aortic ECs (Figure 5—figure supplement 2B). These data suggest that the aEC1 population includes MAECs that are anatomically specific to branch points, while the aEC2 population is located distally and heterogeneously from branch points but nonetheless exhibits S1PR1/ß-arrestin signaling.
 
-## Analysis of branch point-specific arterial ECs cluster aEC1
+### Analysis of branch point-specific arterial ECs cluster aEC1
 
 Having identified the aEC1 cluster as including cells which demarcate thoracic branch points orifices, we sought to characterize these unique cells in further detail. As shown in Figure 4A, aEC1-enriched transcripts are associated with a diverse range of signaling pathways, including MAPK/GPCR, VEGF, and integrin signaling. Among aEC1-enriched transcripts, 16 were up-regulated in S1pr1 ECKO MAECs, five were down-regulated (including S1pr1) and the remaining 390 were not differentially expressed (Figure 6A; see also Supplementary file 4). The 16 ECKO up-regulated transcripts included positive regulators of angiogenesis (Pgf, Apold1, Itga6, Kdr) (Mirza et al., 2013; Olsson et al., 2006; Primo et al., 2010), regulators of GPCR signaling (Rgs2, Rasgrp3), and Cx3cl1 (Fractalkine), which encodes a potent monocyte chemoattractant (White and Greaves, 2012). We noted that several aEC1-enriched transcripts were also expressed in LEC and vEC, but nonetheless were depleted from the remainder of arterial ECs (aEC2-6) (Figure 6B). We examined the 25 transcripts most specific to aEC1 (log2 [fold-change] vs. all ECs > 4) and observed that 5 of these (Dusp26, Eps8l2, Hapln1, Lrmp, and Rasd1) showed differential expression upon loss of S1PR1 function in MAECs (Figure 6C). Therefore, the majority of transcripts specific to aEC1 do not appear to require S1PR1 signaling for normal levels of expression. For example, protein levels of the aEC1 marker ITGA6 were not markedly affected at branch point orifices in S1pr1 ECKO animals (Figure 6D). The ~2 fold increase in Itga6 transcript levels in S1pr1 ECKO MAECs may be due to expression in heterogeneous (non aEC-1) populations, reflecting increases in LECs and/or aEC2-6. Nonetheless, these data suggest that S1PR1 signaling is required for normal expression of some, but not the majority, of transcripts enriched in aEC1 cells located at orifices of intercostal branch points.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig6-v2.jpg)
 
-**Figure 6.:** (A) Pie chart of all aEC1-enriched transcripts (versus aEC2-6) indicating those which were also differentially expressed in S1pr1 ECKO MAECs. (B) Heatmap (row Z-scores) of the 20 transcripts that were both S1PR1-regulated and aEC1-enriched (left). Expression of these transcripts in each cluster from scRNA-seq analysis is shown (right). (C) Gene expression in aEC1 was compared to all ECs (LEC, vEC, and aEC2-6 collectively). All transcripts expressed greater than 16-fold higher in aEC1 are shown (25 transcripts total). Red, blue and black transcript names indicate up-regulated, down-regulated or similar levels of expression in S1pr1 ECKO MAECs, respectively. (D) Immunostaining of S1pr1 ECKO and WT aortae whole-mount en face preparations for ITGA6 and VEC. Images are representative of observations from 2 pairs of animals (N = 2). (E) ITGA6 and VEC immunostaining of whole-mount en face preparations of thoracic aortae from S1PR1-GS mice bearing Sphk2-/- Sphk1f/f or Sphk2 -/-Sphk1f/fRosa26-Cre-ER alleles. (T2F) Quantification and statistical analyses (unpaired t-test) of GFP+ EC at branch point (12 branches) and non-branch point (six fields) locations from 2 pairs of mice (N = 2). Quantified fields are as shown in (E). Branch point EC were defined as cells included in the first three rows around the edge of orifices. Only GFP+ EC in the same Z-plane as surrounding arterial EC were counted (GFP+ EC of intercostal arteries were in a different Z-plane and therefore were not counted as branch point EC). Scale bars are 100 µM.
+**Figure 6.:** (A) Pie chart of all aEC1-enriched transcripts (versus aEC2-6) indicating those which were also differentially expressed in S1pr1 ECKO MAECs. (B) Heatmap (row Z-scores) of the 20 transcripts that were both S1PR1-regulated and aEC1-enriched (left). Expression of these transcripts in each cluster from scRNA-seq analysis is shown (right). (C) Gene expression in aEC1 was compared to all ECs (LEC, vEC, and aEC2-6 collectively). All transcripts expressed greater than 16-fold higher in aEC1 are shown (25 transcripts total). Red, blue and black transcript names indicate up-regulated, down-regulated or similar levels of expression in S1pr1 ECKO MAECs, respectively. (D) Immunostaining of S1pr1 ECKO and WT aortae whole-mount en face preparations for ITGA6 and VEC. Images are representative of observations from 2 pairs of animals (N = 2). (E) ITGA6 and VEC immunostaining of whole-mount en face preparations of thoracic aortae from S1PR1-GS mice bearing Sphk2-/- Sphk1f/f or Sphk2-/-Sphk1 f/fRosa26-Cre-ERT2 alleles. (F) Quantification and statistical analyses (unpaired t-test) of GFP+ EC at branch point (12 branches) and non-branch point (six fields) locations from 2 pairs of mice (N = 2). Quantified fields are as shown in (E). Branch point EC were defined as cells included in the first three rows around the edge of orifices. Only GFP+ EC in the same Z-plane as surrounding arterial EC were counted (GFP+ EC of intercostal arteries were in a different Z-plane and therefore were not counted as branch point EC). Scale bars are 100 µM.
 
 We addressed whether circulatory S1P is required for S1PR1/ß-arrestin coupling in arterial aortic endothelium by genetically deleting the two murine sphingosine kinase enzymes, Sphk1 and Sphk2. We generated S1PR1-GS mice harboring Sphk1f/f and Sphk2-/- alleles, bred this strain with the tamoxifen-inducible Rosa26-Cre-ERT2 allele, and induced Sphk1 deletion by tamoxifen injection into adult mice (see Materials and methods). 5–6 weeks after tamoxifen administration, plasma S1P concentrations in Cre- animals were 631 ± 280 nM, whereas S1P was undetectable in plasma from Cre+ mice. Cre+ mice had ~7 fold fewer non-branch point GFP+ ECs (Figure 6E and F), suggesting that S1PR1/ß-arrestin coupling in aEC2 cells is ligand-dependent. In contrast, the number of branch point GFP+ EC was not significantly different between Cre+ and Cre- animals, suggesting ligand-independent S1PR1/ß-arrestin coupling in aEC1 population (Figure 6E and F). Furthermore, ITGA6 expression at branch point orifices was unaltered in Cre+ mice and therefore is independent of circulatory S1P. Taken together, these data suggest that the unique transcriptome of aEC1 cells is largely independent of S1P/S1PR1 signaling while in aEC2 (and perhaps others), ligand-dependent S1PR1 signaling predominates.
 
-## Spatio-temporal and molecular differences between branch point-specific arterial EC cluster aEC1 and non-branch point ECs
+### Spatio-temporal and molecular differences between branch point-specific arterial EC cluster aEC1 and non-branch point ECs
 
 For insight into transcriptional regulatory mechanisms in aEC1 cells, we identified all TFs enriched and depleted in this cluster (Figure 7—figure supplement 1A; see also Supplementary file 5). Among arterial ECs, TFs highly enriched (Z-score >7) in aEC1 are Hey1, Nr4a2 (NURR1), Nr4a1 (NUR77), Sox17, Ebf1, and Bcl6b (Figure 7A and Figure 7—figure supplement 1A and B). Lef1 transcripts were detected at significant levels only in aEC1 cells (Figure 7—figure supplement 1A and B). Transcripts encoding other TFs, such as Tcf4, Ets1, Sox18, Epas1, Mef2c, and Tox2, were aEC1-enriched (Z-score >3 and<7) but more heterogeneously distributed in other arterial clusters (Figure 7A and Figure 7—figure supplement 1A). These data are consistent with our ATAC-seq analysis, which showed over-representation of SOX17, TCF4, and NUR77 motifs in chromatin specifically open in GFPhigh MAECs. In contrast, Gata6 (ubiquitous among aEC2-6) and Gata3 (heterogeneous among aEC2-6) were both depleted from aEC1 (Figure 7A and Figure 7—figure supplement 1A and B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-v2.jpg)
+
+**Figure 7.:** (A) Heatmap of selected transcription factors enriched and depleted in aEC1 cells (see also Figure 7—figure supplement 1A). (B) Immunostaining of an S1PR1-GS mouse thoracic aorta for lymphoid enhancer-binding factor 1 (LEF1), ITGA6, and VEC. Image is representative of observations from two mice. Scale bar is 100 µM. (C) Immunostaining of postnatal day 6 (P6) (n = 2) and 12 week (n = 3) S1PR1-GS mice thoracic aortae for ITGA6 and VEC. Arrows indicate non-branch point GFP+ EC. Scale bars are 100 µM. (D) Quantification of non-branch point GFP+ EC in thoracic aorta en face preparations from P6 (n = 2), P12 (n = 3), 3–4 month-old (n = 3), and 15 month old (n = 2) mice. Each dot is a field. Representative fields are shown in Figure 7—figure supplement 2. Non-branch point GFP pixels were normalized to total VEC pixels per field. One-way ANOVA followed by Bonferroni’s post hoc test, *P = 0.04; **P = 0.04; ***P = 0.0008. (E) Representative images of TSP1 and VEC immunostaining of thoracic aorta en face preparations from P6, 3 month old, 15 month old mice. Scale bars are 200 µM. (F) Quantification of TSP1 pixels normalized to total VEC pixels per field from P6 (n = 3), 3 month old (n = 2), and 15 month old (n = 2) mice. One-way ANOVA followed by Bonferroni’s post hoc test, **P = 0.001; ****P < 0.0001. (G) Sagittal cryosection (14 µM) of an E11.5 S1PR1-GS mouse embryo immunostained for CD31, ITGA6, and TSP1. Arrows indicate the dorsal aorta. Scale bar is 500 µM. (H) The dorsal aorta at higher magnification with CD31, ITGA6, and GFP channels shown. Scale bar is 100 µM. (G) and (H) are representative of observations from two embryos. (I–J) Genome browser image of GFPhigh and GFPlow MAECs ATAC-seq signal (RPGC normalized) at Itga6 and Thbs1 (TSP1) loci. Peaks with increased accessibility in GFPhigh MAECs (GFPhigh DAPs) are indicated in (I). All GFPhigh and GFPlow MAECs peaks are shown in (J). All LEF1, nuclear receptor subfamily four group A member 1 (NUR77), transcription factor SOX-17 (SOX17), and transcription factor GATA-6 (GATA6) motifs identified in consensus peaks (Figure 2A) are also shown. Orange bars in (I) highlight GFPhigh MAECs DAPs containing LEF1, SOX17, and/or NUR77 motifs. Yellow bars in (J) highlight peaks containing GATA6 motifs.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Heatmaps (cells are clustered as shown in Figure 3B) illustrate expression of transcription factors (TFs) enriched or depleted from aEC1 relative to aEC2-6. (B) Barplots illustrate transcript counts of selected TFs from (A) in arterial EC clusters aEC1-6. Each bar represents a single cell, either GFPhigh (green) or GFPlow (blue). (C) Transcription factor bonding motif enrichment analysis of genomic regions near aEC1 genes. The HOMER script ‘findmotifsgenome.pl’ was used for motif enrichment analysis of merged GFPhigh and GFPlow peaks that intsersected a 100 kb window centered on aEC1-enrichd (Z-score >3) and depleted (Z-score < −3) TSSs.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A–D) Representative images of aorta en face preparations from P6 (A), P12 (B), 3 month old (C), and 15 month old (D) S1PR1-GS mice immunostained for VEC. Scale bars are 200 µM. (E) Quantification of GFP+ cells comprising the branch points of P6 (n = 2), P12 (n = 3), 3–4 month-old (n = 3), and 15 month old (n = 2) mice. Each dot is a field. One-way ANOVA followed by Bonferroni’s post hoc test, *P = 0.02.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Aggregated E9.5 to E13.5 scRNA-seq data from Cao et al. (2019) is shown for Itga6 and Thbs1. Red arrows indicate normalized gene expression in endothelial cells. (B–D) Sagittal cryosections (14 µM) of an E11.5 S1PR1-GS mouse embryo immunostained for CD31, TSP1 and ITGA6 and counterstained with DAPI, as labeled on each panel. The dorsal aorta, lung bud, and hepatic primordium are indicated in (B). (C) The boxed region of the dorsal aorta is shown at higher magnification with CD31, ITGA6, and GFP channels. Scale bars are 200 µM. (D) High power (40x) image of the dorsal aorta. Scale bar is 20 µM. (E) Expression of selected aEC1-enriched and –depleted transcripts in aggregated E9.5-E13.5 mouse embryonic endothelial cells (data from Cao et al., 2019).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Aggregated E9.5 to E13.5 scRNA-seq data from Cao et al. (2019) is shown for Lyve1. Red arrow indicates normalized expression in endothelial cells. (B) Sagittal cryosection (14 µM) of an E11.5 S1PR1-GS mouse embryo immunostained for LYVE1, CD31, and ITGA6. The boxed region is shown at higher magnification. Scale bar is 200 µM; CV – cardinal vein.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** (A–B) Genome browser images of Nog, Frzb, and Pcolce2 loci. Peaks with increased accessibility in GFPhigh and GFPlow MAECs are indicated, as well as LEF1, SOX17, NUR77, and GATA6 motifs in consensus peaks (see Figure 2A). Orange bars highlight co-incidence of motifs with differential accessibility.
 
 Immunostaining of thoracic aorta en face preparations for LEF1 showed nuclear immunoreactivity in GFPhigh ECs at branch point orifices but not in adjacent ECs (Figure 7B). We noted that all LEF1+ cells also exhibited ITGA6 expression, confirming these two proteins as markers of aEC1 cells at branch point orifices (Figure 7B). These data suggest involvement of LEF1, a downstream TF of Wnt/ß-catenin signaling, in regulating gene expression in aEC1 cells.
 
@@ -145,9 +237,17 @@ We further explored potential roles for LEF1, SOX17, NUR77, and GATA6 in aEC1 ge
 
 Together, these findings characterize the aortic branch point-specific arterial EC subpopulation designated aEC1. The data strongly suggest that the GFPhigh status of MAECs at branch point orifices, as well as their unique gene expression program, is not dynamic throughout postnatal life. Rather, the gene expression specification of these cells likely occurs during development in tandem with epigenetic changes (i.e. chromatin accessibility) and is stable throughout adulthood. These cells have a unique anatomical location in postnatal mice and exhibit high S1PR1/ß-arrestin coupling. The transcriptome of this EC subpopulation does not appear to be directly regulated by S1PR1 signaling. Rather, a combination of TFs, such as NUR77, NURR1, SOX17, HEY1, and LEF1, likely regulate cluster-defining transcripts in these cells.
 
-## S1PR1 signaling in adventital lymphatic ECs regulates immune and inflammatory gene expression
+### S1PR1 signaling in adventital lymphatic ECs regulates immune and inflammatory gene expression
 
 To locate the aorta-associated LEC with a high frequency (97%) of S1PR1/ß-arrestin coupling, we utilized antibodies against LYVE1 and VEGFR3 (Flt4). LYVE1 marks most but not all LEC subtypes and VEGFR3 is a pan-LEC marker (Wang et al., 2017). Sagittal sections of the S1PR1-GS mouse thoracic aorta revealed that a subset of adventitial LYVE1+ LECs are GFP+ and thus exhibit S1PR1/ß-arrestin coupling (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig8-v2.jpg)
+
+**Figure 8.:** (A) Representative confocal image of a sagittal cryosection (14 µM) of a S1RP1-GS mouse aorta immunostained for VEC and lymphatic vessel endothelial hyaluronic acid receptor 1 (LYVE1) (N = 2). White arrows indicate GFP+ arterial ECs at a branch point orifices and yellow arrows indicate adventitia-associated GFP+ LECs. Scale bar is 50 µM. (B) Confocal image of a S1RP1-GS mouse thoracic aorta whole-mount preparation immunostained for vascular endothelial growth factor receptor 3 (VEGFR3; Flt4), LYVE1, and CLDN5 with the tunica intima in contact with coverslip. Orange stars indicate VEGFR3+LYVE1+GFP+ areas, cyan stars indicate VEGFR3+LYVE1lowGFP+ areas, and magenta stars indicate VEGFR3+LYVE1+GFP- areas. Image is representative of observations from three mice (see also Figure 8—figure supplement 1B). Scale bar is 100 µM. (C–D) Representative confocal images of mesenteric lymphatics from H2B-GFP control (C) and S1PR1-GS mice bearing Sphk2-/-:Sphk1f/f (Cre-) or Sphk2-/-:Sphk1f/f:Lyve1-Cre (Lyve1-Cre+) alleles whole-mounted and immunostained for PROX1 and ASMA. White arrows indicate ASMA+PROX1+GFP+, yellow arrows indicate PROX1+GFP-, cyan arrows indicate ASMA+PROX1+GFP-. Scale bars are 100 µM. (E) Quantification of GFP+ signal over ASMA+PROX1+ and ASMA-PROX1+ areas from Cre- (n = 5), Lyve1-Cre (n = 4), and H2B-GFP control (n = 2) mice. One-way ANOVA followed by Bonferroni’s post hoc test, ****P < 0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Barplots illustrate transcript counts of Flt4 (VEGFR3), Lyve1, Ccl21, and Itga6 in each of the nine clusters identified by scRNA-seq analysis. Each bar represents a single cell, either GFPhigh (green) or GFPlow (blue). (B) Confocal image of a S1RP1-GS mouse thoracic aorta whole-mount preparation immunostained for VEGFR3 and LYVE1 with the tunica adventitia in contact with coverslip. Orange stars indicate VEGFR3+LYVE1+GFP+ areas, cyan stars indicate VEGFR3+LYVE1lowGFP+ areas, and magenta stars indicate VEGFR3+LYVE1+GFP- areas. (C) Immunostaining of a sagittal section of a S1PR1-GS mouse thoracic aorta for ITGA6 and LYVE1. White arrows indicate GFP+ITGA6+LYVE1- arterial ECs of the branch point orifice. The yellow arrow indicates a GFP+ ECs associated with an adventitial LYVE1+ITGA6+ structure. Scale bars are 50 µM.
 
 Next, we prepared whole-mounts of thoracic aortae and collected confocal Z-stacks of only the adventitial layer (Figure 8B and Figure 8—figure supplement 1B). We observed three distinct expression patterns: VEGFR3+LYVE1+GFP+ (orange stars), VEGFR+LYVE1lowGFP+ (cyan stars), and VEGFR3+LYVE1+GFP- (magenta stars). We noted that VEGFR3+LYVE1+GFP- areas were associated with blind-ended bulbous structures that bear resemblance to LYVE1+ lymphatic capillaries (Ulvmar and Mäkinen, 2016). In contrast, VEGFR+LYVE1lowGFP+ structures were morphologically similar to collecting lymphatic vessels, which are also LYVE1low in the mouse ear dermis (Ulvmar and Mäkinen, 2016).
 
@@ -156,6 +256,18 @@ In addition to expression in aEC1, Itga6 transcripts were detected in vEC and LE
 We examined the role of LEC-derived S1P in LEC S1PR1/ß-arrestin coupling by generating S1PR1-GS mice deficient in lymph S1P (S1pr1ki/+:Sphk1f/f:Sphk2-/-:Lyve1-Cre+) (Pham et al., 2010). LECs were identified in mesenteric vessels by immunostaining for the LEC-specific transcription factor prospero homeobox protein 1 (PROX1). Collecting lymphatics, which exhibit coverage of α-smooth muscle actin (ASMA) positive cells (Wang et al., 2017), were identified by ASMA co-staining. H2B-GFP control mice showed low levels of GFP expression in lymphatic valves and the remainder of LECs were GFP- (Figure 8C). In stark contrast, GFP+ LECs were observed at high frequency (73%) in ASMA+ structures but not in ASMA- structures (6%) of S1PR1-GS mice (Figure 8D and E). This suggests that S1PR1/ß-arrestin coupling occurs primarily in collecting lymphatics. Mice lacking S1P in lymph (Lyve1-Cre+) exhibited a 10-fold reduction in GFP+ LEC in ASMA+ structures (7%), indicating that the ligand S1P induces S1PR1/ß-arrestin coupling in collecting lymphatic vessels. These data are consistent with abundant LEC expression of the S1P transporter Spns2 (Figure 3—figure supplement 4A), which is also required for normal levels of lymph S1P (Simmons et al., 2019). Taken together, scRNA-seq analysis of aortic ECs identified two anatomically distinct arterial EC populations (branch point and non-branch point), as well as a collecting lymphatic-like adventitial LEC population, each of which shows high S1PR1/ß-arrestin coupling.
 
 For insight into S1PR1-mediated gene expression in aorta-associated LECs, we divided S1pr1 ECKO up-regulated genes (Figure 1C and Figure 1—figure supplement 2E) according to their cluster assignments from scRNA-seq analysis. 30% of up-regulated genes were enriched in the LEC cluster (Z-score >3 versus the remainder of ECs), while only 7% were enriched in vEC and/or aEC1-6 (Figure 9A and Suplementary File 6). None of the S1pr1 ECKO down-regulated transcripts were enriched in the LEC cluster (see Supplementary file 6). A heatmap of the 78 LEC transcripts up-regulated in S1pr1 ECKO MAECs is shown in Figure 9B. Among these were chemokine/cytokine pathway genes (Irf8, Lbp, Il7, Il33 Ccl21, Tnfaip8l1) as well lymphangiogenesis-associated genes (Kdr, Prox1, Lyve1, Nr2f2) (Figure 9B and Figure 9—figure supplement 1A). This suggests that loss of S1PR1 signaling in LECs alters transcriptional programs associated with lymphangiogenesis and inflammation/immunity.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig9-v2.jpg)
+
+**Figure 9.:** (A) Pie-chart distribution of S1pr1 ECKO MAECs up-regulated transcripts. The 258 transcripts were binned according to their cluster assignment from scRNA-seq analysis. The blue and cyan numbers indicate the total percentage of transcripts enriched in LEC and LEC plus at least one cluster, respectively. The numbers in parentheses are absolute transcripts numbers. (See Supplementary file 6) (B) Heatmap (row Z-scores) of all 78 S1pr1 ECKO MAECs up-regulated transcripts that are LEC-enriched. Selected GSEA pathways are identified in the top heatmap. (See Supplementary file 5) (C) Confocal images of two fields (c’ and c’’) of a whole-mounted S1RP1-GS mouse thoracic aorta immunostained for LYVE1 and C-C motif chemokine 21 (CCL21). The tunica adventitia was facing the coverslip. (D) Confocal images of a sagittal cryosection (14 µM) of an S1RP1-GS mouse thoracic aorta immunostained CCL21 and LYVE1. Yellow arrows indicate adventitia-associated CCL21+LYVE1+GFP+ cells and the white arrow indicate GFP+LYVE1- cells at a branch. Scale bars are 50 µM.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) FPKMs of selected transcripts from Figure 9B. (B) Aortae were digested and subjected to flow cytometric analysis as described in Figure 1B. PDPN (PE-Cy7-conjugated) was added to the staining cocktail to distinguish aorta-associated LECs from the remainder of aortic ECs (N = 3).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/52690/elife-52690-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Expression of Flt4 vs Pdpn (left) or Ccl21a vs Pdpn (right) was compard in individual LECs. The red boxes indicate cell expressing Flt4 but not Pdpn (left) or Ccl21a but not Pdpn (right).
 
 Lymphatic vessels associated with the aorta and large arteries, although not well studied, are thought to be involved in key physiological and pathological processes in vascular and immune systems (Csányi and Singla, 2019; Galkina and Ley, 2009). For example, LEC expression of CCL21 mediates dendritic cell recruitment to lymphatic vessels during homeostasis and pathological conditions (Vaahtomeri et al., 2017). This chemokine was abundantly expressed in the LEC cluster (Figure 8—figure supplement 1A) and was up-regulated by S1PR1 loss-of-function (Figure 9B and Figure 9—figure supplement 1A). Whole-mount staining of S1PR1-GS mouse thoracic aortae for LYVE1 and CCL21 revealed aorta-associated CCL21+ lymphatics with high levels of S1PR1/ß-arrestin coupling (Figure 9C and D). We noted that CCL21 protein appeared as peri-nuclear puncta that likely marks the trans-Golgi network, as observed in dermal LECs (Vaahtomeri et al., 2017). Sagittal sections of the thoracic aorta indicate that GFPhigh, LYVE1+ adventitial lymphatics express CCL21 protein (Figure 9D), suggesting that ß-arrestin-dependent down-regulation of S1PR1 correlates with CCL21 expression (Figure 9D).
 
@@ -187,7 +299,601 @@ While there is scant information about the roles of S1P/S1PR1 signaling in adult
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>S1pr1flox/flox: S1pr1tm2Rlp</td>
+      <td>Allende et al. (2003)</td>
+      <td>RRID:MGI:2681963</td>
+      <td>S1pr1 ECKO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6N.129S6(FVB)-S1pr1tm3.1(tTA,-Arrb2)Rlp/J</td>
+      <td>The Jackson Laboratory, Kono et al. (2014)</td>
+      <td>RRID:IMSR_JAX:026275</td>
+      <td>S1PR1-GS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cdh5-CreERT2: Tg(Cdh5-cre/ERT2)1Rha</td>
+      <td>Sörensen et al., 2009</td>
+      <td>RRID:MGI:3848984</td>
+      <td>S1pr1 ECKO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tg(tetO-HIST1H2BJ/GFP)47Efu/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:005104</td>
+      <td>S1PR1-GS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6;129P2-Lyve1tm1.1(EGFP/cre)Cys/J</td>
+      <td>The Jackson Laboratory, Pham et al., 2010</td>
+      <td>RRID:IMSR_JAX:012601</td>
+      <td>S1PR1-GS-Lymph-S1P-less</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sphk1tm2Cgh</td>
+      <td>Pham et al., 2010</td>
+      <td>MGI:3707997</td>
+      <td>S1PR1-GS-Lymph-S1P-less</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sphk2tm1.1Cgh</td>
+      <td>Pham et al., 2010</td>
+      <td>MGI:3708000</td>
+      <td>S1PR1-GS-Lymph-S1P-less</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26-CreERT2: Gt(ROSA)26Sortm1(cre/ERT2)Alj</td>
+      <td>Takeda et al., 2007</td>
+      <td>MGI:3778915</td>
+      <td>S1PR1-GS-S1P-less</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(PE)-conjugated anti-CD31, (MEC13.3, Rat Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #: 102508 RRID:AB_312915</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(APC)-conjugated anti-mouse CD45 (30-F11, Rat Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #: 103112 RRID:AB_312977</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(APC)-conjugated anti-mouse TER119/Erythroid Cells (Rat Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:116212 RRID:AB_313713</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD16/CD32 (Rat Monoclonal)</td>
+      <td>Thermo Fisher Scientific, eBioscience</td>
+      <td>Cat #: 14-0161-82 RRID:AB_467133</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse VE-cadherin (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat #: AF1002 RRID:AB_2077789</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Fibrinogen (goat polyclonal)</td>
+      <td>Accurate Chemical</td>
+      <td>Cat #: YNGMFBG</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki-67 (SolA15, rat monoclonal)</td>
+      <td>Thermo Fisher Scientific, eBioscience</td>
+      <td>Cat #: 14-5698-80 RRID:AB_10853185</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse LYVE1 (rabbit Polyclonal)</td>
+      <td>ReliaTech</td>
+      <td>Cat #: 103-PA50AG RRID:AB_2783787</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse LYVE1 (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF2125 RRID:AB_2297188</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse VEGFR3/Flt-4 (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF743 RRID:AB_355563</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse CD49f (ITGA6) (GoH3, rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat #: 313602 RRID:AB_345296</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse ALPL (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF2910 RRID:AB_664062</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-TSP1 (A6.1, mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: MA5-13395 RRID:AB_10982819</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated anti-CLDN5 (4C3C2, mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific, Invitrogen</td>
+      <td>Cat #: 352588 RRID:AB_2532189</td>
+      <td>1:100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FSP1/S100A4 (rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #: 07–2274 RRID:AB_10807552</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse/rat CD31/PECAM-1 (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF3628 RRID:AB_2161028</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31 (SZ31, rat monoclonal)</td>
+      <td>HistoBiotec</td>
+      <td>Cat #: DIA-310 RRID:AB_2631039</td>
+      <td>1:100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LEF1 (C12A5, rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat #: 2230 RRID:AB_823558</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse VCAM1 (M/K, rat monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #: CBL1300 RRID:AB_2214062</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse NOGGIN (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF719 RRID:AB_2151669</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CCL21/6Ckine (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF457 RRID:AB_2072083</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human PROX1 (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF2727 RRID:AB_2170716</td>
+      <td>1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-jellyfish GFP (chicken polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: A10262 RRID:AB_2534023</td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated anti-human alpha smooth muscle actin (1A4, mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: C6198 RRID:AB_476856</td>
+      <td>1:300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 74004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-Seq2 v4 Ultra Low RNA Kit for Sequencing</td>
+      <td>TakaraBio</td>
+      <td>Cat #: 634888</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Sensitivity RNA ScreenTape</td>
+      <td>Agilent</td>
+      <td>Cat #: 5067–5579</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Sensitivity D1000 ScreenTape</td>
+      <td>Agilent</td>
+      <td>Cat #: 5067–5584</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT2 DNA Library Prep Kit for RNA-seq</td>
+      <td>Illumina</td>
+      <td>Cat #: FC-131–1024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Library Prep Kit for ATAC-seq (buffer TD and TDE1 enzyme)</td>
+      <td>Illumina</td>
+      <td>Cat #: FC-121–1030</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute Reaction Cleanup Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 28204</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 28004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext High-Fidelity 2X PCR Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: M0541S</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: T5648</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Corn oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: C8267</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Fluoromount-G slide mounting medium</td>
+      <td>SouthernBiotech</td>
+      <td>Cat #: 0100–01</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>ProLong Gold</td>
+      <td>Thermo Fisher Scientific, Invitrogen</td>
+      <td>P36934</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Liberase TM</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: 5401127001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>deoxyribonuclease I from bovine pancreas, type 2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: D4527</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Bovine Serum Albumin lyophilized powder, essentially fatty acid free,≥96% (agarose gel electrophoresis)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: A6003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>2-MercaptoEthanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: M3148</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Digitonin (20 mg/ml)</td>
+      <td>Promega</td>
+      <td>Cat #: G9441</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Donkey Serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: D9663</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>RNase inhibitor</td>
+      <td>Takara Bio</td>
+      <td>Cat #: 2313B</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Sphingosine-1-Phosphate (d18:1)</td>
+      <td>Avanti lipids</td>
+      <td>Cat #: 860492P</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Smart-dT30VN</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ERCC RNA Spike-In Mix</td>
+      <td>Thermo Fisher Scientific, Ambion</td>
+      <td>Cat #: 4456740</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td>https://imagej.net/Fiji RRID:SCR_002285</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8.0</td>
+      <td>Graphpad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/ RRID:SCR_002798</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID: 23104886</td>
+      <td>https://github.com/alexdobin/STAR RRID:SCR_015899</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rsubread</td>
+      <td>PMID: 23558742</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/Rsubread.html RRID:SCR_016945</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>PMID: 19910308</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/edgeR.html RRID:SCR_012802</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>PMID: 21816040</td>
+      <td>https://deweylab.github.io/RSEM/ RRID:SCR_013027</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml RRID:SCR_005476</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td>Broad Institute</td>
+      <td>https://broadinstitute.github.io/picard/ RRID:SCR_006525</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>PMID: 18798982</td>
+      <td>https://github.com/taoliu/MACS RRID:SCR_013291</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>PMID: 20110278</td>
+      <td>https://bedtools.readthedocs.io/en/latest/ RRID:SCR_006646</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedops</td>
+      <td>PMID: 22576172</td>
+      <td>https://bedops.readthedocs.io/en/latest/ RRID:SCR_012865</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hypergeometric Optimization of Motif EnRichment (HOMER)</td>
+      <td>PMID: 20513432</td>
+      <td>http://homer.ucsd.edu/homer/ RRID:SCR_010881</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepTools</td>
+      <td>PMID: 27079975</td>
+      <td>https://deeptools.readthedocs.io/en/develop/ RRID:SCR_016366</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>PMID: 21221095</td>
+      <td>http://software.broadinstitute.org/software/igv/ RRID:SCR_011793</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>PMID: 19505943</td>
+      <td>http://www.htslib.org/ RRID:SCR_002105</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>velocyto</td>
+      <td>PMID: 30089906</td>
+      <td>http://velocyto.org/velocyto.py/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pagoda2</td>
+      <td>PMID: 26780092 PMID: 30089906</td>
+      <td>https://github.com/hms-dbmi/pagoda2 http://pklab.med.harvard.edu/nikolas/pagoda2/frontend/current/pagodaLocal/ RRID:SCR_017094</td>
+      <td>Binary (.bin) file in Supplementary file 7 was generated as instructed here: https://github.com/hms-dbmi/pagoda2/blob/master/vignettes/pagoda2.walkthrough.oct2018.md</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Animal experiment protocols were approved by the Institutional Animal Care and Use Committees (IACUC) of Boston Children’s Hospital and the French Department of Education. S1PR1-GS mice were previously reported (Kono et al., 2014). S1PR1-GS mice used for experiments harbored a single S1pr1knockin (S1pr1-tTA-IRES-mArrb2-TEV) allele (S1pr1ki/+) as well as a single H2B-GFP reporter allele. S1pr1f/f mice (Allende et al., 2003) were bred with Cdh5-CreERT2 mice (Sörensen et al., 2009) to generate S1pr1 ECKO mice, as previously described (Galvani et al., 2015; Jung et al., 2012). Gene deletion was achieved by intraperitoneal injection of tamoxifen (2 mg/day) at 5–6 weeks of age for five consecutive days. Tamoxifen treated mice were rested for a minimum of 2 weeks prior to experiments.
 
@@ -195,15 +901,15 @@ S1PR1-GS mice deficient in LEC S1P production were generated by excising a condi
 
 Young adult (aged 8 to 12 weeks) males and females were used for sequencing experiments. Males and females of similar age (7 to 18 weeks) were used for imaging studies, unless indicated otherwise. For examination of VCAM1 in Figure 5—figure supplement 2B, 200 µL lipopolysaccharide (Sigma-Aldrich, L2630) in PBS was injected i.p. (5.5 mg/kg) followed by euthanasia and tissue harvest after 9 hr. For timed matings, embryonic day (E) 0.5 was defined as noon on the date of the vaginal plug and embryos were harvested at E11.5.
 
-## Lymphocyte counts
+### Lymphocyte counts
 
 Blood was drawn from the retroorbital venous plexus into EDTA tubes and blood cells enumerated with a Hemavet 950 cell counter (Drew Scientific).
 
-## Lung vascular leakage assay
+### Lung vascular leakage assay
 
 Lung vascular integrity was assessed by administration of 6 μL/g 0.5% Evans Blue dye (Sigma # E2129) via the retro-orbital venous plexus. Two hours later, lungs were perfused via the right ventricle with 10 mL heparin-DPBS, harvested, and Evans Blue was extracted overnight at 55°C in formamide. Lung accumulation of Evans Blue was quantified by measuring absorbance of the lung extract at 620 nm and expressed as corrected for absorbance at 740 nm.
 
-## FACS isolation and single cell sequencing of mouse aortic endothelial cells
+### FACS isolation and single cell sequencing of mouse aortic endothelial cells
 
 After CO2 euthanasia, the right atrium was opened and the left ventricle was perfused with 10 mL phosphate-buffered saline (PBS) (Corning). Aortae were dissected from the root to below the common iliac bifurcation and transferred into ice ice-cold 1x HBSS (Sigma-Aldrich, H1641). Whole aortae were incubated in HBSS containing elastase (4.6 U/mL, LS002292, Worthington), dispase II (1.3 U/mL, Roche), and hyaluronidase (50.5 U/mL, Sigma-Aldrich, H3506) at 37 °C for 10 min in wells of a 6-well plate. Aortae were then transferred to a 100 mm dish with 1 mL HBSS and minced using small scissors. Minced aortae were transferred to a low protein binding 5 mL tube containing Liberase (0.6 U/mL, Sigma-Aldrich), collagenase II (86.7 U/mL, LS004174, Worthington), and DNase (62.0 U/mL, Sigma-Aldrich, D4527) in 4.3 mL HBSS and incubated at 37 ° C for 40 min with rotation in a hybridization oven. The cell suspension was then triturated 10 times through an 18 G needle to dissociate clumps, followed by addition of 400 µL STOP solution (3 mM EDTA, 0.5% fatty acid-free bovin serum albumin (FAF-BSA) (Sigma-Aldrich, A6003) in 1x HBSS). For the remainder of the procedure, cells were kept on ice and all centrifugation steps were performed at 4 °C.
 
@@ -211,13 +917,13 @@ Cells were spun at 500 xg for 5 min, the supernatant was removed, then cells wer
 
 For single-cell RNA-seq, GFPhigh and GFPlow cells were gated as described above. Library preparation from single cells was performed as previously described (Vanlandewijck et al., 2018). Briefly, cells were deposited into individual wells of 384-well plates containing 2.3 µL of lysis buffer (0.2% Triton-X (Sigma-Aldrich, T9284), 2 U/μL RNase inhibitor (ClonTech, 2313B), 2 mM dNTP’s (ThermoFisher Scientific, R1122), 1 μM Smart-dT30VN (Sigma-Aldrich), ERCC 1:4 × 107 dilution (Ambion, # 4456740)) prior to library preparation using the Smart-seq2 protocol (Picelli et al., 2014).
 
-## Bulk RNA-seq and analysis
+### Bulk RNA-seq and analysis
 
 Cells sorted into buffer RLT were subjected to total RNA extraction using the RNeasy Micro Kit (Qiagen). The High Sensitivity RNA ScreenTape (Agilent) was used to verify RNA quality before synthesis of double-stranded cDNA from 5 to 10 ng RNA using the SMART-Seq2 v4 Ultra Low RNA Kit for Sequencing (Takara Bio) according to the manufacturer’s instructions. Agilent 2100 Bioanalyzer and High Sensitivity DNA Kit (Agilent) were used to verify cDNA quality. cDNA libraries were prepared for sequencing using the Illumina Nextera XT2 kit (Illumina), and ~20–40 million paired-end reads (2 × 75 bp) were sequenced for each sample.
 
 Reads from each sample were aligned to the MGSCv37 (mm9) genome assembly using STAR (Dobin et al., 2013) with the options: --runMode alignReads --outFilterType BySJout --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --alignIntronMin 10 --alignIntronMax 1000000 --alignMatesGapMax 1000000 --outSAMtype BAM SortedByCoordinate --quantMode TranscriptomeSAM. Gene-level counts over UCSC annotated exons were calculated using the Rsubread package and ‘featureCounts’ script (Liao et al., 2013) with options: -M –O –p –d 30 –D 50000. The resultant count table was input to edgeR (Robinson et al., 2010) for differential gene expression analysis. The. bam files from STAR were input to the RSEM (Li and Dewey, 2011) script ‘rsem-calculate-expression’ with default parameters to generate FPKMs for each replicate.
 
-## ATAC-seq and analysis
+### ATAC-seq and analysis
 
 ATAC-seq libraries were prepared according to the previously described fast-ATAC protocol (Corces et al., 2016). Briefly, 800–4,000 FACS-isolated cells in 0.1% FAF-BSA/PBS were pelleted by centrifugation at 400 ×g at 4°C for 5 min. Supernatant was carefully removed to leave the cell pellet undisturbed, then cells were washed once with 1 mL ice-cold PBS. The transposition mix [25 μL buffer TD, 2.5 μL TDE1 (both from Illumina FC-121–1030), 1 μL of 0.5% digitonin (Promega, G9441) and 16 μl nuclease-free water] was prepared and mixed by pipetting, then added to the cell pellet. Pellets were disrupted by gently flicking the tubes, followed by incubation at 37°C for 30 min in an Eppendorf ThermoMixer with constant agitation at 300 rpm. Tagmented DNA was purified using the MinElute Reaction Cleanup Kit (Qiagen, 28204), and subjected to cycle-limiting PCR as previously described (Buenrostro et al., 2013). Transposed fragments were purified using the MinElute PCR Purification Kit (Qiagen, 28004) and Agilent DNA Tapestation D1000 High Sensitivity chips (Agilent) were used to quantify libraries. ~ 20–60 million paired-end reads (2 × 75 bp) were sequenced for each sample on a NextSeq instrument (Illumina).
 
@@ -231,13 +937,13 @@ DAPs were used as input for the HOMER ‘findMotifsGenome.pl’ script with the 
 
 Nucleotide-resolution coverage (bigWig) tracks were generated by first combining trimmed reads from each replicate, then inputting the resultant. bam files to the DeepTools (Ramírez et al., 2016) ‘bamCoverage’ script with options ‘—normalizeUsing RPGC –binSize 1’. Heatmaps of ATAC-seq reads within 600 bp of p65, NUR77, COUP-TFII, ATF1, GATA2, and GRE motifs were generated by centering coverage tracks on each motif identified in DAPs. These motifs were identified using the HOMER script ‘annotatePeaks.pl’ with the ‘-m -mbed’ options. All heatmaps were generated using DeepTools and all genome browser images were captured using Integrative Genomics Viewer (Robinson et al., 2011).
 
-## scRNA-seq analysis
+### scRNA-seq analysis
 
 1152 Fastq files (one per cell) were aligned to the GRCm38 (mm10) genome assembly using STAR with options –runThreadN 4 –outSAMstrandField intronMotif –twopassmode Basic. Bam files were input to the velocyto (http://velocyto.org/velocyto.py/) command-line script ‘run-smartseq2’ (La Manno et al., 2018). Expressed repetitive elments were downloaded from the UCSC genome browser and masked from analysis using the ‘-m’ option of the ‘run-smartseq2’ script. The resultant table of read counts per transcript (‘loom’ file) was input to the PAGODA2 (https://github.com/hms-dbmi/pagoda2) R package for further analysis (Fan et al., 2016; La Manno et al., 2018). The details of our R code are provided in Source Code File 3.
 
 After variance normalization, the top 3000 overdispersed genes were used for principal component analysis (PCA). An approximate k-nearest neighbor graph (k = 30) based on a cosine distance of the top 100 principal components was used for clustering. Clusters were determined using the multilevel community detection algorithm. PCA results were plotted using the ‘tSNE’ embedding option of the PAGODA2 ‘r$getEmbedding’ function. Heatmaps of gene expression embedded on hierarchical clustering, differential expression analyses, and expression of individual transcripts on the tSNE embedding were generated using the graphical user interface at http://pklab.med.harvard.edu/nikolas/pagoda2/frontend/current/pagodaLocal/. We generated the binary (.bin) file according to the Pagoda2 walkthrough: https://github.com/hms-dbmi/pagoda2/blob/master/vignettes/pagoda2.walkthrough.oct2018.md. This binary file (Supplementary file 7) can be uploaded to the graphical user interface for exploration of our dataset. We generated a file of cluster labels (for LEC, vEC, VSMC, aEC1, aEC2, aEC3, aEC4, aEC5, aEC6 as well as all other cluster grouping used for analysis), which can also be uploaded to the graphical user interface for visualization of these clusters (Supplementary file 8).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were euthanized as described above, then perfused through the left ventricle with 5 mL PBS immediately followed by 10 mL ice-fold 4% paraformaldehyde (PFA) in PBS. The left ventricle was then perfused with 6 mL PBS. After aorta dissection, remaining fat tissue was removed with the aorta suspended in PBS in a polystyrene dish. For sectioning, intact thoracic aortae were additionally post-fixed in 4% PFA at 4° for 10 min, then briefly washed with PBS three times. Aortae were then cryoprotected in 30% sucrose in PBS for 2 hr at 4°C, embedded in a 1:1 mixture of 30% sucrose PBS:OCT over dry ice, then sectioned at 14 µM intervals using a cryostat (Leica Biosystems). E11.5 embryos were fixed in 4% PFA at 4° for 1 hr, briefly washed with PBS three times, cryoprotected in 30% sucrose in PBS for 24 hr at 4°C, and embedded as described above for sagittal sectioning with a cryostat.
 
@@ -245,17 +951,17 @@ For en face preparations, fine scissors were used to cut the aorta open and expo
 
 For staining of mesenteric vessels, mice were euthanized as described above then perfusion-fixed with 1% PFA, followed by post-fixation of mesenteries for 1 hr in 4% PFA. Staining was performed as described for aorta whole-mount preparations with the following exceptions: PBS-T contained 0.2% Triton X-100, blocking solution contained 3% BSA and 5% normal donkey serum in PBS-T, and secondary antibody incubation occurred overnight.
 
-## Confocal microscopy and image analysis
+### Confocal microscopy and image analysis
 
 Images were acquired using a Zeiss LSM810 confocal microscope equipped with an Plan-Apochromat 20x/0.8 or a Plan-Apochromat 40x/1.4 oil DIC objective. Images were captured using Zen2.1 (Zeiss) software and processed with Fiji (NIH). Zen2.1 software was used to threshold GFP signal and manually count GFP+ nuclei per field (Figure 6). Fiji was used to quantify GFP signal over PROX1+ASMA+ and PROX1+ASMA- areas (Figure 8), TSP1 signal normalized to total VEC pixels per field (Figure 7F), as well aso for quantification of branch point and non-branch point GFP+ nuclei (Figure 7) using the watershed segmentation tool. Figures were assembled in Adobe Illustrator.
 
-## S1P analysis
+### S1P analysis
 
 Plasma S1P was extracted as previously decribed (Frej et al., 2015) with minor modification. Plasma aliquots (5 or 10 µL) were first diluted to 100 µL with TBS Buffer (50 mM Tris-HCl pH 7.5, 0.15 M NaCl). S1P was extracted by adding 100 µL precipitation solution (20 nM D7-S1P in methanol) followed by 30 s of vortexing. Precipitated samples were centrifuged at 18,000 rpm for 5 min and supernatant were transferred to vials for LC-MS/MS analysis (see below).
 
 C18-S1P (Avanti Lipids) was dissolved in methanol to obtain a 1 mM stock solution. Standard samples were prepared by diluting the stock in 4% fatty acid free BSA (Sigma-Aldrich) in TBS to obtain 1 µM and stored at −80°C. Before analysis, the 1 µM S1P solution was diluted with 4% BSA in TBS to obtain the following concentrations: 0.5 µM, 0.25 µM, 0.125 µM, 0.0625 µM, 0.03125 µM, 0.0156 µM, and 0.0078 µM. S1P in diluted samples (100 µL) were extracted with 100 µL of methanol containing 20 nM of D7-S1P followed by 30 s of vortexing. Precipitated samples were centrifuged at 18,000 rpm for 5 min and the supernatants were transferred to vials for LC-MS/MS analysis. The internal deuterium-labeled standard (D7-S1P, Avanti Lipids) was dissolved in methanol to obtain a 200 nM stock solution and stored at −20°C. Before analysis, the stock solution was diluted to 20 nM for sample precipitation.
 
-## LC-MS/MS S1P measurement and data analysis
+### LC-MS/MS S1P measurement and data analysis
 
 The samples were analyzed with Q Exactive mass spectrometer coupled to a Vanquish UHPLC System (Thermo Fisher Scientific). Analytes were separated using a reverse phase column maintained at 60°C (XSelect CSH C18 XP column 2.5 µm, 2.1 mm X 50 mm, Waters). The gradient solvents were as follows: Solvent A (water/methanol/formic acid 97/2/1 (v/v/v)) and Solvent B (methanol/acetone/water/formic acid 68/29/2/1 (v/v/v/v)). The analytical gradient was run at 0.4 mL/min from 50–100% Solvent B for 5.4 min, 100% for 5.5 min, followed by one minute of 50% Solvent B. A targeted MS2 strategy (also known as parallel reaction monitoring, PRM) was performed to isolate S1P (380.26 m/z) and D7-S1P (387.30 m/z) using a 1.6 m/z window, and the HCD-activated (stepped CE 25, 30, 50%) MS2 ions were scanned in the Orbitrap at 70 K. The area under the curve (AUC) of MS2 ions (S1P, 264.2686 m/z; D7-S1P, 271.3125 m/z) was calculated using Skyline (MacLean et al., 2010).
 

@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.33843.001 Segmentation of the axial skeleton in amniotes depends on the segmentation clock, which patterns the paraxial mesoderm and the sclerotome. While the segmentation clock clearly operates in teleosts, the role of the sclerotome in establishing the axial skeleton is unclear. We severely disrupt zebrafish paraxial segmentation, yet observe a largely normal segmentation process of the chordacentra. We demonstrate that axial entpd5+ notochord sheath cells are responsible for chordacentrum mineralization, and serve as a marker for axial segmentation. While autonomous within the notochord sheath, entpd5 expression and centrum formation show some plasticity and can respond to myotome pattern. These observations reveal for the first time the dynamics of notochord segmentation in a teleost, and are consistent with an autonomous patterning mechanism that is influenced, but not determined by adjacent paraxial mesoderm. This behavior is not consistent with a clock-type mechanism in the notochord.
+Segmentation of the axial skeleton in amniotes depends on the segmentation clock, which patterns the paraxial mesoderm and the sclerotome. While the segmentation clock clearly operates in teleosts, the role of the sclerotome in establishing the axial skeleton is unclear. We severely disrupt zebrafish paraxial segmentation, yet observe a largely normal segmentation process of the chordacentra. We demonstrate that axial entpd5+ notochord sheath cells are responsible for chordacentrum mineralization, and serve as a marker for axial segmentation. While autonomous within the notochord sheath, entpd5 expression and centrum formation show some plasticity and can respond to myotome pattern. These observations reveal for the first time the dynamics of notochord segmentation in a teleost, and are consistent with an autonomous patterning mechanism that is influenced, but not determined by adjacent paraxial mesoderm. This behavior is not consistent with a clock-type mechanism in the notochord.
 
 ## Introduction
 
@@ -42,33 +42,101 @@ In this paper, we investigate the developmental origin of segmental patterning o
 
 ## Results
 
-## Disruption of the segmentation clock in double and triple mutants
+### Disruption of the segmentation clock in double and triple mutants
 
 The zebrafish segmentation clock’s core pacemaker circuit consists of her1, her7 and hes6, which display partial and overlapping redundancy (Schröter et al., 2012). The analysis of mutant combinations was previously not possible because her1 and her7 are located ~10 Kb apart on chromosome 5. We generated a her1;her7 double mutant by injecting a TALEN construct directed against her1 in the her7 mutant (Choorapoikayil et al., 2012) and a novel hes6 mutation also using a TALEN approach (Figure 1—figure supplement 1). The her1 TALEN allele has two consecutive premature stop codons (TAA TAA). The predicted Her1 protein from the TALEN-induced mutation lacks the basic DNA-binding domain and the HLH dimerization domain, suggesting that the protein product has no functionality. It has been previously shown that the hu2526 allele is a her7 null mutant resulting from a stop codon in the HLH domain (Schröter et al., 2012). Importantly, the phenotype of her1;her7 double mutants is consistent with the phenotype of her1, her7 double morphants and also of the b567 deletion allele (Henry et al., 2002; Oates and Ho, 2002).
 
 To assess patterning in the PSM, we used her7 (Figure 1A–D’), her1 and deltaC expression (Figure 1—figure supplement 2), which show wave-like expression domains, as markers for the oscillation of the clock, and mespb, which shows expression in cells along the anterior border of two newly forming segments, for the clock’s segmental output in the anterior PSM at the 10-somite stage (Figure 1E–H; Figure 1—figure supplement 3A). In tbx6−/−, her7 still oscillated posteriorly (Figure 1B,B´), but mespb was not expressed (Figure 1F), as expected (Oates et al., 2005; Durbin et al., 2000). In her1;her7 double mutants, her7 was expressed throughout the PSM (Figure 1C,C’), but lacked oscillatory waves, and mespb expression in the anterior PSM occurred in a diffuse domain, lacking segmented stripes (Figure 1G; Figure 1—figure supplement 3B), consistent with previous results using anti-sense knock-down reagents (Oates and Ho, 2002). Expression of other markers of segmental patterning in the anterior PSM (papc, ripply1, ripply2) also lacked segmental stripes (Figure 1—figure supplement 3C–H). This reveals that in her1−/−;her7−/−, the segmentation clock is severely disrupted throughout the PSM, and that a correspondingly disordered, non-segmental output is made in the anterior PSM. Triple mutants for her1, her7 and hes6 have the same expression patterns as her1;her7 double mutants for all markers analyzed (Figure 1—figure supplement 2). Hence, and in order to simplify breeding, we focused further analyses on her1−/−;her7−/−. Finally, we examined her1−/−;her7−/−;tbx6−/− and found that her7 expression in the posterior PSM lacked oscillatory waves and neither her7 (Figure 1D,D') nor mespb (Figure 1H) was expressed in the anterior PSM. From these results we conclude that her1−/−;her7−/−;tbx6−/− resembles the simple addition of the tbx6 and her1;her7 double mutant phenotypes; namely a severely disrupted segmentation clock that lacks any output in the anterior. In addition, bright field images at the 18-somite stage (Figure 1I–L’) were taken. Somite boundaries in wild type embryos are periodic and sharp (Figure 1I,I’). Somite boundaries could not be discerned in tbx6 or her1;her7;tbx6 triple mutants (Figure 1J,J’ and L,L’). In her1−/−;her7−/− (Figure 1K,K’), partial boundaries were visible, but were lacking regular shape and periodic arrangement. This indicates that periodic morphology is disrupted in the mutant paraxial mesoderm. We next evaluated the presence of periodic patterns in muscle pioneers by analyzing en2a expression at the 20-somite stage (Figure 1M–P’). The normal periodic pattern is lost in tbx6−/− (Figure 1N,N’), her1−/−;her7−/− (Figure 1O,O’) and her1−/−;her7−/−;tbx6−/− (Figure 1P,P’), indicating that although these cell types are present in these mutants, there is no overt segmental pattern emerging directly from the PSM.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig1-v2.jpg)
+
+**Figure 1.:** (A–D’) In situ hybridization for segmentation clock marker her7. (B and B') her7 oscillates in the posterior PSM of tbx6−/−, but does not oscillate in her1−/−;her7−/− (C and C´) or her1−/−;her7−/−;tbx6−/− (D and D`). (E–H) In situ hybridization for segmental output marker mespb. mespb is not expressed in tbx6−/− (F) or her1−/−;her7−/−;tbx6−/− (H), but is weakly expressed in her1−/−;her7−/−, albeit not in segmental stripes (G). (I–L’) Somite boundaries in the paraxial mesoderm. In tbx6−/− (J), her1−/−;her7−/− (K) and her1−/−;her7−/−;tbx6−/− (L) mutants, boundaries lose periodic order. (M–P’) Spatial distribution of muscle pioneers marked by in situ hybridization with en2a. In tbx6−/− (N), her1−/−;her7−/− (O) and her1−/−;her7−/−;tbx6−/− (P) muscle pioneers lose segmental pattern. A-H’ are dorsal views of 13.5 hpf (10 somites) embryos, I-P' are lateral views of 18–19.5 hpf (18–20 somites) embryos. a – anterior, p – posterior. Scale bar in A is 100 µm and applies to A-G. Scale bar in I is 150 µm, applies to I-L and in I’ is 100 µm, applies to I’-L’. Scale bars in M and M’ are 150 µm and 100 µm respectively, and apply to M-P and M’-P’ respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A TALEN construct directed against her1 was injected in the her7 mutant resulting in an insertion of 17 bp (red sequence) and the creation of 2 consecutive stop codons in exon 2 of her1 (*=stop codons). (B) The novel hes6 mutation was created by injection of a TALEN targeted against hes6 in wild type. The new allele has a five base pair deletion in exon 3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A-H') In situ hybridization for segmentation clock markers her1 and deltaC in tbx6−/−, her1−/−;her7−/−and her1−/−;her7−/−;tbx6−/−. her1 (B and B’) and deltaC (F and F’) oscillate in the posterior PSM of tbx6−/−. her1 (C and C’) and deltaC (G and G’) do not oscillate in her1−/−;her7−/−. (D and D’, H and H’) her1 and deltaC do not oscillate and their expression is restricted to the posterior PSM in her1−/−;her7−/−;tbx6−/−. (I-P') Comparison of clock markers her1, her7 and deltaC and segmental output marker mespb between her1−/−;her7−/− and her1−/−;her7−/−;hes6−/−. her1, her7 and deltaC expression domains are indistinguishable in her1−/−;her7−/− (I and I’, J and J’, K and K’) and her1−/−;her7−/−;hes6−/− (M and M’, N and N’, O and O’). mespb expression in the anterior PSM is equivalently disordered in both mutants (L and L’, P and P’). Embryos are 13.5 hpf (10-somite stage). Scale bar in A applies to A-H’. Scale bar in I applies to I-P’. Scale bars are 100 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** In situ hybridization for segmentation clock output markers. (A-b') Two examples of mespb expression in the anterior PSM of wild type embryos, present as segmental stripes (A, a and A’, a’) whereas mespb expression is diffuse and lacking segmental organization in her1−/−;her7−/− (B, b and B’, b’). (C-H) Comparison of segmental markers paraxial protocadherin (papc), ripply1 and ripply2 between wild type and her1−/−;her7−/− embryos. papc (C) ripply1 (D) and ripply2 (E) are expressed as stripes in the anterior PSM and ripply1 is also expressed in the posterior compartment of the formed somites in wild type, but all markers show disrupted segmental organization in her1−/−;her7−/− (F, G and H respectively). A - H are dorsal views of 13.5 hpf (10 somites) flat-mounted embryos. Scale bar in C is 100 µm and applies to A - H. Scale bar in a is 50 µm and applies to insets a, a’, b and b’.
+
 The characteristic chevrons of the larval myotome are visible using xirp2a as a boundary marker along the axis at 1.5 days post fertilization (dpf) (Figure 2A,A’). We observed strong disruption of periodic myotome boundaries in all mutants (Figure 2B–D’ and Figure 2—figure supplement 2), with the severity in tbx6−/− and her1−/−;her7−/−;tbx6−/− (Figure 2B,B’ and D,D’) equivalent, and stronger than that found in her1−/−;her7−/− (Figure 2C,C’). The short and scattered boundary fragments visible in her1−/−;her7−/− (Figure 2C’) correlate with earlier expression of mespb and partial somite boundaries in the PSM (Figure 1G, Figure 1K,K’), and may arise from a secondary morphogenetic effect of elongating muscle fibers (van Eeden et al., 1998), some of which are lost in the absence of fss/tbx6 (Windner et al., 2015).
 
-## Normal centra form in the absence of periodic paraxial patterning
+![Figure 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig2-v2.jpg)
+
+**Figure 2.:** (A to D’) In situ hybridization for myotome boundary marker xirp2a. Myotome boundaries are disrupted to differing degrees of severity depending on the genotype. (E–H’) Alizarin Red bone preparations. Centra are well-formed in tbx6−/− (n = 10) (F), while neural and hemal arches are often fused (F´). Centra are also well-formed in her1−/−;her7−/− (n = 14) (G,G’) and her1−/−;her7−/−;tbx6−/− (n = 15) (H,H’). Occasional defects occur, seen as smaller vertebrae (arrowhead in F’), or as fusions of two vertebrae (arrowheads in G’ and H’). Larvae in A-D are 40 hpf. Adult fish in E-H are between two and six months. All animals in lateral view with anterior to the left. na - neural arch, hr - hemal arch, c - centrum. Scale bars in A and A’ are 150 µm and 100 µm respectively and apply to A-D and A’-D’ respectively. Scale bar in E is 1 mm and applies to E-H, scale bar in E’ is 200 µm and applies to E’-H’. Asterisks highlight fused neural and hemal arches.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The initial mineralization immediately adjacent to the notochord results in the formation of the chordacentrum (cc). The subsequent expansion of this structure through further mineralization of collagenous fibrils leads to subsequent distal growth in all dimensions, and the formation of the centrum proper (vertebral body) (c). Green border represent domains of outwardly-growing entpd5 expression (compare to Figure 5). Adapted after Figure 7 of Wang et al., 2013.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A1–D6) In situ hybridisation for myotome boundary marker xirp2a in six representative embryos for each genotype. (A1-A6) In wild type larvae, xirp2a staining delimits periodic, chevron-shaped boundaries. (B1–B6) In tbx6−/−, myotome boundaries are either fragmented or indistinct and xirp2a staining is visible in most of the axis. (C1–C6) In her1−/−;her7 −/−, myotome boundaries are fragmented and scattered in the trunk. Occasional chevron-shaped boundaries can be observed (arrows in C4 and C6). (D1–D6) Myotome boundary disorder of her1−/−;her7−/−;tbx6 −/− resembles tbx6−/−. Scale bars are 100 µm. Scale bar in A1 applies to A1-2, in A3 applies to A3-A6, in B2 applies to B2-B6, in C1 to C1-6 and in D1 to D1-6. Larvae are 36–41 hpf, shown in lateral view with anterior to the left. Images are taken from trunk abutting the yolk extension, corresponding to ~segments 7 to 17 in .
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, D, G, J and M) xirp2a myotome marker in situ hybridization at 27 hpf. (B, E, H, K and N) entpd5:kaede expression between 15 dpf and 20 dpf. (C, F, I, L, O) Alizarin Red bone stain in adults between 6 months and 1 year. Centra segmentation is normal in aei/deltaD, beamter/deltaC, her1, her7, and hes6 mutants. In aei/deltaD (A), bea/deltaC (D) and her7 (J) mutants, where the myotome boundaries are disordered only in the posterior trunk and tail, the neural and hemal arches of the caudal vertebrae are fused (B, C, E, F and L). All animals in lateral view with anterior to the left. Scale bars are 100 µm in A, D, G, J, M; 300 µm in B, E, H, K, N; and 0.6 mm in C, F, I, L, O).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A, D, G, J, M, P, S) xirp2a myotome marker in situ hybridization at 27 hpf. (B, E, H, K, N, Q, T) entpd5:Kaede expression between 15 dpf and 20 dpf. (C, F, I, L, O, R, U) Alizarin Red bone preparations of adults between 6 months and 1 year of age. (A to L) Triple and double heterozygote embryos for her1, hes6 and her7, have wild type myotome boundaries, arches and chordacentra. (M) The her7;hes6 homozygous mutants have normal myotome segmentation (n = 36). At both embryonic (N (n = 5)) and adult stages (O (n = 6)) her7;hes6 mutants have well-formed centra and neural and hemal arches. (P) her1;hes6 mutants (n=15) and (S) her1;her7;hes6 mutants (n=9) have disordered myotome boundaries. In both cases, neural and hemal arches show fusions (arrow in Q and T) (Q (n = 3), R (n = 1), T (n = 5) and U (n = 6)) and small vertebrae (asterisk in Q and T) and fusion between two vertebrae (cross in R). All animals in lateral view with anterior to the left. Scale bars are 100 µm in A, D, G, J, M, P, S; 300 µm in B, E, H, K, N, Q, T; and 0.6 mm in C, F, I, L, O,R,U).
+
+### Normal centra form in the absence of periodic paraxial patterning
 
 After having established that her1;her7 double mutants, tbx6 single mutants and her1;her7;tbx6 triple mutants display severe disruption of the segmentation clock and its output in the paraxial mesoderm, we examined to what extent these early paraxial defects were reflected in vertebral bodies of the adult. If the previously reported ability of the fss/tbx6 mutant to form normal centra was due to the remaining segmentation clock activity in the posterior PSM, then we expected to see a strong disruption of vertebral bodies in both her1−/−;her7−/− and her1−/−;her7−/−;tbx6−/− adults. Mineralized bone was visualized using Alizarin Red (AR) staining of adult skeletons. We observed duplications, fusions and abnormalities of the neural and hemal arches throughout the axis in every tbx6−/−, her1−/−;her7−/− and her1−/−;her7−/−;tbx6−/− adult, consistent with a loss of pattern in the sclerotome. However, the majority of centra in her1−/−;her7−/− and her1−/−;her7−/−;tbx6−/− adults were remarkably well-formed, defined as being cleanly separated from neighboring centra and similar to wildtype in their basic hourglass shape (Figure 2F–H). Furthermore, we confirmed that all centra were well-formed in all her1, her7 and hes6 hetero- and homozygotes (Hanisch et al., 2013), in all heterozygous double and triple crosses, and in hes6;her7 double mutants. In addition, centra were also well-formed in mutants where the segmentation clock’s oscillating cells slowly desynchronize due to a loss in Delta-Notch signaling, such as in beamter/deltaC and after eight/deltaD (Durbin et al., 2000) (Figure 2—figure supplement 3 and Figure 2—figure supplement 4). Thus, the segmentation clock activity remaining in the posterior PSM of tbx6 mutant embryos is not the cause of the well-formed vertebral centra observed in tbx6−/− adults.
 
 However, in some mutant combinations we did observe localized defects, such as a bend in the axis or occasional malformations and fusion of neighboring centra, scattered along every her1;her7 and her1;hes6 double mutant, and her1;her7;hes6 and her1;her7;tbx6 triple mutant skeletons, as well as in 80% of tbx6−/− skeletons (Figure 2F–H and Figure 2—figure supplement 4R,U). This shows that previous reports of normal segmentation of the centra in tbx6−/− were incomplete (Fleming et al., 2004; van Eeden et al., 1996), and indicates that in the absence of periodic order in the early paraxial mesoderm, formation of the centra is error-prone. Given the proximity of the developing chordacentra to the notochord, and the suggestion that the notochord serves as a linear template for the vertebral column (Gray et al., 2014), our findings argue instead that formation of periodic chordacentra may arise from a separate segmentation mechanism intrinsic to the notochord.
 
-## Segmental entpd5 expression in notochord sheath cells is the key step for chordacentrum mineralization
+### Segmental entpd5 expression in notochord sheath cells is the key step for chordacentrum mineralization
 
 Secreted Entpd5 has previously been shown to be required for bone formation in zebrafish, and to be co-expressed with osterix (osx) in craniofacial osteoblasts (Huitema et al., 2012). When examining entpd5 promoter activity outside the craniofacial area, we observed a striking segmented pattern in the sheath cells along the notochord (Figure 3A), well before the onset of chordacentrum mineralization is first observed in the anterior notochord at 6 dpf (Morin-Kensicki et al., 2002). Photoconversion at 3 dpf (Figure 3B) of Kaede expressed from an entpd5:kaede transgene showed that these rings arise from an earlier ubiquitous expression domain by de novo synthesis (Figure 3C), making entpd5 the earliest axial segmented marker known for zebrafish. We found entpd5 to be segmentally expressed first in the dorsal region of the sheath cell layer at the anterior, and new, periodically forming rings of entpd5 expression formed sequentially from anterior to posterior along the axis (Figure 3C and D). entpd5+ sheath cells precisely predicted the position of the mineralized chordacentra and were located centrally to the mineralized matrix as revealed by co-staining with AR (Figure 3E and F). In classical osteoblasts (cells able to produce bone matrix), as are found in the cleithrum or parasphenoid bones of the head, entpd5 is co-expressed with the osteoblast regulator osterix/Sp7 (Figure 3—figure supplement 1A) whereas within the developing vertebral column, osterix expression is first observed after 17 dpf when neural and hemal arches begin to form (Spoorendonk et al., 2008). entpd5 mutants form normally segmented osteoid, but do not mineralize it (Huitema et al., 2012). In contrast, osterix mutants have normal entpd5 expression and ossification in the notochord, but reduced ossification in the head (Figure 3—figure supplement 1B,C).
 
-## The patterning mechanism in the notochord sheath is influenced, but not determined, by paraxial segmentation
+![Figure 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig3-v2.jpg)
+
+**Figure 3.:** (A-D) Confocal images of live transgenic entpd5 reporter larvae in lateral view with anterior to left. (A) At 6 dpf, entpd5 is expressed only in notochord sheath cells and not in vacuolated notochord cells, labelled by SAGFF214A;UAS:GFP. (B) At 3 dpf entpd5 is expressed in the whole notochord and does not display a segmented pattern. (C,D) Transgenic entpd5:Kaede embryos were photoconverted at 3 dpf and imaged at 4 dpf (C) and 8 dpf (D), respectively. New axial expression domains (green) are restricted to a segmental pattern within the axis and the cleithrum (cl). (E) Live confocal imaging of entpd5:Kaede expression in larvae also stained with Alizarin Red (AR) in lateral view (left) and sagittal view (SP). entpd5+ expression domains overlap with areas of mineralization (left), and notochord sheath cells (green) localize proximal to the site of mineralization of the future chordacentra. (F) Schematic illustration depicting the innermost vacuolated cells (VC) and the alternating pattern of entpd5+ (red, E) and entpd5- (grey) notochord sheath cells (SC). The sheath cells are surrounded by a fibrous matrix (FM), which in turn becomes mineralized in entpd5+ areas. cl, cleithrum. Scale bar for A and E is 40 µm, scale bar for B and C is 150 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Lateral view of a transgenic entpd5:YFP; osterix:mCherry embryo. entpd5:YFP expressing cells are present at positions (arrows; numbers refer to prospective vertebrae 3–5) where mineralization of the vertebral centra are predicted to occur. osterix:mCherry expressing cells are not observed at these positions. (B) Lateral view of sibling and osterix mutant embryos, stained with Alizarin Red. Reduced mineralization seen in the head of mutants, but not around the notochord. (C) Lateral view of sibling and osterix mutant embryos, where all bone elements are labelled with entpd5:kaede. entpd5 expression is reduced in the craniofacial bones of the mutant compared with the sibling. The axial skeletons show no changes in vertebral expression pattern. All images are lateral views, with anterior to the left. Scale bars are 100 µm.
+
+### The patterning mechanism in the notochord sheath is influenced, but not determined, by paraxial segmentation
 
 We reasoned that a better understanding of the occasional defects observed in the tbx6−/−,her1−/−;her7−/−, and her1−/−;her7−/−;tbx6−/− chordacentra might provide insight into the mechanism of chordacentra segmentation. To describe the dynamics of these defects we first imaged entpd5 expression in the sheath cells along the axis at intervals of 2 days in each mutant and recorded the distribution in a kymogram (Figure 4A–D). In wildtype larvae (Figure 4A; Figure 4—figure supplement 1), entpd5+ segments are established in an anterior to posterior progression at a rate of ~1.5 per day, with the exception of the first two segments (part of the Weberian apparatus) which appear dorsally at first and are completed 4–6 days later. As each chordacentrum matured, entpd5 expression was down-regulated in the center and was retained at the distal edges of each element, as illustrated in Figure 2—figure supplement 1 and Figure 4—figure supplement 1. This process began around 15 dpf in the anterior chordacentra, and sequentially progressed posterior-wards along the axis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Kymogram representation of virtual time lapse observations of representative entpd5:kaede-expressing larvae of each genotype. (A) In wild type (n = 16), entpd5+ segments are added in an orderly manner from anterior to posterior (black lines). (B) tbx6−/− (n = 4), (C) her1−/−;her7−/− (n = 4), and (D) her1−/−;her7−/−;tbx6−/− mutants (n = 4) also form entpd5+ rings in an anterior to posterior manner, but in an error-prone fashion. Defects such as gaps in the segmental pattern (increased intervertebral spaces), or small vertebrae followed by fusions (black boxes) can be seen scattered along the axis. Red asterisks (*) in her1−/−;her7−/− kymogram (C) represent sites of transient bending of the axis. Blue dots follow the development of the numbered chordacentra over time.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Virtual time lapse of one larva from 7 dpf to 23 dpf showing entpd5 positive segment development in the axial skeleton progressing continuously from anterior to posterior, with regular distance between segments. Scale bars are 300 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Virtual time lapse of one larva from 7 dpf to 27 dpf. Scale bars are 300 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Fusions of adjacent chordacentra, non-regular entpd5+ segment shapes, thicker and thinner segments and a transient bending of the axis (asterisk) can be seen. Virtual time lapse of one larva from 7 dpf to 27 dpf. Scale bars are 300 µm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** These defects are not as strong or as frequent as in her1−/−;her7−/−, but gaps in segmentation, insertion of additional segments, fusions of adjacent centra, non-regular entpd5+ segment shapes, thicker and thinner segment can still be seen. Scale bars are 300 µm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Even though segmentation is overtly normal, the hes6 mutant forms fewer chordacentra than wild type, as expected. Scale bars are 300 µm.
 
 We next examined the dynamics of entpd5 expression rings in different mutant backgrounds. In the case of tbx6 (n = 4), her1;her7 (n = 4), her1;her7;tbx6 (n = 4) and hes6 (n = 6) mutants (Figure 4B–D, Figure 5A and B, Figure 4—figure supplement 2, Figure 4—figure supplement 3, Figure 4—figure supplement 4 and Figure 4—figure supplement 5), the chordacentra formed in an anterior to posterior direction as in . However, we observed two types of defects: in the first, a ring was initially not formed, leaving a transient gap (Figure 5A and longer spaces in the kymograms), which was then modified by the subsequent intercalation of a new entpd5 expression ring two or more days later (segment 1’ in Figure 5A, 19 dpf). The intercalated ring was thinner than neighboring elements, likely reflecting an earlier stage in ring development, and remained smaller and distinct from neighboring segments. In the second type of defect, a ring was added (on schedule or out of schedule) in the middle of a normal intervertebral distance, creating a distance shorter than expected between two rings. In this case, the notochord sheath cells of the small segment fused with one or two of its neighboring segments (Figure 5B, black boxes in kymograms). In the cases where two sequential defects are inserted by any of the two processes described above, we observed a transient bending of the axis, which was later modified by fusing segments or leaving two or three contiguous small vertebrae (Figure 4C, her1−/−;her7−/− kymogram and Figure 4—figure supplement 3). The phenotypic defects we see are different to the scoliosis phenotypes reported in mutant leviathan/col8a1a animals with defects in collagen deposition (Gray et al., 2014) or in mutant stocksteif/cyp26b1 animals with increased retinoic acid levels (Spoorendonk et al., 2008). In these cases, the first pattern of mineralization appears correctly segmented, and defects arise because of axial bending of the notochord and bone overgrowth, respectively. In contrast, we have directly observed the initial emergence of defective entpd5+ rings, suggesting that the periodic patterning of the notochord has been affected.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig5-v2.jpg)
 
-**Figure 5.:** entpd5+ segments results in erroneous chordacentrum formation.(A, B) Time series images of entpd5+ segments around the notochord in her1;her7 mutants, in lateral view with anterior to the left. (A) An atypically wide space between entpd5+ segments (arrow) results in the subsequent intercalation of an additional, smaller entpd5+ segment (1´). (B) An additional smaller segment (2') fuses to adjacent vertebra. (C) The length between existing entpd5+ segments was measured in her1;her7 mutants (n = 4) in positions where an entpd5 ring would be intercalated (red dots) and compared to the equivalent axial position in wild type (WT, n = 16) (black crosses). The distance preceding an intercalation in her1;her7 mutants was either similar or larger than wild type. DM, distance measured; E entpd5+ segment. All scale bars are 100 µm.
+**Figure 5.:** (A, B) Time series images of entpd5+ segments around the notochord in her1;her7 mutants, in lateral view with anterior to the left. (A) An atypically wide space between entpd5+ segments (arrow) results in the subsequent intercalation of an additional, smaller entpd5+ segment (1´). (B) An additional smaller segment (2') fuses to adjacent vertebra. (C) The length between existing entpd5+ segments was measured in her1;her7 mutants (n = 4) in positions where an entpd5 ring would be intercalated (red dots) and compared to the equivalent axial position in wild type (WT, n = 16) (black crosses). The distance preceding an intercalation in her1;her7 mutants was either similar or larger than wild type. DM, distance measured; E entpd5+ segment. All scale bars are 100 µm.
 
 Segment defects in the paraxial mesoderm occur sequentially along the axis, consistent with a disrupted clock-type mechanism. In contrast, the intercalation defects observed in the mutant axes form out of schedule with the sequence of notochord segmentation. We asked if the intercalation of an entpd5 ring was associated with an error in the initial local spacing of the rings along the notochord. We measured the distance between the entpd5+ rings bordering the location where the intercalated segment was added at the time point immediately before its appearance in her1;her7 mutants (n = 4 animals; 18 intercalations, red squares; Figure 5C) and compared this to equivalent distances in control embryos (n = 16 animals, 288 segments, black crosses). The distance preceding an intercalation was either similar to or larger than expected from the controls, but never smaller (n = 18, 1.4 ± 0.3 fold increase, mean ± SD). Thus, the intercalatory rings formed at a range of distances from their earlier neighbors, suggesting that the defects arise as a response to an error in positioning the earlier rings and are not a simple delay in entpd5 expression. These distinctive intercalations are difficult to reconcile with a clock-type mechanism for segmenting the notochord.
 
@@ -76,13 +144,73 @@ The chordacentra defects described above may reflect some influence of the disru
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig6-v2.jpg)
 
-**Figure 6.:** hes6 mutant embryos can form defective caudal vertebrae.(A,B) Alizarin Red bone preparations of wild type and hes6adults. (−/− B) 27% of hes6 adult bone stains presented with defects in caudal chordacentra (n=4/15) wildtype. Arrow points at fused hemal arches, arrow head at chordacentra segment defect. (−/−C to E´) entpd5:YFP expression in hes6 mutants at 28 dpf . 20% of hes6 mutants have one or more defective small vertebrae (arrows) exclusively in the caudal axis (n=8/41). Scale for A and B is 2.5 mm, C is 300 µm and C´ to E´ is 200 µm.
+**Figure 6.:** (A,B) Alizarin Red bone preparations of wild type and hes6−/− adults. (B) 27% of hes6−/− adult bone stains presented with defects in caudal chordacentra (n=4/15) wildtype. Arrow points at fused hemal arches, arrow head at chordacentra segment defect. (C to E´) entpd5:YFP expression in hes6 mutants at 28 dpf . 20% of hes6 mutants have one or more defective small vertebrae (arrows) exclusively in the caudal axis (n=8/41). Scale for A and B is 2.5 mm, C is 300 µm and C´ to E´ is 200 µm.
 
-## A reaction-diffusion model of axial patterning in the zebrafish
+### A reaction-diffusion model of axial patterning in the zebrafish
 
 These findings can be synthesized in a model of axial segmentation in which the notochord possesses an intrinsic segmentation mechanism, likely within the sheath cells, that does not depend on the paraxial segmentation clock to produce periodic entpd5 rings and subsequent mineralization. This mechanism is proposed to act directly upstream of entpd5 expression, but is nevertheless sensitive to information from the paraxial mesoderm, likely from the myotome structure, which can bias the position of a ring to enable coupling of the early-developing myotome with the later-forming skeleton in wildtype.
 
 To assess the plausibility of this hypothesis and to investigate what kind of mechanism has these properties, we developed a theoretical description that formalizes these ideas and incorporates key experimental findings. We describe the intrinsic patterning mechanism operating in the notochord sheath cells as a reaction diffusion system with two components, an activator and an inhibitor (Murray, 1993) (see the Theory section in Materials and methods and Figure 7—figure supplement 1). This theory is capable of producing an autonomous pattern, sequentially adding segments from anterior to posterior (Figure 7A, Figure 7—figure supplement 2 and Video 1). The cues provided by the paraxial mesoderm pattern are introduced as a distribution of sinks for the inhibitor that are of the same order as the mechanism’s intrinsic wavelength (Figure 7). The choice of sinks instead of sources, together with vanishing initial conditions across the notochord except for a perturbation localized at the anterior, are required to preserve the sequential character of notochord segmentation. Although other more complex descriptions that improve robustness to noise are possible (Materials and methods), this simple theory successfully accounts for the sequential formation of regular segments in the presence of sinks as observed in wild type (Figure 7B, Figure 7—figure supplement 3 and Video 2). The intrinsic patterning mechanism allows for a range of pattern wavelengths, providing the plasticity for the sinks to pin segments to specific locations, altering the length of each segment. We conjecture that the mutants do not affect the intrinsic notochord patterning mechanism, but change the features of the sink distribution. The potential of sinks for biasing the pattern can interfere with ring formation, revealing a process that can intercalate a ring into a mispatterned gap in the sequence. Both reducing the sink strength and increasing the noise in the positioning of sinks can induce defects in the intrinsic patterning mechanism (Figure 7—figure supplement 4). Thus, the spatially disordered and variable sized myotomes observed in the mutants (Figure 2A–E) are described in the theory as large fluctuations in the positions and amplitudes of inhibitor sinks (Figure 7C and D). The her1−/−;her7−/− situation is described by strong sinks with large position errors (Figures 2C and 7B, Figure 7—figure supplement 5 and Video 3) while tbx6−/− and her1−/−;her7−/−;tbx6−/− are described by sinks with reduced amplitude and shorter wavelength, accounting for the smaller and scattered myotome fragments (Figures 2B,D and and 7D, Figure 7—figure supplement 6 and Video 4). In the framework of the theory, tbx6−/− and her1−/−;her7−/−;tbx6−/− are described by the same set of parameters. The mechanism has some flexibility and is compatible with a range of wavelengths. For example, the larger myotomes produced by a hes6 mutant provides larger wavelength cues to the notochord resulting in larger and fewer chordacentra (Figure 7E, Figure 7—figure supplement 7 and Video 5).
+
+![Video 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-video1.mp4.jpg)
+
+**Video 1.:** The absence of sink profile (blue) in the top panel and corresponding activator (green) and inhibitor (red) patterns in the bottom with patterning occurring sequentially from anterior to posterior. Parameters as in Figure 7 of the main text.
+
+![Video 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-video2.mp4.jpg)
+
+**Video 2.:** The sink profile (blue) for the wild type condition in the top panel and corresponding activator (green) and inhibitor (red) patterns in the bottom. Parameters as in Figure 7 of the main text.
+
+![Video 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-video3.mp4.jpg)
+
+**Video 3.:** The sink profile (blue) showing the noisy spatial distribution for the her1;her7 mutant condition in the top panel and corresponding activator (green) and inhibitor (red) patterns in the bottom. Parameters as in Figure 7 of the main text.
+
+![Video 4.](https://cdn.elifesciences.org/articles/33843/elife-33843-video4.mp4.jpg)
+
+**Video 4.:** The sink profile (blue) representing the noisy spatial distribution and the reduced amplitude of sinks in the tbx6 mutant in the top panel and corresponding activator (green) and inhibitor (red) patterns in the bottom. This simulation also represents the her1;her7;tbx6 mutant. Parameters as in Figure 7 of the main text.
+
+![Video 5.](https://cdn.elifesciences.org/articles/33843/elife-33843-video5.mp4.jpg)
+
+**Video 5.:** The sink profile (blue) representing the longer spatial wavelength of sinks in the hes6 mutant in the top panel and corresponding activator (green) and inhibitor (red) patterns in the bottom. Parameters as in Figure 7 of the main text.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-v2.jpg)
+
+**Figure 7.:** A sink profile (blue) describes cues from myotomes that bias the position of segments. The Entpd5 pattern is given by the concentration of an activator (green) that is regulated by an inhibitor (red). (A) The system is capable of autonomous pattern formation in the absence of sinks. (B) Wild type condition is described by regularly placed strong sinks, according to the output of a functioning segmentation clock. (C) In her1−/−;her7−/− strong sinks are misplaced due to a malfunctioning segmentation clock, causing segments to be also misplaced and giving rise to defects. (D) tbx6 and her1;her7;tbx6 mutants are characterized by weaker segmentation clock output and fragmented and scattered myotome boundaries, here described by weaker sinks with a shorter wavelength. (E) The hes6 mutant is here characterized by a sink profile wavelength that is 6% larger than wild type. Parameters: a = 10−3, b = 10−2, τ= 0.1, d = 0.5. Sink profile parameters: (A) S0 = 0, (B) S0 = 8, λ = 0.57, σ = 0.05, (C) S0 = 8, λ = 0.57, σ = 0.18, (D) S0 = 4, λ = 0.30, σ = 0.15, and (E) S0 = 8, λ = 0.60, σ= 0.05. See also Videos 1–5 and Figure 7—figure supplement 1–9 for animations and snapshots for all conditions. Source data files for this figure and the supplemental figures have been supplied.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Scheme of the reactions between the activator U, the inhibitor V and the inhibitor sinks S. Pointed arrows indicate activation and blunt arrows inhibition. (B) Nullcline plots for the homogeneous theory showing a situation with three fixed points (left panel) and only one fixed point (right panel). Full dots are stable fixed points and open dots are unstable fixed points. (C) Pattern type generated by diffusion instability for the class of nullcline crossing displayed in right panel in (B), in which the activator u (green) and inhibitor v (red) coexist in space.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The absence of sink profile (blue) in the top panel and corresponding activator (green) and inhibitor (red) patterns in a sequence of snapshots from the simulation for the sinkless condition. Parameters as in Figure 7 of the main text.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** The sink profile (blue) for the wild type condition in the top panel and corresponding activator (green) and inhibitor (red) patterns. Parameters as in Figure 7 of the main text.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Steady state concentration of the activator (green) and inhibitor (red) for different sink profiles (blue) as indicated. (A–G) Increasing sink strength S0. For vanishing sinks S0 = 0 the patterning mechanism is free from external perturbations and progresses without noise in a deterministic way, giving rise to regular shorter segments. As sink strength S0 is increased, the reaction diffusion mechanism fails to match some sink positions, giving rise to some shorter segments in the activator pattern. For stronger sinks the sink profile is able to pin the position of activator peaks. (H–N) As noise in sink positions σ is increased, the distance between sinks in the sink profile can be either too short or too large for the intrinsic reaction diffusion system to cope with, giving rise to sink skipping and intercalations in the activator pattern. Parameters: a = 10−3, b = 10−2, τ = 0.1, d = 0.5. Sink profile parameters: (A–N) λ = 0.57, (A–G) σ = 0.05, (A) S0 = 0, (B) S0 = 2, (C) S0 = 4, (D) S0 = 6, (E) S0 = 8, (F) S0 = 10, (G) S0 = 12, (H–N) S0 = 8, (H) σ = 0.00, (I) σ = 0.05, (J) σ = 0.10, (K) σ = 0.15, (L) σ = 0.20, (M) σ = 0.25, (N) σ = 0.30.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** The sink profile (blue) representing the noisy spatial distribution of the her1;her7 mutant in the top panel and corresponding activator (green) and inhibitor (red) patterns. Parameters as in Figure 7 of the main text.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp6-v2.jpg)
+
+**Figure 7—figure supplement 6.:** The sink profile (blue) representing the noisy spatial distribution and the reduced amplitude of sinks in the tbx6 mutant in the top panel and corresponding activator (green) and inhibitor (red) patterns. This simulation also represents the her1;her7;tbx6 mutant. Parameters as in Figure 7 of the main text.
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp7-v2.jpg)
+
+**Figure 7—figure supplement 7.:** The sink profile (blue) representing the longer spatial wavelength of sinks in the hes6 mutant in the top panel and corresponding activator (green) and inhibitor (red) patterns. Parameters as in Figure 7 of the main text.
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp8-v2.jpg)
+
+**Figure 7—figure supplement 8.:** (A-R) Live confocal images of entpd5:Kaede in the trunk of wild type, her1−/−;her7−/− and fss (tbx6−/−) larvae, in lateral view, anterior to the left. (A-F) Live images at 4 dpf and 7 dpf show entpd5:kaede positive notochord segments (B and E) are aligned with the myotome boundary (A and D) in wild types. In her1;her7 (G-L) and tbx6 (M-R) mutants at 10 dpf, the myotome boundaries are disrupted and are no longer in strict alignment with the entpd5:kaede segment. Asterisks (*) denote defects in axial segmentation; dashed lines trace myotome boudaries and boudary fragments. Scale bars are 100 µm.
+
+![Figure 7—figure supplement 9.](https://cdn.elifesciences.org/articles/33843/elife-33843-fig7-figsupp9-v2.jpg)
+
+**Figure 7—figure supplement 9.:** (A) The number of entpd5+ segments at 28 dpf, including smaller vertebrae, is increased in mutants. (B) At 28 dpf her1−/−;her7−/− have the highest number of segmentation defects, which is partially rescued to tbx6−/− levels in her1−/−;her7−/−;tbx6−/−. (C) Histograms of the number of peaks in the activator pattern and (D) number of segment length outliers, quantifying the number of defects, for conditions simulating the mutants with parameters defined in Figure 7. Histograms were computed over 50 realizations.
 
 In the simulations of the wild type, there is always a correspondence between the position of the sink and the position of the peak of activator (Figure 7B and E); this situation is also found between the positions of the myotome boundary and the entpd5 expression ring in experimental wild type animals (Figure 7—figure supplement 8A–F). In the simulations of tbx6, her1;her7 and her1;her7;tbx6 mutants this strict correspondence between sink and activator is lost (Figure 7C and D); activator peaks occur both together with sinks and in between them. In the case of hes6, the strict correspondence between sink and activator may be lost in the last tail segments. To test this prediction of the model, we examined the distribution of myotome boundaries and entpd5 expression rings in tbx6 and her1;her7 double mutants. We observed that the disorganized myotome boundary fragments in the mutants had lost strict correspondence with the entpd5 rings (Figure 7—figure supplement 8G–R). This lack of spatial correspondence between paraxial structure and axial expression is in agreement with the model, and it supports the hypothesis that the sink is associated with some feature of the myotome boundary.
 
@@ -106,78 +234,750 @@ In summary, we have proposed a second mechanism for periodic segmentation of the
 
 ## Materials and methods
 
-## Animal procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>sagff214</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>entpd5</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>her1</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>her7</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tbx6</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>hes6</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>deltaD</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>deltaC</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>osterix</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(entpd5:kaede)</td>
+      <td>Geurtzen et al., 2014 doi: 10.1242/dev.105817</td>
+      <td>hu6867</td>
+      <td>Same BAC used as Huitema et al., 2012 with kaede insertion at first translated ATG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(entpd5:pkred)</td>
+      <td>This paper</td>
+      <td>hu7478</td>
+      <td>Same BAC used as Huitema et al., 2012 with pkred insertion at first translated ATG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(SAGFF214:GFP)</td>
+      <td>Yamamoto et al., 2010 DOI: 10.1242/dev.051011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Osterix:mcherry</td>
+      <td>Spoorendonk et al., 2008 DOI: 10.1242/dev.024034</td>
+      <td>hu4008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>her1</td>
+      <td>Schröter et al., 2012 doi: 10.1371/journal.pbio.1001364</td>
+      <td>hu2124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>her7</td>
+      <td>Schröter et al., 2012 doi:10.1371/journal.pbio.1001364</td>
+      <td>hu2526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tbx6</td>
+      <td>Busch-Nentwich et al., 2013 ZFIN ID: ZDB-PUB-130425–4</td>
+      <td>sa38869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>hes6</td>
+      <td>Schröter and Oates, 2010 doi: 10.1016/j.cub.2010.05.071</td>
+      <td>zm00012575Tg</td>
+      <td>Also called zf288Tg</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>deltaD</td>
+      <td>van Eeden et al., 1996 PMID: 9007237</td>
+      <td>ar33</td>
+      <td>Also called tr233</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>deltaC</td>
+      <td>van Eeden et al., 1996 PMID: 9007237</td>
+      <td>tm98</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>her7</td>
+      <td>Oates and Ho, 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>mespb</td>
+      <td>Sawada et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>xirp2a</td>
+      <td>Deniziak et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>papc</td>
+      <td>Yamamoto et al., 1998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>en2a</td>
+      <td>Erickson et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>ripply1</td>
+      <td>PCR template: Rip1 F (CGTGGCTTGTGACCAGAAAAG) Rip1 R T7 325 (TAATACGACTCACTATAGGCT GTGAAGTGACTGTTGTGT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>ripply2</td>
+      <td>PCR template: Rip2 F(ACGCGAATCAACCCTGGAGA) and Rip2 R T7 281 (AATACGACTCACTATAGGGAGA GAGCTCTTTCTCGTCCTCTTCAT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>dlc</td>
+      <td>Oates and Ho, 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid (Danio rerio)</td>
+      <td>her1</td>
+      <td>Müller et al., 1996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Talen</td>
+      <td>hes6</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Figure 1, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Talen</td>
+      <td>her1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Figure 1, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy MinElute Cleanup Kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 74204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gene jet plasmid (miniprep kit)</td>
+      <td>Thermo scientific</td>
+      <td>Cat no: K0502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alizarin red</td>
+      <td>Sigma</td>
+      <td>CAS Number 130-22-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS X</td>
+      <td>Leica microsystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (RRID:SCR_002285)</td>
+      <td>ImageJ 1.51 n</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python (RRID:SCR_008394)</td>
+      <td>Version Python 2.7.14: : Anaconda custom (64-bit)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Libraries: numpy (RRID:SCR_008633), matplotlib (RRID:SCR_008624)</td>
+      <td>Anaconda distribution</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lleras_fhn_1d_ solve_and_animate_ eLife.py</td>
+      <td>This paper</td>
+      <td>Custom PDE solver and animator</td>
+      <td>Provided as supplementary data.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spyder</td>
+      <td>Anaconda distribution, Spyder 3.2.6</td>
+      <td>The Scientific PYthon Development EnviRonment</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures
 
 All zebrafish strains were maintained at the Hubrecht Institute, the Institute of Cardiovascular Organogenesis and Regeneration, and at University College London. Standard husbandry conditions applied. Animal experiments were approved by the Animal Experimentation Committee (DEC) of the Royal Netherlands Academy of Arts and Sciences and by the UK Home Office under PPL 70/7675. Embryos were kept in E3 embryo medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4) at 28°C. For anesthesia, a 0.2% solution of 3-aminobenzoic acid ethyl ester (Sigma), containing Tris buffer, pH 7, was used.
 
-## Zebrafish lines
+### Zebrafish lines
 
 New transgenic lines (entpd5:pkRED, entpd5:kaede) were generated as described previously (Huitema et al., 2012). Fluorophores were recombined into the ATG site of the entpd5 gene (BAC clone CH211-202H12). fsssa38869, beatm98, aei ar33, her1hu2124 and her7hu2526 mutants were acquired from Prof. Jeroen den Hertog. The Sagff214:galFF line was obtain from K. Kawakami. Double mutants for her1 (in the her7hu2526 background) and mutants for hes6 were generated by TALEN injection (Dahlem et al., 2012) (see Figure 1—figure supplement 1 for details). An Osterix mutant was created by Tilling (Apschner, 2014). The newly generated hes6 mutant allele has one or two somites fewer (15 or 16 somites from anterior to the proctodeum, n = 78) compared to wild types (17 somites n = 15), consistent with the previously reported hes6 mutant (Schröter and Oates, 2010).
 
-## Genotyping
+### Genotyping
 
 DNA was isolated through fin clippings and from embryos. Genotyping was performed as described in Table 1 and Table 2.
 
-## In situ hybridization and alizarin Red bone staining
+**Table 1.**
+ Genotyping of lines using sequencing or restriction enzyme digestion
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Zebrafish line</th>
+      <th>FW</th>
+      <th>RV</th>
+      <th>Restriction enzymes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>her1</td>
+      <td>TCTAGCAAGGACACGCATGA</td>
+      <td>GATGAAGAGGAGTCGGTGGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>her7</td>
+      <td>GATGAAAATCCTGGCACAGACT</td>
+      <td>TCTGAATGCAGCTCTGCTCG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hes6</td>
+      <td>TCACGACGAGGATTATTACGG</td>
+      <td>GGGCGACAACGTAGCGTA</td>
+      <td>NHEI</td>
+    </tr>
+    <tr>
+      <td>her1−/−;her7−/− and her1−/−;her7−/−;tbx6 −/−</td>
+      <td>ACTCCAAAAATGGCAAGTCG</td>
+      <td>GCCAATTCCAGAATTTCAGC</td>
+      <td>AGEI</td>
+    </tr>
+    <tr>
+      <td>aei</td>
+      <td>AGGGAAGCTACACCTGCTCA</td>
+      <td>TTCTCACAGTTGAATCCAGCA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fss</td>
+      <td>GGGTCATTGTTGGGTTGCA</td>
+      <td>ATGAACACCGCCCTTCCAAT</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Genotyping using Kaspar
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Zebrafish line</th>
+      <th>FW X</th>
+      <th>FW Y</th>
+      <th>RV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bea</td>
+      <td>GAAGGTGACCAAGTTCATGCT</td>
+      <td>GAAGGTCGGAGTCAACGGATT</td>
+      <td>AGTCCTTGCCTGACAAACCAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### In situ hybridization and alizarin Red bone staining
 
 Riboprobes were generated from either plasmids or PCR templates and in situ hybridisation was performed as previously described (Oates and Ho, 2002). Whole mount stained embryos were documented on an Olympus SZX10 stereoscope with a QImaging Micropublisher camera. Flat-mounted embryos were photographed on an Olympus MVX10 stereoscope with an Olympus DP22 camera. Alizarin Red bone staining was performed as described previously (Spoorendonk et al., 2008) for fish between 8 weeks and one year of age.
 
-## Virtual time lapses
+### Virtual time lapses
 
 Embryos were kept in E3 at 28°C until 7 dpf. At 7 dpf, ten embryos with fully developed swim bladder from mutant (tbx6−/−, her1−/−;her7−/−, her1−/−;her7−/−;tbx6−/−, or hes6−/−) or transgenic entpd5: kaede lines were anaesthetized, photographed and then housed individually in the animal facility. Individuals were fed tetrahymena in combination with Gemma 75 for the first two weeks, followed by artemia and Gemma 150 for the following two weeks. Every second day, each individual was, anesthetized (described above) and photographed using a Olympus SXZ16 stereomicroscope (1.5X PlanApo objective) connected to a DFC450C Leica camera. The embryo was placed in a drop of E3 with anesthetic on the lid of a petri dish. Each picture was taken from the cleithrum to the posterior tip of the individual. Immediately afterwards, the embryo was returned to warm E3 without anesthetic. Embryos were returned to their specific tank in the animal facility only when they were completely awake and moving. This procedure was repeated until all entpd5+ segments had developed in the axis. The sedation and photography did not take more than two minutes per embryo, and did not compromise survival.
 
-## Imaging
+### Imaging
 
 To photograph somite boundaries, 18–19.5 hpf embryos were dechorionated and laterally aligned in conical depressions that fit the yolk, in an agarose pad (Sigma, 2% in E3) cast in a petri dish (Falcon, 50 mm x 9 mm) and topped up with E3. Photomicrographs were taken on an Olympus MVX10 microscope equipped with an Olympus DP22 camera.
 
 For imaging the notochord, embryos were mounted in 0.5% low melting point agarose in a culture dish with a cover slip replacing the bottom. Fluorescent imaging was performed with a Leica SPE 'live' Confocal Microscope, Leica SP8 confocal microscope and a PerkinElmer Ultraview VoX spinning disk microscope using a 10x or 20x objective with digital zoom. Usually, z-stacks with intervals of approximately 2 µm were captured and were then flattened by maximum projection in ImageJ. For photoconversion of whole entpd5:kaede embryos, the green Kaede fluorophore was photoconverted using a Leica fluorescence microscope by 15–30 min exposure through a UV light bandpass filter (360/40 nm, 100 W mercury lamp). For bone stains an Olympus S2 × 16 microscope coupled to a Leica DFC420c camera was used. Photomicrographs were stitched with the pairwise stitching plugin in Fiji (RRID:SCR_002285) (Preibisch et al., 2009).
 
-## Theory
+### Theory
 
-The theory describes notochord sheath cells pattern formation in terms of a one dimensional reaction diffusion system with two components, an activator U and an inhibitor V, see Figure 7—figure supplement 1A. The concentration U = [U] of the activator is reflected in Entpd5 concentration. The concentrations of both the activator and inhibitor species U(x,t) and V(x,t) depend on position x and time t. We propose a variant of the FitzHugh-Nagumo (FHN) model (Murray, 1993)(1)∂U∂t=DU∂2U∂x2+k1U−k3U3−k4V+k0(2)∂V∂t=DV∂2V∂x2+k5U−k6Vwhere DU and DV are diffusion coefficients for U and V respectively, and ki are rate constants. The choice of the FHN model is based on its simplicity. There are positive linear terms for the activator and negative linear terms for the inhibitor in both Equations (1) and (2), and a single nonlinearity, the cubic term for the activator that limits growth and allows for the stabilization of steady states. The model is meant to represent a plausible mechanism rather than specifying the interactions of particular molecules.
+The theory describes notochord sheath cells pattern formation in terms of a one dimensional reaction diffusion system with two components, an activator U and an inhibitor V, see Figure 7—figure supplement 1A. The concentration $U$ = [U] of the activator is reflected in Entpd5 concentration. The concentrations of both the activator and inhibitor species $U(x,t)$ and $V(x,t)$ depend on position $x$ and time $t$. We propose a variant of the FitzHugh-Nagumo (FHN) model (Murray, 1993)
 
-We reduce the number of parameters by transforming this theory to a dimensionless form. We first set the source term k0=0 since as discussed below we need to reproduce a sequential pattern formation. We introduce a lengthscale L that we will take as the system size, and a timescale T and concentration scale U0 to be set below. In terms of these scales we define new variables x′, t′, u and v such that(3)x=L x′(4)t=T t′(5)U=U0 u(6)V=U0 vand replace in the reaction diffusion equations above dropping the primes for notational convenience(7)U0T∂u∂t=DUU0L2∂2u∂x2+k1U0u−k3U03u3−k4U0v(8)U0T∂v∂t=DVU0L2∂2v∂x2+k5U0u−k6U0v.
+$$
+\frac{\partialU}{\partialt}=D_{U}\frac{\partial^{2}U}{\partialx^{2}}+k_{1}U−k_{3}U^{3}−k_{4}V+k_{0}
+$$
 
-We multiply both equations by T/U0 to render them dimensionless(9)∂u∂t=DUTL2∂2u∂x2+k1Tu−k3TU02u3−k4Tv(10)∂v∂t=DVTL2∂2v∂x2+k5Tu−k6Tv.
 
-Multiplying the inhibitor equation by k1/k5 and rearranging terms(11)∂u∂t=DUk1L2(k1T)∂2u∂x2+(k1T)u−k3U02k1(k1T)u3−k4k1(k1T)v(12)k1k5∂v∂t=DVk5L2(k1T)∂2v∂x2+(k1T)u−k6k5(k1T)vwhere we have highlighted dimensionless groups in parentheses. We now select a timescale by setting(13)k1T≡1and a concentration scale by setting(14)k3U02k1≡1and define dimensionless parameter groups(15)τ≡k1k5, a≡DUk1L2, b≡DVk5L2, κ4≡k4k1, κ6≡k6k5.
 
-With these definitions(16)∂u∂t=a∂2u∂x2+u−u3−κ4v(17)τ∂v∂t=b∂2v∂x2+u−κ6v.
+$$
+\frac{\partialV}{\partialt}=D_{V}\frac{\partial^{2}V}{\partialx^{2}}+k_{5}U−k_{6}V
+$$
 
-We additionally set κ4=1 for simplicity and we call κ6=d(18)∂u∂t=a∂2u∂x2+u−u3−v(19)τ∂v∂t=b∂2v∂x2+u−dv.
+where $D_{U}$ and $D_{V}$ are diffusion coefficients for $U$ and $V$ respectively, and $k_{i}$ are rate constants. The choice of the FHN model is based on its simplicity. There are positive linear terms for the activator and negative linear terms for the inhibitor in both Equations (1) and (2), and a single nonlinearity, the cubic term for the activator that limits growth and allows for the stabilization of steady states. The model is meant to represent a plausible mechanism rather than specifying the interactions of particular molecules.
 
-In the rest of this work we consider this dimensionless form of the theory. Here a and b are dimensionless scaled diffusion coefficients of the activator and inhibitor species respectively, τ is a relative timescale, and d is a dimensionless degradation constant of the inhibitor.
+We reduce the number of parameters by transforming this theory to a dimensionless form. We first set the source term $k_{0}=0$ since as discussed below we need to reproduce a sequential pattern formation. We introduce a lengthscale $L$ that we will take as the system size, and a timescale $T$ and concentration scale $U_{0}$ to be set below. In terms of these scales we define new variables $x^{′}$, $t^{′}$, $u$ and $v$ such that
 
-We first consider the homogeneous system ∂xxu=∂xxv=0. The resulting equations for the local reactions are(20)u.=u−u3−v(21)τv.=u−dv.where dots denote time derivatives. Introducing functions(22)f(u,v)=u−u3−v(23)g(u,v)=τ−1u−τ−1dv,the nullclines of the system, defined by setting f(u,v)=0 and g(u,v)=0, are the curves in the (u,v) plane(24)v=u−u3,(25)v=d−1u.
+$$
+x=L x^{′}
+$$
 
-The first one is an inverted cubic that goes through the origin and the second one is a linear function with slope d−1 controlled by the single bifurcation parameter d, see Figure 7—figure supplement 1B. Intersections of these two curves are the solutions to(26)u(u2+d−1−1)=0and define the fixed points of the system where u.=v.=0. There is always a solution (u0,v0)=(0,0) and for d>1 there are two additional solutions u± satisfying(27)u±2=d−1−1.
 
-The linear stability of fixed points is determined by the matrix(28)A=(fufvgugv)where(29)fu=∂uf(u,v)(30)fv=∂vf(u,v)(31)gu=∂ug(u,v)(32)gv=∂vg(u,v)and derivatives are evaluated at the fixed point (u∗,v∗). The condition for stability is that(33)detA=fugv−fvgu>0and(34)trA=fu+gv<0.
 
-For the fixed point (u0,v0)=(0,0) we obtain(35)A=(1−1τ−1−dτ−1)with determinant and trace(36)detA=(1−d)τ−1(37)trA=1−dτ−1.
+$$
+t=T t^{′}
+$$
 
-Given that τ,d>0 this implies that the origin (0,0) is a stable fixed point if(38)d < 1 and τ < d.
 
-We consider in the following a situation in which the fixed point (0,0) is stable, setting the dimensionless timescale τ=0.1 and degradation d=0.5. Under appropriate conditions, the dimensionless reaction diffusion theory Equations (18) and (19) can give rise to pattern formation. In particular we require that the activator diffuses slower than the inhibitor, a<b, and here set a=10−3 and b=10−2. Because of the signs of the derivatives near the fixed point, the type of pattern predicted is as displayed in Figure 7—figure supplement 1C, where there is coexistence of activator and inhibitor (Murray, 1993).
+
+$$
+U=U_{0} u
+$$
+
+
+
+$$
+V=U_{0} v
+$$
+
+and replace in the reaction diffusion equations above dropping the primes for notational convenience
+
+$$
+\frac{U_{0}}{T}\frac{\partialu}{\partialt}=\frac{D_{U}U_{0}}{L^{2}}\frac{\partial^{2}u}{\partialx^{2}}+k_{1}U_{0}u−k_{3}U_{0}^{3}u^{3}−k_{4}U_{0}v
+$$
+
+
+
+$$
+\frac{U_{0}}{T}\frac{\partialv}{\partialt}=\frac{D_{V}U_{0}}{L^{2}}\frac{\partial^{2}v}{\partialx^{2}}+k_{5}U_{0}u−k_{6}U_{0}v.
+$$
+
+We multiply both equations by $T/U_{0}$ to render them dimensionless
+
+$$
+\frac{\partialu}{\partialt}=\frac{D_{U}T}{L^{2}}\frac{\partial^{2}u}{\partialx^{2}}+k_{1}Tu−k_{3}TU_{0}^{2}u^{3}−k_{4}Tv
+$$
+
+
+
+$$
+\frac{\partialv}{\partialt}=\frac{D_{V}T}{L^{2}}\frac{\partial^{2}v}{\partialx^{2}}+k_{5}Tu−k_{6}Tv.
+$$
+
+Multiplying the inhibitor equation by $k_{1}/k_{5}$ and rearranging terms
+
+$$
+\frac{\partialu}{\partialt}=\frac{D_{U}}{k_{1}L^{2}}(k_{1}T)\frac{\partial^{2}u}{\partialx^{2}}+(k_{1}T)u−\frac{k_{3}U_{0}^{2}}{k_{1}}(k_{1}T)u^{3}−\frac{k_{4}}{k_{1}}(k_{1}T)v
+$$
+
+
+
+$$
+\frac{k_{1}}{k_{5}}\frac{\partialv}{\partialt}=\frac{D_{V}}{k_{5}L^{2}}(k_{1}T)\frac{\partial^{2}v}{\partialx^{2}}+(k_{1}T)u−\frac{k_{6}}{k_{5}}(k_{1}T)v
+$$
+
+where we have highlighted dimensionless groups in parentheses. We now select a timescale by setting
+
+$$
+k_{1}T≡1
+$$
+
+and a concentration scale by setting
+
+$$
+\frac{k_{3}U_{0}^{2}}{k_{1}}≡1
+$$
+
+and define dimensionless parameter groups
+
+$$
+\tau≡\frac{k_{1}}{k_{5}}, a≡\frac{D_{U}}{k_{1}L^{2}}, b≡\frac{D_{V}}{k_{5}L^{2}}, κ_{4}≡\frac{k_{4}}{k_{1}}, κ_{6}≡\frac{k_{6}}{k_{5}}.
+$$
+
+With these definitions
+
+$$
+\frac{\partialu}{\partialt}=a\frac{\partial^{2}u}{\partialx^{2}}+u−u^{3}−κ_{4}v
+$$
+
+
+
+$$
+\tau\frac{\partialv}{\partialt}=b\frac{\partial^{2}v}{\partialx^{2}}+u−κ_{6}v.
+$$
+
+We additionally set $κ_{4}=1$ for simplicity and we call $κ_{6}=d$
+
+$$
+\frac{\partialu}{\partialt}=a\frac{\partial^{2}u}{\partialx^{2}}+u−u^{3}−v
+$$
+
+
+
+$$
+\tau\frac{\partialv}{\partialt}=b\frac{\partial^{2}v}{\partialx^{2}}+u−dv.
+$$
+
+In the rest of this work we consider this dimensionless form of the theory. Here $a$ and $b$ are dimensionless scaled diffusion coefficients of the activator and inhibitor species respectively, $\tau$ is a relative timescale, and $d$ is a dimensionless degradation constant of the inhibitor.
+
+We first consider the homogeneous system $\partial_{xx}u=\partial_{xx}v=0$. The resulting equations for the local reactions are
+
+$$
+u.=u−u^{3}−v
+$$
+
+
+
+$$
+\tauv.=u−dv.
+$$
+
+where dots denote time derivatives. Introducing functions
+
+$$
+f(u,v)=u−u^{3}−v
+$$
+
+
+
+$$
+g(u,v)=\tau^{−1}u−\tau^{−1}dv,
+$$
+
+the nullclines of the system, defined by setting $f(u,v)=0$ and $g(u,v)=0$, are the curves in the $(u,v)$ plane
+
+$$
+v=u−u^{3},
+$$
+
+
+
+$$
+v=d^{−1}u.
+$$
+
+The first one is an inverted cubic that goes through the origin and the second one is a linear function with slope $d^{−1}$ controlled by the single bifurcation parameter $d$, see Figure 7—figure supplement 1B. Intersections of these two curves are the solutions to
+
+$$
+u(u^{2}+d^{−1}−1)=0
+$$
+
+and define the fixed points of the system where $u.=v.=0$. There is always a solution $(u_{0},v_{0})=(0,0)$ and for $d>1$ there are two additional solutions $u_{\pm}$ satisfying
+
+$$
+u_{\pm}^{2}=d^{−1}−1.
+$$
+
+The linear stability of fixed points is determined by the matrix
+
+$$
+A=(f_{u}f_{v}g_{u}g_{v})
+$$
+
+where
+
+$$
+f_{u}=\partial_{u}f(u,v)
+$$
+
+
+
+$$
+f_{v}=\partial_{v}f(u,v)
+$$
+
+
+
+$$
+g_{u}=\partial_{u}g(u,v)
+$$
+
+
+
+$$
+g_{v}=\partial_{v}g(u,v)
+$$
+
+and derivatives are evaluated at the fixed point $(u_{∗},v_{∗})$. The condition for stability is that
+
+$$
+detA=f_{u}g_{v}−f_{v}g_{u}>0
+$$
+
+and
+
+$$
+trA=f_{u}+g_{v}<0.
+$$
+
+For the fixed point $(u_{0},v_{0})=(0,0)$ we obtain
+
+$$
+A=(1−1\tau^{−1}−d\tau^{−1})
+$$
+
+with determinant and trace
+
+$$
+detA=(1−d)\tau^{−1}
+$$
+
+
+
+$$
+trA=1−d\tau^{−1}.
+$$
+
+Given that $\tau,d>0$ this implies that the origin $(0,0)$ is a stable fixed point if
+
+$$
+d < 1 and \tau < d.
+$$
+
+We consider in the following a situation in which the fixed point $(0,0)$ is stable, setting the dimensionless timescale $\tau=0.1$ and degradation $d=0.5$. Under appropriate conditions, the dimensionless reaction diffusion theory Equations (18) and (19) can give rise to pattern formation. In particular we require that the activator diffuses slower than the inhibitor, $a<b$, and here set $a=10^{−3}$ and $b=10^{−2}$. Because of the signs of the derivatives near the fixed point, the type of pattern predicted is as displayed in Figure 7—figure supplement 1C, where there is coexistence of activator and inhibitor (Murray, 1993).
 
 In the presence of random perturbations distributed along the notochord the homogeneous state loses stability due to differential diffusion. A pattern may form out of this initial random background fluctuation, with segments forming almost simultaneously all along the notochord. Although segment formation is robust in this scenario and can accommodate a broad range of wavelengths, this is at odds with the experimental observation that ENTPD5 segments form sequentially from anterior to posterior.
 
-We conjectured that one way to obtain a sequential segment formation is to start with an initial perturbation localized at the anterior, and vanishing concentrations all across the rest of the notochord. Since the anterior of the vertebrate axis is always more developmentally advanced than the posterior, such an anterior perturbation is a plausible hypothesis. A vanishing concentration along the notochord is important to ensure that patterning is not triggered until the wave of activator and inhibitor arrives at a given point. Therefore, we start simulations with initial conditions that have zero concentration for both u and v across the whole domain x∈(0,L), except for a small perturbation near the origin x=0. The form of the initial condition is a smooth step(39)u(x,0)=u02(1−tanh⁡(5.0(x−0.5)))(40)v(x,0)=v02(1−tanh⁡(5.0(x−0.5)))with a steepness 5.0 and width 0.5. Initial values u0 and v0 are determined randomly from a uniform distribution in the interval (0.1,0.2), see examples in Figure 7—figure supplements 1–5. Starting from such a small perturbation in the anterior, we observe that the system is able to form a pattern sequentially, from anterior to posterior, see Figure 7A, Figure 7—figure supplement 2 and Video 1. Thus, the theory proposed is capable of autonomous patterning of the notochord in the absence of input from the segmentation clock.
+We conjectured that one way to obtain a sequential segment formation is to start with an initial perturbation localized at the anterior, and vanishing concentrations all across the rest of the notochord. Since the anterior of the vertebrate axis is always more developmentally advanced than the posterior, such an anterior perturbation is a plausible hypothesis. A vanishing concentration along the notochord is important to ensure that patterning is not triggered until the wave of activator and inhibitor arrives at a given point. Therefore, we start simulations with initial conditions that have zero concentration for both $u$ and $v$ across the whole domain $x\in(0,L)$, except for a small perturbation near the origin $x=0$. The form of the initial condition is a smooth step
 
-We next introduce the effect of the segmentation clock input into this otherwise autonomous patterning system as a spatial dependent degradation profile of the inhibitor(41)∂u∂t=a∂2u∂x2+u−u3−v(42)τ∂v∂t=b∂2v∂x2+u−dv−s(x)v.
+$$
+u(x,0)=\frac{u_{0}}{2}(1−tanh⁡(5.0(x−0.5)))
+$$
 
-This sink profile s=s(x) for the inhibitor has peaks at given positions along the x axis, describing the cues that the notochord patterning mechanism receives from myotomes. At positions where s(x) is large, the inhibitor is locally degraded at a larger rate. Note that there is no source term for the activator since we set k0=0 above. This feature together with the choice of sinks instead of sources to describe the segmentation clock cues are motivated from the observation that Entpd5 segments form sequentially. The presence of sources would render pattern formation non sequential.
 
-The sink profile s(x) is characterized by a sink strength S0, a wavelength λ and sink wavelength variability σ. The first sink is positioned at λ/2 and the positions Xi of consecutive sinks are determined by the wavelength λ with an error drawn from a uniform distribution of width σ. The sink profile is built from a combination of tanh⁡(...) functions to produce smooth peaks of steepness α and width δS(43)s(x)=S02∑i (−tanh⁡(α(−Xi+x−δS))+tanh⁡(α(−Xi+x+δS))).
 
-In this work we fix the values α=100 and δS=0.05. The values of S0, λ and σ are changed to describe the different conditions, see examples in Figure 7 and Figure 7—figure supplement 4.
+$$
+v(x,0)=\frac{v_{0}}{2}(1−tanh⁡(5.0(x−0.5)))
+$$
 
-We consider a system size L that we set to L=17.1 so that the wildtype condition makes 30 segments with the sink profile natural wavelength λ=0.57. We normalize axes length scales to this value in all plots. For simplicity we assume that the activator and inhibitor are restricted to notochord sheath cells and we specify Neumann boundary conditions, that is derivatives at both ends are zero(44)∂u∂x|x=0=∂v∂x|x=L=0 .
+with a steepness 5.0 and width 0.5. Initial values $u_{0}$ and $v_{0}$ are determined randomly from a uniform distribution in the interval $(0.1,0.2)$, see examples in Figure 7—figure supplements 1–5. Starting from such a small perturbation in the anterior, we observe that the system is able to form a pattern sequentially, from anterior to posterior, see Figure 7A, Figure 7—figure supplement 2 and Video 1. Thus, the theory proposed is capable of autonomous patterning of the notochord in the absence of input from the segmentation clock.
 
-As described above, here we ensure the sequential character of the patterning through an initial perturbation at the anterior and vanishing concentrations across the notochord. One may query the robustness of such scenario, since noise across the notochord hampers sequential patterning. An alternative hypothesis would be to postulate an additional wavefront that propagates through the notochord progressively turning on the reaction diffusion mechanism of Equations (41) and (42) as it goes. To illustrate this we consider an alternative dimensionless form of Equations (1) and (2). Turning back to Equations (9) and (10) we select a timescale and concentration scale setting(45)DUTL2≡1and(46)k3U02k1≡1.
+We next introduce the effect of the segmentation clock input into this otherwise autonomous patterning system as a spatial dependent degradation profile of the inhibitor
 
-Introducing dimensionless parameter groups(47)δ≡DVDU, γ≡k1L2DU, κi≡kik1,and setting for simplicity κ4=κ5=1 and κ6=κ we arrive at the dimensionless form(48)∂u∂t=∂2u∂x2+γ(u−u3−v),(49)∂v∂t=δ∂2v∂x2+γ(u−κv).
+$$
+\frac{\partialu}{\partialt}=a\frac{\partial^{2}u}{\partialx^{2}}+u−u^{3}−v
+$$
 
-In this alternative dimensionless form it is straightforward to decouple the reactions from diffusion by tuning the value of γ. Thus, we can introduce a wavefront γ(x,t) that moves from anterior to posterior turning on the reactions in its wake. Such a wavefront could have a biological origin in a molecular maturation gradient invading the notochord from the anterior. Due to very slow dynamics before wavefront arrival, this would render the patterning mechanism more robust to noise across the notochord. Yet a different possibility is a scenario of patterning in a growing domain (Crampin et al., 1999), although here the tissue where the pattern forms exists previous to the establishment of the pattern. These alternatives are certainly interesting and the underlying mechanism patterning the notochord will be the subject of future work. However, in the absence of experimental data supporting other hypotheses, here we settle on the perhaps more parsimonious choice of vanishing initial conditions across the notochord.
 
-In this work we solve the partial differential equations described above using a custom python code, see Source code 1. We discretize space with a discretization length Δx=0.01, and time discretization is chosen as Δt=0.9Δx2/2. We integrate the partial differential equations until the pattern reaches a steady state.
+
+$$
+\tau\frac{\partialv}{\partialt}=b\frac{\partial^{2}v}{\partialx^{2}}+u−dv−s(x)v.
+$$
+
+This sink profile $s=s(x)$ for the inhibitor has peaks at given positions along the $x$ axis, describing the cues that the notochord patterning mechanism receives from myotomes. At positions where $s(x)$ is large, the inhibitor is locally degraded at a larger rate. Note that there is no source term for the activator since we set $k_{0}=0$ above. This feature together with the choice of sinks instead of sources to describe the segmentation clock cues are motivated from the observation that Entpd5 segments form sequentially. The presence of sources would render pattern formation non sequential.
+
+The sink profile $s(x)$ is characterized by a sink strength $S_{0}$, a wavelength $\lambda$ and sink wavelength variability $\sigma$. The first sink is positioned at $\lambda/2$ and the positions $X_{i}$ of consecutive sinks are determined by the wavelength $\lambda$ with an error drawn from a uniform distribution of width $\sigma$. The sink profile is built from a combination of $tanh⁡(...)$ functions to produce smooth peaks of steepness $\alpha$ and width $\deltaS$
+
+$$
+s(x)=\frac{S_{0}}{2}\sumi (−tanh⁡(\alpha(−X_{i}+x−\deltaS))+tanh⁡(\alpha(−X_{i}+x+\deltaS))).
+$$
+
+In this work we fix the values $\alpha=100$ and $\deltaS=0.05$. The values of $S_{0}$, $\lambda$ and $\sigma$ are changed to describe the different conditions, see examples in Figure 7 and Figure 7—figure supplement 4.
+
+We consider a system size $L$ that we set to $L=17.1$ so that the wildtype condition makes $30$ segments with the sink profile natural wavelength $\lambda=0.57$. We normalize axes length scales to this value in all plots. For simplicity we assume that the activator and inhibitor are restricted to notochord sheath cells and we specify Neumann boundary conditions, that is derivatives at both ends are zero
+
+$$
+\frac{\partialu}{\partialx}|_{x=0}=\frac{\partialv}{\partialx}|_{x=L}=0 .
+$$
+
+As described above, here we ensure the sequential character of the patterning through an initial perturbation at the anterior and vanishing concentrations across the notochord. One may query the robustness of such scenario, since noise across the notochord hampers sequential patterning. An alternative hypothesis would be to postulate an additional wavefront that propagates through the notochord progressively turning on the reaction diffusion mechanism of Equations (41) and (42) as it goes. To illustrate this we consider an alternative dimensionless form of Equations (1) and (2). Turning back to Equations (9) and (10) we select a timescale and concentration scale setting
+
+$$
+\frac{D_{U}T}{L^{2}}≡1
+$$
+
+and
+
+$$
+\frac{k_{3}U_{0}^{2}}{k_{1}}≡1.
+$$
+
+Introducing dimensionless parameter groups
+
+$$
+\delta≡\frac{D_{V}}{D_{U}}, \gamma≡\frac{k_{1}L^{2}}{D_{U}}, κ_{i}≡\frac{k_{i}}{k_{1}},
+$$
+
+and setting for simplicity $κ_{4}=κ_{5}=1$ and $κ_{6}=κ$ we arrive at the dimensionless form
+
+$$
+\frac{\partialu}{\partialt}=\frac{\partial^{2}u}{\partialx^{2}}+\gamma(u−u^{3}−v),
+$$
+
+
+
+$$
+\frac{\partialv}{\partialt}=\delta\frac{\partial^{2}v}{\partialx^{2}}+\gamma(u−κv).
+$$
+
+In this alternative dimensionless form it is straightforward to decouple the reactions from diffusion by tuning the value of $\gamma$. Thus, we can introduce a wavefront $\gamma(x,t)$ that moves from anterior to posterior turning on the reactions in its wake. Such a wavefront could have a biological origin in a molecular maturation gradient invading the notochord from the anterior. Due to very slow dynamics before wavefront arrival, this would render the patterning mechanism more robust to noise across the notochord. Yet a different possibility is a scenario of patterning in a growing domain (Crampin et al., 1999), although here the tissue where the pattern forms exists previous to the establishment of the pattern. These alternatives are certainly interesting and the underlying mechanism patterning the notochord will be the subject of future work. However, in the absence of experimental data supporting other hypotheses, here we settle on the perhaps more parsimonious choice of vanishing initial conditions across the notochord.
+
+In this work we solve the partial differential equations described above using a custom python code, see Source code 1. We discretize space with a discretization length $Δx=0.01$, and time discretization is chosen as $Δt=0.9Δx^{2}/2$. We integrate the partial differential equations until the pattern reaches a steady state.

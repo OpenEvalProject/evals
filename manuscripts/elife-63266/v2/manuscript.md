@@ -33,7 +33,7 @@ While multiple genome-wide p63 gene expression datasets became available in rece
 
 ## Results
 
-## The p63 gene regulatory network
+### The p63 gene regulatory network
 
 To identify genes commonly regulated by p63 across cell types and tissues, we employed a previously established meta-analysis approach, that has been helpful to infer core GRNs for human and mouse p53, the viral oncoprotein E7 and the cell cycle GRN (Fischer, 2019; Fischer et al., 2017; Fischer et al., 2016a; Fischer et al., 2014). From 11 genome-wide studies (Abraham et al., 2018; Bao et al., 2015; Carroll et al., 2006; Gallant-Behm et al., 2012; Karsli Uzunbas et al., 2019; Lin-Shiao et al., 2019; Saladi et al., 2017; Somerville et al., 2018; Watanabe et al., 2014; Wu et al., 2012; Zarnegar et al., 2012; Supplementary file 1), 16 publically available gene expression datasets were integrated to generate a specific p63 Expression Score (Supplementary file 2). The datasets have been obtained from knockdown (n = 12) or overexpression experiments (n = 4) of p63 in primary keratinocytes (n = 3), the keratinocyte cell line HaCaT (n = 2), the foreskin fibroblast cell line BJ (n = 1), the breast epithelial cell line MCF10A (n = 4), the squamous carcinoma cell lines H226 (n = 2), KYSE70 (n = 1), and FaDu (n = 1), as well as the pancreatic ductal adenocarcinoma cell lines BxPC3 (n = 1) and SUIT2 (n = 1) (Figure 1A and B and Supplementary file 1).
 
@@ -57,7 +57,7 @@ Further, we performed TF binding enrichment analysis for p63-dependently regulat
 
 Together, the meta-analysis approach overcomes the limitations of individual studies and identifies target genes supported by multiple datasets. The extensive and integrated resource on p63-regulated genes enables researchers to compare their results quickly and to identify the most promising targets.
 
-## p63 and p53 regulate largely distinct gene sets
+### p63 and p53 regulate largely distinct gene sets
 
 Given that p63 and p53 share a significant number of binding sites and thus potential target genes, we next compared the p63 Expression Score to the previously established p53 Expression Score (Fischer et al., 2016a). In agreement with the up-regulation of cell cycle genes and DREAM targets through p63 (Figures 2A and 3) and their down-regulation through p53 (Fischer et al., 2016a; Fischer et al., 2016b; Schade et al., 2019; Uxa et al., 2019), we noted that negative p53 Expression Scores tend to correlate with positive p63 Expression Scores (Figure 4A). Furthermore, the results indicate that p53-induced genes (positive p53 Expression Scores) appear to be largely unaffected by p63. Consistently, expression data for 343 target genes with strong evidence for direct up-regulation by p53 (Fischer, 2017), do not show consistent expression changes upon knockdown or induction of p63 (Figure 4B). Together, these results indicate that basal expression of the majority of p53 target genes is not affected by p63.
 
@@ -65,9 +65,27 @@ Given that p63 and p53 share a significant number of binding sites and thus pote
 
 **Figure 4.:** (A) The p63 Expression Score compared to the previously published p53 Expression Score that was generated using the same meta-analysis approach (Fischer et al., 2016a) for all 16,198 genes for which both scores were available. (B) The scatter plot displays the log2(fold-change) of previously collected high confidence direct p53 target genes (Fischer, 2017) across the 16 p63-dependent gene expression profiling datasets. The black line indicates the median. The data indicates a large degree of independence of p53 targets from p63-dependent expression.
 
-## Common and distinct properties of p63 and p53 DNA binding
+### Common and distinct properties of p63 and p53 DNA binding
 
 To identify shared p63- and p53-bound sites, we compared the 20 p63 ChIP-seq datasets (Supplementary file 1) to 28 p53 ChIP-seq datasets we compiled recently (Fischer, 2019). Notably, p63 and p53 data was collected from cells with strong basal p63 expression and stimulated p53 expression, respectively. While the majority of all p53 ChIP-seq peaks occurs in only one of the experiments, more than half of the p63 peaks are present in two or more datasets (Figure 5A and B). Even though we were able to integrate substantially more p53 datasets, the number of identified p63 binding sites was still higher (Figure 5C). This indicates that p63 occupies many more binding sites as compared to p53. Importantly, when more datasets agree on p53- and p63-binding sites, these sequences are more likely to harbor a canonical p53 and p63RE, facilitating the motif discovery by tools such as HOMER (Heinz et al., 2010) and enriching bona fide binding sites (Figure 5D). Earlier meta-analyses employed a similar strategy (Fischer et al., 2016a; Nguyen et al., 2018; Verfaillie et al., 2016). To dissect the binding preferences of p63 and p53, we generated three distinct peak sets (Figure 5E). The ‘p53+p63’ set contained all binding sites with evidence in at least five p63 and five p53 ChIP-seq datasets. The ‘p53 unique’ (hereafter ‘p53’) set contained all binding sites that were supported by at least five p53 ChIP-seq datasets but not a single p63 dataset. We also generated a ‘p63 unique’ (hereafter ‘p63’) set vice versa.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig5-v2.jpg)
+
+**Figure 5.:** (A and B) The number of p63 and p53 binding peaks sorted by the number of datasets that commonly identified/support the peak. (C) The number of p53 and p63 peaks identified in the 28 p53 and 20 p63 ChIP-seq datasets, respectively. (D) The relative number of ‘known’ p53 and p63 motifs found by HOMER v4.10 (Heinz et al., 2010) under p53 and p63 peaks, respectively, with increasing dataset support. (E) Schematic of ‘p53’, ‘p63’ and ‘p53+p63’ peak selection for further analyses. (F) De novo motif search results from HOMER v4.10 for the ‘p53+p63’, ‘p53’, and ‘p63’ peak sets. The first round of motif search identified the ‘primary’ motif in each peak set. Using an iterative approach, all peaks that contained the ‘primary’ motif were removed and the de novo motif search was repeated. This iterative approach was followed until no more p53/p63-like motif was identified.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) Correlation between dataset support for p53 and p63 binding. (C to F) Correlation between HOMER motif score for primary and secondary ‘p53+p63’ motifs and dataset support for (C and D) p53 binding or (E and F) p63 binding.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Correlation between HOMER motif score for primary, secondary, and tertiary (A to C) ‘p53’ motifs or (D to F) ‘p63’ motifs and dataset support for (A to C) p53 binding or (D to F) p63 binding.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Top 20 TFs with ChIP-seq peak sets similar to (A) the common p53+p63 sites, (B) the unique p53 sites, and (C) the unique p63 sites (Figure 5E) as identified using CistromeDB toolkit.Of note, some TP53 ChIP-seq datasets are wrongly labeled ‘T’ in the database.
 
 We employed an iterative de novo motif search using HOMER to identify frequent binding site motifs. After each round, we removed all peaks harboring the best motif and repeated the search. We identified similar yet distinct binding motifs for the three groups (Figure 5F). Comparison of the primary ‘p53+p63’, ‘p53’, and ‘p63’ motifs suggests that p63-binding sites display a highly conserved C, G, C, and G at positions 4, 7, 14, and 17, respectively. The second round revealed a p53RE containing a 1 bp spacer (p53 secondary motif), supporting the model that p53 can bind to spacer-containing p53REs (Vyas et al., 2017). The results further indicate that p53 can bind to a single half-site (p53 tertiary motif) and that this single half-site is more constrained at positions 5 and 6 as well as the flanking regions than half-sites in the canonical p53RE (e.g. primary p53+p63 and p53 motifs). Of note, these single half-sites may also include p53REs with spacers longer than 1 bp that are not detected separately because of their very low abundance. Sole half-sites together with spacer-containing p53REs underlie only ~5% of p53-bound sites (Figure 6). Furthermore, p53 and p63 appear to be able to bind to three-quarter sites (secondary and quaternary p53+p63 and p63 motifs), while p63 can generally bind to a broader spectrum of sequences as compared to p53 (Figure 5F). This broader binding repertoire likely underlies p63’s capacity to engage with substantially more binding sites than does p53.
 
@@ -77,15 +95,952 @@ We employed an iterative de novo motif search using HOMER to identify frequent b
 
 It is important to note that the vast majority (~70%) of p53- and p63-binding sites harbor full-length p53 and p63REs (Figures 6 and 7, Supplementary file 3). There is a good correlation between p53- and p63-binding site occupation, and most sites commonly bound by p53 are also frequently bound by p63 (Figure 5—figure supplement 1). However, p63 binds many sites that are not bound by p53 (Figure 5E and Figure 5—figure supplement 2). More importantly, p53 binding is strongly constrained to canonical p53RE (Figure 5—figure supplements 1C–D and 2A–C). In contrast, p63 binding appears not to benefit from a more canonical p63RE (Figure 5—figure supplements 1E–F and 2D–F). These data suggest that sequence-specific binding is particularly important to recruit p53, while p63 only requires minimal sequence identity and could require additional co-factors to bind and ultimately regulate its target genes.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig7-v2.jpg)
+
+**Figure 7.:** DNA sites occupied by p63 in at least five datasets were searched iterative with the motifs identified by our iterative de novo search (Figure 5F). We searched first for the primary ‘p53+p63’ motif and among all remaining sites for the primary ‘p63’ motif. All other ‘p53+p63’ and ‘p63’ motifs were searched subsequently (Supplementary file 3).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Genes identified as significantly up- or down-regulated in at least the half of all datasets (|p63 Expression Score|| ≥ 8) that are linked to p63-binding sites supported by at least half of all datasets (≥10) through binding within 5 kb from their TSS or through double-elite enhancer:gene associations (Fishilevich et al., 2017). Using these thresholds we identified 138 and 42 high-probability candidates as directly up- and down-regulated by p63, respectively. Gene names marked in red are also up- or down-regulated across SCCs (Cancer Genome Atlas Research Network et al., 2018).
+
 Therefore, we also searched for potential cooperating TFs that may be co-enriched at p53- and p63-binding sites. Consistent with earlier analyses (Verfaillie et al., 2016), no additional motif was substantially enriched in the vicinity of ‘p53’ or ‘p53+p63’ binding sites. Consistent with the co-enrichment of AP-1 and p63 at enhancers (Lin-Shiao et al., 2018), we found that unique p63-binding sites were consistently enriched for AP-1 (bZIP) in addition to bHLH motifs (Figure 5—figure supplement 3). Using the CistromeDB toolkit (Zheng et al., 2019b), we identified TFs that significantly enrich for binding to the ‘p53+p63’, ‘p53’, and ‘p63’ sites. As expected, the analysis identified the p53 family members p53, p63, and p73 as best hits for the common sites, but only p53 and p73 for the unique p53 and only p63 and p73 for the unique p63 peak sets (Figure 5—figure supplement 4). In agreement with earlier studies, the analysis identified p300 (Katoh et al., 2019), MAF (Lopez-Pajares et al., 2015), SOX2 (Watanabe et al., 2014), BANF1 (also known as BAF) (Bao et al., 2015), and KMT2D (Lin-Shiao et al., 2018) as potential co-binders of p63; as well as TRIM28 (Doyle et al., 2010), BRD4 (Stewart et al., 2013), p300 (Lill et al., 1997), ZBTB33 (KAISO) (Koh et al., 2014), CDK9 (Claudio et al., 2006), and HEXIM1 (Lew et al., 2012) as potential co-binders of p53. Moreover, our analysis identified potential co-binders that to our knowledge have not been identified before, such as KDM1A, PRMT1, and GRHL2 for p63 and BRD9, ZNF131, and C17orf49 for p53. Importantly, these new potential co-binders appear to be unique to either p63 or p53, suggesting that they may contribute to shaping the DNA-binding landscapes that are specific to p63 and p53 (Figure 5—figure supplement 4).
 
-## Identification of direct p63 target genes
+### Identification of direct p63 target genes
 
 Given that p63 regulates many target genes through enhancers (Kouwenhoven et al., 2015a; Lin-Shiao et al., 2019; Lin-Shiao et al., 2018; Qu et al., 2018; Somerville et al., 2018), straight forward integration of differential gene regulation data and p63 binding data based on proximity binding to a gene’s TSS is unlikely to capture all direct p63 target genes. To resolve this issue, we integrated the p63 binding data and the p63 Expression Score based on enhancer:gene association information (Fishilevich et al., 2017) in addition to proximity binding to TSSs to predict direct p63 target genes. Given the large number of p63-binding sites identified (Figure 5C and E) and the high variance in p63-dependent gene regulation (Figure 1B), we employed conservative thresholds to identify high-probability target genes of p63. We only used p63-binding sites supported by at least half of the datasets (≥10) that are linked through TSS proximity (within 5 kb) or double-elite enhancer:gene associations (Fishilevich et al., 2017) to genes with a |p63 Expression Score|| ≥ 8 (Table 1 and Figure 7—figure supplement 1). Of note, many genes are associated with proximal and enhancer p63 binding, because many proximal promoters are also identified as double-elite enhancers in the database. The 180 (138 up-regulated and 42 down-regulated) genes that passed our conservative filtering contain many genes that are known direct p63 targets, such as RAB38 (Barton et al., 2010), S100A2 (Kirschner et al., 2008; Lapi et al., 2006), HAS3 (Compagnone et al., 2017), IRF6 (Thomason et al., 2010), PTHLH (Somerville et al., 2018), GPX2 (Yan and Chen, 2006), JAG1 (Sasaki et al., 2002), MMP14 (Lodillinsky et al., 2016), NRG1 (Forster et al., 2014), and PLAC8 (Gallant-Behm et al., 2012). The identification of these well-established p63 target genes indicates the ability of our approach to identify bona fide candidates. Importantly, the integration of enhancer:gene associations enabled the identification of genes that are likely regulated by p63 through enhancers, such as IL1B, MREG, MYO5A, RRP12, SNCA, AK4, and EHD4 (Table 1 and Figure 7—figure supplement 1).
 
-## A p63/SCC 28-gene set correlates with HNSC patient survival
+**Table 1.**
+ High-probability direct p63 target genes.Genes identified as significantly up- or down-regulated in at least the half of all datasets (|p63 Expression Score| ≥ 8) that are linked to p63-binding sites supported by at least half of all datasets (≥10) through binding within 5 kb from their TSS or through double-elite enhancer-gene associations (Fishilevich et al., 2017). Using these thresholds we identified 138 and 42 high-probability candidates as directly up- and down-regulated by p63, respectively. Gene names marked in bold are also up- or down-regulated across SCCs (Cancer Genome Atlas Research Network et al., 2018).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>p63 Expression Score</th>
+      <th>p63 binding within5 kb from TSS</th>
+      <th>p63 binding linked through enhancer</th>
+      <th>Gene symbol</th>
+      <th>p63 Expression Score</th>
+      <th>p63 binding within5 kb from TSS</th>
+      <th>p63 binding linked through enhancer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DUSP6</td>
+      <td>14</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>FSCN1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>RAB38</td>
+      <td>14</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>GINS3</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>GSDME</td>
+      <td>13</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>GM2A</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>LAD1</td>
+      <td>13</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>HMGA2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>S100A2</td>
+      <td>13</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>HSPA4L</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>TMEM40</td>
+      <td>13</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>JAG1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FGFBP1</td>
+      <td>12</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>KCTD12</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>HAS3</td>
+      <td>12</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>KIAA0930</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>NECTIN1</td>
+      <td>12</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>KIF14</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>TCOF1</td>
+      <td>12</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>KIRREL1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>DUSP7</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>LIG1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>IL1B</td>
+      <td>11</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>LPAR3</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>MREG</td>
+      <td>11</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>LRRFIP2</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>PA2G4</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>MALT1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>RGS20</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>MAST4</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SDC1</td>
+      <td>11</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>MCM3</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SFN</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>MMP14</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>STK17A</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>MMRN2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>VSNL1</td>
+      <td>11</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>NOM1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ARHGAP25</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>NRCAM</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CDCA4</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>NRG1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>DUSP11</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>OAS3</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FAT2</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>PPFIBP1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FERMT1</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>PROCR</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>IL4R</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>QSOX2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>INPP1</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>RAD51C</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>IRF6</td>
+      <td>10</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>RASSF6</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>ITGA6</td>
+      <td>10</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>RFX7</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>KIZ</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>SH3PXD2A</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>MAPKBP1</td>
+      <td>10</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>SLC1A5</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>MYO10</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>SLC2A9</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>MYO19</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>SLC37A2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ORC1</td>
+      <td>10</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>SMAD5</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>PAK1</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>SPATS2</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>PTHLH</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>SSRP1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SMTN</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TGFB1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>WDFY2</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TMEM237</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>XDH</td>
+      <td>10</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>TOMM34</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ARHGDIB</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>TRIM7</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>AURKB</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TRIP13</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>BTBD11</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TSPAN5</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>C6orf106</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TSR1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CARD10</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>TYMS</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CHAF1A</td>
+      <td>9</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>UCK2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CSTA</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>UTP4</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CYP27B1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>YAP1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>FEZ1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>YES1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>GNA15</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>ZFP36L2</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>GPX2</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>APH1B</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>GSTP1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>BIRC3</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>HRAS</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>C9orf3</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>IFI16</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>CHST3</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>KREMEN1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>CPQ</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>LDLR</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>DUSP8</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>MAPK6</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>EPCAM</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>MYO5A</td>
+      <td>9</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>ERBB2</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>NCAPH2</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>FBN1</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>NDE1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>ITFG1</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>NDST1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>LLGL2</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>NIPAL4</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>NCSTN</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>PPIF</td>
+      <td>9</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>OPN3</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>PPP4R4</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>PBX1</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>PTTG1</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>PDXK</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>RAPGEF5</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>PLAC8</td>
+      <td>-8</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>RNASE7</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>S100A4</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>RRP12</td>
+      <td>9</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>SPOCK1</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SERPINB13</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TNS3</td>
+      <td>-8</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>SNCA</td>
+      <td>9</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>ARL6IP5</td>
+      <td>-9</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>STX6</td>
+      <td>9</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>COBL</td>
+      <td>-9</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>AK4</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>CUEDC1</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>ARHGAP23</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>GSN</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ASCC3</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>PDGFC</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>BRCA1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>PGPEP1</td>
+      <td>-9</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>BTBD10</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>PLXNB2</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CCNK</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>PXDN</td>
+      <td>-9</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CCT4</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>RALGPS1</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CD44</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>ROR1</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>CDC42SE1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>SLC16A5</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CDCA7</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>TM4SF1</td>
+      <td>-9</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>COL17A1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>ALDH3B1</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>CRKL</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>CYP1B1</td>
+      <td>−10</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>DRAP1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>HHAT</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>EHD4</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>MEGF8</td>
+      <td>−10</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>ERCC6L</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>PTGES</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>ESRP1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>PTTG1IP</td>
+      <td>−10</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FABP5</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>RPS27L</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FANCI</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>SECTM1</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FLOT2</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>SLC22A5</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>FOSL1</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>TNFSF15</td>
+      <td>−10</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>FRMD4B</td>
+      <td>8</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>SRD5A3</td>
+      <td>−11</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+### A p63/SCC 28-gene set correlates with HNSC patient survival
 
 Out of the 180 high-probability p63 target genes 32 (28 up- and four down-regulated) are also identified as being commonly up- or down-regulated in SCCs compared to non-SCC cancers (Cancer Genome Atlas Research Network et al., 2018; Table 1). Importantly, several of the genes commonly up-regulated by p63 as well as in SCC have been identified to promote SCC growth or invasion, such as LAD1 (Abe et al., 2019), TMEM40 (Zhang et al., 2019), FGFBP1 (Czubayko et al., 1997), IL1B (Lee et al., 2015), FAT2 (Dang et al., 2016), FOSL1 (Usui et al., 2012), LPAR3 (Brusevold et al., 2014), MMP14 (Pang et al., 2016), and RASSF6 (Zheng et al., 2019a). Therefore, we asked whether the set of 28 up-regulated direct p63 targets correlates with patient survival. To this end, we employed data of head and neck SCC (HNSC) patients from The Cancer Genome Atlas (TCGA). Notably, it is known that this cancer type frequently harbors amplified TP63 (Cancer Genome Atlas Network et al., 2015). We find that expression levels of our gene set indeed correlate significantly negatively with HNSC patient survival (COX likelihood ratio test p=0.032). To determine whether expression levels of the set have an influence on the survival of HNSC patients, we subdivided the samples according to the average expression levels into four equally sized groups (low, low-med, med-high, high). While the sample group with low expression had the most favorable prognosis, the null hypothesis could not be rejected in the direct comparison with patients with high average expression levels (p=0.090; Figure 8A). However, upon contrasting the low-expression group with all remaining samples, a significant improvement of survival was detected (p=0.024; Figure 8B). Expression of the 28-gene set correlated positively with p63 expression when p63 expression was rather low (FPKM <20), but showed a saturation and no further correlation when p63 expression was high (FPKM >20; Figure 8C and D, and Figure 8—figure supplement 1). This indicates that p63 levels influence the 28-gene set in a switch-like manner where a saturation of p63-dependent activation is quickly reached in HNSC cells. Together, these findings indicate that the genes commonly up-regulated by p63 and in SCC influence the prognosis of HNSC patients. Taken together, this finding calls for a more detailed assessment of ubiquitous p63/SCC genes as biomarkers in the future.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig8-v2.jpg)
+
+**Figure 8.:** Kaplan-Meier plots of TCGA HNSC patient survival data. (A) Patients were subdivided in four equally sized subgroups based on expression levels of the 28-gene set. The results suggest a poorer survival of patients with an up-regulated expression of the set genes. (B) To corroborate this finding patients of the subgroups low-med, med-high, and high from (A) were joined to form a new high group. Boxplot in bins of 10 of TP63 FPKM expression values in TCGA HNCS patient sample data compared to (C) FPKM values of a meta-gene comprising the 28-gene set and (D) ssGSEA scores of the 28-gene set. X-axis is right-censored at 100 to better visualize the effect. The full graph is displayed in Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/63266/elife-63266-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Boxplot in bins of 10 of TP63 FPKM expression values in TCGA HNCS patient sample data compared to (A) FPKM values of a meta-gene comprising the 28-gene set and (B) ssGSEA scores of the 28-gene set. Complementary to Figure 8C and D.
 
 ## Discussion
 
@@ -99,33 +1054,33 @@ We identify several candidate TFs that may operate downstream of p63 and that ma
 
 ## Materials and methods
 
-## Re-analysis and integration of publicly available gene expression profiling datasets
+### Re-analysis and integration of publicly available gene expression profiling datasets
 
 We re-analyzed publicly available p63-dependent gene expression profiling datasets. As a first quality requirement, we only included datasets for re-analysis that contained at least two biological replicates for the treatment as well as for the control condition. All microarray datasets were available at a pre-processed stage at the Gene Expression Omnibus (GEO) and we re-analyzed these datasets with GEO2R to obtain fold expression changes and Benjamini Hochberg-corrected p-values (Clough and Barrett, 2016). Gene identifiers were mapped to Ensembl Gene IDs using the Ensembl annotation data (Cunningham et al., 2019). All RNA-seq datasets have been retrieved through GEO from the Sequence Read Archive (SRA) (Leinonen et al., 2011). We employed our RNA-seq analysis pipeline to obtain fold expression changes and p-values adjusted for multiple testing. Briefly, we utilized Trimmomatic (Bolger et al., 2014) v0.39 (5nt sliding window approach, mean quality cutoff 22) for read quality trimming according to inspections made from FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) v0.11.8 reports. Clipping was performed using Cutadapt v2.3 (Martin, 2011). Potential sequencing errors were detected and corrected using Rcorrector v1.0.3.1 (Song and Florea, 2015). Ribosomal RNA (rRNA) transcripts were artificially depleted by read alignment against rRNA databases through SortMeRNA v2.1 (Kopylova et al., 2012). The preprocessed data was aligned to the reference genome hg38, retrieved along with its gene annotation from Ensembl v.92 (Cunningham et al., 2019). For read alignment, we used the splice-aware mapping software segemehl (Hoffmann et al., 2014; Hoffmann et al., 2009) v0.3.4 with adjusted accuracy (95%). Mappings were filtered by Samtools v1.9 (Li et al., 2009) for uniqueness and properly aligned mate pairs. Read quantification was performed on exon level using featureCounts v1.6.5 (Liao et al., 2014), parametrized according to the strand specificity inferred through RSeQC v3.0.0 (Wang et al., 2012). Differential gene expression and its statistical significance was identified using DESeq2 v1.20.0 (Love et al., 2014). Information on the samples that were compared for each dataset is included in Supplementary file 1. Given that all RNA-seq data was derived from PolyA-enriched samples, we only included Ensembl transcript types ‘protein_coding’, ‘antisense’, ‘lincRNA’ and ‘TEC’ in our analysis. Common thresholds for adj. p-value≤0.05 were applied.
 
-## Generation of the p63 expression score
+### Generation of the p63 expression score
 
 For 19,156 genes covered by at least three datasets including a minimum of one RNA-seq dataset, a p63 Expression Score was calculated as the number of datasets that find the gene to be significantly up-regulated minus the number of datasets that find the gene to be significantly down-regulated in dependence on p63. This meta-analysis resulted in 27 p63 Expression Score gene groups because no gene was identified as up-regulated in all 16 or 15 datasets or down-regulated in all 16, 15, 14, or 13 datasets.
 
-## Enrichment analyses
+### Enrichment analyses
 
 Gene set enrichment analysis (GSEA) was performed using GSEA (http://software.broadinstitute.org/gsea/) with ‘H’, ‘C2’, and ‘C6’ gene sets from MSigDB v7.0 (Subramanian et al., 2005) and custom panSCC gene sets derived from Table S1C in Cancer Genome Atlas Research Network et al., 2018. GSEA was performed on a pre-ranked list of genes that were ranked primarily by p63 Expression Score and secondarily by median log2(fold-change) to obtain unique ranks.
 
 Enrichment of transcription factor binding to genes with high (≥8) or low (≤ −8) p63 Expression Score was identified using the results section ‘ENCODE and ChEA Consensus TFs from ChIP-X’ from Enrichr (Kuleshov et al., 2016).
 
-## Integration of publicly available p63 and p53 binding data
+### Integration of publicly available p63 and p53 binding data
 
 Peak datasets from p63 ChIP-seq experiments were retrieved from CistromeDB (Zheng et al., 2019b; Supplementary file 1). When replicate experiments were available, all peaks were used that have been identified in at least two replicates. A similar collection of p53 peak datasets has been described previously (Fischer, 2019). To intersect multiple peak files Bedtools ‘multiinter’ was used and to identify overlapping and non-overlapping peaks Bedtools ‘intersect’ was employed (Quinlan and Hall, 2010).
 
-## Motif search
+### Motif search
 
 Known p53 and p63REs were identified using the ‘known motifs’ in HOMER v4.10 with default options and -size given (Heinz et al., 2010). De novo motif discovery was performed with options -size given -len 10,15,20,25 -mis 5 S 10.
 
-## Identification of potential co-factors
+### Identification of potential co-factors
 
 We used the CistromeDB toolkit (Zheng et al., 2019b) to identify TFs that display ChIP-seq peaksets that are significantly similar to our ‘unique p53’, ‘unique p63’, and ‘p53+p63’ peaksets.
 
-## Survival and expression correlation analysis
+### Survival and expression correlation analysis
 
 For the 28-gene set, single-sample enrichment scores were derived from FPKM normalized gene expression values of 546 HNSC patient samples. To this end, we utilized the official GenePattern single sample gene set enrichment analysis (ssGSEA) codebase v10.0.3 (Barbie et al., 2009; https://github.com/GSEA-MSigDB/ssGSEA-gpmodule). A sample score represents the coordinately up- or down-regulated expression of all genes within one set as its signature (Barbie et al., 2009). Kaplan-Meier plots and correlation analyses were performed on TCGA time to event and event occurrence information using the R survival package v3.2–3. Following the TCGA standard for HNSC (Cancer Genome Atlas Network et al., 2015), survival analyses were right-censored at 60 months (1800 days) to avoid non-cancer-related events. The Cox proportional hazards model was used to investigate the association of patient survival time and the combined expression levels of the 28-gene set. Subsequently, we subdivided the expression scores into four equally sized categorical groups (high, med-high, med-low, low). The rates of occurrence of events over time were compared between these groups using the fitted COX PH model.
 

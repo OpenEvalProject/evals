@@ -84,9 +84,7 @@ With respect to the questions whether patient responses were mostly due to carfi
 
 11) Figure 6: Please color-code the individual datapoints so that it is evident which patients are CR vs. sCR and PR vs. VGPR.
 
-Given the small sample sizes for 2 of the 4 groups, this data is hard to interpret. However we included it for the reviewers (Author response image 1).10.7554/eLife.08153.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08153.020
-
-DOI: http://dx.doi.org/10.7554/eLife.08153.020
+Given the small sample sizes for 2 of the 4 groups, this data is hard to interpret. However we included it for the reviewers (Author response image 1).10.7554/eLife.08153.020Author response image 1.
 
 12) Figure 6: If the 19S level decrease in PR vs CR patients is relevant to the sensitization mechanism proposed in this manuscript, one would have expected to find an increase in other protein degradation pathways in the PR subset, e.g., aggresome levels, which was not observed.
 

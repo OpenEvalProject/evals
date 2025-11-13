@@ -83,9 +83,7 @@ No, it is not. We have now clarified this in the text.
 
 This is an interesting point, and we realize that it would be impossible to know why unless you were acquainted with the raw data.
 
-The reason for this is that the exon3 circle is more abundant (qPCR Ct= 27) than the intron-retained circle (qPCR Ct= 32). Thus, after 35 cycles (the # of cycles of PCR prior to running on the gel), the PCR for the exon 3 circle is close to saturation in both wt and ∆BP pub1, whereas a more dramatic difference can be observed for the intron-retained circle. We have illustrated this effect in the Author response image 1.10.7554/eLife.07540.026Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07540.026
-
-DOI: http://dx.doi.org/10.7554/eLife.07540.026
+The reason for this is that the exon3 circle is more abundant (qPCR Ct= 27) than the intron-retained circle (qPCR Ct= 32). Thus, after 35 cycles (the # of cycles of PCR prior to running on the gel), the PCR for the exon 3 circle is close to saturation in both wt and ∆BP pub1, whereas a more dramatic difference can be observed for the intron-retained circle. We have illustrated this effect in the Author response image 1.10.7554/eLife.07540.026Author response image 1.
 
 4) In Figure 3–figure supplement 3, what do the two shades of gray mean in the bar graph?
 

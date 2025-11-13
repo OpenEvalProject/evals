@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.43487.001 The bacterial flagellar motor, a cell-envelope-embedded macromolecular machine that functions as a cellular propeller, exhibits significant structural variability between species. Different torque-generating stator modules allow motors to operate in different pH, salt or viscosity levels. How such diversity evolved is unknown. Here, we use electron cryo-tomography to determine the in situ macromolecular structures of three Gammaproteobacteria motors: Legionella pneumophila , Pseudomonas aeruginosa , and Shewanella oneidensis , providing the first views of intact motors with dual stator systems. Complementing our imaging with bioinformatics analysis, we find a correlation between the motor’s stator system and its structural elaboration. Motors with a single H + -driven stator have only the core periplasmic P- and L-rings; those with dual H + -driven stators have an elaborated P-ring; and motors with Na + or Na + /H + -driven stators have both their P- and L-rings embellished. Our results suggest an evolution of structural elaboration that may have enabled pathogenic bacteria to colonize higher-viscosity environments in animal hosts.
+The bacterial flagellar motor, a cell-envelope-embedded macromolecular machine that functions as a cellular propeller, exhibits significant structural variability between species. Different torque-generating stator modules allow motors to operate in different pH, salt or viscosity levels. How such diversity evolved is unknown. Here, we use electron cryo-tomography to determine the in situ macromolecular structures of three Gammaproteobacteria motors: Legionella pneumophila, Pseudomonas aeruginosa, and Shewanella oneidensis, providing the first views of intact motors with dual stator systems. Complementing our imaging with bioinformatics analysis, we find a correlation between the motor’s stator system and its structural elaboration. Motors with a single H+-driven stator have only the core periplasmic P- and L-rings; those with dual H+-driven stators have an elaborated P-ring; and motors with Na+ or Na+/H+-driven stators have both their P- and L-rings embellished. Our results suggest an evolution of structural elaboration that may have enabled pathogenic bacteria to colonize higher-viscosity environments in animal hosts.
 
 ## Introduction
 
@@ -41,15 +41,335 @@ Here, we used ECT to determine the first in situ structures of three Gammaproteo
 
 To determine the structures of the flagellar motors of L. pneumophila, P. aeruginosa, and S. oneidensis we imaged intact cells of each species in a hydrated frozen state using ECT. We identified clearly visible flagellar motors in the tomographic reconstructions and performed sub-tomogram averaging to enhance the signal-to-noise ratio, generating a 3D average of the motor of each species at macromolecular resolution (Figure 1 and Figure 1—figure supplement 1). Although the three motors shared the conserved core structure of the flagellar motor, they exhibited different periplasmic decorations surrounding this conserved core. While the S. oneidensis and P. aeruginosa averages showed clear densities corresponding to the stators (Figure 1E,F,K and L, dark orange density), none were visible in the L. pneumophila average, suggesting that they were more variable, or dynamic and therefore are not visible in the average (see e.g., (Chen et al., 2011; Zhu et al., 2017)). Interestingly, we observed a novel feature in the S. oneidensis motor: an extra ring outside the outer membrane (Figure 1A–F, purple density). Although in some tomograms two extracellular rings appeared to be present (see Figure 1A and C), only one ring was visible in the sub-tomogram average which could be either because one of the rings is more dynamic or substoichiometric (Figure 1B,D and Figure 1—figure supplement 2 for more examples of single motors). This structure is reminiscent of the O-ring (outer membrane ring) described recently in the sheathed flagellum of Vibrio alginolyticus (Zhu et al., 2017). However, while the V. alginolyticus O-ring was associated with a 90° bend in the outer membrane, no such outer membrane bend was seen in the unsheathed S. oneidensis flagellum, so the function of this structure remains mysterious.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43487/elife-43487-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) slices through Shewanella oneidensis MR-1 electron cryo-tomograms showing single polar flagella. (C and D) zoomed-in views of the slices shown in (A) and (B) highlighting the flagellar motors. (E) central slice through a sub-tomogram average of the S. oneidensis MR-1 flagellar motor. (F) schematic representation of the sub-tomogram average shown in (E) with the major parts of the motor labeled. (G–L) flagellar motor of Pseudomonas aeruginosa. Panels follow the same scheme as in (A–F) above. (M–R) flagellar motor of Legionella pneumophila. Panels follow the same scheme as above. Scale bars 50 nm (red) and 20 nm (blue and orange).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43487/elife-43487-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Resolutions at a 0.143 cutoff (dashed line) are: L. pneumophila, 6.4 nm; P. aeruginosa, 5.9 nm; S. oneidensis MR-1, 6.9 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43487/elife-43487-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** OM = outer membrane, IM = inner membrane. Scale bar = 25 nm.
+
 The most striking difference between the three motor structures was the L- and P-rings, which were highly elaborated in S. oneidensis. The P. aeruginosa and L. pneumophila motors lacked additional rings associated with the L-ring, but showed smaller elaborations of their P-rings. To determine whether flagellar motor structure correlates with stator type, we compared our three new ECT structures with those of the five previously-published Gammaproteobacteria motors (Figure 2). Two motors (Escherichia coli and S. enterica) have a single H+-driven stator system, two motors have dual H+-dependent stator systems (P. aeruginosa and L. pneumophila), three motors have Na+-driven systems (the three Vibrio species) and one motor has a dual Na+-H+-driven system (S. oneidensis). Interestingly, we found that motors with similar stator type also shared similar structural characteristics. While the two motors with a single H+-dependent stator system did not show any periplasmic elaborations beyond the conserved flagellar core, the dual H+-dependent stator systems had an extra ring surrounding their P-ring, with no embellishment of the L-ring. The Na+-dependent motors of the Vibrio spp., together with the Na+-H+-dependent motor of S. oneidensis, have extra components surrounding both their P- and L- rings. In Vibrio, these extra periplasmic rings are known as the T-ring (surrounding the P- ring and formed by the MotX and MotY proteins) and the H-ring (surrounding the L-ring and consisting of the FlgO, FlgP and FlgT proteins). The presence of the T- and H-rings was suggested to be specific to the Na+-driven Vibrio motors (Minamino and Imada, 2015) with the FlgT protein required for the formation of both rings (Terashima et al., 2013).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43487/elife-43487-fig2-v2.jpg)
 
-**Figure 2.:** (A) A phylogenetic tree of the eight Gammaproteobacteria species with available ECT structures of their flagellar motors. This tree was made based on (Williams et al., 2010). (B) Central slices of sub-tomogram averages are shown for the eight Gammaproteobacteria flagellar motors revealed by ECT, including the three structures solved in this study (P. aeruginosa, L. pneumophila and S. oneidensis). The motors are classified based on their stator system: single H+-driven (dashed blue box), dual H+-driven (blue box), Na+-driven (green box) or dual Na+-H-driven (green-blue box). +E. coli EMDB 5311, S. enterica EMDB 3154, V. fischeri EMDB 3155, V. cholerae EMDB 5308, V. alginolyticus is adapted from Zhu et al., 2017. Scale bars are 20 nm.
+**Figure 2.:** (A) A phylogenetic tree of the eight Gammaproteobacteria species with available ECT structures of their flagellar motors. This tree was made based on (Williams et al., 2010). (B) Central slices of sub-tomogram averages are shown for the eight Gammaproteobacteria flagellar motors revealed by ECT, including the three structures solved in this study (P. aeruginosa, L. pneumophila and S. oneidensis). The motors are classified based on their stator system: single H+-driven (dashed blue box), dual H+-driven (blue box), Na+-driven (green box) or dual Na+-H+-driven (green-blue box). E. coli EMDB 5311, S. enterica EMDB 3154, V. fischeri EMDB 3155, V. cholerae EMDB 5308, V. alginolyticus is adapted from Zhu et al., 2017. Scale bars are 20 nm.
 
 Previous studies showed that MotX and MotY are important for flagellar rotation in S. oneidensis but it was not known whether they form part of the motor or not (Koerdt et al., 2009). Similarly, bioinformatics analysis and biochemical studies showed that MotY is involved in the function of the P. aeruginosa motor, but the structural basis of this role was not known (Doyle et al., 2004). We therefore performed a bioinformatics search for candidate homologs of MotX, MotY, FlgO, FlgP and FlgT in the genomes of P. aeruginosa, L. pneumophila and S. oneidensis to examine whether there is a correlation between the presence of homologous genes and the extra periplasmic rings observed in the ECT structures. While we found candidates for all five proteins constituting the T- and H-rings in S. oneidensis as previously suggested (Wu et al., 2011), only MotY candidates were found in L. pneumophila and P. aeruginosa (Table 1). This is in accordance with our ECT structures, which showed that L. pneumophila and P. aeruginosa motors have a ring surrounding only their P-rings while the S. oneidensis motor has rings surrounding both the P- and L-rings. These rings are likely T- and H-rings, respectively, as in Vibrio. The lack of candidate MotX homologs in the genomes of L. pneumophila and P. aeruginosa (Table 1) is consistent with their lack of PomB, the component of the Na+-dependent stator with which MotX interacts. Interestingly, the absence of candidates for FlgT in the L. pneumophila and P. aeruginosa genomes suggests that it may not be required for the recruitment of MotY as in Vibrio species.
 
+**Table 1.**
+ Candidate homologs of H- and T-ring components in species imaged in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>MotX candidate</th>
+      <th>MotY candidate</th>
+      <th>FlgO candidate</th>
+      <th>FlgP candidate</th>
+      <th>FlgT candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pseudomonas aeruginosa (dual H+-driven stator)</td>
+      <td>-</td>
+      <td>+ 2e-37 (PA3526)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Legionella pneumophila (dual H+-driven stator)</td>
+      <td>-</td>
+      <td>+ 3e-35 (lpg2962)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Shewanella oneidensis MR-1 (dual Na+-H+-driven stator)</td>
+      <td>+ 2e-46 (SO_3936)</td>
+      <td>+ 2e-80 (SO_2754)</td>
+      <td>+ 2e-19 (SO_3257)</td>
+      <td>+ 6e-31 (SO_3256)</td>
+      <td>+ 3e-36 (SO_3258)</td>
+    </tr>
+  </tbody>
+</table>
+
 To see whether these correlations hold more broadly, we expanded our bioinformatics analysis to additional species of Gammaproteobacteria (Williams et al., 2010). We examined the genomes of species with single H+-driven stator systems (Table 2), dual H+-driven stator systems (Table 3) and Na+-driven stator systems (Table 4). These species were identified either by Blasting the sequence of the stator proteins (MotA, B, C and D and Pom A and B, see Materials and methods) against the genome of the species or based on previous studies (Thormann and Paulick, 2010). In all species we examined, we observed the same pattern: (i) genomes of species with single H+-driven stator systems lacked homologs of H- or T-ring components; (ii) genomes of species with Na+ (or Na+-H+) stator systems contained homologs of all H- and T-ring components, and (iii) genomes of species with dual H+-driven stator systems contained candidate homologs only for the T-ring component MotY. The sole exception to this rule was Chromohalobacter salexigens DSM 3043, which contained a homolog of FlgO in addition to MotY. Also, while Serratia proteomaculans and Psychromonas ingrahamii have candidates for single MotAB stator system they also have candidates for MotY (see Supplementary file 1 and 2). None of the thirteen species with dual H+-driven stator systems we examined contained a homolog of FlgT, further suggesting that it is not essential for MotY stabilization in this group.
+
+**Table 2.**
+ Candidate homologs of H- and T-ring components in single H+-dependent stator systems of Gammaproteobacteria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>MotX candidate</th>
+      <th>MotY candidate</th>
+      <th>FlgO candidate</th>
+      <th>FlgP candidate</th>
+      <th>FlgT candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Escherichia coli</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Salmonella enterica</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Sodalis glossinidius</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Photorhabdus laumondii subsp. laumondii TTO1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Serratia proteomaculans</td>
+      <td>-</td>
+      <td>+ 7e-13 (Spro_1787)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Psychromonas ingrahamii</td>
+      <td>-</td>
+      <td>+ 3e-14 (Ping_3567)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Candidate homologs of H- and T-ring components in dual H+-dependent stator systems of Gammaproteobacteria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>MotX candidate</th>
+      <th>MotY candidate</th>
+      <th>FlgO candidate</th>
+      <th>FlgP candidate</th>
+      <th>FlgT candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Azotobacter vinelandii DJ</td>
+      <td>-</td>
+      <td>+ 8e-14 (Avin_48650)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cellvibrio japonicas Ueda107</td>
+      <td>-</td>
+      <td>+ 9e-28 (CJA_2588)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chromohalobacter salexigens DSM 3043</td>
+      <td>-</td>
+      <td>+ 6e-13 (Csal_3309)</td>
+      <td>+ 9e-16 (Csal_2511)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pseudomonas entomophila</td>
+      <td>-</td>
+      <td>+ 2e-31 (PSEEN1209)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Saccharophagus degradans 2–40</td>
+      <td>-</td>
+      <td>+ 1e-37 (Sde_2427)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Xanthomonas campestris pv. campestris</td>
+      <td>-</td>
+      <td>+ 1e-13 (XCC1436)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pseudomonas putida</td>
+      <td>-</td>
+      <td>+ 7e-31 (PP_1087)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Yersinia pestis CO92</td>
+      <td>-</td>
+      <td>+ 6e-11 (YPO0448)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pseudomonas fluorescens Pf0-1</td>
+      <td>-</td>
+      <td>+ 2e-30 (Pfl01_4518)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Xanthomonas axonopodis pv. citrumelo F1</td>
+      <td>-</td>
+      <td>+ 1e-14 (XACM_1468)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Stenotrophomonas maltophilia R551-3</td>
+      <td>-</td>
+      <td>+ 4e-10 (Smal_1563)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Candidate homologs of H- and T-ring components in Na+-dependent stator systems of Gammaproteobacteria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>MotX candidate</th>
+      <th>MotY candidate</th>
+      <th>FlgO candidate</th>
+      <th>FlgP candidate</th>
+      <th>FlgT candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colwellia psychrerythraea 34H</td>
+      <td>+ 2e-63 (CPS_4618)</td>
+      <td>+ 1e-73 (CPS_3471)</td>
+      <td>+ 2e-59 (CPS_1469)</td>
+      <td>+ 6e-28 (CPS_1470)</td>
+      <td>+ 5e-38 (CPS_1468)</td>
+    </tr>
+    <tr>
+      <td>Vibrio fischeri</td>
+      <td>+ 1e-113 (VF_2317)</td>
+      <td>+ 3e-141 (VF_0926)</td>
+      <td>+ 3e-113 (VF_1884)</td>
+      <td>+ 1e-60 (VF_1883)</td>
+      <td>+ 2e-166 (VF_1885)</td>
+    </tr>
+    <tr>
+      <td>Vibrio vulnificus YJ016</td>
+      <td>+ 4e-136 (VV3065)</td>
+      <td>+ 9e-177 (VV1183)</td>
+      <td>+ 8e-140 (VV0953)</td>
+      <td>+ 1e-77 (VV0954)</td>
+      <td>+ 0.0 (VV0952)</td>
+    </tr>
+    <tr>
+      <td>Photobacterium profundum</td>
+      <td>+ 1e-110 (PBPRA3344)</td>
+      <td>+ 3e-146 (PBPRA2571)</td>
+      <td>+ 5e-101 (PBPRA0894)</td>
+      <td>+ 5e-60 (PBPRA0895)</td>
+      <td>+ 6e-145 (PBPRA0893)</td>
+    </tr>
+    <tr>
+      <td>Pseudoalteromonas haloplanktis</td>
+      <td>+ 3e-76 (PSHAa0276)</td>
+      <td>+ 6e-73 (PSHAa2115)</td>
+      <td>+ 3e-37 (PSHAa0755)</td>
+      <td>+ 2e-26 (PSHAa0762)</td>
+      <td>+ 5e-40 (PSHAa0761)</td>
+    </tr>
+    <tr>
+      <td>Pseudoalteromonas tunicata</td>
+      <td>+ 4e-71 (PTUN_a0699)</td>
+      <td>+ 1e-68 (PTUN_a1296)</td>
+      <td>+ 2e-32 (PTUN_a3193)</td>
+      <td>+ 2e-28 (PTUN_a3178)</td>
+      <td>+ 4e-34 (PTUN_a3179)</td>
+    </tr>
+    <tr>
+      <td>Idiomarina loihiensis L2TR</td>
+      <td>+ 5e-67 (IL2001)</td>
+      <td>+ 4e-78 (IL1801)</td>
+      <td>+ 4e-18 (IL1169)</td>
+      <td>+ 9e-32 (IL1153)</td>
+      <td>+ 1e-30 (IL1154)</td>
+    </tr>
+    <tr>
+      <td>Alteromonas macleodii ATCC 27126</td>
+      <td>+ 8e-73 (MASE_16945)</td>
+      <td>+ 3e-74 (MASE_05600)</td>
+      <td>+ 2e-34 (MASE_11745)</td>
+      <td>+ 7e-29 (MASE_04615)</td>
+      <td>+ 3e-35 (MASE_04610)</td>
+    </tr>
+    <tr>
+      <td>Pseudoalteromonas atlantica</td>
+      <td>+ 2e-71 (Patl_0993)</td>
+      <td>+ 1e-79 (Patl_1400)</td>
+      <td>+ 1e-30 (Patl_1308)</td>
+      <td>+ 1e-26 (Patl_3106)</td>
+      <td>+ 1e-31 (Patl_3107)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -61,7 +381,7 @@ Together, our results from ECT imaging of flagellar motors in situ and bioinform
 
 ## Materials and methods
 
-## Strains and growth conditions
+### Strains and growth conditions
 
 Legionella pneumophila (strain Lp02) cells were grown on plates of ACES [N-(2-acetamido)−2-aminoethanesulfonic acid]-buffered charcoal yeast extract agar (CYE) or in ACES-buffered yeast extract broth (AYE) with 100 μg/ml thymidine. Ferric nitrate and cysteine hydrochloride were added to the media. For ECT experiments, cells were harvested in early stationary phase.
 
@@ -77,18 +397,18 @@ Pseudomonas aeruginosa PAO1 cells were first grown on LB plates at 37°C overnig
 
 Many of the flagellar motors analyzed here were taken from tomograms recorded for more than one purpose. The Shewanella oneidensis MR-1 mutants, for instance, were grown under different growth conditions for the purpose of studying the nanowires formed by these cells (see Subramanian et al., 2018), but all their motors were presumably the same, so we included them here to increase the clarity and resolution of our average.
 
-## Sample preparation for electron cryo-tomography
+### Sample preparation for electron cryo-tomography
 
 Cells (L. pneumophila, P. aeruginosa and S. oneidensis) from batch cultures and chemostats were mixed with BSA (Bovine Serum Albumin)-treated 10 nm colloidal gold solution (Sigma-Aldrich, St. Louis, MO, USA) and 4 μL of this mixture was applied to a glow-discharged, carbon-coated, R2/2, 200 mesh copper Quantifoil grid (Quantifoil Micro Tools) in a Vitrobot Mark IV chamber (FEI). Excess liquid was blotted off and the grid was plunge frozen in a liquid ethane/propane mixture for ECT imaging.
 
-## Electron cryo-tomography
+### Electron cryo-tomography
 
 Imaging of ECT samples (S. oneidensis and P. aeruginosa) was performed on an FEI Polara 300-keV field emission gun electron microscope (FEI company, Hillsboro, OR, USA) equipped with a Gatan image filter and K2 Summit counting electron-detector camera (Gatan, Pleasanton, CA, USA). Data were collected using the UCSF Tomography software (Zheng et al., 2007), with each tilt series ranging from −60° to 60° in 1° increments, an underfocus of ~ 5–10 μm, and a cumulative electron dose of ~ 130–160 e-/A2 for each individual tilt series. For L. pneumophila samples, imaging was done using an FEI Titan Krios 300 kV field emission gun transmission electron microscope equipped with a Gatan imaging filter and a K2 Summit direct electron detector in counting mode (Gatan). L. pneumophila data was also collected using UCSF Tomography software and a total dose of ~ 100 e-/A2 per tilt series with ~ 6 um underfocus.
 
-## Sub-tomogram averaging
+### Sub-tomogram averaging
 
 The IMOD software package was used to calculate three-dimensional reconstructions of tilt series (Kremer et al., 1996). Alternatively, the images were aligned and contrast transfer function corrected using the IMOD software package before producing SIRT reconstructions using the TOMO3D program (Agulleiro and Fernandez, 2011). Sub-tomogram averages with 2-fold symmetrization along the particle Y-axis were produced using the PEET program (Nicastro et al., 2006). To obtain the sub-tomogram averages of the flagellar motors we reconstructed 156 tomograms of Pseudomonas aeruginosa, 50 of Legionella pneumophila and ~ 300 of Shewanella oneidensis MR-1. The averages were obtained by averaging 144 sub-volumes P. aeruginosa, 100 sub-volumes S. oneidensis MR-1 and 45 sub-volumes L. pneumophila.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Candidate H- and T-ring component genes were identified by sequence alignment of the following Vibrio cholerae proteins against the fully sequenced genomes of each bacterial species using BLASTP (https://www.genome.jp/tools/blast/). The Vibrio cholerae proteins used were: MotX (Q9KNX9), MotY (Q9KT95), FlgO (Q9KQ00), FlgP (Q9KQ01) and FlgT (Q9KPZ9). To check for the stator system candidates in different species, the following proteins were blasted against the genome of the bacterial species: PomAB proteins of V. cholerae (Q9KTL0 and Q9KTK9 respectivley), MotAB proteins of E. coli (P09348 and P0AF06 respectively) and MotCD of P. aeruginosa (G3XD73 and G3XD90 respectively) using BLASTP. Candidate MotX and MotY homologs identified were adjacent to the flagellar cluster in the genome, and for each stator system candidate homologs were characteristically located in tandem in the genome. The codes in parentheses represent Uniprot IDs. An E-value cutoff of <1×10−10 was used. The raw BLAST results for all species are shown in Supplementary file 1 and 2. Note that for the stator system, a candidate stator locus was considered only when two neighboring candidates for Mot/B, MotC/D or PomA/B were found.

@@ -34,15 +34,214 @@ The general principles of ribosome assembly are well-conserved across species, b
 
 To trap GTPBP7 and other GTPases that participate in human mitochondrial translation, we included the non-hydrolyzable GTP analog β,γ-methyleneguanosine 5′-triphosphate (GMPPCP) during mitoribosome purification. Single-particle cryo-EM (Figure 1—figure supplement 1, Figure 1—figure supplement 2, Table 1) of these and other mitoribosome-bound complexes (Desai et al., 2020) also yielded a 5% subset of mtLSU intermediates bound to GTPBP7·GMPPCP in a pre-hydrolysis state and arrested at an assembly state equivalent to the 45S (RI50) to 50S transition of the bacterial LSU (Achila et al., 2012; Fahnestock et al., 1973; Seffouh et al., 2019). In this state, the PTC is not completely disordered as it is in PDB 5OOM, an earlier late assembly state (Brown et al., 2017), but key helices in the vicinity are held in an unfolded state.
 
+**Table 1.**
+ Data collection, processing, refinement, and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Falcon III</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.1 to −3.2</td>
+    </tr>
+    <tr>
+      <td>Defocus mean (μm)</td>
+      <td>−2.1</td>
+    </tr>
+    <tr>
+      <td>Electron dose (e− frame−1 Å−2)</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data processing</td>
+    </tr>
+    <tr>
+      <td>Independent data collections</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Useable micrographs</td>
+      <td>43,950</td>
+    </tr>
+    <tr>
+      <td>Particles picked</td>
+      <td>3,374,367</td>
+    </tr>
+    <tr>
+      <td>Final particles</td>
+      <td>66,340</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−10</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>EMPIAR accession code</td>
+      <td>EMPIAR-10809</td>
+    </tr>
+    <tr>
+      <td>EMDB accession code</td>
+      <td>EMD-13329</td>
+    </tr>
+    <tr>
+      <td>PDB accession code</td>
+      <td>7PD3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model composition</td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>108,053</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>9276</td>
+    </tr>
+    <tr>
+      <td>RNA bases</td>
+      <td>1522</td>
+    </tr>
+    <tr>
+      <td>Metals (Mg2+/Zn2+)</td>
+      <td>91/2</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>GCP (1), SAM (1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>CC (mask)</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.M.S deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.068</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.66</td>
+    </tr>
+    <tr>
+      <td>Clashscore, all atoms</td>
+      <td>4.97</td>
+    </tr>
+    <tr>
+      <td>Rotamers outliers (%)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Cβ outliers (%)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>94.17</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>5.69</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
+
 Surprisingly, GTPBP7 was bound to a heterodimer of the 5-methyl cytosine (m5C) modifying enzyme, NOP2/Sun RNA methyltransferase 4 (NSUN4) and its binding partner, mitochondrial transcription termination factor 4 (MTERF4) (Cámara et al., 2011; Figure 1). NSUN4, MTERF4, and GTPBP7 bind the inter-subunit interface of the mtLSU in a radial arrangement centered about the peptidyl site (P site) and <30 Å from the PTC (Spåhr et al., 2012). Additionally, the anti-association factors MALSU1·L0R8F8·mt-ACP are also present on these particles to prevent premature SSU joining (Brown et al., 2017; Desai et al., 2020).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-v1.jpg)
+
+**Figure 1.:** (A) The inter-subunit interface faces the reader and a cartoon of an elongating mitoribosome is shown in the red box (bottom) to aid orientation. NSUN4 (pink) bound to S-adenosyl methionine (SAM, left inset), GTPBP7 (green) bound to the non-hydrolyzable GTP analog, GMPPCP (top inset) and MTERF4 (orange) interact with the subunit interface of the mtLSU assembly intermediate. The domain IV rRNA helices H68-71 (teal) are unfolded, rendering the aminoacyl, peptidyl, and exit sites incomplete. Also pictured are the anti-association factors MALSU1 (yellow), L0R8F8 (blue), and mt-ACP (red). (B) Map-to-model fits for NSUN4, MTERF4, GTPBP7, and the unfolded rRNA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** * indicates that the particles were re-extracted to 1.04 Å/pixel. cryo-EM, cryo-electron microscopy.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-figsupp2-v1.jpg)
 
 The NSUN4 active site contains weak density for the methyl donor S-adenosyl methionine (SAM). Moreover, the cryo-EM density suggests that there is no m5C methylation of 16S rRNA located within ~20 Å of the NSUN4 active site indicating that methyltransferase activity is not involved at the mtLSU assembly checkpoint. Bisulfite sequencing studies across many species have also not revealed any m5C targets on the 16S rRNA, making this an unlikely site of NSUN4 methyltransferase activity (Metodiev et al., 2014).
 
 Our structure represents an intermediate in which the proteins uL16m, bL27m, and bL36m have already bound, but before complete folding of rRNA domain IV helices 68–71 and dissociation of NSUN4, MTERF4, and GTPBP7 by GTP hydrolysis, and subsequent small subunit (mtSSU) joining. The 16S rRNA domain IV helices 68–71 (nucleotides 2542–2637) typically span the A, P, and E sites and pack against the D-loop, and anticodon arms of the P-site tRNA (Figure 2). Here, they are instead held in a partially unfolded state by MTERF4 at a location that would permit biogenesis factors to access to their binding sites, but clash with an incoming SSU (Figure 2C). Subsequent GTP hydrolysis by GTPBP7 would result in dissociation of the GTPase and MTERF4·NSUN4, allowing H68–71 to fold (compare Figure 2C,D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-v1.jpg)
+
+**Figure 2.:** (A) Incorporation of uL16m (olive), bL27m (wheat) precedes NSUN4 (magenta) binding and before bL36m (brown). NSUN4 is shown translucent for clarity. (B) His34 of helix 1 of GTPBP7 verifies that 2′-O-methylation of A-loop base U3039 by MRM2 has occurred. Immature (C) and mature (D) conformations of domain IV rRNA helices H68–71 (rainbow). H69 would pack against a canonical P-site tRNA when present, and together this region forms the back wall of the A, P, and E sites of the mature 39S. MTERF4 (translucent orange) holds H68–71 in an unfolded conformation to permit assembly factors to access the core of the mtLSU. mtLSU, mitoribosomal large subunit; rRNA, ribosomal RNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The inter-subunit interface is oriented toward the reader. GTPBP7 (top) or RbgA (bottom) bound to the non-hydrolyzable GTP analogs, GMPPCP (top) or GMPPNP (bottom) interact at equivalent locations on the human mtLSU and bacterial 45S, respectively. mtLSU, mitoribosomal large subunit.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The tips of the A and P loops move toward GTPBP7 and NSUN4 relative to their positions in the mature mitoribosomes (overlaid in translucent colors). rRNA, ribosomal RNA.
+
 RbgA, the bacterial homolog of GTPBP7, facilitates the incorporation of the mitoribosomal protein bL36m into the mtLSU (Britton, 2009; Kotani et al., 2013; Figure 2—figure supplement 1). On the other hand, two other ribosomal proteins uL16m and bL27m, whose incorporation in bacteria is also attributed to RbgA, are already present in an earlier assembly intermediate (PDB 5OOM). We suspect that this difference is likely because only two GTPases (ObgE being the other) regulate bacterial 50S assembly while at least four are implicated in ribosome assembly in human mitochondria (Maiti et al., 2021). Remarkably, GTPBP7 binds in the vicinity of 2′-O-methylated bases in the A and P loops of the PTC, which are critical rRNA elements that bind the aminoacyl and peptidyl tRNAs, respectively. Our structure reveals that the A and P loops move toward GTPBP7 and NSUN4, respectively, relative to their positions in the mature 55S (Figure 2—figure supplement 2) and His 34 of helix 1 of GTPBP7 directly contacts the highly conserved U3039 to verify 2′-O-methylation by mitochondrial methyltransferase 2 (MRM2) (Figure 2B; Lee and Bogenhagen, 2014). Given the universal importance of 2′-O-methylation of specific nucleotides in the PTC for translation (Pintard et al., 2002; Rorbach et al., 2014), it is striking that GTPBP7 directly contacts Um3039. In principle, slight rearrangements of helix 1 of GTPBP7 could also ensure G3040 methylation by MRM3. Similarly, G2815 (in the P loop), which is 2′-O-methylated by MRM1 (Lee and Bogenhagen, 2014; Rorbach et al., 2014) is in the vicinity of NSUN4 and GTPBP7 in our structure (Figure 2—figure supplement 2). We propose that GTPBP7 ensures 2′-O-methylation of these residues by coupling GTP hydrolysis and subsequent GTPBP7 egress from the 39S to its interaction with the methylated bases.
 
 GTPBP7, MTERF4, and NSUN4 are highly conserved and their counterparts in Caenorhabditis elegans are MTG-1 (33% identical), MTER-4 (21%), and NSUN-4 (34%), respectively. In C. elegans, the methyltransferase activity of NSUN4 for mitochondrial protein synthesis was shown to be dispensable (Navarro et al., 2021), suggesting that its importance may instead lie in its interaction with the conserved core of the mtLSU. To test the importance of complex formation of the three protein factors with the mtLSU during assembly in vivo, we used C. elegans as a model organism and introduced mutations at locations in the three factors that we predicted would disrupt binding to the mtLSU without affecting expression, mitochondrial targeting or protein folding (Figure 3A, Figure 3—figure supplement 1, Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images of hsp-6::GFP expression in wild-type, mter-4R178E,K262E,K263E, mtg-1R171E,K178E,K180E, nsun-4M225A,K226A, catalytic dead nsun-4C90A, and nsun-4M225A,K226A,L286Y,A287Y mutant animals. The matched wild-type control for nsun-4M225A,K226A,L286Y,A287Y resembles the shown wild-type, and is omitted for simplicity. White arrows in mtg-1 mutants represent homozygous mutant animals based on the absence of umnIs21 reporter expression from balancer chromosome. All animals express the zcIs13 [hsp-6::GFP] reporter which is specifically expressed in response to mitochondrial stress. Animals were grown for 72 hr at 22.5°C. Scale bars=200 µm. (B) Top five GO-terms based on p-value from g:Profiler analysis of genes upregulated greater than 0.5 (log2) in mter-4R178E,K262E,K263E mutants when compared to wild-type animals. (C) Venn diagram comparison of genes upregulated in mter-4R178E,K262E,K263E, isp-1(qmv150), and nuo-6(qm200) mutants. isp-1 and nuo-6 gene expression data from Yee et al., 2014. (D) Fraction of wild-type and mter-4R178E,K262E,K263E mutants sterile at 22.5°C. n=100 animals. (E) Fraction of wild-type and mter-4R178E,K262E,K263E mutants at different developmental stages after 48 hr at 22.5°C. n=200 animals. GO, gene ontology.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Residues that are important for mitoribosome binding and that were mutated in this study are highlighted in red.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Cryo-EM structure of the human complex (top) and C. elegans AlphaFold 2 models of wild-type (middle) and mutant (bottom) MTERF4 (orange), NSUN4 (magenta) and GTPBP7 (green) illustrate the high degree of structural conservation from human to worm. The introduced mutations in the mitoribosome binding interfaces of the C. elegans proteins do not affect the overall fold of the proteins as predicted by AlphaFold 2. Mutated sidechains are depicted as spheres and coloured by type (positive - blue, negative - red, hydrophobic – yellow, polar - cyan). Note that worm strains generated in this study did not carry mutations on all three proteins simultaneously as depicted here.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Total protein levels of MTG-1, NSUN-4, and MTER-4 as well as the cytosolic ribosomal protein eL13 and the mitoribosomal protein mL53 are comparable to those in wild-type worms. Each value is an average of two biological replicates. (bottom) NSUN-4 and MTER-4 are significantly depleted in the ribosomal fraction (which includes cytosolic and mitochondrial ribosomes) in the mter-4R178E,K262E,R263E strain and to a lesser extent in the nsun-4M225A,K226A strain. TMT-MS, Tandem mass tag-mass spectrometry.
 
 Mutations that disrupt mitoribosome binding to MTER-4 (MTER-4R178E,K262E,R263E) and MTG-1 (MTG-1R171E,K178E,K180E; the C. elegans orthologs of MTERF4 and GTPBP7, respectively), led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6, consistent with activation of the mitochondrial unfolded protein response (Figure 3A). These findings are similar to the effects observed when mitochondrial ribosomal proteins are knocked down by RNAi (Houtkooper et al., 2013). By contrast, we found that mutations that disrupt the catalytic activity of NSUN-4 did not substantially activate hsp-6 expression (Figure 3A, NSUN-4 cd), nor did mutations that disrupt a weak contact between NSUN-4 and the mitoribosomal protein bL33m, NSUN-4M225A,K226A. These results are consistent with the catalytic activity of NSUN-4 being dispensable for mitochondrial protein synthesis. However, NSUN-4 makes multiple contacts with the mitoribosome and the chosen M225A and K226A substitutions in NSUN-4 were likely insufficient to disrupt its interaction with the mitoribosome. We therefore introduced the additional mutations L286Y and A287Y, resulting in a dramatic mitochondrial stress response (Figure 3A, compare nsun-4M225A,K226A and nsun-4M225A,K226A,L286Y,A287Y). Therefore, disrupting NSUN-4, MTER-4, or MTG-1 binding to the conserved core of the mitoribosome potently activates mitochondrial stress, underscoring their importance during mitoribosome biogenesis.
 
@@ -59,6 +258,8 @@ To further confirm the effects of disrupting the interaction of these proteins w
 ## Discussion
 
 We have previously reported the cryo-EM structures of two human late-stage mitoribosomal assembly intermediates (Brown et al., 2017). One intermediate (PDB 5OOM) lacks bL36m, contains the anti-association factors MALSU1·L0R8F8·mt-ACP, and awaits folding of ~20% of the 16S rRNA, including the entire PTC. The second intermediate (PDB 5OOL) comprises fully matured 16S rRNA and all ribosomal proteins, but is incompetent for subunit joining because the anti-association factors are still present. Several events must therefore occur around these intermediates, and the order of events can be inferred from the reasonable assumption that assembly proceeds outwards from the core of the mtLSU to the inter-subunit interface (Video 1). (a) bL36m must bind the mtLSU and pack against the folded domain V helices H89–93; (b) the only remaining domain II helices H34–35 must fold; (c) H65–67 of domain IV can also then fold; and finally, (d) H68–71 of domain IV can fold to yield a mature PTC. PTC maturation also includes the universally conserved and essential modifications to incorporate pseudouridine Ψ3067 by RNA pseudouridine synthase (RPUSD4) and 2′-O-methylation at Gm2815, Um3039, and Gm3040 by mitochondrial methyltransferases1-3 (MRM1-3), respectively. These modifications likely happen in concert with the above steps.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-video1.mp4.jpg)
 
 A comprehensive review of GTPases in human mitoribosomal assembly (Maiti et al., 2021) and four studies describing cryo-EM structures of mtLSU late assembly intermediates distinct from ours and from each other (Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021; Lenarčič et al., 2021), appeared during manuscript preparation. All five studies, including ours, have trapped MALSU1·L0R8F8·mt-ACP and NSUN4·MTERF4 at the same location on the mtLSU. The studies, however, differ notably in the precise step during assembly, the biogenesis factors recruited, and finally, the GTPase in control. The deleterious consequences of manipulating NSUN4 or MTERF4 binding to the mitoribosome in vivo illustrate the importance of these proteins in mediating not only the exact step during PTC maturation that we have trapped, but also the prior and subsequent steps described in Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021.
 
@@ -84,75 +285,75 @@ The proper folding of the PTC, the universally conserved active site of the ribo
 
 ## Materials and methods
 
-## Cell line
+### Cell line
 
 PDE12−/− HEK293T cells that were used have previously been published (Pearce et al., 2017). Initially, cell growth was adherently at 37°C, 5% CO2, in 10% fetal bovine serum (FBS) supplemented with Dulbecco’s modified Eagle’s medium (DMEM). Subsequently, the cells were adapted to grow in suspension in 1% FBS supplemented Freestyle media at 37°C, 8% CO2.
 
-## Purification of native mitoribosomal complexes
+### Purification of native mitoribosomal complexes
 
 Human mitochondria, and from them native mitoribosomal complexes, were purified from PDE12−/− HEK293T cells as previously described (Desai et al., 2020). Briefly, purified cells were harvested at 106 cells/ml and washed in cold phosphate-buffered saline (PBS). The weighed pellet of cells was resuspended in 6 ml of MIB buffer (50 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, Proteinase Inhibitor; PI, 1 tablet per 50 ml) per gram and SM4 buffer (281 mM sucrose, 844 mM mannitol in MIB buffer) to yield 70 mM sucrose and 210 mM mannitol. The cells were subjected to nitrogen cavitation for 20 min at 500 psi to disrupt the cell membranes and the collected sample was centrifuged two times at 800×g for 15 min and the supernatant was collected. Two additional centrifugation steps at 10,000×g for 15 min were performed and each time, the pellet was resuspended in 0.5 ml of MIBSM buffer (3:1 MIB:SM4) per 1 g of originally weighed pellet. Per 1 g of the original pellet 10U of RNase-free DNase was added and rotated on a roller at 4°C for 20 min. The solution was then pelleted at 10,000×g for 15 min, resuspended in SEM buffer (250 mM sucrose, 20 mM HEPES⋅KOH pH 7.45, and 1 mM EDTA), dounce-homogenized, and layered onto a sucrose step gradient of 60%, 32%, 23%, and 15% sucrose for centrifugation at 99,004×g for 1 hr at 4°C. The collected mitochondrial layer was flash-frozen in liquid nitrogen for storage at −80°C.
 
 To isolate mitoribosomes from the collected mitochondrial fraction, 2 volumes of lysis buffer (25 mM HEPES·KOH pH 7.4, 100 mM KCl, 25 mM Mg(OAc)2, 1.5% β-DDM, 0.15 mg/ml TOCL, 0.5 mM GMPPCP (Sigma-Aldrich), 1 tablet per 50 ml PI, and 2 mM DTT) were added and briefly dounce-homogenized and stirred for 30 min in the cold room. Supernatant was collected after centrifugation at 30,000×g for 30 min and loaded at a ratio of 2.5:1 onto a 1 M sucrose cushion (20 mM HEPES·KOH, pH 7.4, 100 mM KCl, 20 mM Mg(OAc)2, 0.6% β-DDM, 0.06 mg/ml TOCL, 0.25 mM GMPPCP, and 2 mM DTT) and centrifuged at 231,550×g for 60 min at 4°C. The pellet was resuspended (20 mM HEPES·KOH, pH 7.4, 100 mM KCl, 5 mM Mg(OAc)2, 0.3% β-DDM, 0.03 mg/ml TOCL, 0.25 mM GMPPCP, and 2 mM DTT) and the crude mitoribosome fraction was layered onto a 15–30% sucrose gradient and subjected to centrifugation at 4°C for 90 min at 213,626×g. Following sucrose gradient fractionation, the mitoribosomal fractions were pooled and concentrated into final buffer (20 mM HEPES·KOH, pH 7.4, 100 mM KCl, 5 mM Mg(OAc)2, 0.05% β-DDM, 0.005 mg/ml TOCL, 0.25 mM GMPPCP, and 2 mM DTT) before the mitoribosomes were vitrified for cryo-EM.
 
-## Grid preparation and data collection
+### Grid preparation and data collection
 
 Quantifoil R2/2 holey carbon grids, covered with homemade amorphous carbon (~50 Å thick) was used with prior glow discharging. Using the Vitrobot Mk IV, 3 μl of our sample was applied to the grids, blotted for 4–6 s, vitrified by plunging into liquid ethane, and stored in liquid nitrogen. Data was collected over seven separate sessions in integrating mode at a magnification of 75,000, pixel size 1.04 Å on the FEI Titan Krios 300 kV electron microscope using the FEI Falcon III detector and EPU software. A total of 46,109 movies were collected using a defocus range from −1.1 to −3.2 at a dose of 1.5 e− per frame per Å2 at 1 s exposure (39 frames).
 
-## Image processing
+### Image processing
 
 RELION-3.0 and 3.1 (Zivanov et al., 2018) were used to process cryo-EM data as described before (Desai et al., 2020). Resolutions are reported according to the Fourier shell correlation=0.143 criterion (Rosenthal and Henderson, 2003). Movie motion correction was performed using MotionCorr2 (Zheng et al., 2017) and the contrast transfer function was estimated using CTFFIND-4.1 (Rohou and Grigorieff, 2015). 3,374,367 particles were picked from 43,950 micrographs that contained data to better than 6 Å resolution using a 2D reference (Figure 1—figure supplement 1). Micrographs with a CTF figure of merit >0.3 and a maximum resolution better than 5 Å were selected for further processing. Following particle extraction (128-pixel box; 5.0375 Å/pixel) and 2D classification, 3,247,481 particles were retained. The first 3D refinement yielded a 10.2 Å map at Nyquist resolution, using a 60 Å lowpass-filtered reference mitoribosome (EMD-2876) (Amunts et al., 2015). The reported 3D refinements are based on gold-standard estimates. A general 3D classification without alignments separated out mtLSU subclasses consisting of 1,283,454 particles. Following refinement and further 3D classification without alignment, a class of 1,100,599 particles was obtained that had previously unmodeled cryo-EM density at the subunit interface. This class was re-extracted to a pixel size of 1.04 Å and refined to 3.1 Å. Two subsequent rounds of focussed classification with signal subtraction were performed using generous soft masks (with 11-pixel extensions and 7-pixel cosine soft edges) that spanned the P and E sites and L1 stalk and A, P, and E sites, respectively. Following 3D refinement, CTF refinement and Bayesian polishing, the LSU assembly intermediate class was refined to 3.4 Å and post-processed in RELION and also using the highRes training model in deepEMhancer (Sanchez-Garcia et al., 2020).
 
-## Model building, refinement, and validation
+### Model building, refinement, and validation
 
 PDB 7A5F (Desai et al., 2020) was used as a starting model for model building in Coot v.0.9.3 (Casañal et al., 2020). Real-space refinement and validation were performed using phenix.real_space_refine (Afonine et al., 2018) and the Phenix suite (Adams et al., 2010), respectively. Homology models for MTERF4, NSUN4, and GTPBP7 were generated using trRosetta (Yang et al., 2020) and corrected using AlphaFold 2 (Jumper et al., 2021). The unfolded rRNA helices 68–71 were modeled using RNAcomposer (Biesiada et al., 2016) using secondary structure predictions from RNAfold (Lorenz et al., 2011). Only the backbone coordinates but not the bases were retained for the unstructured regions of H68–71. Comparisons were made with PDB 5OOL and 5OOM (Brown et al., 2017).
 
-## Caenorhabditis elegans alleles and strain maintenance
+### Caenorhabditis elegans alleles and strain maintenance
 
 All strains were grown and maintained at 20°C on NGM agar plates seeded with Escherichia coli HB101 unless otherwise stated. Individual point mutations in mter-4(syb3662, syb3403), mtg-1(syb3641), and nsun-4(syb3514) were generated by SunyBiotech (Fuzhou, China). nsun-4(syb3514) results in an M225A and K226A substitution in NSUN-4, whereas nsun-4(syb3514, syb4263) additionally carries the mutations L286Y and A287Y. mtg-1(syb3641) results in R171E, K178E, and K180E substitutions in MTG-1. mter-4(syb3403) results in an R178E substitution in MTER-4. mter-4(syb3662) results in an K262E and R263E substitution in MTER-4. nsun-4(mj457) results in a C390A catalytic dead conversion in NSUN-4 and was reported previously (Navarro et al., 2021). All mutants were crossed with SJ4100—zcIs13[hsp-6::GFP]—to generate hsp-6 reporter strains. CGC32 - [sC1(s2023) [dpy-1(s2170) umnIs21] III] - was used to balance mtg-1(syb3641) which resulted in sterility.
 
-## Caenorhabditis elegans imaging
+### Caenorhabditis elegans imaging
 
 Animals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 22.5°C. Adult animals were collected and immobilized in tetramisole and imaged using a Leica DM6 B and a Leica DFC9000 GT camera.
 
-## RNA-seq
+### RNA-seq
 
 Animals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 20°C. Young adults were collected and washed three times in M9 buffer and snap-frozen in liquid nitrogen. Pellets of animal tissue were frozen and thawed five times and then refrozen at −70°C. RNA extraction and sequencing were performed by BGI Genomics (Hong Kong, China). Briefly, RNA was extracted by phenol-chloroform extraction. mRNA molecules were purified from total RNA using oligo(dT)-attached magnetic beads. cDNA was generated using random hexamer-primed reverse transcription. Libraries for paired-end 100 bp DNBSeq were generated and validated on the Agilent Technologies 2100 bioanalyzer.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 Raw reads were trimmed for adaptors, low-quality sequences, and short reads with Trimmomatic (version 0.39, parameters: ILLUMINACLIP:TruSeq3-SE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:20) (Bolger et al., 2014). From the trimmed reads, the remaining rRNA was removed with sortmeRNA (version 2.1, default parameters) (Kopylova et al., 2012). Clean reads were then mapped to the C. elegans reference genome (WBCEL235) with HISAT2 (Kim et al., 2019) (version 2.1.0, default parameters) and raw counts for each were produced with HTSeq-count (Anders et al., 2015). Other quality control metrics were obtained with fastQC, Picard Tools, and multiQC (Ewels et al., 2016). Counts were imported into R and differential gene expression analysis was performed with DESeq2 (FDR<0.01, LFC>| 0.5 |) (Love et al., 2014). Gene ontology analysis of DEGs was performed with gProfiler (Raudvere et al., 2019).
 
-## Developmental rate and sterility assays
+### Developmental rate and sterility assays
 
 Animals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 22.5°C. To assay developmental rate 200 animals were scored for their developmental stage at 48 hr. To assay for sterility 100 L4 stage animals were each individually transferred to a new plate. Animals with progeny after 4 days were scored as fertile. Animals with no progeny after 4 days were scored as sterile.
 
-## Tandem mass tag-mass spectrometry
+### Tandem mass tag-mass spectrometry
 
-## Sample preparation
+#### Sample preparation
 
 500 μl of packed wild-type, mter-4(syb3662) and nsun-4(syb3514) adult worms that were grown at 20°C were collected and stored at −80°C. Frozen pellets were thawed in 250 μl of either RNC buffer (50 mM HEPES pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2, and 1× RNASIN RNAse inhibitor) or denaturing buffer (100 mM HEPES pH 7.6, 8 M urea) for total ribosome and total protein harvesting, respectively. 0.8 g of 0.7 mm diameter zirconia beads were added and the samples lysed in a QIAGEN TissueLyser (30 Hz, 2.5 min) at 4°C. The lysate was clarified by centrifugation at 16,100×g for 30 min at 4°C and the supernatant was either quantified and directly used for TMT-MS (in denaturing buffer) or total ribosomes were isolated by centrifugation at 100,000 rpm at 4°C for 1 hr in a TLA 100.3 rotor through a 20% sucrose cushion in RNC buffer and the ribosome pellet resuspended in denaturing buffer. All samples were analyzed in biological duplicates.
 
-## Enzymatic digestion
+#### Enzymatic digestion
 
 Protein samples in denaturing buffer were reduced with DTT and alkylated with iodoacetamide. Samples were then diluted to 4 M urea and digested with Lys-C (Promega). After 4 hr, the samples were further diluted to 1.6 M urea and digested overnight with trypsin (Promega) at 30°C. Digestion was stopped by the addition of formic acid (FA) to a final concentration of 0.5% and the resulting samples were desalted using homemade C18 stage tips (3M Empore) filled with poros R3 (Applied Biosystems) resin. Bound peptides were eluted with 30–80% MeCN/0.5% FA and lyophilized.
 
-## Tandem mass tag labeling
+#### Tandem mass tag labeling
 
 Dried peptide mixtures from each condition were re-suspended in 200 mM Hepes, pH 8.5. TMT 10-plex reagent (Thermo Fisher Scientific), reconstituted according to manufacturer’s instructions, and incubated at 23°C for an hour. The labeling reaction was then terminated by incubation with 5% hydroxylamine for ½ hr. The labeled peptides were pooled into a single sample and acetonitrile was removed by Speed Vac (Savant). Each set of TMT samples was desalted and pH 8 fractionated using the same stage tips method as above. Bound peptides were eluted with a 7.5–60% MeCN gradient in 0.1% triethylamine and fractionated into eight fractions. Eluted fractions were acidified, partially dried down in Speed Vac, and ready for LC-MS/MS.
 
-## Mass spectrometry analysis
+#### Mass spectrometry analysis
 
 The fractionated peptides were analyzed by LC-MS/MS using a fully automated Ultimate 3000 RSLC nano System (Thermo Fisher Scientific) fitted with a 100 μm×2 cm PepMap100 C18 nano trap column and a 75 μm×25 cm, nanoEase M/Z HSS C18 T3 column (Waters). Peptides were separated using a binary gradient consisting of buffer A (2% MeCN, 0.1% formic acid) and buffer B (80% MeCN, 0.1% formic acid). Eluted peptides were introduced directly via a nanospray ion source into an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific). The mass spectrometer was operated data-dependent mode, performed MS1 scan (m/z=400–1600, resolution 120k) followed by MS2 acquisitions with a resolution of 50k, NCE of 38, and an isolation window set at 0.4 Th. Dynamic exclusion was set for 60 s.
 
-## Proteome discoverer
+#### Proteome discoverer
 
 The acquired MSMS raw files were processed using Proteome Discoverer (version 2.4, Thermo Fisher Scientific). MSMS spectra were searched against C. elegans proteome, UniProt Fasta database (downloaded in 2020), using Sequest search engine. Carbamidomethylation of cysteines, TMT610plex (N-term) and TMT10plex (K) were set as fixed modifications, while methionine oxidation and N-terminal acetylation (protein) were selected as variable modifications. The abundance values of TMT reporter ions were normalized to a set of mitoribosomal or alternatively, cytosolic ribosomal proteins. The output file from Proteome Discoverer, the proteins table was filtered for proteins with FDR of 1% and exported as excel files.
 
-## Figure preparation
+### Figure preparation
 
 Adobe Illustrator 2021, UCSF Chimera (Pettersen et al., 2004), Pymol (Schrödinger, LLC), and Geneious 10.2.6 (https://www.geneious.com) were used for figure preparations.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Sample sizes for experiments involving C. elegans were selected based on similar studies from the literature and all animals from each genotype were selected and analyzed randomly. All replicate numbers listed in figure legends represent biological replicates of independent animals cultured separately, collected separately, and analyzed separately. Fisher’s exact test was used to calculate p-values for Figure 3b and c.
 

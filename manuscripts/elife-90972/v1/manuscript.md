@@ -16,22 +16,22 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Anesthesiology, Washington University in St. Louis St. Louis United States
-2. https://ror.org/04fzwnh64 Department of Medicine, Northwestern University Feinberg School of Medicine Chicago United States
-3. https://ror.org/01yc7t268 Department of Neuroscience, Washington University in St. Louis St. Louis United States
-4. https://ror.org/01yc7t268 Department of Psychiatry, Washington University in St. Louis St. Louis United States
-5. https://ror.org/00qqv6244 Medical College of Wisconsin Milwaukee United States
-6. https://ror.org/01yc7t268 Department of Obstetrics and Gynecology, Washington University in St. Louis St. Louis United States
-7. https://ror.org/00cvxb145 Center for Neurobiology of Addiction, Pain, and Emotion University of Washington Seattle United States
-8. https://ror.org/00cvxb145 Department of Anesthesiology and Pain Medicine University of Washington Seattle United States
-9. https://ror.org/00cvxb145 Department of Pharmacology University of Washington Seattle United States
-10. https://ror.org/00cvxb145 Department of Bioengineering University of Washington Seattle United States
+1. Department of Anesthesiology, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Medicine, Northwestern University Feinberg School of Medicine Chicago United States ([ROR:04fzwnh64](https://ror.org/04fzwnh64))
+3. Department of Neuroscience, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+4. Department of Psychiatry, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+5. Medical College of Wisconsin Milwaukee United States ([ROR:00qqv6244](https://ror.org/00qqv6244))
+6. Department of Obstetrics and Gynecology, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+7. Center for Neurobiology of Addiction, Pain, and Emotion University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+8. Department of Anesthesiology and Pain Medicine University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+9. Department of Pharmacology University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+10. Department of Bioengineering University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
 ## Abstract
 
-Threat-response neural circuits are conserved across species and play roles in normal behavior and psychiatric diseases. Maladaptive changes in these neural circuits contribute to stress, mood, and anxiety disorders. Active coping in response to stressors is a psychosocial factor associated with resilience against stress-induced mood and anxiety disorders. The neural circuitry underlying active coping is poorly understood, but the functioning of these circuits could be key for overcoming anxiety and related disorders. The supramammillary nucleus (SuM) has been suggested to be engaged by threat. SuM has many projections and a poorly understood diversity of neural populations. In studies using mice, we identified a unique population of glutamatergic SuM neurons (SuM VGLUT2+ ::POA) based on projection to the preoptic area of the hypothalamus (POA) and found SuM VGLUT2+ ::POA neurons have extensive arborizations. SuM VGLUT2+ ::POA neurons project to brain areas that mediate features of the stress and threat responses including the paraventricular nucleus thalamus (PVT), periaqueductal gray (PAG), and habenula (Hb). Thus, SuM VGLUT2+ ::POA neurons are positioned as a hub, connecting to areas implicated in regulating stress responses. Here we report SuM VGLUT2+ ::POA neurons are recruited by diverse threatening stressors, and recruitment correlated with active coping behaviors. We found that selective photoactivation of the SuM VGLUT2+ ::POA population drove aversion but not anxiety like behaviors. Activation of SuM VGLUT2+ ::POA neurons in the absence of acute stressors evoked active coping like behaviors and drove instrumental behavior. Also, activation of SuM VGLUT2+ ::POA neurons was sufficient to convert passive coping strategies to active behaviors during acute stress. In contrast, we found activation of GABAergic (VGAT+) SuM neurons (SuM VGAT+ ) neurons did not alter drive aversion or active coping, but termination of photostimulation was followed by increased mobility in the forced swim test. These findings establish a new node in stress response circuitry that has projections to many brain areas and evokes flexible active coping behaviors.
+Threat-response neural circuits are conserved across species and play roles in normal behavior and psychiatric diseases. Maladaptive changes in these neural circuits contribute to stress, mood, and anxiety disorders. Active coping in response to stressors is a psychosocial factor associated with resilience against stress-induced mood and anxiety disorders. The neural circuitry underlying active coping is poorly understood, but the functioning of these circuits could be key for overcoming anxiety and related disorders. The supramammillary nucleus (SuM) has been suggested to be engaged by threat. SuM has many projections and a poorly understood diversity of neural populations. In studies using mice, we identified a unique population of glutamatergic SuM neurons (SuMVGLUT2+::POA) based on projection to the preoptic area of the hypothalamus (POA) and found SuMVGLUT2+::POA neurons have extensive arborizations. SuMVGLUT2+::POA neurons project to brain areas that mediate features of the stress and threat responses including the paraventricular nucleus thalamus (PVT), periaqueductal gray (PAG), and habenula (Hb). Thus, SuMVGLUT2+::POA neurons are positioned as a hub, connecting to areas implicated in regulating stress responses. Here we report SuMVGLUT2+::POA neurons are recruited by diverse threatening stressors, and recruitment correlated with active coping behaviors. We found that selective photoactivation of the SuMVGLUT2+::POA population drove aversion but not anxiety like behaviors. Activation of SuMVGLUT2+::POA neurons in the absence of acute stressors evoked active coping like behaviors and drove instrumental behavior. Also, activation of SuMVGLUT2+::POA neurons was sufficient to convert passive coping strategies to active behaviors during acute stress. In contrast, we found activation of GABAergic (VGAT+) SuM neurons (SuMVGAT+) neurons did not alter drive aversion or active coping, but termination of photostimulation was followed by increased mobility in the forced swim test. These findings establish a new node in stress response circuitry that has projections to many brain areas and evokes flexible active coping behaviors.
 
 ## Introduction
 
@@ -43,79 +43,141 @@ We used retrograde adeno associated viral (AAV) and combinatorial genetic tools 
 
 ## Results
 
-## VGLUT2+ SuM neurons projecting to the POA (SuMVGLUT2+::POA) arborize to multiple stress-engaged brain regions
+### VGLUT2+ SuM neurons projecting to the POA (SuMVGLUT2+::POA) arborize to multiple stress-engaged brain regions
 
 The SuM contains functionally diverse and anatomically distinct populations with efferent projections to many brain regions (Vertes and McKenna, 2000; Leranth and Kiss, 1996; Haglund et al., 1984; Hayakawa et al., 1993). The diversity includes glutamatergic, GABAergic, and co-expressing GABAergic/Glutamatergic populations (Billwiller et al., 2020; Hashimotodani et al., 2018). Using retrograde adeno associated virus (Retro-AAV; Retro-AAV2-DIO-tdTomato) and anterograde (AAV5-DIO-ChR2eYFP) tracing, we identified a population of VGLUT2 +expressing neurons in SuM that project to the POA (SuMVGLUT2+::POA) with dense projections in the lateral preoptic area (LPO) within the POA (Figure 1—figure supplement 1A–F) in VGLUT2-Cre mice (n=4). Using a viral construct encoding for a nuclear restricted fluorophore that switches from mCherry (red) to eGFP (green) in a Cre-dependent manner (Retro-AAV2-Nuc-flox(mCherry)-eGFP), we found SuMVGLUT2+::POA neurons were positive for VGLUT2 +in VGLUT2-Cre mice (n=4) and negative for VGAT expression in VGAT-Cre mice (n=3) (Figure 1—figure supplement 1G–L) indicating that SuMVGLUT2::POA neurons do not belong to GABAergic/Glutamatergic populations.
 
 To examine arborization of SuMVGLUT2+::POA neurons, we utilized a combinatorial genetic approach. Specifically, we used mice (VGLUT2-Flp) that express Flp recombinase in VGLUT2 expressing cells in a combination with Flp-dependent expression (fDIO) of Cre and Cre (DIO)-dependent fluorophore expression. We injected Retro-AAV2-DIO-eYFP into POA and AAV-fDIO-Cre in to SuM (Figure 1A). We thus expressed Cre in SuMVGLUT2+ neurons and, of those, only neurons projecting to the POA (SuMVGLUT2::POA neurons) were labeled with eYFP. We found SuMVGLUT2::POA neurons arborize widely, projecting to multiple brain regions including: the nucleus accumbens (Acb), Septum, lateral hypothalamus (LH), ventral medial hypothalamus (VMH), paraventricular nucleus (PVT), lateral habenula (lHb), the ventral lateral periaqueductal gray (VLPAG), dorsal raphe (DRD), lateral parabrachial nucleus (LPBN), laterodorsal tegmental nucleus (LDTg), and medial vestibular nucleus (MVe; Figure 1D–M). We visualized arborization of SuMVGLUT2::POA neurons in cleared tissue by using optical light sheet imaging. For these experiments, we injected VGLUT2-Flp mice (n=3) as in Figure 1A and brains were actively cleared using SHIELD for optical light sheet imaging (Park et al., 2018). Compiled three-dimensional images of a brain hemisphere, viewed from the medial to lateral perspective (Figure 1M) or viewed from the ventral to dorsal perspective (Figure 1—figure supplement 2M), showed projections labeled by eYFP from SuMVGLUT2+::POA to POA, areas of hippocampus, septum, Acb, and regions in the pons and midbrain. The results further established projections from SuMVGLUT2+::POA neurons to multiple brain areas and illustrate the broad arborization.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of injections of Retro-AAV-DIO-eYFP into the POA and AAV-fDIO-Cre into the SuM of VGLUT2-Flp mice to label only VGLUT + SuM neurons that project to the POA. (B) Projections of VGLUT2 + SuM neurons labeled with eYFP seen in the POA. (C) Cell bodies labeled with eYFP in the SuM. (D–L) Arborizing processes from the SuMVGLUT2+::POA neurons are seen in multiple brain regions including the (D) AcbSh and AcbC; (E) lateral septum; (F) multiple hypothalamic areas; (G) lHb and PVT; (H) the PAG and the DRD; (I) VLPAG and LPB; (J) DRI and LDTg; (K) and DRI, and MVePC. (M) Light sheet microscopy image of a cleared mouse brain hemisphere, viewed from medial to lateral, showing eYFP labeled neurons in SuMVGLUT2+::POA with cell bodies in SuM and processes in areas corresponding to septum, hippocampus, Acb, and POA. (500 μm scale bars). Abbreviations- MPA- medial preotic, VLPO- ventral lateral preoptic, LPO- lateral preotic, HDB- nucleus of the horizontal limb of the diagonal band AcbSh- Accumbens shell, AcbC- Accumbens core, Shi- septohippocampal nucleus, LSI- lateral septal nucleus, intermediate part, LSV- lateral septal nucleus, ventral part, LV- lateral ventricle, MS- medial septal nucleus, lHb- lateral habenula, mHb- medial habenula, PVT- paraventricular thalamus, DM- dorsomedial hypothalamic nucleus, LH- lateral hypothalamic area, VMH- ventromedial hypothalamic nucleus, PAG- periaqueductal gray, DMPAG- dorsomedial periaqueductal gray, DLPAG- dorsolateral periaqueductal gray, LDTg- laterodorsal tegmental nucleus, LPAG- lateral periaqueductal gray, DRD- dorsal raphe nucleus, dorsal part, LPB- lateral parabrachial nucleus, MPB- medial parabrachial, scp- superior cerebellar peduncle, Bar- Barrington’s nucleus, DTg- dorsal tegmental nucleus, DRI- dorsal raphe, interfascicular part, LC- locus coeruleus, MVe- medial vestibular nucleus, 4V- fourth ventricle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of injections into VGLUT2-Cre mice of Retro-AAV-DIO-tdTomato into the POA and AAV-DIO-ChR2eYFP into the SuM. (B and C) Projections of VGLUT2 +SuM neurons are evident in the POA with dense labeling in LPO and the site of viral injection in SuM (500 µm scale bar). (D) The brain regions, POA and SuM, shown in (B, C, E and F). (E and F) Cell bodies of VGLUT2 +SuM neurons are evident in SuM with injection of Retro-AAVs in POA. (G) Schematic of injection in POA of fluorophore switching construct in Retro-AAAV in VGLUT2-Cre or VGAT-Cre mice. (H and I) Labeling of Cre- (red) and Cre + neurons in POA but only Cre + seen in SuM of VLGUT2-Cre mice showing all SuM::POA neurons are VGLUT2+. (J) Quantification of labeling of Cre + and Cre- cells in SuM following injections in POA in VGLUT2-Cre and VGAT-Cre mice. (K and L) Labeling of Cre- (red) and Cre + neurons in POA but only Cre- seen in SuM of VGAT-Cre mice. (100 µm scale bar).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, D, G, and J) Schematic showing the injection sites of Retro-AAV’s in VGLUT2-Cre mice. (B–C) In VGLUT2-Cre mice, injection of Retro-AAV-DIO-eYFP unilaterally in the (B) accumbens nucleus resulted in labeling of cell bodies in (C) SuM. (E–F) Similarly, injection of Retro-AVV-DIO-tdTomato into (E) septum resulted in labeling of cell bodies in (F) SuM. (H–I) injection of Retro-AAV-DIO-eYFP targeting the (H) PV and lHb resulted in cell bodies in (I) SuM being labeled with eYFP. (K–L) Retro-AVV-DIO-tdTomato injected into (K) PAG-labeled cells in (L) SuM. (M) The cleared brain hemisphere from a VGLUT2-Flp mouse injected in the POA with injected Retro-AAV-DIO-eYFP shown in Figure 2M displayed from a perspective of ventral to dorsal shows cells labeled in SuM and processes extending widely, including in the hippocampus and POA. (100 and 500 μm scale bars).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of injection of Retro-AAV-Cre into the POA and AAV-Nuc-flox(mCherry)-eGFP into the SuM of WT mice. (B) In SuM, eGFP (green) Cre + and mCherry (red) Cre- labeled neurons are seen based on expression of Cre mediated by POA injected retrograde AAV constructs showing SuM::POA neurons are a subset of all cells in SuM. (C and D) In wildtype mice injected in POA with Retro-AAV-fDIO-Cre and in SuM with AAV-DIO-ChR2eYFP, expression of ChR2eYFP (green) is not seen. (E–H) In Ai14 reporter mice injected with AAV-fDIO-Cre into SuM, tdTomato expression is not observed unless Retro-AAV2-Flp is injected. (100 μm scale bars).
+
 We used tracing with Retro-AAV’s to further corroborate our findings from anterograde tracing by injecting unilaterally into the Acb, septum, PVT, or PAG in VGLUT2-Cre mice. Cell bodies in SuM were labeled eYFP or tdTomato (Figure 1—figure supplement 2A–L). Each area was injected in three or more mice, yielding similar results. We examined the anatomic distribution of SuM::POA neurons in SuM by injecting Retro-AAV2-Cre into the POA and AAV5-Nuc-flox(mCherry)-eGFP into the SuM (Figure 1—figure supplement 3A–B) of wildtype (WT) Cre- mice (n=3). In mice injected with this combination of viruses, we observed neurons labeled by mCherry (Cre negative) or eGFP (Cre expressing) interspersed in the SuM. We verified the combinatorial viral selectively labeled SuMVGLUT2+::POA neurons with minimal background (Madisen et al., 2010). As positive controls, we injected Retro-AVV-Flpo into the POA and AAV-fDIO-Cre into the SuM to label the cells in SuM (Figure 1—figure supplement 3G and H). As negative controls, we injected only AVV-fDIO-Cre into the SuM in Ai14 mice, which did not yield tdTomato expression (Figure 1—figure supplement 3C–D). To confirm that the combination of Retro-AAV2-fDIO-Cres and AAV5-DIO-ChR2eYFP did not lead to labeling of cells with eYFP in the absence of Flp, we injected Retro-AAV2-fDIO-Cre into the POA and AAV-DIO-hChR2eYFP into SuM of WT mice. In these mice we did not observe any expression of eYFP (Figure 1—figure supplement 3E–F). The results demonstrate the specificity of our combinatorial viral strategy. All studies were replicated in a minimum of three mice.
 
-## SuMVGLUT2+::POA neurons are an anatomical distinct subset of all SuMVGLUT2+ neurons
+### SuMVGLUT2+::POA neurons are an anatomical distinct subset of all SuMVGLUT2+ neurons
 
 Recent studies have highlighted functionally divergent roles of SuM neurons and suggested differential projections, particularly to regions of hippocampus and PVT, may identify functionally distinct populations (Kesner et al., 2021; Li et al., 2020). To examine if SuMVGLUT2+::POA neurons are a subset of SuMVGLUT2+ neurons, we qualitatively compared the projections of total SuMVGLUT2+ neurons to SuMVGLUT2+::POA neurons. Similar to projections for SuMVGLUT2+::POA neurons (Figure 1), we observed labeled projections from the total SuMVGLUT2+ neurons in the POA, PVT, lHB, and the CA2 field of the hippocampus (Figure 2A–E). Importantly, we found areas that received projections from the total SuMVGLUT2+ and not from SuMVGLUT2+::POA neurons. As schematized (Figure 2K), projections from the total SuMVGLUT2+ but not SuMVGLUT2+::POA populations were present in dentate gyrus (DG) and medial habenula (mHb; Figure 1G and Figure 2F–J). Connection of the SuM to the dentate gyrus is well described and seen here for the SuMVGLUT2+ population (; Wyss et al., 1979; Nakanishi et al., 2001; Maglóczky et al., 1994). The lack of projections from SuMVGLUT2+::POA neurons to dentate gyrus, but not to other structures, is a notable difference (Figure 2J). Thus, the SuMVGLUT2+::POA population represents a subset of the total SuMVGLUT2+ neuronal population with distinct projection targets.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig2-v1.jpg)
 
-**Figure 2.:** VGLUT2+::POA neurons project to a subset of brain regions compared to all SuMVGLUT2+ neurons.(A) Schematic of injections in VGLUT2-Cre mice of AAV-DIO-ChR2eYFP into SuM. (B) eYFP (green) labeled neurons present in SuM and (C) processes were observed in the POA. (D) Processes from SuM VGLUT2 +neurons were also present in mHb, lHb, and PVT. (E) In hippocampus, processes were observed in DG and CA2. (F) Schematic of injections in VGLUT2-Flp mice of Retro-AAV-fDIO-Cre and AAV-DIO-ChR2eYFP into SuM. (G–H) Cells in SuM and processes in POA were labeled by ChR2eYFP. (I) Labeled processes in lHb were evident but none seen in mHb. (J) In hippocampus, labeled processes were present in CA2 but not observed in DG. (500 μm scale bars) (K) Schematic summary showing the projection to DG and mHb present in the total SuM VGLUT2 +population (outlined arrows) but absent in the SuMVGLUT2+::POA population (filled arrows).
+**Figure 2.:** (A) Schematic of injections in VGLUT2-Cre mice of AAV-DIO-ChR2eYFP into SuM. (B) eYFP (green) labeled neurons present in SuM and (C) processes were observed in the POA. (D) Processes from SuM VGLUT2 +neurons were also present in mHb, lHb, and PVT. (E) In hippocampus, processes were observed in DG and CA2. (F) Schematic of injections in VGLUT2-Flp mice of Retro-AAV-fDIO-Cre and AAV-DIO-ChR2eYFP into SuM. (G–H) Cells in SuM and processes in POA were labeled by ChR2eYFP. (I) Labeled processes in lHb were evident but none seen in mHb. (J) In hippocampus, labeled processes were present in CA2 but not observed in DG. (500 μm scale bars) (K) Schematic summary showing the projection to DG and mHb present in the total SuM VGLUT2 +population (outlined arrows) but absent in the SuMVGLUT2+::POA population (filled arrows).
 
-## Threatening stressors but not spontaneous higher velocity movement recruits SuMVGLUT2+::POA neurons
+### Threatening stressors but not spontaneous higher velocity movement recruits SuMVGLUT2+::POA neurons
 
 Neurons in SuM can be activated by acute stressors, and we sought to examine the recruitment of SuMVGLUT2+::POA neurons by threatening stressors (Canteras et al., 1997; Day et al., 2004; Santín et al., 2003). We found that forced swimming induced cFos expression in SuM. Labeling SuMVGLUT2+::POA neurons using Retro-AAV-DIO-mCherry revealed an increase in the number of mCherry and cFos labeled cells following forced swim (Figure 3—figure supplement 1A–G). To further examine recruitment of SuMVGLUT2+::POA neurons by acute stressors, we tested a diverse set of acute threatening stressors using in vivo Ca2+ detection via fiber photometry. We expressed GCaMP7s in SuMVGLUT2+::POA neurons (Figure 3A–B) using the combinatorial viral genetic approach detailed for anatomic studies. We developed a dunk assay that utilized a moveable platform allowing mice to be placed into and removed from the water while obtaining fiber photometry recordings. Mice were dunked by lowering the platform below the water level forcing mice to swim for a 30-s trial every 2 min for a total of 10 trials (n=8 mice). During the 30-s swim time, mice exhibited active swimming and climbing behaviors reflected in the quantification of mean time mobile approaching 100% during the swim period without evidence for a shift in the behavioral strategy (Figure 3—figure supplement 1I). These data show repeated exposure to an acute stressor, dunk in water, evoked active coping behavior (time mobile). A 95%, 99%, and 99.9% confidence interval (CI) were calculated to analyze the difference in the Ca2+-dependent signal preceding and subsequently after the dunk. Analysis of Ca2+-dependent (470 nm excitation) and isosbestic control (415 nm excitation) signals from fiber photometry recordings revealed a significant (99.9% CI) rapid rise of approximately 5 standard deviations in GCaMP Ca2+-dependent signal with start of the swim trial that was sustained through the 30-s swim period. The Ca2+-dependent signal returned to baseline when the platform was raised, removing the animal from the water (Figure 3F and G). Repeated exposure to an acute stressor evoking active coping behaviors robustly recruited SuMVGLUT2+::POA neurons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of VGLUT2-Flp mice injected with AAV-DIO-GCaMP7s in SuM and Retro-AAV-fDIO-Cre in the POA with a (B) fiber placed over SuM for fiber photometry recordings from SuMVGLUT2+::POA neurons. (C) While mice were connected for fiber photometry, they were subjected to ten 30 s trials of forced swimming, (D) to a 2 s foot shock following a 30 s tone for five trials, or (E) to ambush by a mock predator via remote-controlled spider. (F) Heat map and mean ± 95% CI Z-score for recordings obtained from a single animal during the repeated forced swim showing increase Ca2+ signal during the swim session. (G) The mean ± 95% CI Z-score of 10 trials for all animals (n=8) in the dunk assay. (H) Heat map and mean ± 95% CI Z-score for recordings from a single animal during the five shock trials showing increase Ca2+ signal. (I) Mean ± 95% CI Z-score for recordings of five trials for all animals (n=6) in the foot shock assay. (J) Heat map, mean ± 95% CI Z-score (blue), mean ± 95% CI velocity (gold), for recordings obtained from animals (n=9) during the ambush showing a significant increase (***99.9% CI) in Ca2+ signal as the animals flee from the remote-controlled spider with the mean ± 95% confidence interval Z- score of 1 trial (ambush) for all 9 animals. (K) Heat map, mean (±95% CI) Z-score (blue), mean (±95% CI) velocity (gold), for the same mice but ambush in the predator assay. Time frame gated for spontaneous locomotion. Ca2+ signal does not increase significantly during spontaneous locomotion. Mean peak velocity was not significantly different. For Ca2+ signal differences: *=95% CI, **=99% CI, ***=99.9% CI, ns = not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Sections of brains from mice (A) left in the home cage or (B) subjected to 15 min of forced swimming 90 min prior to sacrifice were probed with anti-Fos antibodies (cyan) showed (scale bars 500 μm) (C) a significant (p=0.029) increase in the mean ± SEM number of anti-Fos labeled neurons in brains from mice subjected to force swim (n=4) compared to control mice (n=4). (D) In VLGUT2-Cre mice, Retro-AAV-DIO-mCherry was injected in the POA of mice (n=5) subjected to 15 min forced swim. (E) Region of SuM shown with higher magnification in (F) where SuMVGLUT2+::POA neurons labeled by mCherry show overlap with cells (arrows) labeled by anti-Fos. (Scale bar 100 μm) (G) A significant increase (p=0.016) in the number of VGLUT2 + cells labeled with mCherry and anti-Fos is seen in mice subjected to forced swim. (H) Mice subjected to ten 30 s trials of ‘dunk’ forced swimming. (I) Quantitation of average time mobile for every 30-s trial during ‘dunk’ forced swim.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Heat maps showing velocity for 12 episodes of rapid locomotion from a representative animal during free movement in open field with mean ± 95% CI for the trials. (B) For that same animal, heat maps of Ca2+-dependent signal were analyzed during average peak velocity, showing no change in activity during peak velocity. Representative heat map for a single animal with the mean ± 95% confidence interval of the 12 trials for same animal. (C) Mean ± 95% confidence interval for Z-score of 12 trials for all 13 animals and Boxplot for average Z-score. (D) Cross-correlation analysis shows no correlation between Ca2+ signal from SuMVGLUT2+::POA neurons and spontaneous velocity increases.
+
 To examine additional stressors, we tested a foot shock paradigm (Figure 3D) and a predator ambush assay (Figure 3E). In foot shock assays, VGLUT2-Flp mice (n=6), prepared as above (Figure 3A and B), were subjected to five pseudorandomly spaced trials with a 30- tone preceding a two-second shock. We observed a significant rapid increase in the Ca2+-dependent GCaMP7s signal following the foot shock (99.9% CI; Figure 3H and I ). For the predator ambush, we adapted a previously demonstrated paradigm using a mock mechanical spider attack (Azevedo et al., 2020). In this assay, a remote-controlled mechanical spider was hidden in a box with a swing door. The box was inside a larger walled arena. Mice were able to freely explore the arena, and at a moment when the mouse was in proximity to the box opening, the spider was moved out toward the mouse. The mice fled, often to a corner, stopped, and turned to face the spider (Video 1). In mice (n=9) subjected to the ambush paradigm, we observed a significant (99.9% CI) increase in Ca2+-dependent GCaMP signal at the time of the ambush followed by suppression below the initial baseline (Figure 3J). Populations of neurons in SuM have previously been found to correlate with future movement velocity (Farrell et al., 2021), so we examined if recruitment of SuMVGLUT2+::POA neurons was correlated to periods of spontaneous higher velocity movement. Analyzing data collected prior to the ambush event, we examined if increased velocity, at speeds similar to the fleeing induced by the ambush, was correlated with increased Ca2+-dependent GCaMP signal in SuMVGLUT2+::POA neurons (Figure 3L). We found no correlation (Figure 3K). We further examined the data for a correlation of increased Ca2+-dependent signal in SuMVGLUT2+::POA neurons to movement velocity during open field exploration in a sperate cohort of mice (n=13). Here, we found no evidence for correlation of velocity with Z-score of Ca2+-dependent signal including a cross correlation analysis to account for a potential temporal offset (Figure 3—figure supplement 2). In aggregate, the data support recruitment of SuMVGLUT2+::POA neurons by diverse threatening stressors but not during times of higher velocity spontaneous movement.
 
-## SuMVGLUT2+::POA neurons evoke active coping-like behaviors
+![Video 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-video1.mp4.jpg)
+
+**Video 1.:** Example of a mouse fleeing after being ambushed by a remote-controlled mechanical spider hidden in an enclosure.
+
+### SuMVGLUT2+::POA neurons evoke active coping-like behaviors
 
 To examine how activation of SuMVGLUT2+::POA neurons contributes to responding to threatening stressors, we assessed behavioral changes evoked by photostimulation of SuMVGLUT2+::POA neurons. We injected VGLUT2-Cre or WT (Cre- littermates) mice with Retro-AAV5-DIO-ChR2eYFP in the POA, and an optic fiber was placed over SuM (Figure 4A). We employed a paradigm with a 15-min trial divided into three 5 min periods: pre-stimulation, stimulation at 10 Hz, and post-stimulation. Based on review of videos obtained during the 15-min trials, we observed behaviors that could be classified into nine distinct categories: grooming, immobile, walking, chewing of bedding, rearing, rapid locomotion (movement was limited by the size of the arena), digging (moving bedding toward the tail), treading (moving bedding forward with front paws), and jumping (Figure 4B). A blinded observer scored the behaviors in 10 s intervals for the predominant behavior observed during each interval, and each behavior was assigned a color for visualization. Color coded representation of trials from 16 Cre+ (n=16) and WT (n=16) mice is illustrated (Figure 4B). The behavioral pattern in the pre-stimulation period is similar between the Cre +and WT mice. During the stimulation period, a clear shift in behavior was evident in Cre +mice. Photostimulation induced rearing, treading, digging, rapid locomotion, and jumping. During the post-stimulation period, we observed a new pattern with Cre +mice spending time immobile and grooming. An example of a Cre+ animal is shown in Video 2.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig4-v1.jpg)
 
-**Figure 4.:** VGLUT2+::POA neurons evokes active coping behaviors.(A) Illustration of injections and fiber implant in VGLUT2 +Cre mice and schematic of photostimulation paradigm of 5 min pre, 5 min stimulation, and 5 min post. Behaviors were evaluated during each epoch. (B) For Cre+ (n=16) and Cre- (n=16) mice, the behavior in 10 s bins was scored based on the predominant behavior displayed during each 10 s period for the 15-min trial into grooming, stationary, walking, chewing, rearing, rapid locomotion, digging (moving bedding toward the tail), treading (move beading forward), and jumping. The graphic shows a by-animal scoring of the 15-min trial color-coded for each of the behavior categories. (C) During the stimulation period, Cre+ (n=15) mice show significantly (*p=0.012) greater jumps than Cre- (n=16) mice, and jumping behaviors were not significantly different during pre and post stim periods. (D) Behavior was also scored for time spent moving beading (digging or treading). Cre +mice showed significantly (**p=0.004) greater time engaging in digging/treading behaviors during the stimulation period, and significantly (*p=0.014) less time during the post-stimulation period compared to Cre- mice. (E) Behavior was also scored for time spent engaging in grooming behaviors, and Cre +mice spent significantly (*p=0.016) less time grooming during the stimulation period and significantly (**p=0.005) more time grooming during the post stimulation period compared to Cre- mice. All data plotted as mean ± SEM.Figure 4—source data 1.VGLUT2+::POA neurons.
+**Figure 4.:** (A) Illustration of injections and fiber implant in VGLUT2 +Cre mice and schematic of photostimulation paradigm of 5 min pre, 5 min stimulation, and 5 min post. Behaviors were evaluated during each epoch. (B) For Cre+ (n=16) and Cre- (n=16) mice, the behavior in 10 s bins was scored based on the predominant behavior displayed during each 10 s period for the 15-min trial into grooming, stationary, walking, chewing, rearing, rapid locomotion, digging (moving bedding toward the tail), treading (move beading forward), and jumping. The graphic shows a by-animal scoring of the 15-min trial color-coded for each of the behavior categories. (C) During the stimulation period, Cre+ (n=15) mice show significantly (*p=0.012) greater jumps than Cre- (n=16) mice, and jumping behaviors were not significantly different during pre and post stim periods. (D) Behavior was also scored for time spent moving beading (digging or treading). Cre +mice showed significantly (**p=0.004) greater time engaging in digging/treading behaviors during the stimulation period, and significantly (*p=0.014) less time during the post-stimulation period compared to Cre- mice. (E) Behavior was also scored for time spent engaging in grooming behaviors, and Cre +mice spent significantly (*p=0.016) less time grooming during the stimulation period and significantly (**p=0.005) more time grooming during the post stimulation period compared to Cre- mice. All data plotted as mean ± SEM.
+
+![Video 2.](https://cdn.elifesciences.org/articles/90972/elife-90972-video2.mp4.jpg)
+
+**Video 2.:** Mice show an increase in active coping behaviors (e.g. jumping, digging) during photostimulation of SuMVGLUT2+::POA neurons.
 
 We analyzed behavior, quantifying specific behaviors during each period. Quantification of jumping revealed that Cre +mice (n=16) engaged in significantly (p=0.012) more jumps during the stimulation period compared to WT (n=16) mice (Figure 4C). During the pre- and post-stimulation periods, there was not a significant difference in the number of jumps (pre-stimulation=p > 0.999 and post-stimulation=p > 0.999). We also observed that during the stimulation period the Cre+mice engaged in bouts treading/digging, vigorously moving bedding forwards and backwards, as previously described for defensive burying (De Boer and Koolhaas, 2003). Defensive burying, characterized by moving bedding forward or backwards often in alternating pattern, is evoked by threatening and noxious stimuli, and is a described active stress coping strategy in rodents (De Boer and Koolhaas, 2003; Castro et al., 2016; Reynolds and Berridge, 2001; Richard and Berridge, 2011). We conservatively quantified together the movement of bedding as treading/digging that may include spontaneous digging (Figure 4D) and found no significant (p=0.95) difference during the pre-stimulation period. In the stimulation period, there was a significant (p=0.004) increase in the time spent treading/digging, and, surprisingly, during the post-stimulation period time treading/digging was significantly (p=0.014) decreased in Cre +mice. The variability in behaviors can be attributed to exclusion of one behavior by the other, with individual mice having variability in the predominant behavior displayed during the photostimulation period, but all mice shifted to increased active coping behaviors. The behaviors evoked by photostimulation fit with active coping behaviors seen in the context of stressors. Specifically, escape (jumping, rapid locomotion), defensive burying/treading (digging, pushing beading forward).
 
 We also quantified grooming behaviors in each of the three periods (Figure 4E). During the pre-stimulation period, there was not a significant difference (p>0.999). During the stimulation period, the Cre +mice did not engage in grooming, leading to a significant (p=0.016) decrease in time spent grooming compared to Cre- mice. In the post-stimulation period, Cre +mice showed a significant (p=0.005) increase in time spent grooming compared to Cre- mice. A reasonable interpretation of the rise in grooming post stimulation is that photostimulation evoked a stressed-like state and cessation of photostimulation led to selfcare grooming, as seen following acute stressors (Kalueff and Tuohimaa, 2004; van Erp et al., 1994). In summary, the analysis of behaviors elicited by photostimulation of SuMVGLUT2+::POA neurons without conditioned cues or concomitant stressors demonstrates a dramatic shift in behavior to escape oriented (jumping, rapid locomotion) and threat response behavior, including rearing and defensive burying, during the photostimulation period. In contrast to freezing, the behaviors elicited by activation of SuMVGLUT2+::POA neurons indicate that they may promote active coping strategies.
 
-## Photostimulation of SuMVGLUT2+::POA neurons drives real-time avoidance
+### Photostimulation of SuMVGLUT2+::POA neurons drives real-time avoidance
 
 To examine whether activation of SuMVGLUT2+::POA neurons may contribute to the aversive aspects of threatening stress, we carried out real-time place aversion testing (RTPA) by pairing one side of the chamber with photostimulation of SuMVGLUT2+::POA (Figure 5A) neurons at multiple frequencies (1, 5, 10, and 20 Hz). Photostimulation of SuMVGLUT2+::POA neurons produced significant aversion at all frequencies in Cre+ (n=19) mice compared to Cre- (n=21) littermate control mice, and higher stimulation frequencies evoked greater aversion (p<0.001; Figure 5B and C). Example of Cre +mice with stimulation at 1, 5, and 10 Hz as well as Cre- mice is in Video 3. WT and Cre +mice explored equivalently, with similar number of entries to the stim side (p=0.41; Figure 5D). Cre +mice quickly left the stimulation side, and the average time spent on the stimulation side of the area was significantly lower (p<0.001; Figure 5E). These data indicate, surprisingly, that photostimulation, although aversive, did not generate aversive pairing, as found for other brain areas (Kravitz et al., 2012). To examine the relative aversiveness of SuMVGLUT2+::POA photostimulation, we carried out RTPA experiments using an arena with a dark side and a bright side (Figure 5F inset). We paired photostimulation with the dark side. As expected, Cre- mice show a preference for the dark side of the arena, however, photostimulation of the SuMVGLUT2+::POA neurons yielded significant aversion of Cre+ (n=13) compared to Cre- (n=12) (p<0.001; Figure 5F). Cre +mice spent nearly the entire trial in the brightly lit side, demonstrating photostimulation of SuMVGLUT2+::POA neurons drove avoidance sufficient to overcome a mildly aversive stimulus (bright light).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of injection of Retro-AAV-ChR2eYFP into the POA and placement of a midline optic fiber over SuM. (B) Representative heat maps for Cre +and Cre- mice at baseline (no stim) and 10 Hz photostimulation in two-sided arena with photostimulation associated with one side. (C) Quantification of time spent on stimulation side for Cre+ (n=19) and control Cre- (n=21) mice showing frequency-dependent increase in avoidance of the stimulation side of the area (***p<0.001, ****p<0.0001). (D) Mean ± SEM entrances per min (in 1 min bins) to the during 10 Hz stimulation trials were not significantly (p=0.87) different between Cre+ (n=14) and Cre- (n=13) mice. (E) Mean time spent on the stimulation side for Cre- and Cre +in 1 min bins during 10 Hz stimulation trials was significantly (p<0.0001) lower in Cre +mice. (F) (Inset) Diagram of light/dark arena with photostimulation provided on the dark side of the arena and quantification of time spent on dark (stimulation) side, demonstrating that Cre- (n=12) animals show a baseline preference for the dark side of arena that is overcome by photostimulation with Cre+ (n=13) mice spending significantly (**p=0.002, ***p<0.001, ****p<0.0001) less time on the stimulation side. (G) Representative heat map of Cre- and Cre +during 10 Hz photostimulation in open field test. (H) In the open field test, time spent in center and perimeter were not significantly different (p=0.19) between Cre+ (n=18) and Cre- (n=17) during 10 Hz photostimulation. (I) Distance traveled during open field testing was significantly (p<0.001) increased in Cre +compared to Cre- mice. (J) Schematic of real time light/dark choice testing with stimulation provided at 10 Hz throughout the arena. (K) Both Cre+ (n=8) and Cre- (n=9) mice showed a preference for the dark portion of the arena but were not significantly (p=0.9) different. (L) The total distance traveled by Cre +mice were significantly (p=0.003) greater than Cre- mice. All data plotted as mean ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of viral injection into VGAT-Cre mice in SuM. (B) VGAT +neurons labeled and outline of implanted fiber. (C) Real-time arena showing the pair of photostimulation on one side of the arena. (D) Photostimulation at 10 Hz did not drive a significant place preference (p=0.67). (eYFP (control) n=26 and ChR2=26). All data plotted as mean ± SEM. (E) Representative path traces of VGAT-Cre mice with ChR2 or eYFP (control) in open field testing. (F) No significant differences in center (p=0.254) or perimeter (p=0.287) time when comparing the ChR2eYFP expressing to controls VGAT-Cre mice. (G) Chr2eYFP expressing mice traveled slightly but significantly (p=0.034) less distance compered to control. All data plotted as mean ± SEM.
+
+![Video 3.](https://cdn.elifesciences.org/articles/90972/elife-90972-video3.mp4.jpg)
+
+**Video 3.:** Mice avoid the photostimulation side with higher frequencies showing greater aversion.
+
 Reports have described multiple populations of neurons in supramammillary including populations that project to the dentate gyrus of the hippocampus that release both GABA and glutamate. Our anatomic studies indicated that SuMVGLUT2+::POA neurons do not project to the dentate gyrus (Figure 2) and are not GABAergic (Figure 1—figure supplement 1G–L). Thus, SuMVGLUT2+::POA neurons are not part of either a GABAergic or dual transmitter population. To examine if GABAergic neurons in SuM (SuMVGAT+) can mediate real-time place aversion or preference, we injected VGAT-Cre mice with AAV to express ChR2 (n=26) or control (n=26) in SuM and carried out real-time place aversion testing. Photostimulation at 10 Hz yielded no significant aversion or preference compared to baseline (p=0.838) (Figure 5—figure supplement 1A–D). This is in contrast to the robust aversion caused by photostimulation of SuMVGLUT2+::POA neurons.
 
-## Photoactivation of SuMVGLUT2+::POA neurons does not cause anxiogenic-like behavior
+### Photoactivation of SuMVGLUT2+::POA neurons does not cause anxiogenic-like behavior
 
 Threat can induce anxiety-like, risk aversion behavioral states (McCall et al., 2015; Felix-Ortiz et al., 2013; Jakovcevski et al., 2011). To test whether activity of SuMVGLUT2+::POA neurons contributes to anxiety-like behaviors, we used two established assays for anxiety-like behavior: open field and light-dark exploration (Bailey, 2009; Heredia et al., 2014; Prut and Belzung, 2003; Chaouloff et al., 1997). During open field testing, 10 Hz photostimulation was applied to SuMVGLUT2+::POA neurons. We quantified the time spent in the perimeter (outer 50%) vs. the center (inner 50%) of the arena and found VGLUT2-Cre+ (n=18) and WT (n=17) mice did not significantly differ (center p=0.17 and perimeter p=0.19; Figure 5G and H). The total distance traveled was significantly (p<0.001) increased in in Cre +mice compared to WT mice (Figure 5I). Increased distance traveled in some mice was not surprising, because prior testing (Figure 4) revealed the mice engaged in escape behaviors during photostimulation. We observed behaviors including jumping during open field testing as well. We also carried out open field testing using VGAT-Cre mice to selectively activate SuMVGAT+ neurons and observed no significant effect on time in center (p=0.254) or perimeter (p=0.287) (Figure 5—figure supplement 1F), but mice expressing ChR2eYFP displayed a small but significant (p=0.035) decrease in distance traveled (Figure 5—figure supplement 1G). We tested if photostimulation of SuMVGLUT2+::POA neurons would increase preference for the dark area, a potential sign of elevated anxiety (Figure 5J). We found that photostimulation of SuMVGLUT2+::POA neurons did not significantly alter preference (p=0.68; Figure 5K) in VGLUT2-Cre+mice (n=8) compared to WT (n=9). The activation of SuMVGLUT2+::POA neurons evoked escape behaviors in open field testing, as seen in Figure 4; similarly, a significant increase in total distance was detected during light-dark exploration assay in Cre +compared to WT (p=0.003; Figure 5L). The findings we obtained in open field and light-dark exploration testing do not support a role for SuMVGLUT2+::POA neurons in driving anxiety-like behaviors.
 
-## SuMVGLUT2+::POA neurons can drive instrumental action-outcome behavior
+### SuMVGLUT2+::POA neurons can drive instrumental action-outcome behavior
 
 Current theoretical frameworks for examining threat responses divide behaviors into two broad categories: innate (fixed) and instrumental (action-outcome; LeDoux and Daw, 2018). Additionally, stress responses can be divided into active vs passive actions. Behaviors in these separable categories are mediated by distinct neural circuits (LeDoux and Daw, 2018; Fadok et al., 2017). For example, areas involved in responding to specific threatening stimuli (looming threat) drive an innate fixed behavior repertoire (LeDoux and Gorman, 2001). Photostimulation of SuMVGLUT2+::POA neurons evoked multiple active-like behaviors in response to threatening or noxious stimuli (Figure 4). To test if SuMVGLUT2+::POA neurons can promote flexible repertoires of behavior including instrumental tasks, as opposed to only innate behaviors (ex. fleeing), we used an operant negative reinforcement paradigm (Figure 6A–B). Because our results show photostimulation of SuMVGLUT2+::POA neurons is aversive, photostimulation of SuMVGLUT2+::POA neurons could be used as a negative reinforcer in a negative reinforcement paradigm. We employed a paradigm using two nose poke ports, one active and one inactive. SuMVGLUT2+::POA neurons were photostimulated at 10 Hz during a 10-min trial. Activation of the active port by a nose poke triggered a 10 s pause in photostimulation of SuMVGLUT2+::POA neurons and turned on a house light for 10 s (Figure 6A and B). Following this 10 s pause, the house light switched off and photostimulation resumed until the subsequent activation of the active port. We tested animals for 4 consecutive days with the 10 min trials without prior training. Importantly, performance of the task had to be completed during photostimulation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of injection and implant in VGLUT2 +Cre mice and paradigm of testing in 10 min trials with 4 days before a progressive ratio (PR) trial on day 5. (B) Illustration of the testing paradigm and set up. 10 Hz photostimulation was applied during the trials. Activation of the active port triggered the house light and paused stimulation for 10 s. Also shown is the progressive ratio used with number of required port activations per reward on vertical axis and reward number on the horizontal. (C) Cre +mice (n=11) activated the active port triggering significantly (****p<0.0001) more pauses in stimulation than Cre- mice (n=11) mice on all 4 days of testing. (D) Cre +mice activated the port significantly (****p<0.0001, ***p<0.001) more than the Cre- mice on all four trials. (E) The time to first activation of the active port was significantly (*p=0.046) different during the first trial, and Cre +mice activated the active port significantly (**p<0.01, **p<0.01, **p=0.034) faster on subsequent trials. (F) On the fifth day after four 10-min trials, mice were tested for 30 min using a progressive ratio. Cre +performed significantly (****p<0.001) more active port activations than Cre- mice and activated the inactive port significantly more (**p=0.001) times. Cre +mice also triggered significantly (****p<0.001) more pauses in photostimulation than Cre- mice. (G) Individual data for a representative (n=7) cohort of Cre +mice showing cumulative active port activations as a function of time during the progressive ratio test show on-going engagement of the active port throughout the 30 min trial. (H) The cumulative pauses in photostimulation (rewards) earned as a function of time during the progressive ratio trial are shown for individual Cre +mice. Mice earned between 7 and 11 pause rewards during the trial. All data plotted as mean ± SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cre +mice activated the active port significantly more (**p=0.001) compared to the inactive port. (B) In Cre- mice, no significant change in the number of port activations of both the active and inactive ports. All data plotted as mean ± SEM.
 
 We hypothesized that if stimulation of SuMVGLUT2+::POA evokes fixed innate defensive behaviors, or simply promotes high amounts of locomotion, then performance of an operant task (an action-outcome behavior) with active and inactive ports would be impaired because innate defensive behaviors would conflict with performance of the operant task. Importantly, results obtained can help differentiate general elevation in locomotor activity from directed coping behavior. Analyses of port activations during the 10-min trials revealed that Cre +mice (n=11) paused the photostimulation (reward) significantly more on all 4 days of testing compared to Cre- littermate (n=11) mice (InteractionGenotype x Day p<0.001; Day 1 p<0.001; Day 2 p<0.001; Day 3 p<0.001; Day 4 p<0.001; Figure 6C). The number of 10 s pauses approached the maximum, 60 possible in a 10 min period. Cre +mice engaged the active port significantly more than Cre- mice (p<0.001; Figure 6D) and this effect was consistent for every training session (Day 1 p<0.0001 = ; Day 2 p<0.0001; Day 3 p<0.0001; Day 4 p=0.0011). There was a slight difference in baseline performance of the task. The time to the first engagement of the active port was significantly different for Cre +compared to Cre- mice during the first test trial (p=0.046). During the three subsequent tests, Cre +mice were significantly faster to engage the active port after the start of the trial compared to Cre- mice (Day 2 p=0.009; Day 3 p=0.003; Day 4 p=0.034; Figure 6E). Cre +mice engaged the active port significantly more than the inactive port on all test days (p<0.001; Figure 6—figure supplement 1A). There was not a significant difference in Cre +and Cre- mice for engagement of the inactive port on any day (Cre +p = 0.30; Cre- p=0.055; Figure 6—figure supplement 1A–B).Furthermore, Cre +mice were significantly faster in the second through fourth trials at engaging the active port compared the first trial (Day 1 vs Day 2 p=0.034; vs Day 3 p=0.021; vs Day 4 p=0.027; Figure 6E). Suggesting that mice became more proficient during subsequent trials.
 
 To examine effort-related motivation, we employed a 30-min test using a progressive ratio requiring an exponentially increasing number of active port activations to trigger a pause in the photostimulation on the fifth day of operant behavior testing (Figure 6B; Parker et al., 2019). During trials using a progressive ratio, Cre +mice activated the active port and paused stimulation significantly (p<0.001) more times than Cre- mice (Figure 6F). Examination of individual cumulative active port activation data showed Cre +mice continued to engage the active port throughout progressive ratio trials despite the increasing work required to generate each pause in photostimulation. No breakpoint was observed during the trial (Figure 6G and H). This finding indicates that activation of SuMVGLUT2+::POA neurons remains salient and motivating through the tested period and that photostimulation of SuMVGLUT2+::POA does not evoke behaviors precluding completion of the task. Examination of reward behavioral epochs for representative animals shows that for the lowest total number of rewards earned (green dots), the next pause required 20 activations of the active port, and for the highest (red dots), the next pause required 50 activations of the active port. Taken together, results from the instrumental reinforcement tasks demonstrate that activation of SuMVGLUT2+::POA neurons does not solely evoke innate stereotyped behaviors and can drive active coping in the form of instrumental behaviors.
 
-## SuMVGLUT2+::POA neurons are recruited during active coping behaviors during forced swim
+### SuMVGLUT2+::POA neurons are recruited during active coping behaviors during forced swim
 
 The forced swim test is increasingly established as an assay of coping strategy with passive and active components, and we used forced swim testing in conjunction with fiber photometry to examine if SuMVGLUT2+::POA neurons are recruited differentially during active (mobile) or passive (immobile) behaviors (Costa et al., 2013; Commons et al., 2017). During a first 15-min trial of forced swimming, mice shifted from active escape behaviors (wall climbing, robust swimming) to passive (immobile floating) behaviors. We carried out experiments using fiber photometry paired with automated computer-based behavior analysis (Hu et al., 2023). The automated behavior scoring enabled high temporal resolution analysis of behaviors (Video 4) and each frame of the video was coded for the classified behavior and plotted as a color-coded point. We observed four types of behavior during forced swimming: climbing, swimming, hindpaw swimming, and immobile floating, and we trained a model to identify each. Analysis of behavior showed that after the first minutes of the trial, mice shifted from swimming and climbing to immobile floating with intermittent swinging or hindpaw swimming. We analyzed fiber photometry recordings to examine whether recruitment of SuMVGLUT2+::POA neurons changed with this shift to more passive behaviors. As shown in the representative trace (Figure 7A), the Ca2+-dependent signal, but not the isosbestic signal, markedly decreased at the time the shift in behavior was occurring. To combine behavioral data, we assigned numerical values, one through four, to each behavior: climbing (4), swimming (3), hindpaw swimming (2), and immobile floating (1). The mean was plotted as a heat map (red higher values to blue lower values) to be compared to time locked fiber photometry data (Figure 7B). Examining the timeframe around the behavioral shift in each animal, we found that as behavior shifted from active coping (climbing, swimming) to more passive strategies and greater immobility, the Ca2+ signal significantly (95% CI) declined (Figure 7B). Examining the data after this initial transition, we observed that many elevations in the Z-score were accompanied by changes in behavior to swimming or hindpaw swimming (Figure 7A). To further examine this possible correlation, we examined the time frame around transition to hindpaw swimming for changes in Ca2+ signal. In a 20-s window centered on the onset of hindpaw swimming, we found that hindpaw swimming was accompanied by a rise in the Ca2+-dependent signal across multiple events within a trial (Figure 7C). A similar analysis across events in multiple animals demonstrated a significant (99.9% CI) rise in the Ca2+-dependent signal from SuMVGLUT2+::POA neurons during the shift from immobility to hindpaw swimming or swimming behaviors (Figure 7D). Time series analysis of 20 s epochs centered on random time intervals did not reveal any rise in the Ca2+-dependent signal (Figure 7E). These data indicate that recruitment of SuMVGLUT2+::POA neurons fluctuates with changes in coping strategy during a forced swim assay with decreased engagement of this circuit during times of immobility.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig7-v1.jpg)
 
-**Figure 7.:** VGLUT2+::POA neurons are recruited during active coping, and activation is sufficient drive a switch to active coping.(A) Color-coded per video frame (dot color) behavior combined with normalized Ca2+-dependent and isosbestic fiber photometry signals. Scoring and analysis of climbing, swimming, hindpaw swimming, and immobility were completed using deep learning-based classification and quantification (LabGym) of recorded behavior. Inset shows injection, implants, and behavioral assay. Box highlights the time frame shown in B. (B) Heat maps for recordings obtained from mice (n=9) during forced swim, averaged color-coded behaviors, and mean ± SEM Z-score of Ca2+-dependent signal for 2-min period around behavioral shift from climbing and swimming to hindpaw swimming and immobility, showing significant (*95% CI) decline in the Ca2+-dependent signal. (C) Representative heat map, averaged behavior, and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around onset of hindpaw swim from a representative animal. (D) Representative heat map and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around onset of hindpaw swim from for events from nine mice. Engaging in hindpaw swim correlates with a brief, significant (***99.9% CI) increase in Ca2+ signal. (E) Representative heat map and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around random time points. (F) Schematic of injection and implant in VGLUT2-Cre or VGAT-Cre mice. (G) Illustration of testing paradigm on second forced swim test following 15 min swim on first day. (H) The average time spent immobile during the pre-stimulation period was not significantly (p>0.999) different. During 10 Hz photostimulation VGLUT2-Cre+mice engaged in vigorous swimming and the time spent immobile was significantly (****=p < 0.001) less than Cre- mice. In the post-stimulation period, the time spent immobile remained significantly (*=0.047) lower in Cre +mice compared to Cre-. (I) In VGAT-Cre + mice expressing ChR2 (n=11), the average time spent immobile during the pre-stimulation period was not significantly (p=0.218) different compared to eYFP controls. Photostimulation did not significantly increase time immobile (p>0.999). However, there was a significant (**p=0.001) decrease in the time spent immobile compared to the post-stimulation period. For Ca2+ signal differences: *=95% CI, **=99% CI, ***=99.9% CI, ns = not significant. All data plotted as mean ± SEM unless otherwise noted.Figure 7—source data 1.Figure 7—source data 2.
+**Figure 7.:** (A) Color-coded per video frame (dot color) behavior combined with normalized Ca2+-dependent and isosbestic fiber photometry signals. Scoring and analysis of climbing, swimming, hindpaw swimming, and immobility were completed using deep learning-based classification and quantification (LabGym) of recorded behavior. Inset shows injection, implants, and behavioral assay. Box highlights the time frame shown in B. (B) Heat maps for recordings obtained from mice (n=9) during forced swim, averaged color-coded behaviors, and mean ± SEM Z-score of Ca2+-dependent signal for 2-min period around behavioral shift from climbing and swimming to hindpaw swimming and immobility, showing significant (*95% CI) decline in the Ca2+-dependent signal. (C) Representative heat map, averaged behavior, and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around onset of hindpaw swim from a representative animal. (D) Representative heat map and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around onset of hindpaw swim from for events from nine mice. Engaging in hindpaw swim correlates with a brief, significant (***99.9% CI) increase in Ca2+ signal. (E) Representative heat map and mean ± SEM Z-score of Ca2+-dependent signal for 20 s window around random time points. (F) Schematic of injection and implant in VGLUT2-Cre or VGAT-Cre mice. (G) Illustration of testing paradigm on second forced swim test following 15 min swim on first day. (H) The average time spent immobile during the pre-stimulation period was not significantly (p>0.999) different. During 10 Hz photostimulation VGLUT2-Cre+mice engaged in vigorous swimming and the time spent immobile was significantly (****=p < 0.001) less than Cre- mice. In the post-stimulation period, the time spent immobile remained significantly (*=0.047) lower in Cre +mice compared to Cre-. (I) In VGAT-Cre + mice expressing ChR2 (n=11), the average time spent immobile during the pre-stimulation period was not significantly (p=0.218) different compared to eYFP controls. Photostimulation did not significantly increase time immobile (p>0.999). However, there was a significant (**p=0.001) decrease in the time spent immobile compared to the post-stimulation period. For Ca2+ signal differences: *=95% CI, **=99% CI, ***=99.9% CI, ns = not significant. All data plotted as mean ± SEM unless otherwise noted.
 
-## SuMVGLUT2+::POA neurons promote active coping during forced swim test
+![Video 4.](https://cdn.elifesciences.org/articles/90972/elife-90972-video4.mp4.jpg)
+
+**Video 4.:** Climbing is shown in red, floating in blue, hindpaw swimming in green, and swimming in yellow.
+
+### SuMVGLUT2+::POA neurons promote active coping during forced swim test
 
 We found that SuMVGLUT2+::POA neurons are activated by acute stressors (Figure 3) and are recruited during times of greater active coping behaviors (Figure 7). To test if SuMVGLUT2+::POA neurons can drive a switch in coping strategy in the context of ongoing stressors, we used a two-day forced swim stress test (Commons et al., 2017; Seo et al., 2019). We tested animals during the second day, when immobile floating is the predominant behavior. As in previous experiments, we used VGLUT2-Cre (Cre+) or WT (Cre-) mice injected in the POA bilaterally with Retro-AVV-DIO-ChR2eYFP. On day 1, we subjected mice to 15 min of forced swim. On the subsequent day, we repeated the forced swim for 6 min divided into three periods: pre-stimulation, stimulation at 10 Hz, and post-stimulation (Figure 7F). Trials on the second day were recorded and scored by a blinded observer for time spent immobile in each 2 min period. An example of a Cre +mouse with stimulation 10 Hz is shown in Video 5. During the pre-stimulation period, there was not a significantly (p>0.999) different amount of time immobile between Cre+ (n=9) and Cre- (n=11) mice. During the stimulation period, Cre +mice began swimming and attempting to climb the wall of the circular swim arena, reflected by significantly (p<0.001) less time immobile (Figure 7H). Interestingly, in the post stimulation phase, the difference in time spent immobile between Cre +can WT mice decreased but remained significantly (p=0.047) different. These results indicate that in the context of an ongoing stressor, activation of SuMVGLUT2+::POA neurons is sufficient to trigger a change in coping strategy from largely passive (floating) to active (swimming, climbing). The persistent effect of the acute activation into the poststimulation phase suggests that activation of SuMVGLUT2+::POA neurons may shift how the stressor is processed or approached.
 
+![Video 5.](https://cdn.elifesciences.org/articles/90972/elife-90972-video5.mp4.jpg)
+
 We next examined the effect of 10 Hz photostimulation of SuMVGAT neurons on coping strategy using the same 2-day swim paradigm. VGAT-Cre mice were injected in the SuM to express ChR2eYFP (n=10) or control (eYFP) (n=11), and a fiber optic was placed over SuM (Figure 7F). Quantification of behavior revealed no significant difference in time spent immobile during the pre-stimulation (p=0.218) or the stimulation (p>0.999) periods. Surprisingly, in the post-stimulation period, we observed a dramatic shift in behavior, marked by a significant (p=0.047) decrease in time spent immobile (Figure 7I). The amplitude of change in behavior was similar to what we observed during the stimulation phase of the experiments on SuMVGLUT2+::POA neurons (Figure 7H). One interpretation of these data is that release of sustained local inhibition leads to rebound activity of output SuMVGLUT2+::POA neurons.
 
-## Suppression of SuMVGLUT2+::POA neurons is required for feeding
+### Suppression of SuMVGLUT2+::POA neurons is required for feeding
 
 Feeding and responding to threats are conflicting actions, and SuMVGLUT2+::POA neurons may play a role in switching between behavioral paradigms (e.g. feeding vs escape). We sought to examine SuMVGLUT2+::POA neuron activity in relation to feeding using fiber-photometry-based GCaMP recordings. To promote differential drive for food, mice were given ad lib access to food (fed condition) or food deprivation for 24 hours, and on testing day, were presented with a chow pellet, while Ca2+-dependent GCaMP fluorescence and isosbestic signals were recorded. In the fed state, mice spent significantly less time interacting with the food (p<0.001; Figure 8C) and ate significantly less (p<0.001; Figure 8D) compared to food deprived state. We analyzed the Ca2+-dependent and isosbestic signals around presentation of food to fed and food deprived mice. In the food deprived state, mice spent more time with the food and ate more food (Figure 8E and F). At the time of food presentation, the Ca2+-dependent signal decreased significantly (99.9% CI) but not the isosbestic signal. The change in the Ca2+-dependent signal was larger and more sustained when the animals spent longer interacting with the food (Figure 8E and F). Together, the data support suppression of SuMVGLUT2+::POA neural activity during consummatory behavior with greater consumption associated with enhanced suppression.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/90972/elife-90972-fig8-v1.jpg)
 
-**Figure 8.:** VGLUT2+::POA neuron activity, and SuMVGLUT2+::POA neuron blocks food consumption.(A) Schematic of injections in VGLUT2-Flp mice with AAV-DIO-GCaMP7s in SuM and Retro-AAV-fDIO-Cre in the POA and a fiber placed over SuM. (B) Mice were given ad lib food access or food deprived for 24 hr prior to testing. After being placed in the arena and allowed to habituate, mice were given a 20 min trial divided into 5 min of baseline and 15 min after a chow pellet was added to the arena. (C) Food deprived mice (n=9) spent significantly (p<0.001) more time interacting with the food pellet and (D) ate significantly (p<0.001) more than in the fed state. (E) Heat map and mean ± SEM Z-scores for Ca2+-dependent and isosbestic signals for recordings obtained from 9 animals show a small drop in (E) fed mice state (*95% CI) compared to a sharp decrease in Ca2+ activity after the introduction of the food pellet following addition in (F) food deprivation (***99.9% CI). (G) Mice were fasted for 24 hr prior to testing, and the schematized 20 min paradigm was used. Following food deprivation, animals were given access to a chow pellet. The trial was divided into 5 min pre- and post-stimulation periods, with a 10 min period of stimulation. (H) The time spent interacting with the food was quantified for each period. Cre+ (n=16) and Cre- (n=17) mice both rapidly engaged with the food pellet, and the average time spent interacting was not significantly (p=0.47) different. During the stimulation period and the post-stimulation period, the average time interacting with the food was significantly (p=0.0006, p=0.0002) lower in Cre +mice compared to Cre- mice. (I) The food eaten during the total trial was calculated based on pellet weights, and, on average, Cre+ (n=16) mice ate significantly (p=0.001) less food during the trial than Cre- mice (n=17). (**p=0.001, ***p<0.001, ****p<0.0001). For Ca2+ signal differences: *=95% CI, **=99% CI, ***=99.9% CI, ns = not significant. All data plotted as mean ± SEM unless otherwise noted.Figure 8—source data 1.Figure 8C and D.Figure 8—source data 2.Figure 8E and F.Figure 8—source data 3.Figure 8H and I.
+**Figure 8.:** (A) Schematic of injections in VGLUT2-Flp mice with AAV-DIO-GCaMP7s in SuM and Retro-AAV-fDIO-Cre in the POA and a fiber placed over SuM. (B) Mice were given ad lib food access or food deprived for 24 hr prior to testing. After being placed in the arena and allowed to habituate, mice were given a 20 min trial divided into 5 min of baseline and 15 min after a chow pellet was added to the arena. (C) Food deprived mice (n=9) spent significantly (p<0.001) more time interacting with the food pellet and (D) ate significantly (p<0.001) more than in the fed state. (E) Heat map and mean ± SEM Z-scores for Ca2+-dependent and isosbestic signals for recordings obtained from 9 animals show a small drop in (E) fed mice state (*95% CI) compared to a sharp decrease in Ca2+ activity after the introduction of the food pellet following addition in (F) food deprivation (***99.9% CI). (G) Mice were fasted for 24 hr prior to testing, and the schematized 20 min paradigm was used. Following food deprivation, animals were given access to a chow pellet. The trial was divided into 5 min pre- and post-stimulation periods, with a 10 min period of stimulation. (H) The time spent interacting with the food was quantified for each period. Cre+ (n=16) and Cre- (n=17) mice both rapidly engaged with the food pellet, and the average time spent interacting was not significantly (p=0.47) different. During the stimulation period and the post-stimulation period, the average time interacting with the food was significantly (p=0.0006, p=0.0002) lower in Cre +mice compared to Cre- mice. (I) The food eaten during the total trial was calculated based on pellet weights, and, on average, Cre+ (n=16) mice ate significantly (p=0.001) less food during the trial than Cre- mice (n=17). (**p=0.001, ***p<0.001, ****p<0.0001). For Ca2+ signal differences: *=95% CI, **=99% CI, ***=99.9% CI, ns = not significant. All data plotted as mean ± SEM unless otherwise noted.
 
 To examine whether activation of SuMVGLUT2+::POA neurons disrupted consummatory behavior, we tested the impact of photostimulation on feeding behavior in food deprived mice. Using VGLUT2-Cre (Cre+) or WT (Cre- littermates) mice injected with Retro-AAV2-DIO-ChR2eYFP into the POA and implanted with a fiber optic midline over SuM, we examined how feeding behaviors in food deprived mice were altered by 10 Hz photostimulation of SuMVGLUT2+::POA neurons (Figure 8G–I). We used trials lasting 20 min with unrestricted access to food added at the start of the trial. Each trial was divided into three periods: a 5 min pre-simulation period, 10 min stimulation period, and a 5 min post-stimulation period. Trials were recorded and scored for time spent interacting with the food pellet. During the pre-stimulation period, Cre+ (n=16) and Cre- (n=17) mice spent interacting with the food was not significantly different (p=0.47). Upon the introduction of photostimulation, the Cre +mice stopped eating and interacting with the food. During the photostimulation period, Cre +mice spent significantly less time interacting with the food compared to Cre- mice (p<0.001). Surprisingly, the decrease in time spent interacting with food continued into the post-stimulation phase, where Cre +mice continued to interact with the food significantly less than Cre- mice (p<0.001; Figure 8H). Reflecting the decrease in time spent with the food, Cre +mice consumed significantly less food during the 20 min trial than Cre- mice (p=0.001; Figure 8I). These results indicate that SuMVGLUT2+::POA neurons can redirect behavior away from consumption, and suppression of SuMVGLUT2+::POA neurons is required for feeding, even in a food deprived state. Ethologically, animals must choose rapidly between responding to threats and feeding when foraging. The findings here implicate this pathway in control of switching between these behaviors.
 
@@ -139,41 +201,305 @@ In conclusion, SuMVGLUT2+::POA neurons arborize to multiple areas involved in st
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Slc17a6tm2(cre)Lowl/J, C57BL/6;FVB;129S6)</td>
+      <td>Slc17a6tm2(cre)Lowl/J (VGLUT2-Cre)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:016963</td>
+      <td>Males and females</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B6;129S-Slc17a6tm1.1(flpo)Hze/J, C57BL/6 J)</td>
+      <td>B6;129S-Slc17a6tm1.1(flpo)Hze/J (VGLUT2-Flp)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX: 030212</td>
+      <td>Males and females</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, C57BL/6 J)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J(Ai14)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX: 007914</td>
+      <td>Males and females</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B6J.129S6(FVB)-Slc32a1tm2(cre)Lowl/MwarJ, C57BL/6;FVB;129S6)</td>
+      <td>B6J.129S6(FVB)-Slc32a1tm2(cre)Lowl/MwarJ (VGAT-Cre)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX: 028862</td>
+      <td>Males and females</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C57BL/6 J,C57BL/6 J)</td>
+      <td>C57BL/6 J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX: 000664</td>
+      <td>Males and females</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat anti-Rabbit IgG (Goat Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11008</td>
+      <td>IHC (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-c-Fos (Ser32) (D82C12) XP (Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5348</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-EYFP(2.5×1013 vg/ml)</td>
+      <td>Washington University Hope Center Viral Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-Retro-DIO-ChR2-eYFP (2.8×1012 vg/ml)</td>
+      <td>Washington University Hope Center Viral Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-retro-FLEX-tdTomato (7×1012 vg/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_ 28306-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-DIO-ChR2-eYFP (1.4×1013 vg/ml)</td>
+      <td>Washington University Hope Center Viral Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-Retro-EF1a-fDIO-cre (7×1012 vg/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_ 121675-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-Nuc-flox(mCherry)-EGFP (5.7×1012 vg/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_112677-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Retro-AAV2-EF1a-Nuc-flox(mCherry)-EGFP (7×10¹² vg/mL)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_ 112677-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-retro-EF1a-DIO-eYFP (3×1013 vg/ml)</td>
+      <td>Washington University Hope Center Viral Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-retro-EF1a-Flpo (1.02×1013 GC/mL or 7×1012 vg/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_ 55637-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-EF1a-fDIO-cre (2.5×1013 GC/mL or 1×1013 vg/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_121675-AAV9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Retro-AAV2-EF1a-Cre (2.1×10^13 GC/mL)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_55636-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9-syn-FLEX-GCaMP7s-WPRE (1.2×1013 GC/ml)</td>
+      <td>Addgene</td>
+      <td>RRID: Addgene_104487-AAV9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-EF1a-DIO-eYFP (1.8x1013 vg/ml)</td>
+      <td>Washington University Hope Center Viral Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2 retro-Ef1a-DIO-mCherry 4.0×1012 vg/ml</td>
+      <td>University of Carolina Vector Core</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4% paraformaldehyde</td>
+      <td>J.T. Baker, Avantor</td>
+      <td>S898-09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat Serum</td>
+      <td>Sigma Aldrich</td>
+      <td>G9023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bonsai</td>
+      <td>https://bonsai-rx.org/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision</td>
+      <td>Noldus</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Labgym</td>
+      <td>https://github.com/umyelab/LabGym; Hu et al., 2023; Satpathy et al., 2024</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>https://github.com/DeepLabCut/DeepLabCut; Mathis et al., 2018; Nath et al., 2019; DeepLabCut, 2024</td>
+      <td>N/A</td>
+      <td>Version 2.2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield Hardset Antifade Mounting Medium with DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# NC9029229</td>
+      <td>Mounting medium with DAPI for fluorescence microscopy.</td>
+    </tr>
+  </tbody>
+</table>
+
+_For further information regarding data, reagents and resources, contact Aaron Norris, norrisa@wustl.edu._
+
+### Experimental model and subject details
 
 Adult (25–35 g, at least 8 weeks of age upon experimental use) male and female VGLUT-Cre (RRID: IMSR_JAX:016963), VGLUT2-Flp (RRID: IMSR_JAX: 030212), Ai14 (RRID: IMSR_JAX: 007908), VGAT-Cre (RRID: IMSR_ JAX: 028862) and C57BL/6 J (RRID: IMSR_JAX: 000664) mice (species Mus musculus) were group housed (no more than five littermates per cage) in a 12 hr:12 hr light:dark cycle room with food and water ad libitum (Vong et al., 2011). Cre +and Cre- littermates were used in the experiments unless otherwise noted. The Washington University Animal Care and Use Committee approved all procedures which adhered to NIH guidelines.
 
 All data available in manuscript and supporting files.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Injections and implantations were done as described previously (Norris et al., 2021). Briefly, in an induction chamber, mice were anesthetized (4% isoflurane) before being placed in a stereotaxic frame (Kopf Instruments). Anesthesia was maintained with 2% isoflurane. Mice were then injected unilaterally or bilaterally, depending on the combination of virus(es) used and brain regions injected. A blunt needle Neuros Syringe (65457–01, Hamilton Con.) and syringe pump (World Precision Instruments) were used to perform the injection schemes below. After surgery, a warmed recovery chamber housed the animal while it recovered from anesthesia before being returned to its home cage.
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain Region /Coordinates</th>
+      <th>Virus Volume</th>
+      <th>Virus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SuM(AP –2.7–2.85, ML +0.05, DV –4.3–4.5)</td>
+      <td>50–300 nl</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-EYFPAAV2-retro-DIO-ChR2-eYFPAAV5-EF1a-Nuc-flox(mCherry)-EGFPAAV9-EF1a-fDIO-creAAV9-syn-FLEX-GCaMP7s-WPREAAV5-EF1a-DIO-eYFP</td>
+    </tr>
+    <tr>
+      <td>POA, bilateral(AP +0.45, ML ±0.5, DV –5.35)</td>
+      <td>50–150 nl</td>
+      <td>AAV2-retro-EF1a-fDIO-creRetro-AAV2-EF1a-Nuc-flox(mCherry)-EGFPAAV2-retro-EF1a-DIO-eYFPAAV2-retro-EF1a-FlpoAAV2 retro-Ef1a-DIO-mCherry</td>
+    </tr>
+    <tr>
+      <td>Septum(AP +0.9, ML +0.3, DV –3.5)</td>
+      <td>100 nl</td>
+      <td>AAV2-retro-FLEX-tdTomato</td>
+    </tr>
+    <tr>
+      <td>LPAG, unilateral(AP –4.65, ML +0.6, DV –2.85)</td>
+      <td>100 nl</td>
+      <td>AAV2-retro-FLEX-tdTomato</td>
+    </tr>
+    <tr>
+      <td>Acb, unilateral,(AP +1.4,+0.6 ML, DV –4.75)</td>
+      <td>100 nl</td>
+      <td>AAV2-retro-EF1a-DIO-eYFP</td>
+    </tr>
+    <tr>
+      <td>PVT, unilateral,(AP –1.5, ML 0.0, DV –2.85)</td>
+      <td>100 nl</td>
+      <td>AAV2-retro-EF1a-DIO-eYFP</td>
+    </tr>
+  </tbody>
+</table>
 
 Injections were made at a rate of 50 nl/min, with the injection needle being withdrawn 5 min after the end of the infusion. Fiber optics for photostimulation or optical fibers for fiber photometry were implanted after injections for all behavioral experiments.
 
 Fiber optic implants for photostimulation were fabricated as previously described using 200 μm glass fibers and implanted midline over SuM (Norris et al., 2021; Sparta et al., 2011). For implantation, the skull was cleaned and etched with OptiBond (Kerr) and the fiber was cemented to the skull with Tetric N-Flow (Ivoclar Vivadent). Blue light was used to cure and harden cement. Mice were allowed to recover for at least 7 days before the start of behavioral experiments. The same process was used for implantation for fiber photometry fibers, which were purchased from Neurophotometrics and trimmed to length.
 
-## Anatomical tracing
+### Anatomical tracing
 
 For anterograde viral tracing experiments, virus was injected at least 6 weeks prior to transcardial perfusions with 4% paraformaldehyde to allow for anterograde transport of the fluorophore. AAV5-EF1a-DIO-hChR2eYFP or AAV5-EF1a-DIO-eYFP were used. Alternatively, to label only SuMVGLUT2+::POA neurons for anterograde tracing, Retro-AAV2-DIO-eYFP or Retro-DIO-ChR21eYFP was injected into the POA with AAV-fDIO-Cre injected in the SuM. A minimum of 6 weeks was allowed prior to sacrifice, harvesting or brains, and sectioning (30 μM). Serial 30 μM sections approximately 60 μM apart were examined. For retrograde studies, viruses were injected (see figure legends and text for specific viruses) at the targeted site and table for specific viruses (Fenno et al., 2014; Bäck et al., 2019; Lee et al., 2010a). Three weeks were allowed to elapse prior to harvesting brains following injections. Images were obtained on a Leica DM6 B upright microscope and processed using Thunder imaging station (Leica).
 
-## Brain clearing and light sheet microscopy
+### Brain clearing and light sheet microscopy
 
 Tissue clearing and imaging was carried out on brains collected and fixed in 4% PFA as described above by LifeCanvas Technologies. Briefly, brains were fixed using SHIELD post ix and cleared for 7 days in SmartClear II Pro. Index matched with EASYIndex at room temperature. Samples were mounted ventral side up and imaged at 3.6 x with pixel size 1.8x1.8 mm, axial resolution <4 μm, z step 4 μm in 488 nm channel. Fos was labeled by Alexa Flour 488. SuM boundaries were defined by –2.6 to –2.95 rostral to Bregma. The medial mammillary nucleus and the mammillary recess of the 3rd ventricle marked the medial and ventral boundaries, while fornix marked the lateral, and fasciculus retroflexus marked the dorsal boundaries. Images were quantified by a trained laboratory member who was blind to the experimental conditions.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were intracardially perfused with 4% PFA and then brains were sectioned (30 microns) and placed in 1 x PB until immunostaining. Free-floating sections were washed three times in 1 x PBS for 10 min intervals. Sections were then placed in blocking buffer (0.5% Triton X-100% and 5% natural goat serum in 1z PBS) for 1 hr at room temperature. After blocking buffer, sections were placed in primary antibody rabbit Phospho-c-Fos (Ser32) antibody (1:500, Cell Signaling Technology) overnight 4 °C temperature. After 3x10 min 1 x PBS washes, sections were incubated in secondary antibody goat anti-rabbit Alexa Fluor 488 (1:2500, Invitrogen) for 2 hr at room temperature. Sections were washed in 1 x PBS (3x10 min) followed by 2x10 min 1 x PB washes. After immunostaining, sections were mounted on Super Frost Plus slides (Fisher) and covered with Vectashield Hard set mounting medium with DAPI (RRID:AB_2336788, Vector Laboratories) and cover glass prior to being imaged.
 
-## Imaging and cell quantification
+### Imaging and cell quantification
 
 ‘The Mouse Brain in Stereotaxic Coordinates’ provided the framework to label brain sections relative to bregma (Paxinos, 2019). A Leica DM6 B epifluorescent microscope was used to image all sections. For eYFP visualization, a YFP filter cube (Excitation: 490–510, Dichroic: 515, Emission: 520–550) was used and for tdTomato visualization, a Texas Red Filter Cube (Excitation: BP 560/40, Dichroic: LP 585, Emission: BP 630/75) was used. Fos was labeled by Alexa Flour 488. SuM boundaries were defined by –2.6 to –2.95 rostral to Bregma. The medial mammillary nucleus and the mammillary recess of the 3rd ventricle marked the medial and ventral boundaries while fornix marked the lateral, and fasciculus retroflexus the dorsal boundaries. Images were quantified by a trained laboratory member who was blind to the experimental conditions.
 
-## Forced-swim test for cFos examination
+### Forced-swim test for cFos examination
 
 For stress induction via forced swim (Figure 3—figure supplement 1; Commons et al., 2017; Porsolt et al., 1979), mice were individually placed in a cylindrical container (18 cm in diameter) filled with water at 25+/-1 °C for 15 min. Prior to stress force swimming, mice were habituated to the arenas for 3 days prior to the beginning of FST to minimize stress. Ninety min after forced swim, mice were injected with ketamine and xylazine and were intracardially perfused. Control mice were brought to the behavioral testing area but remained in the home cage until perfusion. Water was replaced after every animal. To examine SuM-POA glutamatergic projections, VGlut2-Cre+littermates were injected with AAV2 retro-Ef1a-DIO-mCherry into the POA.
 
-## Fiber photometry
+### Fiber photometry
 
 For all fiber photometry experiments, the same strategy to selectively label SuMVGLUT2+::POA neurons was used. VGLUT2-Flp mice were injected bilaterally in POA with AAV-Retro-EF1a-fDIO-Cre and with AAV-syn-FLEX-GCaMP7s-WPRE in SuM. After 2 weeks, mice were implanted with fiber-optic cannulas (200 μm) in SuM (D/V –4.3–5; Dana et al., 2019). Mice recovered a minimum of 1 week prior to behavioral testing. Recording of Ca2+-dependent and isosbestic signals were obtained using previously described methods with Bonsai software and FP3002 (Neurophotometrics; Parker et al., 2019; Martianova et al., 2019). 470 and 415 nm LEDs were used to record interleaved isosbestic and Ca2+-dependent signals following the manufacturer directions.
 
@@ -191,34 +517,34 @@ For experiments that examined recruitment of SuMVGLUT2+::POA neurons during cons
 
 For fiber photometry data analysis, the interleaved isosbestic and Ca2+-dependent signals were recorded at 60 fps (30 fps each). Deinterleaved signals were analyzed using methods as previously reported (Martianova et al., 2019). Briefly, raw signals were smoothed using a moving average, fitted with an exponential curve using a non-linear least squares function for baseline correction, signals were standardized using the mean value and standard deviation (Z-Score), the standardized isosbestic and Ca2 +signals were scaled a non-negative robust linear regression, and normalized dF/F was calculated. In experiments shown in Figures 7A and 8 E-F there was sustained step drop evident in the Ca2+-dependent signal reflecting change in population activity because it was not seen in the isosbestic signal. The nature and duration of the change of the signal precluded fitting a curve to the Ca2+-dependent signal. In these cases, we show both the Ca2+-dependent and isosbestic signals. Z-scores were calculated without baseline correction for both Ca2+-dependent and isosbestic signals based on the variability in the baseline state.
 
-## Real-time place aversion testing
+### Real-time place aversion testing
 
 For real-time place preference testing with optogenetic photostimulation, we used custom-made, unbiased, balanced two-compartment conditioning apparatus (52.5x25.5 x 25.5 cm) as described previously (Norris et al., 2021; Stamatakis and Stuber, 2012). Mice were tethered to a patch cable that allowed free access to the entire arena for 30 min. Entry into one compartment triggered photostimulation, 1 Hz, 5 Hz, 10 Hz, or 20 Hz (473 nm laser, 10ms pulse width), that persisted while the mouse remained in the light paired side. The side paired with photostimulation was counterbalanced across mice. Ordering was counterbalanced with respect to stimulation frequency and placement. Bedding in the behavior apparatus was replaced between every trial, and the floors and walls of the apparatus were wiped down with 70% ethanol. Time spent in each chamber and total distance traveled for the entire 30-min trial was measured using Ethovision 10 (Noldus Information Technologies). For optogenetic stimulation of VGAT neurons during RTTA, Cre + littermates were injected either with AAV5-EF1a-DIO-hChR2(H134R)-EYFP or with AAV5-EF1a-DIO-eYFP as control, and stimulation was provided at 10 Hz.
 
-## Light /dark choice
+### Light /dark choice
 
 For light/dark choice, the same arenas as used for real-time preference testing were modified and used as previously described (Luskin et al., 2021). On the light side, a small sport light was placed overhead, and the walls were covered with white laminated paper. Light levels on this side measure 580–590 lux. For the dark side, an infrared spotlight was placed over head, to allow for video tracking of the mice. The walls were covered with matte black plastic. Light levels in the center of the dark side measure 100–110 lux. Animals were recorded using a USB web cam without an infrared filter. For real-time aversion testing, photostimulation was paired with the dark side of the arena as described above. For anxiety-like behavior testing, stimulation was provided uniformly during the trials. Time spent in each chamber and total distance traveled for the entire 30-min trial was measured using Ethovision 10.
 
-## Observational behavioral assay
+### Observational behavioral assay
 
 To observe behaviors evoked by photostimulation of SuMVGLUT2+::POA neurons, mice were habituated for at least 3 days prior to testing to a round (18 cm diameter), clear arena with counterbalanced optical commutators to minimize the impact of the head tether on movement. Testing occurred after habitation, and approximately 2 cm of bedding material was placed in the arena. Behavior was recorded from the side and scored by a blinded observer.
 
-## Negative reinforcer two nose port operant behavior testing
+### Negative reinforcer two nose port operant behavior testing
 
-For operant behavior testing, we used Med Associates mouse operant conditioning chamber with dual nose ports and house light as previously described (Parker et al., 2019). Briefly, mice were tethered via cantilevered counterweighted optical commutator to a laser light source. A 5-day protocol call was used. Day 1 through four were 10 min trials. Photostimulation was provided at 10 Hz and activation of the active port resulted in a 10 s pause in the photostimulation and activation of the house light inside the arena. On the first four days, each activation of the active port outside of a 10 s pause resulted in a new pause. On day 5 was a 30-min trial using a progressive ratio protocol the number activation of the active port to generate a pause increased with each activation based on the numberofactivations(j)=[5e(0.2j)−5] round to the nearest integer generating the schedule 1, 2, 4, 6, 9, 12, 15, 20, 25, 32, 40, 50….(Richardson and Roberts, 1996). The trial was limited to 30 min due to concern for animal welfare due to the head tether and confined space. Photostimulation terminated at the conclusion of the trial.
+For operant behavior testing, we used Med Associates mouse operant conditioning chamber with dual nose ports and house light as previously described (Parker et al., 2019). Briefly, mice were tethered via cantilevered counterweighted optical commutator to a laser light source. A 5-day protocol call was used. Day 1 through four were 10 min trials. Photostimulation was provided at 10 Hz and activation of the active port resulted in a 10 s pause in the photostimulation and activation of the house light inside the arena. On the first four days, each activation of the active port outside of a 10 s pause resulted in a new pause. On day 5 was a 30-min trial using a progressive ratio protocol the number activation of the active port to generate a pause increased with each activation based on the $numberofactivations(j)=[5e^{(0.2j)}−5]$ round to the nearest integer generating the schedule 1, 2, 4, 6, 9, 12, 15, 20, 25, 32, 40, 50….(Richardson and Roberts, 1996). The trial was limited to 30 min due to concern for animal welfare due to the head tether and confined space. Photostimulation terminated at the conclusion of the trial.
 
-## Forced swim with photostimulation
+### Forced swim with photostimulation
 
 Forced swim trials with optogenetic stimulation were done as a two-day test. On the first day, all mice were subjected to a 15 min forced swim, dried, and returned to the home cage. On the second day, they were tethered and subjected to a 6 min forced swim, divided into three periods, each two mins in length: pre stimulation, stimulation, and post stimulation. Ten Hz photostimulation was provided during the trial. Mice were closely monitored during each trial of swimming. Trials were recorded and scored by a blinded observer for time spent immobile on the second day of the test. For forced swim trials with optogenetic stimulation of VGAT neurons, Cre +littermates were injected either with AAV5-EF1a-DIO-hChR2(H134R)-EYFP or with AAV5-EF1a-DIO-eYFP as control.
 
-## Feeding after food deprivation
+### Feeding after food deprivation
 
 For tests involving brief access to food after deprivation, the same 18 cm diameter round arenas with counterbalanced optical commutators were used. Mice were habituated to the arenas for a minimum of three days prior to testing. Mice were food deprived by removal of food from the home cage 24 hr prior to testing. Mice were placed in the arena and allowed to habituate prior to introduction of a chow pellet. The 20-min trial with the foot pellet was recorded and scored by a blinded observer. Chow pellets were weighed before and after the 20-min trial. The difference is reported as food eaten.
 
-## Open field test
+### Open field test
 
 For Open Field testing, we used a purpose-built 20 in square behavior arena. Mice were tethered to a patch cable and placed into the behavioral arena. The laser frequency was set to 10 Hz and was left on for 20 min. Distance moved for the 20-min trial was quantified using Ethovision 10. Bedding in the arena was replaced between every trial, and the floors and walls of the arena were wiped down with 70% ethanol. Similarly, for optogenetic stimulation of VGAT neurons, Cre +littermates were injected either with AAV5-EF1a-DIO-hChR2(H134R)-EYFP or with AAV5-EF1a-DIO-eYFP as control.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were conducted using GraphPad Prism software. Data are shown as mean ± SEM, except for Z-scores which are shown as ±95% confidence interval, as noted in text. Values for individual p values are given in the text and figure legends. Significance was held at α less than 0.05. In cases of multiple comparisons, Bonferroni method was used to correct for multiple comparisons. Paired testing was used when comparing within cohorts with repeated measurements and unpaired between cohorts. All ‘n’ values represent the number of animals in a particular group for an experiment. For fiber photometry statistical analysis, the mean signal of the baseline and stimulus windows was used, and comparisons were made using the Wilcoxon ranked-sum test, with α=0.95. To analyze the change in the Ca2+-dependent signal, a t-confidence interval method was used, in which 95%, 99%, and 99.9% confidence intervals were calculated for windows preceding and subsequently following the described point of interest (Jean-Richard-Dit-Bressel et al., 2020). Differences were considered significant if the null hypothesis (zero) was not included in the CI. Because exact p values are not calculated using this method, the highest confidence level at which the difference is significant (95%, 99%, or 99.9% CI) is reported instead. Please see Supplementary file 1 for a table with all statistical analyses conducted.

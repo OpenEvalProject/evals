@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/006e5kg04 Biology of the Testis (BITE) Laboratory, Genetics, Reproduction and Development (GRAD) Research Group, Vrije Universiteit Brussel Brussels Belgium
-2. https://ror.org/015m7wh34 Inserm, EHESP, Institut de Recherche en Santé, Environnement et Travail (IRSET), Université de Rennes Rennes France
-3. https://ror.org/006e5kg04 Core facility, Support for Quantitative and Qualitative Research (SQUARE), Vrije Universiteit Brussel Brussels Belgium
-4. https://ror.org/00cv9y106 Department for Reproductive Medicine, Ghent University Hospital Ghent Belgium
-5. https://ror.org/00cv9y106 Department of Endocrinology and Center for Sexology and Gender, Ghent University Hospital Ghent Belgium
-6. https://ror.org/006e5kg04 In Vitro Toxicology and Dermato-Cosmetology (IVTD), Vrije Universiteit Brussel Brussels Belgium
+1. Biology of the Testis (BITE) Laboratory, Genetics, Reproduction and Development (GRAD) Research Group, Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
+2. Inserm, EHESP, Institut de Recherche en Santé, Environnement et Travail (IRSET), Université de Rennes Rennes France ([ROR:015m7wh34](https://ror.org/015m7wh34))
+3. Core facility, Support for Quantitative and Qualitative Research (SQUARE), Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
+4. Department for Reproductive Medicine, Ghent University Hospital Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+5. Department of Endocrinology and Center for Sexology and Gender, Ghent University Hospital Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+6. In Vitro Toxicology and Dermato-Cosmetology (IVTD), Vrije Universiteit Brussel Brussels Belgium ([ROR:006e5kg04](https://ror.org/006e5kg04))
 
 † Corresponding author
 
@@ -37,15 +37,101 @@ Therefore, this study aims to thoroughly characterize the spermatogonial stem ce
 
 ## Results
 
-## Participant background
+### Participant background
 
 A summary of the participants’ characteristics can be found in Table 1. At the time of orchidectomy, participants were 31.0 years of age (18.1–70.1) and had been administered GAHT for 1.8 years (0.4–7.0). All participants had reached adulthood at the time of SRS (Tanner stage G5). Most were treated with oral estrogen (72.6%) rather than transdermal estrogen (27.4%), and all participants received the anti-androgen cyproterone acetate (CPA). None of the participants had received prior treatment with puberty blockers. Serum hormone levels of the enrolled participants were recorded during the last pre-operative visit, 92 days (1–764) before SRS.
+
+**Table 1.**
+ Participant characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Median (range)</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age at start GAHT (years)</td>
+      <td>27.4 (16.0–69.0)</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Duration of GAHT (years)</td>
+      <td>1.8 (0.4–7.0)</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Type of GAHT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oral</td>
+      <td>72.6%</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Transdermal</td>
+      <td>27.4%</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Age at surgery (years)</td>
+      <td>31.0 (18.1–70.1)</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Time last visit to SRS (days)</td>
+      <td>92 (1–764)</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>Serum hormone levels</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LH (U/L)</td>
+      <td>0.1 (0.09–9.6)</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>FSH (U/L)</td>
+      <td>0.19 (0.09–12.0)</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>T (ng/dL)</td>
+      <td>18.1 (0.1–499.1)</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>E2 (ng/L)</td>
+      <td>66.0 (14.1–776.0)</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>AMH (μg/L)</td>
+      <td>7.5 (0.03–143.0)</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Inhibin B (pg/mL)</td>
+      <td>59.5 (0.8–193.6)</td>
+      <td>69</td>
+    </tr>
+  </tbody>
+</table>
 
 In this cohort, generally, the gonadotropins were sufficiently suppressed with serum luteinizing hormone (LH) levels of 0.10 U/L (0.09–9.6) and serum follicle-stimulating hormone (FSH) levels of 0.19 U/L (0.09–12.0). Both the Endocrine Society and the WPATH SOC 8 guidelines advise trans women to maintain serum testosterone (T) levels below 50 ng/dL (Hembree et al., 2017; Coleman et al., 2022). This threshold corresponds to the cisgender premenopausal female as well as the prepubertal male range (Kulle et al., 2010) and is met by 90.4% (94/104) of the included participants: 16.84 ng/dL (0.1–45.9). The remaining 10 participants (9.6%) exhibited higher T levels: 127.4 ng/dL (50.8–499.1). Notably, three of these individuals (2.9%) even showed T levels within the adult male range (>218 ng/dL) (Travison et al., 2017). In terms of serum estradiol (E2) levels, the threshold recommended by the Endocrine Society and WPATH SOC 8 guidelines (Hembree et al., 2017; Coleman et al., 2022) is set at 100–200 ng/L and corresponds to the cisgender premenopausal female range (Kushnir et al., 2008). Remarkably, 74.3% (78/105) of the participants showed E2 levels below this recommendation: 56.8 ng/L (14.1–94.7). Besides this, six participants (5.7%) exceeded this threshold: 410.5 ng/L (250.0–776.0). The remaining 21 participants (20.0%) displayed target E2 levels: 128.0 ng/L (102.0–188.0).
 
 Regarding the serum anti-Müllerian hormone (AMH) levels, 56% (38/68) of the participants exhibited levels within the normal adult range: 5.2 μg/L (1.4–11.6). Noteworthy, 27 trans women (40%) surpassed the upper reference limit of 11.6 μg/L and fell within the male peripubertal range: 25.3 μg/L (11.8–143). Only three participants (4%) displayed low AMH levels: 0.42 μg/L (0.03–0.9). In contrast, inhibin B levels were predominantly low, as 77% (53/69) of trans women exhibited levels below the lower reference limit of 95 pg/mL: 55.3 pg/mL (0.8–93.7). Only 23% (16/69) of the trans women showed normal inhibin B levels: 140.7 pg/mL (95.9–193.6).
 
-## Atypical histology and arrest of germ cell differentiation
+### Atypical histology and arrest of germ cell differentiation
 
 Regarding the overall testicular histology, for each individual, one predominant phenotype could be observed for both lumen and hyalinization scoring. The prepubertal controls displayed an absent lumen, while peripubertal controls exhibited an absent to half-open lumen, and adult controls exhibited an open lumen. Out of the 106 trans women, 24 (23%) exhibited an open lumen, 51 (48%) a half-open lumen, and 31 (29%) an absent lumen (Figure 1A). Besides this, the controls exhibited minimal to no hyalinization. Some degree of tubular hyalinization could be detected in 78% of the trans women (83/106), of which 43 (41%) showed mild hyalinization, 31 (29%) moderate hyalinization, and 9 (8%) severe hyalinization (Figure 1B).
 
@@ -59,7 +145,7 @@ For each of the outcomes of primary interest, which include ‘tissue hyalinizat
 
 The cumulative logistic regression model for ‘progression of spermatogenesis’ retained only the predictors ‘age at SRS’ and ‘LH’. ‘Age at SRS’ estimated at –0.081 suggests that as participants are older, they are more likely to show MAGE-/BOLL-/CREM-/ACROSIN- or MAGE+/BOLL-/CREM-/ACROSIN- phenotypes. ‘LH’ estimated at 1.535 suggests that higher LH values are indicative for BOLL+, and even more for CREM+.
 
-## Peritubular myoid cells show a distinct ACTA2 pattern
+### Peritubular myoid cells show a distinct ACTA2 pattern
 
 Although ACTA2 expression is absent in the PTMCs of prepubertal boys, during puberty, it appears in certain seminiferous tubules, resulting in an ‘interrupted’ pattern (Figure 2). At adulthood, all seminiferous tubules are surrounded by an ‘intact’, dense layer of ACTA2-expressing PTMCs. Interestingly, in most transgender participants (49% [51/104]), a distinct, thicker ACTA2 pattern could be observed, in which the PTMCs appear ‘disconnected’ from each other (Figure 2VIII). The other transgenders either showed an ‘intact’ (29% [30/104]), ‘interrupted’ (16% [17/104]), or an ‘absent’ (6% [6/104]) ACTA2 pattern. It was further investigated whether this thicker ‘disconnected’ ACTA2 pattern might be linked to the age of the participant. While a slightly thicker ACTA2+ layer could be observed in aged controls, the PTMCs did not exhibit the ‘disconnected’ appearance seen in transgender participants.
 
@@ -69,7 +155,7 @@ Although ACTA2 expression is absent in the PTMCs of prepubertal boys, during pub
 
 The cumulative logistic regression model for ‘ACTA2 pattern’ retained ‘age at SRS’ as well, together with ‘log-T’. ‘Age at SRS’ estimated at –0.057 suggests that as participants are older, they are more likely to show an interrupted ACTA2 pattern, and sometimes even an absent pattern. ‘Log-T’ estimated at 0.677 suggests that higher log-T values are indicative of an intact ACTA2 pattern, and slightly less disconnected patterns. The analysis also pointed out that ‘interrupted’ and ‘absent’ ACTA2 patterns did not occur much.
 
-## Partial Sertoli cell dedifferentiation
+### Partial Sertoli cell dedifferentiation
 
 As presented in Figure 3A, the Sertoli cells of prepubertal boys express both SRY-box transcription factor 9 (SOX9) and AMH, but not androgen receptor (AR). However, in peripubertal boys, the AMH signal starts to vanish while the AR signal emerges. By the time adulthood is reached, Sertoli cells are positive for SOX9 and AR and no longer express AMH. For the evaluation of the AMH signal, expression patterns could be established based on the control tissues. Briefly, the ‘prepubertal’ pattern showed a strong AMH signal in all seminiferous tubules, which always overlapped with the SOX9 signal. In the ‘peripubertal’ pattern, there was a moderate AMH signal overlapping with the SOX9 signal within the seminiferous tubules, but also a stronger AMH signal in the tubular wall that did not overlap with the SOX9 signal. The ‘adult’ pattern only showed an AMH signal within the tubular wall which never overlapped with the SOX9 signal. Therefore, the ‘adult’ pattern was considered as AMH-. Interestingly, it has been shown that AMH receptor type 2 starts to be expressed in peritubular mesenchymal cells within the tubular walls during puberty and it remains so throughout adulthood (Sansone et al., 2020). AMH bound to this receptor may help explain the observed AMH signal in the tubular wall of peripubertal and adult controls. The predominant AMH pattern among transgender individuals was the prepubertal pattern (75% [79/106]), followed by the peripubertal pattern (18% [19/106]) and the adult pattern (7% [8/106]) (Figure 3B).
 
@@ -79,11 +165,11 @@ As presented in Figure 3A, the Sertoli cells of prepubertal boys express both SR
 
 Figure 3C shows the presence of ‘mature’ (SOX9+/AR+/AMH-), ‘semi-mature’ (SOX9+/AR+/AMH+), and ‘immature’ (SOX9+/AR-/AMH+) tubules in trans women. The seminiferous tubules of nearly all participants (93% [99/106]) co-express SOX9, AR, and AMH. In most cases, these participants showed solely semi-mature tubules (85% [90/106]), but some trans women displayed a mix of both mature and semi-mature tubules (3% [3/106]) or semi-mature and immature tubules (6% [6/106]). Among these mixed phenotypes, the presence of semi-mature tubules accounted for 20.4% (0.4–48.4) and 91.1% (81.7–99.3) of the total tubule count, respectively. Notably, only seven participants (7%) exhibited exclusively mature tubules and none of the participants had only immature tubules. Furthermore, the logistic regression model for ‘AMH+’ retained only ‘log-T’ as a predictor. ‘Log-T’ estimated at –0.813 suggests a decrease in the probability of having 100% AMH+ tubules as T levels increase.
 
-Additional analyses were performed to evaluate differences between the spermatogenesis conditions (‘No spermatogonia’: MAGE-, ‘Only spermatogonia’: MAGE+, and ‘Partial differentiation’: BOLL+ and CREM+). The percentages of tubules with mature/semi-immature/immature Sertoli cells for each of the three conditions were often (near) 0 or 100, for which a tangent hyperbolic transformation was performed on the ratios of percentages, scaling the ratios within the interval –1 to 1. Note that the three percentages of the three spermatogenesis conditions are mutually dependent, each one depending on the others, which we dealt with by recombining the three conditions into two ratios or odds ⟮%Immature%Semi−mature and%Mature%Semi−mature ⟯. These percentages, and thus the transformed ratios, were observed with two types of ratios for which a repeated measures ANOVA was used on the ranks of the transformed scores, to evaluate the differences between conditions. The significant interaction effect suggests that differences between conditions are not the same for the two types of odds (relative percentage of immature or relative percentage of mature) (p=8.131e-05). While there is also evidence for a significant difference between the two types, because of the interaction this difference can only be interpreted with caution. The transformed ratio mature/semi-mature tubules does seem higher than the ratio immature/semi-mature tubules (p=2.127e-12) (Figure 3D). Furthermore, as the condition of the spermatogenesis improves, a decreasing trend is noted for the ratio immature/semi-immature tubules. For the ratio mature/semi-immature tubules, the score is the highest for the ‘No spermatogonia’ condition, followed by the ‘Partial differentiation’ condition.
+Additional analyses were performed to evaluate differences between the spermatogenesis conditions (‘No spermatogonia’: MAGE-, ‘Only spermatogonia’: MAGE+, and ‘Partial differentiation’: BOLL+ and CREM+). The percentages of tubules with mature/semi-immature/immature Sertoli cells for each of the three conditions were often (near) 0 or 100, for which a tangent hyperbolic transformation was performed on the ratios of percentages, scaling the ratios within the interval –1 to 1. Note that the three percentages of the three spermatogenesis conditions are mutually dependent, each one depending on the others, which we dealt with by recombining the three conditions into two ratios or odds $⟮\frac{%Immature}{%Semi−mature }and\frac{%Mature}{%Semi−mature }⟯$. These percentages, and thus the transformed ratios, were observed with two types of ratios for which a repeated measures ANOVA was used on the ranks of the transformed scores, to evaluate the differences between conditions. The significant interaction effect suggests that differences between conditions are not the same for the two types of odds (relative percentage of immature or relative percentage of mature) (p=8.131e-05). While there is also evidence for a significant difference between the two types, because of the interaction this difference can only be interpreted with caution. The transformed ratio mature/semi-mature tubules does seem higher than the ratio immature/semi-mature tubules (p=2.127e-12) (Figure 3D). Furthermore, as the condition of the spermatogenesis improves, a decreasing trend is noted for the ratio immature/semi-immature tubules. For the ratio mature/semi-immature tubules, the score is the highest for the ‘No spermatogonia’ condition, followed by the ‘Partial differentiation’ condition.
 
 A correlation analysis was performed to assess whether the abundant presence of AMH signal in the tissue is also reflected in the serum AMH levels and to explore the possible connections between serum AMH and other variables of interest (‘age at SRS’, ‘years of GAHT’, ‘serum LH’, ‘serum FSH’, ‘serum T’, ‘serum E2’, ‘serum inhibin B’, ‘tissue hyalinization’, ‘ACTA2 pattern’, ‘progression of spermatogenesis’, and ‘percentage of INSL3+ cells’). Serum AMH values from 66 participants could be included in this analysis. Significant correlations were found for ‘serum AMH’ and the ‘percentage of AMH+ tubules’ (r=0.330), ‘tissue hyalinization’ (r=−0.289), and ‘progression of spermatogenesis’ (r=−0.278).
 
-## Reduced Leydig cell maturity and functionality
+### Reduced Leydig cell maturity and functionality
 
 In prepubertal boys, neither cytochrome P45011 (CYP11a1) nor insulin-like factor 3 (INSL3) is expressed within the Leydig cells. From early puberty onward, both markers are distinctly expressed (Figure 4A). The functional maturity rate of the Leydig cells (CYP11a1+/INSL3+) in the adult controls ranged from 72% to 95%. More than half of the transgender participants showed >60% functionally mature Leydig cells (55% [57/103]), with the majority scoring >80% (31% [31/103]). In contrast, the remaining 46 participants displayed 41–60% (17% [17/103]) or 21–40% functionally mature Leydig cells (17% [17/103]), and 12 participants (12%) even scored below 20% (Figure 4B). Another noteworthy observation in transgender individuals was the tendency of Leydig cells to form smaller clusters in comparison to the adult controls, resembling what was seen in peripubertal controls. Additionally, in a few isolated cases, a single cell could be observed that was CYP11a1- but INSL3+.
 
@@ -93,9 +179,9 @@ In prepubertal boys, neither cytochrome P45011 (CYP11a1) nor insulin-like factor
 
 The linear regression model for ‘INSL3+’ retained ‘age at SRS’ and the newly defined ‘combination of FSH and LH’. ‘Age at SRS’ estimated at –0.595 suggests that as participants are older the INSL3+ score decreases. The participants with FSH<0.3 appear to show fewer INSL3+ cells than participants with FSH>0.3 and LH>0.1, estimated to differ –19.460. The remaining category (FSH>0.3 and LH<0.1) does not differ from the other two.
 
-The percentages of the Leydig cells for each of the three conditions are also often (near) 0 or 100, for which again a hyperbolic tangent transformation was performed on the ratios of percentages. The transformed ratio of percentages (% functional cells%afunctional cells) was analyzed with a Kruskal-Wallis test to evaluate differences between conditions. A significant effect for the conditions (p=0.002), as presented in Figure 4C, resulted in a further exploration with the Wilcoxon rank sum test for the different pairwise combinations, with Bonferroni correction. Significant differences could be observed between the ‘No spermatogonia’ and ‘Partial differentiation’ groups (p=0.006) and between the ‘Only spermatogonia’ and ‘Partial differentiation’ groups (p=0.019). No significant differences were observed between the ‘No spermatogonia’ and ‘Only spermatogonia’ groups (p=0.173). It was noted that the score in the ‘Partial differentiation’ group was higher compared to the ‘No/Only spermatogonia’ groups, suggesting that there are relatively more functionally mature Leydig cells in the ‘Partial differentiation’ than in the ‘No/Only spermatogonia’ groups.
+The percentages of the Leydig cells for each of the three conditions are also often (near) 0 or 100, for which again a hyperbolic tangent transformation was performed on the ratios of percentages. The transformed ratio of percentages $(\frac{% functional cells}{%afunctional cells})$ was analyzed with a Kruskal-Wallis test to evaluate differences between conditions. A significant effect for the conditions (p=0.002), as presented in Figure 4C, resulted in a further exploration with the Wilcoxon rank sum test for the different pairwise combinations, with Bonferroni correction. Significant differences could be observed between the ‘No spermatogonia’ and ‘Partial differentiation’ groups (p=0.006) and between the ‘Only spermatogonia’ and ‘Partial differentiation’ groups (p=0.019). No significant differences were observed between the ‘No spermatogonia’ and ‘Only spermatogonia’ groups (p=0.173). It was noted that the score in the ‘Partial differentiation’ group was higher compared to the ‘No/Only spermatogonia’ groups, suggesting that there are relatively more functionally mature Leydig cells in the ‘Partial differentiation’ than in the ‘No/Only spermatogonia’ groups.
 
-## Transcriptomic resemblance between transgender and immature testicular tissue
+### Transcriptomic resemblance between transgender and immature testicular tissue
 
 To compare the different types of testicular tissue at gene expression level, testicular tissue transcriptomes were obtained from trans women (n=6), and adult (n=5), peripubertal (n=3), and prepubertal (n=3) controls. Following data normalization, the 17 transcriptomes were projected on a two-dimensional PCA-based space. The first component explaining approximately 90% of the variation (x-axis) differentiated samples according to progression of spermatogenesis and tissue maturity (Figure 5A), locating the transgender transcriptomes next to the prepubertal ones. The peripubertal transcriptomes are also segregated according to the progression of spermatogenesis and tissue maturity. The least advanced (Peripubertal 1) is positioned next to prepubertal and transgender transcriptomes, while the most advanced (Peripubertal 3) is located next to the adult control transcriptomes and the intermediately advanced (Peripubertal 2) in the middle of both transcriptome groups.
 
@@ -133,64 +219,274 @@ In summary, our findings show that trans women undergoing GAHT with E2 and CPA e
 
 The collection and use of all tissues were approved by the Committee for Medical Ethics of the Universitair Ziekenhuis (UZ) Brussel - Vrije Universiteit Brussel (VUB) (EC nos. 2016/V9, 2017/061, and 2022/161) and UZ Gent (EC nos. 2009/622, 2014/1175, and 2014/1175-AM01). All patients or their parents gave written informed consent to donate testicular tissue to research.
 
-## Participants
+### Participants
 
 This study is part of the European Network for the Investigation of Gender Incongruence (ENIGI) project, which is a collaborative effort involving prominent gender identity clinics in Western Europe. The current study population consists of the one (n=97) used in our previous publication (Vereecke et al., 2020), plus nine other participants, totaling n=106 trans women exclusively selected from the UZ Gent.
 
-## Gender-affirming hormone therapy
+### Gender-affirming hormone therapy
 
 The included trans women underwent a standardized diagnostic procedure and were at least 16 years of age before starting GAHT (Dekker et al., 2016). Treatment protocols were in accordance with the World Professional Association for Transgender Health Standards of Care, Version 7 (WPATH SOC 7) (Coleman et al., 2022), and consisted of an oral administration of 2 mg of E2 valerate (ProgynovaVR, Bayer, Diegem, Belgium) twice daily, along with 50 mg of the anti-androgen CPA (AndrocurVR, Bayer, Diegem, Belgium) once daily. For participants aged 45 and above and participants with a previous history of venous thromboembolism, the estrogen treatment consisted of transdermal E2 (DermestrilVR, Besins, Brussels, Belgium) at a daily dosage of 50–100 mg. Additionally, participants who experienced intolerance to the initial estrogen treatment were given 2 mg of transdermal 17-b E2 gel (OestrogelVR, Besins, Brussels, Belgium) twice daily (Dekker et al., 2016). To reduce the risk of peri-operative thromboembolism, hormone therapy was stopped 2 weeks before SRS.
 
-## Laboratory analysis
+### Laboratory analysis
 
 During the last pre-operative visit, a blood sample was obtained to measure the participant’s reproductive hormone levels (LH, FSH, T, and E2) and to assess the Sertoli cell function (AMH and inhibin B). Competitive chemiluminescent immunoassays were performed for the quantification of LH (E170 Modular, Roche, Gen III, interassay coefficient of variation [CV] 3.48%, limit of quantification [LOQ] 0.1 mIU/mL), FSH (E170 Modular, Roche, Gen III, interassay CV 3.3%, LOQ 0.1 mIU/mL), T (E170 Modular, Roche, Gen II, LOQ 10 ng/dL) [0.4 nmol/L], interassay CV 2.6%, and E2 (E170 Modular, Roche, Gen III, with an LOQ of 25 pg/mL and an interassay CV of 3.2%). Prior to March 19, 2015, E2 levels were assessed using an E170 Modular (Gen II, Roche Diagnostics, Mannheim, Germany). To convert these E2 values, the following formula was employed: Gen III = 6.687940 + 0.834495 * Gen II. AMH was assessed using an electrochemiluminescence immunoassay (Cobas E801, Roche Diagnostics, Mannheim, Germany), with an interassay CV of 4.4% and an LOQ of 0.01 mg/L. Inhibin B was quantified through an enzyme-linked immunosorbent assay (Beckman Coulter, Immunotech, Prague, Czech Republic), which exhibited an interassay CV of 6.6% and had an LOQ of 2.91 pg/mL. To score the hormone levels, the reference values from the device package inserts were utilized, unless explicitly stated otherwise (Supplementary file 1; Supplementary file 2; Supplementary file 3; Supplementary file 4; Supplementary file 5; Supplementary file 6).
 
-## Tissue sampling
+### Tissue sampling
 
 As part of their SRS, all transgender participants underwent a bilateral orchidectomy at the UZ Gent. For the 97 participants included in our previous publication, testicular tissues were treated as described (Vereecke et al., 2020). For the nine more recent participants, the tunica albuginea and, if applicable, the rete testis were removed and the testes were processed in pieces of approximately 50 mm3. Tissue pieces were collected in Dulbecco’s modified essential medium/F12 (DMEM/F12, 11320-033, Gibco, New York, USA) and were pseudomized by UZ Gent and transported to the VUB on ice. At VUB, tissue pieces were either fixed in AFA for 1 hr, transferred to formalin, dehydrated and, subsequently, paraffin-embedded, or were sectioned into small fragments and cryopreserved by slow freezing (Baert et al., 2013). Briefly, regarding cryopreservation, tissue pieces (1–6 mm3) were equilibrated for 10 min on ice in cryomedium consisting of 1.5 M dimethylsulfoxide (DMSO, D2650, Sigma-Aldrich, Hoeilaart, Belgium), 0.15 M sucrose (D21881000, PanReac AppliChem, Darmstadt, Germany) and 10 mg/mL (10%) human serum albumin (HSA, 10064, Vitrolife, Londerzeel, Belgium) diluted in DMEM/F12 (11320-033, Gibco, New York, USA). Before being stored in liquid nitrogen, the cryovials were placed in an isopropyl alcohol container (Mr. Frosty, VWR, PA, USA) for 24 hr at –80°C.
 
-## Tissue for stainings
+### Tissue for stainings
 
 Transgender testicular tissue embedded in paraffin was sectioned at 5 μm. Control adult testicular tissue was acquired from six men who underwent orchidectomy or vasectomy reversal in the UZ Brussel. Additionally, peripubertal (n=3) and prepubertal (n=3) testicular tissues were obtained from patients who underwent a testicular biopsy in the UZ Brussel in the context of fertility preservation. These control tissues were selected based on the patients’ age at banking and the stage of germ cell differentiation. The peripubertal controls ranged from 12.0 to 13.4 years of age, demonstrated ongoing spermatogenesis, and thus represented (early) puberty. The prepubertal controls, aged 3.5–5.5 years, did not exhibit ongoing spermatogenesis. All patients or their parents gave written informed consent to donate a piece of testicular tissue to research. After removal, the testicular biopsies were transported to the BITE laboratory on ice, where they were washed and fixated in acidified alcoholic formalin (AFA0020AF59001, VWR, Leuven, Belgium) for 1 hr. Subsequently, the fixed samples were sent to the pathology department of the UZ Brussel for overnight fixation in formalin and embedding in paraffin. All control tissues were sectioned at 5 μm in the BITE Laboratory.
 
-## Tissue for gene expression
+### Tissue for gene expression
 
 For gene expression analysis, cryopreserved testicular tissue from six trans women, and previously cryopreserved tissue from five adult, three peripubertal and three prepubertal controls were used (Table 2).
 
-## Stainings
+**Table 2.**
+ Testicular tissue characterization for gene expression analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample name</th>
+      <th>Age at biopsy/ orchidectomy (years)</th>
+      <th>Histological notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prepubertal 1</td>
+      <td>1</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Prepubertal 2</td>
+      <td>4</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Prepubertal 3</td>
+      <td>1</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Peripubertal 1</td>
+      <td>13</td>
+      <td>SpermatocytesAbsent seminiferous lumen</td>
+    </tr>
+    <tr>
+      <td>Peripubertal 2</td>
+      <td>15</td>
+      <td>SpermatocytesHalf-open seminiferous lumen</td>
+    </tr>
+    <tr>
+      <td>Peripubertal 3</td>
+      <td>12</td>
+      <td>Elongated spermatidsHalf-open seminiferous lumen</td>
+    </tr>
+    <tr>
+      <td>Adult 1</td>
+      <td>72</td>
+      <td>Normal spermatogenesisOrchidectomy</td>
+    </tr>
+    <tr>
+      <td>Adult 2</td>
+      <td>84</td>
+      <td>Normal spermatogenesisOrchidectomy</td>
+    </tr>
+    <tr>
+      <td>Adult 3</td>
+      <td>38</td>
+      <td>Normal spermatogenesisRe-anastomosis</td>
+    </tr>
+    <tr>
+      <td>Adult 4</td>
+      <td>73</td>
+      <td>Normal spermatogenesisOrchidectomy</td>
+    </tr>
+    <tr>
+      <td>Adult 5</td>
+      <td>78</td>
+      <td>Normal spermatogenesis, signs of fibrosis orchidectomy</td>
+    </tr>
+    <tr>
+      <td>Trans woman 1</td>
+      <td>18</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Trans woman 2</td>
+      <td>19</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Trans woman 3</td>
+      <td>25</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Trans woman 4</td>
+      <td>26</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Trans woman 5</td>
+      <td>34</td>
+      <td>Spermatogonia</td>
+    </tr>
+    <tr>
+      <td>Trans woman 6</td>
+      <td>44</td>
+      <td>Sertoli cell only</td>
+    </tr>
+  </tbody>
+</table>
+
+### Stainings
 
 Table 3 provides an overview of the used markers.
 
-## General histology and germ cell differentiation
+**Table 3.**
+ Antibody specifications.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Target cells</th>
+      <th>Dilution</th>
+      <th>Reference number</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAGE-A4</td>
+      <td>Spermatogonia and primary spermatocytes</td>
+      <td>1/200</td>
+      <td>/</td>
+      <td>Provided by Dr Giulio Spagnoli, University of Basel, Switzerland</td>
+    </tr>
+    <tr>
+      <td>BOLL</td>
+      <td>Secondary spermatocytes and round spermatids</td>
+      <td>1/400</td>
+      <td>H0006637</td>
+      <td>Novusbio Bio-Techne, Oxon, UK</td>
+    </tr>
+    <tr>
+      <td>CREM</td>
+      <td>Round spermatids</td>
+      <td>1/2000</td>
+      <td>hpa001818</td>
+      <td>Merck, Overijse, Belgium</td>
+    </tr>
+    <tr>
+      <td>ACROSIN</td>
+      <td>Round, elongating and elongated spermatids</td>
+      <td>1/500</td>
+      <td>sc67151</td>
+      <td>Tebu-bio, Boechout, Belgium</td>
+    </tr>
+    <tr>
+      <td>ACTA2</td>
+      <td>Peritubular myoid cells</td>
+      <td>1/2000</td>
+      <td>A2547</td>
+      <td>Sigma-Aldrich, Overijse, Belgium</td>
+    </tr>
+    <tr>
+      <td>AMH</td>
+      <td>Immature Sertoli cells</td>
+      <td>1/200</td>
+      <td>MCA2246</td>
+      <td>Bio-Rad, Temse, Belgium</td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>Mature Sertoli cells</td>
+      <td>1/2000</td>
+      <td>ab133273</td>
+      <td>Abcam, Cambridge, UK</td>
+    </tr>
+    <tr>
+      <td>SOX9</td>
+      <td>Sertoli cells</td>
+      <td>1/200</td>
+      <td>AB5535</td>
+      <td>EMD Millipores, Overijse, Belgium</td>
+    </tr>
+    <tr>
+      <td>INSL3</td>
+      <td>Mature Leydig cells</td>
+      <td>1/2000</td>
+      <td>HPA028615</td>
+      <td>Sigma-Aldrich, Machelen, Belgium</td>
+    </tr>
+    <tr>
+      <td>CYP11a1</td>
+      <td>Functional Leydig cells</td>
+      <td>1/50</td>
+      <td>13363-I-AP</td>
+      <td>Proteintech, Manchester, UK</td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse-HRP</td>
+      <td>/</td>
+      <td>1/200</td>
+      <td>P0447</td>
+      <td>Agilent Technologies, Glostrup, Denmark</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit-HRP</td>
+      <td>/</td>
+      <td>1/200</td>
+      <td>PI-1000</td>
+      <td>Vector Laboratories, CA, USA</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit Alexa Fluor 647</td>
+      <td>/</td>
+      <td>1/200</td>
+      <td>A21245</td>
+      <td>Life Technologies, Carlsbad, CA, USA</td>
+    </tr>
+  </tbody>
+</table>
+
+### General histology and germ cell differentiation
 
 The overall histology of the samples was evaluated by a hematoxylin-eosin or hematoxylin-periodic acid Schiff (PAS) staining in accordance with the manufacturer’s protocol. The degree of germ cell differentiation was determined through staining for melanoma-associated antigen A4 (MAGE-A4), boule homolog RNA-binding protein (BOLL), cAMP-responsive element modulator (CREM), and ACROSIN. These markers identify spermatogonia/primary spermatocytes, secondary spermatocytes/round spermatids, round spermatids, and round/elongating/elongated spermatids, respectively (Peri and Serio, 2000; Muciaccia et al., 2013; de Michele et al., 2018; Guo et al., 2018). Notably, germ cell staining results from 97 participants have already been reported (Vereecke et al., 2020) and were integrated into the current paper’s findings.
 
-## Peritubular myoid cells
+### Peritubular myoid cells
 
 The status of the peritubular myoid cells was determined by the presence of ACTA2 (Schlatt et al., 1993). Deparaffinized and rehydrated sections were treated with an H2O2/methanol solution for 30 min to eliminate endogenous peroxidase activity. Next, antigen retrieval was conducted in citric acid (made in-house, pH 6), using a water bath at 98°C for 75 min. Then, the sections were incubated with 10% normal goat serum (NGS, B304, Tebu-bio, Boechout, Belgium)/1% bovine serum albumin (BSA, 10735094001, Roche Diagnostics, Vilvoorde, Belgium) in phosphate-buffered saline (PBS, 70011-036, Life Technologies, Carlsbad, CA, USA) for 30 min. After this, all sections, except for the negative control, were exposed to the primary antibody ACTA2. The sections were then incubated overnight in a humidified chamber at 4°C. On the following day, the slides were treated with the Dako Real Envision Detection System kit (K500711-2, Agilent, Santa Clara, CA, USA) and counterstained with hematoxylin.
 
-## Sertoli cells
+### Sertoli cells
 
 Sertoli cell maturation was assessed by the general marker SOX9, maturity marker AR, and immaturity marker AMH (Guo et al., 2020). After deparaffinization and rehydration, antigen retrieval was performed in a Tris-ethylenediamine tetra-acetic acid (EDTA) buffer (homemade, pH 9) using a water bath at 95°C for 75 min. Next, all sections were incubated with an H2O2/methanol solution for 30 min. After blocking the slides with 4% NGS in PBS for 1 hr, they were incubated with the primary antibody AMH overnight. The sections were exposed to the secondary antibody goat anti-mouse-horseradish peroxidase (HRP) for an hour, followed by fluorescein (NEL741001KT, Akoya Biosciences, Marlborough, MA, USA) for 5 min to develop the first color. Subsequently, the sections underwent a second antigen retrieval in a microwave for two cycles of 5 min at 500 W, in Tris-EDTA. After this, the sections were blocked with 20% NGS/5% BSA in Tris-buffered saline (TBS, homemade, pH 7.4) for 30 min and incubated overnight with the primary antibody AR. The following day, the secondary antibody goat anti-rabbit-HRP was added for 30 min, after which the second color was generated by Cyanine 3 incubation (NEL744001KT, Akoya Biosciences, Marlborough, MA, USA) for 5 min. The final antigen retrieval was achieved in a 75 min water bath at 95°C in Tris-EDTA. The sections were then blocked with 5% NGS in TBS for 1 hr. Subsequently, the third primary antibody SOX9 was incubated overnight. The last secondary antibody, goat-anti-rabbit Alexa Fluor 647, was incubated for 1 hr, after which the slides were exposed to Hoechst (H3570, Life Technologies, Carlsbad, CA, USA, 1/2000) for 10 min. Finally, the slides were mounted using Prolong Gold antifade reagent (P36934, Invitrogen, Thermo Fisher Scientific, Breda, The Netherlands) and stored in the dark at 4°C.
 
-## Leydig cells
+### Leydig cells
 
 The maturity marker INSL3 and functional marker CYP11a1 were used to assess the status of the Leydig cells (Lottrup et al., 2014). Following deparaffinization and rehydration, antigen retrieval was performed in the microwave for two cycles of 5 min at 500 W in Tris-EDTA. Subsequently, all sections were incubated with 0.1% Tween-20 (P1379-250ML, Sigma-Aldrich, Overijse, Belgium)/3% H2O2 in TBS, followed by 20% NGS/5% BSA in TBS for 30 min each. After this, the sections were incubated overnight with the primary antibody INSL3. The secondary antibody goat anti-rabbit-HRP was added for 30 min, after which fluorescein was developed for 5 min. The second antigen retrieval took place in a 75 min water bath at 95°C in Tris-EDTA. After another blocking step with 5% NGS in PBS for an hour, the sections were exposed to the primary antibody CYP11a1 overnight. The next day, the secondary antibody goat-anti-rabbit Alexa Fluor 647 was added for an hour, and Hoechst was added for 10 min. The sections were mounted with ProLong Gold antifade reagent and stored in the dark at 4°C.
 
-## Microscopic analysis
+### Microscopic analysis
 
 Histological examination was performed on an inverted microscope (IX81, Olympus, Aartselaar, Belgium). Four representative images within one depth were captured for each participant using the imaging software CellF (version 2.8, Olympus, Aartselaar, Belgium) at a magnification of ×10. Damage to the testicular niche was evaluated on PAS stainings by three independent individuals and involved scoring of the tubular lumen and tubular hyalinization. One overall score was addressed for each participant using modified classification scales from de Nie et al., 2022b. The lumen was defined as ‘open’, ‘half-open’, or ‘absent’ (Figure 1A). Tubular hyalinization was scored based on the presence and thickness of a hyaline region separating the peritubular layer from the basal membrane of the seminiferous tubule (Figure 1B). The absence of hyalinization was scored as ‘no’, while subtle hyalinization was categorized as ‘mild’. When a distinct, thick hyaline region could be observed, the tubule was scored as ‘moderate’, and when the tubule was nearly entirely hyalinized, it was classified as ‘severe’. To determine the stage of germ cell differentiation, images from the MAGE-A4, BOLL, CREM, and ACROSIN stainings were scored as positive or negative for each respective marker (Vereecke et al., 2020; Figure 1C). To evaluate the PTMCs, the ACTA2 staining patterns in trans women were compared to those observed in the controls. As shown in Figure 2, four ACTA2 patterns could be established: ‘intact’ (adult-like), ‘disconnected’, ’interrupted’ (peripubertal-like), and ‘absent’ (prepubertal-like).
 
 The immunofluorescent stainings were scanned with an axioscanner (Axioscan 7, Zeiss, Zaventem, Belgium). Four representative images within one depth were captured for each sample using the ZEN software (version 3.5, Zeiss, Zaventem, Belgium). For the Sertoli cell stainings, each image covered 2000 μm, whereas for the Leydig cell pictures, the images covered 1000 μm each. The images were subsequently analyzed with ImageJ (version 2.9.0/1.53t, National Institute of Health, Bethesda, MD, USA). All seminiferous tubules within the four images were assessed for the presence or absence of Sertoli cell markers SOX9 (general marker), AR (maturity marker), and AMH (immaturity marker) (Figure 3). For each participant, the outcomes were presented as the percentage of ‘mature’ (SOX9+/AR+/AMH-), ‘semi-mature’ (SOX9+/AR+/AMH+), and ‘immature’ (SOX9+/AR-/AMH-) tubules. Besides this, the CYP11a1-expressing Leydig cells (functional marker) within the four images were quantified and scored as either positive or negative for INSL3 (maturity marker) (Figure 4). For each individual, results were expressed as the percentage of ‘functionally mature’ (CYP11a1+/INSL3+) Leydig cells.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical analysis was performed using R version 4.3.2 (R Core Team, Vienna, Austria). Data are displayed as the median (range) or as the mean ± SD. For each of the different research questions, different statistical choices were made, as will be explained in the Results section. It is worth mentioning here that the distributions of the data of interest present some challenges for their analysis, and different techniques are used to deal with those challenges. The data for the Sertoli and Leydig cells have many observations at the extremes of the scale (0% or 100%) and the different percentages are interdependent, for which a hyperbolic tangent transformation is used on specific ratios of these percentages. Certain predictors are also transformed or altered, because of too strong intercorrelation and skewness. A new variable was created that combined FSH and LH, creating three categories, those with FSH under 0.3, and those with FSH over 0.3 but either LH under 0.1 or over or equal to 0.1. A log-transformation of the E2 and T predictors was also considered. As these two are also strongly correlated they are never combined within one model.
 
-## RNA extraction and RNA sequencing
+### RNA extraction and RNA sequencing
 
 Cryopreserved testicular tissue was thawed and cryoprotectants were osmotically removed according to Baert et al., 2013. RNA extraction was performed with the QIAGEN RNeasy Micro Kit (QIAGEN, Hilden, Germany). RNA concentration after extraction was assessed by using the NanoDrop ND-1000 UV-Vis Spectrophotometer (Thermo Fisher Scientific, Breda, The Netherlands). Using the DNF-472 High Sensitivity RNA Analysis Kit, the quality of the RNA samples was assessed on the AATI Fragment Analyzer (Agilent Technologies Inc, Santa Clara, CA, USA). RNA libraries were created from 150 ng of total RNA using the KAPA RNA HyperPrep Kit with RiboErase kit (Roche Diagnostics, Vilvoorde, Belgium), according to the manufacturer’s directions. In summary, following ribodepletion and DNase digestion, RNA was fragmented to average sizes of 200–300 bp by incubating the samples for 6 min at 94°C. After first-strand synthesis, second-strand synthesis and adapter ligation, the libraries were amplified using 12 PCR cycles. Using the DNF-474 High Sensitivity NGS Fragment Analysis Kit, final libraries were qualified on the AATI Fragment Analyzer (Agilent Technologies Inc, Santa Clara, CA, USA), and quantified on the Qubit 2.0 with the Qubit dsDNA HS Assay Kit (Life Technologies, Carlsbad, CA, USA). Using the NovaSeq 6000 S4 Reagent Kit (200 cycles), 25 million 2×100 bp reads were generated per sample on the Illumina NovaSeq 6000 system (Illumina Inc, San Diego, CA, USA). For this, 1.9 nM libraries were denatured according to the manufacturer’s directions. After demultiplexing and an adaptor/quality trimming step, the raw reads were mapped against the human genome (hg19) using Spliced Transcripts Alignment to a Reference - STAR (Dobin et al., 2013), and then translated into a quantitative measure of gene expression with the tool HTSeq (Anders et al., 2015).
 
-## Differential gene expression and functional analysis
+### Differential gene expression and functional analysis
 
 The UMI matrix was normalized with the regularized log (rlog) transformation package from DeSeq2 (Love et al., 2014). The AMEN suite was used to identify DEGs (Chalmel and Primig, 2008). A statistical comparison between the different types of testicular tissue was made to identify DEGs. In short, genes that were more highly expressed than the background cutoff (overall median of rlog-transformed UMI dataset, 2.03), and that exceeded 2.0-fold change compared to the control, were used for further analysis. Significant DEGs were identified by using the empirical Bayes moderated t-statistics implemented into the LIMMA package with an adjusted F-value estimated using Benjamini and Hochberg false discovery rate (FDR) approach (p≤0.05) (Smyth, 2004; Ritchie et al., 2015). Partitioning of the DEGs was performed by using the k-means method. Expression profiles of DEGs were displayed as false-color heatmaps using the ‘pheatmap’ package. Functional analyses were performed with AMEN (Chalmel and Primig, 2008) with an FDR-adjusted p-value of ≤0.05.

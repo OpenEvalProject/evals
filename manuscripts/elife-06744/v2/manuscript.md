@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.06744.001 To avoid mutations in the genome, DNA replication is generally followed by DNA mismatch repair (MMR). MMR starts when a MutS homolog recognizes a mismatch and undergoes an ATP-dependent transformation to an elusive sliding clamp state. How this transient state promotes MutL homolog recruitment and activation of repair is unclear. Here we present a crystal structure of the MutS/MutL complex using a site-specifically crosslinked complex and examine how large conformational changes lead to activation of MutL. The structure captures MutS in the sliding clamp conformation, where tilting of the MutS subunits across each other pushes DNA into a new channel, and reorientation of the connector domain creates an interface for MutL with both MutS subunits. Our work explains how the sliding clamp promotes loading of MutL onto DNA, to activate downstream effectors. We thus elucidate a crucial mechanism that ensures that MMR is initiated only after detection of a DNA mismatch. DOI: http://dx.doi.org/10.7554/eLife.06744.001
+To avoid mutations in the genome, DNA replication is generally followed by DNA mismatch repair (MMR). MMR starts when a MutS homolog recognizes a mismatch and undergoes an ATP-dependent transformation to an elusive sliding clamp state. How this transient state promotes MutL homolog recruitment and activation of repair is unclear. Here we present a crystal structure of the MutS/MutL complex using a site-specifically crosslinked complex and examine how large conformational changes lead to activation of MutL. The structure captures MutS in the sliding clamp conformation, where tilting of the MutS subunits across each other pushes DNA into a new channel, and reorientation of the connector domain creates an interface for MutL with both MutS subunits. Our work explains how the sliding clamp promotes loading of MutL onto DNA, to activate downstream effectors. We thus elucidate a crucial mechanism that ensures that MMR is initiated only after detection of a DNA mismatch.
 
 ## Introduction
 
@@ -44,33 +44,203 @@ Here, we trap the transient complex between MutS and MutL to resolve a crystal s
 
 ## Results
 
-## Structure of the MutS/MutL complex
+### Structure of the MutS/MutL complex
 
-To trap the
+To trap the E. coli MutS/MutL complex we used site-specific chemical crosslinking of single-cysteine variants of MutS and MutL, with a flexible BM(PEO)3 crosslinker. First all cysteines in MutS and MutL were replaced and functionality of the resulting protein was confirmed (Giron-Monzon et al., 2004; Manelyte et al., 2006; Winkler et al., 2011). Then single cysteines were introduced to find positions where crosslinking was dependent on sliding clamp formation. MutS D246C crosslinks specifically to MutL N131C only when a DNA mismatch and a nucleotide are present (Winkler et al., 2011; Figure 1A, Figure 1—figure supplement 1A), indicating that a complex relevant for MMR is trapped.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig1-v2.jpg)
 
-**Figure 1.:** ΔC800/MutLLN40 complex.(A) DNA and ATP-dependent crosslinking of MutSΔC800 D246C (S) and MutLLN40 N131C (L) and large-scale purification. Constructs and domain definitions are shown. (B) Crystal structure of the trapped transient complex of MutSΔC800 dimer (blue/cyan) with MutLLN40 (green). (C) Comparison between MutSΔC800 in mismatch-recognition state (1E3M.pdb) and the MutSΔC800/MutLLN40 complex, with MutS subunit B colored as in (A). (D) The dimer subunits (blue/cyan) tilt across each other (connector and mismatch-binding domains not shown for clarity) compared to the mismatch-bound state (red/pink). (E) The connector domain (blue/cyan) rotates around residues 265–266 compared to the mismatch-bound state (red/pink) relative to other domains. Reorientation of residues 128 and 246 indicated. (F) Each MutLLN40 subunit (green) interacts via two interfaces (orange/yellow) with the MutSΔC800 dimer (blue/cyan).DOI: http://dx.doi.org/10.7554/eLife.06744.003
+**Figure 1.:** (A) DNA and ATP-dependent crosslinking of MutSΔC800 D246C (S) and MutLLN40 N131C (L) and large-scale purification. Constructs and domain definitions are shown. (B) Crystal structure of the trapped transient complex of MutSΔC800 dimer (blue/cyan) with MutLLN40 (green). (C) Comparison between MutSΔC800 in mismatch-recognition state (1E3M.pdb) and the MutSΔC800/MutLLN40 complex, with MutS subunit B colored as in (A). (D) The dimer subunits (blue/cyan) tilt across each other (connector and mismatch-binding domains not shown for clarity) compared to the mismatch-bound state (red/pink). (E) The connector domain (blue/cyan) rotates around residues 265–266 compared to the mismatch-bound state (red/pink) relative to other domains. Reorientation of residues 128 and 246 indicated. (F) Each MutLLN40 subunit (green) interacts via two interfaces (orange/yellow) with the MutSΔC800 dimer (blue/cyan).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** ΔC800/MutLLN40 complex.(A) Single-cysteine MutS D246C and single-cysteine MutL 857 N131C constructs with replaced and introduced cysteine positions are shown, and colored 858 according to domain definitions in main text Figure 1. (B) Final size-exclusion 859 chromatography profile and corresponding SDS-PAGE gel for the purification of the 860 MutSΔC800/MutLLN40 complex (SL). Pooled fractions are indicated. (C) Two rounds of 861 crosslinking and purification of MutSΔC800 D246C and MutLLN40 N131C result in almost all 35 MutSΔC800 subunits crosslinked to MutLLN40, as shown on SDS-PAGE (862 elutions from Talon 863 beads and size-exclusion chromatography [SEC] are indicated).DOI: http://dx.doi.org/10.7554/eLife.06744.004
+**Figure 1—figure supplement 1.:** (A) Single-cysteine MutS D246C and single-cysteine MutL 857 N131C constructs with replaced and introduced cysteine positions are shown, and colored 858 according to domain definitions in main text Figure 1. (B) Final size-exclusion 859 chromatography profile and corresponding SDS-PAGE gel for the purification of the 860 MutSΔC800/MutLLN40 complex (SL). Pooled fractions are indicated. (C) Two rounds of 861 crosslinking and purification of MutSΔC800 D246C and MutLLN40 N131C result in almost all 35 MutSΔC800 subunits crosslinked to MutLLN40, as shown on SDS-PAGE (862 elutions from Talon 863 beads and size-exclusion chromatography [SEC] are indicated).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** ΔC800/MutLLN40 complex.Electron density shown in region around the domain indicated at contour level 1.0 rmsd and 3.50 rmsd for the difference density map. (A) Crystal form 1, (B) Crystal form 2, (C) Crystal form 3.DOI: http://dx.doi.org/10.7554/eLife.06744.005
+**Figure 1—figure supplement 2.:** Electron density shown in region around the domain indicated at contour level 1.0 rmsd and 3.50 rmsd for the difference density map. (A) Crystal form 1, (B) Crystal form 2, (C) Crystal form 3.
 
 For structural studies, we scaled up the reaction and removed C-terminal domains from MutS and MutL (Figure 1A), to capture the complex between MutSΔC800 D246C (which we will refer to as MutSΔC800) and the 40 kDa N-terminal LN40 domain (Ban and Yang, 1998) of MutL N131C (which we will refer to as MutLLN40). The proteins were crosslinked in the presence of mismatched DNA and ATP, followed by purification to obtain the protein, and then this cycle was repeated in order to obtain fully crosslinked material. This generated a complex where each MutSΔC800 subunit in the dimer binds to a MutLLN40 monomer (Figure 1A, Figure 1—figure supplement 1B,C), which was sufficiently homogeneous and stable to allow crystallization.
 
-We crystallized the MutSΔC800/MutLLN40 complex in the presence of DNA containing a G:T mismatch and the non-hydrolyzable ATP analog AMP-PNP (adenylyl-imidodiphosphate). The complex crystallized in several different space groups, diffracting to resolutions from 7.6 to 4.7 Å. In all crystal forms, we could elucidate the same structure of the protein complex (Figure 1B, Figure 1—figure supplements 2, Table 1), using parts of higher-resolution MutSΔC800 and MutLLN40 structures for molecular replacement.10.7554/eLife.06744.019Table 1.Data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.06744.019Crystal form 1 27-bp DNACrystal form 2 27-bp DNACrystal form 3 100-bp DNAData collection Space groupC2C2P21 Cell dimensions  a, b, c (Å)165.9, 188.5, 200.4380.6, 126.5, 243.3192.6, 109.4, 277.5  α, β, γ (°)90.0, 94.8, 90.090.0, 91.4, 90.090.0, 90.0, 90.0 Resolution (Å)*82.7–4.71 (4.96–4.71)49.94–6.6 (7.13–6.6)49.3–7.6 (8.5–7.6) Rmerge19.4 (79.7)21.3 (80.1)16.8 (91.9) I/σI2.5 (1.0)3.4 (1.1)4.3 (1.0) Completeness (%)97.3 (98.0)96.8 (97.7)81.3 (82.5) Redundancy2.4 (2.4)2.9 (3.0)2.3 (2.2)Refinement Resolution (Å)4.76.67.6 No. reflections31,05221,30511,763 Rwork/ Rfree31.8/35.025.6/28.726.2/30.5 No. atoms21,90645,05445,054  Protein21,81344,86844,868  Ligand/ion93186186  Water000 B-factors  Protein212255221  Ligand/ion220212171  Watern/an/an/a R.m.s deviations  Bond lengths (Å)0.0090.01030.0113  r.m.s. Z (bonds)0.450.510.55  Bond angles (°)1.321.351.31  r.m.s. Z (angles)0.590.700.68*Highest resolution shell is shown in parenthesis.
+We crystallized the MutSΔC800/MutLLN40 complex in the presence of DNA containing a G:T mismatch and the non-hydrolyzable ATP analog AMP-PNP (adenylyl-imidodiphosphate). The complex crystallized in several different space groups, diffracting to resolutions from 7.6 to 4.7 Å. In all crystal forms, we could elucidate the same structure of the protein complex (Figure 1B, Figure 1—figure supplements 2, Table 1), using parts of higher-resolution MutSΔC800 and MutLLN40 structures for molecular replacement.
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Crystal form 1 27-bp DNA</th>
+      <th>Crystal form 2 27-bp DNA</th>
+      <th>Crystal form 3 100-bp DNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td colspan="4">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>165.9, 188.5, 200.4</td>
+      <td>380.6, 126.5, 243.3</td>
+      <td>192.6, 109.4, 277.5</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.0, 94.8, 90.0</td>
+      <td>90.0, 91.4, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>82.7–4.71 (4.96–4.71)</td>
+      <td>49.94–6.6 (7.13–6.6)</td>
+      <td>49.3–7.6 (8.5–7.6)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>19.4 (79.7)</td>
+      <td>21.3 (80.1)</td>
+      <td>16.8 (91.9)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>2.5 (1.0)</td>
+      <td>3.4 (1.1)</td>
+      <td>4.3 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.3 (98.0)</td>
+      <td>96.8 (97.7)</td>
+      <td>81.3 (82.5)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>2.4 (2.4)</td>
+      <td>2.9 (3.0)</td>
+      <td>2.3 (2.2)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>4.7</td>
+      <td>6.6</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>31,052</td>
+      <td>21,305</td>
+      <td>11,763</td>
+    </tr>
+    <tr>
+      <td>Rwork/ Rfree</td>
+      <td>31.8/35.0</td>
+      <td>25.6/28.7</td>
+      <td>26.2/30.5</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>21,906</td>
+      <td>45,054</td>
+      <td>45,054</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>21,813</td>
+      <td>44,868</td>
+      <td>44,868</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>93</td>
+      <td>186</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">B-factors</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>212</td>
+      <td>255</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>220</td>
+      <td>212</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td colspan="4">R.m.s deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.009</td>
+      <td>0.0103</td>
+      <td>0.0113</td>
+    </tr>
+    <tr>
+      <td>r.m.s. Z (bonds)</td>
+      <td>0.45</td>
+      <td>0.51</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.32</td>
+      <td>1.35</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>r.m.s. Z (angles)</td>
+      <td>0.59</td>
+      <td>0.70</td>
+      <td>0.68</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell is shown in parenthesis._
 
 The crystal structure shows a novel conformation of MutS, in which the subunits in the dimer are tilted across each other by ∼30°, compared to the mismatch recognition state (Figure 1C,D). The subunits are tilted as a rigid body, but the C-terminal HTH domains hinging around residues 765–766, move with the opposite subunit, maintaining their role in stabilizing MutS dimers (Biswas et al., 2001). Meanwhile, the connector domains are rotated by ∼160° around a hinge at residues 265–266, which moves these domains out of the center of the molecule and packs them against the ATPase domains (Figure 1C,E). The mismatch-binding domain could not be resolved in the density, probably because it is flexible in this state. While the mismatch recognition state of MutS is asymmetric (Lamers et al., 2000), this MutLLN40-bound conformation shows a more symmetrical MutSΔC800 dimer.
 
 The MutLLN40 interaction with MutSΔC800 involves two interfaces (Figure 1F). The first interface is formed by the largest β-sheet of the ATPase domain of MutLLN40, and the ATPase and core domains of one subunit of MutSΔC800. The second interface involves the side of this same β-sheet and a looped-out helix of MutLLN40, and the newly positioned connector domain of the other MutSΔC800 subunit. Each MutLLN40 monomer is therefore interacting with both subunits in the MutSΔC800 dimer.
 
-## Conformation of the MutS sliding clamp
+### Conformation of the MutS sliding clamp
 
-The novel conformation of MutS in our crystal structure reveals a rearrangement of the subunits in the MutSΔC800 dimer, tilting around the interface formed by the two ATPase sites (Figure 1D, Video 1). The tilting creates a new MutS dimer interface of ∼500 Å2 where the clamp domains cross over, partially from interactions between the helices themselves (200 Å2), the rest from the ends of the clamp domains with the helices.10.7554/eLife.06744.009Video 1.Interpolation between two MutS conformations.Interpolation between the mismatch-bound conformation of MutS and the conformation as observed in complex with MutLLN40 shows tilting of the MutS subunits across each other. The connector domain rotates outward, although the exact trajectory may be different than in this visualization. Mismatch-recognition domains are not shown since they are not visible in the MutSΔC800/MutLLN40 structure.DOI: http://dx.doi.org/10.7554/eLife.06744.009
+The novel conformation of MutS in our crystal structure reveals a rearrangement of the subunits in the MutSΔC800 dimer, tilting around the interface formed by the two ATPase sites (Figure 1D, Video 1). The tilting creates a new MutS dimer interface of ∼500 Å2 where the clamp domains cross over, partially from interactions between the helices themselves (200 Å2), the rest from the ends of the clamp domains with the helices.
+
+![Video 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-media1.mpg.jpg)
+
+**Video 1.:** Interpolation between the mismatch-bound conformation of MutS and the conformation as observed in complex with MutLLN40 shows tilting of the MutS subunits across each other. The connector domain rotates outward, although the exact trajectory may be different than in this visualization. Mismatch-recognition domains are not shown since they are not visible in the MutSΔC800/MutLLN40 structure.
 
 We observe nucleotide density in the ATP binding sites of both subunits in the MutSΔC800 dimer (Figure 2—figure supplement 1A), and since we crystallized the protein with AMP-PNP we modeled these nucleotides in the density. This type of ATP-induced tilting and increased packing of ATPase domains is more often observed upon ATP binding in ABC ATPases, such as ATP transporters, SMCs and RAD50 (Hopfner and Tainer, 2003). Based on comparison to RAD50 (Hopfner et al., 2000) we previously predicted a tilting motion (Lamers et al., 2004), and an open-to-closed transition has been supported by deuterium exchange mass spectrometry (Mendillo et al., 2010), but the crossing of the clamp domains of MutS and the effect that this has on DNA binding were unexpected.
 
@@ -78,19 +248,19 @@ The type of rearrangement of the MutS N-terminal region was similarly unexpected
 
 In RAD50 this tilting or ‘closing’ motion is transmitted through a ‘signature coupling helix’ via charged interactions with the signature helix (Williams et al., 2011; Deshpande et al., 2014). This ‘coupling helix’ is found at the beginning of a long stretch (144–767) in RAD50 that includes the coiled coil region and ends in the signature helix. The equivalent region in MutS is only 10 residues long (660–669) and it is disordered in all structures. It is feasible that this 10-residue loop is critical for transmission of the ATP signal, but the details must be different, since the basic residues in the signature helix of RAD50 are not conserved in MutS.
 
-To validate the relevance of the observed conformational changes for the MMR process, MutS proteins with a single cysteine at position 449 were site-specifically labeled with two different Alexa fluorophores and combined into heterodimers by random subunit exchange (
+To validate the relevance of the observed conformational changes for the MMR process, MutS proteins with a single cysteine at position 449 were site-specifically labeled with two different Alexa fluorophores and combined into heterodimers by random subunit exchange (Figure 2A, Figure 2—figure supplement 2). When labeled protein was bound to end-blocked DNA containing a G:T mismatch, FRET increased upon ATP addition. This indicates that ATP-induced sliding clamp formation moves these residues toward each other, in line with the shorter distance in the new conformation (from 50 Å in the mismatch-recognition state to 43 Å in the MutLLN40-bound structure).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig2-v2.jpg)
 
-**Figure 2.:** ΔC800/MutLLN40 complex reveals the MutS sliding clamp conformation.(A) FRET within MutS dimers (normalized for unbound protein) reveals residues 449 coming closer together upon ATP addition. Error bars depict mean ± SD, n = 3. (B) FRET assay agrees with residue 246 on the connector domain of MutS moving towards residue 798 upon ATP addition after mismatch recognition. (C) Mismatch and ATP-induced conformational changes open a channel lined by positively charged residues (left: arginines and lysines as red sticks, middle: electrostatic surface), which would fit a DNA helix (right). (D) FRET assay agrees with movement of DNA away from residues 449 in MutS, while approaching residues 336 upon ATP addition as schematically depicted (DNA mismatch represented by pink star).DOI: http://dx.doi.org/10.7554/eLife.06744.006
+**Figure 2.:** (A) FRET within MutS dimers (normalized for unbound protein) reveals residues 449 coming closer together upon ATP addition. Error bars depict mean ± SD, n = 3. (B) FRET assay agrees with residue 246 on the connector domain of MutS moving towards residue 798 upon ATP addition after mismatch recognition. (C) Mismatch and ATP-induced conformational changes open a channel lined by positively charged residues (left: arginines and lysines as red sticks, middle: electrostatic surface), which would fit a DNA helix (right). (D) FRET assay agrees with movement of DNA away from residues 449 in MutS, while approaching residues 336 upon ATP addition as schematically depicted (DNA mismatch represented by pink star).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Difference density map for AMP-PNP (mFo-DFc at 2.8σ) after refinement without the nucleotide is shown for MutS subunit A in the 4.7 Å crystal structure. (B) The asymmetric unit in the P21 crystal form that diffracted to 7.6 Å, which was crystallized with 100-bp DNA aligns the channels in the three MutSΔC800 dimers (green, violet and pink cartoon representations) such that a DNA strand would fit through all complexes simultaneously. (C) Sequence conservation of the positively charged residues (indicated by asterisks) in the DNA channel of the MutS sliding clamp. Red: positive charge fully conserved; orange: conserved in >50% of the species shown; yellow: conserved in <50% of the species shown. (D) No change in FRET between labeled residue 246 on MutS and labeled DNA is observed upon addition of ATP, in agreement with reorientation of the connector domain concomitant with repositioning of the DNA to the new channel.DOI: http://dx.doi.org/10.7554/eLife.06744.007
+**Figure 2—figure supplement 1.:** (A) Difference density map for AMP-PNP (mFo-DFc at 2.8σ) after refinement without the nucleotide is shown for MutS subunit A in the 4.7 Å crystal structure. (B) The asymmetric unit in the P21 crystal form that diffracted to 7.6 Å, which was crystallized with 100-bp DNA aligns the channels in the three MutSΔC800 dimers (green, violet and pink cartoon representations) such that a DNA strand would fit through all complexes simultaneously. (C) Sequence conservation of the positively charged residues (indicated by asterisks) in the DNA channel of the MutS sliding clamp. Red: positive charge fully conserved; orange: conserved in >50% of the species shown; yellow: conserved in <50% of the species shown. (D) No change in FRET between labeled residue 246 on MutS and labeled DNA is observed upon addition of ATP, in agreement with reorientation of the connector domain concomitant with repositioning of the DNA to the new channel.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) FRET (normalized for unbound protein) within MutS D835R heterodimers (449-AF488/449-AF594) reveals residues 449 coming closer together upon ATP addition when bound to mismatch DNA. Bars depict mean +/− SD, n = 3. (B) FRET assay within MutS D835R heterodimers (246-AF594/798-AF488) shows that residue 246 on the connector domain of MutS moving towards residue 798 upon ATP addition when bound to mismatch DNA. Bars depict mean +/− SD, n = 3 (C) Example of emission spectra with excitation at 485 nm (solid lines) or 590 nm (dashed lines) of MutS D835R heterodimers (449-AF488/449-AF594 (left) or 246-AF594/798-AF488) (right) (in the presence of the indicated DNA (GT-59 or homoduplex DNA λ-DNA) in the absence (black) or presence of ATP (red). (D) Example of emission spectra with excitation at 435 nm (solid lines) or 590 nm (dashed lines) of MutS D835R variants 246 (top) that corresponds to bar graph in Figure 2—supplement 1D, 336 (middle) or 449 (bottom) that correspond to bar graph in Figure 2D. The proteins labeled with Alexa Fluor 594 in the presence of the indicated DNA (GT30 or AT30) stained with Sytox Blue in the absence (black) or presence of ATP (red). (see Materials and Methods for details).DOI: http://dx.doi.org/10.7554/eLife.06744.008
+**Figure 2—figure supplement 2.:** (A) FRET (normalized for unbound protein) within MutS D835R heterodimers (449-AF488/449-AF594) reveals residues 449 coming closer together upon ATP addition when bound to mismatch DNA. Bars depict mean +/− SD, n = 3. (B) FRET assay within MutS D835R heterodimers (246-AF594/798-AF488) shows that residue 246 on the connector domain of MutS moving towards residue 798 upon ATP addition when bound to mismatch DNA. Bars depict mean +/− SD, n = 3 (C) Example of emission spectra with excitation at 485 nm (solid lines) or 590 nm (dashed lines) of MutS D835R heterodimers (449-AF488/449-AF594 (left) or 246-AF594/798-AF488) (right) (in the presence of the indicated DNA (GT-59 or homoduplex DNA λ-DNA) in the absence (black) or presence of ATP (red). (D) Example of emission spectra with excitation at 435 nm (solid lines) or 590 nm (dashed lines) of MutS D835R variants 246 (top) that corresponds to bar graph in Figure 2—supplement 1D, 336 (middle) or 449 (bottom) that correspond to bar graph in Figure 2D. The proteins labeled with Alexa Fluor 594 in the presence of the indicated DNA (GT30 or AT30) stained with Sytox Blue in the absence (black) or presence of ATP (red). (see Materials and Methods for details).
 
 The new position of the connector domain brings it closer to the ATPase domain (Figure 1E, Video 1). To analyze this movement we combined two single-cysteine variants of MutS, labeled in the connector domain (residue 246) and the ATPase domain (residue 798) respectively, into heterodimers, and measured the FRET signal between these sites upon sliding clamp formation (Figure 2B, Figure 2—figure supplement 2). Indeed, after ATP addition the FRET increased, indicating that these residues come closer together. As this is measured in the absence of MutL it suggests that after mismatch binding, ATP is sufficient to induce movement of the connector domain away from the mismatch-recognition position.
 
@@ -102,29 +272,161 @@ To test whether DNA moves down into the new channel in solution, we analyzed FRE
 
 Based on these validations, we conclude that the observed MutS conformation in our crystal structure is induced by ATP after mismatch recognition. Since the new position of the DNA would allow MutS to fit as a loose ring around the DNA duplex (with a channel size similar to that of PCNA (Krishna et al., 1994)), consistent with free movement over DNA (Cho et al., 2012), we propose that this is the MutS sliding clamp conformation.
 
-## Orientation of MutLLN40 on MutS
+### Orientation of MutLLN40 on MutS
 
 In the structure MutLLN40 makes two interfaces with MutSΔC800. Interface 1 orients MutLLN40 on the ATPase and core domains of MutS. Recently, a loop in Bacillus subtilis MutS was found to be essential for MutL interaction (Lenhart et al., 2013). Although the equivalent loop is shorter in E. coli MutS and the explicit residues (F319/F320) are missing, the corresponding region is located within the ∼590 Å2 interface (interface 1) with MutLLN40.
 
-We validated the observed interaction at interface 1 by a crosslinking experiment with a short crosslinker. We created single-cysteine mutants MutS
+We validated the observed interaction at interface 1 by a crosslinking experiment with a short crosslinker. We created single-cysteine mutants MutSΔC800 A336C and MutLLN40 T218C (Figure 3A), which are located ∼7.4 Å apart in the structure, and then showed that we could crosslink them efficiently with a short cysteine-specific crosslinker (8 Å, BMOE), dependent on the presence of both mismatched DNA and ATP (Winkler et al., 2011). Only background crosslinking occurred when using MutSΔC800 D246C (connector domain) with MutLLN40 T218C (interface 1) under these conditions (Figure 3—figure supplement 1A), indicating that the crosslinking between MutSΔC800 A336C and MutLLN40 T218C is specific.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig3-v2.jpg)
 
-**Figure 3.:** ΔC800 sliding clamp with MutLLN40.(A) Crosslinking occurs between MutSΔC800 A336C and MutLLN40 T218C using BMOE (right panel), as suggested by the structure (left panel). (B) Spontaneous mutation rates after complementing MutS or MutL-deficient cells with the indicated mutants. Error bars represent 95% confidence intervals. (C) SPR assay to measure MutL binding to pre-formed MutS sliding clamps on end-blocked DNA. MutL contribution (green dotted line) is approached by subtracting MutS-only contribution (blue line) from the total signal (solid line). Data normalized to maximum MutS response. (D) MutL and MutS mutants with deficiency in MMR show reduced MutS/MutL complex formation in SPR. Error bars represent SD for averages between two experiments. (E) The yellow patch of MutSΔC800 interacts with MutLLN40 in the new conformation after rearrangement of the connector domain. (F) Residues in MutSΔC800/MutLLN40 interfaces. Red: full MMR deficiency upon mutation; orange: deficiency upon combination; white: mild effect.DOI: http://dx.doi.org/10.7554/eLife.06744.010
+**Figure 3.:** (A) Crosslinking occurs between MutSΔC800 A336C and MutLLN40 T218C using BMOE (right panel), as suggested by the structure (left panel). (B) Spontaneous mutation rates after complementing MutS or MutL-deficient cells with the indicated mutants. Error bars represent 95% confidence intervals. (C) SPR assay to measure MutL binding to pre-formed MutS sliding clamps on end-blocked DNA. MutL contribution (green dotted line) is approached by subtracting MutS-only contribution (blue line) from the total signal (solid line). Data normalized to maximum MutS response. (D) MutL and MutS mutants with deficiency in MMR show reduced MutS/MutL complex formation in SPR. Error bars represent SD for averages between two experiments. (E) The yellow patch of MutSΔC800 interacts with MutLLN40 in the new conformation after rearrangement of the connector domain. (F) Residues in MutSΔC800/MutLLN40 interfaces. Red: full MMR deficiency upon mutation; orange: deficiency upon combination; white: mild effect.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) MutSΔC800 D246C and MutLLN40 T218C do not crosslink efficiently with either a short (BMOE, 8 Å) or a long (BM[PEO]3, 18 Å) crosslinker, as e.g. seen by lack of MutS and MutL depletion. (B) MutS P595A/I597A/M759D shows ATPase activity with similar Km (9.5 ± 1 μM) as WT MutS (8.1 ± 0.7 μM) but differs in Kcat (mutant: 3.8 ± 0.1 min−1; WT 8.3 ± 0.2 min−1). Data points are averages between two measurements and error bars indicate standard deviations. (C) MutS P595A/I597A/M759D shows similar sliding clamp formation as WT MutS (assay on end-blocked 21-bp DNA with dT20 linker; Groothuizen et al., 2013). (D) Without preformed MutS sliding clamps, there is only little binding of MutL to DNA. (E) The region in the ATPase domain that is solvent exposed during mismatch recognition but showed reduced deuterium exchange upon MutL binding (red, residues 673–686) (Mendillo et al., 2009) is buried by the connector domain (light blue surface; orange patch is close to residues 673–686). (F) The association with the MutSΔC800 sliding clamp (blue/cyan) does not sterically hinder potential dimerization by the MutLLN40 domains (dimer modeled in green and grey as present in pdb entry 1NHJ).DOI: http://dx.doi.org/10.7554/eLife.06744.011
+**Figure 3—figure supplement 1.:** (A) MutSΔC800 D246C and MutLLN40 T218C do not crosslink efficiently with either a short (BMOE, 8 Å) or a long (BM[PEO]3, 18 Å) crosslinker, as e.g. seen by lack of MutS and MutL depletion. (B) MutS P595A/I597A/M759D shows ATPase activity with similar Km (9.5 ± 1 μM) as WT MutS (8.1 ± 0.7 μM) but differs in Kcat (mutant: 3.8 ± 0.1 min−1; WT 8.3 ± 0.2 min−1). Data points are averages between two measurements and error bars indicate standard deviations. (C) MutS P595A/I597A/M759D shows similar sliding clamp formation as WT MutS (assay on end-blocked 21-bp DNA with dT20 linker; Groothuizen et al., 2013). (D) Without preformed MutS sliding clamps, there is only little binding of MutL to DNA. (E) The region in the ATPase domain that is solvent exposed during mismatch recognition but showed reduced deuterium exchange upon MutL binding (red, residues 673–686) (Mendillo et al., 2009) is buried by the connector domain (light blue surface; orange patch is close to residues 673–686). (F) The association with the MutSΔC800 sliding clamp (blue/cyan) does not sterically hinder potential dimerization by the MutLLN40 domains (dimer modeled in green and grey as present in pdb entry 1NHJ).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** A) MutLLN40 (L) coelutes with crosslinked MutSΔC800/MutLLN40 complex (SL) from size-exclusion chromatography (right), after incubation with 100-bp DNA with a G:T mismatch and AMP-PNP, indicating that MutL can still dimerize in this complex.(B) Model for MSH2/MSH6 interaction with MLH1/PMS2, in which the N-terminus of MLH1 simultaneously binds to the connector domain of MSH2 and the APTase and core domains of MSH6.DOI: http://dx.doi.org/10.7554/eLife.06744.012
+**Figure 3—figure supplement 2.:** (B) Model for MSH2/MSH6 interaction with MLH1/PMS2, in which the N-terminus of MLH1 simultaneously binds to the connector domain of MSH2 and the APTase and core domains of MSH6.
 
-To further verify interface 1 between MutS and MutL, we tested whether mutations in the interface affected MMR activity in vivo, in a complementation assay with MutS or MutL deficient cells (Figure 3B,F, Table 2). We found several mutants of MutL (A138E, A138E/H139A, R55D/R57D, or combinations) and a triple mutant in MutS (P595A/I597A/M759D) that could not complement loss of wild type (WT) protein. We purified the mutants that impaired MMR and characterized their defects. The MutS triple mutant has a slight defect in ATPase activity but this does not impair its sliding clamp formation (Figure 3—figure supplement 1B,C), and other mutants with similar ATPase effects (e.g. MutS F596A) can almost fully reconstitute MMR (Junop et al., 2003), suggesting that the in vivo effect we observe is due to the perturbed interface with MutL.10.7554/eLife.06744.013Table 2.Mutation rates for MutS and MutL mutants as determined using in vivo complementation assaysDOI: http://dx.doi.org/10.7554/eLife.06744.013ProteinMutations per 107(95% confidence interval)MutS variant (MutL interface) Empty vector0.601(0.446–0.772) WT MutS0.0686(0.0408–0.101) MutS P595A/I597A0.0545(0.0310–0.0826) MutS M759D0.0819(0.0490–0.121) MutS Y563A0.0488(0.0272–0.0749) MutS P595A/I597A/M759D0.704(0.556–0.864) MutS Y563A/P595A/I597A0.317(0.233–0.411) MutS Y563A/P595A/I597A/M759D0.773(0.618–0.941)MutL variant (MutS interface) Empty vector5.43(4.00–7.00) WT His-MutL0.121(0.0542–0.206) His-MutL A138E2.76(2.12–3.46) His-MutL H139A0.103(0.0439–0.179) His-MutL A138E/H139A4.87(3.55–6.33) His-MutL R55D/R57D6.41(4.99–7.95) His-MutL R200D0.663(0.432–0.932) His-MutL R55D/R57D/H139A5.33(3.93–6.89) His-MutL R55D/R57D/A138E/H139A6.13(4.58–7.84) His-MutL R55D/R57D/H139A/R200D5.22(3.84–6.76) His-MutL R55D/R57D/A138E/H139A/R200D5.48(4.04–7.06)MutL variant (DNA binding) His-MutL R266E5.87(4.78–7.04) His-MutL R162E/R266E/R316E5.39(4.37–6.49)Mutation rates and 95% confidence intervals were determined using the Fluctuation AnaLysis CalculatOR (http://www.mitochondria.org/protocols/FALCOR.html) using the MSS-MLE method. For MutS, at least 24 independent colonies were picked; for MutL at least 12 independent colonies were picked.
+To further verify interface 1 between MutS and MutL, we tested whether mutations in the interface affected MMR activity in vivo, in a complementation assay with MutS or MutL deficient cells (Figure 3B,F, Table 2). We found several mutants of MutL (A138E, A138E/H139A, R55D/R57D, or combinations) and a triple mutant in MutS (P595A/I597A/M759D) that could not complement loss of wild type (WT) protein. We purified the mutants that impaired MMR and characterized their defects. The MutS triple mutant has a slight defect in ATPase activity but this does not impair its sliding clamp formation (Figure 3—figure supplement 1B,C), and other mutants with similar ATPase effects (e.g. MutS F596A) can almost fully reconstitute MMR (Junop et al., 2003), suggesting that the in vivo effect we observe is due to the perturbed interface with MutL.
+
+**Table 2.**
+ Mutation rates for MutS and MutL mutants as determined using in vivo complementation assays
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Mutations per 107</th>
+      <th>(95% confidence interval)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">MutS variant (MutL interface)</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>0.601</td>
+      <td>(0.446–0.772)</td>
+    </tr>
+    <tr>
+      <td>WT MutS</td>
+      <td>0.0686</td>
+      <td>(0.0408–0.101)</td>
+    </tr>
+    <tr>
+      <td>MutS P595A/I597A</td>
+      <td>0.0545</td>
+      <td>(0.0310–0.0826)</td>
+    </tr>
+    <tr>
+      <td>MutS M759D</td>
+      <td>0.0819</td>
+      <td>(0.0490–0.121)</td>
+    </tr>
+    <tr>
+      <td>MutS Y563A</td>
+      <td>0.0488</td>
+      <td>(0.0272–0.0749)</td>
+    </tr>
+    <tr>
+      <td>MutS P595A/I597A/M759D</td>
+      <td>0.704</td>
+      <td>(0.556–0.864)</td>
+    </tr>
+    <tr>
+      <td>MutS Y563A/P595A/I597A</td>
+      <td>0.317</td>
+      <td>(0.233–0.411)</td>
+    </tr>
+    <tr>
+      <td>MutS Y563A/P595A/I597A/M759D</td>
+      <td>0.773</td>
+      <td>(0.618–0.941)</td>
+    </tr>
+    <tr>
+      <td colspan="3">MutL variant (MutS interface)</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>5.43</td>
+      <td>(4.00–7.00)</td>
+    </tr>
+    <tr>
+      <td>WT His-MutL</td>
+      <td>0.121</td>
+      <td>(0.0542–0.206)</td>
+    </tr>
+    <tr>
+      <td>His-MutL A138E</td>
+      <td>2.76</td>
+      <td>(2.12–3.46)</td>
+    </tr>
+    <tr>
+      <td>His-MutL H139A</td>
+      <td>0.103</td>
+      <td>(0.0439–0.179)</td>
+    </tr>
+    <tr>
+      <td>His-MutL A138E/H139A</td>
+      <td>4.87</td>
+      <td>(3.55–6.33)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R55D/R57D</td>
+      <td>6.41</td>
+      <td>(4.99–7.95)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R200D</td>
+      <td>0.663</td>
+      <td>(0.432–0.932)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R55D/R57D/H139A</td>
+      <td>5.33</td>
+      <td>(3.93–6.89)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R55D/R57D/A138E/H139A</td>
+      <td>6.13</td>
+      <td>(4.58–7.84)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R55D/R57D/H139A/R200D</td>
+      <td>5.22</td>
+      <td>(3.84–6.76)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R55D/R57D/A138E/H139A/R200D</td>
+      <td>5.48</td>
+      <td>(4.04–7.06)</td>
+    </tr>
+    <tr>
+      <td colspan="3">MutL variant (DNA binding)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R266E</td>
+      <td>5.87</td>
+      <td>(4.78–7.04)</td>
+    </tr>
+    <tr>
+      <td>His-MutL R162E/R266E/R316E</td>
+      <td>5.39</td>
+      <td>(4.37–6.49)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mutation rates and 95% confidence intervals were determined using the Fluctuation AnaLysis CalculatOR (http://www.mitochondria.org/protocols/FALCOR.html) using the MSS-MLE method. For MutS, at least 24 independent colonies were picked; for MutL at least 12 independent colonies were picked._
 
 To assess the effect of these mutations on binding of MutL to the transient MutS sliding clamp we designed a two-stage assay using Surface Plasmon Resonance (SPR). We first formed and trapped MutS sliding clamps on 100-bp end-blocked DNA in the presence of ATP (Groothuizen et al., 2013). Next, MutL was injected, which could then bind to these MutS clamps. By subtraction of the MutS signal, the contribution of MutL could be evaluated for the different mutants (Figure 3C), since MutL alone shows no DNA binding under these conditions (Figure 3—figure supplement 1D). Indeed the interface 1 mutants that were deficient for MMR conferred a deficiency in MutS/MutL complex formation (Figure 3D).
 
-## MutS sliding clamp recognition by MutL
+### MutS sliding clamp recognition by MutL
 
 The rearrangement of the connector domain creates a second interface with MutLLN40 (interface 2, Figure 3E). Previous deuterium exchange experiments (Mendillo et al., 2009) indicated that the connector domain interacts with MutL, particularly via MutS glutamines 211 and 212. Indeed in our structure these residues are buried within this ∼670 Å2 interface with MutLLN40 (Figure 3F). Interestingly, the deuterium exchange experiments identified a second region on the MutS surface that was protected upon MutL interaction in the ATPase domain (residues 673–686). These residues are located in the ‘signature helix’ of MutS (Hopfner and Tainer, 2003) and in the complex structure this region is masked by the MutSΔC800 connector domain in its new position (Figure 3—figure supplement 1E).
 
@@ -138,33 +440,33 @@ MutL proteins dimerize through the C-terminal LC20 domains. The LN40 domains are
 
 The stoichiometry of the MutS/MutL complex in vivo is a topic of interest (Hombauer et al., 2011; Elez et al., 2012). To obtain crystallizable complexes, MutLLN40 was bound to each MutSΔC800 subunit in our experiments, but during MMR a symmetric complex may not be necessary. Indeed the asymmetry of the eukaryotic MMR proteins suggest that this is not required and that a single heterodimeric MutLα will bind to one MSH2/MSH6 or MSH2/MSH3 heterodimer. Literature suggests that interface 2 will be made with MSH2 (Mendillo et al., 2009), implying that interface 1 will be with MSH6. The observed MutLLN40 protein would then correlate with the MLH1 subunit (Plotz et al., 2003) (Figure 3—figure supplement 2B).
 
-## Binding to MutS positions MutL on DNA
+### Binding to MutS positions MutL on DNA
 
-MutL and homologs have weak DNA binding ability (
+MutL and homologs have weak DNA binding ability (Bende and Grafström, 1991; Ban et al., 1999; Hall et al., 2001; Plotz et al., 2003) which is only clearly observed in low salt conditions, and retention of MutS on DNA upon MutL interaction has been observed (Drotschmann et al., 1998; Schofield et al., 2001). Although different from the proposed DNA orientation in the crystal (Figure 2—figure supplement 1B), a model can be constructed in which the DNA running through the channel in the MutS sliding clamp is simultaneously bound by the proposed DNA binding grooves of the MutLLN40 subunits (Schorzman et al., 2011) (Figure 4A, Figure 4—figure supplement 1A). While such DNA binding may require additional conformational changes of MutL, it suggests a mechanism where MutS loads MutL onto DNA.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig4-v2.jpg)
 
-**Figure 4.:** (A) Model of DNA binding by the MutSΔC800/MutLLN40 complex. Three arginines in the MutLLN40 DNA-binding groove are shown as red spheres. (B) In the presence of ATP, MutSΔC800 has a fast off-rate from 100-bp DNA and MutLLN40 alone does not bind DNA under physiological salt (150 mM KCl), while the crosslinked MutSΔC800/MutLLN40 complex releases slowly from DNA. (C,D) Mutations in the DNA-binding groove of MutL reduce its DNA-binding ability (observed in low salt, 50 mM KCl) (C) and affect release rates of the MutSΔC800/MutLLN40 complex in physiological salt conditions (D).DOI: http://dx.doi.org/10.7554/eLife.06744.014
+**Figure 4.:** (A) Model of DNA binding by the MutSΔC800/MutLLN40 complex. Three arginines in the MutLLN40 DNA-binding groove are shown as red spheres. (B) In the presence of ATP, MutSΔC800 has a fast off-rate from 100-bp DNA and MutLLN40 alone does not bind DNA under physiological salt (150 mM KCl), while the crosslinked MutSΔC800/MutLLN40 complex releases slowly from DNA. (C,D) Mutations in the DNA-binding groove of MutL reduce its DNA-binding ability (observed in low salt, 50 mM KCl) (C) and affect release rates of the MutSΔC800/MutLLN40 complex in physiological salt conditions (D).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** ΔC800/MutLLN40 complex.(A) The model for MutSΔC800/MutLLN40 complex on DNA (orange) sterically allows for LN40 dimerization (dimer modeled in green and grey as present in pdb entry 1NHJ). (B) Analysis as in Figure 4B, but using shorter, 41-bp mismatched DNA (ATAGGACGCTGACACTGGTGCTTGGCAGCTTCTAATTCGAT annealed with ATCGAATTAGAAGCTGCCAGGCACCAGTGTCAGCGTCCTAT) shows that crosslinked LN40 slows down the MutS sliding clamp on with a G:T mismatch, but point mutations in the MutLLN40 DNA-binding groove can abolish this. (C) Absolute response from the assay on 41-bp DNA fitted (single-site binding mode) to estimate maximum signal. Comparison shows that maximum response for MutSΔC800/MutLLN40 binding (150 RU) is 45% higher than for MutSΔC800 alone (104 RU). Since the MutSΔC800/MutLLN40 complex is 43% larger than MutSΔC800 dimer alone, this indicates that in this assay a single MutSΔC800/MutLLN40 complex binds the DNA duplex. (D) Co-injection of WT MutL results in slower release from DNA than MutSΔC800 alone, while uncrosslinked MutLLN40 only has a minor effect (traces normalized to maximum response). (E) While end-blocks on the DNA slow down MutS release, there is no effect on the already slow MutSΔC800/MutLLN40 release. This is more pronounced for WT MutS, which forms more stable dimers than MutSΔC800. Crosslinked MutLLN40 with mutations in the DNA-binding groove is deficient in the ability to retain MutSΔC800 on DNA. (F) Normalized overlay of the 1280 nM traces from Figure 4B,C.DOI: http://dx.doi.org/10.7554/eLife.06744.015
+**Figure 4—figure supplement 1.:** (A) The model for MutSΔC800/MutLLN40 complex on DNA (orange) sterically allows for LN40 dimerization (dimer modeled in green and grey as present in pdb entry 1NHJ). (B) Analysis as in Figure 4B, but using shorter, 41-bp mismatched DNA (ATAGGACGCTGACACTGGTGCTTGGCAGCTTCTAATTCGAT annealed with ATCGAATTAGAAGCTGCCAGGCACCAGTGTCAGCGTCCTAT) shows that crosslinked LN40 slows down the MutS sliding clamp on with a G:T mismatch, but point mutations in the MutLLN40 DNA-binding groove can abolish this. (C) Absolute response from the assay on 41-bp DNA fitted (single-site binding mode) to estimate maximum signal. Comparison shows that maximum response for MutSΔC800/MutLLN40 binding (150 RU) is 45% higher than for MutSΔC800 alone (104 RU). Since the MutSΔC800/MutLLN40 complex is 43% larger than MutSΔC800 dimer alone, this indicates that in this assay a single MutSΔC800/MutLLN40 complex binds the DNA duplex. (D) Co-injection of WT MutL results in slower release from DNA than MutSΔC800 alone, while uncrosslinked MutLLN40 only has a minor effect (traces normalized to maximum response). (E) While end-blocks on the DNA slow down MutS release, there is no effect on the already slow MutSΔC800/MutLLN40 release. This is more pronounced for WT MutS, which forms more stable dimers than MutSΔC800. Crosslinked MutLLN40 with mutations in the DNA-binding groove is deficient in the ability to retain MutSΔC800 on DNA. (F) Normalized overlay of the 1280 nM traces from Figure 4B,C.
 
 We tested for MutLLN40 loading onto DNA in the context of the MutS/MutL complex in an SPR assay, comparing MutSΔC800 alone with MutSΔC800 crosslinked to MutLLN40 when it is flowed over 100-bp DNA with a G:T mismatch in the presence of ATP (Figure 4B). MutSΔC800 alone displays fast release from the DNA due to ATP-dependent sliding-clamp formation (Groothuizen et al., 2013), as shown by the effect of blocking the end of the DNA (Figure 4—figure supplement 1E). The presence of crosslinked MutLLN40 greatly reduces the rate of release, suggesting additional DNA binding. The magnitude of the signal in response units on a 41-bp oligomer shows that a single MutSΔC800/MutLLN40 complex is sufficient for this effect (Figure 4—figure supplement 1B,C). This delay in release from DNA is also observed when using a mixture of WT MutL and MutSΔC800, although to a lesser extent (Figure 4—figure supplement 1D). The remaining slow release of the crosslinked complex is not affected by blocking of the free DNA end by antibody (Figure 4—figure supplement 1E) indicating that the constitutive interaction with crosslinked MutLLN40 completely stops MutSΔC800 dissociation from DNA ends.
 
 To validate that the slower release from DNA is indeed due to MutLLN40 binding to DNA, we made point mutants of the MutLLN40 protein and crosslinked them to MutS. Mutation R266E reduces DNA binding by MutL (Junop et al., 2003; Robertson et al., 2006) (Figure 4B), most pronounced in full-length context. This mutation also reduces the ability of crosslinked MutLLN40 to retain the MutSΔC800 sliding clamp on DNA (Figure 4D, Figure 4—figure supplement 1B,F). When introducing two additional mutations (R162E and R316E) in the MutLLN40 DNA binding site as suggested by the crystal structure (Figure 4A), DNA binding is completely abolished (Figure 4C) and the MutSΔC800/MutLLN40 complex releases as fast as MutSΔC800 alone (Figure 4D, Figure 4—figure supplement 1B,F). This indicates that MutL binds DNA when interacting with the MutS sliding clamp.
 
-## MutL is loaded onto DNA after MutS releases the mismatch, which is essential in MMR
+### MutL is loaded onto DNA after MutS releases the mismatch, which is essential in MMR
 
-To assess whether the loading of MutL
+To assess whether the loading of MutLLN40 onto DNA is kinetically distinct from MutS mismatch recognition, we set up an assay to separate events. We read out mismatch recognition (Lamers et al., 2000; Obmolova et al., 2000; Warren et al., 2007) by the kinking of DNA, which can be assessed using 45-bp heteroduplex DNA labeled with Alexa fluorophores on each side of the mismatch (Cristóvão et al., 2012), Figure 5A, Figure 5—figure supplement 1A), in a stopped-flow set up. In parallel we follow DNA interaction using fluorescence polarization (FP) of TAMRA-labeled DNA with the same sequence. This shows that the kinking is concurrent with DNA binding by MutSΔC800, while kinking is not observed when homoduplex is used (Figure 5A, Figure 5—figure supplement 1A). When the assay is performed in the presence of ATP, MutSΔC800 binds and kinks the DNA but subsequently releases due to sliding clamp formation, after which an equilibrium is reached between rebinding and release (Figure 5B, Figure 5—figure supplement 1B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig5-v2.jpg)
 
-**Figure 5.:** (A) Stopped-flow FRET and FP assay shows kinking of 45-bp DNA by MutSΔC800 binding only if there is a mismatch. Magnitude of FRET events are indicated by stars in the cartoon. (B) While MutSΔC800 initially kinks the DNA and subsequently releases in the presence of ATP, the MutSΔC800/MutLLN40 shows a secondary FP event without kinking the DNA. (C) Nicking assay of mismatch containing closed circular DNA (ccDNA) shows that WT or single-cysteine MutL can activate MutH, while mutations in the DNA-binding groove of MutL strongly impair the activation. (D) Spontaneous mutation rates after complementing MutL-deficient cells shows that the DNA-binding ability of MutL is essential for MMR in vivo. Error bars represent 95% confidence intervals. (E) Model for MMR initiation. After MutS undergoes an ATP-induced conformational change to allow binding of both subunits to one MutL molecule, MutL N-termini can interact and possibly dimerize, to be loaded onto DNA where MutL can activate downstream effectors.DOI: http://dx.doi.org/10.7554/eLife.06744.016
+**Figure 5.:** (A) Stopped-flow FRET and FP assay shows kinking of 45-bp DNA by MutSΔC800 binding only if there is a mismatch. Magnitude of FRET events are indicated by stars in the cartoon. (B) While MutSΔC800 initially kinks the DNA and subsequently releases in the presence of ATP, the MutSΔC800/MutLLN40 shows a secondary FP event without kinking the DNA. (C) Nicking assay of mismatch containing closed circular DNA (ccDNA) shows that WT or single-cysteine MutL can activate MutH, while mutations in the DNA-binding groove of MutL strongly impair the activation. (D) Spontaneous mutation rates after complementing MutL-deficient cells shows that the DNA-binding ability of MutL is essential for MMR in vivo. Error bars represent 95% confidence intervals. (E) Model for MMR initiation. After MutS undergoes an ATP-induced conformational change to allow binding of both subunits to one MutL molecule, MutL N-termini can interact and possibly dimerize, to be loaded onto DNA where MutL can activate downstream effectors.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/06744/elife-06744-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** ΔC800 and MutSΔC800/MutLLN40.(A) Stopped-flow FRET and FP assay shows kinking of 45-bp DNA by MutS binding only if there is a mismatch. Separate traces for the fluorophores are shown (orange: acceptor; green: donor fluorophore; grey: FP). Size of FRET events are indicated by stars. (B) While MutSΔC800 initially kinks the DNA and subsequently releases in the presence of ATP, the MutSΔC800/MutLLN40 complex remains bound to unkinked DNA. (C) Using WT MutL (400 nM) mixed with the MutSΔC800 in this assay results in more binding at equilibrium than MutSΔC800 alone, while there is less FRET than for MutSΔC800 alone. Under the graph with the FRET ratio (black: FRET; grey: FP), separate traces for the fluorophores are shown as in (A).DOI: http://dx.doi.org/10.7554/eLife.06744.017
+**Figure 5—figure supplement 1.:** (A) Stopped-flow FRET and FP assay shows kinking of 45-bp DNA by MutS binding only if there is a mismatch. Separate traces for the fluorophores are shown (orange: acceptor; green: donor fluorophore; grey: FP). Size of FRET events are indicated by stars. (B) While MutSΔC800 initially kinks the DNA and subsequently releases in the presence of ATP, the MutSΔC800/MutLLN40 complex remains bound to unkinked DNA. (C) Using WT MutL (400 nM) mixed with the MutSΔC800 in this assay results in more binding at equilibrium than MutSΔC800 alone, while there is less FRET than for MutSΔC800 alone. Under the graph with the FRET ratio (black: FRET; grey: FP), separate traces for the fluorophores are shown as in (A).
 
 In the presence of the crosslinked complex we observed a two-step sequence of events (Figure 5B). The first increase in FP is consistent with mismatch recognition by MutSΔC800, simultaneous with an increase in FRET due to kinking of the DNA. A second event increases FP even more but reduces the FRET signal to below starting value (Figure 5—figure supplement 1B). This can be explained by release of the mismatch (unkinking) and sliding clamp formation. Now, however, the complex does not slide off the DNA but instead the MutLLN40 is docked onto the DNA to keep the complex bound, as observed in the SPR assays (Figure 4B) and by the increase in FP (Figure 5B). At this time, since DNA has been pushed to the new channel, it is not kinked any more but kept relatively rigid by the MutLLN40 binding. This, and interaction of the fluorophore itself with bound protein, can explain the lowered FRET. A similar straightening of DNA relative to the unbound DNA was previously observed upon ATP-dependent MutS release in SAXS experiments using DNA labelled with gold-clusters (Hura et al., 2013a). The effect is also present to lesser extent when using a mixture of MutSΔC800 with WT MutL in this setup (Figure 5—figure supplement 1C). The result indicates that MutLLN40 loading occurs after mismatch recognition and sliding clamp formation by MutSΔC800.
 
@@ -172,7 +474,11 @@ Since we observed that upon sliding clamp formation, MutS loads MutL onto DNA, w
 
 ## Discussion
 
-Taken together, our data reveal how the large conformational changes within MutS after mismatch recognition promote MMR activation. In the mismatch and ATP activated state MutS pushes DNA into a new channel, which allows sliding of the protein over DNA. The new state with the clamps crossed over the DNA explains the stability of the MutS sliding clamp on DNA (Schofield et al., 2001; Lebbink et al., 2010; Jeong et al., 2011), as electrostatic interactions between DNA and the positive charges lining the new channel may stabilize the new clamp conformation. The conformational change pushes the connector domain away from the center and on top of the ATPase domains, to provide a second interface for the MutL protein that binds to the opposing MutS subunit, while DNA in the new MutS channel can also contribute to MutL binding. This loads the N-terminal domains of MutL onto the DNA and the MutL binding delays the sliding of MutS (Figure 5E, Video 2). The loading step of MutL onto DNA is required for MutH activation and nicking (Figure 5C) (Junop et al., 2003; Robertson et al., 2006), while UvrD loading and activation at this nick (Yamaguchi et al., 1998) would follow similar validation. In this way, the requirement of the MutS conformational change for full MutL interaction is a sophisticated validation mechanism, which presumably is conserved in the eukaryotic homologs. It ensures that repair is only initiated when necessary, and due to the MMR system DNA replication can be completed with few errors incorporated in the genome.10.7554/eLife.06744.018Video 2.Model for initiation of DNA mismatch repair.After MutS (cyan/blue) has recognized a mismatch in DNA (in orange; mismatch shown as pink spheres), it will bind ATP which triggers a conformational change in which the subunits tilt across each other and the connector domains move outward. This pushes the DNA to a new channel, where MutS fits as a loose ring around the DNA duplex and can behave as a sliding clamp. The N-terminal domain of MutL (green) can specifically recognize this state by binding two interfaces simultaneously. This loads MutL onto the DNA, where the N-terminal domains could dimerize and downstream effectors can be activated.DOI: http://dx.doi.org/10.7554/eLife.06744.018
+Taken together, our data reveal how the large conformational changes within MutS after mismatch recognition promote MMR activation. In the mismatch and ATP activated state MutS pushes DNA into a new channel, which allows sliding of the protein over DNA. The new state with the clamps crossed over the DNA explains the stability of the MutS sliding clamp on DNA (Schofield et al., 2001; Lebbink et al., 2010; Jeong et al., 2011), as electrostatic interactions between DNA and the positive charges lining the new channel may stabilize the new clamp conformation. The conformational change pushes the connector domain away from the center and on top of the ATPase domains, to provide a second interface for the MutL protein that binds to the opposing MutS subunit, while DNA in the new MutS channel can also contribute to MutL binding. This loads the N-terminal domains of MutL onto the DNA and the MutL binding delays the sliding of MutS (Figure 5E, Video 2). The loading step of MutL onto DNA is required for MutH activation and nicking (Figure 5C) (Junop et al., 2003; Robertson et al., 2006), while UvrD loading and activation at this nick (Yamaguchi et al., 1998) would follow similar validation. In this way, the requirement of the MutS conformational change for full MutL interaction is a sophisticated validation mechanism, which presumably is conserved in the eukaryotic homologs. It ensures that repair is only initiated when necessary, and due to the MMR system DNA replication can be completed with few errors incorporated in the genome.
+
+![Video 2.](https://cdn.elifesciences.org/articles/06744/elife-06744-media2.mpg.jpg)
+
+**Video 2.:** After MutS (cyan/blue) has recognized a mismatch in DNA (in orange; mismatch shown as pink spheres), it will bind ATP which triggers a conformational change in which the subunits tilt across each other and the connector domains move outward. This pushes the DNA to a new channel, where MutS fits as a loose ring around the DNA duplex and can behave as a sliding clamp. The N-terminal domain of MutL (green) can specifically recognize this state by binding two interfaces simultaneously. This loads MutL onto the DNA, where the N-terminal domains could dimerize and downstream effectors can be activated.
 
 The complete transition from mismatch binding to sliding clamp state is likely to take multiple steps (Qiu et al., 2012). First a single ATP will bind, leading to a stabilized asymmetric nucleotide state of MutS on the mismatch (Antony and Hingorani, 2004; Antony et al., 2006; Monti et al., 2011), followed by binding of the second ATP (Mazur et al., 2006; Hargreaves et al., 2010). Meanwhile MutS will undergo two separate ATP-induced events, the tilting of the subunits that push DNA into a new channel and the rearrangement of the connector domain (and the associated mismatch binding domain) that together generate a new MutL interface.
 
@@ -186,21 +492,21 @@ In conclusion, we have used single-cysteine mutants and chemical crosslinking to
 
 ## Materials and methods
 
-## Proteins
+### Proteins
 
 MutS mutants were created in the mutS gene in vector pET-3D (Lamers et al., 2000; Giron-Monzon et al., 2004; Manelyte et al., 2006; Winkler et al., 2011) or vector pET15b (Manelyte et al., 2006; Winkler et al., 2011) (for His-tagged MutS constructs in FRET assays). MutL mutants were generated in the mutL gene in plasmid pTX418 (Feng and Winkler, 1995; Ban and Yang, 1998). Single-cysteine MutS and MutL constructs were obtained as described (Giron-Monzon et al., 2004; Groothuizen et al., 2013). Mutant and WT MutS and MutL proteins were purified as described previously (Lamers et al., 2000; Manelyte et al., 2006), except that in the buffers KCl was used instead of NaCl (final gel filtration buffer for MutS: 25 mM Hepes pH 7.5, 150 mM KCl, 1 mM DTT; for MutL: 20 mM Tris pH 8.0, 0.5 M KCl, 10% glycerol, 1 mM DTT).
 
 MutH was purified as follows: E. coli BL21(DE3) cells were transformed with MutH expression plasmid pTX417 (Feng and Winkler, 1995) and plated onto LB agar with 50 μg/ml carbenicillin. A colony was picked and cells were grown in LB with 50 μg/ml carbenicillin at 37°C to OD600 ∼0.6 and induced with 1 mM isopropyl 1-thio-β-D-galactopyranoside for 4 hr. Cells were harvested and resuspended in binding buffer (25 mM Tris pH 8.0, 300 mM KCl, 10 mM imidazole, 0.2 mM DTT) with 1 mM PMSF and protease inhibitors (Roche Diagnostics, F. Hoffmann-La Roche Ltd, Switzerland) and lysed by sonication. The cleared supernatant was incubated with Talon resin (Clonetech Laboratories, Takara holdings inc, Japan) for 30 min on ice. Beads were washed using binding buffer with 1 M KCl, and MutH was eluted with 250 mM imidazole in binding buffer. The His-tag was removed by cleavage with Thrombin protease (∼5 units thrombin/mg MutH; GE Healthcare, Fairfield, California) while dialyzing against 20 mM Tris pH 8.0, 100 mM KCl, 0.2 mM DTT for 2 hr at 22°C followed by overnight incubation at 4°C. The mixture was brought to 20 mM imidazole, incubated with Talon beads to remove uncleaved protein, and loaded onto a heparin column equilibrated in buffer A (25 mM Tris pH 8.0, 0.1 M KCl, 1 mM DTT). MutH was eluted using a gradient of 0.1–1.0 M KCl in buffer A, pooled and diluted twofold with buffer A and loaded onto a MonoQ column equilibrated with buffer A. MutH was eluted using the same gradient, pooled and dialyzed overnight against 25 mM MES pH 5.5, 150 mM KCl, 1 mM DTT. MutH was loaded onto a MonoS column equilibrated with 25 mM MES pH 5.5, 0.1 M KCl, 1 mM DTT and eluted using a 0.1–1.0 M KCl gradient. Peak fractions were pooled, concentrated using Centriprep 10 and loaded onto a Superdex 75 column equilibrated with 25 mM Tris pH 8.0, 250 mM KCl, 1 mM DTT. Peak fractions were pooled, concentrated, flash frozen in 25 mM Tris pH 8.0, 250 mM KCl, 1 mM DTT, 50% glycerol and stored at −80°C.
 
-## Small-scale protein crosslinking
+### Small-scale protein crosslinking
 
 Single cysteine MutSΔC800 and His-tagged MutLLN40 proteins were reduced with 10 mM DTT for 20 min and O/N dialyzed into buffer B (25 mM Hepes pH 7.5, 400 mM KCl, 5 mM MgCl2, 10% glycerol) at 4°C, to remove DTT. MutSΔC800 (0.57 μM) was incubated with 100-bp DNA containing a G:T mismatch (AAACAGGCTTAGGCTGGAGCTGAAGCTTAGCTTAGGATCATCGAGGATCGAGCTCGGTGCAATTCAGCGGTACCCAATTCGCCCTATAGGCATCCAGGTT annealed with AACCTGGATGCCTATAGGGCGAATTGGGTACCGCTGAATTGCACCGAGCTTGATCCTCGATGATCCTAAGCTAAGCTTCAGCTCCAGCCTAAGCCTGTTT, 0.29 μM) for 25 min on ice in buffer C (25 mM Hepes pH 7.5, 125 mM KCl, 5 mM MgCl2). MutLLN40 (4 μM) was incubated with 5 mM ATP for 25 min on ice. MutSΔC800/DNA and MutLLN40/ATP samples were then combined to final protein concentrations 0.4 μM (DNA concentration 0.2 μM) and additional ATP was added to a final concentration of 1 mM. Samples were then incubated for 10 min at RT, after which they were adjusted to 37°C for 2 min. Crosslinker (BMOE or BM[PEO]3, Pierce, Thermo Fisher scientific, Waltham, MA, dissolved to 0.5 mM in DMSO) was added to a final concentration of 50 μM and samples were incubated for exactly 2 min at 37°C. Reactions were stopped by adding protein loading buffer with DTT and crosslinking was assessed on SDS-PAGE gels stained with coomassie.
 
-## MutSΔC800/MutLLN40 complex purification
+### MutSΔC800/MutLLN40 complex purification
 
 To obtain crystallizable amounts of crosslinked MutSΔC800/MutLLN40 complex, equimolar amounts of MutSΔC800 D246C and His-tagged MutLLN40 N131C (or with additional arginine mutations) were reduced and dialyzed separately, as described above. MutLLN40 was diluted to 2 μM in buffer D (25 mM Hepes pH 7.5, 400 mM KCl, 10% glycerol) and incubated with a 5-fold molar excess of BM(PEO)3 (from 50 mM solution in DMSO) for 10 min at 4°C. The low MutLLN40 concentration prevented the formation of MutLLN40-MutLLN40 crosslinks, while the excess crosslinker ensured each MutLLN40 to react with one maleimid group so that the other reactive side of the crosslinker remained available. The MutLLN40 was then bound to Talon beads and the beads were subsequently washed with 20 column volumes of buffer D and 20 column volumes of buffer E (25 mM Hepes pH 7.5, 150 mM KCl, 10% glycerol, 5 mM imidazole) to remove excess crosslinker. MutSΔC800 was incubated for 10 min with equimolar amounts of 30-bp DNA with a G:T mismatch at position 9 (AGCTGCCAGGCACCAGTGTCAGCGTCCTAT annealed with ATAGGACGCTGACACTGGTGCTTGGCAGCT) in buffer C. The DNA-bound MutSΔC800 was then added to the Talon-bound MutLLN40, and 30-fold excess ATP was immediately added after which everything was incubated to crosslink for 1 hr at 4°C. The beads were then washed with 10 column volumes buffer E to remove MutSΔC800-MutSΔC800 crosslinks, after which the protein was eluted in buffer E with 300 mM imidazole and DTT was added to quench excess crosslinker. The protein was bound to a 5 ml heparin column (GE Healthcare, Fairfield, California) and eluted with a 0.1–1 M KCl gradient, which removed the DNA from the protein. The elution was subsequently concentrated and purified with size-exclusion chromatography in buffer B containing 1 mM DTT, for which two S200 16/60 columns were coupled resulting in one long column. The MutSΔC800/MutLLN40 protein peak was then concentrated, after which the MutSΔC800 concentration was estimated using ε = 95,238 and the whole process (including DTT incubation and dialysis) was repeated to obtain S2L2 complexes. The resulting protein (5–10% final yield) was concentrated to 80–90 μM (expressed in MutS monomer concentrations; ε = 94,660) and flash-frozen until further use.
 
-## Crystallization and structure solution
+### Crystallization and structure solution
 
 For crystallization, 50 μM MutSΔC800/MutLLN40 complex was incubated with 25 μM DNA containing a G:T mismatch (27-bp: TGCCAGGCACCAGTGTCAGCGTCCTAT annealed with ATAGGACGCTGACACTGGTGCTTGGCA or 100-bp, same sequence as above) for 25 min on ice. AMP-PNP was subsequently added to a concentration of 1 mM and the protein was crystallized at 4°C using vapor diffusion in 9–12% PEG-8000, 100 mM Tris pH 7.0, 200 mM MgCl2, and 80–450 mM sodium malonate. Microseeding was used to increase crystal nucleation. Crystals were cryoprotected in mother liquor supplemented with 25% ethylene glycol and 100 mM KCl before flash-cooling in liquid nitrogen. Diffraction data were collected at 100 K at beamline ID-29 at the ESRF or beamline PX-III at the SLS.
 
@@ -208,7 +514,7 @@ Crystallographic data were processed with XDS (Kabsch, 2010) or iMOSFLM (Powell 
 
 Refinement was first performed using rigid body refinement in REFMAC5 (Murshudov et al., 1997, 2011), for which the following domains of MutS were defined: residues 128–266, 267–765, 766–800; and for MutL: residues 20–204, 205–331. Next, limited restrained refinements were performed, first using ProSMART-generated external restraints (Nicholls et al., 2012) to the PDB_REDO-optimized (Joosten et al., 2012) entries of chain A of 1W7A and chain A of 1BKN in order to ensure consistency with prior observations, followed by TLS and jelly-body refinement in latter stages. PDB_REDO-optimized homologues were used for external restraint generation in order to maximize reliability of the prior structural information. All refinements were performed using REFMAC5 (Murshudov et al., 1997, 2011). During refinement, clear density became visible for missing residues 150–164 of the MutLLN40 subunits, which followed the conformation of PDB entry 1NHJ. Interestingly, this conformation was different from that in the MutL search model state, indicating this to be real signal, and not due to bias from the search model. Also, AMP-PNP could be placed in density in the nucleotide binding sites of MutS. During intermediate stages, PDB_REDO and MolProbity (Chen et al., 2010) were used to correct geometry and perform side-chain flips. After refinement, all structures were in the 97th–100th Clashscore and 98th–100th MolProbity score percentiles. Refinement and data collection statistics can be found in Table 1. Figures and videos were generated with MacPyMOL (http://www.pymol.org), interpolations between conformations were created with LSQMAN (Kleywegt and Jones, 1994) and electrostatic surface with CCP4mg (Winn et al., 2011). Protein interface areas were calculated using PISA (Winn et al., 2011) for which the missing loop of residues 126–131 of MutLLN40 in interface 2 was modeled as in PDB entry 1NHJ.
 
-## MutS conformational changes
+### MutS conformational changes
 
 To look at changes within MutS dimers, we used MutS D835R dimer (Manelyte et al., 2006; Groothuizen et al., 2013) variants that do not form tetramers, with single cysteines in positions R449C (His-tagged), D246C, S798C, or A336C. The proteins were labeled with Alexa Fluor 488 or Alexa Fluor 594 maleimide (Invitrogen, Thermo Fisher scientific, Waltham, MA) according to the manufacturers instruction. Excessive dye was removed using Zeba Spin Desalting columns (Thermo Fisher scientific, Waltham, MA) and the degree of labeling determined from the absorbance spectra recorded from 220–700 nm (nanodrop) according to the manufactures instructions.
 
@@ -216,34 +522,34 @@ Clamp-domain crossover movement and connector domain movement within MutS dimers
 
 MutS-DNA FRET was measured in a Hitachi Fluorescence spectrofluorimeter F-4500 (Hitachi Ltd, Japan) (Program FL Solutions 2.0). Fluorescence emission spectra (600–700 nm) were recorded with excitation at either 435 nm (5 nm slit width) for FRET or 590 nm (5 nm slit width) for direct acceptor measurements. FRET was determined by the ratio between signal at 435 and 615 nm while direct acceptor was determined by the ratio between signal at 590 and 615 nm and after correction for spectral crosstalk the ratio FRET/acceptor was calculated. We used 30-bp DNA with or without a G:T mismatch (AATTGCACCGAGCTTGATCCTCGATGATCC annealed with complementary strand or GGATCATCGAGGATCGAGCTCGGTGCAATT), where the T-containing strand had 5' and 3' digoxigenin labels so that both DNA ends were blocked with anti-digoxigenin Fab fragments (Roche Diagnostics, F. Hoffmann-La Roche Ltd, Switzerland). 100 nM of the DNA with 6 µM SYTOX Blue (Invitrogen, Thermo Fisher scientific, Waltham, MA) was mixed with 200 nM MutS variants labeled with Alexa Fluor 594 in buffer F, after which ATP was added to 1 mM to induce the conformational change in MutS.
 
-## In vivo MMR complementation
+### In vivo MMR complementation
 
 Spontaneous mutation rates were assessed using acquired rifampicin resistance. Strains KR1517 (mutS, as in [Lamers et al., 2004]) or GM4250 (gift from M Marinus, [Aronshtam and Marinus, 1996]) (mutL) were transformed with empty vector or plasmid containing WT or mutant MutS or His-MutL genes, and plated on LB/agar plates with 50 μg/ml carbenicillin and 30 μg/ml kanamycin. After overnight incubation at 37°C, single colonies were picked and grown in 10 ml LB with antibiotics to OD600 ∼1.0. Next, 0.33 × 108 or 1 × 108 cells were plated on LB plates with antibiotics and 0.1 mg/ml rifampicin. Plates were O/N incubated at 37°C and rifampicin resistant colonies were counted. Mutation rates and 95% confidence intervals were determined using Fluctuation AnaLysis CalculatOR with the MSS maximum-likelihood method (http://www.mitochondria.org/protocols/FALCOR.html).
 
-## DNA binding kinetics
+### DNA binding kinetics
 
 SPR experiments for binding MutSΔC800 D246C or crosslinked MutSΔC800/MutLLN40 complex to DNA were performed in a Biacore T200 system (GE Healthcare, Fairfield, CA) as described (Groothuizen et al., 2013). The experiments were performed in SPR buffer containing 25 mM Hepes pH 7.5, 150 mM KCl, 5 mM MgCl2, 1 mM DTT, 0.05% TWEEN-20 and 1 mM ATP, using immobilized biotinylated 100-bp DNA (same sequence as above) with a fluorescein moiety at the other end.
 
-## MutL-MutS binding assay
+### MutL-MutS binding assay
 
 Full-length His6-MutL binding to the full-length MutS sliding clamp was assessed using a two-step SPR assay. The resulting graphs are not strictly affinity curves, as changes in MutS stability on DNA contribute to the observed response, but serve to assess the effect of mutations. The SPR buffer was supplemented with 20% glycerol to ensure MutL stability. Before every measurement, anti-fluorescein Fab fragment (Invitrogen, Thermo Fisher scientific, Waltham, MA) was injected to block the fluorescein-labeled DNA (100 bp, see above) ends. MutS sliding clamps were captured on the end-blocked DNA by injecting 200 nM WT or mutant MutS protein (in buffer with 1 mM ATP) for 120 s. Then WT or mutant MutL protein (in buffer with 1 mM ATP) was injected for 120 s, followed by dissociation with buffer only. This was repeated with varying concentrations of MutL.
 
-## DNA binding by MutL
+### DNA binding by MutL
 
 Fluorescence polarization measurements to assess DNA-binding of MutLLN40 mutants were performed in low-salt FP buffer with 25 mM Hepes pH 7.5, 50 mM KCl, 5 mM MgCl2, 1 mM DTT and 0.05% TWEEN-20. For full length MutL, the buffer was supplemented with 10% glycerol. A concentration of 0.5 nM of 5′ labeled TAMRA-41-bp DNA (ATAGGACGCTGACACTGGTGCTTGGCAGCTTCTAATTCGAT annealed with complementary strand) was used. MutL proteins were serial diluted in black 96-well microplates (PerkinElmer Inc, Waltham, MA) in 100 μl volumes. Polarization of the TAMRA label was read out in a PHERAstar FS machine (BMG Labtech GmbH, Germany) with an 540/590 (excitation/emission) FP module.
 
-## DNA kinking assays
+### DNA kinking assays
 
 Stopped-flow assays to assess DNA binding and kinking were performed in buffer containing 25 mM Hepes pH 7.5, 150 mM KCl, 5 mM MgCl2, 1 mM DTT, 0.05% TWEEN-20 and 10 μM ADP, with or without 1 mM ATP. One syringe contained 100 nM of 45-bp DNA with or without a G:T mismatch (GTCATCCTCG[T*]CTCAAGCTGCCAGGCACCAGTGTCAGCGTCCTAT annealed with complementary strand or ATAGGACGC[T*]GACACTGGTGCTTGGCAGCTTGAGACGAGGATGAC) which was either labeled with Alexa Fluor 594 at position 11 in the top strand and Alexa Fluor 488 at position 10 in the bottom strand (indicated by T*), or with 5′-labeled with TAMRA in the top strand. The other syringe contained 400 nM MutSΔC800 D246C or crosslinked MutSΔC800/MutLLN40 complex. For assays with double-labeled DNA, donor fluorophores were excited at 473 nm and measured using filters 540IB + 540IK, while acceptor fluorophores were measured at the same time using an OG590 filter. For experiments with TAMRA-labeled DNA, the fluorophore was excited at 545 nm and OG540 filters were used for read-out. Samples were co-injected in a KinetAsyst SF-61DX2 stopped-flow machine (TgK Scientific, UK) fitted with R10699 photomultiplier tubes (Hamamatsu Photonics K.K., Japan) at 15°C and measured for 100 s, which was repeated 5–10 times and averages were calculated.
 
-## MutH activation assay
+### MutH activation assay
 
 Circular DNA containing a single G:T mismatch and 12 hemi-methylated GATC sites was prepared via primer extension on single stranded DNA from a derivative of pGEM-13Zf (gift from J Jiricny) as described (Baerenfaller et al., 2006) with the exception that closed circular DNA was purified from gel using a Wizard gel purification kit (Promega Corporation, Madison, WI). To enable quantification, an Alexa Fluor 647 labeled oligo (IBA GmbH, Germany) was used: CCAGACGTCTGTCGACGTTGGGAAGCT[T*]GAGTATTCTATAGTGTCACCT, where the G is nucleotide forming a G:T mismatch and the T* is the Alexa Fluor 647 labeled nucleotide. Nicking reactions contained 25 mM Hepes KOH pH 7.5, 150 mM KCl, 0.1 mg/ml BSA, 5 mM MgCl2, 1 mM DTT, 1 mM ATP, 0.5 nM circular DNA, 200 nM MutS, 200 nM WT MutL, single-cysteine MutL N131C, MutL N131C R266E or MutL N131C R162E/R266E/R316E and 100 nM MutH as well as twofold dilutions thereof. Control reactions contained either no protein or 200 nM MutS and 100 nM MutH. Reactions were incubated for 5 min at 37°C and stopped with an equal volume of 20% glycerol, 1% SDS and 50 mM EDTA. Samples were analyzed on 0.8% agarose gels supplemented with 1 µg/ml ethidium bromide, run in 1x TAE. Conversion of covalently closed circles into nicked product was visualized using the fluorescence of the Alexa Fluor 647 label using a Typhoon Trio Imager (GE Healthcare, Fairfield, CA) with excitation at 633 nm and emission filter 670BP30.
 
-## ATPase assay
+### ATPase assay
 
 ATPase activity of WT MutS and MutS P595A/I597A/M759D was measured by coupling ATP hydrolysis to oxidation of NADH as in (Lamers et al., 2004). MutS protein (5 μM) was mixed with 3.125–500 μM ATP and hydrolysis was measured in a spectrophotometer during 5 min.
 
-## MutLLN40 dimerization assay
+### MutLLN40 dimerization assay
 
 Crosslinked MutSΔC800/MutLLN40 complex (1 mg/ml) was incubated for 5 min on ice with equimolar amounts of 100-bp DNA containing a G:T mismatch (sequence as in main text). MutLLN40 (2 mg/ml) was incubated with the MutSΔC800/MutLLN40/DNA complex or with DNA only, and 1 mM AMP-PNP as described (Ban and Yang, 1998). Samples were injected onto a S200 5/150 column in buffer containing 20 mM Tris pH 8.0, 150 mM KCl, 0.1 mM EDTA, 5 mM MgCl2, 1 mM DTT and 5% glycerol. Eluted fractions were analyzed on SDS-PAGE stained with coomassie.

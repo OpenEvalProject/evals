@@ -28,7 +28,7 @@
 
 ## Abstract
 
-A widely accepted model for the evolution of cave animals posits colonization by surface ancestors followed by the acquisition of adaptations over many generations. However, the speed of cave adaptation in some species suggests mechanisms operating over shorter timescales. To address these mechanisms, we used Astyanax mexicanus , a teleost with ancestral surface morphs (surface fish, SF) and derived cave morphs (cavefish, CF). We exposed SF to completely dark conditions and identified numerous altered traits at both the gene expression and phenotypic levels. Remarkably, most of these alterations mimicked CF phenotypes. Our results indicate that many cave-related traits can appear within a single generation by phenotypic plasticity. In the next generation, plasticity can be further refined. The initial plastic responses are random in adaptive outcome but may determine the subsequent course of evolution. Our study suggests that phenotypic plasticity contributes to the rapid evolution of cave-related traits in A. mexicanus .
+A widely accepted model for the evolution of cave animals posits colonization by surface ancestors followed by the acquisition of adaptations over many generations. However, the speed of cave adaptation in some species suggests mechanisms operating over shorter timescales. To address these mechanisms, we used Astyanax mexicanus, a teleost with ancestral surface morphs (surface fish, SF) and derived cave morphs (cavefish, CF). We exposed SF to completely dark conditions and identified numerous altered traits at both the gene expression and phenotypic levels. Remarkably, most of these alterations mimicked CF phenotypes. Our results indicate that many cave-related traits can appear within a single generation by phenotypic plasticity. In the next generation, plasticity can be further refined. The initial plastic responses are random in adaptive outcome but may determine the subsequent course of evolution. Our study suggests that phenotypic plasticity contributes to the rapid evolution of cave-related traits in A. mexicanus.
 
 ## Introduction
 
@@ -48,17 +48,25 @@ To replicate the colonization of the subterranean environment, we placed A. mexi
 
 ## Results
 
-## Morphological changes in dark-raised surface fish
+### Morphological changes in dark-raised surface fish
 
 In this study, we exposed SF to D/D from early developmental stages until up to 2 years after spawning, and compared them to L/D controls. As a first step we compared body shape, length and width, eye size, and pigmentation in SF raised under D/D and L/D conditions (Figure 1A). We found no consistent differences in body parameters or eye sizes between D/D and L/D SF (Figure 1B). However, when we compared thickness of retinal layers between the two groups, 5 out of 7 layers were significantly different: D/D fish showed a thinning of the two plexiform layers and a thickening of the two nuclear layers and the photoreceptor layer (Figure 1D, Figure 1—figure supplement 1). Surprisingly, we also observed a significantly higher number of melanophores in the flank of the trunk and below the dorsal fin in D/D compared to L/D SF, although similar levels of pigmentation were noted in other regions of the body (Figure 1C).
 
-## Gene expression changes in dark-raised surface fish
+![Figure 1.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig1-v1.jpg)
+
+**Figure 1.:** (A) Surface fish (SF) kept in constant dark (D/D; top frame) vs. light/dark (L/D; bottom frame) photoperiod for 1 year. (B) Eye size normalized by body length in D/D vs. L/D SF kept in the experimental conditions for 1 to 2 years. (N = 8) (C) Number of melanophores in 1 year-old D/D vs. L/D SF determined in four different body regions. (N = 5) (D) Thickness of retinal layers in D/D (N = 4) vs. L/D fish (N = 3): GCL, ganglion cell layer; IPL, inner plexiform layer; INL, inner nuclear layer; OPL, outer plexiform layer; ONL, outer nuclear layer; PCL photoreceptor cell layer; RPE, retinal pigment epithelium measured as a ratio to eye diameter. (Error bars: SD; T-test Ns – not significant, *p<0.05, **p<0.001). Figure 1—source data 1 contains raw data and summary statistics.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** GCL - ganglion cell layer; IPL - inner plexiform layer; INL - inner nuclear layer; OPL - outer plexiform layer; ONL - outer nuclear layer; PCL - photoreceptor cell layer; RPE - retinal pigment epithelium. Scale bar 20 µm.
+
+### Gene expression changes in dark-raised surface fish
 
 To understand the effects of exposure to constant darkness at the molecular level, a comparative transcriptomic analysis was conducted. We used three, 7 month-old surface fish placed in either D/D or L/D conditions within one dpf (day post fertilization). RNA sequencing yielded 21.9 to 27.6 million reads from each fish, representing a total of 25,194 genes. Basic statistical data are included in Supplementary file 2. We found 356 differentially expressed genes at a significance threshold of padj < 0.1 (Figure 2—source data 1). Of these, 210 were up-regulated and 146 were down-regulated in the D/D fish; the set of differentially expressed genes contained 67 genes with unconfirmed functions. We were particularly interested in the genes related to known aspects of the CF phenotype. Genes involved in circadian regulation, locomotor rhythm and visual perception were down-regulated in D/D fish, whereas lipid metabolism was the main functional category enriched in the up-regulated gene set. Two genes involved in pigmentation were also changed but their expression was higher in D/D, consistent with the increase in pigment cells described above. We also found significant changes in gene expression which were not predicted from known CF-associated phenotypes. These genes function in oxidation-reduction processes, hormone activity, hemostasis, aromatic amino acid metabolism, gene expression, metabolism of proteins, and signal transduction (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig2-v1.jpg)
 
-**Figure 2.:** Genes tested by RT-PCR are in bold. Red outlines are down-regulated terms and genes, and green outlines are up-regulated.Figure 2—source data 1.
+**Figure 2.:** Genes tested by RT-PCR are in bold. Red outlines are down-regulated terms and genes, and green outlines are up-regulated.
 
 To validate the RNAseq results, we examined the levels of several differentially expressed genes by real time PCR (RT-PCR) (Figure 3). We confirmed the down-regulation of the hormone related genes somatostatin 1 tandem duplicate 2 (sst1.2) and inhibin beta B (inhbb), ros involved dual oxidase (duox), the circadian rhythm genes period circadian clock 2 (per2) and cryptochrome-1-like (cry3b), the vision related genes retinoschisin 1a (rs1a) and tubby like protein 1a (tulp1a), as well as genes involved in the regulation of metabolism pancreatic and duodenal homeobox 1 (pdx1), and deptor in D/D compared to L/D SF. However, some genes, most notably aromatic amino acid metabolism genes hydroxyphenylpyruvate dioxygenase a (hpda), tryptophan 2,3-dioxygenase (tdo2a), aralkylamine N-acetyltransferase 1 (aanat1), and tryptophan hydroxylase 1a (tph1a) showed down-regulation according to RT-PCR results, whereas they were up-regulated in the transcriptome. This discrepancy may be related to differences in the age or condition of fish at the time of sampling.
 
@@ -70,65 +78,73 @@ In addition, we quantified some genes which did not show significant differentia
 
 The RNAseq results and subsequent RT-PCR validation showed changes in the expression of differentially expressed genes relative to photoperiod in both SF and PA CF. Expression of some genes changed in the same direction in both SF and CF (e.g. inhbb, per2, sst1.2), whereas others changed in one and not the other fish type, or changed in the opposite directions in different fish types (e.g. duox, nr1d1, tph1a). Except for duox and dnmt3bb.1, all of the significantly changed genes show the same direction of changes in L/D vs. D/D SF and in SF vs. PA: hsp90aa1.2, rs1a, tdo2a, dnmt1, per2, sst1.2, tulp1a, aanat1, and tph1a.
 
-## Starvation resistance in dark-raised surface fish
+### Starvation resistance in dark-raised surface fish
 
 A major challenge facing animals that colonize caves is low food availability due to limited or absent primary productivity. To determine how a surface ancestor may have coped with this difficulty, we raised SF and PA larvae in D/D and L/D beginning < 24 hpf (hours post fertilization) without feeding (N = 36 larvae/group). D/D and L/D controls were fed daily portions of brine shrimp from seven dpf, when larvae normally lose their reliance on yolk and begin feeding. By 15 dpf, about 25% more SF and over 65% more PA unfed larvae were alive in D/D compared to L/D conditions. By 18 dpf, only a few unfed embryos were still alive, and they were all from the D/D conditions (8 PA and 2 SF) (Figure 4). In control conditions, SF survived better than PA, and both fish types had higher survival in D/D conditions. By 18dpf, 35 SF D/D, 17 SF L/D, 20 PA D/D and 12 PA L/D larvae were still alive. The results show that dark raised SF and CF are more resistant to starvation than siblings raised under a normal photoperiod and that PA larvae survive starvation better than SF larvae regardless of the lighting conditions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig4-v1.jpg)
 
-**Figure 4.:** Astyanax mexicanus surface fish (SF) and Pachón cavefish (PA) raised in complete darkness (D/D) or a normal photoperiod (L/D).Graphs show the percent of surviving fish (from the initial 36) on each day. Groups of SF and PA larvae from each condition were starved starting at seven dpf. Vertical drops represent individuals lost at a given time point. Groups in the legend that share a superscript are not statistically different, p values calculated by Cox proportional hazards model followed by generalized linear hypothesis test. Figure 4—source data 1 contains raw data.Figure 4—source data 1.Astyanax mexicanus surface fish and Pachón cavefish raised in different light conditions.
+**Figure 4.:** Graphs show the percent of surviving fish (from the initial 36) on each day. Groups of SF and PA larvae from each condition were starved starting at seven dpf. Vertical drops represent individuals lost at a given time point. Groups in the legend that share a superscript are not statistically different, p values calculated by Cox proportional hazards model followed by generalized linear hypothesis test. Figure 4—source data 1 contains raw data.
 
-## Metabolic rate decrease in dark-raised surface fish
+### Metabolic rate decrease in dark-raised surface fish
 
 We hypothesized that one of the reasons why fish in D/D survived starvation longer was because of lower energy expenditure. To test this possibility, we exposed SF and PA to D/D vs. L/D conditions within first 24 hpf after spawning and measured O2 consumption at 2.5 dpf and 7.5 dpf. The results showed that SF and PA larvae raised in D/D have decreased metabolic rates when compared to SF and PA larvae raised in L/D conditions. This result was found to be significant in SF each time this experiment was conducted (three replicates) for both 2.5 and 7.5-day-old larvae. Furthermore, D/D PA showed a decrease in O2 consumption at 2.5 but not at 7.5 dpf when compared to larvae raised in L/D. In addition, PA and SF metabolic rates were not significantly different at 2.5 dpf, whereas at 7.5 dpf PA has a lower metabolic rate than SF larvae raised in L/D conditions. At 2.5 dpf metabolic rate is similar between SF and PA, and darkness caused it to be reduced in both types of fish. However, by 7.5 dpf the metabolic rate in PA was reduced compared to L/D SF, and PA did not show a plastic response to darkness, whereas at the same age SF metabolic rate was still affected by darkness (Figure 5). In summary, the results support the hypothesis that D/D fish survive starvation longer because of lower metabolic rates. Improved survival in darkness also could be mediated by other factors.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig5-v1.jpg)
 
-**Figure 5.:** A) and 7.5 dpf (B) in SF and PA larvae kept in D/D versus L/D conditions.At 2.5 dpf N = 18 (SF L/D), 19 (SF D/D), 18 (PA L/D), 25 (PA D/D), and at 7.5 dpf N = 20 (SF L/D), 24 (SF D/D), 20 (PA L/D) and 24 (PA D/D). (Error bars represent standard deviation, ns: not significant, *p<0.05, **p<0.01 as calculated by ANOVA and Tukey HSD Test.) Figure 5—source data 1 contains raw data and summary statistics.Figure 5—source data 1.Figure 5.
+**Figure 5.:** At 2.5 dpf N = 18 (SF L/D), 19 (SF D/D), 18 (PA L/D), 25 (PA D/D), and at 7.5 dpf N = 20 (SF L/D), 24 (SF D/D), 20 (PA L/D) and 24 (PA D/D). (Error bars represent standard deviation, ns: not significant, *p<0.05, **p<0.01 as calculated by ANOVA and Tukey HSD Test.) Figure 5—source data 1 contains raw data and summary statistics.
 
-## Cortisol increases in dark-raised surface fish
+### Cortisol increases in dark-raised surface fish
 
 We hypothesized that exposure to constant darkness may represent a chronic stressor and tested this possibility by comparing cortisol levels in both L/D and D/D SF and PA. Surface fish raised in D/D conditions had significantly higher cortisol levels than L/D SF (Figure 6). In contrast, PA did not show a significant change in cortisol levels after exposure to D/D. This result was confirmed in three independent experiments using fish of different ages and different periods of dark exposure and shows that dark raised SF exhibit higher cortisol levels than SF raised on a normal photoperiod.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig6-v1.jpg)
 
-**Figure 6.:** (Error bars represent SD in three technical replicates, ANOVA and Tukey HSD Test: Ns – not significant, *p<0.05, **p<0.01). Figure 6—source data 1 contains raw data and summary statistics.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (Error bars represent SD in three technical replicates, ANOVA and Tukey HSD Test: Ns – not significant, *p<0.05, **p<0.01). Figure 6—source data 1 contains raw data and summary statistics.
 
-## Fat increase in dark-raised surface fish
+### Fat increase in dark-raised surface fish
 
 Our RNAseq results show that genes involved in many aspects of fat metabolism were up-regulated in D/D versus L/D reared SF. To confirm this on a phenotypic level, we quantified triglyceride content in SF and PA raised to adulthood under D/D and L/D conditions. In fish raised under L/D conditions, PA had higher triglyceride levels than SF. Surface fish raised in D/D conditions had markedly higher triglyceride levels than L/D SF. Triglyceride levels in D/D PA were also higher than levels measured in L/D PA, although the difference is more modest than that observed for SF (Figure 7). These results suggest that dark raised SF have higher levels of triglyceride metabolism that SF raised on a normal photoperiod.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig7-v1.jpg)
 
-**Figure 7.:** N = 3 fish/group (Error bars represent standard deviation. *p<0.01; ANOVA and Tukey HSD Test). Figure 7—source data 1 contains raw data and summary statistics.Figure 7—source data 1.Figure 7.
+**Figure 7.:** N = 3 fish/group (Error bars represent standard deviation. *p<0.01; ANOVA and Tukey HSD Test). Figure 7—source data 1 contains raw data and summary statistics.
 
-## Hormone levels change in dark-raised surface fish
+### Hormone levels change in dark-raised surface fish
 
 Because of morphological changes in the pituitary and thyroid glands in dark raised SF (Rasquin, 1949) and differential expression of some of the genes associated with pituitary hormones (e.g. sst1.2, inhbb, ghrl) in the dark-raised SF transcriptome, we quantified the levels of the pituitary hormones thyroid stimulating hormone and growth hormone in SF and PA adults raised in either L/D or D/D conditions. Thyroid stimulating hormone levels were lower in D/D SF when compared to L/D SF and higher in D/D PA when compared to L/D PA,although the difference was not statistically different in each experimental replicate. PA had higher thyroid stimulating hormone levels than SF regardless of lighting conditions (Figure 8A). When thyroid stimulating hormone levels were compared between SF and three populations of CF, there was a trend for higher thyroid stimulating hormone levels in TI (p=0.07), but not MO (p=0.16), and thyroid stimulating hormone levels were significantly higher in PA (Figure 8B). The levels of growth hormone were higher in both SF and PA raised in D/D conditions when compared to fish raised in L/D (Figure 9A). All three populations of CF had higher growth hormone levels than SF (Figure 9B).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig8-v1.jpg)
 
-**Figure 8.:** Astyanax mexicanus under different experimental conditions and from different populations.(A) Mean Thyroid stimulating hormone levels normalized by protein concentration in adult surface fish (SF) and Pachón cavefish (PA) kept in D/D or L/D conditions for 1.5 to 2 years. N = 3 (SF L/D), 4 (SF D/D), 3 (PA L/D), 3 (PA D/D). (B) Mean thyroid stimulating hormone levels in SF (N = 8) and three different CF populations: Pachón (PA) (N = 5), Tinaja (TI) (N = 3) and Molino (MO) (N = 4) caves. (Error bars represent SD in three technical replicates. N ranges from 3 to 8 fish/group; *p<0.05; **p<0.01 as calculated by ANOVA and Tukey HSD Test. In B ns or * denotes significance in comparison to SF.) Figure 8—source data 1 contains raw data and summary statistics.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Mean Thyroid stimulating hormone levels normalized by protein concentration in adult surface fish (SF) and Pachón cavefish (PA) kept in D/D or L/D conditions for 1.5 to 2 years. N = 3 (SF L/D), 4 (SF D/D), 3 (PA L/D), 3 (PA D/D). (B) Mean thyroid stimulating hormone levels in SF (N = 8) and three different CF populations: Pachón (PA) (N = 5), Tinaja (TI) (N = 3) and Molino (MO) (N = 4) caves. (Error bars represent SD in three technical replicates. N ranges from 3 to 8 fish/group; *p<0.05; **p<0.01 as calculated by ANOVA and Tukey HSD Test. In B ns or * denotes significance in comparison to SF.) Figure 8—source data 1 contains raw data and summary statistics.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig9-v1.jpg)
 
-**Figure 9.:** Astyanax mexicanus under different experimental conditions and from different populations.(A) Mean Growth hormone levels normalized by protein concentration in adult surface fish (SF) and Pachón (PA) cavefish kept in D/D or L/D conditions for 1.5 (SF) and 2 years (PA) since < 3 dpf. N = 3 (SF L/D), 4 (SF D/D), 3 (PA L/D), 3 (PA D/D). (B) Mean growth hormone levels in 3–4 month old SF and three different CF populations: PA, Tinaja (TI), and Molino (MO). (Error bars represent SD in three technical replicates. N = 3 to 8/group. *p<0.05; **p<0.01 as calculated by ANOVA and Tukey HSD Test. In B, **p<0.01 compared to SF). Figure 9—source data 1 contains raw data and summary statistics.Figure 9—source data 1.Figure 9.
+**Figure 9.:** (A) Mean Growth hormone levels normalized by protein concentration in adult surface fish (SF) and Pachón (PA) cavefish kept in D/D or L/D conditions for 1.5 (SF) and 2 years (PA) since < 3 dpf. N = 3 (SF L/D), 4 (SF D/D), 3 (PA L/D), 3 (PA D/D). (B) Mean growth hormone levels in 3–4 month old SF and three different CF populations: PA, Tinaja (TI), and Molino (MO). (Error bars represent SD in three technical replicates. N = 3 to 8/group. *p<0.05; **p<0.01 as calculated by ANOVA and Tukey HSD Test. In B, **p<0.01 compared to SF). Figure 9—source data 1 contains raw data and summary statistics.
 
-## Serotonin decrease in dark-raised surface fish
+### Serotonin decrease in dark-raised surface fish
 
 According to the RNAseq analysis, the tryptophan metabolism pathway was significantly up-regulated in D/D versus L/D SF, while real time qPCR suggested lower expression of the tdo2a, aanat1 and tph1a genes in dark–raised SF. Therefore, we compared serotonin (5-HT) levels in D/D and L/D SF and PA adults by HPLC. Since serotonin levels fluctuate according to a daily rhythm (Fingerman, 1976), samples for this assay were collected between 11 AM and 3 PM (day) or 11 PM and 3 AM (night) regardless of rearing conditions. Serotonin concentrations were lower in the brains (Figure 10A) and the bodies (Figure 10B) of D/D compared to L/D SF. Likewise, the 5-HT metabolite 5-HIAA was lower in the brain of D/D SF (Figure 10—figure supplement 1). It was not possible to quantify 5-HIAA in the body because it was masked by several interfering peaks. Serotonin levels in the SF brain, but not the body, were significantly lower at night compared to samples collected during the day. In PA brains collected during the day, 5-HT levels were lower in fish raised in D/D compared to L/D conditions but 5-HT levels were similar in D/D and L/D brains at night. Modest, but significant, changes in body 5-HT were evident in PA with increases in D/D relative to L/D collected during the day, and the opposite change occurred in bodies collected during the night. Serotonin levels were significantly lower in PA brains and bodies when compared to SF regardless of experimental conditions (D/D, L/D, day/night). Comparison of SF brain 5-HT with TI, MO and PA fish showed that all three cave populations have lower brain 5-HT (Figure 10C). In contrast to adults, 5-HT was significantly higher in PA compared to SF at seven dpf, and darkness did not affect 5-HT levels in either larval fish types (Figure 10D).
 
-## Progeny of dark-raised surface fish show plasticity in starvation resistance and metabolic rate
+![Figure 10.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig10-v1.jpg)
+
+**Figure 10.:** (A, B) Serotonin levels in adult brains (A) and bodies (B) of D/D and L/D reared surface fish (SF) and Pachón cavefish (PA) collected in the middle of the day (DAY) and the middle of the night (NIGHT). (Error bars represent the standard error of the means.) (C) Mean serotonin levels in brains of adult SF and three different CF populations: Molino (MO), Tinaja (TI) and PA. (D) Mean serotonin levels in pooled samples of 5 larvae aged seven dpf placed in the experiment within first few hours post fertilization. (Error bars SEM; ns – not significant, *p<0.05; **p<0.01 as calculated by ANOVA and post-hoc Tukey HSD Test. In C, **p<0.01 vs SF. The number of each fish type subjected to analysis ranged from 4 to 10 per group.) Figure 10—source data 1 contains raw data and summary statistics.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Error bars represent the standard error of the means.
+
+### Progeny of dark-raised surface fish show plasticity in starvation resistance and metabolic rate
 
 To test whether the plastic changes in the fish reared in the dark during the first generation are maintained and transferred to the next generation, we induced spawning in D/D reared SF. We measured starvation resistance and metabolic rate in G1 embryos (dSF) developing in D/D or in L/D during the second generation, as well as the offspring of L/D reared controls exposed to L/D or D/D conditions. The G1 larvae reared in L/D showed no differences in starvation resistance (Figure 11) or metabolic rate (Figure 12), regardless of whether they were the progeny of L/D or D/D parents. Their cohorts raised in darkness showed a modification in these phenotypes: dSF larvae derived from D/D parents showed slightly enhanced plasticity and a minor shift toward lower metabolic rate and higher starvation resistance (although not statistically significant) than larvae raised from L/D parents. These results suggest that the plastic changes that appeared in the dark during the first generation may be subject to refinement during darkness in the second generation.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig11-v1.jpg)
 
-**Figure 11.:** Graphs show the percent of surviving fish (from the initial 24) on each day. One group of larvae from each fish type (SF, dSF) and each lighting condition (D/D, L/D) was starved starting at seven dpf (a vs. b p<0.0001). Vertical drops represent individuals lost at a given time point, groups in the legend that share a superscript are not statistically different, p values calculated by Cox proportional hazards model followed by generalized linear hypothesis test. Figure 11—source data 1 contains raw data.Figure 11—source data 1.Figure 11.
+**Figure 11.:** Graphs show the percent of surviving fish (from the initial 24) on each day. One group of larvae from each fish type (SF, dSF) and each lighting condition (D/D, L/D) was starved starting at seven dpf (a vs. b p<0.0001). Vertical drops represent individuals lost at a given time point, groups in the legend that share a superscript are not statistically different, p values calculated by Cox proportional hazards model followed by generalized linear hypothesis test. Figure 11—source data 1 contains raw data.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/51830/elife-51830-fig12-v1.jpg)
 
-**Figure 12.:** Each group of offspring was exposed to D/D or L/D conditions within first 24 hpf. (Error bars represent standard deviation; *p<0.05, as calculated by ANOVA and Tukey HSD Test.). Figure 12—source data 1 contains raw data and statistics.Figure 12—source data 1.Figure 12.
+**Figure 12.:** Each group of offspring was exposed to D/D or L/D conditions within first 24 hpf. (Error bars represent standard deviation; *p<0.05, as calculated by ANOVA and Tukey HSD Test.). Figure 12—source data 1 contains raw data and statistics.
 
 ## Discussion
 
@@ -158,7 +174,227 @@ Phenotypic plasticity can fill several gaps in the current model of cave coloniz
 
 ## Materials and methods
 
-## Animals and experimental conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus surface fish)</td>
+      <td>Surface fish, SF</td>
+      <td>Jeffery laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus Pachón cavefish)</td>
+      <td>Pachón, cavefish, CF, PA</td>
+      <td>Jeffery laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus Tinaja cavefish)</td>
+      <td>Tinaja, TI</td>
+      <td>Jeffery laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Astyanax mexicanus Molino cavefish)</td>
+      <td>Molino, MO</td>
+      <td>Jeffery laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq mRNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>Cat# RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cortisol ELISA Kit</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#500360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fish growth hormone(GH) ELISA Kit</td>
+      <td>Cusabio</td>
+      <td>Cat#CSB-E12121Fh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fish thyroid stimulating hormone(TSH) ELISA Kit</td>
+      <td>Cusabio</td>
+      <td>Cat#CSB-EQ02726Fl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Quantification Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat#ab65336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine methanesulfonate</td>
+      <td>Western Chemical Inc</td>
+      <td>Cat#TRS1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Invitrogen</td>
+      <td>Cat#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Superscript III and IV Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat#18080044, 18090050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP-40</td>
+      <td>Abcam</td>
+      <td>Cat#ab142227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQC</td>
+      <td>http://www.bioinformatics. babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 v2.3.2</td>
+      <td>http://bowtie-bio.sourceforge .net/bowtie2/index.shtml</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat v2.1.1</td>
+      <td>https://ccb.jhu.edu/ software/tophat/index.shtml</td>
+      <td>RRID:SCR_013035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cufflinks v2.1.1</td>
+      <td>http://cole-trapnell-lab. github.io/cufflinks/</td>
+      <td>RRID:SCR_014597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package ‘cummeRbund’</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/cummeRbund.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R.Studio v1.0.136</td>
+      <td>https://www.rstudio.com/products/rstudio/#Desktop</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.5.1</td>
+      <td>https://cran.r-project.org/bin/windows/base/old/3.5.1/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID Bioinformatics Resources</td>
+      <td>https://david.ncifcrf.gov/</td>
+      <td>RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reactome</td>
+      <td>https://reactome.org/</td>
+      <td>RRID:SCR_003485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RefFinder</td>
+      <td>https://www.heartcure.com.au/for-researchers/</td>
+      <td>RRID:SCR_000472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 3.5.3</td>
+      <td>https://cran.r-project.org/src/base/R-3/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package ‘multcomp‘</td>
+      <td>https://cran.r-project.org/web/ packages/multcomp/index.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CSW32 data program</td>
+      <td>https://www.dataapex.com/products/csw32.php (product was discontinued)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaStat version 3.5</td>
+      <td>https://sigmastat.software. informer.com/3.5/</td>
+      <td>RRID:SCR_010285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and experimental conditions
 
 The study groups included Astyanax mexicanus SF and CF primarily from Pachón Cave (PA). In some experiments, CF from Tinaja (TI) and Molino (MO) caves were also used. Animals were obtained from the Jeffery Laboratory colony at the University of Maryland, and had undergone 3–5 generations in captivity since their original collection from the caves in 2002 (PA, TI) or 2006 (MO). Fish in the main colony were kept in 40 L tanks in cohorts of 8–15 animals and exposed to a 14 hr light/10 hr dark photoperiod. Spawning was induced every two weeks by extra feeding a few days prior to increasing the water temperature (Jeffery et al., 2000). Temperature regime changes were as follows: fish were normally kept in 22 °C, on the first day of spawning temperature was raised to 24 °C, on the second day raised to 26 °C, on the third day returned to 24 °C, and on the fourth day returned to 22 °C. Embryos were spawned in the night and collected in the morning by washing them from the breeding nets. Dead embryos were removed and the remainder transferred to clean fish system water containing methylene blue. The fish were raised and handled according to established University of Maryland and NIH guidelines and all experiments conform to the regulatory standards.
 
@@ -170,13 +406,13 @@ Information on sample sizes, time lapsed in experimental conditions, and the age
 
 The following procedure was used for collecting, and when necessary pulverizing, adult fish for the respective experiments: fish were sacrificed with 0.4 or 0.5 mg/L MS222, tricaine methanesulfonate (Western Chemical Inc, Ferndale, WA, USA). Fish were maintained in the dark until they expired and then photographed, weighed, and pulverized in liquid nitrogen using a mortar and pestle. The pulverized material was divided into several Eppendorf tubes and stored at −80 °C until further processing. For the brain chemistry experiment, whole brains were rapidly removed, placed in 1.5 mL Eppendorf tubes, immediately frozen on dry ice and stored at −80 °C until analysis.
 
-## Morphological analysis
+### Morphological analysis
 
 After photography, the body length (total: rostrum to tail tip, fork: rostrum to tail fork, and standard: rostrum to beginning of the tail), the dorsoventral width of the body (at the level of the operculum and at the beginning of the dorsal fin), the eye diameter, and the pupil diameter of 16 D/D fish and 15 L/D from each experimental condition were measured using ImageJ software.
 
 Five fish from each group, kept under the experimental conditions described above for 9 months beginning two hpf, were used for melanophore quantification. Fish were fixed for 1 hr in 4% paraformaldehyde, washed three times in PBS, and examined under a stereomicroscope. Pigment cells were counted as in Bilandžija et al. (2018) in four different places on the left side of each fish: in the proximal tail fin stripe, below the dorsal fin, along the dorsal flank of the trunk, and on the chin. Eyes of four SF kept in D/D and three L/D controls kept in experimental conditions for 1.5–2.5 years were embedded in paraplast blocks, sectioned, stained, and morphometric analyses was performed on retinal layers as described previously (O'Quin et al., 2013). To account for intra-retinal variation caused by changes in location or sectioning, we measured retinas in the middle of the region between the optic nerve and the ora serrata on fifteen test fields randomly chosen across five sections for every fish. In order to compare these retinal measurements among individual fish for statistical analysis, we used eye diameters as independent parameters for normalization of our data (Collery et al., 2014).
 
-## RNA sequencing, differential expression analysis, and identification of enriched pathways
+### RNA sequencing, differential expression analysis, and identification of enriched pathways
 
 Three surface fish kept in D/D and three in L/D experimental conditions for 7 months post-fertilization were used for RNA sequencing. Prior to RNA extraction, the stomach and liver were removed from the fish because they compromised RNA quality. Total RNA was isolated from samples stored in TRIzol reagent according to the manufacturer’s instructions (Invitrogen, Carlsbad, CA, USA). The fragment size, concentration, RNA integrity number (RIN) and 28S/18S ratio of RNA extracts were determined using an Agilent 2100 Bioanalyzer (Agilent, Santa Clara, CA, USA). The cDNA libraries were constructed using TruSeq mRNA Library Prep Kit (Illumina, San Diego, CA, USA). Fragment sizes and concentrations of libraries were verified using an Agilent 2100 Bioanalyzer and ABI StepOnePlus Real-Time PCR machine (Thermo Fisher Scientific, Waltham, MA, USA). The samples were sequenced in a single Hiseq X-ten lane with a strategy of 150 bp paired-ends (PE), resulting in about 8 Gb raw data for each sample. To avoid potential adapter contamination, the last 60 bp of all reads were trimmed. Subsequently, the reads were removed if they contained: 1) more than 50% low quality (Q < 35) bases; 2) more than 10 Ns, and 3) were PCR duplications. Cleaned read quality was confirmed in FASTQC (Andrews, 2010), and a total of 230,437,086 cleaned reads were retained for transcriptomic analysis. The reads have been submitted as bioproject PRJNA557727 (accession numbers SRX6631237 - SRX6631242).
 
@@ -184,36 +420,36 @@ A local database was built on the Carbonate Cluster implemented by the National 
 
 Significantly differentially expressed genes (padj < 0.1) were subjected to Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis as implemented on DAVID Bioinformatics Resources (Huang et al., 2009a; Huang et al., 2009b) and pathways were investigated more closely using Reactome (Fabregat et al., 2016).
 
-## Real time quantitative RT-PCR
+### Real time quantitative RT-PCR
 
 Total RNA was isolated from 10 to 12 month old adult SF and PA placed in D/D or L/D conditions within the first few hours after fertilization. After the liver and stomach were removed, the RNA from the remaining body was isolated with Trizol Reagent (Thermo Fisher Scientific, Waltham, MA, USA) according to the manufacturer’s instructions and treated with DNase to remove genomic DNA if present. Equal amounts of RNA (1.5 µg) were reverse transcribed using Superscript III or IV (Invitrogen, NY, USA). The cDNA concentration was adjusted to 12.5 ng/µL and up to 50 ng were used in each reaction. We tested 12 different HKG (housekeeping genes): (ube2a, rpl13a, eef1a1l1, nek7, tbcb, rnf7, rpl27, ndufa6, ap5s1, mob4, lsm12a, actc1b) using RefFinder, which is located on the Cotton EST Database webpage (Xie et al., 2011), and integrates currently available major computational programs (geNorm, Normfinder, BestKeeper, and the comparative ΔΔCt method) to compare and rank the candidate reference genes. The geometric mean of the three most stable HKG (tbcb, mob4 and rnf7) was used for normalization. Primers for genes of interest were designed across exon/intron boundaries except for pdx1, where this was not possible (Supplementary File 1). Primer efficiencies were calculated in Excel from standard curves, and those with efficiencies between 90% and 110% were used for quantifications. The resulting PCR products were sequenced to confirm the targeted genes. Relative expression was calculated according to a formula ΔCt = E ˆ (Ct reference – Ct target) (E = 1+primer efficiency/100), which enables the comparison of normalized expression of a gene between multiple samples, instead of ratios between two samples, taking primer efficiency into account. Statistical significance of observed expression differences was calculated by ANOVA and adjusted by Bonferroni index.
 
-## Starvation resistance determinations
+### Starvation resistance determinations
 
 SF and PA embryos were placed in L/D vs. D/D experimental conditions within 24 hpf. At 7 dpf, the first day larval fish were fed brine shrimp, a group of 36 larvae from L/D and 36 from D/D per fish type was fed. Groups of 36 larvae from each experimental condition and each fish type were not fed. The fish were identically treated in all other aspects, and the number of living fish was recorded daily. Dead fish were removed each day. The experiment was repeated 3 times independently.
 
 Statistical analyses for survival analysis were carried out using R version 3.5.3 (R Development Core Team, 2018). Differences in starvation resistance were compared with a Cox proportional hazards model using the function coxph() from the R package ‘survival’ (Therneau and Grambsch, 2000). For the parental generation, the model included the covariates fish (PA vs. SF), light status (D/D vs. L/D), and fish x light status. For the G1 generation, the model included the covariates fish (dSF vs. SF), light status (D/D vs. L/D) and fish x light status. If the null hypothesis that all β = 0 was rejected, post-hoc pairwise comparisons of contrasts were carried out using the function glht() from the package multcomp with the specification mcp = ‘Tukey’ (Hothorn et al., 2008). Proportionality assumptions for Cox proportional hazards models were tested using the coxphz function (Therneau and Grambsch, 2000).
 
-## Metabolic rate determinations
+### Metabolic rate determinations
 
 Unhatched SF and PA embryos or 7 dpf larvae were placed individually in air-tight glass vials filled to the top with fish system water that contained no air bubbles. Half of the vials from each type were kept in L/D and the other half were wrapped in aluminum foil and kept in the same way in D/D. After two days, the O2 remaining in each vial was measured using a Membrane Inlet Mass Spectrometer (MIMS) Machine (Bay Instruments, Easton, MD, USA). The amount of O2 consumed per fish was calculated by subtracting the measured amount of O2 in the vials with fish from the mean amount of O2 measured in blank vials without fish. This experiment was repeated twice with embryos and once with larvae. The same methods were used in all replications.
 
-## Cortisol quantification
+### Cortisol quantification
 
 We quantified cortisol from adult SF and PA that were maintained in D/D or L/D experimental conditions for 1.5 to 2 years beginning before 3 dpf. Cortisol was extracted using previously developed procedures (Canavello et al., 2011; Gallo and Jeffery, 2012). Briefly, tissue samples stored at −80 °C were thawed and homogenized in PBS after which 5 mL of diethyl ether was added. Following centrifugation for 5 min at 3500 x g, the cortisol-containing top layer was removed and evaporated in a fume hood overnight. The cortisol was reconstituted in PBS overnight at 4 °C and quantified using the Cortisol ELISA Kit (Item № 500360, Cayman Chemical, Ann Arbor MI, USA) following the kit protocol. Cortisol samples from fish within each group were pooled and assayed in triplicate. The recorded absorbance was compared to a standard curve to determine the cortisol concentration, and each sample was standardized to protein concentration determined by Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, Waltham, MA, USA). The experiment was repeated 3 times on independent batches of fish.
 
-## Triglyceride quantifications
+### Triglyceride quantifications
 
 Pulverized fish were weighed and 20 µl per mg of 6% NP-40 (Abcam, Cambridge, UK) was added to each sample. Samples were heated to 80–100°C for 2–5 min, and the process was repeated 2–3 times. Insoluble material was removed by centrifugation for 2 min at 13,000 rpm, and equal volumes of supernatants from all samples of the same fish type were pooled and diluted 20x in ddH2O before ELISA. For ELISA, 50 µL of each sample was assayed in triplicate using the Triglyceride Quantification Assay Kit (ab65336), (Abcam, Cambridge, UK) according to the manufacturer's instructions. The procedure followed a previously published method (Aspiras et al., 2015). Concentrations were determined from the standard curve and standardized to protein concentration as described above. The experiment was repeated on 3 independent batches of fish.
 
-## Hormone quantifications
+### Hormone quantifications
 
 Levels of growth hormone (CSB-E12121Fh) and thyroid stimulating hormone (CSB-EQ02726Fl) were quantified by ELISA using commercially available kits from Cusabio (Wuhan, China). Adult SF kept in D/D for 1.5 years and PA kept in the experiment for almost 2 years were used. For comparison of hormone levels between different populations, 3 to 4 month old SF, PA, TI, and MO were used. The fish tissue was weighed, and 3 µl PBS/mg tissue was added to each sample. After two freeze-thaw cycles and homogenization, the homogenate was centrifuged at 5000 x g for 5 min at 4 °C. Equal volumes of supernatant from each fish type were pooled and immediately loaded on the plate, 50 µl per well, in triplicate. Assays were performed following the manufacturer’s instructions and concentrations were determined according to the standard curve. Results were standardized to protein concentration as described above. Each experiment was repeated 3 times independently.
 
-## Serotonin quantification
+### Serotonin quantification
 
 Brains were dissected from PA and SF kept in L/D or D/D experimental conditions for 1.5 to 2 years beginning at or before 3 dpf, and from adult SF (N = 8), PA (N = 5), TI (N = 5), and MO (N = 6) kept in the main fish system and HPLC was used to quantify neurotransmitter levels as in Bilandžija et al. (2018). In addition, we quantified serotonin (5-HT) in samples of pooled five larvae (7 dpf) placed in the L/D or D/D experimental conditions within first few hours after fertilization, N = 6 (SF L/D), 5 (SF D/D), 5 (PA L/D), and 4 (PA D/D). Serotonin and its metabolite, 5-hydroxyindoleacetic acid (5-HIAA), were analyzed using HPLC with electrochemical detection as described previously with minor modifications (Renner and Luine, 1986). Brains were placed into 100 µL of sodium acetate buffer (pH 5.0) containing the internal standard alpha-methyl dopamine (αMDA; Merck and Co., Inc, Kenilworth, NJ). Fish bodies were placed in either 200 to 400 µL of acetate buffer containing αMDA based on the amount of tissue present. Both tissue types were disrupted by sonication using a 4710 Ultrasonic Homogenizer (Cole-Parmer Instrument Co., Chicago IL) and stored at −80°C. Prior to analysis, the sonicated brain samples were thawed, 4 μL of 1 mg/mL ascorbate oxidase (Sigma-Aldrich, St. Louis, MO, USA) was added to each sample and the samples were centrifuged at 17,000 g for 15 min. Fish body samples were treated the same way except that the supernatant was centrifuged a second time through a 0.2 µm filter. The filtered supernatant was removed and a Waters Alliance e2695 separation module was used to inject 50 µL of the supernatant onto a C184 µm NOVA-PAK radial compression column (Waters Associates, Inc Milford, MA) held at 30°C. The initial mobile phase (pH 4.1) was prepared using 8.6 g sodium acetate, 250 mg EDTA, 14 g citric acid, 80 mg octylsulfonic acid, and 80 mL methanol in 1 L of distilled water (monoamine standards and chemicals were purchased through Sigma-Aldrich) and adjusted with small additions of octylsulfonic acid, glacial acetic acid, and methanol to optimize the separation. Electrochemical detection was accomplished using an LC four potentiostat and glassy carbon electrode (Bioanalytical Systems, West Lafayette, IN, USA) set at a sensitivity of 0.5 nA/V (brain samples) or 1 nA/V (body samples) with an applied potential of +0.7 V versus an Ag/AgCl reference electrode. The pellet was solubilized in 400 µL of 0.4 N NaOH and protein content was analyzed using the Bradford method (Bradford, 1976). A CSW32 data program (DataApex Ltd., Czech Republic) was used to determine 5-HT and 5-HIAA concentrations in the internal standard mode using peak heights calculated from standards. Injection versus preparation volumes were corrected and amine concentrations were normalized by dividing pg amine by µg protein. Data were tested for differences using a Three Way Analysis of Variance (SigmaStat version 3.5, Systat Software Inc, San Jose, CA). In analyses that revealed a significant effect between groups, the Holm-Sidak method was used to conduct pairwise comparisons. All data were tested for the presence of outliers using the Grubb’s test (Rohlf and Soka, 1981). Based on this analysis two brain (PA D/D night, SF L/D day) and three body samples (PA D/D night, PA L/D day, SF D/D day) were deleted from the data set. In the end a total number of fish used in the analysis for brains was 9 (SF L/D day), 10 (SF D/D day), 10 (PA L/D day), 10 (PA D/D day), 7 (SF L/D night), 6 (SF D/D night), 4 (PA L/D night), 4 (PA D/D night) and for the bodies 10 (SF L/D day), 9 (SF D/D day), 8 (PA L/D day), 10 (PA D/D day), 7 (SF L/D night), 7 (SF D/D night), 4 (PA L/D night), 5 (PA D/D night).
 
-## The G1 offspring of dark-raised surface fish
+### The G1 offspring of dark-raised surface fish
 
 We measured metabolic rate and starvation resistance in the G1 offspring of dark raised (dSF) and control SF using the methods described above. Statistical analysis was also done using the methods described above with N = 24 larvae per group in starvation resistance experiments and N = 10 (L/D SF), 13 (D/D SF), 12 (L/D dSF) and 15 (D/D dSF) in metabolic rate experiments.

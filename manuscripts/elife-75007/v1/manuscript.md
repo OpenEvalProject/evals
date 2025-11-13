@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0030zas98 Department of Rehabilitation Sciences, The Hong Kong Polytechnic University Hong Kong China
-2. https://ror.org/05gq02987 Department Neuroscience, Carney Institute for Brain Sciences, Brown University Providence United States
-3. https://ror.org/052gg0110 Department of Experimental Psychology, University of Oxford Oxford United Kingdom
-4. https://ror.org/0030zas98 University Research Facility in Behavioral and Systems Neuroscience, The Hong Kong Polytechnic University Hong Kong China
+1. Department of Rehabilitation Sciences, The Hong Kong Polytechnic University Hong Kong China ([ROR:0030zas98](https://ror.org/0030zas98))
+2. Department Neuroscience, Carney Institute for Brain Sciences, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+3. Department of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. University Research Facility in Behavioral and Systems Neuroscience, The Hong Kong Polytechnic University Hong Kong China ([ROR:0030zas98](https://ror.org/0030zas98))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ In the current study, we, therefore, used transcranial magnetic stimulation (TMS
 
 ## Results
 
-## Behavioural data: Increased positive distractor effect under contralateral MIP stimulation
+### Behavioural data: Increased positive distractor effect under contralateral MIP stimulation
 
 A value-based decision-making task was used, in which participants were presented with two choosable options (high-value option HV or low-value option LV) and one distractor (D; Figure 1). As explained in the Methods, we looked at the impact of TMS to either MIP or a nearby control site (in the vicinity of area V5 or MT). However, both experiments also included an additional type of control condition: trials in which no TMS was applied.
 
@@ -48,6 +48,18 @@ A value-based decision-making task was used, in which participants were presente
 **Figure 1.:** (a) Participants completed a value-based decision-making task. Three rectangular stimuli representing three options were presented. After a brief period (0.1 s; Stimulus Onset), two of the stimuli were marked as choosable (labelled by orange boxes) while the third stimulus was marked as a distractor (labelled by a purple box). Participants had 1.5 s to indicate their decision (Decision Phase). The option that was chosen was highlighted with a red box (Interval Phase, 0.5 s). Subsequently, a gold/grey margin around the stimulus indicated whether or not they received the reward associated with their response (Outcome Phase; 1 s). (b) Each stimulus was defined by its colour and orientation, which indicated the associated reward magnitude and the probability of receiving the reward, respectively. Stimuli ranged in reward magnitude from $25 to $150, and in reward probability from 1/8 to 7/8. An example of the colour-magnitude and orientation-probability mappings is shown in b. The mappings were randomised across participants. (c) In each experimental session, repetitive TMS (5 pulses, 10 Hz) was applied over either the MIP or MT region in 1/3 of the trials. Orange and black highlights indicate MNI locations for MIP (average X=-35, Y=-53, Z=63) and MT (average X=-53, Y=-77, Z=5) stimulation sites for individual subjects, on a standard MNI brain.
 
 First, we consider behavioural performance in the control situation in the absence of any TMS. To do this we combined data from Non-TMS trials of both MIP and MT sessions. All participants displayed above chance performance in both the main decision-making task, and the “matching” trials (additional trials that aimed to prevent participants from ignoring the identity of the distractor; see Methods), with an average accuracy of 72.84% (SD = 6.71; Figure 2a), and 70.14% (SD = 8.75) respectively, indicating that all participants followed task instructions. The average RT of the main task was 887.71ms (SD = 102.17ms; Figure 2b). There were no differences in either accuracy, t(30) = 1.14, p=0.265, Cohen’s d (d)=0.14, 95% confidence interval (CI) = [–0.01, 0.03], or reaction time (RT), t(30) = 0.64, p=0.525, d=0.11, CI = [–23.61, 45.33], between Non-TMS trials in MIP and MT sessions (Figure 2a and b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig2-v1.jpg)
+
+**Figure 2.:** There were no differences in either (a) accuracy or (b) reaction time (RT) between Non-TMS trials in each session (MT/MIP). (c) GLM1 revealed that there was a negative (HV-LV)(D–HV) effect on accuracy, suggesting that the distractor effect (i.e. D–HV) varied as a function of difficulty (i.e. HV-LV). (d) A follow-up analysis on the (HV-LV)(D–HV) interaction using GLM2 showed that the distractor effect on accuracy was positive on hard trials and it was negative on easy trials. Error bars denote standard error. * p<0.050, *** p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Divisive normalisation models predict that the size of the negative distractor effect is smaller when HV +LV is large, since the absolute distractor value D contributes less to the overall value of HV +LV + D. (a) To test whether this was the case in our data, we applied a GLM (which is identical to GLM5 of Chau et al., 2020) in which accuracy in all Non-TMS trials was predicted using the terms, HV-LV, HV +LV, and D, as well as all two-way and three-way interactions: β0 + β1 z(HV-LV) + β2 z(HV+LV) + β3 z(D) + β4 z(HV-LV) z(D) + β5 z(HV+LV) z(D) + β6 z(HV-LV) z(HV+LV) + β7 z(HV-LV) z(HV+LV) z(D) + ε. We found a positive effect of (HV +LV)D on accuracy (t(30) = 5.07, p<0.001, d=0.91, CI = [0.09, 0.2]), which was broadly consistent with the divisive normalisation prediction. In addition, as in Figure 2c, this analysis showed a significant (HV-LV)D effect, suggesting that the distractor effect reversed as a function of choice difficulty. (b) In the task, some trials involved distractors with values that were greater than that of the LV, or sometimes even the HV, options. One may argue that a distractor may be most irrelevant to the decision process when its value is the lowest of the three options’ values. Hence, we repeated the above analysis by only including trials where the D value was smaller than both those of the HV and LV options. Again, we found a negative (HV-LV)D effect (t(26) = −2.68, p<0.05, d = −0.52, CI = [−0.91,–0.12]) and a positive (HV +LV)D effect (t(26) = 3.46, p<0.01, d=0.67, CI = [0.32, 1.27]). Overall, these results are consistent with previous work (cf. Appendix 3, Chau et al., 2020 and Supplementary Information 7, Chau et al., 2014). *p<0.05, ** p<0.01, ***p<0.001. Error bars denote standard error.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** An analysis identical to that in Figure 5 of Chau et al., 2020 was performed and generated similar results showing that an attentional capture effect by the distractor was present in the current study. Specifically, a multinomial logistic regression was applied to test the effects on the choice ratios (a) between HV/LV and (b) between HV/D. It involves the following GLM: β0 + β1 z(HV-LV) + β2 z(HV-D) + β3 z(HV-LV)(D-HV) + ε. Participants with at least three trials of distractor choice were included in this analysis. The first panel (a) illustrates distractor effects on HV/LV choice ratio and so it can therefore be interpreted in a similar way to Figure 2c. Critically, the second panel (b) not only provides a way to test the attentional capture by salient distractors, but in addition it also provides a further way of testing an interesting class of distractor effects – whether the rate at which participants opt for HV or D is affected by the LV option (which should be irrelevant to the rate at which choices are made between HV and D). This analysis generated two key findings. First, as predicted by the attentional capture model, a positive HV-D effect in (b) suggested that when the value of D became larger, D was also chosen more often, t(27) = 7.30, p<0.001, d=1.38, CI = [0.73, 1.30]. Second, the (HV-LV)(D–HV) effect in (a), as is also the case in Figure 2c, and the (HV-D)(LV-HV) effect in (b) are all consistently negative, suggesting that the distractor effects varied as a function of choice difficulty. We note that although the (HV-D)(LV-HV) effect in (b) was marginally significant, the effect became significantly negative (t(22) = –2.56, p=0.018, d=–0.53, CI = [-0.54,–0.06]) when the analysis included participants with at least five, instead of three, trials of distractor choice. Error bars denote standard error. # p<0.1, * p<0.05, *** p<0.001.
 
 In general, larger distractor values should promote more accurate choices when decisions are hard (positive D-HV effect on trials with small HV-LV value difference) and, in contrast, they should impair choice accuracy when decisions are easy (negative D-HV effect on trials with large HV-LV value difference; Chau et al., 2014; Chau et al., 2020). In other words, there should be a negative (HV-LV)(D-HV) interaction effect. We tested whether this was the case in the current experiment by applying the same GLM (GLM1) as in Chau et al., 2014; Chau et al., 2020. In particular, it involved the following terms: the difference in value between the two available options (HV-LV), their sum (HV +LV), the difference between the distractor value and the high-value option (D-HV), and the interaction term (HV-LV)(D-HV). On Non-TMS trials, there was a positive HV-LV effect (t(30) = 17.09, p<0.001, d=3.07, CI = [0.69, 0.88]; Figure 2c) and a negative HV +LV effect (t(30) = –4.35, p<0.001, d=–0.78, CI = [-0.38,–0.14]), suggesting that more accurate choices were made on trials that were easier and consisted of options with poorer values. There was no D-HV effect (t(30) = –0.95, p=0.350, d=–0.17, CI = [–0.17, 0.06]) but critically there was a negative (HV-LV)(D-HV) interaction effect (t(30) = –3.52, p=0.001, d=–0.63, CI = [-0.16,–0.04]). To further examine the pattern of the negative (HV-LV)(D-HV) effect, we median split the data according to HV-LV levels and applied GLM2 to test the critical D-HV effect. On hard trials with small HV-LV, there was a positive D-HV effect (t(30) = 2.62, p=0.014, d=0.47, CI = [0, 0.02]; Figure 2d), whereas on easy trials with large HV-LV, there was a negative D-HV effect (t(30) = –3.15, p=0.004, d=–0.57, CI = [–0.01, 0]).
 
@@ -59,6 +71,117 @@ Next, we examined whether MIP has any role in generating distractor effects by c
 
 The results of GLM3 confirmed once again that in the control data, on average, higher accuracy was associated with larger HV-LV differences (t(30) = 17.04, p<0.001, d=3.06, CI = [0.76, 0.97]; Figure 3a) and lower HV +LV sum values (t(30) = –3.50, p=0.001, d=0.63, CI = [-0.33,–0.09]; Figure 3b). The average impact of D-HV on accuracy was not significant (t(30) = 0.69, p=0.496, d=–0.12, CI = [–0.08, 0.16]; Figure 3c), which, as already explained above, is consistent with the simultaneous presence of both positive and negative distractor effects on the hard and easy trials respectively that we have previously demonstrated (Figure 2d). Next, a Site (MIP/MT) x Stimulation (TMS/Non-TMS) x Distractor Location (contralateral/ipsilateral) ANOVA was applied to the beta values of each predictor (Figure 3). We focused on examining the three-way interaction relating to the distractor value, in which a significant effect would suggest a robust TMS effect when it was applied to a specific brain region and when the distractor was presented at a specific location. When examining three-way interactions of this type, we found no significant effects associated with predictors that did not incorporate the distractor value D such as the HV-LV predictor (F(1,30) = 1.50, p=0.230, ηp2 p20.05; Figure 3a; Table 1) or the HV +LV predictor (F(1,30) = 3.06, p=0.090, ηp2 p20.09; Figure 3b). This suggests that these interactions were unaffected by TMS. Critically, however, the D-HV predictor showed a statistically significant three-way interaction (Site x Stimulation x Distractor Location: F(1,30) = 4.44, p=0.044, ηp2 p20.13; Figure 3c). This is consistent with a relative increase in the positive distractor effect (previously associated with vmPFC; Chau et al., 2014; Fouragnan et al., 2019) at the expense of the divisive normalisation effect associated with intraparietal areas such as MIP. No other main or two-way interaction effects of D-HV were observed in the ANOVAs, F<0.87, p>0.358 (Table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig3-v1.jpg)
+
+**Figure 3.:** GLM3 with the predictors (a) HV-LV, (b) HV +LV, and (c) D-HV was used to predict decision accuracy. Higher distractor values (i.e. higher D-HV) were associated with higher accuracy only when TMS was applied to MIP contralateral to the distractor, but not in any Non-TMS trials or in MT sessions: * p<0.050. It is important to note that ‘*’ and ‘n.s.’ here denote significant and non-significant interaction (TMS x Site x D Location) effects respectively. The symbols are not intended to indicate whether other effects are or are not significant. For example, high HV-LV difference continues to predict accuracy as in Figure 2c (F(1,30) = 290.28, p<0.001, ηp2 = 0.91). In accordance with the divisive normalisation model, high HV +LV continues to predict low accuracy as Figure 2c (F(1,30) = 12.24, p=0.001, ηp2 = 0.29). (d) Fitted accuracy plotted as a function of D-HV when TMS (solid, orange) or no TMS (dotted, orange) was applied over the MPI. Greater distractor values were associated with higher accuracy only in TMS-MIP condition, but not in non-TMS MIP condition. (e) In contrast, the relationship between D-HV and accuracy was comparable between TMS and non-TMS trials when TMS was applied over the control MT region. Shaded regions denote standard error.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** By using this approach, we notice that the data was better explained when the distractor term was described as the absolute D value, instead of the relative D-HV value. Specifically, the model involved the HV-LV and HV +LV terms that are grouped by participant along with the D term that is grouped by Site, Stimulation, and Location. The estimated coefficients of (a) the D term per condition and (b) the HV-LV and HV +LV terms per participant are shown. We observed a significant TMS effect (i.e. the distractor effect became more positive on TMS trials than non-TMS trials; F(1,16048)=8.934, p=0.0028) when the distractor was located on the contralateral side of space to the MIP stimulation. There was an absence of TMS effect when the distractor was located on the ipsilateral side of space to the MIP stimulation (F(1,16048)=0.159, p=0.690) or when TMS was applied to the control MT region (contralateral: F(1,16048)=0.381, p=0.537; ipsilateral: F(1,16048)=0.457, p=0.499). When visually inspecting the figure, we noticed that there was a drop in the effect size on the MIP non-TMS trials when the distractor was located on the contralateral side of space, as opposed to that on the ipsilateral side of space. To rule out the possibility that the MIP-TMS effect was driven by the drop in effect size of the contralateral non-TMS trials, we pooled the distractor effects from both the control contralateral and ipsilateral MIP non-TMS trials and compared all these trials with the contralateral MIP TMS trials. We continued to observe a significant difference in distractor effect between the key contralateral MIP-TMS trials and this additional set of pooled control trials (F(1,16048)=6.104, p=0.0135). No significant differences were found in the comparisons between ipsilateral MIP-TMS trials and pooled MIP non-TMS trials (F(1,16048)=0.183, p=0.669). Similarly, the comparisons between contralateral MT-TMS trials (F(1,16048)=0.584, p=0.445) and ipsilateral MT-TMS trials (F(1,16048)=0.464, p=0.496) with the pooled MT non-TMS trials were also not significant. Finally, we also observed the TMS effect was even more robust when a reaction time (RT) term was also included in the mixed-effects model. The estimated coefficients of this alternative model are shown in (c, d). We observed a significant TMS effect (F(1,16048)=13.87, p=0.000197) when the distractor was located on the contralateral side of space to the MIP stimulation. There was an absence of TMS effect when the distractor was located on the ipsilateral side of space to the MIP stimulation (F(1,16048)=0.0206, p=0.886) or when TMS was applied to the control MT region (contralateral: F(1,16048)=1.377, p=0.241; ipsilateral: F(1,16048)=1.468, p=0.226).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Hence, we tested whether the MIP-TMS effect remained robust when we modelled participants’ behaviour using non-linear models. (a) We applied six models suggested by Bongioanni et al., 2021 to fit participants’ behaviour, namely the Prospect Theory additive model (Model 1), the Prospect Theory multiplicative model (Model 2), the Prospect Theory composite model (Model 3), the Linear additive model (Model 4), the Linear multiplicative model (Model 5), and the Linear composite model (Model 6). The fitting assumes that the distractor was absent. To compare the goodness-of-fit between the models, a group-level random-effect Bayesian model selection (BMS) was applied to test the log-model evidence of all models (Penny et al., 2010). The comparison showed that the Prospect Theory composite model provides the best account of participants’ choices (estimated frequency = 0.545; exceedance probability = 0.956). In particular, this model first applies the classical Prospect Theory to transform the reward magnitudes and probabilities non-linearly (Kahneman and Tversky, 1979), and then combines these two attributes using both additive and multiplicative methods. (b) The subjective probability (upper) and magnitude (lower) of each participant estimated non-linearly by using the Prospect Theory composite model. (c) When we re-ran GLM 3 using the values estimated from the Prospect Theory composite model, the results were broadly comparable to those reported in Figure 3 obtained using a linear expected utility model. In particular, there was a three-way Site ×Stimulation × Location interaction on the distractor term (F(1,28) = 5.56, p=0.026, np2=0.166; note that two participants were excluded from this analysis because their choices lacked variance after applying the Prospect Theory composite model). Model 1: Prospect Theory additive model: SubjMag = Magα, SubjProb = (Probγ) / [Probγ + (1 − Prob)γ]1/γ, Utility = (β×SubjMag) + ((1 − β)×SubjProb). Model 2: Prospect Theory multiplicative model: SubjMag = Magα, SubjProb = (Probγ) / [Probγ + (1 − Prob)γ]1/γ, Utility = SubjMag × SubjProb. Model 3: Prospect Theory composite model: SubjMag = Magα, SubjProb = (Probγ) / [Probγ + (1 − Prob)γ]1/γ, Utility = (η × (SubjMag ×SubjProb)) + ((1 − η) × ((β×SubjMag) + ((1 − β)×SubjProb))). Model 4: Linear additive model: Utility = (β×Mag) + ((1 − β)×Prob). Model 5: Linear multiplicative model: Utility = Mag × Prob. Model 6: Linear composite model: Utility = (η × (Mag ×Prob)) + ((1 − η) × ((β×Mag) + ((1 − β)×Prob))). where γ, α, β, and η are free parameters that control the sigmoidal shape of SubjProb, the concavity of SubjMag, the relative weight between SubjMag (or Mag) and SubjProb (or Prob), and the relative weight between multiplicative and additive components, respectively. Prob = reward probability; Mag = reward magnitude; SubjProb = subjective reward probability; SubjMag = subjective reward magnitude.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** We ran GLM3 once (a) to obtain the effect of D-HV on accuracy, just as in Figure 3c and b once again to obtain the D-HV effect on RT on accurate trials. We then re-ran a similar ANOVA to that in Figure 3c (including the factors Stimulation x Site x Distractor Location) to examine accuracy effects but added a fourth two-level factor of Behavioural Metric (Accuracy vs RT) on only the D-HV predictor and obtained the following effects. First, we found a three-way interaction between Stimulation ×Site × Distractor Location (F(1,30) = 4.96, p=0.034, ηp2p20.14). This means that TMS, when applied to MIP as opposed to MT, on trials on which the distractor, D, appears contralaterally as opposed to ipsilaterally, increases both accuracy and RT as a function of D-HV. (a) As shown in Figure 3c, higher distractor values (i.e. higher D-HV) were associated with higher accuracy only when TMS was applied to MIP contralateral to the distractor, but not on any Non-TMS trials or in MT sessions. In addition, there was a trend towards a four-way interaction Stimulation ×Site × Distractor Location ×Behavioural Metric (F(1,30) = 3.90, p=.058, ηp2p20.12) suggesting a trend for the three-way Stimulation ×Site × Distractor Location interaction effect of D-HV to manifest in a slightly different way on (a) accuracy and (b) RT metrics. Nevertheless, in line with both our version of the diffusion model 22 and standard versions of diffusion model, both RT and accuracy indices of the response selection processes are affected.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** In the context of this other GLM, two other effects are worth noting. First, the main effect of D is clearly worth considering. If this is positive, then the positive distractor effect predominates at the expense of divisive normalisation while if it is negative then divisive normalisation predominates at the expense of the positive distractor effect. In the baseline state, the main effect of D is near zero consistent with the existence of both divisive normalisation and positive distractor effects. An ANOVA showed that the positive change in D effect was significant (Site ×Stimulation × Distractor Location: F(1,30) = 4.75, p=0.037, ηp2p20.137). Second, in the same GLM the (HV +LV)D term describes how the separate divisive normalisation effects caused by HV +LV and D interact with each other. This term is of particular importance when considering the divisive normalisation effects caused by HV +LV and D. Divisive normalisation predicts poor choice accuracy as a function of the total value of HV +LV + D. Hence, when HV +LV is small (or large), the relationship between the D value and accuracy should show a steeper (or shallower) negative slope. In other words, the negative D effect should be stronger (or weaker). Similarly, when D is small (or large), the negative HV +LV effect should also be stronger (or weaker). Had both divisive normalisation effects caused by HV +LV and by D been present in our data, then this should be reflected by a positive (HV +LV)D interaction effect. This is, in fact, what is illustrated in Figure 2—figure supplement 1. Further, it is also important to test whether TMS disrupts both types of divisive normalisation effects; this should be apparent in a less positive (HV +LV)D effect. Note that in the current experimental task, however, it was not possible to have all three options, HV, LV, and D, presented on the side contralateral to the TMS on the same trial. Thus theoretically, each TMS train should only disrupt the divisive normalisation component caused by the contralateral option but it should spare the divisive normalisation component due to the remaining options from the ipsilateral side. Hence, we should expect only a weak TMS effect because disruption can only ever be weak. Nevertheless, the (HV +LV)D effect still became marginally less positive after MIP-TMS (F(1,30) = 3.77, p=0.062, ηp2p20.112). In summary, once again, this analysis approach confirms the existence of both positive and negative (divisive normalisation) distractor effects and shows that the first effect predominates at the expense of the second effect after MIP TMS. Of course, this approach can be expanded to included analysis of the (HV-LV)(D) interaction too (already reported extensively in the main text).
+
+**Table 1.**
+ F- and p-values associated with a Site (MIP/MT) x Stimulation (TMS/Non-TMS) x Distractor Location (contralateral/ipsilateral) ANOVA applied to the beta values of each regressor in GLM3 (HV +LV, HV-LV, D-HV), when GLM3 predicts choice accuracy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">HV +LV</th>
+      <th colspan="2">HV-LV</th>
+      <th colspan="2">D-HV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Site</td>
+      <td>1.01</td>
+      <td>0.324</td>
+      <td>0.51</td>
+      <td>0.482</td>
+      <td>0.24</td>
+      <td>0.625</td>
+    </tr>
+    <tr>
+      <td>Stimulation</td>
+      <td>3.00</td>
+      <td>0.094</td>
+      <td>0.69</td>
+      <td>0.412</td>
+      <td>0.87</td>
+      <td>0.358</td>
+    </tr>
+    <tr>
+      <td>Distractor Location</td>
+      <td>0.55</td>
+      <td>0.462</td>
+      <td>0.85</td>
+      <td>0.365</td>
+      <td>0.61</td>
+      <td>0.442</td>
+    </tr>
+    <tr>
+      <td>Site * Stimulation</td>
+      <td>0.06</td>
+      <td>0.812</td>
+      <td>1.65</td>
+      <td>0.209</td>
+      <td>0.40</td>
+      <td>0.533</td>
+    </tr>
+    <tr>
+      <td>Site * Distractor Location</td>
+      <td>0.35</td>
+      <td>0.560</td>
+      <td>3.01</td>
+      <td>0.093</td>
+      <td>0.54</td>
+      <td>0.468</td>
+    </tr>
+    <tr>
+      <td>Stimulation * Distractor Location</td>
+      <td>1.65</td>
+      <td>0.209</td>
+      <td>0.40</td>
+      <td>0.531</td>
+      <td>0.08</td>
+      <td>0.786</td>
+    </tr>
+    <tr>
+      <td>Site * Stimulation * Distractor Location</td>
+      <td>3.06</td>
+      <td>0.090</td>
+      <td>1.50</td>
+      <td>0.230</td>
+      <td>4.44</td>
+      <td>0.044*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < 0.05._
+
 In order to explore the three-way interaction on the D-HV predictor, we split the data into contralateral and ipsilateral sets, that is trials in which the distractor was presented contralaterally/ipsilaterally to the TMS pulse, and performed a Site x Stimulation ANOVA on each set of trials. In each ANOVA, the terms associated with the opposite side were also entered as covariates. We found no Site x Stimulation effects in the ipsilateral data set (F<1.87, p>0.180). Since traditional frequentist statistics are less ideal for supporting claims of null effect, we performed Bayesian tests to compare the D-HV effect between TMS and Non-TMS trials in the ipsilateral data set (when the distractor had been presented ipsilateral to the MIP TMS). The results confirmed that there was an absence of TMS effect when it was applied over ipsilateral MIP (BF10=0.209) or MT (BF10=0.271). In the contralateral data, we found a significant Site x Stimulation interaction effect, F(1,26) = 4.99, p=0.034, ηp2p20.16 (no other effects were significant, F<0.73, p>0.400), indicating that the Site x Stimulation x Distractor Location effect was driven by the contralateral presentation condition (when the distractor was presented contralateral to the MIP TMS). In other words, this is consistent with a relative increase in the positive distractor effect (previously associated with vmPFC) at the expense of the divisive normalisation effect associated with intraparietal areas such as MIP that occurs mainly when distractors are presented contralateral to the TMS site.
 
 To clarify the nature of this effect, we split the contralateral data further into MT and MIP sets and repeated the ANOVA, entering only the Stimulation factor and including all other conditions as covariates, on each set. We found a significant effect of TMS on MIP conditions (F(1,24) = 4.32, p=0.049, ηp2p20.15), with TMS trials showing a more positive D-HV effect than Non-TMS trials. The MIP-TMS effect became even clearer after the grey matter volume (GM) of the same region was also entered as a covariate (F(1,23) = 7.02, p=0.014, ηp2p20.23; the next section explains the importance of considering the GM and explains how the GM indices were obtained). In contrast, we found no effect in MT conditions (F(1,24) = 1.24, p=0.277, ηp2p20.05), and this lack of TMS effect was confirmed by an additional Bayesian test (BF10=0.225). The results remained similar even after entering the GM of MT as an additional covariate (F(1,23) = 0.19, p=0.664, ηp2p20.01). These results suggest that TMS of MIP had a significant impact on promoting the positive distractor effect on accuracy at the expense of the opposing negative (divisive normalisation) distractor effect dependent on intraparietal sulcus areas such as MIP (Chau et al., 2014; Louie et al., 2011). The effect was especially clear when the distractor was presented contralaterally to the MIP TMS site. Finally, the MIP-TMS effect was even more robust when we analysed the data from all participants together in a mixed-effects model (Figure 3—figure supplement 1) or when we considered that participants may evaluate choice attributes in a non-linear manner (Figure 3—figure supplement 2).
@@ -69,11 +192,19 @@ Finally, as explained in Figure 2—figure supplement 1, the negative distractor
 
 In summary, the D-HV term indexes an important aspect of the influence of the distractor on behaviour. At baseline it is associated with two significant absolute effects; large distractor values are associated with higher accuracy when decisions are difficult (Figure 2d, left) and they are associated with lower accuracy when decisions are easy (Figure 2d, right). Thus, the balance of the distractor effect changes across the decision space defined by the choice values (such as the differences in their values). The balance of distractor effects also significantly changes with the disruption of MIP using TMS; the positive distractor effect becomes stronger at the expense of the negative distractor effect (Figure 3c).
 
-## MRI data: VBM confirms link between MIP and the impact of TMS on the distractor effect
+### MRI data: VBM confirms link between MIP and the impact of TMS on the distractor effect
 
 So far, we have provided evidence that MIP is causally related to the negative distractor effect because the antagonistic positive distractor effect emerged prominently and to a significantly greater extent after MIP was disrupted. To investigate the importance of MIP, and the impact of its disruption further, we sought an explanation of individual variation in effects. We might expect individual variation in MIP volume to be related to the degree of TMS modulation of the distractor effect. Recent studies suggested that those with smaller GM in the target region also demonstrate stronger behavioural changes after receiving TMS (Ye et al., 2019). Thus, in individuals with larger MIPs, the negative distractor effect should be less susceptible to TMS disruption and the opposing positive distractor effect should appear weaker.
 
 To test this, we performed a voxel-based morphometry (VBM) analysis to examine the relationship between GM and the TMS effect on participants’ decision-making. The analysis was focused on parietal and occipital cortex in the same hemisphere to which TMS had been applied. The same GLM3 (HV-LV, HV +LV, D-HV) as described in the behavioural analysis was used. In order to extract the effects of TMS, we subtracted the beta values associated with Non-TMS trials from those associated with TMS trials (in contralateral conditions). This was conducted once for MT conditions, and once for MIP conditions. Interestingly, the effect of MIP TMS on the distractor value’s (D-HV) impact on decision accuracy showed a negative relationship with MIP GM (p=0.029, TFCE corrected, centred around MNI X(–30), Y(–52), Z(42), Figure 4a). This implies that in individuals with larger MIP GMs, there was less difference between TMS and Non-TMS trials (less relative increase in the positive distractor effect at the expense of the negative distractor effect), because TMS had a weaker impact on disrupting the MIP-related negative distractor effect. No significant GM differences were observed in any other parietal and occipital regions (p>0.170).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig4-v1.jpg)
+
+**Figure 4.:** (a) Statistical map displayed on a standard MNI brain shows a significant relationship between TMS effect (difference in distractor effect between TMS and Non-TMS trials) and MIP. (b) Local grey matter volume (GM) plotted as a function of TMS effect. (Left) An illustration of the effect in (a). Individuals with larger MIPs also revealed less positive change in the D-HV effect between TMS and Non-TMS trials in MIP sessions. This suggested that the MIP-related negative distractor effect was less disrupted by TMS when MIP was larger. (Right) In contrast, the difference in D-HV effect between TMS and Non-TMS trials in MT sessions was unrelated to the volume of the MIP region. (c) A similar analysis was performed for the MT GM. Both MIP (Left) and MT (Right) TMS effects (difference in D-HV effect between TMS and Non-TMS trials) were unrelated to the MT GM. Top left inserts show the approximate location of the GM (coloured dot) and the site of the TMS effect (arrow) used in each correlation. *** p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** We conducted a region of interest analysis on parietal/occipital regions and identified an association between the effect of MIP stimulation on the distractor effect and MIP (Figure 4). For completeness, we also conducted a whole-brain analysis. We found an association between the TMS effect and the pregenual anterior cingulate cortex (pgACC), with larger MIP TMS effects associated with smaller pgACC GM (p=0.018, centred around MNI X(0), Y(48), Z(4)).
 
 We followed these tests up by extracting the GM at MIP and MT. First, we illustrate the VBM results again by showing that there was a significant partial correlation between MIP GM and MIP TMS impact on the D-HV effect (r(27) = –0.61, p<0.001; Figure 4b, left panel), after controlling for the other explanatory variables entered in the VBM (i.e. TMS effects on HV-LV and HV +LV). In addition, the correlation remained significant even without controlling for HV-LV and HV +LV (r(29) = –0.37, p=0.043). Since visual inspection revealed a potential outlier with small MIP GM and a large TMS effect on the D-HV predictor, we repeated the partial correlation analysis by excluding this data point. The results did not change qualitatively (r(26) = –0.55, p=0.002).
 
@@ -81,13 +212,76 @@ Next, we ran three additional analyses to demonstrate that the correlation was s
 
 Finally, we note that the correlation between MIP GM in each individual and the impact of MIP TMS on the D effect in behaviour was more strongly negative than the correlation between MIP GM in each individual and the impact of MT TMS on the D effect in behaviour (i.e. comparing the correlations in Figure 4b left and right; z=–2.47, p=0.014).
 
-## Eye-tracking data: TMS affects gaze shifts between D and HV
+### Eye-tracking data: TMS affects gaze shifts between D and HV
 
 Previous work has suggested that the positive distractor effect, which is prevalent on hard trials (Figure 2d) and which becomes more prominent when MIP is disrupted (Figure 3c), is linked to particular patterns of eye movement. Chau et al., 2020 showed that there is a positive correlation between distractor value and gaze shift between the D and HV options. As such, larger distractor values are associated with more D-and-HV gaze shifts and, ultimately, more accurate HV choices are made. This suggests that accumulation of evidence in favour of the HV, as opposed to the LV, option is prolonged when D captures overt attention, and this eventually leads to more accurate decision-making. Similarly, in other settings, participants who are allowed extra time to revise their initial decisions tend, ultimately, to make more accurate decisions (Resulaj et al., 2009; van den Berg et al., 2016). Therefore, we tested whether the positive relationship between distractor value and D-to-HV gaze shift was replicable in the current study. We also tested whether the positive relationship became even stronger after the TMS disrupted the negative distractor effect and spared the positive distractor effect. Hence, we again applied GLM3 (HV-LV, HV +LV, D-HV) to predict gaze shifts between D and HV.
 
 First, we showed that larger D-HV values were related to more gaze shifts between D and HV (t(30) = 4.75, p<0.001, d=0.85, CI = [0.03, 0.08]). The result is similar to that reported by Chau and colleagues (Chau et al., 2020). However, in the previous study the relationship between the difference in D/HV values, D-HV, and gaze shifts was apparent for D-to-HV gaze shifts whereas in the present analysis the association was with gaze shifts between HV and D in either direction. In addition, HV-LV and HV +LV had no clearly significant effect on the bidirectional gaze shifts (t(30) < 1.55, p>0.131). We then performed a critical test that examined whether large distractor values were more strongly related to more gaze shifts between D and HV after MIP was disrupted using TMS. This was done by comparing the effect of D-HV on gaze shifts between HV and D using a Site (MIP/MT) by Side (contralateral/ipsilateral) by Stimulation (TMS/Non-TMS) ANOVA. This was analogous to the analysis in Figure 3c that examined how TMS modulated the distractor’s influence on choice behaviour. Note that five participants were excluded in this analysis due to the absence of gaze shifts between HV and D in some conditions of this ANOVA. The results showed a significant Site ×Stimulation interaction effect, F(1,25) = 8.85, p=0.006, ηp2p20.26. Follow-up ANOVAs with factors of Side and Stimulation revealed in MIP sessions the effect of distractor value on gaze shifts was significantly higher in TMS compared to Non-TMS trials (F(1,25) = 5.30, p=0.030, ηp2p20.18), while in MT sessions there was no significant difference between TMS and Non-TMS trials (F(1,25) = 1.62, p=0.214, ηp2p20.06).
 
 To avoid excluding data from five participants due to splitting the data multiple times into small sets, we ran a similar analysis by collapsing the conditions of Side (contralateral/ipsilateral). Then we performed a two-way Site by Stimulation ANOVA to compare the effect of D-HV on gaze shift between HV and D. Again, the results showed a significant two-way interaction effect, F(1,30) = 6.73, p=0.014, ηp2p20.18 (Figure 5a, right; Table 2). No effects were found when a similar ANOVA was performed to compare the effect of HV-LV and HV +LV on the gaze shifts between HV and D (F<2.71, p>0.110; Figure 5a, left and middle, respectively).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig5-v1.jpg)
+
+**Figure 5.:** GLM3 was used to predict gaze shifts between different options, namely (a) bidirectional gaze shifts between D and HV, (b) directional gaze shift from D to HV, and (c) directional gaze shifts from HV to D, for each participant and each condition. TMS over MIP increased the number of gaze shift from D to HV (Site x Stimulation interaction, * P<0.050), but not from HV to D. (d) GLM4 was used to test the impact of gaze shifts between all possible options on accuracy. Shifts towards the low-value option were found to decrease accuracy, while shifts from D to HV increased accuracy (*** p<0.001). Error bars denote standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75007/elife-75007-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** We used the predictors HV-LV, HV +LV, and D-HV to predict gaze shifts for consistency (Figure 3), since these predictors were used throughout all analyses, and since our predictions are focused on the distractor value, which is captured well by the predictor D-HV. However, to predict gaze shifts, absolute option values are arguably more interpretable. We therefore repeated the same analyses, but using the predictors HV, LV, and D, instead of HV-LV, HV +LV, and D-HV. The results do not change qualitatively. There were no effects for the predictors HV or LV on gaze shifts from D to HV, from HV to D, or both (F<3.74, p>0.062). When we tested the impact of D on gaze shifts, we found a Site x Stimulation interaction for bidirectional gaze shifts both D to HV and HV to D; F(1,30) = 6.61, p=0.015, ηp2p2.18, and gaze shifts from D to HV (F(1,30) = 5.80, p=0.022, ηp2p20.16), but not for gaze shifts from HV to D (F(1,30) = 0.98, p=0.330).(a-c) A GLM predictors: HV, LV, (D) was used to predict gaze shifts between different options, namely bidirectional gaze shifts between D and HV (a), directional gaze shift from D to HV (b), and directional gaze shifts from HV to D (c), for each participant and each condition. A Site x TMS ANOVA was then applied to the resulting beta values. TMS over MIP increased the number of gaze shift from D to HV (Site x Stimulation interaction, * p<0.05), but not from HV to D.
+
+**Table 2.**
+ F- and p-values associated with a Site (MIP/MT) x Stimulation (TMS/Non-TMS) ANOVA applied to the beta values of each regressor in GLM3 (HV +LV, HV-LV, D-HV), when GLM3 predicts gaze shifts between D and HV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">HV +LV</th>
+      <th colspan="2">HV-LV</th>
+      <th colspan="2">D-HV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td>F-value</td>
+      <td>p-value</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Site</td>
+      <td>0.41</td>
+      <td>0.526</td>
+      <td>0.11</td>
+      <td>0.739</td>
+      <td>0.46</td>
+      <td>0.503</td>
+    </tr>
+    <tr>
+      <td>Stimulation</td>
+      <td>0.00</td>
+      <td>0.965</td>
+      <td>0.62</td>
+      <td>0.437</td>
+      <td>0.15</td>
+      <td>0.698</td>
+    </tr>
+    <tr>
+      <td>Site * Stimulation</td>
+      <td>2.71</td>
+      <td>0.110</td>
+      <td>0.43</td>
+      <td>0.515</td>
+      <td>6.73</td>
+      <td>0.014*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05._
 
 The impact of the distractor value, D, on gaze shifts is sometimes more apparent when D-to-HV unidirectional gaze shifts are considered (as opposed to gaze shifts in either direction) (Chau et al., 2020). We examined these gaze shifts separately from those in the opposite direction (HV-to-D shifts). When we performed a two-way ANOVA, a Site by Stimulation interaction was only found in the D-to-HV direction (F(1,30) = 5.82, p=0.022, ηp2p20.16; Figure 5b, right), but not the HV-to-D direction (F(1,30) = 1.03, p=0.319, ηp2p20.03; Figure 5c, right). These results show that distractors with higher values lead to increased numbers of gaze shifts from the distractor to the high-value option, and importantly, that this effect is increased by applying TMS over MIP.
 
@@ -123,15 +317,15 @@ In summary, we show that TMS-induced disruption of MIP increases the positive di
 
 ## Methods
 
-## Participants
+### Participants
 
 A total of 31 neurotypical, right-handed participants (17 female) with a mean age of 21.90 (SD = 3.08) were recruited. Previous studies that showed a behavioural effect after rTMS was applied to intraparietal area involved sample sizes that ranged between 10 and 15 participants (Gould et al., 2012; Coutlee et al., 2016; Dormal et al., 2012; Hayashi et al., 2013) and the sample size of the current study surpassed this range. Prior to the experiment, each participant received information about the procedures and completed a screening questionnaire to ensure the safe use of TMS and magnetic resonance imaging (MRI). Each participant was paid between HKD 400 and HKD 500, depending on task performance (see Decision-Making Task). The experiment was approved by the Human Subjects Ethics Committee of the Hong Kong Polytechnic University and informed consent was obtained from all participants (HSEAR20151208001).
 
-## Procedures
+### Procedures
 
 Participants took part in a total of four experimental sessions. In Session 1, experimental procedures were explained to the participants and all safety screening was completed to ensure that participants were suitable to be involved. Then, we established their individual motor threshold using TMS (see Transcranial Magnetic Stimulation) and asked them to practice the decision-making task. In Session 2, participants’ structural brain scans were obtained using MRI (see MRI data acquisition). Sessions 3 and 4 were experimental sessions in which they completed the decision-making task while their eye-movements were tracked (see Eye movement recording and preprocessing) and repetitive transcranial magnetic stimulation (rTMS) was applied. In Sessions 3 and 4, the rTMS was applied over either their MIP or a closely adjacent control brain region – the MT region. The order of MIP/MT sessions was randomised across participants. Each experimental session took approximately 60 min. Sessions 3 and 4 were scheduled to be a minimum of seven days apart.
 
-## Decision-making task
+### Decision-making task
 
 Participants completed a multi-alternative value-based decision-making task that was similar to that of previous studies (Chau et al., 2014; Chau et al., 2020; Figure 1a). In each trial, three coloured rectangles were presented and participants were asked to choose the best option. The rectangles’ value was defined by their colour and orientation, indicating the associated reward magnitude and probability respectively. Specifically, each stimulus was associated with one of six reward magnitudes ($25, $50, $75, $100, $125, $150), indicated by colour, ranging from blue to green and one of seven probabilities (1/8, 2/8, 3/8, 4/8, 5/8, 6/8, 7/8) indicated by orientation, ranging from 0° to 90° (Figure 1b). The direction of the mapping between visual (colour, orientation) and decision (magnitude, probability) properties were randomised across participants.
 
@@ -141,31 +335,31 @@ In order to ensure that all stimuli were attended to, a matching task was added 
 
 In each experimental session (Session 3 or 4), participants completed 30 practice trials, followed by three blocks of 90 experimental trials. The task was written using Presentation software (Neurobehavioral Systems Inc, CA, USA), run on a PC, and presented on a 23-inch LCD monitor operating at a refresh rate of 60 Hz and a resolution of 1,920×1,080 pixels.
 
-## Transcranial magnetic stimulation:
+### Transcranial magnetic stimulation:
 
 TMS was applied using a MagVenture MagPro X100 biphasic stimulator (MagVenture, Denmark) via a figure-of-eight coil (coil winding diameter 75 mm, MagVenture C-B60). Participants were asked to place their heads onto a chin rest to minimise head movements. The position of the coil was tracked using a neuronavigation system (TMS Navigator, Localite, Germany). Each participant’s head and their individual MRI were coregistered (during the threshold detection prior to the acquisition of the MRI scan), by marking a number of anatomical landmarks on both the participant’s head and on their structural MRI scans (nasion, inion, left/right preauricular point, left/right exocanthion) using a digitising pen. Coregistration was deemed successful when the root mean squared error of the fitting procedure was 5 mm or less.
 
-## Motor Threshold Detection
+#### Motor Threshold Detection
 
 The stimulation intensity during Sessions 3 and 4 was defined as 100% of the resting motor threshold. During Session 1, the motor threshold was established for each participant and defined as the minimal intensity required to elicit a motor evoked potential (MEP) with a peak-to-peak amplitude of ~50 μV in 50% of stimulations. To identify this intensity, single-pulse TMS was applied to the right primary motor cortex via a coil positioned tangentially to the scalp with the handle pointing backward. MEPs were measured using surface electromyography electrodes placed over the left first dorsal interosseous in a belly-tendon montage. The exact position of the coil was determined individually based on where the largest MEPs could be reliably evoked. This resulted in a resting motor threshold of, on average, 55.94% (SD = 5.79) of maximum stimulator output.
 
-## rTMS
+#### rTMS
 
 On Sessions 3 and 4, rTMS was applied in biphasic bursts consisting of 5 pulses at a frequency of 10 Hz during 33% of trials (with a minimum of 20 s in between bursts), 50ms after stimulus onset. We aimed to stimulate the left medial intraparietal area (MIP) in experimental sessions and the left middle temporal visual area (MT) in active control sessions. MIP was chosen based on the literature suggesting its role in hand movement (Mars et al., 2011) and divisive normalisation effects in humans (Chau et al., 2014). MT, which is implicated in visual motion perception (Born and Bradley, 2005), was chosen as a control site as it was unlikely to be critical for any aspect of the performance of the current decision-making task but it is relatively close to the brain area of interest. The stimulation sites MIP and MT were located at the standard MNI coordinates X=-30, Y=-58, Z=62 and X=-51, Y=-80, Z=6 respectively, which were individualized by transforming the standard coordinates back to individual MRI scans using FMRIB’s Software Library (FSL). Adjustment of the stimulation sites was applied in some participants due to minor inaccuracies of the automated transformation using FSL or due to discomfort but the resulting distributions of stimulation sites were tightly clustered over MIP and MT (Figure 1c).
 
-## MRI data acquisition and preprocessing
+### MRI data acquisition and preprocessing
 
 T1-weighted structural images were collected using a Philips Achieva 3.0T scanner, using an MPRAGE sequence (1x1 x 1 mm3 voxel resolution, 240x240 x 200 grid, TR = 7 \ms, TE = 3.2ms, flip angle = 8°). Voxel-based morphometry (VBM) was performed to explore associations between differences in local grey matter volume (GM) and the impact of TMS on the distractor effect. Structural MRI data were analysed using the FSL-VBM protocol (Douaud et al., 2007; Good et al., 2001; Smith et al., 2004). Each participant’s scan was brain-extracted, grey matter-segmented, and nonlinearly registered to the MNI 152 standard space (Andersson et al., 2007). The resulting images were averaged to create a study specific grey matter template. Native grey matter images were then nonlinearly registered to this template and modulated to correct for local expansion/contraction due to the non-linear component of the spatial transformation. The modulated images were then smoothed with an isotropic Gaussian kernel (sigma = 3 mm), and a voxelwise GLM was applied using permutation-based nonparametric testing (5000 permutations). Correction for multiple comparisons across space was performed using threshold free cluster enhancement (TFCE).
 
 Since we set out to explore the effect of TMS, we restricted the analysis to the regions in which we applied TMS, that is the left MIP as well as the left MT as a control region. A region of interest (ROI) analysis was chosen because (1) we tested the effect of TMS and our hypotheses were therefore focused on the specific TMS sites used, and (2) all participants were sampled from a neurotypical population, suggesting that any structural differences associated with decision-making would be small. The region of interest covered large areas of the left parietal and occipital grey matter regions, and was defined as the left superior parietal lobule, the left angular gyrus, and the left inferior lateral occipital cortex, as defined by the Harvard-Oxford Cortical Structural Atlas (see also Figure 2—figure supplement 2).
 
-## Eye movement recording and preprocessing
+### Eye movement recording and preprocessing
 
 Eye gaze data was recorded at a sampling rate of 300 Hz using a TX300 video eye tracker (Tobii Technology, Sweden). Each recording was preceded by the default nine-point calibration procedure. Eye-tracking data were analysed in Matlab using custom scripts based on the Velocity-Threshold fixation identification (I-VT) algorithm (Komogortsev et al., 2010). First, small gaps (</=75ms in duration) in the raw eye-tracking data were linearly interpolated, and the noise in the resulting data was reduced through a moving median (window size = 3 samples). The eyes’ angular velocity was then calculated in 20ms time windows, and fixations were defined as periods in which the velocity stayed below a threshold of 30 degrees per second. Lastly, fixations which are adjacent in both time (</=75ms difference) and angle (</=.5 degree difference) were merged, and short fixations (<60ms) were discarded.
 
-## Statistical analysis
+### Statistical analysis
 
-## Behavioural Data Analysis
+#### Behavioural Data Analysis
 
 Based on the expected value of each stimulus, which was defined as the product of its reward magnitude and probability, the two choosable options in each trial were defined as high-value (HV) or low-value (LV). We refer to the expected value of the distractor stimulus as ‘D’. A trial was defined as accurate when the HV option was chosen, and as incorrect when the LV option was chosen. Trials in which the distractor or the empty quadrant were chosen, and trials in which no response was given (4.13%) were discarded. We applied three generalised linear models (GLMs) with a binomial data model (applied using the Matlab function ‘glmfit’) to predict each participants’ accuracy:
 
@@ -173,11 +367,11 @@ There are multiple ways to index the distractor value in the GLMs, such as D-HV,
 
 Each GLM was applied separately to each participant and each of the following conditions: TMS trials/Non-TMS trials in sessions in which the MIP/MT was targeted. Since the parietal neurons, including those from MIP, often have a response field that is selective to a small part of a contralateral space, the trials were further broken down into whether the distractor was displayed contralaterally/ipsilaterally to the stimulation, resulting in, at most, a total of eight conditions. The resulting beta values obtained from a GLM were then entered into a Site (MIP/MT) x Stimulation (TMS/Non-TMS) x Distractor Location (contralateral/ipsilateral) ANOVA, to test the impact of the different stimulation conditions on the relationship between stimulus values and accuracy. We hypothesised that MIP stimulation disrupts the negative distractor effect, while sparing the MIP-unrelated positive distractor effect, when the distractor was presented on the contralateral side. Therefore, MIP stimulation should result in a more positive relationship between distractor value and accuracy than control trials from the same session when the distractor was presented on the contralateral side. In addition, a more positive relationship between distractor value and accuracy should be apparent when contralateral distractor trials with MIP TMS are compared with any conditions in the control MT sessions.
 
-## VBM Data Analysis
+#### VBM Data Analysis
 
 We set out to explore the relationship between local GM and the effect of TMS on decision-making. To this end, we used beta weights estimated by GLM3 used in the behavioural analysis, and subtracted the beta weights associated with the Non-TMS condition from the beta weights associated with the TMS condition (specifically: [MIP/TMS/Contralateral] – [MIP/Non-TMS/Contralateral]) for each predictor. The resulting differences were normalised and entered as explanatory variables in the VBM. This allowed us to test the relationship between local GM and the TMS effect on each predictor’s impact on decision accuracy. We hypothesised that the difference in beta weights associated with the D-HV predictor (i.e. the impact of TMS on the distractor effect) is positively related to the size of parietal regions (i.e. the disruptive effect of TMS applied to MIP will be smaller in participants with larger MIPs because less of the volume of MIP will have been affected by the TMS). We repeated the same analysis in relation to the TMS effect associated with control MT stimulation (specifically: [MT/TMS/Contralateral] – [MT/Non-TMS/Contralateral]), but expected no effects.
 
-## Eye-tracking Data Analysis
+#### Eye-tracking Data Analysis
 
 Apart from the MIP-related negative distractor effect, the MIP-unrelated positive distractor effect is associated with overt attention that is reflected by eye-movement (Chau et al., 2014; Chau et al., 2020). Here, we hypothesise that this effect is increased when TMS is applied over MIP, disrupting the positive distractor effect’s antagonist. We therefore tested the impact of the presented stimuli on gaze shifts between the distractor stimulus (D) and the high-value (HV) option. We first tested all gaze shifts, that is all instances in which two immediately adjacent fixations included D and HV. To test directionality, we also repeated the analysis on gaze shifts from D to HV, and from HV to D separately.
 

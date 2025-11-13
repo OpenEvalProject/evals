@@ -40,13 +40,53 @@ To study the dynamics of the pleiotropic consequences of adaptation, we experime
 
 Each haploid population was founded by a single clone of a putatively isogenic laboratory strain, labeled with a unique DNA barcode at a neutral locus prior to the evolution experiment (Figure 1A). Diploid populations were founded by mating uniquely barcoded haploids and selecting for diploids. We then propagated each population for 1000 generations in batch culture, with a 1:210 dilution every 24hr; this corresponds to a population bottleneck size of 104 (Figure 1A and Figure 1—source data 1; see Methods for details). We froze an aliquot from each population at 50-generation intervals at −80°C in 8% glycerol for long-term storage.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-v2.jpg)
+
+**Figure 1.:** (A) Yeast cells were uniquely barcoded to generate founder clones. Uniquely barcoded founder clones were used to seed individual populations in 96-well plates. Populations were evolved for 1000 generations in three distinct environments: rich media (YPD), rich media at elevated temperature (YPD, 37 °C), and rich media with 0.2 % acetic acid (YPD+ AA), and frozen at 50-generation intervals. Fitness assays were performed at 200-generation intervals. (B) Bulk fitness assay of barcoded adapted populations by competitive growth in each evolution environment and two additional environments (YPD, 21 °C and YPD +0.4 M NaCl). Relative fitness of each population was evaluated from the log frequency of the respective barcode sequence over time compared to that of ancestral references, based on assay generations 10, 30, and 50.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each point corresponds to the fitness of a population at a given evolution timepoint in the environment indicated. Point color corresponds to the relative density of points, as determined by distance to five nearest points. The black line in each plot indicates x = y.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Growth curves for two haploid ancestral clones. (B) Growth curves for two diploid ancestral clones. For both haploids and diploids, two technical replicate measurements were made per clone.
+
 After completing the evolution, we revived populations from generations 0, 200, 400, 600, 800, and 1000. We then conducted parallel BFAs (two technical replicates [Figure 1—figure supplement 1]) to measure the fitness of each population at each timepoint across five environments (the three evolution environments, YPD +0.4 M NaCl at 30 °C [transfers every 24 hr], and YPD at 21 °C [transfers every 48 hr]) which exposed the populations to unique osmotic and temperature stresses (Figure 1—figure supplement 2). In each BFA, we pooled all populations of a given ploidy from a given generation along with a small number of common reference clones and propagated them for 50 generations (Figure 1B). We then sequenced the barcode locus at generations 10, 30, and 50, and we inferred the fitness of each population from the change in log frequency of each corresponding barcode. By exploiting the fact that each population is uniquely barcoded, these BFAs allowed us to estimate the fitness of all 172 populations at each of the five 200-generation intervals in each of the five environments with minimal cost and effort (Figure 2—source data 1 see Methods for details).
 
 Based on the measured fitness of the generation 0f ancestral populations, we found that some diploid populations had substantially higher ancestral fitness in certain assay environments, likely because they acquired mutations prior to the start of the evolution. To clarify our downstream analyses, we excluded 19 outlier diploid populations whose ancestors differed from the mean ancestral fitness by at least 4 % in at least one environment, leaving us with 133 diploid populations (43 YPD at 30 °C, 48 YPD+ acetic acid, and 42 YPD at 37 °C) and 20 haploid populations (153 populations total). However, we note that the results of all our analyses are very similar when we consider the entire dataset with outliers included (see Figure Supplements).
 
-## Adaptation to the home environment leads to consistent fitness gains and pleiotropic effects
+### Adaptation to the home environment leads to consistent fitness gains and pleiotropic effects
 
 While there is modest variability between replicate populations, adaptation in each environment leads to a consistent increase in fitness in that ‘home’ environment (Figure 2, subplots with bold black borders). As observed in earlier experiments (Couce and Tenaillon, 2015), this fitness increase is largely predictable and follows a characteristic pattern of declining adaptability: early rapid fitness gains that slow down over time (p < 0.0001; Figure 2—figure supplement 6). There are some differences among evolution environments with respect to this pattern: declining adaptability appears to be especially pronounced in the acetic acid environment, while haploid populations evolved at 37 °C appear not to exhibit this trend, possibly because the fitness gains in this environment were generally minimal.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-v2.jpg)
+
+**Figure 2.:** (A) Population fitness trajectories. Replicate populations for each evolution condition are shown in each column. Environments in which the fitnesses of these populations were assayed are shown in the rows. Plots for which evolution and assay environment are the same are indicated by a bold outer border. The black line in each plot indicates the median fitness. Error bars indicate standard error of the mean. (B) Summary of population changes in fitness: generations 0–1000. Populations are categorized according to whether their fitness at generation 1000 is equal to, less than, or greater than their fitness at generation zero. Significance of fitness differences evaluated using one-sided Welch’s unequal variances t-tests, the number of observations for both fitness values is 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Replicate populations for each evolution condition are shown in each column. Environments in which these populations’ fitnesses were assayed are shown in the rows. Plots for which evolution and assay environment are the same are indicated by a bold outer border. The black line in each plot indicates the median fitness. Error bars indicate standard error of the mean.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0–200 for each combination of evolution and assay environments. Summary statistics provided in Figure 2—source data 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0–400 for each combination of evolution and assay environments. Summary statistics provided in Figure 2—source data 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0–600 for each combination of evolution and assay environments. Summary statistics provided in Figure 2—source data 2.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0–800 for each combination of evolution and assay environments. Summary statistics provided in Figure 2—source data 2.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Changes in fitness over the first (0–400) and last (600–1000) 400 generations of the evolution experiment are plotted for each population. Points are colored by evolution condition (environment and ploidy). (B) Summary statistics for t-test comparing the mean change in fitness over the first and last 400 generations for all populations evolved in each condition. n refers to the number of populations in that evolution condition.
 
 Adaptation in each evolution environment also led to fitness changes in most other environments (Figure 2). In general, these fitness changes tend to have a consistent direction over time for each environment pair. For example, populations adapted to YPD+ acetic acid and YPD at 37 °C steadily gained fitness in the YPD at 30 °C and YPD +0.4 M NaCl environments over time, with the average fitness across populations largely following the same trend seen at home: initial rapid fitness gains followed by slower increases over time. In other instances, fitness gains at home correspond to fitness declines in away environments. For example, populations evolved in YPD+ acetic acid tend to lose fitness in YPD at 21 °C. However, pleiotropic effects are less predictable than the fitness gains in the home environment: we see more variability among replicate lines in away environments, both in the shapes of their fitness trajectories and in their ultimate evolutionary outcomes (see analysis below).
 
@@ -54,27 +94,79 @@ To review the extent of specialization across evolution environments, we summari
 
 To visualize how these pleiotropic effects change over time, we plot these fitness trajectories across pairs of environments (Figure 3). This representation of the data shows clear but sometimes subtle differences in patterns of pleiotropy depending on evolution environment and ploidy. For instance, while almost all populations gained fitness in both YPD at 30 °C and YPD+ NaCl, the dynamics of fitness change differed based on evolution environment: populations evolved at 37 °C (orange lines in Figure 3) initially made substantial fitness gains in YPD+ NaCl sometimes followed by more significant gains in YPD at 30 °C, whereas the populations evolved in YPD at 30 °C (cyan lines) and YPD+ acetic acid (green lines) only gained substantial fitness in YPD+ NaCl after initial fitness increases in YPD at 30 °C (Figure 3—animation 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig3-v2.jpg)
+
+**Figure 3.:** Axes correspond to fitness in the indicated assay environments. Colors correspond to evolution condition. Gray vertical and horizontal lines indicate zero fitness relative to an ancestral reference in each environment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Axes correspond to fitness in the indicated assay environments. Colors correspond to evolution condition. Gray vertical and horizontal lines indicate zero fitness relative to an ancestral reference in each environment.
+
 Separately, these plots and those in Figure 2 highlight similarities and differences between the fitness trajectories of populations of different ploidy. Haploids and diploids evolved at 37 °C tend to show quite similar patterns of fitness evolution across alternate environments (Figure 2). There are, however, salient differences. For example, comparing fitness in YPD+ NaCl with fitness in YPD at 21 °C reveals haploid trajectories that are both more positive than diploid trajectories in 21 °C and more variable overall (Figure 3; Figure 3—animation 1). The divergence of these pleiotropic trajectories is thus contingent on both the evolution environment and an organism’s genomic architecture (Marad et al., 2018) and associated physiological differences.
 
-## Characteristic environment- and ploidy-specific pleiotropic profiles emerge over time
+### Characteristic environment- and ploidy-specific pleiotropic profiles emerge over time
 
 To understand the diversity of fitness trajectories across environments, we treated the fitness of each population across all five assay environments as a single ‘pleiotropic profile’. We then conducted principal component analysis across all these pleiotropic profiles to characterize variation between replicate populations, across different evolution environments, and over time.
 
 In Figure 4A, we plot the first two principal components of each pleiotropic profile (which together consistently explain well over half the variance in the data [Figure 4—figure supplement 2]) for populations from each of the six measured timepoints (Figure 4—source data 1). We see that the populations separate over time into somewhat distinct clusters based on their evolution environment and ploidy. These clusters suggest that evolution in each environment leads to the formation of a characteristic environment- and ploidy-specific pleiotropic profile.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-v2.jpg)
+
+**Figure 4.:** (A) Principal component analysis of evolving populations, performed independently each 200 generations. The first two PCs are plotted. Populations are colored according to evolution condition. (B) Principal component analysis of all populations using all fitness data from across the 1000 generations. The first two PCs are plotted and explain 30% and 22% of the variance, respectively. (C) Plots of fitness trajectories in all five assay environments for eight example populations (a–h, identified as points in (B)). (D) Population clustering in PCA by evolution condition over time. Clustering of each population was quantified as the number of five nearest neighbors that share the same evolution condition, for each 200-generation interval, and across all intervals. Clustering metrics were averaged for each evolution condition to calculate point estimates; error bars represent 95 % confidence intervals of the mean clustering metric, estimated by performing PCA on bootstrapped replicate fitness measurements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) correspond to the same panels of Figure 4, except with analyses performed on the whole dataset including outlier populations. (C) is identical to Figure 4C. Principal component analyses presented in (A) and (B) can be found in and , respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Variance explained by five principal components corresponding to the PCAs conducted for each generation interval in Figure 4A. (B) Variance explained by five principal components corresponding to the PCAs conducted for each generation interval in Figure 4—figure supplement 1A.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Summed magnitudes of contributions of assay environments at each interval to the two principal components presented in Figure 4B. (B) Summed magnitudes of contributions of assay environments at each interval to the two principal components presented in Figure 4—figure supplement 1B.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Clustering metrics were averaged for each evolution condition to calculate point estimates; error bars represent 95 % confidence intervals of the mean clustering metric, estimated by performing PCA on bootstrapped replicate fitness measurements.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Contributions of each assay environment to each principal component for PCAs on individual 200-generation fitness measurements (left, corresponding to Figure 4A) and on all 200-generation fitness measurements (right, corresponding to Figure 4B) with outlier populations excluded. (B) Same as in A but with outlier populations included.
+
 Characteristic pleiotropic profiles can also be observed when running principal component analysis on the complete concatenated (but unordered) fitness data (i.e., with the pleiotropic profile of each population now defined as its fitness across all five assay environments at all six 200-generation timepoints, a total of 30 measurements [Figure 4—figure supplement 5]) and plotting data according to the first two components, which explain 30% and 22% of total variance, respectively (Figure 4B, Figure 4—source data 2). To provide an intuition for the meaning of distance and location in this principal component space, we show home and away environment fitness trajectories for select populations indicated in Figure 4B, C. The extent of evolution condition-specific clustering in this two-dimensional PCA is indicative of characteristic pleiotropic profiles (Figure 4C), and it appears comparable to that observed in analyses conducted independently for generations 600, 800, and 1000. This is unsurprising given the outsized weighting of later generations in each principal component (Figure 4—figure supplement 3).
 
 To more formally quantify the emergence of characteristic pleiotropic profiles over time in Figure 4A and B, we developed a simple clustering metric, which counts how many of a given population’s five nearest neighbors belong to the same evolution condition on average. We see that the degree of clustering in this two-dimensional space rises appreciably until the 600-generation mark, at which point it plateaus (Figure 4D). The observed clustering from generation 200 onward is much greater than expected by chance, as is clustering for the total-data PCA shown in Figure 4B (compared to a null expectation constructed by randomly permuting the evolution condition assigned to each population; p < 0.001). Note that this trend is consistent when the number of neighbors in the analysis is lowered to 3 or elevated to 10 (Figure 4—figure supplement 4). Thus, we observe the rapid emergence and later stabilization of general pleiotropic profiles characteristic to each evolution condition.
 
-## General trends contain significant variation, which varies with ploidy, environment, and time
+### General trends contain significant variation, which varies with ploidy, environment, and time
 
 Our principal component analysis shows that replicate populations in each evolution condition tend to follow similar trends in fitness changes across environments, leading to characteristic environment-specific pleiotropic profiles. However, it is apparent from Figures 2 and 3 that there remains significant stochastic variability in the pleiotropic effects of adaptation among populations evolved in the same environment. For instance, populations evolved in the acetic acid environment splay out into all four quadrants when plotting fitness at 37 °C against fitness at 21 °C (Figure 3; Figure 3—animation 1). This variability can also be seen in the wide dispersion of populations within clusters in Figure 4B, particularly among diploids evolved in the acetic acid environment and at 37 °C.
 
 We find that these patterns of variability are structured, with specific evolution conditions fostering more variable outcomes in certain assay environments (Figure 5). For example, populations evolved in YPD+ acetic acid exhibit generally wider variation in home and away environments than populations evolved in other environments. While it is tempting to link this pattern to the large fitness gains these populations make in their home environment, we note that populations evolved in YPD at 30 °C also make significant correlated gains in YPD+ acetic acid without generating such variable results across other assay environments. This suggests that, with respect to the distribution of pleiotropic effects of fixed driver or hitchhiking mutations, paths to higher fitness in YPD+ acetic acid are qualitatively different for the populations evolved in YPD at 30 °C. In another example, while diploid and haploid populations evolved at 37 °C show similar variability in 37 °C, 30 °C, and YPD+ NaCl across the experiment, they experience more variable outcomes in YPD+ acetic acid and 21 °C, respectively. Together, these results suggest that the role for chance in the pleiotropic trajectories of evolving populations is contingent on the condition to which the population is adapted.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-v2.jpg)
+
+**Figure 5.:** (A) Box plots summarizing population mean fitness over time for each evolution condition (columns) in each assay environment (rows). Line, box, and whiskers represent the median, quartiles, and data within 1.5 × IQR (interquartile range), respectively; outlier populations beyond whiskers are shown as points. (B) IQR from box plots in (A) are plotted as a function of time for each evolution condition and assay environment. IQR for fitness measured in home and away environments are represented by solid and dashed lines, respectively. Error bars represent 95 % confidence intervals of IQR calculated from bootstrapped replicate fitness measurements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Box plots summarizing population mean fitness over time for each evolution condition (columns) in each assay environment (rows). Line, box, and whiskers represent the median, quartiles, and data within 1.5 × IQR, respectively; outlier populations beyond whiskers are shown as points. (B) IQR from box plots in (A) are plotted as a function of time for each evolution condition and assay environment. IQR for fitness measured in home and away environments are represented by solid and dashed lines, respectively. Error bars represent 95 % confidence intervals of IQR calculated from bootstrapped replicate fitness measurements.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Brown–Forsythe test p values for paired comparisons of fitness variance in home environment and away environment for populations evolved in each evolution condition (columns). White boxes correspond to invalid self-comparisons. p values represent a one-sided test in which the alternative hypothesis is that home variance is less than away variance. 0 < p < 0.05 (blue) indicates home variance significantly less than away variance. 0.95 ≤ p < 1 (red) indicates home variance significantly greater than away variance. (A) Excluding outliers. (B) Including outliers. Figure 5—source data 1 contains test statistics.
+
 In addition, the variation in outcomes is a function of evolutionary time. While variation in fitness at home tends to remain relatively low over the course of 1000 generations (Figure 5A, bold black boxes; Figure 5B, thick solid lines), variation in away environments generally (if haltingly) increases over time, with a few exceptions. In other words, selection appears to suppress variation among trajectories in the home environment, at least on the timescales studied. To assess the statistical significance of these differences in variance, we used a one-tailed variant of a Brown–Forsythe test to perform pairwise comparisons of home and away fitness variance among replicate lines evolved in a given condition at each evolution timepoint. Of the 80 nonancestral pairwise comparisons, over half (48/80) indicated significantly greater variance in the away environment (at a threshold of p < 0.05) and only six showed significantly greater variance at home (Figure 5—figure supplement 2).
 
 The role of stochasticity and temporal shifts in pleiotropic dynamics also can be seen in the relative nonmonotonicity of fitness trajectories in away environments compared to home environments. To assess nonmonotonicity, we interpolated fitness at 500 generations for each population in each assay environment and compared the 0- to 500-generation and 500- to 1000-generation fitness changes. Trajectories were considered nonmonotonic if fitness changes in these intervals were in opposite directions (Figure 6A, see shaded quadrants), reflecting pleiotropic effects that change in sign over time. We find that populations rarely possess clearly nonmonotonic trajectories in their home environment, whereas they much more commonly possess clearly nonmonotonic trajectories in away environments (4/153 [2.6%] home and 102/612 [16.7%] away trajectories, respectively; p < 0.0001, χ2 test) (Figure 6B). Many but not all of these monotonic trajectories (72/102, or 71%) reflect initially positive pleiotropic effects that become negative in the second half of the experiment, as we might expect if a population increasingly specializes to its home environment over time.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig6-v2.jpg)
+
+**Figure 6.:** (A) Each panel shows, for each of the five assay environments, the change in fitness over the first 500 (x-axis) and second 500 (y-axis) generations of evolution of each population in a given evolution environment. Error bars correspond to standard error. Populations that fall in shaded quadrants have trajectories that are nonmonotonic. Points corresponding to fitness in the home environment are colored more opaquely than points corresponding to fitness in away environments, and panel borders have been colored to match the home environment. Fitness at generation 500 has been interpolated. (B) Each panel corresponds to a given evolution environment and shows the proportion of populations evolved in that environment that exhibit clearly nonmonotonic fitness trajectories in (A). ‘Clearly nonmonotonic’ trajectories are those populations (points) in (A) that fall in the gray quadrants and whose error bars (one standard error in either direction) do not span either the x- or y-axis. As in (A), bars corresponding to the home environment are colored more opaquely than bars corresponding to away environments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Each panel shows—for each of the five assay environments—the change in fitness over the first 500 (x-axis) and second 500 (y-axis) generations of evolution of each population in a given evolution environment. Populations that fall in shaded quadrants have trajectories that are nonmonotonic. Points corresponding to fitness in the home environment are colored more opaquely than points corresponding to fitness in away environments, and panel borders have been colored to match the home environment. Fitness at generation 500 has been interpolated. (B) Each panel corresponds to a given evolution environment and shows the proportion of populations evolved in that environment that exhibit clearly nonmonotonic fitness trajectories in (A). ‘Clearly nonmonotonic’ trajectories are those populations (points) in (A) that fall in the gray quadrants and whose error bars (one standard error in either direction) do not span either the x- or y-axis. As in (A), bars corresponding to the home environment are colored more opaquely than bars corresponding to away environments. As with the outliers-excluded data, populations exhibit clearly nonmonotonic trajectories in away environments much more commonly than in home environments (p < 0.0001), with most of these reflecting initially positive pleiotropic effects.
 
 ## Discussion
 
@@ -90,11 +182,77 @@ These results underscore the need for further empirical and theoretical work to 
 
 ## Materials and methods
 
-## Strain generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YCB140B</td>
+      <td>This paper</td>
+      <td>MATa, his3Δ1, leu2Δ0, lys2Δ0, RME1pr::ins-308A, ycr043cΔ0::NatMX, can1::STE2pr_SpHIS5_STE3pr_LEU2, ybr209w::GAL10pr-CRE, trp1Δ, URA3::STE5pr_URA3, HO::CgTRP1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YCB137A</td>
+      <td>This paper</td>
+      <td>MATα, his3Δ1, leu2Δ0, lys2Δ0, RME1pr::ins-308A, ycr043cΔ0::NatMX, can1::STE2pr_SpHIS5_STE3pr_LEU2, ybr209w::GAL10pr-CRE, trp1Δ, URA3::STE5pr_URA3, HO::CgTRP1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Barcoding plasmid landing pad 1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid map in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Barcoding plasmid landing pad 2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid map in Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Illumina sequencing primers</td>
+      <td>IDT</td>
+      <td></td>
+      <td>Sequences listed in Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Zymolyase 20T</td>
+      <td>Nacalai Tesque</td>
+      <td>Zymolyase 20T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/amphilli/pleiotropy-dynamics</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain generation
 
 Strains in this study are derived from YAN404 and YAN407 (Nguyen Ba et al., 2019), which were constructed on the BY4742 background (S288C: MATα, his3∆1, ura3∆0, leu2∆0, lys2∆0) to add the RME1pr::ins-308A mutation, meant to improve transformation efficiency in both the MATa and MATα cell types. Several additional modifications were made to enable proper barcoding, mating, and selection, as stated in Supplementary file 1. Ultimately, YCB140B and YCB137A (and YCB140B × YCB137A mated diploids) were used to found the populations evolved in this experiment.
 
-## Barcode plasmid design and integration
+### Barcode plasmid design and integration
 
 Our barcoding system uses two different landing pad types, hereafter referred to as type 1 and type 2. Both plasmids had a pUC origin and ampicillin resistance cassette in the vector backbone. The inserts into this 1998 bp backbone were 6728 and 6384 bp, respectively, with ~450 bp homology to the regions flanking the CgTrp1 in the HO locus on either side. Between these flanking regions were modified versions of the KanMX and CAN1 genes, as well as a ccdB gene that is toxic to sensitive E. coli strains. Many other components, including lox sites, artificial introns, and unexpressed TRP1 genes, were also present in these plasmids, and the entirety of the annotated plasmids can be viewed in Supplementary files 2 and 3. These extraneous elements – both in the plasmids and in our strain backgrounds – were included to enable capabilities that ultimately were not harnessed for the purposes of this study, such as mating, sporulation, and the inducible and selectable Cre-driven recombination of barcodes.
 
@@ -106,27 +264,27 @@ To select for successful haploid yeast transformants, we used 200 µg/ml G418 (G
 
 Other successful transformants (of the same landing pad type) were mated to form diploids, which were selected for resistance to 300 µg/ml hygromycin B (GoldBio, H-270), 100 µg/ml nourseothricin sulfate (GoldBio, N-500), 200 µg/ml G418, and 1 mg/ml 5-fluoroorotic acid monohydrate (Matrix Scientific, CAS: 220141-70-8) in S/MSG D media (1.71 g/l Yeast Nitrogen Base Without Amino Acids and Ammonium Sulphate, L-glutamic acid monosodium salt hydrate [Sigma-Aldrich, G1626], 20 g/l dextrose, 0.1 g/l L-glutamic acid, 0.05 g/l L-phenylalanine, 0.375 g/l L-serine, 0.2 g/l L-threonine, 0.01 g/l myo-Inositol, 0.08 g/l adenine hemisulfate salt, 0.035 g/l L-histidine, 0.11 g/l L-leucine, 0.12 g/l L-lysine monohydrate, 0.04 g/l L-methionine, 0.04 g/l uracil, 0.08 g/l L-tryptophan [Sigma-Aldrich, T0254]) for ~25 generations prior to arraying into 96-well plates alongside haploids for experimental evolution.
 
-## Experimental evolution
+### Experimental evolution
 
 Barcoded yeast were used to found 192 MATa, 192 MATα, and 162 diploid populations for evolution, respectively (though most haploid populations were excluded from further analysis due to the fixation of autodiploids). Each population was founded by a uniquely barcoded single colony or uniquely barcoded colonies that were then mated to form a diploid (see ‘Strain generation’), and was subsequently propagated in a well of an unshaken flat-bottom polypropylene 96-well plate in one of three conditions: YPD (1 % Bacto yeast extract [VWR #90000-726], 2 % Bacto peptone [VWR #90000-368], 2 % dextrose) at 30 °C, YPD at 37 °C, and YPD +0.2 % acetic acid (Sigma Aldrich #A6283) at 30 °C (128 µl/well). Each 96-well plate contained diploid and haploid populations of both mating types (with each mating type occupying one side of the plate) and five empty wells to monitor for potential cross contamination. With the exception of the YPD at 37 °C condition, the evolution conditions were arranged in a checkered pattern on each 96-well plate to minimize potential plate effects. Daily 1:210 dilutions (bottleneck ~104 cells) were performed using a Biomek-FX pipetting robot (Beckman-Coulter) after thorough resuspension by shaking on a Titramax 100 orbital plate shaker at 1200 rpm for at least 1 min. Populations underwent daily transfers for ~1000 generations (~10 generations/day); every 50 generations, populations were mixed with glycerol to a final concentration of 8 % for long-term storage at −80 °C. No contamination of blank wells was observed over the course of the evolution experiment. One of the 96-well plates was dropped at generation 170 and evolution was resumed by thawing and reviving populations from the generation 150 archive; thus, all future archives of populations on this plate lagged 40 generations behind the populations on all other plates.
 
-## Population growth curve and bottleneck size measurements
+### Population growth curve and bottleneck size measurements
 
 Growth curves were observed and population bottleneck sizes were determined for two haploid and two diploid ancestral clones in each of the evolution and assay environments. Clones were first preconditioned in each environment for 20 generations (except for the 21 °C environment, in which preconditioning was performed for 10 generations). Following preconditioning, cultures were serially diluted and spotted onto YPD-agar to determine the population bottleneck size (Figure 1—source data 1). To measure growth rate, the same preconditioned cultures were diluted 1:210 in technical duplicate in 96-well plates and shaken on a Titramax 100 orbital plate shaker at 1200 rpm for 1 min, as in the evolution experiment (see above). Plates were then sealed with a breathable membrane (VWR #60941-086) and loaded into a Biotek Epoch 2, and relative absorbance measurements (600 nm) were made for 24 hr (48 hr for the 21 ºC environment) at an interval of 20 min, preceded by 2 min of linear shaking at maximum speed. Following the 24 (or 48)-hr period of absorbance measurements, cultures were diluted and spotted onto YPD-agar to quantify the final cell density. Relative absorbance measurements and cell densities are provided in Figure 1—source data 1 and the corresponding growth curves are plotted in Figure 1—figure supplement 2. We note that for the 21 ºC evolution environment, the growth rate was actually measured at 24 ºC due to practical constraints.
 
-## Nucleic acid staining for ploidy
+### Nucleic acid staining for ploidy
 
 Populations frozen at generation 1000 of the evolution experiment were thawed and revived by diluting 1:25 in YPD. The following day, saturated cultures were diluted 1:20 into 120 µl of sterile water in round-bottom polystyrene 96-well plates. Plates were centrifuged at 3000 × g for 3 minutes, the supernatant was removed, and cultures were resuspended in 50 µl sterile water. 100 µl of ethanol was added to each well, the cultures were mixed thoroughly and placed at 4 °C overnight. The following day, the cultures were centrifuged, the ethanol solution was removed, and 65 µl RNase A (VWR #97062-172) solution (2 mg/ml RNase A in 10 mM Tris–HCl, pH 8.0 + 15 mM NaCl) was added to each well and the cultures were incubated at 37 °C for 2 h. Then 65 µl of 300 nM SYTOX green (Thermo Fisher Scientific, S-34860) was added to each well and the cultures were mixed and incubated at room temperature in the dark for 30 min. Fluorescence was measured by flow cytometry on a BD LSRFortessa using the FITC channel (488 nm). Ploidy was assessed by comparing the fluorescence distributions of evolved populations to known haploid and diploid controls of the same strain. By generation 1000, all 192 MATa populations had autodiploidized, and 172 of the MATα populations had autodiploidized, as judged by the absence of a clear haploid peak. Only the remaining 20 haploid MATα populations were included in the BFAs described below.
 
-## Bulk fitness assays
+### Bulk fitness assays
 
 Populations frozen at generations 0, 200, 400, 600, 800, and 1000 of the evolution experiment were thawed by diluting 1:25 in YPD. The following day, once these cultures had grown to saturation, equivalent volumes of each population were pooled by ploidy for each generation (12 pools total). For the haploid populations, evolved populations were only pooled if they were verified to be haploid at the end of the evolution experiment (see ‘Nucleic acid staining for ploidy’). Each of the haploid pools was spiked with five uniquely barcoded ancestral reference strains of the same mating type at 4× the volume of each evolved population; each of the diploid pools was spiked with 10 reference strains at 4× the volume of each evolved population. The resulting pools comprised time point zero for the BFA and were diluted 1:210 in the appropriate media (described below) and divided between 16 wells (128 µl/well) of flat-bottom polypropylene 96-well plates. The BFA was performed in each of the three evolution environments (YPD at 30 °C, YPD at 37 °C, and YPD +0.2 % acetic acid at 30 °C), in addition to two novel environments (YPD at 21 °C and YPD +0.4 M NaCl at 30 °C). The 16 wells of each pool comprised two technical replicates of 8 wells. Every 24 hr (or every 48 hr in the case of the YPD 21 °C environment) the populations were resuspended by shaking on a Titramax 100 orbital plate shaker at 1,200 rpm for at least 1 min and the contents of the eight wells constituting each replicate were combined, mixed, and diluted 1:210 into eight new wells using a Biomek-FX pipetting robot (Beckman-Coulter). This split-pool strategy was designed to mimic the evolution conditions while maintaining sufficient diversity for bulk fitness measurements. At BFA timepoints 0, 10, 30, and 50 generations, 1 ml of the diploid pool was combined with 200 µl of the haploid pool for each generation, this culture was centrifuged at 21,000 × g for 1 min, the supernatant was removed, and the pellet was stored at −20 °C for downstream DNA extraction and sequencing.
 
-## Sequencing library preparation
+### Sequencing library preparation
 
 Genomic DNA was extracted from cell pellets using zymolyase-mediated cell lysis (5 mg/ml Zymolyase 20T (Nacalai Tesque), 1 M sorbitol, 100 mM sodium phosphate pH 7.4, 10 mM EDTA, 0.5 % 3-(N,N-dimethylmyristylammonio)propanesulfonate (Sigma T7763), 200 µg/ml RNase A, 20 mM DTT), binding on silica columns (IBI scientific, IB47207) with 4 volumes of guanidine thiocyanate (4.125 M guanidine thiocyanate, 100 mM MES pH 5, 25 % isopropanol, 10 mM EDTA), washing with wash buffer 1 (10% guanidine thiocyanate, 25 % isopropyl alcohol, 10 mM EDTA) and wash buffer 2 (20 mM Tris–HCl pH 7.5, 80 % ethanol), and eluting in 50 µl 10 mM Tris pH 8.5, as previously described (Nguyen Ba et al., 2019). Two rounds of PCR were performed to generate amplicon sequencing libraries for sequencing the barcode locus. In the first round of PCR, the barcode locus was amplified with primers containing unique molecular identifiers (UMI), generation-specific inline indices, and partial Illumina adapters (see Supplementary file 4 for primer sequences). This 20 µl 10-cycle PCR reaction was performed using Q5 polymerase (NEB M0491L) following the manufacturer’s guidelines, using 10 µl (~250 ng) of gDNA as template, annealing at 54 °C, and extending for 45 s. The first-round PCR products were then purified using one equivalent volume of DNA-binding beads (Aline Biosciences PCRCleanDX C-1003-5) and eluting in 33 µl 10 mM Tris pH 8.5. In the second-round PCR, the remainder of the Illumina adapters and sample-specific Illumina indices were appended to the first-round PCR products (see Supplementary file 4 for primer sequences). The second-round PCR was performed using Kapa HiFi HotStart polymerase (Kapa Bio KK2502) following the manufacturer’s guidelines for a 25 µl reaction, using 17.25 µl of first-round PCR product, annealing at 63 °C and extending for 30 s for 26 cycles. The second-round PCR products were then purified using one equivalent volume of DNA-binding beads and eluting in 33 µl 10 mM Tris pH 8.5. Following bead cleanup, the concentration of the PCR products was quantified using the Accugreen High Sensitivity dsDNA Quantitation Kit (Biotium 31068). Sequencing libraries were then pooled equally and sequenced on a NextSeq500 Mid flow cell (150 bp single-end reads).
 
-## BFA barcode enumeration and fitness inference
+### BFA barcode enumeration and fitness inference
 
 Lineage fitnesses were inferred from the concatenated sequencing data yielded by two separate NextSeq500 Mid flow cells (150 bp single-end reads). The second of these two runs allowed for deeper sequencing of specific BFA timepoints to enable superior determination of barcode frequencies associated with less fit lineages in certain environments. The second run also allowed sequencing of libraries that were omitted from the first run.
 
@@ -146,7 +304,7 @@ To clarify our downstream analyses, we excluded 19 outlier diploid populations w
 
 To account for the offset in plate two progress through evolution, plate two population fitness estimates for 200, 400, 600, and 800 generations were linearly interpolated from fitnesses on either side, e.g., gen 200 fitness inferred from gen 160 and gen 360 fitnesses. Fitness estimates for gen 1000 were extrapolated linearly from gen 760 and gen 960 fitnesses. The standard error of the s estimate for gen 160 was used for gen 200 fitness, the standard error of s for gen 360 was used for gen 400 fitness, and so on.
 
-## Barcode association
+### Barcode association
 
 To map barcodes to wells of the evolution experiment, we pooled ancestral strains in equal volumes from across the eight evolution plates, creating three sets of pools: column-specific pools (n = 12), row-specific pools (n = 8), and plate-specific pools (n = 8). We then lysed portions of these pools by diluting in yeast lysis buffer 1 mg/ml Zymolyase 20T, 0.1 M sodium phosphate buffer pH 7.4, 1 M sorbitol, 10 mg/ml SB3-14 (3-(N,N-dimethylmyristylammonio)propanesulfonate [Sigma T7763]) at 37 °C for 1 hr and 95 °C for 10 min. Two rounds of PCR were then performed to generate amplicon sequencing libraries for sequencing the barcode locus (both landing pad versions). In the first round, the barcode locus was amplified via a 10-cycle PCR reaction with Kapa HiFi HotStart polymerase (Kapa Bio KK2502), annealing at 58 °C for 30 s and extending at 72 °C for 30 s, with a final 10 min extension. PCR products were then purified using one equivalent volume of DNA-binding beads and eluting in 20 µl water. Following bead purification, a second-round PCR reaction was performed using 1.5 µl of each of a unique pair of Illumina indices (see Supplementary file 4 for primer sequences) with Kapa HiFi Hotstart ReadyMix (2×) in a 15 µl reaction, with 4.5 µl of first-round PCR product as template, annealing at 61 °C and extending for 30 s for 30 cycles. The second-round PCR products were then purified using 0.8× DNA-binding beads (Aline Biosciences PCRClean DX C-1003-5), washed 2× with 80 % ethanol and eluted in 50 μl of molecular biology-grade water. Following bead cleanup, the concentration of the second-round PCR products was quantified using the Accugreen High Sensitivity dsDNA Quantitation Kit (Biotium 31068). These libraries were then normalized, pooled, and sequenced on a NextSeq500 High flow cell (150 bp paired-end reads).
 
@@ -156,28 +314,28 @@ Then, after parsing and tallying barcodes in each sequencing library, we used th
 
 To triangulate the position of each barcode across the eight plates, for each error-corrected barcode that appeared in the sequencing data, we tabulated which barcodes were present in which libraries, and how many reads were associated with each barcode in each library. These data allowed us to determine the wells in which barcodes belonged.
 
-## Changes in fitness analysis
+### Changes in fitness analysis
 
 To summarize changes in fitness at each generation since the beginning of the experiment, we assessed the fraction of populations in each assay environment and evolution condition that had increased in fitness, decreased, or remained the same. To categorize a population in one of these three categories, we performed a Welch’s unequal variances t-test comparing the fitness of that population in a given assay environment at 0 generations to the fitness of that population at 200, 400, 600, 800, or 1000 generations. Since each fitness measurement is the result of two independent technical replicate measurements, we treated each as the mean of two observations. If the fitness at the later timepoint was greater than the ancestral fitness, we applied a one-sided test to determine whether that difference was significant. We did the converse one-sided test for populations that appeared to have declined in fitness. Populations for which we rejected the alternate hypothesis were considered to have maintained the same fitness (i.e., ‘equally fit’).
 
-## IQR variability analysis
+### IQR variability analysis
 
 Fitness variability was examined by plotting box-and-whisker plots of population mean fitness values, where the line, box, and whiskers represent the median, quartiles, and data within 1.5 × IQR, respectively, and outlier populations beyond whiskers are shown as points (Figure 5A). To compare the resulting IQR for various evolution conditions and fitness assay environments, 95 % confidence intervals of the IQR were calculated from bootstrapped interval-specific replicate s measurements (Figure 5B).
 
 To evaluate whether home environment fitness variance was less than away environment fitness variances at each evolution timepoint, we applied a Brown–Forsythe test (Brown and Forsythe, 1974). Since this test is typically a two-tailed test, and we wanted instead to employ a one-tailed test, we used the z scores from the Brown–Forsythe test to arrive at a two-tailed t-statistic. We could then obtain a one-tailed p value with this t-statistic, evaluated at N − 1 degrees of freedom, where N is the number of populations in consideration. No multiple hypothesis testing correction was applied.
 
-## Principal components analysis
+### Principal components analysis
 
 All principal components analysis excluded ancestral reference populations. To minimize the influence of varying scales of data features on the analysis, fitness values for each field – corresponding to fitness in a given assay environment, possibly at a specific evolutionary timepoint – were standardized to have a mean of 0 and standard deviation of 1 using the scikit-learn StandardScaler function. We then used the scikit-learn PCA() function.
 
-## Clustering metric
+### Clustering metric
 
 To quantify the degree of clustering by evolution condition in the two-dimensional principal component analyses, the NearestNeighbors algorithm in the scikit-learn python package was implemented to identify the five nearest neighbors for each population in the two-dimensional PC1 versus PC2 plots (Figure 4A and B). The clustering metric plotted in Figure 4D is the number of five nearest neighbors that belong to the same evolution condition as the focal population, averaged for each evolution condition. Error bars represent 95 % confidence intervals of the mean clustering metric, which were calculated by performing the PCA and clustering analysis on bootstrapped interval-specific replicate s measurements. The null expectation for populations to cluster by evolution condition was computed by permuting the evolution condition 1000 times and calculating the clustering metric as described above. The true mean clustering metrics were then compared to this null expectation by calculating a multiple testing-corrected p value, computed as the percentage of permutations for which the clustering metric was greater than the true mean for a given evolution environment.
 
-## Nonmonotonicity analysis
+### Nonmonotonicity analysis
 
 To assess nonmonotonicity, we linearly interpolated fitness at 500 generations for each population in each assay environment. We achieved the interpolated standard errors in fitness by taking the square root of the sum of the squares of the errors associated with the fitnesses used in the interpolation and dividing by two. For evolution plate two populations, which were offset from the others by 40 generations, we took a weighted average for the interpolation (500 generation fitness estimate) and extrapolation (1000 generation fitness estimate) steps. For the 500 generation fitness standard error estimate, we adapted this weighting approach for the standard error propagation as described for the other populations. For the 1000 generation fitness standard error estimate, we used the error assigned to the generation 960 fitness estimate. Then, we calculated the change in fitness (∆s) between 0 and 500 generations and between 500 and 1000 generations for each population in each environment, where the standard error of ∆s is propagated from the standard error of the two fitnesses used in the calculation as the square root of the sum of the squared errors. Finally, we plotted these ∆s values as x–y coordinates. If a point and its error bars were completely within the top-left or lower-right quadrant – corresponding to an increase followed by a decrease, or a decrease followed by an increase, over the 1000-generation experiment – these were considered to be ‘clearly nonmonotonic’. We applied a χ2 test with 1 degree of freedom to evaluate the significance in the difference in the frequency of nonmonotonicity in home versus away trajectories.
 
-## Declining adaptability analysis
+### Declining adaptability analysis
 
 To assess the extent of declining adaptability among populations in their home environments, we calculated the difference in fitness for each population between 0 and 400 generations and between 600 and 1000 generations. Standard errors for these differences were calculated as the square root of the sum of the squares of the standard errors associated with the fitness estimates from each generation. Across the populations, we then compared the mean fitness change in each interval using a one-sided t-test, in which the alternate hypothesis was that the fitness increase in the first 400 generations was greater than the increase in the final 400 generations of the experiment.

@@ -167,6 +167,7 @@ def run_cllm_workflow(
     verbose: bool = True,
     metrics: bool = False,
     use_safe_print: bool = False,
+    enable_filter: bool = True,
 ) -> bool:
     """
     Run the full CLLM workflow on a manuscript version.
@@ -186,11 +187,32 @@ def run_cllm_workflow(
         verbose: Enable verbose logging
         metrics: Enable metrics generation (automatically enables verbose)
         use_safe_print: If True, use thread-safe printing
+        enable_filter: If True, filter claims to only include those with sources in JATS XML
 
     Returns:
         True if workflow succeeded, False otherwise
     """
     _print = safe_print if use_safe_print else print
+
+    # Detect XML file for claim filtering
+    xml_file = None
+    if enable_filter:
+        # Look for XML symlink in the parent directory (article directory)
+        article_dir = version_dir.parent
+        # Pattern: elife-XXXXX-vX.xml (symlink)
+        xml_symlinks = list(article_dir.glob("elife-*-v*.xml"))
+
+        # Filter to find the one matching this version
+        version_name = version_dir.name  # e.g., "v1"
+        for xml_symlink in xml_symlinks:
+            # Check if symlink name contains the version
+            if version_name in xml_symlink.name and xml_symlink.is_symlink():
+                xml_file = xml_symlink
+                break
+
+        if not xml_file:
+            _print(f"      ⚠️  Warning: No XML file found for filtering, filtering disabled")
+            enable_filter = False
     # Output file paths
     claims_file = version_dir / "claims.json"
     eval_llm_file = version_dir / "eval_llm.json"
@@ -226,14 +248,22 @@ def run_cllm_workflow(
     try:
         # Stage 1: Extract claims
         _print(f"      [1/5] Extracting claims...")
+
+        # Build extract command with optional filtering
+        extract_cmd = [
+            str(CLLM_BIN),
+            "extract",
+            str(manuscript_file),
+            "-o", str(claims_file),
+            *verbose_flag,
+        ]
+
+        # Add filtering flags if enabled
+        if enable_filter and xml_file:
+            extract_cmd.extend(["--filter", "--xml", str(xml_file)])
+
         result = subprocess.run(
-            [
-                str(CLLM_BIN),
-                "extract",
-                str(manuscript_file),
-                "-o", str(claims_file),
-                *verbose_flag,
-            ],
+            extract_cmd,
             capture_output=True,
             text=True,
             timeout=600,
@@ -338,13 +368,13 @@ def process_single_manuscript(args):
     Wrapper function to process a single manuscript (used for parallel processing).
 
     Args:
-        args: Tuple of (index, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics)
+        args: Tuple of (index, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics, enable_filter)
 
     Returns:
         Tuple of (jats_id, article_id, version_name, status, message)
         where status is 'success', 'skipped', or 'failed'
     """
-    i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics = args
+    i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics, enable_filter = args
     version_name = version_dir.name
 
     # Check if already processed (look for db_export.json - the final output file)
@@ -375,6 +405,7 @@ def process_single_manuscript(args):
         verbose=verbose,
         metrics=metrics,
         use_safe_print=True,
+        enable_filter=enable_filter,
     )
 
     # Update database status
@@ -401,6 +432,7 @@ def process_manuscript_versions(
     reverse: bool = False,
     use_database: bool = True,
     metrics: bool = False,
+    enable_filter: bool = True,
 ) -> tuple[int, int, int, int]:
     """
     Process manuscript version folders.
@@ -416,6 +448,7 @@ def process_manuscript_versions(
         reverse: If True, process manuscripts in reverse order (newest first)
         use_database: If True, only process papers with QUEUED status from database
         metrics: If True, generate metrics files for each workflow stage
+        enable_filter: If True, filter claims to only include those with sources in JATS XML
 
     Returns:
         (total_processed, successful, failed, skipped)
@@ -525,6 +558,7 @@ def process_manuscript_versions(
                 dry_run=dry_run,
                 verbose=verbose,
                 metrics=metrics,
+                enable_filter=enable_filter,
             )
 
             # Update database status
@@ -545,7 +579,7 @@ def process_manuscript_versions(
         # Parallel processing
         # Prepare arguments for each manuscript
         tasks = [
-            (i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics)
+            (i, total, jats_id, article_id, version_dir, manuscript_file, force, dry_run, verbose, metrics, enable_filter)
             for i, (jats_id, article_id, version_dir, manuscript_file) in enumerate(version_dirs, 1)
         ]
 
@@ -647,6 +681,12 @@ def main():
         help="Generate metrics files for each workflow stage (enables verbose mode)"
     )
 
+    parser.add_argument(
+        "--no-filter",
+        action="store_true",
+        help="Disable claim filtering (by default, claims are filtered to only include those with sources in JATS XML)"
+    )
+
     args = parser.parse_args()
 
     # Setup paths
@@ -686,6 +726,10 @@ def main():
         print("Mode: Skip already processed (use --force to overwrite)")
     if args.metrics:
         print("Metrics: Enabled (generating metrics files for each stage)")
+    if args.no_filter:
+        print("Claim filtering: Disabled (--no-filter)")
+    else:
+        print("Claim filtering: Enabled (sources verified in JATS XML)")
     print("=" * 70)
 
     try:
@@ -700,6 +744,7 @@ def main():
             reverse=args.reverse,
             use_database=not args.no_db,
             metrics=args.metrics,
+            enable_filter=not args.no_filter,
         )
 
         print("=" * 70)

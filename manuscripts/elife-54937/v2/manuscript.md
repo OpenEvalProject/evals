@@ -36,55 +36,147 @@ In this study, we took advantage of the genetic accessibility and transparency o
 
 ## Results
 
-## Generation of stable transgenic lines for targeted opsin expression in zebrafish
+### Generation of stable transgenic lines for targeted opsin expression in zebrafish
 
 To maximise the utility of our optogenetic toolkit, we used the GAL4/UAS binary expression system for targeted opsin expression in specific cell populations (Figure 1). We generated nine stable UAS lines for opsins having different ion selectivities and spectral tuning, fused to a fluorescent protein reporter (tdTomato or eYFP; Figure 1A and Supplementary file 1; Asakawa et al., 2008; Arrenberg et al., 2009; Horstick et al., 2015). GAL4 lines were used to drive expression in defined neuronal populations, such as motor neurons (Figure 1B; Scott et al., 2007; Wyart et al., 2009; Böhm et al., 2016). High levels of expression were achieved in most cases (Figure 1C and Figure 1—figure supplement 1), with only few opsins showing intracellular puncta suggestive of incomplete trafficking to the plasma membrane (CheRiff and GtACR2) or low expression (Chronos). To quantitatively compare opsin lines, we performed standardised behavioural tests at embryonic and larval stages (Figure 1D) and calibrated photocurrents and modulation of spiking in larval primary motor neurons (Figure 1E).
 
-## Escape behaviour triggered by optogenetic activation of embryonic trigeminal neurons
+![Figure 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig1-v2.jpg)
+
+**Figure 1.:** (A) List of selected opsins, with spectral absorption and opsin class. (B) Schematics of expression patterns in the GAL4 transgenic driver lines used in this study. (C) Opsin expression in spinal neurons in Tg(mnx1:GAL4;UAS:opsin-FP) larvae at 5 dpf (for eNpHR3.0, the s1020t:GAL4 transgene was used). Insets show magnified cell bodies to illustrate opsin membrane expression (for insets, brightness and contrast were adjusted independently for each opsin to aid visualisation). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 20 μm in large images, 5 μm in insets. (D) Behavioural assays and corresponding figure numbers. (E) In vivo electrophysiological recordings and figure numbers. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Opsin expression in spinal motor neurons in a Tg(mnx1:GAL4;UAS:ChrimsonR-tdTomato) larva at 5 dpf. Middle panel shows masks used to compute cell body area. Bottom panel shows masks used to estimate membrane expression. A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 30 μm. (B) Cell body area and dorsoventral location in the spinal cord were used to classify cells as primary or secondary motor neurons (MNs) (Menelaou and McLean, 2012). Black line corresponds to sum of two Gaussians fit. Grey bars indicate unclassified neurons. (C) Opsin expression estimated as mean fluorescence intensity per membrane pixel in primary MNs (pMNs, dark) and secondary MNs (sMN, light). Opsins are grouped according to the fluorescent protein they are linked to. Box plots range from 10th to 90th percentiles. a. u., arbitrary units. (D) Opsin expression in pMNs vs. photocurrents in pMNs for cation channelrhodopsins linked to tdTomato. Error bars indicate standard deviation. Dotted line and grey areas correspond to linear fit with 95% confidence intervals. (E) Opsin expression across all neurons in individual fish (N = 5 larvae per opsin; Chronos, n = 302 cells; CheRiff, n = 998; ChrimsonR, n = 771; CoChR, n = 514; GtACR2, n = 1002; GtACR1, n = 735; eNpHR3.0, n = 386; ChR2(H134R), n = 910; eArch3.0, n = 487).
+
+### Escape behaviour triggered by optogenetic activation of embryonic trigeminal neurons
 
 As a first test of our opsin lines, we evaluated their ability to activate embryonic neurons (Figure 2A–C), which are characterised by high input resistance (Drapeau et al., 1999; Saint-Amant and Drapeau, 2000). We used the Tg(isl2b:GAL4) transgene (Ben Fredj et al., 2010) to drive expression of opsins in the trigeminal ganglion (Figure 2B,C). In this class of somatosensory neuron, optogenetic induction of few spikes has been shown to reliably elicits escape responses (Douglass et al., 2008), characterised by high-amplitude bends of the trunk and tail (Kimmel et al., 1990; Saint-Amant and Drapeau, 1998; Sagasti et al., 2005). Brief pulses of light (5 or 40 ms) induced escape responses in embryos (28–30 hr post fertilisation, hpf) expressing all cation- and anion-conducting channelrhodopsins (Figure 2C–E and Figure 2—video 1), while no movement was elicited in opsin-negative siblings (Figure 2F,G and Figure 2—figure supplements 1 and 2; N = 69 ± 26 fish per group, mean ± SD). The excitatory effect of GtACRs suggests that increasing chloride conductance depolarises neurons at this developmental stage. For all opsins, response probability increased monotonically with light power (Figure 2F,G). Escape behaviour could also be evoked via transient opsin expression, in which animals were tested one day after injection of DNA constructs into single cell-stage Tg(isl2b:GAL4) embryos (Figure 2F). Some opsins showed higher response probability in transient transgenic animals (CheRiff, CoChR and GtACRs), likely due to higher expression levels.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental setup for optogenetic stimulation and behavioural monitoring. IR, infrared. (B) Schematic of behavioural assay. (C) Opsin expression in trigeminal neurons in a Tg(isl2b:GAL4;UAS:CoChR-tdTomato) embryo at 1 dpf. Imaging field of view corresponds to black box in (B). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 50 μm. (D) Tg(isl2b:GAL4;UAS:CoChR-tdTomato) embryos positioned in individual agarose wells. Behaviour was monitored at 1000 frames per second across multiple embryos (28–30 hpf; N = 69 ± 26 fish per opsin group, mean ± SD) subjected to 5 or 40 ms pulses of full-field illumination (470 or 590 nm, 4.5–445 μW/mm2) with a 15 s inter-stimulus interval. (E) Optogenetically-triggered escape responses detected from ΔPixel traces in the three embryos indicated in (D). Dotted line indicates maximum latency (200 ms) for a response to be considered optogenetically-triggered. (F,G) Response probability for transient (E) or stable (F) transgenic embryos expressing different opsins (mean ± SEM, across fish). Insets show response latency for 5 ms blue light pulses in CoChR-expressing embryos (median ± 95% CI, across fish). See also Figure 2—figure supplements 1 and 2 and Figure 2—video 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Distribution of response probability vs. time for Tg(isl2b:GAL4) embryos (28–30 hpf) expressing different opsins through transient transgenesis (mean + SD, across fish). Embryos were stimulated with 5 ms (A,B) or 40 ms (C,D) pulses of blue (470 nm; A,C) or amber (590 nm; B,D) light. Each time bin corresponds to 8 ms.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Distribution of response probability vs. time for Tg(isl2b:GAL4) embryos (28–30 hpf) expressing different opsins through stable transgenesis (mean + SD, across fish). Embryos were stimulated with 5 ms (A,B) or 40 ms (C,D) pulses of blue (470 nm; A,C) or amber (590 nm; B,D) light. Each time bin corresponds to 8 ms.
+
 With blue light, CoChR elicited escapes at the highest response probability (65–100% at 112–445 μW/mm2; Figure 2F,G) and response latency decreased with increasing irradiance (insets in Figure 2F,G). As expected from its red-shifted absorption spectrum, ChrimsonR was the only cation channelrhodopsin to evoke escapes using amber light (~70% response probability at 322 μW/mm2; Figure 2F,G; Klapoetke et al., 2014). Consistent with their respective red- and blue-shifted absorption spectra, GtACR1 triggered escapes upon amber and blue light stimulation whereas GtACR2 elicited responses only with blue light (Figure 2F,G; Govorunova et al., 2015).
 
-## Tail movements triggered by optogenetic activation of larval spinal motor neurons
+### Tail movements triggered by optogenetic activation of larval spinal motor neurons
 
 Next, we compared the efficacy of cation channelrhodopsin lines to induce behaviour by activation of larval motoneurons, from which we would later record photocurrents. We used the Tg(mnx1:GAL4) transgene (Böhm et al., 2016) to target expression to spinal motor neurons (Figure 3A,B) and subjected head-restrained zebrafish (6 days post fertilisation, dpf; N = 28 ± 8 fish per group, mean ± SD) to either single light pulses (2 or 10 ms) or pulse trains at 20 or 40 Hz (Figure 3C,D and Figure 3—videos 1 and 2) while monitoring tail movements.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematics of behavioural assay. Head-restrained, tail-free larvae (6 dpf; N = 28 ± 8 fish per opsin group, mean ± SD) were exposed to 2 or 10 ms pulses of light (459 or 617 nm, 0.04–2.55 mW/mm2) with a 20 s inter-stimulus interval while their behaviour was monitored at 500 fps. We also provided 250 ms trains of light pulses at 20 or 40 Hz. (B) Opsin expression in spinal motor neurons in a Tg(mnx1:GAL4;UAS:CoChR-tdTomato) larva at 5 dpf. Imaging field of view corresponds to black box in (A). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 50 μm. (C) Swim bouts elicited by a pulse train in Tg(mnx1:GAL4;UAS:CoChR-tdTomato) larvae (left). The control, opsin-negative larva (right), does not respond within 148 ms after stimulus onset. (D) Tail tracking, showing optogenetically-evoked swim bouts in a CoChR-expressing larva (bottom three rows) and a visually-evoked swim in a control opsin-negative larva (top). tbf, tail beat frequency. (E) Distribution of response latencies for all tail movements in opsin-expressing (red) and control opsin-negative larvae (grey). Dotted line indicates maximum latency (50 ms) for a response to be considered optogenetically-triggered. Control larvae exclusively show long latency responses. Each time bin corresponds to 25 ms. (F,L) Response probability of larvae expressing different opsins for single-pulse (F) or pulse-train (L) stimulation (mean ± SEM, across fish). G–Q Latency (G,M), bout duration (H,N), tail angle of the first half beat (θ1; I,O), number of cycles (J,P) and tail beat frequency (K,Q) for single-pulse (G–K) or pulse-train (M–Q) stimulation (mean ± SEM, across fish). See also Figure 3—figure supplement 1 and Figure 3—videos 1 and 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Distribution of response probability vs. time for Tg(mnx1:GAL4) larvae (6 dpf) expressing different opsins (mean + SD, across fish). Larvae were stimulated with single 2 ms (A,B) or 10 ms (C,D) pulses of blue (459 nm; A,C) or red (617 nm; B,D) light. Each time bin corresponds to 2 ms.
+
 Optogenetically-evoked tail movements were triggered with short latency following light onset (8.3 ± 6.9 ms, mean ± SD) in opsin-expressing larvae only, whereas visually-evoked swim bouts occurred at much longer latency (316 ± 141 ms, mean ± SD) in both opsin-expressing larvae and control siblings (Figure 3E). We restricted our analyses to optogenetically-evoked movements, initiated within 50 ms of stimulus onset (corresponding to a minimum of the probability density distribution of latency; dotted line in Figure 3E). Optogenetically-evoked tail movements comprised a sequence of left-right alternating half beats, thereby resembling natural swim bouts (Figure 3C,D and Figure 3—videos 1 and 2). Response probability increased with irradiance (Figure 3F and Figure 3—figure supplement 1) and CoChR again elicited tail movements with the highest probability and shortest latency in response to blue light (96–100% at 0.63–2.55 mW/mm2; Figure 3F,G). Only the ChrimsonR line responded to red light (~78% response probability at 1 mW/mm2; Figure 3F). Tail movements evoked by single light pulses typically had shorter duration and fewer cycles than visually-evoked swims (Figure 3H–K). However, longer movements (>100 ms, 4–5 cycles) were often observed in response to single light pulses (see response to 2 ms pulse in Figure 3D and Figure 3—video 1) indicating engagement of spinal central pattern generators. This may occur through recruitment of glutamatergic V2a interneurons connected to motor neurons via gap junctions (Song et al., 2016) and/or by proprioceptive feedback via cerebrospinal fluid-contacting neurons (Wyart et al., 2009; Fidelin et al., 2015; Böhm et al., 2016). Pulse train stimuli evoked swim bouts of longer duration, with swims in CoChR and ChrimsonR lines showing modest frequency-dependent modulation of cycle number (Figure 3L–Q).
 
-## In vivo whole-cell recording of photocurrents in larval primary motor neurons
+### In vivo whole-cell recording of photocurrents in larval primary motor neurons
 
 To calibrate photocurrents in vivo, we performed whole-cell voltage clamp recordings from single primary motor neurons (pMNs) in 5–6 dpf larvae (Figure 4A). Each opsin was stimulated with a wavelength close to its absorption peak (1–30 mW/mm2; Figure 4—figure supplement 1A). We recorded over 138 neurons, including control cells from opsin-negative animals, from which 90 cells were selected following strict criteria for recording quality (see Materials and methods; N = 3–19 included cells per group; Figure 4—figure supplement 1B). Opsin-expressing pMNs displayed physiological properties, such as membrane resistance, resting membrane potential and cell capacitance, comparable to control opsin-negative cells (Figure 4B,C and Figure 4—figure supplement 1C,D). All cation channelrhodopsins induced inward currents upon light stimulation, which were not observed in opsin-negative pMNs (Figure 4D). Notably, CoChR and ChrimsonR generated the largest photocurrents (CoChR 475 ± 186 pA, mean ± SD, N = 8 cells, ChrimsonR 251 ± 73 pA, N = 7; Figure 4E), consistent with their higher expression level (Figure 1—figure supplement 1D) and efficacy in behavioural assays (Figures 2 and 3). We did not observe significant irradiance-dependent modulation of photocurrent amplitude in any opsin line, likely due to the high range of irradiance we tested (Figure 4—figure supplement 1F). Photocurrent kinetics influence the temporal precision with which single action potentials can be evoked (Mattis et al., 2011). Therefore, we measured the photocurrent activation time (i.e. time to peak response from light onset), which results from the balance between activation and inactivation of the opsin, and deactivation time constant, which is determined by the rate of channel closure at light offset (Mattis et al., 2011; Schneider et al., 2015). Comparable activation times were observed across opsin lines (4–5 ms; Figure 4F). Deactivation time constants were more variable between opsins, with Chronos showing the fastest deactivation kinetics (4.3 ± 0.4 ms, N = 3 cells, mean ± SD) and the other opsins displaying longer time constants (12–20 ms; Figure 4G).
 
-## Optogenetic induction of spiking in larval pMNs
+![Figure 4.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematics of experimental setup for optogenetic stimulation with in vivo whole-cell patch clamp recordings. Image shows a patched primary motor neuron (pMN) expressing CoChR in a 6 dpf Tg(mnx1:GAL4;UAS:CoChR-tdTomato) larva. Scale bar 5 μm. (B) Membrane resistance was not affected by opsin expression (mean ± SD, across cells). (C) Resting membrane potential was similar between opsin-expressing and control neurons (mean ± SD). (D) Examples of inward photocurrents in response to 5 ms light pulses (20 mW/mm2). (E) Peak photocurrent amplitude. CoChR and ChrimsonR induced the largest photocurrents (mean ± SEM, across cells). Dotted lines show range of pMN rheobase. Data is pooled across stimulus intensity (1–30 mW/mm2) but see Figure 4—figure supplement 1 for currents at varying irradiance. (F) Photocurrent activation time was similar across opsins (mean ± SEM). (G) Chronos photocurrents had the fastest deactivation time constant, while CoChR and ChrimsonR showed similar deactivation kinetics (mean ± SEM). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) LED emission wavelength (centre/bandwidth, nm) and irradiance levels used for each opsin line and control cells. (B) Number of cells patched in each group. Numbers and coloured bars indicate included cells while grey bars indicate excluded cells (see Materials and methods for inclusion criteria). (C,D) Access resistance (C) and cell capacitance (D) were comparable between groups (mean ± SD, across cells). (E) Example photocurrents from a CoChR-expressing cell at different irradiance levels (3–20 mW/mm2). F–H Peak photocurrent amplitude (F), activation time (G) and deactivation time constant (H) vs. irradiance (mean ± SEM, across cells). Dotted lines in (F) show range of pMN rheobase. Asterisks indicate a significant non-zero slope.
+
+### Optogenetic induction of spiking in larval pMNs
 
 To investigate whether our cation channelrhodopsin lines can induce action potentials in pMNs, we performed in vivo current clamp recordings while providing single light pulses (0.1–5 ms duration). In all opsin lines, light stimulation induced voltage depolarisations, which were never observed in opsin-negative pMNs, and voltage responses above –30 mV were classified as spikes (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig5-v2.jpg)
+
+**Figure 5.:** (A) Example membrane depolarisations induced by 5 ms light pulses (20 mW/mm2). (B) Number of optogenetically-evoked spikes vs. pulse duration (across irradiance levels 1–30 mW/mm2). Longer pulse duration induced more spikes in both CoChR- and ChrimsonR-expressing cells. Left plots show single neurons and right plot shows mean ± SEM across cells. (C) Example voltage responses from CoChR- and ChrimsonR-expressing cells upon pulse train stimulation (1–100 Hz, 2–5 ms pulse duration). (D) Number of spikes vs. pulse number within a train (mean ± SEM, across cells; shaded area depicts average number of spikes is below 1). In CoChR-expressing cells, the initial 3–4 pulses within the train induced bursts of 2–4 spikes. (E) Heatmap of mean spike number elicited via CoChR stimulation, separated according to stimulation frequency and pulse duration. Primary motor neurons often responded with bursts of action potentials, even for short light pulses. (F) Example responses to the 1st (top) and last (bottom) 0.5 ms light pulse in a train, recorded from a CoChR-positive neuron. (G) Spike latency vs. pulse frequency (mean ± SEM). (H) Spike jitter (mean ± SEM) vs. pulse frequency shows that ChrimsonR-expressing cells exhibited lower spike jitter than CoChR-expressing cells. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fraction of cells that generated spikes in response to single light pulses (0.1–5 ms). (B) Peak depolarisation across irradiance levels (1–30 mW/mm2; mean ± SEM, across cells). Orange line indicates threshold for spike detection (–30 mV). (C) Time to peak depolarisation (mean ± SEM). (D) Number of evoked spikes vs. irradiance (1–5 ms pulse duration). In CoChR-expressing cells, 2–5 ms light pulses induced spike bursts (mean ± SEM). (E) Spike latency vs. pulse number (mean ± SEM). With increasing pulse frequency, CoChR-expressing cells showed progressively longer spike latency throughout the pulse train.
 
 CoChR and ChrimsonR were the only opsin lines capable of triggering spiking in this cell type (Figure 5A and Figure 5—figure supplement 1A–C), as expected from their peak photocurrents exceeding pMN rheobase (dotted lines in Figure 4E). Notably, 5 ms light pulses induced spikes in all CoChR-expressing neurons (N = 11 out of 11 cells at 3–30 mW/mm2), 92% of cells spiked with 1–2 ms pulses and only 50% spiked in response to 0.5 ms pulses (Figure 5—figure supplement 1A). ChrimsonR was less effective than CoChR in inducing action potentials, with 36–38% of neurons spiking when using 2–5 ms pulses (2 ms, N = 4 out of 11; 5 ms, N = 3 out of 8 cells) and only 1 cell out of 8 spiking in response to 1 ms pulses. In both lines, the number of evoked spikes increased with longer pulse duration (Figure 5B and Figure 5—figure supplement 1D).
 
 For experiments aiming to replay physiological firing patterns, optogenetic actuators should be capable of inducing spike trains with millisecond precision and at biological firing frequencies. We thus tested the ability of CoChR and ChrimsonR to evoke pMN firing patterns across a range of frequencies (1–100 Hz; Figure 5C). Primary motor neurons can spike at high frequency (up to 300–500 Hz; Menelaou and McLean, 2012), hence optogenetic induction of high-frequency firing should not be limited by cell intrinsic physiological properties, but rather by opsin properties and light stimulation parameters. To assess the fidelity of firing patterns at each stimulation frequency, we measured spike number per light pulse as well as spike latency and jitter (i.e. standard deviation of spike latency). ChrimsonR could induce firing up to the highest frequency tested (100 Hz), with each light pulse typically evoking a single spike (Figure 5C,D). CoChR generated bursts of spikes in response to light pulses, even at the shortest stimulation duration and spiking consistently attenuated in the second half of the stimulation train (Figure 5E,F). Overall, spikes were induced with short latency (3–4 ms mean latency) and low jitter (0.25–1.25 ms jitter) with both opsin lines (Figure 5G,H and Figure 5—figure supplement 1E).
 
-## Optogenetic suppression of coiling behaviour in embryos
+### Optogenetic suppression of coiling behaviour in embryos
 
 Next, we tested the ability of our opsin lines to suppress spontaneous behaviour of zebrafish embryos (Saint-Amant and Drapeau, 1998; Warp et al., 2012; Mohamed et al., 2017; Bernal Sierra et al., 2018). We targeted expression of the anion-conducting channels GtACR1 and GtACR2 (Govorunova et al., 2015), the outward proton pump eArch3.0 (Mattis et al., 2011) and the inward chloride pump eNpHR3.0 (Gradinaru et al., 2010) to spinal cord neurons using the Tg(s1020t:GAL4) transgene (Scott et al., 2007) and examined changes in spontaneous coiling behaviour in response to light (Figure 6A–D and Figure 6—video 1). Embryos were tested between 24 and 27 hpf, a stage at which embryos coil spontaneously (Saint-Amant and Drapeau, 1998) but show only minimal light-induced photomotor responses, which mostly occur later in development (30–40 hpf) (Kokel et al., 2013). In opsin-expressing embryos, light exposure led to a suppression of coiling behaviour that was followed by a synchronised restart at light offset (Figure 6D,E and Figure 6—figure supplement 1; N = 91 ± 16 fish per group, mean ± SD), as previously reported (Warp et al., 2012; Mohamed et al., 2017). As expected from behaviour with Tg(isl2b:GAL4) embryos (Figure 2F,G), GtACR activation in spinal neurons occasionally induced movements in the initial 1–2 s following light onset (black arrows in Figure 6D,E), a phenomenon that was not observed with Cl–/H+ pumps. Given these two effects, changes in coil rate were separately quantified for the initial 2 s (Figure 6—figure supplement 2) and subsequent 8 s period of light exposure (‘late LED ON’; grey horizontal bars in Figure 6E).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of the behavioural assay. (B) Opsin expression in spinal motor neurons and interneurons in a Tg(s1020t:GAL4;UAS:GtACR1-tdTomato) embryo at 1 dpf. Imaging field of view corresponds to black box in (A). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 50 μm. (C) Camera field of view showing Tg(s1020t:GAL4;UAS:GtACR1-tdTomato) embryos positioned in individual agarose wells. Behaviour was monitored at 50 frames per second across multiple embryos (24–27 hpf; N = 91 ± 16 fish per group, mean ± SD) subjected to 10 s light periods (470 or 590 nm, 0–227 μW/mm2) with a 50 s inter-stimulus interval. (D) Tracking of coiling behaviour (mean ΔPixel from three trials) for the three embryos shown in (C). Black arrow indicates movements at light onset, whereas grey arrowhead indicates synchronised restart of coiling behaviour following light offset. (E) Optogenetically-induced changes in coil rate (mean + SD, across fish) in embryos expressing the anion channelrhodopsin GtACR1 (N = 77 embryos, top) or the Cl– pump eNpHR3.0 (N = 111 embryos, bottom). Horizontal dark grey bars indicate the’ late LED On’ period. Each time bin corresponds to 2 s. (F,G) Normalised coil rate during the’ late LED On’ period in embryos expressing different opsins (mean ± SEM, across fish). Control opsin-negative siblings were subjected to the same light stimuli. See also Figure 6—figure supplements 1 and 2 and Figure 6—video 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Distribution of coil rate vs. time for Tg(s1020t:GAL4) embryos (24–27 hpf) expressing different opsins (mean + SD, across fish). Embryos were subjected to 10 s pulses of blue (470 nm; A) or amber (590 nm; B) light. Each time bin corresponds to 2 s.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A,B) Normalised coil rate during the initial 2 s of the LED On period in embryos (24–27 hpf) expressing different opsins (mean ± SEM, across fish). Control opsin-negative siblings were subjected to the same light stimuli.
+
 All opsin lines suppressed coiling behaviour during the ‘late LED ON’ period (Figure 6F,G). As previously observed (Friedmann et al., 2015), light also decreased coiling in control opsin-negative embryos, yet to a significantly lesser degree than in opsin-expressing animals (Figure 6F,G). Optogenetically evoked suppression was likely a result of distinct mechanisms in the different transgenic lines. While Cl–/H+ pumps systematically induce hyperpolarisation, anion channelrhodopsins can silence cells via shunting as well as depolarisation block depending upon the reversal potential of chloride in vivo (see below and Discussion). GtACRs achieved the strongest suppression of coil rate using blue light (90–95% decrease at 8.4–225 μW/mm2; Figure 6F). With amber light, GtACR1, eArch3.0 and eNpHR3.0 showed comparable suppression (80–90% decrease at 50.5–227 μW/mm2), with GtACR1 achieving ~83% decrease in coil rate even at low irradiance (15.9 μW/mm2; Figure 6G).
 
-## Optogenetic suppression of swimming in larvae
+### Optogenetic suppression of swimming in larvae
 
 To compare the efficacy of our opsin lines to suppress behaviour in larvae, we targeted opsin expression to spinal motor neurons and interneurons using Tg(s1020t:GAL4), as above, and examined changes in spontaneous swimming behaviour of 6 dpf animals in response to 10 s light pulses (Figure 7A–C and Figure 7—video 1; N = 25 ± 9 fish per group, mean ± SD).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic of behavioural assay. (B) Opsin expression in spinal motor neurons and interneurons in a Tg(s1020t:GAL4;UAS:GtACR1-tdTomato) larva at 5 dpf. Imaging field of view corresponds to black box in (A). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 50 μm. (C) Tg(s1020t:GAL4;UAS:GtACR1-tdTomato) larvae were positioned in individual agarose wells (left) and instantaneous swim speed was monitored by centroid tracking (right) at 50 fps (six dpf; N = 25 ± 9 fish per group, mean ± SD). 10 s light periods were delivered (459 or 617 nm, 0–2.55 mW/mm2) with a 50 s inter-stimulus interval. (D) Optogenetically-induced changes in bout rate (mean + SEM, across fish) in Tg(s1020t:GAL4) larvae expressing GtACR1 (N = 24 larvae, left) or eNpHR3.0 (N = 40 larvae, right). Horizontal grey bars indicate the time windows used to quantify behavioural changes. Each time bin corresponds to 2 s. (E,F) Normalised bout rate during the `LED On` period in larvae expressing different opsins (mean ± SEM, across fish) and in control, opsin-negative, siblings. See also Figure 7—figure supplements 1–4 and Figure 7—video 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A,B) Distribution of bout rate vs. time for Tg(s1020t:GAL4) larvae (6 dpf) expressing different opsins (mean + SD, across fish). Larvae were subjected to 10 s pulses of blue (459 nm; A) or red (617 nm; B) light. Each time bin corresponds to 2 s.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A,B) Normalised bout rate (A) or bout speed (B) during the whole LED On period, the initial 2 s of light exposure and the `post LED` 8 s period in Tg(s1020t:GAL4) larvae (6 dpf) expressing different opsins (mean ± SEM, across fish). Control opsin-negative siblings were subjected to the same light stimuli.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Schematics of opsin expression pattern and behavioural assay. (B) Opsin expression in spinal motor neurons in a Tg(mnx1:GAL4;UAS:GtACR1-tdTomato) larva at 5 dpf. Imaging field of view corresponds to black box in (A). A, anterior; D, dorsal; P, posterior; V, ventral. Scale bar 50 μm. (C) Background-subtracted camera field of view showing Tg(mnx1:GAL4;UAS:GtACR1-tdTomato) larvae positioned in individual agarose wells (left) and tracking of swimming speed for selected larvae (right). Behaviour was monitored at 50 fps across multiple freely-swimming larvae (6 dpf; N = 24 ± 6 fish per group, mean ± SD) while they were subjected to 10 s light periods (459 or 617 nm, 0–2.55 mW/mm2) with a 50 s inter-stimulus interval. (D) Optogenetically-induced changes in bout rate (mean + SEM, across fish) in Tg(mnx1:GAL4) larvae expressing GtACR1 (N = 29 larvae, left) or eArch3.0 (N = 23 larvae, right). Horizontal grey bars indicate the time windows used for comparative quantification of behavioural changes. Each time bin corresponds to 2 s. (E,F) Normalised bout speed during the `LED On` period in larvae expressing different opsins (mean ± SEM, across fish). Control opsin-negative siblings were subjected to the same light stimuli.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A–D) Normalised bout rate (A–C) or bout speed (D) during the whole `LED On` period (A), the initial 2 s of the light period (B), or the `post LED` 8 s period (C,D) in Tg(mnx1:GAL4) larvae (6 dpf) expressing different opsins (mean ± SEM, across fish). Control opsin-negative siblings were subjected to the same light stimuli.
+
 Expression of GtACR1, GtACR2 and eArch3.0 in motor neurons and interneurons reduced swim bout rate relative to control larvae in response to blue light, with GtACRs achieving the greatest suppression (20–45% decrease; Figure 7D,E; Sternberg et al., 2016). Consistent with a previous report (Andalman et al., 2019), opsin-negative larvae showed a 20–30% increase in bout rate during illumination with blue light (Figure 7E and Figure 7—figure supplement 1), while no increase was observed with red light (Figure 7F). Using red light, only eNpHR3.0 could reduce bout rate and suppression increased with higher irradiance (45% decrease at 1 mW/mm2; Figure 7F). No increase in bout rate was found in larvae expressing anion channelrhodopsins even when analysis was restricted to the initial 2 s of the light period (Figure 7—figure supplement 2A), suggesting GtACRs do not induce excitatory effects at larval stages. Opsin activation did not affect bout speed (Figure 7—figure supplement 2B). By contrast, using the Tg(mnx1:GAL4) transgene to selectively drive expression only in motor neurons resulted in a decrease in bout speed (~20% reduction), but not bout rate (Figure 7—figure supplements 3 and 4).
 
-## Photocurrents induced by anion channelrhodopsins and chloride/proton pumps
+### Photocurrents induced by anion channelrhodopsins and chloride/proton pumps
 
 To analyse the physiological effects induced by anion channelrhodopsins and Cl–/H+ pumps, we measured their photocurrents through in vivo voltage clamp recordings from larval pMNs (5–6 dpf). Since anion channelrhodopsin function depends on chloride homeostasis (Figure 8A; Govorunova et al., 2015) and chloride reversal potential (ECl) is known to change over development (Ben-Ari, 2002; Reynolds et al., 2008; Zhang et al., 2010), we recorded GtACR1 photocurrents using two intracellular solutions: one mimicking ECl in embryonic neurons (–50 mV; Saint-Amant and Drapeau, 2003) and the second approximating intracellular chloride concentration in more mature, larval neurons (ECl = –70 mV, see Materials and methods). Inspection of I-V curves for GtACR1 photocurrents showed that, in both solutions, currents reversed with a positive 5–10 mV shift relative to ECl (Figure 8—figure supplement 1A,B), as previously observed (Govorunova et al., 2015) and within the expected error margin given our access resistance (Figure 4—figure supplement 1C; estimated voltage error for ECl–50 mV solution, 4.6 ± 6.4 mV, mean ± SD, N = 5 cells; ECl–70 mV solution, 1.2 ± 1.3 mV, N = 3). This suggests that GtACR1 photocurrents were primarily driven by chloride ions, as expected (Govorunova et al., 2015). The other opsin lines were tested using the ECl–50 mV solution only. Neurons were stimulated with light (1 s pulse) at a holding potential matching their measured resting membrane potential (Figure 4C).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig8-v2.jpg)
+
+**Figure 8.:** (A) Action of anion channelrhodopsins (top) and Cl–/H+ pumps (bottom). For anion channelrhodopsins, photocurrent magnitude and direction depend on chloride reversal potential (ECl) and holding potential (Vhold), while Cl–/H+ pumps always induce outward currents. (B) Example photocurrents in response to a 1 s light exposure (20 mW/mm2). (C,D) Photocurrent peak (C) and steady-state (D) amplitude (mean ± SEM, across cells). GtACRs induced larger photocurrents than Cl–/H+ pumps. (E–G) Photocurrent activation (E), inactivation (F) and deactivation (G) time constants (mean ± SEM). Photocurrents induced by Cl–/H+ pumps showed minimal inactivation and faster deactivation kinetics than GtACRs. eNpHR3.0 photocurrents did not inactivate hence no inactivation time constant was computed. See also Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Example GtACR1 photocurrents obtained by providing a 1 s light periods at different holding potentials (Vhold) using intracellular solutions approximating either embryonic or larval ECl. Orange traces denote holding potentials closest to ECl. (B) GtACR1 photocurrent I-V curves (mean ± SD). Photocurrents reverse with a positive 5–10 mV shift relative to ECl (dotted lines) in both solutions. (C) Example photocurrents from an eNpHR3.0-expressing cell at different irradiance levels (3–20 mW/mm2). (D,E) Photocurrent peak (D) and steady-state (E) amplitude vs. irradiance (mean ± SEM, across cells). Asterisks indicate a significant non-zero slope. F–H Photocurrent activation (F), inactivation (G) and deactivation (H) time constants vs. irradiance (mean ± SEM). eNpHR3.0 photocurrents did not inactivate hence no inactivation time constant was computed.
+
 Anion channelrhodopsins induced inward, `depolarising` photocurrents (as expected from the combination of ECl and holding potential), while Cl–/H+ pumps generated outward, `hyperpolarising` currents (Figure 8B). All opsins except eNpHR3.0 showed bi-phasic photocurrent responses comprising a fast activation followed by a slow inactivation (Figure 8B), likely due to a fraction of the opsin population transitioning to an inactive state (Chow et al., 2010; Mattis et al., 2011; Schneider et al., 2015). We measured both the peak photocurrent (Figure 8C) as well as the steady-state current during the last 5 ms of the light period (Figure 8D). GtACRs induced photocurrents with peak amplitude 3–10 times larger than those generated by Cl–/H+ pumps (Figure 8C), while steady-state currents were similar across opsins (Figure 8D). Some degree of irradiance-dependent modulation of photocurrents was observed, primarily in peak amplitude (Figure 8—figure supplement 1C–E). To characterise photocurrent kinetics, we computed activation, inactivation and deactivation time constants (Mattis et al., 2011). GtACR photocurrents had the fastest activation kinetics (~1 ms at 30 mW/mm2; Figure 8E and Figure 8—figure supplement 1F). However, deactivation kinetics of Cl–/H+ pumps were 2–10 times faster than those induced by GtACRs (14–22 ms eNpHR3.0, 27–37 ms eArch3.0; Figure 8G and Figure 8—figure supplement 1H) and showed little inactivation (600–1000 ms eArch3.0; Figure 8F and Figure 8—figure supplement 1G).
 
-## Optogenetic inhibition of pMN spiking
+### Optogenetic inhibition of pMN spiking
 
 To investigate the ability of anion channelrhodopsins and Cl–/H+ pumps to suppress neural activity, we recorded pMNs in current clamp mode. In control opsin-negative neurons, light delivery (1 s) induced negligible voltage deflections (Figure 9A). By contrast, anion channelrhodopsins generated membrane depolarisation towards ECl while the Cl–/H+ pumps hyperpolarised the cell (Figure 9A), in accordance with recorded photocurrents. The absolute peak amplitude of voltage deflections was comparable between opsin lines (10–25 mV), with 10–40% decrease between peak and steady-state responses in all cases except eNpHR3.0, which generated stable hyperpolarisation (Figure 9B,C and Figure 9—figure supplement 1A,B). In a subset of GtACR1- (N = 4 out of 7) and GtACR2-expressing neurons (N = 2 out of 6), spiking was induced at light onset when using the ECl–50 mV solution (Figure 9A; GtACR1 6.7 ± 7.1 spikes; GtACR2 1.5 ± 0.7, mean ± SD). This is consistent with the movements evoked at light onset in young, 1 dpf embryos expressing GtACRs (Figures 2 and 6). The kinetics of voltage decay to baseline following light offset matched those of recorded photocurrents (Figure 9D and Figure 9—figure supplement 1C).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig9-v2.jpg)
+
+**Figure 9.:** (A) Example voltage deflections induced by anion channelrhodopsins and Cl–/H+ pumps in response to a 1 s light pulse (20 mW/mm2). (B–D) Peak (B) and steady-state (C) responses and deactivation time constant (D) of voltage deflections. All opsins induced similar absolute voltage changes. Anion channelrhodopsins generated depolarisation with both intracellular solutions while Cl–/H+ pumps generated hyperpolarisation. (E) Example recordings demonstrating inhibition of single spikes in GtACR1- and eNpHR3.0-expressing cells with 5 ms light pulses (3 mW/mm2). (F) Fraction of spikes that were optogenetically inhibited (mean ± SEM, across cells). All opsins achieved high suppression efficacy, but GtACR1 induced additional spikes upon light delivery with the embryonic intracellular solution. (G) Example recordings demonstrating inhibition of sustained spiking in GtACR1- and eNpHR3.0-expressing cells. (H) Quantification of suppression using protocol illustrated in (G). Number of spikes per 50 ms during light delivery (0–10 mW/mm2) is plotted against irradiance. GtACR1 and eNpHR3.0 inhibited tonic spiking with similar efficacy (mean ± SEM). See also Figure 9—figure supplement 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/54937/elife-54937-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A–C) Peak (A) and steady-state (B) responses and deactivation time constant (C) of voltage deflections vs. irradiance (mean ± SEM, across cells). eArch3.0 was the only opsin showing irradiance-dependent modulation of peak voltage response.
 
 Next, we compared the utility of our opsin lines to inhibit pMN firing. First, we induced larval pMNs to fire at 5 Hz by injecting pulses of depolarising current (5 ms, 1.2–1.5 × rheobase) and simultaneously delivered 5 ms light pulses to inhibit selected spikes (Figure 9E). We found that GtACRs and eNpHR3.0 could effectively inhibit spikes (80–95% suppression), while light pulses did not alter firing in opsin-negative neurons (Figure 9F). In agreement with our current clamp recordings, a subset of GtACR1-expressing neurons (N = 4 out of 7) tested in the embryonic ECl–50 mV solution failed to suppress spikes and instead induced extra action potentials in response to light pulses, resulting in a negative spike inhibition efficacy (Figure 9F). Data from eArch3.0-expressing neurons could not be collected due to degradation in the quality of recordings or cells becoming highly depolarised (i.e. resting membrane potential > –50 mV) by the later stages of the protocol, suggesting that repeated eArch3.0 activation may alter electrical properties of neurons (Williams et al., 2019).
 
@@ -98,7 +190,7 @@ In this study, we generated a set of stable transgenic lines for GAL4/UAS-mediat
 
 **Figure 10.:** (A) Efficacy of cation channelrhodopsin lines in inducing neural activity across behavioural assays, electrophysiological recordings, developmental stages and wavelengths. The radius of each circle is proportional to efficacy. (B) Efficacy of anion channelrhodopsins and Cl–/H+ pumps in suppressing neural activity.
 
-## An in vivo platform for opsin tool selection
+### An in vivo platform for opsin tool selection
 
 The selection of optogenetic actuators should be based on their ability to reliably control neural activity in vivo. While previous efforts compared opsin efficacy using transient expression strategies (e.g. through viral or plasmid-mediated opsin gene delivery, see Mattis et al., 2011 and Introduction), here we calibrated opsin effects in stable transgenic lines, which offer more reproducible expression across experiments and laboratories (Kikuta and Kawakami, 2009; Yizhar et al., 2011). Overall, there was good qualitative agreement between behavioural and electrophysiological results, with efficacy in behavioural assays (even with transient expression) largely predicting rank order in photocurrent amplitudes. This illustrates the utility of high-throughput behavioural assays for rapid evaluation and selection of expression constructs prior to more time-consuming generation and characterisation of stable lines and electrophysiological calibration. We observed broad variation in efficacy across lines, likely attributable to differences in both the intrinsic properties of the opsin as well as variation in expression and membrane targeting. Membrane trafficking can also be influenced by the fluorescent protein fused to the actuator (Arrenberg et al., 2009). In our hands, we observed better expression with the tdTomato fusion reported here than with previous attempts using a tagRFP fusion protein. In the future, expression might be further improved through codon optimisation (Horstick et al., 2015), trafficking-enhancing sequences (Gradinaru et al., 2010; Mattis et al., 2011), alternative expression targeting systems (Luo et al., 2008; Sjulson et al., 2016) and optimisation of the fluorescent reporter protein.
 
@@ -106,17 +198,17 @@ Behavioural and electrophysiological readouts complemented one another and enric
 
 Overall, our platform enables efficient selection and calibration of optogenetic tools for in vivo neuroscience. It also enables opsin-specific optimisation of light delivery (i.e. wavelength, pulse duration, frequency and intensity). For example, we found that equivalent stimulation regimes produced different rates of spiking adaptation that impacted the ability to control high-frequency firing, depending on the specific ospin line in question.
 
-## Robust and precise optogenetic induction of spiking
+### Robust and precise optogenetic induction of spiking
 
 Which opsin lines are best suited for reliable neural activation? Photocurrent amplitude, measured in pMNs, was proportional to estimated opsin expression level (Figure 1—figure supplement 1D) and was predictive of the ability of opsin lines to induce behaviour via activation of distinct cell types at both larval and embryonic stages (CoChR > ChrimsonR > ChR2(H134R) > Chronos ≥ CheRiff). The CoChR and ChrimsonR lines showed the highest expression levels among cation channelrhodopsins and were the only lines capable of inducing action potentials in pMNs, consistent with their photocurrent amplitudes exceeding pMN rheobase. Notably, CoChR evoked spikes in all pMNs tested and triggered behaviour with maximal response probability in larvae at irradiance levels as low as 0.63 mW/mm2.
 
 Where precise control of a cell’s firing pattern is desired, electrophysiological calibration is essential to tune stimulation parameters for a specific opsin/cell-type combination. Our data indicate that in primary motor neurons, light pulses can lead to bursts of spikes and substantial firing rate adaptation during high-frequency stimulation, likely a result of plateau potentials and inactivation of voltage-gated sodium channels. Thus, although the CoChR line produced large-amplitude photocurrents and was highly efficient and precise in evoking the first spike, in this particular cell type it was also prone to burst firing even for short (0.5 ms) light pulses, which compromised spiking entrainment with high-frequency stimulations. However, CoChR has been used to elicit single spikes in mouse pyramidal cells with 1 ms light pulses at frequencies up to 50 Hz (Ronzitti et al., 2017). A thorough calibration in the cell type of interest in vivo is therefore necessary for precise control of spike number and timing. Compared to CoChR, we observed that ChrimsonR, although less effective in inducing firing in primary motor neurons overall, led to less spike adaptation during stimulation and fewer bursts of spikes.
 
-## Excitatory effects of anion channelrhodopsins
+### Excitatory effects of anion channelrhodopsins
 
 Anion channelrhodopsins induced movements at light onset in one dpf embryos as well as transient spiking in pMNs when using an intracellular solution that mimicked the high ECl (–50 mV) of immature neurons. This is consistent with GtACRs functioning as a light-gated chloride conductance (Govorunova et al., 2015). The transient nature of spiking and motor activity might be due to the initial large inward photocurrent depolarising neurons above spiking threshold. Transient induction of action potentials with GtACRs has also been observed in rat cortical pyramidal neurons in brain slices (Malyshev et al., 2017) as well as cultured hippocampal neurons (Mahn et al., 2018) and has been attributed to antidromic spiking resulting from a positively shifted ECl in the axon (Mahn et al., 2016; Mahn et al., 2018). In light of this, the use of GtACRs in immature neurons or subcellular structures should be carefully calibrated and use of Cl–/H+ pumps may be preferable. The likely mechanism of silencing induced by activation of GtACRs is shunting as the large photocurrents are associated with a reduction in the input resistance of the cell. In addition, GtACRs bring the membrane potential close to ECl, which may – depending on the physiological values of ECl in vivo – also lead to depolarisation block.
 
-## Precise optogenetic inhibition of neural activity
+### Precise optogenetic inhibition of neural activity
 
 To accurately suppress action potentials, opsin tools must be carefully selected with consideration for developmental stage and ECl-dependent effects as well as photocurrent kinetics. GtACRs generated large photocurrents with fast activation kinetics, which can explain why GtACR1 was effective in inhibiting single action potentials with short light pulses in larval pMNs. Cl–/H+ pump photocurrents instead showed fast deactivation kinetics, which allowed eNpHR3.0-expressing neurons to rapidly resume spiking at light offset. Differences in photocurrent kinetics between opsin classes – that is channels vs. pumps – may thus differentially affect the temporal resolution of activity inhibition and recovery, respectively. The combined behavioural and electrophysiological approach can be extended in the future to optogenetic silencers based on K+ channel activation, such as the recently introduced PAC-K (Bernal Sierra et al., 2018).
 
@@ -124,13 +216,226 @@ In conclusion, our calibrated optogenetic toolkit and associated methodology pro
 
 ## Materials and methods
 
-## Experimental model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:ChrimsonR-tdTomato)u328Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–2</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:Chronos-tdTomato)u330Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–3</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:CoChR-tdTomato)u332Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–4</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:CheRiff-tdTomato)u334Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–5</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:GtACR1-tdTomato)u336Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–6</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:GtACR2-tdTomato)u338Tg</td>
+      <td>This study</td>
+      <td>ZFIN ID: ZDB-ALT-190226–7</td>
+      <td>Available from EZRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:eArch3.0-eYFP)mpn120</td>
+      <td>This study</td>
+      <td>transgene</td>
+      <td>Available from Baier lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:eNpHR3.0-eYFP)mpn121</td>
+      <td>This study</td>
+      <td>transgene</td>
+      <td>Available from Baier Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:Cr.ChR2-YFP)icm11Tg</td>
+      <td>PMID:26752076</td>
+      <td>ZFIN ID: ZDB-ALT-150324–2</td>
+      <td>Available from EZRC (Fidelin et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:GFP)zf82</td>
+      <td>PMID:19835787</td>
+      <td>ZFIN ID: ZDB-ALT-080528–1</td>
+      <td>Asakawa et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(isl2b.2:GAL4-VP16, myl7:EGFP)zc60Tg</td>
+      <td>PMID:20702722</td>
+      <td>ZFIN ID: ZDB-ALT-101130–1</td>
+      <td>Ben Fredj et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(isl2b:GAL4-VP16, myl7:TagRFP)zc65</td>
+      <td>PMID:21905164</td>
+      <td>ZFIN ID: ZDB-FISH-150901–13523</td>
+      <td>Fujimoto et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Et(–0.6hsp70l:GAL4-VP16)s1020tEt</td>
+      <td>PMID:17369834</td>
+      <td>ZFIN ID: ZDB-ALT-070420–21</td>
+      <td>Scott et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(mnx1:GAL4) icm23Tg</td>
+      <td>PMID:26946992</td>
+      <td>ZFIN ID: ZDB-ALT-160120–1</td>
+      <td>Böhm et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Et(−109Xla.Eef1a1:GFP)mn2Et</td>
+      <td>PMID:15347431</td>
+      <td>ZFIN ID: ZDB-ALT- 080625–1</td>
+      <td>Balciunas et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:ChrimsonR-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124231</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:Chronos-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124232</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:CoChR-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124233</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:CheRiff-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124234</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:GtACR1-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124235</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:GtACR2-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124236</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol1-UAS:ChR2(H134R)-tdTomato</td>
+      <td>This study</td>
+      <td>Addgene ID: 124237</td>
+      <td>Available from Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-UAS:eArch3.0-eYFP</td>
+      <td>This study</td>
+      <td>plasmid</td>
+      <td>Available from Baier lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-UAS:eNpHR3.0-eYFP</td>
+      <td>This study</td>
+      <td>plasmid</td>
+      <td>Available from Baier lab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://uk.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Anaconda</td>
+      <td>RRID:SCR_008394</td>
+      <td>https://www.anaconda.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView</td>
+      <td>National Instruments</td>
+      <td>RRID:SCR_014325</td>
+      <td>http://www.ni.com/en-gb/shop/labview.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model
 
 Animals were reared on a 14/10 hr light/dark cycle at 28.5°C. For all experiments, we used zebrafish (Danio rerio) embryos and larvae homozygous for the mitfaw2 skin-pigmentation mutation (Lister et al., 1999). All larvae used for behavioural assays were fed Paramecia from 4 dpf onward. Animal handling and experimental procedures were approved by the UCL Animal Welfare Ethical Review Body and the UK Home Office under the Animal (Scientific Procedures) Act 1986.
 
 In vivo electrophysiological recordings were performed in 5–6 dpf zebrafish larvae from AB and Tüpfel long fin (TL) strains in accordance with the European Communities Council Directive (2010/63/EU) and French law (87/848) and approved by the Institut du Cerveau et de la Moelle épinière, the French ministry of Research and the Darwin Ethics Committee (APAFIS protocol #16469–2018071217081175 v5).
 
-## Cloning and transgenesis
+### Cloning and transgenesis
 
 To generate the UAS:opsin-tdTomato DNA constructs used for transient opsin expression and for creating the stable Tg(UAS:opsin-tdTomato) transgenic lines, the coding sequences of the opsins listed below and the red fluorescent protein tdTomato (from pAAV-Syn-Chronos-tdTomato) were cloned in frame into a UAS Tol1 backbone (pT1UciMP).
 
@@ -150,17 +455,17 @@ The coding sequences were amplified by PCR using the following primers and clone
 
 To generate the stable Tg(UAS:opsin-eYFP) lines, purified UAS:opsin-eYFP DNA constructs were first sequenced to confirm gene insertion and integrity and, subsequently, co-injected (25 ng/µl) with Tol2 transposase mRNA (25 ng/µl) into Tg(isl2b:GAL4-VP16, myl7:TagRFP)zc65 (Fujimoto et al., 2011) (for eArch3.0-eYFP) or Tg(s1020t:GAL4) (Scott et al., 2007) (for eNpHR3.0-eYFP) zebrafish embryos at the early one-cell stage. Transient expression, visible as eYFP fluorescence, was used to select injected embryos that were then raised to adulthood. Zebrafish codon-optimised Tol2 transposase mRNA was prepared by in vitro transcription from NotI-linearised pCS2-zT2TP plasmid using the SP6 transcription mMessage mMachine kit (Life Technologies). The pCS2-zT2TP was a gift from Koichi Kawakami (Suster et al., 2011). RNA was purified using the NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel). Germ line transmission was identified by mating sexually mature adult fish to mitfaw2/w2 fish and, subsequently, examining their progeny for eYFP fluorescence. Positive embryos from each injected fish were then raised to adulthood. Once this second generation of fish reached adulthood, positive embryos from a single `founder` fish were again selected and raised to adulthood to establish stable Tg(Isl2b:GAL4;UAS:eArch3.0-eYFP) or Tg(s1020t:GAL4;UAS:eNpHR3.0-eYFP) double-transgenic lines.
 
-## Fluorescence image acquisition
+### Fluorescence image acquisition
 
 Zebrafish embryos or larvae were mounted in 1% low-melting point agarose (Sigma-Aldrich) and anesthetised using tricaine (MS-222, Sigma-Aldrich). Imaging was performed using a custom-built 2-photon microscope (XLUMPLFLN 20 × 1.0 NA objective [Olympus], 580 nm PMT dichroic, band- pass filters: 510/84 [green], 641/75 [red] [Semrock], R10699 PMT [Hammamatsu Photonics], Chameleon II ultrafast laser [Coherent Inc]). Imaging was performed at 1040 nm for opsin-tdTomato lines, while 920 nm excitation was used for opsin-eYFP lines. In both cases, the same laser power at sample (10.7 mW) and PMT gain were used. For the images displayed in Figures 1C, 3B and 7B and Figure 7—figure supplement 3B, equivalent imaging field of view and pixel size were used (1200 × 800 px, 0.385 μm/px). The imaging field of view and pixel size for images displayed in Figures 2C and 6B were 960 × 680 px, 0.385 μm/px. For all these images, the same acquisition averaging (mean image from 12 frames) and z-spacing of imaging planes (2 μm) were used.
 
 The image displayed in Figure 4A was acquired from a single plane on a fluorescence microscope (AxioExaminer D1 [Zeiss], 63 × 1.0 NA objective [Zeiss], Xcite [Xcelitas, XT600] 480 nm LED illumination, 38HE filtercube [Zeiss], ImagEM camera [Hammamatsu]), with an imaging field of view of 512 × 512 px and 0.135 μm/px pixel size.
 
-## Opsin expression analysis
+### Opsin expression analysis
 
 Image stacks were acquired from the spinal cord of 5 dpf Tg(mnx1:GAL4;UAS:opsin-FP) larvae using a 2-photon microscope and acquisition parameters described above. Maximum intensity z-projections spanning 5–10 μm in depth were used to estimate opsin expression at the plasma membrane of motor neurons. First, automated cell body segmentation was performed using Cellpose to obtain `cell body masks` (Stringer et al., 2020; https://github.com/MouseLand/cellpose). Then, `membrane masks` corresponding to outlines of the `cell body masks` (see Figure 1—figure supplement 1A) were generated by running a boundary tracing routine for binary objects in MATLAB (MathWorks). For each cell, we computed the mean fluorescence intensity across all pixels in the corresponding membrane mask. Cells were grouped into primary or secondary motor neurons according to both area of cell body mask and location along the dorsal-ventral axis of the spinal cord (Menelaou and McLean, 2012). Cells with soma area larger than 60 μm2 located in the dorsal half of the spinal cord were classified as primary motor neurons, cells with area smaller than 50 μm2 were classified as secondary motor neurons (see Figure 1—figure supplement 1B).
 
-## Behavioural assays
+### Behavioural assays
 
 The same monitoring system was used for all behavioural assays (see schematic in Figure 2A) with some differences. Images were acquired under infrared illumination (850 nm) using a high-speed camera (Mikrotron MC1362, 500 µs shutter-time) equipped with a machine vision lens (Fujinon HF35SA-1) and an 850 nm bandpass filter to block visible light. The 850 nm bandpass filter was removed during embryonic activation assays (in which images were acquired at 1000 fps) to determine time of light stimulus onset. In all other assays, lower acquisition rates were used (i.e. 50 or 500 fps) and, within each assay, the frames corresponding to stimulus onset/offset were consistent across trials.
 
@@ -174,23 +479,23 @@ The 459 and 617 nm LEDs were projected onto the arena with an aspheric condenser
 
 Before experiments, animals were screened for opsin expression in the target neural population at either 22 hpf (embryonic assays) or 3 dpf (larval assays) using a fluorescence stereomicroscope (Olympus MVX10). For each opsin, animals with similar expression level were selected for experiments together with control opsin-negative siblings. To reduce variability in opsin expression level, all animals used for behavioural experiments were heterozygous for both the GAL4 and UAS transgenes. Animals were placed in the arena in the dark for around 2 min before starting experiments. For all assays, each light stimulus was repeated at least three times. Each trial lasted 1 s in behavioural activation assays and 30 s in behavioural inhibition assays.
 
-## Embryonic activation assay
+#### Embryonic activation assay
 
 Opsin expression was targeted to trigeminal ganglion neurons using the Tg(isl2b:GAL4) transgene (Ben Fredj et al., 2010). Behaviour was monitored at 1000 fps across embryos (28–30 hpf) individually positioned in agarose wells (~2 mm diameter) in fish facility water and free to move within their chorion. Embryos were subjected to 5 or 40 ms pulses of blue (470 nm) or amber (590 nm) light at different irradiance levels (4.5–445 μW/mm2) and with a 15 s inter-stimulus interval in the dark.
 
-## Embryonic inhibition assay
+#### Embryonic inhibition assay
 
 Opsin expression was targeted to spinal primary and secondary motor neurons and interneurons (Kolmer-Agduhr cells and ventral longitudinal descending interneurons) using the Tg(s1020t:GAL4) transgene (Scott et al., 2007). Behaviour was monitored at 50 fps across embryos (24–27 hpf) individually positioned in agarose wells (~2 mm diameter) with fish facility water and free to move within their chorion. Embryos were subjected to 10 s pulses of blue (470 nm) or amber (590 nm) light at different irradiance levels (0–227 μW/mm2) with a 50 s inter-stimulus interval in the dark.
 
-## Larval activation assay
+#### Larval activation assay
 
 Opsin expression was targeted to primary and secondary spinal motor neurons using the Tg(mnx1:GAL4) transgene (Böhm et al., 2016). Behaviour was monitored at 500 fps in 6 dpf larvae with their head restrained in 2% low-melting point agarose (Sigma-Aldrich) and their tail free to move. Larvae were subjected to 2 or 10 ms pulses of blue (459 nm) or red (617 nm) light at different irradiance levels (0.04–2.55 mW/mm2) with a 20 s inter-stimulus interval in the dark. We also provided 250 ms trains of light pulses (1 ms pulse duration for blue light at 2.55 mW/mm2 or 10 ms for red light at 1 mW/mm2) at two pulse frequencies (20 or 40 Hz).
 
-## Larval inhibition assays
+#### Larval inhibition assays
 
 Opsin expression was targeted to spinal cord neurons using either the Tg(s1020t:GAL4) or Tg(mnx1:GAL4) transgene, as above. Behaviour was monitored at 50 fps across 6 dpf larvae individually positioned in agarose wells (~1.4 cm diameter) with fish facility water in which they were free to swim. Larvae were subjected to 10 s pulses of blue (459 nm) or red (617 nm) light at different irradiance levels (0.24–2.55 mW/mm2) with a 50 s inter-stimulus interval in the dark. Control trials during which no light pulse was provided were interleaved between light stimulation trials.
 
-## Behavioural data analysis
+### Behavioural data analysis
 
 Movie data was analysed using MATLAB (MathWorks). Region of interests (ROIs) containing individual fish were manually specified. For each ROI, the frame-by-frame change in pixel intensity – ΔPixel – was computed in the following way. For each trial, pixel intensity values were low-pass filtered across time frames and the absolute frame-by-frame difference in intensity (dI) was obtained for each pixel. Pixels showing the highest variance in dI (top 5th percentile) were selected to compute their mean dI, corresponding to the ROI ΔPixel trace for the trial.
 
@@ -204,13 +509,13 @@ For larval inhibition assays, images were background-subtracted using a backgrou
 
 To account for group differences in baseline coil/bout rate and bout speed in inhibition assays, data was normalised at a given irradiance level by dividing by the mean rate/speed across fish in control (no light) trials.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
-## Transgenic lines
+#### Transgenic lines
 
 Opsin expression was targeted to primary motor neurons using the Tg(mnx1:GAL4) transgene (Böhm et al., 2016) with one exception: 11 out of 19 eNpHR3.0-expressing cells were recorded in Tg(s1020t:GAL4) larvae (Scott et al., 2007). As in behavioural assays, all animals used for electrophysiological experiments were heterozygous for both the GAL4 and UAS transgenes. For control recordings, we targeted opsin-negative GFP-expressing primary motor neurons in Tg(mnx1:GAL4;UAS:EGFP) (Asakawa et al., 2008) or Tg(parga-GFP) (Balciunas et al., 2004) larvae. In all transgenic lines used, primary motor neurons could be unambiguously identified as the 3–4 largest cell somas, located in the dorsal-most portion of the motor column (Beattie et al., 1997; Bello-Rojas et al., 2019). We verified primary motor neuron identity in a small subset of recordings from eYFP-expressing cells in Tg(mnx1:GAL4;UAS:ChR2(H134R)-eYFP) larvae by adding 0.025% sulforhodamine-B acid chloride dye in the intracellular solution (Sigma-Aldrich) and filling the neuron to reveal its morphology. To maximise data acquisition in our in vivo preparation, when the first attempts of primary motor neuron recordings were not successful, we recorded neighbouring, dorsally-located presumed secondary motor neurons (11 out of 90 included cells).
 
-## Data acquisition
+#### Data acquisition
 
 Zebrafish larvae (5–6 dpf) were first paralysed in 1 mM α-Bungarotoxin solution (Tocris) for 3–6 min after which they were pinned in a lateral position to a Sylgard-coated recording dish (Sylgard 184, Dow Corning) with tungsten pins inserted through the notochord. The skin was removed between the trunk and midbody regions using sharp forceps, after which the dorsal muscle from 2 to 3 somites was suctioned with glass pipettes (~50 µm opening made from capillaries of 1.5 mm outer diameter, 1.1 mm inner diameter; Sutter). Patch pipettes were made from capillary glass (1 mm outer diameter, 0.58 mm inner diameter; WPI) with a horizontal puller (Sutter Instrument P1000) and had resistances between 8–16 MΩ. To first pass the dura, we applied a higher positive pressure (30–40 mm Hg) to the recording electrode via a pneumatic transducer (Fluke Biomedical, DPM1B), which was then lowered (20–25 mm Hg) once the electrode was near the cells. We generally recorded data from a single cell per larva. In a few instances, two cells from separate adjacent somites were recorded in the same fish.
 
@@ -218,7 +523,7 @@ External bath recording solution contained the following: 134 mM NaCl, 2.9 mM KC
 
 Recordings were made with an Axopatch 700B amplifier and digitised with Digidata 1440A or 1550B (Molecular Devices). pClamp software was used to acquire electrophysiological data at a sampling rate of 20 kHz and low-pass filtered at 2 kHz (voltage clamp) or 10 kHz (current clamp). Voltage clamp recordings were acquired with full whole-cell compensation and ~60% series resistance compensation, while corrections for bridge balance and electrode capacitance were applied in current clamp mode. Cells were visualised with a 63×/1.0 NA or a 60×/1.0 NA water-immersion objective (Zeiss or Nikon, respectively) on a fluorescence microscope equipped with differential interference contrast optics (AxioExaminer D1, Zeiss or Eclipse FN1, Nikon).
 
-## Optogenetic stimulation
+#### Optogenetic stimulation
 
 Light stimulation was performed with either a X-Cite (Xcelitas, XT600) or a broadband white LED (Prizmatix, UHP-T-HCRI_DI) light source equipped with a combination of different bandpass and neutral density filters to modulate irradiance at specific wavelengths (see Figure 4—figure supplement 1A and Supplementary file 4 for centre wavelengths/bandwidth and irradiance levels used to activate opsins). The onset, duration and irradiance level of light pulses were triggered and controlled via the Digidata device used for electrophysiological recordings.
 
@@ -228,7 +533,7 @@ For cation channelrhodopsins, we used a range of short light pulses. Voltage cla
 
 For anion channelrhodopsins and Cl–/H+ pumps, voltage and current clamp recordings were paired with a 1 s light pulse. In addition, we used two different tests of optogenetic inhibition during active spiking. To assess single spike inhibition efficacy and precision, we evoked spiking by injecting 5 ms pulses of current at 1.2–1.5 × rheobase for 10 trains at 5 Hz (1 s inter-train interval, total of 100 spikes triggered in 30 s), during which we provided 5 ms light pulses paired to the first current stimulus of the train and a subsequent one with progressively longer latency (Zhang et al., 2007). To test opsin ability to inhibit tonic firing over longer time periods, we evoked spiking with longer pulses of current (200–800 ms) at 1.2–1.5 × rheobase paired with a light pulse (50–200 ms) in the middle of the current stimulation. We first recorded a control current injection-only trial, followed by current and light pulse trials with a 20 s inter-stimulus interval.
 
-## Data analysis
+### Data analysis
 
 Data were analysed using the pyABF module in Spyder (3.3.6 MIT, running Python 3.6, scripts available here: https://github.com/wyartlab/Antinucci_Dumitrescu_et_al_2020; Dumitrescu, 2020; copy archived at https://github.com/elifesciences-publications/Antinucci_Dumitrescu_et_al_2020), MATLAB (MathWorks) and Clampfit (Molecular Devices). Series resistance (Rs) was calculated as a cell response to a 5 or 10 mV hyperpolarisation step in voltage clamp from a holding potential of –60 mV, with whole-cell compensation disabled. Membrane resistance (Rm) was obtained from the steady holding current at the new step, and membrane capacitance (Cm) corresponds to the area under the exponentially decaying current from peak to holding. We used the following cell inclusion criteria: (1) cell spiking upon injection of a 5 ms pulse of current; (2) membrane resting potential < –50 mV at all times; (3) > 150 pA current injection necessary to maintain the cell at a holding potential equal to resting potential in current clamp; (4) series resistance < 6 × pipette resistance at all times during the recording. We chose this conservative series resistance range as per previous electrophysiological procedures in other animal models, i.e. mammalian in vivo recordings with pipette resistance between 4–7 MΩ and max series resistance between 10–100 MΩ (Margrie et al., 2002). All reported membrane voltages were liquid junction potential corrected.
 
@@ -236,8 +541,14 @@ For voltage clamp recordings, we measured the maximum photocurrent amplitude in 
 
 To characterise voltage responses induced by opsins under current clamp, we first classified events as spikes (when max voltage depolarisation was > –30 mV) or sub-threshold (peak voltage deflection < –30 mV). For each response type, we measured the absolute peak of the response, the time to reach maximum response from light onset and the time-decay to baseline from peak by fitting a monoexponential decay function, as above. To assess firing pattern fidelity, we calculated the number of spikes per light pulse in a train, the latency from light onset to the first spike occurring within a 10 ms time window, and the spike jitter as the standard deviation of spike latency values across a pulse train with given frequency.
 
-Opsin efficacy in inhibiting single spikes was quantified using the following equation:I= SC-SC+LSC  ×100where SC is the mean number of spikes elicited by current pulses when no light was provided, SC+L is the mean number of spikes elicited during time periods in which a light pulse was paired with a current pulse, and I is the inhibition index (100% being perfect inhibition and negative values indicating additional spikes were generated during light pulses). Tonic firing inhibition efficacy was quantified by counting the number of spikes occurring during the light delivery period and normalising this count to provide spikes generated per 50 ms.
+Opsin efficacy in inhibiting single spikes was quantified using the following equation:
 
-## Statistical analysis
+$$
+I=\frac{S_{C}-S_{C+L}}{S_{C}}\times100
+$$
+
+where SC is the mean number of spikes elicited by current pulses when no light was provided, SC+L is the mean number of spikes elicited during time periods in which a light pulse was paired with a current pulse, and I is the inhibition index (100% being perfect inhibition and negative values indicating additional spikes were generated during light pulses). Tonic firing inhibition efficacy was quantified by counting the number of spikes occurring during the light delivery period and normalising this count to provide spikes generated per 50 ms.
+
+### Statistical analysis
 
 All statistical analyses were performed using Prism (GraphPad). Sample distributions were first assessed for normality and homoscedasticity. Details regarding the statistical tests used are reported in Supplementary file 2 for behavioural data and Supplementary file 3 for electrophysiological data. Significance threshold was set to 0.05 and all reported p-values were corrected for multiple comparisons. Tests were two-tailed for all experiments. Statistical analysis performed during the peer-review process has been reported as exploratory analyses (see Supplementary file 3). Number of animals/cells are provided for each graph. No outliers were excluded from the analyses.

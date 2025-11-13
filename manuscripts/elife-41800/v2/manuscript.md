@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.41800.001 Nuclear entry of HIV-1 replication complexes through intact nuclear pore complexes is critical for successful infection. The host protein cleavage-and-polyadenylation-specificity-factor-6 (CPSF6) has been implicated in different stages of early HIV-1 replication. Applying quantitative microscopy of HIV-1 reverse-transcription and pre-integration-complexes (RTC/PIC), we show that CPSF6 is strongly recruited to nuclear replication complexes but absent from cytoplasmic RTC/PIC in primary human macrophages. Depletion of CPSF6 or lack of CPSF6 binding led to accumulation of HIV-1 subviral complexes at the nuclear envelope of macrophages and reduced infectivity. Two-color stimulated-emission-depletion microscopy indicated that under these circumstances HIV-1 complexes are retained inside the nuclear pore and undergo CA-multimer dependent CPSF6 clustering adjacent to the nuclear basket. We propose that nuclear entry of HIV-1 subviral complexes in macrophages is mediated by consecutive binding of Nup153 and CPSF6 to the hexameric CA lattice.
+Nuclear entry of HIV-1 replication complexes through intact nuclear pore complexes is critical for successful infection. The host protein cleavage-and-polyadenylation-specificity-factor-6 (CPSF6) has been implicated in different stages of early HIV-1 replication. Applying quantitative microscopy of HIV-1 reverse-transcription and pre-integration-complexes (RTC/PIC), we show that CPSF6 is strongly recruited to nuclear replication complexes but absent from cytoplasmic RTC/PIC in primary human macrophages. Depletion of CPSF6 or lack of CPSF6 binding led to accumulation of HIV-1 subviral complexes at the nuclear envelope of macrophages and reduced infectivity. Two-color stimulated-emission-depletion microscopy indicated that under these circumstances HIV-1 complexes are retained inside the nuclear pore and undergo CA-multimer dependent CPSF6 clustering adjacent to the nuclear basket. We propose that nuclear entry of HIV-1 subviral complexes in macrophages is mediated by consecutive binding of Nup153 and CPSF6 to the hexameric CA lattice.
 
 ## Introduction
 
@@ -39,15 +39,31 @@ We have previously established a microscopy-based approach for quantitative anal
 
 ## Results
 
-## CPSF6 binding of the RTC/PIC does not impair reverse transcription
+### CPSF6 binding of the RTC/PIC does not impair reverse transcription
 
 The poor association of cytoplasmic RTC/PIC with CPSF6 observed in our previous study (Peng et al., 2014) argued against the model that CPSF6 regulates viral reverse transcription during cytoplasmic trafficking (Rasaiyaah et al., 2013). Our experimental system allowed us to directly address this issue by correlating the presence of CPSF6 on cytosolic RTC/PIC with the EdU/click signal intensity as a measure of reverse transcription products. These experiments were performed in a HeLa-derived TNPO3 knock-down cell line which displays a high cytosolic level of CPSF6 (Thys et al., 2011). Cells were infected with HIV-1 carrying IN.eGFP as RTC/PIC marker, subjected to EdU incorporation, and fixed and click-labeled 4.5 hr post infection. IN.eGFP/EdU positive objects were classified according to whether or not they were associated with CPSF6 immunofluorescence. In accordance with our previous results (Peng et al., 2014), the majority of cytoplasmic RTC/PIC (95/121; 78.5%) was positive for CPSF6 in this cell line with high cytoplasmic CPSF6 levels (Figure 1—figure supplement 1A). EdU signal intensities on individual CPSF6-positive complexes were found to be significantly higher on average compared to those on CPSF6-negative, but IN.eGFP-positive objects (Figure 1—figure supplement 1B), implying that CPSF6 association with cytoplasmic RTC/PIC did not inhibit reverse transcription. To analyze further whether CPSF6 affects reverse transcription, CPSF6 was depleted in MDM followed by infection and RTC/PIC quantification. The number of reverse-transcription competent RTC/PIC (i.e. EdU positive signals co-localizing with IN.eGFP) in CPSF6 depleted MDM was comparable with that of control cells (Figure 1—figure supplement 1C). These results are inconsistent with an inhibitory effect of cytoplasmic CPSF6 on HIV-1 reverse transcription. We therefore focused on the characterization of CPSF6 in the nucleus and at the NPC in primary human MDM in the following experiments.
 
-## CPSF6 is strongly recruited to nuclear subviral HIV-1 complexes in infected macrophages
+### CPSF6 is strongly recruited to nuclear subviral HIV-1 complexes in infected macrophages
 
 Reverse transcription of HIV-1 in MDM is much slower than in reporter cell lines or activated T-cells, presumably due to the low dNTP levels in these non-dividing cells (Diamond et al., 2004). We therefore performed inhibitor time-of-addition experiments to define the appropriate time window for RTC/PIC detection in this cell type. MDM were prepared from healthy blood donors and infected with HIV-1 carrying an R5-tropic Env protein derived from a primary human isolate (Schnell et al., 2011). The non-nucleosidic reverse transcriptase (RT) inhibitor efavirenz (EFV) or DMSO was added at different time points post single-round infection (p.i.), and the percentage of infected cells was determined by CA immunostaining 6d p.i.. Only minor resilience against EFV inhibition was observed at 24 h p.i. and this increased until 72 h p.i., where EFV inhibition was lost (Figure 1—figure supplement 2A,B). These results confirmed that completion of reverse transcription occurs late in MDM (supporting a recent more detailed analysis of replication dynamics (Bejarano et al., 2018)) and defined the time window for detection of HIV-1 RTC/PIC.
 
 MDM were infected with R5-tropic HIV-1 carrying IN.eGFP followed by detection of RTC/PIC via click-labeling of EdU incorporated into nascent viral DNA. The nuclear envelope was visualized by immunostaining of lamin A/C. At 48 h p.i., mock-infected cells displayed diffuse, predominantly nuclear localization of CPSF6 (Figure 1A), as previously reported (Dettwiler et al., 2004). In contrast, CPSF6 was strongly enriched on almost all nuclear HIV-1 complexes (75/77; 97.4%) in infected MDM, and strong punctate CPSF6 signals co-localizing with nuclear HIV-1 complexes were easily detected above the diffuse nuclear background (Figure 1B). Since the signal intensities of HIV-1 associated CPSF6 punctae were clearly much higher than those of the small nuclear CPSF6 speckles observed in both non-infected and infected cells, we consider it likely that this reflects CPSF6 recruitment by subviral complexes rather than recruitment of HIV-1 derived structures to pre-existing CPSF6 clusters. CPSF6 signal intensities were much higher on nuclear HIV-1 subviral complexes compared to those on complexes localized near the nuclear envelope. CPSF6 levels on the latter structures were generally close to the detection level, and cytoplasmic RTC/PIC were almost always CPSF6-negative (Figure 1F). Interestingly, cells transduced with lentiviral vectors expressing a non-targeted shRNA exhibited similar characteristic CPSF6 clusters in the nucleus (Figure 1—figure supplement 2C), while this was not observed in mock-transduced cells. We attribute these signals to nuclear complexes of the lentiviral vector. These results clearly show that CPSF6 association with RTC/PIC occurs mainly in the nucleus in MDM and leads to strong CPSF6 clustering on the subviral complex.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig1-v2.jpg)
+
+**Figure 1.:** MDM were mock-infected (A) or infected with HIV-1 NL4-34059 (IN.eGFP) at an MOI of 14.5 (B–G) in the presence of 10 µM EdU (A–G), and 5 µM Efavirenz (D) or 5 µM Ral (Raltegravir) (E) for 48 hr, click-labeled and immunostained with anti-CPSF6 antibody (magenta). Z-stacks were acquired by spinning disk confocal microscopy (SDCM). RTC/PIC were identified via co-localization of IN.eGFP (green) and EdU (red) signals. Images show representative z-sections of the nucleus of infected cells. Solid arrowheads indicate nuclear complexes. Open arrowheads indicate lack of co-localization for the respective stain. Scale bars represent 5 µm. (A, B) Distribution of CPSF6 in the nucleus of a mock-infected or infected cell. Immunostaining against lamin A/C was performed to visualize the nuclear envelope. (C–E) As in A,B, but immunostaining against CA (cyan) was performed instead of lamin staining. (F) Distribution and mean intensities of CPSF6 signals co-localizing with individual RTC/PIC in the cytoplasm, close to the nuclear envelope and inside the nucleus; each dot represents one RTC/PIC. The graph summarizes data from two donors from two independent experiments. 62 cells were analyzed in total. (G) Distribution and mean intensities of CA signals co-localizing with individual EdU-positive RTC/PIC. Numbers of total RTC/PIC detected are given in parentheses. The graph summarizes data from four donors from three independent experiments. 92 cells were analyzed in total. Statistical significance was assessed with two-tailed non-paired Mann-Whitney test; *p=0.013.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Association of CPSF6 with cytoplasmic RTC/PIC in HeLa P4-derived TNPO3 K/D cells. Cells were infected with HIV-1NL4-3 (IN.eGFP) at an MOI of 25 in the presence of 10 µM EdU for 4.5 hr, fixed, click-labeled and immunostained with anti-CPSF6 (cyan) and anti-laminA/C (white) antibodies. A z-section of a representative infected cell is shown. The arrowhead indicates a cytoplasmic RTC/PIC enlarged (i) on the right side. An additional enlargement from another region of the same cell (ii) is also shown. IN.eGFP and EdU signals in the merged panel are displayed in green and red, respectively. Scale bar represents 5 µm. (B) Comparison of EdU signal intensities of single CPSF6 negative (neg) or positive (pos) cytoplasmic RTC/PIC in infected TNPO3-K/D cells. Statistical significance was assessed by a two-tailed unpaired Mann Whitney test; **p<0.01. a.u.: arbitrary units. (C) MDM were transduced with AAV expressing shRNAs targeting CPSF6 (K/D) or non-targeted shRNA (NS) as described in Materials and Methods. Subsequently, cells were infected with HIV-1 NL4-3 4059-WT (IN.eGFP). At 48 h p.i., cells were fixed, click-labeled and immunostained. The graph shows the number of RTC/PIC detected per cell under the indicated conditions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) MDM from two donors in two independent experiments were infected with 15 ng CA (MOI 3.5) of HIV-1 NL4-3 4059-WT. To prevent secondary infection, 5 µM Maraviroc was added to the medium at 24 h p.i.. 5 µM Efavirenz (solid lines) or DMSO (dashed lines) was added at the time of infection (0 h p.i.) or at the indicated time points. The proportion of infected cells was determined at day 6 p.i. by immunostaining using antiserum against CA. Infections were performed in triplicates per condition in each experiment. Error bars represent SEM of the technical replicates. (C) MDM, from two different donors than the ones from (A) and (B), were transduced with lentiviral vectors expressing a non-targeted shRNA (NS control) or shRNAs against CPSF6, as described in Materials and Methods. At 7d post transduction cells were fixed and immunostained with anti-CPSF6 (magenta) antibody. The nuclear envelope was visualized by immunostaining with anti-laminA/C antibody (white). The solid arrow indicates CPSF6 enrichment in the nucleus observed after lentiviral transduction.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** MDM were transduced with AAVs as described in Materials and Methods. Subsequently, cells were infected with 100 ng CA (MOI 14.5) of HIV-1 NL4-3 WT (IN.eGFP) (A) or A77V (IN.eGFP) (B) in the presence of 10 µM EdU. 48 hr later, cells were fixed and stained with anti-CA and anti-laminA/C antibodies. The plots show the mean intensities of CA signals co-localizing with individual RTC/PIC at the indicated subcellular localization in cells displaying normal (NS control, black dots) or low (K/D, gray dots) CPSF6 levels. Red lines represent the mean of each data set. Data displayed were combined from two independent experiments using from MDM from different donors. Statistical significance was assessed by a two-tailed unpaired Mann Whitney test; n.s.: not significant. a.u.: arbitrary units.
 
 To assess the degree of CA retention on nuclear subviral complexes, MDM were infected with HIV-1 for 48 hr as above and subjected to CA immunostaining. In agreement with our previous findings (Peng et al., 2014), nuclear HIV-1 RTC/PIC were strongly CA-positive, with CA signals clearly co-localizing with EdU, IN.eGFP and CPSF6 (Figure 1C). Quantifying localization and CPSF6/CA association of HIV-1 complexes in a total of 92 infected MDM at 48 h p.i., we observed a large majority of IN.eGFP positive structures outside the nucleus (7,904/8,403; 94%). These structures mostly lacked detectable EdU signals (7558/7904; 95.6%), in agreement with the assumption that the majority of particles in the cytosolic area represent virions taken up into endosomes (inaccessible to EdUTP) and non-productive particles. In contrast, the majority of IN.eGFP positive objects within the nucleus were EdU positive (328/499; 65.7%). The observation that a subset of complexes detected in the nucleus was EdU negative confirms that reverse transcription is not a prerequisite for nuclear import of HIV-1 complexes, as reported by (Burdick et al., 2017). In a recent study on HIV-1 replication dynamics in macrophages, we observed higher EdU intensities associated with nuclear complexes compared to complexes near the nuclear envelope, however, suggesting that reverse transcription may promote efficiency of nuclear entry or that reverse transcription can even be completed in the nucleus in this cell type (Bejarano et al., 2018). 325 of the 328 EdU-positive complexes in the nucleus (99%) were associated with detectable CA signals, and a similar CA signal was also observed on 85% of the EdU-negative nuclear IN.eGFP-positive complexes (146/171).
 
@@ -55,9 +71,21 @@ Mean CA signal intensity of individual RTC/PIC differed only modestly between cy
 
 To test whether CPSF6 enrichment on nuclear subviral complexes requires HIV-1 reverse transcription or integration, MDM were infected and labeled in the presence of RT or IN inhibitors, respectively. Nuclear import of HIV-1 subviral complexes and CPSF6 recruitment to these structures was independent of reverse transcription (Figure 1D; 102/105 nuclear complexes were CPSF6-positive; 97.1%) and integration (Figure 1E: 101/104 nuclear complexes were CPSF6-positive; 97.1%).
 
-## Characterization of CPSF6 and LEDGF recruitment to nuclear HIV-1 complexes
+### Characterization of CPSF6 and LEDGF recruitment to nuclear HIV-1 complexes
 
 To verify that the CPSF6-enriched nuclear structures contain reverse-transcribed HIV-1 genomes, we performed immunofluorescence combined with DNA in situ hybridization (immuno-FISH) on infected MDM at 72 h p.i.. Co-localization of viral DNA signals with CA immunostaining and CPSF6-enrichment (Figure 2A) confirmed that the EdU signal on nuclear complexes corresponds to HIV-1 DNA and ascertained that the identified objects represent HIV-1 replication complexes that have undergone reverse transcription.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig2-v2.jpg)
+
+**Figure 2.:** (A) MDM from three donors were infected with HIV-1 NL4-34059 at an MOI of 8 for 72 hr. Viral DNA (green) was detected by FISH as described in Materials and Methods. CPSF6 (magenta) and CA (cyan) were detected by immunostaining and images were recorded by SDCM. The maximum projection of three focal planes acquired with an axial spacing of 0.2 µm is shown. Arrowheads indicate nuclear complexes. (B) MDM from three donors were infected with 100ng p24 (MOI 14.5) HIV-1 NL4-34059 (IN.eGFP) for 48 hr, fixed and click-labeled as in Figure 1. CPSF5 (cyan) and CPSF6 (magenta) (top panel) or CPSF7 (white) and CPSF5 (cyan) (bottom panel) were detected by immunostaining. Images show a section through the nuclei of infected cells. Arrowheads indicate nuclear complexes. 112 cells were analyzed in total. (C,D) MDM from two donors in two independent experiments were infected with 100ng p24 (MOI 14.5) HIV-1 NL4-3ΔTat4059 (IN.eGFP) (C) or HIV-1 NL4-34059 (IN.eGFP) (D). At 96 h p.i., a final concentration of 5 µM Flavopiridol (D) was added to the medium and infection was continued for 12 hr. Cells were fixed, click-labeled and CPSF6 (magenta) and laminA/C (white) were detected by immunostaining. Images show a section through the nucleus of representative infected cells. Arrowheads indicate nuclear complexes. 22 cells were analyzed in (C) and 37 cells in (D). (E,F) MDM from three donors, in two independent experiments, were infected at an MOI of 8 with HIV-1 NL4-34059 (E) or HIV-1 NL4-3ΔTat4059 (F). At 108 h p.i. cells were fixed. CPSF6 (magenta) was detected by immunostaining and nucleus (blue) with Hoechst. Viral RNA (green) was detected by RNA FISH as explained in Materials and Methods. Arrowhead indicates nuclear complexes. 42 cells were analyzed in total in (E) and 49 cells in (F). (G) MDM from the same donors as in (E,F) were infected with HIV-1 NL4-34059 using the same conditions. At 96 h p.i. 5 µM Flavopiridol was added to the medium for 12 hr. Viral RNA (green) was detected by RNA FISH. CPSF6 (magenta) was detected by immunostaining and nucleus (blue) with Hoechst. Arrowheads indicate nuclear CPSF6 enrichments. 36 cells were analyzed in total. Scale bars in A-G: 5 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** MDM from two donors were infected with HIV-1 NL4-34059 or HIV-1 NL4-3ΔTat4059 as described in Materials and Methods and Figure 2, in the presence or absence of Raltegravir. At 96 h p.i., DMSO or 5 µM Flavopiridol was added to the medium and infection was continued for 12 additional hours. (A) RNA was extracted and HIV-1 gag transcripts were quantitated by qRT-PCR as described in Materials and Methods. The graph shows the mRNA levels of gag upon Flavopiridol treatment relative to the DMSO control. Error bars represent SD of technical replicates. (B) At 6d p.i., cells were fixed and immunostained with anti-CA antiserum to determine the proportion of infected cells. Error bars represent SEM of biological replicates. (C) Co-localization of LEDGF with CPSF6 on a nuclear PIC. MDM were infected for 48 hr as above, fixed and click-labeled. LEDGF (p52 and p75; white) and CPSF6 (magenta) were detected by immunostaining. Green, IN.eGFP; red, EdU. Arrowheads indicate nuclear complexes displayed in the enlargements on the right (i, ii; note that the structure in (ii) is in a different focal plane and not clearly visible in the overview). The table shows the total number of CPSF6- or LEDGF-positive nuclear complexes detected in samples from two donors. Scale bars: 5 µm (overview), 1 µm (enlargements).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) MDM from three donors were infected with the A77V variant for 72 hr. Cells were fixed and immunostained using anti-CPSF6 (magenta) and anti-CA (cyan) antibodies. viral DNA (green) was detected by FISH as described in Materials and Methods. Arrows indicate nuclear viral DNA signals shown enlarged at the right. Please note that the harsh treatment of the immuno-FISH procedure compromised the quality of CA signals. Image shows a representative cell. Scale bar: 5 µm (overview) or 1 µm (enlargement). (B) Numbers of nuclear viral DNA signals per cell in cells infected with WT HIV-1 or the A77V variant at 72 h p.i. The graph shows data from three independent experiments. Whiskers represent minimum and maximum. Statistical difference was assessed with a two-tailed non-paired Mann Whitney test; ***p<0.0001.
 
 We then investigated whether a specific CPSF6 complex is recruited to nuclear HIV-1 RTC/PIC. CPSF6 is part of the cellular CF Im complex involved in pre-mRNA processing (Gruber et al., 2012; Hardy and Norbury, 2016). Two forms of this tetrameric complex have been described. They are composed of two CPSF5 molecules, associated with two molecules of either CPSF6 or CPSF7 (Gruber et al., 2012). MDM were infected with HIV-1 for 48 hr and co-immunostained with antibodies against CPSF6 and CPSF5, or against CPSF7 and CPSF5. We observed clear co-localization of CPSF5 and CPSF6 on almost all nuclear complexes analyzed (42/44), while CPSF7 was only detected on one of 82 nuclear complexes analyzed (Figure 2B). Thus, we conclude that the CPSF52-CPSF62 form of the CF Im complex is recruited to nuclear HIV-1 complexes.
 
@@ -65,29 +93,49 @@ Given the role of the CF Im complex in cellular pre-mRNA processing, we investig
 
 The p75 isoform of the host cell factor Lens Epithelium-Derived Growth Factor (LEDGF/p75) has been reported to be important for HIV-1 integration and to influence integration site selection (Kvaratskhelia et al., 2014; Debyser et al., 2015). We therefore analyzed nuclear HIV-1 complexes for the presence of LEDGF. Co-immunostaining of HIV-1 infected MDM with antibodies against LEDGF (detecting both the p75 and p52 isoform) and CPSF6 revealed all nuclear complexes to be CPSF6-positive in this experiment and ~80% to contain detectable LEDGF as well (Figure 2—figure supplement 1C).
 
-## CPSF6 is important for HIV-1 infectivity in macrophages
+### CPSF6 is important for HIV-1 infectivity in macrophages
 
 In order to determine whether enrichment of CPSF6 on nuclear HIV-1 complexes is functionally relevant for HIV-1 replication, we performed CPSF6 knock-down experiments and employed a CPSF6 binding deficient virus. Mutation A77V in CA has previously been reported to impair CPSF6 interaction without affecting replication in MDM (Saito et al., 2016b), and thus to be more specific compared to the N74D mutation used in other studies. MDM from three donors each were transduced with either lentiviral or adeno-associated virus (AAV) based vectors expressing a combination of three shRNAs against CPSF6 or a non-targeted shRNA. CPSF6 signal intensities in the nucleus were quantitated to determine the level of knock-down (Figure 3—figure supplement 1A). While both approaches yielded ca. 50–60% reduction of mean CPSF6 signal intensities (Figure 3—figure supplement 1A, compare top panels to bottom panels), transduction with lentiviral vectors resulted in the appearance of nuclear CPSF6 punctae (Figure 1—figure supplement 2C) indistinguishable from those associated with HIV-1 derived complexes. We therefore employed AAV vectors for all imaging experiments, while lentiviral knock-down was used in some infection experiments as well.
 
 Transduced MDM were infected with non-labeled R5-tropic HIV-1 in a single-round infection at an MOI of 3.5 (based on titration in HeLa-based reporter cells) and scored for productive infection at day 6 p.i.. Knock-down of CPSF6 modestly, but significantly reduced wild-type HIV-1 infection (Figure 3A). A similar decrease in infectivity was seen for the A77V variant without CPSF6 silencing, different from a previous report where this variant appeared to be unimpaired (Saito et al., 2016b). CPSF6 depletion had no additional effect on infection by the A77V variant, indicating that its phenotype is indeed due to loss of CPSF6 binding (Figure 3A and Figure 3—figure supplement 1B, bottom panels show data for AAV mediated depletion). Since CPSF6 knock-down levels varied between individual cells, we analyzed the correlation between CPSF6 signal intensity and HIV-1 infection at the single-cell level (Figure 3B,C). Stratification of cells into quartiles according to CPSF6 staining intensity revealed a correlation between HIV-1 infection and CPSF6 staining intensity for wild-type HIV-1, but not for the A77V variant (Figure 3B). Single-cell analysis further revealed that a certain threshold level of CPSF6 was apparently required for MDM to become productively infected (Figure 3C). This phenotype was more obvious in CPSF6 depleted MDM, but exhibited significant donor-to-donor variation. Taken together, these observations suggest that a threshold level of CPSF6 is required for efficient infection of MDM with wild-type HIV-1, and that CPSF6 facilitates HIV-1 infection in a CA-dependent manner.
 
-## CPSF6 is required for nuclear import of the RTC/PIC, but not for cytoplasmic trafficking to the nuclear pore
+![Figure 3.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig3-v2.jpg)
+
+**Figure 3.:** (A) MDM from six donors in three independent experiments were transduced with either lentiviral vectors or AAV expressing a non-targeted shRNA (NS control) or shRNAs against CPSF6 (K/D) as described in Materials and Methods. Twelve days after initial transduction, cells were infected with 15 ng CA (MOI 3.5) of HIV-1 NL4-3 WT or A77V. To prevent secondary infection, 5 µM Maraviroc was added to the medium at 24 h p.i. The proportion of infected cells was determined by immunostaining using antiserum against CA at 6d p.i. Three independent experiments each, using cells from different donors, were conducted for lentivirally and AAV transduced cells, and infections were performed in triplicate per condition in each experiment. The graph shows mean values and SEM for the proportion of infected cells from all data sets. Statistical significance was assessed with two-tailed non-paired Mann-Whitney test; **p=0.0008, ***p<0.0001, n.s.: not significant, a.u.: arbitrary unit. Please refer to Figure 3—figure supplement 1 for data sets from individual experiments. (B) Correlation between CPSF6 levels and infectivity. MDM were transduced with AAV and infected as in (A). CPSF6 signal intensities from individual infected and non-infected cells were quantified as described in Materials and Methods. CPSF6 intensities per cell from six randomly selected wells were used to separate the population into quartiles (q1 <62. q2 <95. q3 <117. q4 <353 a.u.) and the proportion of infected cells was determined for each quartile. Symbols represent mean values calculated for samples from three individual donors; lines indicate the mean value from each data set. For each condition,>10,000 cells were analyzed, per donor. (C) MDM were transduced with lentiviral vectors and infected with HIV-1 NL4-3 4059-WT, as described in (A). CPSF6 signal intensities from individual infected and non-infected cells were quantified as described in Materials and Methods. The graph shows CPSF6 intensity values from n individual NS or K/D cells for the total (left) and infected (right) cell population. Median values are indicated by red lines. Statistical significance was assessed with two-tailed non-paired Mann-Whitney test; ***: p<0.0001. a.u.: arbitrary unit. (D) MDM were infected with HIV-1 NL4-3 WT or A77V, as described above, in the presence of 2.5 µM PF74. At 24 h p.i. 5 µM Maraviroc was added to the medium. Cells were fixed 6d p.i. and the proportion of infected cells was determined by immunostaining using antiserum against CA. Two independent experiments, using cells from four donors, were performed. Infections were performed in triplicate per condition in each experiment. The graph shows mean values and SEM for the proportion of infected cells from all data sets. Statistical significance was assessed with two-tailed non-paired Mann-Whitney test; **p=0.0013, ***p<0.0001, n.s.: not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** MDM were transduced with lentiviral (+LV; Donors 1–3) or AAV vectors (+AAV; Donors 4–6) and subsequently infected with HIV-1 NL4-3 4059-WT or HIV-1 NL4-3 4059-A77V as in Figure 3. (A) Cells were fixed and stained with anti-CPSF6 antibody and Hoechst stain. Box plots show the distribution of CPSF6 signal intensities from n cells subjected to non-silencing (black) or knock-down (gray) conditions. Whiskers represent minimum and maximum values. Statistical significance was assessed by two-tailed unpaired Mann Whitney test; ***p<0.0001. (B) At 6d p.i., cells were fixed and proportions of infected cells were determined as described in Figure 3. The graph shows mean values of infectivity and SEM from all the donors.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** MDM from the same donors as in Figure 3 were infected with HIV-1 NL4-3 4059-N74D as described in Materials and Methods. (A) At 6d p.i., cells were fixed and proportions of infected cells were determined as described in Figure 3. Statistical significance was assessed by two-tailed unpaired Mann Whitney test; **p=0.0008, ***p<0.0001. (B) Cells from four donors were infected with HIV-1 NL4-3 4059-N74D in the presence of DMSO or 2.5 µM PF74 as described in Figure 3. At 6d p.i., cells were fixed and proportions of infected cells were determined as in (A). Statistical significance was assessed by two-tailed unpaired Mann Whitney test; n.s.: not significant.
+
+### CPSF6 is required for nuclear import of the RTC/PIC, but not for cytoplasmic trafficking to the nuclear pore
 
 Having established that CPSF6 promotes HIV-1 infection of MDM, we next aimed to define the replication step affected. For this, we visualized viral particles in infected MDM at two time points after infection: 24 h p.i., when reverse transcription was still ongoing, and 60 h p.i., when reverse transcription was completed in most cells (Figure 1—figure supplement 2A). MDM were transduced with AAV vectors for CPSF6 knock-down and subsequently infected with wild-type HIV-1 or the A77V variant, both carrying IN.eGFP at an MOI of 14.5 (determined on HeLa-derived reporter cells).
 
 At 24 h p.i., IN.eGFP-positive subviral complexes derived from wild-type HIV-1 were frequently detected near the nuclear envelope in cells displaying either normal (NS control) or low (K/D) CPSF6 levels (3 or 6.2% of IN.eGFP-positive objects, respectively; Figure 4A, Figure 4—figure supplement 1B). This was similar for cells infected with the A77V variant (5.8 or 4.4%, respectively; Figure 4—figure supplement 1A,B), indicating that CPSF6 plays no role in RTC/PIC trafficking to the nuclear envelope in MDM. A small fraction of IN.eGFP signals was already observed inside the nucleus for wild-type HIV-1 at this time (<0.5% of IN.eGFP positive objects), while only a single nuclear IN.eGFP object was detected in HIV-1 A77V infected cells (Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig4-v2.jpg)
+
+**Figure 4.:** MDM were transduced with AAVs as described in Materials and Methods. Subsequently, cells were infected with 100 ng CA (MOI 14.5) of HIV-1 NL4-3 WT (IN.eGFP) (A, B) or A77V (IN.eGFP) (C) in the presence of 10 µM EdU. (A) At 24 h p.i., cells were fixed, and immunostained for CA (cyan), CPSF6 (magenta) and laminA/C (white). Filled arrowheads indicate IN.eGFP signals co-localizing with CA in cells displaying WT (NS control) or low (K/D) CPSF6 signal intensity. Open arrowheads indicate no co-localization for the respective marker. See Figure 4—figure supplement 1 for corresponding data obtained with HIV-1NL4-3 A77V. (B, C) At 60 h p.i., cells were fixed, click-labeled and immunostained against CPSF6 (magenta) and laminA/C (white). Solid arrowheads indicate IN.eGFP positive objects co-localizing with EdU in infected cells displaying WT (NS control) or low (K/D) CPSF6 signal intensity. Open arrowheads indicate lack of co-localization for the respective marker. Images in A-C show representative z-sections through the nuclear region of infected cells. IN.eGFP and EdU signals in the merged panels are represented in green and red, respectively. (D) Analysis of individual objects detected in cells from four donors at 60 h p.i. Tables summarize the subcellular distribution of IN.eGFP positive objects in n cells from four donors in three independent experiments, infected with HIV-1 NL4-3 WT (IN.eGFP) or the A77V variant (IN.eGFP) at 60 h p.i. with or without knock-down of CPSF6. Numbers of detected objects are given in parentheses. Proportions of nuclear or close to the nuclear envelope IN.eGFP objects with and without CPSF6 knock-down were compared using a two-tailed Z-test (α = 0.05); **: p=0.0002. ***: p<0.0001. (E) Numbers of nuclear IN.eGFP positive objects per cell in WT HIV-1 infected cells displaying normal (NS control) or low (K/D) CPSF6 signal intensity. Whiskers represent 5 and 95 percentile. Statistical significance was assessed with two-tailed non-paired Mann Whitney test; ***: p<0.0001. (F) Mean intensities of CPSF6 signals co-localizing with individual IN.eGFP positive objects at the indicated subcellular localization in cells infected with HIV-1 NL4-3 WT (IN.eGFP) or the A77V variant (IN.eGFP) and displaying normal (NS control) or low (K/D) CPSF6 signal intensity (related to panel D). (G) Analysis of individual objects detected in cells from two donors at 60 h p.i. Tables summarize the subcellular distribution of IN.eGFP positive objects in n cells from two donors infected with HIV-1 NL4-3 WT (IN.eGFP) or A77V (IN.eGFP) at 60 h p.i. in the presence of DMSO or 2.5 µM PF74. Numbers of detected objects are given in parentheses. Proportions of IN.eGFP objects in the absence or presence of PF74 located in the nucleus or close to the nuclear envelope were compared using a two-tailed Z-test (α = 0.05); ***p<0.0001, n.s.: not significant. See Figure 4—figure supplement 1 for corresponding imaging data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** MDM were transduced with AAV as described in Materials and Methods. (A) Cells were infected with 100 ng CA (MOI 14.5) HIV-1 NL4-3 4059-A77V (IN.eGFP) in the presence of 10 µM EdU. At 24 h p.i., cells were fixed and immunostained with anti-CPSF6 (magenta), anti-CA (cyan) and anti-laminA/C (white) antibodies. Solid arrowheads indicate IN.eGFP signals co-localizing with CA signals in cells displaying wt (NS control) or low (K/D) CPSF6 signal intensity. Open arrowheads serve as a spatial reference. Images show representative z-sections through the nuclear region of infected cells. IN.eGFP signals in the merged panels are represented in green. Scale bars: 5 µm. (B) Tables on the left summarize the distribution of IN.eGFP positive objects detected at 24 h.p.i. in n cells from two donors infected with HIV-1 NL4-3 4059-WT (IN.eGFP) or HIV-1 NL4-3 4059-A77V (IN.eGFP) under non-silencing or knock-down conditions. Proportions of IN.eGFP objects localized in the nucleus were determined based on micrographs and data were analyzed using a two-tailed Z-test (α = 0.05); ***p<0.0001. (C) Mean intensities of CPSF6 signals associated with single IN.eGFP positive objects, detected at the indicated subcellular localization in the data from the tables in (B). (D, E) MDM from two donors in two independent experiments were infected with HIV-1 NL4-3 4059-WT (IN.eGFP) (D) or HIV-1 NL4-3 4059-A77V (IN.eGFP)(E) in the presence of 2.5 µM PF74 and 10 µM EdU as described in Figure 4. At 60 h p.i., cells were fixed, click-labeled and immunostained with anti-CA antiserum (cyan) and anti-laminA/C (white) antibody. IN.eGFP and EdU signals in the merged panels are represented in green and red, respectively. Arrows in (D) indicate HIV-1 RTC/PIC. Open arrows serve as a spatial reference. Box in (E) marks a large number of EdU negative VLP in the cytoplasmic area, a predominant phenotype observed under the given conditions. See main Figure 4G for quantification. Scale bars: 5 µm.
+
 As expected, a higher proportion of IN.eGFP-positive complexes had entered the nucleus at 60 h p.i.. In MDM transduced with non-targeted vector, 2.4% of IN.eGFP positive objects were detected in the nucleus at this time for wild-type HIV-1 infection (Figure 4B,D). Cells depleted of CPSF6 displayed a significantly lower number of nuclear IN.eGFP signals (0.7%; Figure 4B,D,E), while the proportion of IN.eGFP-positive complexes close to the nuclear envelope was higher than in cells expressing normal levels of CPSF6 (Figure 4D). The proportion of nuclear IN.eGFP-positive objects remained low for cells infected with the A77V variant at 60 h p.i. (0.2%; Figure 4C,D), and was further reduced upon CPSF6 knock-down (Figure 4C,D). Interestingly, a higher proportion of HIV-1 complexes was observed close to the nuclear envelope for the A77V variant at this later time point compared to wild-type HIV-1 (Figure 4C,D).
 
 The reduction of nuclear complexes for the A77V variant was independently confirmed by immuno-FISH analysis (Figure 2—figure supplement 2A), where 15 of 100 randomly selected cells scored positive for nuclear HIV-1 proviral DNA for the A77V variant compared to 75 in the case of wild-type HIV-1. Furthermore, the number of viral DNA signals per cell was also lower for the A77V variant (Figure 2—figure supplement 2B), consistent with its reduced infectivity. Quantitation of CPSF6 signal intensities associated with individual RTC/PIC stratified for the subcellular localization revealed clear enrichment of CPSF6 on nuclear complexes with an intermediate signal for complexes at the nuclear envelope and no detectable CPSF6 on cytoplasmic complexes (Figure 4F, Figure 4—figure supplement 1C). Interestingly, this pattern and the observed signal intensities were maintained after CPSF6 knock-down, consistent with our results showing that HIV-1 infection after CPSF6 knock-down preferentially occurs in cells that retain a threshold level of CPSF6. Very low to non-detectable CPSF6 levels were observed on A77V derived complexes (Figure 4F, Figure 4—figure supplement 1C), consistent with its defect in CPSF6 recruitment. Taken together, our data do not support involvement of CPSF6 in cytoplasmic transport of RTC/PIC to the NPC, but argue for a role of CPSF6 in nuclear import in terminally differentiated macrophages.
 
-## The capsid-binding drug PF74 inhibits HIV-1 infectivity and affects nuclear entry of the RTC/PIC
+### The capsid-binding drug PF74 inhibits HIV-1 infectivity and affects nuclear entry of the RTC/PIC
 
 The small molecule PF-3450074 (PF74) has been shown to block HIV-1 infection by interaction with the viral CA protein (Blair et al., 2010; Shi et al., 2011). Structural studies revealed that the compound preferentially binds to the assembled CA hexamer, where it targets a pocket that serves as binding site for CPSF6 and for the nucleoporin Nup153 (Price et al., 2014; Bhattacharya et al., 2014). PF74 has been shown to block HIV-1 reverse transcription at concentrations > 10 µM (Shi et al., 2011; Rasaiyaah et al., 2013; Peng et al., 2014; Saito et al., 2016a), most likely by disrupting the integrity of the incoming capsid (Márquez et al., 2018). At lower concentrations, the drug has been reported to affect HIV-1 nuclear entry without inhibiting reverse transcription (Peng et al., 2014; Saito et al., 2016a). To investigate the effects of PF74 in relation to CPSF6-binding of the viral capsid, we performed single-round infections of MDM with wild-type HIV-1 or the CPSF6-recruitment defective A77V variant in the presence or absence of 2.5 µM PF74 and scored infectivity 6d later. PF74 decreased wild-type HIV-1 infection ca. 10-fold compared to the DMSO control (Figure 3D) and showed a similar effect on the A77V variant (7-fold reduction; Figure 3D). These results suggest that PF74 may exhibit additional effects besides blocking the CA-CPSF6 interaction. Parallel infection experiments were performed with the prototypic CPSF6-binding defective CA variant N74D. In agreement with previous reports (Schaller et al., 2011; Ambrose et al., 2012; Rasaiyaah et al., 2013), we observed a much stronger reduction in infectivity compared to the A77V variant (Figure 3—figure supplement 2A), while PF74 had no additional effect on infection by the N74D variant (Figure 3—figure supplement 2B).
 
 To determine whether PF74 affects nuclear entry of HIV-1 subviral complexes, we infected MDM with IN.eGFP-labeled wild-type HIV-1 or the A77V variant in the presence of 2.5 µM PF74. PF74 treatment caused a strong reduction in the proportion of nuclear complexes in wild-type HIV-1 infected cells (0.01% corresponding to a single nuclear HIV-1 structure in the presence of PF74 compared to 3.6% nuclear structures in the control; Figure 4G, Figure 4—figure supplement 1D). Interestingly, we also observed a significant reduction in the proportion of IN.eGFP signals close to the nuclear envelope in the presence of PF74 (8.2% in control vs. 4% in PF74-treated cells; Figure 4G, Figure 4—figure supplement 1D). In the case of the A77V variant, the proportion of nuclear structures was very low even in the control, and we could thus not conclusively determine whether PF74 had an additional effect on nuclear entry in this case (Figure 4G). However, the proportion of IN.eGFP signals close to the nuclear envelope was again higher for this variant compared to wild-type HIV-1 (13,9% vs 8.2%), and this number was also reduced by PF74 treatment (Figure 4G, Figure 4—figure supplement 1E). These observations indicate that 2.5 µM PF74 exhibits additional effects besides affecting nuclear entry of subviral complexes and may explain why PF74 also inhibits MDM infection by the A77V variant.
 
-## HIV-1 RTC/PIC remain arrested at the NPC of infected MDM in the absence of CPSF6
+### HIV-1 RTC/PIC remain arrested at the NPC of infected MDM in the absence of CPSF6
 
 The observation that both, CPSF6 knock-down and the A77V mutation led to accumulation of HIV-1 replication complexes in close proximity to the nuclear envelope suggested that failure to interact with CPSF6 (due to either lack of CPSF6 or lack of CPSF6 binding) may arrest incoming subviral HIV-1 particles at the nuclear pore. To directly test this hypothesis, we performed two-color Stimulated Emission Depletion (STED) super resolution microscopy of complexes close to the nuclear envelope, achieving a lateral resolution of <50 nm. In order to maximize the number of complexes localized at the nuclear envelope, MDM were infected with HIV-1 (A77V) carrying IN.eGFP at an MOI of 14.5 and fixed at 60 hr. Cells were immunostained for FG-containing nucleoporins to identify NPCs and for HIV-1 CA. Confocal images identified CA-positive complexes close to the nuclear envelope (Figure 5A) and STED microscopy revealed that most of these CA-positive structures were directly associated with nuclear pores (34 of 38 CA-positive structures close to the nuclear envelope directly co-localized with NPCs; 89%; Figure 5B).
 
@@ -97,13 +145,17 @@ The observation that both, CPSF6 knock-down and the A77V mutation led to accumul
 
 In order to quantify the number of particles arrested at the NPC and obtain comprehensive insight into the relative position of subviral complexes with respect to the NPC, we conducted two-color 3D STED analysis. The nucleus of MDM has a diameter of 6–10 µm along the optical axis. Sampling the entire nuclear volume required the acquisition of super-resolved images in many optical sections, corresponding to 200–300 super-resolved images per nucleus. To minimize bleaching during the acquisition, we implemented a light dose management that specifically activates the STED depletion laser beam to switch off fluorophores in the vicinity of a fluorescent feature to be recorded (Staudt et al., 2011). This procedure reduced the number of state transition cycles that a fluorescent molecule undergoes and permitted acquisition of hundreds of super-resolved images instead of a few dozen as typically acquired under standard conditions. This approach enabled us to reconstruct the entire nucleus of a MDM infected with HIV-1 (A77V) for 60 hr, achieving an almost isotropic final resolution of 100 nm x 100 nm x 150 nm (xyz) (Video 1). Analysis of these reconstructions revealed that 88% of CA-positive complexes at the nuclear envelope were associated with nuclear pores (408/465, five cells from two independent experiments).
 
+![Video 1.](https://cdn.elifesciences.org/articles/41800/elife-41800-video1.mp4.jpg)
+
+**Video 1.:** 3D super resolution imaging and co-localization analysis of MDM infected with HIV-1 NL4-3 4059-A77V (IN.eGFP). The video shows a 3D reconstruction of the entire nucleus of an MDM infected with HIV-1 NL4-3 4059-A77V (IN.eGFP) at an MOI of 14.5 for 60 hr. For co-localization analysis both Nup153 and CA signals were modeled as ellipsoids with Z axis = 1.5*X,Y axis. Green – Nup153; magenta – CA; red, CA/Nup153 co-localizing structures.
+
 To validate these results, we depleted CPSF6 and subsequently infected MDM with wild-type HIV-1 or the A77V variant carrying IN.eGFP. In addition to CA immunostaining, we performed immunostaining of the nuclear basket protein Nup153, which binds the CA hexamer overlapping with the CPSF6 binding site and has been implicated in HIV-1 nuclear import (Matreyek et al., 2013). Samples were analyzed by two-color STED microscopy. Depletion of CPSF6 induced clear accumulation of IN.eGFP and CA double-positive structures at the nuclear envelope of cells infected with wild-type HIV-1 (Figure 6A), similar to the phenotype of the A77V variant (Figures 5,6C). The vast majority of these structures co-localized with Nup153 (Figure 6A,C; STED images), confirming arrest of the HIV-1 replication complex directly at the NPC. Interestingly, line profile analysis of individual wild-type HIV-1 (with CPSF6 knock-down; Figure 6B) or A77V subviral particles (Figure 6D) revealed partial co-localization of CA signals with the nuclear basket protein Nup153. The main CA signal localized to the cytoplasmic side of the Nup153 signal with a distance between the peak intensities of approximately 70 nm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/41800/elife-41800-fig6-v2.jpg)
 
 **Figure 6.:** MDM were transduced with AAVs expressing shRNAs targeting CPSF6 (A, B) or non-targeted shRNA (C, D) as described in Materials and Methods. Subsequently, cells were infected with 100 ng CA (MOI 14.5) of HIV-1 NL4-3 WT (IN.eGFP) (A, B) or HIV-1 NL4-3 A77V (IN.eGFP) (C, D). At 60 h p.i., cells were fixed and immunostained against CA (magenta) and Nup153 (green). (A, C) Confocal images of the nucleus of a representative infected cell (upper panels) and super resolved images of boxed regions (lower panels). Super resolved images are shown as an overlay on the right (magenta – CA, green – Nup153). Boxed region in the overlayed images (dashed line) are shown as an enlargement. Arrows indicate CA positive objects partially co-localizing with Nup153. Scale bars: 2 µm (confocal images), 500 nm (STED images) (B, D) Averaged line profiles from (A) or (C) of selected CA positive objects (n = 30, from two independent experiments). Error bars represent SD.
 
-## Association of RTC/PIC with CPSF6 occurs at the NPC
+### Association of RTC/PIC with CPSF6 occurs at the NPC
 
 Signal intensities for CPSF6 were high for nuclear HIV-1 complexes, much lower for complexes adjacent to the nuclear envelope and undetectable for cytoplasmic structures (Figure 4F). This observation would be consistent with initial recruitment of CPSF6 to the subviral structure at the nuclear basket of the NPC (where Nup153 resides) via interaction with the hexameric capsid lattice. To characterize the potential recruitment of CPSF6 to HIV-1 replication complexes at the NPC, we performed two-color STED microscopy of MDM following partial depletion of CPSF6 and infection with wild-type HIV-1 or the A77V variant (carrying IN.eGFP). Fixed cells were immunostained for CPSF6 and Nup153. Wild-type HIV-1 infected MDM without CPSF6 depletion exhibited intranuclear HIV-1 replication complexes positive for IN.eGFP and CPSF6 and clearly distant from the nuclear envelope (Figure 7A). Subviral structures were arrested at the NPC in CPSF6-depleted cells for both wild-type HIV-1 and the A77V variant (Figure 7B,C).
 
@@ -135,27 +187,373 @@ We realize that the width of 60 nm at the wide end of the cone shaped HIV-1 caps
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa fluor conjugated secondary antibodies</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Abberior STAR RED</td>
+      <td>Sigma-Aldrich; Cat# 52283</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG Atto 594</td>
+      <td>Sigma-Aldrich; Cat# 77671</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal HRP anti-rabbit IgG</td>
+      <td>Jackson ImmunoResearch Labs; Cat# 111-035-144</td>
+      <td>RRID:AB_2307391</td>
+      <td>ELISA (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-hCPSF5</td>
+      <td>Sigma-Aldrich; Cat# SAB1404890</td>
+      <td>RRID:AB_10739397</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-hFG repeats (Nuclear Pore Complex)</td>
+      <td>Abcam; Cat# ab24609</td>
+      <td>RRID:AB_448181</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-hLamin A/C</td>
+      <td>Santa Cruz Biotechnology; Cat# sc-7292</td>
+      <td>RRID:AB_627875</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-hLEDGF</td>
+      <td>BD Biosciences; Cat# 611714</td>
+      <td>RRID:AB_399192</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-hNup153</td>
+      <td>Abcam; Cat# ab24700</td>
+      <td>RRID:AB_2154467</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-hCPSF6</td>
+      <td>Atlas Antibodies; Cat# HPA039973</td>
+      <td>RRID:AB_10795242</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-hCPSF7</td>
+      <td>Atlas Antibodies Cat# HPA041094</td>
+      <td>RRID:AB_10794187</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HIV-1 CA</td>
+      <td>In-house</td>
+      <td></td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep polyclonal anti-HIV-1 CA</td>
+      <td>In-house</td>
+      <td></td>
+      <td>IF (1:1200)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLaP4 TNPO3-KD</td>
+      <td>Z Debyser (University of Leuven, Belgium); Thys et al. (2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>TZM-bI indicator cells</td>
+      <td>Wei et al. (2002)</td>
+      <td>RRID: CVCL_B478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human embryonic kidney 293 T cells (HEK293T)</td>
+      <td>Pear et al. (1993)</td>
+      <td>RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Efavirenz (EFV)</td>
+      <td>AIDS Research and Reference Reagent Program, Division AIDS, NIAID</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flavopiridol</td>
+      <td>Sigma-Aldrich; Cat#F3055</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>iQ Supermix</td>
+      <td>BioRad; Cat#1708860</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Maraviroc (MVC)</td>
+      <td>Sigma-Aldrich; Cat#PZ0002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PF-3450074 (PF74)</td>
+      <td>Sigma-Aldrich; Cat#SML0835</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Raltegravir (RAL)</td>
+      <td>AIDS Research and Reference Reagent Program, Division AIDS, NIAID</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 647 Imaging kit</td>
+      <td>Thermo Fisher Scientific; Cat#C10340</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DIG-Nick translation mix</td>
+      <td>Roche; Cat#11745816910</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>InviTrap Spin Universal RNA Mini kit</td>
+      <td>Stratec; Cat#1060100300</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III Reverse transcriptase kit</td>
+      <td>Thermo Fisher Scientific; Cat#18080093</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Plus system</td>
+      <td>Perkin Elmer; Cat#NEL749A001KT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV helper plasmid</td>
+      <td>D Grimm (University of Heidelberg, Germany)</td>
+      <td></td>
+      <td>AAV helper plasmid expressing rep and cap genes for transducing MDM</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CPSF6 triple shRNA</td>
+      <td>This study</td>
+      <td></td>
+      <td>Plasmid expressing three shRNAs targeting CPSF6. For packaging into AAV vector.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NS control AAV</td>
+      <td>K Boerner (University of Heidelberg, Germany); Börner et al. (2010)</td>
+      <td></td>
+      <td>Plasmid expressing non-targeted shRNA. For packaging into AAV vector.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEnv-4059</td>
+      <td>R Swanstrom (University of North Carolina, USA); Schnell et al. (2011)</td>
+      <td></td>
+      <td>Plasmid expressing an R5-tropic HIV-1 Env</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHIVSIREN</td>
+      <td>G Towers (University College London, UK); Rasaiyaah et al. (2013)</td>
+      <td></td>
+      <td>Plasmids expressing shRNAs targeting CPSF6 or non-targeting shRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>D Trono (EPFL, Lausanne, Switzerland)</td>
+      <td>RRID: Addgene_12259</td>
+      <td>Plasmid expressing VSV-G</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL4-3</td>
+      <td>Adachi et al. (1986)</td>
+      <td></td>
+      <td>HIV-1 proviral plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL4-3ΔEnv</td>
+      <td>B Müller (University of Heidelberg, Germany)</td>
+      <td></td>
+      <td>HIV-1 proviral plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL4-3ΔEnv N74D/A77V</td>
+      <td>This study</td>
+      <td></td>
+      <td>HIV-1 proviral plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNLC4-3ΔTat</td>
+      <td>T Müller (University of Heidelberg, Germany)</td>
+      <td></td>
+      <td>HIV-1 proviral plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>D Trono (EPFL, Lausanne, Switzerland)</td>
+      <td>RRID: Addgene_35002</td>
+      <td>Lentiviral packaging vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAE2AE4-5</td>
+      <td>D Grimm (University of Heidelberg, Germany); Matsushita et al. (1998)</td>
+      <td></td>
+      <td>Adenoviral helper plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVpr.IN.eGFP</td>
+      <td>A Cereseto (CIBIO, Mattareo, Italy); Albanese et al. (2008)</td>
+      <td></td>
+      <td>Plasmid expressing Vpr.IN.eGFP fusion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autoquant X3</td>
+      <td>Media Cybernetics</td>
+      <td>RRID:SCR_002465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 8.1</td>
+      <td>BitPlane AG</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imspector</td>
+      <td>Abberior Instruments</td>
+      <td>RRID:SCR_015249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KNIME</td>
+      <td>Konstanz Information Miner</td>
+      <td>RRID:SCR_006164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>Perkin Elmer</td>
+      <td>RRID:SCR_002668</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human embryonic kidney 293 T cells (HEK293T) and TZM-bI indicator cells have been previously described (Pear et al., 1993; Wei et al., 2002).The HeLaP4-derived cell line stably transduced with shRNA targeting TNPO3 (TNPO3-KD) was kindly provided by Z. Debyser (University of Leuven, Belgium) (Thys et al., 2011). Cells were cultured at 37°C and 5% CO2 in Dulbecco´s Modified Eagle Medium (DMEM; Thermo Fisher Scientific, Waltham, USA), supplemented with 10% fetal calf serum (FCS; Biochrom GmbH, Berlin, Germany), 100 U/mL penicillin, and 100 µg/mL streptomycin. For preparation of monocyte-derived macrophages (MDM) human peripheral blood mononuclear cells (PBMC) were isolated from buffy coats of healthy donors by Ficoll density gradient centrifugation. PBMC were seeded in RPMI 1640 medium (Thermo Fisher Scientific) supplemented with 10% heat inactivated FCS and antibiotics for 2 hr at 37°C. Subsequently, non-adherent cells were removed, adherent monocytes were washed, and further cultured in RPMI 1640 containing 10% heat inactivated FCS, antibiotics and 5% human AB serum (Sigma Aldrich, St. Louis, USA) or 50 ng/mL macrophage colony-stimulating factor (M-CSF; Peprotech, Rocky Hill, USA; for experiments performed with AAVs) for 10d until differentiation to macrophages.
 
-## Plasmids
+### Plasmids
 
 The HIV-1 proviral plasmid pNL4-3 has been described (Adachi et al., 1986). Plasmid pNL4-3ΔEnv contains a 2 bp fill-in of an NdeI site in the env ORF resulting in a frameshift and premature stop codon. The A77V and N74D exchanges in the CA-coding region of gag were introduced into pNL4-3 through PCR directed mutagenesis, and transferred into pNL4-3ΔEnv through double digestion with BssHII and AgeI, followed by ligation with the corresponding fragment from pNL4-3-A77V or -N74D. Plasmid pNLC4-3ΔTat contains a 31 bp deletion in the first exon of tat and was kindly provided by Thorsten Müller (University of Heidelberg, Germany). Plasmid pEnv-4059 expressing an R5-tropic Env protein from a primary HIV-1 isolate (Schnell et al., 2011) was kindly provided by R. Swanstrom (University of North Carolina, USA). Plasmid pVpr.IN.eGFP (Albanese et al., 2008) encoding a Vpr.IN.eGFP fusion protein with an HIV-1 protease cleavage site between Vpr and IN.eGFP was kindly provided by A. Cereseto (CIBIO, Mattareo, Italy). The adenoviral helper plasmid pVAE2AE4-5 has been described (Matsushita et al., 1998). The AAV helper plasmid encoding the rep and cap genes was kindly provided by D. Grimm (Heidelberg University, Germany). The vector for expression of triple short hairpin RNA (shRNA) in AAV was also kindly provided by D. Grimm (Heidelberg University, Germany) and will be reported elsewhere. Into this AAV vector, we inserted three CPSF6 targeting sequences (CPSF6-1: 5´-GCGAAGAGTTCAACCAGGAA-3´; CPSF6-2: 5´-GCCAGAAGACCGAGATTACAT-3´; CPSF6-3: 5´-GGTGGACAACAGATGAAGA-3´) under the control of three different promoters or a single non-silencing (5´-TCGGCGCAGTCTAATTATA-3´) shRNA.
 
 The lentiviral vectors pHIVSIREN expressing shRNAs CPSF6-1 (5´-GCCAGAAGACCGAGATTACAT-3´), CPSF6-2 (5´-GCGAAGAGTTCAACCAGGAA-3´) or non-silencing control (5´-TCGGCGCAGTCTAATTATA-3´) were kindly provided by G. Towers (University College London, UK) (Rasaiyaah et al., 2013). The VSV-G-expressing envelope plasmid pMD2.G and the packaging vector psPAX2 were generated in the lab of D. Trono (EPFL, Lausanne, Switzerland) and obtained through AddGene.
 
-## Antisera and reagents
+### Antisera and reagents
 
 Rabbit and sheep polyclonal antisera against HIV-1 CA were raised against purified recombinant proteins. Mouse monoclonal laminA/C antibody (sc-7292) was purchased from Santa Cruz (Heidelberg, Germany). Mouse monoclonal antibodies against Nup153 (QE5, Ab24700) and Nuclear Pore Complex proteins (mAb414) were purchased from Abcam (Cambridge, UK). Mouse monoclonal antibody against LEDGF (611714; recognizing an epitope present in the p52 and the p75 isoform of the protein) was purchased from BD Biosciences (Franklin Lakes, USA). Affinity purified antibodies against CPSF5 (mouse, SAB1404890), CPSF6 (rabbit, HPA039974) and CPSF7 (rabbit, HPA041094) were purchased from Sigma Aldrich. Alexa Fluor labeled secondary antibodies were purchased from Thermo Fisher Scientific. Secondary antibodies labeled with Atto or STAR RED dyes for STED were purchased from Sigma-Aldrich. 10 mM stock solutions of Efavirenz (obtained through the AIDS Research and Reference Reagent Program, Division AIDS, NIAID), PF74 (Sigma Aldrich) or Maraviroc (Sigma Aldrich) were prepared in dimethyl sulfoxide and stored at −20°C. A 10 mM Stock solution of Raltegravir (obtained through the AIDS Research and Reference Reagent Program, Division AIDS, NIAID) was prepared in H2O and stored at −20°C. All chemicals and reagents for transfection and FISH were obtained from standard commercial sources, unless indicated otherwise.
 
-## Virus production and characterization
+### Virus production and characterization
 
 For production of HIV-1 particles and lentiviral vectors, HEK293T cells were transfected using a standard calcium phosphate transfection. For producing viral particles containing IN.eGFP, pNL4-3 was co-transfected with pVpr.IN.eGFP at a molar ratio of 4.5:1. R5-tropic and R5-tropic tat-defective viral particles were produced by co-transfection of pNL4-3ΔEnv (-WT or -A77V) or pNLC4-3ΔTat, pEnv-4059 and pVpr.IN.eGFP at a molar ratio of 4.5:1:1. Lentiviral vectors for CPSF6 knock-down were generated by co-transfection of pHIVSIREN, pMD2.G and psPAX2 at a molar ratio of 2:1.4:1.4. Supernatants containing HIV-1 or lentiviral particles were collected at 36 h p.t., filtered through 0.45 µm nitrocellulose filters and concentrated by ultracentrifugation through a 20% (w/w) sucrose cushion. Subsequently, particles were resuspended in phosphate buffered saline (PBS) solution containing 10% heat inactivated FCS and 10 mM Hepes pH 7.5, and stored in aliquots at −80°C. Virus titer was determined by titration on TZM-bI indicator cells followed by microscopic quantitation of beta-lactamase expressing cells at 48 h p.i.. Titration on this indicator cell line was used as a reference to determine the virus input for imaging and infectivity experiments in macrophages. Particle-associated RT activity was determined by SG-PERT (SYBR Green based Product Enhanced Reverse Transcription assay) (Pizzato et al., 2009). The concentration of CA was measured by an in-house enzyme-linked immunosorbent assay (Wiegers et al., 1998). Briefly, ELISA plates were coated with 50 ng of monoclonal anti-p24 antibody from hybridoma cell line 183 clone H12-5C (obtained through the AIDS Research and Reference Reagent Program, Division AIDS, NIAID). Subsequently, wells were blocked with 10%FCS (Biochrom) in PBS, and samples of interest (previously diluted in PBS/0.1% Tween20) were added. Antigen detection was done by addition of an in-house polyclonal rabbit antiserum against CA, followed by the addition of goat antiserum against rabbit immunoglobulin G conjugated to horseradish peroxidase (Dianova, Hamburg, Germany), and detection of enzymatic activity obtained from absorbance readings after adding the substrate tetramethylbezidine (TMB; Thermo Fisher Scientific). As standard, purified recombinant HIV-1 CA of known concentration was used.
 
 For production of AAV vectors, HEK293T cells were transfected with Turbofect (Thermo Fisher Scientific). Cells were co-transfected with AAV helper plasmid encoding rep and AAV6- or DJP2- cap genes, AAV triple shRNA vector and adenoviral helper plasmid at a molar ratio of 1:1:1. 72 h p.t., cells were collected in PBS and lysed by freeze-thaw cycles in liquid nitrogen and subsequent sonification. Cell debris was removed by centrifugation (16000 x g, 10 min, at room temperature) and supernatant containing the AAV particles was stored in aliquots at −80°C.
 
-## Virus infection, Click-labeling, immunostaining and FISH
+### Virus infection, Click-labeling, immunostaining and FISH
 
 For imaging of RTC/PIC, TNPO3-KD cells and MDM were seeded in 8-well LabTek (#155411, Thermo Fisher Scientific) or in 8-well LabTek II chamber slides (#155409, Thermo Fisher Scientific) for confocal and STED microscopy, respectively. TNPO3-KD cells were seeded in the presence of 6 µM aphidicolin (Sigma Aldrich) and infected on the following day with HIV-1 (IN.eGFP) at a multiplicity of infection (m.o.i.) of 25 in medium containing 10 µM EdU (Thermo Fisher Scientific) and 6 µM aphidicolin. Cells were pre-incubated at 16°C for 30 min and then shifted to 37°C. After 2 hr, medium was removed and replaced by fresh pre-warmed medium containing 10 µM EdU and incubation was continued at 37°C. To stop infection, cells were washed with PBS and fixed with 4% paraformaldehyde (PFA; Electron Microscopy Sciences, Hatfield, USA) for 30 min at room temperature. Subsequently, cells were washed and permeabilized with 0.5% (vol/vol) Triton X-100 for 15 min. Cells were washed and click-labeling was performed for 30 min at room temperature using the Click-iT EdU-Alexa Fluor 647 Imaging Kit (Thermo Fisher Scientific) following manufacturer´s instructions. For immunostaining, cells were blocked for 30 min with 3% bovine serum albumin (BSA) in PBS and incubated with the primary antibody in 0.5% BSA in PBS for 1 hr at room temperature. Cells were washed and incubated with the corresponding secondary antibody for 1 hr at room temperature in 0.5% BSA. For MDM, cells were infected with 100 ng CA of WT or A77V HIV-1 NL4-3 (IN.eGFP) pseudotyped with R5-tropic 4059 Env in the presence of 10 µM EdU. This amount of virus corresponds to an MOI of 14.5, based on the infectious titer determined on TZM-bI indicator cells. Infections with unlabeled virus were performed at an MOI of 3.5 corresponding to ~15 ng CA, unless otherwise indicated. It should be noted that MDM are less efficiently infected than TZM-bl cells, thus yielding lower infection rates, and exhibited strong donor-dependent variability. For infection times longer than 24 hr, Maraviroc (Sigma Aldrich) was added to a final concentration of 5 µM at 24 h p.i. to prevent a second round of infection. For experiments with Efavirenz (EFV) and Raltegravir (Ral), MDM were seeded in the same way and infected with HIV-1 in the presence of 5 µM EFV (Sigma Aldrich) or 5 µM Ral (AIDS Research and Reference Reagent Program, Division AIDS, NIAID). For experiments with flavopiridol, 5 µM flavopiridol (Sigma Aldrich) was added to the medium at 96 h p.i. and cells were incubated for further 12 hr before fixation. Fixation, click-labeling and immunostaining were performed as described above.
 
@@ -163,24 +561,24 @@ Detection of viral DNA with FISH was performed essentially as described (Solovei
 
 For detection of viral RNA by FISH, MDM were seeded in 8-well LabTeks (#155411, Thermo Fisher Scientific) and infected with 50 ng CA (MOI 8, based on titration on TZM-bI indicator cells) of HIV-1 NL4-34059 or HIV-1 NL4-3ΔTat4059. At 96 h p.i. cells were treated with DMSO or 5 µM flavopiridol. 12 hr after addition of the inhibitors, cells were fixed with 3.7% formaldehyde in PBS for 10 min at room temperature, washed and permeabilized with 70% ethanol at 4°C overnight. After permeabilization, cells were washed, and immunostained as described above. After immunostaining, cells were washed three times with 10% formamide in Stellaris RNA FISH wash buffer A (Biosearch Technologies, Novato, USA; Cat# SMF-WA1-60) at room temperature for 5 min, followed by hybridization. For hybridization, probe was diluted to a final concentration of 125 nM in Stellaris RNA FISH Hybridization buffer (Biosearch Tech. Cat# SMF-HB1-10) with 10% formamide, and left incubating overnight at 37°C in humid chamber. After hybridization, cells were washed twice for 2 min with Stellaris RNA FISH wash buffer A with 10% formamide, and subsequently washed three times for 2 min with Stellaris RNA FISH wash Buffer B (Biosearch Tech. Cat#SMF-WB1-20-BS). Stellaris probe for RNA FISH was synthesized by Biocat GmbH (Heidelberg, Germany) using HIV-1 NL4-3 proviral plasmid and labeled with CAL Fluor Red 610 dye.
 
-## CPSF6 knock-down, infectivity assays and time-of-addition experiments
+### CPSF6 knock-down, infectivity assays and time-of-addition experiments
 
 For high throughput analysis of infectivity, MDM (ca. 1 × 104 cells/well) were seeded in 96-well plates (Costar #3606). CPSF6 knock-down was performed using either AAV vectors (for imaging and infectivity experiments) or lentiviral vectors (for infectivity experiments). MDM were transduced once with lentiviral vectors (4d after induction of differentiation) expressing a non-targeted shRNA (NS control) or two different shRNAs against CPSF6 (K/D). A total of 300mU RT (determined by quantitating RT activity) of lentiviral vectors was used for transduction of each well. 24 hr later, medium was replaced, and cells were left standing for another 7d. For AAV transduction, cells were transduced three times (4, 8, 12d after induction of differentiation) with equal amounts of AAV crude lysates expressing three shRNAs against CPSF6 or a non-targeted shRNA. Seven (when using lentiviral vectors) or 12d (when using AAV) after initial transduction, cells were infected in triplicate with 15 ng CA (MOI 3.5, based on titration on TZM-bI indicator cells) of WT or A77V HIV-1 NL4-3 with R5-tropic 4059 Env. To block further entry events and prevent secondary infection, 5 µM Maraviroc (Sigma Aldrich) was added to the medium at 24 h p.i. After 6d, cells were fixed in 4% PFA for 90 min and immunostained with anti-CA (sheep) and anti-CPSF6 (rabbit) antisera, as described above. Additionally, cells were counterstained with Hoechst (Thermo Fisher Scientific). Plates were imaged with a fully automated epifluorescence ScanR screening microscope equipped with the ScanR acquisition software (Olympus Biosystems, Shinjuku, Japan). Images were acquired in the Hoechst, CA- and CPSF6-staining channels using the corresponding excitation and emission filters. The percentage of infected cells was quantified as previously described (Börner et al., 2010). Mock-infected wells were used as a negative control to set the threshold. For infectivity experiments with PF74, cells were infected as described above, and a final concentration of 2.5 µM PF74 (Sigma Aldrich) was added together with the virus. For time-of-addition experiments, MDM were seeded in 96-well plates and infected as described above. 5 µM Efavirenz or DMSO was added to the infection together with the virus or every 24 hr for 3 days. 5 µM Maraviroc (Sigma Aldrich) was also added to the medium at 24 h p.i. Fresh medium with inhibitors was supplied after 3d. 6d after infection, cells were fixed in 4% PFA for 90 min, immunostained with anti-CA (rabbit) antiserum and counterstained with Hoechst (Thermo Fisher Scientific). Percentage of infected cells was quantified as described above.
 
-## RNA extraction and qRT-PCR to detect HIV-1 transcripts
+### RNA extraction and qRT-PCR to detect HIV-1 transcripts
 
 MDM were infected as described above in the presence or absence of 5 µM Raltegravir. 24 h p.i. 5 µM Maraviroc (Sigma Aldrich) was added to the medium. At 72 h p.i. medium was replaced by fresh medium with 5 µM Maraviroc (Sigma Aldrich) and 5 µM Ral, if needed. 96 hr after infection, medium was removed, and cells were washed twice with PBS before lysis. RNA was extracted using InviTrap Spin Universal RNA Mini Kit (Stratec Biomedical, Birkenfeld, Germany) following manufacturer´s instructions. cDNA synthesis was performed with the SuperScript III Reverse Transcriptase kit (Thermo Fischer Scientific) following manufacturer´s instructions, using 100 ng of RNA. cDNA was used as a template for detecting HIV-1 transcripts with TaqMan quantitative PCR. PCR conditions were as follows: 1X iQ Supermix (BioRad, Hercules, USA), 900 nM primers and 200 nM probe. Cycling conditions were: 98°C for 3 min, 44 cycles of 98°C for 10 s and 60°C for 40 s, followed by 60 cycles with a ramp rate of 0.5°C/cycle for 5 s each starting at 65°C. Primers for detection of gag transcripts used were: Forward, 5´ ACATCAAGCAGCCATGCAAAA 3´, Reverse, 5´ TGGATGCAATCTATCCCATTCTG 3´, Probe, 5´-FAM- AAGAGACCATCAATGAGGAA-TAMRA 3´. Primers and probe binding to eukaryotic 18S rRNA (VIC/MGB, Thermo Fisher 4319413E) were used in parallel as endogenous control for normalization.
 
-## Microscopy
+### Microscopy
 
 Multi-channel 3D image series were acquired with a Perkin Elmer Ultra VIEW VoX 3D spinning disk confocal microscope (SDCM) using a 100x oil immersion objective (NA 1.4) (Perkin Elmer), with a z-spacing of 200 nm. Images were recorded in the 405, 488, 561 and 640 nm channels. Images of RNA FISH samples were acquired with a Leica SP8 DLS laser scanning confocal using a 63x oil immersion objective (NA 1.4) (Leica, Wetzlar, Germany), with a z-spacing of 300 nm. Stimulated emission depletion (STED) imaging was performed with a λ = 775 nm STED system (Abberior Instruments GmbH, Göttingen, Germany), using a 100x Olympus UPlanSApo (NA 1.4) oil immersion objective. Images were acquired using the 590 and 640 nm excitation laser lines. Nominal STED laser power was set to 80% of the maximal power of 1250 mW with 20-30µs pixel dwell time and 20 nm pixel size. For 3D STED data 60% of the STED laser power was used for fluorescence depletion in the Z-axis and RESCue illumination scheme was used to minimize bleaching. Sampling frequency was 30 nm in all three axis (xyz). All STED images shown (except 3D STED images) were linearly deconvolved with a Lorentzian function (fwhm 50 nm) using the software Imspector (Abberior Instruments GmbH).
 
-## Image analysis
+### Image analysis
 
 To quantify the signal intensity from objects distributed throughout the entire volume of the cells, the data (Z-image series) were reconstructed in the 3D space using Imaris 8.1 (Bitplane AG, Zürich, Switzerland). Acquired images were first deconvolved by Autoquant X3 (Media Cybernetics, Rockville, USA) using Constrained Maximal Likelihood Estimation (CMLE) algorithm with 10 iterations and SNR = 20. Next, the xyz coordinates of objects in IN.eGFP channel were automatically identified using the ‘spot detection’ module in Imaris. Background was subtracted, and an estimated diameter of 300 nm was used for spot detection. Mean signal intensities from selected spots were measured in the EdU, IN.eGFP, laminA and CPSF6/CA channels.
 
 To determine CPSF6 and CA mean intensities from single cells in infectivity assays, images were processed using the Konstanz Information Miner (KNIME, www.knime.org) and the KNIME image processing plugins (KNIP). A previously described workflow was modified (Grosse et al., 2017). Briefly, cellular objects in the Hoechst, CA and CPSF6 channels were identified by background subtraction, automatic global thresholding and connected component analysis. For each individual cellular object with positive Hoechst signal, the mean signal intensities from CPSF6- and CA-staining (in the nucleus and in the whole cell) were calculated.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analysis was performed using GraphPad Prism software (GraphPad Software, Inc, La Jolla, USA). Statistical significance was only assessed for sample sizes n > 3. Before assessing statistical significance, a Shapiro Wilk test (α = 0.05) was performed to verify normality. Two-tailed non-paired Mann-Whitney test (α = 0.05) was used to check statistical significance of non-parametric data. In analyses of the distribution of IN.eGFP objects, a non-paired two-tailed Z-test (α = 0.05) was performed to assess statistical significance of two proportions.

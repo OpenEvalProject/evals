@@ -52,29 +52,476 @@ The EPHX1 variants identified in the studied patients are localized in the catal
 
 ## Results
 
-## Identification of EPHX1 variants in two unrelated patients
+### Identification of EPHX1 variants in two unrelated patients
 
 To identify novel genetic causes responsible for lipoatrophic diabetes, WES was carried out on a parent–offspring trio. The index case, patient 1, is a 25-year-old woman originating from Mauritania. Her disease phenotype was not explained by variants in genes known to be involved in lipoatrophic diabetes, as assessed by the analysis of a panel of genes used in routine genetic diagnosis (Jéru et al., 2019). The analysis of exome data led to the identification of a heterozygous variant in exon 7 of EPHX1 (Retterer et al., 2016), which was subsequently confirmed by Sanger sequencing: c.997A>C, p.(Thr333Pro) (NM_000120.4) (Figure 1A,B). This variant was found to be de novo after paternity confirmation by genotyping a set of polymorphic markers. Due to the key role of EPHX1 in cellular homeostasis and fatty acid metabolism (Edin et al., 2018), this gene was a good candidate. We then looked for additional individuals carrying a molecular defect in EPHX1. A second patient carrying a different de novo EPHX1 missense variant located in exon 9: c.1288G>C, p.(Gly430Arg) was identified through GeneMatcher (Sobreira et al., 2015; Figure 1A,B). Patient 2 is a 17-year-old woman originating from Western Europe and living in the United States. She also had an insulin-resistant lipoatrophic syndrome. We did not identify any alternative molecular etiology compatible with the disease phenotype in either of the two patients. A detailed list of the other rare de novo, compound heterozygous, and homozygous variants, as well as the reasons for their exclusion is provided in Supplementary file 1 and 2. The presence of chromosomal abnormalities was also previously excluded in the two patients by karyotype and SNP chromosome microarrays. Several additional lines of evidence supported the causal role of the two variants in the disease phenotype. These variants were absent from databases reporting variants from the general population (gnomAD, ExAC, dbSNP, and Exome Variant Server), as well as from ClinVar, a database that aggregates information about genomic variations and their relationship to human diseases. The variants identified herein affected amino acids strongly conserved throughout evolution, even in zebrafish and Xenopus tropicalis (Figure 1—figure supplement 1). The two variants predicted changes in the polarity of the corresponding amino acids, as well as in the charge for p.Gly430Arg. They were predicted pathogenic by all tested algorithms (PolyPhen-2, SIFT, CADD).
 
-## Clinical features in patient 1
+![Figure 1.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genealogical trees and segregation analysis for the two EPHX1 variants identified in this study. Arrows indicate probands. p.Thr333Pro and p.Gly430Arg were absent from both parents of each proband, indicating that they occurred de novo. +, normal allele; M, mutant allele. (B) Schematic of EPHX1 transcript displaying the location of the two variants identified. (C) Characteristics of the patient’s head. Left: Black shadow of the patient’s profile over a grayscale photo. Black arrows point to frontal bossing and retrognathism. The white dotted line indicates the base of the scalp showing high hair line. Top right: Front photo of the patient’s face showing lipoatrophy and retrognathism. Bottom right: Profile radiography of the skull showing teeth misalignments and mandibulo-facial dysostosis. (D) Top: Frontal photo of the patient’s abdomen showing prominent abdomen with umbilical herniation and hirsutism. Bottom: axial computed tomography slice of the abdomen showing hepatomegaly and liver steatosis. (E) Picture of the armpit showing acanthosis nigricans and molluscum pendulum. (F) Picture (left) and radiography (right) of the left-hand showing arachnodactyly with tapered fingers and thickening of proximal interphalangeal joints. (G) Front picture of the legs showing distal lipoatrophy.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Partial protein alignment of human EPHX1 (GenBank accession NP_001129490.1) with corresponding sequences in other species: macaque, NP_001245016.1; cat, XP_011289115.1; mouse, NP_034275.1; zebrafish, NP_957362.1; Xenopus, NP_001121449.1. Residues Thr333 and Arg430 are indicated by a star. Black shading indicates identical residues, and gray shading indicates semi-conserved residues.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dual-energy x-ray absorptiometry (DXA)-scan showing the bone mineral content (blue), lean tissues (red), and a major lack of fat (yellow). (B) Comparison of whole body measures of fat percentage in patient 1 to reference values from the National Health and Nutrition Examination Survey (NHANES), which partitioned dataset by gender and ethnicity (Kelly et al., 2009). The position of patient 1 (age: 25 years; total body % fat: 15.8; Z-score: −2.8) is indicated by a red cross. (C) Total and segmental body composition. Comparison to a normal young adult population is expressed as T-score. Comparison to an age-matched normal population is expressed as Z-score. BMC: bone mineral content. (D) Adipose indices.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) DXA-scan showing the bone mineral content (blue), lean tissues (red), and a major lack of fat (yellow). (B) Comparison of whole body measures of fat percentage in patient 2 to reference values from the National Health and Nutrition Examination Survey (NHANES), which partitioned dataset by gender and ethnicity (Kelly et al., 2009). The position of patient 2 (age: 17 years; total body % fat: 12.4) is indicated by a red cross. (C) Total and segmental body composition. BMC: bone mineral content. YN: young normal; AM: age matched. (D) Adipose indices.
+
+### Clinical features in patient 1
 
 This patient (woman) was born at term after a normal pregnancy without intra-uterine growth retardation. The anthropometric parameters at birth were normal with a height of 49 cm and a weight of 2.8 kg. She was first referred for dysmorphic features including microcephaly with an occipito-frontal circumference (OFC) of 33 cm at birth (−1.5 SD), which remained present in adulthood with an OFC of 51 cm (−2.5 SD) at the age of 18 years. She also presented with a triangular-shaped face, prominent forehead, retrognathism, irregular and high hair line, high-arched palate, mandibulo-facial dysostosis including malar hypoplasia and retrognathism, teeth misalignments, arachnodactyly, camptodactyly, joint stiffness, and clitoromegaly (Figure 1C,F and Table 1). Patient 1 also displayed a progressive lipodystrophic phenotype with severe lipoatrophy of the face and limbs (Figure 1C,G). This lipoatrophic phenotype was further confirmed by dual X-ray absorptiometry (DXA) with a total fat mass of 15.8%, whereas the mean normal age-matched value is 31.4 ± 8.5% (Imboden et al., 2017), corresponding to a Z-score of −2.8. The study of segmental body composition revealed that the loss of adipose tissue was evenly distributed throughout the body (Figure 1—figure supplement 2). Her body mass index (BMI) was 20.2 kg/m2 at the age of 25 years. The serum leptin levels, which are strongly correlated with total body fat mass, were very low in patient 1 (4 ng/mL) and similar to those usually reported in partial lipodystrophy (Haque et al., 2002), further confirming the lipoatrophic phenotype. Patient 1 was diagnosed with severe insulin-resistant diabetes at the age of 12 years, with hyperglycemia (44 mmol/L), and highly elevated HbA1c (18.9%). Insulin resistance was characterized by acanthosis nigricans in the neck, axilla, and back (Figure 1E), as well as by the very high insulin requirements (15 IU/kg/day) and by the low levels of total serum adiponectin (0.5 mg/L – normal range: 3.6–9.6 mg/L). Mild hypertriglyceridemia was observed (2.66 mmol/L), with serum cholesterol levels around the lower limits. She had a major hepatomegaly (Figure 1D) and elevated levels of aspartate aminotransferase (AST – 120 IU/L), alanine aminotransferase (ALT – 148 IU/L), alkaline phosphatase (ALP – 170 IU/L), and gamma glutamyl transpeptidase (GGT – 320 IU/L) (Table 2). Liver computed tomography and magnetic resonance imaging (MRI) revealed liver steatosis with focal accumulation of fat depots, especially in the posterior segment (15–27%) (Figure 1D). Non-invasive FibroTest and Acti-test scores (Munteanu et al., 2008) were in favor of low-grade liver fibrosis with moderate necrosis and/or inflammation. Although pubertal development was normal, oligomenorrhea occurred rapidly and progressed over the last year to complete amenorrhea, although FSH and LH values were normal. She progressively developed hyperandrogenism signs with severe generalized hirsutism. Total serum testosterone levels were first noticed to be moderately increased at the age of 22 years (2.2 nmol/L; N: 0.3–1.5 nmol/L), with deterioration over time. At the age of 25 years, this patient presented major steroidogenesis abnormalities with especially highly elevated levels of dihydrotestosterone (2.3 nmol/L; N: 0.06–0.3 nmol/L) and testosterone (16.9 nmol/L; N: 0.3–1.5 nmol/L). Serum estradiol levels were within the normal range (121 pmol/L) in this woman with amenorrhea, contrasting with the high levels of androgens. MRI showed normal adrenal glands. Adrenal steroid profiling revealed normal levels of cortisone, cortisol, 21-desoxycortisol, 11-desoxycortisol, aldosterone, corticosterone, 21-desoxycorticosterone, 11-desoxycorticosterone, and ACTH. MRI and pelvic ultrasound did not reveal any ovarian or uterine abnormalities. Neurologically, patient 1 had a delay in language acquisition and moderate intellectual disability. An axonal neuropathy, associated with a decrease in tendon reflexes and bilateral pes cavus, was diagnosed at the age of 17 years and further confirmed by an electromyogram. Bilateral sensorineural hearing loss was diagnosed at the age of 10 years, leading to the use of hearing aids. Her parents were clinically unaffected.
 
-## Clinical features in patient 2
+**Table 1.**
+ Clinical and biological features in patients with EPHX1 de novo variants.Unless otherwise specified, information corresponds to that collected during the last consultation. ALP: alkaline phosphatase; ALT: alanine aminotransferase; AST: aspartate aminotransferase; DXA: dual X-ray absorptiometry; EEG: electroencephalogram; GGT: gamma glutamyl transpeptidase; MRI: magnetic resonance imaging; Na: not available; N: normal value.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Patient 1</th>
+      <th>Patient 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General characteristics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Origin</td>
+      <td>Sub-Saharan Africa</td>
+      <td>Western Europe</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>25</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>Female</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Height (m)</td>
+      <td>1.62</td>
+      <td>1.63</td>
+    </tr>
+    <tr>
+      <td>Weight (kg)</td>
+      <td>53</td>
+      <td>45.2</td>
+    </tr>
+    <tr>
+      <td>Body mass index (kg/m2)</td>
+      <td>20.2</td>
+      <td>17.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Birth</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>At term</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Intrauterine growth retardation</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dysmorphic features</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microcephaly</td>
+      <td>−1.5 SD at birth −2.5 at 18 years</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Triangular-shaped face</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Irregular and high hair line</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Frontal bossing</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Mid face hypoplasia</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Retrognathism</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Mandibulo-facial dysostosis</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Teeth misalignments</td>
+      <td>Yes</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td>Arachnodactyly</td>
+      <td>Yes</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Metabolic manifestations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipoatrophy</td>
+      <td>Face, upper, and lower limbs</td>
+      <td>Face</td>
+    </tr>
+    <tr>
+      <td>Total fat mass evaluated by DXA (%)</td>
+      <td>15.8% Z-score: −2.8</td>
+      <td>12.4% Z-score: −3.8</td>
+    </tr>
+    <tr>
+      <td>Serum leptin levels (N &lt; 28 for BMI &lt; 25 kg/m2)</td>
+      <td>4 ng/mL</td>
+      <td>3 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Serum adiponectin levels (N: 3.6–9.6 mg/L)</td>
+      <td>0.5 mg/L</td>
+      <td>0.3 mg/L</td>
+    </tr>
+    <tr>
+      <td>Insulin resistance</td>
+      <td>Yes, Acanthosis nigricans (back, armpits, neck) Insulin requirement: up to 15 IU/kg/day before metreleptin therapy</td>
+      <td>Yes, fasting insulin: 284 pmol/L (N &lt; 70 pmol/L)</td>
+    </tr>
+    <tr>
+      <td>Diabetes (Glycemia - N &lt; 7 mmol/L)</td>
+      <td>Since the age of 12 Fasting glycemia: 44 mmol/L at diagnosis</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Liver manifestations</td>
+      <td>Hepatomegaly, steatosis, fibrosis, liver inflammation, elevated levels of AST, ALT, ALP, and GGT</td>
+      <td>Fat infiltrate, elevated levels of AST, ALT, and GGT</td>
+    </tr>
+    <tr>
+      <td>Hypertriglyceridemia (mmol/L) (TG – N &lt; 1.7 mmol/L)</td>
+      <td>Yes, TG: 2.66 mmol/L</td>
+      <td>Yes, TG: 21.9 mmol/L</td>
+    </tr>
+    <tr>
+      <td>Gynecological features</td>
+      <td>Clitoromegaly during childhood, oligomenorrhea</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Hyperandrogenism (Testosterone – N: 0.3–1.5 nmol/L)</td>
+      <td>Generalized hirsutism, steroidogenesis alterations including high testosterone levels (16.9 mmol/L)</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td>Spine bone densitometry</td>
+      <td>T-score: −2.5 SD Z-score: −2.5 SD</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neurological signs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bilateral sensorineural hearing loss</td>
+      <td>Since the age of 6 years and requiring hearing aids</td>
+      <td>Since birth and requiring cochlear implants</td>
+    </tr>
+    <tr>
+      <td>Developmental delay</td>
+      <td>Delay in language onset, moderate intellectual disability</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Brain MRI/EEG</td>
+      <td>Normal</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>Axonal neuropathy</td>
+      <td>Since the age of 17 years Decrease in osteo-tendinous reflexes (achilles, lower limbs) EMG abnormalities</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Pes cavus</td>
+      <td>Yes</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cardiac and musculoskeletal signs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cardiovascular symptoms</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Muscular hypertrophy</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Joint stiffness</td>
+      <td>Yes (hands, feet)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other symptoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ocular signs</td>
+      <td>Bilateral cataract, Peri-corneal colored ring, Diabetic retinopathy</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>T-cell lymphocytosis (Lymphocytes – N: 1–4.8 G/L)</td>
+      <td>Yes, 11.4 G/L CD3+, CD8+, cD57+</td>
+      <td>Na</td>
+    </tr>
+    <tr>
+      <td>Hyperkeratosis</td>
+      <td>Yes (hands, feet)</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Evolution of metabolic markers in patient 1 over a period of 6 months of metreleptin treatment.For data before treatment, values are given as the ranges observed over the last past 3 years. AST: aspartate aminotransferase, ALT: alanine aminotransferase, ALP: alkaline phosphatase, GGT: gamma glutamyl transpeptidase.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Before metreleptin</th>
+      <th>After 3 month metreleptin therapy (5 mg/day)</th>
+      <th>After 6 month metreleptin therapy (7.5 mg/day)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anthropometric markers</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td>53</td>
+      <td>51</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>20.2</td>
+      <td>19.4</td>
+      <td>18.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glucose homeostasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HbA1c (%) (N: 4–6%)</td>
+      <td>11.6–16.5</td>
+      <td>7.9</td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liver assessment</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AST (IU/L) N: 17–27 IU/L</td>
+      <td>83–120</td>
+      <td>57</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>ALT (IU/L) N: 11–26 IU/L</td>
+      <td>81–148</td>
+      <td>50</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>ALP (IU/L) N: 35–105 IU/L</td>
+      <td>100–110</td>
+      <td>92</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>GGT (IU/L) N: 8–36 IU/L</td>
+      <td>170–320</td>
+      <td>58</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>Steatosis (SteatoTest)</td>
+      <td>Low-grade (S1)</td>
+      <td>Not detectable (S0)</td>
+      <td>Low grade (S1)</td>
+    </tr>
+    <tr>
+      <td>Fibrosis (FibroTest)</td>
+      <td>Intermediate grade (F1–F2)</td>
+      <td>Not detectable (F0)</td>
+      <td>Not detectable (F0)</td>
+    </tr>
+    <tr>
+      <td>Necrotic and inflammatory activity (ActiTest)</td>
+      <td>Intermediate grade (A1–A2)</td>
+      <td>very low grade (A0–A1)</td>
+      <td>Low grade (A1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipid profile</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mmol/L) (N: 0.4–1.7 mmol/L)</td>
+      <td>1.3–2.7</td>
+      <td>2.0</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insulin requirement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Human insulin (daily doses – IU/kg)</td>
+      <td>2.9</td>
+      <td>2</td>
+      <td>1.65</td>
+    </tr>
+  </tbody>
+</table>
+
+### Clinical features in patient 2
 
 This patient (woman) was born at term, after a normal pregnancy, with a height of 50 cm and a weight of 3.2 kg. She presented similar dysmorphic features, as compared with patient 1, including a triangular-shaped face, irregular and high hair line, frontal bossing with mid-face hypoplasia, and mandibulo-facial dysostosis (Table 1). Lipoatrophy was first noted in the face and the lipoatrophic phenotype was further confirmed by DXA with a total fat mass of 12.4%, a value within the first percentile as compared to age-matched normal individuals. The study of segmental body composition revealed that the loss of adipose tissue affected the whole body and was more pronounced in upper and lower limbs (Figure 1—figure supplement 3). Her BMI was low (17.0 kg/m2). She had insulin resistance, as assessed by very high fasting insulin levels (284 pmol/L), which increased over time. Her fasting glucose values remained in the normal range, and she was not diabetic at last investigation. Measurement of serum levels of leptin (3 ng/mL) and adiponectin (0.3 mg/L) further confirmed the lipoatrophic and insulin-resistant phenotype. She had severe hypertriglyceridemia (21.9 mmol/L) associated with low HDL-cholesterol levels (0.52 mmol/L). Liver enzymes were elevated: AST (71 IU/L), ALT (94 IU/L), and ALP (145 IU/L). A liver ultrasound demonstrated fatty infiltrate. She also had profound sensorineural hearing loss since birth requiring cochlear implants. Brain computerized tomography and electroencephalogram were normal. The parents of patient 2 were clinically unaffected. Altogether, these data demonstrate that the two affected individuals have a complex disease phenotype and share a number of clinical features including dysmorphic features, lipoatrophy, insulin resistance, hypertriglyceridemia, liver dysfunction, and bilateral sensorineural hearing loss.
 
-## Structural characterization of EPHX1 variants
+### Structural characterization of EPHX1 variants
 
 EPHX1 encodes a protein of 455 residues. The enzyme is retained in microsomal membranes of the ER by a single transmembrane segment located at the N-terminus and comprising around 20 amino acids (Friedberg et al., 1994). The C-terminal part of the protein, containing the two variants identified, is exposed at the cytosolic membrane surface and constitutes the catalytic domain (Lewis et al., 2005; Figure 2A). The EPHX1 mechanism of hydrolysis involves two chemical steps. A fast-nucleophilic attack leads to the formation of an ester intermediate, a covalent bond linking the substrate to the enzyme. Thereafter, hydrolysis of this complex to the final diol product is mediated by a molecule of water activated by a charge relay system (Oesch et al., 2000; Figure 2A). The EPHX1 active site is composed of a so-called catalytic triad consisting of Asp226, Glu404, and His431. In addition, two tyrosine residues (Tyr299 and Tyr374) provide an essential support by polarizing the epoxide (Oesch et al., 2000; Bell and Kasper, 1993; Arand et al., 1999). The localization of the mutated amino acids within the three-dimensional (3D) protein structure strongly supported their pathogenic effect. Although the exact structure of EPHX1 is still not available, the quaternary structure of a closely homologous enzyme was determined from the fungus Aspergillus niger (Zou et al., 2000). Glycine 430 mutated in patient 2 is located beside the crucial His431, which is directly implicated in the water activation and hydrolytic step of the catalytic process (Figure 2B). We used a 3D structure model from the SWISS-MODEL repository to determine the location of Thr333 (Waterhouse et al., 2018). On the 3D structure, this residue appears in close vicinity to Gly430, as well as to the three critical residues of the catalytic site (Asp226, Glu404, His431) (Figure 2C). The location of the two de novo EPHX1 variants suggests that they could affect the enzyme activity and argues for their pathogenic effect.
 
-## EPHX1 variants dramatically alter the enzyme hydrolysis function
+![Figure 2.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the EPHX1 protein, showing its sub-cellular localization and function. Epoxide hydrolases open three membered cyclic ethers, known as epoxides, by the addition of water to yield 1,2-diols. The location of the amino acids affected by the missense variants identified in this study are indicated by stars. (B) Schematic representation of the variants used in functional tests. Residues of the catalytic triad are shown above the protein structure. Variants used in functional assays are depicted below. Variants identified in patients are displayed in red. (C) Model of the 3D structure of EPHX1, based on the quaternary structure of the closely homologous EH enzyme from the Aspergillus niger fungus (Zou et al., 2000). On the left panel, the location of the two variants identified in patients are indicated by a star. On the right panel, the two variants found in patients are depicted in red and the three key residues of the catalytic site in blue. (D) c-SO (cis-stilbene oxide) hydrolysis assay performed in HEK 293 cells transiently expressing Flag-tagged wild-type (WT) and mutated forms of human EPHX1, as indicated. Results are expressed as means ± SEM of three independent biological experiments, each of them being performed in duplicates. # indicates that hydrolysis activity of EPHX1 carrying the p.Thr333Pro and p.Gly430Arg de novo variants was abolished, compared with WT and other variants. (E) Western blot analysis aimed at controlling the expression of WT and mutant forms of EPHX1 in protein extracts used in c-SO hydrolysis assays presented in (D), using antibodies as indicated. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of two independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A panel of epoxy fatty acids (EpFAs) dervived from arachidonic acid, linoleic acid, eicosapentaenoic acid, and docosahexaenoic acid was investigated, together with their corresponding diols. Nine measurements were performed in plasma samples from patient 1 collected on different days and 11 sex- and age-matched control women with normal BMI. Ratios between EpFA products and diol substrates were calculated showing increased levels of 7,8 epoxydocosapentaenoic acid (EpDPE) and decreased levels of 7,8 dihydroxydocosapentaenoic acid (7,8 DIHDPE) in patient 1, as compared to controls. Results are expressed as means ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** HEK 293 cells co-expressing WT EPHX1 (hEPHX1WT) and hEPHX1Thr333Pro (A), or hEPHX1Gly430Arg (B), or hEPHX1Glu404Asp (C) in varying ratios did not reveal a dominant negative effect of pathogenic variants. WT and mutant EPHX1 isoforms were also expressed alone, the total amount of transfected DNA being kept constant using an empty vector. Results are expressed as means ± SEM of four independent biological experiments.
+
+### EPHX1 variants dramatically alter the enzyme hydrolysis function
 
 To investigate the functional consequences of the identified EPHX1 variants, we first analyzed their effect on the capacity of EPHX1 to hydrolyze cis-stilbene oxide ([3H]-cSO), one of its well-known substrates (Nithipatikom et al., 2014; Morisseau and Hammock, 2007). Overexpression studies were performed in human epithelial kidney (HEK) 293 cells, since they are of human origin, easily transfectable, and display low endogenous levels of EPHX1. HEK 293 were transfected with plasmids encoding wild-type (WT) and mutated forms of human EPHX1 with a C-terminal Flag tag: hEPHX1WT, hEPHX1Thr333Pro, and hEPHX1Gly430Arg (Figure 2D). c-SO hydrolysis in lysates of HEK 293 cells overexpressing hEPHX1WT was high, as compared to untransfected cells in which it was undetectable. The two variants identified in patients, p.Thr333Pro and p.Gly430Arg, led to a near-complete absence of this enzyme activity (Figure 2D,E). We then analyzed the effect of two SNPs frequent in the general population, p.Tyr113His and p.His139Arg, whose role was debated in association studies (El-Sherbeni and El-Kadi, 2014; Hassett et al., 1994; Figure 2B). Neither overexpression of hEPHX1Tyr113His nor that of hEPHX1His139Arg led to reduced c-SO hydrolysis in HEK 293 lysates as compared to hEPHX1WT (Figure 2D,E). We also investigated the effect of a variant affecting one of the catalytic triad residues, p.Glu404Asp, previously proposed to result in an increased enzyme activity (Arand et al., 1999; Marowsky et al., 2016; Figure 2B). This variant did not significantly modify the hydrolysis of c-SO compared to hEPHX1WT (Figure 2D,E). Immunoblot analysis against the Flag epitope was used to control the protein level of WT and mutated EPHX1 isoforms. Although the protein expression level was slightly diminished for the p.Gly430Arg variant, there was no significant difference in the expression of the WT and other mutated isoforms (Figure 2E). Collectively, these data showed that the p.Thr333Pro and p.Gly430Arg variants strongly impair EPHX1 hydrolysis function by altering its catalytic triad domain (Figure 2C).
 
 To evaluate the impact of the loss of enzyme activity in vivo, we measured by liquid chromatography (LC) coupled with tandem mass spectrometry (MS/MS) circulating levels of a panel of EpFAs and corresponding diols in plasma samples of patient 1. EPHX1 was previously shown to catalyze the hydrolysis of several EpFAs, also called oxylipins (Edin et al., 2018; Snider et al., 2007; Marowsky et al., 2017; Blum et al., 2019). These profiles, which result from the combined action of several EHs, were compared to the patterns determined in eleven sex- and age-matched control women with normal BMI. An accumulation of 7,8 epoxydocosapentaenoic acid, and a decrease of the corresponding diol (7,8 dihydroxydocosapentaenoic acid), was observed (Figure 2—figure supplement 1). A recent study shows that mEH plays a significant role in the metabolism of this EpFA (Morisseau et al., 2021). Since oxylipin profiling is an emerging field, whose biological interpretation remains difficult, further experiments will be required to confirm this observation in additional patients and/or different cellular models.
 
-## EPHX1 variants induce the enzyme aggregation within the endoplasmic reticulum
+### EPHX1 variants induce the enzyme aggregation within the endoplasmic reticulum
 
 As mentioned previously, EPHX1 is mainly localized in the microsomal fraction of the ER (Coller et al., 2001). We performed immunofluorescence staining in HEK 293 cells transiently expressing the WT and mutated forms of EPHX1 to evaluate whether missense variants alter its sub-cellular localization. Co-staining with calnexin, which is a marker of ER, confirmed that hEPHX1WT is located in the ER, as well as all mutated EPHX1 isoforms carrying the five previously mentioned missense variants (Figure 3A). However, the EPHX1 isoforms carrying the two de novo variants identified in patients (p.Thr333Pro and p.Gly430Arg) were also found to form higher-order complexes or clumps within the ER, as compared to WT hEPHX1 and other mutated isoforms (Figure 3A). To ensure that the Flag tag did not alter EPHX1 sub-cellular localization, a new set of constructs lacking the Flag tag was generated. Of note, the two de novo variants still led to EPHX1 aggregation within the ER when the Flag tag was removed (Figure 3B). The presence of these oligomers was further confirmed by western blot analysis since both hEPHX1Thr333Pro and hEPHX1Gly430Asp proteins were revealed as two bands, one corresponding to the protein monomer around 55 kDa, and another to an oligomer around 150 kDa (Figure 3C). When the cell lysates were enriched in EPHX1 by immunoprecipitation with an anti-Flag antibody, western blot analysis using an anti-hEPHX1 antibody revealed an increase of these higher-order complexes in the presence of the two p.Thr333Pro and p.Gly430Arg variants (Figure 3C). All these data demonstrate that the p.Thr333Pro and p.Gly430Arg variants confer an aberrant conformation to EPHX1 leading to its aggregation. This likely contributes to abolish the enzyme catalytic activity through a dominant negative mechanism.
 
@@ -82,27 +529,63 @@ As mentioned previously, EPHX1 is mainly localized in the microsomal fraction of
 
 **Figure 3.:** (A) HEK 293 cells transiently expressing Flag-tagged wild-type (WT) and mutated isoforms of human EPHX1 were grown on coverslips, fixed, permeabilized, and stained with an anti-Flag antibody followed by an anti-Calnexin antibody. They were then incubated with Alexa Fluor 594- and 488-conjugated secondary antibodies and visualized by confocal microscopy. Nuclei were counterstained with DAPI (blue). Red arrows point to EPHX1 higher-order complexes. Representative pictures of three independent experiments are presented. Scale bar is 10 μm. (B) Immunofluorescence staining of HEK 293 cells transiently expressing WT and mutated isoforms of human EPHX1 using an anti-EPHX1 antibody and visualized using an Alexa Fluor 488-conjugated goat anti-rabbit secondary antibody. Nuclei were counterstained with DAPI (blue). Representative pictures of two independent experiments are presented. Scale bar is 10 μm. (C) HEK 293 cells were transiently transfected with Flag-tagged WT and mutated isoforms of human EPHX1. Whole-cell extracts were prepared 24 hr later, immunoprecipitated with an anti-Flag antibody and analyzed by western blotting using an anti-EPHX1 antibody. The formation of EPHX1 higher-order complexes in the presence of the p.Thr333Pro and p.Gly430Arg variants is shown by red arrows. The asterisk indicates a non-specific band present only in direct immunoblotting using anti-EPHX1 antibody. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments.
 
-## Ephx1 knockout in pre-adipocytes abolishes adipocyte differentiation and decreases insulin response
+### Ephx1 knockout in pre-adipocytes abolishes adipocyte differentiation and decreases insulin response
 
 We then sought to assess the effect of the loss of EPHX1 activity in the tissues most affected by the disease. The two patients have manifestations in adipose tissue, central nervous system, and liver. Recent studies have investigated the function of EPHX1 in liver and brain (Marowsky et al., 2017; Marowsky et al., 2016), but there is little information on the role of EPHX1 in adipose tissue. To investigate the role of EPHX1 in adipocytes, a CRISPR/Cas9-mediated knockout (KO) approach was developed (Figure 4—figure supplements 1 and 2). A custom-designed single-guide RNA (gRNA)/Cas9 expression vector targeting the sixth exon of Ephx1 was used. The murine 3T3-L1 pre-adipocytes were chosen as a cellular model due to their ability to differentiate into mature adipocytes after stimulation in vitro (Figure 4A). 3T3-L1 cells transfected with a Cas9/scramble gRNA plasmid were used as a control (CTL). KO efficiency was further confirmed by western blot analysis. A major loss of Ephx1 expression, which remained stable over time during adipocyte differentiation, was indeed observed (Figure 4B). Consistently, hydrolysis of [3H]-cSO was evaluated in cell lysates and revealed a significant loss of enzyme activity in 3T3-L1 KO cells, as compared to control cells (Figure 4—figure supplement 3). Following validation of the KO model, the efficiency of adipocyte differentiation was evaluated by progressive lipid accumulation, as revealed both by the appearance of refractive droplets in optical microscopy and by an increase in Oil Red O staining, which is a marker of intracellular lipids (Figure 4A,C). WT and control 3T3-L1 pre-adipocytes differentiated into adipocytes within 12 days and displayed strong accumulation of lipid droplets in the cytoplasm (Figure 4C,D). In contrast, Ephx1 KO led to strong and significant decrease in lipid droplet formation (p< 0.0001) (Figure 4C,D). The expression study of adipocyte markers constitutes another way to evaluate adipocyte differentiation. As compared to WT and control cells submitted to in vitro adipocyte differentiation, Ephx1 KO cells displayed a significantly reduced expression of adipogenic markers, including peroxisome proliferator-activated receptor gamma (PPARγ), CCAAT/enhancer-binding protein alpha (C/EBPα), SREBP-1c, as well as reduced expression of mature adipocyte markers, such as fatty acid synthase (FAS), and adiponectin (Figure 4E). We next investigated the effect of the deletion of Ephx1 on insulin sensitivity. In WT and control 3T3-L1 adipocytes stimulated with insulin, western blot analysis revealed a strong increase in the phosphorylation of several signaling intermediates from the mitotic and metabolic pathways including insulin receptor β subunit (IRβ), insulin receptor substrate-1 (IRS1), AKT, and extracellular-regulated kinase (ERK) (Figure 4F). In contrast, the Ephx1 KO cells were resistant to insulin, both in pre-adipocytes and in differentiated cells, as shown by the lack or strong decrease in the phosphorylation of these intermediates upon insulin stimulation (Figure 4F, Figure 4—figure supplement 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-v1.jpg)
+
+**Figure 4.:** Data were obtained in 3T3-L1 pre-adipocytes from ATCC, 3T3-L1 cells with a CRISPR-Cas9-mediated Ephx1-knockout (KO), and 3T3-L1 cells transfected with a Cas9/scramble gRNA plasmid corresponding to control (CTL) cells. (A) Timeline representation of the 3T3-L1 pre-adipocyte differentiation process using a hormonal cocktail. Dexa: dexamethasone; IBMX: 3-isobutyl-1-methylxanthine; D0–D12: Day 0 to Day 12. (B) Validation of Ephx1 KO in 3T3-L1 pre-adipocytes and study of its expression during adipocyte differentiation. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments. (C) Adipocyte differentiation assessed by Oil Red O lipid staining. 3T3-L1 pre-adipocytes were studied during adipocyte differentiation for 12 days. First and third lines: Pictures of dishes stained by Oil Red O. Images are representative of three independent experiments. Second and fourth lines: representative images of fluorescence microscopy after staining of intracellular lipids (Oil Red O, red) and nuclei (DAPI, blue). Images are representative of five independent experiments. (D) Quantification of Oil Red O fluorescence normalized to DNA content (DAPI). Results are expressed as means ± SEM of five independent experiments. ****p<0.0001. p-values were determined by analysis of variance (ANOVA) with Kruskal–Wallis post hoc multiple comparison test. (E) Protein expression of adipocyte markers obtained by western blotting during in vitro adipocyte differentiation of 3T3-L1 pre-adipocytes. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments. PPARγ: peroxisome proliferator-activated receptor gamma; C/EBPα: CCAAT/enhancer-binding protein alpha; SREBP-1c: sterol regulatory element-binding protein-1c; FAS: fatty acid synthase. (F) Activation of insulin signaling in 3T3-L1 pre-adipocytes after 10 days of adipocyte differentiation. The 3T3-L1 cells from ATCC, CTL, and Ephx1-KO cells were deprived of serum for 6 hr, stimulated with 20 nM insulin for 5 min or left untreated, and subjected to immunoblotting with antibodies against total and phospho-insulin receptor β-subunit (IRβ), insulin receptor substrate-1 (IRS1), AKT, and extracellular-regulated kinase (ERK)1/2. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gate based of light scattering forward area and side area was first established on all particles detected graph. (B–C) Two sequential doublet exclusion gating were performed on 3T3-L1 gate. (D–E) Two representative graphs of GFP+ cells. The sorting was performed on GFP+ gate (3T3-L1/doublet exclusion) of the forward area and 488-526/52 height-Log and frequencies of GFP+ cells are depicted.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Gate based of light scattering forward area and side area was first established on all particles detected graph. (B–C) Two sequential doublet exclusion gating were performed on 3T3-L1 gate. (D–E) Two representative graphs of GFP+ cells. The sorting was performed on GFP+ gate (3T3-L1/doublet exclusion) of the forward area and 488-526/52 height-Log and frequencies of GFP+ cells are depicted.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** 3T3-L1: WT pre-adipocytes; CTL: 3T3-L1 transfected with Cas9/scramble gRNA; EPHX1-KO: 3T3-L1 transfected with a Cas9/gRNA targeting Ephx1 exon 6. Results are expressed as means ± SEM of three independent biological experiments.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The 3T3-L1 cells from ATCC, CTL, and Ephx1-KO cells were subjected to immunoblotting with antibodies against total and phospho-insulin receptor β-subunit (IRβ), insulin receptor substrate-1 (IRS1), AKT, and extracellular-regulated kinase (ERK)1/2. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Validation of the CRISPR-Cas9 KO by western blot analysis. Numbers on the left correspond to molecular weight markers (kDa). Western blot images are representative of three independent experiments. (B) Effect of Ephx1 KO on adipocyte differentiation assessed by Oil Red O lipid staining. 3T3-L1 pre-adipocytes were studied during adipocyte differentiation for 12 days. First line: Pictures of dishes stained by Oil Red O. Images are representative of three independent experiments. Second line: representative images of fluorescence microscopy after staining of intracellular lipids (Oil Red O, red) and nuclei (DAPI, blue). Images are representative of three independent experiments.
+
 To exclude the possibility that undesired off-target mutations were responsible for the effects observed in KO cells, we used another gRNA, which targets Ephx1 exon 5. As assessed by western blot analysis, we could knock-down Ephx1 as efficiently as with the initial gRNA (Figure 4—figure supplement 5). As revealed by Oil Red O staining, this new KO cellular model had a similar defect in adipocyte differentiation as the first KO cell line used throughout this study (Figure 4—figure supplement 5). Taken together, these results show that Ephx1 deficiency alters adipogenesis and inhibits insulin signaling, consistent with the lipoatrophic and insulin-resistant phenotype.
 
-## Ephx1 knockout in pre-adipocytes promotes oxidative stress and senescence
+### Ephx1 knockout in pre-adipocytes promotes oxidative stress and senescence
 
 A previous study has shown that EPHX1 might protect cells from oxidative stress (Cheong et al., 2009). In addition, increased cellular senescence has been functionally linked to fat-related metabolic dysfunction (Tchkonia et al., 2010) and has been observed in a few lipodystrophic syndromes (Bidault et al., 2013; Fiorillo et al., 2018). Cellular aging has also been associated with an increased production of reactive oxygen species (ROS) (Davalli et al., 2016). Consequently, we wondered if Ephx1 deficiency might promote ROS production and senescence. To test this hypothesis, oxidative stress was first evaluated. Ephx1 KO cells displayed higher levels of ROS in cell lysates, compared to either WT or control 3T3-L1 cells (p<0.0001) (Figure 5A). The proliferative capacity and biochemical markers of cellular senescence was then evaluated in edited 3T3-L1 pre-adipocytes. Bromodeoxyuridine (BrdU) incorporation was lower in Ephx1 KO cells compared to WT and control cells (p<0.0001), consistent with a reduced proliferation rate (Figure 5B). In parallel, the levels of P21 and P16, two cell cycle cyclin-dependent kinase inhibitors were significantly increased in KO cells, consistent with increased senescence (Figure 5C). Additionally, compared to WT and control 3T3-L1 cells, Ephx1 KO cells were characterized by a significant increase in senescence-associated β-galactosidase (SA-β-gal) activity (p<0.0001), which is another marker of cellular senescence (Figure 5D,E; López-Otín et al., 2013). Finally, enhanced levels of phosphorylated P53 were observed in KO cells (Figure 5C), further underlining the senescent cellular phenotype (Qian and Chen, 2013).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig5-v1.jpg)
 
-**Figure 5.:** Ephx1 deficiency causes oxidative stress and cellular senescence in murine 3T3-L1 pre-adipocytes and human ASCs.Data were obtained in 3T3-L1 pre-adipocytes from ATCC, as well as ASCs isolated from a sub-cutaneous abdominal adipose tissue biopsy from a control woman of the same sex and age as patient 1 and normal BMI. CRISPR-Cas9-mediated EPHX1-knockout (KO) was obtained in the two cell types. Cells transfected with a Cas9/scramble gRNA plasmid were used as control (CTL). Differences between the three cell lines were determined by analysis of variance (ANOVA) with Bonferroni’s post hoc multiple comparison test. All results are expressed as means ± SEM of three independent experiments. (A–﻿E) refer to 3T3-L1 cells. (F–﻿H) refer to ASC cells. (A) Reactive oxygen species (ROS) production assessed by oxidation of 5–6-chloromethyl-2,7-dichlorodihydro-fluorescein diacetate (CM-H2DCFDA) in 3T3-L1 pre-adipocytes. Results were normalized to DNA content measured by DAPI. ****p<0.0001. (B) Evaluation of cellular proliferation by BrDU incorporation. ****p<0.0001. (C) Evaluation of cellular senescence by western blotting using antibodies against the indicated proteins. Numbers on the left correspond to molecular weight markers (kDa). (D) Representative immunofluorescence images of senescence (SA-β-gal) after staining at pH4 and pH6. Scale bar is 100 μm. (E) The SA-β-gal staining ratio at pH 6.0/pH 4.0 was calculated. ****p<0.0001. (F) Validation of EPHX1 KO in the ASC model and evaluation of expression of several cellular senescence markers by western blotting. Numbers on the left correspond to molecular weight markers (kDa). (G) Representative immunofluorescence images of senescence (SA-β-gal) after staining at pH4 and pH6. Scale bar is 100 μm. (H) The SA-β-gal staining ratio at pH 6.0/pH 4.0 was calculated. ***p<0.001; ****p<0.0001.
+**Figure 5.:** Data were obtained in 3T3-L1 pre-adipocytes from ATCC, as well as ASCs isolated from a sub-cutaneous abdominal adipose tissue biopsy from a control woman of the same sex and age as patient 1 and normal BMI. CRISPR-Cas9-mediated EPHX1-knockout (KO) was obtained in the two cell types. Cells transfected with a Cas9/scramble gRNA plasmid were used as control (CTL). Differences between the three cell lines were determined by analysis of variance (ANOVA) with Bonferroni’s post hoc multiple comparison test. All results are expressed as means ± SEM of three independent experiments. (A–﻿E) refer to 3T3-L1 cells. (F–﻿H) refer to ASC cells. (A) Reactive oxygen species (ROS) production assessed by oxidation of 5–6-chloromethyl-2,7-dichlorodihydro-fluorescein diacetate (CM-H2DCFDA) in 3T3-L1 pre-adipocytes. Results were normalized to DNA content measured by DAPI. ****p<0.0001. (B) Evaluation of cellular proliferation by BrDU incorporation. ****p<0.0001. (C) Evaluation of cellular senescence by western blotting using antibodies against the indicated proteins. Numbers on the left correspond to molecular weight markers (kDa). (D) Representative immunofluorescence images of senescence (SA-β-gal) after staining at pH4 and pH6. Scale bar is 100 μm. (E) The SA-β-gal staining ratio at pH 6.0/pH 4.0 was calculated. ****p<0.0001. (F) Validation of EPHX1 KO in the ASC model and evaluation of expression of several cellular senescence markers by western blotting. Numbers on the left correspond to molecular weight markers (kDa). (G) Representative immunofluorescence images of senescence (SA-β-gal) after staining at pH4 and pH6. Scale bar is 100 μm. (H) The SA-β-gal staining ratio at pH 6.0/pH 4.0 was calculated. ***p<0.001; ****p<0.0001.
 
 To further demonstrate the relevance of the 3T3-L1 murine model, a lentiviral CRISPR/Cas9-mediated EPHX1 KO was generated in human adipose stem cells (ASCs) using a custom-designed gRNA targeting the third exon of EPHX1. A scramble gRNA was used as control (CTL). KO efficiency was confirmed by western blot analysis showing a near-complete loss of EPHX1 expression (Figure 5F). This KO led to a major increase in cellular senescence, as assessed by the significant increase in SA-β-gal activity (p<0.001) (Figure 5G,H) and enhanced levels of phosphorylated P53, P21, and P16 (Figure 5F). The level of senescence was so high (~20-fold increase) that it prevented the EPHX1 KO ASCs to be further differentiated into adipocytes. Altogether, these data obtained in a murine cell line and validated in a human cellular model strongly argue for a functional link between EPHX1 dysfunction, oxidative stress, and cellular senescence.
 
-## Fibroblasts from patient 1 display a senescent phenotype
+### Fibroblasts from patient 1 display a senescent phenotype
 
 Although skin is not a tissue in which EPHX1 is highly expressed, the protein was detected by western blot in cultured fibroblasts from skin biopsies of two normal individuals (T1 and T2) and patient 1 (Figure 6—figure supplement 1). These immunoblot analyses using several anti-EPHX1 polyclonal antibodies allowed us to detect only the monomeric EPHX1 form (55 kDa) but not the higher-order complexes. We next assessed oxidative stress. The mutant fibroblasts showed increased levels of ROS in cell lysates compared with controls (p<0.0001) (Figure 6A). Regarding the impact of the EPHX1 variant on cellular senescence, the patient 1-derived fibroblasts displayed an altered morphology with an enlarged, flattened, and irregular shape, as compared to spindle-shaped control fibroblasts (Figure 6—figure supplement 2). BrdU incorporation was significantly reduced in mutant fibroblasts (p<0.0001), which was correlated with increased levels of P21 and P16 (Figure 6B,C). Furthermore, SA-β-gal activity was markedly increased in the mutant fibroblasts (p<0.0001), even though these fibroblasts were at an earlier passage than controls (Figure 6D,E). This increased SA-β-gal activity was accompanied by enhanced levels of phosphorylated P53 in mutant fibroblasts (Figure 6C). Together, these results were similar to those obtained using Ephx1-KO pre-adipocytes, confirming ex vivo the key role of EPHX1 in controlling senescence-associated oxidative stress.
 
-## Treatment of patient 1 with metreleptin is very beneficial
+![Figure 6.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig6-v1.jpg)
+
+**Figure 6.:** Data were obtained using cultured fibroblasts from skin biopsies of two normal individuals (T1 and T2) and patient 1. Differences between the three fibroblast cultures were determined by analysis of variance (ANOVA) with Bonferroni’s post hoc multiple comparison test. All results are expressed as means ± SEM of three independent experiments. (A) Reactive oxygen species (ROS) production assessed by oxidation of 5–6-chloromethyl-2,7-dichlorodihydro-fluorescein diacetate (CM-H2DCFDA) in fibroblasts derived from T1, T2, and patient 1. Results were normalized to DNA content measured by DAPI. ****p<0.0001. (B) Evaluation of cellular proliferation by BrDU incorporation. ****p<0.0001. (C) Evaluation of cellular senescence by western blotting using antibodies against the indicated proteins. Numbers on the left indicate molecular weight markers (kDa). (D) Representative immunofluorescence images of senescence (SA-β-gal) after staining at pH4 and pH6. Scale bar is 100 μm. (E) The SA-β-gal staining ratio at pH 6.0/pH 4.0 was calculated. ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** EPHX1 expression was evaluated by western blotting in cultured fibroblasts from patient 1 and 2 controls (T1 and T2). Tubulin was used as a loading control.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68445/elife-68445-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Fibroblasts from patient 1 and 2 controls (T1 and T2) were cultured and observed at a low passage number. Patient 1-derived fibroblasts exhibited abnormal morphology compared with controls, as shown by their enlarged size and irregular shape. The bottom panel displays magnifications of the framed areas of the top panel.
+
+### Treatment of patient 1 with metreleptin is very beneficial
 
 Since patient 1 suffered from severe diabetes, insulin therapy was started since the age of 12 years. High doses (up to 15 IU/kg/day) of rapid acting insulin analogs and then Humulin Regular U-500 were required through a basal-bolus regimen then an insulin pump. However, this did not provide suitable glycemic control (HbA1c: 10–16.5%). Other anti-diabetic treatments, including metformin and exenatide, did not bring additional effectiveness, and the patient’s hyperphagia hampered the compliance with diet. Treatment with metreleptin, a recombinant form of leptin used in the treatment of lipoatrophic syndromes, was initiated at the age of 22 years at the initial dose of 5 mg, then readjusted after 6 months at the dose of 7.5 mg. The treatment efficacy was evaluated 3 and 6 months after its introduction (Table 2). There was a major beneficial effect on metabolic manifestations since it led to a decrease of HbA1c to 7.3% after 6 months of treatment, allowing to reduce daily insulin doses by almost 50% (Table 2). Metreleptin effectiveness was also evidenced by a decrease in liver enzymes and an improvement of liver scores for steatosis, fibrosis, and necrosis/inflammation (Table 2).
 
@@ -126,64 +609,368 @@ The data presented here emphasize that lipid mediator regulation by EHs is essen
 
 ## Materials and methods
 
-## Genetic studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>Embryonic kidney</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>3T3-L1</td>
+      <td>ATCC</td>
+      <td>CL-173</td>
+      <td>The cells undergo a pre-adipose to adipose like conversion as they progress from a rapidly dividing to a confluent state</td>
+    </tr>
+    <tr>
+      <td>Primary fibroblasts</td>
+      <td>T1</td>
+      <td>Pr. Fève lab at CRSA, Paris</td>
+      <td>N/A</td>
+      <td>Non-obese and non-diabetic female, skin biopsy</td>
+    </tr>
+    <tr>
+      <td>Primary fibroblasts</td>
+      <td>T2</td>
+      <td>Pr. Fève lab at CRSA, Paris</td>
+      <td>N/A</td>
+      <td>Non-obese and non-diabetic female, skin biopsy</td>
+    </tr>
+    <tr>
+      <td>Primary fibroblasts</td>
+      <td>Patient 1</td>
+      <td>Pr. Fève lab at CRSA, Paris</td>
+      <td>N/A</td>
+      <td>Patient 1, female, skin biopsy</td>
+    </tr>
+    <tr>
+      <td>Adipose stem cells</td>
+      <td>ASCs</td>
+      <td>Pr. Fève lab at CRSA, Paris</td>
+      <td>N/A</td>
+      <td>Female, from subcutaneous abdominal adipose tissue</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-adiponectin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA1-054</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKT</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-8312</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti β-actin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A2228</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calnexin</td>
+      <td>ENZO Life Science</td>
+      <td>Cat# ADO-SPA-860</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C/EPBα</td>
+      <td>Protein Tech</td>
+      <td>Cat# 18311-1-1P</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EPHX1</td>
+      <td>Novus</td>
+      <td>Cat# NBP1-3301</td>
+      <td>WB (1:1000) - IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9102</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FAS</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3180</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag</td>
+      <td>Origene</td>
+      <td>Cat# TA50011-100</td>
+      <td>WB (1:1000) - IF (1:1000) - IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRΒ</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3025</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRS1</td>
+      <td>Protein Tech</td>
+      <td>Cat# 17509–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P16</td>
+      <td>Protein Tech</td>
+      <td>Cat# 10883–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P21</td>
+      <td>Protein Tech</td>
+      <td>Cat# 10355–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P53</td>
+      <td>Abcam</td>
+      <td>Cat# ab1101</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-AKT</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7985-R</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-ERK</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9101</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-P53</td>
+      <td>Abcam</td>
+      <td>Cat# ab38497</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PPARg</td>
+      <td>Protein Tech</td>
+      <td>Cat# 16643–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SREBP-1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-366</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin</td>
+      <td>Protein Tech</td>
+      <td>Cat# 66031–1-lg</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-Tyr</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7020</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-HRP</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934V</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-HRP</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931V</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-entry-Flag</td>
+      <td>Origene</td>
+      <td>Cat # PS100001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 WT-Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 c.337T&gt;C -Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 c.416A&gt;G -Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 c.997A&gt;C -Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 c.1212G&gt;C -Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCMV-EPHX1 c.1288G&gt;C -Flag or without Flag</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Described in Materials and methods Publicly available (Addgene)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pSpCas9(BB)−2A-GFP (PX458)</td>
+      <td>Addgene</td>
+      <td>Cat# 48138</td>
+      <td>A gift from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pLentiCRISPR v2</td>
+      <td>Addgene</td>
+      <td>Cat# 52961</td>
+      <td>A gift from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>FIJI software</td>
+      <td>NIH</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>GraphPad</td>
+      <td>Graphpad Software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad Software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic studies
 
 Diagnostic laboratories performed genetic analyses on genomic blood DNA extracted from peripheral blood leukocytes using standard procedures. Exons and flanking intronic sequences of a panel of genes involved in lipoatrophic diabetes (Jéru et al., 2019) were captured from fragmented DNA with the SeqCapEZ enrichment protocol (Roche NimbleGen, USA). Paired-end massively parallel sequencing was achieved on a MiSeq platform (Illumina, USA). Bioinformatic analysis was performed using the Sophia DDM pipeline (Sophia Genetics, Switzerland). Identification of EPHX1 variants was obtained by WES. For patient 1, library preparation, exome capture, sequencing, and variant calling and annotation were performed by IntegraGen SA (Evry, France). Genomic DNA was captured using Twist Human Core Exome Enrichment System (Twist Bioscience, USA) and IntegraGen Custom, followed by paired-end 75 bases massively parallel sequencing on Illumina HiSeq4000. Identification of the potentially pathogenic variants were determined using Sirius software (IntegraGen SA, France). For patient 2, exome sequencing was performed on the proband and both parents as previously described (Retterer et al., 2016). EPHX1 variants were confirmed by Sanger sequencing with the Big Dye Terminator v3.1 sequencing kit (Thermo Fisher Scientific, MS, USA) after PCR amplification and analyzed on a 3500xL Dx device with the SeqScape v2.7 software (Thermo Fisher Scientific, MS, USA). EPHX1 variants were described based on the longest isoform (NM_000120.4) using Alamut 2.11 (Sophia Genetics, Switzerland) and Human Genome Variation Society guidelines. Variants were classified according to the ACMG recommendations (van Loo et al., 2006). Protein sequences were aligned using the Clustal Omega software, and the degree of conservation was presented with help of the BoxShade software. EPHX1 variants were queried in human populations using gnomAD.
 
-## Plasmids and transfection
+### Plasmids and transfection
 
 EPHX1 cDNA was amplified by RT-qPCR using RNA from HepG2 cells and inserted into the pCMV6-entry mammalian expression vector containing a C-terminal Flag Tag (#PS100001; Origene, MD, USA). EPHX1 variants (c.337T>C, c.416A>G, c.997A>C, c.1212G>C, and c.1288G>C) were introduced using the Quikchange II Site-directed mutagenesis kit (#200523; Agilent Technologies, CA, USA), and constructs were checked by Sanger sequencing. To remove the C-terminal Flag Tag of the different plasmids, a nonsense variant was introduced by site-directed mutagenesis. Transient transfection of the different cell lines was carried out in six-well plates with TurboFect Transfection Reagent (#R0532; Thermo Fisher Scientific, MS, USA) according to the manufacturer’s instructions.
 
-## Cell culture
+### Cell culture
 
 HEK 293 cells purchased from ATCC with a negative mycoplasma contamination test were cultured in high-glucose (4.5 g/L) Dulbecco’s modified Eagle’s medium (DMEM; #11960085; Thermo Fisher Scientific) containing 10% fetal calf serum (FCS) (#F7524; Sigma-Aldrich, MI, USA), 1% penicillin/streptomycin (PS). 3T3-L1 pre-adipocytes purchased from ATCC with a negative mycoplasma contamination test were maintained in an undifferentiated state in high-glucose (4.5 g/L) DMEM supplemented with 10% newborn calf serum and 1% PS (#CA-1151500; Biosera, MI, USA). Adipocyte differentiation was induced by treating 2 day post-confluent cultures with high-glucose (4.5 g/L) DMEM supplemented with 10% FCS, 1% PS, 1 µM dexamethasone (#D4902; Sigma-Aldrich), 250 µM 3-isobutyl-1-methyl xanthine (IBMX) (#I7018; Sigma-Aldrich), and 0.17 µM insulin (#I0516; Sigma-Aldrich) for 3 days. The medium was then replaced with high-glucose DMEM supplemented with 10% FCS, 1% PS, and 0.17 µM insulin and changed to fresh medium every 2 days until the 12th day. Primary fibroblast cultures were established using skin biopsies from two healthy non-obese non-diabetic women, named T1 and T2, as well as from patient 1. Fibroblasts were grown in low glucose (1 g/L) DMEM with pyruvate (#31885049; Thermo Fisher Scientific) and supplemented with 10% FCS, 1% PS, and 2 mM glutamine. Fibroblasts were stained at a low passage number (i.e., passage 4 for patient 1, passage 9 for T1 and T2). ASCs were isolated from surgical samples of sub-cutaneous abdominal adipose tissue from a control woman of the same sex and age as patient 1 and normal BMI. Adipose tissue samples were enzymatically digested with collagenase B (0.2%). After centrifugation, stromal vascular fraction was filtered, rinsed, plated, and cultured in α-MEM with 10% FCS, 2 mmol/L glutamin, 1% PS (10,000 UI/mL), 1% HEPES, and fibroblast growth factor-2 (145 nmol/L). After 24 hr, only ASCs adhered to plastic surfaces, while other cells were removed after culture medium replacement. ASCs were maintained in an undifferentiated state in high-glucose (4.5 g/L) DMEM supplemented with 10% newborn calf serum and 1% PS. All culture conditions were kept constant throughout the experiments.
 
-## CRISPR/Cas9-mediated deletion of Ephx1 in 3T3-L1 pre-adipocytes
+### CRISPR/Cas9-mediated deletion of Ephx1 in 3T3-L1 pre-adipocytes
 
 pSpCas9(BB)−2A-GFP (PX458) was a gift from Zhang lab (Addgene, MA, USA; plasmid #48138) and was used to transfect 3T3-L1 cells with Cas9 along with the targeting guide RNAs (gRNAs). gRNAs were designed and checked for efficiency (http://cistrome.org/SSC) and specificity (http://crispr.mit.edu). We used the web-based tool, CRISPOR (http://crispor.tefor.net/), to avoid off-target sequences. Subsequently, gRNAs were cloned in the plasmid and transfected into cells using TurboFect (#R0532; Thermo Fisher Scientific) according to the manufacturer’s instructions. Forty-eight hours post-transfection, cells were sorted by flow cytometry (Cell Sorting Core Facility, Centre de Recherche Saint-Antoine), and cells with the highest GFP positivity were transferred into a 24-well plate and propagated. We favored a plasmid transient transfection method rather than a viral transduction to reduce the expression of Cas9 in cells and prevent its integration into the host cell genome, which may lead to increased off-target activities. Moreover, to minimize the effect of possible off-target mutations, we analyzed heterogeneous populations issued from the FACS sorting rather than clonal populations. The gRNA sequences used in this study to target Ephx1 were the following: gRNA (exon 6) sense:
 
 5’ TCTTAGAGAAGTTCTCCACC 3’; antisense: 5’ GGTGGAGAACTTCTCTAAGA 3’. gRNA (exon 5) sense: 5’ TACAACATCATGAGGGAGAG 3’; antisense: 5’ CTCTCCCTCATGATGTTGTA 3’.
 
-## CRISPR/Cas9-mediated deletion of EPHX1 in human ASCs
+### CRISPR/Cas9-mediated deletion of EPHX1 in human ASCs
 
 The lentiviral plasmid plentiCRISPRv2 was a gift from Zhang lab (Addgene, MA, USA; plasmid #52961) and contains the puromycin resistance, hSpCas9 and the chimeric guide RNA (gRNAs). The gRNA targeting EPHX1 exon 3 was designed and checked for efficiency (http://cistrome.org/SSC) and specificity (http://crispr.mit.edu). Its sequence was the following: sense 5’ CCCTGGCTATGGCTTCTCAG 3’; antisense 5’ CTGAGAAGCCATAGCCAGGG 3’. The web-based tool, CRISPOR (http://crispor.tefor.net), was used to evaluate potential off-target sequences. Subsequently, the gRNA was cloned into plentiCRISPRv2 and lentivirus were produced by the VVTG platform (SFR Necker, France). ASCs were infected with viral particles at a minimal titer of 108 transducing units per mL. Forty-eight hours post-infection, cells were selected with 5 μg/mL puromycin dihydrochloride (#P9620; Sigma-Aldrich). Surviving cells were propagated, and the heterogeneous cell pool was used for experiments.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For indirect immunofluorescence, HEK 293 cells were grown on glass coverslips, and after transfection, they were fixed for 15 min in 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS) and then permeabilized for 15 min with 0.1% Triton X-100 in PBS at room temperature. Cells were washed three times with a blocking solution containing PBS with 5% fatty acid free bovine serum albumin. Primary antibodies used for immunostaining were as follows: mouse anti-Flag (Origene) (1/1000), rabbit anti-EPHX1 (Novus) (1/1000), and rabbit anti-Calnexin (#ADO-SPA-860; Enzo Life Sciences, France) (1/200). Cells were incubated 1 hr at 37°C, rinsed, and then incubated for 45 min at room temperature with the appropriate Alexa-conjugated isotype-specific secondary antibodies (Thermo Fisher Scientific) and 4',6-diamidino-2-phenylindole (DAPI) (Thermo Fisher Scientific). The coverslips were mounted in DAKO fluorescence mounting media (#S3023; Agilent Technologies, CA, USA). Images were acquired using a SP2-inverted confocal microscope (Leica Biosystems, Germany), equipped with an HCX PL APO CS 63X/1.32 oil immersion objective, and analyzed using Leica Confocal Software and FIJI Software. For each experiment, all images were acquired with constant settings (acquisition time and correction of signal intensities).
 
-## Measurement of EPHX1 activity
+### Measurement of EPHX1 activity
 
 EPHX1 activity in lysates of transfected HEK 293 or 3T3-L1 cells was determined using [3H]-cis-stilbene oxide ([3H]-cSO), as described previously (Hassett et al., 1994). After thawing on ice, cells were diluted with chilled sodium phosphate buffer (20 mM, pH 7.4) containing 5 mM ethylenediaminetetraacetic acid (EDTA), 1 mM dithiothreitol (DTT), and 1 mM phenylmethylsulfonyl fluoride, and 0.2% (v/v) Triton X-100. Cells were then broken with a 10 s ultrasonic pulse. The mixture was centrifuged at 5000 g for 20 min at 4°C. Supernatants were collected and flashed frozen, before being used for further analysis. Protein concentration was quantified using the Pierce BCA assay (Pierce, IL, USA), using Fraction V bovine serum albumin (BSA) as the calibrating standard. After thawing on ice, supernatants were diluted (5- to 20-folds) with Tris–HCl buffer (0.1 M, pH 9.0) containing freshly added BSA (0.1 mg/mL). In glass tubes containing 100 μL of the diluted extract, the reaction was started by adding 1 µL of 5 mM [3H]-cSO in ethanol (10,000 cpm, [S]final = 50 µM). The mixture was incubated at 37°C for 5–120 min. The reaction was then quenched by the addition of 250 μL of isooctane, which extracts the remaining epoxide from the aqueous phase. The activity was followed by measuring the quantity of radioactive diols formed in the aqueous phase using a scintillation counter (TriCarb 2810 TR, Perkin Elmer, Shelton, CT). Assays were performed in triplicates.
 
-## Western blot
+### Western blot
 
 Cells were homogenized in NP-40 lysis buffer to obtain protein lysates. Thirty micrograms of protein extracts was separated by sodium dodecyl sulfate (SDS)–polyacrylamide gel electrophoresis, transferred to polyvinylidene difluoride membrane, and analyzed by immunoblotting.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Transfected HEK 293 cells were recovered in 1 mL of PBS. They were centrifuged at 4025 g for 1 min in a microfuge and resuspended in 50–100 µL of TNT buffer (20 mM Tris–HCl - pH 7.5, 200 mM NaCl, 1% Triton X-100). After incubation on ice for 10 min and centrifugation at 16,099 g for 10 min, supernatants were recovered and protein concentrations determined. Protein lysates (100–200 mg in 200 µL of TNT) were either directly analyzed by western blotting or first immunoprecipitated. In this latter case, extracts were incubated under rotation for 2 hr at 4°C with the relevant antibody. Protein G Sepharose (Sigma) was then added and the mixture incubated for a further 1 hr at 4°C. Sepharose beads were quickly centrifuged in a microfuge (30 s at 11,180 g) and washed three times with TNT. After final wash, the beads were resuspended in 30 mL of buffer A (10 mM KCl, 2 mM MgCl2, 0.1 mM EDTA, 1 mM DTT, 10 mM HEPES – pH 7.8) complemented with loading dye, before being processed as described in western blot analysis.
 
-## Oxylipin extraction and quantification in plasma
+### Oxylipin extraction and quantification in plasma
 
 The targeted oxylipin analysis was designed based on the metabolic pathway of n-3 and n-6 polyunsaturated fatty acid precursors as described previously (Yang et al., 2009). The LC/MS-MS analysis was performed with an Agilent 1200SL UHPLC system interfaced with a 4000 QTRAP mass spectrometer (Sciex). Separation of oxylipins was performed with the Agilent Eclipse Plus C18 150 × 2.1 mm 1.8 μm column with mobile phases of water with 0.1% acetic acid as mobile phase A and acetonitrile/methanol (84/16) with 0.1% acetic acid as mobile phase B.
 
-## Oil Red O staining, image processing, and quantification
+### Oil Red O staining, image processing, and quantification
 
 Intracellular lipids were stained by Oil Red O (#O0625; Sigma-Aldrich). Cells were washed with PBS and fixed with 4% PFA in PBS, for 10 min. Fixed cells were incubated with Oil Red O solution for 1 hr at room temperature and then with DAPI (Thermo Fischer Scientific) for 5 min. Fluorescence images were generated with IX83 Olympus microscope, acquired with Cell-Sens V1.6 and analyzed with FIJI software. Images of 8–10 different areas per condition were visualized by fluorescence microscopy using mCherry filter, followed by computer image analysis using FIJI software. Briefly, analysis was performed by threshold converting the 8-bit Red-Green-Blue image into a binary image, which consists only of pixels representing lipid droplets (i.e., red). Importantly, after separation, the binary image was manually compared with the original image for consistency and correct binary conversion. The area occupied by lipid droplets in the image was displayed by FIJI software as surface area in μm2 and normalized to cell number by semi-automated counting of DAPI-stained nuclei.
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 3T3-L1 cells and fibroblasts were seeded in a 12-well plate (5000 per well) and incubated overnight at 37°C in DMEM supplemented with 10% FCS and 1% PS. Cell proliferation was evaluated by BrdU incorporation using a colorimetric ELISA assay (#QIA58; Sigma-Aldrich) 16 hr after seeding, according to the manufacturer’s instructions.
 
-## Oxidative stress and cellular senescence
+### Oxidative stress and cellular senescence
 
 The oxidation of the fluorogenic probe 2,7-dichlorodihydro-fluorescein diacetate (CM-H2DCFHDA) (2 µg/mL, #C6827; Sigma-Aldrich) was used to evaluate intracellular levels of ROS on a 200-plate fluorescence reader (Tecan Infinite, Switzerland) at 520–595 nm. The blue staining of β-galactosidase (β-gal) at pH 6 was used as a biomarker of cellular senescence. Cells were fixed with 4% PFA in PBS for 5 min at room temperature. Cells were washed twice with PBS and incubated overnight in fresh SA-β-gal staining solution containing 1 mg/mL of X-gal (5-bromo-4-chloro-3-indolyl-β-D-galactopyranoside) (#3117073001; Sigma-Aldrich), 5 mM potassium ferrocyanide, 5 mM potassium ferricyanide, 150 mM NaCl, 2 mM MgCl2, and 0.4 mM phosphate buffer, pH 6.0, in darkness at 37°C without CO2. For positive staining controls, fixed cells were treated with the same solution, but at pH 4.0. After imaging with an IX83 Olympus microscope, stained cells were resuspended with 2% SDS, scratched, and sonicated. Finally, the absorbance (630 nm) was read with a Tecan Infinite 200-plate reader and the staining ratio at pH 6.0/pH 4.0 was calculated.
 
-## Statistics
+### Statistics
 
 Data are presented as means ± SEM (standard error of the mean). GraphPad Prism software (GraphPad Software) was used to calculate statistical significance. Gaussian distribution was tested with the Kolmogorov–Smirnov test. Multiple comparisons were conducted by one-way analysis of variance (ANOVA) with Bonferroni test or Kruskal–Wallis test for post hoc analysis. p<0.05 was considered statistically significant.
 
-## Study approval
+### Study approval
 
 We obtained written informed consent for all genetic studies as well as for the use of photographs shown in Figure 1. The study was approved by the CPP Ile de France five research ethics board (DC 2009–963, Paris, France) and the Columbia institutional review board (AAAJ8651, New York, United States).

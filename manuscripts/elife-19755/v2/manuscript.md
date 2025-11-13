@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.19755.001 Proteases play crucial physiological functions in all organisms by controlling the lifetime of proteins. Here, we identified an atypical protease of the subtilase family [SBT5.2(b)] that attenuates the transcriptional activation of plant defence independently of its protease activity. The SBT5.2 gene produces two distinct transcripts encoding a canonical secreted subtilase [SBT5.2(a)] and an intracellular protein [SBT5.2(b)]. Concomitant to SBT5.2(a) downregulation, SBT5.2(b) expression is induced after bacterial inoculation. SBT5.2(b) localizes to endosomes where it interacts with and retains the defence-related transcription factor MYB30. Nuclear exclusion of MYB30 results in its reduced transcriptional activation and, thus, suppressed resistance. sbt5.2 mutants, with abolished SBT5.2(a) and SBT5.2(b) expression, display enhanced defence that is suppressed in a myb30 mutant background. Moreover, overexpression of SBT5.2(b), but not SBT5.2(a), in sbt5.2 plants reverts the phenotypes displayed by sbt5.2 mutants. Overall, we uncover a regulatory mode of the transcriptional activation of defence responses previously undescribed in eukaryotes. DOI: http://dx.doi.org/10.7554/eLife.19755.001
+Proteases play crucial physiological functions in all organisms by controlling the lifetime of proteins. Here, we identified an atypical protease of the subtilase family [SBT5.2(b)] that attenuates the transcriptional activation of plant defence independently of its protease activity. The SBT5.2 gene produces two distinct transcripts encoding a canonical secreted subtilase [SBT5.2(a)] and an intracellular protein [SBT5.2(b)]. Concomitant to SBT5.2(a) downregulation, SBT5.2(b) expression is induced after bacterial inoculation. SBT5.2(b) localizes to endosomes where it interacts with and retains the defence-related transcription factor MYB30. Nuclear exclusion of MYB30 results in its reduced transcriptional activation and, thus, suppressed resistance. sbt5.2 mutants, with abolished SBT5.2(a) and SBT5.2(b) expression, display enhanced defence that is suppressed in a myb30 mutant background. Moreover, overexpression of SBT5.2(b), but not SBT5.2(a), in sbt5.2 plants reverts the phenotypes displayed by sbt5.2 mutants. Overall, we uncover a regulatory mode of the transcriptional activation of defence responses previously undescribed in eukaryotes.
 
 ## Introduction
 
@@ -32,115 +32,254 @@ A previously performed yeast two-hybrid (Y2H) screen using MYB30 as bait identif
 
 ## Results
 
-## Identification of SBT5.2
+### Identification of SBT5.2
 
-In order to search for components involved in MYB30-mediated signalling, a Y2H screen was previously conducted using a MYB30 version deleted from its transcriptional activation domain (MYB30ΔAD) (
+In order to search for components involved in MYB30-mediated signalling, a Y2H screen was previously conducted using a MYB30 version deleted from its transcriptional activation domain (MYB30ΔAD) (Froidure et al., 2010) as bait. A cDNA clone encoding the last 103 amino acids of the Arabidopsis serine protease of the subtilisin group SBT5.2 (At1g20160) was identified in this screen (Figure 1). SBT5.2 belongs to subgroup V (6 members) within the classification of the Arabidopsis subtilase family (Schaller et al., 2012; Rautengarten et al., 2005).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig1-v2.jpg)
 
-**Figure 1.:** Yeasts are shown after growth for five days on low stringency (left; SD/-TL) or high stringency (right; SD/-TLHA) media. Co-expression of MYB30 deleted from its C-terminal transcription activation domain (MYB30△AD) and the isolated cDNA clone encoding the last 103 amino acids of SBT5.2 (SBT5.2628-730) resulted in yeast growth on selective medium. In a control experiment, yeast cells expressing MYB30△AD or SBT5.2628-730 with controls provided by Clontech (T-antigen or P53, respectively) were not able to grow on selective medium. BD, GAL4 DNA-binding domain; AD, GAL4 activation domain.DOI: http://dx.doi.org/10.7554/eLife.19755.003
+**Figure 1.:** Yeasts are shown after growth for five days on low stringency (left; SD/-TL) or high stringency (right; SD/-TLHA) media. Co-expression of MYB30 deleted from its C-terminal transcription activation domain (MYB30△AD) and the isolated cDNA clone encoding the last 103 amino acids of SBT5.2 (SBT5.2628-730) resulted in yeast growth on selective medium. In a control experiment, yeast cells expressing MYB30△AD or SBT5.2628-730 with controls provided by Clontech (T-antigen or P53, respectively) were not able to grow on selective medium. BD, GAL4 DNA-binding domain; AD, GAL4 activation domain.
 
-Two gene models are annotated in the TAIR database (
+Two gene models are annotated in the TAIR database (http://www.arabidopsis.org) for At1g20160, suggesting that the corresponding transcript is alternatively spliced (Figure 2a). Comparison of the two SBT5.2 cDNA clones [designated SBT5.2(a) and SBT5.2(b)] with the genomic sequence revealed that the first intron is specifically spliced in the SBT5.2(b) cDNA (Figure 2—figure supplement 1a). Reverse transcription PCR (RT-PCR) using specific cDNA primers confirmed the existence of both splice variants in planta (Figure 2b). The sequence of SBT5.2(a) and SBT5.2(b) 5’ ends was determined by 5’ RACE and cDNA sequencing (Figure 2—figure supplement 1b). To gain knowledge on the relative abundance of both isoforms after bacterial inoculation, we monitored the expression of SBT5.2(a) and SBT5.2(b) in Col-0 wild-type plants inoculated with Pseudomonas syringae pv. tomato DC3000 expressing the avirulence gene AvrRpm1 (Pst AvrRpm1). As shown in Figure 2c, expression of SBT5.2(a) was downregulated after treatment with bacteria, whereas expression of SBT5.2(b) was induced and displayed an expression profile highly similar to that of MYB30 (Figure 2c). This data suggests that SBT5.2(b) may have a MYB30-related function.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig2-v2.jpg)
 
-**Figure 2.:** (a) Genomic structure of SBT5.2 alternatively spliced variants. Exons are shown as dark gray boxes (E1-E9), introns as black lines between exons and 5’ and 3’ UTRs are shown in light gray. (b) RT-PCR analysis of SBT5.2(a) and SBT5.2(b) transcripts in four-week old Col-0 Arabidopsis leaves. (c) The relative expression of SBT5.2(a), SBT5.2(b) and MYB30 at the indicated timepoints after inoculation of Col-0 plants with Pst AvrRpm1 (5 × 107 cfu/ml). Expression values were normalized using SAND family gene as internal standard and related to the value of each gene at time 0, which is set at 1. The SEM values were calculated from 4 independent experiments (4 replicates/experiment). The asterisks indicate statistically significant values for the three tested genes according to a Student’s t-test (p<0.005) and with respect to gene expression values at time 0. (d) Schematic representation of SBT5.2(a) and SBT5.2(b) protein sequences. The signal peptide (SP) and the pro-domain (PD) in the SBT5.2(a) isoform are shown as black and grey boxes, respectively. Catalytically conserved Asp, His, Asn, and Ser residues are indicated. Putative N-glycosylation sites (PGSs) are indicated by black dots. (e) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Accumulation of SBT5.2(a)-RFP in apoplastic spaces is indicated by arrowheads. Bars = 10 µm. (f) Western blot analysis of total protein extracts (TE) and intercellular fluids (IF) from N. benthamiana leaves expressing the intracellular protein MIEL1 alone (left) or co-expressed with HA-tagged SBT proteins (right), as indicated. Molecular mass markers in kilodaltons are indicated on the right.DOI: http://dx.doi.org/10.7554/eLife.19755.004
+**Figure 2.:** (a) Genomic structure of SBT5.2 alternatively spliced variants. Exons are shown as dark gray boxes (E1-E9), introns as black lines between exons and 5’ and 3’ UTRs are shown in light gray. (b) RT-PCR analysis of SBT5.2(a) and SBT5.2(b) transcripts in four-week old Col-0 Arabidopsis leaves. (c) The relative expression of SBT5.2(a), SBT5.2(b) and MYB30 at the indicated timepoints after inoculation of Col-0 plants with Pst AvrRpm1 (5 × 107 cfu/ml). Expression values were normalized using SAND family gene as internal standard and related to the value of each gene at time 0, which is set at 1. The SEM values were calculated from 4 independent experiments (4 replicates/experiment). The asterisks indicate statistically significant values for the three tested genes according to a Student’s t-test (p<0.005) and with respect to gene expression values at time 0. (d) Schematic representation of SBT5.2(a) and SBT5.2(b) protein sequences. The signal peptide (SP) and the pro-domain (PD) in the SBT5.2(a) isoform are shown as black and grey boxes, respectively. Catalytically conserved Asp, His, Asn, and Ser residues are indicated. Putative N-glycosylation sites (PGSs) are indicated by black dots. (e) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Accumulation of SBT5.2(a)-RFP in apoplastic spaces is indicated by arrowheads. Bars = 10 µm. (f) Western blot analysis of total protein extracts (TE) and intercellular fluids (IF) from N. benthamiana leaves expressing the intracellular protein MIEL1 alone (left) or co-expressed with HA-tagged SBT proteins (right), as indicated. Molecular mass markers in kilodaltons are indicated on the right.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** SBT5.2 gives raise to two distinct variants.(a) Alignment of the two SBT5.2 cDNA sequences with the genomic sequence. The consensus splice sequences flanking the intron that is retained in SBT5.2(a) and shown in red in the genomic sequence are boxed. In the genomic sequence, ^ indicates 5’ and 3’ splice sites. In SBT5.2(a), the retained intron contains an ATG (in bold) encoding the first coding SBT5.2(a) Met residue. Splicing of this intron gives rise to the SBT5.2(b) isoform. Lower case in SBT5.2(a) and SBT5.2(b) cDNA sequences indicates untranslated 5’UTRs whereas upper case indicates coding sequences. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined: for amplification of SBT5.2(a) the primer was situated in the intron [that is absent in SBT5.2(b)], whereas a primer in a sequence of the SBT5.2(b) 5’UTR [that is absent in SBT5.2(a)] was used for SBT5.2(b) amplification. Identical sequences are highlighted by a green box. From the ATG (in bold) in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. (b) Nucleotide sequences of 5’ends of SBT5.2(a) and SBT5.2(b) obtained by 5’RACE amplification. The ATG encoding the first coding Met residue in each protein is shown in bold. Identical sequences are highlighted by a green box. From the ATG in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined. Every tenth residue is marked by |. (c) Sequence alignment of SBT5.2(a) and SBT5.2(b) proteins. Identical amino acids are highlighted in blue. The signal peptide and the prodomain in SBT5.2(a) are boxed in red and yellow, respectively. Catalytical conserved residues are indicated by red dots. Putative N-glycosylation sites (PGSs) are indicated by blue dots. The 103 C-terminal amino acids encoded by the partial SBT5.2 cDNA clone identified in the yeast two-hybrid screen as interacting with MYB30ΔAD is boxed in blue. A putative myristoylation domain in SBT5.2(b) is boxed in green with an asterisk indicating the putative myristoylated glycine residue. Every tenth residue is marked by |.DOI: http://dx.doi.org/10.7554/eLife.19755.005
+**Figure 2—figure supplement 1.:** (a) Alignment of the two SBT5.2 cDNA sequences with the genomic sequence. The consensus splice sequences flanking the intron that is retained in SBT5.2(a) and shown in red in the genomic sequence are boxed. In the genomic sequence, ^ indicates 5’ and 3’ splice sites. In SBT5.2(a), the retained intron contains an ATG (in bold) encoding the first coding SBT5.2(a) Met residue. Splicing of this intron gives rise to the SBT5.2(b) isoform. Lower case in SBT5.2(a) and SBT5.2(b) cDNA sequences indicates untranslated 5’UTRs whereas upper case indicates coding sequences. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined: for amplification of SBT5.2(a) the primer was situated in the intron [that is absent in SBT5.2(b)], whereas a primer in a sequence of the SBT5.2(b) 5’UTR [that is absent in SBT5.2(a)] was used for SBT5.2(b) amplification. Identical sequences are highlighted by a green box. From the ATG (in bold) in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. (b) Nucleotide sequences of 5’ends of SBT5.2(a) and SBT5.2(b) obtained by 5’RACE amplification. The ATG encoding the first coding Met residue in each protein is shown in bold. Identical sequences are highlighted by a green box. From the ATG in SBT5.2(b) both nucleotide sequences are identical and, thus, not shown. Sequences used to specifically amplify SBT5.2(a) or SBT5.2(b) are underlined. Every tenth residue is marked by |. (c) Sequence alignment of SBT5.2(a) and SBT5.2(b) proteins. Identical amino acids are highlighted in blue. The signal peptide and the prodomain in SBT5.2(a) are boxed in red and yellow, respectively. Catalytical conserved residues are indicated by red dots. Putative N-glycosylation sites (PGSs) are indicated by blue dots. The 103 C-terminal amino acids encoded by the partial SBT5.2 cDNA clone identified in the yeast two-hybrid screen as interacting with MYB30ΔAD is boxed in blue. A putative myristoylation domain in SBT5.2(b) is boxed in green with an asterisk indicating the putative myristoylated glycine residue. Every tenth residue is marked by |.
 
 SBT5.2(a) corresponds to a transcript of 2402 bp, which is predicted to encode a 769 amino acid preproenzyme containing a signal peptide (SP) followed a by prodomain (PD), which acts as an intramolecular inhibitor, and a mature polypeptide (Figure 2d; Figure 2—figure supplement 1c). In contrast, SBT5.2(b) corresponds to a transcript of 2373 bp, predicted to encode a protein of 730 amino acids with no SP and lacking the first five amino acids of the PD (Figure 2d; Figure 2—figure supplement 1c). Except for their N-terminal differences, the two corresponding encoded proteins are predicted to be identical and contain a catalytic triad with three amino acids (D145, H210 and S546 in SBT5.2(a), and D106, H171 and S507 in SBT5.2(b)) conserved within serine proteases (Figure 2d; Figure 2—figure supplement 1b).
 
-## SBT5.2(a) is a secreted protein whereas SBT5.2(b) is intracellular
+### SBT5.2(a) is a secreted protein whereas SBT5.2(b) is intracellular
 
 Alternative splicing (AS) of SBT5.2 may have important implications for the subcellular localization and function of the proteins encoded by the two transcripts. The presence of a SP and a PD in SBT5.2(a) suggests that this protein may enter the secretory pathway and be secreted to the extracellular space. Indeed, secretion of SBT5.2(a) was previously reported (Engineer et al., 2014; Kaschani et al., 2012). In contrast, the absence of the SP in SBT5.2(b) may prevent secretion of the protein. In order to test this possibility, the subcellular localization of the two proteins was first investigated using Agrobacterium-mediated transient expression of RFP-tagged SBT5.2(a) and SBT5.2(b) under the control of a dexamethasone- (Dex-) inducible promoter in leaf epidermal cells of N. benthamiana. As expected, SBT5.2(a) was found to be located in apoplastic spaces whereas SBT5.2(b) was detected at vesicle-like structures inside cells (Figure 2e).
 
 To obtain biochemical validation of the subcellular localization of SBT5.2(a) and SBT5.2(b), HA-tagged versions of both proteins were transiently expressed in N. benthamiana and intercellular fluid (IF) was isolated. In order to control the detection of intracellular proteins in the IF, the intracellular protein MIEL1 (Marino et al., 2013) was co-expressed with SBT5.2 proteins. As expected for an intracellular protein, MIEL1 was detected in the total extract fraction (TE) and not in the IF, confirming that the IF fraction did not contain intracellular proteins due to unintentional cellular lysis during IF isolation (Figure 2f). SBT5.2(a) was detected in the IF as two protein bands that may correspond to the processed and unprocessed forms of the protease, whereas SBT5.2(b) was exclusively detected in the TE and never in the IF fraction (Figure 2f). These results confirm the secretion of SBT5.2(a) and the intracellular localization of SBT5.2(b).
 
-## SBT5.2(a), but not SBT5.2(b), is N-glycosylated
+### SBT5.2(a), but not SBT5.2(b), is N-glycosylated
 
-Most extracellular or secreted proteins are modified via N-glycosylation (
+Most extracellular or secreted proteins are modified via N-glycosylation (Moremen et al., 2012). Seven putative N-linked glycosylation sites (PGSs; N in NxS/T motifs) are present in SBT5.2 proteins [N225, N363, N467, N525, N636, N650 and N678 in SBT5.2(a)]. In order to test whether SBT5.2 proteins are glycosylated in planta, protein extracts containing SBT5.2(a) and SBT5.2(b) were treated with PNGase F or EndoH and analysed for mobility shifts by Western Blot. At the end of their maturation in the secretory pathway, some plant N-linked glycans are modified, which renders them resistant to cleavage by glycosylases (Lerouge et al., 1998). In agreement, an electrophoretic shift was only observed for the slow migrating, unprocessed form of SBT5.2(a), whereas migration of the fully processed form remained unaltered (Figure 3a). In addition, SBT5.2(a) bound to and was eluted from a concanavalin A resin (Figure 3b), further suggesting that SBT5.2(a) is a glycosylated protein. Finally, the increased electrophoretic mobility of SBT5.2(a) in protein extracts from N. benthamiana leaves expressing HA-tagged SBT5.2(a) and treated with tunicamycin, an inhibitor of N-linked glycosylation of newly synthesized glycoproteins in the ER (Bassik and Kampmann, 2011), further confirmed SBT5.2(a) N-glycosylation in planta (Figure 3c).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig3-v2.jpg)
 
-**Figure 3.:** in planta.(a) SBT5.2(a), but not SBT5.2(b), is deglycosylated by PNGase F and Endo H. Protein extracts containing HA-tagged SBT5.2(a) and SBT5.2(b) transiently expressed in N. benthamiana were treated (+) or not (−) with PNGase F or Endo H as indicated. The arrowhead on the left indicates the fully processed form of SBT5.2(a) whose mobility is not affected by the enzymatic treatment. (b) HA-tagged SBT5.2(a), but not SBT5.2(b) can be affinity purified using a concanavalin A resin. (c) Glycosylation of HA-tagged SBT5.2(a), but not SBT5.2(b), is blocked by tunicamycin treatment (+) after transient expression in N. benthamiana. (d) Electrophoretic mobility of individual HA-tagged PGS SBT5.2(a) mutants. Mutated N to A residues are indicated. WT: wild-type SBT5.2(a) proteins were interspersed to facilitate detection of the mobility shifts. In all cases, Western blot analyses were performed using anti-HA antibodies.DOI: http://dx.doi.org/10.7554/eLife.19755.006
+**Figure 3.:** (a) SBT5.2(a), but not SBT5.2(b), is deglycosylated by PNGase F and Endo H. Protein extracts containing HA-tagged SBT5.2(a) and SBT5.2(b) transiently expressed in N. benthamiana were treated (+) or not (−) with PNGase F or Endo H as indicated. The arrowhead on the left indicates the fully processed form of SBT5.2(a) whose mobility is not affected by the enzymatic treatment. (b) HA-tagged SBT5.2(a), but not SBT5.2(b) can be affinity purified using a concanavalin A resin. (c) Glycosylation of HA-tagged SBT5.2(a), but not SBT5.2(b), is blocked by tunicamycin treatment (+) after transient expression in N. benthamiana. (d) Electrophoretic mobility of individual HA-tagged PGS SBT5.2(a) mutants. Mutated N to A residues are indicated. WT: wild-type SBT5.2(a) proteins were interspersed to facilitate detection of the mobility shifts. In all cases, Western blot analyses were performed using anti-HA antibodies.
 
 We next analyzed individual PGS removal mutants (in which the N residue was replaced by A) on high resolution SDS-PAGE gels to determine their electrophoretic mobility as compared to wild-type SBT5.2(a). This analysis revealed a small but significant mobility shift for all SBT5.2(a) PGS mutants (Figure 3d), suggesting that all PGS in SBT5.2(a) are used in planta.
 
 Despite the fact that SBT5.2(b) contains the seven PGSs present in SBT5.2(a), (i) SBT5.2(b) electrophoretic mobility was not modified after treatment with PNGase F or EndoH (Figure 3a); (ii) neither SBT5.2(b) binding to nor elution from a concanavalin A resin was observed (Figure 3b); and (iii) no effect of tunicamycin leaf treatment on the SBT5.2(b) electrophoresis profile was detected (Figure 3c). These results, which are consistent with the absence of SP in SBT5.2(b) and our previous observation that SBT5.2(b) is not secreted, strongly suggest that SBT5.2(b) does not enter the secretory pathway and is therefore not N-glycosylated.
 
-## SBT5.2(a), but not SBT5.2(b), shows serine protease activity
+### SBT5.2(a), but not SBT5.2(b), shows serine protease activity
 
-Subtilases, as other proteases, are typically able to catalyze their self-processing to render a mature active polypeptide. The presence of the three conserved amino acids in the catalytic triad of SBT5.2 proteins is consistent with these proteins displaying protease activity. When transiently expressing SBT5.2(a) in leaf epidermal cells of
+Subtilases, as other proteases, are typically able to catalyze their self-processing to render a mature active polypeptide. The presence of the three conserved amino acids in the catalytic triad of SBT5.2 proteins is consistent with these proteins displaying protease activity. When transiently expressing SBT5.2(a) in leaf epidermal cells of N. benthamiana, two protein bands were detected that, as mentioned earlier, may correspond to the processed and unprocessed forms of the protease (Figure 4a). In contrast, only a single band was detected for SBT5.2(b), suggesting that this protein is either not processed or fully processed in planta (Figure 4a). In order to learn more about the proteolytic cleavage of SBT5.2 proteins, we engineered SBT5.2(a) and SBT5.2(b) mutant versions, in which the conserved histidine residue in the catalytic triad of both proteins was mutated to alanine, [SBT5.2(a)H210A and SBT5.2(b)H171A]. Following transient expression in N. benthamiana, mutation of the catalytic histidine residue did not affect migration of SBT5.2(b) as compared to the wild-type protein, suggesting that this protein does not self-process in planta (Figure 4a). In contrast, in the case of SBT5.2(a)H210A, only the slow migrating band, that very likely corresponds to the unprocessed form of the protein, was detected (Figure 4a). This observation suggests that SBT5.2(a) is able to auto-process in planta and is thus active as a protease.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig4-v2.jpg)
 
-**Figure 4.:** (a) Western blot analysis shows expression of HA-tagged SBT5.2(a), SBT5.2(b) and their catalytic mutant versions in N. benthamiana, as indicated. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right. (b) Fluorimetric assay to detect protease activity following incubation of Arabidopsis protoplasts expressing the indicated proteins with fluorescein isothiocyanate (FITC)-conjugated casein (top). RFU: relative fluorescence units. Error bars indicate SEM. Lowercase letters indicate significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test. All proteins were detected by Western blot (bottom). (c) TAP-tagged MYB30 was expressed in N. benthamiana alone or with SBT5.2(a), SBT5.2(b) and their catalytic mutant versions, as indicated. Western blot analysis shows the expression of TAP-tagged MYB30 and HA-tagged SBT proteins. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right.DOI: http://dx.doi.org/10.7554/eLife.19755.007
+**Figure 4.:** (a) Western blot analysis shows expression of HA-tagged SBT5.2(a), SBT5.2(b) and their catalytic mutant versions in N. benthamiana, as indicated. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right. (b) Fluorimetric assay to detect protease activity following incubation of Arabidopsis protoplasts expressing the indicated proteins with fluorescein isothiocyanate (FITC)-conjugated casein (top). RFU: relative fluorescence units. Error bars indicate SEM. Lowercase letters indicate significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test. All proteins were detected by Western blot (bottom). (c) TAP-tagged MYB30 was expressed in N. benthamiana alone or with SBT5.2(a), SBT5.2(b) and their catalytic mutant versions, as indicated. Western blot analysis shows the expression of TAP-tagged MYB30 and HA-tagged SBT proteins. Ponceau S staining confirms equal loading. Molecular mass markers in kilodaltons are indicated on the right.
 
 The catalytic activity of HA-tagged SBT5.2(a) and SBT5.2(b) was further investigated using a fluorimetric assay. Protein extracts from Arabidopsis protoplasts expressing HA-tagged SBT5.2(a), SBT5.2(a)H210A, SBT5.2(b) or SBT5.2(b)H171A were incubated with the generic protease substrate casein conjugated to fluorescein isothiocyanate (FITC). Increased fluorescence was observed for SBT5.2(a), reflecting proteolytic cleavage of the FITC-casein substrate (Figure 4b). In contrast, fluorescence intensity in the case of SBT5.2(a)H210A, SBT5.2(b) and SBT5.2(b)H171A was indistinguishable from that of protoplasts transformed with an empty vector (Figure 4b), although their protein expression levels were comparable to those of SBT5.2(a) (Figure 4b). These results reinforce the idea that SBT5.2(a), but not SBT5.2(b), is correctly processed thus displaying protease activity.
 
 To determine whether SBT5.2(a) or SBT5.2(b) are involved in MYB30 proteolytic processing, the in planta accumulation of MYB30 when expressed alone or together with the different SBT5.2 proteins was analysed. As shown in Figure 4c, MYB30 accumulation was consistently unaltered in the presence of SBT5.2(a) or SBT5.2(b) as compared to the expression observed in the presence of the respective subtilase catalytic mutant versions. These results suggest that neither SBT5.2(a) nor SBT5.2(b) are able to proteolytically cleave MYB30.
 
-## SBT5.2(b), but not SBT5.2(a), interacts with MYB30 at intracellular vesicles
+### SBT5.2(b), but not SBT5.2(a), interacts with MYB30 at intracellular vesicles
 
-MYB30 was previously localized to the nucleus of
+MYB30 was previously localized to the nucleus of N. benthamiana and Arabidopsis cells (Froidure et al., 2010). In order to investigate MYB30 potential colocalization with SBT5.2(a) and/or SBT5.2(b), GFP-tagged MYB30 was co-expressed with RFP-tagged SBT5.2(a) or SBT5.2(b). Confocal microscopy analysis of N. benthamiana leaves transiently co-expressing GFP-MYB30 and SBT5.2(a)-RFP showed that these proteins do not co-localize in planta, as SBT5.2(a) and MYB30 retain their respective extracellular and nuclear localization when expressed together (Figure 5a). Surprisingly, when co-expressed with RFP-tagged SBT5.2(b), GFP-MYB30 was excluded from the nucleus and localized to the same vesicle-like structures where SBT5.2(b) was localized, suggesting a possible in planta interaction between the two proteins outside the nucleus (Figure 5a). Importantly, the unrelated MYB TF MYB123 retained its nuclear localization when co-expressed with SBT5.2(b), suggesting that SBT5.2(b)-mediated MYB30 nuclear exclusion is specific (Figure 5a). Moreover, SBT5.2(b)-mediated specific nuclear exclusion of MYB30 was confirmed in Arabidopsis protoplasts (Figure 5b).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-v2.jpg)
 
-**Figure 5.:** (a) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. (b) Confocal images of Arabidopsis protoplasts 16 hr after transformation of the indicated constructs. (c,d) GFP lifetime distribution of GFP-MYB30 in N. benthamiana cells (c) or Arabidopsis protoplasts (d) expressing SBT5.2(b). Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)-HA (green bars) or SBT5.2(b)-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (SBT5.2(b)-RFP) and green (SBT5.2(b)-HA) arrows. Bars = 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19755.008
+**Figure 5.:** (a) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. (b) Confocal images of Arabidopsis protoplasts 16 hr after transformation of the indicated constructs. (c,d) GFP lifetime distribution of GFP-MYB30 in N. benthamiana cells (c) or Arabidopsis protoplasts (d) expressing SBT5.2(b). Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)-HA (green bars) or SBT5.2(b)-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (SBT5.2(b)-RFP) and green (SBT5.2(b)-HA) arrows. Bars = 10 µm.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (a) Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of GFP-tagged MYB30 and HA-tagged (top) or untagged (down) versions of SBT5.2(b) Bars = 10 µm. (b) Confocal images of Arabidopsis protoplasts 16 hr after transformation with the indicated constructs. Bars = 10 µm. (c) GFP lifetime distribution of GFP-MYB30 in protoplasts expressing SBT5.2(b)H171A. Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)H171A-HA (green bars) or SBT5.2(b)H171A-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (+SBT5.2(b)H171A-RFP) and green (SBT5.2(b)H171A-HA) arrows.DOI: http://dx.doi.org/10.7554/eLife.19755.009
+**Figure 5—figure supplement 1.:** (a) Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of GFP-tagged MYB30 and HA-tagged (top) or untagged (down) versions of SBT5.2(b) Bars = 10 µm. (b) Confocal images of Arabidopsis protoplasts 16 hr after transformation with the indicated constructs. Bars = 10 µm. (c) GFP lifetime distribution of GFP-MYB30 in protoplasts expressing SBT5.2(b)H171A. Histograms show the number of vesicles according to GFP-MYB30 lifetime classes in the presence of SBT5.2(b)H171A-HA (green bars) or SBT5.2(b)H171A-RFP (magenta bars). The degree of overlap of GFP lifetime distribution is represented with magenta (+SBT5.2(b)H171A-RFP) and green (SBT5.2(b)H171A-HA) arrows.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (a–c) Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 µm. (d–f) GFP lifetime distribution of GFP-MYB30, or GFP-MYB123, in nuclei of N. benthamiana cells expressing the C-terminus of SBT5.2(b) [SBT5.2(b)341-730], or SBT5.1 [SBT5.1405-780], as indicated. Histograms show the number of nuclei according to GFP-MYB30, or GFP-MYB123, lifetime classes when the MYB protein is expressed alone (green bars) or in the presence of RFP-tagged SBT5.2(b)341-730, or SBT5.1405-780, (magenta bars), as indicated. The degree of overlap of GFP lifetime distribution is represented with magenta (+RFP-tagged SBT constructs) and green (GFP-tagged MYB constructs) arrows.DOI: http://dx.doi.org/10.7554/eLife.19755.010
+**Figure 5—figure supplement 2.:** (a–c) Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 µm. (d–f) GFP lifetime distribution of GFP-MYB30, or GFP-MYB123, in nuclei of N. benthamiana cells expressing the C-terminus of SBT5.2(b) [SBT5.2(b)341-730], or SBT5.1 [SBT5.1405-780], as indicated. Histograms show the number of nuclei according to GFP-MYB30, or GFP-MYB123, lifetime classes when the MYB protein is expressed alone (green bars) or in the presence of RFP-tagged SBT5.2(b)341-730, or SBT5.1405-780, (magenta bars), as indicated. The degree of overlap of GFP lifetime distribution is represented with magenta (+RFP-tagged SBT constructs) and green (GFP-tagged MYB constructs) arrows.
 
-We next sought out to confirm the interaction between MYB30 and SBT5.2 in plant cells. We focused on the study of the interaction between MYB30 and SBT5.2(b) because we were unable to detect a subcelullar co-localisation between MYB30 (nuclear) and SBT5.2(a) (secreted) (Figure 5a,b), which is a first requisite for the study of protein-protein interactions. The physical interaction between SBT5.2(b) and MYB30 was investigated in FRET-FLIM assays using GFP- (donor) and RFP- (acceptor) tagged MYB30 and SBT5.2(b), respectively. In order to avoid potential changes in GFP lifetime due to differences in the molecular environments of two distinct subcellular compartments [MYB30 being nuclear when expressed alone or in vesicle-like structures when co-expressed with SBT5.2(b)], the subcellular localization of GFP-tagged MYB30 when co-expressed with non-fluorescent HA-tagged, or an untagged version of SBT5.2(b), was therefore investigated. Importantly, both SBT5.2(b)-HA and untagged SBT5.2(b), which are not able to act as acceptors for GFP fluorescence, also led to MYB30 retention in intracellular vesicle-like structures (Figure 5—figure supplement 1a,b). A significant reduction of GFP lifetime was observed when GFP-MYB30 was co-expressed with RFP-tagged SBT5.2(b) as compared to co-expression with SBT5.2(b)-HA, both in N. benthamiana epidermal cells and in Arabidopsis protoplasts, thus confirming the physical interaction between the two proteins in intracellular vesicles (Figure 5c,d; Table 1). This interaction did not depend on the integrity of SBT5.2(b) catalytic triad, as shown by the reduced GFP lifetime of GFP-MYB30 when co-expressed with RFP-tagged SBT5.2(b)H171A (Table 1; Figure 5—figure supplement 1c).10.7554/eLife.19755.011Table 1.FRET-FLIM analysis shows that MYB30 physically interacts with SBT5.2(b) at intracellular vesicles.DOI: http://dx.doi.org/10.7554/eLife.19755.011DonorAcceptorLifetime*SD†N‡E§p-value#N. benthamianaGFP-MYB30SBT5.2(b)-HA2.5520.01357-GFP-MYB30SBT5.2(b)-RFP2.2740.0195410.865.8 × 10−21GFP-MYB30-2.6690.00982GFP-MYB30SBT5.2(b)362-730-RFP2.2710.0165114.913.8 × 10−49GFP-MYB30SBT5.1(b)405-780-RFP2.5920.018442.864.2 × 10−05GFP-MYB123-2.5700.01359GFP-MYB123SBT5.2(b)362-730-RFP2.5440.013581.000.17A. thalianaGFP-MYB30SBT5.2(b)-HA2.4910.00960-GFP-MYB30SBT5.2(b)-RFP2.1510.0186013.651.2 × 10−33GFP-MYB30SBT5.2(b)H171A-HA2.4730.01260-GFP-MYB30SBT5.2(b)H171A-RFP2.1150.0236014.497.8 × 10−26* Mean lifetime in nanoseconds† Standard deviation‡ Total number of measured vesicles§ Percentage of FRET efficiency (E = 1 - τDA/τD) calculated by comparing the lifetime of the donor in the presence of the acceptor (τDA) with its lifetime in the absence of the acceptor (τD).# p value of the difference between the donor lifetimes in the presence and in the absence of the acceptor (t-test)
+We next sought out to confirm the interaction between MYB30 and SBT5.2 in plant cells. We focused on the study of the interaction between MYB30 and SBT5.2(b) because we were unable to detect a subcelullar co-localisation between MYB30 (nuclear) and SBT5.2(a) (secreted) (Figure 5a,b), which is a first requisite for the study of protein-protein interactions. The physical interaction between SBT5.2(b) and MYB30 was investigated in FRET-FLIM assays using GFP- (donor) and RFP- (acceptor) tagged MYB30 and SBT5.2(b), respectively. In order to avoid potential changes in GFP lifetime due to differences in the molecular environments of two distinct subcellular compartments [MYB30 being nuclear when expressed alone or in vesicle-like structures when co-expressed with SBT5.2(b)], the subcellular localization of GFP-tagged MYB30 when co-expressed with non-fluorescent HA-tagged, or an untagged version of SBT5.2(b), was therefore investigated. Importantly, both SBT5.2(b)-HA and untagged SBT5.2(b), which are not able to act as acceptors for GFP fluorescence, also led to MYB30 retention in intracellular vesicle-like structures (Figure 5—figure supplement 1a,b). A significant reduction of GFP lifetime was observed when GFP-MYB30 was co-expressed with RFP-tagged SBT5.2(b) as compared to co-expression with SBT5.2(b)-HA, both in N. benthamiana epidermal cells and in Arabidopsis protoplasts, thus confirming the physical interaction between the two proteins in intracellular vesicles (Figure 5c,d; Table 1). This interaction did not depend on the integrity of SBT5.2(b) catalytic triad, as shown by the reduced GFP lifetime of GFP-MYB30 when co-expressed with RFP-tagged SBT5.2(b)H171A (Table 1; Figure 5—figure supplement 1c).
+
+**Table 1.**
+ FRET-FLIM analysis shows that MYB30 physically interacts with SBT5.2(b) at intracellular vesicles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Acceptor</th>
+      <th>Lifetime*</th>
+      <th>SD†</th>
+      <th>N‡</th>
+      <th>E§</th>
+      <th>p-value#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N. benthamiana</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)-HA</td>
+      <td>2.552</td>
+      <td>0.013</td>
+      <td>57</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)-RFP</td>
+      <td>2.274</td>
+      <td>0.019</td>
+      <td>54</td>
+      <td>10.86</td>
+      <td>5.8 × 10−21</td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>-</td>
+      <td>2.669</td>
+      <td>0.009</td>
+      <td>82</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)362-730-RFP</td>
+      <td>2.271</td>
+      <td>0.016</td>
+      <td>51</td>
+      <td>14.91</td>
+      <td>3.8 × 10−49</td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.1(b)405-780-RFP</td>
+      <td>2.592</td>
+      <td>0.018</td>
+      <td>44</td>
+      <td>2.86</td>
+      <td>4.2 × 10−05</td>
+    </tr>
+    <tr>
+      <td>GFP-MYB123</td>
+      <td>-</td>
+      <td>2.570</td>
+      <td>0.013</td>
+      <td>59</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB123</td>
+      <td>SBT5.2(b)362-730-RFP</td>
+      <td>2.544</td>
+      <td>0.013</td>
+      <td>58</td>
+      <td>1.00</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>A. thaliana</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)-HA</td>
+      <td>2.491</td>
+      <td>0.009</td>
+      <td>60</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)-RFP</td>
+      <td>2.151</td>
+      <td>0.018</td>
+      <td>60</td>
+      <td>13.65</td>
+      <td>1.2 × 10−33</td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)H171A-HA</td>
+      <td>2.473</td>
+      <td>0.012</td>
+      <td>60</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP-MYB30</td>
+      <td>SBT5.2(b)H171A-RFP</td>
+      <td>2.115</td>
+      <td>0.023</td>
+      <td>60</td>
+      <td>14.49</td>
+      <td>7.8 × 10−26</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Mean lifetime in nanoseconds† Standard deviation‡ Total number of measured vesicles§ Percentage of FRET efficiency (E = 1 - τDA/τD) calculated by comparing the lifetime of the donor in the presence of the acceptor (τDA) with its lifetime in the absence of the acceptor (τD).# p value of the difference between the donor lifetimes in the presence and in the absence of the acceptor (t-test)_
 
 The identification of a partial SBT5.2 cDNA clone in yeast suggested that the MYB30-SBT5.2(b) interaction is mediated by the C-terminus of SBT5.2(b). In order to confirm this idea, a truncated SBT5.2(b) version containing the C-terminal end of the protein [SBT5.2(b)362-730] fused to the RFP was generated and transiently expressed in N. benthamiana. SBT5.2(b)362-730-RFP presents a nucleocytoplasmic localization and colocalises with MYB30 in the nucleus (Figure 5—figure supplement 2a). A significant reduction of the average GFP lifetime was measured in nuclei coexpressing GFP-MYB30 and SBT5.2(b)362-730-RFP, as compared to nuclei expressing GFP-MYB30 alone (Figure 5—figure supplement 2d; Table 1), confirming that the C-terminus of SBT5.2(b) is sufficient for the interaction with MYB30. The specificity of this observation was highlighted by the lack of interaction between GFP-MYB30 and the equivalent C-terminal domain of the closest Arabidopsis SBT5.2 homolog, SBT5.1, (SBT5.1405-780-RFP) (Figure 5—figure supplement 2b,e; Table 1). Moreover, no significant reduction of the average GFP lifetime was detected between nuclei expressing the unrelated TF MYB123 [whose nuclear localization was not affected in the presence of full length SBT5.2(b) (Figure 5a,b)], when expressed alone or together with SBT5.2(b)362-730-RFP, despite the nuclear co-localization of the two proteins (Figure 5—figure supplement 2c,f; Table 1).
 
 Together, our data confirms that MYB30 specifically interacts with SBT5.2(b) at vesicle-like structures. This interaction is mediated by SBT5.2(b) C-terminus, does not require an intact SBT5.2(b) catalytic triad and results in MYB30 nuclear exclusion.
 
-## An N-terminal myristoylation site in SBT5.2(b) determines its localization to endosomes and MYB30 nuclear exclusion
+### An N-terminal myristoylation site in SBT5.2(b) determines its localization to endosomes and MYB30 nuclear exclusion
 
-We next sought to determine the nature of the intracellular vesicle-like structures where SBT5.2(b) resides. Given the mobile character and varied sizes of these vesicles, we conducted co-localization experiments with VHA-a1 and SYP61, two markers for the trans-Golgi network/early endosomes (TGN/EE) (
+We next sought to determine the nature of the intracellular vesicle-like structures where SBT5.2(b) resides. Given the mobile character and varied sizes of these vesicles, we conducted co-localization experiments with VHA-a1 and SYP61, two markers for the trans-Golgi network/early endosomes (TGN/EE) (Dettmer et al., 2006; Tanaka et al., 2009) and ARA6 and SYP21, two markers for late endosomes/multivesicular bodies (LE/MVB) (Ueda et al., 2004; Uemura et al., 2004). Colocalization with of SBT5.2(b) with these endosomal markers was clearly observed in N. benthamiana leaves (Figure 6a, Figure 6—figure supplement 1). In contrast, no colocalization of SBT5.2(b)-RFP with the Golgi marker GmMan-GFP (Nelson et al., 2007) was detected (Figure 6a).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig6-v2.jpg)
 
-**Figure 6.:** (a,b) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 µm. (a) SBT5.2(b) localizes to endosomal vesicles. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. (b) A free N-terminal myristoylation site in SBT5.2(b) mediates its localization to endosomes and retention of MYB30 in endosomal vesicles. (c) Relative fluorescence values of cytoplasmic MYB30, expressed alone or with the indicated SBT5.2(b) versions, represented as ratios between cytoplasmic and nuclear fluorescence values in individual cells. Mean and SEM values were calculated from two independent experiments in which fifteen fluorescence measurements were taken per experiment and construct combination. Lowercase letters indicate statistically significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test.DOI: http://dx.doi.org/10.7554/eLife.19755.012
+**Figure 6.:** (a,b) Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. Bars = 10 µm. (a) SBT5.2(b) localizes to endosomal vesicles. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. (b) A free N-terminal myristoylation site in SBT5.2(b) mediates its localization to endosomes and retention of MYB30 in endosomal vesicles. (c) Relative fluorescence values of cytoplasmic MYB30, expressed alone or with the indicated SBT5.2(b) versions, represented as ratios between cytoplasmic and nuclear fluorescence values in individual cells. Mean and SEM values were calculated from two independent experiments in which fifteen fluorescence measurements were taken per experiment and construct combination. Lowercase letters indicate statistically significant differences as determined by Bonferroni-corrected p-values (p<0.001) obtained after ANOVA and subsequent LSD post-hoc test.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19755.013
+**Figure 6—figure supplement 1.:** Confocal images of epidermal cells of N. benthamiana leaves 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 µm.
 
 The nucleocytoplasmic subcellular localization of SBT5.2(b)362-730 suggested that the N-terminal region of SBT5.2(b) is required for its localization to endosomes (Figure 5—figure supplement 2). In order to further test this idea, an N-terminal deletion of SBT5.2(b) was generated [SBT5.2(b)162-730]. RFP-tagged SBT5.2(b)162-730 indeed localized to the cytoplasm (Figure 6b). Furthermore, an N-terminally tagged RFP fusion of SBT5.2(b) also presented a cytoplasmic localization (Figure 6b), suggesting that a free SBT5.2(b)N-terminus is necessary for SBT5.2(b) endosomal targeting. Close inspection of the SBT5.2(b)N-terminal region uncovered the presence of a putative myristoylation site (MGSASSA; Figure 2—figure supplement 1c). A SBT5.2(b) version in which the putatively myristoylated Gly2 residue was mutated to Ala [SBT5.2(b)G2A] also localized to the cytoplasm (Figure 6b), confirming the importance of N-myristoylation for SBT5.2(b) endosomal targeting. Finally, co-expression of SBT5.2(b)162-730-RFP, RFP-SBT5.2(b) or SBT5.2(b)G2A RFP with GFP-MYB30 did not affect MYB30 nuclear targeting (Figure 6b). Interestingly, MYB30 accumulation in the cytoplasm was enhanced in the presence of these SBT5.2(b) versions, consistent with the presence in the three proteins of an intact SBT5.2 C-terminal domain that mediates the interaction with MYB30 (Figure 6c). An HA-tagged SBT5.2(b)G2A version induced the same effect confirming that the enhanced detection of GFP-MYB30 in the cytoplasm is not an artefact due the presence of a second fluorophore. Together, our data strongly suggest that a free N-terminal myristoylated residue is responsible of SBT5.2(b) targeting to the endosomes and of MYB30 retention in endosomal vesicles.
 
-In order to further characterize the simultaneous localization of SBT5.2(b) to both early and late endosomes, HA-tagged versions of either SBT5.2(a), SBT5.2(b) or SBT5.2(b)
+In order to further characterize the simultaneous localization of SBT5.2(b) to both early and late endosomes, HA-tagged versions of either SBT5.2(a), SBT5.2(b) or SBT5.2(b)G2A were co-expressed with both GFP-tagged VHA-a1 and RFP-tagged ARA6. When expressed with SBT5.2(a), both subcellular markers conserved their distinct subcellular localization in TGN/EE and LE/MVB, respectively (Figure 7). In contrast, co-expression with SBT5.2(b) led to co-localization of VHA-a1 and ARA6 in the same endosomal compartment, strongly suggesting that SBT5.2(b) is able to interfere with endosomal trafficking. Myristoylation of SBT5.2(b) appears to be essential to this effect, since expression of SBT5.2(b)G2A did not affect the discrete endosomal populations tagged by VHA-a1 or ARA6 (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig7-v2.jpg)
 
-**Figure 7.:** Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19755.014
+**Figure 7.:** Confocal images of epidermal N. benthamiana cells 36 hr after Agrobacterium-mediated transient expression of the indicated constructs. TGN/EE: trans-Golgi network/early endosomes; LE/MVB: late endosomes/multivesicular bodies. Bars = 10 µm.
 
-## SBT5.2(b) attenuates MYB30-mediated responses to bacterial infection
+### SBT5.2(b) attenuates MYB30-mediated responses to bacterial infection
 
-To investigate the function of SBT5.2 in the plant response to bacterial inoculation, we used Arabidopsis
+To investigate the function of SBT5.2 in the plant response to bacterial inoculation, we used Arabidopsis sbt5.2 null mutants, sbt5.2–1 (SALK_012113) and sbt5.2–2 (SALK_132812C), both containing a T-DNA insertion in the last exon of SBT5.2. Despite the severe reduction of SBT5.2 expression in the mutant lines (Figure 8—figure supplement 1), no obvious macroscopic phenotype was observed in these plants. The phenotype of these lines in response to bacterial inoculation was next analysed. Similar to MYB30-overexpressing (MYB30OE), sbt5.2 mutant plants showed stronger HR cell death symptoms after inoculation with Pst AvrRpm1 as compared to Col-0 wild-type plants (Figure 8a). This phenotype was quantified by ion leakage measurements in leaf disk assays. Conductivity values measured in sbt5.2 and MYB30OE plants were significantly higher than those displayed by Col-0 wild type plants after bacterial inoculation (Figure 8b). In agreement with faster HR development, sbt5.2 plants showed increased resistance in response to inoculation with Pst AvrRpm1, as compared to wild-type plants (Figure 8c), confirming the role of SBT5.2 as a negative regulator of plant defence.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig8-v2.jpg)
 
-**Figure 8.:** (a) Symptoms developed by the indicated Arabidopsis lines 60 hpi with Pst AvrRpm1 (2 × 106 cfu/ml). The pictures are representative of three independent experiments in which 4 plants of each line were infiltrated. (b) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines in a time course of 24 hr. Plants were inoculated with Pst AvrRpm1 (5 × 106 cfu/ml). Mean and SEM values were calculated from four independent experiments in which three plants were inoculated (four leaves/plant). (c) Growth of Pst AvrRpm1 in the indicated Arabidopsis lines. Bacterial growth 0 (white bars) and three days (blue bars) was measured after inoculation (5 × 105 cfu/ml). Mean bacterial densities were calculated from 6 independent experiments with 6 individual plants (4 leaves/plant). Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.001) are indicated by letters.DOI: http://dx.doi.org/10.7554/eLife.19755.015
+**Figure 8.:** (a) Symptoms developed by the indicated Arabidopsis lines 60 hpi with Pst AvrRpm1 (2 × 106 cfu/ml). The pictures are representative of three independent experiments in which 4 plants of each line were infiltrated. (b) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines in a time course of 24 hr. Plants were inoculated with Pst AvrRpm1 (5 × 106 cfu/ml). Mean and SEM values were calculated from four independent experiments in which three plants were inoculated (four leaves/plant). (c) Growth of Pst AvrRpm1 in the indicated Arabidopsis lines. Bacterial growth 0 (white bars) and three days (blue bars) was measured after inoculation (5 × 105 cfu/ml). Mean bacterial densities were calculated from 6 independent experiments with 6 individual plants (4 leaves/plant). Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.001) are indicated by letters.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** sbt5.2 mutant lines before and after transformation with SBT5.2(a) and SBT5.2(b) overexpresing constructs.(a) The expression of SBT5.2 is strongly repressed in sbt5.2 mutant lines. qRT-PCR analysis of the six members of the clade V of Arabidopsis subtilases in wild-type Col-0 (black bars), sbt5.2–1 (gray bars) and sbt5.2–2 (white bars) Arabidopsis leaves. Expression values were normalized using SAND family gene as internal standard. Mean and SEM values were calculated from 4 independent replicates. Expression of SBT 5.4 and SBT5.5 was not detected in any line. (b) The relative expression of SBT5.2 in Arabidopsis leaves in wild-type Col-0, SBT5.2(a)OE and SBT5.2(b)OE lines was determined by qRT-PCR. The expression values were normalized by using SAND family gene as internal standard, and related to the value of Col-0, which is set at 1. Mean and SEM values were calculated from four individual plants per line. (c) Western blot analysis showing SBT5.2(a)-HA or SBT5.2(b)-HA protein accumulation in Arabidopsis transgenic and Col-0 wild-type plants. Ponceau S staining confirms equal loading. Molecular mass markers in kiloDaltons are indicated on the right.DOI: http://dx.doi.org/10.7554/eLife.19755.016
+**Figure 8—figure supplement 1.:** (a) The expression of SBT5.2 is strongly repressed in sbt5.2 mutant lines. qRT-PCR analysis of the six members of the clade V of Arabidopsis subtilases in wild-type Col-0 (black bars), sbt5.2–1 (gray bars) and sbt5.2–2 (white bars) Arabidopsis leaves. Expression values were normalized using SAND family gene as internal standard. Mean and SEM values were calculated from 4 independent replicates. Expression of SBT 5.4 and SBT5.5 was not detected in any line. (b) The relative expression of SBT5.2 in Arabidopsis leaves in wild-type Col-0, SBT5.2(a)OE and SBT5.2(b)OE lines was determined by qRT-PCR. The expression values were normalized by using SAND family gene as internal standard, and related to the value of Col-0, which is set at 1. Mean and SEM values were calculated from four individual plants per line. (c) Western blot analysis showing SBT5.2(a)-HA or SBT5.2(b)-HA protein accumulation in Arabidopsis transgenic and Col-0 wild-type plants. Ponceau S staining confirms equal loading. Molecular mass markers in kiloDaltons are indicated on the right.
 
-Importantly,
+Importantly, sbt5.2 mutant plants displayed higher expression of MYB30 VLCFA-related target genes FDH and CER2 (Raffaele et al., 2008) as compared to Col-0 wild-type plants 1 hr after inoculation (Figure 9a). Moreover, this phenotype was abolished in the myb30 mutant background (sbt5.2 myb30; Figure 9a) and correlated with loss of increased HR in the sbt5.2 myb30 double mutant (Figure 9b). Together, these data confirm that SBT5.2 negatively regulates Arabidopsis defence through repression of MYB30 transcriptional activity.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/19755/elife-19755-fig9-v2.jpg)
 
-**Figure 9.:** (a) Expression analysis of the MYB30 target genes FDH and CER2 in the indicated Arabidopsis lines 1 hr after inoculation with Pst AvrRpm1 (5 × 107 cfu/ml). Expression values of the individual genes were normalized using SAND family as internal standard. Mean and SEM values were calculated from 3 independent experiments (4 replicates/experiment). Statistical significance according to a Student’s t-test (p<0.05) is indicated by letters. (b,c) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines before (black bars) and 24 hr after (gray bars) inoculation with Pst AvrRpm1 (5 × 106 cfu/ml). Mean and SEM values were calculated from four independent experiments (three plants/experiment and four leaves/plant) and related to the value displayed by wild-type Col-0 plants, which is set at 100%. Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.01) are indicated by letters. (d) Representative pictures of accumulation of phenolic compounds (blue coloration indicative of cell death) in the indicated Arabidopsis lines detected by epifluorescence 24 hr after inoculation with Pst AvrRpm1 (2 × 105 cfu/ml). Bar = 100 µm. (e) Blue pixels in the indicated lines were quantified using Image-Pro Plus and are shown as the percentage of the total number of blue pixels in each image. Boxplots are as follows: box limits, values between first and third quartiles; middle bar, median. Whiskers cover 1.5 times the interquartile distance and circles represent extreme values. Lowercase letters indicate significant differences with respect to the sbt5.5–2 line as determined by Bonferroni-corrected p-values (p<0.01) obtained after ANOVA and subsequent LSD post-hoc test.DOI: http://dx.doi.org/10.7554/eLife.19755.017
+**Figure 9.:** (a) Expression analysis of the MYB30 target genes FDH and CER2 in the indicated Arabidopsis lines 1 hr after inoculation with Pst AvrRpm1 (5 × 107 cfu/ml). Expression values of the individual genes were normalized using SAND family as internal standard. Mean and SEM values were calculated from 3 independent experiments (4 replicates/experiment). Statistical significance according to a Student’s t-test (p<0.05) is indicated by letters. (b,c) Quantification of cell death by measuring electrolyte leakage of the indicated Arabidopsis lines before (black bars) and 24 hr after (gray bars) inoculation with Pst AvrRpm1 (5 × 106 cfu/ml). Mean and SEM values were calculated from four independent experiments (three plants/experiment and four leaves/plant) and related to the value displayed by wild-type Col-0 plants, which is set at 100%. Statistical differences using multiple factor analysis of variance (ANOVA) (p<0.01) are indicated by letters. (d) Representative pictures of accumulation of phenolic compounds (blue coloration indicative of cell death) in the indicated Arabidopsis lines detected by epifluorescence 24 hr after inoculation with Pst AvrRpm1 (2 × 105 cfu/ml). Bar = 100 µm. (e) Blue pixels in the indicated lines were quantified using Image-Pro Plus and are shown as the percentage of the total number of blue pixels in each image. Boxplots are as follows: box limits, values between first and third quartiles; middle bar, median. Whiskers cover 1.5 times the interquartile distance and circles represent extreme values. Lowercase letters indicate significant differences with respect to the sbt5.5–2 line as determined by Bonferroni-corrected p-values (p<0.01) obtained after ANOVA and subsequent LSD post-hoc test.
 
 In sbt5.2 mutant plants, expression of both SBT5.2(a) and SBT5.2(b) is affected. To obtain additional proof of the negative role specifically played by SBT5.2(b) on MYB30-mediated responses, sbt5.2 mutant plants were transformed with an HA-tagged version of either SBT5.2(a) or SBT5.2(b) under the control of the 35S promoter. Expression of SBT5.2 gene and protein was monitored by qRT-PCR and Western Blot analysis in two independent homozygous T4 lines for each construct (Figure 8—figure supplement 1b,c). Importantly, the increased HR phenotype displayed by the sbt5.2 mutant was specifically suppressed in sbt5.2 plants overexpressing SBT5.2(b), but not SBT5.2(a) (Figure 9c).
 
@@ -164,7 +303,7 @@ During the last few years, different regulatory mechanisms of MYB30-mediated HR 
 
 ## Materials and methods
 
-## Cloning procedures
+### Cloning procedures
 
 Plasmids used in this study were constructed by Gateway technology (GW; Invitrogen, Waltham, MA, USA) following the instructions of the manufacturer. PCR products flanked by the attB sites were recombined into the pDONR207 vector (Invitrogen) via a BP reaction to create the corresponding entry clones with attL sites. Inserts cloned into the entry clones were subsequently recombined into the destination vectors via an LR reaction to create the expression constructs.
 
@@ -174,15 +313,15 @@ For yeast assays, the GAL4-BD-MYB30ΔAD fusion was previously described (Froidu
 
 Point mutations were generated using the QuickChange mutagenesis kit (Stratagene, Santa Clara, CA, USA) using the pENTR-SBT5.2 as a template and following the manufacturer’s instructions. Primers used for mutagenesis are shown in Supplementary file 1.
 
-## Yeast assays
+### Yeast assays
 
 The yeast two-hybrid screen and methods used for identification of SBT5.2 were previously described (Froidure et al., 2010). Briefly, an Arabidopsis thaliana Gal4 yeast two-hybrid cDNA prey library (MatchMaker; Clontech) was generated from mRNA isolated from leaves of four-week-old plants (Ws-4 ecotype) syringe-infiltrated with the Xanthomonas campestris pv. campestris 147 strain. An MYB30 version deleted from its C-terminal activation domain (amino acids 1 to 234) was used as bait for screening 2 × 106 independent transformants exhibiting His auxotrophy on selective plates.
 
-## 5’ RACE assays
+### 5’ RACE assays
 
 5’ ends of SBT5.2 mRNA were determined using the GeneRacerTM RACE Ready kit (Invitrogen, France) according to manufacturers’ instructions, using RNA from Col-0 leaves and gene specific primers indicated in Supplementary file 1. PCR products were cloned in pGEM-T Easy vector (Promega Corporation, Fitchburg, WI, USA) and sequenced.
 
-## Plant and bacterial materials
+### Plant and bacterial materials
 
 Arabidopsis lines used in this study were in the Columbia background and grown in Jiffy pots under controlled conditions in a growth chamber at 21°C, with a 9-hr light period and a light intensity of 190 µmol.m−2.s−1. The MYB30ko line (SALK_122884) was reported before (Marino et al., 2013).
 
@@ -192,7 +331,7 @@ When testing the effect of SBT5.2 proteins on MYB30 accumulation, to minimize di
 
 Arabidopsis four-week-old plants were kept at high humidity 12 hr before inoculation and injected with a bacterial suspension of Pst AvrRpm1 at the indicated bacterial densities using a blunt syringe on the abaxial side of the leaves. For determination of in planta bacterial growth, the leaf samples were harvested 0 and three days after inoculation and ground on sterile water. A predetermined dilution for each sample was plated on King’s B medium and incubated at 28°C for two days. The data were submitted to a statistical analysis using Statgraphics Centurion XV.II Professional Software (Statpoint Technologies Inc., Warrenton, VA, USA). Normality of residues was verified by the Kolmogorov-Smirmov test. The effect of the genotype was tested by Multiple Factor ANOVA.
 
-## Fluorescence microscopy, FRET-FLIM and data analysis
+### Fluorescence microscopy, FRET-FLIM and data analysis
 
 GFP and RFP fluorescence was analyzed with a confocal laser scanning microscope (TCS SP2-AOBS; Leica) using a x63 water immersion objective lens (numerical aperture 1.20; PL APO). GFP fluorescence was excited with the 488 nm ray line of the argon laser and recorded in one of the confocal channels in the 505 to 530 nm emission range. RFP fluorescence was excited with the 561 nm line ray of the He-Ne laser and detected in the range between 595 and 620 nm. Images were acquired in the sequential mode using Leica LCS software (version 2.61).
 
@@ -200,34 +339,34 @@ In order to quantify the fluorescence of MYB30 in the nucleus and cytoplasm, flu
 
 The fluorescence lifetime of the donor was experimentally measured in the presence and absence of the acceptor. The FRET efficiency (E) was calculated by comparing the lifetime of the donor in the presence (tDA) or absence (tD) of the acceptor: E = 1-(tDA)/(tD). Statistical comparisons between control (donor) and assay (donor + acceptor) lifetime values were performed by Student t test. FRET-FLIM measurements were performed using a FLIM system coupled to a streak camera (Krishnan et al., 2003). The light source (l = 850 nm) was a pulsed pulsed femtosecond IR laser (Spectra-Physics, USA). All images were acquired with a 60x oil immersion lens (Plan Apo 1.4 numerical aperture, IR) mounted on an inverted microscope (Eclipse TE2000E, Nikon, Japan) coupled to the FLIM system. The fluorescence emission was directed back out into the detection unit through a band pass filter. The detector was composed of a streak camera (Streakscope C4334, Hamamatsu Photonics, Japan) coupled with a fast and high sensitivity CCD camera (model C8800-53C, Hamamatsu). For each region of interest (vesicle and nucleus), average fluorescence decay profiles were plotted and lifetimes were estimated by fitting data with exponential function using a non-linear least-squares estimation procedure.
 
-## Deglycosylation experiments
+### Deglycosylation experiments
 
 Proteins were extracted in 50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 10% [v/v] glycerol, 1 mM PMSF, and 1% plant protease inhibitor cocktail (Sigma-Aldrich, St Louis, MO, USA) and centrifuged at 14,000g for 10 min at 4°C. Proteins in the supernatant were denatured and then incubated with PNGase F or Endo H (New England Biolabs, Ipswich, MA, USA) following the instructions of the manufacturer. Deglycosylation reactions were performed for 30 min and stopped by adding SDS-PAGE loading buffer and boiling. Proteins were detected by Western blot using anti-HA antibodies as described below.
 
-## Concanavalin A purification
+### Concanavalin A purification
 
 Proteins were extracted in 50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 10% [v/v] glycerol, 1 mM PMSF, and 1% plant protease inhibitor cocktail (Sigma-Aldrich) and centrifuged at 14,000 g for 10 min at 4°C. The supernatant was equilibrated in concanavalin A buffer (0.2 M Tris-HCl pH 7.5, 1 M NaCl, 200 mM MgCl2, 200 mM CaCl2) and applied to concanavalin A-agarose resin from Canavalia ensiformis (Sigma-Aldrich) pre-equilibrated in concanavalin A buffer. After three steps of washing with concanavalin A buffer, glycosylated proteins were eluted in concanavalin A buffer supplemented with 0.75 M α-D-methyl-glucoside and 0.75 M α-D-methylmannoside. The presence of HA-tagged SBT5.2 in the eluted proteins was confirmed by Western blot using anti HA antibodies as described below.
 
-## Isolation of intercellular (apoplastic) fluid
+### Isolation of intercellular (apoplastic) fluid
 
 N. benthamiana leaves transiently expressing the proteins of interest were harvested 48 hr after agroinfiltration and infiltrated with water. Intercellular fluids (IF) were isolated by centrifugation at 3000 g as previously described (de Wit and Spikman, 1982).
 
-## Gel blot analysis
+### Gel blot analysis
 
 Antibodies used for Western blotting were anti-HA-HRP (3F10, Roche, Germany, 1:5000), and PAP anti-rabbit-HRP (Sigma, 1:10,000). Proteins were visualized using the Immobilon kit (Millipore, Billerica, MA, USA) under standard conditions.
 
-## Transient transfection of Arabidopsis protoplasts
+### Transient transfection of Arabidopsis protoplasts
 
 The isolation and transient transfection of leaf mesophyll cell protoplasts from Arabidopsis plants (four weeks-old) was performed at room temperature following published procedures (Yoo et al., 2007). A total of 10 μg plasmid DNA was used for each transfection experiment and plasmids were mixed in an equal ratio for cotransfections.
 
-## Fluorescein isothiocyanate(FITC)-labeled casein assay for proteolytic activity
+### Fluorescein isothiocyanate(FITC)-labeled casein assay for proteolytic activity
 
 FITC casein was used for the detection of proteolytic activity (Twining, 1984). sbt5.2 Arabidopsis protoplasts transfected with SBT5.2(a), SBT5.2(a)H210A, SBT5.2(b), SBT5.2(b)H171A or empty vector were lysed and used for the activity assay. A concentration of 400 µg/ml of FITC casein was used in a final volume of 25 µl of 150 mM NaCl, 20 mM phosphate buffer pH 7.6. Samples were incubated for 1 hr at 25°C and fluorescence was measured at excitation 485 nm and emission 520 nm using a microtiter fluorimeter (FL600, Bio-Tek, Highland Park, VT, USA).
 
-## Quantification of cell death
+### Quantification of cell death
 
 For electrolyte leakage measurement, four leaf discs (6-mm diameter) were harvested at the indicated timepoints after plant inoculation, washed, and incubated at room temperature in 5 ml of distilled water before measuring conductivity. The production of phenolic compounds was monitored under UV light using a Zeiss Axioplan microscope 24 hr after inoculation.
 
-## RNA extraction and Q-RT-PCR analysis
+### RNA extraction and Q-RT-PCR analysis
 
 Material for RNA analysis was grounded in liquid nitrogen and total RNA was isolated using the Nucleospin RNA plant kit (Macherey-Nagel, Germany) according to the manufacturer’s recommendations. Reverse transcription was performed using 1.5 µg of total RNA. Real-time quantitative PCR was performed on a Light Cycler 480 II machine (Roche Diagnostics, France), using Roche reagents. Primers used for Q-RT-PCR are provided as Supporting Information. Relative expression was calculated as the ∆Cp between each gene and the internal controls SAND family (At2g28390). Average ∆Cp was related to the value of each gene in each line at time 0.

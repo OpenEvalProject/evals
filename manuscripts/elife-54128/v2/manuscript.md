@@ -37,15 +37,124 @@ Here, we have reconstituted the FA pathway using recombinant FA core complex and
 
 ## Results
 
-## Monoubiquitination does not promote association of FANCI:FANCD2 with a panel of proteins previously hypothesized to bind the ubiquitinated form
+### Monoubiquitination does not promote association of FANCI:FANCD2 with a panel of proteins previously hypothesized to bind the ubiquitinated form
 
 Mono-ubiquitinated FANCI:FANCD2 (henceforth IUbD2Ub) is the active form of the complex in repair of DNA damage. Many previous studies have speculated about the existence of DNA repair proteins that specifically associate with IUbD2Ub. A summary of these proteins is presented in Table 1. Using recombinant ID2 or IUbD2Ub prepared by Avi-ubiquitin purification method (Tan et al., 2020a), we sought to directly compare the binding of this panel of ID2-associated proteins. Each of the partner proteins was expressed using reticulocyte extracts (Figure 1a), and the majority bound to the ID2 complex as predicted based on previously identified associations (Figure 1b). The strongest binding proteins in terms of fraction of protein recovered were SLX4, FAAP20, SMARCAD, FANCJ, PSMD4, SF3B1, MCM5 and BRE. Although SMARCAD and SF3B1 appeared ‘sticky’ in control experiments, recovery of these proteins was still enriched by FANCD2:FANCI beads compared to background. Luciferase protein was used as a control 35S-labeled prey-protein. Surprisingly, our main observation was that none of the proteins showed any increased affinity for IUbD2Ub over ID2 (Figure 1d).
+
+**Table 1.**
+ List of proteins containing ubiquitin binding domain that are described or predicted to bind to ubiquitinated FANCD2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Function</th>
+      <th>Domain</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FAN1</td>
+      <td>Nuclease</td>
+      <td>UBZ4</td>
+      <td>(Kratz et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>SLX4</td>
+      <td>Nuclease</td>
+      <td>UBZ1</td>
+      <td>(Lachaud et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>FAAP20</td>
+      <td>FANCA partner</td>
+      <td>UBZ</td>
+      <td>(Hein et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>RAP80</td>
+      <td>BRCA1 partner</td>
+      <td>UIM</td>
+      <td>(Castillo et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>SMARCAD1</td>
+      <td>Chromatin remodeler</td>
+      <td>CUE</td>
+      <td>(Densham et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>FANCJ</td>
+      <td>Helicase</td>
+      <td>-</td>
+      <td>(Raghunandan et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>PSMD4</td>
+      <td>Protease</td>
+      <td>UIM</td>
+      <td>(Jacquemont and Taniguchi, 2007)</td>
+    </tr>
+    <tr>
+      <td>SF3B1</td>
+      <td>RNA binding protein</td>
+      <td>UBZ</td>
+      <td>(Moriel-Carretero et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>TRIM25</td>
+      <td>E3 ligase</td>
+      <td>RING finger</td>
+      <td>(Lossaint et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>MCM5</td>
+      <td>CMG component</td>
+      <td>-</td>
+      <td>(Lossaint et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>BRE</td>
+      <td>BRCA1 partner</td>
+      <td>-</td>
+      <td>(Wang, 2007)</td>
+    </tr>
+    <tr>
+      <td>BRCC</td>
+      <td>BRCA1 partner</td>
+      <td>-</td>
+      <td>(Wang, 2007)</td>
+    </tr>
+    <tr>
+      <td>SNM1A</td>
+      <td>Nuclease</td>
+      <td>UBZ</td>
+      <td>(Yang et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>CtIP*</td>
+      <td>Nuclease activator</td>
+      <td>C2H2 zinc finger</td>
+      <td>(Murina et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Rev1*</td>
+      <td>Translesion polymerase</td>
+      <td>UBZ3</td>
+      <td>(Moldovan et al., 2010)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Indicates not tested in our experiments, because protein not produced in TnT system._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54128/elife-54128-fig1-v2.jpg)
 
 **Figure 1.:** (a) 35S-labelled FAN1, SLX4, FAAP20, RAP80, SMARCAD, FANCJ, PSMD4, SF3B1, TRIM25, MCM5, BRE, BRCC, SNM1A or luciferase (control) inputs were expressed using reticulocyte extracts. (b–c) The inputs prepared from (a) were incubated with the indicated FLAG-ID2 (b) or FLAG-IubD2ub (c) followed by FLAG pull-down and elution. The complexes were subjected to SDS-PAGE, and radiolabelled proteins were detected by autoradiography (representative experiment of n = 2). (d) Quantification showing percentage of ID2, IubD2ub or FLAG resin binding to inputs.
 
-## Monoubiquitination clamps FANCI:FANCD2 on DNA
+### Monoubiquitination clamps FANCI:FANCD2 on DNA
 
 An alternative explanation for the observed increase in association between ID2 and its associated proteins after DNA damage is that IUbD2Ub has an increased affinity for DNA, which brings the protein into closer proximity to these partners. The majority of ID2 associated proteins are chromatin localized. In order to explore the stability of IUbD2Ub on DNA, we performed in vitro monoubiquitination reactions in the presence of IR-dye700 labeled 60 bp double-stranded DNA (dsDNA). As previously characterized (van Twest et al., 2017), we observed DNA-dependent appearance of monoubiquitinated forms of FANCD2 and FANCI when using recombinant FA core complex components (Figure 2a–b). ID2 monoubiquitination readily lead to DNA mobility shifts using EMSA (electromobility shift assay) even at low concentrations, but this was not observed for the unmodified (apo)-ID2 complex in the absence of the enzymatically active FA core complex, or when monoubiquitination-defective K-to-R mutants of ID2 were used in the reaction (Figure 2c, lanes 2–4).
 
@@ -59,7 +168,7 @@ Previously, we and others showed that various different dsDNA-containing structu
 
 **Figure 3.:** EMSA gels showing binding of monoubiquitinated or unmodified ID2 complex to different oligo-based DNA substrates. Above each panel, a schematic representing the tested DNA substrate is shown. 25, 50 and 100 nM of ID2 or IKRD2KR were incubated with 25 nM of the indicated DNA substrate and the protein:DNA complexes were resolved on 6% PAGE gels (top). The percentage of DNA binding was calculated and shown under each EMSA gel. Coomassie stained SDS-PAGE gel (bottom) showing the ubiquitination reactions used in the EMSA. The percentage of FANCD2 monoubiquitination was calculated and shown under each SDS-PAGE gel.
 
-## Both FANCIub and FANCD2ub are associated with a ‘clamped’ protein:DNA complex
+### Both FANCIub and FANCD2ub are associated with a ‘clamped’ protein:DNA complex
 
 Previous studies reported that monoubiquitination of ID2 complex may lead to dissociation of the heterodimer to its individual subunits, as measured by loss of co-immunoprecipitation of FANCI with FANCD2 (40, 41). In contrast, we did not observe any Ub-mediated dissociation of ID2 in vitro. First, western blotting of the EMSA gels confirmed that the gel shifted DNA band contains both FANCI and FANCD2 proteins (Figure 4a). Second, FANCIUb still co-immunoprecipitated with FANCD2Ub at the plateau of the in vitro ubiquitination reaction (Figure 4b).
 
@@ -69,7 +178,7 @@ Previous studies reported that monoubiquitination of ID2 complex may lead to dis
 
 To determine the contribution of each of FANCD2Ub and FANCIUb to the clamping of IUbD2 Ub complex to DNA, we used ubiquitination-deficient (KR) mutants in the ubiquitination reaction. FANCIKR:FANCD2WT or FANCIWT:FANCD2KR mutant results in decrease in EMSA shift, and FANCIKR:FANCD2KR did not bind to DNA (Figure 4c). However, this retention on DNA correlated with the extent of FANCD2 monoubiquitination retained by these mutant complexes. Western blotting the EMSA gels confirmed that both FANCD2 and FANCI are found in the EMSA shifted product, although in higher amounts when both proteins are capable of being monoubiquitinated (Figure 4d).
 
-## Mutant forms of ubiquitin can still clamp ID2 onto DNA
+### Mutant forms of ubiquitin can still clamp ID2 onto DNA
 
 We postulated that the altered affinity for DNA induced by monoubiquitination must result from either a conformational change in the ID2 heterodimer after monoubiquitination, or participation of the conjugated ubiquitin directly in protein:DNA or protein:protein binding. To help distinguish these possibilities, we utilized mutants of ubiquitin that have previously been shown to mediate the known protein:ubiquitin or protein:DNA interactions in other ubiquitinated protein interactions (Figure 5a; Husnjak and Dikic, 2012). Each of these Ub mutants were conjugated to ID2 by the FA core complex with similar efficiency (Figure 5b) and their clamping onto DNA was then measured. Mutations in surface patch 1 (F4A, D58A), surface patch 2 (I44A, V70A), a DNA binding residue (K11R) or a tail mutant (L73P) had no apparent effect on DNA clamping (Figure 5c). This result suggests that no canonical surface or region of ubiquitin is critical for DNA clamping of ID2, and instead ubiquitin conjugation to ID2 probably induces a conformational rearrangement of the heterodimer.
 
@@ -77,7 +186,7 @@ We postulated that the altered affinity for DNA induced by monoubiquitination mu
 
 **Figure 5.:** (a) Crystal structure of ubiquitin with ubiquitin mutant sites depicted (PDB: 1UBQ). Hydrophobic binding pockets are indicated in blue and pink. (b) Western blots showing the time course ubiquitination assays of ID2 using wild-type ubiquitin or ubiquitin F4A, V70A, I44A, D58A, K11R and L73P mutants. (c) EMSA gels showing 25, 50 and 100 nM monoubiquitinated ID2 binding to 25 nM IRDye-700 dsDNA using various ubiquitin mutants (top). Western blots of ID2 ubiquitination products were shown at the bottom and the percentage of FANCI and FANCD2 ubiquitination were shown at the bottom of each western blot panel.
 
-## Purification of monoubiquitinated FANCI:FANCD2 complex bound to dsDNA reveals a filamentous architecture
+### Purification of monoubiquitinated FANCI:FANCD2 complex bound to dsDNA reveals a filamentous architecture
 
 In order to examine the architecture of purified recombinant IUbD2Ub complex in the presence of dsDNA plasmid, we utilized a recombinant Avi-tag ubiquitin construct containing a 3C protease site between the biotinylated Avi-tag and the N-terminus of ubiquitin (Tan et al., 2020a; Figure 6a). This tagged ubiquitin is incorporated onto FANCI:FANCD2 by the FA core complex, allowing Avidin-Sepharose purification of monoubiquitinated ID2 that is then eluted by 3C protease cleavage. We recovered monoubiquitinated FANCI:FANCD2 complex only when FANCI is monoubiquitinated, suggesting that the N-terminus of D2-attached ubiquitin may be buried within the di-ubiquitinated complex, but the N-terminus of ubiquitin attached to FANCI is accessible for avidin binding (Figure 6b).
 
@@ -95,7 +204,7 @@ When smaller DNA molecules were used as the substrate for ID2 binding, we either
 
 The observation that array length correlated with the size of DNA available for ID2 binding strongly suggested that the association between heterodimer subunits in the array was DNA-mediated. To test whether the array of IubD2ub is also dependent upon binding to the same DNA molecule, we examined the plasmid-stimulated ubiquitination reaction products after treatment with the non-specific endonuclease, Benzonase. It is apparent from EM images that addition of Benzonase breaks the long arrays formed by IubD2ub complex into very short or heterodimer-sized units (Figure 7d). This finding is consistent with Benzonase cleaving exposed DNA between IubD2ub units, leading to destabilization of the filamentous arrays. Together our results show that, in vitro, ubiquitination of ID2 leads to a ubiquitin- and DNA- stabilized filament-like structure.
 
-## Single IubD2ub heterodimers on short 60 bp DNA have an altered architecture
+### Single IubD2ub heterodimers on short 60 bp DNA have an altered architecture
 
 Due to variability in the length and shape of filament-like IubD2ub structures on longer DNA molecules we have not been able to uncover the shape or subunit rearrangement of the individual units of the arrays because attempts to class average arrays failed due to a lack of order. However, examination of IubD2ub purified together with short 60 bp DNA allowed us to collect sufficient images of individual particles for analysis. These particles were similar in size to non-ubiquitinated ID2, but it is clear from individual molecule and class average views that the IubD2ub complex forms a distinct architecture from that of ID2 (Figure 7e–f). In particular, the overall shape of individual particles and their class averages reveal a twisting that repositions the solenoid arms of one or both of the subunits bringing them into closer proximity. The conformational change induced appears to reduce the size of ID2 in one direction (x vs y) but not the other (Figure 7g–h), similar to that predicted in a previously proposed model that placed DNA in a channel between FANCI and FANCD2 post DNA binding (Longerich et al., 2014). These images support the view that monoubiquitination induces a conformational change in the ID2 complex that clamps it upon DNA.
 
@@ -109,7 +218,7 @@ Instead, our data provide direct evidence that ID2 undergoes a conformational ch
 
 Clamping onto DNA occurs through a ubiquitin-mediated conformational change in the ID2 complex. A ubiquitin binding-domain (UBD) in FANCD2 has previously been shown necessary for the retention of the protein in the chromatin faction, and for strong binding to FANCI (Rego et al., 2012). This UBD domain sits in the FANCD2 structure opposite to where ubiquitin is likely to reside after its conjugation on to FANCI by the FA core complex, and most likely mediates the clamping function and conformational rearrangement. A high-resolution cryo-EM structure of chicken ID2Ub published by Alcón et al alongside our study (Alcón et al., 2020), also uncovered a conformational rearrangement of ID2 that is then stapled in place by ubiquitin:UBD association. Other DNA-binding proteins such as histone H2A show an increased association with DNA after monoubiquitination (Zhang, 2003) and monoubiquitination also increases the DNA occupancy of transcription factors such as FOXO4 and CIITA (Greer et al., 2003). It is possible that ubiquitin to UBD mediated clamping is a general mechanism of protein:DNA target stabilization.
 
-## IUbD2Ub clamped in nucleoprotein arrays
+### IUbD2Ub clamped in nucleoprotein arrays
 
 In addition to a conformational change in ID2 induced by monoubiquitination (that has also been concurrently discovered and reported by the Pavletich, Walden and Passmore labs Alcón et al., 2020; Wang et al., 2020; Rennie et al., 2020) we found that monoubiquitinated IUbD2Ub formed large filament-like arrays when it was purified together with plasmid DNA, but not short 60 bp DNA fragments. Fourier Transformation of the EM images did not reveal clear evidence for layer lines, that are expected for fiber diffraction, so we expect that the IUbD2Ub is not a true filament. On average, the length of plasmid-associated structures is 7-8x (but up to 40x) that of that associated with 60 bp DNA. Larger or longer arrays may potentially be obscured from view because the purification strategy makes elution exponentially more difficult with increasing numbers of conjugated ubiquitin-molecules. Steps to remove ‘aggregates’ may have also inadvertently removed larger arrays. However, as the number of potential plasmid DNA binding sites for ID2 was in large excess the concentration of ID2 used to stimulate reaction, there appears to be some purpose to creation of these filamentous arrays. The modular nature of IUbD2Ub arrays suggests that IUbD2Ub binding to DNA is flexible and can adopt multiple conformations, akin to RPA binding and protecting ssDNA (Yates et al., 2018).
 
@@ -117,7 +226,7 @@ There is evidence that IUbD2Ub clamped in nucleoprotein filaments exist in cells
 
 In this study, we also observed direct association of two ID2 heterodimers by co-immunopurification only after the protein becomes monoubiquitinated. This approach, if performed in cells, could be used to further delineate the mechanism and cellular factors required for the extension of IUbD2Ub arrays during fork protection. Of particular interest will be determining the role of BRCA1 in clamping and/or array extension. BRCA1:BARD1 was initially thought to be the E3 for FANCD2 monoubiquitination, because it co-immunoprecipitates FANCD2, and FANCD2 does not form nuclear foci after damage in BRCA1-deficient cells (Raghunandan et al., 2015). However, in various assays it was later shown that FANCD2 monoubiquitination does occur in BRCA1-deficient cells, but it is uncoupled from FANCD2 foci formation (Jacquemont and Taniguchi, 2007; Moriel-Carretero et al., 2017).
 
-## How would a clamped IUbD2Ub array mediate fork protection?
+### How would a clamped IUbD2Ub array mediate fork protection?
 
 Filamentous structures on DNA play a genome protective role in prokaryotes: eg DAN protein forms a rigid collaborative filament that reduces accessibility during anoxia (Lim et al., 2013), while the Vibrio cholera protein ParA2 forms protective filamentous structures on DNA during segregation (Hui et al., 2010). Structural characterization has demonstrated how these filaments function and, in the case of ParA2, can be targeted therapeutically (Misra et al., 2018). The coating of ssDNA by RPA in eukaryotes, also protect DNA from the activity of nucleases, and directs the specific activity of others (de Laat et al., 1998; Chen et al., 2013; Nguyen et al., 2017). We propose that a FANCIub:D2ub arrays may have a similar stabilizing role on newly synthesized dsDNA at a stalled replication fork. This property would explain why stalled forks are prone to degradation in FA and BRCA patient cells (Schlacher et al., 2012; Tian et al., 2017). In particular, we hypothesize that filamentous DNA-clamped Iub:D2ub could prevent access to DNA by MRE11 and DNA2 nucleases and prevent aberrant ligation of broken DNA to other parts of the genome by non-homologous end-joining.
 
@@ -125,48 +234,233 @@ Second, the tight binding of FANCIub:D2ub to dsDNA, when localized to stalled re
 
 Third, Iub:D2ub arrays may also locally suppress non-homologous end-joining (NHEJ) factors, and/or delineate the newly synthesized chromatin from unreplicated regions during the promotion of templated repair processes such as homologous recombination. FANCD2, FANCI, and components of the FA core complex were identified amongst relatively few other factors, in a genome-wide screen for genes that promote templated repair over NHEJ (Richardson et al., 2017). Stabilization of RAD51 filaments, required for HR, is also an in vitro property of ID2 (Sato et al., 2016), suggesting Iub:D2ub filamentous arrays may exist adjacent to or coincident with RAD51 filaments in cells, in order to provide a polarity to the homologous recombination reaction without loss or gain of genomic sequences.
 
-## Role of FANCI-monoubiquitination
+### Role of FANCI-monoubiquitination
 
 Fanci and Fancd2 have common and distinct functions in mouse models of Fanconi anemia (Dubois et al., 2019), while the double knockout of FANCI and FANCD2 has an unexpectedly distinct phenotype compared to single knockouts in human cells (Thompson et al., 2017). But FANCIK523R expressing cells are less sensitive to DNA damage than FANCI knockout in human cells (Smogorzewska et al., 2007), so what is the role of FANCI monoubiquitination? Previous studies demonstrated that FANCI monoubiquitination is always subsequent to FANCD2 monoubiquitination, both in cells (Sareen et al., 2012) and in biochemical assays (van Twest et al., 2017). FANCI also likely plays a role in recruiting the FA core complex to the substrate (Castella et al., 2015). In this study, we show that FANCI-monoubiquitination is not necessary for clamping of the ID2 complex onto DNA (Figure 4). However, in vivo it is likely that FANCI monoubiquitination plays a critical role in regulating deubiquitination of the ID2 complex. FANCI recruits the deubiquitinating enzyme USP1:UAF1 (Yang et al., 2011), which prevents trapping of monoubiquitinated FANCD2 at non-productive DNA damage sites, but only ID2Uband not IUbD2Ub is a substrate (van Twest et al., 2017). It is also clear from our EM investigations that FANCI must play an important role in the structural integrity of IUbD2Ub filamentous arrays on DNA, possibly creating an asymmetry necessary for a specific polarity to array assembly.
 
-## Implications for understanding the deficiency of Fanconi anemia
+### Implications for understanding the deficiency of Fanconi anemia
 
 Onset of progressive bone marrow failure occurs at a median age of 7 in children with FA (Butturini et al., 1994). Almost all these patients lack FANCD2 and FANCI monoubiquitination, due to mutation in either FANCD2 or FANCI or one of the nine other FANC proteins required for their monoubiquitination (Walden and Deans, 2014). The importance of the monoubiquitin signal is highlighted by the observation that up to 20% of patients acquire somatic reversion of the inherited mutation in a fraction of blood cells (Soulier et al., 2005). These mutations restore monoubiquitination and prevent bone marrow failure. Our work suggests two potential strategies for treatment of FA: restoration of gene function, such as that which occurs in somatic revertants or, identification of novel mechanisms to stabilize an ID2:DNA-clamped complex for fork protection by ubiquitin-mediated or innovative means. New small molecule activators or inhibitors of ID2:DNA clamping could be therapeutics in FA or cancer-treatment. In vitro biochemistry has proven to be the most powerful tool in uncovering new functions of FANCD2-monoubiquination that had gone undiscovered for nearly 20 years. The approach is likely to be formidable in drugging the FA pathway in future studies.
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent (X. laevis)</td>
+      <td>pFastbac1-FLAG-xFANCI</td>
+      <td>(Klein Douwel et al., 2014)</td>
+      <td></td>
+      <td>Gift from Puck Knipscheer</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (X. laevis)</td>
+      <td>pFastbac1-StrepII-xFANCD2</td>
+      <td>(Klein Douwel et al., 2014)</td>
+      <td></td>
+      <td>Gift from Puck Knipscheer</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>pFL-EGFP-His-hFANCI</td>
+      <td>(Tan et al., 2020a)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>pFastbac1-FLAG-hFANCD2opt</td>
+      <td>(Tan et al., 2020a)</td>
+      <td>RRID:Addgene_ 134904</td>
+      <td>Gift from Angelos Constantinou</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>pFL/pSPL-EGFP-FLAG-B-L-100</td>
+      <td>(van Twest et al., 2017)</td>
+      <td></td>
+      <td>Codon optimized FANCB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>pFL-MBP-C-E-F</td>
+      <td>(van Twest et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>pGEX-KG-GST-UBE2T</td>
+      <td>(van Twest et al., 2017)</td>
+      <td></td>
+      <td>Codon optimized</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (E. coli)</td>
+      <td>pet16b-Avi-ubiquitin_rbs_BirA</td>
+      <td>(Tan et al., 2020a)</td>
+      <td>RRID:Addgene_134897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (E. coli)</td>
+      <td>pSRK2706-GST-HRV-3Cprotease</td>
+      <td>(Raran-Kurussi and Waugh, 2016)</td>
+      <td>RRID:Addgene_78571</td>
+      <td>A gift from David Waugh</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (E. coli)</td>
+      <td>pUC19 plasmid</td>
+      <td>New England BioLabs</td>
+      <td>N3041S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>Agilent Technologies</td>
+      <td>200131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_0549</td>
+      <td>Maintained in Sf-900 II SFM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>High Five</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_C190</td>
+      <td>Maintained in Sf-900 II SFM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibodies against StrepII</td>
+      <td>Abcam</td>
+      <td>RRID:AB_76949</td>
+      <td>one in 3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibodies against FANCI</td>
+      <td>Abcam</td>
+      <td>RRID:AB_74332</td>
+      <td>one in 3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibodies against FANCD2</td>
+      <td>Abcam</td>
+      <td>RRID:AB_10862535</td>
+      <td>one in 3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibodies against FLAG</td>
+      <td>Aviva Biosciences</td>
+      <td>RRID:AB_10884242</td>
+      <td>one in 3000 dilution</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLAG peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human His6-Ubiquitin E1 Enzyme carrier free</td>
+      <td>Boston Biochem</td>
+      <td>E-304–050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubiquitin and associated mutant variants</td>
+      <td>Boston Biochem</td>
+      <td>U-110H, UM-I44A, UM-D58A, UM-F4A, UM-L73P, UM-K11R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TNT T7 Quick Coupled Transcription/Translation System</td>
+      <td>Promega Corporation</td>
+      <td>L1170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-FLAG-M2 affinity gel</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EasyTagL-[35S]-Methionine</td>
+      <td>PerkinElmer Life Sciences</td>
+      <td>NEG709A500UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XMIPP</td>
+      <td>(de la Rosa-Trevín et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Flag-FANCI and StrepII-FANCD2 were expressed using the pFastBac1 vector (Life Technologies). For FANCI:FANCD2 complex, Hi5 cell pellets were resuspended in lysis buffer (50 mM Tris-HCl pH 8.0, 0.1 M NaCl, 1 mM EDTA, 10% glycerol and 1X mammalian protease inhibitor), and sonicated. Lysates were clarified by centrifugation at 20,000 g and the supernatants were incubated with M2 anti-FLAG agarose resin for 2 hr. The resin was washed 5 × 5 min incubation with wash buffer (20 mM Tris-HCl pH 8.0, 0.1 M NaCl, 10% glycerol), and the protein was eluted in the same buffer containing 100 μg/mL FLAG peptide. GST-UBE2T, Flag-BL100, MBP-CEF were purified as described (van Twest et al., 2017). Ubiquitin and His-UBE1 were purchased from Boston Biochem.
 
-## Biotinylated-Avi-ubiquitin purification
+### Biotinylated-Avi-ubiquitin purification
 
 His-Avi-ubiquitin was purified as described in Tan et al. (2020a).
 
-## In vitro ubiquitination assay
+### In vitro ubiquitination assay
 
 Standard ubiquitination reactions contained 10 μM recombinant human avidin-biotin-ubiquitin, 50 nM human recombinant UBE1, 100 nM UBE2T, 100 nM PUC19 plasmid, 2 mM ATP, 100 nM FANCI:FANCD2 complex wild type (WT) or ubiquitination-deficient (KR), in reaction buffer (50 mM Tris-HCl pH 7.4, 2.5 mM MgCl2, 150 mM NaCl, 0.01% Triton X-100). 20 μL reactions were set up on ice and incubated at 25°C for 90 min. Reactions were stopped by adding 10 μL NuPage LDS sample buffer and heated at 80°C for 5 min. Reactions were loaded onto 4–12% SDS PAGE and run using NuPAGE MOPS buffer and assessed by western blot analysis using Flag (Aviva Biosciences) or StrepII (Abcam) antibody.
 
-## In vitro transcription/translation pull down of 35S-labeled proteins
+### In vitro transcription/translation pull down of 35S-labeled proteins
 
 Flag-tagged FANCI:FANCD2 and monoubiquitinated FANCI:FANCD2 was prepared by incubating purified FANCI:FANCD2 or monoubiquitinated FANCI:FANCD2 on Flag beads for 2 hr followed by extensive washes in buffer A (20 mM TEA pH 8.0, 150 mM NaCl, 10% glycerol). 35S-labeled proteins containing UBZ or other ubiquitin domains (Table 1) were generated using the TNT Quick Coupled T7 Transcription/Translation System (Promega) and 35S-labeled methionine (Perkin Elmer). 10 μL of TNT product was incubated for 4 hr at 4°C in buffer A with 100 ng Flag-tagged FANCI:FANCD2 or monoubiquitinated FANCI:FANCD2, 20 μL of Flag-beads (Sigma-Aldrich) in a 100 μL reaction. Beads were washed five times with buffer A and resuspended in LDS loading buffer. Proteins were separated by SDS-PAGE and visualized by autoradiography.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 Oligonucleotides used to create fluorescently labeled DNA were IRDYE-700-labeled X0m1 (IDTDNA) and other oligos with the sequences shown in Supplementary file 1. Assembly of the different DNA structures was performed exactly as previously described (Supplementary file 1; van Twest et al., 2017). 25 nM DNA substrates were incubated in 20 μL ubiquitination buffer containing 100 nM FANCI:FANCD2, 100 nM BL100, 100 nM CEF, 10 uM HA-ubiquitin (Boston Biochem), 50 nM UBE1 (Boston Biochem) and 100 nM UBE2T at room temperature for 90 min to initiate ubiquitination. The reaction was resolved by electrophoresis through a 6% non-denaturing polyacrylamide gel in TBE (100 mM Tris, 90 mM boric acid, 1 mM EDTA) buffer and visualized by Licor Odyssey system.
 
-## Purification of monoubiquitinated FANCI:FANCD2 complex
+### Purification of monoubiquitinated FANCI:FANCD2 complex
 
 Di-monoubiquitinated FANCI:FANCD2 complex was purified as described (Tan et al., 2020a). DNA molecules of 60 bp or 150 bp (dsDNA from oligonucleotides) or 2.6 kb (circular plasmid DNA) were used to stimulate the reaction for different experiments, as indicated.
 
-## Mass spectrometry analysis of monoubiquitinated FANCI:FANCD2 complex
+### Mass spectrometry analysis of monoubiquitinated FANCI:FANCD2 complex
 
 Gels containing monoubiquitinated FANCI and FANCD2 bands were excised and in-gel digested with trypsin and subjected to LC/MS analysis on ESI-FTICR mass spectrometer at Bio21, The University of Melbourne. The analysis program MASCOT was used to identify ubiquitination sites on FANCI and FANCD2.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Freshly purified monoubiquitinated or non-ubiquitinated FANCI:FANCD2 complex was applied to glow-discharged, carbon/formvar grids and allowed to adsorb for 60 s. Specimen was then stained with 2% uranyl formate for 60 s. Specimen were imaged at a magnification of 73,000 x on a Ceta camera (corresponding to a pixel size of 1.9 Å) in Talos 120 kV. For FANCI:FANCD2 complex, 20 micrographs were analyzed and 4553 particles were picked for 2D classification. For monoubiquitinated FANCI:FANCD2 complex, 20 micrographs were analyzed and 4698 particles were picked for 2D classification. The length and width of 2D class average were measured using ImageJ.
 
-## Single-particle image processing
+### Single-particle image processing
 
 Monoubiquitinated or non-ubiquitinated FANCI:FANCD2 particles were semi-automatically picked using XMIPP3 (83). The parameters of the contrast transfer function (CTF) for negative stained data was estimated on each micrograph using CTFFIND3 (Mindell and Grigorieff, 2003). Finally, reference free 2D alignment and averaging were executed using XMIPP3.

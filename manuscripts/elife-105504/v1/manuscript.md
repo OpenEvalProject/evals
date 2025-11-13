@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00g5b0g93 Department of Immunology, Zunyi Medical University; Guizhou Provincial Research Center for Applied Immunomolecular Engineering; Guizhou Provincial Innovation Base for Graduate Education in Immunology; Guizhou Provincial Key Discipline of Immunology Zunyi China
+1. Department of Immunology, Zunyi Medical University; Guizhou Provincial Research Center for Applied Immunomolecular Engineering; Guizhou Provincial Innovation Base for Graduate Education in Immunology; Guizhou Provincial Key Discipline of Immunology Zunyi China ([ROR:00g5b0g93](https://ror.org/00g5b0g93))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ First, in the Treg study conducted by Burton et al., 2024, which involved analyz
 
 ## Results
 
-## A high proportion of dual TCR Treg cells in mouse lymphoid and non-lymphoid tissues
+### A high proportion of dual TCR Treg cells in mouse lymphoid and non-lymphoid tissues
 
 The proportion of dual TCR Treg cells in mouse lymphoid tissues: spleen = 21.4%, iLN = 21.4%, and mLN = 21.0% (Figure 3D); the proportion of dual TCR Treg cells in mouse non-lymphoid tissues: blood = 11.8%, kidney = 12.2%, liver = 13.6%, LPL = 11.0%, and pancreas = 13.3%, the proportion of dual TCR T cells in mouse skin tissue: 18.6% (Figure 1D)(Figure 2D). Subsequently, a detailed analysis of the pairing of dual TCR T cells in the two sets of data was conducted, revealing that the TCR pairing types of dual TCR Treg include A+B1+B2, B+A1+A2 (the highest proportion), and A1+A2+B1+B2 (the lowest proportion). Significant differences in TCR pairing types exist between tissues, with A1+A2+B1+B2 most highly expressed in skin (common in non-Treg cells of skin) and kidney, and B+A1+A2 most highly expressed in spleen and liver compared to other tissues (Figure 1D; Figure 2D).
 
@@ -41,19 +41,19 @@ The proportion of dual TCR Treg cells in mouse lymphoid tissues: spleen = 21.4%,
 
 **Figure 2.:** (A) Tissue source names, GEO accession number, total number of paired TCR T cells, and number and proportion of TCR paired types. (B) Four different TCR pairing types, VDJ gene family names, and CDR3 AA sequences in single T cells. (C) Proportion of TCR pairing types per tissue. (D) Statistical analysis of dual TCR T cells and the relative proportion of single/dual TCR T cells in three TCR pairing types. (E) Comparative analysis of single/dual TCR T cell V gene usage variation. (F) Comparative analysis of single/dual TCR T cell J gene usage variation. (G) Differential analysis of single/dual TCR T cell diversity among tissues. (H) Differential analysis of single/dual TCR T cell clone expansion between tissues.
 
-## Homogeneity and heterogeneity of TCR composition in mouse dual TCR Treg cells VJ usage (Figure 1E, F and Figure 2E,F)
+#### Homogeneity and heterogeneity of TCR composition in mouse dual TCR Treg cells VJ usage (Figure 1E, F and Figure 2E,F)
 
 The overall VJ family distribution pattern of single and dual TCR Treg between different tissues is basically consistent. Compared with single TCR Treg, dual TCR Treg displays specific preferences in V and J usage, mainly including Trbv10 and Trbv13-1 in the kidney and liver, Trbv5 in LPL, Trbv19 in the skin; Trbj2-3 in the liver, Trbj2-1 in the skin, etc. showing a significant advantage in usage; Trbv13-1 in peripheral blood, kidney, and liver shows consistent advantage in usage; Trbj1-2 in the spleen, iLN, and mLN shows consistent advantage in usage, etc.
 
-## Diversity of CDR3 (Figure 1G and Figure 2G)
+#### Diversity of CDR3 (Figure 1G and Figure 2G)
 
 The 1/DS of single TCR Treg CDR3 is significantly higher than that of dual TCR Treg; the CDR3 diversity of dual TCR Treg in lymphoid tissues (spleen, iLN, and mLN) is higher than that in non-lymphoid tissues; the CDR3 diversity of dual TCR Treg in skin, LPL, and pancreas is very low.
 
-## Clonality of CDR3 (Figure 1H and Figure 2H)
+#### Clonality of CDR3 (Figure 1H and Figure 2H)
 
 The proportion of single TCR Treg with clonal proliferation greater than or equal to 2 is higher than that of dual TCR Treg; the proportion of dual TCR Treg with clonal proliferation greater than or equal to 2 in the liver and skin is significantly higher than that in other tissues.
 
-## Overlap of CDR3 (Figure 3A,B and Figure 4A ,B)
+#### Overlap of CDR3 (Figure 3A,B and Figure 4A ,B)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105504/elife-105504-fig3-v1.jpg)
 
@@ -67,11 +67,11 @@ A certain proportion of overlap exists between TRB CDR3 AA and TRA CDR3 AA in di
 
 All three tissues, the liver, kidney, and pancreas, show a significantly high proportion of dual TCR Treg CDR3 AA overlap with peripheral blood, suggesting their origin from the influx of peripheral blood (it should be noted that the high overlap phenomenon of the kidneys, liver, pancreas, and blood may not completely eliminate the technical possibility of local Treg migration within the blood), iLN, mLN, and skin all show a significantly high proportion of dual TCR Treg CDR3 AA overlap with the spleen, suggesting their origin from the influx of the spleen; Intriguingly, there is also a high proportion of dual TCR Treg CDR3 AA overlap between the liver and kidney, kidney and pancreas, and iLN and mLN, suggesting that dual TCR Treg cells in these tissue sites may negatively regulate a shared set of antigens. Whereas the mechanism and significance of the high percentage of overlap exhibited between iLN and skin TRA CDR3 AA deserve further analysis.
 
-## Homogeneity of mouse dual TCR Treg cell phenotypes
+### Homogeneity of mouse dual TCR Treg cell phenotypes
 
 Comparative analysis of Treg cells with complete scRNA-seq and scTCR-seq results showed that the TCR pairing types and proportion were consistent with the results of direct analysis of scTCR-seq; the proportion of dual TCR Treg in the skin was higher than that of dual TCR non-Treg (Figure 3C)(Figure 4C); in all tissues, the expression of signature molecules Tnfrsf9, Stat3, Tnfrsf4, Cd27, Icos, Il2ra, Ikzf2, Lrrc32, Sh3rf1, Cd81, Baff, Smad2, and Foxo3 were identical between dual and single TCR Treg in all tissues, with slightly higher Foxp3, Foxo1, and Ctla4 expression in dual TCR Treg than that in single TCR Treg (Figure 3D)(Figure 4D).
 
-## Heterogeneity of mouse dual TCR Treg cell phenotypes
+### Heterogeneity of mouse dual TCR Treg cell phenotypes
 
 Compared with iLN, mLN, and spleen, more characteristic mRNA molecules were highly expressed in dual TCR Tregs in skin (Figure 4E), such as Rora, Dusp1, and Junb involved in immune responses and inflammatory diseases; S100a6 involved in the proliferation, differentiation, and migration of immune cells; and Hopx and Nr4a1 involved in the development of immune cells, suggesting that dual TCR Treg in the skin may be involved in more specific response negative regulations.
 
@@ -93,38 +93,38 @@ This study, based on single-cell RNA sequencing and T cell receptor (scRNA+TCR-s
 
 ## Materials and methods
 
-## Research subjects and study samples
+### Research subjects and study samples
 
 (1) Blood, kidney, liver, LPL, and pancreas tissues were collected from four C57BL/6 mice and CD4+Foxp3+ Thy1.1+ Treg cells were sorted for scRNA+TCR-seq analysis. (Source document: Oliver T et al. The tissue-resident regulatory T cell pool is shaped by transient multi-tissue migration and a conserved residency program. Immunity. 2024 Jul 9;57(7):1586–1602.e10. Shared Data Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266111.) (2) Spleen, iLN, and mLN tissues from four mice were collected and sorted into CD4+CD25+Treg cells, while skin tissues from four mice were collected and sorted into CD3+ T cells (both Treg and non-Treg). These four tissue-sorted cells were analyzed by scRNA+TCR-seq. (Source document: Nedwed et al. Using combined single-cell gene expression, TCR sequencing, and cell surface protein barcoding to characterize and track CD4+ T cell clones from murine tissues. Front Immunol. 2023 Oct 12;14:1241283. Shared Data Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240041.) (All mouse sequencing data comes from public databases, so ethical review is not involved.)
 
-## The process of sharing raw data analysis
+### The process of sharing raw data analysis
 
 (1) Excel software was utilized for paired analysis of TCR α chain (A) and TCR β chain (B) from single Treg cell scTCR-seq results, including CD3 T cells in skin tissue. (2) In a single T cell, two types of chains ‘can pair and assemble into single TCR’ T cells named ‘A+B’; three or more types of chains ‘can pair and assemble into dual TCR’ T cells named ‘A+B1+B2; B+A1+A2; A1+A2+B1+B2’. (3) The proportions of total single and dual TCR Treg were calculated for each mouse or each tissue.
 
-## Examples of single T-cell TCR pairing types
+### Examples of single T-cell TCR pairing types
 
 From the two datasets, single T cell was selected to display four different TCR pairing types, VDJ gene family names, and CDR3 AA sequences: A+B; A+B1+B2; B+A1+A2; and A1+A2+B1+B2.
 
-## Analysis of TCR pairing types and V–J usage
+### Analysis of TCR pairing types and V–J usage
 
 Statistically analyze the proportions of five TCR T cell types in each sample, and use SPSS software to perform statistical analysis on the proportions of the three dual TCR T cell types and the single/dual TCR T cell ratios according to tissue origin; classify and calculate the proportions of all corresponding sequences in the ‘β-V’ and ‘β-J’ columns of the single and dual TCR T cell tables, and use SPSS software to conduct differential VJ usage analysis between single/dual TCR T cells. It should be noted that the dual and single TCR Treg cells analyzed in our results refer to T cells with functional alpha and beta chains that are paired. Treg cells that possess only a functional alpha or beta chains without TCR pairing, or those with non-functional alpha or beta chains participating in TCR pairing, were not included in our analysis.
 
-## CDR3 diversity and clonality analysis
+### CDR3 diversity and clonality analysis
 
 Use the inverse Simpson’s index to assess TCR Treg cell diversity and perform statistical analysis; define clonal expansion as clone count ≥2, and analyze the proportion of clonal expansion of single/dual TCR Treg cells in the two datasets.
 
-## CDR3 overlap analysis
+### CDR3 overlap analysis
 
 The TRA CDR3 AA and TRB CDR3 AA of single and dual TCR Treg cells from different tissue sources were compared for overlap using the immunarch R package (version 0.9.0, https://github.com/immunomind/immunarch; Balashov et al., 2024) and the Jaccard index was used to analyze the frequency of overlap of CDR3 AA between each tissues pair; the first 10 high-frequency overlapping TRB CDR3 AA and TRA CDR3 AA sequences were traced and analyzed between single and dual TCR Treg cells from different tissue sources.
 
-## Combined scRNA+TCR-seq analysis
+### Combined scRNA+TCR-seq analysis
 
 The Seurat R package (version 5.0.1, https://satijalab.org/seurat/) was used for quality control of scRNA-seq results and preliminary removal of doublets. Data were excluded if nFeature >5000, nCount <20,000 or >1000, and percent.MT >5% (skin, spleen, iLN, and mLN tissue datasets) or 10% (blood, kidney, liver, LPL, and pancreas tissues). The DoubletFinder R package (version 2.0.4, https://github.com/chris-mcginnis-ucsf/DoubletFinder; McGinnis and Liu, 2025) was further utilized to accurately identify and remove doublets through steps such as simulating doublet generation, data dimensionality reduction, calculating the artificial nearest neighbor ratio (pANN), and setting thresholds. This process enhances the accuracy and reliability of data analysis. Furthermore, in the dataset containing five tissues with LPL, HTO labeling was incorporated (HTO labeling differentiates cells from different tissue sources by assigning unique barcodes to each cell; through the analysis of HTO labeling, double-positive and double-negative cells can be identified) to further exclude doublets and negative cells. T cells were then clustered and analyzed from different tissue sources after quality control. Based on the identical barcode identifiers of each T cell, the AddMetaData function was used to integrate scTCR-seq and scRNA-seq results, and only Treg cells meeting both criteria were included. Cells containing scTCR-seq and scRNA-seq data were displayed in UMAP plots and analyzed for the proportion of single and dual TCR Treg cells from different tissue sources. In this analysis, skin tissue was divided into Treg and non-Treg for comparison.
 
-## Transcription factor expression analysis
+### Transcription factor expression analysis
 
 Comparative analysis of the homogeneity of Treg cell signature molecules expressed in single and dual TCR Treg; differential expression analysis of the top 10 mRNA molecules in single tissue, overall single TCR Treg cells, and dual TCR Treg cells was conducted using the DESeq2 R package (version 1.38.3, https://github.com/thelovelab/DESeq2; Love, 2025) Comparative analysis of the heterogeneity of the expression of single and dual TCR Treg top 10 mRNA molecules in each tissue; comparative analysis of the heterogeneity of the expression of total single TCR Treg and total dual TCR Treg top 10 mRNA molecules.
 
-## Statistical analysis
+### Statistical analysis
 
 In this study, statistical analyses were conducted using R language and IBM SPSS Statistics 18 software. Independent sample t-tests were utilized to compare continuous variables between two groups, while chi-square tests were employed for categorical variables, with a p-value <0.05 considered statistically significant. For the analysis of single-cell RNA sequencing data, the DESeq2 R package was used to perform statistical analysis of differentially expressed genes, and the Wald test was applied to calculate the significance of gene expression differences. A padj < 0.05 was considered statistically significant.

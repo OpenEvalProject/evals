@@ -68,9 +68,7 @@ A) Ensured a delay of ~2 hours between the period of isoflurane exposure and the
 
 B) Performed multiple sessions of recordings over 1-2 days without reanaesthetising and injecting another bolus of PtP-C343 and fluorescein dextran. The data gathered in each of these sessions was comparable, suggesting that even the first set of recordings after the injection procedure was not affected by the exposure to isoflurane.
 
-Author response image 1 shows Po2 values recorded from a single cortical capillary during 3 separate recording sessions across 2 days following the retro-orbital injection, demonstrating that Po2 values from this capillary were similar at ~2 hours (Session 1), ~7 hours (Session 2) and ~24 hours (Session 3) after the initial 5 minute exposure to isoflurane.10.7554/eLife.12024.011Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.12024.011
-
-DOI: http://dx.doi.org/10.7554/eLife.12024.011
+Author response image 1 shows Po2 values recorded from a single cortical capillary during 3 separate recording sessions across 2 days following the retro-orbital injection, demonstrating that Po2 values from this capillary were similar at ~2 hours (Session 1), ~7 hours (Session 2) and ~24 hours (Session 3) after the initial 5 minute exposure to isoflurane.10.7554/eLife.12024.011Author response image 1.
 
 We have amended the text of the paper to better reflect our procedures for injection of PtP-C343, head-fixation and awake recordings (subsection “Habituation of mice to head restraint“).
 

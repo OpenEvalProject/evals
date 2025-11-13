@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0431v7h69 Fundación Instituto Leloir Buenos Aires Argentina
-2. https://ror.org/03cqe8w59 Consejo Nacional De Investigaciones Científicas Y Técnicas (CONICET) Buenos Aries Argentina
-3. https://ror.org/03hnwy706 Laboratorio de Regulación Hipofisaria, Instituto de Biología y Medicina Experimental (IBYME-CONICET) Buenos Aires Argentina
-4. https://ror.org/0081fs513 Departamento De Fisiología, Biología Molecular Y Celular, Facultad De Ciencias Exactas Y Naturales, Universidad De Buenos Aires Buenos Aires Argentina
+1. Fundación Instituto Leloir Buenos Aires Argentina ([ROR:0431v7h69](https://ror.org/0431v7h69))
+2. Consejo Nacional De Investigaciones Científicas Y Técnicas (CONICET) Buenos Aries Argentina ([ROR:03cqe8w59](https://ror.org/03cqe8w59))
+3. Laboratorio de Regulación Hipofisaria, Instituto de Biología y Medicina Experimental (IBYME-CONICET) Buenos Aires Argentina ([ROR:03hnwy706](https://ror.org/03hnwy706))
+4. Departamento De Fisiología, Biología Molecular Y Celular, Facultad De Ciencias Exactas Y Naturales, Universidad De Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))
 
 † Corresponding author
 
 ## Abstract
 
-Eukaryotic cells depend on exocytosis to direct intracellularly synthesized material toward the extracellular space or the plasma membrane, so exocytosis constitutes a basic function for cellular homeostasis and communication between cells. The secretory pathway includes biogenesis of secretory granules (SGs), their maturation and fusion with the plasma membrane (exocytosis), resulting in release of SG content to the extracellular space. The larval salivary gland of Drosophila melanogaster is an excellent model for studying exocytosis. This gland synthesizes mucins that are packaged in SGs that sprout from the trans -Golgi network and then undergo a maturation process that involves homotypic fusion, condensation, and acidification. Finally, mature SGs are directed to the apical domain of the plasma membrane with which they fuse, releasing their content into the gland lumen. The exocyst is a hetero-octameric complex that participates in tethering of vesicles to the plasma membrane during constitutive exocytosis. By precise temperature-dependent gradual activation of the Gal4-UAS expression system, we have induced different levels of silencing of exocyst complex subunits, and identified three temporarily distinctive steps of the regulated exocytic pathway where the exocyst is critically required: SG biogenesis, SG maturation, and SG exocytosis. Our results shed light on previously unidentified functions of the exocyst along the exocytic pathway. We propose that the exocyst acts as a general tethering factor in various steps of this cellular process.
+Eukaryotic cells depend on exocytosis to direct intracellularly synthesized material toward the extracellular space or the plasma membrane, so exocytosis constitutes a basic function for cellular homeostasis and communication between cells. The secretory pathway includes biogenesis of secretory granules (SGs), their maturation and fusion with the plasma membrane (exocytosis), resulting in release of SG content to the extracellular space. The larval salivary gland of Drosophila melanogaster is an excellent model for studying exocytosis. This gland synthesizes mucins that are packaged in SGs that sprout from the trans-Golgi network and then undergo a maturation process that involves homotypic fusion, condensation, and acidification. Finally, mature SGs are directed to the apical domain of the plasma membrane with which they fuse, releasing their content into the gland lumen. The exocyst is a hetero-octameric complex that participates in tethering of vesicles to the plasma membrane during constitutive exocytosis. By precise temperature-dependent gradual activation of the Gal4-UAS expression system, we have induced different levels of silencing of exocyst complex subunits, and identified three temporarily distinctive steps of the regulated exocytic pathway where the exocyst is critically required: SG biogenesis, SG maturation, and SG exocytosis. Our results shed light on previously unidentified functions of the exocyst along the exocytic pathway. We propose that the exocyst acts as a general tethering factor in various steps of this cellular process.
 
 ## Introduction
 
@@ -35,25 +35,978 @@ In this work, we have utilized the Drosophila salivary gland to carry out a meth
 
 ## Results
 
-## Characterization of SG progression during salivary gland development
+### Characterization of SG progression during salivary gland development
 
 Salivary glands of D. melanogaster larvae fulfill different functions during larval development. Mostly, they act as exocrine glands producing non-digestive enzymes during the larval feeding period, as well as mucins when the larva is about to pupariate (Costantino et al., 2008; Farkaš et al., 2014). More recently, salivary glands have been proposed to behave as endocrine organs as well, secreting a yet unidentified factor that regulates larval growth (Li et al., 2022). Biosynthesis of mucins produced by salivary glands, named Salivary gland secreted proteins (Sgs), begins at the second half of the third larval instar in response to an ecdysone peak (Biyasheva et al., 2001). After being glycosylated at the endoplasmic reticulum (ER) and the Golgi complex (GC), mucins are packed in SGs. Following subsequent developmentally controlled hormonal stimuli, SGs are massively exocytosed, releasing the mucins to the gland lumen, and finally expelling them outside of the puparium, and gluing it to the substratum (Biyasheva et al., 2001). We used Sgs3-GFP or Sgs3-dsRed transgenic lines to follow this process in vivo. In wandering larvae, Sgs3-dsRed can be detected in salivary glands (Figure 1A’), while in prepupae, Sgs3-dsRed has been secreted out from the puparium, and is no longer detectable in salivary glands (Figure 1B’). To have a better temporal and spatial resolution of this process, we dissected and analyzed by confocal microscopy salivary glands expressing Sgs3-GFP at 4-hr intervals starting at 96 h after egg laying (AEL). Expression of Sgs3-GFP begins at 96–100 h AEL, and can be detected at the distal region of the gland (Figure 1C). Later on, Sgs3-GFP expression expands to more proximal cells, and at 116 h AEL, the mucin becomes detectable in the whole gland, with the exception of ductal cells which do not express Sgs3 (Figure 1C; Biyasheva et al., 2001). Thereafter, at 116–120 h AEL, in response to an ecdysone peak, SGs fuse with the apical plasma membrane, and release their content to the gland lumen (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig1-v1.jpg)
 
-**Figure 1.:** Images of a wandering larva (A, A’) and a prepupa (B, B’) expressing Sgs3-dsRed and visualized under white light (A, B) or by epifluorescence (A’, B’). Sgs3-dsRed localized in salivary glands of wandering larvae (A’) and outside the puparium in prepupae (B’). Scale bar 1 mm. (C) Confocal images of unfixed salivary glands dissected from larvae at the indicated time intervals (h AEL = hours after egg laying). Sgs3-GFP is shown in red and the plasma membrane labeled with myr-Tomato (sgs3-GFP, fkh-Gal4/UAS-myr-Tomato) is shown in cyan. At 96 h AEL, Sgs3 synthesis could be detected in the distal cells of the gland. Thereafter, Sgs3 expression gradually expanded proximally, and at 116 h AEL all salivary gland cells expressed Sgs3, with the exception of ductal cells. Exocytosis of secretory granules (SGs) began by this time point, and Sgs3 could be detected in the gland lumen. At 120 h AEL concerted exocytosis of SGs has ended. Scale bar 300 μm. (D) Confocal images of SGs labeled with Sgs3-GFP; SG diameter distribution at each time interval is displayed below. Based on its diameter, SGs are classified as immature (diameter <3 μm) or mature (diameter ≥3 μm). Only SGs from distal cells were used for diameter determination. Data points for this graph are shown in Table 1. For all time intervals analyzed n = 3, except for the 108–112 h AEL interval for which n = 4. ‘n’ represents the number of salivary glands analyzed. Scale bar 5 μm.Figure 1—source data 1.
+**Figure 1.:** Images of a wandering larva (A, A’) and a prepupa (B, B’) expressing Sgs3-dsRed and visualized under white light (A, B) or by epifluorescence (A’, B’). Sgs3-dsRed localized in salivary glands of wandering larvae (A’) and outside the puparium in prepupae (B’). Scale bar 1 mm. (C) Confocal images of unfixed salivary glands dissected from larvae at the indicated time intervals (h AEL = hours after egg laying). Sgs3-GFP is shown in red and the plasma membrane labeled with myr-Tomato (sgs3-GFP, fkh-Gal4/UAS-myr-Tomato) is shown in cyan. At 96 h AEL, Sgs3 synthesis could be detected in the distal cells of the gland. Thereafter, Sgs3 expression gradually expanded proximally, and at 116 h AEL all salivary gland cells expressed Sgs3, with the exception of ductal cells. Exocytosis of secretory granules (SGs) began by this time point, and Sgs3 could be detected in the gland lumen. At 120 h AEL concerted exocytosis of SGs has ended. Scale bar 300 μm. (D) Confocal images of SGs labeled with Sgs3-GFP; SG diameter distribution at each time interval is displayed below. Based on its diameter, SGs are classified as immature (diameter <3 μm) or mature (diameter ≥3 μm). Only SGs from distal cells were used for diameter determination. Data points for this graph are shown in Table 1. For all time intervals analyzed n = 3, except for the 108–112 h AEL interval for which n = 4. ‘n’ represents the number of salivary glands analyzed. Scale bar 5 μm.
 
 Detailed observation of distal cells of salivary glands revealed that SGs enlarge from 96 h AEL onwards (Figure 1D; Ma and Brill, 2021b; Neuman et al., 2021), a phenomenon that we quantified by measuring SG diameter (Figure 1D and Table 1). At 96–100 h AEL nascent SGs are smaller than 1 μm in diameter. Later, and up to 112 h AEL, most SGs are smaller than 3 μm in diameter, and classified them as ‘Immature SGs’. From 112 h AEL onwards most SGs are bigger than 3 μm in diameter and classified as ‘Mature SGs’ (Figure 1D and Table 1). The maximal SG diameter that we detected was 7.13 μm at 116–120 h AEL, just before exocytosis (Table 1).
 
-## The eight subunits of the exocyst complex are required for regulated exocytosis of SGs
+**Table 1.**
+ Quantification of secretory granule (SG) diameter at the indicated time intervals after egg laying.SGs from salivary gland distal-most cells were analyzed. Columns display: Hours AEL: hours after egg laying; n: number of salivary glands analyzed; number of cells analyzed; number of SGs measured; mean diameter; median diameter; minimum diameter and maximum diameter.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hours AEL</th>
+      <th>n</th>
+      <th>Cells quantified</th>
+      <th>SGquantified</th>
+      <th>Meandiameter (μm)</th>
+      <th>Mediandiameter(μm)</th>
+      <th>Minimum diameter (μm)</th>
+      <th>Maximum diameter (μm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>96–100</td>
+      <td>3</td>
+      <td>7</td>
+      <td>57</td>
+      <td>0.92</td>
+      <td>0.91</td>
+      <td>0.62</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>100–104</td>
+      <td>3</td>
+      <td>18</td>
+      <td>173</td>
+      <td>2.22</td>
+      <td>2.11</td>
+      <td>0.89</td>
+      <td>4.76</td>
+    </tr>
+    <tr>
+      <td>104–108</td>
+      <td>3</td>
+      <td>12</td>
+      <td>112</td>
+      <td>2.53</td>
+      <td>2.53</td>
+      <td>1.50</td>
+      <td>5.78</td>
+    </tr>
+    <tr>
+      <td>108–112</td>
+      <td>4</td>
+      <td>13</td>
+      <td>96</td>
+      <td>3.18</td>
+      <td>3.18</td>
+      <td>1.78</td>
+      <td>4.81</td>
+    </tr>
+    <tr>
+      <td>112–116</td>
+      <td>3</td>
+      <td>10</td>
+      <td>86</td>
+      <td>4.22</td>
+      <td>4.22</td>
+      <td>1.16</td>
+      <td>6.59</td>
+    </tr>
+    <tr>
+      <td>116–120</td>
+      <td>3</td>
+      <td>15</td>
+      <td>107</td>
+      <td>4.48</td>
+      <td>4.45</td>
+      <td>2.47</td>
+      <td>7.13</td>
+    </tr>
+  </tbody>
+</table>
+
+### The eight subunits of the exocyst complex are required for regulated exocytosis of SGs
 
 Fluorophore-tagged Sgs3 can also be used to screen for exocytosis mutants in which Sgs3-GFP is retained inside salivary glands at the prepupal stage (de la Riva-Carrasco et al., 2021; Ma et al., 2020). Using this approach, we found that the exocyst complex is apparently required for exocytosis of SGs, since silencing of any of the eight subunits of the complex results in retention of Sgs3-GFP in salivary glands of prepupae (Figure 2 and Figure 3—figure supplement 1). We used the salivary gland-specific driver forkhead-Gal4 (fkh-Gal4) to induce the expression of RNAis against each of the eight subunits of the exocyst complex in larvae that also expressed Sgs3-GFP. We analyzed Sgs3-GFP distribution in wandering larvae and prepupae (Figure 2A, B), and observed that whereas control prepupae were able to expel Sgs3 outside the puparium (Figure 2A’, C), this process was blocked in most individuals expressing RNAis against any of the exocyst subunits, with Sgs3-GFP being detected inside salivary glands of prepupae (Figure 2B’, C and Figure 3—figure supplement 1). These observations suggest that all exocyst subunits are required for exocytosis of SGs (Table 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig2-v1.jpg)
 
-**Figure 2.:** (A, B) Images of a larva and a prepupa expressing Sgs3-GFP, and visualized with epifluorescence. Sgs3-GFP was inside the salivary glands in control wandering larvae (A), and outside the puparium (A’) in control prepupae (sgs3-GFP, fkh-Gal4/UAS-cherry). Expression of RNAisec3 in salivary glands (RNAiUAS-sec3) did not affect expression of Sgs3-GFP in larvae (RNAi; sgs3-GFP, fkh-Gal4B), but blocked Sgs3-GFP release outside the puparium, so the protein was retained inside the salivary glands (B’). This phenotypic manifestation is referred as ‘retention phenotype’. Scale bar 1 mm. (C) Quantification of the penetrance of the retention phenotype in prepupae expressing the indicated RNAis. RNAis were expressed using fkh-Gal4 and larvae were cultured at 29°C. All RNAis tested against exocyst complex subunits displayed a retention phenotype, with a penetrance significantly different from the control RNAi (UAS-cherry) according to Likelihood ratio test followed by Tukey’s test (* = p-value <0.05). RNAicherry = 7; RNAi nexo70 = 11; RNAiV nexo70 = 8; RNAiBL nsec3 = 6; RNAi nsec5 = 17; RNAiBL nsec5 = 6; RNAiV nsec10 = 9; RNAi nsec6 = 11; RNAi nsec8 = 5; RNAi nexo84 = 5; RNAiBL nexo84, RNAiVn = 6; sec15 = 3; RNAiBL nsec15 = 4. ‘RNAiV nn’ represents the number of vials containing 20–30 prepupae per vial. For exocyst subunits with more than one RNAi line available, ‘BL’ indicates a Bloomington Stock Center allele and ‘V’ a Vienna Stock Center allele (see Table 2 for stock numbers).Figure 2—source data 1.Figure 2C.
+**Figure 2.:** (A, B) Images of a larva and a prepupa expressing Sgs3-GFP, and visualized with epifluorescence. Sgs3-GFP was inside the salivary glands in control wandering larvae (A), and outside the puparium (A’) in control prepupae (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi). Expression of sec3RNAi in salivary glands (UAS-sec3RNAi; sgs3-GFP, fkh-Gal4) did not affect expression of Sgs3-GFP in larvae (B), but blocked Sgs3-GFP release outside the puparium, so the protein was retained inside the salivary glands (B’). This phenotypic manifestation is referred as ‘retention phenotype’. Scale bar 1 mm. (C) Quantification of the penetrance of the retention phenotype in prepupae expressing the indicated RNAis. RNAis were expressed using fkh-Gal4 and larvae were cultured at 29°C. All RNAis tested against exocyst complex subunits displayed a retention phenotype, with a penetrance significantly different from the control RNAi (UAS-cherryRNAi) according to Likelihood ratio test followed by Tukey’s test (* = p-value <0.05). cherryRNAi n = 7; exo70RNAiV n = 11; exo70RNAiBL n = 8; sec3RNAi n = 6; sec5RNAiBL n = 17; sec5RNAiV n = 6; sec10RNAi n = 9; sec6RNAi n = 11; sec8RNAi n = 5; exo84RNAiBL n = 5; exo84RNAiV, n = 6; sec15RNAiBL n = 3; sec15RNAiV n = 4. ‘n’ represents the number of vials containing 20–30 prepupae per vial. For exocyst subunits with more than one RNAi line available, ‘BL’ indicates a Bloomington Stock Center allele and ‘V’ a Vienna Stock Center allele (see Table 2 for stock numbers).
+
+**Table 2.**
+ List of the Drosophila lines utilized in this work.Stock number and repository center from where each line was obtained are indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Number</th>
+      <th>Stock center</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sgs3-GFP</td>
+      <td>5885</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>Sgs3-dsRed</td>
+      <td>-</td>
+      <td>A.J. Andres' Lab</td>
+    </tr>
+    <tr>
+      <td>YFP-Rab11</td>
+      <td>62549</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>YFP-Rab1</td>
+      <td>62539</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-dicer2</td>
+      <td>24650</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-White-RNAi</td>
+      <td>33613</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Cherry-RNAi</td>
+      <td>35785</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Rab11-RNAi</td>
+      <td>27730</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec3-RNAi</td>
+      <td>35806</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec5-RNAi</td>
+      <td>27526</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec5-RNAi</td>
+      <td>28873</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec6-RNAi</td>
+      <td>27314</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec8-RNAi</td>
+      <td>45032</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec10-RNAi</td>
+      <td>27483</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec15-RNAi</td>
+      <td>27499</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec15-RNAi</td>
+      <td>35161</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Exo84-RNAi</td>
+      <td>108650</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Exo84-RNAi</td>
+      <td>28712</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Exo70-RNAi</td>
+      <td>27867</td>
+      <td>Vienna</td>
+    </tr>
+    <tr>
+      <td>UAS-Exo70-RNAi</td>
+      <td>28041</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-PLCγ-PH-EGFP</td>
+      <td>58362</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Synaptotagmin1-GFP</td>
+      <td>6925</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Sec8</td>
+      <td>9556</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-CD63-GFP</td>
+      <td>91390</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Myr-Tomato</td>
+      <td>32221</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-GFP-KDEL</td>
+      <td>9898</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-Bip-SfGFP-HDEL</td>
+      <td>64749</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-RFP-Golgi</td>
+      <td>30908</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-GRASP65-GFP</td>
+      <td>8508</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-EGFP</td>
+      <td>5430</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-GFP-Sec15</td>
+      <td>39685</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-YFP-Rab11CA</td>
+      <td>9791</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>tubP-GAL80[ts]</td>
+      <td>7017</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-mCD8-mCherry</td>
+      <td>27391</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UAS-mito-GFP</td>
+      <td>8443</td>
+      <td>Bloomington</td>
+    </tr>
+    <tr>
+      <td>UASp-GFP-mCherry-Atg8a</td>
+      <td>37749</td>
+      <td>Bloomington</td>
+    </tr>
+  </tbody>
+</table>
 
 Having established that knock-down of each of the exocyst subunits can block secretion of Sgs3, leading to retention of the mucin in the salivary glands (Figure 2), we investigated if exocytosis is actually impaired in these larvae. We dissected salivary glands of control and exocyst knock-down individuals at 116 h AEL, and analyzed them under the confocal microscope. Whereas control salivary gland cells were filled with mature SGs (Figure 3A), a more heterogeneous situation was found in salivary gland cells expressing RNAi against exocyst subunits, with some cells displaying mature SGs, and others, immature SGs, while even some displayed Sgs3-GFP in a mesh- or network-like structure (Figure 3B). Therefore, we investigated if this mosaic phenotypic manifestation was due to variations in cell-to-cell Gal4-UAS activation and therefore RNAi expression, being an indication of potentially different functions of the exocyst complex in the secretory pathway of salivary gland cells. We performed RNAi-mediated knock-down of each of the eight exocyst subunits at different temperatures (29, 25, 21, and 19°C) that were accurately controlled in water baths to obtain different levels of silencing and likely different phenotypic manifestations of exocyst complex downregulation. Whereas expression of a control RNAi resulted in mature SGs irrespectively of the temperature, expression of exocyst subunits RNAis at high temperatures (29°C) resulted, as a general rule, in phenotypes consistent with early arrest of the secretory pathway, since in most cells Sgs3-GFP was retained in a reticular structure or packed in immature SGs (Figure 3C, Figure 3—figure supplement 1A, and Table 3). By lowering the temperature of RNAi expression, and therefore moderating silencing, the most severe phenotypes (early arrest of the secretory pathway) gradually became less prominent and simultaneously, the proportion of cells displaying immature SGs, and even mature SGs, became more noticeable (Figure 3C, Figure 3—figure supplement 1A, and Table 3), suggesting that lower expression of RNAis allowed the progression of the secretory pathway. Notably, for each of the RNAis tested there was a temperature at which each of the three phenotypic outcomes could be clearly identified, although this particular temperature could be different for each RNAi, likely due to expression levels of the transgenes (Figure 3C, Figure 3—figure supplement 1A, and Table 3). RT-qPCR confirmed that different culturing temperatures resulted in different degrees of silencing of exocyst subunit mRNAs, as shown in Figure 3—figure supplement 2 for exo70 and sec3 (Figure 3—figure supplement 2A, B). Also, we found that different phenotypic outcomes resulting from expression of different RNAi transgenic lines that target the same subunit (exo70) are due to differences in the levels of mRNA downregulation generated by each particular RNAi (exo70 RNAiV or exo70RNAiBL), and that there is a correlation between the level of mRNA downregulation and the strength of the phenotype observed (Figure 3—figure supplement 2C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-v1.jpg)
+
+**Figure 3.:** At the end of larval development (116–120 h AEL) salivary gland cells of control individuals (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) (A) were filled with mature secretory granules (SGs) (insets). In cells expressing exo84RNAiV (UAS-exo84RNAiV; sgs3-GFP, fkh-Gal4) (B), three different phenotypes could be visualized in a single salivary gland: cells with mature SGs (MSG), cells with immature SGs (ISG), and cells with no SG, in which Sgs3 was retained in a mesh (MLS). Scale bar 30 μm in main panels, and 5 μm in insets. For didactic purposes, MSG, ISG, and MLS were drawn on the right, next to the corresponding inset. (C) Quantification of the penetrance of each of the three phenotypes observed upon downregulation of each of the exocyst subunits. Larvae were grown at four different temperatures (29, 25, 21, or 19°C) to achieve different levels of RNAi expression. ‘n’ = number of salivary glands analyzed; controlRNAi (cherryRNAi) n = 4 (29°C), n = 5 (25, 21, and 19°C); exo70RNAiBL n = 11 (29°C), n = 7 (25 and 21°C), n = 6 (19°C); sec3RNAi n = 7 (29 and 25°C), n = 4 (21°C), n = 9 (19°C); sec5RNAiBL n = 4 (29°C), n = 12 (25°C), n = 9 (21°C), n = 6 (19°C); sec10RNAi n = 8 (29°C), n = 6 (25 and 19°C), n = 7 (21°C); sec6RNAi n = 9 (29°C), n = 4 (25°C); sec8RNAi n = 8 (29°C), n = 6 (25 and 19°C), n = 7 (21°C); exo84RNAiV n = 8 (29°C), n = 4 (25 and 19°C), n = 5 (21°C); sec15RNAiV n = 4 (29 and 25°C), n = 6 (21°C), n = 5 (19°C). Raw data used to generate this graph is shown in Table 3. (D) Quantification of the penetrance of the Sgs3-GFP retention phenotype in salivary glands of prepupae of the indicated genotypes. Only a few control individuals (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) displayed the retention phenotype. Downregulation of exocyst subunits provoked significant retention of Sgs3 inside the salivary glands irrespective to the temperature (25, 21, or 19°C). Expression of sec6RNAi at 21 or 19°C resulted in no synthesis of Sgs3-GFP or Sgs3-dsRed, so the distribution of phenotypes was not assessed for this genotype at these temperatures. RNAis were expressed with fkh-Gal4. ‘n’ = number of vials with 20–30 larvae. controlRNAi (cherryRNAi) n = 7 (25°C), n = 9 (21°C), n = 19 (19°C); exo70RNAiBL n = 13 (25°C), n = 9 (21°C), n = 22 (19°C); sec3RNAi n = 9 (25°C), n = 6 (21 and 19°C); sec5RNAiBL n = 9 (25°C), n = 7 (21°C), n = 12 (19°C); sec10RNAi n = 10 (25°C), n = 5 (21°C), n = 4 (19°C); sec6RNAi n = 10 (25°C); sec8RNAi n = 5 (25°C), n = 8 (21°C), n = 22 (19°C); exo84RNAiV n = 8 (25 and 19°C), n = 6 (21°C); sec15RNAiV n = 5 (25°C), n = 9 (21°C), n = 8 (19°C). Statistical analysis was performed using a Likelihood ratio test followed by Tuckey´s test (*p-value <0.05). For those genotypes with 100% penetrance no statistical analysis was performed due to the lack of standard error. ns = not significant. Comparisons were made between RNAis for each of the temperatures analyzed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Additional RNA lines targeting exocyst subunits utilized to assess reduction-of-function phenotypes in the pathway of regulated exocytosis. (A) Quantification of the penetrance of each of the three phenotypes observed upon downregulation of each of the exocyst subunits. Larvae were grown at four different temperatures to achieve different levels of RNAi expression of exocyst subunits. n = number of salivary glands analyzed. controlRNAi (cherryRNAi) n = 4 (29°C), n = 5 (25, 21, and 19°C); exo70RNAiV n = 5 (29°C), n = 6 (25°C), n = 6 (21°C), n = 4 (19°C); sec15RNAiBL n = 5 (29°C), n = 6 (25°C), n = 5 (21°C), n = 5 (19°C); exo84RNAiBL n = 7 (29°C), n = 5 (25°C), n = 6 (21°C), n = 5 (19°C); sec5RNAiV n = 5 (29°C), n = 5 (25°C), n = 6 (21°C), n = 6 (19°C). (B) Quantification of the penetrance of the Sgs3-GFP retention phenotype in salivary glands of prepupae with the indicated RNAis at different temperatures. n = number of vials containing 20–30 larvae each. controlRNAi (cherryRNAi) n = 7 (25°C), n = 9 (21°C), n = 19 (19°C); exo70RNAiV n = 6 (25°C), n = 8 (21°C), n = 6 (19°C); sec5RNAiV, n = 4 (25°C), n = 6 (21°C), n = 5 (19°C); sec15RNAiBL n = 7 (25°C), n = 8 (21°C), n = 7 (19°C); exo84RNAiBL n = 5 (25°C), n = 4 (21°C), n = 8 (19°C). RNAis were expressed using fkh-Gal4. Comparisons of the retention phenotype were carried out between genotypes at each different temperature, and statistical analysis was performed using a Likelihood ratio test followed by Tukey’s test (*p value <0.05). For those RNAis with 100% penetrance no statistical analysis was performed. ns = not significant. This figure completes experiments of Figure 3C, D; all RNAis were expressed with controls at the same time, and therefore the controls are identical to those of Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** mRNA levels of the indicated genes were measured by qRT-PCR in homogenates from salivary glands. sec3 (A) or exo70 (B) mRNA levels from larva grown at the indicated temperatures were determined in salivary glands expressing sec3RNAi (sgs3-GFP, fkh-Gal4/UAS-sec3RNAi)(A) or exo70RNAiBL (sgs3-GFP, fkh-Gal4/UAS-exo70RNAiBL) (B) relative to salivary glands expressing cherryRNAi (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) from larvae grown at the same temperatures. (C) exo70 mRNA levels from larva grown at 29°C were determined in salivary glands expressing exo70RNAiV (sgs3-GFP, fkh-Gal4/UAS-exo70RNAiV) or exo70RNAiBL (sgs3-GFP, fkh-Gal4/UAS-exo70RNAiBL) relative to salivary glands expressing cherryRNAi (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi). n = 4 for all genotypes and conditions. Statistical analysis was performed by one-way analysis of variance (ANOVA) followed by Tukey’s test with a confidence interval higher than 95% (p < 0.05). ns = not significant.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Phenotypes of control (whiteRNAi) (A–C), sec3RNAi (D–F), or sec15RNAiBL (G–I) salivary glands. The thermo-sensitive Gal80 system (Gal80ts) was utilized to compare salivary glands after silencing the indicated genes throughout larval development ("chronic knock-down"): (A, D, G) or at the third larval instar only ("acute knock-down"): (B, E, H). Chronic RNAi expression was achieved by growing larvae at the restrictive temperature (29°C) from larval eclosion onwards (A, D, G). Acute RNAi expression was achieved by growing larvae at the permissive temperature (18°C) from larval eclosion until early L3 (larval third instar), (B, E, H) and then shifting larvae to the restrictive temperature (29°C) until analyzed. E: embryogenesis; L1: larval first instar; L2: second instar; and L3: third instar. The penetrance of each phenotype (mature secretory granules, immature secretory granules, or mesh-like structure) was quantified for each genotype and experimental condition (C, F, I). No substantial differences were detected between chronic and acute silencing of exocyst subunits. ‘n’ represents the total number of salivary glands analyzed. controlRNAi (whiteRNAi) (A) n = 5, (B) n = 3; sec3RNAi, (D) n = 6, (E) n = 7; sec15RNAiBL, (G, H) n = 4.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Expression of sec15RNAiBL at 18°C (sgs3-dsRed; UAS-PLCγPH-GFP, fkh-Gal4/UAS-sec15RNAiBL) (A) generates salivary glands that do not form mature SGs (MSGs) in any of the cells analyzed. Simultaneous expression of GFP-Sec15 (UAS-GFP-sec15/Sgs3-dsRed; UAS-sec15RNAiBL/fkh-Gal4) (B) generates salivary glands with MSGs in 67% of the cells. (C) Quantification of each of the three possible phenotypes mature SGs (MSGs), immature SGs (ISGs), or mesh-like structure (MLS) in control larvae (sgs3-dsRed; UAS-PLCγPH-GFP, fkh-Gal4/UAS-sec15RNAiBL) or after expression of the rescue construct (UAS-GFP-sec15/sgs3-dsRed; UAS-sec15RNAiBL/fkh-Gal4). ‘n’ represents the total number of salivary glands analyzed. Control genotype (UAS-PLCγPH-GFP) n = 7; rescue genotype (UAS-GFP-sec15) n = 5.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Mitochondrial distribution and morphology (A, B), cis- and trans-Golgi complex distribution and morphology (C, D), nuclear size (E), and autophagy (F) were analyzed in salivary glands of control (UAS-whiteRNAi) and exocyst knock-down salivary glands. Mitochondria were labeled with mito-GFP (UAS-mito-GFP), cis-Golgi with GRASP65 (UAS-GRASP65-GFP), trans-Golgi with RFP-Golgi (UAS-RFP-Golgi), nuclei with EGFP (UAS-EGFP), and autophagy with mCh-Atg8 (UAS-GFP-mCh-atg8). Larvae were grown at 25°C to achieve a condition at which knock-down of the exocyst subunits mostly generate cells with immature SGs. RNAis were expressed using fkh-Gal4.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Quantification of nuclear area in the indicated genotypes was performed using ImageJ. (B) Quantification of the area coved by mCh-Atg8 foci over the total area of salivary gland analyzed (%) was performed using ImageJ. Statistical analysis was carried-out using one-way analysis of variance (ANOVA) ‘n’ represents the total number of salivary glands analyzed. (A) controlRNAi (whiteRNAi) n = 8; exo70RNAiBL n = 5; sec3RNAi n = 4. (B) controlRNAi (whiteRNAi) n = 8; exo84RNAiV n = 5; sec3RNAi n = 5.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) CD63 (UAS-CD63-GFP), (B) CD8 (UAS-CD8-mCherry), (C) Rab11 (YFP-Rab11), (D) PI(4,5)P2 (UAS-PLCγ-PH-GFP), and (E) filamentous actin (phalloidine-647) distribution were analyzed in salivary glands of control (UAS-whiteRNAi) or exocyst knock-down salivary glands (UAS-exo70RNAiBL, UAS-sec3RNAi, or UAS-exo84RNAiV). Larvae were grown at 25°C (UAS-exo70RNAiBL or UAS-sec3RNAi) or at 29°C (UAS-exo84RNAiV) to achieve a condition at which exocyst downregulation generate mostly cells with immature secretory granules (SGs). Note that in (A) and (E), for accurate comparisons, the control genotype (UAS-whiteRNAi) was also assayed at different temperatures. Transgenes were expressed with fkh-Gal4. Statistical analysis was performed using (A, B) one-way analysis of variance (ANOVA), (D) Likelihood ratio test followed by Tukey’s test, or (E) Wald test (p-value <0.05, ns = not significant). ‘n’ represents the total number of salivary glands analyzed. (A) controlRNAi (whiteRNAi) n = 6; exo70RNAiBL n = 5; controlRNAi (whiteRNAi) n = 3; exo84RNAiV n = 3. (B) controlRNAi (whiteRNAi) n = 8; exo70RNAiBL n = 5; sec3RNAi n = 6. (D) n = 4. (E) controlRNAi (whiteRNAi) n = 4; exo70RNAiBL n = 10; controlRNAi (whiteRNAi) n = 6; exo84RNAiV n = 4.
+
+**Table 3.**
+ Raw data for experiments of Figure 3C and Figure 3—figure supplement 1A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Figure 3C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genotype</td>
+      <td>Temperature(°C)</td>
+      <td>Number of glands analyzed</td>
+      <td>Number of distal cells analyzed</td>
+      <td>Phenotype</td>
+      <td>% of phenotype</td>
+      <td>Standard deviation</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Control RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">12</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">13</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">17</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Exo70 RNAi BL</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">11</td>
+      <td rowspan="3">43</td>
+      <td>Mesh-like structure</td>
+      <td>12.73</td>
+      <td>28.67</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>87.27</td>
+      <td>28.67</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">23</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>95.24</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>4.76</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">23</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>90.48</td>
+      <td>25.2</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>9.52</td>
+      <td>25.2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec3 RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">31</td>
+      <td>Mesh-like structure</td>
+      <td>69.52</td>
+      <td>42.84</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>24.05</td>
+      <td>32.37</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>6.43</td>
+      <td>11.07</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">20</td>
+      <td>Mesh-like structure</td>
+      <td>16.67</td>
+      <td>28.87</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>78.57</td>
+      <td>28.41</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>4.76</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">11</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>27.08</td>
+      <td>35.6</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>72.92</td>
+      <td>35.6</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">9</td>
+      <td rowspan="3">32</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>33.52</td>
+      <td>33.75</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>66.48</td>
+      <td>33.75</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec5 RNAi BL</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">14</td>
+      <td>Mesh-like structure</td>
+      <td>96.43</td>
+      <td>7.14</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>3.57</td>
+      <td>7.14</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">12</td>
+      <td rowspan="3">45</td>
+      <td>Mesh-like structure</td>
+      <td>62.5</td>
+      <td>38.35</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>37.5</td>
+      <td>38.35</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">9</td>
+      <td rowspan="3">20</td>
+      <td>Mesh-like structure</td>
+      <td>27.78</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>72.22</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">21</td>
+      <td>Mesh-like structure</td>
+      <td>12.22</td>
+      <td>19.05</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>84.44</td>
+      <td>18.22</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>3.33</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec10 RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">9</td>
+      <td rowspan="3">26</td>
+      <td>Mesh-like structure</td>
+      <td>77.78</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>22.22</td>
+      <td>44.1</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">34</td>
+      <td>Mesh-like structure</td>
+      <td>59.17</td>
+      <td>46.95</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>40.83</td>
+      <td>46.95</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">23</td>
+      <td>Mesh-like structure</td>
+      <td>20.24</td>
+      <td>34.65</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>79.76</td>
+      <td>34.65</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">20</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Sec6 RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">9</td>
+      <td rowspan="3">34</td>
+      <td>Mesh-like structure</td>
+      <td>66.67</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>33.33</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">7</td>
+      <td>Mesh-like structure</td>
+      <td>75</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>25</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec8 RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">8</td>
+      <td rowspan="3">37</td>
+      <td>Mesh-like structure</td>
+      <td>41.16</td>
+      <td>35.88</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>58.84</td>
+      <td>35.88</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">20</td>
+      <td>Mesh-like structure</td>
+      <td>8.33</td>
+      <td>20.41</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>80.56</td>
+      <td>30.58</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>11.11</td>
+      <td>27.22</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">26</td>
+      <td>Mesh-like structure</td>
+      <td>3.57</td>
+      <td>9.45</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>96.43</td>
+      <td>9.45</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">22</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>96.67</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>3.33</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Exo84 RNAi V</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">8</td>
+      <td rowspan="3">33</td>
+      <td>Mesh-like structure</td>
+      <td>2.08</td>
+      <td>5.89</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>60.42</td>
+      <td>32.49</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>37.5</td>
+      <td>33.46</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">14</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>27.92</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>72.08</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">8</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec15 RNAi V</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">17</td>
+      <td>Mesh-like structure</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">16</td>
+      <td>Mesh-like structure</td>
+      <td>87.5</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>12.5</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">25</td>
+      <td>Mesh-like structure</td>
+      <td>43.33</td>
+      <td>46.33</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>56.67</td>
+      <td>46.33</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">14</td>
+      <td>Mesh-like structure</td>
+      <td>16.67</td>
+      <td>23.57</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>53.33</td>
+      <td>36.13</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>30</td>
+      <td>44.72</td>
+    </tr>
+  </tbody>
+</table>
 
 To define more precisely the role of the exocyst, and to rule out potential pleiotropic effects due to developmental defects derived from chronic exocyst downregulation, we made use of the Gal80 thermosensitive tool (Gal80ts) (Lee and Luo, 1999). Larvae were grown at a permissive temperature (18°C) until they reached the 3rd instar (120 hr). In this manner, the exocyst complex could be functional until that developmental stage. Then, larvae were transferred to the restrictive temperature (29°C) and salivary glands were dissected 36 h later. We found that temporally restricted expression of sec3RNAi or sec15RNAi phenocopied unrestricted expression of the same RNAis at 29°C (Figure 3—figure supplement 3), indicating that the phenotypes obtained are not due to pleiotropic effects caused by developmentally unrestricted downregulation of the exocyst. Finally, the MLS phenotype generated by expression of sec15RNAi could be rescued by simultaneous expression of GFP-Sec15, supporting the notion that defective biogenesis of SGs was specifically provoked by sec15 loss of function (Figure 3—figure supplement 4).
 
@@ -61,29 +1014,87 @@ A comprehensive analysis of cell polarity, as well as a number of general marker
 
 The fact that the three phenotypic outcomes (1. Sgs3-GFP retained in a mesh; 2. immature SGs; and 3. mature-not exocytosed SGs) could be retrieved by appropriately silencing any of the eight subunits lead us to propose that the holocomplex, and not subcomplexes or individual subunits, function several times along the secretory pathway, and that each of these activities require different amounts of the exocyst complex. Importantly, irrespectively of the temperature of expression of RNAis, retention of SGs in salivary gland cells was always significantly higher in exocyst knock-down individuals as compared to controls (Figure 3D and Figure 3—figure supplement 1B), indicating that ultimately, the exocyst is required for SG exocytosis.
 
-## The exocyst complex is required for SG biogenesis
+### The exocyst complex is required for SG biogenesis
 
 We decided to characterize each of the three phenotypic manifestations of exocyst loss of function in more detail. The early-most manifestation of the requirement of the exocyst in the secretory pathway was the reticular or mesh-like phenotype obtained by strong silencing (29°C) of any of the subunits (Figure 4A). This phenotype was reminiscent of mutants in which Sgs3 is retained at ER exit sites or at ER–Golgi complex (GC) contact sites (Burgess et al., 2011; Reynolds et al., 2019), suggesting that knock-down of the exocyst may provoke Sgs3 retention at the ER or GC, blocking SG biogenesis. Indeed, we found that RNAi-mediated silencing of sec15,sec3 or sec10 provoked Sgs3 retention in the ER, since it colocalized with ER markers, as indicated by Pearson’s coefficient, whereas in control larvae Sgs3-GFP was inside SGs, at a comparable developmental stage (Figure 4B–G and Figure 4—figure supplement 1; Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig4-v1.jpg)
+
+**Figure 4.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 29°C to achieve maximal activation of the Gal4-UAS system, and maximal downregulation of exocyst subunits. (A) In control salivary glands (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) 116–120 AEL, Sgs3-GFP was packed in mature SGs. Salivary glands expressing RNAis against each of the exocyst subunits, where Sgs3-GFP exhibited a reticular distribution are shown. SGs were not formed in these cells. Scale bar 5 μm. The ER, labeled with GFP-KDEL (UAS-GFP-KDEL), (B, D) or Bip-sfGFP-HDEL (UAS-Bip-sfGFP-HDEL), (F, H) distributed in between SGs in control salivary glands (B, F); in sec15RNAi salivary glands (fkh-Gal4/UAS-sec15RNAiBL) SGs did not form and the Sgs3-dsRed signal overlapped with the ER markers (D, H). (C, E, G, I) Two-dimensional line scans of fluorescence intensity across the white lines in panels B, D, F, and H of Sgs3-dsRed and the ER markers. In all cases, transgenes were expressed using fkh-Gal4. Scale bar 10 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 29°C to achieve maximal activation of the Gal4-UAS system, and maximal downregulation of exocyst complex subunits. The ER was labeled with GFP-KDEL (UAS-GFP-KDEL), (A, C, E) or with Bip-sfGFP-HDEL (UAS-Bip-sfGFP-HDEL) (G, I). In control salivary glands (fkh-Gal4/UAS-whiteRNAi) (A, G), the ER displayed a network-like appearance localized in between mature SGs that contain Sgs3-dsRed, and thus no colocalization between the ER marker and Sgs3-dsRed was detected (B, H). Upon expression of sec15RNAi (fkh-Gal4/UAS-sec15RNAiBL) (C), sec10RNAi (UAS-sec10RNAi; fkh-Gal4) (E), or sec3RNAi (UAS-sec3RNAi; fkh-Gal4) SGs did not form, and Sgs3-dsRed was retained in the ER, as demonstrated by colocalization of both markers in the two-dimensional line scan analysis (D, F, J). RNAis were expressed using fkh-Gal4. Scale bar 10 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Pearson’s coefficient to evaluate colocalization between the ER markers UAS-GFP-KDEL (A) or UAS-Bip-sfGFP-HDEL (B) and Sgs3-dsRed in control salivary glands (UAS-whiteRNAi) or after exocyst knock-down (UAS-sec15RNAiBL). Larvae were grown at 29°C. Statistical analysis was performed using one-way analysis of variance (ANOVA). Analysis corresponds to data shown in Figure 4. ‘n’ represents the total number of salivary glands analyzed. (A) n = 3, (B) n = 2.
 
 We analyzed in detail GFP-Sec15 subcellular localization, and found that it associated closely with the trans-Golgi marker RFP-Golgi, but not with the ER marker KDEL-RFP in salivary glands just prior to SG biogenesis (Figure 5 and Videos 1–3). This association was lost after the onset SG biogenesis, suggesting that the exocyst associates with the GC at the specific developmental stage when Sgs3 transits through that organelle (Figure 5B–E). Three-dimensional reconstruction of Sec15-Golgi foci confirmed the spatial association with the exocyst (Figure 5E and Videos 2 and 3). In line with this, we found that exocyst silencing under conditions that block Sgs3-GFP in the ER (29°C), both cis and trans-CG structures were severely affected (Figure 6 and Figure 6—figure supplement 1). This suggests that at this stage of salivary gland development the exocyst complex localizes at the GC, where it is required to maintain cis- and trans-GC morphology, thereby allowing the correct transport of Sgs3 from the ER to the GC (Figure 6E, F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig5-v1.jpg)
 
-**Figure 5.:** Confocal images of unfixed salivary glands expressing GFP-Sec15 and (A) the endoplasmic reticulum (ER) marker KDEL-RFP or (C) the trans-Golgi marker RFP-Golgi. Sec15 foci did not localize at or associate with the ER (A, B). (C) Sec15 foci were found in close association with trans-Golgi complex cisternae. Examples of association events are shown in insets 1 and 2, including different angles of three-dimensional reconstruction stacks. (D) Sec15 foci and trans-Golgi complex association was lost after Sgs3 synthesis has begun. (E) Quantification of Sec15 foci-Golgi complex association events before and after the onset of Sgs3 synthesis (Wald test, p-value <0.05). ‘n’ represents the number of salivary glands analyzed, n = 4.Figure 5—source data 1.Figure 5B and E.
+**Figure 5.:** Confocal images of unfixed salivary glands expressing GFP-Sec15 and (A) the endoplasmic reticulum (ER) marker KDEL-RFP or (C) the trans-Golgi marker RFP-Golgi. Sec15 foci did not localize at or associate with the ER (A, B). (C) Sec15 foci were found in close association with trans-Golgi complex cisternae. Examples of association events are shown in insets 1 and 2, including different angles of three-dimensional reconstruction stacks. (D) Sec15 foci and trans-Golgi complex association was lost after Sgs3 synthesis has begun. (E) Quantification of Sec15 foci-Golgi complex association events before and after the onset of Sgs3 synthesis (Wald test, p-value <0.05). ‘n’ represents the number of salivary glands analyzed, n = 4.
 
-## Role of the exocyst in SG maturation: Homotypic fusion
+![Video 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-video1.mp4.jpg)
+
+**Video 1.:** A Drosophila early third instar larva salivary gland (~168 hr at 18°C equivalent to ~72–96 hr at 25°C) expressing the trans-Golgi marker RFP-Golgi (red) and the exocyst maker GFP-Sec15 (cyan (UAS-GFP-sec15/UAS-RFP-Golgi; fkh-Gal4)) was imaged. Three-dimensional reconstruction of six slides with 0.44 μm spacing was generated using ImageJ. Frame acquisition time was 2.25 s. A total of 78 frames per channel were acquired. Total video time is 77 s. Crop size is 8 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/92404/elife-92404-video2.mp4.jpg)
+
+**Video 2.:** A salivary gland from an early third instar larva (~168 hr at 18°C equivalent to ~72–96 hr at 25°C) was imaged. The trans-Golgi marker RFP-Golgi (red) and the exocyst maker GFP-Sec15 (cyan) were in close association (UAS-GFP-sec15/UAS-RFP-Golgi; fkh-Gal4). Three-dimensional reconstruction of 33 slides with 0.1 μm spacing was generated using ImageJ. Crop size is 5.57 μm. Corresponds to images shown in Figure 5C-1’.
+
+![Video 3.](https://cdn.elifesciences.org/articles/92404/elife-92404-video3.mp4.jpg)
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig6-v1.jpg)
+
+**Figure 6.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 29°C to achieve maximal activation of the Gal4-UAS system and maximal downregulation of exocyst subunits. In control larvae (fkh-Gal4/UAS-whiteRNAi), Sgs3-dsRed (A) or Sgs3-GFP (C) were in mature secretory granules (SGs). In sec15RNAi salivary glands (fkh-Gal4/UAS-sec15RNAiBL) Sgs3 was retained in a mesh-like structure (B, D), also shown in Figure 4. (A, B) The cis-Golgi complex was labeled with Grasp65-GFP (UAS-Grasp65-GFP), and the trans-Golgi with RFP-Golgi (UAS-RFP-Golgi), (C, D). The morphology of the cis- and trans-Golgi complexes changed dramatically in sec15-knock-down cells (B”, D”), in comparison to controls (A”, C”). Transgenes were expressed with fkh-Gal4. Scale bar 10 μm. (E) Model of Sgs3 transit from the endoplasmic reticulum (ER) through the cis- and trans-Golgi complex to sprouting SGs from the trans-Golgi complex. (F) The exocyst is needed for tethering the Golgi complex cisternae and to support Golgi complex structure. In the absence of the exocyst Golgi cisternae disconnect, cis- and trans-Golgi become dysfunctional, resulting in Sgs3 retention at the ER.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 29°C to achieve maximal activation of the Gal4-UAS system, and maximal downregulation of exocyst subunits. cis-Golgi (UAS-Grasp65-GFP) (A) and trans-Golgi (UAS-RFP-Golgi) (B) markers were analyzed In control salivary glands (fkh-Gal4/UAS-whiteRNAi) or in exocyst-down-regulated salivary glands (UAS-sec15RNAiBL, UAS-sec3RNAi, or UAS-exo84RNAiV). RNAis were expressed using fkh-Gal4. Scale bar 10 μm. Bar graphs show the quantification of the penetrance of the Golgi complex phenotype. Statistical analysis was performed using a Likelihood ratio test followed by Tukey’s test (p-value <0.05, ns = not significant). ‘n’ represents the total number of salivary glands analyzed. (A) controlRNAi (whiteRNAi) n = 3; sec15RNAiBL n = 11; sec3RNAi n = 3. (B) controlRNAi (whiteRNAi) n = 9; sec15RNAiBL n = 4; sec3RNAi n = 4; exo84RNAiV n = 3.
+
+### Role of the exocyst in SG maturation: Homotypic fusion
 
 Given that appropriate silencing conditions of any of the exocyst subunits can result in accumulation of immature SGs (Figure 7A), we set out to investigate a potential role of the exocyst in SG maturation. SG maturation is a multifaceted process that involves, among other events, homotypic fusion between immature SGs (Du et al., 2016; Neuman and Bashirullah, 2018). We found that GFP-Sec15 often localized in discrete foci in between immature SGs (75% of total GFP-Sec15), but this localization drops dramatically when SGs have undergone maturation (15%) (Figure 7B, C and Videos 4–5). This transient localization of GFP-Sec15 supports the notion of a role of the exocyst in SG homofusion, which was confirmed by live imaging of salivary glands ex vivo (Figure 7D and Video 6). In support to this notion, when GFP-Sec15 was overexpressed at 25°C, unusually large SGs of up to 20 μm in diameter could be detected, a size never observed in control salivary glands overexpressing GFP alone (Figure 7E–H), indicating that overexpression of the Sec15 subunit alone is sufficient to induce homotypic fusion between SGs, which is in agreement with reports that indicate that Sec15 functions as a seed for exocyst complex assembly (Escrevente et al., 2021; Guo et al., 1999). Sec15 overexpression is expected to induce the formation of exocyst holocomplexes, provoking excessive homofusion among SGs. In contrast, overexpression of Sec8, which is not expected to induce the formation of the whole complex, did not have an effect on homotypic fusion of SGs (Figure 7F, H).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig7-v1.jpg)
 
-**Figure 7.:** (A) Confocal images of unfixed salivary glands of the indicated genotypes. In control salivary glands (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi), Sgs3-GFP was packed in mature SGs. RNAis targeting any of the subunits of the exocyst were expressed at the indicated temperatures, giving rise to salivary cells with immature granules. Scale bar 5 μm. (B) GFP-Sec15 (cyan) and Sgs3-dsRed (red) were expressed in salivary glands (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4) at 18°C. GFP-Sec15 foci were mostly found in between SGs (yellow arrows) in cells bearing immature SGs (upper panel) and not in cells with mature SGs (lower panel), in which most foci did not localize in between SGs (green arrowheads). Scale bar 1 μm. (C) Quantification of Sec15 foci in between SGs relative to the total number of Sec15 foci (%) (Wald test, p-value <0.05). Eight salivary glands with ISGs and five salivary glands with MSGs were analyzed. (D) Still panels of two different frames of Video 6 showing that during a homotypic fusion event, GFP-Sec15 accumulated precisely at the contact site between two neighboring SGs (dotted circle); scale bar 5 μm. (E–G) Expression of EGFP (sgs3-dsRed; UAS-EGFP, fkh-Gal4) (E) or Sec8 (sgs3-dsRed/UAS-Sec8; fkh-Gal4) (F) did not affect SG size (red). Expression of GFP-Sec15 (G) (sgs3-dsRed/UAS -GFP-sec15; fkh-Gal4) generated giant SGs (asterisks). Scale bar 10 μm. (H) Quantification of the percentage of salivary gland cells with at least one SG larger than 8 μm diameter; (Likelihood ratio test followed by Tukey’s test, p-value <0.05). ‘n’ represents the number of salivary glands analyzed. UAS-EGFP n = 7; UAS-Sec8 n = 5; UAS-GFP-Sec15 n = 5. Transgenes were expressed using fkh-Gal4. ns = not significant.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Confocal images of unfixed salivary glands of the indicated genotypes. In control salivary glands (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi), Sgs3-GFP was packed in mature SGs. RNAis targeting any of the subunits of the exocyst were expressed at the indicated temperatures, giving rise to salivary cells with immature granules. Scale bar 5 μm. (B) GFP-Sec15 (cyan) and Sgs3-dsRed (red) were expressed in salivary glands (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4) at 18°C. GFP-Sec15 foci were mostly found in between SGs (yellow arrows) in cells bearing immature SGs (upper panel) and not in cells with mature SGs (lower panel), in which most foci did not localize in between SGs (green arrowheads). Scale bar 1 μm. (C) Quantification of Sec15 foci in between SGs relative to the total number of Sec15 foci (%) (Wald test, p-value <0.05). Eight salivary glands with ISGs and five salivary glands with MSGs were analyzed. (D) Still panels of two different frames of Video 6 showing that during a homotypic fusion event, GFP-Sec15 accumulated precisely at the contact site between two neighboring SGs (dotted circle); scale bar 5 μm. (E–G) Expression of EGFP (sgs3-dsRed; UAS-EGFP, fkh-Gal4) (E) or Sec8 (sgs3-dsRed/UAS-Sec8; fkh-Gal4) (F) did not affect SG size (red). Expression of GFP-Sec15 (G) (sgs3-dsRed/UAS -GFP-sec15; fkh-Gal4) generated giant SGs (asterisks). Scale bar 10 μm. (H) Quantification of the percentage of salivary gland cells with at least one SG larger than 8 μm diameter; (Likelihood ratio test followed by Tukey’s test, p-value <0.05). ‘n’ represents the number of salivary glands analyzed. UAS-EGFP n = 7; UAS-Sec8 n = 5; UAS-GFP-Sec15 n = 5. Transgenes were expressed using fkh-Gal4. ns = not significant.
+
+![Video 4.](https://cdn.elifesciences.org/articles/92404/elife-92404-video4.mp4.jpg)
+
+**Video 4.:** A salivary gland from a third instar larva (~186 hr at 18°C equivalent to ~100 hr at 25°C) was imaged. SGs with Sgs3-dsRed (red) and the exocyst marker GFP-Sec15 (cyan) were in close association (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4). Three-dimensional reconstruction of 6 slides with 0.4 μm spacing was generated using ImageJ. Crop size is 10 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/92404/elife-92404-video5.mp4.jpg)
+
+**Video 5.:** A salivary gland from a third instar larva (~186 hr at 18°C equivalent to ~104 hr at 25°C) was imaged. SGs with Sgs3-dsRed (red) and the exocyst marker GFP-Sec15 (cyan) were in close association (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4). Three-dimensional reconstruction of 12 slides with 0.45 μm spacing was generated using ImageJ. Crop size is 10 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/92404/elife-92404-video6.mp4.jpg)
+
+**Video 6.:** A Drosophila salivary gland expressing Sgs3-dsRed and GFP-Sec15 (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4) in which a fusion event between SGs was captured (circle). Note that the exocyst (GFP-Sec15) localized at the fusion point between two SGs. The movie was not deconvolved, and represents a maximum intensity projection of three optical slices (total range: 1,6 μm). Scale bar 5 μm.
 
 The characteristic localization of GFP-Sec15 foci in between adjacent immature SGs, the fact that Sec15 overexpression results in oversized SGs, and the observation that downregulation of any subunit of the exocyst complex at appropriate levels results in accumulation of immature SGs, weigh in favor of the notion that the exocyst plays a critical role in SG homotypic fusion.
 
-## Role of the exocyst in SG maturation: Acquisition of membrane proteins
+### Role of the exocyst in SG maturation: Acquisition of membrane proteins
 
 Besides homotypic fusion, maturation of SGs involves the incorporation of specific proteins that are required for homotypic fusion, apical navigation, or fusion with the apical plasma membrane. The mechanisms by which these maturation factors associate with SGs are not well understood. One of such proteins is the calcium sensor Synaptotagmin-1 (Syt-1), which localized at the basolateral membrane of salivary gland cells before SG biogenesis (96 h AEL) (Figure 8—figure supplement 1A), and later became detectable on the membrane of nascent SGs (diameter <1 μm), prior to homotypic fusion (Figure 8A and Figure 8—figure supplement 1B). As SGs mature, the presence of Syt-1 on SGs became more prominent, with a sharp increase after SG homofusion (Figure 8—figure supplement 1C, D), suggesting that recruitment of Syt-1 to SGs continued after homotypic fusion had occurred (Figure 8M). Downregulation of the exocyst subunits Sec5 or Sec3 to levels that generate immature SGs significantly reduced the presence of Syt-1 on their membranes, as compared to immature SGs of control salivary glands (Figure 8A–C and Figure 8—figure supplement 2A–C). Interestingly, weaker knock-down, which allowed the formation of mature SGs, improved but not completely restored Syt-1 recruitment, compared to control salivary cells (Figure 8—figure supplement 2D–F), indicating that Syt-1 is recruited to mature SGs in an exocyst-dependent manner (Figure 8M).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig8-v1.jpg)
+
+**Figure 8.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 21°C to reduce the activity of the Gal4-UAS system, and to generate a maximal proportion of cells with immature SGs. Recruitment of (A, B) Syt1-GFP (UAS-Syt1-GFP); (D, E) CD63-GFP (UAS-CD63-GFP); (G, H) YFP-Rab1; (J, K) YFP-Rab11 was analyzed in control salivary glands expressing whiteRNAi (fkh-Gal4/UAS-whiteRNAi) and in salivary glands expressing sec5RNAiBL (fkh-Gal4/UAS-sec5RNAiBL). Fluorescent intensity around SGs of each of the analyzed maturation factors was quantified using the ImageJ software and plotted (C, F, I, L). Comparison of fluorescent intensity among genotypes and statistical analysis was performed using one-way analysis of variance (ANOVA). ‘n’ represents the number of salivary glands: (C) control RNAi n = 4, sec5RNAiBL n = 5; (F) control RNAi n = 5, sec5RNAiBL n = 4; (I) control RNAi n = 6, sec5RNAiBL n = 9; (L) control RNAi n = 11, sec5RNAiBL n = 8. Transgenes were expressed using fkh-Gal4. Scale bar 5 μm. (M) Proposed model of exocyst-dependent SG homotypic fusion and maturation. The exocyst complex is required for homotypic fusion between immature SGs. Immature SGs incorporate Syt-1, CD63, and Rab1 in an exocyst-dependent manner. Syt-1 continues to be recruited to SGs after homotypic fusion. The exocyst complex also inhibits the incorporation of an excess of Rab11 around SGs.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Incorporation of the SG maturation markers Syt1 (sgs3-dsRed/UAS-syt1-GFP; fkh-Gal4) (A–D) and CD63 (sgs3-dsRed/UAS-CD63-GFP; fkh-Gal4) (E–H) to developing granules. Prior to SG biogenesis (<96 h AEL) Syt1 localized at the basolateral plasma membrane of salivary cells (A), while CD63 localized at the apical plasma membrane (E). Scale bar 100 μm. Both markers localized at the membrane of immature SGs and mature SGs (B, D, F–H). Scale bar 5 μm. Note that Syt1 signal intensity increases around SGs as they mature (compare B”, C”, D”), whereas CD63 signal remains fairly stable during SG maturation (compare F”, G”, H”).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Maturation proteins Syt-1 and CD63 were gradually incorporated to the membrane of SG. Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at 25 or 21°C to modulate the activity of the Gal4-UAS system and generate a maximal proportion of immature (A, B, G, H, M, N) or mature SGs (D, E, J, K, P, Q), respectively. (A, B, D, E) Recruitment of Syt1-GFP (UAS-Syt1-GFP); of (G, H, J, K) CD63-GFP (UAS-CD63-GFP); or of (M, N, P, Q) YFP-Rab11 was analyzed in control salivary glands expressing whiteRNAi (fkh-Gal4/UAS-whiteRNAi) and in salivary glands expressing sec3RNAi (UAS-sec3RNAi; fkh-Gal4). SGs were labeled with Sgs3-dsRed. Fluorescent intensity around SGs of each of the analyzed maturation factors was quantified using the ImageJ software and plotted (C, F, I, L, O, R). Comparison of fluorescence intensity among genotypes, and statistical analysis were performed using one-way analysis of variance (ANOVA). ‘n’ represents the number of salivary glands: (C) controlRNAi n = 7, sec3RNAi n = 6; (F) controlRNAi n = 7, sec3RNAi n = 13; (I) controlRNAi n = 12, sec3RNAi n = 9; (L) controlRNAi n = 8, sec3RNAi n = 8; (O) controlRNAi n = 7, sec3RNAi n = 10; (R) controlRNAi n = 7, sec3RNAi n = 4. Transgenes were expressed using fkh-Gal4. ns = not significant. Scale bar 5 μm.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Salivary gland cells expressing Sgs3-dsRed and endogenously tagged YFP-Rab11 (A), or overexpressing a constitutively active form of Rab11 at 29°C (fkh-Gal4/UAS-YFP-Rab11CA) (B). YFP-Rab11 localized around mature SGs (A). Overexpression of Rab11CA arrested SG maturation (B), as shown in the quantification of SG diameter (C). YFP-Rab11, n = 6; UAS-YFP-RAB11CA, n = 5. n = number of salivary glands. (D) In control salivary glands, GFP-Sec15 localized as foci on the periphery of mature SGs (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4). (E) Knock-down of Rab11 (sgs3-dsRed; UAS-rab11RNAi/fkh-Gal4) generated immature SGs and prevented GFP-Sec15 from localizing on SGs. (F) Proposed mechanism of genetic interactions between Rab11 and Sec15. A single-negative feedback loop regulates the levels of these proteins on the SGs, and recruitment of the maturation factors Syt-1, CD63, and Rab1. Scale bar 10 μm.
 
 CD63, the Drosophila homolog of mammalian Tsp29Fa, is another protein required for SG maturation. CD63 localizes at the apical plasma membrane before SG formation, and reaches the membrane of SGs through endosomal retrograde trafficking (Figure 8—figure supplement 1E; Ma et al., 2020). We investigated if the exocyst participates in recruitment of CD63 to SGs, and found that CD63 could be readily detected at the membrane of 1, 3, or 5 μm SGs (Figure 8D and Figure 8—figure supplement 1F–H), while upon Sec5 or Sec3 downregulation CD63 was significantly reduced on immature SGs (Figure 8D–F and Figure 8—figure supplement 2G–I). Interestingly, milder reduction of Sec3 expression, under conditions that allow the formation of mature SGs, did not affect CD63 recruitment to SGs (Figure 8—figure supplement 2J–L), indicating that CD63 is recruited to SGs before homotypic fusion in an exocyst-dependent manner and that, unlike to Syt-1, recruitment ceases after homotypic fusion has occurred (Figure 8M).
 
@@ -95,13 +1106,17 @@ Given that the exocyst is an effector of different Rab-GTPases during vesicle ex
 
 Overall, the results described in this section suggest that Rab11 recruits Sec15, and perhaps the whole exocyst, to immature SGs to allow homotypic fusion and maturation (Figure 8—figure supplement 3D, E), while in turn, the exocyts limits the levels and/or activity of Rab11 on SGs (Figure 8J–L and Figure 8—figure supplement 2M–R), as excessive Rab11 is apparently detrimental for SG maturation (Figure 8—figure supplement 3A–C). We propose that a single-negative feedback loop precisely regulates Rab11 and exocyst complex activity/levels, thus controlling recruitment of maturation factors such as Syt-1, CD63, and Rab1, and therefore, the outcome of SG maturation (Figure 8—figure supplement 3F).
 
-## The exocyst is required for SG fusion with the apical plasma membrane
+### The exocyst is required for SG fusion with the apical plasma membrane
 
 Under low silencing conditions of exocyst subunits the prevalent phenotype was mature SGs retained in salivary gland cells (Figures 3D and 9A, and Figure 3—figure supplement 1B), suggesting a function of the complex in SG fusion with the apical plasma membrane. The process of SG–plasma membrane fusion can be assessed by visualizing the incorporation of plasma membrane-specific components to the membrane of SGs (de la Riva-Carrasco et al., 2021; Rousso et al., 2016; Tran et al., 2015). Phosphatidylinositol 4,5-bisphosphate (PI(4,5)P2) is a lipid of the inner leaflet of the apical plasma membrane, which is absent in endomembranes (Phan et al., 2019). Using a fluorophore-based reporter of PI(4,5)P2 the SGs that have fused with the plasma membrane can be distinguished from those that have not. Using this approach, we found that silencing of Exo70 impaired fusion with the plasma membrane (Figure 9B–D). Consistent with a role of the exocyst in fusion of SGs with the plasma membrane, at this stage of development GFP-Sec15 was no longer detected between SGs, but rather at sites of contact of SGs with the plasma membrane (Figure 9E–G and Video 7). These data indicate that during regulated exocytosis, the exocyst complex is required for fusion of SGs with the apical plasma membrane, possibly acting as a tethering complex (Figure 9H–I).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig9-v1.jpg)
 
-**Figure 9.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at the indicated temperatures to attain levels of RNAi-mediated silencing that bring about maximal proportion of cells with mature, exocytosis incompetent SGs. (A) Sgs3-GFP localized within SGs. Control SGs (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) were indistinguishable from SGs of salivary cells in which a subunit of the exocyst has been knocked-down. Scale bar 5 μm. (B) In control salivary glands (fkh-Gal4/UAS-white), the PI(4,5)PRNAi2 reporter UAS-PLCγ-PH-GFP labels the plasma membrane (dotted line) and also the SGs that have already fused with the plasma membrane (asterisks). (C) SGs of cells expressing exo70 (RNAiVUAS-exo70) were not labeled with the reporter, indicating that these SGs failed to fuse with the plasma membrane. Scale bar 5 μm. (RNAiV; fkh-Gal4D) The number of mature SGs positive for PLCγ-PH-EGFP per 100 μm of linear plasma membrane was quantified in the indicated genotypes; Exo70 knock-down reduced SG–plasma membrane fusion Wald test (p-value <0.05); 7 salivary glands per genotype were analyzed. (E) During SG exocytosis the exocyst complex, labeled with GFP-Sec15 (cyan) localized as dots in contact sites between SGs and the apical plasma membrane (dotted line) (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4). (F) Still panels of Video 7 showing a fusion event between a mature SG and the plasma membrane (arrow); a dot of GFP-Sec15 indicating the position of the exocyst (arrow) was positioned just at the site where fusion was taking place. Scale bar 5 μm. (G) Confocal image of a fixed salivary gland. A mature SG that has fused with the plasma membrane (dotted line), and thus became labeled with phalloidin, displayed dots of GFP-Sec15 on its side (arrow), just next to the fusion point (asterisk). Transgenes were expressed with fkh-Gal4. The salivary gland lumen is indicated with ‘L’. Scale bar 5 μm. (H) Model of the role of the exocyst complex during SG–plasma membrane fusion during regulated exocytosis. The exocyst sits on the membrane of the SG, and tethers the granule to the plasma membrane, favoring the action of fusion molecules. (I) Upon loss of the exocyst complex, mature SGs cannot contact the plasma membrane and fusion does not occur.Figure 9—source data 1.Figure 9.
+**Figure 9.:** Confocal images of unfixed salivary glands of the indicated genotypes. Larvae were grown at the indicated temperatures to attain levels of RNAi-mediated silencing that bring about maximal proportion of cells with mature, exocytosis incompetent SGs. (A) Sgs3-GFP localized within SGs. Control SGs (sgs3-GFP, fkh-Gal4/UAS-cherryRNAi) were indistinguishable from SGs of salivary cells in which a subunit of the exocyst has been knocked-down. Scale bar 5 μm. (B) In control salivary glands (fkh-Gal4/UAS-whiteRNAi), the PI(4,5)P2 reporter UAS-PLCγ-PH-GFP labels the plasma membrane (dotted line) and also the SGs that have already fused with the plasma membrane (asterisks). (C) SGs of cells expressing exo70RNAiV (UAS-exo70RNAiV; fkh-Gal4) were not labeled with the reporter, indicating that these SGs failed to fuse with the plasma membrane. Scale bar 5 μm. (D) The number of mature SGs positive for PLCγ-PH-EGFP per 100 μm of linear plasma membrane was quantified in the indicated genotypes; Exo70 knock-down reduced SG–plasma membrane fusion Wald test (p-value <0.05); 7 salivary glands per genotype were analyzed. (E) During SG exocytosis the exocyst complex, labeled with GFP-Sec15 (cyan) localized as dots in contact sites between SGs and the apical plasma membrane (dotted line) (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4). (F) Still panels of Video 7 showing a fusion event between a mature SG and the plasma membrane (arrow); a dot of GFP-Sec15 indicating the position of the exocyst (arrow) was positioned just at the site where fusion was taking place. Scale bar 5 μm. (G) Confocal image of a fixed salivary gland. A mature SG that has fused with the plasma membrane (dotted line), and thus became labeled with phalloidin, displayed dots of GFP-Sec15 on its side (arrow), just next to the fusion point (asterisk). Transgenes were expressed with fkh-Gal4. The salivary gland lumen is indicated with ‘L’. Scale bar 5 μm. (H) Model of the role of the exocyst complex during SG–plasma membrane fusion during regulated exocytosis. The exocyst sits on the membrane of the SG, and tethers the granule to the plasma membrane, favoring the action of fusion molecules. (I) Upon loss of the exocyst complex, mature SGs cannot contact the plasma membrane and fusion does not occur.
+
+![Video 7.](https://cdn.elifesciences.org/articles/92404/elife-92404-video7.mp4.jpg)
+
+**Video 7.:** A Drosophila salivary gland expressing Sgs3-dsRed and GFP-Sec15 (sgs3-dsRed/UAS-GFP-sec15; fkh-Gal4) in which a fusion event between SGs and the plasma membrane was captured (circle). The granule content was released to the gland lumen (L). The movie shows a single slice of 32 frames comprising a total time of 0.32 s. The movie was not deconvolved. Scale bar 5 μm.
 
 Overall, by utilizing the Drosophila larval salivary gland, we have made a comprehensive analysis of the role of the exocyst complex in the pathway of regulated exocytosis. We found that the exocyst is critically required for biogenesis of SGs, for their maturation and homotypic fusion and for mediating fusion between SGs and the plasma membrane.
 
@@ -111,7 +1126,7 @@ The exocyst was initially identified as crucial for secretion in yeast (Novick e
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/92404/elife-92404-fig10-v1.jpg)
 
-**Figure 10.:** Drosophila larval salivary gland cells.(1) Before SG biogenesis (<96 h AEL), the exocyst (pink dots) localizes at the Golgi complex, where it is required to maintain the normal Golgi structure. The mucine Sgs3 (brown dots) moves through the secretory pathway from the endoplasmic reticulum to the Golgi complex, from where immature SGs containing the mucine sprout out. (2) After sprouting, SGs undergo maturation (96–116 h AEL). During maturation, the exocyst localizes in between immature SGs, where it is required for homotypic fusion. The exocyst is also required for incorporation of maturation factors to the membrane of SGs. These maturation factors include Syt-1 (purple line), DC63 (orange line), Rab11 (green oval), and Rab1 (light blue oval). At this stage, the exocyst no longer localizes at the Golgi complex. (3) When maturation has been completed SGs fuse with the apical plasma membrane and exocytosis takes place. During exocytosis (116–120 h AEL), the exocyst localizes at mature SGs, in contact with the apical plasma membrane (APM), where it is required for tethering and subsequent fusion, prior to release of the SG content to the salivary gland lumen.
+**Figure 10.:** (1) Before SG biogenesis (<96 h AEL), the exocyst (pink dots) localizes at the Golgi complex, where it is required to maintain the normal Golgi structure. The mucine Sgs3 (brown dots) moves through the secretory pathway from the endoplasmic reticulum to the Golgi complex, from where immature SGs containing the mucine sprout out. (2) After sprouting, SGs undergo maturation (96–116 h AEL). During maturation, the exocyst localizes in between immature SGs, where it is required for homotypic fusion. The exocyst is also required for incorporation of maturation factors to the membrane of SGs. These maturation factors include Syt-1 (purple line), DC63 (orange line), Rab11 (green oval), and Rab1 (light blue oval). At this stage, the exocyst no longer localizes at the Golgi complex. (3) When maturation has been completed SGs fuse with the apical plasma membrane and exocytosis takes place. During exocytosis (116–120 h AEL), the exocyst localizes at mature SGs, in contact with the apical plasma membrane (APM), where it is required for tethering and subsequent fusion, prior to release of the SG content to the salivary gland lumen.
 
 Most studies of the secretory pathway rely on a bimodal readout: Intracellular retention of SGs versus exocytosis of SG content. These approaches set a limit to our understanding of the specific functions that regulators and effectors exert on the exocytic pathway. By using fluorescently labeled versions of the Sgs3 cargo protein in Drosophila salivary glands we have shown that knock-down of any of the exocyst subunits can bring about three distinct phenotypic outcomes: (1) Impairment of SG biogenesis, (2) Impairment of SG homotypic fusion and maturation, or (3) Impairment of SG fusion with the apical plasma membrane. Noteworthy, the frequency at which each of these defects occurs depends on the extent of exocyst downregulation, implying that each of the three functions depends on different levels of the complex: SG–plasma membrane fusion is highly sensitive to even slight reduction of exocyst subunits levels; SG maturation requires intermediate levels of the complex, and SG biogenesis seems to be the most robust of the three processes, and strong reduction of exocyst levels is required to provoke this defect.
 
@@ -133,37 +1148,713 @@ An increasing number of publications reveal the complexity and variety of vesicl
 
 ## Materials and methods
 
-## Fly stocks and genetics
+### Fly stocks and genetics
 
 All fly stocks were kept on standard corn meal/agar medium at 25°C. Crosses were set up in vials containing two males and five females of the required genotypes at 25°C. Crosses were flipped every 24 hr to avoid larval overcrowding, and then moved to the desired temperature: 29, 25, 21, 19, or 18°C. The temperature used for each experiment is specified in figure legends. In the experiments of Figures 2, 3 and 8 and Figure 3—figure supplement 1 and Figure 8—figure supplement 2, all crosses were maintained in a bath water to reduce temperature fluctuations. D. melanogaster lines used in this work are listed in Table 2, and were obtained from the Bloomington Drosophila Stock Center (http://flystocks.bio.indiana.edu) or from the Vienna Drosophila Stock Center (https://stockcenter.vdrc.at); Sgs3-dsRed was generated by A.J. Andres' Lab (University of Nevada, United States).
 
-## Sgs3-GFP retention phenotype
+### Sgs3-GFP retention phenotype
 
 Larvae or prepupae of the desired genotype were visualized and photographed inside glass vials under a fluorescence dissection microscope Olympus MVX10. In prepupae, localization of Sgs3-GFP or Sgs3-dsRed inside salivary glands or outside the puparium was determined. Each experiment was repeated at least three times.
 
-## Developmental staging and SG size
+### Developmental staging and SG size
 
 When larvae were cultured at 25°C, SG maturation progressed according to the timeline shown in Figure 1. Roughly, at 29°C larval development was shortened by 24 hr, and extended in 1, 3, and 4 days when larvae were cultured at 21, 19, and 18°C, respectively. Precise physiological staging of each salivary gland was carried out according to Neuman et al., 2021 upon dissection and observation under the confocal microscope. In all experiments, only SGs from the distal-most cells of the salivary glands were imaged to avoid potential variations in SG size due to desynchronization in the synthesis of Sgs3. Data of temperatures and developmental staging from each experiment are synthesized in Table 4.
 
-## RNA extraction and cDNA synthesis
+**Table 4.**
+ Salivary gland developmental staging.Salivary glands analyzed in experiments of the indicated figures. Columns display: Experimental temperature, larval hours of development after egg laying (AEL), equivalent hours of development at 25°C (based on SG phenotype and salivary gland general appearance), presence or absence of Sgs3 in salivary glands, at the developmental time studied, and expected stage of SGs (mature or immature).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Experimental temperature (°C)</th>
+      <th>Hours of development at the experimental temperature (h AEL)</th>
+      <th>Equivalent hours of development at 25°C (h AEL)</th>
+      <th>Presence of Sgs3</th>
+      <th>Expected developmental stage of SGs in wild type</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 2</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>19, 21, 25, 29</td>
+      <td>~216, ~144, ~120, ~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>18</td>
+      <td>~120–168</td>
+      <td>72–96</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 7A, E–H</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8A, D, G, J</td>
+      <td>21</td>
+      <td>~108</td>
+      <td>96–104</td>
+      <td>Yes</td>
+      <td>Immature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8B, E, H, K</td>
+      <td>21</td>
+      <td>~144</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 9A–D</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 9E–G</td>
+      <td>18</td>
+      <td>~240</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 2</td>
+      <td>19, 25, or 29</td>
+      <td>~216, ~120, ~96</td>
+      <td>112–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 3A, D, G</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 3B, E, H</td>
+      <td>120 hr at 18°C and 36 hr at 29°C</td>
+      <td>~156</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 4</td>
+      <td>18</td>
+      <td>~240</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 5</td>
+      <td>25</td>
+      <td>~72</td>
+      <td>~72</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 6</td>
+      <td>25</td>
+      <td>~72</td>
+      <td>~72</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 7A, E</td>
+      <td>25 or 29</td>
+      <td>~72 or ~50</td>
+      <td>~72</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 7B–D</td>
+      <td>25</td>
+      <td>~72</td>
+      <td>~72</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 2</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1A, E</td>
+      <td>25</td>
+      <td>72–96</td>
+      <td>72–96</td>
+      <td>No</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1B, F</td>
+      <td>25</td>
+      <td>100–104</td>
+      <td>100–104</td>
+      <td>Yes</td>
+      <td>Immature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1C, G</td>
+      <td>25</td>
+      <td>108–112</td>
+      <td>108–112</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1D, H</td>
+      <td>25</td>
+      <td>116–120</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2A, G, M</td>
+      <td>25 or 21</td>
+      <td>96–104 or ~108</td>
+      <td>96–104</td>
+      <td>Yes</td>
+      <td>Immature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2B, H, N</td>
+      <td>25 or 21</td>
+      <td>116–120 or ~144</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 2D, E, J, K, P, Q</td>
+      <td>25 or 21</td>
+      <td>116–120 or ~144</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 3A, B, E</td>
+      <td>29</td>
+      <td>~96</td>
+      <td>116–120</td>
+      <td>Yes</td>
+      <td>Mature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 3D</td>
+      <td>29</td>
+      <td>~72</td>
+      <td>96–104</td>
+      <td>Yes</td>
+      <td>Immature</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">Figure 3—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>Genotype</td>
+      <td>Temperature</td>
+      <td>Number of glands analyzed</td>
+      <td>Number of distal cells analyzed</td>
+      <td>Phenotype</td>
+      <td>% of phenotype</td>
+      <td>Standard deviation</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Control RNAi</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">12</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">13</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">17</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Exo70 RNAi V</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">17</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>39.43</td>
+      <td>42.11</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>60.57</td>
+      <td>42.11</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>8.33</td>
+      <td>20.41</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>91.67</td>
+      <td>20.41</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">17</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">4</td>
+      <td rowspan="3">15</td>
+      <td>Mesh-like structure</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec5 RNAi V</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">25</td>
+      <td>Mesh-like structure</td>
+      <td>53.33</td>
+      <td>50.55</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>46.67</td>
+      <td>50.55</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">12</td>
+      <td>Mesh-like structure</td>
+      <td>20</td>
+      <td>27.39</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>70</td>
+      <td>27.39</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>10</td>
+      <td>22.36</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">21</td>
+      <td>Mesh-like structure</td>
+      <td>8.33</td>
+      <td>20.41</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>87.5</td>
+      <td>20.92</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>4.17</td>
+      <td>10.21</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">27</td>
+      <td>Mesh-like structure</td>
+      <td>5.56</td>
+      <td>13.61</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>91.11</td>
+      <td>14.4</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>3.33</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Exo84 RNAi BL</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">7</td>
+      <td rowspan="3">38</td>
+      <td>Mesh-like structure</td>
+      <td>93.2</td>
+      <td>12.85</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>6.8</td>
+      <td>12.85</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">22</td>
+      <td>Mesh-like structure</td>
+      <td>90</td>
+      <td>22.36</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>10</td>
+      <td>22.36</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">27</td>
+      <td>Mesh-like structure</td>
+      <td>95.83</td>
+      <td>10.21</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>4.17</td>
+      <td>10.21</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">21</td>
+      <td>Mesh-like structure</td>
+      <td>66.43</td>
+      <td>41.31</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>33.57</td>
+      <td>41.31</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Sec15 RNAi BL</td>
+      <td rowspan="3">29</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">25</td>
+      <td>Mesh-like structure</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">25</td>
+      <td rowspan="3">6</td>
+      <td rowspan="3">26</td>
+      <td>Mesh-like structure</td>
+      <td>94.44</td>
+      <td>13.61</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>5.56</td>
+      <td>13.61</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">21</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">14</td>
+      <td>Mesh-like structure</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">19</td>
+      <td rowspan="3">5</td>
+      <td rowspan="3">20</td>
+      <td>Mesh-like structure</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG immature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SG mature</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA extraction and cDNA synthesis
 
 Total RNA was isolated from dissected salivary glands of third instar larvae using 500 μl of Quick-Zol reagent (Kalium Technologies, RA00201) following the manufacturer’s instructions. The concentration and integrity of the RNA were determined using NanoDrop (Thermo Fisher Scientific) spectrophotometry. RNA (1 μg) was reverse-transcribed using M-MLV Reverse Transcriptase (Invitrogen, 10338842) using oligo-dT as a primer (https://doi.org/10.1080/15548627.2021.1991191). Control reactions omitting reverse transcriptase were used to assess the absence of contaminating genomic DNA in the RNA samples. An additional control without RNA was included.
 
-## Real-time PCR
+### Real-time PCR
 
 Gene expression was analyzed by quantitative PCR in a CFX96 Touch (Bio-Rad) cycler. The reactions were performed using HOT FIREPol EvaGreen qPCR Mix Plus (without ROX; Solis BioDyne, 08-25-00001), 0.40 μM primers, and 12–25 ng of cDNA, in a final volume of 10.4 μl (https://doi.org/10.1080/15548627.2021.1991191). Cycle conditions were initial denaturation at 95°C for 15 min, and 40 cycles of denaturation at 95°C for 20 s, annealing at 60°C for 1 min, and extension and optical reading stage at 72°C for 30 s, followed by a dissociation curve consisting of ramping the temperature from 65 to 95°C while continuously collecting fluorescence data (https://doi.org/10.1080/15548627.2021.1991191). Product purity was confirmed by agarose gel electrophoresis. Relative gene expression levels were calculated according to the comparative cycle threshold (CT) method (https://doi.org/10.1080/15548627.2021.1991191). Normalized target gene expression relative to rpl29 was obtained by calculating the difference in CT values, the relative change in target transcripts being computed as 2−ΔCT. The efficiencies of each target and housekeeping gene amplification were measured and shown to be approximately equal. Oligonucleotides were obtained from Macrogen (Seoul, Korea), and their sequences were the following: exo70: Fw 5′-GAAGTGGTTCTCCGATCGCT-3′, Rv 5′-ACGAGCGGAGGTTGTCTTTT-3′; sec3: Fw 5′-GAAGACGCAACACATGGACG-3′, Rv 5′-CTTTGCATATTGGCCCCATCC-3′; sec5: Fw 5′-GTCAATGAGACTGCCAAGAACT-3′, Rv 5′-CCTGCAGTGGAATGTGCCTA-3′; rpl29: Fw 5′-GAACAAGAAGGCCCATCGTA-3′, Rv 5′-AGTAAACAGGCTTTGGCTTGC-3′. Rpl29 was used as housekeeping gene. Specificity and quality of oligonucleotide sequences for exo70, sec3, sec5, and rpl29 were checked using Primer Blast Resource of the NCBI (http://www.ncbi.nlm.nih.gov/tools/primer-blast/).
 
-## Quantification of the penetrance of phenotypes upon knock-down of exocyst subunits
+### Quantification of the penetrance of phenotypes upon knock-down of exocyst subunits
 
 Sgs3-GFP intracellular distribution was analyzed in salivary gland cells, and one of three phenotypic categories was defined for each cell: (1) ‘mesh-like structure’ when Sgs3-GFP was distributed in a network-like compartment; (2) ‘Immature SGs’ when Sgs3-GFP was in SGs with a median diameter smaller than 3 μm; and (3) ‘Mature SGs’ when Sgs3-GFP was in SGs with a median diameter equal or larger than 3 μm. The penetrance of each of the three phenotypes was calculated for each genotype of interest at the four different temperatures analyzed.
 
-## Salivary gland imaging
+### Salivary gland imaging
 
 Salivary glands of the desired stage were dissected in cold phosphate-buffered saline (PBS) (137  mM NaCl, 2.7  mM KCl, 4.3  mM Na2HPO4, 1.47  mM KH2PO4, [pH 8]), and then imaged directly under the confocal microscope without fixation for no more than 5 min. In the experiment of Figure 9G and Figure 3—figure supplement 6E, salivary glands were fixed for 2 hr in 4% paraformaldehyde (Sigma) at room temperature, and then washed three times for 15 min with PBS-0.1% Triton X-100. For filamentous actin staining, salivary glands were incubated for 1 hr with Alexa Fluor 647 Phalloidin (Thermo Fisher Scientific 1:400) in PBS-0.1% Triton X-100; stained tissues were mounted in gelvatol mounting medium (Sigma) and imaged at a confocal microscope Carl Zeiss LSM 710 with a Plan-Apochromat 63×/1.4NA oil objective, or Carl Zeiss LSM 880 with a Plan-Apochromat 20×/0.8 NA air objective or a Plan-Apochromat 63×/1.4NA oil objective.
 
 For live imaging, salivary glands were dissected in PBS, and then mounted in a 15-mm diameter plastic chamber with a glass bottom made of a cover slip, containing 40 µl of HL3.1 medium (70 mM NaCl, 5 mM KCl, 1.5 mM CaCl2, 2 mM MgCl2, 5 mM HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 115 mM sucrose, 5 mM trehalose, and pH 7.2 with NaHCO3). The medium was removed allowing the tissue to adhere to the bottom of the chamber, and then a Biopore membrane hydrophilic PTFE (polytetrafluoroethylene) with a pore size of 0.4 μm (Millipore, Sigma) was placed over the sample, and HL3.1 medium was added on top covering the membrane. Images were captured under an inverted Carl Zeiss LSM 880 confocal microscope with a Plan-Apochromat 20×/0.8 NA air objective or a Plan-Apochromat 63×/1.4NA oil objective. For Video 1, frames were obtained every 2.25 s, while for Videos 6 and 7, frames were captured every 0.78 and 0.67 s, respectively.
 
-## Image processing and analysis
+### Image processing and analysis
 
 Image deconvolution was performed using the Parallel Spectral Deconvolution plugin of the ImageJ software (NIH, Bethesda, MD) with standard pre-sets (Schneider et al., 2012). Image analyses were made with ImageJ (Schneider et al., 2012), and graphs were generated with the R Studio software (R Development Core Team, 2020). For SG quantification, a region of interest (ROI) from each cell was used. In each ROI, the area of SGs was assessed, and SG diameter was calculated assuming that SGs are circular, using the formula ((Area/π)1/2)*2 = diameter. In experiments of Figure 4B, D, F, H and Figure 4—figure supplement 1A, C, E, G, I, two-dimensional lines scans were generated with the ImageJ plot profile. Fluorescence intensity was determined related to maximal intensity of each marker, always within a linear range. For quantification of fluorescence intensity of Syt1, CD63, Rab1, and Rab11 (Figure 8 and Figure 8—figure supplement 2), the mean intensity of three different ROIs of 5 μm2 from each cell was measured. 17–35 cells from 4 to 11 salivary glands were used in the analysis. Association analyses in Figure 5B, E were performed considering structures as associated when the fluorescence spikes, of each fluorophore, had a distance minor or equal to ~0.6 μm. In the experiment of Figure 7C, GFP-Sec15 foci between granules were measured over total foci in four different ROIs of 225 μm2 from each cell. For nucleus quantification (Figure 3—figure supplement 6A) the area from each one, was measured using ImageJ freehand section.
 
@@ -171,6 +1862,6 @@ In polarity experiments, the mean fluorescence intensity of apical markers (Figu
 
 Pearson’s coefficient was obtained with JACoP plugging of ImageJ (Bolte and Cordelières, 2006). The Golgi defect, upon exocyst knock down (Figure 4—figure supplement 2a), was measured as the number of cells with aberrant cis-Golgi or with swollen trans-Golgi vesicles over total cells within each salivary gland.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical significance was calculated using one-way analysis of variance, a Likelihood ratio test or a Wald test, and followed by a Tukey’s test with a 95% confidence interval (p < 0.05) when comparing multiple factors.
